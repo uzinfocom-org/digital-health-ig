@@ -1,0 +1,1284 @@
+{
+  "resourceType": "ValueSet",
+  "status": "draft",
+  "name": "LocationTypesVS",
+  "id": "location-types-vs",
+  "title": "Location types",
+  "description": "Location types defined by the Ministry of Health of the Republic of Uzbekistan",
+  "url": "https://terminology.medcore.uz/ValueSet/location-types-vs",
+  "experimental": true,
+  "language": "uz",
+  "compose": {
+    "include": [
+      {
+        "system": "https://terminology.medcore.uz/CodeSystem/location-types-cs"
+      },
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+        "concept": [
+          {
+            "code": "ACC",
+            "designation": [
+              {
+                "language": "ru",
+                "value": "Место происшествия"
+              },
+              {
+                "language": "uz",
+                "value": "Voqea joyi"
+              }
+            ]
+          },
+          {
+            "code": "ALL",
+            "designation": [
+              {
+                "language": "ru",
+                "value": "клиника аллергии"
+              },
+              {
+                "language": "uz",
+                "value": "allergiya klinikasi"
+              }
+            ]
+          },
+          {
+            "code": "AMB",
+            "designation": [
+              {
+                "language": "ru",
+                "value": "Скорая помощь"
+              },
+              {
+                "language": "uz",
+                "value": "Tez yordam mashinasi"
+              }
+            ]
+          },
+          {
+            "code": "BMTC",
+            "designation": [
+              {
+                "language": "ru",
+                "value": "клиника трансплантации костного мозга"
+              },
+              {
+                "language": "uz",
+                "value": "suyak iligi transplantatsiyasi klinikasi"
+              }
+            ]
+          },
+          {
+            "code": "BMTU",
+            "designation": [
+              {
+                "language": "ru",
+                "value": "Отделение трансплантации костного мозга"
+              },
+              {
+                "language": "uz",
+                "value": "Suyak iligi transplantatsiyasi bo'limi"
+              }
+            ]
+          },
+          {
+            "code": "BREAST",
+            "designation": [
+              {
+                "language": "ru",
+                "value": "клиника молочной железы"
+              },
+              {
+                "language": "uz",
+                "value": "ko'krak klinikasi"
+              }
+            ]
+          },
+          {
+            "code": "CANC",
+            "designation": [
+              {
+                "language": "ru",
+                "value": "детская и подростковая неврологическая клиника"
+              },
+              {
+                "language": "uz",
+                "value": "bolalar va o'smirlar nevrologik klinikasi"
+              }
+            ]
+          },
+          {
+            "code": "CAPC",
+            "designation": [
+              {
+                "language": "ru",
+                "value": "детская и подростковая психиатрическая клиника"
+              },
+              {
+                "language": "uz",
+                "value": "bolalar va o'smirlar psixiatriya klinikasi"
+              }
+            ]
+          },
+          {
+            "code": "CARD",
+            "designation": [
+              {
+                "language": "ru",
+                "value": "амбулаторные медицинские учреждения; клиника/центр; Реабилитация: Кардиологические учреждения"
+              },
+              {
+                "language": "uz",
+                "value": "ambulatoriya tibbiyot muassasalari; klinika/markaz; Reabilitatsiya: Kardiologiya muassasalari"
+              }
+            ]
+          },
+          {
+            "code": "CATH",
+            "designation": [
+              {
+                "language": "ru",
+                "value": "Лаборатория катетеризации сердца"
+              },
+              {
+                "language": "uz",
+                "value": "Yurak kateterizatsiyasi laboratoriyasi"
+              }
+            ]
+          },
+          {
+            "code": "CCU",
+            "designation": [
+              {
+                "language": "ru",
+                "value": "Отделение коронарной терапии"
+              },
+              {
+                "language": "uz",
+                "value": "Koronar terapiya bo'limi"
+              }
+            ]
+          },
+          {
+            "code": "CHEST",
+            "designation": [
+              {
+                "language": "ru",
+                "value": "Отделение грудной клетки"
+              },
+              {
+                "language": "uz",
+                "value": "Ko'krak qismi"
+              }
+            ]
+          },
+          {
+            "code": "COAG",
+            "designation": [
+              {
+                "language": "ru",
+                "value": "Клиника коагуляции"
+              },
+              {
+                "language": "uz",
+                "value": "Koagulyatsiya klinikasi"
+              }
+            ]
+          },
+          {
+            "code": "CRS",
+            "designation": [
+              {
+                "language": "ru",
+                "value": "Клиника колоректальной хирургии"
+              },
+              {
+                "language": "uz",
+                "value": "Kolorektal jarrohlik klinikasi"
+              }
+            ]
+          },
+          {
+            "code": "CVDX",
+            "designation": [
+              {
+                "language": "ru",
+                "value": "Сердечно-сосудистое диагностическое или терапевтическое отделение"
+              },
+              {
+                "language": "uz",
+                "value": "Yurak-qon tomir diagnostikasi yoki terapevtik bo'limi"
+              }
+            ]
+          },
+          {
+            "code": "DADDR",
+            "designation": [
+              {
+                "language": "ru",
+                "value": "Адрес доставки"
+              },
+              {
+                "language": "uz",
+                "value": "Yetkazib berish manzili"
+              }
+            ]
+          },
+          {
+            "code": "DERM",
+            "designation": [
+              {
+                "language": "ru",
+                "value": "Дерматологическая клиника"
+              },
+              {
+                "language": "uz",
+                "value": "Dermatologiya klinikasi"
+              }
+            ]
+          },
+          {
+            "code": "DX",
+            "designation": [
+              {
+                "language": "ru",
+                "value": "Диагностическое или терапевтическое отделение"
+              },
+              {
+                "language": "uz",
+                "value": "Diagnostika yoki terapevtik bo'lim"
+              }
+            ]
+          },
+          {
+            "code": "ECHO",
+            "designation": [
+              {
+                "language": "ru",
+                "value": "Эхокардиографическая лаборатория"
+              },
+              {
+                "language": "uz",
+                "value": "Ekokardiyografiya laboratoriyasi"
+              }
+            ]
+          },
+          {
+            "code": "ENDO",
+            "designation": [
+              {
+                "language": "ru",
+                "value": "Эндокринологическая клиника"
+              },
+              {
+                "language": "uz",
+                "value": "Endokrinologiya klinikasi"
+              }
+            ]
+          },
+          {
+            "code": "ENDOS",
+            "designation": [
+              {
+                "language": "ru",
+                "value": "Эндоскопическая лаборатория"
+              },
+              {
+                "language": "uz",
+                "value": "Endoskopiya laboratoriyasi"
+              }
+            ]
+          },
+          {
+            "code": "EPIL",
+            "designation": [
+              {
+                "language": "ru",
+                "value": "Отделение эпилепсии"
+              },
+              {
+                "language": "uz",
+                "value": "Epilepsiya bo'limi"
+              }
+            ]
+          },
+          {
+            "code": "ER",
+            "designation": [
+              {
+                "language": "ru",
+                "value": "Отделение неотложной помощи"
+              },
+              {
+                "language": "uz",
+                "value": "Favqulodda vaziyatlar bo'limi"
+              }
+            ]
+          },
+          {
+            "code": "ETU",
+            "designation": [
+              {
+                "language": "ru",
+                "value": "Отделение неотложной помощи при травмах"
+              },
+              {
+                "language": "uz",
+                "value": "Travmatik shoshilinch yordam bo'limi"
+              }
+            ]
+          },
+          {
+            "code": "FMC",
+            "designation": [
+              {
+                "language": "ru",
+                "value": "Семейная медицинская клиника"
+              },
+              {
+                "language": "uz",
+                "value": "Oilaviy tibbiy poliklinika"
+              }
+            ]
+          },
+          {
+            "code": "GACH",
+            "designation": [
+              {
+                "language": "ru",
+                "value": "Больницы; Больница общей неотложной помощи"
+              },
+              {
+                "language": "uz",
+                "value": "Kasalxonalar; Umumiy shoshilinch tibbiy yordam shifoxonasi"
+              }
+            ]
+          },
+          {
+            "code": "GI",
+            "designation": [
+              {
+                "language": "ru",
+                "value": "Гастроэнтерологическая клиника"
+              },
+              {
+                "language": "uz",
+                "value": "Gastroenterologiya klinikasi"
+              }
+            ]
+          },
+          {
+            "code": "GIDX",
+            "designation": [
+              {
+                "language": "ru",
+                "value": "Гастроэнтерологическая диагностическая или терапевтическая лаборатория"
+              },
+              {
+                "language": "uz",
+                "value": "Gastroenterologik diagnostika yoki terapevtik laboratoriya"
+              }
+            ]
+          },
+          {
+            "code": "GYN",
+            "designation": [
+              {
+                "language": "ru",
+                "value": "Гинекологическая клиника"
+              },
+              {
+                "language": "uz",
+                "value": "Ginekologik klinika"
+              }
+            ]
+          },
+          {
+            "code": "HD",
+            "designation": [
+              {
+                "language": "ru",
+                "value": "Отделение гемодиализа"
+              },
+              {
+                "language": "uz",
+                "value": "Gemodializ bo'limi"
+              }
+            ]
+          },
+          {
+            "code": "HEM",
+            "designation": [
+              {
+                "language": "ru",
+                "value": "Гематологическая клиника"
+              },
+              {
+                "language": "uz",
+                "value": "Gematologiya klinikasi"
+              }
+            ]
+          },
+          {
+            "code": "HLAB",
+            "designation": [
+              {
+                "language": "ru",
+                "value": "Больничная лаборатория"
+              },
+              {
+                "language": "uz",
+                "value": "Kasalxona laboratoriyasi"
+              }
+            ]
+          },
+          {
+            "code": "HOSP",
+            "designation": [
+              {
+                "language": "ru",
+                "value": "Больница"
+              },
+              {
+                "language": "uz",
+                "value": "Kasalxona"
+              }
+            ]
+          },
+          {
+            "code": "HRAD",
+            "designation": [
+              {
+                "language": "ru",
+                "value": "Отделение радиологии"
+              },
+              {
+                "language": "uz",
+                "value": "Radiologiya bo'limi"
+              }
+            ]
+          },
+          {
+            "code": "HTN",
+            "designation": [
+              {
+                "language": "ru",
+                "value": "Гипертоническая клиника"
+              },
+              {
+                "language": "uz",
+                "value": "Gipertenziya klinikasi"
+              }
+            ]
+          },
+          {
+            "code": "HU",
+            "designation": [
+              {
+                "language": "ru",
+                "value": "Больничное отделение"
+              },
+              {
+                "language": "uz",
+                "value": "Kasalxona bo'limi"
+              }
+            ]
+          },
+          {
+            "code": "HUSCS",
+            "designation": [
+              {
+                "language": "ru",
+                "value": "Место забора образцов"
+              },
+              {
+                "language": "uz",
+                "value": "Namuna yig'ish joyi"
+              }
+            ]
+          },
+          {
+            "code": "ICU",
+            "designation": [
+              {
+                "language": "ru",
+                "value": "Отделение интенсивной терапии"
+              },
+              {
+                "language": "uz",
+                "value": "Reanimatsiya bo'limi"
+              }
+            ]
+          },
+          {
+            "code": "INFD",
+            "designation": [
+              {
+                "language": "ru",
+                "value": "Инфекционная клиника"
+              },
+              {
+                "language": "uz",
+                "value": "Yuqumli kasalliklar klinikasi"
+              }
+            ]
+          },
+          {
+            "code": "INLAB",
+            "designation": [
+              {
+                "language": "ru",
+                "value": "Стационарная лаборатория"
+              },
+              {
+                "language": "uz",
+                "value": "Statsionar laboratoriya"
+              }
+            ]
+          },
+          {
+            "code": "INPHARM",
+            "designation": [
+              {
+                "language": "ru",
+                "value": "Стационарная аптека"
+              },
+              {
+                "language": "uz",
+                "value": "Statsionar dorixona"
+              }
+            ]
+          },
+          {
+            "code": "INV",
+            "designation": [
+              {
+                "language": "ru",
+                "value": "Клиника бесплодия"
+              },
+              {
+                "language": "uz",
+                "value": "Bepushtlik klinikasi"
+              }
+            ]
+          },
+          {
+            "code": "MBL",
+            "designation": [
+              {
+                "language": "ru",
+                "value": "Медицинская лаборатория"
+              },
+              {
+                "language": "uz",
+                "value": "Tibbiy laboratoriya"
+              }
+            ]
+          },
+          {
+            "code": "MGEN",
+            "designation": [
+              {
+                "language": "ru",
+                "value": "Клиника медицинской генетики"
+              },
+              {
+                "language": "uz",
+                "value": "Tibbiy genetika klinikasi"
+              }
+            ]
+          },
+          {
+            "code": "MHSP",
+            "designation": [
+              {
+                "language": "ru",
+                "value": "Военный госпиталь"
+              },
+              {
+                "language": "uz",
+                "value": "Harbiy kasalxona"
+              }
+            ]
+          },
+          {
+            "code": "MOBL",
+            "designation": [
+              {
+                "language": "ru",
+                "value": "Мобильное подразделение"
+              },
+              {
+                "language": "uz",
+                "value": "Mobil qurilma"
+              }
+            ]
+          },
+          {
+            "code": "NCCS",
+            "designation": [
+              {
+                "language": "ru",
+                "value": "Отделение неврологической интенсивной терапии и инсульта"
+              },
+              {
+                "language": "uz",
+                "value": "Nevrologik intensiv terapiya va insult bo'limi"
+              }
+            ]
+          },
+          {
+            "code": "NEPH",
+            "designation": [
+              {
+                "language": "ru",
+                "value": "Клиника нефрологии"
+              },
+              {
+                "language": "uz",
+                "value": "Nefrologiya klinikasi"
+              }
+            ]
+          },
+          {
+            "code": "NEUR",
+            "designation": [
+              {
+                "language": "ru",
+                "value": "Клиника неврологии"
+              },
+              {
+                "language": "uz",
+                "value": "Nevrologiya klinikasi"
+              }
+            ]
+          },
+          {
+            "code": "NS",
+            "designation": [
+              {
+                "language": "ru",
+                "value": "Отделение нейрохирургии"
+              },
+              {
+                "language": "uz",
+                "value": "Neyroxirurgiya kafedrasi"
+              }
+            ]
+          },
+          {
+            "code": "OB",
+            "designation": [
+              {
+                "language": "ru",
+                "value": "Клиника акушерства"
+              },
+              {
+                "language": "uz",
+                "value": "Akusherlik klinikasi"
+              }
+            ]
+          },
+          {
+            "code": "OF",
+            "designation": [
+              {
+                "language": "ru",
+                "value": "амбулаторное учреждение"
+              },
+              {
+                "language": "uz",
+                "value": "ambulatoriya muassasasi"
+              }
+            ]
+          },
+          {
+            "code": "OMS",
+            "designation": [
+              {
+                "language": "ru",
+                "value": "Клиника челюстно-лицевой хирургии"
+              },
+              {
+                "language": "uz",
+                "value": "Maksillofasiyal jarrohlik klinikasi"
+              }
+            ]
+          },
+          {
+            "code": "ONCL",
+            "designation": [
+              {
+                "language": "ru",
+                "value": "Клиника медицинской онкологии"
+              },
+              {
+                "language": "uz",
+                "value": "Tibbiy onkologiya klinikasi"
+              }
+            ]
+          },
+          {
+            "code": "OPH",
+            "designation": [
+              {
+                "language": "ru",
+                "value": "Клиника офтальмологии"
+              },
+              {
+                "language": "uz",
+                "value": "Oftalmologiya klinikasi"
+              }
+            ]
+          },
+          {
+            "code": "OPTC",
+            "designation": [
+              {
+                "language": "ru",
+                "value": "Клиника оптометрии"
+              },
+              {
+                "language": "uz",
+                "value": "Optometriya klinikasi"
+              }
+            ]
+          },
+          {
+            "code": "ORTHO",
+            "designation": [
+              {
+                "language": "ru",
+                "value": "Клиника ортопедии"
+              },
+              {
+                "language": "uz",
+                "value": "Ortopediya klinikasi"
+              }
+            ]
+          },
+          {
+            "code": "OUTLAB",
+            "designation": [
+              {
+                "language": "ru",
+                "value": "Амбулаторная лаборатория"
+              },
+              {
+                "language": "uz",
+                "value": "Ambulatoriya laboratoriyasi"
+              }
+            ]
+          },
+          {
+            "code": "OUTPHARM",
+            "designation": [
+              {
+                "language": "ru",
+                "value": "Амбулаторная аптека"
+              },
+              {
+                "language": "uz",
+                "value": "Ambulator dorixona"
+              }
+            ]
+          },
+          {
+            "code": "PC",
+            "designation": [
+              {
+                "language": "ru",
+                "value": "Клиника первичной медико-санитарной помощи"
+              },
+              {
+                "language": "uz",
+                "value": "Birlamchi tibbiy yordam klinikasi"
+              }
+            ]
+          },
+          {
+            "code": "PEDC",
+            "designation": [
+              {
+                "language": "ru",
+                "value": "Клиника педиатрии"
+              },
+              {
+                "language": "uz",
+                "value": "Pediatriya klinikasi"
+              }
+            ]
+          },
+          {
+            "code": "PEDCARD",
+            "designation": [
+              {
+                "language": "ru",
+                "value": "Детская кардиологическая клиника"
+              },
+              {
+                "language": "uz",
+                "value": "Bolalar kardiologiya klinikasi"
+              }
+            ]
+          },
+          {
+            "code": "PEDE",
+            "designation": [
+              {
+                "language": "ru",
+                "value": "Детская эндокринологическая клиника"
+              },
+              {
+                "language": "uz",
+                "value": "Bolalar endokrinologiya klinikasi"
+              }
+            ]
+          },
+          {
+            "code": "PEDGI",
+            "designation": [
+              {
+                "language": "ru",
+                "value": "Детская гастроэнтерологическая клиника"
+              },
+              {
+                "language": "uz",
+                "value": "Bolalar gastroenterologiya klinikasi"
+              }
+            ]
+          },
+          {
+            "code": "PEDHEM",
+            "designation": [
+              {
+                "language": "ru",
+                "value": "Детская гематологическая клиника"
+              },
+              {
+                "language": "uz",
+                "value": "Bolalar gematologiya klinikasi"
+              }
+            ]
+          },
+          {
+            "code": "PEDHO",
+            "designation": [
+              {
+                "language": "ru",
+                "value": "Клиника детской онкологии"
+              },
+              {
+                "language": "uz",
+                "value": "Bolalar onkologiyasi klinikasi"
+              }
+            ]
+          },
+          {
+            "code": "PEDICU",
+            "designation": [
+              {
+                "language": "ru",
+                "value": "Отделение детской интенсивной терапии"
+              },
+              {
+                "language": "uz",
+                "value": "Bolalar intensiv terapiya bo'limi"
+              }
+            ]
+          },
+          {
+            "code": "PEDID",
+            "designation": [
+              {
+                "language": "ru",
+                "value": "Детская инфекционная клиника"
+              },
+              {
+                "language": "uz",
+                "value": "Bolalar yuqumli kasalliklar klinikasi"
+              }
+            ]
+          },
+          {
+            "code": "PEDNEPH",
+            "designation": [
+              {
+                "language": "ru",
+                "value": "Клиника детской нефрологии"
+              },
+              {
+                "language": "uz",
+                "value": "Bolalar nefrologiyasi klinikasi"
+              }
+            ]
+          },
+          {
+            "code": "PEDNICU",
+            "designation": [
+              {
+                "language": "ru",
+                "value": "Отделение интенсивной терапии новорожденных"
+              },
+              {
+                "language": "uz",
+                "value": "Neonatal intensiv terapiya bo'limi"
+              }
+            ]
+          },
+          {
+            "code": "PEDRHEUM",
+            "designation": [
+              {
+                "language": "ru",
+                "value": "Клиника детской ревматологии"
+              },
+              {
+                "language": "uz",
+                "value": "Bolalar revmatologiyasi klinikasi"
+              }
+            ]
+          },
+          {
+            "code": "PEDU",
+            "designation": [
+              {
+                "language": "ru",
+                "value": "Детское отделение"
+              },
+              {
+                "language": "uz",
+                "value": "Bolalar bo'limi"
+              }
+            ]
+          },
+          {
+            "code": "PHARM",
+            "designation": [
+              {
+                "language": "ru",
+                "value": "Аптека"
+              },
+              {
+                "language": "uz",
+                "value": "Dorixona"
+              }
+            ]
+          },
+          {
+            "code": "PHU",
+            "designation": [
+              {
+                "language": "ru",
+                "value": "Отделение психиатрической больницы"
+              },
+              {
+                "language": "uz",
+                "value": "Psixiatriya shifoxonasi bo'limi"
+              }
+            ]
+          },
+          {
+            "code": "PLS",
+            "designation": [
+              {
+                "language": "ru",
+                "value": "Клиника пластической хирургии"
+              },
+              {
+                "language": "uz",
+                "value": "Plastik jarrohlik klinikasi"
+              }
+            ]
+          },
+          {
+            "code": "PREV",
+            "designation": [
+              {
+                "language": "ru",
+                "value": "Клиника профилактической медицины"
+              },
+              {
+                "language": "uz",
+                "value": "Tibbiyot profilaktikasi klinikasi"
+              }
+            ]
+          },
+          {
+            "code": "PROCTO",
+            "designation": [
+              {
+                "language": "ru",
+                "value": "Клиника проктологии"
+              },
+              {
+                "language": "uz",
+                "value": "Proktologiya klinikasi"
+              }
+            ]
+          },
+          {
+            "code": "PROFF",
+            "designation": [
+              {
+                "language": "ru",
+                "value": "Офис поставщика услуг"
+              },
+              {
+                "language": "uz",
+                "value": "Xizmat ko'rsatuvchi provayder idorasi"
+              }
+            ]
+          },
+          {
+            "code": "PROS",
+            "designation": [
+              {
+                "language": "ru",
+                "value": "Клиника протезирования"
+              },
+              {
+                "language": "uz",
+                "value": "Protezlar klinikasi"
+              }
+            ]
+          },
+          {
+            "code": "PSI",
+            "designation": [
+              {
+                "language": "ru",
+                "value": "Клиника психологии"
+              },
+              {
+                "language": "uz",
+                "value": "Psixologiya klinikasi"
+              }
+            ]
+          },
+          {
+            "code": "PSY",
+            "designation": [
+              {
+                "language": "ru",
+                "value": "Клиника психиатрии"
+              },
+              {
+                "language": "uz",
+                "value": "Psixiatriya klinikasi"
+              }
+            ]
+          },
+          {
+            "code": "PSYCHF",
+            "designation": [
+              {
+                "language": "ru",
+                "value": "Психиатрическое отделение"
+              },
+              {
+                "language": "uz",
+                "value": "Psixiatriya bo'limi"
+              }
+            ]
+          },
+          {
+            "code": "PTRES",
+            "designation": [
+              {
+                "language": "ru",
+                "value": "Место жительства пациента"
+              },
+              {
+                "language": "uz",
+                "value": "Bemorning yashash joyi"
+              }
+            ]
+          },
+          {
+            "code": "RADDX",
+            "designation": [
+              {
+                "language": "ru",
+                "value": "Рентгенологическое диагностическое или терапевтическое отделение"
+              },
+              {
+                "language": "uz",
+                "value": "Rentgen diagnostikasi yoki terapevtik bo'limi"
+              }
+            ]
+          },
+          {
+            "code": "RADO",
+            "designation": [
+              {
+                "language": "ru",
+                "value": "Отделение радиационной онкологии"
+              },
+              {
+                "language": "uz",
+                "value": "Radiatsion onkologiya kafedrasi"
+              }
+            ]
+          },
+          {
+            "code": "RHAT",
+            "designation": [
+              {
+                "language": "ru",
+                "value": "центр лечения наркомании"
+              },
+              {
+                "language": "uz",
+                "value": "giyohvandlikni davolash markazi"
+              }
+            ]
+          },
+          {
+            "code": "RHEUM",
+            "designation": [
+              {
+                "language": "ru",
+                "value": "Клиника ревматологии"
+              },
+              {
+                "language": "uz",
+                "value": "Revmatologiya klinikasi"
+              }
+            ]
+          },
+          {
+            "code": "RHU",
+            "designation": [
+              {
+                "language": "ru",
+                "value": "Отделение реабилитации"
+              },
+              {
+                "language": "uz",
+                "value": "Reabilitatsiya bo'limi"
+              }
+            ]
+          },
+          {
+            "code": "RNEU",
+            "designation": [
+              {
+                "language": "ru",
+                "value": "Нейрорадиологическое отделение"
+              },
+              {
+                "language": "uz",
+                "value": "Neyroradiologiya bo'limi"
+              }
+            ]
+          },
+          {
+            "code": "SCHOOL",
+            "designation": [
+              {
+                "language": "ru",
+                "value": "Школа"
+              },
+              {
+                "language": "uz",
+                "value": "Maktab"
+              }
+            ]
+          },
+          {
+            "code": "SLEEP",
+            "designation": [
+              {
+                "language": "ru",
+                "value": "Отделение расстройств сна"
+              },
+              {
+                "language": "uz",
+                "value": "Uyqu buzilishi bo'limi"
+              }
+            ]
+          },
+          {
+            "code": "SPMED",
+            "designation": [
+              {
+                "language": "ru",
+                "value": "Клиника спортивной медицины"
+              },
+              {
+                "language": "uz",
+                "value": "Sport tibbiyoti klinikasi"
+              }
+            ]
+          },
+          {
+            "code": "SU",
+            "designation": [
+              {
+                "language": "ru",
+                "value": "Клиника хирургии"
+              },
+              {
+                "language": "uz",
+                "value": "Jarrohlik klinikasi"
+              }
+            ]
+          },
+          {
+            "code": "SURF",
+            "designation": [
+              {
+                "language": "ru",
+                "value": "Реабилитация от употребления психоактивных веществ"
+              },
+              {
+                "language": "uz",
+                "value": "Giyohvand moddalarni suiiste'mol qilishni reabilitatsiya qilish"
+              }
+            ]
+          },
+          {
+            "code": "TR",
+            "designation": [
+              {
+                "language": "ru",
+                "value": "Клиника трансплантации"
+              },
+              {
+                "language": "uz",
+                "value": "Transplantatsiya klinikasi"
+              }
+            ]
+          },
+          {
+            "code": "URO",
+            "designation": [
+              {
+                "language": "ru",
+                "value": "Клиника урологии"
+              },
+              {
+                "language": "uz",
+                "value": "Urologiya klinikasi"
+              }
+            ]
+          },
+          {
+            "code": "WORK",
+            "designation": [
+              {
+                "language": "ru",
+                "value": "Рабочее место"
+              },
+              {
+                "language": "uz",
+                "value": "Ish joyi"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

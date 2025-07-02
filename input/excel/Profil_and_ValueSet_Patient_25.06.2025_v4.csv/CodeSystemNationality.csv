@@ -1,0 +1,307 @@
+CODE	UZ	RU	EN
+1	Ruslar	Русские	Russians
+3	Pomors	Поморы	Pomors
+4	Abazinlar	Абазины	Abazins
+5	Abxazlar	Абхазы	Abkhazians
+6	Avarlar	Аварцы	Avars
+7	Andes	Андийцы	Andians
+8	Archintsi	Арчинцы	Archins
+9	Axvaxiylar	Ахвахцы	Akhvakhs
+10	Bag'ulali	Багулалы	Bagulaly
+11	Bezhtiny	Бежтинцы	Bezhtins
+12	Botlix odamlari	Ботлихцы	Botlikhs
+13	Ginux xalqi	Гинухцы	Ginukhs
+14	Godoberinlar	Годоберинцы	Godoberins
+15	Gunzibiyaliklar	Гунзибцы	Gunzibs
+16	Didoytsy	Дидойцы	Didoys
+17	Karatinliklar	Каратинцы	Karatins
+18	Tyndalls	Тиндалы	Tindals
+19	Xvarshin	Хваршины	Khvarshis
+20	Chamalali	Чамалалы	Chamalals
+21	Aguly	Агулы	Aghuls
+22	Adige xalqi	Адыгейцы	Adyghe
+23	Ozarbayjonlar	Азербайджанцы	Azerbaijanis
+24	Aleutlar	Алеуты	Aleuts
+25	Oltoyliklar	Алтайцы	Altaians
+26	Telengitlar	Теленгиты	Telengits
+27	Tubalar	Тубалары	Tubalars
+28	Chelkanlar	Челканцы	Chelkans
+29	Amerikaliklar	Американцы	Americans
+30	Arablar	Арабы	Arabs
+31	Markaziy Osiyo arablari	Арабы среднеазиатские	Central Asian Arabs
+32	Armanlar	Армяне	Armenians
+33	Cherkesog'ay	Черкесогаи	Cherkessogai
+34	Ossuriyaliklar	Ассирийцы	Assyrians
+35	Afg'onlar	Афганцы	Afghans
+36	Balkarlar	Балкарцы	Balkars
+37	Boshqirdlar	Башкиры	Bashkirs
+38	Belarusians	Белорусы	Belarusians
+39	Besermyans	Бесермяне	Besermyans
+40	Bulgarians	Болгары	Bulgarians
+41	Bosnians	Боснийцы	Bosnians
+42	British	Британцы	British
+43	Buryats	Буряты	Buryats
+44	Hungarians	Венгры	Hungarians
+45	Vepsians	Вепсы	Vepsians
+46	Vods	Водь	Vods
+47	Vietnamese	Вьетнамцы	Vietnamese
+48	Gagauz	Гагаузы	Gagauz
+49	Mountain Jews	Горские евреи	Mountain Jews
+50	Greeks	Греки	Greeks
+51	Urum Greeks	Греки-урумы	Urum Greeks
+52	Georgian Jews	Грузинские евреи	Georgian Jews
+53	Georgians	Грузины	Georgians
+54	Adjarians	Аджарцы	Adjarians
+55	Ingiloys	Ингилойцы	Ingiloys
+56	Lazis	Лазы	Lazis
+57	Mingrelians	Мегрелы	Mingrelians
+58	Svans	Сваны	Svans
+59	Dargins	Даргинцы	Dargins
+60	Kaytag xalqi	Кайтагцы	Kaitags
+61	Kubachi aholisi	Кубачинцы	Kubachi
+62	Dolganlar	Долганы	Dolgans
+63	Dunganlar	Дунгане	Dungans
+64	Yahudiylar	Евреи	Jews
+65	Yazidiylar	Езиды	Yezids
+66	Izhoriyaliklar	Ижорцы	Izhorians
+67	Ingush	Ингуши	Ingush
+68	Hindular	Индийцы	Indians
+69	Iispanlar	Испанцы	Spaniards
+70	Italiyaliklar	Итальянцы	Italians
+71	Itelmens	Ительмены	Itelmens
+72	Kabardiyaliklar	Кабардинцы	Kabardians
+73	Qozoqlar	Казахи	Kazakhs
+74	Qalmiqlar	Калмыки	Kalmyks
+75	Kamchadal	Камчадалы	Kamchadals
+76	Karaitlar	Караимы	Karaims
+77	Qoraqalpoqlar	Каракалпаки	Karakalpaks
+78	Qorachaylar	Карачаевцы	Karachays
+79	Kareliyaliklar	Карелы	Kareli
+80	Kereki	Кереки	Kereks
+81	Chum qizil ikra	Кеты	Kets
+82	Yugi	Юги	Yugs
+83	Qirg'iz	Киргизы	Kirghiz
+84	Xitoy	Китайцы	Chinese
+85	Komi	Коми	Komi
+86	Komi-Izhemtsy	Коми-ижемцы	Komi-Izhemtsy
+87	Komi-Permyaklar	Коми-пермяки	Komi-Permyaks
+88	koreyslar	Корейцы	Koreans
+89	Koryaklar	Коряки	Koryaks
+90	Alyutoriyaliklar	Алюторцы	Alyutors
+91	Qrim tatarlari	Крымские татары	Crimean Tatars
+92	Qrimchaklar	Крымчаки	Krymchaks
+93	Kubaliklar	Кубинцы	Cubans
+94	Kumandinlar	Кумандинцы	Kumandins
+95	Qumiklar	Кумыки	Kumyks
+96	Kurdlar	Курды	Kurds
+97	Qurmanch	Курманч	Kurmanch
+98	Laktsy	Лакцы	Lakts
+99	Latviyaliklar	Латыши	Latvians
+100	Latgaliyaliklar	Латгальцы	Latgalians
+101	Lezgilar	Лезгины	Lezgins
+102	Litvaliklar	Литовцы	Lithuanians
+103	Makedoniyaliklar	Македонцы	Macedonians
+104	Muncie	Манси	Mansi
+105	Mari	Марийцы	Mari
+106	Mari tog'i	Горные марийцы	Mountain Mari
+107	Yaylov-Sharqiy Mari	Лугово-восточные марийцы	Meadow-Eastern Mari
+108	Moldovanlar	Молдаване	Moldovans
+109	Mo'g'ullar	Монголы	Mongols
+110	Mordva	Мордва	Mordva
+111	Mordva-moksha	Мордва-мокша	Mordva-moksha
+112	Mordva-Erzya	Мордва-эрзя	Mordva-Erzya
+113	Nagaibaki	Нагайбаки	Nagaibaki
+114	Nanai xalqi	Нанайцы	Nanai people
+115	Nganasanlar	Нганасаны	Nganasans
+116	Negidaliyaliklar	Негидальцы	Negidalians
+117	Nemislar	Немцы	Germans
+118	Mennonitlar	Меннониты	Mennonites
+119	Nenets	Ненцы	Nenets
+120	Nivkhi	Нивхи	Nivkhi
+121	Nogaylar	Ногайцы	Nogais
+122	Karagashi	Карагаши	Karagashi
+123	Orochi	Орочи	Orochi
+124	Osetinlar	Осетины	Ossetians
+125	Osetin-digoriyaliklar	Осетины-дигорцы	Ossetians-Digorians
+126	Osetin-ironiyaliklar	Осетины-иронцы	Ossetians-Ironians
+127	pokistonliklar	Пакистанцы	Pakistanis
+128	Pomiri	Памирцы	Pamiris
+129	Forslar	Персы	Persians
+130	polyaklar	Поляки	Poles
+131	Ruminiyaliklar	Румыны	Romanians
+132	Rusinlar	Русины	Rusyns
+133	Rutuliyaliklar	Рутульцы	Rutulians
+134	Sami	Саамы	Sami
+135	Selkuplar	Селькупы	Selkups
+136	Serblar	Сербы	Serbs
+137	Slovaklar	Словаки	Slovaks
+138	Sloveniyaliklar	Словенцы	Slovenians
+139	Soyotlar	Сойоты	Soyots
+140	Markaziy Osiyo yahudiylari	Среднеазиатские евреи	Central Asian Jews
+141	Tabasaranlar	Табасараны	Tabasarans
+142	Tojiklar	Таджики	Tajiks
+143	Havzalar	Тазы	Basins
+144	Talish	Талыши	Talysh
+145	Tatarlar	Татары	Tatars
+146	Astraxan tatarlari	Астраханские татары	Astrakhan Tatars
+147	Kryashens	Кряшены	Kryashens
+148	Mishari	Мишари	Mishari
+149	Sibir tatarlari	Сибирские татары	Siberian Tatars
+150	Tats	Таты	Tats
+151	Teleutlar	Телеуты	Teleuts
+152	Tofalar (tofa)	Тофалары (тофа)	Tofalar (tofa)
+153	Tuvaliklar	Тувинцы	Tuvans
+154	Tuvalar-Todjalar	Тувинцы-тоджинцы	Tuvans-Todzhas
+155	Turklar	Турки	Turks
+156	Mesxeti turklari	Турки-месхетинцы	Meskhetian Turks
+157	Turkmanlar	Туркмены	Turkmens
+158	Udini	Удины	Udine
+159	Udmurtlar	Удмурты	Udmurts
+160	Udege odamlari	Удэгейцы	Udege people
+161	O'zbeklar	Узбеки	Uzbeks
+162	Uyg'urlar	Уйгуры	Uyghurs
+163	Uilta (Oroks)	Уйльта (ороки)	Uilta (Oroks)
+164	Ukrainlar	Украинцы	Ukrainians
+165	Ulchi	Ульчи	Ulchi
+166	Finlar	Финны	Finns
+167	Ingrian Finlar	Финны-ингерманландцы	Ingrian Finns
+168	Frantsuz	Французы	French
+169	Xakaslar	Хакасы	Khakass
+170	Xanti	Ханты	Khanty
+171	Xemshili	Хемшилы	Hemshils
+172	Xorvatlar	Хорваты	Croats
+173	Tsaxur	Цахуры	Tsakhurs
+174	Lo'lilar	Цыгане	Gypsies
+175	Markaziy Osiyo lo'lilari	Цыгане среднеазиатские	Central Asian Gypsies
+176	Cherkeslar	Черкесы	Circassians
+177	Chernogoriyaliklar	Черногорцы	Montenegrins
+178	Chexlar	Чехи	Czechs
+179	Chechenlar	Чеченцы	Chechens
+180	Chechenlar-akkinlar	Чеченцы-аккинцы	Akkin Chechens
+181	Chuvanlar	Чуванцы	Chuvans
+182	Chuvash	Чуваши	Chuvash
+183	Chukchi	Чукчи	Chukchi
+184	Chulim xalqi	Чулымцы	Chulyms
+185	Shapsugi	Шапсуги	Shapsugs
+186	Shors	Шорцы	Shors
+187	Evenks	Эвенки	Evenks
+188	Evens (Lamutlar)	Эвены (ламуты)	Evens (Lamuts)
+189	Enets	Энцы	Enets
+190	Eskimoslar	Эскимосы	Eskimos
+191	Estoniyaliklar	Эстонцы	Estonians
+192	Setu (Seto)	Сету (сето)	Setos (Seto)
+193	Yukagirlar	Юкагиры	Yukaghirs
+194	Yakutlar (Saxa)	Якуты (саха)	Yakuts (Sakha)
+195	Yapon	Японцы	Japanese
+196	Avstraliyaliklar	Австралийцы	Australians
+197	Avstriyaliklar	Австрийцы	Austrians
+198	Aynu	Айны	Ainu
+199	Albanlar	Албанцы	Albanians
+200	Angolalar	Ангольцы	Angolans
+201	Argentinaliklar	Аргентинцы	Argentines
+202	Bangladeshliklar	Бангладешцы	Bangladeshi
+203	Bask	Баски	Basques
+204	Belgiyaliklar	Бельгийцы	Belgians
+205	Benincha	Бенинцы	Beninese
+206	Berberlar	Берберы	Berbers
+207	Birma	Бирманцы	Burmese
+208	Bisau-Gvineyaliklar	Бисау-гвинейцы	Bissau-Guineans
+209	Boliviyaliklar	Боливийцы	Bolivians
+210	Botsvanalar	Ботсванцы	Botswana
+211	Braziliyaliklar	Бразильцы	Brazilians
+212	Bolgarlar	Булгары	Bulgars
+213	Burkinabe xalqi	Буркинабцы	Burkinabes
+214	Burundiliklar	Бурундийцы	Burundi
+215	Venesuelaliklar	Венесуэльцы	Venezuelans
+216	Gabon	Габонцы	Gabonese
+217	Gaitiliklar	Гаитяне	Haitians
+218	Gambiyaliklar	Гамбийцы	Gambians
+219	Ganaliklar	Ганцы	Ghanaians
+220	Gvatemalaliklar	Гватемальцы	Guatemalans
+221	Gvineyaliklar	Гвинейцы	Guineans
+222	Golland	Голландцы	Dutch
+223	Gonduras	Гондурасцы	Hondurans
+224	Dog'istonliklar	Дагестанцы	Dagestanis
+225	Daniyaliklar	Датчане	Danes
+226	Dauras	Дауры	Daurians
+227	Jektsy	Джекцы	Jacks
+228	Jibutiyaliklar	Джибутинцы	Djiboutians
+229	Dominikanliklar	Доминиканцы	Dominicans
+230	Zambiyaliklar	Замбийцы	Zambians
+231	Zimbabveliklar	Зимбабвийцы	Zimbabweans
+232	Isroilliklar	Израильтяне	Israelis
+233	Indoneziyaliklar	Индонезийцы	Indonesians
+234	Irland	Ирландцы	Irish
+235	Islandiyaliklar	Исландцы	Icelanders
+236	Kabo-Verdeliklar	Кабоверденцы	Cape Verdeans
+237	Kamasin odamlari	Камасинцы	Kamasinians
+238	Kambodjaliklar	Камбоджийцы	Cambodians
+239	Kamerunliklar	Камерунцы	Cameroonians
+240	kanadaliklar	Канадцы	Canadians
+241	Keniyaliklar	Кенийцы	Kenyans
+242	Kiprliklar	Киприоты	Cypriots
+243	Kistins	Кистины	Kistins
+244	Kolumbiyaliklar	Колумбийцы	Colombians
+245	Komoriyaliklar	Коморцы	Comorians
+246	Kongo	Конголезцы	Congolese
+247	Kosta-Rikaliklar	Костариканцы	Costaricans
+248	Kotdivuarliklar	Котдивуарцы	Cotdivian
+249	Shri-Lankaliklar	Ланкийцы	Sri Lankans
+250	Laosliklar	Лаосцы	Laotians
+251	Lesoto xalqi	Лесотцы	Lesothians
+252	Liberiyaliklar	Либерийцы	Liberians
+253	Lixtenshteynliklar	Лихтенштейнцы	Liechtensteiners
+254	Lyuksemburgliklar	Люксембуржцы	Luxembourgers
+255	Mavrikiyaliklar	Маврикийцы	Mauritians
+256	Malaviliklar	Малавийцы	Malawians
+257	Malagasy	Малагасийцы	Malagasy
+258	Malaylar	Малайцы	Malays
+259	Maliliklar	Малийцы	Malians
+260	Maldivliklar	Мальдивцы	Maldivians
+261	Manchus	Маньчжуры	Manchus
+262	Meksikaliklar	Мексиканцы	Mexicans
+263	Mozambikliklar	Мозамбикцы	Mozambicans
+264	Monegask	Монегаски	Monegasques
+265	Namibiyaliklar	Намибийцы	Namibians
+266	Nepal	Непальцы	Nepalese
+267	Nigeriyaliklar	Нигерийцы	Nigerians
+268	Nigeriyaliklar	Нигерцы	Nigerians
+269	Nikaragualar	Никарагуанцы	Nicaraguans
+270	Yangi Gvineyaliklar	Новогвинейцы	New Guineans
+271	Yangi Zelandiyaliklar	Новозеландцы	New Zealanders
+272	Norse	Норвежцы	Norwegians
+273	Panamaliklar	Панамцы	Panamanians
+274	Paragvayliklar	Парагвайцы	Paraguayans
+275	Peruliklar	Перуанцы	Peruvians
+276	Polineziyaliklar	Полинезийцы	Polynesians
+277	Portugal	Португальцы	Portuguese
+278	Puerto-Rikaliklar	Пуэрториканцы	Puerto Ricans
+279	Ruslar	Россияне	Russians
+280	Ruandaliklar	Руандийцы	Rwandans
+281	Salvadorliklar	Сальвадорцы	Salvadorians
+282	Santomiyaliklar	Сантомийцы	Santomians
+283	Senegallik	Сенегальцы	Senegalese
+284	Sibo	Сибо	Sibo
+285	Somali	Сомалийцы	Somalis
+286	Sudanlik	Суданцы	Sudanese
+287	Syerra-Leoneliklar	Сьерралеонцы	Sierraleoneans
+288	Taylar	Таиландцы	Thais
+289	Tanzaniyaliklar	Танзанийцы	Tanzanians
+290	Togo	Тоголезцы	Togolese
+291	Tonganlar	Тонганцы	Tongans
+292	Turklar	Тюрки	Turks
+293	Ugandaliklar	Угандийцы	Ugandans
+294	Urugvayliklar	Уругвайцы	Uruguayans
+295	Filippinliklar	Филиппинцы	Filipinos
+296	Chadliklar	Чадцы	Chadians
+297	Chililiklar	Чилийцы	Chileans
+298	Shvedlar	Шведы	Swedes
+299	Shveytsariyalik	Швейцарцы	Swiss
+300	Ekvadorliklar	Эквадорцы	Ecuadorians
+301	Ekvatorliklar	Экваторианцы	Equatorians
+302	Eritreyaliklar	Эритрейцы	Eritreans
+303	Efiopiyaliklar	Эфиопы	Ethiopians
+304	Yugoslavlar	Югославы	Yugoslavs
+305	Janubiy Afrikaliklar	Южноафриканцы	South Africans
+306	Yamaykaliklar	Ямайцы	Jamaicans
+307	Boshqa millatlar	Прочие национальности	Others

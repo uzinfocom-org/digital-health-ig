@@ -1,0 +1,18 @@
+Name		Flags		Cardinality	example 2	document	Type	Description & Constraints		ValueSets			
+PractitionerRole		TU					DomainResource	Роль медицинского работника в данной организации		System	CodeSystem	Code	Display
+identifier		Σ S	  D	0..*			Identifier	Идентификатор		https://terminology.medcore.uz/ValueSet/ Practitioner Role 	CodeSystemPractitioner Role 	все коды	Специализация медработника
+	use			0..1	official		code	"Определяет вид использования идентификатора (официальный, вторичный, временный, старый, обычный)
+Binding:http://hl7.org/fhir/identifier-use"		https://terminology.medcore.uz/ValueSet/Specialization	CodeSystemSpecialization	все коды	Роль медработника
+	type	Σ S		0..1	NI		CodeableConcept	"Определяет код типа идентификатора
+Binding: https://terminology.medcore.uz/ValueSet/ Identifier Type (required)"					
+	system	Σ S		0..1	https://terminology.medcore.uz/CodeSystemIdentifierType		uri	http://medcore.uz/NamingSystem/org-tax-id					
+	value	Σ C		0..1	12345678901234		string	Значение идентификатора 					
+active		Σ	  D	0..1	true		boolean	Активна или нет, роль данного медработника					
+practitioner		Σ S	  D	0..1	Practitioner ID		Reference(Practitioner)	Медицинский работник, для которого определена данная роль					
+organization		Σ S	  D	0..1	Organization ID		Reference(Organization)	Медицинская организация, в которой исполняется эта роль					
+code		Σ S	  D	0..*	2212.14	Государственный классификатор основных должностей служащих и профессий рабочих (КОДП-2020)	CodeableConcept	"Определяет код роли
+Binding: https://terminology.medcore.uz/ValueSet/ PractitionerRole (required)"					
+specialty		Σ 	  D	0..*	394585009	Классификатор МинЗдрава (не утвержденный документ)	CodeableConcept	"Специализация медработника
+Binding: https://terminology.medcore.uz/ValueSet/PractitionalSpecialization (required)"					
+location		Σ	  D	0..*			Reference(Location)	Место, где оказывается помощь					
+healthcareService		Σ	  D	0..*			Reference(HealthcareService)	Медицинские услуги, связанные с этой ролью					

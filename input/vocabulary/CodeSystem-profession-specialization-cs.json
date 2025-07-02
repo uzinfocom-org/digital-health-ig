@@ -1,0 +1,1615 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "active",
+  "content": "complete",
+  "name": "ProfessionSpecializationCS",
+  "id": "profession-specialization-cs",
+  "title": "Profession specializations",
+  "description": "Defines the specializations of medical professions",
+  "url": "https://terminology.medcore.uz/CodeSystem/profession-specialization-cs",
+  "concept": [
+    {
+      "code": "408467006",
+      "display": "Katta yoshdagi ruhiy kasallik",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Психические заболевания у взрослых"
+        },
+        {
+          "language": "en",
+          "value": "Adult mental illness"
+        }
+      ]
+    },
+    {
+      "code": "394577000",
+      "display": "Anestetiklar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Анестетики"
+        },
+        {
+          "language": "en",
+          "value": "Anesthetics"
+        }
+      ]
+    },
+    {
+      "code": "394578005",
+      "display": "Audiologik tibbiyot",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Аудиологическая медицина"
+        },
+        {
+          "language": "en",
+          "value": "Audiological medicine"
+        }
+      ]
+    },
+    {
+      "code": "421661004",
+      "display": "Qon banki va qon quyish tibbiyoti",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Банк крови и переливание крови"
+        },
+        {
+          "language": "en",
+          "value": "Blood banking and transfusion medicine"
+        }
+      ]
+    },
+    {
+      "code": "408462000",
+      "display": "Kuyishlarga g'amxo'rlik qilish",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Уход за ожогами"
+        },
+        {
+          "language": "en",
+          "value": "Burns care"
+        }
+      ]
+    },
+    {
+      "code": "394579002",
+      "display": "Kardiologiya",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Кардиология"
+        },
+        {
+          "language": "en",
+          "value": "Cardiology"
+        }
+      ]
+    },
+    {
+      "code": "394804000",
+      "display": "Klinik sitogenetika va molekulyar genetika",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Клиническая цитогенетика и молекулярная генетика"
+        },
+        {
+          "language": "en",
+          "value": "Clinical cytogenetics and molecular genetics"
+        }
+      ]
+    },
+    {
+      "code": "394580004",
+      "display": "Klinik genetika",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Клиническая генетика"
+        },
+        {
+          "language": "en",
+          "value": "Clinical genetics"
+        }
+      ]
+    },
+    {
+      "code": "394803006",
+      "display": "Klinik gematologiya",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Клиническая гематология"
+        },
+        {
+          "language": "en",
+          "value": "Clinical hematology"
+        }
+      ]
+    },
+    {
+      "code": "408480009",
+      "display": "Klinik immunologiya",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Клиническая иммунология"
+        },
+        {
+          "language": "en",
+          "value": "Clinical immunology"
+        }
+      ]
+    },
+    {
+      "code": "408454008",
+      "display": "Klinik mikrobiologiya",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Клиническая микробиология"
+        },
+        {
+          "language": "en",
+          "value": "Clinical microbiology"
+        }
+      ]
+    },
+    {
+      "code": "394809005",
+      "display": "Klinik neyrofiziologiya",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Клиническая нейрофизиология"
+        },
+        {
+          "language": "en",
+          "value": "Clinical neuro-physiology"
+        }
+      ]
+    },
+    {
+      "code": "394592004",
+      "display": "Klinik onkologiya",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Клиническая онкология"
+        },
+        {
+          "language": "en",
+          "value": "Clinical oncology"
+        }
+      ]
+    },
+    {
+      "code": "394600006",
+      "display": "Klinik farmakologiya",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Клиническая фармакология"
+        },
+        {
+          "language": "en",
+          "value": "Clinical pharmacology"
+        }
+      ]
+    },
+    {
+      "code": "394601005",
+      "display": "Klinik fiziologiya",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Клиническая физиология"
+        },
+        {
+          "language": "en",
+          "value": "Clinical physiology"
+        }
+      ]
+    },
+    {
+      "code": "394581000",
+      "display": "Jamoat tibbiyoti",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Общественная медицина"
+        },
+        {
+          "language": "en",
+          "value": "Community medicine"
+        }
+      ]
+    },
+    {
+      "code": "408478003",
+      "display": "Jiddiy tibbiy yordam",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Интенсивная медицина"
+        },
+        {
+          "language": "en",
+          "value": "Critical care medicine"
+        }
+      ]
+    },
+    {
+      "code": "394812008",
+      "display": "Stomatologiya mutaxassisliklari",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Стоматологические специальности"
+        },
+        {
+          "language": "en",
+          "value": "Dental medicine specialties"
+        }
+      ]
+    },
+    {
+      "code": "408444009",
+      "display": "Dental-Umumiy stomatologiya amaliyoti",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Стоматология-Общая стоматологическая практика"
+        },
+        {
+          "language": "en",
+          "value": "Dental-General dental practice"
+        }
+      ]
+    },
+    {
+      "code": "394582007",
+      "display": "Dermatologiya",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Дерматология"
+        },
+        {
+          "language": "en",
+          "value": "Dermatology"
+        }
+      ]
+    },
+    {
+      "code": "408475000",
+      "display": "Qandli diabetga qarshi dori",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Лекарства от диабета"
+        },
+        {
+          "language": "en",
+          "value": "Diabetic medicine"
+        }
+      ]
+    },
+    {
+      "code": "394583002",
+      "display": "Endokrinologiya",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Эндокринология"
+        },
+        {
+          "language": "en",
+          "value": "Endocrinology"
+        }
+      ]
+    },
+    {
+      "code": "419772000",
+      "display": "Oila amaliyoti",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Семейная практика"
+        },
+        {
+          "language": "en",
+          "value": "Family practice"
+        }
+      ]
+    },
+    {
+      "code": "394584008",
+      "display": "Gastroenterologiya",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Гастроэнтерология"
+        },
+        {
+          "language": "en",
+          "value": "Gastroenterology"
+        }
+      ]
+    },
+    {
+      "code": "408443003",
+      "display": "Umumiy tibbiy amaliyot",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Общая врачебная практика"
+        },
+        {
+          "language": "en",
+          "value": "General medical practice"
+        }
+      ]
+    },
+    {
+      "code": "394802001",
+      "display": "Umumiy tibbiyot",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Общая медицина"
+        },
+        {
+          "language": "en",
+          "value": "General medicine"
+        }
+      ]
+    },
+    {
+      "code": "394915009",
+      "display": "Umumiy patologiya",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Общая патология"
+        },
+        {
+          "language": "en",
+          "value": "General pathology"
+        }
+      ]
+    },
+    {
+      "code": "394814009",
+      "display": "Umumiy amaliyot",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Общая практика"
+        },
+        {
+          "language": "en",
+          "value": "General practice"
+        }
+      ]
+    },
+    {
+      "code": "394808002",
+      "display": "Genito-siydik yo'llari tibbiyoti",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Медицина мочеполовой системы"
+        },
+        {
+          "language": "en",
+          "value": "Genito-urinary medicine"
+        }
+      ]
+    },
+    {
+      "code": "394811001",
+      "display": "Geriatrik tibbiyot",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Гериатрическая медицина"
+        },
+        {
+          "language": "en",
+          "value": "Geriatric medicine"
+        }
+      ]
+    },
+    {
+      "code": "408446006",
+      "display": "Ginekologik onkologiya",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Гинекологическая онкология"
+        },
+        {
+          "language": "en",
+          "value": "Gynecological oncology"
+        }
+      ]
+    },
+    {
+      "code": "394586005",
+      "display": "Ginekologiya",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Гинекология"
+        },
+        {
+          "language": "en",
+          "value": "Gynecology"
+        }
+      ]
+    },
+    {
+      "code": "394916005",
+      "display": "Gematopatologiya",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Гематопатология"
+        },
+        {
+          "language": "en",
+          "value": "Hematopathology"
+        }
+      ]
+    },
+    {
+      "code": "408472002",
+      "display": "Gepatologiya",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Гепатология"
+        },
+        {
+          "language": "en",
+          "value": "Hepatology"
+        }
+      ]
+    },
+    {
+      "code": "394597005",
+      "display": "Gistopatologiya",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Гистопатология"
+        },
+        {
+          "language": "en",
+          "value": "Histopathology"
+        }
+      ]
+    },
+    {
+      "code": "394598000",
+      "display": "Immunopatologiya",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Иммунопатология"
+        },
+        {
+          "language": "en",
+          "value": "Immunopathology"
+        }
+      ]
+    },
+    {
+      "code": "394807007",
+      "display": "Yuqumli kasalliklar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Инфекционные заболевания"
+        },
+        {
+          "language": "en",
+          "value": "Infectious diseases"
+        }
+      ]
+    },
+    {
+      "code": "419192003",
+      "display": "Ichki kasalliklar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Внутренняя медицина"
+        },
+        {
+          "language": "en",
+          "value": "Internal medicine"
+        }
+      ]
+    },
+    {
+      "code": "408468001",
+      "display": "O'rganishdagi nuqson",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Нарушение обучаемости"
+        },
+        {
+          "language": "en",
+          "value": "Learning disability"
+        }
+      ]
+    },
+    {
+      "code": "394593009",
+      "display": "Tibbiy onkologiya",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Медицинская онкология"
+        },
+        {
+          "language": "en",
+          "value": "Medical oncology"
+        }
+      ]
+    },
+    {
+      "code": "394813003",
+      "display": "Tibbiy oftalmologiya",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Медицинская офтальмология"
+        },
+        {
+          "language": "en",
+          "value": "Medical ophthalmology"
+        }
+      ]
+    },
+    {
+      "code": "410001006",
+      "display": "Harbiy tibbiyot",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Военная медицина"
+        },
+        {
+          "language": "en",
+          "value": "Military medicine"
+        }
+      ]
+    },
+    {
+      "code": "394589003",
+      "display": "Nefrologiya",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Нефрология"
+        },
+        {
+          "language": "en",
+          "value": "Nephrology"
+        }
+      ]
+    },
+    {
+      "code": "394591006",
+      "display": "Nevrologiya",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Неврология"
+        },
+        {
+          "language": "en",
+          "value": "Neurology"
+        }
+      ]
+    },
+    {
+      "code": "394599008",
+      "display": "Neyropatologiya",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Невропатология"
+        },
+        {
+          "language": "en",
+          "value": "Neuropathology"
+        }
+      ]
+    },
+    {
+      "code": "394649004",
+      "display": "Yadro tibbiyoti",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Ядерная медицина"
+        },
+        {
+          "language": "en",
+          "value": "Nuclear medicine"
+        }
+      ]
+    },
+    {
+      "code": "408470005",
+      "display": "Akusherlik",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Акушерство"
+        },
+        {
+          "language": "en",
+          "value": "Obstetrics"
+        }
+      ]
+    },
+    {
+      "code": "394585009",
+      "display": "Akusherlik va ginekologiya",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Акушерство и гинекология"
+        },
+        {
+          "language": "en",
+          "value": "Obstetrics and gynecology"
+        }
+      ]
+    },
+    {
+      "code": "394821009",
+      "display": "Kasbiy tibbiyot",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Медицина труда"
+        },
+        {
+          "language": "en",
+          "value": "Occupational medicine"
+        }
+      ]
+    },
+    {
+      "code": "422191005",
+      "display": "Oftalmik jarrohlik",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Офтальмологическая хирургия"
+        },
+        {
+          "language": "en",
+          "value": "Ophthalmic surgery"
+        }
+      ]
+    },
+    {
+      "code": "394594003",
+      "display": "Oftalmologiya",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Офтальмология"
+        },
+        {
+          "language": "en",
+          "value": "Ophthalmology"
+        }
+      ]
+    },
+    {
+      "code": "416304004",
+      "display": "Osteopatik manipulyativ tibbiyot",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Остеопатическая манипулятивная медицина"
+        },
+        {
+          "language": "en",
+          "value": "Osteopathic manipulative medicine"
+        }
+      ]
+    },
+    {
+      "code": "418960008",
+      "display": "Otolaringologiya",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Отоларингология"
+        },
+        {
+          "language": "en",
+          "value": "Otolaryngology"
+        }
+      ]
+    },
+    {
+      "code": "394882004",
+      "display": "Og'riqni boshqarish",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Лечение боли"
+        },
+        {
+          "language": "en",
+          "value": "Pain management"
+        }
+      ]
+    },
+    {
+      "code": "394806003",
+      "display": "Palliativ tibbiyot",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Паллиативная медицина"
+        },
+        {
+          "language": "en",
+          "value": "Palliative medicine"
+        }
+      ]
+    },
+    {
+      "code": "39458800",
+      "display": "Pediatriya (bolalar va o'smirlar) psixiatriyasi",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Детская и подростковая психиатрия"
+        },
+        {
+          "language": "en",
+          "value": "Pediatric (Child and adolescent) psychiatry"
+        }
+      ]
+    },
+    {
+      "code": "408459003",
+      "display": "Bolalar kardiologiyasi",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Детская кардиология"
+        },
+        {
+          "language": "en",
+          "value": "Pediatric cardiology"
+        }
+      ]
+    },
+    {
+      "code": "394607009",
+      "display": "Bolalar stomatologiyasi",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Детская стоматология"
+        },
+        {
+          "language": "en",
+          "value": "Pediatric dentistry"
+        }
+      ]
+    },
+    {
+      "code": "419610006",
+      "display": "Bolalar endokrinologiyasi",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Детская эндокринология"
+        },
+        {
+          "language": "en",
+          "value": "Pediatric endocrinology"
+        }
+      ]
+    },
+    {
+      "code": "418058008",
+      "display": "Bolalar gastroenterologiyasi",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Детская гастроэнтерология"
+        },
+        {
+          "language": "en",
+          "value": "Pediatric gastroenterology"
+        }
+      ]
+    },
+    {
+      "code": "420208008",
+      "display": "Bolalar genetikasi",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Детская генетика"
+        },
+        {
+          "language": "en",
+          "value": "Pediatric genetics"
+        }
+      ]
+    },
+    {
+      "code": "418652005",
+      "display": "Bolalar gematologiyasi",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Детская гематология"
+        },
+        {
+          "language": "en",
+          "value": "Pediatric hematology"
+        }
+      ]
+    },
+    {
+      "code": "418535003",
+      "display": "Bolalar immunologiyasi",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Детская иммунология"
+        },
+        {
+          "language": "en",
+          "value": "Pediatric immunology"
+        }
+      ]
+    },
+    {
+      "code": "418862001",
+      "display": "Bolalar yuqumli kasalliklari",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Детские инфекционные заболевания"
+        },
+        {
+          "language": "en",
+          "value": "Pediatric infectious diseases"
+        }
+      ]
+    },
+    {
+      "code": "419365004",
+      "display": "Bolalar nefrologiyasi",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Детская нефрология"
+        },
+        {
+          "language": "en",
+          "value": "Pediatric nephrology"
+        }
+      ]
+    },
+    {
+      "code": "418002000",
+      "display": "Bolalar onkologiyasi",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Детская онкология"
+        },
+        {
+          "language": "en",
+          "value": "Pediatric oncology"
+        }
+      ]
+    },
+    {
+      "code": "419983000",
+      "display": "Bolalar oftalmologiyasi",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Детская офтальмология"
+        },
+        {
+          "language": "en",
+          "value": "Pediatric ophthalmology"
+        }
+      ]
+    },
+    {
+      "code": "419170002",
+      "display": "Bolalar pulmonologiyasi",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Детская пульмонология"
+        },
+        {
+          "language": "en",
+          "value": "Pediatric pulmonology"
+        }
+      ]
+    },
+    {
+      "code": "419472004",
+      "display": "Bolalar revmatologiyasi",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Детская ревматология"
+        },
+        {
+          "language": "en",
+          "value": "Pediatric rheumatology"
+        }
+      ]
+    },
+    {
+      "code": "394539006",
+      "display": "Bolalar jarrohligi",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Детская хирургия"
+        },
+        {
+          "language": "en",
+          "value": "Pediatric surgery"
+        }
+      ]
+    },
+    {
+      "code": "420112009",
+      "display": "Bolalar jarrohligi - suyak iligi transplantatsiyasi",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Детская хирургия-трансплантация костного мозга"
+        },
+        {
+          "language": "en",
+          "value": "Pediatric surgery-bone marrow transplantation"
+        }
+      ]
+    },
+    {
+      "code": "409968004",
+      "display": "Profilaktik tibbiyot",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Профилактическая медицина"
+        },
+        {
+          "language": "en",
+          "value": "Preventive medicine"
+        }
+      ]
+    },
+    {
+      "code": "394587001",
+      "display": "Psixiatriya",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Психиатрия"
+        },
+        {
+          "language": "en",
+          "value": "Psychiatry"
+        }
+      ]
+    },
+    {
+      "code": "394913002",
+      "display": "Psixoterapiya",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Психотерапия"
+        },
+        {
+          "language": "en",
+          "value": "Psychotherapy"
+        }
+      ]
+    },
+    {
+      "code": "408440000",
+      "display": "Jamoat salomatligi tibbiyoti",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Медицина общественного здравоохранения"
+        },
+        {
+          "language": "en",
+          "value": "Public health medicine"
+        }
+      ]
+    },
+    {
+      "code": "418112009",
+      "display": "O'pka tibbiyoti",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Легочная медицина"
+        },
+        {
+          "language": "en",
+          "value": "Pulmonary medicine"
+        }
+      ]
+    },
+    {
+      "code": "419815003",
+      "display": "Radiatsion onkologiya",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Радиационная онкология"
+        },
+        {
+          "language": "en",
+          "value": "Radiation oncology"
+        }
+      ]
+    },
+    {
+      "code": "394914008",
+      "display": "Radiologiya",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Радиология"
+        },
+        {
+          "language": "en",
+          "value": "Radiology"
+        }
+      ]
+    },
+    {
+      "code": "408455009",
+      "display": "Radiologiya - Interventsion radiologiya",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Радиология-Интервенционная радиология"
+        },
+        {
+          "language": "en",
+          "value": "Radiology-Interventional radiology"
+        }
+      ]
+    },
+    {
+      "code": "394602003",
+      "display": "Reabilitatsiya",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Реабилитация"
+        },
+        {
+          "language": "en",
+          "value": "Rehabilitation"
+        }
+      ]
+    },
+    {
+      "code": "408447002",
+      "display": "Vaqtinchalik parvarish",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Временный уход"
+        },
+        {
+          "language": "en",
+          "value": "Respite care"
+        }
+      ]
+    },
+    {
+      "code": "394810000",
+      "display": "Revmatologiya",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Ревматология"
+        },
+        {
+          "language": "en",
+          "value": "Rheumatology"
+        }
+      ]
+    },
+    {
+      "code": "408450004",
+      "display": "Uyquni o'rganish",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Исследования сна"
+        },
+        {
+          "language": "en",
+          "value": "Sleep studies"
+        }
+      ]
+    },
+    {
+      "code": "408476004",
+      "display": "Jarrohlik - suyak va ilik transplantatsiyasi",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Хирургия-Трансплантация костного мозга и костей"
+        },
+        {
+          "language": "en",
+          "value": "Surgery-Bone and marrow transplantation"
+        }
+      ]
+    },
+    {
+      "code": "408469009",
+      "display": "Jarrohlik - Ko'krak jarrohligi",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Хирургия-Хирургия груди"
+        },
+        {
+          "language": "en",
+          "value": "Surgery-Breast surgery"
+        }
+      ]
+    },
+    {
+      "code": "408466002",
+      "display": "Jarrohlik - yurak jarrohligi",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Хирургия-Кардиохирургия"
+        },
+        {
+          "language": "en",
+          "value": "Surgery-Cardiac surgery"
+        }
+      ]
+    },
+    {
+      "code": "408471009",
+      "display": "Jarrohlik - kardiotorakal transplantatsiya",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Хирургия-кардиоторакальная трансплантация"
+        },
+        {
+          "language": "en",
+          "value": "Surgery-Cardiothoracic transplantation"
+        }
+      ]
+    },
+    {
+      "code": "408464004",
+      "display": "Jarrohlik - kolorektal jarrohlik",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Хирургия-Колоректальная хирургия"
+        },
+        {
+          "language": "en",
+          "value": "Surgery-Colorectal surgery"
+        }
+      ]
+    },
+    {
+      "code": "408441001",
+      "display": "Jarrohlik - stomatologiya - endodontiya",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Хирургия-Стоматология-Эндодонтия"
+        },
+        {
+          "language": "en",
+          "value": "Surgery-Dental-Endodontics"
+        }
+      ]
+    },
+    {
+      "code": "408465003",
+      "display": "Jarrohlik-Tish-Og'iz-jag' jarrohligi",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Хирургия-Стоматология-Челюстно-лицевая хирургия"
+        },
+        {
+          "language": "en",
+          "value": "Surgery-Dental-Oral and maxillofacial surgery"
+        }
+      ]
+    },
+    {
+      "code": "394605001",
+      "display": "Jarrohlik - stomatologik - og'iz bo'shlig'i jarrohligi",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Хирургия-Стоматология-Хирургия полости рта"
+        },
+        {
+          "language": "en",
+          "value": "Surgery-Dental-Oral surgery"
+        }
+      ]
+    },
+    {
+      "code": "394608004",
+      "display": "Jarrohlik-tish-ortodontiya",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Хирургия-Стоматология-Ортодонтия"
+        },
+        {
+          "language": "en",
+          "value": "Surgery-Dental-Orthodontics"
+        }
+      ]
+    },
+    {
+      "code": "408461007",
+      "display": "Jarrohlik - Dental-Periodontal jarrohlik",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Хирургия-Стоматология-Пародонтальная хирургия"
+        },
+        {
+          "language": "en",
+          "value": "Surgery-Dental-Periodontal surgery"
+        }
+      ]
+    },
+    {
+      "code": "408460008",
+      "display": "Jarrohlik-tish-protez stomatologiyasi (protezlash)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Хирургия-Стоматология-Протезирование (Протезирование)"
+        },
+        {
+          "language": "en",
+          "value": "Surgery-Dental-Prosthetic dentistry (Prosthodontics)"
+        }
+      ]
+    },
+    {
+      "code": "394606000",
+      "display": "Jarrohlik-stomatologiya-restorativ stomatologiya",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Хирургия-Стоматология-Восстановительная стоматология"
+        },
+        {
+          "language": "en",
+          "value": "Surgery-Dentistry-Restorative dentistry"
+        }
+      ]
+    },
+    {
+      "code": "408449004",
+      "display": "Jarrohlik - stomatologiya - jarrohlik",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Хирургия-Стоматология--хирургическая"
+        },
+        {
+          "language": "en",
+          "value": "Surgery-Dentistry--surgical"
+        }
+      ]
+    },
+    {
+      "code": "418018006",
+      "display": "Jarrohlik - Dermatologik jarrohlik",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Хирургия-Дерматологическая хирургия"
+        },
+        {
+          "language": "en",
+          "value": "Surgery-Dermatologic surgery"
+        }
+      ]
+    },
+    {
+      "code": "394604002",
+      "display": "Jarrohlik - quloq, burun va tomoq jarrohligi",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Хирургия-Хирургия уха, носа и горла"
+        },
+        {
+          "language": "en",
+          "value": "Surgery-Ear, nose and throat surgery"
+        }
+      ]
+    },
+    {
+      "code": "394609007",
+      "display": "Jarrohlik - umumiy",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Хирургия общая"
+        },
+        {
+          "language": "en",
+          "value": "Surgery-general"
+        }
+      ]
+    },
+    {
+      "code": "408474001",
+      "display": "Jarrohlik - gepatobilar va oshqozon osti bezi jarrohligi",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Хирургия-Гепатобилиарная и панкреатическая хирургия"
+        },
+        {
+          "language": "en",
+          "value": "Surgery-Hepatobiliary and pancreatic surgery"
+        }
+      ]
+    },
+    {
+      "code": "394610002",
+      "display": "Jarrohlik - neyroxirurgiya",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Хирургия-Нейрохирургия"
+        },
+        {
+          "language": "en",
+          "value": "Surgery-Neurosurgery"
+        }
+      ]
+    },
+    {
+      "code": "394611003",
+      "display": "Jarrohlik - Plastik jarrohlik",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Хирургия-Пластическая хирургия"
+        },
+        {
+          "language": "en",
+          "value": "Surgery-Plastic surgery"
+        }
+      ]
+    },
+    {
+      "code": "408477008",
+      "display": "Jarrohlik - Transplantatsiya jarrohligi",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Хирургия-Трансплантационная хирургия"
+        },
+        {
+          "language": "en",
+          "value": "Surgery-Transplantation surgery"
+        }
+      ]
+    },
+    {
+      "code": "394801008",
+      "display": "Jarrohlik - travma va ortopediya",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Хирургия-травматология и ортопедия"
+        },
+        {
+          "language": "en",
+          "value": "Surgery-Trauma and orthopedics"
+        }
+      ]
+    },
+    {
+      "code": "408463005",
+      "display": "Jarrohlik - qon tomir",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Хирургия-Сосудистая"
+        },
+        {
+          "language": "en",
+          "value": "Surgery-Vascular"
+        }
+      ]
+    },
+    {
+      "code": "419321007",
+      "display": "Jarrohlik onkologiyasi",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Хирургическая онкология"
+        },
+        {
+          "language": "en",
+          "value": "Surgical oncology"
+        }
+      ]
+    },
+    {
+      "code": "394576009",
+      "display": "Jarrohlik - baxtsiz hodisa va favqulodda",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Хирургическое отделение - Неотложная помощь и экстренная помощь"
+        },
+        {
+          "language": "en",
+          "value": "Surgical-Accident & emergency"
+        }
+      ]
+    },
+    {
+      "code": "394590007",
+      "display": "Torakal tibbiyot",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Торакальная медицина"
+        },
+        {
+          "language": "en",
+          "value": "Thoracic medicine"
+        }
+      ]
+    },
+    {
+      "code": "409967009",
+      "display": "Toksikologiya",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Токсикология"
+        },
+        {
+          "language": "en",
+          "value": "Toxicology"
+        }
+      ]
+    },
+    {
+      "code": "408448007",
+      "display": "Tropik tibbiyot",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Тропическая медицина"
+        },
+        {
+          "language": "en",
+          "value": "Tropical medicine"
+        }
+      ]
+    },
+    {
+      "code": "419043006",
+      "display": "Urologik onkologiya",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Урологическая онкология"
+        },
+        {
+          "language": "en",
+          "value": "Urological oncology"
+        }
+      ]
+    },
+    {
+      "code": "394612005",
+      "display": "Urologiya",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Урология"
+        },
+        {
+          "language": "en",
+          "value": "Urology"
+        }
+      ]
+    },
+    {
+      "code": "394733009",
+      "display": "Tibbiyot ixtisosligi--BOSHQA--ROYATDA EMAS",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Медицинская специальность--ДРУГАЯ--НЕ УКАЗАНО"
+        },
+        {
+          "language": "en",
+          "value": "Medical specialty--OTHER--NOT LISTED"
+        }
+      ]
+    },
+    {
+      "code": "394732004",
+      "display": "Jarrohlik ixtisosligi--BOShQA-RO'YATDA EMAS",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Хирургическая специальность--ДРУГАЯ--НЕ УКАЗАНО"
+        },
+        {
+          "language": "en",
+          "value": "Surgical specialty--OTHER-NOT LISTED"
+        }
+      ]
+    }
+  ],
+  "version": "1.0.0",
+  "experimental": true,
+  "date": "2025-03-12",
+  "publisher": "Uzinfocom",
+  "language": "uz",
+  "caseSensitive": true,
+  "count": 114
+}

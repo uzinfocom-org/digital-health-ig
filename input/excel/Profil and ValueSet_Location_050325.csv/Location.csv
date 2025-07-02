@@ -1,0 +1,40 @@
+Name		Flags		Cardinality	example 1	example 2	document	Type	Description & Constraints		ValueSets			
+Location		TU						DomainResource	Информация о местоположении		System	CodeSystem	Code	Display
+identifier		Σ S	  D	0..*				Identifier	Идентификаторы местоположения		https://terminology.medcore.uz/ValueSet/RoleCode	CodeSystemRoleCode	все коды	Тип функции, которую выполняет местоположение
+	use			0..1	official	official		code	"Определяет вид использования идентификатора (официальный, вторичный, временный, старый, обычный)
+Binding:http://hl7.org/fhir/identifier-use"		https://terminology.medcore.uz/ValueSet/AddressType	CodeSystemaddresstype	все имеющиеся коды	Тип адреса
+	type	Σ S		0..1	TAX	Branch		CodeableConcept	"Определяет код типа идентификатора
+Binding: https://terminology.medcore.uz/ValueSet/ Identifier Type (required)"		https://terminology.medcore.uz/ValueSet/countries	CodeSystemCountries ISO3166_2	все имеющиеся коды, кроме кода stateless	Страна 
+	system	S		0..1	https://terminology.medcore.uz/CodeSystemIdentifierType	https://terminology.medcore.uz/CodeSystemIdentifierType		uri	http://medcore.uz/NamingSystem/org-tax-id		https://terminology.medcore.uz/ValueSet/region_ district	CodeSystemСОАТО	все имеющиеся коды	Область/район
+	value	Σ C		0..1	200935935	Отделение		string	Значение идентификатора 		https://terminology.medcore.uz/ValueSet/city	CodeSystemСОАТО	все имеющиеся коды	Город
+status		Σ	  D	0..1	active	active		code	"Определяет доступность местоположения
+Binding:https://terminology.medcore.uz/ValueSet/location-status"		https://terminology.medcore.uz/ValueSet/mahalla	CodeSystemMahalla	все имеющиеся коды	Махалля
+operationalStatus		Σ	  D	0..1				Coding	"Статус занятости для палаты/кровати
+Binding:https://terminology.medcore.uz/ValueSet/bedStatus icon (Preferred)"					
+Slices for extension name				0..*					Перевод на разные языки (локализация)					
+extension:lang				1..1				Extension						
+	url	Σ S	  D	1..1	lang	lang		uri	"""lang"""					
+	value	Σ S	  D	1..1	uz	ru		code	Binding: https://terminology.medcore.uz/ValueSet/Language (required)					
+extension:content		Σ S	  D	1..1										
+	url	Σ S		1..1	content	content	 	uri	"""content"""					
+	valueString	Σ S	  D	1..1	Respublika onkologiya markazi	Отделение онкомаммологии №1		string	Название местоположения на выбранном языке					
+type		Σ S	  D	0..*	HOSP	organ0001.00054	Классификатор МинЗдрава (не утвержденный документ)	CodeableConcept	"Тип функции, которую выполняет местоположение
+Binding: https://terminology.medcore.uz/ValueSet/RoleCode (required)"					
+contact		Σ S	  D	0..*	unknown	unknown		ExtendedContactDetail	Официальные контакты местоположения					
+address		Σ S	  D	0..*				"	Address"	Физическое местоположение					
+	type	Σ	  D	0..1	postal			code	"Определяет тип адреса
+Binding: https://terminology.medcore.uz/ValueSet/AddressType (required)"					
+	line	Σ	  D	0..1	Farobi, 383			string	Текстовая часть адреса.  Название махалли, улицы,  номер дома					
+	country	Σ	  D	0..1	UZ		Международный Классификатор стран мира	code	"Код страны, 
+для кодов использовать https://terminology.medcore.uz/ValueSet/countries"					
+	district	Σ	  D	0..1	1726		Ведомственный классификатор (СОАТО)	code	"Код области/района, 
+для кодов использовать https://terminology.medcore.uz/ValueSet/region_ district"					
+	city	Σ	  D	0..1	1726			code	"Код города, 
+для кодов использовать https://terminology.medcore.uz/ValueSet/city"					
+position	period	Σ	  D	0..1				Period	Период времени, когда адрес использовался/используется					
+	longitude		  D	1..1				decimal	Долгота					
+	latitude		  D	1..1				decimal	Широта					
+managingOrganization		Σ	  D	0..1		Organization ID		Reference(Organization)	Управляющая организация					
+partOf		Σ	  D	0..1				Reference(Location)	Другое местоположение, частью которого является данное местоположение					
+hoursOfOperation				0..*				Availability	В какие дни/время в течение недели это место обычно открыто					
+endpoint				0..*				Reference(Endpoint)	Технические конечные точки, обеспечивающие доступ к сервисам, используемым для данного местоположения					

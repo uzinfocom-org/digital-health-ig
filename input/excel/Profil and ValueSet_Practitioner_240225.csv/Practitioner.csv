@@ -1,0 +1,51 @@
+Name		Flags		Cardinality	example 2	document	Type	Description & Constraints		ValueSets															
+Practitioner		N					DomainResource	Описывает субъект, прямо или косвенно участвующий в оказании медицинской помощи		System	CodeSystem	Code	Display												
+identifier		S	  D	1..*			Identifier	Идентификатор		https://terminology.medcore.uz/ValueSet/IdentifierType	CodeSystemIdentifierType	Все коды	Тип идентификатора, удостоверяющего личность												
+	use			0..1	official		code	"Определяет вид использования идентификатора (официальный, вторичный, временный, старый, обычный)
+Binding:http://hl7.org/fhir/identifier-use"		https://terminology.medcore.uz/ValueSet/gender	CodeSystemgender	male, female, unknown, regis0007.00004, regis0007.00005	Код пола пациента												
+	type	Σ S		0..1	NI		CodeableConcept	"Код типа идентификатора, удостоверяющего личность медработника
+Binding: https://terminology.medcore.uz/ValueSet/IdentifierType (required)"		https://terminology.medcore.uz/ValueSet/AddressType	CodeSystemaddresstype	 home, temp	Тип адреса												
+	system	S		0..1	https://terminology.medcore.uz/CodeSystemIdentifierType		uri	http://medcore.uz/NamingSystem/org-tax-id		https://terminology.medcore.uz/ValueSet/countries	CodeSystemCountries ISO3166_2	все имеющиеся коды, кроме кода stateless	Страна 												
+	value	Σ C		0..1	12345678901234		string	Значение идентификатора 		https://terminology.medcore.uz/ValueSet/region_ district	CodeSystemСОАТО	все имеющиеся коды	Область/район												
+active		Σ S	  D	0..1	true		"	boolean"	Запись о медицинском работнике активна или нет		https://terminology.medcore.uz/ValueSet/city	CodeSystemСОАТО	все имеющиеся коды	Город												
+name			  D				HumanName			http://terminology.hl7.org/CodeSystem/v2-0360/ValueSet/ license-certificate	CodeSystem/v2-0360	"Коды, выбранные во вкладке ""ValueSet  license-certificate"""	Квалификация медработника (лицензии, сертификаты)												
+	use	Σ	  D	0..1	official		code	"Определяет вид имени медработника
+Binding: http://hl7.org/fhir/name-use (required)"																	
+	text	Σ	  D	0..1	Test Test Test		string	Текстовое представление полного имени медработника																	
+	family	Σ S	  D	0..1	Test		string	Фамилия																	
+	given	Σ S	  D	0..1	Test		string	Имя																	
+	suffix	Σ S	  D	0..1	Test		string	Отчество																	
+	period	Σ	  D	0..1			Period	Период, в течение которого использовалось это имя																	
+telecom		Σ	  D	0..*			ContactPoint																		
+	system	Σ	  D	0..1	phone		code	"Определяет способ связи (телефон, факс, смс…)
+Binding: http://hl7.org/fhir/contact-point-system (required)"																	
+	value	Σ C		0..1	975555555		string	Контактные данные																	
+	use	Σ	  D	0..1	mobile		code	"Определяет вид связи (домашний, рабочий, мобильный…)
+Binding: http://hl7.org/fhir/contact-point-use (required)"																	
+	rank	Σ	  D	0..1			positiveInt	Предпочтительный порядок использования																	
+	period	Σ	  D	0..1			Period	Период использования																	
+gender		Σ	  D	0..1	female		code	"Код пола медработника
+Binding: https://terminology.medcore.uz/ValueSet/gender (required)"																	
+birthDate		Σ	  D	0..1	06-05-85		date	Дата рождения																	
+deceased[x]		Σ	  D																						
+	deceasedBoolean		  D		true		boolean	Указывает, жив или мертв медработник																	
+	deceasedDateTime		  D				dateTime	Указывает дату и время смерти																	
+address		Σ	  D	0..*			Address																		
+	type	Σ	  D	0..1	temp		code	"Определяет тип адреса
+Binding: https://terminology.medcore.uz/ValueSet/AddressType (required)"																	
+	line	Σ S	  D	0..1	mahallasi Dilobod, Katortol ko‘chasi, 9-uy, 15-xonadon 		string	Текстовая часть адреса, предоставляемая ГЦП. Название махалли, улицы,  номер дома, номер квартиры																	
+	country	Σ	  D	0..1	UZ	Международный Классификатор стран мира	code	"Код страны, 
+Binding: https://terminology.medcore.uz/ValueSet/countries"																	
+	district	Σ	  D	0..1	1726	Ведомственный классификатор (СОАТО)	code	"Код области/района, 
+Binding: https://terminology.medcore.uz/ValueSet/region_ district"																	
+	city	Σ	  D	0..1	1726		code	"Код города, 
+Binding: https://terminology.medcore.uz/ValueSet/city"																	
+	period	Σ	  D	0..1			Period	Период времени, когда адрес использовался/используется																	
+photo			  D				Attachment	Фото медработника																	
+	url	Σ	  D	0..1			url	Адрес (Uri), где хранится фото																	
+	size	Σ	  D	0..1			"	integer64"	Размер фото в байтах																	
+qualification		С	  D	0..*			"BackboneElement	"	Квалификации, сертификаты, аккредитации, лицензии, обучение и т. д., имеющие отношение к предоставлению медицинской помощи																	
+code		С	  D	1..1	DIP		CodeableConcept	"Кодированное представление квалификации медработника
+Binding: http://terminology.hl7.org/CodeSystem/v2-0360/ValueSet/ license-certificate"																	
+period				0..1			Period	Период действия квалификации																	
+issuer				0..1	Organization ID		Reference(Organization)	Ссылка на организацию, которая утвердила квалификацию																	

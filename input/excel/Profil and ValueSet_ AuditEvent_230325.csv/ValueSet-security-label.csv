@@ -1,0 +1,10 @@
+CODE	UZ	RU	EN
+N	normal	нормальный	normal
+R	cheklangan	ограниченный	restricted
+ETH 	giyohvand moddalarni suiiste'mol qilish haqidagi ma'lumotlarning sezgirligi	чувствительность информации о злоупотреблении психоактивными веществами	substance abuse information sensitivity
+PSY	psixiatriya buzilishi ma'lumotlarga sezgirlik	психиатрия расстройство информационная чувствительность	psychiatry disorder information sensitivity
+STD	jinsiy yo'l bilan yuqadigan kasalliklar haqida ma'lumotlarning sezgirligi	чувствительность информации о заболеваниях, передающихся половым путем	sexually transmitted disease information sensitivity
+TREAT	g'amxo'rlik	уход	treatment
+ETREAT	Favqulodda yordam	Экстренная помощь	Emergency Treatment
+NOAUTH	sub'ektning ruxsatisiz oshkor qilmang	не разглашать без разрешения субъекта	no disclosure without subject authorization
+NORDSCLCD	roziligisiz qayta oshkor qilish yo'q	нет повторного раскрытия без директивы согласия	no redisclosure without consent directive

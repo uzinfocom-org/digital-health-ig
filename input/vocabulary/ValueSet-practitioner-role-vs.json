@@ -1,0 +1,1916 @@
+{
+  "resourceType": "ValueSet",
+  "status": "draft",
+  "name": "PractitionerRoleVS",
+  "id": "practitioner-role-vs",
+  "title": "Practitioner roles",
+  "description": "Defines the roles of medical practitioners",
+  "url": "https://terminology.medcore.uz/ValueSet/practitioner-role-vs",
+  "experimental": true,
+  "language": "uz",
+  "compose": {
+    "include": [
+      {
+        "system": "https://terminology.medcore.uz/CodeSystem/position-and-profession-cs",
+        "concept": [
+          {
+            "code": "1342",
+            "display": "Sog'liqni saqlash sohasida tibbiy xizmat ko'rsatishda bo'lim boshliqlari"
+          },
+          {
+            "code": "1342.1",
+            "display": "Bosh hamshira"
+          },
+          {
+            "code": "1342.2",
+            "display": "Bosh okulist"
+          },
+          {
+            "code": "1342.3",
+            "display": "Bosh optik"
+          },
+          {
+            "code": "1342.4",
+            "display": "Bosh mutaxassis-bakteriolog"
+          },
+          {
+            "code": "1342.5",
+            "display": "Bosh mutaxassis-virusolog"
+          },
+          {
+            "code": "1342.6",
+            "display": "Bosh mutaxassis-gerbolog"
+          },
+          {
+            "code": "1342.7",
+            "display": "Bosh mutaxassis-mikolog"
+          },
+          {
+            "code": "1342.8",
+            "display": "Bosh mutaxassis-entomolog"
+          },
+          {
+            "code": "1342.9",
+            "display": "Bosh terapevt"
+          },
+          {
+            "code": "1342.10",
+            "display": "Tibbiy-mehnat ekspertizasi bo'yicha bosh ekspert"
+          },
+          {
+            "code": "1342.11",
+            "display": "Bosh epidemiolog"
+          },
+          {
+            "code": "1342.12",
+            "display": "Ambulatoriya (klinika, poliklinika) mudiri"
+          },
+          {
+            "code": "1342.13",
+            "display": "Balьneologiya bo'linmasi mudiri"
+          },
+          {
+            "code": "1342.14",
+            "display": "Vrachlik bo'linmasi (kabineti) mudiri"
+          },
+          {
+            "code": "1342.15",
+            "display": "Tibbiy punkt mudiri"
+          },
+          {
+            "code": "1342.16",
+            "display": "Tibbiy-sanitariya qismi (klinika) mudiri"
+          },
+          {
+            "code": "1342.17",
+            "display": "Tibbiyot punkti (konsulьtatsiya) mudiri"
+          },
+          {
+            "code": "1342.18",
+            "display": "Bo'linma (sog'liqni saqlash muassasalari) mudiri"
+          },
+          {
+            "code": "1342.19",
+            "display": "Sanitariya o'tish joyi mudiri"
+          },
+          {
+            "code": "1342.20",
+            "display": "Korxona tibbiy-sanitariya bo'limi boshlig'i"
+          },
+          {
+            "code": "1342.21",
+            "display": "Tibbiy-sanitariya qismi boshlig'i"
+          },
+          {
+            "code": "1342.22",
+            "display": "Profilaktoriya boshlig'i"
+          },
+          {
+            "code": "1343",
+            "display": "Keksalarni parvarish qilish sohasida bo'limlari rahbarlari"
+          },
+          {
+            "code": "1343.1",
+            "display": "Ijtimoiy xizmat muassasasi bo'linma mudiri"
+          },
+          {
+            "code": "1343.2",
+            "display": "Ijtimoiy xizmat muassasasi bo'limi mudiri"
+          },
+          {
+            "code": "1343.3",
+            "display": "Ijtimoiy xizmat muassasasi filiali mudiri"
+          },
+          {
+            "code": "1344",
+            "display": "Ijtimoiy xizmat ko'rsatish bo'limlari rahbarlari (keksalarga xizmat ko'rsatishdan tashqari)"
+          },
+          {
+            "code": "1344.1",
+            "display": "Bosh sotsiolog"
+          },
+          {
+            "code": "1344.2",
+            "display": "Agentlik mudiri (boshlig'i)"
+          },
+          {
+            "code": "1344.3",
+            "display": "Ijtimoiy xizmat muassasasi bo'linma mudiri"
+          },
+          {
+            "code": "1344.4",
+            "display": "Ijtimoiy xizmat muassasasi bo'limi mudiri"
+          },
+          {
+            "code": "1344.5",
+            "display": "Ijtimoiy xizmat muassasasi filiali mudiri"
+          },
+          {
+            "code": "1344.6",
+            "display": "Ijtimoiy soha menejeri"
+          },
+          {
+            "code": "1344.7",
+            "display": "Ijtimoiy sohani rivojlantirish bo'yicha menejer"
+          },
+          {
+            "code": "2211",
+            "display": "Sog'liqni saqlash sohasida professional-mutaxassislar.  Vrachlar.  Umumiy amaliyot vrachlari"
+          },
+          {
+            "code": "2211.1",
+            "display": "Umumiy amaliyot vrachi"
+          },
+          {
+            "code": "2211.2",
+            "display": "Bolalar umumiy vrachi"
+          },
+          {
+            "code": "2211.3",
+            "display": "Onkologiya umumiy vrachi"
+          },
+          {
+            "code": "2211.4",
+            "display": "Umumiy onkolog (onkologik bo'lmagan statsionarlarda maslahatchi shifokor sifatida)"
+          },
+          {
+            "code": "2211.5",
+            "display": "Vrach-intern"
+          },
+          {
+            "code": "2211.6",
+            "display": "Vrach-mutaxassis"
+          },
+          {
+            "code": "2211.7",
+            "display": "Kichik ilmiy xodim"
+          },
+          {
+            "code": "2211.8",
+            "display": "Ilmiy xodim"
+          },
+          {
+            "code": "2211.9",
+            "display": "Ambulator-poliklinika bo'yicha vrach yordamchisi"
+          },
+          {
+            "code": "2211.10",
+            "display": "Umumiy gigiena bo'yicha vrach"
+          },
+          {
+            "code": "2211.11",
+            "display": "Tajriba ottiruvchi kichik ilmiy xodim"
+          },
+          {
+            "code": "2211.12",
+            "display": "Katta ilmiy xodim"
+          },
+          {
+            "code": "2212",
+            "display": "Vrach-mutaxasislar"
+          },
+          {
+            "code": "2212.1",
+            "display": "Anesteziolog"
+          },
+          {
+            "code": "2212.2",
+            "display": "Abdominal bo'yicha vrach onkoxirurg"
+          },
+          {
+            "code": "2212.3",
+            "display": "Abdominal bo'yicha vrach onkoxirurg (ixtisoslashgan muassasalarda)"
+          },
+          {
+            "code": "2212.4",
+            "display": "Vrach allergolog-immunolog"
+          },
+          {
+            "code": "2212.5",
+            "display": "Vrach anesteziolog-reanimatolog"
+          },
+          {
+            "code": "2212.6",
+            "display": "Vrach bakteriolog"
+          },
+          {
+            "code": "2212.7",
+            "display": "Alohida xavfli infektsiyalar bo'yicha bakteriolog"
+          },
+          {
+            "code": "2212.8",
+            "display": "Vrach vertebrolog"
+          },
+          {
+            "code": "2212.9",
+            "display": "Vrach virusolog"
+          },
+          {
+            "code": "2212.10",
+            "display": "Mehnat-vrachlik ekspertizasi vrachi"
+          },
+          {
+            "code": "2212.11",
+            "display": "Vrach gastroenterolog"
+          },
+          {
+            "code": "2212.12",
+            "display": "Vrach gematolog"
+          },
+          {
+            "code": "2212.13",
+            "display": "Vrach geriatr"
+          },
+          {
+            "code": "2212.14",
+            "display": "Vrach ginekolog"
+          },
+          {
+            "code": "2212.15",
+            "display": "Vrach (maslahat/ diagnostika / oilaviy poliklinika, dispanser va boshqalar.) ginekologi"
+          },
+          {
+            "code": "2212.16",
+            "display": "Vrach dezinfektsionist"
+          },
+          {
+            "code": "2212.17",
+            "display": "Vrach dermatovenerolog"
+          },
+          {
+            "code": "2212.18",
+            "display": "Bolalar alllergolog vrachi"
+          },
+          {
+            "code": "2212.19",
+            "display": "Bolalar anesteziolog-reanimatolog vrachi"
+          },
+          {
+            "code": "2212.20",
+            "display": "Bolalar gastroenterolog vrachi"
+          },
+          {
+            "code": "2212.21",
+            "display": "Bolalar va o'smirlar psixiatri"
+          },
+          {
+            "code": "2212.22",
+            "display": "Bolalar infektsionist vrachi"
+          },
+          {
+            "code": "2212.23",
+            "display": "Bolalar kardiorevmatolog vrachi"
+          },
+          {
+            "code": "2212.24",
+            "display": "Bolalar kardioxirurg vrachi"
+          },
+          {
+            "code": "2212.25",
+            "display": "Bolalar nevrolog vrachi"
+          },
+          {
+            "code": "2212.26",
+            "display": "Bolalar nefrolog vrachi"
+          },
+          {
+            "code": "2212.27",
+            "display": "Bolalar onkolog kimyoterapevt vrachi"
+          },
+          {
+            "code": "2212.28",
+            "display": "Bolalar onkoxirurg vrachi"
+          },
+          {
+            "code": "2212.29",
+            "display": "Bolalar pulьmonolog vrachi"
+          },
+          {
+            "code": "2212.30",
+            "display": "Bolalar travmatolog-ortoped vrachi"
+          },
+          {
+            "code": "2212.31",
+            "display": "Bolalar urolog vrachi"
+          },
+          {
+            "code": "2212.32",
+            "display": "Bolalar ftiziatr vrachi"
+          },
+          {
+            "code": "2212.33",
+            "display": "Bolalar xirurg vrachi"
+          },
+          {
+            "code": "2212.34",
+            "display": "Bolalar ambulatur xirurg vrachi"
+          },
+          {
+            "code": "2212.35",
+            "display": "Bolalar endokrinolog vrachi"
+          },
+          {
+            "code": "2212.36",
+            "display": "Bolalar va o'smirlar genekolog vrachi"
+          },
+          {
+            "code": "2212.37",
+            "display": "Vrach iglorefleksoterapevt"
+          },
+          {
+            "code": "2212.38",
+            "display": "Vrach immunolog"
+          },
+          {
+            "code": "2212.39",
+            "display": "Interventsion kardiologiya vrachi"
+          },
+          {
+            "code": "2212.40",
+            "display": "Interventsion radiologiya vrachi"
+          },
+          {
+            "code": "2212.41",
+            "display": "Vrach infektsionist"
+          },
+          {
+            "code": "2212.42",
+            "display": "Immunoprofilaktika kabinetining vrachi"
+          },
+          {
+            "code": "2212.43",
+            "display": "Yuqumli kasalliklar kabinetining vrachi"
+          },
+          {
+            "code": "2212.44",
+            "display": "Vrach kardioanesteziolog"
+          },
+          {
+            "code": "2212.45",
+            "display": "Vrach kardiolog"
+          },
+          {
+            "code": "2212.46",
+            "display": "Vrach kardioxirurg"
+          },
+          {
+            "code": "2212.47",
+            "display": "Klinik farmakologiya vrachi"
+          },
+          {
+            "code": "2212.48",
+            "display": "Vrach koloproktolog"
+          },
+          {
+            "code": "2212.49",
+            "display": "Vrach kombustiolog"
+          },
+          {
+            "code": "2212.50",
+            "display": "Qabul bo'limining shifokor koordinatori (shoshilinch tibbiy yordam muassasalari)"
+          },
+          {
+            "code": "2212.51",
+            "display": "Vrach kosmetolog"
+          },
+          {
+            "code": "2212.52",
+            "display": "Immunogistokimyoviy laboratoriyasi laborant vrachi"
+          },
+          {
+            "code": "2212.53",
+            "display": "Biokimyoviy-klinik laboratoriya vrach laboranti"
+          },
+          {
+            "code": "2212.54",
+            "display": "Klinik va biokimyoviy/ immunobiologik/ immunoferment/ serologik / PTsR-diagnostik va boshqa laboratoriyalar laboranti"
+          },
+          {
+            "code": "2212.55",
+            "display": "Klinik va biokimyoviy/ immunobiologik/ immunoferment/ serologik / PTsR-diagnostik va boshqa laboratoriyalar laboranti"
+          },
+          {
+            "code": "2212.56",
+            "display": "Shifokor sanitariya laboranti / toksikologik / rentgenologik / parazitologik va boshqa laboratoriyalar"
+          },
+          {
+            "code": "2212.57",
+            "display": "Sud-tibbiyot yekspertizasi laboratoriyasining vrach laboranti"
+          },
+          {
+            "code": "2212.58",
+            "display": "Vrach mammolog"
+          },
+          {
+            "code": "2212.59",
+            "display": "Manual terapiya vrachi"
+          },
+          {
+            "code": "2212.60",
+            "display": "Tibbiy genetiki vrachi"
+          },
+          {
+            "code": "2212.61",
+            "display": "Tibbiy psixologiya vrachi"
+          },
+          {
+            "code": "2212.62",
+            "display": "Tibbiy statistika vrachi"
+          },
+          {
+            "code": "2212.63",
+            "display": "Vrach uslubchi"
+          },
+          {
+            "code": "2212.64",
+            "display": "Axborot tizimlari bo'limi vrach uslubchisi"
+          },
+          {
+            "code": "2212.65",
+            "display": "Vrach mikroxirurg"
+          },
+          {
+            "code": "2212.66",
+            "display": "Vrach narkolog"
+          },
+          {
+            "code": "2212.67",
+            "display": "Vrach nevrolog"
+          },
+          {
+            "code": "2212.68",
+            "display": "Vrach neyrofiziolog"
+          },
+          {
+            "code": "2212.69",
+            "display": "Vrach neyroxirurg"
+          },
+          {
+            "code": "2212.70",
+            "display": "Vrach neonatal jarroh"
+          },
+          {
+            "code": "2212.71",
+            "display": "Vrach neonatolog"
+          },
+          {
+            "code": "2212.72",
+            "display": "Shoshilinch kardiologiya / yurak intensiv terapiyasi vrachi"
+          },
+          {
+            "code": "2212.73",
+            "display": "Shoshilinch pediatr (intensiv terapiya bo'limi) vrachi"
+          },
+          {
+            "code": "2212.74",
+            "display": "Vrach nefrolog"
+          },
+          {
+            "code": "2212.75",
+            "display": "Vrach onkoginekolog"
+          },
+          {
+            "code": "2212.76",
+            "display": "Vrach onkokoloproktolog"
+          },
+          {
+            "code": "2212.77",
+            "display": "Vrach onkourolog"
+          },
+          {
+            "code": "2212.78",
+            "display": "Vrach ortoped"
+          },
+          {
+            "code": "2212.79",
+            "display": "Gemodializ / dializ bo'linmasi vrachi"
+          },
+          {
+            "code": "2212.80",
+            "display": "Yiringli jarrohlik bo'linmasi vrachi"
+          },
+          {
+            "code": "2212.81",
+            "display": "Suyak sil kasalligi bo'linmasi vrachi"
+          },
+          {
+            "code": "2212.82",
+            "display": "Bosh va bo'yin shishlari bo'linmasi vrachi"
+          },
+          {
+            "code": "2212.83",
+            "display": "Yumshoq to'qimalar va suyaklar o'simtalari bo'linmasi vrachi"
+          },
+          {
+            "code": "2212.84",
+            "display": "Vrach otorinolaringolog"
+          },
+          {
+            "code": "2212.85",
+            "display": "Reanimatsiya bo'limi shifokori"
+          },
+          {
+            "code": "2212.86",
+            "display": "Vrach paradontolog"
+          },
+          {
+            "code": "2212.87",
+            "display": "Vrach parazitolog"
+          },
+          {
+            "code": "2212.88",
+            "display": "Vrach patologoanatom"
+          },
+          {
+            "code": "2212.89",
+            "display": "Vrach pediatr"
+          },
+          {
+            "code": "2212.90",
+            "display": "Plastik jarrohlik vrachi"
+          },
+          {
+            "code": "2212.91",
+            "display": "Jismoniy mashqlar terapiyasi / sport tibbiyoti bo'yicha vrach"
+          },
+          {
+            "code": "2212.92",
+            "display": "Vrach profpatolog"
+          },
+          {
+            "code": "2212.93",
+            "display": "Vrach psixiatr"
+          },
+          {
+            "code": "2212.94",
+            "display": "Psixiatr-suitsidolog vrach"
+          },
+          {
+            "code": "2212.95",
+            "display": "Vrach psixoterapevt"
+          },
+          {
+            "code": "2212.96",
+            "display": "Vrach pulьmonolog"
+          },
+          {
+            "code": "2212.97",
+            "display": "Vrach rabiolog"
+          },
+          {
+            "code": "2212.98",
+            "display": "Vrach radioterapevt"
+          },
+          {
+            "code": "2212.99",
+            "display": "Kuyish reanimatsiyasi bo'yicha vrach reanimatologi"
+          },
+          {
+            "code": "2212.100",
+            "display": "Vrach revmatolog"
+          },
+          {
+            "code": "2212.101",
+            "display": "Vrach rentgenolog"
+          },
+          {
+            "code": "2212.102",
+            "display": "Kompyuter tomografiyasi (KT) vrach rentgenologi"
+          },
+          {
+            "code": "2212.103",
+            "display": "Magnit-rezonans tomografiya (MRT) vrach rentgenologi"
+          },
+          {
+            "code": "2212.104",
+            "display": "Vrach reproduktolog"
+          },
+          {
+            "code": "2212.105",
+            "display": "Tez tibbiy yordam vrachi"
+          },
+          {
+            "code": "2212.106",
+            "display": "Qon tomir jarroh vrachi"
+          },
+          {
+            "code": "2212.107",
+            "display": "Orqa miya neyroxirurg vrach"
+          },
+          {
+            "code": "2212.108",
+            "display": "Qon quyish stantsiyasining vrachi"
+          },
+          {
+            "code": "2212.109",
+            "display": "Vrach statistik"
+          },
+          {
+            "code": "2212.110",
+            "display": "Sud tibbiy ekspertizasi vrachi"
+          },
+          {
+            "code": "2212.111",
+            "display": "Sud-psixiatriya ekspertizasi vrachi"
+          },
+          {
+            "code": "2212.112",
+            "display": "Audiolog-otorinolaringolog vrach"
+          },
+          {
+            "code": "2212.113",
+            "display": "Vrach terapevt"
+          },
+          {
+            "code": "2212.114",
+            "display": "Favqulodda yordam bo'linmasi vrach terapevti"
+          },
+          {
+            "code": "2212.115",
+            "display": "Vrach toksikolog"
+          },
+          {
+            "code": "2212.116",
+            "display": "Ko'krak qafasi onkoxirurg vrachi"
+          },
+          {
+            "code": "2212.117",
+            "display": "Ko'krak qafasi xirurg vrachi"
+          },
+          {
+            "code": "2212.118",
+            "display": "Vrach travmatolog"
+          },
+          {
+            "code": "2212.119",
+            "display": "Travmatologiya markazi travmatolog vrachi"
+          },
+          {
+            "code": "2212.120",
+            "display": "Transplantolog vrach"
+          },
+          {
+            "code": "2212.121",
+            "display": "Ultratovush diagnostikasi vrachi"
+          },
+          {
+            "code": "2212.122",
+            "display": "Vrach urolog"
+          },
+          {
+            "code": "2212.123",
+            "display": "Vrach fizioginekolog"
+          },
+          {
+            "code": "2212.124",
+            "display": "Vrach fizioterapevt"
+          },
+          {
+            "code": "2212.125",
+            "display": "Vrach ftiziatr"
+          },
+          {
+            "code": "2212.126",
+            "display": "Vrach ftiziourolog"
+          },
+          {
+            "code": "2212.127",
+            "display": "Funktsional diagnostika (FD) (bajaradigan vazifalarga qarab) vrachi"
+          },
+          {
+            "code": "2212.128",
+            "display": "Pediatriyada funktsional diagnostika vrachi"
+          },
+          {
+            "code": "2212.129",
+            "display": "Vrach kimyoterapevt"
+          },
+          {
+            "code": "2212.130",
+            "display": "Vrach xirurg"
+          },
+          {
+            "code": "2212.131",
+            "display": "Ambulatur xirurg vrachi"
+          },
+          {
+            "code": "2212.132",
+            "display": "Qabul bo'linmasining diagnostika palatasi vrach jarrohi"
+          },
+          {
+            "code": "2212.133",
+            "display": "Favqulodda yordam bo'linmasi vrach jarrohi"
+          },
+          {
+            "code": "2212.134",
+            "display": "Vrach xirurg-ftiziatr"
+          },
+          {
+            "code": "2212.135",
+            "display": "Vrach xirurg-endokrinolog"
+          },
+          {
+            "code": "2212.136",
+            "display": "Vrach sitolog"
+          },
+          {
+            "code": "2212.137",
+            "display": "Jag'-yuz jarroh vrachi"
+          },
+          {
+            "code": "2212.138",
+            "display": "Vrach endokrinolog"
+          },
+          {
+            "code": "2212.139",
+            "display": "Vrach endoskopist"
+          },
+          {
+            "code": "2212.140",
+            "display": "Vrach endourolog"
+          },
+          {
+            "code": "2212.141",
+            "display": "Vrach entomolog"
+          },
+          {
+            "code": "2212.142",
+            "display": "Vrach epidemiolog"
+          },
+          {
+            "code": "2212.143",
+            "display": "Alohida xavfli infektsiyalar bo'yicha vrach epidemiolog"
+          },
+          {
+            "code": "2212.144",
+            "display": "Yadro tibbiyoti vrachi"
+          },
+          {
+            "code": "2212.145",
+            "display": "Vrach-intern"
+          },
+          {
+            "code": "2212.146",
+            "display": "Vrach-mutaxassis"
+          },
+          {
+            "code": "2212.147",
+            "display": "Vrach-mutaxassis (vrach-xirurgdan tashqari barcha mutaxassisliklar)"
+          },
+          {
+            "code": "2212.148",
+            "display": "Tez tibbiy yordam ko'chma brigadasi vrach-mutaxassisi"
+          },
+          {
+            "code": "2212.149",
+            "display": "Vrach-xirurg (hamma nomdagi xirurgik mutaxassisliklar)"
+          },
+          {
+            "code": "2212.150",
+            "display": "Davlat tibbiy sud ekspert mutaxassisi (eksperti)"
+          },
+          {
+            "code": "2212.151",
+            "display": "Davlat tibbiy sud ekspert-amaliyotchisi"
+          },
+          {
+            "code": "2212.152",
+            "display": "Dezinstruktor"
+          },
+          {
+            "code": "2212.153",
+            "display": "Kichik ilmiy xodim"
+          },
+          {
+            "code": "2212.154",
+            "display": "Narkolog"
+          },
+          {
+            "code": "2212.155",
+            "display": "Ilmiy xodim"
+          },
+          {
+            "code": "2212.156",
+            "display": "Neonatolog"
+          },
+          {
+            "code": "2212.157",
+            "display": "Ontolog"
+          },
+          {
+            "code": "2212.158",
+            "display": "O'smirlar vrachi"
+          },
+          {
+            "code": "2212.159",
+            "display": "Reanimatolog"
+          },
+          {
+            "code": "2212.160",
+            "display": "Bolalar va o'smirlar gigienasi bo'yicha sanitariya vrachi"
+          },
+          {
+            "code": "2212.161",
+            "display": "Oziq-ovqat gigienasi bo'yicha sanitariya vrachi"
+          },
+          {
+            "code": "2212.162",
+            "display": "Kommunal gigiena bo'yicha sanitariya vrachi"
+          },
+          {
+            "code": "2212.163",
+            "display": "Radiatsion gigiena sanitariya vrachi"
+          },
+          {
+            "code": "2212.164",
+            "display": "Sanitar toksikolog"
+          },
+          {
+            "code": "2212.165",
+            "display": "Oila vrachi"
+          },
+          {
+            "code": "2212.166",
+            "display": "Sport shifokori"
+          },
+          {
+            "code": "2212.167",
+            "display": "Tajriba ottiruvchi kichik ilmiy xodim"
+          },
+          {
+            "code": "2212.168",
+            "display": "Tez tibbiy yordam katta vrachi"
+          },
+          {
+            "code": "2212.169",
+            "display": "Katta ilmiy xodim"
+          },
+          {
+            "code": "2212.170",
+            "display": "Stomatologiya gigienisti (Og'iz bo'shlig'i gigienisti)"
+          },
+          {
+            "code": "2212.171",
+            "display": "Uchastka (tsex, vaxtva va bosh-r.) terapevti"
+          },
+          {
+            "code": "2212.172",
+            "display": "Uchastka pediatri"
+          },
+          {
+            "code": "2212.173",
+            "display": "Fitopatolog"
+          },
+          {
+            "code": "2221",
+            "display": "Akusherlik va tibbiy parvarishlash ishi bo'yicha professional-mutaxassislar.  Tibbiy parvarishlash ishi bo'yicha professional-mutaxassislar"
+          },
+          {
+            "code": "2221.1",
+            "display": "Valьveolog (valeolog)"
+          },
+          {
+            "code": "2221.2",
+            "display": "Vrach valeolog"
+          },
+          {
+            "code": "2221.3",
+            "display": "Oliy ma'lumotli hamshira"
+          },
+          {
+            "code": "2221.4",
+            "display": "Kichik ilmiy xodim"
+          },
+          {
+            "code": "2221.5",
+            "display": "Ilmiy xodim"
+          },
+          {
+            "code": "2221.6",
+            "display": "Katta ilmiy xodim"
+          },
+          {
+            "code": "2222",
+            "display": "Akusherlik bo'yicha professional-mutaxassislar"
+          },
+          {
+            "code": "2222.1",
+            "display": "Akusher-ginekolog (konsalting / diagnostika / oilaviy poliklinika, dispanser va boshqalar.) vrachi"
+          },
+          {
+            "code": "2222.2",
+            "display": "Tug'ruqxona akusher-ginekologi / perinatal markazi (tug'ruqxona, uchastka, homiladorlik patologiyasi, shoshilinch ginekologiya va boshqalar.) vrachi"
+          },
+          {
+            "code": "2222.3",
+            "display": "Vrach-intern"
+          },
+          {
+            "code": "2222.4",
+            "display": "Vrach-mutaxassis"
+          },
+          {
+            "code": "2222.5",
+            "display": "Kichik ilmiy xodim"
+          },
+          {
+            "code": "2222.6",
+            "display": "Ilmiy xodim"
+          },
+          {
+            "code": "2222.7",
+            "display": "Tajriba ottiruvchi kichik ilmiy xodim"
+          },
+          {
+            "code": "2222.8",
+            "display": "Katta ilmiy xodim"
+          },
+          {
+            "code": "2250",
+            "display": "Yuqori malakali tabiblar va an'anaviy va noan'anaviy tibbiyotning amaliyotchilari.  Amaliyotchi paramediklar. Veterinarlar"
+          },
+          {
+            "code": "2250.1",
+            "display": "Xayvonlar patologiyasi, onkologiyasi va morfologiyasi veterinari"
+          },
+          {
+            "code": "2250.2",
+            "display": "Farmakologiya va toksikologiya veterinari"
+          },
+          {
+            "code": "2250.3",
+            "display": "Veterinariya vrachi"
+          },
+          {
+            "code": "2250.4",
+            "display": "Embrionlarni ko'chirib o'tkazish bo'yicha veterinariya vrachi"
+          },
+          {
+            "code": "2250.5",
+            "display": "Veterinar-jarrox"
+          },
+          {
+            "code": "2250.6",
+            "display": "Veterinariya vrachi"
+          },
+          {
+            "code": "2250.7",
+            "display": "Kichik ilmiy xodim"
+          },
+          {
+            "code": "2250.8",
+            "display": "Ilmiy xodim"
+          },
+          {
+            "code": "2250.9",
+            "display": "Tajriba ottiruvchi kichik ilmiy xodim"
+          },
+          {
+            "code": "2250.10",
+            "display": "Katta ilmiy xodim"
+          },
+          {
+            "code": "2261",
+            "display": "Sog'liqni saqlash sohasidagi boshqa professional-mutaxassislar.  Vrach-stomotologlar"
+          },
+          {
+            "code": "2261.1",
+            "display": "Bolalar terapevti-stomatolog vrachi"
+          },
+          {
+            "code": "2261.2",
+            "display": "Bolalar terapevti-stomatolog (bolalar statsionar shifoxonalarida)"
+          },
+          {
+            "code": "2261.3",
+            "display": "Pediatriya tish jarroh (og'iz qismida)"
+          },
+          {
+            "code": "2261.4",
+            "display": "Umumiy amaliyot stomatolog vrach"
+          },
+          {
+            "code": "2261.5",
+            "display": "Ortodont-stomatolog vrach"
+          },
+          {
+            "code": "2261.6",
+            "display": "Ortoped-stomatolog vrach"
+          },
+          {
+            "code": "2261.7",
+            "display": "Terapevt stomatolog vrach"
+          },
+          {
+            "code": "2261.8",
+            "display": "Umumiy amaliyot terapevt-stomatolog vrachi"
+          },
+          {
+            "code": "2261.9",
+            "display": "Tish jarrohi (og'iz qismida)"
+          },
+          {
+            "code": "2261.10",
+            "display": "Vrach-intern"
+          },
+          {
+            "code": "2261.11",
+            "display": "Vrach-mutaxassis"
+          },
+          {
+            "code": "2261.12",
+            "display": "Kichik ilmiy xodim"
+          },
+          {
+            "code": "2261.13",
+            "display": "Ilmiy xodim"
+          },
+          {
+            "code": "2261.14",
+            "display": "Tajriba ottiruvchi kichik ilmiy xodim"
+          },
+          {
+            "code": "2261.15",
+            "display": "Katta ilmiy xodim"
+          },
+          {
+            "code": "2262",
+            "display": "Farmatsevtika sohasida professional-mutaxassislar"
+          },
+          {
+            "code": "2262.1",
+            "display": "Inspektor-provizor"
+          },
+          {
+            "code": "2262.2",
+            "display": "Klinik farmatsevt"
+          },
+          {
+            "code": "2262.3",
+            "display": "Kichik ilmiy xodim"
+          },
+          {
+            "code": "2262.4",
+            "display": "Ilmiy xodim"
+          },
+          {
+            "code": "2262.5",
+            "display": "Provizor"
+          },
+          {
+            "code": "2262.6",
+            "display": "Tahlilchi-provizor"
+          },
+          {
+            "code": "2262.7",
+            "display": "Provizor-intern"
+          },
+          {
+            "code": "2262.8",
+            "display": "Ma'lumot beruvchi provizor"
+          },
+          {
+            "code": "2262.9",
+            "display": "Retsept bo'yicha provizor"
+          },
+          {
+            "code": "2262.10",
+            "display": "Provizor-texnolog"
+          },
+          {
+            "code": "2262.11",
+            "display": "Tajriba ottiruvchi kichik ilmiy xodim"
+          },
+          {
+            "code": "2262.12",
+            "display": "Katta ilmiy xodim"
+          },
+          {
+            "code": "2262.13",
+            "display": "Farmatsevt"
+          },
+          {
+            "code": "2262.14",
+            "display": "Farmatsevt tahlilchi"
+          },
+          {
+            "code": "2262.15",
+            "display": "Farmatsevt biotexnolog"
+          },
+          {
+            "code": "2262.16",
+            "display": "Farmatsevt muhandis"
+          },
+          {
+            "code": "2262.17",
+            "display": "Farmatsevt marketolog"
+          },
+          {
+            "code": "2262.18",
+            "display": "Farmatsevt sud kimyogari"
+          },
+          {
+            "code": "2262.19",
+            "display": "Farmatsevt texnolog"
+          },
+          {
+            "code": "2262.20",
+            "display": "Farmatsevt-inspektor"
+          },
+          {
+            "code": "2262.21",
+            "display": "Kosmetsevtika bo'yicha farmatsevt-texnolog"
+          },
+          {
+            "code": "2263",
+            "display": "Mehnatni muhofaza qilish va inson atrof-muhitining tibbiy jihatlari bo'yicha shifokorlar va professional-mutaxassislar"
+          },
+          {
+            "code": "2263.1",
+            "display": "Qishloq vrachlik punkti vrachi"
+          },
+          {
+            "code": "2263.2",
+            "display": "Vrach-intern"
+          },
+          {
+            "code": "2263.3",
+            "display": "Vrach-mutaxassis"
+          },
+          {
+            "code": "2263.4",
+            "display": "Maslahatchi"
+          },
+          {
+            "code": "2263.5",
+            "display": "Gigiena-vrach (vrach-parazitolog, vrach epidemiolog) yordamchisi"
+          },
+          {
+            "code": "2263.6",
+            "display": "Entomolog yordamchisi"
+          },
+          {
+            "code": "2263.7",
+            "display": "Proforientolog"
+          },
+          {
+            "code": "2263.8",
+            "display": "Mehnat gigiena bo'yicha sanitar vrach"
+          },
+          {
+            "code": "2263.9",
+            "display": "Mutaxassis"
+          },
+          {
+            "code": "2263.10",
+            "display": "Sud ekspert-mutaxassisi (ekspert)"
+          },
+          {
+            "code": "2263.11",
+            "display": "Sud ekspert-amaliyotchi"
+          },
+          {
+            "code": "2263.12",
+            "display": "Ekspert"
+          },
+          {
+            "code": "2264",
+            "display": "Vrach-fizioterapevt va jismoniy reabilitatsiya bo'yicha mutaxassislar"
+          },
+          {
+            "code": "2264.1",
+            "display": "Vrach fizioterapevt"
+          },
+          {
+            "code": "2264.2",
+            "display": "Vrach-intern"
+          },
+          {
+            "code": "2264.3",
+            "display": "Vrach-mutaxassis"
+          },
+          {
+            "code": "2264.4",
+            "display": "Ergoterapiya bo'yicha uslubchi yo'riqchi"
+          },
+          {
+            "code": "2264.5",
+            "display": "Jismoniy reabilitatsiya bo'yicha uslubchi-yo'riqchi"
+          },
+          {
+            "code": "2264.6",
+            "display": "Kichik ilmiy xodim"
+          },
+          {
+            "code": "2264.7",
+            "display": "Ilmiy xodim"
+          },
+          {
+            "code": "2264.8",
+            "display": "Tajriba ottiruvchi kichik ilmiy xodim"
+          },
+          {
+            "code": "2264.9",
+            "display": "Katta ilmiy xodim"
+          },
+          {
+            "code": "2265",
+            "display": "Vrach-diyetologlar va ovqatlanishni to'g'ri tashkil etish bo'yicha mutaxassislar"
+          },
+          {
+            "code": "2265.1",
+            "display": "Vrach dietolog"
+          },
+          {
+            "code": "2265.2",
+            "display": "Vrach-intern"
+          },
+          {
+            "code": "2265.3",
+            "display": "Vrach-mutaxassis"
+          },
+          {
+            "code": "2265.4",
+            "display": "Dietolog"
+          },
+          {
+            "code": "2265.5",
+            "display": "Kichik ilmiy xodim"
+          },
+          {
+            "code": "2265.6",
+            "display": "Ilmiy xodim"
+          },
+          {
+            "code": "2265.7",
+            "display": "Tajriba ottiruvchi kichik ilmiy xodim"
+          },
+          {
+            "code": "2265.8",
+            "display": "Katta ilmiy xodim"
+          },
+          {
+            "code": "2266",
+            "display": "Vrach-audiologlar va nutqni rivojlantirish va tiklash bo'yicha mutaxassislar"
+          },
+          {
+            "code": "2266.1",
+            "display": "Vrach-intern"
+          },
+          {
+            "code": "2266.2",
+            "display": "Vrach-mutaxassis"
+          },
+          {
+            "code": "2266.3",
+            "display": "Kichik ilmiy xodim"
+          },
+          {
+            "code": "2266.4",
+            "display": "Ilmiy xodim"
+          },
+          {
+            "code": "2266.5",
+            "display": "Tajriba ottiruvchi kichik ilmiy xodim"
+          },
+          {
+            "code": "2266.6",
+            "display": "Katta ilmiy xodim"
+          },
+          {
+            "code": "2266.7",
+            "display": "O'qituvchi-defektolog (o'qituvchi-logoped, tiflopedogog, surdopedogog, oligofrenopedogog)"
+          },
+          {
+            "code": "2267",
+            "display": "Vrach-oftalmologlar, optiklar va optometristlar"
+          },
+          {
+            "code": "2267.1",
+            "display": "Bolalar oftalьmolog vrachi"
+          },
+          {
+            "code": "2267.2",
+            "display": "Vrach onkooftalьmolog"
+          },
+          {
+            "code": "2267.3",
+            "display": "Vrach oftalьmolog"
+          },
+          {
+            "code": "2267.4",
+            "display": "Vrach oftalьmojarroh"
+          },
+          {
+            "code": "2267.5",
+            "display": "Vrach-intern"
+          },
+          {
+            "code": "2267.6",
+            "display": "Vrach-mutaxassis"
+          },
+          {
+            "code": "2267.7",
+            "display": "Kichik ilmiy xodim"
+          },
+          {
+            "code": "2267.8",
+            "display": "Ilmiy xodim"
+          },
+          {
+            "code": "2267.9",
+            "display": "Tajriba ottiruvchi kichik ilmiy xodim"
+          },
+          {
+            "code": "2267.10",
+            "display": "Katta ilmiy xodim"
+          },
+          {
+            "code": "2269",
+            "display": "Sog'liqni saqlash sohasidagi boshqa boshlang'ich guruhlarga kirmagan professional-mutaxassislar"
+          },
+          {
+            "code": "2269.1",
+            "display": "Tibbiy muassasa davolovchi jismoniy tarbiya yo'riqchisi"
+          },
+          {
+            "code": "2269.2",
+            "display": "Tibbiy muassasaning davolash fizkulьturasi bo'yicha uslubchisi"
+          },
+          {
+            "code": "2269.3",
+            "display": "Farmatsevt"
+          },
+          {
+            "code": "3211",
+            "display": "Sog'liqni saqlashda o'rta ma'lumotli tibbiyot xodimlari. Farmatsevtlar va tibbiyot qurilmalariga xizmat ko'rsatuvchi texniklar, feldsherlar. Tibbiyot qurilmalariga xizmat ko'rsatish bo'yicha texniklar"
+          },
+          {
+            "code": "3211.1",
+            "display": "Rentgenolaborant"
+          },
+          {
+            "code": "3211.2",
+            "display": "Rentgenotexnik"
+          },
+          {
+            "code": "3211.3",
+            "display": "Texnik-rentgenolog"
+          },
+          {
+            "code": "3212",
+            "display": "Klinik-diagnostika (tibbiy) va patologiya laboratoriyalarining laboratoriya-feldsherlari"
+          },
+          {
+            "code": "3212.1",
+            "display": "Sanitariya vrachi, epidemiologi assistenti"
+          },
+          {
+            "code": "3212.2",
+            "display": "Epidemiolog assistent"
+          },
+          {
+            "code": "3212.3",
+            "display": "Laborant-bakteriolog"
+          },
+          {
+            "code": "3212.4",
+            "display": "Laborant-parazitolog"
+          },
+          {
+            "code": "3212.5",
+            "display": "Tibbiy laborant"
+          },
+          {
+            "code": "3212.6",
+            "display": "Sanitariya vrachi yordamchisi"
+          },
+          {
+            "code": "3212.7",
+            "display": "Umumiy amaliyot felьdsheri"
+          },
+          {
+            "code": "3212.8",
+            "display": "Felьdsher-laborant"
+          },
+          {
+            "code": "3213",
+            "display": "Farmatsevtlar"
+          },
+          {
+            "code": "3213.1",
+            "display": "Dori vositalarini saqlash, taraqatish va ta'minlash bo'yicha farmatsevt assistenti"
+          },
+          {
+            "code": "3213.2",
+            "display": "Dori preparatlarini ishlab chiqarish operatori"
+          },
+          {
+            "code": "3213.3",
+            "display": "Farmatsevtik yordam tashkilotchisi (maslahatchi-farmatsevt assistenti)"
+          },
+          {
+            "code": "3213.4",
+            "display": "Farmatsevt assistenti"
+          },
+          {
+            "code": "3213.5",
+            "display": "Farmatsevt-retseptar"
+          },
+          {
+            "code": "3213.6",
+            "display": "Fitobarmen"
+          },
+          {
+            "code": "3214",
+            "display": "Tish texniklari va protezchi-texniklar"
+          },
+          {
+            "code": "3214.1",
+            "display": "Tish texnigi"
+          },
+          {
+            "code": "3214.2",
+            "display": "Protezchi-texnik"
+          },
+          {
+            "code": "3214.3",
+            "display": "Oropedik stomatologiya texnigi"
+          },
+          {
+            "code": "3221",
+            "display": "Sog'liqni saqlashda va akusherlik bo'yicha yordamchi xodimlar xodimlari. Hamshiralik bo'yicha yordamchi xodimlar"
+          },
+          {
+            "code": "3221.1",
+            "display": "Yetakchi hamshira"
+          },
+          {
+            "code": "3221.2",
+            "display": "Tibbiyot hamshirasi"
+          },
+          {
+            "code": "3221.3",
+            "display": "Barcha nomdagi tibbiyot hamshirasi (barcha nomdagi medbrat"
+          },
+          {
+            "code": "3221.4",
+            "display": "Umumiy amaliyot xamshirasi"
+          },
+          {
+            "code": "3221.5",
+            "display": "Davolash jismoniy tarbiya hamshirasi"
+          },
+          {
+            "code": "3221.6",
+            "display": "Emlash xonasi hamshirasi"
+          },
+          {
+            "code": "3221.7",
+            "display": "Sterilizatsiya bo'limi hamshirasi"
+          },
+          {
+            "code": "3221.8",
+            "display": "Stomatologiya xonasi hamshirasi"
+          },
+          {
+            "code": "3221.9",
+            "display": "Fizioterapevtik (massaj) xonalari xamshirasi"
+          },
+          {
+            "code": "3221.10",
+            "display": "Maktab va maktabgacha ta'lim tashkiloti hamshirasi"
+          },
+          {
+            "code": "3221.11",
+            "display": "Tibbiyot hamshirasi-anestezist"
+          },
+          {
+            "code": "3221.12",
+            "display": "Hamshira-valeolog"
+          },
+          {
+            "code": "3221.13",
+            "display": "Dietolog-hamshira"
+          },
+          {
+            "code": "3221.14",
+            "display": "Kosmetolog hamshira"
+          },
+          {
+            "code": "3221.15",
+            "display": "Patronaj hamshirasi"
+          },
+          {
+            "code": "3221.16",
+            "display": "Stomatolog yordamchisi"
+          },
+          {
+            "code": "3221.17",
+            "display": "Katta hamshira"
+          },
+          {
+            "code": "3221.18",
+            "display": "Stomatologiya gigienisti (Og'iz bo'shlig'i gigienisti)"
+          },
+          {
+            "code": "3221.19",
+            "display": "MFY uchastka hamshirasi"
+          },
+          {
+            "code": "3222",
+            "display": "Akusherlik bo'yicha yordamchi xodimlar"
+          },
+          {
+            "code": "3222.1",
+            "display": "Akusherka"
+          },
+          {
+            "code": "3222.2",
+            "display": "Umumiy amaliyot felьdsher-akusheri"
+          },
+          {
+            "code": "3222.3",
+            "display": "Oilaviy poliklinika felьdsher-akusheri"
+          },
+          {
+            "code": "3230",
+            "display": "Yuqori malakali tabiblar va an'anaviy hamda alternativ tibbiyotning amaliyotchilari"
+          },
+          {
+            "code": "3230.1",
+            "display": "Tabib"
+          },
+          {
+            "code": "3230.2",
+            "display": "Dorivor o'tchi"
+          },
+          {
+            "code": "3240",
+            "display": "Veterinar feldsherlar va assistentlar. Veterinariya bo'yicha feldsherlar va texniklar"
+          },
+          {
+            "code": "3240.1",
+            "display": "Hayvonlarni davolash va kalligini oldini olish bo'yicha veterinar"
+          },
+          {
+            "code": "3240.2",
+            "display": "Veterinariya felьdsheri"
+          },
+          {
+            "code": "3240.3",
+            "display": "Naslchilik ishlari bo'yicha zootexnik"
+          },
+          {
+            "code": "3240.4",
+            "display": "Veterinariya texnigi"
+          },
+          {
+            "code": "3240.5",
+            "display": "Naslchilik ishlari bo'yicha texnik"
+          },
+          {
+            "code": "3240.6",
+            "display": "Vterinariya felьdsheri"
+          },
+          {
+            "code": "3251",
+            "display": "Sog'liqni saqlash sohasidagi boshqa yordamchi xodimlar. Tish feldsherlari"
+          },
+          {
+            "code": "3251.1",
+            "display": "Tish texnikasi buyumlarini quyuvchi"
+          },
+          {
+            "code": "3251.2",
+            "display": "Tish texnigi"
+          },
+          {
+            "code": "3251.3",
+            "display": "Tish felьdsheri"
+          },
+          {
+            "code": "3251.4",
+            "display": "Sun'iy tishlarni yasovchi"
+          },
+          {
+            "code": "3252",
+            "display": "Tibbiy ro'yxatga oluvchilar va tibbiy ma'lumotlar bo'yicha mutaxassislar"
+          },
+          {
+            "code": "3252.1",
+            "display": "Statist-hamshira"
+          },
+          {
+            "code": "3252.2",
+            "display": "Tibbiy ro'yxatdan o'tkazuvchi"
+          },
+          {
+            "code": "3252.3",
+            "display": "Tibbiy sud ekspertizasida tibbiy ro'yhatga oluvchi"
+          },
+          {
+            "code": "3252.4",
+            "display": "Tibbiy statistika"
+          },
+          {
+            "code": "3252.5",
+            "display": "Felьdsher"
+          },
+          {
+            "code": "3253",
+            "display": "Umumiy amaliyot feldsherlari"
+          },
+          {
+            "code": "3253.1",
+            "display": "Felьdsher-valeolog"
+          },
+          {
+            "code": "3254",
+            "display": "Optiklar va optometristlar"
+          },
+          {
+            "code": "3254.1",
+            "display": "Rassom-ko'z protez yasovchisi"
+          },
+          {
+            "code": "3255",
+            "display": "Fizioterapiya yordamchi xodimlari va mutaxassislari"
+          },
+          {
+            "code": "3255.1",
+            "display": "Tibbiy jismoniy tarbiya bo'yicha yo'riqchi"
+          },
+          {
+            "code": "3255.2",
+            "display": "Massajchi"
+          },
+          {
+            "code": "3255.3",
+            "display": "Operatsiya tibbiyot hamshirasi"
+          },
+          {
+            "code": "3255.4",
+            "display": "Felьdsher"
+          },
+          {
+            "code": "3255.5",
+            "display": "Fizioterapevt"
+          },
+          {
+            "code": "3256",
+            "display": "Ambulator-poliklinika ishlari bo'yicha vrach yordamchilari"
+          },
+          {
+            "code": "3256.1",
+            "display": "Ambulator-poliklinika yordami bo'yicha vrach yordamchisi"
+          },
+          {
+            "code": "3256.2",
+            "display": "Felьdsher"
+          },
+          {
+            "code": "3256.3",
+            "display": "Oilaviy poliklinika felьdsher-akusheri"
+          },
+          {
+            "code": "3257",
+            "display": "Mehnatni muhofaza qilish va atrof muhitni muhofaza qilishning tibbiy jihatlari bo'yicha mutaxassislar va inspektorlar"
+          },
+          {
+            "code": "3257.30",
+            "display": "Mehnat terapeyasi bo'yicha yo'riqchi"
+          },
+          {
+            "code": "3257.31",
+            "display": "Yo'riqchi-valeolog"
+          },
+          {
+            "code": "3257.32",
+            "display": "Dezinfektor-yo'riqchi"
+          },
+          {
+            "code": "3257.33",
+            "display": "Tibbiy dezinfektsiyalash vositasi"
+          },
+          {
+            "code": "3257.34",
+            "display": "Entomolog yordamchisi"
+          },
+          {
+            "code": "3257.35",
+            "display": "Epidemiolog yordamchisi"
+          },
+          {
+            "code": "3257.36",
+            "display": "Mehnat huquqi inspektori"
+          },
+          {
+            "code": "3258",
+            "display": "Tez tibbiy yordam sohasida yordamchi xodimlar"
+          },
+          {
+            "code": "3258.1",
+            "display": "Tez yordam katta felьdsheri"
+          },
+          {
+            "code": "3258.2",
+            "display": "Felьdsher"
+          },
+          {
+            "code": "3258.3",
+            "display": "Mudofaa vazirligi gospitali (qismlar) felьdsheri"
+          },
+          {
+            "code": "3258.4",
+            "display": "Navbatchi felьdsher"
+          },
+          {
+            "code": "3258.5",
+            "display": "Favqulotda vaziyatlar hizmati felьdsheri"
+          },
+          {
+            "code": "3258.6",
+            "display": "Shoshilinch va tez tibbiy yordam ko'rsatish stantsiya (bo'lim) felьdsheri"
+          },
+          {
+            "code": "3259",
+            "display": "Boshqa boshlang'ich guruhlarga qo'shilmagan, yordamchi tibbiyot xodimlari"
+          },
+          {
+            "code": "3259.1",
+            "display": "Gemmolog"
+          },
+          {
+            "code": "3259.2",
+            "display": "Defektolog"
+          },
+          {
+            "code": "3259.3",
+            "display": "Dieta hamshirasi"
+          },
+          {
+            "code": "3259.4",
+            "display": "Sanitariya ta'limi bo'yicha yo'riqchi"
+          },
+          {
+            "code": "3259.5",
+            "display": "Immunologiya, virusologiya, gistologiya laboratoriyalari laboranti"
+          },
+          {
+            "code": "3259.6",
+            "display": "Radiologiya laboratoriyasi laboranti"
+          },
+          {
+            "code": "3259.7",
+            "display": "Funktsional va nur tashxisi laboranti"
+          },
+          {
+            "code": "3259.8",
+            "display": "Rasmiylashtiruvchi-laborant"
+          },
+          {
+            "code": "3259.9",
+            "display": "Tibbiy-ijtimoiy xodim"
+          },
+          {
+            "code": "3259.10",
+            "display": "Tanani malhamlash va tiklash bo'yicha mutaxassis"
+          },
+          {
+            "code": "3259.11",
+            "display": "Nur va funktsional diagnostika kabineti felьdsheri"
+          },
+          {
+            "code": "3259.12",
+            "display": "Umumiy amaliyot felьdsher laboranti"
+          },
+          {
+            "code": "3259.13",
+            "display": "Qishloq vrachlik punktlari va qishloq oilaviy poliklinikalari felьdsher-laboranti"
+          },
+          {
+            "code": "3259.14",
+            "display": "Sud-tibbiy ekspertizasi felьdsher-laboranti"
+          },
+          {
+            "code": "3259.15",
+            "display": "Tibbiy-profilaktika ishlari felьdsheri"
+          },
+          {
+            "code": "3259.16",
+            "display": "Felьdsher-nutritsiolog"
+          },
+          {
+            "code": "3259.17",
+            "display": "Endoskopchi"
+          },
+          {
+            "code": "3344",
+            "display": "Sog'liqni saqlash muassasalaridagi kotiblar (vrach-mutaxassislar yordamchilari)"
+          },
+          {
+            "code": "3344.1",
+            "display": "Ayollar va bolalar tibbiy-ijtimoiy yordam tashkilotchisi"
+          },
+          {
+            "code": "3344.2",
+            "display": "Kotib"
+          },
+          {
+            "code": "3344.3",
+            "display": "Rahbar qabulxonasi kotibi"
+          },
+          {
+            "code": "5321",
+            "display": "Bemorga parvarishlash bo'yicha yakka tartibda xizmat ko'rsatuvchi xodimlar. Tibbiy va ijtimoiy yordam muassasalarida bemorlarga parvarishlash bo'yicha yakka tartibda xizmat ko'rsatuvchi xodimlar"
+          },
+          {
+            "code": "5321.1",
+            "display": "Mehribonlik, muruvvat uylari hamshirasi"
+          },
+          {
+            "code": "5321.2",
+            "display": "Bemorga qarash bo'yicha kichik tibbiy hamshira"
+          },
+          {
+            "code": "5321.3",
+            "display": "Ayollar va bolalarga tibbiy-ijtimoiy yordam ko'rsatish tashkilotchisi"
+          },
+          {
+            "code": "5321.4",
+            "display": "Yolg'iz nogironlar va qariyalarga uy sharoitida ijtimoiy yordam ko'rsatish tashkilotchisi"
+          },
+          {
+            "code": "5321.5",
+            "display": "Sanitar vrach yordamchisi"
+          },
+          {
+            "code": "5321.6",
+            "display": "Sog'liqni saqlash muassasasi sanitari (sanitarkasi)"
+          },
+          {
+            "code": "5322",
+            "display": "Bemorga uyda parvarishlash bo'yicha yakka tartibda xizmat ko'rsatuvchi xodimlar"
+          },
+          {
+            "code": "5322.1",
+            "display": "Kichik rahm-shavqat hamshirasi"
+          },
+          {
+            "code": "5322.2",
+            "display": "Og'ir kasalga qarovchi hamshira"
+          },
+          {
+            "code": "5329",
+            "display": "Boshqa boshlang'ich guruhlarga qo'shilmagan, bemorlarga xizmat ko'rsatish bo'yicha yakka tartibda xizmat ko'rsatuvchi xodimlar"
+          },
+          {
+            "code": "5329.1",
+            "display": "Uyda xizmat ko'rsatuvchi sanitar-enaga"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,218 @@
+CODE	UZ	RU	EN
+2211	Sog‘liqni saqlash sohasida professional-mutaxassislar.  Vrachlar.  Umumiy amaliyot vrachlari 	Медицинские работники. Врачи. Врачи общей практики	Healthcare professionals. Doctors. General practitioners
+2211.1	Umumiy amaliyot vrachi 	Врач общей практики 	General practitioner 
+2211.2	Bolalar umumiy vrachi 	Врач общий педиатр 	Pediatrician 
+2211.3	Onkologiya umumiy vrachi 	Врач онколог общий 	General oncologist 
+2211.4	Umumiy onkolog (onkologik boʼlmagan statsionarlarda maslahatchi shifokor sifatida) 	Врач онколог общий (предусмотрена в не онкологических стационарных учреждениях в качестве врача консультанта) 	General oncologist (in non-oncology hospital as a consultant doctor) 
+2211.5	Vrach-intern 	Врач-интерн 	Resident 
+2211.6	Vrach-mutaxassis 	Врач-специалист 	Medical specialist 
+2211.7	Kichik ilmiy xodim 	Младший научный сотрудник 	Associate researcher 
+2211.8	Ilmiy xodim 	Научный сотрудник 	Research associate 
+2211.9	Аmbulator-poliklinika boʼyicha vrach yordamchisi 	Помощник врача по амбулаторно-поликлинической помощи 	Assistant doctor for outpatient polyclinic 
+2211.10	Umumiy gigiena boʼyicha vrach 	Санитарный врач по общей гигиене 	General Health Officer 
+2211.11	Tajriba ottiruvchi kichik ilmiy xodim 	Стажер младшего научного сотрудника 	Junior Research Fellow 
+2211.12	Katta ilmiy xodim 	Старший научный сотрудник 	Senior research associate 
+2212	Vrach-mutaxasislar 	Медицинские специалисты	Medical specialists
+2212.1	Аnesteziolog 	Анестезиолог 	Anesthesiologist 
+2212.2	Аbdominal boʼyicha vrach onkoxirurg 	Врач абдоминальный онкохирург 	Abdominal cancer surgeon 
+2212.3	Аbdominal boʼyicha vrach onkoxirurg (ixtisoslashgan muassasalarda) 	Врач абдоминальный хирург (в специализированных учреждениях) 	Doctor of abdominal surgery (in specialized institutions) 
+2212.4	Vrach allergolog-immunolog 	Врач аллерголог-иммунолог 	Physician Immunologist 
+2212.5	Vrach anesteziolog-reanimatolog 	Врач анестезиолог-реаниматолог 	Anesthesiologist-RCM 
+2212.6	Vrach bakteriolog 	Врач бактериолог 	Bacteriologist 
+2212.7	Аlohida xavfli infektsiyalar boʼyicha bakteriolog 	Врач бактериолог по особо опасным инфекциям 	Bacteriologist for especially dangerous infections 
+2212.8	Vrach vertebrolog 	Врач вертебролог 	Doctor of Vertebrate 
+2212.9	Vrach virusolog 	Врач вирусолог 	Doctor of virology 
+2212.10	Mehnat-vrachlik ekspertizasi vrachi 	Врач врачебно-трудовой экспертизы (ВТЭ) 	Doctor of Occupational Medicine (VET) 
+2212.11	Vrach gastroenterolog 	Врач гастроэнтеролог 	Gastroenterologist 
+2212.12	Vrach gematolog 	Врач гематолог 	Hematologist 
+2212.13	Vrach geriatr 	Врач гериатр 	Geriatrician 
+2212.14	Vrach ginekolog 	Врач гинеколог 	Gynecologist 
+2212.15	Vrach (maslahat/ diagnostika / oilaviy poliklinika, dispanser va boshqalar.) ginekologi 	Врач гинеколог (консультативной/ диагностической/ семейной поликлиники, диспансера и пр.) 	Gynecologist (consulting/ diagnostic/ family polyclinic, clinic etc.) 
+2212.16	Vrach dezinfektsionist 	Врач дезинфекционист 	Disinfectant doctor 
+2212.17	Vrach dermatovenerolog 	Врач дерматовенеролог 	Dermatovenereologist 
+2212.18	Bolalar alllergolog vrachi 	Врач детский аллерголог 	Doctor of child allergy 
+2212.19	Bolalar anesteziolog-reanimatolog vrachi 	Врач детский анестезиолог-реаниматолог 	Pediatric anesthesiologist-RCT 
+2212.20	Bolalar gastroenterolog vrachi 	Врач детский гастроэнтеролог 	Pediatric gastroenterologist 
+2212.21	Bolalar va oʼsmirlar psixiatri 	Врач детский и подростковый психиатр 	Child and adolescent psychiatrist 
+2212.22	Bolalar infektsionist vrachi 	Врач детский инфекционист 	Pediatric infectious disease doctor 
+2212.23	Bolalar kardiorevmatolog vrachi 	Врач детский кардиоревматолог 	Pediatric cardiorrhematologist 
+2212.24	Bolalar kardioxirurg vrachi 	Врач детский кардиохирург 	Pediatric cardiac surgeon 
+2212.25	Bolalar nevrolog vrachi 	Врач детский невролог 	Pediatric neurologist 
+2212.26	Bolalar nefrolog vrachi 	Врач детский нефролог 	Pediatric nephrologist 
+2212.27	Bolalar onkolog kimyoterapevt vrachi 	Врач детский онколог химиотерапевт 	Pediatric oncologist chemotherapy 
+2212.28	Bolalar onkoxirurg vrachi 	Врач детский онкохирург 	Pediatric cancer surgeon 
+2212.29	Bolalar pulьmonolog vrachi 	Врач детский пульмонолог 	Pediatric pulmonologist 
+2212.30	Bolalar travmatolog-ortoped vrachi 	Врач детский травматолог-ортопед 	Pediatric orthopedic trauma doctor 
+2212.31	Bolalar urolog vrachi 	Врач детский уролог 	Pediatric urologist 
+2212.32	Bolalar ftiziatr vrachi 	Врач детский фтизиатр 	Pediatric physician 
+2212.33	Bolalar xirurg vrachi 	Врач детский хирург 	Pediatric surgeon 
+2212.34	Bolalar ambulatur xirurg vrachi 	Врач детский хирург амбулаторный 	Pediatric Surgeon Outpatient 
+2212.35	Bolalar endokrinolog vrachi 	Врач детский эндокринолог 	Pediatric endocrinologist 
+2212.36	Bolalar va oʼsmirlar genekolog vrachi 	Врач детской и подростковой гинекологии 	Doctor of Children and Adolescent Gynecology 
+2212.37	Vrach iglorefleksoterapevt 	Врач иглорефлексотерапевт 	Acupuncturist 
+2212.38	Vrach immunolog 	Врач иммунолог 	Immunologist 
+2212.39	Interventsion kardiologiya vrachi 	Врач интервенционной кардиологии 	Interventional cardiology doctor 
+2212.40	Interventsion radiologiya vrachi 	Врач интервенционной радиологии 	Interventional radiologist 
+2212.41	Vrach infektsionist 	Врач инфекционист 	Infectious disease doctor 
+2212.42	Immunoprofilaktika kabinetining vrachi 	Врач кабинета иммунопрофилактики 	Immunopharmaceutical doctor 
+2212.43	Yuqumli kasalliklar kabinetining vrachi 	Врач кабинета инфекционных заболеваний 	Infectious disease doctor 
+2212.44	Vrach kardioanesteziolog 	Врач кардиоанестезиолог 	Cardiology doctor 
+2212.45	Vrach kardiolog 	Врач кардиолог 	Cardiologist 
+2212.46	Vrach kardioxirurg 	Врач кардиохирург 	Cardiac surgeon 
+2212.47	Klinik farmakologiya vrachi 	Врач клинический фармаколог 	Clinical pharmacologist 
+2212.48	Vrach koloproktolog 	Врач колопроктолог 	Colonoscopy doctor 
+2212.49	Vrach kombustiolog 	Врач комбустиолог 	Combustiologist 
+2212.50	Qabul boʼlimining shifokor koordinatori (shoshilinch tibbiy yordam muassasalari) 	Врач координатор приёмного отделения (учреждений экстренной медицинской помощи) 	Doctor coordinator of the reception department (emergency medical care facilities) 
+2212.51	Vrach kosmetolog 	Врач косметолог 	Doctor of cosmetology 
+2212.52	Immunogistokimyoviy laboratoriyasi laborant vrachi 	Врач лаборант иммуногистохимической лаборатории 	Laboratory Technician immunostaining 
+2212.53	Biokimyoviy-klinik laboratoriya vrach laboranti 	Врач лаборант клинико-биохимической лаборатории 	Doctor of laboratory clinical biochemical laboratory 
+2212.54	Klinik va biokimyoviy/ immunobiologik/ immunoferment/ serologik / PTsR-diagnostik va boshqa laboratoriyalar laboranti 	Врач лаборант клинико-биохимической/ иммунобиологической/ иммуноферментной/ серологической/ ПЦР-диагностической и др. лаборатории 	Doctor of laboratory clinical biochemical/ immuno-biological/ immuno-enzyme/ serological/ PCR-diagnostic and other. laboratory 
+2212.55	Klinik va biokimyoviy/ immunobiologik/ immunoferment/ serologik / PTsR-diagnostik va boshqa laboratoriyalar laboranti 	Врач лаборант клинико-биохимической/ иммунобиологической/ иммуноферментной/ серологической/ ПЦР-диагностической и др. лаборатории 	Doctor of laboratory clinical biochemical/ immuno-biological/ immuno-enzyme/ serological/ PCR-diagnostic and other. laboratory 
+2212.56	Shifokor sanitariya laboranti / toksikologik / rentgenologik / parazitologik va boshqa laboratoriyalar 	Врач лаборант санитарно-гигиенической / токсикологической / радиологической / паразитологической и др. лаборатории 	Doctor of laboratory sanitary/ toxicological/ radiological/ parasitological and others. laboratory 
+2212.57	Sud-tibbiyot yekspertizasi laboratoriyasining vrach laboranti 	Врач лаборант судебно-медицинской экспертной лаборатории 	Forensic laboratory technician 
+2212.58	Vrach mammolog 	Врач маммолог 	Doctor of milk 
+2212.59	Manual terapiya vrachi 	Врач мануальный терапевт 	Manual physician 
+2212.60	Tibbiy genetiki vrachi 	Врач медицинский генетик 	Medical geneticist 
+2212.61	Tibbiy psixologiya vrachi 	Врач медицинский психолог 	Medical psychologist 
+2212.62	Tibbiy statistika vrachi 	Врач медицинский статистик 	Medical statistician 
+2212.63	Vrach uslubchi 	Врач методист 	Physician 
+2212.64	Аxborot tizimlari boʼlimi vrach uslubchisi 	Врач методист отдела информационных систем 	Medical Practitioner, Information Systems Department 
+2212.65	Vrach mikroxirurg 	Врач микрохирург 	Microsurgeon 
+2212.66	Vrach narkolog 	Врач нарколог 	Doctor of drugs 
+2212.67	Vrach nevrolog 	Врач невролог 	Neurologist 
+2212.68	Vrach neyrofiziolog 	Врач нейрофизиолог 	Neurophysiologist 
+2212.69	Vrach neyroxirurg 	Врач нейрохирург 	Neurosurgeon 
+2212.70	Vrach neonatal jarroh 	Врач неонатальный хирург 	Neonatal surgeon 
+2212.71	Vrach neonatolog 	Врач неонатолог 	Doctor of Neonatology 
+2212.72	Shoshilinch kardiologiya / yurak intensiv terapiyasi vrachi 	Врач неотложной кардиологии / кардиореанимации 	Emergency cardiology/ cardio-respiratory doctor 
+2212.73	Shoshilinch pediatr (intensiv terapiya boʼlimi) vrachi 	Врач неотложной педиатрии (палаты интенсивной терапии) 	Paediatrician (intensive care unit) 
+2212.74	Vrach nefrolog 	Врач нефролог 	Nephrologist 
+2212.75	Vrach onkoginekolog 	Врач онкогинеколог 	Oncologist 
+2212.76	Vrach onkokoloproktolog 	Врач онкоколопроктолог 	Oncological proctologist 
+2212.77	Vrach onkourolog 	Врач онкоуролог 	Cancer doctor 
+2212.78	Vrach ortoped 	Врач ортопед 	Orthopedic doctor 
+2212.79	Gemodializ / dializ boʼlinmasi vrachi 	Врач отделения гемодиализа /диализного блока 	Physician of the hemodialysis/dialysis unit 
+2212.80	Yiringli jarrohlik boʼlinmasi vrachi 	Врач отделения гнойной хирургии 	Doctor of the department of fume surgery 
+2212.81	Suyak sil kasalligi boʼlinmasi vrachi 	Врач отделения костного туберкулёза 	Doctor of bone tuberculosis department 
+2212.82	Bosh va boʼyin shishlari boʼlinmasi vrachi 	Врач отделения опухолей головы и шеи 	Head and neck tumor doctor 
+2212.83	Yumshoq toʼqimalar va suyaklar oʼsimtalari boʼlinmasi vrachi 	Врач отделения опухолей мягких тканей и костей 	Doctor of soft tissue and bone tumors 
+2212.84	Vrach otorinolaringolog 	Врач оториноларинголог 	Doctor of Thoracic Laryngologist 
+2212.85	Reanimatsiya boʼlimi shifokori 	Врач палаты интенсивной терапии 	Intensive care physician 
+2212.86	Vrach paradontolog 	Врач парадонтолог 	Paramedic 
+2212.87	Vrach parazitolog 	Врач паразитолог 	Parasitologist 
+2212.88	Vrach patologoanatom 	Врач патологоанатом 	Pathologist 
+2212.89	Vrach pediatr 	Врач педиатр 	Pediatrician 
+2212.90	Plastik jarrohlik vrachi 	Врач пластический хирург 	Plastic surgeon 
+2212.91	Jismoniy mashqlar terapiyasi / sport tibbiyoti boʼyicha vrach 	Врач по лечебной физкультуре/ спортивной медицине 	Doctor of therapeutic physical education/ sports medicine 
+2212.92	Vrach profpatolog 	Врач профпатолог 	Medical professional 
+2212.93	Vrach psixiatr 	Врач психиатр 	Psychiatrist 
+2212.94	Psixiatr-suitsidolog vrach 	Врач психиатр-суицидолог 	Psychiatrist-suicide doctor 
+2212.95	Vrach psixoterapevt 	Врач психотерапевт 	Doctor of psychotherapy 
+2212.96	Vrach pulьmonolog 	Врач пульмонолог 	Pulmonary physician 
+2212.97	Vrach rabiolog 	Врач рабиолог 	Rabotist 
+2212.98	Vrach radioterapevt 	Врач радиотерапевт 	Radiation physician 
+2212.99	Kuyish reanimatsiyasi boʼyicha vrach reanimatologi 	Врач реаниматолог ожоговой реанимации 	Doctor of CPR 
+2212.100	Vrach revmatolog 	Врач ревматолог 	Rheumatologist 
+2212.101	Vrach rentgenolog 	Врач рентгенолог 	Radiologist 
+2212.102	Kompyuter tomografiyasi (KT) vrach rentgenologi 	Врач рентгенолог компьютерной томографии (КТ) 	Radiologist, computer tomography (CT) 
+2212.103	Magnit-rezonans tomografiya (MRT) vrach rentgenologi 	Врач рентгенолог магнитно-резонансной томографии (МРТ) 	Radiologist magnetic resonance imaging (MRI) 
+2212.104	Vrach reproduktolog 	Врач репродуктолог 	Doctor of Reproductive Medicine 
+2212.105	Tez tibbiy yordam vrachi 	Врач скорой медицинской помощи 	Emergency physician 
+2212.106	Qon tomir jarroh vrachi 	Врач сосудистый хирург 	Doctor of vascular surgery 
+2212.107	Orqa miya neyroxirurg vrach 	Врач спинальный нейрохирург 	Doctor spinal neurosurgeon 
+2212.108	Qon quyish stantsiyasining vrachi 	Врач станции переливания крови 	Doctor of blood transfusion station 
+2212.109	Vrach statistik 	Врач статистик 	Medical statistician 
+2212.110	Sud tibbiy ekspertizasi vrachi 	Врач судебно-медицинской экспертизы 	Medical examiner 
+2212.111	Sud-psixiatriya ekspertizasi vrachi 	Врач судебно-психиатрической экспертизы 	Forensic psychiatric expert 
+2212.112	Аudiolog-otorinolaringolog vrach 	Врач сурдолог-оториноларинголог 	Doctor of Prothonotology and Orthopaedic Surgery 
+2212.113	Vrach terapevt 	Врач терапевт 	Physician 
+2212.114	Favqulodda yordam boʼlinmasi vrach terapevti 	Врач терапевт приёмного отделения экстренного поста 	Physician of the emergency ward 
+2212.115	Vrach toksikolog 	Врач токсиколог 	Toxicologist 
+2212.116	Koʼkrak qafasi onkoxirurg vrachi 	Врач торакальный онкохирург 	Thoracic cancer surgeon 
+2212.117	Koʼkrak qafasi xirurg vrachi 	Врач торакальный хирург 	Doctor of thoracic surgery 
+2212.118	Vrach travmatolog 	Врач травматолог 	Traumatologist 
+2212.119	Travmatologiya markazi travmatolog vrachi 	Врач травматолог травмпункта 	Trauma Doctor 
+2212.120	Transplantolog vrach 	Врач трансплантолог 	Transplant doctor 
+2212.121	Ultratovush diagnostikasi vrachi 	Врач ультразвуковой диагностики 	Ultrasound diagnostic doctor 
+2212.122	Vrach urolog 	Врач уролог 	Urologist 
+2212.123	Vrach fizioginekolog 	Врач физиогинеколог 	Physiogynecologist 
+2212.124	Vrach fizioterapevt 	Врач физиотерапевт 	Physician physiotherapist 
+2212.125	Vrach ftiziatr 	Врач фтизиатр 	Phthiatiatra 
+2212.126	Vrach ftiziourolog 	Врач фтизиоуролог 	Phthioaromologist 
+2212.127	Funktsional diagnostika (FD) (bajaradigan vazifalarga qarab) vrachi 	Врач функциональной диагностики (ФД) (в зависимости от выполняемых задач) 	Functional diagnostic (FD) doctor (depending on the tasks performed) 
+2212.128	Pediatriyada funktsional diagnostika vrachi 	Врач функциональной диагностики в педиатрии 	Doctor of functional diagnostics in pediatrics 
+2212.129	Vrach kimyoterapevt 	Врач химиотерапевт 	Doctor of chemotherapy 
+2212.130	Vrach xirurg 	Врач хирург 	Surgeon 
+2212.131	Аmbulatur xirurg vrachi 	Врач хирург амбулаторный 	Outpatient surgeon 
+2212.132	Qabul boʼlinmasining diagnostika palatasi vrach jarrohi 	Врач хирург диагностической палаты приёмного отделения 	Doctor of the diagnostic room of the department 
+2212.133	Favqulodda yordam boʼlinmasi vrach jarrohi 	Врач хирург приёмного отделения экстренного поста 	Doctor of emergency surgery 
+2212.134	Vrach xirurg-ftiziatr 	Врач хирург-фтизиатр 	Physician Surgeon-Phthiatiatra 
+2212.135	Vrach xirurg-endokrinolog 	Врач хирург-эндокринолог 	Doctor of Endocrinology 
+2212.136	Vrach sitolog 	Врач цитолог 	Cytologist 
+2212.137	Jagʼ-yuz jarroh vrachi 	Врач челюстно-лицевой хирург 	Maxillofacial surgeon 
+2212.138	Vrach endokrinolog 	Врач эндокринолог 	Endocrinologist 
+2212.139	Vrach endoskopist 	Врач эндоскопист 	Endoscopic doctor 
+2212.140	Vrach endourolog 	Врач эндоуролог 	Endochologist 
+2212.141	Vrach entomolog 	Врач энтомолог 	Entomologist 
+2212.142	Vrach epidemiolog 	Врач эпидемиолог 	Epidemiologist 
+2212.143	Аlohida xavfli infektsiyalar boʼyicha vrach epidemiolog 	Врач эпидемиолог по особо опасным инфекциям 	Epidemiologist for especially dangerous infections 
+2212.144	Yadro tibbiyoti vrachi 	Врач ядерной медицины 	Nuclear medicine doctor 
+2212.145	Vrach-intern 	Врач-интерн 	Resident 
+2212.146	Vrach-mutaxassis 	Врач-специалист 	Medical specialist 
+2212.147	Vrach-mutaxassis (vrach-xirurgdan tashqari barcha mutaxassisliklar) 	Врач-специалист (все специальности, кроме хирурга) 	Specialist (all specialties except surgeon) 
+2212.148	Tez tibbiy yordam koʼchma brigadasi vrach-mutaxassisi 	Врач-специалист выездной бригады скорой медицинской помощи 	Medical specialist of the emergency medical team 
+2212.149	Vrach-xirurg (hamma nomdagi xirurgik mutaxassisliklar) 	Врач-хирург (все хирургические специальности) 	Surgeon (all surgical specialties) 
+2212.150	Davlat tibbiy sud ekspert mutaxassisi (eksperti) 	Государственный медицинский судебный экспертспециалист (эксперт) 	State medical forensic expert (expert) 
+2212.151	Davlat tibbiy sud ekspert-amaliyotchisi 	Государственный медицинский судебный эксперт-стажер 	State medical forensic trainee 
+2212.152	Dezinstruktor	Дезинструктор	Countertrainer
+2212.153	Kichik ilmiy xodim 	Младший научный сотрудник 	Associate researcher 
+2212.154	Narkolog 	Нарколог 	Narco 
+2212.155	Ilmiy xodim 	Научный сотрудник 	Research associate 
+2212.156	Neonatolog 	Неонатолог 	Neo-Natologist 
+2212.157	Ontolog 	Онтолог 	Oncologist 
+2212.158	Oʼsmirlar vrachi 	Подростковый врач 	Adolescent doctor 
+2212.159	Reanimatolog 	Реаниматолог 	Resuscitator 
+2212.160	Bolalar va oʼsmirlar gigienasi boʼyicha sanitariya vrachi 	Санитарный врач по гигиене детей и подростков 	Child and adolescent health officer 
+2212.161	Oziq-ovqat gigienasi boʼyicha sanitariya vrachi 	Санитарный врач по гигиене питания 	Food hygiene health officer 
+2212.162	Kommunal gigiena boʼyicha sanitariya vrachi 	Санитарный врач по коммунальной гигиене 	Community health officer 
+2212.163	Radiatsion gigiena sanitariya vrachi 	Санитарный врач по радиационной гигиене 	Radiation Hygiene Medical Officer 
+2212.164	Sanitar toksikolog 	Санитарный врач-токсиколог 	Toxicologist 
+2212.165	Oila vrachi 	Семейный врач 	Family doctor 
+2212.166	Sport shifokori 	Спортивный врач 	Sports doctor 
+2212.167	Tajriba ottiruvchi kichik ilmiy xodim 	Стажер младшего научного сотрудника 	Junior Research Fellow 
+2212.168	Tez tibbiy yordam katta vrachi 	Старший врач скорой медицинской помощи 	Senior Emergency Medical Doctor 
+2212.169	Katta ilmiy xodim 	Старший научный сотрудник 	Senior research fellow 
+2212.170	Stomatologiya gigienisti (Ogʼiz boʼshligʼi gigienisti) 	Стоматологический гигиенист (Гигиенист полости рта) 	Dental hygienist (Oral hygienist) 
+2212.171	Uchastka (tsex, vaxtva va bosh-r.) terapevti 	Участковый (цеховой, вахтовый и пр.) терапевт 	District (occupational, shift and other) therapist 
+2212.172	Uchastka pediatri 	Участковый педиатр 	District pediatrician 
+2212.173	Fitopatolog 	Фитопатолог 	Phytopathologist 
+3211	Sog‘liqni saqlashda o‘rta maʼlumotli tibbiyot xodimlari. 	Медицинские работники со средним образованием в сфере здравоохранения.	Secondary medical workers in healthcare. 
+3211.1	Rentgenolaborant 	Рентгенолаборант 	Radiographer 
+3211.2	Rentgenotexnik 	Рентгенотехник 	X-ray 
+3211.3	Texnik-rentgenolog 	Техник-рентгенолог 	Radiologist 
+3221	Sog‘liqni saqlashda va akusherlik bo‘yicha yordamchi xodimlar xodimlari. Hamshiralik bo‘yicha yordamchi xodimlar 	Медицинский и акушерский вспомогательный персонал. Помощники медсестер	Health and midwifery support workers. Nursing support workers
+3221.1	Yetakchi hamshira 	Ведущая медицинская сестра 	Medical Nurse 
+3221.2	Tibbiyot hamshirasi 	Медицинская сестра 	Medical nurse 
+3221.3	Barcha nomdagi tibbiyot hamshirasi (barcha nomdagi medbrat 	Медицинская сестра всех наименований (мужской род-Медицинский брат всех наименований) 	Medical nurse of all names (male-gender - Medical brother of all names) 
+3221.4	Umumiy amaliyot xamshirasi 	Медицинская сестра общей практики 	General practice nurse 
+3221.5	Davolash jismoniy tarbiya hamshirasi 	Медицинская сестра по лечебному физическому воспитанию 	Medical nurse for therapeutic physical education 
+3221.6	Emlash xonasi hamshirasi 	Медицинская сестра прививочного кабинета 	Clinic nurse for vaccination 
+3221.7	Sterilizatsiya boʼlimi hamshirasi 	Медицинская сестра стерилизациционного отделения 	Medical Nurse of the Sterilization Department 
+3221.8	Stomatologiya xonasi hamshirasi 	Медицинская сестра стоматологического кабинета 	Dental Practice Medical Nurse 
+3221.9	Fizioterapevtik (massaj) xonalari xamshirasi 	Медицинская сестра физиотерапевтического (массажного) кабинетов 	Medical nurse of physiotherapy (massage) offices 
+3221.10	Maktab va maktabgacha taʼlim tashkiloti hamshirasi 	Медицинская сестра школьных и дошкольных образовательных организаций	Medical Nurse of School and Pre-school Educational Organizations
+3221.11	Tibbiyot hamshirasi-anestezist 	Медицинская сестра-анестезист 	Anesthetist 
+3221.12	Hamshira-valeolog 	Медицинская сестра-валеолог 	Nurse-valet 
+3221.13	Dietolog-hamshira 	Медицинская сестра-диетолог 	Nurse nutritionist 
+3221.14	Kosmetolog hamshira 	Медицинская сестра-косметолог 	Medical nurse-cosmetologist 
+3221.15	Patronaj hamshirasi 	Патронажная медицинская сестра 	Medical Nurse 
+3221.16	Stomatolog yordamchisi 	Помощник стоматолога 	Dental assistant 
+3221.17	Katta hamshira 	Старшая медицинская сестра 	Senior nurse 
+3221.18	Stomatologiya gigienisti (Ogʼiz boʼshligʼi gigienisti) 	Стоматологический гигиенист (Гигиенист полости рта) 	Dental hygienist (Oral hygienist) 
+3221.19	MFY uchastka hamshirasi 	Участковая медицинская сестра махаллинского схода граждан 	District medical nurse of the Mahallin Citizens' Retreat 
+3252	Tibbiy ro‘yxatga oluvchilar va tibbiy maʼlumotlar bo‘yicha mutaxassislar 	Медицинские регистраторы и специалисты по медицинской информации	Medical registrars and medical information specialists
+3252.1	Statist-hamshira 	Медицинская сестра-статист 	Nurse-at-large 
+3252.2	Tibbiy roʼyxatdan oʼtkazuvchi 	Медицинский регистратор 	Medical Registrar 
+3252.3	Tibbiy sud ekspertizasida tibbiy roʼyhatga oluvchi 	Медицинский регистратор медицинской судебной экспертизы 	Medical Registrar of Forensic Medicine 
+3252.4	Tibbiy statistika 	Медицинский статистик 	Medical statistician 
+3252.5	Felьdsher 	Фельдшер 	Feldscher 

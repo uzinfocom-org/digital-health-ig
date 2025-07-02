@@ -1,0 +1,26 @@
+Name			Flags		Cardinality	example 1	example 2	document	Type	Description & Constraints		ValueSets				
+Provenance			TU						DomainResource	Данные о подписи ресурсов (в т.ч. биометрической через myID)		ValueSet	CodeSystem	Code	Display	
+target									Reference(Resource)			ValueSet/resource-types	CodeSystem_resource-types	Medication, DocumentReference	Тип ресурса	
+	reference		ΣS		0..1	DocumentReference/ХХХ			string			ValueSet/provenance-activity-type		все коды	Код действия	
+	type		ΣS		0..1	DocumentReference			uri	"Определяет тип ресурса, который будет подписан
+Binding: https://terminology.medcore.uz/ValueSet/resource-types (required)"		ValueSet/ParticipationRoleType		все коды	Тип роли участия агента	
+occurredDateTime			ΣS		0..1	05.02.2025  12:58:10			dateTime	Когда произошло действие		ValueSet/provenance-entity-role		все коды	Роль субъекта	
+activity			ΣS		0..1	LA			CodeableConcept	"Действие, которое произошло
+Binding: https://terminology.medcore.uz/ValueSet/provenance-activity-type (required)"		ValueSet/SignatureType		все коды	Тип подписи	
+patient					0..1	ID Patient			Reference(Patient)	Пациент, который является субъектом данных						
+agent					1..*				BackboneElement	Идентифицированный пользователь						
+	type		ΣS		0..1	author			CodeableConcept	"Тип роли участия агента
+Binding: https://terminology.medcore.uz/ValueSet/ParticipationRoleType (required)"						
+	who		ΣS		1..1	ID Practitionert			Reference(Practitioner)	Кто принял участие в действии						
+entity									BackboneElement	Источник данных						
+	role		ΣS		1..1	source			code	"Роль субъекта
+Binding: https://terminology.medcore.uz/ValueSet/provenance-entity-role (required)"						
+	what								Reference(source)	Идентификация субъекта информации						
+		reference	ΣS		1..1	Binary/YYY			string	Определяет источник данных						
+signature																
+	type				1..*	biometricAuth			Coding	"Тип подписи
+Binding: https://terminology.medcore.uz/ValueSet/SignatureType (required)"						
+	when				1..1	05.02.2025  12:58:10			instant	Время подписи						
+	who				1..1	ID Practitionert			Reference(Practitioner)	Кто подписал						
+	sigFormat				1..1	pdf/application			code	MIME тип						
+	data				1..1	hash биометрии			base64Binary	Данные подписи (hash подписи) или (hash биометрии)						
