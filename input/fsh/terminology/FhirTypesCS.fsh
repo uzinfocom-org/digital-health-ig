@@ -5,7 +5,7 @@ Description: "One of the types defined as part of this version of FHIR with Uzbe
 * ^url = "https://terminology.medcore.uz/CodeSystem/fhir-types-cs"
 * ^experimental = true
 * ^content = #supplement
-* ^supplements = "http://hl7.org/fhir/fhir-types"
+* ^supplements = $fhir-types
 * #Account "A financial tool for tracking value accrued for a particular purpose. In the healthcare field, used to track charges for a patient, cost centers, etc."
   * ^designation[0].language = #ru
   * ^designation[=].value = "Финансовый инструмент для отслеживания стоимости, накопленной для определенной цели. В сфере здравоохранения используется для отслеживания расходов на пациента, центров затрат и т. д."
