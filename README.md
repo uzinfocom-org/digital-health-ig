@@ -40,8 +40,11 @@ This Implementation Guide includes:
 
 ## 👥 Contributors
 
-This IG is maintained by [Uzinfocom](https://uzinfocom.uz/) with technical guidance from the DHP Architecture & Standards Working Group and HL7/FHIR experts.
-
+| Name                                             | Role                          | Organization                      |
+|--------------------------------------------------|-------------------------------|-----------------------------------|
+| [@roosyabuddy](https://github.com/roosyabuddy)   | IG Maintainer                 | [Uzinfocom](https://uzinfocom.uz) |
+| Ministry of Health of the Republic of Uzbekistan | Strategic Partner             | Government                        |
+| KfW Development Bank                             | Financial & Technical Support | International Donor               |
 
 ---
 
