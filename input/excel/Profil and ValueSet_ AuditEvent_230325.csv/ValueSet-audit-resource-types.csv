@@ -1,0 +1,17 @@
+CODE	UZ	RU	EN
+Bundle	Resurslarni yig'ish uchun konteyner.	Контейнер для сбора ресурсов.	Bundle
+ClinicalImpression	Klinik taassurot	Клиническое впечатление	ClinicalImpression
+CommunicationRequest	Xabar uchun so'rov	Запрос на сообщение	CommunicationRequest
+Condition	Davlat	Состояние	Condition
+ConditionDefinition	Davlat ta'rifi	СостояниеОпределение	ConditionDefinition
+Consent	Shartnoma	Согласие	Consent
+DiagnosticReport	Diagnostika hisoboti	ДиагностическийОтчет	DiagnosticReport
+DocumentReference	DocumentLink	ДокументСсылка	DocumentReference
+Encounter	Qabul	Прием	Encounter
+EncounterHistory	Qabul qilish tarixi	История приема	EncounterHistory
+EpisodeOfCare	Ketish epizodi	ЭпизодУхода	EpisodeOfCare
+FamilyMemberHistory	Oila a'zolarining tarixi	История членов семьи	FamilyMemberHistory
+HealthcareService	Xizmatlar	Услуги	HealthcareService
+Patient	Bemor	Пациент	Patient
+Practitioner	Tibbiyot xodimi	Медицинский работник	Practitioner
+Procedure	Jarayon	Процедура	Procedure

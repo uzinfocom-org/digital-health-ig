@@ -1,0 +1,15 @@
+CODE	UZ	RU	EN
+NI	JShShIR	ПИНФЛ	Personal Identification Number of an Individual
+PPN	Seriya va pasport raqami	Серия и номер паспорта 	Passport series and number
+BCT	Tug'ilganlik haqidagi guvohnomaning seriyasi va raqami	Серия и номер свидетельства о рождении	Birth certificate series and number
+DL	Haydovchilik guvohnomasi seriyasi va raqami	Серия и номер водительского удостоверения	Driver's license series and number
+DP	Diplomatik pasport seriyasi va raqami	Серия и номер дипломатического паспорта	Diplomatic passport series and number
+HC	Tibbiy karta raqami	Номер медицинской карты	Medical card number
+MI	Harbiy guvohnomaning seriyasi va raqami	Серия и номер военного билета	Military ID series and number
+PCN	Qamoqqa olingan shaxsga berilgan raqam	Номер, присваиваемый человеку, находящемуся в заключении	Number assigned to a person in prison
+MD	Nomer meditsinskiy litsenziyasi	Номер медицинской лицензии	Medical License number
+EN	Ish beruvchi raqami	Номер работодателя	Employer number
+TAX	Soliq identifikatsiya raqami	Налоговый идентификационный номер	Tax ID number
+DR	Donorning ro'yxatga olish raqami	Регистрационный номер донора	Donor Registration Number
+ACSN	Kirish identifikatori	Идентификатор доступа	Accession ID
+UDI	Universal qurilma identifikatori	Универсальный идентификатор устройства	Universal Device Identifier

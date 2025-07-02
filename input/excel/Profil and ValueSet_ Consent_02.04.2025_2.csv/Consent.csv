@@ -1,0 +1,25 @@
+Name			Flags		Cardinality	example 1	document	Type	Description & Constraints		ValueSets			
+Consent			TU					DomainResource	Запреты и разрешения на выполнение действий		System	Code	Display	
+status			Σ S		1..1	active		code	"Определяет статус согласия
+Binding: https://terminology.medcore.uz/ValueSet/Consent State (required)"		ValueSet/Consent State	все коды	Статус согласия	
+subject			Σ		 0..1	ID Patient		Reference(Patient | Practitioner | Group)	На кого распространяется согласие (на кого дается согласие)		ValueSet/Consent Policy	все коды	Правила, устанавливающие базовое согласие	
+period			Σ		 0..1			Period	Период действия согласия		ValueSet/consent-provision-type	все коды	Решение по согласию	
+	start		ΣC		 0..1	2025-02-15T14:02:52		dateTime	Дата начала действия согласия		ValueSet/consent-action	все коды	Действия по согласию	
+	end		ΣC		 0..1	2026-02-15T14:02:52		dateTime	Дата окончания действия согласия		ValueSet-PurposeOfUse	все коды	Цель использования	
+grantor			Σ		0..*	ID Patient		Reference(Patient | RelatedPerson)	От кого получено согласие (Пациент или Представитель пациента, от которого дается согласие)					
+sourceAttachment					0..*			Attachment	Источник, из которого взято это согласие					
+	url		Σ		0..1	 https://хххххххххххх		url	URL-адрес, где хранится вложение					
+	creation		Σ		0..1	2025-03-15T14:02:52		dateTime	Дата первого создания вложения					
+sourceReference					0..*	ID Consent		Reference(Consent | DocumentReference | Contract | QuestionnaireResponse)	Источник, из которого взято согласие					
+regulatoryBasis					0..*	uz-LRU-547	"Статьи: 19, 24, 25, 26, 28, 34, 45 Закона Руз ""Об охране здоровья граждан"""	CodeableConcept	"Правила, устанавливающие базовое согласие
+Binding: https://terminology.medcore.uz/ValueSet/Consent Policy (required)"					
+decision			Σ S		0..1	permit		code	"Решение по согласию
+Binding: https://terminology.medcore.uz/ValueSet/consent-provision-type (required)"					
+provision								BackboneElement	Правила обеспечения согласия					
+	period							Period	Период действия правил					
+		start	ΣC		 0..1	2025-02-15T14:02:52		dateTime	Дата начала действия правил согласия					
+		end	ΣC		 0..1	2026-02-15T14:02:52		dateTime	Дата окончания действия правил согласия					
+	action		Σ		0..*	disclose		CodeableConcept	"Действия, регулируемые настоящими правилами
+Binding: https://terminology.medcore.uz/ValueSet/consent-action (required)"					
+	purpose		Σ		0..*	RECORDMGT		Coding	"Цель использования
+Binding: https://terminology.medcore.uz/ValueSet-PurposeOfUse (required)"					

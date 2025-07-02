@@ -1,0 +1,4303 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "active",
+  "content": "complete",
+  "name": "NationalityCS",
+  "id": "nationality-cs",
+  "title": "Nationality",
+  "description": "Defines a nationality of a person as used in Uzbekistan",
+  "url": "https://terminology.medcore.uz/CodeSystem/nationality-cs",
+  "concept": [
+    {
+      "code": "1",
+      "display": "Ruslar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Русские"
+        },
+        {
+          "language": "en",
+          "value": "Russians"
+        }
+      ]
+    },
+    {
+      "code": "3",
+      "display": "Pomors",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Поморы"
+        },
+        {
+          "language": "en",
+          "value": "Pomors"
+        }
+      ]
+    },
+    {
+      "code": "4",
+      "display": "Abazinlar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Абазины"
+        },
+        {
+          "language": "en",
+          "value": "Abazins"
+        }
+      ]
+    },
+    {
+      "code": "5",
+      "display": "Abxazlar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Абхазы"
+        },
+        {
+          "language": "en",
+          "value": "Abkhazians"
+        }
+      ]
+    },
+    {
+      "code": "6",
+      "display": "Avarlar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Аварцы"
+        },
+        {
+          "language": "en",
+          "value": "Avars"
+        }
+      ]
+    },
+    {
+      "code": "7",
+      "display": "Andes",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Андийцы"
+        },
+        {
+          "language": "en",
+          "value": "Andians"
+        }
+      ]
+    },
+    {
+      "code": "8",
+      "display": "Archintsi",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Арчинцы"
+        },
+        {
+          "language": "en",
+          "value": "Archins"
+        }
+      ]
+    },
+    {
+      "code": "9",
+      "display": "Axvaxiylar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Ахвахцы"
+        },
+        {
+          "language": "en",
+          "value": "Akhvakhs"
+        }
+      ]
+    },
+    {
+      "code": "10",
+      "display": "Bag'ulali",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Багулалы"
+        },
+        {
+          "language": "en",
+          "value": "Bagulaly"
+        }
+      ]
+    },
+    {
+      "code": "11",
+      "display": "Bezhtiny",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Бежтинцы"
+        },
+        {
+          "language": "en",
+          "value": "Bezhtins"
+        }
+      ]
+    },
+    {
+      "code": "12",
+      "display": "Botlix odamlari",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Ботлихцы"
+        },
+        {
+          "language": "en",
+          "value": "Botlikhs"
+        }
+      ]
+    },
+    {
+      "code": "13",
+      "display": "Ginux xalqi",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Гинухцы"
+        },
+        {
+          "language": "en",
+          "value": "Ginukhs"
+        }
+      ]
+    },
+    {
+      "code": "14",
+      "display": "Godoberinlar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Годоберинцы"
+        },
+        {
+          "language": "en",
+          "value": "Godoberins"
+        }
+      ]
+    },
+    {
+      "code": "15",
+      "display": "Gunzibiyaliklar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Гунзибцы"
+        },
+        {
+          "language": "en",
+          "value": "Gunzibs"
+        }
+      ]
+    },
+    {
+      "code": "16",
+      "display": "Didoytsy",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Дидойцы"
+        },
+        {
+          "language": "en",
+          "value": "Didoys"
+        }
+      ]
+    },
+    {
+      "code": "17",
+      "display": "Karatinliklar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Каратинцы"
+        },
+        {
+          "language": "en",
+          "value": "Karatins"
+        }
+      ]
+    },
+    {
+      "code": "18",
+      "display": "Tyndalls",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Тиндалы"
+        },
+        {
+          "language": "en",
+          "value": "Tindals"
+        }
+      ]
+    },
+    {
+      "code": "19",
+      "display": "Xvarshin",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Хваршины"
+        },
+        {
+          "language": "en",
+          "value": "Khvarshis"
+        }
+      ]
+    },
+    {
+      "code": "20",
+      "display": "Chamalali",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Чамалалы"
+        },
+        {
+          "language": "en",
+          "value": "Chamalals"
+        }
+      ]
+    },
+    {
+      "code": "21",
+      "display": "Aguly",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Агулы"
+        },
+        {
+          "language": "en",
+          "value": "Aghuls"
+        }
+      ]
+    },
+    {
+      "code": "22",
+      "display": "Adige xalqi",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Адыгейцы"
+        },
+        {
+          "language": "en",
+          "value": "Adyghe"
+        }
+      ]
+    },
+    {
+      "code": "23",
+      "display": "Ozarbayjonlar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Азербайджанцы"
+        },
+        {
+          "language": "en",
+          "value": "Azerbaijanis"
+        }
+      ]
+    },
+    {
+      "code": "24",
+      "display": "Aleutlar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Алеуты"
+        },
+        {
+          "language": "en",
+          "value": "Aleuts"
+        }
+      ]
+    },
+    {
+      "code": "25",
+      "display": "Oltoyliklar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Алтайцы"
+        },
+        {
+          "language": "en",
+          "value": "Altaians"
+        }
+      ]
+    },
+    {
+      "code": "26",
+      "display": "Telengitlar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Теленгиты"
+        },
+        {
+          "language": "en",
+          "value": "Telengits"
+        }
+      ]
+    },
+    {
+      "code": "27",
+      "display": "Tubalar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Тубалары"
+        },
+        {
+          "language": "en",
+          "value": "Tubalars"
+        }
+      ]
+    },
+    {
+      "code": "28",
+      "display": "Chelkanlar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Челканцы"
+        },
+        {
+          "language": "en",
+          "value": "Chelkans"
+        }
+      ]
+    },
+    {
+      "code": "29",
+      "display": "Amerikaliklar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Американцы"
+        },
+        {
+          "language": "en",
+          "value": "Americans"
+        }
+      ]
+    },
+    {
+      "code": "30",
+      "display": "Arablar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Арабы"
+        },
+        {
+          "language": "en",
+          "value": "Arabs"
+        }
+      ]
+    },
+    {
+      "code": "31",
+      "display": "Markaziy Osiyo arablari",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Арабы среднеазиатские"
+        },
+        {
+          "language": "en",
+          "value": "Central Asian Arabs"
+        }
+      ]
+    },
+    {
+      "code": "32",
+      "display": "Armanlar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Армяне"
+        },
+        {
+          "language": "en",
+          "value": "Armenians"
+        }
+      ]
+    },
+    {
+      "code": "33",
+      "display": "Cherkesog'ay",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Черкесогаи"
+        },
+        {
+          "language": "en",
+          "value": "Cherkessogai"
+        }
+      ]
+    },
+    {
+      "code": "34",
+      "display": "Ossuriyaliklar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Ассирийцы"
+        },
+        {
+          "language": "en",
+          "value": "Assyrians"
+        }
+      ]
+    },
+    {
+      "code": "35",
+      "display": "Afg'onlar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Афганцы"
+        },
+        {
+          "language": "en",
+          "value": "Afghans"
+        }
+      ]
+    },
+    {
+      "code": "36",
+      "display": "Balkarlar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Балкарцы"
+        },
+        {
+          "language": "en",
+          "value": "Balkars"
+        }
+      ]
+    },
+    {
+      "code": "37",
+      "display": "Boshqirdlar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Башкиры"
+        },
+        {
+          "language": "en",
+          "value": "Bashkirs"
+        }
+      ]
+    },
+    {
+      "code": "38",
+      "display": "Belarusians",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Белорусы"
+        },
+        {
+          "language": "en",
+          "value": "Belarusians"
+        }
+      ]
+    },
+    {
+      "code": "39",
+      "display": "Besermyans",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Бесермяне"
+        },
+        {
+          "language": "en",
+          "value": "Besermyans"
+        }
+      ]
+    },
+    {
+      "code": "40",
+      "display": "Bulgarians",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Болгары"
+        },
+        {
+          "language": "en",
+          "value": "Bulgarians"
+        }
+      ]
+    },
+    {
+      "code": "41",
+      "display": "Bosnians",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Боснийцы"
+        },
+        {
+          "language": "en",
+          "value": "Bosnians"
+        }
+      ]
+    },
+    {
+      "code": "42",
+      "display": "British",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Британцы"
+        },
+        {
+          "language": "en",
+          "value": "British"
+        }
+      ]
+    },
+    {
+      "code": "43",
+      "display": "Buryats",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Буряты"
+        },
+        {
+          "language": "en",
+          "value": "Buryats"
+        }
+      ]
+    },
+    {
+      "code": "44",
+      "display": "Hungarians",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Венгры"
+        },
+        {
+          "language": "en",
+          "value": "Hungarians"
+        }
+      ]
+    },
+    {
+      "code": "45",
+      "display": "Vepsians",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Вепсы"
+        },
+        {
+          "language": "en",
+          "value": "Vepsians"
+        }
+      ]
+    },
+    {
+      "code": "46",
+      "display": "Vods",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Водь"
+        },
+        {
+          "language": "en",
+          "value": "Vods"
+        }
+      ]
+    },
+    {
+      "code": "47",
+      "display": "Vietnamese",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Вьетнамцы"
+        },
+        {
+          "language": "en",
+          "value": "Vietnamese"
+        }
+      ]
+    },
+    {
+      "code": "48",
+      "display": "Gagauz",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Гагаузы"
+        },
+        {
+          "language": "en",
+          "value": "Gagauz"
+        }
+      ]
+    },
+    {
+      "code": "49",
+      "display": "Mountain Jews",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Горские евреи"
+        },
+        {
+          "language": "en",
+          "value": "Mountain Jews"
+        }
+      ]
+    },
+    {
+      "code": "50",
+      "display": "Greeks",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Греки"
+        },
+        {
+          "language": "en",
+          "value": "Greeks"
+        }
+      ]
+    },
+    {
+      "code": "51",
+      "display": "Urum Greeks",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Греки-урумы"
+        },
+        {
+          "language": "en",
+          "value": "Urum Greeks"
+        }
+      ]
+    },
+    {
+      "code": "52",
+      "display": "Georgian Jews",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Грузинские евреи"
+        },
+        {
+          "language": "en",
+          "value": "Georgian Jews"
+        }
+      ]
+    },
+    {
+      "code": "53",
+      "display": "Georgians",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Грузины"
+        },
+        {
+          "language": "en",
+          "value": "Georgians"
+        }
+      ]
+    },
+    {
+      "code": "54",
+      "display": "Adjarians",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Аджарцы"
+        },
+        {
+          "language": "en",
+          "value": "Adjarians"
+        }
+      ]
+    },
+    {
+      "code": "55",
+      "display": "Ingiloys",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Ингилойцы"
+        },
+        {
+          "language": "en",
+          "value": "Ingiloys"
+        }
+      ]
+    },
+    {
+      "code": "56",
+      "display": "Lazis",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Лазы"
+        },
+        {
+          "language": "en",
+          "value": "Lazis"
+        }
+      ]
+    },
+    {
+      "code": "57",
+      "display": "Mingrelians",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Мегрелы"
+        },
+        {
+          "language": "en",
+          "value": "Mingrelians"
+        }
+      ]
+    },
+    {
+      "code": "58",
+      "display": "Svans",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Сваны"
+        },
+        {
+          "language": "en",
+          "value": "Svans"
+        }
+      ]
+    },
+    {
+      "code": "59",
+      "display": "Dargins",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Даргинцы"
+        },
+        {
+          "language": "en",
+          "value": "Dargins"
+        }
+      ]
+    },
+    {
+      "code": "60",
+      "display": "Kaytag xalqi",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Кайтагцы"
+        },
+        {
+          "language": "en",
+          "value": "Kaitags"
+        }
+      ]
+    },
+    {
+      "code": "61",
+      "display": "Kubachi aholisi",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Кубачинцы"
+        },
+        {
+          "language": "en",
+          "value": "Kubachi"
+        }
+      ]
+    },
+    {
+      "code": "62",
+      "display": "Dolganlar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Долганы"
+        },
+        {
+          "language": "en",
+          "value": "Dolgans"
+        }
+      ]
+    },
+    {
+      "code": "63",
+      "display": "Dunganlar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Дунгане"
+        },
+        {
+          "language": "en",
+          "value": "Dungans"
+        }
+      ]
+    },
+    {
+      "code": "64",
+      "display": "Yahudiylar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Евреи"
+        },
+        {
+          "language": "en",
+          "value": "Jews"
+        }
+      ]
+    },
+    {
+      "code": "65",
+      "display": "Yazidiylar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Езиды"
+        },
+        {
+          "language": "en",
+          "value": "Yezids"
+        }
+      ]
+    },
+    {
+      "code": "66",
+      "display": "Izhoriyaliklar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Ижорцы"
+        },
+        {
+          "language": "en",
+          "value": "Izhorians"
+        }
+      ]
+    },
+    {
+      "code": "67",
+      "display": "Ingush",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Ингуши"
+        },
+        {
+          "language": "en",
+          "value": "Ingush"
+        }
+      ]
+    },
+    {
+      "code": "68",
+      "display": "Hindular",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Индийцы"
+        },
+        {
+          "language": "en",
+          "value": "Indians"
+        }
+      ]
+    },
+    {
+      "code": "69",
+      "display": "Iispanlar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Испанцы"
+        },
+        {
+          "language": "en",
+          "value": "Spaniards"
+        }
+      ]
+    },
+    {
+      "code": "70",
+      "display": "Italiyaliklar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Итальянцы"
+        },
+        {
+          "language": "en",
+          "value": "Italians"
+        }
+      ]
+    },
+    {
+      "code": "71",
+      "display": "Itelmens",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Ительмены"
+        },
+        {
+          "language": "en",
+          "value": "Itelmens"
+        }
+      ]
+    },
+    {
+      "code": "72",
+      "display": "Kabardiyaliklar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Кабардинцы"
+        },
+        {
+          "language": "en",
+          "value": "Kabardians"
+        }
+      ]
+    },
+    {
+      "code": "73",
+      "display": "Qozoqlar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Казахи"
+        },
+        {
+          "language": "en",
+          "value": "Kazakhs"
+        }
+      ]
+    },
+    {
+      "code": "74",
+      "display": "Qalmiqlar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Калмыки"
+        },
+        {
+          "language": "en",
+          "value": "Kalmyks"
+        }
+      ]
+    },
+    {
+      "code": "75",
+      "display": "Kamchadal",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Камчадалы"
+        },
+        {
+          "language": "en",
+          "value": "Kamchadals"
+        }
+      ]
+    },
+    {
+      "code": "76",
+      "display": "Karaitlar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Караимы"
+        },
+        {
+          "language": "en",
+          "value": "Karaims"
+        }
+      ]
+    },
+    {
+      "code": "77",
+      "display": "Qoraqalpoqlar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Каракалпаки"
+        },
+        {
+          "language": "en",
+          "value": "Karakalpaks"
+        }
+      ]
+    },
+    {
+      "code": "78",
+      "display": "Qorachaylar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Карачаевцы"
+        },
+        {
+          "language": "en",
+          "value": "Karachays"
+        }
+      ]
+    },
+    {
+      "code": "79",
+      "display": "Kareliyaliklar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Карелы"
+        },
+        {
+          "language": "en",
+          "value": "Kareli"
+        }
+      ]
+    },
+    {
+      "code": "80",
+      "display": "Kereki",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Кереки"
+        },
+        {
+          "language": "en",
+          "value": "Kereks"
+        }
+      ]
+    },
+    {
+      "code": "81",
+      "display": "Chum qizil ikra",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Кеты"
+        },
+        {
+          "language": "en",
+          "value": "Kets"
+        }
+      ]
+    },
+    {
+      "code": "82",
+      "display": "Yugi",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Юги"
+        },
+        {
+          "language": "en",
+          "value": "Yugs"
+        }
+      ]
+    },
+    {
+      "code": "83",
+      "display": "Qirg'iz",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Киргизы"
+        },
+        {
+          "language": "en",
+          "value": "Kirghiz"
+        }
+      ]
+    },
+    {
+      "code": "84",
+      "display": "Xitoy",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Китайцы"
+        },
+        {
+          "language": "en",
+          "value": "Chinese"
+        }
+      ]
+    },
+    {
+      "code": "85",
+      "display": "Komi",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Коми"
+        },
+        {
+          "language": "en",
+          "value": "Komi"
+        }
+      ]
+    },
+    {
+      "code": "86",
+      "display": "Komi-Izhemtsy",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Коми-ижемцы"
+        },
+        {
+          "language": "en",
+          "value": "Komi-Izhemtsy"
+        }
+      ]
+    },
+    {
+      "code": "87",
+      "display": "Komi-Permyaklar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Коми-пермяки"
+        },
+        {
+          "language": "en",
+          "value": "Komi-Permyaks"
+        }
+      ]
+    },
+    {
+      "code": "88",
+      "display": "koreyslar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Корейцы"
+        },
+        {
+          "language": "en",
+          "value": "Koreans"
+        }
+      ]
+    },
+    {
+      "code": "89",
+      "display": "Koryaklar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Коряки"
+        },
+        {
+          "language": "en",
+          "value": "Koryaks"
+        }
+      ]
+    },
+    {
+      "code": "90",
+      "display": "Alyutoriyaliklar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Алюторцы"
+        },
+        {
+          "language": "en",
+          "value": "Alyutors"
+        }
+      ]
+    },
+    {
+      "code": "91",
+      "display": "Qrim tatarlari",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Крымские татары"
+        },
+        {
+          "language": "en",
+          "value": "Crimean Tatars"
+        }
+      ]
+    },
+    {
+      "code": "92",
+      "display": "Qrimchaklar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Крымчаки"
+        },
+        {
+          "language": "en",
+          "value": "Krymchaks"
+        }
+      ]
+    },
+    {
+      "code": "93",
+      "display": "Kubaliklar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Кубинцы"
+        },
+        {
+          "language": "en",
+          "value": "Cubans"
+        }
+      ]
+    },
+    {
+      "code": "94",
+      "display": "Kumandinlar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Кумандинцы"
+        },
+        {
+          "language": "en",
+          "value": "Kumandins"
+        }
+      ]
+    },
+    {
+      "code": "95",
+      "display": "Qumiklar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Кумыки"
+        },
+        {
+          "language": "en",
+          "value": "Kumyks"
+        }
+      ]
+    },
+    {
+      "code": "96",
+      "display": "Kurdlar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Курды"
+        },
+        {
+          "language": "en",
+          "value": "Kurds"
+        }
+      ]
+    },
+    {
+      "code": "97",
+      "display": "Qurmanch",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Курманч"
+        },
+        {
+          "language": "en",
+          "value": "Kurmanch"
+        }
+      ]
+    },
+    {
+      "code": "98",
+      "display": "Laktsy",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Лакцы"
+        },
+        {
+          "language": "en",
+          "value": "Lakts"
+        }
+      ]
+    },
+    {
+      "code": "99",
+      "display": "Latviyaliklar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Латыши"
+        },
+        {
+          "language": "en",
+          "value": "Latvians"
+        }
+      ]
+    },
+    {
+      "code": "100",
+      "display": "Latgaliyaliklar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Латгальцы"
+        },
+        {
+          "language": "en",
+          "value": "Latgalians"
+        }
+      ]
+    },
+    {
+      "code": "101",
+      "display": "Lezgilar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Лезгины"
+        },
+        {
+          "language": "en",
+          "value": "Lezgins"
+        }
+      ]
+    },
+    {
+      "code": "102",
+      "display": "Litvaliklar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Литовцы"
+        },
+        {
+          "language": "en",
+          "value": "Lithuanians"
+        }
+      ]
+    },
+    {
+      "code": "103",
+      "display": "Makedoniyaliklar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Македонцы"
+        },
+        {
+          "language": "en",
+          "value": "Macedonians"
+        }
+      ]
+    },
+    {
+      "code": "104",
+      "display": "Muncie",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Манси"
+        },
+        {
+          "language": "en",
+          "value": "Mansi"
+        }
+      ]
+    },
+    {
+      "code": "105",
+      "display": "Mari",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Марийцы"
+        },
+        {
+          "language": "en",
+          "value": "Mari"
+        }
+      ]
+    },
+    {
+      "code": "106",
+      "display": "Mari tog'i",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Горные марийцы"
+        },
+        {
+          "language": "en",
+          "value": "Mountain Mari"
+        }
+      ]
+    },
+    {
+      "code": "107",
+      "display": "Yaylov-Sharqiy Mari",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Лугово-восточные марийцы"
+        },
+        {
+          "language": "en",
+          "value": "Meadow-Eastern Mari"
+        }
+      ]
+    },
+    {
+      "code": "108",
+      "display": "Moldovanlar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Молдаване"
+        },
+        {
+          "language": "en",
+          "value": "Moldovans"
+        }
+      ]
+    },
+    {
+      "code": "109",
+      "display": "Mo'g'ullar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Монголы"
+        },
+        {
+          "language": "en",
+          "value": "Mongols"
+        }
+      ]
+    },
+    {
+      "code": "110",
+      "display": "Mordva",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Мордва"
+        },
+        {
+          "language": "en",
+          "value": "Mordva"
+        }
+      ]
+    },
+    {
+      "code": "111",
+      "display": "Mordva-moksha",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Мордва-мокша"
+        },
+        {
+          "language": "en",
+          "value": "Mordva-moksha"
+        }
+      ]
+    },
+    {
+      "code": "112",
+      "display": "Mordva-Erzya",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Мордва-эрзя"
+        },
+        {
+          "language": "en",
+          "value": "Mordva-Erzya"
+        }
+      ]
+    },
+    {
+      "code": "113",
+      "display": "Nagaibaki",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Нагайбаки"
+        },
+        {
+          "language": "en",
+          "value": "Nagaibaki"
+        }
+      ]
+    },
+    {
+      "code": "114",
+      "display": "Nanai xalqi",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Нанайцы"
+        },
+        {
+          "language": "en",
+          "value": "Nanai people"
+        }
+      ]
+    },
+    {
+      "code": "115",
+      "display": "Nganasanlar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Нганасаны"
+        },
+        {
+          "language": "en",
+          "value": "Nganasans"
+        }
+      ]
+    },
+    {
+      "code": "116",
+      "display": "Negidaliyaliklar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Негидальцы"
+        },
+        {
+          "language": "en",
+          "value": "Negidalians"
+        }
+      ]
+    },
+    {
+      "code": "117",
+      "display": "Nemislar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Немцы"
+        },
+        {
+          "language": "en",
+          "value": "Germans"
+        }
+      ]
+    },
+    {
+      "code": "118",
+      "display": "Mennonitlar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Меннониты"
+        },
+        {
+          "language": "en",
+          "value": "Mennonites"
+        }
+      ]
+    },
+    {
+      "code": "119",
+      "display": "Nenets",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Ненцы"
+        },
+        {
+          "language": "en",
+          "value": "Nenets"
+        }
+      ]
+    },
+    {
+      "code": "120",
+      "display": "Nivkhi",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Нивхи"
+        },
+        {
+          "language": "en",
+          "value": "Nivkhi"
+        }
+      ]
+    },
+    {
+      "code": "121",
+      "display": "Nogaylar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Ногайцы"
+        },
+        {
+          "language": "en",
+          "value": "Nogais"
+        }
+      ]
+    },
+    {
+      "code": "122",
+      "display": "Karagashi",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Карагаши"
+        },
+        {
+          "language": "en",
+          "value": "Karagashi"
+        }
+      ]
+    },
+    {
+      "code": "123",
+      "display": "Orochi",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Орочи"
+        },
+        {
+          "language": "en",
+          "value": "Orochi"
+        }
+      ]
+    },
+    {
+      "code": "124",
+      "display": "Osetinlar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Осетины"
+        },
+        {
+          "language": "en",
+          "value": "Ossetians"
+        }
+      ]
+    },
+    {
+      "code": "125",
+      "display": "Osetin-digoriyaliklar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Осетины-дигорцы"
+        },
+        {
+          "language": "en",
+          "value": "Ossetians-Digorians"
+        }
+      ]
+    },
+    {
+      "code": "126",
+      "display": "Osetin-ironiyaliklar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Осетины-иронцы"
+        },
+        {
+          "language": "en",
+          "value": "Ossetians-Ironians"
+        }
+      ]
+    },
+    {
+      "code": "127",
+      "display": "pokistonliklar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Пакистанцы"
+        },
+        {
+          "language": "en",
+          "value": "Pakistanis"
+        }
+      ]
+    },
+    {
+      "code": "128",
+      "display": "Pomiri",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Памирцы"
+        },
+        {
+          "language": "en",
+          "value": "Pamiris"
+        }
+      ]
+    },
+    {
+      "code": "129",
+      "display": "Forslar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Персы"
+        },
+        {
+          "language": "en",
+          "value": "Persians"
+        }
+      ]
+    },
+    {
+      "code": "130",
+      "display": "polyaklar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Поляки"
+        },
+        {
+          "language": "en",
+          "value": "Poles"
+        }
+      ]
+    },
+    {
+      "code": "131",
+      "display": "Ruminiyaliklar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Румыны"
+        },
+        {
+          "language": "en",
+          "value": "Romanians"
+        }
+      ]
+    },
+    {
+      "code": "132",
+      "display": "Rusinlar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Русины"
+        },
+        {
+          "language": "en",
+          "value": "Rusyns"
+        }
+      ]
+    },
+    {
+      "code": "133",
+      "display": "Rutuliyaliklar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Рутульцы"
+        },
+        {
+          "language": "en",
+          "value": "Rutulians"
+        }
+      ]
+    },
+    {
+      "code": "134",
+      "display": "Sami",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Саамы"
+        },
+        {
+          "language": "en",
+          "value": "Sami"
+        }
+      ]
+    },
+    {
+      "code": "135",
+      "display": "Selkuplar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Селькупы"
+        },
+        {
+          "language": "en",
+          "value": "Selkups"
+        }
+      ]
+    },
+    {
+      "code": "136",
+      "display": "Serblar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Сербы"
+        },
+        {
+          "language": "en",
+          "value": "Serbs"
+        }
+      ]
+    },
+    {
+      "code": "137",
+      "display": "Slovaklar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Словаки"
+        },
+        {
+          "language": "en",
+          "value": "Slovaks"
+        }
+      ]
+    },
+    {
+      "code": "138",
+      "display": "Sloveniyaliklar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Словенцы"
+        },
+        {
+          "language": "en",
+          "value": "Slovenians"
+        }
+      ]
+    },
+    {
+      "code": "139",
+      "display": "Soyotlar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Сойоты"
+        },
+        {
+          "language": "en",
+          "value": "Soyots"
+        }
+      ]
+    },
+    {
+      "code": "140",
+      "display": "Markaziy Osiyo yahudiylari",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Среднеазиатские евреи"
+        },
+        {
+          "language": "en",
+          "value": "Central Asian Jews"
+        }
+      ]
+    },
+    {
+      "code": "141",
+      "display": "Tabasaranlar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Табасараны"
+        },
+        {
+          "language": "en",
+          "value": "Tabasarans"
+        }
+      ]
+    },
+    {
+      "code": "142",
+      "display": "Tojiklar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Таджики"
+        },
+        {
+          "language": "en",
+          "value": "Tajiks"
+        }
+      ]
+    },
+    {
+      "code": "143",
+      "display": "Havzalar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Тазы"
+        },
+        {
+          "language": "en",
+          "value": "Basins"
+        }
+      ]
+    },
+    {
+      "code": "144",
+      "display": "Talish",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Талыши"
+        },
+        {
+          "language": "en",
+          "value": "Talysh"
+        }
+      ]
+    },
+    {
+      "code": "145",
+      "display": "Tatarlar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Татары"
+        },
+        {
+          "language": "en",
+          "value": "Tatars"
+        }
+      ]
+    },
+    {
+      "code": "146",
+      "display": "Astraxan tatarlari",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Астраханские татары"
+        },
+        {
+          "language": "en",
+          "value": "Astrakhan Tatars"
+        }
+      ]
+    },
+    {
+      "code": "147",
+      "display": "Kryashens",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Кряшены"
+        },
+        {
+          "language": "en",
+          "value": "Kryashens"
+        }
+      ]
+    },
+    {
+      "code": "148",
+      "display": "Mishari",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Мишари"
+        },
+        {
+          "language": "en",
+          "value": "Mishari"
+        }
+      ]
+    },
+    {
+      "code": "149",
+      "display": "Sibir tatarlari",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Сибирские татары"
+        },
+        {
+          "language": "en",
+          "value": "Siberian Tatars"
+        }
+      ]
+    },
+    {
+      "code": "150",
+      "display": "Tats",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Таты"
+        },
+        {
+          "language": "en",
+          "value": "Tats"
+        }
+      ]
+    },
+    {
+      "code": "151",
+      "display": "Teleutlar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Телеуты"
+        },
+        {
+          "language": "en",
+          "value": "Teleuts"
+        }
+      ]
+    },
+    {
+      "code": "152",
+      "display": "Tofalar (tofa)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Тофалары (тофа)"
+        },
+        {
+          "language": "en",
+          "value": "Tofalar (tofa)"
+        }
+      ]
+    },
+    {
+      "code": "153",
+      "display": "Tuvaliklar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Тувинцы"
+        },
+        {
+          "language": "en",
+          "value": "Tuvans"
+        }
+      ]
+    },
+    {
+      "code": "154",
+      "display": "Tuvalar-Todjalar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Тувинцы-тоджинцы"
+        },
+        {
+          "language": "en",
+          "value": "Tuvans-Todzhas"
+        }
+      ]
+    },
+    {
+      "code": "155",
+      "display": "Turklar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Турки"
+        },
+        {
+          "language": "en",
+          "value": "Turks"
+        }
+      ]
+    },
+    {
+      "code": "156",
+      "display": "Mesxeti turklari",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Турки-месхетинцы"
+        },
+        {
+          "language": "en",
+          "value": "Meskhetian Turks"
+        }
+      ]
+    },
+    {
+      "code": "157",
+      "display": "Turkmanlar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Туркмены"
+        },
+        {
+          "language": "en",
+          "value": "Turkmens"
+        }
+      ]
+    },
+    {
+      "code": "158",
+      "display": "Udini",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Удины"
+        },
+        {
+          "language": "en",
+          "value": "Udine"
+        }
+      ]
+    },
+    {
+      "code": "159",
+      "display": "Udmurtlar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Удмурты"
+        },
+        {
+          "language": "en",
+          "value": "Udmurts"
+        }
+      ]
+    },
+    {
+      "code": "160",
+      "display": "Udege odamlari",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Удэгейцы"
+        },
+        {
+          "language": "en",
+          "value": "Udege people"
+        }
+      ]
+    },
+    {
+      "code": "161",
+      "display": "O'zbeklar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Узбеки"
+        },
+        {
+          "language": "en",
+          "value": "Uzbeks"
+        }
+      ]
+    },
+    {
+      "code": "162",
+      "display": "Uyg'urlar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Уйгуры"
+        },
+        {
+          "language": "en",
+          "value": "Uyghurs"
+        }
+      ]
+    },
+    {
+      "code": "163",
+      "display": "Uilta (Oroks)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Уйльта (ороки)"
+        },
+        {
+          "language": "en",
+          "value": "Uilta (Oroks)"
+        }
+      ]
+    },
+    {
+      "code": "164",
+      "display": "Ukrainlar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Украинцы"
+        },
+        {
+          "language": "en",
+          "value": "Ukrainians"
+        }
+      ]
+    },
+    {
+      "code": "165",
+      "display": "Ulchi",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Ульчи"
+        },
+        {
+          "language": "en",
+          "value": "Ulchi"
+        }
+      ]
+    },
+    {
+      "code": "166",
+      "display": "Finlar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Финны"
+        },
+        {
+          "language": "en",
+          "value": "Finns"
+        }
+      ]
+    },
+    {
+      "code": "167",
+      "display": "Ingrian Finlar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Финны-ингерманландцы"
+        },
+        {
+          "language": "en",
+          "value": "Ingrian Finns"
+        }
+      ]
+    },
+    {
+      "code": "168",
+      "display": "Frantsuz",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Французы"
+        },
+        {
+          "language": "en",
+          "value": "French"
+        }
+      ]
+    },
+    {
+      "code": "169",
+      "display": "Xakaslar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Хакасы"
+        },
+        {
+          "language": "en",
+          "value": "Khakass"
+        }
+      ]
+    },
+    {
+      "code": "170",
+      "display": "Xanti",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Ханты"
+        },
+        {
+          "language": "en",
+          "value": "Khanty"
+        }
+      ]
+    },
+    {
+      "code": "171",
+      "display": "Xemshili",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Хемшилы"
+        },
+        {
+          "language": "en",
+          "value": "Hemshils"
+        }
+      ]
+    },
+    {
+      "code": "172",
+      "display": "Xorvatlar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Хорваты"
+        },
+        {
+          "language": "en",
+          "value": "Croats"
+        }
+      ]
+    },
+    {
+      "code": "173",
+      "display": "Tsaxur",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Цахуры"
+        },
+        {
+          "language": "en",
+          "value": "Tsakhurs"
+        }
+      ]
+    },
+    {
+      "code": "174",
+      "display": "Lo'lilar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Цыгане"
+        },
+        {
+          "language": "en",
+          "value": "Gypsies"
+        }
+      ]
+    },
+    {
+      "code": "175",
+      "display": "Markaziy Osiyo lo'lilari",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Цыгане среднеазиатские"
+        },
+        {
+          "language": "en",
+          "value": "Central Asian Gypsies"
+        }
+      ]
+    },
+    {
+      "code": "176",
+      "display": "Cherkeslar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Черкесы"
+        },
+        {
+          "language": "en",
+          "value": "Circassians"
+        }
+      ]
+    },
+    {
+      "code": "177",
+      "display": "Chernogoriyaliklar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Черногорцы"
+        },
+        {
+          "language": "en",
+          "value": "Montenegrins"
+        }
+      ]
+    },
+    {
+      "code": "178",
+      "display": "Chexlar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Чехи"
+        },
+        {
+          "language": "en",
+          "value": "Czechs"
+        }
+      ]
+    },
+    {
+      "code": "179",
+      "display": "Chechenlar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Чеченцы"
+        },
+        {
+          "language": "en",
+          "value": "Chechens"
+        }
+      ]
+    },
+    {
+      "code": "180",
+      "display": "Chechenlar-akkinlar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Чеченцы-аккинцы"
+        },
+        {
+          "language": "en",
+          "value": "Akkin Chechens"
+        }
+      ]
+    },
+    {
+      "code": "181",
+      "display": "Chuvanlar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Чуванцы"
+        },
+        {
+          "language": "en",
+          "value": "Chuvans"
+        }
+      ]
+    },
+    {
+      "code": "182",
+      "display": "Chuvash",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Чуваши"
+        },
+        {
+          "language": "en",
+          "value": "Chuvash"
+        }
+      ]
+    },
+    {
+      "code": "183",
+      "display": "Chukchi",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Чукчи"
+        },
+        {
+          "language": "en",
+          "value": "Chukchi"
+        }
+      ]
+    },
+    {
+      "code": "184",
+      "display": "Chulim xalqi",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Чулымцы"
+        },
+        {
+          "language": "en",
+          "value": "Chulyms"
+        }
+      ]
+    },
+    {
+      "code": "185",
+      "display": "Shapsugi",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Шапсуги"
+        },
+        {
+          "language": "en",
+          "value": "Shapsugs"
+        }
+      ]
+    },
+    {
+      "code": "186",
+      "display": "Shors",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Шорцы"
+        },
+        {
+          "language": "en",
+          "value": "Shors"
+        }
+      ]
+    },
+    {
+      "code": "187",
+      "display": "Evenks",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Эвенки"
+        },
+        {
+          "language": "en",
+          "value": "Evenks"
+        }
+      ]
+    },
+    {
+      "code": "188",
+      "display": "Evens (Lamutlar)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Эвены (ламуты)"
+        },
+        {
+          "language": "en",
+          "value": "Evens (Lamuts)"
+        }
+      ]
+    },
+    {
+      "code": "189",
+      "display": "Enets",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Энцы"
+        },
+        {
+          "language": "en",
+          "value": "Enets"
+        }
+      ]
+    },
+    {
+      "code": "190",
+      "display": "Eskimoslar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Эскимосы"
+        },
+        {
+          "language": "en",
+          "value": "Eskimos"
+        }
+      ]
+    },
+    {
+      "code": "191",
+      "display": "Estoniyaliklar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Эстонцы"
+        },
+        {
+          "language": "en",
+          "value": "Estonians"
+        }
+      ]
+    },
+    {
+      "code": "192",
+      "display": "Setu (Seto)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Сету (сето)"
+        },
+        {
+          "language": "en",
+          "value": "Setos (Seto)"
+        }
+      ]
+    },
+    {
+      "code": "193",
+      "display": "Yukagirlar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Юкагиры"
+        },
+        {
+          "language": "en",
+          "value": "Yukaghirs"
+        }
+      ]
+    },
+    {
+      "code": "194",
+      "display": "Yakutlar (Saxa)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Якуты (саха)"
+        },
+        {
+          "language": "en",
+          "value": "Yakuts (Sakha)"
+        }
+      ]
+    },
+    {
+      "code": "195",
+      "display": "Yapon",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Японцы"
+        },
+        {
+          "language": "en",
+          "value": "Japanese"
+        }
+      ]
+    },
+    {
+      "code": "196",
+      "display": "Avstraliyaliklar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Австралийцы"
+        },
+        {
+          "language": "en",
+          "value": "Australians"
+        }
+      ]
+    },
+    {
+      "code": "197",
+      "display": "Avstriyaliklar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Австрийцы"
+        },
+        {
+          "language": "en",
+          "value": "Austrians"
+        }
+      ]
+    },
+    {
+      "code": "198",
+      "display": "Aynu",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Айны"
+        },
+        {
+          "language": "en",
+          "value": "Ainu"
+        }
+      ]
+    },
+    {
+      "code": "199",
+      "display": "Albanlar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Албанцы"
+        },
+        {
+          "language": "en",
+          "value": "Albanians"
+        }
+      ]
+    },
+    {
+      "code": "200",
+      "display": "Angolalar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Ангольцы"
+        },
+        {
+          "language": "en",
+          "value": "Angolans"
+        }
+      ]
+    },
+    {
+      "code": "201",
+      "display": "Argentinaliklar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Аргентинцы"
+        },
+        {
+          "language": "en",
+          "value": "Argentines"
+        }
+      ]
+    },
+    {
+      "code": "202",
+      "display": "Bangladeshliklar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Бангладешцы"
+        },
+        {
+          "language": "en",
+          "value": "Bangladeshi"
+        }
+      ]
+    },
+    {
+      "code": "203",
+      "display": "Bask",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Баски"
+        },
+        {
+          "language": "en",
+          "value": "Basques"
+        }
+      ]
+    },
+    {
+      "code": "204",
+      "display": "Belgiyaliklar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Бельгийцы"
+        },
+        {
+          "language": "en",
+          "value": "Belgians"
+        }
+      ]
+    },
+    {
+      "code": "205",
+      "display": "Benincha",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Бенинцы"
+        },
+        {
+          "language": "en",
+          "value": "Beninese"
+        }
+      ]
+    },
+    {
+      "code": "206",
+      "display": "Berberlar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Берберы"
+        },
+        {
+          "language": "en",
+          "value": "Berbers"
+        }
+      ]
+    },
+    {
+      "code": "207",
+      "display": "Birma",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Бирманцы"
+        },
+        {
+          "language": "en",
+          "value": "Burmese"
+        }
+      ]
+    },
+    {
+      "code": "208",
+      "display": "Bisau-Gvineyaliklar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Бисау-гвинейцы"
+        },
+        {
+          "language": "en",
+          "value": "Bissau-Guineans"
+        }
+      ]
+    },
+    {
+      "code": "209",
+      "display": "Boliviyaliklar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Боливийцы"
+        },
+        {
+          "language": "en",
+          "value": "Bolivians"
+        }
+      ]
+    },
+    {
+      "code": "210",
+      "display": "Botsvanalar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Ботсванцы"
+        },
+        {
+          "language": "en",
+          "value": "Botswana"
+        }
+      ]
+    },
+    {
+      "code": "211",
+      "display": "Braziliyaliklar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Бразильцы"
+        },
+        {
+          "language": "en",
+          "value": "Brazilians"
+        }
+      ]
+    },
+    {
+      "code": "212",
+      "display": "Bolgarlar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Булгары"
+        },
+        {
+          "language": "en",
+          "value": "Bulgars"
+        }
+      ]
+    },
+    {
+      "code": "213",
+      "display": "Burkinabe xalqi",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Буркинабцы"
+        },
+        {
+          "language": "en",
+          "value": "Burkinabes"
+        }
+      ]
+    },
+    {
+      "code": "214",
+      "display": "Burundiliklar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Бурундийцы"
+        },
+        {
+          "language": "en",
+          "value": "Burundi"
+        }
+      ]
+    },
+    {
+      "code": "215",
+      "display": "Venesuelaliklar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Венесуэльцы"
+        },
+        {
+          "language": "en",
+          "value": "Venezuelans"
+        }
+      ]
+    },
+    {
+      "code": "216",
+      "display": "Gabon",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Габонцы"
+        },
+        {
+          "language": "en",
+          "value": "Gabonese"
+        }
+      ]
+    },
+    {
+      "code": "217",
+      "display": "Gaitiliklar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Гаитяне"
+        },
+        {
+          "language": "en",
+          "value": "Haitians"
+        }
+      ]
+    },
+    {
+      "code": "218",
+      "display": "Gambiyaliklar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Гамбийцы"
+        },
+        {
+          "language": "en",
+          "value": "Gambians"
+        }
+      ]
+    },
+    {
+      "code": "219",
+      "display": "Ganaliklar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Ганцы"
+        },
+        {
+          "language": "en",
+          "value": "Ghanaians"
+        }
+      ]
+    },
+    {
+      "code": "220",
+      "display": "Gvatemalaliklar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Гватемальцы"
+        },
+        {
+          "language": "en",
+          "value": "Guatemalans"
+        }
+      ]
+    },
+    {
+      "code": "221",
+      "display": "Gvineyaliklar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Гвинейцы"
+        },
+        {
+          "language": "en",
+          "value": "Guineans"
+        }
+      ]
+    },
+    {
+      "code": "222",
+      "display": "Golland",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Голландцы"
+        },
+        {
+          "language": "en",
+          "value": "Dutch"
+        }
+      ]
+    },
+    {
+      "code": "223",
+      "display": "Gonduras",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Гондурасцы"
+        },
+        {
+          "language": "en",
+          "value": "Hondurans"
+        }
+      ]
+    },
+    {
+      "code": "224",
+      "display": "Dog'istonliklar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Дагестанцы"
+        },
+        {
+          "language": "en",
+          "value": "Dagestanis"
+        }
+      ]
+    },
+    {
+      "code": "225",
+      "display": "Daniyaliklar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Датчане"
+        },
+        {
+          "language": "en",
+          "value": "Danes"
+        }
+      ]
+    },
+    {
+      "code": "226",
+      "display": "Dauras",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Дауры"
+        },
+        {
+          "language": "en",
+          "value": "Daurians"
+        }
+      ]
+    },
+    {
+      "code": "227",
+      "display": "Jektsy",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Джекцы"
+        },
+        {
+          "language": "en",
+          "value": "Jacks"
+        }
+      ]
+    },
+    {
+      "code": "228",
+      "display": "Jibutiyaliklar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Джибутинцы"
+        },
+        {
+          "language": "en",
+          "value": "Djiboutians"
+        }
+      ]
+    },
+    {
+      "code": "229",
+      "display": "Dominikanliklar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Доминиканцы"
+        },
+        {
+          "language": "en",
+          "value": "Dominicans"
+        }
+      ]
+    },
+    {
+      "code": "230",
+      "display": "Zambiyaliklar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Замбийцы"
+        },
+        {
+          "language": "en",
+          "value": "Zambians"
+        }
+      ]
+    },
+    {
+      "code": "231",
+      "display": "Zimbabveliklar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Зимбабвийцы"
+        },
+        {
+          "language": "en",
+          "value": "Zimbabweans"
+        }
+      ]
+    },
+    {
+      "code": "232",
+      "display": "Isroilliklar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Израильтяне"
+        },
+        {
+          "language": "en",
+          "value": "Israelis"
+        }
+      ]
+    },
+    {
+      "code": "233",
+      "display": "Indoneziyaliklar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Индонезийцы"
+        },
+        {
+          "language": "en",
+          "value": "Indonesians"
+        }
+      ]
+    },
+    {
+      "code": "234",
+      "display": "Irland",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Ирландцы"
+        },
+        {
+          "language": "en",
+          "value": "Irish"
+        }
+      ]
+    },
+    {
+      "code": "235",
+      "display": "Islandiyaliklar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Исландцы"
+        },
+        {
+          "language": "en",
+          "value": "Icelanders"
+        }
+      ]
+    },
+    {
+      "code": "236",
+      "display": "Kabo-Verdeliklar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Кабоверденцы"
+        },
+        {
+          "language": "en",
+          "value": "Cape Verdeans"
+        }
+      ]
+    },
+    {
+      "code": "237",
+      "display": "Kamasin odamlari",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Камасинцы"
+        },
+        {
+          "language": "en",
+          "value": "Kamasinians"
+        }
+      ]
+    },
+    {
+      "code": "238",
+      "display": "Kambodjaliklar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Камбоджийцы"
+        },
+        {
+          "language": "en",
+          "value": "Cambodians"
+        }
+      ]
+    },
+    {
+      "code": "239",
+      "display": "Kamerunliklar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Камерунцы"
+        },
+        {
+          "language": "en",
+          "value": "Cameroonians"
+        }
+      ]
+    },
+    {
+      "code": "240",
+      "display": "kanadaliklar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Канадцы"
+        },
+        {
+          "language": "en",
+          "value": "Canadians"
+        }
+      ]
+    },
+    {
+      "code": "241",
+      "display": "Keniyaliklar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Кенийцы"
+        },
+        {
+          "language": "en",
+          "value": "Kenyans"
+        }
+      ]
+    },
+    {
+      "code": "242",
+      "display": "Kiprliklar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Киприоты"
+        },
+        {
+          "language": "en",
+          "value": "Cypriots"
+        }
+      ]
+    },
+    {
+      "code": "243",
+      "display": "Kistins",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Кистины"
+        },
+        {
+          "language": "en",
+          "value": "Kistins"
+        }
+      ]
+    },
+    {
+      "code": "244",
+      "display": "Kolumbiyaliklar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Колумбийцы"
+        },
+        {
+          "language": "en",
+          "value": "Colombians"
+        }
+      ]
+    },
+    {
+      "code": "245",
+      "display": "Komoriyaliklar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Коморцы"
+        },
+        {
+          "language": "en",
+          "value": "Comorians"
+        }
+      ]
+    },
+    {
+      "code": "246",
+      "display": "Kongo",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Конголезцы"
+        },
+        {
+          "language": "en",
+          "value": "Congolese"
+        }
+      ]
+    },
+    {
+      "code": "247",
+      "display": "Kosta-Rikaliklar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Костариканцы"
+        },
+        {
+          "language": "en",
+          "value": "Costaricans"
+        }
+      ]
+    },
+    {
+      "code": "248",
+      "display": "Kotdivuarliklar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Котдивуарцы"
+        },
+        {
+          "language": "en",
+          "value": "Cotdivian"
+        }
+      ]
+    },
+    {
+      "code": "249",
+      "display": "Shri-Lankaliklar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Ланкийцы"
+        },
+        {
+          "language": "en",
+          "value": "Sri Lankans"
+        }
+      ]
+    },
+    {
+      "code": "250",
+      "display": "Laosliklar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Лаосцы"
+        },
+        {
+          "language": "en",
+          "value": "Laotians"
+        }
+      ]
+    },
+    {
+      "code": "251",
+      "display": "Lesoto xalqi",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Лесотцы"
+        },
+        {
+          "language": "en",
+          "value": "Lesothians"
+        }
+      ]
+    },
+    {
+      "code": "252",
+      "display": "Liberiyaliklar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Либерийцы"
+        },
+        {
+          "language": "en",
+          "value": "Liberians"
+        }
+      ]
+    },
+    {
+      "code": "253",
+      "display": "Lixtenshteynliklar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Лихтенштейнцы"
+        },
+        {
+          "language": "en",
+          "value": "Liechtensteiners"
+        }
+      ]
+    },
+    {
+      "code": "254",
+      "display": "Lyuksemburgliklar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Люксембуржцы"
+        },
+        {
+          "language": "en",
+          "value": "Luxembourgers"
+        }
+      ]
+    },
+    {
+      "code": "255",
+      "display": "Mavrikiyaliklar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Маврикийцы"
+        },
+        {
+          "language": "en",
+          "value": "Mauritians"
+        }
+      ]
+    },
+    {
+      "code": "256",
+      "display": "Malaviliklar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Малавийцы"
+        },
+        {
+          "language": "en",
+          "value": "Malawians"
+        }
+      ]
+    },
+    {
+      "code": "257",
+      "display": "Malagasy",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Малагасийцы"
+        },
+        {
+          "language": "en",
+          "value": "Malagasy"
+        }
+      ]
+    },
+    {
+      "code": "258",
+      "display": "Malaylar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Малайцы"
+        },
+        {
+          "language": "en",
+          "value": "Malays"
+        }
+      ]
+    },
+    {
+      "code": "259",
+      "display": "Maliliklar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Малийцы"
+        },
+        {
+          "language": "en",
+          "value": "Malians"
+        }
+      ]
+    },
+    {
+      "code": "260",
+      "display": "Maldivliklar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Мальдивцы"
+        },
+        {
+          "language": "en",
+          "value": "Maldivians"
+        }
+      ]
+    },
+    {
+      "code": "261",
+      "display": "Manchus",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Маньчжуры"
+        },
+        {
+          "language": "en",
+          "value": "Manchus"
+        }
+      ]
+    },
+    {
+      "code": "262",
+      "display": "Meksikaliklar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Мексиканцы"
+        },
+        {
+          "language": "en",
+          "value": "Mexicans"
+        }
+      ]
+    },
+    {
+      "code": "263",
+      "display": "Mozambikliklar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Мозамбикцы"
+        },
+        {
+          "language": "en",
+          "value": "Mozambicans"
+        }
+      ]
+    },
+    {
+      "code": "264",
+      "display": "Monegask",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Монегаски"
+        },
+        {
+          "language": "en",
+          "value": "Monegasques"
+        }
+      ]
+    },
+    {
+      "code": "265",
+      "display": "Namibiyaliklar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Намибийцы"
+        },
+        {
+          "language": "en",
+          "value": "Namibians"
+        }
+      ]
+    },
+    {
+      "code": "266",
+      "display": "Nepal",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Непальцы"
+        },
+        {
+          "language": "en",
+          "value": "Nepalese"
+        }
+      ]
+    },
+    {
+      "code": "267",
+      "display": "Nigeriyaliklar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Нигерийцы"
+        },
+        {
+          "language": "en",
+          "value": "Nigerians"
+        }
+      ]
+    },
+    {
+      "code": "268",
+      "display": "Nigeriyaliklar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Нигерцы"
+        },
+        {
+          "language": "en",
+          "value": "Nigerians"
+        }
+      ]
+    },
+    {
+      "code": "269",
+      "display": "Nikaragualar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Никарагуанцы"
+        },
+        {
+          "language": "en",
+          "value": "Nicaraguans"
+        }
+      ]
+    },
+    {
+      "code": "270",
+      "display": "Yangi Gvineyaliklar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Новогвинейцы"
+        },
+        {
+          "language": "en",
+          "value": "New Guineans"
+        }
+      ]
+    },
+    {
+      "code": "271",
+      "display": "Yangi Zelandiyaliklar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Новозеландцы"
+        },
+        {
+          "language": "en",
+          "value": "New Zealanders"
+        }
+      ]
+    },
+    {
+      "code": "272",
+      "display": "Norse",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Норвежцы"
+        },
+        {
+          "language": "en",
+          "value": "Norwegians"
+        }
+      ]
+    },
+    {
+      "code": "273",
+      "display": "Panamaliklar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Панамцы"
+        },
+        {
+          "language": "en",
+          "value": "Panamanians"
+        }
+      ]
+    },
+    {
+      "code": "274",
+      "display": "Paragvayliklar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Парагвайцы"
+        },
+        {
+          "language": "en",
+          "value": "Paraguayans"
+        }
+      ]
+    },
+    {
+      "code": "275",
+      "display": "Peruliklar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Перуанцы"
+        },
+        {
+          "language": "en",
+          "value": "Peruvians"
+        }
+      ]
+    },
+    {
+      "code": "276",
+      "display": "Polineziyaliklar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Полинезийцы"
+        },
+        {
+          "language": "en",
+          "value": "Polynesians"
+        }
+      ]
+    },
+    {
+      "code": "277",
+      "display": "Portugal",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Португальцы"
+        },
+        {
+          "language": "en",
+          "value": "Portuguese"
+        }
+      ]
+    },
+    {
+      "code": "278",
+      "display": "Puerto-Rikaliklar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Пуэрториканцы"
+        },
+        {
+          "language": "en",
+          "value": "Puerto Ricans"
+        }
+      ]
+    },
+    {
+      "code": "279",
+      "display": "Ruslar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Россияне"
+        },
+        {
+          "language": "en",
+          "value": "Russians"
+        }
+      ]
+    },
+    {
+      "code": "280",
+      "display": "Ruandaliklar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Руандийцы"
+        },
+        {
+          "language": "en",
+          "value": "Rwandans"
+        }
+      ]
+    },
+    {
+      "code": "281",
+      "display": "Salvadorliklar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Сальвадорцы"
+        },
+        {
+          "language": "en",
+          "value": "Salvadorians"
+        }
+      ]
+    },
+    {
+      "code": "282",
+      "display": "Santomiyaliklar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Сантомийцы"
+        },
+        {
+          "language": "en",
+          "value": "Santomians"
+        }
+      ]
+    },
+    {
+      "code": "283",
+      "display": "Senegallik",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Сенегальцы"
+        },
+        {
+          "language": "en",
+          "value": "Senegalese"
+        }
+      ]
+    },
+    {
+      "code": "284",
+      "display": "Sibo",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Сибо"
+        },
+        {
+          "language": "en",
+          "value": "Sibo"
+        }
+      ]
+    },
+    {
+      "code": "285",
+      "display": "Somali",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Сомалийцы"
+        },
+        {
+          "language": "en",
+          "value": "Somalis"
+        }
+      ]
+    },
+    {
+      "code": "286",
+      "display": "Sudanlik",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Суданцы"
+        },
+        {
+          "language": "en",
+          "value": "Sudanese"
+        }
+      ]
+    },
+    {
+      "code": "287",
+      "display": "Syerra-Leoneliklar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Сьерралеонцы"
+        },
+        {
+          "language": "en",
+          "value": "Sierraleoneans"
+        }
+      ]
+    },
+    {
+      "code": "288",
+      "display": "Taylar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Таиландцы"
+        },
+        {
+          "language": "en",
+          "value": "Thais"
+        }
+      ]
+    },
+    {
+      "code": "289",
+      "display": "Tanzaniyaliklar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Танзанийцы"
+        },
+        {
+          "language": "en",
+          "value": "Tanzanians"
+        }
+      ]
+    },
+    {
+      "code": "290",
+      "display": "Togo",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Тоголезцы"
+        },
+        {
+          "language": "en",
+          "value": "Togolese"
+        }
+      ]
+    },
+    {
+      "code": "291",
+      "display": "Tonganlar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Тонганцы"
+        },
+        {
+          "language": "en",
+          "value": "Tongans"
+        }
+      ]
+    },
+    {
+      "code": "292",
+      "display": "Turklar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Тюрки"
+        },
+        {
+          "language": "en",
+          "value": "Turks"
+        }
+      ]
+    },
+    {
+      "code": "293",
+      "display": "Ugandaliklar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Угандийцы"
+        },
+        {
+          "language": "en",
+          "value": "Ugandans"
+        }
+      ]
+    },
+    {
+      "code": "294",
+      "display": "Urugvayliklar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Уругвайцы"
+        },
+        {
+          "language": "en",
+          "value": "Uruguayans"
+        }
+      ]
+    },
+    {
+      "code": "295",
+      "display": "Filippinliklar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Филиппинцы"
+        },
+        {
+          "language": "en",
+          "value": "Filipinos"
+        }
+      ]
+    },
+    {
+      "code": "296",
+      "display": "Chadliklar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Чадцы"
+        },
+        {
+          "language": "en",
+          "value": "Chadians"
+        }
+      ]
+    },
+    {
+      "code": "297",
+      "display": "Chililiklar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Чилийцы"
+        },
+        {
+          "language": "en",
+          "value": "Chileans"
+        }
+      ]
+    },
+    {
+      "code": "298",
+      "display": "Shvedlar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Шведы"
+        },
+        {
+          "language": "en",
+          "value": "Swedes"
+        }
+      ]
+    },
+    {
+      "code": "299",
+      "display": "Shveytsariyalik",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Швейцарцы"
+        },
+        {
+          "language": "en",
+          "value": "Swiss"
+        }
+      ]
+    },
+    {
+      "code": "300",
+      "display": "Ekvadorliklar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Эквадорцы"
+        },
+        {
+          "language": "en",
+          "value": "Ecuadorians"
+        }
+      ]
+    },
+    {
+      "code": "301",
+      "display": "Ekvatorliklar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Экваторианцы"
+        },
+        {
+          "language": "en",
+          "value": "Equatorians"
+        }
+      ]
+    },
+    {
+      "code": "302",
+      "display": "Eritreyaliklar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Эритрейцы"
+        },
+        {
+          "language": "en",
+          "value": "Eritreans"
+        }
+      ]
+    },
+    {
+      "code": "303",
+      "display": "Efiopiyaliklar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Эфиопы"
+        },
+        {
+          "language": "en",
+          "value": "Ethiopians"
+        }
+      ]
+    },
+    {
+      "code": "304",
+      "display": "Yugoslavlar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Югославы"
+        },
+        {
+          "language": "en",
+          "value": "Yugoslavs"
+        }
+      ]
+    },
+    {
+      "code": "305",
+      "display": "Janubiy Afrikaliklar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Южноафриканцы"
+        },
+        {
+          "language": "en",
+          "value": "South Africans"
+        }
+      ]
+    },
+    {
+      "code": "306",
+      "display": "Yamaykaliklar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Ямайцы"
+        },
+        {
+          "language": "en",
+          "value": "Jamaicans"
+        }
+      ]
+    },
+    {
+      "code": "307",
+      "display": "Boshqa millatlar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Прочие национальности"
+        },
+        {
+          "language": "en",
+          "value": "Others"
+        }
+      ]
+    }
+  ],
+  "version": "1.0.0",
+  "experimental": true,
+  "date": "2025-06-11",
+  "publisher": "Uzinfocom",
+  "language": "uz",
+  "caseSensitive": true,
+  "count": 306
+}

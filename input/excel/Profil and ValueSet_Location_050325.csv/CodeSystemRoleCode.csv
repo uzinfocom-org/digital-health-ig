@@ -1,0 +1,244 @@
+CODE	UZ	RU	EN
+  DADDR	Yetkazib berish manzili	Адрес доставки	Delivery Address
+organ0001.00119	Akusherlik bo'limi	Акушерское отделение	Obstetric department
+  OUTPHARM	Ambulator dorixona	Амбулаторная аптека	outpatient pharmacy
+  OUTLAB	Ambulatoriya laboratoriyasi	Амбулаторная лаборатория	outpatient laboratory
+  OF	ambulatoriya muassasasi	амбулаторное учреждение	Outpatient facility
+  CARD	ambulatoriya tibbiyot muassasalari; klinika/markaz; Reabilitatsiya: Kardiologiya muassasalari	амбулаторные медицинские учреждения; клиника/центр; Реабилитация: Кардиологические учреждения	Ambulatory Health Care Facilities; Clinic/Center; Rehabilitation: Cardiac Facilities
+  PHARM	Dorixona	Аптека	Pharmacy
+organ0001.00126	Bakteriologik laboratoriya	Бактериологическая лаборатория	Bacteriological laboratory
+organ0001.00001	Biopsiya diagnostikasi	Биопсийная диагностика	Biopsy diagnostics
+organ0001.00133	Biokimyoviy laboratoriya	Биохимическая лаборатория	Biochemical laboratory
+  HOSP	Kasalxona	Больница	Hospital
+  GACH	Kasalxonalar; Umumiy shoshilinch tibbiy yordam shifoxonasi	Больницы; Больница общей неотложной помощи	Hospitals; General Acute Care Hospital
+  HLAB	Kasalxona laboratoriyasi	Больничная лаборатория	hospital laboratory
+  HU	Kasalxona bo'limi	Больничное отделение	Hospital unit
+  MHSP	Harbiy kasalxona	Военный госпиталь	Military Hospital
+organ0001.00002	O'smirlik va muddatli harbiy xizmatga chaqirilgan yoshlar kasalliklarini tibbiy ko'rikdan o'tkazish	Врачебная экспертиза заболеваний подросткового возраста и призывной молодежи	Medical examination of diseases of adolescence and conscript youth
+organ0001.00003	Tibbiy va mehnat ekspertizasi	Врачебно-трудовая экспертиза	Medical and labor examination
+  GIDX	Gastroenterologik diagnostika yoki terapevtik laboratoriya	Гастроэнтерологическая диагностическая или терапевтическая лаборатория	Gastroenterology diagnostics or therapeutics lab
+  GI	Gastroenterologiya klinikasi	Гастроэнтерологическая клиника	Gastroenterology clinic
+  HEM	Gematologiya klinikasi	Гематологическая клиника	Hematology clinic
+organ0001.00138	Genetika laboratoriyasi	Генетическая лаборатория	Genetic laboratory
+  GYN	Ginekologik klinika	Гинекологическая клиника	Gynecology clinic
+  HTN	Gipertenziya klinikasi	Гипертоническая клиника	Hypertension clinic
+  DERM	Dermatologiya klinikasi	Дерматологическая клиника	Dermatology clinic
+  PEDGI	Bolalar gastroenterologiya klinikasi	Детская гастроэнтерологическая клиника	Pediatric gastroenterology clinic
+  PEDHEM	Bolalar gematologiya klinikasi	Детская гематологическая клиника	Pediatric hematology clinic
+  CANC	bolalar va o'smirlar nevrologik klinikasi	детская и подростковая неврологическая клиника	Child and adolescent neurology clinic
+  CAPC	bolalar va o'smirlar psixiatriya klinikasi	детская и подростковая психиатрическая клиника	Child and adolescent psychiatry clinic
+  PEDID	Bolalar yuqumli kasalliklar klinikasi	Детская инфекционная клиника	Pediatric infectious disease clinic
+  PEDCARD	Bolalar kardiologiya klinikasi	Детская кардиологическая клиника	Pediatric cardiology clinic
+  PEDE	Bolalar endokrinologiya klinikasi	Детская эндокринологическая клиника	Pediatric endocrinology clinic
+  PEDU	Bolalar bo'limi	Детское отделение	Pediatric unit
+  DX	Diagnostika yoki terapevtik bo'lim	Диагностическое или терапевтическое отделение	Diagnostics or therapeutics unit
+organ0001.00004	Akupunktur	Иглорефлексотерапия	Acupuncture
+organ0001.00135	Immunologik laboratoriya	Иммунологическая лаборатория	Immunological laboratory
+  INFD	Yuqumli kasalliklar klinikasi	Инфекционная клиника	Infectious disease clinic
+  OB	Akusherlik klinikasi	Клиника акушерства	Obstetrics clinic
+  ALL	allergiya klinikasi	клиника аллергии	Allergy clinic
+  INV	Bepushtlik klinikasi	Клиника бесплодия	Infertility clinic
+  PEDNEPH	Bolalar nefrologiyasi klinikasi	Клиника детской нефрологии	Pediatric nephrology clinic
+  PEDHO	Bolalar onkologiyasi klinikasi	Клиника детской онкологии	Pediatric oncology clinic
+  PEDRHEUM	Bolalar revmatologiyasi klinikasi	Клиника детской ревматологии	Pediatric rheumatology clinic
+  COAG	Koagulyatsiya klinikasi	Клиника коагуляции	Coagulation clinic
+  CRS	Kolorektal jarrohlik klinikasi	Клиника колоректальной хирургии	Colon and rectal surgery clinic
+  MGEN	Tibbiy genetika klinikasi	Клиника медицинской генетики	Medical genetics clinic
+  ONCL	Tibbiy onkologiya klinikasi	Клиника медицинской онкологии	Medical oncology clinic
+  BREAST	ko'krak klinikasi	клиника молочной железы	Breast clinic
+  NEUR	Nevrologiya klinikasi	Клиника неврологии	Neurology clinic
+  NEPH	Nefrologiya klinikasi	Клиника нефрологии	Nephrology clinic
+  OPTC	Optometriya klinikasi	Клиника оптометрии	optometry clinic
+  ORTHO	Ortopediya klinikasi	Клиника ортопедии	Orthopedics clinic
+  OPH	Oftalmologiya klinikasi	Клиника офтальмологии	Opthalmology clinic
+  PEDC	Pediatriya klinikasi	Клиника педиатрии	Pediatrics clinic
+  PC	Birlamchi tibbiy yordam klinikasi	Клиника первичной медико-санитарной помощи	Primary care clinic
+  PLS	Plastik jarrohlik klinikasi	Клиника пластической хирургии	Plastic surgery clinic
+  PROCTO	Proktologiya klinikasi	Клиника проктологии	Proctology clinic
+  PROS	Protezlar klinikasi	Клиника протезирования	Prosthodontics clinic
+  PREV	Tibbiyot profilaktikasi klinikasi	Клиника профилактической медицины	Preventive medicine clinic
+  PSY	Psixiatriya klinikasi	Клиника психиатрии	Psychiatry clinic
+  PSI	Psixologiya klinikasi	Клиника психологии	Psychology clinic
+  RHEUM	Revmatologiya klinikasi	Клиника ревматологии	Rheumatology clinic
+  SPMED	Sport tibbiyoti klinikasi	Клиника спортивной медицины	Sports medicine clinic
+  TR	Transplantatsiya klinikasi	Клиника трансплантации	Transplant clinic
+  BMTC	suyak iligi transplantatsiyasi klinikasi	клиника трансплантации костного мозга	Bone marrow transplant clinic
+  URO	Urologiya klinikasi	Клиника урологии	Urology clinic
+  SU	Jarrohlik klinikasi	Клиника хирургии	Surgery clinic
+  OMS	Maksillofasiyal jarrohlik klinikasi	Клиника челюстно-лицевой хирургии	Oral and maxillofacial surgery clinic
+organ0001.00132	Klinik diagnostika laboratoriyasi	Клинико-диагностическая лаборатория	Clinical diagnostic laboratory
+organ0001.00005	Klinik farmakologiya	Клиническая фармакология	Clinical pharmacology
+  CATH	Yurak kateterizatsiyasi laboratoriyasi	Лаборатория катетеризации сердца	Cardiac catheterization lab
+organ0001.00006	Fizioterapiya	Лечебная физкультура	Physiotherapy
+organ0001.00007	Manuel terapiya	Мануальная терапия	Manual therapy
+organ0001.00008	Tibbiy genetika	Медицинская генетика	Medical genetics
+  MBL	Tibbiy laboratoriya	Медицинская лаборатория	medical laboratory
+organ0001.00009	Tibbiy psixologiya	Медицинская психология	Medical Psychology
+  PTRES	Bemorning yashash joyi	Место жительства пациента	Patient's Residence
+  HUSCS	Namuna yig'ish joyi	Место забора образцов	specimen collection site
+  ACC	Voqea joyi	Место происшествия	accident site
+organ0001.00134	Mikrobiologik laboratoriya	Микробиологическая лаборатория	Microbiological laboratory
+  MOBL	Mobil qurilma	Мобильное подразделение	Mobile Unit
+organ0001.00139	Molekulyar biologiya laboratoriyasi	Молекулярно-биологическая лаборатория	Molecular biological laboratory
+  RNEU	Neyroradiologiya bo'limi	Нейрорадиологическое отделение	Neuroradiology unit
+organ0001.00010	Umumiy jarrohlik	Общая хирургия	General Surgery
+organ0001.00011	Operativ va diagnostik laparoskopiya	Оперативно-диагностическая лапороскопия	Operative and Diagnostic Laparoscopy
+organ0001.00107	Ortodontiya	Ортодонтия	Orthodontics
+organ0001.00012	Qorin bo'shlig'i onkoxirurgiyasi bo'limi	Отделение абдоминальной онкохирургии	Department of Abdominal Oncosurgery
+organ0001.00013	Qorin bo'shlig'i jarrohligi bo'limi	Отделение абдоминальной хирургии	Department of Abdominal Surgery
+organ0001.00014	Allergologiya va immunologiya bo'limi	Отделение аллергологии и иммунологии	Department of Allergology and Immunology
+organ0001.00015	Andrologiya va seksopatologiya bo'limi	Отделение андрологии и сексопатологии	Department of Andrology and Sexopathology
+organ0001.00016	Anesteziologiya va reanimatsiya bo'limi	Отделение анестезиологии и реаниматологии	Department of Anesthesiology and Resuscitation
+organ0001.00123	Anesteziologiya va neonatal reanimatsiya bo'limi	Отделение анестезиологии и реанимации новорожденных	Department of anesthesiology and resuscitation of newborns
+organ0001.00017	Vertebrologiya bo'limi	Отделение Вертебрологии	Department of Vertebrology
+organ0001.00144	Virusologiya bo'limi	Отделение вирусологии	Department of virology
+organ0001.00120	Erta tug'ilgan chaqaloqlarni parvarish qilish bo'limi	Отделение выхаживания недонощенных новорожденных	Department of nursing premature newborns
+organ0001.00018	Gastroenterologiya bo'limi	Отделение гастроэнтерологии	Department of Gastroenterology
+organ0001.00019	Gematologiya bo'limi	Отделение гематологии	Department of Hematology
+  HD	Gemodializ bo'limi	Отделение гемодиализа	Hemodialysis unit
+organ0001.00020	Geriatriya bo'limi	Отделение гериатрии	Department of Geriatrics
+organ0001.00143	Ginekologiya bo'limi	Отделение гинекологии	Department of gynecology
+organ0001.00021	Yiringli jarrohlik bo'limi	Отделение гнойной хирургии	Purulent Surgery Department
+  CHEST	Ko'krak qismi	Отделение грудной клетки	Chest unit
+organ0001.00022	Dermatovenerologiya bo'limi	Отделение дерматовенерологии	Dermatovenereology Department
+organ0001.00023	Bolalar va o'smirlar ginekologiyasi bo'limi	Отделение детская и подростковой гинекологии	Children's and Adolescent Gynecology Department
+organ0001.00024	Bolalar yuqumli kasalliklari bo'limi	Отделение детских инфекционных болезней	Children's Infectious Diseases Department
+organ0001.00025	Bolalar allergologiyasi bo'limi	Отделение детской аллергологии	Children's Allergology Department
+organ0001.00026	Bolalar anesteziologiyasi va reanimatsiyasi bo'limi	Отделение детской анестезиологии и реаниматологии	Children's Anesthesiology and Resuscitation Department
+organ0001.00027	Bolalar gastroenterologiyasi bo'limi	Отделение детской гастроэнтерологии	Children's Gastroenterology Department
+organ0001.00028	Bolalar va o'smirlar ginekologiyasi bo'limi	Отделение детской и подростковой гинекологии	Children's and Adolescent Gynecology Department
+organ0001.00029	Bolalar va o'smirlar psixiatriyasi bo'limi	Отделение детской и подростковой психиатрии	Children's and Adolescent Psychiatry Department
+  PEDICU	Bolalar intensiv terapiya bo'limi	Отделение детской интенсивной терапии	Pediatric intensive care unit
+organ0001.00030	Bolalar kardiologiyasi va revmatologiya bo'limi	Отделение детской кардиологии и ревматологии	Children's Cardiology and Rheumatology Department
+organ0001.00031	Bolalar kardiojarrohligi bo'limi	Отделение детской кардиохирургии	Children's Cardiac Surgery Department
+organ0001.00032	Bolalar nevrologiyasi bo'limi	Отделение детской неврология	Children's Neurology Department
+organ0001.00033	Bolalar nefrologiyasi bo'limi	Отделение детской нефрологии	Children's Nephrology Department
+organ0001.00034	Bolalar onkologiyasi bo'limi (kimyoterapiya)	Отделение детской онкологии (химиотерапия)	Children's Oncology (Chemotherapy) Department
+organ0001.00035	Bolalar onkoxirurgiyasi bo'limi	Отделение детской онкохирургии	Children's Oncosurgery Department
+organ0001.00036	Bolalar oftalmologiyasi bo'limi	Отделение детской офтальмологии	Children's Ophthalmology Department
+organ0001.00037	Bolalar pulmonologiyasi bo'limi	Отделение детской пульмонологии	Children's Pulmonology Department
+organ0001.00038	Bolalar stomatologiyasi bo'limi	Отделение детской стоматологической хирургии	Children's Dental Surgery Department
+organ0001.00039	Bolalar terapevtik stomatologiya bo'limi	Отделение детской терапевтической стоматологии	Department of pediatric therapeutic dentistry
+organ0001.00040	Bolalar urologiyasi bo'limi	Отделение детской урологии	Department of pediatric urology
+organ0001.00041	Bolalar ftiziatriya bo'limi	Отделение детской фтизиатрии	Department of pediatric phthisiology
+organ0001.00042	Bolalar xirurgiyasi bo'limi	Отделение детской хирургии	Department of pediatric surgery
+organ0001.00043	Bolalar endokrinologiyasi bo'limi	Отделение детской эндокринологии	Department of pediatric endocrinology
+organ0001.00130	Kunduzgi shifoxona bo'limi	Отделение дневного стационара	Day hospital department
+organ0001.00099	Immunohistokimyoviy diagnostika bo'limi	Отделение иммуногистохимической диагностики	Department of immunohistochemical diagnostics
+  ICU	Reanimatsiya bo'limi	Отделение интенсивной терапии	Intensive care unit
+organ0001.00044	Reanimatsiya bo'limi	Отделение интенсивной терапии 	Department of intensive care
+  PEDNICU	Neonatal intensiv terapiya bo'limi	Отделение интенсивной терапии новорожденных	Pediatric neonatal intensive care unit
+organ0001.00045	Interventsion kardiologiya bo'limi (angiokardiografiya va interventsion muolajalar)	Отделение интервенционной кардиологии (ангиокардиография и интервенционные вмешательства)	Department of interventional cardiology (angiocardiography and interventional procedures)
+organ0001.00046	Interventsion radiologiya bo'limi	Отделение интервенционной радиологии	Department of interventional radiology
+organ0001.00047	Yuqumli kasalliklar bo'limi	Отделение инфекционных болезней	Department of infectious diseases
+organ0001.00048	Kardiojarrohlik bo'limi	Отделение кардиохирургии 	Department of cardiac surgery
+organ0001.00049	Klinik patofizyologiya bo'limi	Отделение клинической патофизиологии	Department of clinical pathophysiology
+organ0001.00050	Proktologiya bo'limi	Отделение колопроктологии	Department of proctology
+organ0001.00051	Kompyuter tomografiyasi bo'limi	Отделение компьютерной томографии	Department of computed tomography
+  CCU	Koronar terapiya bo'limi	Отделение коронарной терапии	Coronary care unit
+organ0001.00052	Radiatsiya terapiyasi bo'limi	Отделение лучевой терапии	Department of radiation therapy
+organ0001.00053	Magnit-rezonans tomografiya bo'limi	Отделение магнитно-резонаненой томографии	Department of magnetic resonance imaging
+organ0001.00054	Mammologiya bo'limi	Отделение маммология	Mammology Department
+organ0001.00055	Mikrojarrohlik bo'limi	Отделение микрохирургии 	Microsurgery Department
+organ0001.00056	Ko'z mikroxirurgiyasi bo'limi	Отделение микрохирургии глаза	Eye Microsurgery Department
+organ0001.00141	Narkologiya bo'limi	Отделение наркологии	Department of narcology
+organ0001.00057	Nevrologiya bo'limi	Отделение неврологии	Neurology Department
+  NCCS	Nevrologik intensiv terapiya va insult bo'limi	Отделение неврологической интенсивной терапии и инсульта	Neurology critical care and stroke unit
+organ0001.00058	Neyro-oftalmologiya bo'limi	Отделение нейроофтальмологии	Neuro-ophthalmology Department
+organ0001.00059	Neyrofiziologiya bo'limi	Отделение нейрофизиологии	Neurophysiology Department
+  NS	Neyroxirurgiya kafedrasi	Отделение нейрохирургии	Neurosurgery unit
+organ0001.00060	Neonatal jarrohlik bo'limi	Отделение неонатальной хирургии	Neonatology Department
+organ0001.00124	Neonatal jarrohlik bo'limi	Отделение неонатальной хирургии	Department of neonatal surgery
+organ0001.00061	Neonatologiya bo'limi	Отделение неонатологии	Emergency Cardiology and Cardiac Intensive Care Department
+organ0001.00062	Shoshilinch kardiologiya va yurak reanimatsiyasi bo'limi	Отделение неотложной кардиологии и кардиореанимации	Nephrology Department
+  ER	Favqulodda vaziyatlar bo'limi	Отделение неотложной помощи	Emergency room
+  ETU	Travmatik shoshilinch yordam bo'limi	Отделение неотложной помощи при травмах	Emergency trauma unit
+organ0001.00063	Nefrologiya bo'limi	Отделение нефрологии	General Oncology Department
+organ0001.00121	Neonatal bo'lim	Отделение новорожденных	Department of newborns
+organ0001.00064	Umumiy onkologiya bo'limi	Отделение общей онкологии	Oncogynecology Department
+organ0001.00065	Onkoginekologiya bo'limi	Отделение онкогинекологии	Oncocoloproctology Department
+organ0001.00066	Onkokoloproktologiya bo'limi	Отделение онкоколопроктологии	Onco-ophthalmology Department
+organ0001.00067	Onko-oftalmologiya bo'limi	Отделение онкоофтальмологии	Oncourology Department
+organ0001.00068	Onkurologiya bo'limi	Отделение онкоурологии	Oncourology Department
+organ0001.00069	Bosh va bo'yin o'smalari bo'limi	Отделение опухоли головы и шеи	Head and Neck Tumor Department
+organ0001.00070	Tayanch-harakat tizimi o'smalari bo'limi	Отделение опухоли опорно-двигательного аппарата	Musculoskeletal Tumor Department
+organ0001.00071	Ortopediya bo'limi	Отделение ортопедии	Orthopedics Department
+organ0001.00072	Otorinolaringologiya bo'limi	Отделение оториноларингологии	Otorhinolaryngology Department
+organ0001.00073	Oftalmologiya bo'limi	Отделение офтальмология	Ophthalmology Department
+organ0001.00117	Homiladorlik patologiyasi bo'limi	Отделение патологии беременности	Department of pregnancy pathology
+organ0001.00074	Patologik anatomiya bo'limi	Отделение патологической анатомии	Department of Pathological Anatomy
+organ0001.00075	Pediatriya bo'limi	Отделение педиатрии	Department of Pediatrics
+organ0001.00076	Plastik jarrohlik bo'limi	Отделение пластической хирургии	Department of Plastic Surgery
+organ0001.00131	Pozitron emissiya tomografiyasi bo'limi	Отделение позитронно-эмиссионной томографии	Department of positron emission tomography
+organ0001.00128	Eritmalarni tayyorlash bo'limi	Отделение приготовления растворов	Department of solution preparation
+  PHU	Psixiatriya shifoxonasi bo'limi	Отделение психиатрической больницы	Psychiatric hospital unit
+  PSYCHF_1	Psixoterapiya bo'limi	Отделение психотерапии	Department of Psychotherapy
+organ0001.00077	Pulmonologiya bo'limi	Отделение пульмонологии	Department of Pulmonology
+  RADO	Radiatsion onkologiya kafedrasi	Отделение радиационной онкологии	Radiation oncology unit
+  HRAD	Radiologiya bo'limi	Отделение радиологии	radiology unit
+organ0001.00140	Radionuklid diagnostikasi bo'limi	Отделение радионуклидной диагностики	Department of radionuclide diagnostics
+  SLEEP	Uyqu buzilishi bo'limi	Отделение расстройств сна	Sleep disorders unit
+  RHU	Reabilitatsiya bo'limi	Отделение реабилитации 	Rehabilitation hospital unit
+organ0001.00078	Revmatologiya bo'limi	Отделение ревматологии	Department of Rheumatology
+organ0001.00079	Radiologiya bo'limi	Отделение рентгенологии	Department of Radiology
+organ0001.00080	Qon tomir jarrohligi bo'limi	Отделение сосудистой хирургии	Department of Vascular Surgery
+organ0001.00081	Orqa miya neyroxirurgiyasi bo'limi	Отделение спинальной нейрохирургии	Department of Spinal Neurosurgery
+organ0001.00142	Terapiya bo'limi	Отделение терапии	Department of therapy
+organ0001.00082	Toksikologiya bo'limi	Отделение токсикологии	Department of Toxicology
+organ0001.00083	Torakal onkojarrohlik bo'limi	Отделение торакальной онкохирургии	Department of Thoracic Oncosurgery
+organ0001.00084	Torakal jarrohlik bo'limi	Отделение торакальной хирургии	Department of Thoracic Surgery
+organ0001.00085	Travmatologiya bo'limi	Отделение травматология	Department of Traumatology
+  BMTU	Suyak iligi transplantatsiyasi bo'limi	Отделение трансплантации костного мозга	Bone marrow transplant unit
+organ0001.00086	Transplantologiya bo'limi	Отделение трансплантологии	Department of Transplantology
+organ0001.00087	Transfuziologiya bo'limi	Отделение трансфузиологии	Department of Transfusiology
+organ0001.00088	Urologiya bo'limi	Отделение урологии	Department of Urology
+organ0001.00089	Ftiziatriya bo'limi	Отделение фтизиатрии	Department of Phthisiology
+organ0001.00090	Skelet sistemasining ftiziatriya bo'limi	Отделение фтизиатрии костной системы	Department of phthisiology of the skeletal system
+organ0001.00091	Ftizioginekologiya bo'limi	Отделение фтизиогинекологии	Department of phthisiogynecology
+organ0001.00092	Ftizioftalmologiya bo'limi	Отделение фтизиоофтальмологии	Department of phthisiophthalmology
+organ0001.00093	Ftiziurologiya bo'limi	Отделение фтизиоурологии	Department of phthisiourology
+organ0001.00094	Ftiziojarrohlik bo'limi	Отделение фтизиохирургии 	Department of phthisiosurgery
+organ0001.00095	Funktsional diagnostika bo'limi	Отделение функциональной диагностики	Department of functional diagnostics
+organ0001.00096	Kimyoterapiya bo'limi	Отделение химиотерапия	Department of chemotherapy
+organ0001.00097	Jarrohlik bo'limi	Отделение хирургия	Department of surgery
+organ0001.00125	Markazlashtirilgan sterilizatsiya bo'limi	Отделение централизованной стерилизации	Department of centralized sterilization
+organ0001.00098	Sitologik diagnostika bo'limi	Отделение цитологической диагностики	Department of cytological diagnostics
+organ0001.00100	Maksillofasiyal jarrohlik bo'limi	Отделение челюстно-лицевой хирургии	Department of maxillofacial surgery
+organ0001.00101	Favqulodda kardiologiya bo'limi	Отделение экстренной кардиологии	Department of emergency cardiology
+organ0001.00102	Favqulodda vaziyatlar bo'limi	Отделение экстренной терапии	Department of emergency therapy
+organ0001.00103	Favqulodda jarrohlik bo'limi	Отделение экстренной хирургии	Department of emergency surgery
+organ0001.00104	Endovaskulyar neyroxirurgiya bo'limi	Отделение эндоваекулярной нейрохирургии	Department of endovascular neurosurgery
+organ0001.00105	Endokrinologiya bo'limi	Отделение эндокринологии	Department of endocrinology
+organ0001.00106	Endourologiya bo'limi	Отделение эндоурологии	Department of endourology
+  EPIL	Epilepsiya bo'limi	Отделение эпилепсии	Epilepsy unit
+  PROFF	Xizmat ko'rsatuvchi provayder idorasi	Офис поставщика услуг	Provider's Office
+organ0001.00108	Periodontologiya	Пародонтология	Periodontology
+organ0001.00136	Patomorfologik laboratoriya	Патоморфологическая лаборатория	Pathomorphological laboratory
+organ0001.00129	Ambulatoriya bo'limi	Поликлиническое отделение	Outpatient department
+organ0001.00127	Kir yuvish bo'limi	Прачечное отделение	Laundry department
+organ0001.00122	Qabul bo'limi	Приемное отделение	Admission department
+  PSYCHF	Psixiatriya bo'limi	Психиатрическое отделение	Psychatric Care Facility
+  WORK	Ish joyi	Рабочее место	work site
+  SURF	Giyohvand moddalarni suiiste'mol qilishni reabilitatsiya qilish	Реабилитация от употребления психоактивных веществ 	Substance use rehabilitation facility
+  RADDX	Rentgen diagnostikasi yoki terapevtik bo'limi	Рентгенологическое диагностическое или терапевтическое отделение	Radiology diagnostics or therapeutics unit
+organ0001.00109	Reproduktologiya	Репродуктология	Reproductive medicine
+organ0001.00118	Tug'ruqxona	Родильное отделение	Maternity department
+  FMC	Oilaviy tibbiy poliklinika	Семейная медицинская клиника	Family medicine clinic
+  CVDX	Yurak-qon tomir diagnostikasi yoki terapevtik bo'limi	Сердечно-сосудистое диагностическое или терапевтическое отделение	Cardiovascular diagnostics or therapeutics unit
+  AMB	Tez yordam mashinasi	Скорая помощь	Ambulance
+organ0001.00110	Sport tibbiyoti	Спортивная медицина	Sports medicine
+  INPHARM	Statsionar dorixona	Стационарная аптека	inpatient pharmacy
+  INLAB	Statsionar laboratoriya	Стационарная лаборатория	inpatient laboratory
+organ0001.00110	Tish jarrohlik	Стоматологическая хирургия	Dental surgery
+organ0001.00111	Stomatologiya	Стоматология	Dentistry
+organ0001.00112	Umumiy stomatologiya	Стоматология общая	General dentistry
+organ0001.00113	Sud-psixiatriya ekspertizasi	Судебно-психиатрическая экспертиза	Forensic psychiatric examination
+organ0001.00114	O'z joniga qasd qilish	Суицидология	Suicidology
+organ0001.00115	Ultratovush diagnostikasi	Ультразвуковая диагноетика	Ultrasound diagnostics
+organ0001.00116	Fizioterapiya	Физиотерапия 	Physiotherapy
+  RHAT	giyohvandlikni davolash markazi	центр лечения наркомании	addiction treatment center
+organ0001.00137	Sitologiya laboratoriyasi	Цитологическая лаборатория	Cytological laboratory
+  SCHOOL	Maktab	Школа	school
+  ENDO	Endokrinologiya klinikasi	Эндокринологическая клиника	Endocrinology clinic
+  ENDOS	Endoskopiya laboratoriyasi	Эндоскопическая лаборатория	Endoscopy lab
+  ECHO	Ekokardiyografiya laboratoriyasi	Эхокардиографическая лаборатория	Echocardiography lab

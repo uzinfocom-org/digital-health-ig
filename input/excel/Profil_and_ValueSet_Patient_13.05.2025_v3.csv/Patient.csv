@@ -1,0 +1,98 @@
+Name				Flags		Cardinality	Example	Example	Document	Type	Description & Constraints		ValueSets			
+Patient				N						DomainResource			System	CodeSystem	Code	Display
+identifier: national id				Σ S	  D	0..1				Identifier	Идентификатор		 https://terminology.medcore.uz/ValueSet/identifier-use-vs	CodeSystemIdentifierUse	все коды	Определяет цель этого идентификатора
+	use			"	?! Σ S"	  D	0..1	usual	official	HL7.v5	code	"Определяет цель этого идентификатора
+Binding: https://terminology.medcore.uz/ValueSet/identifier-use-vs (required)"		https://terminology.medcore.uz/ValueSet/IdentifierType	CodeSystemIdentifierType	NI, PPN, BCT, DL, DP, HC, MI, PCN	Тип идентификатора, удостоверяющего личность
+	type			Σ S	  D	1..*	NI	DL	HL7.v5	CodeableConcept	"Код типа идентификатора, удостоверяющего личность
+Binding: https://terminology.medcore.uz/ValueSet/identifier-type-vs (required)"		 https://terminology.medcore.uz/ValueSet/nationality	CodeSystemNationality	1--307	Код национальности пациента
+		coding			  D	1..*				coding			https://terminology.medcore.uz/ValueSet/citizenship	 CodeSystemCountries	все имеющиеся коды	Код гражданства пациента
+			 system	Σ S	  D	1..1				uri			https://terminology.medcore.uz/ValueSet/education	CodeSystemeducation	regis0005.00001--regis0005.00010	Код образования пациента
+			code		  D	1..1				code			https://terminology.medcore.uz/ValueSet/profession	CodeSystemPositionAndProfession	1111.1--9623.6	Код профессии пациента
+			display		  D	1..1				string			 https://terminology.medcore.uz/ValueSet/benefits	CodeSystembenefits	regis0004.00001--regis0004.00019	Код  льготной категории пациента
+	system			Σ S	  D	1..1				uri	Required Pattern: https://dpm.uz/ (ГЦП)		https://terminology.medcore.uz/ValueSet/socialstatus	CodeSystemsocialstatus 	regis0010.00001--regis0010.00008	Код социального статуса пациента
+	value			Σ S	  D	1..1	30211975910033	AG1141110		string			https://terminology.medcore.uz/ValueSet/disability	CodeSystemdisability	regis0011.00001--regis0011.00004	Код категории инвалидности пациента
+nationality(extension)					  D	0..1				Extension	Национальность пациента		http://hl7.org/fhir/ValueSet/administrative-gender	CodeSystemAdministrativeGender	male, female, unknown, other	Пол пациента, используемый в административных целях
+	code			Σ S	  D	0..1	23	32	cs.egov	CodeableConcept	"Код, представляющий национальность пациента.
+Extension: http://hl7.org/fhir/StructureDefinition/patient-nationality (required)
+Binding:  https://terminology.medcore.uz/ValueSet/nationality (required)"		https://terminology.medcore.uz/ValueSet/gender-other-vs	CodeSystemGenderOther	regis0007.00004, regis0007.00005	"Дифференциация административного пола ""другой"" "
+	period			Σ S	  D	0..1	01-27-94	10-16-01		period	Период, в течение которого действует национальность		https://terminology.medcore.uz/ValueSet/AddressUse	CodeSystemaddressUse	home, temp	Тип адреса
+citizenship(extension)					  D	0..1				Extension	Гражданство пациента		https://terminology.medcore.uz/ValueSet/AddressType	CodeSystemaddresstype	postal, physical, both	Тип возможных адресов
+	code			Σ S	  D	0..1	860	860	cs.egov	CodeableConcept	"Национальный код, обозначающий гражданство пациента
+Extension: http://hl7.org/fhir/StructureDefinition/patient-citizenship (required)
+Binding: https://terminology.medcore.uz/ValueSet/citizenship (required)"		https://terminology.medcore.uz/ValueSet/countries	CodeSystemCountries ISO3166_2	все имеющиеся коды, кроме кода stateless	Страна 
+	period			Σ S	  D	1..1	01-27-94	10-16-01		period	Период, в течение которого действовало гражданство		https://terminology.medcore.uz/ValueSet/region_ district	CodeSystemСОАТО	все имеющиеся коды	Область/район
+education(extension)					  D	0..*				Extension	Образование пациента		https://terminology.medcore.uz/ValueSet/city	CodeSystemСОАТО	все имеющиеся коды	Город
+	url				  D	0..1				uri	Binding: https://terminology.medcore.uz/ValueSet/education (required)		https://terminology.medcore.uz/ValueSet/maritalStatus	CodeSystemmaritalStatus	M, W, D, U, T, UNK	Семейное положение
+	value[x]			Σ S	  D	0..*	regis0005.00004	regis0005.00008	Local (new)	CodeableConcept	Код образования пациента					
+profession(extension)					  D	0..*				Extension	Профессия пациента					
+	url				  D	0..1				uri	Binding: https://terminology.medcore.uz/ValueSet/profession (required)					
+	value[x]			Σ S	  D	0..*	1321.20	2351.32	cs.egov	CodeableConcept	Код профессии пациента					
+benefits(extension)					  D	0..*				Extension	Льготная категория					
+	url				  D	1..1				uri	Binding: https://terminology.medcore.uz/ValueSet/benefits (required)					
+	value[x]			Σ S	  D	0..*	regis0004.00002	regis0004.00011	Local (new)	CodeableConcept	Код  льготной категории пациента					
+socialstatus(extension)					  D	0..*				Extension	Социальный статус					
+	url				  D	1..1				uri	Binding: https://terminology.medcore.uz/ValueSet/socialstatus (required)					
+	value[x]			Σ S	  D	0..*	regis0010.00003	regis0010.00003	Local (new)	CodeableConcept	Код социального статуса пациента					
+disability(extension)					  D	0..*				Extension	Инвалидность пациента					
+	url				  D	1..1				uri	Binding: http://hl7.org/fhir/StructureDefinition/patient-disability (required)					
+	value[x]			Σ S	  D	0..*	regis0011.00001		Local (new)	CodeableConcept	Код категории инвалидности пациента					
+active				Σ S	  D	0..1	true	false		"	boolean"	Запись о пациенте активна или нет					
+name					  D					HumanName						
+	use			"	?! Σ S"	  D	0..1	usual	anonymous	HL7.v5	code	"Определяет вид имени пациента
+Binding: http://hl7.org/fhir/name-use (required)"					
+	text			Σ S	  D	0..1	Усманов Салим Салиевич	Давыдов Давид		string	Текстовое представление полного имени пациента					
+	family			Σ S	  D	0..1	Усманов			string	Фамилия					
+	given			Σ S	  D	0..1	Салим			string	Имя					
+	suffix			Σ S	  D	0..1	Салиевич			string	Отчество					
+	period			Σ S	  D	0..1	01-27-94	02-11-12		Period	Период, в течение которого использовалось это имя					
+telecom				Σ S	  D	0..*				ContactPoint						
+	system			Σ S	  D	0..1	phone	sms	HL7.v5	code	"Определяет способ связи (телефон, факс, смс…)
+Binding: http://hl7.org/fhir/contact-point-system (required)"					
+	use			"	?! Σ S"	  D	0..1	mobile	temp	HL7.v5	code	"Определяет вид связи (домашний, рабочий, мобильный…)
+Binding: http://hl7.org/fhir/contact-point-use (required)"					
+	rank			Σ S	  D	0..1	1	1		positiveInt	Предпочтительный порядок использования					
+	period			Σ S	  D	0..1	05-13-21	02-10-24		Period	Период использования					
+gender				Σ S	  D	0..1	male			code	"Пол пациента, используемый в административных целях
+Binding: http://hl7.org/fhir/ValueSet/administrative-gender"					
+	extension:gender-other			Σ S	  D	0..1		regis0007.00005		coding	"Дифференциация административного пола ""другой"" 
+Binding: https://terminology.medcore.uz/ValueSet/gender-other-vs"					
+birthDate				Σ S	  D	0..1	01-27-94	10-16-01		date	Дата рождения					
+deceased[x]				Σ	  D						Указывает, жив или мертв пациент					
+	deceasedBoolean			Σ S	  D					boolean						
+	deceasedDateTime			Σ S	  D					dateTime	Указывает дату и время смерти					
+address				Σ	  D	0..*				Address						
+	use			"	?! Σ S"	  D	0..1	home	temp	HL7.v5	code	"Тип адреса домашний | временный
+Binding: https://terminology.medcore.uz/ValueSet/address-use-vs"					
+	type			Σ S	  D	0..1	postal	physical	HL7.v5	code	"Типы возможных адресов почтовый | физический | оба
+Binding: https://terminology.medcore.uz/ValueSet/address-type-vs"					
+	line			Σ S	  D	0..1	ул.Муминова 4	2 квартал 13 дом 12 квартира	ГЦП	string	Текстовая часть адреса, предоставляемая ГЦП. Название махалли, улицы,  номер дома, номер квартиры					
+	country			Σ S	  D	0..1	860	860	cs.egov	string	"Код страны, 
+для кодов использовать https://terminology.medcore.uz/ValueSet/countries"					
+	district			Σ S	  D	0..1	1706403	1726280	СОАТО	string	"Код области/района, 
+для кодов использовать https://terminology.medcore.uz/ValueSet/region_ district"					
+	city			Σ S	  D	0..1	1706401	1726	СОАТО	string	"Код города, 
+для кодов использовать https://terminology.medcore.uz/ValueSet/city"					
+	period			Σ S	  D	0..1	04-06-99	10-16-01		Period	Период времени, когда адрес использовался/используется					
+maritalStatus				Σ S	  D	0..1	W	M	HL7.v5	CodeableConcept	"Семейное (гражданское) положение пациента
+Binding: https://terminology.medcore.uz/ValueSet/maritalStatus (required)"					
+multipleBirth[x]					  D											
+	multipleBirthBoolean			Σ S	  D		false	true		boolean	Указывает, был ли пациент рожден в результате многоплодных родов					
+	multipleBirthInteger			Σ S	  D			2		integer	Указывает количество детей при многоплодии					
+photo					  D					Attachment	Фото пациента					
+	url			Σ S	  D	0..1				url	Адрес (Uri), где хранится фото					
+	size			Σ S	  D	0..1				"	integer64"	Размер фото в байтах					
+contact				С	  D	0..*				"BackboneElement	"	"	Контактная сторона (например, опекун, партнер, друг) пациента"					
+	relationship			Σ S	  D	0..*	N	C	HL7.v5	CodeableConcept	"Тип отношений (кем приходится контактное лицо)
+http://terminology.hl7.org/CodeSystem/v2-0131"					
+	name			Σ S	  D	0..1	Ваисов Раис	Саидов Саид		HumanName	ФИО контактного лица					
+	telecom			Σ S	  D	0..*				ContactPoint	Контактные данные 					
+	address			Σ S	  D	0..1				Address	Адрес контактного лица					
+	gender			Σ S	  D	0..1	male	male		code	Пол контактного лица					
+	organization				  D	0..1				Reference(Organization)	Организация, которую представляет контактное лицо					
+generalPractitioner					  D	0..*				Reference(Practitioner)	Семейный врач					
+managingOrganization				Σ	  D	0..1				Reference(Organization)	Поликлиника прикрепления пациента					
+link				Σ	  D	0..*				BackboneElement	Ссылка на ресурс Patient или RelatedPerson, который касается того же конкретного человека					
+	other			Σ	  D	1..1				"Reference(Patient
+| Related Person)"	Другой ресурс пациента или связанного с ним лица, на который ссылается ссылка					
+	type			Σ S	  D	1..1	replaces	refer	HL7.v5	code	"Тип использования ресурса пациента
+Binding: http://hl7.org/fhir/link-type"					

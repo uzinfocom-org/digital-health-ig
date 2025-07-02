@@ -1,0 +1,8 @@
+CODE	UZ	RU	EN
+110122	Foydalanuvchiga kirishga urinish	Попытка входа пользователя в систему	User login has been attempted.
+110123	Foydalanuvchini tizimdan chiqishga urinish	Попытка выхода пользователя из системы	User logout has been attempted
+read	O'qish	Чтение 	Read
+update	Yangilash	Обновление	Update
+create	Yaratilish	Создание	Create
+delete	Olib tashlash	Удаление	Delete
+search	Qidiruv	Поиск	Search

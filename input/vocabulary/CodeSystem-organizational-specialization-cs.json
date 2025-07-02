@@ -1,0 +1,1110 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "active",
+  "content": "complete",
+  "name": "OrganizationalSpecializationCS",
+  "id": "organizational-specialization-cs",
+  "title": "Organizational specialization",
+  "description": "Determines the specialization of a medical organization",
+  "url": "https://terminology.medcore.uz/CodeSystem/organizational-specialization-cs",
+  "concept": [
+    {
+      "code": "101",
+      "display": "Terapiya",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Терапия"
+        },
+        {
+          "language": "en",
+          "value": "Therapy"
+        }
+      ]
+    },
+    {
+      "code": "102.0",
+      "display": "Kardiologiya",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Кардиология"
+        },
+        {
+          "language": "en",
+          "value": "Cardiology"
+        }
+      ]
+    },
+    {
+      "code": "103.0",
+      "display": "Bolalar kardiorevmatologiyasi",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Детская кардиоревматология"
+        },
+        {
+          "language": "en",
+          "value": "Pediatric Cardiac Rheumatology"
+        }
+      ]
+    },
+    {
+      "code": "104.0",
+      "display": "Kattalar gastroenterologiyasi",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Взрослая гастроэнтерология"
+        },
+        {
+          "language": "en",
+          "value": "Adult Gastroenterology"
+        }
+      ]
+    },
+    {
+      "code": "105.0",
+      "display": "Bolalar gastroenterologiyasi",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Детская гастроэнтерология"
+        },
+        {
+          "language": "en",
+          "value": "Pediatric Gastroenterology"
+        }
+      ]
+    },
+    {
+      "code": "106.0",
+      "display": "Kattalar allergologiyasi",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Аллергология для взрослых"
+        },
+        {
+          "language": "en",
+          "value": "Adult Allergology"
+        }
+      ]
+    },
+    {
+      "code": "107.0",
+      "display": "Bolalar allergologiyasi",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Детская аллергология"
+        },
+        {
+          "language": "en",
+          "value": "Pediatric Allergology"
+        }
+      ]
+    },
+    {
+      "code": "108.0",
+      "display": "Kattalar uchun reabilitatsiya",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Реабилитация для взрослых"
+        },
+        {
+          "language": "en",
+          "value": "Adult Rehabilitation"
+        }
+      ]
+    },
+    {
+      "code": "109.0",
+      "display": "Bolalar uchun reabilitatsiya",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Реабилитация для детей"
+        },
+        {
+          "language": "en",
+          "value": "Children Rehabilitation"
+        }
+      ]
+    },
+    {
+      "code": "110.0",
+      "display": "Kattalar endokrinologiyasi",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Эндокринология взрослых"
+        },
+        {
+          "language": "en",
+          "value": "Adult Endocrinology"
+        }
+      ]
+    },
+    {
+      "code": "111.0",
+      "display": "Bolalar endokrinologiyasi",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Детская эндокринология"
+        },
+        {
+          "language": "en",
+          "value": "Pediatric Endocrinology"
+        }
+      ]
+    },
+    {
+      "code": "112.0",
+      "display": "Kattalar yuqumli kasalliklari",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Инфекционные заболевания взрослых"
+        },
+        {
+          "language": "en",
+          "value": "Adult Infectious Diseases"
+        }
+      ]
+    },
+    {
+      "code": "113.0",
+      "display": "Bolalar yuqumli kasalliklari",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Детские инфекционные заболевания"
+        },
+        {
+          "language": "en",
+          "value": "Children Infectious Diseases"
+        }
+      ]
+    },
+    {
+      "code": "114.0",
+      "display": "Kattalar gematologiyasi",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Взрослая гематология"
+        },
+        {
+          "language": "en",
+          "value": "Adult Hematology"
+        }
+      ]
+    },
+    {
+      "code": "115.0",
+      "display": "Bolalar gematologiyasi",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Детская гематология"
+        },
+        {
+          "language": "en",
+          "value": "Pediatric Hematology"
+        }
+      ]
+    },
+    {
+      "code": "116.0",
+      "display": "Kattalar nefrologiyasi",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Взрослая нефрология"
+        },
+        {
+          "language": "en",
+          "value": "Adult Nephrology"
+        }
+      ]
+    },
+    {
+      "code": "117.0",
+      "display": "Bolalar nefrologiyasi",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Детская нефрология"
+        },
+        {
+          "language": "en",
+          "value": "Pediatric Nephrology"
+        }
+      ]
+    },
+    {
+      "code": "118.0",
+      "display": "Kattalar uchun revmatologik",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Ревматология для взрослых"
+        },
+        {
+          "language": "en",
+          "value": "Adult Rheumatology"
+        }
+      ]
+    },
+    {
+      "code": "119.0",
+      "display": "Bolalar uchun revmatologik",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Ревматология для детей"
+        },
+        {
+          "language": "en",
+          "value": "Children Rheumatology"
+        }
+      ]
+    },
+    {
+      "code": "120.0",
+      "display": "Kattalar uchun pulmonologik",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Пульмонология для взрослых"
+        },
+        {
+          "language": "en",
+          "value": "Adult Pulmonology"
+        }
+      ]
+    },
+    {
+      "code": "121.0",
+      "display": "Bolalar uchun pulmonologik",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Пульмонология для детей"
+        },
+        {
+          "language": "en",
+          "value": "Children Pulmonology"
+        }
+      ]
+    },
+    {
+      "code": "122.0",
+      "display": "Kattalar jarrohligi",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Хирургия взрослых"
+        },
+        {
+          "language": "en",
+          "value": "Adult Surgery"
+        }
+      ]
+    },
+    {
+      "code": "123.0",
+      "display": "Bolalar jarrohligi",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Детская хирургия"
+        },
+        {
+          "language": "en",
+          "value": "Pediatric Surgery"
+        }
+      ]
+    },
+    {
+      "code": "124.0",
+      "display": "Kattalar neyrojarrohligi",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Взрослая нейрохирургия"
+        },
+        {
+          "language": "en",
+          "value": "Adult neurosurgery"
+        }
+      ]
+    },
+    {
+      "code": "125.0",
+      "display": "Bolalar neyrojarrohligi",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Детская нейрохирургия"
+        },
+        {
+          "language": "en",
+          "value": "Pediatric neurosurgery"
+        }
+      ]
+    },
+    {
+      "code": "126.0",
+      "display": "Kattalar torakal jarrohligi",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Торакальная хирургия у взрослых"
+        },
+        {
+          "language": "en",
+          "value": "Adult thoracic surgery"
+        }
+      ]
+    },
+    {
+      "code": "127.0",
+      "display": "Bolalar torakal jarrohligi",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Детская торакальная хирургия"
+        },
+        {
+          "language": "en",
+          "value": "Pediatric thoracic surgery"
+        }
+      ]
+    },
+    {
+      "code": "128.0",
+      "display": "Kattalar kardiojarrohligi",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Кардиохирургия у взрослых"
+        },
+        {
+          "language": "en",
+          "value": "Adult cardiac surgery"
+        }
+      ]
+    },
+    {
+      "code": "129.0",
+      "display": "Bolalar kardiojarrohligi",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Детская кардиохирургия"
+        },
+        {
+          "language": "en",
+          "value": "Pediatric cardiac surgery"
+        }
+      ]
+    },
+    {
+      "code": "130.0",
+      "display": "Kattalar tomirlar jarrohligi",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Сосудистая хирургия взрослых"
+        },
+        {
+          "language": "en",
+          "value": "Adult vascular surgery"
+        }
+      ]
+    },
+    {
+      "code": "131.0",
+      "display": "Bolalar tomirlar jarrohligi",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Детская сосудистая хирургия"
+        },
+        {
+          "language": "en",
+          "value": "Adult traumatology"
+        }
+      ]
+    },
+    {
+      "code": "132.0",
+      "display": "Kattalar travmatologiyasi",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Взрослая травматология"
+        },
+        {
+          "language": "en",
+          "value": "Pediatric traumatology"
+        }
+      ]
+    },
+    {
+      "code": "133.0",
+      "display": "Bolalar travmatologiyasi",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Детская травматология"
+        },
+        {
+          "language": "en",
+          "value": "Burn disease in adults"
+        }
+      ]
+    },
+    {
+      "code": "134.0",
+      "display": "Kattalar kuyish kasalligi",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Ожоговая болезнь у взрослых"
+        },
+        {
+          "language": "en",
+          "value": "Burn disease in children"
+        }
+      ]
+    },
+    {
+      "code": "135.0",
+      "display": "Bolalar kuyish kasalligi",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Ожоговая болезнь у детей"
+        },
+        {
+          "language": "en",
+          "value": "Orthopedics for adults"
+        }
+      ]
+    },
+    {
+      "code": "136.0",
+      "display": "Kattalar ortopediyasi",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Ортопедия для взрослых"
+        },
+        {
+          "language": "en",
+          "value": "Pediatric orthopedics"
+        }
+      ]
+    },
+    {
+      "code": "137.0",
+      "display": "Bolalar ortopediyasi",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Детская ортопедия"
+        },
+        {
+          "language": "en",
+          "value": "Adult urology"
+        }
+      ]
+    },
+    {
+      "code": "138.0",
+      "display": "Kattalar urologiyasi",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Взрослая урология"
+        },
+        {
+          "language": "en",
+          "value": "Pediatric urology"
+        }
+      ]
+    },
+    {
+      "code": "139.0",
+      "display": "Bolalar urologiyasi",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Детская урология"
+        },
+        {
+          "language": "en",
+          "value": "Dentistry for adults"
+        }
+      ]
+    },
+    {
+      "code": "140.0",
+      "display": "Kattalar stomatologiyasi",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Стоматология для взрослых"
+        },
+        {
+          "language": "en",
+          "value": "Pediatric dentistry"
+        }
+      ]
+    },
+    {
+      "code": "141.0",
+      "display": "Bolalar stomatologiyasi",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Детская стоматология"
+        },
+        {
+          "language": "en",
+          "value": "Proctology"
+        }
+      ]
+    },
+    {
+      "code": "142.0",
+      "display": "Proktologik",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Проктологический"
+        },
+        {
+          "language": "en",
+          "value": "Esophagus surgery in adults"
+        }
+      ]
+    },
+    {
+      "code": "143.0",
+      "display": "Kattalar uchun yiringli jarrohlik",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Хирургия пищевода у взрослых"
+        },
+        {
+          "language": "en",
+          "value": "Pediatric surgery"
+        }
+      ]
+    },
+    {
+      "code": "144.0",
+      "display": "Bolalar yiringli jarrohlik",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Детская хирургия"
+        },
+        {
+          "language": "en",
+          "value": "Adult oncology"
+        }
+      ]
+    },
+    {
+      "code": "145.0",
+      "display": "Kattalar onkologiyasi",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Взрослая онкология"
+        },
+        {
+          "language": "en",
+          "value": "Pediatric oncology"
+        }
+      ]
+    },
+    {
+      "code": "146.0",
+      "display": "Bolalar onkologiyasi",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Детская онкология"
+        },
+        {
+          "language": "en",
+          "value": "Radiology and roentgenology"
+        }
+      ]
+    },
+    {
+      "code": "147.0",
+      "display": "Radiologik va rentgenologik",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Радиология и рентгенлогия"
+        },
+        {
+          "language": "en",
+          "value": "For pregnant women, women in labor and women in childbirth (except for pregnancy pathologies)"
+        }
+      ]
+    },
+    {
+      "code": "148.0",
+      "display": "Homilador, tug'adigan va tuqqan ayollar uchun (homiladorlik patologiyasidan tashqari)- jami",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Для беременных, рожениц и родильниц (за исключением патологий беременности)"
+        },
+        {
+          "language": "en",
+          "value": "For women in labor"
+        }
+      ]
+    },
+    {
+      "code": "148.1",
+      "display": "shu jumladan: Tug'adiganlar uchun",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Для рожениц"
+        },
+        {
+          "language": "en",
+          "value": "Pathology of pregnancy"
+        }
+      ]
+    },
+    {
+      "code": "149.0",
+      "display": "Homiladorlik patologiyasi",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Патология беременности"
+        },
+        {
+          "language": "en",
+          "value": "Gynecology (except abortions) for adults"
+        }
+      ]
+    },
+    {
+      "code": "150.0",
+      "display": "Kattalar uchun ginekologiya (abortlardan tashqari).",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Гинекология (кроме абортов) для взрослых"
+        },
+        {
+          "language": "en",
+          "value": "Gynecology for children"
+        }
+      ]
+    },
+    {
+      "code": "151.0",
+      "display": "Bolalar uchun ginekologiya",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Гинекология для детей"
+        },
+        {
+          "language": "en",
+          "value": "Gynecology for children"
+        }
+      ]
+    },
+    {
+      "code": "152.0",
+      "display": "Abort uchun",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Для аборта"
+        },
+        {
+          "language": "en",
+          "value": "For abortion"
+        }
+      ]
+    },
+    {
+      "code": "153.0",
+      "display": "Katta yoshdagi sil kasalligi",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Туберкулез взрослых"
+        },
+        {
+          "language": "en",
+          "value": "Tuberculosis in adults"
+        }
+      ]
+    },
+    {
+      "code": "153.1",
+      "display": "Kattalardagi suyaklar va bo'g'imlarning sil kasalligi",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Туберкулез костей и суставов взрослых"
+        },
+        {
+          "language": "en",
+          "value": "Tuberculosis of bones and joints in adults"
+        }
+      ]
+    },
+    {
+      "code": "154.1",
+      "display": "Bolalarda suyak va bo'g'imlarning sil kasalligi",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Туберкулез костей и суставов детей"
+        },
+        {
+          "language": "en",
+          "value": "Tuberculosis of bones and joints in children"
+        }
+      ]
+    },
+    {
+      "code": "155.0",
+      "display": "Kattalar uchun nevrologiya",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Неврология для взрослых"
+        },
+        {
+          "language": "en",
+          "value": "Neurology for adults"
+        }
+      ]
+    },
+    {
+      "code": "156.0",
+      "display": "Bolalar uchun nevrologiya",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Неврология для детей"
+        },
+        {
+          "language": "en",
+          "value": "Neurology for children"
+        }
+      ]
+    },
+    {
+      "code": "157.0",
+      "display": "Kattalar psixiatriyasi (psixonevrologiya)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Взрослая психиатрия (психоневрология)"
+        },
+        {
+          "language": "en",
+          "value": "Adult psychiatry (psychoneurology)"
+        }
+      ]
+    },
+    {
+      "code": "158.0",
+      "display": "Bolalar psixiatriyasi",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Детская психиатрия"
+        },
+        {
+          "language": "en",
+          "value": "Child psychiatry"
+        }
+      ]
+    },
+    {
+      "code": "159.0",
+      "display": "Kattalar psixosomatikasi",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Психосоматика взрослых"
+        },
+        {
+          "language": "en",
+          "value": "Psychosomatics of adults"
+        }
+      ]
+    },
+    {
+      "code": "160.0",
+      "display": "Bolalar psixosomatikasi",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Детская психосоматика"
+        },
+        {
+          "language": "en",
+          "value": "Child psychosomatics"
+        }
+      ]
+    },
+    {
+      "code": "161.0",
+      "display": "Narkologik",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Наркологический"
+        },
+        {
+          "language": "en",
+          "value": "Narcological"
+        }
+      ]
+    },
+    {
+      "code": "162.0",
+      "display": "Kattalar toksikologiyasi",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Токсикология взрослых"
+        },
+        {
+          "language": "en",
+          "value": "Toxicology of adults"
+        }
+      ]
+    },
+    {
+      "code": "163.0",
+      "display": "Bolalar uchun toksikologiya",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Токсикология для детей"
+        },
+        {
+          "language": "en",
+          "value": "Toxicology for children"
+        }
+      ]
+    },
+    {
+      "code": "164.0",
+      "display": "Kattalar uchun oftalmologiya",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Офтальмология для взрослых"
+        },
+        {
+          "language": "en",
+          "value": "Ophthalmology for adults"
+        }
+      ]
+    },
+    {
+      "code": "165.0",
+      "display": "Bolalar oftalmologiyasi",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Детская офтальмология"
+        },
+        {
+          "language": "en",
+          "value": "Children's ophthalmology"
+        }
+      ]
+    },
+    {
+      "code": "166.0",
+      "display": "Kattalar uchun otolaringologiya",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Отоларингология для взрослых"
+        },
+        {
+          "language": "en",
+          "value": "Otolaryngology for adults"
+        }
+      ]
+    },
+    {
+      "code": "167.0",
+      "display": "Bolalar otorinolaringologiyasi",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Детская отоларингология"
+        },
+        {
+          "language": "en",
+          "value": "Children's otolaryngology"
+        }
+      ]
+    },
+    {
+      "code": "168.0",
+      "display": "Kattalar uchun dermatovenerologiya",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Дерматовенерология для взрослых"
+        },
+        {
+          "language": "en",
+          "value": "Dermatovenereology for adults"
+        }
+      ]
+    },
+    {
+      "code": "169.0",
+      "display": "Bolalar dermatovenerologiyasi",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Детская дерматовенерология"
+        },
+        {
+          "language": "en",
+          "value": "Children's dermatovenereology"
+        }
+      ]
+    },
+    {
+      "code": "170.0",
+      "display": "Pediatriya (somatik)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Педиатрия (соматическая)"
+        },
+        {
+          "language": "en",
+          "value": "Pediatrics (somatic)"
+        }
+      ]
+    },
+    {
+      "code": "170.1",
+      "display": "Bolalar patologiyasi",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Детская патология"
+        },
+        {
+          "language": "en",
+          "value": "Children's pathology"
+        }
+      ]
+    },
+    {
+      "code": "171.0",
+      "display": "Transplantologiya",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Трансплантология"
+        },
+        {
+          "language": "en",
+          "value": "Transplantology"
+        }
+      ]
+    },
+    {
+      "code": "172.0",
+      "display": "Kattalar uchun boshqa",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Другое для взрослых"
+        },
+        {
+          "language": "en",
+          "value": "Other for adults"
+        }
+      ]
+    },
+    {
+      "code": "173.0",
+      "display": "Bolalar uchun boshqa",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Другое для детей"
+        },
+        {
+          "language": "en",
+          "value": "Other for children"
+        }
+      ]
+    },
+    {
+      "code": "174.0",
+      "display": "Kattalar uchun intensiv terapiya",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Интенсивная терапия для взрослых"
+        },
+        {
+          "language": "en",
+          "value": "Intensive care for adults"
+        }
+      ]
+    },
+    {
+      "code": "175.0",
+      "display": "Pediatriya intensiv terapiyasi",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Детская реанимация"
+        },
+        {
+          "language": "en",
+          "value": "Children's intensive care"
+        }
+      ]
+    }
+  ],
+  "version": "1.0.0",
+  "experimental": true,
+  "date": "2025-02-24",
+  "language": "uz",
+  "caseSensitive": true,
+  "count": 78
+}

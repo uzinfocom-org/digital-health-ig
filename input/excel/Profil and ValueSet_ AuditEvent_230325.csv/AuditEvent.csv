@@ -1,0 +1,32 @@
+Name			Flags		Cardinality	example 1	example 2	document	Type	Description & Constraints		ValueSets			
+AuditEvent			TU						DomainResource	Запись события		System	Code	Display	
+category			Σ	  D	0..*	110114	110112		CodeableConcept	"Определяет тип события аудита
+Binding: https://terminology.medcore.uz/ValueSet/audit-event-type (required)"		ValueSet/audit-event-type	все коды	Тип события аудита	
+code			Σ	  D	1..1	110122	search		CodeableConcept	"Уточняет тип события
+Binding: https://terminology.medcore.uz/ValueSet/audit-event-sub-type (required)"		ValueSet/audit-event-sub-type	все коды	Уточнение типа события	
+action			Σ	  D	0..1	E	E		CodeableConcept	"Тип действия, выполняемого во время события
+Binding: https://terminology.medcore.uz/ValueSet/audit-event-action (required)"		ValueSet/audit-event-action	все коды	Тип действия, выполняемого во время события	
+occurredDateTime				  D	0..1	2025-02-15T14:02:52	2025-02-15T14:02:52		dateTime	Дата и время события		ValueSet-audit-event-outcome	все коды	Результат аудита	
+outcome									BackboneElement	Исход события		ValueSet/role-type	все коды	Тип роли участия агента	
+	code		Σ	  D	1..1	success	success		Coding	"Определяет код результата аудита
+Binding: https://terminology.medcore.uz/ValueSet-audit-event-outcome (required)"		ValueSet/security-role-type	все коды	Роль агента в событии	
+patient			TU	  D	0..1		ID XXXXXXXXX		Reference(Patient)	Ссылка на пациента - субъекта данных		ValueSet/PurposeOfUse	все коды	Цель использования информации	
+agent			Σ	  D	1..1				BackboneElement	Кто принял участие (агент)		ValueSet-audit-resource-types	все коды	Тип ресурса аудита	
+	type			  D	0..1		humanuser		CodeableConcept	"Как агент участвовал
+Binding: https://terminology.medcore.uz/ValueSet/role-type (required)"		ValueSet-audit-object-role	все коды	Роль сущности (объекта)	
+	role			  D	0..*		regulated-health-professionals		CodeableConcept	"Роль агента в событии
+Binding: https://terminology.medcore.uz/ValueSet/security-role-type (required)"		ValueSet-security-label 	все коды	Метки безопасности объекта	
+	who			  D	1..1		ID YYYYYYYYYY		Reference(Practitioner |Patient | RelatedPerson)	Идентификатор того, кто участвовал					
+	authorization			  D	0..1		TREAT		CodeableConcept	"Цель использования информации
+Binding: https://terminology.medcore.uz/ValueSet/PurposeOfUse (required)"					
+entity				  D			Condition		BackboneElement	Используемые данные или объекты					
+	what			  D					Reference(Any)	Ссылка на конкретный экземпляр ресурса					
+		reference	Σ	  D	0..1		ID--------		string	Ссылка					
+		type	Σ	  D	0..1		Encounter		uri	"Тип ресурса, на который идет ссылка
+Binding: https://terminology.medcore.uz/ValueSet-audit-resource-types (required)"					
+		display	Σ	  D	0..1		Прием		string	Альтернативное текстовое наименование ресурса					
+role			Σ	  D	0..1		1		CodeableConcept	"Роль сущности
+Binding: https://terminology.medcore.uz/ValueSet-audit-object-role (required)"					
+securityLabel				  D	0..*		NOAUTH		CodeableConcept	"Метки безопасности объекта
+Binding: https://terminology.medcore.uz/ValueSet-security-label (required)"					
+query			Σ	  D	0..1				base64Binary	Параметры запроса					

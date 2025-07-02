@@ -1,0 +1,11 @@
+== Suppressed Messages ==
+
+# Add warning and/or information messages here after you've confirmed that they aren't really a problem
+# (And include comments like this justifying why)
+# See https://github.com/FHIR/sample-ig/blob/master/input/ignoreWarnings.txt for examples
+
+# This recommendation does not apply to these examples as they are not clinical observations.
+Best Practice Recommendation: In general, all observations should have a performer
+
+# IG Publisher can't process ISO 3166 validation just yet
+Error from https://tx.fhir.org/r5: Unable to provide support for code system https://terminology.medcore.uz/CodeSystem/iso3166-two-letter-cs 

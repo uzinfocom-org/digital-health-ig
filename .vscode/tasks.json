@@ -1,0 +1,27 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Generate IG",
+            "type": "shell",
+            "command": "./_genonce.sh && notify-send -u normal -i info 'IG generation complete.'",
+            "group": "build",
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "focus": false,
+                "panel": "shared",
+                "showReuseMessage": true,
+                "clear": false
+            },
+            "problemMatcher": [],
+            "detail": "Generate IG and notify when complete (Linux only)",
+            "windows": {
+                "command": "echo 'This task is only supported on Linux'"
+            },
+            "osx": {
+                "command": "echo 'This task is only supported on Linux'"
+            }
+        }
+    ]
+}

@@ -1,0 +1,13 @@
+CODE	UZ	RU	EN
+HOPERAT	health information operations	операции с информацией в сфере здравоохранения	healthcare operations
+GOV	government	правительство	government
+HDIRECT	catalogue (patient catalogue management)	каталог (управление каталогом пациентов)	directory
+HPRGRP	health program reporting	отчетность по программе здравоохранения	health program reporting
+HSYSADMIN	health system administration	администрация системы здравоохранения	health system administration
+RECORDMGT	medical records management	управление медицинскими записями	records management
+PATRQT	patient requested	пациент запросил	patient requested
+FAMRQT	family requested	семья запросила	family requested
+PWATRNY	patient's legal representative requested	законный представитель пациента запросил	power of attorney
+DISASTER	disaster	катастрофа	disaster
+TREAT	health care information operations	операции с информацией для оказания медицинской помощи	treatment
+ETREAT	emergency health care information operations	операции с информацией для оказания экстренной медицинской помощи	Emergency Treatment
