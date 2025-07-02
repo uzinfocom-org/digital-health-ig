@@ -43,7 +43,7 @@ This Implementation Guide includes:
 | Name                                             | Role                          | Organization                      |
 |--------------------------------------------------|-------------------------------|-----------------------------------|
 | [@roosyabuddy](https://github.com/roosyabuddy)   | IG Maintainer                 | [Uzinfocom](https://uzinfocom.uz) |
-| [@vadi2](https://github.com/vadi2)               | IG Maintainer                 |                                   |
+| [@vadi2](https://github.com/vadi2)               | Primary Author                | [Peretokin Consulting](https://vadimperetok.in) |
 | Ministry of Health of the Republic of Uzbekistan | Strategic Partner             | Government                        |
 | KfW Development Bank                             | Financial & Technical Support | International Donor               |
 
