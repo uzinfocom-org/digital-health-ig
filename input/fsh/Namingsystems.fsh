@@ -125,7 +125,7 @@ Usage: #definition
 * publisher = "Uzinfocom"
 * responsible = "Ministry of Internal Affairs of the Republic of Uzbekistan"
 * type = $identifier-type#DL "Driver's license number"
-* description = "Naming system for driver's license identifiers assigned by the Ministry of Internal Affairs of the Republic of Uzbekistan. See https://lex.uz/docs/3127705 for legal justification."
+* description = "Naming system for driver's license identifiers assigned by the Ministry of Internal Affairs of the Republic of Uzbekistan. See https://gov.uz/ru/advice/616/document/2507 for legal justification."
 * jurisdiction = urn:iso:std:iso:3166#UZ "Uzbekistan"
 * usage = "Used for identifying individuals through their driver's license numbers within the Uzbekistan transportation system."
 * uniqueId[0].type = #uri
@@ -144,7 +144,7 @@ Usage: #definition
 * publisher = "Uzinfocom"
 * responsible = "Ministry of Foreign Affairs of the Republic of Uzbekistan"
 * type = $identifier-type#DP "Diplomatic Passport"
-* description = "Naming system for diplomatic passport identifiers assigned by the Ministry of Foreign Affairs of the Republic of Uzbekistan. See http://fmc.uz/legisl.php?id=dippasport and https://www.lex.uz/acts/670451 for legal justification."
+* description = "Naming system for diplomatic passport identifiers assigned by the Ministry of Foreign Affairs of the Republic of Uzbekistan. See http://fmc.uz/legisl.php?id=dippassport and https://www.lex.uz/acts/670451 for legal justification."
 * jurisdiction = urn:iso:std:iso:3166#UZ "Uzbekistan"
 * usage = "Used for identifying diplomatic personnel through their diplomatic passport numbers within the Uzbekistan diplomatic system."
 * uniqueId[0].type = #uri
