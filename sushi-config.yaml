@@ -61,14 +61,16 @@ publisher:
 parameters:
   special-url-base: https://terminology.medcore.uz
   excludettl: true
-  shownav: true
+  # shownav: true
 
   pin-canonicals: pin-all
   # openehr: true
-  # i18n-default-lang: en
-  # i18n-lang: 
-  #   - ru
-   
+  i18n-default-lang: en
+  i18n-lang: 
+    - ru
+  translation-sources:
+    - input/translations/ru
+
 #   validation: [allow-any-extensions, no-broken-links]
 #
 # ╭────────────────────────────────────────────menu.xml────────────────────────────────────────────╮

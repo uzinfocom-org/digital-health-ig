@@ -20,12 +20,3 @@ Current priority is on completing the core resource profiles first to enable the
 
 Vadim Peretokin, Peretokin Consulting
 
-<div>
-{% include ip-statements.xhtml %}
-
-{% include cross-version-analysis.xhtml %}
-
-{% include dependency-table.xhtml %}
-
-{% include globals-table.xhtml %}
-</div>
