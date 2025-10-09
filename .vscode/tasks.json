@@ -15,13 +15,14 @@
                 "clear": false
             },
             "problemMatcher": [],
-            "detail": "Generate IG and notify when complete (Linux only)",
+            "detail": "Generate IG and notify when complete",
             "windows": {
-                "command": "echo 'This task is only supported on Linux'"
+                "command": "./_genonce.bat && powershell -Command \"Add-Type -AssemblyName System.Windows.Forms; [System.Windows.Forms.MessageBox]::Show('IG generation complete.', 'Build Complete', 'OK', 'Information')\""
             },
             "osx": {
-                "command": "echo 'This task is only supported on Linux'"
+                "command": "./_genonce.sh && osascript -e 'display notification \"IG generation complete.\" with title \"Build Complete\"'"
             }
         }
     ]
 }
+
