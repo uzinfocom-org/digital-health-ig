@@ -5,11 +5,11 @@
 # See https://github.com/FHIR/sample-ig/blob/master/input/ignoreWarnings.txt for examples
 
 # This recommendation does not apply to these examples as they are not clinical observations.
-Best Practice Recommendation: In general, all observations should have a performer 
+Best Practice Recommendation: In general, all observations should have a performer
 
 # No R5 DICOM package exists yet, but we have to depend on it for our DICOM supplement to resolve correctly - known issue, reported
-This IG is version 5.0.0, while the IG 'fhir.dicom' is from version 4.0.1 
-The ImplementationGuide is based on FHIR version 5.0.0 but package fhir.dicom#2025.2.20250411 is based on FHIR version 4.0.1. In general, this version mismatch should be avoided - some tools will try to make this work with variable degrees of success, but others will not even try 
+This IG is version 5.0.0, while the IG 'fhir.dicom' is from version 4.0.1
+The ImplementationGuide is based on FHIR version 5.0.0 but package fhir.dicom#2025.2.20250411 is based on FHIR version 4.0.1. In general, this version mismatch should be avoided - some tools will try to make this work with variable degrees of success, but others will not even try
 
 # IG publisher can't find supplements for ISO 3166 - this can be ignored
 The value provided ('UZ') was not found in the value set 'ISO 3166 2 character codes in Uzbek and Russian' (https://terminology.dhp.uz/fhir/core/ValueSet/iso-3166-2-uz-vs%
@@ -21,14 +21,18 @@ The image source 'assets/images/lang-uz.png' cannot be resolved
 An HTML fragment from the set%
 
 # Warning that can be ignored for our use since our instances use Uzbek/Russian but generated narrative in English
-Resource has a language (uz), and the XHTML has a lang (en), but they differ 
+Resource has a language (uz), and the XHTML has a lang (en), but they differ
 Resource has a language (ru), and the XHTML has a lang (en), but they differ
 
-# Publisher bug with new .ai.html pages
-unexpected non-end of element null::div at line%
+# Publisher bug with new .ai.html pages, can be ignored
+unexpected non-end of element null%
+The link%
 
 # Publisher issue where codesystems and valuesets can no longer share the same name
 There are multiple resources with the same title%
 
 # This is not a canonical URL, but an instance URL and should not be checked - reported
 No definition could be found for URL value 'https://dhp.uz/fhir/core'
+
+# Lack of translations for sample instances - this is OK
+"The narrative includes custom content for the default language (en), but does not include translated content for the ru language, so the default language has been used
