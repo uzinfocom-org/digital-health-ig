@@ -1,6 +1,0 @@
-
-# A label or set of text to display in place of the data.
-#: Attachment.title
-msgid "Sample Medical Report"
-msgstr ""
-

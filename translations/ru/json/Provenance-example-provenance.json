@@ -1,9 +1,0 @@
-{
-  "id" : "Provenance-example-provenance",
-  "baseLang" : "en",
-  "languages" : [
-    {
-      "targetLang" : "ru"
-    }
-  ]
-}
