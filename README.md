@@ -49,6 +49,24 @@ This Implementation Guide includes:
 
 ---
 
+## 🛠️ Repository Management and Development Standards
+
+**Semantic versioning**: Version identification follows the conventions documented at https://build.fhir.org/ig/vadi2/DHP-temp/en/index.html#identification-of-versions.
+
+**Branching strategy**: Feature branches are created as needed and merged into the main branch via rebase or squash-commit. All releases are tagged from the main branch according to semantic versioning standards.
+
+**Code review policy**: Pull requests must pass IG Publisher QA checks without introducing new errors or warnings, and require approval from at least one FHIR expert before merging.
+
+**Quality assurance**: Static analysis is enforced through the FHIR IG Publisher's built-in validation and QA tooling, which checks for conformance issues, broken references, terminology validation errors, and a host of other issues.
+
+---
+
+## 📚 Documentation
+
+[Modelling Guidelines](/modelling-guidelines.md)
+
+---
+
 ## 📜 License
 
 This Implementation Guide is open-source under the **CC BY-SA 4.0** license.
