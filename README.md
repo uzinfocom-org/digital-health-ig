@@ -40,12 +40,16 @@ This Implementation Guide includes:
 
 ## 👥 Contributors
 
-| Name                                             | Role                          | Organization                      |
-|--------------------------------------------------|-------------------------------|-----------------------------------|
-| [@roosyabuddy](https://github.com/roosyabuddy)   | IG Maintainer                 | [Uzinfocom](https://uzinfocom.uz) |
-| [@vadi2](https://github.com/vadi2)               | IG Maintainer                 |                                   |
-| Ministry of Health of the Republic of Uzbekistan | Strategic Partner             | Government                        |
-| KfW Development Bank                             | Financial & Technical Support | International Donor               |
+| Name                                             | Role                          | Organization                                    |
+|--------------------------------------------------|-------------------------------|-------------------------------------------------|
+| [Rustam Sadykov](https://github.com/roosyabuddy) | IG Maintainer                 | [Uzinfocom](https://uzinfocom.uz)               |
+| [Vadim Peretokin](https://github.com/vadi2/)     | Primary Author                | [Peretokin Consulting](https://vadimperetok.in) |
+| [Bekhzod Akhmedov](https://github.com/BEKHZOD98) | Co-Author                     | [Uzinfocom](https://uzinfocom.uz)               |
+| [Sarvar Kubaev](https://github.com/KubayevSarvarbek) | Co-Author                 | [Uzinfocom](https://uzinfocom.uz)               |
+| Saodat Kadirova                                  | Business Analyst              | [Uzinfocom](https://uzinfocom.uz)               |
+| Irina Berger                                     | Business Analyst              | [Uzinfocom](https://uzinfocom.uz)               |
+| Ministry of Health of the Republic of Uzbekistan | Strategic Partner             | Government                                      |
+| KfW Development Bank                             | Financial & Technical Support | International Donor                             |
 
 ---
 
