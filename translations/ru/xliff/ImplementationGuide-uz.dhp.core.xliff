@@ -1205,7 +1205,7 @@
                <note id="n1">A description of the reason that a resource has been included in the implementation guide.</note>
              </notes>
         <source>Example ofa PDF document signed with myID</source>
-        <target>Образец PDF-документа, подписанного с использованием myID</target>
+        <target></target>
       </trans-unit>
       <trans-unit id="ImplementationGuide-uz.dhp.core" resname="ImplementationGuide.definition.resource.name">
              <notes>

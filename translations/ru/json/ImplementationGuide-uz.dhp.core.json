@@ -1035,7 +1035,7 @@
           "id" : "ImplementationGuide.definition.resource.description",
           "context" : "A description of the reason that a resource has been included in the implementation guide.",
           "source" : "Example ofa PDF document signed with myID",
-          "target" : "Образец PDF-документа, подписанного с использованием myID"
+          "target" : null
         },
         {
           "id" : "ImplementationGuide.definition.resource.name",
