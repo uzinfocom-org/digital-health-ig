@@ -8,45 +8,45 @@ Current priority is on completing the core resource profiles first to enable the
 
 This guide is the official source of documentation for the implementation of FHIR within the framework of Uzbekistan's Digital Health Platform, and it has been adapted to the realities, needs, and specific features of the national healthcare system.
 
-The guide serves as a foundation for: 
+The guide serves as a foundation for:
 
 * Developing UZ Core profiles that adapt FHIR resources to local needs in Uzbekistan and establish a common baseline of support digital healthcare in the republic;
   * such adaptations include modelling common identifiers, translations of HL7 codesystems, and marking elements that must be supported by all systems
 
 * Developing usecase-specific profiles to support specific clinical and administrative scenarios;
-  * such as the Birth and Death registry 
+  * such as the Birth and Death registry
 
-* Utilising international and national classifications and terminologies (SNOMED-CT, LOINC, ICD-10, ICD-11, CBPEPW-2020). 
+* Utilising international and national classifications and terminologies (SNOMED-CT, LOINC, ICD-10, ICD-11, CBPEPW-2020).
 
-Using this IG will help ensure consistency in the representation of medical data, enhance system interoperability, and establish a solid foundation for a scalable digital health ecosystem. 
+Using this IG will help ensure consistency in the representation of medical data, enhance system interoperability, and establish a solid foundation for a scalable digital health ecosystem.
 
 ### Project background
 
-The Digital Health Platform (DHP) is being developed within the framework of the "Support for Healthcare Digitalization Reform" project, implemented under [the agreement](https://www.kfw.de/About-KfW/Newsroom/Latest-News/Pressemitteilungen-Details_723328.html) between the Republic of Uzbekistan and the KfW Development Bank. This initiative is in line with the Presidential Decree of the Republic of Uzbekistan No. PP-140 dated May 1, 2023, "On Additional Measures for the Digitalization of the Healthcare System" and Resolutions of the President of the Republic of Uzbekistan No. PP-415 dated December 28, 2023 "On additional measures to accelerate the digitalization of the healthcare system and the introduction of advanced digital technologies". 
+The Digital Health Platform (DHP) is being developed within the framework of the "Support for Healthcare Digitalization Reform" project, implemented under [the agreement](https://www.kfw.de/About-KfW/Newsroom/Latest-News/Pressemitteilungen-Details_723328.html) between the Republic of Uzbekistan and the KfW Development Bank. This initiative is in line with the Presidential Decree of the Republic of Uzbekistan No. PP-140 dated May 1, 2023, "On Additional Measures for the Digitalization of the Healthcare System" and Resolutions of the President of the Republic of Uzbekistan No. PP-415 dated December 28, 2023 "On additional measures to accelerate the digitalization of the healthcare system and the introduction of advanced digital technologies".
 
 ### Areas of coverage
 
-The Digital Healthcare Platform of the Republic of Uzbekistan is based on the following 19 services: 
+The Digital Healthcare Platform of the Republic of Uzbekistan is based on the following 19 services:
 
-* Metadata and Security Management 
-* Master Data Management 
-* Patient health journey management 
-* Clinical Health Records 
-* Referrals 
-* Prescription 
-* Appointment and Scheduling  
-* Laboratory 
-* Diagnostics and Imaging  
-* Ambulance  
-* Supplies   
-* Reimbursement 
-* Clinical Decision Support  
-* Nursing 
-* Blood Management 
-* Vaccination Management  
-* Public Health Reporting  
-* Screening Schedules Management  
-* Quality Assurance 
+* Metadata and Security Management
+* Master Data Management
+* Patient health journey management
+* Clinical Health Records
+* Referrals
+* Prescription
+* Appointment and Scheduling
+* Laboratory
+* Diagnostics and Imaging
+* Ambulance
+* Supplies
+* Reimbursement
+* Clinical Decision Support
+* Nursing
+* Blood Management
+* Vaccination Management
+* Public Health Reporting
+* Screening Schedules Management
+* Quality Assurance
 
 ### Identification of versions
 
@@ -75,7 +75,7 @@ The only exception to versioning are translation supplements of official [THO](h
 - Indicates breaking changes in parts of the IG or significant architectural updates
 
 ### IP Statements
-{% include ip-statements.xhtml %}
+{% include ip-statements-en.xhtml %}
 
 ### Contributors
 

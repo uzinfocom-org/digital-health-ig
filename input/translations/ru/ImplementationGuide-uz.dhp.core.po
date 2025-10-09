@@ -799,7 +799,7 @@ msgstr "example-pdf-document"
 
 # A description of the reason that a resource has been included in the implementation guide.
 #: ImplementationGuide.definition.resource.description
-msgid "Example ofa PDF document signed with myID"
+msgid "Example of a PDF document signed with myID"
 msgstr "Образец PDF-документа, подписанного с использованием myID"
 
 # A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).

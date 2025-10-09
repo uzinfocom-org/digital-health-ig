@@ -69,9 +69,6 @@ This IG utilizes two distinct approaches to terminology management. For Uzbekist
 #### ConceptMaps
 ConceptMaps in FHIR define relationships and mappings between codes from different terminology systems, enabling semantic interoperability across disparate coding schemes. Within the DHP implementation, applications must exclusively use locally-defined codes for data exchange and storage. To facilitate integration with international standards, DHP provides ConceptMap resources that establish mappings between common international terminologies (such as ICD-10, SNOMED CT, or LOINC) and the corresponding local Uzbekistan codes. Applications can leverage the ConceptMap $translate operation to programmatically convert standard international codes into the required local codes, ensuring compliance with DHP requirements while maintaining compatibility with global healthcare standards.
 
-### Capability discovery
-Applications can dynamically discover and configure their behavior by querying the FHIR server's `/metadata` endpoint, which returns a CapabilityStatement resource describing the server's supported operations, resource types, profiles, and extensions. This enables applications to automatically adapt to the specific capabilities and requirements of the DHP implementation, ensuring compatibility and optimal functionality without requiring hard-coded configurations. The DHP's complete capability statement can be viewed at [CapabilityStatement-DHPCapabilityStatement.html](CapabilityStatement-DHPCapabilityStatement.html), which provides the same information as the `/metadata` endpoint.
-
 ### Links
 
 For further reading, we recommend to use the following links:
