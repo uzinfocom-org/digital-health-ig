@@ -1,0 +1,90 @@
+Name				Flags		Cardinality	Example	Document	Type	Description & Constraints								
+ RelatedPerson				N					DomainResource	Лицо, связанное с пациентом, но не являющееся прямым объектом ухода		System	CodeSystem		ValueSets			
+identifier				Σ S	  D	1..*	NI		Identifier	Идентификатор, удостоверяющий личность связанного лица		https://terminology.medcore.uz/ValueSet/Identifier	CodeSystemIdentifier		System	CodeSystem	Code	Display
+	use			"	?! Σ S"	  D	0..1	usual	HL7.v5	code	"Определяет цель этого идентификатора
+Binding: https://terminology.medcore.uz/ValueSet/identifier-use-vs (required)"					https://terminology.medcore.uz/ValueSet/Identifier	CodeSystemIdentifier	NI, PPN, BCT, DL, DP, HC, MI, PCN	Идентификатор, удостоверяющий личность связанного лица
+	type			Σ S	  D	1..*	PPN	HL7.v5	CodeableConcept	"Код типа идентификатора, удостоверяющего личность
+Binding: https://terminology.medcore.uz/ValueSet/identifier-type-vs (required)"					https://terminology.medcore.uz/ValueSet/relationshiptype	CodeSystemRelationshipType	Все коды	Отношение связанного лица к пациенту
+	identifier: nationaluniqueID			Σ S	  D	0..1			Identifier	Идентификатор для этого Patient					http://hl7.org/fhir/name-use	CodeSystemNameuse	Все коды	Вид имени связанного лица
+		 system		Σ S	  D	1..1			uri	"Fixed Value: https://dpm.uz/identifier/nationaluniqueID
+Description: https://legal-force.uz/pinfl
+https://lex.uz/docs/444922#444943"					https://terminology.medcore.uz/ValueSet/TelecomSystem	CodesystemTelecomSystem	phone, fax, email, url, sms, other	Способ связи
+	identifier: passportnumber			Σ S	  D	0..1			Identifier	Идентификатор для этого Related Person					https://terminology.medcore.uz/ValueSet/TelecomUse	CodesystemTelecomUse	home, work, temp, old, mobile	Вид связи со связанным лицом
+		 system		Σ S	  D	1..1			uri	"Fixed Value:  http://medcore.uz/NamingSystem/uzb-passport-local
+Description: https://gov.uz/advice/NaN/document/1628"					http://hl7.org/fhir/ValueSet/administrative-gender	CodeSystemAdministrativeGender	male, female, unknown, other	Пол связанного лица, используемый в административных целях
+	identifier: birthcertificate			Σ S	  D	0..1			Identifier	Идентификатор для этого Related Person					https://terminology.medcore.uz/ValueSet/gender-other-vs	CodeSystemGenderOther	regis0007.00004, regis0007.00005	"Дифференциация административного пола ""другой"" "
+		 system		Σ S	  D	1..1			uri	"Fixed Value: http://medcore.uz/NamingSystem/uzb-birth-certificate
+Description: https://gov.uz/advice/58/document/1444"					https://terminology.medcore.uz/ValueSet/AddressUse	CodeSystemaddressUse	home, temp	Тип адреса
+	identifier: driverslicensenumber			Σ S	  D	0..1			Identifier	Идентификатор для этого Related Person					https://terminology.medcore.uz/ValueSet/AddressType	CodeSystemaddresstype	postal, physical, both	Тип возможных адресов
+		 system		Σ S	  D	1..1			uri	"Fixed Value: https://gov.uz/iiv/identifier/driverslicense
+Description: https://lex.uz/docs/3127705"					ValueSet/countries	CodeSystemCountries_Digital_MVD	все имеющиеся коды, кроме кода stateless	Код страны
+	identifier: diplomaticpassport			Σ S	  D	0..1			Identifier	Идентификатор для этого Related Person					ValueSet/Mahalla	CodeSystemMahalla	все имеющиеся коды	Код махалли
+		 system		Σ S	  D	1..1			uri	"Fixed Value: https://gov.uz/ru/mfa/identifier/diplomaticpassport
+Description: https://dpm.uz/about/dip#dip_doc 
+https://lex.uz/ru/docs/426840?ONDATE2=26.10.2015&action=compare"					ValueSet/District_City	CodeSystemDistrict_City	все имеющиеся коды	Код район/город
+	"identifier: passport-international	"			Σ S	  D	0..1			Identifier	Идентификатор для этого Related Person					ValueSet/Region	CodeSystemRegion	все имеющиеся коды	Код области
+		 system		Σ S	  D	1..1			uri	"Fixed Value: http://medcore.uz/NamingSystem/uzb-passport-international
+Description: https://dpm.uz/about/zag#zag_doc
+https://gov.uz/ru/advice/NaN/document/1730"								
+	identifier: healthcardnumber			Σ S	  D	0..1			Identifier	Идентификатор для этого  Related Person								
+		 system		Σ S	  D	1..1			uri	"Fixed Value: https://gov.uz/ru/ssv/identifier/healthcardnumber
+Description: https://yuz.uz/ru/news/elektronne-meditsinskie-kart-prosto-sovremenno-i-kachestvenno"								
+	identifier: militaryIDnumber			Σ S	  D	0..1			Identifier	Идентификатор для этого  Related Person								
+		 system		Σ S	  D	1..1			uri	"Fixed Value: https://gov.uz/ru/mudofaa/identifier/militaryIDnumber
+Description: https://www.lex.uz/acts/249045"								
+	coding				  D	1..*			coding									
+	value			Σ S	  D	1..1	KA4928772		string									
+		display			  D	1..1			string									
+active				Σ S		0..1	true		Extension	Используется ли активно запись этого связанного лица								
+Patient				Σ	D	1..1			uri	Binding: Patient Relationship Type (Preferred)								
+Relationship				ΣS	D	0..*	NOK	Local (new)	CodeableConcept	Отношения родственного лица с пациентом.								
+Name				Σ	D	0..*			Human name	Имя, связанное с человеком								
+	use			?! S	D	0..1	usual	HL7.v5	code	"Определяет вид имени связанного лица
+Binding: http://hl7.org/fhir/name-use (required)"								
+	text			ΣS	D	0..1	Зафаров Дамир Каримович		string	Текстовое представление полного имени пациента								
+	family			ΣS	D	0..1	Зафаров		string	Фамилия		https://terminology.medcore.uz/ValueSet/relationshiptype	CodeSystemRelationshipType					
+	given			Σ S	  D	0..1	Дамир		string	Имя		http://hl7.org/fhir/name-use	CodeSystemNameuse					
+	suffix			Σ S	  D	0..1	Каримович		string	Отчество		https://terminology.medcore.uz/ValueSet/TelecomSystem	CodesystemTelecomSystem					
+	period			Σ S	  D	0..1	02-16-98		Period	Период, в течение которого использовалось это имя		https://terminology.medcore.uz/ValueSet/TelecomUse	CodesystemTelecomUse					
+Telecom				Σ S		0..*			ContactPoint	Контактные данные связанного лица		https://terminology.medcore.uz/ValueSet/gender	CodeSystemgender					
+	system			 Σ S	D	0..1	phone	HL7.v5	code	"Определяет способ связи (телефон, факс, смс…)
+Binding: http://hl7.org/fhir/ValueSet/contact-point-system"		https://terminology.medcore.uz/ValueSet/countries	CodeSystemCountries ISO3166_2					
+	use			"	?! Σ S"	D	0..1	mobile	HL7.v5	code	"Определяет вид связи (домашний, рабочий, мобильный…)
+Binding: http://hl7.org/fhir/contact-point-use"		https://terminology.medcore.uz/ValueSet/region_ district	CodeSystemСОАТО					
+	value			ΣS	D	0..1	"""+998885412621"""		string	"	Фактические данные контактного лица"								
+	rank			ΣS	D	0..1	1		positiveInt	Предпочтительный порядок использования								
+	period			ΣS	D	0..1	05-16-24		period	Период использования								
+Gender				Σ S	  D	0..1	male		code	"Пол связанного лица, используемый в административных целях
+Binding: https://terminology.medcore.uz/ValueSet/gender"								
+	extension:gender-other			Σ S	  D	0..1			coding	"Дифференциация административного пола ""другой"" 
+Binding: https://terminology.medcore.uz/ValueSet/gender-other-vs"		https://terminology.medcore.uz/ValueSet/city	CodeSystemСОАТО					
+BirthDate				ΣS	D	0..1	02-16-98		date	Дата рождения связанного лица		https://terminology.medcore.uz/ValueSet/mahalla	CodeSystemMahalla					
+Address				Σ	D	0..1			Address	"	Адрес, по которому можно связаться с соответствующим лицом или посетить его"								
+	use			"	?! Σ S"	  D	0..1	home	HL7.v5	code	"Тип адреса домашний | временный
+Binding: https://terminology.medcore.uz/ValueSet/address-use-vs"								
+	type			Σ S	  D	0..1	postal	HL7.v5	code	"Типы возможных адресов почтовый | физический | оба
+Binding: https://terminology.medcore.uz/ValueSet/address-type-vs"								
+	text			Σ S	  D	0..1	mahallasi Dilobod, Katortol ko‘chasi, 9-uy, 15-xonadon 	ГЦП	string	Текстовая часть адреса, предоставляемая ГЦП. Название махалли, улицы,  номер дома, номер квартиры								
+	line			Σ S	  D	0..1	Katortol ko‘chasi	ГЦП	string	Текстовае название улицы, предоставляемое ГЦП								
+	city			Σ S	  D	0..1	103-0104	Ведомственный классификатор Махаллей (Сход граждан)	code	"Код махалли, 
+Binding: https://terminology.medcore.uz/ValueSet/Mahalla"								
+	district			Σ S	  D	0..1	1726294	Ведомственный классификатор (СОАТО)	code	"Код района/города 
+Binding: https://terminology.medcore.uz/ValueSet/District_City"								
+	state			Σ S	  D	0..1	1726	Ведомственный классификатор (СОАТО)	code	"Код области 
+Binding: https://terminology.medcore.uz/ValueSet/Region"								
+	country			Σ S	  D	0..1	182	Классификатор стран мира МВД	code	"Код страны, 
+Binding: https://terminology.medcore.uz/ValueSet/countries"	code	"Тип адреса домашний | временный
+Binding: https://terminology.medcore.uz/ValueSet/address-use-vs"						
+	period			Σ S	  D	0..1	04-06-99		Period	Период времени, когда адрес использовался/используется	code	"Типы возможных адресов почтовый | физический | оба
+Binding: https://terminology.medcore.uz/ValueSet/address-type-vs"						
+period				S	  D	0..1	11-16-16		period	Период времени, в течение которого эти отношения считаются действительными	string	Текстовая часть адреса, предоставляемая ГЦП. Название махалли, улицы,  номер дома, номер квартиры						
+"communication	 (нужен ли этот атрибут?)"										Язык, который может использоваться для общения со связанным лицом по вопросам здоровья пациента	string	Текстовае название улицы, предоставляемое ГЦП						
+											code	"Код махалли, 
+Binding: https://terminology.medcore.uz/ValueSet/Mahalla"						
+											code	"Код района/города 
+Binding: https://terminology.medcore.uz/ValueSet/District_City"						
+											code	"Код области 
+Binding: https://terminology.medcore.uz/ValueSet/Region"						
+											code	"Код страны, 
+Binding: https://terminology.medcore.uz/ValueSet/countries"						
+											Period	Период времени, когда адрес использовался/используется						

@@ -1,0 +1,21 @@
+
+# A natural language name identifying the structure definition. This name should be usable as an identifier for the module by machine processing applications such as code generation.
+#: StructureDefinition.name
+msgid "UZCoreCondition"
+msgstr "UZCoreCondition"
+
+# A short, descriptive, user-friendly title for the structure definition.
+#: StructureDefinition.title
+msgid "UZ Core Condition"
+msgstr "UZ Core Condition"
+
+# The name of the organization or individual responsible for the release and ongoing maintenance of the structure definition.
+#: StructureDefinition.publisher
+msgid "Uzinfocom LLC"
+msgstr "ООО «Единый интегратор Uzinfocom»"
+
+# The name of an individual to contact.
+#: StructureDefinition.contact.name
+msgid "Uzinfocom LLC"
+msgstr "Uzinfocom LLC"
+

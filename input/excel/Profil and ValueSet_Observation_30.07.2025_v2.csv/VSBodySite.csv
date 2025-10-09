@@ -1,0 +1,1001 @@
+Code	UZ	RU (SNOMED CT)	EN
+ 53075003 		Дистальная фаланга большого пальца стопы	Distal phalanx of great toe
+  76986006 		Дистальная фаланга второго пальца стопы	Distal phalanx of second toe
+  65258003 		Дистальная фаланга третьего пальца стопы	Distal phalanx of third toe
+  54333003 		Дистальная фаланга четвертого пальца стопы	Distal phalanx of fourth toe
+  10770001 		Дистальная фаланга мизинца стопы	Distal phalanx of little toe
+  363670009 		Структура межфалангового сустава большого пальца ноги	Interphalangeal joint structure of great toe
+  371216008 		Структура дистального межфалангового сустава второго пальца стопы (строение тела)	Distal interphalangeal joint structure of second toe (body structure)
+  371219001 		Структура дистального межфалангового сустава третьего пальца стопы (строение тела)	Distal interphalangeal joint structure of third toe (body structure)
+  371205001 		Структура дистального межфалангового сустава четвертого пальца стопы (строение тела)	Distal interphalangeal joint structure of fourth toe (body structure)
+  371203008 		Структура дистального межфалангового сустава пятого пальца стопы (строение тела)	Distal interphalangeal joint structure of fifth toe (body structure)
+  371292009 		Строение проксимального межфалангового сустава второго пальца стопы (строение тела)	Proximal interphalangeal joint structure of second toe (body structure)
+  371255009 		Строение проксимального межфалангового сустава третьего пальца стопы (строение тела)	Proximal interphalangeal joint structure of third toe (body structure)
+  371288002 		Строение проксимального межфалангового сустава четвертого пальца стопы (строение тела)	Proximal interphalangeal joint structure of fourth toe (body structure)
+  371284000 		Строение проксимального межфалангового сустава пятого пальца стопы (строение тела)	Proximal interphalangeal joint structure of fifth toe (body structure)
+  67169006 		Головка первой плюсневой кости	Head of first metatarsal bone
+  9677004 		Головка второй плюсневой кости	Head of second metatarsal bone
+  46971007 		Головка третьей плюсневой кости	Head of third metatarsal bone
+  3134008 		Головка четвертой плюсневой кости	Head of fourth metatarsal bone
+  71822005 		Головка пятой плюсневой кости	Head of fifth metatarsal bone
+  89221001 		Основание первой плюсневой кости	Base of first metatarsal bone
+  90894004 		Основание второй плюсневой кости	Base of second metatarsal bone
+  89995006 		Основание третьей плюсневой кости	Base of third metatarsal bone
+  15368009 		Основание четвертой плюсневой кости	Base of fourth metatarsal bone
+  30980004 		Основание пятой плюсневой кости	Base of fifth metatarsal bone
+  38607000 		Шиловидный отросток пятой плюсневой кости	Styloid process of fifth metatarsal bone
+  2979003 		Медиальная клиновидная кость	Medial cuneiform bone
+  19193007 		Промежуточная клиновидная кость	Intermediate cuneiform bone
+  67411009 		Латеральная клиновидная кость	Lateral cuneiform bone
+  81012005 		Кубоид	Cuboid
+  75772009 		Ладьевидная кость стопы	Navicular bone of foot
+  67453005 		Осыпь	Talus
+  80144004 		Пяточная кость	Calcaneus
+  6417001 		Медиальная лодыжка	Medial malleolus
+  113225006 		Латеральная лодыжка малоберцовой кости	Lateral malleolus of fibula
+  22457002 		Головка малоберцовой кости	Head of fibula
+  45879002 		Бугристость большеберцовой кости	Tibial tuberosity
+  122474001 		Медиальный мыщелок бедренной кости	Medial condyle of femur
+  122475000 		Латеральный мыщелок бедренной кости	Lateral condyle of femur
+  69030007 		Седалищный бугор	Ischial tuberosity
+  29850006 		Подвздошный гребень	Iliac crest
+  442083009 		Анатомическое или приобретенное строение тела (строение тела)	Anatomical or acquired body structure (body structure)
+  107008 		Плодная часть плаценты	Fetal part of placenta
+  108003 		Целая мыщелковая эмиссарная вена	Entire condylar emissary vein
+  110001 		Висцеральный слой капсулы Боумена	Visceral layer of Bowman's capsule
+  111002 		Паращитовидная железа	Parathyroid gland
+  116007 		Подкожная клетчатка медиальной поверхности указательного пальца	Subcutaneous tissue of medial surface of index finger
+  124002 		Венечный отросток нижней челюсти	Coronoid process of mandible
+  149003 		Центральная пара микротрубочек, ресничка или жгутик, не бактериальная	Central pair of microtubules, cilium or flagellum, not bacterial
+  155008 		Глубокая артерия, огибающая подвздошную кость	Deep circumflex artery of ilium
+  167005 		Надключичная часть плечевого сплетения	Supraclavicular part of brachial plexus
+  202009 		Передний отдел почечной артерии	Anterior division of renal artery
+  205006 		Вся левая комиссура аортального клапана	Entire left commissure of aortic valve
+  206007 		Большая ягодичная мышца	Gluteus maximus muscle
+  221001 		Суставная поверхность, фаланги, четвертой пястной кости	Articular surface, phalanges, of fourth metacarpal bone
+  227002 		Канал Геринга	Canal of Hering
+  233006 		Печеночно-ободочная связка	Hepatocolic ligament
+  235004 		Верхняя губная артерия	Superior labial artery
+  246001 		Латеральное вестибулярное ядро	Lateral vestibular nucleus
+  247005 		Мезотимпанум	Mesotympanum
+  251007 		Грудная область	Pectoral region
+  256002 		Купферовская клетка	Kupffer cell
+  263002 		Грудной нерв	Thoracic nerve
+  266005 		Правая нижняя доля легкого	Right lower lobe of lung
+  272005 		Верхний суставной отросток поясничного позвонка	Superior articular process of lumbar vertebra
+  273000 		Боковой миокард	Lateral myocardium
+  283001 		Центральный подмышечный лимфатический узел	Central axillary lymph node
+  284007 		Все сухожилие сгибателя и сухожильное влагалище четвертого пальца стопы	Entire flexor tendon and tendon sheath of fourth toe
+  289002 		Пястно-фаланговый сустав указательного пальца	Metacarpophalangeal joint of index finger
+  301000 		Пятая плюсневая кость	Fifth metatarsal bone
+  311007 		Подошвенная поверхность большого пальца ноги	Plantar surface of great toe
+  315003 		Кожа пупка	Skin of umbilicus
+  318001 		Кардиальный отпечаток печени	Cardiac impression of liver
+  344001 		Лодыжка	Ankle
+  345000 		Атриовентрикулярный пучок	Atrioventricular bundle
+  356000 		Ретикулярный кориум	Reticular corium
+  393006 		Стенка мочевого пузыря	Wall of urinary bladder
+  402006 		Зубные ветви нижней альвеолярной артерии	Dental branches of inferior alveolar artery
+  405008 		Вся задняя височная диплоическая вена	Entire posterior temporal diploic vein
+  414003 		Дно желудка	Gastric fundus
+  420002 		Анастомоз, гетерокладический	Anastomosis, heterocladic
+  422005 		Нижняя поверхность языка	Inferior surface of tongue
+  446003 		Вертельная сумка	Trochanteric bursa
+  457008 		Коллатеральная связка	Collateral ligament
+  461002 		Боковой кортикоспинальный тракт	Lateral corticospinal tract
+  464005 		Базофильный нормобласт	Basophilic normoblast
+  465006 		Восходящая лобная извилина	Ascending frontal gyrus
+  471000 		Длинный сгибатель большого пальца стопы	Flexor hallucis longus muscle
+  480000 		Сердечно-легочная система кровообращения	Cardiopulmonary circulatory system
+  485005 		Поперечно-ободочная кишка	Transverse colon
+  528006 		Реберная поверхность легкого	Costal surface of lung
+  552004 		Все парасимпатические волокна блуждающего нерва до сердечного сплетения	Entire vagus nerve parasympathetic fibers to cardiac plexus
+  565008 		Межпозвоночное дисковое пространство пятого поясничного позвонка	Intervertebral disc space of fifth lumbar vertebra
+  582005 		Головка фаланги большого пальца ноги	Head of phalanx of great toe
+  587004 		Капсула проксимального межфалангового сустава третьего пальца стопы	Capsule of proximal interphalangeal joint of third toe
+  589001 		Межжелудочковая перегородка	Interventricular septum
+  595000 		Глазная щель	Palpebral fissure
+  608002 		Подкожная клетчатка желобка	Subcutaneous tissue of philtrum
+  621009 		Мультивезикулярное тело, внутренние везикулы	Multivesicular body, internal vesicles
+  635006 		Бугристость дистальной фаланги мизинца стопы	Tuberosity of distal phalanx of little toe
+  650002 		Верхний суставной отросток седьмого грудного позвонка	Superior articular process of seventh thoracic vertebra
+  660006 		Слизистая оболочка трахеи	Tracheal mucous membrane
+  661005 		Челюсть	Jaw
+  667009 		Эмбриональная структура	Embryonic structure
+  688000 		Фетальная гиалоидная артерия	Fetal hyaloid artery
+  691000 		Подслизистая основа тонкой кишки	Small intestine submucosa
+  692007 		Тело седалищной кости	Body of ischium
+  723004 		Плотные промежуточные пучки филаментов	Dense intermediate filament bundles
+  774007 		Строение головы и шеи	Head and neck structure
+  790007 		Висцеральная часть печени	Visceral aspect of liver
+  798000 		Вся глубокая височная вена	Entire deep temporal vein
+  808000 		Задние межреберные артерии	Posterior intercostal arteries
+  809008 		Хрящевой череп плода	Fetal chondrocranium
+  823005 		Задний шейный корешок спинного мозга	Posterior cervical spinal cord nerve root
+  830004 		Остистый отросток пятого грудного позвонка	Spinous process of fifth thoracic vertebra
+  836005 		Оральная область лица	Oral region of face
+  885000 		Мышечная пластинка слизистой оболочки толстой кишки	Lamina muscularis of colonic mucous membrane
+  895007 		Передняя крестообразная связка коленного сустава	Anterior cruciate ligament of knee joint
+  917004 		Верхнее гортанное отверстие	Superior laryngeal aperture
+  921006 		Щитоподъязычная ветвь петли шейки матки	Thyrohyoid branch of ansa cervicalis
+  947002 		Ножка диафрагмы	Crus of diaphragm
+  955009 		бронх	Bronchus
+  976004 		Яичниковая вена	Ovarian vein
+  996007 		Менингеальные ветви затылочной артерии	Meningeal branches of occipital artery
+  1005009 		Весь диафрагмальный лимфатический узел	Entire diaphragmatic lymph node
+  1012000 		Фиброзная часть перикарда	Fibrous portion of pericardium
+  1015003 		Перитонзиллярная ткань	Peritonsillar tissue
+  1028005 		Сальная железа	Sebaceous gland
+  1030007 		Пузырчатая сумка грудино-подъязычной мышцы	Vesicular bursa of sternohyoid muscle
+  1063000 		Лобно-скуловой шов черепа	Frontozygomatic suture of skull
+  1075005 		Промоноцит	Promonocyte
+  1076006 		Вся подкожная препателлярная сумка	Entire subcutaneous prepatellar bursa
+  1086007 		Женский	Female
+  1087003 		Грудино-щитовидная мышца	Sternothyroid muscle
+  1092001 		Верхняя затылочная извилина	Superior occipital gyrus
+  1099005 		Кора тимуса	Thymic cortex
+  1101003 		Полость черепа	Cranial cavity
+  1106008 		Вся большая чашечка	Entire major calyx
+  1110006 		Тарзальная железа	Tarsal gland
+  1122009 		Нижняя продольная мышца языка	Inferior longitudinal muscle of tongue
+  1136004 		Аортолегочная перегородка	Aortopulmonary septum
+  1159005 		Уздечка языка	Frenulum linguae
+  1172006 		Зубовидный отросток оси	Odontoid process of axis
+  1173001 		Нижнечелюстной нерв	Mandibular nerve
+  1174007 		Хромосомы, группа E	Chromosomes, group E
+  1193009 		Большая круглая мышца	Teres major muscle
+  1216008 		Синостоз	Synostosis
+  1231004 		Мозговые оболочки	Meninges
+  1236009 		Серозная оболочка двенадцатиперстной кишки	Duodenal serosa
+  1243003 		Нижний суставной отросток шестого шейного позвонка	Inferior articular process of sixth cervical vertebra
+  1246006 		Тыльные пальцевые нервы лучевого нерва	Dorsal digital nerves of radial nerve
+  1263005 		Отличительное расположение микротрубочек	Distinctive arrangement of microtubules
+  1277008 		Позвоночный нерв	Vertebral nerve
+  1307006 		Голосовая щель	Glottis
+  1311000 		Телогеновые волосы	Telogen hair
+  1350001 		Сухожилие глубокого сгибателя указательного пальца	Deep flexor tendon of index finger
+  1353004 		Серозная оболочка желудка	Gastric serosa
+  1403006 		Широкая латеральная мышца бедра	Vastus lateralis muscle
+  1425000 		Задняя ножка стремени	Posterior limb of stapes
+  1439000 		Паравезикулярный лимфатический узел	Paravesicular lymph node
+  1441004 		Желудочек гортани	Ventricle of larynx
+  1456008 		Желтый фиброзный хрящ	Yellow fibrocartilage
+  1467009 		Теменная ветвь поверхностной височной артерии	Parietal branch of superficial temporal artery
+  1484003 		Плюсна	Metatarsus
+  1490004 		Мягкие ткани туловища	Soft tissues of trunk
+  1502004 		Передняя слепокишечная артерия	Anterior cecal artery
+  1511004 		Семявыбрасывающий проток	Ejaculatory duct
+  1516009 		Лобно-подбородочный диаметр головы	Frontomental diameter of head
+  1527006 		Пластинка четвертого грудного позвонка	Lamina of fourth thoracic vertebra
+  1537001 		Межпозвоночный диск одиннадцатого грудного позвонка	Intervertebral disc of eleventh thoracic vertebra
+  1541002 		Копчиковое сплетение	Coccygeal plexus
+  1562001 		Пульпозное ядро ​​межпозвоночного диска третьего поясничного позвонка	Nucleus pulposus of intervertebral disc of third lumbar vertebra
+  1580005 		Вентрально-латеральное ядро ​​таламуса	Ventral lateral nucleus of thalamus
+  1581009 		Подвздошные артерии	Ileal arteries
+  1584001 		Весь симфиз	Entire symphysis
+  1600003 		Ременная мышца головы	Splenius capitis muscle
+  1605008 		Гистиобласт	Histioblast
+  1610007 		Отокония	Otoconia
+  1611006 		Весь парамаммарный лимфатический узел	Entire paramammary lymph node
+  1617005 		Внутренняя гортань	Intrinsic larynx
+  1620002 		Метафазное ядро	Metaphase nucleus
+  1626008 		Третий грудной позвонок	Third thoracic vertebra
+  1627004 		Медиальная коллатеральная связка коленного сустава	Medial collateral ligament of knee joint
+  1630006 		Супраорбитальная вена	Supraorbital vein
+  1631005 		Передняя кишка	Foregut
+  1650005 		Ворота левого легкого	Hilum of left lung
+  1655000 		Ядро поперечного ножкового тракта	Transverse peduncular tract nucleus
+  1659006 		Дорсомедиальное ядро ​​таламуса	Dorsomedial nucleus of thalamus
+  1684009 		Круглая связка печени	Ligamentum teres of liver
+  1706004 		Тимическая долька	Thymic lobule
+  1707008 		Вентральная группа ядер таламуса	Ventral nuclear group of thalamus
+  1711002 		Периорбитальная область	Periorbital region
+  1716007 		Купула ампулярная	Cupula ampullaris
+  1721005 		Правая миндалина	Right tonsil
+  1729007 		Центральный тегментальный тракт	Central tegmental tract
+  1732005 		Грудной проток	Thoracic duct
+  1765002 		Лимфатическая система грудной клетки	Lymphatic of thorax
+  1780008 		Премеланосома	Premelanosome
+  1781007 		Крестцово-подвздошная область	Sacroiliac region
+  1797002 		Нарис	Naris
+  1818002 		Большой артериальный круг радужки	Greater circulus arteriosus of iris
+  1825009 		Весь корень носа	Entire root of nose
+  1832000 		Бульбарная конъюнктива	Bulbar conjunctiva
+  1840006 		Мышцы, поднимающие волосы	Arrector pili muscles
+  1849007 		Глоточный карман	Pharyngeal recess
+  1853009 		Надподъязычные мышцы	Suprahyoid muscles
+  1874005 		Весь мысовой общий подвздошный лимфатический узел	Entire promontory common iliac lymph node
+  1895000 		Вся мышечно-диафрагмальная вена	Entire musculophrenic vein
+  1902009 		Кожа наружного уха	Skin of external ear
+  1910005 		Все ухо	Entire ear
+  1918003 		Надпочечниковая аорта	Suprarenal aorta
+  1927002 		Вся область левого локтя	Entire left elbow region
+  1992003 		Внутренний слуховой проход	Porus acusticus internus
+  1997009 		Cingulum dentis	Cingulum dentis
+  2010005 		Ключичная поверхность лопатки	Clavicular facet of scapula
+  2020000 		Верхняя грудная артерия	Superior thoracic artery
+  2031008 		Вентральная срединная щель спинного мозга	Spinal cord ventral median fissure
+  2033006 		Правая маточная труба	Right fallopian tube
+  2044003 		Вагинальные нервы	Vaginal nerves
+  2048000 		Язычная миндалина	Lingual tonsil
+  2049008 		ворсины хориона	Chorionic villi
+  2059009 		Кожа мочки уха	Skin of ear lobule
+  2071003 		Ретикулярная формация спинного мозга	Reticular formation of spinal cord
+  2076008 		Головка фаланги руки	Head of phalanx of hand
+  2083001 		Ядро двусмысленное	Nucleus ambiguus
+  2095001 		Добавочная пазуха	Accessory sinus
+  2123001 		Туберомаммиллярное ядро	Tuberomammillary nucleus
+  2150006 		Клетка переходного эпителия мочевыводящих путей	Urinary tract transitional epithelial cell
+  2156000 		Глиальная клетка	Glial cell
+  2160002 		артериальная связка	Ligamentum arteriosum
+  2175005 		Полость глотки	Pharyngeal cavity
+  2182009 		Базальная зона эндометрия	Endometrial zona basalis
+  2192001 		Ключичная часть большой грудной мышцы	Clavicular part of pectoralis major muscle
+  2205003 		Пластинка пятого грудного позвонка	Lamina of fifth thoracic vertebra
+  2209009 		Базальная поверхность мозга	Cerebral basal surface
+  2236006 		Малый костный таз	Lesser osseous pelvis
+  2246008 		Волосковая клетка типа I	Type I hair cell
+  2255006 		Подсерозный	Subserosa
+  2302002 		Вены колена	Veins of the knee
+  2305000 		Остистый отросток шейного позвонка	Spinous process of cervical vertebra
+  2306004 		Основание третьей пястной кости	Base of third metacarpal bone
+  2327009 		Вся слюнная серозно-слизистая железа (строение тела)	Entire salivary seromucous gland (body structure)
+  2330002 		Сегментарные бронхиальные ветви	Segmental bronchial branches
+  2332005 		Задний мозг плода	Metencephalon of fetus
+  2334006 		Чашечка	Calyx
+  2349003 		Носовой шов черепа	Nasal suture of skull
+  2372001 		Медиальная поверхность пальца ноги	Medial surface of toe
+  2383005 		Папиллярные мышцы правого желудочка	Papillary muscles of right ventricle
+  2389009 		Верхний край надпочечника	Superior margin of adrenal gland
+  2395005 		Поперечная лицевая артерия	Transverse facial artery
+  2397002 		Первая плюсневая кость медиальной клиновидной кости	First metatarsal facet of medial cuneiform bone
+  2400006 		Нижний левый первый премоляр	Mandibular left first premolar tooth
+  2402003 		Тыльная часть стопы	Dorsum of foot
+  2421006 		Подчелюстной ганглий	Submaxillary ganglion
+  2433001 		Пальцевое сухожилие и сухожильное влагалище стопы	Digital tendon and tendon sheath of foot
+  2436009 		Внутренняя оболочка вены	Tunica intima of vein
+  2453002 		Подкожная клетчатка задней поверхности предплечья	Subcutaneous tissue of posterior surface of forearm
+  2454008 		Суставная поверхность, третья пястная, второй пястной кости	Articular surface, third metacarpal, of second metacarpal bone
+  2484000 		Кожа уздечки клитора	Skin of frenulum of clitoris
+  2489005 		Медиальная контрольная связка глаза	Medial check ligament of eye
+  2499000 		Вся цистерна моста	Entire cisterna pontis
+  2502001 		Мембрана лизосомы	Membrane of lysosome
+  2504000 		Панкреатическое сплетение	Pancreatic plexus
+  2510000 		Треугольник бедренной кости	Femoral triangle
+  2539000 		Верхняя прямокишечная артерия	Superior rectal artery
+  2543001 		Кубовидная суставная поверхность четвертой плюсневой кости	Cuboid articular facet of fourth metatarsal bone
+  2550002 		Фаланга большого пальца	Phalanx of thumb
+  2577006 		Тонкая мышца	Gracilis muscle
+  2579009 		Плазмобласт	Plasmablast
+  2592007 		Все конечности	All extremities
+  2600000 		Сухожилие длинного сгибателя большого пальца	Flexor pollicis longus muscle tendon
+  2620004 		Межпозвоночный диск третьего грудного позвонка	Intervertebral disc of third thoracic vertebra
+  2639009 		Нейроэндокринная ткань	Neuroendocrine tissue
+  2653009 		Задняя таламическая лучистость внутренней капсулы	Posterior thalamic radiation of internal capsule
+  2666009 		Полуостистая мышца головы	Semispinalis capitis muscle
+  2675006 		Передняя решетчатая артерия	Anterior ethmoidal artery
+  2681003 		Дорсальный нерв полового члена	Dorsal nerve of penis
+  2682005 		Слизистая оболочка мочевого пузыря	Mucous membrane of urinary bladder
+  2686008 		Медиальная обонятельная извилина	Medial olfactory gyrus
+  2687004 		Пространство Боумена	Bowman's space
+  2695000 		Левая верхнечелюстная пазуха	Left maxillary sinus
+  2703009 		Вся шпорная артерия	Entire calcarine artery
+  2712006 		Капсула голеностопного сустава	Capsule of ankle joint
+  2718005 		Апикальное отверстие зуба	Apical foramen of tooth
+  2726002 		Складка для стремени	Fold for stapes
+  2730004 		Вся желточная вена плаценты	Entire vitelline vein of placenta
+  2739003 		Эндометрий	Endometrium
+  2741002 		Медиальная затылочно-височная извилина	Medial occipitotemporal gyrus
+  2746007 		Круговой слой мышечной оболочки желудка	Circular layer of gastric muscularis
+  2748008 		Спинной мозг	Spinal cord
+  2759004 		Эккриновая железа	Eccrine gland
+  2771005 		Собственная пластинка мочеточника	Lamina propria of ureter
+  2789006 		апокринная железа	Apocrine gland
+  2792005 		Натянутая часть барабанной перепонки	Pars tensa of tympanic membrane
+  2803000 		Сухожильная оболочка подколенной мышцы	Tendon sheath of popliteus muscle
+  2810006 		кремастерная фасция	Cremasteric fascia
+  2812003 		Головка бедренной кости	Head of femur
+  2824005 		Остистый отросток четвертого грудного позвонка	Spinous process of fourth thoracic vertebra
+  2826007 		Пластинка четвертого поясничного позвонка	Lamina of fourth lumbar vertebra
+  2830005 		Тыльные пальцевые нервы латерального большого пальца стопы и медиального второго пальца стопы	Dorsal digital nerves of lateral hallux and medial second toe
+  2839006 		Перивезикулярные ткани семенных пузырьков	Perivesicular tissues of seminal vesicles
+  2841007 		Почечная артерия	Renal artery
+  2845003 		Респираторный эпителий	Respiratory epithelium
+  2848001 		Поверхностная надчревная артерия	Superficial epigastric artery
+  2855004 		Добавочная головная вена	Accessory cephalic vein
+  2861001 		Вся железа (орган)	Entire gland (organ)
+  2894003 		Задний надгортанник	Posterior epiglottis
+  2905008 		Передняя связка матки	Anterior ligament of uterus
+  2909002 		Задняя часть диафрагмальной поверхности печени	Posterior portion of diaphragmatic aspect of liver
+  2920002 		Двигательная ветвь лицевого нерва	Facial nerve motor branch
+  2922005 		Задняя сосочковая мышца левого желудочка	Posterior papillary muscle of left ventricle
+  2923000 		Подкожная клетчатка надглазничной области	Subcutaneous tissue of supraorbital area
+  2969000 		Анатомическая структура пространства (строение тела)	Anatomical space structure (body structure)
+  2986006 		Таранная поверхность ладьевидной кости стопы	Talar facet of navicular bone of foot
+  2998001 		Весь правый край матки	Entire right margin of uterus
+  3003007 		Передняя ножка внутренней капсулы	Anterior limb of internal capsule
+  3008003 		Белый фиброзный хрящ	White fibrocartilage
+  3028004 		Клетка переходного эпителия	Transitional epithelial cell
+  3039001 		Подкожная клетчатка бедра	Subcutaneous tissue of thigh
+  3042007 		Гломерулярный мочевой полюс	Glomerular urinary pole
+  3054007 		Суставная поверхность, пястная, фаланги большого пальца	Articular surface, metacarpal, of phalanx of thumb
+  3055008 		Костный мозг тела позвонка	Bone marrow of vertebral body
+  3056009 		Антеровентральное ядро ​​таламуса	Anteroventral nucleus of thalamus
+  3057000 		нерв	Nerve
+  3058005 		Периферическая нервная система	Peripheral nervous system
+  3062004 		Спинномозговая паутинная оболочка	Spinal arachnoid
+  3068000 		Просвет семенного пузырька	Seminal vesicle lumen
+  3081007 		Митохондрия в делении	Mitochondrion in division
+  3093003 		Сухожильная дуга тазовой фасции	Tendinous arch of pelvic fascia
+  3100007 		Клиническая коронка зуба	Clinical crown of tooth
+  3113001 		Супрахориоидальное пространство	Suprachoroidal space
+  3117000 		Тыльная поверхность указательного пальца	Dorsal surface of index finger
+  3118005 		Трабекула карнеа левого желудочка	Trabecula carnea of left ventricle
+  3120008 		Плевра	Pleura
+  3138006 		Костная ткань	Bony tissue
+  3153003 		Tractus olivocochlearis	Tractus olivocochlearis
+  3156006 		Запирательная артерия	Obturator artery
+  3159004 		Реберно-шейный ствол	Costocervical trunk
+  3169005 		Спинномозговой нерв	Spinal nerve
+  3178004 		Шов мягкого неба	Raphe of soft palate
+  3194006 		Эндокард правого предсердия	Endocardium of right atrium
+  3215002 		Подкожная клетчатка затылочной области	Subcutaneous tissue of nuchal region
+  3222005 		Все крупные артерии	All large arteries
+  3227004 		Главный ствол левой коронарной артерии	Left coronary artery main stem
+  3236000 		Задний сегмент правой верхней доли легкого	Posterior segment of right upper lobe of lung
+  3243006 		Параметральный лимфатический узел	Parametrial lymph node
+  3255000 		Сосочковая область	Papillary area
+  3262009 		Корневой канал зуба	Root canal of tooth
+  3279003 		Ножка третьего шейного позвонка	Pedicle of third cervical vertebra
+  3295003 		Вентральное переднее ядро	Ventral anterior nucleus
+  3301002 		Тектопонтийные волокна	Tectopontine fibers
+  3302009 		Селезеночные ветви селезеночной артерии	Splenic branches of splenic artery
+  3315000 		Вестибулоспинальный тракт	Vestibulospinal tract
+  3332001 		Затылочно-лобный диаметр головы	Occipitofrontal diameter of head
+  3336003 		Гаверсов канал	Haversian canal
+  3341006 		Правое легкое	Right lung
+  3350008 		Вся правая комиссура легочного клапана	Entire right commissure of pulmonic valve
+  3362007 		Интертрагальная вырезка	Intertragal incisure
+  3366005 		Передняя сосочковая мышца левого желудочка	Anterior papillary muscle of left ventricle
+  3370002 		Поддерживающая ткань прямой кишки	Supporting tissue of rectum
+  3374006 		Вторичный сперматоцит	Secondary spermatocyte
+  3377004 		Аггер наси	Agger nasi
+  3382006 		Rima oris	Rima oris
+  3383001 		Несегментированный базофил	Nonsegmented basophil
+  3394002 		Подзатылочно-теменной диаметр головы	Suboccipitobregmatic diameter of head
+  3395001 		Верхняя глазная дуга	Superior palpebral arch
+  3396000 		Мезогастрий	Mesogastrium
+  3400000 		Клетка кости	Cell of bone
+  3409004 		Боковой край предплечья	Lateral margin of forearm
+  3417007 		Мышцы-вращатели	Rotator muscles
+  3438001 		Глубокие лимфатические сосуды верхней конечности	Deep lymphatics of upper extremity
+  3444002 		Таламостриарные вены	Thalamostriate veins
+  3447009 		Проникший ооцит	Penetrated oocyte
+  3460003 		Переднедорсальное ядро ​​таламуса	Anterodorsal nucleus of thalamus
+  3462006 		Комиссура трехстворчатого клапана	Commissure of tricuspid valve
+  3471002 		Задняя срединная линия туловища	Posterior midline of trunk
+  3478008 		Широкая медиальная мышца бедра	Vastus medialis muscle
+  3481003 		Эмбриональный яичко	Embryonic testis
+  3488009 		Кольчатая пластинка, просвет цистерны	Annulate lamella, cisternal lumen
+  3490005 		Подкожная клетчатка подзатылочной области	Subcutaneous tissue of suboccipital region
+  3524005 		Боковая стенка сосцевидной пазухи	Lateral wall of mastoid antrum
+  3538003 		Капсула проксимального большеберцово-малоберцового сустава	Capsule of proximal tibiofibular joint
+  3541007 		Тыльная плюсневая артерия	Dorsal metatarsal artery
+  3553006 		Капсула щитовидной железы	Thyroid capsule
+  3556003 		Дорсальное ядро ​​трапециевидного тела	Dorsal nucleus of trapezoid body
+  3563003 		Мышечная оболочка мочеточника	Muscularis of ureter
+  3572006 		Тело позвонка	Body of vertebra
+  3578005 		Тело желчного пузыря	Body of gallbladder
+  3582007 		Желудочно-диафрагмальная связка	Gastrophrenic ligament
+  3584008 		Дуга десятого грудного позвонка	Arch of tenth thoracic vertebra
+  3594003 		Прямая часть длинной мышцы шеи	Straight part of longus colli muscle
+  3608004 		Седалищно-копчиковая мышца	Ischiococcygeus muscle
+  3609007 		Затылочная ветвь задней ушной артерии	Occipital branch of posterior auricular artery
+  3646006 		Ламеллиподиум	Lamellipodium
+  3663005 		Барабанное отверстие евстахиевой трубы	Tympanic ostium of Eustachian tube
+  3665003 		Тазовая стенка	Pelvic wall
+  3670005 		Весь субпилорический лимфатический узел	Entire subpyloric lymph node
+  3711007 		Большой сосуд	Great vessel
+  3743007 		Боковая грудная артерия	Lateral thoracic artery
+  3761003 		Пульпозное ядро ​​межпозвоночного диска первого грудного позвонка	Nucleus pulposus of intervertebral disc of first thoracic vertebra
+  3766008 		Подкожная клетчатка нижней конечности	Subcutaneous tissue of lower extremity
+  3785006 		Вся тыльная пястная связка	Entire dorsal metacarpal ligament
+  3788008 		Верхний сегмент правой нижней доли легкого	Superior segment of right lower lobe of lung
+  3789000 		Аргентаффинные клетки	Argentaffin cells
+  3810000 		Хрящ носовой перегородки	Nasal septal cartilage
+  3838008 		Верхушка копчика	Apex of coccyx
+  3860006 		Пересаженная печень	Transplanted liver
+  3865001 		Межлопаточная область спины	Interscapular region of back
+  3867009 		Тыльная поверхность большого пальца ноги	Dorsal surface of great toe
+  3876002 		Подкожная клетчатка бедренной области	Subcutaneous tissue of femoral region
+  3877006 		Общее сонное сплетение	Common carotid plexus
+  3910004 		Подкожная клетчатка латеральной поверхности четвертого пальца стопы	Subcutaneous tissue of lateral surface of fourth toe
+  3916005 		Затылочный лимфатический узел	Occipital lymph node
+  3924000 		Перикардиодиафрагмальная артерия	Pericardiophrenic artery
+  3931001 		Вестибулярное окно	Vestibular window
+  3935005 		Головка десятого ребра	Head of tenth rib
+  3937002 		Энторинальная кора	Entorhinal cortex
+  3954005 		Слезный мешок	Lacrimal sac
+  3956007 		Пятая плюсневая суставная поверхность четвертой плюсневой кости	Fifth metatarsal articular facet of fourth metatarsal bone
+  3959000 		Прямая мышца головы	Rectus capitis muscle
+  3960005 		Обонятельный тракт	Olfactory tract
+  3964001 		Извилины мозга	Gyrus of brain
+  3966004 		Вся теменная ветвь передней мозговой артерии	Entire parietal branch of anterior cerebral artery
+  3977005 		Подкожная клетчатка носовой раковины	Subcutaneous tissue of concha
+  3984002 		Глубокие вены клитора	Deep veins of clitoris
+  3989007 		Медиальные ядра бледного шара	Medial nuclei of globus pallidus
+  4015004 		Хромосомы, группа А	Chromosomes, group A
+  4019005 		Задняя спайка больших половых губ	Posterior commissure of labia majora
+  4029003 		Эозинофильный промиелоцит	Eosinophilic promyelocyte
+  4061004 		Боковая стенка глазницы	Lateral wall of orbit
+  4066009 		Капсула проксимального межфалангового сустава указательного пальца	Capsule of proximal interphalangeal joint of index finger
+  4072009 		Четвертый копчиковый позвонок	Fourth coccygeal vertebra
+  4081003 		Вся дорсальная язычная вена	Entire dorsal lingual vein
+  4093007 		Бронхиальные ветви блуждающего нерва	Vagus nerve bronchial branches
+  4111006 		Макула мешочка	Macula of saccule
+  4117005 		Центральный канал пояснично-крестцового отдела спинного мозга	Lumbosacral spinal cord central canal
+  4121003 		Верхняя лобная борозда	Superior frontal sulcus
+  4146003 		Артерия конечности	Artery of extremity
+  4148002 		Ладонная поверхность мизинца	Palmar surface of little finger
+  4150005 		Чревное сплетение	Celiac plexus
+  4158003 		Брюшное аортальное сплетение	Abdominal aortic plexus
+  4159006 		Гиперпартериальные бронхи	Hyparterial bronchi
+  4180000 		Обе нижние конечности	Both lower extremities
+  4193005 		Все сухожилие разгибателя и сухожильное влагалище пятого пальца стопы	Entire extensor tendon and tendon sheath of fifth toe
+  4205002 		Тюркская ячейка	Türk cell
+  4212006 		Эпителиальная клетка	Epithelial cell
+  4215008 		Головка второго ребра	Head of second rib
+  4247003 		Первая пястная кость	First metacarpal bone
+  4258007 		Задние большеберцовые вены	Posterior tibial veins
+  4276000 		Нижний суставной отросток седьмого шейного позвонка	Inferior articular process of seventh cervical vertebra
+  4281009 		Средняя часть подвздошной кишки	Middle portion of ileum
+  4295007 		Паракортикальная область лимфатического узла	Paracortical area of lymph node
+  4303006 		Хрящевой канал	Cartilage canal
+  4312008 		Передняя срединная линия живота	Anterior midline of abdomen
+  4317002 		Остистая мышца	Spinalis muscle
+  4328003 		Протоплазматический астроцит	Protoplasmic astrocyte
+  4335006 		Верхняя челюсть	Upper jaw
+  4352005 		Субхорионическое пространство	Subchorionic space
+  4358009 		Боковая поверхность мизинца	Lateral surface of little finger
+  4360006 		Слой шиповатый	Stratum spinosum
+  4369007 		Слизистая оболочка тонкой кишки	Small intestine mucous membrane
+  4371007 		Четвертая плюсневая кость латеральной клиновидной кости	Fourth metatarsal facet of lateral cuneiform bone
+  4375003 		Надрез хрящевой части слухового прохода	Incisure of cartilaginous portion of auditory canal
+  4377006 		Парафасцикулярное ядро ​​таламуса	Parafascicular nucleus of thalamus
+  4394008 		Лестница вестибюля	Scala vestibuli
+  4402002 		Передняя суставная поверхность таранной кости	Anterior articular surface for talus
+  4419000 		Подслизистая основа трахеи	Tracheal submucosa
+  4421005 		Клетка	Cell
+  4430002 		Клиновидная кость (Clivus ossis sphenoidalis)	Clivus ossis sphenoidalis
+  4432005 		артериальный проток	Ductus arteriosus
+  4442007 		Зубная дуга	Dental arch
+  4486002 		Добавочная синусная железа	Accessory sinus gland
+  4524000 		Подключичное сплетение	Subclavian plexus
+  4527007 		Сустав нижней конечности	Joint of lower extremity
+  4537002 		Внутренняя мозговая пластинка таламуса	Internal medullary lamina of thalamus
+  4548009 		Пластинчатая гранула, как в клетках, секретирующих поверхностно-активное вещество	Lamellated granule, as in surfactant-secreting cell
+  4549001 		Все парасимпатические волокна блуждающего нерва к печени, желчному пузырю, желчным протокам и поджелудочной железе	Entire vagus nerve parasympathetic fibers to liver, gallbladder, bile ducts and pancreas
+  4566004 		Тенториум мозжечка	Tentorium cerebelli
+  4573009 		Десмосома	Desmosome
+  4578000 		Кожа задней поверхности бедра	Skin of posterior surface of thigh
+  4588004 		Средний ствол плечевого сплетения	Middle trunk of brachial plexus
+  4596009 		Гортань	Larynx
+  4603002 		Основание фаланги стопы	Base of phalanx of foot
+  4606005 		Бугорок восьмого ребра	Tubercle of eighth rib
+  4621004 		Малая бугристость плечевой кости	Lesser tuberosity of humerus
+  4624007 		Медуллярный канатик	Medullary cord
+  4647008 		Липидная капля, гомогенная	Lipid droplet, homogeneous
+  4651005 		Белочная оболочка губчатого тела	Tunica albuginea of corpus spongiosum
+  4658004 		Кожа затылочной области	Skin of nuchal region
+  4677002 		Базальная пластинка, включение в субэпителиальном расположении	Basal lamina, inclusion in subepithelial location
+  4703008 		Кардинальная вена	Cardinal vein
+  4717004 		Нейтрофильный миелоцит	Neutrophilic myelocyte
+  4718009 		Все венозное сплетение основания овального отверстия черепа	Entire venous plexus of the foramen ovale basis cranii
+  4743003 		Вентральная крестцово-копчиковая связка	Ventral sacrococcygeal ligament
+  4755009 		Медиальная поверхность большого пальца ноги	Medial surface of great toe
+  4759003 		Близнецовая мышца	Gemellus muscle
+  4766002 		Супракардинальная вена	Supracardinal vein
+  4768001 		промежностный нерв	Perineal nerve
+  4774001 		Перикардиальная ветвь диафрагмального нерва	Phrenic nerve pericardial branch
+  4775000 		Вентральное заднее нижнее ядро	Ventral posterior inferior nucleus
+  4799000 		клетка Дейтера	Deiter's cell
+  4810005 		Маточное венозное сплетение	Uterine venous plexus
+  4812002 		Передний отдел большеберцовой кости	Anterior tibial compartment
+  4828007 		Бедренный канал	Femoral canal
+  4840007 		Подкожная клетчатка безымянного пальца	Subcutaneous tissue of ring finger
+  4843009 		Перепончатая ампула	Membranous ampulla
+  4861000 		непарный бугорок	Tuberculum impar
+  4866005 		Мышца, сжимающая глотку	Constrictor pharyngeus muscle
+  4870002 		Дорсальные ядра покрышки среднего мозга	Dorsal tegmental nuclei of midbrain
+  4871003 		Спиральная пластинка модиолуса	Spiral lamina of modiolus
+  4881004 		Вся подъязычная вена	Entire sublingual vein
+  4888005 		Вся междольковая вена почки	Entire interlobular vein of kidney
+  4897009 		Клеточная мембрана, прокариотическая	Cell membrane, prokaryotic
+  4905007 		Маточно-влагалищное сплетение	Uterovaginal plexus
+  4906008 		Барабанная полость	Tympanic antrum
+  4924005 		Тонкая долька мозжечка	Cerebellar gracile lobule
+  4942000 		Лимфатический узел нижней конечности	Lymph node of lower extremity
+  4954000 		Лучевая вырезка локтевой кости	Radial notch of ulna
+  4956003 		Подкожная клетчатка спины	Subcutaneous tissue of back
+  4958002 		Миндалевидное ядро	Amygdaloid nucleus
+  5001007 		Верхняя височная борозда	Superior temporal sulcus
+  5023006 		Желтый костный мозг	Yellow bone marrow
+  5026003 		Задняя поверхность простаты	Posterior surface of prostate
+  5046008 		Поверхностные дорсальные вены клитора	Superficial dorsal veins of clitoris
+  5068003 		Внутренняя запирательная мышца седалищная сумка	Obturator internus muscle ischial bursa
+  5069006 		Ругальская колонна	Rugal column
+  5076001 		Подгрудинный угол	Infrasternal angle
+  5115006 		Задняя ушная вена	Posterior auricular vein
+  5122003 		Весь угол первого ребра	Entire angle of first rib
+  5128004 		Подвешивающая связка хрусталика	Suspensory ligament of lens
+  5192008 		Межпозвоночное отверстие двенадцатого грудного позвонка	Intervertebral foramen of twelfth thoracic vertebra
+  5194009 		Эпителий хрусталика	Epithelium of lens
+  5195005 		Правая наружная сонная артерия	Right external carotid artery
+  5204005 		Верхний илеоцекальный карман	Superior ileocecal recess
+  5213007 		Лобные вены	Frontal veins
+  5225005 		Маточное устье фаллопиевой трубы	Uterine ostium of fallopian tube
+  5228007 		Правое полушарие головного мозга	Right cerebral hemisphere
+  5229004 		Слизистая оболочка желчного пузыря	Mucosa of gallbladder
+  5261000 		Межпозвоночный диск грудного позвонка	Intervertebral disc of thoracic vertebra
+  5272005 		Кожа боковой части шеи	Skin of lateral portion of neck
+  5279001 		единственное отверстие	Foramen singulare
+  5296000 		Передний средостенный лимфатический узел	Anterior mediastinal lymph node
+  5324007 		Верхний полюс почки	Superior pole of kidney
+  5329002 		Четвертый шейный позвонок	Fourth cervical vertebra
+  5336001 		Нижняя лобная извилина	Inferior frontal gyrus
+  5347008 		Синаптическая специализация, цитоплазматическая	Synaptic specialization, cytoplasmic
+  5362005 		Срединная дугообразная связка диафрагмы	Median arcuate ligament of diaphragm
+  5366008 		Гиппокамп	Hippocampus
+  5379004 		Собственная мышечная оболочка тонкой кишки	Small intestine muscularis propria
+  5382009 		Верхняя фасция промежности	Superior fascia of perineum
+  5394000 		Парацервикальный лимфатический узел матки	Uterine paracervical lymph node
+  5398002 		Нормальная жировая прослойка	Normal fat pad
+  5403001 		Суставной отросток третьего поясничного позвонка	Articular process of third lumbar vertebra
+  5421003 		Половая хромосома Y	Sex chromosome Y
+  5427004 		Апокриновый внутриэпидермальный проток	Apocrine intraepidermal duct
+  5458003 		Глубокая артерия клитора	Deep artery of clitoris
+  5459006 		Кардиальная вырезка желудка	Cardiac incisure of stomach
+  5491007 		Слёзная часть круговой мышцы глаза	Lacrimal part of orbicularis oculi muscle
+  5493005 		Пястно-фаланговый сустав мизинца	Metacarpophalangeal joint of little finger
+  5498001 		Верхний аберрантный каналец придатка яичка	Superior aberrant ductule of epididymis
+  5520004 		Подкожная клетчатка подбородка	Subcutaneous tissue of chin
+  5538001 		Покрышечная часть моста	Tegmental portion of pons
+  5544002 		Продольный слой мышечной оболочки двенадцатиперстной кишки	Longitudinal layer of duodenal muscularis propria
+  5560003 		Слизистая оболочка альвеолярного отростка	Alveolar ridge mucous membrane
+  5564007 		синглет	Singlet
+  5574005 		Седьмой реберный хрящ	Seventh costal cartilage
+  5580002 		Сухожилие надостной мышцы	Tendon of supraspinatus muscle
+  5597008 		Сетчатка правого глаза	Retina of right eye
+  5611001 		Фиброзное кольцо межпозвоночного диска пятого шейного позвонка	Anulus fibrosus of intervertebral disc of fifth cervical vertebra
+  5625000 		Ладьевидная поверхность промежуточной клиновидной кости	Navicular facet of intermediate cuneiform bone
+  5627008 		Правая висцеральная плевра	Right visceral pleura
+  5633004 		Мышечная часть межжелудочковой перегородки	Muscular portion of interventricular septum
+  5643001 		Канал желудка	Canal of stomach
+  5644007 		Сломанная мембрана P лицо	Fractured membrane P face
+  5653000 		Вся внутренняя поверхность седьмого ребра	Entire inner surface of seventh rib
+  5665001 		Сетчатка	Retina
+  5668004 		Нижний отдел пищеварительного тракта	Lower digestive tract
+  5682004 		Подкожная клетчатка верхней конечности	Subcutaneous tissue of upper extremity
+  5696005 		Вся суставная часть бугорка девятого ребра	Entire articular part of tubercle of ninth rib
+  5697001 		Кожа боковой поверхности пальца	Skin of lateral surface of finger
+  5709001 		Многораздельные мышцы	Multifidus muscles
+  5713008 		Подчелюстной треугольник	Submandibular triangle
+  5717009 		Височная ямка	Temporal fossa
+  5718004 		Сухожилия и сухожильные влагалища голени и голеностопного сустава	Tendon and tendon sheath of leg and ankle
+  5727003 		Передний шейный лимфатический узел	Anterior cervical lymph node
+  5742000 		Кожа предплечья	Skin of forearm
+  5751008 		Подкожная клетчатка передней части шеи	Subcutaneous tissue of anterior portion of neck
+  5769004 		Эндоцервикальный эпителий	Endocervical epithelium
+  5780004 		Парадидимис	Paradidymis
+  5798000 		Диафрагма	Diaphragm
+  5802004 		Нейрон среднего размера	Medium sized neuron
+  5814007 		Весь угол седьмого ребра	Entire angle of seventh rib
+  5815008 		Верхняя прямая мышца	Superior rectus muscle
+  5816009 		Дуоденальная складка	Duodenal fold
+  5825003 		Собственная субстанция склеры	Substantia propria of sclera
+  5828001 		Задний канатик плечевого сплетения	Posterior cord of brachial plexus
+  5847003 		Верхний суставной отросток седьмого шейного позвонка	Superior articular process of seventh cervical vertebra
+  5854009 		Глазничная пластинка решетчатой ​​кости	Orbital plate of ethmoid bone
+  5868002 		Серозная оболочка мочевого пузыря	Serosa of urinary bladder
+  5872003 		Подкожная клетчатка латерального края подошвы стопы	Subcutaneous tissue of lateral border of sole of foot
+  5881009 		Бугристость дистальной фаланги кисти	Tuberosity of distal phalanx of hand
+  5882002 		Эндотелиальная ситовидная пластинка	Endothelial sieve plate
+  5889006 		Суставная поверхность третьей пястной кости четвертой пястной кости	Articular surface, third metacarpal, of fourth metacarpal bone
+  5890002 		Задние ячейки решетчатой ​​пазухи	Posterior cells of ethmoid sinus
+  5893000 		Верхний карман барабанной перепонки	Superior recess of tympanic membrane
+  5898009 		Миотом	Myotome
+  5923009 		Суставной отросток двенадцатого грудного позвонка	Articular process of twelfth thoracic vertebra
+  5926001 		Просвет бронхов	Bronchial lumen
+  5928000 		Большая сердечная вена	Great cardiac vein
+  5942008 		Мышца, напрягающая барабанную перепонку	Tensor tympani muscle
+  5943003 		Вестибулярная вена	Vestibular vein
+  5944009 		Задняя небная дуга	Posterior palatine arch
+  5948007 		Капсула дистального межфалангового сустава третьего пальца стопы	Capsule of distal interphalangeal joint of third toe
+  5951000 		Левое запястье	Left wrist
+  5953002 		Восьмое ребро	Eighth rib
+  5976004 		Подкожная клетчатка века	Subcutaneous tissue of eyelid
+  5979006 		Эписклеральная артерия	Episcleral artery
+  5996007 		Хромосомы, группа D	Chromosomes, group D
+  6001004 		Квадратная мышца поясницы	Quadratus lumborum muscle
+  6004007 		Межпозвоночный диск второго грудного позвонка	Intervertebral disc of second thoracic vertebra
+  6006009 		Круговой слой мышечной оболочки двенадцатиперстной кишки	Circular layer of duodenal muscularis propria
+  6009002 		Брыжейка восходящей ободочной кишки	Mesentery of ascending colon
+  6014003 		Пенициллярные артерии	Penicilliary arteries
+  6023000 		Гетеролизосома	Heterolysosome
+  6032003 		Клетка столбчатого эпителия	Columnar epithelial cell
+  6046003 		Вся наружная поверхность третьего ребра	Entire outer surface of third rib
+  6050005 		Слезная вена	Lacrimal vein
+  6059006 		Пястно-фаланговый сустав среднего пальца	Metacarpophalangeal joint of middle finger
+  6062009 		Молочный правый клык нижней челюсти	Deciduous mandibular right canine tooth
+  6073002 		Связка левой верхней полой вены	Ligament of left superior vena cava
+  6074008 		Капсула височно-нижнечелюстного сустава	Capsule of temporomandibular joint
+  6076005 		Желудочно-кишечный субсерозный	Gastrointestinal subserosa
+  6104005 		Подключичный нерв	Subclavian nerve
+  6105006 		Тело пятого грудного позвонка	Body of fifth thoracic vertebra
+  6110005 		Парасимпатические волокна лицевого нерва	Facial nerve parasympathetic fibers
+  6216007 		Вся посткапиллярная венула	Entire postcapillary venule
+  6217003 		Грушевидная выемка	Piriform recess
+  6229007 		Os lacrimale	Os lacrimale
+  6253001 		Sulcus terminalis cordis	Sulcus terminalis cordis
+  6268000 		Добавочные диафрагмальные нервы	Accessory phrenic nerves
+  6269008 		Подкожная клетчатка волосистой части головы	Subcutaneous tissue of scalp
+  6279005 		Кожа тыльной поверхности пальца	Skin of dorsal surface of finger
+  6317000 		Задняя базальная ветвь левой легочной артерии	Posterior basal branch of left pulmonary artery
+  6325003 		Ариено-надгортанная мышца	Aryepiglottic muscle
+  6326002 		Атлоидное сочленение плода	Fetal atloid articulation
+  6335009 		Лимфоидный фолликул желудка	Lymphoid follicle of stomach
+  6359004 		Мозговой слой волоса	Hair medulla
+  6371005 		Лимфатические узлы щитовидной железы	Lymphatics of thyroid gland
+  6375001 		Пещеристая часть уретры	Cavernous portion of urethra
+  6392005 		Копчиковый нерв	Coccygeal nerve
+  6404004 		Выйная связка	Ligamentum nuchae
+  6413002 		Пресимфизарный лимфатический узел	Presymphysial lymph node
+  6423006 		Надостная мышца	Supraspinatus muscle
+  6424000 		Строение лучистой части коркового вещества почки	Structure of radiating portion of cortical lobule of kidney
+  6445007 		Тучные клетки	Mast cell
+  6448009 		Задний ствол блуждающего нерва	Posterior vagal trunk
+  6450001 		Цитотрофобласт	Cytotrophoblast
+  6472004 		Медиальная поверхность яичника	Medial aspect of ovary
+  6504002 		Головка клитора	Glans clitoridis
+  6511003 		Дистальная часть огибающей ветви левой коронарной артерии	Distal portion of circumflex branch of left coronary artery
+  6530003 		Листок сердечного клапана	Cardiac valve leaflet
+  6533001 		Колоническая гаустра	Colonic haustra
+  6538005 		Щитошейный ствол	Thyrocervical trunk
+  6541001 		Вся передняя комиссура митрального клапана	Entire anterior commissure of mitral valve
+  6544009 		Желудочно-печеночная связка	Gastrohepatic ligament
+  6550004 		Угловая вырезка желудка	Angular incisure of stomach
+  6551000 		артерия большого пальца кисти	Pollicis artery
+  6553002 		Нижняя носовая раковина	Inferior nasal turbinate
+  6564004 		Медиальный край подошвы	Medial border of sole
+  6566002 		Мозжечковое полушарие	Cerebellar hemisphere
+  6572002 		Основание фаланги среднего пальца	Base of phalanx of middle finger
+  6598008 		Язычный нерв	Lingual nerve
+  6606008 		Строение тыльных межклиновидных связок	Structure of dorsal intercuneiform ligaments
+  6608009 		Клиновидно-теменной синус	Sphenoparietal sinus
+  6620001 		Кутикула ногтя	Cuticle of nail
+  6623004 		Грудинная мышца	Sternal muscle
+  6633007 		Вся правая задняя мозговая артерия	Entire right posterior cerebral artery
+  6643005 		Вся правая передняя мозговая артерия	Entire right anterior cerebral artery
+  6646002 		Передняя ямка полости черепа	Anterior fossa of cranial cavity
+  6649009 		Подсерозный слой матки	Uterine subserosa
+  6651008 		Центральная долька мозжечка	Central lobule of cerebellum
+  6684008 		Суставная поверхность головки малоберцовой кости	Articular facet of head of fibula
+  6685009 		Правая лодыжка	Right ankle
+  6711001 		Дуга второго поясничного позвонка	Arch of second lumbar vertebra
+  6720005 		Боковые мышечные ветви бедренного нерва	Femoral nerve lateral muscular branches
+  6731002 		Плевральный карман	Pleural recess
+  6739000 		барабанная перепонка	Chorda tympani
+  6742006 		Вся мозолисто-краевая ветвь передней мозговой артерии	Entire callosomarginal branch of anterior cerebral artery
+  6750002 		Включение митохондрий	Mitochondrial inclusion
+  6757004 		Правое колено	Right knee
+  6787005 		Строение сухожилий и сухожильных влагалищ кисти	Structure of tendon and tendon sheath of hand
+  6789008 		Сперматозоиды	Spermatozoa
+  6799003 		Макула утрикулюса	Macula of utricle
+  6805009 		Вся интерстициальная ткань селезенки	Entire interstitial tissue of spleen
+  6820003 		Передняя ветвь запирательного нерва	Obturator nerve anterior branch
+  6828005 		Связка пояснично-крестцового сустава	Ligament of lumbosacral joint
+  6829002 		Цилиарная часть сетчатки	Pars ciliaris of retina
+  6834003 		Осевой скелет	Axial skeleton
+  6841009 		Кортикомедуллярное соединение почки	Corticomedullary junction of kidney
+  6844001 		Споровый кристалл	Spore crystal
+  6850006 		Вторичный процесс стопы	Secondary foot process
+  6864006 		Лист надгортанника	Leaf of epiglottis
+  6866008 		спайка хрящевой ткани	Habenular commissure
+  6871001 		Висцеральный перикард	Visceral pericardium
+  6894000 		Медиальная поверхность руки	Medial surface of arm
+  6902008 		Подколенная область	Popliteal region
+  6905005 		Подкожная клетчатка медиальной поверхности третьего пальца стопы	Subcutaneous tissue of medial surface of third toe
+  6912001 		Слизистая оболочка нижнего альвеолярного отростка	Lower alveolar ridge mucosa
+  6914000 		Периваскулярное пространство	Perivascular space
+  6921000 		Правая верхняя конечность	Right upper extremity
+  6930008 		Вся яремная дуга	Entire jugular arch
+  6944002 		Вся передняя губная вена	Entire anterior labial vein
+  6969002 		Лимфоцитарная ткань	Lymphocytic tissue
+  6975006 		Передний миокард	Anterior myocardium
+  6981003 		Заднее гипоталамическое ядро	Posterior hypothalamic nucleus
+  6987004 		Коллатеральная борозда	Collateral sulcus
+  6989001 		Грудопоясничная область спины	Thoracolumbar region of back
+  6991009 		Подкожная клетчатка челюсти	Subcutaneous tissue of jaw
+  7035006 		Слизистая оболочка желчных протоков	Bile duct mucous membrane
+  7050002 		Подкожная клетчатка наружных половых органов	Subcutaneous tissue of external genitalia
+  7067009 		Правая ободочная артерия	Right colic artery
+  7076002 		Интерстициальная ткань миокарда	Interstitial tissue of myocardium
+  7083009 		Средняя фаланга указательного пальца	Middle phalanx of index finger
+  7091000 		Вентральное заднебоковое ядро ​​таламуса	Ventral posterolateral nucleus of thalamus
+  7099003 		Прикрепительная пластинка десмосомы или гемидесмосомы	Attachment plaque of desmosome or hemidesmosome
+  7117004 		Место имплантации плода	Fetal implantation site
+  7148007 		Фиброзное кольцо межпозвоночного диска грудного позвонка	Anulus fibrosus of intervertebral disc of thoracic vertebra
+  7149004 		Ложное ребро	False rib
+  7154008 		Чувствительный корешок тройничного ганглия	Trigeminal ganglion sensory root
+  7160008 		Основание пястной кости	Base of metacarpal bone
+  7167006 		Парадуоденальный карман	Paraduodenal recess
+  7173007 		Конский хвост	Cauda equina
+  7188002 		Вкусовая пора	Gustatory pore
+  7192009 		Постовый перешеек барабанной перепонки	Isthmus tympani posticus
+  7227003 		Подъязычный нерв внутренняя ветвь мышцы языка	Hypoglossal nerve intrinsic tongue muscle branch
+  7234001 		Вся нижняя сосудистая вена	Entire inferior choroid vein
+  7242000 		Собственная аппендикулярная мышечная оболочка	Appendiceal muscularis propria
+  7283002 		Основание языка	Base of tongue
+  7295002 		Мышца промежности	Muscle of perineum
+  7296001 		Глубокое паховое кольцо	Deep inguinal ring
+  7311008 		Передняя поверхность руки	Anterior surface of arm
+  7344002 		Язычная извилина	Lingual gyrus
+  7345001 		Ресничные отростки	Ciliary processes
+  7362006 		Лимфатическая система головы	Lymphatic of head
+  7376007 		Весь левый край матки	Entire left margin of uterus
+  7378008 		Паравентрикулярное ядро ​​таламуса	Paraventricular nucleus of thalamus
+  7384006 		Вся подошвенная пяточно-кубовидная связка	Entire plantar calcaneocuboidal ligament
+  7404008 		Передний полукружный проток	Anterior semicircular duct
+  7435002 		Связка яичника	Ovarian ligament
+  7471001 		Боковая поверхность подъязычной железы	Lateral surface of sublingual gland
+  7477002 		Липид, кристаллический	Lipid, crystalline
+  7480001 		Подвздошно-большеберцовый тракт	Iliotibial tract
+  7494000 		Чечевицеобразное ядро ​​мозжечка	Cerebellar lenticular nucleus
+  7498002 		Вся подошвенная тарзальная связка	Entire plantar tarsal ligament
+  7507003 		Вся передняя связка головки малоберцовой кости	Entire anterior ligament of head of fibula
+  7524009 		Целая vasa vasorum	Entire vasa vasorum
+  7532001 		Парасимпатические волокна блуждающего нерва	Vagus nerve parasympathetic fibers
+  7554004 		Глубокая головка короткого сгибателя большого пальца	Deep head of flexor pollicis brevis muscle
+  7566005 		Митотическая клетка в анафазе	Mitotic cell in anaphase
+  7569003 		Палец	Finger
+  7591005 		Межпозвоночное дисковое пространство одиннадцатого грудного позвонка	Intervertebral disc space of eleventh thoracic vertebra
+  7597009 		Подкожная клетчатка темени	Subcutaneous tissue of vertex
+  7605000 		Коннексон	Connexon
+  7610001 		Десятый грудной позвонок	Tenth thoracic vertebra
+  7629007 		Таламо-лимфоцитарный тракт	Thalamoolivary tract
+  7651004 		Межвенозный бугорок правого предсердия	Intervenous tubercle of right atrium
+  7652006 		Уздечка половой губы	Frenulum labii
+  7657000 		Бедренная артерия	Femoral artery
+  7658005 		Подсухожильная сумка трехглавой мышцы плеча	Subtendinous bursa of triceps brachii muscle
+  7697002 		Мостовая часть медиального продольного пучка	Pontine portion of medial longitudinal fasciculus
+  7712004 		Субдуральное пространство спинномозговой области	Subdural space of spinal region
+  7726008 		Кожа медиальной поверхности пятого пальца стопы	Skin of medial surface of fifth toe
+  7736000 		Задняя хориоидальная артерия	Posterior choroidal artery
+  7742001 		Небный проток	Palatine duct
+  7748002 		Придаток кожи	Skin appendage
+  7755000 		Мезовариальный край яичника	Mesovarian margin of ovary
+  7756004 		Пластинка третьего грудного позвонка	Lamina of third thoracic vertebra
+  7764005 		Вся полосатая артерия	Entire striate artery
+  7769000 		Правая нога	Right foot
+  7783003 		Симпатический ствол спинномозговой нерв	Sympathetic trunk spinal nerve branch
+  7820009 		Латеральное заднее ядро ​​таламуса	Lateral posterior nucleus of thalamus
+  7829005 		Передняя поверхность рукоятки	Anterior surface of manubrium
+  7832008 		Брюшная аорта	Abdominal aorta
+  7835005 		Задний край носовой перегородки	Posterior margin of nasal septum
+  7840002 		Подкожная клетчатка подбородочной области	Subcutaneous tissue of submental area
+  7841003 		Макроцитарный нормохромный эритроцит	Macrocytic normochromic erythrocyte
+  7844006 		Грудино-ключичный сустав	Sternoclavicular joint
+  7851002 		Внутричерепное субдуральное пространство	Intracranial subdural space
+  7854005 		Нижнечелюстной канал	Mandibular canal
+  7872004 		Миокард желудочка	Myocardium of ventricle
+  7874003 		Лопаточная область спины	Scapular region of back
+  7880006 		Рофеоцитарный везикула	Rhopheocytotic vesicle
+  7884002 		роговичное тельце	Corneal corpuscle
+  7885001 		Вращательная манжета плеча, включая мышцы и сухожилия	Rotator cuff including muscles and tendons
+  7892006 		Подслизистая основа анального канала	Submucosa of anal canal
+  7896009 		Затылочный угол теменной кости	Occipital angle of parietal bone
+  7911004 		Оливоцеребеллярные волокна	Olivocerebellar fibers
+  7925003 		Проксимальная фаланга третьего пальца стопы	Proximal phalanx of third toe
+  7936005 		Связка диафрагмы	Ligament of diaphragm
+  7944005 		Вспомогательная клетка	Helper cell
+  7954009 		Собственная пластинка решетчатой ​​пазухи	Lamina propria of ethmoid sinus
+  7967007 		Вся первая левая дуга аорты	Entire first left aortic arch
+  7986004 		Брюшно-тазовая часть симпатической нервной системы	Abdominopelvic portion of sympathetic nervous system
+  7991003 		Кожа головки полового члена	Skin of glans penis
+  7999001 		Сочленения слуховых косточек	Articulations of auditory ossicles
+  8001006 		Слизистая оболочка языка	Mucous membrane of tongue
+  8012006 		Передняя соединительная артерия	Anterior communicating artery
+  8017000 		Приносящий тракт правого желудочка	Inflow tract of right ventricle
+  8024004 		Ядро лимитанов	Limitans nucleus
+  8039003 		Подкожная акромиальная сумка	Subcutaneous acromial bursa
+  8040001 		Сухожилие поверхностного сгибателя мизинца	Superficial flexor tendon of little finger
+  8045006 		Гранулы мембранного покрытия, аморфные	Membrane-coating granule, amorphous
+  8057002 		Боковые ядра бледного шара	Lateral nuclei of globus pallidus
+  8059004 		Вены поджелудочной железы	Pancreatic veins
+  8067007 		Вся поверхностная огибающая подвздошная вена	Entire superficial circumflex iliac vein
+  8068002 		Stratum lemnisci четверохолмия	Stratum lemnisci of corpora quadrigemina
+  8079007 		Лучевой нерв	Radial nerve
+  8091003 		Межпозвоночное дисковое пространство двенадцатого грудного позвонка	Intervertebral disc space of twelfth thoracic vertebra
+  8100009 		Воронка маточной трубы	Infundibulum of Fallopian tube
+  8111001 		Внутриядерный кристалл	Intranuclear crystal
+  8112008 		Кишка задняя	Hindgut
+  8119004 		Весь дельфийский лимфатический узел	Entire delphian lymph node
+  8128003 		Супрааортальная область клапана	Supraaortic valve area
+  8133004 		Верхняя анастомотическая вена	Superior anastomotic vein
+  8157004 		Вена головы	Vein of head
+  8158009 		Междолевой проток поджелудочной железы	Interlobar duct of pancreas
+  8159001 		Верхние бугорки четверохолмия	Superior colliculus of corpora quadrigemina
+  8160006 		Вся латеральная полосатая артерия	Entire lateral striate artery
+  8161005 		Подглазничный нерв	Infraorbital nerve
+  8165001 		Верхний суставной отросток пятого грудного позвонка	Superior articular process of fifth thoracic vertebra
+  8205005 		Запястье	Wrist
+  8225009 		Дополнительный атриовентрикулярный пучок	Accessory atrioventricular bundle
+  8242003 		Верхушечная ветвь правой легочной артерии	Apical branch of right pulmonary artery
+  8251006 		Костная часть евстахиевой трубы	Osseous portion of Eustachian tube
+  8264007 		Внутренняя оболочка глазного яблока	Tunica interna of eyeball
+  8265008 		Суставная поверхность, пястная, фаланги кисти	Articular surface, metacarpal, of phalanx of hand
+  8266009 		Серозная оболочка тонкой кишки	Small intestine serosa
+  8289001 		Область ниже колена	Below knee region
+  8292002 		Междольковые артерии печени	Interlobular arteries of liver
+  8314003 		Сосцевидный родничок черепа	Mastoid fontanel of skull
+  8334002 		Поясничный лимфатический узел	Lumbar lymph node
+  8356004 		Толстокишечный лимфатический узел	Colic lymph node
+  8369000 		Мышца, сжимающая зрачок	Sphincter pupillae muscle
+  8373002 		Яремная кость клиновидной кости	Jugum of sphenoid bone
+  8387002 		Пластинка восьмого грудного позвонка	Lamina of eighth thoracic vertebra
+  8389004 		Родовой канал	Birth canal
+  8412003 		Подвздошная ямка	Iliac fossa
+  8415001 		Почечная поверхность надпочечника	Renal surface of adrenal gland
+  8454000 		Сустав поясничного позвонка	Joint of lumbar vertebra
+  8464009 		Связка крестцово-подвздошного сустава и лобкового симфиза	Ligament of sacroiliac joint and pubic symphysis
+  8482007 		Синоатриальный узел, ветвь правой коронарной артерии	Sinoatrial node branch of right coronary artery
+  8483002 		Мезиальная поверхность зуба	Mesial surface of tooth
+  8496001 		Косая мышца головы	Obliquus capitis muscle
+  8523001 		Нижний суставной отросток двенадцатого грудного позвонка	Inferior articular process of twelfth thoracic vertebra
+  8546004 		Задний межпещеристый синус	Posterior intercavernous sinus
+  8556000 		Липидная капля	Lipid droplet
+  8559007 		Весь околокишечный лимфатический узел	Entire juxtaintestinal lymph node
+  8560002 		Межключичная связка	Interclavicular ligament
+  8580001 		Обе ноги	Both feet
+  8595004 		сплетение Мейсснера	Meissner's plexus
+  8598002 		Вестибулокохлеарный нерв	Vestibulocochlear nerve
+  8600008 		Перстневидный хрящ	Cricoid cartilage
+  8603005 		Мышца, приводящая большой палец стопы	Adductor hallucis muscle
+  8604004 		Продолговатый пучок клиновидного мозга	Medulla oblongata fasciculus cuneatus
+  8608001 		Правый край сердца	Right margin of heart
+  8617001 		Скуловая область лица	Zygomatic region of face
+  8623006 		Трансплантированный мочеточник	Transplanted ureter
+  8629005 		Верхняя правая легочная вена	Superior right pulmonary vein
+  8640002 		Хориоидальные ветви задней спинномозговой артерии	Choroidal branches of posterior spinal artery
+  8668003 		Гликогеновая вакуоль	Glycogen vacuole
+  8671006 		Все пальцы ног	All toes
+  8677005 		Тело правого предсердия	Body of right atrium
+  8688004 		Боковая обонятельная извилина	Lateral olfactory gyrus
+  8695008 		Межпозвоночное отверстие второго поясничного позвонка	Intervertebral foramen of second lumbar vertebra
+  8710005 		Все малые подъязычные протоки	Entire minor sublingual ducts
+  8711009 		Пародонтальные ткани	Periodontal tissues
+  8714001 		Подкожная клетчатка межпальцевого пространства кисти	Subcutaneous tissue of interdigital space of hand
+  8752000 		Пещеристая часть внутренней сонной артерии	Cavernous portion of internal carotid artery
+  8775007 		Сухожильная дуга	Tendinous arch
+  8784007 		Внутриядерное тельце, зернистое, с нитевидной капсулой	Intranuclear body, granular with filamentous capsule
+  8810002 		Кортикомедуллярное соединение надпочечников	Corticomedullary junction of adrenal gland
+  8814006 		Подвздошная бугристость	Iliac tuberosity
+  8815007 		Пространства тенара и гипотенара	Thenar and hypothenar spaces
+  8820007 		Ножка одиннадцатого грудного позвонка	Pedicle of eleventh thoracic vertebra
+  8821006 		Малоберцовая артерия	Peroneal artery
+  8827005 		Стержень фаланги среднего пальца	Shaft of phalanx of middle finger
+  8839002 		Агранулярный эндоплазматический ретикулум, связь с другими органеллами	Agranular endoplasmic reticulum, connection with other organelle
+  8845005 		Вся подсухожильная препателлярная сумка	Entire subtendinous prepatellar bursa
+  8850004 		Собственный пучок	Proper fasciculus
+  8854008 		Криста Галли	Crista galli
+  8862000 		Ладонная поверхность среднего пальца	Palmar surface of middle finger
+  8873007 		Нижний правый второй премоляр	Mandibular right second premolar tooth
+  8887007 		Плечеголовная вена	Brachiocephalic vein
+  8892009 		Диафрагмальная поверхность легкого	Diaphragmatic surface of lung
+  8894005 		Вся желудочная кардиальная железа (строение тела)	Entire gastric cardiac gland (body structure)
+  8897003 		Латеральная язычно-надгортанная складка	Lateral glossoepiglottic fold
+  8907008 		Вся левая локтевая артерия	Entire left ulnar artery
+  8910001 		Вся нижняя поперечная связка лопатки	Entire inferior transverse scapular ligament
+  8911002 		Весь эндокард правого желудочка	Entire endocardium of right ventricle
+  8928004 		Паховый лимфатический узел	Inguinal lymph node
+  8931003 		Клювовидный отросток лопатки	Coracoid process of scapula
+  8935007 		Оболочки головного мозга	Cerebral meninges
+  8942007 		Трапециевидная связка	Trapezoid ligament
+  8965002 		Зональный слой четверохолмия	Stratum zonale of corpora quadrigemina
+  8983005 		Сустав позвоночника	Joint of vertebral column
+  8988001 		Краевая часть круговой мышцы рта	Marginal part of orbicularis oris muscle
+  8993003 		Печеночная вена	Hepatic vein
+  9000002 		Ножки мозжечка	Cerebellar peduncle
+  9003000 		Левая теменная доля	Left parietal lobe
+  9018004 		Вся средняя ободочная вена	Entire middle colic vein
+  9040008 		Восходящая ободочная кишка	Ascending colon
+  9055004 		Оба предплечья	Both forearms
+  9073001 		Белое вещество островка	White matter of insula
+  9081000 		Селезеночный синусоид	Splenic sinusoid
+  9086005 		Верхняя гортанная вена	Superior laryngeal vein
+  9089003 		Свод стопы	Arch of foot
+  9108007 		Вена барабанной лестницы	Vein of the scala tympani
+  9127001 		Поперечные складки неба	Transverse folds of palate
+  9156001 		Структура эмбриона на 1 стадии	Embryo stage 1 structure
+  9185007 		Капсула плюснефалангового сустава пятого пальца стопы	Capsule of metatarsophalangeal joint of fifth toe
+  9186008 		Нити сократительного аппарата	Filaments of contractile apparatus
+  9188009 		Межпозвоночный диск восьмого грудного позвонка	Intervertebral disc of eighth thoracic vertebra
+  9208002 		Центриоль	Centriole
+  9212008 		Тело пятой плюсневой кости	Shaft of fifth metatarsal bone
+  9229006 		Строение поясничной вращательной мышцы (строение тела)	Structure of lumbar rotator muscle (body structure)
+  9231002 		Вся наружная половая вена	Entire external pudendal vein
+  9240003 		Ячейка Нимана-Пика	Niemann-Pick cell
+  9242006 		Задний сегмент правой доли печени	Posterior segment of right lobe of liver
+  9261005 		Сухожилие и сухожильное влагалище второго пальца стопы	Tendon and tendon sheath of second toe
+  9262003 		Тазовая фасция	Pelvic fascia
+  9284003 		пещеристые тела полового члена	Corpus cavernosum of penis
+  9290004 		Задний интраокципитальный синхондроз	Posterior intraoccipital synchondrosis
+  9305001 		Губные вены	Labial veins
+  9317004 		Тактильный диск Меркель	Merkel's tactile disc
+  9320007 		Подсухожильная подвздошная сумка	Subtendinous iliac bursa
+  9321006 		Хвост придатка яичка	Tail of epididymis
+  9325002 		Межзубный сосочек десны	Interdental papilla of gingiva
+  9332006 		Латеральная связка височно-нижнечелюстного сустава	Lateral ligament of temporomandibular joint
+  9348007 		Кожа медиальной поверхности среднего пальца	Skin of medial surface of middle finger
+  9379006 		Все постоянные зубы	All permanent teeth
+  9380009 		Пектен ани	Pecten ani
+  9384000 		Поясничная вена	Lumbar vein
+  9390001 		Лимфатические сосуды желудка	Lymphatics of stomach
+  9432007 		Подошвенная поверхность четвертого пальца стопы	Plantar surface of fourth toe
+  9438006 		Строение глубоких шейных лимфатических сосудов	Structure of deep cervical lymphatics
+  9454009 		Подключичная вена	Subclavian vein
+  9455005 		Строение медиальной хрящевой пластинки глоточно-барабанной трубы (строение тела)	Structure of medial cartilaginous lamina of pharyngotympanic tube (body structure)
+  9475001 		Строение амакриновой клетки сетчатки (строение тела)	Structure of amacrine cell of retina (body structure)
+  9481009 		Афферентная артериола клубочка	Afferent glomerular arteriole
+  9490002 		Легочная связка	Pulmonary ligament
+  9498009 		Головка пястной кости	Head of metacarpal bone
+  9502002 		Коронковая депрессия зуба	Coronal depression of tooth
+  9512009 		Пяточно-кубовидная связка	Calcaneocuboidal ligament
+  9535007 		Пирамида продолговатого мозга	Pyramid of medulla oblongata
+  9558005 		Вся поверхность пятого реберного хряща грудины	Entire facet for fifth costal cartilage of sternum
+  9566001 		Просвет двенадцатиперстной кишки	Duodenal lumen
+  9568000 		Подкожная клетчатка ареолы	Subcutaneous tissue of areola
+  9596006 		Глубокая ветвь локтевого нерва	Deep branch of ulnar nerve
+  9609000 		Задний отросток хряща носовой перегородки	Posterior process of nasal septal cartilage
+  9625005 		Волосы лануго	Lanugo hair
+  9642004 		Левая верхняя полая вена	Left superior vena cava
+  9646001 		Вся верхняя поперечная связка лопатки	Entire superior transverse scapular ligament
+  9654004 		Слизистая железа желудка	Gastric mucous gland
+  9659009 		Подключичный лимфатический узел	Infraclavicular lymph node
+  9662007 		Подкожная клетчатка нижнего края носовой перегородки	Subcutaneous tissue of lower margin of nasal septum
+  9668006 		цилиарная мышца	Ciliary muscle
+  9683001 		Меланоцит	Melanocyte
+  9684007 		Задние мошоночные ветви внутренней половой артерии	Posterior scrotal branches of internal pudendal artery
+  9708001 		Подвздошная фасция	Iliac fascia
+  9736006 		Правое запястье	Right wrist
+  9743000 		Все сухожилие указательного пальца	Entire tendon of index finger
+  9758008 		Подслизистая основа миндалин	Submucosa of tonsil
+  9770007 		Генитальный бугорок	Genital tubercle
+  9775002 		Левый каротидный синус	Left carotid sinus
+  9779008 		Отличительная форма митохондриальных крист	Distinctive shape of mitochondrial cristae
+  9783008 		Поверхностные лимфатические сосуды грудной клетки	Superficial lymphatics of thorax
+  9791004 		Глубокая венозная система нижней конечности	Deep venous system of lower extremity
+  9796009 		Скелетное мышечное волокно, тип IIb	Skeletal muscle fiber, type IIb
+  9813009 		Фасция верхней конечности	Fascia of upper extremity
+  9825007 		Проксимальная фаланга мизинца стопы	Proximal phalanx of little toe
+  9837009 		Перфорирующие ветви внутренней грудной артерии	Perforating branches of internal thoracic artery
+  9840009 		Бипариетальный размер головы	Biparietal diameter of head
+  9841008 		Межостистые мышцы грудной клетки	Interspinalis thoracis muscles
+  9846003 		Правая почка	Right kidney
+  9847007 		Ворота надпочечников	Hilum of adrenal gland
+  9849005 		Свод слезного мешка	Fornix of lacrimal sac
+  9870004 		Carunculae hymenales	Carunculae hymenales
+  9875009 		Тимус	Thymus
+  9878006 		Вся аппендикулярная вена	Entire appendicular vein
+  9880000 		Бугорок щитовидной железы	Thyroid tubercle
+  9881001 		Периферические нервы миелинизированные нервные волокна	Peripheral nerve myelinated nerve fiber
+  9891007 		Поперечная черпаловидная мышца	Transverse arytenoid muscle
+  9898001 		Парацентральная долька	Paracentral lobule
+  9951005 		Задний решетчатый нерв	Posterior ethmoidal nerve
+  9968009 		Первичный процесс стопы	Primary foot process
+  9970000 		Илеоцекальное отверстие	Ileocecal ostium
+  9976006 		Ромбовидная мышца шеи	Rhomboideus cervicis muscle
+  9994000 		Верхний суставной отросток шестого грудного позвонка	Superior articular process of sixth thoracic vertebra
+  9999005 		Дуоденальная ампула	Duodenal ampulla
+  10013000 		Латеральный мениск коленного сустава	Lateral meniscus of knee joint
+  10024003 		Основание легкого	Base of lung

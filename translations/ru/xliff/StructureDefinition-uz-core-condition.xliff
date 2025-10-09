@@ -1,0 +1,36 @@
+<?xml version="1.0" ?>
+
+<xliff xmlns="urn:oasis:names:tc:xliff:document:2.0" version="2.0">
+  <file source-language="en" target-language="ru" id="StructureDefinition-uz-core-condition" original="Resource StructureDefinition-uz-core-condition" datatype="KEYVALUEJSON">
+    <body>
+      <trans-unit id="StructureDefinition-uz-core-condition" resname="StructureDefinition.name">
+             <notes>
+               <note id="n1">A natural language name identifying the structure definition. This name should be usable as an identifier for the module by machine processing applications such as code generation.</note>
+             </notes>
+        <source>UZCoreCondition</source>
+        <target>UZCoreCondition</target>
+      </trans-unit>
+      <trans-unit id="StructureDefinition-uz-core-condition" resname="StructureDefinition.title">
+             <notes>
+               <note id="n1">A short, descriptive, user-friendly title for the structure definition.</note>
+             </notes>
+        <source>UZ Core Condition</source>
+        <target>UZ Core Condition</target>
+      </trans-unit>
+      <trans-unit id="StructureDefinition-uz-core-condition" resname="StructureDefinition.publisher">
+             <notes>
+               <note id="n1">The name of the organization or individual responsible for the release and ongoing maintenance of the structure definition.</note>
+             </notes>
+        <source>Uzinfocom LLC</source>
+        <target>ООО «Единый интегратор Uzinfocom»</target>
+      </trans-unit>
+      <trans-unit id="StructureDefinition-uz-core-condition" resname="StructureDefinition.contact.name">
+             <notes>
+               <note id="n1">The name of an individual to contact.</note>
+             </notes>
+        <source>Uzinfocom LLC</source>
+        <target>Uzinfocom LLC</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

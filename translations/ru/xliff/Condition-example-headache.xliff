@@ -1,0 +1,64 @@
+<?xml version="1.0" ?>
+
+<xliff xmlns="urn:oasis:names:tc:xliff:document:2.0" version="2.0">
+  <file source-language="en" target-language="ru" id="Condition-example-headache" original="Resource Condition-example-headache" datatype="KEYVALUEJSON">
+    <body>
+      <trans-unit id="Condition-example-headache" resname="Coding.display">
+             <notes>
+               <note id="n1">A representation of the meaning of the code in the system, following the rules of the system.</note>
+             </notes>
+        <source>Diagnosis of the referring institution</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Condition-example-headache" resname="Coding.display">
+             <notes>
+               <note id="n1">A representation of the meaning of the code in the system, following the rules of the system.</note>
+             </notes>
+        <source>Active</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Condition-example-headache" resname="Coding.display">
+             <notes>
+               <note id="n1">A representation of the meaning of the code in the system, following the rules of the system.</note>
+             </notes>
+        <source>Confirmed</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Condition-example-headache" resname="Coding.display">
+             <notes>
+               <note id="n1">A representation of the meaning of the code in the system, following the rules of the system.</note>
+             </notes>
+        <source>Mild</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Condition-example-headache" resname="Coding.display">
+             <notes>
+               <note id="n1">A representation of the meaning of the code in the system, following the rules of the system.</note>
+             </notes>
+        <source>Headache</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Condition-example-headache" resname="Coding.display">
+             <notes>
+               <note id="n1">A representation of the meaning of the code in the system, following the rules of the system.</note>
+             </notes>
+        <source>Head of first metatarsal bone</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Condition-example-headache" resname="Coding.display">
+             <notes>
+               <note id="n1">A representation of the meaning of the code in the system, following the rules of the system.</note>
+             </notes>
+        <source>Author</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Condition-example-headache" resname="Annotation.text">
+             <notes>
+               <note id="n1">The text of the annotation in markdown format.</note>
+             </notes>
+        <source>Patient complained of mild headache for two days. Condition resolved after rest and hydration.</source>
+        <target></target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

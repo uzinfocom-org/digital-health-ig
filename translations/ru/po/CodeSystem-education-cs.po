@@ -1,0 +1,176 @@
+
+# A natural language name identifying the code system. This name should be usable as an identifier for the module by machine processing applications such as code generation.
+#: CodeSystem.name
+msgid "EducationCS"
+msgstr ""
+
+# A short, descriptive, user-friendly title for the code system.
+#: CodeSystem.title
+msgid "Education levels"
+msgstr ""
+
+# The name of the organization or individual responsible for the release and ongoing maintenance of the code system.
+#: CodeSystem.publisher
+msgid "Uzinfocom LLC"
+msgstr "ООО «Единый интегратор Uzinfocom»"
+
+# The name of an individual to contact.
+#: ContactDetail.name
+msgid "Uzinfocom LLC"
+msgstr ""
+
+# A free text natural language description of the code system from a consumer's perspective.
+#: CodeSystem.description
+msgid "Education levels in Uzbekistan"
+msgstr ""
+
+# A human readable string that is the recommended default way to present this concept to a user.
+#: CodeSystem.concept.display
+msgid "Uyushmagan (0-3 yosh)"
+msgstr ""
+
+# The text value for this designation.
+#: CodeSystem.concept.designation.value
+msgid "Неорганизованное (0-3 лет)"
+msgstr ""
+
+# The text value for this designation.
+#: CodeSystem.concept.designation.value
+msgid "Unorganized (0-3 years)"
+msgstr ""
+
+# A human readable string that is the recommended default way to present this concept to a user.
+#: CodeSystem.concept.display
+msgid "Maktabgacha (3-7 yosh)"
+msgstr ""
+
+# The text value for this designation.
+#: CodeSystem.concept.designation.value
+msgid "Дошкольное (3-7 лет)"
+msgstr ""
+
+# The text value for this designation.
+#: CodeSystem.concept.designation.value
+msgid "Preschool (3-7 years)"
+msgstr ""
+
+# A human readable string that is the recommended default way to present this concept to a user.
+#: CodeSystem.concept.display
+msgid "Ikkilamchi tugallanmagan"
+msgstr ""
+
+# The text value for this designation.
+#: CodeSystem.concept.designation.value
+msgid "Среднее незаконченное"
+msgstr ""
+
+# The text value for this designation.
+#: CodeSystem.concept.designation.value
+msgid "Incomplete secondary"
+msgstr ""
+
+# A human readable string that is the recommended default way to present this concept to a user.
+#: CodeSystem.concept.display
+msgid "O'rtacha"
+msgstr ""
+
+# The text value for this designation.
+#: CodeSystem.concept.designation.value
+msgid "Среднее"
+msgstr ""
+
+# The text value for this designation.
+#: CodeSystem.concept.designation.value
+msgid "Secondary"
+msgstr ""
+
+# A human readable string that is the recommended default way to present this concept to a user.
+#: CodeSystem.concept.display
+msgid "Aqli zaiflar uchun maktab"
+msgstr ""
+
+# The text value for this designation.
+#: CodeSystem.concept.designation.value
+msgid "Школа для умственно отсталых"
+msgstr ""
+
+# The text value for this designation.
+#: CodeSystem.concept.designation.value
+msgid "School for the mentally challenged"
+msgstr ""
+
+# A human readable string that is the recommended default way to present this concept to a user.
+#: CodeSystem.concept.display
+msgid "O'rta maxsus ta'lim"
+msgstr ""
+
+# The text value for this designation.
+#: CodeSystem.concept.designation.value
+msgid "Среднее специальное образование"
+msgstr ""
+
+# The text value for this designation.
+#: CodeSystem.concept.designation.value
+msgid "Secondary special education"
+msgstr ""
+
+# A human readable string that is the recommended default way to present this concept to a user.
+#: CodeSystem.concept.display
+msgid "Tugallanmagan oliy ta'lim"
+msgstr ""
+
+# The text value for this designation.
+#: CodeSystem.concept.designation.value
+msgid "Незаконченное высшее"
+msgstr ""
+
+# The text value for this designation.
+#: CodeSystem.concept.designation.value
+msgid "Incomplete higher"
+msgstr ""
+
+# A human readable string that is the recommended default way to present this concept to a user.
+#: CodeSystem.concept.display
+msgid "Oliy ma'lumot"
+msgstr ""
+
+# The text value for this designation.
+#: CodeSystem.concept.designation.value
+msgid "Высшее образование"
+msgstr ""
+
+# The text value for this designation.
+#: CodeSystem.concept.designation.value
+msgid "Higher education"
+msgstr ""
+
+# A human readable string that is the recommended default way to present this concept to a user.
+#: CodeSystem.concept.display
+msgid "O'qimagan (ijtimoiy/tibbiy sabab)"
+msgstr ""
+
+# The text value for this designation.
+#: CodeSystem.concept.designation.value
+msgid "Не учился (социальная\медицинская причина)"
+msgstr ""
+
+# The text value for this designation.
+#: CodeSystem.concept.designation.value
+msgid "Did not study (social/medical reason)"
+msgstr ""
+
+# A human readable string that is the recommended default way to present this concept to a user.
+#: CodeSystem.concept.display
+msgid "Boshqa"
+msgstr ""
+
+# The text value for this designation.
+#: CodeSystem.concept.designation.value
+msgid "Другое"
+msgstr ""
+
+# The text value for this designation.
+#: CodeSystem.concept.designation.value
+msgid "Other"
+msgstr ""
+

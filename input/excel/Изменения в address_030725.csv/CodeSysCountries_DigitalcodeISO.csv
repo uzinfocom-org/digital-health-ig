@@ -1,0 +1,251 @@
+CODE	UZ	RU	EN
+  004	Afg'oniston	Афганистан	Afghanistan
+  008	Albaniya	Албания	Albania
+  010	Antarktida	Антарктида	Antarctica
+  012	Jazoir	Алжир	Algeria
+  016	Amerika Samoasi	Американское Самоа	American Samoa
+  020	Andorra	Андорра	Andorra
+  024	Angola	Ангола	Angola
+  028	Antigua va Barbuda	Антигуа и Барбуда	Antigua and Barbuda
+  031	Ozarbayjon	Азербайджан	Azerbaijan
+  032	Argentina	Аргентина	Argentina
+  036	Avstraliya	Австралия	Australia
+  040	Avstriya	Австрия	Austria
+  044	Bagama orollari	Багамы	Bahamas
+  048	Bahrayn	Бахрейн	Bahrain
+  050	Bangladesh	Бангладеш	Bangladesh
+  051	Armaniston	Армения	Armenia
+  052	Barbados	Барбадос	Barbados
+  056	Belgiya	Бельгия	Belgium
+  060	Bermud orollari	Бермудские острова	Bermuda
+  064	Butan	Бутан	Bhutan
+  068	Boliviya, Ko'p millatli davlat	Боливия, Многонациональное Государство	Bolivia, Plurinational State of
+  070	Bosniya va Gertsegovina	Босния и Герцеговина	Bosnia and Herzegovina
+  072	Botsvana	Ботсвана	Botswana
+  074	Buvet oroli	Остров Буве	Bouvet Island
+  076	Braziliya	Бразилия	Brazil
+  084	Beliz	Белиз	Belize
+  086	Britaniya Hind okeani hududi	Британская территория в Индийском океане	British Indian Ocean Territory
+  090	Solomon orollari	Соломоновы острова	Solomon Islands
+  092	Virjiniya orollari, Britaniya	Виргинские острова, Британские	Virgin Islands, British
+  096	Bruney Darussalam	Бруней-Даруссалам	Brunei Darussalam
+  100	Bolgariya	Болгария	Bulgaria
+  104	Myanma	Мьянма	Myanmar
+  108	Burundi	Бурунди	Burundi
+  112	Belarusiya	Беларусь	Belarus
+  116	Kambodja	Камбоджа	Cambodia
+  120	Kamerun	Камерун	Cameroon
+  124	Kanada	Канада	Canada
+  132	Kabo Verde	Кабо-Верде	Cabo Verde
+  136	Kayman orollari	Каймановы острова	Cayman Islands
+  140	Markaziy Afrika Respublikasi	Центральноафриканская Республика	Central African Republic
+  144	Shri-Lanka	Шри-Ланка	Sri Lanka
+  148	Chad	Чад	Chad
+  152	Chili	Чили	Chile
+  156	Xitoy	Китай	China
+  158	Tayvan, Xitoy provinsiyasi	Тайвань, провинция Китая	Taiwan, Province of China
+  162	Rojdestvo oroli	Остров Рождества	Christmas Island
+  166	Kokos (Kiling) orollari	Кокосовые (Килинг) острова	Cocos (Keeling) Islands
+  170	Kolumbiya	Колумбия	Colombia
+  174	Komor orollari	Коморские острова	Comoros
+  175	Mayotte	Майотта	Mayotte
+  178	Kongo	Конго	Congo
+  180	Kongo, Demokratik Respublikasi	Конго, Демократическая Республика	Congo, the Democratic Republic of the
+  184	Kuk orollari	Острова Кука	Cook Islands
+  188	Kosta-Rika	Коста-Рика	Costa Rica
+  191	Xorvatiya	Хорватия	Croatia
+  192	Kuba	Куба	Cuba
+  196	Kipr	Кипр	Cyprus
+  203	Chexiya	Чехия	Czechia
+  204	Benin	Бенин	Benin
+  208	Daniya	Дания	Denmark
+  212	Dominika	Доминика	Dominica
+  214	Dominika Respublikasi	Доминиканская Республика	Dominican Republic
+  218	Ekvador	Эквадор	Ecuador
+  222	El Salvador	Сальвадор	El Salvador
+  226	Ekvatorial Gvineya	Экваториальная Гвинея	Equatorial Guinea
+  231	Efiopiya	Эфиопия	Ethiopia
+  232	Eritreya	Эритрея	Eritrea
+  233	Estoniya	Эстония	Estonia
+  234	Farer orollari	Фарерские острова	Faroe Islands
+  238	Folklend orollari (Malvin orollari)	Фолклендские (Мальвинские) острова	Falkland Islands (Malvinas)
+  239	anubiy Jorjiya va Janubiy Sandvich orollari	Южная Георгия и Южные Сандвичевы острова	South Georgia and the South Sandwich Islands
+  242	Fiji	Фиджи	Fiji
+  246	Finlyandiya	Финляндия	Finland
+  248	Eland orollari	Эландские острова	Eland Islands
+  250	Fransiya	Франция	France
+  254	Fransuz Gvianasi	Французская Гвиана	French Guiana
+  258	Fransuz Polineziyasi	Французская Полинезия	French Polynesia
+  260	Frantsiyaning janubiy hududlari	Французские Южные Территории	French Southern Territories
+  262	Jibuti	Джибути	Djibouti
+  266	Gabon	Габон	Gabon
+  268	Gruziya	Грузия	Georgia
+  270	Gambiya	Гамбия	Gambia
+  275	Falastin, Davlat	Палестина, государство	Palestine, State of
+  276	Germaniya	Германия	Germany
+  288	Gana	Гана	Ghana
+  292	Gibraltar	Гибралтар	Gibraltar
+  296	Kiribati	Кирибати	Kiribati
+  300	Gretsiya	Греция	Greece
+  304	Grenlandiya	Гренландия	Greenland
+  308	Grenada	Гренада	Grenada
+  312	Gvadelupa	Гваделупа	Guadeloupe
+  316	Guam	Гуам	Guam
+  320	Gvatemala	Гватемала	Guatemala
+  324	Gvineya	Гвинея	Guinea
+  328	Gayana	Гайана	Guyana
+  332	Gaiti	Гаити	Haiti
+  334	Heard oroli va Makdonald orollari	Остров Херд и острова Макдональд	Heard Island and McDonald Islands
+  336	Muqaddas Taxt	Святой Престол	Holy See
+  340	Gonduras	Гондурас	Honduras
+  344	Gonkong	Гонконг	Hong Kong
+  348	Vengriya	Венгрия	Hungary
+  352	Islandiya	Исландия	Iceland
+  356	Hindiston	Индия	India
+  360	Indoneziya	Индонезия	Indonesia
+  364	Eron, Islom Respublikasi	Иран, Исламская Республика	Iran, Islamic Republic of
+  368	Iroq	Ирак	Iraq
+  372	Irlandiya	Ирландия	Ireland
+  376	Isroil	Израиль	Israel
+  380	Italiya	Италия	Italy
+  384	Kot-d'Ivuar	Кот-д'Ивуар	Ctte d'Ivoire
+  388	Yamayka	Ямайка	Jamaica
+  392	Yaponiya	Япония	Japan
+  398	Qozog'iston	Казахстан	Kazakhstan
+  400	Iordaniya	Иордания	Jordan
+  404	Keniya	Кения	Kenya
+  408	Koreya, Xalq Demokratik Respublikasi	Корейская Народно-Демократическая Республика	Korea, Democratic People's Republic of
+  410	Koreya Respublikasi,	Корея, Республика	Korea, Republic of
+  414	Quvayt	Кувейт	Kuwait
+  417	Qirg'iziston	Кыргызстан	Kyrgyzstan
+  418	Laos Xalq Demokratik Respublikasi	Лаосская Народно-Демократическая Республика	Lao People's Democratic Republic
+  422	Livan	Ливан	Lebanon
+  426	Lesoto	Лесото	Lesotho
+  428	Latviya	Латвия	Latvia
+  430	Liberiya	Либерия	Liberia
+  434	Liviya	Ливия	Libya
+  438	Lixtenshteyn	Лихтенштейн	Liechtenstein
+  440	Litva	Литва	Lithuania
+  442	Lyuksemburg	Люксембург	Luxembourg
+  446	Makao	Макао	Macao
+  450	Madagaskar	Мадагаскар	Madagascar
+  454	Malavi	Малави	Malawi
+  458	Malayziya	Малайзия	Malaysia
+  462	Maldiv orollari	Мальдивы	Maldives
+  466	Mali	Мали	Mali
+  470	Malta	Мальта	Malta
+  474	Martinika	Мартиника	Martinique
+  478	Mavritaniya	Мавритания	Mauritania
+  480	Mavrikiy	Маврикий	Mauritius
+  484	Meksika	Мексика	Mexico
+  492	Monako	Монако	Monaco
+  496	Mo'g'uliston	Монголия	Mongolia
+  498	Moldova Respublikasi,	Молдова, Республика	Moldova, Republic of
+  499	Chernogoriya	Черногория	Montenegro
+  500	Montserrat	Монтсеррат	Montserrat
+  504	Marokash	Марокко	Morocco
+  508	Mozambik	Мозамбик	Mozambique
+  512	Ummon	Оман	Oman
+  516	Namibiya	Намибия	Namibia
+  520	Nauru	Науру	Nauru
+  524	Nepal	Непал	Nepal
+  528	Niderlandiya	Нидерланды	Netherlands
+  531	Kuragao	Кюрагао	Curagao
+  533	Aruba	Аруба	Aruba
+  534	Sint-Marten (Gollandiya qismi)	Синт-Мартен (голландская часть)	Sint Maarten (Dutch part)
+  535	Bonaire, Sint Eustatius va Saba	Бонайре, Синт-Эстатиус и Саба	Bonaire, Sint Eustatius and Saba
+  540	Yangi Kaledoniya	Новая Каледония	New Caledonia
+  548	Vanuatu	Вануату	Vanuatu
+  554	Yangi Zelandiya	Новая Зеландия	New Zealand
+  558	Nikaragua	Никарагуа	Nicaragua
+  562	Niger	Нигер	Niger
+  566	Nigeriya	Нигерия	Nigeria
+  570	Niue	Ниуэ	Niue
+  574	Norfolk oroli	остров Норфолк	Norfolk Island
+  578	Norvegiya	Норвегия	Norway
+  580	Shimoliy Mariana orollari	Северные Марианские острова	Northern Mariana Islands
+  581	Amerika Qo'shma Shtatlarining Kichik Chet orollari	Малые отдаленные острова США	United States Minor Outlying Islands
+  583	Mikroneziya, Federatsiya shtatlari	Микронезия, Федеративные Штаты	Micronesia, Federated States of
+  584	Marshall orollari	Маршалловы острова	Marshall Islands
+  585	Palau	Палау	Palau
+  586	Pokiston	Пакистан	Pakistan
+  591	Panama	Панама	Panama
+  598	Papua-Yangi Gvineya	Папуа-Новая Гвинея	Papua New Guinea
+  600	Paragvay	Парагвай	Paraguay
+  604	Peru	Перу	Peru
+  608	Filippin	Филиппины	Philippines
+  612	Pitkern	Питкэрн	Pitcairn
+  616	Polsha	Польша	Poland
+  620	Portugaliya	Португалия	Portugal
+  624	Gvineya-Bisau	Гвинея-Бисау	Guinea-Bissau
+  626	Timor-Sharqiy	Восточный Тимор	Timor-Leste
+  630	Puerto-Riko	Пуэрто-Рико	Puerto Rico
+  634	Qatar	Катар	Qatar
+  638	Riunion	Риюньон	Riunion
+  642	Ruminiya	Румыния	Romania
+  643	Rossiya Federatsiyasi	Российская Федерация	Russian Federation
+  646	Ruanda	Руанда	Rwanda
+  652	Sent-Bartilemi	Сен-Бартелеми	Saint Barthilemy
+  654	Avliyo Yelena, Ko'tarilish va Tristan da Kunya	Остров Святой Елены, Вознесения и Тристан-да-Кунья	Saint Helena, Ascension and Tristan da Cunha
+  659	Sent-Kitts va Nevis	Сент-Китс и Невис	Saint Kitts and Nevis
+  660	Anguilla	Ангилья	Anguilla
+  662	Sent-Lyusiya	Сент-Люсия	Saint Lucia
+  663	Sent-Martin (frantsuz qismi)	Сен-Мартен (французская часть)	Saint Martin (French part)
+  666	Sent-Pyer va Mikelon	Сен-Пьер и Микелон	Saint Pierre and Miquelon
+  670	Sent-Vinsent va Grenadin orollari	Сент-Винсент и Гренадины	Saint Vincent and the Grenadines
+  674	San-Marino	Сан-Марино	San Marino
+  678	San-Tome va Prinsipi	Сан-Томе и Принсипи	Sao Tome and Principe
+  682	Saudiya Arabistoni	Саудовская Аравия	Saudi Arabia
+  686	Senegal	Сенегал	Senegal
+  688	Serbiya	Сербия	Serbia
+  690	Seyshel orollari	Сейшельские острова	Seychelles
+  694	Syerra-Leone	Сьерра-Леоне	Sierra Leone
+  702	Singapur	Сингапур	Singapore
+  703	Slovakiya	Словакия	Slovakia
+  704	Vyetnam	Вьетнам	Viet Nam
+  705	Sloveniya	Словения	Slovenia
+  706	Somali	Сомали	Somalia
+  710	Janubiy Afrika	ЮАР	South Africa
+  716	Zimbabve	Зимбабве	Zimbabwe
+  724	Ispaniya	Испания	Spain
+  728	Janubiy Sudan	Южный Судан	South Sudan
+  729	Sudan	Судан	Sudan
+  732	G'arbiy Sahara	Западная Сахара	Western Sahara
+  740	Surinam	Суринам	Suriname
+  744	Svalbard va Yan Mayen	Шпицберген и Ян-Майен	Svalbard and Jan Mayen
+  748	Svazilend	Свазиленд	Swaziland
+  752	Shvetsiya	Швеция	Sweden
+  756	Shveytsariya	Швейцария	Switzerland
+  760	Suriya Arab Respublikasi	Сирийская Арабская Республика	Syrian Arab Republic
+  762	Tojikiston	Таджикистан	Tajikistan
+  764	Tailand	Таиланд	Thailand
+  768	Togo	Того	Togo
+  772	Tokelau	Токелау	Tokelau
+  776	Tonga	Тонга	Tonga
+  780	Trinidad va Tobago	Тринидад и Тобаго	Trinidad and Tobago
+  784	Birlashgan Arab Amirliklari	Объединенные Арабские Эмираты	United Arab Emirates
+  788	Tunis	Тунис	Tunisia
+  792	Turkiya	Турция	Turkey
+  795	Turkmaniston	Туркменистан	Turkmenistan
+  796	Turks va Kaykos orollari	Острова Теркс и Кайкос	Turks and Caicos Islands
+  798	Tuvalu	Тувалу	Tuvalu
+  800	Uganda	Уганда	Uganda
+  804	Ukraina	Украина	Ukraine
+  807	Makedoniya, sobiq Yugoslaviya Respublikasi	Македония, бывшая югославская республика	Macedonia, the former Yugoslav Republic of
+  818	Misr	Египет	Egypt
+  826	Birlashgan Qirollik	Великобритания	United Kingdom
+  831	Gernsi	Гернси	Guernsey
+  832	Jersi	Джерси	Jersey
+  833	Man oroli	Остров Мэн	Isle of Man
+  834	Tanzaniya, Birlashgan Respublikasi	Танзания, Объединенная Республика	Tanzania, United Republic of
+  840	Amerika Qo'shma Shtatlari	Соединенные Штаты Америки	United States of America
+  850	Virjiniya orollari, AQSH	Виргинские острова, США	Virgin Islands, U.S.
+  854	Burkina-Faso	Буркина-Фасо	Burkina Faso
+  858	Urugvay	Уругвай	Uruguay
+  860	O'zbekiston	Узбекистан	Uzbekistan
+  862	Venesuela, Bolivar Respublikasi	Венесуэла, Боливарианская Республика	Venezuela, Bolivarian Republic of
+  876	Uollis va Futuna	Уоллис и Футуна	Wallis and Futuna
+  882	Samoa	Самоа	Samoa
+  887	Yaman	Йемен	Yemen
+  894	Zambiya	Замбия	Zambia
+stateless	Fuqaroliksiz	Без гражданства	Stateless

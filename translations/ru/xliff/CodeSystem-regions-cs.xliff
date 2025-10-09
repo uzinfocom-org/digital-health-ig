@@ -1,0 +1,4369 @@
+<?xml version="1.0" ?>
+
+<xliff xmlns="urn:oasis:names:tc:xliff:document:2.0" version="2.0">
+  <file source-language="en" target-language="ru" id="CodeSystem-regions-cs" original="Resource CodeSystem-regions-cs" datatype="KEYVALUEJSON">
+    <body>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.name">
+             <notes>
+               <note id="n1">A natural language name identifying the code system. This name should be usable as an identifier for the module by machine processing applications such as code generation.</note>
+             </notes>
+        <source>RegionsCS</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.title">
+             <notes>
+               <note id="n1">A short, descriptive, user-friendly title for the code system.</note>
+             </notes>
+        <source>Uzbekistan Regions and Locations</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.publisher">
+             <notes>
+               <note id="n1">The name of the organization or individual responsible for the release and ongoing maintenance of the code system.</note>
+             </notes>
+        <source>Uzinfocom LLC</source>
+        <target>ООО «Единый интегратор Uzinfocom»</target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="ContactDetail.name">
+             <notes>
+               <note id="n1">The name of an individual to contact.</note>
+             </notes>
+        <source>Uzinfocom LLC</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.description">
+             <notes>
+               <note id="n1">A free text natural language description of the code system from a consumer's perspective.</note>
+             </notes>
+        <source>List of regions and locations in Uzbekistan</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Oltinko'l tumani</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Алтынкульский район</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Altinkul district</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Andijon tumani</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Андижанский район</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Andijan district</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Baliqchi tumani</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Балыкчинский район</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Baliqchi district</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Bo'ston tumani</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Бостонский район</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Boston district</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Buloqboshi tumani</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Булокбошинский район</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Buloqboshi district</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Jalaquduq tumani</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Джалакудукский район</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Jalaquduk district</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Izboskan tumani</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Избосканский район</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Izboskan district</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Ulug'nor tumani</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Улугнорский район</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Ulug'nor district</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Qo'rg'ontepa tumani</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Коргонтепинский район</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Korgontepa district</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Asaka tumani</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Асакинский район</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Asaka district</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Marhamat tumani</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Мархаматский район</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Marhamat district</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Shahrixon tumani</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Шахриханский район</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Shahrikhan district</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Paxtaobod tumani</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Пахтаабадский район</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Pakhtaobod district</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Xo'jaobod tumani</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Ходжаабадский район</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Khojaobod district</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Andijon shahri</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>город Андижан</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Andijan city</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Xonobod shahri</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>город Хонобад</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Khonobod city</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Olot tumani</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Олотский район</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Olot district</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Buxoro tumani</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Бухарский район</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Bukhara district</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Vobkent tumani</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Вобкентский район</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Vobkent district</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>G'ijduvon tumani</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Гиждувонский район</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Gijduvon district</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Kogon tumani</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Когонский район</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Kogon district</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Qorako'l tumani</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Каракольский район</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Qarakol district</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Qorovulbozor tumani</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Гаровулбазарский район</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Qarovulbazar district</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Peshku tumani</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Пешкунский район</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Peshku district</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Romitan tumani</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Ромитанский район</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Romitan district</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Jondor tumani</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Джондорский район</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Jondor district</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Shofirkon tumani</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Шофирконский район</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Shofirkon district</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Buxoro shahri</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>город Бухара</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Bukhara city</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Kogon shahri</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>город Каган</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Kogon city</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Arnasoy tumani</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Арнасойский район</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Arnasoy district</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Baxmal tumani</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Бахмальский район</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Bakhmal district</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>G'allaorol tumani</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Галлаорольский район</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Gallaorol district</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Sharof Rashidov tumani</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Шароф Рашидовский район</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Sharof Rashidov district</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Do'stlik tumani</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Дустликский район</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Dustlik district</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Zomin tumani</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Зоминский район</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Zomin district</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Zarbdor tumani</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Зарбдорский район</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Zarbdor district</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Mirzacho'l tumani</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Мирзачольский район</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Mirzachol district</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Zafarobod tumani</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Зафарабадский район</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Zafarobod district</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Paxtakor tumani</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Пахтакорский район</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Pakhtakor district</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Forish tumani</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Форишский район</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Forish district</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Yangiobod tumani</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Янгиабадский район</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Yangiabad district</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Jizzax shahri</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>город Джизак</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Jizzakh city</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>G'uzor tumani</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Гузорский район</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Guzor district</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Dehqonobod tumani</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Дехканабадский район</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Dehkanabad district</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Qamashi tumani</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Камашинский район</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Qamashi district</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Qarshi tumani</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Каршинский район</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Karshi district</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Koson tumani</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Косонский район</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Koson district</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Kitob tumani</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Китобский район</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Kitob district</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Mirishkor tumani</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Миришкорский район</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Mirishkor district</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Muborak tumani</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Муборакский район</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Muborak district</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Nishon tumani</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Нишонский район</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Nishon district</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Kasbi tumani</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Касбийский район</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Kasbi district</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Ko‘kdala tumani</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Кокдалинский район</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Kokdala district</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Chiroqchi tumani</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Чирокчинский район</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Chiroqchi district</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Shahrisabz tumani</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Шахрисабзский район</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Shahrisabz district</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Yakkabog' tumani</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Яккабогский район</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Yakkabog district</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Qarshi shahri</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>город Карши</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Qarshi city</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Shahrisabz shahri</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>город Шахрисабз</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Shahrisabz city</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Konimex tumani</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Конимехский район</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Konimeh district</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Qiziltepa tumani</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Кизилтепинский район</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Kiziltepa district</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Navbahor tumani</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Навбахорский район</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Navbahor district</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Karmana tumani</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Карманинский район</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Karmana district</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Nurota tumani</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Нуратинский район</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Nurota district</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Tomdi tumani</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Томдинский район</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Tomdi district</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Uchquduq tumani</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Учкудукский район</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Uchkuduk district</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Xatirchi tumani</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Хатырчинский район</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Khatirchi district</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Navoiy shahri</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>город Навои</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Navoi city</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Zarafshon shahri</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>город Заравшан</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Zarafshon city</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>G'ozg'on shahri</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>город Гозган</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Gozgan city</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Mingbuloq tumani</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Мингбулокский район</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Mingbulok district</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Kosonsoy tumani</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Косонсойский район</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Kosonsoy district</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Namangan tumani</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Наманганский район</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Namangan district</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Norin tumani</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Норинский район</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Norin district</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Pop tumani</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Папский район</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Pop district</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>To'raqo'rg'on tumani</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Туракурганский район</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Turakurgan district</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Uychi tumani</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Уйчинский район</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Uychi district</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Uchqo'rg'on tumani</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Учкурганский район</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Uchkurgan district</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Chortoq tumani</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Чортокский район</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Chortoq district</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Chust tumani</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Чустский район</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Chust district</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Yangiqo'rg'on tumani</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Янгикурганский район</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Yangikurgan district</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Namangan shahri</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>город Наманган</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Namangan city</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Oqdaryo tumani</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Окдарьинский район</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Oqdaryo district</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Bulung'ur tumani</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Булунгурский район</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Bulungur district</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Jomboy tumani</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Джомбойский район</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Jomboy district</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Ishtixon tumani</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Иштиханский район</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Ishtikhan district</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Kattaqo'rg'on tumani</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Каттакурганский район</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Kattakurgan district</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Qo'shrabot tumani</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Кошработский район</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Koshrabot district</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Narpay tumani</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Нарпайский район</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Narpay district</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Payariq tumani</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Паярикский район</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Payariq district</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Pastdarg'om tumani</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Пастдаргомский район</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Pastdarg'om district</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Paxtachi tumani</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Пахтачинский район</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Pakhtachi district</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Samarqand tumani</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Самаркандская область</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Samarkand district</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Nurobod tumani</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Нуробадский район</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Nurobad district</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Urgut tumani</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Ургутский район</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Urgut district</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Toyloq tumani</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Тойлакский район</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Toylaq district</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Samarqand shahri</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>город Самарканд</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Samarkand city</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Kattaqo'rg'on shahri</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>город Каттакурган</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Kattakurgan city</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Oltinsoy tumani</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Олтинсойский район</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Oltinsoy district</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Angor tumani</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Ангорский район</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Angor district</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Bandixon tumani</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Бандихонский район</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Bandikhon district</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Boysun tumani</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Байсунский район</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Boysun district</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Muzrabot tumani</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Музработский район</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Muzrabot district</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Denov tumani</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Деновский район</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Denov district</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Jarqo'rg'on tumani</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Жаркурганский район</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Zharkurgan district</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Qumqo'rg'on tumani</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Кумкурганский район</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Kumkurgan district</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Qiziriq tumani</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Кизирикский район</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Kiziriq district</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Sariosiyo tumani</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Сариосийский район</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Sariosiyo district</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Termiz tumani</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Термезский район</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Termez district</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Uzun tumani</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Узунский район</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Uzun district</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Sherobod tumani</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Шерабадский район</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Sherobod district</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Sho'rchi tumani</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Шорчинский район</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Shorchi district</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Termiz shahri</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>город Термез</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Termez city</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Oqoltin tumani</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Околтинский район</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Oqoltin district</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Boyovut tumani</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Бойовутский район</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Boyovut district</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Sayxunobod tumani</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Сайхунабадский район</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Saykhunabad district</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Guliston tumani</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Гулистонский район</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Guliston district</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Sardoba tumani</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Сардобинский район</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Sardoba district</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Mirzaobod tumani</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Мирзаабадский район</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Mirzaabad district</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Sirdaryo tumani</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Сырдарьинский район</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Syrdaryo district</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Xovos tumani</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Ховосский район</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Xovos district</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Guliston shahri</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>город Гулистан</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Guliston city</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Shirin shahri</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>город Ширин</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Shirin city</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Yangiyer shahri</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>город Янгиер</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Yangiyer city</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Uchtepa tumani</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Учтепинский район</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Uchtepa district</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Bektemir tumani</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Бектемирский район</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Bektemir district</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Yunusobod tumani</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Юнусабадский район</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Yunusabad district</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Mirzo Ulug'bek tumani</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Мирзо-Улугбекский район</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Mirzo Ulugbek district</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Mirobod tumani</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Мирабадский район</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Mirobod district</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Shayxontohur tumani</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Шайхонтохурский район</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Shaykhontohur district</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Olmazor tumani</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Алмазарский район</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Almazor district</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Sergeli tumani</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Сергелийский район</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Sergeli district</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Yakkasaroy tumani</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Яккасарайский район</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Yakkasaroy district</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Yashnobod tumani</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Яшнабадский район</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Yashnobad district</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Yangihayot tumani</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Янгихайотский район</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Yangihayot district</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Chilonzor tumani</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Чиланзарский район</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Chilonzor district</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Oqqo'rg'on tumani</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Оккурганский район</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Oqqorgan district</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Ohangaron tumani</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Ахангаронский район</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Akhangaron district</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Bekobod tumani</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Бекобадский район</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Bekobod district</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Bo'stonliq tumani</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Бостонликский район</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Bostonliq district</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Bo'ka tumani</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Букинский район</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Buka district</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Quyi Chirchiq tumani</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Куйи-Чирчикский район</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Kuyi Chirchik district</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Zangiota tumani</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Зангиотский район</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Zangiota district</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Yuqori Chirchiq tumani</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Юкори Чирчикский район</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Yukori Chirchik district</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Qibray tumani</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Кибрайский район</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Qibray district</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Parkent tumani</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Паркентский район</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Parkent district</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Piskent tumani</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Пскентский район</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Piskent district</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>O'rta Chirchiq tumani</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Урта Чирчикский район</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Orta Chirchik district</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Chinoz tumani</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Чиназский район</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Chinoz district</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Yangiyo'l tumani</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Янгиюльский район</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Yangiyol district</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Toshkent tumani</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Ташкентский район</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Tashkent district</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Nurafshon shahri</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>город Нурафшон</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Nurafshon city</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Olmaliq shahri</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>город Алмалык</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Almalyk city</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Angren shahri</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>город Ангрен</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Angren city</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Bekobod shahri</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>город Бекабад</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Bekobod city</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Ohangaron shahri</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>город Ахангаран</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Akhangaron city</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Chirchiq shahri</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>город Чирчик</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Chirchik city</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Yangiyo'l shahri</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>город Янгиюль</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Yangiyol city</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Oltiariq tumani</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Олтиарикский район</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Oltiarik district</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Qo'shtepa tumani</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Коштепинский район</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Qoshtepa district</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Bag'dod tumani</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Багдадский район</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Baghdad district</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Buvayda tumani</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Бувайдинский район</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Buvayda district</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Beshariq tumani</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Бешарикский район</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Besharik district</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Quva tumani</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Кувинский район</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Quva district</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Uchko'prik tumani</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Учкоприкский район</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Uchko'prik district</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Rishton tumani</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Риштонский район</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Rishton district</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>So'x tumani</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Сох район</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Sokh district</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Toshloq tumani</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Ташлокский район</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Tashlok district</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>O'zbekiston tumani</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Узбекистанский район</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Uzbekistan district</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Farg'ona tumani</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Ферганский район</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Fergana district</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Dang'ara tumani</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Дангаринский район</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Dangara district</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Furqat tumani</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Фуркатский район</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Furqat district</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Yozyovon tumani</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Езёванский район</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Yozyovan district</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Farg'ona shahri</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>город Фергана</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Fergana city</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Qo'qon shahri</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>город Кокон</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Qoqon city</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Quvasoy shahri</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>город Кувасай</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Quvasoy city</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Marg'ilon shahri</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>город Маргилан</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Margilan city</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Bog'ot tumani</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Боготский район</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Bogot district</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Gurlan tumani</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Гурланский район</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Gurlan district</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Qo'shko'pir tumani</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Кошкопирский район</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Qoshkopir district</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Urganch tumani</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Ургенчский район</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Urgench district</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Hazorasp tumani</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Азораспский район</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Hazorasp district</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Tuproqqal'a tumani</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Тупроккалинский район</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Tuproqqala district</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Xonqa tumani</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Хонкинский район</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Khonka district</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Xiva tumani</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Хивинский район</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Khiva district</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Shovot tumani</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Шовотский район</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Shovot district</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Yangiariq tumani</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Янгиарикский район</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Yangiariq district</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Yangibozor tumani</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Янгибазорский район</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Yangibozor district</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Urganch shahri</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>город Ургенч</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Urgench city</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Xiva shahri</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>город Хива</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Khiva city</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Amudaryo tumani</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Амударьинский район</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Amu Darya district</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Beruniy tumani</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Берунийский район</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Beruni district</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Bo'zatov tumani</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Бозатовский район</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Bozatov district</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Qorao'zak tumani</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Караозакский район</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Qaraozak district</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Kegeyli tumani</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Кегейлинский район</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Kegeyli district</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Qo'ng'irot tumani</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Конгиротский район</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Kongirot district</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Qonliko'l tumani</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Конликольский район</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Qonlikol district</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Mo'ynoq tumani</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Муйнакский район</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Muynaq district</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Nukus tumani</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Нукусский район</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Nukus district</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Taxiatosh tumani</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Таксиаташский район</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Taxiatash district</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Taxtako'pir tumani</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Тахткопирский район</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Takhtkopir district</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>To'rtko'l tumani</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Торткульский район</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Tortkul district</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Xo'jayli tumani</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Ходжалинский район</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Khojaly district</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Chimboy tumani</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Чимбойский район</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Chimboy district</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Shumanay tumani</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Шуманайский район</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Shumanay district</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Ellikqal’a tumani</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Элликкалинский район</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Ellikkal’a district</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Nukus shahri</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>город Нукус</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-regions-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Nukus city</source>
+        <target></target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

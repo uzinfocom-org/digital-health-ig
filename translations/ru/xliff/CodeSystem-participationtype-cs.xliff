@@ -1,0 +1,155 @@
+<?xml version="1.0" ?>
+
+<xliff xmlns="urn:oasis:names:tc:xliff:document:2.0" version="2.0">
+  <file source-language="en" target-language="ru" id="CodeSystem-participationtype-cs" original="Resource CodeSystem-participationtype-cs" datatype="KEYVALUEJSON">
+    <body>
+      <trans-unit id="CodeSystem-participationtype-cs" resname="CodeSystem.name">
+             <notes>
+               <note id="n1">A natural language name identifying the code system. This name should be usable as an identifier for the module by machine processing applications such as code generation.</note>
+             </notes>
+        <source>ParticipationTypeCS</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-participationtype-cs" resname="CodeSystem.title">
+             <notes>
+               <note id="n1">A short, descriptive, user-friendly title for the code system.</note>
+             </notes>
+        <source>Participation type translations</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-participationtype-cs" resname="CodeSystem.publisher">
+             <notes>
+               <note id="n1">The name of the organization or individual responsible for the release and ongoing maintenance of the code system.</note>
+             </notes>
+        <source>Uzinfocom LLC</source>
+        <target>ООО «Единый интегратор Uzinfocom»</target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-participationtype-cs" resname="ContactDetail.name">
+             <notes>
+               <note id="n1">The name of an individual to contact.</note>
+             </notes>
+        <source>Uzinfocom LLC</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-participationtype-cs" resname="CodeSystem.description">
+             <notes>
+               <note id="n1">A free text natural language description of the code system from a consumer's perspective.</note>
+             </notes>
+        <source>Participation type supplement with translations in Uzbek and Russian</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-participationtype-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>cвидетель</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-participationtype-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>guvoh</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-participationtype-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>принимающий врач (в рамках этого визита)</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-participationtype-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>qabul qiluvchi shifokor (shu tashrif doirasida)</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-participationtype-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>сопровождающий врач</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-participationtype-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>kuzatib boruvchi shifokor</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-participationtype-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>контактное лицо</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-participationtype-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>aloqa shaxsi</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-participationtype-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>консультант</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-participationtype-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>konsultant</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-participationtype-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>выписывающий врач</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-participationtype-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>chiqaruvchi shifokor</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-participationtype-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>эскорт</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-participationtype-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>eskort</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-participationtype-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>направляющий врач</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-participationtype-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>yunaltiruvchi shifokor</source>
+        <target></target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

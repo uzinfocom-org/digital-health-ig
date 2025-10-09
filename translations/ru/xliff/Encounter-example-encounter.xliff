@@ -1,0 +1,71 @@
+<?xml version="1.0" ?>
+
+<xliff xmlns="urn:oasis:names:tc:xliff:document:2.0" version="2.0">
+  <file source-language="en" target-language="ru" id="Encounter-example-encounter" original="Resource Encounter-example-encounter" datatype="KEYVALUEJSON">
+    <body>
+      <trans-unit id="Encounter-example-encounter" resname="Coding.display">
+             <notes>
+               <note id="n1">A representation of the meaning of the code in the system, following the rules of the system.</note>
+             </notes>
+        <source>Inpatient encounter</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Encounter-example-encounter" resname="Coding.display">
+             <notes>
+               <note id="n1">A representation of the meaning of the code in the system, following the rules of the system.</note>
+             </notes>
+        <source>Emergency</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Encounter-example-encounter" resname="Coding.display">
+             <notes>
+               <note id="n1">A representation of the meaning of the code in the system, following the rules of the system.</note>
+             </notes>
+        <source>Treatment services</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Encounter-example-encounter" resname="Coding.display">
+             <notes>
+               <note id="n1">A representation of the meaning of the code in the system, following the rules of the system.</note>
+             </notes>
+        <source>Awake</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Encounter-example-encounter" resname="Coding.display">
+             <notes>
+               <note id="n1">A representation of the meaning of the code in the system, following the rules of the system.</note>
+             </notes>
+        <source>attender</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Encounter-example-encounter" resname="Coding.display">
+             <notes>
+               <note id="n1">A representation of the meaning of the code in the system, following the rules of the system.</note>
+             </notes>
+        <source>Disease</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Encounter-example-encounter" resname="Coding.display">
+             <notes>
+               <note id="n1">A representation of the meaning of the code in the system, following the rules of the system.</note>
+             </notes>
+        <source>From psychiatric hospital</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Encounter-example-encounter" resname="Coding.display">
+             <notes>
+               <note id="n1">A representation of the meaning of the code in the system, following the rules of the system.</note>
+             </notes>
+        <source>Re-admission</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Encounter-example-encounter" resname="Coding.display">
+             <notes>
+               <note id="n1">A representation of the meaning of the code in the system, following the rules of the system.</note>
+             </notes>
+        <source>Home</source>
+        <target></target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

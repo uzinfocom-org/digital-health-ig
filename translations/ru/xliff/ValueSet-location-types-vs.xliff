@@ -1,0 +1,1401 @@
+<?xml version="1.0" ?>
+
+<xliff xmlns="urn:oasis:names:tc:xliff:document:2.0" version="2.0">
+  <file source-language="en" target-language="ru" id="ValueSet-location-types-vs" original="Resource ValueSet-location-types-vs" datatype="KEYVALUEJSON">
+    <body>
+      <trans-unit id="ValueSet-location-types-vs" resname="ValueSet.name">
+             <notes>
+               <note id="n1">A natural language name identifying the value set. This name should be usable as an identifier for the module by machine processing applications such as code generation.</note>
+             </notes>
+        <source>LocationTypesVS</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ValueSet-location-types-vs" resname="ValueSet.title">
+             <notes>
+               <note id="n1">A short, descriptive, user-friendly title for the value set.</note>
+             </notes>
+        <source>Location types</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ValueSet-location-types-vs" resname="ValueSet.publisher">
+             <notes>
+               <note id="n1">The name of the organization or individual responsible for the release and ongoing maintenance of the value set.</note>
+             </notes>
+        <source>Uzinfocom LLC</source>
+        <target>ООО «Единый интегратор Uzinfocom»</target>
+      </trans-unit>
+      <trans-unit id="ValueSet-location-types-vs" resname="ContactDetail.name">
+             <notes>
+               <note id="n1">The name of an individual to contact.</note>
+             </notes>
+        <source>Uzinfocom LLC</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ValueSet-location-types-vs" resname="ValueSet.description">
+             <notes>
+               <note id="n1">A free text natural language description of the value set from a consumer's perspective. The textual description specifies the span of meanings for concepts to be included within the Value Set Expansion, and also may specify the intended use and limitations of the Value Set.</note>
+             </notes>
+        <source>Location types defined by the Ministry of Health of the Republic of Uzbekistan</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ValueSet-location-types-vs" resname="ValueSet.compose.include.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Место происшествия</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ValueSet-location-types-vs" resname="ValueSet.compose.include.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Voqea joyi</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ValueSet-location-types-vs" resname="ValueSet.compose.include.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>клиника аллергии</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ValueSet-location-types-vs" resname="ValueSet.compose.include.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>allergiya klinikasi</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ValueSet-location-types-vs" resname="ValueSet.compose.include.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Скорая помощь</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ValueSet-location-types-vs" resname="ValueSet.compose.include.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Tez yordam mashinasi</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ValueSet-location-types-vs" resname="ValueSet.compose.include.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>клиника трансплантации костного мозга</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ValueSet-location-types-vs" resname="ValueSet.compose.include.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>suyak iligi transplantatsiyasi klinikasi</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ValueSet-location-types-vs" resname="ValueSet.compose.include.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Отделение трансплантации костного мозга</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ValueSet-location-types-vs" resname="ValueSet.compose.include.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Suyak iligi transplantatsiyasi bo'limi</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ValueSet-location-types-vs" resname="ValueSet.compose.include.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>клиника молочной железы</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ValueSet-location-types-vs" resname="ValueSet.compose.include.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>ko'krak klinikasi</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ValueSet-location-types-vs" resname="ValueSet.compose.include.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>детская и подростковая неврологическая клиника</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ValueSet-location-types-vs" resname="ValueSet.compose.include.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>bolalar va o'smirlar nevrologik klinikasi</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ValueSet-location-types-vs" resname="ValueSet.compose.include.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>детская и подростковая психиатрическая клиника</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ValueSet-location-types-vs" resname="ValueSet.compose.include.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>bolalar va o'smirlar psixiatriya klinikasi</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ValueSet-location-types-vs" resname="ValueSet.compose.include.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>амбулаторные медицинские учреждения; клиника/центр; Реабилитация: Кардиологические учреждения</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ValueSet-location-types-vs" resname="ValueSet.compose.include.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>ambulatoriya tibbiyot muassasalari; klinika/markaz; Reabilitatsiya: Kardiologiya muassasalari</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ValueSet-location-types-vs" resname="ValueSet.compose.include.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Лаборатория катетеризации сердца</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ValueSet-location-types-vs" resname="ValueSet.compose.include.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Yurak kateterizatsiyasi laboratoriyasi</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ValueSet-location-types-vs" resname="ValueSet.compose.include.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Отделение коронарной терапии</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ValueSet-location-types-vs" resname="ValueSet.compose.include.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Koronar terapiya bo'limi</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ValueSet-location-types-vs" resname="ValueSet.compose.include.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Отделение грудной клетки</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ValueSet-location-types-vs" resname="ValueSet.compose.include.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Ko'krak qismi</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ValueSet-location-types-vs" resname="ValueSet.compose.include.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Клиника коагуляции</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ValueSet-location-types-vs" resname="ValueSet.compose.include.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Koagulyatsiya klinikasi</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ValueSet-location-types-vs" resname="ValueSet.compose.include.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Клиника колоректальной хирургии</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ValueSet-location-types-vs" resname="ValueSet.compose.include.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Kolorektal jarrohlik klinikasi</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ValueSet-location-types-vs" resname="ValueSet.compose.include.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Сердечно-сосудистое диагностическое или терапевтическое отделение</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ValueSet-location-types-vs" resname="ValueSet.compose.include.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Yurak-qon tomir diagnostikasi yoki terapevtik bo'limi</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ValueSet-location-types-vs" resname="ValueSet.compose.include.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Адрес доставки</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ValueSet-location-types-vs" resname="ValueSet.compose.include.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Yetkazib berish manzili</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ValueSet-location-types-vs" resname="ValueSet.compose.include.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Дерматологическая клиника</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ValueSet-location-types-vs" resname="ValueSet.compose.include.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Dermatologiya klinikasi</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ValueSet-location-types-vs" resname="ValueSet.compose.include.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Диагностическое или терапевтическое отделение</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ValueSet-location-types-vs" resname="ValueSet.compose.include.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Diagnostika yoki terapevtik bo'lim</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ValueSet-location-types-vs" resname="ValueSet.compose.include.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Эхокардиографическая лаборатория</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ValueSet-location-types-vs" resname="ValueSet.compose.include.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Ekokardiyografiya laboratoriyasi</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ValueSet-location-types-vs" resname="ValueSet.compose.include.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Эндокринологическая клиника</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ValueSet-location-types-vs" resname="ValueSet.compose.include.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Endokrinologiya klinikasi</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ValueSet-location-types-vs" resname="ValueSet.compose.include.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Эндоскопическая лаборатория</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ValueSet-location-types-vs" resname="ValueSet.compose.include.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Endoskopiya laboratoriyasi</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ValueSet-location-types-vs" resname="ValueSet.compose.include.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Отделение эпилепсии</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ValueSet-location-types-vs" resname="ValueSet.compose.include.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Epilepsiya bo'limi</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ValueSet-location-types-vs" resname="ValueSet.compose.include.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Отделение неотложной помощи</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ValueSet-location-types-vs" resname="ValueSet.compose.include.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Favqulodda vaziyatlar bo'limi</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ValueSet-location-types-vs" resname="ValueSet.compose.include.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Отделение неотложной помощи при травмах</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ValueSet-location-types-vs" resname="ValueSet.compose.include.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Travmatik shoshilinch yordam bo'limi</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ValueSet-location-types-vs" resname="ValueSet.compose.include.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Семейная медицинская клиника</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ValueSet-location-types-vs" resname="ValueSet.compose.include.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Oilaviy tibbiy poliklinika</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ValueSet-location-types-vs" resname="ValueSet.compose.include.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Больницы; Больница общей неотложной помощи</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ValueSet-location-types-vs" resname="ValueSet.compose.include.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Kasalxonalar; Umumiy shoshilinch tibbiy yordam shifoxonasi</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ValueSet-location-types-vs" resname="ValueSet.compose.include.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Гастроэнтерологическая клиника</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ValueSet-location-types-vs" resname="ValueSet.compose.include.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Gastroenterologiya klinikasi</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ValueSet-location-types-vs" resname="ValueSet.compose.include.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Гастроэнтерологическая диагностическая или терапевтическая лаборатория</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ValueSet-location-types-vs" resname="ValueSet.compose.include.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Gastroenterologik diagnostika yoki terapevtik laboratoriya</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ValueSet-location-types-vs" resname="ValueSet.compose.include.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Гинекологическая клиника</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ValueSet-location-types-vs" resname="ValueSet.compose.include.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Ginekologik klinika</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ValueSet-location-types-vs" resname="ValueSet.compose.include.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Отделение гемодиализа</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ValueSet-location-types-vs" resname="ValueSet.compose.include.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Gemodializ bo'limi</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ValueSet-location-types-vs" resname="ValueSet.compose.include.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Гематологическая клиника</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ValueSet-location-types-vs" resname="ValueSet.compose.include.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Gematologiya klinikasi</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ValueSet-location-types-vs" resname="ValueSet.compose.include.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Больничная лаборатория</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ValueSet-location-types-vs" resname="ValueSet.compose.include.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Kasalxona laboratoriyasi</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ValueSet-location-types-vs" resname="ValueSet.compose.include.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Больница</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ValueSet-location-types-vs" resname="ValueSet.compose.include.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Kasalxona</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ValueSet-location-types-vs" resname="ValueSet.compose.include.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Отделение радиологии</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ValueSet-location-types-vs" resname="ValueSet.compose.include.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Radiologiya bo'limi</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ValueSet-location-types-vs" resname="ValueSet.compose.include.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Гипертоническая клиника</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ValueSet-location-types-vs" resname="ValueSet.compose.include.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Gipertenziya klinikasi</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ValueSet-location-types-vs" resname="ValueSet.compose.include.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Больничное отделение</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ValueSet-location-types-vs" resname="ValueSet.compose.include.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Kasalxona bo'limi</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ValueSet-location-types-vs" resname="ValueSet.compose.include.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Место забора образцов</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ValueSet-location-types-vs" resname="ValueSet.compose.include.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Namuna yig'ish joyi</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ValueSet-location-types-vs" resname="ValueSet.compose.include.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Отделение интенсивной терапии</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ValueSet-location-types-vs" resname="ValueSet.compose.include.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Reanimatsiya bo'limi</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ValueSet-location-types-vs" resname="ValueSet.compose.include.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Инфекционная клиника</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ValueSet-location-types-vs" resname="ValueSet.compose.include.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Yuqumli kasalliklar klinikasi</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ValueSet-location-types-vs" resname="ValueSet.compose.include.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Стационарная лаборатория</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ValueSet-location-types-vs" resname="ValueSet.compose.include.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Statsionar laboratoriya</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ValueSet-location-types-vs" resname="ValueSet.compose.include.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Стационарная аптека</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ValueSet-location-types-vs" resname="ValueSet.compose.include.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Statsionar dorixona</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ValueSet-location-types-vs" resname="ValueSet.compose.include.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Клиника бесплодия</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ValueSet-location-types-vs" resname="ValueSet.compose.include.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Bepushtlik klinikasi</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ValueSet-location-types-vs" resname="ValueSet.compose.include.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Медицинская лаборатория</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ValueSet-location-types-vs" resname="ValueSet.compose.include.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Tibbiy laboratoriya</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ValueSet-location-types-vs" resname="ValueSet.compose.include.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Клиника медицинской генетики</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ValueSet-location-types-vs" resname="ValueSet.compose.include.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Tibbiy genetika klinikasi</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ValueSet-location-types-vs" resname="ValueSet.compose.include.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Военный госпиталь</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ValueSet-location-types-vs" resname="ValueSet.compose.include.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Harbiy kasalxona</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ValueSet-location-types-vs" resname="ValueSet.compose.include.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Мобильное подразделение</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ValueSet-location-types-vs" resname="ValueSet.compose.include.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Mobil qurilma</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ValueSet-location-types-vs" resname="ValueSet.compose.include.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Отделение неврологической интенсивной терапии и инсульта</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ValueSet-location-types-vs" resname="ValueSet.compose.include.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Nevrologik intensiv terapiya va insult bo'limi</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ValueSet-location-types-vs" resname="ValueSet.compose.include.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Клиника нефрологии</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ValueSet-location-types-vs" resname="ValueSet.compose.include.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Nefrologiya klinikasi</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ValueSet-location-types-vs" resname="ValueSet.compose.include.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Клиника неврологии</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ValueSet-location-types-vs" resname="ValueSet.compose.include.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Nevrologiya klinikasi</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ValueSet-location-types-vs" resname="ValueSet.compose.include.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Отделение нейрохирургии</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ValueSet-location-types-vs" resname="ValueSet.compose.include.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Neyroxirurgiya kafedrasi</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ValueSet-location-types-vs" resname="ValueSet.compose.include.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Клиника акушерства</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ValueSet-location-types-vs" resname="ValueSet.compose.include.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Akusherlik klinikasi</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ValueSet-location-types-vs" resname="ValueSet.compose.include.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>амбулаторное учреждение</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ValueSet-location-types-vs" resname="ValueSet.compose.include.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>ambulatoriya muassasasi</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ValueSet-location-types-vs" resname="ValueSet.compose.include.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Клиника челюстно-лицевой хирургии</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ValueSet-location-types-vs" resname="ValueSet.compose.include.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Maksillofasiyal jarrohlik klinikasi</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ValueSet-location-types-vs" resname="ValueSet.compose.include.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Клиника медицинской онкологии</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ValueSet-location-types-vs" resname="ValueSet.compose.include.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Tibbiy onkologiya klinikasi</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ValueSet-location-types-vs" resname="ValueSet.compose.include.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Клиника офтальмологии</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ValueSet-location-types-vs" resname="ValueSet.compose.include.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Oftalmologiya klinikasi</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ValueSet-location-types-vs" resname="ValueSet.compose.include.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Клиника оптометрии</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ValueSet-location-types-vs" resname="ValueSet.compose.include.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Optometriya klinikasi</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ValueSet-location-types-vs" resname="ValueSet.compose.include.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Клиника ортопедии</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ValueSet-location-types-vs" resname="ValueSet.compose.include.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Ortopediya klinikasi</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ValueSet-location-types-vs" resname="ValueSet.compose.include.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Амбулаторная лаборатория</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ValueSet-location-types-vs" resname="ValueSet.compose.include.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Ambulatoriya laboratoriyasi</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ValueSet-location-types-vs" resname="ValueSet.compose.include.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Амбулаторная аптека</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ValueSet-location-types-vs" resname="ValueSet.compose.include.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Ambulator dorixona</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ValueSet-location-types-vs" resname="ValueSet.compose.include.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Клиника первичной медико-санитарной помощи</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ValueSet-location-types-vs" resname="ValueSet.compose.include.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Birlamchi tibbiy yordam klinikasi</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ValueSet-location-types-vs" resname="ValueSet.compose.include.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Клиника педиатрии</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ValueSet-location-types-vs" resname="ValueSet.compose.include.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Pediatriya klinikasi</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ValueSet-location-types-vs" resname="ValueSet.compose.include.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Детская кардиологическая клиника</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ValueSet-location-types-vs" resname="ValueSet.compose.include.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Bolalar kardiologiya klinikasi</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ValueSet-location-types-vs" resname="ValueSet.compose.include.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Детская эндокринологическая клиника</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ValueSet-location-types-vs" resname="ValueSet.compose.include.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Bolalar endokrinologiya klinikasi</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ValueSet-location-types-vs" resname="ValueSet.compose.include.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Детская гастроэнтерологическая клиника</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ValueSet-location-types-vs" resname="ValueSet.compose.include.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Bolalar gastroenterologiya klinikasi</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ValueSet-location-types-vs" resname="ValueSet.compose.include.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Детская гематологическая клиника</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ValueSet-location-types-vs" resname="ValueSet.compose.include.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Bolalar gematologiya klinikasi</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ValueSet-location-types-vs" resname="ValueSet.compose.include.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Клиника детской онкологии</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ValueSet-location-types-vs" resname="ValueSet.compose.include.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Bolalar onkologiyasi klinikasi</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ValueSet-location-types-vs" resname="ValueSet.compose.include.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Отделение детской интенсивной терапии</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ValueSet-location-types-vs" resname="ValueSet.compose.include.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Bolalar intensiv terapiya bo'limi</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ValueSet-location-types-vs" resname="ValueSet.compose.include.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Детская инфекционная клиника</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ValueSet-location-types-vs" resname="ValueSet.compose.include.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Bolalar yuqumli kasalliklar klinikasi</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ValueSet-location-types-vs" resname="ValueSet.compose.include.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Клиника детской нефрологии</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ValueSet-location-types-vs" resname="ValueSet.compose.include.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Bolalar nefrologiyasi klinikasi</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ValueSet-location-types-vs" resname="ValueSet.compose.include.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Отделение интенсивной терапии новорожденных</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ValueSet-location-types-vs" resname="ValueSet.compose.include.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Neonatal intensiv terapiya bo'limi</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ValueSet-location-types-vs" resname="ValueSet.compose.include.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Клиника детской ревматологии</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ValueSet-location-types-vs" resname="ValueSet.compose.include.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Bolalar revmatologiyasi klinikasi</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ValueSet-location-types-vs" resname="ValueSet.compose.include.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Детское отделение</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ValueSet-location-types-vs" resname="ValueSet.compose.include.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Bolalar bo'limi</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ValueSet-location-types-vs" resname="ValueSet.compose.include.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Аптека</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ValueSet-location-types-vs" resname="ValueSet.compose.include.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Dorixona</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ValueSet-location-types-vs" resname="ValueSet.compose.include.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Отделение психиатрической больницы</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ValueSet-location-types-vs" resname="ValueSet.compose.include.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Psixiatriya shifoxonasi bo'limi</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ValueSet-location-types-vs" resname="ValueSet.compose.include.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Клиника пластической хирургии</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ValueSet-location-types-vs" resname="ValueSet.compose.include.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Plastik jarrohlik klinikasi</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ValueSet-location-types-vs" resname="ValueSet.compose.include.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Клиника профилактической медицины</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ValueSet-location-types-vs" resname="ValueSet.compose.include.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Tibbiyot profilaktikasi klinikasi</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ValueSet-location-types-vs" resname="ValueSet.compose.include.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Клиника проктологии</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ValueSet-location-types-vs" resname="ValueSet.compose.include.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Proktologiya klinikasi</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ValueSet-location-types-vs" resname="ValueSet.compose.include.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Офис поставщика услуг</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ValueSet-location-types-vs" resname="ValueSet.compose.include.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Xizmat ko'rsatuvchi provayder idorasi</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ValueSet-location-types-vs" resname="ValueSet.compose.include.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Клиника протезирования</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ValueSet-location-types-vs" resname="ValueSet.compose.include.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Protezlar klinikasi</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ValueSet-location-types-vs" resname="ValueSet.compose.include.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Клиника психологии</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ValueSet-location-types-vs" resname="ValueSet.compose.include.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Psixologiya klinikasi</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ValueSet-location-types-vs" resname="ValueSet.compose.include.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Клиника психиатрии</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ValueSet-location-types-vs" resname="ValueSet.compose.include.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Psixiatriya klinikasi</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ValueSet-location-types-vs" resname="ValueSet.compose.include.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Психиатрическое отделение</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ValueSet-location-types-vs" resname="ValueSet.compose.include.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Psixiatriya bo'limi</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ValueSet-location-types-vs" resname="ValueSet.compose.include.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Место жительства пациента</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ValueSet-location-types-vs" resname="ValueSet.compose.include.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Bemorning yashash joyi</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ValueSet-location-types-vs" resname="ValueSet.compose.include.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Рентгенологическое диагностическое или терапевтическое отделение</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ValueSet-location-types-vs" resname="ValueSet.compose.include.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Rentgen diagnostikasi yoki terapevtik bo'limi</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ValueSet-location-types-vs" resname="ValueSet.compose.include.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Отделение радиационной онкологии</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ValueSet-location-types-vs" resname="ValueSet.compose.include.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Radiatsion onkologiya kafedrasi</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ValueSet-location-types-vs" resname="ValueSet.compose.include.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>центр лечения наркомании</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ValueSet-location-types-vs" resname="ValueSet.compose.include.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>giyohvandlikni davolash markazi</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ValueSet-location-types-vs" resname="ValueSet.compose.include.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Клиника ревматологии</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ValueSet-location-types-vs" resname="ValueSet.compose.include.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Revmatologiya klinikasi</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ValueSet-location-types-vs" resname="ValueSet.compose.include.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Отделение реабилитации</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ValueSet-location-types-vs" resname="ValueSet.compose.include.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Reabilitatsiya bo'limi</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ValueSet-location-types-vs" resname="ValueSet.compose.include.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Нейрорадиологическое отделение</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ValueSet-location-types-vs" resname="ValueSet.compose.include.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Neyroradiologiya bo'limi</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ValueSet-location-types-vs" resname="ValueSet.compose.include.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Школа</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ValueSet-location-types-vs" resname="ValueSet.compose.include.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Maktab</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ValueSet-location-types-vs" resname="ValueSet.compose.include.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Отделение расстройств сна</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ValueSet-location-types-vs" resname="ValueSet.compose.include.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Uyqu buzilishi bo'limi</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ValueSet-location-types-vs" resname="ValueSet.compose.include.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Клиника спортивной медицины</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ValueSet-location-types-vs" resname="ValueSet.compose.include.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Sport tibbiyoti klinikasi</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ValueSet-location-types-vs" resname="ValueSet.compose.include.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Клиника хирургии</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ValueSet-location-types-vs" resname="ValueSet.compose.include.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Jarrohlik klinikasi</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ValueSet-location-types-vs" resname="ValueSet.compose.include.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Реабилитация от употребления психоактивных веществ</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ValueSet-location-types-vs" resname="ValueSet.compose.include.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Giyohvand moddalarni suiiste'mol qilishni reabilitatsiya qilish</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ValueSet-location-types-vs" resname="ValueSet.compose.include.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Клиника трансплантации</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ValueSet-location-types-vs" resname="ValueSet.compose.include.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Transplantatsiya klinikasi</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ValueSet-location-types-vs" resname="ValueSet.compose.include.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Клиника урологии</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ValueSet-location-types-vs" resname="ValueSet.compose.include.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Urologiya klinikasi</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ValueSet-location-types-vs" resname="ValueSet.compose.include.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Рабочее место</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ValueSet-location-types-vs" resname="ValueSet.compose.include.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Ish joyi</source>
+        <target></target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

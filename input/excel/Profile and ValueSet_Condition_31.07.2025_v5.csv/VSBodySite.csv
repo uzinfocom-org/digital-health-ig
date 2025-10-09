@@ -1,0 +1,1001 @@
+Code	UZ	RU (SNOMED CT)	EN
+ 53075003 			Distal phalanx of great toe
+  76986006 			Distal phalanx of second toe
+  65258003 			Distal phalanx of third toe
+  54333003 			Distal phalanx of fourth toe
+  10770001 			Distal phalanx of little toe
+  363670009 			Interphalangeal joint structure of great toe
+  371216008 			Distal interphalangeal joint structure of second toe (body structure)
+  371219001 			Distal interphalangeal joint structure of third toe (body structure)
+  371205001 			Distal interphalangeal joint structure of fourth toe (body structure)
+  371203008 			Distal interphalangeal joint structure of fifth toe (body structure)
+  371292009 			Proximal interphalangeal joint structure of second toe (body structure)
+  371255009 			Proximal interphalangeal joint structure of third toe (body structure)
+  371288002 			Proximal interphalangeal joint structure of fourth toe (body structure)
+  371284000 			Proximal interphalangeal joint structure of fifth toe (body structure)
+  67169006 			Head of first metatarsal bone
+  9677004 			Head of second metatarsal bone
+  46971007 			Head of third metatarsal bone
+  3134008 			Head of fourth metatarsal bone
+  71822005 			Head of fifth metatarsal bone
+  89221001 			Base of first metatarsal bone
+  90894004 			Base of second metatarsal bone
+  89995006 			Base of third metatarsal bone
+  15368009 			Base of fourth metatarsal bone
+  30980004 			Base of fifth metatarsal bone
+  38607000 			Styloid process of fifth metatarsal bone
+  2979003 			Medial cuneiform bone
+  19193007 			Intermediate cuneiform bone
+  67411009 			Lateral cuneiform bone
+  81012005 			Cuboid
+  75772009 			Navicular bone of foot
+  67453005 			Talus
+  80144004 			Calcaneus
+  6417001 			Medial malleolus
+  113225006 			Lateral malleolus of fibula
+  22457002 			Head of fibula
+  45879002 			Tibial tuberosity
+  122474001 			Medial condyle of femur
+  122475000 			Lateral condyle of femur
+  69030007 			Ischial tuberosity
+  29850006 			Iliac crest
+  442083009 			Anatomical or acquired body structure (body structure)
+  107008 			Fetal part of placenta
+  108003 			Entire condylar emissary vein
+  110001 			Visceral layer of Bowman's capsule
+  111002 			Parathyroid gland
+  116007 			Subcutaneous tissue of medial surface of index finger
+  124002 			Coronoid process of mandible
+  149003 			Central pair of microtubules, cilium or flagellum, not bacterial
+  155008 			Deep circumflex artery of ilium
+  167005 			Supraclavicular part of brachial plexus
+  202009 			Anterior division of renal artery
+  205006 			Entire left commissure of aortic valve
+  206007 			Gluteus maximus muscle
+  221001 			Articular surface, phalanges, of fourth metacarpal bone
+  227002 			Canal of Hering
+  233006 			Hepatocolic ligament
+  235004 			Superior labial artery
+  246001 			Lateral vestibular nucleus
+  247005 			Mesotympanum
+  251007 			Pectoral region
+  256002 			Kupffer cell
+  263002 			Thoracic nerve
+  266005 			Right lower lobe of lung
+  272005 			Superior articular process of lumbar vertebra
+  273000 			Lateral myocardium
+  283001 			Central axillary lymph node
+  284007 			Entire flexor tendon and tendon sheath of fourth toe
+  289002 			Metacarpophalangeal joint of index finger
+  301000 			Fifth metatarsal bone
+  311007 			Plantar surface of great toe
+  315003 			Skin of umbilicus
+  318001 			Cardiac impression of liver
+  344001 			Ankle
+  345000 			Atrioventricular bundle
+  356000 			Reticular corium
+  393006 			Wall of urinary bladder
+  402006 			Dental branches of inferior alveolar artery
+  405008 			Entire posterior temporal diploic vein
+  414003 			Gastric fundus
+  420002 			Anastomosis, heterocladic
+  422005 			Inferior surface of tongue
+  446003 			Trochanteric bursa
+  457008 			Collateral ligament
+  461002 			Lateral corticospinal tract
+  464005 			Basophilic normoblast
+  465006 			Ascending frontal gyrus
+  471000 			Flexor hallucis longus muscle
+  480000 			Cardiopulmonary circulatory system
+  485005 			Transverse colon
+  528006 			Costal surface of lung
+  552004 			Entire vagus nerve parasympathetic fibers to cardiac plexus
+  565008 			Intervertebral disc space of fifth lumbar vertebra
+  582005 			Head of phalanx of great toe
+  587004 			Capsule of proximal interphalangeal joint of third toe
+  589001 			Interventricular septum
+  595000 			Palpebral fissure
+  608002 			Subcutaneous tissue of philtrum
+  621009 			Multivesicular body, internal vesicles
+  635006 			Tuberosity of distal phalanx of little toe
+  650002 			Superior articular process of seventh thoracic vertebra
+  660006 			Tracheal mucous membrane
+  661005 			Jaw
+  667009 			Embryonic structure
+  688000 			Fetal hyaloid artery
+  691000 			Small intestine submucosa
+  692007 			Body of ischium
+  723004 			Dense intermediate filament bundles
+  774007 			Head and neck structure
+  790007 			Visceral aspect of liver
+  798000 			Entire deep temporal vein
+  808000 			Posterior intercostal arteries
+  809008 			Fetal chondrocranium
+  823005 			Posterior cervical spinal cord nerve root
+  830004 			Spinous process of fifth thoracic vertebra
+  836005 			Oral region of face
+  885000 			Lamina muscularis of colonic mucous membrane
+  895007 			Anterior cruciate ligament of knee joint
+  917004 			Superior laryngeal aperture
+  921006 			Thyrohyoid branch of ansa cervicalis
+  947002 			Crus of diaphragm
+  955009 			Bronchus
+  976004 			Ovarian vein
+  996007 			Meningeal branches of occipital artery
+  1005009 			Entire diaphragmatic lymph node
+  1012000 			Fibrous portion of pericardium
+  1015003 			Peritonsillar tissue
+  1028005 			Sebaceous gland
+  1030007 			Vesicular bursa of sternohyoid muscle
+  1063000 			Frontozygomatic suture of skull
+  1075005 			Promonocyte
+  1076006 			Entire subcutaneous prepatellar bursa
+  1086007 			Female
+  1087003 			Sternothyroid muscle
+  1092001 			Superior occipital gyrus
+  1099005 			Thymic cortex
+  1101003 			Cranial cavity
+  1106008 			Entire major calyx
+  1110006 			Tarsal gland
+  1122009 			Inferior longitudinal muscle of tongue
+  1136004 			Aortopulmonary septum
+  1159005 			Frenulum linguae
+  1172006 			Odontoid process of axis
+  1173001 			Mandibular nerve
+  1174007 			Chromosomes, group E
+  1193009 			Teres major muscle
+  1216008 			Synostosis
+  1231004 			Meninges
+  1236009 			Duodenal serosa
+  1243003 			Inferior articular process of sixth cervical vertebra
+  1246006 			Dorsal digital nerves of radial nerve
+  1263005 			Distinctive arrangement of microtubules
+  1277008 			Vertebral nerve
+  1307006 			Glottis
+  1311000 			Telogen hair
+  1350001 			Deep flexor tendon of index finger
+  1353004 			Gastric serosa
+  1403006 			Vastus lateralis muscle
+  1425000 			Posterior limb of stapes
+  1439000 			Paravesicular lymph node
+  1441004 			Ventricle of larynx
+  1456008 			Yellow fibrocartilage
+  1467009 			Parietal branch of superficial temporal artery
+  1484003 			Metatarsus
+  1490004 			Soft tissues of trunk
+  1502004 			Anterior cecal artery
+  1511004 			Ejaculatory duct
+  1516009 			Frontomental diameter of head
+  1527006 			Lamina of fourth thoracic vertebra
+  1537001 			Intervertebral disc of eleventh thoracic vertebra
+  1541002 			Coccygeal plexus
+  1562001 			Nucleus pulposus of intervertebral disc of third lumbar vertebra
+  1580005 			Ventral lateral nucleus of thalamus
+  1581009 			Ileal arteries
+  1584001 			Entire symphysis
+  1600003 			Splenius capitis muscle
+  1605008 			Histioblast
+  1610007 			Otoconia
+  1611006 			Entire paramammary lymph node
+  1617005 			Intrinsic larynx
+  1620002 			Metaphase nucleus
+  1626008 			Third thoracic vertebra
+  1627004 			Medial collateral ligament of knee joint
+  1630006 			Supraorbital vein
+  1631005 			Foregut
+  1650005 			Hilum of left lung
+  1655000 			Transverse peduncular tract nucleus
+  1659006 			Dorsomedial nucleus of thalamus
+  1684009 			Ligamentum teres of liver
+  1706004 			Thymic lobule
+  1707008 			Ventral nuclear group of thalamus
+  1711002 			Periorbital region
+  1716007 			Cupula ampullaris
+  1721005 			Right tonsil
+  1729007 			Central tegmental tract
+  1732005 			Thoracic duct
+  1765002 			Lymphatic of thorax
+  1780008 			Premelanosome
+  1781007 			Sacroiliac region
+  1797002 			Naris
+  1818002 			Greater circulus arteriosus of iris
+  1825009 			Entire root of nose
+  1832000 			Bulbar conjunctiva
+  1840006 			Arrector pili muscles
+  1849007 			Pharyngeal recess
+  1853009 			Suprahyoid muscles
+  1874005 			Entire promontory common iliac lymph node
+  1895000 			Entire musculophrenic vein
+  1902009 			Skin of external ear
+  1910005 			Entire ear
+  1918003 			Suprarenal aorta
+  1927002 			Entire left elbow region
+  1992003 			Porus acusticus internus
+  1997009 			Cingulum dentis
+  2010005 			Clavicular facet of scapula
+  2020000 			Superior thoracic artery
+  2031008 			Spinal cord ventral median fissure
+  2033006 			Right fallopian tube
+  2044003 			Vaginal nerves
+  2048000 			Lingual tonsil
+  2049008 			Chorionic villi
+  2059009 			Skin of ear lobule
+  2071003 			Reticular formation of spinal cord
+  2076008 			Head of phalanx of hand
+  2083001 			Nucleus ambiguus
+  2095001 			Accessory sinus
+  2123001 			Tuberomammillary nucleus
+  2150006 			Urinary tract transitional epithelial cell
+  2156000 			Glial cell
+  2160002 			Ligamentum arteriosum
+  2175005 			Pharyngeal cavity
+  2182009 			Endometrial zona basalis
+  2192001 			Clavicular part of pectoralis major muscle
+  2205003 			Lamina of fifth thoracic vertebra
+  2209009 			Cerebral basal surface
+  2236006 			Lesser osseous pelvis
+  2246008 			Type I hair cell
+  2255006 			Subserosa
+  2302002 			Veins of the knee
+  2305000 			Spinous process of cervical vertebra
+  2306004 			Base of third metacarpal bone
+  2327009 			Entire salivary seromucous gland (body structure)
+  2330002 			Segmental bronchial branches
+  2332005 			Metencephalon of fetus
+  2334006 			Calyx
+  2349003 			Nasal suture of skull
+  2372001 			Medial surface of toe
+  2383005 			Papillary muscles of right ventricle
+  2389009 			Superior margin of adrenal gland
+  2395005 			Transverse facial artery
+  2397002 			First metatarsal facet of medial cuneiform bone
+  2400006 			Mandibular left first premolar tooth
+  2402003 			Dorsum of foot
+  2421006 			Submaxillary ganglion
+  2433001 			Digital tendon and tendon sheath of foot
+  2436009 			Tunica intima of vein
+  2453002 			Subcutaneous tissue of posterior surface of forearm
+  2454008 			Articular surface, third metacarpal, of second metacarpal bone
+  2484000 			Skin of frenulum of clitoris
+  2489005 			Medial check ligament of eye
+  2499000 			Entire cisterna pontis
+  2502001 			Membrane of lysosome
+  2504000 			Pancreatic plexus
+  2510000 			Femoral triangle
+  2539000 			Superior rectal artery
+  2543001 			Cuboid articular facet of fourth metatarsal bone
+  2550002 			Phalanx of thumb
+  2577006 			Gracilis muscle
+  2579009 			Plasmablast
+  2592007 			All extremities
+  2600000 			Flexor pollicis longus muscle tendon
+  2620004 			Intervertebral disc of third thoracic vertebra
+  2639009 			Neuroendocrine tissue
+  2653009 			Posterior thalamic radiation of internal capsule
+  2666009 			Semispinalis capitis muscle
+  2675006 			Anterior ethmoidal artery
+  2681003 			Dorsal nerve of penis
+  2682005 			Mucous membrane of urinary bladder
+  2686008 			Medial olfactory gyrus
+  2687004 			Bowman's space
+  2695000 			Left maxillary sinus
+  2703009 			Entire calcarine artery
+  2712006 			Capsule of ankle joint
+  2718005 			Apical foramen of tooth
+  2726002 			Fold for stapes
+  2730004 			Entire vitelline vein of placenta
+  2739003 			Endometrium
+  2741002 			Medial occipitotemporal gyrus
+  2746007 			Circular layer of gastric muscularis
+  2748008 			Spinal cord
+  2759004 			Eccrine gland
+  2771005 			Lamina propria of ureter
+  2789006 			Apocrine gland
+  2792005 			Pars tensa of tympanic membrane
+  2803000 			Tendon sheath of popliteus muscle
+  2810006 			Cremasteric fascia
+  2812003 			Head of femur
+  2824005 			Spinous process of fourth thoracic vertebra
+  2826007 			Lamina of fourth lumbar vertebra
+  2830005 			Dorsal digital nerves of lateral hallux and medial second toe
+  2839006 			Perivesicular tissues of seminal vesicles
+  2841007 			Renal artery
+  2845003 			Respiratory epithelium
+  2848001 			Superficial epigastric artery
+  2855004 			Accessory cephalic vein
+  2861001 			Entire gland (organ)
+  2894003 			Posterior epiglottis
+  2905008 			Anterior ligament of uterus
+  2909002 			Posterior portion of diaphragmatic aspect of liver
+  2920002 			Facial nerve motor branch
+  2922005 			Posterior papillary muscle of left ventricle
+  2923000 			Subcutaneous tissue of supraorbital area
+  2969000 			Anatomical space structure (body structure)
+  2986006 			Talar facet of navicular bone of foot
+  2998001 			Entire right margin of uterus
+  3003007 			Anterior limb of internal capsule
+  3008003 			White fibrocartilage
+  3028004 			Transitional epithelial cell
+  3039001 			Subcutaneous tissue of thigh
+  3042007 			Glomerular urinary pole
+  3054007 			Articular surface, metacarpal, of phalanx of thumb
+  3055008 			Bone marrow of vertebral body
+  3056009 			Anteroventral nucleus of thalamus
+  3057000 			Nerve
+  3058005 			Peripheral nervous system
+  3062004 			Spinal arachnoid
+  3068000 			Seminal vesicle lumen
+  3081007 			Mitochondrion in division
+  3093003 			Tendinous arch of pelvic fascia
+  3100007 			Clinical crown of tooth
+  3113001 			Suprachoroidal space
+  3117000 			Dorsal surface of index finger
+  3118005 			Trabecula carnea of left ventricle
+  3120008 			Pleura
+  3138006 			Bony tissue
+  3153003 			Tractus olivocochlearis
+  3156006 			Obturator artery
+  3159004 			Costocervical trunk
+  3169005 			Spinal nerve
+  3178004 			Raphe of soft palate
+  3194006 			Endocardium of right atrium
+  3215002 			Subcutaneous tissue of nuchal region
+  3222005 			All large arteries
+  3227004 			Left coronary artery main stem
+  3236000 			Posterior segment of right upper lobe of lung
+  3243006 			Parametrial lymph node
+  3255000 			Papillary area
+  3262009 			Root canal of tooth
+  3279003 			Pedicle of third cervical vertebra
+  3295003 			Ventral anterior nucleus
+  3301002 			Tectopontine fibers
+  3302009 			Splenic branches of splenic artery
+  3315000 			Vestibulospinal tract
+  3332001 			Occipitofrontal diameter of head
+  3336003 			Haversian canal
+  3341006 			Right lung
+  3350008 			Entire right commissure of pulmonic valve
+  3362007 			Intertragal incisure
+  3366005 			Anterior papillary muscle of left ventricle
+  3370002 			Supporting tissue of rectum
+  3374006 			Secondary spermatocyte
+  3377004 			Agger nasi
+  3382006 			Rima oris
+  3383001 			Nonsegmented basophil
+  3394002 			Suboccipitobregmatic diameter of head
+  3395001 			Superior palpebral arch
+  3396000 			Mesogastrium
+  3400000 			Cell of bone
+  3409004 			Lateral margin of forearm
+  3417007 			Rotator muscles
+  3438001 			Deep lymphatics of upper extremity
+  3444002 			Thalamostriate veins
+  3447009 			Penetrated oocyte
+  3460003 			Anterodorsal nucleus of thalamus
+  3462006 			Commissure of tricuspid valve
+  3471002 			Posterior midline of trunk
+  3478008 			Vastus medialis muscle
+  3481003 			Embryonic testis
+  3488009 			Annulate lamella, cisternal lumen
+  3490005 			Subcutaneous tissue of suboccipital region
+  3524005 			Lateral wall of mastoid antrum
+  3538003 			Capsule of proximal tibiofibular joint
+  3541007 			Dorsal metatarsal artery
+  3553006 			Thyroid capsule
+  3556003 			Dorsal nucleus of trapezoid body
+  3563003 			Muscularis of ureter
+  3572006 			Body of vertebra
+  3578005 			Body of gallbladder
+  3582007 			Gastrophrenic ligament
+  3584008 			Arch of tenth thoracic vertebra
+  3594003 			Straight part of longus colli muscle
+  3608004 			Ischiococcygeus muscle
+  3609007 			Occipital branch of posterior auricular artery
+  3646006 			Lamellipodium
+  3663005 			Tympanic ostium of Eustachian tube
+  3665003 			Pelvic wall
+  3670005 			Entire subpyloric lymph node
+  3711007 			Great vessel
+  3743007 			Lateral thoracic artery
+  3761003 			Nucleus pulposus of intervertebral disc of first thoracic vertebra
+  3766008 			Subcutaneous tissue of lower extremity
+  3785006 			Entire dorsal metacarpal ligament
+  3788008 			Superior segment of right lower lobe of lung
+  3789000 			Argentaffin cells
+  3810000 			Nasal septal cartilage
+  3838008 			Apex of coccyx
+  3860006 			Transplanted liver
+  3865001 			Interscapular region of back
+  3867009 			Dorsal surface of great toe
+  3876002 			Subcutaneous tissue of femoral region
+  3877006 			Common carotid plexus
+  3910004 			Subcutaneous tissue of lateral surface of fourth toe
+  3916005 			Occipital lymph node
+  3924000 			Pericardiophrenic artery
+  3931001 			Vestibular window
+  3935005 			Head of tenth rib
+  3937002 			Entorhinal cortex
+  3954005 			Lacrimal sac
+  3956007 			Fifth metatarsal articular facet of fourth metatarsal bone
+  3959000 			Rectus capitis muscle
+  3960005 			Olfactory tract
+  3964001 			Gyrus of brain
+  3966004 			Entire parietal branch of anterior cerebral artery
+  3977005 			Subcutaneous tissue of concha
+  3984002 			Deep veins of clitoris
+  3989007 			Medial nuclei of globus pallidus
+  4015004 			Chromosomes, group A
+  4019005 			Posterior commissure of labia majora
+  4029003 			Eosinophilic promyelocyte
+  4061004 			Lateral wall of orbit
+  4066009 			Capsule of proximal interphalangeal joint of index finger
+  4072009 			Fourth coccygeal vertebra
+  4081003 			Entire dorsal lingual vein
+  4093007 			Vagus nerve bronchial branches
+  4111006 			Macula of saccule
+  4117005 			Lumbosacral spinal cord central canal
+  4121003 			Superior frontal sulcus
+  4146003 			Artery of extremity
+  4148002 			Palmar surface of little finger
+  4150005 			Celiac plexus
+  4158003 			Abdominal aortic plexus
+  4159006 			Hyparterial bronchi
+  4180000 			Both lower extremities
+  4193005 			Entire extensor tendon and tendon sheath of fifth toe
+  4205002 			Türk cell
+  4212006 			Epithelial cell
+  4215008 			Head of second rib
+  4247003 			First metacarpal bone
+  4258007 			Posterior tibial veins
+  4276000 			Inferior articular process of seventh cervical vertebra
+  4281009 			Middle portion of ileum
+  4295007 			Paracortical area of lymph node
+  4303006 			Cartilage canal
+  4312008 			Anterior midline of abdomen
+  4317002 			Spinalis muscle
+  4328003 			Protoplasmic astrocyte
+  4335006 			Upper jaw
+  4352005 			Subchorionic space
+  4358009 			Lateral surface of little finger
+  4360006 			Stratum spinosum
+  4369007 			Small intestine mucous membrane
+  4371007 			Fourth metatarsal facet of lateral cuneiform bone
+  4375003 			Incisure of cartilaginous portion of auditory canal
+  4377006 			Parafascicular nucleus of thalamus
+  4394008 			Scala vestibuli
+  4402002 			Anterior articular surface for talus
+  4419000 			Tracheal submucosa
+  4421005 			Cell
+  4430002 			Clivus ossis sphenoidalis
+  4432005 			Ductus arteriosus
+  4442007 			Dental arch
+  4486002 			Accessory sinus gland
+  4524000 			Subclavian plexus
+  4527007 			Joint of lower extremity
+  4537002 			Internal medullary lamina of thalamus
+  4548009 			Lamellated granule, as in surfactant-secreting cell
+  4549001 			Entire vagus nerve parasympathetic fibers to liver, gallbladder, bile ducts and pancreas
+  4566004 			Tentorium cerebelli
+  4573009 			Desmosome
+  4578000 			Skin of posterior surface of thigh
+  4588004 			Middle trunk of brachial plexus
+  4596009 			Larynx
+  4603002 			Base of phalanx of foot
+  4606005 			Tubercle of eighth rib
+  4621004 			Lesser tuberosity of humerus
+  4624007 			Medullary cord
+  4647008 			Lipid droplet, homogeneous
+  4651005 			Tunica albuginea of corpus spongiosum
+  4658004 			Skin of nuchal region
+  4677002 			Basal lamina, inclusion in subepithelial location
+  4703008 			Cardinal vein
+  4717004 			Neutrophilic myelocyte
+  4718009 			Entire venous plexus of the foramen ovale basis cranii
+  4743003 			Ventral sacrococcygeal ligament
+  4755009 			Medial surface of great toe
+  4759003 			Gemellus muscle
+  4766002 			Supracardinal vein
+  4768001 			Perineal nerve
+  4774001 			Phrenic nerve pericardial branch
+  4775000 			Ventral posterior inferior nucleus
+  4799000 			Deiter's cell
+  4810005 			Uterine venous plexus
+  4812002 			Anterior tibial compartment
+  4828007 			Femoral canal
+  4840007 			Subcutaneous tissue of ring finger
+  4843009 			Membranous ampulla
+  4861000 			Tuberculum impar
+  4866005 			Constrictor pharyngeus muscle
+  4870002 			Dorsal tegmental nuclei of midbrain
+  4871003 			Spiral lamina of modiolus
+  4881004 			Entire sublingual vein
+  4888005 			Entire interlobular vein of kidney
+  4897009 			Cell membrane, prokaryotic
+  4905007 			Uterovaginal plexus
+  4906008 			Tympanic antrum
+  4924005 			Cerebellar gracile lobule
+  4942000 			Lymph node of lower extremity
+  4954000 			Radial notch of ulna
+  4956003 			Subcutaneous tissue of back
+  4958002 			Amygdaloid nucleus
+  5001007 			Superior temporal sulcus
+  5023006 			Yellow bone marrow
+  5026003 			Posterior surface of prostate
+  5046008 			Superficial dorsal veins of clitoris
+  5068003 			Obturator internus muscle ischial bursa
+  5069006 			Rugal column
+  5076001 			Infrasternal angle
+  5115006 			Posterior auricular vein
+  5122003 			Entire angle of first rib
+  5128004 			Suspensory ligament of lens
+  5192008 			Intervertebral foramen of twelfth thoracic vertebra
+  5194009 			Epithelium of lens
+  5195005 			Right external carotid artery
+  5204005 			Superior ileocecal recess
+  5213007 			Frontal veins
+  5225005 			Uterine ostium of fallopian tube
+  5228007 			Right cerebral hemisphere
+  5229004 			Mucosa of gallbladder
+  5261000 			Intervertebral disc of thoracic vertebra
+  5272005 			Skin of lateral portion of neck
+  5279001 			Foramen singulare
+  5296000 			Anterior mediastinal lymph node
+  5324007 			Superior pole of kidney
+  5329002 			Fourth cervical vertebra
+  5336001 			Inferior frontal gyrus
+  5347008 			Synaptic specialization, cytoplasmic
+  5362005 			Median arcuate ligament of diaphragm
+  5366008 			Hippocampus
+  5379004 			Small intestine muscularis propria
+  5382009 			Superior fascia of perineum
+  5394000 			Uterine paracervical lymph node
+  5398002 			Normal fat pad
+  5403001 			Articular process of third lumbar vertebra
+  5421003 			Sex chromosome Y
+  5427004 			Apocrine intraepidermal duct
+  5458003 			Deep artery of clitoris
+  5459006 			Cardiac incisure of stomach
+  5491007 			Lacrimal part of orbicularis oculi muscle
+  5493005 			Metacarpophalangeal joint of little finger
+  5498001 			Superior aberrant ductule of epididymis
+  5520004 			Subcutaneous tissue of chin
+  5538001 			Tegmental portion of pons
+  5544002 			Longitudinal layer of duodenal muscularis propria
+  5560003 			Alveolar ridge mucous membrane
+  5564007 			Singlet
+  5574005 			Seventh costal cartilage
+  5580002 			Tendon of supraspinatus muscle
+  5597008 			Retina of right eye
+  5611001 			Anulus fibrosus of intervertebral disc of fifth cervical vertebra
+  5625000 			Navicular facet of intermediate cuneiform bone
+  5627008 			Right visceral pleura
+  5633004 			Muscular portion of interventricular septum
+  5643001 			Canal of stomach
+  5644007 			Fractured membrane P face
+  5653000 			Entire inner surface of seventh rib
+  5665001 			Retina
+  5668004 			Lower digestive tract
+  5682004 			Subcutaneous tissue of upper extremity
+  5696005 			Entire articular part of tubercle of ninth rib
+  5697001 			Skin of lateral surface of finger
+  5709001 			Multifidus muscles
+  5713008 			Submandibular triangle
+  5717009 			Temporal fossa
+  5718004 			Tendon and tendon sheath of leg and ankle
+  5727003 			Anterior cervical lymph node
+  5742000 			Skin of forearm
+  5751008 			Subcutaneous tissue of anterior portion of neck
+  5769004 			Endocervical epithelium
+  5780004 			Paradidymis
+  5798000 			Diaphragm
+  5802004 			Medium sized neuron
+  5814007 			Entire angle of seventh rib
+  5815008 			Superior rectus muscle
+  5816009 			Duodenal fold
+  5825003 			Substantia propria of sclera
+  5828001 			Posterior cord of brachial plexus
+  5847003 			Superior articular process of seventh cervical vertebra
+  5854009 			Orbital plate of ethmoid bone
+  5868002 			Serosa of urinary bladder
+  5872003 			Subcutaneous tissue of lateral border of sole of foot
+  5881009 			Tuberosity of distal phalanx of hand
+  5882002 			Endothelial sieve plate
+  5889006 			Articular surface, third metacarpal, of fourth metacarpal bone
+  5890002 			Posterior cells of ethmoid sinus
+  5893000 			Superior recess of tympanic membrane
+  5898009 			Myotome
+  5923009 			Articular process of twelfth thoracic vertebra
+  5926001 			Bronchial lumen
+  5928000 			Great cardiac vein
+  5942008 			Tensor tympani muscle
+  5943003 			Vestibular vein
+  5944009 			Posterior palatine arch
+  5948007 			Capsule of distal interphalangeal joint of third toe
+  5951000 			Left wrist
+  5953002 			Eighth rib
+  5976004 			Subcutaneous tissue of eyelid
+  5979006 			Episcleral artery
+  5996007 			Chromosomes, group D
+  6001004 			Quadratus lumborum muscle
+  6004007 			Intervertebral disc of second thoracic vertebra
+  6006009 			Circular layer of duodenal muscularis propria
+  6009002 			Mesentery of ascending colon
+  6014003 			Penicilliary arteries
+  6023000 			Heterolysosome
+  6032003 			Columnar epithelial cell
+  6046003 			Entire outer surface of third rib
+  6050005 			Lacrimal vein
+  6059006 			Metacarpophalangeal joint of middle finger
+  6062009 			Deciduous mandibular right canine tooth
+  6073002 			Ligament of left superior vena cava
+  6074008 			Capsule of temporomandibular joint
+  6076005 			Gastrointestinal subserosa
+  6104005 			Subclavian nerve
+  6105006 			Body of fifth thoracic vertebra
+  6110005 			Facial nerve parasympathetic fibers
+  6216007 			Entire postcapillary venule
+  6217003 			Piriform recess
+  6229007 			Os lacrimale
+  6253001 			Sulcus terminalis cordis
+  6268000 			Accessory phrenic nerves
+  6269008 			Subcutaneous tissue of scalp
+  6279005 			Skin of dorsal surface of finger
+  6317000 			Posterior basal branch of left pulmonary artery
+  6325003 			Aryepiglottic muscle
+  6326002 			Fetal atloid articulation
+  6335009 			Lymphoid follicle of stomach
+  6359004 			Hair medulla
+  6371005 			Lymphatics of thyroid gland
+  6375001 			Cavernous portion of urethra
+  6392005 			Coccygeal nerve
+  6404004 			Ligamentum nuchae
+  6413002 			Presymphysial lymph node
+  6423006 			Supraspinatus muscle
+  6424000 			Structure of radiating portion of cortical lobule of kidney
+  6445007 			Mast cell
+  6448009 			Posterior vagal trunk
+  6450001 			Cytotrophoblast
+  6472004 			Medial aspect of ovary
+  6504002 			Glans clitoridis
+  6511003 			Distal portion of circumflex branch of left coronary artery
+  6530003 			Cardiac valve leaflet
+  6533001 			Colonic haustra
+  6538005 			Thyrocervical trunk
+  6541001 			Entire anterior commissure of mitral valve
+  6544009 			Gastrohepatic ligament
+  6550004 			Angular incisure of stomach
+  6551000 			Pollicis artery
+  6553002 			Inferior nasal turbinate
+  6564004 			Medial border of sole
+  6566002 			Cerebellar hemisphere
+  6572002 			Base of phalanx of middle finger
+  6598008 			Lingual nerve
+  6606008 			Structure of dorsal intercuneiform ligaments
+  6608009 			Sphenoparietal sinus
+  6620001 			Cuticle of nail
+  6623004 			Sternal muscle
+  6633007 			Entire right posterior cerebral artery
+  6643005 			Entire right anterior cerebral artery
+  6646002 			Anterior fossa of cranial cavity
+  6649009 			Uterine subserosa
+  6651008 			Central lobule of cerebellum
+  6684008 			Articular facet of head of fibula
+  6685009 			Right ankle
+  6711001 			Arch of second lumbar vertebra
+  6720005 			Femoral nerve lateral muscular branches
+  6731002 			Pleural recess
+  6739000 			Chorda tympani
+  6742006 			Entire callosomarginal branch of anterior cerebral artery
+  6750002 			Mitochondrial inclusion
+  6757004 			Right knee
+  6787005 			Structure of tendon and tendon sheath of hand
+  6789008 			Spermatozoa
+  6799003 			Macula of utricle
+  6805009 			Entire interstitial tissue of spleen
+  6820003 			Obturator nerve anterior branch
+  6828005 			Ligament of lumbosacral joint
+  6829002 			Pars ciliaris of retina
+  6834003 			Axial skeleton
+  6841009 			Corticomedullary junction of kidney
+  6844001 			Spore crystal
+  6850006 			Secondary foot process
+  6864006 			Leaf of epiglottis
+  6866008 			Habenular commissure
+  6871001 			Visceral pericardium
+  6894000 			Medial surface of arm
+  6902008 			Popliteal region
+  6905005 			Subcutaneous tissue of medial surface of third toe
+  6912001 			Lower alveolar ridge mucosa
+  6914000 			Perivascular space
+  6921000 			Right upper extremity
+  6930008 			Entire jugular arch
+  6944002 			Entire anterior labial vein
+  6969002 			Lymphocytic tissue
+  6975006 			Anterior myocardium
+  6981003 			Posterior hypothalamic nucleus
+  6987004 			Collateral sulcus
+  6989001 			Thoracolumbar region of back
+  6991009 			Subcutaneous tissue of jaw
+  7035006 			Bile duct mucous membrane
+  7050002 			Subcutaneous tissue of external genitalia
+  7067009 			Right colic artery
+  7076002 			Interstitial tissue of myocardium
+  7083009 			Middle phalanx of index finger
+  7091000 			Ventral posterolateral nucleus of thalamus
+  7099003 			Attachment plaque of desmosome or hemidesmosome
+  7117004 			Fetal implantation site
+  7148007 			Anulus fibrosus of intervertebral disc of thoracic vertebra
+  7149004 			False rib
+  7154008 			Trigeminal ganglion sensory root
+  7160008 			Base of metacarpal bone
+  7167006 			Paraduodenal recess
+  7173007 			Cauda equina
+  7188002 			Gustatory pore
+  7192009 			Isthmus tympani posticus
+  7227003 			Hypoglossal nerve intrinsic tongue muscle branch
+  7234001 			Entire inferior choroid vein
+  7242000 			Appendiceal muscularis propria
+  7283002 			Base of tongue
+  7295002 			Muscle of perineum
+  7296001 			Deep inguinal ring
+  7311008 			Anterior surface of arm
+  7344002 			Lingual gyrus
+  7345001 			Ciliary processes
+  7362006 			Lymphatic of head
+  7376007 			Entire left margin of uterus
+  7378008 			Paraventricular nucleus of thalamus
+  7384006 			Entire plantar calcaneocuboidal ligament
+  7404008 			Anterior semicircular duct
+  7435002 			Ovarian ligament
+  7471001 			Lateral surface of sublingual gland
+  7477002 			Lipid, crystalline
+  7480001 			Iliotibial tract
+  7494000 			Cerebellar lenticular nucleus
+  7498002 			Entire plantar tarsal ligament
+  7507003 			Entire anterior ligament of head of fibula
+  7524009 			Entire vasa vasorum
+  7532001 			Vagus nerve parasympathetic fibers
+  7554004 			Deep head of flexor pollicis brevis muscle
+  7566005 			Mitotic cell in anaphase
+  7569003 			Finger
+  7591005 			Intervertebral disc space of eleventh thoracic vertebra
+  7597009 			Subcutaneous tissue of vertex
+  7605000 			Connexon
+  7610001 			Tenth thoracic vertebra
+  7629007 			Thalamoolivary tract
+  7651004 			Intervenous tubercle of right atrium
+  7652006 			Frenulum labii
+  7657000 			Femoral artery
+  7658005 			Subtendinous bursa of triceps brachii muscle
+  7697002 			Pontine portion of medial longitudinal fasciculus
+  7712004 			Subdural space of spinal region
+  7726008 			Skin of medial surface of fifth toe
+  7736000 			Posterior choroidal artery
+  7742001 			Palatine duct
+  7748002 			Skin appendage
+  7755000 			Mesovarian margin of ovary
+  7756004 			Lamina of third thoracic vertebra
+  7764005 			Entire striate artery
+  7769000 			Right foot
+  7783003 			Sympathetic trunk spinal nerve branch
+  7820009 			Lateral posterior nucleus of thalamus
+  7829005 			Anterior surface of manubrium
+  7832008 			Abdominal aorta
+  7835005 			Posterior margin of nasal septum
+  7840002 			Subcutaneous tissue of submental area
+  7841003 			Macrocytic normochromic erythrocyte
+  7844006 			Sternoclavicular joint
+  7851002 			Intracranial subdural space
+  7854005 			Mandibular canal
+  7872004 			Myocardium of ventricle
+  7874003 			Scapular region of back
+  7880006 			Rhopheocytotic vesicle
+  7884002 			Corneal corpuscle
+  7885001 			Rotator cuff including muscles and tendons
+  7892006 			Submucosa of anal canal
+  7896009 			Occipital angle of parietal bone
+  7911004 			Olivocerebellar fibers
+  7925003 			Proximal phalanx of third toe
+  7936005 			Ligament of diaphragm
+  7944005 			Helper cell
+  7954009 			Lamina propria of ethmoid sinus
+  7967007 			Entire first left aortic arch
+  7986004 			Abdominopelvic portion of sympathetic nervous system
+  7991003 			Skin of glans penis
+  7999001 			Articulations of auditory ossicles
+  8001006 			Mucous membrane of tongue
+  8012006 			Anterior communicating artery
+  8017000 			Inflow tract of right ventricle
+  8024004 			Limitans nucleus
+  8039003 			Subcutaneous acromial bursa
+  8040001 			Superficial flexor tendon of little finger
+  8045006 			Membrane-coating granule, amorphous
+  8057002 			Lateral nuclei of globus pallidus
+  8059004 			Pancreatic veins
+  8067007 			Entire superficial circumflex iliac vein
+  8068002 			Stratum lemnisci of corpora quadrigemina
+  8079007 			Radial nerve
+  8091003 			Intervertebral disc space of twelfth thoracic vertebra
+  8100009 			Infundibulum of Fallopian tube
+  8111001 			Intranuclear crystal
+  8112008 			Hindgut
+  8119004 			Entire delphian lymph node
+  8128003 			Supraaortic valve area
+  8133004 			Superior anastomotic vein
+  8157004 			Vein of head
+  8158009 			Interlobar duct of pancreas
+  8159001 			Superior colliculus of corpora quadrigemina
+  8160006 			Entire lateral striate artery
+  8161005 			Infraorbital nerve
+  8165001 			Superior articular process of fifth thoracic vertebra
+  8205005 			Wrist
+  8225009 			Accessory atrioventricular bundle
+  8242003 			Apical branch of right pulmonary artery
+  8251006 			Osseous portion of Eustachian tube
+  8264007 			Tunica interna of eyeball
+  8265008 			Articular surface, metacarpal, of phalanx of hand
+  8266009 			Small intestine serosa
+  8289001 			Below knee region
+  8292002 			Interlobular arteries of liver
+  8314003 			Mastoid fontanel of skull
+  8334002 			Lumbar lymph node
+  8356004 			Colic lymph node
+  8369000 			Sphincter pupillae muscle
+  8373002 			Jugum of sphenoid bone
+  8387002 			Lamina of eighth thoracic vertebra
+  8389004 			Birth canal
+  8412003 			Iliac fossa
+  8415001 			Renal surface of adrenal gland
+  8454000 			Joint of lumbar vertebra
+  8464009 			Ligament of sacroiliac joint and pubic symphysis
+  8482007 			Sinoatrial node branch of right coronary artery
+  8483002 			Mesial surface of tooth
+  8496001 			Obliquus capitis muscle
+  8523001 			Inferior articular process of twelfth thoracic vertebra
+  8546004 			Posterior intercavernous sinus
+  8556000 			Lipid droplet
+  8559007 			Entire juxtaintestinal lymph node
+  8560002 			Interclavicular ligament
+  8580001 			Both feet
+  8595004 			Meissner's plexus
+  8598002 			Vestibulocochlear nerve
+  8600008 			Cricoid cartilage
+  8603005 			Adductor hallucis muscle
+  8604004 			Medulla oblongata fasciculus cuneatus
+  8608001 			Right margin of heart
+  8617001 			Zygomatic region of face
+  8623006 			Transplanted ureter
+  8629005 			Superior right pulmonary vein
+  8640002 			Choroidal branches of posterior spinal artery
+  8668003 			Glycogen vacuole
+  8671006 			All toes
+  8677005 			Body of right atrium
+  8688004 			Lateral olfactory gyrus
+  8695008 			Intervertebral foramen of second lumbar vertebra
+  8710005 			Entire minor sublingual ducts
+  8711009 			Periodontal tissues
+  8714001 			Subcutaneous tissue of interdigital space of hand
+  8752000 			Cavernous portion of internal carotid artery
+  8775007 			Tendinous arch
+  8784007 			Intranuclear body, granular with filamentous capsule
+  8810002 			Corticomedullary junction of adrenal gland
+  8814006 			Iliac tuberosity
+  8815007 			Thenar and hypothenar spaces
+  8820007 			Pedicle of eleventh thoracic vertebra
+  8821006 			Peroneal artery
+  8827005 			Shaft of phalanx of middle finger
+  8839002 			Agranular endoplasmic reticulum, connection with other organelle
+  8845005 			Entire subtendinous prepatellar bursa
+  8850004 			Proper fasciculus
+  8854008 			Crista galli
+  8862000 			Palmar surface of middle finger
+  8873007 			Mandibular right second premolar tooth
+  8887007 			Brachiocephalic vein
+  8892009 			Diaphragmatic surface of lung
+  8894005 			Entire gastric cardiac gland (body structure)
+  8897003 			Lateral glossoepiglottic fold
+  8907008 			Entire left ulnar artery
+  8910001 			Entire inferior transverse scapular ligament
+  8911002 			Entire endocardium of right ventricle
+  8928004 			Inguinal lymph node
+  8931003 			Coracoid process of scapula
+  8935007 			Cerebral meninges
+  8942007 			Trapezoid ligament
+  8965002 			Stratum zonale of corpora quadrigemina
+  8983005 			Joint of vertebral column
+  8988001 			Marginal part of orbicularis oris muscle
+  8993003 			Hepatic vein
+  9000002 			Cerebellar peduncle
+  9003000 			Left parietal lobe
+  9018004 			Entire middle colic vein
+  9040008 			Ascending colon
+  9055004 			Both forearms
+  9073001 			White matter of insula
+  9081000 			Splenic sinusoid
+  9086005 			Superior laryngeal vein
+  9089003 			Arch of foot
+  9108007 			Vein of the scala tympani
+  9127001 			Transverse folds of palate
+  9156001 			Embryo stage 1 structure
+  9185007 			Capsule of metatarsophalangeal joint of fifth toe
+  9186008 			Filaments of contractile apparatus
+  9188009 			Intervertebral disc of eighth thoracic vertebra
+  9208002 			Centriole
+  9212008 			Shaft of fifth metatarsal bone
+  9229006 			Structure of lumbar rotator muscle (body structure)
+  9231002 			Entire external pudendal vein
+  9240003 			Niemann-Pick cell
+  9242006 			Posterior segment of right lobe of liver
+  9261005 			Tendon and tendon sheath of second toe
+  9262003 			Pelvic fascia
+  9284003 			Corpus cavernosum of penis
+  9290004 			Posterior intraoccipital synchondrosis
+  9305001 			Labial veins
+  9317004 			Merkel's tactile disc
+  9320007 			Subtendinous iliac bursa
+  9321006 			Tail of epididymis
+  9325002 			Interdental papilla of gingiva
+  9332006 			Lateral ligament of temporomandibular joint
+  9348007 			Skin of medial surface of middle finger
+  9379006 			All permanent teeth
+  9380009 			Pecten ani
+  9384000 			Lumbar vein
+  9390001 			Lymphatics of stomach
+  9432007 			Plantar surface of fourth toe
+  9438006 			Structure of deep cervical lymphatics
+  9454009 			Subclavian vein
+  9455005 			Structure of medial cartilaginous lamina of pharyngotympanic tube (body structure)
+  9475001 			Structure of amacrine cell of retina (body structure)
+  9481009 			Afferent glomerular arteriole
+  9490002 			Pulmonary ligament
+  9498009 			Head of metacarpal bone
+  9502002 			Coronal depression of tooth
+  9512009 			Calcaneocuboidal ligament
+  9535007 			Pyramid of medulla oblongata
+  9558005 			Entire facet for fifth costal cartilage of sternum
+  9566001 			Duodenal lumen
+  9568000 			Subcutaneous tissue of areola
+  9596006 			Deep branch of ulnar nerve
+  9609000 			Posterior process of nasal septal cartilage
+  9625005 			Lanugo hair
+  9642004 			Left superior vena cava
+  9646001 			Entire superior transverse scapular ligament
+  9654004 			Gastric mucous gland
+  9659009 			Infraclavicular lymph node
+  9662007 			Subcutaneous tissue of lower margin of nasal septum
+  9668006 			Ciliary muscle
+  9683001 			Melanocyte
+  9684007 			Posterior scrotal branches of internal pudendal artery
+  9708001 			Iliac fascia
+  9736006 			Right wrist
+  9743000 			Entire tendon of index finger
+  9758008 			Submucosa of tonsil
+  9770007 			Genital tubercle
+  9775002 			Left carotid sinus
+  9779008 			Distinctive shape of mitochondrial cristae
+  9783008 			Superficial lymphatics of thorax
+  9791004 			Deep venous system of lower extremity
+  9796009 			Skeletal muscle fiber, type IIb
+  9813009 			Fascia of upper extremity
+  9825007 			Proximal phalanx of little toe
+  9837009 			Perforating branches of internal thoracic artery
+  9840009 			Biparietal diameter of head
+  9841008 			Interspinalis thoracis muscles
+  9846003 			Right kidney
+  9847007 			Hilum of adrenal gland
+  9849005 			Fornix of lacrimal sac
+  9870004 			Carunculae hymenales
+  9875009 			Thymus
+  9878006 			Entire appendicular vein
+  9880000 			Thyroid tubercle
+  9881001 			Peripheral nerve myelinated nerve fiber
+  9891007 			Transverse arytenoid muscle
+  9898001 			Paracentral lobule
+  9951005 			Posterior ethmoidal nerve
+  9968009 			Primary foot process
+  9970000 			Ileocecal ostium
+  9976006 			Rhomboideus cervicis muscle
+  9994000 			Superior articular process of sixth thoracic vertebra
+  9999005 			Duodenal ampulla
+  10013000 			Lateral meniscus of knee joint
+  10024003 			Base of lung

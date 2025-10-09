@@ -1,0 +1,589 @@
+<?xml version="1.0" ?>
+
+<xliff xmlns="urn:oasis:names:tc:xliff:document:2.0" version="2.0">
+  <file source-language="en" target-language="ru" id="CodeSystem-observation-interpretation-cs" original="Resource CodeSystem-observation-interpretation-cs" datatype="KEYVALUEJSON">
+    <body>
+      <trans-unit id="CodeSystem-observation-interpretation-cs" resname="CodeSystem.name">
+             <notes>
+               <note id="n1">A natural language name identifying the code system. This name should be usable as an identifier for the module by machine processing applications such as code generation.</note>
+             </notes>
+        <source>ObservationInterpretationCS</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-observation-interpretation-cs" resname="CodeSystem.title">
+             <notes>
+               <note id="n1">A short, descriptive, user-friendly title for the code system.</note>
+             </notes>
+        <source>Observation interpretation</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-observation-interpretation-cs" resname="CodeSystem.publisher">
+             <notes>
+               <note id="n1">The name of the organization or individual responsible for the release and ongoing maintenance of the code system.</note>
+             </notes>
+        <source>Uzinfocom LLC</source>
+        <target>ООО «Единый интегратор Uzinfocom»</target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-observation-interpretation-cs" resname="ContactDetail.name">
+             <notes>
+               <note id="n1">The name of an individual to contact.</note>
+             </notes>
+        <source>Uzinfocom LLC</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-observation-interpretation-cs" resname="CodeSystem.description">
+             <notes>
+               <note id="n1">A free text natural language description of the code system from a consumer's perspective.</note>
+             </notes>
+        <source>Observation interpretation supplement with translations in Uzbek and Russian</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-observation-interpretation-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Носитель</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-observation-interpretation-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Tashuvchi</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-observation-interpretation-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Лучше</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-observation-interpretation-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Yaxshiroq</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-observation-interpretation-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Значительное изменение вниз</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-observation-interpretation-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Sezarli pastga o'zgarish</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-observation-interpretation-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Значительные изменения</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-observation-interpretation-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Jiddiy o'zgarish</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-observation-interpretation-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Хуже</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-observation-interpretation-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Battar</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-observation-interpretation-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Зашкаливающий низкий уровень</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-observation-interpretation-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Shkaladan past darajada</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-observation-interpretation-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Зашкаливающий высокий уровень</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-observation-interpretation-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Shkaladan uyqori darajada</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-observation-interpretation-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Недостаточно доказательств</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-observation-interpretation-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Dalillar yetarli emas</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-observation-interpretation-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Аномальный</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-observation-interpretation-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Anomal</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-observation-interpretation-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Критический аномальный</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-observation-interpretation-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Kritik anormallik</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-observation-interpretation-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Критически высокий</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-observation-interpretation-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Kritik yuqori</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-observation-interpretation-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Критически низкий</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-observation-interpretation-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Kritik past</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-observation-interpretation-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Высокий</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-observation-interpretation-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Yuqori</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-observation-interpretation-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Значительно высокий</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-observation-interpretation-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Sezarli yuqori</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-observation-interpretation-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Низкий</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-observation-interpretation-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Past</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-observation-interpretation-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Значительно низкий</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-observation-interpretation-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Ancha (juda) past</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-observation-interpretation-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Нормальный</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-observation-interpretation-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Normal</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-observation-interpretation-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Средний</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-observation-interpretation-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>O'rtacha</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-observation-interpretation-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Нет установленного порогового значения по стандартам CLSI</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-observation-interpretation-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>CLSI standartlariga ko'ra belgilangan chegara qiymati mavjud emas</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-observation-interpretation-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Невосприимчивый</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-observation-interpretation-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Ta'sir qilmaydigan</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-observation-interpretation-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Устойчивый</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-observation-interpretation-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Chidamli</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-observation-interpretation-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Устойчивый к синергии</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-observation-interpretation-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Sinergiyaga chidamli</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-observation-interpretation-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Восприимчивый</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-observation-interpretation-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Ta'sirchan</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-observation-interpretation-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Восприимчивый - зависит от дозы</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-observation-interpretation-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Dozaga bog'liq ta'sirchanlik</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-observation-interpretation-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Синергия - восприимчивый</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-observation-interpretation-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Sinergiyaga - ta'sirchan</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-observation-interpretation-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Внешний порог</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-observation-interpretation-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Chegara qiymatidan tashqarida</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-observation-interpretation-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Выше верхнего порога</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-observation-interpretation-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Yuqori chegaradan oshgan</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-observation-interpretation-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Ниже нижнего порога</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-observation-interpretation-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Pastki chegaradan pastda</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-observation-interpretation-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Неопределенный</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-observation-interpretation-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Aniqlanmagan</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-observation-interpretation-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Двусмысленный</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-observation-interpretation-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Ikkilanma manoda</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-observation-interpretation-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Отрицательно</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-observation-interpretation-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Manfiy</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-observation-interpretation-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Не обнаружено</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-observation-interpretation-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Aniqlanmadi</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-observation-interpretation-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Положительный</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-observation-interpretation-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Ijobiy</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-observation-interpretation-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Обнаружено</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-observation-interpretation-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Aniqlandi</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-observation-interpretation-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Ожидаемый</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-observation-interpretation-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Kutilgan</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-observation-interpretation-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Непредвиденный</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-observation-interpretation-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Kutilmagan</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-observation-interpretation-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Нереактивный</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-observation-interpretation-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Reaktiv bo'lmagan</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-observation-interpretation-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Реактивный</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-observation-interpretation-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Reaksiyali</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-observation-interpretation-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Слабо реактивный</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-observation-interpretation-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Kuchsiz reaksiyali</source>
+        <target></target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

@@ -1,0 +1,141 @@
+<?xml version="1.0" ?>
+
+<xliff xmlns="urn:oasis:names:tc:xliff:document:2.0" version="2.0">
+  <file source-language="en" target-language="ru" id="CodeSystem-episode-of-care-status-cs" original="Resource CodeSystem-episode-of-care-status-cs" datatype="KEYVALUEJSON">
+    <body>
+      <trans-unit id="CodeSystem-episode-of-care-status-cs" resname="CodeSystem.name">
+             <notes>
+               <note id="n1">A natural language name identifying the code system. This name should be usable as an identifier for the module by machine processing applications such as code generation.</note>
+             </notes>
+        <source>EpisodeOfCareStatusCS</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-episode-of-care-status-cs" resname="CodeSystem.title">
+             <notes>
+               <note id="n1">A short, descriptive, user-friendly title for the code system.</note>
+             </notes>
+        <source>EpisodeOfCare status translations</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-episode-of-care-status-cs" resname="CodeSystem.publisher">
+             <notes>
+               <note id="n1">The name of the organization or individual responsible for the release and ongoing maintenance of the code system.</note>
+             </notes>
+        <source>Uzinfocom LLC</source>
+        <target>ООО «Единый интегратор Uzinfocom»</target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-episode-of-care-status-cs" resname="ContactDetail.name">
+             <notes>
+               <note id="n1">The name of an individual to contact.</note>
+             </notes>
+        <source>Uzinfocom LLC</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-episode-of-care-status-cs" resname="CodeSystem.description">
+             <notes>
+               <note id="n1">A free text natural language description of the code system from a consumer's perspective.</note>
+             </notes>
+        <source>EpisodeOfCare status supplement with translation in Uzbek and Russian.</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-episode-of-care-status-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Планируется</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-episode-of-care-status-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Rejalashtirilgan</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-episode-of-care-status-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>В списке ожидания</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-episode-of-care-status-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Kutish ro'yxatida</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-episode-of-care-status-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Активный</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-episode-of-care-status-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Faol</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-episode-of-care-status-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>На удержании</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-episode-of-care-status-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Ushlab turish</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-episode-of-care-status-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Закончен</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-episode-of-care-status-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Tugallangan</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-episode-of-care-status-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Отменено</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-episode-of-care-status-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Bekor qilingan</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-episode-of-care-status-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Введено с ошибкой</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-episode-of-care-status-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Xato bilan kiritilgan</source>
+        <target></target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

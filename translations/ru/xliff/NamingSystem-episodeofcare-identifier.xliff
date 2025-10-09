@@ -1,0 +1,50 @@
+<?xml version="1.0" ?>
+
+<xliff xmlns="urn:oasis:names:tc:xliff:document:2.0" version="2.0">
+  <file source-language="en" target-language="ru" id="NamingSystem-episodeofcare-identifier" original="Resource NamingSystem-episodeofcare-identifier" datatype="KEYVALUEJSON">
+    <body>
+      <trans-unit id="NamingSystem-episodeofcare-identifier" resname="NamingSystem.name">
+             <notes>
+               <note id="n1">A natural language name identifying the naming system. This name should be usable as an identifier for the module by machine processing applications such as code generation.</note>
+             </notes>
+        <source>UzDhpEpisodeOfCareIdentifier</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="NamingSystem-episodeofcare-identifier" resname="NamingSystem.publisher">
+             <notes>
+               <note id="n1">The name of the organization or individual responsible for the release and ongoing maintenance of the naming system.</note>
+             </notes>
+        <source>Uzinfocom LLC</source>
+        <target>ООО «Единый интегратор Uzinfocom»</target>
+      </trans-unit>
+      <trans-unit id="NamingSystem-episodeofcare-identifier" resname="ContactDetail.name">
+             <notes>
+               <note id="n1">The name of an individual to contact.</note>
+             </notes>
+        <source>Uzinfocom LLC</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="NamingSystem-episodeofcare-identifier" resname="Coding.display">
+             <notes>
+               <note id="n1">A representation of the meaning of the code in the system, following the rules of the system.</note>
+             </notes>
+        <source>Visit number</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="NamingSystem-episodeofcare-identifier" resname="NamingSystem.description">
+             <notes>
+               <note id="n1">A free text natural language description of the naming system from a consumer's perspective. Details about what the namespace identifies including scope, granularity, version labeling, etc.</note>
+             </notes>
+        <source>Identifier system used for EpisodeOfCare resources within the Uzbekistan DHP context.</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="NamingSystem-episodeofcare-identifier" resname="NamingSystem.uniqueId.value">
+             <notes>
+               <note id="n1">The string that should be sent over the wire to identify the code system or identifier system.</note>
+             </notes>
+        <source>http://dhp.uz/ids/episode-of-care</source>
+        <target></target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

@@ -20,5 +20,5 @@
 - **FSH files**: Most are located in `input/fsh/` with extra-large codesystems in `input/manual-fsh/`
 - **Vocabulary**: Pre-rendered extra-large codesystems are stored in `input/vocabulary/`
 - **Content**: Markdown pages in `input/pagecontent/`
-- **Canonical base**: `http://medcore.uz` and `https://terminology.medcore.uz` for terminologies
+- **Canonical base**: `http://dhp.uz` and `https://terminology.dhp.uz` for terminologies
 - **ID pattern**: Use lowercase with hyphens (e.g., `dhp`)

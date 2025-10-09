@@ -2,20 +2,9 @@ ValueSet: LocationStatusVS
 Id: location-status-vs
 Title: "Location status"
 Description: "Defines type of Location `status` in Uzbek and Russian"
-* ^url = "https://terminology.medcore.uz/ValueSet/location-status-vs"
+* ^url = "https://terminology.dhp.uz/fhir/core/ValueSet/location-status-vs"
 * ^experimental = true
-* include $location-status#active
-  * ^designation[0].language = #ru
-  * ^designation[=].value = "активный"
-  * ^designation[+].language = #uz
-  * ^designation[=].value = "faol"
-* include $location-status#inactive
-  * ^designation[0].language = #ru
-  * ^designation[=].value = "неактивный"
-  * ^designation[+].language = #uz
-  * ^designation[=].value = "Yharakatsiz"
-* include $location-status#suspended
-  * ^designation[0].language = #ru
-  * ^designation[=].value = "приостановленный"
-  * ^designation[+].language = #uz
-  * ^designation[=].value = "to'xtatilgan"
+* ^extension[0].url = $valueset-supplement
+* ^extension[=].valueCanonical = Canonical(LocationStatusCS)
+
+* include codes from system $location-status

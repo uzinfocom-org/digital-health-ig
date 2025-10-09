@@ -1,0 +1,29 @@
+<?xml version="1.0" ?>
+
+<xliff xmlns="urn:oasis:names:tc:xliff:document:2.0" version="2.0">
+  <file source-language="en" target-language="ru" id="EpisodeOfCare-UZCoreEpisodeOfCare-Example" original="Resource EpisodeOfCare-UZCoreEpisodeOfCare-Example" datatype="KEYVALUEJSON">
+    <body>
+      <trans-unit id="EpisodeOfCare-UZCoreEpisodeOfCare-Example" resname="CodeableConcept.text">
+             <notes>
+               <note id="n1">A human language representation of the concept as seen/selected/uttered by the user who entered the data and/or which represents the intended meaning of the user.</note>
+             </notes>
+        <source>Preventive services</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="EpisodeOfCare-UZCoreEpisodeOfCare-Example" resname="CodeableConcept.text">
+             <notes>
+               <note id="n1">A human language representation of the concept as seen/selected/uttered by the user who entered the data and/or which represents the intended meaning of the user.</note>
+             </notes>
+        <source>Preventive visit</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="EpisodeOfCare-UZCoreEpisodeOfCare-Example" resname="CodeableConcept.text">
+             <notes>
+               <note id="n1">A human language representation of the concept as seen/selected/uttered by the user who entered the data and/or which represents the intended meaning of the user.</note>
+             </notes>
+        <source>Primary diagnosis</source>
+        <target></target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

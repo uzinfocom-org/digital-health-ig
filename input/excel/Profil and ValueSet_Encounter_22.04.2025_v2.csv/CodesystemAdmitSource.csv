@@ -1,0 +1,11 @@
+CODE	UZ	RU	EN	либо	ССС 3 Классификаторы и справочники для ИС
+  hosp-trans 		Переведен из другой больницы	Transferred from other hospital		Из дому
+  emd 		Из отделения неотложной помощи	From emergency department		Из психиатрической больницы
+  outp 		Из амбулаторного отделения	From outpatient department		Из больницы другого типа
+  born 		Родился в больнице	Born in hospital		Другое
+  gp 		Направление врача общей практики	General Practitioner referral		
+  mp 		Направление врача-практика/терапевта	Medical Practitioner/physician referral		
+  nursing 		Из дома престарелых	From nursing home		
+  psych 		Из психиатрической больницы	From psychiatric hospital		
+  rehab 		Из реабилитационного центра	From rehabilitation facility		
+  other 		Другой	Other		

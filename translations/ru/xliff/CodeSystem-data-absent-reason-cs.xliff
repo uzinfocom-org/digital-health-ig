@@ -1,0 +1,232 @@
+<?xml version="1.0" ?>
+
+<xliff xmlns="urn:oasis:names:tc:xliff:document:2.0" version="2.0">
+  <file source-language="en" target-language="ru" id="CodeSystem-data-absent-reason-cs" original="Resource CodeSystem-data-absent-reason-cs" datatype="KEYVALUEJSON">
+    <body>
+      <trans-unit id="CodeSystem-data-absent-reason-cs" resname="CodeSystem.name">
+             <notes>
+               <note id="n1">A natural language name identifying the code system. This name should be usable as an identifier for the module by machine processing applications such as code generation.</note>
+             </notes>
+        <source>DataAbsentReasonCS</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-data-absent-reason-cs" resname="CodeSystem.title">
+             <notes>
+               <note id="n1">A short, descriptive, user-friendly title for the code system.</note>
+             </notes>
+        <source>Data absent reason</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-data-absent-reason-cs" resname="CodeSystem.publisher">
+             <notes>
+               <note id="n1">The name of the organization or individual responsible for the release and ongoing maintenance of the code system.</note>
+             </notes>
+        <source>Uzinfocom LLC</source>
+        <target>ООО «Единый интегратор Uzinfocom»</target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-data-absent-reason-cs" resname="ContactDetail.name">
+             <notes>
+               <note id="n1">The name of an individual to contact.</note>
+             </notes>
+        <source>Uzinfocom LLC</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-data-absent-reason-cs" resname="CodeSystem.description">
+             <notes>
+               <note id="n1">A free text natural language description of the code system from a consumer's perspective.</note>
+             </notes>
+        <source>Data absent reason supplement with translations in Uzbek and Russian</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-data-absent-reason-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Неизвестный</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-data-absent-reason-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Noma'lum</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-data-absent-reason-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Спросили, но неизвестно</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-data-absent-reason-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>So'ralgan, lekin noma'lum</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-data-absent-reason-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Временно неизвестно</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-data-absent-reason-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Vaqtincha noma'lum</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-data-absent-reason-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Спросили, но отказано</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-data-absent-reason-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>So'ralmagan</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-data-absent-reason-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>So'raldi, lekin rad etildi</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-data-absent-reason-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Скрытый</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-data-absent-reason-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Yashirin</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-data-absent-reason-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Не применимый</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-data-absent-reason-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Qo'llab bo'lmaydigan</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-data-absent-reason-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Неподдерживаемый</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-data-absent-reason-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Qo'llab-quvvatlanmaydi</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-data-absent-reason-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Как текст</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-data-absent-reason-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Matn ko'rinishida</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-data-absent-reason-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Не число (NaN)</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-data-absent-reason-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Son emas</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-data-absent-reason-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Отрицательная бесконечность (NINF)</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-data-absent-reason-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Manfiy cheksizlik</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-data-absent-reason-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Положительная бесконечность (ПБНФ)</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-data-absent-reason-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Musbat cheksizlik</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-data-absent-reason-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Не выполнено</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-data-absent-reason-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Bajarilmagan</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-data-absent-reason-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Не разрешено</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-data-absent-reason-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Ruxsat berilmagan</source>
+        <target></target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

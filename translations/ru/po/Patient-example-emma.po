@@ -1,0 +1,41 @@
+
+# A representation of the meaning of the code in the system, following the rules of the system.
+#: Coding.display
+msgid "British"
+msgstr ""
+
+# A representation of the meaning of the code in the system, following the rules of the system.
+#: Coding.display
+msgid "Driver's license number"
+msgstr ""
+
+# Specifies the entire name as it should be displayed e.g. on an application UI. This may be provided instead of or as well as the specific parts.
+#: HumanName.text
+msgid "Emma Sanders"
+msgstr ""
+
+# This component contains the house number, apartment number, street name, street direction,  P.O. Box number, delivery hints, and similar address information.
+#: Address.line
+msgid "123 Baker Street"
+msgstr ""
+
+# Country - a nation as commonly understood or generally accepted.
+#: Address.country
+msgid "GB"
+msgstr ""
+
+# A representation of the meaning of the code in the system, following the rules of the system.
+#: Coding.display
+msgid "Unmarried"
+msgstr ""
+
+# A representation of the meaning of the code in the system, following the rules of the system.
+#: Coding.display
+msgid "Emergency Contact"
+msgstr ""
+
+# Specifies the entire name as it should be displayed e.g. on an application UI. This may be provided instead of or as well as the specific parts.
+#: HumanName.text
+msgid "Isabella"
+msgstr ""
+

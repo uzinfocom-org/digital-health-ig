@@ -1,0 +1,17 @@
+{
+  "id" : "DocumentReference-example-pdf-document",
+  "baseLang" : "en",
+  "languages" : [
+    {
+      "targetLang" : "ru",
+      "entries" : [
+        {
+          "id" : "Attachment.title",
+          "context" : "A label or set of text to display in place of the data.",
+          "source" : "Sample Medical Report",
+          "target" : null
+        }
+      ]
+    }
+  ]
+}

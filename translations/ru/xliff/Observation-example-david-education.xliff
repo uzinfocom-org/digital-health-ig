@@ -1,0 +1,22 @@
+<?xml version="1.0" ?>
+
+<xliff xmlns="urn:oasis:names:tc:xliff:document:2.0" version="2.0">
+  <file source-language="en" target-language="ru" id="Observation-example-david-education" original="Resource Observation-example-david-education" datatype="KEYVALUEJSON">
+    <body>
+      <trans-unit id="Observation-example-david-education" resname="Coding.display">
+             <notes>
+               <note id="n1">A representation of the meaning of the code in the system, following the rules of the system.</note>
+             </notes>
+        <source>Educational achievement</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Observation-example-david-education" resname="Coding.display">
+             <notes>
+               <note id="n1">A representation of the meaning of the code in the system, following the rules of the system.</note>
+             </notes>
+        <source>Oliy ma'lumot</source>
+        <target></target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

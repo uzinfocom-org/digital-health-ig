@@ -1,0 +1,2051 @@
+
+# A natural language name identifying the value set. This name should be usable as an identifier for the module by machine processing applications such as code generation.
+#: ValueSet.name
+msgid "PractitionerRoleVS"
+msgstr ""
+
+# A short, descriptive, user-friendly title for the value set.
+#: ValueSet.title
+msgid "Practitioner roles"
+msgstr ""
+
+# The name of the organization or individual responsible for the release and ongoing maintenance of the value set.
+#: ValueSet.publisher
+msgid "Uzinfocom LLC"
+msgstr "ООО «Единый интегратор Uzinfocom»"
+
+# The name of an individual to contact.
+#: ContactDetail.name
+msgid "Uzinfocom LLC"
+msgstr ""
+
+# A free text natural language description of the value set from a consumer's perspective. The textual description specifies the span of meanings for concepts to be included within the Value Set Expansion, and also may specify the intended use and limitations of the Value Set.
+#: ValueSet.description
+msgid "Defines the roles of medical practitioners"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Sog'liqni saqlash sohasida tibbiy xizmat ko'rsatishda bo'lim boshliqlari"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Bosh hamshira"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Bosh okulist"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Bosh optik"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Bosh mutaxassis-bakteriolog"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Bosh mutaxassis-virusolog"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Bosh mutaxassis-gerbolog"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Bosh mutaxassis-mikolog"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Bosh mutaxassis-entomolog"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Bosh terapevt"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Tibbiy-mehnat ekspertizasi bo'yicha bosh ekspert"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Bosh epidemiolog"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Ambulatoriya (klinika, poliklinika) mudiri"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Balьneologiya bo'linmasi mudiri"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Vrachlik bo'linmasi (kabineti) mudiri"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Tibbiy punkt mudiri"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Tibbiy-sanitariya qismi (klinika) mudiri"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Tibbiyot punkti (konsulьtatsiya) mudiri"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Bo'linma (sog'liqni saqlash muassasalari) mudiri"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Sanitariya o'tish joyi mudiri"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Korxona tibbiy-sanitariya bo'limi boshlig'i"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Tibbiy-sanitariya qismi boshlig'i"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Profilaktoriya boshlig'i"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Keksalarni parvarish qilish sohasida bo'limlari rahbarlari"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Ijtimoiy xizmat muassasasi bo'linma mudiri"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Ijtimoiy xizmat muassasasi bo'limi mudiri"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Ijtimoiy xizmat muassasasi filiali mudiri"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Ijtimoiy xizmat ko'rsatish bo'limlari rahbarlari (keksalarga xizmat ko'rsatishdan tashqari)"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Bosh sotsiolog"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Agentlik mudiri (boshlig'i)"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Ijtimoiy soha menejeri"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Ijtimoiy sohani rivojlantirish bo'yicha menejer"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Sog'liqni saqlash sohasida professional-mutaxassislar.  Vrachlar.  Umumiy amaliyot vrachlari"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Umumiy amaliyot vrachi"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Bolalar umumiy vrachi"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Onkologiya umumiy vrachi"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Umumiy onkolog (onkologik bo'lmagan statsionarlarda maslahatchi shifokor sifatida)"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Vrach-intern"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Vrach-mutaxassis"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Kichik ilmiy xodim"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Ilmiy xodim"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Ambulator-poliklinika bo'yicha vrach yordamchisi"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Umumiy gigiena bo'yicha vrach"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Tajriba ottiruvchi kichik ilmiy xodim"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Katta ilmiy xodim"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Vrach-mutaxasislar"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Anesteziolog"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Abdominal bo'yicha vrach onkoxirurg"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Abdominal bo'yicha vrach onkoxirurg (ixtisoslashgan muassasalarda)"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Vrach allergolog-immunolog"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Vrach anesteziolog-reanimatolog"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Vrach bakteriolog"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Alohida xavfli infektsiyalar bo'yicha bakteriolog"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Vrach vertebrolog"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Vrach virusolog"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Mehnat-vrachlik ekspertizasi vrachi"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Vrach gastroenterolog"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Vrach gematolog"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Vrach geriatr"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Vrach ginekolog"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Vrach (maslahat/ diagnostika / oilaviy poliklinika, dispanser va boshqalar.) ginekologi"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Vrach dezinfektsionist"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Vrach dermatovenerolog"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Bolalar alllergolog vrachi"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Bolalar anesteziolog-reanimatolog vrachi"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Bolalar gastroenterolog vrachi"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Bolalar va o'smirlar psixiatri"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Bolalar infektsionist vrachi"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Bolalar kardiorevmatolog vrachi"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Bolalar kardioxirurg vrachi"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Bolalar nevrolog vrachi"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Bolalar nefrolog vrachi"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Bolalar onkolog kimyoterapevt vrachi"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Bolalar onkoxirurg vrachi"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Bolalar pulьmonolog vrachi"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Bolalar travmatolog-ortoped vrachi"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Bolalar urolog vrachi"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Bolalar ftiziatr vrachi"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Bolalar xirurg vrachi"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Bolalar ambulatur xirurg vrachi"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Bolalar endokrinolog vrachi"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Bolalar va o'smirlar genekolog vrachi"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Vrach iglorefleksoterapevt"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Vrach immunolog"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Interventsion kardiologiya vrachi"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Interventsion radiologiya vrachi"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Vrach infektsionist"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Immunoprofilaktika kabinetining vrachi"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Yuqumli kasalliklar kabinetining vrachi"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Vrach kardioanesteziolog"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Vrach kardiolog"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Vrach kardioxirurg"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Klinik farmakologiya vrachi"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Vrach koloproktolog"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Vrach kombustiolog"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Qabul bo'limining shifokor koordinatori (shoshilinch tibbiy yordam muassasalari)"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Vrach kosmetolog"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Immunogistokimyoviy laboratoriyasi laborant vrachi"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Biokimyoviy-klinik laboratoriya vrach laboranti"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Klinik va biokimyoviy/ immunobiologik/ immunoferment/ serologik / PTsR-diagnostik va boshqa laboratoriyalar laboranti"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Shifokor sanitariya laboranti / toksikologik / rentgenologik / parazitologik va boshqa laboratoriyalar"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Sud-tibbiyot yekspertizasi laboratoriyasining vrach laboranti"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Vrach mammolog"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Manual terapiya vrachi"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Tibbiy genetiki vrachi"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Tibbiy psixologiya vrachi"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Tibbiy statistika vrachi"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Vrach uslubchi"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Axborot tizimlari bo'limi vrach uslubchisi"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Vrach mikroxirurg"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Vrach narkolog"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Vrach nevrolog"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Vrach neyrofiziolog"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Vrach neyroxirurg"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Vrach neonatal jarroh"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Vrach neonatolog"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Shoshilinch kardiologiya / yurak intensiv terapiyasi vrachi"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Shoshilinch pediatr (intensiv terapiya bo'limi) vrachi"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Vrach nefrolog"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Vrach onkoginekolog"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Vrach onkokoloproktolog"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Vrach onkourolog"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Vrach ortoped"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Gemodializ / dializ bo'linmasi vrachi"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Yiringli jarrohlik bo'linmasi vrachi"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Suyak sil kasalligi bo'linmasi vrachi"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Bosh va bo'yin shishlari bo'linmasi vrachi"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Yumshoq to'qimalar va suyaklar o'simtalari bo'linmasi vrachi"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Vrach otorinolaringolog"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Reanimatsiya bo'limi shifokori"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Vrach paradontolog"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Vrach parazitolog"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Vrach patologoanatom"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Vrach pediatr"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Plastik jarrohlik vrachi"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Jismoniy mashqlar terapiyasi / sport tibbiyoti bo'yicha vrach"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Vrach profpatolog"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Vrach psixiatr"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Psixiatr-suitsidolog vrach"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Vrach psixoterapevt"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Vrach pulьmonolog"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Vrach rabiolog"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Vrach radioterapevt"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Kuyish reanimatsiyasi bo'yicha vrach reanimatologi"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Vrach revmatolog"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Vrach rentgenolog"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Kompyuter tomografiyasi (KT) vrach rentgenologi"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Magnit-rezonans tomografiya (MRT) vrach rentgenologi"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Vrach reproduktolog"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Tez tibbiy yordam vrachi"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Qon tomir jarroh vrachi"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Orqa miya neyroxirurg vrach"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Qon quyish stantsiyasining vrachi"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Vrach statistik"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Sud tibbiy ekspertizasi vrachi"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Sud-psixiatriya ekspertizasi vrachi"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Audiolog-otorinolaringolog vrach"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Vrach terapevt"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Favqulodda yordam bo'linmasi vrach terapevti"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Vrach toksikolog"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Ko'krak qafasi onkoxirurg vrachi"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Ko'krak qafasi xirurg vrachi"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Vrach travmatolog"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Travmatologiya markazi travmatolog vrachi"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Transplantolog vrach"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Ultratovush diagnostikasi vrachi"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Vrach urolog"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Vrach fizioginekolog"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Vrach fizioterapevt"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Vrach ftiziatr"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Vrach ftiziourolog"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Funktsional diagnostika (FD) (bajaradigan vazifalarga qarab) vrachi"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Pediatriyada funktsional diagnostika vrachi"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Vrach kimyoterapevt"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Vrach xirurg"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Ambulatur xirurg vrachi"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Qabul bo'linmasining diagnostika palatasi vrach jarrohi"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Favqulodda yordam bo'linmasi vrach jarrohi"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Vrach xirurg-ftiziatr"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Vrach xirurg-endokrinolog"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Vrach sitolog"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Jag'-yuz jarroh vrachi"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Vrach endokrinolog"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Vrach endoskopist"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Vrach endourolog"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Vrach entomolog"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Vrach epidemiolog"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Alohida xavfli infektsiyalar bo'yicha vrach epidemiolog"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Yadro tibbiyoti vrachi"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Vrach-mutaxassis (vrach-xirurgdan tashqari barcha mutaxassisliklar)"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Tez tibbiy yordam ko'chma brigadasi vrach-mutaxassisi"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Vrach-xirurg (hamma nomdagi xirurgik mutaxassisliklar)"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Davlat tibbiy sud ekspert mutaxassisi (eksperti)"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Davlat tibbiy sud ekspert-amaliyotchisi"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Dezinstruktor"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Narkolog"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Neonatolog"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Ontolog"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "O'smirlar vrachi"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Reanimatolog"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Bolalar va o'smirlar gigienasi bo'yicha sanitariya vrachi"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Oziq-ovqat gigienasi bo'yicha sanitariya vrachi"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Kommunal gigiena bo'yicha sanitariya vrachi"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Radiatsion gigiena sanitariya vrachi"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Sanitar toksikolog"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Oila vrachi"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Sport shifokori"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Tez tibbiy yordam katta vrachi"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Stomatologiya gigienisti (Og'iz bo'shlig'i gigienisti)"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Uchastka (tsex, vaxtva va bosh-r.) terapevti"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Uchastka pediatri"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Fitopatolog"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Akusherlik va tibbiy parvarishlash ishi bo'yicha professional-mutaxassislar.  Tibbiy parvarishlash ishi bo'yicha professional-mutaxassislar"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Valьveolog (valeolog)"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Vrach valeolog"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Oliy ma'lumotli hamshira"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Akusherlik bo'yicha professional-mutaxassislar"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Akusher-ginekolog (konsalting / diagnostika / oilaviy poliklinika, dispanser va boshqalar.) vrachi"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Tug'ruqxona akusher-ginekologi / perinatal markazi (tug'ruqxona, uchastka, homiladorlik patologiyasi, shoshilinch ginekologiya va boshqalar.) vrachi"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Yuqori malakali tabiblar va an'anaviy va noan'anaviy tibbiyotning amaliyotchilari.  Amaliyotchi paramediklar. Veterinarlar"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Xayvonlar patologiyasi, onkologiyasi va morfologiyasi veterinari"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Farmakologiya va toksikologiya veterinari"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Veterinariya vrachi"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Embrionlarni ko'chirib o'tkazish bo'yicha veterinariya vrachi"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Veterinar-jarrox"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Sog'liqni saqlash sohasidagi boshqa professional-mutaxassislar.  Vrach-stomotologlar"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Bolalar terapevti-stomatolog vrachi"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Bolalar terapevti-stomatolog (bolalar statsionar shifoxonalarida)"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Pediatriya tish jarroh (og'iz qismida)"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Umumiy amaliyot stomatolog vrach"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Ortodont-stomatolog vrach"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Ortoped-stomatolog vrach"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Terapevt stomatolog vrach"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Umumiy amaliyot terapevt-stomatolog vrachi"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Tish jarrohi (og'iz qismida)"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Farmatsevtika sohasida professional-mutaxassislar"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Inspektor-provizor"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Klinik farmatsevt"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Provizor"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Tahlilchi-provizor"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Provizor-intern"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Ma'lumot beruvchi provizor"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Retsept bo'yicha provizor"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Provizor-texnolog"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Farmatsevt"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Farmatsevt tahlilchi"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Farmatsevt biotexnolog"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Farmatsevt muhandis"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Farmatsevt marketolog"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Farmatsevt sud kimyogari"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Farmatsevt texnolog"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Farmatsevt-inspektor"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Kosmetsevtika bo'yicha farmatsevt-texnolog"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Mehnatni muhofaza qilish va inson atrof-muhitining tibbiy jihatlari bo'yicha shifokorlar va professional-mutaxassislar"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Qishloq vrachlik punkti vrachi"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Maslahatchi"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Gigiena-vrach (vrach-parazitolog, vrach epidemiolog) yordamchisi"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Entomolog yordamchisi"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Proforientolog"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Mehnat gigiena bo'yicha sanitar vrach"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Mutaxassis"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Sud ekspert-mutaxassisi (ekspert)"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Sud ekspert-amaliyotchi"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Ekspert"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Vrach-fizioterapevt va jismoniy reabilitatsiya bo'yicha mutaxassislar"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Ergoterapiya bo'yicha uslubchi yo'riqchi"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Jismoniy reabilitatsiya bo'yicha uslubchi-yo'riqchi"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Vrach-diyetologlar va ovqatlanishni to'g'ri tashkil etish bo'yicha mutaxassislar"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Vrach dietolog"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Dietolog"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Vrach-audiologlar va nutqni rivojlantirish va tiklash bo'yicha mutaxassislar"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "O'qituvchi-defektolog (o'qituvchi-logoped, tiflopedogog, surdopedogog, oligofrenopedogog)"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Vrach-oftalmologlar, optiklar va optometristlar"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Bolalar oftalьmolog vrachi"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Vrach onkooftalьmolog"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Vrach oftalьmolog"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Vrach oftalьmojarroh"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Sog'liqni saqlash sohasidagi boshqa boshlang'ich guruhlarga kirmagan professional-mutaxassislar"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Tibbiy muassasa davolovchi jismoniy tarbiya yo'riqchisi"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Tibbiy muassasaning davolash fizkulьturasi bo'yicha uslubchisi"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Sog'liqni saqlashda o'rta ma'lumotli tibbiyot xodimlari. Farmatsevtlar va tibbiyot qurilmalariga xizmat ko'rsatuvchi texniklar, feldsherlar. Tibbiyot qurilmalariga xizmat ko'rsatish bo'yicha texniklar"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Rentgenolaborant"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Rentgenotexnik"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Texnik-rentgenolog"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Klinik-diagnostika (tibbiy) va patologiya laboratoriyalarining laboratoriya-feldsherlari"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Sanitariya vrachi, epidemiologi assistenti"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Epidemiolog assistent"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Laborant-bakteriolog"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Laborant-parazitolog"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Tibbiy laborant"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Sanitariya vrachi yordamchisi"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Umumiy amaliyot felьdsheri"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Felьdsher-laborant"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Farmatsevtlar"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Dori vositalarini saqlash, taraqatish va ta'minlash bo'yicha farmatsevt assistenti"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Dori preparatlarini ishlab chiqarish operatori"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Farmatsevtik yordam tashkilotchisi (maslahatchi-farmatsevt assistenti)"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Farmatsevt assistenti"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Farmatsevt-retseptar"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Fitobarmen"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Tish texniklari va protezchi-texniklar"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Tish texnigi"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Protezchi-texnik"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Oropedik stomatologiya texnigi"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Sog'liqni saqlashda va akusherlik bo'yicha yordamchi xodimlar xodimlari. Hamshiralik bo'yicha yordamchi xodimlar"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Yetakchi hamshira"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Tibbiyot hamshirasi"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Barcha nomdagi tibbiyot hamshirasi (barcha nomdagi medbrat"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Umumiy amaliyot xamshirasi"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Davolash jismoniy tarbiya hamshirasi"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Emlash xonasi hamshirasi"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Sterilizatsiya bo'limi hamshirasi"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Stomatologiya xonasi hamshirasi"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Fizioterapevtik (massaj) xonalari xamshirasi"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Maktab va maktabgacha ta'lim tashkiloti hamshirasi"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Tibbiyot hamshirasi-anestezist"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Hamshira-valeolog"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Dietolog-hamshira"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Kosmetolog hamshira"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Patronaj hamshirasi"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Stomatolog yordamchisi"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Katta hamshira"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "MFY uchastka hamshirasi"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Akusherlik bo'yicha yordamchi xodimlar"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Akusherka"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Umumiy amaliyot felьdsher-akusheri"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Oilaviy poliklinika felьdsher-akusheri"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Yuqori malakali tabiblar va an'anaviy hamda alternativ tibbiyotning amaliyotchilari"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Tabib"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Dorivor o'tchi"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Veterinar feldsherlar va assistentlar. Veterinariya bo'yicha feldsherlar va texniklar"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Hayvonlarni davolash va kalligini oldini olish bo'yicha veterinar"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Veterinariya felьdsheri"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Naslchilik ishlari bo'yicha zootexnik"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Veterinariya texnigi"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Naslchilik ishlari bo'yicha texnik"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Vterinariya felьdsheri"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Sog'liqni saqlash sohasidagi boshqa yordamchi xodimlar. Tish feldsherlari"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Tish texnikasi buyumlarini quyuvchi"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Tish felьdsheri"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Sun'iy tishlarni yasovchi"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Tibbiy ro'yxatga oluvchilar va tibbiy ma'lumotlar bo'yicha mutaxassislar"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Statist-hamshira"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Tibbiy ro'yxatdan o'tkazuvchi"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Tibbiy sud ekspertizasida tibbiy ro'yhatga oluvchi"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Tibbiy statistika"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Felьdsher"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Umumiy amaliyot feldsherlari"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Felьdsher-valeolog"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Optiklar va optometristlar"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Rassom-ko'z protez yasovchisi"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Fizioterapiya yordamchi xodimlari va mutaxassislari"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Tibbiy jismoniy tarbiya bo'yicha yo'riqchi"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Massajchi"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Operatsiya tibbiyot hamshirasi"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Fizioterapevt"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Ambulator-poliklinika ishlari bo'yicha vrach yordamchilari"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Ambulator-poliklinika yordami bo'yicha vrach yordamchisi"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Mehnatni muhofaza qilish va atrof muhitni muhofaza qilishning tibbiy jihatlari bo'yicha mutaxassislar va inspektorlar"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Mehnat terapeyasi bo'yicha yo'riqchi"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Yo'riqchi-valeolog"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Dezinfektor-yo'riqchi"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Tibbiy dezinfektsiyalash vositasi"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Epidemiolog yordamchisi"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Mehnat huquqi inspektori"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Tez tibbiy yordam sohasida yordamchi xodimlar"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Tez yordam katta felьdsheri"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Mudofaa vazirligi gospitali (qismlar) felьdsheri"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Navbatchi felьdsher"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Favqulotda vaziyatlar hizmati felьdsheri"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Shoshilinch va tez tibbiy yordam ko'rsatish stantsiya (bo'lim) felьdsheri"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Boshqa boshlang'ich guruhlarga qo'shilmagan, yordamchi tibbiyot xodimlari"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Gemmolog"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Defektolog"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Dieta hamshirasi"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Sanitariya ta'limi bo'yicha yo'riqchi"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Immunologiya, virusologiya, gistologiya laboratoriyalari laboranti"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Radiologiya laboratoriyasi laboranti"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Funktsional va nur tashxisi laboranti"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Rasmiylashtiruvchi-laborant"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Tibbiy-ijtimoiy xodim"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Tanani malhamlash va tiklash bo'yicha mutaxassis"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Nur va funktsional diagnostika kabineti felьdsheri"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Umumiy amaliyot felьdsher laboranti"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Qishloq vrachlik punktlari va qishloq oilaviy poliklinikalari felьdsher-laboranti"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Sud-tibbiy ekspertizasi felьdsher-laboranti"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Tibbiy-profilaktika ishlari felьdsheri"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Felьdsher-nutritsiolog"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Endoskopchi"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Sog'liqni saqlash muassasalaridagi kotiblar (vrach-mutaxassislar yordamchilari)"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Ayollar va bolalar tibbiy-ijtimoiy yordam tashkilotchisi"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Kotib"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Rahbar qabulxonasi kotibi"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Bemorga parvarishlash bo'yicha yakka tartibda xizmat ko'rsatuvchi xodimlar. Tibbiy va ijtimoiy yordam muassasalarida bemorlarga parvarishlash bo'yicha yakka tartibda xizmat ko'rsatuvchi xodimlar"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Mehribonlik, muruvvat uylari hamshirasi"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Bemorga qarash bo'yicha kichik tibbiy hamshira"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Ayollar va bolalarga tibbiy-ijtimoiy yordam ko'rsatish tashkilotchisi"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Yolg'iz nogironlar va qariyalarga uy sharoitida ijtimoiy yordam ko'rsatish tashkilotchisi"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Sanitar vrach yordamchisi"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Sog'liqni saqlash muassasasi sanitari (sanitarkasi)"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Bemorga uyda parvarishlash bo'yicha yakka tartibda xizmat ko'rsatuvchi xodimlar"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Kichik rahm-shavqat hamshirasi"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Og'ir kasalga qarovchi hamshira"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Boshqa boshlang'ich guruhlarga qo'shilmagan, bemorlarga xizmat ko'rsatish bo'yicha yakka tartibda xizmat ko'rsatuvchi xodimlar"
+msgstr ""
+
+# The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.
+#: ValueSet.compose.include.concept.display
+msgid "Uyda xizmat ko'rsatuvchi sanitar-enaga"
+msgstr ""
+

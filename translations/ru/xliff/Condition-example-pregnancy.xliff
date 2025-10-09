@@ -1,0 +1,50 @@
+<?xml version="1.0" ?>
+
+<xliff xmlns="urn:oasis:names:tc:xliff:document:2.0" version="2.0">
+  <file source-language="en" target-language="ru" id="Condition-example-pregnancy" original="Resource Condition-example-pregnancy" datatype="KEYVALUEJSON">
+    <body>
+      <trans-unit id="Condition-example-pregnancy" resname="Coding.display">
+             <notes>
+               <note id="n1">A representation of the meaning of the code in the system, following the rules of the system.</note>
+             </notes>
+        <source>Diagnosis of complications of the underlying disease</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Condition-example-pregnancy" resname="Coding.display">
+             <notes>
+               <note id="n1">A representation of the meaning of the code in the system, following the rules of the system.</note>
+             </notes>
+        <source>Active</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Condition-example-pregnancy" resname="Coding.display">
+             <notes>
+               <note id="n1">A representation of the meaning of the code in the system, following the rules of the system.</note>
+             </notes>
+        <source>Confirmed</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Condition-example-pregnancy" resname="Coding.display">
+             <notes>
+               <note id="n1">A representation of the meaning of the code in the system, following the rules of the system.</note>
+             </notes>
+        <source>Breast structure</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Condition-example-pregnancy" resname="Coding.display">
+             <notes>
+               <note id="n1">A representation of the meaning of the code in the system, following the rules of the system.</note>
+             </notes>
+        <source>Author</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Condition-example-pregnancy" resname="Annotation.text">
+             <notes>
+               <note id="n1">The text of the annotation in markdown format.</note>
+             </notes>
+        <source>Patient is in the first trimester of pregnancy. No complications observed at this stage.</source>
+        <target></target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

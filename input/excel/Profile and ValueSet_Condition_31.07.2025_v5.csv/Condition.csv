@@ -1,0 +1,33 @@
+Name		Flags		Cardinality	Example	Document	Type	Description & Constraints		ValueSets			
+Condition		TU					DomainResource	Клиническое состояние, проблема, диагноз или другое событие, ситуация, вопрос или клиническая концепция, которые достигли уровня беспокойства		System	CodeSystem	Code	Display
+clinicalStatus		Σ S	D	1..1	active	HL7.v5	CodeableConcept	"Клинический статус Состояния
+Binding: http://hl7.org/fhir/ValueSet/condition-clinical"		http://hl7.org/fhir/ValueSet/condition-clinical	CodeSystemClinicalStatus	  active, recurrence, relapse,  inactive, remission, resolved, unknown	Клинический статус состояния
+verificationStatus		Σ S	D	0..1	confirmed	HL7.v5	CodeableConcept	"Статус проверки для подтверждения клинического статуса Состояния.
+Binding: http://hl7.org/fhir/ValueSet/condition-ver-status"		http://hl7.org/fhir/ValueSet/condition-ver-status	CodeSystemVerStatus	  unconfirmed, provisional, differential, confirmed, refuted, entered-in-error	Статус проверки для подтверждения клинического статуса Состояния
+severity		Σ S	D	0..*	24484000	SNOMED CT	CodeableConcept	"Субъективная оценка тяжести Состояния, проведенная врачом.
+Binding: http://hl7.org/fhir/ValueSet/condition-severity"		https://terminology.medcore.uz/ValueSet/condition-severity	CodeSystemSeverity	255604002, 6736007, 24484000 	Субъективная оценка тяжести Состояния, проведенная врачом
+code		Σ S	D	0..1	B37.1	МКБ-10	CodeableConcept	"Идентификация Состояния, проблемы или диагноза.
+Binding: МКБ-10"		http://hl7.org/fhir/ValueSet/body-site	CodeSystemBodySite	все коды	Анатомическое место, где проявляется данное состояние
+DiagnosisType (extension)		Σ S		0..1	gencl.0001.00003	Local (new)	CodeableConcept	"Тип диагноза 
+https://terminology.medcore.uz/ValueSet/diagnosisType"		https://terminology.medcore.uz/ValueSet/diagnosisType	CodeSystemDiagnosisType	все коды	Тип диагноза 
+bodySite		Σ S	С	0..*	9089003 	SNOMED CT	CodeableConcept	"Анатомическое место, где проявляется данное состояние
+Binding: http://hl7.org/fhir/ValueSet/body-site (Preferred) "					
+subject		Σ S	D	1..1			Reference(Patient) 	Пациент, с которым связана запись о Состоянии					
+encounter		Σ S	D	0..1			Reference(Encounter)	Encounter, во время которой было создано это Состояние					
+onset[x]		Σ S	D	0..1				Предполагаемая или фактическая дата или дата-время начала Cостояния, ситуации или беспокойства, по мнению врача.					
+	onsetDateTime	Σ S			04-10-24		dateTime						
+	onsetAge	Σ S					Age						
+	onsetPeriod	Σ S					Period						
+	onsetRange	Σ S					Range						
+	onsetString	Σ S					"	string"						
+abatement[x]		Σ S	С	0..1				Дата или предполагаемая дата, когда Cостояние разрешилось или перешло в ремиссию.					
+	"abatementDateTime	"	Σ S			02-25-25		dateTime						
+	abatementAge	Σ S					Age						
+	abatementPeriod	Σ S					Period						
+	abatementRange	Σ S					Range						
+	abatementString	Σ S					"	string"						
+recordedDate		Σ S	D	0..1	03-02-25		dateTime	Дата записи Cостояния					
+asserter		Σ S	D	0..1			"	Reference(Practitioner | PractitionerRole | Patient | RelatedPerson | Device)"	Лицо или устройство, подтверждающее это состояние					
+note		Σ S	D	0..*	"Practitioner ID
+24.04.2025
+""Пациент сказал, что симптомы начались после диеты"""		Annotation	Дополнительная информация о состоянии					

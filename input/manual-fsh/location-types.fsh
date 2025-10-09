@@ -2,8 +2,7 @@ CodeSystem: LocationTypesCS
 Id: location-types-cs
 Title: "Defines the possible location types"
 Description: "Defines the possible location types in Uzbek and Russian"
-* ^url = "https://terminology.medcore.uz/CodeSystem/location-types-cs"
-* ^version = "1.0.0"
+* ^url = "https://terminology.dhp.uz/fhir/core/CodeSystem/location-types-cs"
 * ^status = #active
 * ^experimental = true
 * ^date = "2025-03-17"

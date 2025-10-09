@@ -1,0 +1,9 @@
+{
+  "id" : "Consent-example-consent",
+  "baseLang" : "en",
+  "languages" : [
+    {
+      "targetLang" : "ru"
+    }
+  ]
+}

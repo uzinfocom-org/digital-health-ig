@@ -1,0 +1,47 @@
+{
+  "id" : "Condition-example-pregnancy",
+  "baseLang" : "en",
+  "languages" : [
+    {
+      "targetLang" : "ru",
+      "entries" : [
+        {
+          "id" : "Coding.display",
+          "context" : "A representation of the meaning of the code in the system, following the rules of the system.",
+          "source" : "Diagnosis of complications of the underlying disease",
+          "target" : null
+        },
+        {
+          "id" : "Coding.display",
+          "context" : "A representation of the meaning of the code in the system, following the rules of the system.",
+          "source" : "Active",
+          "target" : null
+        },
+        {
+          "id" : "Coding.display",
+          "context" : "A representation of the meaning of the code in the system, following the rules of the system.",
+          "source" : "Confirmed",
+          "target" : null
+        },
+        {
+          "id" : "Coding.display",
+          "context" : "A representation of the meaning of the code in the system, following the rules of the system.",
+          "source" : "Breast structure",
+          "target" : null
+        },
+        {
+          "id" : "Coding.display",
+          "context" : "A representation of the meaning of the code in the system, following the rules of the system.",
+          "source" : "Author",
+          "target" : null
+        },
+        {
+          "id" : "Annotation.text",
+          "context" : "The text of the annotation in markdown format.",
+          "source" : "Patient is in the first trimester of pregnancy. No complications observed at this stage.",
+          "target" : null
+        }
+      ]
+    }
+  ]
+}

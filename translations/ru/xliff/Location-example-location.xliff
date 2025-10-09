@@ -1,0 +1,22 @@
+<?xml version="1.0" ?>
+
+<xliff xmlns="urn:oasis:names:tc:xliff:document:2.0" version="2.0">
+  <file source-language="en" target-language="ru" id="Location-example-location" original="Resource Location-example-location" datatype="KEYVALUEJSON">
+    <body>
+      <trans-unit id="Location-example-location" resname="Location.name">
+             <notes>
+               <note id="n1">Name of the location as used by humans. Does not need to be unique.</note>
+             </notes>
+        <source>Toshkent shahar 1-sonli shifoxona</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Location-example-location" resname="Address.text">
+             <notes>
+               <note id="n1">Specifies the entire address as it should be displayed e.g. on a postal label. This may be provided instead of or as well as the specific parts.</note>
+             </notes>
+        <source>Toshkent shahar, Chilonzor tumani, Katta Qo'yliq 45</source>
+        <target></target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

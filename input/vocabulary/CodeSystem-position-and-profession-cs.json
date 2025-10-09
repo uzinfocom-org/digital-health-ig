@@ -5,8 +5,8 @@
   "name": "PositionAndProfessionCS",
   "id": "position-and-profession-cs",
   "title": "Defines the possible positions and professions",
-  "description": "State classification of positions of employees and worker professions (KODP-2020)",
-  "url": "https://terminology.medcore.uz/CodeSystem/position-and-profession-cs",
+  "description": "State classification of positions of employees and worker professions based on [CBPEPW-2020](https://cs.egov.uz/#/tableData/65f3d311971593b975865fd8) using the 14.05.2025 update",
+  "url": "https://terminology.dhp.uz/fhir/core/CodeSystem/position-and-profession-cs",
   "concept": [
     {
       "code": "1111",
@@ -175723,7 +175723,6 @@
       ]
     }
   ],
-  "version": "1.0.0",
   "experimental": true,
   "date": "2025-03-17",
   "publisher": "Uzinfocom",

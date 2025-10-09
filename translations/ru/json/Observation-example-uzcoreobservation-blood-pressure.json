@@ -1,0 +1,65 @@
+{
+  "id" : "Observation-example-uzcoreobservation-blood-pressure",
+  "baseLang" : "en",
+  "languages" : [
+    {
+      "targetLang" : "ru",
+      "entries" : [
+        {
+          "id" : "Coding.display",
+          "context" : "A representation of the meaning of the code in the system, following the rules of the system.",
+          "source" : "Vital Signs",
+          "target" : null
+        },
+        {
+          "id" : "Coding.display",
+          "context" : "A representation of the meaning of the code in the system, following the rules of the system.",
+          "source" : "Blood pressure panel with all children optional",
+          "target" : null
+        },
+        {
+          "id" : "Coding.display",
+          "context" : "A representation of the meaning of the code in the system, following the rules of the system.",
+          "source" : "Normal",
+          "target" : null
+        },
+        {
+          "id" : "Annotation.text",
+          "context" : "The text of the annotation in markdown format.",
+          "source" : "Patient was calm and seated for 5 minutes before measurement.",
+          "target" : null
+        },
+        {
+          "id" : "Quantity.unit",
+          "context" : "A human-readable form of the unit.",
+          "source" : "mmHg",
+          "target" : null
+        },
+        {
+          "id" : "Coding.display",
+          "context" : "A representation of the meaning of the code in the system, following the rules of the system.",
+          "source" : "Normal Range",
+          "target" : null
+        },
+        {
+          "id" : "Observation.referenceRange.text",
+          "context" : "Text based reference range in an observation which may be used when a quantitative range is not appropriate for an observation.  An example would be a reference value of \"Negative\" or a list or table of \"normals\".",
+          "source" : "Normal systolic blood pressure for adults",
+          "target" : null
+        },
+        {
+          "id" : "Coding.display",
+          "context" : "A representation of the meaning of the code in the system, following the rules of the system.",
+          "source" : "Systolic blood pressure",
+          "target" : null
+        },
+        {
+          "id" : "Coding.display",
+          "context" : "A representation of the meaning of the code in the system, following the rules of the system.",
+          "source" : "Diastolic blood pressure",
+          "target" : null
+        }
+      ]
+    }
+  ]
+}

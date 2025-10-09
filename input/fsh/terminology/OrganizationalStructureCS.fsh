@@ -2,15 +2,7 @@ CodeSystem: OrganizationalStructureCS
 Id: organizational-structure-cs
 Title: "Organizational Structure"
 Description: "Defines the organizational structure of a medical institution"
-* ^url = "https://terminology.medcore.uz/CodeSystem/organizational-structure-cs"
-* ^version = "1.0.0"
-* ^status = #active
-* ^experimental = false
-* ^date = "2025-02-24"
-* ^publisher = "Ministry of Health of Uzbekistan"
-* ^content = #complete
-* ^language = #uz
-* ^caseSensitive = true
+* insert OriginalCodeSystemDraft(organizational-structure-cs)
 * #110 "Ixtisoslashtirilgan ilmiy-amaliy tibbiyot markazi"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Специализированный научно-практический медицинский центр"

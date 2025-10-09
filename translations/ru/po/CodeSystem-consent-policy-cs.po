@@ -1,0 +1,56 @@
+
+# A natural language name identifying the code system. This name should be usable as an identifier for the module by machine processing applications such as code generation.
+#: CodeSystem.name
+msgid "ConsentPolicyCS"
+msgstr ""
+
+# A short, descriptive, user-friendly title for the code system.
+#: CodeSystem.title
+msgid "Consent policies"
+msgstr ""
+
+# The name of the organization or individual responsible for the release and ongoing maintenance of the code system.
+#: CodeSystem.publisher
+msgid "Uzinfocom LLC"
+msgstr "ООО «Единый интегратор Uzinfocom»"
+
+# The name of an individual to contact.
+#: ContactDetail.name
+msgid "Uzinfocom LLC"
+msgstr ""
+
+# A free text natural language description of the code system from a consumer's perspective.
+#: CodeSystem.description
+msgid "Defines the regulatory basis for consent"
+msgstr ""
+
+# A human readable string that is the recommended default way to present this concept to a user.
+#: CodeSystem.concept.display
+msgid "“Fuqarolar salomatligini muhofaza qilish to'g'risida”gi O'zbekiston Respublikasi Qonunining 19, 24, 25, 26, 28, 34, 45-moddalari."
+msgstr ""
+
+# The text value for this designation.
+#: CodeSystem.concept.designation.value
+msgid "Статьи: 19, 24, 25, 26, 28, 34, 45 Закона Руз \"Об охране здоровья граждан\""
+msgstr ""
+
+# The text value for this designation.
+#: CodeSystem.concept.designation.value
+msgid "Articles: 19, 24, 25, 26, 28, 34, 45 of the Law of the Republic of Uzbekistan \"On the Protection of Citizens' Health\""
+msgstr ""
+
+# A human readable string that is the recommended default way to present this concept to a user.
+#: CodeSystem.concept.display
+msgid "“Shaxsiy ma'lumotlar to'g'risida”gi O'zR Qonunining 15, 18, 19, 21-31-moddalari."
+msgstr ""
+
+# The text value for this designation.
+#: CodeSystem.concept.designation.value
+msgid "Статьи: 15, 18, 19, 21-31 Закона Руз \"О персональных данных\""
+msgstr ""
+
+# The text value for this designation.
+#: CodeSystem.concept.designation.value
+msgid "Articles: 15, 18, 19, 21-31 of the Law of the Republic of Uzbekistan \"On Personal Data\""
+msgstr ""
+

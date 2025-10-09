@@ -1,0 +1,10 @@
+CODE	UZ	RU	EN	
+ADM 	qabul qiluvchi shifokor (shu tashrif doirasida)	принимающий врач (в рамках этого визита)	admitter	The practitioner who is responsible for admitting a patient to a patient encounter.
+ATND 	kuzatib boruvchi shifokor	сопровождающий врач 	attender	The practitioner that has responsibility for overseeing a patient's care during a patient encounter.
+CALLBCK 	aloqa shaxsi	контактное лицо	callback contact	A person or organization who should be contacted for follow-up questions about the act in place of the author.
+CON 	konsultant	консультант	consultant	An advisor participating in the service by performing evaluations and making recommendations.
+DIS 	chiqaruvchi shifokor	выписывающий врач	discharger	The practitioner who is responsible for the discharge of a patient from a patient encounter.
+ESC 	eskort	эскорт	escort	Only with Transportation services. A person who escorts the patient.
+REF 	yunaltiruvchi shifokor	направляющий врач	referrer	A person having referred the subject of the service to the performer (referring physician). Typically, a referring physician will receive a report.
+translator 	tarjimon	переводчик	Translator	A translator who is facilitating communication with the patient during the encounter.
+emergency 	favqulodda aloqa	Экстренный контакт	Emergency	A person to be contacted in case of an emergency during the encounter.

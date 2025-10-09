@@ -2,7 +2,7 @@ CodeSystem: GenderOtherCS
 Id: gender-other-cs
 Title: "Differentiation of the administrative gender 'other'"
 Description: "Differentiation of the administrative gender 'other' in Uzbek and Russian"
-* ^url = "https://terminology.medcore.uz/CodeSystem/gender-other-cs"
+* ^url = "https://terminology.dhp.uz/fhir/core/CodeSystem/gender-other-cs"
 * ^experimental = true
 * ^caseSensitive = true
 * ^hierarchyMeaning = #is-a

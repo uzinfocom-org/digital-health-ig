@@ -1,0 +1,6 @@
+
+# Further description of the service as it would be presented to a consumer while searching.
+#: HealthcareService.name
+msgid "IHC-ga xos"
+msgstr "ИГХ специфические"
+

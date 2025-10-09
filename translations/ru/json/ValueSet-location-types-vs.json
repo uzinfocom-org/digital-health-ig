@@ -1,0 +1,1205 @@
+{
+  "id" : "ValueSet-location-types-vs",
+  "baseLang" : "en",
+  "languages" : [
+    {
+      "targetLang" : "ru",
+      "entries" : [
+        {
+          "id" : "ValueSet.name",
+          "context" : "A natural language name identifying the value set. This name should be usable as an identifier for the module by machine processing applications such as code generation.",
+          "source" : "LocationTypesVS",
+          "target" : null
+        },
+        {
+          "id" : "ValueSet.title",
+          "context" : "A short, descriptive, user-friendly title for the value set.",
+          "source" : "Location types",
+          "target" : null
+        },
+        {
+          "id" : "ValueSet.publisher",
+          "context" : "The name of the organization or individual responsible for the release and ongoing maintenance of the value set.",
+          "source" : "Uzinfocom LLC",
+          "target" : "ООО «Единый интегратор Uzinfocom»"
+        },
+        {
+          "id" : "ContactDetail.name",
+          "context" : "The name of an individual to contact.",
+          "source" : "Uzinfocom LLC",
+          "target" : null
+        },
+        {
+          "id" : "ValueSet.description",
+          "context" : "A free text natural language description of the value set from a consumer's perspective. The textual description specifies the span of meanings for concepts to be included within the Value Set Expansion, and also may specify the intended use and limitations of the Value Set.",
+          "source" : "Location types defined by the Ministry of Health of the Republic of Uzbekistan",
+          "target" : null
+        },
+        {
+          "id" : "ValueSet.compose.include.concept.designation.value",
+          "context" : "The text value for this designation.",
+          "source" : "Место происшествия",
+          "target" : null
+        },
+        {
+          "id" : "ValueSet.compose.include.concept.designation.value",
+          "context" : "The text value for this designation.",
+          "source" : "Voqea joyi",
+          "target" : null
+        },
+        {
+          "id" : "ValueSet.compose.include.concept.designation.value",
+          "context" : "The text value for this designation.",
+          "source" : "клиника аллергии",
+          "target" : null
+        },
+        {
+          "id" : "ValueSet.compose.include.concept.designation.value",
+          "context" : "The text value for this designation.",
+          "source" : "allergiya klinikasi",
+          "target" : null
+        },
+        {
+          "id" : "ValueSet.compose.include.concept.designation.value",
+          "context" : "The text value for this designation.",
+          "source" : "Скорая помощь",
+          "target" : null
+        },
+        {
+          "id" : "ValueSet.compose.include.concept.designation.value",
+          "context" : "The text value for this designation.",
+          "source" : "Tez yordam mashinasi",
+          "target" : null
+        },
+        {
+          "id" : "ValueSet.compose.include.concept.designation.value",
+          "context" : "The text value for this designation.",
+          "source" : "клиника трансплантации костного мозга",
+          "target" : null
+        },
+        {
+          "id" : "ValueSet.compose.include.concept.designation.value",
+          "context" : "The text value for this designation.",
+          "source" : "suyak iligi transplantatsiyasi klinikasi",
+          "target" : null
+        },
+        {
+          "id" : "ValueSet.compose.include.concept.designation.value",
+          "context" : "The text value for this designation.",
+          "source" : "Отделение трансплантации костного мозга",
+          "target" : null
+        },
+        {
+          "id" : "ValueSet.compose.include.concept.designation.value",
+          "context" : "The text value for this designation.",
+          "source" : "Suyak iligi transplantatsiyasi bo'limi",
+          "target" : null
+        },
+        {
+          "id" : "ValueSet.compose.include.concept.designation.value",
+          "context" : "The text value for this designation.",
+          "source" : "клиника молочной железы",
+          "target" : null
+        },
+        {
+          "id" : "ValueSet.compose.include.concept.designation.value",
+          "context" : "The text value for this designation.",
+          "source" : "ko'krak klinikasi",
+          "target" : null
+        },
+        {
+          "id" : "ValueSet.compose.include.concept.designation.value",
+          "context" : "The text value for this designation.",
+          "source" : "детская и подростковая неврологическая клиника",
+          "target" : null
+        },
+        {
+          "id" : "ValueSet.compose.include.concept.designation.value",
+          "context" : "The text value for this designation.",
+          "source" : "bolalar va o'smirlar nevrologik klinikasi",
+          "target" : null
+        },
+        {
+          "id" : "ValueSet.compose.include.concept.designation.value",
+          "context" : "The text value for this designation.",
+          "source" : "детская и подростковая психиатрическая клиника",
+          "target" : null
+        },
+        {
+          "id" : "ValueSet.compose.include.concept.designation.value",
+          "context" : "The text value for this designation.",
+          "source" : "bolalar va o'smirlar psixiatriya klinikasi",
+          "target" : null
+        },
+        {
+          "id" : "ValueSet.compose.include.concept.designation.value",
+          "context" : "The text value for this designation.",
+          "source" : "амбулаторные медицинские учреждения; клиника/центр; Реабилитация: Кардиологические учреждения",
+          "target" : null
+        },
+        {
+          "id" : "ValueSet.compose.include.concept.designation.value",
+          "context" : "The text value for this designation.",
+          "source" : "ambulatoriya tibbiyot muassasalari; klinika/markaz; Reabilitatsiya: Kardiologiya muassasalari",
+          "target" : null
+        },
+        {
+          "id" : "ValueSet.compose.include.concept.designation.value",
+          "context" : "The text value for this designation.",
+          "source" : "Лаборатория катетеризации сердца",
+          "target" : null
+        },
+        {
+          "id" : "ValueSet.compose.include.concept.designation.value",
+          "context" : "The text value for this designation.",
+          "source" : "Yurak kateterizatsiyasi laboratoriyasi",
+          "target" : null
+        },
+        {
+          "id" : "ValueSet.compose.include.concept.designation.value",
+          "context" : "The text value for this designation.",
+          "source" : "Отделение коронарной терапии",
+          "target" : null
+        },
+        {
+          "id" : "ValueSet.compose.include.concept.designation.value",
+          "context" : "The text value for this designation.",
+          "source" : "Koronar terapiya bo'limi",
+          "target" : null
+        },
+        {
+          "id" : "ValueSet.compose.include.concept.designation.value",
+          "context" : "The text value for this designation.",
+          "source" : "Отделение грудной клетки",
+          "target" : null
+        },
+        {
+          "id" : "ValueSet.compose.include.concept.designation.value",
+          "context" : "The text value for this designation.",
+          "source" : "Ko'krak qismi",
+          "target" : null
+        },
+        {
+          "id" : "ValueSet.compose.include.concept.designation.value",
+          "context" : "The text value for this designation.",
+          "source" : "Клиника коагуляции",
+          "target" : null
+        },
+        {
+          "id" : "ValueSet.compose.include.concept.designation.value",
+          "context" : "The text value for this designation.",
+          "source" : "Koagulyatsiya klinikasi",
+          "target" : null
+        },
+        {
+          "id" : "ValueSet.compose.include.concept.designation.value",
+          "context" : "The text value for this designation.",
+          "source" : "Клиника колоректальной хирургии",
+          "target" : null
+        },
+        {
+          "id" : "ValueSet.compose.include.concept.designation.value",
+          "context" : "The text value for this designation.",
+          "source" : "Kolorektal jarrohlik klinikasi",
+          "target" : null
+        },
+        {
+          "id" : "ValueSet.compose.include.concept.designation.value",
+          "context" : "The text value for this designation.",
+          "source" : "Сердечно-сосудистое диагностическое или терапевтическое отделение",
+          "target" : null
+        },
+        {
+          "id" : "ValueSet.compose.include.concept.designation.value",
+          "context" : "The text value for this designation.",
+          "source" : "Yurak-qon tomir diagnostikasi yoki terapevtik bo'limi",
+          "target" : null
+        },
+        {
+          "id" : "ValueSet.compose.include.concept.designation.value",
+          "context" : "The text value for this designation.",
+          "source" : "Адрес доставки",
+          "target" : null
+        },
+        {
+          "id" : "ValueSet.compose.include.concept.designation.value",
+          "context" : "The text value for this designation.",
+          "source" : "Yetkazib berish manzili",
+          "target" : null
+        },
+        {
+          "id" : "ValueSet.compose.include.concept.designation.value",
+          "context" : "The text value for this designation.",
+          "source" : "Дерматологическая клиника",
+          "target" : null
+        },
+        {
+          "id" : "ValueSet.compose.include.concept.designation.value",
+          "context" : "The text value for this designation.",
+          "source" : "Dermatologiya klinikasi",
+          "target" : null
+        },
+        {
+          "id" : "ValueSet.compose.include.concept.designation.value",
+          "context" : "The text value for this designation.",
+          "source" : "Диагностическое или терапевтическое отделение",
+          "target" : null
+        },
+        {
+          "id" : "ValueSet.compose.include.concept.designation.value",
+          "context" : "The text value for this designation.",
+          "source" : "Diagnostika yoki terapevtik bo'lim",
+          "target" : null
+        },
+        {
+          "id" : "ValueSet.compose.include.concept.designation.value",
+          "context" : "The text value for this designation.",
+          "source" : "Эхокардиографическая лаборатория",
+          "target" : null
+        },
+        {
+          "id" : "ValueSet.compose.include.concept.designation.value",
+          "context" : "The text value for this designation.",
+          "source" : "Ekokardiyografiya laboratoriyasi",
+          "target" : null
+        },
+        {
+          "id" : "ValueSet.compose.include.concept.designation.value",
+          "context" : "The text value for this designation.",
+          "source" : "Эндокринологическая клиника",
+          "target" : null
+        },
+        {
+          "id" : "ValueSet.compose.include.concept.designation.value",
+          "context" : "The text value for this designation.",
+          "source" : "Endokrinologiya klinikasi",
+          "target" : null
+        },
+        {
+          "id" : "ValueSet.compose.include.concept.designation.value",
+          "context" : "The text value for this designation.",
+          "source" : "Эндоскопическая лаборатория",
+          "target" : null
+        },
+        {
+          "id" : "ValueSet.compose.include.concept.designation.value",
+          "context" : "The text value for this designation.",
+          "source" : "Endoskopiya laboratoriyasi",
+          "target" : null
+        },
+        {
+          "id" : "ValueSet.compose.include.concept.designation.value",
+          "context" : "The text value for this designation.",
+          "source" : "Отделение эпилепсии",
+          "target" : null
+        },
+        {
+          "id" : "ValueSet.compose.include.concept.designation.value",
+          "context" : "The text value for this designation.",
+          "source" : "Epilepsiya bo'limi",
+          "target" : null
+        },
+        {
+          "id" : "ValueSet.compose.include.concept.designation.value",
+          "context" : "The text value for this designation.",
+          "source" : "Отделение неотложной помощи",
+          "target" : null
+        },
+        {
+          "id" : "ValueSet.compose.include.concept.designation.value",
+          "context" : "The text value for this designation.",
+          "source" : "Favqulodda vaziyatlar bo'limi",
+          "target" : null
+        },
+        {
+          "id" : "ValueSet.compose.include.concept.designation.value",
+          "context" : "The text value for this designation.",
+          "source" : "Отделение неотложной помощи при травмах",
+          "target" : null
+        },
+        {
+          "id" : "ValueSet.compose.include.concept.designation.value",
+          "context" : "The text value for this designation.",
+          "source" : "Travmatik shoshilinch yordam bo'limi",
+          "target" : null
+        },
+        {
+          "id" : "ValueSet.compose.include.concept.designation.value",
+          "context" : "The text value for this designation.",
+          "source" : "Семейная медицинская клиника",
+          "target" : null
+        },
+        {
+          "id" : "ValueSet.compose.include.concept.designation.value",
+          "context" : "The text value for this designation.",
+          "source" : "Oilaviy tibbiy poliklinika",
+          "target" : null
+        },
+        {
+          "id" : "ValueSet.compose.include.concept.designation.value",
+          "context" : "The text value for this designation.",
+          "source" : "Больницы; Больница общей неотложной помощи",
+          "target" : null
+        },
+        {
+          "id" : "ValueSet.compose.include.concept.designation.value",
+          "context" : "The text value for this designation.",
+          "source" : "Kasalxonalar; Umumiy shoshilinch tibbiy yordam shifoxonasi",
+          "target" : null
+        },
+        {
+          "id" : "ValueSet.compose.include.concept.designation.value",
+          "context" : "The text value for this designation.",
+          "source" : "Гастроэнтерологическая клиника",
+          "target" : null
+        },
+        {
+          "id" : "ValueSet.compose.include.concept.designation.value",
+          "context" : "The text value for this designation.",
+          "source" : "Gastroenterologiya klinikasi",
+          "target" : null
+        },
+        {
+          "id" : "ValueSet.compose.include.concept.designation.value",
+          "context" : "The text value for this designation.",
+          "source" : "Гастроэнтерологическая диагностическая или терапевтическая лаборатория",
+          "target" : null
+        },
+        {
+          "id" : "ValueSet.compose.include.concept.designation.value",
+          "context" : "The text value for this designation.",
+          "source" : "Gastroenterologik diagnostika yoki terapevtik laboratoriya",
+          "target" : null
+        },
+        {
+          "id" : "ValueSet.compose.include.concept.designation.value",
+          "context" : "The text value for this designation.",
+          "source" : "Гинекологическая клиника",
+          "target" : null
+        },
+        {
+          "id" : "ValueSet.compose.include.concept.designation.value",
+          "context" : "The text value for this designation.",
+          "source" : "Ginekologik klinika",
+          "target" : null
+        },
+        {
+          "id" : "ValueSet.compose.include.concept.designation.value",
+          "context" : "The text value for this designation.",
+          "source" : "Отделение гемодиализа",
+          "target" : null
+        },
+        {
+          "id" : "ValueSet.compose.include.concept.designation.value",
+          "context" : "The text value for this designation.",
+          "source" : "Gemodializ bo'limi",
+          "target" : null
+        },
+        {
+          "id" : "ValueSet.compose.include.concept.designation.value",
+          "context" : "The text value for this designation.",
+          "source" : "Гематологическая клиника",
+          "target" : null
+        },
+        {
+          "id" : "ValueSet.compose.include.concept.designation.value",
+          "context" : "The text value for this designation.",
+          "source" : "Gematologiya klinikasi",
+          "target" : null
+        },
+        {
+          "id" : "ValueSet.compose.include.concept.designation.value",
+          "context" : "The text value for this designation.",
+          "source" : "Больничная лаборатория",
+          "target" : null
+        },
+        {
+          "id" : "ValueSet.compose.include.concept.designation.value",
+          "context" : "The text value for this designation.",
+          "source" : "Kasalxona laboratoriyasi",
+          "target" : null
+        },
+        {
+          "id" : "ValueSet.compose.include.concept.designation.value",
+          "context" : "The text value for this designation.",
+          "source" : "Больница",
+          "target" : null
+        },
+        {
+          "id" : "ValueSet.compose.include.concept.designation.value",
+          "context" : "The text value for this designation.",
+          "source" : "Kasalxona",
+          "target" : null
+        },
+        {
+          "id" : "ValueSet.compose.include.concept.designation.value",
+          "context" : "The text value for this designation.",
+          "source" : "Отделение радиологии",
+          "target" : null
+        },
+        {
+          "id" : "ValueSet.compose.include.concept.designation.value",
+          "context" : "The text value for this designation.",
+          "source" : "Radiologiya bo'limi",
+          "target" : null
+        },
+        {
+          "id" : "ValueSet.compose.include.concept.designation.value",
+          "context" : "The text value for this designation.",
+          "source" : "Гипертоническая клиника",
+          "target" : null
+        },
+        {
+          "id" : "ValueSet.compose.include.concept.designation.value",
+          "context" : "The text value for this designation.",
+          "source" : "Gipertenziya klinikasi",
+          "target" : null
+        },
+        {
+          "id" : "ValueSet.compose.include.concept.designation.value",
+          "context" : "The text value for this designation.",
+          "source" : "Больничное отделение",
+          "target" : null
+        },
+        {
+          "id" : "ValueSet.compose.include.concept.designation.value",
+          "context" : "The text value for this designation.",
+          "source" : "Kasalxona bo'limi",
+          "target" : null
+        },
+        {
+          "id" : "ValueSet.compose.include.concept.designation.value",
+          "context" : "The text value for this designation.",
+          "source" : "Место забора образцов",
+          "target" : null
+        },
+        {
+          "id" : "ValueSet.compose.include.concept.designation.value",
+          "context" : "The text value for this designation.",
+          "source" : "Namuna yig'ish joyi",
+          "target" : null
+        },
+        {
+          "id" : "ValueSet.compose.include.concept.designation.value",
+          "context" : "The text value for this designation.",
+          "source" : "Отделение интенсивной терапии",
+          "target" : null
+        },
+        {
+          "id" : "ValueSet.compose.include.concept.designation.value",
+          "context" : "The text value for this designation.",
+          "source" : "Reanimatsiya bo'limi",
+          "target" : null
+        },
+        {
+          "id" : "ValueSet.compose.include.concept.designation.value",
+          "context" : "The text value for this designation.",
+          "source" : "Инфекционная клиника",
+          "target" : null
+        },
+        {
+          "id" : "ValueSet.compose.include.concept.designation.value",
+          "context" : "The text value for this designation.",
+          "source" : "Yuqumli kasalliklar klinikasi",
+          "target" : null
+        },
+        {
+          "id" : "ValueSet.compose.include.concept.designation.value",
+          "context" : "The text value for this designation.",
+          "source" : "Стационарная лаборатория",
+          "target" : null
+        },
+        {
+          "id" : "ValueSet.compose.include.concept.designation.value",
+          "context" : "The text value for this designation.",
+          "source" : "Statsionar laboratoriya",
+          "target" : null
+        },
+        {
+          "id" : "ValueSet.compose.include.concept.designation.value",
+          "context" : "The text value for this designation.",
+          "source" : "Стационарная аптека",
+          "target" : null
+        },
+        {
+          "id" : "ValueSet.compose.include.concept.designation.value",
+          "context" : "The text value for this designation.",
+          "source" : "Statsionar dorixona",
+          "target" : null
+        },
+        {
+          "id" : "ValueSet.compose.include.concept.designation.value",
+          "context" : "The text value for this designation.",
+          "source" : "Клиника бесплодия",
+          "target" : null
+        },
+        {
+          "id" : "ValueSet.compose.include.concept.designation.value",
+          "context" : "The text value for this designation.",
+          "source" : "Bepushtlik klinikasi",
+          "target" : null
+        },
+        {
+          "id" : "ValueSet.compose.include.concept.designation.value",
+          "context" : "The text value for this designation.",
+          "source" : "Медицинская лаборатория",
+          "target" : null
+        },
+        {
+          "id" : "ValueSet.compose.include.concept.designation.value",
+          "context" : "The text value for this designation.",
+          "source" : "Tibbiy laboratoriya",
+          "target" : null
+        },
+        {
+          "id" : "ValueSet.compose.include.concept.designation.value",
+          "context" : "The text value for this designation.",
+          "source" : "Клиника медицинской генетики",
+          "target" : null
+        },
+        {
+          "id" : "ValueSet.compose.include.concept.designation.value",
+          "context" : "The text value for this designation.",
+          "source" : "Tibbiy genetika klinikasi",
+          "target" : null
+        },
+        {
+          "id" : "ValueSet.compose.include.concept.designation.value",
+          "context" : "The text value for this designation.",
+          "source" : "Военный госпиталь",
+          "target" : null
+        },
+        {
+          "id" : "ValueSet.compose.include.concept.designation.value",
+          "context" : "The text value for this designation.",
+          "source" : "Harbiy kasalxona",
+          "target" : null
+        },
+        {
+          "id" : "ValueSet.compose.include.concept.designation.value",
+          "context" : "The text value for this designation.",
+          "source" : "Мобильное подразделение",
+          "target" : null
+        },
+        {
+          "id" : "ValueSet.compose.include.concept.designation.value",
+          "context" : "The text value for this designation.",
+          "source" : "Mobil qurilma",
+          "target" : null
+        },
+        {
+          "id" : "ValueSet.compose.include.concept.designation.value",
+          "context" : "The text value for this designation.",
+          "source" : "Отделение неврологической интенсивной терапии и инсульта",
+          "target" : null
+        },
+        {
+          "id" : "ValueSet.compose.include.concept.designation.value",
+          "context" : "The text value for this designation.",
+          "source" : "Nevrologik intensiv terapiya va insult bo'limi",
+          "target" : null
+        },
+        {
+          "id" : "ValueSet.compose.include.concept.designation.value",
+          "context" : "The text value for this designation.",
+          "source" : "Клиника нефрологии",
+          "target" : null
+        },
+        {
+          "id" : "ValueSet.compose.include.concept.designation.value",
+          "context" : "The text value for this designation.",
+          "source" : "Nefrologiya klinikasi",
+          "target" : null
+        },
+        {
+          "id" : "ValueSet.compose.include.concept.designation.value",
+          "context" : "The text value for this designation.",
+          "source" : "Клиника неврологии",
+          "target" : null
+        },
+        {
+          "id" : "ValueSet.compose.include.concept.designation.value",
+          "context" : "The text value for this designation.",
+          "source" : "Nevrologiya klinikasi",
+          "target" : null
+        },
+        {
+          "id" : "ValueSet.compose.include.concept.designation.value",
+          "context" : "The text value for this designation.",
+          "source" : "Отделение нейрохирургии",
+          "target" : null
+        },
+        {
+          "id" : "ValueSet.compose.include.concept.designation.value",
+          "context" : "The text value for this designation.",
+          "source" : "Neyroxirurgiya kafedrasi",
+          "target" : null
+        },
+        {
+          "id" : "ValueSet.compose.include.concept.designation.value",
+          "context" : "The text value for this designation.",
+          "source" : "Клиника акушерства",
+          "target" : null
+        },
+        {
+          "id" : "ValueSet.compose.include.concept.designation.value",
+          "context" : "The text value for this designation.",
+          "source" : "Akusherlik klinikasi",
+          "target" : null
+        },
+        {
+          "id" : "ValueSet.compose.include.concept.designation.value",
+          "context" : "The text value for this designation.",
+          "source" : "амбулаторное учреждение",
+          "target" : null
+        },
+        {
+          "id" : "ValueSet.compose.include.concept.designation.value",
+          "context" : "The text value for this designation.",
+          "source" : "ambulatoriya muassasasi",
+          "target" : null
+        },
+        {
+          "id" : "ValueSet.compose.include.concept.designation.value",
+          "context" : "The text value for this designation.",
+          "source" : "Клиника челюстно-лицевой хирургии",
+          "target" : null
+        },
+        {
+          "id" : "ValueSet.compose.include.concept.designation.value",
+          "context" : "The text value for this designation.",
+          "source" : "Maksillofasiyal jarrohlik klinikasi",
+          "target" : null
+        },
+        {
+          "id" : "ValueSet.compose.include.concept.designation.value",
+          "context" : "The text value for this designation.",
+          "source" : "Клиника медицинской онкологии",
+          "target" : null
+        },
+        {
+          "id" : "ValueSet.compose.include.concept.designation.value",
+          "context" : "The text value for this designation.",
+          "source" : "Tibbiy onkologiya klinikasi",
+          "target" : null
+        },
+        {
+          "id" : "ValueSet.compose.include.concept.designation.value",
+          "context" : "The text value for this designation.",
+          "source" : "Клиника офтальмологии",
+          "target" : null
+        },
+        {
+          "id" : "ValueSet.compose.include.concept.designation.value",
+          "context" : "The text value for this designation.",
+          "source" : "Oftalmologiya klinikasi",
+          "target" : null
+        },
+        {
+          "id" : "ValueSet.compose.include.concept.designation.value",
+          "context" : "The text value for this designation.",
+          "source" : "Клиника оптометрии",
+          "target" : null
+        },
+        {
+          "id" : "ValueSet.compose.include.concept.designation.value",
+          "context" : "The text value for this designation.",
+          "source" : "Optometriya klinikasi",
+          "target" : null
+        },
+        {
+          "id" : "ValueSet.compose.include.concept.designation.value",
+          "context" : "The text value for this designation.",
+          "source" : "Клиника ортопедии",
+          "target" : null
+        },
+        {
+          "id" : "ValueSet.compose.include.concept.designation.value",
+          "context" : "The text value for this designation.",
+          "source" : "Ortopediya klinikasi",
+          "target" : null
+        },
+        {
+          "id" : "ValueSet.compose.include.concept.designation.value",
+          "context" : "The text value for this designation.",
+          "source" : "Амбулаторная лаборатория",
+          "target" : null
+        },
+        {
+          "id" : "ValueSet.compose.include.concept.designation.value",
+          "context" : "The text value for this designation.",
+          "source" : "Ambulatoriya laboratoriyasi",
+          "target" : null
+        },
+        {
+          "id" : "ValueSet.compose.include.concept.designation.value",
+          "context" : "The text value for this designation.",
+          "source" : "Амбулаторная аптека",
+          "target" : null
+        },
+        {
+          "id" : "ValueSet.compose.include.concept.designation.value",
+          "context" : "The text value for this designation.",
+          "source" : "Ambulator dorixona",
+          "target" : null
+        },
+        {
+          "id" : "ValueSet.compose.include.concept.designation.value",
+          "context" : "The text value for this designation.",
+          "source" : "Клиника первичной медико-санитарной помощи",
+          "target" : null
+        },
+        {
+          "id" : "ValueSet.compose.include.concept.designation.value",
+          "context" : "The text value for this designation.",
+          "source" : "Birlamchi tibbiy yordam klinikasi",
+          "target" : null
+        },
+        {
+          "id" : "ValueSet.compose.include.concept.designation.value",
+          "context" : "The text value for this designation.",
+          "source" : "Клиника педиатрии",
+          "target" : null
+        },
+        {
+          "id" : "ValueSet.compose.include.concept.designation.value",
+          "context" : "The text value for this designation.",
+          "source" : "Pediatriya klinikasi",
+          "target" : null
+        },
+        {
+          "id" : "ValueSet.compose.include.concept.designation.value",
+          "context" : "The text value for this designation.",
+          "source" : "Детская кардиологическая клиника",
+          "target" : null
+        },
+        {
+          "id" : "ValueSet.compose.include.concept.designation.value",
+          "context" : "The text value for this designation.",
+          "source" : "Bolalar kardiologiya klinikasi",
+          "target" : null
+        },
+        {
+          "id" : "ValueSet.compose.include.concept.designation.value",
+          "context" : "The text value for this designation.",
+          "source" : "Детская эндокринологическая клиника",
+          "target" : null
+        },
+        {
+          "id" : "ValueSet.compose.include.concept.designation.value",
+          "context" : "The text value for this designation.",
+          "source" : "Bolalar endokrinologiya klinikasi",
+          "target" : null
+        },
+        {
+          "id" : "ValueSet.compose.include.concept.designation.value",
+          "context" : "The text value for this designation.",
+          "source" : "Детская гастроэнтерологическая клиника",
+          "target" : null
+        },
+        {
+          "id" : "ValueSet.compose.include.concept.designation.value",
+          "context" : "The text value for this designation.",
+          "source" : "Bolalar gastroenterologiya klinikasi",
+          "target" : null
+        },
+        {
+          "id" : "ValueSet.compose.include.concept.designation.value",
+          "context" : "The text value for this designation.",
+          "source" : "Детская гематологическая клиника",
+          "target" : null
+        },
+        {
+          "id" : "ValueSet.compose.include.concept.designation.value",
+          "context" : "The text value for this designation.",
+          "source" : "Bolalar gematologiya klinikasi",
+          "target" : null
+        },
+        {
+          "id" : "ValueSet.compose.include.concept.designation.value",
+          "context" : "The text value for this designation.",
+          "source" : "Клиника детской онкологии",
+          "target" : null
+        },
+        {
+          "id" : "ValueSet.compose.include.concept.designation.value",
+          "context" : "The text value for this designation.",
+          "source" : "Bolalar onkologiyasi klinikasi",
+          "target" : null
+        },
+        {
+          "id" : "ValueSet.compose.include.concept.designation.value",
+          "context" : "The text value for this designation.",
+          "source" : "Отделение детской интенсивной терапии",
+          "target" : null
+        },
+        {
+          "id" : "ValueSet.compose.include.concept.designation.value",
+          "context" : "The text value for this designation.",
+          "source" : "Bolalar intensiv terapiya bo'limi",
+          "target" : null
+        },
+        {
+          "id" : "ValueSet.compose.include.concept.designation.value",
+          "context" : "The text value for this designation.",
+          "source" : "Детская инфекционная клиника",
+          "target" : null
+        },
+        {
+          "id" : "ValueSet.compose.include.concept.designation.value",
+          "context" : "The text value for this designation.",
+          "source" : "Bolalar yuqumli kasalliklar klinikasi",
+          "target" : null
+        },
+        {
+          "id" : "ValueSet.compose.include.concept.designation.value",
+          "context" : "The text value for this designation.",
+          "source" : "Клиника детской нефрологии",
+          "target" : null
+        },
+        {
+          "id" : "ValueSet.compose.include.concept.designation.value",
+          "context" : "The text value for this designation.",
+          "source" : "Bolalar nefrologiyasi klinikasi",
+          "target" : null
+        },
+        {
+          "id" : "ValueSet.compose.include.concept.designation.value",
+          "context" : "The text value for this designation.",
+          "source" : "Отделение интенсивной терапии новорожденных",
+          "target" : null
+        },
+        {
+          "id" : "ValueSet.compose.include.concept.designation.value",
+          "context" : "The text value for this designation.",
+          "source" : "Neonatal intensiv terapiya bo'limi",
+          "target" : null
+        },
+        {
+          "id" : "ValueSet.compose.include.concept.designation.value",
+          "context" : "The text value for this designation.",
+          "source" : "Клиника детской ревматологии",
+          "target" : null
+        },
+        {
+          "id" : "ValueSet.compose.include.concept.designation.value",
+          "context" : "The text value for this designation.",
+          "source" : "Bolalar revmatologiyasi klinikasi",
+          "target" : null
+        },
+        {
+          "id" : "ValueSet.compose.include.concept.designation.value",
+          "context" : "The text value for this designation.",
+          "source" : "Детское отделение",
+          "target" : null
+        },
+        {
+          "id" : "ValueSet.compose.include.concept.designation.value",
+          "context" : "The text value for this designation.",
+          "source" : "Bolalar bo'limi",
+          "target" : null
+        },
+        {
+          "id" : "ValueSet.compose.include.concept.designation.value",
+          "context" : "The text value for this designation.",
+          "source" : "Аптека",
+          "target" : null
+        },
+        {
+          "id" : "ValueSet.compose.include.concept.designation.value",
+          "context" : "The text value for this designation.",
+          "source" : "Dorixona",
+          "target" : null
+        },
+        {
+          "id" : "ValueSet.compose.include.concept.designation.value",
+          "context" : "The text value for this designation.",
+          "source" : "Отделение психиатрической больницы",
+          "target" : null
+        },
+        {
+          "id" : "ValueSet.compose.include.concept.designation.value",
+          "context" : "The text value for this designation.",
+          "source" : "Psixiatriya shifoxonasi bo'limi",
+          "target" : null
+        },
+        {
+          "id" : "ValueSet.compose.include.concept.designation.value",
+          "context" : "The text value for this designation.",
+          "source" : "Клиника пластической хирургии",
+          "target" : null
+        },
+        {
+          "id" : "ValueSet.compose.include.concept.designation.value",
+          "context" : "The text value for this designation.",
+          "source" : "Plastik jarrohlik klinikasi",
+          "target" : null
+        },
+        {
+          "id" : "ValueSet.compose.include.concept.designation.value",
+          "context" : "The text value for this designation.",
+          "source" : "Клиника профилактической медицины",
+          "target" : null
+        },
+        {
+          "id" : "ValueSet.compose.include.concept.designation.value",
+          "context" : "The text value for this designation.",
+          "source" : "Tibbiyot profilaktikasi klinikasi",
+          "target" : null
+        },
+        {
+          "id" : "ValueSet.compose.include.concept.designation.value",
+          "context" : "The text value for this designation.",
+          "source" : "Клиника проктологии",
+          "target" : null
+        },
+        {
+          "id" : "ValueSet.compose.include.concept.designation.value",
+          "context" : "The text value for this designation.",
+          "source" : "Proktologiya klinikasi",
+          "target" : null
+        },
+        {
+          "id" : "ValueSet.compose.include.concept.designation.value",
+          "context" : "The text value for this designation.",
+          "source" : "Офис поставщика услуг",
+          "target" : null
+        },
+        {
+          "id" : "ValueSet.compose.include.concept.designation.value",
+          "context" : "The text value for this designation.",
+          "source" : "Xizmat ko'rsatuvchi provayder idorasi",
+          "target" : null
+        },
+        {
+          "id" : "ValueSet.compose.include.concept.designation.value",
+          "context" : "The text value for this designation.",
+          "source" : "Клиника протезирования",
+          "target" : null
+        },
+        {
+          "id" : "ValueSet.compose.include.concept.designation.value",
+          "context" : "The text value for this designation.",
+          "source" : "Protezlar klinikasi",
+          "target" : null
+        },
+        {
+          "id" : "ValueSet.compose.include.concept.designation.value",
+          "context" : "The text value for this designation.",
+          "source" : "Клиника психологии",
+          "target" : null
+        },
+        {
+          "id" : "ValueSet.compose.include.concept.designation.value",
+          "context" : "The text value for this designation.",
+          "source" : "Psixologiya klinikasi",
+          "target" : null
+        },
+        {
+          "id" : "ValueSet.compose.include.concept.designation.value",
+          "context" : "The text value for this designation.",
+          "source" : "Клиника психиатрии",
+          "target" : null
+        },
+        {
+          "id" : "ValueSet.compose.include.concept.designation.value",
+          "context" : "The text value for this designation.",
+          "source" : "Psixiatriya klinikasi",
+          "target" : null
+        },
+        {
+          "id" : "ValueSet.compose.include.concept.designation.value",
+          "context" : "The text value for this designation.",
+          "source" : "Психиатрическое отделение",
+          "target" : null
+        },
+        {
+          "id" : "ValueSet.compose.include.concept.designation.value",
+          "context" : "The text value for this designation.",
+          "source" : "Psixiatriya bo'limi",
+          "target" : null
+        },
+        {
+          "id" : "ValueSet.compose.include.concept.designation.value",
+          "context" : "The text value for this designation.",
+          "source" : "Место жительства пациента",
+          "target" : null
+        },
+        {
+          "id" : "ValueSet.compose.include.concept.designation.value",
+          "context" : "The text value for this designation.",
+          "source" : "Bemorning yashash joyi",
+          "target" : null
+        },
+        {
+          "id" : "ValueSet.compose.include.concept.designation.value",
+          "context" : "The text value for this designation.",
+          "source" : "Рентгенологическое диагностическое или терапевтическое отделение",
+          "target" : null
+        },
+        {
+          "id" : "ValueSet.compose.include.concept.designation.value",
+          "context" : "The text value for this designation.",
+          "source" : "Rentgen diagnostikasi yoki terapevtik bo'limi",
+          "target" : null
+        },
+        {
+          "id" : "ValueSet.compose.include.concept.designation.value",
+          "context" : "The text value for this designation.",
+          "source" : "Отделение радиационной онкологии",
+          "target" : null
+        },
+        {
+          "id" : "ValueSet.compose.include.concept.designation.value",
+          "context" : "The text value for this designation.",
+          "source" : "Radiatsion onkologiya kafedrasi",
+          "target" : null
+        },
+        {
+          "id" : "ValueSet.compose.include.concept.designation.value",
+          "context" : "The text value for this designation.",
+          "source" : "центр лечения наркомании",
+          "target" : null
+        },
+        {
+          "id" : "ValueSet.compose.include.concept.designation.value",
+          "context" : "The text value for this designation.",
+          "source" : "giyohvandlikni davolash markazi",
+          "target" : null
+        },
+        {
+          "id" : "ValueSet.compose.include.concept.designation.value",
+          "context" : "The text value for this designation.",
+          "source" : "Клиника ревматологии",
+          "target" : null
+        },
+        {
+          "id" : "ValueSet.compose.include.concept.designation.value",
+          "context" : "The text value for this designation.",
+          "source" : "Revmatologiya klinikasi",
+          "target" : null
+        },
+        {
+          "id" : "ValueSet.compose.include.concept.designation.value",
+          "context" : "The text value for this designation.",
+          "source" : "Отделение реабилитации",
+          "target" : null
+        },
+        {
+          "id" : "ValueSet.compose.include.concept.designation.value",
+          "context" : "The text value for this designation.",
+          "source" : "Reabilitatsiya bo'limi",
+          "target" : null
+        },
+        {
+          "id" : "ValueSet.compose.include.concept.designation.value",
+          "context" : "The text value for this designation.",
+          "source" : "Нейрорадиологическое отделение",
+          "target" : null
+        },
+        {
+          "id" : "ValueSet.compose.include.concept.designation.value",
+          "context" : "The text value for this designation.",
+          "source" : "Neyroradiologiya bo'limi",
+          "target" : null
+        },
+        {
+          "id" : "ValueSet.compose.include.concept.designation.value",
+          "context" : "The text value for this designation.",
+          "source" : "Школа",
+          "target" : null
+        },
+        {
+          "id" : "ValueSet.compose.include.concept.designation.value",
+          "context" : "The text value for this designation.",
+          "source" : "Maktab",
+          "target" : null
+        },
+        {
+          "id" : "ValueSet.compose.include.concept.designation.value",
+          "context" : "The text value for this designation.",
+          "source" : "Отделение расстройств сна",
+          "target" : null
+        },
+        {
+          "id" : "ValueSet.compose.include.concept.designation.value",
+          "context" : "The text value for this designation.",
+          "source" : "Uyqu buzilishi bo'limi",
+          "target" : null
+        },
+        {
+          "id" : "ValueSet.compose.include.concept.designation.value",
+          "context" : "The text value for this designation.",
+          "source" : "Клиника спортивной медицины",
+          "target" : null
+        },
+        {
+          "id" : "ValueSet.compose.include.concept.designation.value",
+          "context" : "The text value for this designation.",
+          "source" : "Sport tibbiyoti klinikasi",
+          "target" : null
+        },
+        {
+          "id" : "ValueSet.compose.include.concept.designation.value",
+          "context" : "The text value for this designation.",
+          "source" : "Клиника хирургии",
+          "target" : null
+        },
+        {
+          "id" : "ValueSet.compose.include.concept.designation.value",
+          "context" : "The text value for this designation.",
+          "source" : "Jarrohlik klinikasi",
+          "target" : null
+        },
+        {
+          "id" : "ValueSet.compose.include.concept.designation.value",
+          "context" : "The text value for this designation.",
+          "source" : "Реабилитация от употребления психоактивных веществ",
+          "target" : null
+        },
+        {
+          "id" : "ValueSet.compose.include.concept.designation.value",
+          "context" : "The text value for this designation.",
+          "source" : "Giyohvand moddalarni suiiste'mol qilishni reabilitatsiya qilish",
+          "target" : null
+        },
+        {
+          "id" : "ValueSet.compose.include.concept.designation.value",
+          "context" : "The text value for this designation.",
+          "source" : "Клиника трансплантации",
+          "target" : null
+        },
+        {
+          "id" : "ValueSet.compose.include.concept.designation.value",
+          "context" : "The text value for this designation.",
+          "source" : "Transplantatsiya klinikasi",
+          "target" : null
+        },
+        {
+          "id" : "ValueSet.compose.include.concept.designation.value",
+          "context" : "The text value for this designation.",
+          "source" : "Клиника урологии",
+          "target" : null
+        },
+        {
+          "id" : "ValueSet.compose.include.concept.designation.value",
+          "context" : "The text value for this designation.",
+          "source" : "Urologiya klinikasi",
+          "target" : null
+        },
+        {
+          "id" : "ValueSet.compose.include.concept.designation.value",
+          "context" : "The text value for this designation.",
+          "source" : "Рабочее место",
+          "target" : null
+        },
+        {
+          "id" : "ValueSet.compose.include.concept.designation.value",
+          "context" : "The text value for this designation.",
+          "source" : "Ish joyi",
+          "target" : null
+        }
+      ]
+    }
+  ]
+}

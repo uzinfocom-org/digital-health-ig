@@ -2,15 +2,7 @@ CodeSystem: OrganizationalSubordinationGroupCS
 Id: organizational-subordination-group-cs
 Title: "Organizational subordination group"
 Description: "Defines the subordination group of the medical organization"
-* ^url = "https://terminology.medcore.uz/CodeSystem/organizational-subordination-group-cs"
-* ^version = "1.0.0"
-* ^status = #active
-* ^experimental = false
-* ^date = "2025-02-24"
-* ^publisher = "Example Healthcare Organization"
-* ^content = #complete
-* ^language = #uz
-* ^caseSensitive = true
+* insert OriginalCodeSystemDraft(organizational-subordination-group-cs)
 * #I_1 "Respublika tassarufidagi muassasalari"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Учреждения, находящиеся под контролем республики"

@@ -2,8 +2,7 @@ CodeSystem: ProfessionSpecializationCS
 Id: profession-specialization-cs
 Title: "Profession specializations"
 Description: "Defines the specializations of medical professions"
-* ^url = "https://terminology.medcore.uz/CodeSystem/profession-specialization-cs"
-* ^version = "1.0.0"
+* ^url = "https://terminology.dhp.uz/fhir/core/CodeSystem/profession-specialization-cs"
 * ^status = #active
 * ^experimental = true
 * ^date = "2025-03-12"

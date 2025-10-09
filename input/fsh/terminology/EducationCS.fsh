@@ -2,13 +2,7 @@ CodeSystem: EducationCS
 Id: education-cs
 Title: "Education levels"
 Description: "Education levels in Uzbekistan"
-* ^url = "https://terminology.medcore.uz/CodeSystem/education-cs"
-* ^status = #active
-* ^content = #complete
-* ^caseSensitive = true
-* ^hierarchyMeaning = #is-a
-* ^language = #uz
-* ^experimental = true
+* insert OriginalCodeSystemDraft(education-cs)
 * #regis0005.00001 "Uyushmagan (0-3 yosh)"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Неорганизованное (0-3 лет)"

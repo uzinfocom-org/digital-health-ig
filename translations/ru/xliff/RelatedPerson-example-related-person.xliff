@@ -1,0 +1,134 @@
+<?xml version="1.0" ?>
+
+<xliff xmlns="urn:oasis:names:tc:xliff:document:2.0" version="2.0">
+  <file source-language="en" target-language="ru" id="RelatedPerson-example-related-person" original="Resource RelatedPerson-example-related-person" datatype="KEYVALUEJSON">
+    <body>
+      <trans-unit id="RelatedPerson-example-related-person" resname="Coding.display">
+             <notes>
+               <note id="n1">A representation of the meaning of the code in the system, following the rules of the system.</note>
+             </notes>
+        <source>National unique individual identifier</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="RelatedPerson-example-related-person" resname="Coding.display">
+             <notes>
+               <note id="n1">A representation of the meaning of the code in the system, following the rules of the system.</note>
+             </notes>
+        <source>Passport number</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="RelatedPerson-example-related-person" resname="Coding.display">
+             <notes>
+               <note id="n1">A representation of the meaning of the code in the system, following the rules of the system.</note>
+             </notes>
+        <source>Birth Certificate</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="RelatedPerson-example-related-person" resname="Coding.display">
+             <notes>
+               <note id="n1">A representation of the meaning of the code in the system, following the rules of the system.</note>
+             </notes>
+        <source>Driver's license number</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="RelatedPerson-example-related-person" resname="Coding.display">
+             <notes>
+               <note id="n1">A representation of the meaning of the code in the system, following the rules of the system.</note>
+             </notes>
+        <source>Diplomatic Passport</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="RelatedPerson-example-related-person" resname="Coding.display">
+             <notes>
+               <note id="n1">A representation of the meaning of the code in the system, following the rules of the system.</note>
+             </notes>
+        <source>Health card number</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="RelatedPerson-example-related-person" resname="Coding.display">
+             <notes>
+               <note id="n1">A representation of the meaning of the code in the system, following the rules of the system.</note>
+             </notes>
+        <source>Military ID number</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="RelatedPerson-example-related-person" resname="Coding.display">
+             <notes>
+               <note id="n1">A representation of the meaning of the code in the system, following the rules of the system.</note>
+             </notes>
+        <source>witness</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="RelatedPerson-example-related-person" resname="HumanName.text">
+             <notes>
+               <note id="n1">Specifies the entire name as it should be displayed e.g. on an application UI. This may be provided instead of or as well as the specific parts.</note>
+             </notes>
+        <source>Зафаров Дамир Каримович</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="RelatedPerson-example-related-person" resname="HumanName.family">
+             <notes>
+               <note id="n1">The part of a name that links to the genealogy. In some cultures (e.g. Eritrea) the family name of a son is the first name of his father.</note>
+             </notes>
+        <source>Зафаров</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="RelatedPerson-example-related-person" resname="HumanName.given">
+             <notes>
+               <note id="n1">Given name.</note>
+             </notes>
+        <source>Дамир</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="RelatedPerson-example-related-person" resname="HumanName.suffix">
+             <notes>
+               <note id="n1">Part of the name that is acquired as a title due to academic, legal, employment or nobility status, etc. and that appears at the end of the name.</note>
+             </notes>
+        <source>Каримович</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="RelatedPerson-example-related-person" resname="Address.text">
+             <notes>
+               <note id="n1">Specifies the entire address as it should be displayed e.g. on a postal label. This may be provided instead of or as well as the specific parts.</note>
+             </notes>
+        <source>махалля Дилобод, Каторток кўчаси, 9-уй, 15-хонадон</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="RelatedPerson-example-related-person" resname="Address.line">
+             <notes>
+               <note id="n1">This component contains the house number, apartment number, street name, street direction,  P.O. Box number, delivery hints, and similar address information.</note>
+             </notes>
+        <source>Каторток кўчаси</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="RelatedPerson-example-related-person" resname="Address.city">
+             <notes>
+               <note id="n1">The name of the city, town, suburb, village or other community or delivery center.</note>
+             </notes>
+        <source>103-0104</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="RelatedPerson-example-related-person" resname="Address.district">
+             <notes>
+               <note id="n1">The name of the administrative area (county).</note>
+             </notes>
+        <source>1726294</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="RelatedPerson-example-related-person" resname="Address.state">
+             <notes>
+               <note id="n1">Sub-unit of a country with limited sovereignty in a federally organized country. A code may be used if codes are in common use (e.g. US 2 letter state codes).</note>
+             </notes>
+        <source>1726</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="RelatedPerson-example-related-person" resname="Address.country">
+             <notes>
+               <note id="n1">Country - a nation as commonly understood or generally accepted.</note>
+             </notes>
+        <source>182</source>
+        <target></target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

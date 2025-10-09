@@ -1,0 +1,31 @@
+
+# A representation of the meaning of the code in the system, following the rules of the system.
+#: Coding.display
+msgid "Diagnosis of complications of the underlying disease"
+msgstr ""
+
+# A representation of the meaning of the code in the system, following the rules of the system.
+#: Coding.display
+msgid "Active"
+msgstr ""
+
+# A representation of the meaning of the code in the system, following the rules of the system.
+#: Coding.display
+msgid "Confirmed"
+msgstr ""
+
+# A representation of the meaning of the code in the system, following the rules of the system.
+#: Coding.display
+msgid "Breast structure"
+msgstr ""
+
+# A representation of the meaning of the code in the system, following the rules of the system.
+#: Coding.display
+msgid "Author"
+msgstr ""
+
+# The text of the annotation in markdown format.
+#: Annotation.text
+msgid "Patient is in the first trimester of pregnancy. No complications observed at this stage."
+msgstr ""
+

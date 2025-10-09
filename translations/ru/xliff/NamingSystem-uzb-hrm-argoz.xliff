@@ -1,0 +1,71 @@
+<?xml version="1.0" ?>
+
+<xliff xmlns="urn:oasis:names:tc:xliff:document:2.0" version="2.0">
+  <file source-language="en" target-language="ru" id="NamingSystem-uzb-hrm-argoz" original="Resource NamingSystem-uzb-hrm-argoz" datatype="KEYVALUEJSON">
+    <body>
+      <trans-unit id="NamingSystem-uzb-hrm-argoz" resname="NamingSystem.name">
+             <notes>
+               <note id="n1">A natural language name identifying the naming system. This name should be usable as an identifier for the module by machine processing applications such as code generation.</note>
+             </notes>
+        <source>UzbekistanHrmArgozSystem</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="NamingSystem-uzb-hrm-argoz" resname="NamingSystem.publisher">
+             <notes>
+               <note id="n1">The name of the organization or individual responsible for the release and ongoing maintenance of the naming system.</note>
+             </notes>
+        <source>Uzinfocom LLC</source>
+        <target>ООО «Единый интегратор Uzinfocom»</target>
+      </trans-unit>
+      <trans-unit id="NamingSystem-uzb-hrm-argoz" resname="ContactDetail.name">
+             <notes>
+               <note id="n1">The name of an individual to contact.</note>
+             </notes>
+        <source>Uzinfocom LLC</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="NamingSystem-uzb-hrm-argoz" resname="NamingSystem.responsible">
+             <notes>
+               <note id="n1">The name of the organization that is responsible for issuing identifiers or codes for this namespace and ensuring their non-collision.</note>
+             </notes>
+        <source>Agency for the Development of Public Service of Uzbekistan</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="NamingSystem-uzb-hrm-argoz" resname="Coding.display">
+             <notes>
+               <note id="n1">A representation of the meaning of the code in the system, following the rules of the system.</note>
+             </notes>
+        <source>National provider identifier</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="NamingSystem-uzb-hrm-argoz" resname="NamingSystem.description">
+             <notes>
+               <note id="n1">A free text natural language description of the naming system from a consumer's perspective. Details about what the namespace identifies including scope, granularity, version labeling, etc.</note>
+             </notes>
+        <source>Naming system for healthcare provider identifiers assigned by the Uzbekistan Human Resource Management (HRM) system</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="NamingSystem-uzb-hrm-argoz" resname="NamingSystem.usage">
+             <notes>
+               <note id="n1">Provides guidance on the use of the namespace, including the handling of formatting characters, use of upper vs. lower case, etc.</note>
+             </notes>
+        <source>Used for identifying healthcare providers, facilities, and resources within the Uzbekistan healthcare system</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="NamingSystem-uzb-hrm-argoz" resname="NamingSystem.uniqueId.value">
+             <notes>
+               <note id="n1">The string that should be sent over the wire to identify the code system or identifier system.</note>
+             </notes>
+        <source>https://hrm.argos.uz</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="NamingSystem-uzb-hrm-argoz" resname="NamingSystem.uniqueId.comment">
+             <notes>
+               <note id="n1">Notes about the past or intended usage of this identifier.</note>
+             </notes>
+        <source>This is the canonical URI for the Uzbekistan HRM Argoz system</source>
+        <target></target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

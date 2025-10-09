@@ -1,0 +1,41 @@
+{
+  "id" : "ValueSet-data-absent-reason-vs",
+  "baseLang" : "en",
+  "languages" : [
+    {
+      "targetLang" : "ru",
+      "entries" : [
+        {
+          "id" : "ValueSet.name",
+          "context" : "A natural language name identifying the value set. This name should be usable as an identifier for the module by machine processing applications such as code generation.",
+          "source" : "DataAbsentReasonVS",
+          "target" : null
+        },
+        {
+          "id" : "ValueSet.title",
+          "context" : "A short, descriptive, user-friendly title for the value set.",
+          "source" : "UZCore Data Absent Reason",
+          "target" : null
+        },
+        {
+          "id" : "ValueSet.publisher",
+          "context" : "The name of the organization or individual responsible for the release and ongoing maintenance of the value set.",
+          "source" : "Uzinfocom LLC",
+          "target" : "ООО «Единый интегратор Uzinfocom»"
+        },
+        {
+          "id" : "ContactDetail.name",
+          "context" : "The name of an individual to contact.",
+          "source" : "Uzinfocom LLC",
+          "target" : null
+        },
+        {
+          "id" : "ValueSet.description",
+          "context" : "A free text natural language description of the value set from a consumer's perspective. The textual description specifies the span of meanings for concepts to be included within the Value Set Expansion, and also may specify the intended use and limitations of the Value Set.",
+          "source" : "Defines the reasons why a value is missing in an observation within the Uzbekistan Core Implementation",
+          "target" : null
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+
+# A human language representation of the concept as seen/selected/uttered by the user who entered the data and/or which represents the intended meaning of the user.
+#: CodeableConcept.text
+msgid "Preventive services"
+msgstr ""
+
+# A human language representation of the concept as seen/selected/uttered by the user who entered the data and/or which represents the intended meaning of the user.
+#: CodeableConcept.text
+msgid "Preventive visit"
+msgstr ""
+
+# A human language representation of the concept as seen/selected/uttered by the user who entered the data and/or which represents the intended meaning of the user.
+#: CodeableConcept.text
+msgid "Primary diagnosis"
+msgstr ""
+

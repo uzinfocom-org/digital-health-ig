@@ -1,0 +1,3060 @@
+<?xml version="1.0" ?>
+
+<xliff xmlns="urn:oasis:names:tc:xliff:document:2.0" version="2.0">
+  <file source-language="en" target-language="ru" id="CodeSystem-location-types-cs" original="Resource CodeSystem-location-types-cs" datatype="KEYVALUEJSON">
+    <body>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.name">
+             <notes>
+               <note id="n1">A natural language name identifying the code system. This name should be usable as an identifier for the module by machine processing applications such as code generation.</note>
+             </notes>
+        <source>LocationTypesCS</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.title">
+             <notes>
+               <note id="n1">A short, descriptive, user-friendly title for the code system.</note>
+             </notes>
+        <source>Defines the possible location types</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.publisher">
+             <notes>
+               <note id="n1">The name of the organization or individual responsible for the release and ongoing maintenance of the code system.</note>
+             </notes>
+        <source>Uzinfocom LLC</source>
+        <target>ООО «Единый интегратор Uzinfocom»</target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="ContactDetail.name">
+             <notes>
+               <note id="n1">The name of an individual to contact.</note>
+             </notes>
+        <source>Uzinfocom LLC</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.description">
+             <notes>
+               <note id="n1">A free text natural language description of the code system from a consumer's perspective.</note>
+             </notes>
+        <source>Defines the possible location types in Uzbek and Russian</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Psixoterapiya bo'limi</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Отделение психотерапии</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Department of Psychotherapy</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Biopsiya diagnostikasi</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Биопсийная диагностика</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Biopsy diagnostics</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>O'smirlik va muddatli harbiy xizmatga chaqirilgan yoshlar kasalliklarini tibbiy ko'rikdan o'tkazish</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Врачебная экспертиза заболеваний подросткового возраста и призывной молодежи</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Medical examination of diseases of adolescence and conscript youth</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Tibbiy va mehnat ekspertizasi</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Врачебно-трудовая экспертиза</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Medical and labor examination</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Akupunktur</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Иглорефлексотерапия</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Acupuncture</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Klinik farmakologiya</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Клиническая фармакология</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Clinical pharmacology</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Fizioterapiya</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Лечебная физкультура</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Physiotherapy</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Manuel terapiya</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Мануальная терапия</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Manual therapy</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Tibbiy genetika</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Медицинская генетика</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Medical genetics</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Tibbiy psixologiya</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Медицинская психология</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Medical Psychology</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Umumiy jarrohlik</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Общая хирургия</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>General Surgery</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Operativ va diagnostik laparoskopiya</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Оперативно-диагностическая лапороскопия</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Operative and Diagnostic Laparoscopy</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Qorin bo'shlig'i onkoxirurgiyasi bo'limi</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Отделение абдоминальной онкохирургии</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Department of Abdominal Oncosurgery</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Qorin bo'shlig'i jarrohligi bo'limi</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Отделение абдоминальной хирургии</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Department of Abdominal Surgery</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Allergologiya va immunologiya bo'limi</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Отделение аллергологии и иммунологии</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Department of Allergology and Immunology</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Andrologiya va seksopatologiya bo'limi</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Отделение андрологии и сексопатологии</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Department of Andrology and Sexopathology</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Anesteziologiya va reanimatsiya bo'limi</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Отделение анестезиологии и реаниматологии</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Department of Anesthesiology and Resuscitation</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Vertebrologiya bo'limi</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Отделение Вертебрологии</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Department of Vertebrology</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Gastroenterologiya bo'limi</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Отделение гастроэнтерологии</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Department of Gastroenterology</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Gematologiya bo'limi</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Отделение гематологии</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Department of Hematology</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Geriatriya bo'limi</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Отделение гериатрии</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Department of Geriatrics</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Yiringli jarrohlik bo'limi</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Отделение гнойной хирургии</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Purulent Surgery Department</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Dermatovenerologiya bo'limi</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Отделение дерматовенерологии</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Dermatovenereology Department</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Bolalar va o'smirlar ginekologiyasi bo'limi</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Отделение детская и подростковой гинекологии</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Children's and Adolescent Gynecology Department</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Bolalar yuqumli kasalliklari bo'limi</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Отделение детских инфекционных болезней</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Children's Infectious Diseases Department</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Bolalar allergologiyasi bo'limi</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Отделение детской аллергологии</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Children's Allergology Department</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Bolalar anesteziologiyasi va reanimatsiyasi bo'limi</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Отделение детской анестезиологии и реаниматологии</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Children's Anesthesiology and Resuscitation Department</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Bolalar gastroenterologiyasi bo'limi</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Отделение детской гастроэнтерологии</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Children's Gastroenterology Department</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Отделение детской и подростковой гинекологии</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Bolalar va o'smirlar psixiatriyasi bo'limi</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Отделение детской и подростковой психиатрии</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Children's and Adolescent Psychiatry Department</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Bolalar kardiologiyasi va revmatologiya bo'limi</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Отделение детской кардиологии и ревматологии</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Children's Cardiology and Rheumatology Department</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Bolalar kardiojarrohligi bo'limi</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Отделение детской кардиохирургии</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Children's Cardiac Surgery Department</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Bolalar nevrologiyasi bo'limi</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Отделение детской неврология</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Children's Neurology Department</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Bolalar nefrologiyasi bo'limi</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Отделение детской нефрологии</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Children's Nephrology Department</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Bolalar onkologiyasi bo'limi (kimyoterapiya)</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Отделение детской онкологии (химиотерапия)</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Children's Oncology (Chemotherapy) Department</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Bolalar onkoxirurgiyasi bo'limi</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Отделение детской онкохирургии</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Children's Oncosurgery Department</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Bolalar oftalmologiyasi bo'limi</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Отделение детской офтальмологии</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Children's Ophthalmology Department</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Bolalar pulmonologiyasi bo'limi</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Отделение детской пульмонологии</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Children's Pulmonology Department</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Bolalar stomatologiyasi bo'limi</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Отделение детской стоматологической хирургии</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Children's Dental Surgery Department</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Bolalar terapevtik stomatologiya bo'limi</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Отделение детской терапевтической стоматологии</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Department of pediatric therapeutic dentistry</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Bolalar urologiyasi bo'limi</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Отделение детской урологии</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Department of pediatric urology</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Bolalar ftiziatriya bo'limi</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Отделение детской фтизиатрии</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Department of pediatric phthisiology</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Bolalar xirurgiyasi bo'limi</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Отделение детской хирургии</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Department of pediatric surgery</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Bolalar endokrinologiyasi bo'limi</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Отделение детской эндокринологии</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Department of pediatric endocrinology</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Reanimatsiya bo'limi</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Отделение интенсивной терапии</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Department of intensive care</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Interventsion kardiologiya bo'limi (angiokardiografiya va interventsion muolajalar)</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Отделение интервенционной кардиологии (ангиокардиография и интервенционные вмешательства)</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Department of interventional cardiology (angiocardiography and interventional procedures)</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Interventsion radiologiya bo'limi</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Отделение интервенционной радиологии</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Department of interventional radiology</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Yuqumli kasalliklar bo'limi</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Отделение инфекционных болезней</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Department of infectious diseases</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Kardiojarrohlik bo'limi</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Отделение кардиохирургии</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Department of cardiac surgery</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Klinik patofizyologiya bo'limi</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Отделение клинической патофизиологии</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Department of clinical pathophysiology</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Proktologiya bo'limi</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Отделение колопроктологии</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Department of proctology</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Kompyuter tomografiyasi bo'limi</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Отделение компьютерной томографии</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Department of computed tomography</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Radiatsiya terapiyasi bo'limi</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Отделение лучевой терапии</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Department of radiation therapy</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Magnit-rezonans tomografiya bo'limi</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Отделение магнитно-резонаненой томографии</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Department of magnetic resonance imaging</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Mammologiya bo'limi</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Отделение маммология</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Mammology Department</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Mikrojarrohlik bo'limi</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Отделение микрохирургии</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Microsurgery Department</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Ko'z mikroxirurgiyasi bo'limi</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Отделение микрохирургии глаза</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Eye Microsurgery Department</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Nevrologiya bo'limi</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Отделение неврологии</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Neurology Department</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Neyro-oftalmologiya bo'limi</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Отделение нейроофтальмологии</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Neuro-ophthalmology Department</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Neyrofiziologiya bo'limi</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Отделение нейрофизиологии</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Neurophysiology Department</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Neonatal jarrohlik bo'limi</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Отделение неонатальной хирургии</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Neonatology Department</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Neonatologiya bo'limi</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Отделение неонатологии</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Emergency Cardiology and Cardiac Intensive Care Department</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Shoshilinch kardiologiya va yurak reanimatsiyasi bo'limi</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Отделение неотложной кардиологии и кардиореанимации</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Nephrology Department</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Nefrologiya bo'limi</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Отделение нефрологии</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>General Oncology Department</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Umumiy onkologiya bo'limi</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Отделение общей онкологии</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Oncogynecology Department</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Onkoginekologiya bo'limi</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Отделение онкогинекологии</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Oncocoloproctology Department</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Onkokoloproktologiya bo'limi</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Отделение онкоколопроктологии</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Onco-ophthalmology Department</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Onko-oftalmologiya bo'limi</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Отделение онкоофтальмологии</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Oncourology Department</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Onkurologiya bo'limi</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Отделение онкоурологии</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Bosh va bo'yin o'smalari bo'limi</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Отделение опухоли головы и шеи</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Head and Neck Tumor Department</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Tayanch-harakat tizimi o'smalari bo'limi</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Отделение опухоли опорно-двигательного аппарата</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Musculoskeletal Tumor Department</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Ortopediya bo'limi</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Отделение ортопедии</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Orthopedics Department</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Otorinolaringologiya bo'limi</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Отделение оториноларингологии</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Otorhinolaryngology Department</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Oftalmologiya bo'limi</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Отделение офтальмология</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Ophthalmology Department</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Patologik anatomiya bo'limi</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Отделение патологической анатомии</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Department of Pathological Anatomy</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Pediatriya bo'limi</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Отделение педиатрии</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Department of Pediatrics</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Plastik jarrohlik bo'limi</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Отделение пластической хирургии</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Department of Plastic Surgery</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Pulmonologiya bo'limi</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Отделение пульмонологии</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Department of Pulmonology</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Revmatologiya bo'limi</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Отделение ревматологии</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Department of Rheumatology</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Radiologiya bo'limi</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Отделение рентгенологии</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Department of Radiology</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Qon tomir jarrohligi bo'limi</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Отделение сосудистой хирургии</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Department of Vascular Surgery</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Orqa miya neyroxirurgiyasi bo'limi</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Отделение спинальной нейрохирургии</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Department of Spinal Neurosurgery</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Toksikologiya bo'limi</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Отделение токсикологии</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Department of Toxicology</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Torakal onkojarrohlik bo'limi</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Отделение торакальной онкохирургии</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Department of Thoracic Oncosurgery</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Torakal jarrohlik bo'limi</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Отделение торакальной хирургии</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Department of Thoracic Surgery</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Travmatologiya bo'limi</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Отделение травматология</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Department of Traumatology</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Transplantologiya bo'limi</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Отделение трансплантологии</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Department of Transplantology</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Transfuziologiya bo'limi</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Отделение трансфузиологии</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Department of Transfusiology</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Urologiya bo'limi</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Отделение урологии</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Department of Urology</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Ftiziatriya bo'limi</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Отделение фтизиатрии</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Department of Phthisiology</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Skelet sistemasining ftiziatriya bo'limi</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Отделение фтизиатрии костной системы</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Department of phthisiology of the skeletal system</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Ftizioginekologiya bo'limi</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Отделение фтизиогинекологии</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Department of phthisiogynecology</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Ftizioftalmologiya bo'limi</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Отделение фтизиоофтальмологии</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Department of phthisiophthalmology</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Ftiziurologiya bo'limi</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Отделение фтизиоурологии</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Department of phthisiourology</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Ftiziojarrohlik bo'limi</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Отделение фтизиохирургии</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Department of phthisiosurgery</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Funktsional diagnostika bo'limi</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Отделение функциональной диагностики</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Department of functional diagnostics</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Kimyoterapiya bo'limi</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Отделение химиотерапия</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Department of chemotherapy</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Jarrohlik bo'limi</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Отделение хирургия</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Department of surgery</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Sitologik diagnostika bo'limi</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Отделение цитологической диагностики</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Department of cytological diagnostics</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Immunohistokimyoviy diagnostika bo'limi</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Отделение иммуногистохимической диагностики</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Department of immunohistochemical diagnostics</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Maksillofasiyal jarrohlik bo'limi</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Отделение челюстно-лицевой хирургии</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Department of maxillofacial surgery</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Favqulodda kardiologiya bo'limi</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Отделение экстренной кардиологии</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Department of emergency cardiology</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Favqulodda vaziyatlar bo'limi</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Отделение экстренной терапии</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Department of emergency therapy</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Favqulodda jarrohlik bo'limi</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Отделение экстренной хирургии</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Department of emergency surgery</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Endovaskulyar neyroxirurgiya bo'limi</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Отделение эндоваекулярной нейрохирургии</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Department of endovascular neurosurgery</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Endokrinologiya bo'limi</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Отделение эндокринологии</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Department of endocrinology</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Endourologiya bo'limi</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Отделение эндоурологии</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Department of endourology</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Ortodontiya</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Ортодонтия</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Orthodontics</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Periodontologiya</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Пародонтология</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Periodontology</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Reproduktologiya</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Репродуктология</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Reproductive medicine</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Sport tibbiyoti</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Спортивная медицина</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Sports medicine</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Stomatologiya</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Стоматология</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Dentistry</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Umumiy stomatologiya</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Стоматология общая</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>General dentistry</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Sud-psixiatriya ekspertizasi</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Судебно-психиатрическая экспертиза</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Forensic psychiatric examination</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>O'z joniga qasd qilish</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Суицидология</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Suicidology</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Ultratovush diagnostikasi</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Ультразвуковая диагноетика</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Ultrasound diagnostics</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Физиотерапия</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Homiladorlik patologiyasi bo'limi</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Отделение патологии беременности</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Department of pregnancy pathology</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Tish jarrohlik</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Стоматологическая хирургия</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Dental surgery</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Tug'ruqxona</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Родильное отделение</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Maternity department</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Akusherlik bo'limi</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Акушерское отделение</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Obstetric department</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Erta tug'ilgan chaqaloqlarni parvarish qilish bo'limi</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Отделение выхаживания недонощенных новорожденных</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Department of nursing premature newborns</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Neonatal bo'lim</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Отделение новорожденных</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Department of newborns</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Qabul bo'limi</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Приемное отделение</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Admission department</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Anesteziologiya va neonatal reanimatsiya bo'limi</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Отделение анестезиологии и реанимации новорожденных</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Department of anesthesiology and resuscitation of newborns</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Department of neonatal surgery</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Markazlashtirilgan sterilizatsiya bo'limi</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Отделение централизованной стерилизации</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Department of centralized sterilization</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Bakteriologik laboratoriya</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Бактериологическая лаборатория</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Bacteriological laboratory</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Kir yuvish bo'limi</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Прачечное отделение</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Laundry department</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Eritmalarni tayyorlash bo'limi</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Отделение приготовления растворов</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Department of solution preparation</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Ambulatoriya bo'limi</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Поликлиническое отделение</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Outpatient department</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Kunduzgi shifoxona bo'limi</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Отделение дневного стационара</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Day hospital department</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Pozitron emissiya tomografiyasi bo'limi</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Отделение позитронно-эмиссионной томографии</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Department of positron emission tomography</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Klinik diagnostika laboratoriyasi</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Клинико-диагностическая лаборатория</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Clinical diagnostic laboratory</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Biokimyoviy laboratoriya</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Биохимическая лаборатория</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Biochemical laboratory</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Mikrobiologik laboratoriya</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Микробиологическая лаборатория</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Microbiological laboratory</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Immunologik laboratoriya</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Иммунологическая лаборатория</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Immunological laboratory</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Patomorfologik laboratoriya</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Патоморфологическая лаборатория</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Pathomorphological laboratory</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Sitologiya laboratoriyasi</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Цитологическая лаборатория</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Cytological laboratory</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Genetika laboratoriyasi</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Генетическая лаборатория</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Genetic laboratory</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Molekulyar biologiya laboratoriyasi</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Молекулярно-биологическая лаборатория</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Molecular biological laboratory</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Radionuklid diagnostikasi bo'limi</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Отделение радионуклидной диагностики</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Department of radionuclide diagnostics</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Narkologiya bo'limi</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Отделение наркологии</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Department of narcology</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Terapiya bo'limi</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Отделение терапии</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Department of therapy</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Ginekologiya bo'limi</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Отделение гинекологии</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Department of gynecology</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Virusologiya bo'limi</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Отделение вирусологии</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-location-types-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Department of virology</source>
+        <target></target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

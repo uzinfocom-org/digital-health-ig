@@ -2,12 +2,9 @@ CodeSystem: NationalityCS
 Id: nationality-cs
 Title: "Nationality"
 Description: "Defines a nationality of a person as used in Uzbekistan"
-* ^url = "https://terminology.medcore.uz/CodeSystem/nationality-cs"
-* ^version = "1.0.0"
+* ^url = "https://terminology.dhp.uz/fhir/core/CodeSystem/nationality-cs"
 * ^status = #active
 * ^experimental = true
-* ^date = "2025-06-11"
-* ^publisher = "Uzinfocom"
 * ^content = #complete
 * ^language = #uz
 * ^caseSensitive = true

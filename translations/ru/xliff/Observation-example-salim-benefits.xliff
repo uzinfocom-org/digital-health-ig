@@ -1,0 +1,22 @@
+<?xml version="1.0" ?>
+
+<xliff xmlns="urn:oasis:names:tc:xliff:document:2.0" version="2.0">
+  <file source-language="en" target-language="ru" id="Observation-example-salim-benefits" original="Resource Observation-example-salim-benefits" datatype="KEYVALUEJSON">
+    <body>
+      <trans-unit id="Observation-example-salim-benefits" resname="Coding.display">
+             <notes>
+               <note id="n1">A representation of the meaning of the code in the system, following the rules of the system.</note>
+             </notes>
+        <source>Eligible for benefit</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Observation-example-salim-benefits" resname="Coding.display">
+             <notes>
+               <note id="n1">A representation of the meaning of the code in the system, following the rules of the system.</note>
+             </notes>
+        <source>Chin yetimlar</source>
+        <target></target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

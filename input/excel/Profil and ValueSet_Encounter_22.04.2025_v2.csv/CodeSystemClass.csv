@@ -1,0 +1,8 @@
+CODE	UZ	RU	EN
+ IMP		стационарная встреча	inpatient
+AMB		амбулаторный	ambulatory
+OBSENC (нужен ли этот код)		Наблюдение	observation encounter
+EMER		неотложная помощь (03)	emergency
+		патронаж	
+VR		виртуальный (телемедицина)	virtual
+HH (тот же патронаж?)		визит на дом	home visit

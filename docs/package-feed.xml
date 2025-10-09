@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" 
+     xmlns:content="http://purl.org/rss/1.0/modules/content/" 
+     xmlns:fhir="http://hl7.org/fhir/feed" 
+     xmlns:atom="http://www.w3.org/2005/Atom" 
+     version="2.0">
+  <channel>
+    <title>DHP Implementation Guide Packages</title>
+    <description>FHIR Packages published for DHP</description>
+    <link>https://vadi2.github.io/DHP-temp/package-feed.xml</link>
+    <generator>Manual</generator>
+    <lastBuildDate>Wed, 27 Aug 2025 12:00:00 GMT</lastBuildDate>
+    <atom:link href="https://vadi2.github.io/DHP-temp/package-feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Wed, 27 Aug 2025 12:00:00 GMT</pubDate>
+    <language>en</language>
+    
+     <item>
+       <title>uz.dhp.core#0.2.0</title>
+       <description>DHP Implementation Guide Package version 0.2.0</description>
+       <link>https://github.com/vadi2/DHP-temp/releases/download/0.2.0/package.tgz</link>
+       <guid isPermaLink="true">https://github.com/vadi2/DHP-temp/releases/download/0.2.0/package.tgz</guid>
+       <dc:creator>vadi2</dc:creator>
+       <fhir:version>5.0.0</fhir:version>
+       <fhir:kind>IG</fhir:kind>
+       <pubDate>Wed, 27 Aug 2025 12:00:00 +0000</pubDate>
+     </item>
+
+     <item>
+       <title>uz.dhp.core#0.3.0</title>
+       <description>DHP Implementation Guide Package version 0.3.0</description>
+       <link>https://github.com/vadi2/DHP-temp/releases/download/0.3.0/package.tgz</link>
+       <guid isPermaLink="true">https://github.com/vadi2/DHP-temp/releases/download/0.3.0/package.tgz</guid>
+       <dc:creator>vadi2</dc:creator>
+       <fhir:version>5.0.0</fhir:version>
+       <fhir:kind>IG</fhir:kind>
+       <pubDate>Fri, 05 Sep 2025 08:17:22 +0000</pubDate>
+     </item>
+       
+  </channel>
+</rss>

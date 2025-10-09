@@ -1,0 +1,56 @@
+
+# A natural language name identifying the capability statement. This name should be usable as an identifier for the module by machine processing applications such as code generation.
+#: CapabilityStatement.name
+msgid "DHPCapabilityStatement"
+msgstr ""
+
+# A short, descriptive, user-friendly title for the capability statement.
+#: CapabilityStatement.title
+msgid "DHP CapabilityStatement"
+msgstr ""
+
+# The name of the organization or individual responsible for the release and ongoing maintenance of the capability statement.
+#: CapabilityStatement.publisher
+msgid "Uzinfocom LLC"
+msgstr "ООО «Единый интегратор Uzinfocom»"
+
+# The name of an individual to contact.
+#: ContactDetail.name
+msgid "Uzinfocom LLC"
+msgstr ""
+
+# A free text natural language description of the capability statement from a consumer's perspective. Typically, this is used when the capability statement describes a desired rather than an actual solution, for example as a formal expression of requirements as part of an RFP.
+#: CapabilityStatement.description
+msgid "DHP platform capability statement, describing the supported resources, profiles, and searchparameters"
+msgstr ""
+
+# Information about the specific installation that this capability statement relates to.
+#: CapabilityStatement.implementation.description
+msgid "FHIR R5 Server"
+msgstr ""
+
+# The name of the operation or query. For an operation, this name is prefixed with $ and used in the URL. For a query, this is the name used in the _query parameter when the query is called. This SHOULD be the same as the OperationDefinition.code of the defining OperationDefinition.  However, it can sometimes differ if necessary to disambiguate when a server supports multiple OperationDefinition that happen to share the same code.
+#: CapabilityStatement.rest.resource.operation.name
+msgid "subsumes"
+msgstr ""
+
+# The name of the operation or query. For an operation, this name is prefixed with $ and used in the URL. For a query, this is the name used in the _query parameter when the query is called. This SHOULD be the same as the OperationDefinition.code of the defining OperationDefinition.  However, it can sometimes differ if necessary to disambiguate when a server supports multiple OperationDefinition that happen to share the same code.
+#: CapabilityStatement.rest.resource.operation.name
+msgid "lookup"
+msgstr ""
+
+# The name of the operation or query. For an operation, this name is prefixed with $ and used in the URL. For a query, this is the name used in the _query parameter when the query is called. This SHOULD be the same as the OperationDefinition.code of the defining OperationDefinition.  However, it can sometimes differ if necessary to disambiguate when a server supports multiple OperationDefinition that happen to share the same code.
+#: CapabilityStatement.rest.resource.operation.name
+msgid "validate-code"
+msgstr ""
+
+# The name of the operation or query. For an operation, this name is prefixed with $ and used in the URL. For a query, this is the name used in the _query parameter when the query is called. This SHOULD be the same as the OperationDefinition.code of the defining OperationDefinition.  However, it can sometimes differ if necessary to disambiguate when a server supports multiple OperationDefinition that happen to share the same code.
+#: CapabilityStatement.rest.resource.operation.name
+msgid "expand"
+msgstr ""
+
+# The name of the operation or query. For an operation, this name is prefixed with $ and used in the URL. For a query, this is the name used in the _query parameter when the query is called. This SHOULD be the same as the OperationDefinition.code of the defining OperationDefinition.  However, it can sometimes differ if necessary to disambiguate when a server supports multiple OperationDefinition that happen to share the same code.
+#: CapabilityStatement.rest.resource.operation.name
+msgid "translate"
+msgstr ""
+

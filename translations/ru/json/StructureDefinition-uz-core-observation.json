@@ -1,0 +1,35 @@
+{
+  "id" : "StructureDefinition-uz-core-observation",
+  "baseLang" : "en",
+  "languages" : [
+    {
+      "targetLang" : "ru",
+      "entries" : [
+        {
+          "id" : "StructureDefinition.name",
+          "context" : "A natural language name identifying the structure definition. This name should be usable as an identifier for the module by machine processing applications such as code generation.",
+          "source" : "UZCoreObservation",
+          "target" : "UZCoreObservation"
+        },
+        {
+          "id" : "StructureDefinition.title",
+          "context" : "A short, descriptive, user-friendly title for the structure definition.",
+          "source" : "Uz Core Observation",
+          "target" : "Uz Core Observation"
+        },
+        {
+          "id" : "StructureDefinition.publisher",
+          "context" : "The name of the organization or individual responsible for the release and ongoing maintenance of the structure definition.",
+          "source" : "Uzinfocom LLC",
+          "target" : "ООО «Единый интегратор Uzinfocom»"
+        },
+        {
+          "id" : "StructureDefinition.contact.name",
+          "context" : "The name of an individual to contact.",
+          "source" : "Uzinfocom LLC",
+          "target" : "Uzinfocom LLC"
+        }
+      ]
+    }
+  ]
+}

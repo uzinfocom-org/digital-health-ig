@@ -2,7 +2,7 @@ ValueSet: LocationTypesVS
 Id: location-types-vs
 Title: "Location types"
 Description: "Location types defined by the Ministry of Health of the Republic of Uzbekistan"
-* ^url = "https://terminology.medcore.uz/ValueSet/location-types-vs"
+* ^url = "https://terminology.dhp.uz/fhir/core/ValueSet/location-types-vs"
 * ^experimental = true
 * ^language = #uz
 * include codes from system location-types-cs

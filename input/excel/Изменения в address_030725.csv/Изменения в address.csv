@@ -1,0 +1,15 @@
+Name		Flags		Cardinality	example 2	document	Type	Description & Constraints		ValueSets			
+address		Σ	  D	0..*			Address			System	CodeSystem	Code	Display
+	type	Σ	  D	0..1	temp		code	"Определяет тип адреса
+Binding: https://terminology.medcore.uz/ValueSet/AddressType (required)"		ValueSet/AddressType	CodeSystemaddresstype	 home, temp	Тип адреса
+	text	Σ S	  D	0..1	mahallasi Dilobod, Katortol ko‘chasi, 9-uy, 15-xonadon 			Текстовая часть адреса, предоставляемая ГЦП. Название махалли, улицы,  номер дома, номер квартиры		ValueSet/countries	CodeSystemCountries_Digital_MVD	все имеющиеся коды, кроме кода stateless	Код страны
+	line	Σ S	  D	0..1	Katortol ko‘chasi		string	Текстовае название улицы, предоставляемое ГЦП		ValueSet/Mahalla	CodeSystemMahalla	все имеющиеся коды	Код махалли
+	city	Σ	  D	0..1	103-0104	Ведомственный классификатор Махаллей (Сход граждан)	code	"Код махалли, 
+Binding: https://terminology.medcore.uz/ValueSet/Mahalla"		ValueSet/District_City	CodeSystemDistrict_City	все имеющиеся коды	Код район/город
+	district	Σ	  D	0..1	1726294	Ведомственный классификатор (СОАТО)	code	"Код района/города 
+Binding: https://terminology.medcore.uz/ValueSet/District_City"		ValueSet/Region	CodeSystemRegion	все имеющиеся коды	Код области
+	state	Σ	  D	0..1	1726	Ведомственный классификатор (СОАТО)	code	"Код области 
+Binding: https://terminology.medcore.uz/ValueSet/Region"					
+	country	Σ	  D	0..1	182	Классификатор стран мира МВД	code	"Код страны, 
+Binding: https://terminology.medcore.uz/ValueSet/countries"					
+	period	Σ	  D	0..1			Period	Период времени, когда адрес использовался/используется					

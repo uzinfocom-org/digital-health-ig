@@ -1,0 +1,589 @@
+<?xml version="1.0" ?>
+
+<xliff xmlns="urn:oasis:names:tc:xliff:document:2.0" version="2.0">
+  <file source-language="en" target-language="ru" id="CodeSystem-license-certificate-cs" original="Resource CodeSystem-license-certificate-cs" datatype="KEYVALUEJSON">
+    <body>
+      <trans-unit id="CodeSystem-license-certificate-cs" resname="CodeSystem.name">
+             <notes>
+               <note id="n1">A natural language name identifying the code system. This name should be usable as an identifier for the module by machine processing applications such as code generation.</note>
+             </notes>
+        <source>LicenseCertificateCS</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-license-certificate-cs" resname="CodeSystem.title">
+             <notes>
+               <note id="n1">A short, descriptive, user-friendly title for the code system.</note>
+             </notes>
+        <source>License, certificate, degree translations</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-license-certificate-cs" resname="CodeSystem.publisher">
+             <notes>
+               <note id="n1">The name of the organization or individual responsible for the release and ongoing maintenance of the code system.</note>
+             </notes>
+        <source>Uzinfocom LLC</source>
+        <target>ООО «Единый интегратор Uzinfocom»</target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-license-certificate-cs" resname="ContactDetail.name">
+             <notes>
+               <note id="n1">The name of an individual to contact.</note>
+             </notes>
+        <source>Uzinfocom LLC</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-license-certificate-cs" resname="CodeSystem.description">
+             <notes>
+               <note id="n1">A free text natural language description of the code system from a consumer's perspective.</note>
+             </notes>
+        <source>License, certificate, degree supplement with translations in Uzbek and Russian</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-license-certificate-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Медсестра высшей квалификации</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-license-certificate-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Ilg'or amaliyot hamshirasi</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-license-certificate-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Бакалавр делового администрирования</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-license-certificate-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Biznes boshqaruvi bakalavri</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-license-certificate-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Бакалавр сестринского дела</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-license-certificate-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Hamshiralik ishi bakalavri</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-license-certificate-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Бакалавр</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-license-certificate-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>fanlar bo'yicha bakalavr</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-license-certificate-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Бакалавр наук - сестринское дело</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-license-certificate-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Fan bo'yicha bakalavr - Hamshiralik ishi</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-license-certificate-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Сертификат</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-license-certificate-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Sertifikat</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-license-certificate-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Сертифицированный практикующий врач-медсестра для взрослых</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-license-certificate-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Sertifikatlangan kattalar hamshirasi</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-license-certificate-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Сертифицированный медицинский ассистент</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-license-certificate-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Sertifikatlangan tibbiy yordamchi</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-license-certificate-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Сертифицированная практикующая медсестра</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-license-certificate-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Sertifikatlangan hamshira amaliyotchisi</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-license-certificate-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Сертифицированная медсестра-акушерка</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-license-certificate-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Sertifikatlangan hamshira doya</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-license-certificate-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Сертифицированная медсестра</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-license-certificate-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Sertifikatlangan ro'yxatdan o'tgan hamshira</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-license-certificate-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Сертифицированный специалист по медсестринскому делу</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-license-certificate-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Sertifikatlangan hamshira mutaxassisi</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-license-certificate-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Сертифицированный детский практикующий врач-медсестра</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-license-certificate-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Sertifikatlangan pediatriya hamshirasi</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-license-certificate-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Сертифицированный регистратор опухолей</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-license-certificate-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Sertifikatlangan o'smalarni ro'yxatga oluvchi</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-license-certificate-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Диплом</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-license-certificate-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Diplom</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-license-certificate-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Доктор фармацевтических наук</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-license-certificate-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Farmatsevtika fanlari doktori</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-license-certificate-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Доктор технических наук</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-license-certificate-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Muhandislik fanlari doktori</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-license-certificate-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Доктор наук</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-license-certificate-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Fan doktori</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-license-certificate-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Доктор медицины</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-license-certificate-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Tibbiyot fanlari doktori</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-license-certificate-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Доктор остеопатии</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-license-certificate-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Osteopatiya doktori</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-license-certificate-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Врач скорой медицинской помощи</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-license-certificate-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Shoshilinch tibbiy yordam bo'yicha mutaxassis</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-license-certificate-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Врач скорой медицинской помощи - фельдшер</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-license-certificate-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Shoshilinch tibbiy yordam bo'yicha texnik - feldsher</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-license-certificate-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Практикующая медсестра семейной практики</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-license-certificate-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Oilaviy amaliyot hamshirasi</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-license-certificate-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Выпускник средней школы</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-license-certificate-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Oliy maktab bitiruvchisi</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-license-certificate-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Магистр делового администрирования</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-license-certificate-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Biznes boshqaruvi magistri</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-license-certificate-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Магистр образования</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-license-certificate-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Ta'lim magistri</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-license-certificate-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Магистр электротехники</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-license-certificate-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Elektr texnikasi magistri</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-license-certificate-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Магистр инженерных наук</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-license-certificate-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Muhandislik magistri</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-license-certificate-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Магистр изящных искусств</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-license-certificate-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Tasviriy san'at magistri</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-license-certificate-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Магистр наук по сестринскому делу</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-license-certificate-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Fan magistri - hamshiralik ishi</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-license-certificate-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Медицинский ассистент</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-license-certificate-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Tibbiy yordamchi</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-license-certificate-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Медицинский техник</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-license-certificate-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Tibbiyot texnik</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-license-certificate-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Практикующая медсестра</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-license-certificate-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Amaliyotchi hamshira</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-license-certificate-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Помощник врача</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-license-certificate-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Shifokor yordamchisi</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-license-certificate-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Зарегистрированный медицинский ассистент</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-license-certificate-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Ro'yxatdan o'tgan tibbiy yordamchi</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-license-certificate-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Дипломированная медсестра</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-license-certificate-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Ro'yxatdan o'tgan hamshira</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-license-certificate-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Зарегистрированный фармацевт</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-license-certificate-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Ro'yxatdan o'tgan farmatsevt</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-license-certificate-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Секретарский сертификат</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-license-certificate-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Kotiblik guvohnomasi</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-license-certificate-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Выпускник профессионального училища</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-license-certificate-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Savdo maktabi bitiruvchisi</source>
+        <target></target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

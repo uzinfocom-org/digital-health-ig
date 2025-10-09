@@ -3,7 +3,7 @@ Id: object-role-vs
 Title: "Object role"
 Description: "Defines object's role in Uzbek and Russian"
 * ^experimental = true
-* ^url = "https://terminology.medcore.uz/ValueSet/object-role-vs"
+* ^url = "https://terminology.dhp.uz/fhir/core/ValueSet/object-role-vs"
 * ^language = #uz
 * $object-role#1
 * $object-role#1 ^designation[0].language = #ru

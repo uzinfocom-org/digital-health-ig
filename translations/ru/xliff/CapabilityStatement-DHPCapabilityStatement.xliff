@@ -1,0 +1,85 @@
+<?xml version="1.0" ?>
+
+<xliff xmlns="urn:oasis:names:tc:xliff:document:2.0" version="2.0">
+  <file source-language="en" target-language="ru" id="CapabilityStatement-DHPCapabilityStatement" original="Resource CapabilityStatement-DHPCapabilityStatement" datatype="KEYVALUEJSON">
+    <body>
+      <trans-unit id="CapabilityStatement-DHPCapabilityStatement" resname="CapabilityStatement.name">
+             <notes>
+               <note id="n1">A natural language name identifying the capability statement. This name should be usable as an identifier for the module by machine processing applications such as code generation.</note>
+             </notes>
+        <source>DHPCapabilityStatement</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CapabilityStatement-DHPCapabilityStatement" resname="CapabilityStatement.title">
+             <notes>
+               <note id="n1">A short, descriptive, user-friendly title for the capability statement.</note>
+             </notes>
+        <source>DHP CapabilityStatement</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CapabilityStatement-DHPCapabilityStatement" resname="CapabilityStatement.publisher">
+             <notes>
+               <note id="n1">The name of the organization or individual responsible for the release and ongoing maintenance of the capability statement.</note>
+             </notes>
+        <source>Uzinfocom LLC</source>
+        <target>ООО «Единый интегратор Uzinfocom»</target>
+      </trans-unit>
+      <trans-unit id="CapabilityStatement-DHPCapabilityStatement" resname="ContactDetail.name">
+             <notes>
+               <note id="n1">The name of an individual to contact.</note>
+             </notes>
+        <source>Uzinfocom LLC</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CapabilityStatement-DHPCapabilityStatement" resname="CapabilityStatement.description">
+             <notes>
+               <note id="n1">A free text natural language description of the capability statement from a consumer's perspective. Typically, this is used when the capability statement describes a desired rather than an actual solution, for example as a formal expression of requirements as part of an RFP.</note>
+             </notes>
+        <source>DHP platform capability statement, describing the supported resources, profiles, and searchparameters</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CapabilityStatement-DHPCapabilityStatement" resname="CapabilityStatement.implementation.description">
+             <notes>
+               <note id="n1">Information about the specific installation that this capability statement relates to.</note>
+             </notes>
+        <source>FHIR R5 Server</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CapabilityStatement-DHPCapabilityStatement" resname="CapabilityStatement.rest.resource.operation.name">
+             <notes>
+               <note id="n1">The name of the operation or query. For an operation, this name is prefixed with $ and used in the URL. For a query, this is the name used in the _query parameter when the query is called. This SHOULD be the same as the OperationDefinition.code of the defining OperationDefinition.  However, it can sometimes differ if necessary to disambiguate when a server supports multiple OperationDefinition that happen to share the same code.</note>
+             </notes>
+        <source>subsumes</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CapabilityStatement-DHPCapabilityStatement" resname="CapabilityStatement.rest.resource.operation.name">
+             <notes>
+               <note id="n1">The name of the operation or query. For an operation, this name is prefixed with $ and used in the URL. For a query, this is the name used in the _query parameter when the query is called. This SHOULD be the same as the OperationDefinition.code of the defining OperationDefinition.  However, it can sometimes differ if necessary to disambiguate when a server supports multiple OperationDefinition that happen to share the same code.</note>
+             </notes>
+        <source>lookup</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CapabilityStatement-DHPCapabilityStatement" resname="CapabilityStatement.rest.resource.operation.name">
+             <notes>
+               <note id="n1">The name of the operation or query. For an operation, this name is prefixed with $ and used in the URL. For a query, this is the name used in the _query parameter when the query is called. This SHOULD be the same as the OperationDefinition.code of the defining OperationDefinition.  However, it can sometimes differ if necessary to disambiguate when a server supports multiple OperationDefinition that happen to share the same code.</note>
+             </notes>
+        <source>validate-code</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CapabilityStatement-DHPCapabilityStatement" resname="CapabilityStatement.rest.resource.operation.name">
+             <notes>
+               <note id="n1">The name of the operation or query. For an operation, this name is prefixed with $ and used in the URL. For a query, this is the name used in the _query parameter when the query is called. This SHOULD be the same as the OperationDefinition.code of the defining OperationDefinition.  However, it can sometimes differ if necessary to disambiguate when a server supports multiple OperationDefinition that happen to share the same code.</note>
+             </notes>
+        <source>expand</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CapabilityStatement-DHPCapabilityStatement" resname="CapabilityStatement.rest.resource.operation.name">
+             <notes>
+               <note id="n1">The name of the operation or query. For an operation, this name is prefixed with $ and used in the URL. For a query, this is the name used in the _query parameter when the query is called. This SHOULD be the same as the OperationDefinition.code of the defining OperationDefinition.  However, it can sometimes differ if necessary to disambiguate when a server supports multiple OperationDefinition that happen to share the same code.</note>
+             </notes>
+        <source>translate</source>
+        <target></target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

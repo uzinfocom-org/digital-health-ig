@@ -1,0 +1,442 @@
+<?xml version="1.0" ?>
+
+<xliff xmlns="urn:oasis:names:tc:xliff:document:2.0" version="2.0">
+  <file source-language="en" target-language="ru" id="CodeSystem-benefits-cs" original="Resource CodeSystem-benefits-cs" datatype="KEYVALUEJSON">
+    <body>
+      <trans-unit id="CodeSystem-benefits-cs" resname="CodeSystem.name">
+             <notes>
+               <note id="n1">A natural language name identifying the code system. This name should be usable as an identifier for the module by machine processing applications such as code generation.</note>
+             </notes>
+        <source>BenefitsCS</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-benefits-cs" resname="CodeSystem.title">
+             <notes>
+               <note id="n1">A short, descriptive, user-friendly title for the code system.</note>
+             </notes>
+        <source>Types of benefits</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-benefits-cs" resname="CodeSystem.publisher">
+             <notes>
+               <note id="n1">The name of the organization or individual responsible for the release and ongoing maintenance of the code system.</note>
+             </notes>
+        <source>Uzinfocom LLC</source>
+        <target>ООО «Единый интегратор Uzinfocom»</target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-benefits-cs" resname="ContactDetail.name">
+             <notes>
+               <note id="n1">The name of an individual to contact.</note>
+             </notes>
+        <source>Uzinfocom LLC</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-benefits-cs" resname="CodeSystem.description">
+             <notes>
+               <note id="n1">A free text natural language description of the code system from a consumer's perspective.</note>
+             </notes>
+        <source>Types of benefits in Uzbekistan</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-benefits-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Bolalikdan nogironligi bo'lgan shaxslar</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-benefits-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Инвалиды с детства</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-benefits-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Disabled since childhood</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-benefits-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Chin yetimlar</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-benefits-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Круглые сироты</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-benefits-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Round Orphans</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-benefits-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>I va II guruh nogironligi bo'lgan shaxslar</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-benefits-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Инвалиды I и II групп</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-benefits-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Disabled I and II groups</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-benefits-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>1941 — 1945-yillardagi urush oqibatida nogiron bo'lgan shaxslar va uning qatnashchilari, shuningdek, ularga tenglashtirilgan shaxslar</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-benefits-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Инвалиды и участники войны 1941 — 1945 годов, а также лица, приравненные к ним</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-benefits-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Disabled persons and war participants of 1941-1945, as well as persons treated as such</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-benefits-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Yoshga oid pensiyaga chiqqan ishlamaydigan shaxslar</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-benefits-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Не работающие пенсионеры по возрасту</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-benefits-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Unemployed pensioners by age</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-benefits-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>1941 — 1945-yillardagi urush davrida mehnat jabhasining qatnashchilari</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-benefits-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Участники трудового фронта в годы войны 1941 — 1945 годов</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-benefits-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Labour front members during the 1941-1945 war</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-benefits-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Chernobil AESi falokatini tugatishda ishtirok etgan shaxslar jumlasiga kiruvchi nogironligi bo'lgan shaxslar</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-benefits-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Инвалиды из числа лиц, принимавших участие в ликвидации аварии на Чернобыльской АЭС</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-benefits-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Disabled persons among those who took part in the Chernobyl accident</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-benefits-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Baynalmilalchi-jangchilar</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-benefits-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Воины-интернационалисты</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-benefits-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Internationalist Warriors</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-benefits-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>&quot;Ijtimoiy himoya yagona reyestri&quot; axborot tizimi orqali kam ta'minlangan deb e'tirof etilgan oilalarning a'zolari.</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-benefits-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Лица из малообеспеченных семей, установленных посредством информационной системы «Единый реестр социальной защиты»</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-benefits-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Persons from low-income families established through the information system «Unified register of Social Protection»</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-benefits-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>O'zbekiston Respublikasi Sog'liqni saqlash vazirligi tomonidan tasdiqlanadigan ro'yxat bo'yicha, 18 yoshga to'lmagan patologiyali bolalar</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-benefits-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Дети до 18 лет с патологией по перечню, утверждаемому Министерством здравоохранения Республики Узбекистан</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-benefits-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Children under 18 years of age with a pathology on the list approved by the Ministry of Health of the Republic of Uzbekistan</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-benefits-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Chaqiruv komissiyalarining yo'llanmalari bo'yicha chaqiruv yoshidagi (18 - 27 yoshdagi) shaxslar</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-benefits-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Лица призывного возраста (18 — 27 лет) по направлениям призывных комиссий</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-benefits-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Conscripts of conscription age (18-27 years) by conscription commission</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-benefits-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>O'zbekiston Respublikasi Sog'liqni saqlash vazirligi tomonidan tasdiqlanadigan ro'yxat bo'yicha, patologiyali homilador ayollar1</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-benefits-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Беременные женщины с патологией по перечню, утверждаемому Министерством здравоохранения Республики Узбекистан</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-benefits-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Pregnant women with pathology on the list approved by the Ministry of Health of the Republic of Uzbekistan</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-benefits-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>O'zbekiston Respublikasi Sog'liqni saqlash vazirligi tomonidan tasdiqlanadigan ro'yxat bo'yicha, endokrin kasalliklariga chalingan bemorlar2</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-benefits-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Больные, страдающие эндокринными заболеваниями, по перечню, утверждаемому Министерством здравоохранения Республики Узбекистан</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-benefits-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Patients suffering from endocrine diseases, according to the list approved by the Ministry of Health of the Republic of Uzbekistan</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-benefits-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>O'zbekiston Respublikasi Sog'liqni saqlash vazirligi tomonidan tasdiqlanadigan ro'yxat bo'yicha, jinsiy yo'l bilan yuqtiriladigan kasalliklarga chalingan shaxslar3</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-benefits-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Лица, страдающие заболеваниями, передаваемыми половым путем, по перечню, утверждаемому Министерством здравоохранения Республики Узбекистан</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-benefits-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Persons suffering from sexually transmitted diseases, according to the list approved by the Ministry of Health of the Republic of Uzbekistan</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-benefits-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>O'zbekiston Respublikasi Sog'liqni saqlash vazirligi tomonidan tasdiqlanadigan ro'yxat bo'yicha, sil kasalligiga chalingan shaxslar4</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-benefits-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Лица, страдающие туберкулезом по перечню, утверждаемому Министерством здравоохранения Республики Узбекистан</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-benefits-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Persons suffering from tuberculosis on the list approved by the Ministry of Health of the Republic of Uzbekistan</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-benefits-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>O'zbekiston Respublikasi Sog'liqni saqlash vazirligi tomonidan tasdiqlanadigan ro'yxat bo'yicha, onkologiya kasalliklariga chalingan shaxslari5.</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-benefits-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Лица, страдающие онкологическими заболеваниями по перечню, утверждаемому Министерством здравоохранения Республики Узбекистан</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-benefits-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Persons suffering from oncological diseases on the list approved by the Ministry of Health of the Republic of Uzbekistan</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-benefits-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Dasturli gemodializ oluvchi bemorlar</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-benefits-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Пациенты, проходящие гемодиализ</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-benefits-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Patients undergoing hemodialysis</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-benefits-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Mudofaa vazirligi, Ichki ishlar vazirligi, Favqulodda vaziyatlar vazirligi, Milliy gvardiya, Davlat xavfsizlik xizmati, O'zbekiston Respublikasi Prezidenti davlat xavfsizlik xizmati, Bojxona qo'mitasi va Elektron texnologiyalarni rivojlantirish markazining Vatan himoyasi va el-yurt tinchligi yo'lida (O'zbekiston Respublikasi Prezidenti tomonidan e'lon qilingan favqulodda holat (urush holati) davrida jalb qilingan vaqtida, shuningdek, jangovar (harbiy) harakatlar olib borilayotgan paytda) yaralanganligi, kontuziya yoki mayib bo'lganligi oqibatida halok bo'lgan harbiy xizmatchilari va xodimlarining oila a'zolari (ota-onasi, halok bo'lgan vaqtda qonuniy nikohda bo'lgan xotini (eri) va farzandlari).</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-benefits-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Семьи погибших и умерших военнослужащих и работников, погибших и умерших в период действия чрезвычайного положения, объявленного Президентом Республики Узбекистан, а также в период ведения боевых (военных) действий, в результате ранения, контузии или увечья, супруги (супруги, находившиеся в законном браке в момент гибели или умерщвления, а также дети).</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-benefits-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Families of soldiers and workers killed or died during the state of emergency declared by the President of the Republic of Uzbekistan, as well as during combat (military) operations, as a result of injury, contusion or injury, spouses (spouses who were legally married at the time of death or death, and children).</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-benefits-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Tibbiyot xodimlari</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-benefits-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Медицинские работники</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-benefits-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Medical staff</source>
+        <target></target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

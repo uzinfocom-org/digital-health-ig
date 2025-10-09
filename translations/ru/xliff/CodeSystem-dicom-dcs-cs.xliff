@@ -1,0 +1,267 @@
+<?xml version="1.0" ?>
+
+<xliff xmlns="urn:oasis:names:tc:xliff:document:2.0" version="2.0">
+  <file source-language="en" target-language="ru" id="CodeSystem-dicom-dcs-cs" original="Resource CodeSystem-dicom-dcs-cs" datatype="KEYVALUEJSON">
+    <body>
+      <trans-unit id="CodeSystem-dicom-dcs-cs" resname="CodeSystem.name">
+             <notes>
+               <note id="n1">A natural language name identifying the code system. This name should be usable as an identifier for the module by machine processing applications such as code generation.</note>
+             </notes>
+        <source>DicomDCMCS</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-dicom-dcs-cs" resname="CodeSystem.title">
+             <notes>
+               <note id="n1">A short, descriptive, user-friendly title for the code system.</note>
+             </notes>
+        <source>DICOM Controlled Terminology Definitions</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-dicom-dcs-cs" resname="CodeSystem.publisher">
+             <notes>
+               <note id="n1">The name of the organization or individual responsible for the release and ongoing maintenance of the code system.</note>
+             </notes>
+        <source>Uzinfocom LLC</source>
+        <target>ООО «Единый интегратор Uzinfocom»</target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-dicom-dcs-cs" resname="ContactDetail.name">
+             <notes>
+               <note id="n1">The name of an individual to contact.</note>
+             </notes>
+        <source>Uzinfocom LLC</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-dicom-dcs-cs" resname="CodeSystem.description">
+             <notes>
+               <note id="n1">A free text natural language description of the code system from a consumer's perspective.</note>
+             </notes>
+        <source>DICOM Controlled Terminology Definitions supplement with translations in Uzbek and Russian</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-dicom-dcs-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Активность приложения</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-dicom-dcs-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Ilova faoliyati</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-dicom-dcs-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Использование журнала аудита</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-dicom-dcs-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Audit jurnalidan foydalanish</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-dicom-dcs-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Экспорт</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-dicom-dcs-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Eksport</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-dicom-dcs-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Импорт</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-dicom-dcs-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Import</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-dicom-dcs-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Запись пациента</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-dicom-dcs-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Bemor yozuvi</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-dicom-dcs-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Запрос</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-dicom-dcs-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>So'rov</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-dicom-dcs-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Аутентификация пользователя</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-dicom-dcs-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Foydalanuvchi autentifikatsiyasi</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-dicom-dcs-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Аутентификация узла</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-dicom-dcs-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Tugun autentifikatsiyasi</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-dicom-dcs-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Попытка входа пользователя в систему</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-dicom-dcs-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Foydalanuvchiga kirishga urinish</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-dicom-dcs-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Попытка выхода пользователя из системы</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-dicom-dcs-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Foydalanuvchini tizimdan chiqishga urinish</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-dicom-dcs-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Приложение</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-dicom-dcs-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Ilova</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-dicom-dcs-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Запуск приложений</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-dicom-dcs-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Ilovani ishga tushiruvchi</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-dicom-dcs-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Идентификатор роли получателя</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-dicom-dcs-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Qabul qiluvchi roli identifikatori</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-dicom-dcs-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Идентификатор исходной роли</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-dicom-dcs-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Manba roli identifikatori</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-dicom-dcs-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Носитель назначения</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-dicom-dcs-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Mu'ljallangan vosita</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-dicom-dcs-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Исходный носитель</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-dicom-dcs-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Manba vositasi</source>
+        <target></target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

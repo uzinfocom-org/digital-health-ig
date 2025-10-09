@@ -1,0 +1,13 @@
+CODE	UZ	RU	EN
+gencl.0001.00001	Yo'naltiruvchi muassasaning tashxisi	Диагноз направившего учреждения	Diagnosis of the referring institution
+gencl.0001.00002	Qabulxona tashxisi	Диагноз приемного покоя	Diagnosis of the admission department
+gencl.0001.00003	Asosiy tashxis	Диагноз основной	Main diagnosis
+gencl.0001.00004	Qo‘shimcha tashxis	Диагноз сопутствующий	Concomitant diagnosis
+gencl.0001.00005	Asosiy kasallikning murakkabligi tashxisi	Диагноз осложнения основного заболевания	Diagnosis of complications of the underlying disease
+gencl.0001.00006	Raqobatdosh kasallik tashxisi	Диагноз конкурирующего заболевания	Diagnosis of a competing disease
+gencl.0001.00007	Fon kasalligi tashxisi	Диагноз фонового заболевания	Diagnosis of a background disease
+gencl.0001.00008	Yakuniy tashxis	Диагноз заключительный	Final diagnosis
+gencl.0001.00009	Patomorfologik tashxis	Патоморфологический диагноз	Pathomorphological diagnosis
+gencl.0001.00010	O‘limga olib kelgan tashxis	Диагноз, приведший к смерти	Diagnosis leading to death
+gencl.0001.00011	Patologik-anatomik tashxisi	Патологоанатомический диагноз	Pathoanatomic diagnosis
+gencl.0001.00012	Sud-tibbiy tashxis	Судебно-медицинский диагноз	Forensic medical diagnosis

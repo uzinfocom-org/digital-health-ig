@@ -1,0 +1,6 @@
+CODE	UZ	RU	EN	
+hosp-trans	Boshqa shifoxonadan o‘tkazilgan	Переведен из другой больницы	Transferred from other hospital	fhir
+born	Tibbiyot muassasasida tug'ildi	Родился в больнице	Born in hospital	
+psych	Ruhiy kasalliklar shifoxonasidan	Из психиатрической больницы	From psychiatric hospital	
+other	Boshqa	Другое	Other	
+mserv-0003-00001	Uydan	Из дома	From home	our

@@ -1,0 +1,211 @@
+<?xml version="1.0" ?>
+
+<xliff xmlns="urn:oasis:names:tc:xliff:document:2.0" version="2.0">
+  <file source-language="en" target-language="ru" id="CodeSystem-actreason-cs" original="Resource CodeSystem-actreason-cs" datatype="KEYVALUEJSON">
+    <body>
+      <trans-unit id="CodeSystem-actreason-cs" resname="CodeSystem.name">
+             <notes>
+               <note id="n1">A natural language name identifying the code system. This name should be usable as an identifier for the module by machine processing applications such as code generation.</note>
+             </notes>
+        <source>ActReasonCS</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-actreason-cs" resname="CodeSystem.title">
+             <notes>
+               <note id="n1">A short, descriptive, user-friendly title for the code system.</note>
+             </notes>
+        <source>Act reason translations</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-actreason-cs" resname="CodeSystem.publisher">
+             <notes>
+               <note id="n1">The name of the organization or individual responsible for the release and ongoing maintenance of the code system.</note>
+             </notes>
+        <source>Uzinfocom LLC</source>
+        <target>ООО «Единый интегратор Uzinfocom»</target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-actreason-cs" resname="ContactDetail.name">
+             <notes>
+               <note id="n1">The name of an individual to contact.</note>
+             </notes>
+        <source>Uzinfocom LLC</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-actreason-cs" resname="CodeSystem.description">
+             <notes>
+               <note id="n1">A free text natural language description of the code system from a consumer's perspective.</note>
+             </notes>
+        <source>Act reason supplement with translations in Uzbek and Russian</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-actreason-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>управление медицинскими записями</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-actreason-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>medical records management</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-actreason-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>операции с информацией в сфере здравоохранения</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-actreason-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>health information operations</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-actreason-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>правительство</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-actreason-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>government</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-actreason-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>каталог (управление каталогом пациентов)</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-actreason-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>catalogue (patient catalogue management)</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-actreason-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>отчетность по программе здравоохранения</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-actreason-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>health program reporting</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-actreason-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>администрация системы здравоохранения</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-actreason-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>health system administration</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-actreason-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>пациент запросил</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-actreason-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>patient requested</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-actreason-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>семья запросила</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-actreason-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>family requested</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-actreason-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>законный представитель пациента запросил</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-actreason-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>patient's legal representative requested</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-actreason-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>катастрофа</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-actreason-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>disaster</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-actreason-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>операции с информацией для оказания медицинской помощи</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-actreason-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>health care information operations</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-actreason-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>операции с информацией для оказания экстренной медицинской помощи</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-actreason-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>emergency health care information operations</source>
+        <target></target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

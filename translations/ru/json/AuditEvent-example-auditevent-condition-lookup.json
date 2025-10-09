@@ -1,0 +1,35 @@
+{
+  "id" : "AuditEvent-example-auditevent-condition-lookup",
+  "baseLang" : "en",
+  "languages" : [
+    {
+      "targetLang" : "ru",
+      "entries" : [
+        {
+          "id" : "Coding.display",
+          "context" : "A representation of the meaning of the code in the system, following the rules of the system.",
+          "source" : "Query",
+          "target" : null
+        },
+        {
+          "id" : "Reference.display",
+          "context" : "Plain text narrative that identifies the resource in addition to the resource reference.",
+          "source" : "Uzbekistan Digital Health Platform",
+          "target" : null
+        },
+        {
+          "id" : "Coding.display",
+          "context" : "A representation of the meaning of the code in the system, following the rules of the system.",
+          "source" : "Application Server",
+          "target" : null
+        },
+        {
+          "id" : "Coding.display",
+          "context" : "A representation of the meaning of the code in the system, following the rules of the system.",
+          "source" : "Domain Resource",
+          "target" : null
+        }
+      ]
+    }
+  ]
+}

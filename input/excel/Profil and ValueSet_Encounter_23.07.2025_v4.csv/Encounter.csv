@@ -1,0 +1,50 @@
+	Name		Flags		Cardinality	Example	Example	document	Type	Description & Constraints		ValueSets			
+	Encounter		TU						DomainResource	Взаимодействие / встреча, в ходе которого пациенту предоставляются услуги		System	CodeSystem	Code	Display
+	Identifier		Σ	D	0..1				identifier	"	Идентификатор, по которым известна эта встреча"		http://hl7.org/fhir/ValueSet/encounter-status	CodeSystemStatus	planned, in-progress, completed, cancelled, entered-in-error, other	Текущее состояние встречи
+	Status		?! Σ S	D	1..1	completed	In progress	HL7.v5	code	"Текущее состояние встречи
+Binding: http://hl7.org/fhir/ValueSet/encounter-status (Required)"		https://terminology.medcore.uz/ValueSet/encounter-class	CodeSystemClass	 IMP, AMB, OBSENC, VR, HH	Классификация встречи с пациентом
+	Class		Σ S	D	0..*	EMER	IMP	HL7.v5 + local (new)	CodeableConcept	"Классификация встречи с пациентом
+Binding: https://terminology.medcore.uz/ValueSet/encounter-class"		https://terminology.medcore.uz/ValueSet/encounter-priority	CodeSystemPriority	gencl.0002.00001, gencl.0002.00002, gencl.0002.00003, EM, P, PRN	Указывает срочность встречи
+	Priority		S	D	0..1	EM	P	HL7.v5 + local (new)	CodeableConcept	"Указывает срочность встречи
+Binding: https://terminology.medcore.uz/ValueSet/encounter-priority"		https://terminology.medcore.uz/ValueSet/encounter-type 	CodeSystemType	все коды	Конкретный тип встречи 
+	Type		Σ S	D	0..*	mserv.0001.00004	mserv.0001.00004	Local (new)	CodeableConcept 	"Конкретный тип встречи 
+https://terminology.medcore.uz/ValueSet/encounter-type"		https://terminology.medcore.uz/ValueSet/encounter-subject-status	CodeSystemSubjectStatus	все коды	Отслеживание статуса пациента в ходе встречи
+	ServiceType 		Σ S	D	0..*	cancr0022.00010	cancr0022.00269		CodeableReference(HealthcareService)	Широкая категоризация услуг, которые должны быть предоставлены		https://terminology.medcore.uz/ValueSet/encounter-ReasonUse	CodeSystemReasonUse	все коды	Для чего/как следует использовать значение причины
+	Subject		Σ S	D	0..1				Reference(Patient)	Пациент, связанный с этой встречей		https://terminology.medcore.uz/ValueSet/encounter-admit-source	CodesystemAdmitSource	hosp-trans, born, psych, other, mserv.0003.00001	Откуда пациент был принят
+	SubjectStatus		S	D	0..1	gencl.0003.00001	gencl.0003.00003	Local (new)	CodeableConcept	"Отслеживание статуса пациента в ходе встречи
+Binding: https://terminology.medcore.uz/ValueSet/encounter-subject-status"		https://terminology.medcore.uz/ValueSet/encounter-reAdmission	CodesystemreAdmission	R	Указывает, что пациент повторно госпитализирован
+	EpisodeOfCare		Σ S	D	0..*				Reference(EpisodeOfCare)	Эпизод(ы) ухода, в отношении которого следует записать эту встречу		https://terminology.medcore.uz/ValueSet/encounter-discharge-disposition	CodesystemDischargeDisposition	home, other-hcf, oth, mserv.0004.00001, mserv.0004.00002	Категория или вид местоположения после выписки
+	BasedOn		S	D	0..*				Reference (CarePlan | DeviceRequest | MedicationRequest | ServiceRequest)	Запрос, который инициировал эту встречу					
+	CareTeam		S	D	0..*				Reference ( CareTeam )	Группа(ы), выделенная для участия в этой встрече					
+	part of		S		0..1				Reference(Encounter)	Другая встреча, частью которой является данная встреча					
+	ServiceProvider		S		0..1				Reference(Organization)	Организация (учреждение), ответственная за данную встречу					
+	Participant		Σ	C	0..*				BackboneElement	Список участников, участвовавших во встрече					
+		actor	Σ S	C	0..1				Reference(Patient | RelatedPerson | Practitioner | PractitionerRole |  HealthcareService)	Лицо, устройство или служба, участвующие во встрече				
+		period		D	0..1	"start: 2024-03-01T09:30:00
+end: 2024-03-01T10:15:00"	"start: 2025-02-01T10:30:00
+end: 2025-02-02T11:15:00"		period	Период времени во время встречи, в котором участвовал участник				
+	Appointment		Σ S		0..*				Reference(Appointment)	Appointment, на котором была запланирована эта встреча				
+	reason		Σ	D	0..*				BackboneElement	Перечень медицинских показаний, которые, как ожидается, будут рассмотрены в ходе оказания помощи				
+		use	Σ S	D	0..*	mserv.0002.00001	mserv.0002.00002	Local (new)	"	CodeableConcept"	"	Для чего/как следует использовать значение причины
+Binding: https://terminology.medcore.uz/ValueSet/encounter-ReasonUse"				
+		value	Σ 	D	0..*	F50.5	B37.7	МКБ-10	CodeableReference(Condition | DiagnosticReport | Procedure | Observation | HealthcareService)	Медицинская причина, требующая рассмотрения.				
+	VirtualService		S	D	0..*				VirtualServiceDetail	Телемедицина				
+	ActualPeriod			D	0..1	"start: 2024-03-01T09:30:00
+end: 2024-03-01T11:30:00"	"start: 2025-02-01T10:00:00
+end: 2025-02-02T12:45:00"		"	Period"	Фактическое время начала и окончания встречи				
+	PlannedStartDate			D	0..1	2024-03-01T09:30:00	2025-02-01T10:00:00		dateTime	Планируемая дата/время начала (или дата приема) встречи				
+	plannedEndDate			D	0..1	2024-03-01T12:00:00	2025-02-02T12:00:00		dateTime	Планируемая дата/время окончания (или дата выписки) встречи				
+	length			D	0..1	будет ли автоматически рассчитано т.к. есть актуальный период?			Duration	"	Фактическое количество времени, в течение которого длилась встреча (за вычетом времени отсутствия)"				
+	diagnosis		Σ		0..*				BackboneElement	"	Список диагнозов, имеющих отношение к данному случаю"				
+		condition	Σ		0..*	F50.5	B37.7	МКБ-10	CodeableReference(Condition)	Диагноз, относящийся к встрече				
+	account		S	D	0..*				Reference(Account)	Набор счетов, которые могут быть использованы для выставления счетов за эту встречу				
+	admission			D	0..1				BackboneElement	Подробности о пребывании, во время которого предоставляется медицинская услуга				
+		origin	S	D	0..1				Reference(Location | Organization)	Место/организация, из которой пациент прибыл до поступления				
+		admitSource	S	D	0..1	mserv.0003.00001	psych	HL7.v5 + local (new)	CodeableConcept	"Откуда пациент был принят
+Binding: https://terminology.medcore.uz/ValueSet/admit-source"				
+		reAdmission	S	D	0..1	R	R	HL7.v5	CodeableConcept	"Указывает, что пациент повторно госпитализирован
+Binding: https://terminology.medcore.uz/ValueSet/encounter-reAdmission"				
+		destination	S	D	0..1				Reference(Location | Organization)	Место/организация, в которую выписывается пациент 				
+		dischargeDisposition	S	D	0..1	mserv.0004.00001	home	HL7.v5 + local (new)	CodeableConcept	"Категория или вид местоположения после выписки
+Binding: https://terminology.medcore.uz/ValueSet/encounter-discharge-disposition"				
+	 location		S	D	1..1				Reference(Location)	"	Место, где происходит встреча"				

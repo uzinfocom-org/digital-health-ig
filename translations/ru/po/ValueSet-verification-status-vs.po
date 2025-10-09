@@ -1,0 +1,26 @@
+
+# A natural language name identifying the value set. This name should be usable as an identifier for the module by machine processing applications such as code generation.
+#: ValueSet.name
+msgid "VerificationStatusVS"
+msgstr ""
+
+# A short, descriptive, user-friendly title for the value set.
+#: ValueSet.title
+msgid "Types of verification status"
+msgstr ""
+
+# The name of the organization or individual responsible for the release and ongoing maintenance of the value set.
+#: ValueSet.publisher
+msgid "Uzinfocom LLC"
+msgstr "ООО «Единый интегратор Uzinfocom»"
+
+# The name of an individual to contact.
+#: ContactDetail.name
+msgid "Uzinfocom LLC"
+msgstr ""
+
+# A free text natural language description of the value set from a consumer's perspective. The textual description specifies the span of meanings for concepts to be included within the Value Set Expansion, and also may specify the intended use and limitations of the Value Set.
+#: ValueSet.description
+msgid "Types of verification status in Uzbekistan"
+msgstr ""
+

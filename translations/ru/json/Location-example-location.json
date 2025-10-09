@@ -1,0 +1,23 @@
+{
+  "id" : "Location-example-location",
+  "baseLang" : "en",
+  "languages" : [
+    {
+      "targetLang" : "ru",
+      "entries" : [
+        {
+          "id" : "Location.name",
+          "context" : "Name of the location as used by humans. Does not need to be unique.",
+          "source" : "Toshkent shahar 1-sonli shifoxona",
+          "target" : null
+        },
+        {
+          "id" : "Address.text",
+          "context" : "Specifies the entire address as it should be displayed e.g. on a postal label. This may be provided instead of or as well as the specific parts.",
+          "source" : "Toshkent shahar, Chilonzor tumani, Katta Qo'yliq 45",
+          "target" : null
+        }
+      ]
+    }
+  ]
+}

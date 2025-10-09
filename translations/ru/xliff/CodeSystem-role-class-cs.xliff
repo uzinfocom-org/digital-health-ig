@@ -1,0 +1,99 @@
+<?xml version="1.0" ?>
+
+<xliff xmlns="urn:oasis:names:tc:xliff:document:2.0" version="2.0">
+  <file source-language="en" target-language="ru" id="CodeSystem-role-class-cs" original="Resource CodeSystem-role-class-cs" datatype="KEYVALUEJSON">
+    <body>
+      <trans-unit id="CodeSystem-role-class-cs" resname="CodeSystem.name">
+             <notes>
+               <note id="n1">A natural language name identifying the code system. This name should be usable as an identifier for the module by machine processing applications such as code generation.</note>
+             </notes>
+        <source>RoleClassCS</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-role-class-cs" resname="CodeSystem.title">
+             <notes>
+               <note id="n1">A short, descriptive, user-friendly title for the code system.</note>
+             </notes>
+        <source>Role class</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-role-class-cs" resname="CodeSystem.publisher">
+             <notes>
+               <note id="n1">The name of the organization or individual responsible for the release and ongoing maintenance of the code system.</note>
+             </notes>
+        <source>Uzinfocom LLC</source>
+        <target>ООО «Единый интегратор Uzinfocom»</target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-role-class-cs" resname="ContactDetail.name">
+             <notes>
+               <note id="n1">The name of an individual to contact.</note>
+             </notes>
+        <source>Uzinfocom LLC</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-role-class-cs" resname="CodeSystem.description">
+             <notes>
+               <note id="n1">A free text natural language description of the code system from a consumer's perspective.</note>
+             </notes>
+        <source>Provides localized definitions of role class codes in Uzbek and Russian.</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-role-class-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>нотариус</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-role-class-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>notarius</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-role-class-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>экстренный контакт</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-role-class-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>emergency contact</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-role-class-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>ближайший родственник</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-role-class-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>yaqin qarindosh</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-role-class-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>сотрудник</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-role-class-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>xodim</source>
+        <target></target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

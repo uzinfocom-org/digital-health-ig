@@ -1,0 +1,119 @@
+{
+  "id" : "RelatedPerson-example-related-person",
+  "baseLang" : "en",
+  "languages" : [
+    {
+      "targetLang" : "ru",
+      "entries" : [
+        {
+          "id" : "Coding.display",
+          "context" : "A representation of the meaning of the code in the system, following the rules of the system.",
+          "source" : "National unique individual identifier",
+          "target" : null
+        },
+        {
+          "id" : "Coding.display",
+          "context" : "A representation of the meaning of the code in the system, following the rules of the system.",
+          "source" : "Passport number",
+          "target" : null
+        },
+        {
+          "id" : "Coding.display",
+          "context" : "A representation of the meaning of the code in the system, following the rules of the system.",
+          "source" : "Birth Certificate",
+          "target" : null
+        },
+        {
+          "id" : "Coding.display",
+          "context" : "A representation of the meaning of the code in the system, following the rules of the system.",
+          "source" : "Driver's license number",
+          "target" : null
+        },
+        {
+          "id" : "Coding.display",
+          "context" : "A representation of the meaning of the code in the system, following the rules of the system.",
+          "source" : "Diplomatic Passport",
+          "target" : null
+        },
+        {
+          "id" : "Coding.display",
+          "context" : "A representation of the meaning of the code in the system, following the rules of the system.",
+          "source" : "Health card number",
+          "target" : null
+        },
+        {
+          "id" : "Coding.display",
+          "context" : "A representation of the meaning of the code in the system, following the rules of the system.",
+          "source" : "Military ID number",
+          "target" : null
+        },
+        {
+          "id" : "Coding.display",
+          "context" : "A representation of the meaning of the code in the system, following the rules of the system.",
+          "source" : "witness",
+          "target" : null
+        },
+        {
+          "id" : "HumanName.text",
+          "context" : "Specifies the entire name as it should be displayed e.g. on an application UI. This may be provided instead of or as well as the specific parts.",
+          "source" : "Зафаров Дамир Каримович",
+          "target" : null
+        },
+        {
+          "id" : "HumanName.family",
+          "context" : "The part of a name that links to the genealogy. In some cultures (e.g. Eritrea) the family name of a son is the first name of his father.",
+          "source" : "Зафаров",
+          "target" : null
+        },
+        {
+          "id" : "HumanName.given",
+          "context" : "Given name.",
+          "source" : "Дамир",
+          "target" : null
+        },
+        {
+          "id" : "HumanName.suffix",
+          "context" : "Part of the name that is acquired as a title due to academic, legal, employment or nobility status, etc. and that appears at the end of the name.",
+          "source" : "Каримович",
+          "target" : null
+        },
+        {
+          "id" : "Address.text",
+          "context" : "Specifies the entire address as it should be displayed e.g. on a postal label. This may be provided instead of or as well as the specific parts.",
+          "source" : "махалля Дилобод, Каторток кўчаси, 9-уй, 15-хонадон",
+          "target" : null
+        },
+        {
+          "id" : "Address.line",
+          "context" : "This component contains the house number, apartment number, street name, street direction,  P.O. Box number, delivery hints, and similar address information.",
+          "source" : "Каторток кўчаси",
+          "target" : null
+        },
+        {
+          "id" : "Address.city",
+          "context" : "The name of the city, town, suburb, village or other community or delivery center.",
+          "source" : "103-0104",
+          "target" : null
+        },
+        {
+          "id" : "Address.district",
+          "context" : "The name of the administrative area (county).",
+          "source" : "1726294",
+          "target" : null
+        },
+        {
+          "id" : "Address.state",
+          "context" : "Sub-unit of a country with limited sovereignty in a federally organized country. A code may be used if codes are in common use (e.g. US 2 letter state codes).",
+          "source" : "1726",
+          "target" : null
+        },
+        {
+          "id" : "Address.country",
+          "context" : "Country - a nation as commonly understood or generally accepted.",
+          "source" : "182",
+          "target" : null
+        }
+      ]
+    }
+  ]
+}

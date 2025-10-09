@@ -6,7 +6,7 @@
   "id": "location-types-cs",
   "title": "Defines the possible location types",
   "description": "Defines the possible location types in Uzbek and Russian",
-  "url": "https://terminology.medcore.uz/CodeSystem/location-types-cs",
+  "url": "https://terminology.dhp.uz/fhir/core/CodeSystem/location-types-cs",
   "concept": [
     {
       "code": "PSYCHF_1",
@@ -2053,7 +2053,6 @@
       ]
     }
   ],
-  "version": "1.0.0",
   "experimental": true,
   "date": "2025-03-17",
   "publisher": "Uzinfocom",

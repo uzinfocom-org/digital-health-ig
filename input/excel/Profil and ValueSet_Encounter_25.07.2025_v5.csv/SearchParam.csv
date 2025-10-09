@@ -1,0 +1,22 @@
+Include		Exclude	
+Name	Expession	Name	Expession
+based-on	"	Encounter.basedOn"	account	Encounter.account
+class	Encounter.class	appointment	Encounter.appointment
+date	Encounter.actualPeriod	careteam	Encounter.careTeam
+date-start	Encounter.actualPeriod.start	diagnosis-reference	Encounter.diagnosis.condition.reference
+diagnosis-code	Encounter.diagnosis.condition.concept	length	Encounter.length
+end-date	Encounter.actualPeriod.end	location-period	
+episode-of-care	Encounter.episodeOfCare	reason-reference	Encounter.reason.value.reference
+identifier	"	Encounter.identifier"	special-arrangement	"	Encounter.specialArrangement"
+location	Encounter.location.location		
+participant	Encounter.participant.actor		
+participant-type	Encounter.participant.type		
+patient	"	Encounter.subject.where(resolve() is Patient)"		
+practitioner	Encounter.participant.actor.where(resolve() is Practitioner)		
+reason-code	Encounter.reason.value.concept		
+service-provider	"	Encounter.serviceProvider"		
+status	Encounter.status		
+subject	"	Encounter.subject"		
+subject-status	Encounter.subjectStatus		
+type	"	Encounter.type"		
+part-of	Encounter.partOf		

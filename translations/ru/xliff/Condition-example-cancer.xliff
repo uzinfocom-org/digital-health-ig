@@ -1,0 +1,57 @@
+<?xml version="1.0" ?>
+
+<xliff xmlns="urn:oasis:names:tc:xliff:document:2.0" version="2.0">
+  <file source-language="en" target-language="ru" id="Condition-example-cancer" original="Resource Condition-example-cancer" datatype="KEYVALUEJSON">
+    <body>
+      <trans-unit id="Condition-example-cancer" resname="Coding.display">
+             <notes>
+               <note id="n1">A representation of the meaning of the code in the system, following the rules of the system.</note>
+             </notes>
+        <source>Main diagnosis</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Condition-example-cancer" resname="Coding.display">
+             <notes>
+               <note id="n1">A representation of the meaning of the code in the system, following the rules of the system.</note>
+             </notes>
+        <source>Active</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Condition-example-cancer" resname="Coding.display">
+             <notes>
+               <note id="n1">A representation of the meaning of the code in the system, following the rules of the system.</note>
+             </notes>
+        <source>Confirmed</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Condition-example-cancer" resname="Coding.display">
+             <notes>
+               <note id="n1">A representation of the meaning of the code in the system, following the rules of the system.</note>
+             </notes>
+        <source>Malignant neoplasm of breast</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Condition-example-cancer" resname="Coding.display">
+             <notes>
+               <note id="n1">A representation of the meaning of the code in the system, following the rules of the system.</note>
+             </notes>
+        <source>Breast structure</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Condition-example-cancer" resname="Coding.display">
+             <notes>
+               <note id="n1">A representation of the meaning of the code in the system, following the rules of the system.</note>
+             </notes>
+        <source>Author</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Condition-example-cancer" resname="Annotation.text">
+             <notes>
+               <note id="n1">The text of the annotation in markdown format.</note>
+             </notes>
+        <source>Patient diagnosed with breast cancer. Staging and treatment plan to be determined.</source>
+        <target></target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

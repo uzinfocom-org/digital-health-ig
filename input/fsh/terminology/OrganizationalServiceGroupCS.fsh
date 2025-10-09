@@ -2,16 +2,7 @@ CodeSystem: OrganizationalServiceGroupCS
 Id: organizational-service-group-cs
 Title: "Organizational service group"
 Description: "Defines the organizational and service group of a medical institution"
-* ^url = "https://terminology.medcore.uz/CodeSystem/organizational-service-group-cs"
-* ^version = "1.0.0"
-* ^status = #active
-* ^experimental = true
-* ^date = "2025-02-24"
-* ^publisher = "Example Healthcare Organization"
-* ^content = #complete
-* ^language = #uz
-* ^caseSensitive = true
-* ^experimental = true
+* insert OriginalCodeSystemDraft(organizational-service-group-cs)
 * #III_100 "Poliklinika bo'limi va statsionar bo'limi mavjud"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Имеется амбулаторное и стационарное отделение."

@@ -5,13 +5,13 @@
   "id": "location-types-vs",
   "title": "Location types",
   "description": "Location types defined by the Ministry of Health of the Republic of Uzbekistan",
-  "url": "https://terminology.medcore.uz/ValueSet/location-types-vs",
+  "url": "https://terminology.dhp.uz/fhir/core/ValueSet/location-types-vs",
   "experimental": true,
   "language": "uz",
   "compose": {
     "include": [
       {
-        "system": "https://terminology.medcore.uz/CodeSystem/location-types-cs"
+        "system": "https://terminology.dhp.uz/fhir/core/CodeSystem/location-types-cs"
       },
       {
         "system": "http://terminology.hl7.org/CodeSystem/v3-RoleCode",

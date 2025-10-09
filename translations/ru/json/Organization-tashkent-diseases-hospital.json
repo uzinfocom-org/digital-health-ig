@@ -1,0 +1,59 @@
+{
+  "id" : "Organization-tashkent-diseases-hospital",
+  "baseLang" : "en",
+  "languages" : [
+    {
+      "targetLang" : "ru",
+      "entries" : [
+        {
+          "id" : "Coding.display",
+          "context" : "A representation of the meaning of the code in the system, following the rules of the system.",
+          "source" : "Tax ID number",
+          "target" : null
+        },
+        {
+          "id" : "Coding.display",
+          "context" : "A representation of the meaning of the code in the system, following the rules of the system.",
+          "source" : "Organization Identifier",
+          "target" : null
+        },
+        {
+          "id" : "Coding.display",
+          "context" : "A representation of the meaning of the code in the system, following the rules of the system.",
+          "source" : "Healthcare Provider",
+          "target" : null
+        },
+        {
+          "id" : "Coding.display",
+          "context" : "A representation of the meaning of the code in the system, following the rules of the system.",
+          "source" : "Hududiy boshqaruv tarkibidagi",
+          "target" : null
+        },
+        {
+          "id" : "Coding.display",
+          "context" : "A representation of the meaning of the code in the system, following the rules of the system.",
+          "source" : "Shifoxona muassasalari",
+          "target" : null
+        },
+        {
+          "id" : "Coding.display",
+          "context" : "A representation of the meaning of the code in the system, following the rules of the system.",
+          "source" : "Statsionar bo'limi mavjud",
+          "target" : null
+        },
+        {
+          "id" : "Coding.display",
+          "context" : "A representation of the meaning of the code in the system, following the rules of the system.",
+          "source" : "Shifoxonasi",
+          "target" : null
+        },
+        {
+          "id" : "Organization.name",
+          "context" : "A name associated with the organization.",
+          "source" : "Toshkent viloyati yuqumli kasalliklar shifoxonasi",
+          "target" : "Ташкентская областная инфекционная больница"
+        }
+      ]
+    }
+  ]
+}

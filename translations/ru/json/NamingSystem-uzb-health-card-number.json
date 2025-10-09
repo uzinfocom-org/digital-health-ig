@@ -1,0 +1,65 @@
+{
+  "id" : "NamingSystem-uzb-health-card-number",
+  "baseLang" : "en",
+  "languages" : [
+    {
+      "targetLang" : "ru",
+      "entries" : [
+        {
+          "id" : "NamingSystem.name",
+          "context" : "A natural language name identifying the naming system. This name should be usable as an identifier for the module by machine processing applications such as code generation.",
+          "source" : "UzbekistanHealthCardNumberSystem",
+          "target" : null
+        },
+        {
+          "id" : "NamingSystem.publisher",
+          "context" : "The name of the organization or individual responsible for the release and ongoing maintenance of the naming system.",
+          "source" : "Uzinfocom LLC",
+          "target" : "ООО «Единый интегратор Uzinfocom»"
+        },
+        {
+          "id" : "ContactDetail.name",
+          "context" : "The name of an individual to contact.",
+          "source" : "Uzinfocom LLC",
+          "target" : null
+        },
+        {
+          "id" : "NamingSystem.responsible",
+          "context" : "The name of the organization that is responsible for issuing identifiers or codes for this namespace and ensuring their non-collision.",
+          "source" : "Ministry of Health of the Republic of Uzbekistan",
+          "target" : null
+        },
+        {
+          "id" : "Coding.display",
+          "context" : "A representation of the meaning of the code in the system, following the rules of the system.",
+          "source" : "Health card number",
+          "target" : null
+        },
+        {
+          "id" : "NamingSystem.description",
+          "context" : "A free text natural language description of the naming system from a consumer's perspective. Details about what the namespace identifies including scope, granularity, version labeling, etc.",
+          "source" : "Naming system for health card number identifiers assigned by the Ministry of Health of the Republic of Uzbekistan. See https://yuz.uz/ru/news/elektronne-meditsinskie-kart-prosto-sovremenno-i-kachestvennofor legal justification.",
+          "target" : null
+        },
+        {
+          "id" : "NamingSystem.usage",
+          "context" : "Provides guidance on the use of the namespace, including the handling of formatting characters, use of upper vs. lower case, etc.",
+          "source" : "Used for identifying individuals through their health card numbers within the Uzbekistan healthcare system.",
+          "target" : null
+        },
+        {
+          "id" : "NamingSystem.uniqueId.value",
+          "context" : "The string that should be sent over the wire to identify the code system or identifier system.",
+          "source" : "https://gov.uz/ssv/identifier/healthcard",
+          "target" : null
+        },
+        {
+          "id" : "NamingSystem.uniqueId.comment",
+          "context" : "Notes about the past or intended usage of this identifier.",
+          "source" : "This is the canonical URI for the Uzbekistan health card number system",
+          "target" : null
+        }
+      ]
+    }
+  ]
+}

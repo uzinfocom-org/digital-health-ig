@@ -1,0 +1,15 @@
+<?xml version="1.0" ?>
+
+<xliff xmlns="urn:oasis:names:tc:xliff:document:2.0" version="2.0">
+  <file source-language="en" target-language="ru" id="DocumentReference-example-pdf-document" original="Resource DocumentReference-example-pdf-document" datatype="KEYVALUEJSON">
+    <body>
+      <trans-unit id="DocumentReference-example-pdf-document" resname="Attachment.title">
+             <notes>
+               <note id="n1">A label or set of text to display in place of the data.</note>
+             </notes>
+        <source>Sample Medical Report</source>
+        <target></target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

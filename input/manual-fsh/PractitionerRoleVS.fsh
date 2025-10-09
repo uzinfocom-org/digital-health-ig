@@ -2,7 +2,7 @@ ValueSet: PractitionerRoleVS
 Id: practitioner-role-vs
 Title: "Practitioner roles"
 Description: "Defines the roles of medical practitioners"
-* ^url = "https://terminology.medcore.uz/ValueSet/practitioner-role-vs"
+* ^url = "https://terminology.dhp.uz/fhir/core/ValueSet/practitioner-role-vs"
 * ^experimental = true
 * ^language = #uz
 * include position-and-profession-cs#1342 "Sog'liqni saqlash sohasida tibbiy xizmat ko'rsatishda bo'lim boshliqlari"

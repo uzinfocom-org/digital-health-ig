@@ -1,0 +1,77 @@
+{
+  "id" : "Patient-example-david",
+  "baseLang" : "en",
+  "languages" : [
+    {
+      "targetLang" : "ru",
+      "entries" : [
+        {
+          "id" : "Coding.display",
+          "context" : "A representation of the meaning of the code in the system, following the rules of the system.",
+          "source" : "Армяне",
+          "target" : null
+        },
+        {
+          "id" : "Coding.display",
+          "context" : "A representation of the meaning of the code in the system, following the rules of the system.",
+          "source" : "Driver's license number",
+          "target" : null
+        },
+        {
+          "id" : "HumanName.text",
+          "context" : "Specifies the entire name as it should be displayed e.g. on an application UI. This may be provided instead of or as well as the specific parts.",
+          "source" : "Давыдов Давид",
+          "target" : null
+        },
+        {
+          "id" : "Coding.display",
+          "context" : "A representation of the meaning of the code in the system, following the rules of the system.",
+          "source" : "Сменил пол на мужчину",
+          "target" : null
+        },
+        {
+          "id" : "Address.line",
+          "context" : "This component contains the house number, apartment number, street name, street direction,  P.O. Box number, delivery hints, and similar address information.",
+          "source" : "2 квартал 13 дом 12 квартира",
+          "target" : null
+        },
+        {
+          "id" : "Address.city",
+          "context" : "The name of the city, town, suburb, village or other community or delivery center.",
+          "source" : "22070011",
+          "target" : null
+        },
+        {
+          "id" : "Address.district",
+          "context" : "The name of the administrative area (county).",
+          "source" : "1703206",
+          "target" : null
+        },
+        {
+          "id" : "Address.country",
+          "context" : "Country - a nation as commonly understood or generally accepted.",
+          "source" : "UZ",
+          "target" : null
+        },
+        {
+          "id" : "Coding.display",
+          "context" : "A representation of the meaning of the code in the system, following the rules of the system.",
+          "source" : "Состоит в браке",
+          "target" : null
+        },
+        {
+          "id" : "Coding.display",
+          "context" : "A representation of the meaning of the code in the system, following the rules of the system.",
+          "source" : "Emergency Contact",
+          "target" : null
+        },
+        {
+          "id" : "HumanName.text",
+          "context" : "Specifies the entire name as it should be displayed e.g. on an application UI. This may be provided instead of or as well as the specific parts.",
+          "source" : "Саидов Саид",
+          "target" : null
+        }
+      ]
+    }
+  ]
+}

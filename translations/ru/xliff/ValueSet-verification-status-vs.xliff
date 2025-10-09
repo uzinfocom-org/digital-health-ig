@@ -1,0 +1,43 @@
+<?xml version="1.0" ?>
+
+<xliff xmlns="urn:oasis:names:tc:xliff:document:2.0" version="2.0">
+  <file source-language="en" target-language="ru" id="ValueSet-verification-status-vs" original="Resource ValueSet-verification-status-vs" datatype="KEYVALUEJSON">
+    <body>
+      <trans-unit id="ValueSet-verification-status-vs" resname="ValueSet.name">
+             <notes>
+               <note id="n1">A natural language name identifying the value set. This name should be usable as an identifier for the module by machine processing applications such as code generation.</note>
+             </notes>
+        <source>VerificationStatusVS</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ValueSet-verification-status-vs" resname="ValueSet.title">
+             <notes>
+               <note id="n1">A short, descriptive, user-friendly title for the value set.</note>
+             </notes>
+        <source>Types of verification status</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ValueSet-verification-status-vs" resname="ValueSet.publisher">
+             <notes>
+               <note id="n1">The name of the organization or individual responsible for the release and ongoing maintenance of the value set.</note>
+             </notes>
+        <source>Uzinfocom LLC</source>
+        <target>ООО «Единый интегратор Uzinfocom»</target>
+      </trans-unit>
+      <trans-unit id="ValueSet-verification-status-vs" resname="ContactDetail.name">
+             <notes>
+               <note id="n1">The name of an individual to contact.</note>
+             </notes>
+        <source>Uzinfocom LLC</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ValueSet-verification-status-vs" resname="ValueSet.description">
+             <notes>
+               <note id="n1">A free text natural language description of the value set from a consumer's perspective. The textual description specifies the span of meanings for concepts to be included within the Value Set Expansion, and also may specify the intended use and limitations of the Value Set.</note>
+             </notes>
+        <source>Types of verification status in Uzbekistan</source>
+        <target></target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

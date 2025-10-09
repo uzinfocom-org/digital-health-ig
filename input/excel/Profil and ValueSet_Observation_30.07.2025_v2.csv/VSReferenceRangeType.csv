@@ -1,0 +1,14 @@
+level	CODE	UZ	RU	EN
+1	  type 	Tur	Тип	Type
+2	    normal 	Normal diapazon	Нормальный диапазон	Normal Range
+2	    recommended 	Tavsiya etilgan diapazon	Рекомендуемый диапазон	Recommended Range
+2	    treatment 	Davolash diapazoni	Диапазон лечения	Treatment Range
+2	    therapeutic 	Terapevtik maqsadli daraja	Терапевтически желаемый уровень	Therapeutic Desired Level
+3	      pre 	Terapiyagacha bo‘lgan maqsadli daraja	Желаемый уровень до начала терапии	Pre Therapeutic Desired Level
+3	      post 	Terapiyadan keyingi maqsadli daraja	Желаемый уровень после проведения терапии	Post Therapeutic Desired Level
+1	  endocrine 	Endokrin	Эндокринная	Endocrine
+2	    pre-puberty 	Balog‘atgacha bo‘lgan davr	Допубертатный период	Pre-Puberty
+2	    follicular 	Follikulyar bosqich	Фолликулярная стадия	Follicular Stage
+2	    midcycle 	O‘rtacha sikl	Средний цикл	MidCycle
+2	    luteal 	Lyuteinli	Лютеиновая	Luteal
+2	    postmenopausal 	Postmenopauza	Постменопауза	Post-Menopause

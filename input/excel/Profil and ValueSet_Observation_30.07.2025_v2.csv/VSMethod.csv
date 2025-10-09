@@ -1,0 +1,2016 @@
+Code	UZ	RU (SNOMED CT)	EN
+ 272394005 		Техника	Technique
+  58207001 		Конкурентный анализ связывания белков	Competitive protein binding assay
+  115341008 		Общее измерение	Total measurement
+  246363001 		Техника получения	Acquisition technique
+  246502009 		Техника наполнения мочевого пузыря	Bladder filling technique
+  246503004 		Техника перемещения катетера	Catheter movement technique
+  246504005 		Техника чтения вблизи	Near reading technique
+  246505006 		Метод обнаружения фотонов	Photon detection technique
+  246506007 		Техника провокации	Provocation technique
+  246507003 		Методика стимуляции	Stimulation technique
+  255459008 		Вспышка	Flash
+  255463001 		Техника одиночной тетании	Single tetany technique
+  255583002 		Техника ретрузионного соотношения челюстей	Retruded jaw relation technique
+  256233002 		Ректально вводимый солевой раствор	Rectally infused saline solution
+  257425005 		Светлое поле	Bright field
+  257428007 		Техника вмятинного рукава	Dent sleeve technique
+  257452000 		Сбиса бар	Sbisa bar
+  257456002 		Техника сплошной сферы	Solid sphere technique
+  257460004 		Развернутые полосы пространственной частоты	Swept spatial frequency bars
+  257465009 		Техника восковых пластин	Wax wafer technique
+  257740006 		Техника продвижения VY	V-Y advancement technique
+  257771002 		Цементирование	Cementing
+  257772009 		Цементирование цементом нормальной вязкости	Cementing with normal viscosity cement
+  257774005 		Цементирование цементом низкой вязкости	Cementing with low viscosity cement
+  257775006 		Цементирование цементом нормальной вязкости, содержащим антибиотик	Cementing with normal viscosity cement containing antibiotic
+  257776007 		Цементирование цементом низкой вязкости, содержащим антибиотик	Cementing with low viscosity cement containing antibiotic
+  257827009 		Фиксация компонентов методом прессовой посадки	Press-fit component fixation
+  257932009 		Техника прямого наложения швов	Direct suturing technique
+  258005004 		Акселерометрия	Accelerometry
+  258006003 		Ацидометрический метод	Acidometric method
+  258009005 		Методика камеры Бойдена	Boyden chamber technique
+  258010000 		Манометрия кончика катетера	Catheter tip manometry
+  258011001 		Метод шахматной доски	Chessboard method
+  258012008 		Конфокальная лазерная сканирующая флуоресценция	Confocal laser scanning fluorescence
+  258013003 		Обычная манометрия	Conventional manometry
+  258014009 		Разбавление и колориметрия	Dilution and colorimetry
+  258017002 		Тест на разбавление красителя двойным отбором проб	Double sampling dye-dilution test
+  258018007 		Измерение дренажной бутылки	Drainage bottle measurement
+  258019004 		Измерение дренажа	Drainage measurement
+  258020005 		Метод разбавления красителя	Dye dilution technique
+  258021009 		Тест на краску	Dye test
+  258025000 		Ферментно-опосредованный иммунотрансферазный анализ	Enzyme-mediated immunotransferase assay
+  258026004 		Ферментный метод	Enzyme method
+  258027008 		Метод уравновешивания	Equilibration method
+  258030001 		Метод градиента	Gradient method
+  258031002 		Техника одинарного дыхания гелием	Helium single breath technique
+  258033004 		Метод стационарного состояния гелия	Helium steady state technique
+  258034005 		Разбавление гелия	Helium dilution
+  258035006 		Жидкостная хроматография высокого давления	High pressure liquid chromatography
+  258036007 		Иммуноблоттинг	Immunoblotting
+  258037003 		Иммунорадиометрия	Immunoradiometry
+  258038008 		Метод разбавления индикатора	Indicator dilution technique
+  258039000 		Иодометрический метод	Iodometric method
+  258041004 		Изоферментное типирование	Isoenzyme typing
+  258044007 		Лектин типирование	Lectin typing
+  258045008 		Липополисахаридное типирование	Lipopolysaccharide typing
+  258048005 		Микробиологический метод	Microbiological method
+  258054006 		Натуральная начинка	Natural filling
+  258055007 		Метод нитроцефина	Nitrocefin method
+  258056008 		Вымывание азота	Nitrogen washout
+  258059001 		Фармакологическая стимуляция	Pharmacological stimulation
+  258060006 		Фенотипирование	Phenotyping
+  258063008 		Пневматическая отоскопия	Pneumatic otoscopy
+  258065001 		Осаждение полиэтиленгликолем	Polyethylene glycol precipitation
+  258066000 		Полимеразная цепная реакция	Polymerase chain reaction
+  258067009 		Посттетаническая стимуляция счета	Post-tetanic count stimulation
+  258068004 		Профилирование белков	Protein profiling
+  258069007 		Пиролизная масс-спектрометрия	Pyrolysis mass spectrometry
+  258070008 		Быстрое протягивание	Rapid-pull through
+  258071007 		Метод реверсивного дыхания	Rebreathing method
+  258075003 		Серотипирование	Serotyping
+  258076002 		Методика фиктивного кормления	Sham feed technique
+  258077006 		Методика Шеридана Гардинера	Sheridan Gardiner technique
+  258078001 		Станция вытягивания	Station pull-through
+  258080007 		Метод термодилюции	Thermodilution technique
+  258081006 		Поглощение ультрафиолета	Ultraviolet absorption
+  258082004 		Анализ векторного объема	Vector volume analysis
+  258083009 		Визуальная оценка	Visual estimation
+  258084003 		Взвешивание тампонов	Weighing of swabs
+  258086001 		Типирование зимодема	Zymodeme typing
+  258087005 		Разбавление агара	Agar dilution
+  258094008 		Темная земля	Dark ground
+  258099003 		Флуоресценция	Fluorescence
+  258100006 		Метод гетерофории	Heterophoria method
+  258102003 		Техника прерывистого отнятия	Intermittent withdrawal technique
+  258109007 		Полиморфизм длины рестрикционного фрагмента	Restriction fragment length polymorphism
+  258110002 		Солевой метод	Saline method
+  258112005 		Олигонуклеотидный зонд, специфичный для последовательности	Sequence specific oligonucleotide probe
+  258113000 		Праймеры, специфичные для последовательности - полимеразная цепная реакция	Sequence specific primers-polymerase chain reaction
+  258114006 		SRH - Одиночный радиальный гемолиз	SRH - Single radial hemolysis
+  258118009 		Измерение всасывания и дренажа	Suction drainage measurement
+  258120007 		Понижение давления пара	Vapor pressure depression
+  258121006 		Равновесие без ограничений	Ungated equilibrium
+  258122004 		Анализ метиловых эфиров длинноцепочечных жирных кислот во всей клетке	Whole cell long chain fatty acid methyl ester analysis
+  258123009 		Методика ЭКГ-синхронизации	ECG gated technique
+  258124003 		Равновесие с затвором	Gated equilibrium
+  258125002 		Понижение точки замерзания	Freezing point depression
+  258126001 		Фазовый контраст	Phase contrast
+  258128000 		Техника рук Шегрена	Sjogren hand technique
+  258129008 		Метод Снеллена	Snellen technique
+  258131004 		Разделение в градиенте плотности сахарозы	Sucrose density gradient separation
+  258133001 		Анализ пластины	Plate assay
+  258144009 		Изменение позиции	Position change
+  258150004 		Передача инфекции	Transmission
+  258159003 		Типирование производства слизи	Slime production typing
+  258164004 		Метод Сельдингера	Seldinger technique
+  258169009 		Метод реконструированного мешка (квалифицирующее значение)	Remodeled pouch method (qualifier value)
+  258171009 		Слепая техника	Blind technique
+  258173007 		Техника прямого видения	Direct vision technique
+  258178003 		Методика аспирации крови	Blood aspiration technique
+  258179006 		Техника обратного отсчета крови	Blood flashback technique
+  258180009 		Анализ формы волны давления	Pressure waveform analysis
+  258181008 		Анализ ЭКГ	ECG analysis
+  258182001 		Холодное просвечивание светом	Cold light transillumination
+  258183006 		Инъекция газа и аускультация	Gas injection and auscultation
+  260223001 		Техника максимального интеркуспидации	Maximum intercuspation technique
+  260227000 		Твердофазный иммунный метод	Solid phase immune technique
+  260231006 		Техника Ван Слайка	Van Slyke technique
+  260710009 		Техника обтурации	Obturation technique
+  260931002 		Постобработка	Post-processing
+  260982004 		Техника антиискривления	Anticurvature technique
+  261006005 		Цифровой рентген	Digital X-ray
+  261009003 		Метод двойного отверждения	Dual cure method
+  261018001 		Механический	Mechanical
+  261032004 		Оборот	Turnover
+  261033009 		Ультразвуковая эндодонтическая техника	Ultrasonic endodontic technique
+  261039008 		Маневр Вальсальвы	Valsalva maneuvre
+  261069001 		Техника двойного контраста	Double contrast technique
+  261070000 		Техника двойной вспышки	Double flare technique
+  261190007 		Метод Дотри	Dautrey method
+  261192004 		Техника сбалансированной силы	Balanced force technique
+  261194003 		Киноисследование	Cine study
+  261196001 		Техника прямого нанесения	Direct application technique
+  261208004 		Периодическое введение	Intermittent administration
+  261209007 		Техника совместного использования сосков	Nipple sharing technique
+  261212005 		Чрескожный с автоматизированным инструментарием	Percutaneous with automated instrumentation
+  261213000 		Чрескожный с эндоскопическим инструментарием	Percutaneous with endoscopic instrumentation
+  261214006 		Чрескожная лазерная аппаратура	Percutaneous with laser instrumentation
+  261215007 		Чрескожный с ручным инструментом	Percutaneous with manual instrumentation
+  261216008 		Радионуклидная плетизмография	Radionuclide plethysmography
+  261271009 		Термопластиковая техника	Thermal plastic technique
+  261272002 		Термическая техника твердого тела	Thermal solid technique
+  261338007 		Техника адгезии с дополнительным швом	Adhesive with supplementary suture technique
+  261373009 		Техника имплантации	Implant technique
+  261504003 		Техника закрытой диссекции прямой кишки	Close rectal dissection technique
+  261510003 		Традиционная ангиография	Conventional angiography
+  261548008 		Периартикулярная остеотомия	Periarticular osteotomy
+  261561008 		Техника полки	Shelf technique
+  261567007 		Метод термической инъекции	Thermal injection technique
+  261573008 		Стимуляция тиреотропин-рилизинг-гормона	Thyrotrophin releasing hormone stimulation
+  261671000 		Техника воздушного контраста	Air contrast technique
+  261699009 		Перед фильтром	Before the filter
+  261700005 		техника Бенчекроун	Benchekroun technique
+  261708003 		Фиксация компонентов биохимической связи	Biochemical bond component fixation
+  261710001 		Техника деления угла пополам	Bisecting angle technique
+  261714005 		Система врастания костей	Bone ingrowth system
+  261732005 		Стимуляция кортиколиберина	Corticotrophin releasing hormone stimulation
+  261754007 		Непрерывная инфузия	Continuous infusion
+  261787006 		Техника эксплантации	Explant technique
+  261790000 		Техника сверхвысокого разрешения	Extra-high resolution technique
+  261793003 		Техника направленного потока	Flow-directed technique
+  261856001 		Техника Айзекса	Isaacs technique
+  261909000 		Метод светоотверждения	Light cure method
+  261940007 		Метод механического захвата	Mechanical grab method
+  261943009 		Методика Митрофанова	Mitrofanoff technique
+  261947005 		Модифицированная техника двойной вспышки	Modified double flare technique
+  261958001 		Многоплоскостная реконструкция	Multiplanar reconstruction
+  261981004 		Нейтральная зона	Neutral zone
+  262041006 		Техника параллельного проведения	Paralleling technique
+  262048000 		Метод циклирования пациента	Patient cycled method
+  262062007 		Выходная мощность	Power output
+  262063002 		Метод с питанием	Powered method
+  262064008 		Гибкий метод с электроприводом	Powered flexible method
+  262065009 		Метод с жестким приводом	Powered rigid method
+  262069003 		Метод контроля давления	Pressure controlled method
+  262092003 		Взаимно-механическая техника	Reciprocal mechanical technique
+  262095001 		Оставаясь на связи	Remaining connected
+  262110008 		Ротационная механическая эндодонтическая техника	Rotary mechanical endodontic technique
+  262136001 		Метод самоизлечения	Self-cure method
+  262148003 		Метод одиночного контрастирования	Single contrast technique
+  262162005 		Звуковая эндодонтическая техника	Sonic endodontic technique
+  262174009 		Стандартизированная техника	Standardized technique
+  262180001 		Техника шага назад	Stepback technique
+  262181002 		Техника спуска	Stepdown technique
+  262201007 		Метод поглощения таллия	Thallium uptake method
+  262207006 		Метод временного цикла	Time cycled method
+  262265000 		Метод контроля громкости	Volume controlled method
+  262278000 		Техника согревания внутривенной жидкости	Warming intravenous fluid technique
+  262293001 		Методика с использованием проволоки	Wire guided technique
+  262295008 		С измерением зазора	With clearance measurement
+  262296009 		Техника перекрестной компрессии	Cross-compression technique
+  262300005 		С СКФ	With GFR
+  262305000 		С разделением	With separation
+  262310001 		С анализом перистальтики мочеточника	With ureteric peristalsis analysis
+  262313004 		Без перемонтажа	Without remount
+  262320006 		Метод очистки ксенона	Xenon clearance method
+  262323008 		После фильтра	After the filter
+  263664004 		Измененная техника литья	Altered cast technique
+  263696007 		Разбавление бульона	Broth dilution
+  263725008 		Метод постоянного ускорения	Constant acceleration technique
+  263746004 		Метод электрочувствительности	Electrosensitivity technique
+  263781002 		Импульс	Impulse
+  263809005 		Микрососудистый	Microvascular
+  263902000 		Транскутанная методика	Transcutaneous method
+  264220008 		Превосходная техника педикулеза	Superior pedicle technique
+  264268002 		Агарозная техника	Agarose technique
+  264269005 		Анализ паттерна аминокислотной сигнатуры	Amino acid signature pattern analysis
+  264270006 		Техника центральной ножки	Central pedicle technique
+  264271005 		Анализ связывания компонента комплемента 1q	Complement component 1q binding assay
+  264272003 		Метод проводимости	Conductivity technique
+  264273008 		Техника непрерывного отхода	Continuous withdrawal technique
+  264275001 		Иммуноферментный анализ с поляризацией флуоресценции	Fluorescence polarization immunoassay
+  264276000 		Метод полушахматной доски	Half chessboard method
+  264277009 		Отскок пятки	Heel bounce
+  264279007 		Метод гидроксиламина	Hydroxylamine method
+  264280005 		Техника нижней ножки	Inferior pedicle technique
+  264281009 		техника Дюфурменталя	Dufourmental technique
+  264283007 		Техника многократного дыхания	Multiple-breath technique
+  264284001 		Техника одинарного дыхания	Single-breath technique
+  264355007 		Техника Ffooks	Ffooks technique
+  264582003 		Типирование антибиотикограммы	Antibiogram typing
+  264583008 		Ауксотипирование	Auxotyping
+  264584002 		Типирование бактериоцина	Bacteriocin typing
+  264590003 		Стимуляция гипоталамуса	Hypothalamic stimulation
+  264619009 		Техника 100 оттенков	100 hue technique
+  264773007 		Диенес печатает	Dienes typing
+  264788002 		Биотипирование	Biotyping
+  264828007 		Технологический университет города	City University technique
+  264859009 		Техника Маклюра	Maclure technique
+  264863002 		Морфотипирование	Morphotyping
+  264896000 		Анализ нуклеиновых кислот	Nucleic acid analysis
+  264903000 		Методика стимуляции паттерна «начало/смещение»	Pattern onset/offset stimulation technique
+  264934001 		Типирование токсинов	Toxin typing
+  264935000 		Метод транслюминального протезирования	Transluminal prosthetic method
+  264946002 		Маскировка белого шума противоположного уха	White noise masking of opposite ear
+  272389005 		Анализ	Analysis
+  272390001 		Разбавление	Dilution
+  272391002 		Измерение	Measurement
+  272392009 		Анализ	Assay
+  272393004 		Тесты	Tests
+  272395006 		Типы	Typings
+  276857005 		Грудной импеданс	Thoracic impedance
+  277337007 		Методика поверхностных ориентиров	Surface landmark technique
+  277581000 		Методы наложения швов	Suturing techniques
+  277620007 		Стоматологические методы	Dental techniques
+  277768009 		Автоматизированная эндодонтическая техника	Automated endodontic technique
+  277769001 		Техника рук	Hand technique
+  277835006 		Техника откидного клапана	Flap valve technique
+  277853000 		Подслизистая туннельная техника	Submucosal tunnel technique
+  277913002 		Промывание тампонов	Washing of swabs
+  278283001 		Чрескожные методы	Percutaneous techniques
+  278289002 		Метод микроскопии (квалифицирующее значение)	Microscopy technique (qualifier value)
+  278300004 		Техника протягивания	Pull-through technique
+  278394000 		Методика замещения жидкости	Fluid replacement technique
+  278395004 		Техника визуализации	Imaging technique
+  278440009 		Техника копирования зубных протезов	Copy denture technique
+  281408006 		Запуск потока	Flow triggering
+  281409003 		Срабатывание давления	Pressure triggering
+  281410008 		Дифференциальная вентиляция легких	Differential lung ventilation
+  281417006 		Однолегочная вентиляция	One lung ventilation
+  281418001 		Вентиляция левого легкого	Left lung ventilation
+  281419009 		Вентиляция правого легкого	Right lung ventilation
+  281420003 		Двусторонняя вентиляция легких	Bilateral lung ventilation
+  284466007 		Техника управления гневом	Anger management technique
+  284467003 		Техника релаксации	Relaxation technique
+  286811001 		Метод циклирования с ограничением давления	Pressure limited cycling method
+  302554003 		Метод контрастной визуализации	Contrast imaging technique
+  304033004 		Специфическая техника стимуляции	Specific stimulation technique
+  304364007 		Фиксация компонента протезного сустава	Fixation of prosthetic joint component
+  304367000 		Бесцементная фиксация компонентов	Uncemented component fixation
+  309796000 		Техника потери сопротивления	Loss of resistance technique
+  309797009 		Потеря сопротивления воздуху	Loss of resistance to air
+  309798004 		Потеря устойчивости к солевому раствору	Loss of resistance to saline
+  312245009 		Методика ангиографии	Angiography technique
+  312246005 		Цифровая субтракционная ангиография	Digital subtraction angiography
+  312348008 		Постобработка изображения	Image post-processing
+  313115005 		Техника переноса лоскута	Flap transfer technique
+  313116006 		Техника продвижения	Advancement technique
+  313201001 		Простая техника наложения швов	Simple suture technique
+  313202008 		Техника Z-пластики	Z-plasty technique
+  313281003 		Скольжение вперед	Forward sliding
+  359838000 		Нефелометрия	Nephelometry
+  362943005 		Ручной метод	Manual method
+  371871002 		Отдельные удары - метод числовой оценки (квалифицирующее значение)	Single beats - numeric estimation technique (qualifier value)
+  371912002 		Оптимальное значение – метод числовой оценки (квалифицирующее значение)	Best value - numeric estimation technique (qualifier value)
+  371913007 		Точечный источник - метод числовой оценки (значение квалификатора)	Point source - numeric estimation technique (qualifier value)
+  371914001 		Пик-пик - метод числовой оценки (значение квалификатора)	Peak to peak - numeric estimation technique (qualifier value)
+  371916004 		Представитель - числовой метод оценки (значение квалификатора)	Representative - numeric estimation technique (qualifier value)
+  373098007 		Методика численной оценки среднего значения (квалифицирующее значение)	Mean - numeric estimation technique (qualifier value)
+  373099004 		Медиана - метод числовой оценки (значение квалификатора)	Median - numeric estimation technique (qualifier value)
+  373100007 		Режим - метод числовой оценки (значение квалификатора)	Mode - numeric estimation technique (qualifier value)
+  373115008 		Рутина - методика числовой оценки (квалифицирующее значение)	Routine - numeric estimation technique (qualifier value)
+  397801003 		Одиночный болюс	Single bolus
+  397850009 		Метод внутрисосудистого подтверждения (квалифицирующее значение)	Intravascular confirmation method (qualifier value)
+  397884008 		Прерывистый болюс	Intermittent bolus
+  397916001 		Техника потери сопротивления - другая жидкость (квалифицирующее значение)	Loss of resistance technique - other fluid (qualifier value)
+  398037009 		Метод определения местоположения судна (значение квалификатора)	Vessel location technique (qualifier value)
+  398129004 		Метод потери сопротивления - как физиологический раствор, так и воздух (квалифицирующее значение)	Loss of resistance technique - both saline and air (qualifier value)
+  398317000 		Методика использования иглы-искателя (квалифицирующее значение)	Finder needle technique (qualifier value)
+  404655007 		Автофлуоресценция	Autofluorescence
+  414378002 		Техника «висячей капли» (квалифицирующее значение)	Hanging drop technique (qualifier value)
+  414456005 		Метод визуализации (значение квалификатора)	Imaging guidance technique (qualifier value)
+  414611008 		Техника размещения линий (квалифицирующее значение)	Line placement technique (qualifier value)
+  415037003 		Техника парестезии (квалифицирующее значение)	Paresthesia technique (qualifier value)
+  415741008 		Трансартериальная методика (квалифицирующее значение)	Transarterial technique (qualifier value)
+  416238005 		Методика интубации (квалифицирующее значение)	Intubation technique (qualifier value)
+  416423007 		Техника интубации трахеи (квалифицирующее значение)	Tracheal intubation technique (qualifier value)
+  417453009 		Техника бронхиальной интубации (квалифицирующее значение)	Bronchial intubation technique (qualifier value)
+  418449005 		Мягко (значение квалификатора)	Gently (qualifier value)
+  418694008 		Быстро (значение квалификатора)	Rapidly (qualifier value)
+  419125005 		Щедро (значение квалификатора)	Liberally (qualifier value)
+  419443000 		Медленно (значение квалификатора)	Slowly (qualifier value)
+  419913006 		Энергично (квалифицирующее значение)	Vigorously (qualifier value)
+  420004004 		Проглочен целиком (уточняющее значение)	Swallowed whole (qualifier value)
+  424457002 		Метод интратекального подтверждения	Intrathecal confirmation technique
+  445911007 		Экстракорпоральная техника (квалифицирующее значение)	Extracorporeal technique (qualifier value)
+  446402005 		Методика гемодиализа (квалифицирующее значение)	Hemodialysis technique (qualifier value)
+  446406008 		Техника ингаляции (квалифицирующее значение)	Inhalation technique (qualifier value)
+  446947001 		Метод электроосмоса (квалифицирующее значение)	Electroosmosis technique (qualifier value)
+  447027002 		Техника орошения (квалифицирующее значение)	Irrigation technique (qualifier value)
+  447056002 		Техника окклюзионной повязки (квалифицирующее значение)	Occlusive dressing technique (qualifier value)
+  447120003 		Техника инъекции (квалифицирующее значение)	Injection technique (qualifier value)
+  447692002 		Методика чрескожной гастростомии (кнопочной) (квалифицирующее значение)	Percutaneous gastrostomy (button) technique (qualifier value)
+  447693007 		Методика перитонеального диализа (квалифицирующее значение)	Peritoneal dialysis technique (qualifier value)
+  447826007 		Методика инфузии (квалифицирующее значение)	Infusion technique (qualifier value)
+  447963004 		Методика внутривенного нагнетания (квалифицирующее значение)	Intravenous push technique (qualifier value)
+  448076005 		Методика ионофореза (квалифицирующее значение)	Iontophoresis technique (qualifier value)
+  449137004 		Внутривенная техника пиггибэк (квалифицирующее значение)	Intravenous piggyback technique (qualifier value)
+  449225005 		Методика гемодиафильтрации (квалифицирующее значение)	Hemodiafiltration technique (qualifier value)
+  702658000 		Микробная культура	Microbial culture
+  702659008 		Автоматический подсчет	Automated count
+  702660003 		Тест-полоска	Test strip
+  702661004 		Световая микроскопия	Light microscopy
+  702662006 		Микроскопия с сильным полевым светом	High power field light microscopy
+  702663001 		Ручной подсчет	Manual count
+  702664007 		Иммунологический метод (квалифицирующее значение)	Immunological method (qualifier value)
+  702665008 		Цитологическое окрашивание	Cytology stain
+  702666009 		Цитология	Cytology
+  702667000 		Формула расчета клиренса (значение квалификатора)	Clearance calculation formula (qualifier value)
+  702668005 		Формула модификации диеты при почечной недостаточности	Modification of diet in renal disease formula
+  702669002 		Прямой анализ	Direct assay
+  702673004 		Зонд дезоксирибонуклеиновой кислоты	Deoxyribonucleic acid probe
+  702674005 		Зонд гибридизации нуклеиновых кислот	Nucleic acid hybridization probe
+  702675006 		Зонд с целевым усилением	Probe with target amplification
+  702872006 		Предел обнаружения равен или меньше 20 мг/л	Detection limit equal to or less than 20 mg/L
+  702873001 		Методика расчета (значение квалификатора)	Calculation technique (qualifier value)
+  702940009 		Фильтрация	Filtration
+  702941008 		Заливка парафином	Paraffin embedding
+  702942001 		Концентрация (квалифицирующее значение)	Concentration (qualifier value)
+  702943006 		Извлечение ДНК	DNA extraction
+  702944000 		Извлечение РНК	RNA extraction
+  702945004 		Оценивается по гликированному гемоглобину	Estimated from glycated hemoglobin
+  702946003 		Методика коагуляции	Coagulation technique
+  702947007 		С поправкой на ядросодержащие эритроциты	Corrected for nucleated erythrocytes
+  703436002 		Предел обнаружения равен или меньше 0,005 мМЕ/л	Detection limit equal to or less than 0.005 mIU/L
+  703437006 		Предел обнаружения равен или меньше 0,01 нг/мл	Detection limit equal to or less than 0.01 ng/mL
+  703438001 		Предел обнаружения равен или меньше 0,05 мМЕ/л	Detection limit equal to or less than 0.05 mIU/L
+  703439009 		Предел обнаружения равен или меньше 1,0 нг/дл	Detection limit equal to or less than 1.0 ng/dL
+  703440006 		Предел обнаружения равен или меньше 3,47 пмоль/л	Detection limit equal to or less than 3.47 pmol/L
+  703441005 		Метод окраски по Райту	Wright stain method
+  703442003 		Тест восприимчивости с помощью градиентной полоски	Gradient strip susceptibility test
+  703443008 		Метод окрашивания грибка	Fungus stain method
+  703444002 		Иммуноферментный анализ флуоресценции	Fluorescent immunoassay
+  703445001 		Измерение ионселективным электродом	Ion selective electrode measurement
+  703446000 		Иммуноблот-анализ	Immunoblot assay
+  703447009 		Методика ИФА	EIA technique
+  703448004 		Реакция латексной агглютинации	Latex agglutination test
+  703449007 		Радиоиммуноанализ	Radioimmunoassay
+  703450007 		Электрофорез	Electrophoresis
+  703451006 		Микроскопия с низким полем света	Low power field light microscopy
+  703452004 		Метод электрического импеданса	Electrical impedance technique
+  703454003 		Метод центрифугирования (квалифицирующее значение)	Centrifugation technique (qualifier value)
+  703455002 		Метод быстрого плазменного реагина	Rapid Plasma Reagin technique
+  703456001 		Методика лабораторного исследования венерических заболеваний	Venereal Disease Research Laboratory technique
+  703457005 		Метод влажной подготовки	Wet preparation technique
+  703458000 		Метод нейтрализации	Neutralization method
+  703459008 		Техника Вестергрена	Westergren technique
+  703460003 		Техника Винтроуба	Wintrobe technique
+  703461004 		Метод концентрации паразитов	Concentration of parasites method
+  703462006 		Формула Кокрофта-Голта (квалифицирующее значение)	Cockcroft-Gault formula (qualifier value)
+  703463001 		Рассчитано на основе парциального давления кислорода	Calculated from oxygen partial pressure
+  703488009 		Коагуляция с использованием смеси солевого раствора 1:1 (квалифицирующее значение)	Coagulation 1:1 saline mixture technique (qualifier value)
+  703490005 		Транскутанное измерение CO2	Transcutaneous CO2 monitor
+  703492002 		Транскутанное измерение O2	Transcutaneous O2 monitor
+  703497008 		Рассчитывается по отношению сигнала к уровню отсечки	Calculated from signal to cutoff ratio
+  703501003 		Метод токсикологического скрининга (квалифицирующее значение)	Toxicology screening technique (qualifier value)
+  703505007 		Расчет зазора относительно площади поверхности тела 1,73 кв. м (квалифицирующее значение)	Clearance calculation relative to 1.73 square meters body surface area (qualifier value)
+  703506008 		Расчет клиренса относительно площади поверхности тела 1,73 квадратных метра с поправкой на африканскую расу	Clearance calculation relative to 1.73 square meters body surface area and adjusted for African race
+  703507004 		Расчет клиренса относительно площади поверхности тела 1,73 квадратных метра и с поправкой на неафриканскую расу (квалификационное значение)	Clearance calculation relative to 1.73 square meters body surface area and adjusted for non-African race (qualifier value)
+  703689005 		Высокочувствительный метод определения С-реактивного белка	High sensitivity method for C-reactive protein
+  703690001 		Подтверждающий метод (квалифицирующее значение)	Confirmatory technique (qualifier value)
+  703724007 		Высокочувствительный метод определения эстрадиола (квалифицирующее значение)	High sensitivity method for estradiol (qualifier value)
+  703725008 		Культура	Culture
+  703750006 		Аэробная культура	Aerobic culture
+  703751005 		Анаэробная культура	Anaerobic culture
+  703752003 		Организм-специфическая культура	Organism specific culture
+  703753008 		Обнаружение без классификации	Detecting without classifying
+  703754002 		Обнаружение с помощью световой микроскопии без классификации	Detecting by light microscopy without classifying
+  703856008 		Методика окраски организмов (квалифицирующее значение)	Organism staining technique (qualifier value)
+  703857004 		Методика окрашивания (квалифицирующее значение)	Staining technique (qualifier value)
+  703858009 		Метод числовой оценки (значение квалификатора)	Numeric estimation technique (qualifier value)
+  703950001 		Высокочувствительный метод определения биодоступного тестостерона (квалифицирующее значение)	High sensitivity method for bioavailable testosterone (qualifier value)
+  707682000 		Скорректированная методика измерения (квалифицирующее значение)	Adjusted measurement technique (qualifier value)
+  707683005 		Скорректировано для техники диабета (квалифицирующее значение)	Adjusted for diabetes technique (qualifier value)
+  707684004 		Скорректировано для техники многоплодной беременности (значение квалификатора)	Adjusted for multiple gestations technique (qualifier value)
+  707685003 		Скорректировано для техники глобулина, связывающего половые гормоны (значение квалификатора)	Adjusted for sex hormone binding globulin technique (qualifier value)
+  707687006 		С поправкой на технику веса (квалификационное значение)	Adjusted for weight technique (qualifier value)
+  707688001 		Методика, адаптированная к фактической температуре пациента (квалифицирующее значение)	Adjusted to patients actual temperature technique (qualifier value)
+  707689009 		Методика с поправкой на pH 7,4 (квалифицирующее значение)	Adjusted to pH 7.4 technique (qualifier value)
+  707690000 		С поправкой на альбуминовую технику (квалифицирующее значение)	Corrected for albumin technique (qualifier value)
+  707691001 		С поправкой на фоновую технику (значение квалификатора)	Corrected for background technique (qualifier value)
+  707692008 		Скорректировано для техники определения глюкозы (квалифицирующее значение)	Corrected for glucose technique (qualifier value)
+  707693003 		Скорректировано для техники общего белка (квалифицирующее значение)	Corrected for total protein technique (qualifier value)
+  707694009 		Насыщенность скорректирована до техники 0,5 (квалифицирующее значение)	Saturation adjusted to 0.5 technique (qualifier value)
+  707695005 		Стандартная техника избытка базы	Standard base excess technique
+  707696006 		Стандартный избыток оснований, скорректированный с учетом метода насыщения кислородом	Standard base excess adjusted for oxygen saturation technique
+  707698007 		Выход ионселективного мембранного электрода отрегулирован на pH 7,4	Ion selective membrane electrode output adjusted to pH 7.4
+  707699004 		Выделение гелия за один вдох с поправкой на гемоглобин (квалифицирующее значение)	Helium single breath output adjusted for hemoglobin (qualifier value)
+  707700003 		Автоматизированный вывод подсчета, скорректированный для ядросодержащих эритроцитов (значение квалификатора)	Automated count output corrected for nucleated erythrocytes (qualifier value)
+  707701004 		Рассчитано и скорректировано по массе тела (квалифицирующее значение)	Calculated and adjusted for body weight (qualifier value)
+  707702006 		Расчетный выход, приведенный к стандарту (значение квалификатора)	Calculated output adjusted to standard (qualifier value)
+  708056006 		Кислотостойкое пятно	Acid fast stain
+  708058007 		Проточная цитометрия	Flow cytometry
+  708060009 		Определение генотипа	Genotype determination
+  708061008 		Окраска по Граму	Gram stain
+  708062001 		Иммунодиффузия	Immunodiffusion
+  708063006 		Иммуноэлектрофорез	Immunoelectrophoresis
+  708064000 		Иммунофиксация	Immunofixation
+  708065004 		Пульсоксиметрия	Pulse oximetry
+  708066003 		Трихромное окрашивание	Trichrome stain
+  708067007 		Окраска по Райту-Гимзе	Wright-Giemsa stain
+  708068002 		Молекулярная генетика	Molecular genetics
+  708069005 		Хромогенная техника (квалифицирующее значение)	Chromogenic technique (qualifier value)
+  708070006 		Тест на растворимость	Solubility test
+  708071005 		Техника размазывания	Smearing technique
+  708072003 		Диск, содержащий несколько аллергенов	Multiple allergen-bearing disc
+  708073008 		Тест чувствительности к минимальной ингибирующей концентрации	Minimum inhibitory concentration susceptibility test
+  708074002 		ЛИСС	LISS
+  708075001 		Методика приготовления КОН	KOH preparation technique
+  708076000 		Метод Клейхауэра-Бетке	Kleihauer-Betke technique
+  708077009 		Инфракрасная спектроскопия	Infrared spectroscopy
+  708078004 		Техника окрашивания тушью	India ink staining technique
+  708097004 		Иммуногистохимия	Immunohistochemistry
+  708099001 		Быстрый иммуноферментный анализ	Rapid immunoassay
+  708104000 		Метод агглютинации	Agglutination technique
+  708125000 		Холодная инкубация, 24 часа	Cold incubation, 24 hours
+  708128003 		Холодное окрашивание карболфуксином кислотоустойчивого Киньюна	Acid fast Kinyoun's cold carbolfuchsin stain
+  708130001 		тест Кумбса	Coombs test
+  708131002 		Тест на антитела к человеческому глобулину, прямой	Anti human globulin test, direct
+  708132009 		Тест на античеловеческий глобулин, непрямой	Anti human globulin test, indirect
+  708133004 		Фиксация комплемента	Complement fixation
+  708532004 		Метод агрегации тромбоцитов (квалифицирующее значение)	Platelet aggregation technique (qualifier value)
+  718496006 		Типирование бактериальных бактериофагов (значение квалификатора)	Bacterial bacteriophage typing (qualifier value)
+  719677008 		Прямой иммуноцитохимический метод (квалифицирующее значение)	Direct immunocytochemical technique (qualifier value)
+  722252002 		Техника клинового давления (квалифицирующее значение)	Wedge pressure technique (qualifier value)
+  723204004 		Методика расчета базовой дельты (значение квалификатора)	Base delta calculation technique (qualifier value)
+  723205003 		Метод расчета анионной щели (значение квалификатора)	Anion gap calculation technique (qualifier value)
+  723206002 		Метод расчета анионного зазора на основе ионов натрия, хлорида и бикарбоната (квалифицирующее значение)	Anion gap based on sodium, chloride and bicarbonate ions calculation technique (qualifier value)
+  723207006 		Метод расчета анионного зазора на основе ионов натрия, калия, хлорида и бикарбоната (значение квалификатора)	Anion gap based on sodium, potassium, chloride and bicarbonate ions calculation technique (qualifier value)
+  723208001 		Методика расчета превышения базы (значение квалификатора)	Base excess calculation technique (qualifier value)
+  723209009 		Методика расчета дефицита базы (значение квалификатора)	Base deficit calculation technique (qualifier value)
+  723210004 		Метод седиментации (квалифицирующее значение)	Sedimentation technique (qualifier value)
+  723211000 		Техника зетафуга (значение уточнения)	Zetafuge technique (qualifier value)
+  725675008 		Метод цитохимического окрашивания (квалифицирующее значение)	Cytochemical stain technique (qualifier value)
+  725996004 		Обнаружение с помощью микроскопии с малым усилением поля света без классификации (значение квалификатора)	Detecting by low power field light microscopy without classifying (qualifier value)
+  725997008 		Обнаружение с помощью высокоэнергетической полевой световой микроскопии без классификации (значение квалификатора)	Detecting by high power field light microscopy without classifying (qualifier value)
+  726443006 		Метод колоночной хроматографии (квалифицирующее значение)	Column chromatography technique (qualifier value)
+  726444000 		Методика приготовления на основе жидкости (квалифицирующее значение)	Liquid-based preparation technique (qualifier value)
+  726445004 		Метод цитологии ThinPrep (значение квалификатора)	ThinPrep cytology technique (qualifier value)
+  726446003 		Методика диализа (квалифицирующее значение)	Dialysis technique (qualifier value)
+  726447007 		Методика коагуляции, индуцированной каолином (квалифицирующее значение)	Kaolin induced coagulation technique (qualifier value)
+  726448002 		Методика идентификатора последовательности (значение квалификатора)	Sequence identifier technique (qualifier value)
+  726449005 		Метод иммуноферментного анализа (квалифицирующее значение)	Immunoassay technique (qualifier value)
+  726451009 		Метод усиления сигнала (значение квалификатора)	Signal amplification technique (qualifier value)
+  726528006 		Генотипирование (значение квалификатора)	Genotyping (qualifier value)
+  726748001 		Методика радиоаллергосорбентного тестирования (оценочное значение)	Radioallergosorbent testing technique (qualifier value)
+  733985002 		Сообщается (значение квалификатора)	Reported (qualifier value)
+  735139002 		Методика пятидесятипроцентного гемолитического комплемента (квалифицирующее значение)	Fifty percent hemolytic complement technique (qualifier value)
+  735140000 		Комплемент общий гемолитический CH100	Complement total hemolytic CH100
+  735142008 		Метод расчета среднего объема тромбоцитов (квалифицирующее значение)	Platelet mean volume calculation technique (qualifier value)
+  735143003 		Метод расчета ширины распределения тромбоцитов (квалифицирующее значение)	Platelet distribution width calculation technique (qualifier value)
+  735146006 		Методика расчета среднего корпускулярного объема эритроцитов (квалифицирующее значение)	Erythrocyte mean corpuscular volume calculation technique (qualifier value)
+  735147002 		Методика расчета средней концентрации корпускулярного гемоглобина в эритроцитах (значение квалификатора)	Erythrocyte mean corpuscular hemoglobin concentration calculation technique (qualifier value)
+  735148007 		Методика расчета среднего содержания гемоглобина в эритроцитах (значение квалификатора)	Erythrocyte mean corpuscular hemoglobin calculation technique (qualifier value)
+  735149004 		Методика расчета ширины распределения эритроцитов (значение квалификатора)	Erythrocyte distribution width calculation technique (qualifier value)
+  737102004 		Автоматизированная методика тест-полосок (квалифицирующее значение)	Automated test strip technique (qualifier value)
+  737103009 		Ручная техника с использованием тест-полосок	Manual test strip technique
+  737104003 		Предсказано по формуле Кокрофта-Голта	Predicted by Cockcroft-Gault formula
+  737105002 		Методика расчета скорости клубочковой фильтрации (квалифицирующее значение)	Glomerular filtration rate calculation technique (qualifier value)
+  737106001 		Метод расчета дозировки свободной дезоксирибонуклеиновой кислоты, специфичной для хромосом (значение квалификатора)	Chromosome-specific cell free deoxyribonucleic acid dosage calculation technique (qualifier value)
+  737107005 		Методика расчета индекса иммуноглобулина G	Immunoglobulin G index calculation technique
+  737108000 		Методика расчета скорости синтеза иммуноглобулина G	Immunoglobulin G synthesis rate calculation technique
+  737109008 		Методика расчета индекса свободного тироксина	Free thyroxine index calculation technique
+  737110003 		Методика расчета индекса свободных андрогенов (квалификаторное значение)	Free androgen index calculation technique (qualifier value)
+  737111004 		Метод определения фактора свертывания крови (квалифицирующее значение)	Coagulation factor assay technique (qualifier value)
+  737112006 		Метод коагуляции с использованием диатомита	Diatomaceous earth induced coagulation technique
+  737113001 		Метод расчета международного нормализованного отношения (значение квалификатора)	International normalized ratio calculation technique (qualifier value)
+  737114007 		Метод замещения факторов	Factor substitution technique
+  737115008 		Метод гексагональной фазы фосфолипидов (квалифицирующее значение)	Hexagonal phase phospholipid technique (qualifier value)
+  737116009 		Чувствительная к волчанке техника (квалифицирующее значение)	Lupus sensitive technique (qualifier value)
+  737117000 		Методика коррекции процента чувствительности к волчанке	Lupus sensitive percent correction technique
+  737118005 		Методика определения избыточного количества фосфолипидов, чувствительного к волчанке	Lupus sensitive excess phospholipid technique
+  737119002 		Методика коррекции процента разбавленного яда гадюки Рассела	Dilute Russell viper venom percent correction technique
+  737120008 		Разбавьте яд гадюки Рассела с помощью избытка фосфолипидов	Dilute Russell viper venom excess phospholipid technique
+  737537008 		Расчет на основе общего риска населения (значение квалификатора)	Calculation based on general population risk (qualifier value)
+  737538003 		Расчет на основе возраста матери (значение-квалификатор)	Calculation based on maternal age (qualifier value)
+  738549007 		Расширенная многолучевая выравнивающая рентгенография	Advanced multiple-beam equalization radiography
+  741815002 		Методика измерения с пределом обнаружения равным или ниже 1,0 мг/л	Measurement technique with detection limit equal to or less than 1.0 mg/L
+  758639009 		Метод расчета результата пациента, разделенного на контрольный результат	Patient result divided by control result calculation technique
+  761996005 		Метод оценки	Estimation technique
+  761997001 		Методика коагуляции, индуцированной адреналином (значение квалификатора)	Epinephrine induced coagulation technique (qualifier value)
+  761998006 		Метод процентной коррекции (квалифицирующее значение)	Percent correction technique (qualifier value)
+  761999003 		Чувствительность к волчанке с использованием метода 1:1 объединенной нормальной плазмы (квалифицирующее значение)	Lupus sensitive with 1:1 pooled normal plasma technique (qualifier value)
+  762644008 		Методика оценки созревания костей	Estimation of bone maturation technique
+  767095001 		Метод прямой иммунофлуоресценции (квалифицирующее значение)	Direct immunofluorescence technique (qualifier value)
+  767096000 		Метод непрямой иммунофлуоресценции	Indirect immunofluorescence technique
+  771289004 		Техника окрашивания бенгальским розовым	Rose bengal stain technique
+  782518009 		Модифицированный метод инактивации карбапенемов	Modified carbapenem inactivation method
+  787997001 		Метод хромогенной гибридизации in situ (значение квалификатора)	Chromogenic in situ hybridization technique (qualifier value)
+  787998006 		SISH — метод гибридизации in situ с серебряным усилением	SISH - silver enhanced in situ hybridization technique
+  787999003 		Метод окрашивания рецептора человеческого эпидермального фактора роста 2 (квалифицирующее значение)	Human epidermal growth factor receptor 2 staining method (qualifier value)
+  788000009 		Метод окрашивания киназы анапластической лимфомы	Anaplastic lymphoma kinase staining method
+  789735007 		Техника устойчивой стойки без поддержки на время (квалификационная ценность)	Timed unsupported steady stand technique (qualifier value)
+  833315002 		Метод разбавления радионуклидов (квалифицирующее значение)	Radionuclide dilution technique (qualifier value)
+  865911008 		Метод конфокальной лазерной сканирующей микроскопии	Confocal laser scanning microscopy technique
+  870596008 		Техника шестиметровой ходьбы с хронометражем (квалификационный показатель)	Timed six meter walk technique (qualifier value)
+  897048005 		Биоимпедансная спектроскопия	Bioimpedance spectroscopy
+  897186003 		Интравитальная микроскопия (квалифицирующее значение)	Intravital microscopy (qualifier value)
+  1078210003 		Расчет Z-оценки	Z-score calculation
+  1144763007 		Измерение расстояния методом шестиминутной ходьбы	Distance measurement of six minute walk technique
+  1156040003 		Самооценка (значение квалификатора)	Self reported (qualifier value)
+  1156860005 		Метод иммуноферментного анализа для быстрого обнаружения антигенов (квалифицирующее значение)	Rapid antigen detection immunoassay technique (qualifier value)
+  1156878000 		Метод амплификации нуклеиновых кислот	Nucleic acid amplification technique
+  1179120009 		Метод фракционирования (значение квалификатора)	Fractionation technique (qualifier value)
+  1179171006 		Методика испытания на устойчивость пузырьков	Bubble stability test technique
+  1193851001 		Локальная реконструкция лоскута путем перемещения - действие (квалифицирующее значение)	Local flap reconstruction by advancement - action (qualifier value)
+  1204227006 		Локальная реконструкция лоскута методом ротационного продвижения - действие (квалифицирующее значение)	Local flap reconstruction by rotation advancement technique - action (qualifier value)
+  66691000052100 		Метод электрохемилюминесцентного иммуноанализа	Electrochemiluminescence immunoassay technique
+  66701000052100 		Метод иммуноферментного анализа с флуоресценцией (квалифицирующее значение)	Fluorescent enzyme immunoassay technique (qualifier value)
+  66711000052103 		Метод линейного иммуноферментного анализа	Line immunoassay technique
+  66721000052106 		Метод рекомбинантного иммуноблоттинга (значение квалификатора)	Recombinant immunoblot assay technique (qualifier value)
+  66731000052108 		Метод иммунохроматографического исследования	Immunochromatographic test technique
+  66741000052102 		Метод иммуноферментного анализа с использованием хемилюминесцентных микрочастиц	Chemiluminescent microparticle immunoassay technique
+  68431000052104 		Метод иммуноферментного анализа	Enzyme-linked immunosorbent assay technique
+  70521000052109 		Метод аффинной хроматографии (значение квалификатора)	Affinity chromatography technique (qualifier value)
+  70531000052106 		Метод электрофореза в агарозном геле (квалифицирующее значение)	Agarose gel electrophoresis technique (qualifier value)
+  70541000052100 		Метод хемилюминесценции	Chemiluminescence technique
+  70551000052102 		Метод иммуноферментного анализа (значение квалификатора)	Enzyme-multiplied immunoassay technique (qualifier value)
+  70561000052104 		Метод газовой хроматографии (квалифицирующее значение)	Gas chromatography technique (qualifier value)
+  70581000052105 		Метод капиллярного электрофореза (квалифицирующее значение)	Capillary electrophoresis technique (qualifier value)
+  70591000052107 		Метод пиросеквенирования	Pyrosequencing technique
+  70601000052104 		Метод полимеразной цепной реакции в реальном времени (значение квалификатора)	Real-time polymerase chain reaction technique (qualifier value)
+  70611000052102 		Метод кривой плавления	Melting curve technique
+  70621000052105 		Спектрофотометрический метод (квалифицирующее значение)	Spectrophotometric technique (qualifier value)
+  83561000052101 		Метод фотометрии (квалифицирующее значение)	Photometry technique (qualifier value)
+  83581000052107 		Метод времяпролетной масс-спектрометрии с ионизацией лазерной десорбцией с использованием матрицы (квалифицирующее значение)	Matrix assisted laser desorption ionization time of flight mass spectrometry technique (qualifier value)
+  83591000052109 		Методика иммуноферментного турбидиметрического анализа с использованием частиц (квалифицирующее значение)	Particle-enhanced turbidimetric immunoassay technique (qualifier value)
+  83601000052101 		Метод потенциометрии (квалифицирующее значение)	Potentiometry technique (qualifier value)
+  83611000052104 		Турбидиметрический метод	Turbidimetric technique
+  129264002 		Действие	Action
+  129265001 		Оценка - действие	Evaluation - action
+  129266000 		Измерение - действие	Measurement - action
+  129267009 		Административные меры	Administrative action
+  129268004 		Наблюдение - действие	Observation - action
+  129269007 		Помощь - действие	Assisting - action
+  129271007 		Управление - действие	Management - action
+  129272000 		Стимуляция - действие	Stimulation - action
+  129273005 		Прием - действие	Admission - action
+  129274004 		Разряд - действие	Discharge - action
+  129275003 		Административный перевод - действие (значение квалификатора)	Administrative transfer - action (qualifier value)
+  129276002 		Направление - действие	Referral - action
+  129277006 		Административное распоряжение - действие	Administrative disposition - action
+  129278001 		Аудит - действие	Audit - action
+  129279009 		Судебно-медицинские действия	Medicolegal action
+  129280007 		Судебно-медицинские показания - действие	Medicolegal testimony - action
+  129283009 		Обучение - действие	Training - action
+  129284003 		Хирургическое действие	Surgical action
+  129286001 		Микрохирургия - действие	Microsurgery - action
+  129287005 		Разрез - действие	Incision - action
+  129289008 		Дренаж - действие	Drainage - action
+  129291000 		Бурение - действие	Drilling - action
+  129292007 		Эвакуация - действие	Evacuation - action
+  129293002 		Рассечение - действие	Dissection - action
+  129294008 		Обсуждение - действие	Discission - action
+  129295009 		Продольная резка - действие	Slitting - action
+  129296005 		Деление пополам - действие	Bisection - action
+  129297001 		Бифуркация - действие	Bifurcation - action
+  129298006 		Разделение - действие	Division - action
+  129299003 		Выпуск - действие	Release - action
+  129300006 		Прокол - действие	Puncture - action
+  129301005 		Шрамирование - действие	Scarification - action
+  129303008 		Удаление - действие	Removal - action
+  129304002 		Эксцизия - действие	Excision - action
+  129305001 		Клиновидная резекция - действие	Wedge resection - action
+  129306000 		Хирургическое удаление - действие	Surgical removal - action
+  129307009 		Высылка - действие	Expulsion - action
+  129308004 		Реэксцизия - действие	Reexcision - action
+  129309007 		Ампутация - действие	Amputation - action
+  129310002 		Трансфиксация - действие	Transfixion - action
+  129311003 		Потрошение - действие	Evisceration - action
+  129312005 		Энуклеация - действие	Enucleation - action
+  129313000 		Трепанация - действие	Trephination - action
+  129314006 		Биопсия - действие	Biopsy - action
+  129315007 		Инцизионная биопсия - действие	Incisional biopsy - action
+  129316008 		Стремление - действие	Aspiration - action
+  129317004 		Дебридинг - действие	Debridement - action
+  129318009 		Блюдцеобразование - действие	Saucerization - action
+  129319001 		Кюретаж - действие	Curettage - action
+  129321006 		Обрезка - действие	Trimming - action
+  129322004 		Бритье - действие	Shaving - action
+  129323009 		Скрапинг - действие	Scraping - action
+  129324003 		Филетирование - действие	Filleting - action
+  129325002 		Введение - действие	Introduction - action
+  129326001 		Инъекция - действие	Injection - action
+  129327005 		Татуировка - действие	Tattooing - action
+  129328000 		Инфляция - действие	Inflation - action
+  129330003 		Инфузия - действие	Infusion - action
+  129331004 		Перфузия - действие	Perfusion - action
+  129332006 		Орошение - действие	Irrigation - action
+  129333001 		Инсуффляция - действие	Insufflation - action
+  129334007 		Закапывание - действие	Instillation - action
+  129335008 		Эмболизация - действие	Embolization - action
+  129336009 		Имплантация - действие	Implantation - action
+  129337000 		Реимплантация - действие	Reimplantation - action
+  129338005 		Хирургическая имплантация - действие	Surgical implantation - action
+  129339002 		Интубация - действие	Intubation - action
+  129340000 		Зондирование - действие	Sounding - action
+  129344009 		Хирургическая рецессия - действие	Surgical recession - action
+  129345005 		Резекция-рецессия - действие	Resection-recession - action
+  129346006 		Радиальный разрез - действие	Radial incision - action
+  129347002 		Хирургический перенос - действие	Surgical transfer - action
+  129348007 		Z-пластика - действие	Z-plasty - action
+  129349004 		Хирургическое удлинение - действие	Surgical lengthening - action
+  129350004 		Хирургическое укорочение - действие	Surgical shortening - action
+  129351000 		Хирургическое увеличение - действие	Surgical augmentation - action
+  129352007 		Хирургическое развитие - действие	Surgical advancement - action
+  129353002 		Подвешивание и фиксация - действие	Suspension and fixation - action
+  129354008 		Экстериоризация - действие	Exteriorization - action
+  129355009 		Сумчатость - действие	Marsupialization - action
+  129356005 		Подкрепление - действие	Reinforcement - action
+  129357001 		Закрытие - действие	Closure - action
+  129358006 		Многослойное закрытие - действие	Layered closure - action
+  129360008 		Оверлочная строчка - действие	Oversewing - action
+  129366002 		Закрытие с помощью сгибания - действие	Closure by buckling - action
+  129368001 		Серкляж - действие	Cerclage - action
+  129369009 		Лигирование - действие	Ligation - action
+  129371009 		Фиксация - действие	Fixation - action
+  129372002 		Криопексия - действие	Cryopexy - action
+  129373007 		Пликация - действие	Plication - action
+  129374001 		Имбрикация - действие	Imbrication - action
+  129376004 		Строительство - действие	Construction - action
+  129377008 		Реконструкция - действие	Reconstruction - action
+  129378003 		Стабилизация - действие	Stabilization - action
+  129379006 		Слияние - действие	Fusion - action
+  129380009 		Якорь - действие	Anchoring - action
+  129381008 		Расширение - действие	Enlargement - action
+  129382001 		Разрушение - действие	Destruction - action
+  129383006 		Авульсия - действие	Avulsion - action
+  129384000 		Декортикация - действие	Decortication - action
+  129385004 		Раздевание - действие	Stripping - action
+  129386003 		Снятие швов и перевязка - действие	Stripping and ligation - action
+  129387007 		Абразивное воздействие - действие	Abrasion - action
+  129388002 		Салабразия - действие	Salabrasion - action
+  129389005 		Шлифовка - действие	Grinding - action
+  129390001 		Коагуляция - действие	Coagulation - action
+  129391002 		Уничтожение - действие	Obliteration - action
+  129392009 		Прижигание - действие	Cauterization - action
+  129393004 		Криохирургия - действие	Cryosurgery - action
+  129394005 		Термокоагуляция - действие	Thermocautery - action
+  129395006 		Фулгурация - действие	Fulguration - action
+  129396007 		Электродесикация - действие	Electrodesiccation - action
+  129397003 		Электрокоагуляция - действие	Electrocoagulation - action
+  129398008 		Гальванокоагуляция - действие	Galvanocauterization - action
+  129399000 		Электродеструкция - действие	Electrodestruction - action
+  129400007 		Дробление - действие	Crushing - action
+  129401006 		Фрагментация - действие	Fragmentation - action
+  129402004 		Эмульгирование - действие	Emulsification - action
+  129403009 		Химиохирургия - действие	Chemosurgery - action
+  129404003 		Химикоаутеризация - действие	Chemocautery - action
+  129405002 		Фотокоагуляция - действие	Photocoagulation - action
+  129406001 		Трансплантация - действие	Transplantation - action
+  129407005 		Прививка - действие	Grafting - action
+  129408000 		Манипуляция - действие	Manipulation - action
+  129409008 		Мобилизация - действие	Mobilization - action
+  129410003 		Ремобилизация - действие	Remobilization - action
+  129411004 		Тяга - действие	Traction - action
+  129412006 		Ручное уменьшение - действие	Manual reduction - action
+  129413001 		Возвышение - действие	Elevation - action
+  129414007 		Инструментальная высота - действие	Instrumental elevation - action
+  129415008 		Извлечение - действие	Extraction - action
+  129416009 		Хирургическое извлечение - действие	Surgical extraction - action
+  129418005 		Выражение - действие	Expression - action
+  129419002 		Дилатация - действие	Dilation - action
+  129420008 		Растяжка - действие	Stretching - action
+  129421007 		Расширение и растяжение - действие	Dilation and stretching - action
+  129423005 		Бужирование - действие	Bougienage - action
+  129424004 		Подгонка - действие	Fitting - action
+  129425003 		Применение - действие	Application - action
+  129426002 		Регулировка - действие	Adjustment - action
+  129427006 		Сокращение - действие	Reduction - action
+  129430004 		Консультация - действие	Consultation - action
+  129431000 		Сбор истории - действие	History taking - action
+  129433002 		Инспекция - действие	Inspection - action
+  129434008 		Пальпация - действие	Palpation - action
+  129435009 		Ударные - действие	Percussion - action
+  129436005 		Аускультация - действие	Auscultation - action
+  129437001 		Оптическое просвечивание - действие	Optical transillumination - action
+  129438006 		Рецепт - действие	Prescription - action
+  129441002 		Консультирование - действие	Counseling - action
+  129442009 		Ионтофорез - действие	Iontophoresis - action
+  129443004 		Электролиз - действие	Electrolysis - action
+  129445006 		Администрация - действие	Administration - action
+  129449000 		Функциональная оценка - действие	Functional assessment - action
+  183648002 		Долгосрочная помощь	Long-term assistance
+  245854003 		Проксимальный анастомоз	Proximal anastomosis
+  245855002 		Дистальный анастомоз	Distal anastomosis
+  255595002 		Дебуксировка - действие	Debulking - action
+  256644001 		Штопка - действие	Darning - action
+  257729003 		Абляция	Ablation
+  257730008 		Химическое разрушение	Chemical destruction
+  257739009 		Открытая регулировка	Open adjustment
+  257741005 		Анастомоз	Anastomosis
+  257742003 		Прямой анастомоз - действие	Direct anastomosis - action
+  257743008 		Маневр Лекомпта (значение классификатора)	Lecompte maneuver (qualifier value)
+  257744002 		Анастомоз конец в конец	End-to-end anastomosis
+  257745001 		Двуствольный анастомоз конец в конец - действие (квалифицирующее значение)	Double barreled end-to-end anastomosis - action (qualifier value)
+  257746000 		Анастомоз конец в бок	End-to-side anastomosis
+  257747009 		Ру-ан-И	Roux-en-Y
+  257748004 		Анастомоз конец в бок без туннеля	End-to-side anastomosis without tunnel
+  257749007 		Анастомоз конец в бок с туннелем	End-to-side anastomosis with tunnel
+  257750007 		Анастомоз бок в бок	Side-to-side anastomosis
+  257751006 		Анастомоз «бок в конец» по Уоллесу 1969 года — действие (квалифицирующее значение)	Wallace 1969 side-to-end anastomosis - action (qualifier value)
+  257759008 		FNA – тонкоигольная аспирационная биопсия	FNA - Fine needle aspiration
+  257768005 		Связывание - действие	Binding - action
+  257777003 		Химическая инактивация	Chemical inactivation
+  257778008 		Хемодиссолюция	Chemodissolution
+  257780002 		Массовое закрытие	Mass closure
+  257781003 		Прерванное массовое закрытие	Interrupted mass closure
+  257782005 		Непрерывное массовое закрытие	Continuous mass closure
+  257783000 		Термокоагуляция	Thermocoagulation
+  257784006 		Термическая коагуляция по Семму	Semm thermal coagulation
+  257785007 		Термическая коагуляция по Вольфу	Wolf thermal coagulation
+  257786008 		Криотерапия - действие	Cryotherapy - action
+  257788009 		Расслоение	Delamination
+  257789001 		Гидроделаминация	Hydrodelamination
+  257791009 		Высушивание - действие	Desiccation - action
+  257802002 		Смещение вперед	Anterior displacement
+  257803007 		Смещение назад	Posterior displacement
+  257804001 		Боковое смещение	Lateral displacement
+  257805000 		Медиальное смещение	Medial displacement
+  257806004 		Закрытая ректальная диссекция	Close rectal dissection
+  257808003 		Ультразвуковая диссекция	Ultrasonic dissection
+  257811002 		Наружный дренаж	External drainage
+  257817003 		Цифровая эвакуация	Digital evacuation
+  257821005 		Ручное выражение	Manual expression
+  257822003 		Экстракапсулярная экстракция	Extracapsular extraction
+  257824002 		Внутрикапсулярная экстракция	Intracapsular extraction
+  257825001 		Фенестрация - действие	Fenestration - action
+  257846005 		Баллистическая фрагментация	Ballistic fragmentation
+  257850003 		Механическое дробление	Mechanical fragmentation
+  257855008 		Электромагнитная импульсная фрагментация	Electromagnetic pulse fragmentation
+  257857000 		Гальванизм	Galvanism
+  257859002 		Высокоинтенсивный сфокусированный ультразвук	High intensity focused ultrasound
+  257863009 		Радиоактивное разрушение	Radioactive destruction
+  257867005 		Вставка - действие (квалификатор значения)	Insertion - action (qualifier value)
+  257878002 		Килинг - действие	Keeling - action
+  257880008 		Локализация	Localization
+  257884004 		Иммобилизация - действие	Immobilization - action
+  257885003 		Окклюзия	Occlusion
+  257886002 		Оперативное УЗИ	Operative ultrasound
+  257889009 		Прокладка	Padding
+  257890000 		Пилинг - действие	Peeling - action
+  257893003 		Давление - действие	Pressure - action
+  257894009 		Давление одной рукой	One handed pressure
+  257895005 		Давление двумя руками	Two handed pressure
+  257897002 		Реорганизация - действие	Realignment - action
+  257903006 		Ремонт - действие	Repair - action
+  257905004 		Ремонт киля	Keel repair
+  257906003 		Ремонт Майо	Mayo repair
+  257907007 		Исправление - действие	Patching - action
+  257911001 		Ремонт рецидива	Repair of recurrence
+  257912008 		Вращение - действие	Rotation - action
+  257913003 		IR - Внутреннее вращение	IR - Internal rotation
+  257914009 		Внешнее вращение	External rotation
+  257915005 		Отбор проб	Sampling
+  257916006 		Двусторонняя выборка	Bilateral sampling
+  257917002 		Двусторонняя последовательная выборка	Bilateral sequential sampling
+  257918007 		Двусторонний одновременный отбор проб	Bilateral simultaneous sampling
+  257926004 		Односторонняя выборка	Unilateral sampling
+  257928003 		Сегментация	Segmentation
+  257933004 		Тампонада - действие	Tamponade - action
+  257935006 		Сужение - действие	Tapering - action
+  257937003 		Пересадка мягких тканей	Soft tissue transfer
+  257938008 		Перенос костного блока	Transfer of bone block
+  257940003 		Транспозиция - действие	Transposition - action
+  258061005 		Фотостимуляция	Photic stimulation
+  260222006 		СПЕКТ	SPECT
+  261027000 		Последовательный анастомоз	Sequential anastomosis
+  261191006 		Открытая добыча	Open extraction
+  261197005 		Допплеровский цветовой поток	Doppler color flow
+  261198000 		Допплеровский непрерывный сигнал	Doppler continuous wave
+  261199008 		Допплеровский импульсный	Doppler pulsed
+  261391004 		Шлифовка - действие	Resurfacing - action
+  261498006 		Реконструкция кости, сухожилия надколенника и кости	Bone-patellar tendon-bone reconstruction
+  261499003 		Реконструкция связок с помощью плетеного протеза	Braided prosthetic ligament reconstruction
+  261518005 		Цистодиатермия	Cystodiathermy
+  261519002 		Диатермическая эксцизия	Diathermy excision
+  261526002 		Электромагнитная фрагментация	Electromagnetic fragmentation
+  261545006 		Петлевая диатермическая эксцизия	Loop diathermy excision
+  261553003 		REDY - Регенерация диализата	REDY - Regeneration of dialysate
+  261569005 		Термокомпактирование	Thermocompaction
+  261576000 		Ультразвуковая фрагментация	Ultrasound fragmentation
+  262143007 		Анастомоз «бок в конец»	Side-to-end anastomosis
+  263720003 		Сжатие	Compression
+  264592006 		Внутрипузырная лекарственная терапия	Intravesical drug therapy
+  264594007 		Лазер - действие	Laser - action
+  264730003 		Боковое вращение	Lateral rotation
+  264739002 		Медиальная ротация	Medial rotation
+  272381008 		Микрососудистый анастомоз - действие	Microvascular anastomosis - action
+  274392008 		EUA - Исследование под наркозом	EUA - Examination under anesthetic
+  276734006 		Механическая помощь	Mechanical assistance
+  277261002 		Эксцизионная биопсия	Excision biopsy
+  277607009 		Цифровое удаление	Digital removal
+  277763000 		Переделка	Refashioning
+  277851003 		Кондуитный анастомоз	Conduit anastomosis
+  277852005 		Резервуарный анастомоз	Reservoir anastomosis
+  278110001 		Рентгенографическое изображение	Radiographic imaging
+  278292003 		Ультразвуковая визуализация	Ultrasound imaging
+  278312000 		Повторное присоединение - действие	Reattachment - action
+  278313005 		Регенерация	Regeneration
+  278420002 		Уплотнение	Sealing
+  281609006 		Криоабляция - действие	Cryoablation - action
+  281613004 		Декомпрессия - действие	Decompression - action
+  281615006 		Исследование - действие	Exploration - action
+  281698007 		Криокоагуляция - действие	Cryocautery - action
+  281767003 		Ручная дилатация	Manual dilatation
+  281838007 		Экзартикуляция - действие	Disarticulation - action
+  281839004 		Экзентерация	Exenteration
+  282015008 		Биопсия бритья - действие	Shave biopsy - action
+  282089006 		Замена - действие	Replacement - action
+  282722008 		Ультразвуковая деструкция	Ultrasound destruction
+  286553006 		Пластическая операция	Plastic operation
+  286637000 		Блок диссекции	Block dissection
+  286792001 		Денервация	Denervation
+  287682008 		Применение каустики	Application of caustics
+  288324002 		Эверсия - действие	Eversion - action
+  288466002 		Диатермический разрез	Diathermy incision
+  288468001 		Disimpaction - действие	Disimpaction - action
+  289928003 		Редукционная пластика	Reduction plasty
+  289930001 		Разрушение ферментов	Enzyme destruction
+  289936007 		Бритье иссечение	Shave excision
+  289938008 		Микрохирургическое восстановление	Microsurgical repair
+  290001001 		Рецессия - действие	Recession - action
+  297179000 		Микрохирургический анастомоз	Microsurgical anastomosis
+  297183000 		Реваскуляризация	Revascularization
+  298053008 		Деваскуляризация - действие	Devascularization - action
+  298116000 		Применение вещества	Application of substance
+  299712004 		Остеоклазия - действие	Osteoclasis - action
+  299893001 		Интерпозиционный анастомоз - действие	Interposition anastomosis - action
+  302193003 		Действия по модальности	Actions by modality
+  302196006 		Освобождение - действие	Freeing - action
+  302199004 		Экзамен - действие	Examination - action
+  302204005 		Ультразвук - действие	Ultrasound - action
+  302205006 		Микроволновая печь - действие	Microwave - action
+  303893007 		Функциональная модификация	Functional modification
+  303894001 		Структурная модификация	Structural modification
+  303955003 		Переливание - действие	Transfusion - action
+  303996000 		Терминализация	Terminalization
+  303998004 		Неиспользованные значения действий	Unused action values
+  304054006 		Структурная поддержка - действие	Structural support - action
+  304904003 		Ручная эвакуация	Manual evacuation
+  312236008 		Дуплексное УЗИ	Duplex ultrasound
+  312250003 		Магнитно-резонансная томография	Magnetic resonance imaging
+  312251004 		Метод компьютерной томографии	Computed tomography technique
+  312254007 		Обычная рентгенография	Plain X-ray imaging
+  312275004 		Флюороскопическая визуализация	Fluoroscopic imaging
+  312336005 		Открытие - действие	Opening - action
+  312337001 		Термографическое изображение	Thermography imaging
+  312421008 		Радионуклидная визуализация	Radionuclide imaging
+  312883004 		Десенсибилизация - действие	Desensitization - action
+  313029009 		Брахитерапия - действие	Brachytherapy - action
+  360017003 		Вырезка - действие	Clipping - action
+  360018008 		Методика дозирования стимула	Stimulus dosing technique
+  360020006 		Экстирпация - действие	Extirpation - action
+  360021005 		Обход - действие	Bypass - action
+  360025001 		Сбор урожая - действие	Harvesting - action
+  360027009 		Вмешательство - действие	Interposition - action
+  360028004 		Хирургическая биопсия - действие	Surgical biopsy - action
+  360029007 		Нехирургическая биопсия - действие	Nonsurgical biopsy - action
+  360032005 		Реконструкция лоскута - действие	Flap reconstruction - action
+  360037004 		Визуализация - действие	Imaging - action
+  360038009 		Склеивание - действие	Gluing - action
+  360051004 		Хирургический туалет	Surgical toilet
+  360060007 		Приближение - действие	Approximation - action
+  360082000 		Аппозиция - действие	Apposition - action
+  360084004 		Септация - действие	Septation - action
+  360087006 		Непрямой анастомоз - действие	Indirect anastomosis - action
+  360146007 		Репозиционирование - действие	Repositioning - action
+  360147003 		Внимание - действие	Attention - action
+  360148008 		Акушерское действие	Obstetric action
+  360149000 		Доставка - действие	Delivery - action
+  360150000 		Замена вкладыша - действие	Inlay replacement - action
+  360152008 		Мониторинг - действие	Monitoring - action
+  360153003 		Сделать впечатление - действие	Take impression - action
+  360154009 		Примерка устройства - действие	Try-in of device - action
+  360160009 		Проверка - действие	Checking - action
+  360161008 		Индукция - действие	Induction - action
+  360163006 		Проникновение - действие	Infiltration - action
+  360165004 		Аферез - действие	Apheresis - action
+  360166003 		Фильтрация - действие	Filtration - action
+  360220002 		Картографирование - действие	Mapping - action
+  360222005 		Массаж - действие	Massage - action
+  360223000 		Киносъемка - действие	Cine imaging - action
+  360226008 		Электрический разряд - действие	Electrical discharge - action
+  360231005 		Видеосъемка - действие	Video imaging - action
+  360232003 		Спектроскопия - действие	Spectroscopy - action
+  360239007 		Прекращение - действие	Termination - action
+  360240009 		Связь - действие	Connection - action
+  360270004 		Терапия - действие	Therapy - action
+  360272007 		Обсуждение - действие	Discussion - action
+  360273002 		Положение - действие	Provision - action
+  360314001 		Резка - действие	Cutting - action
+  360315000 		Подача - действие	Filing - action
+  360323003 		Восстановление - действие	Restore - action
+  360324009 		Обтурация - действие	Obturation - action
+  360325005 		Простое удаление - действие	Simple removal - action
+  360393008 		Дезинсекция - действие	Disinsertion - action
+  362939006 		Расторжение - действие	Dissolution - action
+  363659002 		Темп - действие	Pacing - action
+  363678002 		Позитронно-эмиссионная томография	Positron emission tomographic imaging
+  367529003 		Кредитование - действие	Lending - action
+  367558000 		Контурирование - действие	Contouring - action
+  367559008 		Подготовка - действие	Preparation - action
+  367642006 		Инверсия - действие	Inversion - action
+  367740008 		Приостановление - действие	Suspension - action
+  369242005 		Гифрекаця - действие	Hyfrecation - action
+  386746003 		Техническое обслуживание - действие (квалификатор значения)	Maintenance - action (qualifier value)
+  399009009 		Ультразвук в режиме B (квалифицирующее значение)	B mode ultrasound (qualifier value)
+  399015009 		Томографическое изображение, простое рентгенологическое - действие (значение квалификатора)	Tomographic imaging, plain radiologic - action (qualifier value)
+  399035005 		Томографическое изображение - действие (значение квалификатора)	Tomographic imaging - action (qualifier value)
+  399064001 		Ультразвук в двухмерном режиме - действие (значение квалификатора)	Two dimensional mode ultrasound - action (qualifier value)
+  399155008 		Ультразвук в М-режиме (квалифицирующее значение)	M-mode ultrasound (qualifier value)
+  410460000 		Освещение - действие (квалификатор значения)	Illumination - action (qualifier value)
+  410461001 		Двойное рассеянное прямое освещение - действие (квалифицирующее значение)	Dual diffuse direct illumination - action (qualifier value)
+  410462008 		Прямое освещение тонким щелевым лучом - действие (квалифицирующее значение)	Fine slit beam direct illumination - action (qualifier value)
+  410463003 		Широкое тангенциальное прямое освещение - действие (квалифицирующее значение)	Broad tangential direct illumination - action (qualifier value)
+  410464009 		Непрямое склеротическое рассеянное освещение - действие (значение квалификатора)	Indirect sclerotic scatter illumination - action (qualifier value)
+  410465005 		Непрямое ретроиллюминирование от радужной оболочки глаза - действие (значение квалификатора)	Indirect retroillumination from the iris - action (qualifier value)
+  410466006 		Непрямое ретроиллюминирование от сетчатки - действие (квалифицирующее значение)	Indirect retroillumination from the retina - action (qualifier value)
+  410467002 		Непрямое просвечивание радужной оболочки глаза - действие (значение квалификатора)	Indirect iris transillumination - action (qualifier value)
+  410756002 		Хирургическая декомпрессия - действие (квалифицирующее значение)	Surgical decompression - action (qualifier value)
+  410757006 		Декомпрессионное иссечение - действие (квалифицирующее значение)	Decompressive excision - action (qualifier value)
+  410758001 		Декомпрессионный разрез - действие (квалифицирующее значение)	Decompressive incision - action (qualifier value)
+  410759009 		Декомпрессивное деление - действие (значение квалификатора)	Decompressive division - action (qualifier value)
+  410769003 		Снижение высоты - действие (квалификатор значения)	Elevation reduction - action (qualifier value)
+  410814006 		Хирургическая редукция - действие (квалифицирующее значение)	Surgical reduction - action (qualifier value)
+  410817004 		Ремонт расширения - действие (квалифицирующее значение)	Dilation repair - action (qualifier value)
+  410820007 		Хирургическая трансплантация - действие (квалифицирующее значение)	Surgical transplantation - action (qualifier value)
+  415186003 		Проксимальное освещение - действие (квалифицирующее значение)	Proximal illumination - action (qualifier value)
+  416677001 		Внутренний дренаж - действие (квалифицирующее значение)	Internal drainage - action (qualifier value)
+  419385000 		Использовать	Use
+  419652001 		Брать	Take
+  419656003 		Обследование И/ИЛИ сбор анамнеза - действие (квалифицирующее значение)	Examination AND/OR history taking - action (qualifier value)
+  419988009 		Действие введения препарата (значение квалификатора)	Action of drug administration (qualifier value)
+  424208002 		Шунт - действие (квалификатор значения)	Shunt - action (qualifier value)
+  424832003 		Хирургическое введение - действие (квалифицирующее значение)	Surgical introduction - action (qualifier value)
+  424900004 		Рекомендация - действие (квалифицирующее значение)	Recommendation - action (qualifier value)
+  425362007 		Хирургическая вставка - действие (квалифицирующее значение)	Surgical insertion - action (qualifier value)
+  425689005 		Образование - действие (квалифицирующее значение)	Education - action (qualifier value)
+  425704008 		Ультразвуковая допплерография - действие (значение квалификатора)	Power Doppler ultrasound - action (qualifier value)
+  425764006 		Транссекция - действие (квалификаторное значение)	Transection - action (qualifier value)
+  426413004 		Закрытая редукция - действие (квалифицирующее значение)	Closed reduction - action (qualifier value)
+  426530000 		Открытая редукция - действие (квалифицирующее значение)	Open reduction - action (qualifier value)
+  426865009 		Ультразвук в 3D-режиме (квалифицирующее значение)	3D mode ultrasound (qualifier value)
+  428010000 		Открытая эмболизация - действие (квалифицирующее значение)	Open embolization - action (qualifier value)
+  428381003 		Диатермия - действие (квалифицирующее значение)	Diathermy - action (qualifier value)
+  430975009 		Хирургический пирсинг - действие (квалифицирующее значение)	Surgical piercing - action (qualifier value)
+  439054007 		Хирургическая аспирация катаракты - действие (квалифицирующее значение)	Surgical cataract aspiration - action (qualifier value)
+  439237009 		Механический ремонт - действие (квалифицирующее значение)	Mechanical repair - action (qualifier value)
+  439417007 		Закрытое ручное сокращение - действие (значение квалификатора)	Closed manual reduction - action (qualifier value)
+  439513008 		Хирургическое уменьшение размера - действие (квалифицирующее значение)	Surgical size reduction - action (qualifier value)
+  440338007 		Выдача - действие (квалифицирующее значение)	Dispensing - action (qualifier value)
+  440647007 		Механическая конструкция - действие (квалифицирующее значение)	Mechanical construction - action (qualifier value)
+  441504007 		Хирургическая манипуляция - действие	Surgical manipulation - action
+  442837002 		Иссечение и хирургическая обработка раны - действие (значение квалификатора)	Excision debridement - action (qualifier value)
+  445103003 		Фиксация расклиниванием - действие (квалифицирующее значение)	Fixation by wedging - action (qualifier value)
+  698788008 		Освещенность пропускания (квалифицирующее значение)	Transmission illumination (qualifier value)
+  698789000 		Освещенность отражения (значение квалификатора)	Reflection illumination (qualifier value)
+  698790009 		Эпифлуоресцентное освещение	Epifluorescence illumination
+  698792001 		Освещение в светлом поле (значение квалификатора)	Brightfield illumination (qualifier value)
+  698793006 		Освещение темного поля (значение квалификатора)	Darkfield illumination (qualifier value)
+  698794000 		Косое освещение (значение квалификатора)	Oblique illumination (qualifier value)
+  698796003 		Фазово-контрастное освещение (квалифицирующее значение)	Phase contrast illumination (qualifier value)
+  698797007 		Дифференциальный интерференционный контраст (значение квалификатора)	Differential interference contrast (qualifier value)
+  698798002 		Флуоресценция полного внутреннего отражения	Total internal reflection fluorescence
+  702569007 		Конусно-лучевая компьютерная томография - действие	Cone beam computed tomography imaging - action
+  713295009 		Хирургическая замена - действие	Surgical replacement - action
+  787145007 		Реинсерция - действие	Reinsertion - action
+  788288006 		Хирургическая реимплантация - действие	Surgical reimplantation - action
+  830058008 		Нехирургическая фиксация - действие (квалифицирующее значение)	Nonsurgical fixation - action (qualifier value)
+  830059000 		Нехирургическое восстановление - действие (квалифицирующее значение)	Nonsurgical repair - action (qualifier value)
+  1156997004 		Хирургическое вращение - действие (квалифицирующее значение)	Surgical rotation - action (qualifier value)
+  1172737007 		Допплерография - действие	Doppler ultrasound - action
+  1172738002 		Ультразвуковая допплерография - действие (значение квалификатора)	Doppler ultrasound imaging - action (qualifier value)
+  1193839003 		Дистантная реконструкция лоскутом - действие (квалифицирующее значение)	Distant flap reconstruction - action (qualifier value)
+  1193841002 		Локальная реконструкция лоскутом - действие	Local flap reconstruction - action
+  1193842009 		Локальная реконструкция лоскута путем ротации - действие	Local flap reconstruction by rotation - action
+  1193917004 		Создание закрылка - действие (квалифицирующее значение)	Flap creation - action (qualifier value)
+  1196928009 		Региональная реконструкция лоскута - действие	Regional flap reconstruction - action
+  1196931005 		Локальная реконструкция лоскута путем транспозиции - действие	Local flap reconstruction by transposition - action
+  1204229009 		Локальная реконструкция лоскута методом W-пластики - действие	Local flap reconstruction by W-plasty - action
+  1209015001 		Шунтирование - действие	Bypass grafting - action
+  1209078005 		Хирургическая денервация - действие	Surgical denervation - action
+  1231382004 		Ультразвуковая визуализация сверхвысокого разрешения - действие (значение квалификатора)	Super resolution ultrasound imaging - action (qualifier value)
+  899991000168109 		Снятие кровли - действие	Unroofing - action
+  386053000 		Расследования	Investigations
+  128004 		Ручной микроскопический осмотр кожи	Hand microscope examination of skin
+  135007 		Артротомия лучезапястного сустава с ревизией и биопсией	Arthrotomy of wrist joint with exploration and biopsy
+  153001 		Цистоуретроскопия с резекцией уретероцеле	Cystourethroscopy with resection of ureterocele
+  170009 		Специальная дисковая идентификация потенции, тест ванкомицина	Special potency disk identification, vancomycin test
+  197002 		Тест на преобразование плесени в дрожжи	Mold to yeast conversion test
+  306005 		Эхография почек	Echography of kidney
+  334003 		Panorex-обследование нижней челюсти	Panorex examination of mandible
+  352003 		Реагент RBC, препарат антител сенсибилизированного пула	Reagent RBC, preparation antibody sensitized pool
+  389000 		Измерение тобрамицина	Tobramycin measurement
+  435001 		Исследование ингаляции легких	Pulmonary inhalation study
+  468008 		Измерение глутатиона	Glutathione measurement
+  489004 		Измерение ферритина	Ferritin measurement
+  493005 		Измерение уробилиногена, 48 часов, кал	Urobilinogen measurement, 48-hour, feces
+  540006 		Измерение антител к одно- и двухцепочечной ДНК	Antibody to single and double stranded DNA measurement
+  574005 		Измерение бензодиазепина	Benzodiazepine measurement
+  628003 		тест Штейнмана	Steinman test
+  642006 		Термография головного мозга	Cerebral thermography
+  673005 		Непрямая ларингоскопия	Indirect laryngoscopy
+  674004 		Тест на похищение	Abduction test
+  687005 		Соотношение альбумин/глобулин	Albumin/Globulin ratio
+  697001 		Измерение антител к вирусу гепатита А	Hepatitis A virus antibody measurement
+  759005 		Внутримозговая электроэнцефалограмма	Intracerebral electroencephalogram
+  762008 		Компьютерная аксиальная томография шейного отдела позвоночника с контрастом	Computerized axial tomography of cervical spine with contrast
+  767002 		Количество лейкоцитов в крови	White blood cell count
+  814007 		Измерение электрофореза	Electrophoresis measurement
+  831000 		Тест ящика	Drawer test
+  853003 		Измерение содержания жира в кале, сбор в течение 72 часов	Fecal fat measurement, 72-hour collection
+  870006 		Измерение карбамазепина	Carbamazepine measurement
+  879007 		Специальный тест на свертываемость крови, поясните по отчету	Special blood coagulation test, explain by report
+  893000 		Измерение опухолевого антигена	Tumor antigen measurement
+  910002 		Измерение MHPG, моча	MHPG measurement, urine
+  941001 		Эндоскопия гипофиза	Endoscopy of pituitary gland
+  951000 		Ультразвуковой контроль при эндомиокардиальной биопсии	Ultrasonic guidance for endomyocardial biopsy
+  969009 		Разрез и исследование гортани	Incision and exploration of larynx
+  1029002 		Фетоскопия	Fetoscopy
+  1035002 		Тест на минимальную бактерицидную концентрацию, метод микроразведений	Minimum bactericidal concentration test, microdilution method
+  1044001 		Ультразвуковая диагностика органов брюшной полости и забрюшинного пространства	Diagnostic ultrasound of abdomen and retroperitoneum
+  1209007 		Артроскопия коленного сустава с восстановлением латерального мениска	Arthroscopy of knee with lateral meniscus repair
+  1225002 		Рентгенография плечевой кости	Radiography of humerus
+  1292009 		Магнитно-резонансная томография мочевого пузыря	Magnetic resonance imaging of urinary bladder
+  1324000 		Соотношение IgG в спинномозговой жидкости и индекс IgG	Cerebrospinal fluid IgG ratio and IgG index
+  1358008 		Тест на античеловеческий глобулин, ферментный метод, титр	Anti-human globulin test, enzyme technique, titer
+  1385001 		Эхография, сканирование в В-режиме для определения возраста плода	Echography, scan B-mode for fetal age determination
+  1399002 		Разрез и исследование мочеточника	Incision and exploration of ureter
+  1414009 		Ангиография артериовенозного шунта	Angiography of arteriovenous shunt
+  1494008 		Измерение осмолярности	Osmolarity measurement
+  1550000 		Измерение амикацина	Amikacin measurement
+  1559004 		Анализ ИЛ-2	IL-2 assay
+  1597004 		Рентгенография скелета голеностопного сустава и стопы	Skeletal X-ray of ankle and foot
+  1616001 		Измерение галактозилцерамида бета-галактозидазы, лейкоциты	Galactosylceramide beta-galactosidase measurement, leukocytes
+  1640009 		Анамнез и медицинский осмотр, страхование	History and physical examination, insurance
+  1677001 		тест Хаагенсена	Haagensen test
+  1712009 		Иммуноглобулиновое типирование, IgG	Immunoglobulin typing, IgG
+  1757000 		Артроскопия запястья с частичной синовэктомией	Arthroscopy of wrist with partial synovectomy
+  1759002 		Оценка состояния питания	Assessment of nutritional status
+  1784004 		Фекальный стеркобилин, качественный	Fecal stercobilin, qualitative
+  1787006 		Ультразвуковой контроль при перикардиоцентезе	Ultrasonic guidance for pericardiocentesis
+  1820004 		Измерение алкоголя в выдыхаемом воздухе	Alcohol measurement, breath
+  1879000 		Измерение флуоресцентного антигена	Fluorescent antigen measurement
+  2054004 		Количественное и качественное измерение барбитуратов	Barbiturates measurement, quantitative and qualitative
+  2196003 		Газожидкостная хроматография, электронно-захватного типа	Gas liquid chromatography, electron capture type
+  2214008 		Кюретажная проба кожи	Curette test of skin
+  2220009 		Анализ комплементарного компонента	Complement component assay
+  2225004 		Тест сенсибилизирующей системы	Sensititer system test
+  2244006 		Артроскопия запястья с внутренней фиксацией при нестабильности	Arthroscopy of wrist with internal fixation for instability
+  2276001 		Исследование подколенной артерии	Exploration of popliteal artery
+  2278000 		Анализ мочи, автоматизированный	Urinalysis, automated
+  2279008 		Обнаружение антител, эритроцитов, ферментов, одноэтапная методика, включая античеловеческий глобулин	Antibody detection, RBC, enzyme, 1 stage technique, including anti-human globulin
+  2290003 		Микробная культура, анаэробная, первичная изоляция	Microbial culture, anaerobic, initial isolation
+  2347001 		Построение диагностической модели	Diagnostic model construction
+  2373006 		Оценка мазка лейкоцитарной пленки	Buffy coat smear evaluation
+  2408004 		Измерение гексозаминидазы А и общей гексозаминидазы, сыворотка	Hexosaminidase A and total hexosaminidase measurement, serum
+  2425002 		Серологический тест на вирус Эпштейна-Барр	Epstein-Barr virus serologic test
+  2448007 		Подсчет клеток синовиальной жидкости с дифференциальным подсчетом	Cell count of synovial fluid with differential count
+  2507007 		Измерение 5' нуклеотидазы	5' Nucleotidase measurement
+  2508002 		Ретроградная урография с КУБ	Retrograde urography with KUB
+  2531002 		Анализ функции мононуклеарных клеток	Mononuclear cell function assay
+  2629003 		Мониторинг внутричерепного/церебрального перфузионного давления	Intracranial/cerebral perfusion pressure monitoring
+  2646000 		Разрез и исследование семявыносящего протока	Incision and exploration of vas deferens
+  2690005 		Магнитно-резонансная томография таза	Magnetic resonance imaging of pelvis
+  2693007 		Жир в кале, количественное измерение	Stool fat, quantitative measurement
+  2696004 		Печеночная венография с оценкой гемодинамики	Hepatic venography with hemodynamic evaluation
+  2722000 		Анализ ИЛ-3	IL-3 assay
+  2731000 		Серологический тест на вирус гриппа А (процедура)	Serologic test for Influenza A virus (procedure)
+  2737001 		Экспериментальная краниотомия, инфратенториальная	Exploratory craniotomy, infratentorial
+  2743004 		Оперативная эндоскопия подвздошной кишки	Operative endoscopy of ileum
+  2811005 		Кинорентгенография глотки	Cineradiography of pharynx
+  2842000 		Газохроматографическое измерение	Gas chromatography measurement
+  2847006 		Цервикальная миелография	Cervical myelography
+  2885009 		Внутрикожная проба	Intradermal skin test
+  2891006 		Артроскопия локтя с частичной синовэктомией	Arthroscopy of elbow with partial synovectomy
+  2898000 		Анализ ДНК, дородовой, кровь	DNA analysis, antenatal, blood
+  2933008 		Пневмогинекология	Pneumogynecography
+  2947007 		Измерение терапевтического соединения	Therapeutic compound measurement
+  3025001 		Измерение кальцитонина	Calcitonin measurement
+  3047001 		Фотография глазного дна Kowa	Kowa fundus photography
+  3063009 		Гастроскопия через искусственную стому	Gastroscopy through artificial stoma
+  3116009 		Панель свертывания крови	Blood coagulation panel
+  3130004 		Мониторинг сердечного выброса с помощью ЭКГ	Monitoring of cardiac output by ECG
+  3143004 		Исследование и оценка поля зрения, средний уровень	Visual field examination and evaluation, intermediate
+  3162001 		Измерение гадолиния	Gadolinium measurement
+  3256004 		Шейная лимфангиограмма	Cervical lymphangiogram
+  3257008 		Опорожните и измерьте количество перитонеальной диализной жидкости	Empty and measure peritoneal dialysis fluid
+  3258003 		Артериография церебральных артерий	Arteriography of cerebral arteries
+  3352000 		Измерение паратиреоидного гормона	Parathyroid hormone measurement
+  3357006 		Исследование кинетики железа	Iron kinetics study
+  3413006 		Морфология клеток крови	Blood cell morphology
+  3450007 		Оценка лимфоцитов, Т- и В-клеток (процедура)	Lymphocytes, T and B cell evaluation (procedure)
+  3527003 		Измерение антител	Antibody measurement
+  3620007 		Исследование выживаемости эритроцитов при печеночной секвестрации	Red cell survival study with hepatic sequestration
+  3683006 		Измерение селена в моче	Selenium measurement, urine
+  3717006 		Разбавьте яд гадюки Рассела время	Dilute Russell viper venom time
+  3735002 		Измерение копропорфирина III	Coproporphyrin III measurement
+  3770000 		Тестирование мочи с помощью тест-полосок в отделении	Ward urine dip stick testing
+  3784005 		Кожная проба замедленной гиперчувствительности для SK-SD	Delayed hypersensitivity skin test for SK-SD
+  3787003 		Ультразвуковой контроль при игольной биопсии	Ultrasonic guidance for needle biopsy
+  3794000 		Измерение прегнантриола	Pregnanetriol measurement
+  3799005 		Рентгенография аденоидов	Radiography of adenoids
+  3858009 		Эхография щитовидной железы, А-режим	Echography of thyroid, A-mode
+  3862003 		Измерение общей жизненной емкости легких	Total vital capacity measurement
+  3926003 		Измерение молочной кислоты	Lactic acid measurement
+  3955006 		Элюция антител, эритроциты	Antibody elution, RBC
+  3967008 		Иммуноферментный анализ с поляризацией флуоресценции	Fluorescence polarization immunoassay
+  3971006 		Выявление носительства мышечной дистрофии Дюшенна	Duchenne muscular dystrophy carrier detection
+  3991004 		Магнитно-резонансная томография таза, предстательной железы и мочевого пузыря	Magnetic resonance imaging of pelvis, prostate and bladder
+  3998005 		Визуализация костей ограниченной области	Bone imaging of limited area
+  4007002 		Тест на античеловеческий глобулин, непрямой, титр, негамма	Anti-human globulin test, indirect, titer, non-gamma
+  4008007 		Флебография шеи	Phlebography of neck
+  4036002 		Артроскопия локтя с обширной хирургической обработкой раны	Arthroscopy of elbow with extensive debridement
+  4165006 		Кожная проба замедленной гиперчувствительности на лизат стафага	Delayed hypersensitivity skin test for staphage lysate
+  4192000 		Токсикологические испытания фосфорорганического инсектицида	Toxicology testing for organophosphate insecticide
+  4321009 		Двусторонняя артериограмма ноги	Bilateral leg arteriogram
+  4337003 		Измерение гомогентизиновой кислоты	Homogentisic acid measurement
+  4436008 		Измерение рецептора MCP	MCP receptor measurement
+  4438009 		Венография нижней полой вены	Venography of vena cava
+  4447001 		Вскрытие, макроскопическое и микроскопическое исследование, мертворожденный или новорожденный без ЦНС	Autopsy, gross and microscopic examination, stillborn or newborn without CNS
+  4466001 		Исследование артерии верхней конечности	Exploration of artery of upper limb
+  4475004 		Измерение цианида	Cyanide measurement
+  4487006 		Измерение норадреналина в положении лежа на спине	Norepinephrine measurement, supine
+  4525004 		Визит пациента в отделение неотложной помощи	Emergency department patient visit
+  4594007 		Изомеры копропорфирина, серии I и III, моча	Coproporphyrin isomers, series I & III, urine
+  4613005 		Радиоиммуноанализ	Radioimmunoassay
+  4625008 		Измерение апикального пульса	Apical pulse taking
+  4691008 		Выявление антигена ротавируса в кале	Identification of rotavirus antigen in feces
+  4701005 		Анализ колониеобразующих единиц-гранулоцитов-моноцитов-эритроидов-мегакариоцитов	Colony forming unit-granulocyte-monocyte-erythroid-megakaryocyte assay
+  4713000 		Эндоскопия и фотография	Endoscopy and photography
+  4727005 		Электрофорез липопротеинов	Lipoprotein electrophoresis
+  4737000 		Культура микобактерий	Mycobacteria culture
+  4804005 		Тест на микробную идентификацию	Microbial identification test
+  4815000 		Идентификация антител, панель антител эритроцитов, фермент, двухэтапная методика, включая античеловеческий глобулин	Antibody identification, RBC antibody panel, enzyme, 2 stage technique including anti-human globulin
+  4902005 		Измерение этхлорвинола	Ethchlorvynol measurement
+  4903000 		Электрофорез сывороточных белков	Serum protein electrophoresis
+  4934001 		Сальпингография	Salpingography
+  4970003 		Венография	Venography
+  4993009 		Ишемическая тренировка конечностей с ЭМГ и определением молочной кислоты	Ischemic limb exercise with EMG and lactic acid determination
+  5019003 		Прямая ларингоскопия с биопсией	Direct laryngoscopy with biopsy
+  5021008 		Измерение альдостерона, стоя, диета с нормальным содержанием соли	Aldosterone measurement, standing, normal salt diet
+  5022001 		Измерение диэтиламида лизергиновой кислоты	Lysergic acid diethylamide measurement
+  5025004 		Анализ спермы, наличие и подвижность сперматозоидов	Semen analysis, presence and motility of sperm
+  5055006 		Тест системы Uniscept	Uniscept system test
+  5091004 		Исследование заболеваний периферических сосудов	Peripheral vascular disease study
+  5105000 		Эндоскопия почечной лоханки	Endoscopy of renal pelvis
+  5110001 		Ультразвуковая периферическая визуализация, сканирование в реальном времени	Ultrasound peripheral imaging, real time scan
+  5113004 		Бесплатное измерение T4	T4 free measurement
+  5131003 		Рентгенография грудной клетки	Radiography of chest wall
+  5190000 		Слияние клеток	Cell fusion
+  5216004 		Трехмерная ультразвуковая визуализация сердца	Three dimensional ultrasound imaging of heart
+  5264008 		Измерение общего содержания желчных кислот	Total bile acids measurement
+  5338000 		Измерение никотина	Nicotine measurement
+  5393006 		Исследование паращитовидных желез с исследованием средостения с помощью стернального сплит-доступа	Exploration of parathyroid with mediastinal exploration by sternal split approach
+  5422005 		Измерение амилазы, перитонеальная жидкость	Amylase measurement, peritoneal fluid
+  5433008 		Рентгенограмма скелета нижней конечности	Skeletal X-ray of lower limb
+  5457008 		Серологический тест на Rickettsia conorii	Serologic test for Rickettsia conorii
+  5479003 		Выберите аудиометрию изображения	Select picture audiometry
+  5506006 		Разрез и исследование брюшной стенки	Incision and exploration of abdominal wall
+  5551006 		Прямая ларингоскопия с резекцией черпаловидной железы с помощью операционного микроскопа	Direct laryngoscopy with arytenoidectomy with operating microscope
+  5570001 		Артротомия при инфекции с исследованием и дренированием запястно-пястного сустава	Arthrotomy for infection with exploration and drainage of carpometacarpal joint
+  5586008 		Измерение дегидратазы аминолевулиновой кислоты	Aminolevulinic acid dehydratase measurement
+  5608002 		Измерение экскреции	Excretion measurement
+  5638008 		Измерение углеводов	Carbohydrate measurement
+  5651003 		Измерение арилсульфатазы А	Arylsulfatase A measurement
+  5669007 		Портативная электроэнцефалограмма бодрствования и сна со стимуляцией	Portable electroencephalogram awake and asleep with stimulation
+  5731009 		Гемосидерин, количественное измерение	Hemosiderin, quantitative measurement
+  5733007 		Флуоресцентная идентификация антинуклеарных антител	Fluorescent identification of anti-nuclear antibody
+  5785009 		Судебно-медицинская экспертиза	Forensic autopsy
+  5818005 		Тест на флокуляцию	Flocculation test
+  5823005 		Диагностическая рентгенография, слева	Diagnostic radiography, left
+  5857002 		Анализ цитотоксичности, опосредованной комплементом	Complement mediated cytotoxicity assay
+  5880005 		Клиническое обследование	Clinical examination
+  5894006 		Тест с метиловым красным	Methyl red test
+  5902003 		Анамнез и физикальное обследование, полное	History and physical examination, complete
+  5986003 		Связывание несенсибилизированных спонтанных эритроцитов барана, E-розетка	Non-sensitized spontaneous sheep erythrocyte binding, E-rosette
+  5995006 		Газожидкостная хроматография, пламенно-фотометрического типа	Gas liquid chromatography, flame photometric type
+  6007000 		Магнитно-резонансная томография грудной клетки	Magnetic resonance imaging of chest
+  6019008 		Эндоскопия толстой кишки	Endoscopy of large intestine
+  6063004 		Измерение канамицина	Kanamycin measurement
+  6126006 		Анализ фактора Фицджеральда	Fitzgerald factor assay
+  6127002 		Диагностическая рентгенография брюшной полости, косая стандартная	Diagnostic radiography of abdomen, oblique standard
+  6133006 		Анализ лимфокинов	Lymphokine assay
+  6157006 		Эндоскопическая ретроградная холангиопанкреатография с биопсией	Endoscopic retrograde cholangiopancreatography with biopsy
+  6159009 		Измерение галактозы	Galactose measurement
+  6177004 		Саузерн-блот-анализ	Southern blot assay
+  6205000 		Флуоресцентный антиген, титр	Fluorescent antigen, titer
+  6225001 		Обнаружение антител, эритроцитов, ферментов, двухэтапная методика, включая античеловеческий глобулин	Antibody detection, RBC, enzyme, 2 stage technique, including anti-human globulin
+  6238009 		Диагностическая рентгенография крестцово-подвздошных суставов	Diagnostic radiography of sacroiliac joints
+  6271008 		Эхография, иммерсионное В-сканирование	Echography, immersion B-scan
+  6289009 		Оценка гистограммы лейкоцитов	White blood cell histogram evaluation
+  6309008 		Дифференциальный анализ кала на жир, количественный	Fecal fat differential, quantitative
+  6319002 		Бета-лактамаза, хромогенный тест на чувствительность к цефалоспоринам	Beta lactamase, chromogenic cephalosporin susceptibility test
+  6339003 		Кондиционирование игровая аудиометрия	Conditioning play audiometry
+  6353003 		Реакция Мицуды на лепромин	Mitsuda reaction to lepromin
+  6354009 		Скорость седиментации, Вестергрен	Sedimentation rate, Westergren
+  6385000 		Исследование дискового пространства	Exploration of disc space
+  6396008 		Измерение галактокиназы	Galactokinase measurement
+  6434009 		Обнаружение семенной жидкости	Seminal fluid detection
+  6438007 		Исследование цилиарного тела	Exploration of ciliary body
+  6480006 		Исследование остаточной мочи мочевого пузыря	Urinary bladder residual urine study
+  6491004 		Протеин S, свободный анализ	Protein S, free assay
+  6521006 		Политомография	Polytomography
+  6556005 		Измерение антител к ретикулину	Reticulin antibody measurement
+  6589005 		Титрование антител, высокий уровень белка	Antibody titration, high protein
+  6614002 		Измерение антител к одноцепочечной ДНК	Antibody to single stranded DNA measurement
+  6615001 		Электроретинография	Electroretinography
+  6650009 		Радионуклидное исследование слезоотводящих путей	Radionuclide lacrimal flow study
+  6656003 		Тест акустической стимуляции	Acoustic stimulation test
+  6668007 		Анализ фибриногена, количественный	Fibrinogen assay, quantitative
+  6689003 		Иммунодиффузия, качественная	Immunodiffusion, qualitative
+  6690007 		Измерение сульфонамида	Sulfonamide measurement
+  6728003 		Рентгенологическое исследование всего позвоночника, переднезадней и боковой проекции	Radiologic examination of complete spine, anteroposterior and lateral
+  6745008 		Непрямая ларингоскопия с удалением инородного тела	Indirect laryngoscopy with removal of foreign body
+  6748005 		Метод электронной микроскопии, изготовление стеклянных ножей	Electron microscopy technique, glass knife making
+  6782004 		Тест на покрытие метиленовым синим	Methylene blue plating test
+  6880001 		Измерение рецептора C3e	C3e receptor measurement
+  6898002 		Артроскопическая реконструкция задней крестообразной связки	Arthroscopically aided posterior cruciate ligament reconstruction
+  6943008 		Измерение альдостерона, нормальная солевая диета, моча	Aldosterone measurement, normal salt diet, urine
+  6986008 		Преципитационный тест на группу крови, идентификацию вида	Precipitin test for blood group, species identification
+  7103008 		Трипсин, дуоденальная жидкость	Trypsin, duodenal fluid
+  7164004 		Тест на токсоплазмоз	Toxoplasmosis dye test
+  7174001 		Ультразвуковая периферическая визуализация, В-сканирование	Ultrasound peripheral imaging, B-scan
+  7239006 		Проктосигмоидоскопия для дилатации	Proctosigmoidoscopy for dilation
+  7256003 		Измерение противоточного электрофореза	Countercurrent electrophoresis measurement
+  7288006 		Фебрильные агглютинины, качественные	Febrile agglutinins, qualitative
+  7301001 		Измерение гаптоглобина, химическое	Haptoglobin measurement, chemical
+  7370001 		Диагностическая рентгенография, серийные снимки	Diagnostic radiography, serial films
+  7375006 		Бронхоскопия через трахеостому с биопсией бронха	Bronchoscopy through tracheostomy with biopsy of bronchus
+  7421004 		Визуализация костного мозга, ограниченная область	Bone marrow imaging, limited area
+  7510005 		Проверка цветового зрения	Color vision examination
+  7541006 		Разрез и исследование яичка	Incision and exploration of testis
+  7546001 		Анамнез и физикальное обследование, последующее наблюдение за новообразованными заболеваниями	History and physical examination, follow-up for neoplastic disease
+  7557006 		Измерение витамина Е	Vitamin E measurement
+  7562007 		Радиоизотопное исследование эндокринной системы	Radioisotope study of endocrine system
+  7576008 		Спинальная ангиография, селективная	Spinal angiography, selective
+  7606004 		Измерение метгемоглобина, качественное	Methemoglobin measurement, qualitative
+  7656009 		Изотопное исследование почечного плазмотока	Isotope study for renal plasma flow
+  7677007 		Испытание на дифференциальное давление	Consonant differential pressure test
+  7740009 		Измерение фруктозамина	Fructosamine measurement
+  7750005 		Гибкая фиброларингоскопия с биопсией	Flexible fiberoptic laryngoscopy with biopsy
+  7786006 		Тест VDRL	VDRL test
+  7812007 		Рентгенологическое исследование грудопоясничного отдела позвоночника в переднезадней и боковой проекции	Radiologic examination of thoracolumbar spine, anteroposterior and lateral
+  7837002 		Измерение ртути, волосы	Mercury measurement, hair
+  7839004 		Разрез и исследование мужской промежности	Incision and exploration of male perineum
+  7887009 		Измерение пальмитата	Palmitate measurement
+  7932007 		Измерение клоназепама	Clonazepam measurement
+  7949000 		Артротомия плечевого сустава при инфекции с исследованием	Arthrotomy of glenohumeral joint for infection with exploration
+  7962001 		Измерение этосуксимида	Ethosuximide measurement
+  7992005 		Количественное измерение антител к ДНК	Quantitative anti-DNA antibody measurement
+  7993000 		Визуализация костного мозга, все тело	Bone marrow imaging, whole body
+  7995007 		Ангиография артерий нижних конечностей с сериалографией	Angiography of lower extremity arteries with serialography
+  8031000 		Вагинограмма	Vaginogram
+  8073008 		Ультразвуковой контроль аспирации яйцеклеток	Ultrasonic guidance for aspiration of ova
+  8138008 		Анализ на антитромбин III, функциональный	Antithrombin III assay, functional
+  8151003 		Эхокардиография для определения сердечного выброса	Echocardiography for detecting cardiac output
+  8180007 		Фиброоптическая колоноскопия через колостому	Fiberoptic colonoscopy through colostomy
+  8196005 		Анализ фактора свертывания крови VII	Clotting factor VII assay
+  8243008 		Измерение давления интерстициальной жидкости	Measurement of interstitial fluid pressure
+  8244002 		Измерение изоферментов щелочной фосфатазы	Alkaline phosphatase isoenzymes measurement
+  8246000 		Электроэнцефалограмма во время операции на сонной артерии	Electroencephalogram during carotid surgery
+  8321003 		тест Эриксена	Erichsen's test
+  8358003 		Диагностическая рентгенография, двусторонняя	Diagnostic radiography, bilateral
+  8364005 		Измерение фосфора	Phosphorus measurement
+  8404006 		Анализ хемотаксиса	Chemotaxis assay
+  8424005 		Измерение альфа-фукозидазы, лейкоциты	Alpha-fucosidase measurement, leukocytes
+  8446002 		Количественная иммунологическая идентификация антигена или антитела	Quantitative immunologic identification of antigen or antibody
+  8449009 		Рентгенография крестцово-копчикового отдела позвоночника	Radiography of sacrococcygeal spine
+  8463003 		Набор для идентификации микроорганизмов, метод API 20A	Microbial identification kit, API 20A method
+  8478005 		Анализ желудочного сока, титрование pH	Gastric fluid analysis, pH titration
+  8503002 		Диагностическая рентгенография с контрастным веществом, двусторонняя	Diagnostic radiography with contrast media, bilateral
+  8541009 		Измерение германия	Germanium measurement
+  8574009 		Оценка тромбоцитов	Platelet estimate
+  8606002 		Трансиллюминация носовых пазух	Transillumination of nasal sinuses
+  8611000 		Измерение 2,3-дифосфоглицерата, эритроциты	2,3-diphosphoglycerate measurement, erythrocytes
+  8642005 		Измерение бериллия	Beryllium measurement
+  8655006 		Измерение свинца, количественное, кровь	Lead measurement, quantitative, blood
+  8693001 		Радионуклидная идентификация опухоли глаза	Radionuclide identification of eye tumor
+  8698005 		Иммунохемилюминесцентное измерение паратиреоидного гормона (ПТГ)	Parathyroid hormone (PTH) immunochemiluminescent measurement
+  8706007 		Тест на толерантность к аргинину	Arginine tolerance test
+  8777004 		Разрез и исследование толстой кишки	Incision and exploration of large intestine
+  8874001 		Артроскопия коленного сустава с медиальной и латеральной менискэктомией	Arthroscopy of knee with medial and lateral meniscectomy
+  8879006 		Измерение креатинина, суточная моча	Creatinine measurement, 24 hour urine
+  8890001 		Анализ мочи на тяжелые металлы	Heavy metal screen on urine
+  8959002 		Масс-спектрометрическое измерение	Mass spectrometry measurement
+  8992008 		Бактериальное серологическое исследование	Bacterial serologic study
+  8994009 		Исследование пероральной абсорбции радиоактивного железа	Radioiron oral absorption study
+  9002005 		Ручное тестирование мышечной функции	Manual testing of muscle function
+  9011005 		Измерение гаптоглобина, электрофорез	Haptoglobin measurement, electrophoresis
+  9087001 		Исследование черепных нервов	Exploration of cranial nerve
+  9104009 		Исследование мягких тканей	Exploration of soft tissue
+  9106006 		Интраоперационная кардиальная стимуляция и картирование	Intraoperative cardiac pacing and mapping
+  9134004 		Баллистокардиография	Ballistocardiography
+  9173004 		Экран на тяжелые металлы в желудочном соке	Heavy metal screen on gastric fluid
+  9213003 		Анализ желудочного сока, измерение свободной кислоты	Gastric fluid analysis, free acid measurement
+  9232009 		Тест на флуоресцентную абсорбцию трепонемных антител	Fluorescent treponemal antibody absorption test
+  9330003 		Измерение пенициллина	Penicillin measurement
+  9336009 		Химический анализ, качественный и количественный	Chemical test, qualitative and quantitative
+  9381008 		Идентификация антител, эритроциты, физиологический раствор и AHG	Antibody identification, RBC, saline and AHG
+  9403009 		Диагностическая рентгенография, минифильм	Diagnostic radiography, minifilm
+  9456006 		Измерение pH, венозный	pH measurement, venous
+  9474002 		Эндоскопия и калибровка	Endoscopy and calibration
+  9486004 		Количественная микробная культура, метод фильтровальной бумаги	Quantitative microbial culture, filter paper method
+  9517003 		Зеркальный осмотр	Mirror examination
+  9518008 		Фистулография брюшной стенки с контрастом (процедура)	Fistulography of abdominal wall with contrast (procedure)
+  9525001 		Тест на опускание плеча	Shoulder depression test
+  9564003 		Общий анализ крови с лейкоцитарным индексом, автоматизированный	Complete blood count with white cell differential, automated
+  9606007 		Рост на агаре МакКонки без теста на кристаллический фиолетовый	Growth on MacConkey agar without crystal violet test
+  9616004 		Измерение тетракаина	Tetracaine measurement
+  9698004 		Передача культуры в держащие носители	Transfer of culture to holding media
+  9704004 		Компьютерная томография, ограниченные исследования	Computerized tomography, limited studies
+  9718006 		Анализ полимеразной цепной реакции	Polymerase chain reaction analysis
+  9759000 		Тест на резистентность к лизоциму	Lysozyme resistance test
+  9777005 		Измерение желчных пигментов, моча	Bile pigment measurement, urine
+  9833008 		Тест удельного веса по Уорду	Ward specific gravity test
+  9897006 		Активность сайта связывания рецептора	Receptor binding site activity
+  9915003 		Анализ фактора свертывания X	Clotting factor X assay
+  9954002 		Серологический тест на краснуху	Serologic test for rubella
+  9988008 		Компьютерная томография, косая	Computerized tomography, oblique
+  10071009 		Анализ на антистрептокиназу	Anti-streptokinase assay
+  10072002 		Измерение флуоресцентных антител	Fluorescent antibody measurement
+  10104004 		Проточная цитометрия перекрестной пробы, два цвета	Flow cytometric crossmatch, two colors
+  10110004 		Тест на адгезию тромбоцитов	Platelet adhesiveness test
+  10140002 		Опиаты, качественные	Opiates, qualitative
+  10181005 		Диагностическая рентгенография крестцово-копчикового сочленения	Diagnostic radiography of sacrococcygeal joint
+  10187009 		Измерение кетоновых тел, качественное	Ketone bodies measurement, qualitative
+  10199002 		Фонокардиограмма с отведением ЭКГ	Phonocardiogram with ECG lead
+  10223001 		Жировое пятно, моча	Fat stain, urine
+  10239008 		Ревматоидный фактор, количественный	Rheumatoid factor, quantitative
+  10268009 		Иммунохемилюминесцентный анализ	Immunochemiluminescent assay
+  10374007 		Эхография, контактное В-сканирование	Echography, contact B-scan
+  10428007 		Рентгенологический контроль расширения мочеточников	Radiologic guidance for dilation of ureters
+  10447005 		Измерение мапротилина	Maprotiline measurement
+  10489002 		Эндоскопия носа с полипэктомией носа	Nasal endoscopy with nasal polypectomy
+  10563004 		Тест на нарушение сна	Sleep disorder function test
+  10666003 		Исследование для удаления глубокого инородного тела предплечья	Exploration for removal of deep foreign body of forearm
+  10670006 		Измерение оксазепама	Oxazepam measurement
+  10672003 		Тест на минимальную бактерицидную концентрацию, метод макроразведения	Minimum bactericidal concentration test, macrodilution method
+  10688003 		Измерение анодной инверсионной вольтамперометрии	Anodic stripping voltammetry measurement
+  10689006 		Исследование нерва	Exploration of nerve
+  10812009 		Газы крови, капиллярное измерение	Blood gases, capillary measurement
+  10820006 		Измерение бета-лактамазы	Beta lactamase measurement
+  10821005 		Анализ желудочного сока, пищевой, судебно-медицинский	Gastric fluid analysis, food, forensic
+  10822003 		Фекальный трипсин, качественный 24-часовой образец	Fecal trypsin, qualitative 24-hour specimen
+  10829007 		Тест перфузии пищевода кислотой (Бернштейн)	Esophagus acid perfusion test (Bernstein)
+  10847001 		Бронхоскопия	Bronchoscopy
+  10909005 		Аудиометрическое групповое тестирование	Audiometric group testing
+  10910000 		Измерение перекрестного иммуноэлектрофореза	Crossed immunoelectrophoresis measurement
+  10919004 		Атомная абсорбция, пламенного типа	Atomic absorption, flame type
+  10939000 		Тест на усвоение железа	Iron uptake test
+  10946009 		тест Файерштайна	Fajersztajn test
+  10956008 		Ретракция сгустка, ингибирование лекарственным средством	Clot retraction, inhibition by drug
+  10967009 		Количество эозинофилов, носовой	Eosinophil count, nasal
+  11017006 		Анализ тромбоксана B2	Thromboxane B2 assay
+  11078007 		Анализ фактора Флетчера	Fletcher factor assay
+  11138003 		Измерение кислых мукополисахаридов	Acid mucopolysaccharides measurement
+  11148001 		Внутрисердечная электрофизиологическая процедура с ЭКГ	Intracardiac electrophysiologic procedure with ECG
+  11175008 		Процедура идентификации насекомых	Insect identification procedure
+  11184008 		Анализ мочи, крови, качественный	Urinalysis, blood, qualitative
+  11198000 		Измерение карнитина, ткань	Carnitine measurement, tissue
+  11269009 		Изотопное исследование объема плазмы	Isotope study for plasma volume
+  11274001 		Измерение лактатдегидрогеназы	Lactate dehydrogenase measurement
+  11278003 		Визуализация почек с исследованием сосудистого кровотока и функции	Kidney imaging with vascular flow and function study
+  11295006 		Ангиография плечевой артерии	Angiography of brachial artery
+  11304004 		Кожная проба замедленной гиперчувствительности на дифтерию	Delayed hypersensitivity skin test for diphtheria
+  11343000 		Аноскопия с биопсией	Anoscopy with biopsy
+  11362002 		Измерение антител к вирусу Эпштейна-Барр MA	Epstein-Barr MA antibody measurement
+  11377005 		Прямая ларингоскопия с иссечением опухоли	Direct laryngoscopy with excision of tumor
+  11390003 		Забрюшинная эхография, В-скан, ограниченная	Retroperitoneal echography, B-scan, limited
+  11405004 		Тест на разжижение желатина	Gelatin liquefaction test
+  11415005 		Идентификация антител, панель антител эритроцитов, стандартная методика	Antibody identification, RBC antibody panel, standard technique
+  11485002 		Электронная микроскопия для быстрой идентификации вирусов	Electron microscopy for viral identification rapid
+  11560009 		Эндоскопия аденоидов	Endoscopy of adenoid
+  11561008 		Измерение рецептора C1q	C1q receptor measurement
+  11610007 		Измерение арилсульфатазы А, фибробласты	Arylsulfatase A measurement, fibroblasts
+  11634002 		Диагностическая рентгенография, исследования в положении лежа и стоя	Diagnostic radiography, supine and erect studies
+  11732005 		Простая цистометрограмма	Simple cystometrogram
+  11743002 		Анализ спермы после вазэктомии	Semen analysis, post vasectomy
+  11756009 		Измерение рецептора фактора H	Factor H receptor measurement
+  11758005 		Количественная фотоплетизмография, венозная	Quantitative photoplethysmography, venous
+  11760007 		Флюороскопия во время операции	Fluoroscopy during operation
+  11819005 		Окулярная термография	Ocular thermography
+  11821000 		Фармакометрическое исследование	Pharmacometric study
+  11829003 		Измерение витамина B6	Vitamin B6 measurement
+  11846000 		Измерение анилина	Aniline measurement
+  11892002 		Компьютерная томография, сагиттальная	Computerized tomography, sagittal
+  11895000 		Исследование глаза с помощью трейсера	Tracer study of eye
+  11900001 		Анализ спермы	Semen analysis
+  11905006 		Тест системы Pasco	Pasco system test
+  11909000 		Иммунопреципитиновый тест, количественный	Immunoprecipitin test, quantitative
+  11913007 		Измерение мефенитоина	Mephenytoin measurement
+  11921001 		Определение тельца Хайнца, индуцированное	Heinz body determination, induced
+  11971003 		Исследование вентиляции легких и перфузии с помощью радиоактивного криптона	Pulmonary ventilation-perfusion study by radioactive krypton
+  12065009 		Мониторинг коронарного кровотока	Monitoring of coronary blood flow
+  12124007 		Радиоизотопное сканирование поджелудочной железы	Radioisotope scan of pancreas
+  12199005 		Витамин D, измерение 25-гидрокси	Vitamin D, 25-hydroxy measurement
+  12224000 		Измерение белка, связанного с паращитовидными железами	Parathyroid related protein measurement
+  12234009 		Обнаружение антител к эритроцитам, теплое с титрованием	RBC antibody detection, warm with titration
+  12243000 		Исследование бедренной артерии	Exploration of femoral artery
+  12271006 		Реакция связывания комплемента на сифилис	Complement fixation test for syphilis
+  12282003 		Тест на жизнеспособность пульпы	Pulp vitality test
+  12305000 		Микробная идентификация, quadFERM и метод	Microbial identification, quadFERM and method
+  12319000 		Измерение мексилетина	Mexiletine measurement
+  12324002 		Экспериментальная лапаротомия с биопсией	Exploratory laparotomy with biopsy
+  12341000 		Изотопное исследование скорости клубочковой фильтрации	Isotope study for glomerular filtration rate
+  12350003 		Колоноскопия с жестким сигмоидоскопом через колотомию	Colonoscopy with rigid sigmoidoscope through colotomy
+  12356009 		Диагностическая рентгенография, стереотаксическая локализация в области головы	Diagnostic radiography, stereotactic localization in head
+  12357000 		Рентгенологическое исследование кисты почки, транслюмбальный доступ	Radiologic examination of renal cyst, translumbar approach
+  12359002 		Микробная идентификация, метод идентификации Neisseria-Haemophilus с помощью карты (процедура)	Microbial identification, Neisseria-Haemophilus identification card method (procedure)
+  12386002 		Определение статуса пациента	Patient status determination
+  12387006 		Микробная субкультура	Microbial subculture
+  12389009 		Ксеромаммография	Xeromammography
+  12429008 		Анализ фактора ингибитора миграции гранулоцитов	Granulocyte migration inhibitor factor assay
+  12455009 		Измерение кальция в суточной экскреции с калом	Calcium measurement in 24 hour excretion in feces
+  12513003 		Диагностическая рентгенография тазобедренного сустава, двусторонняя	Diagnostic radiography of hip, bilateral
+  12652004 		Измерение цинка, моча	Zinc measurement, urine
+  12700007 		Токсикологическая экспертиза мяса	Meat inspection for toxicology
+  12712006 		Измерение сурьмы в моче	Antimony measurement, urine
+  12717000 		Вирусная культура	Viral culture
+  12736005 		Бета-лактамаза, ацидиметрический тест на чувствительность	Beta lactamase, acidimetric susceptibility test
+  12744005 		Перинеальная уретроскопия	Perineal urethroscopy
+  12749000 		Рентгенологический контроль чрескожной установки зонда для энтероклизиса	Radiologic guidance for percutaneous placement of enteroclysis tube
+  12780005 		Непрямая ларингоскопия с удалением поражения	Indirect laryngoscopy with removal of lesion
+  12787008 		D-ксилоза, кровь	D-xylose, blood
+  12810006 		Анализ клеточно-опосредованного лимфолиза	Cell mediated lympholysis assay
+  12836004 		Тест системы Autobac серии II	Autobac series II system test
+  12838003 		Разрез и исследование шеи	Incision and exploration of neck
+  12843005 		Последующее посещение больницы врачом	Subsequent hospital visit by physician
+  12845003 		Мазок на малярию	Malaria smear
+  12889003 		Микробная культура, комплексная	Microbial culture, complex
+  12894003 		Функциональная оценка	Functional assessment
+  13004001 		Жесткая проктосигмоидоскопия	Rigid proctosigmoidoscopy
+  13021005 		Электронно-микроскопическое исследование, экспертиза и отчет	Electron microscopy study, examination and report
+  13042007 		Тест на сгибание локтя	Elbow flexion test
+  13046005 		Измерение холилглицина	Cholylglycine measurement
+  13067005 		Измерение эфиров холестерина	Cholesteryl esters measurement
+  13070009 		Антитела к вирусу гепатита А, тип IgG	Hepatitis A virus antibody, IgG type
+  13072001 		Идентификация антител, эритроциты, альбумин	Antibody identification, RBC, albumin
+  13088001 		Кавернозография тел	Corpora cavernosography
+  13142009 		Прямая ларингоскопия с введением обтуратора	Direct laryngoscopy with insertion of obturator
+  13153003 		Время циркуляции, один тест	Circulation time, one test
+  13165004 		Измерение уровня глюкозы через 3 часа после глюкозной нагрузки для теста на толерантность к глюкозе	Measurement of glucose 3 hours after glucose challenge for glucose tolerance test
+  13167007 		Ангиокардиография с помощью кинорентгенографии	Angiocardiography by cineradiography
+  13205008 		Трансвагинальная эхография	Transvaginal echography
+  13227004 		Измерение ацетальдегида	Acetaldehyde measurement
+  13256004 		Динамическое исследование функции, очищение крови	Dynamic function study, blood clearance
+  13362007 		Газожидкостная хроматография, тип Холла проводимости	Gas liquid chromatography, Hall conductivity type
+  13374006 		Обнаружение гемолизина, холодный, количественный	Hemolysin detection, cold, quantitative
+  13378009 		Поглощение щитовидной железой с выделением	Thyroid uptake with discharge
+  13385008 		Посредственная аускультация	Mediate auscultation
+  13405005 		Время лизиса плазменного сгустка	Plasma clot lysis time
+  13416003 		тест Обера	Ober's test
+  13437006 		Анализ гена альфа-глобулина, кровь	Alpha globulin gene analysis, blood
+  13450007 		Дуктограмма молочной железы с множественными протоками	Mammary ductogram of multiple ducts
+  13478008 		Электрокардиограмма, внутрисердечная, запись пучка Гиса	Electrocardiogram, intracardiac, His bundle recording
+  13518004 		Компьютерная томография без внутривенного контрастирования с последующим внутривенным контрастированием и дополнительными срезами	Computerized tomography without intravenous contrast followed by intravenous contrast and more sections
+  13578005 		Диагностическая рентгенография, комбинированная передняя и боковая проекции	Diagnostic radiography, combined AP and lateral
+  13587001 		Газожидкостная хроматография, тип масс-анализатора	Gas liquid chromatography, mass analyzer type
+  13607009 		Ручное исследование груди	Manual examination of breast
+  13661007 		Измерение лидокаина	Lidocaine measurement
+  13714004 		Артроскопия	Arthroscopy
+  13728005 		Анализ желудка	Gastric analysis
+  13745000 		Дермографический тест	Dermographia test
+  13801008 		Тест на прокол	Puncture test
+  13837003 		Врожденные ошибки метаболизма скрининг	Inborn errors of metabolism screen
+  13845008 		Желудочно-кишечный аспират для локализации кровопотери	Gastrointestinal aspirate for localization of blood loss
+  13852005 		Трансабдоминальная гастроскопия	Transabdominal gastroscopy
+  13892007 		Измерение анализа рецепторов прогестерона	Progesterone receptor assay measurement
+  13949001 		Тест флуоресцентной трепонемной абсорбции, тест двойного окрашивания	Fluorescent treponemal absorption test, double staining test
+  13956007 		Тест на концентрацию мочи	Urine concentration test
+  13966004 		Разрез и исследование соска	Incision and exploration of nipple
+  14089001 		Количество эритроцитов в крови	Red blood cell count
+  14129001 		Анамнез и физикальное обследование, последующее наблюдение за эмоциональными или психическими заболеваниями	History and physical examination, follow-up for emotional or mental disease
+  14211004 		КТ-контроль для игольной биопсии	CT guidance for needle biopsy
+  14227006 		Идентификация серповидноклеточной анемии	Sickle cell identification
+  14233002 		Количественная микробная культура, метод посева на подложку	Quantitative microbial culture, pad culture method
+  14275001 		Измерение методом аффинной хроматографии бороната	Boronate affinity chromatography measurement
+  14305004 		Вазография	Vasography
+  14348005 		Тест на стабильность мембраны	Membrane stability test
+  14393002 		Определение давления клина	Wedge pressure determination
+  14412009 		Лапароскопия с фульгурацией поражения	Laparoscopy with fulguration of lesion
+  14421005 		Серологический тест на вирус герпеса	Serologic test for herpes virus
+  14431003 		Электрокардиограмма, одно отведение	Electrocardiogram, single lead
+  14452006 		Тест на отвлечение внимания	Head distraction test
+  14456009 		Измерение роста пациента	Measuring height of patient
+  14471008 		Серологическое исследование грибков	Fungus serologic study
+  14513002 		Артроскопия голеностопного сустава с удалением инородного тела	Arthroscopy of ankle with removal of foreign body
+  14573009 		Эндоскопия придатка яичка	Endoscopy of epididymis
+  14577005 		Измерение гексозаминидазы А и общей гексозаминидазы, клетки амниотической жидкости	Hexosaminidase A and total hexosaminidase measurement, amniotic fluid cells
+  14598005 		Измерение витамина B12	Vitamin B12 measurement
+  14603002 		Монитор наблюдения за апноэ	Apnea monitor surveillance
+  14612000 		Иммуноферментный анализ на антитела к возбудителю инфекции, парный образец	Immunoassay for detection of antibody to infectious agent, paired sample
+  14663000 		Измерение хлорида, моча	Chloride measurement, urine
+  14671001 		Торакоскопия	Thoracoscopy
+  14736009 		Оценка и ведение пациентов	Patient evaluation and management
+  14740000 		Измерение триглицеридов	Triglycerides measurement
+  14768001 		Интерпретация мазка периферической крови	Peripheral blood smear interpretation
+  14769009 		Тест на наклонном столе	Tilt table test
+  14788002 		Тест на чувствительность к антимикробным препаратам	Antimicrobial susceptibility test
+  14826006 		Цистоуретроскопия с введением радиоактивного вещества	Cystourethroscopy with insertion of radioactive substance
+  14830009 		Измерение электролитов, моча	Electrolytes measurement, urine
+  14864008 		Эндоскопия щитовидной железы	Endoscopy of thyroid
+  14881004 		Тонография с провокационными тестами	Tonography with provocative tests
+  14902005 		Реакция аутоагглютинации	Autoagglutination test
+  14932002 		Белок, моча, Бенс-Джонс	Protein, urine, Bence-Jones
+  15057003 		Диапазон измерений движения и отчет для руки	Range of motion measurements and report for hand
+  15175004 		Иммуносвязывающий анализ ВИЧ-1 с использованием дот-блота	HIV-1 dot blot immunobinding assay
+  15220000 		Лабораторный тест	Laboratory test
+  15282006 		Эхокардиография плода в режиме реального времени с документированием изображений (2D) с записью в М-режиме	Fetal echocardiography, real time with image documentation (2D) with M-mode recording
+  15291005 		Запись левого желудочка	Left ventricular recording
+  15351005 		Исследование поглощения радиоактивного кальция	Radiocalcium absorption study
+  15356000 		Фактор VIII R: R Co анализ	Factor VIII R: R Co assay
+  15364006 		Сканирование или визуализация, исследование перфузии, частицы	Scanning or imaging, perfusion study, particulate
+  15376006 		Скрининг развития младенцев	Infant development screening
+  15380001 		Анализ фактора миграции гранулоцитов	Granulocyte migration factor assay
+  15403001 		Измерение N-ацетилглюкозаминидазы А и В (процедура)	N-acetylglucosaminidase A and B measurement (procedure)
+  15435001 		Тест на ингаляционную бронхиальную провокацию	Inhalation bronchial challenge testing
+  15460001 		Измерение паральдегида	Paraldehyde measurement
+  15613003 		Ишемический тест на предплечье	Ischemic forearm exercise test
+  15695009 		Тест на стимуляцию	Stimulation test
+  15719007 		Тонкоигольная аспирационная биопсия с обычной интерпретацией и отчетом	Fine needle aspirate with routine interpretation and report
+  15749009 		Церебральная вентрикулография, контрастирование воздуха	Cerebral ventriculography, air contrast
+  15757007 		Сериализация, одна плоскость	Serialography, single plane
+  15774007 		Эндоскопия верхнечелюстной пазухи с удалением слизистой оболочки и полипов	Maxillary sinus endoscopy with removal of mucous membrane and polyps
+  15886004 		Скрининг на рак	Screening for cancer
+  15921006 		Реакция пассивной агглютинации	Passive agglutination test
+  15979006 		Эндоскопия сердца	Endoscopy of heart
+  16020002 		Исследования функции гортани	Laryngeal function studies
+  16029001 		Эзофагоскопия через искусственную стому	Esophagoscopy through artificial stoma
+  16099009 		Нозерн-блот-анализ	Northern blot assay
+  16132001 		Время кровотечения, Айви	Bleeding time, Ivy
+  16151007 		Микробная идентификация и тест на восприимчивость	Microbial identification and susceptibility test
+  16152000 		Измерение норадреналина, стоя	Norepinephrine measurement, standing
+  16245009 		Ангиография двусторонних почечных артерий	Angiography of bilateral renal arteries
+  16254007 		Липидная панель	Lipid panel
+  16278002 		Рентгенологический контроль и интерпретация процедуры	Radiologic supervision and interpretation of procedure
+  16298007 		Измерение скорости	Rate measurement
+  16306001 		Окулярная фотография для медицинской оценки и документирования, фотография с помощью щелевой лампы	Ocular photography for medical evaluation and documentation, slit lamp photography
+  16308000 		Измерение бета-галактозидазы	Beta-galactosidase measurement
+  16310003 		Ультрасонография	Ultrasonography
+  16314007 		Микробное исследование мазка	Microbial smear examination
+  16361008 		Вскрытие, макроскопическое и микроскопическое исследование, мертворожденный или новорожденный	Autopsy, gross and microscopic examination, stillborn or newborn
+  16391003 		Измерение цистина, количественное	Cystine measurement, quantitative
+  16400008 		Измерение гетерофильных антител	Heterophile antibody measurement
+  16413002 		Тест на осаждение C1q	C1q precipitation test
+  16450001 		Анализ фактора ингибитора миграции лейкоцитов	Leukocyte migration inhibitor factor assay
+  16493001 		Агрегация тромбоцитов с тестом АДФ	Platelet aggregation with ADP test
+  16533001 		Измерение содержания кремния в тканях	Silica measurement, tissue
+  16572002 		Бутальбитальное измерение	Butalbital measurement
+  16608009 		Эндоскопия легких	Endoscopy of lung
+  16614002 		Измерение изоферментов креатинкиназы	Creatine kinase isoenzymes measurement
+  16620001 		Анализ почечных камней	Kidney stone analysis
+  16669004 		Измерение гексозаминидазы А и общей гексозаминидазы	Hexosaminidase A and total hexosaminidase measurement
+  16690007 		Время потребления протромбина	Prothrombin consumption time
+  16692004 		C>1< анализ комплемента	C>1< complement assay
+  16742006 		Непрямой тест Кумбса	Indirect Coombs test
+  16747000 		Чрескожная чреспеченочная холангиография	Percutaneous transhepatic cholangiogram
+  16771007 		Кожная проба, анергическая проба	Skin test, anergy testing
+  16775003 		Эйконометрическое обследование, включая назначение линз	Eikonometric examination including prescribing lenses
+  16830007 		Проверка остроты зрения	Visual acuity testing
+  16860002 		Тест вестибулярной функции с наблюдением и оценкой врача	Vestibular function test with observation and evaluation by physician
+  16890009 		Измерение инсулина	Insulin measurement
+  16908007 		Измерение линолеата	Linoleate measurement
+  16910009 		Оральная контрастная холецистография	Oral contrast cholecystography
+  16939009 		Тест на совместимость, перекрестная проба, скрининг на совместимость, физиологический раствор и/или с высоким содержанием белка	Compatibility test, crossmatch, screening for compatible unit, saline and/or high protein
+  16942003 		Зондирование слезных канальцев с промыванием	Probing of lacrimal canaliculi with irrigation
+  16948004 		Иммуноглобулин подкласса G, измерение G4	Immunoglobulin G subclass, G4 measurement
+  16960003 		Аминокислотный скрининг	Amino acid screen
+  17026004 		Исследование очистки тканей от радионуклидов	Radionuclide tissue clearance study
+  17092007 		Измерение антител к гепатиту Е	Hepatitis E antibody measurement
+  17103008 		Исследование мышечной функции	Muscle function study
+  17130003 		Измерение поглощения Т3	T3 uptake measurement
+  17146006 		Мониторинг артериального давления, неинвазивный метод	Arterial pressure monitoring, non-invasive method
+  17164004 		Измерение антител к тиреоглобулину	Thyroglobulin antibody measurement
+  17188002 		Измерение карнитина, сыворотка	Carnitine measurement, serum
+  17259005 		Исследование глазной подвижности	Ocular motility study
+  17297005 		Измерение ртути	Mercury measurement
+  17353009 		Скорость роста микроорганизмов, медленная	Microbial growth rate, slow
+  17374005 		тест Квекенштедта	Queckenstedt's test
+  17375006 		Ультразвуковой контроль аспирации почечной лоханки	Ultrasonic guidance for renal pelvis aspiration
+  17424007 		Внутрикаротидный амобарбиталовый тест	Intracarotid amobarbital test
+  17508008 		Измерение парааминогиппурата	Paraaminohippurate measurement
+  17515000 		Радиоиммунопреципитационный анализ	Radioimmunoprecipitation assay
+  17612009 		Анамнез и физикальное обследование, известное или предполагаемое носительство	History and physical examination, known or suspected carrier
+  17624002 		Спленопортография, положительный контраст	Splenoportography, positive contrast
+  17652006 		Серологический тест на Rickettsia rickettsii	Serologic test for Rickettsia rickettsii
+  17705008 		Трансформация лимфоцитов, PHA	Lymphocyte transformation, PHA
+  17711006 		Диагностическая рентгенография, комбинированная задняя и боковая проекции	Diagnostic radiography, combined PA and lateral
+  17724006 		Непрерывно-волновой допплеровский аналоговый анализ формы волны артерий верхних конечностей	Continuous wave Doppler analog wave form analysis of upper extremity arteries
+  17745004 		Рентгенография мужских половых органов	Radiography of male genital organs
+  17776005 		Артрография локтя	Arthrography of elbow
+  17814008 		Измерение дифференциальной растворимости	Differential solubility measurement
+  17823006 		Измерение борной кислоты, кровь	Boric acid measurement, blood
+  17831001 		Измерение свободных жирных кислот	Free fatty acids measurement
+  17882003 		Прямая ларингоскопия с резекцией черпаловидного хряща	Direct laryngoscopy with arytenoidectomy
+  17888004 		Измерение липопротеинов высокой плотности	High density lipoprotein measurement
+  17923005 		Разрез и исследование уретры	Incision and exploration of urethra
+  17969005 		Обнаружение Т-клеточного антигена	T-cell antigen detection
+  17984001 		Визуализация острой желудочно-кишечной кровопотери	Acute gastrointestinal blood loss imaging
+  18000007 		Мышечное тестирование с кривыми крутящего момента во время изометрических и изокинетических упражнений	Muscle-testing with torque curves during isometric and isokinetic exercise
+  18005002 		Тест на внутреннюю полярность	Intrinsic-plus test
+  18019002 		Тяжелый металл в крови	Heavy metal screen on blood
+  18044005 		Эндоскопия трахеи	Endoscopy of trachea
+  18049000 		Бронхоскопия с разрушением опухоли лазерной хирургией	Bronchoscopy with destruction of tumor by laser surgery
+  18091003 		Электронистагмография с вертикальными электродами	Electronystagmography with vertical electrodes
+  18102001 		Дуктограмма молочной железы	Mammary ductogram
+  18114009 		Дородовое обследование и уход за матерью	Prenatal examination and care of mother
+  18123007 		Анализ ингибирования латексной агглютинации	Latex agglutination inhibition assay
+  18178001 		Оценка слуховых аппаратов и тестирование	Evaluation for hearing aid and testing
+  18188000 		Офтальмоскопия под общим наркозом	Ophthalmoscopy under general anesthesia
+  18207002 		Соотношение азота мочевины крови и креатинина	BUN/Creatinine ratio
+  18284006 		Измерение фосфолипидов	Phospholipid measurement
+  18304007 		Идентификация дрожжей, тест на зародышевую трубку	Yeast identification, germ tube test
+  18360001 		Обнаружение антител к эритроцитам, холодное с титрованием	RBC antibody detection, cold with titration
+  18370004 		Рентгенологическое исследование верхних отделов желудочно-кишечного тракта с КУБ	Radiologic examination of upper gastrointestinal tract with KUB
+  18408009 		Посев семенной жидкости на бруцеллез	Culture of semen for Brucella
+  18418004 		Измерение рекомбинантного иммуноблота вируса гепатита С	Hepatitis C virus recombinant immunoblot measurement
+  18479002 		Визуализация яичек с сосудистым потоком	Testicular imaging with vascular flow
+  18481000 		Метод электронной микроскопии, окрашивание, тонкий срез	Electron microscopy technique, staining, thin section
+  18499008 		Радионуклидное исследование, кинетика белков	Radionuclide study, protein kinetics
+  18529002 		Диагностическая рентгенография таза, стереоизображения	Diagnostic radiography of pelvis, stereo views
+  18603005 		Тест на определение времени гибели	Time kill assay test
+  18640002 		Эхография, М-режим	Echography, M-mode
+  18648009 		Электроэнцефалограмма сна	Sleep electroencephalogram
+  18649001 		Измерение ректальной температуры	Rectal temperature taking
+  18691004 		Измерение альфа-субъединицы гликопротеинового гормона гипофиза	Alpha-subunit of pituitary glycoprotein hormone measurement
+  18706007 		C>6< анализ комплемента	C>6< complement assay
+  18721001 		Тест на козинтропин	Cosyntropin test
+  18736003 		Исследование среднего уха через разрез слухового прохода	Middle ear exploration through ear canal incision
+  18747005 		Рентгенологическое исследование локтя, переднезадняя и боковая проекции	Radiologic examination of elbow, anteroposterior and lateral views
+  18762007 		Исследование вены нижней конечности	Exploration of vein of lower limb
+  18785008 		Сухой микробный мазок	Microbial dry smear
+  18840000 		Идентификация вируса путем инокуляции культуры ткани и наблюдения	Virus identification by tissue culture inoculation and observation
+  18843003 		Масс-спектрометрия, тип химической ионизации	Mass spectrometry, chemical ionization type
+  18848007 		Эхография грудной клетки, В-сканирование с документированием изображения	Echography of chest, B-scan with image documentation
+  18856005 		Артроскопия плеча с обширной хирургической обработкой раны	Arthroscopy of shoulder with extensive debridement
+  18864004 		Артроскопическое восстановление задней крестообразной связки	Arthroscopically aided posterior cruciate ligament repair
+  18912009 		Рентгенография мягких тканей локтя	Radiography of soft tissue of elbow
+  18922003 		тест Томаса	Thomas test
+  18980008 		Обнаружение антител к эритроцитам с помощью физиологического раствора	RBC antibody detection with saline
+  19086005 		Радиоизотопное исследование дыхательной системы	Radioisotope study of respiratory system
+  19116003 		Измерение метгемоглобинредуктазы	Methemoglobin reductase measurement
+  19165008 		Измерение длины конечности	Measurement of limb length
+  19218007 		Разрез и исследование желчного пузыря	Incision and exploration of gallbladder
+  19229006 		Проверка на наличие пестицидов	Pesticides screen
+  19247000 		Эндоскопия миндалин	Endoscopy of tonsil
+  19252005 		Изотопное исследование желудочно-кишечной кровопотери	Isotope study for gastrointestinal blood loss
+  19271007 		Продукты расщепления фибрина, анализ этанолового геля	Fibrin split products, ethanol gel assay
+  19294008 		Измерение эндомизиальных антител	Endomysial antibody measurement
+  19401006 		Измерение окситоциназы	Oxytocinase measurement
+  19426002 		Исследование брюшной артерии	Exploration of abdominal artery
+  19433002 		Прямая ларингоскопия с удалением инородного тела	Direct laryngoscopy with foreign body removal
+  19490002 		Рентгенография голеностопного сустава	Radiography of ankle
+  19505000 		Иммуноглобулин типирование, иммуноглобулин М	Immunoglobulin typing, immunoglobulin M
+  19507008 		Тест на антитела к ДНКазе С	Anti DNase C test
+  19518008 		Измерение белка, моча, количественное 24 часа	Protein measurement, urine, quantitative 24 hour
+  19540004 		Артроскопия коленного сустава с лизисом спаек с манипуляцией	Arthroscopy of knee with lysis of adhesions with manipulation
+  19566001 		Оценка спермы с помощью теста на проникновение в цервикальную слизь	Sperm evaluation by cervical mucus penetration test
+  19589009 		Рентгенография нижней челюсти	Radiography of mandible
+  19671003 		Термография костей	Bone thermography
+  19681004 		Оценка состояния пациента медсестрой и отчет	Nursing evaluation of patient and report
+  19720009 		Электронная микроскопия для идентификации вирусов, мазок, передача	Electron microscopy for viral identification, smear, transmission
+  19731001 		Ультразвуковое исследование глаза	Ultrasound study of eye
+  19739004 		Тест на агрегацию тромбоцитов	Platelet aggregation test
+  19748009 		Измерение цианида, ткани	Cyanide measurement, tissue
+  19815002 		Тест на сыворотку с толуидиновым красным без нагревания	Toluidine red unheated serum test
+  19821003 		Измерение карбоксигемоглобина	Carboxyhemoglobin measurement
+  19838004 		Иммунологический тест in vitro	In-vitro immunologic test
+  19851009 		Микробиологическая процедура	Microbiology procedure
+  19869000 		Быстрый тест на реагины в плазме	Rapid plasma reagin test
+  19876005 		Тест на тыльное сгибание голеностопного сустава	Ankle dorsiflexion test
+  19957009 		Определение фермента WBC	WBC enzyme determination
+  19961003 		Ортодонтическая цефалограмма	Orthodontic cephalogram
+  20003009 		Тест на восприимчивость BACTEC прямым методом	BACTEC susceptibility test by direct method
+  20006001 		Реакция пассивной гемагглютинации	Passive hemagglutination assay
+  20067007 		Фотография глазного дна	Ocular fundus photography
+  20099001 		Группа крови, ABO, Rho(D) и скрининг антител к эритроцитам	Blood typing, ABO, Rho(D) and RBC antibody screening
+  20109005 		Измерение электролитов, сыворотка	Electrolytes measurement, serum
+  20130001 		Эндоскопия кожи туловища	Endoscopy of skin of trunk
+  20135006 		Процедура проверки	Screening procedure
+  20174004 		Серологическое исследование на риккетсиозы, парные образцы	Rickettsial serologic study, paired samples
+  20191000 		Измерение радиальной иммунодиффузии	Radial immunodiffusion measurement
+  20284006 		Тест системы скипетра	Sceptor system test
+  20308005 		Анализ комплемента C>1<r	C>1<r complement assay
+  20312004 		Измерение гиббереловой кислоты	Gibberelic acid measurement
+  20370004 		Микробная идентификация, Ключевой экспресс-тест	Microbial identification, Key rapid test
+  20384009 		Радиоизотопное сканирование гипофиза	Radioisotope scan of pituitary
+  20436004 		Измерение тестостерона, несвязанного	Testosterone measurement, unbound
+  20469004 		Анализ белка S	Protein S assay
+  20480004 		Артротомия срединно-запястного сустава при инфекции с исследованием и дренированием	Arthrotomy of mediocarpal joint for infection with exploration and drainage
+  20481000 		Прогноз	Prognosis
+  20501000 		Анализ мочи, измерение удельного веса	Urinalysis, specific gravity measurement
+  20508006 		Тест гидролиза эскулина	Esculin hydrolysis test
+  20521004 		Базовая тональная аудиометрия, воздушная и костная	Basic pure tone audiometry, air and bone
+  20536001 		Прямой иммуноферментный анализ	Direct immunobead assay
+  20552003 		Плетизмография	Plethysmography
+  20563000 		Измерение эстриола, сыворотка	Estriol measurement, serum
+  20592001 		Количество эозинофилов в кале	Eosinophil count, stool
+  20603005 		Специальная процедура эхографии	Special echography procedure
+  20630000 		Лапароскопическая холецистэктомия с холангиографией	Laparoscopic cholecystectomy with cholangiography
+  20661009 		Подсчет и оценка дыхания	Respirations counting and evaluation
+  20688004 		Метод обнаружения антител, эритроцитов, физиологического раствора, с высоким содержанием белка и античеловеческого глобулина	Antibody detection, RBC, saline, high protein and anti-human globulin technique
+  20726006 		Измерение давления сфинктера Одди	Pressure measurement of sphincter of Oddi
+  20740007 		Эхография таза, В-скан, полная	Pelvic echography, B-scan, complete
+  20798004 		Рентгенологическое исследование стопы, переднезадняя и боковая проекции	Radiologic examination of foot, anteroposterior and lateral views
+  20811003 		Количественная фотоплетизмография, сосудистая	Quantitative photoplethysmography, vascular
+  20816008 		Манометрия пищевода	Esophageal manometry
+  20817004 		Определение давления заклинивания печеночной вены	Wedge pressure determination of hepatic vein
+  20836009 		Компьютерная аксиальная томография задней черепной ямки с контрастированием	Computerized axial tomography of posterior fossa with contrast
+  20857001 		Измерение фенциклидина	Phencyclidine measurement
+  20868001 		Выявление носительства мышечной дистрофии Дюшенна, кровь	Duchenne muscular dystrophy carrier detection, blood
+  20883006 		Измерение N-метилимидазолуксусной кислоты, моча	N-methylimidazoleacetic acid measurement, urine
+  20939001 		Измерение хинина	Quinine measurement
+  21032000 		Кардиологическое картирование	Cardiac mapping
+  21062006 		Измерение фенилпропаноламина	Phenylpropanolamine measurement
+  21151009 		Техническое обслуживание монитора внутричерепного давления	Intracranial pressure monitor maintenance
+  21221007 		Группа крови B	Blood group typing B
+  21331002 		Артротомия колена с исследованием сустава и биопсией	Arthrotomy of knee with joint exploration and biopsy
+  21339000 		Рентгенография кишечника	Radiography of intestine
+  21354006 		Измерение высвобождения гистамина из лейкоцитов	Histamine release from leukocytes measurement
+  21393002 		Трансформация лимфоцитов, вызванная антигеном	Lymphocyte transformation, antigen induced
+  21403007 		Идентификация дрожжей, прямое монтирование	Yeast identification, direct mount
+  21423008 		Сигмоидоскопия через искусственную стому	Sigmoidoscopy through artificial stoma
+  21424002 		Измерение фосфатидилинозитола	Phosphatidylinositol measurement
+  21487006 		Измерение сульфадиазина	Sulfadiazine measurement
+  21537002 		Паратиреоидэктомия с исследованием средостения через грудинный сплит-доступ	Parathyroidectomy with mediastinal exploration by sternal split approach
+  21562002 		Измерение теофиллина, слюна	Theophylline measurement, saliva
+  21593001 		Офтальмодинамография	Ophthalmodynamography
+  21613005 		Рентгенологическое исследование шейного отдела позвоночника в переднезадней и боковой проекции	Radiologic examination of cervical spine, anteroposterior and lateral
+  21623001 		Биофизический профиль плода	Fetal biophysical profile
+  21685006 		Окулярная фотография для медицинской оценки и документирования, стереофотография	Ocular photography for medical evaluation and documentation, stereophotography
+  21689000 		Эндоскопия надпочечников	Endoscopy of adrenal gland
+  21727005 		Аудиометрический тест	Audiometric test
+  21796007 		Прямая ларингоскопия с дилатацией	Direct laryngoscopy with dilation
+  21808008 		Экологическая культура	Environmental culture
+  21831008 		Разрез и исследование бронха	Incision and exploration of bronchus
+  21862007 		Исследование и оценка поля зрения, ограниченные	Visual field examination and evaluation, limited
+  21970003 		Рентгенография ребер	Radiography of ribs
+  22031009 		Порфирин, количественное измерение, моча	Porphyrin, quantitative measurement, urine
+  22034001 		Эхография простаты, трансректальный доступ	Echography of prostate, transrectal approach
+  22059005 		Компьютерная томография, исследование плотности костной ткани	Computerized tomography, bone density study
+  22089003 		Исследование вентиляции легких и перфузии с помощью радиоактивного кислорода	Pulmonary ventilation-perfusion study by radioactive oxygen
+  22189001 		Измерение метотрексата	Methotrexate measurement
+  22238008 		Легочное стресс-тестирование	Pulmonary stress testing
+  22260006 		Твердофазный анализ C1q	C1q solid phase assay
+  22289008 		Рентгенография симфиза подбородка	Radiography of symphysis menti
+  22369009 		Измерение платины	Platinum measurement
+  22400007 		Компьютерная томография, 3-х мерная реконструкция	Computerized tomography, 3 dimensional reconstruction
+  22446007 		Диагностическая рентгенография грудной клетки, минифильм	Diagnostic radiography of chest, minifilm
+  22458007 		Эпидуральная венография	Epidural venography
+  22494006 		Немедленная перкуссия	Immediate percussion
+  22530002 		Артрография тазобедренного сустава с положительным контрастом	Arthrography of hip with positive contrast
+  22546005 		Эзофагогастроскопия через стому	Esophagogastroscopy through stoma
+  22569008 		Измерение глюкозы, сыворотка	Glucose measurement, serum
+  22642004 		Типирование бактериальных бактериофагов	Bacterial bacteriophage typing
+  22644003 		Измерение липопротеинов низкой плотности	Low density lipoprotein measurement
+  22677004 		Вскрытие, общий осмотр, обучение, ограниченный	Autopsy, gross examination, teaching, limited
+  22705003 		Эндоскопия носа с удалением инородного тела	Nasal endoscopy with removal of foreign body
+  22714008 		Анализ захвата антигена	Antigen capture assay
+  22760005 		Ксерорадиография	Xeroradiography
+  22761009 		Перинеограмма	Perineogram
+  22766004 		Анализ ИЛ-6	IL-6 assay
+  22791004 		Рентген пояснично-крестцового отдела позвоночника	X-ray of lumbosacral spine
+  22820002 		Измерение кортизола, свободного, в моче	Cortisol measurement, free, urine
+  22872007 		Стимуляция каротидного синуса с ЭКГ-мониторингом	Stimulation of carotid sinus with ECG monitoring
+  22873002 		Легочная флебография	Pulmonary phlebography
+  22874008 		Измерение трифлуоперазина	Trifluoperazine measurement
+  22891007 		Рентгенография зубов	Radiography of teeth
+  22901000 		Диагностическая рентгенография, обзорная	Diagnostic radiography, survey
+  22923001 		Анализ комплемента фактора D	Factor D complement assay
+  22948003 		Рентгенологическое исследование запястья, переднезадняя и боковая проекции	Radiologic examination of wrist, anteroposterior and lateral views
+  22981002 		Тест Ортолани	Ortolani's test
+  22998002 		Цифровое исследование колостомы	Digital examination of colostomy stoma
+  23025002 		Исследование опорожнения желудка	Gastric emptying study
+  23054008 		Эндоскопия верхнечелюстной пазухи с удалением инородного тела	Maxillary sinus endoscopy with removal of foreign body
+  23093004 		Микробная идентификация, метод биохимической дифференциации дисков Minitek	Microbial identification, Minitek biochemical differentiation disk method
+  23162002 		Электроэнцефалограмма бодрствования и сна со стимуляцией	Electroencephalogram awake and asleep with stimulation
+  23170007 		Измерение фосфофруктокиназы, эритроциты	Phosphofructokinase measurement, erythrocytes
+  23197000 		Воздушная культура для грибка	Air culture for fungus
+  23225008 		Исследование потери белка в желудочно-кишечном тракте	Gastrointestinal protein loss study
+  23244001 		Определение фетального гемоглобина	Fetal hemoglobin determination
+  23297007 		Тест на каталазу	Catalase test
+  23394003 		Рентгенография грудины	Radiography of sternum
+  23405006 		тест Шамрота	Schamroth test
+  23426006 		Измерение функции дыхания	Measurement of respiratory function
+  23461000 		Диагностическая рентгенография, задне-передняя (PA)	Diagnostic radiography, posteroanterior (PA)
+  23463002 		Измерение гентамицина	Gentamicin measurement
+  23479001 		Высокоэффективная жидкостная хроматография, УФ-тип	High performance liquid chromatography, UV type
+  23481004 		Газожидкостная хроматография, микроволновая плазменная	Gas liquid chromatography, microwave plasma type
+  23516001 		Измерение альфа-н-ацетилглюкозаминидазы, фибробласты	Alpha-n-acetylglucosaminidase measurement, fibroblasts
+  23529001 		Измерение ртути, кровь	Mercury measurement, blood
+  23567003 		Измерение биотинидазы	Biotinidase measurement
+  23572007 		Исследование плотности костной ткани методом трансмиссии	Transmission bone density study
+  23576005 		Процедура идентификации растений	Plant identification procedure
+  23638006 		Электрокардиограмма с максимальной физической нагрузкой	Electrocardiogram with maximal exercise test
+  23738001 		УЗИ органов пищеварения	Ultrasonography of digestive system
+  23779000 		Идентификация кристаллов, моча	Crystal identification, urine
+  23796004 		Анализ ИЛ-7	IL-7 assay
+  23818008 		Сканирование или визуализация, исследование перфузии, газообразный	Scanning or imaging, perfusion study, gaseous
+  23828004 		Иммунодиффузия качественная по методу Оухтерлони	Immunodiffusion, qualitative by Ouchterlony technique
+  23846005 		Рентгенография мягких тканей бедра	Radiography of soft tissue of thigh
+  23852006 		Мониторинг сердечной деятельности	Cardiac monitoring
+  23931002 		УЗИ головы и шеи	Ultrasonography of head and neck
+  24046001 		Измерение этиленгликоля	Ethylene glycol measurement
+  24053005 		Скрининг гетерофильных антител	Heterophile antibody screen
+  24058001 		Эхокардиография для определения толщины задней стенки левого желудочка	Echocardiography for determining posterior left ventricular wall thickness
+  24103002 		Эндоскопия кожи головы	Endoscopy of skin of head
+  24135002 		Ультразвуковое исследование всего тела	Ultrasonography of total body
+  24139008 		Эндоскопия мочевого пузыря	Endoscopy of bladder
+  24200008 		Анализ расчетов, количественный, рентгеновская дифракция	Calculus analysis, quantitative, X-ray diffraction
+  24205003 		Измерение мочевой кислоты, моча	Uric acid measurement, urine
+  24229005 		Эзофагоскопия для удаления полиповидного образования	Esophagoscopy for removal of polypoid lesion
+  24247004 		Время лизиса эуглобулина	Euglobulin lysis time
+  24252009 		Измерение общего порфирина в плазме	Porphyrin measurement, total, plasma
+  24267008 		Рентгенография мягких тканей верхней конечности	Radiography of upper limb soft tissue
+  24420007 		Сигмоидоскопия	Sigmoidoscopy
+  24426001 		Измерение мышьяка, желудочный	Arsenic measurement, gastric
+  24509005 		Измерение азота мочевины	Urea nitrogen measurement
+  24512008 		Специальный химический тест, поясните по отчету	Special chemical test, explain by report
+  24519004 		Методика анализа свободных радикалов	Free radical assay technique measurement
+  24580007 		Анализ иммунных комплексов, клетки Раджи	Immune complex assay, Raji cell
+  24592007 		Серологический тест на Ehrlichia sennetsu	Serologic test for Ehrlichia sennetsu
+  24593002 		Анализ на фибринолизин	Fibrinolysin assay
+  24599003 		Мониторинг давления в легочной артерии	Pulmonary artery pressure monitoring
+  24623002 		Скрининговая маммография	Screening mammography
+  24625009 		тест Эли	Ely's test
+  24643008 		Анализ циркулирующего ингибитора, фактор IX	Circulating inhibitor assay, factor IX
+  24644002 		Анализ фактора миграции лейкоцитов	Leukocyte migration factor assay
+  24646000 		Абдоминальная аортография, транслюмбальная с сериалографией	Abdominal aortography, translumbar with serialography
+  24683000 		Измерение поглощения	Uptake measurement
+  24689001 		КТ-контроль для планирования лечения, телетерапия	CT guidance for treatment planning, teletherapy
+  24714007 		Скорость роста микроорганизмов, быстрая	Microbial growth rate, rapid
+  24715008 		Спленопортограмма с помощью селезеночной артериографии	Splenoportogram by splenic arteriography
+  24727006 		Исследования градиента температуры	Temperature gradient studies
+  24737001 		Эхография мошонки и ее содержимого	Echography of scrotum and contents
+  24753003 		Измерение глобулина, связывающего половые гормоны	Sex hormone binding globulin measurement
+  24799001 		Тест нагрузки бикарбонатом	Bicarbonate loading test
+  24808009 		Исследование хелатирования железа	Iron chelation study
+  24831009 		Измерение щелочной фосфатазы кишечника	Intestinal alkaline phosphatase measurement
+  24848001 		Эхография органов малого таза	Pelvic echography
+  24856003 		Диагностическая рентгенография копчика	Diagnostic radiography of coccyx
+  24892004 		Измерение антинейрональных ядерных антител типа I	Antineuronal nuclear antibody-type I measurement
+  24899008 		Контроль инфекции культура на ночь	Infection control culture overnight
+  24968008 		Эндоскопия кожи конечностей	Endoscopy of skin of extremities
+  24985005 		Исследование и оценка поля зрения, расширенная	Visual field examination and evaluation, extended
+  25096005 		Измерение фосфатидилглицерина, полуколичественное, амниотическая жидкость	Phosphatidylglycerol measurement, semi-quantitative, amniotic fluid
+  25104002 		Измерение галоперидола	Haloperidol measurement
+  25164004 		Измерение кетоновых тел, количественное	Ketone bodies measurement, quantitative
+  25197003 		Измерение натрия	Sodium measurement
+  25219007 		Измерение антител к ядерной матрице	Antibody to nuclear matrix measurement
+  25284008 		Измерение парциального давления углекислого газа	Carbon dioxide measurement, partial pressure
+  25306006 		Термография глубоких вен	Deep vein thermography
+  25340006 		Количество нейтрофилов	Neutrophil band count
+  25347009 		Венография двухсторонних нижних конечностей	Venography of bilateral lower limbs
+  25383000 		Анализ ИЛ-1 Альфа	IL-1 Alpha assay
+  25411007 		Гистерограмма	Hysterogram
+  25434003 		Ограниченное обследование глаз	Limited eye examination
+  25459007 		Анализ ингибирования агглютинации покрытых частиц	Coated particle agglutination inhibition assay
+  25464006 		Тест на генерацию тромбопластина, модификация Хикса-Питни	Thromboplastin generation test, Hicks-Pitney modification
+  25469001 		Измерение анионной щели	Anion gap measurement
+  25485006 		Исследование артерии нижней конечности	Exploration of artery of lower limb
+  25514001 		Измерение дигоксина	Digoxin measurement
+  25528007 		Набор для идентификации микроорганизмов, метод Enterotube II	Microbial identification kit, Enterotube II method
+  25570002 		Эндоскопия носа	Endoscopy of nose
+  25578009 		Реакция пассивной гемагглютинации ВИЧ-1	HIV-1 passive hemagglutination assay
+  25579001 		Измерение кислорода, парциальное давление, артериальное	Oxygen measurement, partial pressure, arterial
+  25630002 		Визуализация яичек	Testicular imaging
+  25643002 		Измерение криоглобулина, тип I	Cryoglobulin measurement, type I
+  25645009 		Эндоскопия промежности	Endoscopy of perineum
+  25652006 		измерение альфа-L-идуронидазы	alpha-L-iduronidase measurement
+  25656009 		Физическое обследование, полное	Physical examination, complete
+  25696006 		VDRL, качественный	VDRL, qualitative
+  25697002 		Ренин, измерение низкого потребления соли, вертикально, 4 часа	Renin, low salt intake measurement, upright, 4 hours
+  25704007 		Тест захвата антигена ИФА	Antigen capture EIA test
+  25741008 		Специальный аудиометрический функциональный тест	Special audiometric function test
+  25760001 		Ангиография шейно-мозговых артерий	Angiography of cervicocerebral arteries
+  25775009 		Анализ желудочного сока, измерение свободной и общей кислоты	Gastric fluid analysis, free and total acid measurement
+  25846008 		Цистоуретроскопия с внутренней мужской уретротомией	Cystourethroscopy with internal male urethrotomy
+  25850001 		УЗИ грудной клетки	Ultrasonography of thorax
+  25884002 		Иммуноэлектрофорез	Immunoelectrophoresis
+  25918005 		Цистоуретроскопия с биопсией мочевого пузыря	Cystourethroscopy with biopsy of bladder
+  25925003 		Концентрация яйцеклеток и цист	Concentration for ova and cysts
+  26046004 		Кардиоваскулярный стресс-тест с использованием велоэргометра	Cardiovascular stress test using bicycle ergometer
+  26047008 		Тест на переносимость аспирина	Aspirin tolerance test
+  26052003 		Измерение марганца	Manganese measurement
+  26055001 		Тестирование реакции на вызванный стимул	Evoked stimulus response testing
+  26058004 		Торакоскопия с биопсией	Thoracoscopy with biopsy
+  26086007 		Лабораторная процедура исследования костного мозга	Bone marrow laboratory procedure
+  26154000 		Измерение дефицита базы	Base deficit measurement
+  26234007 		Агрегация тромбоцитов с тестом на коллаген	Platelet aggregation with collagen test
+  26262000 		Флебография головы	Phlebography of head
+  26300008 		Протеин С, функциональный анализ	Protein C, functional assay
+  26308001 		Глубокая тонкоигольная аспирационная биопсия под рентгенологическим контролем	Deep fine needle aspiration biopsy under radiologic guidance
+  26337002 		Экспериментальная торакотомия	Exploratory thoracotomy
+  26354005 		Электроэнцефалограмма сна, всю ночь	Sleep electroencephalogram, all night
+  26488000 		Анализ плазминогена, антигенный	Plasminogen assay, antigenic
+  26491000 		Специальный тест идентификации диска потенции	Special potency disk identification test
+  26504003 		Артротомия колена с исследованием сустава	Arthrotomy of knee with joint exploration
+  26537001 		Диагностическая рентгенография поясничного отдела позвоночника, комбинированная передняя и боковая проекции	Diagnostic radiography of lumbar spine, combined AP and lateral
+  26542009 		Тестирование мочи на сахар с помощью тест-полоски в отделении	Ward urine dip stick testing for sugar
+  26562001 		Измерение фенотиазина, количественное	Phenothiazine measurement, quantitative
+  26589006 		Идентификация антител, лейкоцитарное антитело	Antibody identification, leukocyte antibody
+  26604007 		Общий анализ крови	Complete blood count
+  26631005 		Измерение содержания кремния в моче	Silica measurement, urine
+  26648002 		Диагностическая рентгенография, специальные проекции	Diagnostic radiography, special views
+  26661002 		Зондирование слезных канальцев	Probing of lacrimal canaliculi
+  26758005 		Измерение альбумина	Albumin measurement
+  26762004 		Вскрытие, общий осмотр, обучение, полный	Autopsy, gross examination, teaching, complete
+  26769008 		Время истекать кровью, Дюк	Bleeding time, Duke
+  26832000 		Измерение альфа-галактозидазы, фибробласты	Alpha-galactosidase measurement, fibroblasts
+  26914001 		Трибутириновый тест	Tributyrin test
+  26946001 		КТ верхней конечности с контрастом	CT of upper extremity with contrast
+  26958001 		Панель функции печени	Hepatic function panel
+  26962007 		Уреазный тест, метод Уэйна	Urease test, Wayne method
+  26970002 		Измерение гексозаминидазы А и общей гексозаминидазы, сыворотка и лейкоциты	Hexosaminidase A and total hexosaminidase measurement, serum and leukocytes
+  26981004 		Тест на о-нитрофенил-бета-о-галактопиранозид	O-nitrophenyl-beta-o-galactopyranoside test
+  27032005 		Осмотр носа и горла	Nose and throat examination
+  27051004 		измерение pH, артериальное	pH measurement, arterial
+  27083005 		Измерение подкласса иммуноглобулина G	Immunoglobulin G subclass measurement
+  27107005 		Осмотическая хрупкость, немедленная	Osmotic fragility, immediate
+  27115008 		Измерение микросомальных тиреоидных антител	Microsomal thyroid antibody measurement
+  27171005 		Анализ мочи	Urinalysis
+  27198009 		Определение группы крови, резус-генотипирование, полное	Blood group typing, RH genotyping, complete
+  27220002 		Измерение альфа-1-фетопротеина, амниотическая жидкость	Alpha-1-Fetoprotein measurement, amniotic fluid
+  27260001 		Анализ мочи, рутинный и микроскопический	Urinalysis, routine and microscopic
+  27300001 		Молеграфия	Molegraphy
+  27310005 		Измерение золота	Gold measurement
+  27311009 		Тест на непрозрачность этиленгликоля	Ethylene glycol opacity test
+  27322008 		Измерение 17-кетогенных стероидов	17-Ketogenic steroids measurement
+  27323003 		Измерение секреторного иммуноглобулина А	Secretory immunoglobulin A measurement
+  27375007 		Анализ желчных камней	Gallstone analysis
+  27469002 		Чрескожная чреспеченочная портография с оценкой гемодинамики	Percutaneous transhepatic portography with hemodynamic evaluation
+  27483000 		Диагностическая рентгенография с контрастным веществом	Diagnostic radiography with contrast media
+  27494001 		Анализ на антитела к ВИЧ-2	HIV-2 antibody assay
+  27496004 		Кожная проба на замедленную гиперчувствительность	Delayed hypersensitivity skin test
+  27498003 		Двусторонняя бронхография	Bilateral bronchography
+  27532002 		Эндоскопия и удаление инородного материала	Endoscopy and removal of foreign material
+  27563003 		Конго красный тест	Congo red test
+  27567002 		Микроцитотоксичность перекрестной пробы, тип NIH	Microcytotoxicity crossmatch, NIH type
+  27593009 		Бактериальное биотипирование	Bacterial biotyping
+  27621006 		Измерение ацетилсалициловой кислоты, качественное	Acetylsalicylic acid measurement, qualitative
+  27662000 		Калибровка уретры	Calibration of urethra
+  27709003 		Измерение аскорбиновой кислоты	Ascorbic acid measurement
+  27761003 		Измерение амфотерицина	Amphotericin measurement
+  27808002 		Видео- и радиотелеметрический электроэнцефалографический мониторинг	Video and radio-telemetered electroencephalographic monitoring
+  27821009 		Венография яремной вены	Venography of jugular vein
+  27851003 		Миелография всего позвоночного канала	Myelography of entire spinal canal
+  27854006 		Измерение метанефринов, общее, моча	Metanephrines measurement, total, urine
+  27904004 		Измерение антител к SS-B	Antibody to SS-B measurement
+  27965000 		Измерение метамфетамина	Methamphetamine measurement
+  27994007 		Измерение теофиллина, кровь	Theophylline measurement, blood
+  28033003 		Флюороскопическая локализация для игольчатой ​​биопсии в грудной клетке	Fluoroscopic localization for needle biopsy in chest
+  28034009 		Последующее обследование носа и горла	Follow-up examination of nose and throat
+  28036006 		Измерение холестерина липопротеинов высокой плотности	High density lipoprotein cholesterol measurement
+  28040002 		Общая панель здоровья	General health panel
+  28101009 		Общая жизненная емкость легких с измерением объема форсированного выдоха и пиковой скорости потока	Total vital capacity with timed forced expiratory volume and peak flow rate measurement
+  28148006 		Повторное исследование паращитовидной железы	Reexploration of parathyroid gland
+  28160007 		Тазовая лимфангиография, двусторонняя	Pelvic lymphangiography, bilateral
+  28163009 		Кожная проба на туберкулез, тест Тине	Skin test for tuberculosis, Tine test
+  28261000 		Измерение бета-глюкозидазы	Beta-glucosidase measurement
+  28275007 		Общая плетизмография тела	Total body plethysmography
+  28297009 		Измерение галактозилцерамид бета-галактозидазы, фибробласты	Galactosylceramide beta-galactosidase measurement, fibroblasts
+  28309003 		Эндоскопия и катетеризация	Endoscopy and catheterization
+  28317006 		Определение гематокрита	Hematocrit determination
+  28337005 		Исследование выживаемости эритроцитов при селезеночной секвестрации	Red cell survival study with splenic sequestration
+  28339008 		Торакальная миелография	Thoracic myelography
+  28340005 		Количественное измерение антител к гистонам	Quantitative anti-histone antibody measurement
+  28367004 		Холангиограмма	Cholangiogram
+  28378007 		Измерение амилазы, моча	Amylase measurement, urine
+  28429001 		Бинокулярная микроскопия, отоларингологическая	Binocular microscopy, otolaryngologic
+  28441008 		Измерение C-ANCA	C-ANCA measurement
+  28507002 		Эндоскопия артерий головы и шеи	Endoscopy of artery of head and neck
+  28514000 		Томография обеих почек	Tomography of both kidneys
+  28533005 		Анализ мочи, исследование осадка, нецентрифугированный	Urinalysis, sediment examination, uncentrifuged
+  28566009 		Эхография, М-режим, полная	Echography, M-mode, complete
+  28594001 		Артротомия голеностопного сустава с исследованием сустава и биопсией	Arthrotomy of ankle with joint exploration and biopsy
+  28612008 		Артроскопия запястья с хирургической обработкой сустава	Arthroscopy of wrist with joint debridement
+  28665001 		Анализ TGF-бета	TGF-Beta assay
+  28686001 		Нефротомограмма	Nephrotomogram
+  28687005 		Транскатетерная терапия методом инфузии с ангиографией	Transcatheter therapy by infusion with angiography
+  28760000 		Ларингоскопия	Laryngoscopy
+  28804003 		Анализ на антитела к ВИЧ-1	HIV-1 antibody assay
+  28805002 		Измерение каротина	Carotene measurement

@@ -1,0 +1,1667 @@
+<?xml version="1.0" ?>
+
+<xliff xmlns="urn:oasis:names:tc:xliff:document:2.0" version="2.0">
+  <file source-language="en" target-language="ru" id="CodeSystem-organizational-specialization-cs" original="Resource CodeSystem-organizational-specialization-cs" datatype="KEYVALUEJSON">
+    <body>
+      <trans-unit id="CodeSystem-organizational-specialization-cs" resname="CodeSystem.name">
+             <notes>
+               <note id="n1">A natural language name identifying the code system. This name should be usable as an identifier for the module by machine processing applications such as code generation.</note>
+             </notes>
+        <source>OrganizationalSpecializationCS</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-organizational-specialization-cs" resname="CodeSystem.title">
+             <notes>
+               <note id="n1">A short, descriptive, user-friendly title for the code system.</note>
+             </notes>
+        <source>Organizational specialization</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-organizational-specialization-cs" resname="CodeSystem.publisher">
+             <notes>
+               <note id="n1">The name of the organization or individual responsible for the release and ongoing maintenance of the code system.</note>
+             </notes>
+        <source>Uzinfocom LLC</source>
+        <target>ООО «Единый интегратор Uzinfocom»</target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-organizational-specialization-cs" resname="ContactDetail.name">
+             <notes>
+               <note id="n1">The name of an individual to contact.</note>
+             </notes>
+        <source>Uzinfocom LLC</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-organizational-specialization-cs" resname="CodeSystem.description">
+             <notes>
+               <note id="n1">A free text natural language description of the code system from a consumer's perspective.</note>
+             </notes>
+        <source>Determines the specialization of a medical organization</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-organizational-specialization-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Terapiya</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-organizational-specialization-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Терапия</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-organizational-specialization-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Therapy</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-organizational-specialization-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Kardiologiya</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-organizational-specialization-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Кардиология</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-organizational-specialization-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Cardiology</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-organizational-specialization-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Bolalar kardiorevmatologiyasi</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-organizational-specialization-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Детская кардиоревматология</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-organizational-specialization-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Pediatric Cardiac Rheumatology</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-organizational-specialization-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Kattalar gastroenterologiyasi</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-organizational-specialization-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Взрослая гастроэнтерология</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-organizational-specialization-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Adult Gastroenterology</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-organizational-specialization-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Bolalar gastroenterologiyasi</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-organizational-specialization-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Детская гастроэнтерология</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-organizational-specialization-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Pediatric Gastroenterology</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-organizational-specialization-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Kattalar allergologiyasi</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-organizational-specialization-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Аллергология для взрослых</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-organizational-specialization-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Adult Allergology</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-organizational-specialization-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Bolalar allergologiyasi</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-organizational-specialization-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Детская аллергология</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-organizational-specialization-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Pediatric Allergology</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-organizational-specialization-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Kattalar uchun reabilitatsiya</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-organizational-specialization-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Реабилитация для взрослых</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-organizational-specialization-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Adult Rehabilitation</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-organizational-specialization-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Bolalar uchun reabilitatsiya</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-organizational-specialization-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Реабилитация для детей</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-organizational-specialization-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Children Rehabilitation</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-organizational-specialization-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Kattalar endokrinologiyasi</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-organizational-specialization-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Эндокринология взрослых</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-organizational-specialization-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Adult Endocrinology</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-organizational-specialization-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Bolalar endokrinologiyasi</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-organizational-specialization-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Детская эндокринология</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-organizational-specialization-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Pediatric Endocrinology</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-organizational-specialization-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Kattalar yuqumli kasalliklari</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-organizational-specialization-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Инфекционные заболевания взрослых</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-organizational-specialization-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Adult Infectious Diseases</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-organizational-specialization-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Bolalar yuqumli kasalliklari</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-organizational-specialization-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Детские инфекционные заболевания</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-organizational-specialization-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Children Infectious Diseases</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-organizational-specialization-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Kattalar gematologiyasi</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-organizational-specialization-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Взрослая гематология</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-organizational-specialization-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Adult Hematology</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-organizational-specialization-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Bolalar gematologiyasi</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-organizational-specialization-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Детская гематология</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-organizational-specialization-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Pediatric Hematology</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-organizational-specialization-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Kattalar nefrologiyasi</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-organizational-specialization-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Взрослая нефрология</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-organizational-specialization-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Adult Nephrology</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-organizational-specialization-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Bolalar nefrologiyasi</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-organizational-specialization-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Детская нефрология</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-organizational-specialization-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Pediatric Nephrology</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-organizational-specialization-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Kattalar uchun revmatologik</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-organizational-specialization-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Ревматология для взрослых</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-organizational-specialization-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Adult Rheumatology</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-organizational-specialization-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Bolalar uchun revmatologik</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-organizational-specialization-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Ревматология для детей</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-organizational-specialization-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Children Rheumatology</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-organizational-specialization-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Kattalar uchun pulmonologik</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-organizational-specialization-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Пульмонология для взрослых</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-organizational-specialization-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Adult Pulmonology</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-organizational-specialization-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Bolalar uchun pulmonologik</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-organizational-specialization-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Пульмонология для детей</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-organizational-specialization-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Children Pulmonology</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-organizational-specialization-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Kattalar jarrohligi</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-organizational-specialization-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Хирургия взрослых</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-organizational-specialization-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Adult Surgery</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-organizational-specialization-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Bolalar jarrohligi</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-organizational-specialization-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Детская хирургия</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-organizational-specialization-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Pediatric Surgery</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-organizational-specialization-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Kattalar neyrojarrohligi</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-organizational-specialization-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Взрослая нейрохирургия</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-organizational-specialization-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Adult neurosurgery</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-organizational-specialization-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Bolalar neyrojarrohligi</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-organizational-specialization-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Детская нейрохирургия</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-organizational-specialization-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Pediatric neurosurgery</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-organizational-specialization-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Kattalar torakal jarrohligi</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-organizational-specialization-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Торакальная хирургия у взрослых</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-organizational-specialization-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Adult thoracic surgery</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-organizational-specialization-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Bolalar torakal jarrohligi</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-organizational-specialization-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Детская торакальная хирургия</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-organizational-specialization-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Pediatric thoracic surgery</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-organizational-specialization-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Kattalar kardiojarrohligi</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-organizational-specialization-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Кардиохирургия у взрослых</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-organizational-specialization-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Adult cardiac surgery</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-organizational-specialization-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Bolalar kardiojarrohligi</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-organizational-specialization-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Детская кардиохирургия</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-organizational-specialization-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Pediatric cardiac surgery</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-organizational-specialization-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Kattalar tomirlar jarrohligi</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-organizational-specialization-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Сосудистая хирургия взрослых</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-organizational-specialization-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Adult vascular surgery</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-organizational-specialization-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Bolalar tomirlar jarrohligi</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-organizational-specialization-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Детская сосудистая хирургия</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-organizational-specialization-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Adult traumatology</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-organizational-specialization-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Kattalar travmatologiyasi</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-organizational-specialization-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Взрослая травматология</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-organizational-specialization-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Pediatric traumatology</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-organizational-specialization-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Bolalar travmatologiyasi</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-organizational-specialization-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Детская травматология</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-organizational-specialization-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Burn disease in adults</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-organizational-specialization-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Kattalar kuyish kasalligi</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-organizational-specialization-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Ожоговая болезнь у взрослых</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-organizational-specialization-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Burn disease in children</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-organizational-specialization-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Bolalar kuyish kasalligi</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-organizational-specialization-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Ожоговая болезнь у детей</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-organizational-specialization-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Orthopedics for adults</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-organizational-specialization-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Kattalar ortopediyasi</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-organizational-specialization-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Ортопедия для взрослых</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-organizational-specialization-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Pediatric orthopedics</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-organizational-specialization-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Bolalar ortopediyasi</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-organizational-specialization-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Детская ортопедия</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-organizational-specialization-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Adult urology</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-organizational-specialization-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Kattalar urologiyasi</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-organizational-specialization-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Взрослая урология</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-organizational-specialization-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Pediatric urology</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-organizational-specialization-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Bolalar urologiyasi</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-organizational-specialization-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Детская урология</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-organizational-specialization-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Dentistry for adults</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-organizational-specialization-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Kattalar stomatologiyasi</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-organizational-specialization-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Стоматология для взрослых</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-organizational-specialization-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Pediatric dentistry</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-organizational-specialization-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Bolalar stomatologiyasi</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-organizational-specialization-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Детская стоматология</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-organizational-specialization-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Proctology</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-organizational-specialization-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Proktologik</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-organizational-specialization-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Проктологический</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-organizational-specialization-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Esophagus surgery in adults</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-organizational-specialization-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Kattalar uchun yiringli jarrohlik</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-organizational-specialization-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Хирургия пищевода у взрослых</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-organizational-specialization-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Pediatric surgery</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-organizational-specialization-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Bolalar yiringli jarrohlik</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-organizational-specialization-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Adult oncology</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-organizational-specialization-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Kattalar onkologiyasi</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-organizational-specialization-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Взрослая онкология</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-organizational-specialization-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Pediatric oncology</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-organizational-specialization-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Bolalar onkologiyasi</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-organizational-specialization-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Детская онкология</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-organizational-specialization-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Radiology and roentgenology</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-organizational-specialization-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Radiologik va rentgenologik</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-organizational-specialization-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Радиология и рентгенлогия</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-organizational-specialization-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>For pregnant women, women in labor and women in childbirth (except for pregnancy pathologies)</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-organizational-specialization-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Homilador, tug'adigan va tuqqan ayollar uchun (homiladorlik patologiyasidan tashqari)- jami</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-organizational-specialization-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Для беременных, рожениц и родильниц (за исключением патологий беременности)</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-organizational-specialization-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>For women in labor</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-organizational-specialization-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>shu jumladan: Tug'adiganlar uchun</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-organizational-specialization-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Для рожениц</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-organizational-specialization-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Pathology of pregnancy</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-organizational-specialization-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Homiladorlik patologiyasi</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-organizational-specialization-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Патология беременности</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-organizational-specialization-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Gynecology (except abortions) for adults</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-organizational-specialization-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Kattalar uchun ginekologiya (abortlardan tashqari).</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-organizational-specialization-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Гинекология (кроме абортов) для взрослых</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-organizational-specialization-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Gynecology for children</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-organizational-specialization-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Bolalar uchun ginekologiya</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-organizational-specialization-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Гинекология для детей</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-organizational-specialization-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Abort uchun</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-organizational-specialization-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Для аборта</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-organizational-specialization-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>For abortion</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-organizational-specialization-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Katta yoshdagi sil kasalligi</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-organizational-specialization-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Туберкулез взрослых</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-organizational-specialization-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Tuberculosis in adults</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-organizational-specialization-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Kattalardagi suyaklar va bo'g'imlarning sil kasalligi</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-organizational-specialization-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Туберкулез костей и суставов взрослых</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-organizational-specialization-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Tuberculosis of bones and joints in adults</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-organizational-specialization-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Bolalarda suyak va bo'g'imlarning sil kasalligi</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-organizational-specialization-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Туберкулез костей и суставов детей</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-organizational-specialization-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Tuberculosis of bones and joints in children</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-organizational-specialization-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Kattalar uchun nevrologiya</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-organizational-specialization-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Неврология для взрослых</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-organizational-specialization-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Neurology for adults</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-organizational-specialization-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Bolalar uchun nevrologiya</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-organizational-specialization-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Неврология для детей</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-organizational-specialization-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Neurology for children</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-organizational-specialization-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Kattalar psixiatriyasi (psixonevrologiya)</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-organizational-specialization-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Взрослая психиатрия (психоневрология)</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-organizational-specialization-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Adult psychiatry (psychoneurology)</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-organizational-specialization-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Bolalar psixiatriyasi</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-organizational-specialization-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Детская психиатрия</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-organizational-specialization-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Child psychiatry</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-organizational-specialization-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Kattalar psixosomatikasi</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-organizational-specialization-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Психосоматика взрослых</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-organizational-specialization-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Psychosomatics of adults</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-organizational-specialization-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Bolalar psixosomatikasi</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-organizational-specialization-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Детская психосоматика</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-organizational-specialization-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Child psychosomatics</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-organizational-specialization-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Narkologik</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-organizational-specialization-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Наркологический</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-organizational-specialization-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Narcological</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-organizational-specialization-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Kattalar toksikologiyasi</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-organizational-specialization-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Токсикология взрослых</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-organizational-specialization-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Toxicology of adults</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-organizational-specialization-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Bolalar uchun toksikologiya</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-organizational-specialization-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Токсикология для детей</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-organizational-specialization-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Toxicology for children</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-organizational-specialization-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Kattalar uchun oftalmologiya</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-organizational-specialization-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Офтальмология для взрослых</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-organizational-specialization-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Ophthalmology for adults</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-organizational-specialization-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Bolalar oftalmologiyasi</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-organizational-specialization-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Детская офтальмология</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-organizational-specialization-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Children's ophthalmology</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-organizational-specialization-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Kattalar uchun otolaringologiya</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-organizational-specialization-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Отоларингология для взрослых</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-organizational-specialization-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Otolaryngology for adults</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-organizational-specialization-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Bolalar otorinolaringologiyasi</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-organizational-specialization-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Детская отоларингология</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-organizational-specialization-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Children's otolaryngology</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-organizational-specialization-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Kattalar uchun dermatovenerologiya</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-organizational-specialization-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Дерматовенерология для взрослых</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-organizational-specialization-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Dermatovenereology for adults</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-organizational-specialization-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Bolalar dermatovenerologiyasi</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-organizational-specialization-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Детская дерматовенерология</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-organizational-specialization-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Children's dermatovenereology</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-organizational-specialization-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Pediatriya (somatik)</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-organizational-specialization-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Педиатрия (соматическая)</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-organizational-specialization-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Pediatrics (somatic)</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-organizational-specialization-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Bolalar patologiyasi</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-organizational-specialization-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Детская патология</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-organizational-specialization-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Children's pathology</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-organizational-specialization-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Transplantologiya</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-organizational-specialization-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Трансплантология</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-organizational-specialization-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Transplantology</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-organizational-specialization-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Kattalar uchun boshqa</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-organizational-specialization-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Другое для взрослых</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-organizational-specialization-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Other for adults</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-organizational-specialization-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Bolalar uchun boshqa</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-organizational-specialization-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Другое для детей</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-organizational-specialization-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Other for children</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-organizational-specialization-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Kattalar uchun intensiv terapiya</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-organizational-specialization-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Интенсивная терапия для взрослых</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-organizational-specialization-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Intensive care for adults</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-organizational-specialization-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Pediatriya intensiv terapiyasi</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-organizational-specialization-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Детская реанимация</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-organizational-specialization-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Children's intensive care</source>
+        <target></target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

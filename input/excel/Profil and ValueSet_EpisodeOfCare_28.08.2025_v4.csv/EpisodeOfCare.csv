@@ -1,0 +1,26 @@
+Name		Flags		Cardinality	Example	Document	Type	Description & Constraints		ValueSets			
+EpisodeOfCare		TU					DomainResource	Связь пациента с организацией и поставщиком медицинских услуг на определенный период времени, в течение которого организация берет на себя определенный уровень ответственности.		System	CodeSystem	Code	Display
+Identifier		Σ S	D	0..1			identifier	"	Идентификатор, соответствующий этому Episode of Care"		http://hl7.org/fhir/episode-of-care-status	CodeSystemStatus	все коды	Текущий статус Episode of Care
+status		?! Σ S	D	1..1	active	HL7.v5	code	"Текущий статус Episode of Care (Required)
+Binding: http://hl7.org/fhir/episode-of-care-status"		https://terminology.medcore.uz/ValueSet/episodeofcareType	CodeSystemtype	все коды	Классификация типа эпизода оказания помощи
+statusHistory		Σ S	D	0..*			BackboneElement	Список прошлых кодов статуса 		https://terminology.medcore.uz/ValueSet/encounter-ReasonUse	CodeSystemReasonUse	все коды	Для чего/как следует использовать значение причины
+	status	Σ S	D	1..1	Rejalashtirilgan 	HL7.v5	code	"Прошлый статус Episode of Care
+Binding: http://hl7.org/fhir/episode-of-care-status"					
+	period	Σ S	D	1..1	"start: 2025-05-10T09:30:00
+end: -"		period	Продолжительность EpisodeOfCare в указанном статусе					
+type		Σ S	D	0..*	mserv.0001.00004	Local new	CodeableConcept	"Классификация типа эпизода оказания помощи
+Binding: https://terminology.medcore.uz/ValueSet/episodeofcareType"					
+reason		Σ S	D	0..*			BackboneElement	Перечень медицинских показаний, которые, как ожидается, будут рассмотрены в ходе оказания помощи					
+	use	Σ S	D	0..*	mserv.0002.00001	Local new	"	CodeableConcept"	"	Для чего/как следует использовать значение причины
+Binding: https://terminology.medcore.uz/ValueSet/encounter-ReasonUse"					
+	value	Σ S	D	0..*	F50.5	МКБ-10	CodeableReference(Condition | DiagnosticReport | Procedure | Observation | HealthcareService)	Медицинская причина, требующая рассмотрения.					
+diagnosis		Σ S	D	0..*			BackboneElement	Список медицинских состояний, которые были рассмотрены во время эпизода оказания помощи					
+	use	Σ S	D	0..*			CodeableConcept	Для чего/как следует использовать значение причины					
+	condition	Σ S		0..*	F50.5	МКБ-10	CodeableReference(Condition)	Диагноз, относящийся к встрече (МКБ-10?)					
+Patient		Σ S	D	1..1			Reference(Patient)	"	Пациент, относящийся к данному эпизоду ​​оказания помощи"					
+managingOrganization		Σ S	D	0..1			Reference(Organization)	Организация, которая берет на себя ответственность за координацию ухода					
+period		Σ S	D	0..1	"start: 2025-05-10T09:30:00
+end: -"		Period	Интервал, в течение которого принимается ответственность					
+referralRequest 		Σ S	D	0..*			Reference(ServiceRequest)	Запрос(ы) направления, которые выполняются данным EpisodeOfCare, входящие направления.					
+careManager 		Σ S	D	0..1			"	Reference(Practitioner | PractitionerRole)"	Координатор (ответственный) по уходу за пациентом					
+careTeam 		Σ S	D	0..*			Reference(CareTeam)	Другие специалисты, оказывающие помощь в этом эпизоде ​​лечения					

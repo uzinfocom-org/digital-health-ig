@@ -6,7 +6,7 @@
   "id": "organizational-specialization-cs",
   "title": "Organizational specialization",
   "description": "Determines the specialization of a medical organization",
-  "url": "https://terminology.medcore.uz/CodeSystem/organizational-specialization-cs",
+  "url": "https://terminology.dhp.uz/fhir/core/CodeSystem/organizational-specialization-cs",
   "concept": [
     {
       "code": "101",
@@ -1101,7 +1101,6 @@
       ]
     }
   ],
-  "version": "1.0.0",
   "experimental": true,
   "date": "2025-02-24",
   "language": "uz",

@@ -1,0 +1,47 @@
+{
+  "id" : "NamingSystem-episodeofcare-identifier",
+  "baseLang" : "en",
+  "languages" : [
+    {
+      "targetLang" : "ru",
+      "entries" : [
+        {
+          "id" : "NamingSystem.name",
+          "context" : "A natural language name identifying the naming system. This name should be usable as an identifier for the module by machine processing applications such as code generation.",
+          "source" : "UzDhpEpisodeOfCareIdentifier",
+          "target" : null
+        },
+        {
+          "id" : "NamingSystem.publisher",
+          "context" : "The name of the organization or individual responsible for the release and ongoing maintenance of the naming system.",
+          "source" : "Uzinfocom LLC",
+          "target" : "ООО «Единый интегратор Uzinfocom»"
+        },
+        {
+          "id" : "ContactDetail.name",
+          "context" : "The name of an individual to contact.",
+          "source" : "Uzinfocom LLC",
+          "target" : null
+        },
+        {
+          "id" : "Coding.display",
+          "context" : "A representation of the meaning of the code in the system, following the rules of the system.",
+          "source" : "Visit number",
+          "target" : null
+        },
+        {
+          "id" : "NamingSystem.description",
+          "context" : "A free text natural language description of the naming system from a consumer's perspective. Details about what the namespace identifies including scope, granularity, version labeling, etc.",
+          "source" : "Identifier system used for EpisodeOfCare resources within the Uzbekistan DHP context.",
+          "target" : null
+        },
+        {
+          "id" : "NamingSystem.uniqueId.value",
+          "context" : "The string that should be sent over the wire to identify the code system or identifier system.",
+          "source" : "http://dhp.uz/ids/episode-of-care",
+          "target" : null
+        }
+      ]
+    }
+  ]
+}

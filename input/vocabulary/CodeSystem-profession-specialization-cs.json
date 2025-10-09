@@ -6,7 +6,7 @@
   "id": "profession-specialization-cs",
   "title": "Profession specializations",
   "description": "Defines the specializations of medical professions",
-  "url": "https://terminology.medcore.uz/CodeSystem/profession-specialization-cs",
+  "url": "https://terminology.dhp.uz/fhir/core/CodeSystem/profession-specialization-cs",
   "concept": [
     {
       "code": "408467006",
@@ -1605,7 +1605,6 @@
       ]
     }
   ],
-  "version": "1.0.0",
   "experimental": true,
   "date": "2025-03-12",
   "publisher": "Uzinfocom",

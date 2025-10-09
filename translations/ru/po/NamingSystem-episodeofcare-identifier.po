@@ -1,0 +1,31 @@
+
+# A natural language name identifying the naming system. This name should be usable as an identifier for the module by machine processing applications such as code generation.
+#: NamingSystem.name
+msgid "UzDhpEpisodeOfCareIdentifier"
+msgstr ""
+
+# The name of the organization or individual responsible for the release and ongoing maintenance of the naming system.
+#: NamingSystem.publisher
+msgid "Uzinfocom LLC"
+msgstr "ООО «Единый интегратор Uzinfocom»"
+
+# The name of an individual to contact.
+#: ContactDetail.name
+msgid "Uzinfocom LLC"
+msgstr ""
+
+# A representation of the meaning of the code in the system, following the rules of the system.
+#: Coding.display
+msgid "Visit number"
+msgstr ""
+
+# A free text natural language description of the naming system from a consumer's perspective. Details about what the namespace identifies including scope, granularity, version labeling, etc.
+#: NamingSystem.description
+msgid "Identifier system used for EpisodeOfCare resources within the Uzbekistan DHP context."
+msgstr ""
+
+# The string that should be sent over the wire to identify the code system or identifier system.
+#: NamingSystem.uniqueId.value
+msgid "http://dhp.uz/ids/episode-of-care"
+msgstr ""
+

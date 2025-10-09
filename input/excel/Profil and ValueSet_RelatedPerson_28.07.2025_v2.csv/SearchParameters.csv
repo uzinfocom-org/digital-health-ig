@@ -1,0 +1,19 @@
+Include			Exclude	
+Name	Expession		Name	Expession
+active	RelatedPerson.active		address-postalcode	RelatedPerson.address.postalCode
+address	RelatedPerson.address		email	"	RelatedPerson.telecom.where(system='email')"
+address-city	RelatedPerson.address.city			
+address-country	RelatedPerson.address.country			
+address-state	RelatedPerson.address.state			
+address-use	RelatedPerson.address.use			
+birthdate	RelatedPerson.birthDate			
+family	RelatedPerson.name.family			
+gender	RelatedPerson.gender			
+given	RelatedPerson.name.given			
+identifier	RelatedPerson.identifier			
+name	RelatedPerson.name			
+patient	RelatedPerson.patient (Patient)			
+phone	RelatedPerson.telecom.where(system='phone')			
+phonetic	RelatedPerson.name			
+relationship	RelatedPerson.relationship			
+telecom	RelatedPerson.telecom			

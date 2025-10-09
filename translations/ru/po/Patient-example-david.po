@@ -1,0 +1,56 @@
+
+# A representation of the meaning of the code in the system, following the rules of the system.
+#: Coding.display
+msgid "Армяне"
+msgstr ""
+
+# A representation of the meaning of the code in the system, following the rules of the system.
+#: Coding.display
+msgid "Driver's license number"
+msgstr ""
+
+# Specifies the entire name as it should be displayed e.g. on an application UI. This may be provided instead of or as well as the specific parts.
+#: HumanName.text
+msgid "Давыдов Давид"
+msgstr ""
+
+# A representation of the meaning of the code in the system, following the rules of the system.
+#: Coding.display
+msgid "Сменил пол на мужчину"
+msgstr ""
+
+# This component contains the house number, apartment number, street name, street direction,  P.O. Box number, delivery hints, and similar address information.
+#: Address.line
+msgid "2 квартал 13 дом 12 квартира"
+msgstr ""
+
+# The name of the city, town, suburb, village or other community or delivery center.
+#: Address.city
+msgid "22070011"
+msgstr ""
+
+# The name of the administrative area (county).
+#: Address.district
+msgid "1703206"
+msgstr ""
+
+# Country - a nation as commonly understood or generally accepted.
+#: Address.country
+msgid "UZ"
+msgstr ""
+
+# A representation of the meaning of the code in the system, following the rules of the system.
+#: Coding.display
+msgid "Состоит в браке"
+msgstr ""
+
+# A representation of the meaning of the code in the system, following the rules of the system.
+#: Coding.display
+msgid "Emergency Contact"
+msgstr ""
+
+# Specifies the entire name as it should be displayed e.g. on an application UI. This may be provided instead of or as well as the specific parts.
+#: HumanName.text
+msgid "Саидов Саид"
+msgstr ""
+

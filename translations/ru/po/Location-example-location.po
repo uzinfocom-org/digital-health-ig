@@ -1,0 +1,11 @@
+
+# Name of the location as used by humans. Does not need to be unique.
+#: Location.name
+msgid "Toshkent shahar 1-sonli shifoxona"
+msgstr ""
+
+# Specifies the entire address as it should be displayed e.g. on a postal label. This may be provided instead of or as well as the specific parts.
+#: Address.text
+msgid "Toshkent shahar, Chilonzor tumani, Katta Qo'yliq 45"
+msgstr ""
+

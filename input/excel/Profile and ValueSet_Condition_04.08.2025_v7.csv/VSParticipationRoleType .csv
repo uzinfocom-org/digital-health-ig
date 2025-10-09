@@ -1,0 +1,22 @@
+CODE	UZ	RU	EN
+enterer	Ma'lumot kirituvchi	Ответственный за ввод	Enterer
+performer	Bajaruvchi	Исполнитель	Performer
+author	Muallif	Автор	Author
+verifier	Verifikator	Верификатор	Verifier
+legal	Yuridik tasdiqlovchi	Юридический заверитель	Legal Authenticator
+attester	Tasdiqlovchi	Подтверждающий	Attester
+informant	Xabarchi	Информатор	Informant
+custodian	Ma’lumotlar saqlovchisi	Ответственный за хранение и защиту медицинской информации	Custodian
+assembler	Ma’lumotlarni yig'uvchi qurilma	Устройство сбора данных	Assembler
+composer	Hujjat shakllantiruvchi qurilma	Устройство формирования документа	Composer
+110150	Ilova	Приложение	Application
+110151	Ilovani ishga tushiruvchi	Запуск приложений	Application Launcher
+110152	Qabul qiluvchi roli identifikatori	Идентификатор роли получателя 	Destination Role ID
+110153	Manba roli identifikatori	Идентификатор исходной роли	Source Role ID
+110154	Mu'ljallangan vosita	Носитель назначения	Destination Media
+110155	Manba vositasi	Исходный носитель	Source Media
+authserver	Avtorizatsiya serveri	Сервер авторизации	Authorization Server
+datacollector	Ma’lumot yig'uvchi	Сборщик данных	Data Collector
+dataprocessor	Ma’lumotlarni qayta ishlovchi	Обработчик данных	Data Processor
+datasubject	Ma’lumot subyekti	Субъект данных	Data Subject
+humanuser	Inson foydalanuvchi	Пользователь-человек	Human User

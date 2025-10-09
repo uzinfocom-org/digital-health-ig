@@ -6,7 +6,7 @@
   "id": "nationality-cs",
   "title": "Nationality",
   "description": "Defines a nationality of a person as used in Uzbekistan",
-  "url": "https://terminology.medcore.uz/CodeSystem/nationality-cs",
+  "url": "https://terminology.dhp.uz/fhir/core/CodeSystem/nationality-cs",
   "concept": [
     {
       "code": "1",
@@ -4293,7 +4293,6 @@
       ]
     }
   ],
-  "version": "1.0.0",
   "experimental": true,
   "date": "2025-06-11",
   "publisher": "Uzinfocom",

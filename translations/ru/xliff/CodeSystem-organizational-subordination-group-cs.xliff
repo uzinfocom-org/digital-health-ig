@@ -1,0 +1,148 @@
+<?xml version="1.0" ?>
+
+<xliff xmlns="urn:oasis:names:tc:xliff:document:2.0" version="2.0">
+  <file source-language="en" target-language="ru" id="CodeSystem-organizational-subordination-group-cs" original="Resource CodeSystem-organizational-subordination-group-cs" datatype="KEYVALUEJSON">
+    <body>
+      <trans-unit id="CodeSystem-organizational-subordination-group-cs" resname="CodeSystem.name">
+             <notes>
+               <note id="n1">A natural language name identifying the code system. This name should be usable as an identifier for the module by machine processing applications such as code generation.</note>
+             </notes>
+        <source>OrganizationalSubordinationGroupCS</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-organizational-subordination-group-cs" resname="CodeSystem.title">
+             <notes>
+               <note id="n1">A short, descriptive, user-friendly title for the code system.</note>
+             </notes>
+        <source>Organizational subordination group</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-organizational-subordination-group-cs" resname="CodeSystem.publisher">
+             <notes>
+               <note id="n1">The name of the organization or individual responsible for the release and ongoing maintenance of the code system.</note>
+             </notes>
+        <source>Uzinfocom LLC</source>
+        <target>ООО «Единый интегратор Uzinfocom»</target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-organizational-subordination-group-cs" resname="ContactDetail.name">
+             <notes>
+               <note id="n1">The name of an individual to contact.</note>
+             </notes>
+        <source>Uzinfocom LLC</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-organizational-subordination-group-cs" resname="CodeSystem.description">
+             <notes>
+               <note id="n1">A free text natural language description of the code system from a consumer's perspective.</note>
+             </notes>
+        <source>Defines the subordination group of the medical organization</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-organizational-subordination-group-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Respublika tassarufidagi muassasalari</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-organizational-subordination-group-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Учреждения, находящиеся под контролем республики</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-organizational-subordination-group-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Institutions under the control of the republic</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-organizational-subordination-group-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Hududiy boshqaruv tarkibidagi</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-organizational-subordination-group-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>В территориальном управлении</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-organizational-subordination-group-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>In territorial administration</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-organizational-subordination-group-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Tuman va shaharlar boshqaruv tarkibidagi</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-organizational-subordination-group-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Административное устройство районов и городов</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-organizational-subordination-group-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Administrative structure of districts and cities</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-organizational-subordination-group-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Boshqa vazirlik va idoralar tizimi tarkibidagi muassasalar</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-organizational-subordination-group-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Учреждения, входящие в систему других министерств и ведомств</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-organizational-subordination-group-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Institutions included in the system of other ministries and departments</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-organizational-subordination-group-cs" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">A human readable string that is the recommended default way to present this concept to a user.</note>
+             </notes>
+        <source>Xususiy tibbiyot muassasalari</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-organizational-subordination-group-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Частные медицинские учреждения</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-organizational-subordination-group-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>Private medical institutions</source>
+        <target></target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

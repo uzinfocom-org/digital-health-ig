@@ -1,0 +1,17 @@
+{
+  "id" : "HealthcareService-example-healthcareservice",
+  "baseLang" : "en",
+  "languages" : [
+    {
+      "targetLang" : "ru",
+      "entries" : [
+        {
+          "id" : "HealthcareService.name",
+          "context" : "Further description of the service as it would be presented to a consumer while searching.",
+          "source" : "IHC-ga xos",
+          "target" : "ИГХ специфические"
+        }
+      ]
+    }
+  ]
+}

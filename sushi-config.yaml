@@ -3,28 +3,33 @@
 # │  used properties are included. For a list of all supported properties and their functions,     │
 # │  see: https://fshschool.org/docs/sushi/configuration/.                                         │
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
-id: dhp
-canonical: http://medcore.uz
+id: uz.dhp.core
+canonical: https://dhp.uz/fhir/core
 name: DHP
-title: Digital Health Platform
-description: DHP implementation guide for Uzbekistan using FHIR R5.
+title: Uzbekistan Digital Health Platform
+description: National implementation guide for Uzbekistan using FHIR R5.
 status: draft # draft | active | retired | unknown
-version: 0.1.0
+version: 0.3.0
 fhirVersion: 5.0.0 # https://www.hl7.org/fhir/valueset-FHIR-version.html
 copyrightYear: 2025+
 releaseLabel: ci-build
-# license: CC0-1.0 # https://www.hl7.org/fhir/valueset-spdx-license.html
-jurisdiction: urn:iso:std:iso:3166#UZ "Uzbekistan"
+# jurisdiction: urn:iso:std:iso:3166#UZ "Uzbekistan" temporarily disabled due to issues with IG publisher translation template
+jurisdiction: http://unstats.un.org/unsd/methods/m49/m49.htm#001
 publisher:
   name: Uzinfocom LLC
   url: https://uzinfocom.uz
   email: info@uzinfocom.uz
 
+dependencies:
+  # while we don't strictly needs this, this helps resolve the DICOM supplement correctly until tx.fhir.org can do this
+  fhir.dicom:
+    id: fhir_dicom
+    uri: http://fhir.org/packages/fhir.dicom/ImplementationGuide/fhir.dicom
+    version: 2025.2.20250411
 
-# dependencies:
 # the following are for offline use only
-#  hl7.fhir.uv.tools.r5: 5.2.0
-#  hl7.terminology.r5: 5.2.0
+#  hl7.fhir.uv.tools.r5: 0.5.0
+#  hl7.terminology.r5: 6.4.0
 #  hl7.fhir.uv.extensions.r5: 5.2.0
 #
 #
@@ -59,16 +64,25 @@ publisher:
 # http://build.fhir.org/ig/FHIR/fhir-tools-ig/branches/master/CodeSystem-ig-parameters.html
 #
 parameters:
-  special-url-base: https://terminology.medcore.uz
+  special-url-base: https://terminology.dhp.uz/fhir/core
   excludettl: true
-  shownav: true
+  # shownav: true
 
   pin-canonicals: pin-all
+  apply-version: false # don't override the version in the knowledge resources
+  default-version: true
+
   # openehr: true
-  # i18n-default-lang: en
-  # i18n-lang: 
-  #   - ru
-   
+
+  # multi-lingual support
+  i18n-default-lang: en
+  i18n-lang: 
+    - ru
+    # - uz # to be enabled later - requires translating not just this IG, but core IG publisher texts as well
+  translation-sources:
+    - input/translations/ru
+    # - input/translations/uz
+
 #   validation: [allow-any-extensions, no-broken-links]
 #
 # ╭────────────────────────────────────────────menu.xml────────────────────────────────────────────╮
@@ -81,9 +95,11 @@ parameters:
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 menu:
   Home: index.html
-  FHIR Basics: fhir-basics.html
+  FHIR basics: fhir-basics.html
   API access: api-access.html
   Artifacts: artifacts.html
+  Services: services.html
+  Changelog: changelog.html
 
 # ╭───────────────────────────Less Common Implementation Guide Properties──────────────────────────╮
 # │  Uncomment the properties below to configure additional properties on the ImplementationGuide  │
