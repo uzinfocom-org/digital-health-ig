@@ -1,7 +1,7 @@
 # ╭─────────────────────────Commonly Used ImplementationGuide Properties───────────────────────────╮
 # │  The properties below are used to create the ImplementationGuide resource. The most commonly   │
 # │  used properties are included. For a list of all supported properties and their functions,     │
-# │  see: https://fshschool.org/docs/sushi/configuration/.                                         │
+# │  see: https://fshschool.org/docs/sushi/configuration/                                          │
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 id: uz.dhp.core
 canonical: https://dhp.uz/fhir/core
@@ -76,7 +76,7 @@ parameters:
 
   # multi-lingual support
   i18n-default-lang: en
-  i18n-lang: 
+  i18n-lang:
     - ru
     # - uz # to be enabled later - requires translating not just this IG, but core IG publisher texts as well
   translation-sources:
