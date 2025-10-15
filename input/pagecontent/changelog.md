@@ -22,6 +22,8 @@ Updated slice names to follow best practice naming convention of lower camelCase
 
 Added support for international addresses in Patient, Practitioner, and RelatedPerson resources.
 
+Added Uzbek translations.
+
 ### Version 0.3.0
 
 UZ Core profiles for Encounter, EpisodeOfCare, and Observation have been added.

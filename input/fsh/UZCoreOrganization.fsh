@@ -14,13 +14,13 @@ Description: "Uzbekistan Core Organization profile, used to define healthcare or
 * identifier ^slicing.rules = #open
 * identifier ^slicing.description = "Ways an organization can be categorized"
 * identifier ^slicing.ordered = false
-* identifier contains taxId 0..1 MS and argozId 0..1 MS
+* identifier contains taxId 0..1 MS and argosId 0..1 MS
 
 * insert TaxIdentifier
 
-* identifier[argozId]
+* identifier[argosId]
   * system 1..1 MS
-  * system = $organization-argoz-id-system
+  * system = $organization-argos-id-system
   * type 1..1 MS
   * type = $identifier-type#XX "Organization Identifier"
   * use = #official
@@ -103,10 +103,10 @@ Usage: #example
   * type = $identifier-type#TAX "Tax ID number"
   * system = $organization-tax-id-system
   * value = "200935935"
-* identifier[argozId]
+* identifier[argosId]
   * use = #official
   * type = $identifier-type#XX "Organization Identifier"
-  * system = $organization-argoz-id-system
+  * system = $organization-argos-id-system
   * value = "9512"
 * active = true
 * type.coding[organizationType] = $organization-type-cs#prov "Healthcare Provider"
@@ -138,7 +138,7 @@ Usage: #example
   * use = #official
   * value = "203108505"
 * identifier[+]
-  * system = $organization-argoz-id-system
+  * system = $organization-argos-id-system
   * type = $identifier-type#XX "Organization Identifier"
   * use = #official
   * value = "22640"

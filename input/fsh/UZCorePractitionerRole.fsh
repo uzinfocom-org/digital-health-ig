@@ -21,7 +21,7 @@ Description: "Uzbekistan Core PractitionerRole profile, used to define roles of 
 * identifier[nationalId]
   * ^short = "Персональный идентификационный номер физического лица"
   * system 1..1 MS
-  * system = $organization-argoz-id-system
+  * system = $organization-argos-id-system
   * type 1..1 MS
   * type = $identifier-type#NI "National unique individual identifier"
   * use = #official

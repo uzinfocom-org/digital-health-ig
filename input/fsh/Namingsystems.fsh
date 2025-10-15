@@ -1,11 +1,11 @@
 // This file contains definitions of our internally-defined naming systems
 
-Instance: uzb-hrm-argoz
+Instance: uzb-hrm-argos
 InstanceOf: NamingSystem
 Description: "Healthcare provider identifiers assigned by the Uzbekistan Human Resource Management (HRM) system"
 Usage: #definition
-* url = "https://terminology.dhp.uz/fhir/core/NamingSystem/uzb-hrm-argoz"
-* name = "UzbekistanHrmArgozSystem"
+* url = "https://terminology.dhp.uz/fhir/core/NamingSystem/uzb-hrm-argos"
+* name = "UzbekistanHrmArgosSystem"
 * status = #active
 * kind = #identifier
 * publisher = "Uzinfocom"
@@ -16,9 +16,9 @@ Usage: #definition
 * jurisdiction = urn:iso:std:iso:3166#UZ "Uzbekistan"
 * usage = "Used for identifying healthcare providers, facilities, and resources within the Uzbekistan healthcare system"
 * uniqueId[0].type = #uri
-* uniqueId[=].value = $organization-argoz-id-system
+* uniqueId[=].value = $organization-argos-id-system
 * uniqueId[=].preferred = true
-* uniqueId[=].comment = "This is the canonical URI for the Uzbekistan HRM Argoz system"
+* uniqueId[=].comment = "This is the canonical URI for the Uzbekistan HRM Argos system"
 
 Instance: uzb-soliq
 InstanceOf: NamingSystem

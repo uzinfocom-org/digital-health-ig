@@ -36,3 +36,4 @@ No definition could be found for URL value 'https://dhp.uz/fhir/core'
 
 # Lack of translations for sample instances - this is OK
 "The narrative includes custom content for the default language (en), but does not include translated content for the ru language, so the default language has been used
+"The narrative includes custom content for the default language (en), but does not include translated content for the uz language, so the default language has been used

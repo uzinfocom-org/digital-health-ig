@@ -78,10 +78,10 @@ parameters:
   i18n-default-lang: en
   i18n-lang:
     - ru
-    # - uz # to be enabled later - requires translating not just this IG, but core IG publisher texts as well
+    - uz
   translation-sources:
     - input/translations/ru
-    # - input/translations/uz
+    - input/translations/uz
 
 #   validation: [allow-any-extensions, no-broken-links]
 #

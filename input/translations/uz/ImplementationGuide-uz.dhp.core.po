@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-09-17 04:34+0000\n"
-"PO-Revision-Date: 2025-09-19 06:22+0000\n"
+"PO-Revision-Date: 2025-10-14 07:10+0000\n"
 "Last-Translator: \n"
 "Language-Team: No linguistic content\n"
 "Language: zxx\n"
@@ -18,24 +18,24 @@ msgstr ""
 # A natural language name identifying the implementation guide. This name should be usable as an identifier for the module by machine processing applications such as code generation.
 #: ImplementationGuide.name
 msgid "DHP"
-msgstr "ЕПЦЗ"
+msgstr "Raqamli sog‘liqni saqlash platformasi (DHP)"
 
 # A short, descriptive, user-friendly title for the implementation guide.
 #: ImplementationGuide.title
 msgid "Uzbekistan Digital Health Platform"
-msgstr "Единая цифровая платформа здравоохранения Узбекистана"
+msgstr "O‘zbekiston Raqamli sog‘liqni saqlash platformasi"
 
 # The name of the organization or individual responsible for the release and ongoing maintenance of the implementation guide.
 #: ImplementationGuide.publisher
 msgid "Uzinfocom LLC"
-msgstr "ООО «Единый интегратор Uzinfocom»"
+msgstr "Uzinfocom MChJ"
 
 # A free text natural language description of the implementation guide from a consumer's perspective.
 #: ImplementationGuide.description
 msgid "National implementation guide for Uzbekistan using FHIR R5."
 msgstr ""
-"Национальное руководство по внедрению для Узбекистана с использованием FHIR "
-"R5."
+"O‘zbekistonda FHIR R5 standartidan foydalangan holda ishlab chiqilgan milliy "
+"implementatsiya qo‘llanmasi."
 
 # A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).
 #: ImplementationGuide.definition.resource.name
@@ -45,7 +45,9 @@ msgstr "Act code translations"
 # A description of the reason that a resource has been included in the implementation guide.
 #: ImplementationGuide.definition.resource.description
 msgid "Act code supplement with translations in Uzbek and Russian"
-msgstr "Дополнение кодов действий с переводами на узбекский и русский языки"
+msgstr ""
+"Harakat kodlari bo‘yicha o‘zbek va rus tillaridagi tarjimalarni o‘z ichiga "
+"olgan qo‘shimcha to‘plam"
 
 # A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).
 #: ImplementationGuide.definition.resource.name
@@ -56,7 +58,8 @@ msgstr "Act reason translations"
 #: ImplementationGuide.definition.resource.description
 msgid "Act reason supplement with translations in Uzbek and Russian"
 msgstr ""
-"Дополнение оснований действий с переводами на узбекский и русский языки"
+"Harakat sabablariga oid o‘zbek va rus tillaridagi tarjimalar bilan "
+"qo‘shimcha to‘plam"
 
 # A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).
 #: ImplementationGuide.definition.resource.name
@@ -68,7 +71,9 @@ msgstr "Address registration translations"
 msgid ""
 "Types of address registration supplement with translations in Uzbek and "
 "Russian"
-msgstr "Определяет тип адресной регистрации на узбекском и русском языках"
+msgstr ""
+"Manzil ro‘yxatdan o‘tkazish turlariga oid o‘zbek va rus tillaridagi "
+"tarjimalarni o‘z ichiga olgan qo‘shimcha"
 
 # A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).
 #: ImplementationGuide.definition.resource.name
@@ -78,7 +83,9 @@ msgstr "Address type translations"
 # A description of the reason that a resource has been included in the implementation guide.
 #: ImplementationGuide.definition.resource.description
 msgid "Address type supplement with Uzbek and Russian translations"
-msgstr "Дополнение типов адресов с переводами на узбекский и русский языки"
+msgstr ""
+"Manzil turlari bo‘yicha o‘zbek va rus tillaridagi tarjimalarni o‘z ichiga "
+"olgan qo‘shimcha to‘plam"
 
 # A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).
 #: ImplementationGuide.definition.resource.name
@@ -91,8 +98,8 @@ msgid ""
 "Admit source home code for Admit Source ValueSet with English and Russian "
 "translations"
 msgstr ""
-"Код источника поступления «из дома» для ValueSet источников поступления с "
-"переводами на английский и русский языки"
+"Qabul manbai qiymatlar to‘plami (Admit Source ValueSet) uchun uy manbasi "
+"kodi, ingliz va rus tillaridagi tarjimalari bilan"
 
 # A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).
 #: ImplementationGuide.definition.resource.name
@@ -105,19 +112,20 @@ msgid ""
 "One of the types defined as part of this version of FHIR with Uzbek and "
 "Russian translations."
 msgstr ""
-"Один из типов, определённых в данной версии FHIR, с переводами на узбекский "
-"и русский языки."
+"FHIR ushbu versiyasi doirasida belgilangan turlardan biri, o‘zbek va rus "
+"tillaridagi tarjimalari bilan"
 
 # A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).
 #: ImplementationGuide.definition.resource.name
 msgid "Audit event action"
-msgstr "Действие аудита"
+msgstr "Audit event action"
 
 # A description of the reason that a resource has been included in the implementation guide.
 #: ImplementationGuide.definition.resource.description
 msgid "Defines audit event action that is being recorded in Uzbek and Russian"
 msgstr ""
-"Определяет действие аудита, регистрируемое на узбекском и русском языках"
+"Yozib olinayotgan audit hodisasi harakatini o‘zbek va rus tillarida "
+"belgilaydi"
 
 # A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).
 #: ImplementationGuide.definition.resource.name
@@ -128,18 +136,19 @@ msgstr "Audit event action translations"
 #: ImplementationGuide.definition.resource.description
 msgid "Audit event action supplement with translations in Uzbek and Russian"
 msgstr ""
-"Дополнение действий события аудита с переводами на узбекский и русский языки"
+"Audit hodisasi harakati bo‘yicha o‘zbek va rus tillaridagi tarjimalarni o‘z "
+"ichiga olgan qo‘shimcha to‘plam"
 
 # A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).
 #: ImplementationGuide.definition.resource.name
 msgid "Audit event outcome"
-msgstr "Исход события аудита"
+msgstr "Audit event outcome"
 
 # A description of the reason that a resource has been included in the implementation guide.
 #: ImplementationGuide.definition.resource.description
 msgid ""
 "Defines the outcome of the event that is being recorded in Uzbek and Russian"
-msgstr "Определяет исход события, фиксируемый на узбекском и русском языках"
+msgstr "Yozib olinayotgan hodisa natijasini o‘zbek va rus tillarida belgilaydi"
 
 # A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).
 #: ImplementationGuide.definition.resource.name
@@ -150,7 +159,8 @@ msgstr "Audit event outcome translations"
 #: ImplementationGuide.definition.resource.description
 msgid "Audit event outcome supplement with translations in Uzbek and Russian"
 msgstr ""
-"Дополнение исходов события аудита с переводами на узбекский и русский языки"
+"Audit hodisasi natijasiga oid o‘zbek va rus tillaridagi tarjimalarni o‘z "
+"ichiga olgan qo‘shimcha to‘plam"
 
 # A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).
 #: ImplementationGuide.definition.resource.name
@@ -160,7 +170,8 @@ msgstr "Audit event role type"
 # A description of the reason that a resource has been included in the implementation guide.
 #: ImplementationGuide.definition.resource.description
 msgid "Defines how the participant participated in Uzbek and Russian"
-msgstr "Определяет способы участия участника на узбекском и русском языках"
+msgstr ""
+"Ishtirokchi qanday ishtirok etganini o‘zbek va rus tillarida belgilaydi"
 
 # A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).
 #: ImplementationGuide.definition.resource.name
@@ -171,7 +182,8 @@ msgstr "Audit event subtype"
 #: ImplementationGuide.definition.resource.description
 msgid ""
 "Defines the subtype of event that is being recorded in Uzbek and Russian"
-msgstr "Определяет подтип события аудита на узбекском и русском языках"
+msgstr ""
+"Yozib olinayotgan hodisaning ostturini o‘zbek va rus tillarida belgilaydi"
 
 # A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).
 #: ImplementationGuide.definition.resource.name
@@ -181,7 +193,7 @@ msgstr "Audit event type"
 # A description of the reason that a resource has been included in the implementation guide.
 #: ImplementationGuide.definition.resource.description
 msgid "Defines the type of event that is being recorded in Uzbek and Russian"
-msgstr "Определяет типы событий аудита на узбекском и русском языках"
+msgstr "Yozib olinayotgan hodisa turini o‘zbek va rus tillarida belgilaydi"
 
 # A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).
 #: ImplementationGuide.definition.resource.name
@@ -194,8 +206,8 @@ msgid ""
 "List of cancer types defined by the Ministry of Health of the Republic of "
 "Uzbekistan"
 msgstr ""
-"Список типов онкологических заболеваний, определённый Министерством "
-"здравоохранения Республики Узбекистан"
+"O‘zbekiston Respublikasi Sog‘liqni saqlash vazirligi tomonidan belgilangan "
+"saraton turlari ro‘yxati"
 
 # A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).
 #: ImplementationGuide.definition.resource.name
@@ -206,7 +218,7 @@ msgstr "Cancer-related services"
 #: ImplementationGuide.definition.resource.description
 msgid "Defines the actual cancer-related services in Uzbek and Russian"
 msgstr ""
-"Определяет конкретные онкологические услуги на узбекском и русском языках"
+"Saraton bilan bog‘liq amaldagi xizmatlarni o‘zbek va rus tillarida belgilaydi"
 
 # A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).
 #: ImplementationGuide.definition.resource.name
@@ -217,18 +229,20 @@ msgstr "Categories of cancer-related services"
 #: ImplementationGuide.definition.resource.description
 msgid "Defines categories of cancer-related services in Uzbek and Russian"
 msgstr ""
-"Определяет категории онкологических услуг на узбекском и русском языках"
+"Saraton bilan bog‘liq xizmatlar toifalarini o‘zbek va rus tillarida "
+"belgilaydi"
 
 # A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).
 #: ImplementationGuide.definition.resource.name
 msgid "Clinical status translations"
-msgstr "Переводы клинического статуса"
+msgstr "Clinical status translations"
 
 # A description of the reason that a resource has been included in the implementation guide.
 #: ImplementationGuide.definition.resource.description
 msgid "Clinical status supplement with translations in Uzbek and Russian"
 msgstr ""
-"Дополнение клинического статуса с переводами на узбекский и русский языки"
+"Klinik holat bo‘yicha o‘zbek va rus tillaridagi tarjimalarni o‘z ichiga "
+"olgan qo‘shimcha to‘plam"
 
 # A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).
 #: ImplementationGuide.definition.resource.name
@@ -239,32 +253,33 @@ msgstr "Confidentiality translations"
 #: ImplementationGuide.definition.resource.description
 msgid "Confidentiality supplement with translations in Uzbek and Russian"
 msgstr ""
-"Дополнение конфиденциальности с переводами на узбекский и русский языки"
+"Maxfiylik bo‘yicha o‘zbek va rus tillaridagi tarjimalarni o‘z ichiga olgan "
+"qo‘shimcha to‘plam"
 
 # A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).
 #: ImplementationGuide.definition.resource.name
 msgid "Consent policies"
-msgstr "Политики согласия"
+msgstr "Consent policies"
 
 # A description of the reason that a resource has been included in the implementation guide.
 #: ImplementationGuide.definition.resource.description
 msgid "Determines the regulatory basis for consent"
-msgstr "Определяет нормативно-правовую основу для согласия"
+msgstr "Rozilikning me’yoriy-huquqiy asosini aniqlaydi"
 
 # A description of the reason that a resource has been included in the implementation guide.
 #: ImplementationGuide.definition.resource.description
 msgid "Defines the regulatory basis for consent"
-msgstr "Определяет нормативно-правовую основу для согласия"
+msgstr "Rozilikning me’yoriy-huquqiy asosini belgilaydi"
 
 # A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).
 #: ImplementationGuide.definition.resource.name
 msgid "Consent provision type"
-msgstr "Тип предоставления согласия"
+msgstr "Consent provision type"
 
 # A description of the reason that a resource has been included in the implementation guide.
 #: ImplementationGuide.definition.resource.description
 msgid "Determines the type of consent"
-msgstr "Определяет тип предоставления согласия"
+msgstr "Rozilik (Consent) turini aniqlaydi"
 
 # A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).
 #: ImplementationGuide.definition.resource.name
@@ -276,17 +291,18 @@ msgstr "Consent provision type translations"
 msgid ""
 "Consent provision type supplement with translations in Uzbek and Russian"
 msgstr ""
-"Дополнение конфиденциальности с переводами на узбекский и русский языки"
+"Rozilik (Consent) turi bo‘yicha o‘zbek va rus tillaridagi tarjimalarni o‘z "
+"ichiga olgan qo‘shimcha to‘plam"
 
 # A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).
 #: ImplementationGuide.definition.resource.name
 msgid "Consent purpose of use"
-msgstr "Цели использования согласия"
+msgstr "Consent purpose of use"
 
 # A description of the reason that a resource has been included in the implementation guide.
 #: ImplementationGuide.definition.resource.description
 msgid "Defines the purposes of use for consent"
-msgstr "Определяет цели использования данных в рамках согласия"
+msgstr "Rozilikdan (Consent) foydalanish maqsadlarini belgilaydi"
 
 # A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).
 #: ImplementationGuide.definition.resource.name
@@ -296,7 +312,7 @@ msgstr "Consent State Codes"
 # A description of the reason that a resource has been included in the implementation guide.
 #: ImplementationGuide.definition.resource.description
 msgid "Defines the consent state codes in Uzbek and Russian"
-msgstr "Определяет коды состояний согласия на узбекском и русском языках"
+msgstr "Rozilik holat kodlarini o‘zbek va rus tillarida belgilaydi"
 
 # A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).
 #: ImplementationGuide.definition.resource.name
@@ -307,7 +323,8 @@ msgstr "Consent State Codes translations"
 #: ImplementationGuide.definition.resource.description
 msgid "Consent State Codes supplement with translations in Uzbek and Russian"
 msgstr ""
-"Дополнение кодов состояния согласия с переводами на узбекский и русский языки"
+"Rozilik (Consent) holat kodlariga oid o‘zbek va rus tillaridagi tarjimalarni "
+"o‘z ichiga olgan qo‘shimcha to‘plam"
 
 # A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).
 #: ImplementationGuide.definition.resource.name
@@ -317,22 +334,23 @@ msgstr "Countries digital MIA codes translations"
 # A description of the reason that a resource has been included in the implementation guide.
 #: ImplementationGuide.definition.resource.description
 msgid "Countries digital MVD codes with translations in Russian and English"
-msgstr "Цифровые коды стран от МВД с переводами на русский и английский языки"
+msgstr ""
+"Raqamli IIV mamlakat kodlari rus va ingliz tillaridagi tarjimalari bilan"
 
 # A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).
 #: ImplementationGuide.definition.resource.name
 msgid "Defines a nationality of a person as used in Uzbekistan"
-msgstr "Определяет национальность лица, используемую в Узбекистане"
+msgstr "O‘zbekistonda qo‘llaniladigan shaxs millatini belgilaydi"
 
 # A description of the reason that a resource has been included in the implementation guide.
 #: ImplementationGuide.definition.resource.description
 msgid "Nationality"
-msgstr "Национальность"
+msgstr "Nationality"
 
 # A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).
 #: ImplementationGuide.definition.resource.name
 msgid "Defines a nomenclature group (grouping of institutions)"
-msgstr "Определяет номенклатурную группу (группировку учреждений)"
+msgstr "Tashkilotlarni guruhlash uchun nomenklatura guruhini belgilaydi"
 
 # A description of the reason that a resource has been included in the implementation guide.
 #: ImplementationGuide.definition.resource.description
@@ -342,26 +360,24 @@ msgstr "Nomenclature group"
 # A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).
 #: ImplementationGuide.definition.resource.name
 msgid "Defines the possible location types"
-msgstr "Определяет возможные типы местоположений на узбекском и русском языках"
+msgstr "Mumkin bo‘lgan joy turlarini belgilaydi"
 
 # A description of the reason that a resource has been included in the implementation guide.
 #: ImplementationGuide.definition.resource.description
 msgid "Defines the possible location types in Uzbek and Russian"
-msgstr "Определяет виды местоположений на узбекском и русском языках"
+msgstr "Mumkin bo‘lgan joy turlarini o‘zbek va rus tillarida belgilaydi"
 
 # A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).
 #: ImplementationGuide.definition.resource.name
 msgid "Defines the possible positions and professions"
-msgstr "Position and profession"
+msgstr "Mumkin bo‘lgan lavozimlar va kasblarni belgilaydi"
 
 # A description of the reason that a resource has been included in the implementation guide.
 #: ImplementationGuide.definition.resource.description
 msgid ""
 "State classification of positions of employees and worker professions (KODP-"
 "2020)"
-msgstr ""
-"Национальная классификация должностей служащих и профессий рабочих (KODP-"
-"2020)"
+msgstr "Xodim lavozimlari va ishchi kasblarining davlat tasnifi (KODP-2020)"
 
 # A description of the reason that a resource has been included in the implementation guide.
 #: ImplementationGuide.definition.resource.description
@@ -370,9 +386,9 @@ msgid ""
 "on [CBPEPW-2020](https://cs.egov.uz/#/tableData/65f3d311971593b975865fd8) "
 "using the 14.05.2025 update"
 msgstr ""
-"Государственная классификация должностей работников и рабочих профессий на "
-"основе [CBPEPW-2020](https://cs.egov.uz/#/tableData/65f3d311971593b975865fd8)"
-" с использованием обновления от 14.05.2025"
+"[CBPEPW-2020](https://cs.egov.uz/#/tableData/65f3d311971593b975865fd8) "
+"asosida 2025-yil 14-may holatiga yangilangan xodim lavozimlari va ishchi "
+"kasblarining davlat tasnifi"
 
 # A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).
 #: ImplementationGuide.definition.resource.name
@@ -384,9 +400,7 @@ msgstr "Diagnosis type"
 msgid ""
 "Extension to differentiate the diagnosis type, which is different from the "
 "condition type / category"
-msgstr ""
-"Расширение для дифференциации типа диагноза, которое отличается от "
-"типа/категории состояния"
+msgstr "Tashxis turini holat turi yoki toifasidan farqlash uchun kengaytma"
 
 # A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).
 #: ImplementationGuide.definition.resource.name
@@ -396,7 +410,7 @@ msgstr "Diagnosis type"
 # A description of the reason that a resource has been included in the implementation guide.
 #: ImplementationGuide.definition.resource.description
 msgid "Diagnosis types in Uzbekistan"
-msgstr "Типы диагнозов в Узбекистане"
+msgstr "O‘zbekistondagi tashxis turlari"
 
 # A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).
 #: ImplementationGuide.definition.resource.name
@@ -414,8 +428,8 @@ msgid ""
 "DICOM Controlled Terminology Definitions supplement with translations in "
 "Uzbek and Russian"
 msgstr ""
-"Дополнение Определения контролируемой терминологии DICOM с переводами на "
-"узбекский и русский языки"
+"DICOM boshqariladigan terminologiyasi ta’riflariga oid o‘zbek va rus "
+"tillaridagi tarjimalarni o‘z ichiga olgan qo‘shimcha to‘plam"
 
 # A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).
 #: ImplementationGuide.definition.resource.name
@@ -429,8 +443,8 @@ msgid ""
 "'other', aligned with German base profiles representation of the same "
 "concept."
 msgstr ""
-"Расширение для уточнения административного пола «другой», согласованное с "
-"немецкими базовыми профилями."
+"Ma’muriy 'boshqa' jins toifasini aniqroq farqlash uchun kengaytma, Germaniya "
+"bazaviy profillaridagi konseptga muvofiq."
 
 # A description of the reason that a resource has been included in the implementation guide.
 #: ImplementationGuide.definition.resource.description
@@ -438,36 +452,36 @@ msgid ""
 "Defines the differentiation of the administrative gender 'other' in Uzbek "
 "and Russian"
 msgstr ""
-"Определяет уточнение административного пола «другой» на узбекском и русском "
-"языках"
+"Ma’muriy jins toifasi 'boshqa'ni farqlashni o‘zbek va rus tillarida "
+"belgilaydi"
 
 # A description of the reason that a resource has been included in the implementation guide.
 #: ImplementationGuide.definition.resource.description
 msgid ""
 "Differentiation of the administrative gender 'other' in Uzbek and Russian"
 msgstr ""
-"Определяет уточнение административного пола «другой» на узбекском и русском "
-"языках"
+"Ma’muriy 'boshqa' jins toifasini farqlashni o‘zbek va rus tillarida "
+"belgilaydi"
 
 # A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).
 #: ImplementationGuide.definition.resource.name
 msgid "Disability levels"
-msgstr "Уровни инвалидности"
+msgstr "Disability levels"
 
 # A description of the reason that a resource has been included in the implementation guide.
 #: ImplementationGuide.definition.resource.description
 msgid "Disability levels in Uzbekistan"
-msgstr "Уровни инвалидности в Узбекистане"
+msgstr "O'zbekistondagi nogironlik darajalari"
 
 # A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).
 #: ImplementationGuide.definition.resource.name
 msgid "Education levels"
-msgstr "Уровни образования"
+msgstr "Education levels"
 
 # A description of the reason that a resource has been included in the implementation guide.
 #: ImplementationGuide.definition.resource.description
 msgid "Education levels in Uzbekistan"
-msgstr "Уровни образования в Узбекистане"
+msgstr "O‘zbekistondagi ta’lim darajalari"
 
 # A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).
 #: ImplementationGuide.definition.resource.name
@@ -478,7 +492,8 @@ msgstr "Encounter admission translations"
 #: ImplementationGuide.definition.resource.description
 msgid "Encounter readmission codes with English and Russian translations"
 msgstr ""
-"Коды повторных госпитализаций с переводами на английский и русский языки"
+"Shifoxonaga qayta qabul qilish kodlari ingliz va rus tillaridagi tarjimalari "
+"bilan"
 
 # A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).
 #: ImplementationGuide.definition.resource.name
@@ -489,8 +504,7 @@ msgstr "Encounter admit source translations"
 #: ImplementationGuide.definition.resource.description
 msgid "Encounter admit source codes with English and Russian translations"
 msgstr ""
-"Коды источников поступления пациента с переводами на английский и русский "
-"языки"
+"Kasalxonaga qabul manbai kodlari ingliz va rus tillaridagi tarjimalari bilan"
 
 # A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).
 #: ImplementationGuide.definition.resource.name
@@ -501,13 +515,12 @@ msgstr "Encounter class translations"
 #: ImplementationGuide.definition.resource.description
 msgid "Encounter Class codes with English and Russian translations"
 msgstr ""
-"Коды источников поступления пациента с переводами на английский и русский "
-"языки"
+"Tibbiy murojaat sinfi kodlari ingliz va rus tillaridagi tarjimalari bilan"
 
 # A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).
 #: ImplementationGuide.definition.resource.name
 msgid "Encounter discharge disposition from died"
-msgstr "Encounter discharge disposition from died"
+msgstr "Tibbiy murojaat yakun holati – vafot etgan holda chiqarilgan"
 
 # A description of the reason that a resource has been included in the implementation guide.
 #: ImplementationGuide.definition.resource.description
@@ -515,8 +528,8 @@ msgid ""
 "Encounter discharge disposition home codes with English and Russian "
 "translations"
 msgstr ""
-"Коды исхода обращения: выписка домой после смерти, с переводами на "
-"английский и русский языки"
+"Bemor uyga chiqarilgan tibbiy murojaat yakun holati kodlari ingliz va rus "
+"tillaridagi tarjimalari bilan"
 
 # A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).
 #: ImplementationGuide.definition.resource.name
@@ -527,7 +540,9 @@ msgstr "Encounter discharge disposition translations"
 #: ImplementationGuide.definition.resource.description
 msgid ""
 "Encounter discharge disposition codes with English and Russian translations"
-msgstr "Коды исходов обращения с переводами на английский и русский языки"
+msgstr ""
+"Tibbiy murojaat yakun holati kodlari ingliz va rus tillaridagi tarjimalari "
+"bilan"
 
 # A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).
 #: ImplementationGuide.definition.resource.name
@@ -538,7 +553,8 @@ msgstr "Encounter participant type translations"
 #: ImplementationGuide.definition.resource.description
 msgid "Encounter participant type codes with English and Russian translations"
 msgstr ""
-"Коды типов участников обращения с переводами на английский и русский языки"
+"Tibbiy murojaat ishtirokchi turlari kodlari ingliz va rus tillaridagi "
+"tarjimalari bilan"
 
 # A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).
 #: ImplementationGuide.definition.resource.name
@@ -549,8 +565,8 @@ msgstr "Encounter priority home translations"
 #: ImplementationGuide.definition.resource.description
 msgid "Encounter priority home codes with English and Russian translations"
 msgstr ""
-"Коды приоритетов обращения: выписка домой, с переводами на английский и "
-"русский языки"
+"Uy sharoitidagi tibbiy murojaat ustuvorlik kodlari ingliz va rus tillaridagi "
+"tarjimalari bilan"
 
 # A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).
 #: ImplementationGuide.definition.resource.name
@@ -560,7 +576,9 @@ msgstr "Encounter priority translations"
 # A description of the reason that a resource has been included in the implementation guide.
 #: ImplementationGuide.definition.resource.description
 msgid "Encounter priority codes with English and Russian translations"
-msgstr "Коды приоритетов обращений с переводами на английский и русский языки"
+msgstr ""
+"Tibbiy murojaat ustuvorlik kodlari ingliz va rus tillaridagi tarjimalari "
+"bilan"
 
 # A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).
 #: ImplementationGuide.definition.resource.name
@@ -570,7 +588,8 @@ msgstr "Encounter reason use translations"
 # A description of the reason that a resource has been included in the implementation guide.
 #: ImplementationGuide.definition.resource.description
 msgid "Encounter reason use codes with English and Russian translations"
-msgstr "Коды причин обращения с переводами на английский и русский языки"
+msgstr ""
+"Tibbiy murojaat sababi kodlari ingliz va rus tillaridagi tarjimalari bilan"
 
 # A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).
 #: ImplementationGuide.definition.resource.name
@@ -580,7 +599,8 @@ msgstr "Encounter status translations"
 # A description of the reason that a resource has been included in the implementation guide.
 #: ImplementationGuide.definition.resource.description
 msgid "Encounter status codes with English and Russian translations"
-msgstr "Коды статусов обращений с переводами на английский и русский языки"
+msgstr ""
+"Tibbiy murojaat holati kodlari ingliz va rus tillaridagi tarjimalari bilan"
 
 # A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).
 #: ImplementationGuide.definition.resource.name
@@ -590,7 +610,9 @@ msgstr "Encounter subject status translations"
 # A description of the reason that a resource has been included in the implementation guide.
 #: ImplementationGuide.definition.resource.description
 msgid "Encounter subject status codes with English and Russian translations"
-msgstr "Коды статуса субъектов с переводами на английский и русский языки"
+msgstr ""
+"Tibbiy murojaat subyekti holati kodlari ingliz va rus tillaridagi "
+"tarjimalari bilan"
 
 # A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).
 #: ImplementationGuide.definition.resource.name
@@ -601,7 +623,8 @@ msgstr "Encounter type translations"
 #: ImplementationGuide.definition.resource.description
 msgid "Defines encounter type codes with English and Russian translations"
 msgstr ""
-"Определяет коды типов обращений с переводами на английский и русский языки"
+"Uchrashuv turlari kodlarini ingliz va rus tillaridagi tarjimalari bilan "
+"belgilaydi"
 
 # A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).
 #: ImplementationGuide.definition.resource.name
@@ -612,7 +635,7 @@ msgstr "Encounter type translations"
 #: ImplementationGuide.definition.resource.description
 msgid "Encounter type codes with English and Russian translations"
 msgstr ""
-"Определяет коды типов обращений с переводами на английский и русский языки"
+"Tibbiy murojaat turlari kodlari ingliz va rus tillaridagi tarjimalari bilan"
 
 # A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).
 #: ImplementationGuide.definition.resource.name
@@ -622,7 +645,7 @@ msgstr "Example Encounter"
 # A description of the reason that a resource has been included in the implementation guide.
 #: ImplementationGuide.definition.resource.description
 msgid "Example of an psychiatric encounter"
-msgstr "Образец психиатрического обращения"
+msgstr "Psixiatrik uchrashuv namunasi"
 
 # A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).
 #: ImplementationGuide.definition.resource.name
@@ -634,9 +657,7 @@ msgstr "Example Uz Core Condition - Headache"
 msgid ""
 "Example instance of a headache condition documented during a patient "
 "encounter"
-msgstr ""
-"Пример экземпляра состояния «головная боль», зафиксированного во время "
-"обращения пациента"
+msgstr "Bemor uchrashuvi davomida qayd etilgan bosh og‘rishi holati namunasi"
 
 # A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).
 #: ImplementationGuide.definition.resource.name
@@ -646,7 +667,7 @@ msgstr "Example Uz Core Observation - Blood Pressure"
 # A description of the reason that a resource has been included in the implementation guide.
 #: ImplementationGuide.definition.resource.description
 msgid "Example instance of a blood pressure measurement for a patient"
-msgstr "Пример экземпляра измерения артериального давления у пациента"
+msgstr "Bemor uchun qon bosimi o‘lchovining namunaviy ko'rinishi"
 
 # A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).
 #: ImplementationGuide.definition.resource.name
@@ -658,9 +679,7 @@ msgstr "example-auditevent-condition-lookup"
 msgid ""
 "Example of an audit event where a pracititioner looked up the patient's "
 "condition"
-msgstr ""
-"Образец события аудита, когда медицинский работник просматривал состояние "
-"пациента"
+msgstr "Mutaxassis bemorning holatini ko‘rib chiqqan audit hodisasi namunasi"
 
 # A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).
 #: ImplementationGuide.definition.resource.name
@@ -670,7 +689,7 @@ msgstr "example-auditevent-login"
 # A description of the reason that a resource has been included in the implementation guide.
 #: ImplementationGuide.definition.resource.description
 msgid "Example of an audit event where a user logs in"
-msgstr "Образец события аудита, когда пользователь входит в систему"
+msgstr "Foydalanuvchi tizimga kirgan audit hodisasi namunasi"
 
 # A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).
 #: ImplementationGuide.definition.resource.name
@@ -680,7 +699,7 @@ msgstr "example-consent"
 # A description of the reason that a resource has been included in the implementation guide.
 #: ImplementationGuide.definition.resource.description
 msgid "Example of a consent"
-msgstr "Образец согласия"
+msgstr "Rozilik hujjati namunasi"
 
 # A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).
 #: ImplementationGuide.definition.resource.name
@@ -690,7 +709,7 @@ msgstr "example-david"
 # A description of the reason that a resource has been included in the implementation guide.
 #: ImplementationGuide.definition.resource.description
 msgid "Example of a patient named David"
-msgstr "Образец пациента по имени Давид"
+msgstr "David ismli bemor namunasi"
 
 # A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).
 #: ImplementationGuide.definition.resource.name
@@ -700,7 +719,7 @@ msgstr "example-david-benefits"
 # A description of the reason that a resource has been included in the implementation guide.
 #: ImplementationGuide.definition.resource.description
 msgid "Example benefits observation for David"
-msgstr "Образец наблюдения о социальных льготах Давида"
+msgstr "David uchun ijtimoiy imtiyozlar bo‘yicha kuzatuv namunasi"
 
 # A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).
 #: ImplementationGuide.definition.resource.name
@@ -710,7 +729,7 @@ msgstr "example-david-education"
 # A description of the reason that a resource has been included in the implementation guide.
 #: ImplementationGuide.definition.resource.description
 msgid "Example education observation for David"
-msgstr "Образец наблюдения об образовании Давида"
+msgstr "Davidning ta’lim darajasi bo‘yicha kuzatuv namunasi"
 
 # A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).
 #: ImplementationGuide.definition.resource.name
@@ -720,7 +739,7 @@ msgstr "example-david-profession"
 # A description of the reason that a resource has been included in the implementation guide.
 #: ImplementationGuide.definition.resource.description
 msgid "Example profession observation for David"
-msgstr "Образец наблюдения о профессии Давида"
+msgstr "Davidning kasbi bo‘yicha kuzatuv namunasi"
 
 # A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).
 #: ImplementationGuide.definition.resource.name
@@ -730,7 +749,7 @@ msgstr "example-david-social-status"
 # A description of the reason that a resource has been included in the implementation guide.
 #: ImplementationGuide.definition.resource.description
 msgid "Example social status observation for David"
-msgstr "Образец наблюдения о социальном статусе Давида"
+msgstr "Davidning ijtimoiy holati bo‘yicha kuzatuv namunasi"
 
 # A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).
 #: ImplementationGuide.definition.resource.name
@@ -740,7 +759,7 @@ msgstr "example-healthcareservice"
 # A description of the reason that a resource has been included in the implementation guide.
 #: ImplementationGuide.definition.resource.description
 msgid "Example of a healthcare service"
-msgstr "Образец медицинской услуги"
+msgstr "Sog‘liqni saqlash xizmati namunasi"
 
 # A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).
 #: ImplementationGuide.definition.resource.name
@@ -750,7 +769,7 @@ msgstr "example-location"
 # A description of the reason that a resource has been included in the implementation guide.
 #: ImplementationGuide.definition.resource.description
 msgid "Example of psychiatric hospital"
-msgstr "Образец психиатрической больницы"
+msgstr "Psixiatriya shifoxonasi namunasi"
 
 # A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).
 #: ImplementationGuide.definition.resource.name
@@ -760,7 +779,7 @@ msgstr "example-location-1"
 # A description of the reason that a resource has been included in the implementation guide.
 #: ImplementationGuide.definition.resource.description
 msgid "Example of an organization location"
-msgstr "Образец местоположения организации"
+msgstr "Tashkilot joylashuvi namunasi"
 
 # A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).
 #: ImplementationGuide.definition.resource.name
@@ -770,7 +789,7 @@ msgstr "example-location-2"
 # A description of the reason that a resource has been included in the implementation guide.
 #: ImplementationGuide.definition.resource.description
 msgid "Example of a branch location"
-msgstr "Образец местоположения филиала"
+msgstr "Filial joylashuvi namunasi"
 
 # A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).
 #: ImplementationGuide.definition.resource.name
@@ -780,7 +799,7 @@ msgstr "example-organization"
 # A description of the reason that a resource has been included in the implementation guide.
 #: ImplementationGuide.definition.resource.description
 msgid "Example of a hospital organization"
-msgstr "Образец медицинской организации"
+msgstr "Shifoxona tashkiloti namunasi"
 
 # A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).
 #: ImplementationGuide.definition.resource.name
@@ -790,7 +809,7 @@ msgstr "example-patient"
 # A description of the reason that a resource has been included in the implementation guide.
 #: ImplementationGuide.definition.resource.description
 msgid "Example of a patient"
-msgstr "Образец пациента"
+msgstr "Bemor namunasi"
 
 # A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).
 #: ImplementationGuide.definition.resource.name
@@ -799,8 +818,8 @@ msgstr "example-pdf-document"
 
 # A description of the reason that a resource has been included in the implementation guide.
 #: ImplementationGuide.definition.resource.description
-msgid "Example of a PDF document signed with myID"
-msgstr "Образец PDF-документа, подписанного с использованием myID"
+msgid "Example ofa PDF document signed with myID"
+msgstr "myID orqali imzolangan PDF hujjat namunasi"
 
 # A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).
 #: ImplementationGuide.definition.resource.name
@@ -810,7 +829,7 @@ msgstr "example-practitioner"
 # A description of the reason that a resource has been included in the implementation guide.
 #: ImplementationGuide.definition.resource.description
 msgid "Example of a practitioner"
-msgstr "Образец медицинского работника"
+msgstr "Mutaxassis namunasi"
 
 # A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).
 #: ImplementationGuide.definition.resource.name
@@ -820,7 +839,7 @@ msgstr "example-practitioner-gender-other"
 # A description of the reason that a resource has been included in the implementation guide.
 #: ImplementationGuide.definition.resource.description
 msgid "Example of a practitioner with a gender extension"
-msgstr "Образец медицинского специалиста с расширением пола \"другой\""
+msgstr "Jins kengaytmasi bilan mutaxassis namunasi"
 
 # A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).
 #: ImplementationGuide.definition.resource.name
@@ -830,7 +849,7 @@ msgstr "example-practitionerrole"
 # A description of the reason that a resource has been included in the implementation guide.
 #: ImplementationGuide.definition.resource.description
 msgid "Example of a practitioner's role"
-msgstr "Образец роли медицинского работника"
+msgstr "Mutaxassis roli namunasi"
 
 # A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).
 #: ImplementationGuide.definition.resource.name
@@ -840,7 +859,7 @@ msgstr "example-provenance"
 # A description of the reason that a resource has been included in the implementation guide.
 #: ImplementationGuide.definition.resource.description
 msgid "Example of a provenance event"
-msgstr "Образец события Provenance"
+msgstr "Kelib chiqish (Provenance) hodisasi namunasi"
 
 # A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).
 #: ImplementationGuide.definition.resource.name
@@ -850,7 +869,7 @@ msgstr "example-related-person"
 # A description of the reason that a resource has been included in the implementation guide.
 #: ImplementationGuide.definition.resource.description
 msgid "Example of a related person"
-msgstr "Образец связанного лица"
+msgstr "Aloqador shaxs namunasi"
 
 # A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).
 #: ImplementationGuide.definition.resource.name
@@ -860,7 +879,7 @@ msgstr "example-salim"
 # A description of the reason that a resource has been included in the implementation guide.
 #: ImplementationGuide.definition.resource.description
 msgid "Example of a patient named Salim"
-msgstr "Образец пациента по имени Салим"
+msgstr "Salim ismli bemor namunasi"
 
 # A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).
 #: ImplementationGuide.definition.resource.name
@@ -870,7 +889,7 @@ msgstr "example-salim-benefits"
 # A description of the reason that a resource has been included in the implementation guide.
 #: ImplementationGuide.definition.resource.description
 msgid "Example benefits observation for Salim"
-msgstr "Образец наблюдения социальных льгот для Салима"
+msgstr "Salim uchun ijtimoiy imtiyozlar bo‘yicha kuzatuv namunasi"
 
 # A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).
 #: ImplementationGuide.definition.resource.name
@@ -880,7 +899,7 @@ msgstr "example-salim-education"
 # A description of the reason that a resource has been included in the implementation guide.
 #: ImplementationGuide.definition.resource.description
 msgid "Example education status for Salim"
-msgstr "Образец наблюдения об образовании для Салима"
+msgstr "Salimning ta’lim darajasi namunasi"
 
 # A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).
 #: ImplementationGuide.definition.resource.name
@@ -890,7 +909,7 @@ msgstr "example-salim-profession"
 # A description of the reason that a resource has been included in the implementation guide.
 #: ImplementationGuide.definition.resource.description
 msgid "Example profession observation for Salim"
-msgstr "Образец наблюдения о профессии Салима"
+msgstr "Salimning kasbi bo‘yicha kuzatuv namunasi"
 
 # A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).
 #: ImplementationGuide.definition.resource.name
@@ -900,7 +919,7 @@ msgstr "example-salim-social-status"
 # A description of the reason that a resource has been included in the implementation guide.
 #: ImplementationGuide.definition.resource.description
 msgid "Example social status observation for Salim"
-msgstr "Образец наблюдения социального статуса Салима"
+msgstr "Salimning ijtimoiy holati bo‘yicha kuzatuv namunasi"
 
 # A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).
 #: ImplementationGuide.definition.resource.name
@@ -911,18 +930,19 @@ msgstr "HTTP interaction translations"
 #: ImplementationGuide.definition.resource.description
 msgid "HTTP interaction supplement with translations in Uzbek and Russian"
 msgstr ""
-"Дополнение «HTTP-взаимодействие» с переводами на узбекский и русский языки"
+"HTTP o‘zaro aloqalariga oid o‘zbek va rus tillaridagi tarjimalarni o‘z "
+"ichiga olgan qo‘shimcha to‘plam"
 
 # A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).
 #: ImplementationGuide.definition.resource.name
 msgid "License, certificate, degree"
-msgstr "Лицензия, сертификат, степень"
+msgstr "License, certificate, degree"
 
 # A description of the reason that a resource has been included in the implementation guide.
 #: ImplementationGuide.definition.resource.description
 msgid "Defines the type of license, certificate, degree in Uzbek and Russian"
 msgstr ""
-"Определяет тип лицензии, сертификата, степени на узбекском и русском языках"
+"Litsenziya, sertifikat va daraja turlarini o‘zbek va rus tillarida belgilaydi"
 
 # A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).
 #: ImplementationGuide.definition.resource.name
@@ -935,28 +955,28 @@ msgid ""
 "License, certificate, degree supplement with translations in Uzbek and "
 "Russian"
 msgstr ""
-"Дополнение «Лицензия, сертификат, степень» с переводами на узбекский и "
-"русский языки"
+"Litsenziya, sertifikat va darajaga oid o‘zbek va rus tillaridagi "
+"tarjimalarni o‘z ichiga olgan qo‘shimcha to‘plam"
 
 # A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).
 #: ImplementationGuide.definition.resource.name
 msgid "Location Kinds"
-msgstr "Виды мест"
+msgstr "Joylashuv turlari"
 
 # A description of the reason that a resource has been included in the implementation guide.
 #: ImplementationGuide.definition.resource.description
 msgid "Defines the kind of Location in Uzbek and Russian"
-msgstr "Определяет виды мест на узбекском и русском языках"
+msgstr "Joylashuv turini o‘zbek va rus tillarida belgilaydi"
 
 # A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).
 #: ImplementationGuide.definition.resource.name
 msgid "Location status"
-msgstr "Статус места"
+msgstr "Joylashuv holati"
 
 # A description of the reason that a resource has been included in the implementation guide.
 #: ImplementationGuide.definition.resource.description
 msgid "Defines type of Location `status` in Uzbek and Russian"
-msgstr "Определяет тип статуса места на узбекском и русском языках"
+msgstr "Joylashuv `holati` turini o‘zbek va rus tillarida belgilaydi"
 
 # A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).
 #: ImplementationGuide.definition.resource.name
@@ -967,12 +987,13 @@ msgstr "Location status translations"
 #: ImplementationGuide.definition.resource.description
 msgid "Location status supplement with translations in Uzbek and Russian"
 msgstr ""
-"Дополнение «Статус местоположения» с переводами на узбекский и русский языки"
+"Joylashuv holatiga oid o‘zbek va rus tillaridagi tarjimalarni o‘z ichiga "
+"olgan qo‘shimcha"
 
 # A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).
 #: ImplementationGuide.definition.resource.name
 msgid "Location types"
-msgstr "Типы мест"
+msgstr "Joylashuv tiplari"
 
 # A description of the reason that a resource has been included in the implementation guide.
 #: ImplementationGuide.definition.resource.description
@@ -980,7 +1001,8 @@ msgid ""
 "Location types defined by the Ministry of Health of the Republic of "
 "Uzbekistan"
 msgstr ""
-"Типы мест, определённые Министерством здравоохранения Республики Узбекистан"
+"O‘zbekiston Respublikasi Sog‘liqni saqlash vazirligi tomonidan belgilangan "
+"joylashuv turlari"
 
 # A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).
 #: ImplementationGuide.definition.resource.name
@@ -994,9 +1016,9 @@ msgid ""
 "branches, wards, and beds within healthcare facilities in the Uzbekistan "
 "Digital Health Platform"
 msgstr ""
-"Система наименований для уникальных идентификаторов, присваиваемых единицам "
-"местоположений, таким как филиалы, отделения и койки в рамках медицинских "
-"учреждений в Единой цифровой платформе здравоохранения Узбекистана"
+"O‘zbekiston Raqamli sog‘liqni saqlash platformasida tibbiyot muassasalari "
+"tarkibidagi filiallar, bo‘limlar va o‘rinlar uchun berilgan noyob "
+"identifikatorlarga mo‘ljallangan nomlash tizimi"
 
 # A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).
 #: ImplementationGuide.definition.resource.name
@@ -1006,7 +1028,7 @@ msgstr "Mahalla Codes and Names"
 # A description of the reason that a resource has been included in the implementation guide.
 #: ImplementationGuide.definition.resource.description
 msgid "Mahalla codes and names with translations in Russian and English"
-msgstr "Коды и названия махалли с переводами на русский и английский языки"
+msgstr "Mahalla kodlari va nomlari rus va ingliz tillaridagi tarjimalari bilan"
 
 # A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).
 #: ImplementationGuide.definition.resource.name
@@ -1016,28 +1038,30 @@ msgstr "Mahallas translations"
 # A description of the reason that a resource has been included in the implementation guide.
 #: ImplementationGuide.definition.resource.description
 msgid "Mahallas names with English and Russian translations"
-msgstr "Названия махаллей с переводом на английский и русский языки"
+msgstr "Mahalla nomlari ingliz va rus tillaridagi tarjimalari bilan"
 
 # A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).
 #: ImplementationGuide.definition.resource.name
 msgid "Marital status translations"
-msgstr "Переводы семейного положения"
+msgstr "Marital status translations"
 
 # A description of the reason that a resource has been included in the implementation guide.
 #: ImplementationGuide.definition.resource.description
 msgid "Encounter reason use codes with Uzbek and Russian translations"
-msgstr "Коды причин обращения с переводами на узбекский и русский языки"
+msgstr ""
+"Tibbiy murojaat sababi kodlari o'zbek va rus tillaridagi tarjimalari bilan"
 
 # A description of the reason that a resource has been included in the implementation guide.
 #: ImplementationGuide.definition.resource.description
 msgid "Defines marital status codes in Uzbek and Russian"
-msgstr "Определяет коды семейного положения на узбекском и русском языках"
+msgstr "Oilaviy holat kodlarini o‘zbek va rus tillarida belgilaydi"
 
 # A description of the reason that a resource has been included in the implementation guide.
 #: ImplementationGuide.definition.resource.description
 msgid "Marital status supplement with Uzbek and Russian translations"
 msgstr ""
-"Дополнение «Семейное положение» с переводами на узбекский и русский языки"
+"Oilaviy holatga oid o‘zbek va rus tillaridagi tarjimalarni o‘z ichiga olgan "
+"qo‘shimcha to‘plam"
 
 # A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).
 #: ImplementationGuide.definition.resource.name
@@ -1047,17 +1071,19 @@ msgstr "Null Flavor translations"
 # A description of the reason that a resource has been included in the implementation guide.
 #: ImplementationGuide.definition.resource.description
 msgid "Null Flavor supplement with Uzbek and Russian translations"
-msgstr "Дополнение Null Flavor с переводами на узбекский и русский языки"
+msgstr ""
+"Bo‘sh qiymat (Null Flavor) sababi bo‘yicha o‘zbek va rus tillaridagi "
+"tarjimalarni o‘z ichiga olgan qo‘shimcha to‘plam"
 
 # A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).
 #: ImplementationGuide.definition.resource.name
 msgid "Object role"
-msgstr "Роль объекта"
+msgstr "Object role"
 
 # A description of the reason that a resource has been included in the implementation guide.
 #: ImplementationGuide.definition.resource.description
 msgid "Defines object's role in Uzbek and Russian"
-msgstr "Определяет роль объекта на узбекском и русском языках"
+msgstr "Obyekt rolini o‘zbek va rus tillarida belgilaydi"
 
 # A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).
 #: ImplementationGuide.definition.resource.name
@@ -1067,7 +1093,7 @@ msgstr "Observation category"
 # A description of the reason that a resource has been included in the implementation guide.
 #: ImplementationGuide.definition.resource.description
 msgid "Observation category in Uzbekistan"
-msgstr "Категория наблюдения в Узбекистане"
+msgstr "O‘zbekistondagi kuzatuv toifasi"
 
 # A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).
 #: ImplementationGuide.definition.resource.name
@@ -1077,7 +1103,7 @@ msgstr "Observation category translations"
 # A description of the reason that a resource has been included in the implementation guide.
 #: ImplementationGuide.definition.resource.description
 msgid "Observation category with translations in Uzbek and Russian"
-msgstr "Категория наблюдения с переводами на узбекский и русский языки."
+msgstr "Kuzatuv toifasi o‘zbek va rus tillaridagi tarjimalari bilan"
 
 # A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).
 #: ImplementationGuide.definition.resource.name
@@ -1087,20 +1113,19 @@ msgstr "Observation normal value"
 # A description of the reason that a resource has been included in the implementation guide.
 #: ImplementationGuide.definition.resource.description
 msgid "Observation normal value in Uzbekistan"
-msgstr "Нормальные значения наблюдения в Узбекистане"
+msgstr "O‘zbekistondagi kuzatuv uchun normal qiymat"
 
 # A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).
 #: ImplementationGuide.definition.resource.name
 msgid "Observation normal value translations"
-msgstr "Переводы нормальных значений наблюдения"
+msgstr "Observation normal value translations"
 
 # A description of the reason that a resource has been included in the implementation guide.
 #: ImplementationGuide.definition.resource.description
 msgid ""
 "Translation of observation's normal value concept into Uzbek and Russian"
 msgstr ""
-"Перевод концепта нормального значения Observation на узбекский и русский "
-"языки"
+"Kuzatuvning normal qiymati tushunchasini o‘zbek va rus tillariga tarjimasi"
 
 # A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).
 #: ImplementationGuide.definition.resource.name
@@ -1110,7 +1135,7 @@ msgstr "Observation status"
 # A description of the reason that a resource has been included in the implementation guide.
 #: ImplementationGuide.definition.resource.description
 msgid "Observation status in Uzbekistan"
-msgstr "Статус наблюдения в Узбекистане"
+msgstr "O‘zbekistondagi kuzatuv holati"
 
 # A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).
 #: ImplementationGuide.definition.resource.name
@@ -1120,37 +1145,37 @@ msgstr "Observation status translations"
 # A description of the reason that a resource has been included in the implementation guide.
 #: ImplementationGuide.definition.resource.description
 msgid "Observation status with translations in Uzbek and Russian"
-msgstr "Статус наблюдения с переводами на узбекский и русский языки"
+msgstr "Kuzatuv holati o‘zbek va rus tillaridagi tarjimalari bilan"
 
 # A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).
 #: ImplementationGuide.definition.resource.name
 msgid "Organizational service group"
-msgstr "Организационно-сервисная группа"
+msgstr "Tashkilot xizmat guruhi"
 
 # A description of the reason that a resource has been included in the implementation guide.
 #: ImplementationGuide.definition.resource.description
 msgid "Defines the organizational and service group of a medical institution"
-msgstr "Определяет организационно-сервисную группу медицинского учреждения"
+msgstr "Tibbiyot muassasasining tashkiliy va xizmat guruhini belgilaydi"
 
 # A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).
 #: ImplementationGuide.definition.resource.name
 msgid "Organizational specialization"
-msgstr "Организационная специализация"
+msgstr "Tashkilot tuzilmasi"
 
 # A description of the reason that a resource has been included in the implementation guide.
 #: ImplementationGuide.definition.resource.description
 msgid "Determines the specialization of a medical organization"
-msgstr "Определяет специализацию медицинской организации"
+msgstr "Tibbiyot tashkilotining ixtisosligini aniqlaydi"
 
 # A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).
 #: ImplementationGuide.definition.resource.name
 msgid "Organizational structure"
-msgstr "Организационная структура"
+msgstr "Organizational structure"
 
 # A description of the reason that a resource has been included in the implementation guide.
 #: ImplementationGuide.definition.resource.description
 msgid "Defines the organizational structure of a medical institution"
-msgstr "Определяет организационную структуру медицинского учреждения"
+msgstr "Tibbiyot muassasasining tashkiliy tuzilmasini belgilaydi"
 
 # A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).
 #: ImplementationGuide.definition.resource.name
@@ -1160,24 +1185,24 @@ msgstr "Organizational Structure"
 # A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).
 #: ImplementationGuide.definition.resource.name
 msgid "Organizational subordination group"
-msgstr "Группа подчинения медорганизации"
+msgstr "Tashkilot bo‘ysunish guruhi"
 
 # A description of the reason that a resource has been included in the implementation guide.
 #: ImplementationGuide.definition.resource.description
 msgid "Defines the subordination group of the medical organization"
-msgstr "Определяет возможные группы подчинённости медицинских организаций"
+msgstr "Tibbiyot tashkilotining bo‘ysunish guruhini belgilaydi"
 
 # A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).
 #: ImplementationGuide.definition.resource.name
 msgid "Organizational subordination institution"
-msgstr "Организационное подчинение учреждения"
+msgstr "Bo‘ysunuvchi tashkilot"
 
 # A description of the reason that a resource has been included in the implementation guide.
 #: ImplementationGuide.definition.resource.description
 msgid ""
 "Defines the type of medical organizations without forming a legal entity"
 msgstr ""
-"Определяет типы медицинских организаций без образования юридического лица"
+"Yuridik shaxs maqomini olmagan tibbiyot tashkilotlari turini belgilaydi"
 
 # A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).
 #: ImplementationGuide.definition.resource.name
@@ -1187,7 +1212,9 @@ msgstr "Participant type translations"
 # A description of the reason that a resource has been included in the implementation guide.
 #: ImplementationGuide.definition.resource.description
 msgid "Participant type supplement with translations in Uzbek and Russian"
-msgstr "Дополнение «Тип участника» с переводами на узбекский и русский языки"
+msgstr ""
+"Ishtirokchi turlariga oid o‘zbek va rus tillaridagi tarjimalarni o‘z ichiga "
+"olgan qo‘shimcha to‘plam"
 
 # A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).
 #: ImplementationGuide.definition.resource.name
@@ -1197,7 +1224,9 @@ msgstr "Participation type translations"
 # A description of the reason that a resource has been included in the implementation guide.
 #: ImplementationGuide.definition.resource.description
 msgid "Participation type supplement with translations in Uzbek and Russian"
-msgstr "Дополнение «Тип участия» с переводами на узбекский и русский языки"
+msgstr ""
+"Ishtirok turi bo‘yicha o‘zbek va rus tillaridagi tarjimalarni o‘z ichiga "
+"olgan qo‘shimcha to‘plam"
 
 # A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).
 #: ImplementationGuide.definition.resource.name
@@ -1207,7 +1236,8 @@ msgstr "Possible consent actions"
 # A description of the reason that a resource has been included in the implementation guide.
 #: ImplementationGuide.definition.resource.description
 msgid "Determines the actions that can be taken with consent"
-msgstr "Определяет действия, которые могут быть предприняты с согласием"
+msgstr ""
+"Rozilik (Consent) asosida bajarilishi mumkin bo‘lgan harakatlarni aniqlaydi"
 
 # A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).
 #: ImplementationGuide.definition.resource.name
@@ -1219,8 +1249,8 @@ msgstr "Possible consent actions translations"
 msgid ""
 "Possible consent actions supplement with translations in Uzbek and Russian"
 msgstr ""
-"Дополнение «Возможные действия в рамках согласия» с переводами на узбекский "
-"и русский языки"
+"Rozilik asosidagi harakatlarga oid o‘zbek va rus tillaridagi tarjimalarni "
+"o‘z ichiga olgan qo‘shimcha to‘plam"
 
 # A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).
 #: ImplementationGuide.definition.resource.name
@@ -1233,7 +1263,8 @@ msgid ""
 "Types of possible identifier uses supplement with translations in Uzbek and "
 "Russian"
 msgstr ""
-"Определяет типы использования идентификаторов на узбекском и русском языках"
+"Mumkin bo‘lgan identifikatorlardan foydalanish turlariga oid o‘zbek va rus "
+"tillaridagi tarjimalarni o‘z ichiga olgan qo‘shimcha"
 
 # A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).
 #: ImplementationGuide.definition.resource.name
@@ -1245,7 +1276,9 @@ msgstr "Possible identifiers translations"
 msgid ""
 "Types of possible identifiers supplement with translations in Uzbek and "
 "Russian"
-msgstr "Определяет типы идентификаторов на узбекском и русском языках"
+msgstr ""
+"Identifikatorlardan foydalanish turlariga oid o‘zbek va rus tillaridagi "
+"tarjimalarni o‘z ichiga olgan qo‘shimcha"
 
 # A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).
 #: ImplementationGuide.definition.resource.name
@@ -1257,28 +1290,28 @@ msgstr "Possible name uses translations"
 msgid ""
 "Types of possible name uses supplement with translations in Uzbek and Russian"
 msgstr ""
-"Определяет возможные варианты использования имён на узбекском и русском "
-"языках"
+"Mumkin bo‘lgan identifikatorlar turlariga oid o‘zbek va rus tillaridagi "
+"tarjimalarni o‘z ichiga olgan qo‘shimcha"
 
 # A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).
 #: ImplementationGuide.definition.resource.name
 msgid "Practitioner roles"
-msgstr "Роли медицинских работников"
+msgstr "Practitioner roles"
 
 # A description of the reason that a resource has been included in the implementation guide.
 #: ImplementationGuide.definition.resource.description
 msgid "Defines the roles of medical practitioners"
-msgstr "Определяет роли медицинских работников"
+msgstr "Tibbiyot mutaxassislari rollarini belgilaydi"
 
 # A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).
 #: ImplementationGuide.definition.resource.name
 msgid "Profession specializations"
-msgstr "Специализации профессий"
+msgstr "Profession specializations"
 
 # A description of the reason that a resource has been included in the implementation guide.
 #: ImplementationGuide.definition.resource.description
 msgid "Defines the specializations of medical professions"
-msgstr "Определяет классификацию медицинских профессий по специализациям"
+msgstr "Tibbiyot kasblarining ixtisosliklarini belgilaydi"
 
 # A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).
 #: ImplementationGuide.definition.resource.name
@@ -1288,20 +1321,22 @@ msgstr "Provenance Activity Types"
 # A description of the reason that a resource has been included in the implementation guide.
 #: ImplementationGuide.definition.resource.description
 msgid "Defines the provenance activity types."
-msgstr "Определяет виды действий Provenance (происхождения данных)."
+msgstr "Kelib chiqish (Provenance) faoliyat turlarini belgilaydi"
 
 # A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).
 #: ImplementationGuide.definition.resource.name
 msgid "Provenance Activity Types translations"
-msgstr "Provenance Activity Types translations"
+msgstr ""
+"Kelib chiqish (Provenance) faoliyat turlariga oid o‘zbek va rus tillaridagi "
+"tarjimalarni o‘z ichiga olgan qo‘shimcha to‘plam"
 
 # A description of the reason that a resource has been included in the implementation guide.
 #: ImplementationGuide.definition.resource.description
 msgid ""
 "Provenance Activity Types supplement with translations in Uzbek and Russian"
 msgstr ""
-"Дополнение «Типы действий по происхождению» с переводами на узбекский и "
-"русский языки"
+"Kelib chiqish (Provenance) faoliyat turlariga oid o‘zbek va rus tillaridagi "
+"tarjimalarni o‘z ichiga olgan qo‘shimcha"
 
 # A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).
 #: ImplementationGuide.definition.resource.name
@@ -1311,7 +1346,7 @@ msgstr "Provenance Entity Role"
 # A description of the reason that a resource has been included in the implementation guide.
 #: ImplementationGuide.definition.resource.description
 msgid "Defines the provenance entity role."
-msgstr "Определяет роль сущностей ресурса Provenance."
+msgstr "Kelib chiqish (Provenance) subyekti rolini belgilaydi"
 
 # A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).
 #: ImplementationGuide.definition.resource.name
@@ -1323,7 +1358,8 @@ msgstr "Provenance Entity Role translations"
 msgid ""
 "Provenance Entity Role supplement with translations in Uzbek and Russian"
 msgstr ""
-"Дополнение Provenance Entity Role с переводами на узбекский и русский языки."
+"Kelib chiqish (Provenance) subyekti roliga oid o‘zbek va rus tillaridagi "
+"tarjimalarni o‘z ichiga olgan qo‘shimcha"
 
 # A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).
 #: ImplementationGuide.definition.resource.name
@@ -1340,17 +1376,19 @@ msgstr "Provenance Participation Role Type translations"
 msgid ""
 "Provenance Participation Role Type supplement with translations in Uzbek and "
 "Russian"
-msgstr "Определяет способы участия участника на узбекском и русском языках"
+msgstr ""
+"Kelib chiqish (Provenance) ishtirok roli turiga oid o‘zbek va rus "
+"tillaridagi tarjimalarni o‘z ichiga olgan qo‘shimcha"
 
 # A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).
 #: ImplementationGuide.definition.resource.name
 msgid "Purpose of use"
-msgstr "Цели использования"
+msgstr "Purpose of use"
 
 # A description of the reason that a resource has been included in the implementation guide.
 #: ImplementationGuide.definition.resource.description
 msgid "Defines agent's the purpose of use in Uzbek and Russian"
-msgstr "Определяет цели использования агента на узбекском и русском языках"
+msgstr "Agentning foydalanish maqsadini o‘zbek va rus tillarida belgilaydi"
 
 # A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).
 #: ImplementationGuide.definition.resource.name
@@ -1360,12 +1398,12 @@ msgstr "Reference range meaning"
 # A description of the reason that a resource has been included in the implementation guide.
 #: ImplementationGuide.definition.resource.description
 msgid "Reference range meaning in Uzbekistan"
-msgstr "Значения референсного диапазона в Узбекистане"
+msgstr "O‘zbekistondagi mos yozuv ma’nosi"
 
 # A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).
 #: ImplementationGuide.definition.resource.name
 msgid "Reference range meaning translations"
-msgstr "Переводы значений референсного диапазона"
+msgstr "Mos yozuv ma’nosi tarjimalari"
 
 # A description of the reason that a resource has been included in the implementation guide.
 #: ImplementationGuide.definition.resource.description
@@ -1373,8 +1411,8 @@ msgid ""
 "Meaning of reference range, supplemented with translations in Uzbek and "
 "Russian"
 msgstr ""
-"Значение референсного диапазона, дополненное переводами на узбекский и "
-"русский языки"
+"Mos yozuv ma’nosiga oid o‘zbek va rus tillaridagi tarjimalarni o‘z ichiga "
+"olgan qo‘shimcha to‘plam"
 
 # A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).
 #: ImplementationGuide.definition.resource.name
@@ -1384,7 +1422,7 @@ msgstr "Relationship Types"
 # A description of the reason that a resource has been included in the implementation guide.
 #: ImplementationGuide.definition.resource.description
 msgid "Relationship types in Uzbekistan"
-msgstr "Типы родственных связей в Узбекистане"
+msgstr "O‘zbekistondagi aloqa turlari"
 
 # A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).
 #: ImplementationGuide.definition.resource.name
@@ -1396,8 +1434,8 @@ msgstr "Role class"
 msgid ""
 "Provides localized definitions of role class codes in Uzbek and Russian."
 msgstr ""
-"Содержит локализованные определения кодов классов ролей на узбекском и "
-"русском языках"
+"Rol sinfi kodlarining o‘zbek va rus tillaridagi mahalliylashtirilgan "
+"ta’riflarini taqdim etadi"
 
 # A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).
 #: ImplementationGuide.definition.resource.name
@@ -1410,8 +1448,9 @@ msgid ""
 "Specifies role codes used to define the function or position of a person or "
 "organization, with translations in Uzbek and Russian."
 msgstr ""
-"Определяет коды ролей, используемые для обозначения функции или должности "
-"лица либо организации, с переводами на узбекский и русский языки."
+"Shaxs yoki tashkilotning vazifasi yoki lavozimini belgilash uchun "
+"ishlatiladigan rol kodlarini o‘zbek va rus tillaridagi tarjimalari bilan "
+"belgilaydi."
 
 # A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).
 #: ImplementationGuide.definition.resource.name
@@ -1424,8 +1463,8 @@ msgid ""
 "Sample security structural roles with translations in Uzbek and Russian, "
 "used in DHP as actual codes"
 msgstr ""
-"Пример структурных ролей безопасности с переводами на узбекский и русский "
-"языки, используемых в DHP в качестве фактических кодов"
+"DHPda amaldagi kodlar sifatida qo‘llaniladigan, o‘zbek va rus tillaridagi "
+"tarjimalari bilan xavfsizlik tuzilmaviy rollari namunasi"
 
 # A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).
 #: ImplementationGuide.definition.resource.name
@@ -1438,19 +1477,19 @@ msgid ""
 "Provides additional contact role codes with translations in Uzbek and "
 "Russian for use in specific contexts or implementations."
 msgstr ""
-"Предоставляет дополнительные коды ролей для контактов с переводами на "
-"узбекский и русский языки для использования в специфических контекстах или "
-"внедрениях."
+"Maxsus kontekstlar yoki implementatsiyalar uchun mo‘ljallangan, o‘zbek va "
+"rus tillaridagi tarjimalari bilan qo‘shimcha aloqa roli kodlarini taqdim "
+"etadi"
 
 # A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).
 #: ImplementationGuide.definition.resource.name
 msgid "Security label"
-msgstr "Метка безопасности"
+msgstr "Security label"
 
 # A description of the reason that a resource has been included in the implementation guide.
 #: ImplementationGuide.definition.resource.description
 msgid "Defines security label in Uzbek and Russian"
-msgstr "Определяет метки безопасности на узбекском и русском языках"
+msgstr "Xavfsizlik yorlig‘ini o‘zbek va rus tillarida belgilaydi"
 
 # A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).
 #: ImplementationGuide.definition.resource.name
@@ -1463,7 +1502,7 @@ msgid ""
 "Defines the role of the participant that is being recorded in Uzbek and "
 "Russian"
 msgstr ""
-"Определяет роль участника, которая записывается на узбекском и русском языках"
+"Yozib olinayotgan ishtirokchi rolini o‘zbek va rus tillarida belgilaydi"
 
 # A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).
 #: ImplementationGuide.definition.resource.name
@@ -1474,7 +1513,8 @@ msgstr "Security role type translations"
 #: ImplementationGuide.definition.resource.description
 msgid "Security role type supplement with translations in Uzbek and Russian"
 msgstr ""
-"Дополнение «Тип роли безопасности» с переводами на узбекский и русский языки"
+"Xavfsizlik roli turiga oid o‘zbek va rus tillaridagi tarjimalarni o‘z ichiga "
+"olgan qo‘shimcha to‘plam"
 
 # A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).
 #: ImplementationGuide.definition.resource.name
@@ -1484,7 +1524,7 @@ msgstr "Severity types"
 # A description of the reason that a resource has been included in the implementation guide.
 #: ImplementationGuide.definition.resource.description
 msgid "Severity status in Uzbekistan"
-msgstr "Статус степени тяжести в Узбекистане"
+msgstr "O‘zbekistondagi og‘irlik holati"
 
 # A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).
 #: ImplementationGuide.definition.resource.name
@@ -1494,17 +1534,17 @@ msgstr "Signature Type"
 # A description of the reason that a resource has been included in the implementation guide.
 #: ImplementationGuide.definition.resource.description
 msgid "Defines the possible Provenance signature types."
-msgstr "Определяет возможные типы подписей используемых в Provenance."
+msgstr "Kelib chiqish (Provenance) imzo turlarini belgilaydi"
 
 # A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).
 #: ImplementationGuide.definition.resource.name
 msgid "Social status"
-msgstr "Социальный статус"
+msgstr "Social status"
 
 # A description of the reason that a resource has been included in the implementation guide.
 #: ImplementationGuide.definition.resource.description
 msgid "Social status types in Uzbekistan"
-msgstr "Типы социального статуса в Узбекистане"
+msgstr "O‘zbekistondagi ijtimoiy holat turlari"
 
 # A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).
 #: ImplementationGuide.definition.resource.name
@@ -1517,8 +1557,8 @@ msgid ""
 "Codes for socioeconomic observations including benefits, education, "
 "profession, and social status"
 msgstr ""
-"Коды для социально-экономических наблюдений, включая льготы, образование, "
-"профессию и социальный статус"
+"Ijtimoiy-iqtisodiy kuzatuvlar uchun kodlar, jumladan imtiyozlar, ta’lim, "
+"kasb va ijtimoiy holat"
 
 # A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).
 #: ImplementationGuide.definition.resource.name
@@ -1534,8 +1574,8 @@ msgstr "Telecom use"
 #: ImplementationGuide.definition.resource.description
 msgid "Telecom use type supplement with translation in Uzbek and Russian"
 msgstr ""
-"Дополнение Типов использования контактных данных с переводами на узбекский и "
-"русский языки"
+"Telekommunikatsiya foydalanish turlariga oid o‘zbek va rus tillaridagi "
+"tarjimalarni o‘z ichiga olgan qo‘shimcha"
 
 # A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).
 #: ImplementationGuide.definition.resource.name
@@ -1545,7 +1585,7 @@ msgstr "Telecom use"
 # A description of the reason that a resource has been included in the implementation guide.
 #: ImplementationGuide.definition.resource.description
 msgid "Telecom use types in Uzbekistan"
-msgstr "Типы использования контактных данных в Узбекистане"
+msgstr "O‘zbekistondagi telekommunikatsiya foydalanish turlari"
 
 # A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).
 #: ImplementationGuide.definition.resource.name
@@ -1555,7 +1595,7 @@ msgstr "Triggered by type"
 # A description of the reason that a resource has been included in the implementation guide.
 #: ImplementationGuide.definition.resource.description
 msgid "Triggered by types in Uzbekistan"
-msgstr "Типы инициаторов в Узбекистане"
+msgstr "O‘zbekistondagi ishga tushirish turlari"
 
 # A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).
 #: ImplementationGuide.definition.resource.name
@@ -1566,7 +1606,8 @@ msgstr "Triggered by type translations"
 #: ImplementationGuide.definition.resource.description
 msgid "Triggered by type words with translations in Uzbek and Russian"
 msgstr ""
-"Слова для поля «Triggered by type» с переводами на узбекский и русский языки"
+"Turi bo‘yicha ishga tushirishga oid o‘zbek va rus tillaridagi tarjimalarni "
+"o‘z ichiga olgan iboralar"
 
 # A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).
 #: ImplementationGuide.definition.resource.name
@@ -1576,27 +1617,28 @@ msgstr "Types of address registration"
 # A description of the reason that a resource has been included in the implementation guide.
 #: ImplementationGuide.definition.resource.description
 msgid "Defines type of address registration in Uzbek and Russian"
-msgstr "Определяет тип адресной регистрации на узбекском и русском языках"
+msgstr ""
+"Manzilni ro‘yxatdan o‘tkazish turini o‘zbek va rus tillarida belgilaydi"
 
 # A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).
 #: ImplementationGuide.definition.resource.name
 msgid "Types of benefits"
-msgstr "Виды льгот"
+msgstr "Types of benefits"
 
 # A description of the reason that a resource has been included in the implementation guide.
 #: ImplementationGuide.definition.resource.description
 msgid "Types of benefits in Uzbekistan"
-msgstr "Виды льгот в Узбекистане"
+msgstr "O‘zbekistondagi imtiyoz turlari"
 
 # A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).
 #: ImplementationGuide.definition.resource.name
 msgid "Types of clinical status"
-msgstr "Типы клинического статуса"
+msgstr "Types of clinical status"
 
 # A description of the reason that a resource has been included in the implementation guide.
 #: ImplementationGuide.definition.resource.description
 msgid "Types of clinical status in Uzbekistan"
-msgstr "Типы клинического статуса в Узбекистане"
+msgstr "O‘zbekistondagi klinik holat turlari"
 
 # A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).
 #: ImplementationGuide.definition.resource.name
@@ -1606,7 +1648,7 @@ msgstr "Types of participation role"
 # A description of the reason that a resource has been included in the implementation guide.
 #: ImplementationGuide.definition.resource.description
 msgid "Types of participation role in Uzbekistan"
-msgstr "Типы роли участия в Узбекистане"
+msgstr "O‘zbekistondagi ishtirok roli turlari"
 
 # A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).
 #: ImplementationGuide.definition.resource.name
@@ -1616,7 +1658,8 @@ msgstr "Types of possible addresses"
 # A description of the reason that a resource has been included in the implementation guide.
 #: ImplementationGuide.definition.resource.description
 msgid "Defines the types of addresses with translations in Uzbek and Russian"
-msgstr "Определяет типы адресов с переводами на узбекский и русский языки"
+msgstr ""
+"Manzil turlarini o‘zbek va rus tillaridagi tarjimalari bilan belgilaydi"
 
 # A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).
 #: ImplementationGuide.definition.resource.name
@@ -1626,7 +1669,7 @@ msgstr "Types of possible contact points"
 # A description of the reason that a resource has been included in the implementation guide.
 #: ImplementationGuide.definition.resource.description
 msgid "Defines the contact point `system` types ub Uzbek and Russian"
-msgstr "Определяет типы систем контактных данных на узбекском и русском языках"
+msgstr "Aloqa nuqtasi `tizim` turlarini o‘zbek va rus tillarida belgilaydi"
 
 # A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).
 #: ImplementationGuide.definition.resource.name
@@ -1639,8 +1682,8 @@ msgid ""
 "Types of possible contact points supplement with translations in Uzbek and "
 "Russian"
 msgstr ""
-"Типы возможных контактных пунктов дополняются переводами на узбекский и "
-"русский языки"
+"Mumkin bo‘lgan aloqa nuqtalari turlariga oid o‘zbek va rus tillaridagi "
+"tarjimalarni o‘z ichiga olgan qo‘shimcha"
 
 # A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).
 #: ImplementationGuide.definition.resource.name
@@ -1651,8 +1694,7 @@ msgstr "Types of possible identifier uses"
 #: ImplementationGuide.definition.resource.description
 msgid "Defines the `use` of an identifier in Uzbek and Russian"
 msgstr ""
-"Дополнение «Виды возможного использования идентификаторов» с переводами на "
-"узбекский и русский языки"
+"Identifikatordan `foydalanish` turini o‘zbek va rus tillarida belgilaydi"
 
 # A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).
 #: ImplementationGuide.definition.resource.name
@@ -1662,8 +1704,7 @@ msgstr "Types of possible identifiers"
 # A description of the reason that a resource has been included in the implementation guide.
 #: ImplementationGuide.definition.resource.description
 msgid "Defines identifier `type`s in Uzbek and Russian"
-msgstr ""
-"Определяет типы использования идентификаторов на узбекском и русском языках"
+msgstr "Identifikator `turi`ni o‘zbek va rus tillarida belgilaydi"
 
 # A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).
 #: ImplementationGuide.definition.resource.name
@@ -1674,8 +1715,7 @@ msgstr "Types of possible name uses"
 #: ImplementationGuide.definition.resource.description
 msgid "Defines the different uses of a name in Uzbek and Russian"
 msgstr ""
-"Определяет возможные варианты использования имён на узбекском и русском "
-"языках"
+"Ismdan foydalanishning turli shakllarini o‘zbek va rus tillarida belgilaydi"
 
 # A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).
 #: ImplementationGuide.definition.resource.name
@@ -1685,7 +1725,7 @@ msgstr "Types of severity"
 # A description of the reason that a resource has been included in the implementation guide.
 #: ImplementationGuide.definition.resource.description
 msgid "Types of severity in Uzbekistan"
-msgstr "Степени тяжести в Узбекистане"
+msgstr "O‘zbekistondagi og‘irlik darajalari turlari"
 
 # A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).
 #: ImplementationGuide.definition.resource.name
@@ -1695,7 +1735,7 @@ msgstr "Types of verification status"
 # A description of the reason that a resource has been included in the implementation guide.
 #: ImplementationGuide.definition.resource.description
 msgid "Types of verification status in Uzbekistan"
-msgstr "Типы статусов верификации в Узбекистане"
+msgstr "O‘zbekistondagi tasdiqlash holati turlari"
 
 # A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).
 #: ImplementationGuide.definition.resource.name
@@ -1708,8 +1748,8 @@ msgid ""
 "Uzbekistan Core AuditEvent profile, used to track user and application "
 "activity"
 msgstr ""
-"Профиль Uzbekistan Core AuditEvent, используемый для отслеживания действий "
-"пользователей и приложений"
+"Foydalanuvchi va ilova faoliyatini kuzatish uchun ishlatiladigan O‘zbekiston "
+"Core AuditEvent profili"
 
 # A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).
 #: ImplementationGuide.definition.resource.name
@@ -1722,8 +1762,8 @@ msgid ""
 "Uzbekistan Core Condition profile, used for documenting a patient's clinical "
 "symptoms,  conditions, and their characteristics"
 msgstr ""
-"Профиль Uzbekistan Core Condition, используемый для документирования "
-"клинических симптомов пациента, состояний и их характеристик"
+"Bemorning klinik belgilarini, holatlarini va ularning xususiyatlarini "
+"hujjatlashtirish uchun ishlatiladigan O‘zbekiston Core Condition profili"
 
 # A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).
 #: ImplementationGuide.definition.resource.name
@@ -1736,8 +1776,8 @@ msgid ""
 "Uzbekistan Core Consent profile, used to manage patient consent for data "
 "sharing and processing"
 msgstr ""
-"Профиль Uzbekistan Core Consent, используемый для управления согласием "
-"пациента на обмен и обработку данных"
+"Ma’lumotlarni ulashish va qayta ishlash bo‘yicha bemorning roziligini "
+"boshqarish uchun ishlatiladigan O‘zbekiston Core Consent profili"
 
 # A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).
 #: ImplementationGuide.definition.resource.name
@@ -1748,8 +1788,8 @@ msgstr "UZ Core Encounter"
 #: ImplementationGuide.definition.resource.description
 msgid "Uzbekistan Core Patient profile, used to represent clinical encounters"
 msgstr ""
-"Профиль Uzbekistan Core Patient, используемый для представления данных о "
-"пациентах в рамках клинических случаев обращений"
+"Tibbiy murojaatlarni ifodalash uchun ishlatiladigan O‘zbekiston Core Patient "
+"profili"
 
 # A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).
 #: ImplementationGuide.definition.resource.name
@@ -1762,8 +1802,8 @@ msgid ""
 "Uzbekistan Core HealthcareService profile, used to define healthcare "
 "services available"
 msgstr ""
-"Профиль Uzbekistan Core HealthcareService Profile, используемый для "
-"определения доступных медицинских услуг"
+"Mavjud tibbiy xizmatlarni belgilash uchun ishlatiladigan O‘zbekiston Core "
+"HealthcareService profili"
 
 # A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).
 #: ImplementationGuide.definition.resource.name
@@ -1776,8 +1816,8 @@ msgid ""
 "Uzbekistan Core Location profile, used to define locations of healthcare "
 "services"
 msgstr ""
-"Профиль Uzbekistan Core Location, используемый для определения "
-"местоположений объектов здравоохранения"
+"Tibbiy xizmatlar joylashuvlarini belgilash uchun ishlatiladigan O‘zbekiston "
+"Core Location profili"
 
 # A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).
 #: ImplementationGuide.definition.resource.name
@@ -1790,8 +1830,8 @@ msgid ""
 "Uzbekistan Core Observation profile, used to represent clinical and "
 "laboratory observations"
 msgstr ""
-"Профиль Uzbekistan Core Observation, используемый для представления "
-"клинических и лабораторных наблюдений."
+"Klinik va laboratoriya kuzatuvlarini ifodalash uchun ishlatiladigan "
+"O‘zbekiston Core Observation profili"
 
 # A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).
 #: ImplementationGuide.definition.resource.name
@@ -1804,8 +1844,8 @@ msgid ""
 "Uzbekistan Core Organization profile, used to define healthcare "
 "organizations and sub-units"
 msgstr ""
-"Профиль Uzbekistan Core Organization, используемый для определения "
-"организаций здравоохранения и их подразделений"
+"Tibbiyot tashkilotlari va ularning bo‘linmalarini belgilash uchun "
+"ishlatiladigan O‘zbekiston Core Organization profili"
 
 # A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).
 #: ImplementationGuide.definition.resource.name
@@ -1818,8 +1858,8 @@ msgid ""
 "Uzbekistan Core Patient profile, used to represent patients administrative "
 "information"
 msgstr ""
-"Профиль Uzbekistan Core Patient, используемый для представления "
-"административной информации о пациентах"
+"Bemorlarning ma’muriy ma’lumotlarini ifodalash uchun ishlatiladigan "
+"O‘zbekiston Core Patient profili"
 
 # A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).
 #: ImplementationGuide.definition.resource.name
@@ -1831,8 +1871,8 @@ msgstr "UZ Core Practitioner"
 msgid ""
 "Uzbekistan Core Practitioner profile, used to define healthcare practitioners"
 msgstr ""
-"Профиль Uzbekistan Core Practitioner, используемый для определения "
-"медицинских работников"
+"Tibbiyot mutaxassislarini belgilash uchun ishlatiladigan O‘zbekiston Core "
+"Practitioner profili"
 
 # A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).
 #: ImplementationGuide.definition.resource.name
@@ -1845,8 +1885,8 @@ msgid ""
 "Uzbekistan Core PractitionerRole profile, used to define roles of "
 "practitioners"
 msgstr ""
-"Профиль Uzbekistan Core PractitionerRole, используемый для определения ролей "
-"медицинских работников"
+"Tibbiyot mutaxassislari rollarini belgilash uchun ishlatiladigan O‘zbekiston "
+"Core PractitionerRole profili"
 
 # A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).
 #: ImplementationGuide.definition.resource.name
@@ -1858,8 +1898,8 @@ msgstr "UZ Core Provenance"
 msgid ""
 "Uzbekistan Core Provenance profile, used to digitally sign documents via myID"
 msgstr ""
-"Профиль Uzbekistan Core Provenance, используемый для цифровой подписи "
-"документов через myID"
+"myID orqali hujjatlarni raqamli imzolash uchun ishlatiladigan O‘zbekiston "
+"Core Provenance profili"
 
 # A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).
 #: ImplementationGuide.definition.resource.name
@@ -1872,8 +1912,8 @@ msgid ""
 "Uzbekistan Core RelatedPerson profile, used to represent persons related to "
 "the patient"
 msgstr ""
-"Профиль Uzbekistan Core RelatedPerson, используемый для представления лиц, "
-"связанных с пациентом"
+"Bemor bilan aloqador shaxslarni ifodalash uchun ishlatiladigan O‘zbekiston "
+"Core RelatedPerson profili"
 
 # A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).
 #: ImplementationGuide.definition.resource.name
@@ -1886,9 +1926,8 @@ msgid ""
 "Uzbekistan Core socioeconomic observation profile, used to represent "
 "patients' benefits, education, profession, and social status."
 msgstr ""
-"Профиль Uzbekistan Core Socioeconomic Observation, используемый для "
-"представления информации о льготах, образовании, профессии и социальном "
-"статусе пациентов"
+"Bemorlarning imtiyozlari, ta’limi, kasbi va ijtimoiy holatini ifodalash "
+"uchun ishlatiladigan O‘zbekiston Core ijtimoiy-iqtisodiy kuzatuv profili"
 
 # A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).
 #: ImplementationGuide.definition.resource.name
@@ -1901,8 +1940,8 @@ msgid ""
 "Birth certificate identifiers assigned by the Uzbekistan Personalization "
 "Agency"
 msgstr ""
-"Идентификаторы свидетельств о рождении, присваиваемые Агентством по "
-"персонализации Республики Узбекистан"
+"O‘zbekiston Personallashtirish agentligi tomonidan berilgan tug‘ilganlik "
+"guvohnomasi identifikatorlari"
 
 # A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).
 #: ImplementationGuide.definition.resource.name
@@ -1915,8 +1954,8 @@ msgid ""
 "Diplomatic passport identifiers assigned by the Uzbekistan Ministry of "
 "Foreign Affairs"
 msgstr ""
-"Идентификаторы дипломатических паспортов, присваиваемые Министерством "
-"иностранных дел Республики Узбекистан"
+"O‘zbekiston Tashqi ishlar vazirligi tomonidan berilgan diplomatik pasport "
+"identifikatorlari"
 
 # A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).
 #: ImplementationGuide.definition.resource.name
@@ -1929,8 +1968,8 @@ msgid ""
 "Driver's license identifiers assigned by the Uzbekistan Ministry of Internal "
 "Affairs"
 msgstr ""
-"Идентификаторы водительских удостоверений, присваиваемые Министерством "
-"внутренних дел Республики Узбекистан"
+"O‘zbekiston Ichki ishlar vazirligi tomonidan berilgan haydovchilik "
+"guvohnomasi identifikatorlari"
 
 # A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).
 #: ImplementationGuide.definition.resource.name
@@ -1942,13 +1981,13 @@ msgstr "uzb-health-card-number"
 msgid ""
 "Health card number identifiers assigned by the Uzbekistan Ministry of Health"
 msgstr ""
-"Идентификаторы номеров медицинских карт, присваиваемые Министерством "
-"здравоохранения Республики Узбекистан"
+"O‘zbekiston Sog‘liqni saqlash vazirligi tomonidan berilgan sog‘liqni saqlash "
+"kartasi raqami identifikatorlari"
 
 # A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).
 #: ImplementationGuide.definition.resource.name
-msgid "uzb-hrm-argos"
-msgstr "uzb-hrm-argos"
+msgid "uzb-hrm-argoz"
+msgstr "uzb-hrm-argoz"
 
 # A description of the reason that a resource has been included in the implementation guide.
 #: ImplementationGuide.definition.resource.description
@@ -1956,8 +1995,8 @@ msgid ""
 "Healthcare provider identifiers assigned by the Uzbekistan Human Resource "
 "Management (HRM) system"
 msgstr ""
-"Идентификаторы поставщиков медицинских услуг, присваиваемые системой "
-"управления кадровыми ресурсами здравоохранения"
+"O‘zbekiston Inson resurslarini boshqarish tizimi (HRM) tomonidan berilgan "
+"tibbiy xizmat ko‘rsatuvchi identifikatorlari"
 
 # A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).
 #: ImplementationGuide.definition.resource.name
@@ -1969,8 +2008,8 @@ msgstr "uzb-military-id-number"
 msgid ""
 "Military ID number identifiers assigned by the Uzbekistan Ministry of Defense"
 msgstr ""
-"Идентификаторы номеров военных билетов, присваиваемые Министерством обороны "
-"Республики Узбекистан"
+"O‘zbekiston Mudofaa vazirligi tomonidan berilgan harbiy guvohnoma raqami "
+"identifikatorlari"
 
 # A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).
 #: ImplementationGuide.definition.resource.name
@@ -1983,8 +2022,8 @@ msgid ""
 "National unique identifiers (PINFL) assigned by the Uzbekistan "
 "Personalization Agency"
 msgstr ""
-"Национальные уникальные идентификаторы (ПИНФЛ), присваиваемые Агентством "
-"персонализации Республики Узбекистан."
+"O‘zbekiston Shaxslashtirish agentligi tomonidan berilgan milliy noyob "
+"identifikatorlar (JSHSHIR)"
 
 # A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).
 #: ImplementationGuide.definition.resource.name
@@ -1997,8 +2036,8 @@ msgid ""
 "International passport identifiers assigned by the Uzbekistan "
 "Personalization Agency"
 msgstr ""
-"Идентификаторы заграничных паспортов, присваиваемые Агентством по "
-"персонализации Республики Узбекистан"
+"O‘zbekiston Shaxslashtirish agentligi tomonidan berilgan xalqaro pasport "
+"identifikatorlari"
 
 # A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).
 #: ImplementationGuide.definition.resource.name
@@ -2010,8 +2049,8 @@ msgstr "uzb-passport-local"
 msgid ""
 "Local passport identifiers assigned by the Uzbekistan Personalization Agency"
 msgstr ""
-"Идентификаторы внутренних паспортов, присваиваемые Агентством по "
-"персонализации Республики Узбекистан"
+"O‘zbekiston Personallashtirish agentligi tomonidan berilgan ichki pasport "
+"identifikatorlari"
 
 # A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).
 #: ImplementationGuide.definition.resource.name
@@ -2024,8 +2063,8 @@ msgid ""
 "Penitentiary institution number identifiers assigned by the Uzbekistan "
 "correctional system"
 msgstr ""
-"Идентификаторы номеров пенитенциарных учреждений, присваиваемые системой "
-"исполнения наказаний Республики Узбекистан"
+"O‘zbekiston jazoni ijro etish tizimi tomonidan berilgan penitensiar muassasa "
+"raqami identifikatorlari"
 
 # A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).
 #: ImplementationGuide.definition.resource.name
@@ -2038,8 +2077,8 @@ msgid ""
 "Tax identification numbers and other identifiers assigned by the Uzbekistan "
 "Tax Authority (Soliq)"
 msgstr ""
-"Идентификационные номера налогоплательщиков и другие идентификаторы, "
-"присваиваемые Налоговым комитетом Республики Узбекистан (Soliq)"
+"O‘zbekiston Soliq qo‘mitasi tomonidan berilgan soliq identifikatsiya "
+"raqamlari va boshqa identifikatorlar"
 
 # A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).
 #: ImplementationGuide.definition.resource.name
@@ -2049,7 +2088,7 @@ msgstr "Uzbekistan Regions and Locations"
 # A description of the reason that a resource has been included in the implementation guide.
 #: ImplementationGuide.definition.resource.description
 msgid "List of regions and locations in Uzbekistan"
-msgstr "Перечень регионов и населённых пунктов Узбекистана"
+msgstr "O‘zbekistondagi hududlar va joylashuvlar ro‘yxati"
 
 # A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).
 #: ImplementationGuide.definition.resource.name
@@ -2059,7 +2098,7 @@ msgstr "Uzbekistan States and Locations"
 # A description of the reason that a resource has been included in the implementation guide.
 #: ImplementationGuide.definition.resource.description
 msgid "List of states and locations in Uzbekistan"
-msgstr "Перечень областей и населённых пунктов Узбекистана"
+msgstr "O‘zbekistondagi viloyatlar va joylashuvlar ro‘yxati"
 
 # A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).
 #: ImplementationGuide.definition.resource.name
@@ -2072,8 +2111,8 @@ msgid ""
 "Defines the reasons why a value is missing in an observation within the "
 "Uzbekistan Core Implementation"
 msgstr ""
-"Определяет причины отсутствия значения в Observation в Uzbekistan Core "
-"Implementation."
+"Uz Core implementatsiyasi doirasida kuzatuvda qiymat yo‘qligining sabablari "
+"belgilanadi"
 
 # A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).
 #: ImplementationGuide.definition.resource.name
@@ -2083,7 +2122,7 @@ msgstr "UZCore data absent reason code sytem"
 # A description of the reason that a resource has been included in the implementation guide.
 #: ImplementationGuide.definition.resource.description
 msgid "Data absent reason suplement"
-msgstr "Дополнение к системе «Причина отсутствия данных»"
+msgstr "Data absent reason supplement"
 
 # A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).
 #: ImplementationGuide.definition.resource.name
@@ -2096,8 +2135,7 @@ msgid ""
 "Codes representing the clinical meaning of an observation result in the "
 "Uzbekistan Core."
 msgstr ""
-"Коды, представляющие клиническое значение результата наблюдения в Uzbekistan "
-"Core."
+"UZ Core doirasida kuzatuv natijasining klinik ma’nosini ifodalovchi kodlar."
 
 # A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).
 #: ImplementationGuide.definition.resource.name
@@ -2108,12 +2146,13 @@ msgstr "Verification status types"
 #: ImplementationGuide.definition.resource.description
 msgid "Verification status supplement with translations in Uzbek and Russian"
 msgstr ""
-"Дополнение клинического статуса с переводами на узбекский и русский языки"
+"Tasdiqlash holatiga oid o‘zbek va rus tillaridagi tarjimalarni o‘z ichiga "
+"olgan qo‘shimcha"
 
 # A description of the reason that a resource has been included in the implementation guide.
 #: ImplementationGuide.definition.resource.description
 msgid "Verification status in Uzbekistan"
-msgstr "Статус проверки в Узбекистане"
+msgstr "O‘zbekistondagi tasdiqlash holati"
 
 # A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).
 #: ImplementationGuide.definition.resource.name
@@ -2123,7 +2162,7 @@ msgstr "World countries name translations"
 # A description of the reason that a resource has been included in the implementation guide.
 #: ImplementationGuide.definition.resource.description
 msgid "World countries names with English and Russian translations"
-msgstr "Названия стран мира с переводами на английский и русский языки"
+msgstr "Dunyo mamlakatlari nomlari ingliz va rus tillaridagi tarjimalari bilan"
 
 # Indicates the URL or the actual content to provide for the page.
 #: ImplementationGuide.definition.page.source[x]
@@ -2133,7 +2172,7 @@ msgstr "toc.html"
 # A short title used to represent this page in navigational structures such as table of contents, bread crumbs, etc.
 #: ImplementationGuide.definition.page.title
 msgid "Table of Contents"
-msgstr "Содержание"
+msgstr "Mundarija"
 
 # Indicates the URL or the actual content to provide for the page.
 #: ImplementationGuide.definition.page.source[x]
@@ -2143,7 +2182,7 @@ msgstr "index.html"
 # A short title used to represent this page in navigational structures such as table of contents, bread crumbs, etc.
 #: ImplementationGuide.definition.page.title
 msgid "Home"
-msgstr "Главная"
+msgstr "Bosh sahifa"
 
 # Indicates the URL or the actual content to provide for the page.
 #: ImplementationGuide.definition.page.source[x]
@@ -2153,7 +2192,7 @@ msgstr "api-access.html"
 # A short title used to represent this page in navigational structures such as table of contents, bread crumbs, etc.
 #: ImplementationGuide.definition.page.title
 msgid "Api Access"
-msgstr "Доступ к API"
+msgstr "API orqali kirish"
 
 # Indicates the URL or the actual content to provide for the page.
 #: ImplementationGuide.definition.page.source[x]
@@ -2163,7 +2202,7 @@ msgstr "changelog.html"
 # A short title used to represent this page in navigational structures such as table of contents, bread crumbs, etc.
 #: ImplementationGuide.definition.page.title
 msgid "Changelog"
-msgstr "Журнал изменений"
+msgstr "O‘zgarishlar jurnali"
 
 # Indicates the URL or the actual content to provide for the page.
 #: ImplementationGuide.definition.page.source[x]
@@ -2173,7 +2212,7 @@ msgstr "fhir-basics.html"
 # A short title used to represent this page in navigational structures such as table of contents, bread crumbs, etc.
 #: ImplementationGuide.definition.page.title
 msgid "Fhir Basics"
-msgstr "FHIR Основы"
+msgstr "FHIR Asoslari"
 
 # Indicates the URL or the actual content to provide for the page.
 #: ImplementationGuide.definition.page.source[x]
@@ -2183,7 +2222,7 @@ msgstr "services.html"
 # A short title used to represent this page in navigational structures such as table of contents, bread crumbs, etc.
 #: ImplementationGuide.definition.page.title
 msgid "Services"
-msgstr "Сервисы"
+msgstr "Services"
 
 # Indicates the URL or the actual content to provide for the page.
 #: ImplementationGuide.definition.page.source[x]
@@ -2193,4 +2232,4 @@ msgstr "translationinfo.html"
 # A short title used to represent this page in navigational structures such as table of contents, bread crumbs, etc.
 #: ImplementationGuide.definition.page.title
 msgid "Translationinfo"
-msgstr "Информация о переводах"
+msgstr "Translationinfo"

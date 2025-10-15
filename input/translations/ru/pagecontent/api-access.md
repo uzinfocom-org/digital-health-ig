@@ -88,7 +88,7 @@ Authorization: Bearer <access_token>
 
 # Обработка ошибок
 
-(будет дополнено, требуется описание обработки ошибок)
+(будет дополнено требуется описание обработки ошибок)
 
 # Must Support
 
@@ -101,4 +101,3 @@ Authorization: Bearer <access_token>
 Если элемент не может быть заполнен, потому что данные отсутствуют в исходной системе, и правила кардинальности позволяют это, элемент может оставаться пустым. Если же правила кардинальности требуют обязательного заполнения, необходимо использовать расширение [Data Absent Reason](https://hl7.org/fhir/extensions/StructureDefinition-data-absent-reason.html).
 
 {% include markdown-link-references.md %}
-
