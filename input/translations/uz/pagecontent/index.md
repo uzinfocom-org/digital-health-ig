@@ -28,25 +28,25 @@ Raqamli sog'liqni saqlash platformasi (DHP) "Sog'liqni saqlash tizimini raqamlas
 
 O'zbekiston Respublikasi Raqamli Sog'liqni Saqlash Platformasi quyidagi 19 ta xizmat asosida tashkil etilgan:
 
-*Metama'lumotlar va xavfsizlikni boshqarish (MSM)
-*Asosiy ma'lumotlarni boshqarish (MDM)
-*Bemorni davolash jarayonini boshqarish
-*Elektron tibbiy yozuvlar
-*Yo'llanmalar
-*Retseptlar
-*Qabul va rejalashtirish
-*Laboratoriya
-*Diagnostika va nurli vizualizatsiya
-*Tez tibbiy yordam
-*Tibbiy ta'minot
-*Xarajatlarni qoplash
-*Klinik qarorlarni qo'llab-quvvatlash
-*Hamshiralik ishi
-*Qon resurslarini boshqarish
-*Emlashni boshqarish
-*Jamoat salomatligi bo'yicha hisobotlar
-*Skrining jadvalini boshqarish
-*Sifatni ta'minlash
+* Metama'lumotlar va xavfsizlikni boshqarish (MSM)
+* Asosiy ma'lumotlarni boshqarish (MDM)
+* Bemorni davolash jarayonini boshqarish
+* Elektron tibbiy yozuvlar
+* Yo'llanmalar
+* Retseptlar
+* Qabul va rejalashtirish
+* Laboratoriya
+* Diagnostika va nurli vizualizatsiya
+* Tez tibbiy yordam
+* Tibbiy ta'minot
+* Xarajatlarni qoplash
+* Klinik qarorlarni qo'llab-quvvatlash
+* Hamshiralik ishi
+* Qon resurslarini boshqarish
+* Emlashni boshqarish
+* Jamoat salomatligi bo'yicha hisobotlar
+* Skrining jadvalini boshqarish
+* Sifatni ta'minlash
 
 ### Versiyalarni aniqlash
 
@@ -75,7 +75,7 @@ Versiyalashdan yagona istisno [THO](https://terminology.hl7.org) kod tizimlarini
 - IG'ning ba'zi qismlarida katta o'zgarishlar yoki arxitektura yangilanishlarini bildiradi
 
 ### Intellektual mulk bayonotlari
-{% include ip-statements-uz.xhtml %}
+{% lang-fragment ip-statements.xhtml %}
 
 ### Mualliflar
 
@@ -83,9 +83,10 @@ Versiyalashdan yagona istisno [THO](https://terminology.hl7.org) kod tizimlarini
 | ------------------------------------------------ | ----------------------------- | ----------------------------------------------- |
 | [Rustam Sadikov](https://github.com/roosyabuddy) | IG texnik rahbari             | [Uzinfocom](https://uzinfocom.uz)               |
 | [Vadim Peretokin](https://github.com/vadi2/)     | Asosiy muallif                | [Peretokin Consulting](https://vadimperetok.in) |
-| [Behzod Akhmedov](https://github.com/BEKHZOD98) | Ham-muallif                   | [Uzinfocom](https://uzinfocom.uz)               |
-| [Sarvar Kubayev](https://github.com/KubayevSarvarbek) | Ham-muallif               | [Uzinfocom](https://uzinfocom.uz)               |
+| [Behzod Akhmedov](https://github.com/BEKHZOD98)  | Ham-muallif                    | [Uzinfocom](https://uzinfocom.uz)               |
+| [Sarvar Kubayev](https://github.com/KubayevSarvarbek) | Ham-muallif              | [Uzinfocom](https://uzinfocom.uz)               |
 | Saodat Kadirova                                  | Biznes-analitik               | [Uzinfocom](https://uzinfocom.uz)               |
 | Irina Berger                                     | Biznes-analitik               | [Uzinfocom](https://uzinfocom.uz)               |
+| Zarina Mirzayeva                                 | Tarjimon                  | [Uzinfocom](https://uzinfocom.uz)               |
 | O'zbekiston Respublikasi Sog'liqni saqlash vazirligi | Strategik hamkor          | Hukumat                                      |
 | KfW Taraqqiyot banki                     | Moliyaviy va texnik yordam    | Xalqaro donor                             |

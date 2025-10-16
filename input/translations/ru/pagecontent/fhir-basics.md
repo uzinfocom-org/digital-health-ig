@@ -86,6 +86,6 @@ UZ Core поддерживает как адреса в Узбекистане, 
 
 ### Связанные руководства FHIR
 
-{% include dependency-table-ru.xhtml %}
+{% lang-fragment dependency-table.xhtml %}
 
-{% include globals-table-ru.xhtml %}
+{% lang-fragment globals-table.xhtml %}

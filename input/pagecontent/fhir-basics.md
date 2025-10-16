@@ -83,6 +83,6 @@ For further reading, we recommend to use the following links:
 
 ### Related FHIR IGs
 
-{% include dependency-table-en.xhtml %}
+{% lang-fragment dependency-table.xhtml %}
 
-{% include globals-table-en.xhtml %}
+{% lang-fragment globals-table.xhtml %}

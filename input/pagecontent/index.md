@@ -75,7 +75,7 @@ The only exception to versioning are translation supplements of official [THO](h
 - Indicates breaking changes in parts of the IG or significant architectural updates
 
 ### IP Statements
-{% include ip-statements-en.xhtml %}
+{% lang-fragment ip-statements.xhtml %}
 
 ### Contributors
 
@@ -87,5 +87,6 @@ The only exception to versioning are translation supplements of official [THO](h
 | [Sarvar Kubaev](https://github.com/KubayevSarvarbek) | Co-Author                 | [Uzinfocom](https://uzinfocom.uz)               |
 | Saodat Kadirova                                  | Business Analyst              | [Uzinfocom](https://uzinfocom.uz)               |
 | Irina Berger                                     | Business Analyst              | [Uzinfocom](https://uzinfocom.uz)               |
+| Zarina Mirzaeva                                  | Translator                    | [Uzinfocom](https://uzinfocom.uz)               |
 | Ministry of Health of the Republic of Uzbekistan | Strategic Partner             | Government                                      |
 | KfW Development Bank                             | Financial & Technical Support | International Donor                             |

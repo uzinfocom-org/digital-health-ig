@@ -90,7 +90,7 @@ Qo'shimcha o'qish uchun quyidagi havolalardan foydalanish tavsiya etiladi:
 
 ### Tegishli FHIR Implementatsiya qo'llanmalari
 
-{% include dependency-table-uz.xhtml %}
+{% lang-fragment dependency-table.xhtml %}
 
-{% include globals-table-uz.xhtml %}
+{% lang-fragment globals-table.xhtml %}
 
