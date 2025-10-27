@@ -77,7 +77,7 @@ jobs:
 
       - name: Upload output folder
         if: always() && hashFiles('output/**/*') != ''
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v5
         with:
           name: ig-output-${{ github.run_number }}
           path: output/
