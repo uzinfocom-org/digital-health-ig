@@ -1,26 +1,28 @@
 ### Ishlab chiqish jarayonida
 
-Klinik (ICD-10 asosidagi) va ICD-10 ga asoslanmagan holatlarni farqlash uchun UZ Core Clinical Condition qo'shildi.
+UZ Core Clinical Condition resursiga ICD-10 asosidagi klinik holatlar va ICD-10 ga kirmaydigan holatlarni farqlash uchun qo‘shimcha kiritildi.
 
-Bemorning nogironlik holati FHIR standarti kengaytmasi orqali Patient resursidan Condition resursiga ko'chirildi.
+Bemorning nogironlik holati Patient resursidan (FHIR standart kengaytmasi orqali ko‘rsatilgan) Condition resursiga ko‘chirildi.
 
-NamingSystem identifikatorlaridagi pastki chiziqlar (underscore) olib tashlandi.
+NamingSystem identifikatorlaridagi pastki chiziqlar olib tashlandi.
 
-DHP tomonidan qo'llab-quvvatlanadigan resurslar, profillar, amallar va searchParameterlarni tavsiflovchi capabilitystatement qo'shildi.
+DHP tomonidan qo‘llab-quvvatlanadigan resurslar, profillar, operatsiyalar va qidiruv parametrlari tasvirlangan CapabilityStatement qo‘shildi.
 
-IG (Implementation Guide) ga IP bayonotlari, global jadval va bog'liqlik jadvali qo'shildi.
+Implementatsiya qo‘llanmasiga IP statements, globals table va dependency tables bo‘limlari qo‘shildi.
 
-NamingSystemlarning kanonik URL manzillari endi `https://terminology.dhp.uz` bilan boshlanadi.
+NamingSystem kanonik URL-lari endi https://terminology.dhp.uz bilan boshlanadi.
 
-Observation Interpretation kod tizimi qo'shimchasining nomi to'g'rilandi.
+Observation Interpretation code system supplement nomi to‘g‘rilandi.
 
-Foydalanuvchi interfeysini mahalliylashtirish uchun o'zbek tilida yaratilgan CodeSystemlar va THO supplementlarni o'z ichiga olgan ko'p tilli terminologiya strategiyasi qo'shildi.
+Foydalanuvchi interfeysini lokalizatsiya qilish uchun o‘zbek tilida yaratilgan CodeSystems va THO supplements bilan ko‘p tillilik terminologiya strategiyasi ishlab chiqildi.
 
-ConceptMaplardan foydalanish va ularning qo'llash strategiyasi hujjatlashtirildi.
+ConceptMaps ishlatilishi va ularga oid strategiya hujjatlashtirildi.
 
-Slice nomlari endi eng yaxshi amaliyotga muvofiq — lower camelCase formatida yangilandi.
+Slice name’lar FHIRning tavsiya etilgan lowerCamelCase nomlash konventsiyasiga mos ravishda yangilandi.
 
-Patient, Practitioner va RelatedPerson resurslarida xalqaro manzillarni qo'llab-quvvatlash imkoniyati qo'shildi.
+Patient, Practitioner va RelatedPerson resurslarida xalqaro manzillarni qo‘llab-quvvatlash qo‘shildi.
+
+O‘zbekcha tarjimalar kiritildi.
 
 ### Versiya 0.3.0
 
