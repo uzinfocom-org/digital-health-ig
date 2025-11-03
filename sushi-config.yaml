@@ -13,8 +13,8 @@ version: 0.3.0
 fhirVersion: 5.0.0 # https://www.hl7.org/fhir/valueset-FHIR-version.html
 copyrightYear: 2025+
 releaseLabel: ci-build
-# jurisdiction: urn:iso:std:iso:3166#UZ "Uzbekistan" temporarily disabled due to issues with IG publisher translation template
-jurisdiction: http://unstats.un.org/unsd/methods/m49/m49.htm#001
+jurisdiction: urn:iso:std:iso:3166#UZ "Uzbekistan"
+# jurisdiction: http://unstats.un.org/unsd/methods/m49/m49.htm#001
 publisher:
   name: Uzinfocom LLC
   url: https://uzinfocom.uz
