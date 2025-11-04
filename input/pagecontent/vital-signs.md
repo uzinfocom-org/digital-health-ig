@@ -2,7 +2,16 @@ Vital signs measure the body's basic functions. This page provides guidance for 
 
 ### Overview
 
-**UZ Core vital signs are based on the [FHIR Vital Signs profile](https://hl7.org/fhir/observation-vitalsigns.html)**, using the Observation resource to represent measurements consistently across Uzbekistan's healthcare ecosystem.
+Vital signs in UZ Core are used in conjunction with [FHIR Vital Signs profiles](https://hl7.org/fhir/observation-vitalsigns.html), using the Observation resource to represent measurements consistently across Uzbekistan's healthcare ecosystem.
+
+### FHIR representation
+
+Vital signs observations in UZ Core **compose** three profiles together:
+* [UZ Core Observation profile](https://dhp.uz/fhir/core/StructureDefinition/uz-core-observation) - Uzbekistan-specific requirements
+* [FHIR Vital Signs profile](http://hl7.org/fhir/StructureDefinition/vitalsigns)  - international vital signs standards
+* **Specific vital sign profile** (e.g., [Heart Rate](http://hl7.org/fhir/r5/heartrate.html), [Blood Pressure](http://hl7.org/fhir/r5/bp.html)) - rules for that particular vital sign type
+
+Declare all three in `meta.profile`. Most conformance rules are in the final (most specific) profile, with base profiles providing foundational requirements.
 
 ### Common vital signs
 
@@ -18,22 +27,13 @@ Vital signs measure the body's basic functions. This page provides guidance for 
 | [Body Mass Index](http://hl7.org/fhir/r5/bmi.html) | 39156-5 | Body mass index (BMI) [Ratio] | kg/m2 | [JSON](Observation-bmi-example.json) |
 | [Blood Pressure](http://hl7.org/fhir/r5/bp.html) | 85354-9 | Blood pressure panel | — | [JSON](Observation-blood-pressure-example.json) |
 
-### FHIR representation
+### Understanding observations
 
-Vital signs observations in UZ Core **compose** three profiles together:
-* [UZ Core Observation profile](https://dhp.uz/fhir/core/StructureDefinition/uz-core-observation) - Uzbekistan-specific requirements
-* [FHIR Vital Signs profile](http://hl7.org/fhir/StructureDefinition/vitalsigns) ([documentation](https://hl7.org/fhir/vitalsigns.html)) - International vital signs standards
-* **Specific vital sign profile** (e.g., [Heart Rate](http://hl7.org/fhir/r5/heartrate.html), [Blood Pressure](http://hl7.org/fhir/r5/bp.html)) - Rules for that particular vital sign type
+Observations work as key-value pairs:
+- Key: `Observation.code` (what was measured)
+- Value: `Observation.value[x]` (the measurement result)
 
-Declare all three in `meta.profile`. **Most conformance rules are in the final (most specific) profile**, with base profiles providing foundational requirements.
-
-### Understanding observations as key-value pairs
-
-Observations work as **key-value pairs**:
-- **Key**: `Observation.code` (what was measured)
-- **Value**: `Observation.value[x]` (the measurement result)
-
-Complex observations with multiple inseparable values use `Observation.component.value[x]`. For example, blood pressure has systolic and diastolic components measured together, instead of 2 separate Observations.
+That said, complex observations with multiple inseparable values use `Observation.component.value[x]`. For example, blood pressure has systolic and diastolic components measured together, instead of 2 separate Observations.
 
 Key elements:
 
@@ -43,21 +43,22 @@ Key elements:
 * Effective date/time when the measurement was taken
 * Optional performer reference to who recorded the measurement
 
-### Example: blood pressure
+### Example: body weight
 
 ```json
 {
   "resourceType": "Observation",
+  "id": "body-weight-example",
   "meta": {
     "profile": [
       "https://dhp.uz/fhir/core/StructureDefinition/uz-core-observation",
       "http://hl7.org/fhir/StructureDefinition/vitalsigns",
-      "http://hl7.org/fhir/StructureDefinition/bp"
+      "http://hl7.org/fhir/StructureDefinition/bodyweight"
     ]
   },
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Blood pressure: 120/80 mmHg</p></div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Body weight: 185 lbs</p></div>"
   },
   "status": "final",
   "category": [{
@@ -70,49 +71,24 @@ Key elements:
   "code": {
     "coding": [{
       "system": "http://loinc.org",
-      "code": "85354-9",
-      "display": "Blood pressure panel with all children optional"
+      "code": "29463-7",
+      "display": "Body Weight"
     }]
   },
   "subject": {
-    "reference": "Patient/example"
+    "reference": "Patient/example-salim"
   },
-  "effectiveDateTime": "2025-11-04T10:30:00Z",
-  "performer": [{
-    "reference": "Practitioner/example"
-  }],
-  "component": [{
-    "code": {
-      "coding": [{
-        "system": "http://loinc.org",
-        "code": "8480-6",
-        "display": "Systolic blood pressure"
-      }]
-    },
-    "valueQuantity": {
-      "value": 120,
-      "unit": "mmHg",
-      "system": "http://unitsofmeasure.org",
-      "code": "mm[Hg]"
-    }
-  }, {
-    "code": {
-      "coding": [{
-        "system": "http://loinc.org",
-        "code": "8462-4",
-        "display": "Diastolic blood pressure"
-      }]
-    },
-    "valueQuantity": {
-      "value": 80,
-      "unit": "mmHg",
-      "system": "http://unitsofmeasure.org",
-      "code": "mm[Hg]"
-    }
-  }]
+  "effectiveDateTime": "2016-03-28",
+  "valueQuantity": {
+    "value": 185,
+    "unit": "lbs",
+    "system": "http://unitsofmeasure.org",
+    "code": "[lb_av]"
+  }
 }
 ```
 
+All other examples can be found as links in the table above.
 
 ### Links
 

@@ -60,3 +60,131 @@ Description: "Uzbekistan Core Observation profile, used to represent clinical an
 * component.value[x] MS
 * component.dataAbsentReason from DataAbsentReasonVS (extensible)
 * component.interpretation from ObservationInterpretationVS (extensible)
+
+
+// Vital Signs Examples
+
+Instance: blood-pressure-example
+InstanceOf: Observation
+Usage: #example
+* meta.profile[0] = "https://dhp.uz/fhir/core/StructureDefinition/uz-core-observation"
+* meta.profile[+] = "http://hl7.org/fhir/StructureDefinition/vitalsigns"
+* meta.profile[+] = "http://hl7.org/fhir/StructureDefinition/bp"
+* status = #final
+* category = $observation-category#vital-signs "Vital Signs"
+* code = $loinc#85354-9 "Blood pressure panel with all children optional"
+* subject = Reference(Patient/example-salim)
+* effectiveDateTime = "2025-11-04T10:30:00Z"
+* performer = Reference(Practitioner/example-practitioner)
+* component[0].code = $loinc#8480-6 "Systolic blood pressure"
+* component[=].valueQuantity = 120 'mm[Hg]' "mmHg"
+* component[+].code = $loinc#8462-4 "Diastolic blood pressure"
+* component[=].valueQuantity = 80 'mm[Hg]' "mmHg"
+
+Instance: bmi-example
+InstanceOf: Observation
+Usage: #example
+* meta.profile[0] = "https://dhp.uz/fhir/core/StructureDefinition/uz-core-observation"
+* meta.profile[+] = "http://hl7.org/fhir/StructureDefinition/vitalsigns"
+* meta.profile[+] = "http://hl7.org/fhir/StructureDefinition/bmi"
+* status = #final
+* category = $observation-category#vital-signs "Vital Signs"
+* code = $loinc#39156-5 "Body mass index (BMI) [Ratio]"
+* subject = Reference(Patient/example-salim)
+* effectiveDateTime = "1999-07-02"
+* valueQuantity = 16.2 'kg/m2' "kg/m2"
+
+Instance: body-height-example
+InstanceOf: Observation
+Usage: #example
+* meta.profile[0] = "https://dhp.uz/fhir/core/StructureDefinition/uz-core-observation"
+* meta.profile[+] = "http://hl7.org/fhir/StructureDefinition/vitalsigns"
+* meta.profile[+] = "http://hl7.org/fhir/StructureDefinition/bodyheight"
+* status = #final
+* category = $observation-category#vital-signs "Vital Signs"
+* code = $loinc#8302-2 "Body height"
+* subject = Reference(Patient/example-salim)
+* effectiveDateTime = "1999-07-02"
+* valueQuantity = 66.9 '[in_i]' "inches"
+
+Instance: body-temperature-example
+InstanceOf: Observation
+Usage: #example
+* meta.profile[0] = "https://dhp.uz/fhir/core/StructureDefinition/uz-core-observation"
+* meta.profile[+] = "http://hl7.org/fhir/StructureDefinition/vitalsigns"
+* meta.profile[+] = "http://hl7.org/fhir/StructureDefinition/bodytemp"
+* status = #final
+* category = $observation-category#vital-signs "Vital Signs"
+* code = $loinc#8310-5 "Body temperature"
+* subject = Reference(Patient/example-salim)
+* effectiveDateTime = "1999-07-02"
+* valueQuantity = 36.5 'Cel' "C"
+
+Instance: body-weight-example
+InstanceOf: Observation
+Usage: #example
+* meta.profile[0] = "https://dhp.uz/fhir/core/StructureDefinition/uz-core-observation"
+* meta.profile[+] = "http://hl7.org/fhir/StructureDefinition/vitalsigns"
+* meta.profile[+] = "http://hl7.org/fhir/StructureDefinition/bodyweight"
+* status = #final
+* category = $observation-category#vital-signs "Vital Signs"
+* code = $loinc#29463-7 "Body Weight"
+* subject = Reference(Patient/example-salim)
+* effectiveDateTime = "2016-03-28"
+* valueQuantity = 185 '[lb_av]' "lbs"
+
+Instance: head-circumference-example
+InstanceOf: Observation
+Usage: #example
+* meta.profile[0] = "https://dhp.uz/fhir/core/StructureDefinition/uz-core-observation"
+* meta.profile[+] = "http://hl7.org/fhir/StructureDefinition/vitalsigns"
+* meta.profile[+] = "http://hl7.org/fhir/StructureDefinition/headcircum"
+* status = #final
+* category = $observation-category#vital-signs "Vital Signs"
+* code = $loinc#9843-4 "Head Occipital-frontal circumference"
+* subject = Reference(Patient/example-salim)
+* effectiveDateTime = "1999-07-02"
+* valueQuantity = 51.2 'cm' "cm"
+
+Instance: heart-rate-example
+InstanceOf: Observation
+Usage: #example
+* meta.profile[0] = "https://dhp.uz/fhir/core/StructureDefinition/uz-core-observation"
+* meta.profile[+] = "http://hl7.org/fhir/StructureDefinition/vitalsigns"
+* meta.profile[+] = "http://hl7.org/fhir/StructureDefinition/heartrate"
+* status = #final
+* category = $observation-category#vital-signs "Vital Signs"
+* code = $loinc#8867-4 "Heart rate"
+* subject = Reference(Patient/example-salim)
+* effectiveDateTime = "1999-07-02"
+* valueQuantity = 44 '/min' "beats/minute"
+
+Instance: oxygen-saturation-example
+InstanceOf: Observation
+Usage: #example
+* meta.profile[0] = "https://dhp.uz/fhir/core/StructureDefinition/uz-core-observation"
+* meta.profile[+] = "http://hl7.org/fhir/StructureDefinition/vitalsigns"
+* meta.profile[+] = "http://hl7.org/fhir/StructureDefinition/oxygensat"
+* status = #final
+* category = $observation-category#vital-signs "Vital Signs"
+* code = $loinc#2708-6 "Oxygen saturation in Arterial blood"
+* subject = Reference(Patient/example-salim)
+* effectiveDateTime = "2014-12-05T09:30:10+01:00"
+* valueQuantity = 95 '%' "%"
+* interpretation = $v3-ObservationInterpretation#N "Normal"
+* interpretation.text = "Normal (applies to non-numeric results)"
+* referenceRange.low = 90 '%' "%"
+* referenceRange.high = 99 '%' "%"
+
+Instance: respiratory-rate-example
+InstanceOf: Observation
+Usage: #example
+* meta.profile[0] = "https://dhp.uz/fhir/core/StructureDefinition/uz-core-observation"
+* meta.profile[+] = "http://hl7.org/fhir/StructureDefinition/vitalsigns"
+* meta.profile[+] = "http://hl7.org/fhir/StructureDefinition/resprate"
+* status = #final
+* category = $observation-category#vital-signs "Vital Signs"
+* code = $loinc#9279-1 "Respiratory rate"
+* subject = Reference(Patient/example-salim)
+* effectiveDateTime = "1999-07-02"
+* valueQuantity = 26 '/min' "breaths/minute"

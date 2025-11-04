@@ -53,6 +53,7 @@ Alias: $observation-category = http://terminology.hl7.org/CodeSystem/observation
 Alias: $observation-codes = http://hl7.org/fhir/ValueSet/observation-codes
 Alias: $observation-dataAbsentReason = http://terminology.hl7.org/CodeSystem/data-absent-reason
 Alias: $observation-interpretation = http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation
+Alias: $v3-ObservationInterpretation = http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation
 Alias: $observation-methods = http://hl7.org/fhir/ValueSet/observation-methods
 Alias: $observation-referencerange-normalvalue = http://hl7.org/fhir/observation-referencerange-normalvalue
 Alias: $observation-status = http://hl7.org/fhir/observation-status
