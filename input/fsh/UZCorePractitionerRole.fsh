@@ -11,21 +11,6 @@ Description: "Uzbekistan Core PractitionerRole profile, used to define roles of 
 * identifier MS
 * identifier.use from IdentifierUseVS (required)
 * identifier.type from IdentifierTypeVS (required)
-* identifier ^slicing.discriminator.type = #value
-* identifier ^slicing.discriminator.path = "system"
-* identifier ^slicing.rules = #open
-* identifier ^slicing.description = "Ways a practitioner can be identified"
-* identifier ^slicing.ordered = false
-* identifier contains nationalId 0..1 MS
-
-* identifier[nationalId]
-  * ^short = "Персональный идентификационный номер физического лица"
-  * system 1..1 MS
-  * system = $organization-argos-id-system
-  * type 1..1 MS
-  * type = $identifier-type#NI "National unique individual identifier"
-  * use = #official
-  * value 1..1 MS
 
 * active and practitioner and organization and code and specialty and location and healthcareService MS
 
@@ -60,8 +45,6 @@ InstanceOf: UZCorePractitionerRole
 Description: "Example of a practitioner's role"
 Usage: #example
 * language = #uz
-* identifier[nationalId]
-  * value = "9876543210"
 * active = true
 * practitioner = Reference(Practitioner/example-practitioner)
 * organization = Reference(Organization/example-organization)
