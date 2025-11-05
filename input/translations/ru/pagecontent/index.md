@@ -76,17 +76,3 @@
 
 ### Заявления об интеллектуальной собственности (IP Statements)
 {% lang-fragment ip-statements.xhtml %}
-
-### Авторы и партнёры
-
-| Имя                                             | Роль                          | Организация                                    |
-| ----------------------------------------------- | ----------------------------- | ---------------------------------------------- |
-| [Рустам Садыков](https://github.com/roosyabuddy) | Сопровождающий IG             | [Uzinfocom](https://uzinfocom.uz)              |
-| [Вадим Перетокин](https://github.com/vadi2/)    | Основной Автор                | [Peretokin Consulting](https://vadimperetok.in) |
-| [Бехзод Ахмедов](https://github.com/BEKHZOD98)  | Соавтор                       | [Uzinfocom](https://uzinfocom.uz)              |
-| [Сарвар Кубаев](https://github.com/KubayevSarvarbek) | Соавтор                | [Uzinfocom](https://uzinfocom.uz)              |
-| Саодат Кадырова                                  | Бизнес-аналитик               | [Uzinfocom](https://uzinfocom.uz)              |
-| Ирина Бергер                                     | Бизнес-аналитик               | [Uzinfocom](https://uzinfocom.uz)              |
-| Зарина Мирзаева                                  | Переводчица                   | [Uzinfocom](https://uzinfocom.uz)               |
-| Министерство здравоохранения Республики Узбекистан | Стратегический партнер        | Правительство                                  |
-| Банк развития KfW                               | Финансовая и техническая поддержка | Международный донор                           |

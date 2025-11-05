@@ -77,16 +77,3 @@ Versiyalashdan yagona istisno [THO](https://terminology.hl7.org) kod tizimlarini
 ### Intellektual mulk bayonotlari
 {% lang-fragment ip-statements.xhtml %}
 
-### Mualliflar
-
-| Ism                                             | Roli                          | Tashkilot                                    |
-| ------------------------------------------------ | ----------------------------- | ----------------------------------------------- |
-| [Rustam Sadikov](https://github.com/roosyabuddy) | IG texnik rahbari             | [Uzinfocom](https://uzinfocom.uz)               |
-| [Vadim Peretokin](https://github.com/vadi2/)     | Asosiy muallif                | [Peretokin Consulting](https://vadimperetok.in) |
-| [Behzod Akhmedov](https://github.com/BEKHZOD98)  | Ham-muallif                    | [Uzinfocom](https://uzinfocom.uz)               |
-| [Sarvar Kubayev](https://github.com/KubayevSarvarbek) | Ham-muallif              | [Uzinfocom](https://uzinfocom.uz)               |
-| Saodat Kadirova                                  | Biznes-analitik               | [Uzinfocom](https://uzinfocom.uz)               |
-| Irina Berger                                     | Biznes-analitik               | [Uzinfocom](https://uzinfocom.uz)               |
-| Zarina Mirzayeva                                 | Tarjimon                  | [Uzinfocom](https://uzinfocom.uz)               |
-| O'zbekiston Respublikasi Sog'liqni saqlash vazirligi | Strategik hamkor          | Hukumat                                      |
-| KfW Taraqqiyot banki                     | Moliyaviy va texnik yordam    | Xalqaro donor                             |

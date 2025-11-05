@@ -76,17 +76,3 @@ The only exception to versioning are translation supplements of official [THO](h
 
 ### IP Statements
 {% lang-fragment ip-statements.xhtml %}
-
-### Contributors
-
-| Name                                             | Role                          | Organization                                    |
-| ------------------------------------------------ | ----------------------------- | ----------------------------------------------- |
-| [Rustam Sadykov](https://github.com/roosyabuddy) | IG Maintainer                 | [Uzinfocom](https://uzinfocom.uz)               |
-| [Vadim Peretokin](https://github.com/vadi2/)     | Primary Author                | [Peretokin Consulting](https://vadimperetok.in) |
-| [Bekhzod Akhmedov](https://github.com/BEKHZOD98) | Co-Author                     | [Uzinfocom](https://uzinfocom.uz)               |
-| [Sarvar Kubaev](https://github.com/KubayevSarvarbek) | Co-Author                 | [Uzinfocom](https://uzinfocom.uz)               |
-| Saodat Kadirova                                  | Business Analyst              | [Uzinfocom](https://uzinfocom.uz)               |
-| Irina Berger                                     | Business Analyst              | [Uzinfocom](https://uzinfocom.uz)               |
-| Zarina Mirzaeva                                  | Translator                    | [Uzinfocom](https://uzinfocom.uz)               |
-| Ministry of Health of the Republic of Uzbekistan | Strategic Partner             | Government                                      |
-| KfW Development Bank                             | Financial & Technical Support | International Donor                             |
