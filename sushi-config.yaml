@@ -16,9 +16,9 @@ releaseLabel: ci-build
 jurisdiction: urn:iso:std:iso:3166#UZ "Uzbekistan"
 # jurisdiction: http://unstats.un.org/unsd/methods/m49/m49.htm#001
 publisher:
-  name: Uzinfocom LLC
-  url: https://uzinfocom.uz
-  email: info@uzinfocom.uz
+  name: Ministry of Health of the Republic of Uzbekistan
+  url: https://gov.uz/en/ssv
+  email: info@ssv.uz
 
 dependencies:
   # while we don't strictly needs this, this helps resolve the DICOM supplement correctly until tx.fhir.org can do this
