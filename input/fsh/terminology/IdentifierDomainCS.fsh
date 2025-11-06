@@ -1,0 +1,4457 @@
+CodeSystem: IdentifierDomainCS
+Id: identifier-domain-cs
+Title: "Identifier Domain"
+Description: "Description of the identifier systems acceptable for entity identification"
+* ^caseSensitive = true
+* ^hierarchyMeaning = #is-a
+* ^content = #complete
+* ^property[0].code = #idtype
+* ^property[=].uri = "http://fhir.ee/CodeSystem/concept-properties#idtype"
+* ^property[=].description = "Identifier type of concept according to http://terminology.hl7.org/CodeSystem/v2-0203"
+* ^property[=].type = #code
+* ^property[+].code = #country
+* ^property[=].uri = "http://fhir.ee/CodeSystem/concept-properties#country"
+* ^property[=].description = "ISO 3166 аlpha3 country code"
+* ^property[=].type = #code
+* ^property[+].code = #naming-system
+* ^property[=].description = "The uri to the related naming system"
+* ^property[=].type = #string
+* ^property[+].code = #notSelectable
+* ^property[=].uri = "http://hl7.org/fhir/concept-properties#notSelectable"
+* ^property[=].description = "The concept is not intended to be chosen by the user"
+* ^property[=].type = #boolean
+* #https://fhir.ee/sid/org "Root of identifiers for organization identification"
+  * ^property[0].code = #notSelectable
+  * ^property[=].valueBoolean = true
+  * #https://fhir.ee/sid/org/est/br "Estonian Business Register Code"
+    * ^property[0].code = #idtype
+    * ^property[=].valueCode = #XX
+    * ^property[+].code = #country
+    * ^property[=].valueCode = #EST
+    * ^property[+].code = #naming-system
+    * ^property[=].valueString = "https://fhir.ee/NamingSystem/org-est-br"
+    * ^property[+].code = #notSelectable
+    * ^property[=].valueBoolean = false
+  * #https://fhir.ee/sid/org/est/fi "License number provided by The National Institute for Health Development"
+    * ^property[0].code = #idtype
+    * ^property[=].valueCode = #FI
+    * ^property[+].code = #country
+    * ^property[=].valueCode = #EST
+    * ^property[+].code = #naming-system
+    * ^property[=].valueString = "https://fhir.ee/NamingSystem/org-est-fi"
+    * ^property[+].code = #notSelectable
+    * ^property[=].valueBoolean = false
+  * #https://fhir.ee/sid/org/vatin "VAT identification number"
+    * ^property[0].code = #idtype
+    * ^property[=].valueCode = #TAX
+    * ^property[+].code = #naming-system
+    * ^property[=].valueString = "https://fhir.ee/NamingSystem/org-vatin"
+    * ^property[+].code = #notSelectable
+    * ^property[=].valueBoolean = false
+* #https://fhir.ee/sid/pro "Root of identifiers for healthcare professionals"
+  * ^property[0].code = #notSelectable
+  * ^property[=].valueBoolean = true
+  * #https://fhir.ee/sid/pro/est "Root of Estonian identifiers for healthcare professionals"
+    * ^property[0].code = #notSelectable
+    * ^property[=].valueBoolean = true
+    * ^property[+].code = #country
+    * ^property[=].valueCode = #EST
+    * #https://fhir.ee/sid/pro/est/pho "Healthcare professional official ID provided by The National Institute for Health Development"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #PHO
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #EST
+      * ^property[+].code = #naming-system
+      * ^property[=].valueString = "https://fhir.ee/NamingSystem/pro-est-pho"
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+* #https://fhir.ee/sid/pid "Root of identifiers for person identification"
+  * ^property[0].code = #notSelectable
+  * ^property[=].valueBoolean = true
+  * #https://fhir.ee/sid/pid/est "Root of Estonian identifiers for person identification"
+    * ^property[0].code = #notSelectable
+    * ^property[=].valueBoolean = true
+    * ^property[+].code = #country
+    * ^property[=].valueCode = #EST
+    * #https://fhir.ee/sid/pid/est/ni "Estonian personal national identification code"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #NI
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #EST
+      * ^property[+].code = #naming-system
+      * ^property[=].valueString = "https://fhir.ee/NamingSystem/pid-est-ni"
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+    * #https://fhir.ee/sid/pid/est/ppn "Estonian passport number"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #PPN
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #EST
+      * ^property[+].code = #naming-system
+      * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-EST"
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+    * #https://fhir.ee/sid/pid/est/mr "MPI issued medical record number"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #MR
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #EST
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+    * #https://fhir.ee/sid/pid/est/mrt "Unknown patient code generated by healthcare provider"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #MRT
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #EST
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+    * #https://fhir.ee/sid/pid/est/npi "Stillborn code provided by The National Institute for Health Development"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #NPI
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #EST
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+    * #https://fhir.ee/sid/pid/est/u "Unknown person identifier. May be used only for backward-compatibility."
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #U
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #EST
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = true
+    * #https://fhir.ee/sid/pid/est/prn "Namespace for identifier issued by healthcare providers"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #PRN
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #EST
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = true
+      * #https://fhir.ee/sid/pid/est/prn/90006399 "North Estonian Medical Center"
+        * ^property[0].code = #idtype
+        * ^property[=].valueCode = #PRN
+        * ^property[+].code = #country
+        * ^property[=].valueCode = #EST
+        * ^property[+].code = #notSelectable
+        * ^property[=].valueBoolean = false
+      * #https://fhir.ee/sid/pid/est/prn/70009770 "Health and Welfare Information Systems Centre"
+        * ^property[0].code = #idtype
+        * ^property[=].valueCode = #PRN
+        * ^property[+].code = #country
+        * ^property[=].valueCode = #EST
+        * ^property[+].code = #notSelectable
+        * ^property[=].valueBoolean = false
+        * #https://fhir.ee/sid/pid/est/prn/70009770/kmt "KMT unknown patient identifier"
+          * ^property[0].code = #idtype
+          * ^property[=].valueCode = #MRT
+          * ^property[+].code = #country
+          * ^property[=].valueCode = #EST
+          * ^property[+].code = #notSelectable
+          * ^property[=].valueBoolean = false
+        * #https://fhir.ee/sid/pid/est/prn/70009770/rk "RK unknown patient identifier"
+          * ^property[0].code = #idtype
+          * ^property[=].valueCode = #MRT
+          * ^property[+].code = #country
+          * ^property[=].valueCode = #EST
+          * ^property[+].code = #notSelectable
+          * ^property[=].valueBoolean = false
+        * #https://fhir.ee/sid/pid/est/prn/70009770/ap "AP unknown patient identifier"
+          * ^property[0].code = #idtype
+          * ^property[=].valueCode = #MRT
+          * ^property[+].code = #country
+          * ^property[=].valueCode = #EST
+          * ^property[+].code = #notSelectable
+          * ^property[=].valueBoolean = false
+  * #https://fhir.ee/sid/pid/afg "Root identifier for person identification of country Afghanistan"
+    * ^property[0].code = #notSelectable
+    * ^property[=].valueBoolean = true
+    * ^property[+].code = #country
+    * ^property[=].valueCode = #AFG
+    * #https://fhir.ee/sid/pid/afg/ppn "Passport number of Afghanistan"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #PPN
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #AFG
+      * ^property[+].code = #naming-system
+      * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-AFG"
+  * #https://fhir.ee/sid/pid/ala "Root identifier for person identification of country Åland Islands"
+    * ^property[0].code = #notSelectable
+    * ^property[=].valueBoolean = true
+    * ^property[+].code = #country
+    * ^property[=].valueCode = #ALA
+    * #https://fhir.ee/sid/pid/ala/ppn "Passport number of Åland Islands"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #PPN
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #ALA
+      * ^property[+].code = #naming-system
+      * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-ALA"
+  * #https://fhir.ee/sid/pid/alb "Root identifier for person identification of country Albania"
+    * ^property[0].code = #notSelectable
+    * ^property[=].valueBoolean = true
+    * ^property[+].code = #country
+    * ^property[=].valueCode = #ALB
+    * #https://fhir.ee/sid/pid/alb/ppn "Passport number of Albania"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #PPN
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #ALB
+      * ^property[+].code = #naming-system
+      * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-ALB"
+    * #https://fhir.ee/sid/pid/alb/ni "National identifier of Albania"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #NI
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #ALB
+    * #https://fhir.ee/sid/pid/alb/cz "ID-card number of Albania"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #CZ
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #ALB
+    * #https://fhir.ee/sid/pid/alb/dl "Driver's licence number of Albania"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #DL
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #ALB
+  * #https://fhir.ee/sid/pid/dza "Root identifier for person identification of country Algeria"
+    * ^property[0].code = #notSelectable
+    * ^property[=].valueBoolean = true
+    * ^property[+].code = #country
+    * ^property[=].valueCode = #DZA
+    * #https://fhir.ee/sid/pid/dza/ppn "Passport number of Algeria"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #PPN
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #DZA
+      * ^property[+].code = #naming-system
+      * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-DZA"
+  * #https://fhir.ee/sid/pid/asm "Root identifier for person identification of country American Samoa"
+    * ^property[0].code = #notSelectable
+    * ^property[=].valueBoolean = true
+    * ^property[+].code = #country
+    * ^property[=].valueCode = #ASM
+    * #https://fhir.ee/sid/pid/asm/ppn "Passport number of American Samoa"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #PPN
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #ASM
+      * ^property[+].code = #naming-system
+      * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-ASM"
+  * #https://fhir.ee/sid/pid/usa "Root identifier for person identification of country United States of America"
+    * ^property[0].code = #notSelectable
+    * ^property[=].valueBoolean = true
+    * ^property[+].code = #country
+    * ^property[=].valueCode = #USA
+    * #https://fhir.ee/sid/pid/usa/ppn "Passport number of United States of America"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #PPN
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #USA
+      * ^property[+].code = #naming-system
+      * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-USA"
+  * #https://fhir.ee/sid/pid/and "Root identifier for person identification of country Andorra"
+    * ^property[0].code = #notSelectable
+    * ^property[=].valueBoolean = true
+    * ^property[+].code = #country
+    * ^property[=].valueCode = #AND
+    * #https://fhir.ee/sid/pid/and/ppn "Passport number of Andorra"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #PPN
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #AND
+      * ^property[+].code = #naming-system
+      * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-AND"
+  * #https://fhir.ee/sid/pid/ago "Root identifier for person identification of country Angola"
+    * ^property[0].code = #notSelectable
+    * ^property[=].valueBoolean = true
+    * ^property[+].code = #country
+    * ^property[=].valueCode = #AGO
+    * #https://fhir.ee/sid/pid/ago/ppn "Passport number of Angola"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #PPN
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #AGO
+      * ^property[+].code = #naming-system
+      * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-AGO"
+  * #https://fhir.ee/sid/pid/aia "Root identifier for person identification of country Anguilla"
+    * ^property[0].code = #notSelectable
+    * ^property[=].valueBoolean = true
+    * ^property[+].code = #country
+    * ^property[=].valueCode = #AIA
+    * #https://fhir.ee/sid/pid/aia/ppn "Passport number of Anguilla"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #PPN
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #AIA
+      * ^property[+].code = #naming-system
+      * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-AIA"
+  * #https://fhir.ee/sid/pid/ata "Root identifier for person identification of country Antarctica"
+    * ^property[0].code = #notSelectable
+    * ^property[=].valueBoolean = true
+    * ^property[+].code = #country
+    * ^property[=].valueCode = #ATA
+    * #https://fhir.ee/sid/pid/ata/ppn "Passport number of Antarctica"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #PPN
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #ATA
+      * ^property[+].code = #naming-system
+      * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-ATA"
+  * #https://fhir.ee/sid/pid/atg "Root identifier for person identification of country Antigua and Barbuda"
+    * ^property[0].code = #notSelectable
+    * ^property[=].valueBoolean = true
+    * ^property[+].code = #country
+    * ^property[=].valueCode = #ATG
+    * #https://fhir.ee/sid/pid/atg/ppn "Passport number of Antigua and Barbuda"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #PPN
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #ATG
+      * ^property[+].code = #naming-system
+      * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-ATG"
+  * #https://fhir.ee/sid/pid/are "Root identifier for person identification of country United Arab Emirates"
+    * ^property[0].code = #notSelectable
+    * ^property[=].valueBoolean = true
+    * ^property[+].code = #country
+    * ^property[=].valueCode = #ARE
+    * #https://fhir.ee/sid/pid/are/ppn "Passport number of United Arab Emirates"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #PPN
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #ARE
+      * ^property[+].code = #naming-system
+      * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-ARE"
+    * #https://fhir.ee/sid/pid/are/ni "National identifier of United Arab Emirates"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #NI
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #ARE
+    * #https://fhir.ee/sid/pid/are/cz "ID-card number of United Arab Emirates"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #CZ
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #ARE
+  * #https://fhir.ee/sid/pid/arg "Root identifier for person identification of country Argentina"
+    * ^property[0].code = #notSelectable
+    * ^property[=].valueBoolean = true
+    * ^property[+].code = #country
+    * ^property[=].valueCode = #ARG
+    * #https://fhir.ee/sid/pid/arg/ppn "Passport number of Argentina"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #PPN
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #ARG
+      * ^property[+].code = #naming-system
+      * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-ARG"
+    * #https://fhir.ee/sid/pid/arg/ni "National identifier of Argentina"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #NI
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #ARG
+    * #https://fhir.ee/sid/pid/arg/dl "Driver's licence number of Argentina"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #DL
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #ARG
+  * #https://fhir.ee/sid/pid/arm "Root identifier for person identification of country Armenia"
+    * ^property[0].code = #notSelectable
+    * ^property[=].valueBoolean = true
+    * ^property[+].code = #country
+    * ^property[=].valueCode = #ARM
+    * #https://fhir.ee/sid/pid/arm/ppn "Passport number of Armenia"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #PPN
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #ARM
+      * ^property[+].code = #naming-system
+      * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-ARM"
+  * #https://fhir.ee/sid/pid/abw "Root identifier for person identification of country Aruba"
+    * ^property[0].code = #notSelectable
+    * ^property[=].valueBoolean = true
+    * ^property[+].code = #country
+    * ^property[=].valueCode = #ABW
+    * #https://fhir.ee/sid/pid/abw/ppn "Passport number of Aruba"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #PPN
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #ABW
+      * ^property[+].code = #naming-system
+      * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-ABW"
+  * #https://fhir.ee/sid/pid/aze "Root identifier for person identification of country Azerbaijan"
+    * ^property[0].code = #notSelectable
+    * ^property[=].valueBoolean = true
+    * ^property[+].code = #country
+    * ^property[=].valueCode = #AZE
+    * #https://fhir.ee/sid/pid/aze/ppn "Passport number of Azerbaijan"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #PPN
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #AZE
+      * ^property[+].code = #naming-system
+      * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-AZE"
+  * #https://fhir.ee/sid/pid/aus "Root identifier for person identification of country Australia"
+    * ^property[0].code = #notSelectable
+    * ^property[=].valueBoolean = true
+    * ^property[+].code = #country
+    * ^property[=].valueCode = #AUS
+    * #https://fhir.ee/sid/pid/aus/ppn "Passport number of Australia"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #PPN
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #AUS
+      * ^property[+].code = #naming-system
+      * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-AUS"
+  * #https://fhir.ee/sid/pid/aut "Root identifier for person identification of country Austria"
+    * ^property[0].code = #notSelectable
+    * ^property[=].valueBoolean = true
+    * ^property[+].code = #country
+    * ^property[=].valueCode = #AUT
+    * #https://fhir.ee/sid/pid/aut/ppn "Passport number of Austria"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #PPN
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #AUT
+      * ^property[+].code = #naming-system
+      * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-AUT"
+  * #https://fhir.ee/sid/pid/bhs "Root identifier for person identification of country Bahamas"
+    * ^property[0].code = #notSelectable
+    * ^property[=].valueBoolean = true
+    * ^property[+].code = #country
+    * ^property[=].valueCode = #BHS
+    * #https://fhir.ee/sid/pid/bhs/ppn "Passport number of Bahamas"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #PPN
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #BHS
+      * ^property[+].code = #naming-system
+      * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-BHS"
+  * #https://fhir.ee/sid/pid/bhr "Root identifier for person identification of country Bahrain"
+    * ^property[0].code = #notSelectable
+    * ^property[=].valueBoolean = true
+    * ^property[+].code = #country
+    * ^property[=].valueCode = #BHR
+    * #https://fhir.ee/sid/pid/bhr/ppn "Passport number of Bahrain"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #PPN
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #BHR
+      * ^property[+].code = #naming-system
+      * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-BHR"
+    * #https://fhir.ee/sid/pid/bhr/ni "National identifier of Bahrain"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #NI
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #BHR
+    * #https://fhir.ee/sid/pid/bhr/cz "ID-card number of Bahrain"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #CZ
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #BHR
+  * #https://fhir.ee/sid/pid/bgd "Root identifier for person identification of country Bangladesh"
+    * ^property[0].code = #notSelectable
+    * ^property[=].valueBoolean = true
+    * ^property[+].code = #country
+    * ^property[=].valueCode = #BGD
+    * #https://fhir.ee/sid/pid/bgd/ppn "Passport number of Bangladesh"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #PPN
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #BGD
+      * ^property[+].code = #naming-system
+      * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-BGD"
+    * #https://fhir.ee/sid/pid/bgd/ni "National identifier of Bangladesh"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #NI
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #BGD
+  * #https://fhir.ee/sid/pid/brb "Root identifier for person identification of country Barbados"
+    * ^property[0].code = #notSelectable
+    * ^property[=].valueBoolean = true
+    * ^property[+].code = #country
+    * ^property[=].valueCode = #BRB
+    * #https://fhir.ee/sid/pid/brb/ppn "Passport number of Barbados"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #PPN
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #BRB
+      * ^property[+].code = #naming-system
+      * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-BRB"
+  * #https://fhir.ee/sid/pid/plw "Root identifier for person identification of country Palau"
+    * ^property[0].code = #notSelectable
+    * ^property[=].valueBoolean = true
+    * ^property[+].code = #country
+    * ^property[=].valueCode = #PLW
+    * #https://fhir.ee/sid/pid/plw/ppn "Passport number of Palau"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #PPN
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #PLW
+      * ^property[+].code = #naming-system
+      * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-PLW"
+  * #https://fhir.ee/sid/pid/bel "Root identifier for person identification of country Belgium"
+    * ^property[0].code = #notSelectable
+    * ^property[=].valueBoolean = true
+    * ^property[+].code = #country
+    * ^property[=].valueCode = #BEL
+    * #https://fhir.ee/sid/pid/bel/ppn "Passport number of Belgium"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #PPN
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #BEL
+      * ^property[+].code = #naming-system
+      * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-BEL"
+    * #https://fhir.ee/sid/pid/bel/ni "National identifier of Belgium"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #NI
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #BEL
+    * #https://fhir.ee/sid/pid/bel/cz "ID-card number of Belgium"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #CZ
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #BEL
+    * #https://fhir.ee/sid/pid/bel/dl "Driver's licence number of Belgium"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #DL
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #BEL
+  * #https://fhir.ee/sid/pid/blz "Root identifier for person identification of country Belize"
+    * ^property[0].code = #notSelectable
+    * ^property[=].valueBoolean = true
+    * ^property[+].code = #country
+    * ^property[=].valueCode = #BLZ
+    * #https://fhir.ee/sid/pid/blz/ppn "Passport number of Belize"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #PPN
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #BLZ
+      * ^property[+].code = #naming-system
+      * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-BLZ"
+  * #https://fhir.ee/sid/pid/ben "Root identifier for person identification of country Benin"
+    * ^property[0].code = #notSelectable
+    * ^property[=].valueBoolean = true
+    * ^property[+].code = #country
+    * ^property[=].valueCode = #BEN
+    * #https://fhir.ee/sid/pid/ben/ppn "Passport number of Benin"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #PPN
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #BEN
+      * ^property[+].code = #naming-system
+      * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-BEN"
+  * #https://fhir.ee/sid/pid/bmu "Root identifier for person identification of country Bermuda"
+    * ^property[0].code = #notSelectable
+    * ^property[=].valueBoolean = true
+    * ^property[+].code = #country
+    * ^property[=].valueCode = #BMU
+    * #https://fhir.ee/sid/pid/bmu/ppn "Passport number of Bermuda"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #PPN
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #BMU
+      * ^property[+].code = #naming-system
+      * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-BMU"
+  * #https://fhir.ee/sid/pid/btn "Root identifier for person identification of country Bhutan"
+    * ^property[0].code = #notSelectable
+    * ^property[=].valueBoolean = true
+    * ^property[+].code = #country
+    * ^property[=].valueCode = #BTN
+    * #https://fhir.ee/sid/pid/btn/ppn "Passport number of Bhutan"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #PPN
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #BTN
+      * ^property[+].code = #naming-system
+      * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-BTN"
+  * #https://fhir.ee/sid/pid/bol "Root identifier for person identification of country Bolivia"
+    * ^property[0].code = #notSelectable
+    * ^property[=].valueBoolean = true
+    * ^property[+].code = #country
+    * ^property[=].valueCode = #BOL
+    * #https://fhir.ee/sid/pid/bol/ppn "Passport number of Bolivia"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #PPN
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #BOL
+      * ^property[+].code = #naming-system
+      * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-BOL"
+  * #https://fhir.ee/sid/pid/bih "Root identifier for person identification of country Bosnia and Hertzegovina"
+    * ^property[0].code = #notSelectable
+    * ^property[=].valueBoolean = true
+    * ^property[+].code = #country
+    * ^property[=].valueCode = #BIH
+    * #https://fhir.ee/sid/pid/bih/ppn "Passport number of Bosnia and Hertzegovina"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #PPN
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #BIH
+      * ^property[+].code = #naming-system
+      * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-BIH"
+    * #https://fhir.ee/sid/pid/bih/ni "National identifier of Bosnia and Hertzegovina"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #NI
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #BIH
+    * #https://fhir.ee/sid/pid/bih/cz "ID-card number of Bosnia and Hertzegovina"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #CZ
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #BIH
+    * #https://fhir.ee/sid/pid/bih/dl "Driver's licence number of Bosnia and Hertzegovina"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #DL
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #BIH
+  * #https://fhir.ee/sid/pid/bwa "Root identifier for person identification of country Botswana"
+    * ^property[0].code = #notSelectable
+    * ^property[=].valueBoolean = true
+    * ^property[+].code = #country
+    * ^property[=].valueCode = #BWA
+    * #https://fhir.ee/sid/pid/bwa/ppn "Passport number of Botswana"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #PPN
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #BWA
+      * ^property[+].code = #naming-system
+      * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-BWA"
+  * #https://fhir.ee/sid/pid/bvt "Root identifier for person identification of country Bouvet Island"
+    * ^property[0].code = #notSelectable
+    * ^property[=].valueBoolean = true
+    * ^property[+].code = #country
+    * ^property[=].valueCode = #BVT
+    * #https://fhir.ee/sid/pid/bvt/ppn "Passport number of Bouvet Island"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #PPN
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #BVT
+      * ^property[+].code = #naming-system
+      * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-BVT"
+  * #https://fhir.ee/sid/pid/bra "Root identifier for person identification of country Brazil"
+    * ^property[0].code = #notSelectable
+    * ^property[=].valueBoolean = true
+    * ^property[+].code = #country
+    * ^property[=].valueCode = #BRA
+    * #https://fhir.ee/sid/pid/bra/ppn "Passport number of Brazil"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #PPN
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #BRA
+      * ^property[+].code = #naming-system
+      * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-BRA"
+    * #https://fhir.ee/sid/pid/bra/ni "National identifier of Brazil"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #NI
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #BRA
+  * #https://fhir.ee/sid/pid/iot "Root identifier for person identification of country British Indian Ocean Territory"
+    * ^property[0].code = #notSelectable
+    * ^property[=].valueBoolean = true
+    * ^property[+].code = #country
+    * ^property[=].valueCode = #IOT
+    * #https://fhir.ee/sid/pid/iot/ppn "Passport number of British Indian Ocean Territory"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #PPN
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #IOT
+      * ^property[+].code = #naming-system
+      * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-IOT"
+  * #https://fhir.ee/sid/pid/vgb "Root identifier for person identification of country Virgin Islands (British)"
+    * ^property[0].code = #notSelectable
+    * ^property[=].valueBoolean = true
+    * ^property[+].code = #country
+    * ^property[=].valueCode = #VGB
+    * #https://fhir.ee/sid/pid/vgb/ppn "Passport number of Virgin Islands (British)"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #PPN
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #VGB
+      * ^property[+].code = #naming-system
+      * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-VGB"
+  * #https://fhir.ee/sid/pid/brn "Root identifier for person identification of country Brunei Darussalam"
+    * ^property[0].code = #notSelectable
+    * ^property[=].valueBoolean = true
+    * ^property[+].code = #country
+    * ^property[=].valueCode = #BRN
+    * #https://fhir.ee/sid/pid/brn/ppn "Passport number of Brunei Darussalam"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #PPN
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #BRN
+      * ^property[+].code = #naming-system
+      * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-BRN"
+  * #https://fhir.ee/sid/pid/bgr "Root identifier for person identification of country Bulgaria"
+    * ^property[0].code = #notSelectable
+    * ^property[=].valueBoolean = true
+    * ^property[+].code = #country
+    * ^property[=].valueCode = #BGR
+    * #https://fhir.ee/sid/pid/bgr/ppn "Passport number of Bulgaria"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #PPN
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #BGR
+      * ^property[+].code = #naming-system
+      * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-BGR"
+    * #https://fhir.ee/sid/pid/bgr/ni "National identifier of Bulgaria"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #NI
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #BGR
+    * #https://fhir.ee/sid/pid/bgr/cz "ID-card number of Bulgaria"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #CZ
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #BGR
+    * #https://fhir.ee/sid/pid/bgr/dl "Driver's licence number of Bulgaria"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #DL
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #BGR
+  * #https://fhir.ee/sid/pid/bfa "Root identifier for person identification of country Burkina Faso"
+    * ^property[0].code = #notSelectable
+    * ^property[=].valueBoolean = true
+    * ^property[+].code = #country
+    * ^property[=].valueCode = #BFA
+    * #https://fhir.ee/sid/pid/bfa/ppn "Passport number of Burkina Faso"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #PPN
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #BFA
+      * ^property[+].code = #naming-system
+      * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-BFA"
+  * #https://fhir.ee/sid/pid/bdi "Root identifier for person identification of country Burundi"
+    * ^property[0].code = #notSelectable
+    * ^property[=].valueBoolean = true
+    * ^property[+].code = #country
+    * ^property[=].valueCode = #BDI
+    * #https://fhir.ee/sid/pid/bdi/ppn "Passport number of Burundi"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #PPN
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #BDI
+      * ^property[+].code = #naming-system
+      * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-BDI"
+  * #https://fhir.ee/sid/pid/cpv "Root identifier for person identification of country Cape Verde"
+    * ^property[0].code = #notSelectable
+    * ^property[=].valueBoolean = true
+    * ^property[+].code = #country
+    * ^property[=].valueCode = #CPV
+    * #https://fhir.ee/sid/pid/cpv/ppn "Passport number of Cape Verde"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #PPN
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #CPV
+      * ^property[+].code = #naming-system
+      * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-CPV"
+  * #https://fhir.ee/sid/pid/col "Root identifier for person identification of country Colombia"
+    * ^property[0].code = #notSelectable
+    * ^property[=].valueBoolean = true
+    * ^property[+].code = #country
+    * ^property[=].valueCode = #COL
+    * #https://fhir.ee/sid/pid/col/ppn "Passport number of Colombia"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #PPN
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #COL
+      * ^property[+].code = #naming-system
+      * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-COL"
+    * #https://fhir.ee/sid/pid/col/ni "National identifier of Colombia"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #NI
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #COL
+    * #https://fhir.ee/sid/pid/col/dl "Driver's licence number of Colombia"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #DL
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #COL
+  * #https://fhir.ee/sid/pid/cok "Root identifier for person identification of country Cook Islands"
+    * ^property[0].code = #notSelectable
+    * ^property[=].valueBoolean = true
+    * ^property[+].code = #country
+    * ^property[=].valueCode = #COK
+    * #https://fhir.ee/sid/pid/cok/ppn "Passport number of Cook Islands"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #PPN
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #COK
+      * ^property[+].code = #naming-system
+      * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-COK"
+  * #https://fhir.ee/sid/pid/cri "Root identifier for person identification of country Costa Rica"
+    * ^property[0].code = #notSelectable
+    * ^property[=].valueBoolean = true
+    * ^property[+].code = #country
+    * ^property[=].valueCode = #CRI
+    * #https://fhir.ee/sid/pid/cri/ppn "Passport number of Costa Rica"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #PPN
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #CRI
+      * ^property[+].code = #naming-system
+      * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-CRI"
+  * #https://fhir.ee/sid/pid/civ "Root identifier for person identification of country Cote d'Ivoire"
+    * ^property[0].code = #notSelectable
+    * ^property[=].valueBoolean = true
+    * ^property[+].code = #country
+    * ^property[=].valueCode = #CIV
+    * #https://fhir.ee/sid/pid/civ/ppn "Passport number of Cote d'Ivoire"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #PPN
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #CIV
+      * ^property[+].code = #naming-system
+      * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-CIV"
+  * #https://fhir.ee/sid/pid/dji "Root identifier for person identification of country Djibouti"
+    * ^property[0].code = #notSelectable
+    * ^property[=].valueBoolean = true
+    * ^property[+].code = #country
+    * ^property[=].valueCode = #DJI
+    * #https://fhir.ee/sid/pid/dji/ppn "Passport number of Djibouti"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #PPN
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #DJI
+      * ^property[+].code = #naming-system
+      * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-DJI"
+  * #https://fhir.ee/sid/pid/dma "Root identifier for person identification of country Dominica"
+    * ^property[0].code = #notSelectable
+    * ^property[=].valueBoolean = true
+    * ^property[+].code = #country
+    * ^property[=].valueCode = #DMA
+    * #https://fhir.ee/sid/pid/dma/ppn "Passport number of Dominica"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #PPN
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #DMA
+      * ^property[+].code = #naming-system
+      * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-DMA"
+  * #https://fhir.ee/sid/pid/dom "Root identifier for person identification of country Dominican Republic"
+    * ^property[0].code = #notSelectable
+    * ^property[=].valueBoolean = true
+    * ^property[+].code = #country
+    * ^property[=].valueCode = #DOM
+    * #https://fhir.ee/sid/pid/dom/ppn "Passport number of Dominican Republic"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #PPN
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #DOM
+      * ^property[+].code = #naming-system
+      * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-DOM"
+  * #https://fhir.ee/sid/pid/ecu "Root identifier for person identification of country Ecuador"
+    * ^property[0].code = #notSelectable
+    * ^property[=].valueBoolean = true
+    * ^property[+].code = #country
+    * ^property[=].valueCode = #ECU
+    * #https://fhir.ee/sid/pid/ecu/ppn "Passport number of Ecuador"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #PPN
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #ECU
+      * ^property[+].code = #naming-system
+      * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-ECU"
+  * #https://fhir.ee/sid/pid/egy "Root identifier for person identification of country Egypt"
+    * ^property[0].code = #notSelectable
+    * ^property[=].valueBoolean = true
+    * ^property[+].code = #country
+    * ^property[=].valueCode = #EGY
+    * #https://fhir.ee/sid/pid/egy/ppn "Passport number of Egypt"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #PPN
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #EGY
+      * ^property[+].code = #naming-system
+      * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-EGY"
+  * #https://fhir.ee/sid/pid/gnq "Root identifier for person identification of country Equatorial Guinea"
+    * ^property[0].code = #notSelectable
+    * ^property[=].valueBoolean = true
+    * ^property[+].code = #country
+    * ^property[=].valueCode = #GNQ
+    * #https://fhir.ee/sid/pid/gnq/ppn "Passport number of Equatorial Guinea"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #PPN
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #GNQ
+      * ^property[+].code = #naming-system
+      * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-GNQ"
+  * #https://fhir.ee/sid/pid/slv "Root identifier for person identification of country El Salvador"
+    * ^property[0].code = #notSelectable
+    * ^property[=].valueBoolean = true
+    * ^property[+].code = #country
+    * ^property[=].valueCode = #SLV
+    * #https://fhir.ee/sid/pid/slv/ppn "Passport number of El Salvador"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #PPN
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #SLV
+      * ^property[+].code = #naming-system
+      * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-SLV"
+  * #https://fhir.ee/sid/pid/eri "Root identifier for person identification of country Eritrea"
+    * ^property[0].code = #notSelectable
+    * ^property[=].valueBoolean = true
+    * ^property[+].code = #country
+    * ^property[=].valueCode = #ERI
+    * #https://fhir.ee/sid/pid/eri/ppn "Passport number of Eritrea"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #PPN
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #ERI
+      * ^property[+].code = #naming-system
+      * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-ERI"
+  * #https://fhir.ee/sid/pid/eth "Root identifier for person identification of country Ethiopia"
+    * ^property[0].code = #notSelectable
+    * ^property[=].valueBoolean = true
+    * ^property[+].code = #country
+    * ^property[=].valueCode = #ETH
+    * #https://fhir.ee/sid/pid/eth/ppn "Passport number of Ethiopia"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #PPN
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #ETH
+      * ^property[+].code = #naming-system
+      * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-ETH"
+  * #https://fhir.ee/sid/pid/flk "Root identifier for person identification of country Falkland Islands (Malvinas)"
+    * ^property[0].code = #notSelectable
+    * ^property[=].valueBoolean = true
+    * ^property[+].code = #country
+    * ^property[=].valueCode = #FLK
+    * #https://fhir.ee/sid/pid/flk/ppn "Passport number of Falkland Islands (Malvinas)"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #PPN
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #FLK
+      * ^property[+].code = #naming-system
+      * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-FLK"
+  * #https://fhir.ee/sid/pid/fji "Root identifier for person identification of country Fiji"
+    * ^property[0].code = #notSelectable
+    * ^property[=].valueBoolean = true
+    * ^property[+].code = #country
+    * ^property[=].valueCode = #FJI
+    * #https://fhir.ee/sid/pid/fji/ppn "Passport number of Fiji"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #PPN
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #FJI
+      * ^property[+].code = #naming-system
+      * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-FJI"
+  * #https://fhir.ee/sid/pid/phl "Root identifier for person identification of country Philippines"
+    * ^property[0].code = #notSelectable
+    * ^property[=].valueBoolean = true
+    * ^property[+].code = #country
+    * ^property[=].valueCode = #PHL
+    * #https://fhir.ee/sid/pid/phl/ppn "Passport number of Philippines"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #PPN
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #PHL
+      * ^property[+].code = #naming-system
+      * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-PHL"
+  * #https://fhir.ee/sid/pid/fro "Root identifier for person identification of country Faroe Islands"
+    * ^property[0].code = #notSelectable
+    * ^property[=].valueBoolean = true
+    * ^property[+].code = #country
+    * ^property[=].valueCode = #FRO
+    * #https://fhir.ee/sid/pid/fro/ppn "Passport number of Faroe Islands"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #PPN
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #FRO
+      * ^property[+].code = #naming-system
+      * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-FRO"
+  * #https://fhir.ee/sid/pid/gab "Root identifier for person identification of country Gabon"
+    * ^property[0].code = #notSelectable
+    * ^property[=].valueBoolean = true
+    * ^property[+].code = #country
+    * ^property[=].valueCode = #GAB
+    * #https://fhir.ee/sid/pid/gab/ppn "Passport number of Gabon"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #PPN
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #GAB
+      * ^property[+].code = #naming-system
+      * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-GAB"
+  * #https://fhir.ee/sid/pid/gmb "Root identifier for person identification of country Gambia"
+    * ^property[0].code = #notSelectable
+    * ^property[=].valueBoolean = true
+    * ^property[+].code = #country
+    * ^property[=].valueCode = #GMB
+    * #https://fhir.ee/sid/pid/gmb/ppn "Passport number of Gambia"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #PPN
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #GMB
+      * ^property[+].code = #naming-system
+      * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-GMB"
+  * #https://fhir.ee/sid/pid/gha "Root identifier for person identification of country Ghana"
+    * ^property[0].code = #notSelectable
+    * ^property[=].valueBoolean = true
+    * ^property[+].code = #country
+    * ^property[=].valueCode = #GHA
+    * #https://fhir.ee/sid/pid/gha/ppn "Passport number of Ghana"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #PPN
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #GHA
+      * ^property[+].code = #naming-system
+      * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-GHA"
+  * #https://fhir.ee/sid/pid/gib "Root identifier for person identification of country Gibraltar"
+    * ^property[0].code = #notSelectable
+    * ^property[=].valueBoolean = true
+    * ^property[+].code = #country
+    * ^property[=].valueCode = #GIB
+    * #https://fhir.ee/sid/pid/gib/ppn "Passport number of Gibraltar"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #PPN
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #GIB
+      * ^property[+].code = #naming-system
+      * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-GIB"
+  * #https://fhir.ee/sid/pid/grd "Root identifier for person identification of country Grenada"
+    * ^property[0].code = #notSelectable
+    * ^property[=].valueBoolean = true
+    * ^property[+].code = #country
+    * ^property[=].valueCode = #GRD
+    * #https://fhir.ee/sid/pid/grd/ppn "Passport number of Grenada"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #PPN
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #GRD
+      * ^property[+].code = #naming-system
+      * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-GRD"
+  * #https://fhir.ee/sid/pid/geo "Root identifier for person identification of country Georgia"
+    * ^property[0].code = #notSelectable
+    * ^property[=].valueBoolean = true
+    * ^property[+].code = #country
+    * ^property[=].valueCode = #GEO
+    * #https://fhir.ee/sid/pid/geo/ppn "Passport number of Georgia"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #PPN
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #GEO
+      * ^property[+].code = #naming-system
+      * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-GEO"
+    * #https://fhir.ee/sid/pid/geo/ni "National identifier of Georgia"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #NI
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #GEO
+    * #https://fhir.ee/sid/pid/geo/cz "ID-card number of Georgia"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #CZ
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #GEO
+    * #https://fhir.ee/sid/pid/geo/dl "Driver's licence number of Georgia"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #DL
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #GEO
+  * #https://fhir.ee/sid/pid/grl "Root identifier for person identification of country Greenland"
+    * ^property[0].code = #notSelectable
+    * ^property[=].valueBoolean = true
+    * ^property[+].code = #country
+    * ^property[=].valueCode = #GRL
+    * #https://fhir.ee/sid/pid/grl/ppn "Passport number of Greenland"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #PPN
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #GRL
+      * ^property[+].code = #naming-system
+      * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-GRL"
+  * #https://fhir.ee/sid/pid/glp "Root identifier for person identification of country Guadeloupe"
+    * ^property[0].code = #notSelectable
+    * ^property[=].valueBoolean = true
+    * ^property[+].code = #country
+    * ^property[=].valueCode = #GLP
+    * #https://fhir.ee/sid/pid/glp/ppn "Passport number of Guadeloupe"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #PPN
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #GLP
+      * ^property[+].code = #naming-system
+      * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-GLP"
+  * #https://fhir.ee/sid/pid/guf "Root identifier for person identification of country French Guiana"
+    * ^property[0].code = #notSelectable
+    * ^property[=].valueBoolean = true
+    * ^property[+].code = #country
+    * ^property[=].valueCode = #GUF
+    * #https://fhir.ee/sid/pid/guf/ppn "Passport number of French Guiana"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #PPN
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #GUF
+      * ^property[+].code = #naming-system
+      * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-GUF"
+  * #https://fhir.ee/sid/pid/gum "Root identifier for person identification of country Guam"
+    * ^property[0].code = #notSelectable
+    * ^property[=].valueBoolean = true
+    * ^property[+].code = #country
+    * ^property[=].valueCode = #GUM
+    * #https://fhir.ee/sid/pid/gum/ppn "Passport number of Guam"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #PPN
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #GUM
+      * ^property[+].code = #naming-system
+      * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-GUM"
+  * #https://fhir.ee/sid/pid/gtm "Root identifier for person identification of country Guatemala"
+    * ^property[0].code = #notSelectable
+    * ^property[=].valueBoolean = true
+    * ^property[+].code = #country
+    * ^property[=].valueCode = #GTM
+    * #https://fhir.ee/sid/pid/gtm/ppn "Passport number of Guatemala"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #PPN
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #GTM
+      * ^property[+].code = #naming-system
+      * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-GTM"
+  * #https://fhir.ee/sid/pid/ggy "Root identifier for person identification of country Guernsey"
+    * ^property[0].code = #notSelectable
+    * ^property[=].valueBoolean = true
+    * ^property[+].code = #country
+    * ^property[=].valueCode = #GGY
+    * #https://fhir.ee/sid/pid/ggy/ppn "Passport number of Guernsey"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #PPN
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #GGY
+      * ^property[+].code = #naming-system
+      * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-GGY"
+  * #https://fhir.ee/sid/pid/gin "Root identifier for person identification of country Guinea"
+    * ^property[0].code = #notSelectable
+    * ^property[=].valueBoolean = true
+    * ^property[+].code = #country
+    * ^property[=].valueCode = #GIN
+    * #https://fhir.ee/sid/pid/gin/ppn "Passport number of Guinea"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #PPN
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #GIN
+      * ^property[+].code = #naming-system
+      * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-GIN"
+  * #https://fhir.ee/sid/pid/gnb "Root identifier for person identification of country Guinea-Bissau"
+    * ^property[0].code = #notSelectable
+    * ^property[=].valueBoolean = true
+    * ^property[+].code = #country
+    * ^property[=].valueCode = #GNB
+    * #https://fhir.ee/sid/pid/gnb/ppn "Passport number of Guinea-Bissau"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #PPN
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #GNB
+      * ^property[+].code = #naming-system
+      * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-GNB"
+  * #https://fhir.ee/sid/pid/guy "Root identifier for person identification of country Guyana"
+    * ^property[0].code = #notSelectable
+    * ^property[=].valueBoolean = true
+    * ^property[+].code = #country
+    * ^property[=].valueCode = #GUY
+    * #https://fhir.ee/sid/pid/guy/ppn "Passport number of Guyana"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #PPN
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #GUY
+      * ^property[+].code = #naming-system
+      * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-GUY"
+  * #https://fhir.ee/sid/pid/hti "Root identifier for person identification of country Haiti"
+    * ^property[0].code = #notSelectable
+    * ^property[=].valueBoolean = true
+    * ^property[+].code = #country
+    * ^property[=].valueCode = #HTI
+    * #https://fhir.ee/sid/pid/hti/ppn "Passport number of Haiti"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #PPN
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #HTI
+      * ^property[+].code = #naming-system
+      * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-HTI"
+  * #https://fhir.ee/sid/pid/hmd "Root identifier for person identification of country Heard and McDonald Islands"
+    * ^property[0].code = #notSelectable
+    * ^property[=].valueBoolean = true
+    * ^property[+].code = #country
+    * ^property[=].valueCode = #HMD
+    * #https://fhir.ee/sid/pid/hmd/ppn "Passport number of Heard and McDonald Islands"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #PPN
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #HMD
+      * ^property[+].code = #naming-system
+      * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-HMD"
+  * #https://fhir.ee/sid/pid/mac "Root identifier for person identification of country Macao"
+    * ^property[0].code = #notSelectable
+    * ^property[=].valueBoolean = true
+    * ^property[+].code = #country
+    * ^property[=].valueCode = #MAC
+    * #https://fhir.ee/sid/pid/mac/ppn "Passport number of Macao"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #PPN
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #MAC
+      * ^property[+].code = #naming-system
+      * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-MAC"
+    * #https://fhir.ee/sid/pid/mac/ni "National identifier of Macao"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #NI
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #MAC
+  * #https://fhir.ee/sid/pid/hkg "Root identifier for person identification of country Hong Kong"
+    * ^property[0].code = #notSelectable
+    * ^property[=].valueBoolean = true
+    * ^property[+].code = #country
+    * ^property[=].valueCode = #HKG
+    * #https://fhir.ee/sid/pid/hkg/ppn "Passport number of Hong Kong"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #PPN
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #HKG
+      * ^property[+].code = #naming-system
+      * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-HKG"
+    * #https://fhir.ee/sid/pid/hkg/ni "National identifier of Hong Kong"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #NI
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #HKG
+  * #https://fhir.ee/sid/pid/chn "Root identifier for person identification of country China"
+    * ^property[0].code = #notSelectable
+    * ^property[=].valueBoolean = true
+    * ^property[+].code = #country
+    * ^property[=].valueCode = #CHN
+    * #https://fhir.ee/sid/pid/chn/ppn "Passport number of China"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #PPN
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #CHN
+      * ^property[+].code = #naming-system
+      * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-CHN"
+    * #https://fhir.ee/sid/pid/chn/ni "National identifier of China"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #NI
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #CHN
+  * #https://fhir.ee/sid/pid/esp "Root identifier for person identification of country Spain"
+    * ^property[0].code = #notSelectable
+    * ^property[=].valueBoolean = true
+    * ^property[+].code = #country
+    * ^property[=].valueCode = #ESP
+    * #https://fhir.ee/sid/pid/esp/ppn "Passport number of Spain"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #PPN
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #ESP
+      * ^property[+].code = #naming-system
+      * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-ESP"
+    * #https://fhir.ee/sid/pid/esp/ni "National identifier of Spain"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #NI
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #ESP
+    * #https://fhir.ee/sid/pid/esp/cz "ID-card number of Spain"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #CZ
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #ESP
+    * #https://fhir.ee/sid/pid/esp/dl "Driver's licence number of Spain"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #DL
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #ESP
+  * #https://fhir.ee/sid/pid/ant "Root identifier for person identification of country Netherlands Antilles"
+    * ^property[0].code = #notSelectable
+    * ^property[=].valueBoolean = true
+    * ^property[+].code = #country
+    * ^property[=].valueCode = #ANT
+    * #https://fhir.ee/sid/pid/ant/ppn "Passport number of Netherlands Antilles"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #PPN
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #ANT
+      * ^property[+].code = #naming-system
+      * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-ANT"
+  * #https://fhir.ee/sid/pid/hnd "Root identifier for person identification of country Honduras"
+    * ^property[0].code = #notSelectable
+    * ^property[=].valueBoolean = true
+    * ^property[+].code = #country
+    * ^property[=].valueCode = #HND
+    * #https://fhir.ee/sid/pid/hnd/ppn "Passport number of Honduras"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #PPN
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #HND
+      * ^property[+].code = #naming-system
+      * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-HND"
+  * #https://fhir.ee/sid/pid/hrv "Root identifier for person identification of country Croatia"
+    * ^property[0].code = #notSelectable
+    * ^property[=].valueBoolean = true
+    * ^property[+].code = #country
+    * ^property[=].valueCode = #HRV
+    * #https://fhir.ee/sid/pid/hrv/ppn "Passport number of Croatia"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #PPN
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #HRV
+      * ^property[+].code = #naming-system
+      * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-HRV"
+    * #https://fhir.ee/sid/pid/hrv/ni "National identifier of Croatia"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #NI
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #HRV
+    * #https://fhir.ee/sid/pid/hrv/cz "ID-card number of Croatia"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #CZ
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #HRV
+    * #https://fhir.ee/sid/pid/hrv/dl "Driver's licence number of Croatia"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #DL
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #HRV
+  * #https://fhir.ee/sid/pid/irl "Root identifier for person identification of country Ireland"
+    * ^property[0].code = #notSelectable
+    * ^property[=].valueBoolean = true
+    * ^property[+].code = #country
+    * ^property[=].valueCode = #IRL
+    * #https://fhir.ee/sid/pid/irl/ppn "Passport number of Ireland"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #PPN
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #IRL
+      * ^property[+].code = #naming-system
+      * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-IRL"
+  * #https://fhir.ee/sid/pid/isr "Root identifier for person identification of country Israel"
+    * ^property[0].code = #notSelectable
+    * ^property[=].valueBoolean = true
+    * ^property[+].code = #country
+    * ^property[=].valueCode = #ISR
+    * #https://fhir.ee/sid/pid/isr/ppn "Passport number of Israel"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #PPN
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #ISR
+      * ^property[+].code = #naming-system
+      * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-ISR"
+    * #https://fhir.ee/sid/pid/isr/ni "National identifier of Israel"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #NI
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #ISR
+  * #https://fhir.ee/sid/pid/ind "Root identifier for person identification of country India"
+    * ^property[0].code = #notSelectable
+    * ^property[=].valueBoolean = true
+    * ^property[+].code = #country
+    * ^property[=].valueCode = #IND
+    * #https://fhir.ee/sid/pid/ind/ppn "Passport number of India"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #PPN
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #IND
+      * ^property[+].code = #naming-system
+      * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-IND"
+  * #https://fhir.ee/sid/pid/idn "Root identifier for person identification of country Indonesia"
+    * ^property[0].code = #notSelectable
+    * ^property[=].valueBoolean = true
+    * ^property[+].code = #country
+    * ^property[=].valueCode = #IDN
+    * #https://fhir.ee/sid/pid/idn/ppn "Passport number of Indonesia"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #PPN
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #IDN
+      * ^property[+].code = #naming-system
+      * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-IDN"
+    * #https://fhir.ee/sid/pid/idn/ni "National identifier of Indonesia"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #NI
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #IDN
+  * #https://fhir.ee/sid/pid/irq "Root identifier for person identification of country Iraq"
+    * ^property[0].code = #notSelectable
+    * ^property[=].valueBoolean = true
+    * ^property[+].code = #country
+    * ^property[=].valueCode = #IRQ
+    * #https://fhir.ee/sid/pid/irq/ppn "Passport number of Iraq"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #PPN
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #IRQ
+      * ^property[+].code = #naming-system
+      * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-IRQ"
+  * #https://fhir.ee/sid/pid/irn "Root identifier for person identification of country Iran"
+    * ^property[0].code = #notSelectable
+    * ^property[=].valueBoolean = true
+    * ^property[+].code = #country
+    * ^property[=].valueCode = #IRN
+    * #https://fhir.ee/sid/pid/irn/ppn "Passport number of Iran"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #PPN
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #IRN
+      * ^property[+].code = #naming-system
+      * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-IRN"
+  * #https://fhir.ee/sid/pid/isl "Root identifier for person identification of country Iceland"
+    * ^property[0].code = #notSelectable
+    * ^property[=].valueBoolean = true
+    * ^property[+].code = #country
+    * ^property[=].valueCode = #ISL
+    * #https://fhir.ee/sid/pid/isl/ppn "Passport number of Iceland"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #PPN
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #ISL
+      * ^property[+].code = #naming-system
+      * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-ISL"
+    * #https://fhir.ee/sid/pid/isl/ni "National identifier of Iceland"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #NI
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #ISL
+    * #https://fhir.ee/sid/pid/isl/dl "Driver's licence number of Iceland"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #DL
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #ISL
+  * #https://fhir.ee/sid/pid/ita "Root identifier for person identification of country Italy"
+    * ^property[0].code = #notSelectable
+    * ^property[=].valueBoolean = true
+    * ^property[+].code = #country
+    * ^property[=].valueCode = #ITA
+    * #https://fhir.ee/sid/pid/ita/ppn "Passport number of Italy"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #PPN
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #ITA
+      * ^property[+].code = #naming-system
+      * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-ITA"
+    * #https://fhir.ee/sid/pid/ita/ni "National identifier of Italy"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #NI
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #ITA
+    * #https://fhir.ee/sid/pid/ita/cz "ID-card number of Italy"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #CZ
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #ITA
+    * #https://fhir.ee/sid/pid/ita/dl "Driver's licence number of Italy"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #DL
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #ITA
+  * #https://fhir.ee/sid/pid/jpn "Root identifier for person identification of country Japan"
+    * ^property[0].code = #notSelectable
+    * ^property[=].valueBoolean = true
+    * ^property[+].code = #country
+    * ^property[=].valueCode = #JPN
+    * #https://fhir.ee/sid/pid/jpn/ppn "Passport number of Japan"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #PPN
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #JPN
+      * ^property[+].code = #naming-system
+      * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-JPN"
+  * #https://fhir.ee/sid/pid/jam "Root identifier for person identification of country Jamaica"
+    * ^property[0].code = #notSelectable
+    * ^property[=].valueBoolean = true
+    * ^property[+].code = #country
+    * ^property[=].valueCode = #JAM
+    * #https://fhir.ee/sid/pid/jam/ppn "Passport number of Jamaica"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #PPN
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #JAM
+      * ^property[+].code = #naming-system
+      * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-JAM"
+  * #https://fhir.ee/sid/pid/yem "Root identifier for person identification of country Yemen"
+    * ^property[0].code = #notSelectable
+    * ^property[=].valueBoolean = true
+    * ^property[+].code = #country
+    * ^property[=].valueCode = #YEM
+    * #https://fhir.ee/sid/pid/yem/ppn "Passport number of Yemen"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #PPN
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #YEM
+      * ^property[+].code = #naming-system
+      * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-YEM"
+  * #https://fhir.ee/sid/pid/jey "Root identifier for person identification of country Jersey"
+    * ^property[0].code = #notSelectable
+    * ^property[=].valueBoolean = true
+    * ^property[+].code = #country
+    * ^property[=].valueCode = #JEY
+    * #https://fhir.ee/sid/pid/jey/ppn "Passport number of Jersey"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #PPN
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #JEY
+      * ^property[+].code = #naming-system
+      * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-JEY"
+  * #https://fhir.ee/sid/pid/jor "Root identifier for person identification of country Jordan"
+    * ^property[0].code = #notSelectable
+    * ^property[=].valueBoolean = true
+    * ^property[+].code = #country
+    * ^property[=].valueCode = #JOR
+    * #https://fhir.ee/sid/pid/jor/ppn "Passport number of Jordan"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #PPN
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #JOR
+      * ^property[+].code = #naming-system
+      * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-JOR"
+  * #https://fhir.ee/sid/pid/cxr "Root identifier for person identification of country Christmas Island"
+    * ^property[0].code = #notSelectable
+    * ^property[=].valueBoolean = true
+    * ^property[+].code = #country
+    * ^property[=].valueCode = #CXR
+    * #https://fhir.ee/sid/pid/cxr/ppn "Passport number of Christmas Island"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #PPN
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #CXR
+      * ^property[+].code = #naming-system
+      * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-CXR"
+  * #https://fhir.ee/sid/pid/cym "Root identifier for person identification of country Cayman Islands"
+    * ^property[0].code = #notSelectable
+    * ^property[=].valueBoolean = true
+    * ^property[+].code = #country
+    * ^property[=].valueCode = #CYM
+    * #https://fhir.ee/sid/pid/cym/ppn "Passport number of Cayman Islands"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #PPN
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #CYM
+      * ^property[+].code = #naming-system
+      * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-CYM"
+  * #https://fhir.ee/sid/pid/khm "Root identifier for person identification of country Cambodia"
+    * ^property[0].code = #notSelectable
+    * ^property[=].valueBoolean = true
+    * ^property[+].code = #country
+    * ^property[=].valueCode = #KHM
+    * #https://fhir.ee/sid/pid/khm/ppn "Passport number of Cambodia"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #PPN
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #KHM
+      * ^property[+].code = #naming-system
+      * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-KHM"
+  * #https://fhir.ee/sid/pid/cmr "Root identifier for person identification of country Cameroon"
+    * ^property[0].code = #notSelectable
+    * ^property[=].valueBoolean = true
+    * ^property[+].code = #country
+    * ^property[=].valueCode = #CMR
+    * #https://fhir.ee/sid/pid/cmr/ppn "Passport number of Cameroon"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #PPN
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #CMR
+      * ^property[+].code = #naming-system
+      * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-CMR"
+  * #https://fhir.ee/sid/pid/can "Root identifier for person identification of country Canada"
+    * ^property[0].code = #notSelectable
+    * ^property[=].valueBoolean = true
+    * ^property[+].code = #country
+    * ^property[=].valueCode = #CAN
+    * #https://fhir.ee/sid/pid/can/ppn "Passport number of Canada"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #PPN
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #CAN
+      * ^property[+].code = #naming-system
+      * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-CAN"
+  * #https://fhir.ee/sid/pid/kaz "Root identifier for person identification of country Kazakhstan"
+    * ^property[0].code = #notSelectable
+    * ^property[=].valueBoolean = true
+    * ^property[+].code = #country
+    * ^property[=].valueCode = #KAZ
+    * #https://fhir.ee/sid/pid/kaz/ppn "Passport number of Kazakhstan"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #PPN
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #KAZ
+      * ^property[+].code = #naming-system
+      * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-KAZ"
+    * #https://fhir.ee/sid/pid/kaz/ni "National identifier of Kazakhstan"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #NI
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #KAZ
+    * #https://fhir.ee/sid/pid/kaz/cz "ID-card number of Kazakhstan"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #CZ
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #KAZ
+    * #https://fhir.ee/sid/pid/kaz/dl "Driver's licence number of Kazakhstan"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #DL
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #KAZ
+  * #https://fhir.ee/sid/pid/qat "Root identifier for person identification of country Qatar"
+    * ^property[0].code = #notSelectable
+    * ^property[=].valueBoolean = true
+    * ^property[+].code = #country
+    * ^property[=].valueCode = #QAT
+    * #https://fhir.ee/sid/pid/qat/ppn "Passport number of Qatar"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #PPN
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #QAT
+      * ^property[+].code = #naming-system
+      * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-QAT"
+  * #https://fhir.ee/sid/pid/ken "Root identifier for person identification of country Kenya"
+    * ^property[0].code = #notSelectable
+    * ^property[=].valueBoolean = true
+    * ^property[+].code = #country
+    * ^property[=].valueCode = #KEN
+    * #https://fhir.ee/sid/pid/ken/ppn "Passport number of Kenya"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #PPN
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #KEN
+      * ^property[+].code = #naming-system
+      * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-KEN"
+  * #https://fhir.ee/sid/pid/caf "Root identifier for person identification of country Central African Republik"
+    * ^property[0].code = #notSelectable
+    * ^property[=].valueBoolean = true
+    * ^property[+].code = #country
+    * ^property[=].valueCode = #CAF
+    * #https://fhir.ee/sid/pid/caf/ppn "Passport number of Central African Republik"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #PPN
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #CAF
+      * ^property[+].code = #naming-system
+      * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-CAF"
+  * #https://fhir.ee/sid/pid/kgz "Root identifier for person identification of country Kyrgyzstan"
+    * ^property[0].code = #notSelectable
+    * ^property[=].valueBoolean = true
+    * ^property[+].code = #country
+    * ^property[=].valueCode = #KGZ
+    * #https://fhir.ee/sid/pid/kgz/ppn "Passport number of Kyrgyzstan"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #PPN
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #KGZ
+      * ^property[+].code = #naming-system
+      * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-KGZ"
+  * #https://fhir.ee/sid/pid/kir "Root identifier for person identification of country Kiribati"
+    * ^property[0].code = #notSelectable
+    * ^property[=].valueBoolean = true
+    * ^property[+].code = #country
+    * ^property[=].valueCode = #KIR
+    * #https://fhir.ee/sid/pid/kir/ppn "Passport number of Kiribati"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #PPN
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #KIR
+      * ^property[+].code = #naming-system
+      * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-KIR"
+  * #https://fhir.ee/sid/pid/com "Root identifier for person identification of country Comoros"
+    * ^property[0].code = #notSelectable
+    * ^property[=].valueBoolean = true
+    * ^property[+].code = #country
+    * ^property[=].valueCode = #COM
+    * #https://fhir.ee/sid/pid/com/ppn "Passport number of Comoros"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #PPN
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #COM
+      * ^property[+].code = #naming-system
+      * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-COM"
+  * #https://fhir.ee/sid/pid/cod "Root identifier for person identification of country Congo, the Democratic Republik of the"
+    * ^property[0].code = #notSelectable
+    * ^property[=].valueBoolean = true
+    * ^property[+].code = #country
+    * ^property[=].valueCode = #COD
+    * #https://fhir.ee/sid/pid/cod/ppn "Passport number of Congo, the Democratic Republik of the"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #PPN
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #COD
+      * ^property[+].code = #naming-system
+      * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-COD"
+  * #https://fhir.ee/sid/pid/cog "Root identifier for person identification of country Congo"
+    * ^property[0].code = #notSelectable
+    * ^property[=].valueBoolean = true
+    * ^property[+].code = #country
+    * ^property[=].valueCode = #COG
+    * #https://fhir.ee/sid/pid/cog/ppn "Passport number of Congo"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #PPN
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #COG
+      * ^property[+].code = #naming-system
+      * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-COG"
+  * #https://fhir.ee/sid/pid/cck "Root identifier for person identification of country Cocos (Keeling) Islands"
+    * ^property[0].code = #notSelectable
+    * ^property[=].valueBoolean = true
+    * ^property[+].code = #country
+    * ^property[=].valueCode = #CCK
+    * #https://fhir.ee/sid/pid/cck/ppn "Passport number of Cocos (Keeling) Islands"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #PPN
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #CCK
+      * ^property[+].code = #naming-system
+      * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-CCK"
+  * #https://fhir.ee/sid/pid/prk "Root identifier for person identification of country Korea, Democratic People's Republic of"
+    * ^property[0].code = #notSelectable
+    * ^property[=].valueBoolean = true
+    * ^property[+].code = #country
+    * ^property[=].valueCode = #PRK
+    * #https://fhir.ee/sid/pid/prk/ppn "Passport number of Korea, Democratic People's Republic of"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #PPN
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #PRK
+      * ^property[+].code = #naming-system
+      * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-PRK"
+  * #https://fhir.ee/sid/pid/kor "Root identifier for person identification of country Korea, Republic of"
+    * ^property[0].code = #notSelectable
+    * ^property[=].valueBoolean = true
+    * ^property[+].code = #country
+    * ^property[=].valueCode = #KOR
+    * #https://fhir.ee/sid/pid/kor/ppn "Passport number of Korea, Republic of"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #PPN
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #KOR
+      * ^property[+].code = #naming-system
+      * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-KOR"
+  * #https://fhir.ee/sid/pid/grc "Root identifier for person identification of country Greece"
+    * ^property[0].code = #notSelectable
+    * ^property[=].valueBoolean = true
+    * ^property[+].code = #country
+    * ^property[=].valueCode = #GRC
+    * #https://fhir.ee/sid/pid/grc/ppn "Passport number of Greece"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #PPN
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #GRC
+      * ^property[+].code = #naming-system
+      * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-GRC"
+  * #https://fhir.ee/sid/pid/cub "Root identifier for person identification of country Cuba"
+    * ^property[0].code = #notSelectable
+    * ^property[=].valueBoolean = true
+    * ^property[+].code = #country
+    * ^property[=].valueCode = #CUB
+    * #https://fhir.ee/sid/pid/cub/ppn "Passport number of Cuba"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #PPN
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #CUB
+      * ^property[+].code = #naming-system
+      * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-CUB"
+  * #https://fhir.ee/sid/pid/kwt "Root identifier for person identification of country Kuwait"
+    * ^property[0].code = #notSelectable
+    * ^property[=].valueBoolean = true
+    * ^property[+].code = #country
+    * ^property[=].valueCode = #KWT
+    * #https://fhir.ee/sid/pid/kwt/ppn "Passport number of Kuwait"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #PPN
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #KWT
+      * ^property[+].code = #naming-system
+      * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-KWT"
+    * #https://fhir.ee/sid/pid/kwt/ni "National identifier of Kuwait"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #NI
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #KWT
+  * #https://fhir.ee/sid/pid/cyp "Root identifier for person identification of country Cyprus"
+    * ^property[0].code = #notSelectable
+    * ^property[=].valueBoolean = true
+    * ^property[+].code = #country
+    * ^property[=].valueCode = #CYP
+    * #https://fhir.ee/sid/pid/cyp/ppn "Passport number of Cyprus"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #PPN
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #CYP
+      * ^property[+].code = #naming-system
+      * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-CYP"
+  * #https://fhir.ee/sid/pid/lao "Root identifier for person identification of country Lao People's Democratic Republic"
+    * ^property[0].code = #notSelectable
+    * ^property[=].valueBoolean = true
+    * ^property[+].code = #country
+    * ^property[=].valueCode = #LAO
+    * #https://fhir.ee/sid/pid/lao/ppn "Passport number of Lao People's Democratic Republic"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #PPN
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #LAO
+      * ^property[+].code = #naming-system
+      * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-LAO"
+  * #https://fhir.ee/sid/pid/ltu "Root identifier for person identification of country Lithuania"
+    * ^property[0].code = #notSelectable
+    * ^property[=].valueBoolean = true
+    * ^property[+].code = #country
+    * ^property[=].valueCode = #LTU
+    * #https://fhir.ee/sid/pid/ltu/ppn "Passport number of Lithuania"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #PPN
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #LTU
+      * ^property[+].code = #naming-system
+      * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-LTU"
+    * #https://fhir.ee/sid/pid/ltu/ni "National identifier of Lithuania"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #NI
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #LTU
+    * #https://fhir.ee/sid/pid/ltu/cz "ID-card number of Lithuania"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #CZ
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #LTU
+    * #https://fhir.ee/sid/pid/ltu/dl "Driver's licence number of Lithuania"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #DL
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #LTU
+  * #https://fhir.ee/sid/pid/lso "Root identifier for person identification of country Lesotho"
+    * ^property[0].code = #notSelectable
+    * ^property[=].valueBoolean = true
+    * ^property[+].code = #country
+    * ^property[=].valueCode = #LSO
+    * #https://fhir.ee/sid/pid/lso/ppn "Passport number of Lesotho"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #PPN
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #LSO
+      * ^property[+].code = #naming-system
+      * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-LSO"
+  * #https://fhir.ee/sid/pid/lbr "Root identifier for person identification of country Liberia"
+    * ^property[0].code = #notSelectable
+    * ^property[=].valueBoolean = true
+    * ^property[+].code = #country
+    * ^property[=].valueCode = #LBR
+    * #https://fhir.ee/sid/pid/lbr/ppn "Passport number of Liberia"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #PPN
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #LBR
+      * ^property[+].code = #naming-system
+      * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-LBR"
+  * #https://fhir.ee/sid/pid/lie "Root identifier for person identification of country Liechtenstein"
+    * ^property[0].code = #notSelectable
+    * ^property[=].valueBoolean = true
+    * ^property[+].code = #country
+    * ^property[=].valueCode = #LIE
+    * #https://fhir.ee/sid/pid/lie/ppn "Passport number of Liechtenstein"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #PPN
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #LIE
+      * ^property[+].code = #naming-system
+      * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-LIE"
+  * #https://fhir.ee/sid/pid/lbn "Root identifier for person identification of country Lebanon"
+    * ^property[0].code = #notSelectable
+    * ^property[=].valueBoolean = true
+    * ^property[+].code = #country
+    * ^property[=].valueCode = #LBN
+    * #https://fhir.ee/sid/pid/lbn/ppn "Passport number of Lebanon"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #PPN
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #LBN
+      * ^property[+].code = #naming-system
+      * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-LBN"
+  * #https://fhir.ee/sid/pid/lux "Root identifier for person identification of country Luxembourg"
+    * ^property[0].code = #notSelectable
+    * ^property[=].valueBoolean = true
+    * ^property[+].code = #country
+    * ^property[=].valueCode = #LUX
+    * #https://fhir.ee/sid/pid/lux/ppn "Passport number of Luxembourg"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #PPN
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #LUX
+      * ^property[+].code = #naming-system
+      * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-LUX"
+  * #https://fhir.ee/sid/pid/zaf "Root identifier for person identification of country South Africa"
+    * ^property[0].code = #notSelectable
+    * ^property[=].valueBoolean = true
+    * ^property[+].code = #country
+    * ^property[=].valueCode = #ZAF
+    * #https://fhir.ee/sid/pid/zaf/ppn "Passport number of South Africa"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #PPN
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #ZAF
+      * ^property[+].code = #naming-system
+      * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-ZAF"
+    * #https://fhir.ee/sid/pid/zaf/ni "National identifier of South Africa"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #NI
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #ZAF
+  * #https://fhir.ee/sid/pid/sgs "Root identifier for person identification of country South Georgia and the South Sandwich Islands"
+    * ^property[0].code = #notSelectable
+    * ^property[=].valueBoolean = true
+    * ^property[+].code = #country
+    * ^property[=].valueCode = #SGS
+    * #https://fhir.ee/sid/pid/sgs/ppn "Passport number of South Georgia and the South Sandwich Islands"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #PPN
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #SGS
+      * ^property[+].code = #naming-system
+      * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-SGS"
+  * #https://fhir.ee/sid/pid/lva "Root identifier for person identification of country Latvia"
+    * ^property[0].code = #notSelectable
+    * ^property[=].valueBoolean = true
+    * ^property[+].code = #country
+    * ^property[=].valueCode = #LVA
+    * #https://fhir.ee/sid/pid/lva/ppn "Passport number of Latvia"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #PPN
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #LVA
+      * ^property[+].code = #naming-system
+      * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-LVA"
+    * #https://fhir.ee/sid/pid/lva/ni "National identifier of Latvia"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #NI
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #LVA
+    * #https://fhir.ee/sid/pid/lva/cz "ID-card number of Latvia"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #CZ
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #LVA
+    * #https://fhir.ee/sid/pid/lva/dl "Driver's licence number of Latvia"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #DL
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #LVA
+  * #https://fhir.ee/sid/pid/esh "Root identifier for person identification of country Western Sahara"
+    * ^property[0].code = #notSelectable
+    * ^property[=].valueBoolean = true
+    * ^property[+].code = #country
+    * ^property[=].valueCode = #ESH
+    * #https://fhir.ee/sid/pid/esh/ppn "Passport number of Western Sahara"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #PPN
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #ESH
+      * ^property[+].code = #naming-system
+      * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-ESH"
+  * #https://fhir.ee/sid/pid/mdg "Root identifier for person identification of country Madagascar"
+    * ^property[0].code = #notSelectable
+    * ^property[=].valueBoolean = true
+    * ^property[+].code = #country
+    * ^property[=].valueCode = #MDG
+    * #https://fhir.ee/sid/pid/mdg/ppn "Passport number of Madagascar"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #PPN
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #MDG
+      * ^property[+].code = #naming-system
+      * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-MDG"
+  * #https://fhir.ee/sid/pid/nld "Root identifier for person identification of country Netherlands"
+    * ^property[0].code = #notSelectable
+    * ^property[=].valueBoolean = true
+    * ^property[+].code = #country
+    * ^property[=].valueCode = #NLD
+    * #https://fhir.ee/sid/pid/nld/ppn "Passport number of Netherlands"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #PPN
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #NLD
+      * ^property[+].code = #naming-system
+      * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-NLD"
+    * #https://fhir.ee/sid/pid/nld/ni "National identifier of Netherlands"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #NI
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #NLD
+    * #https://fhir.ee/sid/pid/nld/cz "ID-card number of Netherlands"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #CZ
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #NLD
+    * #https://fhir.ee/sid/pid/nld/dl "Driver's licence number of Netherlands"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #DL
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #NLD
+  * #https://fhir.ee/sid/pid/mkd "Root identifier for person identification of country Macedonia"
+    * ^property[0].code = #notSelectable
+    * ^property[=].valueBoolean = true
+    * ^property[+].code = #country
+    * ^property[=].valueCode = #MKD
+    * #https://fhir.ee/sid/pid/mkd/ppn "Passport number of Macedonia"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #PPN
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #MKD
+      * ^property[+].code = #naming-system
+      * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-MKD"
+    * #https://fhir.ee/sid/pid/mkd/ni "National identifier of Macedonia"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #NI
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #MKD
+    * #https://fhir.ee/sid/pid/mkd/cz "ID-card number of Macedonia"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #CZ
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #MKD
+    * #https://fhir.ee/sid/pid/mkd/dl "Driver's licence number of Macedonia"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #DL
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #MKD
+  * #https://fhir.ee/sid/pid/mys "Root identifier for person identification of country Malaysia"
+    * ^property[0].code = #notSelectable
+    * ^property[=].valueBoolean = true
+    * ^property[+].code = #country
+    * ^property[=].valueCode = #MYS
+    * #https://fhir.ee/sid/pid/mys/ppn "Passport number of Malaysia"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #PPN
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #MYS
+      * ^property[+].code = #naming-system
+      * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-MYS"
+    * #https://fhir.ee/sid/pid/mys/ni "National identifier of Malaysia"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #NI
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #MYS
+  * #https://fhir.ee/sid/pid/mwi "Root identifier for person identification of country Malawi"
+    * ^property[0].code = #notSelectable
+    * ^property[=].valueBoolean = true
+    * ^property[+].code = #country
+    * ^property[=].valueCode = #MWI
+    * #https://fhir.ee/sid/pid/mwi/ppn "Passport number of Malawi"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #PPN
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #MWI
+      * ^property[+].code = #naming-system
+      * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-MWI"
+  * #https://fhir.ee/sid/pid/mdv "Root identifier for person identification of country Maldives"
+    * ^property[0].code = #notSelectable
+    * ^property[=].valueBoolean = true
+    * ^property[+].code = #country
+    * ^property[=].valueCode = #MDV
+    * #https://fhir.ee/sid/pid/mdv/ppn "Passport number of Maldives"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #PPN
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #MDV
+      * ^property[+].code = #naming-system
+      * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-MDV"
+  * #https://fhir.ee/sid/pid/mli "Root identifier for person identification of country Mali"
+    * ^property[0].code = #notSelectable
+    * ^property[=].valueBoolean = true
+    * ^property[+].code = #country
+    * ^property[=].valueCode = #MLI
+    * #https://fhir.ee/sid/pid/mli/ppn "Passport number of Mali"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #PPN
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #MLI
+      * ^property[+].code = #naming-system
+      * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-MLI"
+  * #https://fhir.ee/sid/pid/mlt "Root identifier for person identification of country Malta"
+    * ^property[0].code = #notSelectable
+    * ^property[=].valueBoolean = true
+    * ^property[+].code = #country
+    * ^property[=].valueCode = #MLT
+    * #https://fhir.ee/sid/pid/mlt/ppn "Passport number of Malta"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #PPN
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #MLT
+      * ^property[+].code = #naming-system
+      * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-MLT"
+    * #https://fhir.ee/sid/pid/mlt/ni "National identifier of Malta"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #NI
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #MLT
+    * #https://fhir.ee/sid/pid/mlt/cz "ID-card number of Malta"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #CZ
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #MLT
+    * #https://fhir.ee/sid/pid/mlt/dl "Driver's licence number of Malta"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #DL
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #MLT
+  * #https://fhir.ee/sid/pid/imn "Root identifier for person identification of country Isle of Man"
+    * ^property[0].code = #notSelectable
+    * ^property[=].valueBoolean = true
+    * ^property[+].code = #country
+    * ^property[=].valueCode = #IMN
+    * #https://fhir.ee/sid/pid/imn/ppn "Passport number of Isle of Man"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #PPN
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #IMN
+      * ^property[+].code = #naming-system
+      * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-IMM"
+  * #https://fhir.ee/sid/pid/mar "Root identifier for person identification of country Morocco"
+    * ^property[0].code = #notSelectable
+    * ^property[=].valueBoolean = true
+    * ^property[+].code = #country
+    * ^property[=].valueCode = #MAR
+    * #https://fhir.ee/sid/pid/mar/ppn "Passport number of Morocco"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #PPN
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #MAR
+      * ^property[+].code = #naming-system
+      * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-MAR"
+  * #https://fhir.ee/sid/pid/mhl "Root identifier for person identification of country Marshall Islands"
+    * ^property[0].code = #notSelectable
+    * ^property[=].valueBoolean = true
+    * ^property[+].code = #country
+    * ^property[=].valueCode = #MHL
+    * #https://fhir.ee/sid/pid/mhl/ppn "Passport number of Marshall Islands"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #PPN
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #MHL
+      * ^property[+].code = #naming-system
+      * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-MHL"
+  * #https://fhir.ee/sid/pid/mtq "Root identifier for person identification of country Martinique"
+    * ^property[0].code = #notSelectable
+    * ^property[=].valueBoolean = true
+    * ^property[+].code = #country
+    * ^property[=].valueCode = #MTQ
+    * #https://fhir.ee/sid/pid/mtq/ppn "Passport number of Martinique"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #PPN
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #MTQ
+      * ^property[+].code = #naming-system
+      * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-MTQ"
+  * #https://fhir.ee/sid/pid/mrt "Root identifier for person identification of country Mauritania"
+    * ^property[0].code = #notSelectable
+    * ^property[=].valueBoolean = true
+    * ^property[+].code = #country
+    * ^property[=].valueCode = #MRT
+    * #https://fhir.ee/sid/pid/mrt/ppn "Passport number of Mauritania"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #PPN
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #MRT
+      * ^property[+].code = #naming-system
+      * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-MRT"
+  * #https://fhir.ee/sid/pid/mus "Root identifier for person identification of country Mauritius"
+    * ^property[0].code = #notSelectable
+    * ^property[=].valueBoolean = true
+    * ^property[+].code = #country
+    * ^property[=].valueCode = #MUS
+    * #https://fhir.ee/sid/pid/mus/ppn "Passport number of Mauritius"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #PPN
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #MUS
+      * ^property[+].code = #naming-system
+      * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-MUS"
+  * #https://fhir.ee/sid/pid/myt "Root identifier for person identification of country Mayotte"
+    * ^property[0].code = #notSelectable
+    * ^property[=].valueBoolean = true
+    * ^property[+].code = #country
+    * ^property[=].valueCode = #MYT
+    * #https://fhir.ee/sid/pid/myt/ppn "Passport number of Mayotte"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #PPN
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #MYT
+      * ^property[+].code = #naming-system
+      * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-MYT"
+  * #https://fhir.ee/sid/pid/mex "Root identifier for person identification of country Mexico"
+    * ^property[0].code = #notSelectable
+    * ^property[=].valueBoolean = true
+    * ^property[+].code = #country
+    * ^property[=].valueCode = #MEX
+    * #https://fhir.ee/sid/pid/mex/ppn "Passport number of Mexico"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #PPN
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #MEX
+      * ^property[+].code = #naming-system
+      * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-MEX"
+    * #https://fhir.ee/sid/pid/mex/ni "National identifier of Mexico"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #NI
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #MEX
+  * #https://fhir.ee/sid/pid/fsm "Root identifier for person identification of country Micronesia"
+    * ^property[0].code = #notSelectable
+    * ^property[=].valueBoolean = true
+    * ^property[+].code = #country
+    * ^property[=].valueCode = #FSM
+    * #https://fhir.ee/sid/pid/fsm/ppn "Passport number of Micronesia"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #PPN
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #FSM
+      * ^property[+].code = #naming-system
+      * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-FSM"
+  * #https://fhir.ee/sid/pid/mda "Root identifier for person identification of country Moldova, Republic of"
+    * ^property[0].code = #notSelectable
+    * ^property[=].valueBoolean = true
+    * ^property[+].code = #country
+    * ^property[=].valueCode = #MDA
+    * #https://fhir.ee/sid/pid/mda/ppn "Passport number of Moldova, Republic of"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #PPN
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #MDA
+      * ^property[+].code = #naming-system
+      * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-MDA"
+    * #https://fhir.ee/sid/pid/mda/ni "National identifier of Moldova, Republic of"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #NI
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #MDA
+    * #https://fhir.ee/sid/pid/mda/cz "ID-card number of Moldova, Republic of"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #CZ
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #MDA
+    * #https://fhir.ee/sid/pid/mda/dl "Driver's licence number of Moldova, Republic of"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #DL
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #MDA
+  * #https://fhir.ee/sid/pid/mco "Root identifier for person identification of country Monaco"
+    * ^property[0].code = #notSelectable
+    * ^property[=].valueBoolean = true
+    * ^property[+].code = #country
+    * ^property[=].valueCode = #MCO
+    * #https://fhir.ee/sid/pid/mco/ppn "Passport number of Monaco"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #PPN
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #MCO
+      * ^property[+].code = #naming-system
+      * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-MCO"
+  * #https://fhir.ee/sid/pid/mng "Root identifier for person identification of country Mongolia"
+    * ^property[0].code = #notSelectable
+    * ^property[=].valueBoolean = true
+    * ^property[+].code = #country
+    * ^property[=].valueCode = #MNG
+    * #https://fhir.ee/sid/pid/mng/ppn "Passport number of Mongolia"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #PPN
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #MNG
+      * ^property[+].code = #naming-system
+      * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-MNG"
+  * #https://fhir.ee/sid/pid/mne "Root identifier for person identification of country Montenegro"
+    * ^property[0].code = #notSelectable
+    * ^property[=].valueBoolean = true
+    * ^property[+].code = #country
+    * ^property[=].valueCode = #MNE
+    * #https://fhir.ee/sid/pid/mne/ppn "Passport number of Montenegro"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #PPN
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #MNE
+      * ^property[+].code = #naming-system
+      * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-MNE"
+    * #https://fhir.ee/sid/pid/mne/ni "National identifier of Montenegro"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #NI
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #MNE
+    * #https://fhir.ee/sid/pid/mne/cz "ID-card number of Montenegro"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #CZ
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #MNE
+    * #https://fhir.ee/sid/pid/mne/dl "Driver's licence number of Montenegro"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #DL
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #MNE
+  * #https://fhir.ee/sid/pid/msr "Root identifier for person identification of country Montserrat"
+    * ^property[0].code = #notSelectable
+    * ^property[=].valueBoolean = true
+    * ^property[+].code = #country
+    * ^property[=].valueCode = #MSR
+    * #https://fhir.ee/sid/pid/msr/ppn "Passport number of Montserrat"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #PPN
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #MSR
+      * ^property[+].code = #naming-system
+      * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-MSR"
+  * #https://fhir.ee/sid/pid/moz "Root identifier for person identification of country Mozambique"
+    * ^property[0].code = #notSelectable
+    * ^property[=].valueBoolean = true
+    * ^property[+].code = #country
+    * ^property[=].valueCode = #MOZ
+    * #https://fhir.ee/sid/pid/moz/ppn "Passport number of Mozambique"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #PPN
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #MOZ
+      * ^property[+].code = #naming-system
+      * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-MOZ"
+  * #https://fhir.ee/sid/pid/xyy "Root identifier for person identification of country Areas not elsewhere specified"
+    * ^property[0].code = #notSelectable
+    * ^property[=].valueBoolean = true
+    * ^property[+].code = #country
+    * ^property[=].valueCode = #XYY
+    * #https://fhir.ee/sid/pid/xyy/ppn "Passport number of Areas not elsewhere specified"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #PPN
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #XYY
+  * #https://fhir.ee/sid/pid/xxx "Root identifier for person identification of country Not specified"
+    * ^property[0].code = #notSelectable
+    * ^property[=].valueBoolean = true
+    * ^property[+].code = #country
+    * ^property[=].valueCode = #XXX
+    * #https://fhir.ee/sid/pid/xxx/ppn "Passport number of Not specified"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #PPN
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #XXX
+  * #https://fhir.ee/sid/pid/mmr "Root identifier for person identification of country Myanmar"
+    * ^property[0].code = #notSelectable
+    * ^property[=].valueBoolean = true
+    * ^property[+].code = #country
+    * ^property[=].valueCode = #MMR
+    * #https://fhir.ee/sid/pid/mmr/ppn "Passport number of Myanmar"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #PPN
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #MMR
+      * ^property[+].code = #naming-system
+      * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-MMR"
+  * #https://fhir.ee/sid/pid/nam "Root identifier for person identification of country Namibia"
+    * ^property[0].code = #notSelectable
+    * ^property[=].valueBoolean = true
+    * ^property[+].code = #country
+    * ^property[=].valueCode = #NAM
+    * #https://fhir.ee/sid/pid/nam/ppn "Passport number of Namibia"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #PPN
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #NAM
+      * ^property[+].code = #naming-system
+      * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-NAM"
+  * #https://fhir.ee/sid/pid/nru "Root identifier for person identification of country Nauru"
+    * ^property[0].code = #notSelectable
+    * ^property[=].valueBoolean = true
+    * ^property[+].code = #country
+    * ^property[=].valueCode = #NRU
+    * #https://fhir.ee/sid/pid/nru/ppn "Passport number of Nauru"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #PPN
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #NRU
+      * ^property[+].code = #naming-system
+      * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-NRU"
+  * #https://fhir.ee/sid/pid/npl "Root identifier for person identification of country Nepal"
+    * ^property[0].code = #notSelectable
+    * ^property[=].valueBoolean = true
+    * ^property[+].code = #country
+    * ^property[=].valueCode = #NPL
+    * #https://fhir.ee/sid/pid/npl/ppn "Passport number of Nepal"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #PPN
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #NPL
+      * ^property[+].code = #naming-system
+      * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-NPL"
+    * #https://fhir.ee/sid/pid/npl/ni "National identifier of Nepal"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #NI
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #NPL
+  * #https://fhir.ee/sid/pid/nic "Root identifier for person identification of country Nicaragua"
+    * ^property[0].code = #notSelectable
+    * ^property[=].valueBoolean = true
+    * ^property[+].code = #country
+    * ^property[=].valueCode = #NIC
+    * #https://fhir.ee/sid/pid/nic/ppn "Passport number of Nicaragua"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #PPN
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #NIC
+      * ^property[+].code = #naming-system
+      * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-NIC"
+  * #https://fhir.ee/sid/pid/nga "Root identifier for person identification of country Nigeria"
+    * ^property[0].code = #notSelectable
+    * ^property[=].valueBoolean = true
+    * ^property[+].code = #country
+    * ^property[=].valueCode = #NGA
+    * #https://fhir.ee/sid/pid/nga/ppn "Passport number of Nigeria"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #PPN
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #NGA
+      * ^property[+].code = #naming-system
+      * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-NGA"
+    * #https://fhir.ee/sid/pid/nga/ni "National identifier of Nigeria"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #NI
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #NGA
+    * #https://fhir.ee/sid/pid/nga/dl "Driver's licence number of Nigeria"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #DL
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #NGA
+  * #https://fhir.ee/sid/pid/ner "Root identifier for person identification of country Niger"
+    * ^property[0].code = #notSelectable
+    * ^property[=].valueBoolean = true
+    * ^property[+].code = #country
+    * ^property[=].valueCode = #NER
+    * #https://fhir.ee/sid/pid/ner/ppn "Passport number of Niger"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #PPN
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #NER
+      * ^property[+].code = #naming-system
+      * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-NER"
+  * #https://fhir.ee/sid/pid/niu "Root identifier for person identification of country Niue"
+    * ^property[0].code = #notSelectable
+    * ^property[=].valueBoolean = true
+    * ^property[+].code = #country
+    * ^property[=].valueCode = #NIU
+    * #https://fhir.ee/sid/pid/niu/ppn "Passport number of Niue"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #PPN
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #NIU
+      * ^property[+].code = #naming-system
+      * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-NIU"
+  * #https://fhir.ee/sid/pid/nfk "Root identifier for person identification of country Norfolk Island"
+    * ^property[0].code = #notSelectable
+    * ^property[=].valueBoolean = true
+    * ^property[+].code = #country
+    * ^property[=].valueCode = #NFK
+    * #https://fhir.ee/sid/pid/nfk/ppn "Passport number of Norfolk Island"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #PPN
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #NFK
+      * ^property[+].code = #naming-system
+      * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-NFK"
+  * #https://fhir.ee/sid/pid/nor "Root identifier for person identification of country Norway"
+    * ^property[0].code = #notSelectable
+    * ^property[=].valueBoolean = true
+    * ^property[+].code = #country
+    * ^property[=].valueCode = #NOR
+    * #https://fhir.ee/sid/pid/nor/ppn "Passport number of Norway"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #PPN
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #NOR
+      * ^property[+].code = #naming-system
+      * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-NOR"
+    * #https://fhir.ee/sid/pid/nor/ni "National identifier of Norway"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #NI
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #NOR
+    * #https://fhir.ee/sid/pid/nor/cz "ID-card number of Norway"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #CZ
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #NOR
+    * #https://fhir.ee/sid/pid/nor/dl "Driver's licence number of Norway"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #DL
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #NOR
+  * #https://fhir.ee/sid/pid/omn "Root identifier for person identification of country Oman"
+    * ^property[0].code = #notSelectable
+    * ^property[=].valueBoolean = true
+    * ^property[+].code = #country
+    * ^property[=].valueCode = #OMN
+    * #https://fhir.ee/sid/pid/omn/ppn "Passport number of Oman"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #PPN
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #OMN
+      * ^property[+].code = #naming-system
+      * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-OMN"
+  * #https://fhir.ee/sid/pid/png "Root identifier for person identification of country Papua New Guinea"
+    * ^property[0].code = #notSelectable
+    * ^property[=].valueBoolean = true
+    * ^property[+].code = #country
+    * ^property[=].valueCode = #PNG
+    * #https://fhir.ee/sid/pid/png/ppn "Passport number of Papua New Guinea"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #PPN
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #PNG
+      * ^property[+].code = #naming-system
+      * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-PNG"
+  * #https://fhir.ee/sid/pid/pak "Root identifier for person identification of country Pakistan"
+    * ^property[0].code = #notSelectable
+    * ^property[=].valueBoolean = true
+    * ^property[+].code = #country
+    * ^property[=].valueCode = #PAK
+    * #https://fhir.ee/sid/pid/pak/ppn "Passport number of Pakistan"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #PPN
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #PAK
+      * ^property[+].code = #naming-system
+      * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-PAK"
+    * #https://fhir.ee/sid/pid/pak/ni "National identifier of Pakistan"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #NI
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #PAK
+  * #https://fhir.ee/sid/pid/pse "Root identifier for person identification of country Palestinian Territory, Occupied"
+    * ^property[0].code = #notSelectable
+    * ^property[=].valueBoolean = true
+    * ^property[+].code = #country
+    * ^property[=].valueCode = #PSE
+    * #https://fhir.ee/sid/pid/pse/ppn "Passport number of Palestinian Territory, Occupied"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #PPN
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #PSE
+      * ^property[+].code = #naming-system
+      * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-PSE"
+  * #https://fhir.ee/sid/pid/pan "Root identifier for person identification of country Panama"
+    * ^property[0].code = #notSelectable
+    * ^property[=].valueBoolean = true
+    * ^property[+].code = #country
+    * ^property[=].valueCode = #PAN
+    * #https://fhir.ee/sid/pid/pan/ppn "Passport number of Panama"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #PPN
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #PAN
+      * ^property[+].code = #naming-system
+      * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-PAN"
+  * #https://fhir.ee/sid/pid/pry "Root identifier for person identification of country Paraguay"
+    * ^property[0].code = #notSelectable
+    * ^property[=].valueBoolean = true
+    * ^property[+].code = #country
+    * ^property[=].valueCode = #PRY
+    * #https://fhir.ee/sid/pid/pry/ppn "Passport number of Paraguay"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #PPN
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #PRY
+      * ^property[+].code = #naming-system
+      * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-PRY"
+  * #https://fhir.ee/sid/pid/per "Root identifier for person identification of country Peru"
+    * ^property[0].code = #notSelectable
+    * ^property[=].valueBoolean = true
+    * ^property[+].code = #country
+    * ^property[=].valueCode = #PER
+    * #https://fhir.ee/sid/pid/per/ppn "Passport number of Peru"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #PPN
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #PER
+      * ^property[+].code = #naming-system
+      * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-PER"
+  * #https://fhir.ee/sid/pid/pcn "Root identifier for person identification of country Pitcairn"
+    * ^property[0].code = #notSelectable
+    * ^property[=].valueBoolean = true
+    * ^property[+].code = #country
+    * ^property[=].valueCode = #PCN
+    * #https://fhir.ee/sid/pid/pcn/ppn "Passport number of Pitcairn"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #PPN
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #PCN
+      * ^property[+].code = #naming-system
+      * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-PCN"
+  * #https://fhir.ee/sid/pid/pol "Root identifier for person identification of country Poland"
+    * ^property[0].code = #notSelectable
+    * ^property[=].valueBoolean = true
+    * ^property[+].code = #country
+    * ^property[=].valueCode = #POL
+    * #https://fhir.ee/sid/pid/pol/ppn "Passport number of Poland"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #PPN
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #POL
+      * ^property[+].code = #naming-system
+      * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-POL"
+    * #https://fhir.ee/sid/pid/pol/ni "National identifier of Poland"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #NI
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #POL
+    * #https://fhir.ee/sid/pid/pol/cz "ID-card number of Poland"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #CZ
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #POL
+    * #https://fhir.ee/sid/pid/pol/dl "Driver's licence number of Poland"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #DL
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #POL
+  * #https://fhir.ee/sid/pid/prt "Root identifier for person identification of country Portugal"
+    * ^property[0].code = #notSelectable
+    * ^property[=].valueBoolean = true
+    * ^property[+].code = #country
+    * ^property[=].valueCode = #PRT
+    * #https://fhir.ee/sid/pid/prt/ppn "Passport number of Portugal"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #PPN
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #PRT
+      * ^property[+].code = #naming-system
+      * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-PRT"
+    * #https://fhir.ee/sid/pid/prt/ni "National identifier of Portugal"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #NI
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #PRT
+    * #https://fhir.ee/sid/pid/prt/cz "ID-card number of Portugal"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #CZ
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #PRT
+    * #https://fhir.ee/sid/pid/prt/dl "Driver's licence number of Portugal"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #DL
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #PRT
+  * #https://fhir.ee/sid/pid/atf "Root identifier for person identification of country French Southern Territories"
+    * ^property[0].code = #notSelectable
+    * ^property[=].valueBoolean = true
+    * ^property[+].code = #country
+    * ^property[=].valueCode = #ATF
+    * #https://fhir.ee/sid/pid/atf/ppn "Passport number of French Southern Territories"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #PPN
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #ATF
+      * ^property[+].code = #naming-system
+      * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-ATF"
+  * #https://fhir.ee/sid/pid/pyf "Root identifier for person identification of country French Polynesia"
+    * ^property[0].code = #notSelectable
+    * ^property[=].valueBoolean = true
+    * ^property[+].code = #country
+    * ^property[=].valueCode = #PYF
+    * #https://fhir.ee/sid/pid/pyf/ppn "Passport number of French Polynesia"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #PPN
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #PYF
+      * ^property[+].code = #naming-system
+      * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-PYF"
+  * #https://fhir.ee/sid/pid/fra "Root identifier for person identification of country France"
+    * ^property[0].code = #notSelectable
+    * ^property[=].valueBoolean = true
+    * ^property[+].code = #country
+    * ^property[=].valueCode = #FRA
+    * #https://fhir.ee/sid/pid/fra/ppn "Passport number of France"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #PPN
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #FRA
+      * ^property[+].code = #naming-system
+      * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-FRA"
+  * #https://fhir.ee/sid/pid/pri "Root identifier for person identification of country Puerto Rico"
+    * ^property[0].code = #notSelectable
+    * ^property[=].valueBoolean = true
+    * ^property[+].code = #country
+    * ^property[=].valueCode = #PRI
+    * #https://fhir.ee/sid/pid/pri/ppn "Passport number of Puerto Rico"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #PPN
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #PRI
+      * ^property[+].code = #naming-system
+      * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-PRI"
+  * #https://fhir.ee/sid/pid/mnp "Root identifier for person identification of country Northern Mariana Islands"
+    * ^property[0].code = #notSelectable
+    * ^property[=].valueBoolean = true
+    * ^property[+].code = #country
+    * ^property[=].valueCode = #MNP
+    * #https://fhir.ee/sid/pid/mnp/ppn "Passport number of Northern Mariana Islands"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #PPN
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #MNP
+      * ^property[+].code = #naming-system
+      * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-MNP"
+  * #https://fhir.ee/sid/pid/vat "Root identifier for person identification of country Holy See (Vatican City State)"
+    * ^property[0].code = #notSelectable
+    * ^property[=].valueBoolean = true
+    * ^property[+].code = #country
+    * ^property[=].valueCode = #VAT
+    * #https://fhir.ee/sid/pid/vat/ppn "Passport number of Holy See (Vatican City State)"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #PPN
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #VAT
+      * ^property[+].code = #naming-system
+      * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-VAT"
+  * #https://fhir.ee/sid/pid/reu "Root identifier for person identification of country Réunion"
+    * ^property[0].code = #notSelectable
+    * ^property[=].valueBoolean = true
+    * ^property[+].code = #country
+    * ^property[=].valueCode = #REU
+    * #https://fhir.ee/sid/pid/reu/ppn "Passport number of Réunion"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #PPN
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #REU
+      * ^property[+].code = #naming-system
+      * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-REU"
+  * #https://fhir.ee/sid/pid/swe "Root identifier for person identification of country Sweden"
+    * ^property[0].code = #notSelectable
+    * ^property[=].valueBoolean = true
+    * ^property[+].code = #country
+    * ^property[=].valueCode = #SWE
+    * #https://fhir.ee/sid/pid/swe/ppn "Passport number of Sweden"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #PPN
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #SWE
+      * ^property[+].code = #naming-system
+      * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-SWE"
+    * #https://fhir.ee/sid/pid/swe/ni "National identifier of Sweden"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #NI
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #SWE
+    * #https://fhir.ee/sid/pid/swe/cz "ID-card number of Sweden"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #CZ
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #SWE
+    * #https://fhir.ee/sid/pid/swe/dl "Driver's licence number of Sweden"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #DL
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #SWE
+  * #https://fhir.ee/sid/pid/rou "Root identifier for person identification of country Romania"
+    * ^property[0].code = #notSelectable
+    * ^property[=].valueBoolean = true
+    * ^property[+].code = #country
+    * ^property[=].valueCode = #ROU
+    * #https://fhir.ee/sid/pid/rou/ppn "Passport number of Romania"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #PPN
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #ROU
+      * ^property[+].code = #naming-system
+      * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-ROU"
+    * #https://fhir.ee/sid/pid/rou/ni "National identifier of Romania"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #NI
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #ROU
+    * #https://fhir.ee/sid/pid/rou/cz "ID-card number of Romania"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #CZ
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #ROU
+    * #https://fhir.ee/sid/pid/rou/dl "Driver's licence number of Romania"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #DL
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #ROU
+  * #https://fhir.ee/sid/pid/rwa "Root identifier for person identification of country Rwanda"
+    * ^property[0].code = #notSelectable
+    * ^property[=].valueBoolean = true
+    * ^property[+].code = #country
+    * ^property[=].valueCode = #RWA
+    * #https://fhir.ee/sid/pid/rwa/ppn "Passport number of Rwanda"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #PPN
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #RWA
+      * ^property[+].code = #naming-system
+      * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-RWA"
+  * #https://fhir.ee/sid/pid/slb "Root identifier for person identification of country Solomon Islands"
+    * ^property[0].code = #notSelectable
+    * ^property[=].valueBoolean = true
+    * ^property[+].code = #country
+    * ^property[=].valueCode = #SLB
+    * #https://fhir.ee/sid/pid/slb/ppn "Passport number of Solomon Islands"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #PPN
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #SLB
+      * ^property[+].code = #naming-system
+      * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-SLB"
+  * #https://fhir.ee/sid/pid/kna "Root identifier for person identification of country Saint Kitts and Nevis"
+    * ^property[0].code = #notSelectable
+    * ^property[=].valueBoolean = true
+    * ^property[+].code = #country
+    * ^property[=].valueCode = #KNA
+    * #https://fhir.ee/sid/pid/kna/ppn "Passport number of Saint Kitts and Nevis"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #PPN
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #KNA
+      * ^property[+].code = #naming-system
+      * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-KNA"
+  * #https://fhir.ee/sid/pid/shn "Root identifier for person identification of country Saint Helena"
+    * ^property[0].code = #notSelectable
+    * ^property[=].valueBoolean = true
+    * ^property[+].code = #country
+    * ^property[=].valueCode = #SHN
+    * #https://fhir.ee/sid/pid/shn/ppn "Passport number of Saint Helena"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #PPN
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #SHN
+      * ^property[+].code = #naming-system
+      * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-SHN"
+  * #https://fhir.ee/sid/pid/lca "Root identifier for person identification of country Saint Lucia"
+    * ^property[0].code = #notSelectable
+    * ^property[=].valueBoolean = true
+    * ^property[+].code = #country
+    * ^property[=].valueCode = #LCA
+    * #https://fhir.ee/sid/pid/lca/ppn "Passport number of Saint Lucia"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #PPN
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #LCA
+      * ^property[+].code = #naming-system
+      * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-LCA"
+  * #https://fhir.ee/sid/pid/spm "Root identifier for person identification of country Saint Pierre and Miquelon"
+    * ^property[0].code = #notSelectable
+    * ^property[=].valueBoolean = true
+    * ^property[+].code = #country
+    * ^property[=].valueCode = #SPM
+    * #https://fhir.ee/sid/pid/spm/ppn "Passport number of Saint Pierre and Miquelon"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #PPN
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #SPM
+      * ^property[+].code = #naming-system
+      * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-SPM"
+  * #https://fhir.ee/sid/pid/vct "Root identifier for person identification of country Saint Vincent and the Grenadines"
+    * ^property[0].code = #notSelectable
+    * ^property[=].valueBoolean = true
+    * ^property[+].code = #country
+    * ^property[=].valueCode = #VCT
+    * #https://fhir.ee/sid/pid/vct/ppn "Passport number of Saint Vincent and the Grenadines"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #PPN
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #VCT
+      * ^property[+].code = #naming-system
+      * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-VCT"
+  * #https://fhir.ee/sid/pid/deu "Root identifier for person identification of country Germany"
+    * ^property[0].code = #notSelectable
+    * ^property[=].valueBoolean = true
+    * ^property[+].code = #country
+    * ^property[=].valueCode = #DEU
+    * #https://fhir.ee/sid/pid/deu/ppn "Passport number of Germany"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #PPN
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #DEU
+      * ^property[+].code = #naming-system
+      * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-DEU"
+  * #https://fhir.ee/sid/pid/zmb "Root identifier for person identification of country Zambia"
+    * ^property[0].code = #notSelectable
+    * ^property[=].valueBoolean = true
+    * ^property[+].code = #country
+    * ^property[=].valueCode = #ZMB
+    * #https://fhir.ee/sid/pid/zmb/ppn "Passport number of Zambia"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #PPN
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #ZMB
+      * ^property[+].code = #naming-system
+      * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-ZMB"
+  * #https://fhir.ee/sid/pid/wsm "Root identifier for person identification of country Samoa"
+    * ^property[0].code = #notSelectable
+    * ^property[=].valueBoolean = true
+    * ^property[+].code = #country
+    * ^property[=].valueCode = #WSM
+    * #https://fhir.ee/sid/pid/wsm/ppn "Passport number of Samoa"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #PPN
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #WSM
+      * ^property[+].code = #naming-system
+      * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-WSM"
+  * #https://fhir.ee/sid/pid/smr "Root identifier for person identification of country San Marino"
+    * ^property[0].code = #notSelectable
+    * ^property[=].valueBoolean = true
+    * ^property[+].code = #country
+    * ^property[=].valueCode = #SMR
+    * #https://fhir.ee/sid/pid/smr/ppn "Passport number of San Marino"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #PPN
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #SMR
+      * ^property[+].code = #naming-system
+      * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-SMR"
+    * #https://fhir.ee/sid/pid/smr/ni "National identifier of San Marino"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #NI
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #SMR
+    * #https://fhir.ee/sid/pid/smr/cz "ID-card number of San Marino"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #CZ
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #SMR
+    * #https://fhir.ee/sid/pid/smr/dl "Driver's licence number of San Marino"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #DL
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #SMR
+  * #https://fhir.ee/sid/pid/stp "Root identifier for person identification of country Sao Tome and Principe"
+    * ^property[0].code = #notSelectable
+    * ^property[=].valueBoolean = true
+    * ^property[+].code = #country
+    * ^property[=].valueCode = #STP
+    * #https://fhir.ee/sid/pid/stp/ppn "Passport number of Sao Tome and Principe"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #PPN
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #STP
+      * ^property[+].code = #naming-system
+      * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-STP"
+  * #https://fhir.ee/sid/pid/sau "Root identifier for person identification of country Saudi Arabia"
+    * ^property[0].code = #notSelectable
+    * ^property[=].valueBoolean = true
+    * ^property[+].code = #country
+    * ^property[=].valueCode = #SAU
+    * #https://fhir.ee/sid/pid/sau/ppn "Passport number of Saudi Arabia"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #PPN
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #SAU
+      * ^property[+].code = #naming-system
+      * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-SAU"
+  * #https://fhir.ee/sid/pid/syc "Root identifier for person identification of country Seychelles"
+    * ^property[0].code = #notSelectable
+    * ^property[=].valueBoolean = true
+    * ^property[+].code = #country
+    * ^property[=].valueCode = #SYC
+    * #https://fhir.ee/sid/pid/syc/ppn "Passport number of Seychelles"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #PPN
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #SYC
+      * ^property[+].code = #naming-system
+      * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-SYC"
+  * #https://fhir.ee/sid/pid/sen "Root identifier for person identification of country Senegal"
+    * ^property[0].code = #notSelectable
+    * ^property[=].valueBoolean = true
+    * ^property[+].code = #country
+    * ^property[=].valueCode = #SEN
+    * #https://fhir.ee/sid/pid/sen/ppn "Passport number of Senegal"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #PPN
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #SEN
+      * ^property[+].code = #naming-system
+      * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-SEN"
+  * #https://fhir.ee/sid/pid/srb "Root identifier for person identification of country Serbia"
+    * ^property[0].code = #notSelectable
+    * ^property[=].valueBoolean = true
+    * ^property[+].code = #country
+    * ^property[=].valueCode = #SRB
+    * #https://fhir.ee/sid/pid/srb/ppn "Passport number of Serbia"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #PPN
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #SRB
+      * ^property[+].code = #naming-system
+      * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-SRB"
+    * #https://fhir.ee/sid/pid/srb/ni "National identifier of Serbia"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #NI
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #SRB
+    * #https://fhir.ee/sid/pid/srb/cz "ID-card number of Serbia"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #CZ
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #SRB
+    * #https://fhir.ee/sid/pid/srb/dl "Driver's licence number of Serbia"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #DL
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #SRB
+  * #https://fhir.ee/sid/pid/sle "Root identifier for person identification of country Sierra Leone"
+    * ^property[0].code = #notSelectable
+    * ^property[=].valueBoolean = true
+    * ^property[+].code = #country
+    * ^property[=].valueCode = #SLE
+    * #https://fhir.ee/sid/pid/sle/ppn "Passport number of Sierra Leone"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #PPN
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #SLE
+      * ^property[+].code = #naming-system
+      * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-SLE"
+  * #https://fhir.ee/sid/pid/sgp "Root identifier for person identification of country Singapore"
+    * ^property[0].code = #notSelectable
+    * ^property[=].valueBoolean = true
+    * ^property[+].code = #country
+    * ^property[=].valueCode = #SGP
+    * #https://fhir.ee/sid/pid/sgp/ppn "Passport number of Singapore"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #PPN
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #SGP
+      * ^property[+].code = #naming-system
+      * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-SGP"
+    * #https://fhir.ee/sid/pid/sgp/ni "National identifier of Singapore"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #NI
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #SGP
+  * #https://fhir.ee/sid/pid/svk "Root identifier for person identification of country Slovakia"
+    * ^property[0].code = #notSelectable
+    * ^property[=].valueBoolean = true
+    * ^property[+].code = #country
+    * ^property[=].valueCode = #SVK
+    * #https://fhir.ee/sid/pid/svk/ppn "Passport number of Slovakia"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #PPN
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #SVK
+      * ^property[+].code = #naming-system
+      * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-SVK"
+    * #https://fhir.ee/sid/pid/svk/ni "National identifier of Slovakia"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #NI
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #SVK
+    * #https://fhir.ee/sid/pid/svk/cz "ID-card number of Slovakia"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #CZ
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #SVK
+    * #https://fhir.ee/sid/pid/svk/dl "Driver's licence number of Slovakia"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #DL
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #SVK
+  * #https://fhir.ee/sid/pid/svn "Root identifier for person identification of country Slovenia"
+    * ^property[0].code = #notSelectable
+    * ^property[=].valueBoolean = true
+    * ^property[+].code = #country
+    * ^property[=].valueCode = #SVN
+    * #https://fhir.ee/sid/pid/svn/ppn "Passport number of Slovenia"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #PPN
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #SVN
+      * ^property[+].code = #naming-system
+      * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-SVN"
+    * #https://fhir.ee/sid/pid/svn/ni "National identifier of Slovenia"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #NI
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #SVN
+    * #https://fhir.ee/sid/pid/svn/cz "ID-card number of Slovenia"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #CZ
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #SVN
+    * #https://fhir.ee/sid/pid/svn/dl "Driver's licence number of Slovenia"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #DL
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #SVN
+  * #https://fhir.ee/sid/pid/som "Root identifier for person identification of country Somalia"
+    * ^property[0].code = #notSelectable
+    * ^property[=].valueBoolean = true
+    * ^property[+].code = #country
+    * ^property[=].valueCode = #SOM
+    * #https://fhir.ee/sid/pid/som/ppn "Passport number of Somalia"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #PPN
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #SOM
+      * ^property[+].code = #naming-system
+      * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-SOM"
+  * #https://fhir.ee/sid/pid/fin "Root identifier for person identification of country Finland"
+    * ^property[0].code = #notSelectable
+    * ^property[=].valueBoolean = true
+    * ^property[+].code = #country
+    * ^property[=].valueCode = #FIN
+    * #https://fhir.ee/sid/pid/fin/ppn "Passport number of Finland"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #PPN
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #FIN
+      * ^property[+].code = #naming-system
+      * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-FIN"
+    * #https://fhir.ee/sid/pid/fin/ni "National identifier of Finland"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #NI
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #FIN
+    * #https://fhir.ee/sid/pid/fin/cz "ID-card number of Finland"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #CZ
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #FIN
+    * #https://fhir.ee/sid/pid/fin/dl "Driver's licence number of Finland"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #DL
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #FIN
+  * #https://fhir.ee/sid/pid/lka "Root identifier for person identification of country Sri Lanka"
+    * ^property[0].code = #notSelectable
+    * ^property[=].valueBoolean = true
+    * ^property[+].code = #country
+    * ^property[=].valueCode = #LKA
+    * #https://fhir.ee/sid/pid/lka/ppn "Passport number of Sri Lanka"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #PPN
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #LKA
+      * ^property[+].code = #naming-system
+      * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-LKA"
+    * #https://fhir.ee/sid/pid/lka/ni "National identifier of Sri Lanka"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #NI
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #LKA
+  * #https://fhir.ee/sid/pid/sdn "Root identifier for person identification of country Sudan"
+    * ^property[0].code = #notSelectable
+    * ^property[=].valueBoolean = true
+    * ^property[+].code = #country
+    * ^property[=].valueCode = #SDN
+    * #https://fhir.ee/sid/pid/sdn/ppn "Passport number of Sudan"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #PPN
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #SDN
+      * ^property[+].code = #naming-system
+      * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-SDN"
+  * #https://fhir.ee/sid/pid/sur "Root identifier for person identification of country Suriname"
+    * ^property[0].code = #notSelectable
+    * ^property[=].valueBoolean = true
+    * ^property[+].code = #country
+    * ^property[=].valueCode = #SUR
+    * #https://fhir.ee/sid/pid/sur/ppn "Passport number of Suriname"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #PPN
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #SUR
+      * ^property[+].code = #naming-system
+      * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-SUR"
+  * #https://fhir.ee/sid/pid/lby "Root identifier for person identification of country Libyan Arab Jamahiriya"
+    * ^property[0].code = #notSelectable
+    * ^property[=].valueBoolean = true
+    * ^property[+].code = #country
+    * ^property[=].valueCode = #LBY
+    * #https://fhir.ee/sid/pid/lby/ppn "Passport number of Libyan Arab Jamahiriya"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #PPN
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #LBY
+      * ^property[+].code = #naming-system
+      * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-LBY"
+  * #https://fhir.ee/sid/pid/gbr "Root identifier for person identification of country United Kingdom"
+    * ^property[0].code = #notSelectable
+    * ^property[=].valueBoolean = true
+    * ^property[+].code = #country
+    * ^property[=].valueCode = #GBR
+    * #https://fhir.ee/sid/pid/gbr/ppn "Passport number of United Kingdom"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #PPN
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #GBR
+      * ^property[+].code = #naming-system
+      * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-GBR"
+  * #https://fhir.ee/sid/pid/swz "Root identifier for person identification of country Swaziland"
+    * ^property[0].code = #notSelectable
+    * ^property[=].valueBoolean = true
+    * ^property[+].code = #country
+    * ^property[=].valueCode = #SWZ
+    * #https://fhir.ee/sid/pid/swz/ppn "Passport number of Swaziland"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #PPN
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #SWZ
+      * ^property[+].code = #naming-system
+      * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-SWZ"
+  * #https://fhir.ee/sid/pid/sjm "Root identifier for person identification of country Svalbard and Jan Mayen"
+    * ^property[0].code = #notSelectable
+    * ^property[=].valueBoolean = true
+    * ^property[+].code = #country
+    * ^property[=].valueCode = #SJM
+    * #https://fhir.ee/sid/pid/sjm/ppn "Passport number of Svalbard and Jan Mayen"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #PPN
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #SJM
+      * ^property[+].code = #naming-system
+      * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-SJM"
+  * #https://fhir.ee/sid/pid/syr "Root identifier for person identification of country Syrian Arab Republic"
+    * ^property[0].code = #notSelectable
+    * ^property[=].valueBoolean = true
+    * ^property[+].code = #country
+    * ^property[=].valueCode = #SYR
+    * #https://fhir.ee/sid/pid/syr/ppn "Passport number of Syrian Arab Republic"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #PPN
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #SYR
+      * ^property[+].code = #naming-system
+      * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-SYR"
+  * #https://fhir.ee/sid/pid/che "Root identifier for person identification of country Switzerland"
+    * ^property[0].code = #notSelectable
+    * ^property[=].valueBoolean = true
+    * ^property[+].code = #country
+    * ^property[=].valueCode = #CHE
+    * #https://fhir.ee/sid/pid/che/ppn "Passport number of Switzerland"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #PPN
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #CHE
+      * ^property[+].code = #naming-system
+      * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-CHE"
+  * #https://fhir.ee/sid/pid/zwe "Root identifier for person identification of country Zimbabwe"
+    * ^property[0].code = #notSelectable
+    * ^property[=].valueBoolean = true
+    * ^property[+].code = #country
+    * ^property[=].valueCode = #ZWE
+    * #https://fhir.ee/sid/pid/zwe/ppn "Passport number of Zimbabwe"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #PPN
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #ZWE
+      * ^property[+].code = #naming-system
+      * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-ZWE"
+    * #https://fhir.ee/sid/pid/zwe/ni "National identifier of Zimbabwe"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #NI
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #ZWE
+  * #https://fhir.ee/sid/pid/dnk "Root identifier for person identification of country Denmark"
+    * ^property[0].code = #notSelectable
+    * ^property[=].valueBoolean = true
+    * ^property[+].code = #country
+    * ^property[=].valueCode = #DNK
+    * #https://fhir.ee/sid/pid/dnk/ppn "Passport number of Denmark"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #PPN
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #DNK
+      * ^property[+].code = #naming-system
+      * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-DNK"
+    * #https://fhir.ee/sid/pid/dnk/ni "National identifier of Denmark"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #NI
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #DNK
+    * #https://fhir.ee/sid/pid/dnk/dl "Driver's licence number of Denmark"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #DL
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #DNK
+  * #https://fhir.ee/sid/pid/tjk "Root identifier for person identification of country Tajikistan"
+    * ^property[0].code = #notSelectable
+    * ^property[=].valueBoolean = true
+    * ^property[+].code = #country
+    * ^property[=].valueCode = #TJK
+    * #https://fhir.ee/sid/pid/tjk/ppn "Passport number of Tajikistan"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #PPN
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #TJK
+      * ^property[+].code = #naming-system
+      * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-TJK"
+  * #https://fhir.ee/sid/pid/tha "Root identifier for person identification of country Thailand"
+    * ^property[0].code = #notSelectable
+    * ^property[=].valueBoolean = true
+    * ^property[+].code = #country
+    * ^property[=].valueCode = #THA
+    * #https://fhir.ee/sid/pid/tha/ppn "Passport number of Thailand"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #PPN
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #THA
+      * ^property[+].code = #naming-system
+      * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-THA"
+    * #https://fhir.ee/sid/pid/tha/ni "National identifier of Thailand"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #NI
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #THA
+    * #https://fhir.ee/sid/pid/tha/cz "ID-card number of Thailand"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #CZ
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #THA
+    * #https://fhir.ee/sid/pid/tha/dl "Driver's licence number of Thailand"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #DL
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #THA
+  * #https://fhir.ee/sid/pid/twn "Root identifier for person identification of country Taiwan"
+    * ^property[0].code = #notSelectable
+    * ^property[=].valueBoolean = true
+    * ^property[+].code = #country
+    * ^property[=].valueCode = #TWN
+    * #https://fhir.ee/sid/pid/twn/ppn "Passport number of Taiwan"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #PPN
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #TWN
+      * ^property[+].code = #naming-system
+      * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-TWN"
+    * #https://fhir.ee/sid/pid/twn/ni "National identifier of Taiwan"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #NI
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #TWN
+  * #https://fhir.ee/sid/pid/tza "Root identifier for person identification of country Tanzania, United Republic of"
+    * ^property[0].code = #notSelectable
+    * ^property[=].valueBoolean = true
+    * ^property[+].code = #country
+    * ^property[=].valueCode = #TZA
+    * #https://fhir.ee/sid/pid/tza/ppn "Passport number of Tanzania, United Republic of"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #PPN
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #TZA
+      * ^property[+].code = #naming-system
+      * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-TZA"
+  * #https://fhir.ee/sid/pid/tls "Root identifier for person identification of country Timor-Leste"
+    * ^property[0].code = #notSelectable
+    * ^property[=].valueBoolean = true
+    * ^property[+].code = #country
+    * ^property[=].valueCode = #TLS
+    * #https://fhir.ee/sid/pid/tls/ppn "Passport number of Timor-Leste"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #PPN
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #TLS
+      * ^property[+].code = #naming-system
+      * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-TLS"
+  * #https://fhir.ee/sid/pid/tgo "Root identifier for person identification of country Togo"
+    * ^property[0].code = #notSelectable
+    * ^property[=].valueBoolean = true
+    * ^property[+].code = #country
+    * ^property[=].valueCode = #TGO
+    * #https://fhir.ee/sid/pid/tgo/ppn "Passport number of Togo"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #PPN
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #TGO
+      * ^property[+].code = #naming-system
+      * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-TGO"
+  * #https://fhir.ee/sid/pid/tkl "Root identifier for person identification of country Tokelau"
+    * ^property[0].code = #notSelectable
+    * ^property[=].valueBoolean = true
+    * ^property[+].code = #country
+    * ^property[=].valueCode = #TKL
+    * #https://fhir.ee/sid/pid/tkl/ppn "Passport number of Tokelau"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #PPN
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #TKL
+      * ^property[+].code = #naming-system
+      * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-TKL"
+  * #https://fhir.ee/sid/pid/ton "Root identifier for person identification of country Tonga"
+    * ^property[0].code = #notSelectable
+    * ^property[=].valueBoolean = true
+    * ^property[+].code = #country
+    * ^property[=].valueCode = #TON
+    * #https://fhir.ee/sid/pid/ton/ppn "Passport number of Tonga"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #PPN
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #TON
+      * ^property[+].code = #naming-system
+      * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-TON"
+  * #https://fhir.ee/sid/pid/tto "Root identifier for person identification of country Trinidad and Tobago"
+    * ^property[0].code = #notSelectable
+    * ^property[=].valueBoolean = true
+    * ^property[+].code = #country
+    * ^property[=].valueCode = #TTO
+    * #https://fhir.ee/sid/pid/tto/ppn "Passport number of Trinidad and Tobago"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #PPN
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #TTO
+      * ^property[+].code = #naming-system
+      * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-TTO"
+  * #https://fhir.ee/sid/pid/tcd "Root identifier for person identification of country Chad"
+    * ^property[0].code = #notSelectable
+    * ^property[=].valueBoolean = true
+    * ^property[+].code = #country
+    * ^property[=].valueCode = #TCD
+    * #https://fhir.ee/sid/pid/tcd/ppn "Passport number of Chad"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #PPN
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #TCD
+      * ^property[+].code = #naming-system
+      * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-TCD"
+  * #https://fhir.ee/sid/pid/cze "Root identifier for person identification of country Czech Republic"
+    * ^property[0].code = #notSelectable
+    * ^property[=].valueBoolean = true
+    * ^property[+].code = #country
+    * ^property[=].valueCode = #CZE
+    * #https://fhir.ee/sid/pid/cze/ppn "Passport number of Czech Republic"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #PPN
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #CZE
+      * ^property[+].code = #naming-system
+      * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-CZE"
+    * #https://fhir.ee/sid/pid/cze/ni "National identifier of Czech Republic"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #NI
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #CZE
+    * #https://fhir.ee/sid/pid/cze/cz "ID-card number of Czech Republic"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #CZ
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #CZE
+    * #https://fhir.ee/sid/pid/cze/dl "Driver's licence number of Czech Republic"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #DL
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #CZE
+  * #https://fhir.ee/sid/pid/chl "Root identifier for person identification of country Chile"
+    * ^property[0].code = #notSelectable
+    * ^property[=].valueBoolean = true
+    * ^property[+].code = #country
+    * ^property[=].valueCode = #CHL
+    * #https://fhir.ee/sid/pid/chl/ppn "Passport number of Chile"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #PPN
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #CHL
+      * ^property[+].code = #naming-system
+      * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-CHL"
+    * #https://fhir.ee/sid/pid/chl/ni "National identifier of Chile"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #NI
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #CHL
+    * #https://fhir.ee/sid/pid/chl/cz "ID-card number of Chile"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #CZ
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #CHL
+    * #https://fhir.ee/sid/pid/chl/dl "Driver's licence number of Chile"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #DL
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #CHL
+  * #https://fhir.ee/sid/pid/tun "Root identifier for person identification of country Tunisia"
+    * ^property[0].code = #notSelectable
+    * ^property[=].valueBoolean = true
+    * ^property[+].code = #country
+    * ^property[=].valueCode = #TUN
+    * #https://fhir.ee/sid/pid/tun/ppn "Passport number of Tunisia"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #PPN
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #TUN
+      * ^property[+].code = #naming-system
+      * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-TUN"
+  * #https://fhir.ee/sid/pid/tca "Root identifier for person identification of country Turks and Caicos Islands"
+    * ^property[0].code = #notSelectable
+    * ^property[=].valueBoolean = true
+    * ^property[+].code = #country
+    * ^property[=].valueCode = #TCA
+    * #https://fhir.ee/sid/pid/tca/ppn "Passport number of Turks and Caicos Islands"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #PPN
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #TCA
+      * ^property[+].code = #naming-system
+      * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-TCA"
+  * #https://fhir.ee/sid/pid/tuv "Root identifier for person identification of country Tuvalu"
+    * ^property[0].code = #notSelectable
+    * ^property[=].valueBoolean = true
+    * ^property[+].code = #country
+    * ^property[=].valueCode = #TUV
+    * #https://fhir.ee/sid/pid/tuv/ppn "Passport number of Tuvalu"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #PPN
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #TUV
+      * ^property[+].code = #naming-system
+      * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-TUV"
+  * #https://fhir.ee/sid/pid/tur "Root identifier for person identification of country Turkey"
+    * ^property[0].code = #notSelectable
+    * ^property[=].valueBoolean = true
+    * ^property[+].code = #country
+    * ^property[=].valueCode = #TUR
+    * #https://fhir.ee/sid/pid/tur/ppn "Passport number of Turkey"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #PPN
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #TUR
+      * ^property[+].code = #naming-system
+      * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-TUR"
+    * #https://fhir.ee/sid/pid/tur/ni "National identifier of Turkey"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #NI
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #TUR
+    * #https://fhir.ee/sid/pid/tur/dl "Driver's licence number of Turkey"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #DL
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #TUR
+  * #https://fhir.ee/sid/pid/tkm "Root identifier for person identification of country Turkmenistan"
+    * ^property[0].code = #notSelectable
+    * ^property[=].valueBoolean = true
+    * ^property[+].code = #country
+    * ^property[=].valueCode = #TKM
+    * #https://fhir.ee/sid/pid/tkm/ppn "Passport number of Turkmenistan"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #PPN
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #TKM
+      * ^property[+].code = #naming-system
+      * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-TKM"
+  * #https://fhir.ee/sid/pid/uga "Root identifier for person identification of country Uganda"
+    * ^property[0].code = #notSelectable
+    * ^property[=].valueBoolean = true
+    * ^property[+].code = #country
+    * ^property[=].valueCode = #UGA
+    * #https://fhir.ee/sid/pid/uga/ppn "Passport number of Uganda"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #PPN
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #UGA
+      * ^property[+].code = #naming-system
+      * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-UGA"
+  * #https://fhir.ee/sid/pid/ukr "Root identifier for person identification of country Ukraine"
+    * ^property[0].code = #notSelectable
+    * ^property[=].valueBoolean = true
+    * ^property[+].code = #country
+    * ^property[=].valueCode = #UKR
+    * #https://fhir.ee/sid/pid/ukr/ppn "Passport number of Ukraine"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #PPN
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #UKR
+      * ^property[+].code = #naming-system
+      * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-UKR"
+    * #https://fhir.ee/sid/pid/ukr/ni "National identifier of Ukraine"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #NI
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #UKR
+    * #https://fhir.ee/sid/pid/ukr/cz "ID-card number of Ukraine"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #CZ
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #UKR
+    * #https://fhir.ee/sid/pid/ukr/dl "Driver's licence number of Ukraine"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #DL
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #UKR
+  * #https://fhir.ee/sid/pid/hun "Root identifier for person identification of country Hungary"
+    * ^property[0].code = #notSelectable
+    * ^property[=].valueBoolean = true
+    * ^property[+].code = #country
+    * ^property[=].valueCode = #HUN
+    * #https://fhir.ee/sid/pid/hun/ppn "Passport number of Hungary"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #PPN
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #HUN
+      * ^property[+].code = #naming-system
+      * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-HUN"
+  * #https://fhir.ee/sid/pid/ury "Root identifier for person identification of country Uruguay"
+    * ^property[0].code = #notSelectable
+    * ^property[=].valueBoolean = true
+    * ^property[+].code = #country
+    * ^property[=].valueCode = #URY
+    * #https://fhir.ee/sid/pid/ury/ppn "Passport number of Uruguay"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #PPN
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #URY
+      * ^property[+].code = #naming-system
+      * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-URY"
+  * #https://fhir.ee/sid/pid/uzb "Root identifier for person identification of country Uzbekistan"
+    * ^property[0].code = #notSelectable
+    * ^property[=].valueBoolean = true
+    * ^property[+].code = #country
+    * ^property[=].valueCode = #UZB
+    * #https://fhir.ee/sid/pid/uzb/ppn "Passport number of Uzbekistan"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #PPN
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #UZB
+      * ^property[+].code = #naming-system
+      * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-UZB"
+  * #https://fhir.ee/sid/pid/ncl "Root identifier for person identification of country New Caledonia"
+    * ^property[0].code = #notSelectable
+    * ^property[=].valueBoolean = true
+    * ^property[+].code = #country
+    * ^property[=].valueCode = #NCL
+    * #https://fhir.ee/sid/pid/ncl/ppn "Passport number of New Caledonia"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #PPN
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #NCL
+      * ^property[+].code = #naming-system
+      * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-NCL"
+  * #https://fhir.ee/sid/pid/nzl "Root identifier for person identification of country New Zealand"
+    * ^property[0].code = #notSelectable
+    * ^property[=].valueBoolean = true
+    * ^property[+].code = #country
+    * ^property[=].valueCode = #NZL
+    * #https://fhir.ee/sid/pid/nzl/ppn "Passport number of New Zealand"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #PPN
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #NZL
+      * ^property[+].code = #naming-system
+      * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-NZL"
+  * #https://fhir.ee/sid/pid/blr "Root identifier for person identification of country Belarus"
+    * ^property[0].code = #notSelectable
+    * ^property[=].valueBoolean = true
+    * ^property[+].code = #country
+    * ^property[=].valueCode = #BLR
+    * #https://fhir.ee/sid/pid/blr/ppn "Passport number of Belarus"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #PPN
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #BLR
+      * ^property[+].code = #naming-system
+      * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-BLR"
+  * #https://fhir.ee/sid/pid/wlf "Root identifier for person identification of country Wallis and Futuna Islands"
+    * ^property[0].code = #notSelectable
+    * ^property[=].valueBoolean = true
+    * ^property[+].code = #country
+    * ^property[=].valueCode = #WLF
+    * #https://fhir.ee/sid/pid/wlf/ppn "Passport number of Wallis and Futuna Islands"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #PPN
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #WLF
+      * ^property[+].code = #naming-system
+      * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-WLF"
+  * #https://fhir.ee/sid/pid/vut "Root identifier for person identification of country Vanuatu"
+    * ^property[0].code = #notSelectable
+    * ^property[=].valueBoolean = true
+    * ^property[+].code = #country
+    * ^property[=].valueCode = #VUT
+    * #https://fhir.ee/sid/pid/vut/ppn "Passport number of Vanuatu"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #PPN
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #VUT
+      * ^property[+].code = #naming-system
+      * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-VUT"
+  * #https://fhir.ee/sid/pid/rus "Root identifier for person identification of country Russian Federation"
+    * ^property[0].code = #notSelectable
+    * ^property[=].valueBoolean = true
+    * ^property[+].code = #country
+    * ^property[=].valueCode = #RUS
+    * #https://fhir.ee/sid/pid/rus/ppn "Passport number of Russian Federation"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #PPN
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #RUS
+      * ^property[+].code = #naming-system
+      * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-RUS"
+  * #https://fhir.ee/sid/pid/ven "Root identifier for person identification of country Venezuela"
+    * ^property[0].code = #notSelectable
+    * ^property[=].valueBoolean = true
+    * ^property[+].code = #country
+    * ^property[=].valueCode = #VEN
+    * #https://fhir.ee/sid/pid/ven/ppn "Passport number of Venezuela"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #PPN
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #VEN
+      * ^property[+].code = #naming-system
+      * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-VEN"
+    * #https://fhir.ee/sid/pid/ven/ni "National identifier of Venezuela"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #NI
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #VEN
+  * #https://fhir.ee/sid/pid/vnm "Root identifier for person identification of country Viet Nam"
+    * ^property[0].code = #notSelectable
+    * ^property[=].valueBoolean = true
+    * ^property[+].code = #country
+    * ^property[=].valueCode = #VNM
+    * #https://fhir.ee/sid/pid/vnm/ppn "Passport number of Viet Nam"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #PPN
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #VNM
+      * ^property[+].code = #naming-system
+      * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-VNM"
+  * #https://fhir.ee/sid/pid/vir "Root identifier for person identification of country Virgin Islands (U.S.)"
+    * ^property[0].code = #notSelectable
+    * ^property[=].valueBoolean = true
+    * ^property[+].code = #country
+    * ^property[=].valueCode = #VIR
+    * #https://fhir.ee/sid/pid/vir/ppn "Passport number of Virgin Islands (U.S.)"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #PPN
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #VIR
+      * ^property[+].code = #naming-system
+      * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-VIR"
+  * #https://fhir.ee/sid/pid/umi "Root identifier for person identification of country United States Minor Outlying Islands"
+    * ^property[0].code = #notSelectable
+    * ^property[=].valueBoolean = true
+    * ^property[+].code = #country
+    * ^property[=].valueCode = #UMI
+    * #https://fhir.ee/sid/pid/umi/ppn "Passport number of United States Minor Outlying Islands"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #PPN
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #UMI
+      * ^property[+].code = #naming-system
+      * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-UMI"
