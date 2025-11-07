@@ -37,3 +37,7 @@ No definition could be found for URL value 'https://dhp.uz/fhir/core'
 # Lack of translations for sample instances - this is OK
 "The narrative includes custom content for the default language (en), but does not include translated content for the ru language, so the default language has been used
 "The narrative includes custom content for the default language (en), but does not include translated content for the uz language, so the default language has been used
+
+# IG Publisher / TX doesn't have contents of ISO 3166 codesystems - can be ignored
+Source Code System urn:iso:std:iso:3166 doesn't have all content (content = not-present), so the source codes cannot be checked
+Target Code System urn:iso:std:iso:3166 doesn't have all content (content = not-present), so the target codes cannot be checked
