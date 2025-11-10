@@ -75,11 +75,11 @@ jobs:
           
           echo "✅ QA check passed: $ERRORS errors (≤$MAX_ALLOWED_ERRORS) and $WARNINGS warnings (≤$MAX_ALLOWED_WARNINGS)"
 
-      - name: Wait for deployment update
-        if: github.ref == 'refs/heads/main'
-        run: |
-          chmod +x ./.github/scripts/wait-for-deployment.sh
-          ./.github/scripts/wait-for-deployment.sh https://dhp.uz/fhir/core/en/index.html 3600
+      # - name: Wait for deployment update
+      #   if: github.ref == 'refs/heads/main'
+      #   run: |
+      #     chmod +x ./.github/scripts/wait-for-deployment.sh
+      #     ./.github/scripts/wait-for-deployment.sh https://dhp.uz/fhir/core/en/index.html 3600
 
       - name: Upload output folder
         if: always() && hashFiles('output/**/*') != ''
