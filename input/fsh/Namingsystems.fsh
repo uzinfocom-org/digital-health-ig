@@ -59,7 +59,6 @@ Usage: #definition
 * uniqueId[0].type = #uri
 * uniqueId[=].value = "https://dhp.uz/fhir/core/sid/pid/uzb/ppn/local"
 * uniqueId[=].preferred = true
-* uniqueId[=].comment = "This is the canonical URI following the Estonian identifier domain pattern"
 
 Instance: pid-uzb-ppn-intl
 InstanceOf: NamingSystem
@@ -79,7 +78,6 @@ Usage: #definition
 * uniqueId[0].type = #uri
 * uniqueId[=].value = "https://dhp.uz/fhir/core/sid/pid/uzb/ppn/intl"
 * uniqueId[=].preferred = true
-* uniqueId[=].comment = "This is the canonical URI following the Estonian identifier domain pattern"
 
 Instance: pid-uzb-ppn-dp
 InstanceOf: NamingSystem
@@ -99,7 +97,6 @@ Usage: #definition
 * uniqueId[0].type = #uri
 * uniqueId[=].value = "https://dhp.uz/fhir/core/sid/pid/uzb/ppn/dp"
 * uniqueId[=].preferred = true
-* uniqueId[=].comment = "This is the canonical URI following the Estonian identifier domain pattern"
 
 Instance: pid-uzb-ni
 InstanceOf: NamingSystem
@@ -119,7 +116,6 @@ Usage: #definition
 * uniqueId[0].type = #uri
 * uniqueId[=].value = "https://dhp.uz/fhir/core/sid/pid/uzb/ni"
 * uniqueId[=].preferred = true
-* uniqueId[=].comment = "This is the canonical URI following the Estonian identifier domain pattern"
 
 Instance: pid-uzb-bct
 InstanceOf: NamingSystem
@@ -139,7 +135,6 @@ Usage: #definition
 * uniqueId[0].type = #uri
 * uniqueId[=].value = "https://dhp.uz/fhir/core/sid/pid/uzb/bct"
 * uniqueId[=].preferred = true
-* uniqueId[=].comment = "This is the canonical URI following the Estonian identifier domain pattern"
 
 Instance: pid-uzb-dl
 InstanceOf: NamingSystem
@@ -159,7 +154,6 @@ Usage: #definition
 * uniqueId[0].type = #uri
 * uniqueId[=].value = "https://dhp.uz/fhir/core/sid/pid/uzb/dl"
 * uniqueId[=].preferred = true
-* uniqueId[=].comment = "This is the canonical URI following the Estonian identifier domain pattern"
 
 Instance: pid-uzb-cz
 InstanceOf: NamingSystem
@@ -179,7 +173,6 @@ Usage: #definition
 * uniqueId[0].type = #uri
 * uniqueId[=].value = "https://dhp.uz/fhir/core/sid/pid/uzb/cz"
 * uniqueId[=].preferred = true
-* uniqueId[=].comment = "This is the canonical URI following the Estonian identifier domain pattern"
 
 Instance: pid-uzb-hc
 InstanceOf: NamingSystem
@@ -199,7 +192,6 @@ Usage: #definition
 * uniqueId[0].type = #uri
 * uniqueId[=].value = "https://dhp.uz/fhir/core/sid/pid/uzb/hc"
 * uniqueId[=].preferred = true
-* uniqueId[=].comment = "This is the canonical URI following the Estonian identifier domain pattern"
 
 Instance: pid-uzb-mi
 InstanceOf: NamingSystem
@@ -219,7 +211,6 @@ Usage: #definition
 * uniqueId[0].type = #uri
 * uniqueId[=].value = "https://dhp.uz/fhir/core/sid/pid/uzb/mi"
 * uniqueId[=].preferred = true
-* uniqueId[=].comment = "This is the canonical URI following the Estonian identifier domain pattern"
 
 Instance: pid-uzb-pcn
 InstanceOf: NamingSystem
@@ -239,7 +230,6 @@ Usage: #definition
 * uniqueId[0].type = #uri
 * uniqueId[=].value = "https://dhp.uz/fhir/core/sid/pid/uzb/pcn"
 * uniqueId[=].preferred = true
-* uniqueId[=].comment = "This is the canonical URI following the Estonian identifier domain pattern"
 
 Instance: location-unit
 InstanceOf: NamingSystem
