@@ -29,12 +29,12 @@ Description: """
 * #https://dhp.uz/fhir/core/sid/org "Root of identifiers for organization identification"
   * ^property[0].code = #notSelectable
   * ^property[=].valueBoolean = true
-  * #https://dhp.uz/fhir/core/sid/org/uzb "Root of Uzbekistan identifiers for organizations"
+  * #https://dhp.uz/fhir/core/sid/org/uz "Root of Uzbekistan identifiers for organizations"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
     * ^property[=].valueCode = #UZ
-    * #https://dhp.uz/fhir/core/sid/org/uzb/soliq "Tax identification numbers and other identifiers assigned by the Uzbekistan Tax Authority (Soliq)"
+    * #https://dhp.uz/fhir/core/sid/org/uz/soliq "Tax identification numbers and other identifiers assigned by the Uzbekistan Tax Authority (Soliq)"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #TAX
       * ^property[+].code = #country
@@ -43,7 +43,7 @@ Description: """
       * ^property[=].valueString = Canonical(uzb-soliq)
       * ^property[+].code = #notSelectable
       * ^property[=].valueBoolean = false
-    * #https://dhp.uz/fhir/core/sid/org/uzb/argos "Healthcare provider identifiers assigned by the Uzbekistan Human Resource Management (HRM) system"
+    * #https://dhp.uz/fhir/core/sid/org/uz/argos "Healthcare provider identifiers assigned by the Uzbekistan Human Resource Management (HRM) system"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #FI
       * ^property[+].code = #country
@@ -55,12 +55,12 @@ Description: """
 * #https://dhp.uz/fhir/core/sid/pro "Root of identifiers for healthcare professionals"
   * ^property[0].code = #notSelectable
   * ^property[=].valueBoolean = true
-  * #https://dhp.uz/fhir/core/sid/pro/uzb "Root of Uzbekistan identifiers for healthcare professionals"
+  * #https://dhp.uz/fhir/core/sid/pro/uz "Root of Uzbekistan identifiers for healthcare professionals"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
     * ^property[=].valueCode = #UZ
-    * #https://dhp.uz/fhir/core/sid/pro/uzb/argos "Healthcare professional official ID provided by HRM Argos. **should this be different from the personal**?"
+    * #https://dhp.uz/fhir/core/sid/pro/uz/argos "Healthcare professional official ID provided by HRM Argos."
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #NI
       * ^property[+].code = #country
@@ -77,14 +77,14 @@ Description: """
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
     * ^property[=].valueCode = #UZ
-    * #https://dhp.uz/fhir/core/sid/pid/uzb/ppn "Passport number of Uzbekistan"
+    * #https://dhp.uz/fhir/core/sid/pid/uz/ppn "Passport number of Uzbekistan"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #PPN
       * ^property[+].code = #notSelectable
       * ^property[=].valueBoolean = true
       * ^property[+].code = #country
       * ^property[=].valueCode = #UZ
-      * #https://dhp.uz/fhir/core/sid/pid/uzb/ppn/local "Local (internal) passport of Uzbekistan"
+      * #https://dhp.uz/fhir/core/sid/pid/uz/ppn/local "Local (internal) passport of Uzbekistan"
         * ^property[0].code = #idtype
         * ^property[=].valueCode = #PPN
         * ^property[+].code = #notSelectable
@@ -93,7 +93,7 @@ Description: """
         * ^property[=].valueCode = #UZ
         * ^property[+].code = #naming-system
         * ^property[=].valueString = "https://terminology.dhp.uz/fhir/core/NamingSystem/patient-id-uzb-passport-local"
-      * #https://dhp.uz/fhir/core/sid/pid/uzb/ppn/intl "International passport of Uzbekistan"
+      * #https://dhp.uz/fhir/core/sid/pid/uz/ppn/intl "International passport of Uzbekistan"
         * ^property[0].code = #idtype
         * ^property[=].valueCode = #PPN
         * ^property[+].code = #notSelectable
@@ -102,7 +102,7 @@ Description: """
         * ^property[=].valueCode = #UZ
         * ^property[+].code = #naming-system
         * ^property[=].valueString = "https://terminology.dhp.uz/fhir/core/NamingSystem/patient-id-uzb-passport-international"
-      * #https://dhp.uz/fhir/core/sid/pid/uzb/ppn/dp "Diplomatic passport of Uzbekistan"
+      * #https://dhp.uz/fhir/core/sid/pid/uz/ppn/dp "Diplomatic passport of Uzbekistan"
         * ^property[0].code = #idtype
         * ^property[=].valueCode = #PPN
         * ^property[+].code = #notSelectable
@@ -111,7 +111,7 @@ Description: """
         * ^property[=].valueCode = #UZ
         * ^property[+].code = #naming-system
         * ^property[=].valueString = "https://terminology.dhp.uz/fhir/core/NamingSystem/patient-id-uzb-passport-diplomatic"
-    * #https://dhp.uz/fhir/core/sid/pid/uzb/ni "National unique individual identifier of Uzbekistan"
+    * #https://dhp.uz/fhir/core/sid/pid/uz/ni "National unique individual identifier of Uzbekistan"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #NI
       * ^property[+].code = #notSelectable
@@ -120,7 +120,7 @@ Description: """
       * ^property[=].valueCode = #UZ
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "https://terminology.dhp.uz/fhir/core/NamingSystem/patient-id-uzb-national-id"
-    * #https://dhp.uz/fhir/core/sid/pid/uzb/bct "Birth certificate of Uzbekistan"
+    * #https://dhp.uz/fhir/core/sid/pid/uz/bct "Birth certificate of Uzbekistan"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #BCT
       * ^property[+].code = #notSelectable
@@ -129,7 +129,7 @@ Description: """
       * ^property[=].valueCode = #UZ
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "https://terminology.dhp.uz/fhir/core/NamingSystem/patient-id-uzb-birth-certificate"
-    * #https://dhp.uz/fhir/core/sid/pid/uzb/dl "Driver's license of Uzbekistan"
+    * #https://dhp.uz/fhir/core/sid/pid/uz/dl "Driver's license of Uzbekistan"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #DL
       * ^property[+].code = #notSelectable
@@ -138,7 +138,7 @@ Description: """
       * ^property[=].valueCode = #UZ
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "https://terminology.dhp.uz/fhir/core/NamingSystem/patient-id-uzb-drivers-license"
-    * #https://dhp.uz/fhir/core/sid/pid/uzb/hc "Health card number of Uzbekistan"
+    * #https://dhp.uz/fhir/core/sid/pid/uz/hc "Health card number of Uzbekistan"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #HC
       * ^property[+].code = #notSelectable
@@ -147,7 +147,7 @@ Description: """
       * ^property[=].valueCode = #UZ
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "https://terminology.dhp.uz/fhir/core/NamingSystem/patient-id-uzb-health-card"
-    * #https://dhp.uz/fhir/core/sid/pid/uzb/mi "Military ID number of Uzbekistan"
+    * #https://dhp.uz/fhir/core/sid/pid/uz/mi "Military ID number of Uzbekistan"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #MI
       * ^property[+].code = #notSelectable
@@ -156,7 +156,7 @@ Description: """
       * ^property[=].valueCode = #UZ
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "https://terminology.dhp.uz/fhir/core/NamingSystem/patient-id-uzb-military-id"
-    * #https://dhp.uz/fhir/core/sid/pid/uzb/pcn "Penitentiary/correctional institution number of Uzbekistan"
+    * #https://dhp.uz/fhir/core/sid/pid/uz/pcn "Penitentiary/correctional institution number of Uzbekistan"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #PCN
       * ^property[+].code = #notSelectable
@@ -165,7 +165,7 @@ Description: """
       * ^property[=].valueCode = #UZ
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "https://terminology.dhp.uz/fhir/core/NamingSystem/patient-id-uzb-penitentiary-number"
-    * #https://dhp.uz/fhir/core/sid/pid/uzb/mrt "Unknown patient code generated by healthcare provider"
+    * #https://dhp.uz/fhir/core/sid/pid/uz/mrt "Unknown patient code generated by healthcare provider"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #MR
       * ^property[+].code = #notSelectable
@@ -179,7 +179,7 @@ Description: """
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
     * ^property[=].valueCode = #AF
-    * #https://dhp.uz/fhir/core/sid/pid/afg/ppn "Passport number of Afghanistan"
+    * #https://dhp.uz/fhir/core/sid/pid/af/ppn "Passport number of Afghanistan"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #PPN
       * ^property[+].code = #notSelectable
@@ -193,7 +193,7 @@ Description: """
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
     * ^property[=].valueCode = #AX
-    * #https://dhp.uz/fhir/core/sid/pid/ala/ppn "Passport number of Åland Islands"
+    * #https://dhp.uz/fhir/core/sid/pid/ax/ppn "Passport number of Åland Islands"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #PPN
       * ^property[+].code = #notSelectable
@@ -207,7 +207,7 @@ Description: """
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
     * ^property[=].valueCode = #AL
-    * #https://dhp.uz/fhir/core/sid/pid/alb/ppn "Passport number of Albania"
+    * #https://dhp.uz/fhir/core/sid/pid/al/ppn "Passport number of Albania"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #PPN
       * ^property[+].code = #notSelectable
@@ -216,21 +216,21 @@ Description: """
       * ^property[=].valueCode = #AL
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-ALB"
-    * #https://dhp.uz/fhir/core/sid/pid/alb/ni "National identifier of Albania"
+    * #https://dhp.uz/fhir/core/sid/pid/al/ni "National identifier of Albania"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #NI
       * ^property[+].code = #notSelectable
       * ^property[=].valueBoolean = false
       * ^property[+].code = #country
       * ^property[=].valueCode = #AL
-    * #https://dhp.uz/fhir/core/sid/pid/alb/cz "ID-card number of Albania"
+    * #https://dhp.uz/fhir/core/sid/pid/al/cz "ID-card number of Albania"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #CZ
       * ^property[+].code = #notSelectable
       * ^property[=].valueBoolean = false
       * ^property[+].code = #country
       * ^property[=].valueCode = #AL
-    * #https://dhp.uz/fhir/core/sid/pid/alb/dl "Driver's licence number of Albania"
+    * #https://dhp.uz/fhir/core/sid/pid/al/dl "Driver's licence number of Albania"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #DL
       * ^property[+].code = #notSelectable
@@ -242,7 +242,7 @@ Description: """
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
     * ^property[=].valueCode = #DZ
-    * #https://dhp.uz/fhir/core/sid/pid/dza/ppn "Passport number of Algeria"
+    * #https://dhp.uz/fhir/core/sid/pid/dz/ppn "Passport number of Algeria"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #PPN
       * ^property[+].code = #notSelectable
@@ -256,7 +256,7 @@ Description: """
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
     * ^property[=].valueCode = #AS
-    * #https://dhp.uz/fhir/core/sid/pid/asm/ppn "Passport number of American Samoa"
+    * #https://dhp.uz/fhir/core/sid/pid/as/ppn "Passport number of American Samoa"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #PPN
       * ^property[+].code = #notSelectable
@@ -270,7 +270,7 @@ Description: """
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
     * ^property[=].valueCode = #US
-    * #https://dhp.uz/fhir/core/sid/pid/usa/ppn "Passport number of United States of America"
+    * #https://dhp.uz/fhir/core/sid/pid/us/ppn "Passport number of United States of America"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #PPN
       * ^property[+].code = #notSelectable
@@ -284,7 +284,7 @@ Description: """
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
     * ^property[=].valueCode = #AD
-    * #https://dhp.uz/fhir/core/sid/pid/and/ppn "Passport number of Andorra"
+    * #https://dhp.uz/fhir/core/sid/pid/ad/ppn "Passport number of Andorra"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #PPN
       * ^property[+].code = #notSelectable
@@ -298,7 +298,7 @@ Description: """
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
     * ^property[=].valueCode = #AO
-    * #https://dhp.uz/fhir/core/sid/pid/ago/ppn "Passport number of Angola"
+    * #https://dhp.uz/fhir/core/sid/pid/ao/ppn "Passport number of Angola"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #PPN
       * ^property[+].code = #notSelectable
@@ -312,7 +312,7 @@ Description: """
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
     * ^property[=].valueCode = #AI
-    * #https://dhp.uz/fhir/core/sid/pid/aia/ppn "Passport number of Anguilla"
+    * #https://dhp.uz/fhir/core/sid/pid/ai/ppn "Passport number of Anguilla"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #PPN
       * ^property[+].code = #notSelectable
@@ -326,7 +326,7 @@ Description: """
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
     * ^property[=].valueCode = #AQ
-    * #https://dhp.uz/fhir/core/sid/pid/ata/ppn "Passport number of Antarctica"
+    * #https://dhp.uz/fhir/core/sid/pid/aq/ppn "Passport number of Antarctica"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #PPN
       * ^property[+].code = #notSelectable
@@ -340,7 +340,7 @@ Description: """
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
     * ^property[=].valueCode = #AG
-    * #https://dhp.uz/fhir/core/sid/pid/atg/ppn "Passport number of Antigua and Barbuda"
+    * #https://dhp.uz/fhir/core/sid/pid/ag/ppn "Passport number of Antigua and Barbuda"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #PPN
       * ^property[+].code = #notSelectable
@@ -354,7 +354,7 @@ Description: """
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
     * ^property[=].valueCode = #AE
-    * #https://dhp.uz/fhir/core/sid/pid/are/ppn "Passport number of United Arab Emirates"
+    * #https://dhp.uz/fhir/core/sid/pid/ae/ppn "Passport number of United Arab Emirates"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #PPN
       * ^property[+].code = #notSelectable
@@ -363,14 +363,14 @@ Description: """
       * ^property[=].valueCode = #AE
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-ARE"
-    * #https://dhp.uz/fhir/core/sid/pid/are/ni "National identifier of United Arab Emirates"
+    * #https://dhp.uz/fhir/core/sid/pid/ae/ni "National identifier of United Arab Emirates"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #NI
       * ^property[+].code = #notSelectable
       * ^property[=].valueBoolean = false
       * ^property[+].code = #country
       * ^property[=].valueCode = #AE
-    * #https://dhp.uz/fhir/core/sid/pid/are/cz "ID-card number of United Arab Emirates"
+    * #https://dhp.uz/fhir/core/sid/pid/ae/cz "ID-card number of United Arab Emirates"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #CZ
       * ^property[+].code = #notSelectable
@@ -382,7 +382,7 @@ Description: """
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
     * ^property[=].valueCode = #AR
-    * #https://dhp.uz/fhir/core/sid/pid/arg/ppn "Passport number of Argentina"
+    * #https://dhp.uz/fhir/core/sid/pid/ar/ppn "Passport number of Argentina"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #PPN
       * ^property[+].code = #notSelectable
@@ -391,14 +391,14 @@ Description: """
       * ^property[=].valueCode = #AR
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-ARG"
-    * #https://dhp.uz/fhir/core/sid/pid/arg/ni "National identifier of Argentina"
+    * #https://dhp.uz/fhir/core/sid/pid/ar/ni "National identifier of Argentina"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #NI
       * ^property[+].code = #notSelectable
       * ^property[=].valueBoolean = false
       * ^property[+].code = #country
       * ^property[=].valueCode = #AR
-    * #https://dhp.uz/fhir/core/sid/pid/arg/dl "Driver's licence number of Argentina"
+    * #https://dhp.uz/fhir/core/sid/pid/ar/dl "Driver's licence number of Argentina"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #DL
       * ^property[+].code = #notSelectable
@@ -410,7 +410,7 @@ Description: """
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
     * ^property[=].valueCode = #AM
-    * #https://dhp.uz/fhir/core/sid/pid/arm/ppn "Passport number of Armenia"
+    * #https://dhp.uz/fhir/core/sid/pid/am/ppn "Passport number of Armenia"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #PPN
       * ^property[+].code = #notSelectable
@@ -424,7 +424,7 @@ Description: """
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
     * ^property[=].valueCode = #AW
-    * #https://dhp.uz/fhir/core/sid/pid/abw/ppn "Passport number of Aruba"
+    * #https://dhp.uz/fhir/core/sid/pid/aw/ppn "Passport number of Aruba"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #PPN
       * ^property[+].code = #notSelectable
@@ -438,7 +438,7 @@ Description: """
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
     * ^property[=].valueCode = #AZ
-    * #https://dhp.uz/fhir/core/sid/pid/aze/ppn "Passport number of Azerbaijan"
+    * #https://dhp.uz/fhir/core/sid/pid/az/ppn "Passport number of Azerbaijan"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #PPN
       * ^property[+].code = #notSelectable
@@ -452,7 +452,7 @@ Description: """
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
     * ^property[=].valueCode = #AU
-    * #https://dhp.uz/fhir/core/sid/pid/aus/ppn "Passport number of Australia"
+    * #https://dhp.uz/fhir/core/sid/pid/au/ppn "Passport number of Australia"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #PPN
       * ^property[+].code = #notSelectable
@@ -466,7 +466,7 @@ Description: """
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
     * ^property[=].valueCode = #AT
-    * #https://dhp.uz/fhir/core/sid/pid/aut/ppn "Passport number of Austria"
+    * #https://dhp.uz/fhir/core/sid/pid/at/ppn "Passport number of Austria"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #PPN
       * ^property[+].code = #notSelectable
@@ -480,7 +480,7 @@ Description: """
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
     * ^property[=].valueCode = #BS
-    * #https://dhp.uz/fhir/core/sid/pid/bhs/ppn "Passport number of Bahamas"
+    * #https://dhp.uz/fhir/core/sid/pid/bs/ppn "Passport number of Bahamas"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #PPN
       * ^property[+].code = #notSelectable
@@ -494,7 +494,7 @@ Description: """
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
     * ^property[=].valueCode = #BH
-    * #https://dhp.uz/fhir/core/sid/pid/bhr/ppn "Passport number of Bahrain"
+    * #https://dhp.uz/fhir/core/sid/pid/bh/ppn "Passport number of Bahrain"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #PPN
       * ^property[+].code = #notSelectable
@@ -503,14 +503,14 @@ Description: """
       * ^property[=].valueCode = #BH
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-BHR"
-    * #https://dhp.uz/fhir/core/sid/pid/bhr/ni "National identifier of Bahrain"
+    * #https://dhp.uz/fhir/core/sid/pid/bh/ni "National identifier of Bahrain"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #NI
       * ^property[+].code = #notSelectable
       * ^property[=].valueBoolean = false
       * ^property[+].code = #country
       * ^property[=].valueCode = #BH
-    * #https://dhp.uz/fhir/core/sid/pid/bhr/cz "ID-card number of Bahrain"
+    * #https://dhp.uz/fhir/core/sid/pid/bh/cz "ID-card number of Bahrain"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #CZ
       * ^property[+].code = #notSelectable
@@ -522,7 +522,7 @@ Description: """
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
     * ^property[=].valueCode = #BD
-    * #https://dhp.uz/fhir/core/sid/pid/bgd/ppn "Passport number of Bangladesh"
+    * #https://dhp.uz/fhir/core/sid/pid/bd/ppn "Passport number of Bangladesh"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #PPN
       * ^property[+].code = #notSelectable
@@ -531,7 +531,7 @@ Description: """
       * ^property[=].valueCode = #BD
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-BGD"
-    * #https://dhp.uz/fhir/core/sid/pid/bgd/ni "National identifier of Bangladesh"
+    * #https://dhp.uz/fhir/core/sid/pid/bd/ni "National identifier of Bangladesh"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #NI
       * ^property[+].code = #notSelectable
@@ -543,7 +543,7 @@ Description: """
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
     * ^property[=].valueCode = #BB
-    * #https://dhp.uz/fhir/core/sid/pid/brb/ppn "Passport number of Barbados"
+    * #https://dhp.uz/fhir/core/sid/pid/bb/ppn "Passport number of Barbados"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #PPN
       * ^property[+].code = #notSelectable
@@ -557,7 +557,7 @@ Description: """
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
     * ^property[=].valueCode = #PW
-    * #https://dhp.uz/fhir/core/sid/pid/plw/ppn "Passport number of Palau"
+    * #https://dhp.uz/fhir/core/sid/pid/pw/ppn "Passport number of Palau"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #PPN
       * ^property[+].code = #notSelectable
@@ -571,7 +571,7 @@ Description: """
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
     * ^property[=].valueCode = #BE
-    * #https://dhp.uz/fhir/core/sid/pid/bel/ppn "Passport number of Belgium"
+    * #https://dhp.uz/fhir/core/sid/pid/be/ppn "Passport number of Belgium"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #PPN
       * ^property[+].code = #notSelectable
@@ -580,21 +580,21 @@ Description: """
       * ^property[=].valueCode = #BE
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-BEL"
-    * #https://dhp.uz/fhir/core/sid/pid/bel/ni "National identifier of Belgium"
+    * #https://dhp.uz/fhir/core/sid/pid/be/ni "National identifier of Belgium"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #NI
       * ^property[+].code = #notSelectable
       * ^property[=].valueBoolean = false
       * ^property[+].code = #country
       * ^property[=].valueCode = #BE
-    * #https://dhp.uz/fhir/core/sid/pid/bel/cz "ID-card number of Belgium"
+    * #https://dhp.uz/fhir/core/sid/pid/be/cz "ID-card number of Belgium"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #CZ
       * ^property[+].code = #notSelectable
       * ^property[=].valueBoolean = false
       * ^property[+].code = #country
       * ^property[=].valueCode = #BE
-    * #https://dhp.uz/fhir/core/sid/pid/bel/dl "Driver's licence number of Belgium"
+    * #https://dhp.uz/fhir/core/sid/pid/be/dl "Driver's licence number of Belgium"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #DL
       * ^property[+].code = #notSelectable
@@ -606,7 +606,7 @@ Description: """
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
     * ^property[=].valueCode = #BZ
-    * #https://dhp.uz/fhir/core/sid/pid/blz/ppn "Passport number of Belize"
+    * #https://dhp.uz/fhir/core/sid/pid/bz/ppn "Passport number of Belize"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #PPN
       * ^property[+].code = #notSelectable
@@ -620,7 +620,7 @@ Description: """
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
     * ^property[=].valueCode = #BJ
-    * #https://dhp.uz/fhir/core/sid/pid/ben/ppn "Passport number of Benin"
+    * #https://dhp.uz/fhir/core/sid/pid/bj/ppn "Passport number of Benin"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #PPN
       * ^property[+].code = #notSelectable
@@ -634,7 +634,7 @@ Description: """
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
     * ^property[=].valueCode = #BM
-    * #https://dhp.uz/fhir/core/sid/pid/bmu/ppn "Passport number of Bermuda"
+    * #https://dhp.uz/fhir/core/sid/pid/bm/ppn "Passport number of Bermuda"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #PPN
       * ^property[+].code = #notSelectable
@@ -648,7 +648,7 @@ Description: """
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
     * ^property[=].valueCode = #BT
-    * #https://dhp.uz/fhir/core/sid/pid/btn/ppn "Passport number of Bhutan"
+    * #https://dhp.uz/fhir/core/sid/pid/bt/ppn "Passport number of Bhutan"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #PPN
       * ^property[+].code = #notSelectable
@@ -662,7 +662,7 @@ Description: """
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
     * ^property[=].valueCode = #BO
-    * #https://dhp.uz/fhir/core/sid/pid/bol/ppn "Passport number of Bolivia"
+    * #https://dhp.uz/fhir/core/sid/pid/bo/ppn "Passport number of Bolivia"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #PPN
       * ^property[+].code = #notSelectable
@@ -676,7 +676,7 @@ Description: """
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
     * ^property[=].valueCode = #BA
-    * #https://dhp.uz/fhir/core/sid/pid/bih/ppn "Passport number of Bosnia and Hertzegovina"
+    * #https://dhp.uz/fhir/core/sid/pid/ba/ppn "Passport number of Bosnia and Hertzegovina"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #PPN
       * ^property[+].code = #notSelectable
@@ -685,21 +685,21 @@ Description: """
       * ^property[=].valueCode = #BA
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-BIH"
-    * #https://dhp.uz/fhir/core/sid/pid/bih/ni "National identifier of Bosnia and Hertzegovina"
+    * #https://dhp.uz/fhir/core/sid/pid/ba/ni "National identifier of Bosnia and Hertzegovina"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #NI
       * ^property[+].code = #notSelectable
       * ^property[=].valueBoolean = false
       * ^property[+].code = #country
       * ^property[=].valueCode = #BA
-    * #https://dhp.uz/fhir/core/sid/pid/bih/cz "ID-card number of Bosnia and Hertzegovina"
+    * #https://dhp.uz/fhir/core/sid/pid/ba/cz "ID-card number of Bosnia and Hertzegovina"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #CZ
       * ^property[+].code = #notSelectable
       * ^property[=].valueBoolean = false
       * ^property[+].code = #country
       * ^property[=].valueCode = #BA
-    * #https://dhp.uz/fhir/core/sid/pid/bih/dl "Driver's licence number of Bosnia and Hertzegovina"
+    * #https://dhp.uz/fhir/core/sid/pid/ba/dl "Driver's licence number of Bosnia and Hertzegovina"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #DL
       * ^property[+].code = #notSelectable
@@ -711,7 +711,7 @@ Description: """
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
     * ^property[=].valueCode = #BW
-    * #https://dhp.uz/fhir/core/sid/pid/bwa/ppn "Passport number of Botswana"
+    * #https://dhp.uz/fhir/core/sid/pid/bw/ppn "Passport number of Botswana"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #PPN
       * ^property[+].code = #notSelectable
@@ -725,7 +725,7 @@ Description: """
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
     * ^property[=].valueCode = #BV
-    * #https://dhp.uz/fhir/core/sid/pid/bvt/ppn "Passport number of Bouvet Island"
+    * #https://dhp.uz/fhir/core/sid/pid/bv/ppn "Passport number of Bouvet Island"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #PPN
       * ^property[+].code = #notSelectable
@@ -739,7 +739,7 @@ Description: """
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
     * ^property[=].valueCode = #BR
-    * #https://dhp.uz/fhir/core/sid/pid/bra/ppn "Passport number of Brazil"
+    * #https://dhp.uz/fhir/core/sid/pid/br/ppn "Passport number of Brazil"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #PPN
       * ^property[+].code = #notSelectable
@@ -748,7 +748,7 @@ Description: """
       * ^property[=].valueCode = #BR
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-BRA"
-    * #https://dhp.uz/fhir/core/sid/pid/bra/ni "National identifier of Brazil"
+    * #https://dhp.uz/fhir/core/sid/pid/br/ni "National identifier of Brazil"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #NI
       * ^property[+].code = #notSelectable
@@ -760,7 +760,7 @@ Description: """
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
     * ^property[=].valueCode = #IO
-    * #https://dhp.uz/fhir/core/sid/pid/iot/ppn "Passport number of British Indian Ocean Territory"
+    * #https://dhp.uz/fhir/core/sid/pid/io/ppn "Passport number of British Indian Ocean Territory"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #PPN
       * ^property[+].code = #notSelectable
@@ -774,7 +774,7 @@ Description: """
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
     * ^property[=].valueCode = #VG
-    * #https://dhp.uz/fhir/core/sid/pid/vgb/ppn "Passport number of Virgin Islands (British)"
+    * #https://dhp.uz/fhir/core/sid/pid/vg/ppn "Passport number of Virgin Islands (British)"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #PPN
       * ^property[+].code = #notSelectable
@@ -788,7 +788,7 @@ Description: """
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
     * ^property[=].valueCode = #BN
-    * #https://dhp.uz/fhir/core/sid/pid/brn/ppn "Passport number of Brunei Darussalam"
+    * #https://dhp.uz/fhir/core/sid/pid/bn/ppn "Passport number of Brunei Darussalam"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #PPN
       * ^property[+].code = #notSelectable
@@ -802,7 +802,7 @@ Description: """
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
     * ^property[=].valueCode = #BG
-    * #https://dhp.uz/fhir/core/sid/pid/bgr/ppn "Passport number of Bulgaria"
+    * #https://dhp.uz/fhir/core/sid/pid/bg/ppn "Passport number of Bulgaria"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #PPN
       * ^property[+].code = #notSelectable
@@ -811,21 +811,21 @@ Description: """
       * ^property[=].valueCode = #BG
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-BGR"
-    * #https://dhp.uz/fhir/core/sid/pid/bgr/ni "National identifier of Bulgaria"
+    * #https://dhp.uz/fhir/core/sid/pid/bg/ni "National identifier of Bulgaria"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #NI
       * ^property[+].code = #notSelectable
       * ^property[=].valueBoolean = false
       * ^property[+].code = #country
       * ^property[=].valueCode = #BG
-    * #https://dhp.uz/fhir/core/sid/pid/bgr/cz "ID-card number of Bulgaria"
+    * #https://dhp.uz/fhir/core/sid/pid/bg/cz "ID-card number of Bulgaria"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #CZ
       * ^property[+].code = #notSelectable
       * ^property[=].valueBoolean = false
       * ^property[+].code = #country
       * ^property[=].valueCode = #BG
-    * #https://dhp.uz/fhir/core/sid/pid/bgr/dl "Driver's licence number of Bulgaria"
+    * #https://dhp.uz/fhir/core/sid/pid/bg/dl "Driver's licence number of Bulgaria"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #DL
       * ^property[+].code = #notSelectable
@@ -837,7 +837,7 @@ Description: """
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
     * ^property[=].valueCode = #BF
-    * #https://dhp.uz/fhir/core/sid/pid/bfa/ppn "Passport number of Burkina Faso"
+    * #https://dhp.uz/fhir/core/sid/pid/bf/ppn "Passport number of Burkina Faso"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #PPN
       * ^property[+].code = #notSelectable
@@ -851,7 +851,7 @@ Description: """
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
     * ^property[=].valueCode = #BI
-    * #https://dhp.uz/fhir/core/sid/pid/bdi/ppn "Passport number of Burundi"
+    * #https://dhp.uz/fhir/core/sid/pid/bi/ppn "Passport number of Burundi"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #PPN
       * ^property[+].code = #notSelectable
@@ -865,7 +865,7 @@ Description: """
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
     * ^property[=].valueCode = #CV
-    * #https://dhp.uz/fhir/core/sid/pid/cpv/ppn "Passport number of Cape Verde"
+    * #https://dhp.uz/fhir/core/sid/pid/cv/ppn "Passport number of Cape Verde"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #PPN
       * ^property[+].code = #notSelectable
@@ -879,7 +879,7 @@ Description: """
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
     * ^property[=].valueCode = #CO
-    * #https://dhp.uz/fhir/core/sid/pid/col/ppn "Passport number of Colombia"
+    * #https://dhp.uz/fhir/core/sid/pid/co/ppn "Passport number of Colombia"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #PPN
       * ^property[+].code = #notSelectable
@@ -888,14 +888,14 @@ Description: """
       * ^property[=].valueCode = #CO
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-COL"
-    * #https://dhp.uz/fhir/core/sid/pid/col/ni "National identifier of Colombia"
+    * #https://dhp.uz/fhir/core/sid/pid/co/ni "National identifier of Colombia"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #NI
       * ^property[+].code = #notSelectable
       * ^property[=].valueBoolean = false
       * ^property[+].code = #country
       * ^property[=].valueCode = #CO
-    * #https://dhp.uz/fhir/core/sid/pid/col/dl "Driver's licence number of Colombia"
+    * #https://dhp.uz/fhir/core/sid/pid/co/dl "Driver's licence number of Colombia"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #DL
       * ^property[+].code = #notSelectable
@@ -907,7 +907,7 @@ Description: """
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
     * ^property[=].valueCode = #CK
-    * #https://dhp.uz/fhir/core/sid/pid/cok/ppn "Passport number of Cook Islands"
+    * #https://dhp.uz/fhir/core/sid/pid/ck/ppn "Passport number of Cook Islands"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #PPN
       * ^property[+].code = #notSelectable
@@ -921,7 +921,7 @@ Description: """
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
     * ^property[=].valueCode = #CR
-    * #https://dhp.uz/fhir/core/sid/pid/cri/ppn "Passport number of Costa Rica"
+    * #https://dhp.uz/fhir/core/sid/pid/cr/ppn "Passport number of Costa Rica"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #PPN
       * ^property[+].code = #notSelectable
@@ -935,7 +935,7 @@ Description: """
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
     * ^property[=].valueCode = #CI
-    * #https://dhp.uz/fhir/core/sid/pid/civ/ppn "Passport number of Cote d'Ivoire"
+    * #https://dhp.uz/fhir/core/sid/pid/ci/ppn "Passport number of Cote d'Ivoire"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #PPN
       * ^property[+].code = #notSelectable
@@ -949,7 +949,7 @@ Description: """
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
     * ^property[=].valueCode = #DJ
-    * #https://dhp.uz/fhir/core/sid/pid/dji/ppn "Passport number of Djibouti"
+    * #https://dhp.uz/fhir/core/sid/pid/dj/ppn "Passport number of Djibouti"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #PPN
       * ^property[+].code = #notSelectable
@@ -963,7 +963,7 @@ Description: """
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
     * ^property[=].valueCode = #DM
-    * #https://dhp.uz/fhir/core/sid/pid/dma/ppn "Passport number of Dominica"
+    * #https://dhp.uz/fhir/core/sid/pid/dm/ppn "Passport number of Dominica"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #PPN
       * ^property[+].code = #notSelectable
@@ -977,7 +977,7 @@ Description: """
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
     * ^property[=].valueCode = #DO
-    * #https://dhp.uz/fhir/core/sid/pid/dom/ppn "Passport number of Dominican Republic"
+    * #https://dhp.uz/fhir/core/sid/pid/do/ppn "Passport number of Dominican Republic"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #PPN
       * ^property[+].code = #notSelectable
@@ -991,7 +991,7 @@ Description: """
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
     * ^property[=].valueCode = #EC
-    * #https://dhp.uz/fhir/core/sid/pid/ecu/ppn "Passport number of Ecuador"
+    * #https://dhp.uz/fhir/core/sid/pid/ec/ppn "Passport number of Ecuador"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #PPN
       * ^property[+].code = #notSelectable
@@ -1005,7 +1005,7 @@ Description: """
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
     * ^property[=].valueCode = #EG
-    * #https://dhp.uz/fhir/core/sid/pid/egy/ppn "Passport number of Egypt"
+    * #https://dhp.uz/fhir/core/sid/pid/eg/ppn "Passport number of Egypt"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #PPN
       * ^property[+].code = #notSelectable
@@ -1019,7 +1019,7 @@ Description: """
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
     * ^property[=].valueCode = #GQ
-    * #https://dhp.uz/fhir/core/sid/pid/gnq/ppn "Passport number of Equatorial Guinea"
+    * #https://dhp.uz/fhir/core/sid/pid/gq/ppn "Passport number of Equatorial Guinea"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #PPN
       * ^property[+].code = #notSelectable
@@ -1033,7 +1033,7 @@ Description: """
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
     * ^property[=].valueCode = #SV
-    * #https://dhp.uz/fhir/core/sid/pid/slv/ppn "Passport number of El Salvador"
+    * #https://dhp.uz/fhir/core/sid/pid/sv/ppn "Passport number of El Salvador"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #PPN
       * ^property[+].code = #notSelectable
@@ -1047,7 +1047,7 @@ Description: """
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
     * ^property[=].valueCode = #ER
-    * #https://dhp.uz/fhir/core/sid/pid/eri/ppn "Passport number of Eritrea"
+    * #https://dhp.uz/fhir/core/sid/pid/er/ppn "Passport number of Eritrea"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #PPN
       * ^property[+].code = #notSelectable
@@ -1061,7 +1061,7 @@ Description: """
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
     * ^property[=].valueCode = #ET
-    * #https://dhp.uz/fhir/core/sid/pid/eth/ppn "Passport number of Ethiopia"
+    * #https://dhp.uz/fhir/core/sid/pid/et/ppn "Passport number of Ethiopia"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #PPN
       * ^property[+].code = #notSelectable
@@ -1075,7 +1075,7 @@ Description: """
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
     * ^property[=].valueCode = #FK
-    * #https://dhp.uz/fhir/core/sid/pid/flk/ppn "Passport number of Falkland Islands (Malvinas)"
+    * #https://dhp.uz/fhir/core/sid/pid/fk/ppn "Passport number of Falkland Islands (Malvinas)"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #PPN
       * ^property[+].code = #notSelectable
@@ -1089,7 +1089,7 @@ Description: """
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
     * ^property[=].valueCode = #FJ
-    * #https://dhp.uz/fhir/core/sid/pid/fji/ppn "Passport number of Fiji"
+    * #https://dhp.uz/fhir/core/sid/pid/fj/ppn "Passport number of Fiji"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #PPN
       * ^property[+].code = #notSelectable
@@ -1103,7 +1103,7 @@ Description: """
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
     * ^property[=].valueCode = #PH
-    * #https://dhp.uz/fhir/core/sid/pid/phl/ppn "Passport number of Philippines"
+    * #https://dhp.uz/fhir/core/sid/pid/ph/ppn "Passport number of Philippines"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #PPN
       * ^property[+].code = #notSelectable
@@ -1117,7 +1117,7 @@ Description: """
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
     * ^property[=].valueCode = #FO
-    * #https://dhp.uz/fhir/core/sid/pid/fro/ppn "Passport number of Faroe Islands"
+    * #https://dhp.uz/fhir/core/sid/pid/fo/ppn "Passport number of Faroe Islands"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #PPN
       * ^property[+].code = #notSelectable
@@ -1131,7 +1131,7 @@ Description: """
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
     * ^property[=].valueCode = #GA
-    * #https://dhp.uz/fhir/core/sid/pid/gab/ppn "Passport number of Gabon"
+    * #https://dhp.uz/fhir/core/sid/pid/ga/ppn "Passport number of Gabon"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #PPN
       * ^property[+].code = #notSelectable
@@ -1145,7 +1145,7 @@ Description: """
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
     * ^property[=].valueCode = #GM
-    * #https://dhp.uz/fhir/core/sid/pid/gmb/ppn "Passport number of Gambia"
+    * #https://dhp.uz/fhir/core/sid/pid/gm/ppn "Passport number of Gambia"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #PPN
       * ^property[+].code = #notSelectable
@@ -1159,7 +1159,7 @@ Description: """
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
     * ^property[=].valueCode = #GH
-    * #https://dhp.uz/fhir/core/sid/pid/gha/ppn "Passport number of Ghana"
+    * #https://dhp.uz/fhir/core/sid/pid/gh/ppn "Passport number of Ghana"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #PPN
       * ^property[+].code = #notSelectable
@@ -1173,7 +1173,7 @@ Description: """
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
     * ^property[=].valueCode = #GI
-    * #https://dhp.uz/fhir/core/sid/pid/gib/ppn "Passport number of Gibraltar"
+    * #https://dhp.uz/fhir/core/sid/pid/gi/ppn "Passport number of Gibraltar"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #PPN
       * ^property[+].code = #notSelectable
@@ -1187,7 +1187,7 @@ Description: """
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
     * ^property[=].valueCode = #GD
-    * #https://dhp.uz/fhir/core/sid/pid/grd/ppn "Passport number of Grenada"
+    * #https://dhp.uz/fhir/core/sid/pid/gd/ppn "Passport number of Grenada"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #PPN
       * ^property[+].code = #notSelectable
@@ -1201,7 +1201,7 @@ Description: """
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
     * ^property[=].valueCode = #GE
-    * #https://dhp.uz/fhir/core/sid/pid/geo/ppn "Passport number of Georgia"
+    * #https://dhp.uz/fhir/core/sid/pid/ge/ppn "Passport number of Georgia"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #PPN
       * ^property[+].code = #notSelectable
@@ -1210,21 +1210,21 @@ Description: """
       * ^property[=].valueCode = #GE
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-GEO"
-    * #https://dhp.uz/fhir/core/sid/pid/geo/ni "National identifier of Georgia"
+    * #https://dhp.uz/fhir/core/sid/pid/ge/ni "National identifier of Georgia"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #NI
       * ^property[+].code = #notSelectable
       * ^property[=].valueBoolean = false
       * ^property[+].code = #country
       * ^property[=].valueCode = #GE
-    * #https://dhp.uz/fhir/core/sid/pid/geo/cz "ID-card number of Georgia"
+    * #https://dhp.uz/fhir/core/sid/pid/ge/cz "ID-card number of Georgia"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #CZ
       * ^property[+].code = #notSelectable
       * ^property[=].valueBoolean = false
       * ^property[+].code = #country
       * ^property[=].valueCode = #GE
-    * #https://dhp.uz/fhir/core/sid/pid/geo/dl "Driver's licence number of Georgia"
+    * #https://dhp.uz/fhir/core/sid/pid/ge/dl "Driver's licence number of Georgia"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #DL
       * ^property[+].code = #notSelectable
@@ -1236,7 +1236,7 @@ Description: """
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
     * ^property[=].valueCode = #GL
-    * #https://dhp.uz/fhir/core/sid/pid/grl/ppn "Passport number of Greenland"
+    * #https://dhp.uz/fhir/core/sid/pid/gl/ppn "Passport number of Greenland"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #PPN
       * ^property[+].code = #notSelectable
@@ -1250,7 +1250,7 @@ Description: """
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
     * ^property[=].valueCode = #GP
-    * #https://dhp.uz/fhir/core/sid/pid/glp/ppn "Passport number of Guadeloupe"
+    * #https://dhp.uz/fhir/core/sid/pid/gp/ppn "Passport number of Guadeloupe"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #PPN
       * ^property[+].code = #notSelectable
@@ -1264,7 +1264,7 @@ Description: """
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
     * ^property[=].valueCode = #GF
-    * #https://dhp.uz/fhir/core/sid/pid/guf/ppn "Passport number of French Guiana"
+    * #https://dhp.uz/fhir/core/sid/pid/gf/ppn "Passport number of French Guiana"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #PPN
       * ^property[+].code = #notSelectable
@@ -1278,7 +1278,7 @@ Description: """
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
     * ^property[=].valueCode = #GU
-    * #https://dhp.uz/fhir/core/sid/pid/gum/ppn "Passport number of Guam"
+    * #https://dhp.uz/fhir/core/sid/pid/gu/ppn "Passport number of Guam"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #PPN
       * ^property[+].code = #notSelectable
@@ -1292,7 +1292,7 @@ Description: """
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
     * ^property[=].valueCode = #GT
-    * #https://dhp.uz/fhir/core/sid/pid/gtm/ppn "Passport number of Guatemala"
+    * #https://dhp.uz/fhir/core/sid/pid/gt/ppn "Passport number of Guatemala"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #PPN
       * ^property[+].code = #notSelectable
@@ -1306,7 +1306,7 @@ Description: """
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
     * ^property[=].valueCode = #GG
-    * #https://dhp.uz/fhir/core/sid/pid/ggy/ppn "Passport number of Guernsey"
+    * #https://dhp.uz/fhir/core/sid/pid/gg/ppn "Passport number of Guernsey"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #PPN
       * ^property[+].code = #notSelectable
@@ -1320,7 +1320,7 @@ Description: """
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
     * ^property[=].valueCode = #GN
-    * #https://dhp.uz/fhir/core/sid/pid/gin/ppn "Passport number of Guinea"
+    * #https://dhp.uz/fhir/core/sid/pid/gn/ppn "Passport number of Guinea"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #PPN
       * ^property[+].code = #notSelectable
@@ -1334,7 +1334,7 @@ Description: """
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
     * ^property[=].valueCode = #GW
-    * #https://dhp.uz/fhir/core/sid/pid/gnb/ppn "Passport number of Guinea-Bissau"
+    * #https://dhp.uz/fhir/core/sid/pid/gw/ppn "Passport number of Guinea-Bissau"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #PPN
       * ^property[+].code = #notSelectable
@@ -1348,7 +1348,7 @@ Description: """
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
     * ^property[=].valueCode = #GY
-    * #https://dhp.uz/fhir/core/sid/pid/guy/ppn "Passport number of Guyana"
+    * #https://dhp.uz/fhir/core/sid/pid/gy/ppn "Passport number of Guyana"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #PPN
       * ^property[+].code = #notSelectable
@@ -1362,7 +1362,7 @@ Description: """
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
     * ^property[=].valueCode = #HT
-    * #https://dhp.uz/fhir/core/sid/pid/hti/ppn "Passport number of Haiti"
+    * #https://dhp.uz/fhir/core/sid/pid/ht/ppn "Passport number of Haiti"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #PPN
       * ^property[+].code = #notSelectable
@@ -1376,7 +1376,7 @@ Description: """
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
     * ^property[=].valueCode = #HM
-    * #https://dhp.uz/fhir/core/sid/pid/hmd/ppn "Passport number of Heard and McDonald Islands"
+    * #https://dhp.uz/fhir/core/sid/pid/hm/ppn "Passport number of Heard and McDonald Islands"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #PPN
       * ^property[+].code = #notSelectable
@@ -1390,7 +1390,7 @@ Description: """
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
     * ^property[=].valueCode = #MO
-    * #https://dhp.uz/fhir/core/sid/pid/mac/ppn "Passport number of Macao"
+    * #https://dhp.uz/fhir/core/sid/pid/mo/ppn "Passport number of Macao"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #PPN
       * ^property[+].code = #notSelectable
@@ -1399,7 +1399,7 @@ Description: """
       * ^property[=].valueCode = #MO
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-MAC"
-    * #https://dhp.uz/fhir/core/sid/pid/mac/ni "National identifier of Macao"
+    * #https://dhp.uz/fhir/core/sid/pid/mo/ni "National identifier of Macao"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #NI
       * ^property[+].code = #notSelectable
@@ -1411,7 +1411,7 @@ Description: """
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
     * ^property[=].valueCode = #HK
-    * #https://dhp.uz/fhir/core/sid/pid/hkg/ppn "Passport number of Hong Kong"
+    * #https://dhp.uz/fhir/core/sid/pid/hk/ppn "Passport number of Hong Kong"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #PPN
       * ^property[+].code = #notSelectable
@@ -1420,7 +1420,7 @@ Description: """
       * ^property[=].valueCode = #HK
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-HKG"
-    * #https://dhp.uz/fhir/core/sid/pid/hkg/ni "National identifier of Hong Kong"
+    * #https://dhp.uz/fhir/core/sid/pid/hk/ni "National identifier of Hong Kong"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #NI
       * ^property[+].code = #notSelectable
@@ -1432,7 +1432,7 @@ Description: """
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
     * ^property[=].valueCode = #CN
-    * #https://dhp.uz/fhir/core/sid/pid/chn/ppn "Passport number of China"
+    * #https://dhp.uz/fhir/core/sid/pid/cn/ppn "Passport number of China"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #PPN
       * ^property[+].code = #notSelectable
@@ -1441,7 +1441,7 @@ Description: """
       * ^property[=].valueCode = #CN
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-CHN"
-    * #https://dhp.uz/fhir/core/sid/pid/chn/ni "National identifier of China"
+    * #https://dhp.uz/fhir/core/sid/pid/cn/ni "National identifier of China"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #NI
       * ^property[+].code = #notSelectable
@@ -1453,7 +1453,7 @@ Description: """
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
     * ^property[=].valueCode = #ES
-    * #https://dhp.uz/fhir/core/sid/pid/esp/ppn "Passport number of Spain"
+    * #https://dhp.uz/fhir/core/sid/pid/es/ppn "Passport number of Spain"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #PPN
       * ^property[+].code = #notSelectable
@@ -1462,21 +1462,21 @@ Description: """
       * ^property[=].valueCode = #ES
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-ESP"
-    * #https://dhp.uz/fhir/core/sid/pid/esp/ni "National identifier of Spain"
+    * #https://dhp.uz/fhir/core/sid/pid/es/ni "National identifier of Spain"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #NI
       * ^property[+].code = #notSelectable
       * ^property[=].valueBoolean = false
       * ^property[+].code = #country
       * ^property[=].valueCode = #ES
-    * #https://dhp.uz/fhir/core/sid/pid/esp/cz "ID-card number of Spain"
+    * #https://dhp.uz/fhir/core/sid/pid/es/cz "ID-card number of Spain"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #CZ
       * ^property[+].code = #notSelectable
       * ^property[=].valueBoolean = false
       * ^property[+].code = #country
       * ^property[=].valueCode = #ES
-    * #https://dhp.uz/fhir/core/sid/pid/esp/dl "Driver's licence number of Spain"
+    * #https://dhp.uz/fhir/core/sid/pid/es/dl "Driver's licence number of Spain"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #DL
       * ^property[+].code = #notSelectable
@@ -1488,7 +1488,7 @@ Description: """
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
     * ^property[=].valueCode = #AN
-    * #https://dhp.uz/fhir/core/sid/pid/ant/ppn "Passport number of Netherlands Antilles"
+    * #https://dhp.uz/fhir/core/sid/pid/an/ppn "Passport number of Netherlands Antilles"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #PPN
       * ^property[+].code = #notSelectable
@@ -1502,7 +1502,7 @@ Description: """
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
     * ^property[=].valueCode = #HN
-    * #https://dhp.uz/fhir/core/sid/pid/hnd/ppn "Passport number of Honduras"
+    * #https://dhp.uz/fhir/core/sid/pid/hn/ppn "Passport number of Honduras"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #PPN
       * ^property[+].code = #notSelectable
@@ -1516,7 +1516,7 @@ Description: """
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
     * ^property[=].valueCode = #HR
-    * #https://dhp.uz/fhir/core/sid/pid/hrv/ppn "Passport number of Croatia"
+    * #https://dhp.uz/fhir/core/sid/pid/hr/ppn "Passport number of Croatia"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #PPN
       * ^property[+].code = #notSelectable
@@ -1525,21 +1525,21 @@ Description: """
       * ^property[=].valueCode = #HR
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-HRV"
-    * #https://dhp.uz/fhir/core/sid/pid/hrv/ni "National identifier of Croatia"
+    * #https://dhp.uz/fhir/core/sid/pid/hr/ni "National identifier of Croatia"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #NI
       * ^property[+].code = #notSelectable
       * ^property[=].valueBoolean = false
       * ^property[+].code = #country
       * ^property[=].valueCode = #HR
-    * #https://dhp.uz/fhir/core/sid/pid/hrv/cz "ID-card number of Croatia"
+    * #https://dhp.uz/fhir/core/sid/pid/hr/cz "ID-card number of Croatia"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #CZ
       * ^property[+].code = #notSelectable
       * ^property[=].valueBoolean = false
       * ^property[+].code = #country
       * ^property[=].valueCode = #HR
-    * #https://dhp.uz/fhir/core/sid/pid/hrv/dl "Driver's licence number of Croatia"
+    * #https://dhp.uz/fhir/core/sid/pid/hr/dl "Driver's licence number of Croatia"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #DL
       * ^property[+].code = #notSelectable
@@ -1551,7 +1551,7 @@ Description: """
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
     * ^property[=].valueCode = #IE
-    * #https://dhp.uz/fhir/core/sid/pid/irl/ppn "Passport number of Ireland"
+    * #https://dhp.uz/fhir/core/sid/pid/ie/ppn "Passport number of Ireland"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #PPN
       * ^property[+].code = #notSelectable
@@ -1565,7 +1565,7 @@ Description: """
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
     * ^property[=].valueCode = #IL
-    * #https://dhp.uz/fhir/core/sid/pid/isr/ppn "Passport number of Israel"
+    * #https://dhp.uz/fhir/core/sid/pid/il/ppn "Passport number of Israel"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #PPN
       * ^property[+].code = #notSelectable
@@ -1574,7 +1574,7 @@ Description: """
       * ^property[=].valueCode = #IL
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-ISR"
-    * #https://dhp.uz/fhir/core/sid/pid/isr/ni "National identifier of Israel"
+    * #https://dhp.uz/fhir/core/sid/pid/il/ni "National identifier of Israel"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #NI
       * ^property[+].code = #notSelectable
@@ -1586,7 +1586,7 @@ Description: """
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
     * ^property[=].valueCode = #IN
-    * #https://dhp.uz/fhir/core/sid/pid/ind/ppn "Passport number of India"
+    * #https://dhp.uz/fhir/core/sid/pid/in/ppn "Passport number of India"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #PPN
       * ^property[+].code = #notSelectable
@@ -1600,7 +1600,7 @@ Description: """
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
     * ^property[=].valueCode = #ID
-    * #https://dhp.uz/fhir/core/sid/pid/idn/ppn "Passport number of Indonesia"
+    * #https://dhp.uz/fhir/core/sid/pid/id/ppn "Passport number of Indonesia"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #PPN
       * ^property[+].code = #notSelectable
@@ -1609,7 +1609,7 @@ Description: """
       * ^property[=].valueCode = #ID
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-IDN"
-    * #https://dhp.uz/fhir/core/sid/pid/idn/ni "National identifier of Indonesia"
+    * #https://dhp.uz/fhir/core/sid/pid/id/ni "National identifier of Indonesia"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #NI
       * ^property[+].code = #notSelectable
@@ -1621,7 +1621,7 @@ Description: """
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
     * ^property[=].valueCode = #IQ
-    * #https://dhp.uz/fhir/core/sid/pid/irq/ppn "Passport number of Iraq"
+    * #https://dhp.uz/fhir/core/sid/pid/iq/ppn "Passport number of Iraq"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #PPN
       * ^property[+].code = #notSelectable
@@ -1635,7 +1635,7 @@ Description: """
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
     * ^property[=].valueCode = #IR
-    * #https://dhp.uz/fhir/core/sid/pid/irn/ppn "Passport number of Iran"
+    * #https://dhp.uz/fhir/core/sid/pid/ir/ppn "Passport number of Iran"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #PPN
       * ^property[+].code = #notSelectable
@@ -1649,7 +1649,7 @@ Description: """
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
     * ^property[=].valueCode = #IS
-    * #https://dhp.uz/fhir/core/sid/pid/isl/ppn "Passport number of Iceland"
+    * #https://dhp.uz/fhir/core/sid/pid/is/ppn "Passport number of Iceland"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #PPN
       * ^property[+].code = #notSelectable
@@ -1658,14 +1658,14 @@ Description: """
       * ^property[=].valueCode = #IS
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-ISL"
-    * #https://dhp.uz/fhir/core/sid/pid/isl/ni "National identifier of Iceland"
+    * #https://dhp.uz/fhir/core/sid/pid/is/ni "National identifier of Iceland"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #NI
       * ^property[+].code = #notSelectable
       * ^property[=].valueBoolean = false
       * ^property[+].code = #country
       * ^property[=].valueCode = #IS
-    * #https://dhp.uz/fhir/core/sid/pid/isl/dl "Driver's licence number of Iceland"
+    * #https://dhp.uz/fhir/core/sid/pid/is/dl "Driver's licence number of Iceland"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #DL
       * ^property[+].code = #notSelectable
@@ -1677,7 +1677,7 @@ Description: """
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
     * ^property[=].valueCode = #IT
-    * #https://dhp.uz/fhir/core/sid/pid/ita/ppn "Passport number of Italy"
+    * #https://dhp.uz/fhir/core/sid/pid/it/ppn "Passport number of Italy"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #PPN
       * ^property[+].code = #notSelectable
@@ -1686,21 +1686,21 @@ Description: """
       * ^property[=].valueCode = #IT
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-ITA"
-    * #https://dhp.uz/fhir/core/sid/pid/ita/ni "National identifier of Italy"
+    * #https://dhp.uz/fhir/core/sid/pid/it/ni "National identifier of Italy"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #NI
       * ^property[+].code = #notSelectable
       * ^property[=].valueBoolean = false
       * ^property[+].code = #country
       * ^property[=].valueCode = #IT
-    * #https://dhp.uz/fhir/core/sid/pid/ita/cz "ID-card number of Italy"
+    * #https://dhp.uz/fhir/core/sid/pid/it/cz "ID-card number of Italy"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #CZ
       * ^property[+].code = #notSelectable
       * ^property[=].valueBoolean = false
       * ^property[+].code = #country
       * ^property[=].valueCode = #IT
-    * #https://dhp.uz/fhir/core/sid/pid/ita/dl "Driver's licence number of Italy"
+    * #https://dhp.uz/fhir/core/sid/pid/it/dl "Driver's licence number of Italy"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #DL
       * ^property[+].code = #notSelectable
@@ -1712,7 +1712,7 @@ Description: """
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
     * ^property[=].valueCode = #JP
-    * #https://dhp.uz/fhir/core/sid/pid/jpn/ppn "Passport number of Japan"
+    * #https://dhp.uz/fhir/core/sid/pid/jp/ppn "Passport number of Japan"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #PPN
       * ^property[+].code = #notSelectable
@@ -1726,7 +1726,7 @@ Description: """
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
     * ^property[=].valueCode = #JM
-    * #https://dhp.uz/fhir/core/sid/pid/jam/ppn "Passport number of Jamaica"
+    * #https://dhp.uz/fhir/core/sid/pid/jm/ppn "Passport number of Jamaica"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #PPN
       * ^property[+].code = #notSelectable
@@ -1740,7 +1740,7 @@ Description: """
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
     * ^property[=].valueCode = #YE
-    * #https://dhp.uz/fhir/core/sid/pid/yem/ppn "Passport number of Yemen"
+    * #https://dhp.uz/fhir/core/sid/pid/ye/ppn "Passport number of Yemen"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #PPN
       * ^property[+].code = #notSelectable
@@ -1754,7 +1754,7 @@ Description: """
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
     * ^property[=].valueCode = #JE
-    * #https://dhp.uz/fhir/core/sid/pid/jey/ppn "Passport number of Jersey"
+    * #https://dhp.uz/fhir/core/sid/pid/je/ppn "Passport number of Jersey"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #PPN
       * ^property[+].code = #notSelectable
@@ -1768,7 +1768,7 @@ Description: """
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
     * ^property[=].valueCode = #JO
-    * #https://dhp.uz/fhir/core/sid/pid/jor/ppn "Passport number of Jordan"
+    * #https://dhp.uz/fhir/core/sid/pid/jo/ppn "Passport number of Jordan"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #PPN
       * ^property[+].code = #notSelectable
@@ -1782,7 +1782,7 @@ Description: """
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
     * ^property[=].valueCode = #CX
-    * #https://dhp.uz/fhir/core/sid/pid/cxr/ppn "Passport number of Christmas Island"
+    * #https://dhp.uz/fhir/core/sid/pid/cx/ppn "Passport number of Christmas Island"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #PPN
       * ^property[+].code = #notSelectable
@@ -1796,7 +1796,7 @@ Description: """
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
     * ^property[=].valueCode = #KY
-    * #https://dhp.uz/fhir/core/sid/pid/cym/ppn "Passport number of Cayman Islands"
+    * #https://dhp.uz/fhir/core/sid/pid/ky/ppn "Passport number of Cayman Islands"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #PPN
       * ^property[+].code = #notSelectable
@@ -1810,7 +1810,7 @@ Description: """
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
     * ^property[=].valueCode = #KH
-    * #https://dhp.uz/fhir/core/sid/pid/khm/ppn "Passport number of Cambodia"
+    * #https://dhp.uz/fhir/core/sid/pid/kh/ppn "Passport number of Cambodia"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #PPN
       * ^property[+].code = #notSelectable
@@ -1824,7 +1824,7 @@ Description: """
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
     * ^property[=].valueCode = #CM
-    * #https://dhp.uz/fhir/core/sid/pid/cmr/ppn "Passport number of Cameroon"
+    * #https://dhp.uz/fhir/core/sid/pid/cm/ppn "Passport number of Cameroon"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #PPN
       * ^property[+].code = #notSelectable
@@ -1838,7 +1838,7 @@ Description: """
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
     * ^property[=].valueCode = #CA
-    * #https://dhp.uz/fhir/core/sid/pid/can/ppn "Passport number of Canada"
+    * #https://dhp.uz/fhir/core/sid/pid/ca/ppn "Passport number of Canada"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #PPN
       * ^property[+].code = #notSelectable
@@ -1852,7 +1852,7 @@ Description: """
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
     * ^property[=].valueCode = #KZ
-    * #https://dhp.uz/fhir/core/sid/pid/kaz/ppn "Passport number of Kazakhstan"
+    * #https://dhp.uz/fhir/core/sid/pid/kz/ppn "Passport number of Kazakhstan"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #PPN
       * ^property[+].code = #notSelectable
@@ -1861,21 +1861,21 @@ Description: """
       * ^property[=].valueCode = #KZ
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-KAZ"
-    * #https://dhp.uz/fhir/core/sid/pid/kaz/ni "National identifier of Kazakhstan"
+    * #https://dhp.uz/fhir/core/sid/pid/kz/ni "National identifier of Kazakhstan"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #NI
       * ^property[+].code = #notSelectable
       * ^property[=].valueBoolean = false
       * ^property[+].code = #country
       * ^property[=].valueCode = #KZ
-    * #https://dhp.uz/fhir/core/sid/pid/kaz/cz "ID-card number of Kazakhstan"
+    * #https://dhp.uz/fhir/core/sid/pid/kz/cz "ID-card number of Kazakhstan"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #CZ
       * ^property[+].code = #notSelectable
       * ^property[=].valueBoolean = false
       * ^property[+].code = #country
       * ^property[=].valueCode = #KZ
-    * #https://dhp.uz/fhir/core/sid/pid/kaz/dl "Driver's licence number of Kazakhstan"
+    * #https://dhp.uz/fhir/core/sid/pid/kz/dl "Driver's licence number of Kazakhstan"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #DL
       * ^property[+].code = #notSelectable
@@ -1887,7 +1887,7 @@ Description: """
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
     * ^property[=].valueCode = #QA
-    * #https://dhp.uz/fhir/core/sid/pid/qat/ppn "Passport number of Qatar"
+    * #https://dhp.uz/fhir/core/sid/pid/qa/ppn "Passport number of Qatar"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #PPN
       * ^property[+].code = #notSelectable
@@ -1901,7 +1901,7 @@ Description: """
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
     * ^property[=].valueCode = #KE
-    * #https://dhp.uz/fhir/core/sid/pid/ken/ppn "Passport number of Kenya"
+    * #https://dhp.uz/fhir/core/sid/pid/ke/ppn "Passport number of Kenya"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #PPN
       * ^property[+].code = #notSelectable
@@ -1915,7 +1915,7 @@ Description: """
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
     * ^property[=].valueCode = #CF
-    * #https://dhp.uz/fhir/core/sid/pid/caf/ppn "Passport number of Central African Republik"
+    * #https://dhp.uz/fhir/core/sid/pid/cf/ppn "Passport number of Central African Republik"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #PPN
       * ^property[+].code = #notSelectable
@@ -1929,7 +1929,7 @@ Description: """
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
     * ^property[=].valueCode = #KG
-    * #https://dhp.uz/fhir/core/sid/pid/kgz/ppn "Passport number of Kyrgyzstan"
+    * #https://dhp.uz/fhir/core/sid/pid/kg/ppn "Passport number of Kyrgyzstan"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #PPN
       * ^property[+].code = #notSelectable
@@ -1943,7 +1943,7 @@ Description: """
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
     * ^property[=].valueCode = #KI
-    * #https://dhp.uz/fhir/core/sid/pid/kir/ppn "Passport number of Kiribati"
+    * #https://dhp.uz/fhir/core/sid/pid/ki/ppn "Passport number of Kiribati"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #PPN
       * ^property[+].code = #notSelectable
@@ -1957,7 +1957,7 @@ Description: """
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
     * ^property[=].valueCode = #KM
-    * #https://dhp.uz/fhir/core/sid/pid/com/ppn "Passport number of Comoros"
+    * #https://dhp.uz/fhir/core/sid/pid/km/ppn "Passport number of Comoros"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #PPN
       * ^property[+].code = #notSelectable
@@ -1971,7 +1971,7 @@ Description: """
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
     * ^property[=].valueCode = #CD
-    * #https://dhp.uz/fhir/core/sid/pid/cod/ppn "Passport number of Congo, the Democratic Republik of the"
+    * #https://dhp.uz/fhir/core/sid/pid/cd/ppn "Passport number of Congo, the Democratic Republik of the"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #PPN
       * ^property[+].code = #notSelectable
@@ -1985,7 +1985,7 @@ Description: """
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
     * ^property[=].valueCode = #CG
-    * #https://dhp.uz/fhir/core/sid/pid/cog/ppn "Passport number of Congo"
+    * #https://dhp.uz/fhir/core/sid/pid/cg/ppn "Passport number of Congo"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #PPN
       * ^property[+].code = #notSelectable
@@ -1999,7 +1999,7 @@ Description: """
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
     * ^property[=].valueCode = #CC
-    * #https://dhp.uz/fhir/core/sid/pid/cck/ppn "Passport number of Cocos (Keeling) Islands"
+    * #https://dhp.uz/fhir/core/sid/pid/cc/ppn "Passport number of Cocos (Keeling) Islands"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #PPN
       * ^property[+].code = #notSelectable
@@ -2013,7 +2013,7 @@ Description: """
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
     * ^property[=].valueCode = #KP
-    * #https://dhp.uz/fhir/core/sid/pid/prk/ppn "Passport number of Korea, Democratic People's Republic of"
+    * #https://dhp.uz/fhir/core/sid/pid/kp/ppn "Passport number of Korea, Democratic People's Republic of"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #PPN
       * ^property[+].code = #notSelectable
@@ -2027,7 +2027,7 @@ Description: """
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
     * ^property[=].valueCode = #KR
-    * #https://dhp.uz/fhir/core/sid/pid/kor/ppn "Passport number of Korea, Republic of"
+    * #https://dhp.uz/fhir/core/sid/pid/kr/ppn "Passport number of Korea, Republic of"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #PPN
       * ^property[+].code = #notSelectable
@@ -2041,7 +2041,7 @@ Description: """
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
     * ^property[=].valueCode = #GR
-    * #https://dhp.uz/fhir/core/sid/pid/grc/ppn "Passport number of Greece"
+    * #https://dhp.uz/fhir/core/sid/pid/gr/ppn "Passport number of Greece"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #PPN
       * ^property[+].code = #notSelectable
@@ -2055,7 +2055,7 @@ Description: """
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
     * ^property[=].valueCode = #CU
-    * #https://dhp.uz/fhir/core/sid/pid/cub/ppn "Passport number of Cuba"
+    * #https://dhp.uz/fhir/core/sid/pid/cu/ppn "Passport number of Cuba"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #PPN
       * ^property[+].code = #notSelectable
@@ -2069,7 +2069,7 @@ Description: """
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
     * ^property[=].valueCode = #KW
-    * #https://dhp.uz/fhir/core/sid/pid/kwt/ppn "Passport number of Kuwait"
+    * #https://dhp.uz/fhir/core/sid/pid/kw/ppn "Passport number of Kuwait"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #PPN
       * ^property[+].code = #notSelectable
@@ -2078,7 +2078,7 @@ Description: """
       * ^property[=].valueCode = #KW
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-KWT"
-    * #https://dhp.uz/fhir/core/sid/pid/kwt/ni "National identifier of Kuwait"
+    * #https://dhp.uz/fhir/core/sid/pid/kw/ni "National identifier of Kuwait"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #NI
       * ^property[+].code = #notSelectable
@@ -2090,7 +2090,7 @@ Description: """
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
     * ^property[=].valueCode = #CY
-    * #https://dhp.uz/fhir/core/sid/pid/cyp/ppn "Passport number of Cyprus"
+    * #https://dhp.uz/fhir/core/sid/pid/cy/ppn "Passport number of Cyprus"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #PPN
       * ^property[+].code = #notSelectable
@@ -2104,7 +2104,7 @@ Description: """
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
     * ^property[=].valueCode = #LA
-    * #https://dhp.uz/fhir/core/sid/pid/lao/ppn "Passport number of Lao People's Democratic Republic"
+    * #https://dhp.uz/fhir/core/sid/pid/la/ppn "Passport number of Lao People's Democratic Republic"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #PPN
       * ^property[+].code = #notSelectable
@@ -2118,7 +2118,7 @@ Description: """
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
     * ^property[=].valueCode = #LT
-    * #https://dhp.uz/fhir/core/sid/pid/ltu/ppn "Passport number of Lithuania"
+    * #https://dhp.uz/fhir/core/sid/pid/lt/ppn "Passport number of Lithuania"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #PPN
       * ^property[+].code = #notSelectable
@@ -2127,21 +2127,21 @@ Description: """
       * ^property[=].valueCode = #LT
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-LTU"
-    * #https://dhp.uz/fhir/core/sid/pid/ltu/ni "National identifier of Lithuania"
+    * #https://dhp.uz/fhir/core/sid/pid/lt/ni "National identifier of Lithuania"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #NI
       * ^property[+].code = #notSelectable
       * ^property[=].valueBoolean = false
       * ^property[+].code = #country
       * ^property[=].valueCode = #LT
-    * #https://dhp.uz/fhir/core/sid/pid/ltu/cz "ID-card number of Lithuania"
+    * #https://dhp.uz/fhir/core/sid/pid/lt/cz "ID-card number of Lithuania"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #CZ
       * ^property[+].code = #notSelectable
       * ^property[=].valueBoolean = false
       * ^property[+].code = #country
       * ^property[=].valueCode = #LT
-    * #https://dhp.uz/fhir/core/sid/pid/ltu/dl "Driver's licence number of Lithuania"
+    * #https://dhp.uz/fhir/core/sid/pid/lt/dl "Driver's licence number of Lithuania"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #DL
       * ^property[+].code = #notSelectable
@@ -2153,7 +2153,7 @@ Description: """
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
     * ^property[=].valueCode = #LS
-    * #https://dhp.uz/fhir/core/sid/pid/lso/ppn "Passport number of Lesotho"
+    * #https://dhp.uz/fhir/core/sid/pid/ls/ppn "Passport number of Lesotho"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #PPN
       * ^property[+].code = #notSelectable
@@ -2167,7 +2167,7 @@ Description: """
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
     * ^property[=].valueCode = #LR
-    * #https://dhp.uz/fhir/core/sid/pid/lbr/ppn "Passport number of Liberia"
+    * #https://dhp.uz/fhir/core/sid/pid/lr/ppn "Passport number of Liberia"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #PPN
       * ^property[+].code = #notSelectable
@@ -2181,7 +2181,7 @@ Description: """
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
     * ^property[=].valueCode = #LI
-    * #https://dhp.uz/fhir/core/sid/pid/lie/ppn "Passport number of Liechtenstein"
+    * #https://dhp.uz/fhir/core/sid/pid/li/ppn "Passport number of Liechtenstein"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #PPN
       * ^property[+].code = #notSelectable
@@ -2195,7 +2195,7 @@ Description: """
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
     * ^property[=].valueCode = #LB
-    * #https://dhp.uz/fhir/core/sid/pid/lbn/ppn "Passport number of Lebanon"
+    * #https://dhp.uz/fhir/core/sid/pid/lb/ppn "Passport number of Lebanon"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #PPN
       * ^property[+].code = #notSelectable
@@ -2209,7 +2209,7 @@ Description: """
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
     * ^property[=].valueCode = #LU
-    * #https://dhp.uz/fhir/core/sid/pid/lux/ppn "Passport number of Luxembourg"
+    * #https://dhp.uz/fhir/core/sid/pid/lu/ppn "Passport number of Luxembourg"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #PPN
       * ^property[+].code = #notSelectable
@@ -2223,7 +2223,7 @@ Description: """
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
     * ^property[=].valueCode = #ZA
-    * #https://dhp.uz/fhir/core/sid/pid/zaf/ppn "Passport number of South Africa"
+    * #https://dhp.uz/fhir/core/sid/pid/za/ppn "Passport number of South Africa"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #PPN
       * ^property[+].code = #notSelectable
@@ -2232,7 +2232,7 @@ Description: """
       * ^property[=].valueCode = #ZA
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-ZAF"
-    * #https://dhp.uz/fhir/core/sid/pid/zaf/ni "National identifier of South Africa"
+    * #https://dhp.uz/fhir/core/sid/pid/za/ni "National identifier of South Africa"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #NI
       * ^property[+].code = #notSelectable
@@ -2244,7 +2244,7 @@ Description: """
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
     * ^property[=].valueCode = #GS
-    * #https://dhp.uz/fhir/core/sid/pid/sgs/ppn "Passport number of South Georgia and the South Sandwich Islands"
+    * #https://dhp.uz/fhir/core/sid/pid/gs/ppn "Passport number of South Georgia and the South Sandwich Islands"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #PPN
       * ^property[+].code = #notSelectable
@@ -2258,7 +2258,7 @@ Description: """
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
     * ^property[=].valueCode = #LV
-    * #https://dhp.uz/fhir/core/sid/pid/lva/ppn "Passport number of Latvia"
+    * #https://dhp.uz/fhir/core/sid/pid/lv/ppn "Passport number of Latvia"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #PPN
       * ^property[+].code = #notSelectable
@@ -2267,21 +2267,21 @@ Description: """
       * ^property[=].valueCode = #LV
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-LVA"
-    * #https://dhp.uz/fhir/core/sid/pid/lva/ni "National identifier of Latvia"
+    * #https://dhp.uz/fhir/core/sid/pid/lv/ni "National identifier of Latvia"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #NI
       * ^property[+].code = #notSelectable
       * ^property[=].valueBoolean = false
       * ^property[+].code = #country
       * ^property[=].valueCode = #LV
-    * #https://dhp.uz/fhir/core/sid/pid/lva/cz "ID-card number of Latvia"
+    * #https://dhp.uz/fhir/core/sid/pid/lv/cz "ID-card number of Latvia"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #CZ
       * ^property[+].code = #notSelectable
       * ^property[=].valueBoolean = false
       * ^property[+].code = #country
       * ^property[=].valueCode = #LV
-    * #https://dhp.uz/fhir/core/sid/pid/lva/dl "Driver's licence number of Latvia"
+    * #https://dhp.uz/fhir/core/sid/pid/lv/dl "Driver's licence number of Latvia"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #DL
       * ^property[+].code = #notSelectable
@@ -2293,7 +2293,7 @@ Description: """
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
     * ^property[=].valueCode = #EH
-    * #https://dhp.uz/fhir/core/sid/pid/esh/ppn "Passport number of Western Sahara"
+    * #https://dhp.uz/fhir/core/sid/pid/eh/ppn "Passport number of Western Sahara"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #PPN
       * ^property[+].code = #notSelectable
@@ -2307,7 +2307,7 @@ Description: """
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
     * ^property[=].valueCode = #MG
-    * #https://dhp.uz/fhir/core/sid/pid/mdg/ppn "Passport number of Madagascar"
+    * #https://dhp.uz/fhir/core/sid/pid/mg/ppn "Passport number of Madagascar"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #PPN
       * ^property[+].code = #notSelectable
@@ -2321,7 +2321,7 @@ Description: """
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
     * ^property[=].valueCode = #NL
-    * #https://dhp.uz/fhir/core/sid/pid/nld/ppn "Passport number of Netherlands"
+    * #https://dhp.uz/fhir/core/sid/pid/nl/ppn "Passport number of Netherlands"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #PPN
       * ^property[+].code = #notSelectable
@@ -2330,21 +2330,21 @@ Description: """
       * ^property[=].valueCode = #NL
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-NLD"
-    * #https://dhp.uz/fhir/core/sid/pid/nld/ni "National identifier of Netherlands"
+    * #https://dhp.uz/fhir/core/sid/pid/nl/ni "National identifier of Netherlands"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #NI
       * ^property[+].code = #notSelectable
       * ^property[=].valueBoolean = false
       * ^property[+].code = #country
       * ^property[=].valueCode = #NL
-    * #https://dhp.uz/fhir/core/sid/pid/nld/cz "ID-card number of Netherlands"
+    * #https://dhp.uz/fhir/core/sid/pid/nl/cz "ID-card number of Netherlands"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #CZ
       * ^property[+].code = #notSelectable
       * ^property[=].valueBoolean = false
       * ^property[+].code = #country
       * ^property[=].valueCode = #NL
-    * #https://dhp.uz/fhir/core/sid/pid/nld/dl "Driver's licence number of Netherlands"
+    * #https://dhp.uz/fhir/core/sid/pid/nl/dl "Driver's licence number of Netherlands"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #DL
       * ^property[+].code = #notSelectable
@@ -2356,7 +2356,7 @@ Description: """
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
     * ^property[=].valueCode = #MK
-    * #https://dhp.uz/fhir/core/sid/pid/mkd/ppn "Passport number of Macedonia"
+    * #https://dhp.uz/fhir/core/sid/pid/mk/ppn "Passport number of Macedonia"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #PPN
       * ^property[+].code = #notSelectable
@@ -2365,21 +2365,21 @@ Description: """
       * ^property[=].valueCode = #MK
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-MKD"
-    * #https://dhp.uz/fhir/core/sid/pid/mkd/ni "National identifier of Macedonia"
+    * #https://dhp.uz/fhir/core/sid/pid/mk/ni "National identifier of Macedonia"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #NI
       * ^property[+].code = #notSelectable
       * ^property[=].valueBoolean = false
       * ^property[+].code = #country
       * ^property[=].valueCode = #MK
-    * #https://dhp.uz/fhir/core/sid/pid/mkd/cz "ID-card number of Macedonia"
+    * #https://dhp.uz/fhir/core/sid/pid/mk/cz "ID-card number of Macedonia"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #CZ
       * ^property[+].code = #notSelectable
       * ^property[=].valueBoolean = false
       * ^property[+].code = #country
       * ^property[=].valueCode = #MK
-    * #https://dhp.uz/fhir/core/sid/pid/mkd/dl "Driver's licence number of Macedonia"
+    * #https://dhp.uz/fhir/core/sid/pid/mk/dl "Driver's licence number of Macedonia"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #DL
       * ^property[+].code = #notSelectable
@@ -2391,7 +2391,7 @@ Description: """
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
     * ^property[=].valueCode = #MY
-    * #https://dhp.uz/fhir/core/sid/pid/mys/ppn "Passport number of Malaysia"
+    * #https://dhp.uz/fhir/core/sid/pid/my/ppn "Passport number of Malaysia"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #PPN
       * ^property[+].code = #notSelectable
@@ -2400,7 +2400,7 @@ Description: """
       * ^property[=].valueCode = #MY
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-MYS"
-    * #https://dhp.uz/fhir/core/sid/pid/mys/ni "National identifier of Malaysia"
+    * #https://dhp.uz/fhir/core/sid/pid/my/ni "National identifier of Malaysia"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #NI
       * ^property[+].code = #notSelectable
@@ -2412,7 +2412,7 @@ Description: """
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
     * ^property[=].valueCode = #MW
-    * #https://dhp.uz/fhir/core/sid/pid/mwi/ppn "Passport number of Malawi"
+    * #https://dhp.uz/fhir/core/sid/pid/mw/ppn "Passport number of Malawi"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #PPN
       * ^property[+].code = #notSelectable
@@ -2426,7 +2426,7 @@ Description: """
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
     * ^property[=].valueCode = #MV
-    * #https://dhp.uz/fhir/core/sid/pid/mdv/ppn "Passport number of Maldives"
+    * #https://dhp.uz/fhir/core/sid/pid/mv/ppn "Passport number of Maldives"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #PPN
       * ^property[+].code = #notSelectable
@@ -2440,7 +2440,7 @@ Description: """
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
     * ^property[=].valueCode = #ML
-    * #https://dhp.uz/fhir/core/sid/pid/mli/ppn "Passport number of Mali"
+    * #https://dhp.uz/fhir/core/sid/pid/ml/ppn "Passport number of Mali"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #PPN
       * ^property[+].code = #notSelectable
@@ -2454,7 +2454,7 @@ Description: """
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
     * ^property[=].valueCode = #MT
-    * #https://dhp.uz/fhir/core/sid/pid/mlt/ppn "Passport number of Malta"
+    * #https://dhp.uz/fhir/core/sid/pid/mt/ppn "Passport number of Malta"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #PPN
       * ^property[+].code = #notSelectable
@@ -2463,21 +2463,21 @@ Description: """
       * ^property[=].valueCode = #MT
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-MLT"
-    * #https://dhp.uz/fhir/core/sid/pid/mlt/ni "National identifier of Malta"
+    * #https://dhp.uz/fhir/core/sid/pid/mt/ni "National identifier of Malta"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #NI
       * ^property[+].code = #notSelectable
       * ^property[=].valueBoolean = false
       * ^property[+].code = #country
       * ^property[=].valueCode = #MT
-    * #https://dhp.uz/fhir/core/sid/pid/mlt/cz "ID-card number of Malta"
+    * #https://dhp.uz/fhir/core/sid/pid/mt/cz "ID-card number of Malta"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #CZ
       * ^property[+].code = #notSelectable
       * ^property[=].valueBoolean = false
       * ^property[+].code = #country
       * ^property[=].valueCode = #MT
-    * #https://dhp.uz/fhir/core/sid/pid/mlt/dl "Driver's licence number of Malta"
+    * #https://dhp.uz/fhir/core/sid/pid/mt/dl "Driver's licence number of Malta"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #DL
       * ^property[+].code = #notSelectable
@@ -2489,7 +2489,7 @@ Description: """
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
     * ^property[=].valueCode = #IM
-    * #https://dhp.uz/fhir/core/sid/pid/imn/ppn "Passport number of Isle of Man"
+    * #https://dhp.uz/fhir/core/sid/pid/im/ppn "Passport number of Isle of Man"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #PPN
       * ^property[+].code = #notSelectable
@@ -2503,7 +2503,7 @@ Description: """
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
     * ^property[=].valueCode = #MA
-    * #https://dhp.uz/fhir/core/sid/pid/mar/ppn "Passport number of Morocco"
+    * #https://dhp.uz/fhir/core/sid/pid/ma/ppn "Passport number of Morocco"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #PPN
       * ^property[+].code = #notSelectable
@@ -2517,7 +2517,7 @@ Description: """
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
     * ^property[=].valueCode = #MH
-    * #https://dhp.uz/fhir/core/sid/pid/mhl/ppn "Passport number of Marshall Islands"
+    * #https://dhp.uz/fhir/core/sid/pid/mh/ppn "Passport number of Marshall Islands"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #PPN
       * ^property[+].code = #notSelectable
@@ -2531,7 +2531,7 @@ Description: """
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
     * ^property[=].valueCode = #MQ
-    * #https://dhp.uz/fhir/core/sid/pid/mtq/ppn "Passport number of Martinique"
+    * #https://dhp.uz/fhir/core/sid/pid/mq/ppn "Passport number of Martinique"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #PPN
       * ^property[+].code = #notSelectable
@@ -2545,7 +2545,7 @@ Description: """
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
     * ^property[=].valueCode = #MR
-    * #https://dhp.uz/fhir/core/sid/pid/mrt/ppn "Passport number of Mauritania"
+    * #https://dhp.uz/fhir/core/sid/pid/mr/ppn "Passport number of Mauritania"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #PPN
       * ^property[+].code = #notSelectable
@@ -2559,7 +2559,7 @@ Description: """
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
     * ^property[=].valueCode = #MU
-    * #https://dhp.uz/fhir/core/sid/pid/mus/ppn "Passport number of Mauritius"
+    * #https://dhp.uz/fhir/core/sid/pid/mu/ppn "Passport number of Mauritius"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #PPN
       * ^property[+].code = #notSelectable
@@ -2573,7 +2573,7 @@ Description: """
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
     * ^property[=].valueCode = #YT
-    * #https://dhp.uz/fhir/core/sid/pid/myt/ppn "Passport number of Mayotte"
+    * #https://dhp.uz/fhir/core/sid/pid/yt/ppn "Passport number of Mayotte"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #PPN
       * ^property[+].code = #notSelectable
@@ -2587,7 +2587,7 @@ Description: """
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
     * ^property[=].valueCode = #MX
-    * #https://dhp.uz/fhir/core/sid/pid/mex/ppn "Passport number of Mexico"
+    * #https://dhp.uz/fhir/core/sid/pid/mx/ppn "Passport number of Mexico"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #PPN
       * ^property[+].code = #notSelectable
@@ -2596,7 +2596,7 @@ Description: """
       * ^property[=].valueCode = #MX
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-MEX"
-    * #https://dhp.uz/fhir/core/sid/pid/mex/ni "National identifier of Mexico"
+    * #https://dhp.uz/fhir/core/sid/pid/mx/ni "National identifier of Mexico"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #NI
       * ^property[+].code = #notSelectable
@@ -2608,7 +2608,7 @@ Description: """
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
     * ^property[=].valueCode = #FM
-    * #https://dhp.uz/fhir/core/sid/pid/fsm/ppn "Passport number of Micronesia"
+    * #https://dhp.uz/fhir/core/sid/pid/fm/ppn "Passport number of Micronesia"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #PPN
       * ^property[+].code = #notSelectable
@@ -2622,7 +2622,7 @@ Description: """
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
     * ^property[=].valueCode = #MD
-    * #https://dhp.uz/fhir/core/sid/pid/mda/ppn "Passport number of Moldova, Republic of"
+    * #https://dhp.uz/fhir/core/sid/pid/md/ppn "Passport number of Moldova, Republic of"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #PPN
       * ^property[+].code = #notSelectable
@@ -2631,21 +2631,21 @@ Description: """
       * ^property[=].valueCode = #MD
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-MDA"
-    * #https://dhp.uz/fhir/core/sid/pid/mda/ni "National identifier of Moldova, Republic of"
+    * #https://dhp.uz/fhir/core/sid/pid/md/ni "National identifier of Moldova, Republic of"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #NI
       * ^property[+].code = #notSelectable
       * ^property[=].valueBoolean = false
       * ^property[+].code = #country
       * ^property[=].valueCode = #MD
-    * #https://dhp.uz/fhir/core/sid/pid/mda/cz "ID-card number of Moldova, Republic of"
+    * #https://dhp.uz/fhir/core/sid/pid/md/cz "ID-card number of Moldova, Republic of"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #CZ
       * ^property[+].code = #notSelectable
       * ^property[=].valueBoolean = false
       * ^property[+].code = #country
       * ^property[=].valueCode = #MD
-    * #https://dhp.uz/fhir/core/sid/pid/mda/dl "Driver's licence number of Moldova, Republic of"
+    * #https://dhp.uz/fhir/core/sid/pid/md/dl "Driver's licence number of Moldova, Republic of"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #DL
       * ^property[+].code = #notSelectable
@@ -2657,7 +2657,7 @@ Description: """
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
     * ^property[=].valueCode = #MC
-    * #https://dhp.uz/fhir/core/sid/pid/mco/ppn "Passport number of Monaco"
+    * #https://dhp.uz/fhir/core/sid/pid/mc/ppn "Passport number of Monaco"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #PPN
       * ^property[+].code = #notSelectable
@@ -2671,7 +2671,7 @@ Description: """
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
     * ^property[=].valueCode = #MN
-    * #https://dhp.uz/fhir/core/sid/pid/mng/ppn "Passport number of Mongolia"
+    * #https://dhp.uz/fhir/core/sid/pid/mn/ppn "Passport number of Mongolia"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #PPN
       * ^property[+].code = #notSelectable
@@ -2685,7 +2685,7 @@ Description: """
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
     * ^property[=].valueCode = #ME
-    * #https://dhp.uz/fhir/core/sid/pid/mne/ppn "Passport number of Montenegro"
+    * #https://dhp.uz/fhir/core/sid/pid/me/ppn "Passport number of Montenegro"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #PPN
       * ^property[+].code = #notSelectable
@@ -2694,21 +2694,21 @@ Description: """
       * ^property[=].valueCode = #ME
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-MNE"
-    * #https://dhp.uz/fhir/core/sid/pid/mne/ni "National identifier of Montenegro"
+    * #https://dhp.uz/fhir/core/sid/pid/me/ni "National identifier of Montenegro"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #NI
       * ^property[+].code = #notSelectable
       * ^property[=].valueBoolean = false
       * ^property[+].code = #country
       * ^property[=].valueCode = #ME
-    * #https://dhp.uz/fhir/core/sid/pid/mne/cz "ID-card number of Montenegro"
+    * #https://dhp.uz/fhir/core/sid/pid/me/cz "ID-card number of Montenegro"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #CZ
       * ^property[+].code = #notSelectable
       * ^property[=].valueBoolean = false
       * ^property[+].code = #country
       * ^property[=].valueCode = #ME
-    * #https://dhp.uz/fhir/core/sid/pid/mne/dl "Driver's licence number of Montenegro"
+    * #https://dhp.uz/fhir/core/sid/pid/me/dl "Driver's licence number of Montenegro"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #DL
       * ^property[+].code = #notSelectable
@@ -2720,7 +2720,7 @@ Description: """
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
     * ^property[=].valueCode = #MS
-    * #https://dhp.uz/fhir/core/sid/pid/msr/ppn "Passport number of Montserrat"
+    * #https://dhp.uz/fhir/core/sid/pid/ms/ppn "Passport number of Montserrat"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #PPN
       * ^property[+].code = #notSelectable
@@ -2734,7 +2734,7 @@ Description: """
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
     * ^property[=].valueCode = #MZ
-    * #https://dhp.uz/fhir/core/sid/pid/moz/ppn "Passport number of Mozambique"
+    * #https://dhp.uz/fhir/core/sid/pid/mz/ppn "Passport number of Mozambique"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #PPN
       * ^property[+].code = #notSelectable
@@ -2748,7 +2748,7 @@ Description: """
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
     * ^property[=].valueCode = #XY
-    * #https://dhp.uz/fhir/core/sid/pid/xyy/ppn "Passport number of Areas not elsewhere specified"
+    * #https://dhp.uz/fhir/core/sid/pid/xy/ppn "Passport number of Areas not elsewhere specified"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #PPN
       * ^property[+].code = #notSelectable
@@ -2760,7 +2760,7 @@ Description: """
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
     * ^property[=].valueCode = #XX
-    * #https://dhp.uz/fhir/core/sid/pid/xxx/ppn "Passport number of Not specified"
+    * #https://dhp.uz/fhir/core/sid/pid/xx/ppn "Passport number of Not specified"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #PPN
       * ^property[+].code = #notSelectable
@@ -2772,7 +2772,7 @@ Description: """
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
     * ^property[=].valueCode = #MM
-    * #https://dhp.uz/fhir/core/sid/pid/mmr/ppn "Passport number of Myanmar"
+    * #https://dhp.uz/fhir/core/sid/pid/mm/ppn "Passport number of Myanmar"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #PPN
       * ^property[+].code = #notSelectable
@@ -2786,7 +2786,7 @@ Description: """
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
     * ^property[=].valueCode = #NA
-    * #https://dhp.uz/fhir/core/sid/pid/nam/ppn "Passport number of Namibia"
+    * #https://dhp.uz/fhir/core/sid/pid/na/ppn "Passport number of Namibia"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #PPN
       * ^property[+].code = #notSelectable
@@ -2800,7 +2800,7 @@ Description: """
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
     * ^property[=].valueCode = #NR
-    * #https://dhp.uz/fhir/core/sid/pid/nru/ppn "Passport number of Nauru"
+    * #https://dhp.uz/fhir/core/sid/pid/nr/ppn "Passport number of Nauru"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #PPN
       * ^property[+].code = #notSelectable
@@ -2814,7 +2814,7 @@ Description: """
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
     * ^property[=].valueCode = #NP
-    * #https://dhp.uz/fhir/core/sid/pid/npl/ppn "Passport number of Nepal"
+    * #https://dhp.uz/fhir/core/sid/pid/np/ppn "Passport number of Nepal"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #PPN
       * ^property[+].code = #notSelectable
@@ -2823,7 +2823,7 @@ Description: """
       * ^property[=].valueCode = #NP
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-NPL"
-    * #https://dhp.uz/fhir/core/sid/pid/npl/ni "National identifier of Nepal"
+    * #https://dhp.uz/fhir/core/sid/pid/np/ni "National identifier of Nepal"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #NI
       * ^property[+].code = #notSelectable
@@ -2835,7 +2835,7 @@ Description: """
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
     * ^property[=].valueCode = #NI
-    * #https://dhp.uz/fhir/core/sid/pid/nic/ppn "Passport number of Nicaragua"
+    * #https://dhp.uz/fhir/core/sid/pid/ni/ppn "Passport number of Nicaragua"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #PPN
       * ^property[+].code = #notSelectable
@@ -2849,7 +2849,7 @@ Description: """
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
     * ^property[=].valueCode = #NG
-    * #https://dhp.uz/fhir/core/sid/pid/nga/ppn "Passport number of Nigeria"
+    * #https://dhp.uz/fhir/core/sid/pid/ng/ppn "Passport number of Nigeria"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #PPN
       * ^property[+].code = #notSelectable
@@ -2858,14 +2858,14 @@ Description: """
       * ^property[=].valueCode = #NG
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-NGA"
-    * #https://dhp.uz/fhir/core/sid/pid/nga/ni "National identifier of Nigeria"
+    * #https://dhp.uz/fhir/core/sid/pid/ng/ni "National identifier of Nigeria"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #NI
       * ^property[+].code = #notSelectable
       * ^property[=].valueBoolean = false
       * ^property[+].code = #country
       * ^property[=].valueCode = #NG
-    * #https://dhp.uz/fhir/core/sid/pid/nga/dl "Driver's licence number of Nigeria"
+    * #https://dhp.uz/fhir/core/sid/pid/ng/dl "Driver's licence number of Nigeria"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #DL
       * ^property[+].code = #notSelectable
@@ -2877,7 +2877,7 @@ Description: """
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
     * ^property[=].valueCode = #NE
-    * #https://dhp.uz/fhir/core/sid/pid/ner/ppn "Passport number of Niger"
+    * #https://dhp.uz/fhir/core/sid/pid/ne/ppn "Passport number of Niger"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #PPN
       * ^property[+].code = #notSelectable
@@ -2891,7 +2891,7 @@ Description: """
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
     * ^property[=].valueCode = #NU
-    * #https://dhp.uz/fhir/core/sid/pid/niu/ppn "Passport number of Niue"
+    * #https://dhp.uz/fhir/core/sid/pid/nu/ppn "Passport number of Niue"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #PPN
       * ^property[+].code = #notSelectable
@@ -2905,7 +2905,7 @@ Description: """
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
     * ^property[=].valueCode = #NF
-    * #https://dhp.uz/fhir/core/sid/pid/nfk/ppn "Passport number of Norfolk Island"
+    * #https://dhp.uz/fhir/core/sid/pid/nf/ppn "Passport number of Norfolk Island"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #PPN
       * ^property[+].code = #notSelectable
@@ -2919,7 +2919,7 @@ Description: """
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
     * ^property[=].valueCode = #NO
-    * #https://dhp.uz/fhir/core/sid/pid/nor/ppn "Passport number of Norway"
+    * #https://dhp.uz/fhir/core/sid/pid/no/ppn "Passport number of Norway"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #PPN
       * ^property[+].code = #notSelectable
@@ -2928,21 +2928,21 @@ Description: """
       * ^property[=].valueCode = #NO
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-NOR"
-    * #https://dhp.uz/fhir/core/sid/pid/nor/ni "National identifier of Norway"
+    * #https://dhp.uz/fhir/core/sid/pid/no/ni "National identifier of Norway"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #NI
       * ^property[+].code = #notSelectable
       * ^property[=].valueBoolean = false
       * ^property[+].code = #country
       * ^property[=].valueCode = #NO
-    * #https://dhp.uz/fhir/core/sid/pid/nor/cz "ID-card number of Norway"
+    * #https://dhp.uz/fhir/core/sid/pid/no/cz "ID-card number of Norway"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #CZ
       * ^property[+].code = #notSelectable
       * ^property[=].valueBoolean = false
       * ^property[+].code = #country
       * ^property[=].valueCode = #NO
-    * #https://dhp.uz/fhir/core/sid/pid/nor/dl "Driver's licence number of Norway"
+    * #https://dhp.uz/fhir/core/sid/pid/no/dl "Driver's licence number of Norway"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #DL
       * ^property[+].code = #notSelectable
@@ -2954,7 +2954,7 @@ Description: """
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
     * ^property[=].valueCode = #OM
-    * #https://dhp.uz/fhir/core/sid/pid/omn/ppn "Passport number of Oman"
+    * #https://dhp.uz/fhir/core/sid/pid/om/ppn "Passport number of Oman"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #PPN
       * ^property[+].code = #notSelectable
@@ -2968,7 +2968,7 @@ Description: """
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
     * ^property[=].valueCode = #PG
-    * #https://dhp.uz/fhir/core/sid/pid/png/ppn "Passport number of Papua New Guinea"
+    * #https://dhp.uz/fhir/core/sid/pid/pg/ppn "Passport number of Papua New Guinea"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #PPN
       * ^property[+].code = #notSelectable
@@ -2982,7 +2982,7 @@ Description: """
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
     * ^property[=].valueCode = #PK
-    * #https://dhp.uz/fhir/core/sid/pid/pak/ppn "Passport number of Pakistan"
+    * #https://dhp.uz/fhir/core/sid/pid/pk/ppn "Passport number of Pakistan"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #PPN
       * ^property[+].code = #notSelectable
@@ -2991,7 +2991,7 @@ Description: """
       * ^property[=].valueCode = #PK
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-PAK"
-    * #https://dhp.uz/fhir/core/sid/pid/pak/ni "National identifier of Pakistan"
+    * #https://dhp.uz/fhir/core/sid/pid/pk/ni "National identifier of Pakistan"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #NI
       * ^property[+].code = #notSelectable
@@ -3003,7 +3003,7 @@ Description: """
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
     * ^property[=].valueCode = #PS
-    * #https://dhp.uz/fhir/core/sid/pid/pse/ppn "Passport number of Palestinian Territory, Occupied"
+    * #https://dhp.uz/fhir/core/sid/pid/ps/ppn "Passport number of Palestinian Territory, Occupied"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #PPN
       * ^property[+].code = #notSelectable
@@ -3017,7 +3017,7 @@ Description: """
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
     * ^property[=].valueCode = #PA
-    * #https://dhp.uz/fhir/core/sid/pid/pan/ppn "Passport number of Panama"
+    * #https://dhp.uz/fhir/core/sid/pid/pa/ppn "Passport number of Panama"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #PPN
       * ^property[+].code = #notSelectable
@@ -3031,7 +3031,7 @@ Description: """
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
     * ^property[=].valueCode = #PY
-    * #https://dhp.uz/fhir/core/sid/pid/pry/ppn "Passport number of Paraguay"
+    * #https://dhp.uz/fhir/core/sid/pid/py/ppn "Passport number of Paraguay"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #PPN
       * ^property[+].code = #notSelectable
@@ -3045,7 +3045,7 @@ Description: """
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
     * ^property[=].valueCode = #PE
-    * #https://dhp.uz/fhir/core/sid/pid/per/ppn "Passport number of Peru"
+    * #https://dhp.uz/fhir/core/sid/pid/pe/ppn "Passport number of Peru"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #PPN
       * ^property[+].code = #notSelectable
@@ -3059,7 +3059,7 @@ Description: """
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
     * ^property[=].valueCode = #PN
-    * #https://dhp.uz/fhir/core/sid/pid/pcn/ppn "Passport number of Pitcairn"
+    * #https://dhp.uz/fhir/core/sid/pid/pn/ppn "Passport number of Pitcairn"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #PPN
       * ^property[+].code = #notSelectable
@@ -3073,7 +3073,7 @@ Description: """
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
     * ^property[=].valueCode = #PL
-    * #https://dhp.uz/fhir/core/sid/pid/pol/ppn "Passport number of Poland"
+    * #https://dhp.uz/fhir/core/sid/pid/pl/ppn "Passport number of Poland"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #PPN
       * ^property[+].code = #notSelectable
@@ -3082,21 +3082,21 @@ Description: """
       * ^property[=].valueCode = #PL
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-POL"
-    * #https://dhp.uz/fhir/core/sid/pid/pol/ni "National identifier of Poland"
+    * #https://dhp.uz/fhir/core/sid/pid/pl/ni "National identifier of Poland"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #NI
       * ^property[+].code = #notSelectable
       * ^property[=].valueBoolean = false
       * ^property[+].code = #country
       * ^property[=].valueCode = #PL
-    * #https://dhp.uz/fhir/core/sid/pid/pol/cz "ID-card number of Poland"
+    * #https://dhp.uz/fhir/core/sid/pid/pl/cz "ID-card number of Poland"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #CZ
       * ^property[+].code = #notSelectable
       * ^property[=].valueBoolean = false
       * ^property[+].code = #country
       * ^property[=].valueCode = #PL
-    * #https://dhp.uz/fhir/core/sid/pid/pol/dl "Driver's licence number of Poland"
+    * #https://dhp.uz/fhir/core/sid/pid/pl/dl "Driver's licence number of Poland"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #DL
       * ^property[+].code = #notSelectable
@@ -3108,7 +3108,7 @@ Description: """
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
     * ^property[=].valueCode = #PT
-    * #https://dhp.uz/fhir/core/sid/pid/prt/ppn "Passport number of Portugal"
+    * #https://dhp.uz/fhir/core/sid/pid/pt/ppn "Passport number of Portugal"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #PPN
       * ^property[+].code = #notSelectable
@@ -3117,21 +3117,21 @@ Description: """
       * ^property[=].valueCode = #PT
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-PRT"
-    * #https://dhp.uz/fhir/core/sid/pid/prt/ni "National identifier of Portugal"
+    * #https://dhp.uz/fhir/core/sid/pid/pt/ni "National identifier of Portugal"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #NI
       * ^property[+].code = #notSelectable
       * ^property[=].valueBoolean = false
       * ^property[+].code = #country
       * ^property[=].valueCode = #PT
-    * #https://dhp.uz/fhir/core/sid/pid/prt/cz "ID-card number of Portugal"
+    * #https://dhp.uz/fhir/core/sid/pid/pt/cz "ID-card number of Portugal"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #CZ
       * ^property[+].code = #notSelectable
       * ^property[=].valueBoolean = false
       * ^property[+].code = #country
       * ^property[=].valueCode = #PT
-    * #https://dhp.uz/fhir/core/sid/pid/prt/dl "Driver's licence number of Portugal"
+    * #https://dhp.uz/fhir/core/sid/pid/pt/dl "Driver's licence number of Portugal"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #DL
       * ^property[+].code = #notSelectable
@@ -3143,7 +3143,7 @@ Description: """
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
     * ^property[=].valueCode = #TF
-    * #https://dhp.uz/fhir/core/sid/pid/atf/ppn "Passport number of French Southern Territories"
+    * #https://dhp.uz/fhir/core/sid/pid/tf/ppn "Passport number of French Southern Territories"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #PPN
       * ^property[+].code = #notSelectable
@@ -3157,7 +3157,7 @@ Description: """
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
     * ^property[=].valueCode = #PF
-    * #https://dhp.uz/fhir/core/sid/pid/pyf/ppn "Passport number of French Polynesia"
+    * #https://dhp.uz/fhir/core/sid/pid/pf/ppn "Passport number of French Polynesia"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #PPN
       * ^property[+].code = #notSelectable
@@ -3171,7 +3171,7 @@ Description: """
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
     * ^property[=].valueCode = #FR
-    * #https://dhp.uz/fhir/core/sid/pid/fra/ppn "Passport number of France"
+    * #https://dhp.uz/fhir/core/sid/pid/fr/ppn "Passport number of France"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #PPN
       * ^property[+].code = #notSelectable
@@ -3185,7 +3185,7 @@ Description: """
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
     * ^property[=].valueCode = #PR
-    * #https://dhp.uz/fhir/core/sid/pid/pri/ppn "Passport number of Puerto Rico"
+    * #https://dhp.uz/fhir/core/sid/pid/pr/ppn "Passport number of Puerto Rico"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #PPN
       * ^property[+].code = #notSelectable
@@ -3199,7 +3199,7 @@ Description: """
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
     * ^property[=].valueCode = #MP
-    * #https://dhp.uz/fhir/core/sid/pid/mnp/ppn "Passport number of Northern Mariana Islands"
+    * #https://dhp.uz/fhir/core/sid/pid/mp/ppn "Passport number of Northern Mariana Islands"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #PPN
       * ^property[+].code = #notSelectable
@@ -3213,7 +3213,7 @@ Description: """
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
     * ^property[=].valueCode = #VA
-    * #https://dhp.uz/fhir/core/sid/pid/vat/ppn "Passport number of Holy See (Vatican City State)"
+    * #https://dhp.uz/fhir/core/sid/pid/va/ppn "Passport number of Holy See (Vatican City State)"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #PPN
       * ^property[+].code = #notSelectable
@@ -3227,7 +3227,7 @@ Description: """
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
     * ^property[=].valueCode = #RE
-    * #https://dhp.uz/fhir/core/sid/pid/reu/ppn "Passport number of Réunion"
+    * #https://dhp.uz/fhir/core/sid/pid/re/ppn "Passport number of Réunion"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #PPN
       * ^property[+].code = #notSelectable
@@ -3241,7 +3241,7 @@ Description: """
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
     * ^property[=].valueCode = #SE
-    * #https://dhp.uz/fhir/core/sid/pid/swe/ppn "Passport number of Sweden"
+    * #https://dhp.uz/fhir/core/sid/pid/se/ppn "Passport number of Sweden"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #PPN
       * ^property[+].code = #notSelectable
@@ -3250,21 +3250,21 @@ Description: """
       * ^property[=].valueCode = #SE
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-SWE"
-    * #https://dhp.uz/fhir/core/sid/pid/swe/ni "National identifier of Sweden"
+    * #https://dhp.uz/fhir/core/sid/pid/se/ni "National identifier of Sweden"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #NI
       * ^property[+].code = #notSelectable
       * ^property[=].valueBoolean = false
       * ^property[+].code = #country
       * ^property[=].valueCode = #SE
-    * #https://dhp.uz/fhir/core/sid/pid/swe/cz "ID-card number of Sweden"
+    * #https://dhp.uz/fhir/core/sid/pid/se/cz "ID-card number of Sweden"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #CZ
       * ^property[+].code = #notSelectable
       * ^property[=].valueBoolean = false
       * ^property[+].code = #country
       * ^property[=].valueCode = #SE
-    * #https://dhp.uz/fhir/core/sid/pid/swe/dl "Driver's licence number of Sweden"
+    * #https://dhp.uz/fhir/core/sid/pid/se/dl "Driver's licence number of Sweden"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #DL
       * ^property[+].code = #notSelectable
@@ -3276,7 +3276,7 @@ Description: """
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
     * ^property[=].valueCode = #RO
-    * #https://dhp.uz/fhir/core/sid/pid/rou/ppn "Passport number of Romania"
+    * #https://dhp.uz/fhir/core/sid/pid/ro/ppn "Passport number of Romania"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #PPN
       * ^property[+].code = #notSelectable
@@ -3285,21 +3285,21 @@ Description: """
       * ^property[=].valueCode = #RO
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-ROU"
-    * #https://dhp.uz/fhir/core/sid/pid/rou/ni "National identifier of Romania"
+    * #https://dhp.uz/fhir/core/sid/pid/ro/ni "National identifier of Romania"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #NI
       * ^property[+].code = #notSelectable
       * ^property[=].valueBoolean = false
       * ^property[+].code = #country
       * ^property[=].valueCode = #RO
-    * #https://dhp.uz/fhir/core/sid/pid/rou/cz "ID-card number of Romania"
+    * #https://dhp.uz/fhir/core/sid/pid/ro/cz "ID-card number of Romania"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #CZ
       * ^property[+].code = #notSelectable
       * ^property[=].valueBoolean = false
       * ^property[+].code = #country
       * ^property[=].valueCode = #RO
-    * #https://dhp.uz/fhir/core/sid/pid/rou/dl "Driver's licence number of Romania"
+    * #https://dhp.uz/fhir/core/sid/pid/ro/dl "Driver's licence number of Romania"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #DL
       * ^property[+].code = #notSelectable
@@ -3311,7 +3311,7 @@ Description: """
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
     * ^property[=].valueCode = #RW
-    * #https://dhp.uz/fhir/core/sid/pid/rwa/ppn "Passport number of Rwanda"
+    * #https://dhp.uz/fhir/core/sid/pid/rw/ppn "Passport number of Rwanda"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #PPN
       * ^property[+].code = #notSelectable
@@ -3325,7 +3325,7 @@ Description: """
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
     * ^property[=].valueCode = #SB
-    * #https://dhp.uz/fhir/core/sid/pid/slb/ppn "Passport number of Solomon Islands"
+    * #https://dhp.uz/fhir/core/sid/pid/sb/ppn "Passport number of Solomon Islands"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #PPN
       * ^property[+].code = #notSelectable
@@ -3339,7 +3339,7 @@ Description: """
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
     * ^property[=].valueCode = #KN
-    * #https://dhp.uz/fhir/core/sid/pid/kna/ppn "Passport number of Saint Kitts and Nevis"
+    * #https://dhp.uz/fhir/core/sid/pid/kn/ppn "Passport number of Saint Kitts and Nevis"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #PPN
       * ^property[+].code = #notSelectable
@@ -3353,7 +3353,7 @@ Description: """
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
     * ^property[=].valueCode = #SH
-    * #https://dhp.uz/fhir/core/sid/pid/shn/ppn "Passport number of Saint Helena"
+    * #https://dhp.uz/fhir/core/sid/pid/sh/ppn "Passport number of Saint Helena"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #PPN
       * ^property[+].code = #notSelectable
@@ -3367,7 +3367,7 @@ Description: """
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
     * ^property[=].valueCode = #LC
-    * #https://dhp.uz/fhir/core/sid/pid/lca/ppn "Passport number of Saint Lucia"
+    * #https://dhp.uz/fhir/core/sid/pid/lc/ppn "Passport number of Saint Lucia"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #PPN
       * ^property[+].code = #notSelectable
@@ -3381,7 +3381,7 @@ Description: """
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
     * ^property[=].valueCode = #PM
-    * #https://dhp.uz/fhir/core/sid/pid/spm/ppn "Passport number of Saint Pierre and Miquelon"
+    * #https://dhp.uz/fhir/core/sid/pid/pm/ppn "Passport number of Saint Pierre and Miquelon"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #PPN
       * ^property[+].code = #notSelectable
@@ -3395,7 +3395,7 @@ Description: """
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
     * ^property[=].valueCode = #VC
-    * #https://dhp.uz/fhir/core/sid/pid/vct/ppn "Passport number of Saint Vincent and the Grenadines"
+    * #https://dhp.uz/fhir/core/sid/pid/vc/ppn "Passport number of Saint Vincent and the Grenadines"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #PPN
       * ^property[+].code = #notSelectable
@@ -3409,7 +3409,7 @@ Description: """
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
     * ^property[=].valueCode = #DE
-    * #https://dhp.uz/fhir/core/sid/pid/deu/ppn "Passport number of Germany"
+    * #https://dhp.uz/fhir/core/sid/pid/de/ppn "Passport number of Germany"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #PPN
       * ^property[+].code = #notSelectable
@@ -3423,7 +3423,7 @@ Description: """
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
     * ^property[=].valueCode = #ZM
-    * #https://dhp.uz/fhir/core/sid/pid/zmb/ppn "Passport number of Zambia"
+    * #https://dhp.uz/fhir/core/sid/pid/zm/ppn "Passport number of Zambia"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #PPN
       * ^property[+].code = #notSelectable
@@ -3437,7 +3437,7 @@ Description: """
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
     * ^property[=].valueCode = #WS
-    * #https://dhp.uz/fhir/core/sid/pid/wsm/ppn "Passport number of Samoa"
+    * #https://dhp.uz/fhir/core/sid/pid/ws/ppn "Passport number of Samoa"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #PPN
       * ^property[+].code = #notSelectable
@@ -3451,7 +3451,7 @@ Description: """
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
     * ^property[=].valueCode = #SM
-    * #https://dhp.uz/fhir/core/sid/pid/smr/ppn "Passport number of San Marino"
+    * #https://dhp.uz/fhir/core/sid/pid/sm/ppn "Passport number of San Marino"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #PPN
       * ^property[+].code = #notSelectable
@@ -3460,21 +3460,21 @@ Description: """
       * ^property[=].valueCode = #SM
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-SMR"
-    * #https://dhp.uz/fhir/core/sid/pid/smr/ni "National identifier of San Marino"
+    * #https://dhp.uz/fhir/core/sid/pid/sm/ni "National identifier of San Marino"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #NI
       * ^property[+].code = #notSelectable
       * ^property[=].valueBoolean = false
       * ^property[+].code = #country
       * ^property[=].valueCode = #SM
-    * #https://dhp.uz/fhir/core/sid/pid/smr/cz "ID-card number of San Marino"
+    * #https://dhp.uz/fhir/core/sid/pid/sm/cz "ID-card number of San Marino"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #CZ
       * ^property[+].code = #notSelectable
       * ^property[=].valueBoolean = false
       * ^property[+].code = #country
       * ^property[=].valueCode = #SM
-    * #https://dhp.uz/fhir/core/sid/pid/smr/dl "Driver's licence number of San Marino"
+    * #https://dhp.uz/fhir/core/sid/pid/sm/dl "Driver's licence number of San Marino"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #DL
       * ^property[+].code = #notSelectable
@@ -3486,7 +3486,7 @@ Description: """
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
     * ^property[=].valueCode = #ST
-    * #https://dhp.uz/fhir/core/sid/pid/stp/ppn "Passport number of Sao Tome and Principe"
+    * #https://dhp.uz/fhir/core/sid/pid/st/ppn "Passport number of Sao Tome and Principe"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #PPN
       * ^property[+].code = #notSelectable
@@ -3500,7 +3500,7 @@ Description: """
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
     * ^property[=].valueCode = #SA
-    * #https://dhp.uz/fhir/core/sid/pid/sau/ppn "Passport number of Saudi Arabia"
+    * #https://dhp.uz/fhir/core/sid/pid/sa/ppn "Passport number of Saudi Arabia"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #PPN
       * ^property[+].code = #notSelectable
@@ -3514,7 +3514,7 @@ Description: """
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
     * ^property[=].valueCode = #SC
-    * #https://dhp.uz/fhir/core/sid/pid/syc/ppn "Passport number of Seychelles"
+    * #https://dhp.uz/fhir/core/sid/pid/sc/ppn "Passport number of Seychelles"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #PPN
       * ^property[+].code = #notSelectable
@@ -3528,7 +3528,7 @@ Description: """
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
     * ^property[=].valueCode = #SN
-    * #https://dhp.uz/fhir/core/sid/pid/sen/ppn "Passport number of Senegal"
+    * #https://dhp.uz/fhir/core/sid/pid/sn/ppn "Passport number of Senegal"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #PPN
       * ^property[+].code = #notSelectable
@@ -3542,7 +3542,7 @@ Description: """
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
     * ^property[=].valueCode = #RS
-    * #https://dhp.uz/fhir/core/sid/pid/srb/ppn "Passport number of Serbia"
+    * #https://dhp.uz/fhir/core/sid/pid/rs/ppn "Passport number of Serbia"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #PPN
       * ^property[+].code = #notSelectable
@@ -3551,21 +3551,21 @@ Description: """
       * ^property[=].valueCode = #RS
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-SRB"
-    * #https://dhp.uz/fhir/core/sid/pid/srb/ni "National identifier of Serbia"
+    * #https://dhp.uz/fhir/core/sid/pid/rs/ni "National identifier of Serbia"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #NI
       * ^property[+].code = #notSelectable
       * ^property[=].valueBoolean = false
       * ^property[+].code = #country
       * ^property[=].valueCode = #RS
-    * #https://dhp.uz/fhir/core/sid/pid/srb/cz "ID-card number of Serbia"
+    * #https://dhp.uz/fhir/core/sid/pid/rs/cz "ID-card number of Serbia"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #CZ
       * ^property[+].code = #notSelectable
       * ^property[=].valueBoolean = false
       * ^property[+].code = #country
       * ^property[=].valueCode = #RS
-    * #https://dhp.uz/fhir/core/sid/pid/srb/dl "Driver's licence number of Serbia"
+    * #https://dhp.uz/fhir/core/sid/pid/rs/dl "Driver's licence number of Serbia"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #DL
       * ^property[+].code = #notSelectable
@@ -3577,7 +3577,7 @@ Description: """
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
     * ^property[=].valueCode = #SL
-    * #https://dhp.uz/fhir/core/sid/pid/sle/ppn "Passport number of Sierra Leone"
+    * #https://dhp.uz/fhir/core/sid/pid/sl/ppn "Passport number of Sierra Leone"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #PPN
       * ^property[+].code = #notSelectable
@@ -3591,7 +3591,7 @@ Description: """
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
     * ^property[=].valueCode = #SG
-    * #https://dhp.uz/fhir/core/sid/pid/sgp/ppn "Passport number of Singapore"
+    * #https://dhp.uz/fhir/core/sid/pid/sg/ppn "Passport number of Singapore"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #PPN
       * ^property[+].code = #notSelectable
@@ -3600,7 +3600,7 @@ Description: """
       * ^property[=].valueCode = #SG
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-SGP"
-    * #https://dhp.uz/fhir/core/sid/pid/sgp/ni "National identifier of Singapore"
+    * #https://dhp.uz/fhir/core/sid/pid/sg/ni "National identifier of Singapore"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #NI
       * ^property[+].code = #notSelectable
@@ -3612,7 +3612,7 @@ Description: """
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
     * ^property[=].valueCode = #SK
-    * #https://dhp.uz/fhir/core/sid/pid/svk/ppn "Passport number of Slovakia"
+    * #https://dhp.uz/fhir/core/sid/pid/sk/ppn "Passport number of Slovakia"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #PPN
       * ^property[+].code = #notSelectable
@@ -3621,21 +3621,21 @@ Description: """
       * ^property[=].valueCode = #SK
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-SVK"
-    * #https://dhp.uz/fhir/core/sid/pid/svk/ni "National identifier of Slovakia"
+    * #https://dhp.uz/fhir/core/sid/pid/sk/ni "National identifier of Slovakia"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #NI
       * ^property[+].code = #notSelectable
       * ^property[=].valueBoolean = false
       * ^property[+].code = #country
       * ^property[=].valueCode = #SK
-    * #https://dhp.uz/fhir/core/sid/pid/svk/cz "ID-card number of Slovakia"
+    * #https://dhp.uz/fhir/core/sid/pid/sk/cz "ID-card number of Slovakia"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #CZ
       * ^property[+].code = #notSelectable
       * ^property[=].valueBoolean = false
       * ^property[+].code = #country
       * ^property[=].valueCode = #SK
-    * #https://dhp.uz/fhir/core/sid/pid/svk/dl "Driver's licence number of Slovakia"
+    * #https://dhp.uz/fhir/core/sid/pid/sk/dl "Driver's licence number of Slovakia"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #DL
       * ^property[+].code = #notSelectable
@@ -3647,7 +3647,7 @@ Description: """
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
     * ^property[=].valueCode = #SI
-    * #https://dhp.uz/fhir/core/sid/pid/svn/ppn "Passport number of Slovenia"
+    * #https://dhp.uz/fhir/core/sid/pid/si/ppn "Passport number of Slovenia"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #PPN
       * ^property[+].code = #notSelectable
@@ -3656,21 +3656,21 @@ Description: """
       * ^property[=].valueCode = #SI
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-SVN"
-    * #https://dhp.uz/fhir/core/sid/pid/svn/ni "National identifier of Slovenia"
+    * #https://dhp.uz/fhir/core/sid/pid/si/ni "National identifier of Slovenia"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #NI
       * ^property[+].code = #notSelectable
       * ^property[=].valueBoolean = false
       * ^property[+].code = #country
       * ^property[=].valueCode = #SI
-    * #https://dhp.uz/fhir/core/sid/pid/svn/cz "ID-card number of Slovenia"
+    * #https://dhp.uz/fhir/core/sid/pid/si/cz "ID-card number of Slovenia"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #CZ
       * ^property[+].code = #notSelectable
       * ^property[=].valueBoolean = false
       * ^property[+].code = #country
       * ^property[=].valueCode = #SI
-    * #https://dhp.uz/fhir/core/sid/pid/svn/dl "Driver's licence number of Slovenia"
+    * #https://dhp.uz/fhir/core/sid/pid/si/dl "Driver's licence number of Slovenia"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #DL
       * ^property[+].code = #notSelectable
@@ -3682,7 +3682,7 @@ Description: """
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
     * ^property[=].valueCode = #SO
-    * #https://dhp.uz/fhir/core/sid/pid/som/ppn "Passport number of Somalia"
+    * #https://dhp.uz/fhir/core/sid/pid/so/ppn "Passport number of Somalia"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #PPN
       * ^property[+].code = #notSelectable
@@ -3696,7 +3696,7 @@ Description: """
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
     * ^property[=].valueCode = #FI
-    * #https://dhp.uz/fhir/core/sid/pid/fin/ppn "Passport number of Finland"
+    * #https://dhp.uz/fhir/core/sid/pid/fi/ppn "Passport number of Finland"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #PPN
       * ^property[+].code = #notSelectable
@@ -3705,21 +3705,21 @@ Description: """
       * ^property[=].valueCode = #FI
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-FIN"
-    * #https://dhp.uz/fhir/core/sid/pid/fin/ni "National identifier of Finland"
+    * #https://dhp.uz/fhir/core/sid/pid/fi/ni "National identifier of Finland"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #NI
       * ^property[+].code = #notSelectable
       * ^property[=].valueBoolean = false
       * ^property[+].code = #country
       * ^property[=].valueCode = #FI
-    * #https://dhp.uz/fhir/core/sid/pid/fin/cz "ID-card number of Finland"
+    * #https://dhp.uz/fhir/core/sid/pid/fi/cz "ID-card number of Finland"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #CZ
       * ^property[+].code = #notSelectable
       * ^property[=].valueBoolean = false
       * ^property[+].code = #country
       * ^property[=].valueCode = #FI
-    * #https://dhp.uz/fhir/core/sid/pid/fin/dl "Driver's licence number of Finland"
+    * #https://dhp.uz/fhir/core/sid/pid/fi/dl "Driver's licence number of Finland"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #DL
       * ^property[+].code = #notSelectable
@@ -3731,7 +3731,7 @@ Description: """
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
     * ^property[=].valueCode = #LK
-    * #https://dhp.uz/fhir/core/sid/pid/lka/ppn "Passport number of Sri Lanka"
+    * #https://dhp.uz/fhir/core/sid/pid/lk/ppn "Passport number of Sri Lanka"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #PPN
       * ^property[+].code = #notSelectable
@@ -3740,7 +3740,7 @@ Description: """
       * ^property[=].valueCode = #LK
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-LKA"
-    * #https://dhp.uz/fhir/core/sid/pid/lka/ni "National identifier of Sri Lanka"
+    * #https://dhp.uz/fhir/core/sid/pid/lk/ni "National identifier of Sri Lanka"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #NI
       * ^property[+].code = #notSelectable
@@ -3752,7 +3752,7 @@ Description: """
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
     * ^property[=].valueCode = #SD
-    * #https://dhp.uz/fhir/core/sid/pid/sdn/ppn "Passport number of Sudan"
+    * #https://dhp.uz/fhir/core/sid/pid/sd/ppn "Passport number of Sudan"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #PPN
       * ^property[+].code = #notSelectable
@@ -3766,7 +3766,7 @@ Description: """
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
     * ^property[=].valueCode = #SR
-    * #https://dhp.uz/fhir/core/sid/pid/sur/ppn "Passport number of Suriname"
+    * #https://dhp.uz/fhir/core/sid/pid/sr/ppn "Passport number of Suriname"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #PPN
       * ^property[+].code = #notSelectable
@@ -3780,7 +3780,7 @@ Description: """
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
     * ^property[=].valueCode = #LY
-    * #https://dhp.uz/fhir/core/sid/pid/lby/ppn "Passport number of Libyan Arab Jamahiriya"
+    * #https://dhp.uz/fhir/core/sid/pid/ly/ppn "Passport number of Libyan Arab Jamahiriya"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #PPN
       * ^property[+].code = #notSelectable
@@ -3794,7 +3794,7 @@ Description: """
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
     * ^property[=].valueCode = #GB
-    * #https://dhp.uz/fhir/core/sid/pid/gbr/ppn "Passport number of United Kingdom"
+    * #https://dhp.uz/fhir/core/sid/pid/gb/ppn "Passport number of United Kingdom"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #PPN
       * ^property[+].code = #notSelectable
@@ -3808,7 +3808,7 @@ Description: """
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
     * ^property[=].valueCode = #SZ
-    * #https://dhp.uz/fhir/core/sid/pid/swz/ppn "Passport number of Swaziland"
+    * #https://dhp.uz/fhir/core/sid/pid/sz/ppn "Passport number of Swaziland"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #PPN
       * ^property[+].code = #notSelectable
@@ -3822,7 +3822,7 @@ Description: """
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
     * ^property[=].valueCode = #SJ
-    * #https://dhp.uz/fhir/core/sid/pid/sjm/ppn "Passport number of Svalbard and Jan Mayen"
+    * #https://dhp.uz/fhir/core/sid/pid/sj/ppn "Passport number of Svalbard and Jan Mayen"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #PPN
       * ^property[+].code = #notSelectable
@@ -3836,7 +3836,7 @@ Description: """
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
     * ^property[=].valueCode = #SY
-    * #https://dhp.uz/fhir/core/sid/pid/syr/ppn "Passport number of Syrian Arab Republic"
+    * #https://dhp.uz/fhir/core/sid/pid/sy/ppn "Passport number of Syrian Arab Republic"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #PPN
       * ^property[+].code = #notSelectable
@@ -3850,7 +3850,7 @@ Description: """
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
     * ^property[=].valueCode = #CH
-    * #https://dhp.uz/fhir/core/sid/pid/che/ppn "Passport number of Switzerland"
+    * #https://dhp.uz/fhir/core/sid/pid/ch/ppn "Passport number of Switzerland"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #PPN
       * ^property[+].code = #notSelectable
@@ -3864,7 +3864,7 @@ Description: """
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
     * ^property[=].valueCode = #ZW
-    * #https://dhp.uz/fhir/core/sid/pid/zwe/ppn "Passport number of Zimbabwe"
+    * #https://dhp.uz/fhir/core/sid/pid/zw/ppn "Passport number of Zimbabwe"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #PPN
       * ^property[+].code = #notSelectable
@@ -3873,7 +3873,7 @@ Description: """
       * ^property[=].valueCode = #ZW
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-ZWE"
-    * #https://dhp.uz/fhir/core/sid/pid/zwe/ni "National identifier of Zimbabwe"
+    * #https://dhp.uz/fhir/core/sid/pid/zw/ni "National identifier of Zimbabwe"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #NI
       * ^property[+].code = #notSelectable
@@ -3885,7 +3885,7 @@ Description: """
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
     * ^property[=].valueCode = #DK
-    * #https://dhp.uz/fhir/core/sid/pid/dnk/ppn "Passport number of Denmark"
+    * #https://dhp.uz/fhir/core/sid/pid/dk/ppn "Passport number of Denmark"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #PPN
       * ^property[+].code = #notSelectable
@@ -3894,14 +3894,14 @@ Description: """
       * ^property[=].valueCode = #DK
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-DNK"
-    * #https://dhp.uz/fhir/core/sid/pid/dnk/ni "National identifier of Denmark"
+    * #https://dhp.uz/fhir/core/sid/pid/dk/ni "National identifier of Denmark"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #NI
       * ^property[+].code = #notSelectable
       * ^property[=].valueBoolean = false
       * ^property[+].code = #country
       * ^property[=].valueCode = #DK
-    * #https://dhp.uz/fhir/core/sid/pid/dnk/dl "Driver's licence number of Denmark"
+    * #https://dhp.uz/fhir/core/sid/pid/dk/dl "Driver's licence number of Denmark"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #DL
       * ^property[+].code = #notSelectable
@@ -3913,7 +3913,7 @@ Description: """
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
     * ^property[=].valueCode = #TJ
-    * #https://dhp.uz/fhir/core/sid/pid/tjk/ppn "Passport number of Tajikistan"
+    * #https://dhp.uz/fhir/core/sid/pid/tj/ppn "Passport number of Tajikistan"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #PPN
       * ^property[+].code = #notSelectable
@@ -3927,7 +3927,7 @@ Description: """
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
     * ^property[=].valueCode = #TH
-    * #https://dhp.uz/fhir/core/sid/pid/tha/ppn "Passport number of Thailand"
+    * #https://dhp.uz/fhir/core/sid/pid/th/ppn "Passport number of Thailand"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #PPN
       * ^property[+].code = #notSelectable
@@ -3936,21 +3936,21 @@ Description: """
       * ^property[=].valueCode = #TH
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-THA"
-    * #https://dhp.uz/fhir/core/sid/pid/tha/ni "National identifier of Thailand"
+    * #https://dhp.uz/fhir/core/sid/pid/th/ni "National identifier of Thailand"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #NI
       * ^property[+].code = #notSelectable
       * ^property[=].valueBoolean = false
       * ^property[+].code = #country
       * ^property[=].valueCode = #TH
-    * #https://dhp.uz/fhir/core/sid/pid/tha/cz "ID-card number of Thailand"
+    * #https://dhp.uz/fhir/core/sid/pid/th/cz "ID-card number of Thailand"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #CZ
       * ^property[+].code = #notSelectable
       * ^property[=].valueBoolean = false
       * ^property[+].code = #country
       * ^property[=].valueCode = #TH
-    * #https://dhp.uz/fhir/core/sid/pid/tha/dl "Driver's licence number of Thailand"
+    * #https://dhp.uz/fhir/core/sid/pid/th/dl "Driver's licence number of Thailand"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #DL
       * ^property[+].code = #notSelectable
@@ -3962,7 +3962,7 @@ Description: """
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
     * ^property[=].valueCode = #TW
-    * #https://dhp.uz/fhir/core/sid/pid/twn/ppn "Passport number of Taiwan"
+    * #https://dhp.uz/fhir/core/sid/pid/tw/ppn "Passport number of Taiwan"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #PPN
       * ^property[+].code = #notSelectable
@@ -3971,7 +3971,7 @@ Description: """
       * ^property[=].valueCode = #TW
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-TWN"
-    * #https://dhp.uz/fhir/core/sid/pid/twn/ni "National identifier of Taiwan"
+    * #https://dhp.uz/fhir/core/sid/pid/tw/ni "National identifier of Taiwan"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #NI
       * ^property[+].code = #notSelectable
@@ -3983,7 +3983,7 @@ Description: """
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
     * ^property[=].valueCode = #TZ
-    * #https://dhp.uz/fhir/core/sid/pid/tza/ppn "Passport number of Tanzania, United Republic of"
+    * #https://dhp.uz/fhir/core/sid/pid/tz/ppn "Passport number of Tanzania, United Republic of"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #PPN
       * ^property[+].code = #notSelectable
@@ -3997,7 +3997,7 @@ Description: """
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
     * ^property[=].valueCode = #TL
-    * #https://dhp.uz/fhir/core/sid/pid/tls/ppn "Passport number of Timor-Leste"
+    * #https://dhp.uz/fhir/core/sid/pid/tl/ppn "Passport number of Timor-Leste"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #PPN
       * ^property[+].code = #notSelectable
@@ -4011,7 +4011,7 @@ Description: """
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
     * ^property[=].valueCode = #TG
-    * #https://dhp.uz/fhir/core/sid/pid/tgo/ppn "Passport number of Togo"
+    * #https://dhp.uz/fhir/core/sid/pid/tg/ppn "Passport number of Togo"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #PPN
       * ^property[+].code = #notSelectable
@@ -4025,7 +4025,7 @@ Description: """
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
     * ^property[=].valueCode = #TK
-    * #https://dhp.uz/fhir/core/sid/pid/tkl/ppn "Passport number of Tokelau"
+    * #https://dhp.uz/fhir/core/sid/pid/tk/ppn "Passport number of Tokelau"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #PPN
       * ^property[+].code = #notSelectable
@@ -4039,7 +4039,7 @@ Description: """
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
     * ^property[=].valueCode = #TO
-    * #https://dhp.uz/fhir/core/sid/pid/ton/ppn "Passport number of Tonga"
+    * #https://dhp.uz/fhir/core/sid/pid/to/ppn "Passport number of Tonga"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #PPN
       * ^property[+].code = #notSelectable
@@ -4053,7 +4053,7 @@ Description: """
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
     * ^property[=].valueCode = #TT
-    * #https://dhp.uz/fhir/core/sid/pid/tto/ppn "Passport number of Trinidad and Tobago"
+    * #https://dhp.uz/fhir/core/sid/pid/tt/ppn "Passport number of Trinidad and Tobago"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #PPN
       * ^property[+].code = #notSelectable
@@ -4067,7 +4067,7 @@ Description: """
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
     * ^property[=].valueCode = #TD
-    * #https://dhp.uz/fhir/core/sid/pid/tcd/ppn "Passport number of Chad"
+    * #https://dhp.uz/fhir/core/sid/pid/td/ppn "Passport number of Chad"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #PPN
       * ^property[+].code = #notSelectable
@@ -4081,7 +4081,7 @@ Description: """
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
     * ^property[=].valueCode = #CZ
-    * #https://dhp.uz/fhir/core/sid/pid/cze/ppn "Passport number of Czech Republic"
+    * #https://dhp.uz/fhir/core/sid/pid/cz/ppn "Passport number of Czech Republic"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #PPN
       * ^property[+].code = #notSelectable
@@ -4090,21 +4090,21 @@ Description: """
       * ^property[=].valueCode = #CZ
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-CZE"
-    * #https://dhp.uz/fhir/core/sid/pid/cze/ni "National identifier of Czech Republic"
+    * #https://dhp.uz/fhir/core/sid/pid/cz/ni "National identifier of Czech Republic"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #NI
       * ^property[+].code = #notSelectable
       * ^property[=].valueBoolean = false
       * ^property[+].code = #country
       * ^property[=].valueCode = #CZ
-    * #https://dhp.uz/fhir/core/sid/pid/cze/cz "ID-card number of Czech Republic"
+    * #https://dhp.uz/fhir/core/sid/pid/cz/cz "ID-card number of Czech Republic"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #CZ
       * ^property[+].code = #notSelectable
       * ^property[=].valueBoolean = false
       * ^property[+].code = #country
       * ^property[=].valueCode = #CZ
-    * #https://dhp.uz/fhir/core/sid/pid/cze/dl "Driver's licence number of Czech Republic"
+    * #https://dhp.uz/fhir/core/sid/pid/cz/dl "Driver's licence number of Czech Republic"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #DL
       * ^property[+].code = #notSelectable
@@ -4116,7 +4116,7 @@ Description: """
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
     * ^property[=].valueCode = #CL
-    * #https://dhp.uz/fhir/core/sid/pid/chl/ppn "Passport number of Chile"
+    * #https://dhp.uz/fhir/core/sid/pid/cl/ppn "Passport number of Chile"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #PPN
       * ^property[+].code = #notSelectable
@@ -4125,21 +4125,21 @@ Description: """
       * ^property[=].valueCode = #CL
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-CHL"
-    * #https://dhp.uz/fhir/core/sid/pid/chl/ni "National identifier of Chile"
+    * #https://dhp.uz/fhir/core/sid/pid/cl/ni "National identifier of Chile"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #NI
       * ^property[+].code = #notSelectable
       * ^property[=].valueBoolean = false
       * ^property[+].code = #country
       * ^property[=].valueCode = #CL
-    * #https://dhp.uz/fhir/core/sid/pid/chl/cz "ID-card number of Chile"
+    * #https://dhp.uz/fhir/core/sid/pid/cl/cz "ID-card number of Chile"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #CZ
       * ^property[+].code = #notSelectable
       * ^property[=].valueBoolean = false
       * ^property[+].code = #country
       * ^property[=].valueCode = #CL
-    * #https://dhp.uz/fhir/core/sid/pid/chl/dl "Driver's licence number of Chile"
+    * #https://dhp.uz/fhir/core/sid/pid/cl/dl "Driver's licence number of Chile"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #DL
       * ^property[+].code = #notSelectable
@@ -4151,7 +4151,7 @@ Description: """
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
     * ^property[=].valueCode = #TN
-    * #https://dhp.uz/fhir/core/sid/pid/tun/ppn "Passport number of Tunisia"
+    * #https://dhp.uz/fhir/core/sid/pid/tn/ppn "Passport number of Tunisia"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #PPN
       * ^property[+].code = #notSelectable
@@ -4165,7 +4165,7 @@ Description: """
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
     * ^property[=].valueCode = #TC
-    * #https://dhp.uz/fhir/core/sid/pid/tca/ppn "Passport number of Turks and Caicos Islands"
+    * #https://dhp.uz/fhir/core/sid/pid/tc/ppn "Passport number of Turks and Caicos Islands"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #PPN
       * ^property[+].code = #notSelectable
@@ -4179,7 +4179,7 @@ Description: """
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
     * ^property[=].valueCode = #TV
-    * #https://dhp.uz/fhir/core/sid/pid/tuv/ppn "Passport number of Tuvalu"
+    * #https://dhp.uz/fhir/core/sid/pid/tv/ppn "Passport number of Tuvalu"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #PPN
       * ^property[+].code = #notSelectable
@@ -4193,7 +4193,7 @@ Description: """
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
     * ^property[=].valueCode = #TR
-    * #https://dhp.uz/fhir/core/sid/pid/tur/ppn "Passport number of Turkey"
+    * #https://dhp.uz/fhir/core/sid/pid/tr/ppn "Passport number of Turkey"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #PPN
       * ^property[+].code = #notSelectable
@@ -4202,14 +4202,14 @@ Description: """
       * ^property[=].valueCode = #TR
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-TUR"
-    * #https://dhp.uz/fhir/core/sid/pid/tur/ni "National identifier of Turkey"
+    * #https://dhp.uz/fhir/core/sid/pid/tr/ni "National identifier of Turkey"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #NI
       * ^property[+].code = #notSelectable
       * ^property[=].valueBoolean = false
       * ^property[+].code = #country
       * ^property[=].valueCode = #TR
-    * #https://dhp.uz/fhir/core/sid/pid/tur/dl "Driver's licence number of Turkey"
+    * #https://dhp.uz/fhir/core/sid/pid/tr/dl "Driver's licence number of Turkey"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #DL
       * ^property[+].code = #notSelectable
@@ -4221,7 +4221,7 @@ Description: """
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
     * ^property[=].valueCode = #TM
-    * #https://dhp.uz/fhir/core/sid/pid/tkm/ppn "Passport number of Turkmenistan"
+    * #https://dhp.uz/fhir/core/sid/pid/tm/ppn "Passport number of Turkmenistan"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #PPN
       * ^property[+].code = #notSelectable
@@ -4235,7 +4235,7 @@ Description: """
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
     * ^property[=].valueCode = #UG
-    * #https://dhp.uz/fhir/core/sid/pid/uga/ppn "Passport number of Uganda"
+    * #https://dhp.uz/fhir/core/sid/pid/ug/ppn "Passport number of Uganda"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #PPN
       * ^property[+].code = #notSelectable
@@ -4249,7 +4249,7 @@ Description: """
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
     * ^property[=].valueCode = #UA
-    * #https://dhp.uz/fhir/core/sid/pid/ukr/ppn "Passport number of Ukraine"
+    * #https://dhp.uz/fhir/core/sid/pid/ua/ppn "Passport number of Ukraine"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #PPN
       * ^property[+].code = #notSelectable
@@ -4258,21 +4258,21 @@ Description: """
       * ^property[=].valueCode = #UA
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-UKR"
-    * #https://dhp.uz/fhir/core/sid/pid/ukr/ni "National identifier of Ukraine"
+    * #https://dhp.uz/fhir/core/sid/pid/ua/ni "National identifier of Ukraine"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #NI
       * ^property[+].code = #notSelectable
       * ^property[=].valueBoolean = false
       * ^property[+].code = #country
       * ^property[=].valueCode = #UA
-    * #https://dhp.uz/fhir/core/sid/pid/ukr/cz "ID-card number of Ukraine"
+    * #https://dhp.uz/fhir/core/sid/pid/ua/cz "ID-card number of Ukraine"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #CZ
       * ^property[+].code = #notSelectable
       * ^property[=].valueBoolean = false
       * ^property[+].code = #country
       * ^property[=].valueCode = #UA
-    * #https://dhp.uz/fhir/core/sid/pid/ukr/dl "Driver's licence number of Ukraine"
+    * #https://dhp.uz/fhir/core/sid/pid/ua/dl "Driver's licence number of Ukraine"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #DL
       * ^property[+].code = #notSelectable
@@ -4284,7 +4284,7 @@ Description: """
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
     * ^property[=].valueCode = #HU
-    * #https://dhp.uz/fhir/core/sid/pid/hun/ppn "Passport number of Hungary"
+    * #https://dhp.uz/fhir/core/sid/pid/hu/ppn "Passport number of Hungary"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #PPN
       * ^property[+].code = #notSelectable
@@ -4298,7 +4298,7 @@ Description: """
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
     * ^property[=].valueCode = #UY
-    * #https://dhp.uz/fhir/core/sid/pid/ury/ppn "Passport number of Uruguay"
+    * #https://dhp.uz/fhir/core/sid/pid/uy/ppn "Passport number of Uruguay"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #PPN
       * ^property[+].code = #notSelectable
@@ -4312,7 +4312,7 @@ Description: """
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
     * ^property[=].valueCode = #NC
-    * #https://dhp.uz/fhir/core/sid/pid/ncl/ppn "Passport number of New Caledonia"
+    * #https://dhp.uz/fhir/core/sid/pid/nc/ppn "Passport number of New Caledonia"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #PPN
       * ^property[+].code = #notSelectable
@@ -4326,7 +4326,7 @@ Description: """
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
     * ^property[=].valueCode = #NZ
-    * #https://dhp.uz/fhir/core/sid/pid/nzl/ppn "Passport number of New Zealand"
+    * #https://dhp.uz/fhir/core/sid/pid/nz/ppn "Passport number of New Zealand"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #PPN
       * ^property[+].code = #notSelectable
@@ -4340,7 +4340,7 @@ Description: """
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
     * ^property[=].valueCode = #BY
-    * #https://dhp.uz/fhir/core/sid/pid/blr/ppn "Passport number of Belarus"
+    * #https://dhp.uz/fhir/core/sid/pid/by/ppn "Passport number of Belarus"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #PPN
       * ^property[+].code = #notSelectable
@@ -4354,7 +4354,7 @@ Description: """
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
     * ^property[=].valueCode = #WF
-    * #https://dhp.uz/fhir/core/sid/pid/wlf/ppn "Passport number of Wallis and Futuna Islands"
+    * #https://dhp.uz/fhir/core/sid/pid/wf/ppn "Passport number of Wallis and Futuna Islands"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #PPN
       * ^property[+].code = #notSelectable
@@ -4368,7 +4368,7 @@ Description: """
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
     * ^property[=].valueCode = #VU
-    * #https://dhp.uz/fhir/core/sid/pid/vut/ppn "Passport number of Vanuatu"
+    * #https://dhp.uz/fhir/core/sid/pid/vu/ppn "Passport number of Vanuatu"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #PPN
       * ^property[+].code = #notSelectable
@@ -4382,7 +4382,7 @@ Description: """
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
     * ^property[=].valueCode = #RU
-    * #https://dhp.uz/fhir/core/sid/pid/rus/ppn "Passport number of Russian Federation"
+    * #https://dhp.uz/fhir/core/sid/pid/ru/ppn "Passport number of Russian Federation"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #PPN
       * ^property[+].code = #notSelectable
@@ -4396,7 +4396,7 @@ Description: """
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
     * ^property[=].valueCode = #VE
-    * #https://dhp.uz/fhir/core/sid/pid/ven/ppn "Passport number of Venezuela"
+    * #https://dhp.uz/fhir/core/sid/pid/ve/ppn "Passport number of Venezuela"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #PPN
       * ^property[+].code = #notSelectable
@@ -4405,7 +4405,7 @@ Description: """
       * ^property[=].valueCode = #VE
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-VEN"
-    * #https://dhp.uz/fhir/core/sid/pid/ven/ni "National identifier of Venezuela"
+    * #https://dhp.uz/fhir/core/sid/pid/ve/ni "National identifier of Venezuela"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #NI
       * ^property[+].code = #notSelectable
@@ -4417,7 +4417,7 @@ Description: """
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
     * ^property[=].valueCode = #VN
-    * #https://dhp.uz/fhir/core/sid/pid/vnm/ppn "Passport number of Viet Nam"
+    * #https://dhp.uz/fhir/core/sid/pid/vn/ppn "Passport number of Viet Nam"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #PPN
       * ^property[+].code = #notSelectable
@@ -4431,7 +4431,7 @@ Description: """
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
     * ^property[=].valueCode = #VI
-    * #https://dhp.uz/fhir/core/sid/pid/vir/ppn "Passport number of Virgin Islands (U.S.)"
+    * #https://dhp.uz/fhir/core/sid/pid/vi/ppn "Passport number of Virgin Islands (U.S.)"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #PPN
       * ^property[+].code = #notSelectable
@@ -4445,7 +4445,7 @@ Description: """
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
     * ^property[=].valueCode = #UM
-    * #https://dhp.uz/fhir/core/sid/pid/umi/ppn "Passport number of United States Minor Outlying Islands"
+    * #https://dhp.uz/fhir/core/sid/pid/um/ppn "Passport number of United States Minor Outlying Islands"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #PPN
       * ^property[+].code = #notSelectable

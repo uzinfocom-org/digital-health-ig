@@ -16,20 +16,22 @@ Where:
 - `type`: Identifier type (e.g., `ppn` for passport, `ni` for national ID)
 - `subtype`: Optional further classification (e.g., `local`, `intl` for passport types)
 
+For a complete list of all supported identifier systems across all countries, see the [IdentifierDomainCS CodeSystem](CodeSystem-identifier-domain-cs.html).
+
 ## Patient identifiers
 
 ### National ID (PINFL)
 
 The national unique identifier (PINFL - Personal Identification Number for Foreign and Local citizens) is the primary identifier for Uzbek citizens and residents.
 
-**System URI**: `https://dhp.uz/fhir/core/sid/pid/uzb/ni`
+**System URI**: `https://dhp.uz/fhir/core/sid/pid/uz/ni`
 
 ```json
 {
   "resourceType": "Patient",
   "identifier": [
     {
-      "system": "https://dhp.uz/fhir/core/sid/pid/uzb/ni",
+      "system": "https://dhp.uz/fhir/core/sid/pid/uz/ni",
       "type": {
         "coding": [
           {
@@ -50,13 +52,13 @@ The national unique identifier (PINFL - Personal Identification Number for Forei
 
 Local passports are used for domestic identification within Uzbekistan.
 
-**System URI**: `https://dhp.uz/fhir/core/sid/pid/uzb/ppn/local`
+**System URI**: `https://dhp.uz/fhir/core/sid/pid/uz/ppn/local`
 
 ```json
 {
   "identifier": [
     {
-      "system": "https://dhp.uz/fhir/core/sid/pid/uzb/ppn/local",
+      "system": "https://dhp.uz/fhir/core/sid/pid/uz/ppn/local",
       "type": {
         "coding": [
           {
@@ -83,14 +85,14 @@ For a complete list of all supported patient identifier systems, see the [Patien
 
 Healthcare professionals are identified using the Human Resource Management (HRM) Argos system.
 
-**System URI**: `https://dhp.uz/fhir/core/sid/pro/uzb/argos`
+**System URI**: `https://dhp.uz/fhir/core/sid/pro/uz/argos`
 
 ```json
 {
   "resourceType": "Practitioner",
   "identifier": [
     {
-      "system": "https://dhp.uz/fhir/core/sid/pro/uzb/argos",
+      "system": "https://dhp.uz/fhir/core/sid/pro/uz/argos",
       "type": {
         "coding": [
           {
@@ -115,14 +117,14 @@ Healthcare professionals are identified using the Human Resource Management (HRM
 
 Organizations are identified by their tax identification number assigned by the State Tax Committee.
 
-**System URI**: `https://dhp.uz/fhir/core/sid/org/uzb/soliq`
+**System URI**: `https://dhp.uz/fhir/core/sid/org/uz/soliq`
 
 ```json
 {
   "resourceType": "Organization",
   "identifier": [
     {
-      "system": "https://dhp.uz/fhir/core/sid/org/uzb/soliq",
+      "system": "https://dhp.uz/fhir/core/sid/org/uz/soliq",
       "type": {
         "coding": [
           {
@@ -149,7 +151,7 @@ A patient may have multiple identifiers. Here's a complete example showing prope
   "language": "uz",
   "identifier": [
     {
-      "system": "https://dhp.uz/fhir/core/sid/pid/uzb/ni",
+      "system": "https://dhp.uz/fhir/core/sid/pid/uz/ni",
       "type": {
         "coding": [
           {
@@ -163,7 +165,7 @@ A patient may have multiple identifiers. Here's a complete example showing prope
       "value": "30211975910033"
     },
     {
-      "system": "https://dhp.uz/fhir/core/sid/pid/uzb/ppn/local",
+      "system": "https://dhp.uz/fhir/core/sid/pid/uz/ppn/local",
       "type": {
         "coding": [
           {
@@ -177,7 +179,7 @@ A patient may have multiple identifiers. Here's a complete example showing prope
       "value": "AC1234567"
     },
     {
-      "system": "https://dhp.uz/fhir/core/sid/pid/uzb/hc",
+      "system": "https://dhp.uz/fhir/core/sid/pid/uz/hc",
       "type": {
         "coding": [
           {
@@ -210,14 +212,14 @@ A patient may have multiple identifiers. Here's a complete example showing prope
 Not all concepts in the IdentifierDomainCS CodeSystem are selectable. Parent/grouping concepts have the `notSelectable` property set to `true`. Only leaf concepts (actual identifier systems) can be used:
 
 **Selectable** (use these in FHIR resources):
-- `https://dhp.uz/fhir/core/sid/pid/uzb/ni`
-- `https://dhp.uz/fhir/core/sid/pid/uzb/ppn/local`
-- `https://dhp.uz/fhir/core/sid/pro/uzb/argos`
+- `https://dhp.uz/fhir/core/sid/pid/uz/ni`
+- `https://dhp.uz/fhir/core/sid/pid/uz/ppn/local`
+- `https://dhp.uz/fhir/core/sid/pro/uz/argos`
 
 **Not selectable** (parent groupings only):
 - `https://dhp.uz/fhir/core/sid/pid` (root)
-- `https://dhp.uz/fhir/core/sid/pid/uzb` (country root)
-- `https://dhp.uz/fhir/core/sid/pid/uzb/ppn` (passport root)
+- `https://dhp.uz/fhir/core/sid/pid/uz` (country root)
+- `https://dhp.uz/fhir/core/sid/pid/uz/ppn` (passport root)
 
 
 ### Searching
@@ -226,9 +228,10 @@ To search for resources by identifier, use the standard FHIR search parameters:
 
 ```
 # | is used to separate system and value, needs to be URL-encoded as %7C
-GET [base]/Patient?identifier=https://dhp.uz/fhir/core/sid/pid/uzb/ni|30211975910033
-GET [base]/Practitioner?identifier=https://dhp.uz/fhir/core/sid/pro/uzb/argos|9876543210
-GET [base]/Organization?identifier=https://dhp.uz/fhir/core/sid/org/uzb/soliq|200935935
+
+GET [base]/Patient?identifier=https://dhp.uz/fhir/core/sid/pid/uz/ni|30211975910033
+GET [base]/Practitioner?identifier=https://dhp.uz/fhir/core/sid/pro/uz/argos|9876543210
+GET [base]/Organization?identifier=https://dhp.uz/fhir/core/sid/org/uz/soliq|200935935
 ```
 
 ## Related resources
