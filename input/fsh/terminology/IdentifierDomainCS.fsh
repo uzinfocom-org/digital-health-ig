@@ -4,6 +4,8 @@ Title: "Identifier domain"
 Description: """
   Description of the identifier systems acceptable for entity (patient, practitioner, organization) identification.
 
+  See [identifiers](identifiers.html) page for guidance and examples on using this codesystem.
+
   This is modelled after the [Estonian Identifier Domain](https://fhir.ee/ig/terminology/0.2.3/site/CodeSystem-identifier-domain.html) with the exception that country codes are ISO 3166 two letter codes for consistency within UZ Core.
   """
 * ^status = #active
