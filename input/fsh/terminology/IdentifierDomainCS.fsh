@@ -20,7 +20,7 @@ Description: """
 * ^property[=].description = "ISO 3166-1 two letter country code"
 * ^property[=].type = #code
 * ^property[+].code = #naming-system
-* ^property[=].description = "The uri for the related naming system"
+* ^property[=].description = "The uri for the related naming system that defines system metadata"
 * ^property[=].type = #string
 * ^property[+].code = #notSelectable
 * ^property[=].uri = "http://hl7.org/fhir/concept-properties#notSelectable"
@@ -34,7 +34,7 @@ Description: """
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
     * ^property[=].valueCode = #UZ
-    * #https://soliq.uz "CURRENT: Tax identification numbers and other identifiers assigned by the Uzbekistan Tax Authority (Soliq)"
+    * #https://dhp.uz/fhir/core/sid/org/uzb/soliq "Tax identification numbers and other identifiers assigned by the Uzbekistan Tax Authority (Soliq)"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #TAX
       * ^property[+].code = #country
@@ -43,25 +43,7 @@ Description: """
       * ^property[=].valueString = Canonical(uzb-soliq)
       * ^property[+].code = #notSelectable
       * ^property[=].valueBoolean = false
-    * #https://dhp.uz/fhir/core/sid/org/uzb/soliq "PROPOSED: Tax identification numbers and other identifiers assigned by the Uzbekistan Tax Authority (Soliq)"
-      * ^property[0].code = #idtype
-      * ^property[=].valueCode = #TAX
-      * ^property[+].code = #country
-      * ^property[=].valueCode = #UZ
-      * ^property[+].code = #naming-system
-      * ^property[=].valueString = Canonical(uzb-soliq)
-      * ^property[+].code = #notSelectable
-      * ^property[=].valueBoolean = false
-    * #https://hrm.argos.uz "CURRENT: Healthcare provider identifiers assigned by the Uzbekistan Human Resource Management (HRM) system"
-      * ^property[0].code = #idtype
-      * ^property[=].valueCode = #FI
-      * ^property[+].code = #country
-      * ^property[=].valueCode = #UZ
-      * ^property[+].code = #naming-system
-      * ^property[=].valueString = Canonical(uzb-hrm-argos)
-      * ^property[+].code = #notSelectable
-      * ^property[=].valueBoolean = false
-    * #https://dhp.uz/fhir/core/sid/org/uzb/argos "CURRENT: Healthcare provider identifiers assigned by the Uzbekistan Human Resource Management (HRM) system"
+    * #https://dhp.uz/fhir/core/sid/org/uzb/argos "Healthcare provider identifiers assigned by the Uzbekistan Human Resource Management (HRM) system"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #FI
       * ^property[+].code = #country
@@ -78,11 +60,13 @@ Description: """
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
     * ^property[=].valueCode = #UZ
-    * #https://dhp.uz/fhir/core/sid/pro/uzb/argos "PROPOSED: Healthcare professional official ID provided by HRM Argos. **should this be different from the personal**?"
+    * #https://dhp.uz/fhir/core/sid/pro/uzb/argos "Healthcare professional official ID provided by HRM Argos. **should this be different from the personal**?"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #NI
       * ^property[+].code = #country
       * ^property[=].valueCode = #UZ
+      * ^property[+].code = #naming-system
+      * ^property[=].valueString = Canonical(uzb-hrm-argos-practitioner)
       * ^property[+].code = #notSelectable
       * ^property[=].valueBoolean = false
 * #https://dhp.uz/fhir/core/sid/pid "Root of identifiers for personal identification"
@@ -108,7 +92,7 @@ Description: """
         * ^property[+].code = #country
         * ^property[=].valueCode = #UZ
         * ^property[+].code = #naming-system
-        * ^property[=].valueString = "https://dhp.uz/fhir/core/NamingSystem/pid-uzb-ppn-local"
+        * ^property[=].valueString = "https://terminology.dhp.uz/fhir/core/NamingSystem/patient-id-uzb-passport-local"
       * #https://dhp.uz/fhir/core/sid/pid/uzb/ppn/intl "International passport of Uzbekistan"
         * ^property[0].code = #idtype
         * ^property[=].valueCode = #PPN
@@ -117,7 +101,7 @@ Description: """
         * ^property[+].code = #country
         * ^property[=].valueCode = #UZ
         * ^property[+].code = #naming-system
-        * ^property[=].valueString = "https://dhp.uz/fhir/core/NamingSystem/pid-uzb-ppn-intl"
+        * ^property[=].valueString = "https://terminology.dhp.uz/fhir/core/NamingSystem/patient-id-uzb-passport-international"
       * #https://dhp.uz/fhir/core/sid/pid/uzb/ppn/dp "Diplomatic passport of Uzbekistan"
         * ^property[0].code = #idtype
         * ^property[=].valueCode = #PPN
@@ -126,7 +110,7 @@ Description: """
         * ^property[+].code = #country
         * ^property[=].valueCode = #UZ
         * ^property[+].code = #naming-system
-        * ^property[=].valueString = "https://dhp.uz/fhir/core/NamingSystem/pid-uzb-ppn-dp"
+        * ^property[=].valueString = "https://terminology.dhp.uz/fhir/core/NamingSystem/patient-id-uzb-passport-diplomatic"
     * #https://dhp.uz/fhir/core/sid/pid/uzb/ni "National unique individual identifier of Uzbekistan"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #NI
@@ -135,7 +119,7 @@ Description: """
       * ^property[+].code = #country
       * ^property[=].valueCode = #UZ
       * ^property[+].code = #naming-system
-      * ^property[=].valueString = "https://dhp.uz/fhir/core/NamingSystem/pid-uzb-ni"
+      * ^property[=].valueString = "https://terminology.dhp.uz/fhir/core/NamingSystem/patient-id-uzb-national-id"
     * #https://dhp.uz/fhir/core/sid/pid/uzb/bct "Birth certificate of Uzbekistan"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #BCT
@@ -144,7 +128,7 @@ Description: """
       * ^property[+].code = #country
       * ^property[=].valueCode = #UZ
       * ^property[+].code = #naming-system
-      * ^property[=].valueString = "https://dhp.uz/fhir/core/NamingSystem/pid-uzb-bct"
+      * ^property[=].valueString = "https://terminology.dhp.uz/fhir/core/NamingSystem/patient-id-uzb-birth-certificate"
     * #https://dhp.uz/fhir/core/sid/pid/uzb/dl "Driver's license of Uzbekistan"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #DL
@@ -153,7 +137,7 @@ Description: """
       * ^property[+].code = #country
       * ^property[=].valueCode = #UZ
       * ^property[+].code = #naming-system
-      * ^property[=].valueString = "https://dhp.uz/fhir/core/NamingSystem/pid-uzb-dl"
+      * ^property[=].valueString = "https://terminology.dhp.uz/fhir/core/NamingSystem/patient-id-uzb-drivers-license"
     * #https://dhp.uz/fhir/core/sid/pid/uzb/hc "Health card number of Uzbekistan"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #HC
@@ -162,7 +146,7 @@ Description: """
       * ^property[+].code = #country
       * ^property[=].valueCode = #UZ
       * ^property[+].code = #naming-system
-      * ^property[=].valueString = "https://dhp.uz/fhir/core/NamingSystem/pid-uzb-hc"
+      * ^property[=].valueString = "https://terminology.dhp.uz/fhir/core/NamingSystem/patient-id-uzb-health-card"
     * #https://dhp.uz/fhir/core/sid/pid/uzb/mi "Military ID number of Uzbekistan"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #MI
@@ -171,7 +155,7 @@ Description: """
       * ^property[+].code = #country
       * ^property[=].valueCode = #UZ
       * ^property[+].code = #naming-system
-      * ^property[=].valueString = "https://dhp.uz/fhir/core/NamingSystem/pid-uzb-mi"
+      * ^property[=].valueString = "https://terminology.dhp.uz/fhir/core/NamingSystem/patient-id-uzb-military-id"
     * #https://dhp.uz/fhir/core/sid/pid/uzb/pcn "Penitentiary/correctional institution number of Uzbekistan"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #PCN
@@ -180,7 +164,7 @@ Description: """
       * ^property[+].code = #country
       * ^property[=].valueCode = #UZ
       * ^property[+].code = #naming-system
-      * ^property[=].valueString = "https://dhp.uz/fhir/core/NamingSystem/pid-uzb-pcn"
+      * ^property[=].valueString = "https://terminology.dhp.uz/fhir/core/NamingSystem/patient-id-uzb-penitentiary-number"
     * #https://dhp.uz/fhir/core/sid/pid/uzb/mrt "Unknown patient code generated by healthcare provider"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #MR
@@ -188,6 +172,8 @@ Description: """
       * ^property[=].valueBoolean = false
       * ^property[+].code = #country
       * ^property[=].valueCode = #UZ
+      * ^property[+].code = #naming-system
+      * ^property[=].valueString = "https://terminology.dhp.uz/fhir/core/NamingSystem/patient-id-uzb-unknown-patient"
   * #https://dhp.uz/fhir/core/sid/pid/afg "Root identifier for personal identification of country Afghanistan"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true

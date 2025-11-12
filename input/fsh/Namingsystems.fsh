@@ -21,6 +21,26 @@ Usage: #definition
 * uniqueId[=].preferred = true
 * uniqueId[=].comment = "This is the canonical URI for the Uzbekistan HRM Argos system"
 
+Instance: uzb-hrm-argos-practitioner
+ InstanceOf: NamingSystem
+Description: "Healthcare professional identifiers assigned by the Uzbekistan Human Resource Management (HRM) system"
+Usage: #definition
+* url = "https://terminology.dhp.uz/fhir/core/NamingSystem/uzb-hrm-argos-practitioner"
+* name = "UzbekistanHrmArgosPractitionerSystem"
+* status = #active
+* kind = #identifier
+* publisher = "Uzinfocom"
+* responsible = "Agency for the Development of Public Service of Uzbekistan"
+* date = "2025-11-12"
+* type = $identifier-type#NI "National unique individual identifier"
+* description = "Naming system for healthcare professional identifiers assigned by the Uzbekistan Human Resource Management (HRM) system"
+* jurisdiction = urn:iso:std:iso:3166#UZ "Uzbekistan"
+* usage = "Used for identifying healthcare professionals within the Uzbekistan healthcare system"
+* uniqueId[0].type = #uri
+* uniqueId[=].value = $practitioner-argos-id-system
+* uniqueId[=].preferred = true
+* uniqueId[=].comment = "This is the canonical URI for the Uzbekistan HRM Argos practitioner system"
+
 Instance: uzb-soliq
 InstanceOf: NamingSystem
 Description: "Tax identification numbers and other identifiers assigned by the Uzbekistan Tax Authority (Soliq)"
@@ -41,11 +61,11 @@ Usage: #definition
 * uniqueId[=].preferred = true
 * uniqueId[=].comment = "This is the canonical URI for the Uzbekistan Tax Authority (Soliq) system"
 
-Instance: pid-uzb-ppn-local
+Instance: patient-id-uzb-passport-local
 InstanceOf: NamingSystem
 Description: "Local (internal) passport identifiers assigned by the Uzbekistan Personalization Agency"
 Usage: #definition
-* url = "https://dhp.uz/fhir/core/NamingSystem/pid-uzb-ppn-local"
+* url = "https://terminology.dhp.uz/fhir/core/NamingSystem/patient-id-uzb-passport-local"
 * name = "UzbekistanPassportLocalSystem"
 * status = #active
 * kind = #identifier
@@ -60,11 +80,11 @@ Usage: #definition
 * uniqueId[=].value = "https://dhp.uz/fhir/core/sid/pid/uzb/ppn/local"
 * uniqueId[=].preferred = true
 
-Instance: pid-uzb-ppn-intl
+Instance: patient-id-uzb-passport-international
 InstanceOf: NamingSystem
 Description: "International passport identifiers assigned by the Uzbekistan Personalization Agency"
 Usage: #definition
-* url = "https://dhp.uz/fhir/core/NamingSystem/pid-uzb-ppn-intl"
+* url = "https://terminology.dhp.uz/fhir/core/NamingSystem/patient-id-uzb-passport-international"
 * name = "UzbekistanPassportInternationalSystem"
 * status = #active
 * kind = #identifier
@@ -79,11 +99,11 @@ Usage: #definition
 * uniqueId[=].value = "https://dhp.uz/fhir/core/sid/pid/uzb/ppn/intl"
 * uniqueId[=].preferred = true
 
-Instance: pid-uzb-ppn-dp
+Instance: patient-id-uzb-passport-diplomatic
 InstanceOf: NamingSystem
 Description: "Diplomatic passport identifiers assigned by the Uzbekistan Ministry of Foreign Affairs"
 Usage: #definition
-* url = "https://dhp.uz/fhir/core/NamingSystem/pid-uzb-ppn-dp"
+* url = "https://terminology.dhp.uz/fhir/core/NamingSystem/patient-id-uzb-passport-diplomatic"
 * name = "UzbekistanPassportDiplomaticSystem"
 * status = #active
 * kind = #identifier
@@ -98,11 +118,11 @@ Usage: #definition
 * uniqueId[=].value = "https://dhp.uz/fhir/core/sid/pid/uzb/ppn/dp"
 * uniqueId[=].preferred = true
 
-Instance: pid-uzb-ni
+Instance: patient-id-uzb-national-id
 InstanceOf: NamingSystem
 Description: "National unique identifiers (PINFL) assigned by the Uzbekistan Personalization Agency"
 Usage: #definition
-* url = "https://dhp.uz/fhir/core/NamingSystem/pid-uzb-ni"
+* url = "https://terminology.dhp.uz/fhir/core/NamingSystem/patient-id-uzb-national-id"
 * name = "UzbekistanNationalUniqueIdSystem"
 * status = #active
 * kind = #identifier
@@ -117,11 +137,11 @@ Usage: #definition
 * uniqueId[=].value = "https://dhp.uz/fhir/core/sid/pid/uzb/ni"
 * uniqueId[=].preferred = true
 
-Instance: pid-uzb-bct
+Instance: patient-id-uzb-birth-certificate
 InstanceOf: NamingSystem
 Description: "Birth certificate identifiers assigned by the Uzbekistan Personalization Agency"
 Usage: #definition
-* url = "https://dhp.uz/fhir/core/NamingSystem/pid-uzb-bct"
+* url = "https://terminology.dhp.uz/fhir/core/NamingSystem/patient-id-uzb-birth-certificate"
 * name = "UzbekistanBirthCertificateSystem"
 * status = #active
 * kind = #identifier
@@ -136,11 +156,11 @@ Usage: #definition
 * uniqueId[=].value = "https://dhp.uz/fhir/core/sid/pid/uzb/bct"
 * uniqueId[=].preferred = true
 
-Instance: pid-uzb-dl
+Instance: patient-id-uzb-drivers-license
 InstanceOf: NamingSystem
 Description: "Driver's license identifiers assigned by the Uzbekistan Ministry of Internal Affairs"
 Usage: #definition
-* url = "https://dhp.uz/fhir/core/NamingSystem/pid-uzb-dl"
+* url = "https://terminology.dhp.uz/fhir/core/NamingSystem/patient-id-uzb-drivers-license"
 * name = "UzbekistanDriversLicenseSystem"
 * status = #active
 * kind = #identifier
@@ -155,11 +175,11 @@ Usage: #definition
 * uniqueId[=].value = "https://dhp.uz/fhir/core/sid/pid/uzb/dl"
 * uniqueId[=].preferred = true
 
-Instance: pid-uzb-cz
+Instance: patient-id-uzb-id-card
 InstanceOf: NamingSystem
 Description: "ID card identifiers for Uzbekistan"
 Usage: #definition
-* url = "https://dhp.uz/fhir/core/NamingSystem/pid-uzb-cz"
+* url = "https://terminology.dhp.uz/fhir/core/NamingSystem/patient-id-uzb-id-card"
 * name = "UzbekistanIdCardSystem"
 * status = #active
 * kind = #identifier
@@ -174,11 +194,11 @@ Usage: #definition
 * uniqueId[=].value = "https://dhp.uz/fhir/core/sid/pid/uzb/cz"
 * uniqueId[=].preferred = true
 
-Instance: pid-uzb-hc
+Instance: patient-id-uzb-health-card
 InstanceOf: NamingSystem
 Description: "Health card number identifiers assigned by the Uzbekistan Ministry of Health"
 Usage: #definition
-* url = "https://dhp.uz/fhir/core/NamingSystem/pid-uzb-hc"
+* url = "https://terminology.dhp.uz/fhir/core/NamingSystem/patient-id-uzb-health-card"
 * name = "UzbekistanHealthCardNumberSystem"
 * status = #active
 * kind = #identifier
@@ -193,11 +213,11 @@ Usage: #definition
 * uniqueId[=].value = "https://dhp.uz/fhir/core/sid/pid/uzb/hc"
 * uniqueId[=].preferred = true
 
-Instance: pid-uzb-mi
+Instance: patient-id-uzb-military-id
 InstanceOf: NamingSystem
 Description: "Military ID number identifiers assigned by the Uzbekistan Ministry of Defense"
 Usage: #definition
-* url = "https://dhp.uz/fhir/core/NamingSystem/pid-uzb-mi"
+* url = "https://terminology.dhp.uz/fhir/core/NamingSystem/patient-id-uzb-military-id"
 * name = "UzbekistanMilitaryIdNumberSystem"
 * status = #active
 * kind = #identifier
@@ -212,11 +232,11 @@ Usage: #definition
 * uniqueId[=].value = "https://dhp.uz/fhir/core/sid/pid/uzb/mi"
 * uniqueId[=].preferred = true
 
-Instance: pid-uzb-pcn
+Instance: patient-id-uzb-penitentiary-number
 InstanceOf: NamingSystem
 Description: "Penitentiary institution number identifiers assigned by the Uzbekistan correctional system"
 Usage: #definition
-* url = "https://dhp.uz/fhir/core/NamingSystem/pid-uzb-pcn"
+* url = "https://terminology.dhp.uz/fhir/core/NamingSystem/patient-id-uzb-penitentiary-number"
 * name = "UzbekistanPenitentiaryInstitutionNumberSystem"
 * status = #active
 * kind = #identifier
@@ -229,6 +249,25 @@ Usage: #definition
 * usage = "Used for identifying individuals within the Uzbekistan penitentiary/correctional institution system."
 * uniqueId[0].type = #uri
 * uniqueId[=].value = "https://dhp.uz/fhir/core/sid/pid/uzb/pcn"
+* uniqueId[=].preferred = true
+
+Instance: patient-id-uzb-unknown-patient
+InstanceOf: NamingSystem
+Description: "Unknown patient codes generated by healthcare providers"
+Usage: #definition
+* url = "https://terminology.dhp.uz/fhir/core/NamingSystem/patient-id-uzb-unknown-patient"
+* name = "UzbekistanUnknownPatientCodeSystem"
+* status = #active
+* kind = #identifier
+* date = "2025-11-06"
+* publisher = "Uzinfocom"
+* responsible = "Healthcare providers in Uzbekistan"
+* type = $identifier-type#MR "Medical record number"
+* description = "Naming system for unknown patient codes generated by healthcare providers when a patient's identity cannot be immediately established."
+* jurisdiction = urn:iso:std:iso:3166#UZ "Uzbekistan"
+* usage = "Used for temporarily identifying patients whose identity is unknown or cannot be immediately verified at the point of care."
+* uniqueId[0].type = #uri
+* uniqueId[=].value = "https://dhp.uz/fhir/core/sid/pid/uzb/mrt"
 * uniqueId[=].preferred = true
 
 Instance: location-unit

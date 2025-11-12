@@ -97,6 +97,7 @@ menu:
   Home: index.html
   Guidance:
     FHIR basics: fhir-basics.html
+    Identifiers: identifiers.html
     Vital signs: vital-signs.html
   API access: api-access.html
   Artifacts: artifacts.html
