@@ -1,7 +1,11 @@
 CodeSystem: IdentifierDomainCS
 Id: identifier-domain-cs
 Title: "Identifier domain"
-Description: "Description of the identifier systems acceptable for entity (patient, practitioner, organization) identification"
+Description: """
+  Description of the identifier systems acceptable for entity (patient, practitioner, organization) identification.
+
+  This is modelled after the [Estonian Identifier Domain](https://fhir.ee/ig/terminology/0.2.3/site/CodeSystem-identifier-domain.html) with the exception that country codes are ISO 3166 two letter codes for consistency within UZ Core.
+  """
 * ^status = #active
 * ^experimental = false
 * ^caseSensitive = true
@@ -20,50 +24,71 @@ Description: "Description of the identifier systems acceptable for entity (patie
 * ^property[=].type = #string
 * ^property[+].code = #notSelectable
 * ^property[=].uri = "http://hl7.org/fhir/concept-properties#notSelectable"
-* ^property[=].description = "The concept is not intended to be chosen by the user"
+* ^property[=].description = "The concept is not intended to be chosen by the user (abstract concept)"
 * ^property[=].type = #boolean
 * #https://dhp.uz/fhir/core/sid/org "Root of identifiers for organization identification"
   * ^property[0].code = #notSelectable
   * ^property[=].valueBoolean = true
-  * #https://soliq.uz "Tax identification numbers and other identifiers assigned by the Uzbekistan Tax Authority (Soliq)" ""
-    * ^property[0].code = #idtype
-    * ^property[=].valueCode = #TAX
-    * ^property[+].code = #country
-    * ^property[=].valueCode = #UZ
-    * ^property[+].code = #naming-system
-    * ^property[=].valueString = Canonical(uzb-soliq)
-    * ^property[+].code = #notSelectable
-    * ^property[=].valueBoolean = false
-  * #https://hrm.argos.uz "Healthcare provider identifiers assigned by the Uzbekistan Human Resource Management (HRM) system"
-    * ^property[0].code = #idtype
-    * ^property[=].valueCode = #FI
-    * ^property[+].code = #country
-    * ^property[=].valueCode = #UZ
-    * ^property[+].code = #naming-system
-    * ^property[=].valueString = Canonical(uzb-hrm-argos)
-    * ^property[+].code = #notSelectable
-    * ^property[=].valueBoolean = false
-* #https://dhp.uz/fhir/core/sid/pro "Root of identifiers for healthcare professionals"
-  * ^property[0].code = #notSelectable
-  * ^property[=].valueBoolean = true
-  * #https://dhp.uz/fhir/core/sid/pro/est "Root of Uzbekistan identifiers for healthcare professionals"
+  * #https://dhp.uz/fhir/core/sid/pro/uz "Root of Uzbekistan identifiers for organizations"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
-    * ^property[=].valueCode = #EE
-    * #https://dhp.uz/fhir/core/sid/pro/est/pho "Healthcare professional official ID provided by The National Institute for Health Development"
+    * ^property[=].valueCode = #UZ
+    * #https://soliq.uz "CURRENT: Tax identification numbers and other identifiers assigned by the Uzbekistan Tax Authority (Soliq)"
       * ^property[0].code = #idtype
-      * ^property[=].valueCode = #PHO
+      * ^property[=].valueCode = #TAX
       * ^property[+].code = #country
-      * ^property[=].valueCode = #EE
+      * ^property[=].valueCode = #UZ
       * ^property[+].code = #naming-system
-      * ^property[=].valueString = "https://dhp.uz/fhir/core/NamingSystem/pro-est-pho"
+      * ^property[=].valueString = Canonical(uzb-soliq)
       * ^property[+].code = #notSelectable
       * ^property[=].valueBoolean = false
-* #https://dhp.uz/fhir/core/sid/pid "Root of identifiers for person identification"
+    * #https://dhp.uz/fhir/core/sid/pro/uz/soliq "PROPOSED: Tax identification numbers and other identifiers assigned by the Uzbekistan Tax Authority (Soliq)"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #TAX
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #UZ
+      * ^property[+].code = #naming-system
+      * ^property[=].valueString = Canonical(uzb-soliq)
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+    * #https://hrm.argos.uz "CURRENT: Healthcare provider identifiers assigned by the Uzbekistan Human Resource Management (HRM) system"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #FI
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #UZ
+      * ^property[+].code = #naming-system
+      * ^property[=].valueString = Canonical(uzb-hrm-argos)
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+    * #https://dhp.uz/fhir/core/sid/pro/uz/argos "CURRENT: Healthcare provider identifiers assigned by the Uzbekistan Human Resource Management (HRM) system"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #FI
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #UZ
+      * ^property[+].code = #naming-system
+      * ^property[=].valueString = Canonical(uzb-hrm-argos)
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+* #https://dhp.uz/fhir/core/sid/pro "Root of identifiers for healthcare professionals"
   * ^property[0].code = #notSelectable
   * ^property[=].valueBoolean = true
-  * #https://dhp.uz/fhir/core/sid/pid/uz "Root of Uzbekistan identifiers for person identification"
+  * #https://dhp.uz/fhir/core/sid/pro/uz "Root of Uzbekistan identifiers for healthcare professionals"
+    * ^property[0].code = #notSelectable
+    * ^property[=].valueBoolean = true
+    * ^property[+].code = #country
+    * ^property[=].valueCode = #UZ
+    * #https://hrm.argos.uz "Healthcare professional official ID provided by HRM Argos"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #NI
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #UZ
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+* #https://dhp.uz/fhir/core/sid/pid "Root of identifiers for personal identification"
+  * ^property[0].code = #notSelectable
+  * ^property[=].valueBoolean = true
+  * #https://dhp.uz/fhir/core/sid/pid/uz "Root of Uzbekistan identifiers for personal identification"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -149,7 +174,7 @@ Description: "Description of the identifier systems acceptable for entity (patie
           * ^property[=].valueCode = #EE
           * ^property[+].code = #notSelectable
           * ^property[=].valueBoolean = false
-  * #https://dhp.uz/fhir/core/sid/pid/afg "Root identifier for person identification of country Afghanistan"
+  * #https://dhp.uz/fhir/core/sid/pid/afg "Root identifier for personal identification of country Afghanistan"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -163,7 +188,7 @@ Description: "Description of the identifier systems acceptable for entity (patie
       * ^property[=].valueCode = #AF
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-AFG"
-  * #https://dhp.uz/fhir/core/sid/pid/ala "Root identifier for person identification of country Åland Islands"
+  * #https://dhp.uz/fhir/core/sid/pid/ala "Root identifier for personal identification of country Åland Islands"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -177,7 +202,7 @@ Description: "Description of the identifier systems acceptable for entity (patie
       * ^property[=].valueCode = #AX
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-ALA"
-  * #https://dhp.uz/fhir/core/sid/pid/alb "Root identifier for person identification of country Albania"
+  * #https://dhp.uz/fhir/core/sid/pid/alb "Root identifier for personal identification of country Albania"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -212,7 +237,7 @@ Description: "Description of the identifier systems acceptable for entity (patie
       * ^property[=].valueBoolean = false
       * ^property[+].code = #country
       * ^property[=].valueCode = #AL
-  * #https://dhp.uz/fhir/core/sid/pid/dza "Root identifier for person identification of country Algeria"
+  * #https://dhp.uz/fhir/core/sid/pid/dza "Root identifier for personal identification of country Algeria"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -226,7 +251,7 @@ Description: "Description of the identifier systems acceptable for entity (patie
       * ^property[=].valueCode = #DZ
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-DZA"
-  * #https://dhp.uz/fhir/core/sid/pid/asm "Root identifier for person identification of country American Samoa"
+  * #https://dhp.uz/fhir/core/sid/pid/asm "Root identifier for personal identification of country American Samoa"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -240,7 +265,7 @@ Description: "Description of the identifier systems acceptable for entity (patie
       * ^property[=].valueCode = #AS
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-ASM"
-  * #https://dhp.uz/fhir/core/sid/pid/usa "Root identifier for person identification of country United States of America"
+  * #https://dhp.uz/fhir/core/sid/pid/usa "Root identifier for personal identification of country United States of America"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -254,7 +279,7 @@ Description: "Description of the identifier systems acceptable for entity (patie
       * ^property[=].valueCode = #US
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-USA"
-  * #https://dhp.uz/fhir/core/sid/pid/and "Root identifier for person identification of country Andorra"
+  * #https://dhp.uz/fhir/core/sid/pid/and "Root identifier for personal identification of country Andorra"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -268,7 +293,7 @@ Description: "Description of the identifier systems acceptable for entity (patie
       * ^property[=].valueCode = #AD
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-AND"
-  * #https://dhp.uz/fhir/core/sid/pid/ago "Root identifier for person identification of country Angola"
+  * #https://dhp.uz/fhir/core/sid/pid/ago "Root identifier for personal identification of country Angola"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -282,7 +307,7 @@ Description: "Description of the identifier systems acceptable for entity (patie
       * ^property[=].valueCode = #AO
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-AGO"
-  * #https://dhp.uz/fhir/core/sid/pid/aia "Root identifier for person identification of country Anguilla"
+  * #https://dhp.uz/fhir/core/sid/pid/aia "Root identifier for personal identification of country Anguilla"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -296,7 +321,7 @@ Description: "Description of the identifier systems acceptable for entity (patie
       * ^property[=].valueCode = #AI
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-AIA"
-  * #https://dhp.uz/fhir/core/sid/pid/ata "Root identifier for person identification of country Antarctica"
+  * #https://dhp.uz/fhir/core/sid/pid/ata "Root identifier for personal identification of country Antarctica"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -310,7 +335,7 @@ Description: "Description of the identifier systems acceptable for entity (patie
       * ^property[=].valueCode = #AQ
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-ATA"
-  * #https://dhp.uz/fhir/core/sid/pid/atg "Root identifier for person identification of country Antigua and Barbuda"
+  * #https://dhp.uz/fhir/core/sid/pid/atg "Root identifier for personal identification of country Antigua and Barbuda"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -324,7 +349,7 @@ Description: "Description of the identifier systems acceptable for entity (patie
       * ^property[=].valueCode = #AG
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-ATG"
-  * #https://dhp.uz/fhir/core/sid/pid/are "Root identifier for person identification of country United Arab Emirates"
+  * #https://dhp.uz/fhir/core/sid/pid/are "Root identifier for personal identification of country United Arab Emirates"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -352,7 +377,7 @@ Description: "Description of the identifier systems acceptable for entity (patie
       * ^property[=].valueBoolean = false
       * ^property[+].code = #country
       * ^property[=].valueCode = #AE
-  * #https://dhp.uz/fhir/core/sid/pid/arg "Root identifier for person identification of country Argentina"
+  * #https://dhp.uz/fhir/core/sid/pid/arg "Root identifier for personal identification of country Argentina"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -380,7 +405,7 @@ Description: "Description of the identifier systems acceptable for entity (patie
       * ^property[=].valueBoolean = false
       * ^property[+].code = #country
       * ^property[=].valueCode = #AR
-  * #https://dhp.uz/fhir/core/sid/pid/arm "Root identifier for person identification of country Armenia"
+  * #https://dhp.uz/fhir/core/sid/pid/arm "Root identifier for personal identification of country Armenia"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -394,7 +419,7 @@ Description: "Description of the identifier systems acceptable for entity (patie
       * ^property[=].valueCode = #AM
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-ARM"
-  * #https://dhp.uz/fhir/core/sid/pid/abw "Root identifier for person identification of country Aruba"
+  * #https://dhp.uz/fhir/core/sid/pid/abw "Root identifier for personal identification of country Aruba"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -408,7 +433,7 @@ Description: "Description of the identifier systems acceptable for entity (patie
       * ^property[=].valueCode = #AW
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-ABW"
-  * #https://dhp.uz/fhir/core/sid/pid/aze "Root identifier for person identification of country Azerbaijan"
+  * #https://dhp.uz/fhir/core/sid/pid/aze "Root identifier for personal identification of country Azerbaijan"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -422,7 +447,7 @@ Description: "Description of the identifier systems acceptable for entity (patie
       * ^property[=].valueCode = #AZ
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-AZE"
-  * #https://dhp.uz/fhir/core/sid/pid/aus "Root identifier for person identification of country Australia"
+  * #https://dhp.uz/fhir/core/sid/pid/aus "Root identifier for personal identification of country Australia"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -436,7 +461,7 @@ Description: "Description of the identifier systems acceptable for entity (patie
       * ^property[=].valueCode = #AU
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-AUS"
-  * #https://dhp.uz/fhir/core/sid/pid/aut "Root identifier for person identification of country Austria"
+  * #https://dhp.uz/fhir/core/sid/pid/aut "Root identifier for personal identification of country Austria"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -450,7 +475,7 @@ Description: "Description of the identifier systems acceptable for entity (patie
       * ^property[=].valueCode = #AT
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-AUT"
-  * #https://dhp.uz/fhir/core/sid/pid/bhs "Root identifier for person identification of country Bahamas"
+  * #https://dhp.uz/fhir/core/sid/pid/bhs "Root identifier for personal identification of country Bahamas"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -464,7 +489,7 @@ Description: "Description of the identifier systems acceptable for entity (patie
       * ^property[=].valueCode = #BS
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-BHS"
-  * #https://dhp.uz/fhir/core/sid/pid/bhr "Root identifier for person identification of country Bahrain"
+  * #https://dhp.uz/fhir/core/sid/pid/bhr "Root identifier for personal identification of country Bahrain"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -492,7 +517,7 @@ Description: "Description of the identifier systems acceptable for entity (patie
       * ^property[=].valueBoolean = false
       * ^property[+].code = #country
       * ^property[=].valueCode = #BH
-  * #https://dhp.uz/fhir/core/sid/pid/bgd "Root identifier for person identification of country Bangladesh"
+  * #https://dhp.uz/fhir/core/sid/pid/bgd "Root identifier for personal identification of country Bangladesh"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -513,7 +538,7 @@ Description: "Description of the identifier systems acceptable for entity (patie
       * ^property[=].valueBoolean = false
       * ^property[+].code = #country
       * ^property[=].valueCode = #BD
-  * #https://dhp.uz/fhir/core/sid/pid/brb "Root identifier for person identification of country Barbados"
+  * #https://dhp.uz/fhir/core/sid/pid/brb "Root identifier for personal identification of country Barbados"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -527,7 +552,7 @@ Description: "Description of the identifier systems acceptable for entity (patie
       * ^property[=].valueCode = #BB
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-BRB"
-  * #https://dhp.uz/fhir/core/sid/pid/plw "Root identifier for person identification of country Palau"
+  * #https://dhp.uz/fhir/core/sid/pid/plw "Root identifier for personal identification of country Palau"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -541,7 +566,7 @@ Description: "Description of the identifier systems acceptable for entity (patie
       * ^property[=].valueCode = #PW
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-PLW"
-  * #https://dhp.uz/fhir/core/sid/pid/bel "Root identifier for person identification of country Belgium"
+  * #https://dhp.uz/fhir/core/sid/pid/bel "Root identifier for personal identification of country Belgium"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -576,7 +601,7 @@ Description: "Description of the identifier systems acceptable for entity (patie
       * ^property[=].valueBoolean = false
       * ^property[+].code = #country
       * ^property[=].valueCode = #BE
-  * #https://dhp.uz/fhir/core/sid/pid/blz "Root identifier for person identification of country Belize"
+  * #https://dhp.uz/fhir/core/sid/pid/blz "Root identifier for personal identification of country Belize"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -590,7 +615,7 @@ Description: "Description of the identifier systems acceptable for entity (patie
       * ^property[=].valueCode = #BZ
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-BLZ"
-  * #https://dhp.uz/fhir/core/sid/pid/ben "Root identifier for person identification of country Benin"
+  * #https://dhp.uz/fhir/core/sid/pid/ben "Root identifier for personal identification of country Benin"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -604,7 +629,7 @@ Description: "Description of the identifier systems acceptable for entity (patie
       * ^property[=].valueCode = #BJ
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-BEN"
-  * #https://dhp.uz/fhir/core/sid/pid/bmu "Root identifier for person identification of country Bermuda"
+  * #https://dhp.uz/fhir/core/sid/pid/bmu "Root identifier for personal identification of country Bermuda"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -618,7 +643,7 @@ Description: "Description of the identifier systems acceptable for entity (patie
       * ^property[=].valueCode = #BM
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-BMU"
-  * #https://dhp.uz/fhir/core/sid/pid/btn "Root identifier for person identification of country Bhutan"
+  * #https://dhp.uz/fhir/core/sid/pid/btn "Root identifier for personal identification of country Bhutan"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -632,7 +657,7 @@ Description: "Description of the identifier systems acceptable for entity (patie
       * ^property[=].valueCode = #BT
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-BTN"
-  * #https://dhp.uz/fhir/core/sid/pid/bol "Root identifier for person identification of country Bolivia"
+  * #https://dhp.uz/fhir/core/sid/pid/bol "Root identifier for personal identification of country Bolivia"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -646,7 +671,7 @@ Description: "Description of the identifier systems acceptable for entity (patie
       * ^property[=].valueCode = #BO
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-BOL"
-  * #https://dhp.uz/fhir/core/sid/pid/bih "Root identifier for person identification of country Bosnia and Hertzegovina"
+  * #https://dhp.uz/fhir/core/sid/pid/bih "Root identifier for personal identification of country Bosnia and Hertzegovina"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -681,7 +706,7 @@ Description: "Description of the identifier systems acceptable for entity (patie
       * ^property[=].valueBoolean = false
       * ^property[+].code = #country
       * ^property[=].valueCode = #BA
-  * #https://dhp.uz/fhir/core/sid/pid/bwa "Root identifier for person identification of country Botswana"
+  * #https://dhp.uz/fhir/core/sid/pid/bwa "Root identifier for personal identification of country Botswana"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -695,7 +720,7 @@ Description: "Description of the identifier systems acceptable for entity (patie
       * ^property[=].valueCode = #BW
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-BWA"
-  * #https://dhp.uz/fhir/core/sid/pid/bvt "Root identifier for person identification of country Bouvet Island"
+  * #https://dhp.uz/fhir/core/sid/pid/bvt "Root identifier for personal identification of country Bouvet Island"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -709,7 +734,7 @@ Description: "Description of the identifier systems acceptable for entity (patie
       * ^property[=].valueCode = #BV
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-BVT"
-  * #https://dhp.uz/fhir/core/sid/pid/bra "Root identifier for person identification of country Brazil"
+  * #https://dhp.uz/fhir/core/sid/pid/bra "Root identifier for personal identification of country Brazil"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -730,7 +755,7 @@ Description: "Description of the identifier systems acceptable for entity (patie
       * ^property[=].valueBoolean = false
       * ^property[+].code = #country
       * ^property[=].valueCode = #BR
-  * #https://dhp.uz/fhir/core/sid/pid/iot "Root identifier for person identification of country British Indian Ocean Territory"
+  * #https://dhp.uz/fhir/core/sid/pid/iot "Root identifier for personal identification of country British Indian Ocean Territory"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -744,7 +769,7 @@ Description: "Description of the identifier systems acceptable for entity (patie
       * ^property[=].valueCode = #IO
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-IOT"
-  * #https://dhp.uz/fhir/core/sid/pid/vgb "Root identifier for person identification of country Virgin Islands (British)"
+  * #https://dhp.uz/fhir/core/sid/pid/vgb "Root identifier for personal identification of country Virgin Islands (British)"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -758,7 +783,7 @@ Description: "Description of the identifier systems acceptable for entity (patie
       * ^property[=].valueCode = #VG
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-VGB"
-  * #https://dhp.uz/fhir/core/sid/pid/brn "Root identifier for person identification of country Brunei Darussalam"
+  * #https://dhp.uz/fhir/core/sid/pid/brn "Root identifier for personal identification of country Brunei Darussalam"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -772,7 +797,7 @@ Description: "Description of the identifier systems acceptable for entity (patie
       * ^property[=].valueCode = #BN
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-BRN"
-  * #https://dhp.uz/fhir/core/sid/pid/bgr "Root identifier for person identification of country Bulgaria"
+  * #https://dhp.uz/fhir/core/sid/pid/bgr "Root identifier for personal identification of country Bulgaria"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -807,7 +832,7 @@ Description: "Description of the identifier systems acceptable for entity (patie
       * ^property[=].valueBoolean = false
       * ^property[+].code = #country
       * ^property[=].valueCode = #BG
-  * #https://dhp.uz/fhir/core/sid/pid/bfa "Root identifier for person identification of country Burkina Faso"
+  * #https://dhp.uz/fhir/core/sid/pid/bfa "Root identifier for personal identification of country Burkina Faso"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -821,7 +846,7 @@ Description: "Description of the identifier systems acceptable for entity (patie
       * ^property[=].valueCode = #BF
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-BFA"
-  * #https://dhp.uz/fhir/core/sid/pid/bdi "Root identifier for person identification of country Burundi"
+  * #https://dhp.uz/fhir/core/sid/pid/bdi "Root identifier for personal identification of country Burundi"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -835,7 +860,7 @@ Description: "Description of the identifier systems acceptable for entity (patie
       * ^property[=].valueCode = #BI
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-BDI"
-  * #https://dhp.uz/fhir/core/sid/pid/cpv "Root identifier for person identification of country Cape Verde"
+  * #https://dhp.uz/fhir/core/sid/pid/cpv "Root identifier for personal identification of country Cape Verde"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -849,7 +874,7 @@ Description: "Description of the identifier systems acceptable for entity (patie
       * ^property[=].valueCode = #CV
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-CPV"
-  * #https://dhp.uz/fhir/core/sid/pid/col "Root identifier for person identification of country Colombia"
+  * #https://dhp.uz/fhir/core/sid/pid/col "Root identifier for personal identification of country Colombia"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -877,7 +902,7 @@ Description: "Description of the identifier systems acceptable for entity (patie
       * ^property[=].valueBoolean = false
       * ^property[+].code = #country
       * ^property[=].valueCode = #CO
-  * #https://dhp.uz/fhir/core/sid/pid/cok "Root identifier for person identification of country Cook Islands"
+  * #https://dhp.uz/fhir/core/sid/pid/cok "Root identifier for personal identification of country Cook Islands"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -891,7 +916,7 @@ Description: "Description of the identifier systems acceptable for entity (patie
       * ^property[=].valueCode = #CK
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-COK"
-  * #https://dhp.uz/fhir/core/sid/pid/cri "Root identifier for person identification of country Costa Rica"
+  * #https://dhp.uz/fhir/core/sid/pid/cri "Root identifier for personal identification of country Costa Rica"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -905,7 +930,7 @@ Description: "Description of the identifier systems acceptable for entity (patie
       * ^property[=].valueCode = #CR
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-CRI"
-  * #https://dhp.uz/fhir/core/sid/pid/civ "Root identifier for person identification of country Cote d'Ivoire"
+  * #https://dhp.uz/fhir/core/sid/pid/civ "Root identifier for personal identification of country Cote d'Ivoire"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -919,7 +944,7 @@ Description: "Description of the identifier systems acceptable for entity (patie
       * ^property[=].valueCode = #CI
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-CIV"
-  * #https://dhp.uz/fhir/core/sid/pid/dji "Root identifier for person identification of country Djibouti"
+  * #https://dhp.uz/fhir/core/sid/pid/dji "Root identifier for personal identification of country Djibouti"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -933,7 +958,7 @@ Description: "Description of the identifier systems acceptable for entity (patie
       * ^property[=].valueCode = #DJ
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-DJI"
-  * #https://dhp.uz/fhir/core/sid/pid/dma "Root identifier for person identification of country Dominica"
+  * #https://dhp.uz/fhir/core/sid/pid/dma "Root identifier for personal identification of country Dominica"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -947,7 +972,7 @@ Description: "Description of the identifier systems acceptable for entity (patie
       * ^property[=].valueCode = #DM
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-DMA"
-  * #https://dhp.uz/fhir/core/sid/pid/dom "Root identifier for person identification of country Dominican Republic"
+  * #https://dhp.uz/fhir/core/sid/pid/dom "Root identifier for personal identification of country Dominican Republic"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -961,7 +986,7 @@ Description: "Description of the identifier systems acceptable for entity (patie
       * ^property[=].valueCode = #DO
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-DOM"
-  * #https://dhp.uz/fhir/core/sid/pid/ecu "Root identifier for person identification of country Ecuador"
+  * #https://dhp.uz/fhir/core/sid/pid/ecu "Root identifier for personal identification of country Ecuador"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -975,7 +1000,7 @@ Description: "Description of the identifier systems acceptable for entity (patie
       * ^property[=].valueCode = #EC
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-ECU"
-  * #https://dhp.uz/fhir/core/sid/pid/egy "Root identifier for person identification of country Egypt"
+  * #https://dhp.uz/fhir/core/sid/pid/egy "Root identifier for personal identification of country Egypt"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -989,7 +1014,7 @@ Description: "Description of the identifier systems acceptable for entity (patie
       * ^property[=].valueCode = #EG
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-EGY"
-  * #https://dhp.uz/fhir/core/sid/pid/gnq "Root identifier for person identification of country Equatorial Guinea"
+  * #https://dhp.uz/fhir/core/sid/pid/gnq "Root identifier for personal identification of country Equatorial Guinea"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -1003,7 +1028,7 @@ Description: "Description of the identifier systems acceptable for entity (patie
       * ^property[=].valueCode = #GQ
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-GNQ"
-  * #https://dhp.uz/fhir/core/sid/pid/slv "Root identifier for person identification of country El Salvador"
+  * #https://dhp.uz/fhir/core/sid/pid/slv "Root identifier for personal identification of country El Salvador"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -1017,7 +1042,7 @@ Description: "Description of the identifier systems acceptable for entity (patie
       * ^property[=].valueCode = #SV
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-SLV"
-  * #https://dhp.uz/fhir/core/sid/pid/eri "Root identifier for person identification of country Eritrea"
+  * #https://dhp.uz/fhir/core/sid/pid/eri "Root identifier for personal identification of country Eritrea"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -1031,7 +1056,7 @@ Description: "Description of the identifier systems acceptable for entity (patie
       * ^property[=].valueCode = #ER
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-ERI"
-  * #https://dhp.uz/fhir/core/sid/pid/eth "Root identifier for person identification of country Ethiopia"
+  * #https://dhp.uz/fhir/core/sid/pid/eth "Root identifier for personal identification of country Ethiopia"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -1045,7 +1070,7 @@ Description: "Description of the identifier systems acceptable for entity (patie
       * ^property[=].valueCode = #ET
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-ETH"
-  * #https://dhp.uz/fhir/core/sid/pid/flk "Root identifier for person identification of country Falkland Islands (Malvinas)"
+  * #https://dhp.uz/fhir/core/sid/pid/flk "Root identifier for personal identification of country Falkland Islands (Malvinas)"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -1059,7 +1084,7 @@ Description: "Description of the identifier systems acceptable for entity (patie
       * ^property[=].valueCode = #FK
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-FLK"
-  * #https://dhp.uz/fhir/core/sid/pid/fji "Root identifier for person identification of country Fiji"
+  * #https://dhp.uz/fhir/core/sid/pid/fji "Root identifier for personal identification of country Fiji"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -1073,7 +1098,7 @@ Description: "Description of the identifier systems acceptable for entity (patie
       * ^property[=].valueCode = #FJ
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-FJI"
-  * #https://dhp.uz/fhir/core/sid/pid/phl "Root identifier for person identification of country Philippines"
+  * #https://dhp.uz/fhir/core/sid/pid/phl "Root identifier for personal identification of country Philippines"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -1087,7 +1112,7 @@ Description: "Description of the identifier systems acceptable for entity (patie
       * ^property[=].valueCode = #PH
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-PHL"
-  * #https://dhp.uz/fhir/core/sid/pid/fro "Root identifier for person identification of country Faroe Islands"
+  * #https://dhp.uz/fhir/core/sid/pid/fro "Root identifier for personal identification of country Faroe Islands"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -1101,7 +1126,7 @@ Description: "Description of the identifier systems acceptable for entity (patie
       * ^property[=].valueCode = #FO
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-FRO"
-  * #https://dhp.uz/fhir/core/sid/pid/gab "Root identifier for person identification of country Gabon"
+  * #https://dhp.uz/fhir/core/sid/pid/gab "Root identifier for personal identification of country Gabon"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -1115,7 +1140,7 @@ Description: "Description of the identifier systems acceptable for entity (patie
       * ^property[=].valueCode = #GA
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-GAB"
-  * #https://dhp.uz/fhir/core/sid/pid/gmb "Root identifier for person identification of country Gambia"
+  * #https://dhp.uz/fhir/core/sid/pid/gmb "Root identifier for personal identification of country Gambia"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -1129,7 +1154,7 @@ Description: "Description of the identifier systems acceptable for entity (patie
       * ^property[=].valueCode = #GM
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-GMB"
-  * #https://dhp.uz/fhir/core/sid/pid/gha "Root identifier for person identification of country Ghana"
+  * #https://dhp.uz/fhir/core/sid/pid/gha "Root identifier for personal identification of country Ghana"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -1143,7 +1168,7 @@ Description: "Description of the identifier systems acceptable for entity (patie
       * ^property[=].valueCode = #GH
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-GHA"
-  * #https://dhp.uz/fhir/core/sid/pid/gib "Root identifier for person identification of country Gibraltar"
+  * #https://dhp.uz/fhir/core/sid/pid/gib "Root identifier for personal identification of country Gibraltar"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -1157,7 +1182,7 @@ Description: "Description of the identifier systems acceptable for entity (patie
       * ^property[=].valueCode = #GI
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-GIB"
-  * #https://dhp.uz/fhir/core/sid/pid/grd "Root identifier for person identification of country Grenada"
+  * #https://dhp.uz/fhir/core/sid/pid/grd "Root identifier for personal identification of country Grenada"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -1171,7 +1196,7 @@ Description: "Description of the identifier systems acceptable for entity (patie
       * ^property[=].valueCode = #GD
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-GRD"
-  * #https://dhp.uz/fhir/core/sid/pid/geo "Root identifier for person identification of country Georgia"
+  * #https://dhp.uz/fhir/core/sid/pid/geo "Root identifier for personal identification of country Georgia"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -1206,7 +1231,7 @@ Description: "Description of the identifier systems acceptable for entity (patie
       * ^property[=].valueBoolean = false
       * ^property[+].code = #country
       * ^property[=].valueCode = #GE
-  * #https://dhp.uz/fhir/core/sid/pid/grl "Root identifier for person identification of country Greenland"
+  * #https://dhp.uz/fhir/core/sid/pid/grl "Root identifier for personal identification of country Greenland"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -1220,7 +1245,7 @@ Description: "Description of the identifier systems acceptable for entity (patie
       * ^property[=].valueCode = #GL
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-GRL"
-  * #https://dhp.uz/fhir/core/sid/pid/glp "Root identifier for person identification of country Guadeloupe"
+  * #https://dhp.uz/fhir/core/sid/pid/glp "Root identifier for personal identification of country Guadeloupe"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -1234,7 +1259,7 @@ Description: "Description of the identifier systems acceptable for entity (patie
       * ^property[=].valueCode = #GP
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-GLP"
-  * #https://dhp.uz/fhir/core/sid/pid/guf "Root identifier for person identification of country French Guiana"
+  * #https://dhp.uz/fhir/core/sid/pid/guf "Root identifier for personal identification of country French Guiana"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -1248,7 +1273,7 @@ Description: "Description of the identifier systems acceptable for entity (patie
       * ^property[=].valueCode = #GF
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-GUF"
-  * #https://dhp.uz/fhir/core/sid/pid/gum "Root identifier for person identification of country Guam"
+  * #https://dhp.uz/fhir/core/sid/pid/gum "Root identifier for personal identification of country Guam"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -1262,7 +1287,7 @@ Description: "Description of the identifier systems acceptable for entity (patie
       * ^property[=].valueCode = #GU
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-GUM"
-  * #https://dhp.uz/fhir/core/sid/pid/gtm "Root identifier for person identification of country Guatemala"
+  * #https://dhp.uz/fhir/core/sid/pid/gtm "Root identifier for personal identification of country Guatemala"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -1276,7 +1301,7 @@ Description: "Description of the identifier systems acceptable for entity (patie
       * ^property[=].valueCode = #GT
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-GTM"
-  * #https://dhp.uz/fhir/core/sid/pid/ggy "Root identifier for person identification of country Guernsey"
+  * #https://dhp.uz/fhir/core/sid/pid/ggy "Root identifier for personal identification of country Guernsey"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -1290,7 +1315,7 @@ Description: "Description of the identifier systems acceptable for entity (patie
       * ^property[=].valueCode = #GG
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-GGY"
-  * #https://dhp.uz/fhir/core/sid/pid/gin "Root identifier for person identification of country Guinea"
+  * #https://dhp.uz/fhir/core/sid/pid/gin "Root identifier for personal identification of country Guinea"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -1304,7 +1329,7 @@ Description: "Description of the identifier systems acceptable for entity (patie
       * ^property[=].valueCode = #GN
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-GIN"
-  * #https://dhp.uz/fhir/core/sid/pid/gnb "Root identifier for person identification of country Guinea-Bissau"
+  * #https://dhp.uz/fhir/core/sid/pid/gnb "Root identifier for personal identification of country Guinea-Bissau"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -1318,7 +1343,7 @@ Description: "Description of the identifier systems acceptable for entity (patie
       * ^property[=].valueCode = #GW
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-GNB"
-  * #https://dhp.uz/fhir/core/sid/pid/guy "Root identifier for person identification of country Guyana"
+  * #https://dhp.uz/fhir/core/sid/pid/guy "Root identifier for personal identification of country Guyana"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -1332,7 +1357,7 @@ Description: "Description of the identifier systems acceptable for entity (patie
       * ^property[=].valueCode = #GY
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-GUY"
-  * #https://dhp.uz/fhir/core/sid/pid/hti "Root identifier for person identification of country Haiti"
+  * #https://dhp.uz/fhir/core/sid/pid/hti "Root identifier for personal identification of country Haiti"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -1346,7 +1371,7 @@ Description: "Description of the identifier systems acceptable for entity (patie
       * ^property[=].valueCode = #HT
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-HTI"
-  * #https://dhp.uz/fhir/core/sid/pid/hmd "Root identifier for person identification of country Heard and McDonald Islands"
+  * #https://dhp.uz/fhir/core/sid/pid/hmd "Root identifier for personal identification of country Heard and McDonald Islands"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -1360,7 +1385,7 @@ Description: "Description of the identifier systems acceptable for entity (patie
       * ^property[=].valueCode = #HM
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-HMD"
-  * #https://dhp.uz/fhir/core/sid/pid/mac "Root identifier for person identification of country Macao"
+  * #https://dhp.uz/fhir/core/sid/pid/mac "Root identifier for personal identification of country Macao"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -1381,7 +1406,7 @@ Description: "Description of the identifier systems acceptable for entity (patie
       * ^property[=].valueBoolean = false
       * ^property[+].code = #country
       * ^property[=].valueCode = #MO
-  * #https://dhp.uz/fhir/core/sid/pid/hkg "Root identifier for person identification of country Hong Kong"
+  * #https://dhp.uz/fhir/core/sid/pid/hkg "Root identifier for personal identification of country Hong Kong"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -1402,7 +1427,7 @@ Description: "Description of the identifier systems acceptable for entity (patie
       * ^property[=].valueBoolean = false
       * ^property[+].code = #country
       * ^property[=].valueCode = #HK
-  * #https://dhp.uz/fhir/core/sid/pid/chn "Root identifier for person identification of country China"
+  * #https://dhp.uz/fhir/core/sid/pid/chn "Root identifier for personal identification of country China"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -1423,7 +1448,7 @@ Description: "Description of the identifier systems acceptable for entity (patie
       * ^property[=].valueBoolean = false
       * ^property[+].code = #country
       * ^property[=].valueCode = #CN
-  * #https://dhp.uz/fhir/core/sid/pid/esp "Root identifier for person identification of country Spain"
+  * #https://dhp.uz/fhir/core/sid/pid/esp "Root identifier for personal identification of country Spain"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -1458,7 +1483,7 @@ Description: "Description of the identifier systems acceptable for entity (patie
       * ^property[=].valueBoolean = false
       * ^property[+].code = #country
       * ^property[=].valueCode = #ES
-  * #https://dhp.uz/fhir/core/sid/pid/ant "Root identifier for person identification of country Netherlands Antilles"
+  * #https://dhp.uz/fhir/core/sid/pid/ant "Root identifier for personal identification of country Netherlands Antilles"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -1472,7 +1497,7 @@ Description: "Description of the identifier systems acceptable for entity (patie
       * ^property[=].valueCode = #AN
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-ANT"
-  * #https://dhp.uz/fhir/core/sid/pid/hnd "Root identifier for person identification of country Honduras"
+  * #https://dhp.uz/fhir/core/sid/pid/hnd "Root identifier for personal identification of country Honduras"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -1486,7 +1511,7 @@ Description: "Description of the identifier systems acceptable for entity (patie
       * ^property[=].valueCode = #HN
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-HND"
-  * #https://dhp.uz/fhir/core/sid/pid/hrv "Root identifier for person identification of country Croatia"
+  * #https://dhp.uz/fhir/core/sid/pid/hrv "Root identifier for personal identification of country Croatia"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -1521,7 +1546,7 @@ Description: "Description of the identifier systems acceptable for entity (patie
       * ^property[=].valueBoolean = false
       * ^property[+].code = #country
       * ^property[=].valueCode = #HR
-  * #https://dhp.uz/fhir/core/sid/pid/irl "Root identifier for person identification of country Ireland"
+  * #https://dhp.uz/fhir/core/sid/pid/irl "Root identifier for personal identification of country Ireland"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -1535,7 +1560,7 @@ Description: "Description of the identifier systems acceptable for entity (patie
       * ^property[=].valueCode = #IE
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-IRL"
-  * #https://dhp.uz/fhir/core/sid/pid/isr "Root identifier for person identification of country Israel"
+  * #https://dhp.uz/fhir/core/sid/pid/isr "Root identifier for personal identification of country Israel"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -1556,7 +1581,7 @@ Description: "Description of the identifier systems acceptable for entity (patie
       * ^property[=].valueBoolean = false
       * ^property[+].code = #country
       * ^property[=].valueCode = #IL
-  * #https://dhp.uz/fhir/core/sid/pid/ind "Root identifier for person identification of country India"
+  * #https://dhp.uz/fhir/core/sid/pid/ind "Root identifier for personal identification of country India"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -1570,7 +1595,7 @@ Description: "Description of the identifier systems acceptable for entity (patie
       * ^property[=].valueCode = #IN
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-IND"
-  * #https://dhp.uz/fhir/core/sid/pid/idn "Root identifier for person identification of country Indonesia"
+  * #https://dhp.uz/fhir/core/sid/pid/idn "Root identifier for personal identification of country Indonesia"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -1591,7 +1616,7 @@ Description: "Description of the identifier systems acceptable for entity (patie
       * ^property[=].valueBoolean = false
       * ^property[+].code = #country
       * ^property[=].valueCode = #ID
-  * #https://dhp.uz/fhir/core/sid/pid/irq "Root identifier for person identification of country Iraq"
+  * #https://dhp.uz/fhir/core/sid/pid/irq "Root identifier for personal identification of country Iraq"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -1605,7 +1630,7 @@ Description: "Description of the identifier systems acceptable for entity (patie
       * ^property[=].valueCode = #IQ
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-IRQ"
-  * #https://dhp.uz/fhir/core/sid/pid/irn "Root identifier for person identification of country Iran"
+  * #https://dhp.uz/fhir/core/sid/pid/irn "Root identifier for personal identification of country Iran"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -1619,7 +1644,7 @@ Description: "Description of the identifier systems acceptable for entity (patie
       * ^property[=].valueCode = #IR
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-IRN"
-  * #https://dhp.uz/fhir/core/sid/pid/isl "Root identifier for person identification of country Iceland"
+  * #https://dhp.uz/fhir/core/sid/pid/isl "Root identifier for personal identification of country Iceland"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -1647,7 +1672,7 @@ Description: "Description of the identifier systems acceptable for entity (patie
       * ^property[=].valueBoolean = false
       * ^property[+].code = #country
       * ^property[=].valueCode = #IS
-  * #https://dhp.uz/fhir/core/sid/pid/ita "Root identifier for person identification of country Italy"
+  * #https://dhp.uz/fhir/core/sid/pid/ita "Root identifier for personal identification of country Italy"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -1682,7 +1707,7 @@ Description: "Description of the identifier systems acceptable for entity (patie
       * ^property[=].valueBoolean = false
       * ^property[+].code = #country
       * ^property[=].valueCode = #IT
-  * #https://dhp.uz/fhir/core/sid/pid/jpn "Root identifier for person identification of country Japan"
+  * #https://dhp.uz/fhir/core/sid/pid/jpn "Root identifier for personal identification of country Japan"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -1696,7 +1721,7 @@ Description: "Description of the identifier systems acceptable for entity (patie
       * ^property[=].valueCode = #JP
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-JPN"
-  * #https://dhp.uz/fhir/core/sid/pid/jam "Root identifier for person identification of country Jamaica"
+  * #https://dhp.uz/fhir/core/sid/pid/jam "Root identifier for personal identification of country Jamaica"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -1710,7 +1735,7 @@ Description: "Description of the identifier systems acceptable for entity (patie
       * ^property[=].valueCode = #JM
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-JAM"
-  * #https://dhp.uz/fhir/core/sid/pid/yem "Root identifier for person identification of country Yemen"
+  * #https://dhp.uz/fhir/core/sid/pid/yem "Root identifier for personal identification of country Yemen"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -1724,7 +1749,7 @@ Description: "Description of the identifier systems acceptable for entity (patie
       * ^property[=].valueCode = #YE
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-YEM"
-  * #https://dhp.uz/fhir/core/sid/pid/jey "Root identifier for person identification of country Jersey"
+  * #https://dhp.uz/fhir/core/sid/pid/jey "Root identifier for personal identification of country Jersey"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -1738,7 +1763,7 @@ Description: "Description of the identifier systems acceptable for entity (patie
       * ^property[=].valueCode = #JE
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-JEY"
-  * #https://dhp.uz/fhir/core/sid/pid/jor "Root identifier for person identification of country Jordan"
+  * #https://dhp.uz/fhir/core/sid/pid/jor "Root identifier for personal identification of country Jordan"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -1752,7 +1777,7 @@ Description: "Description of the identifier systems acceptable for entity (patie
       * ^property[=].valueCode = #JO
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-JOR"
-  * #https://dhp.uz/fhir/core/sid/pid/cxr "Root identifier for person identification of country Christmas Island"
+  * #https://dhp.uz/fhir/core/sid/pid/cxr "Root identifier for personal identification of country Christmas Island"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -1766,7 +1791,7 @@ Description: "Description of the identifier systems acceptable for entity (patie
       * ^property[=].valueCode = #CX
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-CXR"
-  * #https://dhp.uz/fhir/core/sid/pid/cym "Root identifier for person identification of country Cayman Islands"
+  * #https://dhp.uz/fhir/core/sid/pid/cym "Root identifier for personal identification of country Cayman Islands"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -1780,7 +1805,7 @@ Description: "Description of the identifier systems acceptable for entity (patie
       * ^property[=].valueCode = #KY
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-CYM"
-  * #https://dhp.uz/fhir/core/sid/pid/khm "Root identifier for person identification of country Cambodia"
+  * #https://dhp.uz/fhir/core/sid/pid/khm "Root identifier for personal identification of country Cambodia"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -1794,7 +1819,7 @@ Description: "Description of the identifier systems acceptable for entity (patie
       * ^property[=].valueCode = #KH
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-KHM"
-  * #https://dhp.uz/fhir/core/sid/pid/cmr "Root identifier for person identification of country Cameroon"
+  * #https://dhp.uz/fhir/core/sid/pid/cmr "Root identifier for personal identification of country Cameroon"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -1808,7 +1833,7 @@ Description: "Description of the identifier systems acceptable for entity (patie
       * ^property[=].valueCode = #CM
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-CMR"
-  * #https://dhp.uz/fhir/core/sid/pid/can "Root identifier for person identification of country Canada"
+  * #https://dhp.uz/fhir/core/sid/pid/can "Root identifier for personal identification of country Canada"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -1822,7 +1847,7 @@ Description: "Description of the identifier systems acceptable for entity (patie
       * ^property[=].valueCode = #CA
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-CAN"
-  * #https://dhp.uz/fhir/core/sid/pid/kaz "Root identifier for person identification of country Kazakhstan"
+  * #https://dhp.uz/fhir/core/sid/pid/kaz "Root identifier for personal identification of country Kazakhstan"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -1857,7 +1882,7 @@ Description: "Description of the identifier systems acceptable for entity (patie
       * ^property[=].valueBoolean = false
       * ^property[+].code = #country
       * ^property[=].valueCode = #KZ
-  * #https://dhp.uz/fhir/core/sid/pid/qat "Root identifier for person identification of country Qatar"
+  * #https://dhp.uz/fhir/core/sid/pid/qat "Root identifier for personal identification of country Qatar"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -1871,7 +1896,7 @@ Description: "Description of the identifier systems acceptable for entity (patie
       * ^property[=].valueCode = #QA
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-QAT"
-  * #https://dhp.uz/fhir/core/sid/pid/ken "Root identifier for person identification of country Kenya"
+  * #https://dhp.uz/fhir/core/sid/pid/ken "Root identifier for personal identification of country Kenya"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -1885,7 +1910,7 @@ Description: "Description of the identifier systems acceptable for entity (patie
       * ^property[=].valueCode = #KE
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-KEN"
-  * #https://dhp.uz/fhir/core/sid/pid/caf "Root identifier for person identification of country Central African Republik"
+  * #https://dhp.uz/fhir/core/sid/pid/caf "Root identifier for personal identification of country Central African Republik"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -1899,7 +1924,7 @@ Description: "Description of the identifier systems acceptable for entity (patie
       * ^property[=].valueCode = #CF
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-CAF"
-  * #https://dhp.uz/fhir/core/sid/pid/kgz "Root identifier for person identification of country Kyrgyzstan"
+  * #https://dhp.uz/fhir/core/sid/pid/kgz "Root identifier for personal identification of country Kyrgyzstan"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -1913,7 +1938,7 @@ Description: "Description of the identifier systems acceptable for entity (patie
       * ^property[=].valueCode = #KG
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-KGZ"
-  * #https://dhp.uz/fhir/core/sid/pid/kir "Root identifier for person identification of country Kiribati"
+  * #https://dhp.uz/fhir/core/sid/pid/kir "Root identifier for personal identification of country Kiribati"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -1927,7 +1952,7 @@ Description: "Description of the identifier systems acceptable for entity (patie
       * ^property[=].valueCode = #KI
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-KIR"
-  * #https://dhp.uz/fhir/core/sid/pid/com "Root identifier for person identification of country Comoros"
+  * #https://dhp.uz/fhir/core/sid/pid/com "Root identifier for personal identification of country Comoros"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -1941,7 +1966,7 @@ Description: "Description of the identifier systems acceptable for entity (patie
       * ^property[=].valueCode = #KM
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-COM"
-  * #https://dhp.uz/fhir/core/sid/pid/cod "Root identifier for person identification of country Congo, the Democratic Republik of the"
+  * #https://dhp.uz/fhir/core/sid/pid/cod "Root identifier for personal identification of country Congo, the Democratic Republik of the"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -1955,7 +1980,7 @@ Description: "Description of the identifier systems acceptable for entity (patie
       * ^property[=].valueCode = #CD
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-COD"
-  * #https://dhp.uz/fhir/core/sid/pid/cog "Root identifier for person identification of country Congo"
+  * #https://dhp.uz/fhir/core/sid/pid/cog "Root identifier for personal identification of country Congo"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -1969,7 +1994,7 @@ Description: "Description of the identifier systems acceptable for entity (patie
       * ^property[=].valueCode = #CG
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-COG"
-  * #https://dhp.uz/fhir/core/sid/pid/cck "Root identifier for person identification of country Cocos (Keeling) Islands"
+  * #https://dhp.uz/fhir/core/sid/pid/cck "Root identifier for personal identification of country Cocos (Keeling) Islands"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -1983,7 +2008,7 @@ Description: "Description of the identifier systems acceptable for entity (patie
       * ^property[=].valueCode = #CC
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-CCK"
-  * #https://dhp.uz/fhir/core/sid/pid/prk "Root identifier for person identification of country Korea, Democratic People's Republic of"
+  * #https://dhp.uz/fhir/core/sid/pid/prk "Root identifier for personal identification of country Korea, Democratic People's Republic of"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -1997,7 +2022,7 @@ Description: "Description of the identifier systems acceptable for entity (patie
       * ^property[=].valueCode = #KP
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-PRK"
-  * #https://dhp.uz/fhir/core/sid/pid/kor "Root identifier for person identification of country Korea, Republic of"
+  * #https://dhp.uz/fhir/core/sid/pid/kor "Root identifier for personal identification of country Korea, Republic of"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -2011,7 +2036,7 @@ Description: "Description of the identifier systems acceptable for entity (patie
       * ^property[=].valueCode = #KR
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-KOR"
-  * #https://dhp.uz/fhir/core/sid/pid/grc "Root identifier for person identification of country Greece"
+  * #https://dhp.uz/fhir/core/sid/pid/grc "Root identifier for personal identification of country Greece"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -2025,7 +2050,7 @@ Description: "Description of the identifier systems acceptable for entity (patie
       * ^property[=].valueCode = #GR
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-GRC"
-  * #https://dhp.uz/fhir/core/sid/pid/cub "Root identifier for person identification of country Cuba"
+  * #https://dhp.uz/fhir/core/sid/pid/cub "Root identifier for personal identification of country Cuba"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -2039,7 +2064,7 @@ Description: "Description of the identifier systems acceptable for entity (patie
       * ^property[=].valueCode = #CU
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-CUB"
-  * #https://dhp.uz/fhir/core/sid/pid/kwt "Root identifier for person identification of country Kuwait"
+  * #https://dhp.uz/fhir/core/sid/pid/kwt "Root identifier for personal identification of country Kuwait"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -2060,7 +2085,7 @@ Description: "Description of the identifier systems acceptable for entity (patie
       * ^property[=].valueBoolean = false
       * ^property[+].code = #country
       * ^property[=].valueCode = #KW
-  * #https://dhp.uz/fhir/core/sid/pid/cyp "Root identifier for person identification of country Cyprus"
+  * #https://dhp.uz/fhir/core/sid/pid/cyp "Root identifier for personal identification of country Cyprus"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -2074,7 +2099,7 @@ Description: "Description of the identifier systems acceptable for entity (patie
       * ^property[=].valueCode = #CY
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-CYP"
-  * #https://dhp.uz/fhir/core/sid/pid/lao "Root identifier for person identification of country Lao People's Democratic Republic"
+  * #https://dhp.uz/fhir/core/sid/pid/lao "Root identifier for personal identification of country Lao People's Democratic Republic"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -2088,7 +2113,7 @@ Description: "Description of the identifier systems acceptable for entity (patie
       * ^property[=].valueCode = #LA
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-LAO"
-  * #https://dhp.uz/fhir/core/sid/pid/ltu "Root identifier for person identification of country Lithuania"
+  * #https://dhp.uz/fhir/core/sid/pid/ltu "Root identifier for personal identification of country Lithuania"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -2123,7 +2148,7 @@ Description: "Description of the identifier systems acceptable for entity (patie
       * ^property[=].valueBoolean = false
       * ^property[+].code = #country
       * ^property[=].valueCode = #LT
-  * #https://dhp.uz/fhir/core/sid/pid/lso "Root identifier for person identification of country Lesotho"
+  * #https://dhp.uz/fhir/core/sid/pid/lso "Root identifier for personal identification of country Lesotho"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -2137,7 +2162,7 @@ Description: "Description of the identifier systems acceptable for entity (patie
       * ^property[=].valueCode = #LS
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-LSO"
-  * #https://dhp.uz/fhir/core/sid/pid/lbr "Root identifier for person identification of country Liberia"
+  * #https://dhp.uz/fhir/core/sid/pid/lbr "Root identifier for personal identification of country Liberia"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -2151,7 +2176,7 @@ Description: "Description of the identifier systems acceptable for entity (patie
       * ^property[=].valueCode = #LR
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-LBR"
-  * #https://dhp.uz/fhir/core/sid/pid/lie "Root identifier for person identification of country Liechtenstein"
+  * #https://dhp.uz/fhir/core/sid/pid/lie "Root identifier for personal identification of country Liechtenstein"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -2165,7 +2190,7 @@ Description: "Description of the identifier systems acceptable for entity (patie
       * ^property[=].valueCode = #LI
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-LIE"
-  * #https://dhp.uz/fhir/core/sid/pid/lbn "Root identifier for person identification of country Lebanon"
+  * #https://dhp.uz/fhir/core/sid/pid/lbn "Root identifier for personal identification of country Lebanon"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -2179,7 +2204,7 @@ Description: "Description of the identifier systems acceptable for entity (patie
       * ^property[=].valueCode = #LB
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-LBN"
-  * #https://dhp.uz/fhir/core/sid/pid/lux "Root identifier for person identification of country Luxembourg"
+  * #https://dhp.uz/fhir/core/sid/pid/lux "Root identifier for personal identification of country Luxembourg"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -2193,7 +2218,7 @@ Description: "Description of the identifier systems acceptable for entity (patie
       * ^property[=].valueCode = #LU
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-LUX"
-  * #https://dhp.uz/fhir/core/sid/pid/zaf "Root identifier for person identification of country South Africa"
+  * #https://dhp.uz/fhir/core/sid/pid/zaf "Root identifier for personal identification of country South Africa"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -2214,7 +2239,7 @@ Description: "Description of the identifier systems acceptable for entity (patie
       * ^property[=].valueBoolean = false
       * ^property[+].code = #country
       * ^property[=].valueCode = #ZA
-  * #https://dhp.uz/fhir/core/sid/pid/sgs "Root identifier for person identification of country South Georgia and the South Sandwich Islands"
+  * #https://dhp.uz/fhir/core/sid/pid/sgs "Root identifier for personal identification of country South Georgia and the South Sandwich Islands"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -2228,7 +2253,7 @@ Description: "Description of the identifier systems acceptable for entity (patie
       * ^property[=].valueCode = #GS
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-SGS"
-  * #https://dhp.uz/fhir/core/sid/pid/lva "Root identifier for person identification of country Latvia"
+  * #https://dhp.uz/fhir/core/sid/pid/lva "Root identifier for personal identification of country Latvia"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -2263,7 +2288,7 @@ Description: "Description of the identifier systems acceptable for entity (patie
       * ^property[=].valueBoolean = false
       * ^property[+].code = #country
       * ^property[=].valueCode = #LV
-  * #https://dhp.uz/fhir/core/sid/pid/esh "Root identifier for person identification of country Western Sahara"
+  * #https://dhp.uz/fhir/core/sid/pid/esh "Root identifier for personal identification of country Western Sahara"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -2277,7 +2302,7 @@ Description: "Description of the identifier systems acceptable for entity (patie
       * ^property[=].valueCode = #EH
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-ESH"
-  * #https://dhp.uz/fhir/core/sid/pid/mdg "Root identifier for person identification of country Madagascar"
+  * #https://dhp.uz/fhir/core/sid/pid/mdg "Root identifier for personal identification of country Madagascar"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -2291,7 +2316,7 @@ Description: "Description of the identifier systems acceptable for entity (patie
       * ^property[=].valueCode = #MG
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-MDG"
-  * #https://dhp.uz/fhir/core/sid/pid/nld "Root identifier for person identification of country Netherlands"
+  * #https://dhp.uz/fhir/core/sid/pid/nld "Root identifier for personal identification of country Netherlands"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -2326,7 +2351,7 @@ Description: "Description of the identifier systems acceptable for entity (patie
       * ^property[=].valueBoolean = false
       * ^property[+].code = #country
       * ^property[=].valueCode = #NL
-  * #https://dhp.uz/fhir/core/sid/pid/mkd "Root identifier for person identification of country Macedonia"
+  * #https://dhp.uz/fhir/core/sid/pid/mkd "Root identifier for personal identification of country Macedonia"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -2361,7 +2386,7 @@ Description: "Description of the identifier systems acceptable for entity (patie
       * ^property[=].valueBoolean = false
       * ^property[+].code = #country
       * ^property[=].valueCode = #MK
-  * #https://dhp.uz/fhir/core/sid/pid/mys "Root identifier for person identification of country Malaysia"
+  * #https://dhp.uz/fhir/core/sid/pid/mys "Root identifier for personal identification of country Malaysia"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -2382,7 +2407,7 @@ Description: "Description of the identifier systems acceptable for entity (patie
       * ^property[=].valueBoolean = false
       * ^property[+].code = #country
       * ^property[=].valueCode = #MY
-  * #https://dhp.uz/fhir/core/sid/pid/mwi "Root identifier for person identification of country Malawi"
+  * #https://dhp.uz/fhir/core/sid/pid/mwi "Root identifier for personal identification of country Malawi"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -2396,7 +2421,7 @@ Description: "Description of the identifier systems acceptable for entity (patie
       * ^property[=].valueCode = #MW
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-MWI"
-  * #https://dhp.uz/fhir/core/sid/pid/mdv "Root identifier for person identification of country Maldives"
+  * #https://dhp.uz/fhir/core/sid/pid/mdv "Root identifier for personal identification of country Maldives"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -2410,7 +2435,7 @@ Description: "Description of the identifier systems acceptable for entity (patie
       * ^property[=].valueCode = #MV
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-MDV"
-  * #https://dhp.uz/fhir/core/sid/pid/mli "Root identifier for person identification of country Mali"
+  * #https://dhp.uz/fhir/core/sid/pid/mli "Root identifier for personal identification of country Mali"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -2424,7 +2449,7 @@ Description: "Description of the identifier systems acceptable for entity (patie
       * ^property[=].valueCode = #ML
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-MLI"
-  * #https://dhp.uz/fhir/core/sid/pid/mlt "Root identifier for person identification of country Malta"
+  * #https://dhp.uz/fhir/core/sid/pid/mlt "Root identifier for personal identification of country Malta"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -2459,7 +2484,7 @@ Description: "Description of the identifier systems acceptable for entity (patie
       * ^property[=].valueBoolean = false
       * ^property[+].code = #country
       * ^property[=].valueCode = #MT
-  * #https://dhp.uz/fhir/core/sid/pid/imn "Root identifier for person identification of country Isle of Man"
+  * #https://dhp.uz/fhir/core/sid/pid/imn "Root identifier for personal identification of country Isle of Man"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -2473,7 +2498,7 @@ Description: "Description of the identifier systems acceptable for entity (patie
       * ^property[=].valueCode = #IM
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-IMM"
-  * #https://dhp.uz/fhir/core/sid/pid/mar "Root identifier for person identification of country Morocco"
+  * #https://dhp.uz/fhir/core/sid/pid/mar "Root identifier for personal identification of country Morocco"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -2487,7 +2512,7 @@ Description: "Description of the identifier systems acceptable for entity (patie
       * ^property[=].valueCode = #MA
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-MAR"
-  * #https://dhp.uz/fhir/core/sid/pid/mhl "Root identifier for person identification of country Marshall Islands"
+  * #https://dhp.uz/fhir/core/sid/pid/mhl "Root identifier for personal identification of country Marshall Islands"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -2501,7 +2526,7 @@ Description: "Description of the identifier systems acceptable for entity (patie
       * ^property[=].valueCode = #MH
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-MHL"
-  * #https://dhp.uz/fhir/core/sid/pid/mtq "Root identifier for person identification of country Martinique"
+  * #https://dhp.uz/fhir/core/sid/pid/mtq "Root identifier for personal identification of country Martinique"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -2515,7 +2540,7 @@ Description: "Description of the identifier systems acceptable for entity (patie
       * ^property[=].valueCode = #MQ
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-MTQ"
-  * #https://dhp.uz/fhir/core/sid/pid/mrt "Root identifier for person identification of country Mauritania"
+  * #https://dhp.uz/fhir/core/sid/pid/mrt "Root identifier for personal identification of country Mauritania"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -2529,7 +2554,7 @@ Description: "Description of the identifier systems acceptable for entity (patie
       * ^property[=].valueCode = #MR
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-MRT"
-  * #https://dhp.uz/fhir/core/sid/pid/mus "Root identifier for person identification of country Mauritius"
+  * #https://dhp.uz/fhir/core/sid/pid/mus "Root identifier for personal identification of country Mauritius"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -2543,7 +2568,7 @@ Description: "Description of the identifier systems acceptable for entity (patie
       * ^property[=].valueCode = #MU
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-MUS"
-  * #https://dhp.uz/fhir/core/sid/pid/myt "Root identifier for person identification of country Mayotte"
+  * #https://dhp.uz/fhir/core/sid/pid/myt "Root identifier for personal identification of country Mayotte"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -2557,7 +2582,7 @@ Description: "Description of the identifier systems acceptable for entity (patie
       * ^property[=].valueCode = #YT
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-MYT"
-  * #https://dhp.uz/fhir/core/sid/pid/mex "Root identifier for person identification of country Mexico"
+  * #https://dhp.uz/fhir/core/sid/pid/mex "Root identifier for personal identification of country Mexico"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -2578,7 +2603,7 @@ Description: "Description of the identifier systems acceptable for entity (patie
       * ^property[=].valueBoolean = false
       * ^property[+].code = #country
       * ^property[=].valueCode = #MX
-  * #https://dhp.uz/fhir/core/sid/pid/fsm "Root identifier for person identification of country Micronesia"
+  * #https://dhp.uz/fhir/core/sid/pid/fsm "Root identifier for personal identification of country Micronesia"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -2592,7 +2617,7 @@ Description: "Description of the identifier systems acceptable for entity (patie
       * ^property[=].valueCode = #FM
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-FSM"
-  * #https://dhp.uz/fhir/core/sid/pid/mda "Root identifier for person identification of country Moldova, Republic of"
+  * #https://dhp.uz/fhir/core/sid/pid/mda "Root identifier for personal identification of country Moldova, Republic of"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -2627,7 +2652,7 @@ Description: "Description of the identifier systems acceptable for entity (patie
       * ^property[=].valueBoolean = false
       * ^property[+].code = #country
       * ^property[=].valueCode = #MD
-  * #https://dhp.uz/fhir/core/sid/pid/mco "Root identifier for person identification of country Monaco"
+  * #https://dhp.uz/fhir/core/sid/pid/mco "Root identifier for personal identification of country Monaco"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -2641,7 +2666,7 @@ Description: "Description of the identifier systems acceptable for entity (patie
       * ^property[=].valueCode = #MC
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-MCO"
-  * #https://dhp.uz/fhir/core/sid/pid/mng "Root identifier for person identification of country Mongolia"
+  * #https://dhp.uz/fhir/core/sid/pid/mng "Root identifier for personal identification of country Mongolia"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -2655,7 +2680,7 @@ Description: "Description of the identifier systems acceptable for entity (patie
       * ^property[=].valueCode = #MN
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-MNG"
-  * #https://dhp.uz/fhir/core/sid/pid/mne "Root identifier for person identification of country Montenegro"
+  * #https://dhp.uz/fhir/core/sid/pid/mne "Root identifier for personal identification of country Montenegro"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -2690,7 +2715,7 @@ Description: "Description of the identifier systems acceptable for entity (patie
       * ^property[=].valueBoolean = false
       * ^property[+].code = #country
       * ^property[=].valueCode = #ME
-  * #https://dhp.uz/fhir/core/sid/pid/msr "Root identifier for person identification of country Montserrat"
+  * #https://dhp.uz/fhir/core/sid/pid/msr "Root identifier for personal identification of country Montserrat"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -2704,7 +2729,7 @@ Description: "Description of the identifier systems acceptable for entity (patie
       * ^property[=].valueCode = #MS
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-MSR"
-  * #https://dhp.uz/fhir/core/sid/pid/moz "Root identifier for person identification of country Mozambique"
+  * #https://dhp.uz/fhir/core/sid/pid/moz "Root identifier for personal identification of country Mozambique"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -2718,7 +2743,7 @@ Description: "Description of the identifier systems acceptable for entity (patie
       * ^property[=].valueCode = #MZ
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-MOZ"
-  * #https://dhp.uz/fhir/core/sid/pid/xyy "Root identifier for person identification of country Areas not elsewhere specified"
+  * #https://dhp.uz/fhir/core/sid/pid/xyy "Root identifier for personal identification of country Areas not elsewhere specified"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -2730,7 +2755,7 @@ Description: "Description of the identifier systems acceptable for entity (patie
       * ^property[=].valueBoolean = false
       * ^property[+].code = #country
       * ^property[=].valueCode = #XY
-  * #https://dhp.uz/fhir/core/sid/pid/xxx "Root identifier for person identification of country Not specified"
+  * #https://dhp.uz/fhir/core/sid/pid/xxx "Root identifier for personal identification of country Not specified"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -2742,7 +2767,7 @@ Description: "Description of the identifier systems acceptable for entity (patie
       * ^property[=].valueBoolean = false
       * ^property[+].code = #country
       * ^property[=].valueCode = #XX
-  * #https://dhp.uz/fhir/core/sid/pid/mmr "Root identifier for person identification of country Myanmar"
+  * #https://dhp.uz/fhir/core/sid/pid/mmr "Root identifier for personal identification of country Myanmar"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -2756,7 +2781,7 @@ Description: "Description of the identifier systems acceptable for entity (patie
       * ^property[=].valueCode = #MM
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-MMR"
-  * #https://dhp.uz/fhir/core/sid/pid/nam "Root identifier for person identification of country Namibia"
+  * #https://dhp.uz/fhir/core/sid/pid/nam "Root identifier for personal identification of country Namibia"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -2770,7 +2795,7 @@ Description: "Description of the identifier systems acceptable for entity (patie
       * ^property[=].valueCode = #NA
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-NAM"
-  * #https://dhp.uz/fhir/core/sid/pid/nru "Root identifier for person identification of country Nauru"
+  * #https://dhp.uz/fhir/core/sid/pid/nru "Root identifier for personal identification of country Nauru"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -2784,7 +2809,7 @@ Description: "Description of the identifier systems acceptable for entity (patie
       * ^property[=].valueCode = #NR
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-NRU"
-  * #https://dhp.uz/fhir/core/sid/pid/npl "Root identifier for person identification of country Nepal"
+  * #https://dhp.uz/fhir/core/sid/pid/npl "Root identifier for personal identification of country Nepal"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -2805,7 +2830,7 @@ Description: "Description of the identifier systems acceptable for entity (patie
       * ^property[=].valueBoolean = false
       * ^property[+].code = #country
       * ^property[=].valueCode = #NP
-  * #https://dhp.uz/fhir/core/sid/pid/nic "Root identifier for person identification of country Nicaragua"
+  * #https://dhp.uz/fhir/core/sid/pid/nic "Root identifier for personal identification of country Nicaragua"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -2819,7 +2844,7 @@ Description: "Description of the identifier systems acceptable for entity (patie
       * ^property[=].valueCode = #NI
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-NIC"
-  * #https://dhp.uz/fhir/core/sid/pid/nga "Root identifier for person identification of country Nigeria"
+  * #https://dhp.uz/fhir/core/sid/pid/nga "Root identifier for personal identification of country Nigeria"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -2847,7 +2872,7 @@ Description: "Description of the identifier systems acceptable for entity (patie
       * ^property[=].valueBoolean = false
       * ^property[+].code = #country
       * ^property[=].valueCode = #NG
-  * #https://dhp.uz/fhir/core/sid/pid/ner "Root identifier for person identification of country Niger"
+  * #https://dhp.uz/fhir/core/sid/pid/ner "Root identifier for personal identification of country Niger"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -2861,7 +2886,7 @@ Description: "Description of the identifier systems acceptable for entity (patie
       * ^property[=].valueCode = #NE
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-NER"
-  * #https://dhp.uz/fhir/core/sid/pid/niu "Root identifier for person identification of country Niue"
+  * #https://dhp.uz/fhir/core/sid/pid/niu "Root identifier for personal identification of country Niue"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -2875,7 +2900,7 @@ Description: "Description of the identifier systems acceptable for entity (patie
       * ^property[=].valueCode = #NU
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-NIU"
-  * #https://dhp.uz/fhir/core/sid/pid/nfk "Root identifier for person identification of country Norfolk Island"
+  * #https://dhp.uz/fhir/core/sid/pid/nfk "Root identifier for personal identification of country Norfolk Island"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -2889,7 +2914,7 @@ Description: "Description of the identifier systems acceptable for entity (patie
       * ^property[=].valueCode = #NF
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-NFK"
-  * #https://dhp.uz/fhir/core/sid/pid/nor "Root identifier for person identification of country Norway"
+  * #https://dhp.uz/fhir/core/sid/pid/nor "Root identifier for personal identification of country Norway"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -2924,7 +2949,7 @@ Description: "Description of the identifier systems acceptable for entity (patie
       * ^property[=].valueBoolean = false
       * ^property[+].code = #country
       * ^property[=].valueCode = #NO
-  * #https://dhp.uz/fhir/core/sid/pid/omn "Root identifier for person identification of country Oman"
+  * #https://dhp.uz/fhir/core/sid/pid/omn "Root identifier for personal identification of country Oman"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -2938,7 +2963,7 @@ Description: "Description of the identifier systems acceptable for entity (patie
       * ^property[=].valueCode = #OM
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-OMN"
-  * #https://dhp.uz/fhir/core/sid/pid/png "Root identifier for person identification of country Papua New Guinea"
+  * #https://dhp.uz/fhir/core/sid/pid/png "Root identifier for personal identification of country Papua New Guinea"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -2952,7 +2977,7 @@ Description: "Description of the identifier systems acceptable for entity (patie
       * ^property[=].valueCode = #PG
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-PNG"
-  * #https://dhp.uz/fhir/core/sid/pid/pak "Root identifier for person identification of country Pakistan"
+  * #https://dhp.uz/fhir/core/sid/pid/pak "Root identifier for personal identification of country Pakistan"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -2973,7 +2998,7 @@ Description: "Description of the identifier systems acceptable for entity (patie
       * ^property[=].valueBoolean = false
       * ^property[+].code = #country
       * ^property[=].valueCode = #PK
-  * #https://dhp.uz/fhir/core/sid/pid/pse "Root identifier for person identification of country Palestinian Territory, Occupied"
+  * #https://dhp.uz/fhir/core/sid/pid/pse "Root identifier for personal identification of country Palestinian Territory, Occupied"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -2987,7 +3012,7 @@ Description: "Description of the identifier systems acceptable for entity (patie
       * ^property[=].valueCode = #PS
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-PSE"
-  * #https://dhp.uz/fhir/core/sid/pid/pan "Root identifier for person identification of country Panama"
+  * #https://dhp.uz/fhir/core/sid/pid/pan "Root identifier for personal identification of country Panama"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -3001,7 +3026,7 @@ Description: "Description of the identifier systems acceptable for entity (patie
       * ^property[=].valueCode = #PA
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-PAN"
-  * #https://dhp.uz/fhir/core/sid/pid/pry "Root identifier for person identification of country Paraguay"
+  * #https://dhp.uz/fhir/core/sid/pid/pry "Root identifier for personal identification of country Paraguay"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -3015,7 +3040,7 @@ Description: "Description of the identifier systems acceptable for entity (patie
       * ^property[=].valueCode = #PY
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-PRY"
-  * #https://dhp.uz/fhir/core/sid/pid/per "Root identifier for person identification of country Peru"
+  * #https://dhp.uz/fhir/core/sid/pid/per "Root identifier for personal identification of country Peru"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -3029,7 +3054,7 @@ Description: "Description of the identifier systems acceptable for entity (patie
       * ^property[=].valueCode = #PE
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-PER"
-  * #https://dhp.uz/fhir/core/sid/pid/pcn "Root identifier for person identification of country Pitcairn"
+  * #https://dhp.uz/fhir/core/sid/pid/pcn "Root identifier for personal identification of country Pitcairn"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -3043,7 +3068,7 @@ Description: "Description of the identifier systems acceptable for entity (patie
       * ^property[=].valueCode = #PN
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-PCN"
-  * #https://dhp.uz/fhir/core/sid/pid/pol "Root identifier for person identification of country Poland"
+  * #https://dhp.uz/fhir/core/sid/pid/pol "Root identifier for personal identification of country Poland"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -3078,7 +3103,7 @@ Description: "Description of the identifier systems acceptable for entity (patie
       * ^property[=].valueBoolean = false
       * ^property[+].code = #country
       * ^property[=].valueCode = #PL
-  * #https://dhp.uz/fhir/core/sid/pid/prt "Root identifier for person identification of country Portugal"
+  * #https://dhp.uz/fhir/core/sid/pid/prt "Root identifier for personal identification of country Portugal"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -3113,7 +3138,7 @@ Description: "Description of the identifier systems acceptable for entity (patie
       * ^property[=].valueBoolean = false
       * ^property[+].code = #country
       * ^property[=].valueCode = #PT
-  * #https://dhp.uz/fhir/core/sid/pid/atf "Root identifier for person identification of country French Southern Territories"
+  * #https://dhp.uz/fhir/core/sid/pid/atf "Root identifier for personal identification of country French Southern Territories"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -3127,7 +3152,7 @@ Description: "Description of the identifier systems acceptable for entity (patie
       * ^property[=].valueCode = #TF
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-ATF"
-  * #https://dhp.uz/fhir/core/sid/pid/pyf "Root identifier for person identification of country French Polynesia"
+  * #https://dhp.uz/fhir/core/sid/pid/pyf "Root identifier for personal identification of country French Polynesia"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -3141,7 +3166,7 @@ Description: "Description of the identifier systems acceptable for entity (patie
       * ^property[=].valueCode = #PF
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-PYF"
-  * #https://dhp.uz/fhir/core/sid/pid/fra "Root identifier for person identification of country France"
+  * #https://dhp.uz/fhir/core/sid/pid/fra "Root identifier for personal identification of country France"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -3155,7 +3180,7 @@ Description: "Description of the identifier systems acceptable for entity (patie
       * ^property[=].valueCode = #FR
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-FRA"
-  * #https://dhp.uz/fhir/core/sid/pid/pri "Root identifier for person identification of country Puerto Rico"
+  * #https://dhp.uz/fhir/core/sid/pid/pri "Root identifier for personal identification of country Puerto Rico"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -3169,7 +3194,7 @@ Description: "Description of the identifier systems acceptable for entity (patie
       * ^property[=].valueCode = #PR
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-PRI"
-  * #https://dhp.uz/fhir/core/sid/pid/mnp "Root identifier for person identification of country Northern Mariana Islands"
+  * #https://dhp.uz/fhir/core/sid/pid/mnp "Root identifier for personal identification of country Northern Mariana Islands"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -3183,7 +3208,7 @@ Description: "Description of the identifier systems acceptable for entity (patie
       * ^property[=].valueCode = #MP
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-MNP"
-  * #https://dhp.uz/fhir/core/sid/pid/vat "Root identifier for person identification of country Holy See (Vatican City State)"
+  * #https://dhp.uz/fhir/core/sid/pid/vat "Root identifier for personal identification of country Holy See (Vatican City State)"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -3197,7 +3222,7 @@ Description: "Description of the identifier systems acceptable for entity (patie
       * ^property[=].valueCode = #VA
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-VAT"
-  * #https://dhp.uz/fhir/core/sid/pid/reu "Root identifier for person identification of country Réunion"
+  * #https://dhp.uz/fhir/core/sid/pid/reu "Root identifier for personal identification of country Réunion"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -3211,7 +3236,7 @@ Description: "Description of the identifier systems acceptable for entity (patie
       * ^property[=].valueCode = #RE
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-REU"
-  * #https://dhp.uz/fhir/core/sid/pid/swe "Root identifier for person identification of country Sweden"
+  * #https://dhp.uz/fhir/core/sid/pid/swe "Root identifier for personal identification of country Sweden"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -3246,7 +3271,7 @@ Description: "Description of the identifier systems acceptable for entity (patie
       * ^property[=].valueBoolean = false
       * ^property[+].code = #country
       * ^property[=].valueCode = #SE
-  * #https://dhp.uz/fhir/core/sid/pid/rou "Root identifier for person identification of country Romania"
+  * #https://dhp.uz/fhir/core/sid/pid/rou "Root identifier for personal identification of country Romania"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -3281,7 +3306,7 @@ Description: "Description of the identifier systems acceptable for entity (patie
       * ^property[=].valueBoolean = false
       * ^property[+].code = #country
       * ^property[=].valueCode = #RO
-  * #https://dhp.uz/fhir/core/sid/pid/rwa "Root identifier for person identification of country Rwanda"
+  * #https://dhp.uz/fhir/core/sid/pid/rwa "Root identifier for personal identification of country Rwanda"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -3295,7 +3320,7 @@ Description: "Description of the identifier systems acceptable for entity (patie
       * ^property[=].valueCode = #RW
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-RWA"
-  * #https://dhp.uz/fhir/core/sid/pid/slb "Root identifier for person identification of country Solomon Islands"
+  * #https://dhp.uz/fhir/core/sid/pid/slb "Root identifier for personal identification of country Solomon Islands"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -3309,7 +3334,7 @@ Description: "Description of the identifier systems acceptable for entity (patie
       * ^property[=].valueCode = #SB
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-SLB"
-  * #https://dhp.uz/fhir/core/sid/pid/kna "Root identifier for person identification of country Saint Kitts and Nevis"
+  * #https://dhp.uz/fhir/core/sid/pid/kna "Root identifier for personal identification of country Saint Kitts and Nevis"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -3323,7 +3348,7 @@ Description: "Description of the identifier systems acceptable for entity (patie
       * ^property[=].valueCode = #KN
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-KNA"
-  * #https://dhp.uz/fhir/core/sid/pid/shn "Root identifier for person identification of country Saint Helena"
+  * #https://dhp.uz/fhir/core/sid/pid/shn "Root identifier for personal identification of country Saint Helena"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -3337,7 +3362,7 @@ Description: "Description of the identifier systems acceptable for entity (patie
       * ^property[=].valueCode = #SH
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-SHN"
-  * #https://dhp.uz/fhir/core/sid/pid/lca "Root identifier for person identification of country Saint Lucia"
+  * #https://dhp.uz/fhir/core/sid/pid/lca "Root identifier for personal identification of country Saint Lucia"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -3351,7 +3376,7 @@ Description: "Description of the identifier systems acceptable for entity (patie
       * ^property[=].valueCode = #LC
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-LCA"
-  * #https://dhp.uz/fhir/core/sid/pid/spm "Root identifier for person identification of country Saint Pierre and Miquelon"
+  * #https://dhp.uz/fhir/core/sid/pid/spm "Root identifier for personal identification of country Saint Pierre and Miquelon"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -3365,7 +3390,7 @@ Description: "Description of the identifier systems acceptable for entity (patie
       * ^property[=].valueCode = #PM
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-SPM"
-  * #https://dhp.uz/fhir/core/sid/pid/vct "Root identifier for person identification of country Saint Vincent and the Grenadines"
+  * #https://dhp.uz/fhir/core/sid/pid/vct "Root identifier for personal identification of country Saint Vincent and the Grenadines"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -3379,7 +3404,7 @@ Description: "Description of the identifier systems acceptable for entity (patie
       * ^property[=].valueCode = #VC
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-VCT"
-  * #https://dhp.uz/fhir/core/sid/pid/deu "Root identifier for person identification of country Germany"
+  * #https://dhp.uz/fhir/core/sid/pid/deu "Root identifier for personal identification of country Germany"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -3393,7 +3418,7 @@ Description: "Description of the identifier systems acceptable for entity (patie
       * ^property[=].valueCode = #DE
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-DEU"
-  * #https://dhp.uz/fhir/core/sid/pid/zmb "Root identifier for person identification of country Zambia"
+  * #https://dhp.uz/fhir/core/sid/pid/zmb "Root identifier for personal identification of country Zambia"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -3407,7 +3432,7 @@ Description: "Description of the identifier systems acceptable for entity (patie
       * ^property[=].valueCode = #ZM
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-ZMB"
-  * #https://dhp.uz/fhir/core/sid/pid/wsm "Root identifier for person identification of country Samoa"
+  * #https://dhp.uz/fhir/core/sid/pid/wsm "Root identifier for personal identification of country Samoa"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -3421,7 +3446,7 @@ Description: "Description of the identifier systems acceptable for entity (patie
       * ^property[=].valueCode = #WS
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-WSM"
-  * #https://dhp.uz/fhir/core/sid/pid/smr "Root identifier for person identification of country San Marino"
+  * #https://dhp.uz/fhir/core/sid/pid/smr "Root identifier for personal identification of country San Marino"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -3456,7 +3481,7 @@ Description: "Description of the identifier systems acceptable for entity (patie
       * ^property[=].valueBoolean = false
       * ^property[+].code = #country
       * ^property[=].valueCode = #SM
-  * #https://dhp.uz/fhir/core/sid/pid/stp "Root identifier for person identification of country Sao Tome and Principe"
+  * #https://dhp.uz/fhir/core/sid/pid/stp "Root identifier for personal identification of country Sao Tome and Principe"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -3470,7 +3495,7 @@ Description: "Description of the identifier systems acceptable for entity (patie
       * ^property[=].valueCode = #ST
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-STP"
-  * #https://dhp.uz/fhir/core/sid/pid/sau "Root identifier for person identification of country Saudi Arabia"
+  * #https://dhp.uz/fhir/core/sid/pid/sau "Root identifier for personal identification of country Saudi Arabia"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -3484,7 +3509,7 @@ Description: "Description of the identifier systems acceptable for entity (patie
       * ^property[=].valueCode = #SA
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-SAU"
-  * #https://dhp.uz/fhir/core/sid/pid/syc "Root identifier for person identification of country Seychelles"
+  * #https://dhp.uz/fhir/core/sid/pid/syc "Root identifier for personal identification of country Seychelles"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -3498,7 +3523,7 @@ Description: "Description of the identifier systems acceptable for entity (patie
       * ^property[=].valueCode = #SC
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-SYC"
-  * #https://dhp.uz/fhir/core/sid/pid/sen "Root identifier for person identification of country Senegal"
+  * #https://dhp.uz/fhir/core/sid/pid/sen "Root identifier for personal identification of country Senegal"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -3512,7 +3537,7 @@ Description: "Description of the identifier systems acceptable for entity (patie
       * ^property[=].valueCode = #SN
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-SEN"
-  * #https://dhp.uz/fhir/core/sid/pid/srb "Root identifier for person identification of country Serbia"
+  * #https://dhp.uz/fhir/core/sid/pid/srb "Root identifier for personal identification of country Serbia"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -3547,7 +3572,7 @@ Description: "Description of the identifier systems acceptable for entity (patie
       * ^property[=].valueBoolean = false
       * ^property[+].code = #country
       * ^property[=].valueCode = #RS
-  * #https://dhp.uz/fhir/core/sid/pid/sle "Root identifier for person identification of country Sierra Leone"
+  * #https://dhp.uz/fhir/core/sid/pid/sle "Root identifier for personal identification of country Sierra Leone"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -3561,7 +3586,7 @@ Description: "Description of the identifier systems acceptable for entity (patie
       * ^property[=].valueCode = #SL
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-SLE"
-  * #https://dhp.uz/fhir/core/sid/pid/sgp "Root identifier for person identification of country Singapore"
+  * #https://dhp.uz/fhir/core/sid/pid/sgp "Root identifier for personal identification of country Singapore"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -3582,7 +3607,7 @@ Description: "Description of the identifier systems acceptable for entity (patie
       * ^property[=].valueBoolean = false
       * ^property[+].code = #country
       * ^property[=].valueCode = #SG
-  * #https://dhp.uz/fhir/core/sid/pid/svk "Root identifier for person identification of country Slovakia"
+  * #https://dhp.uz/fhir/core/sid/pid/svk "Root identifier for personal identification of country Slovakia"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -3617,7 +3642,7 @@ Description: "Description of the identifier systems acceptable for entity (patie
       * ^property[=].valueBoolean = false
       * ^property[+].code = #country
       * ^property[=].valueCode = #SK
-  * #https://dhp.uz/fhir/core/sid/pid/svn "Root identifier for person identification of country Slovenia"
+  * #https://dhp.uz/fhir/core/sid/pid/svn "Root identifier for personal identification of country Slovenia"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -3652,7 +3677,7 @@ Description: "Description of the identifier systems acceptable for entity (patie
       * ^property[=].valueBoolean = false
       * ^property[+].code = #country
       * ^property[=].valueCode = #SI
-  * #https://dhp.uz/fhir/core/sid/pid/som "Root identifier for person identification of country Somalia"
+  * #https://dhp.uz/fhir/core/sid/pid/som "Root identifier for personal identification of country Somalia"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -3666,7 +3691,7 @@ Description: "Description of the identifier systems acceptable for entity (patie
       * ^property[=].valueCode = #SO
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-SOM"
-  * #https://dhp.uz/fhir/core/sid/pid/fin "Root identifier for person identification of country Finland"
+  * #https://dhp.uz/fhir/core/sid/pid/fin "Root identifier for personal identification of country Finland"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -3701,7 +3726,7 @@ Description: "Description of the identifier systems acceptable for entity (patie
       * ^property[=].valueBoolean = false
       * ^property[+].code = #country
       * ^property[=].valueCode = #FI
-  * #https://dhp.uz/fhir/core/sid/pid/lka "Root identifier for person identification of country Sri Lanka"
+  * #https://dhp.uz/fhir/core/sid/pid/lka "Root identifier for personal identification of country Sri Lanka"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -3722,7 +3747,7 @@ Description: "Description of the identifier systems acceptable for entity (patie
       * ^property[=].valueBoolean = false
       * ^property[+].code = #country
       * ^property[=].valueCode = #LK
-  * #https://dhp.uz/fhir/core/sid/pid/sdn "Root identifier for person identification of country Sudan"
+  * #https://dhp.uz/fhir/core/sid/pid/sdn "Root identifier for personal identification of country Sudan"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -3736,7 +3761,7 @@ Description: "Description of the identifier systems acceptable for entity (patie
       * ^property[=].valueCode = #SD
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-SDN"
-  * #https://dhp.uz/fhir/core/sid/pid/sur "Root identifier for person identification of country Suriname"
+  * #https://dhp.uz/fhir/core/sid/pid/sur "Root identifier for personal identification of country Suriname"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -3750,7 +3775,7 @@ Description: "Description of the identifier systems acceptable for entity (patie
       * ^property[=].valueCode = #SR
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-SUR"
-  * #https://dhp.uz/fhir/core/sid/pid/lby "Root identifier for person identification of country Libyan Arab Jamahiriya"
+  * #https://dhp.uz/fhir/core/sid/pid/lby "Root identifier for personal identification of country Libyan Arab Jamahiriya"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -3764,7 +3789,7 @@ Description: "Description of the identifier systems acceptable for entity (patie
       * ^property[=].valueCode = #LY
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-LBY"
-  * #https://dhp.uz/fhir/core/sid/pid/gbr "Root identifier for person identification of country United Kingdom"
+  * #https://dhp.uz/fhir/core/sid/pid/gbr "Root identifier for personal identification of country United Kingdom"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -3778,7 +3803,7 @@ Description: "Description of the identifier systems acceptable for entity (patie
       * ^property[=].valueCode = #GB
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-GBR"
-  * #https://dhp.uz/fhir/core/sid/pid/swz "Root identifier for person identification of country Swaziland"
+  * #https://dhp.uz/fhir/core/sid/pid/swz "Root identifier for personal identification of country Swaziland"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -3792,7 +3817,7 @@ Description: "Description of the identifier systems acceptable for entity (patie
       * ^property[=].valueCode = #SZ
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-SWZ"
-  * #https://dhp.uz/fhir/core/sid/pid/sjm "Root identifier for person identification of country Svalbard and Jan Mayen"
+  * #https://dhp.uz/fhir/core/sid/pid/sjm "Root identifier for personal identification of country Svalbard and Jan Mayen"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -3806,7 +3831,7 @@ Description: "Description of the identifier systems acceptable for entity (patie
       * ^property[=].valueCode = #SJ
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-SJM"
-  * #https://dhp.uz/fhir/core/sid/pid/syr "Root identifier for person identification of country Syrian Arab Republic"
+  * #https://dhp.uz/fhir/core/sid/pid/syr "Root identifier for personal identification of country Syrian Arab Republic"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -3820,7 +3845,7 @@ Description: "Description of the identifier systems acceptable for entity (patie
       * ^property[=].valueCode = #SY
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-SYR"
-  * #https://dhp.uz/fhir/core/sid/pid/che "Root identifier for person identification of country Switzerland"
+  * #https://dhp.uz/fhir/core/sid/pid/che "Root identifier for personal identification of country Switzerland"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -3834,7 +3859,7 @@ Description: "Description of the identifier systems acceptable for entity (patie
       * ^property[=].valueCode = #CH
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-CHE"
-  * #https://dhp.uz/fhir/core/sid/pid/zwe "Root identifier for person identification of country Zimbabwe"
+  * #https://dhp.uz/fhir/core/sid/pid/zwe "Root identifier for personal identification of country Zimbabwe"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -3855,7 +3880,7 @@ Description: "Description of the identifier systems acceptable for entity (patie
       * ^property[=].valueBoolean = false
       * ^property[+].code = #country
       * ^property[=].valueCode = #ZW
-  * #https://dhp.uz/fhir/core/sid/pid/dnk "Root identifier for person identification of country Denmark"
+  * #https://dhp.uz/fhir/core/sid/pid/dnk "Root identifier for personal identification of country Denmark"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -3883,7 +3908,7 @@ Description: "Description of the identifier systems acceptable for entity (patie
       * ^property[=].valueBoolean = false
       * ^property[+].code = #country
       * ^property[=].valueCode = #DK
-  * #https://dhp.uz/fhir/core/sid/pid/tjk "Root identifier for person identification of country Tajikistan"
+  * #https://dhp.uz/fhir/core/sid/pid/tjk "Root identifier for personal identification of country Tajikistan"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -3897,7 +3922,7 @@ Description: "Description of the identifier systems acceptable for entity (patie
       * ^property[=].valueCode = #TJ
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-TJK"
-  * #https://dhp.uz/fhir/core/sid/pid/tha "Root identifier for person identification of country Thailand"
+  * #https://dhp.uz/fhir/core/sid/pid/tha "Root identifier for personal identification of country Thailand"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -3932,7 +3957,7 @@ Description: "Description of the identifier systems acceptable for entity (patie
       * ^property[=].valueBoolean = false
       * ^property[+].code = #country
       * ^property[=].valueCode = #TH
-  * #https://dhp.uz/fhir/core/sid/pid/twn "Root identifier for person identification of country Taiwan"
+  * #https://dhp.uz/fhir/core/sid/pid/twn "Root identifier for personal identification of country Taiwan"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -3953,7 +3978,7 @@ Description: "Description of the identifier systems acceptable for entity (patie
       * ^property[=].valueBoolean = false
       * ^property[+].code = #country
       * ^property[=].valueCode = #TW
-  * #https://dhp.uz/fhir/core/sid/pid/tza "Root identifier for person identification of country Tanzania, United Republic of"
+  * #https://dhp.uz/fhir/core/sid/pid/tza "Root identifier for personal identification of country Tanzania, United Republic of"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -3967,7 +3992,7 @@ Description: "Description of the identifier systems acceptable for entity (patie
       * ^property[=].valueCode = #TZ
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-TZA"
-  * #https://dhp.uz/fhir/core/sid/pid/tls "Root identifier for person identification of country Timor-Leste"
+  * #https://dhp.uz/fhir/core/sid/pid/tls "Root identifier for personal identification of country Timor-Leste"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -3981,7 +4006,7 @@ Description: "Description of the identifier systems acceptable for entity (patie
       * ^property[=].valueCode = #TL
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-TLS"
-  * #https://dhp.uz/fhir/core/sid/pid/tgo "Root identifier for person identification of country Togo"
+  * #https://dhp.uz/fhir/core/sid/pid/tgo "Root identifier for personal identification of country Togo"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -3995,7 +4020,7 @@ Description: "Description of the identifier systems acceptable for entity (patie
       * ^property[=].valueCode = #TG
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-TGO"
-  * #https://dhp.uz/fhir/core/sid/pid/tkl "Root identifier for person identification of country Tokelau"
+  * #https://dhp.uz/fhir/core/sid/pid/tkl "Root identifier for personal identification of country Tokelau"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -4009,7 +4034,7 @@ Description: "Description of the identifier systems acceptable for entity (patie
       * ^property[=].valueCode = #TK
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-TKL"
-  * #https://dhp.uz/fhir/core/sid/pid/ton "Root identifier for person identification of country Tonga"
+  * #https://dhp.uz/fhir/core/sid/pid/ton "Root identifier for personal identification of country Tonga"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -4023,7 +4048,7 @@ Description: "Description of the identifier systems acceptable for entity (patie
       * ^property[=].valueCode = #TO
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-TON"
-  * #https://dhp.uz/fhir/core/sid/pid/tto "Root identifier for person identification of country Trinidad and Tobago"
+  * #https://dhp.uz/fhir/core/sid/pid/tto "Root identifier for personal identification of country Trinidad and Tobago"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -4037,7 +4062,7 @@ Description: "Description of the identifier systems acceptable for entity (patie
       * ^property[=].valueCode = #TT
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-TTO"
-  * #https://dhp.uz/fhir/core/sid/pid/tcd "Root identifier for person identification of country Chad"
+  * #https://dhp.uz/fhir/core/sid/pid/tcd "Root identifier for personal identification of country Chad"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -4051,7 +4076,7 @@ Description: "Description of the identifier systems acceptable for entity (patie
       * ^property[=].valueCode = #TD
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-TCD"
-  * #https://dhp.uz/fhir/core/sid/pid/cze "Root identifier for person identification of country Czech Republic"
+  * #https://dhp.uz/fhir/core/sid/pid/cze "Root identifier for personal identification of country Czech Republic"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -4086,7 +4111,7 @@ Description: "Description of the identifier systems acceptable for entity (patie
       * ^property[=].valueBoolean = false
       * ^property[+].code = #country
       * ^property[=].valueCode = #CZ
-  * #https://dhp.uz/fhir/core/sid/pid/chl "Root identifier for person identification of country Chile"
+  * #https://dhp.uz/fhir/core/sid/pid/chl "Root identifier for personal identification of country Chile"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -4121,7 +4146,7 @@ Description: "Description of the identifier systems acceptable for entity (patie
       * ^property[=].valueBoolean = false
       * ^property[+].code = #country
       * ^property[=].valueCode = #CL
-  * #https://dhp.uz/fhir/core/sid/pid/tun "Root identifier for person identification of country Tunisia"
+  * #https://dhp.uz/fhir/core/sid/pid/tun "Root identifier for personal identification of country Tunisia"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -4135,7 +4160,7 @@ Description: "Description of the identifier systems acceptable for entity (patie
       * ^property[=].valueCode = #TN
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-TUN"
-  * #https://dhp.uz/fhir/core/sid/pid/tca "Root identifier for person identification of country Turks and Caicos Islands"
+  * #https://dhp.uz/fhir/core/sid/pid/tca "Root identifier for personal identification of country Turks and Caicos Islands"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -4149,7 +4174,7 @@ Description: "Description of the identifier systems acceptable for entity (patie
       * ^property[=].valueCode = #TC
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-TCA"
-  * #https://dhp.uz/fhir/core/sid/pid/tuv "Root identifier for person identification of country Tuvalu"
+  * #https://dhp.uz/fhir/core/sid/pid/tuv "Root identifier for personal identification of country Tuvalu"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -4163,7 +4188,7 @@ Description: "Description of the identifier systems acceptable for entity (patie
       * ^property[=].valueCode = #TV
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-TUV"
-  * #https://dhp.uz/fhir/core/sid/pid/tur "Root identifier for person identification of country Turkey"
+  * #https://dhp.uz/fhir/core/sid/pid/tur "Root identifier for personal identification of country Turkey"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -4191,7 +4216,7 @@ Description: "Description of the identifier systems acceptable for entity (patie
       * ^property[=].valueBoolean = false
       * ^property[+].code = #country
       * ^property[=].valueCode = #TR
-  * #https://dhp.uz/fhir/core/sid/pid/tkm "Root identifier for person identification of country Turkmenistan"
+  * #https://dhp.uz/fhir/core/sid/pid/tkm "Root identifier for personal identification of country Turkmenistan"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -4205,7 +4230,7 @@ Description: "Description of the identifier systems acceptable for entity (patie
       * ^property[=].valueCode = #TM
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-TKM"
-  * #https://dhp.uz/fhir/core/sid/pid/uga "Root identifier for person identification of country Uganda"
+  * #https://dhp.uz/fhir/core/sid/pid/uga "Root identifier for personal identification of country Uganda"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -4219,7 +4244,7 @@ Description: "Description of the identifier systems acceptable for entity (patie
       * ^property[=].valueCode = #UG
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-UGA"
-  * #https://dhp.uz/fhir/core/sid/pid/ukr "Root identifier for person identification of country Ukraine"
+  * #https://dhp.uz/fhir/core/sid/pid/ukr "Root identifier for personal identification of country Ukraine"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -4254,7 +4279,7 @@ Description: "Description of the identifier systems acceptable for entity (patie
       * ^property[=].valueBoolean = false
       * ^property[+].code = #country
       * ^property[=].valueCode = #UA
-  * #https://dhp.uz/fhir/core/sid/pid/hun "Root identifier for person identification of country Hungary"
+  * #https://dhp.uz/fhir/core/sid/pid/hun "Root identifier for personal identification of country Hungary"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -4268,7 +4293,7 @@ Description: "Description of the identifier systems acceptable for entity (patie
       * ^property[=].valueCode = #HU
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-HUN"
-  * #https://dhp.uz/fhir/core/sid/pid/ury "Root identifier for person identification of country Uruguay"
+  * #https://dhp.uz/fhir/core/sid/pid/ury "Root identifier for personal identification of country Uruguay"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -4282,7 +4307,7 @@ Description: "Description of the identifier systems acceptable for entity (patie
       * ^property[=].valueCode = #UY
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-URY"
-  * #https://dhp.uz/fhir/core/sid/pid/uzb "Root identifier for person identification of country Uzbekistan"
+  * #https://dhp.uz/fhir/core/sid/pid/uzb "Root identifier for personal identification of country Uzbekistan"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -4384,7 +4409,7 @@ Description: "Description of the identifier systems acceptable for entity (patie
       * ^property[=].valueCode = #UZ
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "https://dhp.uz/fhir/core/NamingSystem/pid-uzb-pcn"
-  * #https://dhp.uz/fhir/core/sid/pid/ncl "Root identifier for person identification of country New Caledonia"
+  * #https://dhp.uz/fhir/core/sid/pid/ncl "Root identifier for personal identification of country New Caledonia"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -4398,7 +4423,7 @@ Description: "Description of the identifier systems acceptable for entity (patie
       * ^property[=].valueCode = #NC
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-NCL"
-  * #https://dhp.uz/fhir/core/sid/pid/nzl "Root identifier for person identification of country New Zealand"
+  * #https://dhp.uz/fhir/core/sid/pid/nzl "Root identifier for personal identification of country New Zealand"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -4412,7 +4437,7 @@ Description: "Description of the identifier systems acceptable for entity (patie
       * ^property[=].valueCode = #NZ
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-NZL"
-  * #https://dhp.uz/fhir/core/sid/pid/blr "Root identifier for person identification of country Belarus"
+  * #https://dhp.uz/fhir/core/sid/pid/blr "Root identifier for personal identification of country Belarus"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -4426,7 +4451,7 @@ Description: "Description of the identifier systems acceptable for entity (patie
       * ^property[=].valueCode = #BY
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-BLR"
-  * #https://dhp.uz/fhir/core/sid/pid/wlf "Root identifier for person identification of country Wallis and Futuna Islands"
+  * #https://dhp.uz/fhir/core/sid/pid/wlf "Root identifier for personal identification of country Wallis and Futuna Islands"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -4440,7 +4465,7 @@ Description: "Description of the identifier systems acceptable for entity (patie
       * ^property[=].valueCode = #WF
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-WLF"
-  * #https://dhp.uz/fhir/core/sid/pid/vut "Root identifier for person identification of country Vanuatu"
+  * #https://dhp.uz/fhir/core/sid/pid/vut "Root identifier for personal identification of country Vanuatu"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -4454,7 +4479,7 @@ Description: "Description of the identifier systems acceptable for entity (patie
       * ^property[=].valueCode = #VU
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-VUT"
-  * #https://dhp.uz/fhir/core/sid/pid/rus "Root identifier for person identification of country Russian Federation"
+  * #https://dhp.uz/fhir/core/sid/pid/rus "Root identifier for personal identification of country Russian Federation"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -4468,7 +4493,7 @@ Description: "Description of the identifier systems acceptable for entity (patie
       * ^property[=].valueCode = #RU
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-RUS"
-  * #https://dhp.uz/fhir/core/sid/pid/ven "Root identifier for person identification of country Venezuela"
+  * #https://dhp.uz/fhir/core/sid/pid/ven "Root identifier for personal identification of country Venezuela"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -4489,7 +4514,7 @@ Description: "Description of the identifier systems acceptable for entity (patie
       * ^property[=].valueBoolean = false
       * ^property[+].code = #country
       * ^property[=].valueCode = #VE
-  * #https://dhp.uz/fhir/core/sid/pid/vnm "Root identifier for person identification of country Viet Nam"
+  * #https://dhp.uz/fhir/core/sid/pid/vnm "Root identifier for personal identification of country Viet Nam"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -4503,7 +4528,7 @@ Description: "Description of the identifier systems acceptable for entity (patie
       * ^property[=].valueCode = #VN
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-VNM"
-  * #https://dhp.uz/fhir/core/sid/pid/vir "Root identifier for person identification of country Virgin Islands (U.S.)"
+  * #https://dhp.uz/fhir/core/sid/pid/vir "Root identifier for personal identification of country Virgin Islands (U.S.)"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -4517,7 +4542,7 @@ Description: "Description of the identifier systems acceptable for entity (patie
       * ^property[=].valueCode = #VI
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-VIR"
-  * #https://dhp.uz/fhir/core/sid/pid/umi "Root identifier for person identification of country United States Minor Outlying Islands"
+  * #https://dhp.uz/fhir/core/sid/pid/umi "Root identifier for personal identification of country United States Minor Outlying Islands"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
