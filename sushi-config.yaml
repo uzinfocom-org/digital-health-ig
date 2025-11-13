@@ -66,6 +66,7 @@ dependencies:
 parameters:
   special-url-base: https://terminology.dhp.uz/fhir/core
   excludettl: true
+  excludexml: true
   # shownav: true
 
   pin-canonicals: pin-all
