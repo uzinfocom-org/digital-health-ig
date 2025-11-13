@@ -287,7 +287,7 @@ Usage: #definition
 * jurisdiction = urn:iso:std:iso:3166#UZ "Uzbekistan"
 * usage = "Used for temporarily identifying patients with organization-specific medical record numbers when permanent identifiers are not available or applicable."
 * uniqueId[0].type = #uri
-* uniqueId[=].value = "https://dhp.uz/fhir/core/sid/pid/uz/prn/*/mrt"
+* uniqueId[=].value = $temp-medical-record-pattern
 * uniqueId[=].preferred = true
 * uniqueId[=].comment = "This is the URI pattern. In practice, replace * with the organization's tax ID: https://dhp.uz/fhir/core/sid/pid/uz/prn/{soliq-id}/mrt"
 

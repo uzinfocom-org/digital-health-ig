@@ -72,6 +72,7 @@ Alias: $passport-local = https://dhp.uz/fhir/core/sid/pid/uz/ppn/local
 Alias: $penitentiaryinstitution = https://dhp.uz/fhir/core/sid/pid/uz/pcn
 Alias: $provider-number = https://dhp.uz/fhir/core/sid/pid/uz/prn
 Alias: $provider-number-example-org = https://dhp.uz/fhir/core/sid/pid/uz/prn/200935935
+Alias: $temp-medical-record-pattern = https://dhp.uz/fhir/core/sid/pid/uz/prn/*/mrt
 Alias: $temp-medical-record-example-org = https://dhp.uz/fhir/core/sid/pid/uz/prn/200935935/mrt
 Alias: $provenance-entity-role = http://hl7.org/fhir/provenance-entity-role
 Alias: $provenance-participant-type = http://terminology.hl7.org/CodeSystem/provenance-participant-type

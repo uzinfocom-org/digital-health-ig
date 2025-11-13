@@ -103,8 +103,9 @@ Description: "Uzbekistan Core Patient profile, used to represent patients admini
 
 * identifier[medicalRecordTemp]
   * ^short = "Temporary medical record number assigned by organization"
-  * ^definition = "Organization-specific temporary medical record identifier. Each organization uses its tax ID (Soliq) to create a unique namespace. System URI pattern: https://dhp.uz/fhir/core/sid/pid/uz/prn/{soliq-id}/mrt where {soliq-id} is the organization's tax identification number."
+  * ^definition = "Organization-specific temporary medical record identifier. Each organization uses its tax ID (Soliq) to create a unique namespace. System URI pattern: $temp-medical-record-pattern where * is replaced with the organization's tax identification number."
   * system 1..1 MS
+  * system from $temp-medical-record-pattern (required)
   * type 1..1 MS
   * type = $identifier-type#MRT "Temporary Medical Record Number"
   * use = #temp
