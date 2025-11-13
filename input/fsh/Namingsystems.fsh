@@ -175,25 +175,6 @@ Usage: #definition
 * uniqueId[=].value = "https://dhp.uz/fhir/core/sid/pid/uz/dl"
 * uniqueId[=].preferred = true
 
-Instance: patient-id-uzb-id-card
-InstanceOf: NamingSystem
-Description: "ID card identifiers for Uzbekistan"
-Usage: #definition
-* url = "https://terminology.dhp.uz/fhir/core/NamingSystem/patient-id-uzb-id-card"
-* name = "UzbekistanIdCardSystem"
-* status = #active
-* kind = #identifier
-* date = "2025-11-06"
-* publisher = "Uzinfocom"
-* responsible = "Personalization Agency under the Ministry of Justice of the Republic of Uzbekistan"
-* type = $identifier-type#CZ "Citizenship Card"
-* description = "Naming system for ID card identifiers in Uzbekistan."
-* jurisdiction = urn:iso:std:iso:3166#UZ "Uzbekistan"
-* usage = "Used for identifying individuals through their ID card numbers within the Uzbekistan identification system."
-* uniqueId[0].type = #uri
-* uniqueId[=].value = "https://dhp.uz/fhir/core/sid/pid/uz/cz"
-* uniqueId[=].preferred = true
-
 Instance: patient-id-uzb-health-card
 InstanceOf: NamingSystem
 Description: "Health card number identifiers assigned by the Uzbekistan Ministry of Health"
