@@ -53,6 +53,7 @@ The code 'PPN' is not a valid code in this code system
 The code 'MR' is not a valid code in this code system
 The code 'NPI' is not a valid code in this code system
 The code 'PRN' is not a valid code in this code system
+The code 'MRT' is not a valid code in this code system
 The code 'AF' is not a valid code in this code system
 The code 'AX' is not a valid code in this code system
 The code 'AL' is not a valid code in this code system
@@ -307,3 +308,9 @@ The property uri 'urn:iso:std:iso:3166' is not known, so the property values can
 # IG Publisher / TX doesn't have contents of ISO 3166 codesystems - can be ignored
 Source Code System urn:iso:std:iso:3166 doesn't have all content (content = not-present), so the source codes cannot be checked
 Target Code System urn:iso:std:iso:3166 doesn't have all content (content = not-present), so the target codes cannot be checked
+
+# This is a generated, sample ID that does not need a unique NamingSystem - can be ignored
+No definition could be found for URL value 'https://dhp.uz/fhir/core/sid/pid/uz/prn/200935935/mrt'
+
+# IG publisher error with the custom system URIs we are using - can be ignored
+Hyperlink 'https://dhp.uz/fhir/core/sid/pid/uz/prn/*/mrt' at 'div/div/table/tr/td/a' for 'https://dhp.uz/fhir/core/sid/pid/uz/prn/*/mrt' does not resolve

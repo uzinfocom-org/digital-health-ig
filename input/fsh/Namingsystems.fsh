@@ -289,7 +289,7 @@ Usage: #definition
 * uniqueId[0].type = #uri
 * uniqueId[=].value = $temp-medical-record-pattern
 * uniqueId[=].preferred = true
-* uniqueId[=].comment = "This is the URI pattern. In practice, replace * with the organization's tax ID: https://dhp.uz/fhir/core/sid/pid/uz/prn/{soliq-id}/mrt"
+* uniqueId[=].comment = "This is the URI pattern placeholder (000000000 represents the organization's tax ID). In practice, replace 000000000 with the actual organization's tax ID: https://dhp.uz/fhir/core/sid/pid/uz/prn/{soliq-id}/mrt"
 
 Instance: location-unit
 InstanceOf: NamingSystem
