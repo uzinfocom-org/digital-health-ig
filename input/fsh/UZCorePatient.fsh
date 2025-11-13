@@ -26,7 +26,8 @@ Description: "Uzbekistan Core Patient profile, used to represent patients admini
     healthCardId 0..1 MS and
     militaryId 0..1 MS and
     // socialSecurity 0..1 MS and
-    penitentiaryInstitution 0..1 MS
+    penitentiaryInstitution 0..1 MS and
+    medicalRecordTemp 0..* MS
 
 * identifier[passportLocal] 
   * system 1..1 MS
@@ -100,6 +101,15 @@ Description: "Uzbekistan Core Patient profile, used to represent patients admini
   * use = #official
   * value 1..1 MS
 
+* identifier[medicalRecordTemp]
+  * ^short = "Temporary medical record number assigned by organization"
+  * ^definition = "Organization-specific temporary medical record identifier. Each organization uses its tax ID (Soliq) to create a unique namespace. System URI pattern: https://dhp.uz/fhir/core/sid/pid/uz/prn/{soliq-id}/mrt where {soliq-id} is the organization's tax identification number."
+  * system 1..1 MS
+  * type 1..1 MS
+  * type = $identifier-type#MRT "Temporary Medical Record Number"
+  * use = #temp
+  * value 1..1 MS
+
 * extension contains patient-nationality named nationality 0..1 MS and
     patient-citizenship named citizenship 0..1 MS
 * extension[nationality].extension[code].valueCodeableConcept from NationalityVS (required)
@@ -136,6 +146,9 @@ Usage: #example
   * value = "ВБ1234567"
 * identifier[penitentiaryInstitution]
   * value = "УИН123456789012"
+* identifier[medicalRecordTemp]
+  * system = $temp-medical-record-example-org
+  * value = "MRN-2024-001234"
 * active = true
 * name
   * use = #usual

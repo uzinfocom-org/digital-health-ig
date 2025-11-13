@@ -75,6 +75,35 @@ Local passports are used for domestic identification within Uzbekistan.
 }
 ```
 
+### Temporary medical record number
+
+Temporary medical record numbers are organization-specific identifiers assigned by healthcare providers. Each organization uses its tax ID (Soliq) to create a unique namespace.
+
+**System URI pattern**: `https://dhp.uz/fhir/core/sid/pid/uz/prn/{soliq-id}/mrt`
+
+**Example** (using organization with tax ID `200935935`):
+
+```json
+{
+  "identifier": [
+    {
+      "system": "https://dhp.uz/fhir/core/sid/pid/uz/prn/200935935/mrt",
+      "type": {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+            "code": "MRT",
+            "display": "Temporary Medical Record Number"
+          }
+        ]
+      },
+      "use": "temp",
+      "value": "MRN-2024-001234"
+    }
+  ]
+}
+```
+
 ### Other patient identifier types
 
 For a complete list of all supported patient identifier systems, see the [PatientIdentifierDomainVS](ValueSet-patient-identifier-domain-vs.html) value set.
@@ -191,6 +220,20 @@ A patient may have multiple identifiers. Here's a complete example showing prope
       },
       "use": "official",
       "value": "01234567890123"
+    },
+    {
+      "system": "https://dhp.uz/fhir/core/sid/pid/uz/prn/200935935/mrt",
+      "type": {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+            "code": "MRT",
+            "display": "Temporary Medical Record Number"
+          }
+        ]
+      },
+      "use": "temp",
+      "value": "MRN-2024-001234"
     }
   ],
   "active": true,

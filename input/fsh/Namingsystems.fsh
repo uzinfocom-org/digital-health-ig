@@ -251,6 +251,46 @@ Usage: #definition
 * uniqueId[=].value = "https://dhp.uz/fhir/core/sid/pid/uz/mrt"
 * uniqueId[=].preferred = true
 
+Instance: patient-id-uzb-provider-assigned
+InstanceOf: NamingSystem
+Description: "Provider-assigned patient identifiers issued by healthcare organizations"
+Usage: #definition
+* url = "https://terminology.dhp.uz/fhir/core/NamingSystem/patient-id-uzb-provider-assigned"
+* name = "UzbekistanProviderAssignedIdentifierSystem"
+* status = #active
+* kind = #identifier
+* date = "2025-11-13"
+* publisher = "Uzinfocom"
+* responsible = "Healthcare providers in Uzbekistan"
+* type = $identifier-type#PRN "Provider number"
+* description = "Naming system for patient identifiers assigned by individual healthcare organizations. The system URI includes the organization's tax ID (Soliq) to scope identifiers to the issuing organization. Format: https://dhp.uz/fhir/core/sid/pid/uz/prn/{soliq-id}"
+* jurisdiction = urn:iso:std:iso:3166#UZ "Uzbekistan"
+* usage = "Used for identifying patients with organization-specific identifiers. Each organization uses their tax ID to create a unique identifier namespace."
+* uniqueId[0].type = #uri
+* uniqueId[=].value = "https://dhp.uz/fhir/core/sid/pid/uz/prn"
+* uniqueId[=].preferred = false
+* uniqueId[=].comment = "This is the base URI pattern. In practice, append the organization's tax ID: https://dhp.uz/fhir/core/sid/pid/uz/prn/{soliq-id}"
+
+Instance: patient-id-uzb-temp-medical-record
+InstanceOf: NamingSystem
+Description: "Temporary medical record numbers assigned by healthcare organizations"
+Usage: #definition
+* url = "https://terminology.dhp.uz/fhir/core/NamingSystem/patient-id-uzb-temp-medical-record"
+* name = "UzbekistanTempMedicalRecordSystem"
+* status = #active
+* kind = #identifier
+* date = "2025-11-13"
+* publisher = "Uzinfocom"
+* responsible = "Healthcare providers in Uzbekistan"
+* type = $identifier-type#MRT "Temporary Medical Record Number"
+* description = "Naming system for temporary medical record numbers assigned by individual healthcare organizations. The system URI includes the organization's tax ID (Soliq) to scope identifiers to the issuing organization. Format: https://dhp.uz/fhir/core/sid/pid/uz/prn/{soliq-id}/mrt"
+* jurisdiction = urn:iso:std:iso:3166#UZ "Uzbekistan"
+* usage = "Used for temporarily identifying patients with organization-specific medical record numbers when permanent identifiers are not available or applicable."
+* uniqueId[0].type = #uri
+* uniqueId[=].value = "https://dhp.uz/fhir/core/sid/pid/uz/prn/*/mrt"
+* uniqueId[=].preferred = true
+* uniqueId[=].comment = "This is the URI pattern. In practice, replace * with the organization's tax ID: https://dhp.uz/fhir/core/sid/pid/uz/prn/{soliq-id}/mrt"
+
 Instance: location-unit
 InstanceOf: NamingSystem
 Usage: #definition
