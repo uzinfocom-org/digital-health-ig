@@ -148,7 +148,7 @@ Usage: #example
   * value = "УИН123456789012"
 * identifier[medicalRecordTemp]
   * system = $temp-medical-record-example-org
-  * value = "MRN-2024-001234"
+  * value = "550e8400-e29b-41d4-a716-446655440000"
 * active = true
 * name
   * use = #usual

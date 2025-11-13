@@ -98,7 +98,7 @@ Temporary medical record numbers are organization-specific identifiers assigned 
         ]
       },
       "use": "temp",
-      "value": "MRN-2024-001234"
+      "value": "550e8400-e29b-41d4-a716-446655440000"
     }
   ]
 }
@@ -233,7 +233,7 @@ A patient may have multiple identifiers. Here's a complete example showing prope
         ]
       },
       "use": "temp",
-      "value": "MRN-2024-001234"
+      "value": "550e8400-e29b-41d4-a716-446655440000"
     }
   ],
   "active": true,
