@@ -77,7 +77,7 @@ Usage: #definition
 * jurisdiction = urn:iso:std:iso:3166#UZ "Uzbekistan"
 * usage = "Used for identifying individuals through their local passport numbers within the Uzbekistan identification system. Local passports are used for domestic identification."
 * uniqueId[0].type = #uri
-* uniqueId[=].value = "https://dhp.uz/fhir/core/sid/pid/uzb/ppn/local"
+* uniqueId[=].value = "https://dhp.uz/fhir/core/sid/pid/uz/ppn/local"
 * uniqueId[=].preferred = true
 
 Instance: patient-id-uzb-passport-international
@@ -96,7 +96,7 @@ Usage: #definition
 * jurisdiction = urn:iso:std:iso:3166#UZ "Uzbekistan"
 * usage = "Used for identifying individuals through their international passport numbers within the Uzbekistan identification system. International passports are used for travel abroad."
 * uniqueId[0].type = #uri
-* uniqueId[=].value = "https://dhp.uz/fhir/core/sid/pid/uzb/ppn/intl"
+* uniqueId[=].value = "https://dhp.uz/fhir/core/sid/pid/uz/ppn/intl"
 * uniqueId[=].preferred = true
 
 Instance: patient-id-uzb-passport-diplomatic
@@ -115,7 +115,7 @@ Usage: #definition
 * jurisdiction = urn:iso:std:iso:3166#UZ "Uzbekistan"
 * usage = "Used for identifying individuals through their diplomatic passport numbers within the Uzbekistan identification system. Diplomatic passports are issued to diplomats and government officials for official international travel."
 * uniqueId[0].type = #uri
-* uniqueId[=].value = "https://dhp.uz/fhir/core/sid/pid/uzb/ppn/dp"
+* uniqueId[=].value = "https://dhp.uz/fhir/core/sid/pid/uz/ppn/dp"
 * uniqueId[=].preferred = true
 
 Instance: patient-id-uzb-national-id
@@ -134,7 +134,7 @@ Usage: #definition
 * jurisdiction = urn:iso:std:iso:3166#UZ "Uzbekistan"
 * usage = "Used for uniquely identifying individuals (citizens and residents) within the Uzbekistan national identification system."
 * uniqueId[0].type = #uri
-* uniqueId[=].value = "https://dhp.uz/fhir/core/sid/pid/uzb/ni"
+* uniqueId[=].value = "https://dhp.uz/fhir/core/sid/pid/uz/ni"
 * uniqueId[=].preferred = true
 
 Instance: patient-id-uzb-birth-certificate
@@ -153,7 +153,7 @@ Usage: #definition
 * jurisdiction = urn:iso:std:iso:3166#UZ "Uzbekistan"
 * usage = "Used for identifying individuals through their birth certificate numbers within the Uzbekistan civil registration system."
 * uniqueId[0].type = #uri
-* uniqueId[=].value = "https://dhp.uz/fhir/core/sid/pid/uzb/bct"
+* uniqueId[=].value = "https://dhp.uz/fhir/core/sid/pid/uz/bct"
 * uniqueId[=].preferred = true
 
 Instance: patient-id-uzb-drivers-license
@@ -172,7 +172,7 @@ Usage: #definition
 * jurisdiction = urn:iso:std:iso:3166#UZ "Uzbekistan"
 * usage = "Used for identifying individuals through their driver's license numbers within the Uzbekistan transportation system."
 * uniqueId[0].type = #uri
-* uniqueId[=].value = "https://dhp.uz/fhir/core/sid/pid/uzb/dl"
+* uniqueId[=].value = "https://dhp.uz/fhir/core/sid/pid/uz/dl"
 * uniqueId[=].preferred = true
 
 Instance: patient-id-uzb-id-card
@@ -191,7 +191,7 @@ Usage: #definition
 * jurisdiction = urn:iso:std:iso:3166#UZ "Uzbekistan"
 * usage = "Used for identifying individuals through their ID card numbers within the Uzbekistan identification system."
 * uniqueId[0].type = #uri
-* uniqueId[=].value = "https://dhp.uz/fhir/core/sid/pid/uzb/cz"
+* uniqueId[=].value = "https://dhp.uz/fhir/core/sid/pid/uz/cz"
 * uniqueId[=].preferred = true
 
 Instance: patient-id-uzb-health-card
@@ -210,7 +210,7 @@ Usage: #definition
 * jurisdiction = urn:iso:std:iso:3166#UZ "Uzbekistan"
 * usage = "Used for identifying individuals through their health card numbers within the Uzbekistan healthcare system."
 * uniqueId[0].type = #uri
-* uniqueId[=].value = "https://dhp.uz/fhir/core/sid/pid/uzb/hc"
+* uniqueId[=].value = "https://dhp.uz/fhir/core/sid/pid/uz/hc"
 * uniqueId[=].preferred = true
 
 Instance: patient-id-uzb-military-id
@@ -229,7 +229,7 @@ Usage: #definition
 * jurisdiction = urn:iso:std:iso:3166#UZ "Uzbekistan"
 * usage = "Used for identifying military personnel through their military ID numbers within the Uzbekistan defense system."
 * uniqueId[0].type = #uri
-* uniqueId[=].value = "https://dhp.uz/fhir/core/sid/pid/uzb/mi"
+* uniqueId[=].value = "https://dhp.uz/fhir/core/sid/pid/uz/mi"
 * uniqueId[=].preferred = true
 
 Instance: patient-id-uzb-penitentiary-number
@@ -248,7 +248,7 @@ Usage: #definition
 * jurisdiction = urn:iso:std:iso:3166#UZ "Uzbekistan"
 * usage = "Used for identifying individuals within the Uzbekistan penitentiary/correctional institution system."
 * uniqueId[0].type = #uri
-* uniqueId[=].value = "https://dhp.uz/fhir/core/sid/pid/uzb/pcn"
+* uniqueId[=].value = "https://dhp.uz/fhir/core/sid/pid/uz/pcn"
 * uniqueId[=].preferred = true
 
 Instance: patient-id-uzb-unknown-patient
@@ -267,7 +267,7 @@ Usage: #definition
 * jurisdiction = urn:iso:std:iso:3166#UZ "Uzbekistan"
 * usage = "Used for temporarily identifying patients whose identity is unknown or cannot be immediately verified at the point of care."
 * uniqueId[0].type = #uri
-* uniqueId[=].value = "https://dhp.uz/fhir/core/sid/pid/uzb/mrt"
+* uniqueId[=].value = "https://dhp.uz/fhir/core/sid/pid/uz/mrt"
 * uniqueId[=].preferred = true
 
 Instance: location-unit
