@@ -161,6 +161,10 @@ menu:
 #     description: An example Patient
 #     exampleBoolean: true
 #   Patient/bad-example: omit
+
+resources:
+  CapabilityStatement/DHPCapabilityStatement:
+    description: DHP platform capability statement, describing the supported resources, profiles, and searchparameters
 #
 #
 # Groups can control certain aspects of the IG generation.  The IG
