@@ -1,0 +1,4149 @@
+{
+  "date": "2025-11-10T11:23:12+05:00",
+  "fhirVersion": "5.0.0",
+  "format": [
+    "json",
+    "application/fhir+json"
+  ],
+  "implementation": {
+    "description": "FHIR R5 Server",
+    "url": "https://playground.dhp.uz/fhir"
+  },
+  "kind": "instance",
+  "resourceType": "CapabilityStatement",
+  "rest": [
+    {
+      "mode": "server",
+      "resource": [
+        {
+          "conditionalCreate": false,
+          "conditionalPatch": false,
+          "conditionalRead": "not-supported",
+          "conditionalUpdate": false,
+          "interaction": [
+            {
+              "code": "read"
+            },
+            {
+              "code": "vread"
+            },
+            {
+              "code": "update"
+            },
+            {
+              "code": "history-instance"
+            },
+            {
+              "code": "create"
+            },
+            {
+              "code": "search-type"
+            }
+          ],
+          "searchParam": [
+            {
+              "name": "derived-from",
+              "type": "reference"
+            },
+            {
+              "name": "period",
+              "type": "date"
+            },
+            {
+              "name": "identifier",
+              "type": "token"
+            },
+            {
+              "name": "context",
+              "type": "token"
+            },
+            {
+              "name": "telecom",
+              "type": "token"
+            },
+            {
+              "name": "context-type",
+              "type": "token"
+            },
+            {
+              "name": "jurisdiction",
+              "type": "token"
+            },
+            {
+              "name": "description",
+              "type": "string"
+            },
+            {
+              "name": "topic",
+              "type": "token"
+            },
+            {
+              "name": "contact",
+              "type": "string"
+            },
+            {
+              "name": "date",
+              "type": "date"
+            },
+            {
+              "name": "kind",
+              "type": "token"
+            },
+            {
+              "name": "url",
+              "type": "uri"
+            },
+            {
+              "name": "effective",
+              "type": "date"
+            },
+            {
+              "name": "predecessor",
+              "type": "reference"
+            },
+            {
+              "name": "version",
+              "type": "token"
+            },
+            {
+              "name": "type",
+              "type": "token"
+            },
+            {
+              "name": "name",
+              "type": "string"
+            },
+            {
+              "name": "status",
+              "type": "token"
+            },
+            {
+              "name": "id-type",
+              "type": "token"
+            },
+            {
+              "name": "publisher",
+              "type": "string"
+            },
+            {
+              "name": "responsible",
+              "type": "string"
+            },
+            {
+              "name": "value",
+              "type": "string"
+            }
+          ],
+          "type": "NamingSystem"
+        },
+        {
+          "conditionalCreate": false,
+          "conditionalPatch": false,
+          "conditionalRead": "not-supported",
+          "conditionalUpdate": false,
+          "interaction": [
+            {
+              "code": "read"
+            },
+            {
+              "code": "vread"
+            },
+            {
+              "code": "update"
+            },
+            {
+              "code": "history-instance"
+            },
+            {
+              "code": "create"
+            },
+            {
+              "code": "search-type"
+            }
+          ],
+          "operation": [
+            {
+              "definition": "http://hl7.org/fhir/OperationDefinition/CodeSystem-subsumes",
+              "name": "subsumes"
+            },
+            {
+              "definition": "http://hl7.org/fhir/OperationDefinition/CodeSystem-lookup",
+              "name": "lookup"
+            },
+            {
+              "definition": "http://hl7.org/fhir/OperationDefinition/CodeSystem-validate-code",
+              "name": "validate-code"
+            }
+          ],
+          "searchParam": [
+            {
+              "name": "date",
+              "type": "date"
+            },
+            {
+              "name": "jurisdiction",
+              "type": "token"
+            },
+            {
+              "name": "derived-from",
+              "type": "reference"
+            },
+            {
+              "name": "version",
+              "type": "token"
+            },
+            {
+              "name": "identifier",
+              "type": "token"
+            },
+            {
+              "name": "status",
+              "type": "token"
+            },
+            {
+              "name": "supplements",
+              "type": "reference"
+            },
+            {
+              "name": "context-type",
+              "type": "token"
+            },
+            {
+              "name": "description",
+              "type": "string"
+            },
+            {
+              "name": "language",
+              "type": "token"
+            },
+            {
+              "name": "topic",
+              "type": "token"
+            },
+            {
+              "name": "url",
+              "type": "uri"
+            },
+            {
+              "name": "context",
+              "type": "token"
+            },
+            {
+              "name": "system",
+              "type": "uri"
+            },
+            {
+              "name": "code",
+              "type": "token"
+            },
+            {
+              "name": "name",
+              "type": "string"
+            },
+            {
+              "name": "effective",
+              "type": "date"
+            },
+            {
+              "name": "publisher",
+              "type": "string"
+            },
+            {
+              "name": "predecessor",
+              "type": "reference"
+            },
+            {
+              "name": "content-mode",
+              "type": "token"
+            },
+            {
+              "name": "title",
+              "type": "string"
+            }
+          ],
+          "type": "CodeSystem"
+        },
+        {
+          "conditionalCreate": false,
+          "conditionalPatch": false,
+          "conditionalRead": "not-supported",
+          "conditionalUpdate": false,
+          "interaction": [
+            {
+              "code": "read"
+            },
+            {
+              "code": "vread"
+            },
+            {
+              "code": "update"
+            },
+            {
+              "code": "history-instance"
+            },
+            {
+              "code": "create"
+            },
+            {
+              "code": "search-type"
+            }
+          ],
+          "operation": [
+            {
+              "definition": "http://hl7.org/fhir/OperationDefinition/ValueSet-validate-code",
+              "name": "validate-code"
+            },
+            {
+              "definition": "http://hl7.org/fhir/OperationDefinition/ValueSet-expand",
+              "name": "expand"
+            }
+          ],
+          "searchParam": [
+            {
+              "name": "description",
+              "type": "string"
+            },
+            {
+              "name": "derived-from",
+              "type": "reference"
+            },
+            {
+              "name": "publisher",
+              "type": "string"
+            },
+            {
+              "name": "predecessor",
+              "type": "reference"
+            },
+            {
+              "name": "url",
+              "type": "uri"
+            },
+            {
+              "name": "context-type",
+              "type": "token"
+            },
+            {
+              "name": "context",
+              "type": "token"
+            },
+            {
+              "name": "date",
+              "type": "date"
+            },
+            {
+              "name": "status",
+              "type": "token"
+            },
+            {
+              "name": "jurisdiction",
+              "type": "token"
+            },
+            {
+              "name": "effective",
+              "type": "date"
+            },
+            {
+              "name": "expansion",
+              "type": "uri"
+            },
+            {
+              "name": "version",
+              "type": "token"
+            },
+            {
+              "name": "identifier",
+              "type": "token"
+            },
+            {
+              "name": "name",
+              "type": "string"
+            },
+            {
+              "name": "title",
+              "type": "string"
+            },
+            {
+              "name": "reference",
+              "type": "uri"
+            },
+            {
+              "name": "topic",
+              "type": "token"
+            },
+            {
+              "name": "code",
+              "type": "token"
+            }
+          ],
+          "type": "ValueSet"
+        },
+        {
+          "conditionalCreate": false,
+          "conditionalPatch": false,
+          "conditionalRead": "not-supported",
+          "conditionalUpdate": false,
+          "interaction": [
+            {
+              "code": "read"
+            },
+            {
+              "code": "vread"
+            },
+            {
+              "code": "update"
+            },
+            {
+              "code": "history-instance"
+            },
+            {
+              "code": "create"
+            },
+            {
+              "code": "search-type"
+            }
+          ],
+          "operation": [
+            {
+              "definition": "http://hl7.org/fhir/OperationDefinition/ConceptMap-translate",
+              "name": "translate"
+            }
+          ],
+          "searchParam": [
+            {
+              "name": "source-group-system",
+              "type": "reference"
+            },
+            {
+              "name": "target-group-system",
+              "type": "reference"
+            },
+            {
+              "name": "version",
+              "type": "token"
+            },
+            {
+              "name": "description",
+              "type": "string"
+            },
+            {
+              "name": "target-scope-uri",
+              "type": "uri"
+            },
+            {
+              "name": "topic",
+              "type": "token"
+            },
+            {
+              "name": "jurisdiction",
+              "type": "token"
+            },
+            {
+              "name": "source-code",
+              "type": "token"
+            },
+            {
+              "name": "source-scope-uri",
+              "type": "uri"
+            },
+            {
+              "name": "target-scope",
+              "type": "reference"
+            },
+            {
+              "name": "name",
+              "type": "string"
+            },
+            {
+              "name": "other-map",
+              "type": "reference"
+            },
+            {
+              "name": "context",
+              "type": "token"
+            },
+            {
+              "name": "status",
+              "type": "token"
+            },
+            {
+              "name": "predecessor",
+              "type": "reference"
+            },
+            {
+              "name": "derived-from",
+              "type": "reference"
+            },
+            {
+              "name": "identifier",
+              "type": "token"
+            },
+            {
+              "name": "date",
+              "type": "date"
+            },
+            {
+              "name": "mapping-property",
+              "type": "uri"
+            },
+            {
+              "name": "publisher",
+              "type": "string"
+            },
+            {
+              "name": "context-type",
+              "type": "token"
+            },
+            {
+              "name": "effective",
+              "type": "date"
+            },
+            {
+              "name": "target-code",
+              "type": "token"
+            },
+            {
+              "name": "title",
+              "type": "string"
+            },
+            {
+              "name": "source-scope",
+              "type": "reference"
+            },
+            {
+              "name": "url",
+              "type": "uri"
+            }
+          ],
+          "type": "ConceptMap"
+        },
+        {
+          "conditionalCreate": false,
+          "conditionalPatch": false,
+          "conditionalRead": "not-supported",
+          "conditionalUpdate": false,
+          "interaction": [
+            {
+              "code": "read"
+            },
+            {
+              "code": "vread"
+            },
+            {
+              "code": "update"
+            },
+            {
+              "code": "history-instance"
+            },
+            {
+              "code": "create"
+            },
+            {
+              "code": "search-type"
+            }
+          ],
+          "searchParam": [
+            {
+              "name": "status",
+              "type": "token"
+            },
+            {
+              "name": "keyword",
+              "type": "token"
+            },
+            {
+              "name": "abstract",
+              "type": "token"
+            },
+            {
+              "name": "context-type",
+              "type": "token"
+            },
+            {
+              "name": "experimental",
+              "type": "token"
+            },
+            {
+              "name": "ext-context-type",
+              "type": "token"
+            },
+            {
+              "name": "url",
+              "type": "uri"
+            },
+            {
+              "name": "ext-context-expression",
+              "type": "token"
+            },
+            {
+              "name": "base-path",
+              "type": "token"
+            },
+            {
+              "name": "date",
+              "type": "date"
+            },
+            {
+              "name": "description",
+              "type": "string"
+            },
+            {
+              "name": "base",
+              "type": "reference"
+            },
+            {
+              "name": "name",
+              "type": "string"
+            },
+            {
+              "name": "publisher",
+              "type": "string"
+            },
+            {
+              "name": "title",
+              "type": "string"
+            },
+            {
+              "name": "identifier",
+              "type": "token"
+            },
+            {
+              "name": "jurisdiction",
+              "type": "token"
+            },
+            {
+              "name": "version",
+              "type": "token"
+            },
+            {
+              "name": "context",
+              "type": "token"
+            },
+            {
+              "name": "valueset",
+              "type": "reference"
+            },
+            {
+              "name": "path",
+              "type": "token"
+            },
+            {
+              "name": "kind",
+              "type": "token"
+            },
+            {
+              "name": "type",
+              "type": "uri"
+            },
+            {
+              "name": "derivation",
+              "type": "token"
+            }
+          ],
+          "type": "StructureDefinition"
+        },
+        {
+          "conditionalCreate": false,
+          "conditionalPatch": false,
+          "conditionalRead": "not-supported",
+          "conditionalUpdate": false,
+          "interaction": [
+            {
+              "code": "read"
+            },
+            {
+              "code": "vread"
+            },
+            {
+              "code": "update"
+            },
+            {
+              "code": "history-instance"
+            },
+            {
+              "code": "create"
+            },
+            {
+              "code": "search-type"
+            }
+          ],
+          "searchParam": [
+            {
+              "name": "input-profile",
+              "type": "reference"
+            },
+            {
+              "name": "context",
+              "type": "token"
+            },
+            {
+              "name": "kind",
+              "type": "token"
+            },
+            {
+              "name": "type",
+              "type": "token"
+            },
+            {
+              "name": "url",
+              "type": "uri"
+            },
+            {
+              "name": "date",
+              "type": "date"
+            },
+            {
+              "name": "description",
+              "type": "string"
+            },
+            {
+              "name": "jurisdiction",
+              "type": "token"
+            },
+            {
+              "name": "version",
+              "type": "token"
+            },
+            {
+              "name": "output-profile",
+              "type": "reference"
+            },
+            {
+              "name": "system",
+              "type": "token"
+            },
+            {
+              "name": "identifier",
+              "type": "token"
+            },
+            {
+              "name": "instance",
+              "type": "token"
+            },
+            {
+              "name": "code",
+              "type": "token"
+            },
+            {
+              "name": "publisher",
+              "type": "string"
+            },
+            {
+              "name": "context-type",
+              "type": "token"
+            },
+            {
+              "name": "status",
+              "type": "token"
+            },
+            {
+              "name": "title",
+              "type": "string"
+            },
+            {
+              "name": "name",
+              "type": "string"
+            },
+            {
+              "name": "base",
+              "type": "reference"
+            }
+          ],
+          "type": "OperationDefinition"
+        },
+        {
+          "conditionalCreate": false,
+          "conditionalPatch": false,
+          "conditionalRead": "not-supported",
+          "conditionalUpdate": false,
+          "interaction": [
+            {
+              "code": "read"
+            },
+            {
+              "code": "vread"
+            },
+            {
+              "code": "update"
+            },
+            {
+              "code": "history-instance"
+            },
+            {
+              "code": "create"
+            },
+            {
+              "code": "search-type"
+            }
+          ],
+          "searchParam": [
+            {
+              "name": "name",
+              "type": "string"
+            },
+            {
+              "name": "status",
+              "type": "token"
+            },
+            {
+              "name": "url",
+              "type": "uri"
+            },
+            {
+              "name": "base",
+              "type": "token"
+            },
+            {
+              "name": "version",
+              "type": "token"
+            },
+            {
+              "name": "component",
+              "type": "reference"
+            },
+            {
+              "name": "context-type",
+              "type": "token"
+            },
+            {
+              "name": "context",
+              "type": "token"
+            },
+            {
+              "name": "derived-from",
+              "type": "reference"
+            },
+            {
+              "name": "date",
+              "type": "date"
+            },
+            {
+              "name": "identifier",
+              "type": "token"
+            },
+            {
+              "name": "code",
+              "type": "token"
+            },
+            {
+              "name": "description",
+              "type": "string"
+            },
+            {
+              "name": "publisher",
+              "type": "string"
+            },
+            {
+              "name": "target",
+              "type": "token"
+            },
+            {
+              "name": "jurisdiction",
+              "type": "token"
+            },
+            {
+              "name": "type",
+              "type": "token"
+            }
+          ],
+          "type": "SearchParameter"
+        },
+        {
+          "conditionalCreate": false,
+          "conditionalPatch": false,
+          "conditionalRead": "not-supported",
+          "conditionalUpdate": false,
+          "interaction": [
+            {
+              "code": "read"
+            },
+            {
+              "code": "vread"
+            },
+            {
+              "code": "update"
+            },
+            {
+              "code": "history-instance"
+            },
+            {
+              "code": "create"
+            },
+            {
+              "code": "search-type"
+            }
+          ],
+          "searchParam": [
+            {
+              "name": "context-type",
+              "type": "token"
+            },
+            {
+              "name": "status",
+              "type": "token"
+            },
+            {
+              "name": "topic",
+              "type": "token"
+            },
+            {
+              "name": "name",
+              "type": "string"
+            },
+            {
+              "name": "period",
+              "type": "date"
+            },
+            {
+              "name": "url",
+              "type": "uri"
+            },
+            {
+              "name": "type",
+              "type": "token"
+            },
+            {
+              "name": "version",
+              "type": "token"
+            },
+            {
+              "name": "telecom",
+              "type": "token"
+            },
+            {
+              "name": "contact",
+              "type": "string"
+            },
+            {
+              "name": "effective",
+              "type": "date"
+            },
+            {
+              "name": "value",
+              "type": "string"
+            },
+            {
+              "name": "description",
+              "type": "string"
+            },
+            {
+              "name": "identifier",
+              "type": "token"
+            },
+            {
+              "name": "jurisdiction",
+              "type": "token"
+            },
+            {
+              "name": "publisher",
+              "type": "string"
+            },
+            {
+              "name": "derived-from",
+              "type": "reference"
+            },
+            {
+              "name": "kind",
+              "type": "token"
+            },
+            {
+              "name": "id-type",
+              "type": "token"
+            },
+            {
+              "name": "predecessor",
+              "type": "reference"
+            },
+            {
+              "name": "context",
+              "type": "token"
+            },
+            {
+              "name": "date",
+              "type": "date"
+            },
+            {
+              "name": "responsible",
+              "type": "string"
+            }
+          ],
+          "supportedProfile": [
+            "https://dhp.uz/fhir/core/StructureDefinition/uz-core-consent"
+          ],
+          "type": "Consent"
+        },
+        {
+          "conditionalCreate": false,
+          "conditionalPatch": false,
+          "conditionalRead": "not-supported",
+          "interaction": [
+            {
+              "code": "read"
+            },
+            {
+              "code": "create"
+            },
+            {
+              "code": "search-type"
+            }
+          ],
+          "searchParam": [
+            {
+              "name": "kind",
+              "type": "token"
+            },
+            {
+              "name": "period",
+              "type": "date"
+            },
+            {
+              "name": "url",
+              "type": "uri"
+            },
+            {
+              "name": "jurisdiction",
+              "type": "token"
+            },
+            {
+              "name": "status",
+              "type": "token"
+            },
+            {
+              "name": "date",
+              "type": "date"
+            },
+            {
+              "name": "name",
+              "type": "string"
+            },
+            {
+              "name": "topic",
+              "type": "token"
+            },
+            {
+              "name": "derived-from",
+              "type": "reference"
+            },
+            {
+              "name": "responsible",
+              "type": "string"
+            },
+            {
+              "name": "context",
+              "type": "token"
+            },
+            {
+              "name": "telecom",
+              "type": "token"
+            },
+            {
+              "name": "version",
+              "type": "token"
+            },
+            {
+              "name": "context-type",
+              "type": "token"
+            },
+            {
+              "name": "type",
+              "type": "token"
+            },
+            {
+              "name": "id-type",
+              "type": "token"
+            },
+            {
+              "name": "predecessor",
+              "type": "reference"
+            },
+            {
+              "name": "publisher",
+              "type": "string"
+            },
+            {
+              "name": "value",
+              "type": "string"
+            },
+            {
+              "name": "description",
+              "type": "string"
+            },
+            {
+              "name": "identifier",
+              "type": "token"
+            },
+            {
+              "name": "effective",
+              "type": "date"
+            },
+            {
+              "name": "contact",
+              "type": "string"
+            }
+          ],
+          "supportedProfile": [
+            "https://dhp.uz/fhir/core/StructureDefinition/uz-core-auditevent"
+          ],
+          "type": "AuditEvent"
+        },
+        {
+          "conditionalPatch": false,
+          "conditionalRead": "not-supported",
+          "interaction": [
+            {
+              "code": "read"
+            },
+            {
+              "code": "search-type"
+            }
+          ],
+          "searchParam": [
+            {
+              "name": "context-type",
+              "type": "token"
+            },
+            {
+              "name": "period",
+              "type": "date"
+            },
+            {
+              "name": "telecom",
+              "type": "token"
+            },
+            {
+              "name": "derived-from",
+              "type": "reference"
+            },
+            {
+              "name": "id-type",
+              "type": "token"
+            },
+            {
+              "name": "type",
+              "type": "token"
+            },
+            {
+              "name": "version",
+              "type": "token"
+            },
+            {
+              "name": "identifier",
+              "type": "token"
+            },
+            {
+              "name": "status",
+              "type": "token"
+            },
+            {
+              "name": "value",
+              "type": "string"
+            },
+            {
+              "name": "predecessor",
+              "type": "reference"
+            },
+            {
+              "name": "contact",
+              "type": "string"
+            },
+            {
+              "name": "responsible",
+              "type": "string"
+            },
+            {
+              "name": "name",
+              "type": "string"
+            },
+            {
+              "name": "publisher",
+              "type": "string"
+            },
+            {
+              "name": "effective",
+              "type": "date"
+            },
+            {
+              "name": "jurisdiction",
+              "type": "token"
+            },
+            {
+              "name": "date",
+              "type": "date"
+            },
+            {
+              "name": "kind",
+              "type": "token"
+            },
+            {
+              "name": "topic",
+              "type": "token"
+            },
+            {
+              "name": "url",
+              "type": "uri"
+            },
+            {
+              "name": "description",
+              "type": "string"
+            },
+            {
+              "name": "context",
+              "type": "token"
+            }
+          ],
+          "supportedProfile": [
+            "https://dhp.uz/fhir/core/StructureDefinition/uz-core-provenance"
+          ],
+          "type": "Provenance"
+        },
+        {
+          "conditionalCreate": false,
+          "conditionalDelete": "not-supported",
+          "conditionalPatch": false,
+          "conditionalRead": "not-supported",
+          "conditionalUpdate": false,
+          "interaction": [
+            {
+              "code": "read"
+            },
+            {
+              "code": "vread"
+            },
+            {
+              "code": "update"
+            },
+            {
+              "code": "delete"
+            },
+            {
+              "code": "history-instance"
+            },
+            {
+              "code": "create"
+            },
+            {
+              "code": "search-type"
+            }
+          ],
+          "searchParam": [
+            {
+              "name": "gender",
+              "type": "token"
+            },
+            {
+              "name": "practitioner",
+              "type": "reference"
+            },
+            {
+              "name": "telecom",
+              "type": "token"
+            },
+            {
+              "name": "email",
+              "type": "token"
+            },
+            {
+              "name": "phonetic",
+              "type": "string"
+            },
+            {
+              "name": "address-city",
+              "type": "string"
+            },
+            {
+              "name": "address",
+              "type": "string"
+            },
+            {
+              "name": "address-use",
+              "type": "token"
+            },
+            {
+              "name": "deceased",
+              "type": "token"
+            },
+            {
+              "name": "address-state",
+              "type": "string"
+            },
+            {
+              "name": "phone",
+              "type": "token"
+            },
+            {
+              "name": "name",
+              "type": "string"
+            },
+            {
+              "name": "family",
+              "type": "string"
+            },
+            {
+              "name": "identifier",
+              "type": "token"
+            },
+            {
+              "name": "address-country",
+              "type": "string"
+            },
+            {
+              "name": "address-postalcode",
+              "type": "string"
+            },
+            {
+              "name": "birthdate",
+              "type": "date"
+            },
+            {
+              "name": "death-date",
+              "type": "date"
+            },
+            {
+              "name": "link",
+              "type": "reference"
+            },
+            {
+              "name": "patient",
+              "type": "reference"
+            },
+            {
+              "name": "organization",
+              "type": "reference"
+            },
+            {
+              "name": "given",
+              "type": "string"
+            },
+            {
+              "name": "relatedperson",
+              "type": "reference"
+            }
+          ],
+          "type": "Person"
+        },
+        {
+          "conditionalCreate": false,
+          "conditionalDelete": "not-supported",
+          "conditionalPatch": false,
+          "conditionalRead": "not-supported",
+          "conditionalUpdate": false,
+          "interaction": [
+            {
+              "code": "read"
+            },
+            {
+              "code": "vread"
+            },
+            {
+              "code": "update"
+            },
+            {
+              "code": "delete"
+            },
+            {
+              "code": "history-instance"
+            },
+            {
+              "code": "create"
+            },
+            {
+              "code": "search-type"
+            }
+          ],
+          "searchParam": [
+            {
+              "name": "phonetic",
+              "type": "string"
+            },
+            {
+              "name": "address-postalcode",
+              "type": "string"
+            },
+            {
+              "name": "endpoint",
+              "type": "reference"
+            },
+            {
+              "name": "name",
+              "type": "string"
+            },
+            {
+              "name": "address-use",
+              "type": "token"
+            },
+            {
+              "name": "type",
+              "type": "token"
+            },
+            {
+              "name": "address-country",
+              "type": "string"
+            },
+            {
+              "name": "address-state",
+              "type": "string"
+            },
+            {
+              "name": "partof",
+              "type": "reference"
+            },
+            {
+              "name": "active",
+              "type": "token"
+            },
+            {
+              "name": "address",
+              "type": "string"
+            },
+            {
+              "name": "address-city",
+              "type": "string"
+            },
+            {
+              "name": "identifier",
+              "type": "token"
+            }
+          ],
+          "supportedProfile": [
+            "https://dhp.uz/fhir/core/StructureDefinition/uz-core-organization"
+          ],
+          "type": "Organization"
+        },
+        {
+          "conditionalCreate": false,
+          "conditionalDelete": "not-supported",
+          "conditionalPatch": false,
+          "conditionalRead": "not-supported",
+          "conditionalUpdate": false,
+          "interaction": [
+            {
+              "code": "read"
+            },
+            {
+              "code": "vread"
+            },
+            {
+              "code": "update"
+            },
+            {
+              "code": "delete"
+            },
+            {
+              "code": "history-instance"
+            },
+            {
+              "code": "create"
+            },
+            {
+              "code": "search-type"
+            }
+          ],
+          "searchParam": [
+            {
+              "name": "address-state",
+              "type": "string"
+            },
+            {
+              "name": "phone",
+              "type": "token"
+            },
+            {
+              "name": "family",
+              "type": "string"
+            },
+            {
+              "name": "gender",
+              "type": "token"
+            },
+            {
+              "name": "active",
+              "type": "token"
+            },
+            {
+              "name": "address-city",
+              "type": "string"
+            },
+            {
+              "name": "address",
+              "type": "string"
+            },
+            {
+              "name": "deceased",
+              "type": "token"
+            },
+            {
+              "name": "address-country",
+              "type": "string"
+            },
+            {
+              "name": "email",
+              "type": "token"
+            },
+            {
+              "name": "identifier",
+              "type": "token"
+            },
+            {
+              "name": "death-date",
+              "type": "date"
+            },
+            {
+              "name": "phonetic",
+              "type": "string"
+            },
+            {
+              "name": "qualification-period",
+              "type": "date"
+            },
+            {
+              "name": "name",
+              "type": "string"
+            },
+            {
+              "name": "address-use",
+              "type": "token"
+            },
+            {
+              "name": "given",
+              "type": "string"
+            },
+            {
+              "name": "address-postalcode",
+              "type": "string"
+            },
+            {
+              "name": "qualification-code",
+              "type": "token"
+            },
+            {
+              "name": "communication",
+              "type": "token"
+            },
+            {
+              "name": "telecom",
+              "type": "token"
+            }
+          ],
+          "supportedProfile": [
+            "https://dhp.uz/fhir/core/StructureDefinition/uz-core-practitioner"
+          ],
+          "type": "Practitioner"
+        },
+        {
+          "conditionalCreate": false,
+          "conditionalDelete": "not-supported",
+          "conditionalPatch": false,
+          "conditionalRead": "not-supported",
+          "conditionalUpdate": false,
+          "interaction": [
+            {
+              "code": "read"
+            },
+            {
+              "code": "vread"
+            },
+            {
+              "code": "update"
+            },
+            {
+              "code": "delete"
+            },
+            {
+              "code": "history-instance"
+            },
+            {
+              "code": "create"
+            },
+            {
+              "code": "search-type"
+            }
+          ],
+          "searchParam": [
+            {
+              "name": "email",
+              "type": "token"
+            },
+            {
+              "name": "endpoint",
+              "type": "reference"
+            },
+            {
+              "name": "identifier",
+              "type": "token"
+            },
+            {
+              "name": "date",
+              "type": "date"
+            },
+            {
+              "name": "role",
+              "type": "token"
+            },
+            {
+              "name": "service",
+              "type": "reference"
+            },
+            {
+              "name": "communication",
+              "type": "token"
+            },
+            {
+              "name": "practitioner",
+              "type": "reference"
+            },
+            {
+              "name": "characteristic",
+              "type": "token"
+            },
+            {
+              "name": "specialty",
+              "type": "token"
+            },
+            {
+              "name": "network",
+              "type": "reference"
+            },
+            {
+              "name": "telecom",
+              "type": "token"
+            },
+            {
+              "name": "active",
+              "type": "token"
+            },
+            {
+              "name": "organization",
+              "type": "reference"
+            },
+            {
+              "name": "location",
+              "type": "reference"
+            },
+            {
+              "name": "phone",
+              "type": "token"
+            }
+          ],
+          "supportedProfile": [
+            "https://dhp.uz/fhir/core/StructureDefinition/uz-core-practitioner-role"
+          ],
+          "type": "PractitionerRole"
+        },
+        {
+          "conditionalCreate": false,
+          "conditionalDelete": "not-supported",
+          "conditionalPatch": false,
+          "conditionalRead": "not-supported",
+          "conditionalUpdate": false,
+          "interaction": [
+            {
+              "code": "read"
+            },
+            {
+              "code": "vread"
+            },
+            {
+              "code": "update"
+            },
+            {
+              "code": "delete"
+            },
+            {
+              "code": "history-instance"
+            },
+            {
+              "code": "create"
+            },
+            {
+              "code": "search-type"
+            }
+          ],
+          "searchParam": [
+            {
+              "name": "characteristic",
+              "type": "token"
+            },
+            {
+              "name": "program",
+              "type": "token"
+            },
+            {
+              "name": "offered-in",
+              "type": "reference"
+            },
+            {
+              "name": "coverage-area",
+              "type": "reference"
+            },
+            {
+              "name": "service-category",
+              "type": "token"
+            },
+            {
+              "name": "eligibility",
+              "type": "token"
+            },
+            {
+              "name": "identifier",
+              "type": "token"
+            },
+            {
+              "name": "service-type",
+              "type": "token"
+            },
+            {
+              "name": "specialty",
+              "type": "token"
+            },
+            {
+              "name": "location",
+              "type": "reference"
+            },
+            {
+              "name": "communication",
+              "type": "token"
+            },
+            {
+              "name": "organization",
+              "type": "reference"
+            },
+            {
+              "name": "active",
+              "type": "token"
+            },
+            {
+              "name": "endpoint",
+              "type": "reference"
+            },
+            {
+              "name": "name",
+              "type": "string"
+            }
+          ],
+          "supportedProfile": [
+            "https://dhp.uz/fhir/core/StructureDefinition/uz-core-healthcareservice"
+          ],
+          "type": "HealthcareService"
+        },
+        {
+          "conditionalCreate": false,
+          "conditionalDelete": "not-supported",
+          "conditionalPatch": false,
+          "conditionalRead": "not-supported",
+          "conditionalUpdate": false,
+          "interaction": [
+            {
+              "code": "read"
+            },
+            {
+              "code": "vread"
+            },
+            {
+              "code": "update"
+            },
+            {
+              "code": "delete"
+            },
+            {
+              "code": "history-instance"
+            },
+            {
+              "code": "create"
+            },
+            {
+              "code": "search-type"
+            }
+          ],
+          "searchParam": [
+            {
+              "name": "characteristic",
+              "type": "token"
+            },
+            {
+              "name": "mode",
+              "type": "token"
+            },
+            {
+              "name": "partof",
+              "type": "reference"
+            },
+            {
+              "name": "address-state",
+              "type": "string"
+            },
+            {
+              "name": "organization",
+              "type": "reference"
+            },
+            {
+              "name": "identifier",
+              "type": "token"
+            },
+            {
+              "name": "endpoint",
+              "type": "reference"
+            },
+            {
+              "name": "status",
+              "type": "token"
+            },
+            {
+              "name": "address-country",
+              "type": "string"
+            },
+            {
+              "name": "address-use",
+              "type": "token"
+            },
+            {
+              "name": "operational-status",
+              "type": "token"
+            },
+            {
+              "name": "address-city",
+              "type": "string"
+            },
+            {
+              "name": "type",
+              "type": "token"
+            },
+            {
+              "name": "address-postalcode",
+              "type": "string"
+            },
+            {
+              "name": "name",
+              "type": "string"
+            },
+            {
+              "name": "address",
+              "type": "string"
+            }
+          ],
+          "supportedProfile": [
+            "https://dhp.uz/fhir/core/StructureDefinition/uz-core-location"
+          ],
+          "type": "Location"
+        },
+        {
+          "conditionalCreate": false,
+          "conditionalDelete": "not-supported",
+          "conditionalPatch": false,
+          "conditionalRead": "not-supported",
+          "conditionalUpdate": false,
+          "interaction": [
+            {
+              "code": "read"
+            },
+            {
+              "code": "vread"
+            },
+            {
+              "code": "update"
+            },
+            {
+              "code": "delete"
+            },
+            {
+              "code": "history-instance"
+            },
+            {
+              "code": "create"
+            },
+            {
+              "code": "search-type"
+            }
+          ],
+          "searchParam": [
+            {
+              "name": "address-use",
+              "type": "token"
+            },
+            {
+              "name": "gender",
+              "type": "token"
+            },
+            {
+              "name": "organization",
+              "type": "reference"
+            },
+            {
+              "name": "address-country",
+              "type": "string"
+            },
+            {
+              "name": "death-date",
+              "type": "date"
+            },
+            {
+              "name": "family",
+              "type": "string"
+            },
+            {
+              "name": "address-postalcode",
+              "type": "string"
+            },
+            {
+              "name": "deceased",
+              "type": "token"
+            },
+            {
+              "name": "birthdate",
+              "type": "date"
+            },
+            {
+              "name": "link",
+              "type": "reference"
+            },
+            {
+              "name": "given",
+              "type": "string"
+            },
+            {
+              "name": "language",
+              "type": "token"
+            },
+            {
+              "name": "name",
+              "type": "string"
+            },
+            {
+              "name": "telecom",
+              "type": "token"
+            },
+            {
+              "name": "address",
+              "type": "string"
+            },
+            {
+              "name": "address-city",
+              "type": "string"
+            },
+            {
+              "name": "phone",
+              "type": "token"
+            },
+            {
+              "name": "phonetic",
+              "type": "string"
+            },
+            {
+              "name": "general-practitioner",
+              "type": "reference"
+            },
+            {
+              "name": "active",
+              "type": "token"
+            },
+            {
+              "name": "address-state",
+              "type": "string"
+            },
+            {
+              "name": "email",
+              "type": "token"
+            },
+            {
+              "name": "identifier",
+              "type": "token"
+            }
+          ],
+          "supportedProfile": [
+            "https://dhp.uz/fhir/core/StructureDefinition/uz-core-patient"
+          ],
+          "type": "Patient"
+        },
+        {
+          "conditionalCreate": false,
+          "conditionalDelete": "not-supported",
+          "conditionalPatch": false,
+          "conditionalRead": "not-supported",
+          "conditionalUpdate": false,
+          "interaction": [
+            {
+              "code": "read"
+            },
+            {
+              "code": "vread"
+            },
+            {
+              "code": "update"
+            },
+            {
+              "code": "delete"
+            },
+            {
+              "code": "history-instance"
+            },
+            {
+              "code": "create"
+            },
+            {
+              "code": "search-type"
+            }
+          ],
+          "searchParam": [
+            {
+              "name": "address-postalcode",
+              "type": "string"
+            },
+            {
+              "name": "phonetic",
+              "type": "string"
+            },
+            {
+              "name": "birthdate",
+              "type": "date"
+            },
+            {
+              "name": "given",
+              "type": "string"
+            },
+            {
+              "name": "gender",
+              "type": "token"
+            },
+            {
+              "name": "identifier",
+              "type": "token"
+            },
+            {
+              "name": "relationship",
+              "type": "token"
+            },
+            {
+              "name": "address",
+              "type": "string"
+            },
+            {
+              "name": "address-state",
+              "type": "string"
+            },
+            {
+              "name": "family",
+              "type": "string"
+            },
+            {
+              "name": "email",
+              "type": "token"
+            },
+            {
+              "name": "patient",
+              "type": "reference"
+            },
+            {
+              "name": "telecom",
+              "type": "token"
+            },
+            {
+              "name": "phone",
+              "type": "token"
+            },
+            {
+              "name": "active",
+              "type": "token"
+            },
+            {
+              "name": "name",
+              "type": "string"
+            },
+            {
+              "name": "address-city",
+              "type": "string"
+            },
+            {
+              "name": "address-use",
+              "type": "token"
+            },
+            {
+              "name": "role",
+              "type": "token"
+            },
+            {
+              "name": "address-country",
+              "type": "string"
+            }
+          ],
+          "supportedProfile": [
+            "https://dhp.uz/fhir/core/StructureDefinition/uz-core-relatedperson"
+          ],
+          "type": "RelatedPerson"
+        },
+        {
+          "conditionalCreate": false,
+          "conditionalDelete": "not-supported",
+          "conditionalPatch": false,
+          "conditionalRead": "not-supported",
+          "conditionalUpdate": false,
+          "interaction": [
+            {
+              "code": "read"
+            },
+            {
+              "code": "vread"
+            },
+            {
+              "code": "update"
+            },
+            {
+              "code": "delete"
+            },
+            {
+              "code": "history-instance"
+            },
+            {
+              "code": "create"
+            },
+            {
+              "code": "search-type"
+            }
+          ],
+          "searchParam": [
+            {
+              "name": "care-team",
+              "type": "reference"
+            },
+            {
+              "name": "date",
+              "type": "date"
+            },
+            {
+              "name": "part-of",
+              "type": "reference"
+            },
+            {
+              "name": "identifier",
+              "type": "token"
+            },
+            {
+              "name": "patient",
+              "type": "reference"
+            },
+            {
+              "name": "condition",
+              "type": "reference"
+            },
+            {
+              "name": "intent",
+              "type": "token"
+            },
+            {
+              "name": "encounter",
+              "type": "reference"
+            },
+            {
+              "name": "replaces",
+              "type": "reference"
+            },
+            {
+              "name": "category",
+              "type": "token"
+            },
+            {
+              "name": "custodian",
+              "type": "reference"
+            },
+            {
+              "name": "goal",
+              "type": "reference"
+            },
+            {
+              "name": "activity-reference",
+              "type": "reference"
+            },
+            {
+              "name": "based-on",
+              "type": "reference"
+            },
+            {
+              "name": "status",
+              "type": "token"
+            },
+            {
+              "name": "subject",
+              "type": "reference"
+            }
+          ],
+          "type": "CarePlan"
+        },
+        {
+          "conditionalCreate": false,
+          "conditionalDelete": "not-supported",
+          "conditionalPatch": false,
+          "conditionalRead": "not-supported",
+          "conditionalUpdate": false,
+          "interaction": [
+            {
+              "code": "read"
+            },
+            {
+              "code": "vread"
+            },
+            {
+              "code": "update"
+            },
+            {
+              "code": "delete"
+            },
+            {
+              "code": "history-instance"
+            },
+            {
+              "code": "create"
+            },
+            {
+              "code": "search-type"
+            }
+          ],
+          "searchParam": [
+            {
+              "name": "stage",
+              "type": "token"
+            },
+            {
+              "name": "verification-status",
+              "type": "token"
+            },
+            {
+              "name": "asserter",
+              "type": "reference"
+            },
+            {
+              "name": "recorded-date",
+              "type": "date"
+            },
+            {
+              "name": "encounter",
+              "type": "reference"
+            },
+            {
+              "name": "evidence",
+              "type": "token"
+            },
+            {
+              "name": "category",
+              "type": "token"
+            },
+            {
+              "name": "onset-date",
+              "type": "date"
+            },
+            {
+              "name": "onset-info",
+              "type": "string"
+            },
+            {
+              "name": "abatement-string",
+              "type": "string"
+            },
+            {
+              "name": "clinical-status",
+              "type": "token"
+            },
+            {
+              "name": "code",
+              "type": "token"
+            },
+            {
+              "name": "severity",
+              "type": "token"
+            },
+            {
+              "name": "identifier",
+              "type": "token"
+            },
+            {
+              "name": "patient",
+              "type": "reference"
+            },
+            {
+              "name": "abatement-date",
+              "type": "date"
+            },
+            {
+              "name": "body-site",
+              "type": "token"
+            },
+            {
+              "name": "subject",
+              "type": "reference"
+            },
+            {
+              "name": "evidence-detail",
+              "type": "reference"
+            }
+          ],
+          "supportedProfile": [
+            "https://dhp.uz/fhir/core/StructureDefinition/uz-core-condition",
+            "https://dhp.uz/fhir/core/StructureDefinition/uz-core-clinical-condition"
+          ],
+          "type": "Condition"
+        },
+        {
+          "conditionalCreate": false,
+          "conditionalDelete": "not-supported",
+          "conditionalPatch": false,
+          "conditionalRead": "not-supported",
+          "conditionalUpdate": false,
+          "interaction": [
+            {
+              "code": "read"
+            },
+            {
+              "code": "vread"
+            },
+            {
+              "code": "update"
+            },
+            {
+              "code": "delete"
+            },
+            {
+              "code": "history-instance"
+            },
+            {
+              "code": "create"
+            },
+            {
+              "code": "search-type"
+            }
+          ],
+          "searchParam": [
+            {
+              "name": "type",
+              "type": "token"
+            },
+            {
+              "name": "care-manager",
+              "type": "reference"
+            },
+            {
+              "name": "date",
+              "type": "date"
+            },
+            {
+              "name": "reason-reference",
+              "type": "reference"
+            },
+            {
+              "name": "diagnosis-code",
+              "type": "token"
+            },
+            {
+              "name": "subject",
+              "type": "reference"
+            },
+            {
+              "name": "diagnosis-reference",
+              "type": "reference"
+            },
+            {
+              "name": "identifier",
+              "type": "token"
+            },
+            {
+              "name": "incoming-referral",
+              "type": "reference"
+            },
+            {
+              "name": "organization",
+              "type": "reference"
+            },
+            {
+              "name": "reason-code",
+              "type": "token"
+            },
+            {
+              "name": "patient",
+              "type": "reference"
+            },
+            {
+              "name": "status",
+              "type": "token"
+            }
+          ],
+          "supportedProfile": [
+            "https://dhp.uz/fhir/core/StructureDefinition/uz-core-episodeofcare"
+          ],
+          "type": "EpisodeOfCare"
+        },
+        {
+          "conditionalCreate": false,
+          "conditionalDelete": "not-supported",
+          "conditionalPatch": false,
+          "conditionalRead": "not-supported",
+          "conditionalUpdate": false,
+          "interaction": [
+            {
+              "code": "read"
+            },
+            {
+              "code": "vread"
+            },
+            {
+              "code": "update"
+            },
+            {
+              "code": "delete"
+            },
+            {
+              "code": "history-instance"
+            },
+            {
+              "code": "create"
+            },
+            {
+              "code": "search-type"
+            }
+          ],
+          "searchParam": [
+            {
+              "name": "based-on",
+              "type": "reference"
+            },
+            {
+              "name": "careteam",
+              "type": "reference"
+            },
+            {
+              "name": "class",
+              "type": "token"
+            },
+            {
+              "name": "status",
+              "type": "token"
+            },
+            {
+              "name": "type",
+              "type": "token"
+            },
+            {
+              "name": "appointment",
+              "type": "reference"
+            },
+            {
+              "name": "location-period",
+              "type": "date"
+            },
+            {
+              "name": "subject",
+              "type": "reference"
+            },
+            {
+              "name": "account",
+              "type": "reference"
+            },
+            {
+              "name": "diagnosis-code",
+              "type": "token"
+            },
+            {
+              "name": "diagnosis-reference",
+              "type": "reference"
+            },
+            {
+              "name": "participant",
+              "type": "reference"
+            },
+            {
+              "name": "location",
+              "type": "reference"
+            },
+            {
+              "name": "part-of",
+              "type": "reference"
+            },
+            {
+              "name": "service-provider",
+              "type": "reference"
+            },
+            {
+              "name": "special-arrangement",
+              "type": "token"
+            },
+            {
+              "name": "end-date",
+              "type": "date"
+            },
+            {
+              "name": "identifier",
+              "type": "token"
+            },
+            {
+              "name": "participant-type",
+              "type": "token"
+            },
+            {
+              "name": "reason-reference",
+              "type": "reference"
+            },
+            {
+              "name": "patient",
+              "type": "reference"
+            },
+            {
+              "name": "subject-status",
+              "type": "token"
+            },
+            {
+              "name": "practitioner",
+              "type": "reference"
+            },
+            {
+              "name": "date",
+              "type": "date"
+            },
+            {
+              "name": "date-start",
+              "type": "date"
+            },
+            {
+              "name": "episode-of-care",
+              "type": "reference"
+            },
+            {
+              "name": "reason-code",
+              "type": "token"
+            }
+          ],
+          "supportedProfile": [
+            "https://dhp.uz/fhir/core/StructureDefinition/uz-core-encounter"
+          ],
+          "type": "Encounter"
+        },
+        {
+          "conditionalCreate": false,
+          "conditionalDelete": "not-supported",
+          "conditionalPatch": false,
+          "conditionalRead": "not-supported",
+          "conditionalUpdate": false,
+          "interaction": [
+            {
+              "code": "read"
+            },
+            {
+              "code": "vread"
+            },
+            {
+              "code": "update"
+            },
+            {
+              "code": "delete"
+            },
+            {
+              "code": "history-instance"
+            },
+            {
+              "code": "create"
+            },
+            {
+              "code": "search-type"
+            }
+          ],
+          "searchParam": [
+            {
+              "name": "publisher",
+              "type": "string"
+            },
+            {
+              "name": "url",
+              "type": "uri"
+            },
+            {
+              "name": "jurisdiction",
+              "type": "token"
+            },
+            {
+              "name": "context-type",
+              "type": "token"
+            },
+            {
+              "name": "definition",
+              "type": "uri"
+            },
+            {
+              "name": "version",
+              "type": "token"
+            },
+            {
+              "name": "effective",
+              "type": "date"
+            },
+            {
+              "name": "item-code",
+              "type": "token"
+            },
+            {
+              "name": "status",
+              "type": "token"
+            },
+            {
+              "name": "name",
+              "type": "string"
+            },
+            {
+              "name": "title",
+              "type": "string"
+            },
+            {
+              "name": "context",
+              "type": "token"
+            },
+            {
+              "name": "description",
+              "type": "string"
+            },
+            {
+              "name": "date",
+              "type": "date"
+            },
+            {
+              "name": "identifier",
+              "type": "token"
+            },
+            {
+              "name": "combo-code",
+              "type": "token"
+            },
+            {
+              "name": "subject-type",
+              "type": "token"
+            },
+            {
+              "name": "questionnaire-code",
+              "type": "token"
+            }
+          ],
+          "type": "Questionnaire"
+        },
+        {
+          "conditionalCreate": false,
+          "conditionalDelete": "not-supported",
+          "conditionalPatch": false,
+          "conditionalRead": "not-supported",
+          "conditionalUpdate": false,
+          "interaction": [
+            {
+              "code": "read"
+            },
+            {
+              "code": "vread"
+            },
+            {
+              "code": "update"
+            },
+            {
+              "code": "delete"
+            },
+            {
+              "code": "history-instance"
+            },
+            {
+              "code": "create"
+            },
+            {
+              "code": "search-type"
+            }
+          ],
+          "searchParam": [
+            {
+              "name": "answer-string",
+              "type": "string"
+            },
+            {
+              "name": "encounter",
+              "type": "reference"
+            },
+            {
+              "name": "patient",
+              "type": "reference"
+            },
+            {
+              "name": "questionnaire",
+              "type": "reference"
+            },
+            {
+              "name": "subject",
+              "type": "reference"
+            },
+            {
+              "name": "based-on",
+              "type": "reference"
+            },
+            {
+              "name": "answer-date",
+              "type": "date"
+            },
+            {
+              "name": "identifier",
+              "type": "token"
+            },
+            {
+              "name": "item-subject",
+              "type": "reference"
+            },
+            {
+              "name": "answer-number",
+              "type": "number"
+            },
+            {
+              "name": "author",
+              "type": "reference"
+            },
+            {
+              "name": "source",
+              "type": "reference"
+            },
+            {
+              "name": "linkid",
+              "type": "token"
+            },
+            {
+              "name": "authored",
+              "type": "date"
+            },
+            {
+              "name": "part-of",
+              "type": "reference"
+            },
+            {
+              "name": "status",
+              "type": "token"
+            },
+            {
+              "name": "answer-concept",
+              "type": "token"
+            },
+            {
+              "name": "answer-reference",
+              "type": "reference"
+            }
+          ],
+          "type": "QuestionnaireResponse"
+        },
+        {
+          "conditionalCreate": false,
+          "conditionalDelete": "not-supported",
+          "conditionalPatch": false,
+          "conditionalRead": "not-supported",
+          "conditionalUpdate": false,
+          "interaction": [
+            {
+              "code": "read"
+            },
+            {
+              "code": "vread"
+            },
+            {
+              "code": "update"
+            },
+            {
+              "code": "delete"
+            },
+            {
+              "code": "history-instance"
+            },
+            {
+              "code": "create"
+            },
+            {
+              "code": "search-type"
+            }
+          ],
+          "searchParam": [
+            {
+              "name": "has-member",
+              "type": "reference"
+            },
+            {
+              "name": "value-quantity",
+              "type": "quantity"
+            },
+            {
+              "name": "subject",
+              "type": "reference"
+            },
+            {
+              "name": "value-canonical",
+              "type": "uri"
+            },
+            {
+              "name": "value-markdown",
+              "type": "string"
+            },
+            {
+              "name": "method",
+              "type": "token"
+            },
+            {
+              "name": "combo-data-absent-reason",
+              "type": "token"
+            },
+            {
+              "name": "component-code",
+              "type": "token"
+            },
+            {
+              "name": "combo-value-quantity",
+              "type": "quantity"
+            },
+            {
+              "name": "encounter",
+              "type": "reference"
+            },
+            {
+              "name": "based-on",
+              "type": "reference"
+            },
+            {
+              "name": "component-value-canonical",
+              "type": "uri"
+            },
+            {
+              "name": "derived-from",
+              "type": "reference"
+            },
+            {
+              "name": "specimen",
+              "type": "reference"
+            },
+            {
+              "name": "identifier",
+              "type": "token"
+            },
+            {
+              "name": "value-date",
+              "type": "date"
+            },
+            {
+              "name": "component-value-reference",
+              "type": "reference"
+            },
+            {
+              "name": "category",
+              "type": "token"
+            },
+            {
+              "name": "code",
+              "type": "token"
+            },
+            {
+              "name": "focus TU",
+              "type": "reference"
+            },
+            {
+              "name": "value-concept",
+              "type": "token"
+            },
+            {
+              "name": "value-reference",
+              "type": "reference"
+            },
+            {
+              "name": "data-absent-reason",
+              "type": "token"
+            },
+            {
+              "name": "device",
+              "type": "reference"
+            },
+            {
+              "name": "status",
+              "type": "token"
+            },
+            {
+              "name": "performer",
+              "type": "reference"
+            },
+            {
+              "name": "component-value-concept",
+              "type": "token"
+            },
+            {
+              "name": "patient",
+              "type": "reference"
+            },
+            {
+              "name": "part-of",
+              "type": "reference"
+            },
+            {
+              "name": "combo-value-concept",
+              "type": "token"
+            },
+            {
+              "name": "component-data-absent-reason",
+              "type": "token"
+            },
+            {
+              "name": "component-value-quantity",
+              "type": "quantity"
+            },
+            {
+              "name": "date",
+              "type": "date"
+            }
+          ],
+          "type": "Observation"
+        },
+        {
+          "conditionalCreate": false,
+          "conditionalDelete": "not-supported",
+          "conditionalPatch": false,
+          "conditionalRead": "not-supported",
+          "conditionalUpdate": false,
+          "interaction": [
+            {
+              "code": "read"
+            },
+            {
+              "code": "vread"
+            },
+            {
+              "code": "update"
+            },
+            {
+              "code": "delete"
+            },
+            {
+              "code": "history-instance"
+            },
+            {
+              "code": "create"
+            },
+            {
+              "code": "search-type"
+            }
+          ],
+          "searchParam": [
+            {
+              "name": "modified",
+              "type": "date"
+            },
+            {
+              "name": "output",
+              "type": "reference"
+            },
+            {
+              "name": "encounter",
+              "type": "reference"
+            },
+            {
+              "name": "business-status",
+              "type": "token"
+            },
+            {
+              "name": "intent",
+              "type": "token"
+            },
+            {
+              "name": "authored-on",
+              "type": "date"
+            },
+            {
+              "name": "period",
+              "type": "date"
+            },
+            {
+              "name": "group-identifier",
+              "type": "token"
+            },
+            {
+              "name": "code",
+              "type": "token"
+            },
+            {
+              "name": "focus",
+              "type": "reference"
+            },
+            {
+              "name": "patient",
+              "type": "reference"
+            },
+            {
+              "name": "priority",
+              "type": "token"
+            },
+            {
+              "name": "subject",
+              "type": "reference"
+            },
+            {
+              "name": "owner",
+              "type": "reference"
+            },
+            {
+              "name": "status",
+              "type": "token"
+            },
+            {
+              "name": "identifier",
+              "type": "token"
+            },
+            {
+              "name": "actor",
+              "type": "reference"
+            },
+            {
+              "name": "based-on",
+              "type": "reference"
+            },
+            {
+              "name": "part-of",
+              "type": "reference"
+            },
+            {
+              "name": "performer",
+              "type": "token"
+            },
+            {
+              "name": "requestedperformer-reference",
+              "type": "reference"
+            },
+            {
+              "name": "requester",
+              "type": "reference"
+            }
+          ],
+          "type": "Task"
+        },
+        {
+          "conditionalCreate": false,
+          "conditionalDelete": "not-supported",
+          "conditionalPatch": false,
+          "conditionalRead": "not-supported",
+          "conditionalUpdate": false,
+          "interaction": [
+            {
+              "code": "read"
+            },
+            {
+              "code": "vread"
+            },
+            {
+              "code": "update"
+            },
+            {
+              "code": "delete"
+            },
+            {
+              "code": "history-instance"
+            },
+            {
+              "code": "create"
+            },
+            {
+              "code": "search-type"
+            }
+          ],
+          "searchParam": [
+            {
+              "name": "combo-data-absent-reason",
+              "type": "token"
+            },
+            {
+              "name": "subject",
+              "type": "reference"
+            },
+            {
+              "name": "value-canonical",
+              "type": "uri"
+            },
+            {
+              "name": "device",
+              "type": "reference"
+            },
+            {
+              "name": "instantiates-canonical",
+              "type": "uri"
+            },
+            {
+              "name": "specimen",
+              "type": "reference"
+            },
+            {
+              "name": "performer",
+              "type": "reference"
+            },
+            {
+              "name": "status",
+              "type": "token"
+            },
+            {
+              "name": "date",
+              "type": "date"
+            },
+            {
+              "name": "value-concept",
+              "type": "token"
+            },
+            {
+              "name": "component-value-canonical",
+              "type": "reference"
+            },
+            {
+              "name": "component-code",
+              "type": "token"
+            },
+            {
+              "name": "data-absent-reason",
+              "type": "token"
+            },
+            {
+              "name": "category",
+              "type": "token"
+            },
+            {
+              "name": "component-data-absent-reason",
+              "type": "token"
+            },
+            {
+              "name": "patient",
+              "type": "reference"
+            },
+            {
+              "name": "interpretation",
+              "type": "token"
+            },
+            {
+              "name": "based-on",
+              "type": "reference"
+            },
+            {
+              "name": "combo-value-concept",
+              "type": "token"
+            },
+            {
+              "name": "instantiates-reference",
+              "type": "reference"
+            },
+            {
+              "name": "value-reference",
+              "type": "reference"
+            },
+            {
+              "name": "encounter",
+              "type": "reference"
+            },
+            {
+              "name": "part-of",
+              "type": "reference"
+            },
+            {
+              "name": "combo-code",
+              "type": "token"
+            },
+            {
+              "name": "has-member",
+              "type": "reference"
+            },
+            {
+              "name": "code",
+              "type": "token"
+            },
+            {
+              "name": "value-string",
+              "type": "string"
+            },
+            {
+              "name": "derived-from",
+              "type": "reference"
+            },
+            {
+              "name": "combo-interpretation",
+              "type": "token"
+            },
+            {
+              "name": "component-value-reference",
+              "type": "reference"
+            },
+            {
+              "name": "identifier",
+              "type": "token"
+            },
+            {
+              "name": "component-value-concept",
+              "type": "token"
+            },
+            {
+              "name": "value-date",
+              "type": "date"
+            },
+            {
+              "name": "component-interpretation",
+              "type": "token"
+            },
+            {
+              "name": "method",
+              "type": "token"
+            },
+            {
+              "name": "focus",
+              "type": "reference"
+            }
+          ],
+          "supportedProfile": [
+            "https://dhp.uz/fhir/core/StructureDefinition/uz-core-observation",
+            "https://dhp.uz/fhir/core/StructureDefinition/uz-core-socioeconomic-observation"
+          ],
+          "type": "Observation"
+        },
+        {
+          "conditionalCreate": false,
+          "conditionalDelete": "not-supported",
+          "conditionalPatch": false,
+          "conditionalRead": "not-supported",
+          "conditionalUpdate": false,
+          "interaction": [
+            {
+              "code": "read"
+            },
+            {
+              "code": "vread"
+            },
+            {
+              "code": "update"
+            },
+            {
+              "code": "delete"
+            },
+            {
+              "code": "history-instance"
+            },
+            {
+              "code": "create"
+            },
+            {
+              "code": "search-type"
+            }
+          ],
+          "searchParam": [
+            {
+              "name": "part-of",
+              "type": "reference"
+            },
+            {
+              "name": "reason-code",
+              "type": "token"
+            },
+            {
+              "name": "reason-reference",
+              "type": "reference"
+            },
+            {
+              "name": "based-on",
+              "type": "reference"
+            },
+            {
+              "name": "date",
+              "type": "date"
+            },
+            {
+              "name": "report",
+              "type": "reference"
+            },
+            {
+              "name": "status",
+              "type": "token"
+            },
+            {
+              "name": "category",
+              "type": "token"
+            },
+            {
+              "name": "subject",
+              "type": "reference"
+            },
+            {
+              "name": "identifier",
+              "type": "token"
+            },
+            {
+              "name": "patient",
+              "type": "reference"
+            },
+            {
+              "name": "location",
+              "type": "reference"
+            },
+            {
+              "name": "performer",
+              "type": "reference"
+            },
+            {
+              "name": "code",
+              "type": "token"
+            },
+            {
+              "name": "encounter",
+              "type": "reference"
+            }
+          ],
+          "type": "Procedure"
+        },
+        {
+          "conditionalCreate": false,
+          "conditionalDelete": "not-supported",
+          "conditionalPatch": false,
+          "conditionalRead": "not-supported",
+          "conditionalUpdate": false,
+          "interaction": [
+            {
+              "code": "read"
+            },
+            {
+              "code": "vread"
+            },
+            {
+              "code": "update"
+            },
+            {
+              "code": "delete"
+            },
+            {
+              "code": "history-instance"
+            },
+            {
+              "code": "create"
+            },
+            {
+              "code": "search-type"
+            }
+          ],
+          "searchParam": [
+            {
+              "name": "serial-number",
+              "type": "token"
+            },
+            {
+              "name": "expiration-date",
+              "type": "date"
+            },
+            {
+              "name": "code",
+              "type": "token"
+            },
+            {
+              "name": "form",
+              "type": "token"
+            },
+            {
+              "name": "marketingauthorizationholder",
+              "type": "reference"
+            },
+            {
+              "name": "status",
+              "type": "token"
+            },
+            {
+              "name": "identifier",
+              "type": "token"
+            },
+            {
+              "name": "ingredient",
+              "type": "reference"
+            },
+            {
+              "name": "ingredient-code",
+              "type": "token"
+            },
+            {
+              "name": "lot-number",
+              "type": "token"
+            }
+          ],
+          "type": "Medication"
+        },
+        {
+          "conditionalCreate": false,
+          "conditionalDelete": "not-supported",
+          "conditionalPatch": false,
+          "conditionalRead": "not-supported",
+          "conditionalUpdate": false,
+          "interaction": [
+            {
+              "code": "read"
+            },
+            {
+              "code": "vread"
+            },
+            {
+              "code": "update"
+            },
+            {
+              "code": "delete"
+            },
+            {
+              "code": "history-instance"
+            },
+            {
+              "code": "create"
+            },
+            {
+              "code": "search-type"
+            }
+          ],
+          "searchParam": [
+            {
+              "name": "intent",
+              "type": "token"
+            },
+            {
+              "name": "patient",
+              "type": "reference"
+            },
+            {
+              "name": "encounter",
+              "type": "reference"
+            },
+            {
+              "name": "code",
+              "type": "token"
+            },
+            {
+              "name": "group-or-identifier",
+              "type": "token"
+            },
+            {
+              "name": "intended-dispenser",
+              "type": "reference"
+            },
+            {
+              "name": "authoredon",
+              "type": "date"
+            },
+            {
+              "name": "intended-performer",
+              "type": "reference"
+            },
+            {
+              "name": "intended-performertype",
+              "type": "token"
+            },
+            {
+              "name": "priority",
+              "type": "token"
+            },
+            {
+              "name": "subject",
+              "type": "reference"
+            },
+            {
+              "name": "combo-date",
+              "type": "date"
+            },
+            {
+              "name": "group-identifier",
+              "type": "token"
+            },
+            {
+              "name": "medication",
+              "type": "reference"
+            },
+            {
+              "name": "status",
+              "type": "token"
+            },
+            {
+              "name": "identifier",
+              "type": "token"
+            },
+            {
+              "name": "requester",
+              "type": "reference"
+            },
+            {
+              "name": "category",
+              "type": "token"
+            }
+          ],
+          "type": "MedicationRequest"
+        },
+        {
+          "conditionalCreate": false,
+          "conditionalDelete": "not-supported",
+          "conditionalPatch": false,
+          "conditionalRead": "not-supported",
+          "conditionalUpdate": false,
+          "interaction": [
+            {
+              "code": "read"
+            },
+            {
+              "code": "vread"
+            },
+            {
+              "code": "update"
+            },
+            {
+              "code": "delete"
+            },
+            {
+              "code": "history-instance"
+            },
+            {
+              "code": "create"
+            },
+            {
+              "code": "search-type"
+            }
+          ],
+          "searchParam": [
+            {
+              "name": "prescription",
+              "type": "reference"
+            },
+            {
+              "name": "code",
+              "type": "token"
+            },
+            {
+              "name": "recorded",
+              "type": "date"
+            },
+            {
+              "name": "whenhandedover",
+              "type": "date"
+            },
+            {
+              "name": "destination",
+              "type": "reference"
+            },
+            {
+              "name": "location",
+              "type": "reference"
+            },
+            {
+              "name": "medication",
+              "type": "reference"
+            },
+            {
+              "name": "receiver",
+              "type": "reference"
+            },
+            {
+              "name": "performer",
+              "type": "reference"
+            },
+            {
+              "name": "encounter",
+              "type": "reference"
+            },
+            {
+              "name": "status",
+              "type": "token"
+            },
+            {
+              "name": "subject",
+              "type": "reference"
+            },
+            {
+              "name": "type",
+              "type": "token"
+            },
+            {
+              "name": "patient",
+              "type": "reference"
+            },
+            {
+              "name": "responsibleparty",
+              "type": "reference"
+            },
+            {
+              "name": "identifier",
+              "type": "token"
+            },
+            {
+              "name": "whenprepared",
+              "type": "date"
+            }
+          ],
+          "type": "MedicationDispense"
+        },
+        {
+          "conditionalCreate": false,
+          "conditionalDelete": "not-supported",
+          "conditionalPatch": false,
+          "conditionalRead": "not-supported",
+          "conditionalUpdate": false,
+          "interaction": [
+            {
+              "code": "read"
+            },
+            {
+              "code": "vread"
+            },
+            {
+              "code": "update"
+            },
+            {
+              "code": "delete"
+            },
+            {
+              "code": "history-instance"
+            },
+            {
+              "code": "create"
+            },
+            {
+              "code": "search-type"
+            }
+          ],
+          "searchParam": [
+            {
+              "name": "verification-status",
+              "type": "token"
+            },
+            {
+              "name": "type",
+              "type": "token"
+            },
+            {
+              "name": "date",
+              "type": "date"
+            },
+            {
+              "name": "identifier",
+              "type": "token"
+            },
+            {
+              "name": "last-reaction-date",
+              "type": "date"
+            },
+            {
+              "name": "route",
+              "type": "token"
+            },
+            {
+              "name": "clinical-status",
+              "type": "token"
+            },
+            {
+              "name": "manifestation-code",
+              "type": "token"
+            },
+            {
+              "name": "patient",
+              "type": "reference"
+            },
+            {
+              "name": "code",
+              "type": "token"
+            },
+            {
+              "name": "criticality",
+              "type": "token"
+            },
+            {
+              "name": "severity",
+              "type": "token"
+            },
+            {
+              "name": "category",
+              "type": "token"
+            },
+            {
+              "name": "asserter",
+              "type": "reference"
+            },
+            {
+              "name": "manifestation-reference",
+              "type": "reference"
+            }
+          ],
+          "type": "AllergyIntolerance"
+        },
+        {
+          "conditionalCreate": false,
+          "conditionalDelete": "not-supported",
+          "conditionalPatch": false,
+          "conditionalRead": "not-supported",
+          "conditionalUpdate": false,
+          "interaction": [
+            {
+              "code": "read"
+            },
+            {
+              "code": "vread"
+            },
+            {
+              "code": "update"
+            },
+            {
+              "code": "delete"
+            },
+            {
+              "code": "history-instance"
+            },
+            {
+              "code": "create"
+            },
+            {
+              "code": "search-type"
+            }
+          ],
+          "searchParam": [
+            {
+              "name": "relation",
+              "type": "token"
+            },
+            {
+              "name": "patient",
+              "type": "reference"
+            },
+            {
+              "name": "bodysite-reference",
+              "type": "reference"
+            },
+            {
+              "name": "author",
+              "type": "reference"
+            },
+            {
+              "name": "facility",
+              "type": "token"
+            },
+            {
+              "name": "format-uri",
+              "type": "uri"
+            },
+            {
+              "name": "custodian",
+              "type": "reference"
+            },
+            {
+              "name": "version",
+              "type": "string"
+            },
+            {
+              "name": "status",
+              "type": "token"
+            },
+            {
+              "name": "event-code",
+              "type": "token"
+            },
+            {
+              "name": "type",
+              "type": "token"
+            },
+            {
+              "name": "location",
+              "type": "uri"
+            },
+            {
+              "name": "language",
+              "type": "token"
+            },
+            {
+              "name": "identifier",
+              "type": "token"
+            },
+            {
+              "name": "date",
+              "type": "date"
+            },
+            {
+              "name": "category",
+              "type": "token"
+            },
+            {
+              "name": "event-reference",
+              "type": "reference"
+            },
+            {
+              "name": "based-on",
+              "type": "reference"
+            },
+            {
+              "name": "doc-status",
+              "type": "token"
+            },
+            {
+              "name": "format-canonical",
+              "type": "uri"
+            },
+            {
+              "name": "subject",
+              "type": "reference"
+            },
+            {
+              "name": "contenttype",
+              "type": "token"
+            },
+            {
+              "name": "security-label",
+              "type": "token"
+            },
+            {
+              "name": "context",
+              "type": "reference"
+            },
+            {
+              "name": "setting",
+              "type": "token"
+            },
+            {
+              "name": "modality",
+              "type": "token"
+            },
+            {
+              "name": "relatesto",
+              "type": "reference"
+            },
+            {
+              "name": "period",
+              "type": "date"
+            },
+            {
+              "name": "description",
+              "type": "string"
+            },
+            {
+              "name": "attester",
+              "type": "reference"
+            },
+            {
+              "name": "format-code",
+              "type": "token"
+            },
+            {
+              "name": "related",
+              "type": "reference"
+            },
+            {
+              "name": "bodysite",
+              "type": "token"
+            },
+            {
+              "name": "creation",
+              "type": "date"
+            }
+          ],
+          "type": "DocumentReference"
+        },
+        {
+          "conditionalCreate": false,
+          "conditionalDelete": "not-supported",
+          "conditionalPatch": false,
+          "conditionalRead": "not-supported",
+          "conditionalUpdate": false,
+          "interaction": [
+            {
+              "code": "read"
+            },
+            {
+              "code": "vread"
+            },
+            {
+              "code": "update"
+            },
+            {
+              "code": "delete"
+            },
+            {
+              "code": "history-instance"
+            },
+            {
+              "code": "create"
+            },
+            {
+              "code": "search-type"
+            }
+          ],
+          "searchParam": [
+            {
+              "name": "description",
+              "type": "token"
+            },
+            {
+              "name": "lifecycle-status",
+              "type": "token"
+            },
+            {
+              "name": "start-date",
+              "type": "date"
+            },
+            {
+              "name": "subject",
+              "type": "reference"
+            },
+            {
+              "name": "target-measure",
+              "type": "token"
+            },
+            {
+              "name": "target-date",
+              "type": "date"
+            },
+            {
+              "name": "category",
+              "type": "token"
+            },
+            {
+              "name": "identifier",
+              "type": "token"
+            },
+            {
+              "name": "patient",
+              "type": "reference"
+            },
+            {
+              "name": "achievement-status",
+              "type": "token"
+            },
+            {
+              "name": "addresses",
+              "type": "reference"
+            }
+          ],
+          "type": "Goal"
+        },
+        {
+          "conditionalCreate": false,
+          "conditionalDelete": "not-supported",
+          "conditionalPatch": false,
+          "conditionalRead": "not-supported",
+          "conditionalUpdate": false,
+          "interaction": [
+            {
+              "code": "read"
+            },
+            {
+              "code": "vread"
+            },
+            {
+              "code": "update"
+            },
+            {
+              "code": "delete"
+            },
+            {
+              "code": "history-instance"
+            },
+            {
+              "code": "create"
+            },
+            {
+              "code": "search-type"
+            }
+          ],
+          "searchParam": [
+            {
+              "name": "date",
+              "type": "date"
+            },
+            {
+              "name": "identifier",
+              "type": "token"
+            },
+            {
+              "name": "status",
+              "type": "token"
+            },
+            {
+              "name": "context-quantity",
+              "type": "quantity"
+            },
+            {
+              "name": "derived-from",
+              "type": "reference"
+            },
+            {
+              "name": "description",
+              "type": "string"
+            },
+            {
+              "name": "url",
+              "type": "uri"
+            },
+            {
+              "name": "context-type-quantity",
+              "type": "composite"
+            },
+            {
+              "name": "predecessor",
+              "type": "reference"
+            },
+            {
+              "name": "context-type-value",
+              "type": "composite"
+            },
+            {
+              "name": "kind",
+              "type": "token"
+            },
+            {
+              "name": "context",
+              "type": "token"
+            },
+            {
+              "name": "topic",
+              "type": "token"
+            },
+            {
+              "name": "publisher",
+              "type": "string"
+            },
+            {
+              "name": "version",
+              "type": "token"
+            },
+            {
+              "name": "effective",
+              "type": "date"
+            },
+            {
+              "name": "jurisdiction",
+              "type": "token"
+            },
+            {
+              "name": "successor",
+              "type": "reference"
+            },
+            {
+              "name": "context-type",
+              "type": "token"
+            },
+            {
+              "name": "depends-on",
+              "type": "reference"
+            },
+            {
+              "name": "title",
+              "type": "string"
+            },
+            {
+              "name": "composed-of",
+              "type": "reference"
+            },
+            {
+              "name": "name",
+              "type": "string"
+            }
+          ],
+          "type": "ActivityDefinition"
+        },
+        {
+          "conditionalCreate": false,
+          "conditionalDelete": "not-supported",
+          "conditionalPatch": false,
+          "conditionalRead": "not-supported",
+          "conditionalUpdate": false,
+          "interaction": [
+            {
+              "code": "read"
+            },
+            {
+              "code": "vread"
+            },
+            {
+              "code": "update"
+            },
+            {
+              "code": "delete"
+            },
+            {
+              "code": "history-instance"
+            },
+            {
+              "code": "create"
+            },
+            {
+              "code": "search-type"
+            }
+          ],
+          "searchParam": [
+            {
+              "name": "url",
+              "type": "uri"
+            },
+            {
+              "name": "version",
+              "type": "token"
+            },
+            {
+              "name": "section-code-text",
+              "type": "composite"
+            },
+            {
+              "name": "entry",
+              "type": "reference"
+            },
+            {
+              "name": "date",
+              "type": "date"
+            },
+            {
+              "name": "identifier",
+              "type": "token"
+            },
+            {
+              "name": "subject",
+              "type": "reference"
+            },
+            {
+              "name": "related",
+              "type": "reference"
+            },
+            {
+              "name": "event-code",
+              "type": "token"
+            },
+            {
+              "name": "section",
+              "type": "token"
+            },
+            {
+              "name": "attester",
+              "type": "reference"
+            },
+            {
+              "name": "author",
+              "type": "reference"
+            },
+            {
+              "name": "event-reference",
+              "type": "reference"
+            },
+            {
+              "name": "type",
+              "type": "token"
+            },
+            {
+              "name": "category",
+              "type": "token"
+            },
+            {
+              "name": "encounter",
+              "type": "reference"
+            },
+            {
+              "name": "period",
+              "type": "date"
+            },
+            {
+              "name": "title",
+              "type": "string"
+            },
+            {
+              "name": "status",
+              "type": "token"
+            },
+            {
+              "name": "patient",
+              "type": "reference"
+            },
+            {
+              "name": "section-text",
+              "type": "special"
+            }
+          ],
+          "type": "Composition"
+        }
+      ]
+    }
+  ],
+  "status": "active",
+  "id": "DHPCapabilityStatement"
+}
