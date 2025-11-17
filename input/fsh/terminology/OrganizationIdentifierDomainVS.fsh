@@ -1,7 +1,7 @@
 ValueSet: OrganizationIdentifierDomainVS
 Id: organization-identifier-domain-vs
 Title: "Organization Identifier Domain Value Set"
-Description: "Allowed codes for organization identification domains (national tax numbers, registration numbers, etc) in Uzbekistan's health information exchange."
+Description: "Allowed codes for organization identification domains (national tax numbers, registration numbers, etc) in Uzbekistan's health information exchange. Used in the [UZ Core Organization](StructureDefinition-uz-core-organization.html) profile."
 * ^url = "https://dhp.uz/fhir/core/ValueSet/organization-identifier-domain-vs"
 * ^experimental = true
 * ^language = #uz

@@ -104,9 +104,36 @@ Temporary medical record numbers are organization-specific identifiers assigned 
 }
 ```
 
-### Other patient identifier types
+### Foreign passports and driver's licenses
 
-For a complete list of all supported patient identifier systems, see the [PatientIdentifierDomainVS](ValueSet-patient-identifier-domain-vs.html) value set.
+The platform supports identification of foreign nationals using their passport numbers and driver's licenses. The system URI follows the same pattern using the ISO 3166-1 two-letter country code:
+
+**System URI pattern**: `https://dhp.uz/fhir/core/sid/pid/{country-code}/ppn` for passports, `https://dhp.uz/fhir/core/sid/pid/{country-code}/dl` for driver's licenses
+
+Example for an Estonian passport:
+
+```json
+{
+  "identifier": [
+    {
+      "system": "https://dhp.uz/fhir/core/sid/pid/ee/ppn",
+      "type": {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+            "code": "PPN",
+            "display": "Passport number"
+          }
+        ]
+      },
+      "use": "official",
+      "value": "K1234567"
+    }
+  ]
+}
+```
+
+For a complete list of all supported patient identifier systems, including all supported countries for foreign passports and driver's licenses, see the [PatientIdentifierDomainVS](ValueSet-patient-identifier-domain-vs.html) value set.
 
 ## Practitioner identifiers
 
@@ -140,6 +167,8 @@ Healthcare professionals are identified using the Human Resource Management (HRM
 }
 ```
 
+For a complete list of all supported practitioner identifier systems, see the [PractitionerIdentifierDomainVS](ValueSet-practitioner-identifier-domain-vs.html) value set.
+
 ## Organization identifiers
 
 ### Tax ID (Soliq)
@@ -169,6 +198,8 @@ Organizations are identified by their tax identification number assigned by the 
   ]
 }
 ```
+
+For a complete list of all supported organization identifier systems, see the [OrganizationIdentifierDomainVS](ValueSet-organization-identifier-domain-vs.html) value set.
 
 ## Complete example: patient with multiple identifiers
 
