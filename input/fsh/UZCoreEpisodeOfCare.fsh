@@ -7,50 +7,50 @@ Description: "Uzbekistan Core profile for EpisodeOfCare, representing a patient'
 * ^status = #active
 //rules
 * identifier MS
-  * ^short = "Идентификатор, соответствующий этому Episode of Care"
+  * ^short = "Identifier for this Episode of Care"
 * status MS
-  * ^short = "Текущий статус Episode of Care (Required)"
+  * ^short = "Current status of the Episode of Care"
 * status from EpisodeOfCareStatusVS (required)
 * statusHistory MS
-  * ^short = "Список прошлых кодов статуса"
+  * ^short = "List of past status codes"
 * statusHistory.status MS
-  * ^short = "Прошлый статус Episode of Care"
+  * ^short = "Past status of the Episode of Care"
 * statusHistory.status from EpisodeOfCareStatusVS
 * statusHistory.period MS
-  * ^short = "Продолжительность EpisodeOfCare в указанном статусе"
+  * ^short = "Duration of the EpisodeOfCare in the specified status"
 * type MS
-  * ^short = "Классификация типа эпизода оказания помощи"
+  * ^short = "Classification of the episode of care type"
 * type from EpisodeOfCareTypeVS
 * reason MS
-  * ^short = "Перечень медицинских показаний, которые, как ожидается, будут рассмотрены в ходе оказания помощи"
+  * ^short = "List of medical conditions expected to be addressed during care"
 * reason.use MS
-  * ^short = "Для чего/как следует использовать значение причины"
+  * ^short = "Purpose of the reason value"
 * reason.use from EpisodeOfCareReasonUseVS
 * reason.value MS
-  * ^short = "Медицинская причина, требующая рассмотрения."
-  //TODO UZCoreProcedure 
+  * ^short = "Medical reason requiring consideration"
+  //TODO UZCoreProcedure
 * reason.value only CodeableReference(UZCoreCondition or Procedure or UZCoreObservation or UZCoreHealthcareService)
 * reason.value from $icd-10-vs
 * diagnosis.use MS
-  * ^short = "Список медицинских состояний, которые были рассмотрены во время эпизода оказания помощи"
+  * ^short = "Role of the diagnosis in the episode of care"
 * diagnosis.condition MS
 * diagnosis.condition only CodeableReference(UZCoreCondition)
 * diagnosis.condition from $icd-10-vs
-  * ^short = "Диагноз, относящийся к встрече МКБ-10"
+  * ^short = "ICD-10 diagnosis related to the encounter"
 * patient MS
-  * ^short = "Пациент, относящийся к данному эпизоду ​​оказания помощи"
+  * ^short = "Patient associated with this episode of care"
 * patient only Reference(UZCorePatient)
-* managingOrganization MS 
-  * ^short = "Организация, которая берет на себя ответственность за координацию ухода"
+* managingOrganization MS
+  * ^short = "Organization responsible for care coordination"
 * managingOrganization only Reference(UZCoreOrganization)
 * period MS
 * referralRequest MS
 * referralRequest only Reference(ServiceRequest)
 * careManager MS
-  * ^short = "Координатор (ответственный) по уходу за пациентом"
+  * ^short = "Care coordinator for the patient"
 * careManager only Reference(UZCorePractitioner or UZCorePractitionerRole)
 * careTeam MS
-  * ^short = "Другие специалисты, оказывающие помощь в этом эпизоде ​​лечения"
+  * ^short = "Other practitioners providing care in this episode"
 * careTeam only Reference(CareTeam)
 
 Instance: UZCoreEpisodeOfCare-Example

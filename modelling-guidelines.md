@@ -44,6 +44,22 @@ Description: "Uzbekistan Core Condition profile, used for documenting a patient'
 - `Aliases.fsh` - все псевдонимы
 - `Rulesets.fsh` - наборы правил
 
+### 2.4 Канонические URL артефактов
+
+Все артефакты должны использовать стандартизированные шаблоны URL:
+
+| Тип артефакта | Шаблон URL |
+|---------------|------------|
+| **Profile** | `https://dhp.uz/fhir/core/StructureDefinition/{id}` |
+| **Extension** | `https://dhp.uz/fhir/core/StructureDefinition/{id}` |
+| **CodeSystem** | `https://terminology.dhp.uz/fhir/core/CodeSystem/{id}` |
+| **ValueSet** | `https://terminology.dhp.uz/fhir/core/ValueSet/{id}` |
+
+**Важно:**
+- Всегда используйте `https://` (не `http://`)
+- Домен `dhp.uz` — для профилей и расширений
+- Домен `terminology.dhp.uz` — для терминологических артефактов (CodeSystem, ValueSet)
+
 ### 2.5 Именование расширений (Extensions)
 
 **Структура именования Extensions:**
@@ -51,12 +67,19 @@ Description: "Uzbekistan Core Condition profile, used for documenting a patient'
 Extension: DiagnosisType
 Id: diagnosis-type
 Title: "Diagnosis Type"
+Description: "Extension to differentiate the diagnosis type"
+Context: Condition
 ```
 
 **Конвенции для Extensions:**
 - **Extension name**: CamelCase, описательное имя
 - **Id**: `[purpose-name]` в нижнем регистре с дефисами
 - **Title**: Человекочитаемое название в Title Case
+- **Context**: Используйте ключевое слово `Context:` для указания контекста применения расширения. Для нескольких контекстов перечислите их через запятую:
+
+```fsh
+Context: Patient.gender, RelatedPerson.gender, Practitioner.gender
+```
 
 ### 2.6 Именование инвариантов
 
@@ -156,6 +179,21 @@ Id: uz-core-condition-diagnosis-type
 - **MustSupport (MS)**: Все элементы, которые должны поддерживаться всеми системами в Узбекистане, должны быть помечены как MS. Подробное описание MustSupport можно найти в [документации](https://build.fhir.org/ig/vadi2/DHP-temp/en/api-access.html#must-support).
 - **Кардинальности**: Указывайте кардинальности элементов только если они отличаются от базового FHIR ресурса. Если кардинальность совпадает с базовым ресурсом, не дублируйте эту информацию.
 - **Связки**: Используйте `required` связку для обязательных элементов с фиксированным набором значений. Используйте `extensible` связку когда разрешены дополнительные коды. **Предупреждение**: если использовать `extensible` связку, валидатор не сможет различить опечатки от новых допустимых кодов. Для национальных терминологий предпочитайте создание ValueSet с соответствующими переводами.
+- **Дополнительные связки (Additional Bindings)**: Используйте `^binding.additional` когда есть возможность объединить несколько профилей в один. Это позволяет указать разные ValueSet для разных контекстов использования одного элемента. Пример из UZCoreSocioeconomicObservation:
+
+```fsh
+* value[x] from BenefitsVS (example)
+  * ^binding.additional[+].purpose = #required
+  * ^binding.additional[=].valueSet = Canonical(BenefitsVS)
+  * ^binding.additional[=].usage.code = $socieeconomic-observation#Observation.code
+  * ^binding.additional[=].usage.valueCodeableConcept = $sct#1303306008 "Eligible for benefit"
+  * ^binding.additional[+].purpose = #required
+  * ^binding.additional[=].valueSet = Canonical(EducationVS)
+  * ^binding.additional[=].usage.code = $socieeconomic-observation#Observation.code
+  * ^binding.additional[=].usage.valueCodeableConcept = $sct#105421008 "Educational achievement"
+```
+
+В этом примере один профиль UZCoreSocioeconomicObservation используется для наблюдений о льготах, образовании, профессии и социальном статусе — каждый с соответствующим ValueSet в зависимости от типа наблюдения, вместо создания четырёх отдельных профилей.
 
 ## 4) Терминологические артефакты
 
@@ -343,6 +381,11 @@ Alias: $condition-ver-status = http://terminology.hl7.org/CodeSystem/condition-v
 Alias: $provenance-participant-type = http://terminology.hl7.org/CodeSystem/provenance-participant-type
 ```
 
+**Поддержка файла Aliases.fsh:**
+
+- **Алфавитный порядок**: Поддерживайте алфавитный порядок alias для удобства поиска.
+- **Очистка**: Периодически проверяйте файл на наличие неиспользуемых или дублирующихся alias и удаляйте их.
+
 ### 4.6 Почему всегда нужно создавать Instance‑примеры для профилей
 
 **Зачем:**
@@ -358,6 +401,32 @@ Alias: $provenance-participant-type = http://terminology.hl7.org/CodeSystem/prov
 2. Задайте `InstanceOf` = `<имя_профиля>`.
 3. Заполните все MustSupport элементы и обязательные поля.
 4. При необходимости создайте несколько примеров для разных сценариев (например, для Condition: активное состояние, ремиссия, опровергнутое состояние).
+
+**Конвенции именования примеров (Usage: #example):**
+
+- **Instance**: `example-[descriptive-name]` в нижнем регистре с дефисами (kebab-case)
+- **Title**: `"Example [Profile Title] - [Scenario]"` в Title Case
+- **Description**: Описание сценария на английском языке
+- **Usage**: Всегда указывайте `Usage: #example` для примеров — это обязательное ключевое слово FSH, которое помечает Instance как пример в IG
+
+Примеры правильного именования:
+- `example-headache` для примера головной боли
+- `example-pregnancy` для примера беременности
+- `example-practitioner` для примера врача
+
+**Язык и переводы в примерах:**
+
+- Указывайте `* language = #uz` для установки узбекского языка по умолчанию
+- Для элементов, требующих перевода на русский или каракалпакский, используйте расширение `translation`:
+
+```fsh
+* name.text = "Тошкент шаҳар поликлиникаси"
+* name.text.extension[+].url = $translation-extension
+* name.text.extension[=].extension[0].url = "lang"
+* name.text.extension[=].extension[=].valueCode = #ru
+* name.text.extension[=].extension[+].url = "content"
+* name.text.extension[=].extension[=].valueString = "Ташкентская городская поликлиника"
+```
 
 **Пример Instance для UZCoreCondition:**
 
