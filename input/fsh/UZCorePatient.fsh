@@ -20,8 +20,10 @@ Description: "Uzbekistan Core Patient profile, used to represent patients admini
 * identifier contains nationalId 0..1 MS and
     passportLocal 0..1 MS and
     passportInternational 0..1 MS and
+    passportForeign 0..1 MS and
     birthCertificate 0..1 MS and
     driversLicense 0..1 MS and
+    driversLicenseForeign 0..1 MS and
     diplomaticPassport 0..1 MS and
     healthCardId 0..1 MS and
     militaryId 0..1 MS and
@@ -46,6 +48,16 @@ Description: "Uzbekistan Core Patient profile, used to represent patients admini
   * use = #official
   * value 1..1 MS
 
+* identifier[passportForeign]
+  * ^short = "Foreign passport number"
+  * ^definition = "Passport identifier for foreign nationals. System URI pattern: https://dhp.uz/fhir/core/sid/pid/{country-code}/ppn where {country-code} is the ISO 3166-1 two-letter country code (e.g., 'ee' for Estonia, 'ru' for Russia)."
+  * system 1..1 MS
+  * system from ForeignPassportSystemVS (required)
+  * type 1..1 MS
+  * type = $identifier-type#PPN "Passport number"
+  * use = #official
+  * value 1..1 MS
+
 * identifier[nationalId]
   * system 1..1 MS
   * system = $nationaluniqueID
@@ -65,6 +77,16 @@ Description: "Uzbekistan Core Patient profile, used to represent patients admini
 * identifier[driversLicense]
   * system 1..1 MS
   * system = $driverslicense
+  * type 1..1 MS
+  * type = $identifier-type#DL "Driver's license number"
+  * use = #official
+  * value 1..1 MS
+
+* identifier[driversLicenseForeign]
+  * ^short = "Foreign driver's license number"
+  * ^definition = "Driver's license identifier for foreign nationals. System URI pattern: https://dhp.uz/fhir/core/sid/pid/{country-code}/dl where {country-code} is the ISO 3166-1 two-letter country code (e.g., 'ee' for Estonia, 'ru' for Russia)."
+  * system 1..1 MS
+  * system from ForeignDriversLicenseSystemVS (required)
   * type 1..1 MS
   * type = $identifier-type#DL "Driver's license number"
   * use = #official
@@ -224,11 +246,15 @@ Usage: #example
 
 Instance: example-emma
 InstanceOf: UZCorePatient
-Description: "Example of a patient named Emma"
+Description: "Example of a foreign patient named Emma"
 Usage: #example
 * language = #en
-* identifier[driversLicense]
-  * value = "AG1141110"
+* identifier[passportForeign]
+  * system = "https://dhp.uz/fhir/core/sid/pid/gb/ppn"
+  * value = "533401572"
+* identifier[driversLicenseForeign]
+  * system = "https://dhp.uz/fhir/core/sid/pid/gb/dl"
+  * value = "SANDE805166E99NJ"
 * active = false
 * name
   * use = #anonymous

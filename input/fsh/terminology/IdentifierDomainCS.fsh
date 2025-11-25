@@ -3814,6 +3814,13 @@ Description: """
       * ^property[=].valueCode = #GB
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-GBR"
+    * #https://dhp.uz/fhir/core/sid/pid/gb/dl "Driver's licence number of United Kingdom"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #DL
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #GB
   * #https://dhp.uz/fhir/core/sid/pid/swz "Root identifier for personal identification of country Swaziland"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
