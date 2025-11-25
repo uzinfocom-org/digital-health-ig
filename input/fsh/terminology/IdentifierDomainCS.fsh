@@ -113,7 +113,7 @@ Description: """
         * ^property[=].valueCode = #UZ
         * ^property[+].code = #naming-system
         * ^property[=].valueString = "https://terminology.dhp.uz/fhir/core/NamingSystem/patient-id-uzb-passport-diplomatic"
-    * #https://dhp.uz/fhir/core/sid/pid/uz/ni "National unique individual identifier of Uzbekistan"
+    * #https://dhp.uz/fhir/core/sid/pid/uz/ni "National unique individual identifier of Uzbekistan (PINFL)"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #NI
       * ^property[+].code = #notSelectable
