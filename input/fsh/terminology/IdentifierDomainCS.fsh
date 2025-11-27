@@ -1025,6 +1025,20 @@ Description: """
       * ^property[=].valueCoding = $iso-3166#EG
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-EGY"
+  * #https://dhp.uz/fhir/core/sid/pid/ee "Root identifier for personal identification of country Estonia"
+    * ^property[0].code = #notSelectable
+    * ^property[=].valueBoolean = true
+    * ^property[+].code = #country
+    * ^property[=].valueCoding = $iso-3166#EE
+    * #https://dhp.uz/fhir/core/sid/pid/ee/ppn "Passport number of Estonia"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCoding = $identifier-type#PPN
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCoding = $iso-3166#EE
+      * ^property[+].code = #naming-system
+      * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-EST"
   * #https://dhp.uz/fhir/core/sid/pid/gnq "Root identifier for personal identification of country Equatorial Guinea"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
