@@ -74,7 +74,7 @@ Description: """
 * #https://dhp.uz/fhir/core/sid/pid "Root of identifiers for personal identification"
   * ^property[0].code = #notSelectable
   * ^property[=].valueBoolean = true
-  * #https://dhp.uz/fhir/core/sid/pid/uzb "Root of Uzbekistan identifiers for personal identification"
+  * #https://dhp.uz/fhir/core/sid/pid/uz "Root of Uzbekistan identifiers for personal identification"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -185,7 +185,7 @@ Description: """
       * ^property[=].valueCoding = $iso-3166#UZ
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "https://terminology.dhp.uz/fhir/core/NamingSystem/patient-id-uzb-unknown-patient"
-  * #https://dhp.uz/fhir/core/sid/pid/afg "Root identifier for personal identification of country Afghanistan"
+  * #https://dhp.uz/fhir/core/sid/pid/af "Root identifier for personal identification of country Afghanistan"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -199,7 +199,7 @@ Description: """
       * ^property[=].valueCoding = $iso-3166#AF
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-AFG"
-  * #https://dhp.uz/fhir/core/sid/pid/ala "Root identifier for personal identification of country Åland Islands"
+  * #https://dhp.uz/fhir/core/sid/pid/ax "Root identifier for personal identification of country Åland Islands"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -213,7 +213,7 @@ Description: """
       * ^property[=].valueCoding = $iso-3166#AX
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-ALA"
-  * #https://dhp.uz/fhir/core/sid/pid/alb "Root identifier for personal identification of country Albania"
+  * #https://dhp.uz/fhir/core/sid/pid/al "Root identifier for personal identification of country Albania"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -248,7 +248,7 @@ Description: """
       * ^property[=].valueBoolean = false
       * ^property[+].code = #country
       * ^property[=].valueCoding = $iso-3166#AL
-  * #https://dhp.uz/fhir/core/sid/pid/dza "Root identifier for personal identification of country Algeria"
+  * #https://dhp.uz/fhir/core/sid/pid/dz "Root identifier for personal identification of country Algeria"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -262,7 +262,7 @@ Description: """
       * ^property[=].valueCoding = $iso-3166#DZ
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-DZA"
-  * #https://dhp.uz/fhir/core/sid/pid/asm "Root identifier for personal identification of country American Samoa"
+  * #https://dhp.uz/fhir/core/sid/pid/as "Root identifier for personal identification of country American Samoa"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -276,7 +276,7 @@ Description: """
       * ^property[=].valueCoding = $iso-3166#AS
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-ASM"
-  * #https://dhp.uz/fhir/core/sid/pid/usa "Root identifier for personal identification of country United States of America"
+  * #https://dhp.uz/fhir/core/sid/pid/us "Root identifier for personal identification of country United States of America"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -290,7 +290,7 @@ Description: """
       * ^property[=].valueCoding = $iso-3166#US
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-USA"
-  * #https://dhp.uz/fhir/core/sid/pid/and "Root identifier for personal identification of country Andorra"
+  * #https://dhp.uz/fhir/core/sid/pid/ad "Root identifier for personal identification of country Andorra"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -304,7 +304,7 @@ Description: """
       * ^property[=].valueCoding = $iso-3166#AD
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-AND"
-  * #https://dhp.uz/fhir/core/sid/pid/ago "Root identifier for personal identification of country Angola"
+  * #https://dhp.uz/fhir/core/sid/pid/ao "Root identifier for personal identification of country Angola"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -318,7 +318,7 @@ Description: """
       * ^property[=].valueCoding = $iso-3166#AO
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-AGO"
-  * #https://dhp.uz/fhir/core/sid/pid/aia "Root identifier for personal identification of country Anguilla"
+  * #https://dhp.uz/fhir/core/sid/pid/ai "Root identifier for personal identification of country Anguilla"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -332,7 +332,7 @@ Description: """
       * ^property[=].valueCoding = $iso-3166#AI
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-AIA"
-  * #https://dhp.uz/fhir/core/sid/pid/ata "Root identifier for personal identification of country Antarctica"
+  * #https://dhp.uz/fhir/core/sid/pid/aq "Root identifier for personal identification of country Antarctica"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -346,7 +346,7 @@ Description: """
       * ^property[=].valueCoding = $iso-3166#AQ
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-ATA"
-  * #https://dhp.uz/fhir/core/sid/pid/atg "Root identifier for personal identification of country Antigua and Barbuda"
+  * #https://dhp.uz/fhir/core/sid/pid/ag "Root identifier for personal identification of country Antigua and Barbuda"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -360,7 +360,7 @@ Description: """
       * ^property[=].valueCoding = $iso-3166#AG
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-ATG"
-  * #https://dhp.uz/fhir/core/sid/pid/are "Root identifier for personal identification of country United Arab Emirates"
+  * #https://dhp.uz/fhir/core/sid/pid/ae "Root identifier for personal identification of country United Arab Emirates"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -388,7 +388,7 @@ Description: """
       * ^property[=].valueBoolean = false
       * ^property[+].code = #country
       * ^property[=].valueCoding = $iso-3166#AE
-  * #https://dhp.uz/fhir/core/sid/pid/arg "Root identifier for personal identification of country Argentina"
+  * #https://dhp.uz/fhir/core/sid/pid/ar "Root identifier for personal identification of country Argentina"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -416,7 +416,7 @@ Description: """
       * ^property[=].valueBoolean = false
       * ^property[+].code = #country
       * ^property[=].valueCoding = $iso-3166#AR
-  * #https://dhp.uz/fhir/core/sid/pid/arm "Root identifier for personal identification of country Armenia"
+  * #https://dhp.uz/fhir/core/sid/pid/am "Root identifier for personal identification of country Armenia"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -430,7 +430,7 @@ Description: """
       * ^property[=].valueCoding = $iso-3166#AM
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-ARM"
-  * #https://dhp.uz/fhir/core/sid/pid/abw "Root identifier for personal identification of country Aruba"
+  * #https://dhp.uz/fhir/core/sid/pid/aw "Root identifier for personal identification of country Aruba"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -444,7 +444,7 @@ Description: """
       * ^property[=].valueCoding = $iso-3166#AW
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-ABW"
-  * #https://dhp.uz/fhir/core/sid/pid/aze "Root identifier for personal identification of country Azerbaijan"
+  * #https://dhp.uz/fhir/core/sid/pid/az "Root identifier for personal identification of country Azerbaijan"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -458,7 +458,7 @@ Description: """
       * ^property[=].valueCoding = $iso-3166#AZ
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-AZE"
-  * #https://dhp.uz/fhir/core/sid/pid/aus "Root identifier for personal identification of country Australia"
+  * #https://dhp.uz/fhir/core/sid/pid/au "Root identifier for personal identification of country Australia"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -472,7 +472,7 @@ Description: """
       * ^property[=].valueCoding = $iso-3166#AU
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-AUS"
-  * #https://dhp.uz/fhir/core/sid/pid/aut "Root identifier for personal identification of country Austria"
+  * #https://dhp.uz/fhir/core/sid/pid/at "Root identifier for personal identification of country Austria"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -486,7 +486,7 @@ Description: """
       * ^property[=].valueCoding = $iso-3166#AT
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-AUT"
-  * #https://dhp.uz/fhir/core/sid/pid/bhs "Root identifier for personal identification of country Bahamas"
+  * #https://dhp.uz/fhir/core/sid/pid/bs "Root identifier for personal identification of country Bahamas"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -500,7 +500,7 @@ Description: """
       * ^property[=].valueCoding = $iso-3166#BS
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-BHS"
-  * #https://dhp.uz/fhir/core/sid/pid/bhr "Root identifier for personal identification of country Bahrain"
+  * #https://dhp.uz/fhir/core/sid/pid/bh "Root identifier for personal identification of country Bahrain"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -528,7 +528,7 @@ Description: """
       * ^property[=].valueBoolean = false
       * ^property[+].code = #country
       * ^property[=].valueCoding = $iso-3166#BH
-  * #https://dhp.uz/fhir/core/sid/pid/bgd "Root identifier for personal identification of country Bangladesh"
+  * #https://dhp.uz/fhir/core/sid/pid/bd "Root identifier for personal identification of country Bangladesh"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -549,7 +549,7 @@ Description: """
       * ^property[=].valueBoolean = false
       * ^property[+].code = #country
       * ^property[=].valueCoding = $iso-3166#BD
-  * #https://dhp.uz/fhir/core/sid/pid/brb "Root identifier for personal identification of country Barbados"
+  * #https://dhp.uz/fhir/core/sid/pid/bb "Root identifier for personal identification of country Barbados"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -563,7 +563,7 @@ Description: """
       * ^property[=].valueCoding = $iso-3166#BB
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-BRB"
-  * #https://dhp.uz/fhir/core/sid/pid/plw "Root identifier for personal identification of country Palau"
+  * #https://dhp.uz/fhir/core/sid/pid/pw "Root identifier for personal identification of country Palau"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -577,7 +577,7 @@ Description: """
       * ^property[=].valueCoding = $iso-3166#PW
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-PLW"
-  * #https://dhp.uz/fhir/core/sid/pid/bel "Root identifier for personal identification of country Belgium"
+  * #https://dhp.uz/fhir/core/sid/pid/be "Root identifier for personal identification of country Belgium"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -612,7 +612,7 @@ Description: """
       * ^property[=].valueBoolean = false
       * ^property[+].code = #country
       * ^property[=].valueCoding = $iso-3166#BE
-  * #https://dhp.uz/fhir/core/sid/pid/blz "Root identifier for personal identification of country Belize"
+  * #https://dhp.uz/fhir/core/sid/pid/bz "Root identifier for personal identification of country Belize"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -626,7 +626,7 @@ Description: """
       * ^property[=].valueCoding = $iso-3166#BZ
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-BLZ"
-  * #https://dhp.uz/fhir/core/sid/pid/ben "Root identifier for personal identification of country Benin"
+  * #https://dhp.uz/fhir/core/sid/pid/bj "Root identifier for personal identification of country Benin"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -640,7 +640,7 @@ Description: """
       * ^property[=].valueCoding = $iso-3166#BJ
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-BEN"
-  * #https://dhp.uz/fhir/core/sid/pid/bmu "Root identifier for personal identification of country Bermuda"
+  * #https://dhp.uz/fhir/core/sid/pid/bm "Root identifier for personal identification of country Bermuda"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -654,7 +654,7 @@ Description: """
       * ^property[=].valueCoding = $iso-3166#BM
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-BMU"
-  * #https://dhp.uz/fhir/core/sid/pid/btn "Root identifier for personal identification of country Bhutan"
+  * #https://dhp.uz/fhir/core/sid/pid/bt "Root identifier for personal identification of country Bhutan"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -668,7 +668,7 @@ Description: """
       * ^property[=].valueCoding = $iso-3166#BT
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-BTN"
-  * #https://dhp.uz/fhir/core/sid/pid/bol "Root identifier for personal identification of country Bolivia"
+  * #https://dhp.uz/fhir/core/sid/pid/bo "Root identifier for personal identification of country Bolivia"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -682,7 +682,7 @@ Description: """
       * ^property[=].valueCoding = $iso-3166#BO
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-BOL"
-  * #https://dhp.uz/fhir/core/sid/pid/bih "Root identifier for personal identification of country Bosnia and Hertzegovina"
+  * #https://dhp.uz/fhir/core/sid/pid/ba "Root identifier for personal identification of country Bosnia and Hertzegovina"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -717,7 +717,7 @@ Description: """
       * ^property[=].valueBoolean = false
       * ^property[+].code = #country
       * ^property[=].valueCoding = $iso-3166#BA
-  * #https://dhp.uz/fhir/core/sid/pid/bwa "Root identifier for personal identification of country Botswana"
+  * #https://dhp.uz/fhir/core/sid/pid/bw "Root identifier for personal identification of country Botswana"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -731,7 +731,7 @@ Description: """
       * ^property[=].valueCoding = $iso-3166#BW
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-BWA"
-  * #https://dhp.uz/fhir/core/sid/pid/bvt "Root identifier for personal identification of country Bouvet Island"
+  * #https://dhp.uz/fhir/core/sid/pid/bv "Root identifier for personal identification of country Bouvet Island"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -745,7 +745,7 @@ Description: """
       * ^property[=].valueCoding = $iso-3166#BV
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-BVT"
-  * #https://dhp.uz/fhir/core/sid/pid/bra "Root identifier for personal identification of country Brazil"
+  * #https://dhp.uz/fhir/core/sid/pid/br "Root identifier for personal identification of country Brazil"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -766,7 +766,7 @@ Description: """
       * ^property[=].valueBoolean = false
       * ^property[+].code = #country
       * ^property[=].valueCoding = $iso-3166#BR
-  * #https://dhp.uz/fhir/core/sid/pid/iot "Root identifier for personal identification of country British Indian Ocean Territory"
+  * #https://dhp.uz/fhir/core/sid/pid/io "Root identifier for personal identification of country British Indian Ocean Territory"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -780,7 +780,7 @@ Description: """
       * ^property[=].valueCoding = $iso-3166#IO
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-IOT"
-  * #https://dhp.uz/fhir/core/sid/pid/vgb "Root identifier for personal identification of country Virgin Islands (British)"
+  * #https://dhp.uz/fhir/core/sid/pid/vg "Root identifier for personal identification of country Virgin Islands (British)"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -794,7 +794,7 @@ Description: """
       * ^property[=].valueCoding = $iso-3166#VG
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-VGB"
-  * #https://dhp.uz/fhir/core/sid/pid/brn "Root identifier for personal identification of country Brunei Darussalam"
+  * #https://dhp.uz/fhir/core/sid/pid/bn "Root identifier for personal identification of country Brunei Darussalam"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -808,7 +808,7 @@ Description: """
       * ^property[=].valueCoding = $iso-3166#BN
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-BRN"
-  * #https://dhp.uz/fhir/core/sid/pid/bgr "Root identifier for personal identification of country Bulgaria"
+  * #https://dhp.uz/fhir/core/sid/pid/bg "Root identifier for personal identification of country Bulgaria"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -843,7 +843,7 @@ Description: """
       * ^property[=].valueBoolean = false
       * ^property[+].code = #country
       * ^property[=].valueCoding = $iso-3166#BG
-  * #https://dhp.uz/fhir/core/sid/pid/bfa "Root identifier for personal identification of country Burkina Faso"
+  * #https://dhp.uz/fhir/core/sid/pid/bf "Root identifier for personal identification of country Burkina Faso"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -857,7 +857,7 @@ Description: """
       * ^property[=].valueCoding = $iso-3166#BF
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-BFA"
-  * #https://dhp.uz/fhir/core/sid/pid/bdi "Root identifier for personal identification of country Burundi"
+  * #https://dhp.uz/fhir/core/sid/pid/bi "Root identifier for personal identification of country Burundi"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -871,7 +871,7 @@ Description: """
       * ^property[=].valueCoding = $iso-3166#BI
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-BDI"
-  * #https://dhp.uz/fhir/core/sid/pid/cpv "Root identifier for personal identification of country Cape Verde"
+  * #https://dhp.uz/fhir/core/sid/pid/cv "Root identifier for personal identification of country Cape Verde"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -885,7 +885,7 @@ Description: """
       * ^property[=].valueCoding = $iso-3166#CV
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-CPV"
-  * #https://dhp.uz/fhir/core/sid/pid/col "Root identifier for personal identification of country Colombia"
+  * #https://dhp.uz/fhir/core/sid/pid/co "Root identifier for personal identification of country Colombia"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -913,7 +913,7 @@ Description: """
       * ^property[=].valueBoolean = false
       * ^property[+].code = #country
       * ^property[=].valueCoding = $iso-3166#CO
-  * #https://dhp.uz/fhir/core/sid/pid/cok "Root identifier for personal identification of country Cook Islands"
+  * #https://dhp.uz/fhir/core/sid/pid/ck "Root identifier for personal identification of country Cook Islands"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -927,7 +927,7 @@ Description: """
       * ^property[=].valueCoding = $iso-3166#CK
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-COK"
-  * #https://dhp.uz/fhir/core/sid/pid/cri "Root identifier for personal identification of country Costa Rica"
+  * #https://dhp.uz/fhir/core/sid/pid/cr "Root identifier for personal identification of country Costa Rica"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -941,7 +941,7 @@ Description: """
       * ^property[=].valueCoding = $iso-3166#CR
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-CRI"
-  * #https://dhp.uz/fhir/core/sid/pid/civ "Root identifier for personal identification of country Cote d'Ivoire"
+  * #https://dhp.uz/fhir/core/sid/pid/ci "Root identifier for personal identification of country Cote d'Ivoire"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -955,7 +955,7 @@ Description: """
       * ^property[=].valueCoding = $iso-3166#CI
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-CIV"
-  * #https://dhp.uz/fhir/core/sid/pid/dji "Root identifier for personal identification of country Djibouti"
+  * #https://dhp.uz/fhir/core/sid/pid/dj "Root identifier for personal identification of country Djibouti"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -969,7 +969,7 @@ Description: """
       * ^property[=].valueCoding = $iso-3166#DJ
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-DJI"
-  * #https://dhp.uz/fhir/core/sid/pid/dma "Root identifier for personal identification of country Dominica"
+  * #https://dhp.uz/fhir/core/sid/pid/dm "Root identifier for personal identification of country Dominica"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -983,7 +983,7 @@ Description: """
       * ^property[=].valueCoding = $iso-3166#DM
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-DMA"
-  * #https://dhp.uz/fhir/core/sid/pid/dom "Root identifier for personal identification of country Dominican Republic"
+  * #https://dhp.uz/fhir/core/sid/pid/do "Root identifier for personal identification of country Dominican Republic"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -997,7 +997,7 @@ Description: """
       * ^property[=].valueCoding = $iso-3166#DO
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-DOM"
-  * #https://dhp.uz/fhir/core/sid/pid/ecu "Root identifier for personal identification of country Ecuador"
+  * #https://dhp.uz/fhir/core/sid/pid/ec "Root identifier for personal identification of country Ecuador"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -1011,7 +1011,7 @@ Description: """
       * ^property[=].valueCoding = $iso-3166#EC
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-ECU"
-  * #https://dhp.uz/fhir/core/sid/pid/egy "Root identifier for personal identification of country Egypt"
+  * #https://dhp.uz/fhir/core/sid/pid/eg "Root identifier for personal identification of country Egypt"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -1039,7 +1039,7 @@ Description: """
       * ^property[=].valueCoding = $iso-3166#EE
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-EST"
-  * #https://dhp.uz/fhir/core/sid/pid/gnq "Root identifier for personal identification of country Equatorial Guinea"
+  * #https://dhp.uz/fhir/core/sid/pid/gq "Root identifier for personal identification of country Equatorial Guinea"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -1053,7 +1053,7 @@ Description: """
       * ^property[=].valueCoding = $iso-3166#GQ
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-GNQ"
-  * #https://dhp.uz/fhir/core/sid/pid/slv "Root identifier for personal identification of country El Salvador"
+  * #https://dhp.uz/fhir/core/sid/pid/sv "Root identifier for personal identification of country El Salvador"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -1067,7 +1067,7 @@ Description: """
       * ^property[=].valueCoding = $iso-3166#SV
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-SLV"
-  * #https://dhp.uz/fhir/core/sid/pid/eri "Root identifier for personal identification of country Eritrea"
+  * #https://dhp.uz/fhir/core/sid/pid/er "Root identifier for personal identification of country Eritrea"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -1081,7 +1081,7 @@ Description: """
       * ^property[=].valueCoding = $iso-3166#ER
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-ERI"
-  * #https://dhp.uz/fhir/core/sid/pid/eth "Root identifier for personal identification of country Ethiopia"
+  * #https://dhp.uz/fhir/core/sid/pid/et "Root identifier for personal identification of country Ethiopia"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -1095,7 +1095,7 @@ Description: """
       * ^property[=].valueCoding = $iso-3166#ET
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-ETH"
-  * #https://dhp.uz/fhir/core/sid/pid/flk "Root identifier for personal identification of country Falkland Islands (Malvinas)"
+  * #https://dhp.uz/fhir/core/sid/pid/fk "Root identifier for personal identification of country Falkland Islands (Malvinas)"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -1109,7 +1109,7 @@ Description: """
       * ^property[=].valueCoding = $iso-3166#FK
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-FLK"
-  * #https://dhp.uz/fhir/core/sid/pid/fji "Root identifier for personal identification of country Fiji"
+  * #https://dhp.uz/fhir/core/sid/pid/fj "Root identifier for personal identification of country Fiji"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -1123,7 +1123,7 @@ Description: """
       * ^property[=].valueCoding = $iso-3166#FJ
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-FJI"
-  * #https://dhp.uz/fhir/core/sid/pid/phl "Root identifier for personal identification of country Philippines"
+  * #https://dhp.uz/fhir/core/sid/pid/ph "Root identifier for personal identification of country Philippines"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -1137,7 +1137,7 @@ Description: """
       * ^property[=].valueCoding = $iso-3166#PH
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-PHL"
-  * #https://dhp.uz/fhir/core/sid/pid/fro "Root identifier for personal identification of country Faroe Islands"
+  * #https://dhp.uz/fhir/core/sid/pid/fo "Root identifier for personal identification of country Faroe Islands"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -1151,7 +1151,7 @@ Description: """
       * ^property[=].valueCoding = $iso-3166#FO
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-FRO"
-  * #https://dhp.uz/fhir/core/sid/pid/gab "Root identifier for personal identification of country Gabon"
+  * #https://dhp.uz/fhir/core/sid/pid/ga "Root identifier for personal identification of country Gabon"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -1165,7 +1165,7 @@ Description: """
       * ^property[=].valueCoding = $iso-3166#GA
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-GAB"
-  * #https://dhp.uz/fhir/core/sid/pid/gmb "Root identifier for personal identification of country Gambia"
+  * #https://dhp.uz/fhir/core/sid/pid/gm "Root identifier for personal identification of country Gambia"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -1179,7 +1179,7 @@ Description: """
       * ^property[=].valueCoding = $iso-3166#GM
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-GMB"
-  * #https://dhp.uz/fhir/core/sid/pid/gha "Root identifier for personal identification of country Ghana"
+  * #https://dhp.uz/fhir/core/sid/pid/gh "Root identifier for personal identification of country Ghana"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -1193,7 +1193,7 @@ Description: """
       * ^property[=].valueCoding = $iso-3166#GH
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-GHA"
-  * #https://dhp.uz/fhir/core/sid/pid/gib "Root identifier for personal identification of country Gibraltar"
+  * #https://dhp.uz/fhir/core/sid/pid/gi "Root identifier for personal identification of country Gibraltar"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -1207,7 +1207,7 @@ Description: """
       * ^property[=].valueCoding = $iso-3166#GI
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-GIB"
-  * #https://dhp.uz/fhir/core/sid/pid/grd "Root identifier for personal identification of country Grenada"
+  * #https://dhp.uz/fhir/core/sid/pid/gd "Root identifier for personal identification of country Grenada"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -1221,7 +1221,7 @@ Description: """
       * ^property[=].valueCoding = $iso-3166#GD
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-GRD"
-  * #https://dhp.uz/fhir/core/sid/pid/geo "Root identifier for personal identification of country Georgia"
+  * #https://dhp.uz/fhir/core/sid/pid/ge "Root identifier for personal identification of country Georgia"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -1256,7 +1256,7 @@ Description: """
       * ^property[=].valueBoolean = false
       * ^property[+].code = #country
       * ^property[=].valueCoding = $iso-3166#GE
-  * #https://dhp.uz/fhir/core/sid/pid/grl "Root identifier for personal identification of country Greenland"
+  * #https://dhp.uz/fhir/core/sid/pid/gl "Root identifier for personal identification of country Greenland"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -1270,7 +1270,7 @@ Description: """
       * ^property[=].valueCoding = $iso-3166#GL
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-GRL"
-  * #https://dhp.uz/fhir/core/sid/pid/glp "Root identifier for personal identification of country Guadeloupe"
+  * #https://dhp.uz/fhir/core/sid/pid/gp "Root identifier for personal identification of country Guadeloupe"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -1284,7 +1284,7 @@ Description: """
       * ^property[=].valueCoding = $iso-3166#GP
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-GLP"
-  * #https://dhp.uz/fhir/core/sid/pid/guf "Root identifier for personal identification of country French Guiana"
+  * #https://dhp.uz/fhir/core/sid/pid/gf "Root identifier for personal identification of country French Guiana"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -1298,7 +1298,7 @@ Description: """
       * ^property[=].valueCoding = $iso-3166#GF
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-GUF"
-  * #https://dhp.uz/fhir/core/sid/pid/gum "Root identifier for personal identification of country Guam"
+  * #https://dhp.uz/fhir/core/sid/pid/gu "Root identifier for personal identification of country Guam"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -1312,7 +1312,7 @@ Description: """
       * ^property[=].valueCoding = $iso-3166#GU
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-GUM"
-  * #https://dhp.uz/fhir/core/sid/pid/gtm "Root identifier for personal identification of country Guatemala"
+  * #https://dhp.uz/fhir/core/sid/pid/gt "Root identifier for personal identification of country Guatemala"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -1326,7 +1326,7 @@ Description: """
       * ^property[=].valueCoding = $iso-3166#GT
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-GTM"
-  * #https://dhp.uz/fhir/core/sid/pid/ggy "Root identifier for personal identification of country Guernsey"
+  * #https://dhp.uz/fhir/core/sid/pid/gg "Root identifier for personal identification of country Guernsey"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -1340,7 +1340,7 @@ Description: """
       * ^property[=].valueCoding = $iso-3166#GG
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-GGY"
-  * #https://dhp.uz/fhir/core/sid/pid/gin "Root identifier for personal identification of country Guinea"
+  * #https://dhp.uz/fhir/core/sid/pid/gn "Root identifier for personal identification of country Guinea"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -1354,7 +1354,7 @@ Description: """
       * ^property[=].valueCoding = $iso-3166#GN
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-GIN"
-  * #https://dhp.uz/fhir/core/sid/pid/gnb "Root identifier for personal identification of country Guinea-Bissau"
+  * #https://dhp.uz/fhir/core/sid/pid/gw "Root identifier for personal identification of country Guinea-Bissau"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -1368,7 +1368,7 @@ Description: """
       * ^property[=].valueCoding = $iso-3166#GW
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-GNB"
-  * #https://dhp.uz/fhir/core/sid/pid/guy "Root identifier for personal identification of country Guyana"
+  * #https://dhp.uz/fhir/core/sid/pid/gy "Root identifier for personal identification of country Guyana"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -1382,7 +1382,7 @@ Description: """
       * ^property[=].valueCoding = $iso-3166#GY
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-GUY"
-  * #https://dhp.uz/fhir/core/sid/pid/hti "Root identifier for personal identification of country Haiti"
+  * #https://dhp.uz/fhir/core/sid/pid/ht "Root identifier for personal identification of country Haiti"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -1396,7 +1396,7 @@ Description: """
       * ^property[=].valueCoding = $iso-3166#HT
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-HTI"
-  * #https://dhp.uz/fhir/core/sid/pid/hmd "Root identifier for personal identification of country Heard and McDonald Islands"
+  * #https://dhp.uz/fhir/core/sid/pid/hm "Root identifier for personal identification of country Heard and McDonald Islands"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -1410,7 +1410,7 @@ Description: """
       * ^property[=].valueCoding = $iso-3166#HM
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-HMD"
-  * #https://dhp.uz/fhir/core/sid/pid/mac "Root identifier for personal identification of country Macao"
+  * #https://dhp.uz/fhir/core/sid/pid/mo "Root identifier for personal identification of country Macao"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -1431,7 +1431,7 @@ Description: """
       * ^property[=].valueBoolean = false
       * ^property[+].code = #country
       * ^property[=].valueCoding = $iso-3166#MO
-  * #https://dhp.uz/fhir/core/sid/pid/hkg "Root identifier for personal identification of country Hong Kong"
+  * #https://dhp.uz/fhir/core/sid/pid/hk "Root identifier for personal identification of country Hong Kong"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -1452,7 +1452,7 @@ Description: """
       * ^property[=].valueBoolean = false
       * ^property[+].code = #country
       * ^property[=].valueCoding = $iso-3166#HK
-  * #https://dhp.uz/fhir/core/sid/pid/chn "Root identifier for personal identification of country China"
+  * #https://dhp.uz/fhir/core/sid/pid/cn "Root identifier for personal identification of country China"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -1473,7 +1473,7 @@ Description: """
       * ^property[=].valueBoolean = false
       * ^property[+].code = #country
       * ^property[=].valueCoding = $iso-3166#CN
-  * #https://dhp.uz/fhir/core/sid/pid/esp "Root identifier for personal identification of country Spain"
+  * #https://dhp.uz/fhir/core/sid/pid/es "Root identifier for personal identification of country Spain"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -1508,7 +1508,7 @@ Description: """
       * ^property[=].valueBoolean = false
       * ^property[+].code = #country
       * ^property[=].valueCoding = $iso-3166#ES
-  * #https://dhp.uz/fhir/core/sid/pid/bes "Root identifier for personal identification of country Bonaire, Saint Eustatius and Saba"
+  * #https://dhp.uz/fhir/core/sid/pid/bq "Root identifier for personal identification of country Bonaire, Saint Eustatius and Saba"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -1522,7 +1522,7 @@ Description: """
       * ^property[=].valueCoding = $iso-3166#BQ
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-BES"
-  * #https://dhp.uz/fhir/core/sid/pid/cuw "Root identifier for personal identification of country Curaçao"
+  * #https://dhp.uz/fhir/core/sid/pid/cw "Root identifier for personal identification of country Curaçao"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -1536,7 +1536,7 @@ Description: """
       * ^property[=].valueCoding = $iso-3166#CW
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-CUW"
-  * #https://dhp.uz/fhir/core/sid/pid/sxm "Root identifier for personal identification of country Sint Maarten (Dutch part)"
+  * #https://dhp.uz/fhir/core/sid/pid/sx "Root identifier for personal identification of country Sint Maarten (Dutch part)"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -1550,7 +1550,7 @@ Description: """
       * ^property[=].valueCoding = $iso-3166#SX
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-SXM"
-  * #https://dhp.uz/fhir/core/sid/pid/hnd "Root identifier for personal identification of country Honduras"
+  * #https://dhp.uz/fhir/core/sid/pid/hn "Root identifier for personal identification of country Honduras"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -1564,7 +1564,7 @@ Description: """
       * ^property[=].valueCoding = $iso-3166#HN
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-HND"
-  * #https://dhp.uz/fhir/core/sid/pid/hrv "Root identifier for personal identification of country Croatia"
+  * #https://dhp.uz/fhir/core/sid/pid/hr "Root identifier for personal identification of country Croatia"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -1599,7 +1599,7 @@ Description: """
       * ^property[=].valueBoolean = false
       * ^property[+].code = #country
       * ^property[=].valueCoding = $iso-3166#HR
-  * #https://dhp.uz/fhir/core/sid/pid/irl "Root identifier for personal identification of country Ireland"
+  * #https://dhp.uz/fhir/core/sid/pid/ie "Root identifier for personal identification of country Ireland"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -1613,7 +1613,7 @@ Description: """
       * ^property[=].valueCoding = $iso-3166#IE
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-IRL"
-  * #https://dhp.uz/fhir/core/sid/pid/isr "Root identifier for personal identification of country Israel"
+  * #https://dhp.uz/fhir/core/sid/pid/il "Root identifier for personal identification of country Israel"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -1634,7 +1634,7 @@ Description: """
       * ^property[=].valueBoolean = false
       * ^property[+].code = #country
       * ^property[=].valueCoding = $iso-3166#IL
-  * #https://dhp.uz/fhir/core/sid/pid/ind "Root identifier for personal identification of country India"
+  * #https://dhp.uz/fhir/core/sid/pid/in "Root identifier for personal identification of country India"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -1648,7 +1648,7 @@ Description: """
       * ^property[=].valueCoding = $iso-3166#IN
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-IND"
-  * #https://dhp.uz/fhir/core/sid/pid/idn "Root identifier for personal identification of country Indonesia"
+  * #https://dhp.uz/fhir/core/sid/pid/id "Root identifier for personal identification of country Indonesia"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -1669,7 +1669,7 @@ Description: """
       * ^property[=].valueBoolean = false
       * ^property[+].code = #country
       * ^property[=].valueCoding = $iso-3166#ID
-  * #https://dhp.uz/fhir/core/sid/pid/irq "Root identifier for personal identification of country Iraq"
+  * #https://dhp.uz/fhir/core/sid/pid/iq "Root identifier for personal identification of country Iraq"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -1683,7 +1683,7 @@ Description: """
       * ^property[=].valueCoding = $iso-3166#IQ
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-IRQ"
-  * #https://dhp.uz/fhir/core/sid/pid/irn "Root identifier for personal identification of country Iran"
+  * #https://dhp.uz/fhir/core/sid/pid/ir "Root identifier for personal identification of country Iran"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -1697,7 +1697,7 @@ Description: """
       * ^property[=].valueCoding = $iso-3166#IR
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-IRN"
-  * #https://dhp.uz/fhir/core/sid/pid/isl "Root identifier for personal identification of country Iceland"
+  * #https://dhp.uz/fhir/core/sid/pid/is "Root identifier for personal identification of country Iceland"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -1725,7 +1725,7 @@ Description: """
       * ^property[=].valueBoolean = false
       * ^property[+].code = #country
       * ^property[=].valueCoding = $iso-3166#IS
-  * #https://dhp.uz/fhir/core/sid/pid/ita "Root identifier for personal identification of country Italy"
+  * #https://dhp.uz/fhir/core/sid/pid/it "Root identifier for personal identification of country Italy"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -1760,7 +1760,7 @@ Description: """
       * ^property[=].valueBoolean = false
       * ^property[+].code = #country
       * ^property[=].valueCoding = $iso-3166#IT
-  * #https://dhp.uz/fhir/core/sid/pid/jpn "Root identifier for personal identification of country Japan"
+  * #https://dhp.uz/fhir/core/sid/pid/jp "Root identifier for personal identification of country Japan"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -1774,7 +1774,7 @@ Description: """
       * ^property[=].valueCoding = $iso-3166#JP
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-JPN"
-  * #https://dhp.uz/fhir/core/sid/pid/jam "Root identifier for personal identification of country Jamaica"
+  * #https://dhp.uz/fhir/core/sid/pid/jm "Root identifier for personal identification of country Jamaica"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -1788,7 +1788,7 @@ Description: """
       * ^property[=].valueCoding = $iso-3166#JM
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-JAM"
-  * #https://dhp.uz/fhir/core/sid/pid/yem "Root identifier for personal identification of country Yemen"
+  * #https://dhp.uz/fhir/core/sid/pid/ye "Root identifier for personal identification of country Yemen"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -1802,7 +1802,7 @@ Description: """
       * ^property[=].valueCoding = $iso-3166#YE
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-YEM"
-  * #https://dhp.uz/fhir/core/sid/pid/jey "Root identifier for personal identification of country Jersey"
+  * #https://dhp.uz/fhir/core/sid/pid/je "Root identifier for personal identification of country Jersey"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -1816,7 +1816,7 @@ Description: """
       * ^property[=].valueCoding = $iso-3166#JE
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-JEY"
-  * #https://dhp.uz/fhir/core/sid/pid/jor "Root identifier for personal identification of country Jordan"
+  * #https://dhp.uz/fhir/core/sid/pid/jo "Root identifier for personal identification of country Jordan"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -1830,7 +1830,7 @@ Description: """
       * ^property[=].valueCoding = $iso-3166#JO
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-JOR"
-  * #https://dhp.uz/fhir/core/sid/pid/cxr "Root identifier for personal identification of country Christmas Island"
+  * #https://dhp.uz/fhir/core/sid/pid/cx "Root identifier for personal identification of country Christmas Island"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -1844,7 +1844,7 @@ Description: """
       * ^property[=].valueCoding = $iso-3166#CX
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-CXR"
-  * #https://dhp.uz/fhir/core/sid/pid/cym "Root identifier for personal identification of country Cayman Islands"
+  * #https://dhp.uz/fhir/core/sid/pid/ky "Root identifier for personal identification of country Cayman Islands"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -1858,7 +1858,7 @@ Description: """
       * ^property[=].valueCoding = $iso-3166#KY
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-CYM"
-  * #https://dhp.uz/fhir/core/sid/pid/khm "Root identifier for personal identification of country Cambodia"
+  * #https://dhp.uz/fhir/core/sid/pid/kh "Root identifier for personal identification of country Cambodia"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -1872,7 +1872,7 @@ Description: """
       * ^property[=].valueCoding = $iso-3166#KH
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-KHM"
-  * #https://dhp.uz/fhir/core/sid/pid/cmr "Root identifier for personal identification of country Cameroon"
+  * #https://dhp.uz/fhir/core/sid/pid/cm "Root identifier for personal identification of country Cameroon"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -1886,7 +1886,7 @@ Description: """
       * ^property[=].valueCoding = $iso-3166#CM
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-CMR"
-  * #https://dhp.uz/fhir/core/sid/pid/can "Root identifier for personal identification of country Canada"
+  * #https://dhp.uz/fhir/core/sid/pid/ca "Root identifier for personal identification of country Canada"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -1900,7 +1900,7 @@ Description: """
       * ^property[=].valueCoding = $iso-3166#CA
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-CAN"
-  * #https://dhp.uz/fhir/core/sid/pid/kaz "Root identifier for personal identification of country Kazakhstan"
+  * #https://dhp.uz/fhir/core/sid/pid/kz "Root identifier for personal identification of country Kazakhstan"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -1935,7 +1935,7 @@ Description: """
       * ^property[=].valueBoolean = false
       * ^property[+].code = #country
       * ^property[=].valueCoding = $iso-3166#KZ
-  * #https://dhp.uz/fhir/core/sid/pid/qat "Root identifier for personal identification of country Qatar"
+  * #https://dhp.uz/fhir/core/sid/pid/qa "Root identifier for personal identification of country Qatar"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -1949,7 +1949,7 @@ Description: """
       * ^property[=].valueCoding = $iso-3166#QA
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-QAT"
-  * #https://dhp.uz/fhir/core/sid/pid/ken "Root identifier for personal identification of country Kenya"
+  * #https://dhp.uz/fhir/core/sid/pid/ke "Root identifier for personal identification of country Kenya"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -1963,7 +1963,7 @@ Description: """
       * ^property[=].valueCoding = $iso-3166#KE
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-KEN"
-  * #https://dhp.uz/fhir/core/sid/pid/caf "Root identifier for personal identification of country Central African Republik"
+  * #https://dhp.uz/fhir/core/sid/pid/cf "Root identifier for personal identification of country Central African Republik"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -1977,7 +1977,7 @@ Description: """
       * ^property[=].valueCoding = $iso-3166#CF
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-CAF"
-  * #https://dhp.uz/fhir/core/sid/pid/kgz "Root identifier for personal identification of country Kyrgyzstan"
+  * #https://dhp.uz/fhir/core/sid/pid/kg "Root identifier for personal identification of country Kyrgyzstan"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -1991,7 +1991,7 @@ Description: """
       * ^property[=].valueCoding = $iso-3166#KG
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-KGZ"
-  * #https://dhp.uz/fhir/core/sid/pid/kir "Root identifier for personal identification of country Kiribati"
+  * #https://dhp.uz/fhir/core/sid/pid/ki "Root identifier for personal identification of country Kiribati"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -2005,7 +2005,7 @@ Description: """
       * ^property[=].valueCoding = $iso-3166#KI
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-KIR"
-  * #https://dhp.uz/fhir/core/sid/pid/com "Root identifier for personal identification of country Comoros"
+  * #https://dhp.uz/fhir/core/sid/pid/km "Root identifier for personal identification of country Comoros"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -2019,7 +2019,7 @@ Description: """
       * ^property[=].valueCoding = $iso-3166#KM
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-COM"
-  * #https://dhp.uz/fhir/core/sid/pid/cod "Root identifier for personal identification of country Congo, the Democratic Republik of the"
+  * #https://dhp.uz/fhir/core/sid/pid/cd "Root identifier for personal identification of country Congo, the Democratic Republik of the"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -2033,7 +2033,7 @@ Description: """
       * ^property[=].valueCoding = $iso-3166#CD
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-COD"
-  * #https://dhp.uz/fhir/core/sid/pid/cog "Root identifier for personal identification of country Congo"
+  * #https://dhp.uz/fhir/core/sid/pid/cg "Root identifier for personal identification of country Congo"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -2047,7 +2047,7 @@ Description: """
       * ^property[=].valueCoding = $iso-3166#CG
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-COG"
-  * #https://dhp.uz/fhir/core/sid/pid/cck "Root identifier for personal identification of country Cocos (Keeling) Islands"
+  * #https://dhp.uz/fhir/core/sid/pid/cc "Root identifier for personal identification of country Cocos (Keeling) Islands"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -2061,7 +2061,7 @@ Description: """
       * ^property[=].valueCoding = $iso-3166#CC
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-CCK"
-  * #https://dhp.uz/fhir/core/sid/pid/prk "Root identifier for personal identification of country Korea, Democratic People's Republic of"
+  * #https://dhp.uz/fhir/core/sid/pid/kp "Root identifier for personal identification of country Korea, Democratic People's Republic of"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -2075,7 +2075,7 @@ Description: """
       * ^property[=].valueCoding = $iso-3166#KP
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-PRK"
-  * #https://dhp.uz/fhir/core/sid/pid/kor "Root identifier for personal identification of country Korea, Republic of"
+  * #https://dhp.uz/fhir/core/sid/pid/kr "Root identifier for personal identification of country Korea, Republic of"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -2089,7 +2089,7 @@ Description: """
       * ^property[=].valueCoding = $iso-3166#KR
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-KOR"
-  * #https://dhp.uz/fhir/core/sid/pid/grc "Root identifier for personal identification of country Greece"
+  * #https://dhp.uz/fhir/core/sid/pid/gr "Root identifier for personal identification of country Greece"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -2103,7 +2103,7 @@ Description: """
       * ^property[=].valueCoding = $iso-3166#GR
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-GRC"
-  * #https://dhp.uz/fhir/core/sid/pid/cub "Root identifier for personal identification of country Cuba"
+  * #https://dhp.uz/fhir/core/sid/pid/cu "Root identifier for personal identification of country Cuba"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -2117,7 +2117,7 @@ Description: """
       * ^property[=].valueCoding = $iso-3166#CU
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-CUB"
-  * #https://dhp.uz/fhir/core/sid/pid/kwt "Root identifier for personal identification of country Kuwait"
+  * #https://dhp.uz/fhir/core/sid/pid/kw "Root identifier for personal identification of country Kuwait"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -2138,7 +2138,7 @@ Description: """
       * ^property[=].valueBoolean = false
       * ^property[+].code = #country
       * ^property[=].valueCoding = $iso-3166#KW
-  * #https://dhp.uz/fhir/core/sid/pid/cyp "Root identifier for personal identification of country Cyprus"
+  * #https://dhp.uz/fhir/core/sid/pid/cy "Root identifier for personal identification of country Cyprus"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -2152,7 +2152,7 @@ Description: """
       * ^property[=].valueCoding = $iso-3166#CY
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-CYP"
-  * #https://dhp.uz/fhir/core/sid/pid/lao "Root identifier for personal identification of country Lao People's Democratic Republic"
+  * #https://dhp.uz/fhir/core/sid/pid/la "Root identifier for personal identification of country Lao People's Democratic Republic"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -2166,7 +2166,7 @@ Description: """
       * ^property[=].valueCoding = $iso-3166#LA
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-LAO"
-  * #https://dhp.uz/fhir/core/sid/pid/ltu "Root identifier for personal identification of country Lithuania"
+  * #https://dhp.uz/fhir/core/sid/pid/lt "Root identifier for personal identification of country Lithuania"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -2201,7 +2201,7 @@ Description: """
       * ^property[=].valueBoolean = false
       * ^property[+].code = #country
       * ^property[=].valueCoding = $iso-3166#LT
-  * #https://dhp.uz/fhir/core/sid/pid/lso "Root identifier for personal identification of country Lesotho"
+  * #https://dhp.uz/fhir/core/sid/pid/ls "Root identifier for personal identification of country Lesotho"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -2215,7 +2215,7 @@ Description: """
       * ^property[=].valueCoding = $iso-3166#LS
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-LSO"
-  * #https://dhp.uz/fhir/core/sid/pid/lbr "Root identifier for personal identification of country Liberia"
+  * #https://dhp.uz/fhir/core/sid/pid/lr "Root identifier for personal identification of country Liberia"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -2229,7 +2229,7 @@ Description: """
       * ^property[=].valueCoding = $iso-3166#LR
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-LBR"
-  * #https://dhp.uz/fhir/core/sid/pid/lie "Root identifier for personal identification of country Liechtenstein"
+  * #https://dhp.uz/fhir/core/sid/pid/li "Root identifier for personal identification of country Liechtenstein"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -2243,7 +2243,7 @@ Description: """
       * ^property[=].valueCoding = $iso-3166#LI
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-LIE"
-  * #https://dhp.uz/fhir/core/sid/pid/lbn "Root identifier for personal identification of country Lebanon"
+  * #https://dhp.uz/fhir/core/sid/pid/lb "Root identifier for personal identification of country Lebanon"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -2257,7 +2257,7 @@ Description: """
       * ^property[=].valueCoding = $iso-3166#LB
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-LBN"
-  * #https://dhp.uz/fhir/core/sid/pid/lux "Root identifier for personal identification of country Luxembourg"
+  * #https://dhp.uz/fhir/core/sid/pid/lu "Root identifier for personal identification of country Luxembourg"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -2271,7 +2271,7 @@ Description: """
       * ^property[=].valueCoding = $iso-3166#LU
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-LUX"
-  * #https://dhp.uz/fhir/core/sid/pid/zaf "Root identifier for personal identification of country South Africa"
+  * #https://dhp.uz/fhir/core/sid/pid/za "Root identifier for personal identification of country South Africa"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -2292,7 +2292,7 @@ Description: """
       * ^property[=].valueBoolean = false
       * ^property[+].code = #country
       * ^property[=].valueCoding = $iso-3166#ZA
-  * #https://dhp.uz/fhir/core/sid/pid/sgs "Root identifier for personal identification of country South Georgia and the South Sandwich Islands"
+  * #https://dhp.uz/fhir/core/sid/pid/gs "Root identifier for personal identification of country South Georgia and the South Sandwich Islands"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -2306,7 +2306,7 @@ Description: """
       * ^property[=].valueCoding = $iso-3166#GS
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-SGS"
-  * #https://dhp.uz/fhir/core/sid/pid/lva "Root identifier for personal identification of country Latvia"
+  * #https://dhp.uz/fhir/core/sid/pid/lv "Root identifier for personal identification of country Latvia"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -2341,7 +2341,7 @@ Description: """
       * ^property[=].valueBoolean = false
       * ^property[+].code = #country
       * ^property[=].valueCoding = $iso-3166#LV
-  * #https://dhp.uz/fhir/core/sid/pid/esh "Root identifier for personal identification of country Western Sahara"
+  * #https://dhp.uz/fhir/core/sid/pid/eh "Root identifier for personal identification of country Western Sahara"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -2355,7 +2355,7 @@ Description: """
       * ^property[=].valueCoding = $iso-3166#EH
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-ESH"
-  * #https://dhp.uz/fhir/core/sid/pid/mdg "Root identifier for personal identification of country Madagascar"
+  * #https://dhp.uz/fhir/core/sid/pid/mg "Root identifier for personal identification of country Madagascar"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -2369,7 +2369,7 @@ Description: """
       * ^property[=].valueCoding = $iso-3166#MG
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-MDG"
-  * #https://dhp.uz/fhir/core/sid/pid/nld "Root identifier for personal identification of country Netherlands"
+  * #https://dhp.uz/fhir/core/sid/pid/nl "Root identifier for personal identification of country Netherlands"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -2404,7 +2404,7 @@ Description: """
       * ^property[=].valueBoolean = false
       * ^property[+].code = #country
       * ^property[=].valueCoding = $iso-3166#NL
-  * #https://dhp.uz/fhir/core/sid/pid/mkd "Root identifier for personal identification of country Macedonia"
+  * #https://dhp.uz/fhir/core/sid/pid/mk "Root identifier for personal identification of country Macedonia"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -2439,7 +2439,7 @@ Description: """
       * ^property[=].valueBoolean = false
       * ^property[+].code = #country
       * ^property[=].valueCoding = $iso-3166#MK
-  * #https://dhp.uz/fhir/core/sid/pid/mys "Root identifier for personal identification of country Malaysia"
+  * #https://dhp.uz/fhir/core/sid/pid/my "Root identifier for personal identification of country Malaysia"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -2460,7 +2460,7 @@ Description: """
       * ^property[=].valueBoolean = false
       * ^property[+].code = #country
       * ^property[=].valueCoding = $iso-3166#MY
-  * #https://dhp.uz/fhir/core/sid/pid/mwi "Root identifier for personal identification of country Malawi"
+  * #https://dhp.uz/fhir/core/sid/pid/mw "Root identifier for personal identification of country Malawi"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -2474,7 +2474,7 @@ Description: """
       * ^property[=].valueCoding = $iso-3166#MW
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-MWI"
-  * #https://dhp.uz/fhir/core/sid/pid/mdv "Root identifier for personal identification of country Maldives"
+  * #https://dhp.uz/fhir/core/sid/pid/mv "Root identifier for personal identification of country Maldives"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -2488,7 +2488,7 @@ Description: """
       * ^property[=].valueCoding = $iso-3166#MV
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-MDV"
-  * #https://dhp.uz/fhir/core/sid/pid/mli "Root identifier for personal identification of country Mali"
+  * #https://dhp.uz/fhir/core/sid/pid/ml "Root identifier for personal identification of country Mali"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -2502,7 +2502,7 @@ Description: """
       * ^property[=].valueCoding = $iso-3166#ML
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-MLI"
-  * #https://dhp.uz/fhir/core/sid/pid/mlt "Root identifier for personal identification of country Malta"
+  * #https://dhp.uz/fhir/core/sid/pid/mt "Root identifier for personal identification of country Malta"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -2537,7 +2537,7 @@ Description: """
       * ^property[=].valueBoolean = false
       * ^property[+].code = #country
       * ^property[=].valueCoding = $iso-3166#MT
-  * #https://dhp.uz/fhir/core/sid/pid/imn "Root identifier for personal identification of country Isle of Man"
+  * #https://dhp.uz/fhir/core/sid/pid/im "Root identifier for personal identification of country Isle of Man"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -2551,7 +2551,7 @@ Description: """
       * ^property[=].valueCoding = $iso-3166#IM
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-IMM"
-  * #https://dhp.uz/fhir/core/sid/pid/mar "Root identifier for personal identification of country Morocco"
+  * #https://dhp.uz/fhir/core/sid/pid/ma "Root identifier for personal identification of country Morocco"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -2565,7 +2565,7 @@ Description: """
       * ^property[=].valueCoding = $iso-3166#MA
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-MAR"
-  * #https://dhp.uz/fhir/core/sid/pid/mhl "Root identifier for personal identification of country Marshall Islands"
+  * #https://dhp.uz/fhir/core/sid/pid/mh "Root identifier for personal identification of country Marshall Islands"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -2579,7 +2579,7 @@ Description: """
       * ^property[=].valueCoding = $iso-3166#MH
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-MHL"
-  * #https://dhp.uz/fhir/core/sid/pid/mtq "Root identifier for personal identification of country Martinique"
+  * #https://dhp.uz/fhir/core/sid/pid/mq "Root identifier for personal identification of country Martinique"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -2593,7 +2593,7 @@ Description: """
       * ^property[=].valueCoding = $iso-3166#MQ
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-MTQ"
-  * #https://dhp.uz/fhir/core/sid/pid/mrt "Root identifier for personal identification of country Mauritania"
+  * #https://dhp.uz/fhir/core/sid/pid/mr "Root identifier for personal identification of country Mauritania"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -2607,7 +2607,7 @@ Description: """
       * ^property[=].valueCoding = $iso-3166#MR
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-MRT"
-  * #https://dhp.uz/fhir/core/sid/pid/mus "Root identifier for personal identification of country Mauritius"
+  * #https://dhp.uz/fhir/core/sid/pid/mu "Root identifier for personal identification of country Mauritius"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -2621,7 +2621,7 @@ Description: """
       * ^property[=].valueCoding = $iso-3166#MU
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-MUS"
-  * #https://dhp.uz/fhir/core/sid/pid/myt "Root identifier for personal identification of country Mayotte"
+  * #https://dhp.uz/fhir/core/sid/pid/yt "Root identifier for personal identification of country Mayotte"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -2635,7 +2635,7 @@ Description: """
       * ^property[=].valueCoding = $iso-3166#YT
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-MYT"
-  * #https://dhp.uz/fhir/core/sid/pid/mex "Root identifier for personal identification of country Mexico"
+  * #https://dhp.uz/fhir/core/sid/pid/mx "Root identifier for personal identification of country Mexico"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -2656,7 +2656,7 @@ Description: """
       * ^property[=].valueBoolean = false
       * ^property[+].code = #country
       * ^property[=].valueCoding = $iso-3166#MX
-  * #https://dhp.uz/fhir/core/sid/pid/fsm "Root identifier for personal identification of country Micronesia"
+  * #https://dhp.uz/fhir/core/sid/pid/fm "Root identifier for personal identification of country Micronesia"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -2670,7 +2670,7 @@ Description: """
       * ^property[=].valueCoding = $iso-3166#FM
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-FSM"
-  * #https://dhp.uz/fhir/core/sid/pid/mda "Root identifier for personal identification of country Moldova, Republic of"
+  * #https://dhp.uz/fhir/core/sid/pid/md "Root identifier for personal identification of country Moldova, Republic of"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -2705,7 +2705,7 @@ Description: """
       * ^property[=].valueBoolean = false
       * ^property[+].code = #country
       * ^property[=].valueCoding = $iso-3166#MD
-  * #https://dhp.uz/fhir/core/sid/pid/mco "Root identifier for personal identification of country Monaco"
+  * #https://dhp.uz/fhir/core/sid/pid/mc "Root identifier for personal identification of country Monaco"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -2719,7 +2719,7 @@ Description: """
       * ^property[=].valueCoding = $iso-3166#MC
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-MCO"
-  * #https://dhp.uz/fhir/core/sid/pid/mng "Root identifier for personal identification of country Mongolia"
+  * #https://dhp.uz/fhir/core/sid/pid/mn "Root identifier for personal identification of country Mongolia"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -2733,7 +2733,7 @@ Description: """
       * ^property[=].valueCoding = $iso-3166#MN
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-MNG"
-  * #https://dhp.uz/fhir/core/sid/pid/mne "Root identifier for personal identification of country Montenegro"
+  * #https://dhp.uz/fhir/core/sid/pid/me "Root identifier for personal identification of country Montenegro"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -2768,7 +2768,7 @@ Description: """
       * ^property[=].valueBoolean = false
       * ^property[+].code = #country
       * ^property[=].valueCoding = $iso-3166#ME
-  * #https://dhp.uz/fhir/core/sid/pid/msr "Root identifier for personal identification of country Montserrat"
+  * #https://dhp.uz/fhir/core/sid/pid/ms "Root identifier for personal identification of country Montserrat"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -2782,7 +2782,7 @@ Description: """
       * ^property[=].valueCoding = $iso-3166#MS
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-MSR"
-  * #https://dhp.uz/fhir/core/sid/pid/moz "Root identifier for personal identification of country Mozambique"
+  * #https://dhp.uz/fhir/core/sid/pid/mz "Root identifier for personal identification of country Mozambique"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -2796,7 +2796,7 @@ Description: """
       * ^property[=].valueCoding = $iso-3166#MZ
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-MOZ"
-  * #https://dhp.uz/fhir/core/sid/pid/xyy "Root identifier for personal identification of country Areas not elsewhere specified"
+  * #https://dhp.uz/fhir/core/sid/pid/xy "Root identifier for personal identification of country Areas not elsewhere specified"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -2808,7 +2808,7 @@ Description: """
       * ^property[=].valueBoolean = false
       * ^property[+].code = #country
       * ^property[=].valueCoding = $iso-3166#XY
-  * #https://dhp.uz/fhir/core/sid/pid/xxx "Root identifier for personal identification of country Not specified"
+  * #https://dhp.uz/fhir/core/sid/pid/xx "Root identifier for personal identification of country Not specified"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -2820,7 +2820,7 @@ Description: """
       * ^property[=].valueBoolean = false
       * ^property[+].code = #country
       * ^property[=].valueCoding = $iso-3166#XX
-  * #https://dhp.uz/fhir/core/sid/pid/mmr "Root identifier for personal identification of country Myanmar"
+  * #https://dhp.uz/fhir/core/sid/pid/mm "Root identifier for personal identification of country Myanmar"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -2834,7 +2834,7 @@ Description: """
       * ^property[=].valueCoding = $iso-3166#MM
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-MMR"
-  * #https://dhp.uz/fhir/core/sid/pid/nam "Root identifier for personal identification of country Namibia"
+  * #https://dhp.uz/fhir/core/sid/pid/na "Root identifier for personal identification of country Namibia"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -2848,7 +2848,7 @@ Description: """
       * ^property[=].valueCoding = $iso-3166#NA
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-NAM"
-  * #https://dhp.uz/fhir/core/sid/pid/nru "Root identifier for personal identification of country Nauru"
+  * #https://dhp.uz/fhir/core/sid/pid/nr "Root identifier for personal identification of country Nauru"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -2862,7 +2862,7 @@ Description: """
       * ^property[=].valueCoding = $iso-3166#NR
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-NRU"
-  * #https://dhp.uz/fhir/core/sid/pid/npl "Root identifier for personal identification of country Nepal"
+  * #https://dhp.uz/fhir/core/sid/pid/np "Root identifier for personal identification of country Nepal"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -2883,7 +2883,7 @@ Description: """
       * ^property[=].valueBoolean = false
       * ^property[+].code = #country
       * ^property[=].valueCoding = $iso-3166#NP
-  * #https://dhp.uz/fhir/core/sid/pid/nic "Root identifier for personal identification of country Nicaragua"
+  * #https://dhp.uz/fhir/core/sid/pid/ni "Root identifier for personal identification of country Nicaragua"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -2897,7 +2897,7 @@ Description: """
       * ^property[=].valueCoding = $iso-3166#NI
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-NIC"
-  * #https://dhp.uz/fhir/core/sid/pid/nga "Root identifier for personal identification of country Nigeria"
+  * #https://dhp.uz/fhir/core/sid/pid/ng "Root identifier for personal identification of country Nigeria"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -2925,7 +2925,7 @@ Description: """
       * ^property[=].valueBoolean = false
       * ^property[+].code = #country
       * ^property[=].valueCoding = $iso-3166#NG
-  * #https://dhp.uz/fhir/core/sid/pid/ner "Root identifier for personal identification of country Niger"
+  * #https://dhp.uz/fhir/core/sid/pid/ne "Root identifier for personal identification of country Niger"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -2939,7 +2939,7 @@ Description: """
       * ^property[=].valueCoding = $iso-3166#NE
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-NER"
-  * #https://dhp.uz/fhir/core/sid/pid/niu "Root identifier for personal identification of country Niue"
+  * #https://dhp.uz/fhir/core/sid/pid/nu "Root identifier for personal identification of country Niue"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -2953,7 +2953,7 @@ Description: """
       * ^property[=].valueCoding = $iso-3166#NU
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-NIU"
-  * #https://dhp.uz/fhir/core/sid/pid/nfk "Root identifier for personal identification of country Norfolk Island"
+  * #https://dhp.uz/fhir/core/sid/pid/nf "Root identifier for personal identification of country Norfolk Island"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -2967,7 +2967,7 @@ Description: """
       * ^property[=].valueCoding = $iso-3166#NF
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-NFK"
-  * #https://dhp.uz/fhir/core/sid/pid/nor "Root identifier for personal identification of country Norway"
+  * #https://dhp.uz/fhir/core/sid/pid/no "Root identifier for personal identification of country Norway"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -3002,7 +3002,7 @@ Description: """
       * ^property[=].valueBoolean = false
       * ^property[+].code = #country
       * ^property[=].valueCoding = $iso-3166#NO
-  * #https://dhp.uz/fhir/core/sid/pid/omn "Root identifier for personal identification of country Oman"
+  * #https://dhp.uz/fhir/core/sid/pid/om "Root identifier for personal identification of country Oman"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -3016,7 +3016,7 @@ Description: """
       * ^property[=].valueCoding = $iso-3166#OM
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-OMN"
-  * #https://dhp.uz/fhir/core/sid/pid/png "Root identifier for personal identification of country Papua New Guinea"
+  * #https://dhp.uz/fhir/core/sid/pid/pg "Root identifier for personal identification of country Papua New Guinea"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -3030,7 +3030,7 @@ Description: """
       * ^property[=].valueCoding = $iso-3166#PG
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-PNG"
-  * #https://dhp.uz/fhir/core/sid/pid/pak "Root identifier for personal identification of country Pakistan"
+  * #https://dhp.uz/fhir/core/sid/pid/pk "Root identifier for personal identification of country Pakistan"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -3051,7 +3051,7 @@ Description: """
       * ^property[=].valueBoolean = false
       * ^property[+].code = #country
       * ^property[=].valueCoding = $iso-3166#PK
-  * #https://dhp.uz/fhir/core/sid/pid/pse "Root identifier for personal identification of country Palestinian Territory, Occupied"
+  * #https://dhp.uz/fhir/core/sid/pid/ps "Root identifier for personal identification of country Palestinian Territory, Occupied"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -3065,7 +3065,7 @@ Description: """
       * ^property[=].valueCoding = $iso-3166#PS
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-PSE"
-  * #https://dhp.uz/fhir/core/sid/pid/pan "Root identifier for personal identification of country Panama"
+  * #https://dhp.uz/fhir/core/sid/pid/pa "Root identifier for personal identification of country Panama"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -3079,7 +3079,7 @@ Description: """
       * ^property[=].valueCoding = $iso-3166#PA
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-PAN"
-  * #https://dhp.uz/fhir/core/sid/pid/pry "Root identifier for personal identification of country Paraguay"
+  * #https://dhp.uz/fhir/core/sid/pid/py "Root identifier for personal identification of country Paraguay"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -3093,7 +3093,7 @@ Description: """
       * ^property[=].valueCoding = $iso-3166#PY
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-PRY"
-  * #https://dhp.uz/fhir/core/sid/pid/per "Root identifier for personal identification of country Peru"
+  * #https://dhp.uz/fhir/core/sid/pid/pe "Root identifier for personal identification of country Peru"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -3107,7 +3107,7 @@ Description: """
       * ^property[=].valueCoding = $iso-3166#PE
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-PER"
-  * #https://dhp.uz/fhir/core/sid/pid/pcn "Root identifier for personal identification of country Pitcairn"
+  * #https://dhp.uz/fhir/core/sid/pid/pn "Root identifier for personal identification of country Pitcairn"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -3121,7 +3121,7 @@ Description: """
       * ^property[=].valueCoding = $iso-3166#PN
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-PCN"
-  * #https://dhp.uz/fhir/core/sid/pid/pol "Root identifier for personal identification of country Poland"
+  * #https://dhp.uz/fhir/core/sid/pid/pl "Root identifier for personal identification of country Poland"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -3156,7 +3156,7 @@ Description: """
       * ^property[=].valueBoolean = false
       * ^property[+].code = #country
       * ^property[=].valueCoding = $iso-3166#PL
-  * #https://dhp.uz/fhir/core/sid/pid/prt "Root identifier for personal identification of country Portugal"
+  * #https://dhp.uz/fhir/core/sid/pid/pt "Root identifier for personal identification of country Portugal"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -3191,7 +3191,7 @@ Description: """
       * ^property[=].valueBoolean = false
       * ^property[+].code = #country
       * ^property[=].valueCoding = $iso-3166#PT
-  * #https://dhp.uz/fhir/core/sid/pid/atf "Root identifier for personal identification of country French Southern Territories"
+  * #https://dhp.uz/fhir/core/sid/pid/tf "Root identifier for personal identification of country French Southern Territories"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -3205,7 +3205,7 @@ Description: """
       * ^property[=].valueCoding = $iso-3166#TF
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-ATF"
-  * #https://dhp.uz/fhir/core/sid/pid/pyf "Root identifier for personal identification of country French Polynesia"
+  * #https://dhp.uz/fhir/core/sid/pid/pf "Root identifier for personal identification of country French Polynesia"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -3219,7 +3219,7 @@ Description: """
       * ^property[=].valueCoding = $iso-3166#PF
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-PYF"
-  * #https://dhp.uz/fhir/core/sid/pid/fra "Root identifier for personal identification of country France"
+  * #https://dhp.uz/fhir/core/sid/pid/fr "Root identifier for personal identification of country France"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -3233,7 +3233,7 @@ Description: """
       * ^property[=].valueCoding = $iso-3166#FR
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-FRA"
-  * #https://dhp.uz/fhir/core/sid/pid/pri "Root identifier for personal identification of country Puerto Rico"
+  * #https://dhp.uz/fhir/core/sid/pid/pr "Root identifier for personal identification of country Puerto Rico"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -3247,7 +3247,7 @@ Description: """
       * ^property[=].valueCoding = $iso-3166#PR
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-PRI"
-  * #https://dhp.uz/fhir/core/sid/pid/mnp "Root identifier for personal identification of country Northern Mariana Islands"
+  * #https://dhp.uz/fhir/core/sid/pid/mp "Root identifier for personal identification of country Northern Mariana Islands"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -3261,7 +3261,7 @@ Description: """
       * ^property[=].valueCoding = $iso-3166#MP
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-MNP"
-  * #https://dhp.uz/fhir/core/sid/pid/vat "Root identifier for personal identification of country Holy See (Vatican City State)"
+  * #https://dhp.uz/fhir/core/sid/pid/va "Root identifier for personal identification of country Holy See (Vatican City State)"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -3275,7 +3275,7 @@ Description: """
       * ^property[=].valueCoding = $iso-3166#VA
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-VAT"
-  * #https://dhp.uz/fhir/core/sid/pid/reu "Root identifier for personal identification of country Réunion"
+  * #https://dhp.uz/fhir/core/sid/pid/re "Root identifier for personal identification of country Réunion"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -3289,7 +3289,7 @@ Description: """
       * ^property[=].valueCoding = $iso-3166#RE
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-REU"
-  * #https://dhp.uz/fhir/core/sid/pid/swe "Root identifier for personal identification of country Sweden"
+  * #https://dhp.uz/fhir/core/sid/pid/se "Root identifier for personal identification of country Sweden"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -3324,7 +3324,7 @@ Description: """
       * ^property[=].valueBoolean = false
       * ^property[+].code = #country
       * ^property[=].valueCoding = $iso-3166#SE
-  * #https://dhp.uz/fhir/core/sid/pid/rou "Root identifier for personal identification of country Romania"
+  * #https://dhp.uz/fhir/core/sid/pid/ro "Root identifier for personal identification of country Romania"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -3359,7 +3359,7 @@ Description: """
       * ^property[=].valueBoolean = false
       * ^property[+].code = #country
       * ^property[=].valueCoding = $iso-3166#RO
-  * #https://dhp.uz/fhir/core/sid/pid/rwa "Root identifier for personal identification of country Rwanda"
+  * #https://dhp.uz/fhir/core/sid/pid/rw "Root identifier for personal identification of country Rwanda"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -3373,7 +3373,7 @@ Description: """
       * ^property[=].valueCoding = $iso-3166#RW
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-RWA"
-  * #https://dhp.uz/fhir/core/sid/pid/slb "Root identifier for personal identification of country Solomon Islands"
+  * #https://dhp.uz/fhir/core/sid/pid/sb "Root identifier for personal identification of country Solomon Islands"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -3387,7 +3387,7 @@ Description: """
       * ^property[=].valueCoding = $iso-3166#SB
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-SLB"
-  * #https://dhp.uz/fhir/core/sid/pid/kna "Root identifier for personal identification of country Saint Kitts and Nevis"
+  * #https://dhp.uz/fhir/core/sid/pid/kn "Root identifier for personal identification of country Saint Kitts and Nevis"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -3401,7 +3401,7 @@ Description: """
       * ^property[=].valueCoding = $iso-3166#KN
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-KNA"
-  * #https://dhp.uz/fhir/core/sid/pid/shn "Root identifier for personal identification of country Saint Helena"
+  * #https://dhp.uz/fhir/core/sid/pid/sh "Root identifier for personal identification of country Saint Helena"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -3415,7 +3415,7 @@ Description: """
       * ^property[=].valueCoding = $iso-3166#SH
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-SHN"
-  * #https://dhp.uz/fhir/core/sid/pid/lca "Root identifier for personal identification of country Saint Lucia"
+  * #https://dhp.uz/fhir/core/sid/pid/lc "Root identifier for personal identification of country Saint Lucia"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -3429,7 +3429,7 @@ Description: """
       * ^property[=].valueCoding = $iso-3166#LC
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-LCA"
-  * #https://dhp.uz/fhir/core/sid/pid/spm "Root identifier for personal identification of country Saint Pierre and Miquelon"
+  * #https://dhp.uz/fhir/core/sid/pid/pm "Root identifier for personal identification of country Saint Pierre and Miquelon"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -3443,7 +3443,7 @@ Description: """
       * ^property[=].valueCoding = $iso-3166#PM
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-SPM"
-  * #https://dhp.uz/fhir/core/sid/pid/vct "Root identifier for personal identification of country Saint Vincent and the Grenadines"
+  * #https://dhp.uz/fhir/core/sid/pid/vc "Root identifier for personal identification of country Saint Vincent and the Grenadines"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -3457,7 +3457,7 @@ Description: """
       * ^property[=].valueCoding = $iso-3166#VC
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-VCT"
-  * #https://dhp.uz/fhir/core/sid/pid/deu "Root identifier for personal identification of country Germany"
+  * #https://dhp.uz/fhir/core/sid/pid/de "Root identifier for personal identification of country Germany"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -3471,7 +3471,7 @@ Description: """
       * ^property[=].valueCoding = $iso-3166#DE
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-DEU"
-  * #https://dhp.uz/fhir/core/sid/pid/zmb "Root identifier for personal identification of country Zambia"
+  * #https://dhp.uz/fhir/core/sid/pid/zm "Root identifier for personal identification of country Zambia"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -3485,7 +3485,7 @@ Description: """
       * ^property[=].valueCoding = $iso-3166#ZM
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-ZMB"
-  * #https://dhp.uz/fhir/core/sid/pid/wsm "Root identifier for personal identification of country Samoa"
+  * #https://dhp.uz/fhir/core/sid/pid/ws "Root identifier for personal identification of country Samoa"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -3499,7 +3499,7 @@ Description: """
       * ^property[=].valueCoding = $iso-3166#WS
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-WSM"
-  * #https://dhp.uz/fhir/core/sid/pid/smr "Root identifier for personal identification of country San Marino"
+  * #https://dhp.uz/fhir/core/sid/pid/sm "Root identifier for personal identification of country San Marino"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -3534,7 +3534,7 @@ Description: """
       * ^property[=].valueBoolean = false
       * ^property[+].code = #country
       * ^property[=].valueCoding = $iso-3166#SM
-  * #https://dhp.uz/fhir/core/sid/pid/stp "Root identifier for personal identification of country Sao Tome and Principe"
+  * #https://dhp.uz/fhir/core/sid/pid/st "Root identifier for personal identification of country Sao Tome and Principe"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -3548,7 +3548,7 @@ Description: """
       * ^property[=].valueCoding = $iso-3166#ST
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-STP"
-  * #https://dhp.uz/fhir/core/sid/pid/sau "Root identifier for personal identification of country Saudi Arabia"
+  * #https://dhp.uz/fhir/core/sid/pid/sa "Root identifier for personal identification of country Saudi Arabia"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -3562,7 +3562,7 @@ Description: """
       * ^property[=].valueCoding = $iso-3166#SA
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-SAU"
-  * #https://dhp.uz/fhir/core/sid/pid/syc "Root identifier for personal identification of country Seychelles"
+  * #https://dhp.uz/fhir/core/sid/pid/sc "Root identifier for personal identification of country Seychelles"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -3576,7 +3576,7 @@ Description: """
       * ^property[=].valueCoding = $iso-3166#SC
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-SYC"
-  * #https://dhp.uz/fhir/core/sid/pid/sen "Root identifier for personal identification of country Senegal"
+  * #https://dhp.uz/fhir/core/sid/pid/sn "Root identifier for personal identification of country Senegal"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -3590,7 +3590,7 @@ Description: """
       * ^property[=].valueCoding = $iso-3166#SN
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-SEN"
-  * #https://dhp.uz/fhir/core/sid/pid/srb "Root identifier for personal identification of country Serbia"
+  * #https://dhp.uz/fhir/core/sid/pid/rs "Root identifier for personal identification of country Serbia"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -3625,7 +3625,7 @@ Description: """
       * ^property[=].valueBoolean = false
       * ^property[+].code = #country
       * ^property[=].valueCoding = $iso-3166#RS
-  * #https://dhp.uz/fhir/core/sid/pid/sle "Root identifier for personal identification of country Sierra Leone"
+  * #https://dhp.uz/fhir/core/sid/pid/sl "Root identifier for personal identification of country Sierra Leone"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -3639,7 +3639,7 @@ Description: """
       * ^property[=].valueCoding = $iso-3166#SL
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-SLE"
-  * #https://dhp.uz/fhir/core/sid/pid/sgp "Root identifier for personal identification of country Singapore"
+  * #https://dhp.uz/fhir/core/sid/pid/sg "Root identifier for personal identification of country Singapore"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -3660,7 +3660,7 @@ Description: """
       * ^property[=].valueBoolean = false
       * ^property[+].code = #country
       * ^property[=].valueCoding = $iso-3166#SG
-  * #https://dhp.uz/fhir/core/sid/pid/svk "Root identifier for personal identification of country Slovakia"
+  * #https://dhp.uz/fhir/core/sid/pid/sk "Root identifier for personal identification of country Slovakia"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -3695,7 +3695,7 @@ Description: """
       * ^property[=].valueBoolean = false
       * ^property[+].code = #country
       * ^property[=].valueCoding = $iso-3166#SK
-  * #https://dhp.uz/fhir/core/sid/pid/svn "Root identifier for personal identification of country Slovenia"
+  * #https://dhp.uz/fhir/core/sid/pid/si "Root identifier for personal identification of country Slovenia"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -3730,7 +3730,7 @@ Description: """
       * ^property[=].valueBoolean = false
       * ^property[+].code = #country
       * ^property[=].valueCoding = $iso-3166#SI
-  * #https://dhp.uz/fhir/core/sid/pid/som "Root identifier for personal identification of country Somalia"
+  * #https://dhp.uz/fhir/core/sid/pid/so "Root identifier for personal identification of country Somalia"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -3744,7 +3744,7 @@ Description: """
       * ^property[=].valueCoding = $iso-3166#SO
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-SOM"
-  * #https://dhp.uz/fhir/core/sid/pid/fin "Root identifier for personal identification of country Finland"
+  * #https://dhp.uz/fhir/core/sid/pid/fi "Root identifier for personal identification of country Finland"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -3779,7 +3779,7 @@ Description: """
       * ^property[=].valueBoolean = false
       * ^property[+].code = #country
       * ^property[=].valueCoding = $iso-3166#FI
-  * #https://dhp.uz/fhir/core/sid/pid/lka "Root identifier for personal identification of country Sri Lanka"
+  * #https://dhp.uz/fhir/core/sid/pid/lk "Root identifier for personal identification of country Sri Lanka"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -3800,7 +3800,7 @@ Description: """
       * ^property[=].valueBoolean = false
       * ^property[+].code = #country
       * ^property[=].valueCoding = $iso-3166#LK
-  * #https://dhp.uz/fhir/core/sid/pid/sdn "Root identifier for personal identification of country Sudan"
+  * #https://dhp.uz/fhir/core/sid/pid/sd "Root identifier for personal identification of country Sudan"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -3814,7 +3814,7 @@ Description: """
       * ^property[=].valueCoding = $iso-3166#SD
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-SDN"
-  * #https://dhp.uz/fhir/core/sid/pid/sur "Root identifier for personal identification of country Suriname"
+  * #https://dhp.uz/fhir/core/sid/pid/sr "Root identifier for personal identification of country Suriname"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -3828,7 +3828,7 @@ Description: """
       * ^property[=].valueCoding = $iso-3166#SR
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-SUR"
-  * #https://dhp.uz/fhir/core/sid/pid/lby "Root identifier for personal identification of country Libyan Arab Jamahiriya"
+  * #https://dhp.uz/fhir/core/sid/pid/ly "Root identifier for personal identification of country Libyan Arab Jamahiriya"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -3842,7 +3842,7 @@ Description: """
       * ^property[=].valueCoding = $iso-3166#LY
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-LBY"
-  * #https://dhp.uz/fhir/core/sid/pid/gbr "Root identifier for personal identification of country United Kingdom"
+  * #https://dhp.uz/fhir/core/sid/pid/gb "Root identifier for personal identification of country United Kingdom"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -3863,7 +3863,7 @@ Description: """
       * ^property[=].valueBoolean = false
       * ^property[+].code = #country
       * ^property[=].valueCoding = $iso-3166#GB
-  * #https://dhp.uz/fhir/core/sid/pid/swz "Root identifier for personal identification of country Swaziland"
+  * #https://dhp.uz/fhir/core/sid/pid/sz "Root identifier for personal identification of country Swaziland"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -3877,7 +3877,7 @@ Description: """
       * ^property[=].valueCoding = $iso-3166#SZ
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-SWZ"
-  * #https://dhp.uz/fhir/core/sid/pid/sjm "Root identifier for personal identification of country Svalbard and Jan Mayen"
+  * #https://dhp.uz/fhir/core/sid/pid/sj "Root identifier for personal identification of country Svalbard and Jan Mayen"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -3891,7 +3891,7 @@ Description: """
       * ^property[=].valueCoding = $iso-3166#SJ
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-SJM"
-  * #https://dhp.uz/fhir/core/sid/pid/syr "Root identifier for personal identification of country Syrian Arab Republic"
+  * #https://dhp.uz/fhir/core/sid/pid/sy "Root identifier for personal identification of country Syrian Arab Republic"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -3905,7 +3905,7 @@ Description: """
       * ^property[=].valueCoding = $iso-3166#SY
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-SYR"
-  * #https://dhp.uz/fhir/core/sid/pid/che "Root identifier for personal identification of country Switzerland"
+  * #https://dhp.uz/fhir/core/sid/pid/ch "Root identifier for personal identification of country Switzerland"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -3919,7 +3919,7 @@ Description: """
       * ^property[=].valueCoding = $iso-3166#CH
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-CHE"
-  * #https://dhp.uz/fhir/core/sid/pid/zwe "Root identifier for personal identification of country Zimbabwe"
+  * #https://dhp.uz/fhir/core/sid/pid/zw "Root identifier for personal identification of country Zimbabwe"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -3940,7 +3940,7 @@ Description: """
       * ^property[=].valueBoolean = false
       * ^property[+].code = #country
       * ^property[=].valueCoding = $iso-3166#ZW
-  * #https://dhp.uz/fhir/core/sid/pid/dnk "Root identifier for personal identification of country Denmark"
+  * #https://dhp.uz/fhir/core/sid/pid/dk "Root identifier for personal identification of country Denmark"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -3968,7 +3968,7 @@ Description: """
       * ^property[=].valueBoolean = false
       * ^property[+].code = #country
       * ^property[=].valueCoding = $iso-3166#DK
-  * #https://dhp.uz/fhir/core/sid/pid/tjk "Root identifier for personal identification of country Tajikistan"
+  * #https://dhp.uz/fhir/core/sid/pid/tj "Root identifier for personal identification of country Tajikistan"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -3982,7 +3982,7 @@ Description: """
       * ^property[=].valueCoding = $iso-3166#TJ
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-TJK"
-  * #https://dhp.uz/fhir/core/sid/pid/tha "Root identifier for personal identification of country Thailand"
+  * #https://dhp.uz/fhir/core/sid/pid/th "Root identifier for personal identification of country Thailand"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -4017,7 +4017,7 @@ Description: """
       * ^property[=].valueBoolean = false
       * ^property[+].code = #country
       * ^property[=].valueCoding = $iso-3166#TH
-  * #https://dhp.uz/fhir/core/sid/pid/twn "Root identifier for personal identification of country Taiwan"
+  * #https://dhp.uz/fhir/core/sid/pid/tw "Root identifier for personal identification of country Taiwan"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -4038,7 +4038,7 @@ Description: """
       * ^property[=].valueBoolean = false
       * ^property[+].code = #country
       * ^property[=].valueCoding = $iso-3166#TW
-  * #https://dhp.uz/fhir/core/sid/pid/tza "Root identifier for personal identification of country Tanzania, United Republic of"
+  * #https://dhp.uz/fhir/core/sid/pid/tz "Root identifier for personal identification of country Tanzania, United Republic of"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -4052,7 +4052,7 @@ Description: """
       * ^property[=].valueCoding = $iso-3166#TZ
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-TZA"
-  * #https://dhp.uz/fhir/core/sid/pid/tls "Root identifier for personal identification of country Timor-Leste"
+  * #https://dhp.uz/fhir/core/sid/pid/tl "Root identifier for personal identification of country Timor-Leste"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -4066,7 +4066,7 @@ Description: """
       * ^property[=].valueCoding = $iso-3166#TL
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-TLS"
-  * #https://dhp.uz/fhir/core/sid/pid/tgo "Root identifier for personal identification of country Togo"
+  * #https://dhp.uz/fhir/core/sid/pid/tg "Root identifier for personal identification of country Togo"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -4080,7 +4080,7 @@ Description: """
       * ^property[=].valueCoding = $iso-3166#TG
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-TGO"
-  * #https://dhp.uz/fhir/core/sid/pid/tkl "Root identifier for personal identification of country Tokelau"
+  * #https://dhp.uz/fhir/core/sid/pid/tk "Root identifier for personal identification of country Tokelau"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -4094,7 +4094,7 @@ Description: """
       * ^property[=].valueCoding = $iso-3166#TK
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-TKL"
-  * #https://dhp.uz/fhir/core/sid/pid/ton "Root identifier for personal identification of country Tonga"
+  * #https://dhp.uz/fhir/core/sid/pid/to "Root identifier for personal identification of country Tonga"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -4108,7 +4108,7 @@ Description: """
       * ^property[=].valueCoding = $iso-3166#TO
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-TON"
-  * #https://dhp.uz/fhir/core/sid/pid/tto "Root identifier for personal identification of country Trinidad and Tobago"
+  * #https://dhp.uz/fhir/core/sid/pid/tt "Root identifier for personal identification of country Trinidad and Tobago"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -4122,7 +4122,7 @@ Description: """
       * ^property[=].valueCoding = $iso-3166#TT
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-TTO"
-  * #https://dhp.uz/fhir/core/sid/pid/tcd "Root identifier for personal identification of country Chad"
+  * #https://dhp.uz/fhir/core/sid/pid/td "Root identifier for personal identification of country Chad"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -4136,7 +4136,7 @@ Description: """
       * ^property[=].valueCoding = $iso-3166#TD
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-TCD"
-  * #https://dhp.uz/fhir/core/sid/pid/cze "Root identifier for personal identification of country Czech Republic"
+  * #https://dhp.uz/fhir/core/sid/pid/cz "Root identifier for personal identification of country Czech Republic"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -4171,7 +4171,7 @@ Description: """
       * ^property[=].valueBoolean = false
       * ^property[+].code = #country
       * ^property[=].valueCoding = $iso-3166#CZ
-  * #https://dhp.uz/fhir/core/sid/pid/chl "Root identifier for personal identification of country Chile"
+  * #https://dhp.uz/fhir/core/sid/pid/cl "Root identifier for personal identification of country Chile"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -4206,7 +4206,7 @@ Description: """
       * ^property[=].valueBoolean = false
       * ^property[+].code = #country
       * ^property[=].valueCoding = $iso-3166#CL
-  * #https://dhp.uz/fhir/core/sid/pid/tun "Root identifier for personal identification of country Tunisia"
+  * #https://dhp.uz/fhir/core/sid/pid/tn "Root identifier for personal identification of country Tunisia"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -4220,7 +4220,7 @@ Description: """
       * ^property[=].valueCoding = $iso-3166#TN
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-TUN"
-  * #https://dhp.uz/fhir/core/sid/pid/tca "Root identifier for personal identification of country Turks and Caicos Islands"
+  * #https://dhp.uz/fhir/core/sid/pid/tc "Root identifier for personal identification of country Turks and Caicos Islands"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -4234,7 +4234,7 @@ Description: """
       * ^property[=].valueCoding = $iso-3166#TC
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-TCA"
-  * #https://dhp.uz/fhir/core/sid/pid/tuv "Root identifier for personal identification of country Tuvalu"
+  * #https://dhp.uz/fhir/core/sid/pid/tv "Root identifier for personal identification of country Tuvalu"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -4248,7 +4248,7 @@ Description: """
       * ^property[=].valueCoding = $iso-3166#TV
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-TUV"
-  * #https://dhp.uz/fhir/core/sid/pid/tur "Root identifier for personal identification of country Turkey"
+  * #https://dhp.uz/fhir/core/sid/pid/tr "Root identifier for personal identification of country Turkey"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -4276,7 +4276,7 @@ Description: """
       * ^property[=].valueBoolean = false
       * ^property[+].code = #country
       * ^property[=].valueCoding = $iso-3166#TR
-  * #https://dhp.uz/fhir/core/sid/pid/tkm "Root identifier for personal identification of country Turkmenistan"
+  * #https://dhp.uz/fhir/core/sid/pid/tm "Root identifier for personal identification of country Turkmenistan"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -4290,7 +4290,7 @@ Description: """
       * ^property[=].valueCoding = $iso-3166#TM
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-TKM"
-  * #https://dhp.uz/fhir/core/sid/pid/uga "Root identifier for personal identification of country Uganda"
+  * #https://dhp.uz/fhir/core/sid/pid/ug "Root identifier for personal identification of country Uganda"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -4304,7 +4304,7 @@ Description: """
       * ^property[=].valueCoding = $iso-3166#UG
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-UGA"
-  * #https://dhp.uz/fhir/core/sid/pid/ukr "Root identifier for personal identification of country Ukraine"
+  * #https://dhp.uz/fhir/core/sid/pid/ua "Root identifier for personal identification of country Ukraine"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -4339,7 +4339,7 @@ Description: """
       * ^property[=].valueBoolean = false
       * ^property[+].code = #country
       * ^property[=].valueCoding = $iso-3166#UA
-  * #https://dhp.uz/fhir/core/sid/pid/hun "Root identifier for personal identification of country Hungary"
+  * #https://dhp.uz/fhir/core/sid/pid/hu "Root identifier for personal identification of country Hungary"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -4353,7 +4353,7 @@ Description: """
       * ^property[=].valueCoding = $iso-3166#HU
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-HUN"
-  * #https://dhp.uz/fhir/core/sid/pid/ury "Root identifier for personal identification of country Uruguay"
+  * #https://dhp.uz/fhir/core/sid/pid/uy "Root identifier for personal identification of country Uruguay"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -4367,7 +4367,7 @@ Description: """
       * ^property[=].valueCoding = $iso-3166#UY
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-URY"
-  * #https://dhp.uz/fhir/core/sid/pid/ncl "Root identifier for personal identification of country New Caledonia"
+  * #https://dhp.uz/fhir/core/sid/pid/nc "Root identifier for personal identification of country New Caledonia"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -4381,7 +4381,7 @@ Description: """
       * ^property[=].valueCoding = $iso-3166#NC
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-NCL"
-  * #https://dhp.uz/fhir/core/sid/pid/nzl "Root identifier for personal identification of country New Zealand"
+  * #https://dhp.uz/fhir/core/sid/pid/nz "Root identifier for personal identification of country New Zealand"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -4395,7 +4395,7 @@ Description: """
       * ^property[=].valueCoding = $iso-3166#NZ
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-NZL"
-  * #https://dhp.uz/fhir/core/sid/pid/blr "Root identifier for personal identification of country Belarus"
+  * #https://dhp.uz/fhir/core/sid/pid/by "Root identifier for personal identification of country Belarus"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -4409,7 +4409,7 @@ Description: """
       * ^property[=].valueCoding = $iso-3166#BY
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-BLR"
-  * #https://dhp.uz/fhir/core/sid/pid/wlf "Root identifier for personal identification of country Wallis and Futuna Islands"
+  * #https://dhp.uz/fhir/core/sid/pid/wf "Root identifier for personal identification of country Wallis and Futuna Islands"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -4423,7 +4423,7 @@ Description: """
       * ^property[=].valueCoding = $iso-3166#WF
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-WLF"
-  * #https://dhp.uz/fhir/core/sid/pid/vut "Root identifier for personal identification of country Vanuatu"
+  * #https://dhp.uz/fhir/core/sid/pid/vu "Root identifier for personal identification of country Vanuatu"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -4437,7 +4437,7 @@ Description: """
       * ^property[=].valueCoding = $iso-3166#VU
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-VUT"
-  * #https://dhp.uz/fhir/core/sid/pid/rus "Root identifier for personal identification of country Russian Federation"
+  * #https://dhp.uz/fhir/core/sid/pid/ru "Root identifier for personal identification of country Russian Federation"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -4451,7 +4451,7 @@ Description: """
       * ^property[=].valueCoding = $iso-3166#RU
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-RUS"
-  * #https://dhp.uz/fhir/core/sid/pid/ven "Root identifier for personal identification of country Venezuela"
+  * #https://dhp.uz/fhir/core/sid/pid/ve "Root identifier for personal identification of country Venezuela"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -4472,7 +4472,7 @@ Description: """
       * ^property[=].valueBoolean = false
       * ^property[+].code = #country
       * ^property[=].valueCoding = $iso-3166#VE
-  * #https://dhp.uz/fhir/core/sid/pid/vnm "Root identifier for personal identification of country Viet Nam"
+  * #https://dhp.uz/fhir/core/sid/pid/vn "Root identifier for personal identification of country Viet Nam"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -4486,7 +4486,7 @@ Description: """
       * ^property[=].valueCoding = $iso-3166#VN
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-VNM"
-  * #https://dhp.uz/fhir/core/sid/pid/vir "Root identifier for personal identification of country Virgin Islands (U.S.)"
+  * #https://dhp.uz/fhir/core/sid/pid/vi "Root identifier for personal identification of country Virgin Islands (U.S.)"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
@@ -4500,7 +4500,7 @@ Description: """
       * ^property[=].valueCoding = $iso-3166#VI
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-VIR"
-  * #https://dhp.uz/fhir/core/sid/pid/umi "Root identifier for personal identification of country United States Minor Outlying Islands"
+  * #https://dhp.uz/fhir/core/sid/pid/um "Root identifier for personal identification of country United States Minor Outlying Islands"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
