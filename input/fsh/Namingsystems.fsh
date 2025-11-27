@@ -1,5 +1,4 @@
 // This file contains definitions of our internally-defined naming systems
-// Updated to follow Estonian identifier domain pattern (https://dhp.uz/fhir/core/sid/{namespace}/{country}/{type})
 
 Instance: uzb-hrm-argos
 InstanceOf: NamingSystem
@@ -22,7 +21,7 @@ Usage: #definition
 * uniqueId[=].comment = "This is the canonical URI for the Uzbekistan HRM Argos system"
 
 Instance: uzb-hrm-argos-practitioner
- InstanceOf: NamingSystem
+InstanceOf: NamingSystem
 Description: "Healthcare professional identifiers assigned by the Uzbekistan Human Resource Management (HRM) system"
 Usage: #definition
 * url = "https://terminology.dhp.uz/fhir/core/NamingSystem/uzb-hrm-argos-practitioner"
