@@ -16,11 +16,11 @@ Description: """
 * ^property[0].code = #idtype
 * ^property[=].uri = $identifier-type
 * ^property[=].description = "Identifier type of concept according to http://terminology.hl7.org/CodeSystem/v2-0203"
-* ^property[=].type = #code
+* ^property[=].type = #Coding
 * ^property[+].code = #country
 * ^property[=].uri = $iso-3166
 * ^property[=].description = "ISO 3166-1 two letter country code"
-* ^property[=].type = #code
+* ^property[=].type = #Coding
 * ^property[+].code = #naming-system
 * ^property[=].description = "The uri for the related naming system that defines system metadata"
 * ^property[=].type = #string
