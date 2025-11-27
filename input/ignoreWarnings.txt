@@ -60,10 +60,6 @@ No definition could be found for URL value 'https://dhp.uz/fhir/core/sid/pid/uz/
 # IG publisher error with the custom system URIs we are using - can be ignored
 Hyperlink 'https://dhp.uz/fhir/core/sid/pid/uz/prn/*/mrt' at 'div/div/table/tr/td/a' for 'https://dhp.uz/fhir/core/sid/pid/uz/prn/*/mrt' does not resolve
 
-# idtype and country are coming from external codesystems, not this one - can be ignored
-The value for a filter based on property 'idtype' must be a valid code from the system 'https://dhp.uz/fhir/core/CodeSystem/identifier-domain-cs'%
-The value for a filter based on property 'country' must be a valid code from the system 'https://dhp.uz/fhir/core/CodeSystem/identifier-domain-cs'%
-
 # sample systems from our IdentifierDomain where we have all foreign drivers licenses and passports - creating NamingSystem for them all is impractical
 No definition could be found for URL value 'https://dhp.uz/fhir/core/sid/pid/gb/ppn'
 No definition could be found for URL value 'https://dhp.uz/fhir/core/sid/pid/gb/dl'
