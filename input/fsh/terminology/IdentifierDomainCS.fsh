@@ -1494,20 +1494,48 @@ Description: """
       * ^property[=].valueBoolean = false
       * ^property[+].code = #country
       * ^property[=].valueCoding = $iso-3166#ES
-  * #https://dhp.uz/fhir/core/sid/pid/ant "Root identifier for personal identification of country Netherlands Antilles"
+  * #https://dhp.uz/fhir/core/sid/pid/bes "Root identifier for personal identification of country Bonaire, Saint Eustatius and Saba"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
-    * ^property[=].valueCoding = $iso-3166#AN
-    * #https://dhp.uz/fhir/core/sid/pid/an/ppn "Passport number of Netherlands Antilles"
+    * ^property[=].valueCoding = $iso-3166#BQ
+    * #https://dhp.uz/fhir/core/sid/pid/bq/ppn "Passport number of Bonaire, Saint Eustatius and Saba"
       * ^property[0].code = #idtype
       * ^property[=].valueCoding = $identifier-type#PPN
       * ^property[+].code = #notSelectable
       * ^property[=].valueBoolean = false
       * ^property[+].code = #country
-      * ^property[=].valueCoding = $iso-3166#AN
+      * ^property[=].valueCoding = $iso-3166#BQ
       * ^property[+].code = #naming-system
-      * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-ANT"
+      * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-BES"
+  * #https://dhp.uz/fhir/core/sid/pid/cuw "Root identifier for personal identification of country Curaçao"
+    * ^property[0].code = #notSelectable
+    * ^property[=].valueBoolean = true
+    * ^property[+].code = #country
+    * ^property[=].valueCoding = $iso-3166#CW
+    * #https://dhp.uz/fhir/core/sid/pid/cw/ppn "Passport number of Curaçao"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCoding = $identifier-type#PPN
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCoding = $iso-3166#CW
+      * ^property[+].code = #naming-system
+      * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-CUW"
+  * #https://dhp.uz/fhir/core/sid/pid/sxm "Root identifier for personal identification of country Sint Maarten (Dutch part)"
+    * ^property[0].code = #notSelectable
+    * ^property[=].valueBoolean = true
+    * ^property[+].code = #country
+    * ^property[=].valueCoding = $iso-3166#SX
+    * #https://dhp.uz/fhir/core/sid/pid/sx/ppn "Passport number of Sint Maarten (Dutch part)"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCoding = $identifier-type#PPN
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+      * ^property[+].code = #country
+      * ^property[=].valueCoding = $iso-3166#SX
+      * ^property[+].code = #naming-system
+      * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-SXM"
   * #https://dhp.uz/fhir/core/sid/pid/hnd "Root identifier for personal identification of country Honduras"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
