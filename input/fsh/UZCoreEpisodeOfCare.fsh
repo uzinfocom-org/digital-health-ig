@@ -1,8 +1,8 @@
 Profile: UZCoreEpisodeOfCare
 Parent: EpisodeOfCare
-Id: uz-core-episodeofcare 
+Id: uz-core-episodeofcare
 Title: "UZ Core EpisodeOfCare"
-Description: "Uzbekistan Core profile for EpisodeOfCare, representing a patient's period of long-term care"
+Description: "Uzbekistan Core profile for EpisodeOfCare, representing a patient's period of long-term care such as pregnancy care or chronic disease management."
 * ^experimental = true
 * ^status = #active
 //rules
