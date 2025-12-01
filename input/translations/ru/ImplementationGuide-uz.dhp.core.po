@@ -2073,7 +2073,7 @@ msgstr ""
 # A description of the reason that a resource has been included in the implementation guide.
 #: ImplementationGuide.definition.resource.description
 msgid "Uzbekistan Core profile for EpisodeOfCare, representing a patient's period of long-term care such as pregnancy care or chronic disease management."
-msgstr ""
+msgstr "Базовый профиль Узбекистана для EpisodeOfCare, представляющий период долгосрочного ухода за пациентом, например, ведение беременности или лечение хронических заболеваний."
 
 # A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).
 #: ImplementationGuide.definition.resource.name
