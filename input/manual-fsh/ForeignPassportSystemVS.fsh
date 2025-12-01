@@ -1,3 +1,6 @@
+// SUSHI has a bug processing the valueset; it thinks idtype/country come from the IdentifierDomainCS while they actually come from another
+
+
 ValueSet: ForeignPassportSystemVS
 Id: foreign-passport-system-vs
 Title: "Foreign Passport System Value Set"
