@@ -6,7 +6,7 @@ Description: "Allowed system URIs for foreign (non-Uzbekistan) passport identifi
 * ^experimental = true
 
 * include codes from system IdentifierDomainCS
-    where idtype = "$identifier-type#PPN" and
+    where idtype = $identifier-type#PPN and
     notSelectable = "false"
 * exclude codes from system IdentifierDomainCS
-    where country = "$iso-3166#UZ"
+    where country = $iso-3166#UZ
