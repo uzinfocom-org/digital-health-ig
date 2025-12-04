@@ -37,14 +37,14 @@ Description: "Uzbekistan Core DocumentReference Profile, used to stores the meta
 
 
 * status from DocumentReferenceStatusVS (required)
-* category from DocumentCategoryLocalVS (extensible) 
-* type from DocumentTypeLocalVS (extensible)
-* docStatus from DocumentReferenceCompositionStatusVS (required)
-* bodySite from $bodysite (example)
+* category from DocumentCategoryLocalVS (preferred) 
+* type from DocumentTypeLocalVS (preferred)
+* docStatus from DocumentReferenceCompositionStatusVS (preferred)
+* bodySite from $bodysite (required)
 * facilityType from OrganizationalStructureVS (required)
-* practiceSetting from $c80-practice-codes (example)
+* practiceSetting from $c80-practice-codes (preferred)
 * attester.mode from DocumentReferenceCompositionAttestationModeVS (preferred)
-* relatesTo.code from DocumentRelationshipTypeVS (extensible)
+* relatesTo.code from DocumentRelationshipTypeVS (preferred)
 
 
 
