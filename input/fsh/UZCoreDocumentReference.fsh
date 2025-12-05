@@ -44,7 +44,7 @@ Description: "Uzbekistan Core DocumentReference Profile, used to stores the meta
 * facilityType from OrganizationalStructureVS (required)
 * practiceSetting from $c80-practice-codes (preferred)
 * attester.mode from DocumentReferenceCompositionAttestationModeVS (preferred)
-* relatesTo.code from DocumentRelationshipTypeVS (extensible)
+* relatesTo.code from DocumentRelationshipTypeVS (preferred)
 
 
 
