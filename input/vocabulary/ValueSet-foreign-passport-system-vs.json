@@ -15,7 +15,7 @@
           {
             "property": "idtype",
             "op": "=",
-            "value": "$identifier-type#PPN"
+            "value": "http://terminology.hl7.org/CodeSystem/v2-0203#PPN"
           },
           {
             "property": "notSelectable",
@@ -32,7 +32,7 @@
           {
             "property": "country",
             "op": "=",
-            "value": "$iso-3166#UZ"
+            "value": "urn:iso:std:iso:3166#UZ"
           }
         ]
       }
