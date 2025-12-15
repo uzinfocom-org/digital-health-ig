@@ -19,7 +19,9 @@ jobs:
       - name: Fetch Capability Statement
         run: |
           curl -sSf "https://playground.dhp.uz/fhir/metadata" | \
-            jq -S '. + {id: "DHPCapabilityStatement"} | del(.rest[0].resource[] | select(.type == "Observation" and .supportedProfile == null))' > \
+            jq -S '. + {id: "DHPCapabilityStatement"}
+              | del(.rest[0].resource[] | select(.type == "Observation" and .supportedProfile == null))
+              | walk(if type == "array" then sort else . end)' > \
             input/vocabulary/CapabilityStatement-DHPCapabilityStatement.json
 
       - name: Check for changes
