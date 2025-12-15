@@ -7,4 +7,4 @@ Description: "Defines the provenance activity types."
 * ^extension[0].url = $valueset-supplement
 * ^extension[=].valueCanonical = Canonical(ProvenanceActivityTypesCS)
 
-* include codes from system ProvenanceActivityTypesCS
+* include $v3-DocumentCompletion#LA
