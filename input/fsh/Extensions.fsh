@@ -31,3 +31,14 @@ Invariant: uzcore-gender-other-2
 Description: "gender 'other' implies differentiation of the gender indication 'other' (for use in a profile)"
 * severity = #error
 * expression = "gender.exists() and gender = 'other' implies gender.extension('https://dhp.uz/fhir/core/StructureDefinition/gender-other').exists()"
+
+Extension: ManagingOrganizationAttachment
+Id: managing-organization-attachment
+Title: "Managing organization attachment date"
+Description: "Date when the patient was attached to the managing organization. In Uzbekistan, patients can only change their managing organization once a year."
+Context: Patient
+* ^context.type = #element
+* ^context.expression = "Patient"
+* ^experimental = true
+* value[x] 1..
+* value[x] only date

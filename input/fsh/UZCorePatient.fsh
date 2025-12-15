@@ -145,7 +145,8 @@ Description: "Uzbekistan Core Patient profile, used to represent patients admini
   * value 1..1 MS
 
 * extension contains patient-nationality named nationality 0..1 MS and
-    patient-citizenship named citizenship 0..1 MS
+    patient-citizenship named citizenship 0..1 MS and
+    ManagingOrganizationAttachment named managingOrganizationAttachment 0..1 MS
 * extension[nationality].extension[code].valueCodeableConcept from NationalityVS (required)
 * extension[citizenship].extension[code].valueCodeableConcept from CountriesDigitalMVDVS (required)
 * gender MS
@@ -208,6 +209,7 @@ Usage: #example
   * gender = #male
 * maritalStatus = $v3-MaritalStatus#W "Вдовец, вдова"
 * extension[nationality].extension[code].valueCodeableConcept = NationalityCS#23 "Азербайджанцы"
+* extension[managingOrganizationAttachment].valueDate = "2024-03-15"
 
 Instance: example-david
 InstanceOf: UZCorePatient
