@@ -24,7 +24,7 @@
     },
     {
       "code": "1",
-      "display": "A‘ZERBAYJAN",
+      "display": "A'ZERBAYJAN",
       "designation": [
         {
           "language": "ru",
@@ -80,7 +80,7 @@
     },
     {
       "code": "6",
-      "display": "ANTIGUA HA‘M BARBUDA",
+      "display": "ANTIGUA HA'M BARBUDA",
       "designation": [
         {
           "language": "ru",
@@ -164,7 +164,7 @@
     },
     {
       "code": "13",
-      "display": "BOSNIYA HA‘M GERSEGOVINA",
+      "display": "BOSNIYA HA'M GERSEGOVINA",
       "designation": [
         {
           "language": "ru",
@@ -262,7 +262,7 @@
     },
     {
       "code": "21",
-      "display": "URUGHA‘MY",
+      "display": "URUGHA'MY",
       "designation": [
         {
           "language": "ru",
@@ -276,7 +276,7 @@
     },
     {
       "code": "22",
-      "display": "SHIG‘IS TIMOR",
+      "display": "SHIG'IS TIMOR",
       "designation": [
         {
           "language": "ru",
@@ -528,7 +528,7 @@
     },
     {
       "code": "41",
-      "display": "SAN-TOME HA‘M PRINSIPI",
+      "display": "SAN-TOME HA'M PRINSIPI",
       "designation": [
         {
           "language": "ru",
@@ -668,7 +668,7 @@
     },
     {
       "code": "53",
-      "display": "AWG‘ANISTAN",
+      "display": "AWG'ANISTAN",
       "designation": [
         {
           "language": "ru",
@@ -948,7 +948,7 @@
     },
     {
       "code": "73",
-      "display": "SHA‘MZILEND",
+      "display": "SHA'MZILEND",
       "designation": [
         {
           "language": "ru",
@@ -1172,7 +1172,7 @@
     },
     {
       "code": "90",
-      "display": "MANG‘OLISTAN",
+      "display": "MANG'OLISTAN",
       "designation": [
         {
           "language": "ru",
@@ -1326,7 +1326,7 @@
     },
     {
       "code": "101",
-      "display": "JAN‘A ZELANDIYA",
+      "display": "JAN'A ZELANDIYA",
       "designation": [
         {
           "language": "ru",
@@ -1340,7 +1340,7 @@
     },
     {
       "code": "102",
-      "display": "JAN‘A KALEDONIYA",
+      "display": "JAN'A KALEDONIYA",
       "designation": [
         {
           "language": "ru",
@@ -1438,7 +1438,7 @@
     },
     {
       "code": "111",
-      "display": "MUQA‘DDES ELENA ATAWI",
+      "display": "MUQA'DDES ELENA ATAWI",
       "designation": [
         {
           "language": "ru",
@@ -1480,7 +1480,7 @@
     },
     {
       "code": "115",
-      "display": "UOLLIS HA‘M FUTUNA ATAWLARI",
+      "display": "UOLLIS HA'M FUTUNA ATAWLARI",
       "designation": [
         {
           "language": "ru",
@@ -1494,7 +1494,7 @@
     },
     {
       "code": "117",
-      "display": "PAPUA-JAN‘A GVINEYA",
+      "display": "PAPUA-JAN'A GVINEYA",
       "designation": [
         {
           "language": "ru",
@@ -1648,7 +1648,7 @@
     },
     {
       "code": "128",
-      "display": "HA‘MNUATU",
+      "display": "HA'MNUATU",
       "designation": [
         {
           "language": "ru",
@@ -1900,7 +1900,7 @@
     },
     {
       "code": "146",
-      "display": "QAZAG‘ISTAN",
+      "display": "QAZAG'ISTAN",
       "designation": [
         {
           "language": "ru",
@@ -2040,7 +2040,7 @@
     },
     {
       "code": "156",
-      "display": "QIRG‘IZISTAN RESPUBLIKASI",
+      "display": "QIRG'IZISTAN RESPUBLIKASI",
       "designation": [
         {
           "language": "ru",
@@ -2048,7 +2048,7 @@
         },
         {
           "language": "en",
-          "value": "QIRG‘IZISTON RESPUBLIKASI"
+          "value": "QIRG'IZISTON RESPUBLIKASI"
         }
       ]
     },
@@ -2194,7 +2194,7 @@
     },
     {
       "code": "167",
-      "display": "PARAGHA‘MY",
+      "display": "PARAGHA'MY",
       "designation": [
         {
           "language": "ru",
@@ -2376,7 +2376,7 @@
     },
     {
       "code": "180",
-      "display": "TRINIDAD HA‘M TOBAGO",
+      "display": "TRINIDAD HA'M TOBAGO",
       "designation": [
         {
           "language": "ru",
@@ -2404,7 +2404,7 @@
     },
     {
       "code": "182",
-      "display": "O‘ZBEKISTAN",
+      "display": "O'ZBEKISTAN",
       "designation": [
         {
           "language": "ru",
@@ -2544,7 +2544,7 @@
     },
     {
       "code": "195",
-      "display": "SENT-VINSENT HA‘M GRENADINLAR",
+      "display": "SENT-VINSENT HA'M GRENADINLAR",
       "designation": [
         {
           "language": "ru",
@@ -2558,7 +2558,7 @@
     },
     {
       "code": "196",
-      "display": "SENT-PER HA‘M MIKELON",
+      "display": "SENT-PER HA'M MIKELON",
       "designation": [
         {
           "language": "ru",
@@ -2600,7 +2600,7 @@
     },
     {
       "code": "199",
-      "display": "SLOHA‘MKIYA",
+      "display": "SLOHA'MKIYA",
       "designation": [
         {
           "language": "ru",
@@ -2754,7 +2754,7 @@
     },
     {
       "code": "211",
-      "display": "TAYHA‘MN",
+      "display": "TAYHA'MN",
       "designation": [
         {
           "language": "ru",
@@ -2768,7 +2768,7 @@
     },
     {
       "code": "212",
-      "display": "TERKS HA‘M KAYKOS ATAWLARI",
+      "display": "TERKS HA'M KAYKOS ATAWLARI",
       "designation": [
         {
           "language": "ru",
@@ -2810,7 +2810,7 @@
     },
     {
       "code": "215",
-      "display": "TUHA‘MLU",
+      "display": "TUHA'MLU",
       "designation": [
         {
           "language": "ru",
@@ -2950,7 +2950,7 @@
     },
     {
       "code": "225",
-      "display": "SENT-KITS HA‘M NEVIS",
+      "display": "SENT-KITS HA'M NEVIS",
       "designation": [
         {
           "language": "ru",
@@ -3048,7 +3048,7 @@
     },
     {
       "code": "235",
-      "display": "SHPITSBERGEN HA‘M YAN-MAYEN ATAWLARI",
+      "display": "SHPITSBERGEN HA'M YAN-MAYEN ATAWLARI",
       "designation": [
         {
           "language": "ru",
@@ -3132,7 +3132,7 @@
     },
     {
       "code": "242",
-      "display": "QIRG‘IZSTAN",
+      "display": "QIRG'IZSTAN",
       "designation": [
         {
           "language": "ru",
@@ -3216,7 +3216,7 @@
     },
     {
       "code": "272",
-      "display": "PUQARALIG‘I BOLMAG‘AN SHAXS",
+      "display": "PUQARALIG'I BOLMAG'AN SHAXS",
       "designation": [
         {
           "language": "ru",
@@ -3286,7 +3286,7 @@
     },
     {
       "code": "285",
-      "display": "XARHA‘MTIYA",
+      "display": "XARHA'MTIYA",
       "designation": [
         {
           "language": "ru",
@@ -3328,7 +3328,7 @@
     },
     {
       "code": "502",
-      "display": "XERD HA‘M MAKDONALD ATAWLARI",
+      "display": "XERD HA'M MAKDONALD ATAWLARI",
       "designation": [
         {
           "language": "ru",
@@ -3342,7 +3342,7 @@
     },
     {
       "code": "504",
-      "display": "SERBIYA HA‘M CHERNOGORIYA",
+      "display": "SERBIYA HA'M CHERNOGORIYA",
       "designation": [
         {
           "language": "ru",
