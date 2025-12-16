@@ -57,9 +57,9 @@ Description: "ConceptMap for translating ISO 3166-1 alpha-3 (3-letter) country c
 * group.element[=].target.relationship = #equivalent
 
 * group.element[+].code = #ARE
-* group.element[=].display = "United Arab Emirates"
+* group.element[=].display = "United Arab Emirates (the)"
 * group.element[=].target.code = #AE
-* group.element[=].target.display = "United Arab Emirates"
+* group.element[=].target.display = "United Arab Emirates (the)"
 * group.element[=].target.relationship = #equivalent
 
 * group.element[+].code = #ARG
@@ -87,9 +87,9 @@ Description: "ConceptMap for translating ISO 3166-1 alpha-3 (3-letter) country c
 * group.element[=].target.relationship = #equivalent
 
 * group.element[+].code = #ATF
-* group.element[=].display = "French Southern Territories"
+* group.element[=].display = "French Southern Territories (the)"
 * group.element[=].target.code = #TF
-* group.element[=].target.display = "French Southern Territories"
+* group.element[=].target.display = "French Southern Territories (the)"
 * group.element[=].target.relationship = #equivalent
 
 * group.element[+].code = #ATG
@@ -160,9 +160,9 @@ Description: "ConceptMap for translating ISO 3166-1 alpha-3 (3-letter) country c
 * group.element[=].target.relationship = #equivalent
 
 * group.element[+].code = #BHS
-* group.element[=].display = "Bahamas"
+* group.element[=].display = "Bahamas (the)"
 * group.element[=].target.code = #BS
-* group.element[=].target.display = "Bahamas"
+* group.element[=].target.display = "Bahamas (the)"
 * group.element[=].target.relationship = #equivalent
 
 * group.element[+].code = #BIH
@@ -190,9 +190,9 @@ Description: "ConceptMap for translating ISO 3166-1 alpha-3 (3-letter) country c
 * group.element[=].target.relationship = #equivalent
 
 * group.element[+].code = #BOL
-* group.element[=].display = "Bolivia"
+* group.element[=].display = "Bolivia (Plurinational State of)"
 * group.element[=].target.code = #BO
-* group.element[=].target.display = "Bolivia"
+* group.element[=].target.display = "Bolivia (Plurinational State of)"
 * group.element[=].target.relationship = #equivalent
 
 * group.element[+].code = #BRA
@@ -208,9 +208,9 @@ Description: "ConceptMap for translating ISO 3166-1 alpha-3 (3-letter) country c
 * group.element[=].target.relationship = #equivalent
 
 * group.element[+].code = #BRN
-* group.element[=].display = "Brunei"
+* group.element[=].display = "Brunei Darussalam"
 * group.element[=].target.code = #BN
-* group.element[=].target.display = "Brunei"
+* group.element[=].target.display = "Brunei Darussalam"
 * group.element[=].target.relationship = #equivalent
 
 * group.element[+].code = #BTN
@@ -233,9 +233,9 @@ Description: "ConceptMap for translating ISO 3166-1 alpha-3 (3-letter) country c
 
 // C
 * group.element[+].code = #CAF
-* group.element[=].display = "Central African Republic"
+* group.element[=].display = "Central African Republic (the)"
 * group.element[=].target.code = #CF
-* group.element[=].target.display = "Central African Republic"
+* group.element[=].target.display = "Central African Republic (the)"
 * group.element[=].target.relationship = #equivalent
 
 * group.element[+].code = #CAN
@@ -245,9 +245,9 @@ Description: "ConceptMap for translating ISO 3166-1 alpha-3 (3-letter) country c
 * group.element[=].target.relationship = #equivalent
 
 * group.element[+].code = #CCK
-* group.element[=].display = "Cocos (Keeling) Islands"
+* group.element[=].display = "Cocos (Keeling) Islands (the)"
 * group.element[=].target.code = #CC
-* group.element[=].target.display = "Cocos (Keeling) Islands"
+* group.element[=].target.display = "Cocos (Keeling) Islands (the)"
 * group.element[=].target.relationship = #equivalent
 
 * group.element[+].code = #CHE
@@ -281,21 +281,21 @@ Description: "ConceptMap for translating ISO 3166-1 alpha-3 (3-letter) country c
 * group.element[=].target.relationship = #equivalent
 
 * group.element[+].code = #COD
-* group.element[=].display = "Congo, Democratic Republic of the"
+* group.element[=].display = "Congo (the Democratic Republic of the)"
 * group.element[=].target.code = #CD
-* group.element[=].target.display = "Congo, Democratic Republic of the"
+* group.element[=].target.display = "Congo (the Democratic Republic of the)"
 * group.element[=].target.relationship = #equivalent
 
 * group.element[+].code = #COG
-* group.element[=].display = "Congo"
+* group.element[=].display = "Congo (the)"
 * group.element[=].target.code = #CG
-* group.element[=].target.display = "Congo"
+* group.element[=].target.display = "Congo (the)"
 * group.element[=].target.relationship = #equivalent
 
 * group.element[+].code = #COK
-* group.element[=].display = "Cook Islands"
+* group.element[=].display = "Cook Islands (the)"
 * group.element[=].target.code = #CK
-* group.element[=].target.display = "Cook Islands"
+* group.element[=].target.display = "Cook Islands (the)"
 * group.element[=].target.relationship = #equivalent
 
 * group.element[+].code = #COL
@@ -305,9 +305,9 @@ Description: "ConceptMap for translating ISO 3166-1 alpha-3 (3-letter) country c
 * group.element[=].target.relationship = #equivalent
 
 * group.element[+].code = #COM
-* group.element[=].display = "Comoros"
+* group.element[=].display = "Comoros (the)"
 * group.element[=].target.code = #KM
-* group.element[=].target.display = "Comoros"
+* group.element[=].target.display = "Comoros (the)"
 * group.element[=].target.relationship = #equivalent
 
 * group.element[+].code = #CPV
@@ -335,9 +335,9 @@ Description: "ConceptMap for translating ISO 3166-1 alpha-3 (3-letter) country c
 * group.element[=].target.relationship = #equivalent
 
 * group.element[+].code = #CYM
-* group.element[=].display = "Cayman Islands"
+* group.element[=].display = "Cayman Islands (the)"
 * group.element[=].target.code = #KY
-* group.element[=].target.display = "Cayman Islands"
+* group.element[=].target.display = "Cayman Islands (the)"
 * group.element[=].target.relationship = #equivalent
 
 * group.element[+].code = #CYP
@@ -378,9 +378,9 @@ Description: "ConceptMap for translating ISO 3166-1 alpha-3 (3-letter) country c
 * group.element[=].target.relationship = #equivalent
 
 * group.element[+].code = #DOM
-* group.element[=].display = "Dominican Republic"
+* group.element[=].display = "Dominican Republic (the)"
 * group.element[=].target.code = #DO
-* group.element[=].target.display = "Dominican Republic"
+* group.element[=].target.display = "Dominican Republic (the)"
 * group.element[=].target.relationship = #equivalent
 
 * group.element[+].code = #DZA
@@ -409,9 +409,9 @@ Description: "ConceptMap for translating ISO 3166-1 alpha-3 (3-letter) country c
 * group.element[=].target.relationship = #equivalent
 
 * group.element[+].code = #ESH
-* group.element[=].display = "Western Sahara"
+* group.element[=].display = "Western Sahara*"
 * group.element[=].target.code = #EH
-* group.element[=].target.display = "Western Sahara"
+* group.element[=].target.display = "Western Sahara*"
 * group.element[=].target.relationship = #equivalent
 
 * group.element[+].code = #ESP
@@ -446,9 +446,9 @@ Description: "ConceptMap for translating ISO 3166-1 alpha-3 (3-letter) country c
 * group.element[=].target.relationship = #equivalent
 
 * group.element[+].code = #FLK
-* group.element[=].display = "Falkland Islands (Malvinas)"
+* group.element[=].display = "Falkland Islands (the) [Malvinas]"
 * group.element[=].target.code = #FK
-* group.element[=].target.display = "Falkland Islands (Malvinas)"
+* group.element[=].target.display = "Falkland Islands (the) [Malvinas]"
 * group.element[=].target.relationship = #equivalent
 
 * group.element[+].code = #FRA
@@ -458,15 +458,15 @@ Description: "ConceptMap for translating ISO 3166-1 alpha-3 (3-letter) country c
 * group.element[=].target.relationship = #equivalent
 
 * group.element[+].code = #FRO
-* group.element[=].display = "Faroe Islands"
+* group.element[=].display = "Faroe Islands (the)"
 * group.element[=].target.code = #FO
-* group.element[=].target.display = "Faroe Islands"
+* group.element[=].target.display = "Faroe Islands (the)"
 * group.element[=].target.relationship = #equivalent
 
 * group.element[+].code = #FSM
-* group.element[=].display = "Micronesia, Federated States of"
+* group.element[=].display = "Micronesia (Federated States of)"
 * group.element[=].target.code = #FM
-* group.element[=].target.display = "Micronesia, Federated States of"
+* group.element[=].target.display = "Micronesia (Federated States of)"
 * group.element[=].target.relationship = #equivalent
 
 // G
@@ -477,9 +477,9 @@ Description: "ConceptMap for translating ISO 3166-1 alpha-3 (3-letter) country c
 * group.element[=].target.relationship = #equivalent
 
 * group.element[+].code = #GBR
-* group.element[=].display = "United Kingdom"
+* group.element[=].display = "United Kingdom of Great Britain and Northern Ireland (the)"
 * group.element[=].target.code = #GB
-* group.element[=].target.display = "United Kingdom"
+* group.element[=].target.display = "United Kingdom of Great Britain and Northern Ireland (the)"
 * group.element[=].target.relationship = #equivalent
 
 * group.element[+].code = #GEO
@@ -519,9 +519,9 @@ Description: "ConceptMap for translating ISO 3166-1 alpha-3 (3-letter) country c
 * group.element[=].target.relationship = #equivalent
 
 * group.element[+].code = #GMB
-* group.element[=].display = "Gambia"
+* group.element[=].display = "Gambia (the)"
 * group.element[=].target.code = #GM
-* group.element[=].target.display = "Gambia"
+* group.element[=].target.display = "Gambia (the)"
 * group.element[=].target.relationship = #equivalent
 
 * group.element[+].code = #GNB
@@ -635,9 +635,9 @@ Description: "ConceptMap for translating ISO 3166-1 alpha-3 (3-letter) country c
 * group.element[=].target.relationship = #equivalent
 
 * group.element[+].code = #IOT
-* group.element[=].display = "British Indian Ocean Territory"
+* group.element[=].display = "British Indian Ocean Territory (the)"
 * group.element[=].target.code = #IO
-* group.element[=].target.display = "British Indian Ocean Territory"
+* group.element[=].target.display = "British Indian Ocean Territory (the)"
 * group.element[=].target.relationship = #equivalent
 
 * group.element[+].code = #IRL
@@ -647,9 +647,9 @@ Description: "ConceptMap for translating ISO 3166-1 alpha-3 (3-letter) country c
 * group.element[=].target.relationship = #equivalent
 
 * group.element[+].code = #IRN
-* group.element[=].display = "Iran"
+* group.element[=].display = "Iran (Islamic Republic of)"
 * group.element[=].target.code = #IR
-* group.element[=].target.display = "Iran"
+* group.element[=].target.display = "Iran (Islamic Republic of)"
 * group.element[=].target.relationship = #equivalent
 
 * group.element[+].code = #IRQ
@@ -739,9 +739,9 @@ Description: "ConceptMap for translating ISO 3166-1 alpha-3 (3-letter) country c
 * group.element[=].target.relationship = #equivalent
 
 * group.element[+].code = #KOR
-* group.element[=].display = "Korea, Republic of"
+* group.element[=].display = "Korea (the Republic of)"
 * group.element[=].target.code = #KR
-* group.element[=].target.display = "Korea, Republic of"
+* group.element[=].target.display = "Korea (the Republic of)"
 * group.element[=].target.relationship = #equivalent
 
 * group.element[+].code = #KWT
@@ -752,9 +752,9 @@ Description: "ConceptMap for translating ISO 3166-1 alpha-3 (3-letter) country c
 
 // L
 * group.element[+].code = #LAO
-* group.element[=].display = "Lao People's Democratic Republic"
+* group.element[=].display = "Lao People's Democratic Republic (the)"
 * group.element[=].target.code = #LA
-* group.element[=].target.display = "Lao People's Democratic Republic"
+* group.element[=].target.display = "Lao People's Democratic Republic (the)"
 * group.element[=].target.relationship = #equivalent
 
 * group.element[+].code = #LBN
@@ -837,9 +837,9 @@ Description: "ConceptMap for translating ISO 3166-1 alpha-3 (3-letter) country c
 * group.element[=].target.relationship = #equivalent
 
 * group.element[+].code = #MDA
-* group.element[=].display = "Moldova"
+* group.element[=].display = "Moldova (the Republic of)"
 * group.element[=].target.code = #MD
-* group.element[=].target.display = "Moldova"
+* group.element[=].target.display = "Moldova (the Republic of)"
 * group.element[=].target.relationship = #equivalent
 
 * group.element[+].code = #MDG
@@ -861,9 +861,9 @@ Description: "ConceptMap for translating ISO 3166-1 alpha-3 (3-letter) country c
 * group.element[=].target.relationship = #equivalent
 
 * group.element[+].code = #MHL
-* group.element[=].display = "Marshall Islands"
+* group.element[=].display = "Marshall Islands (the)"
 * group.element[=].target.code = #MH
-* group.element[=].target.display = "Marshall Islands"
+* group.element[=].target.display = "Marshall Islands (the)"
 * group.element[=].target.relationship = #equivalent
 
 * group.element[+].code = #MKD
@@ -903,9 +903,9 @@ Description: "ConceptMap for translating ISO 3166-1 alpha-3 (3-letter) country c
 * group.element[=].target.relationship = #equivalent
 
 * group.element[+].code = #MNP
-* group.element[=].display = "Northern Mariana Islands"
+* group.element[=].display = "Northern Mariana Islands (the)"
 * group.element[=].target.code = #MP
-* group.element[=].target.display = "Northern Mariana Islands"
+* group.element[=].target.display = "Northern Mariana Islands (the)"
 * group.element[=].target.relationship = #equivalent
 
 * group.element[+].code = #MOZ
@@ -970,9 +970,9 @@ Description: "ConceptMap for translating ISO 3166-1 alpha-3 (3-letter) country c
 * group.element[=].target.relationship = #equivalent
 
 * group.element[+].code = #NER
-* group.element[=].display = "Niger"
+* group.element[=].display = "Niger (the)"
 * group.element[=].target.code = #NE
-* group.element[=].target.display = "Niger"
+* group.element[=].target.display = "Niger (the)"
 * group.element[=].target.relationship = #equivalent
 
 * group.element[+].code = #NFK
@@ -1000,9 +1000,9 @@ Description: "ConceptMap for translating ISO 3166-1 alpha-3 (3-letter) country c
 * group.element[=].target.relationship = #equivalent
 
 * group.element[+].code = #NLD
-* group.element[=].display = "Netherlands"
+* group.element[=].display = "Netherlands (the)"
 * group.element[=].target.code = #NL
-* group.element[=].target.display = "Netherlands"
+* group.element[=].target.display = "Netherlands (the)"
 * group.element[=].target.relationship = #equivalent
 
 * group.element[+].code = #NOR
@@ -1062,9 +1062,9 @@ Description: "ConceptMap for translating ISO 3166-1 alpha-3 (3-letter) country c
 * group.element[=].target.relationship = #equivalent
 
 * group.element[+].code = #PHL
-* group.element[=].display = "Philippines"
+* group.element[=].display = "Philippines (the)"
 * group.element[=].target.code = #PH
-* group.element[=].target.display = "Philippines"
+* group.element[=].target.display = "Philippines (the)"
 * group.element[=].target.relationship = #equivalent
 
 * group.element[+].code = #PLW
@@ -1092,9 +1092,9 @@ Description: "ConceptMap for translating ISO 3166-1 alpha-3 (3-letter) country c
 * group.element[=].target.relationship = #equivalent
 
 * group.element[+].code = #PRK
-* group.element[=].display = "Korea, Democratic People's Republic of"
+* group.element[=].display = "Korea (the Democratic People's Republic of)"
 * group.element[=].target.code = #KP
-* group.element[=].target.display = "Korea, Democratic People's Republic of"
+* group.element[=].target.display = "Korea (the Democratic People's Republic of)"
 * group.element[=].target.relationship = #equivalent
 
 * group.element[+].code = #PRT
@@ -1142,9 +1142,9 @@ Description: "ConceptMap for translating ISO 3166-1 alpha-3 (3-letter) country c
 * group.element[=].target.relationship = #equivalent
 
 * group.element[+].code = #RUS
-* group.element[=].display = "Russian Federation"
+* group.element[=].display = "Russian Federation (the)"
 * group.element[=].target.code = #RU
-* group.element[=].target.display = "Russian Federation"
+* group.element[=].target.display = "Russian Federation (the)"
 * group.element[=].target.relationship = #equivalent
 
 * group.element[+].code = #RWA
@@ -1161,9 +1161,9 @@ Description: "ConceptMap for translating ISO 3166-1 alpha-3 (3-letter) country c
 * group.element[=].target.relationship = #equivalent
 
 * group.element[+].code = #SDN
-* group.element[=].display = "Sudan"
+* group.element[=].display = "Sudan (the)"
 * group.element[=].target.code = #SD
-* group.element[=].target.display = "Sudan"
+* group.element[=].target.display = "Sudan (the)"
 * group.element[=].target.relationship = #equivalent
 
 * group.element[+].code = #SEN
@@ -1281,16 +1281,16 @@ Description: "ConceptMap for translating ISO 3166-1 alpha-3 (3-letter) country c
 * group.element[=].target.relationship = #equivalent
 
 * group.element[+].code = #SYR
-* group.element[=].display = "Syrian Arab Republic"
+* group.element[=].display = "Syrian Arab Republic (the)"
 * group.element[=].target.code = #SY
-* group.element[=].target.display = "Syrian Arab Republic"
+* group.element[=].target.display = "Syrian Arab Republic (the)"
 * group.element[=].target.relationship = #equivalent
 
 // T
 * group.element[+].code = #TCA
-* group.element[=].display = "Turks and Caicos Islands"
+* group.element[=].display = "Turks and Caicos Islands (the)"
 * group.element[=].target.code = #TC
-* group.element[=].target.display = "Turks and Caicos Islands"
+* group.element[=].target.display = "Turks and Caicos Islands (the)"
 * group.element[=].target.relationship = #equivalent
 
 * group.element[+].code = #TCD
@@ -1366,15 +1366,15 @@ Description: "ConceptMap for translating ISO 3166-1 alpha-3 (3-letter) country c
 * group.element[=].target.relationship = #equivalent
 
 * group.element[+].code = #TWN
-* group.element[=].display = "Taiwan"
+* group.element[=].display = "Taiwan (Province of China)"
 * group.element[=].target.code = #TW
-* group.element[=].target.display = "Taiwan"
+* group.element[=].target.display = "Taiwan (Province of China)"
 * group.element[=].target.relationship = #equivalent
 
 * group.element[+].code = #TZA
-* group.element[=].display = "Tanzania, United Republic of"
+* group.element[=].display = "Tanzania, the United Republic of"
 * group.element[=].target.code = #TZ
-* group.element[=].target.display = "Tanzania, United Republic of"
+* group.element[=].target.display = "Tanzania, the United Republic of"
 * group.element[=].target.relationship = #equivalent
 
 // U
@@ -1391,9 +1391,9 @@ Description: "ConceptMap for translating ISO 3166-1 alpha-3 (3-letter) country c
 * group.element[=].target.relationship = #equivalent
 
 * group.element[+].code = #UMI
-* group.element[=].display = "United States Minor Outlying Islands"
+* group.element[=].display = "United States Minor Outlying Islands (the)"
 * group.element[=].target.code = #UM
-* group.element[=].target.display = "United States Minor Outlying Islands"
+* group.element[=].target.display = "United States Minor Outlying Islands (the)"
 * group.element[=].target.relationship = #equivalent
 
 * group.element[+].code = #URY
@@ -1403,9 +1403,9 @@ Description: "ConceptMap for translating ISO 3166-1 alpha-3 (3-letter) country c
 * group.element[=].target.relationship = #equivalent
 
 * group.element[+].code = #USA
-* group.element[=].display = "United States of America"
+* group.element[=].display = "United States of America (the)"
 * group.element[=].target.code = #US
-* group.element[=].target.display = "United States of America"
+* group.element[=].target.display = "United States of America (the)"
 * group.element[=].target.relationship = #equivalent
 
 * group.element[+].code = #UZB
@@ -1416,9 +1416,9 @@ Description: "ConceptMap for translating ISO 3166-1 alpha-3 (3-letter) country c
 
 // V
 * group.element[+].code = #VAT
-* group.element[=].display = "Holy See"
+* group.element[=].display = "Holy See (the)"
 * group.element[=].target.code = #VA
-* group.element[=].target.display = "Holy See"
+* group.element[=].target.display = "Holy See (the)"
 * group.element[=].target.relationship = #equivalent
 
 * group.element[+].code = #VCT
@@ -1428,21 +1428,21 @@ Description: "ConceptMap for translating ISO 3166-1 alpha-3 (3-letter) country c
 * group.element[=].target.relationship = #equivalent
 
 * group.element[+].code = #VEN
-* group.element[=].display = "Venezuela"
+* group.element[=].display = "Venezuela (Bolivarian Republic of)"
 * group.element[=].target.code = #VE
-* group.element[=].target.display = "Venezuela"
+* group.element[=].target.display = "Venezuela (Bolivarian Republic of)"
 * group.element[=].target.relationship = #equivalent
 
 * group.element[+].code = #VGB
-* group.element[=].display = "Virgin Islands, British"
+* group.element[=].display = "Virgin Islands (British)"
 * group.element[=].target.code = #VG
-* group.element[=].target.display = "Virgin Islands, British"
+* group.element[=].target.display = "Virgin Islands (British)"
 * group.element[=].target.relationship = #equivalent
 
 * group.element[+].code = #VIR
-* group.element[=].display = "Virgin Islands, U.S."
+* group.element[=].display = "Virgin Islands (U.S.)"
 * group.element[=].target.code = #VI
-* group.element[=].target.display = "Virgin Islands, U.S."
+* group.element[=].target.display = "Virgin Islands (U.S.)"
 * group.element[=].target.relationship = #equivalent
 
 * group.element[+].code = #VNM

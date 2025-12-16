@@ -9,7 +9,7 @@ Description: "ConceptMap for translating Uzbekistan MVD numeric codes to ISO 316
 * status = #active
 * experimental = false
 * sourceScopeCanonical = Canonical(CountriesDigitalMVDVS)
-* targetScopeUri = "urn:iso:std:iso:3166"
+* targetScopeUri = $iso3166-1-2
 * group.source = Canonical(CountriesDigitalMVDCS)
 * group.target = $iso-3166
 
@@ -88,7 +88,7 @@ Description: "ConceptMap for translating Uzbekistan MVD numeric codes to ISO 316
 * group.element[+].code = #15
 * group.element[=].display = "BRITANIYA VIRGINIYA ATAWLARI"
 * group.element[=].target.code = #VG
-* group.element[=].target.display = "Virgin Islands, British"
+* group.element[=].target.display = "Virgin Islands (British)"
 * group.element[=].target.relationship = #equivalent
 
 * group.element[+].code = #16
@@ -118,7 +118,7 @@ Description: "ConceptMap for translating Uzbekistan MVD numeric codes to ISO 316
 * group.element[+].code = #20
 * group.element[=].display = "VIRGINIYA ATAWLARI"
 * group.element[=].target.code = #VI
-* group.element[=].target.display = "Virgin Islands, U.S."
+* group.element[=].target.display = "Virgin Islands (U.S.)"
 * group.element[=].target.relationship = #equivalent
 
 * group.element[+].code = #21
@@ -202,7 +202,7 @@ Description: "ConceptMap for translating Uzbekistan MVD numeric codes to ISO 316
 * group.element[+].code = #35
 * group.element[=].display = "VATIKAN"
 * group.element[=].target.code = #VA
-* group.element[=].target.display = "Holy See (Vatican City State)"
+* group.element[=].target.display = "Holy See (the)"
 * group.element[=].target.relationship = #equivalent
 
 * group.element[+].code = #36
@@ -250,13 +250,13 @@ Description: "ConceptMap for translating Uzbekistan MVD numeric codes to ISO 316
 * group.element[+].code = #44
 * group.element[=].display = "DOMINIKAN RESPUBLIKASI"
 * group.element[=].target.code = #DO
-* group.element[=].target.display = "Dominican Republic"
+* group.element[=].target.display = "Dominican Republic (the)"
 * group.element[=].target.relationship = #equivalent
 
 * group.element[+].code = #45
 * group.element[=].display = "BATIS SAXARA"
 * group.element[=].target.code = #EH
-* group.element[=].target.display = "Western Sahara"
+* group.element[=].target.display = "Western Sahara*"
 * group.element[=].target.relationship = #equivalent
 
 * group.element[+].code = #47
@@ -280,7 +280,7 @@ Description: "ConceptMap for translating Uzbekistan MVD numeric codes to ISO 316
 * group.element[+].code = #50
 * group.element[=].display = "IRAN ISLAM RESPUBLIKASI"
 * group.element[=].target.code = #IR
-* group.element[=].target.display = "Iran, Islamic Republic of"
+* group.element[=].target.display = "Iran (Islamic Republic of)"
 * group.element[=].target.relationship = #equivalent
 
 * group.element[+].code = #51
@@ -340,7 +340,7 @@ Description: "ConceptMap for translating Uzbekistan MVD numeric codes to ISO 316
 * group.element[+].code = #60
 * group.element[=].display = "KOKOS ATAWLARI"
 * group.element[=].target.code = #CC
-* group.element[=].target.display = "Cocos (Keeling) Islands"
+* group.element[=].target.display = "Cocos (Keeling) Islands (the)"
 * group.element[=].target.relationship = #equivalent
 
 * group.element[+].code = #61
@@ -352,7 +352,7 @@ Description: "ConceptMap for translating Uzbekistan MVD numeric codes to ISO 316
 * group.element[+].code = #62
 * group.element[=].display = "KOREYS XALQ DEMOKRATIK RESPUBLIKASI"
 * group.element[=].target.code = #KP
-* group.element[=].target.display = "Korea, Democratic People's Republic of"
+* group.element[=].target.display = "Korea (the Democratic People's Republic of)"
 * group.element[=].target.relationship = #equivalent
 
 * group.element[+].code = #63
@@ -400,7 +400,7 @@ Description: "ConceptMap for translating Uzbekistan MVD numeric codes to ISO 316
 * group.element[+].code = #70
 * group.element[=].display = "NIDERLAND"
 * group.element[=].target.code = #NL
-* group.element[=].target.display = "Netherlands"
+* group.element[=].target.display = "Netherlands (the)"
 * group.element[=].target.relationship = #equivalent
 
 * group.element[+].code = #71
@@ -442,7 +442,7 @@ Description: "ConceptMap for translating Uzbekistan MVD numeric codes to ISO 316
 * group.element[+].code = #77
 * group.element[=].display = "LAOS XALQ DEMOKRATIK RESPUBLIKASI"
 * group.element[=].target.code = #LA
-* group.element[=].target.display = "Lao People's Democratic Republic"
+* group.element[=].target.display = "Lao People's Democratic Republic (the)"
 * group.element[=].target.relationship = #equivalent
 
 * group.element[+].code = #78
@@ -502,7 +502,7 @@ Description: "ConceptMap for translating Uzbekistan MVD numeric codes to ISO 316
 * group.element[+].code = #88
 * group.element[=].display = "MARSHAL ATAWLARI"
 * group.element[=].target.code = #MH
-* group.element[=].target.display = "Marshall Islands"
+* group.element[=].target.display = "Marshall Islands (the)"
 * group.element[=].target.relationship = #equivalent
 
 * group.element[+].code = #89
@@ -556,7 +556,7 @@ Description: "ConceptMap for translating Uzbekistan MVD numeric codes to ISO 316
 * group.element[+].code = #97
 * group.element[=].display = "KONGO"
 * group.element[=].target.code = #CG
-* group.element[=].target.display = "Congo"
+* group.element[=].target.display = "Congo (the)"
 * group.element[=].target.relationship = #equivalent
 
 * group.element[+].code = #98
@@ -592,13 +592,13 @@ Description: "ConceptMap for translating Uzbekistan MVD numeric codes to ISO 316
 * group.element[+].code = #104
 * group.element[=].display = "TANZANIYA BIRLESGEN RESPUBLIKASI"
 * group.element[=].target.code = #TZ
-* group.element[=].target.display = "Tanzania, United Republic of"
+* group.element[=].target.display = "Tanzania, the United Republic of"
 * group.element[=].target.relationship = #equivalent
 
 * group.element[+].code = #105
 * group.element[=].display = "BIRLESGEN ARAB AMIRLIKLERI"
 * group.element[=].target.code = #AE
-* group.element[=].target.display = "United Arab Emirates"
+* group.element[=].target.display = "United Arab Emirates (the)"
 * group.element[=].target.relationship = #equivalent
 
 * group.element[+].code = #106
@@ -628,13 +628,13 @@ Description: "ConceptMap for translating Uzbekistan MVD numeric codes to ISO 316
 * group.element[+].code = #113
 * group.element[=].display = "KAYMAN ATAWLARI"
 * group.element[=].target.code = #KY
-* group.element[=].target.display = "Cayman Islands"
+* group.element[=].target.display = "Cayman Islands (the)"
 * group.element[=].target.relationship = #equivalent
 
 * group.element[+].code = #114
 * group.element[=].display = "KUKA ATAWLARI"
 * group.element[=].target.code = #CK
-* group.element[=].target.display = "Cook Islands"
+* group.element[=].target.display = "Cook Islands (the)"
 * group.element[=].target.relationship = #equivalent
 
 * group.element[+].code = #115
@@ -694,7 +694,7 @@ Description: "ConceptMap for translating Uzbekistan MVD numeric codes to ISO 316
 * group.element[+].code = #125
 * group.element[=].display = "BOLIVIYA"
 * group.element[=].target.code = #BO
-* group.element[=].target.display = "Bolivia, Plurinational State of"
+* group.element[=].target.display = "Bolivia (Plurinational State of)"
 * group.element[=].target.relationship = #equivalent
 
 * group.element[+].code = #126
@@ -718,7 +718,7 @@ Description: "ConceptMap for translating Uzbekistan MVD numeric codes to ISO 316
 * group.element[+].code = #129
 * group.element[=].display = "VENESUELA"
 * group.element[=].target.code = #VE
-* group.element[=].target.display = "Venezuela, Bolivarian Republic of"
+* group.element[=].target.display = "Venezuela (Bolivarian Republic of)"
 * group.element[=].target.relationship = #equivalent
 
 * group.element[+].code = #130
@@ -730,7 +730,7 @@ Description: "ConceptMap for translating Uzbekistan MVD numeric codes to ISO 316
 * group.element[+].code = #131
 * group.element[=].display = "GAMBIYA"
 * group.element[=].target.code = #GM
-* group.element[=].target.display = "Gambia"
+* group.element[=].target.display = "Gambia (the)"
 * group.element[=].target.relationship = #equivalent
 
 * group.element[+].code = #132
@@ -772,7 +772,7 @@ Description: "ConceptMap for translating Uzbekistan MVD numeric codes to ISO 316
 * group.element[+].code = #138
 * group.element[=].display = "ZOIR RESPUBLIKASI"
 * group.element[=].target.code = #CD
-* group.element[=].target.display = "Congo, Democratic Republic of the"
+* group.element[=].target.display = "Congo (the Democratic Republic of the)"
 * group.element[=].target.relationship = #equivalent
 
 * group.element[+].code = #139
@@ -856,7 +856,7 @@ Description: "ConceptMap for translating Uzbekistan MVD numeric codes to ISO 316
 * group.element[+].code = #152
 * group.element[=].display = "KOREYA RESPUBLIKASI"
 * group.element[=].target.code = #KR
-* group.element[=].target.display = "Korea, Republic of"
+* group.element[=].target.display = "Korea (the Republic of)"
 * group.element[=].target.relationship = #equivalent
 
 * group.element[+].code = #153
@@ -910,7 +910,7 @@ Description: "ConceptMap for translating Uzbekistan MVD numeric codes to ISO 316
 * group.element[+].code = #161
 * group.element[=].display = "MOLDOVA RESPUBLIKASI"
 * group.element[=].target.code = #MD
-* group.element[=].target.display = "Moldova, Republic of"
+* group.element[=].target.display = "Moldova (the Republic of)"
 * group.element[=].target.relationship = #equivalent
 
 * group.element[+].code = #162
@@ -922,7 +922,7 @@ Description: "ConceptMap for translating Uzbekistan MVD numeric codes to ISO 316
 * group.element[+].code = #163
 * group.element[=].display = "NIGER"
 * group.element[=].target.code = #NE
-* group.element[=].target.display = "Niger"
+* group.element[=].target.display = "Niger (the)"
 * group.element[=].target.relationship = #equivalent
 
 * group.element[+].code = #164
@@ -1000,7 +1000,7 @@ Description: "ConceptMap for translating Uzbekistan MVD numeric codes to ISO 316
 * group.element[+].code = #176
 * group.element[=].display = "SUDAN"
 * group.element[=].target.code = #SD
-* group.element[=].target.display = "Sudan"
+* group.element[=].target.display = "Sudan (the)"
 * group.element[=].target.relationship = #equivalent
 
 * group.element[+].code = #177
@@ -1048,7 +1048,7 @@ Description: "ConceptMap for translating Uzbekistan MVD numeric codes to ISO 316
 * group.element[+].code = #184
 * group.element[=].display = "FILIPPIN"
 * group.element[=].target.code = #PH
-* group.element[=].target.display = "Philippines"
+* group.element[=].target.display = "Philippines (the)"
 * group.element[=].target.relationship = #equivalent
 
 * group.element[+].code = #187
@@ -1078,7 +1078,7 @@ Description: "ConceptMap for translating Uzbekistan MVD numeric codes to ISO 316
 * group.element[+].code = #192
 * group.element[=].display = "ROSSIYA FEDERATSIYASI"
 * group.element[=].target.code = #RU
-* group.element[=].target.display = "Russian Federation"
+* group.element[=].target.display = "Russian Federation (the)"
 * group.element[=].target.relationship = #equivalent
 
 * group.element[+].code = #193
@@ -1114,7 +1114,7 @@ Description: "ConceptMap for translating Uzbekistan MVD numeric codes to ISO 316
 * group.element[+].code = #198
 * group.element[=].display = "SIRIYA ARAB RESPUBLIKASI"
 * group.element[=].target.code = #SY
-* group.element[=].target.display = "Syrian Arab Republic"
+* group.element[=].target.display = "Syrian Arab Republic (the)"
 * group.element[=].target.relationship = #equivalent
 
 * group.element[+].code = #199
@@ -1126,7 +1126,7 @@ Description: "ConceptMap for translating Uzbekistan MVD numeric codes to ISO 316
 * group.element[+].code = #200
 * group.element[=].display = "BAGAM ATAWLARI"
 * group.element[=].target.code = #BS
-* group.element[=].target.display = "Bahamas"
+* group.element[=].target.display = "Bahamas (the)"
 * group.element[=].target.relationship = #equivalent
 
 * group.element[+].code = #201
@@ -1138,13 +1138,13 @@ Description: "ConceptMap for translating Uzbekistan MVD numeric codes to ISO 316
 * group.element[+].code = #202
 * group.element[=].display = "ARQA MARIAN ATAWLARI"
 * group.element[=].target.code = #MP
-* group.element[=].target.display = "Northern Mariana Islands"
+* group.element[=].target.display = "Northern Mariana Islands (the)"
 * group.element[=].target.relationship = #equivalent
 
 * group.element[+].code = #204
 * group.element[=].display = "AMERIKA QOSPA SHTATLARI"
 * group.element[=].target.code = #US
-* group.element[=].target.display = "United States"
+* group.element[=].target.display = "United States of America (the)"
 * group.element[=].target.relationship = #equivalent
 
 * group.element[+].code = #205
@@ -1180,13 +1180,13 @@ Description: "ConceptMap for translating Uzbekistan MVD numeric codes to ISO 316
 * group.element[+].code = #211
 * group.element[=].display = "TAYHA'MN"
 * group.element[=].target.code = #TW
-* group.element[=].target.display = "Taiwan, Province of China"
+* group.element[=].target.display = "Taiwan (Province of China)"
 * group.element[=].target.relationship = #equivalent
 
 * group.element[+].code = #212
 * group.element[=].display = "TERKS HA'M KAYKOS ATAWLARI"
 * group.element[=].target.code = #TC
-* group.element[=].target.display = "Turks and Caicos Islands"
+* group.element[=].target.display = "Turks and Caicos Islands (the)"
 * group.element[=].target.relationship = #equivalent
 
 * group.element[+].code = #213
@@ -1234,13 +1234,13 @@ Description: "ConceptMap for translating Uzbekistan MVD numeric codes to ISO 316
 * group.element[+].code = #220
 * group.element[=].display = "FARER ATAWLARI"
 * group.element[=].target.code = #FO
-* group.element[=].target.display = "Faroe Islands"
+* group.element[=].target.display = "Faroe Islands (the)"
 * group.element[=].target.relationship = #equivalent
 
 * group.element[+].code = #221
 * group.element[=].display = "KOMOR ATAWLARI"
 * group.element[=].target.code = #KM
-* group.element[=].target.display = "Comoros"
+* group.element[=].target.display = "Comoros (the)"
 * group.element[=].target.relationship = #equivalent
 
 * group.element[+].code = #222
@@ -1258,7 +1258,7 @@ Description: "ConceptMap for translating Uzbekistan MVD numeric codes to ISO 316
 * group.element[+].code = #224
 * group.element[=].display = "MIKRONEZIYA FEDERATIV SHTATLARI"
 * group.element[=].target.code = #FM
-* group.element[=].target.display = "Micronesia, Federated States of"
+* group.element[=].target.display = "Micronesia (Federated States of)"
 * group.element[=].target.relationship = #equivalent
 
 * group.element[+].code = #225
@@ -1276,7 +1276,7 @@ Description: "ConceptMap for translating Uzbekistan MVD numeric codes to ISO 316
 * group.element[+].code = #227
 * group.element[=].display = "FOLKLEND ATAWLARI"
 * group.element[=].target.code = #FK
-* group.element[=].target.display = "Falkland Islands (Malvinas)"
+* group.element[=].target.display = "Falkland Islands (the) [Malvinas]"
 * group.element[=].target.relationship = #equivalent
 
 * group.element[+].code = #228
@@ -1294,7 +1294,7 @@ Description: "ConceptMap for translating Uzbekistan MVD numeric codes to ISO 316
 * group.element[+].code = #231
 * group.element[=].display = "ORAYLIQ AFRIKA RESPUBLIKASI"
 * group.element[=].target.code = #CF
-* group.element[=].target.display = "Central African Republic"
+* group.element[=].target.display = "Central African Republic (the)"
 * group.element[=].target.relationship = #equivalent
 
 * group.element[+].code = #234
@@ -1402,13 +1402,13 @@ Description: "ConceptMap for translating Uzbekistan MVD numeric codes to ISO 316
 * group.element[+].code = #500
 * group.element[=].display = "KONGO DEMOKRATIK RESPUBLIKASI"
 * group.element[=].target.code = #CD
-* group.element[=].target.display = "Congo, Democratic Republic of the"
+* group.element[=].target.display = "Congo (the Democratic Republic of the)"
 * group.element[=].target.relationship = #equivalent
 
 * group.element[+].code = #501
 * group.element[=].display = "ULLI BRITANIYA"
 * group.element[=].target.code = #GB
-* group.element[=].target.display = "United Kingdom"
+* group.element[=].target.display = "United Kingdom of Great Britain and Northern Ireland (the)"
 * group.element[=].target.relationship = #equivalent
 
 * group.element[+].code = #502
@@ -1432,5 +1432,5 @@ Description: "ConceptMap for translating Uzbekistan MVD numeric codes to ISO 316
 * group.element[+].code = #739001137
 * group.element[=].display = "НАРОДНО ДЕМОКРАТИЧЕСКАЯ РЕСПУБЛИКА КОРЕЯ"
 * group.element[=].target.code = #KP
-* group.element[=].target.display = "Korea, Democratic People's Republic of"
+* group.element[=].target.display = "Korea (the Democratic People's Republic of)"
 * group.element[=].target.relationship = #equivalent
