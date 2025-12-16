@@ -56,6 +56,34 @@ For non-Uzbekistan addresses, administrative divisions are free text without req
 }
 ```
 
+### Attaching patients to organizations
+
+In Uzbekistan's healthcare system, patients are attached to a primary healthcare organization (polyclinic) that serves as their main point of care. This attachment is recorded using two elements:
+
+1. **`Patient.managingOrganization`** - A reference to the [UZCoreOrganization](StructureDefinition-UZCoreOrganization.html) that the patient is attached to
+2. **`managingOrganizationAttachment` extension** - The date when the patient was attached to this organization
+
+In Uzbekistan, patients can only change their managing organization once per year. The attachment date is used to enforce this policy.
+
+```jsonc
+{
+  "resourceType": "Patient",
+  "extension": [{
+    "url": "https://dhp.uz/fhir/core/StructureDefinition/managing-organization-attachment",
+    "valueDate": "2024-03-15"    // Date when the patient was attached
+  }],
+  "managingOrganization": {
+    "reference": "Organization/example-organization"
+  }
+  // ... other patient data
+}
+```
+
+When updating a patient's managing organization, systems should:
+1. Check the existing `managingOrganizationAttachment` date
+2. Verify that at least one year has passed since the last attachment
+3. Update both `managingOrganization` and the extension date together
+
 ### Terminology
 To improve interoperability, standardized terminology is crucial. By using standardized terminology, healthcare information can be collected, documented and processed in similar data concepts. This allows healthcare providers to share and compare clinical knowledge in a consistent and internationally accepted system. FHIR cannot define every code required in a healthcare system across the world, so instead, they provided two resources to manage codes and their meaning, namely:
 
