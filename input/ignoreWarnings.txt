@@ -46,7 +46,7 @@ Target Code System urn:iso:std:iso:3166 doesn't have all content (content = not-
 The property uri 'http://terminology.hl7.org/CodeSystem/v2-0203' is not known, so the property values can not be validated fully; unless specified elsewhere, codes will be treated as internal references
 The property uri 'urn:iso:std:iso:3166' is not known, so the property values can not be validated fully; unless specified elsewhere, codes will be treated as internal references
 
-# ISO 3166 allows this to be user-assigned
+# ISO 3166 allows this to be user-assigned - this is a tx.fhir.org issue that we can ignore
 Unknown code 'XY' in the CodeSystem 'urn:iso:std:iso:3166'%
 Unknown code 'XX' in the CodeSystem 'urn:iso:std:iso:3166'%
 
