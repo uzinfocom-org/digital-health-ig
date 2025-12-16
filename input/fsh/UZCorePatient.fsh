@@ -148,7 +148,7 @@ Description: "Uzbekistan Core Patient profile, used to represent patients admini
     patient-citizenship named citizenship 0..1 MS and
     ManagingOrganizationAttachment named managingOrganizationAttachment 0..1 MS
 * extension[nationality].extension[code].valueCodeableConcept from NationalityVS (required)
-* extension[citizenship].extension[code].valueCodeableConcept from CountriesDigitalMVDVS (required)
+* extension[citizenship].extension[code].valueCodeableConcept from ISO3166_2 (required)
 * gender MS
   * extension contains GenderOtherUZ named gender-other 0..1 MS
 * obeys uzcore-gender-other-2

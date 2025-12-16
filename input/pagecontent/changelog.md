@@ -1,5 +1,33 @@
 ### In development
 
+Encounter.diagnosis now references UZ Core Condition profiles instead of base Condition.
+
+Encounter.serviceType now references UZCoreHealthcareService instead of the base FHIR value set.
+
+Patient citizenship now uses ISO 3166-1 alpha-2 codes instead of custom MVD codes.
+
+Fixed OrganizationalSpecialization code consistency (101 → 101.0).
+
+Fixed Russian translation for I_3 in OrganizationalSubordinationGroup.
+
+Clarified descriptions for NomenclatureGroup, OrganizationalStructure, and OrganizationalServiceGroup to explain their purpose and hierarchy.
+
+Added managing organization attachment extension to track when a patient was attached to a managing organization.
+
+Added ConceptMap for translating MVD country codes to ISO 3166-1 alpha-2 codes.
+
+Added explicit slices for foreign patient passport numbers and drivers licenses with country code support.
+
+Updated EpisodeOfCare description.
+
+Improved identifier documentation including PINFL clarity and migration to alpha-2 country codes.
+
+Added vital signs section with guidance and examples.
+
+Added Karakalpak language (kaa) support in MultilingualName ruleset.
+
+Updated IP holder to Ministry of Health.
+
 UZ Core Clinical Condition added to differentiate clinical (ICD-10) and non-ICD-10 based conditions.
 
 Patient disability status has been moved from the Patient resource (using a FHIR-standard extension) to the Condition resource.
