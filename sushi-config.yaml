@@ -26,6 +26,10 @@ dependencies:
     id: fhir_dicom
     uri: http://fhir.org/packages/fhir.dicom/ImplementationGuide/fhir.dicom
     version: 2025.2.20250411
+  hl7.fhir.uv.sdc:
+    id: sdc
+    uri: http://hl7.org/fhir/uv/sdc/ImplementationGuide/hl7.fhir.uv.sdc
+    version: 3.0.0
 
 # the following are for offline use only
 #  hl7.fhir.uv.tools.r5: 0.5.0
