@@ -57,12 +57,6 @@ Description: "Uzbekistan Core Questionnaire profile for multilingual structured 
   * answerConstraint MS
   * answerValueSet MS
 
-  // SDC Extensions on item level
-  * extension contains
-      $sdc-enableWhenExpression named enableWhenExpression 0..1 MS and
-      $sdc-calculatedExpression named calculatedExpression 0..1 MS and
-      $sdc-initialExpression named initialExpression 0..1 MS
-
   // Answer options with translation support
   * answerOption MS
     * value[x] MS
