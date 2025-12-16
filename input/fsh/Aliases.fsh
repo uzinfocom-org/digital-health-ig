@@ -68,6 +68,7 @@ Alias: $participant-type = http://terminology.hl7.org/CodeSystem/participant-typ
 Alias: $participation-role-type = http://terminology.hl7.org/CodeSystem/provenance-participant-type
 Alias: $passport-international = https://dhp.uz/fhir/core/sid/pid/uz/ppn/intl
 Alias: $passport-local = https://dhp.uz/fhir/core/sid/pid/uz/ppn/local
+Alias: $patient-satisfaction-questionnaire = https://dhp.uz/fhir/core/Questionnaire/PatientSatisfactionQuestionnaire
 Alias: $penitentiaryinstitution = https://dhp.uz/fhir/core/sid/pid/uz/pcn
 Alias: $practitioner-argos-id-system = https://dhp.uz/fhir/core/sid/pro/uz/argos
 Alias: $provenance-entity-role = http://hl7.org/fhir/provenance-entity-role

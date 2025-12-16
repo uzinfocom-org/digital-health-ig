@@ -26,6 +26,9 @@ dependencies:
     id: fhir_dicom
     uri: http://fhir.org/packages/fhir.dicom/ImplementationGuide/fhir.dicom
     version: 2025.2.20250411
+  hl7.fhir.uv.extensions.r5:
+    id: fhir_extensions
+    version: 5.2.0
 
 # the following are for offline use only
 #  hl7.fhir.uv.tools.r5: 0.5.0
