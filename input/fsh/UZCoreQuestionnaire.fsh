@@ -60,6 +60,8 @@ Description: "Uzbekistan Core Questionnaire profile for multilingual structured 
   // Answer options with translation support
   * answerOption MS
     * value[x] MS
+    * valueCoding.display.extension contains $translation-extension named translation 0..* MS
+      * ^short = "Answer option display (in Russian and Karakalpak languages)"
 
   // Initial value
   * initial MS
