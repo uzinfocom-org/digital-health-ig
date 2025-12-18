@@ -22,6 +22,17 @@ Description: "Extension to differentiate the diagnosis type, which is different 
 * value[x] only CodeableConcept
 * value[x] from DiagnosisTypeVS (required)
 
+Extension: Abatement
+Id: uz-allergy-abatement
+Title: "Abatement"
+Description: "Specifies when the allergy or intolerance resolved, using date, period, range, or descriptive text."
+* ^url = "https://terminology.dhp.uz/fhir/core/StructureDefinition/uz-allergy-abatement"
+* ^experimental = true
+* ^context.type = #element
+* ^context.expression = "AllergyIntolerance"
+* value[x] only dateTime or Period or Range or string
+
+
 Invariant: uzcore-gender-other-1
 Description: "The differentiation of the gender indication 'other' may only be filled if the gender 'other' is specified (for use in an extension)"
 * severity = #error
