@@ -69,4 +69,4 @@ The extension http://hl7.org/fhir/StructureDefinition/structuredefinition-implem
 No definition could be found for URL value 'http://hl7.org/fhir/StructureDefinition/structuredefinition-implements'
 
 # IG Publisher generates inline scripts for Questionnaire/QuestionnaireResponse table filters then warns they're illegal - bug reported, can be ignored
-The <script> containing the javascript '// 750e7c6a-9ab6-4f4'... is illegal and not allowed on the HL7 ci-build%
+The <script> containing the javascript '//%

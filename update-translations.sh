@@ -3,7 +3,7 @@
 # Copy selected .po files from translations/{lang}/po to input/translations/{lang}
 
 LANGUAGES="ru uz"
-PATTERNS="NamingSystem-*.po StructureDefinition-*.po ImplementationGuide-*.po"
+PATTERNS="StructureDefinition-*.po ImplementationGuide-*.po"
 
 for lang in $LANGUAGES; do
     src="translations/$lang/po"
