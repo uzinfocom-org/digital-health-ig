@@ -1,0 +1,51 @@
+
+# A natural language name identifying the structure definition. This name should be usable as an identifier for the module by machine processing applications such as code generation.
+#: StructureDefinition.name
+msgid "UZCoreAuditEvent"
+msgstr "UZCoreAuditEvent"
+
+# A short, descriptive, user-friendly title for the structure definition.
+#: StructureDefinition.title
+msgid "UZ Core AuditEvent"
+msgstr "UZ Core AuditEvent"
+
+# The name of the organization or individual responsible for the release and ongoing maintenance of the structure definition.
+#: StructureDefinition.publisher
+msgid "Ministry of Health of the Republic of Uzbekistan"
+msgstr "Ministry of Health of the Republic of Uzbekistan"
+
+# The name of an individual to contact.
+#: StructureDefinition.contact.name
+msgid "Ministry of Health of the Republic of Uzbekistan"
+msgstr "Ministry of Health of the Republic of Uzbekistan"
+
+# A name for the specification that is being mapped to.
+#: StructureDefinition.mapping.workflow/name
+msgid "Workflow Pattern"
+msgstr "Workflow Pattern"
+
+# A name for the specification that is being mapped to.
+#: StructureDefinition.mapping.w5/name
+msgid "FiveWs Pattern Mapping"
+msgstr "FiveWs Pattern Mapping"
+
+# A name for the specification that is being mapped to.
+#: StructureDefinition.mapping.rim/name
+msgid "RIM Mapping"
+msgstr "RIM Mapping"
+
+# A name for the specification that is being mapped to.
+#: StructureDefinition.mapping.dicom/name
+msgid "DICOM Tag Mapping"
+msgstr "DICOM Tag Mapping"
+
+# A name for the specification that is being mapped to.
+#: StructureDefinition.mapping.w3c.prov/name
+msgid "W3C PROV"
+msgstr "W3C PROV"
+
+# A name for the specification that is being mapped to.
+#: StructureDefinition.mapping.fhirprovenance/name
+msgid "FHIR Provenance Mapping"
+msgstr "FHIR Provenance Mapping"
+

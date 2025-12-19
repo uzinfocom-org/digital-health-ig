@@ -1,0 +1,51 @@
+
+# A natural language name identifying the naming system. This name should be usable as an identifier for the module by machine processing applications such as code generation.
+#: NamingSystem.name
+msgid "UzbekistanDriversLicenseSystem"
+msgstr ""
+
+# The name of the organization or individual responsible for the release and ongoing maintenance of the naming system.
+#: NamingSystem.publisher
+msgid "Ministry of Health of the Republic of Uzbekistan"
+msgstr ""
+
+# The name of an individual to contact.
+#: ContactDetail.name
+msgid "Ministry of Health of the Republic of Uzbekistan"
+msgstr ""
+
+# The name of the organization that is responsible for issuing identifiers or codes for this namespace and ensuring their non-collision.
+#: NamingSystem.responsible
+msgid "Ministry of Internal Affairs of the Republic of Uzbekistan"
+msgstr ""
+
+# A representation of the meaning of the code in the system, following the rules of the system.
+#: Coding.display
+msgid "Driver's license number"
+msgstr ""
+
+# A free text natural language description of the naming system from a consumer's perspective. Details about what the namespace identifies including scope, granularity, version labeling, etc.
+#: NamingSystem.description
+msgid "Naming system for driver's license identifiers assigned by the Ministry of Internal Affairs of the Republic of Uzbekistan. See https://lex.uz/docs/3127705 for legal justification."
+msgstr ""
+
+# A representation of the meaning of the code in the system, following the rules of the system.
+#: Coding.display
+msgid "Uzbekistan"
+msgstr ""
+
+# Provides guidance on the use of the namespace, including the handling of formatting characters, use of upper vs. lower case, etc.
+#: NamingSystem.usage
+msgid "Used for identifying individuals through their driver's license numbers within the Uzbekistan transportation system."
+msgstr ""
+
+# The string that should be sent over the wire to identify the code system or identifier system.
+#: NamingSystem.uniqueId.value
+msgid "https://gov.uz/iiv/identifier/driverslicense"
+msgstr ""
+
+# Notes about the past or intended usage of this identifier.
+#: NamingSystem.uniqueId.comment
+msgid "This is the canonical URI for the Uzbekistan driver's license system"
+msgstr ""
+
