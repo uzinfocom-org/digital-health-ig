@@ -7,4 +7,4 @@ Description: "Medication status types in Uzbekistan"
 * ^extension[0].url = $valueset-supplement
 * ^extension[=].valueCanonical = Canonical(MedicationStatusCS)
 
-* include codes from system $medicaton-status
+* include codes from system $medication-status

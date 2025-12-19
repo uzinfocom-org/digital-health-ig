@@ -1,8 +1,8 @@
 CodeSystem: MedicationDoseFormCS
-Id: medication-dosoform-cs
+Id: medication-doseform-cs
 Title: "Medication dose form"
 Description: "Local code system of pharmaceutical dose forms (e.g., tablet, capsule, solution)."
-* insert OriginalCodeSystemDraft(medication-dosoform-cs)
+* insert OriginalCodeSystemDraft(medication-doseform-cs)
 
 * #AER101 "aerozol"
   * ^designation[0].language = #ru
