@@ -112,3 +112,7 @@ Alias: $allergy-clinical = http://terminology.hl7.org/CodeSystem/allergyintolera
 Alias: $allergy-verification = http://terminology.hl7.org/CodeSystem/allergyintolerance-verification
 Alias: $allergy-category = 	http://hl7.org/fhir/allergy-intolerance-category
 Alias: $allergy-reaction-severity = http://hl7.org/fhir/reaction-event-severity
+Alias: $goal-achievement = http://terminology.hl7.org/CodeSystem/goal-achievement
+Alias: $goal-category = http://terminology.hl7.org/CodeSystem/goal-category
+Alias: $goal-status = http://hl7.org/fhir/goal-status
+Alias: $goal-Priority = http://terminology.hl7.org/CodeSystem/goal-priority
