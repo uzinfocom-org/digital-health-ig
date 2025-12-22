@@ -2,7 +2,7 @@ CodeSystem: MedicationStatusCS
 Id: medication-status-cs
 Title: "Medication status type translations"
 Description: "Medication status type words with translations in Uzbek and Russian"
-* insert SupplementCodeSystemDraft(medication-status-cs, $medicaton-status, 5.0.0)
+* insert SupplementCodeSystemDraft(medication-status-cs, $medication-status, 5.0.0)
 
 * #active
   * ^designation[0].language = #ru

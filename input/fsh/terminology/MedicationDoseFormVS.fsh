@@ -5,4 +5,4 @@ Description: "ValueSet binding pharmaceutical dose forms from the local code sys
 * ^url = "https://terminology.dhp.uz/fhir/core/ValueSet/medication-doseform-vs"
 * ^experimental = true
 * ^language = #uz
-* include codes from system medication-dosoform-cs
+* include codes from system medication-doseform-cs

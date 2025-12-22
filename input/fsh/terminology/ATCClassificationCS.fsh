@@ -2,7 +2,7 @@ CodeSystem: ATCClassificationCS
 Id: atc-classification-cs
 Title: "ATC classification system"
 Description: "Anatomical Therapeutic Chemical (ATC) classification system for medicinal products."
-* insert SupplementCodeSystemDraft(atc-classification-cs, $medical-product-classification , 5.0.0)
+* insert SupplementCodeSystemDraft(atc-classification-cs, $medical-product-classification, 5.0.0)
 
 * #A
   * ^designation[0].language = #ru

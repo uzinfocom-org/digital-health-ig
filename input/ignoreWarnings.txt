@@ -70,3 +70,6 @@ No definition could be found for URL value 'http://hl7.org/fhir/StructureDefinit
 
 # IG Publisher generates inline scripts for Questionnaire/QuestionnaireResponse table filters then warns they're illegal - bug reported, can be ignored
 The <script> containing the javascript '//%
+
+# tx.fhir.org doesn't support CodeSystem supplements for UCUM - this is expected
+Error from https://tx.fhir.org/r5: The codesystem http://unitsofmeasure.org does not support supplements%

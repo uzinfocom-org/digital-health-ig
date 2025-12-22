@@ -98,4 +98,33 @@ Description: "UZ Core Medication profile defines the core structure for represen
 * batch.expirationDate ^short = "The date when the batch expires "
 
 
+Instance: example-medication
+InstanceOf: UZCoreMedication
+Title: "Example UZ Core Medication - Paracetamol"
+Description: "Example instance of paracetamol tablets registered in Uzbekistan"
+Usage: #example
+* language = #uz
+* identifier[uzpharmInfo]
+  * system = $uzpharm-agency
+  * type = $medicine-identifier-types#pharm_id "Pharmaceutical agency drug ID"
+  * use = #official
+  * value = "12345"
+* identifier[registrationCertificateID]
+  * system = $registrationCertificateID
+  * type = $medicine-identifier-types#registration_number "Registration Certificate"
+  * use = #official
+  * value = "UZ/MED/2024/00123"
+* code = inn-medication-name-cs#005325 "paratsetamol"
+* status = $medication-status#active "Faol"
+* doseForm = medication-doseform-cs#TAB101 "tabletkalar"
+* totalVolume
+  * value = 500
+  * unit = "mg"
+  * system = $ucum
+  * code = #mg
+* batch
+  * lotNumber = "LOT20241201"
+  * expirationDate = "2027-12-01"
+
+
 
