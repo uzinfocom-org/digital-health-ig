@@ -126,5 +126,59 @@ Usage: #example
   * lotNumber = "LOT20241201"
   * expirationDate = "2027-12-01"
 
+Instance: example-Neomycin-ATC-medication
+InstanceOf: UZCoreMedication
+Title: "Example UZ Core Medication - Neomycin"
+Description: "Example instance of Neomycin drops registered in Uzbekistan"
+Usage: #example
+* language = #uz
+* identifier[globalTradeItemID]
+  * system = $globalTradeItemID
+  * type = $medicine-identifier-types#gtin "Global Trade Item Number"
+  * use = #official
+  * value = "PH2025"
+* identifier[productServiceID]
+  * system = $productServiceID
+  * type = $medicine-identifier-types#icps "Product and service identification codes"
+  * use = #official
+  * value = "PS2212"
+* code = $medical-product-classification#A01AB08 "Neomycin"
+* status = $medication-status#active
+* doseForm = medication-doseform-cs#DRO101 "tomchilar"
+* totalVolume
+  * value = 50
+  * unit = "mL"
+  * system = $ucum
+  * code = #mL
+* batch
+  * lotNumber = "LOT20251215"
+  * expirationDate = "2028-12-28"
 
+Instance: example-Naloxegol-ATC-medication
+InstanceOf: UZCoreMedication
+Title: "Example UZ Core Medication - Naloxegol"
+Description: "Example instance of Naloxegol tablets registered in Uzbekistan"
+Usage: #example
+* language = #uz
+* identifier[uzpharmBoxGroupID]
+  * system = $uzpharmBoxGroupID
+  * type = $medicine-identifier-types#box_group_id "Medicine packaging identifier"
+  * use = #official
+  * value = "UZ-PHARM-BOX-000245"
+* identifier[productServiceID]
+  * system = $productServiceID
+  * type = $medicine-identifier-types#icps "Product and service identification codes"
+  * use = #official
+  * value = "BOX-GRP-245"
+* code = $medical-product-classification#A06AH03 "Naloksegol"
+* status = $medication-status#active "Faol"
+* doseForm = medication-doseform-cs#TAB101 "tabletkalar"
+* totalVolume
+  * value = 25
+  * unit = "mg"
+  * system = $ucum
+  * code = #mg
+* batch
+  * lotNumber = "LOT20261215"
+  * expirationDate = "2028-12-28"
 
