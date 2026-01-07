@@ -31,6 +31,8 @@ Description: "Uzbekistan Core Condition profile, used for documenting a patient'
 
 ### 2.3 Именование файлов
 
+**Исходные Excel-файлы:** В `input/excel/` храните только последнюю версию каждого файла. Исторические версии не коммитятся.
+
 **Основные профили:**
 - Формат: `UZCore[ResourceName].fsh`
 - Примеры: `UZCorePatient.fsh`, `UZCoreCondition.fsh`, `UZCoreObservation.fsh`
