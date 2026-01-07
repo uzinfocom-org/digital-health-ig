@@ -6,6 +6,7 @@ Usage: #definition
 * status = #draft
 * experimental = true
 * title = "Medication total volume units → Russian display"
+* name = "MedicationTotalVolumeUnitsToRuDisplayCM"
 * description = "Russian display translations for units in MedicationTotalVolumeUnitsVS (UCUM + local)."
 
 // связь с ValueSet

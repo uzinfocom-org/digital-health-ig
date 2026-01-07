@@ -2,11 +2,10 @@ Profile: UZCoreMedication
 Parent: Medication
 Id: uz-core-medication
 Title: "UZ Core Medication"
-Description: "UZ Core Medication profile defines the core structure for representing medications in Uzbekistan."
+Description: "Uzbekistan Core Medication profile, used for representing medications in Uzbekistan."
 * ^experimental = true
 * ^status = #active
 * ^date = "2025-09-25"
-* ^publisher = "Uzinfocom"
 
 * identifier 1..* MS
 * identifier.use from IdentifierUseVS (required)
@@ -88,6 +87,7 @@ Description: "UZ Core Medication profile defines the core structure for represen
 * ingredient.item from MedicationClassificationVS
 
 * ingredient.strength[x] MS
+* ingredient.strengthRatio MS
 * ingredient.strengthRatio.numerator.code from MedicationTotalVolumeUnitsVS (preferred)
 * ingredient.strengthRatio.denominator.code from MedicationTotalVolumeUnitsVS (preferred)
 * ingredient.strengthRatio.numerator.comparator from QuantityComparatorVS
@@ -95,7 +95,7 @@ Description: "UZ Core Medication profile defines the core structure for represen
 * batch MS
   * ^short = "Detailed information about the packaged medication"
 * batch.lotNumber ^short = "Identifier assigned to the batch (AIK)"
-* batch.expirationDate ^short = "The date when the batch expires "
+* batch.expirationDate ^short = "The date when the batch expires"
 
 
 Instance: example-medication
@@ -126,7 +126,7 @@ Usage: #example
   * lotNumber = "LOT20241201"
   * expirationDate = "2027-12-01"
 
-Instance: example-Neomycin-ATC-medication
+Instance: example-neomycin-atc-medication
 InstanceOf: UZCoreMedication
 Title: "Example UZ Core Medication - Neomycin"
 Description: "Example instance of Neomycin drops registered in Uzbekistan"
@@ -154,7 +154,7 @@ Usage: #example
   * lotNumber = "LOT20251215"
   * expirationDate = "2028-12-28"
 
-Instance: example-Naloxegol-ATC-medication
+Instance: example-naloxegol-atc-medication
 InstanceOf: UZCoreMedication
 Title: "Example UZ Core Medication - Naloxegol"
 Description: "Example instance of Naloxegol tablets registered in Uzbekistan"
