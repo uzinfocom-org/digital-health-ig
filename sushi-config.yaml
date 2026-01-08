@@ -67,6 +67,7 @@ parameters:
   special-url-base: https://terminology.dhp.uz/fhir/core
   excludettl: true
   excludexml: true
+  usage-stats-opt-out: true # times out often
   # language-translations-mode: preserve
   # shownav: true
 
