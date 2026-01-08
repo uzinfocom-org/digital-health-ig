@@ -323,3 +323,22 @@ Description: "Identifier system used for EpisodeOfCare resources within the Uzbe
 * uniqueId[0].type = #uri
 * uniqueId[0].value = "http://dhp.uz/ids/episode-of-care"
 * uniqueId[0].preferred = true
+
+Instance: patient-id-uzb-pension-number
+InstanceOf: NamingSystem
+Description: "The pension number identifier is used to determine whether a patient is registered in the pension system and to identify the type of pension received." 
+Usage: #definition
+* url = "https://terminology.dhp.uz/fhir/core/NamingSystem/patient-id-uzb-pension-number"
+* name = "UzbekistanPensionNumbertCodeSystem"
+* status = #active
+* kind = #identifier
+* date = "2026-01-08"
+* publisher = "Uzinfocom"
+* responsible = "Ministry of Finance of the Republic of Uzbekistan (Pension Fund)"
+* type = $identifier-type#PEN "Pension Number"
+* description = "Naming system defining the pension number identifier issued by the Ministry of Finance of the Republic of Uzbekistan (Pension Fund), as referenced by the national identifier system and integrated with the e-government platform (iskm.egov.uz/minfin/services/pension/pinnp). The pension number associated with different pension types, including old-age pension, disability pension, survivor's pension, and other pension categories." 
+* jurisdiction = urn:iso:std:iso:3166#UZ "Uzbekistan"
+* usage = "Used to record and exchange a patient's pension number for administrative and eligibility purposes, including verification of pensioner status and applicable social or healthcare benefits. This identifier is not intended to replace national personal identifiers (such as JShShIR) and should be used only when pension-related identification is required."
+* uniqueId[0].type = #uri
+* uniqueId[=].value = "https://dhp.uz/fhir/core/sid/pid/uz/pen"
+* uniqueId[=].preferred = true

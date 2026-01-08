@@ -21,6 +21,7 @@ Description: "Uzbekistan Core Patient profile, used to represent patients admini
     passportLocal 0..1 MS and
     passportInternational 0..1 MS and
     passportForeign 0..1 MS and
+    pensionNumber 0..1 MS and
     birthCertificate 0..1 MS and
     driversLicense 0..1 MS and
     driversLicenseForeign 0..1 MS and
@@ -142,6 +143,16 @@ Description: "Uzbekistan Core Patient profile, used to represent patients admini
   * type 1..1 MS
   * type = $identifier-type#MR "Medical record number"
   * use = #temp
+  * value 1..1 MS
+
+* identifier[pensionNumber]
+  * ^short = "Used to identify a patient's pension status and pension type."
+  * ^definition = "Naming system defining the pension number identifier issued by the Ministry of Finance of the Republic of Uzbekistan (Pension Fund), as referenced by the national identifier system and integrated with the e-government platform (iskm.egov.uz/minfin/services/pension/pinnp). The pension number associated with different pension types, including old-age pension, disability pension, survivor's pension, and other pension categories."
+  * system 1..1 MS
+  * system = $pension-number
+  * type 1..1 MS
+  * type = $identifier-type#PEN "Pension number"
+  * use = #official
   * value 1..1 MS
 
 * extension contains patient-nationality named nationality 0..1 MS and

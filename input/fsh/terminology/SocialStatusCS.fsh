@@ -13,12 +13,12 @@ Description: "Social status types in Uzbekistan"
   * ^designation[=].value = "Дети и подростки, не обучающиеся в учебных заведениях"
   * ^designation[+].language = #en
   * ^designation[=].value = "Children and teenagers not studying in educational institutions"
-* #regis0010.00003 "Ishlash"
+* #regis0010.00003 "Ishlaydi"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Работающий"
   * ^designation[+].language = #en
   * ^designation[=].value = "Employed"
-* #regis0010.00004 "Ishlamayapti"
+* #regis0010.00004 "Ishlamaydi"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Неработающий"
   * ^designation[+].language = #en
@@ -43,3 +43,8 @@ Description: "Social status types in Uzbekistan"
   * ^designation[=].value = "БОМЖ"
   * ^designation[+].language = #en
   * ^designation[=].value = "Homeless"
+* #regis0010.00009 "Harbiy xizmatchi"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Военнослужащий"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Military serviceman"
