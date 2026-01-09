@@ -1,4 +1,4 @@
-Instance: medication-total-volume-units-to-ru-display-cm
+/*Instance: medication-total-volume-units-to-ru-display-cm
 InstanceOf: ConceptMap
 Usage: #definition
 * id = "medication-total-volume-units-to-ru-display-cm"
@@ -38,13 +38,7 @@ Usage: #definition
 * group.element[=].target.code = #nL
 * group.element[=].target.display = "нанолитр"
 * group.element[=].target.relationship = #equivalent
-/*outdate version
-* group.element[+].code = #Rd
-* group.element[=].display = "Rd"
-* group.element[=].target.code = #Rd
-* group.element[=].target.display = "резерфорд"
-* group.element[=].target.relationship = #equivalent
-*/
+
 * group.element[+].code = #kcal
 * group.element[=].display = "kcal"
 * group.element[=].target.code = #kcal
@@ -86,13 +80,7 @@ Usage: #definition
 * group.element[=].target.code = #[drp]
 * group.element[=].target.display = "капля"
 * group.element[=].target.relationship = #equivalent
-/* outdate version
-* group.element[+].code = #cell
-* group.element[=].display = "cell"
-* group.element[=].target.code = #cell
-* group.element[=].target.display = "клетка"
-* group.element[=].target.relationship = #equivalent
-*/
+
 * group.element[+].code = #g/mL
 * group.element[=].display = "g/mL"
 * group.element[=].target.code = #g/mL
@@ -290,3 +278,5 @@ Usage: #definition
 * group.element[=].target.code = #10*9.{cell}
 * group.element[=].target.display = "млрд клеток"
 * group.element[=].target.relationship = #equivalent
+
+*/

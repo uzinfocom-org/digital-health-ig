@@ -862,6 +862,8 @@ Description: "Local code system of pharmaceutical dose forms (e.g., tablet, caps
 * #DRO101 "tomchilar"
   * ^designation[0].language = #ru
   * ^designation[=].value = "капли"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "drops"
 * #DRO102 "ko'z tomchilari"
   * ^designation[0].language = #ru
   * ^designation[=].value = "капли глазные"
@@ -2209,6 +2211,8 @@ Description: "Local code system of pharmaceutical dose forms (e.g., tablet, caps
 * #TAB101 "tabletkalar"
   * ^designation[0].language = #ru
   * ^designation[=].value = "таблетки"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "tablets"
 * #TAB102 "vaginal tabletkalar"
   * ^designation[0].language = #ru
   * ^designation[=].value = "таблетки вагинальные"

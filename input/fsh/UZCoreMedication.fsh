@@ -103,7 +103,7 @@ InstanceOf: UZCoreMedication
 Title: "Example UZ Core Medication - Paracetamol"
 Description: "Example instance of paracetamol tablets registered in Uzbekistan"
 Usage: #example
-* language = #uz
+* language = #en
 * identifier[uzpharmInfo]
   * system = $uzpharm-agency
   * type = $medicine-identifier-types#pharm_id "Pharmaceutical agency drug ID"
@@ -114,9 +114,9 @@ Usage: #example
   * type = $medicine-identifier-types#registration_number "Registration Certificate"
   * use = #official
   * value = "UZ/MED/2024/00123"
-* code = inn-medication-name-cs#005325 "paratsetamol"
+* code = inn-medication-name-cs#005325 "paracetamol"
 * status = $medication-status#active "Faol"
-* doseForm = medication-doseform-cs#TAB101 "tabletkalar"
+* doseForm = medication-doseform-cs#TAB101 "tablets"
 * totalVolume
   * value = 500
   * unit = "mg"
@@ -131,7 +131,7 @@ InstanceOf: UZCoreMedication
 Title: "Example UZ Core Medication - Neomycin"
 Description: "Example instance of Neomycin drops registered in Uzbekistan"
 Usage: #example
-* language = #uz
+* language = #en
 * identifier[globalTradeItemID]
   * system = $globalTradeItemID
   * type = $medicine-identifier-types#gtin "Global Trade Item Number"
@@ -144,7 +144,7 @@ Usage: #example
   * value = "PS2212"
 * code = $medical-product-classification#A01AB08 "Neomycin"
 * status = $medication-status#active
-* doseForm = medication-doseform-cs#DRO101 "tomchilar"
+* doseForm = medication-doseform-cs#DRO101 "drops"
 * totalVolume
   * value = 50
   * unit = "mL"
@@ -159,7 +159,7 @@ InstanceOf: UZCoreMedication
 Title: "Example UZ Core Medication - Naloxegol"
 Description: "Example instance of Naloxegol tablets registered in Uzbekistan"
 Usage: #example
-* language = #uz
+* language = #en
 * identifier[uzpharmBoxGroupID]
   * system = $uzpharmBoxGroupID
   * type = $medicine-identifier-types#box_group_id "Medicine packaging identifier"
@@ -170,9 +170,9 @@ Usage: #example
   * type = $medicine-identifier-types#icps "Product and service identification codes"
   * use = #official
   * value = "BOX-GRP-245"
-* code = $medical-product-classification#A06AH03 "Naloksegol"
+* code = $medical-product-classification#A06AH03 "naloxegol"
 * status = $medication-status#active "Faol"
-* doseForm = medication-doseform-cs#TAB101 "tabletkalar"
+* doseForm = medication-doseform-cs#TAB101 "tablets"
 * totalVolume
   * value = 25
   * unit = "mg"
