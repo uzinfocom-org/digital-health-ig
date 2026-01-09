@@ -84,6 +84,7 @@ Alias: $provenance-entity-role = http://hl7.org/fhir/provenance-entity-role
 Alias: $provenance-participant-type = http://terminology.hl7.org/CodeSystem/provenance-participant-type
 Alias: $provider-number = https://dhp.uz/fhir/core/sid/pid/uz/prn
 Alias: $provider-number-example-org = https://dhp.uz/fhir/core/sid/pid/uz/prn/200935935
+Alias: $productServiceID = https://uzpharminfo.uz/icps
 Alias: $qualification-codes = http://terminology.hl7.org/CodeSystem/v2-0360
 Alias: $quantity-comparator = http://hl7.org/fhir/quantity-comparator
 Alias: $reason-use = https://terminology.dhp.uz/fhir/core/ValueSet/ReasonUse
