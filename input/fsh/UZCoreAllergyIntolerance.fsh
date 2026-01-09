@@ -2,7 +2,7 @@ Profile: UZCoreAllergyIntolerance
 Parent: AllergyIntolerance
 Id: uz-core-allergy-intolerance
 Title: "Uz Core AllergyIntolerance"
-Description: "Uzbekistan Core profile for AllergyIntolerance, representing clinical records of allergy or intolerance within the national health information exchange."
+Description: "Uzbekistan Core profile for AllergyIntolerance, representing clinical records of allergy or intolerance within the national health information exchange. "
 * ^experimental = true
 * ^status = #active
 * ^date = "2025-08-12"
