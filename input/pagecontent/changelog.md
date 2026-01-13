@@ -1,8 +1,20 @@
 ### In development
 
-Encounter.diagnosis now references UZ Core Condition profiles instead of base Condition.
+(No changes yet)
 
-Encounter.serviceType now references UZCoreHealthcareService instead of the base FHIR value set.
+### Version 0.4.0
+
+Added UZ Core Goal profile with associated codesystems and valuesets.
+
+Added UZ Core Questionnaire and QuestionnaireResponse profiles with multilingual support for translated answer options.
+
+Added pension certificate identifier type (Номер пенсионного удостоверения) with NamingSystem support in Patient resource.
+
+Clarified binding strength requirements in modelling guidelines.
+
+Applied feedback from DHP Connectathon 1.
+
+Fixed profile references to use UZ Core profiles where possible instead of base FHIR resources.
 
 Patient citizenship now uses ISO 3166-1 alpha-2 codes instead of custom MVD codes.
 

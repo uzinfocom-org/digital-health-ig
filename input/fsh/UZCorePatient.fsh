@@ -15,7 +15,7 @@ Description: "Uzbekistan Core Patient profile, used to represent patients admini
 * identifier ^slicing.discriminator.type = #value
 * identifier ^slicing.discriminator.path = "system"
 * identifier ^slicing.rules = #open
-* identifier ^slicing.description = "Ways a practitioner can be identified"
+* identifier ^slicing.description = "Ways a patient can be identified"
 * identifier ^slicing.ordered = false
 * identifier contains nationalId 0..1 MS and
     passportLocal 0..1 MS and
