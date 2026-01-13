@@ -1,5 +1,9 @@
 ### In development
 
+(No changes yet)
+
+### Version 0.4.0
+
 Added UZ Core Goal profile with associated codesystems and valuesets.
 
 Added UZ Core Questionnaire and QuestionnaireResponse profiles with multilingual support for translated answer options.
