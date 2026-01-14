@@ -40,10 +40,10 @@ Description: "Uzbekistan Core profile for AllergyIntolerance, representing clini
   * substance from ReactionSubstanceVS
 
 //test
-Instance: UZAI-GrassPollen-Example
+Instance: example-grass-pollen-allergy
 InstanceOf: UZCoreAllergyIntolerance
 Usage: #example
-Title: "Allergy to grass pollen — example"
+Title: "Example UZ Core AllergyIntolerance - Grass Pollen Allergy"
 Description: "Example instance conforming to UZCoreAllergyIntolerance."
 
 * meta.profile = "https://dhp.uz/StructureDefinition/uz-core-allergy-intolerance"
