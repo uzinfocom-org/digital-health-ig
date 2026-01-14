@@ -5,5 +5,6 @@ Description: "Observation codes in Uzbekistan"
 * ^url = "https://terminology.dhp.uz/fhir/core/ValueSet/observation-codes-vs"
 * ^experimental = true
 
+* include codes from system $observation-code
 * include codes from system $observation-codes
 * include codes from system observation-lab-research-codes-cs
