@@ -1,0 +1,3 @@
+CODE	UZ	RU	EN	Значение	Link
+allergy	Allergiya	Аллергия	Allergy	Реакция иммунной системы на вещество (напр. пыльца, арахис, пенициллин).	http://hl7.org/fhir/ValueSet/allergy-intolerance-type
+intolerance	Toqat qilmaslik	Непереносимость	Intolerance	Неиммунная реакция организма (напр. лактозная непереносимость, побочные эффекты).	

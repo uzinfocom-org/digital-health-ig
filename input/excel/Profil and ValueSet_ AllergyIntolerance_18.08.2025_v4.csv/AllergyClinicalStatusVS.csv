@@ -1,0 +1,4 @@
+CODE	UZ	RU	EN	Link
+active	Faol	Активная	Active	http://hl7.org/fhir/ValueSet/allergyintolerance-clinical
+inactive	Nofaol	Неактивная	Inactive	
+resolved	Bartaraf etilgan	Устранена	Resolved	

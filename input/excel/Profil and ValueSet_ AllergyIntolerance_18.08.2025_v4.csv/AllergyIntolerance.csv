@@ -1,0 +1,22 @@
+Name			flags		Cardinality	Type	example	document	Description and Constraints					ValueSets			
+Uz DHP AllergyIntolarence			TU	D										System	CodeSystem	Code	Display
+code			SΣ	D	0..1	CodeableConcept	Allergy to pollen, allergy to peanuts, lactose		Код , идентифицирующий аллергию или непереносимость.Это сам аллерген, то есть вещество, на которое у пациента аллергия.						uz-allergen-codes	все коды	Grass pollen,Tree pollen,Weed pollen
+type			SΣ	D	0..1	code	allergy or intolerance (if known)		Поле type в ресурсу Uz DHP AllergyIntolerance указывает , относится ли состояние пациента к аллергии или к непереносимости.					http://hl7.org/fhir/ValueSet/allergy-intolerance-type	uz-allergy-type	все коды	Аллергия / Непереносимость
+clinicalStatus			SΣ 	D	0..1	CodeableConcept	active(активная) | inactive(неактивная) | resolved(Устранена)		Это поле показывает текущее клиническое состояние аллергии или непереносимости					http://hl7.org/fhir/ValueSet/allergyintolerance-clinical	allergy-clinical-status	все коды	Клинический статус аллергии
+verificationStatus			SΣ	D	0..1	CodeableConcept	Не подтверждена(Предполагаемая аллергия , требуется подтверждение)		Это поле отражает , насколько подтвержена аллергия о которой идёт речь					http://hl7.org/fhir/ValueSet/allergyintolerance-verification 	allergy-verification-status	все коды	Статус подтверждения
+category			SΣ	D	0..*	code	food/medication/environment/biologic		Поле category в ресурсе AllergyIntolerance используется для указания общего типа вещества, вызвавшего аллергическую реакцию. Это высокоуровневая классификация аллергена.					http://hl7.org/fhir/ValueSet/allergy-intolerance-category	allergy-category	все коды	food, medication
+patient			SΣ	D	1..1	Reference(Uzbekistan DHP Patient(0.1.0))			Поле, которое указывает, у кого именно выявлена аллергия или непереносимость.								
+encounter			S	D	0..1	Reference(Uzbekistan DHP Encounter)			 Визит к врачу 1 мая 2023 года, во время которого выявлена аллергия								
+Slice onset[x]				D	0..*				Поле в ресурсе используется , чтобы указать, когда у пациента началась аллергия или непереносимость								
+	dateTime		S	D	0..1	dateTime	01-01-01										
+	onsetAge		S	D	0..1	Age	4										
+	onsetString		S	D	0..1	string	в детстве										
+extension(abatement)				D	0..*				Указывает, когда аллергия закончилась								
+	valueDateTime		SΣ	D	0..1	dateTime	11-01-08										
+	valueString		SΣ	D	0..1	string	Прошла в детстве										
+	valuePeriod		SΣ	D	0..1	period	01.01.2001 ~ 01.11.2008										
+				D													
+reaction				D	0..*				Это вложенный элемент который описывает одну или несколько реакций организма на аллерген.								
+	manifestation		S	D	1..*	CodeableConcept	 сыпь, отёк, анафилаксия, одышка	icps doc	какие локальные симптомы возникли в контексте(snomed ct)						uz-reaction-manifestation	все коды	
+	substance		S	D	0..*	CodeableConcept	пенициллин		конкретное вещество, вызвавшее реакцию(Только если точно известно, какое вещество вызвало конкретную реакцию.) . Пациент имеет аллергию на антибиотики пенициллинового ряда (code), но конкретная реакция вызвана амоксициллином (reaction.substance).						uz-reaction-substance	все коды	
+	severity		S	D	0..*	code	mild, moderate, severe		насколько тяжело это было						allergy-category-severity	все коды	
