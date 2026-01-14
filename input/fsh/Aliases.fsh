@@ -52,7 +52,6 @@ Alias: $nomenclature-group = https://dhp.uz/fhir/core/CodeSystem/nomenclature-gr
 Alias: $object-role = http://terminology.hl7.org/CodeSystem/object-role
 Alias: $observation-category = http://terminology.hl7.org/CodeSystem/observation-category //http://hl7.org/fhir/observation-category
 Alias: $observation-codes = http://hl7.org/fhir/ValueSet/observation-codes
-Alias: $observation-code = http://loinc.org	
 Alias: $observation-dataAbsentReason = http://terminology.hl7.org/CodeSystem/data-absent-reason
 Alias: $observation-interpretation = http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation
 Alias: $observation-methods = http://hl7.org/fhir/ValueSet/observation-methods
