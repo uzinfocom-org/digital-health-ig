@@ -1,0 +1,46 @@
+Code	Local codes	UZ	RU	EN							
+256277009	aller-0010-00001	O't changlari	Пыльца трав	Grass pollen							
+782576004	aller-0010-00014	Daraxt gulchanglari	Пыльца деревьев	Tree pollen							
+419604006	aller-0010-00042	Begona o'tlar changlari	Пыльца сорняков	Weed pollen							
+256260009	aller-0010-00063	Yevropa uy changi kanasi	Европейский клещ домашней пыли	European house dust mite							
+23988000	aller-0010-00085	Xamirturushlar	Плесневые грибы	Molds mushrooms							
+227313005	aller-0010-00101	Dukkakli don ekinlari	Бобовые	Legumes							
+23182003	aller-0010-00117	Donli mahsulotlar	Злаки / Зерновые	Cereals / Grains							
+227374009	aller-0010-00133	Ziravorlar	Специи	Spices							
+72511004	aller-0010-00141	Mevalar	Фрукты	Fruits							
+22836000	aller-0010-00162	Sabzavotlar	Овощи	Vegetables							
+13577000	aller-0010-00173	Yong‘oqlar	Орехи	Nuts							
+264337003	aller-0010-00196	Urug‘lar	Семена	Seeds							
+70813002	aller-0010-00205	Sut	Молоко	Milk							
+102263004	aller-0010-00214	Tuxum	Яйцо	Egg							
+44027008	aller-0010-00222	Dengiz mahsulotlari	Морепродукты / Моллюски	Seafood / Shellfish							
+28647000	aller-0010-00254	Go‘sht	Мясо	Meat							
+710939007	aller-0010-00268	Yondiruvchi qurt chaqishi zahari	Яд огненного муравья	Fire ant venom							
+288328004	aller-0010-00270	Asalari zahari	Пчелиный яд	Bee venom							
+256440004	aller-0010-00274	Qoriq zahari	Осиный яд	Wasp venom							
+14241002	aller-0010-00281	Suvarak	Таракан	Cockroach							
+448771007	aller-0010-00291	Uy iti	Домашняя собака	Domestic dog							
+448169003	aller-0010-00299	Uy mushugi	Домашняя кошка	Domestic cat							
+111088007	aller-0010-00318	Lateks	Латекс	Latex							
+260203002	aller-0010-00325	Fikus turlari	Растения рода фикус	Ficus spp							
+1155942004	aller-0010-00331	Metallga allergiya	Аллергия на металл	Allergy to metal							
+423703004	aller-0010-00332	Fermentlanlagan ozuqa	Ферментированная пища	Fermented food 							
+447961002	aller-0010-00333	Ozuqaviy qo‘ziqorinlarga allergiya	Аллергия на пищевые грибы	Allergy to dietary mushroom 							
+53527002	aller-0010-00334	Spirtli ichimlik	Алкогольный напиток	Alcoholic beverage							
+792905007	aller-0010-00335	Kofeinli ichimlik	Кофеинсодержащий напиток	Caffeined beverage							
+818989004	aller-0010-00336	Shakarli ichimlik	Подслащенный напиток	Sugar sweetened beverage							
+294954003	aller-0010-00337	Kimyoviy modda allergiyasi	Аллергия на химическое вещество	Allergy to chemical substance							
+417982003	aller-0010-00338	Kosmetikaga allergiya	Аллергия на косметику	Allergy to cosmetic							
+717234006	aller-0010-00289	Hayvonlarga allergiya	Аллергия на животное	Allergy to animal							
+37017009	aller-0001-00008	Gelmint (parazit qurt)	Гельминт (паразитический червь)	Helminth							
+703926003	aller-0001-00004	O‘simlik tolasi allergiyasi	Аллергия на растительное волокно	Allergy to plant fibre							
+429239002	aller-0010-00339	Sulfanilamid antibiotik allergiyasi	Аллергия на сульфаниламидный антибиотик	Allergy to sulfonamide antibiotic							
+294221004	aller-0010-00340	Mushak bo‘shatuvchi dori allergiyasi	Аллергия на миорелаксанты	Allergy to muscle relaxants							
+293718005	aller-0010-00341	Mahalliy anestezik allergiyasi	Аллергия на местный анестетик	Allergy to local anaesthetic							
+416098002	aller-0001-00006	Dorilarga allergiya	Аллергия на лекарства	Allergy to drugs							
+196546001	aller-0010-00342	Tibbiy ferment allergiyasi	Аллергия на лекарственные ферменты	Medical enzyme allergy							
+"""798291000000103"""	aller-0010-00075	Ombor kanasi	Складовой клещ	Storage mite							
+"""15919911000119108"""	aller-0010-00343	Analgetikka allergik reaksiya	Аллергическая реакция на анальгетик	Allergic reaction caused by analgesic							
+"""16067171000119102"""	aller-0010-00344	Ovqat qo‘shimchasiga allergiya	Аллергия на пищевую добавку	Allergy to food additive							
+"""151201000119107"""	aller-0010-00345	Hasharot chaqishi allergiyasi	Аллергия на яд насекомого	Allergy to insect venom							
+"""439191000124108"""	aller-0010-00346	Tibbiy ichimlik	Медицинский напиток	Medical beverage							
