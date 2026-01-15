@@ -70,8 +70,8 @@ Description: "Maps local UZ ReactionManifestationCS codes to SNOMED CT for Aller
 
 * group.element[+].code = #aller-0005-00002
 * group.element[=].display = "Tomoq qichishish"
-* group.element[=].target[+].code = #2048000
-* group.element[=].target[=].display = "Itching in the tonsil"
+* group.element[=].target[+].code = #1137376007
+* group.element[=].target[=].display = "Itching of oral soft tissues"
 * group.element[=].target[=].relationship = #source-is-broader-than-target
 
 * group.element[+].code = #aller-0005-00003
