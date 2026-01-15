@@ -1,7 +1,7 @@
 Profile: UZCoreAllergyIntolerance
 Parent: AllergyIntolerance
 Id: uz-core-allergy-intolerance
-Title: "Uz Core AllergyIntolerance"
+Title: "UZ Core AllergyIntolerance"
 Description: "Uzbekistan Core profile for AllergyIntolerance, representing clinical records of allergy or intolerance within the national health information exchange. "
 * ^experimental = true
 * ^status = #active
@@ -45,11 +45,9 @@ InstanceOf: UZCoreAllergyIntolerance
 Usage: #example
 Title: "Allergy to grass pollen — example"
 Description: "Example instance conforming to UZCoreAllergyIntolerance."
-
-* meta.profile = "https://dhp.uz/StructureDefinition/uz-core-allergy-intolerance"
-
+//* meta.profile = "https://dhp.uz/fhir/core/StructureDefinition/uz-core-allergy-intolerance"
 //* identifier.system = "https://terminology.dhp.uz/AllergyIntolerance"
-* identifier.value = "AI-0001"
+//* identifier.value = "AI-0001"
 
 * clinicalStatus = $allergy-clinical#active "Active"
 * verificationStatus = $allergy-verification#confirmed "Confirmed"

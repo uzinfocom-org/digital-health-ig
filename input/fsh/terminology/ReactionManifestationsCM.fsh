@@ -3,7 +3,7 @@ InstanceOf: ConceptMap
 Usage: #definition
 Title: "UZ local allergy manifestations → SNOMED CT"
 Description: "Maps local UZ ReactionManifestationCS codes to SNOMED CT for AllergyIntolerance.reaction.manifestation."
-* url = "https://dhp.uz/fhir/core/ConceptMap/manifestations-to-snomed"
+* url = "https://terminology.dhp.uz/fhir/core/ConceptMap/manifestations-to-snomed"
 * name = "AllergyManifestationsToSnomed"
 * status = #draft
 * experimental = false
@@ -40,7 +40,7 @@ Description: "Maps local UZ ReactionManifestationCS codes to SNOMED CT for Aller
 
 * group.element[+].code = #aller-0004-00005
 * group.element[=].display = "Burundan toza rangsiz suyuqlik kelishi"
-* group.element[=].target[+].code = #75803007
+* group.element[=].target[+].code = #277233008
 * group.element[=].target[=].display = "Clear, colorless discharge from the nose"
 * group.element[=].target[=].relationship = #equivalent
 

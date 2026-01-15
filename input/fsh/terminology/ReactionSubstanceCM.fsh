@@ -3,7 +3,7 @@ InstanceOf: ConceptMap
 Usage: #definition
 Title: "UZ local allergy substance → SNOMED CT"
 Description: "Maps local UZ ReactionSubstanceCS codes to SNOMED CT for AllergyIntolerance.reaction.substance."
-* url = "https://dhp.uz/fhir/core/ConceptMap/substance-to-snomed"
+* url = "https://terminology.dhp.uz/fhir/core/ConceptMap/substance-to-snomed"
 * name = "AllergySubstanceToSnomed"
 * status = #draft
 * experimental = false
@@ -17,13 +17,13 @@ Description: "Maps local UZ ReactionSubstanceCS codes to SNOMED CT for AllergyIn
 * group.element[+].code = #aller-0010-00001
 * group.element[=].display = "Ajiriq (Cyn d)"
 * group.element[=].target[+].code = #260089005
-* group.element[=].target[=].display = "Cyn d"
+* group.element[=].target[=].display = "Bermuda grass pollen (Cyn d)"
 * group.element[=].target[=].relationship = #source-is-narrower-than-target
 
 * group.element[+].code = #aller-0010-00003
 * group.element[=].display = "Ajiriq (Cyn d 1)"
 * group.element[=].target[+].code = #260089005
-* group.element[=].target[=].display = "Cyn d 1"
+* group.element[=].target[=].display = "Bermuda grass pollen (Cyn d 1)"
 * group.element[=].target[=].relationship = #source-is-narrower-than-target
 
 * group.element[+].code = #aller-0010-00004
@@ -76,7 +76,7 @@ Description: "Maps local UZ ReactionSubstanceCS codes to SNOMED CT for AllergyIn
 
 * group.element[+].code = #aller-0010-00012
 * group.element[=].display = "Qamish (Phr c)"
-* group.element[=].target[+].code = #387873003
+* group.element[=].target[+].code = #260091002
 * group.element[=].target[=].display = "Reed (Phr c)"
 * group.element[=].target[=].relationship = #source-is-narrower-than-target
 
@@ -112,19 +112,19 @@ Description: "Maps local UZ ReactionSubstanceCS codes to SNOMED CT for AllergyIn
 
 * group.element[+].code = #aller-0010-00019
 * group.element[=].display = "Serbuqoq qayin (Bet v 1)"
-* group.element[=].target[+].code = #710898000
+* group.element[=].target[+].code = #256262001
 * group.element[=].target[=].display = "Bet v 1"
 * group.element[=].target[=].relationship = #source-is-narrower-than-target
 
 * group.element[+].code = #aller-0010-00020
 * group.element[=].display = "Serbuqoq qayin (Bet v 2)"
-* group.element[=].target[+].code = #710898000
+* group.element[=].target[+].code = #256262001
 * group.element[=].target[=].display = "Bet v 2"
 * group.element[=].target[=].relationship = #source-is-narrower-than-target
 
 * group.element[+].code = #aller-0010-00021
 * group.element[=].display = "Serbuqoq qayin (Bet v 6)"
-* group.element[=].target[+].code = #710898000
+* group.element[=].target[+].code = #256262001
 * group.element[=].target[=].display = "Bet v 6"
 * group.element[=].target[=].relationship = #source-is-narrower-than-target
 
@@ -292,13 +292,13 @@ Description: "Maps local UZ ReactionSubstanceCS codes to SNOMED CT for AllergyIn
 
 * group.element[+].code = #aller-0010-00050
 * group.element[=].display = "Nasha (Can s)"
-* group.element[=].target[+].code = #16292008
+* group.element[=].target[+].code = #10083006
 * group.element[=].target[=].display = "Hemp (Can s)"
 * group.element[=].target[=].relationship = #source-is-narrower-than-target
 
 * group.element[+].code = #aller-0010-00051
 * group.element[=].display = "Nasha (Can s 3)"
-* group.element[=].target[+].code = #16292008
+* group.element[=].target[+].code = #10083006
 * group.element[=].target[=].display = "Hemp (Can s 3)"
 * group.element[=].target[=].relationship = #source-is-narrower-than-target
 
