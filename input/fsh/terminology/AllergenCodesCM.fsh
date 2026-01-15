@@ -193,18 +193,19 @@ Description: "Maps local UZ allergen codes to SNOMED CT for AllergyIntolerance.c
 * group.element[=].target[+].code = #818989004
 * group.element[=].target[=].display = "Sugar sweetened beverage"
 * group.element[=].target[=].relationship = #equivalent
-// Исходное понятие более узкое, чем целевое
+// 441900009 is just "Chemical" substance, not an allergy propensity. Using broader "Allergic disposition" instead.
 * group.element[+].code = #aller-0010-00337
 * group.element[=].display = "Kimyoviy modda allergiyasi"
-* group.element[=].target[+].code = #441900009
-* group.element[=].target[=].display = "Allergy to chemical substance"
+* group.element[=].target[+].code = #609328004
+* group.element[=].target[=].display = "Allergic disposition"
 * group.element[=].target[=].relationship = #source-is-narrower-than-target
 
+// 417982003 "Allergy to cosmetic" is inactive. Using 200843008 which is a condition (dermatitis), not a propensity.
 * group.element[+].code = #aller-0010-00338
 * group.element[=].display = "Kosmetikaga allergiya"
-* group.element[=].target[+].code = #417982003
-* group.element[=].target[=].display = "Allergy to cosmetic"
-* group.element[=].target[=].relationship = #equivalent
+* group.element[=].target[+].code = #200843008
+* group.element[=].target[=].display = "Allergic contact dermatitis caused by cosmetic"
+* group.element[=].target[=].relationship = #source-is-narrower-than-target
 
 * group.element[+].code = #aller-0010-00289
 * group.element[=].display = "Hayvonlarga allergiya"
@@ -230,11 +231,12 @@ Description: "Maps local UZ allergen codes to SNOMED CT for AllergyIntolerance.c
 * group.element[=].target[=].display = "Allergy to sulfonamide antibiotic"
 * group.element[=].target[=].relationship = #equivalent
 
+// 294221004 "Allergy to muscle relaxants" is inactive. Using broader 416098002 "Drug allergy".
 * group.element[+].code = #aller-0010-00340
 * group.element[=].display = "Mushak bo'shatuvchi dori allergiyasi"
-* group.element[=].target[+].code = #294221004
-* group.element[=].target[=].display = "Allergy to muscle relaxants"
-* group.element[=].target[=].relationship = #equivalent
+* group.element[=].target[+].code = #416098002
+* group.element[=].target[=].display = "Drug allergy"
+* group.element[=].target[=].relationship = #source-is-narrower-than-target
 
 * group.element[+].code = #aller-0010-00341
 * group.element[=].display = "Mahalliy anestezik allergiyasi"
