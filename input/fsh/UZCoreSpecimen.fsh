@@ -14,7 +14,7 @@ Description: "Uzbekistan Core profile for representing laboratory and other clin
 * status from SpecimenStatusVS (preferred)
 * status ^short = "Current lifecycle status of the specimen (e.g., available, unavailable)."
 * type MS
-* type from SpecimenTypesVS (preferred) //qilinmadi
+* type from SpecimenTypesVS (preferred) 
 * type ^short = "Type of specimen (e.g., venous blood, urine, swab) used to interpret tests and processing requirements."
 * subject only Reference(UZCorePatient)
 * subject ^short = "Patient from whom the specimen was collected."
@@ -39,14 +39,16 @@ Description: "Uzbekistan Core profile for representing laboratory and other clin
 * collection.duration ^short = "Duration of the collection process (e.g., timed urine collection). Important for correct result calculation/interpretation."
 * collection.quantity MS
 * collection.quantity ^short = "Amount/volume of specimen collected. Used for adequacy checks and processing requirements."
+* collection.bodySite MS
+* collection.bodySite from $bodysite
+* collection.bodySite ^short = "Anatomical site from which the specimen was collected."
 * collection.fastingStatus[x] MS
 * collection.fastingStatus[x] from RelevantClinicalInformationVS (preferred)
 * collection.fastingStatus[x] ^short = "Patient fasting status at collection time (or relevant clinical information affecting interpretation)."
 
 
-//qayta yoz
 Instance: specimen-example-blood
-InstanceOf: Specimen
+InstanceOf: UZCoreSpecimen
 Usage: #example
 Description: "Temporary Specimen instance for lab (based on drafted UZCoreSpecimen Excel structure)"
 /* * identifier.system = "https://dhp.uz/fhir/identifier/specimen-id"
