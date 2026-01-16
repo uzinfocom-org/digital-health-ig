@@ -31,16 +31,16 @@ Description: "UZCoreServiceRequest defines how laboratory orders are represented
 * authoredOn MS
 * authoredOn ^short = "The date and time when the ServiceRequest was authored and formally issued by the requester."
 * requester MS
-* requester only Reference(UZCorePractitioner or UZCorePractitioner or UZCoreOrganization or UZCorePatiner or UZCoreRelatedPerson)
+* requester only Reference(UZCorePractitioner or UZCorePractitionerRole or UZCoreOrganization or UZCorePatient or UZCoreRelatedPerson)
 * requester ^short = "The individual, role, or organization that authored and issued the laboratory referral/order. This element identifies the healthcare professional or organizational unit responsible for initiating the ServiceRequest."
 * reason MS
-* reason $icd-10
+* reason from $icd-10
 * reason ^short = "A reason to a Condition or other clinical resource that represents the medical justification for the laboratory referral, such as a diagnosis coded using ICD-10. This allows structured representation of diagnosis details including onset date and clinical status."
 * insurance MS
 * insurance only Reference(Coverage)
 * insurance ^short = "Insurance coverage or funding source applicable to the requested service."
 * supportingInfo MS
-* supportingInfo only Reference(ServiceReqeust)
+* supportingInfo only CodeableReference(ServiceRequest)
 * supportingInfo ^short = "Additional clinical or administrative information supporting or justifying the requested service."
 * specimen MS
 * specimen only Reference(Specimen)

@@ -2,7 +2,7 @@ CodeSystem: ServiceRequestIntentCS
 Id: service-request-intent-cs
 Title: "Service Request intent translations"
 Description: "Service request intent with translations in Uzbek and Russian"
-* insert SupplementCodeSystemDraft(service-request-intent-cs, $service-request-inetnt, 5.0.0)
+* insert SupplementCodeSystemDraft(service-request-intent-cs, $service-request-intent, 5.0.0)
 
 * #proposal
   * ^designation[0].language = #ru
