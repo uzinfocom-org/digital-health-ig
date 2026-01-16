@@ -1,4 +1,4 @@
-Profile: UZCoreServiceReqeust
+Profile: UZCoreServiceRequest
 Parent: ServiceRequest
 Id: uz-core-service-request
 Title: "UZ Core Service Request Laboratory"
@@ -46,3 +46,29 @@ Description: "UZCoreServiceRequest defines how laboratory orders are represented
 * specimen only Reference(Specimen)
 * specimen ^short = "The specimen or specimens to be analyzed as part of the requested laboratory service."
 * note ^short = "Doctor's comment or conclution upon referral"
+
+
+Instance: UZCoreServiceRequestLab-Example01
+InstanceOf: UZCoreServiceRequest
+Title: "UZCore ServiceRequest (Lab) Example"
+Description: "Example laboratory ServiceRequest instance for UZCore."
+/* We don't have integrated systems yet
+* identifier.system = "https://dhp.uz/fhir/identifier/servicerequest"
+* identifier.value = "SR-2026-000001"
+
+* requisition.system = "https://dhp.uz/fhir/identifier/requisition"
+* requisition.value = "REQ-2026-000045" */
+* status = #active
+* intent = #order
+* doNotPerform = false
+* code = service-request-lab-research-codes-cs#test-0001-00001 "CBC panel"
+* subject = Reference(Patient/example-salim)
+* encounter = Reference(Encounter/example-encounter)
+* occurrenceDateTime = "2026-01-16T09:30:00+05:00"
+* authoredOn = "2026-01-16T09:10:00+05:00"
+* requester = Reference(Practitioner/example-practitioner)
+* reasonCode.text = "Suspected anemia"
+// * insurance[0] = Reference(Coverage/uz-coverage-example-01) We don't have Coverage profile yet
+//* supportingInfo[0] = Reference(UZCoreServiceRequest/uz-servicerequest-supporting-01)
+* specimen[0] = Reference(Specimen/specimen-example-blood)
+* note[0].text = "Please perform CBC urgently."
