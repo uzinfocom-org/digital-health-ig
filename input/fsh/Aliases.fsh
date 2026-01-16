@@ -209,3 +209,4 @@ Alias: $composition-list-empty-reason = http://terminology.hl7.org/CodeSystem/li
 Alias: $composition-status = http://hl7.org/fhir/composition-status
 Alias: $composition-narrative-status = http://hl7.org/fhir/narrative-status
 Alias: $composition-list-order = http://terminology.hl7.org/CodeSystem/list-order
+Alias: $service-request-intent = http://hl7.org/fhir/request-intent
