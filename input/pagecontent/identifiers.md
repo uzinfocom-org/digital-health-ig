@@ -75,13 +75,22 @@ Local passports are used for domestic identification within Uzbekistan.
 }
 ```
 
-### Temporary medical record number
+### Identifiers for unidentified patients
 
-Temporary medical record numbers are organization-specific identifiers assigned by healthcare providers. Each organization uses its tax ID (Soliq) to create a unique namespace.
+When a patient cannot be immediately identified (e.g., an unconscious patient who cannot provide identification), the platform provides two identifier types. Always prefer the organization-scoped temporary medical record number when possible.
+
+| Scenario | Identifier to use |
+|----------|-------------------|
+| Unidentified patient admitted to a known healthcare organization | `medicalRecordTemp` (preferred) |
+| Unidentified patient, organization unknown or tax ID unavailable | `unknownPatient` (fallback) |
+
+#### Temporary medical record number (preferred)
+
+Use this identifier when an unidentified patient is admitted to a healthcare organization and the organization's tax ID (Soliq) is known. This is the preferred approach because it provides traceability to the issuing organization.
 
 **System URI pattern**: `https://dhp.uz/fhir/core/sid/pid/uz/prn/{soliq-id}/mrt`
 
-**Example** (using organization with tax ID `200935935`):
+Example (using organization with tax ID `200935935`):
 
 ```json
 {
@@ -99,6 +108,33 @@ Temporary medical record numbers are organization-specific identifiers assigned 
       },
       "use": "temp",
       "value": "550e8400-e29b-41d4-a716-446655440000"
+    }
+  ]
+}
+```
+
+#### Unknown patient identifier (fallback)
+
+Use this identifier only when an unidentified patient's receiving organization is unknown or the organization's tax ID is not available. Prefer using the organization-scoped temporary medical record number whenever possible.
+
+**System URI**: `https://dhp.uz/fhir/core/sid/pid/uz/mrt`
+
+```json
+{
+  "identifier": [
+    {
+      "system": "https://dhp.uz/fhir/core/sid/pid/uz/mrt",
+      "type": {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+            "code": "MR",
+            "display": "Medical record number"
+          }
+        ]
+      },
+      "use": "temp",
+      "value": "550e8400-e29b-41d4-a716-446655440001"
     }
   ]
 }
