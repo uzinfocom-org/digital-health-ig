@@ -4,1773 +4,1773 @@ Title: "Reaction substance codes"
 Description: "Local codes and multilingual names for allergy reaction substance."
 * insert OriginalCodeSystemDraft(allergy-reaction-substance-cs)
 
-* #aller-0010-00001 "Ajiriq (Cyn d)"
+* #aller-0010-00001 "Ajiriq"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Свинорой пальчатый (Cyn d)"
+  * ^designation[=].value = "Свинорой пальчатый"
   * ^designation[+].language = #en
   * ^designation[=].value = "Cyn d"
 
-* #aller-0010-00003 "Ajiriq (Cyn d 1)"
+* #aller-0010-00003 "Ajiriq"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Свинорой пальчатый (Cyn d 1)"
+  * ^designation[=].value = "Свинорой пальчатый"
   * ^designation[+].language = #en
   * ^designation[=].value = "Cyn d 1"
 
-* #aller-0010-00004 "Ko'p yillik mastak (Lol p 1)"
+* #aller-0010-00004 "Ko'p yillik mastak"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Плевел многолетний (Lol p 1)"
+  * ^designation[=].value = "Плевел многолетний"
   * ^designation[+].language = #en
   * ^designation[=].value = "Lol p 1"
 
-* #aller-0010-00005 "Paspalum/grechka (Pas n)"
+* #aller-0010-00005 "Paspalum/grechka"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Паспалум/гречка заметная (Pas n)"
+  * ^designation[=].value = "Паспалум/гречка заметная"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Paspalum/conspicuous buckwheat (Pas n)"
+  * ^designation[=].value = "Paspalum/conspicuous buckwheat"
 
-* #aller-0010-00006 "Ajiriqbosh (Phl p 1)"
+* #aller-0010-00006 "Ajiriqbosh"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Тимофеевка луговая (Phl p 1)"
+  * ^designation[=].value = "Тимофеевка луговая"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Timothy grass (Phl p 1)"
+  * ^designation[=].value = "Timothy grass"
 
-* #aller-0010-00007 "Ajiriqbosh (Phl p 2)"
+* #aller-0010-00007 "Ajiriqbosh"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Тимофеевка луговая (Phl p 2)"
+  * ^designation[=].value = "Тимофеевка луговая"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Timothy grass (Phl p 2)"
+  * ^designation[=].value = "Timothy grass"
 
-* #aller-0010-00008 "Ajiriqbosh (Phl p 5-0101)"
+* #aller-0010-00008 "Ajiriqbosh"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Тимофеевка луговая (Phl p 5-0101)"
+  * ^designation[=].value = "Тимофеевка луговая"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Timothy grass (Phl p 5-0101)"
+  * ^designation[=].value = "Timothy grass"
 
-* #aller-0010-00009 "Ajiriqbosh (Phl p 6)"
+* #aller-0010-00009 "Ajiriqbosh"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Тимофеевка луговая (Phl p 6)"
+  * ^designation[=].value = "Тимофеевка луговая"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Timothy grass (Phl p 6)"
+  * ^designation[=].value = "Timothy grass"
 
-* #aller-0010-00010 "Ajiriqbosh (Phl p 7)"
+* #aller-0010-00010 "Ajiriqbosh"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Тимофеевка луговая (Phl p 7)"
+  * ^designation[=].value = "Тимофеевка луговая"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Timothy grass (Phl p 7)"
+  * ^designation[=].value = "Timothy grass"
 
-* #aller-0010-00011 "Ajiriqbosh (Phl p 12)"
+* #aller-0010-00011 "Ajiriqbosh"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Тимофеевка луговая (Phl p 12)"
+  * ^designation[=].value = "Тимофеевка луговая"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Timothy grass (Phl p 12)"
+  * ^designation[=].value = "Timothy grass"
 
-* #aller-0010-00012 "Qamish (Phr c)"
+* #aller-0010-00012 "Qamish"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Тростник (Phr c)"
+  * ^designation[=].value = "Тростник"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Reed (Phr c)"
+  * ^designation[=].value = "Reed"
 
-* #aller-0010-00013 "Javdar changi (Sec c pollen)"
+* #aller-0010-00013 "Javdar changi"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Рожь, пыльца (Sec c pollen)"
+  * ^designation[=].value = "Рожь, пыльца"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Rye, pollen (Sec c pollen)"
+  * ^designation[=].value = "Rye, pollen"
 
-* #aller-0010-00015 "Kumush akatsiya (Aca m)"
+* #aller-0010-00015 "Kumush akatsiya"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Акация серебристая (Aca m)"
+  * ^designation[=].value = "Акация серебристая"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Silver acacia (Aca m)"
+  * ^designation[=].value = "Silver acacia"
 
-* #aller-0010-00016 "Baland aylant (Ail a)"
+* #aller-0010-00016 "Baland aylant"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Айлант высочайший (Ail a)"
+  * ^designation[=].value = "Айлант высочайший"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Ailanthus altissima (Ail a)"
+  * ^designation[=].value = "Ailanthus altissima"
 
-* #aller-0010-00017 "Qandag'och (Aln g 1)"
+* #aller-0010-00017 "Qandag'och"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Ольха (Aln g 1)"
+  * ^designation[=].value = "Ольха"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Alder (Aln g 1)"
+  * ^designation[=].value = "Alder"
 
-* #aller-0010-00018 "Qandag'och (Aln g 4)"
+* #aller-0010-00018 "Qandag'och"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Ольха (Aln g 4)"
+  * ^designation[=].value = "Ольха"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Alder (Aln g 4)"
+  * ^designation[=].value = "Alder"
 
-* #aller-0010-00019 "Serbuqoq qayin (Bet v 1)"
+* #aller-0010-00019 "Serbuqoq qayin"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Берёза повислая (Bet v 1)"
+  * ^designation[=].value = "Берёза повислая"
   * ^designation[+].language = #en
   * ^designation[=].value = "Bet v 1"
 
-* #aller-0010-00020 "Serbuqoq qayin (Bet v 2)"
+* #aller-0010-00020 "Serbuqoq qayin"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Берёза повислая (Bet v 2)"
+  * ^designation[=].value = "Берёза повислая"
   * ^designation[+].language = #en
   * ^designation[=].value = "Bet v 2"
 
-* #aller-0010-00021 "Serbuqoq qayin (Bet v 6)"
+* #aller-0010-00021 "Serbuqoq qayin"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Берёза повислая (Bet v 6)"
+  * ^designation[=].value = "Берёза повислая"
   * ^designation[+].language = #en
   * ^designation[=].value = "Bet v 6"
 
-* #aller-0010-00022 "Qog'ozdaraxt (tut) (Bro pa)"
+* #aller-0010-00022 "Qog'ozdaraxt"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Бумажная шелковица (Bro pa)"
+  * ^designation[=].value = "Бумажная шелковица"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Paper mulberry (Bro pa)"
+  * ^designation[=].value = "Paper mulberry"
 
-* #aller-0010-00023 "O'rmon yong'og'i (Cor a_pollen)"
+* #aller-0010-00023 "O'rmon yong'og'i"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Орешник (Лещина) (Cor a_pollen)"
+  * ^designation[=].value = "Орешник"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Hazel (Cor a_pollen)"
+  * ^designation[=].value = "Hazel"
 
-* #aller-0010-00024 "O'rmon yong'og'i (Cor a 1-0103)"
+* #aller-0010-00024 "O'rmon yong'og'i"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Орешник (Лещина) (Cor a 1-0103)"
+  * ^designation[=].value = "Орешник"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Hazel (Cor a 1-0103)"
+  * ^designation[=].value = "Hazel"
 
-* #aller-0010-00025 "Yapon kriptomeriyasi (Cry j 1)"
+* #aller-0010-00025 "Yapon kriptomeriyasi"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Криптомерия японская (Cry j 1)"
+  * ^designation[=].value = "Криптомерия японская"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Cryptomeria japonica (Cry j 1)"
+  * ^designation[=].value = "Cryptomeria japonica"
 
-* #aller-0010-00026 "Sarv (Cup a 1)"
+* #aller-0010-00026 "Sarv"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Кипарис (Cup a 1)"
+  * ^designation[=].value = "Кипарис"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Cypress (Cup a 1)"
+  * ^designation[=].value = "Cypress"
 
-* #aller-0010-00027 "Sarv (Cup s)"
+* #aller-0010-00027 "Sarv"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Кипарис (Cup s)"
+  * ^designation[=].value = "Кипарис"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Cypress (Cup s)"
+  * ^designation[=].value = "Cypress"
 
-* #aller-0010-00028 "Qoraqayin (Fag s 1)"
+* #aller-0010-00028 "Qoraqayin"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Бук (Fag s 1)"
+  * ^designation[=].value = "Бук"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Beech (Fag s 1)"
+  * ^designation[=].value = "Beech"
 
-* #aller-0010-00029 "Shumtol (Fra e)"
+* #aller-0010-00029 "Shumtol"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Ясень (Fra e)"
+  * ^designation[=].value = "Ясень"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Ash (Fra e)"
+  * ^designation[=].value = "Ash"
 
-* #aller-0010-00030 "Shumtol (Fra e 1)"
+* #aller-0010-00030 "Shumtol"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Ясень (Fra e 1)"
+  * ^designation[=].value = "Ясень"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Ash (Fra e 1)"
+  * ^designation[=].value = "Ash"
 
-* #aller-0010-00031 "Yong'oq changi (Jug r_pollen)"
+* #aller-0010-00031 "Yong'oq changi"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Грецкий орех, пыльца (Jug r_pollen)"
+  * ^designation[=].value = "Грецкий орех, пыльца"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Walnut, pollen (Jug r_pollen)"
+  * ^designation[=].value = "Walnut, pollen"
 
-* #aller-0010-00032 "Kedr (Jun a)"
+* #aller-0010-00032 "Kedr"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Кедр (Jun a)"
+  * ^designation[=].value = "Кедр"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Cedar (Jun a)"
+  * ^designation[=].value = "Cedar"
 
-* #aller-0010-00033 "Tut (Mor r)"
+* #aller-0010-00033 "Tut"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Шелковица (Mor r)"
+  * ^designation[=].value = "Шелковица"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Mulberry (Mor r)"
+  * ^designation[=].value = "Mulberry"
 
-* #aller-0010-00034 "Zaytun (Ole e 1)"
+* #aller-0010-00034 "Zaytun"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Олива (Ole e 1)"
+  * ^designation[=].value = "Олива"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Olive (Ole e 1)"
+  * ^designation[=].value = "Olive"
 
-* #aller-0010-00035 "Zaytun (Ole e 9)"
+* #aller-0010-00035 "Zaytun"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Олива (Ole e 9)"
+  * ^designation[=].value = "Олива"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Olive (Ole e 9)"
+  * ^designation[=].value = "Olive"
 
-* #aller-0010-00036 "Xurmo daraxti (Pho d 2)"
+* #aller-0010-00036 "Xurmo daraxti"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Финиковая пальма (Pho d 2)"
+  * ^designation[=].value = "Финиковая пальма"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Date palm (Pho d 2)"
+  * ^designation[=].value = "Date palm"
 
-* #aller-0010-00037 "Chinor (Pla a 1)"
+* #aller-0010-00037 "Chinor"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Платан кленолистный (Pla a 1)"
+  * ^designation[=].value = "Платан кленолистный"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Plane maple (Pla a 1)"
+  * ^designation[=].value = "Plane maple"
 
-* #aller-0010-00038 "Chinor (Pla a 2)"
+* #aller-0010-00038 "Chinor"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Платан кленолистный (Pla a 2)"
+  * ^designation[=].value = "Платан кленолистный"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Plane tree (Pla a 2)"
+  * ^designation[=].value = "Plane tree"
 
-* #aller-0010-00039 "Chinor (Pla a 3)"
+* #aller-0010-00039 "Chinor"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Платан кленолистный (Pla a 3)"
+  * ^designation[=].value = "Платан кленолистный"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Plane tree (Pla a 3)"
+  * ^designation[=].value = "Plane tree"
 
-* #aller-0010-00040 "Terak (Pop n)"
+* #aller-0010-00040 "Terak"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Тополь (Pop n)"
+  * ^designation[=].value = "Тополь"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Poplar (Pop n)"
+  * ^designation[=].value = "Poplar"
 
-* #aller-0010-00041 "Qayrag'och (Ulm c)"
+* #aller-0010-00041 "Qayrag'och"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Вяз (Ulm c)"
+  * ^designation[=].value = "Вяз"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Elm (Ulm c)"
+  * ^designation[=].value = "Elm"
 
-* #aller-0010-00043 "Oddiy olabuta (Ama r)"
+* #aller-0010-00043 "Oddiy olabuta"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Обыкновенная марь (Ama r)"
+  * ^designation[=].value = "Обыкновенная марь"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Common goosefoot (Ama r)"
+  * ^designation[=].value = "Common goosefoot"
 
-* #aller-0010-00044 "Ambroziya (Amb a)"
+* #aller-0010-00044 "Ambroziya"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Амброзия (Amb a)"
+  * ^designation[=].value = "Амброзия"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Ragweed (Amb a)"
+  * ^designation[=].value = "Ragweed"
 
-* #aller-0010-00045 "Ambroziya (Amb a 1)"
+* #aller-0010-00045 "Ambroziya"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Амброзия (Amb a 1)"
+  * ^designation[=].value = "Амброзия"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Ragweed (Amb a 1)"
+  * ^designation[=].value = "Ragweed"
 
-* #aller-0010-00046 "Ambroziya (Amb a 4)"
+* #aller-0010-00046 "Ambroziya"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Амброзия (Amb a 4)"
+  * ^designation[=].value = "Амброзия"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Ragweed (Amb a 4)"
+  * ^designation[=].value = "Ragweed"
 
-* #aller-0010-00047 "Shuvoq (Art v)"
+* #aller-0010-00047 "Shuvoq"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Полынь (Art v)"
+  * ^designation[=].value = "Полынь"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Wormwood (Art v)"
+  * ^designation[=].value = "Wormwood"
 
-* #aller-0010-00048 "Shuvoq (Art v 1)"
+* #aller-0010-00048 "Shuvoq"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Полынь (Art v 1)"
+  * ^designation[=].value = "Полынь"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Wormwood (Art v 1)"
+  * ^designation[=].value = "Wormwood"
 
-* #aller-0010-00049 "Shuvoq (Art v 3)"
+* #aller-0010-00049 "Shuvoq"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Полынь (Art v 3)"
+  * ^designation[=].value = "Полынь"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Wormwood (Art v 3)"
+  * ^designation[=].value = "Wormwood"
 
-* #aller-0010-00050 "Nasha (Can s)"
+* #aller-0010-00050 "Nasha"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Конопля (Can s)"
+  * ^designation[=].value = "Конопля"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Hemp (Can s)"
+  * ^designation[=].value = "Hemp"
 
-* #aller-0010-00051 "Nasha (Can s 3)"
+* #aller-0010-00051 "Nasha"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Конопля (Can s 3)"
+  * ^designation[=].value = "Конопля"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Hemp (Can s 3)"
+  * ^designation[=].value = "Hemp"
 
-* #aller-0010-00052 "Oq olabuta (Che a)"
+* #aller-0010-00052 "Oq olabuta"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Марь белая (Che a)"
+  * ^designation[=].value = "Марь белая"
   * ^designation[+].language = #en
-  * ^designation[=].value = "White goosefoot (Che a)"
+  * ^designation[=].value = "White goosefoot"
 
-* #aller-0010-00053 "Oq olabuta (Che a 1)"
+* #aller-0010-00053 "Oq olabuta"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Марь белая (Che a 1)"
+  * ^designation[=].value = "Марь белая"
   * ^designation[+].language = #en
-  * ^designation[=].value = "White goosefoot (Che a 1)"
+  * ^designation[=].value = "White goosefoot"
 
-* #aller-0010-00054 "Bir yillik prolesnik (Mer a 1)"
+* #aller-0010-00054 "Bir yillik prolesnik"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Пролесник однолетний (Mer a 1)"
+  * ^designation[=].value = "Пролесник однолетний"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Annual wood-snow (Mer a 1)"
+  * ^designation[=].value = "Annual wood-snow"
 
-* #aller-0010-00055 "Postennitsa (Par j)"
+* #aller-0010-00055 "Postennitsa"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Постенница (Par j)"
+  * ^designation[=].value = "Постенница"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Wallflower (Par j)"
+  * ^designation[=].value = "Wallflower"
 
-* #aller-0010-00056 "Postennitsa (Par j 2)"
+* #aller-0010-00056 "Postennitsa"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Постенница (Par j 2)"
+  * ^designation[=].value = "Постенница"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Wallflower (Par j 2)"
+  * ^designation[=].value = "Wallflower"
 
-* #aller-0010-00057 "Zubturum (Pla l)"
+* #aller-0010-00057 "Zubturum"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Подорожник (Pla l)"
+  * ^designation[=].value = "Подорожник"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Plantain (Pla l)"
+  * ^designation[=].value = "Plantain"
 
-* #aller-0010-00058 "Zubturum (Pla l 1)"
+* #aller-0010-00058 "Zubturum"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Подорожник (Pla l 1)"
+  * ^designation[=].value = "Подорожник"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Plantain (Pla l 1)"
+  * ^designation[=].value = "Plantain"
 
-* #aller-0010-00059 "Sho'rak (Sal k)"
+* #aller-0010-00059 "Sho'rak"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Солянка (Sal k)"
+  * ^designation[=].value = "Солянка"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Salwort (Sal k)"
+  * ^designation[=].value = "Salwort"
 
-* #aller-0010-00060 "Sho'rak (Sal k 1)"
+* #aller-0010-00060 "Sho'rak"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Солянка (Sal k 1)"
+  * ^designation[=].value = "Солянка"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Salwort (Sal k 1)"
+  * ^designation[=].value = "Salwort"
 
-* #aller-0010-00061 "Gazanda (Urt d)"
+* #aller-0010-00061 "Gazanda"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Крапива (Urt d)"
+  * ^designation[=].value = "Крапива"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Nettle (Urt d)"
+  * ^designation[=].value = "Nettle"
 
-* #aller-0010-00064 "Amerika uy changi kanasi (Der f 1)"
+* #aller-0010-00064 "Amerika uy changi kanasi"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Американский клещ домашней пыли (Der f 1)"
+  * ^designation[=].value = "Американский клещ домашней пыли"
   * ^designation[+].language = #en
-  * ^designation[=].value = "American house dust mite (Der f 1)"
+  * ^designation[=].value = "American house dust mite"
 
-* #aller-0010-00065 "Amerika uy changi kanasi (Der f 2)"
+* #aller-0010-00065 "Amerika uy changi kanasi"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Американский клещ домашней пыли (Der f 2)"
+  * ^designation[=].value = "Американский клещ домашней пыли"
   * ^designation[+].language = #en
-  * ^designation[=].value = "American house dust mite (Der f 2)"
+  * ^designation[=].value = "American house dust mite"
 
-* #aller-0010-00066 "Yevropa uy changi kanasi (Der p 1)"
+* #aller-0010-00066 "Yevropa uy changi kanasi"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Европейский клещ домашней пыли (Der p 1)"
+  * ^designation[=].value = "Европейский клещ домашней пыли"
   * ^designation[+].language = #en
-  * ^designation[=].value = "European house dust mite (Der p 1)"
+  * ^designation[=].value = "European house dust mite"
 
-* #aller-0010-00067 "Yevropa uy changi kanasi (Der p 2)"
+* #aller-0010-00067 "Yevropa uy changi kanasi"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Европейский клещ домашней пыли (Der p 2)"
+  * ^designation[=].value = "Европейский клещ домашней пыли"
   * ^designation[+].language = #en
-  * ^designation[=].value = "European house dust mite (Der p 2)"
+  * ^designation[=].value = "European house dust mite"
 
-* #aller-0010-00068 "Yevropa uy changi kanasi (Der p 5)"
+* #aller-0010-00068 "Yevropa uy changi kanasi"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Европейский клещ домашней пыли (Der p 5)"
+  * ^designation[=].value = "Европейский клещ домашней пыли"
   * ^designation[+].language = #en
-  * ^designation[=].value = "European house dust mite (Der p 5)"
+  * ^designation[=].value = "European house dust mite"
 
-* #aller-0010-00069 "Yevropa uy changi kanasi (Der p 7)"
+* #aller-0010-00069 "Yevropa uy changi kanasi"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Европейский клещ домашней пыли (Der p 7)"
+  * ^designation[=].value = "Европейский клещ домашней пыли"
   * ^designation[+].language = #en
-  * ^designation[=].value = "European house dust mite (Der p 7)"
+  * ^designation[=].value = "European house dust mite"
 
-* #aller-0010-00070 "Yevropa uy changi kanasi (Der p 10)"
+* #aller-0010-00070 "Yevropa uy changi kanasi"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Европейский клещ домашней пыли (Der p 10)"
+  * ^designation[=].value = "Европейский клещ домашней пыли"
   * ^designation[+].language = #en
-  * ^designation[=].value = "European house dust mite (Der p 10)"
+  * ^designation[=].value = "European house dust mite"
 
-* #aller-0010-00071 "Yevropa uy changi kanasi (Der p 11)"
+* #aller-0010-00071 "Yevropa uy changi kanasi"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Европейский клещ домашней пыли (Der p 11)"
+  * ^designation[=].value = "Европейский клещ домашней пыли"
   * ^designation[+].language = #en
-  * ^designation[=].value = "European house dust mite (Der p 11)"
+  * ^designation[=].value = "European house dust mite"
 
-* #aller-0010-00072 "Yevropa uy changi kanasi (Der p 20)"
+* #aller-0010-00072 "Yevropa uy changi kanasi"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Европейский клещ домашней пыли (Der p 20)"
+  * ^designation[=].value = "Европейский клещ домашней пыли"
   * ^designation[+].language = #en
-  * ^designation[=].value = "European house dust mite (Der p 20)"
+  * ^designation[=].value = "European house dust mite"
 
-* #aller-0010-00073 "Yevropa uy changi kanasi (Der p 21)"
+* #aller-0010-00073 "Yevropa uy changi kanasi"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Европейский клещ домашней пыли (Der p 21)"
+  * ^designation[=].value = "Европейский клещ домашней пыли"
   * ^designation[+].language = #en
-  * ^designation[=].value = "European house dust mite (Der p 21)"
+  * ^designation[=].value = "European house dust mite"
 
-* #aller-0010-00074 "Yevropa uy changi kanasi (Der p 23)"
+* #aller-0010-00074 "Yevropa uy changi kanasi"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Европейский клещ домашней пыли (Der p 23)"
+  * ^designation[=].value = "Европейский клещ домашней пыли"
   * ^designation[+].language = #en
-  * ^designation[=].value = "European house dust mite (Der p 23)"
+  * ^designation[=].value = "European house dust mite"
 
-* #aller-0010-00076 "Un kanasi (Aca s)"
+* #aller-0010-00076 "Un kanasi"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Амбарный или мучной клещ (Acarus siro) (Aca s)"
+  * ^designation[=].value = "Амбарный или мучной клещ"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Barn or flour mite (Acarus siro) (Aca s)"
+  * ^designation[=].value = "Barn or flour mite"
 
-* #aller-0010-00077 "Uy changi kanasi Blomia tropicalis (Blo t 5)"
+* #aller-0010-00077 "Uy changi kanasi Blomia tropicalis"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Клещ домашней пыли Blomia tropicalis (Blo t 5)"
+  * ^designation[=].value = "Клещ домашней пыли Blomia tropicalis"
   * ^designation[+].language = #en
-  * ^designation[=].value = "House dust mite Blomia tropicalis (Blo t 5)"
+  * ^designation[=].value = "House dust mite Blomia tropicalis"
 
-* #aller-0010-00078 "Uy changi kanasi Blomia tropicalis (Blo t 10)"
+* #aller-0010-00078 "Uy changi kanasi Blomia tropicalis"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Клещ домашней пыли Blomia tropicalis (Blo t 10)"
+  * ^designation[=].value = "Клещ домашней пыли Blomia tropicalis"
   * ^designation[+].language = #en
-  * ^designation[=].value = "House dust mite Blomia tropicalis (Blo t 10)"
+  * ^designation[=].value = "House dust mite Blomia tropicalis"
 
-* #aller-0010-00079 "Uy changi kanasi Blomia tropicalis (Blo t 21)"
+* #aller-0010-00079 "Uy changi kanasi Blomia tropicalis"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Клещ домашней пыли Blomia tropicalis (Blo t 21)"
+  * ^designation[=].value = "Клещ домашней пыли Blomia tropicalis"
   * ^designation[+].language = #en
-  * ^designation[=].value = "House dust mite Blomia tropicalis (Blo t 21)"
+  * ^designation[=].value = "House dust mite Blomia tropicalis"
 
-* #aller-0010-00080 "Uy changi kanasi Glycyphagus domesticus (Gly d 2)"
+* #aller-0010-00080 "Uy changi kanasi Glycyphagus domesticus"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Клещ домашней пыли Glycyphagus domesticus (Gly d 2)"
+  * ^designation[=].value = "Клещ домашней пыли Glycyphagus domesticus"
   * ^designation[+].language = #en
-  * ^designation[=].value = "House dust mite Glycyphagus domesticus (Gly d 2)"
+  * ^designation[=].value = "House dust mite Glycyphagus domesticus"
 
-* #aller-0010-00081 "Uy changi kanasi Lepidoglyphus destructor (Lep d 2)"
+* #aller-0010-00081 "Uy changi kanasi Lepidoglyphus destructor"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Клещ домашней пыли Lepidoglyphus destructor (Lep d 2)"
+  * ^designation[=].value = "Клещ домашней пыли Lepidoglyphus destructor"
   * ^designation[+].language = #en
-  * ^designation[=].value = "House dust mite Lepidoglyphus destructor (Lep d 2)"
+  * ^designation[=].value = "House dust mite Lepidoglyphus destructor"
 
-* #aller-0010-00082 "Uy changi kanasi Tyrophagus putrescentiae (Tyr p)"
+* #aller-0010-00082 "Uy changi kanasi Tyrophagus putrescentiae"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Клещ домашней пыли Tyrophagus putrescentiae (Tyr p)"
+  * ^designation[=].value = "Клещ домашней пыли Tyrophagus putrescentiae"
   * ^designation[+].language = #en
-  * ^designation[=].value = "House dust mite Tyrophagus putrescentiae (Tyr p)"
+  * ^designation[=].value = "House dust mite Tyrophagus putrescentiae"
 
-* #aller-0010-00083 "Uy changi kanasi Tyrophagus putrescentiae (Tyr p 2)"
+* #aller-0010-00083 "Uy changi kanasi Tyrophagus putrescentiae"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Клещ домашней пыли Tyrophagus putrescentiae (Tyr p 2)"
+  * ^designation[=].value = "Клещ домашней пыли Tyrophagus putrescentiae"
   * ^designation[+].language = #en
-  * ^designation[=].value = "House dust mite Tyrophagus putrescentiae (Tyr p 2)"
+  * ^designation[=].value = "House dust mite Tyrophagus putrescentiae"
 
-* #aller-0010-00086 "Xamirturushli zamburug' Malassezia sympodialis (Mala s 5)"
+* #aller-0010-00086 "Xamirturushli zamburug' Malassezia sympodialis"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Дрожжевые грибы рода Malassezia Malassezia sympodialis (Mala s 5)"
+  * ^designation[=].value = "Дрожжевые грибы рода Malassezia Malassezia sympodialis"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Yeasts of the genus Malassezia Malassezia sympodialis (Mala s 5)"
+  * ^designation[=].value = "Yeasts of the genus Malassezia Malassezia sympodialis"
 
-* #aller-0010-00087 "Xamirturushli zamburug' Malassezia sympodialis (Mala s 6)"
+* #aller-0010-00087 "Xamirturushli zamburug' Malassezia sympodialis"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Дрожжевые грибы рода Malassezia Malassezia sympodialis (Mala s 6)"
+  * ^designation[=].value = "Дрожжевые грибы рода Malassezia Malassezia sympodialis"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Yeasts of the genus Malassezia Malassezia sympodialis (Mala s 6)"
+  * ^designation[=].value = "Yeasts of the genus Malassezia Malassezia sympodialis"
 
-* #aller-0010-00088 "Xamirturushli zamburug' Malassezia sympodialis (Mala s 11)"
+* #aller-0010-00088 "Xamirturushli zamburug' Malassezia sympodialis"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Дрожжевые грибы рода Malassezia Malassezia sympodialis (Mala s 11)"
+  * ^designation[=].value = "Дрожжевые грибы рода Malassezia Malassezia sympodialis"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Yeasts of the genus Malassezia Malassezia sympodialis (Mala s 11)"
+  * ^designation[=].value = "Yeasts of the genus Malassezia Malassezia sympodialis"
 
-* #aller-0010-00089 "Novvoylik xamiturushlari (Sac c)"
+* #aller-0010-00089 "Novvoylik xamiturushlari"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Пекарские дрожжи (Sac c)"
+  * ^designation[=].value = "Пекарские дрожжи"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Baker's yeast (Sac c)"
+  * ^designation[=].value = "Baker's yeast"
 
-* #aller-0010-00091 "Alternariya (Alternaria alternata) (Alt a 1)"
+* #aller-0010-00091 "Alternariya"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Альтернария (Alternaria alternata) (Alt a 1)"
+  * ^designation[=].value = "Альтернария"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Alternaria (Alternaria alternata) (Alt a 1)"
+  * ^designation[=].value = "Alternaria"
 
-* #aller-0010-00092 "Alternariya (Alternaria alternata) (Alt a 6)"
+* #aller-0010-00092 "Alternariya"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Альтернария (Alternaria alternata) (Alt a 6)"
+  * ^designation[=].value = "Альтернария"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Alternaria (Alternaria alternata) (Alt a 6)"
+  * ^designation[=].value = "Alternaria"
 
-* #aller-0010-00093 "Tutovchi aspergil (Aspergillus fumigatus) (Asp f 1)"
+* #aller-0010-00093 "Tutovchi aspergil"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Аспергил дымящий (Aspergillus fumigatus) (Asp f 1)"
+  * ^designation[=].value = "Аспергил дымящий"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Aspergillus fumigatus (Asp f 1)"
+  * ^designation[=].value = "Aspergillus fumigatus"
 
-* #aller-0010-00094 "Tutovchi aspergil (Aspergillus fumigatus) (Asp f 3)"
+* #aller-0010-00094 "Tutovchi aspergil"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Аспергил дымящий (Aspergillus fumigatus) (Asp f 3)"
+  * ^designation[=].value = "Аспергил дымящий"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Aspergillus fumigatus (Asp f 3)"
+  * ^designation[=].value = "Aspergillus fumigatus"
 
-* #aller-0010-00095 "Tutovchi aspergil (Aspergillus fumigatus) (Asp f 4)"
+* #aller-0010-00095 "Tutovchi aspergil"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Аспергил дымящий (Aspergillus fumigatus) (Asp f 4)"
+  * ^designation[=].value = "Аспергил дымящий"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Aspergillus fumigatus (Asp f 4)"
+  * ^designation[=].value = "Aspergillus fumigatus"
 
-* #aller-0010-00096 "Tutovchi aspergil (Aspergillus fumigatus) (Asp f 6)"
+* #aller-0010-00096 "Tutovchi aspergil"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Аспергил дымящий (Aspergillus fumigatus) (Asp f 6)"
+  * ^designation[=].value = "Аспергил дымящий"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Aspergillus fumigatus (Asp f 6)"
+  * ^designation[=].value = "Aspergillus fumigatus"
 
-* #aller-0010-00097 "Cladosporium herbarum (Cla h)"
+* #aller-0010-00097 "Cladosporium herbarum"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Кладоспориум гербарум (Cla h)"
+  * ^designation[=].value = "Кладоспориум гербарум"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Cladosporium herbarum (Cla h)"
+  * ^designation[=].value = "Cladosporium herbarum"
 
-* #aller-0010-00098 "Cladosporium herbarum (Cla h 8)"
+* #aller-0010-00098 "Cladosporium herbarum"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Кладоспориум гербарум (Cla h 8)"
+  * ^designation[=].value = "Кладоспориум гербарум"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Cladosporium herbarum (Cla h 8)"
+  * ^designation[=].value = "Cladosporium herbarum"
 
-* #aller-0010-00099 "Oltinrang penitsillin (Penicilium chrysogenum) (Pen ch)"
+* #aller-0010-00099 "Oltinrang penitsillin"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Пенициллин золотистый (Penicilium chrysogenum) (Pen ch)"
+  * ^designation[=].value = "Пенициллин золотистый"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Penicillium chrysogenum (Pen ch)"
+  * ^designation[=].value = "Penicillium chrysogenum"
 
-* #aller-0010-00102 "Yeryong'oq (Ara h 1)"
+* #aller-0010-00102 "Yeryong'oq"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Арахис (Ara h 1)"
+  * ^designation[=].value = "Арахис"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Peanuts (Ara h 1)"
+  * ^designation[=].value = "Peanuts"
 
-* #aller-0010-00103 "Yeryong'oq (Ara h 2)"
+* #aller-0010-00103 "Yeryong'oq"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Арахис (Ara h 2)"
+  * ^designation[=].value = "Арахис"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Peanut (Ara h 2)"
+  * ^designation[=].value = "Peanut"
 
-* #aller-0010-00104 "Yeryong'oq (Ara h 3)"
+* #aller-0010-00104 "Yeryong'oq"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Арахис (Ara h 3)"
+  * ^designation[=].value = "Арахис"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Peanut (Ara h 3)"
+  * ^designation[=].value = "Peanut"
 
-* #aller-0010-00105 "Yeryong'oq (Ara h 6)"
+* #aller-0010-00105 "Yeryong'oq"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Арахис (Ara h 6)"
+  * ^designation[=].value = "Арахис"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Peanut (Ara h 6)"
+  * ^designation[=].value = "Peanut"
 
-* #aller-0010-00106 "Yeryong'oq (Ara h 8)"
+* #aller-0010-00106 "Yeryong'oq"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Арахис (Ara h 8)"
+  * ^designation[=].value = "Арахис"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Peanut (Ara h 8)"
+  * ^designation[=].value = "Peanut"
 
-* #aller-0010-00107 "Yeryong'oq (Ara h 9)"
+* #aller-0010-00107 "Yeryong'oq"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Арахис (Ara h 9)"
+  * ^designation[=].value = "Арахис"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Peanut (Ara h 9)"
+  * ^designation[=].value = "Peanut"
 
-* #aller-0010-00108 "Yeryong'oq (Ara h 15)"
+* #aller-0010-00108 "Yeryong'oq"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Арахис (Ara h 15)"
+  * ^designation[=].value = "Арахис"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Peanut (Ara h 15)"
+  * ^designation[=].value = "Peanut"
 
-* #aller-0010-00109 "Oddiy no'xat (Cic a)"
+* #aller-0010-00109 "Oddiy no'xat"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Нут обыкновенный (Cic a)"
+  * ^designation[=].value = "Нут обыкновенный"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Chickpea (Cic a)"
+  * ^designation[=].value = "Chickpea"
 
-* #aller-0010-00110 "Soya loviyasi (Gly m 4)"
+* #aller-0010-00110 "Soya loviyasi"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Соя (Gly m 4)"
+  * ^designation[=].value = "Соя"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Soybean (Gly m 4)"
+  * ^designation[=].value = "Soybean"
 
-* #aller-0010-00111 "Soya loviyasi (Gly m 5)"
+* #aller-0010-00111 "Soya loviyasi"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Соя (Gly m 5)"
+  * ^designation[=].value = "Соя"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Soybean (Gly m 5)"
+  * ^designation[=].value = "Soybean"
 
-* #aller-0010-00112 "Soya loviyasi (Gly m 6)"
+* #aller-0010-00112 "Soya loviyasi"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Соя (Gly m 6)"
+  * ^designation[=].value = "Соя"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Soybean (Gly m 6)"
+  * ^designation[=].value = "Soybean"
 
-* #aller-0010-00113 "Soya loviyasi (Gly m 8)"
+* #aller-0010-00113 "Soya loviyasi"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Соя (Gly m 8)"
+  * ^designation[=].value = "Соя"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Soybean (Gly m 8)"
+  * ^designation[=].value = "Soybean"
 
-* #aller-0010-00114 "Yasmiq (Len c)"
+* #aller-0010-00114 "Yasmiq"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Чечевица (Len c)"
+  * ^designation[=].value = "Чечевица"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Lentils (Len c)"
+  * ^designation[=].value = "Lentils"
 
-* #aller-0010-00115 "Yashil loviya (Pha v)"
+* #aller-0010-00115 "Yashil loviya"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Зеленая фасоль (Pha v)"
+  * ^designation[=].value = "Зеленая фасоль"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Green beans (Pha v)"
+  * ^designation[=].value = "Green beans"
 
-* #aller-0010-00116 "No'xat (Pis s)"
+* #aller-0010-00116 "No'xat"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Горох (Pis s)"
+  * ^designation[=].value = "Горох"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Peas (Pis s)"
+  * ^designation[=].value = "Peas"
 
-* #aller-0010-00118 "Suli (Ave s)"
+* #aller-0010-00118 "Suli"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Овес (Ave s)"
+  * ^designation[=].value = "Овес"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Oats (Ave s)"
+  * ^designation[=].value = "Oats"
 
-* #aller-0010-00119 "Kinoa (Che q)"
+* #aller-0010-00119 "Kinoa"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Киноа (Che q)"
+  * ^designation[=].value = "Киноа"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Quinoa (Che q)"
+  * ^designation[=].value = "Quinoa"
 
-* #aller-0010-00120 "Oddiy marjumak (Fag e)"
+* #aller-0010-00120 "Oddiy marjumak"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Гречиха обыкновенная (Fag e)"
+  * ^designation[=].value = "Гречиха обыкновенная"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Buckwheat (Fag e)"
+  * ^designation[=].value = "Buckwheat"
 
-* #aller-0010-00121 "Oddiy marjumak (Fag e 2)"
+* #aller-0010-00121 "Oddiy marjumak"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Гречиха обыкновенная (Fag e 2)"
+  * ^designation[=].value = "Гречиха обыкновенная"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Buckwheat (Fag e 2)"
+  * ^designation[=].value = "Buckwheat"
 
-* #aller-0010-00122 "Arpa (Hor v)"
+* #aller-0010-00122 "Arpa"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Ячмень (Hor v)"
+  * ^designation[=].value = "Ячмень"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Barley (Hor v)"
+  * ^designation[=].value = "Barley"
 
-* #aller-0010-00123 "Bo'rilukkak urug'i (Lup a)"
+* #aller-0010-00123 "Bo'rilukkak urug'i"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Семена люпина (Lup a)"
+  * ^designation[=].value = "Семена люпина"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Lupin seeds (Lup a)"
+  * ^designation[=].value = "Lupin seeds"
 
-* #aller-0010-00124 "Guruch (Ory s)"
+* #aller-0010-00124 "Guruch"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Рис (Ory s)"
+  * ^designation[=].value = "Рис"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Rice (Ory s)"
+  * ^designation[=].value = "Rice"
 
-* #aller-0010-00125 "Tariq (Pan m)"
+* #aller-0010-00125 "Tariq"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Пшено (Pan m)"
+  * ^designation[=].value = "Пшено"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Millet (Pan m)"
+  * ^designation[=].value = "Millet"
 
-* #aller-0010-00126 "Javdar (Sec c_flour)"
+* #aller-0010-00126 "Javdar"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Рожь (Sec c_flour)"
+  * ^designation[=].value = "Рожь"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Rye (Sec c_flour)"
+  * ^designation[=].value = "Rye"
 
-* #aller-0010-00127 "Bo'g'doy (Tri a aA_TI)"
+* #aller-0010-00127 "Bo'g'doy"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Пшеница (Tri a aA_TI)"
+  * ^designation[=].value = "Пшеница"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Wheat (Tri a aA_TI)"
+  * ^designation[=].value = "Wheat"
 
-* #aller-0010-00128 "Bo'g'doy (Tri a 14)"
+* #aller-0010-00128 "Bo'g'doy"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Пшеница (Tri a 14)"
+  * ^designation[=].value = "Пшеница"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Wheat (Tri a 14)"
+  * ^designation[=].value = "Wheat"
 
-* #aller-0010-00129 "Bo'g'doy (Tri a 19)"
+* #aller-0010-00129 "Bo'g'doy"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Пшеница (Tri a 19)"
+  * ^designation[=].value = "Пшеница"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Wheat (Tri a 19)"
+  * ^designation[=].value = "Wheat"
 
-* #aller-0010-00130 "Spelta bo'g'doyi (Tri s)"
+* #aller-0010-00130 "Spelta bo'g'doyi"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Пшеница спельта (Tri s)"
+  * ^designation[=].value = "Пшеница спельта"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Spelt wheat (Tri s)"
+  * ^designation[=].value = "Spelt wheat"
 
-* #aller-0010-00131 "Makkajo'hori (Zea m)"
+* #aller-0010-00131 "Makkajo'hori"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Кукуруза (Zea m)"
+  * ^designation[=].value = "Кукуруза"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Corn (Zea m)"
+  * ^designation[=].value = "Corn"
 
-* #aller-0010-00132 "Makkajo'hori (Zea m 14)"
+* #aller-0010-00132 "Makkajo'hori"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Кукуруза (Zea m 14)"
+  * ^designation[=].value = "Кукуруза"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Corn (Zea m 14)"
+  * ^designation[=].value = "Corn"
 
-* #aller-0010-00134 "Paprika (Cap a)"
+* #aller-0010-00134 "Paprika"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Паприка (Cap a)"
+  * ^designation[=].value = "Паприка"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Paprika (Cap a)"
+  * ^designation[=].value = "Paprika"
 
-* #aller-0010-00135 "Oddiy zira (Car c)"
+* #aller-0010-00135 "Oddiy zira"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Тмин обикновенный (Car c)"
+  * ^designation[=].value = "Тмин обикновенный"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Caraway (Car c)"
+  * ^designation[=].value = "Caraway"
 
-* #aller-0010-00136 "Oregano (Ori v)"
+* #aller-0010-00136 "Oregano"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Орегано (Ori v)"
+  * ^designation[=].value = "Орегано"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Oregano (Ori v)"
+  * ^designation[=].value = "Oregano"
 
-* #aller-0010-00137 "Maydanoz (Pet c)"
+* #aller-0010-00137 "Maydanoz"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Петрушка (Pet c)"
+  * ^designation[=].value = "Петрушка"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Parsley (Pet c)"
+  * ^designation[=].value = "Parsley"
 
-* #aller-0010-00138 "Arpabodiyon (Pim a)"
+* #aller-0010-00138 "Arpabodiyon"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Анис (Pim a)"
+  * ^designation[=].value = "Анис"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Anise (Pim a)"
+  * ^designation[=].value = "Anise"
 
-* #aller-0010-00139 "Xantal (Sin)"
+* #aller-0010-00139 "Xantal"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Горчица (Sin)"
+  * ^designation[=].value = "Горчица"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Mustard (Sin)"
+  * ^designation[=].value = "Mustard"
 
-* #aller-0010-00140 "Xantal (Sin a 1)"
+* #aller-0010-00140 "Xantal"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Горчица (Sin a 1)"
+  * ^designation[=].value = "Горчица"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Mustard (Sin a 1)"
+  * ^designation[=].value = "Mustard"
 
-* #aller-0010-00142 "Kivi (Act d 1)"
+* #aller-0010-00142 "Kivi"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Киви (Act d 1)"
+  * ^designation[=].value = "Киви"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Kiwi (Act d 1)"
+  * ^designation[=].value = "Kiwi"
 
-* #aller-0010-00143 "Kivi (Act d 2)"
+* #aller-0010-00143 "Kivi"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Киви (Act d 2)"
+  * ^designation[=].value = "Киви"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Kiwi (Act d 2)"
+  * ^designation[=].value = "Kiwi"
 
-* #aller-0010-00144 "Kivi (Act d 5)"
+* #aller-0010-00144 "Kivi"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Киви (Act d 5)"
+  * ^designation[=].value = "Киви"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Kiwi (Act d 5)"
+  * ^designation[=].value = "Kiwi"
 
-* #aller-0010-00145 "Kivi (Act d 10)"
+* #aller-0010-00145 "Kivi"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Киви (Act d 10)"
+  * ^designation[=].value = "Киви"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Kiwi (Act d 10)"
+  * ^designation[=].value = "Kiwi"
 
-* #aller-0010-00146 "Papayya (Car p)"
+* #aller-0010-00146 "Papayya"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Папайя (Car p)"
+  * ^designation[=].value = "Папайя"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Papaya (Car p)"
+  * ^designation[=].value = "Papaya"
 
-* #aller-0010-00147 "Apelsin (Cit s)"
+* #aller-0010-00147 "Apelsin"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Апельсин (Cit s)"
+  * ^designation[=].value = "Апельсин"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Orange (Cit s)"
+  * ^designation[=].value = "Orange"
 
-* #aller-0010-00148 "Qovun (Cuc m 2)"
+* #aller-0010-00148 "Qovun"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Дыня (Cuc m 2)"
+  * ^designation[=].value = "Дыня"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Melon (Cuc m 2)"
+  * ^designation[=].value = "Melon"
 
-* #aller-0010-00149 "Anjir (Fic c)"
+* #aller-0010-00149 "Anjir"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Инжир (Fic c)"
+  * ^designation[=].value = "Инжир"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Fig (Fic c)"
+  * ^designation[=].value = "Fig"
 
-* #aller-0010-00150 "Qulupnay (Fra a 1+3)"
+* #aller-0010-00150 "Qulupnay"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Клубника (Fra a 1+3)"
+  * ^designation[=].value = "Клубника"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Strawberry (Fra a 1+3)"
+  * ^designation[=].value = "Strawberry"
 
-* #aller-0010-00151 "Olma (Mal d 1)"
+* #aller-0010-00151 "Olma"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Яблоко (Mal d 1)"
+  * ^designation[=].value = "Яблоко"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Apple (Mal d 1)"
+  * ^designation[=].value = "Apple"
 
-* #aller-0010-00152 "Olma (Mal d 2)"
+* #aller-0010-00152 "Olma"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Яблоко (Mal d 2)"
+  * ^designation[=].value = "Яблоко"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Apple (Mal d 2)"
+  * ^designation[=].value = "Apple"
 
-* #aller-0010-00153 "Olma (Mal d 3)"
+* #aller-0010-00153 "Olma"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Яблоко (Mal d 3)"
+  * ^designation[=].value = "Яблоко"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Apple (Mal d 3)"
+  * ^designation[=].value = "Apple"
 
-* #aller-0010-00154 "Mango (Man i)"
+* #aller-0010-00154 "Mango"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Манго (Man i)"
+  * ^designation[=].value = "Манго"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Mango (Man i)"
+  * ^designation[=].value = "Mango"
 
-* #aller-0010-00155 "Banan (Mus a)"
+* #aller-0010-00155 "Banan"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Банан (Mus a)"
+  * ^designation[=].value = "Банан"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Banana (Mus a)"
+  * ^designation[=].value = "Banana"
 
-* #aller-0010-00156 "Avokado (Pers a)"
+* #aller-0010-00156 "Avokado"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Авокадо (Pers a)"
+  * ^designation[=].value = "Авокадо"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Avocado (Pers a)"
+  * ^designation[=].value = "Avocado"
 
-* #aller-0010-00157 "Gilos (Pru av)"
+* #aller-0010-00157 "Gilos"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Вишня (Pru av)"
+  * ^designation[=].value = "Вишня"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Cherry (Pru av)"
+  * ^designation[=].value = "Cherry"
 
-* #aller-0010-00158 "Shaftoli (Pru p 3)"
+* #aller-0010-00158 "Shaftoli"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Персик (Pru p 3)"
+  * ^designation[=].value = "Персик"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Peach (Pru p 3)"
+  * ^designation[=].value = "Peach"
 
-* #aller-0010-00159 "Nok (Pyr c)"
+* #aller-0010-00159 "Nok"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Груша (Pyr c)"
+  * ^designation[=].value = "Груша"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Pear (Pyr c)"
+  * ^designation[=].value = "Pear"
 
-* #aller-0010-00160 "Buta mevasi (chernika) (Vac m)"
+* #aller-0010-00160 "Buta mevasi"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Черника (Vac m)"
+  * ^designation[=].value = "Черника"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Blueberry (Vac m)"
+  * ^designation[=].value = "Blueberry"
 
-* #aller-0010-00161 "Uzum (Vit v 1)"
+* #aller-0010-00161 "Uzum"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Виноград (Vit v 1)"
+  * ^designation[=].value = "Виноград"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Grapes (Vit v 1)"
+  * ^designation[=].value = "Grapes"
 
-* #aller-0010-00163 "Piyoz (All c)"
+* #aller-0010-00163 "Piyoz"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Лук (All c)"
+  * ^designation[=].value = "Лук"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Onion (All c)"
+  * ^designation[=].value = "Onion"
 
-* #aller-0010-00164 "Sarimsoqpiyoz (All s)"
+* #aller-0010-00164 "Sarimsoqpiyoz"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Чеснок (All s)"
+  * ^designation[=].value = "Чеснок"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Garlic (All s)"
+  * ^designation[=].value = "Garlic"
 
-* #aller-0010-00165 "Selderey (Api g 1)"
+* #aller-0010-00165 "Selderey"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Сельдерей (Api g 1)"
+  * ^designation[=].value = "Сельдерей"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Celery (Api g 1)"
+  * ^designation[=].value = "Celery"
 
-* #aller-0010-00166 "Selderey (Api g 2)"
+* #aller-0010-00166 "Selderey"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Сельдерей (Api g 2)"
+  * ^designation[=].value = "Сельдерей"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Celery (Api g 2)"
+  * ^designation[=].value = "Celery"
 
-* #aller-0010-00167 "Selderey (Api g 6)"
+* #aller-0010-00167 "Selderey"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Сельдерей (Api g 6)"
+  * ^designation[=].value = "Сельдерей"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Celery (Api g 6)"
+  * ^designation[=].value = "Celery"
 
-* #aller-0010-00168 "Sabzi (Dau c)"
+* #aller-0010-00168 "Sabzi"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Морковь (Dau c)"
+  * ^designation[=].value = "Морковь"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Carrot (Dau c)"
+  * ^designation[=].value = "Carrot"
 
-* #aller-0010-00169 "Sabzi (Dau c 1)"
+* #aller-0010-00169 "Sabzi"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Морковь (Dau c 1)"
+  * ^designation[=].value = "Морковь"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Carrot (Dau c 1)"
+  * ^designation[=].value = "Carrot"
 
-* #aller-0010-00170 "Kartoshka (Sol t)"
+* #aller-0010-00170 "Kartoshka"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Картофель (Sol t)"
+  * ^designation[=].value = "Картофель"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Potato (Sol t)"
+  * ^designation[=].value = "Potato"
 
-* #aller-0010-00171 "Pomidor (Sola l)"
+* #aller-0010-00171 "Pomidor"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Помидор (Sola l)"
+  * ^designation[=].value = "Помидор"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Tomato (Sola l)"
+  * ^designation[=].value = "Tomato"
 
-* #aller-0010-00172 "Pomidor (Sola l 6)"
+* #aller-0010-00172 "Pomidor"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Помидор (Sola l 6)"
+  * ^designation[=].value = "Помидор"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Tomato (Sola l 6)"
+  * ^designation[=].value = "Tomato"
 
-* #aller-0010-00174 "Hind yong'og'i (keshyu) (Ana o)"
+* #aller-0010-00174 "Hind yong'og'i"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Кешью (Ana o)"
+  * ^designation[=].value = "Кешью"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Cashew (Ana o)"
+  * ^designation[=].value = "Cashew"
 
-* #aller-0010-00175 "Hind yong'og'i (keshyu) (Ana o 2)"
+* #aller-0010-00175 "Hind yong'og'i"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Кешью (Ana o 2)"
+  * ^designation[=].value = "Кешью"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Cashew (Ana o 2)"
+  * ^designation[=].value = "Cashew"
 
-* #aller-0010-00176 "Hind yong'og'i (keshyu) (Ana o 3)"
+* #aller-0010-00176 "Hind yong'og'i"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Кешью (Ana o 3)"
+  * ^designation[=].value = "Кешью"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Cashew (Ana o 3)"
+  * ^designation[=].value = "Cashew"
 
-* #aller-0010-00177 "Braziliya yong'og'i (Ber e)"
+* #aller-0010-00177 "Braziliya yong'og'i"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Бразильский орех (Ber e)"
+  * ^designation[=].value = "Бразильский орех"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Brazil nut (Ber e)"
+  * ^designation[=].value = "Brazil nut"
 
-* #aller-0010-00178 "Braziliya yong'og'i (Ber e 1)"
+* #aller-0010-00178 "Braziliya yong'og'i"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Бразильский орех (Ber e 1)"
+  * ^designation[=].value = "Бразильский орех"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Brazil nut (Ber e 1)"
+  * ^designation[=].value = "Brazil nut"
 
-* #aller-0010-00179 "Pekan yong'og'i (Car i)"
+* #aller-0010-00179 "Pekan yong'og'i"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Пекан, орех (Car i)"
+  * ^designation[=].value = "Пекан, орех"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Pecan, nut (Car i)"
+  * ^designation[=].value = "Pecan, nut"
 
-* #aller-0010-00180 "Funduk yong'og'i (Cor a 1-0401)"
+* #aller-0010-00180 "Funduk yong'og'i"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Фундук (Cor a 1-0401)"
+  * ^designation[=].value = "Фундук"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Hazelnut (Cor a 1-0401)"
+  * ^designation[=].value = "Hazelnut"
 
-* #aller-0010-00181 "Funduk yong'og'i (Cor a 8)"
+* #aller-0010-00181 "Funduk yong'og'i"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Фундук (Cor a 8)"
+  * ^designation[=].value = "Фундук"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Hazelnut (Cor a 8)"
+  * ^designation[=].value = "Hazelnut"
 
-* #aller-0010-00182 "Funduk yong'og'i (Cor a 9)"
+* #aller-0010-00182 "Funduk yong'og'i"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Фундук (Cor a 9)"
+  * ^designation[=].value = "Фундук"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Hazelnut (Cor a 9)"
+  * ^designation[=].value = "Hazelnut"
 
-* #aller-0010-00183 "Funduk yong'og'i (Cor a 11)"
+* #aller-0010-00183 "Funduk yong'og'i"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Фундук (Cor a 11)"
+  * ^designation[=].value = "Фундук"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Hazelnut (Cor a 11)"
+  * ^designation[=].value = "Hazelnut"
 
-* #aller-0010-00184 "Funduk yong'og'i (Cor a 14)"
+* #aller-0010-00184 "Funduk yong'og'i"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Фундук (Cor a 14)"
+  * ^designation[=].value = "Фундук"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Hazelnut (Cor a 14)"
+  * ^designation[=].value = "Hazelnut"
 
-* #aller-0010-00185 "Gretsiya yong'og'i (Jug r 1)"
+* #aller-0010-00185 "Gretsiya yong'og'i"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Грецкий орех (Jug r 1)"
+  * ^designation[=].value = "Грецкий орех"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Walnut (Jug r 1)"
+  * ^designation[=].value = "Walnut"
 
-* #aller-0010-00186 "Gretsiya yong'og'i (Jug r 2)"
+* #aller-0010-00186 "Gretsiya yong'og'i"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Грецкий орех (Jug r 2)"
+  * ^designation[=].value = "Грецкий орех"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Walnut (Jug r 2)"
+  * ^designation[=].value = "Walnut"
 
-* #aller-0010-00187 "Gretsiya yong'og'i (Jug r 3)"
+* #aller-0010-00187 "Gretsiya yong'og'i"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Грецкий орех (Jug r 3)"
+  * ^designation[=].value = "Грецкий орех"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Walnut (Jug r 3)"
+  * ^designation[=].value = "Walnut"
 
-* #aller-0010-00188 "Gretsiya yong'og'i (Jug r 4)"
+* #aller-0010-00188 "Gretsiya yong'og'i"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Грецкий орех (Jug r 4)"
+  * ^designation[=].value = "Грецкий орех"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Walnut (Jug r 4)"
+  * ^designation[=].value = "Walnut"
 
-* #aller-0010-00189 "Gretsiya yong'og'i (Jug r 6)"
+* #aller-0010-00189 "Gretsiya yong'og'i"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Грецкий орех (Jug r 6)"
+  * ^designation[=].value = "Грецкий орех"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Walnut (Jug r 6)"
+  * ^designation[=].value = "Walnut"
 
-* #aller-0010-00190 "Makadamiya yong'og'i (Mac i 2S Albumin)"
+* #aller-0010-00190 "Makadamiya yong'og'i"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Орех макадамия (Mac i 2S Albumin)"
+  * ^designation[=].value = "Орех макадамия"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Macadamia nut (Mac i 2S Albumin)"
+  * ^designation[=].value = "Macadamia nut"
 
-* #aller-0010-00191 "Makadamiya yong'og'i (Mac inte)"
+* #aller-0010-00191 "Makadamiya yong'og'i"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Орех макадамия (Mac inte)"
+  * ^designation[=].value = "Орех макадамия"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Macadamia nut (Mac inte)"
+  * ^designation[=].value = "Macadamia nut"
 
-* #aller-0010-00192 "Pistalar (Pis v 1)"
+* #aller-0010-00192 "Pistalar"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Фисташки (Pis v 1)"
+  * ^designation[=].value = "Фисташки"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Pistachio (Pis v 1)"
+  * ^designation[=].value = "Pistachio"
 
-* #aller-0010-00193 "Pistalar (Pis v 2)"
+* #aller-0010-00193 "Pistalar"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Фисташки (Pis v 2)"
+  * ^designation[=].value = "Фисташки"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Pistachio (Pis v 2)"
+  * ^designation[=].value = "Pistachio"
 
-* #aller-0010-00194 "Pistalar (Pis v 3)"
+* #aller-0010-00194 "Pistalar"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Фисташки (Pis v 3)"
+  * ^designation[=].value = "Фисташки"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Pistachio (Pis v 3)"
+  * ^designation[=].value = "Pistachio"
 
-* #aller-0010-00195 "Bodom (Pru du)"
+* #aller-0010-00195 "Bodom"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Миндаль (Pru du)"
+  * ^designation[=].value = "Миндаль"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Almond (Pru du)"
+  * ^designation[=].value = "Almond"
 
-* #aller-0010-00197 "Qovoq urug'i (Cuc p)"
+* #aller-0010-00197 "Qovoq urug'i"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Семена тыквы (Cuc p)"
+  * ^designation[=].value = "Семена тыквы"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Pumpkin seeds (Cuc p)"
+  * ^designation[=].value = "Pumpkin seeds"
 
-* #aller-0010-00198 "Kungaboqar urug'i (Hel a)"
+* #aller-0010-00198 "Kungaboqar urug'i"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Семена подсолнечника (Hel a)"
+  * ^designation[=].value = "Семена подсолнечника"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Sunflower seeds (Hel a)"
+  * ^designation[=].value = "Sunflower seeds"
 
-* #aller-0010-00199 "Ko'knor urug'i (Pap s)"
+* #aller-0010-00199 "Ko'knor urug'i"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Мак (Pap s)"
+  * ^designation[=].value = "Мак"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Poppy seeds (Pap s)"
+  * ^designation[=].value = "Poppy seeds"
 
-* #aller-0010-00200 "Ko'knor urug'i (Pap s 2S Albumin)"
+* #aller-0010-00200 "Ko'knor urug'i"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Мак (Pap s 2S Albumin)"
+  * ^designation[=].value = "Мак"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Poppy seeds (Pap s 2S Albumin)"
+  * ^designation[=].value = "Poppy seeds"
 
-* #aller-0010-00201 "Kunjut (Ses i)"
+* #aller-0010-00201 "Kunjut"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Кунжут (Ses i)"
+  * ^designation[=].value = "Кунжут"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Sesame (Ses i)"
+  * ^designation[=].value = "Sesame"
 
-* #aller-0010-00202 "Kunjut (Ses i 1)"
+* #aller-0010-00202 "Kunjut"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Кунжут (Ses i 1)"
+  * ^designation[=].value = "Кунжут"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Sesame (Ses i 1)"
+  * ^designation[=].value = "Sesame"
 
-* #aller-0010-00203 "Fenugrek urug'i (Tri fo)"
+* #aller-0010-00203 "Fenugrek urug'i"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Семена пажитника (Tri fo)"
+  * ^designation[=].value = "Семена пажитника"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Fenugreek seeds (Tri fo)"
+  * ^designation[=].value = "Fenugreek seeds"
 
-* #aller-0010-00206 "Sigir suti (Bos d_milk)"
+* #aller-0010-00206 "Sigir suti"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Коровье молоко (Bos d_milk)"
-  * ^designation[+].language = #en
-  * ^designation[=].value = "Cow's milk (Bos d_milk)"
-
-* #aller-0010-00207 "Sigir suti (Bos d 4)"
-  * ^designation[0].language = #ru
-  * ^designation[=].value = "Коровье молоко (Bos d 4)"
-  * ^designation[+].language = #en
-  * ^designation[=].value = "Cow's milk (Bos d 4)"
-
-* #aller-0010-00208 "Sigir suti (Bos d 5)"
-  * ^designation[0].language = #ru
-  * ^designation[=].value = "Коровье молоко (Bos d 5)"
-  * ^designation[+].language = #en
-  * ^designation[=].value = "Cow's milk (Bos d 5)"
-
-* #aller-0010-00209 "Sigir suti (Bos d 8)"
-  * ^designation[0].language = #ru
-  * ^designation[=].value = "Коровье молоко (Bos d 8)"
+  * ^designation[=].value = "Коровье молоко"
   * ^designation[+].language = #en
   * ^designation[=].value = "Cow's milk"
 
-* #aller-0010-00210 "Tuya suti (Cam d)"
+* #aller-0010-00207 "Sigir suti"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Верблюжье молоко (Cam d)"
+  * ^designation[=].value = "Коровье молоко"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Camel milk (Cam d)"
+  * ^designation[=].value = "Cow's milk"
 
-* #aller-0010-00211 "Echki suti (Cap h_milk)"
+* #aller-0010-00208 "Sigir suti"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Козье молоко (Cap h_milk)"
+  * ^designation[=].value = "Коровье молоко"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Goat milk (Cap h_milk)"
+  * ^designation[=].value = "Cow's milk"
 
-* #aller-0010-00212 "Baytal (ot) suti (qimiz) (Equ c_milk)"
+* #aller-0010-00209 "Sigir suti"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Кобылье молоко (Equ c_milk)"
+  * ^designation[=].value = "Коровье молоко"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Mare's milk (Equ c_milk)"
+  * ^designation[=].value = "Cow's milk"
 
-* #aller-0010-00213 "Qo'y suti (Ovi a_milk)"
+* #aller-0010-00210 "Tuya suti"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Овечье молоко (Ovi a_milk)"
+  * ^designation[=].value = "Верблюжье молоко"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Sheep milk (Ovi a_milk)"
+  * ^designation[=].value = "Camel milk"
 
-* #aller-0010-00215 "Tuxum oqsili (Gal d_white)"
+* #aller-0010-00211 "Echki suti"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Яичный белок (Gal d_white)"
+  * ^designation[=].value = "Козье молоко"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Egg white (Gal d_white)"
+  * ^designation[=].value = "Goat milk"
 
-* #aller-0010-00216 "Tuxum sarig'i (Gal d_yolk)"
+* #aller-0010-00212 "Baytal (ot) suti"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Яичный желток (Gal d_yolk)"
+  * ^designation[=].value = "Кобылье молоко"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Egg yolk (Gal d_yolk)"
+  * ^designation[=].value = "Mare's milk"
 
-* #aller-0010-00217 "Tuxum oqsili (Gal d 1)"
+* #aller-0010-00213 "Qo'y suti"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Яичный белок (Gal d 1)"
+  * ^designation[=].value = "Овечье молоко"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Egg white (Gal d 1)"
+  * ^designation[=].value = "Sheep milk"
 
-* #aller-0010-00218 "Tuxum oqsili (Gal d 2)"
+* #aller-0010-00215 "Tuxum oqsili"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Яичный белок (Gal d 2)"
+  * ^designation[=].value = "Яичный белок"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Egg white (Gal d 2)"
+  * ^designation[=].value = "Egg white"
 
-* #aller-0010-00219 "Tuxum oqsili (Gal d 3)"
+* #aller-0010-00216 "Tuxum sarig'i"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Яичный белок (Gal d 3)"
+  * ^designation[=].value = "Яичный желток"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Egg white (Gal d 3)"
+  * ^designation[=].value = "Egg yolk"
 
-* #aller-0010-00220 "Tuxum oqsili (Gal d 4)"
+* #aller-0010-00217 "Tuxum oqsili"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Яичный белок (Gal d 4)"
+  * ^designation[=].value = "Яичный белок"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Egg white (Gal d 4)"
+  * ^designation[=].value = "Egg white"
 
-* #aller-0010-00221 "Tuxum sarig'i (Gal d 5)"
+* #aller-0010-00218 "Tuxum oqsili"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Яичный желток (Gal d 5)"
+  * ^designation[=].value = "Яичный белок"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Egg yolk (Gal d 5)"
+  * ^designation[=].value = "Egg white"
 
-* #aller-0010-00223 "Seld balig'i qurti (Ani s 1)"
+* #aller-0010-00219 "Tuxum oqsili"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Сельдиной черв (Ani s 1)"
+  * ^designation[=].value = "Яичный белок"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Herring worm (Ani s 1)"
+  * ^designation[=].value = "Egg white"
 
-* #aller-0010-00224 "Seld balig'i qurti (Ani s 3)"
+* #aller-0010-00220 "Tuxum oqsili"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Сельдяной черв (Ani s 3)"
+  * ^designation[=].value = "Яичный белок"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Herring worm (Ani s 3)"
+  * ^designation[=].value = "Egg white"
 
-* #aller-0010-00225 "Krab (Chi spp-)"
+* #aller-0010-00221 "Tuxum sarig'i"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Краб (Chi spp-)"
+  * ^designation[=].value = "Яичный желток"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Crab (Chi spp-)"
+  * ^designation[=].value = "Egg yolk"
 
-* #aller-0010-00226 "Atlantika seld balig'i (Clu h)"
+* #aller-0010-00223 "Seld balig'i qurti"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Сельд атлантическая (Clu h)"
+  * ^designation[=].value = "Сельдиной черв"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Atlantic herring (Clu h)"
+  * ^designation[=].value = "Herring worm"
 
-* #aller-0010-00227 "Atlantika seld balig'i (Clu h 1)"
+* #aller-0010-00224 "Seld balig'i qurti"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Сельд атлантическая (Clu h 1)"
+  * ^designation[=].value = "Сельдяной черв"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Atlantic herring (Clu h 1)"
+  * ^designation[=].value = "Herring worm"
 
-* #aller-0010-00228 "Oddiy krevetka (Cra c 6)"
+* #aller-0010-00225 "Krab"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Обыкновенная креветка (Cra c 6)"
+  * ^designation[=].value = "Краб"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Common shrimp (Cra c 6)"
+  * ^designation[=].value = "Crab"
 
-* #aller-0010-00229 "Karp (Cyp c 1)"
+* #aller-0010-00226 "Atlantika seld balig'i"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Карп (Cyp c 1)"
+  * ^designation[=].value = "Сельд атлантическая"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Carp (Cyp c 1)"
+  * ^designation[=].value = "Atlantic herring"
 
-* #aller-0010-00230 "Atlantika treska balig'i (Gad m)"
+* #aller-0010-00227 "Atlantika seld balig'i"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Атлантическая треска (Gad m)"
+  * ^designation[=].value = "Сельд атлантическая"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Atlantic cod (Gad m)"
+  * ^designation[=].value = "Atlantic herring"
 
-* #aller-0010-00231 "Atlantika treska balig'i (Gad m 2+3)"
+* #aller-0010-00228 "Oddiy krevetka"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Атлантическая треска (Gad m 2+3)"
+  * ^designation[=].value = "Обыкновенная креветка"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Atlantic cod (Gad m 2+3)"
+  * ^designation[=].value = "Common shrimp"
 
-* #aller-0010-00232 "Atlantika treska balig'i (Gad m 1)"
+* #aller-0010-00229 "Karp"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Атлантическая треска (Gad m 1)"
+  * ^designation[=].value = "Карп"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Atlantic cod (Gad m 1)"
+  * ^designation[=].value = "Carp"
 
-* #aller-0010-00233 "Omar (Hom g)"
+* #aller-0010-00230 "Atlantika treska balig'i"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Омар (Hom g)"
+  * ^designation[=].value = "Атлантическая треска"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Lobster (Hom g)"
+  * ^designation[=].value = "Atlantic cod"
 
-* #aller-0010-00234 "Krevetka (Lit s)"
+* #aller-0010-00231 "Atlantika treska balig'i"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Креветка (Lit s)"
+  * ^designation[=].value = "Атлантическая треска"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Shrimp (Lit s)"
+  * ^designation[=].value = "Atlantic cod"
 
-* #aller-0010-00235 "Kalmar (Lol spp-)"
+* #aller-0010-00232 "Atlantika treska balig'i"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Кальмар (Lol spp-)"
+  * ^designation[=].value = "Атлантическая треска"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Squid (Lol spp-)"
+  * ^designation[=].value = "Atlantic cod"
 
-* #aller-0010-00236 "Yeyishli midiya (Myt e)"
+* #aller-0010-00233 "Omar"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Мидия съедобная (Myt e)"
+  * ^designation[=].value = "Омар"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Edible mussel (Myt e)"
+  * ^designation[=].value = "Lobster"
 
-* #aller-0010-00237 "Ustritsa (Ost e)"
+* #aller-0010-00234 "Krevetka"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Устрица (Ost e)"
+  * ^designation[=].value = "Креветка"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Oyster (Ost e)"
+  * ^designation[=].value = "Shrimp"
 
-* #aller-0010-00238 "Shimoliy krevetka (Pan b)"
+* #aller-0010-00235 "Kalmar"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Северная креветка (Pan b)"
+  * ^designation[=].value = "Кальмар"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Northern shrimp (Pan b)"
+  * ^designation[=].value = "Squid"
 
-* #aller-0010-00239 "Dengiz chig'anog'i (Pec spp-)"
+* #aller-0010-00236 "Yeyishli midiya"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Морской гребешок (Pec spp-)"
+  * ^designation[=].value = "Мидия съедобная"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Scallop (Pec spp-)"
+  * ^designation[=].value = "Edible mussel"
 
-* #aller-0010-00240 "Qora yo'lbarssimon krevetka (Pen m 1)"
+* #aller-0010-00237 "Ustritsa"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Черная тигровая креветка (Pen m 1)"
+  * ^designation[=].value = "Устрица"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Black tiger shrimp (Pen m 1)"
+  * ^designation[=].value = "Oyster"
 
-* #aller-0010-00241 "Qora yo'lbarssimon krevetka (Pen m 2)"
+* #aller-0010-00238 "Shimoliy krevetka"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Черная тигровая креветка (Pen m 2)"
+  * ^designation[=].value = "Северная креветка"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Black tiger shrimp (Pen m 2)"
+  * ^designation[=].value = "Northern shrimp"
 
-* #aller-0010-00242 "Qora yo'lbarssimon krevetka (Pen m 3)"
+* #aller-0010-00239 "Dengiz chig'anog'i"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Черная тигровая креветка (Pen m 3)"
+  * ^designation[=].value = "Морской гребешок"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Black tiger shrimp (Pen m 3)"
+  * ^designation[=].value = "Scallop"
 
-* #aller-0010-00243 "Qora yo'lbarssimon krevetka (Pen m 4)"
+* #aller-0010-00240 "Qora yo'lbarssimon krevetka"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Черная тигровая креветка (Pen m 4)"
+  * ^designation[=].value = "Черная тигровая креветка"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Black tiger shrimp (Pen m 4)"
+  * ^designation[=].value = "Black tiger shrimp"
 
-* #aller-0010-00244 "Dengiz tulkisi yoki tikanli skat (Raj c)"
+* #aller-0010-00241 "Qora yo'lbarssimon krevetka"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Морская лисица или колючий (Raj c)"
+  * ^designation[=].value = "Черная тигровая креветка"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Thresher or spiny (Raj c)"
+  * ^designation[=].value = "Black tiger shrimp"
 
-* #aller-0010-00245 "Dengiz tulkisi yoki tikanli skat (Raj c Parvalbumin)"
+* #aller-0010-00242 "Qora yo'lbarssimon krevetka"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Морская лисица или колючий скат (Raj c Parvalbumin)"
+  * ^designation[=].value = "Черная тигровая креветка"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Thresher or spiny ray (Raj c Parvalbumin)"
+  * ^designation[=].value = "Black tiger shrimp"
 
-* #aller-0010-00246 "Mollyuska (Rud spp-)"
+* #aller-0010-00243 "Qora yo'lbarssimon krevetka"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Моллюск (Rud spp-)"
+  * ^designation[=].value = "Черная тигровая креветка"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Shellfish (Rud spp-)"
+  * ^designation[=].value = "Black tiger shrimp"
 
-* #aller-0010-00247 "Losos (Sal s)"
+* #aller-0010-00244 "Dengiz tulkisi yoki tikanli skat"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Лосось (Sal s)"
+  * ^designation[=].value = "Морская лисица или колючий"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Salmon (Sal s)"
+  * ^designation[=].value = "Thresher or spiny"
 
-* #aller-0010-00248 "Losos (Sal s 1)"
+* #aller-0010-00245 "Dengiz tulkisi yoki tikanli skat"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Лосось (Sal s 1)"
+  * ^designation[=].value = "Морская лисица или колючий скат"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Salmon (Sal s 1)"
+  * ^designation[=].value = "Thresher or spiny ray"
 
-* #aller-0010-00249 "Atlantika skumboriya balig'i (Sco s)"
+* #aller-0010-00246 "Mollyuska"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Атлантическая скумбрия (Sco s)"
+  * ^designation[=].value = "Моллюск"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Atlantic mackerel (Sco s)"
+  * ^designation[=].value = "Shellfish"
 
-* #aller-0010-00250 "Atlantika skumbriya balig'i (Sco s 1)"
+* #aller-0010-00247 "Losos"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Атлантическая скумбрия (Sco s 1)"
+  * ^designation[=].value = "Лосось"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Atlantic mackerel (Sco s 1)"
+  * ^designation[=].value = "Salmon"
 
-* #aller-0010-00251 "Tunes (Thu a)"
+* #aller-0010-00248 "Losos"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Тунец (Thu a)"
+  * ^designation[=].value = "Лосось"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Tuna (Thu a)"
+  * ^designation[=].value = "Salmon"
 
-* #aller-0010-00252 "Tunes (Thu a 1)"
+* #aller-0010-00249 "Atlantika skumboriya balig'i"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Тунец (Thu a 1)"
+  * ^designation[=].value = "Атлантическая скумбрия"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Tuna (Thu a 1)"
+  * ^designation[=].value = "Atlantic mackerel"
 
-* #aller-0010-00253 "Qilich baliq (Xip g 1)"
+* #aller-0010-00250 "Atlantika skumbriya balig'i"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Рыба-меч (Xip g 1)"
+  * ^designation[=].value = "Атлантическая скумбрия"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Swordfish (Xip g 1)"
+  * ^designation[=].value = "Atlantic mackerel"
 
-* #aller-0010-00255 "Uy chigirtkasi (Ach d)"
+* #aller-0010-00251 "Tunes"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Сверчок домовой (Ach d)"
+  * ^designation[=].value = "Тунец"
   * ^designation[+].language = #en
-  * ^designation[=].value = "House cricket (Ach d)"
+  * ^designation[=].value = "Tuna"
 
-* #aller-0010-00256 "Mol go'shti (Bos d_meat)"
+* #aller-0010-00252 "Tunes"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Говядина (Bos d_meat)"
+  * ^designation[=].value = "Тунец"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Beef (Bos d_meat)"
+  * ^designation[=].value = "Tuna"
 
-* #aller-0010-00257 "Mol go'shti (Bos d 6)"
+* #aller-0010-00253 "Qilich baliq"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Говядина (Bos d 6)"
+  * ^designation[=].value = "Рыба-меч"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Beef (Bos d 6)"
+  * ^designation[=].value = "Swordfish"
 
-* #aller-0010-00258 "Ot go'shti (Equ c_meat)"
+* #aller-0010-00255 "Uy chigirtkasi"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Конина (Equ c_meat)"
+  * ^designation[=].value = "Сверчок домовой"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Horse meat (Equ c_meat)"
+  * ^designation[=].value = "House cricket"
 
-* #aller-0010-00259 "Tovuq go'shti (Gal d_meat)"
+* #aller-0010-00256 "Mol go'shti"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Курятина (Gal d_meat)"
+  * ^designation[=].value = "Говядина"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Chicken (Gal d_meat)"
+  * ^designation[=].value = "Beef"
 
-* #aller-0010-00260 "Ko'chmanchi chigirtka (Loc m)"
+* #aller-0010-00257 "Mol go'shti"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Перелетная саранча (Loc m)"
+  * ^designation[=].value = "Говядина"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Migratory locust (Loc m)"
+  * ^designation[=].value = "Beef"
 
-* #aller-0010-00261 "Kurka go'shti (Mel g)"
+* #aller-0010-00258 "Ot go'shti"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Индюшатина (Mel g)"
+  * ^designation[=].value = "Конина"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Turkey (Mel g)"
+  * ^designation[=].value = "Horse meat"
 
-* #aller-0010-00262 "Quyon go'shti (Ory_meat)"
+* #aller-0010-00259 "Tovuq go'shti"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Кролятина (Ory_meat)"
+  * ^designation[=].value = "Курятина"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Rabbit (Ory_meat)"
+  * ^designation[=].value = "Chicken"
 
-* #aller-0010-00263 "Qo'y go'shti (Ovi a_meat)"
+* #aller-0010-00260 "Ko'chmanchi chigirtka"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Баранина (Ovi a_meat)"
+  * ^designation[=].value = "Перелетная саранча"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Lamb (Ovi a_meat)"
+  * ^designation[=].value = "Migratory locust"
 
-* #aller-0010-00264 "Cho'chqa go'shti (Sus d_meat)"
+* #aller-0010-00261 "Kurka go'shti"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Свинина (Sus d_meat)"
+  * ^designation[=].value = "Индюшатина"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Pork (Sus d_meat)"
+  * ^designation[=].value = "Turkey"
 
-* #aller-0010-00265 "Cho'chqa go'shti (Sus d 1)"
+* #aller-0010-00262 "Quyon go'shti"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Свинина (Sus d 1)"
+  * ^designation[=].value = "Кролятина"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Pork (Sus d 1)"
+  * ^designation[=].value = "Rabbit"
 
-* #aller-0010-00266 "Katta un qo'ng'izi (Ten m)"
+* #aller-0010-00263 "Qo'y go'shti"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Большой мучной хрущак (Ten m)"
+  * ^designation[=].value = "Баранина"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Large mealworm (Ten m)"
+  * ^designation[=].value = "Lamb"
 
-* #aller-0010-00269 "Olovli chumoli (Sol spp-)"
+* #aller-0010-00264 "Cho'chqa go'shti"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Огненный муравей (Sol spp-)"
+  * ^designation[=].value = "Свинина"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Fire ant (Sol spp-)"
+  * ^designation[=].value = "Pork"
 
-* #aller-0010-00271 "Asalari (Api m)"
+* #aller-0010-00265 "Cho'chqa go'shti"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Пчела медоносная (Api m)"
+  * ^designation[=].value = "Свинина"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Honey bee (Api m)"
+  * ^designation[=].value = "Pork"
 
-* #aller-0010-00272 "Asalari (Api m 1)"
+* #aller-0010-00266 "Katta un qo'ng'izi"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Пчела медоносная (Api m 1)"
+  * ^designation[=].value = "Большой мучной хрущак"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Honey bee (Api m 1)"
+  * ^designation[=].value = "Large mealworm"
 
-* #aller-0010-00273 "Asalari (Api m 10)"
+* #aller-0010-00269 "Olovli chumoli"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Пчела медоносная (Api m 10)"
+  * ^designation[=].value = "Огненный муравей"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Honey bee (Api m 10)"
+  * ^designation[=].value = "Fire ant"
 
-* #aller-0010-00275 "Sakson arisi (Dol spp)"
+* #aller-0010-00271 "Asalari"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Оса саксонская (Dol spp)"
+  * ^designation[=].value = "Пчела медоносная"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Saxon wasp (Dol spp)"
+  * ^designation[=].value = "Honey bee"
 
-* #aller-0010-00276 "Qog'oz ari (Pol d)"
+* #aller-0010-00272 "Asalari"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Оса бумажная (Pol d)"
+  * ^designation[=].value = "Пчела медоносная"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Paper wasp (Pol d)"
+  * ^designation[=].value = "Honey bee"
 
-* #aller-0010-00277 "Qog'oz ari (Pol d 5)"
+* #aller-0010-00273 "Asalari"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Оса бумажная (Pol d 5)"
+  * ^designation[=].value = "Пчела медоносная"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Paper wasp (Pol d 5)"
+  * ^designation[=].value = "Honey bee"
 
-* #aller-0010-00278 "Oddiy ari (Ves v)"
+* #aller-0010-00275 "Sakson arisi"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Оса обыкновенная (Ves v)"
+  * ^designation[=].value = "Оса саксонская"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Common wasp (Ves v)"
+  * ^designation[=].value = "Saxon wasp"
 
-* #aller-0010-00279 "Oddiy ari (Ves v 1)"
+* #aller-0010-00276 "Qog'oz ari"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Оса обыкновенная (Ves v 1)"
+  * ^designation[=].value = "Оса бумажная"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Common wasp (Ves v 1)"
+  * ^designation[=].value = "Paper wasp"
 
-* #aller-0010-00280 "Oddiy ari (Ves v 5)"
+* #aller-0010-00277 "Qog'oz ari"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Оса обыкновенная (Ves v 5)"
+  * ^designation[=].value = "Оса бумажная"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Common wasp (Ves v 5)"
+  * ^designation[=].value = "Paper wasp"
 
-* #aller-0010-00282 "Nemes suvaragi (Bla g 1)"
+* #aller-0010-00278 "Oddiy ari"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Немецкий таракан (Bla g 1)"
+  * ^designation[=].value = "Оса обыкновенная"
   * ^designation[+].language = #en
-  * ^designation[=].value = "German cockroach (Bla g 1)"
+  * ^designation[=].value = "Common wasp"
 
-* #aller-0010-00283 "Nemes suvaragi (Bla g 2)"
+* #aller-0010-00279 "Oddiy ari"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Немецкий таракан (Bla g 2)"
+  * ^designation[=].value = "Оса обыкновенная"
   * ^designation[+].language = #en
-  * ^designation[=].value = "German cockroach (Bla g 2)"
+  * ^designation[=].value = "Common wasp"
 
-* #aller-0010-00284 "Nemes suvaragi (Bla g 4)"
+* #aller-0010-00280 "Oddiy ari"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Немецкий таракан (Bla g 4)"
+  * ^designation[=].value = "Оса обыкновенная"
   * ^designation[+].language = #en
-  * ^designation[=].value = "German cockroach (Bla g 4)"
+  * ^designation[=].value = "Common wasp"
 
-* #aller-0010-00285 "Nemes suvaragi (Bla g 5)"
+* #aller-0010-00282 "Nemes suvaragi"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Немецкий таракан (Bla g 5)"
+  * ^designation[=].value = "Немецкий таракан"
   * ^designation[+].language = #en
-  * ^designation[=].value = "German cockroach (Bla g 5)"
+  * ^designation[=].value = "German cockroach"
 
-* #aller-0010-00286 "Nemes suvaragi (Bla g 9)"
+* #aller-0010-00283 "Nemes suvaragi"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Немецкий таракан (Bla g 9)"
+  * ^designation[=].value = "Немецкий таракан"
   * ^designation[+].language = #en
-  * ^designation[=].value = "German cockroach (Bla g 9)"
+  * ^designation[=].value = "German cockroach"
 
-* #aller-0010-00287 "Amerika suvaragi (Per a)"
+* #aller-0010-00284 "Nemes suvaragi"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Американский таракан (Per a)"
+  * ^designation[=].value = "Немецкий таракан"
   * ^designation[+].language = #en
-  * ^designation[=].value = "American cockroach (Per a)"
+  * ^designation[=].value = "German cockroach"
 
-* #aller-0010-00288 "Amerika suvaragi (Per a 7)"
+* #aller-0010-00285 "Nemes suvaragi"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Американский таракан (Per a 7)"
+  * ^designation[=].value = "Немецкий таракан"
   * ^designation[+].language = #en
-  * ^designation[=].value = "American cockroach (Per a 7)"
+  * ^designation[=].value = "German cockroach"
 
-* #aller-0010-00291 "It (Can f_Fd1)"
+* #aller-0010-00286 "Nemes suvaragi"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Собака (Can f_Fd1)"
+  * ^designation[=].value = "Немецкий таракан"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Dog (Can f_Fd1)"
+  * ^designation[=].value = "German cockroach"
 
-* #aller-0010-00292 "It siydigi (shu jumladan Can f 5) (Can f_male urine)"
+* #aller-0010-00287 "Amerika suvaragi"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Моча собаки (вкл- Can f 5) (Can f_male urine)"
+  * ^designation[=].value = "Американский таракан"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Dog urine (incl- Can f 5) (Can f_male urine)"
+  * ^designation[=].value = "American cockroach"
 
-* #aller-0010-00293 "It (Can f 1)"
+* #aller-0010-00288 "Amerika suvaragi"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Собака (Can f 1)"
+  * ^designation[=].value = "Американский таракан"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Dog (Can f 1)"
+  * ^designation[=].value = "American cockroach"
 
-* #aller-0010-00294 "It (Can f 2)"
+* #aller-0010-00291 "It"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Собака (Can f 2)"
+  * ^designation[=].value = "Собака"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Dog (Can f 2)"
+  * ^designation[=].value = "Dog"
 
-* #aller-0010-00295 "It (Can f 3)"
+* #aller-0010-00292 "It siydigi"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Собака (Can f 3)"
+  * ^designation[=].value = "Моча собаки"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Dog (Can f 3)"
+  * ^designation[=].value = "Dog urine"
 
-* #aller-0010-00296 "It (Can f 4)"
+* #aller-0010-00293 "It"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Собака (Can f 4)"
+  * ^designation[=].value = "Собака"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Dog (Can f 4)"
+  * ^designation[=].value = "Dog"
 
-* #aller-0010-00297 "It (Can f 6)"
+* #aller-0010-00294 "It"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Собака (Can f 6)"
+  * ^designation[=].value = "Собака"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Dog (Can f 6)"
+  * ^designation[=].value = "Dog"
 
-* #aller-0010-00298 "Dengiz cho'chqasi (Cav p 1)"
+* #aller-0010-00295 "It"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Морская свинка (Cav p 1)"
+  * ^designation[=].value = "Собака"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Guinea pig (Cav p 1)"
+  * ^designation[=].value = "Dog"
 
-* #aller-0010-00299 "Mushuk (Fel d 1)"
+* #aller-0010-00296 "It"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Кот (Fel d 1)"
+  * ^designation[=].value = "Собака"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Cat (Fel d 1)"
+  * ^designation[=].value = "Dog"
 
-* #aller-0010-00300 "Mushuk (Fel d 2)"
+* #aller-0010-00297 "It"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Кот (Fel d 2)"
+  * ^designation[=].value = "Собака"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Cat (Fel d 2)"
+  * ^designation[=].value = "Dog"
 
-* #aller-0010-00301 "Mushuk (Fel d 4)"
+* #aller-0010-00298 "Dengiz cho'chqasi"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Кот (Fel d 4)"
+  * ^designation[=].value = "Морская свинка"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Cat (Fel d 4)"
+  * ^designation[=].value = "Guinea pig"
 
-* #aller-0010-00302 "Mushuk (Fel d 7)"
+* #aller-0010-00299 "Mushuk"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Кот (Fel d 7)"
+  * ^designation[=].value = "Кот"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Cat (Fel d 7)"
+  * ^designation[=].value = "Cat"
 
-* #aller-0010-00303 "Uy sichqoni epiteliyasi (Mus m 1)"
+* #aller-0010-00300 "Mushuk"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Мышь домашняя, эпидермис (Mus m 1)"
+  * ^designation[=].value = "Кот"
   * ^designation[+].language = #en
-  * ^designation[=].value = "House mouse, epidermis (Mus m 1)"
+  * ^designation[=].value = "Cat"
 
-* #aller-0010-00304 "Quyon epiteliyasi (Ory c 1)"
+* #aller-0010-00301 "Mushuk"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Кролик, эпителий (Ory c 1)"
+  * ^designation[=].value = "Кот"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Rabbit, epithelium (Ory c 1)"
+  * ^designation[=].value = "Cat"
 
-* #aller-0010-00305 "Quyon epiteliyasi (Ory c 2)"
+* #aller-0010-00302 "Mushuk"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Кролик, эпителий (Ory c 2)"
+  * ^designation[=].value = "Кот"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Rabbit, epithelium (Ory c 2)"
+  * ^designation[=].value = "Cat"
 
-* #aller-0010-00306 "Quyon epiteliyasi (Ory c 3)"
+* #aller-0010-00303 "Uy sichqoni epiteliyasi"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Кролик, эпителий (Ory c 3)"
+  * ^designation[=].value = "Мышь домашняя, эпидермис"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Rabbit, epithelium (Ory c 3)"
+  * ^designation[=].value = "House mouse, epidermis"
 
-* #aller-0010-00307 "Djungar og'maxoni (Phod s 1)"
+* #aller-0010-00304 "Quyon epiteliyasi"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Джунгарский хомяк (Phod s 1)"
+  * ^designation[=].value = "Кролик, эпителий"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Djungarian hamster (Phod s 1)"
+  * ^designation[=].value = "Rabbit, epithelium"
 
-* #aller-0010-00308 "Kalamush epiteliyasi (Rat n)"
+* #aller-0010-00305 "Quyon epiteliyasi"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Крыса, эпителий (Rat n)"
+  * ^designation[=].value = "Кролик, эпителий"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Rat, epithelium (Rat n)"
+  * ^designation[=].value = "Rabbit, epithelium"
 
-* #aller-0010-00310 "Sigir epiteliyasi (Bos d 2)"
+* #aller-0010-00306 "Quyon epiteliyasi"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Корова, эпителий (Bos d 2)"
+  * ^designation[=].value = "Кролик, эпителий"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Cow, epithelium (Bos d 2)"
+  * ^designation[=].value = "Rabbit, epithelium"
 
-* #aller-0010-00311 "Echki epiteliyasi (Cap h_epithelia)"
+* #aller-0010-00307 "Djungar og'maxoni"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Коза, эпителий (Cap h_epithelia)"
+  * ^designation[=].value = "Джунгарский хомяк"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Goat, epithelium (Cap h_epithelia)"
+  * ^designation[=].value = "Djungarian hamster"
 
-* #aller-0010-00312 "Ot epiteliyasi (Equ c 1)"
+* #aller-0010-00308 "Kalamush epiteliyasi"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Лошадь, эпителий (Equ c 1)"
+  * ^designation[=].value = "Крыса, эпителий"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Horse, epithelium (Equ c 1)"
+  * ^designation[=].value = "Rat, epithelium"
 
-* #aller-0010-00313 "Ot epiteliyasi (Equ c 3)"
+* #aller-0010-00310 "Sigir epiteliyasi"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Лошадь, эпителий (Equ c 3)"
+  * ^designation[=].value = "Корова, эпителий"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Horse, epithelium (Equ c 3)"
+  * ^designation[=].value = "Cow, epithelium"
 
-* #aller-0010-00314 "Ot epiteliyasi (Equ c 4)"
+* #aller-0010-00311 "Echki epiteliyasi"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Лошадь, эпителий (Equ c 4)"
+  * ^designation[=].value = "Коза, эпителий"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Horse, epithelium (Equ c 4)"
+  * ^designation[=].value = "Goat, epithelium"
 
-* #aller-0010-00315 "Qo'y epiteliyasi (Ovi a_epithelia)"
+* #aller-0010-00312 "Ot epiteliyasi"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Овца, эпителий (Ovi a_epithelia)"
+  * ^designation[=].value = "Лошадь, эпителий"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Sheep, epithelium (Ovi a_epithelia)"
+  * ^designation[=].value = "Horse, epithelium"
 
-* #aller-0010-00316 "Cho'chqa epiteliyasi (Sus d_epithelia)"
+* #aller-0010-00313 "Ot epiteliyasi"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Свинья, эпителий (Sus d_epithelia)"
+  * ^designation[=].value = "Лошадь, эпителий"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Pig, epithelium (Sus d_epithelia)"
+  * ^designation[=].value = "Horse, epithelium"
 
-* #aller-0010-00319 "Lateks (Hev b 1)"
+* #aller-0010-00314 "Ot epiteliyasi"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Латекс (Hev b 1)"
+  * ^designation[=].value = "Лошадь, эпителий"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Latex (Hev b 1)"
+  * ^designation[=].value = "Horse, epithelium"
 
-* #aller-0010-00320 "Lateks (Hev b 3)"
+* #aller-0010-00315 "Qo'y epiteliyasi"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Латекс (Hev b 3)"
+  * ^designation[=].value = "Овца, эпителий"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Latex (Hev b 3)"
+  * ^designation[=].value = "Sheep, epithelium"
 
-* #aller-0010-00321 "Lateks (Hev b 5)"
+* #aller-0010-00316 "Cho'chqa epiteliyasi"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Латекс (Hev b 5)"
+  * ^designation[=].value = "Свинья, эпителий"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Latex (Hev b 5)"
+  * ^designation[=].value = "Pig, epithelium"
 
-* #aller-0010-00322 "Lateks (Hev b 6-02)"
+* #aller-0010-00319 "Lateks"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Латекс (Hev b 6-02)"
+  * ^designation[=].value = "Латекс"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Latex (Hev b 6-02)"
+  * ^designation[=].value = "Latex"
 
-* #aller-0010-00323 "Lateks (Hev b 8)"
+* #aller-0010-00320 "Lateks"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Латекс (Hev b 8)"
+  * ^designation[=].value = "Латекс"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Latex (Hev b 8)"
+  * ^designation[=].value = "Latex"
 
-* #aller-0010-00324 "Lateks (Hev b 11)"
+* #aller-0010-00321 "Lateks"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Латекс (Hev b 11)"
+  * ^designation[=].value = "Латекс"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Latex (Hev b 11)"
+  * ^designation[=].value = "Latex"
 
-* #aller-0010-00326 "Fikus (Fic b)"
+* #aller-0010-00322 "Lateks"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Фикус (Fic b)"
+  * ^designation[=].value = "Латекс"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Ficus (Fic b)"
+  * ^designation[=].value = "Latex"
 
-* #aller-0010-00328 "Laktoferrin (Hom s Lactoferrin) (Hom s LF)"
+* #aller-0010-00323 "Lateks"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Лактоферрин (Hom s Lactoferrin) (Hom s LF)"
+  * ^designation[=].value = "Латекс"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Lactoferrin (Hom s Lactoferrin) (Hom s LF)"
+  * ^designation[=].value = "Latex"
 
-* #aller-0010-00330 "Qisqichbaqasimon kana (Argas reflexus) (Arg r 1)"
+* #aller-0010-00324 "Lateks"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Раковинный клещ (Argas reflexus) (Arg r 1)"
+  * ^designation[=].value = "Латекс"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Shell mite (Argas reflexus) (Arg r 1)"
+  * ^designation[=].value = "Latex"
+
+* #aller-0010-00326 "Fikus"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Фикус"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Ficus"
+
+* #aller-0010-00328 "Laktoferrin"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Лактоферрин"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Lactoferrin"
+
+* #aller-0010-00330 "Qisqichbaqasimon kana"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Раковинный клещ"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Shell mite"
 
