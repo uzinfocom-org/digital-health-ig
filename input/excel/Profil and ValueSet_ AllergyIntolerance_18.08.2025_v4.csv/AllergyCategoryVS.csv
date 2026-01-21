@@ -1,0 +1,5 @@
+CODE	UZ	RU	EN	Значение	Link
+food	Oziq-ovqat	Пища	Food	Пищевая аллергия	http://hl7.org/fhir/ValueSet/allergy-intolerance-category
+medication	Dorilar	Лекарства	Medication	Аллергия на лекарства	
+environment	Atrof-muhit	Окружающий среда	Environment	Аллергия на вещества окружающей среды	
+biologic	Biologik moddalar	Биологическая вещества	Biologic	Аллергия на биологические вещества (например, вакцины, ферменты)	

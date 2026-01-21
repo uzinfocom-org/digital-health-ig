@@ -22,16 +22,30 @@ jobs:
             jq -S '. + {id: "DHPCapabilityStatement"}
               | del(.rest[0].resource[] | select(.type == "Observation" and .supportedProfile == null))
               | walk(if type == "array" then sort else . end)' > \
-            input/vocabulary/CapabilityStatement-DHPCapabilityStatement.json
+            CapabilityStatement-DHPCapabilityStatement.json
 
-      - name: Check for changes
+      - name: Check for meaningful changes
         id: check_changes
         run: |
-          if git diff --quiet input/vocabulary/CapabilityStatement-DHPCapabilityStatement.json; then
+          # Create temporary files without the date field for comparison
+          jq 'del(.date)' input/vocabulary/CapabilityStatement-DHPCapabilityStatement.json > /tmp/current_without_date.json
+          jq 'del(.date)' CapabilityStatement-DHPCapabilityStatement.json > /tmp/new_without_date.json
+
+          # Compare the date-less versions
+          if diff -q /tmp/current_without_date.json /tmp/new_without_date.json > /dev/null; then
+            echo "No meaningful changes detected (only date changed)"
             echo "changes=false" >> $GITHUB_OUTPUT
+            # Clean up the fetched file since we don't need it
+            rm -f CapabilityStatement-DHPCapabilityStatement.json
           else
+            echo "Meaningful changes detected"
             echo "changes=true" >> $GITHUB_OUTPUT
+            # Move the new file into place
+            mv CapabilityStatement-DHPCapabilityStatement.json input/vocabulary/CapabilityStatement-DHPCapabilityStatement.json
           fi
+
+          # Clean up temporary files
+          rm -f /tmp/current_without_date.json /tmp/new_without_date.json
 
       - name: Create or Update Pull Request
         if: steps.check_changes.outputs.changes == 'true'

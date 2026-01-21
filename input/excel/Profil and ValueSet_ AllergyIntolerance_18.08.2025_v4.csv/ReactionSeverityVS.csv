@@ -1,0 +1,4 @@
+CODE	UZ	RU	EN	Значение	Link
+mild	Yengil	Лёгкая	Mild	 слабые проявления (сыпь, легкий зуд)	ValueSet http://hl7.org/fhir/ValueSet/reaction-event-severity
+moderate	O`rtacha	Умеренная	Moderate	вмешательство требуется (приём лекарства, одышка)	
+severe	Og`ir	Тяжёлая	Severe	 жизнеугрожающая реакция (анафилаксия, госпитализация)	
