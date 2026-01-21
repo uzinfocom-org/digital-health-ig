@@ -22,6 +22,7 @@ Description: "Extension to differentiate the diagnosis type, which is different 
 * value[x] only CodeableConcept
 * value[x] from DiagnosisTypeVS (required)
 
+
 Invariant: uzcore-gender-other-1
 Description: "The differentiation of the gender indication 'other' may only be filled if the gender 'other' is specified (for use in an extension)"
 * severity = #error
