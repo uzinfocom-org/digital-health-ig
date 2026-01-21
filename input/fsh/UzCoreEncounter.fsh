@@ -2,7 +2,7 @@ Profile: UZCoreEncounter
 Parent: Encounter
 Id: uz-core-encounter
 Title: "UZ Core Encounter"
-Description: "Uzbekistan Core Patient profile, used to represent clinical encounters"
+Description: "Uzbekistan Core Encounter profile, used to represent clinical encounters"
 * ^experimental = true
 * ^status = #active
 * ^date = "2025-08-01"
@@ -31,7 +31,7 @@ Description: "Uzbekistan Core Patient profile, used to represent clinical encoun
 * serviceType ^short = "Широкая категоризация услуг, которые должны быть предоставлены"
 
 * subject MS
-* subject only Reference(Patient)
+* subject only Reference(UZCorePatient)
 * subject ^short = "Пациент, связанный с этой встречей"
 
 * subjectStatus MS
@@ -74,7 +74,7 @@ Description: "Uzbekistan Core Patient profile, used to represent clinical encoun
 * reason.use ^short = "Для чего/как следует использовать значение причины"
 
 * reason.value MS
-* reason.value only CodeableReference (Condition or DiagnosticReport or Procedure or Observation)
+* reason.value only CodeableReference (UZCoreClinicalCondition or DiagnosticReport or Procedure or UZCoreObservation)
 * reason.value ^short = "Медицинская причина, требующая рассмотрения"
 
 * virtualService MS

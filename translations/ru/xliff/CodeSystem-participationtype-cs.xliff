@@ -42,6 +42,20 @@
              <notes>
                <note id="n1">The text value for this designation.</note>
              </notes>
+        <source>cвидетель</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-participationtype-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
+        <source>guvoh</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-participationtype-cs" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">The text value for this designation.</note>
+             </notes>
         <source>принимающий врач (в рамках этого визита)</source>
         <target></target>
       </trans-unit>

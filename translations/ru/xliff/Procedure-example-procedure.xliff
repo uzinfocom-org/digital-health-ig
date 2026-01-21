@@ -28,7 +28,7 @@
              <notes>
                <note id="n1">A human language representation of the concept as seen/selected/uttered by the user who entered the data and/or which represents the intended meaning of the user.</note>
              </notes>
-        <source>Therapeutic massage of shoulders</source>
+        <source>Therapeutic massage of right foot</source>
         <target></target>
       </trans-unit>
       <trans-unit id="Procedure-example-procedure" resname="Reference.display">
@@ -70,21 +70,21 @@
              <notes>
                <note id="n1">Plain text narrative that identifies the resource in addition to the resource reference.</note>
              </notes>
-        <source>Боль в ноге</source>
+        <source>Aching right foot</source>
         <target></target>
       </trans-unit>
       <trans-unit id="Procedure-example-procedure" resname="Coding.display">
              <notes>
                <note id="n1">A representation of the meaning of the code in the system, following the rules of the system.</note>
              </notes>
-        <source>Левая нога</source>
+        <source>Right foot</source>
         <target></target>
       </trans-unit>
       <trans-unit id="Procedure-example-procedure" resname="Coding.display">
              <notes>
                <note id="n1">A representation of the meaning of the code in the system, following the rules of the system.</note>
              </notes>
-        <source>Успешно</source>
+        <source>Successful</source>
         <target></target>
       </trans-unit>
     </body>

@@ -16,7 +16,7 @@ msgstr ""
 
 # A human language representation of the concept as seen/selected/uttered by the user who entered the data and/or which represents the intended meaning of the user.
 #: CodeableConcept.text
-msgid "Therapeutic massage of shoulders"
+msgid "Therapeutic massage of right foot"
 msgstr ""
 
 # Plain text narrative that identifies the resource in addition to the resource reference.
@@ -46,16 +46,16 @@ msgstr ""
 
 # Plain text narrative that identifies the resource in addition to the resource reference.
 #: Reference.display
-msgid "Боль в ноге"
+msgid "Aching right foot"
 msgstr ""
 
 # A representation of the meaning of the code in the system, following the rules of the system.
 #: Coding.display
-msgid "Левая нога"
+msgid "Right foot"
 msgstr ""
 
 # A representation of the meaning of the code in the system, following the rules of the system.
 #: Coding.display
-msgid "Успешно"
+msgid "Successful"
 msgstr ""
 
