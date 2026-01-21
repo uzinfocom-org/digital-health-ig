@@ -1,6 +1,6 @@
 ValueSet: TelecomUseVS
 Id: telecom-use-vs
-Title: "Telecom usu"
+Title: "Telecom use"
 Description: "Telecom use types in Uzbekistan"
 * ^url = "https://terminology.dhp.uz/fhir/core/ValueSet/telecom-use-vs"
 * ^experimental = true

@@ -11,22 +11,22 @@ Description: "Uzbekistan Core Provenance profile, used to digitally sign documen
 * target and occurredDateTime and activity and patient and agent and entity and signature MS
 
 * target only Reference(Medication or DocumentReference)
-* activity from ProvenanceActivityTypesVS (required) 
+* activity from ProvenanceActivityTypesVS (required)
 * agent
   * type and who MS
   * type from ProvenanceParticipationRoleTypeVS (required)
-  * who only Reference(PractitionerRole)
+  * who only Reference(UZCorePractitionerRole)
 * entity
   * role and what MS
   * role from ProvenanceEntityRoleVS (required)
 * signature
   * type and when and who and sigFormat and data MS
   * type from SignatureTypeVS (required)
-  * who only Reference(PractitionerRole)
+  * who only Reference(UZCorePractitionerRole)
 
 Instance: example-pdf-document
 InstanceOf: DocumentReference
-Description: "Example ofa PDF document signed with myID"
+Description: "Example of a PDF document signed with myID"
 Usage: #example
 * status = #current
 * content.attachment

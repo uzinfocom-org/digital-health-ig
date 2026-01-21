@@ -1,7 +1,7 @@
 # ╭─────────────────────────Commonly Used ImplementationGuide Properties───────────────────────────╮
 # │  The properties below are used to create the ImplementationGuide resource. The most commonly   │
 # │  used properties are included. For a list of all supported properties and their functions,     │
-# │  see: https://fshschool.org/docs/sushi/configuration/.                                         │
+# │  see: https://fshschool.org/docs/sushi/configuration/                                          │
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 id: uz.dhp.core
 canonical: https://dhp.uz/fhir/core
@@ -13,12 +13,12 @@ version: 0.3.0
 fhirVersion: 5.0.0 # https://www.hl7.org/fhir/valueset-FHIR-version.html
 copyrightYear: 2025+
 releaseLabel: ci-build
-# jurisdiction: urn:iso:std:iso:3166#UZ "Uzbekistan" temporarily disabled due to issues with IG publisher translation template
-jurisdiction: http://unstats.un.org/unsd/methods/m49/m49.htm#001
+jurisdiction: urn:iso:std:iso:3166#UZ "Uzbekistan"
+# jurisdiction: http://unstats.un.org/unsd/methods/m49/m49.htm#001
 publisher:
-  name: Uzinfocom LLC
-  url: https://uzinfocom.uz
-  email: info@uzinfocom.uz
+  name: Ministry of Health of the Republic of Uzbekistan
+  url: https://gov.uz/en/ssv
+  email: info@ssv.uz
 
 dependencies:
   # while we don't strictly needs this, this helps resolve the DICOM supplement correctly until tx.fhir.org can do this
@@ -66,6 +66,7 @@ dependencies:
 parameters:
   special-url-base: https://terminology.dhp.uz/fhir/core
   excludettl: true
+  excludexml: true
   # shownav: true
 
   pin-canonicals: pin-all
@@ -76,12 +77,12 @@ parameters:
 
   # multi-lingual support
   i18n-default-lang: en
-  i18n-lang: 
+  i18n-lang:
     - ru
-    # - uz # to be enabled later - requires translating not just this IG, but core IG publisher texts as well
+    - uz
   translation-sources:
     - input/translations/ru
-    # - input/translations/uz
+    - input/translations/uz
 
 #   validation: [allow-any-extensions, no-broken-links]
 #
@@ -95,7 +96,10 @@ parameters:
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 menu:
   Home: index.html
-  FHIR basics: fhir-basics.html
+  Guidance:
+    FHIR basics: fhir-basics.html
+    Identifiers: identifiers.html
+    Vital signs: vital-signs.html
   API access: api-access.html
   Artifacts: artifacts.html
   Services: services.html
@@ -157,6 +161,10 @@ menu:
 #     description: An example Patient
 #     exampleBoolean: true
 #   Patient/bad-example: omit
+
+resources:
+  CapabilityStatement/DHPCapabilityStatement:
+    description: DHP platform capability statement, describing the supported resources, profiles, and searchparameters
 #
 #
 # Groups can control certain aspects of the IG generation.  The IG

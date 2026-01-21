@@ -1,32 +1,54 @@
 // This file contains definitions of our internally-defined naming systems
 
-Instance: uzb-hrm-argoz
+Instance: uzb-hrm-argos
 InstanceOf: NamingSystem
 Description: "Healthcare provider identifiers assigned by the Uzbekistan Human Resource Management (HRM) system"
 Usage: #definition
-* name = "Uzbekistan_HRM_Argoz_System"
+* url = "https://terminology.dhp.uz/fhir/core/NamingSystem/uzb-hrm-argos"
+* name = "UzbekistanHrmArgosSystem"
 * status = #active
 * kind = #identifier
 * publisher = "Uzinfocom"
 * responsible = "Agency for the Development of Public Service of Uzbekistan"
-* date = "2025-04-16"
+* date = "2025-11-06"
 * type = $identifier-type#NPI "National provider identifier"
 * description = "Naming system for healthcare provider identifiers assigned by the Uzbekistan Human Resource Management (HRM) system"
 * jurisdiction = urn:iso:std:iso:3166#UZ "Uzbekistan"
 * usage = "Used for identifying healthcare providers, facilities, and resources within the Uzbekistan healthcare system"
 * uniqueId[0].type = #uri
-* uniqueId[=].value = $organization-argoz-id-system
+* uniqueId[=].value = $organization-argos-id-system
 * uniqueId[=].preferred = true
-* uniqueId[=].comment = "This is the canonical URI for the Uzbekistan HRM Argoz system"
+* uniqueId[=].comment = "This is the canonical URI for the Uzbekistan HRM Argos system"
+
+Instance: uzb-hrm-argos-practitioner
+InstanceOf: NamingSystem
+Description: "Healthcare professional identifiers assigned by the Uzbekistan Human Resource Management (HRM) system"
+Usage: #definition
+* url = "https://terminology.dhp.uz/fhir/core/NamingSystem/uzb-hrm-argos-practitioner"
+* name = "UzbekistanHrmArgosPractitionerSystem"
+* status = #active
+* kind = #identifier
+* publisher = "Uzinfocom"
+* responsible = "Agency for the Development of Public Service of Uzbekistan"
+* date = "2025-11-12"
+* type = $identifier-type#NI "National unique individual identifier"
+* description = "Naming system for healthcare professional identifiers assigned by the Uzbekistan Human Resource Management (HRM) system"
+* jurisdiction = urn:iso:std:iso:3166#UZ "Uzbekistan"
+* usage = "Used for identifying healthcare professionals within the Uzbekistan healthcare system"
+* uniqueId[0].type = #uri
+* uniqueId[=].value = $practitioner-argos-id-system
+* uniqueId[=].preferred = true
+* uniqueId[=].comment = "This is the canonical URI for the Uzbekistan HRM Argos practitioner system"
 
 Instance: uzb-soliq
 InstanceOf: NamingSystem
 Description: "Tax identification numbers and other identifiers assigned by the Uzbekistan Tax Authority (Soliq)"
 Usage: #definition
-* name = "Uzbekistan_Soliq_System"
+* url = "https://terminology.dhp.uz/fhir/core/NamingSystem/uzb-soliq"
+* name = "UzbekistanSoliqSystem"
 * status = #active
 * kind = #identifier
-* date = "2025-04-16"
+* date = "2025-11-06"
 * publisher = "Uzinfocom"
 * responsible = "State Tax Committee of the Republic of Uzbekistan"
 * type = $identifier-type#TAX "Tax ID number"
@@ -38,14 +60,72 @@ Usage: #definition
 * uniqueId[=].preferred = true
 * uniqueId[=].comment = "This is the canonical URI for the Uzbekistan Tax Authority (Soliq) system"
 
-Instance: uzb-national-unique-id
+Instance: patient-id-uzb-passport-local
+InstanceOf: NamingSystem
+Description: "Local (internal) passport identifiers assigned by the Uzbekistan Personalization Agency"
+Usage: #definition
+* url = "https://terminology.dhp.uz/fhir/core/NamingSystem/patient-id-uzb-passport-local"
+* name = "UzbekistanPassportLocalSystem"
+* status = #active
+* kind = #identifier
+* date = "2025-11-06"
+* publisher = "Uzinfocom"
+* responsible = "Personalization Agency under the Ministry of Justice of the Republic of Uzbekistan"
+* type = $identifier-type#PPN "Passport number"
+* description = "Naming system for local (internal) passport identifiers assigned by the Personalization Agency under the Ministry of Justice of the Republic of Uzbekistan. See https://gov.uz/ru/advice/NaN/document/1628 for legal justification."
+* jurisdiction = urn:iso:std:iso:3166#UZ "Uzbekistan"
+* usage = "Used for identifying individuals through their local passport numbers within the Uzbekistan identification system. Local passports are used for domestic identification."
+* uniqueId[0].type = #uri
+* uniqueId[=].value = $passport-local
+* uniqueId[=].preferred = true
+
+Instance: patient-id-uzb-passport-international
+InstanceOf: NamingSystem
+Description: "International passport identifiers assigned by the Uzbekistan Personalization Agency"
+Usage: #definition
+* url = "https://terminology.dhp.uz/fhir/core/NamingSystem/patient-id-uzb-passport-international"
+* name = "UzbekistanPassportInternationalSystem"
+* status = #active
+* kind = #identifier
+* date = "2025-11-06"
+* publisher = "Uzinfocom"
+* responsible = "Personalization Agency under the Ministry of Justice of the Republic of Uzbekistan"
+* type = $identifier-type#PPN "Passport number"
+* description = "Naming system for international passport identifiers assigned by the Personalization Agency under the Ministry of Justice of the Republic of Uzbekistan. See https://gov.uz/ru/advice/NaN/document/1628 for legal justification."
+* jurisdiction = urn:iso:std:iso:3166#UZ "Uzbekistan"
+* usage = "Used for identifying individuals through their international passport numbers within the Uzbekistan identification system. International passports are used for travel abroad."
+* uniqueId[0].type = #uri
+* uniqueId[=].value = $passport-international
+* uniqueId[=].preferred = true
+
+Instance: patient-id-uzb-passport-diplomatic
+InstanceOf: NamingSystem
+Description: "Diplomatic passport identifiers assigned by the Uzbekistan Ministry of Foreign Affairs"
+Usage: #definition
+* url = "https://terminology.dhp.uz/fhir/core/NamingSystem/patient-id-uzb-passport-diplomatic"
+* name = "UzbekistanPassportDiplomaticSystem"
+* status = #active
+* kind = #identifier
+* date = "2025-11-06"
+* publisher = "Uzinfocom"
+* responsible = "Ministry of Foreign Affairs of the Republic of Uzbekistan"
+* type = $identifier-type#PPN "Passport number"
+* description = "Naming system for diplomatic passport identifiers assigned by the Ministry of Foreign Affairs of the Republic of Uzbekistan. Diplomatic passports are issued to government officials and diplomats for official travel."
+* jurisdiction = urn:iso:std:iso:3166#UZ "Uzbekistan"
+* usage = "Used for identifying individuals through their diplomatic passport numbers within the Uzbekistan identification system. Diplomatic passports are issued to diplomats and government officials for official international travel."
+* uniqueId[0].type = #uri
+* uniqueId[=].value = $diplomaticpassport
+* uniqueId[=].preferred = true
+
+Instance: patient-id-uzb-national-id
 InstanceOf: NamingSystem
 Description: "National unique identifiers (PINFL) assigned by the Uzbekistan Personalization Agency"
 Usage: #definition
-* name = "Uzbekistan_National_Unique_ID_System"
+* url = "https://terminology.dhp.uz/fhir/core/NamingSystem/patient-id-uzb-national-id"
+* name = "UzbekistanNationalUniqueIdSystem"
 * status = #active
 * kind = #identifier
-* date = "2025-04-16"
+* date = "2025-11-06"
 * publisher = "Uzinfocom"
 * responsible = "Personalization Agency under the Ministry of Justice of the Republic of Uzbekistan"
 * type = $identifier-type#NI "National unique individual identifier"
@@ -55,54 +135,16 @@ Usage: #definition
 * uniqueId[0].type = #uri
 * uniqueId[=].value = $nationaluniqueID
 * uniqueId[=].preferred = true
-* uniqueId[=].comment = "This is the canonical URI for the Uzbekistan National Unique ID (PINFL) system"
 
-Instance: uzb-passport-local
-InstanceOf: NamingSystem
-Description: "Local passport identifiers assigned by the Uzbekistan Personalization Agency"
-Usage: #definition
-* name = "Uzbekistan_Passport_Local_System"
-* status = #active
-* kind = #identifier
-* date = "2025-04-16"
-* publisher = "Uzinfocom"
-* responsible = "Personalization Agency under the Ministry of Justice of the Republic of Uzbekistan"
-* type = $identifier-type#PPN "Passport number"
-* description = "Naming system for local passport identifiers assigned by the Personalization Agency under the Ministry of Justice of the Republic of Uzbekistan. See https://gov.uz/ru/advice/NaN/document/1628 for legal justification."
-* jurisdiction = urn:iso:std:iso:3166#UZ "Uzbekistan"
-* usage = "Used for identifying individuals through their local passport numbers within the Uzbekistan identification system."
-* uniqueId[0].type = #uri
-* uniqueId[=].value = $passport-local
-* uniqueId[=].preferred = true
-* uniqueId[=].comment = "This is the canonical URI for the Uzbekistan local passport system"
-
-Instance: uzb-passport-international
-InstanceOf: NamingSystem
-Description: "International passport identifiers assigned by the Uzbekistan Personalization Agency"
-Usage: #definition
-* name = "Uzbekistan_Passport_International_System"
-* status = #active
-* kind = #identifier
-* date = "2025-04-16"
-* publisher = "Uzinfocom"
-* responsible = "Personalization Agency under the Ministry of Justice of the Republic of Uzbekistan"
-* type = $identifier-type#PPN "Passport number"
-* description = "Naming system for international passport identifiers assigned by the Personalization Agency under the Ministry of Justice of the Republic of Uzbekistan. See https://gov.uz/ru/advice/NaN/document/1628 for legal justification."
-* jurisdiction = urn:iso:std:iso:3166#UZ "Uzbekistan"
-* usage = "Used for identifying individuals through their international passport numbers within the Uzbekistan identification system."
-* uniqueId[0].type = #uri
-* uniqueId[=].value = $passport-international
-* uniqueId[=].preferred = true
-* uniqueId[=].comment = "This is the canonical URI for the Uzbekistan international passport system"
-
-Instance: uzb-birth-certificate
+Instance: patient-id-uzb-birth-certificate
 InstanceOf: NamingSystem
 Description: "Birth certificate identifiers assigned by the Uzbekistan Personalization Agency"
 Usage: #definition
-* name = "Uzbekistan_Birth_Certificate_System"
+* url = "https://terminology.dhp.uz/fhir/core/NamingSystem/patient-id-uzb-birth-certificate"
+* name = "UzbekistanBirthCertificateSystem"
 * status = #active
 * kind = #identifier
-* date = "2025-04-16"
+* date = "2025-11-06"
 * publisher = "Uzinfocom"
 * responsible = "Personalization Agency under the Ministry of Justice of the Republic of Uzbekistan"
 * type = $identifier-type#BCT "Birth Certificate"
@@ -112,16 +154,16 @@ Usage: #definition
 * uniqueId[0].type = #uri
 * uniqueId[=].value = $birthcertificate
 * uniqueId[=].preferred = true
-* uniqueId[=].comment = "This is the canonical URI for the Uzbekistan birth certificate system"
 
-Instance: uzb-drivers-license
+Instance: patient-id-uzb-drivers-license
 InstanceOf: NamingSystem
 Description: "Driver's license identifiers assigned by the Uzbekistan Ministry of Internal Affairs"
 Usage: #definition
-* name = "Uzbekistan_Drivers_License_System"
+* url = "https://terminology.dhp.uz/fhir/core/NamingSystem/patient-id-uzb-drivers-license"
+* name = "UzbekistanDriversLicenseSystem"
 * status = #active
 * kind = #identifier
-* date = "2025-04-16"
+* date = "2025-11-06"
 * publisher = "Uzinfocom"
 * responsible = "Ministry of Internal Affairs of the Republic of Uzbekistan"
 * type = $identifier-type#DL "Driver's license number"
@@ -131,35 +173,16 @@ Usage: #definition
 * uniqueId[0].type = #uri
 * uniqueId[=].value = $driverslicense
 * uniqueId[=].preferred = true
-* uniqueId[=].comment = "This is the canonical URI for the Uzbekistan driver's license system"
 
-Instance: uzb-diplomatic-passport
-InstanceOf: NamingSystem
-Description: "Diplomatic passport identifiers assigned by the Uzbekistan Ministry of Foreign Affairs"
-Usage: #definition
-* name = "Uzbekistan_Diplomatic_Passport_System"
-* status = #active
-* kind = #identifier
-* date = "2025-04-16"
-* publisher = "Uzinfocom"
-* responsible = "Ministry of Foreign Affairs of the Republic of Uzbekistan"
-* type = $identifier-type#DP "Diplomatic Passport"
-* description = "Naming system for diplomatic passport identifiers assigned by the Ministry of Foreign Affairs of the Republic of Uzbekistan. See http://fmc.uz/legisl.php?id=dippasport and https://www.lex.uz/acts/670451 for legal justification."
-* jurisdiction = urn:iso:std:iso:3166#UZ "Uzbekistan"
-* usage = "Used for identifying diplomatic personnel through their diplomatic passport numbers within the Uzbekistan diplomatic system."
-* uniqueId[0].type = #uri
-* uniqueId[=].value = $diplomaticpassport
-* uniqueId[=].preferred = true
-* uniqueId[=].comment = "This is the canonical URI for the Uzbekistan diplomatic passport system"
-
-Instance: uzb-health-card-number
+Instance: patient-id-uzb-health-card
 InstanceOf: NamingSystem
 Description: "Health card number identifiers assigned by the Uzbekistan Ministry of Health"
 Usage: #definition
-* name = "Uzbekistan_Health_Card_Number_System"
+* url = "https://terminology.dhp.uz/fhir/core/NamingSystem/patient-id-uzb-health-card"
+* name = "UzbekistanHealthCardNumberSystem"
 * status = #active
 * kind = #identifier
-* date = "2025-04-16"
+* date = "2025-11-06"
 * publisher = "Uzinfocom"
 * responsible = "Ministry of Health of the Republic of Uzbekistan"
 * type = $identifier-type#HC "Health card number"
@@ -169,16 +192,16 @@ Usage: #definition
 * uniqueId[0].type = #uri
 * uniqueId[=].value = $healthcard
 * uniqueId[=].preferred = true
-* uniqueId[=].comment = "This is the canonical URI for the Uzbekistan health card number system"
 
-Instance: uzb-military-id-number
+Instance: patient-id-uzb-military-id
 InstanceOf: NamingSystem
 Description: "Military ID number identifiers assigned by the Uzbekistan Ministry of Defense"
 Usage: #definition
-* name = "Uzbekistan_Military_ID_Number_System"
+* url = "https://terminology.dhp.uz/fhir/core/NamingSystem/patient-id-uzb-military-id"
+* name = "UzbekistanMilitaryIdNumberSystem"
 * status = #active
 * kind = #identifier
-* date = "2025-04-16"
+* date = "2025-11-06"
 * publisher = "Uzinfocom"
 * responsible = "Ministry of Defense of the Republic of Uzbekistan"
 * type = $identifier-type#MI "Military ID number"
@@ -188,16 +211,16 @@ Usage: #definition
 * uniqueId[0].type = #uri
 * uniqueId[=].value = $militaryID
 * uniqueId[=].preferred = true
-* uniqueId[=].comment = "This is the canonical URI for the Uzbekistan military ID number system"
 
-Instance: uzb-penitentiary-institution-number
+Instance: patient-id-uzb-penitentiary-number
 InstanceOf: NamingSystem
 Description: "Penitentiary institution number identifiers assigned by the Uzbekistan correctional system"
 Usage: #definition
-* name = "Uzbekistan_Penitentiary_Institution_Number_System"
+* url = "https://terminology.dhp.uz/fhir/core/NamingSystem/patient-id-uzb-penitentiary-number"
+* name = "UzbekistanPenitentiaryInstitutionNumberSystem"
 * status = #active
 * kind = #identifier
-* date = "2025-04-16"
+* date = "2025-11-06"
 * publisher = "Uzinfocom"
 * responsible = "TBD - Responsible authority to be determined"
 * type = $identifier-type#PCN "Penitentiary/correctional institution Number"
@@ -207,15 +230,74 @@ Usage: #definition
 * uniqueId[0].type = #uri
 * uniqueId[=].value = $penitentiaryinstitution
 * uniqueId[=].preferred = true
-* uniqueId[=].comment = "This is the canonical URI for the Uzbekistan penitentiary institution number system"
+
+Instance: patient-id-uzb-unknown-patient
+InstanceOf: NamingSystem
+Description: "Unknown patient codes generated by healthcare providers (fallback when organization ID unavailable)"
+Usage: #definition
+* url = "https://terminology.dhp.uz/fhir/core/NamingSystem/patient-id-uzb-unknown-patient"
+* name = "UzbekistanUnknownPatientCodeSystem"
+* status = #active
+* kind = #identifier
+* date = "2025-11-06"
+* publisher = "Uzinfocom"
+* responsible = "Healthcare providers in Uzbekistan"
+* type = $identifier-type#MR "Medical record number"
+* description = "Naming system for unknown patient codes generated by healthcare providers when a patient's identity cannot be immediately established. This should only be used as a fallback when the organization's tax ID (Soliq) is not available. The preferred approach is to use organization-specific temporary medical record numbers (https://dhp.uz/fhir/core/sid/pid/uz/prn/{soliq-id}/mrt)."
+* jurisdiction = urn:iso:std:iso:3166#UZ "Uzbekistan"
+* usage = "Used for temporarily identifying patients whose identity is unknown or cannot be immediately verified at the point of care, and when the healthcare organization's tax ID is not available to create an organization-specific identifier. Prefer using the organization-scoped temporary medical record number system when possible (e.g., https://dhp.uz/fhir/core/sid/pid/uz/prn/200935935/mrt for an organization with tax ID 200935935)."
+* uniqueId[0].type = #uri
+* uniqueId[=].value = "https://dhp.uz/fhir/core/sid/pid/uz/mrt"
+* uniqueId[=].preferred = true
+
+Instance: patient-id-uzb-provider-assigned
+InstanceOf: NamingSystem
+Description: "Provider-assigned patient identifiers issued by healthcare organizations for unknown patients"
+Usage: #definition
+* url = "https://terminology.dhp.uz/fhir/core/NamingSystem/patient-id-uzb-provider-assigned"
+* name = "UzbekistanProviderAssignedIdentifierSystem"
+* status = #active
+* kind = #identifier
+* date = "2025-11-13"
+* publisher = "Uzinfocom"
+* responsible = "Healthcare providers in Uzbekistan"
+* type = $identifier-type#PRN "Provider number"
+* description = "Naming system for patient identifiers assigned by individual healthcare organizations for unknown patients. The system URI includes the organization's tax ID (Soliq) to scope identifiers to the issuing organization. Format: https://dhp.uz/fhir/core/sid/pid/uz/prn/{soliq-id}"
+* jurisdiction = urn:iso:std:iso:3166#UZ "Uzbekistan"
+* usage = "Used for identifying patients with organization-specific identifiers. Each organization uses their tax ID to create a unique identifier namespace."
+* uniqueId[0].type = #uri
+* uniqueId[=].value = $provider-number
+* uniqueId[=].preferred = false
+* uniqueId[=].comment = "This is the base URI pattern. In practice, append the organization's tax ID: https://dhp.uz/fhir/core/sid/pid/uz/prn/{soliq-id}"
+
+Instance: patient-id-uzb-temp-medical-record
+InstanceOf: NamingSystem
+Description: "Temporary medical record numbers assigned by healthcare organizations"
+Usage: #definition
+* url = "https://terminology.dhp.uz/fhir/core/NamingSystem/patient-id-uzb-temp-medical-record"
+* name = "UzbekistanTempMedicalRecordSystem"
+* status = #active
+* kind = #identifier
+* date = "2025-11-13"
+* publisher = "Uzinfocom"
+* responsible = "Healthcare providers in Uzbekistan"
+* type = $identifier-type#MRT "Temporary Medical Record Number"
+* description = "Naming system for temporary medical record numbers assigned by individual healthcare organizations. The system URI includes the organization's tax ID (Soliq) to scope identifiers to the issuing organization. Format: https://dhp.uz/fhir/core/sid/pid/uz/prn/{soliq-id}/mrt"
+* jurisdiction = urn:iso:std:iso:3166#UZ "Uzbekistan"
+* usage = "Used for temporarily identifying patients with organization-specific medical record numbers when permanent identifiers are not available or applicable."
+* uniqueId[0].type = #uri
+* uniqueId[=].value = $temp-medical-record-pattern
+* uniqueId[=].preferred = true
+* uniqueId[=].comment = "This is the URI pattern placeholder (000000000 represents the organization's tax ID). In practice, replace 000000000 with the actual organization's tax ID: https://dhp.uz/fhir/core/sid/pid/uz/prn/{soliq-id}/mrt"
 
 Instance: location-unit
 InstanceOf: NamingSystem
 Usage: #definition
-* name = "Uzbekistan_DHP_Location_Unit_System"
+* url = "https://terminology.dhp.uz/fhir/core/NamingSystem/location-unit"
+* name = "UzDhpLocationUnitSystem"
 * status = #active
 * kind = #identifier
-* date = "2025-04-16"
+* date = "2025-11-06"
 * publisher = "Uzinfocom"
 * responsible = "Uzinfocom"
 * type = $identifier-type#FI "Facility ID"
@@ -223,26 +305,21 @@ Usage: #definition
 * jurisdiction = urn:iso:std:iso:3166#UZ "Uzbekistan"
 * usage = "Used for identifying specific units within healthcare locations, such as branches, departments, wards, and beds."
 * uniqueId.type = #uri
-* uniqueId.value = "https://dhp.uz/fhir/core/NamingSystem/location-unit"
+* uniqueId.value = $location-unit
 * uniqueId.preferred = true
 * uniqueId.comment = "This is the canonical URI for the Uzbekistan DHP Location Unit identifier system"
 
-Instance: NS-EpisodeOfCare-Identifier
+Instance: episodeofcare-identifier
 InstanceOf: NamingSystem
 Usage: #definition
-Title: "DHP UZ EpisodeOfCare Identifier System"
 Description: "Identifier system used for EpisodeOfCare resources within the Uzbekistan DHP context."
-
-* name = "UZ_DHP_EpisodeOfCare_Identifier"
+* url = "https://terminology.dhp.uz/fhir/core/NamingSystem/episodeofcare-identifier"
+* name = "UzDhpEpisodeOfCareIdentifier"
 * status = #active
 * kind = #identifier
-* date = "2025-08-13"
+* date = "2025-11-06"
 * publisher = "Uzinfocom"
-
-// Необязательно: тип идентификатора (v2-0203 "Visit number")
 * type = http://terminology.hl7.org/CodeSystem/v2-0203#VN "Visit number"
-
-// Уникальные идентификаторы NamingSystem
 * uniqueId[0].type = #uri
 * uniqueId[0].value = "http://dhp.uz/ids/episode-of-care"
 * uniqueId[0].preferred = true

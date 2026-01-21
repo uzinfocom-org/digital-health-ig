@@ -14,13 +14,13 @@ Description: "Uzbekistan Core Organization profile, used to define healthcare or
 * identifier ^slicing.rules = #open
 * identifier ^slicing.description = "Ways an organization can be categorized"
 * identifier ^slicing.ordered = false
-* identifier contains tax-id 0..1 MS and argoz-id 0..1 MS
+* identifier contains taxId 0..1 MS and argosId 0..1 MS
 
 * insert TaxIdentifier
 
-* identifier[argoz-id]
+* identifier[argosId]
   * system 1..1 MS
-  * system = $organization-argoz-id-system
+  * system = $organization-argos-id-system
   * type 1..1 MS
   * type = $identifier-type#XX "Organization Identifier"
   * use = #official
@@ -98,15 +98,15 @@ InstanceOf: UZCoreOrganization
 Description: "Example of a hospital organization"
 Usage: #example
 * language = #uz
-* identifier[tax-id]
+* identifier[taxId]
   * use = #official
   * type = $identifier-type#TAX "Tax ID number"
   * system = $organization-tax-id-system
   * value = "200935935"
-* identifier[argoz-id]
+* identifier[argosId]
   * use = #official
   * type = $identifier-type#XX "Organization Identifier"
-  * system = $organization-argoz-id-system
+  * system = $organization-argos-id-system
   * value = "9512"
 * active = true
 * type.coding[organizationType] = $organization-type-cs#prov "Healthcare Provider"
@@ -123,9 +123,9 @@ Usage: #example
       * valueString = "Республиканский онкологический центр"
   * extension[translation][+]
     * extension[lang][0]
-      * valueCode = #en
+      * valueCode = #kaa
     * extension[content][+]
-      * valueString = "Republican Oncology Center"
+      * valueString = "Respublika onkologiya orayı"
 
 Instance: tashkent-diseases-hospital
 InstanceOf: UZCoreOrganization
@@ -138,7 +138,7 @@ Usage: #example
   * use = #official
   * value = "203108505"
 * identifier[+]
-  * system = $organization-argoz-id-system
+  * system = $organization-argos-id-system
   * type = $identifier-type#XX "Organization Identifier"
   * use = #official
   * value = "22640"
@@ -151,9 +151,9 @@ Usage: #example
       * valueString = "Ташкентская областная инфекционная больница"
   * extension[translation][+]
     * extension[lang][0]
-      * valueCode = #en
+      * valueCode = #kaa
     * extension[content][+]
-      * valueString = "Tashkent Region Infectious Diseases Hospital"
+      * valueString = "Tashkent wálayat juqpalı kesellikler emlewxanası"
 * type
   * coding[0] = $organization-type-cs#prov "Healthcare Provider"
   * coding[+] = organizational-subordination-group-cs#I_2 "Hududiy boshqaruv tarkibidagi"

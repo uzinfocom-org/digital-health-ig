@@ -16,12 +16,12 @@ Description: "Uzbekistan Core Practitioner profile, used to define healthcare pr
 * identifier ^slicing.rules = #open
 * identifier ^slicing.description = "Ways a practitioner can be identified"
 * identifier ^slicing.ordered = false
-* identifier contains national-id 0..1 MS
+* identifier contains nationalId 0..1 MS
 
-* identifier[national-id]
+* identifier[nationalId]
   * ^short = "Персональный идентификационный номер физического лица"
   * system 1..1 MS
-  * system = $organization-argoz-id-system
+  * system = $practitioner-argos-id-system
   * type 1..1 MS
   * type = $identifier-type#NI "National unique individual identifier"
   * use = #official
@@ -36,10 +36,10 @@ Description: "Uzbekistan Core Practitioner profile, used to define healthcare pr
   * system from ContactPointSystemVS (required)
 * gender MS
   * extension contains GenderOtherUZ named gender-other 0..1 MS
-* obeys gender-other-2
+* obeys uzcore-gender-other-2
 * birthDate MS
 * deceasedDateTime and deceasedBoolean MS
-* insert AddressRules
+* insert IntAndUzAddressRules
 * photo MS
   * url and size MS
 * qualification MS
@@ -51,7 +51,7 @@ InstanceOf: UZCorePractitioner
 Description: "Example of a practitioner"
 Usage: #example
 * language = #uz
-* identifier[national-id]
+* identifier[nationalId]
   * value = "9876543210"
 * active = true
 * name
@@ -86,7 +86,7 @@ InstanceOf: UZCorePractitioner
 Description: "Example of a practitioner with a gender extension"
 Usage: #example
 * language = #uz
-* identifier[national-id]
+* identifier[nationalId]
   * value = "9876543211"
 * active = true
 * gender = #other

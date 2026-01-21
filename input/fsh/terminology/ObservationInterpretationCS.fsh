@@ -1,7 +1,7 @@
 CodeSystem: ObservationInterpretationCS
 Id: observation-interpretation-cs
-Title: "UZCore data absent reason code sytem"
-Description: "Data absent reason suplement"
+Title: "Observation interpretation"
+Description: "Observation interpretation supplement with translations in Uzbek and Russian"
 * insert SupplementCodeSystemDraft(observation-interpretation-cs, $observation-interpretation, 3.0.0)
 
 * #CAR

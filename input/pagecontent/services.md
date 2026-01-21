@@ -1,13 +1,13 @@
-### Ambulance  
+### Ambulance
 \< add one paragraph description of the service here \>
 
-### Appointment and Scheduling  
-### Blood Management 
-### Clinical Decision Support  
-### Clinical Health Records 
-### Diagnostics and Imaging  
-### Laboratory 
-### Master Data Management 
+### Appointment and Scheduling
+### Blood Management
+### Clinical Decision Support
+### Clinical Health Records
+### Diagnostics and Imaging
+### Laboratory
+### Master Data Management
 The Master Data Service is a mission-critical component of the DHP, as it ensures the consolidation, standardization, and centralized storage of data originating from various medical information systems. It is the platform core, within which the MDM operates, that will serve as the single source of truth for all connected digital healthcare services. This ensures continuity, accuracy and consistency of data across the national system.
 
 Description of key functionality:
@@ -29,10 +29,10 @@ Description of key functionality:
 
 The MDM Service ensures the timeliness, reliability, and accessibility of information, thereby supporting effective coordination, adherence to regulatory requirements, and the safe and high-quality provision of healthcare services.
 
-The MDM Service is not merely an auxiliary module, but rather the foundation of Uzbekistan’s digital healthcare transformation. It ensures high data quality, interoperability, and security, while supporting the implementation of initiatives within the DHP. The development and implementation of the MDM, based on international standards and integrated with national systems, demonstrate a sustainable and scalable approach to the establishment of a digital healthcare ecosystem.
+The MDM Service is not merely an auxiliary module, but rather the foundation of Uzbekistan's digital healthcare transformation. It ensures high data quality, interoperability, and security, while supporting the implementation of initiatives within the DHP. The development and implementation of the MDM, based on international standards and integrated with national systems, demonstrate a sustainable and scalable approach to the establishment of a digital healthcare ecosystem.
 
 
-### Metadata and Security Management 
+### Metadata and Security Management
 As part of the development of the Digital Health Platform (DHP), the Metadata and Security Management component plays a key role in metadata management, ensuring information security, and implementing access control mechanisms.
 
 The development and implementation of this service are driven by the need to standardize processes related to the description, structuring, protection, and auditing of data stored and processed within the DHP, as well as to ensure compliance with legal requirements in the fields of information security, personal data protection, and healthcare regulations.
@@ -64,11 +64,11 @@ Security Management Service is used wherever medical personal data is affected, 
 - Audit of all operations and actions of users (AuditEvent)
 - Investigation of information security incidents
 - Protection of the legal interests of the physician and the patient (through the recording of events and authorship)
-  
-### Nursing 
-### Patient health journey management 
 
-The PHJM Service defines the digital patient journey — from the initial point of contact to the final outcome of a treatment episode, encompassing intermediate observations, clinical orders, and interactions. The objective of the service is to provide end-to-end, structured, and reliable support for the patient’s care pathway within the Unified Digital Healthcare Platform (UDHP) through:
+### Nursing
+### Patient health journey management
+
+The PHJM Service defines the digital patient journey — from the initial point of contact to the final outcome of a treatment episode, encompassing intermediate observations, clinical orders, and interactions. The objective of the service is to provide end-to-end, structured, and reliable support for the patient's care pathway within the Unified Digital Healthcare Platform (UDHP) through:
 
 * integration of all key clinical events of the patient into a single chain: encounters, diagnoses, observations, treatments, episodes, and outcomes;
 
@@ -83,7 +83,7 @@ Main objectives and use cases of the PHJM include:
   - enabling physicians to access the context of previous encounters (including inpatient, outpatient, and laboratory data).
 - Analyzing the effectiveness and outcomes of treatment:
   - identification of repeated visits, relapses, and chronic conditions;
-  - monitoring the patient’s condition dynamics through key indicators.
+  - monitoring the patient's condition dynamics through key indicators.
 - Supporting interagency cooperation:
   - facilitating communication between different healthcare institutions and levels of care;
   - eliminating duplication of tests and reducing the burden on patients.
@@ -98,12 +98,12 @@ Main objectives and use cases of the PHJM include:
   - analysis of the quality of care;
   - strengthening patient trust.
 
-### Prescription 
-### Public Health Reporting  
-### Quality Assurance 
-### Referrals 
-### Reimbursement 
-### Screening Schedules Management  
-### Supplies   
-### Vaccination Management  
+### Prescription
+### Public Health Reporting
+### Quality Assurance
+### Referrals
+### Reimbursement
+### Screening Schedules Management
+### Supplies
+### Vaccination Management
 

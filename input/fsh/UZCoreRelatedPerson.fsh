@@ -16,17 +16,17 @@ Description: "Uzbekistan Core RelatedPerson profile, used to represent persons r
 * identifier ^slicing.rules = #open
 * identifier ^slicing.description = "Ways a related person can be identified"
 * identifier ^slicing.ordered = false
-* identifier contains 
-    national-id 0..1 MS and
-    passport-local 0..1 MS and
-    passport-international 0..1 MS and
-    birthcertificate 0..1 MS and
-    driverslicense 0..1 MS and
-    diplomaticpassport 0..1 MS and
-    healthcard 0..1 MS and
-    militaryID 0..1 MS
+* identifier contains
+    nationalId 0..1 MS and
+    passportLocal 0..1 MS and
+    passportInternational 0..1 MS and
+    birthCertificate 0..1 MS and
+    driversLicense 0..1 MS and
+    diplomaticPassport 0..1 MS and
+    healthCard 0..1 MS and
+    militaryId 0..1 MS
 
-* identifier[national-id]
+* identifier[nationalId]
   * system 1..1 MS
   * system = $nationaluniqueID
   * type 1..1 MS
@@ -34,7 +34,7 @@ Description: "Uzbekistan Core RelatedPerson profile, used to represent persons r
   * use = #official
   * value 1..1 MS
 
-* identifier[passport-local] 
+* identifier[passportLocal] 
   * system 1..1 MS
   * system = $passport-local
   * type 1..1 MS
@@ -42,7 +42,7 @@ Description: "Uzbekistan Core RelatedPerson profile, used to represent persons r
   * use = #official
   * value 1..1 MS
 
-* identifier[passport-international]
+* identifier[passportInternational]
   * system 1..1 MS
   * system = $passport-international
   * type 1..1 MS
@@ -50,7 +50,7 @@ Description: "Uzbekistan Core RelatedPerson profile, used to represent persons r
   * use = #official
   * value 1..1 MS
 
-* identifier[birthcertificate]
+* identifier[birthCertificate]
   * system 1..1 MS
   * system = $birthcertificate
   * type 1..1 MS
@@ -58,7 +58,7 @@ Description: "Uzbekistan Core RelatedPerson profile, used to represent persons r
   * use = #official
   * value 1..1 MS
 
-* identifier[driverslicense]
+* identifier[driversLicense]
   * system 1..1 MS
   * system = $driverslicense
   * type 1..1 MS
@@ -66,7 +66,7 @@ Description: "Uzbekistan Core RelatedPerson profile, used to represent persons r
   * use = #official
   * value 1..1 MS
 
-* identifier[diplomaticpassport]
+* identifier[diplomaticPassport]
   * system 1..1 MS
   * system = $diplomaticpassport
   * type 1..1 MS
@@ -74,7 +74,7 @@ Description: "Uzbekistan Core RelatedPerson profile, used to represent persons r
   * use = #official
   * value 1..1 MS
 
-* identifier[healthcard]
+* identifier[healthCard]
   * system 1..1 MS
   * system = $healthcard
   * type 1..1 MS
@@ -82,7 +82,7 @@ Description: "Uzbekistan Core RelatedPerson profile, used to represent persons r
   * use = #official
   * value 1..1 MS
 
-* identifier[militaryID]
+* identifier[militaryId]
   * system 1..1 MS
   * system = $militaryID
   * type 1..1 MS
@@ -100,8 +100,8 @@ Description: "Uzbekistan Core RelatedPerson profile, used to represent persons r
   * use from TelecomUseVS (required)
 * gender MS
   * extension contains GenderOtherUZ named gender-other-2 0..1 MS
-* obeys gender-other-2
-* insert AddressRules
+* obeys uzcore-gender-other-2
+* insert IntAndUzAddressRules
 * insert HumanName
 * active MS
 * birthDate MS
@@ -113,21 +113,21 @@ Usage: #example
 Title: "example-related-person"
 Description: "Example of a related person"
 
-* identifier[national-id]
+* identifier[nationalId]
   * value = "12345678901234"
-* identifier[passport-local]
+* identifier[passportLocal]
   * value = "AA1234567"
-* identifier[passport-international]
+* identifier[passportInternational]
   * value = "IC9876543"
-* identifier[birthcertificate]
+* identifier[birthCertificate]
   * value = "BC-2025-00001"
-* identifier[driverslicense]
+* identifier[driversLicense]
   * value = "DL-987654"
-* identifier[diplomaticpassport]
+* identifier[diplomaticPassport]
   * value = "DP-123456"
-* identifier[healthcard]
+* identifier[healthCard]
   * value = "HC-555-777"
-* identifier[militaryID]
+* identifier[militaryId]
   * value = "MI-2025-001"
 
 * patient = Reference(example-david)

@@ -11,21 +11,6 @@ Description: "Uzbekistan Core PractitionerRole profile, used to define roles of 
 * identifier MS
 * identifier.use from IdentifierUseVS (required)
 * identifier.type from IdentifierTypeVS (required)
-* identifier ^slicing.discriminator.type = #value
-* identifier ^slicing.discriminator.path = "system"
-* identifier ^slicing.rules = #open
-* identifier ^slicing.description = "Ways a practitioner can be identified"
-* identifier ^slicing.ordered = false
-* identifier contains national-id 0..1 MS
-
-* identifier[national-id]
-  * ^short = "Персональный идентификационный номер физического лица"
-  * system 1..1 MS
-  * system = $organization-argoz-id-system
-  * type 1..1 MS
-  * type = $identifier-type#NI "National unique individual identifier"
-  * use = #official
-  * value 1..1 MS
 
 * active and practitioner and organization and code and specialty and location and healthcareService MS
 
@@ -35,8 +20,8 @@ Description: "Uzbekistan Core PractitionerRole profile, used to define roles of 
 * specialty.coding ^slicing.description = "Specialization of the practitioner"
 * specialty.coding ^slicing.ordered = false
 
-* specialty.coding contains dhp-specialty 0..1 MS
-* specialty.coding[dhp-specialty]
+* specialty.coding contains dhpSpecialty 0..1 MS
+* specialty.coding[dhpSpecialty]
   * system 1..1 MS
   * system = "https://terminology.dhp.uz/fhir/core/CodeSystem/profession-specialization-cs"
   * code 1..1 MS
@@ -60,8 +45,6 @@ InstanceOf: UZCorePractitionerRole
 Description: "Example of a practitioner's role"
 Usage: #example
 * language = #uz
-* identifier[national-id]
-  * value = "9876543210"
 * active = true
 * practitioner = Reference(Practitioner/example-practitioner)
 * organization = Reference(Organization/example-organization)

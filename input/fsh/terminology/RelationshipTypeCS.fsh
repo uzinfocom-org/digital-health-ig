@@ -1,6 +1,6 @@
 CodeSystem: RelationshipTypeCS
 Id: relationship-type-cs
-Title: "Relationship Types"
+Title: "Relationship type"
 Description: "Relationship types in Uzbekistan"
 * ^url = "https://terminology.dhp.uz/fhir/core/CodeSystem/relationship-type-cs"
 * ^status = #active

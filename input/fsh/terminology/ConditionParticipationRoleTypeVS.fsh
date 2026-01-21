@@ -5,7 +5,7 @@ Description: "Types of participation role in Uzbekistan"
 * ^url = "https://terminology.dhp.uz/fhir/core/ValueSet/condition-participation-role-vs"
 * ^experimental = true
 * ^extension[0].url = $valueset-supplement
-* ^extension[=].valueCanonical = Canonical(ProvenanceParticipationRoleTypeCS )
+* ^extension[=].valueCanonical = Canonical(ProvenanceParticipationRoleTypeCS)
 * ^extension[+].url = $valueset-supplement
 * ^extension[=].valueCanonical = Canonical(DicomDCMCS)
 * ^extension[+].url = $valueset-supplement

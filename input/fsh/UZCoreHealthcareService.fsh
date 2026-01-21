@@ -57,6 +57,6 @@ Usage: #example
       * valueString = "ИГХ специфические"
   * extension[translation][+]
     * extension[lang][0]
-      * valueCode = #en
+      * valueCode = #kaa
     * extension[content][+]
-      * valueString = "IHC specific"
+      * valueString = "IHC ushın arnawlı"

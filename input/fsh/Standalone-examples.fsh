@@ -9,22 +9,3 @@ Description: "Example of a patient"
 * name
   * family = "Ибрагимов"
   * given = "Алишер"
-
-Instance: example-condition
-InstanceOf: Condition
-Usage: #example
-Title: "example-condition"
-Description: "Example of a condition"
-* subject = Reference(example-patient)
-* code = $icd-10#I10 "Essential (primary) hypertension"
-* clinicalStatus = $condition-clinical#active
-* verificationStatus = $condition-ver-status#confirmed
-
-Instance: example-careplan
-InstanceOf: CarePlan
-Usage: #example
-Title: "example-careplan"
-Description: "Example of a careplan"
-* status = $careplan-request-status#active
-* intent = $care-plan-intent#plan
-* subject = Reference(example-patient)

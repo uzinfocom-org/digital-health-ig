@@ -7,11 +7,11 @@
   <channel>
     <title>DHP Implementation Guide Packages</title>
     <description>FHIR Packages published for DHP</description>
-    <link>https://vadi2.github.io/DHP-temp/package-feed.xml</link>
+    <link>https://raw.githubusercontent.com/uzinfocom-org/digital-health-ig/refs/heads/main/docs/package-feed.xml</link>
     <generator>Manual</generator>
-    <lastBuildDate>Wed, 27 Aug 2025 12:00:00 GMT</lastBuildDate>
-    <atom:link href="https://vadi2.github.io/DHP-temp/package-feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 27 Aug 2025 12:00:00 GMT</pubDate>
+    <lastBuildDate>Fri, 05 Sep 2025 08:17:22 +0000</lastBuildDate>
+    <atom:link href="https://raw.githubusercontent.com/uzinfocom-org/digital-health-ig/refs/heads/main/docs/package-feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Wed, 27 Aug 2025 12:00:00 +0000</pubDate>
     <language>en</language>
     
      <item>
@@ -19,7 +19,7 @@
        <description>DHP Implementation Guide Package version 0.2.0</description>
        <link>https://github.com/vadi2/DHP-temp/releases/download/0.2.0/package.tgz</link>
        <guid isPermaLink="true">https://github.com/vadi2/DHP-temp/releases/download/0.2.0/package.tgz</guid>
-       <dc:creator>vadi2</dc:creator>
+       <dc:creator>Vadim Peretokin</dc:creator>
        <fhir:version>5.0.0</fhir:version>
        <fhir:kind>IG</fhir:kind>
        <pubDate>Wed, 27 Aug 2025 12:00:00 +0000</pubDate>
@@ -30,7 +30,7 @@
        <description>DHP Implementation Guide Package version 0.3.0</description>
        <link>https://github.com/vadi2/DHP-temp/releases/download/0.3.0/package.tgz</link>
        <guid isPermaLink="true">https://github.com/vadi2/DHP-temp/releases/download/0.3.0/package.tgz</guid>
-       <dc:creator>vadi2</dc:creator>
+       <dc:creator>Vadim Peretokin</dc:creator>
        <fhir:version>5.0.0</fhir:version>
        <fhir:kind>IG</fhir:kind>
        <pubDate>Fri, 05 Sep 2025 08:17:22 +0000</pubDate>
