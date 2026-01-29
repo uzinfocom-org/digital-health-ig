@@ -8,48 +8,193 @@ Description: "Code system defining laboratory observation panels and individual 
 * ^property[=].uri = "http://hl7.org/fhir/concept-properties#parent"
 * ^property[=].type = #code
 
-* concept[0] = #test-0001-00001 "Umumiy qon tahlili"
-* concept[+] = #test-0001-00002 "WBC"
-  * property[0].code = #parent
-  * property[=].valueCode = #test-0001-00001
-* concept[+] = #test-0001-00003 "Neu#"
-  * property[0].code = #parent
-  * property[=].valueCode = #test-0001-00001
-* concept[+] = #test-0001-00004 "Lym#"
-  * property[0].code = #parent
-  * property[=].valueCode = #test-0001-00001
-* concept[+] = #test-0001-00005 "Mon#"
-  * property[0].code = #parent
-  * property[=].valueCode = #test-0001-00001
-* concept[+] = #test-0001-00006 "Eos#"
-  * property[0].code = #parent
-  * property[=].valueCode = #test-0001-00001
-* concept[+] = #test-0001-00007 "Bas#"
-  * property[0].code = #parent
-  * property[=].valueCode = #test-0001-00001
-* concept[+] = #test-0001-00008 "Neu%"
-  * property[0].code = #parent
-  * property[=].valueCode = #test-0001-00001
-* concept[+] = #test-0001-00009 "Lym%"
-  * property[0].code = #parent
-  * property[=].valueCode = #test-0001-00001
-* concept[+] = #test-0001-00010 "Mon%"
-  * property[0].code = #parent
-  * property[=].valueCode = #test-0001-00001
-* concept[+] = #test-0001-00011 "Eos%"
-  * property[0].code = #parent
-  * property[=].valueCode = #test-0001-00001
-* concept[+] = #test-0001-00012 "Bas%"
-  * property[0].code = #parent
-  * property[=].valueCode = #test-0001-00001
-* concept[+] = #test-0001-00013 "RBC"
-  * property[0].code = #parent
-  * property[=].valueCode = #test-0001-00001
-* concept[+] = #test-0001-00014 "HGB"
-  * property[0].code = #parent
-  * property[=].valueCode = #test-0001-00001
-
-/*
+* #test-0001-00001 "Umumiy qon tahlili"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Общий анализ крови"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "CBC panel"
+* #test-0001-00002 "WBC"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "WBC"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Leukocytes [#/volume] in Blood by Automated count"
+  * ^property[0].code = #parent
+  * ^property[=].valueCode = #test-0001-00001
+* #test-0001-00003 "Neu#"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Neu#"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Neutrophils [#/volume] in Blood by Automated count"
+  * ^property[0].code = #parent
+  * ^property[=].valueCode = #test-0001-00001
+* #test-0001-00004 "Lym#"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Lym#"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Lymphocytes [#/volume] in Blood by Automated count"
+  * ^property[0].code = #parent
+  * ^property[=].valueCode = #test-0001-00001
+* #test-0001-00005 "Mon#"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Mon#"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Monocytes [#/volume] in Blood by Automated count"
+  * ^property[0].code = #parent
+  * ^property[=].valueCode = #test-0001-00001
+* #test-0001-00006 "Eos#"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Eos#"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Eosinophils [#/volume] in Blood by Automated count"
+  * ^property[0].code = #parent
+  * ^property[=].valueCode = #test-0001-00001
+* #test-0001-00007 "Bas#"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Bas#"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Basophils [#/volume] in Blood by Automated count"
+  * ^property[0].code = #parent
+  * ^property[=].valueCode = #test-0001-00001
+* #test-0001-00008 "Neu%"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Neu%"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Neutrophils/100 leukocytes in Blood by Automated count"
+  * ^property[0].code = #parent
+  * ^property[=].valueCode = #test-0001-00001
+* #test-0001-00009 "Lym%"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Lym%"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Lymphocytes/100 leukocytes in Blood by Automated count"
+  * ^property[0].code = #parent
+  * ^property[=].valueCode = #test-0001-00001
+* #test-0001-00010 "Mon%"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Mon%"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Monocytes/100 leukocytes in Blood by Automated count"
+  * ^property[0].code = #parent
+  * ^property[=].valueCode = #test-0001-00001
+* #test-0001-00011 "Eos%"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Eos%"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Eosinophils/100 leukocytes in Blood by Automated count"
+  * ^property[0].code = #parent
+  * ^property[=].valueCode = #test-0001-00001
+* #test-0001-00012 "Bas%"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Bas%"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Basophils/100 leukocytes in Blood by Automated count"
+  * ^property[0].code = #parent
+  * ^property[=].valueCode = #test-0001-00001
+* #test-0001-00013 "RBC"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "RBC"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Erythrocytes [#/volume] in Blood by Automated count"
+  * ^property[0].code = #parent
+  * ^property[=].valueCode = #test-0001-00001
+* #test-0001-00014 "HGB"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "HGB"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Hemoglobin [Mass/volume] in Blood"
+  * ^property[0].code = #parent
+  * ^property[=].valueCode = #test-0001-00001
+* #test-0001-00015 "HCT"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "HCT"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Hematocrit [Volume Fraction] of Blood by Automated count"
+  * ^property[0].code = #parent
+  * ^property[=].valueCode = #test-0001-00001
+* #test-0001-00016 "MCV"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "MCV"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "MCV [Entitic volume] by Automated count"
+  * ^property[0].code = #parent
+  * ^property[=].valueCode = #test-0001-00001
+* #test-0001-00017 "MCH"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "MCH"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "MCH [Entitic mass] by Automated count"
+  * ^property[0].code = #parent
+  * ^property[=].valueCode = #test-0001-00001
+* #test-0001-00018 "MCHC"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "MCHC"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "MCHC [Mass/volume] by Automated count"
+  * ^property[0].code = #parent
+  * ^property[=].valueCode = #test-0001-00001
+* #test-0001-00019 "RDW-CV"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "RDW-CV"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Erythrocyte distribution width (RDW-CV) [Ratio] by Automated count"
+  * ^property[0].code = #parent
+  * ^property[=].valueCode = #test-0001-00001
+* #test-0001-00020 "RDW-SD"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "RDW-SD"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Erythrocyte distribution width (RDW-SD) [Entitic volume] by Automated count"
+  * ^property[0].code = #parent
+  * ^property[=].valueCode = #test-0001-00001
+* #test-0001-00021 "PLT"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "PLT"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Platelets [#/volume] in Blood by Automated count"
+  * ^property[0].code = #parent
+  * ^property[=].valueCode = #test-0001-00001
+* #test-0001-00022 "MPV"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "MPV"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Mean platelet volume [Entitic volume] in Blood by Automated count"
+  * ^property[0].code = #parent
+  * ^property[=].valueCode = #test-0001-00001
+* #test-0001-00023 "PDW"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "PDW"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Platelet distribution width [Entitic volume] in Blood by Automated count"
+  * ^property[0].code = #parent
+  * ^property[=].valueCode = #test-0001-00001
+* #test-0001-00024 "PCT"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "PCT"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Plateletcrit [Volume Fraction] of Blood by Automated count"
+  * ^property[0].code = #parent
+  * ^property[=].valueCode = #test-0001-00001
+* #test-0001-00025 "P-LCC"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "P-LCC"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Platelet large cell count [#/volume] in Blood by Automated count"
+  * ^property[0].code = #parent
+  * ^property[=].valueCode = #test-0001-00001
+* #test-0001-00026 "P-LCR"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "P-LCR"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Platelet large cell ratio [#] in Blood by Automated count"
+  * ^property[0].code = #parent
+  * ^property[=].valueCode = #test-0001-00001
+* #test-0001-00027 "ECHT (eritrotsitlarning cho'kish tezligi)"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "СОЭ(скорость оседания эритроцитов)"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Erythrocyte sedimentation rate (ESR) by Westergren method"
+  * ^property[0].code = #parent
+  * ^property[=].valueCode = #test-0001-00001
 * #test-0002-00001 "Qon koagulogrammasi (qon ivish ko'rsatkichlari)"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Коагулограммы крови"
@@ -1626,7 +1771,7 @@ Description: "Code system defining laboratory observation panels and individual 
   * ^property[0].code = #parent
   * ^property[=].valueCode = #test-00015-00001
 
-*/
+
 
 
 
