@@ -24,6 +24,8 @@ Description: "Uzbekistan Core Procedure Profile, used for documenting an action 
 * reason MS
 * bodySite MS
 * outcome MS
+* note MS
+* used MS
 
 * status from ProcedureEventStatusVS (required)
 * category from ProcedureCategoryVS (extensible)
@@ -47,13 +49,14 @@ Usage: #example
 Title: "Example of a Therapeutic Leg Massage Procedure"
 Description: "An example instance of a UZ Core Procedure profile for a therapeutic massage of the left leg."
 
+* identifier[0].system = "https://mis.dmed.uz"
 * identifier[0].value = "proc-0001"
 * basedOn[0] = Reference(example-careplan) "CarePlan #1"
 * status = procedure-event-status-cs#completed "Completed"
 * category[0] = procedure-category-cs#proce-0001 "Physical therapy procedure"
 * code[0].coding = procedure-code-cs#proce-0001-00049 "Therapeutic massage"
 * code[0].text = "Therapeutic massage of right foot"
-* subject = Reference(example-patient) "David Davidov"
+* subject = Reference(example-david) "David Davidov"
 * encounter = Reference(example-encounter) "Outpatient Visit"
 * occurrencePeriod[0]
   * start = "2025-05-15T08:00:00Z"
@@ -64,5 +67,7 @@ Description: "An example instance of a UZ Core Procedure profile for a therapeut
   * actor = Reference(example-practitioner) "Paul Ivanov, PT"
 * location = Reference(example-location) "Physiotherapy Room 2"
 * bodySite = $sct#7769000 "Right foot"
-* reason = Reference(example-condition) "Aching right foot"
+* reason = Reference(example-disability) "Aching right foot"
 * outcome = $sct#385669000 "Successful"
+* note[0].text = "Therapeutic massage of the right foot completed according to the care plan. No adverse reactions noted."
+* used = Reference(example-medication)

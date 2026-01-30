@@ -76,6 +76,12 @@
           "context" : "A representation of the meaning of the code in the system, following the rules of the system.",
           "source" : "Successful",
           "target" : null
+        },
+        {
+          "id" : "Annotation.text",
+          "context" : "The text of the annotation in markdown format.",
+          "source" : "Therapeutic massage of the right foot completed according to the care plan. No adverse reactions noted.",
+          "target" : null
         }
       ]
     }

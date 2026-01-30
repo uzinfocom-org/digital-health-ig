@@ -11,16 +11,21 @@ msgstr ""
 
 # The name of the organization or individual responsible for the release and ongoing maintenance of the value set.
 #: ValueSet.publisher
-msgid "Uzinfocom LLC"
+msgid "Ministry of Health of the Republic of Uzbekistan"
 msgstr ""
 
 # The name of an individual to contact.
 #: ContactDetail.name
-msgid "Uzinfocom LLC"
+msgid "Ministry of Health of the Republic of Uzbekistan"
 msgstr ""
 
 # A free text natural language description of the value set from a consumer's perspective. The textual description specifies the span of meanings for concepts to be included within the Value Set Expansion, and also may specify the intended use and limitations of the Value Set.
 #: ValueSet.description
 msgid "Procedure code ValueSet with translations in English, Russian and Uzbek"
+msgstr ""
+
+# A representation of the meaning of the code in the system, following the rules of the system.
+#: Coding.display
+msgid "Uzbekistan"
 msgstr ""
 

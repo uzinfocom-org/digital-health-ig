@@ -20,19 +20,25 @@
         {
           "id" : "ConceptMap.publisher",
           "context" : "The name of the organization or individual responsible for the release and ongoing maintenance of the concept map.",
-          "source" : "Uzinfocom LLC",
+          "source" : "Ministry of Health of the Republic of Uzbekistan",
           "target" : null
         },
         {
           "id" : "ContactDetail.name",
           "context" : "The name of an individual to contact.",
-          "source" : "Uzinfocom LLC",
+          "source" : "Ministry of Health of the Republic of Uzbekistan",
           "target" : null
         },
         {
           "id" : "ConceptMap.description",
           "context" : "A free text natural language description of the concept map from a consumer's perspective.",
           "source" : "Maps local UZ procedure code to SNOMED CT for Procedure.code",
+          "target" : null
+        },
+        {
+          "id" : "Coding.display",
+          "context" : "A representation of the meaning of the code in the system, following the rules of the system.",
+          "source" : "Uzbekistan",
           "target" : null
         },
         {

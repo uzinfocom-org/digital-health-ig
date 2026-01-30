@@ -11,17 +11,22 @@ msgstr ""
 
 # The name of the organization or individual responsible for the release and ongoing maintenance of the code system.
 #: CodeSystem.publisher
-msgid "Uzinfocom LLC"
+msgid "Ministry of Health of the Republic of Uzbekistan"
 msgstr ""
 
 # The name of an individual to contact.
 #: ContactDetail.name
-msgid "Uzinfocom LLC"
+msgid "Ministry of Health of the Republic of Uzbekistan"
 msgstr ""
 
 # A free text natural language description of the code system from a consumer's perspective.
 #: CodeSystem.description
 msgid "Procedure category CodeSystem with translations in English, Russian and Uzbek"
+msgstr ""
+
+# A representation of the meaning of the code in the system, following the rules of the system.
+#: Coding.display
+msgid "Uzbekistan"
 msgstr ""
 
 # A human readable string that is the recommended default way to present this concept to a user.

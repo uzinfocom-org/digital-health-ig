@@ -21,14 +21,14 @@
              <notes>
                <note id="n1">The name of the organization or individual responsible for the release and ongoing maintenance of the value set.</note>
              </notes>
-        <source>Uzinfocom LLC</source>
+        <source>Ministry of Health of the Republic of Uzbekistan</source>
         <target></target>
       </trans-unit>
       <trans-unit id="ValueSet-procedure-category-vs" resname="ContactDetail.name">
              <notes>
                <note id="n1">The name of an individual to contact.</note>
              </notes>
-        <source>Uzinfocom LLC</source>
+        <source>Ministry of Health of the Republic of Uzbekistan</source>
         <target></target>
       </trans-unit>
       <trans-unit id="ValueSet-procedure-category-vs" resname="ValueSet.description">
@@ -36,6 +36,13 @@
                <note id="n1">A free text natural language description of the value set from a consumer's perspective. The textual description specifies the span of meanings for concepts to be included within the Value Set Expansion, and also may specify the intended use and limitations of the Value Set.</note>
              </notes>
         <source>Procedure category ValueSet with translations in English, Russian and Uzbek</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ValueSet-procedure-category-vs" resname="Coding.display">
+             <notes>
+               <note id="n1">A representation of the meaning of the code in the system, following the rules of the system.</note>
+             </notes>
+        <source>Uzbekistan</source>
         <target></target>
       </trans-unit>
     </body>

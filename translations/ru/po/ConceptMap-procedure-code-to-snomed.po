@@ -11,17 +11,22 @@ msgstr ""
 
 # The name of the organization or individual responsible for the release and ongoing maintenance of the concept map.
 #: ConceptMap.publisher
-msgid "Uzinfocom LLC"
+msgid "Ministry of Health of the Republic of Uzbekistan"
 msgstr ""
 
 # The name of an individual to contact.
 #: ContactDetail.name
-msgid "Uzinfocom LLC"
+msgid "Ministry of Health of the Republic of Uzbekistan"
 msgstr ""
 
 # A free text natural language description of the concept map from a consumer's perspective.
 #: ConceptMap.description
 msgid "Maps local UZ procedure code to SNOMED CT for Procedure.code"
+msgstr ""
+
+# A representation of the meaning of the code in the system, following the rules of the system.
+#: Coding.display
+msgid "Uzbekistan"
 msgstr ""
 
 # The display for the code. The display is only provided to help editors when editing the concept map.

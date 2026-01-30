@@ -20,14 +20,14 @@
         {
           "id" : "StructureDefinition.publisher",
           "context" : "The name of the organization or individual responsible for the release and ongoing maintenance of the structure definition.",
-          "source" : "Uzinfocom LLC",
-          "target" : "Uzinfocom LLC"
+          "source" : "Ministry of Health of the Republic of Uzbekistan",
+          "target" : "Ministry of Health of the Republic of Uzbekistan"
         },
         {
           "id" : "StructureDefinition.contact.name",
           "context" : "The name of an individual to contact.",
-          "source" : "Uzinfocom LLC",
-          "target" : "Uzinfocom LLC"
+          "source" : "Ministry of Health of the Republic of Uzbekistan",
+          "target" : "Ministry of Health of the Republic of Uzbekistan"
         }
       ]
     }

@@ -9,3 +9,19 @@ Description: "Example of a patient"
 * name
   * family = "Ибрагимов"
   * given = "Алишер"
+
+Instance: example-careplan
+InstanceOf: CarePlan
+Usage: #example
+Title: "example-careplan"
+Description: "Example of a careplan"
+* status = #active
+* intent = #plan
+* subject = Reference(example-david)
+
+Instance: example-medication
+InstanceOf: Medication
+Usage: #example
+Title: "example-medication"
+Description: "Example of a medication"
+* identifier.value  = "medic-001"

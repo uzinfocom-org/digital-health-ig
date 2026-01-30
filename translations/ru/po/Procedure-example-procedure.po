@@ -59,3 +59,8 @@ msgstr ""
 msgid "Successful"
 msgstr ""
 
+# The text of the annotation in markdown format.
+#: Annotation.text
+msgid "Therapeutic massage of the right foot completed according to the care plan. No adverse reactions noted."
+msgstr ""
+

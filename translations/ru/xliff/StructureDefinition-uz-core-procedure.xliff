@@ -21,15 +21,15 @@
              <notes>
                <note id="n1">The name of the organization or individual responsible for the release and ongoing maintenance of the structure definition.</note>
              </notes>
-        <source>Uzinfocom LLC</source>
-        <target>Uzinfocom LLC</target>
+        <source>Ministry of Health of the Republic of Uzbekistan</source>
+        <target>Ministry of Health of the Republic of Uzbekistan</target>
       </trans-unit>
       <trans-unit id="StructureDefinition-uz-core-procedure" resname="StructureDefinition.contact.name">
              <notes>
                <note id="n1">The name of an individual to contact.</note>
              </notes>
-        <source>Uzinfocom LLC</source>
-        <target>Uzinfocom LLC</target>
+        <source>Ministry of Health of the Republic of Uzbekistan</source>
+        <target>Ministry of Health of the Republic of Uzbekistan</target>
       </trans-unit>
     </body>
   </file>
