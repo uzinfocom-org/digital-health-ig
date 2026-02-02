@@ -1,8 +1,8 @@
 Instance: substance-to-snomed
 InstanceOf: ConceptMap
 Usage: #definition
-Title: "UZ local allergy substance → SNOMED CT"
-Description: "Maps local UZ ReactionSubstanceCS codes to SNOMED CT for AllergyIntolerance.reaction.substance."
+Title: "Allergy substance to SNOMED CT"
+Description: "Maps local UZ ReactionSubstanceCS codes to SNOMED CT."
 * url = "https://terminology.dhp.uz/fhir/core/ConceptMap/substance-to-snomed"
 * name = "AllergySubstanceToSnomed"
 * status = #draft

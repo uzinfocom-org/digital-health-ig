@@ -1,8 +1,8 @@
 Instance: manifestations-to-snomed
 InstanceOf: ConceptMap
 Usage: #definition
-Title: "UZ local allergy manifestations → SNOMED CT"
-Description: "Maps local UZ ReactionManifestationCS codes to SNOMED CT for AllergyIntolerance.reaction.manifestation."
+Title: "Allergy manifestations to SNOMED CT"
+Description: "Maps local UZ ReactionManifestationCS codes to SNOMED CT."
 * url = "https://terminology.dhp.uz/fhir/core/ConceptMap/manifestations-to-snomed"
 * name = "AllergyManifestationsToSnomed"
 * status = #draft
