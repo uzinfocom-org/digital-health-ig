@@ -1,8 +1,8 @@
 Instance: allergen-code-to-snomed
 InstanceOf: ConceptMap
 Usage: #definition
-Title: "UZ local allergen codes → SNOMED CT"
-Description: "Maps local UZ allergen codes to SNOMED CT for AllergyIntolerance.code"
+Title: "Allergen codes to SNOMED CT"
+Description: "Maps local UZ allergen codes to SNOMED CT."
 * url = "https://terminology.dhp.uz/fhir/core/ConceptMap/allergen-code-to-snomed"
 * name = "AllergenCodeToSnomed"
 * status = #draft

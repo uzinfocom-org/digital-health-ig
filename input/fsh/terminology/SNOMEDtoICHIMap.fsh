@@ -1,8 +1,8 @@
 Instance: snomed-to-ichi-procedures
 InstanceOf: ConceptMap
 Usage: #definition
-Title: "SNOMED CT to ICHI Procedures Map"
-Description: "Maps clinical SNOMED CT codes to ICHI statistical codes for reimbursement reporting."
+Title: "SNOMED CT to ICHI Procedures example"
+Description: "Maps clinical SNOMED CT codes to ICHI statistical codes for reimbursement reporting - a sample for demo purposes."
 
 * url = "https://terminology.dhp.uz/fhir/core/ConceptMap/snomed-to-ichi-procedures"
 * version = "1.0.0"
