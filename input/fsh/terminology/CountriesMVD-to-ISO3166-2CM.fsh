@@ -1,8 +1,8 @@
 Instance: countries-mvd-to-iso3166-alpha2-cm
 InstanceOf: ConceptMap
 Usage: #definition
-Title: "Countries Digital MVD to ISO 3166-1 Alpha-2 Mapping"
-Description: "ConceptMap for translating Uzbekistan MVD numeric codes to ISO 3166-1 alpha-2 (2-letter) country codes."
+Title: "UZ MVD to ISO 3166-1 Alpha-2"
+Description: "Maps Uzbekistan MVD numeric codes to ISO 3166-1 alpha-2 (2-letter) country codes."
 * name = "CountriesMVDtoISO3166Alpha2CM"
 * url = "https://terminology.dhp.uz/fhir/core/ConceptMap/countries-mvd-to-iso3166-alpha2-cm"
 * purpose = "To facilitate interoperability between systems using MVD numeric country codes and standard ISO 3166-1 alpha-2 codes."
