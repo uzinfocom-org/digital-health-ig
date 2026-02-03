@@ -37,7 +37,7 @@ Usage: #example
 Description: "Example ServiceRequest for CBC (Umumiy qon tahlili) order"
 * status = #active
 * intent = #order
-* code = observation-lab-research-codes-cs#A "CBC panel"
+* code = observation-lab-research-codes-cs#lab-A "CBC panel"
 * subject = Reference(Patient/example-salim)
 * requester = Reference(Practitioner/example-practitioner)
 * authoredOn = "2025-11-04T08:00:00Z"
