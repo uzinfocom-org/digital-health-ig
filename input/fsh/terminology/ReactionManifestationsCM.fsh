@@ -1,8 +1,8 @@
 Instance: manifestations-to-snomed
 InstanceOf: ConceptMap
 Usage: #definition
-Title: "UZ local allergy manifestations → SNOMED CT"
-Description: "Maps local UZ ReactionManifestationCS codes to SNOMED CT for AllergyIntolerance.reaction.manifestation."
+Title: "Allergy manifestations to SNOMED CT"
+Description: "Maps local UZ ReactionManifestationCS codes to SNOMED CT."
 * url = "https://terminology.dhp.uz/fhir/core/ConceptMap/manifestations-to-snomed"
 * name = "AllergyManifestationsToSnomed"
 * status = #draft
@@ -28,9 +28,9 @@ Description: "Maps local UZ ReactionManifestationCS codes to SNOMED CT for Aller
 
 * group.element[+].code = #aller-0004-00003
 * group.element[=].display = "Burun qichishishi"
-* group.element[=].target[+].code = #418689008
-* group.element[=].target[=].display = "Itchy nose"
-* group.element[=].target[=].relationship = #source-is-broader-than-target
+* group.element[=].target[+].code = #301194006
+* group.element[=].target[=].display = "Finding of sensation of nose"
+* group.element[=].target[=].relationship = #source-is-narrower-than-target
 
 * group.element[+].code = #aller-0004-00004
 * group.element[=].display = "Burunda polip borligi"
@@ -41,8 +41,8 @@ Description: "Maps local UZ ReactionManifestationCS codes to SNOMED CT for Aller
 * group.element[+].code = #aller-0004-00005
 * group.element[=].display = "Burundan toza rangsiz suyuqlik kelishi"
 * group.element[=].target[+].code = #277233008
-* group.element[=].target[=].display = "Clear, colorless discharge from the nose"
-* group.element[=].target[=].relationship = #equivalent
+* group.element[=].target[=].display = "Anterior rhinorrhea"
+* group.element[=].target[=].relationship = #source-is-narrower-than-target
 
 * group.element[+].code = #aller-0004-00006
 * group.element[=].display = "Xurrak otish"
@@ -52,8 +52,8 @@ Description: "Maps local UZ ReactionManifestationCS codes to SNOMED CT for Aller
 
 * group.element[+].code = #aller-0004-00007
 * group.element[=].display = "Xid bilishning pasayishi"
-* group.element[=].target[+].code = #44169009
-* group.element[=].target[=].display = "Loss of sense of smell"
+* group.element[=].target[+].code = #83156004
+* group.element[=].target[=].display = "Sense of smell impaired"
 * group.element[=].target[=].relationship = #equivalent
 
 * group.element[+].code = #aller-0004-00008
@@ -94,9 +94,9 @@ Description: "Maps local UZ ReactionManifestationCS codes to SNOMED CT for Aller
 
 * group.element[+].code = #aller-0005-00006
 * group.element[=].display = "Burindan tomog'iga suyuqlik Oqishi"
-* group.element[=].target[+].code = #64531003
-* group.element[=].target[=].display = "Nasal discharge into the throat"
-* group.element[=].target[=].relationship = #source-is-broader-than-target
+* group.element[=].target[+].code = #75803007
+* group.element[=].target[=].display = "Posterior rhinorrhea"
+* group.element[=].target[=].relationship = #equivalent
 
 * group.element[+].code = #aller-0005-00007
 * group.element[=].display = "Tomoq qurib ketishi"
@@ -136,8 +136,8 @@ Description: "Maps local UZ ReactionManifestationCS codes to SNOMED CT for Aller
 
 * group.element[+].code = #aller-0006-00004
 * group.element[=].display = "Xavo yetishmasligi"
-* group.element[=].target[+].code = #60845006
-* group.element[=].target[=].display = "Shortness of breath"
+* group.element[=].target[+].code = #267036007
+* group.element[=].target[=].display = "Dyspnea"
 * group.element[=].target[=].relationship = #equivalent
 
 * group.element[+].code = #aller-0006-00006

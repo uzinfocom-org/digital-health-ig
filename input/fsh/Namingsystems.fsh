@@ -445,9 +445,28 @@ Usage: #definition
 * uniqueId[=].preferred = true
 * uniqueId[=].comment = "Canonical URI to be used as Identifier.system for Pharmaceutical Agency drug identifiers."
 */
+Instance: who-ichi
+InstanceOf: NamingSystem
+Description: "WHO International Classification of Health Interventions (ICHI)"
+Usage: #definition
+* url = "https://terminology.dhp.uz/fhir/core/NamingSystem/who-ichi"
+* name = "WhoIchiCodeSystem"
+* status = #active
+* kind = #codesystem
+* date = "2026-01-30"
+* publisher = "World Health Organization"
+* responsible = "World Health Organization"
+* description = "WHO International Classification of Health Interventions (ICHI) is a common tool for reporting and analyzing health interventions for clinical and statistical purposes."
+* jurisdiction = urn:iso:std:iso:3166#001 "World"
+* usage = "Used to classify health interventions for statistical reporting and clinical documentation."
+* uniqueId[0].type = #uri
+* uniqueId[=].value = "http://id.who.int/icd/release/11/beta/ichi"
+* uniqueId[=].preferred = true
+* uniqueId[=].comment = "WHO ICHI beta release URI"
+
 Instance: patient-id-uzb-pension-number
 InstanceOf: NamingSystem
-Description: "The pension number identifier is used to determine whether a patient is registered in the pension system and to identify the type of pension received." 
+Description: "The pension number identifier is used to determine whether a patient is registered in the pension system and to identify the type of pension received."
 Usage: #definition
 * url = "https://terminology.dhp.uz/fhir/core/NamingSystem/patient-id-uzb-pension-number"
 * name = "UzbekistanPensionNumberSystem"
