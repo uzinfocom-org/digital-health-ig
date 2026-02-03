@@ -34,14 +34,14 @@ Description: "Maps local UZ allergen codes to SNOMED CT."
 
 * group.element[+].code = #aller-0010-00063
 * group.element[=].display = "Yevropa uy changi kanasi"
-* group.element[=].target[+].code = #256260009
-* group.element[=].target[=].display = "European house dust mite"
+* group.element[=].target[+].code = #264401009
+* group.element[=].target[=].display = "Dermatophagoides pteronyssinus"
 * group.element[=].target[=].relationship = #equivalent
 
 * group.element[+].code = #aller-0010-00085
 * group.element[=].display = "Xamirturushlar"
 * group.element[=].target[+].code = #23988000
-* group.element[=].target[=].display = "Molds mushrooms"
+* group.element[=].target[=].display = "Mold spore"
 * group.element[=].target[=].relationship = #equivalent
 
 * group.element[+].code = #aller-0010-00101
@@ -59,8 +59,8 @@ Description: "Maps local UZ allergen codes to SNOMED CT."
 * group.element[+].code = #aller-0010-00133
 * group.element[=].display = "Ziravorlar"
 * group.element[=].target[+].code = #227374009
-* group.element[=].target[=].display = "Spices"
-* group.element[=].target[=].relationship = #equivalent
+* group.element[=].target[=].display = "Herbs and spices"
+* group.element[=].target[=].relationship = #source-is-narrower-than-target
 
 * group.element[+].code = #aller-0010-00141
 * group.element[=].display = "Mevalar"
@@ -161,7 +161,7 @@ Description: "Maps local UZ allergen codes to SNOMED CT."
 * group.element[+].code = #aller-0010-00331
 * group.element[=].display = "Metallga allergiya"
 * group.element[=].target[+].code = #1155942004
-* group.element[=].target[=].display = "Allergy to metal"
+* group.element[=].target[=].display = "Allergy to metal and/or metal compound"
 * group.element[=].target[=].relationship = #equivalent
 
 * group.element[+].code = #aller-0010-00332
@@ -185,7 +185,7 @@ Description: "Maps local UZ allergen codes to SNOMED CT."
 * group.element[+].code = #aller-0010-00335
 * group.element[=].display = "Kofeinli ichimlik"
 * group.element[=].target[+].code = #792905007
-* group.element[=].target[=].display = "Caffeined beverage"
+* group.element[=].target[=].display = "Caffeinated beverage"
 * group.element[=].target[=].relationship = #equivalent
 
 * group.element[+].code = #aller-0010-00336
@@ -193,19 +193,17 @@ Description: "Maps local UZ allergen codes to SNOMED CT."
 * group.element[=].target[+].code = #818989004
 * group.element[=].target[=].display = "Sugar sweetened beverage"
 * group.element[=].target[=].relationship = #equivalent
-// 441900009 is just "Chemical" substance, not an allergy propensity. Using broader "Allergic disposition" instead.
 * group.element[+].code = #aller-0010-00337
 * group.element[=].display = "Kimyoviy modda allergiyasi"
 * group.element[=].target[+].code = #609328004
 * group.element[=].target[=].display = "Allergic disposition"
 * group.element[=].target[=].relationship = #source-is-narrower-than-target
 
-// 417982003 "Allergy to cosmetic" is inactive. Using 200843008 which is a condition (dermatitis), not a propensity.
 * group.element[+].code = #aller-0010-00338
 * group.element[=].display = "Kosmetikaga allergiya"
 * group.element[=].target[+].code = #200843008
 * group.element[=].target[=].display = "Allergic contact dermatitis caused by cosmetic"
-* group.element[=].target[=].relationship = #source-is-narrower-than-target
+* group.element[=].target[=].relationship = #related-to
 
 * group.element[+].code = #aller-0010-00289
 * group.element[=].display = "Hayvonlarga allergiya"
@@ -231,7 +229,6 @@ Description: "Maps local UZ allergen codes to SNOMED CT."
 * group.element[=].target[=].display = "Allergy to sulfonamide antibiotic"
 * group.element[=].target[=].relationship = #equivalent
 
-// 294221004 "Allergy to muscle relaxants" is inactive. Using broader 416098002 "Drug allergy".
 * group.element[+].code = #aller-0010-00340
 * group.element[=].display = "Mushak bo'shatuvchi dori allergiyasi"
 * group.element[=].target[+].code = #416098002
@@ -252,14 +249,14 @@ Description: "Maps local UZ allergen codes to SNOMED CT."
 
 * group.element[+].code = #aller-0010-00342
 * group.element[=].display = "Tibbiy ferment allergiyasi"
-* group.element[=].target[+].code = #196546001
-* group.element[=].target[=].display = "Medical enzyme allergy"
-* group.element[=].target[=].relationship = #equivalent
+* group.element[=].target[+].code = #416098002
+* group.element[=].target[=].display = "Drug allergy"
+* group.element[=].target[=].relationship = #source-is-narrower-than-target
 
 * group.element[+].code = #aller-0010-00075
 * group.element[=].display = "Ombor kanasi"
 * group.element[=].target[+].code = #84073006
-* group.element[=].target[=].display = "Storage mite"
+* group.element[=].target[=].display = "Mite"
 * group.element[=].target[=].relationship = #source-is-narrower-than-target
 
 * group.element[+].code = #aller-0010-00343
