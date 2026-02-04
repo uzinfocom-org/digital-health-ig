@@ -123,3 +123,6 @@ Alias: $v2-0487 = http://terminology.hl7.org/CodeSystem/v2-0487
 Alias: $specimen-combined = http://hl7.org/fhir/specimen-combined
 Alias: $specimen-role = http://hl7.org/fhir/specimen-role
 Alias: $v2-0916 = http://terminology.hl7.org/CodeSystem/v2-0916
+Alias: $v2-0916 = http://terminology.hl7.org/CodeSystem/v2-0916
+Alias: $v2-0487 = http://terminology.hl7.org/CodeSystem/v2-0487
+Alias: $specimen-role = http://hl7.org/fhir/specimen-role

@@ -1,6 +1,6 @@
 ### In development
 
-(No changes yet)
+Added document identifier namespace (doc) to identifier systems.
 
 ### Version 0.4.0
 

@@ -1,7 +1,7 @@
 # Конечные точки (Endpoints)
 
-- **Playground**: `playground.medcore.uz/fhir`
-- **Production**: `fhir.medcore.uz`
+- **Playground**: `playground.dhp.uz/fhir`
+- **Production**: `fhir.dhp.uz`
 
 # Безопасность и аутентификация
 
@@ -60,7 +60,7 @@ Frontend-приложение должно быть зарегистрирова
 1. **Перенаправьте пользователя на frontend SSO:**
 
 ```
-GET sso.medcore.uz
+GET sso.dhp.uz
 ```
 
 **Параметры**:

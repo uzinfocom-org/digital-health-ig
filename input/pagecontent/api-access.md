@@ -1,7 +1,7 @@
 # Endpoints
 
-- **Playground**: `playground.medcore.uz/fhir`
-- **Production**: `fhir.medcore.uz`
+- **Playground**: `playground.dhp.uz/fhir`
+- **Production**: `fhir.dhp.uz`
 
 
 # Security and authentication
@@ -61,7 +61,7 @@ The frontend application must be registered with the SSO server. Upon registrati
 **1 Redirect the user to the SSO frontend:**
 
 ```
-GET sso.medcore.uz
+GET sso.dhp.uz
 ```
 
 **Parameters**:
