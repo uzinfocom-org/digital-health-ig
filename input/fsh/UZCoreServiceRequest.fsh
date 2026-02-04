@@ -61,7 +61,7 @@ Description: "Example laboratory ServiceRequest instance for UZCore."
 * status = #active
 * intent = #order
 * doNotPerform = false
-* code = service-request-lab-research-codes-cs#test-0001-00001 "CBC panel"
+* code = service-request-lab-research-codes-cs#lab-A "CBC panel"
 * subject = Reference(Patient/example-salim)
 * encounter = Reference(Encounter/example-encounter)
 * occurrenceDateTime = "2026-01-16T09:30:00+05:00"
