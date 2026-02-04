@@ -61,13 +61,12 @@ Description: "Example laboratory ServiceRequest instance for UZCore."
 * status = #active
 * intent = #order
 * doNotPerform = false
-* code = service-request-lab-research-codes-cs#lab-A "CBC panel"
+* code = service-request-labresearch-code-cs#lab-A "CBC panel"
 * subject = Reference(Patient/example-salim)
 * encounter = Reference(Encounter/example-encounter)
 * occurrenceDateTime = "2026-01-16T09:30:00+05:00"
 * authoredOn = "2026-01-16T09:10:00+05:00"
 * requester = Reference(Practitioner/example-practitioner)
-* reasonCode.text = "Suspected anemia"
 // * insurance[0] = Reference(Coverage/uz-coverage-example-01) We don't have Coverage profile yet
 //* supportingInfo[0] = Reference(UZCoreServiceRequest/uz-servicerequest-supporting-01)
 * specimen[0] = Reference(Specimen/specimen-example-blood)
