@@ -1,7 +1,7 @@
 # Endpoints
 
-- **Playground**: `playground.medcore.uz/fhir`
-- **Production**: `fhir.medcore.uz`
+- **Playground**: `playground.dhp.uz/fhir`
+- **Production**: `fhir.dhp.uz`
 
 
 # Xavfsizlik va autentifikatsiya
@@ -61,7 +61,7 @@ Front-end ilova SSO serverida ro'yxatdan o'tgan bo'lishi kerak. Ro'yxatdan o'tga
 **1 Foydalanuvchini SSO front-end sahifasiga yo'naltiring:**
 
 ```
-GET sso.medcore.uz
+GET sso.dhp.uz
 ```
 
 **Parametrlar**:
