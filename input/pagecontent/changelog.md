@@ -68,7 +68,7 @@ Added Uzbek translations.
 
 ### Version 0.3.0
 
-UZ Core profiles for Encounter, EpisodeOfCare, and Observation have been added.
+UZ Core profiles for [Encounter](StructureDefinition-UZCoreEncounter.html), [EpisodeOfCare](StructureDefinition-UZCoreEpisodeOfCare.html), and [Observation](StructureDefinition-UZCoreObservation.html) have been added.
 
 Canonical URLs have been changed to `https://dhp.uz/fhir/core` for conformance resources and `https://terminology.dhp.uz/fhir/core` for terminology resources to accommodate future IGs, which will follow a pattern of `https://dhp.uz/fhir/<ig>`.
 

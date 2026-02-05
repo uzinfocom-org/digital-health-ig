@@ -67,7 +67,7 @@
 Добавлены переводы на узбекский язык.
 
 ### Версия 0.3.0
-Добавлены UZ Core профили для Encounter, EpisodeOfCare и Observation.
+Добавлены UZ Core профили для [Encounter](StructureDefinition-UZCoreEncounter.html), [EpisodeOfCare](StructureDefinition-UZCoreEpisodeOfCare.html) и [Observation](StructureDefinition-UZCoreObservation.html).
 
 Канонические URL изменены на `https://dhp.uz/fhir/core` для ресурсов соответствия и `https://terminology.dhp.uz/fhir/core` для терминологических ресурсов, чтобы обеспечить будущие IG, которые будут следовать шаблону `https://dhp.uz/fhir/<ig>`.
 
