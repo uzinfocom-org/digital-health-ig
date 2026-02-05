@@ -1770,3 +1770,100 @@ Description: "Defines a set of codes representing laboratory test panels and ind
   * ^designation[=].value = "Cytoplasmic maturation index of erythroid cells in Bone marrow"
   * ^property[0].code = #parent
   * ^property[=].valueCode = #lab-O
+  
+* #lab-P "Gepatit B virusi DNKsi — sifat jihatidan"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "ДНК вирусного гепатита Б — качественный"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Hepatitis B virus DNA [Presence] in Serum or Plasma by NAA with probe detection"
+
+* #lab-Q "Gepatit B virusi DNKsi — miqdoriy (IU/mL)"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "ДНК вирусного гепатита Б — количественный (IU/mL)"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Hepatitis B virus DNA [Units/volume] (viral load) in Serum or Plasma by NAA with probe detection"
+
+* #lab-R "Gepatit C virusi RNKsi — sifat jihatidan"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "РНК вирусного гепатита C — качественный"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Hepatitis C virus RNA [Presence] in Serum or Plasma by NAA with probe detection"
+
+* #lab-S "Gepatit C virusi RNKsi — miqdoriy (IU/mL)"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "РНК вирусного гепатита C — количественный (IU/mL)"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Hepatitis C virus RNA [Units/volume] (viral load) in Serum or Plasma by NAA with probe detection"
+
+* #lab-T "Gepatit C virusi genotipi — genotiplash"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Генотип вирусного гепатита C — генотипирование"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Hepatitis C virus genotype [Identifier] in Serum or Plasma by NAA with probe detection"
+
+* #lab-U "Gepatit D virusi RNKsi — sifat jihatidan"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "РНК вирусного гепатита Д — качественный"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Hepatitis D virus RNA [Presence] in Serum or Plasma by NAA with probe detection"
+
+* #lab-V "Gepatit D virusi RNKsi — miqdoriy (IU/mL)"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "РНК вирусного гепатита Д — количественный (IU/mL)"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Hepatitis D virus RNA [Units/volume] (viral load) in Serum or Plasma by NAA with probe detection"
+
+* #lab-W "Gepatit C virusiga qarshi antitanalar — miqdoriy"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Антитела к вирусному гепатиту С (количественный)"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Hepatitis C virus Ab [Units/volume] in Serum"
+
+* #lab-X "Gepatit B virusining yuzaki antigeni"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Поверхностный антиген вирусного гепатита Б"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Hepatitis B virus surface Ag [Presence] in Serum or Plasma"
+
+* #lab-Y "Gepatit B virusining yuzaki antigeniga qarshi antitanalar — anti-HBs"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Антитела к поверхностному антигену вирусного гепатита B — anti-HBs"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Hepatitis B virus surface Ab [Presence] in Serum"
+
+* #lab-Z "Gepatit B virusining yuzaki antigeni — HBsAg"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Поверхностный антиген вирусного гепатита B — HBsAg"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Hepatitis B virus surface Ag [Presence] in Serum"
+
+* #lab-AA "Gepatit C virusiga qarshi antitanalar — umumiy (Anti-HCV)"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Антитела к вирусному гепатиту C — total (Anti-HCV)"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Hepatitis C virus Ab [Presence] in Serum or Plasma by Immunoassay"
+
+* #lab-BB "Gepatit B virusining yadroviy antigeniga qarshi antitanalar — anti-HBc"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Антитела к HBcor-антигену вирусного гепатита B — anti-HBc"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Hepatitis B virus (HBV) Core antibody, Blood"
+
+* #lab-CC "Gepatit B virusining e-antigeni — HBeAg"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "HBe-антиген вирусного гепатита B — HBeAg"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Hepatitis B virus e Ag [Presence] in Serum or Plasma"
+
+* #lab-DD "Gepatit A virusiga qarshi antitanalar — anti-HAV"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Антитела к вирусному гепатиту A — anti-HAV"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Hepatitis A virus IgM Ab [Presence] in Serum"
+
+* #lab-EE "Gepatit B virusining e-antigeniga qarshi antitanalar — anti-HBe"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Антитела к HBe-антигену вирусного гепатита B — anti-HBe"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Hepatitis B virus e Ab [Presence] in Serum or Plasma"
+
