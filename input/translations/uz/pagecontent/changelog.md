@@ -40,7 +40,7 @@ PINFL aniqligi va alpha-2 mamlakat kodlariga o'tishni o'z ichiga olgan [identifi
 
 [Hayotiy ko'rsatkichlar bo'limi](vital-signs.html) ko'rsatmalar va misollar bilan qo'shildi.
 
-MultilingualName qoidalar to'plamida qoraqalpoq tili (kaa) qo'llab-quvvatlashi qo'shildi.
+MultilingualName qoidalar to'plamida qoraqalpoq tili (kaa) qo'llab-quvvatlashi qo'shildi, bu [Organization](StructureDefinition-UZCoreOrganization.html) va [Location](StructureDefinition-UZCoreLocation.html) profillarida ko'p tilli nomlar uchun ishlatiladi.
 
 Intellektual mulk egasi Sog'liqni saqlash vazirligiga yangilandi.
 

@@ -38,7 +38,7 @@
 
 Добавлен [раздел по витальным показателям](vital-signs.html) с руководством и примерами.
 
-Добавлена поддержка каракалпакского языка (kaa) в правиле MultilingualName.
+Добавлена поддержка каракалпакского языка (kaa) в правиле MultilingualName, которое используется для многоязычных названий в профилях [Organization](StructureDefinition-UZCoreOrganization.html) и [Location](StructureDefinition-UZCoreLocation.html).
 
 Обновлён владелец интеллектуальной собственности на Министерство здравоохранения.
 

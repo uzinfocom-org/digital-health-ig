@@ -38,7 +38,7 @@ Improved [identifier documentation](identifiers.html) including PINFL clarity an
 
 Added [vital signs section](vital-signs.html) with guidance and examples.
 
-Added Karakalpak language (kaa) support in MultilingualName ruleset.
+Added Karakalpak language (kaa) support in the MultilingualName ruleset, used for multilingual names in [Organization](StructureDefinition-uz-core-organization.html) and [Location](StructureDefinition-uz-core-location.html) profiles.
 
 Updated IP holder to Ministry of Health.
 
