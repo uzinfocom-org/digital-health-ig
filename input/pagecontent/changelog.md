@@ -1,6 +1,8 @@
 ### In development
 
-Added document identifier namespace (doc) to identifier systems.
+Added [laboratory observation codes](CodeSystem-observation-lab-research-codes-cs.html) for panels and analytes used in Uzbekistan.
+
+Added [document identifier namespace](identifiers.html#document-identifiers) (doc) to identifier systems.
 
 ### Version 0.4.0
 

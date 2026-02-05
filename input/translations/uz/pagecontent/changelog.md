@@ -1,6 +1,8 @@
 ### Ishlab chiqish jarayonida
 
-Hujjat identifikatori nomlar maydoni (doc) identifikator tizimlariga qo'shildi.
+O'zbekistonda ishlatiladigan panellar va analitlar uchun [laboratoriya kuzatuv kodlari](CodeSystem-observation-lab-research-codes-cs.html) qo'shildi.
+
+[Hujjat identifikatori nomlar maydoni](identifiers.html#document-identifiers) (doc) identifikator tizimlariga qo'shildi.
 
 ### Versiya 0.4.0
 
