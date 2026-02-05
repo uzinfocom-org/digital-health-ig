@@ -12,7 +12,7 @@
 
 Добавлен [тип идентификатора для номера пенсионного удостоверения](NamingSystem-patient-id-uzb-pension-number.html) с поддержкой NamingSystem в ресурсе [Patient](StructureDefinition-UZCorePatient.html).
 
-Уточнены требования к силе привязки (binding strength) в [руководстве по моделированию](modelling-guidelines.html).
+Уточнены требования к силе привязки (binding strength) в [руководстве по моделированию](https://github.com/uzinfocom-org/digital-health-ig/blob/main/modelling-guidelines.md).
 
 Применена обратная связь с DHP Connectathon 1.
 

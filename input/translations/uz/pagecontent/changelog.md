@@ -14,7 +14,7 @@ O'zbekistonda ishlatiladigan panellar va analitlar uchun [laboratoriya kuzatuv k
 
 [Pensiya guvohnomasi identifikator turi](NamingSystem-patient-id-uzb-pension-number.html) (Номер пенсионного удостоверения) [Patient](StructureDefinition-UZCorePatient.html) resursida NamingSystem qo'llab-quvvatlashi bilan qo'shildi.
 
-[Modellashtirish ko'rsatmalari](modelling-guidelines.html)da bog'lash kuchi (binding strength) talablari aniqlashtirildi.
+[Modellashtirish ko'rsatmalari](https://github.com/uzinfocom-org/digital-health-ig/blob/main/modelling-guidelines.md)da bog'lash kuchi (binding strength) talablari aniqlashtirildi.
 
 DHP Connectathon 1 dan olingan fikr-mulohazalar qo'llandi.
 

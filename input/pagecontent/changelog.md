@@ -12,7 +12,7 @@ Added [UZ Core Questionnaire](StructureDefinition-UZCoreQuestionnaire.html) and 
 
 Added [pension certificate identifier type](NamingSystem-patient-id-uzb-pension-number.html) (Номер пенсионного удостоверения) with NamingSystem support in [Patient](StructureDefinition-UZCorePatient.html) resource.
 
-Clarified binding strength requirements in [modelling guidelines](modelling-guidelines.html).
+Clarified binding strength requirements in [modelling guidelines](https://github.com/uzinfocom-org/digital-health-ig/blob/main/modelling-guidelines.md).
 
 Applied feedback from DHP Connectathon 1.
 
