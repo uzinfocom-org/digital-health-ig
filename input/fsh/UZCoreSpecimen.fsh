@@ -11,7 +11,7 @@ Description: "Uzbekistan Core profile for representing laboratory and other clin
 * accessionIdentifier MS 
 * accessionIdentifier ^short = "Laboratory accession identifier assigned when the specimen is accepted/registered by the laboratory. Used to link the specimen to lab workflows and results."
 * status MS
-* status from SpecimenStatusVS (preferred)
+* status from SpecimenStatusVS (required)
 * status ^short = "Current lifecycle status of the specimen (e.g., available, unavailable)."
 * type MS
 * type from SpecimenTypesVS (preferred) 
@@ -26,10 +26,10 @@ Description: "Uzbekistan Core profile for representing laboratory and other clin
 * request MS
 * request only Reference(ServiceRequest)
 * request ^short = "Order/request that triggered the specimen collection. Enables linking specimen to ordered tests/services."
-* container.combined from SpecimenCombinedVS (preferred)
-* container.combined ^short = "Whether the container holds a pooled/combined specimen from multiple collection events or sources (if applicable)."
-* container.role from SpecimenRoleVS (preferred)
-* container.role ^short = "Role of this container in the overall specimen . Supports lab handling and result association."
+* combined from SpecimenCombinedVS (required)
+* combined ^short = "Whether the container holds a pooled/combined specimen from multiple collection events or sources (if applicable)."
+* role from SpecimenRoleVS (preferred)
+* role ^short = "Role of this container in the overall specimen . Supports lab handling and result association."
 * collection MS
 * collection.collector only Reference(UZCorePractitioner)
 * collection.collector ^short = "Practitioner who collected the specimen."
@@ -39,15 +39,17 @@ Description: "Uzbekistan Core profile for representing laboratory and other clin
 * collection.duration ^short = "Duration of the collection process (e.g., timed urine collection). Important for correct result calculation/interpretation."
 * collection.quantity MS
 * collection.quantity ^short = "Amount/volume of specimen collected. Used for adequacy checks and processing requirements."
+* collection.method MS
+* collection.method from SpecimenCollectionMethodVS
 * collection.bodySite MS
 * collection.bodySite from $bodysite
 * collection.bodySite ^short = "Anatomical site from which the specimen was collected."
 * collection.fastingStatus[x] MS
-* collection.fastingStatus[x] from RelevantClinicalInformationVS (preferred)
+* collection.fastingStatus[x] from RelevantClinicalInformationVS (required)
 * collection.fastingStatus[x] ^short = "Patient fasting status at collection time (or relevant clinical information affecting interpretation)."
 
 
-Instance: specimen-example-blood
+Instance: specimen-example-blood-cbc
 InstanceOf: UZCoreSpecimen
 Usage: #example
 Description: "Temporary Specimen instance for lab (based on drafted UZCoreSpecimen Excel structure)"
