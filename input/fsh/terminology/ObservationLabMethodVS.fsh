@@ -1,4 +1,4 @@
-ValueSet: ObservationMethodVS
+ValueSet: ObservationLabMethodVS
 Id: observation-method-vs
 Title: "Observation methods"
 Description: "Observation methods in Uzbekistan"
@@ -6,7 +6,7 @@ Description: "Observation methods in Uzbekistan"
 * ^experimental = true
 
 * include codes from system ObservationLabMethodsCS
-* include codes from system $observation-methods //valueset
+* include codes from valueset $observation-methods //valueset
 
 
 
