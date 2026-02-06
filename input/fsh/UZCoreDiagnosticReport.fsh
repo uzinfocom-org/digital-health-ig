@@ -46,6 +46,6 @@ Description: "Uzbekistan Core profile for AllergyIntolerance, representing clini
 * media.link MS
   * ^short = "Reference to the image or data"
 * presentedForm MS
-  * ^short = "Entire report as issued pdf"
+  * ^short = "Entire report as issued pdf "
 
 
