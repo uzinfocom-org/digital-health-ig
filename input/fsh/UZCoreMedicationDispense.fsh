@@ -33,9 +33,9 @@ Description: "Uzbekistan Core profile for MedicationDispense, used to record the
 * notPerformedReason.reference only Reference(DetectedIssue)
 * medication.reference only Reference(Medication)
 * subject only Reference(UZCorePatient or Group)
-* performer.actor only Reference(Practitioner or PractitionerRole or Organization or Patient or Device or RelatedPerson or CareTeam)
+* performer.actor only Reference(UZCorePractitioner or UZCorePractitionerRole or UZCoreOrganization or UZCorePatient or Device or UZCoreRelatedPerson or CareTeam)
 * authorizingPrescription only Reference(MedicationRequest)
-* receiver only Reference(Patient or Practitioner or RelatedPerson or Location or PractitionerRole)
+* receiver only Reference(UZCorePatient or UZCorePractitioner or UZCoreRelatedPerson or UZCoreLocation or UZCorePractitionerRole)
 
 
 Instance: example-medication-dispense
