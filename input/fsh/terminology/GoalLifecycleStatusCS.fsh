@@ -1,7 +1,7 @@
 CodeSystem: GoalStatusCS
 Id: goal-status-cs
 Title: "Goal Lifecycle Status CS"
-Description: "Code System for Goal Lifecycle Status translations in Uzbek and Russian"
+Description: "Goal lifecycle status supplement with translations in Uzbek and Russian"
 * insert SupplementCodeSystemDraft(goal-status-cs, $goal-status, 5.0.0)
 * ^experimental = true
 
