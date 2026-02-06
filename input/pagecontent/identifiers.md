@@ -11,7 +11,7 @@ https://dhp.uz/fhir/core/sid/{namespace}/{country}/{type}[/subtype]
 ```
 
 Where:
-- `namespace`: `pid` (personal), `pro` (professional), or `org` (organization)
+- `namespace`: `pid` (personal), `pro` (professional), `org` (organization), or `doc` (document)
 - `country`: ISO 3166-1 two-letter country code (e.g., `uz` for Uzbekistan)
 - `type`: Identifier type (e.g., `ppn` for passport, `ni` for national ID)
 - `subtype`: Optional further classification (e.g., `local`, `intl` for passport types)
@@ -236,6 +236,12 @@ Organizations are identified by their tax identification number assigned by the 
 ```
 
 For a complete list of all supported organization identifier systems, see the [OrganizationIdentifierDomainVS](ValueSet-organization-identifier-domain-vs.html) value set.
+
+## Document identifiers
+
+Documents are identified using the `doc` namespace. This allows tracking of clinical documents, reports, and other healthcare documentation.
+
+**System URI pattern**: `https://dhp.uz/fhir/core/sid/doc/{country}/{type}`
 
 ## Complete example: patient with multiple identifiers
 
