@@ -17,5 +17,5 @@ Title: "example-medicationrequest"
 Description: "Example of a medicationrequest"
 * status = #active
 * intent = #order
-* medicationCodeableConcept.text = "Analgin 500mg"
-* subject = Reference(Patient/example)
+* medication.concept.text = "Analgin 500mg"
+* subject = Reference(example-david)

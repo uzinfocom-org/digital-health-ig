@@ -5,7 +5,7 @@ Title: "UZ Core Medication Dispense"
 Description: "Uzbekistan Core profile for MedicationDispense, used to record the provision of a medication to a patient"
 * ^experimental = true
 * ^status = #active
-* ^date = "2025-02-24"
+* ^date = "2026-02-06"
 * ^publisher = "Uzinfocom"
 
 * identifier MS
@@ -30,8 +30,8 @@ Description: "Uzbekistan Core profile for MedicationDispense, used to record the
 * medication from MedicationClassificationVS (required)
 * quantity.code from MedicationTotalVolumeUnitsVS
 
-* notPerformedReason.reference only Reference(DetectedIssue)
-* medication.reference only Reference(Medication)
+* notPerformedReason only CodeableReference(DetectedIssue)
+* medication only CodeableReference(Medication)
 * subject only Reference(UZCorePatient or Group)
 * performer.actor only Reference(UZCorePractitioner or UZCorePractitionerRole or UZCoreOrganization or UZCorePatient or Device or UZCoreRelatedPerson or CareTeam)
 * authorizingPrescription only Reference(MedicationRequest)
@@ -52,7 +52,7 @@ Usage: #example
   * value = 30
   * unit = "capsules"
   * system = $ucum
-  * code = #capsules
+  * code = #"1"
 * whenHandedOver = "2025-02-24T10:30:00+05:00"
 * recorded = "2025-02-24T10:35:00+05:00"
-* renderedDosageInstruction = "Take one capsule three times a day for 10 days"
+* receiver = Reference(example-david)

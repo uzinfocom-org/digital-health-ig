@@ -1,5 +1,5 @@
 ValueSet: MedicationDispenseAdminLocationVS
-Id: medication-dispense-admin-location-vs
+Id: medicationdispense-admin-location-vs
 Title: "MedicationDispense AdminLocation"
 Description: "Allowed MedicationDispense administration location codes with Uzbek/Russian display translations"
 * ^url = "https://terminology.dhp.uz/fhir/core/ValueSet/medicationdispense-admin-location-vs"
