@@ -42,6 +42,7 @@ Instance: example-medication-dispense
 InstanceOf: UZCoreMedicationDispense
 Description: "Example of a medication dispense for a patient"
 Usage: #example
+* identifier[0].value = "MD-2025-00001"
 * status = #completed
 * medication.concept.text = "Amoxicillin 500mg capsule"
 * subject = Reference(example-david)
