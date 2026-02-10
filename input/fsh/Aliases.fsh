@@ -1,5 +1,11 @@
 // Alias: $encounter-class = https://terminology.dhp.uz/fhir/core/ValueSet/encounter-class
 Alias: $address-type = http://hl7.org/fhir/address-type
+Alias: $medicationrequest-intent = http://hl7.org/fhir/CodeSystem/medicationrequest-intent
+Alias: $medicationrequest-status-reason = http://terminology.hl7.org/CodeSystem/medicationrequest-status-reason
+Alias: $medicationrequest-status = http://hl7.org/fhir/CodeSystem/medicationrequest-status
+
+
+Alias: $address-type = http://hl7.org/fhir/address-type
 Alias: $address-use = http://hl7.org/fhir/address-use
 Alias: $audit-event-action = http://hl7.org/fhir/audit-event-action
 Alias: $birthcertificate = https://dhp.uz/fhir/core/sid/pid/uz/bct

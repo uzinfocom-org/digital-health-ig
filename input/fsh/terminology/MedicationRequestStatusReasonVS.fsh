@@ -1,0 +1,10 @@
+ValueSet: MedicationRequestStatusReasonVS
+Id: medicationrequest-status-reason-vs
+Title: "Medication Request Status Reason ValueSet"
+Description: "A value set defining the reasons for a medication request status change, supplemented with Uzbek and Russian translations."
+* ^url = "https://terminology.dhp.uz/fhir/core/ValueSet/medicationrequest-statu-reason"
+* ^experimental = true
+* ^extension[0].url = $valueset-supplement
+* ^extension[0].valueCanonical = Canonical(MedicationRequestStatusReasonCS)
+
+* include codes from system $medicationrequest-status-reason
