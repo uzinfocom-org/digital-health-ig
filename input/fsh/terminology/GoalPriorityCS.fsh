@@ -1,7 +1,7 @@
 CodeSystem: GoalPriorityCS
 Id: goal-priority-cs
 Title: "Goal Priority CS"
-Description: "Code System for Goal Priority translations in Uzbek and Russian"
+Description: "Goal priority supplement with translations in Uzbek and Russian"
 * insert SupplementCodeSystemDraft(goal-priority-cs, $goal-Priority, 0.1.0)
 * ^experimental = true
 

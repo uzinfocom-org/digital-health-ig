@@ -1,7 +1,7 @@
 CodeSystem: GoalCategoryCS
 Id: goal-category-cs
 Title: "Goal Category CS"
-Description: "Code System for Goal Category translations in Uzbek and Russian"
+Description: "Goal category supplement with translations in Uzbek and Russian"
 * insert SupplementCodeSystemDraft(goal-category-cs, $goal-category, 0.1.0)
 * ^experimental = true
 

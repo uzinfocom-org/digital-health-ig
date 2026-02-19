@@ -1,7 +1,7 @@
 CodeSystem: EncounterDischargeDispositionCS
 Id: encounter-discharge-disposition-cs
 Title: "Encounter discharge disposition translations"
-Description: "Encounter discharge disposition codes with English and Russian translations"
+Description: "Encounter discharge disposition supplement with translations in Uzbek and Russian"
 * insert SupplementCodeSystem(encounter-discharge-disposition-cs, $encounter-discharge-disposition, 1.0.1)
 
 * #home 

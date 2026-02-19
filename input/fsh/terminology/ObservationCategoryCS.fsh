@@ -1,7 +1,7 @@
 CodeSystem: ObservationCategoryCS
 Id: observation-category-cs
 Title: "Observation category translations"
-Description: "Observation category with translations in Uzbek and Russian"
+Description: "Observation category supplement with translations in Uzbek and Russian"
 * insert SupplementCodeSystemDraft(observation-category-cs, $observation-category, 5.0.0)
 
 * #social-history
