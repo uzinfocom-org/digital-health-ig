@@ -17,8 +17,8 @@ Description: "Maps local UZ ReactionSubstanceCS codes to SNOMED CT."
 * group.element[+].code = #aller-0010-00002
 * group.element[=].display = "Ajiriq (Cyn d)"
 * group.element[=].target[+].code = #260089005
-* group.element[=].target[=].display = "Bermuda grass pollen (Cyn d)"
-* group.element[=].target[=].relationship = #source-is-narrower-than-target
+* group.element[=].target[=].display = "Bermuda grass pollen"
+* group.element[=].target[=].relationship = #equivalent
 
 * group.element[+].code = #aller-0010-00003
 * group.element[=].display = "Ajiriq (Cyn d 1)"

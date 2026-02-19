@@ -2,12 +2,7 @@ CodeSystem: ReactionSubstanceCS
 Id: allergy-reaction-substance-cs
 Title: "Reaction substance codes"
 Description: "Local codes and multilingual names for allergy reaction substance."
-* ^url = "https://terminology.dhp.uz/fhir/core/CodeSystem/allergy-reaction-substance-cs"
-* ^experimental = true
-* ^status = #active
-* ^caseSensitive = true
-* ^hierarchyMeaning = #is-a
-* ^language = #uz
+* insert OriginalCodeSystemDraft(allergy-reaction-substance-cs)
 
 * #aller-0010-00002 "Ajiriq (Cyn d)"
   * ^designation[0].language = #ru
