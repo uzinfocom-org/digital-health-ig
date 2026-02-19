@@ -13,15 +13,15 @@ Description: "Uzbekistan Core profile for AllergyIntolerance, representing clini
 * code MS
   * ^short = "Code identifying the allergy or intolerance. This is the allergen itself, i.e., the substance to which the patient is allergic."
 * code from AllergenCodesVS (extensible)
-* type MS 
+* type MS
   * ^short = "The type field in the Uz DHP AllergyIntolerance resource indicates whether the patient's condition is an allergy or an intolerance."
-* type from AllergyTypesVS
+* type from AllergyTypesVS (required)
 * clinicalStatus MS
   * ^short = "This field indicates the current clinical status of the allergy or intolerance."
-* clinicalStatus from AllergyClinicalStatusVS
+* clinicalStatus from AllergyClinicalStatusVS (required)
 * verificationStatus MS
   * ^short = "This field reflects how well the reported allergy has been confirmed."
-* verificationStatus from AllergyVerificationStatusVS
+* verificationStatus from AllergyVerificationStatusVS (required)
 * category MS
 * category from AllergyCategoryVS (required)
 * patient MS
@@ -30,14 +30,14 @@ Description: "Uzbekistan Core profile for AllergyIntolerance, representing clini
 // TODO UzCoreEncounter
 * encounter only Reference(UZCoreEncounter)
 * onset[x] MS
-* extension contains Abatement named abatement 0..* MS
+* extension contains $allergyintolerance-abatement named abatement 0..1 MS
 * reaction MS
   * severity MS
-  * severity from AllergyReactionSeverityVS
-  * manifestation
-  * manifestation from ReactionManifestationVS
+  * severity from AllergyReactionSeverityVS (required)
+  * manifestation MS
+  * manifestation from ReactionManifestationVS (extensible)
   * substance MS
-  * substance from ReactionSubstanceVS
+  * substance from ReactionSubstanceVS (extensible)
 
 //test
 Instance: example-grass-pollen-allergy
@@ -61,7 +61,6 @@ Description: "Example instance conforming to UZCoreAllergyIntolerance."
 
 * onsetDateTime = "2025-07-10"
 
-* extension[abatement].url = "https://terminology.dhp.uz/fhir/core/StructureDefinition/uz-allergy-abatement"
 * extension[abatement].valueString = "Symptoms resolved after antihistamine course"
 // Реакция
 * reaction.severity = #severe

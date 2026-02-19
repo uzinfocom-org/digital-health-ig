@@ -1,7 +1,7 @@
 CodeSystem: EncounterStatusCS
 Id: encounter-status-cs
 Title: "Encounter status translations"
-Description: "Encounter status codes with English and Russian translations"
+Description: "Encounter status supplement with translations in Uzbek and Russian"
 * insert SupplementCodeSystem(encounter-status-cs, $encounter-status, 5.0.0)
 
 * #planned 

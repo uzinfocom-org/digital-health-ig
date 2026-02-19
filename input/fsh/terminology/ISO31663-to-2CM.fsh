@@ -1,8 +1,8 @@
 Instance: iso-3166-alpha3-to-alpha2-cs
 InstanceOf: ConceptMap
 Usage: #definition
-Title: "ISO 3166-1 Alpha-3 to Alpha-2 Country Code Mapping"
-Description: "ConceptMap for translating ISO 3166-1 alpha-3 (3-letter) country codes to alpha-2 (2-letter) country codes. For consistency, UZ Core uses 2-letter codes; this ConceptMap is provided to assist 3rd party systems in performing the translation."
+Title: "ISO 3166-1 Alpha-3 to Alpha-2 Country Code"
+Description: "Maps ISO 3166-1 alpha-3 (3-letter) country codes to alpha-2 (2-letter) country codes. For consistency, UZ Core uses 2-letter codes; this ConceptMap is provided to assist 3rd party systems in performing the translation."
 * name = "ISO3166Alpha3toAlpha2CS"
 * url = "https://terminology.dhp.uz/fhir/core/ConceptMap/iso-3166-alpha3-to-alpha2-cs"
 * purpose = "To facilitate interoperability between systems using different ISO 3166-1 country code formats. UZ Core has standardized on 2-letter (alpha-2) codes for consistency."

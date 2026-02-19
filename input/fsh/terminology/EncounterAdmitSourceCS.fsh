@@ -1,7 +1,7 @@
 CodeSystem: EncounterAdmitSourceCS
 Id: encounter-admit-source-cs
 Title: "Encounter admit source translations"
-Description: "Encounter admit source codes with English and Russian translations"
+Description: "Encounter admit source supplement with translations in Uzbek and Russian"
 * insert SupplementCodeSystem(encounter-admit-source-cs, $encounter-admit-source, 1.0.1)
 
 * #hosp-trans

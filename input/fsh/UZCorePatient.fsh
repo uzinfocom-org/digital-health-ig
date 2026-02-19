@@ -126,8 +126,8 @@ Description: "Uzbekistan Core Patient profile, used to represent patients admini
   * value 1..1 MS
 
 * identifier[medicalRecordTemp]
-  * ^short = "Temporary medical record number assigned by organization"
-  * ^definition = "Organization-specific temporary medical record identifier. Each organization uses its tax ID (Soliq) to create a unique namespace. System URI pattern: https://dhp.uz/fhir/core/sid/pid/uz/prn/{soliq-id}/mrt where {soliq-id} is replaced with the organization's tax identification number."
+  * ^short = "Temporary medical record number for unidentified patients (preferred)"
+  * ^definition = "Organization-specific temporary medical record identifier for unidentified patients (e.g., unconscious patients who cannot provide identification). Use this identifier when the receiving healthcare organization is known. Each organization uses its tax ID (Soliq) to create a unique namespace. System URI pattern: https://dhp.uz/fhir/core/sid/pid/uz/prn/{soliq-id}/mrt where {soliq-id} is replaced with the organization's tax identification number. This is the preferred approach over unknownPatient because it provides traceability to the issuing organization."
   * system 1..1 MS
   * system = $temp-medical-record-pattern
   * type 1..1 MS
@@ -136,8 +136,8 @@ Description: "Uzbekistan Core Patient profile, used to represent patients admini
   * value 1..1 MS
 
 * identifier[unknownPatient]
-  * ^short = "Unknown patient code (fallback when organization ID unavailable)"
-  * ^definition = "Identifier for unknown patients when identity cannot be immediately established and the organization's tax ID is not available. This is a fallback; prefer using organization-scoped temporary medical record numbers when possible."
+  * ^short = "Unknown patient code (fallback, prefer medicalRecordTemp)"
+  * ^definition = "Identifier for unidentified patients (e.g., unconscious patients who cannot provide identification) when the receiving healthcare organization's tax ID is not available. This is a fallback; prefer using organization-scoped temporary medical record numbers (medicalRecordTemp) whenever the organization is known, as they provide better traceability."
   * system 1..1 MS
   * system = $unknownpatient
   * type 1..1 MS
