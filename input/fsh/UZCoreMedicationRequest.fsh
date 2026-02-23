@@ -14,52 +14,117 @@ Description: "Uzbekistan Core profile for MedicationRequest, used to order medic
 * intent MS
 * category MS
 * medication MS
+
 * dosageInstruction MS
 * dosageInstruction.patientInstruction MS
+
+* dosageInstruction.timing MS
+// --- Start of dosageInstruction.timing.repeat ---
+* dosageInstruction.timing.repeat MS
+// --- Bounds (Длительность/Диапазон приема) ---
+// Определяем, что поддерживаются все три варианта
+* dosageInstruction.timing.repeat.bounds[x] MS
+// --- Count (Количество повторений) ---
+* dosageInstruction.timing.repeat.count MS
+* dosageInstruction.timing.repeat.countMax MS
+// --- Duration (Длительность одного приема) ---
+* dosageInstruction.timing.repeat.duration MS
+* dosageInstruction.timing.repeat.durationUnit MS
+// --- Frequency & Period (Частота) ---
+* dosageInstruction.timing.repeat.frequency MS
+* dosageInstruction.timing.repeat.period MS
+* dosageInstruction.timing.repeat.periodUnit MS // В вашей таблице это "periodUntil"
+// --- Timing Details (Время и дни) ---
+* dosageInstruction.timing.repeat.timeOfDay MS
+* dosageInstruction.timing.repeat.dayOfWeek MS
+* dosageInstruction.timing.repeat.when MS
+// --- End of dosageInstruction.timing.repeat ---
+* dosageInstruction.timing.code MS
+
 * dosageInstruction.route MS
 * dosageInstruction.doseAndRate MS
-* dosageInstruction.doseAndRate.value MS
-* dosageInstruction.doseAndRate.unit MS
+* dosageInstruction.doseAndRate.dose[x] MS
 
+* dispenseRequest.quantity MS
+* dispenseRequest.validityPeriod MS
+* dispenseRequest.dispenser MS
+* note MS
+
+
+* identifier.use from IdentifierUseVS (required)
+* identifier.type from IdentifierTypeVS (required)
 
 
 Instance: example-medication-request
 InstanceOf: UZCoreMedicationRequest
-Description: "Example of a medication request (prescription)"
+Description: "Пример с одной инструкцией"
 Usage: #example
-* identifier[0]
-  * use = #official
-  * type.coding.system = "https://terminology.dhp.uz/CodeSystem/identifier-type"
-  * type.coding.code = #PLAC
+
+// --- Идентификатор ---
+* identifier
+  * use = $identifier-use#official
+  * type = $identifier-type#PLAC "Placer Identifier"
+  * system = "https://hospital.uz/prescription-ids"
   * value = "12345678"
+
+// --- Статус и Категория ---
 * status = #active
 * intent = #order
-* category.coding.system = "https://terminology.dhp.uz/CodeSystem/medicationrequest-admin-location"
-* category.coding.code = #outpatient
-* medication.concept.text = "Авитриптан"
+* category = $medicationrequest-admin-location#outpatient "Outpatient"
+// --- Лекарство ---
+* medication.concept.text = "авитриптан"
+// --- Пациент ---
 * subject = Reference(example-david)
-* authoredOn = "2026-01-27T10:00:00+05:00"
+// --- Автор ---
+* authoredOn = "2026-01-27T09:00:00+05:00"
 
 * dosageInstruction[0]
-  * text = "Принимать по 1 таблетке 2 раза в день во время еды"
+  * text = "Принимать 2 раза в день во время еды"
+  
   * timing.repeat
+    // --- 1. Bounds (Границы времени) ---
+    // В FHIR можно выбрать ТОЛЬКО ОДИН вариант. 
+    // Я выбрал Period, так как в примере указаны конкретные даты.
+    
+    // ВАРИАНТ A (Выбран): boundsPeriod
     * boundsPeriod.start = "2026-01-27"
     * boundsPeriod.end = "2026-02-01"
+    // ВАРИАНТ B (Из таблицы: 5d): 
+    // * boundsDuration = 5 'd'
+    // ВАРИАНТ C (Из таблицы: 5d-7d):
+    // * boundsRange.low = 5 'd'
+    // * boundsRange.high = 7 'd'
+
+    // --- 2. Count (Количество) ---
+    * count = 5
+    * countMax = 5 // "no more than 5 times"
+    // --- 3. Duration (Длительность приема) ---
+    // Из таблицы: "6 месяцев". (Хотя для таблетки это странно, но ставим как в примере)
+    * duration = 6
+    * durationUnit = $ucum#mo 
+    // --- 4. Frequency (Частота) ---
     * frequency = 2
     * period = 1
-    * periodUnit = #d
-    * when = #C // Meal - C (Cibar) or similar standard code
-  * route.coding.system = "http://snomed.info/sct"
-  * route.coding.code = #26643006 "Oral route" // External example
-  * doseAndRate[0].doseQuantity
+    * periodUnit = $ucum#d
+    // --- 5. Time and Day (Время и День) ---
+    * timeOfDay[0] = "08:00:00"
+    * timeOfDay[1] = "16:00:00"
+    * dayOfWeek[0] = $days-of-week#mon
+
+  // --- Code (Код режима) ---
+  * timing.code = $v3-GTSAbbreviation#BID 
+  // --- Route (Путь введения) ---
+  * route.text = "External"
+  // --- Dose (Дозировка) ---
+  * doseAndRate.doseQuantity
     * value = 1
     * unit = "шт"
-    * system = "https://terminology.dhp.uz/CodeSystem/units"
 
+// --- Запрос на выдачу (Dispense Request) ---
 * dispenseRequest
   * quantity
     * value = 10
-    * unit = "tablet"
-  * validityPeriod.start = "2026-01-27"
-  * validityPeriod.end = "2026-02-27"
-  * dispenser = Reference(tashkent-diseases-hospital)
+    * unit = "шт"
+  * validityPeriod
+    * start = "2026-01-27"
+    * end = "2026-02-27"

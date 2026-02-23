@@ -1,9 +1,16 @@
 // Alias: $encounter-class = https://terminology.dhp.uz/fhir/core/ValueSet/encounter-class
 Alias: $address-type = http://hl7.org/fhir/address-type
+Alias: $medicationrequest-admin-location = http://terminology.hl7.org/CodeSystem/medicationrequest-admin-location
 Alias: $medicationrequest-intent = http://hl7.org/fhir/CodeSystem/medicationrequest-intent
 Alias: $medicationrequest-status-reason = http://terminology.hl7.org/CodeSystem/medicationrequest-status-reason
 Alias: $medicationrequest-status = http://hl7.org/fhir/CodeSystem/medicationrequest-status
-
+Alias: $medical-product-classification = http://www.whocc.no/atc
+Alias: $ucum = http://unitsofmeasure.org
+Alias: $days-of-week = http://hl7.org/fhir/days-of-week
+Alias: $event-timing = http://hl7.org/fhir/event-timing
+Alias: $v3-TimingEvent = http://terminology.hl7.org/CodeSystem/v3-TimingEvent
+Alias: $v3-GTSAbbreviation = http://terminology.hl7.org/CodeSystem/v3-GTSAbbreviation
+Alias: $timing-abbreviation = http://terminology.hl7.org/CodeSystem/timing-abbreviation
 
 Alias: $address-type = http://hl7.org/fhir/address-type
 Alias: $address-use = http://hl7.org/fhir/address-use
