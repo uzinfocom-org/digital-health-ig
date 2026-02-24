@@ -19,6 +19,10 @@ Description: "Uzbekistan Core profile for MedicationDispense, used to record the
 * performer.actor MS
 * authorizingPrescription MS
 * quantity MS
+* quantity.value MS
+* quantity.unit MS
+* quantity.system MS
+* quantity.code MS
 * recorded MS
 * whenPrepared MS
 * whenHandedOver MS
