@@ -1065,3 +1065,10 @@ The code 'ZMB' in the system urn:iso:std:iso:3166 is not valid in the value set 
 The code 'ZM' in the system urn:iso:std:iso:3166 is not valid in the value set 'null'
 The code 'ZWE' in the system urn:iso:std:iso:3166 is not valid in the value set 'null'
 The code 'ZW' in the system urn:iso:std:iso:3166 is not valid in the value set 'null'
+
+# transaction-response bundle for location seems to have issues resolving references
+No definition could be found for URL value 'EpisodeOfCare/UZCoreEpisodeOfCare-Example/_history/1'
+No definition could be found for URL value 'Encounter/example-encounter/_history/1'
+No definition could be found for URL value 'Observation/blood-pressure-example/_history/1'
+No definition could be found for URL value 'Observation/body-weight-example/_history/1'
+No definition could be found for URL value 'Observation/body-temperature-example/_history/1'

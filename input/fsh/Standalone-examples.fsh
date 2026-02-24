@@ -83,23 +83,23 @@ Description: "Example of a successful transaction response where all resources w
 * type = #transaction-response
 
 * entry[0].response.status = "201 Created"
-* entry[=].response.location = "EpisodeOfCare/UZCoreEpisodeOfCare-Example"
+* entry[=].response.location = "EpisodeOfCare/UZCoreEpisodeOfCare-Example/_history/1"
 * entry[=].response.lastModified = "2026-02-24T10:00:00Z"
 
 * entry[+].response.status = "201 Created"
-* entry[=].response.location = "Encounter/example-encounter"
+* entry[=].response.location = "Encounter/example-encounter/_history/1"
 * entry[=].response.lastModified = "2026-02-24T10:00:00Z"
 
 * entry[+].response.status = "201 Created"
-* entry[=].response.location = "Observation/blood-pressure-example"
+* entry[=].response.location = "Observation/blood-pressure-example/_history/1"
 * entry[=].response.lastModified = "2026-02-24T10:00:00Z"
 
 * entry[+].response.status = "201 Created"
-* entry[=].response.location = "Observation/body-weight-example"
+* entry[=].response.location = "Observation/body-weight-example/_history/1"
 * entry[=].response.lastModified = "2026-02-24T10:00:00Z"
 
 * entry[+].response.status = "201 Created"
-* entry[=].response.location = "Observation/body-temperature-example"
+* entry[=].response.location = "Observation/body-temperature-example/_history/1"
 * entry[=].response.lastModified = "2026-02-24T10:00:00Z"
 
 Instance: example-transaction-response-error
