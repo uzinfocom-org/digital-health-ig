@@ -10,6 +10,7 @@ Description: "Uzbekistan Core Procedure Profile, used for documenting an action 
 
 * identifier MS
 * basedOn MS
+* partOf MS
 * status MS
 * category MS 
 * code MS
@@ -34,6 +35,7 @@ Description: "Uzbekistan Core Procedure Profile, used for documenting an action 
 * outcome from ProcedureOutcomeVS (preferred)
 
 * basedOn only Reference(CarePlan or ServiceRequest)
+* partOf only Reference(UZCoreProcedure or UZCoreObservation or MedicationAdministration)
 * subject only Reference(UZCorePatient or Group or Device or UZCorePractitioner or UZCoreOrganization or UZCoreLocation)
 * encounter only Reference(UZCoreEncounter)
 * recorder only Reference(UZCorePatient or RelatedPerson or UZCorePractitioner or UZCorePractitionerRole)
@@ -65,7 +67,7 @@ Description: "An example instance of a UZ Core Procedure profile for a therapeut
 * recorder = Reference(example-practitioner) "Nurse Jane Smith"
 * performer[0]
   * actor = Reference(example-practitioner) "Paul Ivanov, PT"
-* location = Reference(example-location) "Physiotherapy Room 2"
+* location = Reference(example-location) "Toshkent shahar 1-sonli shifoxona"
 * bodySite = $sct#7769000 "Right foot"
 * reason = Reference(example-disability) "Aching right foot"
 * outcome = $sct#385669000 "Successful"
