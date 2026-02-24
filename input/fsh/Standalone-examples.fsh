@@ -74,3 +74,40 @@ Description: "Example transaction bundle that submits an episode of care, two en
 * entry[=].resource = body-temperature-example
 * entry[=].request.method = #POST
 * entry[=].request.url = "Observation"
+
+Instance: example-transaction-response
+InstanceOf: Bundle
+Usage: #example
+Title: "Example Transaction Response"
+Description: "Example of a successful transaction response where all resources were created"
+* type = #transaction-response
+
+* entry[0].response.status = "201 Created"
+* entry[=].response.location = "EpisodeOfCare/1001/_history/1"
+* entry[=].response.lastModified = "2026-02-24T10:00:00Z"
+
+* entry[+].response.status = "201 Created"
+* entry[=].response.location = "Encounter/1002/_history/1"
+* entry[=].response.lastModified = "2026-02-24T10:00:00Z"
+
+* entry[+].response.status = "201 Created"
+* entry[=].response.location = "Observation/1003/_history/1"
+* entry[=].response.lastModified = "2026-02-24T10:00:00Z"
+
+* entry[+].response.status = "201 Created"
+* entry[=].response.location = "Observation/1004/_history/1"
+* entry[=].response.lastModified = "2026-02-24T10:00:00Z"
+
+* entry[+].response.status = "201 Created"
+* entry[=].response.location = "Observation/1005/_history/1"
+* entry[=].response.lastModified = "2026-02-24T10:00:00Z"
+
+Instance: example-transaction-response-error
+InstanceOf: OperationOutcome
+Usage: #example
+Title: "Example Transaction Error"
+Description: "Example OperationOutcome returned when a transaction fails due to a validation error"
+* issue[0].severity = #error
+* issue[=].code = #required
+* issue[=].diagnostics = "Observation.status: minimum required = 1, but only found 0 (from https://dhp.uz/fhir/core/StructureDefinition/uz-core-observation)"
+* issue[=].expression = "Bundle.entry[2].resource.ofType(Observation)"

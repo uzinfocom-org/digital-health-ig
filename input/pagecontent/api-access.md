@@ -87,6 +87,32 @@ Include the access token in each request:
 Authorization: Bearer <access_token>
 ```
 
+# Transactions
+
+FHIR [transactions](https://hl7.org/fhir/http.html#transaction) let you submit multiple resources in a single atomic request. Either all operations succeed, or none are applied - there are no partial results.
+
+A transaction is a `Bundle` with `type` set to `transaction`. Each `entry` contains:
+- `fullUrl`  - a temporary `urn:uuid:` identifier for the resource
+- `resource`  - the resource to create or update
+- `request.method`  - the HTTP method (`POST` to create, `PUT` to update)
+- `request.url`  - the resource type (for `POST`) or resource path (for `PUT`)
+
+Resources within the transaction can reference each other using their `urn:uuid:` values. The server resolves these to real IDs after processing.
+
+Submit the Bundle with `POST [base]` (not to a specific resource endpoint).
+
+**Example request**: [Transaction Bundle JSON](Bundle-example-transaction-bundle.json) - submits an EpisodeOfCare, an Encounter, and three Observations.
+
+## Response
+
+On success, the server returns a Bundle of type `transaction-response`. Each entry contains `response.status` and `response.location` with the server-assigned ID.
+
+**Example**: [Successful response JSON](Bundle-example-transaction-response.json)
+
+If any entry fails validation, the entire transaction is rolled back and the server returns an `OperationOutcome` describing the error.
+
+**Example**: [Error response JSON](OperationOutcome-example-transaction-response-error.json)
+
 # Error handling
 
 *\<to be filled in - describe error handling here\>*
