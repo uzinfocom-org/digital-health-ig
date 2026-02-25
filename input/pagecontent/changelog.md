@@ -1,5 +1,7 @@
 ### In development
 
+Split UZ Core Observation into [UZ Core Laboratory Observation](StructureDefinition-uz-core-laboratory-observation.html) (LOINC/DHP lab codes) and [UZ Core Clinical Finding Observation](StructureDefinition-uz-core-clinical-finding-observation.html) (SNOMED CT) to support clinical findings not representable in LOINC.
+
 Added [laboratory observation codes](CodeSystem-observation-lab-research-codes-cs.html) for panels and analytes used in Uzbekistan.
 
 Added [document identifier namespace](identifiers.html#document-identifiers) (doc) to identifier systems.
@@ -68,7 +70,7 @@ Added Uzbek translations.
 
 ### Version 0.3.0
 
-UZ Core profiles for [Encounter](StructureDefinition-uz-core-encounter.html), [EpisodeOfCare](StructureDefinition-uz-core-episodeofcare.html), and [Observation](StructureDefinition-uz-core-observation.html) have been added.
+UZ Core profiles for [Encounter](StructureDefinition-uz-core-encounter.html), [EpisodeOfCare](StructureDefinition-uz-core-episodeofcare.html), and [Observation](StructureDefinition-uz-core-laboratory-observation.html) have been added.
 
 Canonical URLs have been changed to `https://dhp.uz/fhir/core` for conformance resources and `https://terminology.dhp.uz/fhir/core` for terminology resources to accommodate future IGs, which will follow a pattern of `https://dhp.uz/fhir/<ig>`.
 

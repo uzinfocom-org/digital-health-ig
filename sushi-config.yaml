@@ -101,6 +101,7 @@ menu:
   Guidance:
     FHIR basics: fhir-basics.html
     Identifiers: identifiers.html
+    Observations: observations.html
     Vital signs: vital-signs.html
   API access: api-access.html
   Artifacts: artifacts.html

@@ -109,5 +109,5 @@ Title: "Example Transaction Error"
 Description: "Example OperationOutcome returned when a transaction fails due to a validation error"
 * issue[0].severity = #error
 * issue[=].code = #required
-* issue[=].diagnostics = "Observation.status: minimum required = 1, but only found 0 (from https://dhp.uz/fhir/core/StructureDefinition/uz-core-observation)"
+* issue[=].diagnostics = "Observation.status: minimum required = 1, but only found 0 (from https://dhp.uz/fhir/core/StructureDefinition/uz-core-laboratory-observation)"
 * issue[=].expression = "Bundle.entry[2].resource.ofType(Observation)"

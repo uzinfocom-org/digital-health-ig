@@ -23,7 +23,7 @@ Description: "Uzbekistan Core Condition profile, used for documenting a patient'
 ```
 
 **Конвенции для профилей:**
-- **Profile**: `UZCore[ResourceName]` (например, `UZCorePatient`, `UZCoreObservation`)
+- **Profile**: `UZCore[ResourceName]` (например, `UZCorePatient`, `UZCoreLaboratoryObservation`)
 - **Parent**: Соответствующий базовый FHIR ресурс
 - **Id**: `uz-core-[resource-name]` в нижнем регистре с дефисами
 - **Title**: `"UZ Core [Resource Name]"`
@@ -35,7 +35,7 @@ Description: "Uzbekistan Core Condition profile, used for documenting a patient'
 
 **Основные профили:**
 - Формат: `UZCore[ResourceName].fsh`
-- Примеры: `UZCorePatient.fsh`, `UZCoreCondition.fsh`, `UZCoreObservation.fsh`
+- Примеры: `UZCorePatient.fsh`, `UZCoreCondition.fsh`, `UZCoreLaboratoryObservation.fsh`
 
 **Терминологические артефакты:**
 - CodeSystem: `[PurposeName]CS.fsh` (например, `ClinicalStatusCS.fsh`)

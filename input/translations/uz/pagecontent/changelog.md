@@ -70,7 +70,7 @@ O'zbekcha tarjimalar qo'shildi.
 
 ### Versiya 0.3.0
 
-[Encounter](StructureDefinition-UZCoreEncounter.html), [EpisodeOfCare](StructureDefinition-UZCoreEpisodeOfCare.html) va [Observation](StructureDefinition-UZCoreObservation.html) uchun UZ Core profillari qo'shildi.
+[Encounter](StructureDefinition-UZCoreEncounter.html), [EpisodeOfCare](StructureDefinition-UZCoreEpisodeOfCare.html) va [Observation](StructureDefinition-uz-core-laboratory-observation.html) uchun UZ Core profillari qo'shildi.
 
 Kanonik URL manzillari conformance resurslari uchun `https://dhp.uz/fhir/core`, terminologiya resurslari uchun esa `https://terminology.dhp.uz/fhir/core` tarzida o'zgartirildi, bu esa kelajakdagi IG'lar uchun `https://dhp.uz/fhir/<ig>` namunaviy shaklini qo'llash imkonini beradi.
 

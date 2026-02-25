@@ -7,7 +7,7 @@ Vital signs in UZ Core are used in conjunction with [FHIR Vital Signs profiles](
 ### FHIR representation
 
 Vital signs observations in UZ Core **compose** three profiles together:
-* [UZ Core Observation profile](https://dhp.uz/fhir/core/StructureDefinition/uz-core-observation) - Uzbekistan-specific requirements
+* [UZ Core Laboratory Observation profile](https://dhp.uz/fhir/core/StructureDefinition/uz-core-laboratory-observation) - Uzbekistan-specific requirements
 * [FHIR Vital Signs profile](http://hl7.org/fhir/StructureDefinition/vitalsigns)  - international vital signs standards
 * **Specific vital sign profile** (e.g., [Heart Rate](http://hl7.org/fhir/r5/heartrate.html), [Blood Pressure](http://hl7.org/fhir/r5/bp.html)) - rules for that particular vital sign type
 
@@ -51,7 +51,7 @@ Key elements:
   "id": "body-weight-example",
   "meta": {
     "profile": [
-      "https://dhp.uz/fhir/core/StructureDefinition/uz-core-observation",
+      "https://dhp.uz/fhir/core/StructureDefinition/uz-core-laboratory-observation",
       "http://hl7.org/fhir/StructureDefinition/vitalsigns",
       "http://hl7.org/fhir/StructureDefinition/bodyweight"
     ]

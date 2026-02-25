@@ -1,13 +1,13 @@
 
 # A natural language name identifying the structure definition. This name should be usable as an identifier for the module by machine processing applications such as code generation.
 #: StructureDefinition.name
-msgid "UZCoreObservation"
-msgstr "UZCoreObservation"
+msgid "UZCoreLaboratoryObservation"
+msgstr "UZCoreLaboratoryObservation"
 
 # A short, descriptive, user-friendly title for the structure definition.
 #: StructureDefinition.title
-msgid "UZ Core Observation"
-msgstr "UZ Core Observation"
+msgid "UZ Core Laboratory Observation"
+msgstr "UZ Core Laboratory Observation"
 
 # The name of the organization or individual responsible for the release and ongoing maintenance of the structure definition.
 #: StructureDefinition.publisher

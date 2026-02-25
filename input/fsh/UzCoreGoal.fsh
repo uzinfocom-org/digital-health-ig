@@ -74,14 +74,14 @@ May be:
 * source ^short = "Who came up with/set this goal?"
 
 * addresses MS
-* addresses only Reference(UZCoreCondition or UZCoreClinicalCondition or UZCoreObservation or UZCoreSocioeconomicObservation or MedicationStatement or MedicationRequest or NutritionOrder or ServiceRequest or RiskAssessment or Procedure)
+* addresses only Reference(UZCoreCondition or UZCoreClinicalCondition or UZCoreLaboratoryObservation or UZCoreClinicalFindingObservation or UZCoreSocioeconomicObservation or MedicationStatement or MedicationRequest or NutritionOrder or ServiceRequest or RiskAssessment or Procedure)
 * addresses ^short = "Medical problems for which the goal is set."
 
 * note MS
 * note ^short = "Comments about the goal."
 
 * outcome MS
-* outcome only CodeableReference(UZCoreObservation)
+* outcome only CodeableReference(UZCoreLaboratoryObservation or UZCoreClinicalFindingObservation)
 * outcome ^short = "What result was achieved regarding this goal? Free-text in concept.text, SNOMED, or custom codes may be used."
 
 

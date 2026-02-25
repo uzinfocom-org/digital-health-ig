@@ -1197,7 +1197,8 @@
             }
           ],
           "supportedProfile": [
-            "https://dhp.uz/fhir/core/StructureDefinition/uz-core-observation",
+            "https://dhp.uz/fhir/core/StructureDefinition/uz-core-laboratory-observation",
+            "https://dhp.uz/fhir/core/StructureDefinition/uz-core-clinical-finding-observation",
             "https://dhp.uz/fhir/core/StructureDefinition/uz-core-socioeconomic-observation"
           ],
           "type": "Observation"

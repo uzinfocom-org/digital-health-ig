@@ -1,8 +1,8 @@
-Profile: UZCoreObservation
+Profile: UZCoreLaboratoryObservation
 Parent: Observation
-Id: uz-core-observation
-Title: "UZ Core Observation"
-Description: "Uzbekistan Core Observation profile, used to represent clinical and laboratory observations"
+Id: uz-core-laboratory-observation
+Title: "UZ Core Laboratory Observation"
+Description: "Uzbekistan Core Laboratory Observation profile, used to represent laboratory results, vital signs, and quantitative clinical measurements. Observation.code is bound to LOINC and the DHP custom laboratory CodeSystem."
 * ^experimental = true
 * ^status = #active
 //rules
@@ -11,7 +11,7 @@ Description: "Uzbekistan Core Observation profile, used to represent clinical an
 * basedOn 0..1 MS
 * basedOn only Reference(CarePlan or MedicationRequest or ServiceRequest)
 * triggeredBy MS
-* triggeredBy.observation only Reference(UZCoreObservation)
+* triggeredBy.observation only Reference(UZCoreLaboratoryObservation or UZCoreClinicalFindingObservation)
 * triggeredBy.type from TriggeredByTypeVS (required)
 * triggeredBy.reason MS
 * partOf MS
@@ -51,9 +51,9 @@ Description: "Uzbekistan Core Observation profile, used to represent clinical an
 * referenceRange.age MS
 * referenceRange.text MS
 * hasMember MS
-* hasMember only Reference(UZCoreObservation or QuestionnaireResponse)
+* hasMember only Reference(UZCoreLaboratoryObservation or UZCoreClinicalFindingObservation or QuestionnaireResponse)
 * derivedFrom MS
-* derivedFrom only Reference(DocumentReference or ImagingStudy or QuestionnaireResponse or UZCoreObservation)
+* derivedFrom only Reference(DocumentReference or ImagingStudy or QuestionnaireResponse or UZCoreLaboratoryObservation or UZCoreClinicalFindingObservation)
 * component MS
 * component.code MS
 * component.code from ObservationCodesVS
@@ -68,7 +68,7 @@ Instance: blood-pressure-example
 InstanceOf: Observation
 Usage: #example
 Description: "Example of a blood pressure vital sign observation with systolic and diastolic components"
-* meta.profile[0] = "https://dhp.uz/fhir/core/StructureDefinition/uz-core-observation"
+* meta.profile[0] = "https://dhp.uz/fhir/core/StructureDefinition/uz-core-laboratory-observation"
 * meta.profile[+] = "http://hl7.org/fhir/StructureDefinition/vitalsigns"
 * meta.profile[+] = "http://hl7.org/fhir/StructureDefinition/bp"
 * status = #final
@@ -86,7 +86,7 @@ Instance: bmi-example
 InstanceOf: Observation
 Usage: #example
 Description: "Example of a body mass index (BMI) vital sign observation"
-* meta.profile[0] = "https://dhp.uz/fhir/core/StructureDefinition/uz-core-observation"
+* meta.profile[0] = "https://dhp.uz/fhir/core/StructureDefinition/uz-core-laboratory-observation"
 * meta.profile[+] = "http://hl7.org/fhir/StructureDefinition/vitalsigns"
 * meta.profile[+] = "http://hl7.org/fhir/StructureDefinition/bmi"
 * status = #final
@@ -101,7 +101,7 @@ Instance: body-height-example
 InstanceOf: Observation
 Usage: #example
 Description: "Example of a body height vital sign observation"
-* meta.profile[0] = "https://dhp.uz/fhir/core/StructureDefinition/uz-core-observation"
+* meta.profile[0] = "https://dhp.uz/fhir/core/StructureDefinition/uz-core-laboratory-observation"
 * meta.profile[+] = "http://hl7.org/fhir/StructureDefinition/vitalsigns"
 * meta.profile[+] = "http://hl7.org/fhir/StructureDefinition/bodyheight"
 * status = #final
@@ -116,7 +116,7 @@ Instance: body-temperature-example
 InstanceOf: Observation
 Usage: #example
 Description: "Example of a body temperature vital sign observation"
-* meta.profile[0] = "https://dhp.uz/fhir/core/StructureDefinition/uz-core-observation"
+* meta.profile[0] = "https://dhp.uz/fhir/core/StructureDefinition/uz-core-laboratory-observation"
 * meta.profile[+] = "http://hl7.org/fhir/StructureDefinition/vitalsigns"
 * meta.profile[+] = "http://hl7.org/fhir/StructureDefinition/bodytemp"
 * status = #final
@@ -131,7 +131,7 @@ Instance: body-weight-example
 InstanceOf: Observation
 Usage: #example
 Description: "Example of a body weight vital sign observation"
-* meta.profile[0] = "https://dhp.uz/fhir/core/StructureDefinition/uz-core-observation"
+* meta.profile[0] = "https://dhp.uz/fhir/core/StructureDefinition/uz-core-laboratory-observation"
 * meta.profile[+] = "http://hl7.org/fhir/StructureDefinition/vitalsigns"
 * meta.profile[+] = "http://hl7.org/fhir/StructureDefinition/bodyweight"
 * status = #final
@@ -146,7 +146,7 @@ Instance: head-circumference-example
 InstanceOf: Observation
 Usage: #example
 Description: "Example of a head circumference vital sign observation"
-* meta.profile[0] = "https://dhp.uz/fhir/core/StructureDefinition/uz-core-observation"
+* meta.profile[0] = "https://dhp.uz/fhir/core/StructureDefinition/uz-core-laboratory-observation"
 * meta.profile[+] = "http://hl7.org/fhir/StructureDefinition/vitalsigns"
 * meta.profile[+] = "http://hl7.org/fhir/StructureDefinition/headcircum"
 * status = #final
@@ -161,7 +161,7 @@ Instance: heart-rate-example
 InstanceOf: Observation
 Usage: #example
 Description: "Example of a heart rate vital sign observation"
-* meta.profile[0] = "https://dhp.uz/fhir/core/StructureDefinition/uz-core-observation"
+* meta.profile[0] = "https://dhp.uz/fhir/core/StructureDefinition/uz-core-laboratory-observation"
 * meta.profile[+] = "http://hl7.org/fhir/StructureDefinition/vitalsigns"
 * meta.profile[+] = "http://hl7.org/fhir/StructureDefinition/heartrate"
 * status = #final
@@ -176,7 +176,7 @@ Instance: oxygen-saturation-example
 InstanceOf: Observation
 Usage: #example
 Description: "Example of an oxygen saturation vital sign observation with interpretation and reference range"
-* meta.profile[0] = "https://dhp.uz/fhir/core/StructureDefinition/uz-core-observation"
+* meta.profile[0] = "https://dhp.uz/fhir/core/StructureDefinition/uz-core-laboratory-observation"
 * meta.profile[+] = "http://hl7.org/fhir/StructureDefinition/vitalsigns"
 * meta.profile[+] = "http://hl7.org/fhir/StructureDefinition/oxygensat"
 * status = #final
@@ -195,7 +195,7 @@ Instance: respiratory-rate-example
 InstanceOf: Observation
 Usage: #example
 Description: "Example of a respiratory rate vital sign observation"
-* meta.profile[0] = "https://dhp.uz/fhir/core/StructureDefinition/uz-core-observation"
+* meta.profile[0] = "https://dhp.uz/fhir/core/StructureDefinition/uz-core-laboratory-observation"
 * meta.profile[+] = "http://hl7.org/fhir/StructureDefinition/vitalsigns"
 * meta.profile[+] = "http://hl7.org/fhir/StructureDefinition/resprate"
 * status = #final
@@ -208,10 +208,10 @@ Description: "Example of a respiratory rate vital sign observation"
 
 // CBC - panel with components
 Instance: cbc-panel-example
-InstanceOf: UZCoreObservation
+InstanceOf: UZCoreLaboratoryObservation
 Usage: #example
 Description: "Example of CBC (Umumiy qon tahlili) as a laboratory panel with analytes from observation-lab-research-codes-cs"
-* meta.profile[0] = "https://dhp.uz/fhir/core/StructureDefinition/uz-core-observation"
+* meta.profile[0] = "https://dhp.uz/fhir/core/StructureDefinition/uz-core-laboratory-observation"
 * status = #final
 * category = $observation-category#laboratory "Laboratory"
 * code = observation-lab-research-codes-cs#lab-A "CBC panel"
