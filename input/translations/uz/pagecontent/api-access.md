@@ -92,7 +92,7 @@ Authorization: Bearer <access_token>
 FHIR [tranzaksiyalar](https://hl7.org/fhir/http.html#transaction) bir nechta resurslarni bitta atomik so'rovda yuborish imkonini beradi. Barcha operatsiyalar muvaffaqiyatli bajariladi yoki hech biri qo'llanilmaydi  - qisman natijalar bo'lmaydi.
 
 Tranzaksiya  - bu `type` qiymati `transaction` ga o'rnatilgan `Bundle`. Har bir yozuv (`entry`) quyidagilarni o'z ichiga oladi:
-- `fullUrl`  - resurs uchun vaqtinchalik `urn:uuid:` identifikator
+- `fullUrl`  - `urn:uuid:` formatidagi resurs uchun vaqtinchalik identifikatori
 - `resource`  - yaratish yoki yangilash uchun resurs
 - `request.method`  - HTTP usuli (`POST` yaratish uchun, `PUT` yangilash uchun)
 - `request.url`  - resurs turi (`POST` uchun) yoki resurs yo'li (`PUT` uchun)
@@ -103,9 +103,9 @@ Bundle'ni `POST [base]` orqali yuboring (aniq resurs endpoint'iga emas).
 
 **So'rov namunasi**: [Transaction Bundle JSON](Bundle-example-transaction-bundle.json)  - EpisodeOfCare, Encounter va uchta Observation yuboradi.
 
-## Javob
+## Server javobi
 
-Muvaffaqiyatli bo'lganda, server `transaction-response` turidagi Bundle qaytaradi. Har bir yozuv `response.status` va server tomonidan berilgan identifikatorli `response.location` ni o'z ichiga oladi.
+Muvaffaqiyatli bajarilganda, server `transaction-response` turidagi Bundle qaytaradi. Har bir yozuv (`entry`) `response.status` va server tomonidan berilgan identifikatorli `response.location` ni o'z ichiga oladi.
 
 **Namuna**: [Muvaffaqiyatli javob JSON](Bundle-example-transaction-response.json)
 
