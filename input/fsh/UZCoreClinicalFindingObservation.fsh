@@ -62,15 +62,15 @@ Description: "Uzbekistan Core Clinical Finding Observation profile, used to repr
 * component.interpretation from ObservationInterpretationVS (extensible)
 
 
-Instance: muscle-strength-example
+Instance: muscle-weakness-example
 InstanceOf: UZCoreClinicalFindingObservation
 Usage: #example
-Description: "Example of a clinical finding observation for muscle strength assessment using SNOMED CT"
+Description: "Example of a clinical finding observation for muscle weakness using SNOMED CT"
 * meta.profile[0] = "https://dhp.uz/fhir/core/StructureDefinition/uz-core-clinical-finding-observation"
 * status = #final
 * category = $observation-category#exam "Exam"
-* code = $sct#366725004 "Finding of muscle strength"
+* code = $sct#26544005 "Muscle weakness"
 * subject = Reference(Patient/example-salim)
 * effectiveDateTime = "2025-11-04T10:30:00Z"
 * performer = Reference(Practitioner/example-practitioner)
-* valueCodeableConcept = $sct#299042006 "Muscle power grade 5 - normal"
+* valueCodeableConcept = $sct#255604002 "Mild"

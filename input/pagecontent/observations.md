@@ -22,7 +22,7 @@ Is there a LOINC code for this observation?
 **Examples:**
 - Blood pressure (LOINC 85354-9) - UZ Core Laboratory Observation
 - CBC panel (DHP lab code lab-A) - UZ Core Laboratory Observation
-- Muscle strength finding (SNOMED CT 366725004) - UZ Core Clinical Finding Observation
+- Muscle weakness (SNOMED CT 26544005) - UZ Core Clinical Finding Observation
 
 ### Related
 
