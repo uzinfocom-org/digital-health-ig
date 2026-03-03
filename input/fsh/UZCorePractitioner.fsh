@@ -19,7 +19,7 @@ Description: "Uzbekistan Core Practitioner profile, used to define healthcare pr
 * identifier contains nationalId 0..1 MS
 
 * identifier[nationalId]
-  * ^short = "Персональный идентификационный номер физического лица"
+  * ^short = "PINFL of the practitioner"
   * system 1..1 MS
   * system = $practitioner-argos-id-system
   * type 1..1 MS
