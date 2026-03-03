@@ -42,3 +42,72 @@ Description: "Example ServiceRequest for CBC (Umumiy qon tahlili) order"
 * requester = Reference(Practitioner/example-practitioner)
 * authoredOn = "2025-11-04T08:00:00Z"
 * specimen[0] = Reference(Specimen/specimen-example-blood)
+
+Instance: example-transaction-bundle
+InstanceOf: Bundle
+Usage: #example
+Title: "Example Transaction Bundle"
+Description: "Example transaction bundle that submits an episode of care, two encounters, and three observations in a single transaction"
+* type = #transaction
+
+* entry[0].fullUrl = "urn:uuid:a1b2c3d4-5678-90ab-cdef-111111111111"
+* entry[=].resource = UZCoreEpisodeOfCare-Example
+* entry[=].request.method = #POST
+* entry[=].request.url = "EpisodeOfCare"
+
+* entry[+].fullUrl = "urn:uuid:a1b2c3d4-5678-90ab-cdef-222222222222"
+* entry[=].resource = example-encounter
+* entry[=].request.method = #POST
+* entry[=].request.url = "Encounter"
+
+* entry[+].fullUrl = "urn:uuid:a1b2c3d4-5678-90ab-cdef-333333333333"
+* entry[=].resource = blood-pressure-example
+* entry[=].request.method = #POST
+* entry[=].request.url = "Observation"
+
+* entry[+].fullUrl = "urn:uuid:a1b2c3d4-5678-90ab-cdef-444444444444"
+* entry[=].resource = body-weight-example
+* entry[=].request.method = #POST
+* entry[=].request.url = "Observation"
+
+* entry[+].fullUrl = "urn:uuid:a1b2c3d4-5678-90ab-cdef-555555555555"
+* entry[=].resource = body-temperature-example
+* entry[=].request.method = #POST
+* entry[=].request.url = "Observation"
+
+Instance: example-transaction-response
+InstanceOf: Bundle
+Usage: #example
+Title: "Example Transaction Response"
+Description: "Example of a successful transaction response where all resources were created"
+* type = #transaction-response
+
+* entry[0].response.status = "201 Created"
+* entry[=].response.location = "EpisodeOfCare/UZCoreEpisodeOfCare-Example/_history/1"
+* entry[=].response.lastModified = "2026-02-24T10:00:00Z"
+
+* entry[+].response.status = "201 Created"
+* entry[=].response.location = "Encounter/example-encounter/_history/1"
+* entry[=].response.lastModified = "2026-02-24T10:00:00Z"
+
+* entry[+].response.status = "201 Created"
+* entry[=].response.location = "Observation/blood-pressure-example/_history/1"
+* entry[=].response.lastModified = "2026-02-24T10:00:00Z"
+
+* entry[+].response.status = "201 Created"
+* entry[=].response.location = "Observation/body-weight-example/_history/1"
+* entry[=].response.lastModified = "2026-02-24T10:00:00Z"
+
+* entry[+].response.status = "201 Created"
+* entry[=].response.location = "Observation/body-temperature-example/_history/1"
+* entry[=].response.lastModified = "2026-02-24T10:00:00Z"
+
+Instance: example-transaction-response-error
+InstanceOf: OperationOutcome
+Usage: #example
+Title: "Example Transaction Error"
+Description: "Example OperationOutcome returned when a transaction fails due to a validation error"
+* issue[0].severity = #error
+* issue[=].code = #required
+* issue[=].diagnostics = "Observation.status: minimum required = 1, but only found 0 (from https://dhp.uz/fhir/core/StructureDefinition/uz-core-observation)"
+* issue[=].expression = "Bundle.entry[2].resource.ofType(Observation)"
