@@ -60,6 +60,7 @@ Description: "Uzbekistan Core Patient profile, used to represent patients admini
   * value 1..1 MS
 
 * identifier[nationalId]
+  * ^short = "PINFL of the patient"
   * system 1..1 MS
   * system = $nationaluniqueID
   * type 1..1 MS
