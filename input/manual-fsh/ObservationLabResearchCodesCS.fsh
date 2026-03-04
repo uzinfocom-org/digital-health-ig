@@ -13,184 +13,184 @@ Description: "Code system defining laboratory observation panels and individual 
   * ^designation[=].value = "Общий анализ крови"
   * ^designation[+].language = #en
   * ^designation[=].value = "CBC panel"
-* #lab-1 "WBC"
+* #lab-1 "Leykositlar (WBC)"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "WBC"
+  * ^designation[=].value = "Лейкоциты (WBC)"
   * ^designation[+].language = #en
   * ^designation[=].value = "Leukocytes [#/volume] in Blood by Automated count"
   * ^property[0].code = #parent
   * ^property[=].valueCode = #lab-A
-* #lab-2 "Neu#"
+* #lab-2 "Barcha neurofil elementlar (Neu#)"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Neu#"
+  * ^designation[=].value = "Абсолютное количество нейтрофилов (Neu#)"
   * ^designation[+].language = #en
   * ^designation[=].value = "Neutrophils [#/volume] in Blood by Automated count"
   * ^property[0].code = #parent
   * ^property[=].valueCode = #lab-A
-* #lab-3 "Lym#"
+* #lab-3 "Limfotsitlar soni (Lym#)"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Lym#"
+  * ^designation[=].value = "Абсолютное количество лимфоцитов (Lym#)"
   * ^designation[+].language = #en
   * ^designation[=].value = "Lymphocytes [#/volume] in Blood by Automated count"
   * ^property[0].code = #parent
   * ^property[=].valueCode = #lab-A
-* #lab-4 "Mon#"
+* #lab-4 "Monotsitlar soni (Mon#)"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Mon#"
+  * ^designation[=].value = "Абсолютное количество моноцитов (Mon#)"
   * ^designation[+].language = #en
   * ^designation[=].value = "Monocytes [#/volume] in Blood by Automated count"
   * ^property[0].code = #parent
   * ^property[=].valueCode = #lab-A
-* #lab-5 "Eos#"
+* #lab-5 "Eozinofillar soni (Eos#)"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Eos#"
+  * ^designation[=].value = "Абсолютное количество эозинофилов (Eos#)"
   * ^designation[+].language = #en
   * ^designation[=].value = "Eosinophils [#/volume] in Blood by Automated count"
   * ^property[0].code = #parent
   * ^property[=].valueCode = #lab-A
-* #lab-6 "Bas#"
+* #lab-6 "Bazofillar soni (Bas#)"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Bas#"
+  * ^designation[=].value = "Абсолютное количество базофилов (Bas#)"
   * ^designation[+].language = #en
   * ^designation[=].value = "Basophils [#/volume] in Blood by Automated count"
   * ^property[0].code = #parent
   * ^property[=].valueCode = #lab-A
-* #lab-7 "Neu%"
+* #lab-7 "Neytrofillar yetilish indeksi (Neu%)"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Neu%"
+  * ^designation[=].value = "Нейтрофилы (Neu%)"
   * ^designation[+].language = #en
   * ^designation[=].value = "Neutrophils/100 leukocytes in Blood by Automated count"
   * ^property[0].code = #parent
   * ^property[=].valueCode = #lab-A
-* #lab-8 "Lym%"
+* #lab-8 "Limfotsitlar (Lym%)"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Lym%"
+  * ^designation[=].value = "Лимфоциты (Lym%)"
   * ^designation[+].language = #en
   * ^designation[=].value = "Lymphocytes/100 leukocytes in Blood by Automated count"
   * ^property[0].code = #parent
   * ^property[=].valueCode = #lab-A
-* #lab-9 "Mon%"
+* #lab-9 "Monositlar (Mon%)"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Mon%"
+  * ^designation[=].value = "Моноциты (Mon%)"
   * ^designation[+].language = #en
   * ^designation[=].value = "Monocytes/100 leukocytes in Blood by Automated count"
   * ^property[0].code = #parent
   * ^property[=].valueCode = #lab-A
-* #lab-10 "Eos%"
+* #lab-10 "Eozinofillar (Eos%)"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Eos%"
+  * ^designation[=].value = "Эозинофилы (Eos%)"
   * ^designation[+].language = #en
   * ^designation[=].value = "Eosinophils/100 leukocytes in Blood by Automated count"
   * ^property[0].code = #parent
   * ^property[=].valueCode = #lab-A
-* #lab-11 "Bas%"
+* #lab-11 "Bazofillar (Bas%)"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Bas%"
+  * ^designation[=].value = "Базофилы (Bas%)"
   * ^designation[+].language = #en
   * ^designation[=].value = "Basophils/100 leukocytes in Blood by Automated count"
   * ^property[0].code = #parent
   * ^property[=].valueCode = #lab-A
-* #lab-12 "RBC"
+* #lab-12 "Eritrotsitlar (RBC)"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "RBC"
+  * ^designation[=].value = "Эритроциты (RBC)"
   * ^designation[+].language = #en
   * ^designation[=].value = "Erythrocytes [#/volume] in Blood by Automated count"
   * ^property[0].code = #parent
   * ^property[=].valueCode = #lab-A
-* #lab-13 "HGB"
+* #lab-13 "Gemoglobin (HGB)"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "HGB"
+  * ^designation[=].value = "Гемоглобин (HGB)"
   * ^designation[+].language = #en
   * ^designation[=].value = "Hemoglobin [Mass/volume] in Blood"
   * ^property[0].code = #parent
   * ^property[=].valueCode = #lab-A
-* #lab-14 "HCT"
+* #lab-14 "Gematokrit (HCT)"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "HCT"
+  * ^designation[=].value = "Гематокрит (HCT)"
   * ^designation[+].language = #en
   * ^designation[=].value = "Hematocrit [Volume Fraction] of Blood by Automated count"
   * ^property[0].code = #parent
   * ^property[=].valueCode = #lab-A
-* #lab-15 "MCV"
+* #lab-15 "Eritrotsit o'rtacha hajmi (MCV)"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "MCV"
+  * ^designation[=].value = "Средний объем эритроцита (MCV)"
   * ^designation[+].language = #en
   * ^designation[=].value = "MCV [Entitic volume] by Automated count"
   * ^property[0].code = #parent
   * ^property[=].valueCode = #lab-A
-* #lab-16 "MCH"
+* #lab-16 "1 dona eritrotsitdagi gemoglobinning miqdori (MCH)"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "MCH"
+  * ^designation[=].value = "Среднее содержание гемоглобина в эритроците (MCH)"
   * ^designation[+].language = #en
   * ^designation[=].value = "MCH [Entitic mass] by Automated count"
   * ^property[0].code = #parent
   * ^property[=].valueCode = #lab-A
-* #lab-17 "MCHC"
+* #lab-17 "Eritrotsitdagi gemoglobin konsentratsiyasi (MCHC)"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "MCHC"
+  * ^designation[=].value = "Средняя концентрация гемоглобина в эритроците (MCHC)"
   * ^designation[+].language = #en
   * ^designation[=].value = "MCHC [Mass/volume] by Automated count"
   * ^property[0].code = #parent
   * ^property[=].valueCode = #lab-A
-* #lab-18 "RDW-CV"
+* #lab-18 "Eritrotsitlar anizotsitozi (RDW-CV)"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "RDW-CV"
+  * ^designation[=].value = "Ширина распределения эритроцитов по объему (RDW-CV)"
   * ^designation[+].language = #en
   * ^designation[=].value = "Erythrocyte distribution width (RDW-CV) [Ratio] by Automated count"
   * ^property[0].code = #parent
   * ^property[=].valueCode = #lab-A
-* #lab-19 "RDW-SD"
+* #lab-19 "Eritrotsit hajmi standart og‘ishi (RDW-SD)"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "RDW-SD"
+  * ^designation[=].value = "Стандартное отклонение распределения эритроцитов по объему (RDW-SD)"
   * ^designation[+].language = #en
   * ^designation[=].value = "Erythrocyte distribution width (RDW-SD) [Entitic volume] by Automated count"
   * ^property[0].code = #parent
   * ^property[=].valueCode = #lab-A
-* #lab-20 "PLT"
+* #lab-20 "Trombotsitlar (PLT)"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "PLT"
+  * ^designation[=].value = "Тромбоциты (PLT)"
   * ^designation[+].language = #en
   * ^designation[=].value = "Platelets [#/volume] in Blood by Automated count"
   * ^property[0].code = #parent
   * ^property[=].valueCode = #lab-A
-* #lab-21 "MPV"
+* #lab-21 "Trombotsitlar o'rtacha hajmi (MPV)"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "MPV"
+  * ^designation[=].value = "Средний объем тромбоцитов (MPV)"
   * ^designation[+].language = #en
   * ^designation[=].value = "Mean platelet volume [Entitic volume] in Blood by Automated count"
   * ^property[0].code = #parent
   * ^property[=].valueCode = #lab-A
-* #lab-22 "PDW"
+* #lab-22 "Trombotsitlar anizotsitozi (PDW)"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "PDW"
+  * ^designation[=].value = "Ширина распределения тромбоцитов (PDW)"
   * ^designation[+].language = #en
   * ^designation[=].value = "Platelet distribution width [Entitic volume] in Blood by Automated count"
   * ^property[0].code = #parent
   * ^property[=].valueCode = #lab-A
-* #lab-23 "PCT"
+* #lab-23 "Trombokrit (PCT)"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "PCT"
+  * ^designation[=].value = "Тромбокрит (PCT)"
   * ^designation[+].language = #en
   * ^designation[=].value = "Plateletcrit [Volume Fraction] of Blood by Automated count"
   * ^property[0].code = #parent
   * ^property[=].valueCode = #lab-A
-* #lab-24 "P-LCC"
+* #lab-24 "Yirik trombotsitlar soni (P-LCC)"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "P-LCC"
+  * ^designation[=].value = "Количество крупных тромбоцитов (P-LCC)"
   * ^designation[+].language = #en
   * ^designation[=].value = "Platelet large cell count [#/volume] in Blood by Automated count"
   * ^property[0].code = #parent
   * ^property[=].valueCode = #lab-A
-* #lab-25 "P-LCR"
+* #lab-25 "Yirik trombotsitlar ulushi (P-LCR)"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "P-LCR"
+  * ^designation[=].value = "Доля крупных тромбоцитов (P-LCR)"
   * ^designation[+].language = #en
   * ^designation[=].value = "Platelet large cell ratio [#] in Blood by Automated count"
   * ^property[0].code = #parent
   * ^property[=].valueCode = #lab-A
-* #lab-26 "ECHT (eritrotsitlarning cho'kish tezligi)"
+* #lab-26 "Eritrotsitning cho'kish tezligi (ECHT)"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "СОЭ(скорость оседания эритроцитов)"
+  * ^designation[=].value = "Скорость оседания эритроцитов (СОЭ)"
   * ^designation[+].language = #en
   * ^designation[=].value = "Erythrocyte sedimentation rate (ESR) by Westergren method"
   * ^property[0].code = #parent
@@ -1770,120 +1770,3 @@ Description: "Code system defining laboratory observation panels and individual 
   * ^designation[=].value = "Cytoplasmic maturation index of erythroid cells in Bone marrow"
   * ^property[0].code = #parent
   * ^property[=].valueCode = #lab-O
-* #lab-P "Gepatit"
-  * ^designation[0].language = #ru
-  * ^designation[=].value = "Гепатит"
-  * ^designation[+].language = #en
-  * ^designation[=].value = "Hepatitis"
-* #lab-242 "Gepatit B virusi DNKsi — sifat jihatidan"
-  * ^designation[0].language = #ru
-  * ^designation[=].value = "ДНК вирусного гепатита Б — качественный"
-  * ^designation[+].language = #en
-  * ^designation[=].value = "Hepatitis B virus DNA [Presence] in Serum or Plasma by NAA with probe detection"
-  * ^property[0].code = #parent
-  * ^property[=].valueCode = #lab-P
-* #lab-243 "Gepatit B virusi DNKsi — miqdoriy (IU/mL)"
-  * ^designation[0].language = #ru
-  * ^designation[=].value = "ДНК вирусного гепатита Б — количественный (IU/mL)"
-  * ^designation[+].language = #en
-  * ^designation[=].value = "Hepatitis B virus DNA [Units/volume] (viral load) in Serum or Plasma by NAA with probe detection"
-  * ^property[0].code = #parent
-  * ^property[=].valueCode = #lab-P
-* #lab-244 "Gepatit C virusi RNKsi — sifat jihatidan"
-  * ^designation[0].language = #ru
-  * ^designation[=].value = "РНК вирусного гепатита C — качественный"
-  * ^designation[+].language = #en
-  * ^designation[=].value = "Hepatitis C virus RNA [Presence] in Serum or Plasma by NAA with probe detection"
-  * ^property[0].code = #parent
-  * ^property[=].valueCode = #lab-P
-* #lab-245 "Gepatit C virusi RNKsi — miqdoriy (IU/mL)"
-  * ^designation[0].language = #ru
-  * ^designation[=].value = "РНК вирусного гепатита C — количественный (IU/mL)"
-  * ^designation[+].language = #en
-  * ^designation[=].value = "Hepatitis C virus RNA [Units/volume] (viral load) in Serum or Plasma by NAA with probe detection"
-  * ^property[0].code = #parent
-  * ^property[=].valueCode = #lab-P
-* #lab-246 "Gepatit C virusi genotipi — genotiplash"
-  * ^designation[0].language = #ru
-  * ^designation[=].value = "Генотип вирусного гепатита C — генотипирование"
-  * ^designation[+].language = #en
-  * ^designation[=].value = "Hepatitis C virus genotype [Identifier] in Serum or Plasma by NAA with probe detection"
-  * ^property[0].code = #parent
-  * ^property[=].valueCode = #lab-P
-* #lab-247 "Gepatit D virusi RNKsi — sifat jihatidan"
-  * ^designation[0].language = #ru
-  * ^designation[=].value = "РНК вирусного гепатита Д — качественный"
-  * ^designation[+].language = #en
-  * ^designation[=].value = "Hepatitis D virus RNA [Presence] in Serum or Plasma by NAA with probe detection"
-  * ^property[0].code = #parent
-  * ^property[=].valueCode = #lab-P
-* #lab-248 "Gepatit D virusi RNKsi — miqdoriy (IU/mL)"
-  * ^designation[0].language = #ru
-  * ^designation[=].value = "РНК вирусного гепатита Д — количественный (IU/mL)"
-  * ^designation[+].language = #en
-  * ^designation[=].value = "Hepatitis D virus RNA [Units/volume] (viral load) in Serum or Plasma by NAA with probe detection"
-  * ^property[0].code = #parent
-  * ^property[=].valueCode = #lab-P
-* #lab-249 "Gepatit C virusiga qarshi antitanalar — miqdoriy"
-  * ^designation[0].language = #ru
-  * ^designation[=].value = "Антитела к вирусному гепатиту С (количественный)"
-  * ^designation[+].language = #en
-  * ^designation[=].value = "Hepatitis C virus Ab [Units/volume] in Serum"
-  * ^property[0].code = #parent
-  * ^property[=].valueCode = #lab-P
-* #lab-250 "Gepatit B virusining yuzaki antigeni"
-  * ^designation[0].language = #ru
-  * ^designation[=].value = "Поверхностный антиген вирусного гепатита Б"
-  * ^designation[+].language = #en
-  * ^designation[=].value = "Hepatitis B virus surface Ag [Presence] in Serum or Plasma"
-  * ^property[0].code = #parent
-  * ^property[=].valueCode = #lab-P
-* #lab-251 "Gepatit B virusining yuzaki antigeniga qarshi antitanalar — anti-HBs"
-  * ^designation[0].language = #ru
-  * ^designation[=].value = "Антитела к поверхностному антигену вирусного гепатита B — anti-HBs"
-  * ^designation[+].language = #en
-  * ^designation[=].value = "Hepatitis B virus surface Ab [Presence] in Serum"
-  * ^property[0].code = #parent
-  * ^property[=].valueCode = #lab-P
-* #lab-252 "Gepatit B virusining yuzaki antigeni — HBsAg"
-  * ^designation[0].language = #ru
-  * ^designation[=].value = "Поверхностный антиген вирусного гепатита B — HBsAg"
-  * ^designation[+].language = #en
-  * ^designation[=].value = "Hepatitis B virus surface Ag [Presence] in Serum"
-  * ^property[0].code = #parent
-  * ^property[=].valueCode = #lab-P
-* #lab-253 "Gepatit C virusiga qarshi antitanalar — umumiy (Anti-HCV)"
-  * ^designation[0].language = #ru
-  * ^designation[=].value = "Антитела к вирусному гепатиту C — total (Anti-HCV)"
-  * ^designation[+].language = #en
-  * ^designation[=].value = "Hepatitis C virus Ab [Presence] in Serum or Plasma by Immunoassay"
-  * ^property[0].code = #parent
-  * ^property[=].valueCode = #lab-P
-* #lab-254 "Gepatit B virusining yadroviy antigeniga qarshi antitanalar — anti-HBc"
-  * ^designation[0].language = #ru
-  * ^designation[=].value = "Антитела к HBcor-антигену вирусного гепатита B — anti-HBc"
-  * ^designation[+].language = #en
-  * ^designation[=].value = "Hepatitis B virus (HBV) Core antibody, Blood"
-  * ^property[0].code = #parent
-  * ^property[=].valueCode = #lab-P
-* #lab-255 "Gepatit B virusining e-antigeni — HBeAg"
-  * ^designation[0].language = #ru
-  * ^designation[=].value = "HBe-антиген вирусного гепатита B — HBeAg"
-  * ^designation[+].language = #en
-  * ^designation[=].value = "Hepatitis B virus e Ag [Presence] in Serum or Plasma"
-  * ^property[0].code = #parent
-  * ^property[=].valueCode = #lab-P
-* #lab-256 "Gepatit A virusiga qarshi antitanalar — anti-HAV"
-  * ^designation[0].language = #ru
-  * ^designation[=].value = "Антитела к вирусному гепатиту A — anti-HAV"
-  * ^designation[+].language = #en
-  * ^designation[=].value = "Hepatitis A virus IgM Ab [Presence] in Serum"
-  * ^property[0].code = #parent
-  * ^property[=].valueCode = #lab-P
-* #lab-257 "Gepatit B virusining e-antigeniga qarshi antitanalar — anti-HBe"
-  * ^designation[0].language = #ru
-  * ^designation[=].value = "Антитела к HBe-антигену вирусного гепатита B — anti-HBe"
-  * ^designation[+].language = #en
-  * ^designation[=].value = "Hepatitis B virus e Ab [Presence] in Serum or Plasma"
-  * ^property[0].code = #parent
-  * ^property[=].valueCode = #lab-P
