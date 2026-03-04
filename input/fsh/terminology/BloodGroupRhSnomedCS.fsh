@@ -2,6 +2,7 @@ CodeSystem: BloodGroupRhSnomed
 Id: blood-group-rh-snomed
 Title: "Blood group and Rh(D) findings (SNOMED CT)"
 Description: "Subset of SNOMED CT findings for ABO blood group with Rh(D) positive/negative."
+* ^url = "https://terminology.dhp.uz/fhir/core/CodeSystem/blood-group-rh-snomed"
 * ^status = #draft
 * ^content = #complete
 * ^caseSensitive = false
