@@ -100,7 +100,7 @@ Description: "Example of a body mass index (BMI) vital sign observation"
 Instance: body-height-example
 InstanceOf: Observation
 Usage: #example
-Description: "Example of a body height vital sign observation"
+Description: "Example of a body height vital sign  observation"
 * meta.profile[0] = "https://dhp.uz/fhir/core/StructureDefinition/uz-core-observation"
 * meta.profile[+] = "http://hl7.org/fhir/StructureDefinition/vitalsigns"
 * meta.profile[+] = "http://hl7.org/fhir/StructureDefinition/bodyheight"
