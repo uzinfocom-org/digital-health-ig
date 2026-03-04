@@ -4,10 +4,6 @@ Title: "Laboratory Observation Panels and Analytes"
 Description: "Code system defining laboratory observation panels and individual analytes used in Uzbekistan."
 * insert OriginalCodeSystemDraft(observation-lab-research-codes-cs)
 
-* ^property[0].code = #parent
-* ^property[=].uri = "http://hl7.org/fhir/concept-properties#parent"
-* ^property[=].type = #code
-
 * #lab-A "Umumiy qon tahlili"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Общий анализ крови"

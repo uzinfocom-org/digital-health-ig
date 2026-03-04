@@ -121,3 +121,5 @@ Alias: $goal-Priority = http://terminology.hl7.org/CodeSystem/goal-priority
 Alias: $v2-0916 = http://terminology.hl7.org/CodeSystem/v2-0916
 Alias: $v2-0487 = http://terminology.hl7.org/CodeSystem/v2-0487
 Alias: $specimen-role = http://hl7.org/fhir/specimen-role
+Alias: $lab-research = https://terminology.dhp.uz/fhir/core/CodeSystem/observation-lab-research-codes-cs
+Alias: $lab-diagnostic = https://terminology.dhp.uz/fhir/core/CodeSystem/observation-laboratory-diagnostic-cs
