@@ -1,0 +1,5054 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "draft",
+  "content": "complete",
+  "name": "ObservationLabResearchCodesCS",
+  "id": "observation-lab-research-codes-cs",
+  "title": "Laboratory Observation Panels and Analytes",
+  "description": "Code system defining laboratory observation panels and individual analytes used in Uzbekistan.",
+  "url": "https://terminology.dhp.uz/fhir/core/CodeSystem/observation-lab-research-codes-cs",
+  "concept": [
+    {
+      "code": "lab-A",
+      "display": "Umumiy qon tahlili",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Общий анализ крови"
+        },
+        {
+          "language": "en",
+          "value": "CBC panel"
+        }
+      ]
+    },
+    {
+      "code": "lab-1",
+      "display": "WBC",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "WBC"
+        },
+        {
+          "language": "en",
+          "value": "Leukocytes [#/volume] in Blood by Automated count"
+        }
+      ],
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "lab-A"
+        }
+      ]
+    },
+    {
+      "code": "lab-2",
+      "display": "Neu#",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Neu#"
+        },
+        {
+          "language": "en",
+          "value": "Neutrophils [#/volume] in Blood by Automated count"
+        }
+      ],
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "lab-A"
+        }
+      ]
+    },
+    {
+      "code": "lab-3",
+      "display": "Lym#",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Lym#"
+        },
+        {
+          "language": "en",
+          "value": "Lymphocytes [#/volume] in Blood by Automated count"
+        }
+      ],
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "lab-A"
+        }
+      ]
+    },
+    {
+      "code": "lab-4",
+      "display": "Mon#",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Mon#"
+        },
+        {
+          "language": "en",
+          "value": "Monocytes [#/volume] in Blood by Automated count"
+        }
+      ],
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "lab-A"
+        }
+      ]
+    },
+    {
+      "code": "lab-5",
+      "display": "Eos#",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Eos#"
+        },
+        {
+          "language": "en",
+          "value": "Eosinophils [#/volume] in Blood by Automated count"
+        }
+      ],
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "lab-A"
+        }
+      ]
+    },
+    {
+      "code": "lab-6",
+      "display": "Bas#",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Bas#"
+        },
+        {
+          "language": "en",
+          "value": "Basophils [#/volume] in Blood by Automated count"
+        }
+      ],
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "lab-A"
+        }
+      ]
+    },
+    {
+      "code": "lab-7",
+      "display": "Neu%",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Neu%"
+        },
+        {
+          "language": "en",
+          "value": "Neutrophils/100 leukocytes in Blood by Automated count"
+        }
+      ],
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "lab-A"
+        }
+      ]
+    },
+    {
+      "code": "lab-8",
+      "display": "Lym%",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Lym%"
+        },
+        {
+          "language": "en",
+          "value": "Lymphocytes/100 leukocytes in Blood by Automated count"
+        }
+      ],
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "lab-A"
+        }
+      ]
+    },
+    {
+      "code": "lab-9",
+      "display": "Mon%",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Mon%"
+        },
+        {
+          "language": "en",
+          "value": "Monocytes/100 leukocytes in Blood by Automated count"
+        }
+      ],
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "lab-A"
+        }
+      ]
+    },
+    {
+      "code": "lab-10",
+      "display": "Eos%",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Eos%"
+        },
+        {
+          "language": "en",
+          "value": "Eosinophils/100 leukocytes in Blood by Automated count"
+        }
+      ],
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "lab-A"
+        }
+      ]
+    },
+    {
+      "code": "lab-11",
+      "display": "Bas%",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Bas%"
+        },
+        {
+          "language": "en",
+          "value": "Basophils/100 leukocytes in Blood by Automated count"
+        }
+      ],
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "lab-A"
+        }
+      ]
+    },
+    {
+      "code": "lab-12",
+      "display": "RBC",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "RBC"
+        },
+        {
+          "language": "en",
+          "value": "Erythrocytes [#/volume] in Blood by Automated count"
+        }
+      ],
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "lab-A"
+        }
+      ]
+    },
+    {
+      "code": "lab-13",
+      "display": "HGB",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "HGB"
+        },
+        {
+          "language": "en",
+          "value": "Hemoglobin [Mass/volume] in Blood"
+        }
+      ],
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "lab-A"
+        }
+      ]
+    },
+    {
+      "code": "lab-14",
+      "display": "HCT",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "HCT"
+        },
+        {
+          "language": "en",
+          "value": "Hematocrit [Volume Fraction] of Blood by Automated count"
+        }
+      ],
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "lab-A"
+        }
+      ]
+    },
+    {
+      "code": "lab-15",
+      "display": "MCV",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "MCV"
+        },
+        {
+          "language": "en",
+          "value": "MCV [Entitic volume] by Automated count"
+        }
+      ],
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "lab-A"
+        }
+      ]
+    },
+    {
+      "code": "lab-16",
+      "display": "MCH",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "MCH"
+        },
+        {
+          "language": "en",
+          "value": "MCH [Entitic mass] by Automated count"
+        }
+      ],
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "lab-A"
+        }
+      ]
+    },
+    {
+      "code": "lab-17",
+      "display": "MCHC",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "MCHC"
+        },
+        {
+          "language": "en",
+          "value": "MCHC [Mass/volume] by Automated count"
+        }
+      ],
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "lab-A"
+        }
+      ]
+    },
+    {
+      "code": "lab-18",
+      "display": "RDW-CV",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "RDW-CV"
+        },
+        {
+          "language": "en",
+          "value": "Erythrocyte distribution width (RDW-CV) [Ratio] by Automated count"
+        }
+      ],
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "lab-A"
+        }
+      ]
+    },
+    {
+      "code": "lab-19",
+      "display": "RDW-SD",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "RDW-SD"
+        },
+        {
+          "language": "en",
+          "value": "Erythrocyte distribution width (RDW-SD) [Entitic volume] by Automated count"
+        }
+      ],
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "lab-A"
+        }
+      ]
+    },
+    {
+      "code": "lab-20",
+      "display": "PLT",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "PLT"
+        },
+        {
+          "language": "en",
+          "value": "Platelets [#/volume] in Blood by Automated count"
+        }
+      ],
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "lab-A"
+        }
+      ]
+    },
+    {
+      "code": "lab-21",
+      "display": "MPV",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "MPV"
+        },
+        {
+          "language": "en",
+          "value": "Mean platelet volume [Entitic volume] in Blood by Automated count"
+        }
+      ],
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "lab-A"
+        }
+      ]
+    },
+    {
+      "code": "lab-22",
+      "display": "PDW",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "PDW"
+        },
+        {
+          "language": "en",
+          "value": "Platelet distribution width [Entitic volume] in Blood by Automated count"
+        }
+      ],
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "lab-A"
+        }
+      ]
+    },
+    {
+      "code": "lab-23",
+      "display": "PCT",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "PCT"
+        },
+        {
+          "language": "en",
+          "value": "Plateletcrit [Volume Fraction] of Blood by Automated count"
+        }
+      ],
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "lab-A"
+        }
+      ]
+    },
+    {
+      "code": "lab-24",
+      "display": "P-LCC",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "P-LCC"
+        },
+        {
+          "language": "en",
+          "value": "Platelet large cell count [#/volume] in Blood by Automated count"
+        }
+      ],
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "lab-A"
+        }
+      ]
+    },
+    {
+      "code": "lab-25",
+      "display": "P-LCR",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "P-LCR"
+        },
+        {
+          "language": "en",
+          "value": "Platelet large cell ratio [#] in Blood by Automated count"
+        }
+      ],
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "lab-A"
+        }
+      ]
+    },
+    {
+      "code": "lab-26",
+      "display": "ECHT (eritrotsitlarning cho'kish tezligi)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "СОЭ(скорость оседания эритроцитов)"
+        },
+        {
+          "language": "en",
+          "value": "Erythrocyte sedimentation rate (ESR) by Westergren method"
+        }
+      ],
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "lab-A"
+        }
+      ]
+    },
+    {
+      "code": "lab-B",
+      "display": "Qon koagulogrammasi (qon ivish ko'rsatkichlari)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Коагулограммы крови"
+        },
+        {
+          "language": "en",
+          "value": "Coagulation panel"
+        }
+      ]
+    },
+    {
+      "code": "lab-27",
+      "display": "Kvik bo'yicha protrombin indeksi",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Протромбиновый индекс по Квику"
+        },
+        {
+          "language": "en",
+          "value": "Prothrombin activity (Quick) [Ratio] in Platelet poor plasma by Coagulation assay"
+        }
+      ],
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "lab-B"
+        }
+      ]
+    },
+    {
+      "code": "lab-28",
+      "display": "Protrombin vaqti",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Протромбиновое время"
+        },
+        {
+          "language": "en",
+          "value": "Prothrombin time (PT) [Time] in Platelet poor plasma by Coagulation assay"
+        }
+      ],
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "lab-B"
+        }
+      ]
+    },
+    {
+      "code": "lab-29",
+      "display": "Xalqaro normallashtirilgan nisbat (INR)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "МНО"
+        },
+        {
+          "language": "en",
+          "value": "INR (International normalized ratio) in Platelet poor plasma by Coagulation assay"
+        }
+      ],
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "lab-B"
+        }
+      ]
+    },
+    {
+      "code": "lab-30",
+      "display": "Trombotest",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Тромботест"
+        },
+        {
+          "language": "en",
+          "value": "Thrombotest [Interpretation] in Platelet poor plasma"
+        }
+      ],
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "lab-B"
+        }
+      ]
+    },
+    {
+      "code": "lab-31",
+      "display": "Fibrinogen",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Фибриноген"
+        },
+        {
+          "language": "en",
+          "value": "Fibrinogen [Mass/volume] in Platelet poor plasma by Coagulation assay"
+        }
+      ],
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "lab-B"
+        }
+      ]
+    },
+    {
+      "code": "lab-32",
+      "display": "Faollashtirilgan qisman tromboplastin vaqti",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "АЧТВ"
+        },
+        {
+          "language": "en",
+          "value": "Activated partial thromboplastin time (APTT) [Time] in Platelet poor plasma by Coagulation assay"
+        }
+      ],
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "lab-B"
+        }
+      ]
+    },
+    {
+      "code": "lab-33",
+      "display": "Trombin vaqti",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Тромбиновое время"
+        },
+        {
+          "language": "en",
+          "value": "Thrombin time (TT) [Time] in Platelet poor plasma by Coagulation assay"
+        }
+      ],
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "lab-B"
+        }
+      ]
+    },
+    {
+      "code": "lab-C",
+      "display": "Sitologik tekshiruv (surtma)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Цитологическое исследование(мазок)"
+        },
+        {
+          "language": "en",
+          "value": "Cytology study of genital specimen by Light microscopy"
+        }
+      ]
+    },
+    {
+      "code": "lab-34",
+      "display": "Leykotsitlar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Лейкоциты"
+        },
+        {
+          "language": "en",
+          "value": "Leukocytes [Presence] in Genital specimen by Light microscopy"
+        }
+      ],
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "lab-C"
+        }
+      ]
+    },
+    {
+      "code": "lab-35",
+      "display": "Epitelial hujayralar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Эпителиалные клетки"
+        },
+        {
+          "language": "en",
+          "value": "Epithelial cells [Presence] in Genital specimen by Light microscopy"
+        }
+      ],
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "lab-C"
+        }
+      ]
+    },
+    {
+      "code": "lab-36",
+      "display": "Mikroflora",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Микрофлора"
+        },
+        {
+          "language": "en",
+          "value": "Bacteria [Presence] in Genital specimen by Light microscopy"
+        }
+      ],
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "lab-C"
+        }
+      ]
+    },
+    {
+      "code": "lab-37",
+      "display": "Gonokokklar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Гонококки"
+        },
+        {
+          "language": "en",
+          "value": "Neisseria gonorrhoeae [Presence] in Genital specimen by Light microscopy"
+        }
+      ],
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "lab-C"
+        }
+      ]
+    },
+    {
+      "code": "lab-38",
+      "display": "Trichomonadalar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Трихомонады"
+        },
+        {
+          "language": "en",
+          "value": "Trichomonas vaginalis [Presence] in Genital specimen by Light microscopy"
+        }
+      ],
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "lab-C"
+        }
+      ]
+    },
+    {
+      "code": "lab-39",
+      "display": "Zamburug'lar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Грибы"
+        },
+        {
+          "language": "en",
+          "value": "Yeast [Presence] in Genital specimen by Light microscopy"
+        }
+      ],
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "lab-C"
+        }
+      ]
+    },
+    {
+      "code": "lab-D",
+      "display": "Najasning makroskopik tekshiruvi",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Макроскопическое исследование кала"
+        },
+        {
+          "language": "en",
+          "value": "Cytology study of genital specimen by Light microscopy"
+        }
+      ]
+    },
+    {
+      "code": "lab-40",
+      "display": "Leykotsitlar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Лейкоциты"
+        },
+        {
+          "language": "en",
+          "value": "Leukocytes [Presence] in Genital specimen by Light microscopy"
+        }
+      ],
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "lab-D"
+        }
+      ]
+    },
+    {
+      "code": "lab-41",
+      "display": "Epitelial hujayralar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Эпителиалные клетки"
+        },
+        {
+          "language": "en",
+          "value": "Epithelial cells [Presence] in Genital specimen by Light microscopy"
+        }
+      ],
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "lab-D"
+        }
+      ]
+    },
+    {
+      "code": "lab-42",
+      "display": "Mikroflora",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Микрофлора"
+        },
+        {
+          "language": "en",
+          "value": "Bacteria [Presence] in Genital specimen by Light microscopy"
+        }
+      ],
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "lab-D"
+        }
+      ]
+    },
+    {
+      "code": "lab-43",
+      "display": "Gonokokklar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Гонококки"
+        },
+        {
+          "language": "en",
+          "value": "Neisseria gonorrhoeae [Presence] in Genital specimen by Light microscopy"
+        }
+      ],
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "lab-D"
+        }
+      ]
+    },
+    {
+      "code": "lab-44",
+      "display": "Trichomonadalar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Трихомонады"
+        },
+        {
+          "language": "en",
+          "value": "Trichomonas vaginalis [Presence] in Genital specimen by Light microscopy"
+        }
+      ],
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "lab-D"
+        }
+      ]
+    },
+    {
+      "code": "lab-45",
+      "display": "Zamburug'lar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Грибы"
+        },
+        {
+          "language": "en",
+          "value": "Yeast [Presence] in Genital specimen by Light microscopy"
+        }
+      ],
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "lab-D"
+        }
+      ]
+    },
+    {
+      "code": "lab-E",
+      "display": "Najasning mikroskopik tekshiruvi",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Микроскопическое исследование кала"
+        },
+        {
+          "language": "en",
+          "value": "Microscopic examination of feces"
+        }
+      ]
+    },
+    {
+      "code": "lab-46",
+      "display": "Mushak tolalari: chiziqli",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Мышечные волокна:С исчерченностью"
+        },
+        {
+          "language": "en",
+          "value": "Muscle fibers striated [Presence] in Stool by Light microscopy"
+        }
+      ],
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "lab-E"
+        }
+      ]
+    },
+    {
+      "code": "lab-47",
+      "display": "Mushak tolalari: chiziqsiz",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Мышечные волокна:Без исчерченности"
+        },
+        {
+          "language": "en",
+          "value": "Muscle fibers non-striated [Presence] in Stool by Light microscopy"
+        }
+      ],
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "lab-E"
+        }
+      ]
+    },
+    {
+      "code": "lab-48",
+      "display": "Biriktiruvchi to'qima",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Соединительная ткань"
+        },
+        {
+          "language": "en",
+          "value": "Connective tissue [Presence] in Stool by Light microscopy"
+        }
+      ],
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "lab-E"
+        }
+      ]
+    },
+    {
+      "code": "lab-49",
+      "display": "Neytral yog'",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Жир нейтральный"
+        },
+        {
+          "language": "en",
+          "value": "Neutral fat [Presence] in Stool by Light microscopy"
+        }
+      ],
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "lab-E"
+        }
+      ]
+    },
+    {
+      "code": "lab-50",
+      "display": "Yog' kislotalari",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Жирные кислоты"
+        },
+        {
+          "language": "en",
+          "value": "Fatty acids [Presence] in Stool by Light microscopy"
+        }
+      ],
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "lab-E"
+        }
+      ]
+    },
+    {
+      "code": "lab-51",
+      "display": "Sovunlar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Мыла"
+        },
+        {
+          "language": "en",
+          "value": "Soaps [Presence] in Stool by Light microscopy"
+        }
+      ],
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "lab-E"
+        }
+      ]
+    },
+    {
+      "code": "lab-52",
+      "display": "Hazm bo'ladigan o'simlik tolasi",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Растительная клетчатка перевариваемая"
+        },
+        {
+          "language": "en",
+          "value": "Plant fibers digested [Presence] in Stool by Light microscopy"
+        }
+      ],
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "lab-E"
+        }
+      ]
+    },
+    {
+      "code": "lab-53",
+      "display": "Kraxmal",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Крахмал"
+        },
+        {
+          "language": "en",
+          "value": "Starch granules [Presence] in Stool by Light microscopy"
+        }
+      ],
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "lab-E"
+        }
+      ]
+    },
+    {
+      "code": "lab-54",
+      "display": "Yodofil flora",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Йодофильная флора"
+        },
+        {
+          "language": "en",
+          "value": "Iodophilic bacteria [Presence] in Stool by Light microscopy"
+        }
+      ],
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "lab-E"
+        }
+      ]
+    },
+    {
+      "code": "lab-55",
+      "display": "Kristallar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Кристаллы"
+        },
+        {
+          "language": "en",
+          "value": "Crystals [Presence] in Stool by Light microscopy"
+        }
+      ],
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "lab-E"
+        }
+      ]
+    },
+    {
+      "code": "lab-56",
+      "display": "Shilliq",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Слизь"
+        },
+        {
+          "language": "en",
+          "value": "Mucus [Presence] in Stool by Light microscopy"
+        }
+      ],
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "lab-E"
+        }
+      ]
+    },
+    {
+      "code": "lab-57",
+      "display": "Epiteliy",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Эпителий"
+        },
+        {
+          "language": "en",
+          "value": "Epithelial cells [Presence] in Stool by Light microscopy"
+        }
+      ],
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "lab-E"
+        }
+      ]
+    },
+    {
+      "code": "lab-58",
+      "display": "Leykotsitlar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Лейкоциты"
+        },
+        {
+          "language": "en",
+          "value": "Leukocytes [Presence] in Stool by Light microscopy"
+        }
+      ],
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "lab-E"
+        }
+      ]
+    },
+    {
+      "code": "lab-59",
+      "display": "Eritrotsitlar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Эритроциты"
+        },
+        {
+          "language": "en",
+          "value": "Erythrocytes [Presence] in Stool by Light microscopy"
+        }
+      ],
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "lab-E"
+        }
+      ]
+    },
+    {
+      "code": "lab-60",
+      "display": "Eng sodda organizmlar (protozoylar)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Простейшие"
+        },
+        {
+          "language": "en",
+          "value": "Protozoa [Presence] in Stool by Light microscopy"
+        }
+      ],
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "lab-E"
+        }
+      ]
+    },
+    {
+      "code": "lab-61",
+      "display": "Gijja tuxumlari",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Яйца глистов"
+        },
+        {
+          "language": "en",
+          "value": "Ova (helminth) [Presence] in Stool by Light microscopy"
+        }
+      ],
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "lab-E"
+        }
+      ]
+    },
+    {
+      "code": "lab-62",
+      "display": "Xamirturush zamburug'lari",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Дрожжевые грибы"
+        },
+        {
+          "language": "en",
+          "value": "Yeast [Presence] in Stool by Light microscopy"
+        }
+      ],
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "lab-E"
+        }
+      ]
+    },
+    {
+      "code": "lab-63",
+      "display": "Najasning mikroskopik kuzatuvi (nam preparat)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Микроскопическое наблюдение кала (влажная препарация)"
+        },
+        {
+          "language": "en",
+          "value": "Microscopic observation [Identifier] in Stool by Wet preparation"
+        }
+      ],
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "lab-E"
+        }
+      ]
+    },
+    {
+      "code": "lab-64",
+      "display": "Najasning Gram bo'yicha bo'yalgan holda mikroskopiyasi",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Микроскопия кала с грам-окраской"
+        },
+        {
+          "language": "en",
+          "value": "Microscopic observation [Identifier] in Stool by Gram stain"
+        }
+      ],
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "lab-E"
+        }
+      ]
+    },
+    {
+      "code": "lab-65",
+      "display": "Najasning trixrom bo'yicha bo'yalgan holda mikroskopiyasi",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Микроскопия кала с трихром-окраской"
+        },
+        {
+          "language": "en",
+          "value": "Microscopic observation [Identifier] in Stool by Trichrome stain"
+        }
+      ],
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "lab-E"
+        }
+      ]
+    },
+    {
+      "code": "lab-66",
+      "display": "Najasning qorong'i maydon usuli bilan mikroskopiyasi",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Микроскопия кала методом тёмного поля"
+        },
+        {
+          "language": "en",
+          "value": "Microscopic observation [Identifier] in Stool by Dark field examination"
+        }
+      ],
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "lab-E"
+        }
+      ]
+    },
+    {
+      "code": "lab-67",
+      "display": "Yorug'lik mikroskopiyasi orqali najasda aniqlangan gijja tuxumlari va parazitlar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Яйца и паразиты, выявленные в кале при светлой микроскопии"
+        },
+        {
+          "language": "en",
+          "value": "Ova and parasites identified in Stool by Light microscopy"
+        }
+      ],
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "lab-E"
+        }
+      ]
+    },
+    {
+      "code": "lab-F",
+      "display": "Siydikning makroskopik tekshiruvi",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Макроскопическое исследование мочи"
+        },
+        {
+          "language": "en",
+          "value": "Urinalysis macro (dipstick) panel"
+        }
+      ]
+    },
+    {
+      "code": "lab-68",
+      "display": "Siydik hajmi",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Количество"
+        },
+        {
+          "language": "en",
+          "value": "Urine volume [Volume]"
+        }
+      ],
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "lab-F"
+        }
+      ]
+    },
+    {
+      "code": "lab-69",
+      "display": "Siydik rangi",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Цвет"
+        },
+        {
+          "language": "en",
+          "value": "Color of Urine"
+        }
+      ],
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "lab-F"
+        }
+      ]
+    },
+    {
+      "code": "lab-70",
+      "display": "Siydikning tashqi ko'rinishi",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Прозрачность"
+        },
+        {
+          "language": "en",
+          "value": "Appearance of Urine"
+        }
+      ],
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "lab-F"
+        }
+      ]
+    },
+    {
+      "code": "lab-71",
+      "display": "Refraktometriya orqali siydikning solishtirma zichligi",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Относительная плотность"
+        },
+        {
+          "language": "en",
+          "value": "Specific gravity of Urine by Refractometry"
+        }
+      ],
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "lab-F"
+        }
+      ]
+    },
+    {
+      "code": "lab-72",
+      "display": "Siydik pH darajasi",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Реакция"
+        },
+        {
+          "language": "en",
+          "value": "Urine pH"
+        }
+      ],
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "lab-F"
+        }
+      ]
+    },
+    {
+      "code": "lab-73",
+      "display": "Test-tasma orqali siydikdagi oqsil miqdori",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Белок"
+        },
+        {
+          "language": "en",
+          "value": "Protein [Mass/volume] in Urine by Test strip"
+        }
+      ],
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "lab-F"
+        }
+      ]
+    },
+    {
+      "code": "lab-74",
+      "display": "Test-tasma orqali siydikdagi glyukoza miqdori",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Глюкоза"
+        },
+        {
+          "language": "en",
+          "value": "Glucose [Mass/volume] in Urine by Test strip"
+        }
+      ],
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "lab-F"
+        }
+      ]
+    },
+    {
+      "code": "lab-75",
+      "display": "Test-tasma orqali siydikdagi ketonlar miqdori",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Кетоновые тела"
+        },
+        {
+          "language": "en",
+          "value": "Ketones [Mass/volume] in Urine by Test strip"
+        }
+      ],
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "lab-F"
+        }
+      ]
+    },
+    {
+      "code": "lab-76",
+      "display": "Test-tasma orqali siydikda gemoglobinning mavjudligi",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Реакция на наличие крови"
+        },
+        {
+          "language": "en",
+          "value": "Hemoglobin [Presence] in Urine by Test strip"
+        }
+      ],
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "lab-F"
+        }
+      ]
+    },
+    {
+      "code": "lab-77",
+      "display": "Test-tasma orqali siydikda bilirubinning mavjudligi",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Билирубин"
+        },
+        {
+          "language": "en",
+          "value": "Bilirubin [Presence] in Urine by Test strip"
+        }
+      ],
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "lab-F"
+        }
+      ]
+    },
+    {
+      "code": "lab-78",
+      "display": "Test-tasma orqali siydikda urobilinogening mavjudligi",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Уробилиноген"
+        },
+        {
+          "language": "en",
+          "value": "Urobilinogen [Presence] in Urine by Test strip"
+        }
+      ],
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "lab-F"
+        }
+      ]
+    },
+    {
+      "code": "lab-79",
+      "display": "Siydikda o't kislotalarining mavjudligi",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Желчные кислоты"
+        },
+        {
+          "language": "en",
+          "value": "Bile acids [Presence] in Urine"
+        }
+      ],
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "lab-F"
+        }
+      ]
+    },
+    {
+      "code": "lab-G",
+      "display": "Siydikning mikroskopik tekshiruvi",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Микроскопическое исследование мочи"
+        },
+        {
+          "language": "en",
+          "value": "Microscopic observation [Identifier] in Urine sediment by Light microscopy"
+        }
+      ]
+    },
+    {
+      "code": "lab-80",
+      "display": "Epiteliy: yassi",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Эпителий: плоский"
+        },
+        {
+          "language": "en",
+          "value": "Epithelial cells.squamous [#/area] in Urine sediment by Microscopy HPF"
+        }
+      ],
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "lab-G"
+        }
+      ]
+    },
+    {
+      "code": "lab-81",
+      "display": "Epiteliy: o'tuvchi",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Эпителий: переходный"
+        },
+        {
+          "language": "en",
+          "value": "Epithelial cells.transitional [#/area] in Urine sediment by Microscopy HPF"
+        }
+      ],
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "lab-G"
+        }
+      ]
+    },
+    {
+      "code": "lab-82",
+      "display": "Epiteliy: buyrak epiteliyasi",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Эпителий: почечный"
+        },
+        {
+          "language": "en",
+          "value": "Epithelial cells.renal [#/area] in Urine sediment by Microscopy HPF"
+        }
+      ],
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "lab-G"
+        }
+      ]
+    },
+    {
+      "code": "lab-83",
+      "display": "Leykotsitlar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Лейкоциты"
+        },
+        {
+          "language": "en",
+          "value": "Leukocytes [#/area] in Urine sediment by Microscopy HPF"
+        }
+      ],
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "lab-G"
+        }
+      ]
+    },
+    {
+      "code": "lab-84",
+      "display": "O'zgargan eritrotsitlar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Эритроциты изменённые"
+        },
+        {
+          "language": "en",
+          "value": "Erythrocytes dysmorphic [#/area] in Urine sediment by Microscopy HPF"
+        }
+      ],
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "lab-G"
+        }
+      ]
+    },
+    {
+      "code": "lab-85",
+      "display": "O'zgarmagan eritrotsitlar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Эритроциты неизменённые"
+        },
+        {
+          "language": "en",
+          "value": "Erythrocytes [#/area] in Urine sediment by Microscopy HPF"
+        }
+      ],
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "lab-G"
+        }
+      ]
+    },
+    {
+      "code": "lab-86",
+      "display": "Silindrlar: gialinli",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Цилиндры: гиалиновые"
+        },
+        {
+          "language": "en",
+          "value": "Casts.hyaline [#/area] in Urine sediment by Microscopy LPF"
+        }
+      ],
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "lab-G"
+        }
+      ]
+    },
+    {
+      "code": "lab-87",
+      "display": "Silindrlar: mumsimon",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Цилиндры: восковидные"
+        },
+        {
+          "language": "en",
+          "value": "Casts.waxy [#/area] in Urine sediment by Microscopy LPF"
+        }
+      ],
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "lab-G"
+        }
+      ]
+    },
+    {
+      "code": "lab-88",
+      "display": "Silindrlar: donador",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Цилиндры: зернистые"
+        },
+        {
+          "language": "en",
+          "value": "Casts.granular [#/area] in Urine sediment by Microscopy LPF"
+        }
+      ],
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "lab-G"
+        }
+      ]
+    },
+    {
+      "code": "lab-89",
+      "display": "Silindrlar: eritrotsitar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Цилиндры: эритроцитарные"
+        },
+        {
+          "language": "en",
+          "value": "Casts.red blood cells [#/area] in Urine sediment by Microscopy LPF"
+        }
+      ],
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "lab-G"
+        }
+      ]
+    },
+    {
+      "code": "lab-90",
+      "display": "Silindrlar: leykotsitar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Цилиндры: лейкоцитарные"
+        },
+        {
+          "language": "en",
+          "value": "Casts.white blood cells [#/area] in Urine sediment by Microscopy LPF"
+        }
+      ],
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "lab-G"
+        }
+      ]
+    },
+    {
+      "code": "lab-91",
+      "display": "Silindrlar: epitelial",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Цилиндры: эпителиальные"
+        },
+        {
+          "language": "en",
+          "value": "Casts.epithelial cells [#/area] in Urine sediment by Microscopy LPF"
+        }
+      ],
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "lab-G"
+        }
+      ]
+    },
+    {
+      "code": "lab-92",
+      "display": "Shilliq",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Слизь"
+        },
+        {
+          "language": "en",
+          "value": "Mucus [Presence] in Urine sediment by Light microscopy"
+        }
+      ],
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "lab-G"
+        }
+      ]
+    },
+    {
+      "code": "lab-93",
+      "display": "Tuzlar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Соли"
+        },
+        {
+          "language": "en",
+          "value": "Crystals [Presence] in Urine sediment by Light microscopy"
+        }
+      ],
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "lab-G"
+        }
+      ]
+    },
+    {
+      "code": "lab-94",
+      "display": "Bakteriyalar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Бактерии"
+        },
+        {
+          "language": "en",
+          "value": "Bacteria [Presence] in Urine sediment by Light microscopy"
+        }
+      ],
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "lab-G"
+        }
+      ]
+    },
+    {
+      "code": "lab-H",
+      "display": "Biokimyoviy qon tahlili",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Биохимическое исследование крови"
+        },
+        {
+          "language": "en",
+          "value": "Comprehensive metabolic 2000 panel – Serum or Plasma"
+        }
+      ]
+    },
+    {
+      "code": "lab-95",
+      "display": "Umumiy oqsil",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Общий белок"
+        },
+        {
+          "language": "en",
+          "value": "Protein [Mass/volume] in Serum or Plasma"
+        }
+      ],
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "lab-H"
+        }
+      ]
+    },
+    {
+      "code": "lab-96",
+      "display": "Albumin",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Альбумин"
+        },
+        {
+          "language": "en",
+          "value": "Albumin [Mass/volume] in Serum or Plasma"
+        }
+      ],
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "lab-H"
+        }
+      ]
+    },
+    {
+      "code": "lab-97",
+      "display": "Xolesterin (umumiy)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Холестерин (общий)"
+        },
+        {
+          "language": "en",
+          "value": "Cholesterol [Mass/volume] in Serum or Plasma"
+        }
+      ],
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "lab-H"
+        }
+      ]
+    },
+    {
+      "code": "lab-98",
+      "display": "Triglitseridlar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Триглицериды"
+        },
+        {
+          "language": "en",
+          "value": "Triglyceride [Mass/volume] in Serum or Plasma"
+        }
+      ],
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "lab-H"
+        }
+      ]
+    },
+    {
+      "code": "lab-99",
+      "display": "Glyukoza",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Глюкоза"
+        },
+        {
+          "language": "en",
+          "value": "Glucose [Mass/volume] in Serum or Plasma"
+        }
+      ],
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "lab-H"
+        }
+      ]
+    },
+    {
+      "code": "lab-100",
+      "display": "Mochevina",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Мочевина"
+        },
+        {
+          "language": "en",
+          "value": "Urea nitrogen [Mass/volume] in Serum or Plasma"
+        }
+      ],
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "lab-H"
+        }
+      ]
+    },
+    {
+      "code": "lab-101",
+      "display": "Kreatinin",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Креатинин"
+        },
+        {
+          "language": "en",
+          "value": "Creatinine [Mass/volume] in Serum or Plasma"
+        }
+      ],
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "lab-H"
+        }
+      ]
+    },
+    {
+      "code": "lab-102",
+      "display": "Umumiy bilirubin",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Билирубин общий"
+        },
+        {
+          "language": "en",
+          "value": "Bilirubin.total [Mass/volume] in Serum or Plasma"
+        }
+      ],
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "lab-H"
+        }
+      ]
+    },
+    {
+      "code": "lab-103",
+      "display": "To'g'ri (bog'langan) bilirubin",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Билирубин прямой (связанный)"
+        },
+        {
+          "language": "en",
+          "value": "Bilirubin.direct [Mass/volume] in Serum or Plasma"
+        }
+      ],
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "lab-H"
+        }
+      ]
+    },
+    {
+      "code": "lab-104",
+      "display": "Bilvosita (erkin) bilirubin",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Билирубин непрямой (свободный)"
+        },
+        {
+          "language": "en",
+          "value": "Bilirubin.indirect [Mass/volume] in Serum or Plasma"
+        }
+      ],
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "lab-H"
+        }
+      ]
+    },
+    {
+      "code": "lab-105",
+      "display": "Alaninaminotransferaza (ALT)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Аланинаминотрансфераза (АЛТ)"
+        },
+        {
+          "language": "en",
+          "value": "Alanine aminotransferase [Enzymatic activity/volume] in Serum or Plasma"
+        }
+      ],
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "lab-H"
+        }
+      ]
+    },
+    {
+      "code": "lab-106",
+      "display": "Aspartataminotransferaza (AST)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Аспартатаминотрансфераза (АСТ)"
+        },
+        {
+          "language": "en",
+          "value": "Aspartate aminotransferase [Enzymatic activity/volume] in Serum or Plasma"
+        }
+      ],
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "lab-H"
+        }
+      ]
+    },
+    {
+      "code": "lab-107",
+      "display": "Laktatdegidrogenaza (LDH)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Лактатдегидрогеназа (ЛДГ)"
+        },
+        {
+          "language": "en",
+          "value": "Lactate dehydrogenase [Enzymatic activity/volume] in Serum or Plasma"
+        }
+      ],
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "lab-H"
+        }
+      ]
+    },
+    {
+      "code": "lab-108",
+      "display": "Gammaglutamiltransferaza (GGT)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Гаммаглутамилтрансфераза (ГГТ)"
+        },
+        {
+          "language": "en",
+          "value": "Gamma glutamyl transferase [Enzymatic activity/volume] in Serum or Plasma"
+        }
+      ],
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "lab-H"
+        }
+      ]
+    },
+    {
+      "code": "lab-109",
+      "display": "Alfa-amilaza",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Альфа-амилаза"
+        },
+        {
+          "language": "en",
+          "value": "Amylase [Enzymatic activity/volume] in Serum or Plasma"
+        }
+      ],
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "lab-H"
+        }
+      ]
+    },
+    {
+      "code": "lab-110",
+      "display": "Ishqoriy fosfataza",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Щелочная фосфатаза (ИФ)"
+        },
+        {
+          "language": "en",
+          "value": "Alkaline phosphatase [Enzymatic activity/volume] in Serum or Plasma"
+        }
+      ],
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "lab-H"
+        }
+      ]
+    },
+    {
+      "code": "lab-111",
+      "display": "Kaliy",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Калий"
+        },
+        {
+          "language": "en",
+          "value": "Potassium [Moles/volume] in Serum or Plasma"
+        }
+      ],
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "lab-H"
+        }
+      ]
+    },
+    {
+      "code": "lab-112",
+      "display": "Natriy",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Натрий"
+        },
+        {
+          "language": "en",
+          "value": "Sodium [Moles/volume] in Serum or Plasma"
+        }
+      ],
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "lab-H"
+        }
+      ]
+    },
+    {
+      "code": "lab-113",
+      "display": "Kalsiy",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Кальций"
+        },
+        {
+          "language": "en",
+          "value": "Calcium [Mass/volume] in Serum or Plasma"
+        }
+      ],
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "lab-H"
+        }
+      ]
+    },
+    {
+      "code": "lab-114",
+      "display": "Temir",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Железо"
+        },
+        {
+          "language": "en",
+          "value": "Iron [Mass/volume] in Serum or Plasma"
+        }
+      ],
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "lab-H"
+        }
+      ]
+    },
+    {
+      "code": "lab-115",
+      "display": "Fosfor",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Фосфор"
+        },
+        {
+          "language": "en",
+          "value": "Phosphate [Mass/volume] in Serum or Plasma"
+        }
+      ],
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "lab-H"
+        }
+      ]
+    },
+    {
+      "code": "lab-116",
+      "display": "Xlor",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Хлор"
+        },
+        {
+          "language": "en",
+          "value": "Chloride [Moles/volume] in Serum or Plasma"
+        }
+      ],
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "lab-H"
+        }
+      ]
+    },
+    {
+      "code": "lab-I",
+      "display": "Gormonal qon tahlili",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Гормональное исследование крови"
+        },
+        {
+          "language": "en",
+          "value": "Hormone studies (panel) – Serum or Plasma"
+        }
+      ]
+    },
+    {
+      "code": "lab-117",
+      "display": "T3 (triiodtironin)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Т3"
+        },
+        {
+          "language": "en",
+          "value": "Triiodothyronine (T3) [Mass/volume] in Serum or Plasma"
+        }
+      ],
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "lab-I"
+        }
+      ]
+    },
+    {
+      "code": "lab-118",
+      "display": "T4 (tiroksin)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Т4"
+        },
+        {
+          "language": "en",
+          "value": "Thyroxine (T4) [Mass/volume] in Serum or Plasma"
+        }
+      ],
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "lab-I"
+        }
+      ]
+    },
+    {
+      "code": "lab-119",
+      "display": "TTG (tireotrop gormon)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "ТТГ"
+        },
+        {
+          "language": "en",
+          "value": "Thyrotropin (TSH) [Units/volume] in Serum or Plasma"
+        }
+      ],
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "lab-I"
+        }
+      ]
+    },
+    {
+      "code": "lab-120",
+      "display": "Estradiol",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Эстрадиол"
+        },
+        {
+          "language": "en",
+          "value": "Estradiol (E2) [Mass/volume] in Serum or Plasma"
+        }
+      ],
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "lab-I"
+        }
+      ]
+    },
+    {
+      "code": "lab-121",
+      "display": "Testosteron",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Тестостерон"
+        },
+        {
+          "language": "en",
+          "value": "Testosterone [Mass/volume] in Serum or Plasma"
+        }
+      ],
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "lab-I"
+        }
+      ]
+    },
+    {
+      "code": "lab-122",
+      "display": "Kortizol",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Кортизол"
+        },
+        {
+          "language": "en",
+          "value": "Cortisol [Mass/volume] in Serum or Plasma"
+        }
+      ],
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "lab-I"
+        }
+      ]
+    },
+    {
+      "code": "lab-123",
+      "display": "Prolaktin",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Пролактин"
+        },
+        {
+          "language": "en",
+          "value": "Prolactin [Mass/volume] in Serum or Plasma"
+        }
+      ],
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "lab-I"
+        }
+      ]
+    },
+    {
+      "code": "lab-124",
+      "display": "LG (luteinlashtiruvchi gormon)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "ЛГ"
+        },
+        {
+          "language": "en",
+          "value": "Luteinizing hormone (LH) [Units/volume] in Serum or Plasma"
+        }
+      ],
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "lab-I"
+        }
+      ]
+    },
+    {
+      "code": "lab-125",
+      "display": "FSG (follikulni rag'batlantiruvchi gormon)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "ФСГ"
+        },
+        {
+          "language": "en",
+          "value": "Follicle stimulating hormone (FSH) [Units/volume] in Serum or Plasma"
+        }
+      ],
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "lab-I"
+        }
+      ]
+    },
+    {
+      "code": "lab-126",
+      "display": "Progesteron",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Прогестерон"
+        },
+        {
+          "language": "en",
+          "value": "Progesterone [Mass/volume] in Serum or Plasma"
+        }
+      ],
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "lab-I"
+        }
+      ]
+    },
+    {
+      "code": "lab-127",
+      "display": "PSA (prostata-spetsifik antigen)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "ПСА"
+        },
+        {
+          "language": "en",
+          "value": "Prostate specific Ag (PSA) [Mass/volume] in Serum or Plasma"
+        }
+      ],
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "lab-I"
+        }
+      ]
+    },
+    {
+      "code": "lab-J",
+      "display": "Spermogramma tekshiruvi",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Исследование спермограммы"
+        },
+        {
+          "language": "en",
+          "value": "Semen analysis (panel) – Semen"
+        }
+      ]
+    },
+    {
+      "code": "lab-128",
+      "display": "Hajmi",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Объём"
+        },
+        {
+          "language": "en",
+          "value": "Semen volume [Volume]"
+        }
+      ],
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "lab-J"
+        }
+      ]
+    },
+    {
+      "code": "lab-129",
+      "display": "Rangi",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Цвет"
+        },
+        {
+          "language": "en",
+          "value": "Semen color [Type]"
+        }
+      ],
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "lab-J"
+        }
+      ]
+    },
+    {
+      "code": "lab-130",
+      "display": "Hidi",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Запах"
+        },
+        {
+          "language": "en",
+          "value": "Semen odor [Type]"
+        }
+      ],
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "lab-J"
+        }
+      ]
+    },
+    {
+      "code": "lab-131",
+      "display": "Suyulish vaqti",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Время разжижения"
+        },
+        {
+          "language": "en",
+          "value": "Semen liquefaction time"
+        }
+      ],
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "lab-J"
+        }
+      ]
+    },
+    {
+      "code": "lab-132",
+      "display": "Kislotaliligi (pH)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Кислотность (pH)"
+        },
+        {
+          "language": "en",
+          "value": "Semen pH"
+        }
+      ],
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "lab-J"
+        }
+      ]
+    },
+    {
+      "code": "lab-133",
+      "display": "Qovushqoqligi",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Вязкость"
+        },
+        {
+          "language": "en",
+          "value": "Semen viscosity [Presence]"
+        }
+      ],
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "lab-J"
+        }
+      ]
+    },
+    {
+      "code": "lab-134",
+      "display": "1 ml dagi spermatozoidlar soni",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Количество сперматозоидов в 1 мл"
+        },
+        {
+          "language": "en",
+          "value": "Spermatozoa [#/volume] in Semen"
+        }
+      ],
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "lab-J"
+        }
+      ]
+    },
+    {
+      "code": "lab-135",
+      "display": "Umumiy hajmdagi spermatozoidlar soni",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Количество сперматозоидов в общем объёме"
+        },
+        {
+          "language": "en",
+          "value": "Spermatozoa total count [#] in Ejaculate"
+        }
+      ],
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "lab-J"
+        }
+      ]
+    },
+    {
+      "code": "lab-136",
+      "display": "Harakatchanlik — faol",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Подвижность — активные"
+        },
+        {
+          "language": "en",
+          "value": "Spermatozoa progressive motility [#/volume] in Semen"
+        }
+      ],
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "lab-J"
+        }
+      ]
+    },
+    {
+      "code": "lab-137",
+      "display": "Harakatchanlik — sust",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Подвижность — вялые"
+        },
+        {
+          "language": "en",
+          "value": "Spermatozoa non-progressive motility [#/volume] in Semen"
+        }
+      ],
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "lab-J"
+        }
+      ]
+    },
+    {
+      "code": "lab-138",
+      "display": "Harakatchanlik — harakatsiz",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Подвижность — неподвижные"
+        },
+        {
+          "language": "en",
+          "value": "Spermatozoa immotile [#/volume] in Semen"
+        }
+      ],
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "lab-J"
+        }
+      ]
+    },
+    {
+      "code": "lab-139",
+      "display": "Tirik spermatozoidlar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Живые сперматозоиды"
+        },
+        {
+          "language": "en",
+          "value": "Spermatozoa viability [#/volume] in Semen by Stain"
+        }
+      ],
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "lab-J"
+        }
+      ]
+    },
+    {
+      "code": "lab-140",
+      "display": "Spermatozoidlarning patologik shakllari",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Патологические формы сперматозоидов"
+        },
+        {
+          "language": "en",
+          "value": "Spermatozoa abnormal forms [#/volume] in Semen"
+        }
+      ],
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "lab-J"
+        }
+      ]
+    },
+    {
+      "code": "lab-141",
+      "display": "Spermatogenez epiteliyasi",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Эпителий сперматогенеза"
+        },
+        {
+          "language": "en",
+          "value": "Epithelial cells [Presence] in Semen"
+        }
+      ],
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "lab-J"
+        }
+      ]
+    },
+    {
+      "code": "lab-142",
+      "display": "Leykotsitlar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Лейкоциты"
+        },
+        {
+          "language": "en",
+          "value": "Leukocytes [#/volume] in Semen"
+        }
+      ],
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "lab-J"
+        }
+      ]
+    },
+    {
+      "code": "lab-143",
+      "display": "Letsitin donachalari",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Лецитиновые зёрна"
+        },
+        {
+          "language": "en",
+          "value": "Lecithin bodies [Presence] in Semen by Microscopy"
+        }
+      ],
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "lab-J"
+        }
+      ]
+    },
+    {
+      "code": "lab-144",
+      "display": "Agglyutinatsiya",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Агглютинация"
+        },
+        {
+          "language": "en",
+          "value": "Spermatozoa agglutination [Presence] in Semen"
+        }
+      ],
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "lab-J"
+        }
+      ]
+    },
+    {
+      "code": "lab-145",
+      "display": "Fruktoza",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Фруктоза"
+        },
+        {
+          "language": "en",
+          "value": "Fructose [Moles/volume] in Semen"
+        }
+      ],
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "lab-J"
+        }
+      ]
+    },
+    {
+      "code": "lab-146",
+      "display": "Limon kislotasi",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Лимонная кислота"
+        },
+        {
+          "language": "en",
+          "value": "Citric acid [Moles/volume] in Semen"
+        }
+      ],
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "lab-J"
+        }
+      ]
+    },
+    {
+      "code": "lab-K",
+      "display": "Balg'am tahlili",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Анализ мокроты"
+        },
+        {
+          "language": "en",
+          "value": "Sputum studies (panel) – Sputum"
+        }
+      ]
+    },
+    {
+      "code": "lab-147",
+      "display": "Miqdori",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Количество"
+        },
+        {
+          "language": "en",
+          "value": "Sputum volume [Volume]"
+        }
+      ],
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "lab-K"
+        }
+      ]
+    },
+    {
+      "code": "lab-148",
+      "display": "Hidi",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Запах"
+        },
+        {
+          "language": "en",
+          "value": "Sputum odor [Type]"
+        }
+      ],
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "lab-K"
+        }
+      ]
+    },
+    {
+      "code": "lab-149",
+      "display": "Rangi",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Цвет"
+        },
+        {
+          "language": "en",
+          "value": "Sputum color [Type]"
+        }
+      ],
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "lab-K"
+        }
+      ]
+    },
+    {
+      "code": "lab-150",
+      "display": "Xususiyati (tavsifi)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Характер (описание)"
+        },
+        {
+          "language": "en",
+          "value": "Sputum gross description"
+        }
+      ],
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "lab-K"
+        }
+      ]
+    },
+    {
+      "code": "lab-151",
+      "display": "Aralashmalar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Примеси"
+        },
+        {
+          "language": "en",
+          "value": "Sputum inclusions [Type]"
+        }
+      ],
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "lab-K"
+        }
+      ]
+    },
+    {
+      "code": "lab-152",
+      "display": "Konsistensiyasi",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Консистенция"
+        },
+        {
+          "language": "en",
+          "value": "Sputum consistency [Type]"
+        }
+      ],
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "lab-K"
+        }
+      ]
+    },
+    {
+      "code": "lab-153",
+      "display": "Epiteliy",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Эпителий"
+        },
+        {
+          "language": "en",
+          "value": "Epithelial cells [Presence] in Sputum by Light microscopy"
+        }
+      ],
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "lab-K"
+        }
+      ]
+    },
+    {
+      "code": "lab-154",
+      "display": "Alveolyar makrofaglar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Альвеолярные макрофаги"
+        },
+        {
+          "language": "en",
+          "value": "Macrophages [Presence] in Sputum by Light microscopy"
+        }
+      ],
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "lab-K"
+        }
+      ]
+    },
+    {
+      "code": "lab-155",
+      "display": "Leykotsitlar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Лейкоциты"
+        },
+        {
+          "language": "en",
+          "value": "Leukocytes [#/area] in Sputum by Light microscopy"
+        }
+      ],
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "lab-K"
+        }
+      ]
+    },
+    {
+      "code": "lab-156",
+      "display": "Eritrotsitlar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Эритроциты"
+        },
+        {
+          "language": "en",
+          "value": "Erythrocytes [Presence] in Sputum by Light microscopy"
+        }
+      ],
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "lab-K"
+        }
+      ]
+    },
+    {
+      "code": "lab-157",
+      "display": "Tolalar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Волокна"
+        },
+        {
+          "language": "en",
+          "value": "Fibers [Presence] in Sputum by Light microscopy"
+        }
+      ],
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "lab-K"
+        }
+      ]
+    },
+    {
+      "code": "lab-158",
+      "display": "Elastik tolalar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Эластические волокна"
+        },
+        {
+          "language": "en",
+          "value": "Elastic fibers [Presence] in Sputum by Light microscopy"
+        }
+      ],
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "lab-K"
+        }
+      ]
+    },
+    {
+      "code": "lab-159",
+      "display": "Ohaklangan (toshga o'xshash) zarrachalar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Обызвествлённые (окаменевшие частицы)"
+        },
+        {
+          "language": "en",
+          "value": "Calcified bodies [Presence] in Sputum by Light microscopy"
+        }
+      ],
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "lab-K"
+        }
+      ]
+    },
+    {
+      "code": "lab-160",
+      "display": "Sil mikobakteriyalari",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Микобактерии туберкулёза"
+        },
+        {
+          "language": "en",
+          "value": "Mycobacterium tuberculosis [Presence] in Sputum by Microscopy (Ziehl–Neelsen stain)"
+        }
+      ],
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "lab-K"
+        }
+      ]
+    },
+    {
+      "code": "lab-161",
+      "display": "Eozinofillar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Эозинофилы"
+        },
+        {
+          "language": "en",
+          "value": "Eosinophils [#/area] in Sputum by Light microscopy"
+        }
+      ],
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "lab-K"
+        }
+      ]
+    },
+    {
+      "code": "lab-162",
+      "display": "Zamburug'lar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Грибы"
+        },
+        {
+          "language": "en",
+          "value": "Fungi [Presence] in Sputum by Light microscopy"
+        }
+      ],
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "lab-K"
+        }
+      ]
+    },
+    {
+      "code": "lab-163",
+      "display": "Boshqa flora",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Другая флора"
+        },
+        {
+          "language": "en",
+          "value": "Bacteria [Presence] in Sputum by Light microscopy"
+        }
+      ],
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "lab-K"
+        }
+      ]
+    },
+    {
+      "code": "lab-164",
+      "display": "Kurshman spirallari",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Спирали Куршмана"
+        },
+        {
+          "language": "en",
+          "value": "Curschmann's spirals [Presence] in Sputum by Light microscopy"
+        }
+      ],
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "lab-K"
+        }
+      ]
+    },
+    {
+      "code": "lab-165",
+      "display": "Sharko–Leyden kristallari",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Кристаллы Шарко–Лейдена"
+        },
+        {
+          "language": "en",
+          "value": "Charcot–Leyden crystals [Presence] in Sputum by Light microscopy"
+        }
+      ],
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "lab-K"
+        }
+      ]
+    },
+    {
+      "code": "lab-166",
+      "display": "Atipik belgilarga ega hujayralar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Клетки с атипичными признаками"
+        },
+        {
+          "language": "en",
+          "value": "Epithelial cells atypical [Presence] in Sputum by Cytology"
+        }
+      ],
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "lab-K"
+        }
+      ]
+    },
+    {
+      "code": "lab-L",
+      "display": "Prostata bezi sekretining tahlili",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Анализ секрета предстательной железы"
+        },
+        {
+          "language": "en",
+          "value": "Prostatic secretion study (panel) – Prostatic fluid"
+        }
+      ]
+    },
+    {
+      "code": "lab-167",
+      "display": "Miqdori",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Количество"
+        },
+        {
+          "language": "en",
+          "value": "Prostatic fluid volume [Volume]"
+        }
+      ],
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "lab-L"
+        }
+      ]
+    },
+    {
+      "code": "lab-168",
+      "display": "Rangi",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Цвет"
+        },
+        {
+          "language": "en",
+          "value": "Prostatic fluid color [Type]"
+        }
+      ],
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "lab-L"
+        }
+      ]
+    },
+    {
+      "code": "lab-169",
+      "display": "Shaffofligi",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Прозрачность"
+        },
+        {
+          "language": "en",
+          "value": "Prostatic fluid clarity [Type]"
+        }
+      ],
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "lab-L"
+        }
+      ]
+    },
+    {
+      "code": "lab-170",
+      "display": "Konsistensiyasi",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Консистенция"
+        },
+        {
+          "language": "en",
+          "value": "Prostatic fluid consistency [Type]"
+        }
+      ],
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "lab-L"
+        }
+      ]
+    },
+    {
+      "code": "lab-171",
+      "display": "Leykotsitlar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Лейкоциты"
+        },
+        {
+          "language": "en",
+          "value": "Leukocytes [#/area] in Prostatic fluid by Microscopy HPF"
+        }
+      ],
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "lab-L"
+        }
+      ]
+    },
+    {
+      "code": "lab-172",
+      "display": "Eritrotsitlar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Эритроциты"
+        },
+        {
+          "language": "en",
+          "value": "Erythrocytes [Presence] in Prostatic fluid by Light microscopy"
+        }
+      ],
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "lab-L"
+        }
+      ]
+    },
+    {
+      "code": "lab-173",
+      "display": "Epiteliy",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Эпителий"
+        },
+        {
+          "language": "en",
+          "value": "Epithelial cells [Presence] in Prostatic fluid by Light microscopy"
+        }
+      ],
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "lab-L"
+        }
+      ]
+    },
+    {
+      "code": "lab-174",
+      "display": "Makrofaglar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Макрофаги"
+        },
+        {
+          "language": "en",
+          "value": "Macrophages [Presence] in Prostatic fluid by Light microscopy"
+        }
+      ],
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "lab-L"
+        }
+      ]
+    },
+    {
+      "code": "lab-175",
+      "display": "Letsitin donachalari",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Лецитиновые зёрна"
+        },
+        {
+          "language": "en",
+          "value": "Lecithin bodies [Presence] in Prostatic fluid by Light microscopy"
+        }
+      ],
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "lab-L"
+        }
+      ]
+    },
+    {
+      "code": "lab-176",
+      "display": "Amiloid tanachalar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Амилоидные тельца"
+        },
+        {
+          "language": "en",
+          "value": "Amyloid bodies [Presence] in Prostatic fluid by Light microscopy"
+        }
+      ],
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "lab-L"
+        }
+      ]
+    },
+    {
+      "code": "lab-177",
+      "display": "Spermatozoidlar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Сперматозоиды"
+        },
+        {
+          "language": "en",
+          "value": "Spermatozoa [Presence] in Prostatic fluid by Light microscopy"
+        }
+      ],
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "lab-L"
+        }
+      ]
+    },
+    {
+      "code": "lab-178",
+      "display": "Trichomonadalar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Трихомонады"
+        },
+        {
+          "language": "en",
+          "value": "Trichomonas vaginalis [Presence] in Prostatic fluid by Light microscopy"
+        }
+      ],
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "lab-L"
+        }
+      ]
+    },
+    {
+      "code": "lab-179",
+      "display": "Gonokokklar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Гонококки"
+        },
+        {
+          "language": "en",
+          "value": "Neisseria gonorrhoeae [Presence] in Prostatic fluid by Light microscopy"
+        }
+      ],
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "lab-L"
+        }
+      ]
+    },
+    {
+      "code": "lab-180",
+      "display": "Boshqa flora",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Другая флора"
+        },
+        {
+          "language": "en",
+          "value": "Bacteria [Presence] in Prostatic fluid by Light microscopy"
+        }
+      ],
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "lab-L"
+        }
+      ]
+    },
+    {
+      "code": "lab-181",
+      "display": "Atipik belgilarga ega hujayralar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Клетки с атипичными признаками"
+        },
+        {
+          "language": "en",
+          "value": "Epithelial cells atypical [Presence] in Prostatic fluid by Cytology"
+        }
+      ],
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "lab-L"
+        }
+      ]
+    },
+    {
+      "code": "lab-M",
+      "display": "TORCH-infeksiyalar bo'yicha tahlil",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Анализ на TORCH-инфекции"
+        },
+        {
+          "language": "en",
+          "value": "TORCH IgG panel – Serum"
+        }
+      ]
+    },
+    {
+      "code": "lab-182",
+      "display": "Xlamidiya (IgG antitanalari)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Хламидия (антитела IgG)"
+        },
+        {
+          "language": "en",
+          "value": "Chlamydia trachomatis IgG Ab [Presence] in Serum by Immunoassay"
+        }
+      ],
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "lab-M"
+        }
+      ]
+    },
+    {
+      "code": "lab-183",
+      "display": "Toksoplazmoz (IgG antitanalari)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Токсоплазмоз (антитела IgG)"
+        },
+        {
+          "language": "en",
+          "value": "Toxoplasma gondii IgG Ab [Presence] in Serum by Immunoassay"
+        }
+      ],
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "lab-M"
+        }
+      ]
+    },
+    {
+      "code": "lab-184",
+      "display": "Sitomegalovirus (IgG antitanalari)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Цитомегаловирус (антитела IgG)"
+        },
+        {
+          "language": "en",
+          "value": "Cytomegalovirus IgG Ab [Presence] in Serum by Immunoassay"
+        }
+      ],
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "lab-M"
+        }
+      ]
+    },
+    {
+      "code": "lab-185",
+      "display": "Oddiy gerpes virusi (IgG antitanalari)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Вирус простого герпеса (антитела IgG)"
+        },
+        {
+          "language": "en",
+          "value": "Herpes simplex virus 1+2 IgG Ab [Presence] in Serum by Immunoassay"
+        }
+      ],
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "lab-M"
+        }
+      ]
+    },
+    {
+      "code": "lab-186",
+      "display": "Ureaplazma",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Уреаплазма"
+        },
+        {
+          "language": "en",
+          "value": "Ureaplasma urealyticum DNA [Presence] in Specimen by NAA with probe detection"
+        }
+      ],
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "lab-M"
+        }
+      ]
+    },
+    {
+      "code": "lab-N",
+      "display": "Serebrospinal suyuqlik (likvor) tekshiruvi",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Исследование цереброспинальной жидкости (ликвора)"
+        },
+        {
+          "language": "en",
+          "value": "Cerebrospinal fluid studies (panel)"
+        }
+      ]
+    },
+    {
+      "code": "lab-187",
+      "display": "Miqdori",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Количество"
+        },
+        {
+          "language": "en",
+          "value": "Cerebrospinal fluid volume [Volume]"
+        }
+      ],
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "lab-N"
+        }
+      ]
+    },
+    {
+      "code": "lab-188",
+      "display": "Sentrifugatsiyadan keyingi rangi",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Цвет после центрифугирования"
+        },
+        {
+          "language": "en",
+          "value": "CSF color [Type]"
+        }
+      ],
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "lab-N"
+        }
+      ]
+    },
+    {
+      "code": "lab-189",
+      "display": "Sentrifugatsiyadan oldingi ksantoxromiya",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Ксантохромия до центрифугирования"
+        },
+        {
+          "language": "en",
+          "value": "CSF xanthochromia [Presence]"
+        }
+      ],
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "lab-N"
+        }
+      ]
+    },
+    {
+      "code": "lab-190",
+      "display": "Sentrifugatsiyadan keyingi shaffofligi",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Прозрачность после центрифугирования"
+        },
+        {
+          "language": "en",
+          "value": "CSF clarity [Type]"
+        }
+      ],
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "lab-N"
+        }
+      ]
+    },
+    {
+      "code": "lab-191",
+      "display": "Oqsil",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Белок"
+        },
+        {
+          "language": "en",
+          "value": "Protein [Mass/volume] in Cerebrospinal fluid"
+        }
+      ],
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "lab-N"
+        }
+      ]
+    },
+    {
+      "code": "lab-192",
+      "display": "Pandi reaksiyasi",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Реакция Панди"
+        },
+        {
+          "language": "en",
+          "value": "Pandy test [Interpretation] in Cerebrospinal fluid"
+        }
+      ],
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "lab-N"
+        }
+      ]
+    },
+    {
+      "code": "lab-193",
+      "display": "Limfotsitlar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Лимфоциты"
+        },
+        {
+          "language": "en",
+          "value": "Lymphocytes [#/volume] in Cerebrospinal fluid by Manual count"
+        }
+      ],
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "lab-N"
+        }
+      ]
+    },
+    {
+      "code": "lab-194",
+      "display": "Eozinofillar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Эозинофилы"
+        },
+        {
+          "language": "en",
+          "value": "Eosinophils [#/volume] in Cerebrospinal fluid by Manual count"
+        }
+      ],
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "lab-N"
+        }
+      ]
+    },
+    {
+      "code": "lab-195",
+      "display": "Neytrofillar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Нейтрофилы"
+        },
+        {
+          "language": "en",
+          "value": "Neutrophils [#/volume] in Cerebrospinal fluid by Manual count"
+        }
+      ],
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "lab-N"
+        }
+      ]
+    },
+    {
+      "code": "lab-196",
+      "display": "Makrofaglar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Макрофаги"
+        },
+        {
+          "language": "en",
+          "value": "Macrophages [Presence] in Cerebrospinal fluid by Light microscopy"
+        }
+      ],
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "lab-N"
+        }
+      ]
+    },
+    {
+      "code": "lab-197",
+      "display": "O'zgargan hujayralar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Изменённые клетки"
+        },
+        {
+          "language": "en",
+          "value": "Cells abnormal [Presence] in Cerebrospinal fluid by Cytology"
+        }
+      ],
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "lab-N"
+        }
+      ]
+    },
+    {
+      "code": "lab-198",
+      "display": "Poliblastlar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Полибласты"
+        },
+        {
+          "language": "en",
+          "value": "Polynuclear cells [Presence] in Cerebrospinal fluid by Light microscopy"
+        }
+      ],
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "lab-N"
+        }
+      ]
+    },
+    {
+      "code": "lab-199",
+      "display": "Plazmatik hujayralar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Плазматические клетки"
+        },
+        {
+          "language": "en",
+          "value": "Plasma cells [Presence] in Cerebrospinal fluid by Light microscopy"
+        }
+      ],
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "lab-N"
+        }
+      ]
+    },
+    {
+      "code": "lab-200",
+      "display": "Araxnoidal endoteliy hujayralari",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Клетки арахноидального эндотелия"
+        },
+        {
+          "language": "en",
+          "value": "Arachnoid cells [Presence] in Cerebrospinal fluid by Light microscopy"
+        }
+      ],
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "lab-N"
+        }
+      ]
+    },
+    {
+      "code": "lab-201",
+      "display": "Ependima hujayralari",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Клетки эпендимы"
+        },
+        {
+          "language": "en",
+          "value": "Ependymal cells [Presence] in Cerebrospinal fluid by Light microscopy"
+        }
+      ],
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "lab-N"
+        }
+      ]
+    },
+    {
+      "code": "lab-202",
+      "display": "Donador sharlar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Зернистые шары"
+        },
+        {
+          "language": "en",
+          "value": "Granular corpuscles [Presence] in Cerebrospinal fluid by Light microscopy"
+        }
+      ],
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "lab-N"
+        }
+      ]
+    },
+    {
+      "code": "lab-203",
+      "display": "Zamburug'lar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Грибы"
+        },
+        {
+          "language": "en",
+          "value": "Fungi [Presence] in Cerebrospinal fluid by Light microscopy"
+        }
+      ],
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "lab-N"
+        }
+      ]
+    },
+    {
+      "code": "lab-204",
+      "display": "Eritrotsitlar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Эритроциты"
+        },
+        {
+          "language": "en",
+          "value": "Erythrocytes [#/volume] in Cerebrospinal fluid by Manual count"
+        }
+      ],
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "lab-N"
+        }
+      ]
+    },
+    {
+      "code": "lab-O",
+      "display": "Suyak iligi punktati tahlili",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Анализ пунктата костного мозга"
+        },
+        {
+          "language": "en",
+          "value": "Bone marrow differential panel – Bone marrow smear or aspirate"
+        }
+      ]
+    },
+    {
+      "code": "lab-205",
+      "display": "Miyelokariotsitlar soni",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Количество миелокариоцитов"
+        },
+        {
+          "language": "en",
+          "value": "Myelokaryocytes [#/volume] in Bone marrow by Manual count"
+        }
+      ],
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "lab-O"
+        }
+      ]
+    },
+    {
+      "code": "lab-206",
+      "display": "Megakariotsitlar soni",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Количество мегакариоцитов"
+        },
+        {
+          "language": "en",
+          "value": "Megakaryocytes [Presence] in Bone marrow by Light microscopy"
+        }
+      ],
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "lab-O"
+        }
+      ]
+    },
+    {
+      "code": "lab-207",
+      "display": "Yetilmagan blastlar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Незрелые бласты"
+        },
+        {
+          "language": "en",
+          "value": "Blast cells immature [#/100 cells] in Bone marrow by Manual count"
+        }
+      ],
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "lab-O"
+        }
+      ]
+    },
+    {
+      "code": "lab-208",
+      "display": "Miyeloblastlar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Миелобласты"
+        },
+        {
+          "language": "en",
+          "value": "Myeloblasts/100 leukocytes in Bone marrow by Manual count"
+        }
+      ],
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "lab-O"
+        }
+      ]
+    },
+    {
+      "code": "lab-209",
+      "display": "Promiyelotsitlar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Промиелоциты"
+        },
+        {
+          "language": "en",
+          "value": "Promyelocytes/100 leukocytes in Bone marrow by Manual count"
+        }
+      ],
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "lab-O"
+        }
+      ]
+    },
+    {
+      "code": "lab-210",
+      "display": "Miyelotsitlar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Миелоциты"
+        },
+        {
+          "language": "en",
+          "value": "Myelocytes/100 leukocytes in Bone marrow by Manual count"
+        }
+      ],
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "lab-O"
+        }
+      ]
+    },
+    {
+      "code": "lab-211",
+      "display": "Metamiyelotsitlar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Метамиелоциты"
+        },
+        {
+          "language": "en",
+          "value": "Metamyelocytes/100 leukocytes in Bone marrow by Manual count"
+        }
+      ],
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "lab-O"
+        }
+      ]
+    },
+    {
+      "code": "lab-212",
+      "display": "Tayoqchasimon yadroli neytrofillar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Палочкоядерные нейтрофилы"
+        },
+        {
+          "language": "en",
+          "value": "Neutrophils.band form/100 leukocytes in Bone marrow by Manual count"
+        }
+      ],
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "lab-O"
+        }
+      ]
+    },
+    {
+      "code": "lab-213",
+      "display": "Segmentyadroli neytrofillar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Сегментоядерные нейтрофилы"
+        },
+        {
+          "language": "en",
+          "value": "Neutrophils.segmented/100 leukocytes in Bone marrow by Manual count"
+        }
+      ],
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "lab-O"
+        }
+      ]
+    },
+    {
+      "code": "lab-214",
+      "display": "Limfoblastlar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Лимфобласты"
+        },
+        {
+          "language": "en",
+          "value": "Lymphoblasts/100 leukocytes in Bone marrow by Manual count"
+        }
+      ],
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "lab-O"
+        }
+      ]
+    },
+    {
+      "code": "lab-215",
+      "display": "Prolimfotsitlar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Пролимфоциты"
+        },
+        {
+          "language": "en",
+          "value": "Prolymphocytes/100 leukocytes in Bone marrow by Manual count"
+        }
+      ],
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "lab-O"
+        }
+      ]
+    },
+    {
+      "code": "lab-216",
+      "display": "Limfotsitlar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Лимфоциты"
+        },
+        {
+          "language": "en",
+          "value": "Lymphocytes/100 leukocytes in Bone marrow by Manual count"
+        }
+      ],
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "lab-O"
+        }
+      ]
+    },
+    {
+      "code": "lab-217",
+      "display": "Monoblastlar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Монобласты"
+        },
+        {
+          "language": "en",
+          "value": "Monoblasts/100 leukocytes in Bone marrow by Manual count"
+        }
+      ],
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "lab-O"
+        }
+      ]
+    },
+    {
+      "code": "lab-218",
+      "display": "Promonotsitlar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Промоноциты"
+        },
+        {
+          "language": "en",
+          "value": "Promonocytes/100 leukocytes in Bone marrow by Manual count"
+        }
+      ],
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "lab-O"
+        }
+      ]
+    },
+    {
+      "code": "lab-219",
+      "display": "Monotsitlar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Моноциты"
+        },
+        {
+          "language": "en",
+          "value": "Monocytes/100 leukocytes in Bone marrow by Manual count"
+        }
+      ],
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "lab-O"
+        }
+      ]
+    },
+    {
+      "code": "lab-220",
+      "display": "Leyko-eritroblastik nisbat",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Лейко-эритробластическое соотношение"
+        },
+        {
+          "language": "en",
+          "value": "Myeloid/erythroid ratio in Bone marrow"
+        }
+      ],
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "lab-O"
+        }
+      ]
+    },
+    {
+      "code": "lab-221",
+      "display": "Neytrofillar yetilish indeksi",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Индекс созревания нейтрофилов"
+        },
+        {
+          "language": "en",
+          "value": "Neutrophil maturation index in Bone marrow"
+        }
+      ],
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "lab-O"
+        }
+      ]
+    },
+    {
+      "code": "lab-222",
+      "display": "Proeritroblastlar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Проэритробласты"
+        },
+        {
+          "language": "en",
+          "value": "Proerythroblasts/100 erythroid cells in Bone marrow by Manual count"
+        }
+      ],
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "lab-O"
+        }
+      ]
+    },
+    {
+      "code": "lab-223",
+      "display": "Bazofil eritroblastlar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Базофильные эритробласты"
+        },
+        {
+          "language": "en",
+          "value": "Erythroblasts.basophilic/100 erythroid cells in Bone marrow by Manual count"
+        }
+      ],
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "lab-O"
+        }
+      ]
+    },
+    {
+      "code": "lab-224",
+      "display": "Polixromatofil eritroblastlar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Полихроматофильные эритробласты"
+        },
+        {
+          "language": "en",
+          "value": "Erythroblasts.polychromatophilic/100 erythroid cells in Bone marrow by Manual count"
+        }
+      ],
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "lab-O"
+        }
+      ]
+    },
+    {
+      "code": "lab-225",
+      "display": "Oksifil eritroblastlar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Оксифильные эритробласты"
+        },
+        {
+          "language": "en",
+          "value": "Erythroblasts.oxyphilic/100 erythroid cells in Bone marrow by Manual count"
+        }
+      ],
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "lab-O"
+        }
+      ]
+    },
+    {
+      "code": "lab-226",
+      "display": "Polixromatofil normoblastlar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Полихроматофильные нормобласты"
+        },
+        {
+          "language": "en",
+          "value": "Normoblasts.polychromatophilic/100 erythroid cells in Bone marrow by Manual count"
+        }
+      ],
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "lab-O"
+        }
+      ]
+    },
+    {
+      "code": "lab-227",
+      "display": "Oksifil normoblastlar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Оксифильные нормобласты"
+        },
+        {
+          "language": "en",
+          "value": "Normoblasts.oxyphilic/100 erythroid cells in Bone marrow by Manual count"
+        }
+      ],
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "lab-O"
+        }
+      ]
+    },
+    {
+      "code": "lab-228",
+      "display": "Promegaloblastlar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Промегалобласты"
+        },
+        {
+          "language": "en",
+          "value": "Megaloblasts.pro/100 erythroid cells in Bone marrow by Manual count"
+        }
+      ],
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "lab-O"
+        }
+      ]
+    },
+    {
+      "code": "lab-229",
+      "display": "Bazofil megaloblastlar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Базофильные мегалобласты"
+        },
+        {
+          "language": "en",
+          "value": "Megaloblasts.basophilic/100 erythroid cells in Bone marrow by Manual count"
+        }
+      ],
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "lab-O"
+        }
+      ]
+    },
+    {
+      "code": "lab-230",
+      "display": "Polixromatofil megaloblastlar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Полихроматофильные мегалобласты"
+        },
+        {
+          "language": "en",
+          "value": "Megaloblasts.polychromatophilic/100 erythroid cells in Bone marrow by Manual count"
+        }
+      ],
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "lab-O"
+        }
+      ]
+    },
+    {
+      "code": "lab-231",
+      "display": "Oksifil megaloblastlar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Оксифильные мегалобласты"
+        },
+        {
+          "language": "en",
+          "value": "Megaloblasts.oxyphilic/100 erythroid cells in Bone marrow by Manual count"
+        }
+      ],
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "lab-O"
+        }
+      ]
+    },
+    {
+      "code": "lab-232",
+      "display": "Megakarioblastlar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Мегакариобласты"
+        },
+        {
+          "language": "en",
+          "value": "Megakaryoblasts/100 cells in Bone marrow by Manual count"
+        }
+      ],
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "lab-O"
+        }
+      ]
+    },
+    {
+      "code": "lab-233",
+      "display": "Promegakariotsitlar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Промегакариоциты"
+        },
+        {
+          "language": "en",
+          "value": "Promegakaryocytes/100 cells in Bone marrow by Manual count"
+        }
+      ],
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "lab-O"
+        }
+      ]
+    },
+    {
+      "code": "lab-234",
+      "display": "Megakariotsitlar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Мегакариоциты"
+        },
+        {
+          "language": "en",
+          "value": "Megakaryocytes/100 cells in Bone marrow by Manual count"
+        }
+      ],
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "lab-O"
+        }
+      ]
+    },
+    {
+      "code": "lab-235",
+      "display": "Retikulyar hujayralar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Ретикулярные клетки"
+        },
+        {
+          "language": "en",
+          "value": "Reticular cells [#/100 cells] in Bone marrow by Manual count"
+        }
+      ],
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "lab-O"
+        }
+      ]
+    },
+    {
+      "code": "lab-236",
+      "display": "Plazmoblastlar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Плазмобласты"
+        },
+        {
+          "language": "en",
+          "value": "Plasmablasts/100 leukocytes in Bone marrow by Manual count"
+        }
+      ],
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "lab-O"
+        }
+      ]
+    },
+    {
+      "code": "lab-237",
+      "display": "Proplazmotsitlar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Проплазмоциты"
+        },
+        {
+          "language": "en",
+          "value": "Proplasmocytes/100 leukocytes in Bone marrow by Manual count"
+        }
+      ],
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "lab-O"
+        }
+      ]
+    },
+    {
+      "code": "lab-238",
+      "display": "Plazmatik hujayralar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Плазматические клетки"
+        },
+        {
+          "language": "en",
+          "value": "Plasma cells/100 leukocytes in Bone marrow by Manual count"
+        }
+      ],
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "lab-O"
+        }
+      ]
+    },
+    {
+      "code": "lab-239",
+      "display": "Granulopoez hujayralarining mitozi",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Митоз клеток гранулопоэза"
+        },
+        {
+          "language": "en",
+          "value": "Myelopoiesis cells mitosis [Presence] in Bone marrow"
+        }
+      ],
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "lab-O"
+        }
+      ]
+    },
+    {
+      "code": "lab-240",
+      "display": "Eritropoez hujayralarining mitozi",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Митоз клеток эритропоэза"
+        },
+        {
+          "language": "en",
+          "value": "Erythropoiesis cells mitosis [Presence] in Bone marrow"
+        }
+      ],
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "lab-O"
+        }
+      ]
+    },
+    {
+      "code": "lab-241",
+      "display": "Eritroblastlar va normoblastlar sitoplazmasining yetilish indeksi",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Индекс зрелости цитоплазмы эритробластов и нормобластов"
+        },
+        {
+          "language": "en",
+          "value": "Cytoplasmic maturation index of erythroid cells in Bone marrow"
+        }
+      ],
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "lab-O"
+        }
+      ]
+    }
+  ],
+  "caseSensitive": true,
+  "hierarchyMeaning": "is-a",
+  "language": "uz",
+  "experimental": true,
+  "property": [
+    {
+      "code": "parent",
+      "uri": "http://hl7.org/fhir/concept-properties#parent",
+      "type": "code"
+    }
+  ],
+  "count": 256
+}

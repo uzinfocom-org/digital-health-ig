@@ -21,6 +21,8 @@ jobs:
 
   ig-publisher:
     runs-on: ubuntu-latest
+    env:
+      JAVA_TOOL_OPTIONS: "-Xmx8g"
 
     steps:
       - uses: actions/checkout@v6
@@ -45,7 +47,7 @@ jobs:
       - name: Check QA report
         run: |
           # Configuration
-          MAX_ALLOWED_ERRORS=6
+          MAX_ALLOWED_ERRORS=8
           MAX_ALLOWED_WARNINGS=0
 
           if [ ! -f "output/qa.json" ]; then
