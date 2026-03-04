@@ -72,6 +72,10 @@ No definition could be found for URL value 'http://hl7.org/fhir/StructureDefinit
 The <script> containing the javascript '//%
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< new_Medication
+>>>>>>> 346dc7bf923e5680c619917acde7a1d698acee4a
 # tx.fhir.org doesn't support CodeSystem supplements for UCUM - this is expected
 Error from https://tx.fhir.org/r5: The codesystem http://unitsofmeasure.org does not support supplements%
 =======
@@ -1076,4 +1080,3 @@ No definition could be found for URL value 'Encounter/example-encounter/_history
 No definition could be found for URL value 'Observation/blood-pressure-example/_history/1'
 No definition could be found for URL value 'Observation/body-weight-example/_history/1'
 No definition could be found for URL value 'Observation/body-temperature-example/_history/1'
->>>>>>> bd06d95d4e67a01a49a67aeaadc5db1108af8120
