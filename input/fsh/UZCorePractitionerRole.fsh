@@ -51,3 +51,14 @@ Usage: #example
 * code = position-and-profession-cs#2212.14 "Vrach ginekolog"
 * specialty = profession-specialization-cs#394585009 "Akusherlik va ginekologiya"
 * healthcareService = Reference(HealthcareService/example-healthcareservice)
+
+Instance: example-practitionerrole-freetext
+InstanceOf: UZCorePractitionerRole
+Description: "Example of a practitioner's role with a freetext description"
+Usage: #example
+* language = #uz
+* active = true
+* practitioner = Reference(Practitioner/example-practitioner)
+* organization = Reference(Organization/example-organization)
+* code.text = "Surgeon at Republican Specialized Scientific Center of Surgery, inpatient care"
+* healthcareService = Reference(HealthcareService/example-healthcareservice)
