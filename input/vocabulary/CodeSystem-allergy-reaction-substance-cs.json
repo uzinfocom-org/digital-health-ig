@@ -1,0 +1,4147 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "draft",
+  "content": "complete",
+  "name": "ReactionSubstanceCS",
+  "id": "allergy-reaction-substance-cs",
+  "title": "Reaction substance codes",
+  "description": "Local codes and multilingual names for allergy reaction substance.",
+  "url": "https://terminology.dhp.uz/fhir/core/CodeSystem/allergy-reaction-substance-cs",
+  "concept": [
+    {
+      "code": "aller-0010-00001",
+      "display": "Ajiriq (Cyn d)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Свинорой пальчатый (Cyn d)"
+        },
+        {
+          "language": "en",
+          "value": "Cyn d"
+        }
+      ]
+    },
+    {
+      "code": "aller-0010-00003",
+      "display": "Ajiriq (Cyn d 1)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Свинорой пальчатый (Cyn d 1)"
+        },
+        {
+          "language": "en",
+          "value": "Cyn d 1"
+        }
+      ]
+    },
+    {
+      "code": "aller-0010-00004",
+      "display": "Ko'p yillik mastak (Lol p 1)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Плевел многолетний (Lol p 1)"
+        },
+        {
+          "language": "en",
+          "value": "Lol p 1"
+        }
+      ]
+    },
+    {
+      "code": "aller-0010-00005",
+      "display": "Paspalum/grechka (Pas n)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Паспалум/гречка заметная (Pas n)"
+        },
+        {
+          "language": "en",
+          "value": "Paspalum/conspicuous buckwheat (Pas n)"
+        }
+      ]
+    },
+    {
+      "code": "aller-0010-00006",
+      "display": "Ajiriqbosh (Phl p 1)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Тимофеевка луговая (Phl p 1)"
+        },
+        {
+          "language": "en",
+          "value": "Timothy grass (Phl p 1)"
+        }
+      ]
+    },
+    {
+      "code": "aller-0010-00007",
+      "display": "Ajiriqbosh (Phl p 2)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Тимофеевка луговая (Phl p 2)"
+        },
+        {
+          "language": "en",
+          "value": "Timothy grass (Phl p 2)"
+        }
+      ]
+    },
+    {
+      "code": "aller-0010-00008",
+      "display": "Ajiriqbosh (Phl p 5-0101)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Тимофеевка луговая (Phl p 5-0101)"
+        },
+        {
+          "language": "en",
+          "value": "Timothy grass (Phl p 5-0101)"
+        }
+      ]
+    },
+    {
+      "code": "aller-0010-00009",
+      "display": "Ajiriqbosh (Phl p 6)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Тимофеевка луговая (Phl p 6)"
+        },
+        {
+          "language": "en",
+          "value": "Timothy grass (Phl p 6)"
+        }
+      ]
+    },
+    {
+      "code": "aller-0010-00010",
+      "display": "Ajiriqbosh (Phl p 7)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Тимофеевка луговая (Phl p 7)"
+        },
+        {
+          "language": "en",
+          "value": "Timothy grass (Phl p 7)"
+        }
+      ]
+    },
+    {
+      "code": "aller-0010-00011",
+      "display": "Ajiriqbosh (Phl p 12)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Тимофеевка луговая (Phl p 12)"
+        },
+        {
+          "language": "en",
+          "value": "Timothy grass (Phl p 12)"
+        }
+      ]
+    },
+    {
+      "code": "aller-0010-00012",
+      "display": "Qamish (Phr c)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Тростник (Phr c)"
+        },
+        {
+          "language": "en",
+          "value": "Reed (Phr c)"
+        }
+      ]
+    },
+    {
+      "code": "aller-0010-00013",
+      "display": "Javdar changi (Sec c pollen)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Рожь, пыльца (Sec c pollen)"
+        },
+        {
+          "language": "en",
+          "value": "Rye, pollen (Sec c pollen)"
+        }
+      ]
+    },
+    {
+      "code": "aller-0010-00015",
+      "display": "Kumush akatsiya (Aca m)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Акация серебристая (Aca m)"
+        },
+        {
+          "language": "en",
+          "value": "Silver acacia (Aca m)"
+        }
+      ]
+    },
+    {
+      "code": "aller-0010-00016",
+      "display": "Baland aylant (Ail a)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Айлант высочайший (Ail a)"
+        },
+        {
+          "language": "en",
+          "value": "Ailanthus altissima (Ail a)"
+        }
+      ]
+    },
+    {
+      "code": "aller-0010-00017",
+      "display": "Qandag'och (Aln g 1)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Ольха (Aln g 1)"
+        },
+        {
+          "language": "en",
+          "value": "Alder (Aln g 1)"
+        }
+      ]
+    },
+    {
+      "code": "aller-0010-00018",
+      "display": "Qandag'och (Aln g 4)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Ольха (Aln g 4)"
+        },
+        {
+          "language": "en",
+          "value": "Alder (Aln g 4)"
+        }
+      ]
+    },
+    {
+      "code": "aller-0010-00019",
+      "display": "Serbuqoq qayin (Bet v 1)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Берёза повислая (Bet v 1)"
+        },
+        {
+          "language": "en",
+          "value": "Bet v 1"
+        }
+      ]
+    },
+    {
+      "code": "aller-0010-00020",
+      "display": "Serbuqoq qayin (Bet v 2)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Берёза повислая (Bet v 2)"
+        },
+        {
+          "language": "en",
+          "value": "Bet v 2"
+        }
+      ]
+    },
+    {
+      "code": "aller-0010-00021",
+      "display": "Serbuqoq qayin (Bet v 6)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Берёза повислая (Bet v 6)"
+        },
+        {
+          "language": "en",
+          "value": "Bet v 6"
+        }
+      ]
+    },
+    {
+      "code": "aller-0010-00022",
+      "display": "Qog'ozdaraxt (tut) (Bro pa)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Бумажная шелковица (Bro pa)"
+        },
+        {
+          "language": "en",
+          "value": "Paper mulberry (Bro pa)"
+        }
+      ]
+    },
+    {
+      "code": "aller-0010-00023",
+      "display": "O'rmon yong'og'i (Cor a_pollen)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Орешник (Лещина) (Cor a_pollen)"
+        },
+        {
+          "language": "en",
+          "value": "Hazel (Cor a_pollen)"
+        }
+      ]
+    },
+    {
+      "code": "aller-0010-00024",
+      "display": "O'rmon yong'og'i (Cor a 1-0103)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Орешник (Лещина) (Cor a 1-0103)"
+        },
+        {
+          "language": "en",
+          "value": "Hazel (Cor a 1-0103)"
+        }
+      ]
+    },
+    {
+      "code": "aller-0010-00025",
+      "display": "Yapon kriptomeriyasi (Cry j 1)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Криптомерия японская (Cry j 1)"
+        },
+        {
+          "language": "en",
+          "value": "Cryptomeria japonica (Cry j 1)"
+        }
+      ]
+    },
+    {
+      "code": "aller-0010-00026",
+      "display": "Sarv (Cup a 1)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Кипарис (Cup a 1)"
+        },
+        {
+          "language": "en",
+          "value": "Cypress (Cup a 1)"
+        }
+      ]
+    },
+    {
+      "code": "aller-0010-00027",
+      "display": "Sarv (Cup s)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Кипарис (Cup s)"
+        },
+        {
+          "language": "en",
+          "value": "Cypress (Cup s)"
+        }
+      ]
+    },
+    {
+      "code": "aller-0010-00028",
+      "display": "Qoraqayin (Fag s 1)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Бук (Fag s 1)"
+        },
+        {
+          "language": "en",
+          "value": "Beech (Fag s 1)"
+        }
+      ]
+    },
+    {
+      "code": "aller-0010-00029",
+      "display": "Shumtol (Fra e)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Ясень (Fra e)"
+        },
+        {
+          "language": "en",
+          "value": "Ash (Fra e)"
+        }
+      ]
+    },
+    {
+      "code": "aller-0010-00030",
+      "display": "Shumtol (Fra e 1)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Ясень (Fra e 1)"
+        },
+        {
+          "language": "en",
+          "value": "Ash (Fra e 1)"
+        }
+      ]
+    },
+    {
+      "code": "aller-0010-00031",
+      "display": "Yong'oq changi (Jug r_pollen)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Грецкий орех, пыльца (Jug r_pollen)"
+        },
+        {
+          "language": "en",
+          "value": "Walnut, pollen (Jug r_pollen)"
+        }
+      ]
+    },
+    {
+      "code": "aller-0010-00032",
+      "display": "Kedr (Jun a)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Кедр (Jun a)"
+        },
+        {
+          "language": "en",
+          "value": "Cedar (Jun a)"
+        }
+      ]
+    },
+    {
+      "code": "aller-0010-00033",
+      "display": "Tut (Mor r)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Шелковица (Mor r)"
+        },
+        {
+          "language": "en",
+          "value": "Mulberry (Mor r)"
+        }
+      ]
+    },
+    {
+      "code": "aller-0010-00034",
+      "display": "Zaytun (Ole e 1)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Олива (Ole e 1)"
+        },
+        {
+          "language": "en",
+          "value": "Olive (Ole e 1)"
+        }
+      ]
+    },
+    {
+      "code": "aller-0010-00035",
+      "display": "Zaytun (Ole e 9)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Олива (Ole e 9)"
+        },
+        {
+          "language": "en",
+          "value": "Olive (Ole e 9)"
+        }
+      ]
+    },
+    {
+      "code": "aller-0010-00036",
+      "display": "Xurmo daraxti (Pho d 2)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Финиковая пальма (Pho d 2)"
+        },
+        {
+          "language": "en",
+          "value": "Date palm (Pho d 2)"
+        }
+      ]
+    },
+    {
+      "code": "aller-0010-00037",
+      "display": "Chinor (Pla a 1)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Платан кленолистный (Pla a 1)"
+        },
+        {
+          "language": "en",
+          "value": "Plane maple (Pla a 1)"
+        }
+      ]
+    },
+    {
+      "code": "aller-0010-00038",
+      "display": "Chinor (Pla a 2)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Платан кленолистный (Pla a 2)"
+        },
+        {
+          "language": "en",
+          "value": "Plane tree (Pla a 2)"
+        }
+      ]
+    },
+    {
+      "code": "aller-0010-00039",
+      "display": "Chinor (Pla a 3)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Платан кленолистный (Pla a 3)"
+        },
+        {
+          "language": "en",
+          "value": "Plane tree (Pla a 3)"
+        }
+      ]
+    },
+    {
+      "code": "aller-0010-00040",
+      "display": "Terak (Pop n)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Тополь (Pop n)"
+        },
+        {
+          "language": "en",
+          "value": "Poplar (Pop n)"
+        }
+      ]
+    },
+    {
+      "code": "aller-0010-00041",
+      "display": "Qayrag'och (Ulm c)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Вяз (Ulm c)"
+        },
+        {
+          "language": "en",
+          "value": "Elm (Ulm c)"
+        }
+      ]
+    },
+    {
+      "code": "aller-0010-00043",
+      "display": "Oddiy olabuta (Ama r)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Обыкновенная марь (Ama r)"
+        },
+        {
+          "language": "en",
+          "value": "Common goosefoot (Ama r)"
+        }
+      ]
+    },
+    {
+      "code": "aller-0010-00044",
+      "display": "Ambroziya (Amb a)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Амброзия (Amb a)"
+        },
+        {
+          "language": "en",
+          "value": "Ragweed (Amb a)"
+        }
+      ]
+    },
+    {
+      "code": "aller-0010-00045",
+      "display": "Ambroziya (Amb a 1)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Амброзия (Amb a 1)"
+        },
+        {
+          "language": "en",
+          "value": "Ragweed (Amb a 1)"
+        }
+      ]
+    },
+    {
+      "code": "aller-0010-00046",
+      "display": "Ambroziya (Amb a 4)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Амброзия (Amb a 4)"
+        },
+        {
+          "language": "en",
+          "value": "Ragweed (Amb a 4)"
+        }
+      ]
+    },
+    {
+      "code": "aller-0010-00047",
+      "display": "Shuvoq (Art v)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Полынь (Art v)"
+        },
+        {
+          "language": "en",
+          "value": "Wormwood (Art v)"
+        }
+      ]
+    },
+    {
+      "code": "aller-0010-00048",
+      "display": "Shuvoq (Art v 1)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Полынь (Art v 1)"
+        },
+        {
+          "language": "en",
+          "value": "Wormwood (Art v 1)"
+        }
+      ]
+    },
+    {
+      "code": "aller-0010-00049",
+      "display": "Shuvoq (Art v 3)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Полынь (Art v 3)"
+        },
+        {
+          "language": "en",
+          "value": "Wormwood (Art v 3)"
+        }
+      ]
+    },
+    {
+      "code": "aller-0010-00050",
+      "display": "Nasha (Can s)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Конопля (Can s)"
+        },
+        {
+          "language": "en",
+          "value": "Hemp (Can s)"
+        }
+      ]
+    },
+    {
+      "code": "aller-0010-00051",
+      "display": "Nasha (Can s 3)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Конопля (Can s 3)"
+        },
+        {
+          "language": "en",
+          "value": "Hemp (Can s 3)"
+        }
+      ]
+    },
+    {
+      "code": "aller-0010-00052",
+      "display": "Oq olabuta (Che a)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Марь белая (Che a)"
+        },
+        {
+          "language": "en",
+          "value": "White goosefoot (Che a)"
+        }
+      ]
+    },
+    {
+      "code": "aller-0010-00053",
+      "display": "Oq olabuta (Che a 1)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Марь белая (Che a 1)"
+        },
+        {
+          "language": "en",
+          "value": "White goosefoot (Che a 1)"
+        }
+      ]
+    },
+    {
+      "code": "aller-0010-00054",
+      "display": "Bir yillik prolesnik (Mer a 1)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Пролесник однолетний (Mer a 1)"
+        },
+        {
+          "language": "en",
+          "value": "Annual wood-snow (Mer a 1)"
+        }
+      ]
+    },
+    {
+      "code": "aller-0010-00055",
+      "display": "Postennitsa (Par j)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Постенница (Par j)"
+        },
+        {
+          "language": "en",
+          "value": "Wallflower (Par j)"
+        }
+      ]
+    },
+    {
+      "code": "aller-0010-00056",
+      "display": "Postennitsa (Par j 2)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Постенница (Par j 2)"
+        },
+        {
+          "language": "en",
+          "value": "Wallflower (Par j 2)"
+        }
+      ]
+    },
+    {
+      "code": "aller-0010-00057",
+      "display": "Zubturum (Pla l)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Подорожник (Pla l)"
+        },
+        {
+          "language": "en",
+          "value": "Plantain (Pla l)"
+        }
+      ]
+    },
+    {
+      "code": "aller-0010-00058",
+      "display": "Zubturum (Pla l 1)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Подорожник (Pla l 1)"
+        },
+        {
+          "language": "en",
+          "value": "Plantain (Pla l 1)"
+        }
+      ]
+    },
+    {
+      "code": "aller-0010-00059",
+      "display": "Sho'rak (Sal k)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Солянка (Sal k)"
+        },
+        {
+          "language": "en",
+          "value": "Salwort (Sal k)"
+        }
+      ]
+    },
+    {
+      "code": "aller-0010-00060",
+      "display": "Sho'rak (Sal k 1)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Солянка (Sal k 1)"
+        },
+        {
+          "language": "en",
+          "value": "Salwort (Sal k 1)"
+        }
+      ]
+    },
+    {
+      "code": "aller-0010-00061",
+      "display": "Gazanda (Urt d)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Крапива (Urt d)"
+        },
+        {
+          "language": "en",
+          "value": "Nettle (Urt d)"
+        }
+      ]
+    },
+    {
+      "code": "aller-0010-00064",
+      "display": "Amerika uy changi kanasi (Der f 1)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Американский клещ домашней пыли (Der f 1)"
+        },
+        {
+          "language": "en",
+          "value": "American house dust mite (Der f 1)"
+        }
+      ]
+    },
+    {
+      "code": "aller-0010-00065",
+      "display": "Amerika uy changi kanasi (Der f 2)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Американский клещ домашней пыли (Der f 2)"
+        },
+        {
+          "language": "en",
+          "value": "American house dust mite (Der f 2)"
+        }
+      ]
+    },
+    {
+      "code": "aller-0010-00066",
+      "display": "Yevropa uy changi kanasi (Der p 1)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Европейский клещ домашней пыли (Der p 1)"
+        },
+        {
+          "language": "en",
+          "value": "European house dust mite (Der p 1)"
+        }
+      ]
+    },
+    {
+      "code": "aller-0010-00067",
+      "display": "Yevropa uy changi kanasi (Der p 2)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Европейский клещ домашней пыли (Der p 2)"
+        },
+        {
+          "language": "en",
+          "value": "European house dust mite (Der p 2)"
+        }
+      ]
+    },
+    {
+      "code": "aller-0010-00068",
+      "display": "Yevropa uy changi kanasi (Der p 5)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Европейский клещ домашней пыли (Der p 5)"
+        },
+        {
+          "language": "en",
+          "value": "European house dust mite (Der p 5)"
+        }
+      ]
+    },
+    {
+      "code": "aller-0010-00069",
+      "display": "Yevropa uy changi kanasi (Der p 7)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Европейский клещ домашней пыли (Der p 7)"
+        },
+        {
+          "language": "en",
+          "value": "European house dust mite (Der p 7)"
+        }
+      ]
+    },
+    {
+      "code": "aller-0010-00070",
+      "display": "Yevropa uy changi kanasi (Der p 10)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Европейский клещ домашней пыли (Der p 10)"
+        },
+        {
+          "language": "en",
+          "value": "European house dust mite (Der p 10)"
+        }
+      ]
+    },
+    {
+      "code": "aller-0010-00071",
+      "display": "Yevropa uy changi kanasi (Der p 11)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Европейский клещ домашней пыли (Der p 11)"
+        },
+        {
+          "language": "en",
+          "value": "European house dust mite (Der p 11)"
+        }
+      ]
+    },
+    {
+      "code": "aller-0010-00072",
+      "display": "Yevropa uy changi kanasi (Der p 20)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Европейский клещ домашней пыли (Der p 20)"
+        },
+        {
+          "language": "en",
+          "value": "European house dust mite (Der p 20)"
+        }
+      ]
+    },
+    {
+      "code": "aller-0010-00073",
+      "display": "Yevropa uy changi kanasi (Der p 21)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Европейский клещ домашней пыли (Der p 21)"
+        },
+        {
+          "language": "en",
+          "value": "European house dust mite (Der p 21)"
+        }
+      ]
+    },
+    {
+      "code": "aller-0010-00074",
+      "display": "Yevropa uy changi kanasi (Der p 23)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Европейский клещ домашней пыли (Der p 23)"
+        },
+        {
+          "language": "en",
+          "value": "European house dust mite (Der p 23)"
+        }
+      ]
+    },
+    {
+      "code": "aller-0010-00076",
+      "display": "Un kanasi (Aca s)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Амбарный или мучной клещ (Acarus siro) (Aca s)"
+        },
+        {
+          "language": "en",
+          "value": "Barn or flour mite (Acarus siro) (Aca s)"
+        }
+      ]
+    },
+    {
+      "code": "aller-0010-00077",
+      "display": "Uy changi kanasi Blomia tropicalis (Blo t 5)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Клещ домашней пыли Blomia tropicalis (Blo t 5)"
+        },
+        {
+          "language": "en",
+          "value": "House dust mite Blomia tropicalis (Blo t 5)"
+        }
+      ]
+    },
+    {
+      "code": "aller-0010-00078",
+      "display": "Uy changi kanasi Blomia tropicalis (Blo t 10)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Клещ домашней пыли Blomia tropicalis (Blo t 10)"
+        },
+        {
+          "language": "en",
+          "value": "House dust mite Blomia tropicalis (Blo t 10)"
+        }
+      ]
+    },
+    {
+      "code": "aller-0010-00079",
+      "display": "Uy changi kanasi Blomia tropicalis (Blo t 21)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Клещ домашней пыли Blomia tropicalis (Blo t 21)"
+        },
+        {
+          "language": "en",
+          "value": "House dust mite Blomia tropicalis (Blo t 21)"
+        }
+      ]
+    },
+    {
+      "code": "aller-0010-00080",
+      "display": "Uy changi kanasi Glycyphagus domesticus (Gly d 2)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Клещ домашней пыли Glycyphagus domesticus (Gly d 2)"
+        },
+        {
+          "language": "en",
+          "value": "House dust mite Glycyphagus domesticus (Gly d 2)"
+        }
+      ]
+    },
+    {
+      "code": "aller-0010-00081",
+      "display": "Uy changi kanasi Lepidoglyphus destructor (Lep d 2)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Клещ домашней пыли Lepidoglyphus destructor (Lep d 2)"
+        },
+        {
+          "language": "en",
+          "value": "House dust mite Lepidoglyphus destructor (Lep d 2)"
+        }
+      ]
+    },
+    {
+      "code": "aller-0010-00082",
+      "display": "Uy changi kanasi Tyrophagus putrescentiae (Tyr p)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Клещ домашней пыли Tyrophagus putrescentiae (Tyr p)"
+        },
+        {
+          "language": "en",
+          "value": "House dust mite Tyrophagus putrescentiae (Tyr p)"
+        }
+      ]
+    },
+    {
+      "code": "aller-0010-00083",
+      "display": "Uy changi kanasi Tyrophagus putrescentiae (Tyr p 2)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Клещ домашней пыли Tyrophagus putrescentiae (Tyr p 2)"
+        },
+        {
+          "language": "en",
+          "value": "House dust mite Tyrophagus putrescentiae (Tyr p 2)"
+        }
+      ]
+    },
+    {
+      "code": "aller-0010-00086",
+      "display": "Xamirturushli zamburug' Malassezia sympodialis (Mala s 5)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Дрожжевые грибы рода Malassezia Malassezia sympodialis (Mala s 5)"
+        },
+        {
+          "language": "en",
+          "value": "Yeasts of the genus Malassezia Malassezia sympodialis (Mala s 5)"
+        }
+      ]
+    },
+    {
+      "code": "aller-0010-00087",
+      "display": "Xamirturushli zamburug' Malassezia sympodialis (Mala s 6)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Дрожжевые грибы рода Malassezia Malassezia sympodialis (Mala s 6)"
+        },
+        {
+          "language": "en",
+          "value": "Yeasts of the genus Malassezia Malassezia sympodialis (Mala s 6)"
+        }
+      ]
+    },
+    {
+      "code": "aller-0010-00088",
+      "display": "Xamirturushli zamburug' Malassezia sympodialis (Mala s 11)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Дрожжевые грибы рода Malassezia Malassezia sympodialis (Mala s 11)"
+        },
+        {
+          "language": "en",
+          "value": "Yeasts of the genus Malassezia Malassezia sympodialis (Mala s 11)"
+        }
+      ]
+    },
+    {
+      "code": "aller-0010-00089",
+      "display": "Novvoylik xamiturushlari (Sac c)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Пекарские дрожжи (Sac c)"
+        },
+        {
+          "language": "en",
+          "value": "Baker's yeast (Sac c)"
+        }
+      ]
+    },
+    {
+      "code": "aller-0010-00091",
+      "display": "Alternariya (Alternaria alternata) (Alt a 1)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Альтернария (Alternaria alternata) (Alt a 1)"
+        },
+        {
+          "language": "en",
+          "value": "Alternaria (Alternaria alternata) (Alt a 1)"
+        }
+      ]
+    },
+    {
+      "code": "aller-0010-00092",
+      "display": "Alternariya (Alternaria alternata) (Alt a 6)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Альтернария (Alternaria alternata) (Alt a 6)"
+        },
+        {
+          "language": "en",
+          "value": "Alternaria (Alternaria alternata) (Alt a 6)"
+        }
+      ]
+    },
+    {
+      "code": "aller-0010-00093",
+      "display": "Tutovchi aspergil (Aspergillus fumigatus) (Asp f 1)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Аспергил дымящий (Aspergillus fumigatus) (Asp f 1)"
+        },
+        {
+          "language": "en",
+          "value": "Aspergillus fumigatus (Asp f 1)"
+        }
+      ]
+    },
+    {
+      "code": "aller-0010-00094",
+      "display": "Tutovchi aspergil (Aspergillus fumigatus) (Asp f 3)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Аспергил дымящий (Aspergillus fumigatus) (Asp f 3)"
+        },
+        {
+          "language": "en",
+          "value": "Aspergillus fumigatus (Asp f 3)"
+        }
+      ]
+    },
+    {
+      "code": "aller-0010-00095",
+      "display": "Tutovchi aspergil (Aspergillus fumigatus) (Asp f 4)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Аспергил дымящий (Aspergillus fumigatus) (Asp f 4)"
+        },
+        {
+          "language": "en",
+          "value": "Aspergillus fumigatus (Asp f 4)"
+        }
+      ]
+    },
+    {
+      "code": "aller-0010-00096",
+      "display": "Tutovchi aspergil (Aspergillus fumigatus) (Asp f 6)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Аспергил дымящий (Aspergillus fumigatus) (Asp f 6)"
+        },
+        {
+          "language": "en",
+          "value": "Aspergillus fumigatus (Asp f 6)"
+        }
+      ]
+    },
+    {
+      "code": "aller-0010-00097",
+      "display": "Cladosporium herbarum (Cla h)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Кладоспориум гербарум (Cla h)"
+        },
+        {
+          "language": "en",
+          "value": "Cladosporium herbarum (Cla h)"
+        }
+      ]
+    },
+    {
+      "code": "aller-0010-00098",
+      "display": "Cladosporium herbarum (Cla h 8)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Кладоспориум гербарум (Cla h 8)"
+        },
+        {
+          "language": "en",
+          "value": "Cladosporium herbarum (Cla h 8)"
+        }
+      ]
+    },
+    {
+      "code": "aller-0010-00099",
+      "display": "Oltinrang penitsillin (Penicilium chrysogenum) (Pen ch)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Пенициллин золотистый (Penicilium chrysogenum) (Pen ch)"
+        },
+        {
+          "language": "en",
+          "value": "Penicillium chrysogenum (Pen ch)"
+        }
+      ]
+    },
+    {
+      "code": "aller-0010-00102",
+      "display": "Yeryong'oq (Ara h 1)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Арахис (Ara h 1)"
+        },
+        {
+          "language": "en",
+          "value": "Peanuts (Ara h 1)"
+        }
+      ]
+    },
+    {
+      "code": "aller-0010-00103",
+      "display": "Yeryong'oq (Ara h 2)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Арахис (Ara h 2)"
+        },
+        {
+          "language": "en",
+          "value": "Peanut (Ara h 2)"
+        }
+      ]
+    },
+    {
+      "code": "aller-0010-00104",
+      "display": "Yeryong'oq (Ara h 3)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Арахис (Ara h 3)"
+        },
+        {
+          "language": "en",
+          "value": "Peanut (Ara h 3)"
+        }
+      ]
+    },
+    {
+      "code": "aller-0010-00105",
+      "display": "Yeryong'oq (Ara h 6)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Арахис (Ara h 6)"
+        },
+        {
+          "language": "en",
+          "value": "Peanut (Ara h 6)"
+        }
+      ]
+    },
+    {
+      "code": "aller-0010-00106",
+      "display": "Yeryong'oq (Ara h 8)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Арахис (Ara h 8)"
+        },
+        {
+          "language": "en",
+          "value": "Peanut (Ara h 8)"
+        }
+      ]
+    },
+    {
+      "code": "aller-0010-00107",
+      "display": "Yeryong'oq (Ara h 9)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Арахис (Ara h 9)"
+        },
+        {
+          "language": "en",
+          "value": "Peanut (Ara h 9)"
+        }
+      ]
+    },
+    {
+      "code": "aller-0010-00108",
+      "display": "Yeryong'oq (Ara h 15)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Арахис (Ara h 15)"
+        },
+        {
+          "language": "en",
+          "value": "Peanut (Ara h 15)"
+        }
+      ]
+    },
+    {
+      "code": "aller-0010-00109",
+      "display": "Oddiy no'xat (Cic a)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Нут обыкновенный (Cic a)"
+        },
+        {
+          "language": "en",
+          "value": "Chickpea (Cic a)"
+        }
+      ]
+    },
+    {
+      "code": "aller-0010-00110",
+      "display": "Soya loviyasi (Gly m 4)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Соя (Gly m 4)"
+        },
+        {
+          "language": "en",
+          "value": "Soybean (Gly m 4)"
+        }
+      ]
+    },
+    {
+      "code": "aller-0010-00111",
+      "display": "Soya loviyasi (Gly m 5)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Соя (Gly m 5)"
+        },
+        {
+          "language": "en",
+          "value": "Soybean (Gly m 5)"
+        }
+      ]
+    },
+    {
+      "code": "aller-0010-00112",
+      "display": "Soya loviyasi (Gly m 6)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Соя (Gly m 6)"
+        },
+        {
+          "language": "en",
+          "value": "Soybean (Gly m 6)"
+        }
+      ]
+    },
+    {
+      "code": "aller-0010-00113",
+      "display": "Soya loviyasi (Gly m 8)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Соя (Gly m 8)"
+        },
+        {
+          "language": "en",
+          "value": "Soybean (Gly m 8)"
+        }
+      ]
+    },
+    {
+      "code": "aller-0010-00114",
+      "display": "Yasmiq (Len c)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Чечевица (Len c)"
+        },
+        {
+          "language": "en",
+          "value": "Lentils (Len c)"
+        }
+      ]
+    },
+    {
+      "code": "aller-0010-00115",
+      "display": "Yashil loviya (Pha v)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Зеленая фасоль (Pha v)"
+        },
+        {
+          "language": "en",
+          "value": "Green beans (Pha v)"
+        }
+      ]
+    },
+    {
+      "code": "aller-0010-00116",
+      "display": "No'xat (Pis s)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Горох (Pis s)"
+        },
+        {
+          "language": "en",
+          "value": "Peas (Pis s)"
+        }
+      ]
+    },
+    {
+      "code": "aller-0010-00118",
+      "display": "Suli (Ave s)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Овес (Ave s)"
+        },
+        {
+          "language": "en",
+          "value": "Oats (Ave s)"
+        }
+      ]
+    },
+    {
+      "code": "aller-0010-00119",
+      "display": "Kinoa (Che q)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Киноа (Che q)"
+        },
+        {
+          "language": "en",
+          "value": "Quinoa (Che q)"
+        }
+      ]
+    },
+    {
+      "code": "aller-0010-00120",
+      "display": "Oddiy marjumak (Fag e)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Гречиха обыкновенная (Fag e)"
+        },
+        {
+          "language": "en",
+          "value": "Buckwheat (Fag e)"
+        }
+      ]
+    },
+    {
+      "code": "aller-0010-00121",
+      "display": "Oddiy marjumak (Fag e 2)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Гречиха обыкновенная (Fag e 2)"
+        },
+        {
+          "language": "en",
+          "value": "Buckwheat (Fag e 2)"
+        }
+      ]
+    },
+    {
+      "code": "aller-0010-00122",
+      "display": "Arpa (Hor v)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Ячмень (Hor v)"
+        },
+        {
+          "language": "en",
+          "value": "Barley (Hor v)"
+        }
+      ]
+    },
+    {
+      "code": "aller-0010-00123",
+      "display": "Bo'rilukkak urug'i (Lup a)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Семена люпина (Lup a)"
+        },
+        {
+          "language": "en",
+          "value": "Lupin seeds (Lup a)"
+        }
+      ]
+    },
+    {
+      "code": "aller-0010-00124",
+      "display": "Guruch (Ory s)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Рис (Ory s)"
+        },
+        {
+          "language": "en",
+          "value": "Rice (Ory s)"
+        }
+      ]
+    },
+    {
+      "code": "aller-0010-00125",
+      "display": "Tariq (Pan m)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Пшено (Pan m)"
+        },
+        {
+          "language": "en",
+          "value": "Millet (Pan m)"
+        }
+      ]
+    },
+    {
+      "code": "aller-0010-00126",
+      "display": "Javdar (Sec c_flour)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Рожь (Sec c_flour)"
+        },
+        {
+          "language": "en",
+          "value": "Rye (Sec c_flour)"
+        }
+      ]
+    },
+    {
+      "code": "aller-0010-00127",
+      "display": "Bo'g'doy (Tri a aA_TI)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Пшеница (Tri a aA_TI)"
+        },
+        {
+          "language": "en",
+          "value": "Wheat (Tri a aA_TI)"
+        }
+      ]
+    },
+    {
+      "code": "aller-0010-00128",
+      "display": "Bo'g'doy (Tri a 14)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Пшеница (Tri a 14)"
+        },
+        {
+          "language": "en",
+          "value": "Wheat (Tri a 14)"
+        }
+      ]
+    },
+    {
+      "code": "aller-0010-00129",
+      "display": "Bo'g'doy (Tri a 19)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Пшеница (Tri a 19)"
+        },
+        {
+          "language": "en",
+          "value": "Wheat (Tri a 19)"
+        }
+      ]
+    },
+    {
+      "code": "aller-0010-00130",
+      "display": "Spelta bo'g'doyi (Tri s)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Пшеница спельта (Tri s)"
+        },
+        {
+          "language": "en",
+          "value": "Spelt wheat (Tri s)"
+        }
+      ]
+    },
+    {
+      "code": "aller-0010-00131",
+      "display": "Makkajo'hori (Zea m)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Кукуруза (Zea m)"
+        },
+        {
+          "language": "en",
+          "value": "Corn (Zea m)"
+        }
+      ]
+    },
+    {
+      "code": "aller-0010-00132",
+      "display": "Makkajo'hori (Zea m 14)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Кукуруза (Zea m 14)"
+        },
+        {
+          "language": "en",
+          "value": "Corn (Zea m 14)"
+        }
+      ]
+    },
+    {
+      "code": "aller-0010-00134",
+      "display": "Paprika (Cap a)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Паприка (Cap a)"
+        },
+        {
+          "language": "en",
+          "value": "Paprika (Cap a)"
+        }
+      ]
+    },
+    {
+      "code": "aller-0010-00135",
+      "display": "Oddiy zira (Car c)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Тмин обикновенный (Car c)"
+        },
+        {
+          "language": "en",
+          "value": "Caraway (Car c)"
+        }
+      ]
+    },
+    {
+      "code": "aller-0010-00136",
+      "display": "Oregano (Ori v)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Орегано (Ori v)"
+        },
+        {
+          "language": "en",
+          "value": "Oregano (Ori v)"
+        }
+      ]
+    },
+    {
+      "code": "aller-0010-00137",
+      "display": "Maydanoz (Pet c)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Петрушка (Pet c)"
+        },
+        {
+          "language": "en",
+          "value": "Parsley (Pet c)"
+        }
+      ]
+    },
+    {
+      "code": "aller-0010-00138",
+      "display": "Arpabodiyon (Pim a)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Анис (Pim a)"
+        },
+        {
+          "language": "en",
+          "value": "Anise (Pim a)"
+        }
+      ]
+    },
+    {
+      "code": "aller-0010-00139",
+      "display": "Xantal (Sin)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Горчица (Sin)"
+        },
+        {
+          "language": "en",
+          "value": "Mustard (Sin)"
+        }
+      ]
+    },
+    {
+      "code": "aller-0010-00140",
+      "display": "Xantal (Sin a 1)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Горчица (Sin a 1)"
+        },
+        {
+          "language": "en",
+          "value": "Mustard (Sin a 1)"
+        }
+      ]
+    },
+    {
+      "code": "aller-0010-00142",
+      "display": "Kivi (Act d 1)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Киви (Act d 1)"
+        },
+        {
+          "language": "en",
+          "value": "Kiwi (Act d 1)"
+        }
+      ]
+    },
+    {
+      "code": "aller-0010-00143",
+      "display": "Kivi (Act d 2)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Киви (Act d 2)"
+        },
+        {
+          "language": "en",
+          "value": "Kiwi (Act d 2)"
+        }
+      ]
+    },
+    {
+      "code": "aller-0010-00144",
+      "display": "Kivi (Act d 5)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Киви (Act d 5)"
+        },
+        {
+          "language": "en",
+          "value": "Kiwi (Act d 5)"
+        }
+      ]
+    },
+    {
+      "code": "aller-0010-00145",
+      "display": "Kivi (Act d 10)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Киви (Act d 10)"
+        },
+        {
+          "language": "en",
+          "value": "Kiwi (Act d 10)"
+        }
+      ]
+    },
+    {
+      "code": "aller-0010-00146",
+      "display": "Papayya (Car p)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Папайя (Car p)"
+        },
+        {
+          "language": "en",
+          "value": "Papaya (Car p)"
+        }
+      ]
+    },
+    {
+      "code": "aller-0010-00147",
+      "display": "Apelsin (Cit s)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Апельсин (Cit s)"
+        },
+        {
+          "language": "en",
+          "value": "Orange (Cit s)"
+        }
+      ]
+    },
+    {
+      "code": "aller-0010-00148",
+      "display": "Qovun (Cuc m 2)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Дыня (Cuc m 2)"
+        },
+        {
+          "language": "en",
+          "value": "Melon (Cuc m 2)"
+        }
+      ]
+    },
+    {
+      "code": "aller-0010-00149",
+      "display": "Anjir (Fic c)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Инжир (Fic c)"
+        },
+        {
+          "language": "en",
+          "value": "Fig (Fic c)"
+        }
+      ]
+    },
+    {
+      "code": "aller-0010-00150",
+      "display": "Qulupnay (Fra a 1+3)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Клубника (Fra a 1+3)"
+        },
+        {
+          "language": "en",
+          "value": "Strawberry (Fra a 1+3)"
+        }
+      ]
+    },
+    {
+      "code": "aller-0010-00151",
+      "display": "Olma (Mal d 1)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Яблоко (Mal d 1)"
+        },
+        {
+          "language": "en",
+          "value": "Apple (Mal d 1)"
+        }
+      ]
+    },
+    {
+      "code": "aller-0010-00152",
+      "display": "Olma (Mal d 2)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Яблоко (Mal d 2)"
+        },
+        {
+          "language": "en",
+          "value": "Apple (Mal d 2)"
+        }
+      ]
+    },
+    {
+      "code": "aller-0010-00153",
+      "display": "Olma (Mal d 3)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Яблоко (Mal d 3)"
+        },
+        {
+          "language": "en",
+          "value": "Apple (Mal d 3)"
+        }
+      ]
+    },
+    {
+      "code": "aller-0010-00154",
+      "display": "Mango (Man i)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Манго (Man i)"
+        },
+        {
+          "language": "en",
+          "value": "Mango (Man i)"
+        }
+      ]
+    },
+    {
+      "code": "aller-0010-00155",
+      "display": "Banan (Mus a)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Банан (Mus a)"
+        },
+        {
+          "language": "en",
+          "value": "Banana (Mus a)"
+        }
+      ]
+    },
+    {
+      "code": "aller-0010-00156",
+      "display": "Avokado (Pers a)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Авокадо (Pers a)"
+        },
+        {
+          "language": "en",
+          "value": "Avocado (Pers a)"
+        }
+      ]
+    },
+    {
+      "code": "aller-0010-00157",
+      "display": "Gilos (Pru av)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Вишня (Pru av)"
+        },
+        {
+          "language": "en",
+          "value": "Cherry (Pru av)"
+        }
+      ]
+    },
+    {
+      "code": "aller-0010-00158",
+      "display": "Shaftoli (Pru p 3)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Персик (Pru p 3)"
+        },
+        {
+          "language": "en",
+          "value": "Peach (Pru p 3)"
+        }
+      ]
+    },
+    {
+      "code": "aller-0010-00159",
+      "display": "Nok (Pyr c)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Груша (Pyr c)"
+        },
+        {
+          "language": "en",
+          "value": "Pear (Pyr c)"
+        }
+      ]
+    },
+    {
+      "code": "aller-0010-00160",
+      "display": "Buta mevasi (chernika) (Vac m)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Черника (Vac m)"
+        },
+        {
+          "language": "en",
+          "value": "Blueberry (Vac m)"
+        }
+      ]
+    },
+    {
+      "code": "aller-0010-00161",
+      "display": "Uzum (Vit v 1)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Виноград (Vit v 1)"
+        },
+        {
+          "language": "en",
+          "value": "Grapes (Vit v 1)"
+        }
+      ]
+    },
+    {
+      "code": "aller-0010-00163",
+      "display": "Piyoz (All c)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Лук (All c)"
+        },
+        {
+          "language": "en",
+          "value": "Onion (All c)"
+        }
+      ]
+    },
+    {
+      "code": "aller-0010-00164",
+      "display": "Sarimsoqpiyoz (All s)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Чеснок (All s)"
+        },
+        {
+          "language": "en",
+          "value": "Garlic (All s)"
+        }
+      ]
+    },
+    {
+      "code": "aller-0010-00165",
+      "display": "Selderey (Api g 1)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Сельдерей (Api g 1)"
+        },
+        {
+          "language": "en",
+          "value": "Celery (Api g 1)"
+        }
+      ]
+    },
+    {
+      "code": "aller-0010-00166",
+      "display": "Selderey (Api g 2)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Сельдерей (Api g 2)"
+        },
+        {
+          "language": "en",
+          "value": "Celery (Api g 2)"
+        }
+      ]
+    },
+    {
+      "code": "aller-0010-00167",
+      "display": "Selderey (Api g 6)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Сельдерей (Api g 6)"
+        },
+        {
+          "language": "en",
+          "value": "Celery (Api g 6)"
+        }
+      ]
+    },
+    {
+      "code": "aller-0010-00168",
+      "display": "Sabzi (Dau c)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Морковь (Dau c)"
+        },
+        {
+          "language": "en",
+          "value": "Carrot (Dau c)"
+        }
+      ]
+    },
+    {
+      "code": "aller-0010-00169",
+      "display": "Sabzi (Dau c 1)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Морковь (Dau c 1)"
+        },
+        {
+          "language": "en",
+          "value": "Carrot (Dau c 1)"
+        }
+      ]
+    },
+    {
+      "code": "aller-0010-00170",
+      "display": "Kartoshka (Sol t)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Картофель (Sol t)"
+        },
+        {
+          "language": "en",
+          "value": "Potato (Sol t)"
+        }
+      ]
+    },
+    {
+      "code": "aller-0010-00171",
+      "display": "Pomidor (Sola l)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Помидор (Sola l)"
+        },
+        {
+          "language": "en",
+          "value": "Tomato (Sola l)"
+        }
+      ]
+    },
+    {
+      "code": "aller-0010-00172",
+      "display": "Pomidor (Sola l 6)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Помидор (Sola l 6)"
+        },
+        {
+          "language": "en",
+          "value": "Tomato (Sola l 6)"
+        }
+      ]
+    },
+    {
+      "code": "aller-0010-00174",
+      "display": "Hind yong'og'i (keshyu) (Ana o)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Кешью (Ana o)"
+        },
+        {
+          "language": "en",
+          "value": "Cashew (Ana o)"
+        }
+      ]
+    },
+    {
+      "code": "aller-0010-00175",
+      "display": "Hind yong'og'i (keshyu) (Ana o 2)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Кешью (Ana o 2)"
+        },
+        {
+          "language": "en",
+          "value": "Cashew (Ana o 2)"
+        }
+      ]
+    },
+    {
+      "code": "aller-0010-00176",
+      "display": "Hind yong'og'i (keshyu) (Ana o 3)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Кешью (Ana o 3)"
+        },
+        {
+          "language": "en",
+          "value": "Cashew (Ana o 3)"
+        }
+      ]
+    },
+    {
+      "code": "aller-0010-00177",
+      "display": "Braziliya yong'og'i (Ber e)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Бразильский орех (Ber e)"
+        },
+        {
+          "language": "en",
+          "value": "Brazil nut (Ber e)"
+        }
+      ]
+    },
+    {
+      "code": "aller-0010-00178",
+      "display": "Braziliya yong'og'i (Ber e 1)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Бразильский орех (Ber e 1)"
+        },
+        {
+          "language": "en",
+          "value": "Brazil nut (Ber e 1)"
+        }
+      ]
+    },
+    {
+      "code": "aller-0010-00179",
+      "display": "Pekan yong'og'i (Car i)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Пекан, орех (Car i)"
+        },
+        {
+          "language": "en",
+          "value": "Pecan, nut (Car i)"
+        }
+      ]
+    },
+    {
+      "code": "aller-0010-00180",
+      "display": "Funduk yong'og'i (Cor a 1-0401)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Фундук (Cor a 1-0401)"
+        },
+        {
+          "language": "en",
+          "value": "Hazelnut (Cor a 1-0401)"
+        }
+      ]
+    },
+    {
+      "code": "aller-0010-00181",
+      "display": "Funduk yong'og'i (Cor a 8)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Фундук (Cor a 8)"
+        },
+        {
+          "language": "en",
+          "value": "Hazelnut (Cor a 8)"
+        }
+      ]
+    },
+    {
+      "code": "aller-0010-00182",
+      "display": "Funduk yong'og'i (Cor a 9)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Фундук (Cor a 9)"
+        },
+        {
+          "language": "en",
+          "value": "Hazelnut (Cor a 9)"
+        }
+      ]
+    },
+    {
+      "code": "aller-0010-00183",
+      "display": "Funduk yong'og'i (Cor a 11)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Фундук (Cor a 11)"
+        },
+        {
+          "language": "en",
+          "value": "Hazelnut (Cor a 11)"
+        }
+      ]
+    },
+    {
+      "code": "aller-0010-00184",
+      "display": "Funduk yong'og'i (Cor a 14)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Фундук (Cor a 14)"
+        },
+        {
+          "language": "en",
+          "value": "Hazelnut (Cor a 14)"
+        }
+      ]
+    },
+    {
+      "code": "aller-0010-00185",
+      "display": "Gretsiya yong'og'i (Jug r 1)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Грецкий орех (Jug r 1)"
+        },
+        {
+          "language": "en",
+          "value": "Walnut (Jug r 1)"
+        }
+      ]
+    },
+    {
+      "code": "aller-0010-00186",
+      "display": "Gretsiya yong'og'i (Jug r 2)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Грецкий орех (Jug r 2)"
+        },
+        {
+          "language": "en",
+          "value": "Walnut (Jug r 2)"
+        }
+      ]
+    },
+    {
+      "code": "aller-0010-00187",
+      "display": "Gretsiya yong'og'i (Jug r 3)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Грецкий орех (Jug r 3)"
+        },
+        {
+          "language": "en",
+          "value": "Walnut (Jug r 3)"
+        }
+      ]
+    },
+    {
+      "code": "aller-0010-00188",
+      "display": "Gretsiya yong'og'i (Jug r 4)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Грецкий орех (Jug r 4)"
+        },
+        {
+          "language": "en",
+          "value": "Walnut (Jug r 4)"
+        }
+      ]
+    },
+    {
+      "code": "aller-0010-00189",
+      "display": "Gretsiya yong'og'i (Jug r 6)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Грецкий орех (Jug r 6)"
+        },
+        {
+          "language": "en",
+          "value": "Walnut (Jug r 6)"
+        }
+      ]
+    },
+    {
+      "code": "aller-0010-00190",
+      "display": "Makadamiya yong'og'i (Mac i 2S Albumin)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Орех макадамия (Mac i 2S Albumin)"
+        },
+        {
+          "language": "en",
+          "value": "Macadamia nut (Mac i 2S Albumin)"
+        }
+      ]
+    },
+    {
+      "code": "aller-0010-00191",
+      "display": "Makadamiya yong'og'i (Mac inte)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Орех макадамия (Mac inte)"
+        },
+        {
+          "language": "en",
+          "value": "Macadamia nut (Mac inte)"
+        }
+      ]
+    },
+    {
+      "code": "aller-0010-00192",
+      "display": "Pistalar (Pis v 1)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Фисташки (Pis v 1)"
+        },
+        {
+          "language": "en",
+          "value": "Pistachio (Pis v 1)"
+        }
+      ]
+    },
+    {
+      "code": "aller-0010-00193",
+      "display": "Pistalar (Pis v 2)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Фисташки (Pis v 2)"
+        },
+        {
+          "language": "en",
+          "value": "Pistachio (Pis v 2)"
+        }
+      ]
+    },
+    {
+      "code": "aller-0010-00194",
+      "display": "Pistalar (Pis v 3)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Фисташки (Pis v 3)"
+        },
+        {
+          "language": "en",
+          "value": "Pistachio (Pis v 3)"
+        }
+      ]
+    },
+    {
+      "code": "aller-0010-00195",
+      "display": "Bodom (Pru du)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Миндаль (Pru du)"
+        },
+        {
+          "language": "en",
+          "value": "Almond (Pru du)"
+        }
+      ]
+    },
+    {
+      "code": "aller-0010-00197",
+      "display": "Qovoq urug'i (Cuc p)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Семена тыквы (Cuc p)"
+        },
+        {
+          "language": "en",
+          "value": "Pumpkin seeds (Cuc p)"
+        }
+      ]
+    },
+    {
+      "code": "aller-0010-00198",
+      "display": "Kungaboqar urug'i (Hel a)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Семена подсолнечника (Hel a)"
+        },
+        {
+          "language": "en",
+          "value": "Sunflower seeds (Hel a)"
+        }
+      ]
+    },
+    {
+      "code": "aller-0010-00199",
+      "display": "Ko'knor urug'i (Pap s)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Мак (Pap s)"
+        },
+        {
+          "language": "en",
+          "value": "Poppy seeds (Pap s)"
+        }
+      ]
+    },
+    {
+      "code": "aller-0010-00200",
+      "display": "Ko'knor urug'i (Pap s 2S Albumin)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Мак (Pap s 2S Albumin)"
+        },
+        {
+          "language": "en",
+          "value": "Poppy seeds (Pap s 2S Albumin)"
+        }
+      ]
+    },
+    {
+      "code": "aller-0010-00201",
+      "display": "Kunjut (Ses i)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Кунжут (Ses i)"
+        },
+        {
+          "language": "en",
+          "value": "Sesame (Ses i)"
+        }
+      ]
+    },
+    {
+      "code": "aller-0010-00202",
+      "display": "Kunjut (Ses i 1)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Кунжут (Ses i 1)"
+        },
+        {
+          "language": "en",
+          "value": "Sesame (Ses i 1)"
+        }
+      ]
+    },
+    {
+      "code": "aller-0010-00203",
+      "display": "Fenugrek urug'i (Tri fo)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Семена пажитника (Tri fo)"
+        },
+        {
+          "language": "en",
+          "value": "Fenugreek seeds (Tri fo)"
+        }
+      ]
+    },
+    {
+      "code": "aller-0010-00206",
+      "display": "Sigir suti (Bos d_milk)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Коровье молоко (Bos d_milk)"
+        },
+        {
+          "language": "en",
+          "value": "Cow's milk (Bos d_milk)"
+        }
+      ]
+    },
+    {
+      "code": "aller-0010-00207",
+      "display": "Sigir suti (Bos d 4)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Коровье молоко (Bos d 4)"
+        },
+        {
+          "language": "en",
+          "value": "Cow's milk (Bos d 4)"
+        }
+      ]
+    },
+    {
+      "code": "aller-0010-00208",
+      "display": "Sigir suti (Bos d 5)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Коровье молоко (Bos d 5)"
+        },
+        {
+          "language": "en",
+          "value": "Cow's milk (Bos d 5)"
+        }
+      ]
+    },
+    {
+      "code": "aller-0010-00209",
+      "display": "Sigir suti (Bos d 8)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Коровье молоко (Bos d 8)"
+        },
+        {
+          "language": "en",
+          "value": "Cow's milk"
+        }
+      ]
+    },
+    {
+      "code": "aller-0010-00210",
+      "display": "Tuya suti (Cam d)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Верблюжье молоко (Cam d)"
+        },
+        {
+          "language": "en",
+          "value": "Camel milk (Cam d)"
+        }
+      ]
+    },
+    {
+      "code": "aller-0010-00211",
+      "display": "Echki suti (Cap h_milk)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Козье молоко (Cap h_milk)"
+        },
+        {
+          "language": "en",
+          "value": "Goat milk (Cap h_milk)"
+        }
+      ]
+    },
+    {
+      "code": "aller-0010-00212",
+      "display": "Baytal (ot) suti (qimiz) (Equ c_milk)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Кобылье молоко (Equ c_milk)"
+        },
+        {
+          "language": "en",
+          "value": "Mare's milk (Equ c_milk)"
+        }
+      ]
+    },
+    {
+      "code": "aller-0010-00213",
+      "display": "Qo'y suti (Ovi a_milk)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Овечье молоко (Ovi a_milk)"
+        },
+        {
+          "language": "en",
+          "value": "Sheep milk (Ovi a_milk)"
+        }
+      ]
+    },
+    {
+      "code": "aller-0010-00215",
+      "display": "Tuxum oqsili (Gal d_white)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Яичный белок (Gal d_white)"
+        },
+        {
+          "language": "en",
+          "value": "Egg white (Gal d_white)"
+        }
+      ]
+    },
+    {
+      "code": "aller-0010-00216",
+      "display": "Tuxum sarig'i (Gal d_yolk)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Яичный желток (Gal d_yolk)"
+        },
+        {
+          "language": "en",
+          "value": "Egg yolk (Gal d_yolk)"
+        }
+      ]
+    },
+    {
+      "code": "aller-0010-00217",
+      "display": "Tuxum oqsili (Gal d 1)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Яичный белок (Gal d 1)"
+        },
+        {
+          "language": "en",
+          "value": "Egg white (Gal d 1)"
+        }
+      ]
+    },
+    {
+      "code": "aller-0010-00218",
+      "display": "Tuxum oqsili (Gal d 2)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Яичный белок (Gal d 2)"
+        },
+        {
+          "language": "en",
+          "value": "Egg white (Gal d 2)"
+        }
+      ]
+    },
+    {
+      "code": "aller-0010-00219",
+      "display": "Tuxum oqsili (Gal d 3)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Яичный белок (Gal d 3)"
+        },
+        {
+          "language": "en",
+          "value": "Egg white (Gal d 3)"
+        }
+      ]
+    },
+    {
+      "code": "aller-0010-00220",
+      "display": "Tuxum oqsili (Gal d 4)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Яичный белок (Gal d 4)"
+        },
+        {
+          "language": "en",
+          "value": "Egg white (Gal d 4)"
+        }
+      ]
+    },
+    {
+      "code": "aller-0010-00221",
+      "display": "Tuxum sarig'i (Gal d 5)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Яичный желток (Gal d 5)"
+        },
+        {
+          "language": "en",
+          "value": "Egg yolk (Gal d 5)"
+        }
+      ]
+    },
+    {
+      "code": "aller-0010-00223",
+      "display": "Seld balig'i qurti (Ani s 1)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Сельдиной черв (Ani s 1)"
+        },
+        {
+          "language": "en",
+          "value": "Herring worm (Ani s 1)"
+        }
+      ]
+    },
+    {
+      "code": "aller-0010-00224",
+      "display": "Seld balig'i qurti (Ani s 3)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Сельдяной черв (Ani s 3)"
+        },
+        {
+          "language": "en",
+          "value": "Herring worm (Ani s 3)"
+        }
+      ]
+    },
+    {
+      "code": "aller-0010-00225",
+      "display": "Krab (Chi spp-)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Краб (Chi spp-)"
+        },
+        {
+          "language": "en",
+          "value": "Crab (Chi spp-)"
+        }
+      ]
+    },
+    {
+      "code": "aller-0010-00226",
+      "display": "Atlantika seld balig'i (Clu h)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Сельд атлантическая (Clu h)"
+        },
+        {
+          "language": "en",
+          "value": "Atlantic herring (Clu h)"
+        }
+      ]
+    },
+    {
+      "code": "aller-0010-00227",
+      "display": "Atlantika seld balig'i (Clu h 1)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Сельд атлантическая (Clu h 1)"
+        },
+        {
+          "language": "en",
+          "value": "Atlantic herring (Clu h 1)"
+        }
+      ]
+    },
+    {
+      "code": "aller-0010-00228",
+      "display": "Oddiy krevetka (Cra c 6)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Обыкновенная креветка (Cra c 6)"
+        },
+        {
+          "language": "en",
+          "value": "Common shrimp (Cra c 6)"
+        }
+      ]
+    },
+    {
+      "code": "aller-0010-00229",
+      "display": "Karp (Cyp c 1)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Карп (Cyp c 1)"
+        },
+        {
+          "language": "en",
+          "value": "Carp (Cyp c 1)"
+        }
+      ]
+    },
+    {
+      "code": "aller-0010-00230",
+      "display": "Atlantika treska balig'i (Gad m)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Атлантическая треска (Gad m)"
+        },
+        {
+          "language": "en",
+          "value": "Atlantic cod (Gad m)"
+        }
+      ]
+    },
+    {
+      "code": "aller-0010-00231",
+      "display": "Atlantika treska balig'i (Gad m 2+3)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Атлантическая треска (Gad m 2+3)"
+        },
+        {
+          "language": "en",
+          "value": "Atlantic cod (Gad m 2+3)"
+        }
+      ]
+    },
+    {
+      "code": "aller-0010-00232",
+      "display": "Atlantika treska balig'i (Gad m 1)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Атлантическая треска (Gad m 1)"
+        },
+        {
+          "language": "en",
+          "value": "Atlantic cod (Gad m 1)"
+        }
+      ]
+    },
+    {
+      "code": "aller-0010-00233",
+      "display": "Omar (Hom g)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Омар (Hom g)"
+        },
+        {
+          "language": "en",
+          "value": "Lobster (Hom g)"
+        }
+      ]
+    },
+    {
+      "code": "aller-0010-00234",
+      "display": "Krevetka (Lit s)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Креветка (Lit s)"
+        },
+        {
+          "language": "en",
+          "value": "Shrimp (Lit s)"
+        }
+      ]
+    },
+    {
+      "code": "aller-0010-00235",
+      "display": "Kalmar (Lol spp-)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Кальмар (Lol spp-)"
+        },
+        {
+          "language": "en",
+          "value": "Squid (Lol spp-)"
+        }
+      ]
+    },
+    {
+      "code": "aller-0010-00236",
+      "display": "Yeyishli midiya (Myt e)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Мидия съедобная (Myt e)"
+        },
+        {
+          "language": "en",
+          "value": "Edible mussel (Myt e)"
+        }
+      ]
+    },
+    {
+      "code": "aller-0010-00237",
+      "display": "Ustritsa (Ost e)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Устрица (Ost e)"
+        },
+        {
+          "language": "en",
+          "value": "Oyster (Ost e)"
+        }
+      ]
+    },
+    {
+      "code": "aller-0010-00238",
+      "display": "Shimoliy krevetka (Pan b)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Северная креветка (Pan b)"
+        },
+        {
+          "language": "en",
+          "value": "Northern shrimp (Pan b)"
+        }
+      ]
+    },
+    {
+      "code": "aller-0010-00239",
+      "display": "Dengiz chig'anog'i (Pec spp-)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Морской гребешок (Pec spp-)"
+        },
+        {
+          "language": "en",
+          "value": "Scallop (Pec spp-)"
+        }
+      ]
+    },
+    {
+      "code": "aller-0010-00240",
+      "display": "Qora yo'lbarssimon krevetka (Pen m 1)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Черная тигровая креветка (Pen m 1)"
+        },
+        {
+          "language": "en",
+          "value": "Black tiger shrimp (Pen m 1)"
+        }
+      ]
+    },
+    {
+      "code": "aller-0010-00241",
+      "display": "Qora yo'lbarssimon krevetka (Pen m 2)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Черная тигровая креветка (Pen m 2)"
+        },
+        {
+          "language": "en",
+          "value": "Black tiger shrimp (Pen m 2)"
+        }
+      ]
+    },
+    {
+      "code": "aller-0010-00242",
+      "display": "Qora yo'lbarssimon krevetka (Pen m 3)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Черная тигровая креветка (Pen m 3)"
+        },
+        {
+          "language": "en",
+          "value": "Black tiger shrimp (Pen m 3)"
+        }
+      ]
+    },
+    {
+      "code": "aller-0010-00243",
+      "display": "Qora yo'lbarssimon krevetka (Pen m 4)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Черная тигровая креветка (Pen m 4)"
+        },
+        {
+          "language": "en",
+          "value": "Black tiger shrimp (Pen m 4)"
+        }
+      ]
+    },
+    {
+      "code": "aller-0010-00244",
+      "display": "Dengiz tulkisi yoki tikanli skat (Raj c)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Морская лисица или колючий (Raj c)"
+        },
+        {
+          "language": "en",
+          "value": "Thresher or spiny (Raj c)"
+        }
+      ]
+    },
+    {
+      "code": "aller-0010-00245",
+      "display": "Dengiz tulkisi yoki tikanli skat (Raj c Parvalbumin)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Морская лисица или колючий скат (Raj c Parvalbumin)"
+        },
+        {
+          "language": "en",
+          "value": "Thresher or spiny ray (Raj c Parvalbumin)"
+        }
+      ]
+    },
+    {
+      "code": "aller-0010-00246",
+      "display": "Mollyuska (Rud spp-)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Моллюск (Rud spp-)"
+        },
+        {
+          "language": "en",
+          "value": "Shellfish (Rud spp-)"
+        }
+      ]
+    },
+    {
+      "code": "aller-0010-00247",
+      "display": "Losos (Sal s)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Лосось (Sal s)"
+        },
+        {
+          "language": "en",
+          "value": "Salmon (Sal s)"
+        }
+      ]
+    },
+    {
+      "code": "aller-0010-00248",
+      "display": "Losos (Sal s 1)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Лосось (Sal s 1)"
+        },
+        {
+          "language": "en",
+          "value": "Salmon (Sal s 1)"
+        }
+      ]
+    },
+    {
+      "code": "aller-0010-00249",
+      "display": "Atlantika skumboriya balig'i (Sco s)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Атлантическая скумбрия (Sco s)"
+        },
+        {
+          "language": "en",
+          "value": "Atlantic mackerel (Sco s)"
+        }
+      ]
+    },
+    {
+      "code": "aller-0010-00250",
+      "display": "Atlantika skumbriya balig'i (Sco s 1)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Атлантическая скумбрия (Sco s 1)"
+        },
+        {
+          "language": "en",
+          "value": "Atlantic mackerel (Sco s 1)"
+        }
+      ]
+    },
+    {
+      "code": "aller-0010-00251",
+      "display": "Tunes (Thu a)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Тунец (Thu a)"
+        },
+        {
+          "language": "en",
+          "value": "Tuna (Thu a)"
+        }
+      ]
+    },
+    {
+      "code": "aller-0010-00252",
+      "display": "Tunes (Thu a 1)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Тунец (Thu a 1)"
+        },
+        {
+          "language": "en",
+          "value": "Tuna (Thu a 1)"
+        }
+      ]
+    },
+    {
+      "code": "aller-0010-00253",
+      "display": "Qilich baliq (Xip g 1)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Рыба-меч (Xip g 1)"
+        },
+        {
+          "language": "en",
+          "value": "Swordfish (Xip g 1)"
+        }
+      ]
+    },
+    {
+      "code": "aller-0010-00255",
+      "display": "Uy chigirtkasi (Ach d)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Сверчок домовой (Ach d)"
+        },
+        {
+          "language": "en",
+          "value": "House cricket (Ach d)"
+        }
+      ]
+    },
+    {
+      "code": "aller-0010-00256",
+      "display": "Mol go'shti (Bos d_meat)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Говядина (Bos d_meat)"
+        },
+        {
+          "language": "en",
+          "value": "Beef (Bos d_meat)"
+        }
+      ]
+    },
+    {
+      "code": "aller-0010-00257",
+      "display": "Mol go'shti (Bos d 6)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Говядина (Bos d 6)"
+        },
+        {
+          "language": "en",
+          "value": "Beef (Bos d 6)"
+        }
+      ]
+    },
+    {
+      "code": "aller-0010-00258",
+      "display": "Ot go'shti (Equ c_meat)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Конина (Equ c_meat)"
+        },
+        {
+          "language": "en",
+          "value": "Horse meat (Equ c_meat)"
+        }
+      ]
+    },
+    {
+      "code": "aller-0010-00259",
+      "display": "Tovuq go'shti (Gal d_meat)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Курятина (Gal d_meat)"
+        },
+        {
+          "language": "en",
+          "value": "Chicken (Gal d_meat)"
+        }
+      ]
+    },
+    {
+      "code": "aller-0010-00260",
+      "display": "Ko'chmanchi chigirtka (Loc m)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Перелетная саранча (Loc m)"
+        },
+        {
+          "language": "en",
+          "value": "Migratory locust (Loc m)"
+        }
+      ]
+    },
+    {
+      "code": "aller-0010-00261",
+      "display": "Kurka go'shti (Mel g)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Индюшатина (Mel g)"
+        },
+        {
+          "language": "en",
+          "value": "Turkey (Mel g)"
+        }
+      ]
+    },
+    {
+      "code": "aller-0010-00262",
+      "display": "Quyon go'shti (Ory_meat)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Кролятина (Ory_meat)"
+        },
+        {
+          "language": "en",
+          "value": "Rabbit (Ory_meat)"
+        }
+      ]
+    },
+    {
+      "code": "aller-0010-00263",
+      "display": "Qo'y go'shti (Ovi a_meat)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Баранина (Ovi a_meat)"
+        },
+        {
+          "language": "en",
+          "value": "Lamb (Ovi a_meat)"
+        }
+      ]
+    },
+    {
+      "code": "aller-0010-00264",
+      "display": "Cho'chqa go'shti (Sus d_meat)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Свинина (Sus d_meat)"
+        },
+        {
+          "language": "en",
+          "value": "Pork (Sus d_meat)"
+        }
+      ]
+    },
+    {
+      "code": "aller-0010-00265",
+      "display": "Cho'chqa go'shti (Sus d 1)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Свинина (Sus d 1)"
+        },
+        {
+          "language": "en",
+          "value": "Pork (Sus d 1)"
+        }
+      ]
+    },
+    {
+      "code": "aller-0010-00266",
+      "display": "Katta un qo'ng'izi (Ten m)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Большой мучной хрущак (Ten m)"
+        },
+        {
+          "language": "en",
+          "value": "Large mealworm (Ten m)"
+        }
+      ]
+    },
+    {
+      "code": "aller-0010-00269",
+      "display": "Olovli chumoli (Sol spp-)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Огненный муравей (Sol spp-)"
+        },
+        {
+          "language": "en",
+          "value": "Fire ant (Sol spp-)"
+        }
+      ]
+    },
+    {
+      "code": "aller-0010-00271",
+      "display": "Asalari (Api m)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Пчела медоносная (Api m)"
+        },
+        {
+          "language": "en",
+          "value": "Honey bee (Api m)"
+        }
+      ]
+    },
+    {
+      "code": "aller-0010-00272",
+      "display": "Asalari (Api m 1)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Пчела медоносная (Api m 1)"
+        },
+        {
+          "language": "en",
+          "value": "Honey bee (Api m 1)"
+        }
+      ]
+    },
+    {
+      "code": "aller-0010-00273",
+      "display": "Asalari (Api m 10)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Пчела медоносная (Api m 10)"
+        },
+        {
+          "language": "en",
+          "value": "Honey bee (Api m 10)"
+        }
+      ]
+    },
+    {
+      "code": "aller-0010-00275",
+      "display": "Sakson arisi (Dol spp)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Оса саксонская (Dol spp)"
+        },
+        {
+          "language": "en",
+          "value": "Saxon wasp (Dol spp)"
+        }
+      ]
+    },
+    {
+      "code": "aller-0010-00276",
+      "display": "Qog'oz ari (Pol d)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Оса бумажная (Pol d)"
+        },
+        {
+          "language": "en",
+          "value": "Paper wasp (Pol d)"
+        }
+      ]
+    },
+    {
+      "code": "aller-0010-00277",
+      "display": "Qog'oz ari (Pol d 5)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Оса бумажная (Pol d 5)"
+        },
+        {
+          "language": "en",
+          "value": "Paper wasp (Pol d 5)"
+        }
+      ]
+    },
+    {
+      "code": "aller-0010-00278",
+      "display": "Oddiy ari (Ves v)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Оса обыкновенная (Ves v)"
+        },
+        {
+          "language": "en",
+          "value": "Common wasp (Ves v)"
+        }
+      ]
+    },
+    {
+      "code": "aller-0010-00279",
+      "display": "Oddiy ari (Ves v 1)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Оса обыкновенная (Ves v 1)"
+        },
+        {
+          "language": "en",
+          "value": "Common wasp (Ves v 1)"
+        }
+      ]
+    },
+    {
+      "code": "aller-0010-00280",
+      "display": "Oddiy ari (Ves v 5)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Оса обыкновенная (Ves v 5)"
+        },
+        {
+          "language": "en",
+          "value": "Common wasp (Ves v 5)"
+        }
+      ]
+    },
+    {
+      "code": "aller-0010-00282",
+      "display": "Nemes suvaragi (Bla g 1)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Немецкий таракан (Bla g 1)"
+        },
+        {
+          "language": "en",
+          "value": "German cockroach (Bla g 1)"
+        }
+      ]
+    },
+    {
+      "code": "aller-0010-00283",
+      "display": "Nemes suvaragi (Bla g 2)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Немецкий таракан (Bla g 2)"
+        },
+        {
+          "language": "en",
+          "value": "German cockroach (Bla g 2)"
+        }
+      ]
+    },
+    {
+      "code": "aller-0010-00284",
+      "display": "Nemes suvaragi (Bla g 4)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Немецкий таракан (Bla g 4)"
+        },
+        {
+          "language": "en",
+          "value": "German cockroach (Bla g 4)"
+        }
+      ]
+    },
+    {
+      "code": "aller-0010-00285",
+      "display": "Nemes suvaragi (Bla g 5)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Немецкий таракан (Bla g 5)"
+        },
+        {
+          "language": "en",
+          "value": "German cockroach (Bla g 5)"
+        }
+      ]
+    },
+    {
+      "code": "aller-0010-00286",
+      "display": "Nemes suvaragi (Bla g 9)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Немецкий таракан (Bla g 9)"
+        },
+        {
+          "language": "en",
+          "value": "German cockroach (Bla g 9)"
+        }
+      ]
+    },
+    {
+      "code": "aller-0010-00287",
+      "display": "Amerika suvaragi (Per a)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Американский таракан (Per a)"
+        },
+        {
+          "language": "en",
+          "value": "American cockroach (Per a)"
+        }
+      ]
+    },
+    {
+      "code": "aller-0010-00288",
+      "display": "Amerika suvaragi (Per a 7)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Американский таракан (Per a 7)"
+        },
+        {
+          "language": "en",
+          "value": "American cockroach (Per a 7)"
+        }
+      ]
+    },
+    {
+      "code": "aller-0010-00291",
+      "display": "It (Can f_Fd1)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Собака (Can f_Fd1)"
+        },
+        {
+          "language": "en",
+          "value": "Dog (Can f_Fd1)"
+        }
+      ]
+    },
+    {
+      "code": "aller-0010-00292",
+      "display": "It siydigi (shu jumladan Can f 5) (Can f_male urine)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Моча собаки (вкл- Can f 5) (Can f_male urine)"
+        },
+        {
+          "language": "en",
+          "value": "Dog urine (incl- Can f 5) (Can f_male urine)"
+        }
+      ]
+    },
+    {
+      "code": "aller-0010-00293",
+      "display": "It (Can f 1)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Собака (Can f 1)"
+        },
+        {
+          "language": "en",
+          "value": "Dog (Can f 1)"
+        }
+      ]
+    },
+    {
+      "code": "aller-0010-00294",
+      "display": "It (Can f 2)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Собака (Can f 2)"
+        },
+        {
+          "language": "en",
+          "value": "Dog (Can f 2)"
+        }
+      ]
+    },
+    {
+      "code": "aller-0010-00295",
+      "display": "It (Can f 3)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Собака (Can f 3)"
+        },
+        {
+          "language": "en",
+          "value": "Dog (Can f 3)"
+        }
+      ]
+    },
+    {
+      "code": "aller-0010-00296",
+      "display": "It (Can f 4)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Собака (Can f 4)"
+        },
+        {
+          "language": "en",
+          "value": "Dog (Can f 4)"
+        }
+      ]
+    },
+    {
+      "code": "aller-0010-00297",
+      "display": "It (Can f 6)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Собака (Can f 6)"
+        },
+        {
+          "language": "en",
+          "value": "Dog (Can f 6)"
+        }
+      ]
+    },
+    {
+      "code": "aller-0010-00298",
+      "display": "Dengiz cho'chqasi (Cav p 1)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Морская свинка (Cav p 1)"
+        },
+        {
+          "language": "en",
+          "value": "Guinea pig (Cav p 1)"
+        }
+      ]
+    },
+    {
+      "code": "aller-0010-00299",
+      "display": "Mushuk (Fel d 1)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Кот (Fel d 1)"
+        },
+        {
+          "language": "en",
+          "value": "Cat (Fel d 1)"
+        }
+      ]
+    },
+    {
+      "code": "aller-0010-00300",
+      "display": "Mushuk (Fel d 2)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Кот (Fel d 2)"
+        },
+        {
+          "language": "en",
+          "value": "Cat (Fel d 2)"
+        }
+      ]
+    },
+    {
+      "code": "aller-0010-00301",
+      "display": "Mushuk (Fel d 4)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Кот (Fel d 4)"
+        },
+        {
+          "language": "en",
+          "value": "Cat (Fel d 4)"
+        }
+      ]
+    },
+    {
+      "code": "aller-0010-00302",
+      "display": "Mushuk (Fel d 7)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Кот (Fel d 7)"
+        },
+        {
+          "language": "en",
+          "value": "Cat (Fel d 7)"
+        }
+      ]
+    },
+    {
+      "code": "aller-0010-00303",
+      "display": "Uy sichqoni epiteliyasi (Mus m 1)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Мышь домашняя, эпидермис (Mus m 1)"
+        },
+        {
+          "language": "en",
+          "value": "House mouse, epidermis (Mus m 1)"
+        }
+      ]
+    },
+    {
+      "code": "aller-0010-00304",
+      "display": "Quyon epiteliyasi (Ory c 1)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Кролик, эпителий (Ory c 1)"
+        },
+        {
+          "language": "en",
+          "value": "Rabbit, epithelium (Ory c 1)"
+        }
+      ]
+    },
+    {
+      "code": "aller-0010-00305",
+      "display": "Quyon epiteliyasi (Ory c 2)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Кролик, эпителий (Ory c 2)"
+        },
+        {
+          "language": "en",
+          "value": "Rabbit, epithelium (Ory c 2)"
+        }
+      ]
+    },
+    {
+      "code": "aller-0010-00306",
+      "display": "Quyon epiteliyasi (Ory c 3)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Кролик, эпителий (Ory c 3)"
+        },
+        {
+          "language": "en",
+          "value": "Rabbit, epithelium (Ory c 3)"
+        }
+      ]
+    },
+    {
+      "code": "aller-0010-00307",
+      "display": "Djungar og'maxoni (Phod s 1)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Джунгарский хомяк (Phod s 1)"
+        },
+        {
+          "language": "en",
+          "value": "Djungarian hamster (Phod s 1)"
+        }
+      ]
+    },
+    {
+      "code": "aller-0010-00308",
+      "display": "Kalamush epiteliyasi (Rat n)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Крыса, эпителий (Rat n)"
+        },
+        {
+          "language": "en",
+          "value": "Rat, epithelium (Rat n)"
+        }
+      ]
+    },
+    {
+      "code": "aller-0010-00310",
+      "display": "Sigir epiteliyasi (Bos d 2)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Корова, эпителий (Bos d 2)"
+        },
+        {
+          "language": "en",
+          "value": "Cow, epithelium (Bos d 2)"
+        }
+      ]
+    },
+    {
+      "code": "aller-0010-00311",
+      "display": "Echki epiteliyasi (Cap h_epithelia)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Коза, эпителий (Cap h_epithelia)"
+        },
+        {
+          "language": "en",
+          "value": "Goat, epithelium (Cap h_epithelia)"
+        }
+      ]
+    },
+    {
+      "code": "aller-0010-00312",
+      "display": "Ot epiteliyasi (Equ c 1)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Лошадь, эпителий (Equ c 1)"
+        },
+        {
+          "language": "en",
+          "value": "Horse, epithelium (Equ c 1)"
+        }
+      ]
+    },
+    {
+      "code": "aller-0010-00313",
+      "display": "Ot epiteliyasi (Equ c 3)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Лошадь, эпителий (Equ c 3)"
+        },
+        {
+          "language": "en",
+          "value": "Horse, epithelium (Equ c 3)"
+        }
+      ]
+    },
+    {
+      "code": "aller-0010-00314",
+      "display": "Ot epiteliyasi (Equ c 4)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Лошадь, эпителий (Equ c 4)"
+        },
+        {
+          "language": "en",
+          "value": "Horse, epithelium (Equ c 4)"
+        }
+      ]
+    },
+    {
+      "code": "aller-0010-00315",
+      "display": "Qo'y epiteliyasi (Ovi a_epithelia)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Овца, эпителий (Ovi a_epithelia)"
+        },
+        {
+          "language": "en",
+          "value": "Sheep, epithelium (Ovi a_epithelia)"
+        }
+      ]
+    },
+    {
+      "code": "aller-0010-00316",
+      "display": "Cho'chqa epiteliyasi (Sus d_epithelia)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Свинья, эпителий (Sus d_epithelia)"
+        },
+        {
+          "language": "en",
+          "value": "Pig, epithelium (Sus d_epithelia)"
+        }
+      ]
+    },
+    {
+      "code": "aller-0010-00319",
+      "display": "Lateks (Hev b 1)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Латекс (Hev b 1)"
+        },
+        {
+          "language": "en",
+          "value": "Latex (Hev b 1)"
+        }
+      ]
+    },
+    {
+      "code": "aller-0010-00320",
+      "display": "Lateks (Hev b 3)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Латекс (Hev b 3)"
+        },
+        {
+          "language": "en",
+          "value": "Latex (Hev b 3)"
+        }
+      ]
+    },
+    {
+      "code": "aller-0010-00321",
+      "display": "Lateks (Hev b 5)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Латекс (Hev b 5)"
+        },
+        {
+          "language": "en",
+          "value": "Latex (Hev b 5)"
+        }
+      ]
+    },
+    {
+      "code": "aller-0010-00322",
+      "display": "Lateks (Hev b 6-02)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Латекс (Hev b 6-02)"
+        },
+        {
+          "language": "en",
+          "value": "Latex (Hev b 6-02)"
+        }
+      ]
+    },
+    {
+      "code": "aller-0010-00323",
+      "display": "Lateks (Hev b 8)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Латекс (Hev b 8)"
+        },
+        {
+          "language": "en",
+          "value": "Latex (Hev b 8)"
+        }
+      ]
+    },
+    {
+      "code": "aller-0010-00324",
+      "display": "Lateks (Hev b 11)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Латекс (Hev b 11)"
+        },
+        {
+          "language": "en",
+          "value": "Latex (Hev b 11)"
+        }
+      ]
+    },
+    {
+      "code": "aller-0010-00326",
+      "display": "Fikus (Fic b)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Фикус (Fic b)"
+        },
+        {
+          "language": "en",
+          "value": "Ficus (Fic b)"
+        }
+      ]
+    },
+    {
+      "code": "aller-0010-00328",
+      "display": "Laktoferrin (Hom s Lactoferrin) (Hom s LF)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Лактоферрин (Hom s Lactoferrin) (Hom s LF)"
+        },
+        {
+          "language": "en",
+          "value": "Lactoferrin (Hom s Lactoferrin) (Hom s LF)"
+        }
+      ]
+    },
+    {
+      "code": "aller-0010-00330",
+      "display": "Qisqichbaqasimon kana (Argas reflexus) (Arg r 1)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Раковинный клещ (Argas reflexus) (Arg r 1)"
+        },
+        {
+          "language": "en",
+          "value": "Shell mite (Argas reflexus) (Arg r 1)"
+        }
+      ]
+    }
+  ],
+  "caseSensitive": true,
+  "hierarchyMeaning": "is-a",
+  "language": "uz",
+  "experimental": true,
+  "count": 295
+}
