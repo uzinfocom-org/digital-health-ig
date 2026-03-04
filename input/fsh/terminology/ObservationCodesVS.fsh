@@ -6,4 +6,5 @@ Description: "Observation codes in Uzbekistan"
 * ^experimental = true
 
 * include codes from system ObservationLabResearchCodesCS
+* include codes from system ObservationLabDiagnosticCodesCS
 * include codes from system $loinc
