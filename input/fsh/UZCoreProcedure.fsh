@@ -64,7 +64,7 @@ Description: "An example instance of a UZ Core Procedure profile for a therapeut
   * start = "2025-05-15T08:00:00Z"
   * end = "2025-05-15T10:00:00Z"
 * recorded = "2025-05-19T09:30:00Z"
-* recorder = Reference(example-practitioner) "Nurse Jane Smith"
+* recorder = Reference(example-practitionerrole) 
 * performer[0]
   * actor = Reference(example-practitioner) "Paul Ivanov, PT"
 * location = Reference(example-location) "Toshkent shahar 1-sonli shifoxona"
