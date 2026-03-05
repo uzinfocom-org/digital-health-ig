@@ -1,8 +1,8 @@
 ValueSet: ObservationCodesVS
-Id: observation-codes-vs
+Id: observation-codes
 Title: "Observation codes"
 Description: "Observation codes in Uzbekistan"
-* ^url = "https://terminology.dhp.uz/fhir/core/ValueSet/observation-codes-vs"
+* ^url = "https://terminology.dhp.uz/fhir/core/ValueSet/observation-codes"
 * ^experimental = true
 
 * include codes from system $lab-research
