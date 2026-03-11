@@ -37,7 +37,7 @@ Description: "Uzbekistan Core Patient profile, used to represent patients admini
   * system 1..1 MS
   * system = $passport-local
   * type 1..1 MS
-  * type = $identifier-type#PPN "Passport number"
+  * type = $identifier-type#PPN
   * use = #official
   * value 1..1 MS
 
@@ -45,7 +45,7 @@ Description: "Uzbekistan Core Patient profile, used to represent patients admini
   * system 1..1 MS
   * system = $passport-international
   * type 1..1 MS
-  * type = $identifier-type#PPN "Passport number"
+  * type = $identifier-type#PPN
   * use = #official
   * value 1..1 MS
 
@@ -55,7 +55,7 @@ Description: "Uzbekistan Core Patient profile, used to represent patients admini
   * system 1..1 MS
   * system from ForeignPassportSystemVS (required)
   * type 1..1 MS
-  * type = $identifier-type#PPN "Passport number"
+  * type = $identifier-type#PPN
   * use = #official
   * value 1..1 MS
 
@@ -63,7 +63,7 @@ Description: "Uzbekistan Core Patient profile, used to represent patients admini
   * system 1..1 MS
   * system = $nationaluniqueID
   * type 1..1 MS
-  * type = $identifier-type#NI "National unique individual identifier"
+  * type = $identifier-type#NI
   * use = #official
   * value 1..1 MS
 
@@ -71,7 +71,7 @@ Description: "Uzbekistan Core Patient profile, used to represent patients admini
   * system 1..1 MS
   * system = $birthcertificate
   * type 1..1 MS
-  * type = $identifier-type#BCT "Birth Certificate"
+  * type = $identifier-type#BCT
   * use = #official
   * value 1..1 MS
 
@@ -79,7 +79,7 @@ Description: "Uzbekistan Core Patient profile, used to represent patients admini
   * system 1..1 MS
   * system = $driverslicense
   * type 1..1 MS
-  * type = $identifier-type#DL "Driver's license number"
+  * type = $identifier-type#DL
   * use = #official
   * value 1..1 MS
 
@@ -89,7 +89,7 @@ Description: "Uzbekistan Core Patient profile, used to represent patients admini
   * system 1..1 MS
   * system from ForeignDriversLicenseSystemVS (required)
   * type 1..1 MS
-  * type = $identifier-type#DL "Driver's license number"
+  * type = $identifier-type#DL
   * use = #official
   * value 1..1 MS
 
@@ -97,7 +97,7 @@ Description: "Uzbekistan Core Patient profile, used to represent patients admini
   * system 1..1 MS
   * system = $diplomaticpassport
   * type 1..1 MS
-  * type = $identifier-type#DP "Diplomatic Passport"
+  * type = $identifier-type#DP
   * use = #official
   * value 1..1 MS
 
@@ -105,7 +105,7 @@ Description: "Uzbekistan Core Patient profile, used to represent patients admini
   * system 1..1 MS
   * system = $healthcard
   * type 1..1 MS
-  * type = $identifier-type#HC "Health card number"
+  * type = $identifier-type#HC
   * use = #official
   * value 1..1 MS
 
@@ -113,7 +113,7 @@ Description: "Uzbekistan Core Patient profile, used to represent patients admini
   * system 1..1 MS
   * system = $militaryID
   * type 1..1 MS
-  * type = $identifier-type#MI "Military ID number"
+  * type = $identifier-type#MI
   * use = #official
   * value 1..1 MS
 
@@ -121,7 +121,7 @@ Description: "Uzbekistan Core Patient profile, used to represent patients admini
   * system 1..1 MS
   * system = $penitentiaryinstitution
   * type 1..1 MS
-  * type = $identifier-type#PCN "Penitentiary/correctional institution Number"
+  * type = $identifier-type#PCN
   * use = #official
   * value 1..1 MS
 
@@ -131,7 +131,7 @@ Description: "Uzbekistan Core Patient profile, used to represent patients admini
   * system 1..1 MS
   * system = $temp-medical-record-pattern
   * type 1..1 MS
-  * type = $identifier-type#MRT "Temporary Medical Record Number"
+  * type = $identifier-type#MRT
   * use = #temp
   * value 1..1 MS
 
@@ -141,7 +141,7 @@ Description: "Uzbekistan Core Patient profile, used to represent patients admini
   * system 1..1 MS
   * system = $unknownpatient
   * type 1..1 MS
-  * type = $identifier-type#MR "Medical record number"
+  * type = $identifier-type#MR
   * use = #temp
   * value 1..1 MS
 
@@ -151,7 +151,7 @@ Description: "Uzbekistan Core Patient profile, used to represent patients admini
   * system 1..1 MS
   * system = $pension-number
   * type 1..1 MS
-  * type = $identifier-type#PEN "Pension number"
+  * type = $identifier-type#PEN
   * use = #official
   * value 1..1 MS
 

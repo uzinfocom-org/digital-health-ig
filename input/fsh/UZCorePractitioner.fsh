@@ -78,7 +78,7 @@ Usage: #example
   * url = "http://example.org/photos/practitioner.jpg"
   * size = 1024
 * qualification
-  * code = $qualification-codes#DIP "Diploma"
+  * code = $qualification-codes#DIP
   * issuer = Reference(example-organization)
 
 Instance: example-practitioner-gender-other
