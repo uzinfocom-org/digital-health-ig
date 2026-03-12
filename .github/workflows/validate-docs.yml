@@ -47,7 +47,7 @@ jobs:
       - name: Check QA report
         run: |
           # Configuration
-          MAX_ALLOWED_ERRORS=8
+          MAX_ALLOWED_ERRORS=6
           MAX_ALLOWED_WARNINGS=0
 
           if [ ! -f "output/qa.json" ]; then
@@ -85,7 +85,7 @@ jobs:
 
       - name: Upload output folder
         if: always() && hashFiles('output/**/*') != ''
-        uses: actions/upload-artifact@v6
+        uses: actions/upload-artifact@v7
         with:
           name: ig-output-${{ github.run_number }}
           path: output/

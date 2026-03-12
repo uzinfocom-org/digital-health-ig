@@ -150,6 +150,7 @@ Id: uz-core-condition-diagnosis-type
     driversLicense 0..1 MS
 
 * identifier[nationalId]
+  * ^short = "PINFL of the patient"
   * system 1..1 MS
   * system = $nationaluniqueID
   * type 1..1 MS
@@ -231,7 +232,7 @@ Id: uz-core-condition-diagnosis-type
 - `OriginalCodeSystemDraft` - для черновых версий оригинальных CodeSystems
 - `OriginalCodeSystem` - для активных версий оригинальных CodeSystems
 
-**Важно:** 
+**Важно:**
 - В оригинальных CodeSystems не указывайте версию явно — она автоматически наследуется от версии IG.
 - В оригинальных CodeSystems язык по умолчанию — узбекский (`#uz`), поэтому добавляются переводы на русский и английский языки.
 - В supplements язык по умолчанию — английский (`#en`), поэтому добавляются переводы на русский и узбекский языки.
@@ -320,7 +321,7 @@ Title: "Clinical Status"
 
 ```
 
-**Важно:** 
+**Важно:**
 - Расширение `valueset-supplement` необходимо только для ValueSets, которые включают коды из supplement CodeSystems. Для ValueSets с только оригинальными кодами это расширение не требуется.
 - При использовании supplement CodeSystems в ValueSet необходимо включать коды из **оригинальной** CodeSystem (например, `$condition-clinical`), а не из supplement CodeSystem. Расширение `valueset-supplement` указывает на supplement, который предоставляет переводы к оригинальным кодам.
 

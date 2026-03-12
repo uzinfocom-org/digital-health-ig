@@ -27,6 +27,7 @@ Description: "Uzbekistan Core RelatedPerson profile, used to represent persons r
     militaryId 0..1 MS
 
 * identifier[nationalId]
+  * ^short = "PINFL of the related person"
   * system 1..1 MS
   * system = $nationaluniqueID
   * type 1..1 MS
@@ -34,7 +35,7 @@ Description: "Uzbekistan Core RelatedPerson profile, used to represent persons r
   * use = #official
   * value 1..1 MS
 
-* identifier[passportLocal] 
+* identifier[passportLocal]
   * system 1..1 MS
   * system = $passport-local
   * type 1..1 MS
@@ -94,9 +95,9 @@ Description: "Uzbekistan Core RelatedPerson profile, used to represent persons r
 * relationship 0..* MS
 * relationship from RelationshipTypeVS (required)
 * telecom 0..* MS
-  * system 0..1 MS 
+  * system 0..1 MS
   * system from ContactPointSystemVS (required)
-  * use 0..1 MS 
+  * use 0..1 MS
   * use from TelecomUseVS (required)
 * gender MS
   * extension contains GenderOtherUZ named gender-other-2 0..1 MS
@@ -105,7 +106,7 @@ Description: "Uzbekistan Core RelatedPerson profile, used to represent persons r
 * insert HumanName
 * active MS
 * birthDate MS
-* period MS 
+* period MS
 
 Instance: example-related-person
 InstanceOf: UZCoreRelatedPerson
