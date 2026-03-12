@@ -8,9 +8,7 @@ Description: "Maps MIS2 service type flags to UZ Core Organizational Service Gro
 * status = #draft
 * experimental = false
 * publisher = "Uzinfocom"
-* sourceScopeUri = "https://mis2.ssv.uz/ValueSet/service-type"
 * targetScopeCanonical = Canonical(OrganizationalServiceGroupVS)
-* group.source = "https://mis2.ssv.uz/CodeSystem/service-type"
 * group.target = Canonical(OrganizationalServiceGroupCS)
 
 * group.element[+].code = #OUTPATIENT

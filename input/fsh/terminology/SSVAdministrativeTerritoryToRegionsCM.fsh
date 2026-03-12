@@ -8,10 +8,8 @@ Description: "Maps SSV administrative territory codes to UZ Core StateCS (for re
 * status = #draft
 * experimental = false
 * publisher = "Uzinfocom"
-* sourceScopeUri = "https://fhir.ssv.uz/ValueSet/administrative-territory"
 
 // Group 1: Region-level mapping to StateCS
-* group[0].source = "https://fhir.ssv.uz/CodeSystem/administrative-territory"
 * group[=].target = Canonical(StateCS)
 
 * group[=].element[+].code = #UZ-AN
@@ -99,7 +97,6 @@ Description: "Maps SSV administrative territory codes to UZ Core StateCS (for re
 * group[=].element[=].target[=].relationship = #equivalent
 
 // Group 2: District-level mapping to RegionsCS
-* group[+].source = "https://fhir.ssv.uz/CodeSystem/administrative-territory"
 * group[=].target = Canonical(RegionsCS)
 
 * group[=].element[+].code = #AN-202
