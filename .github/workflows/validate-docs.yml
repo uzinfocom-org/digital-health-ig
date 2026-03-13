@@ -21,6 +21,8 @@ jobs:
 
   ig-publisher:
     runs-on: ubuntu-latest
+    env:
+      JAVA_TOOL_OPTIONS: "-Xmx8g"
 
     steps:
       - uses: actions/checkout@v6
@@ -83,7 +85,7 @@ jobs:
 
       - name: Upload output folder
         if: always() && hashFiles('output/**/*') != ''
-        uses: actions/upload-artifact@v6
+        uses: actions/upload-artifact@v7
         with:
           name: ig-output-${{ github.run_number }}
           path: output/
