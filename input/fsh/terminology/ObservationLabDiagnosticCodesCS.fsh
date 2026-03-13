@@ -1,8 +1,8 @@
 CodeSystem: ObservationLabDiagnosticCodesCS
-Id: observation-laboratory-diagnostic-cs
+Id: observation-diagnostic-cs
 Title: "Observation lab diagnostic codes"
-Description: "Observation lab diagnostic codes supplement with translations in uzbek and russian"
-* insert OriginalCodeSystemDraft(observation-laboratory-diagnostic-cs)
+Description: "Observation laboratory researches  with translations in uzbek and russian"
+* insert OriginalCodeSystemDraft(observation-diagnostic-cs)
 
 * #lab-258 "Zardob yoki plazmadagi D vitamini + metabolitlari [Mass/hajm]"
   * ^designation[0].language = #ru

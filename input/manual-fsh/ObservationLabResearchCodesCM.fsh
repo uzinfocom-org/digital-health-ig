@@ -3,7 +3,7 @@ InstanceOf: ConceptMap
 Usage: #definition
 Title: "Lab Research Codes to LOINC"
 Description: "Maps local UZ lab research codes to LOINC codes for laboratory observations."
-* url = "https://terminology.dhp.uz/fhir/core/ConceptMap/diagnostic-code-to-loinc"
+* url = "https://terminology.dhp.uz/fhir/core/ConceptMap/lab-research-to-loinc"
 * name = "LabResearchToLoinc"
 * status = #draft
 * experimental = false
