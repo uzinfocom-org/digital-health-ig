@@ -3,6 +3,5 @@ Id: composition-category-vs
 Title: "Composition category value set"
 Description: "Composition category with Uzbek and Russian designations"
 * ^url = "https://terminology.dhp.uz/fhir/core/ValueSet/composition-category-vs"
-* ^experimental = true
 * ^language = #uz
 * include codes from system composition-category-cs
