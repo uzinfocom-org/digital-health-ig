@@ -8,7 +8,7 @@ Description: "UZ Core Composition profile, which defines the core elements of a 
 * ^publisher = "Uzinfocom"
 
 * status and type and category and subject and date and author and title and attester and custodian and section MS
-* status from $composition-status-vs
+* status from CompositionStatusVS
 * type from CompositionTypeVS (required)
 * category from CompositionCategoryVS
 

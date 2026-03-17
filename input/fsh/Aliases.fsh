@@ -206,6 +206,5 @@ Alias: $permitted-data-type = http://hl7.org/fhir/permitted-data-type
 Alias: $composition-att-mode = http://hl7.org/fhir/composition-attestation-mode
 Alias: $composition-list-empty-reason = http://terminology.hl7.org/CodeSystem/list-empty-reason
 Alias: $composition-status = http://hl7.org/fhir/composition-status
-Alias: $composition-status-vs = http://hl7.org/fhir/ValueSet/composition-status
 Alias: $composition-narrative-status = http://hl7.org/fhir/narrative-status
 Alias: $composition-list-order = http://terminology.hl7.org/CodeSystem/list-order

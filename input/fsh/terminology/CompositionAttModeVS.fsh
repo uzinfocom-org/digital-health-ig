@@ -3,7 +3,7 @@ Id: composition-att-mode-vs
 Title: "Document Reference Composition Attestattion"
 Description: "Defines the consent state codes in Russian and Uzbek"
 * ^url = "https://terminology.dhp.uz/fhir/core/ValueSet/composition-att-mode-vs"
-* ^experimental = true
+* ^experimental = false
 * ^extension[0].url = $valueset-supplement
 * ^extension[=].valueCanonical = Canonical(CompositionAttModeCS)
 
