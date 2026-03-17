@@ -69,3 +69,9 @@ Description: "Laboratory technique (method of measurement) used for the result m
   * ^designation[=].value = "Секвенирование"
   * ^designation[+].language = #en
   * ^designation[=].value = "Sequencing"
+
+* #lab-method-12 "Tezkor immunoanaliz"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Экспресс-иммуноанализ"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Rapid immunoassay technique"

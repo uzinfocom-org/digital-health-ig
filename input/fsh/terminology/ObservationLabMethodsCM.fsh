@@ -80,3 +80,9 @@ Description: "Maps local UZ laboratory methods to SNOMED CT codes for laboratory
 * group.element[=].target[+].code = #304646005
 * group.element[=].target[=].display = "Sequencing"
 * group.element[=].target[=].relationship = #equivalent
+
+* group.element[+].code = #lab-method-12
+* group.element[=].display = "Tezkor immunoanaliz"
+* group.element[=].target[+].code = #708099001
+* group.element[=].target[=].display = "Rapid immunoassay technique"
+* group.element[=].target[=].relationship = #equivalent
