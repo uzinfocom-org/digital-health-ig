@@ -44,8 +44,8 @@ Description: "Example of a medical record composition"
 Usage: #example
 * language = #uz
 * status = #final
-* type = CompositionTypeCS#emdoc-0010-0001 "Tibbiy muassasaga kelganlarni qayd jurnali"
-* category = CompositionCategoryCS#Comp001-0001 "Tibbiy karta"
+* type = composition-type-cs#emdoc-0010-0001 "Tibbiy muassasaga kelganlarni qayd jurnali"
+* category = composition-category-cs#Comp001-0001 "Tibbiy karta"
 * date = "2026-03-05T10:00:00+05:00"
 * title = "Bemorning elektron tibbiy kartasi"
 * subject = Reference(example-patient)
