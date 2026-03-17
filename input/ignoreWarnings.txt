@@ -42,6 +42,14 @@ No definition could be found for URL value 'https://dhp.uz/fhir/core'
 Source Code System urn:iso:std:iso:3166 doesn't have all content (content = not-present), so the source codes cannot be checked
 Target Code System urn:iso:std:iso:3166 doesn't have all content (content = not-present), so the target codes cannot be checked
 
+# MIS2/SSV ConceptMaps reference external code systems not available to the IG publisher - source codes cannot be validated
+WARNING: ConceptMap/mis2-level-type-to-subordination-group-cm: ConceptMap.group[0]: No Source Code System, so the source codes cannot be checked
+WARNING: ConceptMap/mis2-medical-type-to-organizational-structure-cm: ConceptMap.group[0]: No Source Code System, so the source codes cannot be checked
+WARNING: ConceptMap/mis2-service-type-to-organizational-service-group-cm: ConceptMap.group[0]: No Source Code System, so the source codes cannot be checked
+WARNING: ConceptMap/ssv-administrative-territory-to-regions-cm: ConceptMap.group[0]: No Source Code System, so the source codes cannot be checked
+WARNING: ConceptMap/ssv-administrative-territory-to-regions-cm: ConceptMap.group[1]: No Source Code System, so the source codes cannot be checked
+
+
 # IG publisher has troubles validating property URIs - need to report
 The property uri 'http://terminology.hl7.org/CodeSystem/v2-0203' is not known, so the property values can not be validated fully; unless specified elsewhere, codes will be treated as internal references
 The property uri 'urn:iso:std:iso:3166' is not known, so the property values can not be validated fully; unless specified elsewhere, codes will be treated as internal references

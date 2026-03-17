@@ -1,7 +1,7 @@
 ValueSet: EncounterParticipantTypeVS
 Id: encounter-participant-type-vs
 Title: "Encounter participant type translations"
-Description: "Encounter participant type codes with English and Russian translations"
+Description: "Encounter participant type codes with Uzbek and Russian translations"
 * ^url = "https://terminology.dhp.uz/fhir/core/ValueSet/encounter-participant-type-vs"
 * ^experimental = true
 * ^extension[0].url = $valueset-supplement
