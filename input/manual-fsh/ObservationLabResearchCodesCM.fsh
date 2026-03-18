@@ -155,7 +155,7 @@ Description: "Maps local UZ lab research codes to LOINC codes for laboratory obs
 
 * group.element[+].code = #lab-23
 * group.element[=].display = "Trombokrit (PCT)"
-* group.element[=].target[+].code = #28542-9
+* group.element[=].target[+].code = #51637-7
 * group.element[=].target[=].display = "Plateletcrit [Volume Fraction] of Blood by Automated count"
 * group.element[=].target[=].relationship = #equivalent
 
@@ -233,7 +233,7 @@ Description: "Maps local UZ lab research codes to LOINC codes for laboratory obs
 
 * group.element[+].code = #lab-35
 * group.element[=].display = "Leykotsitlar"
-* group.element[=].target[+].code = #20408-1
+* group.element[=].target[+].code = #6690-2
 * group.element[=].target[=].display = "Leukocytes [Presence] in Genital specimen by Light microscopy"
 * group.element[=].target[=].relationship = #equivalent
 
@@ -1637,8 +1637,8 @@ Description: "Maps local UZ lab research codes to LOINC codes for laboratory obs
 
 * group.element[+].code = #lab-257
 * group.element[=].display = "Gepatit B virusining yuzaki antigeni"
-* group.element[=].target[+].code = #5195-3
-* group.element[=].target[=].display = "Hepatitis B virus surface Ag [Presence] in Serum or Plasma"
+* group.element[=].target[+].code = #75410-1
+* group.element[=].target[=].display = "Hepatitis B virus surface Ag [Presence] in Serum, Plasma or blood by Rapid immunoassay"
 * group.element[=].target[=].relationship = #equivalent
 
 * group.element[+].code = #lab-258
