@@ -47,6 +47,7 @@ Description: "Пример заполненного опросника удов�
 * status = #completed
 * subject = Reference(example-salim)
 * authored = "2025-01-15T14:30:00+05:00"
+* language = #ru
 
 // Answer 1: Как вы записались на приём?
 * item[+]
