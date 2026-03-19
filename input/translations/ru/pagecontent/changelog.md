@@ -4,12 +4,15 @@
 
 Добавлено [пространство имён идентификаторов документов](identifiers.html#document-identifiers) (doc) в систему идентификаторов.
 
-### Версия 0.4.0
+### Версия 0.5.0
+
 Коды систем OrganizationalStructureCS и NomenclatureGroupCS, относящиеся к профилю UZCoreOrganization, были переведены в коды MIS2 [ConceptMap](ConceptMap-mis2-medical-type-to-organizational-structure-cm.html)  и добавлен ConceptMap.
 
 Коды системы OrganizationalSubordinationGroupCS, относящиеся к профилю UZCoreOrganization, были переведены в коды MIS2 [ConceptMap](ConceptMap-mis2-level-type-to-subordination-group-cm.html)  и добавлен ConceptMap.
 
 Коды системы OrganizationalServiceGroupCS, относящиеся к профилю UZCoreOrganization, были переведены в коды MIS2  [ConceptMap](ConceptMap-mis2-service-type-to-organizational-service-group-cm.html) и добавлен ConceptMap.
+
+### Версия 0.4.0
 
 Добавлен профиль [UZ Core Goal](StructureDefinition-UZCoreGoal.html) с соответствующими кодовыми справочниками и наборами значений.
 

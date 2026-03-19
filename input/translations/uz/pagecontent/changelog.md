@@ -5,6 +5,15 @@ O'zbekistonda ishlatiladigan panellar va analitlar uchun [laboratoriya kuzatuv k
 [Hujjat identifikatori nomlar maydoni](identifiers.html#document-identifiers) (doc) identifikator tizimlariga qo'shildi.
 
 ### Versiya 0.4.0
+> Eslatma: Ushbu bo'lim mashina tarjimasi bo'lib, hali sifat nazoratidan o'tmagan.
+Organization profiliga tegishli OrganizationalStructureCS , NomenclatureGroupCS codesystemlarni MIS2 kodlariga tarjima qilindi [ConceptMap](ConceptMap-mis2-medical-type-to-organizational-structure-cm.html) qo'shildi.
+
+Organization profiliga tegishli OrganizationalSubordinationGroupCS codesystemlarni MIS2 kodlariga tarjima qilindi [ConceptMap](ConceptMap-mis2-level-type-to-subordination-group-cm.html) qo'shildi.
+
+Organization profiliga tegishli OrganizationalServiceGroupCS codesystemlarni MIS2 kodlariga tarjima qilindi [ConceptMap](ConceptMap-mis2-service-type-to-organizational-service-group-cm.html) qo'shildi.
+
+
+### Versiya 0.4.0
 
 > Eslatma: Ushbu bo'lim mashina tarjimasi bo'lib, hali sifat nazoratidan o'tmagan.
 Organization profiliga tegishli OrganizationalStructureCS , NomenclatureGroupCS codesystemlarni MIS2 kodlariga tarjima qilindi [ConceptMap](ConceptMap-mis2-medical-type-to-organizational-structure-cm.html) qo'shildi.
