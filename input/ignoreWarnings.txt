@@ -1080,3 +1080,6 @@ No definition could be found for URL value 'Encounter/example-encounter/_history
 No definition could be found for URL value 'Observation/blood-pressure-example/_history/1'
 No definition could be found for URL value 'Observation/body-weight-example/_history/1'
 No definition could be found for URL value 'Observation/body-temperature-example/_history/1'
+
+# IG Publisher bug supporting answerOptions in 2.2.0, reported - can be ignored
+Unexpected internal condition - unsupported code system could be supported? (url = {0})
