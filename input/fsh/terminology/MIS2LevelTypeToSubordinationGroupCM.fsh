@@ -9,6 +9,7 @@ Description: "Maps MIS2 level type codes to UZ Core Organizational Subordination
 * experimental = false
 * publisher = "Uzinfocom"
 * targetScopeCanonical = Canonical(OrganizationalSubordinationGroupVS)
+* group.source = Canonical(MIS2LevelTypeCS)
 * group.target = Canonical(OrganizationalSubordinationGroupCS)
 
 * group.element[+].code = #REPUBLICAN
