@@ -4,6 +4,13 @@ Added [laboratory observation codes](CodeSystem-observation-lab-research-codes-c
 
 Added [document identifier namespace](identifiers.html#document-identifiers) (doc) to identifier systems.
 
+### Version 0.5.0
+In the [UZ Core Observation] (StructureDefinition-UZCoreObservation.html) profile, updates were made to [ObservationCodesVS] (ValueSet-observation-codes.html), and additional CodeSystems were added.
+For predefined laboratory panels, a ConceptMap ObservationLabResearchCodesCM [conceptmap] (ConceptMap-lab-research-to-loinc.html) was created.
+For analytes not represented as predefined panels, a CodeSystem was also created, and in the ConceptMap ObservationLabDiagnosticCodesCM [conceptmap] (ConceptMap-diagnostic-code-to-loinc.html), local codes were mapped to LOINC codes.
+
+Within the UZCoreObservation profile, a ValueSet ObservationLabMethodsVS was created, local classifiers were added, and through the ConceptMap ObservationLabMethodsCM [ConceptMap] (ConceptMap-lab-methods-to-snomed.html), local classifiers were mapped to LOINC codes.
+
 ### Version 0.4.0
 
 Added [UZ Core Goal](StructureDefinition-uz-core-goal.html) profile with associated codesystems and valuesets.

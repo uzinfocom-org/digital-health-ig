@@ -7,6 +7,8 @@ O'zbekistonda ishlatiladigan panellar va analitlar uchun [laboratoriya kuzatuv k
 ### Versiya 0.4.0
 
 > Eslatma: Ushbu bo'lim mashina tarjimasi bo'lib, hali sifat nazoratidan o'tmagan.
+[UZ Core Observation](StructureDefinition-UZCoreObservation.html) profilidagi [ObservationCodesVSda](ValueSet-observation-codes.html) yangilanish bo'lib qo'shimcha Codesystemlar qo'shildi . Tayyor laboratoriya panellari uchun yaratilgan codesystemlar uchun ObservationLabResearchCodesCM [conceptmap] (ConceptMap-lab-research-to-loinc.html) yaratildi. Panel ko'rnishida tayyor bo'lmagan analitlar uchun ham codesystem yaratilib ushbu codesystem uchun ObservationLabDiagnosticCodesCM [conseptmapda](ConceptMap-diagnostic-code-to-loinc.html) maxalliy kodlarni loinc kodlariga tarjima qilindi.
+UZCoreObservation profilida ObservationLabMethodsVS yaratilib maxalliy klassifikatorlar qo'shilib , maxalliy klassifikatorlarni ObservationLabMethodsCM [ConseptMapi] ( ConceptMap-lab-methods-to-snomed.html ) orqali loinc kodlariga tarjima qilindi.
 
 [UZ Core Goal](StructureDefinition-UZCoreGoal.html) profili tegishli kod tizimlari va qiymatlar to'plamlari bilan qo'shildi.
 

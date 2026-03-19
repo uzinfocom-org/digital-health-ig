@@ -4,8 +4,13 @@
 
 Добавлено [пространство имён идентификаторов документов](identifiers.html#document-identifiers) (doc) в систему идентификаторов.
 
-### Версия 0.4.0
+### Версия 0.5.0
+В профиле [UZ Core Observation] (StructureDefinition-UZCoreObservation.html) в [ObservationCodesVS] (ValueSet-observation-codes.html) были внесены изменения и добавлены дополнительные CodeSystem.
+Для подготовленных лабораторных панелей был создан ConceptMap ObservationLabResearchCodesCM [conceptmap] (ConceptMap-lab-research-to-loinc.html).
+Для аналитических показателей, не представленных в виде готовых панелей, также был создан CodeSystem, и для него в ConceptMap ObservationLabDiagnosticCodesCM [conceptmap] (ConceptMap-diagnostic-code-to-loinc.html) локальные коды были сопоставлены с кодами LOINC.
 
+В профиле UZCoreObservation был создан ValueSet ObservationLabMethodsVS, добавлены локальные классификаторы, и через ConceptMap ObservationLabMethodsCM [ConceptMap] (ConceptMap-lab-methods-to-snomed.html) выполнено сопоставление локальных классификаторов с кодами LOINC.
+### Версия 0.4.0
 Добавлен профиль [UZ Core Goal](StructureDefinition-UZCoreGoal.html) с соответствующими кодовыми справочниками и наборами значений.
 
 Добавлены профили [UZ Core Questionnaire](StructureDefinition-UZCoreQuestionnaire.html) и [QuestionnaireResponse](StructureDefinition-UZCoreQuestionnaireResponse.html) с многоязычной поддержкой для переведённых вариантов ответов.
