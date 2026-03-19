@@ -52,31 +52,31 @@ Description: "Пример заполненного опросника удов�
 * item[+]
   * linkId = "appointment-method"
   * text = "Как вы записались на приём?"
-  * answer[+].valueCoding = $patient-satisfaction-questionnaire#remote "Дистанционно (через Портал Пациента)"
+  * answer[+].valueCoding = $patient-satisfaction-cs#remote "Дистанционно (через Портал Пациента)"
 
 // Answer 2: Сколько времени вы ожидали приём?
 * item[+]
   * linkId = "wait-time"
   * text = "Сколько времени вы ожидали приём?"
-  * answer[+].valueCoding = $patient-satisfaction-questionnaire#10-15min "10-15 минут"
+  * answer[+].valueCoding = $patient-satisfaction-cs#10-15min "10-15 минут"
 
 // Answer 3: Насколько Вы удовлетворены компетентностью врача?
 * item[+]
   * linkId = "doctor-competence-satisfaction"
   * text = "Насколько Вы удовлетворены компетентностью врача?"
-  * answer[+].valueCoding = $patient-satisfaction-questionnaire#fully-satisfied "Полностью удовлетворен"
+  * answer[+].valueCoding = $patient-satisfaction-cs#fully-satisfied "Полностью удовлетворен"
 
 // Answer 4: Была ли предоставлена информация о Вашем состоянии здоровья?
 * item[+]
   * linkId = "health-info-completeness"
   * text = "Была ли предоставлена информация о Вашем состоянии здоровья в полном объёме и понятной форме?"
-  * answer[+].valueCoding = $patient-satisfaction-questionnaire#yes-complete "Да, полностью"
+  * answer[+].valueCoding = $patient-satisfaction-cs#yes-complete "Да, полностью"
 
 // Answer 5: Получили ли вы ответы на все интересующие вас вопросы?
 * item[+]
   * linkId = "questions-answered"
   * text = "Получили ли вы ответы на все интересующие вас вопросы?"
-  * answer[+].valueCoding = $patient-satisfaction-questionnaire#yes-complete "Да, полностью"
+  * answer[+].valueCoding = $patient-satisfaction-cs#yes-complete "Да, полностью"
 
 // Answer 6: Есть ли у Вас предложения по улучшению качества обслуживания?
 * item[+]
