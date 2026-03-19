@@ -61,7 +61,7 @@ Description: "Detailed classification of healthcare institution types (e.g., spe
   * ^designation[0].language = #ru
   * ^designation[=].value = "Научный центр скорой медицинской помощи"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Scientific center of emergency medical care"
+  * ^designation[=].value = "Emergency medical care scientific center"
 
 * #128 "Milliy tibbiyot markazi"
   * ^designation[0].language = #ru
@@ -73,7 +73,7 @@ Description: "Detailed classification of healthcare institution types (e.g., spe
   * ^designation[0].language = #ru
   * ^designation[=].value = "Клиники (при высших медицинских учебных заведениях и научно-исследовательских институтах)"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Clinics (affiliated with higher medical educational institutions and research institutes)"
+  * ^designation[=].value = "Clinics (at higher medical institutions and research institutes)"
 
 * #132 "Koʻp tarmoqli tibbiyot markazi"
   * ^designation[0].language = #ru
@@ -109,13 +109,13 @@ Description: "Detailed classification of healthcare institution types (e.g., spe
   * ^designation[0].language = #ru
   * ^designation[=].value = "Специальная больница"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Special hospital"
+  * ^designation[=].value = "Specialized hospital"
 
 * #144 "Leprozoriy"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Лепрозорий"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Leprosarium"
+  * ^designation[=].value = "Leprosy hospital"
 
 * #146 "Shifoxonasi"
   * ^designation[0].language = #ru
@@ -451,4 +451,4 @@ Description: "Detailed classification of healthcare institution types (e.g., spe
   * ^designation[0].language = #ru
   * ^designation[=].value = "Другие организации системы здравоохранения"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Other organizations of the health care system"
+  * ^designation[=].value = "Other organizations within the healthcare system"

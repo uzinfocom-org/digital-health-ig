@@ -5,6 +5,11 @@ Added [laboratory observation codes](CodeSystem-observation-lab-research-codes-c
 Added [document identifier namespace](identifiers.html#document-identifiers) (doc) to identifier systems.
 
 ### Version 0.4.0
+The OrganizationalStructureCS and NomenclatureGroupCS code systems related to the UZCoreOrganization profile were translated into MIS2 codes [ConceptMap](ConceptMap-mis2-medical-type-to-organizational-structure-cm.html)  and a ConceptMap was added.
+
+The OrganizationalSubordinationGroupCS code system related to the UZCoreOrganization profile was translated into MIS2 codes [ConceptMap](ConceptMap-mis2-level-type-to-subordination-group-cm.html)  and a ConceptMap was added.
+
+The OrganizationalServiceGroupCS code system related to the UZCoreOrganization profile was translated into MIS2 codes  [ConceptMap](ConceptMap-mis2-service-type-to-organizational-service-group-cm.html) and a ConceptMap was added.
 
 Added [UZ Core Goal](StructureDefinition-uz-core-goal.html) profile with associated codesystems and valuesets.
 
