@@ -1,4 +1,4 @@
-name: Validate docs
+name: Validate and upload docs
 
 on:
   push:
@@ -91,3 +91,39 @@ jobs:
           path: output/
           retention-days: 30
           if-no-files-found: warn
+
+      - name: Connect to VPN
+        if: github.ref == 'refs/heads/main' && github.event_name == 'push'
+        run: |
+          sudo apt-get update && sudo apt-get install -y openvpn
+          echo "${{ secrets.OVPN_CONFIG }}" > config.ovpn
+          sudo openvpn --config config.ovpn --daemon --log /tmp/vpn.log
+          # Wait for the tunnel interface to come up
+          for i in $(seq 1 30); do
+            if ip link show tun0 &>/dev/null; then
+              echo "✅ VPN connected (tun0 is up)"
+              exit 0
+            fi
+            echo "Waiting for VPN... ($i/30)"
+            sleep 2
+          done
+          echo "❌ VPN failed to connect within 60s"
+          cat /tmp/vpn.log
+          exit 1
+
+      - name: Validate VPN connection
+        if: github.ref == 'refs/heads/main' && github.event_name == 'push'
+        run: |
+          ip addr show tun0
+          ping -c 3 "${{ secrets.DEPLOY_HOST }}" || { echo "❌ Cannot reach server over VPN"; exit 1; }
+          echo "✅ Server is reachable over VPN"
+
+      - name: Upload output to server
+        if: github.ref == 'refs/heads/main' && github.event_name == 'push'
+        run: |
+          mkdir -p ~/.ssh
+          echo "${{ secrets.DEPLOY_SSH_KEY }}" > ~/.ssh/deploy_key
+          chmod 600 ~/.ssh/deploy_key
+          ssh-keyscan -H "${{ secrets.DEPLOY_HOST }}" >> ~/.ssh/known_hosts 2>/dev/null
+          scp -i ~/.ssh/deploy_key -r output/* "${{ secrets.DEPLOY_USER }}@${{ secrets.DEPLOY_HOST }}:${{ secrets.DEPLOY_PATH }}"
+          echo "✅ Output uploaded to server"
