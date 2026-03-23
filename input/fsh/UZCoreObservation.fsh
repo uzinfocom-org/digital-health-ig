@@ -56,7 +56,7 @@ Description: "Uzbekistan Core Observation profile, used to represent clinical an
 * derivedFrom only Reference(DocumentReference or ImagingStudy or QuestionnaireResponse or UZCoreObservation)
 * component MS
 * component.code MS
-* component.code from ObservationCodesVS
+* component.code from ObservationCodesVS (required)
 * component.value[x] MS
 * component.dataAbsentReason from DataAbsentReasonVS (extensible)
 * component.interpretation from ObservationInterpretationVS (extensible)
