@@ -37,7 +37,7 @@ This example demonstrates translating an organization from MIS2 JSON format into
 | `phone`, `email` | `contact.telecom` | - |
 | `country`, `state`, `city`, `line` | `contact.address` | [SSVAdministrativeTerritoryToRegionsCM](ConceptMap-ssv-administrative-territory-to-regions-cm.html) for `state` (UZ-AN -> 1703) and `city` (AN-408 -> 1703408) |
 | `serviceArea` | `extension[coverage-area]` | [SSVAdministrativeTerritoryToRegionsCM](ConceptMap-ssv-administrative-territory-to-regions-cm.html) (UZ-AN -> StateCS#1703) |
-| `levelType` | `type.coding[subordinationGroup]` | [SSVLevelTypeToSubordinationGroupCM](ConceptMap-ssv-level-type-to-subordination-group-cm.html) (3 -> I_3) |
-| `medicalType` | `type.coding[organizationalStructure]` | [SSVMedicalTypeToOrganizationalStructureCM](ConceptMap-ssv-medical-type-to-organizational-structure-cm.html) (16 -> 148) |
-| `serviceTypes` | `type.coding[organizationalServiceGroup]` | [SSVServiceTypeToOrganizationalServiceGroupCM](ConceptMap-ssv-service-type-to-organizational-service-group-cm.html) (2+1 -> III_100, 1 -> III_500) |
+| `levelType` | `type.coding[subordinationGroup]` | [MIS2LevelTypeToSubordinationGroupCM](ConceptMap-mis2-level-type-to-subordination-group-cm.html) (3 -> I_3) |
+| `medicalType` | `type.coding[organizationalStructure]` | [MIS2MedicalTypeToOrganizationalStructureCM](ConceptMap-mis2-medical-type-to-organizational-structure-cm.html) (16 -> 148) |
+| `serviceTypes` | `type.coding[organizationalServiceGroup]` | [MIS2ServiceTypeToOrganizationalServiceGroupCM](ConceptMap-mis2-service-type-to-organizational-service-group-cm.html) (2+1 -> III_100, 1 -> III_500) |
 | `id`, `uuid` | not mapped | MIS2 internal identifiers |
