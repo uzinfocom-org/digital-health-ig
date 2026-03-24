@@ -1,6 +1,6 @@
-This example demonstrates translating an organization from MIS2 JSON format into a FHIR Organization conforming to the [UZ Core Organization](StructureDefinition-uz-core-organization.html) profile. See the [resulting FHIR JSON](Organization-xonobod-medical-association.json.html).
+This example demonstrates translating an organization from Hepatitis JSON format into a FHIR Organization conforming to the [UZ Core Organization](StructureDefinition-uz-core-organization.html) profile. See the [resulting FHIR JSON](Organization-xonobod-medical-association.json.html).
 
-#### Source MIS2 JSON
+#### Source Hepatitis JSON
 
 ```json
 {
@@ -40,4 +40,4 @@ This example demonstrates translating an organization from MIS2 JSON format into
 | `levelType` | `type.coding[subordinationGroup]` | [MIS2LevelTypeToSubordinationGroupCM](ConceptMap-mis2-level-type-to-subordination-group-cm.html) (URBAN -> I_3) |
 | `medicalType` | `type.coding[organizationalStructure]` | [MIS2MedicalTypeToOrganizationalStructureCM](ConceptMap-mis2-medical-type-to-organizational-structure-cm.html) (MEDICAL_ASSOCIATION -> 148) |
 | `serviceTypes` | `type.coding[organizationalServiceGroup]` | [MIS2ServiceTypeToOrganizationalServiceGroupCM](ConceptMap-mis2-service-type-to-organizational-service-group-cm.html) (OUTPATIENT+INPATIENT -> III_100, OUTPATIENT -> III_500) |
-| `id`, `uuid` | not mapped | MIS2 internal identifiers |
+| `id`, `uuid` | not mapped | Hepatitis internal identifiers |

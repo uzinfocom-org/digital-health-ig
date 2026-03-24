@@ -45,7 +45,7 @@ Description: "Uzbekistan Core Organization profile, used to define healthcare or
     withoutLegalStatus 0..1 MS and
     organizationGrouping 0..1 MS
 
-* type.coding[organizationType] 
+* type.coding[organizationType]
   ^short = "Вид организации"
   * system 1..1 MS
   * system = "https://terminology.dhp.uz/fhir/core/CodeSystem/organization-types-uz-cs"
@@ -57,7 +57,7 @@ Description: "Uzbekistan Core Organization profile, used to define healthcare or
   * system = "https://terminology.dhp.uz/fhir/core/CodeSystem/organizational-subordination-group-cs"
   * code 1..1 MS
   * code from organizational-subordination-group-vs (required)
-* type.coding[nomenclatureGroup] 
+* type.coding[nomenclatureGroup]
   ^short = "Определяет группу номенклатуры (группировку учреждений)"
   * system 1..1 MS
   * system = "https://terminology.dhp.uz/fhir/core/CodeSystem/nomenclature-group-cs"
@@ -75,7 +75,7 @@ Description: "Uzbekistan Core Organization profile, used to define healthcare or
   * system = "https://terminology.dhp.uz/fhir/core/CodeSystem/organizational-service-group-cs"
   * code 1..1 MS
   * code from organizational-service-group-vs (required)
-* type.coding[specialization] 
+* type.coding[specialization]
   ^short = "Определяет специализацию медорганизации"
   * system 1..1 MS
   * system = "https://terminology.dhp.uz/fhir/core/CodeSystem/organizational-specialization-cs"
@@ -136,7 +136,7 @@ Usage: #example
 
 Instance: xonobod-medical-association
 InstanceOf: UZCoreOrganization
-Description: "Example of a medical association translated from MIS2 JSON"
+Description: "Example of a medical association translated from Hepatitis JSON"
 Usage: #example
 * language = #uz
 * identifier[taxId]
@@ -182,7 +182,7 @@ Usage: #example
 * language = #uz
 * name = "Toshkent viloyati yuqumli kasalliklar shifoxonasi"
   * extension[translation][0]
-    * extension[lang] 
+    * extension[lang]
       * valueCode = #ru
     * extension[content][+]
       * valueString = "Ташкентская областная инфекционная больница"
