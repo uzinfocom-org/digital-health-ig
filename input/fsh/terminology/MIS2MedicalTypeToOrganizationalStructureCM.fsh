@@ -10,7 +10,8 @@ Description: "Maps MIS2 medical type codes to UZ Core Organizational Structure c
 * publisher = "Uzinfocom"
 
 // Group 1: MIS2 mapping to OrganizationalStructureCS
-* group[+].target = Canonical(OrganizationalStructureCS)
+* group[+].source = Canonical(MIS2MedicalTypeCS)
+* group[=].target = Canonical(OrganizationalStructureCS)
 * group[=].element[+].code = #PHARMACY
 * group[=].element[=].display = "Pharmacy"
 * group[=].element[=].target[+].code = #999
@@ -60,7 +61,7 @@ Description: "Maps MIS2 medical type codes to UZ Core Organizational Structure c
 * group[=].element[=].target[=].relationship = #equivalent
 
 * group[=].element[+].code = #DISPENSARY
-* group[=].element[=].display = "Specialized Hospital"
+* group[=].element[=].display = "Dispensary"
 * group[=].element[=].target[+].code = #150
 * group[=].element[=].target[=].display = "Specialized dispensary"
 * group[=].element[=].target[=].relationship = #equivalent
@@ -240,7 +241,8 @@ Description: "Maps MIS2 medical type codes to UZ Core Organizational Structure c
 * group[=].element[=].target[=].relationship = #related-to
 
 // Group 2: MIS2 mapping to NomenclatureGroupCS
-* group[+].target = Canonical(NomenclatureGroupCS)
+* group[+].source = Canonical(MIS2MedicalTypeCS)
+* group[=].target = Canonical(NomenclatureGroupCS)
 * group[=].element[+].code = #DISINFECTION_STATION
 * group[=].element[=].display = "Disinfection station"
 * group[=].element[=].target[+].code = #II_800
