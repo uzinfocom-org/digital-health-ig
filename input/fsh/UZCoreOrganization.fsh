@@ -134,6 +134,36 @@ Usage: #example
     * extension[content][+]
       * valueString = "Respublika onkologiya orayı"
 
+Instance: xonobod-medical-association
+InstanceOf: UZCoreOrganization
+Description: "Example of a medical association translated from MIS2 JSON"
+Usage: #example
+* language = #uz
+* identifier[taxId]
+  * use = #official
+  * type = $identifier-type#TAX "Tax ID number"
+  * system = $organization-tax-id-system
+  * value = "200248215"
+* active = true
+* name = "Xonobod shahar tibbiyot birlashmasi"
+* type.coding[subordinationGroup] = organizational-subordination-group-cs#I_3 "Tuman va shaharlar boshqaruv tarkibidagi"
+* type.coding[organizationalStructure] = organizational-structure-cs#148 "Tibbiyot birlashmasi"
+* type.coding[organizationalServiceGroup][0] = organizational-service-group-cs#III_100 "Poliklinika bo'limi va statsionar bo'limi mavjud"
+* type.coding[organizationalServiceGroup][+] = organizational-service-group-cs#III_500 "Poliklinika bo'limi mavjud"
+* contact
+  * telecom[+]
+    * system = #phone
+    * value = "1341353613"
+  * telecom[+]
+    * system = #email
+    * value = "health@example.uz"
+  * address
+    * line = "A.Fitrat ko'chasi, 1"
+    * state = "1703"
+    * district = "1703408"
+    * country = "UZ"
+* extension[coverage-area].valueCodeableConcept = states-cs#1703 "Andijon viloyati"
+
 Instance: tashkent-diseases-hospital
 InstanceOf: UZCoreOrganization
 Description: "Example of a hospital organization"
