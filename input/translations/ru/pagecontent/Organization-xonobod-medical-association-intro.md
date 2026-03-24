@@ -1,6 +1,6 @@
-Этот пример демонстрирует преобразование организации из формата MIS2 JSON в ресурс FHIR Organization, соответствующий профилю [UZ Core Organization](StructureDefinition-uz-core-organization.html). См. [результирующий FHIR JSON](Organization-xonobod-medical-association.json.html).
+Этот пример демонстрирует преобразование организации из формата Hepatitis JSON в ресурс FHIR Organization, соответствующий профилю [UZ Core Organization](StructureDefinition-uz-core-organization.html). См. [результирующий FHIR JSON](Organization-xonobod-medical-association.json.html).
 
-#### Исходный MIS2 JSON
+#### Исходный Hepatitis JSON
 
 ```json
 {
@@ -37,7 +37,7 @@
 | `phone`, `email` | `contact.telecom` | - |
 | `country`, `state`, `city`, `line` | `contact.address` | [SSVAdministrativeTerritoryToRegionsCM](ConceptMap-ssv-administrative-territory-to-regions-cm.html) для `state` (UZ-AN -> 1703) и `city` (AN-408 -> 1703408) |
 | `serviceArea` | `extension[coverage-area]` | [SSVAdministrativeTerritoryToRegionsCM](ConceptMap-ssv-administrative-territory-to-regions-cm.html) (UZ-AN -> StateCS#1703) |
-| `levelType` | `type.coding[subordinationGroup]` | [MIS2LevelTypeToSubordinationGroupCM](ConceptMap-mis2-level-type-to-subordination-group-cm.html) (URBAN -> I_3) |
-| `medicalType` | `type.coding[organizationalStructure]` | [MIS2MedicalTypeToOrganizationalStructureCM](ConceptMap-mis2-medical-type-to-organizational-structure-cm.html) (MEDICAL_ASSOCIATION -> 148) |
-| `serviceTypes` | `type.coding[organizationalServiceGroup]` | [MIS2ServiceTypeToOrganizationalServiceGroupCM](ConceptMap-mis2-service-type-to-organizational-service-group-cm.html) (OUTPATIENT+INPATIENT -> III_100, OUTPATIENT -> III_500) |
-| `id`, `uuid` | не маппится | Внутренние идентификаторы MIS2 |
+| `levelType` | `type.coding[subordinationGroup]` | [HepatitisLevelTypeToSubordinationGroupCM](ConceptMap-hepatitis-level-type-to-subordination-group-cm.html) (URBAN -> I_3) |
+| `medicalType` | `type.coding[organizationalStructure]` | [HepatitisMedicalTypeToOrganizationalStructureCM](ConceptMap-hepatitis-medical-type-to-organizational-structure-cm.html) (MEDICAL_ASSOCIATION -> 148) |
+| `serviceTypes` | `type.coding[organizationalServiceGroup]` | [HepatitisServiceTypeToOrganizationalServiceGroupCM](ConceptMap-hepatitis-service-type-to-organizational-service-group-cm.html) (OUTPATIENT+INPATIENT -> III_100, OUTPATIENT -> III_500) |
+| `id`, `uuid` | не маппится | Внутренние идентификаторы Hepatitis |

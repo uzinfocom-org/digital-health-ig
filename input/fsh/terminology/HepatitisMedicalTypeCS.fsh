@@ -1,8 +1,8 @@
-CodeSystem: MIS2MedicalTypeCS
-Id: mis2-medical-type-cs
-Title: "MIS2 Medical Type"
-Description: "MIS2 medical type classification for healthcare facilities"
-* insert OriginalCodeSystemDraft(mis2-medical-type-cs)
+CodeSystem: HepatitisMedicalTypeCS
+Id: hepatitis-medical-type-cs
+Title: "Hepatitis Medical Type"
+Description: "Hepatitis medical type classification for healthcare facilities"
+* insert OriginalCodeSystemDraft(hepatitis-medical-type-cs)
 * ^language = #en
 
 * #PHARMACY "Pharmacy"

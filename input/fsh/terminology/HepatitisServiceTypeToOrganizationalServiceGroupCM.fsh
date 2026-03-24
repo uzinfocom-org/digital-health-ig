@@ -1,15 +1,15 @@
-Instance: mis2-service-type-to-organizational-service-group-cm
+Instance: hepatitis-service-type-to-organizational-service-group-cm
 InstanceOf: ConceptMap
 Usage: #definition
-Title: "MIS2 Service Type to Organizational Service Group"
-Description: "Maps MIS2 service type flags to UZ Core Organizational Service Group codes. MIS2 uses multi-select service type flags per organization (e.g. an org can have both INPATIENT and OUTPATIENT), while OrganizationalServiceGroupCS uses a single pre-combined classification. When an organization has multiple MIS2 flags, the combination should be considered to select the appropriate target code (e.g. INPATIENT + OUTPATIENT together maps to III_100)."
-* name = "MIS2ServiceTypeToOrganizationalServiceGroupCM"
-* url = "https://terminology.dhp.uz/fhir/core/ConceptMap/mis2-service-type-to-organizational-service-group-cm"
+Title: "Hepatitis Service Type to Organizational Service Group"
+Description: "Maps Hepatitis service type flags to UZ Core Organizational Service Group codes. Hepatitis uses multi-select service type flags per organization (e.g. an org can have both INPATIENT and OUTPATIENT), while OrganizationalServiceGroupCS uses a single pre-combined classification. When an organization has multiple Hepatitis flags, the combination should be considered to select the appropriate target code (e.g. INPATIENT + OUTPATIENT together maps to III_100)."
+* name = "HepatitisServiceTypeToOrganizationalServiceGroupCM"
+* url = "https://terminology.dhp.uz/fhir/core/ConceptMap/hepatitis-service-type-to-organizational-service-group-cm"
 * status = #draft
 * experimental = false
 * publisher = "Uzinfocom"
 * targetScopeCanonical = Canonical(OrganizationalServiceGroupVS)
-* group.source = Canonical(MIS2ServiceTypeCS)
+* group.source = Canonical(HepatitisServiceTypeCS)
 * group.target = Canonical(OrganizationalServiceGroupCS)
 
 * group.element[+].code = #OUTPATIENT

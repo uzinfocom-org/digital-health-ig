@@ -1,6 +1,6 @@
-Ushbu misol MIS2 JSON formatidagi tashkilotni [UZ Core Organization](StructureDefinition-uz-core-organization.html) profiliga mos FHIR Organization resursiga o'girishni ko'rsatadi. [Natijadagi FHIR JSON](Organization-xonobod-medical-association.json.html) ni ko'ring.
+Ushbu misol Hepatitis JSON formatidagi tashkilotni [UZ Core Organization](StructureDefinition-uz-core-organization.html) profiliga mos FHIR Organization resursiga o'girishni ko'rsatadi. [Natijadagi FHIR JSON](Organization-xonobod-medical-association.json.html) ni ko'ring.
 
-#### Manba MIS2 JSON
+#### Manba Hepatitis JSON
 
 ```json
 {
@@ -37,7 +37,7 @@ Ushbu misol MIS2 JSON formatidagi tashkilotni [UZ Core Organization](StructureDe
 | `phone`, `email` | `contact.telecom` | - |
 | `country`, `state`, `city`, `line` | `contact.address` | [SSVAdministrativeTerritoryToRegionsCM](ConceptMap-ssv-administrative-territory-to-regions-cm.html) `state` (UZ-AN -> 1703) va `city` (AN-408 -> 1703408) uchun |
 | `serviceArea` | `extension[coverage-area]` | [SSVAdministrativeTerritoryToRegionsCM](ConceptMap-ssv-administrative-territory-to-regions-cm.html) (UZ-AN -> StateCS#1703) |
-| `levelType` | `type.coding[subordinationGroup]` | [MIS2LevelTypeToSubordinationGroupCM](ConceptMap-mis2-level-type-to-subordination-group-cm.html) (URBAN -> I_3) |
-| `medicalType` | `type.coding[organizationalStructure]` | [MIS2MedicalTypeToOrganizationalStructureCM](ConceptMap-mis2-medical-type-to-organizational-structure-cm.html) (MEDICAL_ASSOCIATION -> 148) |
-| `serviceTypes` | `type.coding[organizationalServiceGroup]` | [MIS2ServiceTypeToOrganizationalServiceGroupCM](ConceptMap-mis2-service-type-to-organizational-service-group-cm.html) (OUTPATIENT+INPATIENT -> III_100, OUTPATIENT -> III_500) |
-| `id`, `uuid` | mapping qilinmagan | MIS2 ichki identifikatorlari |
+| `levelType` | `type.coding[subordinationGroup]` | [HepatitisLevelTypeToSubordinationGroupCM](ConceptMap-hepatitis-level-type-to-subordination-group-cm.html) (URBAN -> I_3) |
+| `medicalType` | `type.coding[organizationalStructure]` | [HepatitisMedicalTypeToOrganizationalStructureCM](ConceptMap-hepatitis-medical-type-to-organizational-structure-cm.html) (MEDICAL_ASSOCIATION -> 148) |
+| `serviceTypes` | `type.coding[organizationalServiceGroup]` | [HepatitisServiceTypeToOrganizationalServiceGroupCM](ConceptMap-hepatitis-service-type-to-organizational-service-group-cm.html) (OUTPATIENT+INPATIENT -> III_100, OUTPATIENT -> III_500) |
+| `id`, `uuid` | mapping qilinmagan | Hepatitis ichki identifikatorlari |

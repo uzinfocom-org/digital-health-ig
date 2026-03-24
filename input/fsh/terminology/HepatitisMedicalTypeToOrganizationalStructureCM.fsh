@@ -1,16 +1,16 @@
-Instance: mis2-medical-type-to-organizational-structure-cm
+Instance: hepatitis-medical-type-to-organizational-structure-cm
 InstanceOf: ConceptMap
 Usage: #definition
-Title: "MIS2 Medical Type to Organizational Structure"
-Description: "Maps MIS2 medical type codes to UZ Core Organizational Structure codes. MIS2 classifies healthcare facilities into 46 medical types, while OrganizationalStructureCS provides the Ministry of Health's detailed classification of institution types. Not all MIS2 types have equivalents in OrganizationalStructureCS - facility types like pharmacies, polyclinics, ambulance stations, and blood transfusion facilities are not represented."
-* name = "MIS2MedicalTypeToOrganizationalStructureCM"
-* url = "https://terminology.dhp.uz/fhir/core/ConceptMap/mis2-medical-type-to-organizational-structure-cm"
+Title: "Hepatitis Medical Type to Organizational Structure"
+Description: "Maps Hepatitis medical type codes to UZ Core Organizational Structure codes. Hepatitis classifies healthcare facilities into 46 medical types, while OrganizationalStructureCS provides the Ministry of Health's detailed classification of institution types. Not all Hepatitis types have equivalents in OrganizationalStructureCS - facility types like pharmacies, polyclinics, ambulance stations, and blood transfusion facilities are not represented."
+* name = "HepatitisMedicalTypeToOrganizationalStructureCM"
+* url = "https://terminology.dhp.uz/fhir/core/ConceptMap/hepatitis-medical-type-to-organizational-structure-cm"
 * status = #draft
 * experimental = false
 * publisher = "Uzinfocom"
 
-// Group 1: MIS2 mapping to OrganizationalStructureCS
-* group[+].source = Canonical(MIS2MedicalTypeCS)
+// Group 1: Hepatitis mapping to OrganizationalStructureCS
+* group[+].source = Canonical(HepatitisMedicalTypeCS)
 * group[=].target = Canonical(OrganizationalStructureCS)
 * group[=].element[+].code = #PHARMACY
 * group[=].element[=].display = "Pharmacy"
@@ -240,8 +240,8 @@ Description: "Maps MIS2 medical type codes to UZ Core Organizational Structure c
 * group[=].element[=].target[=].display = "Family doctor point"
 * group[=].element[=].target[=].relationship = #related-to
 
-// Group 2: MIS2 mapping to NomenclatureGroupCS
-* group[+].source = Canonical(MIS2MedicalTypeCS)
+// Group 2: Hepatitis mapping to NomenclatureGroupCS
+* group[+].source = Canonical(HepatitisMedicalTypeCS)
 * group[=].target = Canonical(NomenclatureGroupCS)
 * group[=].element[+].code = #DISINFECTION_STATION
 * group[=].element[=].display = "Disinfection station"

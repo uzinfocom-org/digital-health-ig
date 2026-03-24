@@ -136,7 +136,7 @@ Usage: #example
 
 Instance: xonobod-medical-association
 InstanceOf: UZCoreOrganization
-Description: "Example of a medical association translated from MIS2 JSON"
+Description: "Example of a medical association translated from Hepatitis JSON"
 Usage: #example
 * language = #uz
 * identifier[taxId]

@@ -1,15 +1,15 @@
-Instance: mis2-level-type-to-subordination-group-cm
+Instance: hepatitis-level-type-to-subordination-group-cm
 InstanceOf: ConceptMap
 Usage: #definition
-Title: "MIS2 Level Type to Subordination Group"
-Description: "Maps MIS2 level type codes to UZ Core Organizational Subordination Group codes. MIS2 classifies healthcare facilities into 7 administrative levels, while OrganizationalSubordinationGroupCS groups institutions by their administrative subordination (republican, territorial, district/city, other ministries, private). The MIS2 level types URBAN, AREA, and DISTRICT all fall under the combined district-and-city administration category in the target."
-* name = "MIS2LevelTypeToSubordinationGroupCM"
-* url = "https://terminology.dhp.uz/fhir/core/ConceptMap/mis2-level-type-to-subordination-group-cm"
+Title: "Hepatitis Level Type to Subordination Group"
+Description: "Maps Hepatitis level type codes to UZ Core Organizational Subordination Group codes. Hepatitis classifies healthcare facilities into 7 administrative levels, while OrganizationalSubordinationGroupCS groups institutions by their administrative subordination (republican, territorial, district/city, other ministries, private). The Hepatitis level types URBAN, AREA, and DISTRICT all fall under the combined district-and-city administration category in the target."
+* name = "HepatitisLevelTypeToSubordinationGroupCM"
+* url = "https://terminology.dhp.uz/fhir/core/ConceptMap/hepatitis-level-type-to-subordination-group-cm"
 * status = #draft
 * experimental = false
 * publisher = "Uzinfocom"
 * targetScopeCanonical = Canonical(OrganizationalSubordinationGroupVS)
-* group.source = Canonical(MIS2LevelTypeCS)
+* group.source = Canonical(HepatitisLevelTypeCS)
 * group.target = Canonical(OrganizationalSubordinationGroupCS)
 
 * group.element[+].code = #REPUBLICAN
