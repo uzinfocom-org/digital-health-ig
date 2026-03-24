@@ -40,7 +40,7 @@ Description: "Uzbekistan Core Organization profile, used to define healthcare or
     subordinationGroup 0..1 MS and
     nomenclatureGroup 0..1 MS and //organizationalStructure is child of nomenclatureGroup
     organizationalStructure 0..1 MS and
-    organizationalServiceGroup 0..1 MS and //specialization is child of organizationalServiceGroup
+    organizationalServiceGroup 0..* MS and //specialization is child of organizationalServiceGroup
     specialization 0..* MS and
     withoutLegalStatus 0..1 MS and
     organizationGrouping 0..1 MS
