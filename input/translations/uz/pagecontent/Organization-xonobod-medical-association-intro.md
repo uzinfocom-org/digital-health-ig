@@ -1,6 +1,6 @@
-Ushbu misol MIS2 JSON formatidagi tashkilotni [UZ Core Organization](StructureDefinition-uz-core-organization.html) profiliga mos FHIR Organization resursiga o'girishni ko'rsatadi. [Natijadagi FHIR JSON](Organization-xonobod-medical-association.json.html) ni ko'ring.
+Ushbu misol Hepatitis JSON formatidagi tashkilotni [UZ Core Organization](StructureDefinition-uz-core-organization.html) profiliga mos FHIR Organization resursiga o'girishni ko'rsatadi. [Natijadagi FHIR JSON](Organization-xonobod-medical-association.json.html) ni ko'ring.
 
-#### Manba MIS2 JSON
+#### Manba Hepatitis JSON
 
 ```json
 {
@@ -40,4 +40,4 @@ Ushbu misol MIS2 JSON formatidagi tashkilotni [UZ Core Organization](StructureDe
 | `levelType` | `type.coding[subordinationGroup]` | [MIS2LevelTypeToSubordinationGroupCM](ConceptMap-mis2-level-type-to-subordination-group-cm.html) (3 "Urban" -> I_3 "In district and city administration") |
 | `medicalType` | `type.coding[organizationalStructure]` | [MIS2MedicalTypeToOrganizationalStructureCM](ConceptMap-mis2-medical-type-to-organizational-structure-cm.html) (16 "Medical Association" -> 148 "Medical association") |
 | `serviceTypes` | `type.coding[organizationalServiceGroup]` | [MIS2ServiceTypeToOrganizationalServiceGroupCM](ConceptMap-mis2-service-type-to-organizational-service-group-cm.html) (2 "Inpatient" + 1 "Outpatient" -> III_100, 1 "Outpatient" -> III_500) |
-| `id`, `uuid` | mapping qilinmagan | MIS2 ichki identifikatorlari |
+| `id`, `uuid` | mapping qilinmagan | Hepatitis ichki identifikatorlari |
