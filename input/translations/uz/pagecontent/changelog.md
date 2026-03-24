@@ -18,6 +18,8 @@ O'zbekistonda ishlatiladigan panellar va analitlar uchun [laboratoriya kuzatuv k
 
 [UZ Core Organization](StructureDefinition-uz-core-organization.html) ga tashkilot xizmat ko'rsatadigan ma'muriy hududni ko'rsatish uchun [xizmat hududi kengaytmasi](StructureDefinition-coverage-area.html) qo'shildi, [StateVS](ValueSet-state-vs.html) ga bog'langan. SSV hudud kodlarini StateCS ga [SSVAdministrativeTerritoryToRegionsCM](ConceptMap-ssv-administrative-territory-to-regions-cm.html) yordamida o'zgartirish mumkin.
 
+MIS2 JSON formatidagi tashkilotni ConceptMap yordamida UZ Core Organization resursiga o'girishni ko'rsatuvchi [misol](Organization-xonobod-medical-association.html) qo'shildi.
+
 MIS2 kodlarini UZ Core terminologiyasiga tarjima qilish uchun ConceptMap qo'shildi: [MIS2MedicalTypeToOrganizationalStructureCM](ConceptMap-mis2-medical-type-to-organizational-structure-cm.html) `type.coding[organizationalStructure]` uchun, [MIS2LevelTypeToSubordinationGroupCM](ConceptMap-mis2-level-type-to-subordination-group-cm.html) `type.coding[subordinationGroup]` uchun va [MIS2ServiceTypeToOrganizationalServiceGroupCM](ConceptMap-mis2-service-type-to-organizational-service-group-cm.html) `type.coding[organizationalServiceGroup]` uchun. MIS2 dan tarjima qilayotgan dasturchilar tegishli bo'limlarni to'ldirish uchun ushbu xaritalardan foydalanishlari kerak.
 
 ### Versiya 0.4.0
