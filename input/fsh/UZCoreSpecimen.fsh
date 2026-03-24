@@ -57,7 +57,7 @@ Description: "Temporary Specimen instance for lab (based on drafted UZCoreSpecim
 * identifier.value = "SPC-2025-000001"
 * accessionIdentifier.system = "https://dhp.uz/fhir/identifier/lab-accession-id"
 * accessionIdentifier.value = "ACC-2025-000045" */
-* status = $specimen-status#available
+* status = $specimen-status#available "Available"
 * type = $v2-0487#BLD "Whole blood"
 * subject = Reference(Patient/example-salim)
 * receivedTime = "2025-11-04T08:30:00Z"
