@@ -34,11 +34,15 @@ Description: "Maps MIS2 service type flags to UZ Core Organizational Service Gro
 
 * group.element[+].code = #EMERGENCY
 * group.element[=].display = "Emergency"
-* group.element[=].noMap = true
+* group.element[=].target[+].code = #III_100
+* group.element[=].target[=].display = "Poliklinika bo'limi va statsionar bo'limi mavjud"
+* group.element[=].target[=].relationship = #related-to
 
 * group.element[+].code = #DIAGNOSTIC
 * group.element[=].display = "Diagnostic"
-* group.element[=].noMap = true
+* group.element[=].target[+].code = #III_100
+* group.element[=].target[=].display = "Poliklinika bo'limi va statsionar bo'limi mavjud"
+* group.element[=].target[=].relationship = #related-to
 
 * group.element[+].code = #OTHER
 * group.element[=].display = "Other"
