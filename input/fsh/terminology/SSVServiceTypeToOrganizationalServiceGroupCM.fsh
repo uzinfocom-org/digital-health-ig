@@ -9,7 +9,7 @@ Description: "Maps SSV service type codes to UZ Core Organizational Service Grou
 * experimental = false
 * publisher = "Uzinfocom"
 * targetScopeCanonical = Canonical(OrganizationalServiceGroupVS)
-* group.source = "http://fhir.ssv.uz/CodeSystem/organization-type-service"
+* group.source = $ssv-organization-type-service
 * group.target = Canonical(OrganizationalServiceGroupCS)
 
 * group.element[+].code = #1

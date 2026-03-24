@@ -9,7 +9,7 @@ Description: "Maps SSV organization level type codes to UZ Core Organizational S
 * experimental = false
 * publisher = "Uzinfocom"
 * targetScopeCanonical = Canonical(OrganizationalSubordinationGroupVS)
-* group.source = "http://fhir.ssv.uz/CodeSystem/organization-type-level"
+* group.source = $ssv-organization-type-level
 * group.target = Canonical(OrganizationalSubordinationGroupCS)
 
 * group.element[+].code = #1

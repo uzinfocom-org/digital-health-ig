@@ -10,7 +10,7 @@ Description: "Maps SSV medical type codes to UZ Core Organizational Structure co
 * publisher = "Uzinfocom"
 
 // Group 1: SSV mapping to OrganizationalStructureCS
-* group[+].source = "http://fhir.ssv.uz/CodeSystem/organization-type-medical"
+* group[+].source = $ssv-organization-type-medical
 * group[=].target = Canonical(OrganizationalStructureCS)
 * group[=].element[+].code = #1
 * group[=].element[=].display = "Pharmacy" // uz: Dorixona, ru: Аптека
@@ -241,7 +241,7 @@ Description: "Maps SSV medical type codes to UZ Core Organizational Structure co
 * group[=].element[=].target[=].relationship = #related-to
 
 // Group 2: SSV mapping to NomenclatureGroupCS
-* group[+].source = "http://fhir.ssv.uz/CodeSystem/organization-type-medical"
+* group[+].source = $ssv-organization-type-medical
 * group[=].target = Canonical(NomenclatureGroupCS)
 * group[=].element[+].code = #9
 * group[=].element[=].display = "Disinfection station" // uz: Dezinfektsiya stantsiyasi, ru: Дезинфекционная станция
@@ -252,25 +252,25 @@ Description: "Maps SSV medical type codes to UZ Core Organizational Structure co
 * group[=].element[+].code = #19
 * group[=].element[=].display = "Pathoanatomic Service" // uz: Patologik xizmat, ru: Патологоанатомическая служба
 * group[=].element[=].target[+].code = #II_600
-* group[=].element[=].target[=].display = "Pathological anatomy"
+* group[=].element[=].target[=].display = "Patologik anatomiya"
 * group[=].element[=].target[=].relationship = #source-is-narrower-than-target
 
 * group[=].element[+].code = #24
 * group[=].element[=].display = "Sanatorium" // uz: Sanatoriya, ru: Санаторий
 * group[=].element[=].target[+].code = #II_400
-* group[=].element[=].target[=].display = "Resorts"
+* group[=].element[=].target[=].display = "Sog'lomlashtirish sihatgohlari"
 * group[=].element[=].target[=].relationship = #source-is-narrower-than-target
 
 * group[=].element[+].code = #25
 * group[=].element[=].display = "Blood Transfusion station" // uz: Qon quyish stansiyasi, ru: Станция переливания крови
 * group[=].element[=].target[+].code = #II_700
-* group[=].element[=].target[=].display = "Blood transfusion center"
+* group[=].element[=].target[=].display = "Qon quyish markazi"
 * group[=].element[=].target[=].relationship = #source-is-narrower-than-target
 
 * group[=].element[+].code = #29
 * group[=].element[=].display = "Blood transfusion facility" // uz: Qon quyish muassasalari, ru: Учреждение переливания крови
 * group[=].element[=].target[+].code = #II_700
-* group[=].element[=].target[=].display = "Blood transfusion center"
+* group[=].element[=].target[=].display = "Qon quyish markazi"
 * group[=].element[=].target[=].relationship = #source-is-narrower-than-target
 
 * group[=].element[+].code = #31
@@ -282,5 +282,5 @@ Description: "Maps SSV medical type codes to UZ Core Organizational Structure co
 * group[=].element[+].code = #36
 * group[=].element[=].display = "Blood Transfusion Center" // uz: Qon quyish markazi, ru: Центр переливания крови
 * group[=].element[=].target[+].code = #II_700
-* group[=].element[=].target[=].display = "Blood transfusion center"
+* group[=].element[=].target[=].display = "Qon quyish markazi"
 * group[=].element[=].target[=].relationship = #source-is-narrower-than-target
