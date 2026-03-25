@@ -9,4 +9,4 @@ Description: "Observation codes in Uzbekistan"
 * include codes from system $lab-analytes
 * include codes from system $lab-hepatitis
 * include codes from system $loinc
-//* include codes from valueset $obs-loinc-vs
+* include codes from valueset $obs-loinc-vs
