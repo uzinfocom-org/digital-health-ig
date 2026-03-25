@@ -1,15 +1,15 @@
-Instance: diagnostic-code-to-loinc
+Instance: lab-analytes-to-loinc
 InstanceOf: ConceptMap
 Usage: #definition
 Title: "Diagnostic Codes to LOINC"
 Description: "Maps local UZ diagnostic codes to LOINC codes for laboratory observations."
-* url = "https://terminology.dhp.uz/fhir/core/ConceptMap/diagnostic-code-to-loinc"
-* name = "DiagnosticCodeToLoinc"
+* url = "https://terminology.dhp.uz/fhir/core/ConceptMap/lab-analytes-to-loinc"
+* name = "AnalytesCodeToLoinc"
 * status = #draft
 * experimental = false
 * publisher = "Uzinfocom"
 
-* group.source = Canonical(ObservationLabDiagnosticCodesCS)
+* group.source = Canonical(ObservationLabAnalytesCodesCS)
 * sourceScopeCanonical = Canonical(ObservationCodesVS)
 * group.target = $loinc
 * targetScopeCanonical = $loinc
