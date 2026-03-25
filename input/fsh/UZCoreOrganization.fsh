@@ -8,6 +8,8 @@ Description: "Uzbekistan Core Organization profile, used to define healthcare or
 * ^date = "2025-02-24"
 * ^publisher = "Uzinfocom"
 
+* extension contains CoverageArea named coverage-area 0..1 MS
+
 * identifier MS
 * identifier ^slicing.discriminator.type = #value
 * identifier ^slicing.discriminator.path = "system"
