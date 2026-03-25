@@ -7,3 +7,4 @@ Description: "Observation codes in Uzbekistan"
 
 * include codes from system ObservationLabResearchCodesCS
 * include codes from system $loinc
+* include codes from system $sct
