@@ -232,7 +232,7 @@ Description: "Maps local UZ lab research codes to LOINC codes for laboratory obs
 * group.element[=].target[=].relationship = #equivalent
 
 * group.element[+].code = #lab-35
-* group.element[=].display = "Leykotsitlar"
+* group.element[=].display = "Leykositlar"
 * group.element[=].target[+].code = #6690-2
 * group.element[=].target[=].display = "Leukocytes [Presence] in Genital specimen by Light microscopy"
 * group.element[=].target[=].relationship = #equivalent
