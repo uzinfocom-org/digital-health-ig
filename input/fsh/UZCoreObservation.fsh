@@ -211,7 +211,7 @@ Description: "Example of a respiratory rate vital sign observation"
 Instance: cbc-panel-example
 InstanceOf: UZCoreObservation
 Usage: #example
-Description: "Example of CBC (Umumiy qon tahlili) as a laboratory panel with analytes from observation-lab-panel-codes-cs"
+Description: "Example of CBC (Umumiy qon tahlili) as a laboratory panel with analytes from ObservationLabPanelCodesCS"
 * meta.profile[0] = "https://dhp.uz/fhir/core/StructureDefinition/uz-core-observation"
 * status = #final
 * category = $observation-category#laboratory "Laboratory"

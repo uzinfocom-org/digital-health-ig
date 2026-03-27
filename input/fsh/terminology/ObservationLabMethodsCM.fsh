@@ -22,7 +22,7 @@ Description: "Maps local UZ laboratory methods to SNOMED CT codes for laboratory
 * group.element[=].target[=].relationship = #equivalent
 
 * group.element[+].code = #lab-method-2
-* group.element[=].display = "IFA (Immunoferment tahlili)"
+* group.element[=].display = "IFA (Immunoferment tahlil)"
 * group.element[=].target[+].code = #414111007
 * group.element[=].target[=].display = "Enzyme immunoassay"
 * group.element[=].target[=].relationship = #equivalent

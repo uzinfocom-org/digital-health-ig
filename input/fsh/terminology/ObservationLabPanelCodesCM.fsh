@@ -130,7 +130,7 @@ Description: "Maps local UZ lab research codes to LOINC codes for laboratory obs
 * group.element[=].target[=].relationship = #equivalent
 
 * group.element[+].code = #lab-19
-* group.element[=].display = "Eritrotsit hajmi standart og‘ishi (RDW-SD)"
+* group.element[=].display = "Eritrotsit hajmi standart og'ishi (RDW-SD)"
 * group.element[=].target[+].code = #21000-5
 * group.element[=].target[=].display = "Erythrocyte distribution width (RDW-SD) [Entitic volume] by Automated count"
 * group.element[=].target[=].relationship = #equivalent
@@ -178,13 +178,13 @@ Description: "Maps local UZ lab research codes to LOINC codes for laboratory obs
 * group.element[=].target[=].relationship = #equivalent
 
 * group.element[+].code = #lab-B
-* group.element[=].display = "Qon koagulogrammasi (qon ivish ko‘rsatkichlari)"
+* group.element[=].display = "Qon koagulogrammasi (qon ivish ko'rsatkichlari)"
 * group.element[=].target[+].code = #34552-5
 * group.element[=].target[=].display = "Coagulation panel"
 * group.element[=].target[=].relationship = #equivalent
 
 * group.element[+].code = #lab-27
-* group.element[=].display = "Kvik bo‘yicha protrombin indeksi"
+* group.element[=].display = "Kvik bo'yicha protrombin indeksi"
 * group.element[=].target[+].code = #5901-4
 * group.element[=].target[=].display = "Prothrombin activity (Quick) [Ratio] in Platelet poor plasma by Coagulation assay"
 * group.element[=].target[=].relationship = #equivalent
@@ -225,7 +225,7 @@ Description: "Maps local UZ lab research codes to LOINC codes for laboratory obs
 * group.element[=].target[=].display = "Thrombin time (TT) [Time] in Platelet poor plasma by Coagulation assay"
 * group.element[=].target[=].relationship = #equivalent
 
-* group.element[+].code = #lab-34
+* group.element[+].code = #lab-C
 * group.element[=].display = "Sitologik tekshiruv (surtma)"
 * group.element[=].target[+].code = #11529-5
 * group.element[=].target[=].display = "Cytology study of genital specimen by Light microscopy"
@@ -262,7 +262,7 @@ Description: "Maps local UZ lab research codes to LOINC codes for laboratory obs
 * group.element[=].target[=].relationship = #equivalent
 
 * group.element[+].code = #lab-40
-* group.element[=].display = "Zamburug‘lar"
+* group.element[=].display = "Zamburug'lar"
 * group.element[=].target[+].code = #20410-7
 * group.element[=].target[=].display = "Yeast [Presence] in Genital specimen by Light microscopy"
 * group.element[=].target[=].relationship = #equivalent
@@ -364,19 +364,19 @@ Description: "Maps local UZ lab research codes to LOINC codes for laboratory obs
 * group.element[=].target[=].relationship = #equivalent
 
 * group.element[+].code = #lab-55
-* group.element[=].display = "Biriktiruvchi to‘qima"
+* group.element[=].display = "Biriktiruvchi to'qima"
 * group.element[=].target[+].code = #19118-7
 * group.element[=].target[=].display = "Connective tissue [Presence] in Stool by Light microscopy"
 * group.element[=].target[=].relationship = #equivalent
 
 * group.element[+].code = #lab-56
-* group.element[=].display = "Neytral yog‘"
+* group.element[=].display = "Neytral yog'"
 * group.element[=].target[+].code = #19119-5
 * group.element[=].target[=].display = "Neutral fat [Presence] in Stool by Light microscopy"
 * group.element[=].target[=].relationship = #equivalent
 
 * group.element[+].code = #lab-57
-* group.element[=].display = "Yog‘ kislotalari"
+* group.element[=].display = "Yog' kislotalari"
 * group.element[=].target[+].code = #19120-3
 * group.element[=].target[=].display = "Fatty acids [Presence] in Stool by Light microscopy"
 * group.element[=].target[=].relationship = #equivalent
@@ -388,7 +388,7 @@ Description: "Maps local UZ lab research codes to LOINC codes for laboratory obs
 * group.element[=].target[=].relationship = #equivalent
 
 * group.element[+].code = #lab-59
-* group.element[=].display = "Hazm bo‘ladigan o‘simlik tolasi"
+* group.element[=].display = "Hazm bo'ladigan o'simlik tolasi"
 * group.element[=].target[+].code = #19122-9
 * group.element[=].target[=].display = "Plant fibers digested [Presence] in Stool by Light microscopy"
 * group.element[=].target[=].relationship = #equivalent
@@ -448,7 +448,7 @@ Description: "Maps local UZ lab research codes to LOINC codes for laboratory obs
 * group.element[=].target[=].relationship = #equivalent
 
 * group.element[+].code = #lab-69
-* group.element[=].display = "Xamirturush zamburug‘lari"
+* group.element[=].display = "Xamirturush zamburug'lari"
 * group.element[=].target[+].code = #19132-8
 * group.element[=].target[=].display = "Yeast [Presence] in Stool by Light microscopy"
 * group.element[=].target[=].relationship = #equivalent
@@ -460,25 +460,25 @@ Description: "Maps local UZ lab research codes to LOINC codes for laboratory obs
 * group.element[=].target[=].relationship = #equivalent
 
 * group.element[+].code = #lab-71
-* group.element[=].display = "Najasning Gram bo‘yicha bo‘yalgan holda mikroskopiyasi"
+* group.element[=].display = "Najasning Gram bo'yicha bo'yalgan holda mikroskopiyasi"
 * group.element[=].target[+].code = #649-4
 * group.element[=].target[=].display = "Microscopic observation [Identifier] in Stool by Gram stain"
 * group.element[=].target[=].relationship = #equivalent
 
 * group.element[+].code = #lab-72
-* group.element[=].display = "Najasning trixrom bo‘yicha bo‘yalgan holda mikroskopiyasi"
+* group.element[=].display = "Najasning trixrom bo'yicha bo'yalgan holda mikroskopiyasi"
 * group.element[=].target[+].code = #6469-1
 * group.element[=].target[=].display = "Microscopic observation [Identifier] in Stool by Trichrome stain"
 * group.element[=].target[=].relationship = #equivalent
 
 * group.element[+].code = #lab-73
-* group.element[=].display = "Najasning qorong‘i maydon usuli bilan mikroskopiyasi"
+* group.element[=].display = "Najasning qorong'i maydon usuli bilan mikroskopiyasi"
 * group.element[=].target[+].code = #20884-3
 * group.element[=].target[=].display = "Microscopic observation [Identifier] in Stool by Dark field examination"
 * group.element[=].target[=].relationship = #equivalent
 
 * group.element[+].code = #lab-74
-* group.element[=].display = "Yorug‘lik mikroskopiyasi orqali najasda aniqlangan gijja tuxumlari va parazitlar"
+* group.element[=].display = "Yorug'lik mikroskopiyasi orqali najasda aniqlangan gijja tuxumlari va parazitlar"
 * group.element[=].target[+].code = #10704-5
 * group.element[=].target[=].display = "Ova and parasites identified in Stool by Light microscopy"
 * group.element[=].target[=].relationship = #equivalent
@@ -502,7 +502,7 @@ Description: "Maps local UZ lab research codes to LOINC codes for laboratory obs
 * group.element[=].target[=].relationship = #equivalent
 
 * group.element[+].code = #lab-77
-* group.element[=].display = "Siydikning tashqi ko‘rinishi"
+* group.element[=].display = "Siydikning tashqi ko'rinishi"
 * group.element[=].target[+].code = #5767-9
 * group.element[=].target[=].display = "Appearance of Urine"
 * group.element[=].target[=].relationship = #equivalent
@@ -556,7 +556,7 @@ Description: "Maps local UZ lab research codes to LOINC codes for laboratory obs
 * group.element[=].target[=].relationship = #equivalent
 
 * group.element[+].code = #lab-86
-* group.element[=].display = "Siydikda o‘t kislotalarining mavjudligi"
+* group.element[=].display = "Siydikda o't kislotalarining mavjudligi"
 * group.element[=].target[+].code = #14631-0
 * group.element[=].target[=].display = "Bile acids [Presence] in Urine"
 * group.element[=].target[=].relationship = #equivalent
@@ -574,7 +574,7 @@ Description: "Maps local UZ lab research codes to LOINC codes for laboratory obs
 * group.element[=].target[=].relationship = #equivalent
 
 * group.element[+].code = #lab-88
-* group.element[=].display = "Epiteliy: o‘tuvchi"
+* group.element[=].display = "Epiteliy: o'tuvchi"
 * group.element[=].target[+].code = #13654-9
 * group.element[=].target[=].display = "Epithelial cells.transitional [#/area] in Urine sediment by Microscopy HPF"
 * group.element[=].target[=].relationship = #equivalent
@@ -592,13 +592,13 @@ Description: "Maps local UZ lab research codes to LOINC codes for laboratory obs
 * group.element[=].target[=].relationship = #equivalent
 
 * group.element[+].code = #lab-91
-* group.element[=].display = "O‘zgargan eritrotsitlar"
+* group.element[=].display = "O'zgargan eritrotsitlar"
 * group.element[=].target[+].code = #57986-7
 * group.element[=].target[=].display = "Erythrocytes dysmorphic [#/area] in Urine sediment by Microscopy HPF"
 * group.element[=].target[=].relationship = #equivalent
 
 * group.element[+].code = #lab-92
-* group.element[=].display = "O‘zgarmagan eritrotsitlar"
+* group.element[=].display = "O'zgarmagan eritrotsitlar"
 * group.element[=].target[+].code = #20409-9
 * group.element[=].target[=].display = "Erythrocytes [#/area] in Urine sediment by Microscopy HPF"
 * group.element[=].target[=].relationship = #equivalent
@@ -712,7 +712,7 @@ Description: "Maps local UZ lab research codes to LOINC codes for laboratory obs
 * group.element[=].target[=].relationship = #equivalent
 
 * group.element[+].code = #lab-110
-* group.element[=].display = "To‘g‘ri (bog‘langan) bilirubin"
+* group.element[=].display = "To'g'ri (bog'langan) bilirubin"
 * group.element[=].target[+].code = #1968-7
 * group.element[=].target[=].display = "Bilirubin.direct [Mass/volume] in Serum or Plasma"
 * group.element[=].target[=].relationship = #equivalent
@@ -850,7 +850,7 @@ Description: "Maps local UZ lab research codes to LOINC codes for laboratory obs
 * group.element[=].target[=].relationship = #equivalent
 
 * group.element[+].code = #lab-132
-* group.element[=].display = "FSG (follikulni rag‘batlantiruvchi gormon)"
+* group.element[=].display = "FSG (follikulni rag'batlantiruvchi gormon)"
 * group.element[=].target[+].code = #15067-2
 * group.element[=].target[=].display = "Follicle stimulating hormone (FSH) [Units/volume] in Serum or Plasma"
 * group.element[=].target[=].relationship = #equivalent
@@ -988,7 +988,7 @@ Description: "Maps local UZ lab research codes to LOINC codes for laboratory obs
 * group.element[=].target[=].relationship = #equivalent
 
 * group.element[+].code = #lab-K
-* group.element[=].display = "Balg‘am tahlili"
+* group.element[=].display = "Balg'am tahlili"
 * group.element[=].target[+].code = #11525-3
 * group.element[=].target[=].display = "Sputum studies (panel) – Sputum"
 * group.element[=].target[=].relationship = #equivalent
@@ -1066,7 +1066,7 @@ Description: "Maps local UZ lab research codes to LOINC codes for laboratory obs
 * group.element[=].target[=].relationship = #equivalent
 
 * group.element[+].code = #lab-166
-* group.element[=].display = "Ohaklangan (toshga o‘xshash) zarrachalar"
+* group.element[=].display = "Ohaklangan (toshga o'xshash) zarrachalar"
 * group.element[=].target[+].code = #12253-1
 * group.element[=].target[=].display = "Calcified bodies [Presence] in Sputum by Light microscopy"
 * group.element[=].target[=].relationship = #equivalent
@@ -1084,7 +1084,7 @@ Description: "Maps local UZ lab research codes to LOINC codes for laboratory obs
 * group.element[=].target[=].relationship = #equivalent
 
 * group.element[+].code = #lab-169
-* group.element[=].display = "Zamburug‘lar"
+* group.element[=].display = "Zamburug'lar"
 * group.element[=].target[+].code = #12255-6
 * group.element[=].target[=].display = "Fungi [Presence] in Sputum by Light microscopy"
 * group.element[=].target[=].relationship = #equivalent
@@ -1210,7 +1210,7 @@ Description: "Maps local UZ lab research codes to LOINC codes for laboratory obs
 * group.element[=].target[=].relationship = #equivalent
 
 * group.element[+].code = #lab-M
-* group.element[=].display = "TORCH-infeksiyalar bo‘yicha tahlil"
+* group.element[=].display = "TORCH-infeksiyalar bo'yicha tahlil"
 * group.element[=].target[+].code = #50596-8
 * group.element[=].target[=].display = "TORCH IgG panel – Serum"
 * group.element[=].target[=].relationship = #equivalent
@@ -1312,7 +1312,7 @@ Description: "Maps local UZ lab research codes to LOINC codes for laboratory obs
 * group.element[=].target[=].relationship = #equivalent
 
 * group.element[+].code = #lab-204
-* group.element[=].display = "O‘zgargan hujayralar"
+* group.element[=].display = "O'zgargan hujayralar"
 * group.element[=].target[+].code = #19105-8
 * group.element[=].target[=].display = "Cells abnormal [Presence] in Cerebrospinal fluid by Cytology"
 * group.element[=].target[=].relationship = #equivalent
@@ -1348,7 +1348,7 @@ Description: "Maps local UZ lab research codes to LOINC codes for laboratory obs
 * group.element[=].target[=].relationship = #equivalent
 
 * group.element[+].code = #lab-210
-* group.element[=].display = "Zamburug‘lar"
+* group.element[=].display = "Zamburug'lar"
 * group.element[=].target[+].code = #19111-6
 * group.element[=].target[=].display = "Fungi [Presence] in Cerebrospinal fluid by Light microscopy"
 * group.element[=].target[=].relationship = #equivalent
