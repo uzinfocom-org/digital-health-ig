@@ -9,48 +9,65 @@ Description: "Uzbekistan Core profile for MedicationRequest, used to order medic
 * ^publisher = "Uzinfocom"
 
 * identifier MS
+* identifier.use MS
 * identifier.type MS
+* identifier.value MS
+
 * status MS
+* statusReason MS
+* statusChanged MS
 * intent MS
 * category MS
 * medication MS
+* subject MS
+* informationSource MS
+* extension contains trustee named trustee 0..1 MS
+* extension[trustee].url = "http://example.org/fhir/StructureDefinition/trustee"
+* extension[trustee].valueReference MS
+* encounter MS
+* authoredOn MS
+* requester MS
+* reason MS
+* effectiveDosePeriod MS
+* insurance MS
 
 * dosageInstruction MS
 * dosageInstruction.patientInstruction MS
-
 * dosageInstruction.timing MS
-// --- Start of dosageInstruction.timing.repeat ---
 * dosageInstruction.timing.repeat MS
-// --- Bounds (Длительность/Диапазон приема) ---
-// Определяем, что поддерживаются все три варианта
 * dosageInstruction.timing.repeat.bounds[x] MS
-// --- Count (Количество повторений) ---
 * dosageInstruction.timing.repeat.count MS
 * dosageInstruction.timing.repeat.countMax MS
-// --- Duration (Длительность одного приема) ---
 * dosageInstruction.timing.repeat.duration MS
 * dosageInstruction.timing.repeat.durationUnit MS
-// --- Frequency & Period (Частота) ---
 * dosageInstruction.timing.repeat.frequency MS
 * dosageInstruction.timing.repeat.period MS
-* dosageInstruction.timing.repeat.periodUnit MS // В вашей таблице это "periodUntil"
-// --- Timing Details (Время и дни) ---
+* dosageInstruction.timing.repeat.periodUnit MS
 * dosageInstruction.timing.repeat.timeOfDay MS
 * dosageInstruction.timing.repeat.dayOfWeek MS
 * dosageInstruction.timing.repeat.when MS
-// --- End of dosageInstruction.timing.repeat ---
 * dosageInstruction.timing.code MS
 
 * dosageInstruction.route MS
 * dosageInstruction.doseAndRate MS
-* dosageInstruction.doseAndRate.dose[x] MS
+* dosageInstruction.doseAndRate.doseQuantity MS
+* dosageInstruction.doseAndRate.doseQuantity.value MS
+* dosageInstruction.doseAndRate.doseQuantity.unit MS
 
+* dispenseRequest MS
 * dispenseRequest.quantity MS
 * dispenseRequest.validityPeriod MS
+* dispenseRequest.validityPeriod.start MS
+* dispenseRequest.validityPeriod.end MS
 * dispenseRequest.dispenser MS
+
 * note MS
 
 
+* identifier.use from IdentifierUseVS (required)
+* identifier.type from IdentifierTypeVS (required)
+* statusReason from MedicationRequestStatusReasonVS (required)
+* intent from MedicationRequestIntentVS (required)
 * identifier.use from IdentifierUseVS (required)
 * identifier.type from IdentifierTypeVS (required)
 
@@ -60,71 +77,50 @@ InstanceOf: UZCoreMedicationRequest
 Description: "Пример с одной инструкцией"
 Usage: #example
 
-// --- Идентификатор ---
 * identifier
-  * use = $identifier-use#official
-  * type = $identifier-type#PLAC "Placer Identifier"
-  * system = "https://hospital.uz/prescription-ids"
+  * use = #official
+  * type = http://terminology.hl7.org/CodeSystem/v2-0203#PLAC "Placer Identifier"
   * value = "12345678"
 
-// --- Статус и Категория ---
 * status = #active
 * intent = #order
-* category = $medicationrequest-admin-location#outpatient "Outpatient"
-// --- Лекарство ---
+* category = http://terminology.hl7.org/CodeSystem/medicationrequest-category#outpatient
 * medication.concept.text = "авитриптан"
-// --- Пациент ---
-* subject = Reference(example-david)
-// --- Автор ---
-* authoredOn = "2026-01-27T09:00:00+05:00"
+
+// Extension: trustee
+* extension[trustee].url = "http://dmed.uz/"
+* extension[trustee].valueReference.display = "Ruslan Isakhov (Father)"
+
+* authoredOn = "2026-03-02T06:44:12+05:00"
+* reason.concept.text = "headache"
+* effectiveDosePeriod.start = "2026-03-02" 
+// Обозначено как 3 month, для примера:
+* effectiveDosePeriod.end = "2026-06-02"
 
 * dosageInstruction[0]
-  * text = "Принимать 2 раза в день во время еды"
-  
-  * timing.repeat
-    // --- 1. Bounds (Границы времени) ---
-    // В FHIR можно выбрать ТОЛЬКО ОДИН вариант. 
-    // Я выбрал Period, так как в примере указаны конкретные даты.
-    
-    // ВАРИАНТ A (Выбран): boundsPeriod
-    * boundsPeriod.start = "2026-01-27"
-    * boundsPeriod.end = "2026-02-01"
-    // ВАРИАНТ B (Из таблицы: 5d): 
-    // * boundsDuration = 5 'd'
-    // ВАРИАНТ C (Из таблицы: 5d-7d):
-    // * boundsRange.low = 5 'd'
-    // * boundsRange.high = 7 'd'
-
-    // --- 2. Count (Количество) ---
-    * count = 5
-    * countMax = 5 // "no more than 5 times"
-    // --- 3. Duration (Длительность приема) ---
-    // Из таблицы: "6 месяцев". (Хотя для таблетки это странно, но ставим как в примере)
-    * duration = 6
-    * durationUnit = $ucum#mo 
-    // --- 4. Frequency (Частота) ---
-    * frequency = 2
-    * period = 1
-    * periodUnit = $ucum#d
-    // --- 5. Time and Day (Время и День) ---
-    * timeOfDay[0] = "08:00:00"
-    * timeOfDay[1] = "16:00:00"
-    * dayOfWeek[0] = $days-of-week#mon
-
-  // --- Code (Код режима) ---
-  * timing.code = $v3-GTSAbbreviation#BID 
-  // --- Route (Путь введения) ---
+  * timing
+    * repeat
+      * boundsPeriod
+        * start = "2026-01-27"
+        * end = "2026-02-01" // 5d из таблицы
+      * count = 5
+      * countMax = 5
+      * duration = 6
+      * durationUnit = #mo
+      * frequency = 2
+      * period = 1
+      * periodUnit = #d
+      * timeOfDay[0] = "08:00:00"
+      * timeOfDay[1] = "16:00:00"
+      * dayOfWeek[0] = #mon
+    * code.text = "Two times a day at institution specified time"
   * route.text = "External"
-  // --- Dose (Дозировка) ---
-  * doseAndRate.doseQuantity
+  * doseAndRate[0].doseQuantity
     * value = 1
     * unit = "шт"
 
-// --- Запрос на выдачу (Dispense Request) ---
 * dispenseRequest
-  * quantity
-    * value = 10
-    * unit = "шт"
+  * quantity.value = 10
   * validityPeriod
     * start = "2026-01-27"
     * end = "2026-02-27"
