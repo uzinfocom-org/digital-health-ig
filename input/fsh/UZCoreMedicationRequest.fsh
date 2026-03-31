@@ -21,7 +21,7 @@ Description: "Uzbekistan Core profile for MedicationRequest, used to order medic
 * medication MS
 * subject MS
 * informationSource MS
-* extension contains trustee named trustee 0..1 MS
+* extension contains trustee named trustee 0..* MS
 * extension[trustee].url = "http://example.org/fhir/StructureDefinition/trustee"
 * extension[trustee].valueReference MS
 * encounter MS
