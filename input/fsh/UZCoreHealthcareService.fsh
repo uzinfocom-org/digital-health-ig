@@ -27,7 +27,7 @@ Description: "Uzbekistan Core HealthcareService profile, used to define healthca
 
 * category.coding[labCategory]
   * system 1..1 MS
-  * system = https://terminology.dhp.uz/fhir/core/CodeSystem/lab-categories-cs
+  * system = Canonical(LabCategoriesCS)
   * code 1..1 MS
   * code from lab-service-categories-vs (required)
 
@@ -49,7 +49,7 @@ Description: "Uzbekistan Core HealthcareService profile, used to define healthca
 
 * type.coding[labService]
   * system 1..1 MS
-  * system = https://terminology.dhp.uz/fhir/core/CodeSystem/observation-lab-research-codes-cs //This link is temporary. After merging the ObservationLabCodes branch, it will be updated.
+  * system = Canonical(ObservationLabResearchCodesCS) //This link is temporary. After merging the ObservationLabCodes branch, it will be updated.
   * code 1..1 MS
   * code from observation-codes-vs (required)
 
