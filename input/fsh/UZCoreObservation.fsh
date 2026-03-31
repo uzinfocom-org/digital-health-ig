@@ -2,7 +2,7 @@ Profile: UZCoreObservation
 Parent: Observation
 Id: uz-core-observation
 Title: "UZ Core Observation"
-Description: "Uzbekistan Core Observation profile, used to represent clinical and laboratory observations"
+Description: "Uzbekistan Core Observation profile, used to represent clinical and laboratory  observations"
 * ^experimental = true
 * ^status = #active
 //rules
