@@ -201,12 +201,12 @@ Usage: #example
 
 * identifier
   * use = #official
-  * type = #PLAC "Placer Identifier"
+  * type = $identifier-type#PLAC "Placer Identifier"
   * value = "12345678"
 
 * status = #active
 * intent = #order
-* category = #outpatient
+* category = $medicationrequest-admin-location#outpatient
 * medication.concept.text = "авитриптан"
 * subject = Reference(example-salim)
 
