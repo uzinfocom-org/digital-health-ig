@@ -40,7 +40,7 @@ Description: "UZ Core Composition profile, which defines the core elements of a 
 
 Instance: example-medical-composition
 InstanceOf: UZCoreComposition
-Description: "Example of a medical record composition"
+Description: "Example of a medical record composition "
 Usage: #example
 * language = #uz
 * status = #final
