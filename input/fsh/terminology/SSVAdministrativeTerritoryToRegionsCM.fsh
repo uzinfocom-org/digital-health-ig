@@ -10,7 +10,8 @@ Description: "Maps SSV administrative territory codes to UZ Core StateCS (for re
 * publisher = "Uzinfocom"
 
 // Group 1: Region-level mapping to StateCS
-* group[+].target = Canonical(StateCS)
+* group[+].source = Canonical(SSVAdministrativeTerritoryCS)
+* group[=].target = Canonical(StateCS)
 
 * group[=].element[+].code = #UZ-AN
 * group[=].element[=].display = "Andijon viloyati"
@@ -97,7 +98,8 @@ Description: "Maps SSV administrative territory codes to UZ Core StateCS (for re
 * group[=].element[=].target[=].relationship = #equivalent
 
 // Group 2: District-level mapping to RegionsCS
-* group[+].target = Canonical(RegionsCS)
+* group[+].source = Canonical(SSVAdministrativeTerritoryCS)
+* group[=].target = Canonical(RegionsCS)
 
 * group[=].element[+].code = #AN-202
 * group[=].element[=].display = "Oltinko‘l tumani"

@@ -1,10 +1,10 @@
-Instance: mis2-level-type-to-subordination-group-cm
+Instance: ssv-level-type-to-subordination-group-cm
 InstanceOf: ConceptMap
 Usage: #definition
-Title: "MIS2 Level Type to Subordination Group"
-Description: "Maps MIS2 organization level type codes to UZ Core Organizational Subordination Group codes. MIS2 classifies healthcare facilities into administrative levels, while OrganizationalSubordinationGroupCS groups institutions by their administrative subordination (republican, territorial, district/city, other ministries, private). The MIS2 level types Shahar (Urban), Tuman (Area), and Mahalla (District) all fall under the combined district-and-city administration category in the target."
-* name = "MIS2LevelTypeToSubordinationGroupCM"
-* url = "https://terminology.dhp.uz/fhir/core/ConceptMap/mis2-level-type-to-subordination-group-cm"
+Title: "SSV Level Type to Subordination Group"
+Description: "Maps SSV organization level type codes to UZ Core Organizational Subordination Group codes. SSV classifies healthcare facilities into administrative levels, while OrganizationalSubordinationGroupCS groups institutions by their administrative subordination (republican, territorial, district/city, other ministries, private). The SSV level types Shahar (Urban), Tuman (Area), and Mahalla (District) all fall under the combined district-and-city administration category in the target."
+* name = "SSVLevelTypeToSubordinationGroupCM"
+* url = "https://terminology.dhp.uz/fhir/core/ConceptMap/ssv-level-type-to-subordination-group-cm"
 * status = #draft
 * experimental = false
 * publisher = "Uzinfocom"
