@@ -1,0 +1,38 @@
+LocalCode	Equivalence	SnomedCtCode	UZ	RU	EN					
+aller-0004-00001	equivalent	76067001	Аksirish	Чихание	Sneezing					
+aller-0004-00002	equivalent	64531003	Burun oqishi	Насморк	Nasal discharge					
+aller-0004-00003	" source-is-broader-than-target	"	418689008	Burun qichishishi	Зудящий нос	Itchy nose					
+aller-0004-00004	equivalent	1332435005	Burunda polip borligi	Наличие полипов в носу	The presence of polyps in the nose(Nasal polyposis)					
+aller-0004-00005	equivalent	75803007	Burundan toza rangsiz suyuqlik kelishi	Прозрачные бесцветные выделения из носа	Clear, colorless discharge from the nose					
+aller-0004-00006	equivalent	72863001	Xurrak otish	Храп	Snoring					
+aller-0004-00007	equivalent	44169009	Xid bilishning pasayishi	Снижение обоняния	Loss of sense of smell					
+aller-0004-00008	equivalent	95668009	Yuz, soxasida ogʼriq	Боль в лице	Pain in face					
+aller-0005-00001	equivalent	162397003	Tomoqda ogʼriq, achishish	Боль в горле, болезненность-	Sore throat, soreness-(Paint in throat)					
+aller-0005-00002	" source-is-broader-than-target	"	2048000	Tomoq qichishish	Зуд в горле	Itching in the tonsil					
+aller-0005-00003	equivalent	1137376007	Og'iz bo'shlig'i yumshoq to'qimalarining qichishi	Зуд мягких тканей полости рта	Pruritus of oral soft tissues					
+aller-0005-00004	equivalent	249489001	Ovoz boʼgʼilishi	Удушение	Choking					
+aller-0005-00005	equivalent	263731006	Yoʼtal	Кашель	Coughing					
+aller-0005-00006	" source-is-broader-than-target	"	64531003	Burindan tomogʼiga suyuqlik Oqishi	Выделения из носа в горло	Nasal discharge into the throat					
+aller-0005-00007	equivalent	102618009	Tomoq qurib ketishi	Сухое горло	Dry throat					
+aller-0005-00008	equivalent	102617004	Tomoqning tiqilishi	Ощущение заложенности горла	Congestion of throat					
+aller-0005-00009	equivalent	421581006	Tomoqning shishishi	"	Отёк в области глотки"	Sweelling of throat,Pharyngeal swelling					
+aller-0006-00001	equivalent	126662008	Tomoq qizarishi	Покраснение горла	Redness of throat					
+aller-0006-00002	equivalent	248573009	Shovqinli nafas ( xirillashlar )	Шумное дыхание (свистящее дыхание)	Noisy breathing					
+aller-0006-00003	equivalent	267036007	Nafas siqishi	Одышка	Shortness of breath(Dyspnea)					
+aller-0006-00004	equivalent	60845006	Xavo yetishmasligi	Недостаток воздуха	Shortness of breath					
+aller-0006-00006	equivalent	23924001	Koʼkrak qafasida siqilish -	Стеснение в груди	Chest tightness					
+aller-0007-00001	equivalent	45710003	Balgʼam ajralishi	Отхаркивание	Sputum(Expectoration)					
+aller-0007-00002	equivalent	699392007	Quloq qichishi	Зуд в ушах	Itching of ear					
+aller-0007-00003	equivalent	15188001	Eshitishning pasayishi	Потеря слуха	Hearing loss					
+aller-0007-00004	equivalent	60862001	Quloq shangillashi	Звон в ушах	Ringing in ears					
+aller-0007-00005	equivalent	103281005	Quloq bitib qolishi	Закупорка ушей	 Sensation of blocked ear 					
+aller-0008-00001	equivalent	65668001	Kulodqan suyuqlik kelishi	Жидкость, выделяющаяся из уха	Otterhea, discharge of ear					
+aller-0008-00002	equivalent	74776002	Koʼzda qichishish	Зуд в глазах	Itchy eyes					
+aller-0008-00003	equivalent	703630003	Koʼz qizarishi	Покраснение глаз	Redness of the eyes					
+aller-0008-00004	equivalent	49563000	Koʼz atrofi shishi	Отек вокруг глаз 	Edema of eyelid					
+aller-0008-00005	equivalent	162290004	Koʼzning tez qurib qolishi	Быстрое высыхание глаз	Rapid drying of the eyes					
+aller-0009-00001	equivalent	193982009	Koʼz yoshlanishi	Разрывая	Tearing					
+aller-0009-00002	equivalent	271807003	Terisida toshmalar toshishi	Сыпь на коже	Skin rash					
+aller-0009-00003	equivalent	64144002	Terisida qichishish	Зуд на коже	Itchy skin					
+aller-0009-00004	equivalent	52475004	Terining qurib ketishi	Сухая кожа	Dry skin					
+aller-0009-00005	equivalent	443339000	Barmorlar kaft soxasida shish	Отек на ладони	Edema of palm of hand					

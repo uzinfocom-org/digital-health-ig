@@ -1,0 +1,13 @@
+Resource	Include			Exclude		
+	Name	Expession	Comments	Name	Expession	Comments
+AllergyIntolarence	code	AllergyIntolerance.code	Основной аллерген	extension(abatement)		"	Используется для дополнительных случаев, не рекомендуется для поиска"
+	type	AllergyIntolerance.type	Тип реакции	onsetString		Альтернативные варианты onset[x], можно оставить только dateTime
+	clinical-status	AllergyIntolerance.clinicalStatus	Текущее состояние	onsetAge		Альтернативные варианты onset[x], можно оставить только dateTime
+	verification-status	AllergyIntolerance.verificationStatus	Подтверждённость			
+	category	AllergyIntolerance.category	Категория аллергена(пища, медикаменты)			
+	patient	AllergyIntolerance.patient	Пациет			
+	encounter	AllergyIntolerance.encounter	Связанная встреча			
+	onset-dateTime	AllergyIntolerance.onset.ofType(dateTime)	Дата начала аллергии			
+	reaction-manifestation	AllergyIntolerance.reaction.manifestation	Вещество , вызвавшее реакцию			
+	reaction-substance	AllergyIntolerance.reaction.substance	Симптомы			
+	reaction-severity	AllergyIntolerance.reaction.severity	Степень тяжести			

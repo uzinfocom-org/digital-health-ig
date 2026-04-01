@@ -1,7 +1,7 @@
 CodeSystem: OrganizationalServiceGroupCS
 Id: organizational-service-group-cs
 Title: "Organizational service group"
-Description: "Defines the organizational and service group of a medical institution"
+Description: "Classifies healthcare organizations by their service delivery capabilities (e.g., outpatient only, inpatient only, outpatient + inpatient, day hospital). Defined by the Ministry of Health."
 * insert OriginalCodeSystemDraft(organizational-service-group-cs)
 * #III_100 "Poliklinika bo'limi va statsionar bo'limi mavjud"
   * ^designation[0].language = #ru

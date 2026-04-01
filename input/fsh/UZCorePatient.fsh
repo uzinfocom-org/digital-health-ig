@@ -15,12 +15,13 @@ Description: "Uzbekistan Core Patient profile, used to represent patients admini
 * identifier ^slicing.discriminator.type = #value
 * identifier ^slicing.discriminator.path = "system"
 * identifier ^slicing.rules = #open
-* identifier ^slicing.description = "Ways a practitioner can be identified"
+* identifier ^slicing.description = "Ways a patient can be identified"
 * identifier ^slicing.ordered = false
 * identifier contains nationalId 0..1 MS and
     passportLocal 0..1 MS and
     passportInternational 0..1 MS and
     passportForeign 0..1 MS and
+    pensionNumber 0..1 MS and
     birthCertificate 0..1 MS and
     driversLicense 0..1 MS and
     driversLicenseForeign 0..1 MS and
@@ -36,7 +37,7 @@ Description: "Uzbekistan Core Patient profile, used to represent patients admini
   * system 1..1 MS
   * system = $passport-local
   * type 1..1 MS
-  * type = $identifier-type#PPN "Passport number"
+  * type = $identifier-type#PPN
   * use = #official
   * value 1..1 MS
 
@@ -44,7 +45,7 @@ Description: "Uzbekistan Core Patient profile, used to represent patients admini
   * system 1..1 MS
   * system = $passport-international
   * type 1..1 MS
-  * type = $identifier-type#PPN "Passport number"
+  * type = $identifier-type#PPN
   * use = #official
   * value 1..1 MS
 
@@ -54,15 +55,16 @@ Description: "Uzbekistan Core Patient profile, used to represent patients admini
   * system 1..1 MS
   * system from ForeignPassportSystemVS (required)
   * type 1..1 MS
-  * type = $identifier-type#PPN "Passport number"
+  * type = $identifier-type#PPN
   * use = #official
   * value 1..1 MS
 
 * identifier[nationalId]
+  * ^short = "PINFL of the patient"
   * system 1..1 MS
   * system = $nationaluniqueID
   * type 1..1 MS
-  * type = $identifier-type#NI "National unique individual identifier"
+  * type = $identifier-type#NI
   * use = #official
   * value 1..1 MS
 
@@ -70,7 +72,7 @@ Description: "Uzbekistan Core Patient profile, used to represent patients admini
   * system 1..1 MS
   * system = $birthcertificate
   * type 1..1 MS
-  * type = $identifier-type#BCT "Birth Certificate"
+  * type = $identifier-type#BCT
   * use = #official
   * value 1..1 MS
 
@@ -78,7 +80,7 @@ Description: "Uzbekistan Core Patient profile, used to represent patients admini
   * system 1..1 MS
   * system = $driverslicense
   * type 1..1 MS
-  * type = $identifier-type#DL "Driver's license number"
+  * type = $identifier-type#DL
   * use = #official
   * value 1..1 MS
 
@@ -88,7 +90,7 @@ Description: "Uzbekistan Core Patient profile, used to represent patients admini
   * system 1..1 MS
   * system from ForeignDriversLicenseSystemVS (required)
   * type 1..1 MS
-  * type = $identifier-type#DL "Driver's license number"
+  * type = $identifier-type#DL
   * use = #official
   * value 1..1 MS
 
@@ -96,7 +98,7 @@ Description: "Uzbekistan Core Patient profile, used to represent patients admini
   * system 1..1 MS
   * system = $diplomaticpassport
   * type 1..1 MS
-  * type = $identifier-type#DP "Diplomatic Passport"
+  * type = $identifier-type#DP
   * use = #official
   * value 1..1 MS
 
@@ -104,7 +106,7 @@ Description: "Uzbekistan Core Patient profile, used to represent patients admini
   * system 1..1 MS
   * system = $healthcard
   * type 1..1 MS
-  * type = $identifier-type#HC "Health card number"
+  * type = $identifier-type#HC
   * use = #official
   * value 1..1 MS
 
@@ -112,7 +114,7 @@ Description: "Uzbekistan Core Patient profile, used to represent patients admini
   * system 1..1 MS
   * system = $militaryID
   * type 1..1 MS
-  * type = $identifier-type#MI "Military ID number"
+  * type = $identifier-type#MI
   * use = #official
   * value 1..1 MS
 
@@ -120,34 +122,45 @@ Description: "Uzbekistan Core Patient profile, used to represent patients admini
   * system 1..1 MS
   * system = $penitentiaryinstitution
   * type 1..1 MS
-  * type = $identifier-type#PCN "Penitentiary/correctional institution Number"
+  * type = $identifier-type#PCN
   * use = #official
   * value 1..1 MS
 
 * identifier[medicalRecordTemp]
-  * ^short = "Temporary medical record number assigned by organization"
-  * ^definition = "Organization-specific temporary medical record identifier. Each organization uses its tax ID (Soliq) to create a unique namespace. System URI pattern: https://dhp.uz/fhir/core/sid/pid/uz/prn/{soliq-id}/mrt where {soliq-id} is replaced with the organization's tax identification number."
+  * ^short = "Temporary medical record number for unidentified patients (preferred)"
+  * ^definition = "Organization-specific temporary medical record identifier for unidentified patients (e.g., unconscious patients who cannot provide identification). Use this identifier when the receiving healthcare organization is known. Each organization uses its tax ID (Soliq) to create a unique namespace. System URI pattern: https://dhp.uz/fhir/core/sid/pid/uz/prn/{soliq-id}/mrt where {soliq-id} is replaced with the organization's tax identification number. This is the preferred approach over unknownPatient because it provides traceability to the issuing organization."
   * system 1..1 MS
   * system = $temp-medical-record-pattern
   * type 1..1 MS
-  * type = $identifier-type#MRT "Temporary Medical Record Number"
+  * type = $identifier-type#MRT
   * use = #temp
   * value 1..1 MS
 
 * identifier[unknownPatient]
-  * ^short = "Unknown patient code (fallback when organization ID unavailable)"
-  * ^definition = "Identifier for unknown patients when identity cannot be immediately established and the organization's tax ID is not available. This is a fallback; prefer using organization-scoped temporary medical record numbers when possible."
+  * ^short = "Unknown patient code (fallback, prefer medicalRecordTemp)"
+  * ^definition = "Identifier for unidentified patients (e.g., unconscious patients who cannot provide identification) when the receiving healthcare organization's tax ID is not available. This is a fallback; prefer using organization-scoped temporary medical record numbers (medicalRecordTemp) whenever the organization is known, as they provide better traceability."
   * system 1..1 MS
   * system = $unknownpatient
   * type 1..1 MS
-  * type = $identifier-type#MR "Medical record number"
+  * type = $identifier-type#MR
   * use = #temp
   * value 1..1 MS
 
+* identifier[pensionNumber]
+  * ^short = "Used to identify a patient's pension status and pension type."
+  * ^definition = "Naming system defining the pension number identifier issued by the Ministry of Finance of the Republic of Uzbekistan (Pension Fund), as referenced by the national identifier system and integrated with the e-government platform (iskm.egov.uz/minfin/services/pension/pinnp). The pension number associated with different pension types, including old-age pension, disability pension, survivor's pension, and other pension categories."
+  * system 1..1 MS
+  * system = $pension-number
+  * type 1..1 MS
+  * type = $identifier-type#PEN
+  * use = #official
+  * value 1..1 MS
+
 * extension contains patient-nationality named nationality 0..1 MS and
-    patient-citizenship named citizenship 0..1 MS
+    patient-citizenship named citizenship 0..1 MS and
+    ManagingOrganizationAttachment named managingOrganizationAttachment 0..1 MS
 * extension[nationality].extension[code].valueCodeableConcept from NationalityVS (required)
-* extension[citizenship].extension[code].valueCodeableConcept from CountriesDigitalMVDVS (required)
+* extension[citizenship].extension[code].valueCodeableConcept from ISO3166_2 (required)
 * gender MS
   * extension contains GenderOtherUZ named gender-other 0..1 MS
 * obeys uzcore-gender-other-2
@@ -208,6 +221,7 @@ Usage: #example
   * gender = #male
 * maritalStatus = $v3-MaritalStatus#W "Вдовец, вдова"
 * extension[nationality].extension[code].valueCodeableConcept = NationalityCS#23 "Азербайджанцы"
+* extension[managingOrganizationAttachment].valueDate = "2024-03-15"
 
 Instance: example-david
 InstanceOf: UZCorePatient

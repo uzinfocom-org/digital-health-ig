@@ -1,8 +1,8 @@
 CodeSystem: TimingEventCS
-Id: v3-TimingEvent-cs
+Id: v3-timing-event-cs
 Title: "v3 Timing Event - UZ/RU Translations"
 Description: "Translations for v3 Timing codes (Meals, Sleep, etc.)"
-* insert SupplementCodeSystemDraft(v3-TimingEvent-cs, $v3-TimingEvent, 2.1.0)
+* insert SupplementCodeSystemDraft($v3-timing-event-cs, $v3-timing-event, 2.1.0)
 
 * #HS "HS"
   * ^designation[0].language = #uz

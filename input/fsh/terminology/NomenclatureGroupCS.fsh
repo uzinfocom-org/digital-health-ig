@@ -1,7 +1,7 @@
 CodeSystem: NomenclatureGroupCS
 Id: nomenclature-group-cs
 Title: "Nomenclature group"
-Description: "Defines a nomenclature group (grouping of institutions)"
+Description: "High-level classification of healthcare institutions by functional category (e.g., hospitals, outpatient clinics, emergency services). This is a broad grouping defined by the Ministry of Health; for detailed institution types, see OrganizationalStructureCS."
 * insert OriginalCodeSystemDraft(nomenclature-group-cs)
 * #II_100 "Shifoxona muassasalari"
   * ^designation[0].language = #ru

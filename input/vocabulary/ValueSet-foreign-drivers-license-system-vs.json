@@ -1,0 +1,41 @@
+{
+  "resourceType": "ValueSet",
+  "status": "draft",
+  "name": "ForeignDriversLicenseSystemVS",
+  "id": "foreign-drivers-license-system-vs",
+  "title": "Foreign Driver's License System Value Set",
+  "description": "Allowed system URIs for foreign (non-Uzbekistan) driver's license identifiers. Used in the [UZ Core Patient](StructureDefinition-uz-core-patient.html) profile for the driversLicenseForeign slice.",
+  "url": "https://dhp.uz/fhir/core/ValueSet/foreign-drivers-license-system-vs",
+  "experimental": true,
+  "compose": {
+    "include": [
+      {
+        "system": "https://dhp.uz/fhir/core/CodeSystem/identifier-domain-cs",
+        "filter": [
+          {
+            "property": "idtype",
+            "op": "=",
+            "value": "http://terminology.hl7.org/CodeSystem/v2-0203#DL"
+          },
+          {
+            "property": "notSelectable",
+            "op": "=",
+            "value": "false"
+          }
+        ]
+      }
+    ],
+    "exclude": [
+      {
+        "system": "https://dhp.uz/fhir/core/CodeSystem/identifier-domain-cs",
+        "filter": [
+          {
+            "property": "country",
+            "op": "=",
+            "value": "urn:iso:std:iso:3166#UZ"
+          }
+        ]
+      }
+    ]
+  }
+}

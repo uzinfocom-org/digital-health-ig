@@ -22,6 +22,7 @@ Description: "Extension to differentiate the diagnosis type, which is different 
 * value[x] only CodeableConcept
 * value[x] from DiagnosisTypeVS (required)
 
+
 Invariant: uzcore-gender-other-1
 Description: "The differentiation of the gender indication 'other' may only be filled if the gender 'other' is specified (for use in an extension)"
 * severity = #error
@@ -31,3 +32,30 @@ Invariant: uzcore-gender-other-2
 Description: "gender 'other' implies differentiation of the gender indication 'other' (for use in a profile)"
 * severity = #error
 * expression = "gender.exists() and gender = 'other' implies gender.extension('https://dhp.uz/fhir/core/StructureDefinition/gender-other').exists()"
+
+Extension: CoverageArea
+Id: coverage-area
+Title: "Coverage area"
+Description: "Administrative territory that this organization provides services to. Use the [SSVAdministrativeTerritoryToRegionsCM](ConceptMap-ssv-administrative-territory-to-regions-cm.html) ConceptMap to translate SSV territory codes to the required StateCS codes."
+Context: Organization
+* ^experimental = true
+* value[x] 1..
+* value[x] only CodeableConcept
+* value[x] from StateVS (required)
+
+Extension: ManagingOrganizationAttachment
+Id: managing-organization-attachment
+Title: "Managing organization attachment date"
+Description: "Date when the patient was attached to the managing organization. In Uzbekistan, patients can only change their managing organization once a year."
+Context: Patient
+* ^context.type = #element
+* ^context.expression = "Patient"
+* ^experimental = true
+* value[x] 1..
+* value[x] only date
+
+Extension: Trustee
+Id: trustee
+Title: "Trustee Extension"
+Description: "Extension to specify a trustee (RelatedPerson or PractitionerRole)"
+* value[x] only Reference(RelatedPerson or PractitionerRole)

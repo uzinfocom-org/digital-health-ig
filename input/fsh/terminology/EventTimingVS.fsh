@@ -10,4 +10,4 @@ Description: "A value set defining when an event occurs (Morning, Evening, Befor
 
 // Включаем коды из ОБЕИХ систем
 * include codes from system $event-timing
-* include codes from system $v3-TimingEvent
+* include codes from system $v3-timing-event

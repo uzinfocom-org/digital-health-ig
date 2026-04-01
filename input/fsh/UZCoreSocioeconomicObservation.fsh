@@ -128,7 +128,7 @@ Usage: #example
 * status = #final
 * code.coding[socioeconomicType] = $sct#82996008 "Social status"
 * subject = Reference(example-salim)
-* valueCodeableConcept = social-status-cs#regis0010.00003 "Ishlash"
+* valueCodeableConcept = social-status-cs#regis0010.00003 "Ishlaydi"
 * effectiveDateTime = "2025-06-11"
 
 Instance: example-david-social-status
@@ -139,5 +139,5 @@ Usage: #example
 * status = #final
 * code.coding[socioeconomicType] = $sct#82996008 "Social status"
 * subject = Reference(example-david)
-* valueCodeableConcept = social-status-cs#regis0010.00003 "Ishlash"
+* valueCodeableConcept = social-status-cs#regis0010.00003 "Ishlaydi"
 * effectiveDateTime = "2025-06-11"

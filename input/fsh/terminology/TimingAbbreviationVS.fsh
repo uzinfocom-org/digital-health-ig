@@ -9,5 +9,5 @@ Description: "A value set defining the days of the week (mon, tue, wed, etc.) wi
 * ^extension[1].valueCanonical = Canonical(GTSAbbreviationCS)
 
 // Включаем все коды из стандартной системы
-* include codes from system $v3-GTSAbbreviation
+* include codes from system $v3-gtc-abbreviation
 * include codes from system $timing-abbreviation
