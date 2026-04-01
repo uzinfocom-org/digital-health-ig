@@ -47,7 +47,7 @@ jobs:
       - name: Check QA report
         run: |
           # Configuration
-          MAX_ALLOWED_ERRORS=6
+          MAX_ALLOWED_ERRORS=2
           MAX_ALLOWED_WARNINGS=0
 
           if [ ! -f "output/qa.json" ]; then
