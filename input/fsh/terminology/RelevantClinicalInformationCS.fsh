@@ -2,7 +2,7 @@ CodeSystem: RelevantClinicalInformationCS
 Id: relevant-clinical-information-cs
 Title: "Specimen status translations"
 Description: "Specimen status, supplemented with translations in Uzbek and Russian"
-* insert SupplementCodeSystemDraft(relevant-clinical-information-cs, $v2-0916, 5.0.0)
+* insert SupplementCodeSystemDraft(relevant-clinical-information-cs, $v2-0916, 3.0.0)
 
 * #F
   * ^designation[0].language = #ru

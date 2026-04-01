@@ -4,7 +4,7 @@ Title: "Specimen status translations"
 Description: "Specimen status, supplemented with translations in Uzbek and Russian"
 * insert SupplementCodeSystemDraft(specimen-status-cs, $specimen-status, 5.0.0)
 
-* #availabe
+* #available
   * ^designation[0].language = #ru
   * ^designation[=].value = "Зарегистрирован"
   * ^designation[+].language = #uz

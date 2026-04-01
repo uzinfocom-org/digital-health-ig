@@ -2,7 +2,7 @@ CodeSystem: SpecimenTypesCS
 Id: specimen-types-cs
 Title: "Specimen types translations"
 Description: "Specimen types, supplemented with translations in Uzbek and Russian"
-* insert SupplementCodeSystemDraft(specimen-types-cs, $v2-0487, 2.3.0)
+* insert SupplementCodeSystemDraft(specimen-types-cs, $v2-0487, 3.0.0)
 
 * #ABS  
   * ^designation[0].language = #ru
@@ -447,7 +447,7 @@ Description: "Specimen types, supplemented with translations in Uzbek and Russia
   * ^designation[+].language = #uz
   * ^designation[=].value = "Drenaj, Penroz"
 
-* #DUF
+* #DUFL
   * ^designation[0].language = #ru
   * ^designation[=].value = "Дуоденальная жидкость"
   * ^designation[+].language = #uz
@@ -663,7 +663,7 @@ Description: "Specimen types, supplemented with translations in Uzbek and Russia
   * ^designation[+].language = #uz
   * ^designation[=].value = "Oshqozon aspirati"
 
-* #GASN
+* #GASAN
   * ^designation[0].language = #ru
   * ^designation[=].value = "Антрум желудка"
   * ^designation[+].language = #uz
@@ -758,12 +758,6 @@ Description: "Specimen types, supplemented with translations in Uzbek and Russia
   * ^designation[=].value = "Укус человека"
   * ^designation[+].language = #uz
   * ^designation[=].value = "Inson tishlashi"
-
-* #HLUD
-  * ^designation[0].language = #ru
-  * ^designation[=].value = "Кровь (аутопсия)"
-  * ^designation[+].language = #uz
-  * ^designation[=].value = "Autopsiya qoni"
 
 * #HEMAQ
   * ^designation[0].language = #ru
@@ -1161,17 +1155,11 @@ Description: "Specimen types, supplemented with translations in Uzbek and Russia
   * ^designation[+].language = #uz
   * ^designation[=].value = "Perikardial suyuqlik"
 
-* #PDST
-  * ^designation[0].language = #ru
-  * ^designation[=].value = "Место перитонеального диализа"
-  * ^designation[+].language = #uz
-  * ^designation[=].value = "Peritoneal dializ joyi"
-
 * #PDTS
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Туннель перитонеального диализа"
+  * ^designation[=].value = "Туннель/Область перитонеального диализа , "
   * ^designation[+].language = #uz
-  * ^designation[=].value = "Peritoneal dializ tunneli joyi"
+  * ^designation[=].value = "Peritoneal dializ tunneli / Joyi"
 
 * #PELVA
   * ^designation[0].language = #ru
@@ -1486,12 +1474,6 @@ Description: "Specimen types, supplemented with translations in Uzbek and Russia
   * ^designation[=].value = "Spermatozoidlar"
 
 * #SPRP
-  * ^designation[0].language = #ru
-  * ^designation[=].value = "Кончик катетера, надлобковый"
-  * ^designation[+].language = #uz
-  * ^designation[=].value = "Suprapubik kateter uchi"
-
-* #SPRBB
   * ^designation[0].language = #ru
   * ^designation[=].value = "Кончик катетера, надлобковый"
   * ^designation[+].language = #uz
