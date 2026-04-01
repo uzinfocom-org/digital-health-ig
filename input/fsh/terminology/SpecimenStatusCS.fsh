@@ -1,7 +1,7 @@
 CodeSystem: SpecimenStatusCS
 Id: specimen-status-cs
 Title: "Specimen status translations"
-Description: "Specimen status, supplemented with translations in Uzbek and Russian"
+Description: "Specimen status, supplemented with translations in Uzbek and Russian "
 * insert SupplementCodeSystemDraft(specimen-status-cs, $specimen-status, 5.0.0)
 
 * #available
