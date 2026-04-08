@@ -2,7 +2,6 @@ ValueSet: UnitsOfTimeVS
 Id: units-of-time-vs
 Title: "Units of Time ValueSet"
 Description: "A value set defining common units of time (s, min, h, d, wk, mo, a) from UCUM."
-* ^url = "https://terminology.dhp.uz/fhir/core/ValueSet/units-of-time"
 * ^experimental = true
 * ^language = #uz
 

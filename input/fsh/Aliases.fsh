@@ -10,7 +10,7 @@ Alias: $ucum = http://unitsofmeasure.org
 Alias: $days-of-week = http://hl7.org/fhir/days-of-week
 Alias: $event-timing = http://hl7.org/fhir/event-timing
 Alias: $v3-timing-event = http://terminology.hl7.org/CodeSystem/v3-TimingEvent
-Alias: $v3-gtc-abbreviation = http://terminology.hl7.org/CodeSystem/v3-GTSAbbreviation
+Alias: $v3-gts-abbreviation = http://terminology.hl7.org/CodeSystem/v3-GTSAbbreviation
 Alias: $timing-abbreviation = http://terminology.hl7.org/CodeSystem/timing-abbreviation
 
 Alias: $address-type = http://hl7.org/fhir/address-type

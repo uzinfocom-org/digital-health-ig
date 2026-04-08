@@ -2,6 +2,7 @@ ValueSet: EventTimingVS
 Id: event-timing-vs
 Title: "Event Timing ValueSet"
 Description: "A value set defining when an event occurs (Morning, Evening, Before Meal, etc.), combining codes from standard FHIR EventTiming and v3-TimingEvent systems with UZ/RU translations."
+* ^url = "https://dhp.uz/fhir/core/ValueSet/event-timing-vs"
 * ^experimental = true
 * ^extension[0].url = $valueset-supplement
 * ^extension[0].valueCanonical = Canonical(EventTimingCS)

@@ -191,7 +191,8 @@ SHOULD NOT BE USED:
 * dosageInstruction.timing.repeat.dayOfWeek from DaysOfWeekVS (required)
 * dosageInstruction.timing.repeat.when from EventTimingVS (required)
 * dosageInstruction.timing.code from TimingAbbreviationVS (preferred)
-* dosageInstruction.route MS
+* dosageInstruction.route from RouteCodesVS (required)
+* dosageInstruction.doseAndRate.doseQuantity.code from UnitOfMeasurementVS (required)
 
 
 Instance: example-medication-request
@@ -237,10 +238,15 @@ Usage: #example
       * timeOfDay[1] = "16:00:00"
       * dayOfWeek[0] = #mon
     * code.text = "Two times a day at institution specified time"
-  * route.text = "External"
+  * route.coding[0]
+    * system = "https://terminology.dhp.uz/fhir/core/CodeSystem/route-codes-cs" 
+    * code = #pharm.0001.00062 
+    * display = "External"
   * doseAndRate[0].doseQuantity
     * value = 1
-    * unit = "шт"
+    * unit = "dona"
+    * system = "https://terminology.dhp.uz/fhir/core/CodeSystem/unit-of-measurement-cs"
+    * code = #252
 
 * dispenseRequest
   * quantity.value = 10
