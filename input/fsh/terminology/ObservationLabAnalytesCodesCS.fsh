@@ -3,7 +3,7 @@ Id: observation-analytes-cs
 Title: "Observation lab analytes codes"
 Description: "Observation laboratory analytes with translations in english and russian"
 * insert OriginalCodeSystemDraft(observation-analytes-cs)
-
+//about 1400 codes from ssv
 * #lab-258 "Zardob yoki plazmadagi D vitamini + metabolitlari [Mass/hajm]"
   * ^designation[0].language = #ru
   * ^designation[=].value = "1,25-Дигидроксивитамин D"
