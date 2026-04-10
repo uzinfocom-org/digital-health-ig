@@ -1,7 +1,7 @@
 CodeSystem: ObservationStatusCS
 Id: observation-status-cs
 Title: "Observation status translations"
-Description: "Observation status with translations in Uzbek and Russian"
+Description: "Observation status supplement with translations in Uzbek and Russian"
 * insert SupplementCodeSystemDraft(observation-status-cs, $observation-status, 5.0.0)
 
 * #registered

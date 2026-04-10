@@ -1,0 +1,52 @@
+Code	System	en	ru	uz
+1201005	http://snomed.info/sct	Benign essential hypertension	Эссенциальная гипертензия	Xavfsiz essensial gipertenziya
+364006	http://snomed.info/sct	Acute left-sided heart failure	Острая левожелудочковая недостаточность	O'tkir chap qorincha yetishmovchiligi
+3424008	http://snomed.info/sct	Tachycardia	Тахикардия	Taxikardiya
+486006	http://snomed.info/sct	Acute vascular insufficiency	Острая сосудистая недостаточность	O'tkir qon tomir yetishmovchiligi
+4249000	http://snomed.info/sct	Poor peripheral circulation	Плохое периферическое кровообращение	Yomon periferik qon aylanishi
+874002	http://snomed.info/sct	Therapeutic diuresis	Терапевтический диурез	Terapevtik diurez
+4386001	http://snomed.info/sct	Bronchospasm	Бронхоспазм	Bronxospazm
+4120002	http://snomed.info/sct	Bronchiolitis	Бронхиолит	Bronxiyolit
+3304005	http://snomed.info/sct	Bronchial compression	Сдавление бронхов	Bronxlar kompressiyasi
+1023001	http://snomed.info/sct	Apnea	Апноэ	Apnoe (nafas to'xtashi)
+162004	http://snomed.info/sct	Severe manic bipolar I disorder	Тяжелое биполярное расстройство	Og'ir bipolyar I buzilishi (maniya)
+109006	http://snomed.info/sct	Anxiety disorder of childhood	Тревожное расстройство детского возраста	Bolalikdagi xavotirli buzilishlar
+832007	http://snomed.info/sct	Moderate major depression	Умеренная депрессия	O'rtacha og'ir depressiya
+1376001	http://snomed.info/sct	Obsessive compulsive personality disorder	Обсессивно-компульсивное расстройство	Obsessiv-kompulsiv shaxsiyat buzilishi
+2403008	http://snomed.info/sct	Psychoactive substance dependence	Зависимость от ПАВ	Psixoaktiv moddalarga qaramlik
+3972004	http://snomed.info/sct	Primary insomnia	Первичная бессонница	Birlamchi uyqusizlik
+165002	http://snomed.info/sct	Accident-prone	Склонность к несчастным случаям	Baxtsiz hodisalarga moyillik
+2776000	http://snomed.info/sct	Delirium	Делирий	Deliriy
+3006004	http://snomed.info/sct	Disturbance of consciousness	Нарушение сознания	Ongning buzilishi
+4556007	http://snomed.info/sct	Gastritis	Гастрит	Gastrit
+1567007	http://snomed.info/sct	Chronic gastric ulcer	Хроническая язва желудка	Surunkali oshqozon yarasi
+2919008	http://snomed.info/sct	Nausea, vomiting and diarrhea	Тошнота, рвота и диарея	Ko'ngil aynishi, qusish va diareya
+2492009	http://snomed.info/sct	Nutritional disorder	Расстройство питания	Ovqatlanishning buzilishi
+1860003	http://snomed.info/sct	Fluid volume disorder	Нарушение водного баланса	Suyuqlik hajmining buzilishi
+4575002	http://snomed.info/sct	Acute hyponatremia	Острая гипонатриемия	O'tkir giponatremiya
+4307007	http://snomed.info/sct	Pregestational diabetes mellitus	Сахарный диабет (прегестационный)	Homiladorlikdan oldingi qandli diabet
+3528008	http://snomed.info/sct	Restricted carbohydrate fat controlled diet	Низкоуглеводная диета	Uglevodlar cheklangan parhez
+788006	http://snomed.info/sct	Disease-related diet	Диета при заболевании	Kasallikka oid parhez
+928000	http://snomed.info/sct	Disorder of musculoskeletal system	Расстройство костно-мышечной системы	Tayanch-harakat tizimi buzilishi
+3723001	http://snomed.info/sct	Arthritis	Артрит	Artrit
+2304001	http://snomed.info/sct	Discitis	Дисцит	Dissit (disklar yallig'lanishi)
+2622007	http://snomed.info/sct	Infected ulcer of skin	Инфицированная язва кожи	Terining infektsiyalangan yarasi
+324007	http://snomed.info/sct	Plaster ulcer	Пролежень от гипса	Gips bog'lamidan keyingi yara
+775008	http://snomed.info/sct	Open wound of head with complication	Открытая рана головы с осложнением	Boshning asoratli ochiq jarohati
+4659007	http://snomed.info/sct	Acne fulminans	Молниеносные угри	Yashin tezligidagi husnbuzar (akne)
+4740000	http://snomed.info/sct	Herpes zoster	Опоясывающий лишай	O'rab oluvchi temiratki (Gpes zoster)
+4834000	http://snomed.info/sct	Typhoid fever	Брюшной тиф	Qorin tifi
+2704003	http://snomed.info/sct	Acute disease	Острое заболевание	O'tkir kasallik
+2134003	http://snomed.info/sct	Diffuse pain	Диффузная боль	Tarqalgan og'riq
+330007	http://snomed.info/sct	Occipital headache	Затылочная головная боль	Ensa sohasidagi bosh og'rig'i
+4473006	http://snomed.info/sct	Migraine with aura	Мигрень с аурой	Aura bilan kechadigan migren
+2655002	http://snomed.info/sct	Invalidism	Состояние инвалидности	Nogironlik holati
+3094009	http://snomed.info/sct	Vomiting in infants AND/OR children	Рвота у детей	Chaqaloqlar va bolalarda qusish
+4550001	http://snomed.info/sct	Special infant formula	Специальная детская смесь	Maxsus bolalar aralashmasi
+199004	http://snomed.info/sct	Decreased lactation	Снижение лактации	Laktatsiyaning pasayishi
+3110003	http://snomed.info/sct	Acute otitis media	Острый средний отит	O'tkir o'rta otit
+140004	http://snomed.info/sct	Chronic pharyngitis	Хронический фарингит	Surunkali faringit
+2556008	http://snomed.info/sct	Periodontal disease	Пародонтоз	Periodont kasalligi
+264008	http://snomed.info/sct	Blind hypertensive eye	Слепота (гипертензивная)	Gipertenziv ko'rlik
+2967003	http://snomed.info/sct	Non-comitant strabismus	Несодружественное косоглазие	Hamdo'stliksiz g'ilaylik
+223003	http://snomed.info/sct	Tumor of body of uterus	Опухоль тела матки	Bachadon tanasi o'simtasi

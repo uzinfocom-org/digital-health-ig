@@ -33,7 +33,7 @@ This Implementation Guide includes:
 
 ## 🔗 Links
 
-* 🌐 **Live IG site**: [ig.medcore.uz](https://ig.medcore.uz)
+* 🌐 **Live IG site**: [ig.dhp.uz](https://ig.dhp.uz)
 
 
 ---

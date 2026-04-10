@@ -1,7 +1,7 @@
 CodeSystem: RoleCodeCS
 Id: role-code-cs
 Title: "Role code"
-Description: "Specifies role codes used to define the function or position of a person or organization, with translations in Uzbek and Russian."
+Description: "Role code supplement with translations in Uzbek and Russian"
 * ^url = "https://terminology.dhp.uz/fhir/core/CodeSystem/role-code-cs"
 * ^experimental = true
 * ^content = #supplement

@@ -10,7 +10,7 @@ Description: "Countries digital MVD codes with translations in Russian and Engli
   * ^designation[+].language = #en
   * ^designation[=].value = "AUSTRIA"
 
-* #1 "A‘ZERBAYJAN"
+* #1 "A'ZERBAYJAN"
   * ^designation[0].language = #ru
   * ^designation[=].value = "АЗЕРБАЙДЖАН"
   * ^designation[+].language = #en
@@ -34,7 +34,7 @@ Description: "Countries digital MVD codes with translations in Russian and Engli
   * ^designation[+].language = #en
   * ^designation[=].value = "ANTARCTIC"
 
-* #6 "ANTIGUA HA‘M BARBUDA"
+* #6 "ANTIGUA HA'M BARBUDA"
   * ^designation[0].language = #ru
   * ^designation[=].value = "АНТИГУА И БАРБУДА"
   * ^designation[+].language = #en
@@ -70,7 +70,7 @@ Description: "Countries digital MVD codes with translations in Russian and Engli
   * ^designation[+].language = #en
   * ^designation[=].value = "BERMUDA ISLAND"
 
-* #13 "BOSNIYA HA‘M GERSEGOVINA"
+* #13 "BOSNIYA HA'M GERSEGOVINA"
   * ^designation[0].language = #ru
   * ^designation[=].value = "БОСНИЯ И ГЕРЦЕГОВИНА"
   * ^designation[+].language = #en
@@ -112,13 +112,13 @@ Description: "Countries digital MVD codes with translations in Russian and Engli
   * ^designation[+].language = #en
   * ^designation[=].value = "VIRGIN ISLANDS(USA)"
 
-* #21 "URUGHA‘MY"
+* #21 "URUGHA'MY"
   * ^designation[0].language = #ru
   * ^designation[=].value = "УРУГВАЙ"
   * ^designation[+].language = #en
   * ^designation[=].value = "URUGUAY"
 
-* #22 "SHIG‘IS TIMOR"
+* #22 "SHIG'IS TIMOR"
   * ^designation[0].language = #ru
   * ^designation[=].value = "ВОСТОЧНЫЙ ТИМОР"
   * ^designation[+].language = #en
@@ -226,7 +226,7 @@ Description: "Countries digital MVD codes with translations in Russian and Engli
   * ^designation[+].language = #en
   * ^designation[=].value = "MADAGASCAR"
 
-* #41 "SAN-TOME HA‘M PRINSIPI"
+* #41 "SAN-TOME HA'M PRINSIPI"
   * ^designation[0].language = #ru
   * ^designation[=].value = "САН-ТОМЕ И ПРИНСИПИ"
   * ^designation[+].language = #en
@@ -286,7 +286,7 @@ Description: "Countries digital MVD codes with translations in Russian and Engli
   * ^designation[+].language = #en
   * ^designation[=].value = "PAKISTAN"
 
-* #53 "AWG‘ANISTAN"
+* #53 "AWG'ANISTAN"
   * ^designation[0].language = #ru
   * ^designation[=].value = "АФГАНИСТАН"
   * ^designation[+].language = #en
@@ -406,7 +406,7 @@ Description: "Countries digital MVD codes with translations in Russian and Engli
   * ^designation[+].language = #en
   * ^designation[=].value = "SAUDI ARABIA"
 
-* #73 "SHA‘MZILEND"
+* #73 "SHA'MZILEND"
   * ^designation[0].language = #ru
   * ^designation[=].value = "СВАЗИЛЕНД"
   * ^designation[+].language = #en
@@ -502,7 +502,7 @@ Description: "Countries digital MVD codes with translations in Russian and Engli
   * ^designation[+].language = #en
   * ^designation[=].value = "MEXICO"
 
-* #90 "MANG‘OLISTAN"
+* #90 "MANG'OLISTAN"
   * ^designation[0].language = #ru
   * ^designation[=].value = "МОНГОЛИЯ"
   * ^designation[+].language = #en
@@ -568,13 +568,13 @@ Description: "Countries digital MVD codes with translations in Russian and Engli
   * ^designation[+].language = #en
   * ^designation[=].value = "NIUE"
 
-* #101 "JAN‘A ZELANDIYA"
+* #101 "JAN'A ZELANDIYA"
   * ^designation[0].language = #ru
   * ^designation[=].value = "НОВАЯ ЗЕЛАНДИЯ"
   * ^designation[+].language = #en
   * ^designation[=].value = "NEW ZEALAND"
 
-* #102 "JAN‘A KALEDONIYA"
+* #102 "JAN'A KALEDONIYA"
   * ^designation[0].language = #ru
   * ^designation[=].value = "НОВАЯ КАЛЕДОНИЯ"
   * ^designation[+].language = #en
@@ -616,7 +616,7 @@ Description: "Countries digital MVD codes with translations in Russian and Engli
   * ^designation[+].language = #en
   * ^designation[=].value = "ISLE OF MAN"
 
-* #111 "MUQA‘DDES ELENA ATAWI"
+* #111 "MUQA'DDES ELENA ATAWI"
   * ^designation[0].language = #ru
   * ^designation[=].value = "ОСТРОВ СВЯТОЙ ЕЛЕНЫ"
   * ^designation[+].language = #en
@@ -634,13 +634,13 @@ Description: "Countries digital MVD codes with translations in Russian and Engli
   * ^designation[+].language = #en
   * ^designation[=].value = "COOK ISLANDS"
 
-* #115 "UOLLIS HA‘M FUTUNA ATAWLARI"
+* #115 "UOLLIS HA'M FUTUNA ATAWLARI"
   * ^designation[0].language = #ru
   * ^designation[=].value = "ОСТРОВА УОЛЛИС И ФУТУНА"
   * ^designation[+].language = #en
   * ^designation[=].value = "WALLIS AND FUTUNA ISLAND"
 
-* #117 "PAPUA-JAN‘A GVINEYA"
+* #117 "PAPUA-JAN'A GVINEYA"
   * ^designation[0].language = #ru
   * ^designation[=].value = "ПАПУА-НОВАЯ ГВИНЕЯ"
   * ^designation[+].language = #en
@@ -706,7 +706,7 @@ Description: "Countries digital MVD codes with translations in Russian and Engli
   * ^designation[+].language = #en
   * ^designation[=].value = "BURUNDI"
 
-* #128 "HA‘MNUATU"
+* #128 "HA'MNUATU"
   * ^designation[0].language = #ru
   * ^designation[=].value = "ВАНУАТУ"
   * ^designation[+].language = #en
@@ -814,7 +814,7 @@ Description: "Countries digital MVD codes with translations in Russian and Engli
   * ^designation[+].language = #en
   * ^designation[=].value = "CAPE VERDE"
 
-* #146 "QAZAG‘ISTAN"
+* #146 "QAZAG'ISTAN"
   * ^designation[0].language = #ru
   * ^designation[=].value = "КАЗАХСТАН"
   * ^designation[+].language = #en
@@ -874,11 +874,11 @@ Description: "Countries digital MVD codes with translations in Russian and Engli
   * ^designation[+].language = #en
   * ^designation[=].value = "CUBA"
 
-* #156 "QIRG‘IZISTAN RESPUBLIKASI"
+* #156 "QIRG'IZISTAN RESPUBLIKASI"
   * ^designation[0].language = #ru
   * ^designation[=].value = "РЕСПУБЛИКА КЫРГЫЗСТАН"
   * ^designation[+].language = #en
-  * ^designation[=].value = "QIRG‘IZISTON RESPUBLIKASI"
+  * ^designation[=].value = "QIRG'IZISTON RESPUBLIKASI"
 
 * #157 "LIBERIYA"
   * ^designation[0].language = #ru
@@ -940,7 +940,7 @@ Description: "Countries digital MVD codes with translations in Russian and Engli
   * ^designation[+].language = #en
   * ^designation[=].value = "PANAMA"
 
-* #167 "PARAGHA‘MY"
+* #167 "PARAGHA'MY"
   * ^designation[0].language = #ru
   * ^designation[=].value = "ПАРАГВАЙ"
   * ^designation[+].language = #en
@@ -1018,7 +1018,7 @@ Description: "Countries digital MVD codes with translations in Russian and Engli
   * ^designation[+].language = #en
   * ^designation[=].value = "TAJIKISTAN"
 
-* #180 "TRINIDAD HA‘M TOBAGO"
+* #180 "TRINIDAD HA'M TOBAGO"
   * ^designation[0].language = #ru
   * ^designation[=].value = "ТРИНИДАД И ТОБАГО"
   * ^designation[+].language = #en
@@ -1030,7 +1030,7 @@ Description: "Countries digital MVD codes with translations in Russian and Engli
   * ^designation[+].language = #en
   * ^designation[=].value = "UGANDA"
 
-* #182 "O‘ZBEKISTAN"
+* #182 "O'ZBEKISTAN"
   * ^designation[0].language = #ru
   * ^designation[=].value = "УЗБЕКИСТАН"
   * ^designation[+].language = #en
@@ -1090,13 +1090,13 @@ Description: "Countries digital MVD codes with translations in Russian and Engli
   * ^designation[+].language = #en
   * ^designation[=].value = "SAMOA"
 
-* #195 "SENT-VINSENT HA‘M GRENADINLAR"
+* #195 "SENT-VINSENT HA'M GRENADINLAR"
   * ^designation[0].language = #ru
   * ^designation[=].value = "СЕНТ-ВИНСЕНТ И ГРЕНАДИНЫ"
   * ^designation[+].language = #en
   * ^designation[=].value = "SAINT VINCENT AND GRENADINES"
 
-* #196 "SENT-PER HA‘M MIKELON"
+* #196 "SENT-PER HA'M MIKELON"
   * ^designation[0].language = #ru
   * ^designation[=].value = "СЕНТ-ПЬЕР И МИКЕЛОН"
   * ^designation[+].language = #en
@@ -1114,7 +1114,7 @@ Description: "Countries digital MVD codes with translations in Russian and Engli
   * ^designation[+].language = #en
   * ^designation[=].value = "SYRIAN ARAB REPUBLIC"
 
-* #199 "SLOHA‘MKIYA"
+* #199 "SLOHA'MKIYA"
   * ^designation[0].language = #ru
   * ^designation[=].value = "СЛОВАКИЯ"
   * ^designation[+].language = #en
@@ -1180,13 +1180,13 @@ Description: "Countries digital MVD codes with translations in Russian and Engli
   * ^designation[+].language = #en
   * ^designation[=].value = "OMAN"
 
-* #211 "TAYHA‘MN"
+* #211 "TAYHA'MN"
   * ^designation[0].language = #ru
   * ^designation[=].value = "ТАЙВАНЬ"
   * ^designation[+].language = #en
   * ^designation[=].value = "TAIWAN"
 
-* #212 "TERKS HA‘M KAYKOS ATAWLARI"
+* #212 "TERKS HA'M KAYKOS ATAWLARI"
   * ^designation[0].language = #ru
   * ^designation[=].value = "ОСТРОВА ТЕРКС И КАЙКОС"
   * ^designation[+].language = #en
@@ -1204,7 +1204,7 @@ Description: "Countries digital MVD codes with translations in Russian and Engli
   * ^designation[+].language = #en
   * ^designation[=].value = "TOKELAU"
 
-* #215 "TUHA‘MLU"
+* #215 "TUHA'MLU"
   * ^designation[0].language = #ru
   * ^designation[=].value = "ТУВАЛУ"
   * ^designation[+].language = #en
@@ -1264,7 +1264,7 @@ Description: "Countries digital MVD codes with translations in Russian and Engli
   * ^designation[+].language = #en
   * ^designation[=].value = "MICRONESIA, FEDERATIVE STATES"
 
-* #225 "SENT-KITS HA‘M NEVIS"
+* #225 "SENT-KITS HA'M NEVIS"
   * ^designation[0].language = #ru
   * ^designation[=].value = "СЕНТ-КИТС И НЕВИС"
   * ^designation[+].language = #en
@@ -1306,7 +1306,7 @@ Description: "Countries digital MVD codes with translations in Russian and Engli
   * ^designation[+].language = #en
   * ^designation[=].value = "SWITZERLAND"
 
-* #235 "SHPITSBERGEN HA‘M YAN-MAYEN ATAWLARI"
+* #235 "SHPITSBERGEN HA'M YAN-MAYEN ATAWLARI"
   * ^designation[0].language = #ru
   * ^designation[=].value = "ОСТРОВА ШПИЦБЕРГЕН И ЯН-МАЙЕН"
   * ^designation[+].language = #en
@@ -1342,7 +1342,7 @@ Description: "Countries digital MVD codes with translations in Russian and Engli
   * ^designation[+].language = #en
   * ^designation[=].value = "JAPAN"
 
-* #242 "QIRG‘IZSTAN"
+* #242 "QIRG'IZSTAN"
   * ^designation[0].language = #ru
   * ^designation[=].value = "КЫРГЫЗСТАН"
   * ^designation[+].language = #en
@@ -1378,7 +1378,7 @@ Description: "Countries digital MVD codes with translations in Russian and Engli
   * ^designation[+].language = #en
   * ^designation[=].value = "FRENCH GUIANA"
 
-* #272 "PUQARALIG‘I BOLMAG‘AN SHAXS"
+* #272 "PUQARALIG'I BOLMAG'AN SHAXS"
   * ^designation[0].language = #ru
   * ^designation[=].value = "ЛИЦО БЕЗ ГРАЖДАНСТВА"
   * ^designation[+].language = #en
@@ -1408,7 +1408,7 @@ Description: "Countries digital MVD codes with translations in Russian and Engli
   * ^designation[+].language = #en
   * ^designation[=].value = "SOUTH AFRICA"
 
-* #285 "XARHA‘MTIYA"
+* #285 "XARHA'MTIYA"
   * ^designation[0].language = #ru
   * ^designation[=].value = "ХОРВАТИЯ"
   * ^designation[+].language = #en
@@ -1426,13 +1426,13 @@ Description: "Countries digital MVD codes with translations in Russian and Engli
   * ^designation[+].language = #en
   * ^designation[=].value = "GREAT BRITAIN"
 
-* #502 "XERD HA‘M MAKDONALD ATAWLARI"
+* #502 "XERD HA'M MAKDONALD ATAWLARI"
   * ^designation[0].language = #ru
   * ^designation[=].value = "ОСТРОВ ХЕРД И ОСТРОВА МАКДОНАЛЬД"
   * ^designation[+].language = #en
   * ^designation[=].value = "HERD ISLAND AND MCDONALD ISLANDS"
 
-* #504 "SERBIYA HA‘M CHERNOGORIYA"
+* #504 "SERBIYA HA'M CHERNOGORIYA"
   * ^designation[0].language = #ru
   * ^designation[=].value = "СЕРБИЯ И ЧЕРНОГОРИЯ"
   * ^designation[+].language = #en

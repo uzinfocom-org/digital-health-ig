@@ -8,7 +8,7 @@ Description: "Determines the specialization of a medical organization"
 * ^content = #complete
 * ^language = #uz
 * ^caseSensitive = true
-* #101 "Terapiya"
+* #101.0 "Terapiya"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Терапия"
   * ^designation[+].language = #en

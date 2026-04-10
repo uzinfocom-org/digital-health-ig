@@ -1,7 +1,7 @@
 # Конечные точки (Endpoints)
 
-- **Playground**: `playground.medcore.uz/fhir`
-- **Production**: `fhir.medcore.uz`
+- **Playground**: `playground.dhp.uz/fhir`
+- **Production**: `fhir.dhp.uz`
 
 # Безопасность и аутентификация
 
@@ -60,7 +60,7 @@ Frontend-приложение должно быть зарегистрирова
 1. **Перенаправьте пользователя на frontend SSO:**
 
 ```
-GET sso.medcore.uz
+GET sso.dhp.uz
 ```
 
 **Параметры**:
@@ -85,6 +85,32 @@ GET sso.medcore.uz
 ```
 Authorization: Bearer <access_token>
 ```
+
+# Транзакции
+
+FHIR [транзакции](https://hl7.org/fhir/http.html#transaction) позволяют отправить несколько ресурсов в одном атомарном запросе. Либо все операции выполняются успешно, либо ни одна не применяется - частичных результатов не бывает.
+
+Транзакция  - это `Bundle` с `type`, установленным в `transaction`. Каждая запись (`entry`) содержит:
+- `fullUrl`  - временный идентификатор ресурса в формате `urn:uuid:`
+- `resource`  - ресурс для создания или обновления
+- `request.method`  - HTTP-метод (`POST` для создания, `PUT` для обновления)
+- `request.url`  - тип ресурса (для `POST`) или путь к ресурсу (для `PUT`)
+
+Ресурсы внутри транзакции могут ссылаться друг на друга через значения `urn:uuid:`. Сервер заменяет их на реальные идентификаторы после обработки.
+
+Отправьте Bundle через `POST [base]` (не на конкретный endpoint ресурса).
+
+**Пример запроса**: [Transaction Bundle JSON](Bundle-example-transaction-bundle.json)  - отправляет EpisodeOfCare, Encounter и три Observation.
+
+## Ответ сервера
+
+При успехе сервер возвращает Bundle типа `transaction-response`. Каждая запись содержит `response.status` и `response.location` с присвоенным сервером идентификатором.
+
+**Пример**: [Успешный ответ JSON](Bundle-example-transaction-response.json)
+
+Если какая-либо запись не проходит валидацию, вся транзакция откатывается, и сервер возвращает `OperationOutcome` с описанием ошибки.
+
+**Пример**: [Ошибка JSON](OperationOutcome-example-transaction-response-error.json)
 
 # Обработка ошибок
 
