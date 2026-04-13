@@ -21,7 +21,7 @@ Description: "Uzbekistan Core Observation profile, used to represent clinical an
 * category MS
 * category from ObservationCategoryVS
 * code MS
-* code from ObservationCodesVS (required)
+* code from ObservationCodesVS (preferred)
 * subject MS
 * subject only Reference(UZCorePatient or UZCoreLocation or UZCoreOrganization or Procedure or UZCorePractitioner or Medication)
 * focus MS
@@ -56,7 +56,7 @@ Description: "Uzbekistan Core Observation profile, used to represent clinical an
 * derivedFrom only Reference(DocumentReference or ImagingStudy or QuestionnaireResponse or UZCoreObservation)
 * component MS
 * component.code MS
-* component.code from ObservationCodesVS
+* component.code from ObservationCodesVS (preferred)
 * component.value[x] MS
 * component.dataAbsentReason from DataAbsentReasonVS (extensible)
 * component.interpretation from ObservationInterpretationVS (extensible)
