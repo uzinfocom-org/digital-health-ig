@@ -46,6 +46,8 @@ Description: "UZCoreServiceRequest defines how laboratory orders are represented
 * specimen only Reference(Specimen)
 * specimen ^short = "The specimen or specimens to be analyzed as part of the requested laboratory service."
 * note ^short = "Doctor's comment or conclution upon referral"
+* patientInstruction MS //we need to add markdown patient instructions.
+* patientInstruction ^short = "Instructions in terms that are understood by the patient or their caregiver regarding the laboratory service, such as preparation requirements or post-service care instructions."
 
 
 Instance: UZCoreServiceRequestLab-Example01

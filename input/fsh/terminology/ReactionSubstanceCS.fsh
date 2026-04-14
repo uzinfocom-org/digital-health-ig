@@ -4,7 +4,7 @@ Title: "Reaction substance codes"
 Description: "Local codes and multilingual names for allergy reaction substance."
 * insert OriginalCodeSystemDraft(allergy-reaction-substance-cs)
 
-* #aller-0010-00001 "Ajiriq (Cyn d)"
+* #aller-0010-00002 "Ajiriq (Cyn d)"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Свинорой пальчатый (Cyn d)"
   * ^designation[+].language = #en
