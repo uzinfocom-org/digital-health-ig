@@ -4,9 +4,25 @@ O'zbekistonda ishlatiladigan panellar va analitlar uchun [laboratoriya kuzatuv k
 
 [Hujjat identifikatori nomlar maydoni](identifiers.html#document-identifiers) (doc) identifikator tizimlariga qo'shildi.
 
-### Versiya 0.4.0
+#### Organization profili o'zgarishlari
 
-> Eslatma: Ushbu bo'lim mashina tarjimasi bo'lib, hali sifat nazoratidan o'tmagan.
+[UZ Core Organization](StructureDefinition-uz-core-organization.html) dagi `type.coding[organizationType]` bo'limi endi HL7 xalqaro `organization-type` kodlar tizimi o'rniga [OrganizationTypeUZCS](CodeSystem-organization-types-uz-cs.html) dan foydalanadi. Masalan, `$organization-type-cs#prov` ni `organization-types-uz-cs` dagi tegishli kodga almashtirish kerak (masalan, `#I` "Boshqaruv boyicha taqsimlanishi"). To'g'ridan-to'g'ri moslik yo'q - har bir tashkilotni yangi tizimda (I-V kodlar) qayta tasniflash kerak.
+
+[UZ Core Organization](StructureDefinition-uz-core-organization.html) ga [OrganizationGroupingCS](CodeSystem-organization-grouping-uz-cs.html) asosida muassasalarni batafsil guruhlash uchun `type.coding[organizationGrouping]` bo'limi qo'shildi (masalan, `#104` "Ixtisoslashgan shifoxonalar", `#210` "Oilaviy poliklinika"). Dasturchilar ushbu yangi bo'limni to'ldirishlari kerak.
+
+[UZ Core Organization](StructureDefinition-uz-core-organization.html) dagi `type.coding[organizationalServiceGroup]` va `type.coding[specialization]` kardinallik darajasi 0..1 dan 0..\* ga kengaytirildi. Endi bitta tashkilot uchun bir nechta xizmat guruhi va ixtisoslik kodlarini ko'rsatish mumkin.
+
+[OrganizationalSubordinationGroupCS](CodeSystem-organizational-subordination-group-cs.html) ga I_6 "Xorijiy sarmoyadorlar ishtirokidagi muassasalar" kodi qo'shildi. Dasturchilar tegishli tashkilotlar uchun `type.coding[subordinationGroup]` da ushbu kodni ishlatishlari kerak.
+
+[OrganizationalStructureCS](CodeSystem-organizational-structure-cs.html) ambulatoriya muassasalari (masalan, `#200` poliklinikalar), ta'lim muassasalari (`#300`), qon quyish markazlari (`#400`), sanitariya-epidemiologiya xizmatlari (`#500`) va boshqalar uchun yangi kodlar bilan kengaytirildi. Ba'zi mavjud tarjimalar tuzatildi (masalan, `#116` "Medical center center" dan "Medical center" ga tuzatildi). Dasturchilar o'z muassasalari uchun aniqroq kod mavjudligini tekshirishlari kerak.
+
+[UZ Core Organization](StructureDefinition-uz-core-organization.html) ga tashkilot xizmat ko'rsatadigan ma'muriy hududni ko'rsatish uchun [xizmat hududi kengaytmasi](StructureDefinition-coverage-area.html) qo'shildi, [StateVS](ValueSet-state-vs.html) ga bog'langan. SSV hudud kodlarini StateCS ga [SSVAdministrativeTerritoryToRegionsCM](ConceptMap-ssv-administrative-territory-to-regions-cm.html) yordamida o'zgartirish mumkin.
+
+MIS2 JSON formatidagi tashkilotni ConceptMap yordamida UZ Core Organization resursiga o'girishni ko'rsatuvchi [misol](Organization-xonobod-medical-association.html) qo'shildi.
+
+MIS2 kodlarini UZ Core terminologiyasiga tarjima qilish uchun ConceptMap qo'shildi: [MIS2MedicalTypeToOrganizationalStructureCM](ConceptMap-mis2-medical-type-to-organizational-structure-cm.html) `type.coding[organizationalStructure]` uchun, [MIS2LevelTypeToSubordinationGroupCM](ConceptMap-mis2-level-type-to-subordination-group-cm.html) `type.coding[subordinationGroup]` uchun va [MIS2ServiceTypeToOrganizationalServiceGroupCM](ConceptMap-mis2-service-type-to-organizational-service-group-cm.html) `type.coding[organizationalServiceGroup]` uchun. MIS2 dan tarjima qilayotgan dasturchilar tegishli bo'limlarni to'ldirish uchun ushbu xaritalardan foydalanishlari kerak.
+
+### Versiya 0.4.0
 
 [UZ Core Goal](StructureDefinition-UZCoreGoal.html) profili tegishli kod tizimlari va qiymatlar to'plamlari bilan qo'shildi.
 

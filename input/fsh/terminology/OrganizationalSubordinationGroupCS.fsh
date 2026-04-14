@@ -28,3 +28,8 @@ Description: "Defines the subordination group of the medical organization"
   * ^designation[=].value = "Частные медицинские учреждения"
   * ^designation[+].language = #en
   * ^designation[=].value = "Private medical institutions"
+* #I_6 "Xorijiy sarmoyadorlar ishtirokidagi muassasalar"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Организации с участием иностранных инвесторов"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Organizations with foreign investors participation"

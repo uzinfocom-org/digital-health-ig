@@ -75,7 +75,7 @@ Description: "Uzbekistan Core Encounter profile, used to represent clinical enco
 * reason.use ^short = "Для чего/как следует использовать значение причины"
 
 * reason.value MS
-* reason.value only CodeableReference (UZCoreClinicalCondition or DiagnosticReport or Procedure or UZCoreObservation)
+* reason.value only CodeableReference (UZCoreCondition or DiagnosticReport or Procedure or UZCoreObservation)
 * reason.value ^short = "Медицинская причина, требующая рассмотрения"
 
 * virtualService MS
@@ -96,7 +96,7 @@ Description: "Uzbekistan Core Encounter profile, used to represent clinical enco
 * diagnosis MS
 * diagnosis ^short = "Список диагнозов, имеющих отношение к данному случаю"
 * diagnosis.condition MS
-* diagnosis.condition only CodeableReference(UZCoreClinicalCondition or UZCoreCondition)
+* diagnosis.condition only CodeableReference(UZCoreCondition)
 * diagnosis.condition ^short = "Диагноз, относящийся к встрече"
 * diagnosis.use MS
 

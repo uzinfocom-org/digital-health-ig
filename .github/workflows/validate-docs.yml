@@ -21,6 +21,8 @@ jobs:
 
   ig-publisher:
     runs-on: ubuntu-latest
+    env:
+      JAVA_TOOL_OPTIONS: "-Xmx8g"
 
     steps:
       - uses: actions/checkout@v6
@@ -45,7 +47,7 @@ jobs:
       - name: Check QA report
         run: |
           # Configuration
-          MAX_ALLOWED_ERRORS=6
+          MAX_ALLOWED_ERRORS=2
           MAX_ALLOWED_WARNINGS=0
 
           if [ ! -f "output/qa.json" ]; then
@@ -75,15 +77,15 @@ jobs:
 
           echo "✅ QA check passed: $ERRORS errors (≤$MAX_ALLOWED_ERRORS) and $WARNINGS warnings (≤$MAX_ALLOWED_WARNINGS)"
 
-      - name: Wait for deployment update
-        if: github.ref == 'refs/heads/main'
-        run: |
-          chmod +x ./.github/scripts/wait-for-deployment.sh
-          ./.github/scripts/wait-for-deployment.sh https://dhp.uz/fhir/core/en/index.html 3600
+      # - name: Wait for deployment update
+      #   if: github.ref == 'refs/heads/main'
+      #   run: |
+      #     chmod +x ./.github/scripts/wait-for-deployment.sh
+      #     ./.github/scripts/wait-for-deployment.sh https://dhp.uz/fhir/core/en/index.html 3600
 
       - name: Upload output folder
         if: always() && hashFiles('output/**/*') != ''
-        uses: actions/upload-artifact@v6
+        uses: actions/upload-artifact@v7
         with:
           name: ig-output-${{ github.run_number }}
           path: output/
