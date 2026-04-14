@@ -5,91 +5,84 @@
     <body>
       <trans-unit id="Procedure-example-procedure" resname="Reference.display">
              <notes>
-               <note id="n1">Plain text narrative that identifies the resource in addition to the resource reference.</note>
+               <note id="n1">Reference.display</note>
              </notes>
         <source>CarePlan #1</source>
         <target></target>
       </trans-unit>
       <trans-unit id="Procedure-example-procedure" resname="Coding.display">
              <notes>
-               <note id="n1">A representation of the meaning of the code in the system, following the rules of the system.</note>
+               <note id="n1">Coding.display</note>
              </notes>
         <source>Physical therapy procedure</source>
         <target></target>
       </trans-unit>
       <trans-unit id="Procedure-example-procedure" resname="Coding.display">
              <notes>
-               <note id="n1">A representation of the meaning of the code in the system, following the rules of the system.</note>
+               <note id="n1">Coding.display</note>
              </notes>
         <source>Therapeutic massage</source>
         <target></target>
       </trans-unit>
       <trans-unit id="Procedure-example-procedure" resname="CodeableConcept.text">
              <notes>
-               <note id="n1">A human language representation of the concept as seen/selected/uttered by the user who entered the data and/or which represents the intended meaning of the user.</note>
+               <note id="n1">CodeableConcept.text</note>
              </notes>
         <source>Therapeutic massage of right foot</source>
         <target></target>
       </trans-unit>
       <trans-unit id="Procedure-example-procedure" resname="Reference.display">
              <notes>
-               <note id="n1">Plain text narrative that identifies the resource in addition to the resource reference.</note>
+               <note id="n1">Reference.display</note>
              </notes>
         <source>David Davidov</source>
         <target></target>
       </trans-unit>
       <trans-unit id="Procedure-example-procedure" resname="Reference.display">
              <notes>
-               <note id="n1">Plain text narrative that identifies the resource in addition to the resource reference.</note>
+               <note id="n1">Reference.display</note>
              </notes>
         <source>Outpatient Visit</source>
         <target></target>
       </trans-unit>
       <trans-unit id="Procedure-example-procedure" resname="Reference.display">
              <notes>
-               <note id="n1">Plain text narrative that identifies the resource in addition to the resource reference.</note>
-             </notes>
-        <source>Nurse Jane Smith</source>
-        <target></target>
-      </trans-unit>
-      <trans-unit id="Procedure-example-procedure" resname="Reference.display">
-             <notes>
-               <note id="n1">Plain text narrative that identifies the resource in addition to the resource reference.</note>
+               <note id="n1">Reference.display</note>
              </notes>
         <source>Paul Ivanov, PT</source>
         <target></target>
       </trans-unit>
       <trans-unit id="Procedure-example-procedure" resname="Reference.display">
              <notes>
-               <note id="n1">Plain text narrative that identifies the resource in addition to the resource reference.</note>
+               <note id="n1">Reference.display</note>
              </notes>
-        <source>Physiotherapy Room 2</source>
+        <source>Toshkent shahar 1-sonli shifoxona</source>
         <target></target>
       </trans-unit>
       <trans-unit id="Procedure-example-procedure" resname="Reference.display">
              <notes>
-               <note id="n1">Plain text narrative that identifies the resource in addition to the resource reference.</note>
+               <note id="n1">Reference.display</note>
              </notes>
         <source>Aching right foot</source>
         <target></target>
       </trans-unit>
       <trans-unit id="Procedure-example-procedure" resname="Coding.display">
              <notes>
-               <note id="n1">A representation of the meaning of the code in the system, following the rules of the system.</note>
+               <note id="n1">Coding.display</note>
              </notes>
         <source>Right foot</source>
         <target></target>
       </trans-unit>
       <trans-unit id="Procedure-example-procedure" resname="Coding.display">
              <notes>
-               <note id="n1">A representation of the meaning of the code in the system, following the rules of the system.</note>
+               <note id="n1">Coding.display</note>
              </notes>
         <source>Successful</source>
         <target></target>
       </trans-unit>
       <trans-unit id="Procedure-example-procedure" resname="Annotation.text">
              <notes>
-               <note id="n1">The text of the annotation in markdown format.</note>
+               <note id="n1">Annotation.text</note>
              </notes>
         <source>Therapeutic massage of the right foot completed according to the care plan. No adverse reactions noted.</source>
         <target></target>

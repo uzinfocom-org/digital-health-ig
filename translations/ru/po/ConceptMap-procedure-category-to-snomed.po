@@ -1,40 +1,40 @@
 
-# A natural language name identifying the concept map. This name should be usable as an identifier for the module by machine processing applications such as code generation.
+# ConceptMap.name
 #: ConceptMap.name
 msgid "ProcedureCategoryToSnomed"
 msgstr ""
 
-# A short, descriptive, user-friendly title for the concept map.
+# ConceptMap.title
 #: ConceptMap.title
 msgid "UZ local procedure category → SNOMED CT"
 msgstr ""
 
-# The name of the organization or individual responsible for the release and ongoing maintenance of the concept map.
+# ConceptMap.publisher
 #: ConceptMap.publisher
 msgid "Ministry of Health of the Republic of Uzbekistan"
 msgstr ""
 
-# The name of an individual to contact.
+# ContactDetail.name
 #: ContactDetail.name
 msgid "Ministry of Health of the Republic of Uzbekistan"
 msgstr ""
 
-# A free text natural language description of the concept map from a consumer's perspective.
+# ConceptMap.description
 #: ConceptMap.description
 msgid "Maps local UZ procedure category to SNOMED CT for Procedure.category"
 msgstr ""
 
-# A representation of the meaning of the code in the system, following the rules of the system.
+# Coding.display
 #: Coding.display
 msgid "Uzbekistan"
 msgstr ""
 
-# The display for the code. The display is only provided to help editors when editing the concept map.
+# ConceptMap.group.element.display
 #: ConceptMap.group.element.display
 msgid "Fizioterapiya protsedurasi"
 msgstr ""
 
-# The display for the code. The display is only provided to help editors when editing the concept map.
+# ConceptMap.group.element.target.display
 #: ConceptMap.group.element.target.display
 msgid "Physical therapy procedure"
 msgstr ""

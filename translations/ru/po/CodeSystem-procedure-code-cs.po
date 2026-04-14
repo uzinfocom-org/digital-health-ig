@@ -1,1170 +1,1170 @@
 
-# A natural language name identifying the code system. This name should be usable as an identifier for the module by machine processing applications such as code generation.
+# CodeSystem.name
 #: CodeSystem.name
 msgid "ProcedureCodeCS"
 msgstr ""
 
-# A short, descriptive, user-friendly title for the code system.
+# CodeSystem.title
 #: CodeSystem.title
 msgid "Procedure Code Codes"
 msgstr ""
 
-# The name of the organization or individual responsible for the release and ongoing maintenance of the code system.
+# CodeSystem.publisher
 #: CodeSystem.publisher
 msgid "Ministry of Health of the Republic of Uzbekistan"
 msgstr ""
 
-# The name of an individual to contact.
+# ContactDetail.name
 #: ContactDetail.name
 msgid "Ministry of Health of the Republic of Uzbekistan"
 msgstr ""
 
-# A free text natural language description of the code system from a consumer's perspective.
+# CodeSystem.description
 #: CodeSystem.description
 msgid "Procedure code CodeSystem with translations in English, Russian and Uzbek"
 msgstr ""
 
-# A representation of the meaning of the code in the system, following the rules of the system.
+# Coding.display
 #: Coding.display
 msgid "Uzbekistan"
 msgstr ""
 
-# A human readable string that is the recommended default way to present this concept to a user.
+# CodeSystem.concept.display
 #: CodeSystem.concept.display
 msgid "Amplipulsterapiya"
 msgstr ""
 
-# The text value for this designation.
+# CodeSystem.concept.designation.value
 #: CodeSystem.concept.designation.value
 msgid "Амплипульстерапия (СМТ-терапия)"
 msgstr ""
 
-# The text value for this designation.
+# CodeSystem.concept.designation.value
 #: CodeSystem.concept.designation.value
 msgid "Amplipulse therapy (SMC-therapy)"
 msgstr ""
 
-# A human readable string that is the recommended default way to present this concept to a user.
+# CodeSystem.concept.display
 #: CodeSystem.concept.display
 msgid "Aeroionterapiya"
 msgstr ""
 
-# The text value for this designation.
+# CodeSystem.concept.designation.value
 #: CodeSystem.concept.designation.value
 msgid "Аэроионотерапия"
 msgstr ""
 
-# The text value for this designation.
+# CodeSystem.concept.designation.value
 #: CodeSystem.concept.designation.value
 msgid "Advanced oxygen therapy"
 msgstr ""
 
-# A human readable string that is the recommended default way to present this concept to a user.
+# CodeSystem.concept.display
 #: CodeSystem.concept.display
 msgid "Baroterapiya"
 msgstr ""
 
-# The text value for this designation.
+# CodeSystem.concept.designation.value
 #: CodeSystem.concept.designation.value
 msgid "Баротерапия"
 msgstr ""
 
-# The text value for this designation.
+# CodeSystem.concept.designation.value
 #: CodeSystem.concept.designation.value
 msgid "Barotherapy"
 msgstr ""
 
-# A human readable string that is the recommended default way to present this concept to a user.
+# CodeSystem.concept.display
 #: CodeSystem.concept.display
 msgid "Suv muolajasi"
 msgstr ""
 
-# The text value for this designation.
+# CodeSystem.concept.designation.value
 #: CodeSystem.concept.designation.value
 msgid "Водолечение"
 msgstr ""
 
-# The text value for this designation.
+# CodeSystem.concept.designation.value
 #: CodeSystem.concept.designation.value
 msgid "Hydrotherapy"
 msgstr ""
 
-# A human readable string that is the recommended default way to present this concept to a user.
+# CodeSystem.concept.display
 #: CodeSystem.concept.display
 msgid "Dorivor vannalar"
 msgstr ""
 
-# The text value for this designation.
+# CodeSystem.concept.designation.value
 #: CodeSystem.concept.designation.value
 msgid "Ванны лекарственные"
 msgstr ""
 
-# The text value for this designation.
+# CodeSystem.concept.designation.value
 #: CodeSystem.concept.designation.value
 msgid "Therapeutic baths"
 msgstr ""
 
-# A human readable string that is the recommended default way to present this concept to a user.
+# CodeSystem.concept.display
 #: CodeSystem.concept.display
 msgid "Gidrogalvanik vannalar"
 msgstr ""
 
-# The text value for this designation.
+# CodeSystem.concept.designation.value
 #: CodeSystem.concept.designation.value
 msgid "Ванны гидрогальванические"
 msgstr ""
 
-# The text value for this designation.
+# CodeSystem.concept.designation.value
 #: CodeSystem.concept.designation.value
 msgid "Hydrogalvanic baths"
 msgstr ""
 
-# A human readable string that is the recommended default way to present this concept to a user.
+# CodeSystem.concept.display
 #: CodeSystem.concept.display
 msgid "Mineral vannalar"
 msgstr ""
 
-# The text value for this designation.
+# CodeSystem.concept.designation.value
 #: CodeSystem.concept.designation.value
 msgid "Ванны минеральные"
 msgstr ""
 
-# The text value for this designation.
+# CodeSystem.concept.designation.value
 #: CodeSystem.concept.designation.value
 msgid "Mineral Baths"
 msgstr ""
 
-# A human readable string that is the recommended default way to present this concept to a user.
+# CodeSystem.concept.display
 #: CodeSystem.concept.display
 msgid "Vodorod sulfidli vannalar"
 msgstr ""
 
-# The text value for this designation.
+# CodeSystem.concept.designation.value
 #: CodeSystem.concept.designation.value
 msgid "Ванны сероводородные"
 msgstr ""
 
-# The text value for this designation.
+# CodeSystem.concept.designation.value
 #: CodeSystem.concept.designation.value
 msgid "Hydrosulfuric baths"
 msgstr ""
 
-# A human readable string that is the recommended default way to present this concept to a user.
+# CodeSystem.concept.display
 #: CodeSystem.concept.display
 msgid "Rodon vannalar"
 msgstr ""
 
-# The text value for this designation.
+# CodeSystem.concept.designation.value
 #: CodeSystem.concept.designation.value
 msgid "Ванны радоновые"
 msgstr ""
 
-# The text value for this designation.
+# CodeSystem.concept.designation.value
 #: CodeSystem.concept.designation.value
 msgid "Radon baths"
 msgstr ""
 
-# A human readable string that is the recommended default way to present this concept to a user.
+# CodeSystem.concept.display
 #: CodeSystem.concept.display
 msgid "Gaz vannalar"
 msgstr ""
 
-# The text value for this designation.
+# CodeSystem.concept.designation.value
 #: CodeSystem.concept.designation.value
 msgid "Ванны газовые"
 msgstr ""
 
-# The text value for this designation.
+# CodeSystem.concept.designation.value
 #: CodeSystem.concept.designation.value
 msgid "Gas baths"
 msgstr ""
 
-# A human readable string that is the recommended default way to present this concept to a user.
+# CodeSystem.concept.display
 #: CodeSystem.concept.display
 msgid "Gazli vanna(kislorod)"
 msgstr ""
 
-# The text value for this designation.
+# CodeSystem.concept.designation.value
 #: CodeSystem.concept.designation.value
 msgid "Ванна газовая (кислород)"
 msgstr ""
 
-# The text value for this designation.
+# CodeSystem.concept.designation.value
 #: CodeSystem.concept.designation.value
 msgid "Gas bath (oxygen)"
 msgstr ""
 
-# A human readable string that is the recommended default way to present this concept to a user.
+# CodeSystem.concept.display
 #: CodeSystem.concept.display
 msgid "Gazli vanna(karbonat angidrid)"
 msgstr ""
 
-# The text value for this designation.
+# CodeSystem.concept.designation.value
 #: CodeSystem.concept.designation.value
 msgid "Ванна газовая (карбонат)"
 msgstr ""
 
-# The text value for this designation.
+# CodeSystem.concept.designation.value
 #: CodeSystem.concept.designation.value
 msgid "Gas bath (carbon)"
 msgstr ""
 
-# A human readable string that is the recommended default way to present this concept to a user.
+# CodeSystem.concept.display
 #: CodeSystem.concept.display
 msgid "Gazli vanna(azot)"
 msgstr ""
 
-# The text value for this designation.
+# CodeSystem.concept.designation.value
 #: CodeSystem.concept.designation.value
 msgid "Ванна газовая (азот)"
 msgstr ""
 
-# The text value for this designation.
+# CodeSystem.concept.designation.value
 #: CodeSystem.concept.designation.value
 msgid "Gas bath (nitrogen)"
 msgstr ""
 
-# A human readable string that is the recommended default way to present this concept to a user.
+# CodeSystem.concept.display
 #: CodeSystem.concept.display
 msgid "Xushbo‘y vannalar"
 msgstr ""
 
-# The text value for this designation.
+# CodeSystem.concept.designation.value
 #: CodeSystem.concept.designation.value
 msgid "Ванны ароматические"
 msgstr ""
 
-# The text value for this designation.
+# CodeSystem.concept.designation.value
 #: CodeSystem.concept.designation.value
 msgid "Aromatic baths"
 msgstr ""
 
-# A human readable string that is the recommended default way to present this concept to a user.
+# CodeSystem.concept.display
 #: CodeSystem.concept.display
 msgid "Kontrast vannalar"
 msgstr ""
 
-# The text value for this designation.
+# CodeSystem.concept.designation.value
 #: CodeSystem.concept.designation.value
 msgid "Ванны контрастные"
 msgstr ""
 
-# The text value for this designation.
+# CodeSystem.concept.designation.value
 #: CodeSystem.concept.designation.value
 msgid "Contrast baths"
 msgstr ""
 
-# A human readable string that is the recommended default way to present this concept to a user.
+# CodeSystem.concept.display
 #: CodeSystem.concept.display
 msgid "Uyurmali vannalar"
 msgstr ""
 
-# The text value for this designation.
+# CodeSystem.concept.designation.value
 #: CodeSystem.concept.designation.value
 msgid "Ванны вихревые"
 msgstr ""
 
-# The text value for this designation.
+# CodeSystem.concept.designation.value
 #: CodeSystem.concept.designation.value
 msgid "Vortex baths"
 msgstr ""
 
-# A human readable string that is the recommended default way to present this concept to a user.
+# CodeSystem.concept.display
 #: CodeSystem.concept.display
 msgid "Quruq havoli vannalar"
 msgstr ""
 
-# The text value for this designation.
+# CodeSystem.concept.designation.value
 #: CodeSystem.concept.designation.value
 msgid "Ванны суховоздушные"
 msgstr ""
 
-# The text value for this designation.
+# CodeSystem.concept.designation.value
 #: CodeSystem.concept.designation.value
 msgid "Dry air baths"
 msgstr ""
 
-# A human readable string that is the recommended default way to present this concept to a user.
+# CodeSystem.concept.display
 #: CodeSystem.concept.display
 msgid "Loyli vannalar"
 msgstr ""
 
-# The text value for this designation.
+# CodeSystem.concept.designation.value
 #: CodeSystem.concept.designation.value
 msgid "Грязевые ванны"
 msgstr ""
 
-# The text value for this designation.
+# CodeSystem.concept.designation.value
 #: CodeSystem.concept.designation.value
 msgid "Mud baths"
 msgstr ""
 
-# A human readable string that is the recommended default way to present this concept to a user.
+# CodeSystem.concept.display
 #: CodeSystem.concept.display
 msgid "Havo pufakchali vannalar (marvaridli)"
 msgstr ""
 
-# The text value for this designation.
+# CodeSystem.concept.designation.value
 #: CodeSystem.concept.designation.value
 msgid "Ванны воздушно-пузырьковые (жемчужные)"
 msgstr ""
 
-# The text value for this designation.
+# CodeSystem.concept.designation.value
 #: CodeSystem.concept.designation.value
 msgid "Air bubble baths (pearl baths)"
 msgstr ""
 
-# A human readable string that is the recommended default way to present this concept to a user.
+# CodeSystem.concept.display
 #: CodeSystem.concept.display
 msgid "Subakval ichak vannasi"
 msgstr ""
 
-# The text value for this designation.
+# CodeSystem.concept.designation.value
 #: CodeSystem.concept.designation.value
 msgid "Ванна субаквальная кишечная"
 msgstr ""
 
-# The text value for this designation.
+# CodeSystem.concept.designation.value
 #: CodeSystem.concept.designation.value
 msgid "Subaquatic intestinal bath"
 msgstr ""
 
-# A human readable string that is the recommended default way to present this concept to a user.
+# CodeSystem.concept.display
 #: CodeSystem.concept.display
 msgid "Yodbromli vanna"
 msgstr ""
 
-# The text value for this designation.
+# CodeSystem.concept.designation.value
 #: CodeSystem.concept.designation.value
 msgid "Йодобромная ванна"
 msgstr ""
 
-# The text value for this designation.
+# CodeSystem.concept.designation.value
 #: CodeSystem.concept.designation.value
 msgid "Iodine-bromine bath"
 msgstr ""
 
-# A human readable string that is the recommended default way to present this concept to a user.
+# CodeSystem.concept.display
 #: CodeSystem.concept.display
 msgid "Qumli vannalar"
 msgstr ""
 
-# The text value for this designation.
+# CodeSystem.concept.designation.value
 #: CodeSystem.concept.designation.value
 msgid "Песочные ванны"
 msgstr ""
 
-# The text value for this designation.
+# CodeSystem.concept.designation.value
 #: CodeSystem.concept.designation.value
 msgid "Sand baths"
 msgstr ""
 
-# A human readable string that is the recommended default way to present this concept to a user.
+# CodeSystem.concept.display
 #: CodeSystem.concept.display
 msgid "Davolovchi dush"
 msgstr ""
 
-# The text value for this designation.
+# CodeSystem.concept.designation.value
 #: CodeSystem.concept.designation.value
 msgid "Душ лечебный"
 msgstr ""
 
-# The text value for this designation.
+# CodeSystem.concept.designation.value
 #: CodeSystem.concept.designation.value
 msgid "Therapeutic shower"
 msgstr ""
 
-# A human readable string that is the recommended default way to present this concept to a user.
+# CodeSystem.concept.display
 #: CodeSystem.concept.display
 msgid "Suv osti dush-massaji"
 msgstr ""
 
-# The text value for this designation.
+# CodeSystem.concept.designation.value
 #: CodeSystem.concept.designation.value
 msgid "Подводный душ-массаж"
 msgstr ""
 
-# The text value for this designation.
+# CodeSystem.concept.designation.value
 #: CodeSystem.concept.designation.value
 msgid "Underwater massage shower"
 msgstr ""
 
-# A human readable string that is the recommended default way to present this concept to a user.
+# CodeSystem.concept.display
 #: CodeSystem.concept.display
 msgid "Umurtqa pog‘onasini suv ostida cho‘zish"
 msgstr ""
 
-# The text value for this designation.
+# CodeSystem.concept.designation.value
 #: CodeSystem.concept.designation.value
 msgid "Подводное вытяжение позвоночника"
 msgstr ""
 
-# The text value for this designation.
+# CodeSystem.concept.designation.value
 #: CodeSystem.concept.designation.value
 msgid "Underwater spinal traction"
 msgstr ""
 
-# A human readable string that is the recommended default way to present this concept to a user.
+# CodeSystem.concept.display
 #: CodeSystem.concept.display
 msgid "Galvanizatsiya"
 msgstr ""
 
-# The text value for this designation.
+# CodeSystem.concept.designation.value
 #: CodeSystem.concept.designation.value
 msgid "Гальванизация"
 msgstr ""
 
-# The text value for this designation.
+# CodeSystem.concept.designation.value
 #: CodeSystem.concept.designation.value
 msgid "Galvanization"
 msgstr ""
 
-# A human readable string that is the recommended default way to present this concept to a user.
+# CodeSystem.concept.display
 #: CodeSystem.concept.display
 msgid "Gelioterapiya"
 msgstr ""
 
-# The text value for this designation.
+# CodeSystem.concept.designation.value
 #: CodeSystem.concept.designation.value
 msgid "Гелиотерапия"
 msgstr ""
 
-# The text value for this designation.
+# CodeSystem.concept.designation.value
 #: CodeSystem.concept.designation.value
 msgid "Heliotherapy"
 msgstr ""
 
-# A human readable string that is the recommended default way to present this concept to a user.
+# CodeSystem.concept.display
 #: CodeSystem.concept.display
 msgid "Gipoksiterapiya"
 msgstr ""
 
-# The text value for this designation.
+# CodeSystem.concept.designation.value
 #: CodeSystem.concept.designation.value
 msgid "Гипокситерапия"
 msgstr ""
 
-# The text value for this designation.
+# CodeSystem.concept.designation.value
 #: CodeSystem.concept.designation.value
 msgid "Hypoxitherapy"
 msgstr ""
 
-# A human readable string that is the recommended default way to present this concept to a user.
+# CodeSystem.concept.display
 #: CodeSystem.concept.display
 msgid "Loy bilan davolash"
 msgstr ""
 
-# The text value for this designation.
+# CodeSystem.concept.designation.value
 #: CodeSystem.concept.designation.value
 msgid "Грязелечение"
 msgstr ""
 
-# The text value for this designation.
+# CodeSystem.concept.designation.value
 #: CodeSystem.concept.designation.value
 msgid "Mud treatment"
 msgstr ""
 
-# A human readable string that is the recommended default way to present this concept to a user.
+# CodeSystem.concept.display
 #: CodeSystem.concept.display
 msgid "Galoterapiya"
 msgstr ""
 
-# The text value for this designation.
+# CodeSystem.concept.designation.value
 #: CodeSystem.concept.designation.value
 msgid "Галотерапия"
 msgstr ""
 
-# The text value for this designation.
+# CodeSystem.concept.designation.value
 #: CodeSystem.concept.designation.value
 msgid "Halotherapy"
 msgstr ""
 
-# A human readable string that is the recommended default way to present this concept to a user.
+# CodeSystem.concept.display
 #: CodeSystem.concept.display
 msgid "Galvanik loy bilan davolash"
 msgstr ""
 
-# The text value for this designation.
+# CodeSystem.concept.designation.value
 #: CodeSystem.concept.designation.value
 msgid "Гальваногрязелечение"
 msgstr ""
 
-# The text value for this designation.
+# CodeSystem.concept.designation.value
 #: CodeSystem.concept.designation.value
 msgid "Galvanic-mud therapy"
 msgstr ""
 
-# A human readable string that is the recommended default way to present this concept to a user.
+# CodeSystem.concept.display
 #: CodeSystem.concept.display
 msgid "Loyqa induktotermiya"
 msgstr ""
 
-# The text value for this designation.
+# CodeSystem.concept.designation.value
 #: CodeSystem.concept.designation.value
 msgid "Грязеиндуктотермия"
 msgstr ""
 
-# The text value for this designation.
+# CodeSystem.concept.designation.value
 #: CodeSystem.concept.designation.value
 msgid "Mud inductothermy"
 msgstr ""
 
-# A human readable string that is the recommended default way to present this concept to a user.
+# CodeSystem.concept.display
 #: CodeSystem.concept.display
 msgid "Pelofonoterapiya"
 msgstr ""
 
-# The text value for this designation.
+# CodeSystem.concept.designation.value
 #: CodeSystem.concept.designation.value
 msgid "Пелофонотерапия"
 msgstr ""
 
-# The text value for this designation.
+# CodeSystem.concept.designation.value
 #: CodeSystem.concept.designation.value
 msgid "Pelofofonotherapy"
 msgstr ""
 
-# A human readable string that is the recommended default way to present this concept to a user.
+# CodeSystem.concept.display
 #: CodeSystem.concept.display
 msgid "Darsonvalizatsiya"
 msgstr ""
 
-# The text value for this designation.
+# CodeSystem.concept.designation.value
 #: CodeSystem.concept.designation.value
 msgid "Дарсонвализация"
 msgstr ""
 
-# The text value for this designation.
+# CodeSystem.concept.designation.value
 #: CodeSystem.concept.designation.value
 msgid "Darsonvalization"
 msgstr ""
 
-# A human readable string that is the recommended default way to present this concept to a user.
+# CodeSystem.concept.display
 #: CodeSystem.concept.display
 msgid "Detsimetrli terapiya"
 msgstr ""
 
-# The text value for this designation.
+# CodeSystem.concept.designation.value
 #: CodeSystem.concept.designation.value
 msgid "Дециметровая терапия (ДМВ-терапия)"
 msgstr ""
 
-# The text value for this designation.
+# CodeSystem.concept.designation.value
 #: CodeSystem.concept.designation.value
 msgid "Decimeter therapy (DMV therapy)"
 msgstr ""
 
-# A human readable string that is the recommended default way to present this concept to a user.
+# CodeSystem.concept.display
 #: CodeSystem.concept.display
 msgid "Diadinamoterapiya"
 msgstr ""
 
-# The text value for this designation.
+# CodeSystem.concept.designation.value
 #: CodeSystem.concept.designation.value
 msgid "Диадинамотерапия (ДДТ)"
 msgstr ""
 
-# The text value for this designation.
+# CodeSystem.concept.designation.value
 #: CodeSystem.concept.designation.value
 msgid "Diadynamic therapy (DDT)"
 msgstr ""
 
-# A human readable string that is the recommended default way to present this concept to a user.
+# CodeSystem.concept.display
 #: CodeSystem.concept.display
 msgid "Duodenal zondlash"
 msgstr ""
 
-# The text value for this designation.
+# CodeSystem.concept.designation.value
 #: CodeSystem.concept.designation.value
 msgid "Дуоденальное зондирование"
 msgstr ""
 
-# The text value for this designation.
+# CodeSystem.concept.designation.value
 #: CodeSystem.concept.designation.value
 msgid "Duodenal sounding"
 msgstr ""
 
-# A human readable string that is the recommended default way to present this concept to a user.
+# CodeSystem.concept.display
 #: CodeSystem.concept.display
 msgid "Induktometriya"
 msgstr ""
 
-# The text value for this designation.
+# CodeSystem.concept.designation.value
 #: CodeSystem.concept.designation.value
 msgid "Индуктотермия"
 msgstr ""
 
-# The text value for this designation.
+# CodeSystem.concept.designation.value
 #: CodeSystem.concept.designation.value
 msgid "Inductothermy"
 msgstr ""
 
-# A human readable string that is the recommended default way to present this concept to a user.
+# CodeSystem.concept.display
 #: CodeSystem.concept.display
 msgid "Ingalyatsiya (aerozolterapiya)"
 msgstr ""
 
-# The text value for this designation.
+# CodeSystem.concept.designation.value
 #: CodeSystem.concept.designation.value
 msgid "Ингаляция (Аэрозольтерапия)"
 msgstr ""
 
-# The text value for this designation.
+# CodeSystem.concept.designation.value
 #: CodeSystem.concept.designation.value
 msgid "Inhalation (Aerosol therapy)"
 msgstr ""
 
-# A human readable string that is the recommended default way to present this concept to a user.
+# CodeSystem.concept.display
 #: CodeSystem.concept.display
 msgid "Infraqizil nurlanish"
 msgstr ""
 
-# The text value for this designation.
+# CodeSystem.concept.designation.value
 #: CodeSystem.concept.designation.value
 msgid "Инфракрасное облучение"
 msgstr ""
 
-# The text value for this designation.
+# CodeSystem.concept.designation.value
 #: CodeSystem.concept.designation.value
 msgid "Infrared radiation"
 msgstr ""
 
-# A human readable string that is the recommended default way to present this concept to a user.
+# CodeSystem.concept.display
 #: CodeSystem.concept.display
 msgid "Interferent terapiya"
 msgstr ""
 
-# The text value for this designation.
+# CodeSystem.concept.designation.value
 #: CodeSystem.concept.designation.value
 msgid "Интерференцтерапия"
 msgstr ""
 
-# The text value for this designation.
+# CodeSystem.concept.designation.value
 #: CodeSystem.concept.designation.value
 msgid "Interferential therapy"
 msgstr ""
 
-# A human readable string that is the recommended default way to present this concept to a user.
+# CodeSystem.concept.display
 #: CodeSystem.concept.display
 msgid "chodirda kislorod terapiyasi"
 msgstr ""
 
-# The text value for this designation.
+# CodeSystem.concept.designation.value
 #: CodeSystem.concept.designation.value
 msgid "Кислородотерапия в палатке"
 msgstr ""
 
-# The text value for this designation.
+# CodeSystem.concept.designation.value
 #: CodeSystem.concept.designation.value
 msgid "Oxygen therapy in a tent"
 msgstr ""
 
-# A human readable string that is the recommended default way to present this concept to a user.
+# CodeSystem.concept.display
 #: CodeSystem.concept.display
 msgid "O‘ta yuqori chastotali terapiya"
 msgstr ""
 
-# The text value for this designation.
+# CodeSystem.concept.designation.value
 #: CodeSystem.concept.designation.value
 msgid "Крайне высокочастотная терапия (КВЧ-терапия)"
 msgstr ""
 
-# The text value for this designation.
+# CodeSystem.concept.designation.value
 #: CodeSystem.concept.designation.value
 msgid "Extremely high-frequency therapy (EHF therapy)"
 msgstr ""
 
-# A human readable string that is the recommended default way to present this concept to a user.
+# CodeSystem.concept.display
 #: CodeSystem.concept.display
 msgid "Lazer terapiya"
 msgstr ""
 
-# The text value for this designation.
+# CodeSystem.concept.designation.value
 #: CodeSystem.concept.designation.value
 msgid "Лазеротерапия"
 msgstr ""
 
-# The text value for this designation.
+# CodeSystem.concept.designation.value
 #: CodeSystem.concept.designation.value
 msgid "Laser therapy"
 msgstr ""
 
-# A human readable string that is the recommended default way to present this concept to a user.
+# CodeSystem.concept.display
 #: CodeSystem.concept.display
 msgid "Lazer punktura"
 msgstr ""
 
-# The text value for this designation.
+# CodeSystem.concept.designation.value
 #: CodeSystem.concept.designation.value
 msgid "Лазеропунктура"
 msgstr ""
 
-# The text value for this designation.
+# CodeSystem.concept.designation.value
 #: CodeSystem.concept.designation.value
 msgid "Laser acupuncture"
 msgstr ""
 
-# A human readable string that is the recommended default way to present this concept to a user.
+# CodeSystem.concept.display
 #: CodeSystem.concept.display
 msgid "Davolash jismoniy tarbiyasi"
 msgstr ""
 
-# The text value for this designation.
+# CodeSystem.concept.designation.value
 #: CodeSystem.concept.designation.value
 msgid "Лечебная физическая культура (ЛФК)"
 msgstr ""
 
-# The text value for this designation.
+# CodeSystem.concept.designation.value
 #: CodeSystem.concept.designation.value
 msgid "Physical therapy"
 msgstr ""
 
-# A human readable string that is the recommended default way to present this concept to a user.
+# CodeSystem.concept.display
 #: CodeSystem.concept.display
 msgid "Magnit terapiya"
 msgstr ""
 
-# The text value for this designation.
+# CodeSystem.concept.designation.value
 #: CodeSystem.concept.designation.value
 msgid "Магнитотерапия"
 msgstr ""
 
-# The text value for this designation.
+# CodeSystem.concept.designation.value
 #: CodeSystem.concept.designation.value
 msgid "Magnetic therapy"
 msgstr ""
 
-# A human readable string that is the recommended default way to present this concept to a user.
+# CodeSystem.concept.display
 #: CodeSystem.concept.display
 msgid "Magnit punktura"
 msgstr ""
 
-# The text value for this designation.
+# CodeSystem.concept.designation.value
 #: CodeSystem.concept.designation.value
 msgid "Магнитопунктура"
 msgstr ""
 
-# The text value for this designation.
+# CodeSystem.concept.designation.value
 #: CodeSystem.concept.designation.value
 msgid "Magnetic puncture"
 msgstr ""
 
-# A human readable string that is the recommended default way to present this concept to a user.
+# CodeSystem.concept.display
 #: CodeSystem.concept.display
 msgid "Davolovchi massaj"
 msgstr ""
 
-# The text value for this designation.
+# CodeSystem.concept.designation.value
 #: CodeSystem.concept.designation.value
 msgid "Массаж лечебный"
 msgstr ""
 
-# The text value for this designation.
+# CodeSystem.concept.designation.value
 #: CodeSystem.concept.designation.value
 msgid "Therapeutic massage"
 msgstr ""
 
-# A human readable string that is the recommended default way to present this concept to a user.
+# CodeSystem.concept.display
 #: CodeSystem.concept.display
 msgid "Kriomassaj"
 msgstr ""
 
-# The text value for this designation.
+# CodeSystem.concept.designation.value
 #: CodeSystem.concept.designation.value
 msgid "Криомассаж"
 msgstr ""
 
-# The text value for this designation.
+# CodeSystem.concept.designation.value
 #: CodeSystem.concept.designation.value
 msgid "Cryomassage"
 msgstr ""
 
-# A human readable string that is the recommended default way to present this concept to a user.
+# CodeSystem.concept.display
 #: CodeSystem.concept.display
 msgid "Vakuumli massaj"
 msgstr ""
 
-# The text value for this designation.
+# CodeSystem.concept.designation.value
 #: CodeSystem.concept.designation.value
 msgid "Вакуумный массаж"
 msgstr ""
 
-# The text value for this designation.
+# CodeSystem.concept.designation.value
 #: CodeSystem.concept.designation.value
 msgid "Vacuum massage"
 msgstr ""
 
-# A human readable string that is the recommended default way to present this concept to a user.
+# CodeSystem.concept.display
 #: CodeSystem.concept.display
 msgid "Ultrabinafsha nurlanish (UB-nurlanish) uchun biomiqdorni aniqlash"
 msgstr ""
 
-# The text value for this designation.
+# CodeSystem.concept.designation.value
 #: CodeSystem.concept.designation.value
 msgid "Определение биодозы для ультрафиолетового облучения (УФ-облучение)"
 msgstr ""
 
-# The text value for this designation.
+# CodeSystem.concept.designation.value
 #: CodeSystem.concept.designation.value
 msgid "Biodose determination for ultraviolet irradiation (UV irradiation)"
 msgstr ""
 
-# A human readable string that is the recommended default way to present this concept to a user.
+# CodeSystem.concept.display
 #: CodeSystem.concept.display
 msgid "Ozokeritli davolash"
 msgstr ""
 
-# The text value for this designation.
+# CodeSystem.concept.designation.value
 #: CodeSystem.concept.designation.value
 msgid "Озокеритолечение"
 msgstr ""
 
-# The text value for this designation.
+# CodeSystem.concept.designation.value
 #: CodeSystem.concept.designation.value
 msgid "Ozokeritotherapy"
 msgstr ""
 
-# A human readable string that is the recommended default way to present this concept to a user.
+# CodeSystem.concept.display
 #: CodeSystem.concept.display
 msgid "Oksigen terapiya"
 msgstr ""
 
-# The text value for this designation.
+# CodeSystem.concept.designation.value
 #: CodeSystem.concept.designation.value
 msgid "Оксигенотерапия"
 msgstr ""
 
-# The text value for this designation.
+# CodeSystem.concept.designation.value
 #: CodeSystem.concept.designation.value
 msgid "Oxygen therapy"
 msgstr ""
 
-# A human readable string that is the recommended default way to present this concept to a user.
+# CodeSystem.concept.display
 #: CodeSystem.concept.display
 msgid "Parafinli davolash"
 msgstr ""
 
-# The text value for this designation.
+# CodeSystem.concept.designation.value
 #: CodeSystem.concept.designation.value
 msgid "Парафинолечение"
 msgstr ""
 
-# The text value for this designation.
+# CodeSystem.concept.designation.value
 #: CodeSystem.concept.designation.value
 msgid "Paraffin-wax treatment"
 msgstr ""
 
-# A human readable string that is the recommended default way to present this concept to a user.
+# CodeSystem.concept.display
 #: CodeSystem.concept.display
 msgid "Santimetr to‘lqinli terapiya"
 msgstr ""
 
-# The text value for this designation.
+# CodeSystem.concept.designation.value
 #: CodeSystem.concept.designation.value
 msgid "Сантиметроволновая терапия (СМВ-терапия)"
 msgstr ""
 
-# The text value for this designation.
+# CodeSystem.concept.designation.value
 #: CodeSystem.concept.designation.value
 msgid "Centimeter wave therapy (CMW therapy)"
 msgstr ""
 
-# A human readable string that is the recommended default way to present this concept to a user.
+# CodeSystem.concept.display
 #: CodeSystem.concept.display
 msgid "O‘ta yuqori chastotali elektroterapiya"
 msgstr ""
 
-# The text value for this designation.
+# CodeSystem.concept.designation.value
 #: CodeSystem.concept.designation.value
 msgid "Сверхвысокочастотная электротерапия (СВЧ-терапия)"
 msgstr ""
 
-# The text value for this designation.
+# CodeSystem.concept.designation.value
 #: CodeSystem.concept.designation.value
 msgid "Super high-frequency electrotherapy (SHF electrotherapy)"
 msgstr ""
 
-# A human readable string that is the recommended default way to present this concept to a user.
+# CodeSystem.concept.display
 #: CodeSystem.concept.display
 msgid "Nur bilan davolash"
 msgstr ""
 
-# The text value for this designation.
+# CodeSystem.concept.designation.value
 #: CodeSystem.concept.designation.value
 msgid "Светолечение"
 msgstr ""
 
-# The text value for this designation.
+# CodeSystem.concept.designation.value
 #: CodeSystem.concept.designation.value
 msgid "Light therapy"
 msgstr ""
 
-# A human readable string that is the recommended default way to present this concept to a user.
+# CodeSystem.concept.display
 #: CodeSystem.concept.display
 msgid "Nurli vanna"
 msgstr ""
 
-# The text value for this designation.
+# CodeSystem.concept.designation.value
 #: CodeSystem.concept.designation.value
 msgid "Световая ванна"
 msgstr ""
 
-# The text value for this designation.
+# CodeSystem.concept.designation.value
 #: CodeSystem.concept.designation.value
 msgid "Light bath"
 msgstr ""
 
-# A human readable string that is the recommended default way to present this concept to a user.
+# CodeSystem.concept.display
 #: CodeSystem.concept.display
 msgid "Skeletni cho‘zish"
 msgstr ""
 
-# The text value for this designation.
+# CodeSystem.concept.designation.value
 #: CodeSystem.concept.designation.value
 msgid "Скелетное вытяжение"
 msgstr ""
 
-# The text value for this designation.
+# CodeSystem.concept.designation.value
 #: CodeSystem.concept.designation.value
 msgid "Skeletal traction"
 msgstr ""
 
-# A human readable string that is the recommended default way to present this concept to a user.
+# CodeSystem.concept.display
 #: CodeSystem.concept.display
 msgid "Issiqlik bilan davolash"
 msgstr ""
 
-# The text value for this designation.
+# CodeSystem.concept.designation.value
 #: CodeSystem.concept.designation.value
 msgid "Теплолечение"
 msgstr ""
 
-# The text value for this designation.
+# CodeSystem.concept.designation.value
 #: CodeSystem.concept.designation.value
 msgid "Thermal therapy"
 msgstr ""
 
-# A human readable string that is the recommended default way to present this concept to a user.
+# CodeSystem.concept.display
 #: CodeSystem.concept.display
 msgid "Tyubaj"
 msgstr ""
 
-# The text value for this designation.
+# CodeSystem.concept.designation.value
 #: CodeSystem.concept.designation.value
 msgid "Тюбаж"
 msgstr ""
 
-# The text value for this designation.
+# CodeSystem.concept.designation.value
 #: CodeSystem.concept.designation.value
 msgid "Tubage"
 msgstr ""
 
-# A human readable string that is the recommended default way to present this concept to a user.
+# CodeSystem.concept.display
 #: CodeSystem.concept.display
 msgid "Umurtqa pog‘onasini traksion cho‘zish"
 msgstr ""
 
-# The text value for this designation.
+# CodeSystem.concept.designation.value
 #: CodeSystem.concept.designation.value
 msgid "Тракционное вытяжение позвоночника"
 msgstr ""
 
-# The text value for this designation.
+# CodeSystem.concept.designation.value
 #: CodeSystem.concept.designation.value
 msgid "Spinal traction therapy"
 msgstr ""
 
-# A human readable string that is the recommended default way to present this concept to a user.
+# CodeSystem.concept.display
 #: CodeSystem.concept.display
 msgid "Ultratonli davolash"
 msgstr ""
 
-# The text value for this designation.
+# CodeSystem.concept.designation.value
 #: CodeSystem.concept.designation.value
 msgid "Ультратонотерапия (УТТ)"
 msgstr ""
 
-# The text value for this designation.
+# CodeSystem.concept.designation.value
 #: CodeSystem.concept.designation.value
 msgid "Ultratonotherapy (UTT)"
 msgstr ""
 
-# A human readable string that is the recommended default way to present this concept to a user.
+# CodeSystem.concept.display
 #: CodeSystem.concept.display
 msgid "Ultra yuqori chastotali terapiya"
 msgstr ""
 
-# The text value for this designation.
+# CodeSystem.concept.designation.value
 #: CodeSystem.concept.designation.value
 msgid "Ультравысокочастотная терапия (УВЧ-терапия)"
 msgstr ""
 
-# The text value for this designation.
+# CodeSystem.concept.designation.value
 #: CodeSystem.concept.designation.value
 msgid "Ultrahigh-frequency therapy (UHF therapy)"
 msgstr ""
 
-# A human readable string that is the recommended default way to present this concept to a user.
+# CodeSystem.concept.display
 #: CodeSystem.concept.display
 msgid "Ultratovushli terapiya"
 msgstr ""
 
-# The text value for this designation.
+# CodeSystem.concept.designation.value
 #: CodeSystem.concept.designation.value
 msgid "Ультразвуковая терапия"
 msgstr ""
 
-# The text value for this designation.
+# CodeSystem.concept.designation.value
 #: CodeSystem.concept.designation.value
 msgid "Ultrasound therapy"
 msgstr ""
 
-# A human readable string that is the recommended default way to present this concept to a user.
+# CodeSystem.concept.display
 #: CodeSystem.concept.display
 msgid "Ultrabinafsha nurlanish (UB nurlanish)"
 msgstr ""
 
-# The text value for this designation.
+# CodeSystem.concept.designation.value
 #: CodeSystem.concept.designation.value
 msgid "Ультрафиолетовое облучение (УФ-облучение)"
 msgstr ""
 
-# The text value for this designation.
+# CodeSystem.concept.designation.value
 #: CodeSystem.concept.designation.value
 msgid "Ultraviolet irradiation (UV irradiation)"
 msgstr ""
 
-# A human readable string that is the recommended default way to present this concept to a user.
+# CodeSystem.concept.display
 #: CodeSystem.concept.display
 msgid "Ultrabinafsha nurlanish. PUVA-vannalar"
 msgstr ""
 
-# The text value for this designation.
+# CodeSystem.concept.designation.value
 #: CodeSystem.concept.designation.value
 msgid "Ультрафиолетовое облучение. ПУВА-ванны"
 msgstr ""
 
-# The text value for this designation.
+# CodeSystem.concept.designation.value
 #: CodeSystem.concept.designation.value
 msgid "Ultraviolet irradiation. PUVA baths"
 msgstr ""
 
-# A human readable string that is the recommended default way to present this concept to a user.
+# CodeSystem.concept.display
 #: CodeSystem.concept.display
 msgid "Ultrabinafsha nurlanish. Tubus-kvarts"
 msgstr ""
 
-# The text value for this designation.
+# CodeSystem.concept.designation.value
 #: CodeSystem.concept.designation.value
 msgid "Ультрафиолетовое облучение. Тубус-кварц"
 msgstr ""
 
-# The text value for this designation.
+# CodeSystem.concept.designation.value
 #: CodeSystem.concept.designation.value
 msgid "Ultraviolet irradiation. Tubus-quartz"
 msgstr ""
 
-# A human readable string that is the recommended default way to present this concept to a user.
+# CodeSystem.concept.display
 #: CodeSystem.concept.display
 msgid "Franklinizatsiya"
 msgstr ""
 
-# The text value for this designation.
+# CodeSystem.concept.designation.value
 #: CodeSystem.concept.designation.value
 msgid "Франклинизация"
 msgstr ""
 
-# The text value for this designation.
+# CodeSystem.concept.designation.value
 #: CodeSystem.concept.designation.value
 msgid "Franklinization"
 msgstr ""
 
-# A human readable string that is the recommended default way to present this concept to a user.
+# CodeSystem.concept.display
 #: CodeSystem.concept.display
 msgid "Fonoforez"
 msgstr ""
 
-# The text value for this designation.
+# CodeSystem.concept.designation.value
 #: CodeSystem.concept.designation.value
 msgid "Фонофорез"
 msgstr ""
 
-# The text value for this designation.
+# CodeSystem.concept.designation.value
 #: CodeSystem.concept.designation.value
 msgid "Phonophoresis"
 msgstr ""
 
-# A human readable string that is the recommended default way to present this concept to a user.
+# CodeSystem.concept.display
 #: CodeSystem.concept.display
 msgid "Flyuktuorizatsiya"
 msgstr ""
 
-# The text value for this designation.
+# CodeSystem.concept.designation.value
 #: CodeSystem.concept.designation.value
 msgid "Флюктуоризация"
 msgstr ""
 
-# The text value for this designation.
+# CodeSystem.concept.designation.value
 #: CodeSystem.concept.designation.value
 msgid "Fluxtuorization"
 msgstr ""
 
-# A human readable string that is the recommended default way to present this concept to a user.
+# CodeSystem.concept.display
 #: CodeSystem.concept.display
 msgid "Elektroforez"
 msgstr ""
 
-# The text value for this designation.
+# CodeSystem.concept.designation.value
 #: CodeSystem.concept.designation.value
 msgid "Электрофорез"
 msgstr ""
 
-# The text value for this designation.
+# CodeSystem.concept.designation.value
 #: CodeSystem.concept.designation.value
 msgid "Electrophoresis"
 msgstr ""
 
-# A human readable string that is the recommended default way to present this concept to a user.
+# CodeSystem.concept.display
 #: CodeSystem.concept.display
 msgid "Elektro uyqu"
 msgstr ""
 
-# The text value for this designation.
+# CodeSystem.concept.designation.value
 #: CodeSystem.concept.designation.value
 msgid "Электросон"
 msgstr ""
 
-# The text value for this designation.
+# CodeSystem.concept.designation.value
 #: CodeSystem.concept.designation.value
 msgid "Electrosleep"
 msgstr ""
 
-# A human readable string that is the recommended default way to present this concept to a user.
+# CodeSystem.concept.display
 #: CodeSystem.concept.display
 msgid "Elektrotrankvilizatsiya"
 msgstr ""
 
-# The text value for this designation.
+# CodeSystem.concept.designation.value
 #: CodeSystem.concept.designation.value
 msgid "Электротранквилизация"
 msgstr ""
 
-# The text value for this designation.
+# CodeSystem.concept.designation.value
 #: CodeSystem.concept.designation.value
 msgid "Electrotranquillization"
 msgstr ""
 
-# A human readable string that is the recommended default way to present this concept to a user.
+# CodeSystem.concept.display
 #: CodeSystem.concept.display
 msgid "Elektrostimulyatsiya"
 msgstr ""
 
-# The text value for this designation.
+# CodeSystem.concept.designation.value
 #: CodeSystem.concept.designation.value
 msgid "Электростимуляция"
 msgstr ""
 
-# The text value for this designation.
+# CodeSystem.concept.designation.value
 #: CodeSystem.concept.designation.value
 msgid "Electrostimulation"
 msgstr ""

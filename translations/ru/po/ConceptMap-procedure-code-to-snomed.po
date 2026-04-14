@@ -1,760 +1,760 @@
 
-# A natural language name identifying the concept map. This name should be usable as an identifier for the module by machine processing applications such as code generation.
+# ConceptMap.name
 #: ConceptMap.name
 msgid "ProcedureCodeToSnomed"
 msgstr ""
 
-# A short, descriptive, user-friendly title for the concept map.
+# ConceptMap.title
 #: ConceptMap.title
 msgid "UZ local procedure code → SNOMED CT"
 msgstr ""
 
-# The name of the organization or individual responsible for the release and ongoing maintenance of the concept map.
+# ConceptMap.publisher
 #: ConceptMap.publisher
 msgid "Ministry of Health of the Republic of Uzbekistan"
 msgstr ""
 
-# The name of an individual to contact.
+# ContactDetail.name
 #: ContactDetail.name
 msgid "Ministry of Health of the Republic of Uzbekistan"
 msgstr ""
 
-# A free text natural language description of the concept map from a consumer's perspective.
+# ConceptMap.description
 #: ConceptMap.description
 msgid "Maps local UZ procedure code to SNOMED CT for Procedure.code"
 msgstr ""
 
-# A representation of the meaning of the code in the system, following the rules of the system.
+# Coding.display
 #: Coding.display
 msgid "Uzbekistan"
 msgstr ""
 
-# The display for the code. The display is only provided to help editors when editing the concept map.
+# ConceptMap.group.element.display
 #: ConceptMap.group.element.display
 msgid "Amplipulsterapiya"
 msgstr ""
 
-# The display for the code. The display is only provided to help editors when editing the concept map.
+# ConceptMap.group.element.target.display
 #: ConceptMap.group.element.target.display
 msgid "Amplipulse therapy (SMC-therapy)"
 msgstr ""
 
-# The display for the code. The display is only provided to help editors when editing the concept map.
+# ConceptMap.group.element.display
 #: ConceptMap.group.element.display
 msgid "Aeroionterapiya"
 msgstr ""
 
-# The display for the code. The display is only provided to help editors when editing the concept map.
+# ConceptMap.group.element.target.display
 #: ConceptMap.group.element.target.display
 msgid "Advanced oxygen therapy"
 msgstr ""
 
-# The display for the code. The display is only provided to help editors when editing the concept map.
+# ConceptMap.group.element.display
 #: ConceptMap.group.element.display
 msgid "Baroterapiya"
 msgstr ""
 
-# The display for the code. The display is only provided to help editors when editing the concept map.
+# ConceptMap.group.element.target.display
 #: ConceptMap.group.element.target.display
 msgid "Barotherapy"
 msgstr ""
 
-# The display for the code. The display is only provided to help editors when editing the concept map.
+# ConceptMap.group.element.display
 #: ConceptMap.group.element.display
 msgid "Suv muolajasi"
 msgstr ""
 
-# The display for the code. The display is only provided to help editors when editing the concept map.
+# ConceptMap.group.element.target.display
 #: ConceptMap.group.element.target.display
 msgid "Hydrotherapy"
 msgstr ""
 
-# The display for the code. The display is only provided to help editors when editing the concept map.
+# ConceptMap.group.element.display
 #: ConceptMap.group.element.display
 msgid "Dorivor vannalar"
 msgstr ""
 
-# The display for the code. The display is only provided to help editors when editing the concept map.
+# ConceptMap.group.element.target.display
 #: ConceptMap.group.element.target.display
 msgid "Therapeutic baths"
 msgstr ""
 
-# The display for the code. The display is only provided to help editors when editing the concept map.
+# ConceptMap.group.element.display
 #: ConceptMap.group.element.display
 msgid "Gidrogalvanik vannalar"
 msgstr ""
 
-# The display for the code. The display is only provided to help editors when editing the concept map.
+# ConceptMap.group.element.target.display
 #: ConceptMap.group.element.target.display
 msgid "Hydrogalvanic baths"
 msgstr ""
 
-# The display for the code. The display is only provided to help editors when editing the concept map.
+# ConceptMap.group.element.display
 #: ConceptMap.group.element.display
 msgid "Mineral vannalar"
 msgstr ""
 
-# The display for the code. The display is only provided to help editors when editing the concept map.
+# ConceptMap.group.element.target.display
 #: ConceptMap.group.element.target.display
 msgid "Mineral Baths"
 msgstr ""
 
-# The display for the code. The display is only provided to help editors when editing the concept map.
+# ConceptMap.group.element.display
 #: ConceptMap.group.element.display
 msgid "Vodorod sulfidli vannalar"
 msgstr ""
 
-# The display for the code. The display is only provided to help editors when editing the concept map.
+# ConceptMap.group.element.target.display
 #: ConceptMap.group.element.target.display
 msgid "Hydrosulfuric baths"
 msgstr ""
 
-# The display for the code. The display is only provided to help editors when editing the concept map.
+# ConceptMap.group.element.display
 #: ConceptMap.group.element.display
 msgid "Rodon vannalar"
 msgstr ""
 
-# The display for the code. The display is only provided to help editors when editing the concept map.
+# ConceptMap.group.element.target.display
 #: ConceptMap.group.element.target.display
 msgid "Radon baths"
 msgstr ""
 
-# The display for the code. The display is only provided to help editors when editing the concept map.
+# ConceptMap.group.element.display
 #: ConceptMap.group.element.display
 msgid "Gaz vannalar"
 msgstr ""
 
-# The display for the code. The display is only provided to help editors when editing the concept map.
+# ConceptMap.group.element.target.display
 #: ConceptMap.group.element.target.display
 msgid "Gas baths"
 msgstr ""
 
-# The display for the code. The display is only provided to help editors when editing the concept map.
+# ConceptMap.group.element.display
 #: ConceptMap.group.element.display
 msgid "Gazli vanna(kislorod)"
 msgstr ""
 
-# The display for the code. The display is only provided to help editors when editing the concept map.
+# ConceptMap.group.element.target.display
 #: ConceptMap.group.element.target.display
 msgid "Gas bath (oxygen)"
 msgstr ""
 
-# The display for the code. The display is only provided to help editors when editing the concept map.
+# ConceptMap.group.element.display
 #: ConceptMap.group.element.display
 msgid "Gazli vanna(karbonat angidrid)"
 msgstr ""
 
-# The display for the code. The display is only provided to help editors when editing the concept map.
+# ConceptMap.group.element.target.display
 #: ConceptMap.group.element.target.display
 msgid "Gas bath (carbon)"
 msgstr ""
 
-# The display for the code. The display is only provided to help editors when editing the concept map.
+# ConceptMap.group.element.display
 #: ConceptMap.group.element.display
 msgid "Gazli vanna(azot)"
 msgstr ""
 
-# The display for the code. The display is only provided to help editors when editing the concept map.
+# ConceptMap.group.element.target.display
 #: ConceptMap.group.element.target.display
 msgid "Gas bath (nitrogen)"
 msgstr ""
 
-# The display for the code. The display is only provided to help editors when editing the concept map.
+# ConceptMap.group.element.display
 #: ConceptMap.group.element.display
 msgid "Xushbo‘y vannalar"
 msgstr ""
 
-# The display for the code. The display is only provided to help editors when editing the concept map.
+# ConceptMap.group.element.target.display
 #: ConceptMap.group.element.target.display
 msgid "Aromatic baths"
 msgstr ""
 
-# The display for the code. The display is only provided to help editors when editing the concept map.
+# ConceptMap.group.element.display
 #: ConceptMap.group.element.display
 msgid "Kontrast vannalar"
 msgstr ""
 
-# The display for the code. The display is only provided to help editors when editing the concept map.
+# ConceptMap.group.element.target.display
 #: ConceptMap.group.element.target.display
 msgid "Contrast baths"
 msgstr ""
 
-# The display for the code. The display is only provided to help editors when editing the concept map.
+# ConceptMap.group.element.display
 #: ConceptMap.group.element.display
 msgid "Uyurmali vannalar"
 msgstr ""
 
-# The display for the code. The display is only provided to help editors when editing the concept map.
+# ConceptMap.group.element.target.display
 #: ConceptMap.group.element.target.display
 msgid "Vortex baths"
 msgstr ""
 
-# The display for the code. The display is only provided to help editors when editing the concept map.
+# ConceptMap.group.element.display
 #: ConceptMap.group.element.display
 msgid "Quruq havoli vannalar"
 msgstr ""
 
-# The display for the code. The display is only provided to help editors when editing the concept map.
+# ConceptMap.group.element.target.display
 #: ConceptMap.group.element.target.display
 msgid "Dry air baths"
 msgstr ""
 
-# The display for the code. The display is only provided to help editors when editing the concept map.
+# ConceptMap.group.element.display
 #: ConceptMap.group.element.display
 msgid "Loyli vannalar"
 msgstr ""
 
-# The display for the code. The display is only provided to help editors when editing the concept map.
+# ConceptMap.group.element.target.display
 #: ConceptMap.group.element.target.display
 msgid "Mud baths"
 msgstr ""
 
-# The display for the code. The display is only provided to help editors when editing the concept map.
+# ConceptMap.group.element.display
 #: ConceptMap.group.element.display
 msgid "Havo pufakchali vannalar (marvaridli)"
 msgstr ""
 
-# The display for the code. The display is only provided to help editors when editing the concept map.
+# ConceptMap.group.element.target.display
 #: ConceptMap.group.element.target.display
 msgid "Air bubble baths (pearl baths)"
 msgstr ""
 
-# The display for the code. The display is only provided to help editors when editing the concept map.
+# ConceptMap.group.element.display
 #: ConceptMap.group.element.display
 msgid "Subakval ichak vannasi"
 msgstr ""
 
-# The display for the code. The display is only provided to help editors when editing the concept map.
+# ConceptMap.group.element.target.display
 #: ConceptMap.group.element.target.display
 msgid "Subaquatic intestinal bath"
 msgstr ""
 
-# The display for the code. The display is only provided to help editors when editing the concept map.
+# ConceptMap.group.element.display
 #: ConceptMap.group.element.display
 msgid "Yodbromli vanna"
 msgstr ""
 
-# The display for the code. The display is only provided to help editors when editing the concept map.
+# ConceptMap.group.element.target.display
 #: ConceptMap.group.element.target.display
 msgid "Iodine-bromine bath"
 msgstr ""
 
-# The display for the code. The display is only provided to help editors when editing the concept map.
+# ConceptMap.group.element.display
 #: ConceptMap.group.element.display
 msgid "Qumli vannalar"
 msgstr ""
 
-# The display for the code. The display is only provided to help editors when editing the concept map.
+# ConceptMap.group.element.target.display
 #: ConceptMap.group.element.target.display
 msgid "Sand baths"
 msgstr ""
 
-# The display for the code. The display is only provided to help editors when editing the concept map.
+# ConceptMap.group.element.display
 #: ConceptMap.group.element.display
 msgid "Davolovchi dush"
 msgstr ""
 
-# The display for the code. The display is only provided to help editors when editing the concept map.
+# ConceptMap.group.element.target.display
 #: ConceptMap.group.element.target.display
 msgid "Therapeutic shower"
 msgstr ""
 
-# The display for the code. The display is only provided to help editors when editing the concept map.
+# ConceptMap.group.element.display
 #: ConceptMap.group.element.display
 msgid "Suv osti dush-massaji"
 msgstr ""
 
-# The display for the code. The display is only provided to help editors when editing the concept map.
+# ConceptMap.group.element.target.display
 #: ConceptMap.group.element.target.display
 msgid "Underwater massage shower"
 msgstr ""
 
-# The display for the code. The display is only provided to help editors when editing the concept map.
+# ConceptMap.group.element.display
 #: ConceptMap.group.element.display
 msgid "Umurtqa pog‘onasini suv ostida cho‘zish"
 msgstr ""
 
-# The display for the code. The display is only provided to help editors when editing the concept map.
+# ConceptMap.group.element.target.display
 #: ConceptMap.group.element.target.display
 msgid "Underwater spinal traction"
 msgstr ""
 
-# The display for the code. The display is only provided to help editors when editing the concept map.
+# ConceptMap.group.element.display
 #: ConceptMap.group.element.display
 msgid "Galvanizatsiya"
 msgstr ""
 
-# The display for the code. The display is only provided to help editors when editing the concept map.
+# ConceptMap.group.element.target.display
 #: ConceptMap.group.element.target.display
 msgid "Galvanization"
 msgstr ""
 
-# The display for the code. The display is only provided to help editors when editing the concept map.
+# ConceptMap.group.element.display
 #: ConceptMap.group.element.display
 msgid "Gelioterapiya"
 msgstr ""
 
-# The display for the code. The display is only provided to help editors when editing the concept map.
+# ConceptMap.group.element.target.display
 #: ConceptMap.group.element.target.display
 msgid "Heliotherapy"
 msgstr ""
 
-# The display for the code. The display is only provided to help editors when editing the concept map.
+# ConceptMap.group.element.display
 #: ConceptMap.group.element.display
 msgid "Gipoksiterapiya"
 msgstr ""
 
-# The display for the code. The display is only provided to help editors when editing the concept map.
+# ConceptMap.group.element.target.display
 #: ConceptMap.group.element.target.display
 msgid "Hypoxitherapy"
 msgstr ""
 
-# The display for the code. The display is only provided to help editors when editing the concept map.
+# ConceptMap.group.element.display
 #: ConceptMap.group.element.display
 msgid "Loy bilan davolash"
 msgstr ""
 
-# The display for the code. The display is only provided to help editors when editing the concept map.
+# ConceptMap.group.element.target.display
 #: ConceptMap.group.element.target.display
 msgid "Mud treatment"
 msgstr ""
 
-# The display for the code. The display is only provided to help editors when editing the concept map.
+# ConceptMap.group.element.display
 #: ConceptMap.group.element.display
 msgid "Galoterapiya"
 msgstr ""
 
-# The display for the code. The display is only provided to help editors when editing the concept map.
+# ConceptMap.group.element.target.display
 #: ConceptMap.group.element.target.display
 msgid "Halotherapy"
 msgstr ""
 
-# The display for the code. The display is only provided to help editors when editing the concept map.
+# ConceptMap.group.element.display
 #: ConceptMap.group.element.display
 msgid "Galvanik loy bilan davolash"
 msgstr ""
 
-# The display for the code. The display is only provided to help editors when editing the concept map.
+# ConceptMap.group.element.target.display
 #: ConceptMap.group.element.target.display
 msgid "Galvanic-mud therapy"
 msgstr ""
 
-# The display for the code. The display is only provided to help editors when editing the concept map.
+# ConceptMap.group.element.display
 #: ConceptMap.group.element.display
 msgid "Loyqa induktotermiya"
 msgstr ""
 
-# The display for the code. The display is only provided to help editors when editing the concept map.
+# ConceptMap.group.element.target.display
 #: ConceptMap.group.element.target.display
 msgid "Mud inductothermy"
 msgstr ""
 
-# The display for the code. The display is only provided to help editors when editing the concept map.
+# ConceptMap.group.element.display
 #: ConceptMap.group.element.display
 msgid "Pelofonoterapiya"
 msgstr ""
 
-# The display for the code. The display is only provided to help editors when editing the concept map.
+# ConceptMap.group.element.target.display
 #: ConceptMap.group.element.target.display
 msgid "Pelofofonotherapy"
 msgstr ""
 
-# The display for the code. The display is only provided to help editors when editing the concept map.
+# ConceptMap.group.element.display
 #: ConceptMap.group.element.display
 msgid "Darsonvalizatsiya"
 msgstr ""
 
-# The display for the code. The display is only provided to help editors when editing the concept map.
+# ConceptMap.group.element.target.display
 #: ConceptMap.group.element.target.display
 msgid "Darsonvalization"
 msgstr ""
 
-# The display for the code. The display is only provided to help editors when editing the concept map.
+# ConceptMap.group.element.display
 #: ConceptMap.group.element.display
 msgid "Detsimetrli terapiya"
 msgstr ""
 
-# The display for the code. The display is only provided to help editors when editing the concept map.
+# ConceptMap.group.element.target.display
 #: ConceptMap.group.element.target.display
 msgid "Decimeter therapy (DMV therapy)"
 msgstr ""
 
-# The display for the code. The display is only provided to help editors when editing the concept map.
+# ConceptMap.group.element.display
 #: ConceptMap.group.element.display
 msgid "Diadinamoterapiya"
 msgstr ""
 
-# The display for the code. The display is only provided to help editors when editing the concept map.
+# ConceptMap.group.element.target.display
 #: ConceptMap.group.element.target.display
 msgid "Diadynamic therapy (DDT)"
 msgstr ""
 
-# The display for the code. The display is only provided to help editors when editing the concept map.
+# ConceptMap.group.element.display
 #: ConceptMap.group.element.display
 msgid "Duodenal zondlash"
 msgstr ""
 
-# The display for the code. The display is only provided to help editors when editing the concept map.
+# ConceptMap.group.element.target.display
 #: ConceptMap.group.element.target.display
 msgid "Duodenal sounding"
 msgstr ""
 
-# The display for the code. The display is only provided to help editors when editing the concept map.
+# ConceptMap.group.element.display
 #: ConceptMap.group.element.display
 msgid "Induktometriya"
 msgstr ""
 
-# The display for the code. The display is only provided to help editors when editing the concept map.
+# ConceptMap.group.element.target.display
 #: ConceptMap.group.element.target.display
 msgid "Inductothermy"
 msgstr ""
 
-# The display for the code. The display is only provided to help editors when editing the concept map.
+# ConceptMap.group.element.display
 #: ConceptMap.group.element.display
 msgid "Ingalyatsiya (aerozolterapiya)"
 msgstr ""
 
-# The display for the code. The display is only provided to help editors when editing the concept map.
+# ConceptMap.group.element.target.display
 #: ConceptMap.group.element.target.display
 msgid "Inhalation (Aerosol therapy)"
 msgstr ""
 
-# The display for the code. The display is only provided to help editors when editing the concept map.
+# ConceptMap.group.element.display
 #: ConceptMap.group.element.display
 msgid "Infraqizil nurlanish"
 msgstr ""
 
-# The display for the code. The display is only provided to help editors when editing the concept map.
+# ConceptMap.group.element.target.display
 #: ConceptMap.group.element.target.display
 msgid "Infrared radiation"
 msgstr ""
 
-# The display for the code. The display is only provided to help editors when editing the concept map.
+# ConceptMap.group.element.display
 #: ConceptMap.group.element.display
 msgid "Interferent terapiya"
 msgstr ""
 
-# The display for the code. The display is only provided to help editors when editing the concept map.
+# ConceptMap.group.element.target.display
 #: ConceptMap.group.element.target.display
 msgid "Interferential therapy"
 msgstr ""
 
-# The display for the code. The display is only provided to help editors when editing the concept map.
+# ConceptMap.group.element.display
 #: ConceptMap.group.element.display
 msgid "chodirda kislorod terapiyasi"
 msgstr ""
 
-# The display for the code. The display is only provided to help editors when editing the concept map.
+# ConceptMap.group.element.target.display
 #: ConceptMap.group.element.target.display
 msgid "Oxygen therapy in a tent"
 msgstr ""
 
-# The display for the code. The display is only provided to help editors when editing the concept map.
+# ConceptMap.group.element.display
 #: ConceptMap.group.element.display
 msgid "O‘ta yuqori chastotali terapiya"
 msgstr ""
 
-# The display for the code. The display is only provided to help editors when editing the concept map.
+# ConceptMap.group.element.target.display
 #: ConceptMap.group.element.target.display
 msgid "Extremely high-frequency therapy (EHF therapy)"
 msgstr ""
 
-# The display for the code. The display is only provided to help editors when editing the concept map.
+# ConceptMap.group.element.display
 #: ConceptMap.group.element.display
 msgid "Lazer terapiya"
 msgstr ""
 
-# The display for the code. The display is only provided to help editors when editing the concept map.
+# ConceptMap.group.element.target.display
 #: ConceptMap.group.element.target.display
 msgid "Laser therapy"
 msgstr ""
 
-# The display for the code. The display is only provided to help editors when editing the concept map.
+# ConceptMap.group.element.display
 #: ConceptMap.group.element.display
 msgid "Lazer punktura"
 msgstr ""
 
-# The display for the code. The display is only provided to help editors when editing the concept map.
+# ConceptMap.group.element.target.display
 #: ConceptMap.group.element.target.display
 msgid "Laser acupuncture"
 msgstr ""
 
-# The display for the code. The display is only provided to help editors when editing the concept map.
+# ConceptMap.group.element.display
 #: ConceptMap.group.element.display
 msgid "Davolash jismoniy tarbiyasi"
 msgstr ""
 
-# The display for the code. The display is only provided to help editors when editing the concept map.
+# ConceptMap.group.element.target.display
 #: ConceptMap.group.element.target.display
 msgid "Physical therapy"
 msgstr ""
 
-# The display for the code. The display is only provided to help editors when editing the concept map.
+# ConceptMap.group.element.display
 #: ConceptMap.group.element.display
 msgid "Magnit terapiya"
 msgstr ""
 
-# The display for the code. The display is only provided to help editors when editing the concept map.
+# ConceptMap.group.element.target.display
 #: ConceptMap.group.element.target.display
 msgid "Magnetic therapy"
 msgstr ""
 
-# The display for the code. The display is only provided to help editors when editing the concept map.
+# ConceptMap.group.element.display
 #: ConceptMap.group.element.display
 msgid "Magnit punktura"
 msgstr ""
 
-# The display for the code. The display is only provided to help editors when editing the concept map.
+# ConceptMap.group.element.target.display
 #: ConceptMap.group.element.target.display
 msgid "Magnetic puncture"
 msgstr ""
 
-# The display for the code. The display is only provided to help editors when editing the concept map.
+# ConceptMap.group.element.display
 #: ConceptMap.group.element.display
 msgid "Ultrabinafsha nurlanish (UB-nurlanish) uchun biomiqdorni aniqlash"
 msgstr ""
 
-# The display for the code. The display is only provided to help editors when editing the concept map.
+# ConceptMap.group.element.target.display
 #: ConceptMap.group.element.target.display
 msgid "Biodose determination for ultraviolet irradiation (UV irradiation)"
 msgstr ""
 
-# The display for the code. The display is only provided to help editors when editing the concept map.
+# ConceptMap.group.element.display
 #: ConceptMap.group.element.display
 msgid "Ozokeritli davolash"
 msgstr ""
 
-# The display for the code. The display is only provided to help editors when editing the concept map.
+# ConceptMap.group.element.target.display
 #: ConceptMap.group.element.target.display
 msgid "Ozokeritotherapy"
 msgstr ""
 
-# The display for the code. The display is only provided to help editors when editing the concept map.
+# ConceptMap.group.element.display
 #: ConceptMap.group.element.display
 msgid "Oksigen terapiya"
 msgstr ""
 
-# The display for the code. The display is only provided to help editors when editing the concept map.
+# ConceptMap.group.element.target.display
 #: ConceptMap.group.element.target.display
 msgid "Oxygen therapy"
 msgstr ""
 
-# The display for the code. The display is only provided to help editors when editing the concept map.
+# ConceptMap.group.element.display
 #: ConceptMap.group.element.display
 msgid "Parafinli davolash"
 msgstr ""
 
-# The display for the code. The display is only provided to help editors when editing the concept map.
+# ConceptMap.group.element.target.display
 #: ConceptMap.group.element.target.display
 msgid "Paraffin-wax treatment"
 msgstr ""
 
-# The display for the code. The display is only provided to help editors when editing the concept map.
+# ConceptMap.group.element.display
 #: ConceptMap.group.element.display
 msgid "Santimetr to‘lqinli terapiya"
 msgstr ""
 
-# The display for the code. The display is only provided to help editors when editing the concept map.
+# ConceptMap.group.element.target.display
 #: ConceptMap.group.element.target.display
 msgid "Centimeter wave therapy (CMW therapy)"
 msgstr ""
 
-# The display for the code. The display is only provided to help editors when editing the concept map.
+# ConceptMap.group.element.display
 #: ConceptMap.group.element.display
 msgid "O‘ta yuqori chastotali elektroterapiya"
 msgstr ""
 
-# The display for the code. The display is only provided to help editors when editing the concept map.
+# ConceptMap.group.element.target.display
 #: ConceptMap.group.element.target.display
 msgid "Super high-frequency electrotherapy (SHF electrotherapy)"
 msgstr ""
 
-# The display for the code. The display is only provided to help editors when editing the concept map.
+# ConceptMap.group.element.display
 #: ConceptMap.group.element.display
 msgid "Nur bilan davolash"
 msgstr ""
 
-# The display for the code. The display is only provided to help editors when editing the concept map.
+# ConceptMap.group.element.target.display
 #: ConceptMap.group.element.target.display
 msgid "Light therapy"
 msgstr ""
 
-# The display for the code. The display is only provided to help editors when editing the concept map.
+# ConceptMap.group.element.display
 #: ConceptMap.group.element.display
 msgid "Nurli vanna"
 msgstr ""
 
-# The display for the code. The display is only provided to help editors when editing the concept map.
+# ConceptMap.group.element.target.display
 #: ConceptMap.group.element.target.display
 msgid "Light bath"
 msgstr ""
 
-# The display for the code. The display is only provided to help editors when editing the concept map.
+# ConceptMap.group.element.display
 #: ConceptMap.group.element.display
 msgid "Skeletni cho‘zish"
 msgstr ""
 
-# The display for the code. The display is only provided to help editors when editing the concept map.
+# ConceptMap.group.element.target.display
 #: ConceptMap.group.element.target.display
 msgid "Skeletal traction"
 msgstr ""
 
-# The display for the code. The display is only provided to help editors when editing the concept map.
+# ConceptMap.group.element.display
 #: ConceptMap.group.element.display
 msgid "Issiqlik bilan davolash"
 msgstr ""
 
-# The display for the code. The display is only provided to help editors when editing the concept map.
+# ConceptMap.group.element.target.display
 #: ConceptMap.group.element.target.display
 msgid "Thermal therapy"
 msgstr ""
 
-# The display for the code. The display is only provided to help editors when editing the concept map.
+# ConceptMap.group.element.display
 #: ConceptMap.group.element.display
 msgid "Tyubaj"
 msgstr ""
 
-# The display for the code. The display is only provided to help editors when editing the concept map.
+# ConceptMap.group.element.target.display
 #: ConceptMap.group.element.target.display
 msgid "Tubage"
 msgstr ""
 
-# The display for the code. The display is only provided to help editors when editing the concept map.
+# ConceptMap.group.element.display
 #: ConceptMap.group.element.display
 msgid "Umurtqa pog‘onasini traksion cho‘zish"
 msgstr ""
 
-# The display for the code. The display is only provided to help editors when editing the concept map.
+# ConceptMap.group.element.target.display
 #: ConceptMap.group.element.target.display
 msgid "Spinal traction therapy"
 msgstr ""
 
-# The display for the code. The display is only provided to help editors when editing the concept map.
+# ConceptMap.group.element.display
 #: ConceptMap.group.element.display
 msgid "Ultratonli davolash"
 msgstr ""
 
-# The display for the code. The display is only provided to help editors when editing the concept map.
+# ConceptMap.group.element.target.display
 #: ConceptMap.group.element.target.display
 msgid "Ultratonotherapy (UTT)"
 msgstr ""
 
-# The display for the code. The display is only provided to help editors when editing the concept map.
+# ConceptMap.group.element.display
 #: ConceptMap.group.element.display
 msgid "Ultra yuqori chastotali terapiya"
 msgstr ""
 
-# The display for the code. The display is only provided to help editors when editing the concept map.
+# ConceptMap.group.element.target.display
 #: ConceptMap.group.element.target.display
 msgid "Ultrahigh-frequency therapy (UHF therapy)"
 msgstr ""
 
-# The display for the code. The display is only provided to help editors when editing the concept map.
+# ConceptMap.group.element.display
 #: ConceptMap.group.element.display
 msgid "Ultratovushli terapiya"
 msgstr ""
 
-# The display for the code. The display is only provided to help editors when editing the concept map.
+# ConceptMap.group.element.target.display
 #: ConceptMap.group.element.target.display
 msgid "Ultrasound therapy"
 msgstr ""
 
-# The display for the code. The display is only provided to help editors when editing the concept map.
+# ConceptMap.group.element.display
 #: ConceptMap.group.element.display
 msgid "Ultrabinafsha nurlanish (UB nurlanish)"
 msgstr ""
 
-# The display for the code. The display is only provided to help editors when editing the concept map.
+# ConceptMap.group.element.target.display
 #: ConceptMap.group.element.target.display
 msgid "Ultraviolet irradiation (UV irradiation)"
 msgstr ""
 
-# The display for the code. The display is only provided to help editors when editing the concept map.
+# ConceptMap.group.element.display
 #: ConceptMap.group.element.display
 msgid "Ultrabinafsha nurlanish. PUVA-vannalar"
 msgstr ""
 
-# The display for the code. The display is only provided to help editors when editing the concept map.
+# ConceptMap.group.element.target.display
 #: ConceptMap.group.element.target.display
 msgid "Ultraviolet irradiation. PUVA baths"
 msgstr ""
 
-# The display for the code. The display is only provided to help editors when editing the concept map.
+# ConceptMap.group.element.display
 #: ConceptMap.group.element.display
 msgid "Ultrabinafsha nurlanish. Tubus-kvarts"
 msgstr ""
 
-# The display for the code. The display is only provided to help editors when editing the concept map.
+# ConceptMap.group.element.target.display
 #: ConceptMap.group.element.target.display
 msgid "Ultraviolet irradiation. Tubus-quartz"
 msgstr ""
 
-# The display for the code. The display is only provided to help editors when editing the concept map.
+# ConceptMap.group.element.display
 #: ConceptMap.group.element.display
 msgid "Franklinizatsiya"
 msgstr ""
 
-# The display for the code. The display is only provided to help editors when editing the concept map.
+# ConceptMap.group.element.target.display
 #: ConceptMap.group.element.target.display
 msgid "Franklinization"
 msgstr ""
 
-# The display for the code. The display is only provided to help editors when editing the concept map.
+# ConceptMap.group.element.display
 #: ConceptMap.group.element.display
 msgid "Fonoforez"
 msgstr ""
 
-# The display for the code. The display is only provided to help editors when editing the concept map.
+# ConceptMap.group.element.target.display
 #: ConceptMap.group.element.target.display
 msgid "Phonophoresis"
 msgstr ""
 
-# The display for the code. The display is only provided to help editors when editing the concept map.
+# ConceptMap.group.element.display
 #: ConceptMap.group.element.display
 msgid "Flyuktuorizatsiya"
 msgstr ""
 
-# The display for the code. The display is only provided to help editors when editing the concept map.
+# ConceptMap.group.element.target.display
 #: ConceptMap.group.element.target.display
 msgid "Fluxtuorization"
 msgstr ""
 
-# The display for the code. The display is only provided to help editors when editing the concept map.
+# ConceptMap.group.element.display
 #: ConceptMap.group.element.display
 msgid "Elektroforez"
 msgstr ""
 
-# The display for the code. The display is only provided to help editors when editing the concept map.
+# ConceptMap.group.element.target.display
 #: ConceptMap.group.element.target.display
 msgid "Electrophoresis"
 msgstr ""
 
-# The display for the code. The display is only provided to help editors when editing the concept map.
+# ConceptMap.group.element.display
 #: ConceptMap.group.element.display
 msgid "Elektro uyqu"
 msgstr ""
 
-# The display for the code. The display is only provided to help editors when editing the concept map.
+# ConceptMap.group.element.target.display
 #: ConceptMap.group.element.target.display
 msgid "Electrosleep"
 msgstr ""
 
-# The display for the code. The display is only provided to help editors when editing the concept map.
+# ConceptMap.group.element.display
 #: ConceptMap.group.element.display
 msgid "Elektrotrankvilizatsiya"
 msgstr ""
 
-# The display for the code. The display is only provided to help editors when editing the concept map.
+# ConceptMap.group.element.target.display
 #: ConceptMap.group.element.target.display
 msgid "Electrotranquillization"
 msgstr ""
 
-# The display for the code. The display is only provided to help editors when editing the concept map.
+# ConceptMap.group.element.display
 #: ConceptMap.group.element.display
 msgid "Elektrostimulyatsiya"
 msgstr ""
 
-# The display for the code. The display is only provided to help editors when editing the concept map.
+# ConceptMap.group.element.target.display
 #: ConceptMap.group.element.target.display
 msgid "Electrostimulation"
 msgstr ""

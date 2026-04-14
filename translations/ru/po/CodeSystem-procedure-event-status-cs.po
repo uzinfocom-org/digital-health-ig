@@ -1,110 +1,110 @@
 
-# A natural language name identifying the code system. This name should be usable as an identifier for the module by machine processing applications such as code generation.
+# CodeSystem.name
 #: CodeSystem.name
 msgid "ProcedureEventStatusCS"
 msgstr ""
 
-# A short, descriptive, user-friendly title for the code system.
+# CodeSystem.title
 #: CodeSystem.title
 msgid "Procedure Event Status translations"
 msgstr ""
 
-# The name of the organization or individual responsible for the release and ongoing maintenance of the code system.
+# CodeSystem.publisher
 #: CodeSystem.publisher
 msgid "Ministry of Health of the Republic of Uzbekistan"
 msgstr ""
 
-# The name of an individual to contact.
+# ContactDetail.name
 #: ContactDetail.name
 msgid "Ministry of Health of the Republic of Uzbekistan"
 msgstr ""
 
-# A free text natural language description of the code system from a consumer's perspective.
+# CodeSystem.description
 #: CodeSystem.description
 msgid "Procedure Event Status supplement with translations in Uzbek and Russian"
 msgstr ""
 
-# A representation of the meaning of the code in the system, following the rules of the system.
+# Coding.display
 #: Coding.display
 msgid "Uzbekistan"
 msgstr ""
 
-# The text value for this designation.
+# CodeSystem.concept.designation.value
 #: CodeSystem.concept.designation.value
 msgid "Tayyorlanish"
 msgstr ""
 
-# The text value for this designation.
+# CodeSystem.concept.designation.value
 #: CodeSystem.concept.designation.value
 msgid "Подготовка"
 msgstr ""
 
-# The text value for this designation.
+# CodeSystem.concept.designation.value
 #: CodeSystem.concept.designation.value
 msgid "Jarayonda"
 msgstr ""
 
-# The text value for this designation.
+# CodeSystem.concept.designation.value
 #: CodeSystem.concept.designation.value
 msgid "В процессе"
 msgstr ""
 
-# The text value for this designation.
+# CodeSystem.concept.designation.value
 #: CodeSystem.concept.designation.value
 msgid "Bajarilmadi"
 msgstr ""
 
-# The text value for this designation.
+# CodeSystem.concept.designation.value
 #: CodeSystem.concept.designation.value
 msgid "Не выполнено"
 msgstr ""
 
-# The text value for this designation.
+# CodeSystem.concept.designation.value
 #: CodeSystem.concept.designation.value
 msgid "Vaqtinchalik to‘xtatilgan"
 msgstr ""
 
-# The text value for this designation.
+# CodeSystem.concept.designation.value
 #: CodeSystem.concept.designation.value
 msgid "Приостановлено"
 msgstr ""
 
-# The text value for this designation.
+# CodeSystem.concept.designation.value
 #: CodeSystem.concept.designation.value
 msgid "To‘xtatilgan"
 msgstr ""
 
-# The text value for this designation.
+# CodeSystem.concept.designation.value
 #: CodeSystem.concept.designation.value
 msgid "Остановлено"
 msgstr ""
 
-# The text value for this designation.
+# CodeSystem.concept.designation.value
 #: CodeSystem.concept.designation.value
 msgid "Tugallangan"
 msgstr ""
 
-# The text value for this designation.
+# CodeSystem.concept.designation.value
 #: CodeSystem.concept.designation.value
 msgid "Завершено"
 msgstr ""
 
-# The text value for this designation.
+# CodeSystem.concept.designation.value
 #: CodeSystem.concept.designation.value
 msgid "Xato bilan kiritilgan"
 msgstr ""
 
-# The text value for this designation.
+# CodeSystem.concept.designation.value
 #: CodeSystem.concept.designation.value
 msgid "Введено с ошибкой"
 msgstr ""
 
-# The text value for this designation.
+# CodeSystem.concept.designation.value
 #: CodeSystem.concept.designation.value
 msgid "Noma'lum"
 msgstr ""
 
-# The text value for this designation.
+# CodeSystem.concept.designation.value
 #: CodeSystem.concept.designation.value
 msgid "Неизвестно"
 msgstr ""

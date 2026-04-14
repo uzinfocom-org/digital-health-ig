@@ -7,913 +7,913 @@
       "entries" : [
         {
           "id" : "ConceptMap.name",
-          "context" : "A natural language name identifying the concept map. This name should be usable as an identifier for the module by machine processing applications such as code generation.",
+          "context" : "ConceptMap.name",
           "source" : "ProcedureCodeToSnomed",
           "target" : null
         },
         {
           "id" : "ConceptMap.title",
-          "context" : "A short, descriptive, user-friendly title for the concept map.",
+          "context" : "ConceptMap.title",
           "source" : "UZ local procedure code → SNOMED CT",
           "target" : null
         },
         {
           "id" : "ConceptMap.publisher",
-          "context" : "The name of the organization or individual responsible for the release and ongoing maintenance of the concept map.",
+          "context" : "ConceptMap.publisher",
           "source" : "Ministry of Health of the Republic of Uzbekistan",
           "target" : null
         },
         {
           "id" : "ContactDetail.name",
-          "context" : "The name of an individual to contact.",
+          "context" : "ContactDetail.name",
           "source" : "Ministry of Health of the Republic of Uzbekistan",
           "target" : null
         },
         {
           "id" : "ConceptMap.description",
-          "context" : "A free text natural language description of the concept map from a consumer's perspective.",
+          "context" : "ConceptMap.description",
           "source" : "Maps local UZ procedure code to SNOMED CT for Procedure.code",
           "target" : null
         },
         {
           "id" : "Coding.display",
-          "context" : "A representation of the meaning of the code in the system, following the rules of the system.",
+          "context" : "Coding.display",
           "source" : "Uzbekistan",
           "target" : null
         },
         {
           "id" : "ConceptMap.group.element.display",
-          "context" : "The display for the code. The display is only provided to help editors when editing the concept map.",
+          "context" : "ConceptMap.group.element.display",
           "source" : "Amplipulsterapiya",
           "target" : null
         },
         {
           "id" : "ConceptMap.group.element.target.display",
-          "context" : "The display for the code. The display is only provided to help editors when editing the concept map.",
+          "context" : "ConceptMap.group.element.target.display",
           "source" : "Amplipulse therapy (SMC-therapy)",
           "target" : null
         },
         {
           "id" : "ConceptMap.group.element.display",
-          "context" : "The display for the code. The display is only provided to help editors when editing the concept map.",
+          "context" : "ConceptMap.group.element.display",
           "source" : "Aeroionterapiya",
           "target" : null
         },
         {
           "id" : "ConceptMap.group.element.target.display",
-          "context" : "The display for the code. The display is only provided to help editors when editing the concept map.",
+          "context" : "ConceptMap.group.element.target.display",
           "source" : "Advanced oxygen therapy",
           "target" : null
         },
         {
           "id" : "ConceptMap.group.element.display",
-          "context" : "The display for the code. The display is only provided to help editors when editing the concept map.",
+          "context" : "ConceptMap.group.element.display",
           "source" : "Baroterapiya",
           "target" : null
         },
         {
           "id" : "ConceptMap.group.element.target.display",
-          "context" : "The display for the code. The display is only provided to help editors when editing the concept map.",
+          "context" : "ConceptMap.group.element.target.display",
           "source" : "Barotherapy",
           "target" : null
         },
         {
           "id" : "ConceptMap.group.element.display",
-          "context" : "The display for the code. The display is only provided to help editors when editing the concept map.",
+          "context" : "ConceptMap.group.element.display",
           "source" : "Suv muolajasi",
           "target" : null
         },
         {
           "id" : "ConceptMap.group.element.target.display",
-          "context" : "The display for the code. The display is only provided to help editors when editing the concept map.",
+          "context" : "ConceptMap.group.element.target.display",
           "source" : "Hydrotherapy",
           "target" : null
         },
         {
           "id" : "ConceptMap.group.element.display",
-          "context" : "The display for the code. The display is only provided to help editors when editing the concept map.",
+          "context" : "ConceptMap.group.element.display",
           "source" : "Dorivor vannalar",
           "target" : null
         },
         {
           "id" : "ConceptMap.group.element.target.display",
-          "context" : "The display for the code. The display is only provided to help editors when editing the concept map.",
+          "context" : "ConceptMap.group.element.target.display",
           "source" : "Therapeutic baths",
           "target" : null
         },
         {
           "id" : "ConceptMap.group.element.display",
-          "context" : "The display for the code. The display is only provided to help editors when editing the concept map.",
+          "context" : "ConceptMap.group.element.display",
           "source" : "Gidrogalvanik vannalar",
           "target" : null
         },
         {
           "id" : "ConceptMap.group.element.target.display",
-          "context" : "The display for the code. The display is only provided to help editors when editing the concept map.",
+          "context" : "ConceptMap.group.element.target.display",
           "source" : "Hydrogalvanic baths",
           "target" : null
         },
         {
           "id" : "ConceptMap.group.element.display",
-          "context" : "The display for the code. The display is only provided to help editors when editing the concept map.",
+          "context" : "ConceptMap.group.element.display",
           "source" : "Mineral vannalar",
           "target" : null
         },
         {
           "id" : "ConceptMap.group.element.target.display",
-          "context" : "The display for the code. The display is only provided to help editors when editing the concept map.",
+          "context" : "ConceptMap.group.element.target.display",
           "source" : "Mineral Baths",
           "target" : null
         },
         {
           "id" : "ConceptMap.group.element.display",
-          "context" : "The display for the code. The display is only provided to help editors when editing the concept map.",
+          "context" : "ConceptMap.group.element.display",
           "source" : "Vodorod sulfidli vannalar",
           "target" : null
         },
         {
           "id" : "ConceptMap.group.element.target.display",
-          "context" : "The display for the code. The display is only provided to help editors when editing the concept map.",
+          "context" : "ConceptMap.group.element.target.display",
           "source" : "Hydrosulfuric baths",
           "target" : null
         },
         {
           "id" : "ConceptMap.group.element.display",
-          "context" : "The display for the code. The display is only provided to help editors when editing the concept map.",
+          "context" : "ConceptMap.group.element.display",
           "source" : "Rodon vannalar",
           "target" : null
         },
         {
           "id" : "ConceptMap.group.element.target.display",
-          "context" : "The display for the code. The display is only provided to help editors when editing the concept map.",
+          "context" : "ConceptMap.group.element.target.display",
           "source" : "Radon baths",
           "target" : null
         },
         {
           "id" : "ConceptMap.group.element.display",
-          "context" : "The display for the code. The display is only provided to help editors when editing the concept map.",
+          "context" : "ConceptMap.group.element.display",
           "source" : "Gaz vannalar",
           "target" : null
         },
         {
           "id" : "ConceptMap.group.element.target.display",
-          "context" : "The display for the code. The display is only provided to help editors when editing the concept map.",
+          "context" : "ConceptMap.group.element.target.display",
           "source" : "Gas baths",
           "target" : null
         },
         {
           "id" : "ConceptMap.group.element.display",
-          "context" : "The display for the code. The display is only provided to help editors when editing the concept map.",
+          "context" : "ConceptMap.group.element.display",
           "source" : "Gazli vanna(kislorod)",
           "target" : null
         },
         {
           "id" : "ConceptMap.group.element.target.display",
-          "context" : "The display for the code. The display is only provided to help editors when editing the concept map.",
+          "context" : "ConceptMap.group.element.target.display",
           "source" : "Gas bath (oxygen)",
           "target" : null
         },
         {
           "id" : "ConceptMap.group.element.display",
-          "context" : "The display for the code. The display is only provided to help editors when editing the concept map.",
+          "context" : "ConceptMap.group.element.display",
           "source" : "Gazli vanna(karbonat angidrid)",
           "target" : null
         },
         {
           "id" : "ConceptMap.group.element.target.display",
-          "context" : "The display for the code. The display is only provided to help editors when editing the concept map.",
+          "context" : "ConceptMap.group.element.target.display",
           "source" : "Gas bath (carbon)",
           "target" : null
         },
         {
           "id" : "ConceptMap.group.element.display",
-          "context" : "The display for the code. The display is only provided to help editors when editing the concept map.",
+          "context" : "ConceptMap.group.element.display",
           "source" : "Gazli vanna(azot)",
           "target" : null
         },
         {
           "id" : "ConceptMap.group.element.target.display",
-          "context" : "The display for the code. The display is only provided to help editors when editing the concept map.",
+          "context" : "ConceptMap.group.element.target.display",
           "source" : "Gas bath (nitrogen)",
           "target" : null
         },
         {
           "id" : "ConceptMap.group.element.display",
-          "context" : "The display for the code. The display is only provided to help editors when editing the concept map.",
+          "context" : "ConceptMap.group.element.display",
           "source" : "Xushbo‘y vannalar",
           "target" : null
         },
         {
           "id" : "ConceptMap.group.element.target.display",
-          "context" : "The display for the code. The display is only provided to help editors when editing the concept map.",
+          "context" : "ConceptMap.group.element.target.display",
           "source" : "Aromatic baths",
           "target" : null
         },
         {
           "id" : "ConceptMap.group.element.display",
-          "context" : "The display for the code. The display is only provided to help editors when editing the concept map.",
+          "context" : "ConceptMap.group.element.display",
           "source" : "Kontrast vannalar",
           "target" : null
         },
         {
           "id" : "ConceptMap.group.element.target.display",
-          "context" : "The display for the code. The display is only provided to help editors when editing the concept map.",
+          "context" : "ConceptMap.group.element.target.display",
           "source" : "Contrast baths",
           "target" : null
         },
         {
           "id" : "ConceptMap.group.element.display",
-          "context" : "The display for the code. The display is only provided to help editors when editing the concept map.",
+          "context" : "ConceptMap.group.element.display",
           "source" : "Uyurmali vannalar",
           "target" : null
         },
         {
           "id" : "ConceptMap.group.element.target.display",
-          "context" : "The display for the code. The display is only provided to help editors when editing the concept map.",
+          "context" : "ConceptMap.group.element.target.display",
           "source" : "Vortex baths",
           "target" : null
         },
         {
           "id" : "ConceptMap.group.element.display",
-          "context" : "The display for the code. The display is only provided to help editors when editing the concept map.",
+          "context" : "ConceptMap.group.element.display",
           "source" : "Quruq havoli vannalar",
           "target" : null
         },
         {
           "id" : "ConceptMap.group.element.target.display",
-          "context" : "The display for the code. The display is only provided to help editors when editing the concept map.",
+          "context" : "ConceptMap.group.element.target.display",
           "source" : "Dry air baths",
           "target" : null
         },
         {
           "id" : "ConceptMap.group.element.display",
-          "context" : "The display for the code. The display is only provided to help editors when editing the concept map.",
+          "context" : "ConceptMap.group.element.display",
           "source" : "Loyli vannalar",
           "target" : null
         },
         {
           "id" : "ConceptMap.group.element.target.display",
-          "context" : "The display for the code. The display is only provided to help editors when editing the concept map.",
+          "context" : "ConceptMap.group.element.target.display",
           "source" : "Mud baths",
           "target" : null
         },
         {
           "id" : "ConceptMap.group.element.display",
-          "context" : "The display for the code. The display is only provided to help editors when editing the concept map.",
+          "context" : "ConceptMap.group.element.display",
           "source" : "Havo pufakchali vannalar (marvaridli)",
           "target" : null
         },
         {
           "id" : "ConceptMap.group.element.target.display",
-          "context" : "The display for the code. The display is only provided to help editors when editing the concept map.",
+          "context" : "ConceptMap.group.element.target.display",
           "source" : "Air bubble baths (pearl baths)",
           "target" : null
         },
         {
           "id" : "ConceptMap.group.element.display",
-          "context" : "The display for the code. The display is only provided to help editors when editing the concept map.",
+          "context" : "ConceptMap.group.element.display",
           "source" : "Subakval ichak vannasi",
           "target" : null
         },
         {
           "id" : "ConceptMap.group.element.target.display",
-          "context" : "The display for the code. The display is only provided to help editors when editing the concept map.",
+          "context" : "ConceptMap.group.element.target.display",
           "source" : "Subaquatic intestinal bath",
           "target" : null
         },
         {
           "id" : "ConceptMap.group.element.display",
-          "context" : "The display for the code. The display is only provided to help editors when editing the concept map.",
+          "context" : "ConceptMap.group.element.display",
           "source" : "Yodbromli vanna",
           "target" : null
         },
         {
           "id" : "ConceptMap.group.element.target.display",
-          "context" : "The display for the code. The display is only provided to help editors when editing the concept map.",
+          "context" : "ConceptMap.group.element.target.display",
           "source" : "Iodine-bromine bath",
           "target" : null
         },
         {
           "id" : "ConceptMap.group.element.display",
-          "context" : "The display for the code. The display is only provided to help editors when editing the concept map.",
+          "context" : "ConceptMap.group.element.display",
           "source" : "Qumli vannalar",
           "target" : null
         },
         {
           "id" : "ConceptMap.group.element.target.display",
-          "context" : "The display for the code. The display is only provided to help editors when editing the concept map.",
+          "context" : "ConceptMap.group.element.target.display",
           "source" : "Sand baths",
           "target" : null
         },
         {
           "id" : "ConceptMap.group.element.display",
-          "context" : "The display for the code. The display is only provided to help editors when editing the concept map.",
+          "context" : "ConceptMap.group.element.display",
           "source" : "Davolovchi dush",
           "target" : null
         },
         {
           "id" : "ConceptMap.group.element.target.display",
-          "context" : "The display for the code. The display is only provided to help editors when editing the concept map.",
+          "context" : "ConceptMap.group.element.target.display",
           "source" : "Therapeutic shower",
           "target" : null
         },
         {
           "id" : "ConceptMap.group.element.display",
-          "context" : "The display for the code. The display is only provided to help editors when editing the concept map.",
+          "context" : "ConceptMap.group.element.display",
           "source" : "Suv osti dush-massaji",
           "target" : null
         },
         {
           "id" : "ConceptMap.group.element.target.display",
-          "context" : "The display for the code. The display is only provided to help editors when editing the concept map.",
+          "context" : "ConceptMap.group.element.target.display",
           "source" : "Underwater massage shower",
           "target" : null
         },
         {
           "id" : "ConceptMap.group.element.display",
-          "context" : "The display for the code. The display is only provided to help editors when editing the concept map.",
+          "context" : "ConceptMap.group.element.display",
           "source" : "Umurtqa pog‘onasini suv ostida cho‘zish",
           "target" : null
         },
         {
           "id" : "ConceptMap.group.element.target.display",
-          "context" : "The display for the code. The display is only provided to help editors when editing the concept map.",
+          "context" : "ConceptMap.group.element.target.display",
           "source" : "Underwater spinal traction",
           "target" : null
         },
         {
           "id" : "ConceptMap.group.element.display",
-          "context" : "The display for the code. The display is only provided to help editors when editing the concept map.",
+          "context" : "ConceptMap.group.element.display",
           "source" : "Galvanizatsiya",
           "target" : null
         },
         {
           "id" : "ConceptMap.group.element.target.display",
-          "context" : "The display for the code. The display is only provided to help editors when editing the concept map.",
+          "context" : "ConceptMap.group.element.target.display",
           "source" : "Galvanization",
           "target" : null
         },
         {
           "id" : "ConceptMap.group.element.display",
-          "context" : "The display for the code. The display is only provided to help editors when editing the concept map.",
+          "context" : "ConceptMap.group.element.display",
           "source" : "Gelioterapiya",
           "target" : null
         },
         {
           "id" : "ConceptMap.group.element.target.display",
-          "context" : "The display for the code. The display is only provided to help editors when editing the concept map.",
+          "context" : "ConceptMap.group.element.target.display",
           "source" : "Heliotherapy",
           "target" : null
         },
         {
           "id" : "ConceptMap.group.element.display",
-          "context" : "The display for the code. The display is only provided to help editors when editing the concept map.",
+          "context" : "ConceptMap.group.element.display",
           "source" : "Gipoksiterapiya",
           "target" : null
         },
         {
           "id" : "ConceptMap.group.element.target.display",
-          "context" : "The display for the code. The display is only provided to help editors when editing the concept map.",
+          "context" : "ConceptMap.group.element.target.display",
           "source" : "Hypoxitherapy",
           "target" : null
         },
         {
           "id" : "ConceptMap.group.element.display",
-          "context" : "The display for the code. The display is only provided to help editors when editing the concept map.",
+          "context" : "ConceptMap.group.element.display",
           "source" : "Loy bilan davolash",
           "target" : null
         },
         {
           "id" : "ConceptMap.group.element.target.display",
-          "context" : "The display for the code. The display is only provided to help editors when editing the concept map.",
+          "context" : "ConceptMap.group.element.target.display",
           "source" : "Mud treatment",
           "target" : null
         },
         {
           "id" : "ConceptMap.group.element.display",
-          "context" : "The display for the code. The display is only provided to help editors when editing the concept map.",
+          "context" : "ConceptMap.group.element.display",
           "source" : "Galoterapiya",
           "target" : null
         },
         {
           "id" : "ConceptMap.group.element.target.display",
-          "context" : "The display for the code. The display is only provided to help editors when editing the concept map.",
+          "context" : "ConceptMap.group.element.target.display",
           "source" : "Halotherapy",
           "target" : null
         },
         {
           "id" : "ConceptMap.group.element.display",
-          "context" : "The display for the code. The display is only provided to help editors when editing the concept map.",
+          "context" : "ConceptMap.group.element.display",
           "source" : "Galvanik loy bilan davolash",
           "target" : null
         },
         {
           "id" : "ConceptMap.group.element.target.display",
-          "context" : "The display for the code. The display is only provided to help editors when editing the concept map.",
+          "context" : "ConceptMap.group.element.target.display",
           "source" : "Galvanic-mud therapy",
           "target" : null
         },
         {
           "id" : "ConceptMap.group.element.display",
-          "context" : "The display for the code. The display is only provided to help editors when editing the concept map.",
+          "context" : "ConceptMap.group.element.display",
           "source" : "Loyqa induktotermiya",
           "target" : null
         },
         {
           "id" : "ConceptMap.group.element.target.display",
-          "context" : "The display for the code. The display is only provided to help editors when editing the concept map.",
+          "context" : "ConceptMap.group.element.target.display",
           "source" : "Mud inductothermy",
           "target" : null
         },
         {
           "id" : "ConceptMap.group.element.display",
-          "context" : "The display for the code. The display is only provided to help editors when editing the concept map.",
+          "context" : "ConceptMap.group.element.display",
           "source" : "Pelofonoterapiya",
           "target" : null
         },
         {
           "id" : "ConceptMap.group.element.target.display",
-          "context" : "The display for the code. The display is only provided to help editors when editing the concept map.",
+          "context" : "ConceptMap.group.element.target.display",
           "source" : "Pelofofonotherapy",
           "target" : null
         },
         {
           "id" : "ConceptMap.group.element.display",
-          "context" : "The display for the code. The display is only provided to help editors when editing the concept map.",
+          "context" : "ConceptMap.group.element.display",
           "source" : "Darsonvalizatsiya",
           "target" : null
         },
         {
           "id" : "ConceptMap.group.element.target.display",
-          "context" : "The display for the code. The display is only provided to help editors when editing the concept map.",
+          "context" : "ConceptMap.group.element.target.display",
           "source" : "Darsonvalization",
           "target" : null
         },
         {
           "id" : "ConceptMap.group.element.display",
-          "context" : "The display for the code. The display is only provided to help editors when editing the concept map.",
+          "context" : "ConceptMap.group.element.display",
           "source" : "Detsimetrli terapiya",
           "target" : null
         },
         {
           "id" : "ConceptMap.group.element.target.display",
-          "context" : "The display for the code. The display is only provided to help editors when editing the concept map.",
+          "context" : "ConceptMap.group.element.target.display",
           "source" : "Decimeter therapy (DMV therapy)",
           "target" : null
         },
         {
           "id" : "ConceptMap.group.element.display",
-          "context" : "The display for the code. The display is only provided to help editors when editing the concept map.",
+          "context" : "ConceptMap.group.element.display",
           "source" : "Diadinamoterapiya",
           "target" : null
         },
         {
           "id" : "ConceptMap.group.element.target.display",
-          "context" : "The display for the code. The display is only provided to help editors when editing the concept map.",
+          "context" : "ConceptMap.group.element.target.display",
           "source" : "Diadynamic therapy (DDT)",
           "target" : null
         },
         {
           "id" : "ConceptMap.group.element.display",
-          "context" : "The display for the code. The display is only provided to help editors when editing the concept map.",
+          "context" : "ConceptMap.group.element.display",
           "source" : "Duodenal zondlash",
           "target" : null
         },
         {
           "id" : "ConceptMap.group.element.target.display",
-          "context" : "The display for the code. The display is only provided to help editors when editing the concept map.",
+          "context" : "ConceptMap.group.element.target.display",
           "source" : "Duodenal sounding",
           "target" : null
         },
         {
           "id" : "ConceptMap.group.element.display",
-          "context" : "The display for the code. The display is only provided to help editors when editing the concept map.",
+          "context" : "ConceptMap.group.element.display",
           "source" : "Induktometriya",
           "target" : null
         },
         {
           "id" : "ConceptMap.group.element.target.display",
-          "context" : "The display for the code. The display is only provided to help editors when editing the concept map.",
+          "context" : "ConceptMap.group.element.target.display",
           "source" : "Inductothermy",
           "target" : null
         },
         {
           "id" : "ConceptMap.group.element.display",
-          "context" : "The display for the code. The display is only provided to help editors when editing the concept map.",
+          "context" : "ConceptMap.group.element.display",
           "source" : "Ingalyatsiya (aerozolterapiya)",
           "target" : null
         },
         {
           "id" : "ConceptMap.group.element.target.display",
-          "context" : "The display for the code. The display is only provided to help editors when editing the concept map.",
+          "context" : "ConceptMap.group.element.target.display",
           "source" : "Inhalation (Aerosol therapy)",
           "target" : null
         },
         {
           "id" : "ConceptMap.group.element.display",
-          "context" : "The display for the code. The display is only provided to help editors when editing the concept map.",
+          "context" : "ConceptMap.group.element.display",
           "source" : "Infraqizil nurlanish",
           "target" : null
         },
         {
           "id" : "ConceptMap.group.element.target.display",
-          "context" : "The display for the code. The display is only provided to help editors when editing the concept map.",
+          "context" : "ConceptMap.group.element.target.display",
           "source" : "Infrared radiation",
           "target" : null
         },
         {
           "id" : "ConceptMap.group.element.display",
-          "context" : "The display for the code. The display is only provided to help editors when editing the concept map.",
+          "context" : "ConceptMap.group.element.display",
           "source" : "Interferent terapiya",
           "target" : null
         },
         {
           "id" : "ConceptMap.group.element.target.display",
-          "context" : "The display for the code. The display is only provided to help editors when editing the concept map.",
+          "context" : "ConceptMap.group.element.target.display",
           "source" : "Interferential therapy",
           "target" : null
         },
         {
           "id" : "ConceptMap.group.element.display",
-          "context" : "The display for the code. The display is only provided to help editors when editing the concept map.",
+          "context" : "ConceptMap.group.element.display",
           "source" : "chodirda kislorod terapiyasi",
           "target" : null
         },
         {
           "id" : "ConceptMap.group.element.target.display",
-          "context" : "The display for the code. The display is only provided to help editors when editing the concept map.",
+          "context" : "ConceptMap.group.element.target.display",
           "source" : "Oxygen therapy in a tent",
           "target" : null
         },
         {
           "id" : "ConceptMap.group.element.display",
-          "context" : "The display for the code. The display is only provided to help editors when editing the concept map.",
+          "context" : "ConceptMap.group.element.display",
           "source" : "O‘ta yuqori chastotali terapiya",
           "target" : null
         },
         {
           "id" : "ConceptMap.group.element.target.display",
-          "context" : "The display for the code. The display is only provided to help editors when editing the concept map.",
+          "context" : "ConceptMap.group.element.target.display",
           "source" : "Extremely high-frequency therapy (EHF therapy)",
           "target" : null
         },
         {
           "id" : "ConceptMap.group.element.display",
-          "context" : "The display for the code. The display is only provided to help editors when editing the concept map.",
+          "context" : "ConceptMap.group.element.display",
           "source" : "Lazer terapiya",
           "target" : null
         },
         {
           "id" : "ConceptMap.group.element.target.display",
-          "context" : "The display for the code. The display is only provided to help editors when editing the concept map.",
+          "context" : "ConceptMap.group.element.target.display",
           "source" : "Laser therapy",
           "target" : null
         },
         {
           "id" : "ConceptMap.group.element.display",
-          "context" : "The display for the code. The display is only provided to help editors when editing the concept map.",
+          "context" : "ConceptMap.group.element.display",
           "source" : "Lazer punktura",
           "target" : null
         },
         {
           "id" : "ConceptMap.group.element.target.display",
-          "context" : "The display for the code. The display is only provided to help editors when editing the concept map.",
+          "context" : "ConceptMap.group.element.target.display",
           "source" : "Laser acupuncture",
           "target" : null
         },
         {
           "id" : "ConceptMap.group.element.display",
-          "context" : "The display for the code. The display is only provided to help editors when editing the concept map.",
+          "context" : "ConceptMap.group.element.display",
           "source" : "Davolash jismoniy tarbiyasi",
           "target" : null
         },
         {
           "id" : "ConceptMap.group.element.target.display",
-          "context" : "The display for the code. The display is only provided to help editors when editing the concept map.",
+          "context" : "ConceptMap.group.element.target.display",
           "source" : "Physical therapy",
           "target" : null
         },
         {
           "id" : "ConceptMap.group.element.display",
-          "context" : "The display for the code. The display is only provided to help editors when editing the concept map.",
+          "context" : "ConceptMap.group.element.display",
           "source" : "Magnit terapiya",
           "target" : null
         },
         {
           "id" : "ConceptMap.group.element.target.display",
-          "context" : "The display for the code. The display is only provided to help editors when editing the concept map.",
+          "context" : "ConceptMap.group.element.target.display",
           "source" : "Magnetic therapy",
           "target" : null
         },
         {
           "id" : "ConceptMap.group.element.display",
-          "context" : "The display for the code. The display is only provided to help editors when editing the concept map.",
+          "context" : "ConceptMap.group.element.display",
           "source" : "Magnit punktura",
           "target" : null
         },
         {
           "id" : "ConceptMap.group.element.target.display",
-          "context" : "The display for the code. The display is only provided to help editors when editing the concept map.",
+          "context" : "ConceptMap.group.element.target.display",
           "source" : "Magnetic puncture",
           "target" : null
         },
         {
           "id" : "ConceptMap.group.element.display",
-          "context" : "The display for the code. The display is only provided to help editors when editing the concept map.",
+          "context" : "ConceptMap.group.element.display",
           "source" : "Ultrabinafsha nurlanish (UB-nurlanish) uchun biomiqdorni aniqlash",
           "target" : null
         },
         {
           "id" : "ConceptMap.group.element.target.display",
-          "context" : "The display for the code. The display is only provided to help editors when editing the concept map.",
+          "context" : "ConceptMap.group.element.target.display",
           "source" : "Biodose determination for ultraviolet irradiation (UV irradiation)",
           "target" : null
         },
         {
           "id" : "ConceptMap.group.element.display",
-          "context" : "The display for the code. The display is only provided to help editors when editing the concept map.",
+          "context" : "ConceptMap.group.element.display",
           "source" : "Ozokeritli davolash",
           "target" : null
         },
         {
           "id" : "ConceptMap.group.element.target.display",
-          "context" : "The display for the code. The display is only provided to help editors when editing the concept map.",
+          "context" : "ConceptMap.group.element.target.display",
           "source" : "Ozokeritotherapy",
           "target" : null
         },
         {
           "id" : "ConceptMap.group.element.display",
-          "context" : "The display for the code. The display is only provided to help editors when editing the concept map.",
+          "context" : "ConceptMap.group.element.display",
           "source" : "Oksigen terapiya",
           "target" : null
         },
         {
           "id" : "ConceptMap.group.element.target.display",
-          "context" : "The display for the code. The display is only provided to help editors when editing the concept map.",
+          "context" : "ConceptMap.group.element.target.display",
           "source" : "Oxygen therapy",
           "target" : null
         },
         {
           "id" : "ConceptMap.group.element.display",
-          "context" : "The display for the code. The display is only provided to help editors when editing the concept map.",
+          "context" : "ConceptMap.group.element.display",
           "source" : "Parafinli davolash",
           "target" : null
         },
         {
           "id" : "ConceptMap.group.element.target.display",
-          "context" : "The display for the code. The display is only provided to help editors when editing the concept map.",
+          "context" : "ConceptMap.group.element.target.display",
           "source" : "Paraffin-wax treatment",
           "target" : null
         },
         {
           "id" : "ConceptMap.group.element.display",
-          "context" : "The display for the code. The display is only provided to help editors when editing the concept map.",
+          "context" : "ConceptMap.group.element.display",
           "source" : "Santimetr to‘lqinli terapiya",
           "target" : null
         },
         {
           "id" : "ConceptMap.group.element.target.display",
-          "context" : "The display for the code. The display is only provided to help editors when editing the concept map.",
+          "context" : "ConceptMap.group.element.target.display",
           "source" : "Centimeter wave therapy (CMW therapy)",
           "target" : null
         },
         {
           "id" : "ConceptMap.group.element.display",
-          "context" : "The display for the code. The display is only provided to help editors when editing the concept map.",
+          "context" : "ConceptMap.group.element.display",
           "source" : "O‘ta yuqori chastotali elektroterapiya",
           "target" : null
         },
         {
           "id" : "ConceptMap.group.element.target.display",
-          "context" : "The display for the code. The display is only provided to help editors when editing the concept map.",
+          "context" : "ConceptMap.group.element.target.display",
           "source" : "Super high-frequency electrotherapy (SHF electrotherapy)",
           "target" : null
         },
         {
           "id" : "ConceptMap.group.element.display",
-          "context" : "The display for the code. The display is only provided to help editors when editing the concept map.",
+          "context" : "ConceptMap.group.element.display",
           "source" : "Nur bilan davolash",
           "target" : null
         },
         {
           "id" : "ConceptMap.group.element.target.display",
-          "context" : "The display for the code. The display is only provided to help editors when editing the concept map.",
+          "context" : "ConceptMap.group.element.target.display",
           "source" : "Light therapy",
           "target" : null
         },
         {
           "id" : "ConceptMap.group.element.display",
-          "context" : "The display for the code. The display is only provided to help editors when editing the concept map.",
+          "context" : "ConceptMap.group.element.display",
           "source" : "Nurli vanna",
           "target" : null
         },
         {
           "id" : "ConceptMap.group.element.target.display",
-          "context" : "The display for the code. The display is only provided to help editors when editing the concept map.",
+          "context" : "ConceptMap.group.element.target.display",
           "source" : "Light bath",
           "target" : null
         },
         {
           "id" : "ConceptMap.group.element.display",
-          "context" : "The display for the code. The display is only provided to help editors when editing the concept map.",
+          "context" : "ConceptMap.group.element.display",
           "source" : "Skeletni cho‘zish",
           "target" : null
         },
         {
           "id" : "ConceptMap.group.element.target.display",
-          "context" : "The display for the code. The display is only provided to help editors when editing the concept map.",
+          "context" : "ConceptMap.group.element.target.display",
           "source" : "Skeletal traction",
           "target" : null
         },
         {
           "id" : "ConceptMap.group.element.display",
-          "context" : "The display for the code. The display is only provided to help editors when editing the concept map.",
+          "context" : "ConceptMap.group.element.display",
           "source" : "Issiqlik bilan davolash",
           "target" : null
         },
         {
           "id" : "ConceptMap.group.element.target.display",
-          "context" : "The display for the code. The display is only provided to help editors when editing the concept map.",
+          "context" : "ConceptMap.group.element.target.display",
           "source" : "Thermal therapy",
           "target" : null
         },
         {
           "id" : "ConceptMap.group.element.display",
-          "context" : "The display for the code. The display is only provided to help editors when editing the concept map.",
+          "context" : "ConceptMap.group.element.display",
           "source" : "Tyubaj",
           "target" : null
         },
         {
           "id" : "ConceptMap.group.element.target.display",
-          "context" : "The display for the code. The display is only provided to help editors when editing the concept map.",
+          "context" : "ConceptMap.group.element.target.display",
           "source" : "Tubage",
           "target" : null
         },
         {
           "id" : "ConceptMap.group.element.display",
-          "context" : "The display for the code. The display is only provided to help editors when editing the concept map.",
+          "context" : "ConceptMap.group.element.display",
           "source" : "Umurtqa pog‘onasini traksion cho‘zish",
           "target" : null
         },
         {
           "id" : "ConceptMap.group.element.target.display",
-          "context" : "The display for the code. The display is only provided to help editors when editing the concept map.",
+          "context" : "ConceptMap.group.element.target.display",
           "source" : "Spinal traction therapy",
           "target" : null
         },
         {
           "id" : "ConceptMap.group.element.display",
-          "context" : "The display for the code. The display is only provided to help editors when editing the concept map.",
+          "context" : "ConceptMap.group.element.display",
           "source" : "Ultratonli davolash",
           "target" : null
         },
         {
           "id" : "ConceptMap.group.element.target.display",
-          "context" : "The display for the code. The display is only provided to help editors when editing the concept map.",
+          "context" : "ConceptMap.group.element.target.display",
           "source" : "Ultratonotherapy (UTT)",
           "target" : null
         },
         {
           "id" : "ConceptMap.group.element.display",
-          "context" : "The display for the code. The display is only provided to help editors when editing the concept map.",
+          "context" : "ConceptMap.group.element.display",
           "source" : "Ultra yuqori chastotali terapiya",
           "target" : null
         },
         {
           "id" : "ConceptMap.group.element.target.display",
-          "context" : "The display for the code. The display is only provided to help editors when editing the concept map.",
+          "context" : "ConceptMap.group.element.target.display",
           "source" : "Ultrahigh-frequency therapy (UHF therapy)",
           "target" : null
         },
         {
           "id" : "ConceptMap.group.element.display",
-          "context" : "The display for the code. The display is only provided to help editors when editing the concept map.",
+          "context" : "ConceptMap.group.element.display",
           "source" : "Ultratovushli terapiya",
           "target" : null
         },
         {
           "id" : "ConceptMap.group.element.target.display",
-          "context" : "The display for the code. The display is only provided to help editors when editing the concept map.",
+          "context" : "ConceptMap.group.element.target.display",
           "source" : "Ultrasound therapy",
           "target" : null
         },
         {
           "id" : "ConceptMap.group.element.display",
-          "context" : "The display for the code. The display is only provided to help editors when editing the concept map.",
+          "context" : "ConceptMap.group.element.display",
           "source" : "Ultrabinafsha nurlanish (UB nurlanish)",
           "target" : null
         },
         {
           "id" : "ConceptMap.group.element.target.display",
-          "context" : "The display for the code. The display is only provided to help editors when editing the concept map.",
+          "context" : "ConceptMap.group.element.target.display",
           "source" : "Ultraviolet irradiation (UV irradiation)",
           "target" : null
         },
         {
           "id" : "ConceptMap.group.element.display",
-          "context" : "The display for the code. The display is only provided to help editors when editing the concept map.",
+          "context" : "ConceptMap.group.element.display",
           "source" : "Ultrabinafsha nurlanish. PUVA-vannalar",
           "target" : null
         },
         {
           "id" : "ConceptMap.group.element.target.display",
-          "context" : "The display for the code. The display is only provided to help editors when editing the concept map.",
+          "context" : "ConceptMap.group.element.target.display",
           "source" : "Ultraviolet irradiation. PUVA baths",
           "target" : null
         },
         {
           "id" : "ConceptMap.group.element.display",
-          "context" : "The display for the code. The display is only provided to help editors when editing the concept map.",
+          "context" : "ConceptMap.group.element.display",
           "source" : "Ultrabinafsha nurlanish. Tubus-kvarts",
           "target" : null
         },
         {
           "id" : "ConceptMap.group.element.target.display",
-          "context" : "The display for the code. The display is only provided to help editors when editing the concept map.",
+          "context" : "ConceptMap.group.element.target.display",
           "source" : "Ultraviolet irradiation. Tubus-quartz",
           "target" : null
         },
         {
           "id" : "ConceptMap.group.element.display",
-          "context" : "The display for the code. The display is only provided to help editors when editing the concept map.",
+          "context" : "ConceptMap.group.element.display",
           "source" : "Franklinizatsiya",
           "target" : null
         },
         {
           "id" : "ConceptMap.group.element.target.display",
-          "context" : "The display for the code. The display is only provided to help editors when editing the concept map.",
+          "context" : "ConceptMap.group.element.target.display",
           "source" : "Franklinization",
           "target" : null
         },
         {
           "id" : "ConceptMap.group.element.display",
-          "context" : "The display for the code. The display is only provided to help editors when editing the concept map.",
+          "context" : "ConceptMap.group.element.display",
           "source" : "Fonoforez",
           "target" : null
         },
         {
           "id" : "ConceptMap.group.element.target.display",
-          "context" : "The display for the code. The display is only provided to help editors when editing the concept map.",
+          "context" : "ConceptMap.group.element.target.display",
           "source" : "Phonophoresis",
           "target" : null
         },
         {
           "id" : "ConceptMap.group.element.display",
-          "context" : "The display for the code. The display is only provided to help editors when editing the concept map.",
+          "context" : "ConceptMap.group.element.display",
           "source" : "Flyuktuorizatsiya",
           "target" : null
         },
         {
           "id" : "ConceptMap.group.element.target.display",
-          "context" : "The display for the code. The display is only provided to help editors when editing the concept map.",
+          "context" : "ConceptMap.group.element.target.display",
           "source" : "Fluxtuorization",
           "target" : null
         },
         {
           "id" : "ConceptMap.group.element.display",
-          "context" : "The display for the code. The display is only provided to help editors when editing the concept map.",
+          "context" : "ConceptMap.group.element.display",
           "source" : "Elektroforez",
           "target" : null
         },
         {
           "id" : "ConceptMap.group.element.target.display",
-          "context" : "The display for the code. The display is only provided to help editors when editing the concept map.",
+          "context" : "ConceptMap.group.element.target.display",
           "source" : "Electrophoresis",
           "target" : null
         },
         {
           "id" : "ConceptMap.group.element.display",
-          "context" : "The display for the code. The display is only provided to help editors when editing the concept map.",
+          "context" : "ConceptMap.group.element.display",
           "source" : "Elektro uyqu",
           "target" : null
         },
         {
           "id" : "ConceptMap.group.element.target.display",
-          "context" : "The display for the code. The display is only provided to help editors when editing the concept map.",
+          "context" : "ConceptMap.group.element.target.display",
           "source" : "Electrosleep",
           "target" : null
         },
         {
           "id" : "ConceptMap.group.element.display",
-          "context" : "The display for the code. The display is only provided to help editors when editing the concept map.",
+          "context" : "ConceptMap.group.element.display",
           "source" : "Elektrotrankvilizatsiya",
           "target" : null
         },
         {
           "id" : "ConceptMap.group.element.target.display",
-          "context" : "The display for the code. The display is only provided to help editors when editing the concept map.",
+          "context" : "ConceptMap.group.element.target.display",
           "source" : "Electrotranquillization",
           "target" : null
         },
         {
           "id" : "ConceptMap.group.element.display",
-          "context" : "The display for the code. The display is only provided to help editors when editing the concept map.",
+          "context" : "ConceptMap.group.element.display",
           "source" : "Elektrostimulyatsiya",
           "target" : null
         },
         {
           "id" : "ConceptMap.group.element.target.display",
-          "context" : "The display for the code. The display is only provided to help editors when editing the concept map.",
+          "context" : "ConceptMap.group.element.target.display",
           "source" : "Electrostimulation",
           "target" : null
         }

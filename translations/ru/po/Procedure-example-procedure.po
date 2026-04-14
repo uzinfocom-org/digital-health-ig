@@ -1,65 +1,60 @@
 
-# Plain text narrative that identifies the resource in addition to the resource reference.
+# Reference.display
 #: Reference.display
 msgid "CarePlan #1"
 msgstr ""
 
-# A representation of the meaning of the code in the system, following the rules of the system.
+# Coding.display
 #: Coding.display
 msgid "Physical therapy procedure"
 msgstr ""
 
-# A representation of the meaning of the code in the system, following the rules of the system.
+# Coding.display
 #: Coding.display
 msgid "Therapeutic massage"
 msgstr ""
 
-# A human language representation of the concept as seen/selected/uttered by the user who entered the data and/or which represents the intended meaning of the user.
+# CodeableConcept.text
 #: CodeableConcept.text
 msgid "Therapeutic massage of right foot"
 msgstr ""
 
-# Plain text narrative that identifies the resource in addition to the resource reference.
+# Reference.display
 #: Reference.display
 msgid "David Davidov"
 msgstr ""
 
-# Plain text narrative that identifies the resource in addition to the resource reference.
+# Reference.display
 #: Reference.display
 msgid "Outpatient Visit"
 msgstr ""
 
-# Plain text narrative that identifies the resource in addition to the resource reference.
-#: Reference.display
-msgid "Nurse Jane Smith"
-msgstr ""
-
-# Plain text narrative that identifies the resource in addition to the resource reference.
+# Reference.display
 #: Reference.display
 msgid "Paul Ivanov, PT"
 msgstr ""
 
-# Plain text narrative that identifies the resource in addition to the resource reference.
+# Reference.display
 #: Reference.display
-msgid "Physiotherapy Room 2"
+msgid "Toshkent shahar 1-sonli shifoxona"
 msgstr ""
 
-# Plain text narrative that identifies the resource in addition to the resource reference.
+# Reference.display
 #: Reference.display
 msgid "Aching right foot"
 msgstr ""
 
-# A representation of the meaning of the code in the system, following the rules of the system.
+# Coding.display
 #: Coding.display
 msgid "Right foot"
 msgstr ""
 
-# A representation of the meaning of the code in the system, following the rules of the system.
+# Coding.display
 #: Coding.display
 msgid "Successful"
 msgstr ""
 
-# The text of the annotation in markdown format.
+# Annotation.text
 #: Annotation.text
 msgid "Therapeutic massage of the right foot completed according to the care plan. No adverse reactions noted."
 msgstr ""

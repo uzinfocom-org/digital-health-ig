@@ -5,42 +5,42 @@
     <body>
       <trans-unit id="ValueSet-procedure-code-vs" resname="ValueSet.name">
              <notes>
-               <note id="n1">A natural language name identifying the value set. This name should be usable as an identifier for the module by machine processing applications such as code generation.</note>
+               <note id="n1">ValueSet.name</note>
              </notes>
         <source>ProcedureCodeVS</source>
         <target></target>
       </trans-unit>
       <trans-unit id="ValueSet-procedure-code-vs" resname="ValueSet.title">
              <notes>
-               <note id="n1">A short, descriptive, user-friendly title for the value set.</note>
+               <note id="n1">ValueSet.title</note>
              </notes>
         <source>Procedure Code Codes</source>
         <target></target>
       </trans-unit>
       <trans-unit id="ValueSet-procedure-code-vs" resname="ValueSet.publisher">
              <notes>
-               <note id="n1">The name of the organization or individual responsible for the release and ongoing maintenance of the value set.</note>
+               <note id="n1">ValueSet.publisher</note>
              </notes>
         <source>Ministry of Health of the Republic of Uzbekistan</source>
         <target></target>
       </trans-unit>
       <trans-unit id="ValueSet-procedure-code-vs" resname="ContactDetail.name">
              <notes>
-               <note id="n1">The name of an individual to contact.</note>
+               <note id="n1">ContactDetail.name</note>
              </notes>
         <source>Ministry of Health of the Republic of Uzbekistan</source>
         <target></target>
       </trans-unit>
       <trans-unit id="ValueSet-procedure-code-vs" resname="ValueSet.description">
              <notes>
-               <note id="n1">A free text natural language description of the value set from a consumer's perspective. The textual description specifies the span of meanings for concepts to be included within the Value Set Expansion, and also may specify the intended use and limitations of the Value Set.</note>
+               <note id="n1">ValueSet.description</note>
              </notes>
         <source>Procedure code ValueSet with translations in English, Russian and Uzbek</source>
         <target></target>
       </trans-unit>
       <trans-unit id="ValueSet-procedure-code-vs" resname="Coding.display">
              <notes>
-               <note id="n1">A representation of the meaning of the code in the system, following the rules of the system.</note>
+               <note id="n1">Coding.display</note>
              </notes>
         <source>Uzbekistan</source>
         <target></target>

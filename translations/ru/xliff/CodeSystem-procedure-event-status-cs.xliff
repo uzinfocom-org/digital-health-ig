@@ -5,154 +5,154 @@
     <body>
       <trans-unit id="CodeSystem-procedure-event-status-cs" resname="CodeSystem.name">
              <notes>
-               <note id="n1">A natural language name identifying the code system. This name should be usable as an identifier for the module by machine processing applications such as code generation.</note>
+               <note id="n1">CodeSystem.name</note>
              </notes>
         <source>ProcedureEventStatusCS</source>
         <target></target>
       </trans-unit>
       <trans-unit id="CodeSystem-procedure-event-status-cs" resname="CodeSystem.title">
              <notes>
-               <note id="n1">A short, descriptive, user-friendly title for the code system.</note>
+               <note id="n1">CodeSystem.title</note>
              </notes>
         <source>Procedure Event Status translations</source>
         <target></target>
       </trans-unit>
       <trans-unit id="CodeSystem-procedure-event-status-cs" resname="CodeSystem.publisher">
              <notes>
-               <note id="n1">The name of the organization or individual responsible for the release and ongoing maintenance of the code system.</note>
+               <note id="n1">CodeSystem.publisher</note>
              </notes>
         <source>Ministry of Health of the Republic of Uzbekistan</source>
         <target></target>
       </trans-unit>
       <trans-unit id="CodeSystem-procedure-event-status-cs" resname="ContactDetail.name">
              <notes>
-               <note id="n1">The name of an individual to contact.</note>
+               <note id="n1">ContactDetail.name</note>
              </notes>
         <source>Ministry of Health of the Republic of Uzbekistan</source>
         <target></target>
       </trans-unit>
       <trans-unit id="CodeSystem-procedure-event-status-cs" resname="CodeSystem.description">
              <notes>
-               <note id="n1">A free text natural language description of the code system from a consumer's perspective.</note>
+               <note id="n1">CodeSystem.description</note>
              </notes>
         <source>Procedure Event Status supplement with translations in Uzbek and Russian</source>
         <target></target>
       </trans-unit>
       <trans-unit id="CodeSystem-procedure-event-status-cs" resname="Coding.display">
              <notes>
-               <note id="n1">A representation of the meaning of the code in the system, following the rules of the system.</note>
+               <note id="n1">Coding.display</note>
              </notes>
         <source>Uzbekistan</source>
         <target></target>
       </trans-unit>
       <trans-unit id="CodeSystem-procedure-event-status-cs" resname="CodeSystem.concept.designation.value">
              <notes>
-               <note id="n1">The text value for this designation.</note>
+               <note id="n1">CodeSystem.concept.designation.value</note>
              </notes>
         <source>Tayyorlanish</source>
         <target></target>
       </trans-unit>
       <trans-unit id="CodeSystem-procedure-event-status-cs" resname="CodeSystem.concept.designation.value">
              <notes>
-               <note id="n1">The text value for this designation.</note>
+               <note id="n1">CodeSystem.concept.designation.value</note>
              </notes>
         <source>Подготовка</source>
         <target></target>
       </trans-unit>
       <trans-unit id="CodeSystem-procedure-event-status-cs" resname="CodeSystem.concept.designation.value">
              <notes>
-               <note id="n1">The text value for this designation.</note>
+               <note id="n1">CodeSystem.concept.designation.value</note>
              </notes>
         <source>Jarayonda</source>
         <target></target>
       </trans-unit>
       <trans-unit id="CodeSystem-procedure-event-status-cs" resname="CodeSystem.concept.designation.value">
              <notes>
-               <note id="n1">The text value for this designation.</note>
+               <note id="n1">CodeSystem.concept.designation.value</note>
              </notes>
         <source>В процессе</source>
         <target></target>
       </trans-unit>
       <trans-unit id="CodeSystem-procedure-event-status-cs" resname="CodeSystem.concept.designation.value">
              <notes>
-               <note id="n1">The text value for this designation.</note>
+               <note id="n1">CodeSystem.concept.designation.value</note>
              </notes>
         <source>Bajarilmadi</source>
         <target></target>
       </trans-unit>
       <trans-unit id="CodeSystem-procedure-event-status-cs" resname="CodeSystem.concept.designation.value">
              <notes>
-               <note id="n1">The text value for this designation.</note>
+               <note id="n1">CodeSystem.concept.designation.value</note>
              </notes>
         <source>Не выполнено</source>
         <target></target>
       </trans-unit>
       <trans-unit id="CodeSystem-procedure-event-status-cs" resname="CodeSystem.concept.designation.value">
              <notes>
-               <note id="n1">The text value for this designation.</note>
+               <note id="n1">CodeSystem.concept.designation.value</note>
              </notes>
         <source>Vaqtinchalik to‘xtatilgan</source>
         <target></target>
       </trans-unit>
       <trans-unit id="CodeSystem-procedure-event-status-cs" resname="CodeSystem.concept.designation.value">
              <notes>
-               <note id="n1">The text value for this designation.</note>
+               <note id="n1">CodeSystem.concept.designation.value</note>
              </notes>
         <source>Приостановлено</source>
         <target></target>
       </trans-unit>
       <trans-unit id="CodeSystem-procedure-event-status-cs" resname="CodeSystem.concept.designation.value">
              <notes>
-               <note id="n1">The text value for this designation.</note>
+               <note id="n1">CodeSystem.concept.designation.value</note>
              </notes>
         <source>To‘xtatilgan</source>
         <target></target>
       </trans-unit>
       <trans-unit id="CodeSystem-procedure-event-status-cs" resname="CodeSystem.concept.designation.value">
              <notes>
-               <note id="n1">The text value for this designation.</note>
+               <note id="n1">CodeSystem.concept.designation.value</note>
              </notes>
         <source>Остановлено</source>
         <target></target>
       </trans-unit>
       <trans-unit id="CodeSystem-procedure-event-status-cs" resname="CodeSystem.concept.designation.value">
              <notes>
-               <note id="n1">The text value for this designation.</note>
+               <note id="n1">CodeSystem.concept.designation.value</note>
              </notes>
         <source>Tugallangan</source>
         <target></target>
       </trans-unit>
       <trans-unit id="CodeSystem-procedure-event-status-cs" resname="CodeSystem.concept.designation.value">
              <notes>
-               <note id="n1">The text value for this designation.</note>
+               <note id="n1">CodeSystem.concept.designation.value</note>
              </notes>
         <source>Завершено</source>
         <target></target>
       </trans-unit>
       <trans-unit id="CodeSystem-procedure-event-status-cs" resname="CodeSystem.concept.designation.value">
              <notes>
-               <note id="n1">The text value for this designation.</note>
+               <note id="n1">CodeSystem.concept.designation.value</note>
              </notes>
         <source>Xato bilan kiritilgan</source>
         <target></target>
       </trans-unit>
       <trans-unit id="CodeSystem-procedure-event-status-cs" resname="CodeSystem.concept.designation.value">
              <notes>
-               <note id="n1">The text value for this designation.</note>
+               <note id="n1">CodeSystem.concept.designation.value</note>
              </notes>
         <source>Введено с ошибкой</source>
         <target></target>
       </trans-unit>
       <trans-unit id="CodeSystem-procedure-event-status-cs" resname="CodeSystem.concept.designation.value">
              <notes>
-               <note id="n1">The text value for this designation.</note>
+               <note id="n1">CodeSystem.concept.designation.value</note>
              </notes>
         <source>Noma'lum</source>
         <target></target>
       </trans-unit>
       <trans-unit id="CodeSystem-procedure-event-status-cs" resname="CodeSystem.concept.designation.value">
              <notes>
-               <note id="n1">The text value for this designation.</note>
+               <note id="n1">CodeSystem.concept.designation.value</note>
              </notes>
         <source>Неизвестно</source>
         <target></target>

@@ -7,133 +7,133 @@
       "entries" : [
         {
           "id" : "CodeSystem.name",
-          "context" : "A natural language name identifying the code system. This name should be usable as an identifier for the module by machine processing applications such as code generation.",
+          "context" : "CodeSystem.name",
           "source" : "ProcedureEventStatusCS",
           "target" : null
         },
         {
           "id" : "CodeSystem.title",
-          "context" : "A short, descriptive, user-friendly title for the code system.",
+          "context" : "CodeSystem.title",
           "source" : "Procedure Event Status translations",
           "target" : null
         },
         {
           "id" : "CodeSystem.publisher",
-          "context" : "The name of the organization or individual responsible for the release and ongoing maintenance of the code system.",
+          "context" : "CodeSystem.publisher",
           "source" : "Ministry of Health of the Republic of Uzbekistan",
           "target" : null
         },
         {
           "id" : "ContactDetail.name",
-          "context" : "The name of an individual to contact.",
+          "context" : "ContactDetail.name",
           "source" : "Ministry of Health of the Republic of Uzbekistan",
           "target" : null
         },
         {
           "id" : "CodeSystem.description",
-          "context" : "A free text natural language description of the code system from a consumer's perspective.",
+          "context" : "CodeSystem.description",
           "source" : "Procedure Event Status supplement with translations in Uzbek and Russian",
           "target" : null
         },
         {
           "id" : "Coding.display",
-          "context" : "A representation of the meaning of the code in the system, following the rules of the system.",
+          "context" : "Coding.display",
           "source" : "Uzbekistan",
           "target" : null
         },
         {
           "id" : "CodeSystem.concept.designation.value",
-          "context" : "The text value for this designation.",
+          "context" : "CodeSystem.concept.designation.value",
           "source" : "Tayyorlanish",
           "target" : null
         },
         {
           "id" : "CodeSystem.concept.designation.value",
-          "context" : "The text value for this designation.",
+          "context" : "CodeSystem.concept.designation.value",
           "source" : "Подготовка",
           "target" : null
         },
         {
           "id" : "CodeSystem.concept.designation.value",
-          "context" : "The text value for this designation.",
+          "context" : "CodeSystem.concept.designation.value",
           "source" : "Jarayonda",
           "target" : null
         },
         {
           "id" : "CodeSystem.concept.designation.value",
-          "context" : "The text value for this designation.",
+          "context" : "CodeSystem.concept.designation.value",
           "source" : "В процессе",
           "target" : null
         },
         {
           "id" : "CodeSystem.concept.designation.value",
-          "context" : "The text value for this designation.",
+          "context" : "CodeSystem.concept.designation.value",
           "source" : "Bajarilmadi",
           "target" : null
         },
         {
           "id" : "CodeSystem.concept.designation.value",
-          "context" : "The text value for this designation.",
+          "context" : "CodeSystem.concept.designation.value",
           "source" : "Не выполнено",
           "target" : null
         },
         {
           "id" : "CodeSystem.concept.designation.value",
-          "context" : "The text value for this designation.",
+          "context" : "CodeSystem.concept.designation.value",
           "source" : "Vaqtinchalik to‘xtatilgan",
           "target" : null
         },
         {
           "id" : "CodeSystem.concept.designation.value",
-          "context" : "The text value for this designation.",
+          "context" : "CodeSystem.concept.designation.value",
           "source" : "Приостановлено",
           "target" : null
         },
         {
           "id" : "CodeSystem.concept.designation.value",
-          "context" : "The text value for this designation.",
+          "context" : "CodeSystem.concept.designation.value",
           "source" : "To‘xtatilgan",
           "target" : null
         },
         {
           "id" : "CodeSystem.concept.designation.value",
-          "context" : "The text value for this designation.",
+          "context" : "CodeSystem.concept.designation.value",
           "source" : "Остановлено",
           "target" : null
         },
         {
           "id" : "CodeSystem.concept.designation.value",
-          "context" : "The text value for this designation.",
+          "context" : "CodeSystem.concept.designation.value",
           "source" : "Tugallangan",
           "target" : null
         },
         {
           "id" : "CodeSystem.concept.designation.value",
-          "context" : "The text value for this designation.",
+          "context" : "CodeSystem.concept.designation.value",
           "source" : "Завершено",
           "target" : null
         },
         {
           "id" : "CodeSystem.concept.designation.value",
-          "context" : "The text value for this designation.",
+          "context" : "CodeSystem.concept.designation.value",
           "source" : "Xato bilan kiritilgan",
           "target" : null
         },
         {
           "id" : "CodeSystem.concept.designation.value",
-          "context" : "The text value for this designation.",
+          "context" : "CodeSystem.concept.designation.value",
           "source" : "Введено с ошибкой",
           "target" : null
         },
         {
           "id" : "CodeSystem.concept.designation.value",
-          "context" : "The text value for this designation.",
+          "context" : "CodeSystem.concept.designation.value",
           "source" : "Noma'lum",
           "target" : null
         },
         {
           "id" : "CodeSystem.concept.designation.value",
-          "context" : "The text value for this designation.",
+          "context" : "CodeSystem.concept.designation.value",
           "source" : "Неизвестно",
           "target" : null
         }

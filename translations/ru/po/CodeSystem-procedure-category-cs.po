@@ -1,45 +1,45 @@
 
-# A natural language name identifying the code system. This name should be usable as an identifier for the module by machine processing applications such as code generation.
+# CodeSystem.name
 #: CodeSystem.name
 msgid "ProcedureCategoryCS"
 msgstr ""
 
-# A short, descriptive, user-friendly title for the code system.
+# CodeSystem.title
 #: CodeSystem.title
 msgid "Procedure Category Codes"
 msgstr ""
 
-# The name of the organization or individual responsible for the release and ongoing maintenance of the code system.
+# CodeSystem.publisher
 #: CodeSystem.publisher
 msgid "Ministry of Health of the Republic of Uzbekistan"
 msgstr ""
 
-# The name of an individual to contact.
+# ContactDetail.name
 #: ContactDetail.name
 msgid "Ministry of Health of the Republic of Uzbekistan"
 msgstr ""
 
-# A free text natural language description of the code system from a consumer's perspective.
+# CodeSystem.description
 #: CodeSystem.description
 msgid "Procedure category CodeSystem with translations in English, Russian and Uzbek"
 msgstr ""
 
-# A representation of the meaning of the code in the system, following the rules of the system.
+# Coding.display
 #: Coding.display
 msgid "Uzbekistan"
 msgstr ""
 
-# A human readable string that is the recommended default way to present this concept to a user.
+# CodeSystem.concept.display
 #: CodeSystem.concept.display
 msgid "Fizioterapiya protsedurasi"
 msgstr ""
 
-# The text value for this designation.
+# CodeSystem.concept.designation.value
 #: CodeSystem.concept.designation.value
 msgid "Физиотерапевтическая процедура"
 msgstr ""
 
-# The text value for this designation.
+# CodeSystem.concept.designation.value
 #: CodeSystem.concept.designation.value
 msgid "Physical therapy procedure"
 msgstr ""

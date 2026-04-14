@@ -7,49 +7,49 @@
       "entries" : [
         {
           "id" : "ConceptMap.name",
-          "context" : "A natural language name identifying the concept map. This name should be usable as an identifier for the module by machine processing applications such as code generation.",
+          "context" : "ConceptMap.name",
           "source" : "ProcedureCategoryToSnomed",
           "target" : null
         },
         {
           "id" : "ConceptMap.title",
-          "context" : "A short, descriptive, user-friendly title for the concept map.",
+          "context" : "ConceptMap.title",
           "source" : "UZ local procedure category → SNOMED CT",
           "target" : null
         },
         {
           "id" : "ConceptMap.publisher",
-          "context" : "The name of the organization or individual responsible for the release and ongoing maintenance of the concept map.",
+          "context" : "ConceptMap.publisher",
           "source" : "Ministry of Health of the Republic of Uzbekistan",
           "target" : null
         },
         {
           "id" : "ContactDetail.name",
-          "context" : "The name of an individual to contact.",
+          "context" : "ContactDetail.name",
           "source" : "Ministry of Health of the Republic of Uzbekistan",
           "target" : null
         },
         {
           "id" : "ConceptMap.description",
-          "context" : "A free text natural language description of the concept map from a consumer's perspective.",
+          "context" : "ConceptMap.description",
           "source" : "Maps local UZ procedure category to SNOMED CT for Procedure.category",
           "target" : null
         },
         {
           "id" : "Coding.display",
-          "context" : "A representation of the meaning of the code in the system, following the rules of the system.",
+          "context" : "Coding.display",
           "source" : "Uzbekistan",
           "target" : null
         },
         {
           "id" : "ConceptMap.group.element.display",
-          "context" : "The display for the code. The display is only provided to help editors when editing the concept map.",
+          "context" : "ConceptMap.group.element.display",
           "source" : "Fizioterapiya protsedurasi",
           "target" : null
         },
         {
           "id" : "ConceptMap.group.element.target.display",
-          "context" : "The display for the code. The display is only provided to help editors when editing the concept map.",
+          "context" : "ConceptMap.group.element.target.display",
           "source" : "Physical therapy procedure",
           "target" : null
         }
