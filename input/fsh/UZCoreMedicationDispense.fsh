@@ -32,7 +32,7 @@ Description: "Uzbekistan Core profile for MedicationDispense, used to record the
 * notPerformedReason from MedicationDispenseStatusReasonVS (preferred)
 * category from MedicationDispenseAdminLocationVS (preferred)
 * medication from MedicationClassificationVS (required)
-* quantity.code from MedicationTotalVolumeUnitsVS
+* quantity.code from MedicationTotalVolumeUnitsVS (required)
 
 * notPerformedReason only CodeableReference(DetectedIssue)
 * medication only CodeableReference(Medication)
