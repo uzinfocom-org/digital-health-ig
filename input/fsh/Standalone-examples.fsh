@@ -10,7 +10,6 @@ Description: "Example of a patient"
   * family = "Ибрагимов"
   * given = "Алишер"
 
-<<<<<<< HEAD
 Instance: example-medicationrequest
 InstanceOf: MedicationRequest
 Usage: #example
@@ -20,7 +19,6 @@ Description: "Example of a medicationrequest"
 * intent = #order
 * medication.concept.text = "Analgin 500mg"
 * subject = Reference(example-david)
-=======
 Instance: specimen-example-blood
 InstanceOf: Specimen
 Usage: #example
@@ -122,4 +120,3 @@ Description: "Example OperationOutcome returned when a transaction fails due to 
 * issue[=].code = #required
 * issue[=].diagnostics = "Observation.status: minimum required = 1, but only found 0 (from https://dhp.uz/fhir/core/StructureDefinition/uz-core-observation)"
 * issue[=].expression = "Bundle.entry[2].resource.ofType(Observation)"
->>>>>>> main
