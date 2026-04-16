@@ -1,0 +1,78 @@
+Name			Flags		Cardinality	Example1	Сomments	Document	Type	Description & Constraints		ValueSets			
+Goal			TU	SD					DomainResource	"Описывает предполагаемую цель (цели) для пациента, группы или организации
+
+Элементы, определенные в Ancestors: id, meta, implicitRules, language, text, contained, extension, modifierExtension"		System	CodeSystem	Code	Display										
+identifier				SD	0..*	"value: ""goal-cardio-001"""			Identifier	Внешние идентификатор этой цели (например, номер в базе страховой компании или другой клиники).		http://hl7.org/fhir/document-reference-status	CS-GoalStatus	"HL7
+Required"	Статус ресурса
+lifecycleStatus			?!Σ	SD	1..1	active		"HL7
+required"	code	"На каком этапе планирования находится цель.
+
+Варианты: предложена, запланирована, принята, активна (в работе), приостановлена, завершена, отменена, ошибка ввода, отклонена.
+Binding: http://hl7.org/fhir/ValueSet/goal-status"		http://hl7.org/fhir/ValueSet/goal-achievement	CS-GoalAchievement	"HL7
+preferred"	
+achievementStatus			Σ	SD	0..1	"coding: {code: ""in-progress"", display: ""In Progress""}"		"HL7
+preferred"	CodeableConcept	"Оценка прогресса (как идут дела?).
+
+Варианты: в процессе, улучшается, ухудшается, без изменений, достигнуто, поддерживается, не достигнуто, нет прогресса, недостижимо.
+Binding: http://hl7.org/fhir/ValueSet/goal-achievement"		http://hl7.org/fhir/ValueSet/goal-category	CS-GoalCategory	"HL7
+preferred"	
+category			Σ	SD	0..*	"coding: {code: ""treatment"", display: ""Treatment""}"		"HL7
+example"	CodeableConcept	"Группировка целей по типу.
+
+Примеры: Лечение, диета, поведенческая терапия, уход.
+Binding: http://hl7.org/fhir/ValueSet/goal-category"		http://hl7.org/fhir/ValueSet/goal-priority	CS-GoalPriority	"HL7
+preferred"	
+continuous				SD	0..1	TRUE			boolean	Галочка (Да/Нет). Если «Да», значит, после достижения цели усилия не прекращаются, а требуются постоянно для поддержания результата (например, «поддерживать диету» всю жизнь).				"SNOMED
+example"	
+priority			Σ	SD	0..1	"coding: {code: ""high-priority"", display: ""High Priority""}"		"HL7
+preferred"	CodeableConcept	"Важность этой цели.
+
+Варианты: высокий, средний, низкий.
+Binding: http://hl7.org/fhir/ValueSet/goal-priority"		http://hl7.org/fhir/ValueSet/goal-start-event	CS-GoalStartEvent	"SNOMED
+preferred"	
+description			Σ	SD	1..1	"coding: {code: ""1201005"", display: ""Benign essential hypertension""}
+text: ""Контроль эссенциальной гипертензии"""		"SNOMED
+example"	CodeableConcept	"Текст или код, который говорит, в чем именно заключается цель.
+Binding: http://hl7.org/fhir/ValueSet/clinical-findings"		http://hl7.org/fhir/ValueSet/observation-codes	$observation-code	"LOINC
+preferred"	
+subject			Σ	SD	1..1	"reference: Patient/123
+display: Иванов И.И."			Reference(Patient | Group | Organization)	Тот, для кого эта цель поставлена (Пациент, Группа людей или Организация).		http://hl7.org/fhir/ValueSet/clinical-findings	CS-GoalDescription	"SNOMED
+preferred"	
+start[x]			Σ	SD	0..1			"SNOMED
+example"		"Когда начинается работа над целью.
+Binding: http://hl7.org/fhir/ValueSet/goal-start-event"		http://hl7.org/fhir/ValueSet/clinical-findings	CS-GoalOutcome	"SNOMED
+preferred"	
+	startDate					2024-03-01			date						
+	startCodeableConcept								CodeableConcept						
+target			C	SD	0..*				BackboneElement	"Контейнер для конкретных цифр или условий, к которым стремимся.
+
++ Rule: Goal.target.measure is required if Goal.target.detail is populated"					
+	measure		ΣC	SD	0..1	"coding: {...}
+text: ""Normal blood pressure"""		"LOINC
+example"	CodeableConcept	"Какой параметр мы отслеживаем? (Код параметра, например, «Вес тела» или «Глюкоза в крови»).
+Binding: http://hl7.org/fhir/ValueSet/observation-codes"					
+	detail[x]		ΣC	SD	0..1					"Сама цифра или состояние, которого нужно достичь. 
+Binding:"					
+		detailQuantity							Quantity						
+		detailRange							Range						
+		"detailCodeableConcept	"							CodeableConcept						
+		detailString				"""120/80 mm Hg"""			string						
+		detailBoolean							boolean						
+		detailInteger							integer						
+		detailRatio							Ratio						
+	due[x]		Σ	SD	0..1					"Дедлайн для достижения показателя. 
+Может быть:
+• dueDate: Конкретная дата (к 01.01.2024).
+• dueDuration: Длительность (через 2 недели от начала)."					
+		dueDate				2024-06-01			date						
+		dueDuration							Duration						
+statusDate			Σ	SD	0..1	2024-03-15			date	Календарная дата, когда обновился lifecycleStatus.					
+statusReason				SD	0..1	"text: ""Пациент начал прием препаратов"""			string	Причина текущего статуса.					
+source			Σ	SD	0..1	"reference: Practitioner/doc-1
+display: Др. Петров"			Reference(Patient | Practitioner | PractitionerRole | RelatedPerson | CareTeam)	Кто придумал/поставил эту цель?					
+addresses				SD	0..*	reference: Condition/hbp-01			Reference(Condition | Observation | MedicationStatement | MedicationRequest | NutritionOrder | ServiceRequest | RiskAssessment | Procedure)	Медицинские проблемы, ради которых поставлена цель.					
+note				SD	0..*	"text: ""Еженедельный мониторинг АД"""			Annotation	Комментарии о цели.					
+outcome				SD	0..*	"coding: {code: ""1194003"",
+text: ""Заболевание хорошо контролируется"""		"SNOMED
+example"	CodeableReference(Observation)	"Какой результат был достигнут в отношении этой цели?
+Binding: http://hl7.org/fhir/ValueSet/clinical-findings"					

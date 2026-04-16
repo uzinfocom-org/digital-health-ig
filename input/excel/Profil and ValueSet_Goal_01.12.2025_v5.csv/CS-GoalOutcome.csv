@@ -1,0 +1,23 @@
+Code	System	en	ru	uz
+404684003	http://snomed.info/sct	Clinical finding (finding)	Клинические данные (находка)	Klinik topilma
+3286006	http://snomed.info/sct	Patient status determination, greatly improved	Состояние пациента значительно улучшилось	Bemor holati sezilarli darajada yaxshilandi
+1194003	http://snomed.info/sct	Disease condition determination, well controlled	Заболевание хорошо контролируется	Kasallik holati yaxshi nazorat qilingan
+4547004	http://snomed.info/sct	Determination of outcome, satisfactory to physician	Исход удовлетворительный	Natija qoniqarli
+2004005	http://snomed.info/sct	Normal blood pressure	Нормальное артериальное давление	Normal qon bosimi
+369001	http://snomed.info/sct	Normal jugular venous pressure	Нормальное давление в яремных венах	Bo'yinturuq venalarida normal bosim
+4181001	http://snomed.info/sct	Normal peak expiratory flow rate	Нормальная пиковая скорость выдоха	Nafas chiqarishning normal eng yuqori tezligi
+3530005	http://snomed.info/sct	Bipolar I disorder... in full remission	Биполярное расстройство в полной ремиссии	Bipolyar buzilish, to'liq remissiya
+3158007	http://snomed.info/sct	Panic disorder... in partial remission	Паническое расстройство в частичной ремиссии	Vahima buzilishi, qisman remissiya
+3006004	http://snomed.info/sct	Disturbance of consciousness	Нарушение сознания	Ong holatining o'zgarishi
+3021005	http://snomed.info/sct	Normal gastric acidity	Нормальная кислотность желудка	Oshqozonning normal kislotaliligi
+2186007	http://snomed.info/sct	Compensated metabolic alkalosis	Компенсированный метаболический алкалоз	Kompensatsiyalangan metabolik alkaloz
+1152001	http://snomed.info/sct	Skin reaction negative	Кожная реакция отрицательная	Teri reaktsiyasi manfiy
+1111005	http://snomed.info/sct	Normal sebaceous gland activity	Нормальная активность сальных желез	Yog 'bezlarining normal faoliyati
+1965009	http://snomed.info/sct	Normal skin pH	Нормальный pH кожи	Terining normal pH darajasi
+2704003	http://snomed.info/sct	Acute disease	Острое течение (статус)	O'tkir kasallik holati
+144008	http://snomed.info/sct	Normal peripheral vision	Нормальное периферическое зрение	Normal periferik ko'rish
+3391005	http://snomed.info/sct	Negative for tumor cells	Опухолевые клетки не обнаружены	O'simta hujayralari aniqlanmadi
+962000	http://snomed.info/sct	Disability evaluation, disability 6%	Утрата трудоспособности 6% (улучшение)	Mehnat qobiliyatini yo'qotish 6%
+1280009	http://snomed.info/sct	Isologous chimera	Изологичный химеризм (успех трансплантации)	Izologik ximerizm
+427868000	http://snomed.info/sct	Patient status unchanged	Состояние пациента без изменений	Bemor holati o'zgarmadi
+271299001	http://snomed.info/sct	Patient's condition worsened	Состояние пациента ухудшилось	Bemor holati yomonlashdi

@@ -1,7 +1,7 @@
 ValueSet: CountriesDigitalMVDVS
 Id: countries-digital-mvd-vs
-Title: "World countries name translations"
-Description: "World countries names with English and Russian translations"
+Title: "Uzbekistan MVD's international country codes"
+Description: "Uzbekistan MVD's international country codes with English and Russian translations"
 * ^url = "https://terminology.dhp.uz/fhir/core/ValueSet/countries-digital-mvd-vs"
 * ^experimental = true
 * ^status = #active
@@ -11,8 +11,8 @@ Description: "World countries names with English and Russian translations"
 
 ValueSet: InternationalCountriesVS
 Id: international-countries-vs
-Title: "International countries (excluding Uzbekistan)"
-Description: "World countries names excluding Uzbekistan for international address usage"
+Title: "Uzbekistan MVD's international country codes (excluding Uzbekistan)"
+Description: "Uzbekistan MVD's international country codes excluding Uzbekistan for international address use"
 * ^url = "https://terminology.dhp.uz/fhir/core/ValueSet/international-countries-vs"
 * ^experimental = true
 * ^status = #active

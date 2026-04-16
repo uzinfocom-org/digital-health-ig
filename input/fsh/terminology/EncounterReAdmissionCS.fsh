@@ -1,7 +1,7 @@
 CodeSystem: EncounterReAdmissionCS
 Id: encounter-reAdmission-cs
 Title: "Encounter admission translations"
-Description: "Encounter readmission codes with English and Russian translations"
+Description: "Encounter readmission supplement with translations in Uzbek and Russian"
 * insert SupplementCodeSystem(encounter-reAdmission-cs, $v2-admission, 2.0.0)
 
 * #R 

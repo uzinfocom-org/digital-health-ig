@@ -68,3 +68,8 @@ Description: "Types of possible identifiers supplement with translations in Uzbe
   * ^designation[=].value = "Универсальный идентификатор устройства"
   * ^designation[+].language = #uz
   * ^designation[=].value = "Universal qurilma identifikatori"
+* #PEN
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Номер пенсионного удостоверения"
+  * ^designation[+].language = #uz
+  * ^designation[=].value = "Nafaqa daftarchasining raqami"

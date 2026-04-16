@@ -1,7 +1,7 @@
 CodeSystem: EncounterPriorityCS
 Id: encounter-priority-cs
 Title: "Encounter priority translations"
-Description: "Encounter priority codes with English and Russian translations"
+Description: "Encounter priority supplement with translations in Uzbek and Russian"
 * insert SupplementCodeSystem(encounter-priority-cs, $v3ActPriority, 3.0.0)
 
 * #EM 

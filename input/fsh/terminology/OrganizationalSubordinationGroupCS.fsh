@@ -15,9 +15,9 @@ Description: "Defines the subordination group of the medical organization"
   * ^designation[=].value = "In territorial administration"
 * #I_3 "Tuman va shaharlar boshqaruv tarkibidagi"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Административное устройство районов и городов"
+  * ^designation[=].value = "В районном и городском управлении"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Administrative structure of districts and cities"
+  * ^designation[=].value = "In district and city administration"
 * #I_4 "Boshqa vazirlik va idoralar tizimi tarkibidagi muassasalar"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Учреждения, входящие в систему других министерств и ведомств"
@@ -28,3 +28,8 @@ Description: "Defines the subordination group of the medical organization"
   * ^designation[=].value = "Частные медицинские учреждения"
   * ^designation[+].language = #en
   * ^designation[=].value = "Private medical institutions"
+* #I_6 "Xorijiy sarmoyadorlar ishtirokidagi muassasalar"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Организации с участием иностранных инвесторов"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Organizations with foreign investors participation"
