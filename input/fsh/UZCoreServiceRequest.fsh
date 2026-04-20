@@ -14,7 +14,7 @@ Description: "UZCoreServiceRequest defines how laboratory orders are represented
 * status ^short = "The status of a service order"
 * intent MS
 * intent from ServiceRequestIntentVS
-* intent ^short = "Indicates the level of obligation and intent of the service request, specifying whether the request represents an official order to be performed. "
+* intent ^short = "Indicates the level of obligation and intent of the service request, specifying whether the request represents an official order to be performed."
 * doNotPerform MS
 * doNotPerform ^short = "Indicates that the service described by the ServiceRequest should not be performed."
 * code MS
@@ -34,7 +34,7 @@ Description: "UZCoreServiceRequest defines how laboratory orders are represented
 * requester only Reference(UZCorePractitioner or UZCorePractitionerRole or UZCoreOrganization or UZCorePatient or UZCoreRelatedPerson)
 * requester ^short = "The individual, role, or organization that authored and issued the laboratory referral/order. This element identifies the healthcare professional or organizational unit responsible for initiating the ServiceRequest."
 * reason MS
-* reason from $icd-10
+* reason from ICD10ReasonVS
 * reason ^short = "A reason to a Condition or other clinical resource that represents the medical justification for the laboratory referral, such as a diagnosis coded using ICD-10. This allows structured representation of diagnosis details including onset date and clinical status."
 * insurance MS
 * insurance only Reference(Coverage)
