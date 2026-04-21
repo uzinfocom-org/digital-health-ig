@@ -21,7 +21,7 @@ publisher:
   email: info@ssv.uz
 
 dependencies:
-  # while we don't strictly need this, this helps resolve the DICOM supplement correctly until tx.fhir.org can do this
+  # while we don't strictly needs this, this helps resolve the DICOM supplement correctly until tx.fhir.org can do this
   fhir.dicom:
     id: fhir_dicom
     uri: http://fhir.org/packages/fhir.dicom/ImplementationGuide/fhir.dicom
@@ -102,7 +102,6 @@ menu:
     FHIR basics: fhir-basics.html
     Identifiers: identifiers.html
     Vital signs: vital-signs.html
-    Patient instructions: patient-instructions.html
   API access: api-access.html
   Artifacts: artifacts.html
   Services: services.html
