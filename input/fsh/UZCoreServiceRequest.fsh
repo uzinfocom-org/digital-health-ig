@@ -18,7 +18,7 @@ Description: "UZCoreServiceRequest defines how laboratory orders are represented
 * doNotPerform MS
 * doNotPerform ^short = "Indicates that the service described by the ServiceRequest should not be performed."
 * code MS
-* code from ServiceRequesLabCodesVS //Procedure codes and the UZCoreProcedure profile are not prepared yet
+* code from ServiceRequesLabCodesVS //Procedure codes and the  UZCoreProcedure profile are not prepared yet
 * code ^short = "Specifies the laboratory test, panel, or service being requested. The codes used represent orderable laboratory services and must not be used for analytical result observations."
 * subject MS
 * subject only Reference(UZCorePatient or UZCoreLocation)
