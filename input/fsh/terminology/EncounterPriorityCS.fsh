@@ -19,3 +19,8 @@ Description: "Encounter priority supplement with translations in Uzbek and Russi
   * ^designation[=].value = "Zaruratga qarab"
   * ^designation[+].language = #ru
   * ^designation[=].value = "По мере необходимости"
+* #R 
+  * ^designation[0].language = #uz
+  * ^designation[=].value = "Rejalashtirilgan"
+  * ^designation[+].language = #ru
+  * ^designation[=].value = "Запланированный"
