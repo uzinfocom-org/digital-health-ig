@@ -1,8 +1,8 @@
-CodeSystem: MahallaCoatCS
-Id: mahalla-coat-cs
+CodeSystem: MahallaCoatoCS
+Id: mahalla-coato-cs
 Title: "Mahalla Coats Codes and Names"
 Description: "Mahalla coats codes and names with translations in Russian and English from coat"
-* insert OriginalCodeSystemDraft(mahalla-coat-cs)
+* insert OriginalCodeSystemDraft(mahalla-coato-cs)
 
 * #1718203551 "Loyish shaharchasi"
   * ^designation[0].language = #ru
