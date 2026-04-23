@@ -8,3 +8,6 @@ Description: "Types of clinical status in Uzbekistan"
 * ^extension[=].valueCanonical = Canonical(ClinicalStatusCS)
 
 * include codes from system $condition-clinical
+
+
+
