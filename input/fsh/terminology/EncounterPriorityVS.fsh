@@ -10,6 +10,7 @@ Description: "Encounter priority codes with English and Russian translations"
 * include $v3ActPriority#EM
 * include $v3ActPriority#P
 * include $v3ActPriority#PRN
+* include $v3ActPriority#R
 * include encounter-priority-home-cs#gencl-0002-00001
 * include encounter-priority-home-cs#gencl-0002-00002
 * include encounter-priority-home-cs#gencl-0002-00003
