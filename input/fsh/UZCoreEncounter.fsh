@@ -106,6 +106,7 @@ Description: "Uzbekistan Core Encounter profile, used to represent clinical enco
 * admission MS
 * admission ^short = "Подробности о пребывании, во время которого предоставляется медицинская услуга"
 * admission.origin MS
+* admission.origin from EncounterAdmissionOriginVS (required)
 * admission.origin ^short = "Место/организация, из которой пациент прибыл до поступления"
 * admission.admitSource MS
 * admission.admitSource from EncounterAdmitSourceVS (required)

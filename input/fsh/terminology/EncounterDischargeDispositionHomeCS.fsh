@@ -5,19 +5,15 @@ Description: "Encounter discharge disposition home codes with English and Russia
 * insert OriginalCodeSystemDraft(encounter-discharge-disposition-home-cs)  
 
 * #mserv-0004-00001 "Kasalxonaga yotqizildi"
-  * ^designation[+].language = #en
+  * ^designation[0].language = #en
   * ^designation[=].value = "Hospitalized"
-  * ^designation[0].language = #ru
+  * ^designation[+].language = #ru
   * ^designation[=].value = "Госпитализирован"
-// * #mserv-0004-00002 "Vafot etdi"
-//   * ^designation[+].language = #en
-//   * ^designation[=].value = "Died"
-//   * ^designation[0].language = #ru
-//   * ^designation[=].value = "Умер"
-
-
-
-
+* #mserv-0004-00002 "O'zi chiqib ketdi"
+  * ^designation[0].language = #en
+  * ^designation[=].value = "Self letft from hospital"
+  * ^designation[+].language = #ru
+  * ^designation[=].value = "Сам ушел из больницы"
 * #mserv-0004-00003 "Chiqarildi"
   * ^designation[0].language = #en
   * ^designation[=].value = "Discharged"

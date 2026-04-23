@@ -56,7 +56,7 @@ Description: "Education levels in Uzbekistan"
 
 
 
-* #regis0005.00011 "Ma’lumoti yo‘q"
+* #regis0005.00011 "Ma'lumoti yo'q"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Нет образования"
   * ^designation[+].language = #en

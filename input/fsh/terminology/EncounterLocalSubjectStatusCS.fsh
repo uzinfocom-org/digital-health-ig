@@ -1,7 +1,7 @@
 CodeSystem: EncounterLocalSubjectStatusCS
 Id: encounter-local-subject-status-cs
-Title: "Local Subject Status CodeSystem"
-Description: "Local subject status codes for patient condition"
+Title: "Patient status when receiving care inpatient"
+Description: "Patient status when receiving care inpatient with English and Russian translations"
 * insert OriginalCodeSystemDraft(encounter-local-subject-status-cs)
 
 * #loc-cs-001 "Tuzaldi"

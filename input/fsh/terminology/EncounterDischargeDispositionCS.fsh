@@ -11,16 +11,14 @@ Description: "Encounter discharge disposition supplement with translations in Uz
   * ^designation[=].value = "Домой"
 * #other-hcf "Other healthcare facility"
   * ^designation[0].language = #uz
-  * ^designation[=].value = "Boshqa tibbiy muassasa"
+  * ^designation[=].value = "Boshqa tibbiy muassasasiga o'tkazildi"
   * ^designation[+].language = #ru
-  * ^designation[=].value = "Другое медицинское учреждение"
+  * ^designation[=].value = "Переведено ругое медицинское учреждение"
 * #oth "Other"
   * ^designation[0].language = #uz
   * ^designation[=].value = "Boshqa"
   * ^designation[+].language = #ru
   * ^designation[=].value = "Другое"
-
-//added
 * #exp "Expired"
   * ^designation[0].language = #uz
   * ^designation[=].value = "Vafot Etdi"

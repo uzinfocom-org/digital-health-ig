@@ -54,7 +54,7 @@ Description: "Social status types in Uzbekistan"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Ученик"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Pupil"
+  * ^designation[=].value = "School student"
 * #regis0010.00011 "Imtiyoz toifasi mavjud"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Имеется льготная категория"

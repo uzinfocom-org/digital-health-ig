@@ -4,7 +4,7 @@ Title: "Admit Source Local CodeSystem"
 Description: "Local admit source codes with Uzbek, English, and Russian translations"
 * insert OriginalCodeSystemDraft(admit-source-local-cs)
 
-* #mserv-0003-00001 "Yo‘llanmasiz"
+* #mserv-0003-00001 "Yo'llanmasiz"
   * ^designation[0].language = #en
   * ^designation[=].value = "Without referral / Self-referred"
   * ^designation[+].language = #ru
