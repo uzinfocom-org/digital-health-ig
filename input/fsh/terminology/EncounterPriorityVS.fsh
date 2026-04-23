@@ -14,3 +14,8 @@ Description: "Encounter priority codes with English and Russian translations"
 * include encounter-priority-home-cs#gencl-0002-00001
 * include encounter-priority-home-cs#gencl-0002-00002
 * include encounter-priority-home-cs#gencl-0002-00003
+
+
+* include encounter-local-priority-cs#transferred
+* include encounter-local-priority-cs#mandatory-treatment
+* include encounter-local-priority-cs#involuntary-hospitalization
