@@ -198,4 +198,4 @@ Description: "Observation interpretation supplement with translations in Uzbek a
   * ^designation[0].language = #ru
   * ^designation[=].value = "Слабо реактивный"
   * ^designation[+].language = #uz
-  * ^designation[=_].value = "Kuchsiz reaksiyali"
+  * ^designation[=].value = "Kuchsiz reaksiyali
