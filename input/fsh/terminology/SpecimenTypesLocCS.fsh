@@ -2,7 +2,7 @@ CodeSystem: SpecimenTypesLocCS
 Id: specimen-types-loc-cs
 Title: "Specimen local types translations"
 Description: "Specimen local types, original local codes with translations in Uzbek and Russian"
-* insert SupplementCodeSystemDraft(specimen-types-loc-cs)
+* insert OriginalCodeSystemDraft(specimen-types-loc-cs)
 
 * #Spec003-0001 "Jarrohlik namunasi"
   * ^designation[0].language = #ru
