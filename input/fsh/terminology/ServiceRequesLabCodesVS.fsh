@@ -5,4 +5,4 @@ Description: "Defines the set of laboratory test and panel codes that may be use
 * ^url = "https://terminology.dhp.uz/fhir/core/ValueSet/service-request-labresearch-code-vs"
 * ^experimental = true
 
-* include codes from system service-request-labresearch-code-cs
+* include codes from system $loinc

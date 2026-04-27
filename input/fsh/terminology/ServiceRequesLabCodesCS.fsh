@@ -1,4 +1,4 @@
-CodeSystem: ServiceRequesLabCodesCS
+/*CodeSystem: ServiceRequesLabCodesCS
 Id: service-request-labresearch-code-cs
 Title: "Laboratory Service Request Panels and Individual Analytes"
 Description: "Defines a set of codes representing laboratory test panels and individual analytes used for laboratory service requests within the DHP ecosystem of Uzbekistan."
@@ -1888,3 +1888,4 @@ Description: "Defines a set of codes representing laboratory test panels and ind
   * ^designation[=].value = "Hepatitis B virus e Ab [Presence] in Serum or Plasma"
   * ^property[0].code = #parent
   * ^property[=].valueCode = #lab-P
+*/

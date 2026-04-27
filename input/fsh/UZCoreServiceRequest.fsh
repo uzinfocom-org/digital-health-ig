@@ -69,7 +69,7 @@ Description: "Example laboratory ServiceRequest instance for UZCore."
 * occurrenceDateTime = "2026-01-16T09:30:00+05:00"
 * authoredOn = "2026-01-16T09:10:00+05:00"
 * requester = Reference(Practitioner/example-practitioner)
-// * insurance[0] = Reference(Coverage/uz-coverage-example-01) We don't have Coverage profile yet
+// * insurance[0] = Reference(Coverage/uz-coverage-example-01) We don't have Coverage profile  yet
 //* supportingInfo[0] = Reference(UZCoreServiceRequest/uz-servicerequest-supporting-01)
 * specimen[0] = Reference(Specimen/specimen-example-blood)
 * note[0].text = "Please perform CBC urgently."
