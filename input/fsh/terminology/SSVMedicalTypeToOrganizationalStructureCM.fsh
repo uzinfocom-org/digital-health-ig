@@ -1,15 +1,15 @@
-Instance: mis2-medical-type-to-organizational-structure-cm
+Instance: ssv-medical-type-to-organizational-structure-cm
 InstanceOf: ConceptMap
 Usage: #definition
-Title: "MIS2 Medical Type to Organizational Structure"
-Description: "Maps MIS2 medical type codes to UZ Core Organizational Structure codes. MIS2 classifies healthcare facilities into 45 medical types, while OrganizationalStructureCS provides the Ministry of Health's detailed classification of institution types."
-* name = "MIS2MedicalTypeToOrganizationalStructureCM"
-* url = "https://terminology.dhp.uz/fhir/core/ConceptMap/mis2-medical-type-to-organizational-structure-cm"
+Title: "SSV Medical Type to Organizational Structure"
+Description: "Maps SSV medical type codes to UZ Core Organizational Structure codes. SSV classifies healthcare facilities into 45 medical types, while OrganizationalStructureCS provides the Ministry of Health's detailed classification of institution types."
+* name = "SSVMedicalTypeToOrganizationalStructureCM"
+* url = "https://terminology.dhp.uz/fhir/core/ConceptMap/ssv-medical-type-to-organizational-structure-cm"
 * status = #draft
 * experimental = false
 * publisher = "Uzinfocom"
 
-// Group 1: MIS2 mapping to OrganizationalStructureCS
+// Group 1: SSV mapping to OrganizationalStructureCS
 * group[+].source = $ssv-organization-type-medical
 * group[=].target = Canonical(OrganizationalStructureCS)
 * group[=].element[+].code = #1
@@ -240,7 +240,7 @@ Description: "Maps MIS2 medical type codes to UZ Core Organizational Structure c
 * group[=].element[=].target[=].display = "Family doctor point"
 * group[=].element[=].target[=].relationship = #related-to
 
-// Group 2: MIS2 mapping to NomenclatureGroupCS
+// Group 2: SSV mapping to NomenclatureGroupCS
 * group[+].source = $ssv-organization-type-medical
 * group[=].target = Canonical(NomenclatureGroupCS)
 * group[=].element[+].code = #9

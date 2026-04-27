@@ -42,10 +42,15 @@ No definition could be found for URL value 'https://dhp.uz/fhir/core'
 Source Code System urn:iso:std:iso:3166 doesn't have all content (content = not-present), so the source codes cannot be checked
 Target Code System urn:iso:std:iso:3166 doesn't have all content (content = not-present), so the target codes cannot be checked
 
-# MIS2/SSV ConceptMaps reference external code systems not available to the IG publisher - source codes cannot be validated
-WARNING: ConceptMap/mis2-level-type-to-subordination-group-cm: ConceptMap.group[0]: No Source Code System, so the source codes cannot be checked
-WARNING: ConceptMap/mis2-medical-type-to-organizational-structure-cm: ConceptMap.group[0]: No Source Code System, so the source codes cannot be checked
-WARNING: ConceptMap/mis2-service-type-to-organizational-service-group-cm: ConceptMap.group[0]: No Source Code System, so the source codes cannot be checked
+# MIS2 ConceptMaps reference external code systems not available to the IG publisher - source codes cannot be validated
+WARNING: ConceptMap/ssv-level-type-to-subordination-group-cm: ConceptMap.group[0].source: The Source Code System http://fhir.ssv.uz/ValueSet/organization-type-level is not fully defined and populated, and no sourceScope is specified, so the source code checking will not be performed
+WARNING: ConceptMap/ssv-medical-type-to-organizational-structure-cm: ConceptMap.group[0].source: The Source Code System http://fhir.ssv.uz/ValueSet/organization-type-medical is not fully defined and populated, and no sourceScope is specified, so the source code checking will not be performed
+WARNING: ConceptMap/ssv-medical-type-to-organizational-structure-cm: ConceptMap.group[1].source: The Source Code System http://fhir.ssv.uz/ValueSet/organization-type-medical is not fully defined and populated, and no sourceScope is specified, so the source code checking will not be performed
+WARNING: ConceptMap/ssv-service-type-to-organizational-service-group-cm: ConceptMap.group[0].source: The Source Code System http://fhir.ssv.uz/ValueSet/organization-type-service is not fully defined and populated, and no sourceScope is specified, so the source code checking will not be performed
+WARNING: ConceptMap/mis2-level-type-to-subordination-group-cm: ConceptMap.group[0].source: The Source Code System http://fhir.ssv.uz/ValueSet/organization-type-level is not fully defined and populated, and no sourceScope is specified, so the source code checking will not be performed
+WARNING: ConceptMap/mis2-medical-type-to-organizational-structure-cm: ConceptMap.group[0].source: The Source Code System http://fhir.ssv.uz/ValueSet/organization-type-medical is not fully defined and populated, and no sourceScope is specified, so the source code checking will not be performed
+WARNING: ConceptMap/mis2-medical-type-to-organizational-structure-cm: ConceptMap.group[1].source: The Source Code System http://fhir.ssv.uz/ValueSet/organization-type-medical is not fully defined and populated, and no sourceScope is specified, so the source code checking will not be performed
+WARNING: ConceptMap/mis2-service-type-to-organizational-service-group-cm: ConceptMap.group[0].source: The Source Code System http://fhir.ssv.uz/ValueSet/organization-type-service is not fully defined and populated, and no sourceScope is specified, so the source code checking will not be performed
 WARNING: ConceptMap/ssv-administrative-territory-to-regions-cm: ConceptMap.group[0]: No Source Code System, so the source codes cannot be checked
 WARNING: ConceptMap/ssv-administrative-territory-to-regions-cm: ConceptMap.group[1]: No Source Code System, so the source codes cannot be checked
 

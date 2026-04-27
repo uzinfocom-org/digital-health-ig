@@ -33,6 +33,16 @@ Description: "gender 'other' implies differentiation of the gender indication 'o
 * severity = #error
 * expression = "gender.exists() and gender = 'other' implies gender.extension('https://dhp.uz/fhir/core/StructureDefinition/gender-other').exists()"
 
+Extension: CoverageArea
+Id: coverage-area
+Title: "Coverage area"
+Description: "Administrative territory that this organization provides services to. Use the [SSVAdministrativeTerritoryToRegionsCM](ConceptMap-ssv-administrative-territory-to-regions-cm.html) ConceptMap to translate SSV territory codes to the required StateCS codes."
+Context: Organization
+* ^experimental = true
+* value[x] 1..
+* value[x] only CodeableConcept
+* value[x] from StateVS (required)
+
 Extension: ManagingOrganizationAttachment
 Id: managing-organization-attachment
 Title: "Managing organization attachment date"
