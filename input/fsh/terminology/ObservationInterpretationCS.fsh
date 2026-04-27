@@ -6,196 +6,196 @@ Description: "Observation interpretation supplement with translations in Uzbek a
 
 * #CAR
   * ^designation[0].language = #ru
-  * ^designation[0].value = "Носитель"
-  * ^designation[1].language = #uz
-  * ^designation[1].value = "Tashuvchi"
+  * ^designation[=].value = "Носитель"
+  * ^designation[+].language = #uz
+  * ^designation[=].value = "Tashuvchi"
 * #B
   * ^designation[0].language = #ru
-  * ^designation[0].value = "Лучше"
-  * ^designation[1].language = #uz
-  * ^designation[1].value = "Yaxshiroq"
+  * ^designation[=].value = "Лучше"
+  * ^designation[+].language = #uz
+  * ^designation[=].value = "Yaxshiroq"
 * #D
   * ^designation[0].language = #ru
-  * ^designation[0].value = "Значительное изменение вниз"
-  * ^designation[1].language = #uz
-  * ^designation[1].value = "Sezarli pastga o'zgarish"
+  * ^designation[=].value = "Значительное изменение вниз"
+  * ^designation[+].language = #uz
+  * ^designation[=].value = "Sezarli pastga o'zgarish"
 * #U
   * ^designation[0].language = #ru
-  * ^designation[0].value = "Значительные изменения"
-  * ^designation[1].language = #uz
-  * ^designation[1].value = "Jiddiy o'zgarish"
+  * ^designation[=].value = "Значительные изменения"
+  * ^designation[+].language = #uz
+  * ^designation[=].value = "Jiddiy o'zgarish"
 * #W
   * ^designation[0].language = #ru
-  * ^designation[0].value = "Хуже"
-  * ^designation[1].language = #uz
-  * ^designation[1].value = "Battar"
+  * ^designation[=].value = "Хуже"
+  * ^designation[+].language = #uz
+  * ^designation[=].value = "Battar"
 * #<
   * ^designation[0].language = #ru
-  * ^designation[0].value = "Зашкаливающий низкий уровень"
-  * ^designation[1].language = #uz
-  * ^designation[1].value = "Shkaladan past darajada"
+  * ^designation[=].value = "Зашкаливающий низкий уровень"
+  * ^designation[+].language = #uz
+  * ^designation[=].value = "Shkaladan past darajada"
 * #>
   * ^designation[0].language = #ru
-  * ^designation[0].value = "Зашкаливающий высокий уровень"
-  * ^designation[1].language = #uz
-  * ^designation[1].value = "Shkaladan uyqori darajada"
+  * ^designation[=].value = "Зашкаливающий высокий уровень"
+  * ^designation[+].language = #uz
+  * ^designation[=].value = "Shkaladan uyqori darajada"
 * #IE
   * ^designation[0].language = #ru
-  * ^designation[0].value = "Недостаточно доказательств"
-  * ^designation[1].language = #uz
-  * ^designation[1].value = "Dalillar yetarli emas"
+  * ^designation[=].value = "Недостаточно доказательств"
+  * ^designation[+].language = #uz
+  * ^designation[=].value = "Dalillar yetarli emas"
 * #A
   * ^designation[0].language = #ru
-  * ^designation[0].value = "Аномальный"
-  * ^designation[1].language = #uz
-  * ^designation[1].value = "Anomal"
+  * ^designation[=].value = "Аномальный"
+  * ^designation[+].language = #uz
+  * ^designation[=].value = "Anomal"
 * #AA
   * ^designation[0].language = #ru
-  * ^designation[0].value = "Критический аномальный"
-  * ^designation[1].language = #uz
-  * ^designation[1].value = "Kritik anormallik"
+  * ^designation[=].value = "Критический аномальный"
+  * ^designation[+].language = #uz
+  * ^designation[=].value = "Kritik anormallik"
 * #HH
   * ^designation[0].language = #ru
-  * ^designation[0].value = "Критически высокий"
-  * ^designation[1].language = #uz
-  * ^designation[1].value = "Kritik yuqori"
+  * ^designation[=].value = "Критически высокий"
+  * ^designation[+].language = #uz
+  * ^designation[=].value = "Kritik yuqori"
 * #LL
   * ^designation[0].language = #ru
-  * ^designation[0].value = "Критически низкий"
-  * ^designation[1].language = #uz
-  * ^designation[1].value = "Kritik past"
+  * ^designation[=].value = "Критически низкий"
+  * ^designation[+].language = #uz
+  * ^designation[=].value = "Kritik past"
 * #H
   * ^designation[0].language = #ru
-  * ^designation[0].value = "Высокий"
-  * ^designation[1].language = #uz
-  * ^designation[1].value = "Yuqori"
+  * ^designation[=].value = "Высокий"
+  * ^designation[+].language = #uz
+  * ^designation[=].value = "Yuqori"
 * #HU
   * ^designation[0].language = #ru
-  * ^designation[0].value = "Значительно высокий"
-  * ^designation[1].language = #uz
-  * ^designation[1].value = "Sezarli yuqori"
+  * ^designation[=].value = "Значительно высокий"
+  * ^designation[+].language = #uz
+  * ^designation[=].value = "Sezarli yuqori"
 * #L
   * ^designation[0].language = #ru
-  * ^designation[0].value = "Низкий"
-  * ^designation[1].language = #uz
-  * ^designation[1].value = "Past"
+  * ^designation[=].value = "Низкий"
+  * ^designation[+].language = #uz
+  * ^designation[=].value = "Past"
 * #LU
   * ^designation[0].language = #ru
-  * ^designation[0].value = "Значительно низкий"
-  * ^designation[1].language = #uz
-  * ^designation[1].value = "Ancha (juda) past"
+  * ^designation[=].value = "Значительно низкий"
+  * ^designation[+].language = #uz
+  * ^designation[=].value = "Ancha (juda) past"
 * #N
   * ^designation[0].language = #ru
-  * ^designation[0].value = "Нормальный"
-  * ^designation[1].language = #uz
-  * ^designation[1].value = "Normal"
+  * ^designation[=].value = "Нормальный"
+  * ^designation[+].language = #uz
+  * ^designation[=].value = "Normal"
 * #I
   * ^designation[0].language = #ru
-  * ^designation[0].value = "Средний"
-  * ^designation[1].language = #uz
-  * ^designation[1].value = "O'rtacha"
+  * ^designation[=].value = "Средний"
+  * ^designation[+].language = #uz
+  * ^designation[=].value = "O'rtacha"
 * #NCL
   * ^designation[0].language = #ru
-  * ^designation[0].value = "Нет установленного порогового значения по стандартам CLSI"
-  * ^designation[1].language = #uz
-  * ^designation[1].value = "CLSI standartlariga ko'ra belgilangan chegara qiymati mavjud emas"
+  * ^designation[=].value = "Нет установленного порогового значения по стандартам CLSI"
+  * ^designation[+].language = #uz
+  * ^designation[=].value = "CLSI standartlariga ko'ra belgilangan chegara qiymati mavjud emas"
 * #NS
   * ^designation[0].language = #ru
-  * ^designation[0].value = "Невосприимчивый"
-  * ^designation[1].language = #uz
-  * ^designation[1].value = "Ta'sir qilmaydigan"
+  * ^designation[=].value = "Невосприимчивый"
+  * ^designation[+].language = #uz
+  * ^designation[=].value = "Ta'sir qilmaydigan"
 * #R
   * ^designation[0].language = #ru
-  * ^designation[0].value = "Устойчивый"
-  * ^designation[1].language = #uz
-  * ^designation[1].value = "Chidamli"
+  * ^designation[=].value = "Устойчивый"
+  * ^designation[+].language = #uz
+  * ^designation[=].value = "Chidamli"
 * #SYN-R
   * ^designation[0].language = #ru
-  * ^designation[0].value = "Устойчивый к синергии"
-  * ^designation[1].language = #uz
-  * ^designation[1].value = "Sinergiyaga chidamli"
+  * ^designation[=].value = "Устойчивый к синергии"
+  * ^designation[+].language = #uz
+  * ^designation[=].value = "Sinergiyaga chidamli"
 * #S
   * ^designation[0].language = #ru
-  * ^designation[0].value = "Восприимчивый"
-  * ^designation[1].language = #uz
-  * ^designation[1].value = "Ta'sirchan"
+  * ^designation[=].value = "Восприимчивый"
+  * ^designation[+].language = #uz
+  * ^designation[=].value = "Ta'sirchan"
 * #SDD
   * ^designation[0].language = #ru
-  * ^designation[0].value = "Восприимчивый - зависит от дозы"
-  * ^designation[1].language = #uz
-  * ^designation[1].value = "Dozaga bog'liq ta'sirchanlik"
+  * ^designation[=].value = "Восприимчивый - зависит от дозы"
+  * ^designation[+].language = #uz
+  * ^designation[=].value = "Dozaga bog'liq ta'sirchanlik"
 * #SYN-S
   * ^designation[0].language = #ru
-  * ^designation[0].value = "Синергия - восприимчивый"
-  * ^designation[1].language = #uz
-  * ^designation[1].value = "Sinergiyaga - ta'sirchan"
+  * ^designation[=].value = "Синергия - восприимчивый"
+  * ^designation[+].language = #uz
+  * ^designation[=].value = "Sinergiyaga - ta'sirchan"
 * #EX
   * ^designation[0].language = #ru
-  * ^designation[0].value = "Внешний порог"
-  * ^designation[1].language = #uz
-  * ^designation[1].value = "Chegara qiymatidan tashqarida"
+  * ^designation[=].value = "Внешний порог"
+  * ^designation[+].language = #uz
+  * ^designation[=].value = "Chegara qiymatidan tashqarida"
 * #HX
   * ^designation[0].language = #ru
-  * ^designation[0].value = "Выше верхнего порога"
-  * ^designation[1].language = #uz
-  * ^designation[1].value = "Yuqori chegaradan oshgan"
+  * ^designation[=].value = "Выше верхнего порога"
+  * ^designation[+].language = #uz
+  * ^designation[=].value = "Yuqori chegaradan oshgan"
 * #LX
   * ^designation[0].language = #ru
-  * ^designation[0].value = "Ниже нижнего порога"
-  * ^designation[1].language = #uz
-  * ^designation[1].value = "Pastki chegaradan pastda"
+  * ^designation[=].value = "Ниже нижнего порога"
+  * ^designation[+].language = #uz
+  * ^designation[=].value = "Pastki chegaradan pastda"
 * #IND
   * ^designation[0].language = #ru
-  * ^designation[0].value = "Неопределенный"
-  * ^designation[1].language = #uz
-  * ^designation[1].value = "Aniqlanmagan"
+  * ^designation[=].value = "Неопределенный"
+  * ^designation[+].language = #uz
+  * ^designation[=].value = "Aniqlanmagan"
 * #E
   * ^designation[0].language = #ru
-  * ^designation[0].value = "Двусмысленный"
-  * ^designation[1].language = #uz
-  * ^designation[1].value = "Ikkilanma manoda"
+  * ^designation[=].value = "Двусмысленный"
+  * ^designation[+].language = #uz
+  * ^designation[=].value = "Ikkilanma manoda"
 * #NEG
   * ^designation[0].language = #ru
-  * ^designation[0].value = "Отрицательно"
-  * ^designation[1].language = #uz
-  * ^designation[1].value = "Manfiy"
+  * ^designation[=].value = "Отрицательно"
+  * ^designation[+].language = #uz
+  * ^designation[=].value = "Manfiy"
 * #ND
   * ^designation[0].language = #ru
-  * ^designation[0].value = "Не обнаружено"
-  * ^designation[1].language = #uz
-  * ^designation[1].value = "Aniqlanmadi"
+  * ^designation[=].value = "Не обнаружено"
+  * ^designation[+].language = #uz
+  * ^designation[=].value = "Aniqlanmadi"
 * #POS
   * ^designation[0].language = #ru
-  * ^designation[0].value = "Положительный"
-  * ^designation[1].language = #uz
-  * ^designation[1].value = "Ijobiy"
+  * ^designation[=].value = "Положительный"
+  * ^designation[+].language = #uz
+  * ^designation[=].value = "Ijobiy"
 * #DET
   * ^designation[0].language = #ru
-  * ^designation[0].value = "Обнаружено"
-  * ^designation[1].language = #uz
-  * ^designation[1].value = "Aniqlandi"
+  * ^designation[=].value = "Обнаружено"
+  * ^designation[+].language = #uz
+  * ^designation[=].value = "Aniqlandi"
 * #EXP
   * ^designation[0].language = #ru
-  * ^designation[0].value = "Ожидаемый"
-  * ^designation[1].language = #uz
-  * ^designation[1].value = "Kutilgan"
+  * ^designation[=].value = "Ожидаемый"
+  * ^designation[+].language = #uz
+  * ^designation[=].value = "Kutilgan"
 * #UNE
   * ^designation[0].language = #ru
-  * ^designation[0].value = "Непредвиденный"
-  * ^designation[1].language = #uz
-  * ^designation[1].value = "Kutilmagan"
+  * ^designation[=].value = "Непредвиденный"
+  * ^designation[+].language = #uz
+  * ^designation[=].value = "Kutilmagan"
 * #NR
   * ^designation[0].language = #ru
-  * ^designation[0].value = "Нереактивный"
-  * ^designation[1].language = #uz
-  * ^designation[1].value = "Reaktiv bo'lmagan"
+  * ^designation[=].value = "Нереактивный"
+  * ^designation[+].language = #uz
+  * ^designation[=].value = "Reaktiv bo'lmagan"
 * #RR
   * ^designation[0].language = #ru
-  * ^designation[0].value = "Реактивный"
-  * ^designation[1].language = #uz
-  * ^designation[1].value = "Reaksiyali"
+  * ^designation[=].value = "Реактивный"
+  * ^designation[+].language = #uz
+  * ^designation[=].value = "Reaksiyali"
 * #WR
   * ^designation[0].language = #ru
-  * ^designation[0].value = "Слабо реактивный"
-  * ^designation[1].language = #uz
-  * ^designation[1].value = "Kuchsiz reaksiyali"
+  * ^designation[=].value = "Слабо реактивный"
+  * ^designation[+].language = #uz
+  * ^designation[=].value = "Kuchsiz reaksiyali"
