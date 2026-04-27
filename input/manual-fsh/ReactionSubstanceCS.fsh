@@ -22,7 +22,7 @@ Description: "Local codes and multilingual names for allergy reaction substance.
   * ^designation[+].language = #en
   * ^designation[=].value = "Lol p 1"
 
-* #aller-0010-00005 "Paspalum/grechka (Pas n)"
+* #aller-0010-00005 "Paspalum/ grechka (Pas n)"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Паспалум/гречка заметная (Pas n)"
   * ^designation[+].language = #en
