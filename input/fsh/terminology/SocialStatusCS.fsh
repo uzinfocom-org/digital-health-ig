@@ -48,8 +48,6 @@ Description: "Social status types in Uzbekistan"
   * ^designation[=].value = "Военнослужащий"
   * ^designation[+].language = #en
   * ^designation[=].value = "Military serviceman"
-
-
 * #regis0010.00010 "O'quvchi"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Ученик школы"
