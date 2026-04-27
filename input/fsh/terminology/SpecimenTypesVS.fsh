@@ -8,3 +8,4 @@ Description: "Uzbekistan local specimen types"
 * ^extension[=].valueCanonical = Canonical(SpecimenTypesCS)
 
 * include codes from system $v2-0487
+* include codes from system specimen-types-loc-cs
