@@ -52,7 +52,7 @@ Description: "Social status types in Uzbekistan"
 
 * #regis0010.00010 "O'quvchi"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Ученик"
+  * ^designation[=].value = "Ученик школы"
   * ^designation[+].language = #en
   * ^designation[=].value = "School student"
 * #regis0010.00011 "Imtiyoz toifasi mavjud"

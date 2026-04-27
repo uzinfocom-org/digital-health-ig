@@ -114,9 +114,9 @@ Description: "Types of benefits in Uzbekistan"
 
 * #regis0004.00022 "O‘zbekiston Respublikasining “Narkologik kasalliklar profilaktikasi va ularni davolash to‘g‘risida”gi Qonuni 12-moddasi."
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Медицинские работники"
+  * ^designation[=].value = "Статья 12 Закона Республики Узбекистан «О профилактике наркологических заболеваний и их лечении»"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Medical staff"
+  * ^designation[=].value = "Article 12 of the Law of the Republic of Uzbekistan “On the Prevention and Treatment of Narcological Diseases”"
 
 * #regis0004.00023 "Psixoaktiv moddalardan o‘tkir zaharlanish, psixoaktiv moddalarni iste’mol qilish bilan bog‘liq alkogolli psixozlar hamda zaharlanish natijasidagi psixozlarda shoshilinch tibbiy yordam ko‘rsatish, tekshiruvdan o‘tkazish, maslahat berish, tashxis qo‘yish, ambulatoriya va statsionar sharoitlarda davolash, shuningdek tibbiy-ijtimoiy reabilitatsiya qilish bo‘yicha bepul narkologik yordam."
   * ^designation[0].language = #ru
