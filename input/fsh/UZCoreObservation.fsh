@@ -2,7 +2,7 @@ Profile: UZCoreObservation
 Parent: Observation
 Id: uz-core-observation
 Title: "UZ Core Observation"
-Description: "Uzbekistan Core Observation profile, used to represent clinical and laboratory observations"
+Description: "Uzbekistan Core Observation profile, used to represent clinical and laboratory  observations"
 * ^experimental = true
 * ^status = #active
 //rules
@@ -101,7 +101,7 @@ Description: "Example of a body mass index (BMI) vital sign observation"
 Instance: body-height-example
 InstanceOf: Observation
 Usage: #example
-Description: "Example of a body height vital sign observation"
+Description: "Example of a body height vital sign  observation"
 * meta.profile[0] = "https://dhp.uz/fhir/core/StructureDefinition/uz-core-observation"
 * meta.profile[+] = "http://hl7.org/fhir/StructureDefinition/vitalsigns"
 * meta.profile[+] = "http://hl7.org/fhir/StructureDefinition/bodyheight"
