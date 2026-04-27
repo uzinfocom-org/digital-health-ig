@@ -53,3 +53,16 @@ Description: "Education levels in Uzbekistan"
   * ^designation[=].value = "Другое"
   * ^designation[+].language = #en
   * ^designation[=].value = "Other"
+
+
+
+* #regis0005.00011 "Ma'lumoti yo'q"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Нет образования"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "No education"
+* #regis0005.00012 "Ixtisoslik"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Специальность"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Specialty"
