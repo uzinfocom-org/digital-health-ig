@@ -8,4 +8,4 @@ Description: "Mahallas names with English and Russian translations"
 * ^language = #uz
 
 * include codes from system mahalla-cs
-* include codes from system mahalla-coat-cs
+* include codes from system mahalla-coato-cs

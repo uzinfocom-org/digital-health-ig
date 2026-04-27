@@ -16,13 +16,20 @@ Description: "Uzbekistan Core HealthcareService profile, used to define healthca
 * category.coding ^slicing.ordered = false
 
 * category.coding contains
-    dhpCategory 0..1 MS
+    dhpCategory 0..1 MS and
+    labCategory 0..1 MS
 
 * category.coding[dhpCategory]
   * system 1..1 MS
   * system = Canonical(CancerTypesCS)
   * code 1..1 MS
   * code from ServiceCategoriesVS (required)
+
+* category.coding[labCategory]
+  * system 1..1 MS
+  * system = Canonical(LabCategoriesCS)
+  * code 1..1 MS
+  * code from lab-service-categories-vs (required)
 
 * type.coding ^slicing.discriminator.type = #value
 * type.coding ^slicing.discriminator.path = "system"
@@ -31,13 +38,20 @@ Description: "Uzbekistan Core HealthcareService profile, used to define healthca
 * type.coding ^slicing.ordered = false
 
 * type.coding contains
-    dhpService 0..1 MS
+    dhpService 0..1 MS and
+    labService 0..1 MS
 
 * type.coding[dhpService]
   * system 1..1 MS
   * system = Canonical(CancerTypesCS)
   * code 1..1 MS
   * code from ServiceNamesVS (required)
+
+* type.coding[labService]
+  * system 1..1 MS
+  * system = Canonical(ObservationLabResearchCodesCS) //This link is temporary. After merging the ObservationLabCodes branch, it will be updated.
+  * code 1..1 MS
+  * code from observation-codes-vs (required)
 
 Instance: example-healthcareservice
 InstanceOf: UZCoreHealthcareService
