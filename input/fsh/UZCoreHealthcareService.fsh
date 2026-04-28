@@ -49,9 +49,9 @@ Description: "Uzbekistan Core HealthcareService profile, used to define healthca
 
 * type.coding[labService]
   * system 1..1 MS
-  * system = Canonical(ObservationLabResearchCodesCS) //This link is temporary. After merging the ObservationLabCodes branch, it will be updated.
+  * system = $loinc //This link is temporary. After merging the ObservationLabCodes branch, it will be updated.
   * code 1..1 MS
-  * code from observation-codes-vs (required)
+  * code from $loinc (required)
 
 Instance: example-healthcareservice
 InstanceOf: UZCoreHealthcareService
