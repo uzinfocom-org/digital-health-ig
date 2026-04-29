@@ -4,6 +4,7 @@ Id: uz-core-composition
 Title: "UZ Core Composition"
 Description: "UZ Core Composition profile, which defines the core elements of a composition, including its structure, content, and metadata. This profile is designed to be used as a foundation for creating specific compositions in various domains, such as healthcare, education, or business. It provides a standardized way to represent and exchange information about compositions, ensuring interoperability and consistency across different systems and applications."
 * ^status = #active
+* ^experimental = true
 * ^date = "2026-03-05"
 * ^publisher = "Uzinfocom"
 
