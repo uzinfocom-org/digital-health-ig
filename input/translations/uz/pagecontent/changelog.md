@@ -22,6 +22,34 @@ MIS2 JSON formatidagi tashkilotni ConceptMap yordamida UZ Core Organization resu
 
 MIS2 kodlarini UZ Core terminologiyasiga tarjima qilish uchun ConceptMap qo'shildi: [MIS2MedicalTypeToOrganizationalStructureCM](ConceptMap-mis2-medical-type-to-organizational-structure-cm.html) `type.coding[organizationalStructure]` uchun, [MIS2LevelTypeToSubordinationGroupCM](ConceptMap-mis2-level-type-to-subordination-group-cm.html) `type.coding[subordinationGroup]` uchun va [MIS2ServiceTypeToOrganizationalServiceGroupCM](ConceptMap-mis2-service-type-to-organizational-service-group-cm.html) `type.coding[organizationalServiceGroup]` uchun. MIS2 dan tarjima qilayotgan dasturchilar tegishli bo'limlarni to'ldirish uchun ushbu xaritalardan foydalanishlari kerak.
 
+### Versiya 0.5.0
+
+[UZ Core Socioeconomic Observation](StructureDefinition-uz-core-socioeconomic-observation.html) dagi **BenefitCS** kod tizimi yangi kodlar bilan kengaytirildi (masalan, `#regis0004.00020`, `#regis0004.00021`, `#regis0004.00022`, `#regis0004.00023`).
+
+[UZ Core Socioeconomic Observation](StructureDefinition-uz-core-socioeconomic-observation.html) dagi **EducationCS** kod tizimiga yangi kodlar qo‘shildi (masalan, `#regis0005.00011` "Ma’lumoti yo‘q", `#regis0005.00012` "Ixtisoslik").
+
+[UZ Core Socioeconomic Observation](StructureDefinition-uz-core-socioeconomic-observation.html) dagi **SocialStatusCS** kod tizimi kengaytirildi (masalan, `#regis0010.00010` "O‘quvchi", `#regis0010.00011` "Imtiyoz toifasi mavjud").
+
+[DisabilityCS](CodeSystem-disability-cs.html) kod tizimiga yangi termin qo‘shildi (`#regis0011.00005` "Nogironlik belgilanmagan").
+
+Yangi **AdmitSourceLocalCS** kod tizimi yaratildi va unga yangi kodlar qo‘shildi (masalan, `#mserv-0006-00001` "Yo‘llanmasiz", `#mserv-0006-00002` "Dispanser", `#mserv-0006-00003` "Tuman psixiatriyasi", `#mserv-0006-00004` "Tez tibbiy yordam", `#mserv-0006-00005` "Sud ajrimi asosida", `#mserv-0006-00006` "Ekspertizaga").
+
+Yangi **AdmissionOriginVS** valueset yaratildi va unga **AdmitSourceHomeCS** dagi kodlar shu valueset ichida berildi.
+
+[EncounterPriorityCS](CodeSystem-encounter-priority-cs.html) HL7 `v3-ActPriority` asosidagi yetishmayotgan kodlar bilan to‘ldirildi (masalan, `#A`, `#CR`, `#EL`, `#R`, `#RR`, `#S`, `#T`, `#UD`, `#UR`).
+
+Yangi **EncounterPriorityLocalCS** kod tizimi yaratildi va unga lokal ustuvorlik kodlari qo‘shildi (masalan, `#transferred`, `#mandatory-treatment`, `#involuntary-hospitalization`).
+
+Yangi **ReAdmissionLocalCS** kod tizimi yaratildi va qayta yotqizish holatlari uchun kodlar qo‘shildi (masalan, `#first-time`, `#repeat-current-year`).
+
+[EncounterDischargeDispositionHomeCS](CodeSystem-encounter-discharge-disposition-home-cs.html) kod tizimi kengaytirildi (masalan, `#mserv-0004-00004` "Chiqarildi", `#mserv-0004-00002` "Vafot etdi", `#mserv-0004-00005` "IIV muassasasiga o‘tkazildi", `#mserv-0004-00006` "Muruvvat uyiga o‘tkazildi").
+
+[UZ Core Condition](StructureDefinition-UZCoreCondition.html) uchun yangi **EncounterLocalSubjectStatusCS** kod tizimi yaratildi va bemor holatini ifodalovchi kodlar qo‘shildi (masalan, `#loc-cs-001` "Tuzaldi", `#loc-cs-002` "Ijobiy o‘zgarish bilan", `#loc-cs-003` "O‘zgarishsiz", `#loc-cs-004` "Og‘irlashdi").
+
+Coverage uchun UZCoreda Profile mavjud bo'lmasa ham, ssv formlardan biriga zarurligi sababli yangi **CoverageTypeCS** kod tizimi yaratildi va unga DTSJ va ijtimoiy jamg‘armalar orqali moliyalashtirish turlari qo‘shildi (masalan, `#dtsj-treated-case`, `#dtsj-privileged-category`, `#saxovat-komak-fund`, `#womens-notebook-fund`, `#youth-notebook-fund`).
+
+
+
 ### Versiya 0.4.0
 
 [UZ Core Goal](StructureDefinition-UZCoreGoal.html) profili tegishli kod tizimlari va qiymatlar to'plamlari bilan qo'shildi.
@@ -100,4 +128,3 @@ Bu IG'ning birinchi, ishlab chiqish jarayonidagi versiyasi bo'lib, barcha resurs
 AuditEvent, Consent, Condition, HealthcareService, Location, Organization, Patient, Practitioner, PractitionerRole, RelatedPerson, Provenance va Socioeconomic Observation uchun UZ Core profillari qo'shildi.
 
 Profil, terminologiya resurslari va IG'ning kanonik URL manzillari vaqtinchalik `medcore.uz` domenidan rasmiy `dhp.uz` domeniga o'zgartirildi.
-

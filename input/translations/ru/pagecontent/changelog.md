@@ -22,6 +22,49 @@
 
 Добавлены ConceptMap для перевода кодов MIS2 в терминологию UZ Core: [MIS2MedicalTypeToOrganizationalStructureCM](ConceptMap-mis2-medical-type-to-organizational-structure-cm.html) для `type.coding[organizationalStructure]`, [MIS2LevelTypeToSubordinationGroupCM](ConceptMap-mis2-level-type-to-subordination-group-cm.html) для `type.coding[subordinationGroup]` и [MIS2ServiceTypeToOrganizationalServiceGroupCM](ConceptMap-mis2-service-type-to-organizational-service-group-cm.html) для `type.coding[organizationalServiceGroup]`. Разработчикам, выполняющим перевод из MIS2, следует использовать эти карты для заполнения соответствующих слайсов.
 
+### Версия 0.5.0
+
+В [UZ Core Socioeconomic Observation](StructureDefinition-uz-core-socioeconomic-observation.html) система кодов **BenefitCS** была расширена новыми кодами (например, `#regis0004.00020`, `#regis0004.00021`, `#regis0004.00022`, `#regis0004.00023`).
+
+В [UZ Core Socioeconomic Observation](StructureDefinition-uz-core-socioeconomic-observation.html) в систему кодов **EducationCS** добавлены новые коды (например, `#regis0005.00011` "Нет образования", `#regis0005.00012` "Специальность").
+
+В [UZ Core Socioeconomic Observation](StructureDefinition-uz-core-socioeconomic-observation.html) система кодов **SocialStatusCS** была расширена (например, `#regis0010.00010` "Ученик школы", `#regis0010.00011` "Имеется льготная категория").
+
+В [DisabilityCS](CodeSystem-disability-cs.html) добавлен новый термин:  
+- `#regis0011.00005` "Инвалидность не установлена"
+
+Создана новая система кодов **AdmitSourceLocalCS** со следующими кодами:
+- `#mserv-0006-00001` "Без направления"
+- `#mserv-0006-00002` "Диспансер"
+- `#mserv-0006-00003` "Районная психиатрия"
+- `#mserv-0006-00004` "Скорая медицинская помощь"
+- `#mserv-0006-00005` "По решению суда"
+- `#mserv-0006-00006` "На экспертизу"
+
+Создан новый набор значений **AdmissionOriginVS**, который включает коды из **AdmitSourceHomeCS**.
+
+[EncounterPriorityCS](CodeSystem-encounter-priority-cs.html) был дополнен недостающими кодами на основе HL7 `v3-ActPriority` (например, `#A`, `#CR`, `#EL`, `#R`, `#RR`, `#S`, `#T`, `#UD`, `#UR`).
+
+Создана новая система кодов **EncounterPriorityLocalCS** с локальными кодами приоритета (например, `#transferred`, `#mandatory-treatment`, `#involuntary-hospitalization`).
+
+Создана новая система кодов **ReAdmissionLocalCS** для случаев повторной госпитализации (например, `#first-time`, `#repeat-current-year`).
+
+[EncounterDischargeDispositionHomeCS](CodeSystem-encounter-discharge-disposition-home-cs.html) была расширена новыми кодами:
+- `#mserv-0004-00004` "Выписан"
+- `#mserv-0004-00002` "Умер"
+- `#mserv-0004-00005` "Переведен в учреждение МВД"
+- `#mserv-0004-00006` "Переведён(а) в дом милосердия"
+
+Для [UZ Core Condition](StructureDefinition-UZCoreCondition.html) создана новая система кодов **EncounterLocalSubjectStatusCS**, отражающая состояние пациента:
+- `#loc-cs-001` "Выздоровел"
+- `#loc-cs-002` "С положительной динамикой"
+- `#loc-cs-003` "Без изменений"
+- `#loc-cs-004` "Ухудшился"
+
+Хотя в UZ Core отсутствует отдельный профиль для Coverage, в связи с требованиями форм ССВ создана новая система кодов **CoverageTypeCS**.  
+Она включает типы финансирования через ДТСЖ и социальные фонды (например, `#dtsj-treated-case`, `#dtsj-privileged-category`, `#saxovat-komak-fund`, `#womens-notebook-fund`, `#youth-notebook-fund`).
+
+
 ### Версия 0.4.0
 
 Добавлен профиль [UZ Core Goal](StructureDefinition-UZCoreGoal.html) с соответствующими кодовыми справочниками и наборами значений.
@@ -98,4 +141,3 @@
 Добавлены UZ Core профили для AuditEvent, Consent, Condition, HealthcareService, Location, Organization, Patient, Practitioner, PractitionerRole, RelatedPerson, Provenance и Socioeconomic Observation.
 
 Канонические URL профилей, терминологических ресурсов и IG изменены с временного домена `medcore.uz` на официальный домен `dhp.uz`.
-

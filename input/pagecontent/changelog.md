@@ -22,6 +22,49 @@ Added [example](Organization-xonobod-medical-association.html) demonstrating how
 
 Added ConceptMaps for translating MIS2 codes to UZ Core terminology: [MIS2MedicalTypeToOrganizationalStructureCM](ConceptMap-mis2-medical-type-to-organizational-structure-cm.html) for `type.coding[organizationalStructure]`, [MIS2LevelTypeToSubordinationGroupCM](ConceptMap-mis2-level-type-to-subordination-group-cm.html) for `type.coding[subordinationGroup]`, and [MIS2ServiceTypeToOrganizationalServiceGroupCM](ConceptMap-mis2-service-type-to-organizational-service-group-cm.html) for `type.coding[organizationalServiceGroup]`. Implementers translating from MIS2 should use these maps to populate the corresponding slices.
 
+### Version 0.5.0
+
+In [UZ Core Socioeconomic Observation](StructureDefinition-uz-core-socioeconomic-observation.html), the **BenefitCS** code system has been expanded with new codes (e.g., `#regis0004.00020`, `#regis0004.00021`, `#regis0004.00022`, `#regis0004.00023`).
+
+In [UZ Core Socioeconomic Observation](StructureDefinition-uz-core-socioeconomic-observation.html), new codes have been added to the **EducationCS** code system (e.g., `#regis0005.00011` "No education", `#regis0005.00012` "Specialty").
+
+In [UZ Core Socioeconomic Observation](StructureDefinition-uz-core-socioeconomic-observation.html), the **SocialStatusCS** code system has been expanded (e.g., `#regis0010.00010` "School student", `#regis0010.00011` "Eligible for benefits").
+
+A new term has been added to [DisabilityCS](CodeSystem-disability-cs.html):  
+- `#regis0011.00005` "Disability not established"
+
+A new **AdmitSourceLocalCS** code system has been created with the following codes:
+- `#mserv-0006-00001` "Without referral / Self-referred"
+- `#mserv-0006-00002` "Dispensary"
+- `#mserv-0006-00003` "District psychiatry service"
+- `#mserv-0006-00004` "Emergency medical service"
+- `#mserv-0006-00005` "By court decision"
+- `#mserv-0006-00006` "For examination"
+
+A new **AdmissionOriginVS** ValueSet has been created, which includes codes from **AdmitSourceHomeCS**.
+
+[EncounterPriorityCS](CodeSystem-encounter-priority-cs.html) has been expanded with missing codes based on HL7 `v3-ActPriority` (e.g., `#A`, `#CR`, `#EL`, `#R`, `#RR`, `#S`, `#T`, `#UD`, `#UR`).
+
+A new **EncounterPriorityLocalCS** code system has been created with local priority codes (e.g., `#transferred`, `#mandatory-treatment`, `#involuntary-hospitalization`).
+
+A new **ReAdmissionLocalCS** code system has been created for readmission cases (e.g., `#first-time`, `#repeat-current-year`).
+
+[EncounterDischargeDispositionHomeCS](CodeSystem-encounter-discharge-disposition-home-cs.html) has been expanded with new codes:
+- `#mserv-0004-00004` "Discharged"
+- `#mserv-0004-00002` "Died"
+- `#mserv-0004-00005` "Transferred to Ministry of Internal Affairs facility"
+- `#mserv-0004-00006` "Moved to a charity home (residential care facility)"
+
+For [UZ Core Condition](StructureDefinition-UZCoreCondition.html), a new **EncounterLocalSubjectStatusCS** code system has been created to represent patient status:
+- `#loc-cs-001` "Recovered"
+- `#loc-cs-002` "Improved"
+- `#loc-cs-003` "Unchanged"
+- `#loc-cs-004` "Worsened"
+
+Although there is no dedicated profile for Coverage in UZ Core, a new **CoverageTypeCS** code system has been created due to requirements from SSV forms.  
+It includes funding types through DTSJ and social funds (e.g., `#dtsj-treated-case`, `#dtsj-privileged-category`, `#saxovat-komak-fund`, `#womens-notebook-fund`, `#youth-notebook-fund`).
+
+
 ### Version 0.4.0
 Added [UZ Core Goal](StructureDefinition-uz-core-goal.html) profile with associated codesystems and valuesets.
 
@@ -99,4 +142,3 @@ This is a first, in-development release of the IG that updates the canonical URL
 UZ Core profiles for AuditEvent, Consent, Condition, HealthcareService, Location, Organization, Patient, Practitioner, PractitionerRole, RelatedPerson, Provenance and the Socioeconomic Observation have been added.
 
 Canonical URLs of profiles, terminology resources, and the IG have been changed from the temporary `medcore.uz` domain to the official `dhp.uz` domain.
-
