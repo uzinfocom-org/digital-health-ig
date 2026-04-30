@@ -124,3 +124,7 @@ Alias: $goal-Priority = http://terminology.hl7.org/CodeSystem/goal-priority
 Alias: $v2-0916 = http://terminology.hl7.org/CodeSystem/v2-0916
 Alias: $v2-0487 = http://terminology.hl7.org/CodeSystem/v2-0487
 Alias: $specimen-role = http://hl7.org/fhir/specimen-role
+
+Alias: $cvx = http://hl7.org/fhir/sid/cvx
+Alias: $cvx-vs = http://hl7.org/fhir/ValueSet/vaccine-code
+Alias: $immunization-recommendation-status = http://terminology.hl7.org/CodeSystem/immunization-recommendation-status

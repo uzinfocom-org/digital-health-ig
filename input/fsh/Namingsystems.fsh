@@ -415,3 +415,25 @@ Usage: #definition
 * uniqueId[0].type = #uri
 * uniqueId[=].value = $pension-number
 * uniqueId[=].preferred = true
+
+
+
+Instance: immunization-recommendation-id
+InstanceOf: NamingSystem
+Description: "The immunization recommendation identifier is used to uniquely identify a vaccination recommendation record for a patient."
+Usage: #definition
+
+* url = "https://terminology.dhp.uz/fhir/core/NamingSystem/immunization-recommendation-id"
+* name = "UzbekistanImmunizationRecommendationIdentifier"
+* status = #active
+* kind = #identifier
+* date = "2026-01-08"
+* publisher = "Uzinfocom"
+* responsible = "Ministry of Health of the Republic of Uzbekistan"
+* type = $identifier-type#MR "Medical record number"
+* description = "Naming system defining the identifier assigned to immunization recommendation records in Uzbekistan. This identifier is used within national digital health systems to track and manage vaccination recommendations, including scheduling, status evaluation, and clinical decision support."
+* jurisdiction = urn:iso:std:iso:3166#UZ "Uzbekistan"
+* usage = "Used to record and exchange immunization recommendation identifiers across healthcare systems, supporting vaccination planning, monitoring, and clinical workflows. This identifier is specific to recommendation records and does not replace patient or immunization identifiers."
+* uniqueId[0].type = #uri
+* uniqueId[=].value = "https://dhp.uz/fhir/core/NamingSystem/immunization-recommendation-id"
+* uniqueId[=].preferred = true
