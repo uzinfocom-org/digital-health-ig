@@ -124,3 +124,16 @@ Alias: $goal-Priority = http://terminology.hl7.org/CodeSystem/goal-priority
 Alias: $v2-0916 = http://terminology.hl7.org/CodeSystem/v2-0916
 Alias: $v2-0487 = http://terminology.hl7.org/CodeSystem/v2-0487
 Alias: $specimen-role = http://hl7.org/fhir/specimen-role
+
+
+
+
+Alias: $event-status = http://hl7.org/fhir/event-status
+Alias: $immunization-origin = http://terminology.hl7.org/CodeSystem/immunization-origin
+Alias: $v3-ActSite = http://terminology.hl7.org/CodeSystem/v3-ActSite
+Alias: $immunization-subpotent-reason = http://terminology.hl7.org/CodeSystem/immunization-subpotent-reason
+Alias: $immunization-funding-source = http://terminology.hl7.org/CodeSystem/immunization-funding-source
+Alias: $v2-0443 = http://terminology.hl7.org/CodeSystem/v2-0443
+Alias: $immunization-program-eligibility = http://terminology.hl7.org/CodeSystem/immunization-program-eligibility
+Alias: $cvx = http://hl7.org/fhir/sid/cvx
+Alias: $cvx-vs = http://hl7.org/fhir/ValueSet/vaccine-code

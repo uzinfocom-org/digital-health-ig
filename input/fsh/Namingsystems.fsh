@@ -415,3 +415,20 @@ Usage: #definition
 * uniqueId[0].type = #uri
 * uniqueId[=].value = $pension-number
 * uniqueId[=].preferred = true
+
+
+
+//
+Instance: immunization-identifier
+InstanceOf: NamingSystem
+Usage: #definition
+Title: "Immunization Identifier"
+Description: "Identifier system for immunization records in Uzbekistan."
+* name = "ImmunizationIdentifier"
+* status = #active
+* kind = #identifier
+* date = "2026-04-29"
+* publisher = "Uzinfocom"
+* uniqueId[0].type = #uri
+* uniqueId[0].value = "https://terminology.dhp.uz/fhir/core/NamingSystem/immunization-identifier"
+* uniqueId[0].preferred = true
