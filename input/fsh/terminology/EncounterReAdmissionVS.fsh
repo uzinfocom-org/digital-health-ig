@@ -8,3 +8,4 @@ Description: "Encounter readmission codes with Uzbek and Russian translations"
 * ^extension[=].valueCanonical = Canonical(EncounterReAdmissionCS)
 
 * include codes from system $v2-admission
+* include codes from system re-admission-local-cs
