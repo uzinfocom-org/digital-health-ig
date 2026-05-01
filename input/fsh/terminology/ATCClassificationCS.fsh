@@ -2025,14 +2025,14 @@ Description: "Anatomical Therapeutic Chemical (ATC) classification system for me
       * ^designation[+].language = #ru
       * ^designation[=].value = "Тегасерод"
 
-
+/*
 // ===== A6AD =====
-* #A6AD "Osmotik surgi vositalari"
+* #A6AD
   * ^designation[0].language = #uz
   * ^designation[=].value = "Osmotik surgi vositalari"
   * ^designation[+].language = #ru
   * ^designation[=].value = "Осмотические слабительные средства"
-
+*/
 // ===== A01AD01 =====
 * #A01AD01 "Epinefrin"
   * ^designation[0].language = #uz
@@ -3658,28 +3658,28 @@ Description: "Anatomical Therapeutic Chemical (ATC) classification system for me
   * ^designation[=].value = "Vitamin B1 Vitamin B6 va/yoki  Vitamin B12 bilan majmuada"
   * ^designation[+].language = #ru
   * ^designation[=].value = "Витамин B1 в комбинации с витамином B6 и/или витамином B12"
-
+/*
 // ===== A11DВ01 =====
-* #A11DВ01 "Тiamin (Vitamin B1) va Piridoksin (Vitamin B6)"
+* #A11DВ01
   * ^designation[0].language = #uz
   * ^designation[=].value = "Тiamin (Vitamin B1) va Piridoksin (Vitamin B6)"
   * ^designation[+].language = #ru
   * ^designation[=].value = "Тиамин (витамин B1) и пиридоксин (витамин B6)"
 
 // ===== A11DВ03 =====
-* #A11DВ03 "Vitamin B1, Vitamin B6 va Vitamin B12"
+* #A11DВ03
   * ^designation[0].language = #uz
   * ^designation[=].value = "Vitamin B1, Vitamin B6 va Vitamin B12"
   * ^designation[+].language = #ru
   * ^designation[=].value = "Витамин B1, витамин B6 и витамин B12"
 
 // ===== A11DВ04 =====
-* #A11DВ04 "Tiamin, piridoksin va nikotinamid"
+* #A11DВ04
   * ^designation[0].language = #uz
   * ^designation[=].value = "Tiamin, piridoksin va nikotinamid"
   * ^designation[+].language = #ru
   * ^designation[=].value = "Тиамин, пиридоксин и никотинамид"
-
+*/
 // ===== A11EA =====
 * #A11EA "B gurux vitaminlari"
   * ^designation[0].language = #uz
@@ -8795,14 +8795,14 @@ Description: "Anatomical Therapeutic Chemical (ATC) classification system for me
     * ^designation[=].value = "Triamsinolon"
     * ^designation[+].language = #ru
     * ^designation[=].value = "Триамцинолон"
-
+/*
 // ===== C05AВ =====
-* #C05AВ "Antibiotiklar"
+* #C05AВ
   * ^designation[0].language = #uz
   * ^designation[=].value = "Antibiotiklar"
   * ^designation[+].language = #ru
   * ^designation[=].value = "Антибиотики"
-
+*/
 // ===== C05AD =====
 * #C05AD "Mahalliy anestetiklar"
   * ^designation[0].language = #uz
@@ -15630,14 +15630,14 @@ Description: "Anatomical Therapeutic Chemical (ATC) classification system for me
     * ^designation[=].value = "Dibromotirozin"
     * ^designation[+].language = #ru
     * ^designation[=].value = "Дибромотирозин"
-
+/*
 // ===== H03СА =====
-* #H03СА "Yod prepaeratlari"
+* #H03СА
   * ^designation[0].language = #uz
   * ^designation[=].value = "Yod prepaeratlari"
   * ^designation[+].language = #ru
   * ^designation[=].value = "Препараты йода"
-
+*/
 // ===== H04AA =====
 * #H04AA "Glikogenni parchalovchi garmonlar"
   * ^designation[0].language = #uz
@@ -16195,9 +16195,9 @@ Description: "Anatomical Therapeutic Chemical (ATC) classification system for me
     * ^designation[=].value = "Penitsillinlar majmuada"
     * ^designation[+].language = #ru
     * ^designation[=].value = "Пенициллинов в комбинации"
-
+/*
 // ===== J01DA =====
-* #J01DA "Sefalosporinlar"
+* #J01DA
   * ^designation[0].language = #uz
   * ^designation[=].value = "Sefalosporinlar"
   * ^designation[+].language = #ru
@@ -16208,7 +16208,7 @@ Description: "Anatomical Therapeutic Chemical (ATC) classification system for me
     * ^designation[=].value = "Sefoperazon boshqa vositalar bilan majmuada"
     * ^designation[+].language = #ru
     * ^designation[=].value = "Цефоперазон в комбинации со средствами"
-
+*/
 // ===== J01DB =====
 * #J01DB "Birinchi avlod sefalosporinlar"
   * ^designation[0].language = #uz
@@ -19771,7 +19771,7 @@ Description: "Anatomical Therapeutic Chemical (ATC) classification system for me
     * ^designation[=].value = "Prokarbazin"
     * ^designation[+].language = #ru
     * ^designation[=].value = "Прокарбазин"
-
+/*
 // ===== L01XC =====
 * #L01XC "Monoklonal antitelalar"
   * ^designation[0].language = #uz
@@ -19928,7 +19928,7 @@ Description: "Anatomical Therapeutic Chemical (ATC) classification system for me
     * ^designation[=].value = "Inotuzumab ozogamitsin"
     * ^designation[+].language = #ru
     * ^designation[=].value = "Инотузумаб озогамицин"
-
+*/
 // ===== L01XD =====
 * #L01XD "Fotodinamik /nur terapiyada, qoʻllaniladigan preparatlar"
   * ^designation[0].language = #uz
@@ -19965,7 +19965,7 @@ Description: "Anatomical Therapeutic Chemical (ATC) classification system for me
     * ^designation[=].value = "Temoporfin"
     * ^designation[+].language = #ru
     * ^designation[=].value = "Темопорфин"
-
+/*
 // ===== L01XE =====
 * #L01XE "Proteinkinaza ingibitorlari"
   * ^designation[0].language = #uz
@@ -20200,7 +20200,7 @@ Description: "Anatomical Therapeutic Chemical (ATC) classification system for me
     * ^designation[=].value = "Olmutinib"
     * ^designation[+].language = #ru
     * ^designation[=].value = "Олмутиниб"
-
+*/
 // ===== L01XX =====
 * #L01XX "Boshqa oʻsmaga qarshi preparatlar"
   * ^designation[0].language = #uz
@@ -24388,7 +24388,7 @@ Description: "Anatomical Therapeutic Chemical (ATC) classification system for me
     * ^designation[=].value = "Klotiapin"
     * ^designation[+].language = #ru
     * ^designation[=].value = "Клотиапин"
-
+/*
 // ===== N05AK =====
 * #N05AK "Sekin diskineziyalarni davolash uchun neyroleptiklar"
   * ^designation[0].language = #uz
@@ -24450,7 +24450,7 @@ Description: "Anatomical Therapeutic Chemical (ATC) classification system for me
     * ^designation[=].value = "Levosulpirid"
     * ^designation[+].language = #ru
     * ^designation[=].value = "Левосульпирид"
-
+*/
 // ===== N05AN =====
 * #N05AN "Litiy preparatlari"
   * ^designation[0].language = #uz
@@ -30724,14 +30724,14 @@ Description: "Anatomical Therapeutic Chemical (ATC) classification system for me
     * ^designation[=].value = "Diazoksid"
     * ^designation[+].language = #ru
     * ^designation[=].value = "Диазоксид"
-
+/*
 // ===== V03AК =====
 * #V03AК "Mato yelimi"
   * ^designation[0].language = #uz
   * ^designation[=].value = "Mato yelimi"
   * ^designation[+].language = #ru
   * ^designation[=].value = "Тканевые клеи"
-
+*/
 // ===== V03AM =====
 * #V03AM "Embolizatsiya uchun preparatlar"
   * ^designation[0].language = #uz
@@ -31084,109 +31084,110 @@ Description: "Anatomical Therapeutic Chemical (ATC) classification system for me
     * ^designation[=].value = "Гонадорелин"
 
 // ===== V04CХ =====
-* #V04CХ "Boshqa diagnostik preparatlar"
+/*
+* #V04CХ "Other diagnostic agents"
   * ^designation[0].language = #uz
   * ^designation[=].value = "Boshqa diagnostik preparatlar"
   * ^designation[+].language = #ru
   * ^designation[=].value = "Диагностические препараты другие"
+*/
+  // ===== V04CX01 =====
+  * #V04CX01 "Indotsianin yashil"
+    * ^designation[0].language = #uz
+    * ^designation[=].value = "Indotsianin yashil"
+    * ^designation[+].language = #ru
+    * ^designation[=].value = "Индоцианин зеленый"
 
-// ===== V04CX01 =====
-* #V04CX01 "Indotsianin yashil"
-  * ^designation[0].language = #uz
-  * ^designation[=].value = "Indotsianin yashil"
-  * ^designation[+].language = #ru
-  * ^designation[=].value = "Индоцианин зеленый"
+  // ===== V04CX02 =====
+  * #V04CX02 "Folat kislota"
+    * ^designation[0].language = #uz
+    * ^designation[=].value = "Folat kislota"
+    * ^designation[+].language = #ru
+    * ^designation[=].value = "Фолиевая кислота"
 
-// ===== V04CX02 =====
-* #V04CX02 "Folat kislota"
-  * ^designation[0].language = #uz
-  * ^designation[=].value = "Folat kislota"
-  * ^designation[+].language = #ru
-  * ^designation[=].value = "Фолиевая кислота"
+  // ===== V04CX03 =====
+  * #V04CX03 "Metaxolin"
+    * ^designation[0].language = #uz
+    * ^designation[=].value = "Metaxolin"
+    * ^designation[+].language = #ru
+    * ^designation[=].value = "Метахолин"
 
-// ===== V04CX03 =====
-* #V04CX03 "Metaxolin"
-  * ^designation[0].language = #uz
-  * ^designation[=].value = "Metaxolin"
-  * ^designation[+].language = #ru
-  * ^designation[=].value = "Метахолин"
+  // ===== V04CX04 =====
+  * #V04CX04 "Mannitol"
+    * ^designation[0].language = #uz
+    * ^designation[=].value = "Mannitol"
+    * ^designation[+].language = #ru
+    * ^designation[=].value = "Маннитол"
 
-// ===== V04CX04 =====
-* #V04CX04 "Mannitol"
-  * ^designation[0].language = #uz
-  * ^designation[=].value = "Mannitol"
-  * ^designation[+].language = #ru
-  * ^designation[=].value = "Маннитол"
+  // ===== V04CX05 =====
+  * #V04CX05 "13C-karbamid"
+    * ^designation[0].language = #uz
+    * ^designation[=].value = "13C-karbamid"
+    * ^designation[+].language = #ru
+    * ^designation[=].value = "13C-карбамид"
 
-// ===== V04CX05 =====
-* #V04CX05 "13C-karbamid"
-  * ^designation[0].language = #uz
-  * ^designation[=].value = "13C-karbamid"
-  * ^designation[+].language = #ru
-  * ^designation[=].value = "13C-карбамид"
+  // ===== V04CX06 =====
+  * #V04CX06 "Geksaminolevulinat"
+    * ^designation[0].language = #uz
+    * ^designation[=].value = "Geksaminolevulinat"
+    * ^designation[+].language = #ru
+    * ^designation[=].value = "Гексаминолевулинат"
 
-// ===== V04CX06 =====
-* #V04CX06 "Geksaminolevulinat"
-  * ^designation[0].language = #uz
-  * ^designation[=].value = "Geksaminolevulinat"
-  * ^designation[+].language = #ru
-  * ^designation[=].value = "Гексаминолевулинат"
+  // ===== V04CX07 =====
+  * #V04CX07 "Edrofonium"
+    * ^designation[0].language = #uz
+    * ^designation[=].value = "Edrofonium"
+    * ^designation[+].language = #ru
+    * ^designation[=].value = "Эдрофониум"
 
-// ===== V04CX07 =====
-* #V04CX07 "Edrofonium"
-  * ^designation[0].language = #uz
-  * ^designation[=].value = "Edrofonium"
-  * ^designation[+].language = #ru
-  * ^designation[=].value = "Эдрофониум"
+  // ===== V04CX08 =====
+  * #V04CX08 "Uglerod oksidi"
+    * ^designation[0].language = #uz
+    * ^designation[=].value = "Uglerod oksidi"
+    * ^designation[+].language = #ru
+    * ^designation[=].value = "Окись углерода"
 
-// ===== V04CX08 =====
-* #V04CX08 "Uglerod oksidi"
-  * ^designation[0].language = #uz
-  * ^designation[=].value = "Uglerod oksidi"
-  * ^designation[+].language = #ru
-  * ^designation[=].value = "Окись углерода"
+  // ===== V04CX09 =====
+  * #V04CX09 "Patentlangan ko'k"
+    * ^designation[0].language = #uz
+    * ^designation[=].value = "Patentlangan ko'k"
+    * ^designation[+].language = #ru
+    * ^designation[=].value = "Патентованный синий"
 
-// ===== V04CX09 =====
-* #V04CX09 "Patentlangan ko'k"
-  * ^designation[0].language = #uz
-  * ^designation[=].value = "Patentlangan ko'k"
-  * ^designation[+].language = #ru
-  * ^designation[=].value = "Патентованный синий"
+  // ===== V04CX11 =====
+  * #V04CX11 "Litiy xlorid"
+    * ^designation[0].language = #uz
+    * ^designation[=].value = "Litiy xlorid"
+    * ^designation[+].language = #ru
+    * ^designation[=].value = "Лития хлорид"
 
-// ===== V04CX11 =====
-* #V04CX11 "Litiy xlorid"
-  * ^designation[0].language = #uz
-  * ^designation[=].value = "Litiy xlorid"
-  * ^designation[+].language = #ru
-  * ^designation[=].value = "Лития хлорид"
+  // ===== V04CX12 =====
+  * #V04CX12 "Ksenon"
+    * ^designation[0].language = #uz
+    * ^designation[=].value = "Ksenon"
+    * ^designation[+].language = #ru
+    * ^designation[=].value = "Ксенон"
 
-// ===== V04CX12 =====
-* #V04CX12 "Ksenon"
-  * ^designation[0].language = #uz
-  * ^designation[=].value = "Ksenon"
-  * ^designation[+].language = #ru
-  * ^designation[=].value = "Ксенон"
+  // ===== V06CA =====
+  * #V06CA "Fenilalaninsiz ozuqa vositalar"
+    * ^designation[0].language = #uz
+    * ^designation[=].value = "Fenilalaninsiz ozuqa vositalar"
+    * ^designation[+].language = #ru
+    * ^designation[=].value = "Средства питания без фенилаланина"
 
-// ===== V06CA =====
-* #V06CA "Fenilalaninsiz ozuqa vositalar"
-  * ^designation[0].language = #uz
-  * ^designation[=].value = "Fenilalaninsiz ozuqa vositalar"
-  * ^designation[+].language = #ru
-  * ^designation[=].value = "Средства питания без фенилаланина"
+  // ===== V06DA =====
+  * #V06DA "Uglevodlar, oqsillar, minerallar va vitaminlar bilan majmuada"
+    * ^designation[0].language = #uz
+    * ^designation[=].value = "Uglevodlar, oqsillar, minerallar va vitaminlar bilan majmuada"
+    * ^designation[+].language = #ru
+    * ^designation[=].value = "Углеводы, белки, минеральные вещества и витамины в комбинации"
 
-// ===== V06DA =====
-* #V06DA "Uglevodlar, oqsillar, minerallar va vitaminlar bilan majmuada"
-  * ^designation[0].language = #uz
-  * ^designation[=].value = "Uglevodlar, oqsillar, minerallar va vitaminlar bilan majmuada"
-  * ^designation[+].language = #ru
-  * ^designation[=].value = "Углеводы, белки, минеральные вещества и витамины в комбинации"
-
-// ===== V06DB =====
-* #V06DB "Proteinlar, yog'lar, uglevodlar, minerallar va vitaminlar majmuasi"
-  * ^designation[0].language = #uz
-  * ^designation[=].value = "Proteinlar, yog'lar, uglevodlar, minerallar va vitaminlar majmuasi"
-  * ^designation[+].language = #ru
-  * ^designation[=].value = "Комплекс белков, жиров, углеводов, минералов и витаминов"
+  // ===== V06DB =====
+  * #V06DB "Proteinlar, yog'lar, uglevodlar, minerallar va vitaminlar majmuasi"
+    * ^designation[0].language = #uz
+    * ^designation[=].value = "Proteinlar, yog'lar, uglevodlar, minerallar va vitaminlar majmuasi"
+    * ^designation[+].language = #ru
+    * ^designation[=].value = "Комплекс белков, жиров, углеводов, минералов и витаминов"
 
 // ===== V06DC =====
 * #V06DC "Uglevodlar"
