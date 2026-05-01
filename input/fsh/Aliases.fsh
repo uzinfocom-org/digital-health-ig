@@ -124,3 +124,11 @@ Alias: $goal-Priority = http://terminology.hl7.org/CodeSystem/goal-priority
 Alias: $v2-0916 = http://terminology.hl7.org/CodeSystem/v2-0916
 Alias: $v2-0487 = http://terminology.hl7.org/CodeSystem/v2-0487
 Alias: $specimen-role = http://hl7.org/fhir/specimen-role
+
+
+
+
+Alias: $event-status = http://hl7.org/fhir/event-status
+Alias: $adverse-event-actuality = http://hl7.org/fhir/adverse-event-actuality
+Alias: $adverse-event-seriousness = http://terminology.hl7.org/CodeSystem/adverse-event-seriousness
+
