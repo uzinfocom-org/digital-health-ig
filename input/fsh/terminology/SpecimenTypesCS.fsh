@@ -1157,7 +1157,7 @@ Description: "Specimen types, supplemented with translations in Uzbek and Russia
 
 * #PDTS
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Туннель/Область перитонеального диализа , "
+  * ^designation[=].value = "Туннель/Область перитонеального диализа"
   * ^designation[+].language = #uz
   * ^designation[=].value = "Peritoneal dializ tunneli / Joyi"
 
