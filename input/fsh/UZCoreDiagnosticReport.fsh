@@ -15,7 +15,7 @@ Description: "Uzbekistan Core profile for AllergyIntolerance, representing clini
   * ^short = "What was requested"
 * status MS
 * status from DiagnosticReportStatusVS
-  * ^short = "Diagnostic Report status . Binding : http://hl7.org/fhir/diagnostic-report-status"
+  * ^short = "Diagnostic Report status. Binding : http://hl7.org/fhir/diagnostic-report-status"
 * category MS
 * category from DiagnosticReportServiceCategoryVS
   * ^short = "Service category Binding: http://terminology.hl7.org/CodeSystem/v2-0074"
@@ -46,6 +46,56 @@ Description: "Uzbekistan Core profile for AllergyIntolerance, representing clini
 * media.link MS
   * ^short = "Reference to the image or data"
 * presentedForm MS
-  * ^short = "Entire report as issued pdf "
+  * ^short = "Entire report as issued pdf"
+
+
+Instance: uz-core-diagnostic-report-example
+InstanceOf: UZCoreDiagnosticReport
+Usage: #example
+Title: "UZ Core DiagnosticReport Example"
+Description: "Laboratory diagnostic report for a complete blood count, including hematology observations and an associated imaging reference."
+
+* identifier.system = "https://terminology.dhp.uz/fhir/core/NamingSystem/diagnostic-report-id"
+* identifier.value = "DR-2026-0001"
+
+* basedOn = Reference(ServiceRequest/example-cbc-order)
+
+* status = #final
+
+* category = $diagnostic-report-service-category#AU "Audiology"
+
+* code = lab-report-types-cs#lab-rep-01 "Laboratory report"
+
+* subject = Reference(Patient/example-salim)
+
+* encounter = Reference(Encounter/example-encounter)
+
+* effectiveDateTime = "2026-02-06T10:30:00+05:00"
+
+* performer = Reference(Practitioner/example-practitioner)
+
+* specimen = Reference(Specimen/specimen-example-blood)
+
+* result[0] = Reference(Observation/body-temperature-example)
+
+* media.comment = "Related diagnostic image"
+* media.link = Reference(DocumentReference/example-diagnostic-media)
+
+
+
+
+
+Instance: example-diagnostic-media
+InstanceOf: DocumentReference
+Title: "Example Diagnostic Media"
+Description: "Represents an imaging artifact associated with a diagnostic report, such as a photograph or radiology image used for clinical evaluation."
+Usage: #example
+
+* status = #current
+* subject = Reference(example-salim)
+* type = http://loinc.org#18748-4 "Diagnostic imaging study"
+* content[0].attachment.contentType = #image/jpeg
+* content[=].attachment.url = "http://example.org/fhir/Binary/example-diagnostic-image"
+
 
 
