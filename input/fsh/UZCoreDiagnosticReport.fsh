@@ -15,7 +15,7 @@ Description: "Uzbekistan Core profile for AllergyIntolerance, representing clini
   * ^short = "What was requested"
 * status MS
 * status from DiagnosticReportStatusVS
-  * ^short = "Diagnostic Report status . Binding : http://hl7.org/fhir/diagnostic-report-status"
+  * ^short = "Diagnostic Report status. Binding : http://hl7.org/fhir/diagnostic-report-status"
 * category MS
 * category from DiagnosticReportServiceCategoryVS
   * ^short = "Service category Binding: http://terminology.hl7.org/CodeSystem/v2-0074"
@@ -58,7 +58,7 @@ Description: "Laboratory diagnostic report for a complete blood count, including
 * identifier.system = "https://terminology.dhp.uz/fhir/core/NamingSystem/diagnostic-report-id"
 * identifier.value = "DR-2026-0001"
 
-* basedOn = Reference(example-service-request)
+* basedOn = Reference(ServiceRequest/example-cbc-order)
 
 * status = #final
 
@@ -66,20 +66,20 @@ Description: "Laboratory diagnostic report for a complete blood count, including
 
 * code = lab-report-types-cs#lab-rep-01 "Laboratory report"
 
-* subject = Reference(example-salim)
+* subject = Reference(Patient/example-salim)
 
-* encounter = Reference(example-encounter)
+* encounter = Reference(Encounter/example-encounter)
 
 * effectiveDateTime = "2026-02-06T10:30:00+05:00"
 
-* performer = Reference(example-practitioner)
+* performer = Reference(Practitioner/example-practitioner)
 
-* specimen = Reference(example-specimen)
+* specimen = Reference(Specimen/specimen-example-blood)
 
-* result[0] = Reference(body-temperature-example)
+* result[0] = Reference(Observation/body-temperature-example)
 
 * media.comment = "Related diagnostic image"
-* media.link = Reference(example-diagnostic-media)
+* media.link = Reference(DocumentReference/example-diagnostic-media)
 
 
 
@@ -96,30 +96,6 @@ Usage: #example
 * type = http://loinc.org#18748-4 "Diagnostic imaging study"
 * content[0].attachment.contentType = #image/jpeg
 * content[=].attachment.url = "http://example.org/fhir/Binary/example-diagnostic-image"
-
-Instance: example-service-request
-InstanceOf: ServiceRequest
-Title: "Example Service Request"
-Description: "Represents a clinical request for a laboratory investigation that serves as the basis for generating a diagnostic report."
-Usage: #example
-
-* status = #active
-* intent = #order
-* subject = Reference(example-salim)
-* code = http://loinc.org#110939-6 "Glucose [Measurement] in Blood"
-* authoredOn = "2026-02-06"
-* requester = Reference(example-practitioner)
-
-Instance: example-specimen
-InstanceOf: Specimen
-Title: "Example Specimen"
-Description: "Represents a biological sample collected from a patient, such as blood, used for laboratory analysis and diagnostic reporting."
-Usage: #example
-
-* status = #available
-* subject = Reference(example-salim)
-* type = http://terminology.hl7.org/CodeSystem/v2-0487#BLD "Whole blood"
-* receivedTime = "2026-02-06T10:00:00+05:00"
 
 
 
