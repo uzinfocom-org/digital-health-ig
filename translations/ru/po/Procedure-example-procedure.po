@@ -4,14 +4,14 @@
 msgid "CarePlan #1"
 msgstr ""
 
-# Coding.display
-#: Coding.display
+# CodeableConcept.text
+#: CodeableConcept.text
 msgid "Physical therapy procedure"
 msgstr ""
 
 # Coding.display
 #: Coding.display
-msgid "Therapeutic massage"
+msgid "Simple massage"
 msgstr ""
 
 # CodeableConcept.text

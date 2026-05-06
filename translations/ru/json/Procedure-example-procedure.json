@@ -12,15 +12,15 @@
           "target" : null
         },
         {
-          "id" : "Coding.display",
-          "context" : "Coding.display",
+          "id" : "CodeableConcept.text",
+          "context" : "CodeableConcept.text",
           "source" : "Physical therapy procedure",
           "target" : null
         },
         {
           "id" : "Coding.display",
           "context" : "Coding.display",
-          "source" : "Therapeutic massage",
+          "source" : "Simple massage",
           "target" : null
         },
         {

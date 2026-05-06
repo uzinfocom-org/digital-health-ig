@@ -5,4 +5,4 @@ Description: "Procedure code ValueSet with translations in English, Russian and 
 * ^url = "https://dhp.uz/fhir/core/ValueSet/procedure-code-vs"
 * ^status = #active
 * ^experimental = true
-* include codes from system procedure-code-cs
+* include codes from system $sct where concept is-a #71388002

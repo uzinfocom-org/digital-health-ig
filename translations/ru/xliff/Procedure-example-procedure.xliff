@@ -10,9 +10,9 @@
         <source>CarePlan #1</source>
         <target></target>
       </trans-unit>
-      <trans-unit id="Procedure-example-procedure" resname="Coding.display">
+      <trans-unit id="Procedure-example-procedure" resname="CodeableConcept.text">
              <notes>
-               <note id="n1">Coding.display</note>
+               <note id="n1">CodeableConcept.text</note>
              </notes>
         <source>Physical therapy procedure</source>
         <target></target>
@@ -21,7 +21,7 @@
              <notes>
                <note id="n1">Coding.display</note>
              </notes>
-        <source>Therapeutic massage</source>
+        <source>Simple massage</source>
         <target></target>
       </trans-unit>
       <trans-unit id="Procedure-example-procedure" resname="CodeableConcept.text">

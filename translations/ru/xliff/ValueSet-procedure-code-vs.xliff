@@ -45,6 +45,13 @@
         <source>Uzbekistan</source>
         <target></target>
       </trans-unit>
+      <trans-unit id="ValueSet-procedure-code-vs" resname="ValueSet.compose.include.filter.value">
+             <notes>
+               <note id="n1">ValueSet.compose.include.filter.value</note>
+             </notes>
+        <source>71388002</source>
+        <target></target>
+      </trans-unit>
     </body>
   </file>
 </xliff>

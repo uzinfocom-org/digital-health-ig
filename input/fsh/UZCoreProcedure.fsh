@@ -29,9 +29,8 @@ Description: "Uzbekistan Core Procedure Profile, used for documenting an action 
 * used MS
 
 * status from ProcedureEventStatusVS (required)
-* category from ProcedureCategoryVS (extensible)
-* code from ProcedureCodeVS (extensible)
-* bodySite from $bodysite
+* code from ProcedureCodeVS (required)
+* bodySite from $bodysite (required)
 * outcome from ProcedureOutcomeVS (preferred)
 
 * basedOn only Reference(CarePlan or ServiceRequest)
@@ -55,8 +54,8 @@ Description: "An example instance of a UZ Core Procedure profile for a therapeut
 * identifier[0].value = "proc-0001"
 * basedOn[0] = Reference(example-careplan) "CarePlan #1"
 * status = procedure-event-status-cs#completed "Completed"
-* category[0] = procedure-category-cs#proce-0001 "Physical therapy procedure"
-* code[0].coding = procedure-code-cs#proce-0001-00049 "Therapeutic massage"
+* category[0].text = "Physical therapy procedure"
+* code[0].coding = $sct#386438000 "Simple massage"
 * code[0].text = "Therapeutic massage of right foot"
 * subject = Reference(example-david) "David Davidov"
 * encounter = Reference(example-encounter) "Outpatient Visit"
