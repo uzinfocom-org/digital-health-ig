@@ -9,7 +9,7 @@
   "url": "https://terminology.dhp.uz/fhir/core/CodeSystem/allergy-reaction-substance-cs",
   "concept": [
     {
-      "code": "aller-0010-00001",
+      "code": "aller-0010-00002",
       "display": "Ajiriq (Cyn d)",
       "designation": [
         {
