@@ -35,7 +35,4 @@ Description: "Uzbekistan Core QuestionnaireResponse profile for capturing respon
     * value[x] MS
     * item MS
   * item MS
-
-
-// ============== Example Instance ==============
 */

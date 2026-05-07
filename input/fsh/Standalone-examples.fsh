@@ -113,6 +113,8 @@ Description: "Example OperationOutcome returned when a transaction fails due to 
 * issue[=].expression = "Bundle.entry[2].resource.ofType(Observation)"
 
 
+// ============== Questionnaire Instance ==============
+
 Instance: PatientSatisfactionQuestionnaire
 InstanceOf: Questionnaire
 Usage: #definition
