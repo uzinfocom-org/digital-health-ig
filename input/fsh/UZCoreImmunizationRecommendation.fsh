@@ -3,11 +3,9 @@ Parent: ImmunizationRecommendation
 Id: uz-core-immunization-recommendation
 Title: "UZ Core ImmunizationRecommendation"
 Description: "Uzbekistan Core ImmunizationRecommendation profile, used to represent guidance or recommendations related to immunization."
-
-* ^url = "https://dhp.uz/fhir/core/StructureDefinition/uz-core-immunization-recommendation"
 * ^experimental = true
 * ^status = #active
-* ^date = "2025-08-01"
+* ^date = "2026-05-07"
 * ^publisher = "Uzinfocom"
 
 * identifier 0..* MS
