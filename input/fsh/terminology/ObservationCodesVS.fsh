@@ -12,4 +12,4 @@ Description: "Codes for observations, allowing use of LOINC, local laboratory co
 * include codes from system $sct where concept is-a #404684003 "Clinical finding (finding)"
 * include codes from system $sct where concept is-a #386053000 "Evaluation procedure (procedure)"
 * include codes from system $sct where concept is-a #413350009 "Finding with explicit context (situation)"
-* include codes from system $sct where concept is-a #272379006 "Event (event)"
+* include codes from system $sct where concept is-a #272379006 "Event (event) "
