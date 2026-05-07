@@ -1,3 +1,4 @@
+/*
 Profile: UZCoreQuestionnaireResponse
 Parent: QuestionnaireResponse
 Id: uz-core-questionnaire-response
@@ -34,53 +35,4 @@ Description: "Uzbekistan Core QuestionnaireResponse profile for capturing respon
     * value[x] MS
     * item MS
   * item MS
-
-
-// ============== Example Instance ==============
-
-Instance: example-patient-satisfaction-response
-InstanceOf: UZCoreQuestionnaireResponse
-Usage: #example
-Title: "Пример ответа на опросник удовлетворённости"
-Description: "Пример заполненного опросника удовлетворённости пациента"
-* questionnaire = Canonical(PatientSatisfactionQuestionnaire)
-* status = #completed
-* subject = Reference(example-salim)
-* authored = "2025-01-15T14:30:00+05:00"
-* language = #ru
-
-// Answer 1: Как вы записались на приём?
-* item[+]
-  * linkId = "appointment-method"
-  * text = "Как вы записались на приём?"
-  * answer[+].valueCoding = $patient-satisfaction-cs#remote "Дистанционно (через Портал Пациента)"
-
-// Answer 2: Сколько времени вы ожидали приём?
-* item[+]
-  * linkId = "wait-time"
-  * text = "Сколько времени вы ожидали приём?"
-  * answer[+].valueCoding = $patient-satisfaction-cs#10-15min "10-15 минут"
-
-// Answer 3: Насколько Вы удовлетворены компетентностью врача?
-* item[+]
-  * linkId = "doctor-competence-satisfaction"
-  * text = "Насколько Вы удовлетворены компетентностью врача?"
-  * answer[+].valueCoding = $patient-satisfaction-cs#fully-satisfied "Полностью удовлетворен"
-
-// Answer 4: Была ли предоставлена информация о Вашем состоянии здоровья?
-* item[+]
-  * linkId = "health-info-completeness"
-  * text = "Была ли предоставлена информация о Вашем состоянии здоровья в полном объёме и понятной форме?"
-  * answer[+].valueCoding = $patient-satisfaction-cs#yes-complete "Да, полностью"
-
-// Answer 5: Получили ли вы ответы на все интересующие вас вопросы?
-* item[+]
-  * linkId = "questions-answered"
-  * text = "Получили ли вы ответы на все интересующие вас вопросы?"
-  * answer[+].valueCoding = $patient-satisfaction-cs#yes-complete "Да, полностью"
-
-// Answer 6: Есть ли у Вас предложения по улучшению качества обслуживания?
-* item[+]
-  * linkId = "improvement-suggestions"
-  * text = "Есть ли у Вас предложения по улучшению качества обслуживания?"
-  * answer[+].valueString = "Было бы удобно иметь возможность получать напоминания о приёме через SMS."
+*/

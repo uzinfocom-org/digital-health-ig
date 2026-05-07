@@ -1,4 +1,4 @@
-CodeSystem: ObservationLabResearchCodesCS
+/*CodeSystem: ObservationLabResearchCodesCS
 Id: observation-lab-research-codes-cs
 Title: "Laboratory Observation Panels and Analytes"
 Description: "Code system defining laboratory observation panels and individual analytes used in Uzbekistan."
@@ -1770,3 +1770,4 @@ Description: "Code system defining laboratory observation panels and individual 
   * ^designation[=].value = "Cytoplasmic maturation index of erythroid cells in Bone marrow"
   * ^property[0].code = #parent
   * ^property[=].valueCode = #lab-O
+*/
