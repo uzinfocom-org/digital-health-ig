@@ -70,6 +70,4 @@ Description: "Uzbekistan Core Questionnaire profile for multilingual structured 
 
   // Nested items
   * item MS
-
-
 */

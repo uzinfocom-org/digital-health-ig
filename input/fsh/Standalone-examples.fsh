@@ -112,6 +112,7 @@ Description: "Example OperationOutcome returned when a transaction fails due to 
 * issue[=].diagnostics = "Observation.status: minimum required = 1, but only found 0 (from https://dhp.uz/fhir/core/StructureDefinition/uz-core-observation)"
 * issue[=].expression = "Bundle.entry[2].resource.ofType(Observation)"
 
+
 // ============== Questionnaire Instance ==============
 
 Instance: PatientSatisfactionQuestionnaire
@@ -411,8 +412,6 @@ Description: "Опросник для оценки удовлетворённо�
   * type = #text
   * required = false
 
-  
-// ============== Example Instance ==============
 
 Instance: example-patient-satisfaction-response
 InstanceOf: QuestionnaireResponse
