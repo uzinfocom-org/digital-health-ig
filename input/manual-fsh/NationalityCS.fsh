@@ -1,1540 +1,3089 @@
 CodeSystem: NationalityCS
 Id: nationality-cs
 Title: "Nationality"
-Description: "Defines a nationality of a person as used in Uzbekistan"
+Description: "Defines a nationality of a person as used in Uzbekistan from dmp.uz"
 * ^url = "https://terminology.dhp.uz/fhir/core/CodeSystem/nationality-cs"
 * ^status = #active
 * ^experimental = true
 * ^content = #complete
 * ^language = #uz
 * ^caseSensitive = true
-* #1 "Ruslar"
+
+
+* #1 "PERSIAN"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Русские"
+  * ^designation[=].value = "ПЕРСЫ"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Russians"
-* #3 "Pomors"
+  * ^designation[=].value = "PERSIAN"
+
+* #2 "FULBE"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Поморы"
+  * ^designation[=].value = "ФУЛБЕ/ФУЛЬБЕ"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Pomors"
-* #4 "Abazinlar"
+  * ^designation[=].value = "FULANI"
+
+* #3 "FUTENG"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Абазины"
+  * ^designation[=].value = "ФУТЕНГ/ФУТЕНГА"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Abazins"
-* #5 "Abxazlar"
+  * ^designation[=].value = "FUTENG"
+
+* #4 "XA (VAXA)"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Абхазы"
+  * ^designation[=].value = "ХА (ВАХА)/ХА (ВАХА)"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Abkhazians"
-* #6 "Avarlar"
+  * ^designation[=].value = "HA (WAHA)"
+
+* #5 "XAZARLI"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Аварцы"
+  * ^designation[=].value = "ХАЗАРЕЕЦ/ХАЗАРЕЙКА"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Avars"
-* #7 "Andes"
+  * ^designation[=].value = "HAZARA"
+
+* #6 "XAYYA"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Андийцы"
+  * ^designation[=].value = "ХАЙЯ/ХАЙЯ"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Andians"
-* #8 "Archintsi"
+  * ^designation[=].value = "HAYA"
+
+* #7 "XALXA-MOGOLIYALIK"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Арчинцы"
+  * ^designation[=].value = "ХАЛХА-МОНГОЛ/ХАЛХА-МОНГОЛКА"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Archins"
-* #9 "Axvaxiylar"
+  * ^designation[=].value = "HALHE-MONGOL"
+
+* #8 "XAUSA"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Ахвахцы"
+  * ^designation[=].value = "ХАУСА/ХАУСА"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Akhvakhs"
-* #10 "Bag'ulali"
+  * ^designation[=].value = "HAUSA"
+
+* #9 "XEXE, (VAXEXE)"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Багулалы"
+  * ^designation[=].value = "ХЕХЕ, (ВАХЕХЕ)/ХЕХЕ, (ВАХЕХЕ)"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Bagulaly"
-* #11 "Bezhtiny"
+  * ^designation[=].value = "HEHE, (WAHEHE)"
+
+* #10 "XINALIKLI"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Бежтинцы"
+  * ^designation[=].value = "ХИНАЛУГ/ХИНАЛУГ"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Bezhtins"
-* #12 "Botlix odamlari"
+  * ^designation[=].value = "KHINALIG"
+
+* #11 "XINDUSTONLIK"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Ботлихцы"
+  * ^designation[=].value = "ХИНДУСТАНЕЦ/ХИНДУСТАНКА"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Botlikhs"
-* #13 "Ginux xalqi"
+  * ^designation[=].value = "HINDUSTANI"
+
+* #12 "XUEY DUNGAN"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Гинухцы"
+  * ^designation[=].value = "ХУЭЙ ДУНГАН/ХУЭЙ ДУНГАН"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Ginukhs"
-* #14 "Godoberinlar"
+  * ^designation[=].value = "HUI DUNGAN"
+
+* #13 "MONTENEGROLIK"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Годоберинцы"
+  * ^designation[=].value = "ЧЕРНОГОРЕЦ/ЧЕРНОГОРКА"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Godoberins"
-* #15 "Gunzibiyaliklar"
+  * ^designation[=].value = "MONTENEGRIN"
+
+* #14 "CHJUAN"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Гунзибцы"
+  * ^designation[=].value = "ЧЖУАН/ЧЖУАН"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Gunzibs"
-* #16 "Didoytsy"
+  * ^designation[=].value = "ZHUANG"
+
+* #15 "CHILILI"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Дидойцы"
+  * ^designation[=].value = "ЧИЛИЕЦ/ЧИЛИЙКА"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Didoys"
-* #17 "Karatinliklar"
+  * ^designation[=].value = "CHILEAN"
+
+* #16 "CHIN"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Каратинцы"
+  * ^designation[=].value = "ЧИН/ЧИН"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Karatins"
-* #18 "Tyndalls"
+  * ^designation[=].value = "CHIN"
+
+* #17 "CHOKVE"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Тиндалы"
+  * ^designation[=].value = "ЧОКВЕ/ЧОКВЕ"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Tindals"
-* #19 "Xvarshin"
+  * ^designation[=].value = "CHOKWE"
+
+* #18 "CHUVANS"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Хваршины"
+  * ^designation[=].value = "ЧУВАНЦ/ЧУВАНЦ"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Khvarshis"
-* #20 "Chamalali"
+  * ^designation[=].value = "CHUVANS"
+
+* #19 "SHAVIYYA"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Чамалалы"
+  * ^designation[=].value = "ШАВИЙЯ/ШАВИЙЯ"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Chamalals"
-* #21 "Aguly"
+  * ^designation[=].value = "SHAUYYA"
+
+* #20 "SHAN"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Агулы"
+  * ^designation[=].value = "ШАН/ШАН"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Aghuls"
-* #22 "Adige xalqi"
+  * ^designation[=].value = "SHAN"
+
+* #21 "SHVED"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Адыгейцы"
+  * ^designation[=].value = "ШВЕД/ШВЕДКА"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Adyghe"
-* #23 "Ozarbayjonlar"
+  * ^designation[=].value = "SWEDISH"
+
+* #22 "SHLEX"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Азербайджанцы"
+  * ^designation[=].value = "ШЛЕХ/ШЛЕХ"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Azerbaijanis"
-* #24 "Aleutlar"
+  * ^designation[=].value = "SHLEH"
+
+* #23 "SHOTLANDIYALIK"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Алеуты"
+  * ^designation[=].value = "ШОТЛАНДЕЦ/ШОТЛАНДКА"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Aleuts"
-* #25 "Oltoyliklar"
+  * ^designation[=].value = "SCOTISH"
+
+* #24 "EVE"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Алтайцы"
+  * ^designation[=].value = "ЭВЕ/ЭВЕ"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Altaians"
-* #26 "Telengitlar"
+  * ^designation[=].value = "EWЕ"
+
+* #25 "EVENK"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Теленгиты"
+  * ^designation[=].value = "ЭВЕНК/ЭВЕНКИЙКА"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Telengits"
-* #27 "Tubalar"
+  * ^designation[=].value = "EVENK"
+
+* #26 "EDO (BINI)"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Тубалары"
+  * ^designation[=].value = "ЭДО (БИНИ)/ЭДО (БИНИ)"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Tubalars"
-* #28 "Chelkanlar"
+  * ^designation[=].value = "EDO (BINI)"
+
+* #27 "EKVADOR"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Челканцы"
+  * ^designation[=].value = "ЭКВАДОРЕЦ/ЭКВАДОРКА"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Chelkans"
-* #29 "Amerikaliklar"
+  * ^designation[=].value = "ECUADORIAN"
+
+* #28 "ENETS"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Американцы"
+  * ^designation[=].value = "ЭНЕЦ/ЭНКА"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Americans"
-* #30 "Arablar"
+  * ^designation[=].value = "ENETS"
+
+* #29 "ESKIMOS"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Арабы"
+  * ^designation[=].value = "ЭСКИМОС/ЭСКИМОСКА"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Arabs"
-* #31 "Markaziy Osiyo arablari"
+  * ^designation[=].value = "ESKIMOS"
+
+* #30 "JANUBIY LUO"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Арабы среднеазиатские"
+  * ^designation[=].value = "ЮЖНЫЙ ЛУО/АЖНАЯ ЛУО"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Central Asian Arabs"
-* #32 "Armanlar"
+  * ^designation[=].value = "SOUTHERN LUO"
+
+* #31 "YUKAGIR"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Армяне"
+  * ^designation[=].value = "ЮКАГИР/ЮКАГИРКА"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Armenians"
-* #33 "Cherkesog'ay"
+  * ^designation[=].value = "YUKAGIR"
+
+* #32 "YAVALIK"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Черкесогаи"
+  * ^designation[=].value = "ЯВАНЕЦ/ЯВАНКА"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Cherkessogai"
-* #34 "Ossuriyaliklar"
+  * ^designation[=].value = "JAVANESE"
+
+* #33 "YAMAYKALIK"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Ассирийцы"
+  * ^designation[=].value = "ЯМАЙЕЦ/ЯМАЙКА"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Assyrians"
-* #35 "Afg'onlar"
+  * ^designation[=].value = "JAMAICAN"
+
+* #34 "YAO (VAYAO)"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Афганцы"
+  * ^designation[=].value = "ЯО (ВАЯО)/ЯО (ВАЯО)"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Afghans"
-* #36 "Balkarlar"
+  * ^designation[=].value = "YAO (WAYA)"
+
+* #35 "NIGERIYALIK"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Балкарцы"
+  * ^designation[=].value = "НИГЕРИЕЦ/НИГЕРИЙКА"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Balkars"
-* #37 "Boshqirdlar"
+  * ^designation[=].value = "NIGERIAN"
+
+* #36 "SIRIYALIK"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Башкиры"
+  * ^designation[=].value = "СИРИЕЦ/СИРИЙКА"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Bashkirs"
-* #38 "Belarusians"
+  * ^designation[=].value = "SYRIAN"
+
+* #37 "KRIMCHAK"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Белорусы"
+  * ^designation[=].value = "КРИМЧАК"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Belarusians"
-* #39 "Besermyans"
+  * ^designation[=].value = "KRIMCHAK"
+
+* #38 "ANGOL"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Бесермяне"
+  * ^designation[=].value = "АНГОЛЕЦ/АНГОЛКА"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Besermyans"
-* #40 "Bulgarians"
+  * ^designation[=].value = "ANGOL"
+
+* #39 "KURAMA"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Болгары"
+  * ^designation[=].value = "КУРАМА"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Bulgarians"
-* #41 "Bosnians"
+  * ^designation[=].value = "KURAMA"
+
+* #40 "LACHKA"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Боснийцы"
+  * ^designation[=].value = "ЛАЧКА"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Bosnians"
-* #42 "British"
+  * ^designation[=].value = "LACHKA"
+
+* #41 "GIPSY"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Британцы"
+  * ^designation[=].value = "ЦЫГАН"
   * ^designation[+].language = #en
-  * ^designation[=].value = "British"
-* #43 "Buryats"
+  * ^designation[=].value = "GIPSY"
+
+* #42 "QORAQALPOQ"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Буряты"
+  * ^designation[=].value = "КАРАКАЛПАК"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Buryats"
-* #44 "Hungarians"
+  * ^designation[=].value = "QORAQALPOQ"
+
+* #43 "ANGOL/ANGOLANKA"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Венгры"
+  * ^designation[=].value = "АНГОЛЕЦ/АНГОЛАНКА"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Hungarians"
-* #45 "Vepsians"
+  * ^designation[=].value = "ANGOL/ANGOLANKA"
+
+* #44 "ANGOL"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Вепсы"
+  * ^designation[=].value = "АНГОЛЕЦ/АНГОЛАНКА"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Vepsians"
-* #46 "Vods"
+  * ^designation[=].value = "ANGOL/ANGOLANKA"
+
+* #45 "QORAQALPOQ"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Водь"
+  * ^designation[=].value = "КАРАКАЛПАК"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Vods"
-* #47 "Vietnamese"
+  * ^designation[=].value = "QORAQALPOQ"
+
+* #46 "FORS"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Вьетнамцы"
+  * ^designation[=].value = "Персы (фарси)"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Vietnamese"
-* #48 "Gagauz"
+  * ^designation[=].value = "FORS"
+
+* #47 "LATGALI"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Гагаузы"
+  * ^designation[=].value = "ЛАТГАЛ/ЛАТГАЛКА"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Gagauz"
-* #49 "Mountain Jews"
+  * ^designation[=].value = "LATGAL"
+
+* #48 "UGANDAN"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Горские евреи"
+  * ^designation[=].value = "УГАНДИЕЦ/УГАНДИЙКА"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Mountain Jews"
-* #50 "Greeks"
+  * ^designation[=].value = "UGANDAN"
+
+* #49 "LAO"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Греки"
+  * ^designation[=].value = "ЛАО"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Greeks"
-* #51 "Urum Greeks"
+  * ^designation[=].value = "LAO"
+
+* #50 "SHORK"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Греки-урумы"
+  * ^designation[=].value = "ШОРК/ШОРКА"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Urum Greeks"
-* #52 "Georgian Jews"
+  * ^designation[=].value = "SHORK"
+
+* #51 "JUGOSLAV"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Грузинские евреи"
+  * ^designation[=].value = "ЮГОСЛАВ"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Georgian Jews"
-* #53 "Georgians"
+  * ^designation[=].value = "JUGOSLAV"
+
+* #52 "NIVHA"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Грузины"
+  * ^designation[=].value = "НИВХА"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Georgians"
-* #54 "Adjarians"
+  * ^designation[=].value = "NIVHA"
+
+* #53 "QORAQOLPOQ"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Аджарцы"
+  * ^designation[=].value = "КАРАКАЛПАК"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Adjarians"
-* #55 "Ingiloys"
+  * ^designation[=].value = "QORAQOLPOQ"
+
+* #54 "LATGALI"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Ингилойцы"
+  * ^designation[=].value = "ЛАТГАЛ/ЛАТГАЛКА"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Ingiloys"
-* #56 "Lazis"
+  * ^designation[=].value = "LATGAL"
+
+* #55 "QRIM TATARI"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Лазы"
+  * ^designation[=].value = "КРЫМСКИЙ ТАТАРИН"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Lazis"
-* #57 "Mingrelians"
+  * ^designation[=].value = "CRIMEAN TATAR"
+
+* #56 "PANAMALIK"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Мегрелы"
+  * ^designation[=].value = "ПАНАМЕЦ/ПАНАМКА"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Mingrelians"
-* #58 "Svans"
+  * ^designation[=].value = "PANAMANIAN"
+
+* #57 "MARAKANIEN"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Сваны"
+  * ^designation[=].value = "МАРАКАНЦЫ"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Svans"
-* #59 "Dargins"
+  * ^designation[=].value = "MARAKANIEN"
+
+* #58 "LIVIYALIK"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Даргинцы"
+  * ^designation[=].value = "ЛИВИЙЦЫ"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Dargins"
-* #60 "Kaytag xalqi"
+  * ^designation[=].value = "LIBYAN"
+
+* #59 "LAZLI"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Кайтагцы"
+  * ^designation[=].value = "ЛАЗ"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Kaitags"
-* #61 "Kubachi aholisi"
+  * ^designation[=].value = "LAZ"
+
+* #60 "ЛАЗ ТЕСТ"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Кубачинцы"
+  * ^designation[=].value = "ЛАЗ ТЕСТ"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Kubachi"
-* #62 "Dolganlar"
+  * ^designation[=].value = "ЛАЗ ТЕСТ"
+
+* #61 "ЛАЗ ТЕСТ2"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Долганы"
+  * ^designation[=].value = "ЛАЗ ТЕСТ2"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Dolgans"
-* #63 "Dunganlar"
+  * ^designation[=].value = "ЛАЗ ТЕСТ2"
+
+* #62 "LAZ"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Дунгане"
+  * ^designation[=].value = "ЛАЗ"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Dungans"
-* #64 "Yahudiylar"
+  * ^designation[=].value = "LAZ"
+
+* #63 "MANIKA"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Евреи"
+  * ^designation[=].value = "МАНИКА"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Jews"
-* #65 "Yazidiylar"
+  * ^designation[=].value = "MANIKA"
+
+* #64 "FALASTINLIK"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Езиды"
+  * ^designation[=].value = "ПАЛЕСТИНЕЦ"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Yezids"
-* #66 "Izhoriyaliklar"
+  * ^designation[=].value = "PALASTIN"
+
+* #65 "LAK"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Ижорцы"
+  * ^designation[=].value = "Лакец/Лакчанка"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Izhorians"
-* #67 "Ingush"
+  * ^designation[=].value = "LAK"
+
+* #66 "LAKES/LAKCHANKA"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Ингуши"
+  * ^designation[=].value = "ЛАКЕЦ/ЛАКЧАНКА"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Ingush"
-* #68 "Hindular"
+  * ^designation[=].value = "LAKEC/LAKCHANKA"
+
+* #67 "LAK"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Индийцы"
+  * ^designation[=].value = "ЛАКЕЦ"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Indians"
-* #69 "Iispanlar"
+  * ^designation[=].value = "LAK"
+
+* #68 "LAKES"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Испанцы"
+  * ^designation[=].value = "ЛАКЕЦ"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Spaniards"
-* #70 "Italiyaliklar"
+  * ^designation[=].value = "LAKES"
+
+* #69 "Не определена"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Итальянцы"
+  * ^designation[=].value = "Не определена"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Italians"
-* #71 "Itelmens"
+  * ^designation[=].value = "Не определена"
+
+* #70 "ABXAZ"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Ительмены"
+  * ^designation[=].value = "АБХАЗ/АБХАЗКА"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Itelmens"
-* #72 "Kabardiyaliklar"
+  * ^designation[=].value = "ABKHAZIAN"
+
+* #71 "ADIGEY"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Кабардинцы"
+  * ^designation[=].value = "АДЫГЕЕЦ/АДЫГЕЙКА"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Kabardians"
-* #73 "Qozoqlar"
+  * ^designation[=].value = "ADYGEI"
+
+* #72 "OLTOY"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Казахи"
+  * ^designation[=].value = "АЛТАЕЦ/АЛТАЙКА"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Kazakhs"
-* #74 "Qalmiqlar"
+  * ^designation[=].value = "ALTAI"
+
+* #73 "ARMAN"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Калмыки"
+  * ^designation[=].value = "АРМЯНИН/АРМЯНКА"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Kalmyks"
-* #75 "Kamchadal"
+  * ^designation[=].value = "ARMENIAN"
+
+* #74 "BOLQOR"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Камчадалы"
+  * ^designation[=].value = "БАЛКАРЕЦ/БАЛКАРКА"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Kamchadals"
-* #76 "Karaitlar"
+  * ^designation[=].value = "BALKAR"
+
+* #75 "BOSHQIRD"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Караимы"
+  * ^designation[=].value = "БАШКИР/БАШКИРКА"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Karaims"
-* #77 "Qoraqalpoqlar"
+  * ^designation[=].value = "BOSHKIR"
+
+* #76 "BELORUS"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Каракалпаки"
+  * ^designation[=].value = "БЕЛОРУС/БЕЛОРУСКА"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Karakalpaks"
-* #78 "Qorachaylar"
+  * ^designation[=].value = "BYELORUSSIAN"
+
+* #77 "BELGIYALI"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Карачаевцы"
+  * ^designation[=].value = "БЕЛЬГИЕЦ/БЕЛЬГИЙКА"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Karachays"
-* #79 "Kareliyaliklar"
+  * ^designation[=].value = "BELGIAN"
+
+* #78 "BURYAT"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Карелы"
+  * ^designation[=].value = "БУРЯТ/БУРЯТКА"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Kareli"
-* #80 "Kereki"
+  * ^designation[=].value = "BURYAT"
+
+* #79 "VETNAMLI"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Кереки"
+  * ^designation[=].value = "ВЬЕТНАМЕЦ/ВЬЕТНАМКА"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Kereks"
-* #81 "Chum qizil ikra"
+  * ^designation[=].value = "VIETNAMESE"
+
+* #80 "GRUZIN"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Кеты"
+  * ^designation[=].value = "ГРУЗИН/ГРУЗИНКА"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Kets"
-* #82 "Yugi"
+  * ^designation[=].value = "GEORGIAN"
+
+* #81 "DARGIN"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Юги"
+  * ^designation[=].value = "ДАРГИНЕЦ/ДАРГИНКА"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Yugs"
-* #83 "Qirg'iz"
+  * ^designation[=].value = "DARGIN"
+
+* #82 "YAXUDIY"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Киргизы"
+  * ^designation[=].value = "ЕВРЕЙ/ЕВРЕЙКА"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Kirghiz"
-* #84 "Xitoy"
+  * ^designation[=].value = "JEW"
+
+* #83 "YEZID"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Китайцы"
+  * ^designation[=].value = "ЕЗИД/ЕЗИДКА"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Chinese"
-* #85 "Komi"
+  * ^designation[=].value = "EZID"
+
+* #84 "INGUSH"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Коми"
+  * ^designation[=].value = "ИНГУШ/ИНГУШКА"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Komi"
-* #86 "Komi-Izhemtsy"
+  * ^designation[=].value = "INGUSH"
+
+* #85 "ITALIYALI"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Коми-ижемцы"
+  * ^designation[=].value = "ИТАЛЬЯНЕЦ/ИТАЛЬЯНКА"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Komi-Izhemtsy"
-* #87 "Komi-Permyaklar"
+  * ^designation[=].value = "ITALIAN"
+
+* #86 "KABARDIN"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Коми-пермяки"
+  * ^designation[=].value = "КАБАРДИНЕЦ/КАБАРДИНКА"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Komi-Permyaks"
-* #88 "koreyslar"
+  * ^designation[=].value = "KABARDIАN"
+
+* #87 "QOZOQ"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Корейцы"
+  * ^designation[=].value = "КАЗАХ/КАЗАШКА"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Koreans"
-* #89 "Koryaklar"
+  * ^designation[=].value = "KAZAKH"
+
+* #88 "QALMIQ"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Коряки"
+  * ^designation[=].value = "КАЛМЫК/КАЛМЫЧКА"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Koryaks"
-* #90 "Alyutoriyaliklar"
+  * ^designation[=].value = "KALMYK"
+
+* #89 "QORAQALPOK"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Алюторцы"
+  * ^designation[=].value = "КАРАКАЛПАК/КАРАКАЛПАЧКА"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Alyutors"
-* #91 "Qrim tatarlari"
+  * ^designation[=].value = "KARAKALPAK"
+
+* #90 "KORACHOY"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Крымские татары"
+  * ^designation[=].value = "КАРАЧАЕВЕЦ/КАРАЧАЕВКА"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Crimean Tatars"
-* #92 "Qrimchaklar"
+  * ^designation[=].value = "KORACHAI"
+
+* #91 "KARELIYALI"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Крымчаки"
+  * ^designation[=].value = "КАРЕЛ/КАРЕЛКА"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Krymchaks"
-* #93 "Kubaliklar"
+  * ^designation[=].value = "KARELIAN"
+
+* #92 "QIRG‘IZ"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Кубинцы"
+  * ^designation[=].value = "КИРГИЗ/КИРГИЗКА"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Cubans"
-* #94 "Kumandinlar"
+  * ^designation[=].value = "KIRGHIZ"
+
+* #93 "KOMI"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Кумандинцы"
+  * ^designation[=].value = "КОМИ/КОМИ"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Kumandins"
-* #95 "Qumiklar"
+  * ^designation[=].value = "KOMI"
+
+* #94 "KOMI-PERMYAK"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Кумыки"
+  * ^designation[=].value = "КОМИ-ПЕРМЯК/КОМИ-ПЕРМЯЧКА"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Kumyks"
-* #96 "Kurdlar"
+  * ^designation[=].value = "KOMI_PERMYAK"
+
+* #95 "LATISH"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Курды"
+  * ^designation[=].value = "ЛАТЫШ/ЛАТЫШКА"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Kurds"
-* #97 "Qurmanch"
+  * ^designation[=].value = "LETT"
+
+* #96 "LITVALI"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Курманч"
+  * ^designation[=].value = "ЛИТОВЕЦ/ЛИТОВКА"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Kurmanch"
-* #98 "Laktsy"
+  * ^designation[=].value = "LITHUANIAN"
+
+* #97 "MARI"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Лакцы"
+  * ^designation[=].value = "МАРИЕЦ/МАРИЙКА"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Lakts"
-* #99 "Latviyaliklar"
+  * ^designation[=].value = "MARI"
+
+* #98 "MOLDAVAN"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Латыши"
+  * ^designation[=].value = "МОЛДАВАНИН/МОЛДАВАНКА"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Latvians"
-* #100 "Latgaliyaliklar"
+  * ^designation[=].value = "MOLDAVIAN"
+
+* #99 "MORDVA"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Латгальцы"
+  * ^designation[=].value = "МОРДВИН/МОРДОВКА"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Latgalians"
-* #101 "Lezgilar"
+  * ^designation[=].value = "MORDOVINIANS"
+
+* #100 "NEMIS"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Лезгины"
+  * ^designation[=].value = "НЕМЕЦ/НЕМКА"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Lezgins"
-* #102 "Litvaliklar"
+  * ^designation[=].value = "GERMAN"
+
+* #101 "OSETIN"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Литовцы"
+  * ^designation[=].value = "ОСЕТИН/ОСЕТИНКА"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Lithuanians"
-* #103 "Makedoniyaliklar"
+  * ^designation[=].value = "OSSETIAN"
+
+* #102 "POLYAK"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Македонцы"
+  * ^designation[=].value = "ПОЛЯК/ПОЛЬКА"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Macedonians"
-* #104 "Muncie"
+  * ^designation[=].value = "POLE"
+
+* #103 "RUS"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Манси"
+  * ^designation[=].value = "РУССКИЙ/РУССКАЯ"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Mansi"
-* #105 "Mari"
+  * ^designation[=].value = "RUSSIAN"
+
+* #104 "SERB"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Марийцы"
+  * ^designation[=].value = "СЕРБ/СЕРБКА"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Mari"
-* #106 "Mari tog'i"
+  * ^designation[=].value = "SERB"
+
+* #105 "TABASARAN"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Горные марийцы"
+  * ^designation[=].value = "ТАБАСАРАНЕЦ/ТАБАСАРАНКА"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Mountain Mari"
-* #107 "Yaylov-Sharqiy Mari"
+  * ^designation[=].value = "TABASARAN"
+
+* #106 "TOJIK"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Лугово-восточные марийцы"
+  * ^designation[=].value = "ТАДЖИК/ТАДЖИЧКА"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Meadow-Eastern Mari"
-* #108 "Moldovanlar"
+  * ^designation[=].value = "TAJIK"
+
+* #107 "TATAR"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Молдаване"
+  * ^designation[=].value = "ТАТАРИН/ТАТАРКА"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Moldovans"
-* #109 "Mo'g'ullar"
+  * ^designation[=].value = "TATAR"
+
+* #108 "TUVIN"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Монголы"
+  * ^designation[=].value = "ТУВИНЕЦ/ТУВИНКА"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Mongols"
-* #110 "Mordva"
+  * ^designation[=].value = "TUVINIAN"
+
+* #109 "TURKMAN"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Мордва"
+  * ^designation[=].value = "ТУРКМЕН/ТУРКМЕНКА"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Mordva"
-* #111 "Mordva-moksha"
+  * ^designation[=].value = "TURKMAN"
+
+* #110 "UDMURT"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Мордва-мокша"
+  * ^designation[=].value = "УДМУРТ/УДМУРТКА"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Mordva-moksha"
-* #112 "Mordva-Erzya"
+  * ^designation[=].value = "UDMURT"
+
+* #111 "O‘ZBEK"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Мордва-эрзя"
+  * ^designation[=].value = "УЗБЕК/УЗБЕЧКА"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Mordva-Erzya"
-* #113 "Nagaibaki"
+  * ^designation[=].value = "UZBEK"
+
+* #112 "UKRAIN"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Нагайбаки"
+  * ^designation[=].value = "УКРАИНЕЦ/УКРАИНКА"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Nagaibaki"
-* #114 "Nanai xalqi"
+  * ^designation[=].value = "UKRAINIAN"
+
+* #113 "XAKAS"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Нанайцы"
+  * ^designation[=].value = "ХАКАСЕЦ/ХАКАСКА"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Nanai people"
-* #115 "Nganasanlar"
+  * ^designation[=].value = "KHAKASS"
+
+* #114 "LO‘LI"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Нганасаны"
+  * ^designation[=].value = "ЦЫГАН/ЦЫГАНКА"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Nganasans"
-* #116 "Negidaliyaliklar"
+  * ^designation[=].value = "LULI"
+
+* #115 "CHERKES"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Негидальцы"
+  * ^designation[=].value = "ЧЕРКЕС/ЧЕРКЕШЕНКА"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Negidalians"
-* #117 "Nemislar"
+  * ^designation[=].value = "CIRCASSIAN"
+
+* #116 "CHECHEN"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Немцы"
+  * ^designation[=].value = "ЧЕЧЕНЕЦ/ЧЕЧЕНКА"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Germans"
-* #118 "Mennonitlar"
+  * ^designation[=].value = "CHECHEN"
+
+* #117 "CHUVASH"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Меннониты"
+  * ^designation[=].value = "ЧУВАШ/ЧУВАШКА"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Mennonites"
-* #119 "Nenets"
+  * ^designation[=].value = "CHUVASH"
+
+* #118 "ESTONIYALI"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Ненцы"
+  * ^designation[=].value = "ЭСТОНЕЦ/ЭСТОНКА"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Nenets"
-* #120 "Nivkhi"
+  * ^designation[=].value = "ESTONIAN"
+
+* #119 "YOQUT"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Нивхи"
+  * ^designation[=].value = "ЯКУТ/ЯКУТКА"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Nivkhi"
-* #121 "Nogaylar"
+  * ^designation[=].value = "YАКUT"
+
+* #120 "TAT"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Ногайцы"
+  * ^designation[=].value = "ТАТ/ТАТКА"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Nogais"
-* #122 "Karagashi"
+  * ^designation[=].value = "TATAMI"
+
+* #121 "GAGAUZ"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Карагаши"
+  * ^designation[=].value = "ГАГАУЗ/ГАГАУЗКА"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Karagashi"
-* #123 "Orochi"
+  * ^designation[=].value = "GAGAUZ"
+
+* #122 "LEZGIN"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Орочи"
+  * ^designation[=].value = "ЛЕЗГИН/ЛЕЗГИНКА"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Orochi"
-* #124 "Osetinlar"
+  * ^designation[=].value = "LEZGHIN"
+
+* #123 "KOREYS"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Осетины"
+  * ^designation[=].value = "КОРЕЕЦ/КОРЕЯНКА"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Ossetians"
-* #125 "Osetin-digoriyaliklar"
+  * ^designation[=].value = "KOREAN"
+
+* #124 "TURK"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Осетины-дигорцы"
+  * ^designation[=].value = "ТУРОК/ТУРЧАНКА"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Ossetians-Digorians"
-* #126 "Osetin-ironiyaliklar"
+  * ^designation[=].value = "TURK"
+
+* #125 "UYG‘UR"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Осетины-иронцы"
+  * ^designation[=].value = "УЙГУР/УЙГУРКА"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Ossetians-Ironians"
-* #127 "pokistonliklar"
+  * ^designation[=].value = "UIGUR"
+
+* #126 "VENGR"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Пакистанцы"
+  * ^designation[=].value = "ВЕНГР/ВЕНГЕРКА"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Pakistanis"
-* #128 "Pomiri"
+  * ^designation[=].value = "HUNGARIAN"
+
+* #127 "GREK"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Памирцы"
+  * ^designation[=].value = "ГРЕК/ГРЕЧАНКА"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Pamiris"
-* #129 "Forslar"
+  * ^designation[=].value = "GREEK"
+
+* #128 "TUNGONI"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Персы"
+  * ^designation[=].value = "ДУНГАНИН/ДУНГАНКА"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Persians"
-* #130 "polyaklar"
+  * ^designation[=].value = "DUNGAN"
+
+* #129 "MAKEDONIYALIK"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Поляки"
+  * ^designation[=].value = "МАКЕДОНЕЦ/МАКЕДОНКА"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Poles"
-* #131 "Ruminiyaliklar"
+  * ^designation[=].value = "MACEDONIAN"
+
+* #130 "RUMIN"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Румыны"
+  * ^designation[=].value = "РУМЫН/РУМЫНКА"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Romanians"
-* #132 "Rusinlar"
+  * ^designation[=].value = "ROMANIAN"
+
+* #131 "FINIKIYALIK"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Русины"
+  * ^designation[=].value = "ФИНИКИЕЦ/ФИНИКИЙКА"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Rusyns"
-* #133 "Rutuliyaliklar"
+  * ^designation[=].value = "PHOENICIAN"
+
+* #132 "HINDI"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Рутульцы"
+  * ^designation[=].value = "ИНДИЕЦ/ИНДИАНКА"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Rutulians"
-* #134 "Sami"
+  * ^designation[=].value = "HINDOO"
+
+* #133 "MONGOL"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Саамы"
+  * ^designation[=].value = "МОНГОЛ/МОНГОЛКА"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Sami"
-* #135 "Selkuplar"
+  * ^designation[=].value = "MONGOL"
+
+* #134 "FORS"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Селькупы"
+  * ^designation[=].value = "ПЕРС/ПЕРСИЯНКА"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Selkups"
-* #136 "Serblar"
+  * ^designation[=].value = "PERSIAN"
+
+* #135 "ERONLI"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Сербы"
+  * ^designation[=].value = "ИРАНЕЦ/ИРАНКА"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Serbs"
-* #137 "Slovaklar"
+  * ^designation[=].value = "IRANIAN"
+
+* #136 "AFG‘ON"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Словаки"
+  * ^designation[=].value = "АФГАНЕЦ/АФГАНКА"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Slovaks"
-* #138 "Sloveniyaliklar"
+  * ^designation[=].value = "AFGHAN"
+
+* #137 "ARAB"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Словенцы"
+  * ^designation[=].value = "АРАБ/АРАБКА"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Slovenians"
-* #139 "Soyotlar"
+  * ^designation[=].value = "ARAB"
+
+* #138 "KUMIQ"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Сойоты"
+  * ^designation[=].value = "КУМЫК/КУМЫЧКА"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Soyots"
-* #140 "Markaziy Osiyo yahudiylari"
+  * ^designation[=].value = "KUMIQ"
+
+* #139 "BULG‘OR"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Среднеазиатские евреи"
+  * ^designation[=].value = "БОЛГАРИН/БОЛГАРКА"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Central Asian Jews"
-* #141 "Tabasaranlar"
+  * ^designation[=].value = "BULGARIAN"
+
+* #140 "XITOY"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Табасараны"
+  * ^designation[=].value = "КИТАЕЦ/КИТАЯНКА"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Tabasarans"
-* #142 "Tojiklar"
+  * ^designation[=].value = "CHINESE"
+
+* #141 "KORYAK"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Таджики"
+  * ^designation[=].value = "КОРЯК/КОРЯЧКА"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Tajiks"
-* #143 "Havzalar"
+  * ^designation[=].value = "KORYAK"
+
+* #142 "NENETS"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Тазы"
+  * ^designation[=].value = "НЕНЕЦ/НЕНКА"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Basins"
-* #144 "Talish"
+  * ^designation[=].value = "NENETS"
+
+* #143 "CHUKCHA"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Талыши"
+  * ^designation[=].value = "ЧУКЧА/ЧУКЧА"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Talysh"
-* #145 "Tatarlar"
+  * ^designation[=].value = "CHUKCHI"
+
+* #144 "LAK"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Татары"
+  * ^designation[=].value = "ЛАК/ЛАКЧАНКА"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Tatars"
-* #146 "Astraxan tatarlari"
+  * ^designation[=].value = "LAK"
+
+* #145 "ASSIRIYETS"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Астраханские татары"
+  * ^designation[=].value = "АССИРИЕЦ/АССИРИЙКА"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Astrakhan Tatars"
-* #147 "Kryashens"
+  * ^designation[=].value = "ASSYRIAN"
+
+* #146 "KASHGARLIK"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Кряшены"
+  * ^designation[=].value = "КАШГАРЕЦ/КАШГАРКА"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Kryashens"
-* #148 "Mishari"
+  * ^designation[=].value = "KASHGARIAN"
+
+* #147 "DOG‘ISTONLIK"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Мишари"
+  * ^designation[=].value = "ДАГЕСТАНЕЦ/ДАГЕСТАНКА"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Mishari"
-* #149 "Sibir tatarlari"
+  * ^designation[=].value = "DAGHESTANI"
+
+* #148 "AVAR"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Сибирские татары"
+  * ^designation[=].value = "АВАРЕЦ/АВАРКА"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Siberian Tatars"
-* #150 "Tats"
+  * ^designation[=].value = "AVAR"
+
+* #149 "CHEXIYALIK"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Таты"
+  * ^designation[=].value = "ЧЕХ/ЧЕШКА"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Tats"
-* #151 "Teleutlar"
+  * ^designation[=].value = "CZECH"
+
+* #150 "FIN"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Телеуты"
+  * ^designation[=].value = "ФИНН/ФИНКА"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Teleuts"
-* #152 "Tofalar (tofa)"
+  * ^designation[=].value = "FINN"
+
+* #151 "AMERIKALIK"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Тофалары (тофа)"
+  * ^designation[=].value = "АМЕРИКАНЕЦ/АМЕРИКАНКА"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Tofalar (tofa)"
-* #153 "Tuvaliklar"
+  * ^designation[=].value = "AMERICAN"
+
+* #152 "FRANSUZ"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Тувинцы"
+  * ^designation[=].value = "ФРАНЦУЗ/ФРАНЦУЖЕНКА"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Tuvans"
-* #154 "Tuvalar-Todjalar"
+  * ^designation[=].value = "FRENCH"
+
+* #153 "KURD"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Тувинцы-тоджинцы"
+  * ^designation[=].value = "КУРД/КУРДЯНКА"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Tuvans-Todzhas"
-* #155 "Turklar"
+  * ^designation[=].value = "KURD"
+
+* #154 "KUBALIK"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Турки"
+  * ^designation[=].value = "КУБИНЕЦ/КУБИНКА"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Turks"
-* #156 "Mesxeti turklari"
+  * ^designation[=].value = "CUBAN"
+
+* #155 "UDIN"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Турки-месхетинцы"
+  * ^designation[=].value = "УДИН/УДИНКА"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Meskhetian Turks"
-* #157 "Turkmanlar"
+  * ^designation[=].value = "UDIN"
+
+* #156 "SHOR"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Туркмены"
+  * ^designation[=].value = "ШОРЕЦ/ШОРКА"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Turkmens"
-* #158 "Udini"
+  * ^designation[=].value = "SHOR"
+
+* #157 "JAZOIRLI"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Удины"
+  * ^designation[=].value = "АЛЖИРЕЦ/АЛЖИРКА"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Udine"
-* #159 "Udmurtlar"
+  * ^designation[=].value = "JAZOIRLIK"
+
+* #158 "ISPANIYALI"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Удмурты"
+  * ^designation[=].value = "ИСПАНЕЦ/ИСПАНКА"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Udmurts"
-* #160 "Udege odamlari"
+  * ^designation[=].value = "SPANISH"
+
+* #159 "ADJARIYALI"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Удэгейцы"
+  * ^designation[=].value = "АДЖАРЕЦ/АДЖАРКА"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Udege people"
-* #161 "O'zbeklar"
+  * ^designation[=].value = "ADZHARIAN"
+
+* #160 "ABAZIN"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Узбеки"
+  * ^designation[=].value = "АБАЗИНЕЦ/АБАЗИНКА"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Uzbeks"
-* #162 "Uyg'urlar"
+  * ^designation[=].value = "ABAZINIAN"
+
+* #161 "YAPONIYALI"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Уйгуры"
+  * ^designation[=].value = "ЯПОНЕЦ/ЯПОНКА"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Uyghurs"
-* #163 "Uilta (Oroks)"
+  * ^designation[=].value = "JAPANESE"
+
+* #162 "BESSARAB"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Уйльта (ороки)"
+  * ^designation[=].value = "БЕССАРАБЕЦ/БЕССАРАБКА"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Uilta (Oroks)"
-* #164 "Ukrainlar"
+  * ^designation[=].value = "BESSARABIAN"
+
+* #163 "NOGAY"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Украинцы"
+  * ^designation[=].value = "НОГАЕЦ/НОГАЙКА"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Ukrainians"
-* #165 "Ulchi"
+  * ^designation[=].value = "NOGAY"
+
+* #164 "AVSTRIYALIK"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Ульчи"
+  * ^designation[=].value = "АВСТРИЕЦ/АВСТРИЙКА"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Ulchi"
-* #166 "Finlar"
+  * ^designation[=].value = "AUSTRIAN"
+
+* #165 "PARAGVAYLI"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Финны"
+  * ^designation[=].value = "ПАРАГВАЕЦ/ПАРАГВАЙКА"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Finns"
-* #167 "Ingrian Finlar"
+  * ^designation[=].value = "PARAGUAYAN"
+
+* #166 "AGUL"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Финны-ингерманландцы"
+  * ^designation[=].value = "АГУЛ/АГУЛКА"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Ingrian Finns"
-* #168 "Frantsuz"
+  * ^designation[=].value = "AGUL"
+
+* #167 "XEMSHIL"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Французы"
+  * ^designation[=].value = "ХЕМШИЛ/ХЕМШИЛ"
   * ^designation[+].language = #en
-  * ^designation[=].value = "French"
-* #169 "Xakaslar"
+  * ^designation[=].value = "XEMSHIL"
+
+* #168 "KUMANDIN"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Хакасы"
+  * ^designation[=].value = "КУМАНДИН/КУМАНДИНКА"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Khakass"
-* #170 "Xanti"
+  * ^designation[=].value = "KUMANDIN"
+
+* #169 "XANTI"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Ханты"
+  * ^designation[=].value = "ХАНТЫ/ХАНТЫ"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Khanty"
-* #171 "Xemshili"
+  * ^designation[=].value = "KHANTY"
+
+* #170 "EFIOP"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Хемшилы"
+  * ^designation[=].value = "ЭФИОП/ЭФИОПКА"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Hemshils"
-* #172 "Xorvatlar"
+  * ^designation[=].value = "ETHIOPIAN"
+
+* #171 "SAXURETS"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Хорваты"
+  * ^designation[=].value = "ЦАХУРЕЦ/ЦАХУРКА"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Croats"
-* #173 "Tsaxur"
+  * ^designation[=].value = "SAHUR"
+
+* #172 "SLOVAK"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Цахуры"
+  * ^designation[=].value = "СЛОВАК/СЛОВАЧКА"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Tsakhurs"
-* #174 "Lo'lilar"
+  * ^designation[=].value = "SLOVAK"
+
+* #173 "KORAIM"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Цыгане"
+  * ^designation[=].value = "КАРАИМЕЦ/КАРАИМКА"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Gypsies"
-* #175 "Markaziy Osiyo lo'lilari"
+  * ^designation[=].value = "KORAIM"
+
+* #174 "IORDAN"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Цыгане среднеазиатские"
+  * ^designation[=].value = "ИОРДАНЕЦ/ИОРДАНКА"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Central Asian Gypsies"
-* #176 "Cherkeslar"
+  * ^designation[=].value = "JORDANIAN"
+
+* #175 "SAXOR"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Черкесы"
+  * ^designation[=].value = "ЦАХОРЕЦ/ЦАХОРКА"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Circassians"
-* #177 "Chernogoriyaliklar"
+  * ^designation[=].value = "TSAXOR"
+
+* #176 "NANAY"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Черногорцы"
+  * ^designation[=].value = "НАНАЕЦ/НАНАЙКА"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Montenegrins"
-* #178 "Chexlar"
+  * ^designation[=].value = "NANAY"
+
+* #177 "EVEN"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Чехи"
+  * ^designation[=].value = "ЭВЕН/ЭВЕНКА"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Czechs"
-* #179 "Chechenlar"
+  * ^designation[=].value = "EVEN"
+
+* #178 "BERBER"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Чеченцы"
+  * ^designation[=].value = "БЕРБЕР/БЕРБЕРКА"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Chechens"
-* #180 "Chechenlar-akkinlar"
+  * ^designation[=].value = "BERBER"
+
+* #179 "ALBANIYALI"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Чеченцы-аккинцы"
+  * ^designation[=].value = "АЛБАНЕЦ/АЛБАНКА"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Akkin Chechens"
-* #181 "Chuvanlar"
+  * ^designation[=].value = "ALBANIAN"
+
+* #180 "MADYAR"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Чуванцы"
+  * ^designation[=].value = "МАДЬЯР/МАДЬЯРКА"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Chuvans"
-* #182 "Chuvash"
+  * ^designation[=].value = "MAGYAR"
+
+* #181 "GOLLANDIYALI"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Чуваши"
+  * ^designation[=].value = "ГОЛЛАНДЕЦ/ГОЛЛАНДКА"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Chuvash"
-* #183 "Chukchi"
+  * ^designation[=].value = "DUTCHMAN"
+
+* #182 "NIKARAGUALIK"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Чукчи"
+  * ^designation[=].value = "НИКАРАГУАНЕЦ/НИКАРАГУАНКА"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Chukchi"
-* #184 "Chulim xalqi"
+  * ^designation[=].value = "NICARAGUAN"
+
+* #183 "INGLIZ"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Чулымцы"
+  * ^designation[=].value = "АНГЛИЧАНИН/АНГЛИЧАНКА"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Chulyms"
-* #185 "Shapsugi"
+  * ^designation[=].value = "ENGLISH"
+
+* #184 "ANGLIYALIK"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Шапсуги"
+  * ^designation[=].value = "АНГЛИЧАНИН/АНГЛИЧАНКА"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Shapsugs"
-* #186 "Shors"
+  * ^designation[=].value = "ENGLISH"
+
+* #185 "GONDURAS"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Шорцы"
+  * ^designation[=].value = "ГОНДУРАС/ГОНДУРАСЕЦ"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Shors"
-* #187 "Evenks"
+  * ^designation[=].value = "HONDURAN"
+
+* #186 "INDONEZIYALI"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Эвенки"
+  * ^designation[=].value = "ИНДОНЕЗИЕЦ/ИНДОНЕЗИЙКА"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Evenks"
-* #188 "Evens (Lamutlar)"
+  * ^designation[=].value = "INDONESIAN"
+
+* #187 "INDUS"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Эвены (ламуты)"
+  * ^designation[=].value = "ИНДУС/ИНДУС"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Evens (Lamuts)"
-* #189 "Enets"
+  * ^designation[=].value = "INDIAN"
+
+* #188 "KENIYALIK"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Энцы"
+  * ^designation[=].value = "КЕНИЕЦ/КЕНИЙКА"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Enets"
-* #190 "Eskimoslar"
+  * ^designation[=].value = "KENYAN"
+
+* #189 "KOLUMBIYALI"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Эскимосы"
+  * ^designation[=].value = "КОЛУМБИЕЦ/КОЛУМБИЙКА"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Eskimos"
-* #191 "Estoniyaliklar"
+  * ^designation[=].value = "COLOMBIAN"
+
+* #190 "XORVAT"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Эстонцы"
+  * ^designation[=].value = "ХОРВАТ/ХОРВАТКА"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Estonians"
-* #192 "Setu (Seto)"
+  * ^designation[=].value = "CROAT"
+
+* #191 "TALISH"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Сету (сето)"
+  * ^designation[=].value = "ТАЛЫШ/ТАЛЫШКА"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Setos (Seto)"
-* #193 "Yukagirlar"
+  * ^designation[=].value = "TALISH"
+
+* #192 "URDU"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Юкагиры"
+  * ^designation[=].value = "УРДУ"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Yukaghirs"
-* #194 "Yakutlar (Saxa)"
+  * ^designation[=].value = "URDU"
+
+* #193 "POKISTONLIK"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Якуты (саха)"
+  * ^designation[=].value = "ПАКИСТАНЕЦ/ПАКИСТАНКА"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Yakuts (Sakha)"
-* #195 "Yapon"
+  * ^designation[=].value = "PAKISTANI"
+
+* #194 "PUSHTUN"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Японцы"
+  * ^designation[=].value = "ПУШТУН/ПУШТУНКА"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Japanese"
-* #196 "Avstraliyaliklar"
+  * ^designation[=].value = "PASHTO"
+
+* #195 "TOGOLIK"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Австралийцы"
+  * ^designation[=].value = "ТОГОЛЕЦ/ТОГОЛКА"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Australians"
-* #197 "Avstriyaliklar"
+  * ^designation[=].value = "TOGOLESE"
+
+* #196 "GVINEYALIK"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Австрийцы"
+  * ^designation[=].value = "ГВИНЕЕЦ/ГВИНЕЙКА"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Austrians"
-* #198 "Aynu"
+  * ^designation[=].value = "GUINEAN"
+
+* #197 "RUTUL"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Айны"
+  * ^designation[=].value = "РУТУЛ/РУТУЛКА"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Ainu"
-* #199 "Albanlar"
+  * ^designation[=].value = "RUTUL"
+
+* #198 "NEPAL"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Албанцы"
+  * ^designation[=].value = "НЕПАЛЕЦ/НЕПАЛКА"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Albanians"
-* #200 "Angolalar"
+  * ^designation[=].value = "NEPALESE"
+
+* #199 "IJORETS"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Ангольцы"
+  * ^designation[=].value = "ИЖОРЕЦ/ИЖОРКА"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Angolans"
-* #201 "Argentinaliklar"
+  * ^designation[=].value = "IJORIAN"
+
+* #200 "LIVAN"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Аргентинцы"
+  * ^designation[=].value = "ЛИВАНЕЦ/ЛИВАНКА"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Argentines"
-* #202 "Bangladeshliklar"
+  * ^designation[=].value = "LEBANESE"
+
+* #201 "SHVEYSARIYALI"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Бангладешцы"
+  * ^designation[=].value = "ШВЕЙЦАРЕЦ/ШВЕЙЦАРКА"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Bangladeshi"
-* #203 "Bask"
+  * ^designation[=].value = "SWISS"
+
+* #202 "DOMENIKAN"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Баски"
+  * ^designation[=].value = "ДОМЕНИКАНЕЦ/ДОМЕНИКАНКА"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Basques"
-* #204 "Belgiyaliklar"
+  * ^designation[=].value = "DOMINICAN"
+
+* #203 "AVAN"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Бельгийцы"
+  * ^designation[=].value = "АВАН/АВАНКА"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Belgians"
-* #205 "Benincha"
+  * ^designation[=].value = "AWANEH"
+
+* #204 "AVSTRALIYALIK"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Бенинцы"
+  * ^designation[=].value = "АВСТРАЛИЕЦ/АВСТРАЛИЙКА"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Beninese"
-* #206 "Berberlar"
+  * ^designation[=].value = "AUSTRALIANS"
+
+* #205 "ADANGME"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Берберы"
+  * ^designation[=].value = "АДАНГМЕ/АДАНГМЕ"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Berbers"
-* #207 "Birma"
+  * ^designation[=].value = "ADANGME"
+
+* #206 "AZANDE"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Бирманцы"
+  * ^designation[=].value = "АЗАНДЕ/АЗАНДЕ"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Burmese"
-* #208 "Bisau-Gvineyaliklar"
+  * ^designation[=].value = "AZANDE"
+
+* #207 "OZARBAYJON"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Бисау-гвинейцы"
+  * ^designation[=].value = "АЗЕБАЙДЖАНЕЦ/АЗЕРБАЙДЖАНКА"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Bissau-Guineans"
-* #209 "Boliviyaliklar"
+  * ^designation[=].value = "AZERBAIJANIAN"
+
+* #208 "AYMARA"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Боливийцы"
+  * ^designation[=].value = "АЙМАРА/АЙМАРА"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Bolivians"
-* #210 "Botsvanalar"
+  * ^designation[=].value = "AYMARA"
+
+* #209 "AYN"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Ботсванцы"
+  * ^designation[=].value = "АЙН/АЙНКА"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Botswana"
-* #211 "Braziliyaliklar"
+  * ^designation[=].value = "AINU"
+
+* #210 "AKMBA"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Бразильцы"
+  * ^designation[=].value = "АКАМБА/АКАМБА"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Brazilians"
-* #212 "Bolgarlar"
+  * ^designation[=].value = "AKAMBA"
+
+* #211 "AKAN"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Булгары"
+  * ^designation[=].value = "АКАН/АКАН"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Bulgars"
-* #213 "Burkinabe xalqi"
+  * ^designation[=].value = "AKAN"
+
+* #212 "AKIKUYYU"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Буркинабцы"
+  * ^designation[=].value = "АКИКУЙЮ/ЙКИКУЙЮ"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Burkinabes"
-* #214 "Burundiliklar"
+  * ^designation[=].value = "AKIKUYU"
+
+* #213 "ALEUTLIK"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Бурундийцы"
+  * ^designation[=].value = "АЛЕУТ/АЛЕУТКА"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Burundi"
-* #215 "Venesuelaliklar"
+  * ^designation[=].value = "ALEUT"
+
+* #214 "AMXARA"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Венесуэльцы"
+  * ^designation[=].value = "АМХАРА/АМХАРА"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Venezuelans"
-* #216 "Gabon"
+  * ^designation[=].value = "AMHARA"
+
+* #215 "INGLIS-KANADALIK"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Габонцы"
+  * ^designation[=].value = "АНГЛО-КАНАДЕЦ/АНГЛО-КАНАДКА"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Gabonese"
-* #217 "Gaitiliklar"
+  * ^designation[=].value = "ANGLO-CANADIANS"
+
+* #216 "INGLIS-YANGIZELANDIYALIK"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Гаитяне"
+  * ^designation[=].value = "АНГЛО-НОВОЗЕЛАНДЕЦ/АНГЛО-НОВОЗЕЛЕНДКА"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Haitians"
-* #218 "Gambiyaliklar"
+  * ^designation[=].value = "NEW ZEALADERS (PAKEHAS)"
+
+* #217 "ARAUKAN"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Гамбийцы"
+  * ^designation[=].value = "АРАУКАН/АРАУКАН"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Gambians"
-* #219 "Ganaliklar"
+  * ^designation[=].value = "ARAUCANIAN"
+
+* #218 "ARGENTINALIK"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Ганцы"
+  * ^designation[=].value = "АРГЕНТИНЕЦ/АРГЕНТИНКА"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Ghanaians"
-* #220 "Gvatemalaliklar"
+  * ^designation[=].value = "ARGENTINES"
+
+* #219 "AROMUN"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Гватемальцы"
+  * ^designation[=].value = "АРОМУН/АРОМУН"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Guatemalans"
-* #221 "Gvineyaliklar"
+  * ^designation[=].value = "AROMANIAN"
+
+* #220 "ASSAMLIK"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Гвинейцы"
+  * ^designation[=].value = "АССАМИЕЦ/АССАМИЙКА"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Guineans"
-* #222 "Golland"
+  * ^designation[=].value = "ASSAM"
+
+* #221 "AFAR"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Голландцы"
+  * ^designation[=].value = "АФАР/АФАР"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Dutch"
-* #223 "Gonduras"
+  * ^designation[=].value = "AFAR"
+
+* #222 "AFRIKANERLIK"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Гондурасцы"
+  * ^designation[=].value = "АФРИКАНЕР/АФРИКАНЕРКА"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Hondurans"
-* #224 "Dog'istonliklar"
+  * ^designation[=].value = "AFRIKANER"
+
+* #223 "ATSTEK"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Дагестанцы"
+  * ^designation[=].value = "АЦТЕК/АЦТЕК"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Dagestanis"
-* #225 "Daniyaliklar"
+  * ^designation[=].value = "AZTEC"
+
+* #224 "ACHE"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Датчане"
+  * ^designation[=].value = "АЧЕ/АЧЕ"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Danes"
-* #226 "Dauras"
+  * ^designation[=].value = "ACEHNESE"
+
+* #225 "BAGAM"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Дауры"
+  * ^designation[=].value = "БАГАМЕЦ/БАГАМКА"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Daurians"
-* #227 "Jektsy"
+  * ^designation[=].value = "BAHAMIAN"
+
+* #226 "BADJAO"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Джекцы"
+  * ^designation[=].value = "БАДЖАО/БАДЖАО"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Jacks"
-* #228 "Jibutiyaliklar"
+  * ^designation[=].value = "BAJAU"
+
+* #227 "BAKVE"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Джибутинцы"
+  * ^designation[=].value = "БАКВЕ/БАКВЕ"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Djiboutians"
-* #229 "Dominikanliklar"
+  * ^designation[=].value = "BAKWE"
+
+* #228 "BAKELE"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Доминиканцы"
+  * ^designation[=].value = "БАКЕЛЕ/БАКЕЛЕ"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Dominicans"
-* #230 "Zambiyaliklar"
+  * ^designation[=].value = "BANDJABI"
+
+* #229 "BAKONDJO"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Замбийцы"
+  * ^designation[=].value = "БАКОНДЖО/БАКОНДЖО"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Zambians"
-* #231 "Zimbabveliklar"
+  * ^designation[=].value = "BAKONJO"
+
+* #230 "BALANTE"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Зимбабвийцы"
+  * ^designation[=].value = "БАЛАНТЕ/БАЛАНТЕ"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Zimbabweans"
-* #232 "Isroilliklar"
+  * ^designation[=].value = "BALANTE"
+
+* #231 "BALI"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Израильтяне"
+  * ^designation[=].value = "БАЛИЕЦ/БАЛИЙКА"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Israelis"
-* #233 "Indoneziyaliklar"
+  * ^designation[=].value = "BALINESE"
+
+* #232 "BANGI"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Индонезийцы"
+  * ^designation[=].value = "БАНГИ/БАНГИ"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Indonesians"
-* #234 "Irland"
+  * ^designation[=].value = "BANGUI"
+
+* #233 "BANDJAR"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Ирландцы"
+  * ^designation[=].value = "БАНДЖАР/БАНДЖАРКА"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Irish"
-* #235 "Islandiyaliklar"
+  * ^designation[=].value = "BANJAR"
+
+* #234 "BARBA"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Исландцы"
+  * ^designation[=].value = "БАРБА/БАРБА"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Icelanders"
-* #236 "Kabo-Verdeliklar"
+  * ^designation[=].value = "BARBA"
+
+* #235 "BARI"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Кабоверденцы"
+  * ^designation[=].value = "БАРИ/БАРИ"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Cape Verdeans"
-* #237 "Kamasin odamlari"
+  * ^designation[=].value = "BARI"
+
+* #236 "BASK"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Камасинцы"
+  * ^designation[=].value = "БАСК/БАСК"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Kamasinians"
-* #238 "Kambodjaliklar"
+  * ^designation[=].value = "BASQUE"
+
+* #237 "BASSA"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Камбоджийцы"
+  * ^designation[=].value = "БАССА/БАССА"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Cambodians"
-* #239 "Kamerunliklar"
+  * ^designation[=].value = "BASSA"
+
+* #238 "BATAK"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Камерунцы"
+  * ^designation[=].value = "БАТАК/БАТАК"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Cameroonians"
-* #240 "kanadaliklar"
+  * ^designation[=].value = "BATAK"
+
+* #239 "BAXTIYORIY"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Канадцы"
+  * ^designation[=].value = "БАХТИАРИ/БАХТИАРИ"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Canadians"
-* #241 "Keniyaliklar"
+  * ^designation[=].value = "BAKHTIARI"
+
+* #240 "BEDJA"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Кенийцы"
+  * ^designation[=].value = "БЕДЖА/БЕДЖА"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Kenyans"
-* #242 "Kiprliklar"
+  * ^designation[=].value = "BEJA"
+
+* #241 "BELUDJI"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Киприоты"
+  * ^designation[=].value = "БЕЛУДЖИ/БЕЛУДЖИ"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Cypriots"
-* #243 "Kistins"
+  * ^designation[=].value = "BALUCHI"
+
+* #242 "BEMBA"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Кистины"
+  * ^designation[=].value = "БЕМБА/БЕМБА"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Kistins"
-* #244 "Kolumbiyaliklar"
+  * ^designation[=].value = "BЕМВА"
+
+* #243 "BENGAL"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Колумбийцы"
+  * ^designation[=].value = "БЕНГАЛЕЦ/БЕНГАЛКА"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Colombians"
-* #245 "Komoriyaliklar"
+  * ^designation[=].value = "BENGALI"
+
+* #244 "VO?ALIK BERBER"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Коморцы"
+  * ^designation[=].value = "БЕРБЕР/БЕРБЕРКА ОАЗИСОВ"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Comorians"
-* #246 "Kongo"
+  * ^designation[=].value = "OASIS BERBER"
+
+* #245 "BERBER-XAZARLIK"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Конголезцы"
+  * ^designation[=].value = "БЕРБЕР-ХАЗАРИЕЦ/БЕРБЕР-ХАРАРИЙКА"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Congolese"
-* #247 "Kosta-Rikaliklar"
+  * ^designation[=].value = "BERBER-KHAZAR"
+
+* #246 "BERMUDLIK"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Костариканцы"
+  * ^designation[=].value = "БЕРМУДЕЦ/БЕРМУДКА"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Costaricans"
-* #248 "Kotdivuarliklar"
+  * ^designation[=].value = "BERMUDS"
+
+* #247 "BETE"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Котдивуарцы"
+  * ^designation[=].value = "БЕТЕ/БЕТЕ"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Cotdivian"
-* #249 "Shri-Lankaliklar"
+  * ^designation[=].value = "BETE"
+
+* #248 "BIKOL"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Ланкийцы"
+  * ^designation[=].value = "БИКОЛ/БИКОЛЕЦ"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Sri Lankans"
-* #250 "Laosliklar"
+  * ^designation[=].value = "BICOLANO"
+
+* #249 "BIRMALIK"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Лаосцы"
+  * ^designation[=].value = "БИРМАНЕЦ/БИРМАНКА"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Laotians"
-* #251 "Lesoto xalqi"
+  * ^designation[=].value = "BURMAN"
+
+* #250 "BIXAR"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Лесотцы"
+  * ^designation[=].value = "БИХАРЕЦ/БИХАРКА"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Lesothians"
-* #252 "Liberiyaliklar"
+  * ^designation[=].value = "BIHARIS"
+
+* #251 "BOBO"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Либерийцы"
+  * ^designation[=].value = "БОБО/БОБО"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Liberians"
-* #253 "Lixtenshteynliklar"
+  * ^designation[=].value = "BOBO"
+
+* #252 "BOLIVIYALIK"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Лихтенштейнцы"
+  * ^designation[=].value = "БОЛИВИЕЦ/БОЛИВИЙКА"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Liechtensteiners"
-* #254 "Lyuksemburgliklar"
+  * ^designation[=].value = "BOLIVIAN"
+
+* #253 "BOSNIYALIK"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Люксембуржцы"
+  * ^designation[=].value = "БОСНИЕЦ/БОСНИЙКА"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Luxembourgers"
-* #255 "Mavrikiyaliklar"
+  * ^designation[=].value = "BOSNIAN"
+
+* #254 "BRAGUI"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Маврикийцы"
+  * ^designation[=].value = "БРАГУИ/БРАГУИ"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Mauritians"
-* #256 "Malaviliklar"
+  * ^designation[=].value = "BRAHUI"
+
+* #255 "BRAZILIYALIK"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Малавийцы"
+  * ^designation[=].value = "БРАЗИЛЕЦ/БРАЗИЛИЙКА"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Malawians"
-* #257 "Malagasy"
+  * ^designation[=].value = "BRAZILIAN"
+
+* #256 "BRETONLIK"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Малагасийцы"
+  * ^designation[=].value = "БРЕТОНЕЦ/БРЕТОНКА"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Malagasy"
-* #258 "Malaylar"
+  * ^designation[=].value = "BRETON"
+
+* #257 "BUGI"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Малайцы"
+  * ^designation[=].value = "БУГИЕЦ/БУГИЙКА"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Malays"
-* #259 "Maliliklar"
+  * ^designation[=].value = "BUGIS"
+
+* #258 "BUI"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Малийцы"
+  * ^designation[=].value = "БУИ/БУИ"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Malians"
-* #260 "Maldivliklar"
+  * ^designation[=].value = "BUYEI"
+
+* #259 "BUSHMONLIK"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Мальдивцы"
+  * ^designation[=].value = "БУШМЕН/БУШМЕНКА"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Maldivians"
-* #261 "Manchus"
+  * ^designation[=].value = "BUSHMAN"
+
+* #260 "BXIL"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Маньчжуры"
+  * ^designation[=].value = "БХИЛ/БХИЛ"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Manchus"
-* #262 "Meksikaliklar"
+  * ^designation[=].value = "BHIL"
+
+* #261 "VOLOF"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Мексиканцы"
+  * ^designation[=].value = "ВОЛОФ/ВОЛОФ"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Mexicans"
-* #263 "Mozambikliklar"
+  * ^designation[=].value = "WOLOF"
+
+* #262 "VALLON"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Мозамбикцы"
+  * ^designation[=].value = "ВАЛЛОН/ВАЛЛОНКА"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Mozambicans"
-* #264 "Monegask"
+  * ^designation[=].value = "WALLOON"
+
+* #263 "VEDDALIK"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Монегаски"
+  * ^designation[=].value = "ВВЕДЫ/ВВЕДЫ"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Monegasques"
-* #265 "Namibiyaliklar"
+  * ^designation[=].value = "VEDDAS"
+
+* #264 "VENESUEL"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Намибийцы"
+  * ^designation[=].value = "ВЕНЕСУЭЛЕЦ/ВЕНЕСУЭЛКА"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Namibians"
-* #266 "Nepal"
+  * ^designation[=].value = "VENEZUELAN"
+
+* #265 "VEPS"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Непальцы"
+  * ^designation[=].value = "ВЕПС/ВЕПС"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Nepalese"
-* #267 "Nigeriyaliklar"
+  * ^designation[=].value = "VEPSIANS"
+
+* #266 "VISAYYALIK"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Нигерийцы"
+  * ^designation[=].value = "ВИСАЙЕЦ/ВИСАЙКА"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Nigerians"
-* #268 "Nigeriyaliklar"
+  * ^designation[=].value = "VISAYAN"
+
+* #267 "GA"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Нигерцы"
+  * ^designation[=].value = "ГА/ГА"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Nigerians"
-* #269 "Nikaragualar"
+  * ^designation[=].value = "GA-ADANGBE"
+
+* #268 "GAVAYALIK"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Никарагуанцы"
+  * ^designation[=].value = "ГАВАЕЦ/ГАВАЙКА"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Nicaraguans"
-* #270 "Yangi Gvineyaliklar"
+  * ^designation[=].value = "HAWAIIAN"
+
+* #269 "GAITILIK"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Новогвинейцы"
+  * ^designation[=].value = "ГАИТЯНИН/ГАИТЯНКА"
   * ^designation[+].language = #en
-  * ^designation[=].value = "New Guineans"
-* #271 "Yangi Zelandiyaliklar"
+  * ^designation[=].value = "HAITIAN"
+
+* #270 "GAYANLIK (INGLIS TILINI)"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Новозеландцы"
+  * ^designation[=].value = "ГАЙАНЕЦ/ГАЙАНКА (АНГЛОЯЗЫЧНЫЕ)"
   * ^designation[+].language = #en
-  * ^designation[=].value = "New Zealanders"
-* #272 "Norse"
+  * ^designation[=].value = "GAYANESE (ENG.)"
+
+* #271 "GALISIYLIK"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Норвежцы"
+  * ^designation[=].value = "ГАЛИСИЕЦ/ГАЛИСИЙКА"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Norwegians"
-* #273 "Panamaliklar"
+  * ^designation[=].value = "GALICIAN"
+
+* #272 "GANDA"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Панамцы"
+  * ^designation[=].value = "ГАНДА/ГАНДА"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Panamanians"
-* #274 "Paragvayliklar"
+  * ^designation[=].value = "GANDA"
+
+* #273 "GBAYYA"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Парагвайцы"
+  * ^designation[=].value = "ГБАЙЯ/ГБАЙЯ"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Paraguayans"
-* #275 "Peruliklar"
+  * ^designation[=].value = "GBAYA"
+
+* #274 "GVATEMAL"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Перуанцы"
+  * ^designation[=].value = "ГВАТЕМАЛЕЦ/ГВАТЕМАЛКА"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Peruvians"
-* #276 "Polineziyaliklar"
+  * ^designation[=].value = "GUATEMALAN"
+
+* #275 "GVIANALIK (INGLIS TILINI)"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Полинезийцы"
+  * ^designation[=].value = "ГВИАНЕЦ/ГВИАНКА (АНГЛОЯЗЫЧНЫЕ)"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Polynesians"
-* #277 "Portugal"
+  * ^designation[=].value = "GUIANA (ENG.)"
+
+* #276 "GVIANALIK (GOLLAND TILINI)"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Португальцы"
+  * ^designation[=].value = "ГВИАНЕЦ/ГВИАНКА (ГОЛЛАНДСКОЯЗЫЧНЫЕ)"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Portuguese"
-* #278 "Puerto-Rikaliklar"
+  * ^designation[=].value = "GUIANA (DUTCH)"
+
+* #277 "GVIANALIK (FRANSUZ TILINI)"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Пуэрториканцы"
+  * ^designation[=].value = "ГВИАНЕЦ/ГВИАНКА (ФРАНОЯЗЫЧНЫЕ)"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Puerto Ricans"
-* #279 "Ruslar"
+  * ^designation[=].value = "GUIANA (FRENCH)"
+
+* #278 "GERE"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Россияне"
+  * ^designation[=].value = "ГЕРЕ/ГЕРЕ"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Russians"
-* #280 "Ruandaliklar"
+  * ^designation[=].value = "HERE"
+
+* #279 "GERMAN-SHVEYSARIYALIK"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Руандийцы"
+  * ^designation[=].value = "ГЕРМАНО-ШВЕЙЦАРЕЦ/ГЕРМАНО-ШВЕЙЦАРКА"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Rwandans"
-* #281 "Salvadorliklar"
+  * ^designation[=].value = "GERMAN-SWISS"
+
+* #280 "NIVX"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Сальвадорцы"
+  * ^designation[=].value = "НИВХ/НИВХ"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Salvadorians"
-* #282 "Santomiyaliklar"
+  * ^designation[=].value = "NIVKH"
+
+* #281 "GONDVANALIK"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Сантомийцы"
+  * ^designation[=].value = "ГОНД/ГОНД"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Santomians"
-* #283 "Senegallik"
+  * ^designation[=].value = "GONDWANA"
+
+* #282 "GOTTENTOT"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Сенегальцы"
+  * ^designation[=].value = "ГОТТЕНТОТ/ГОТТЕНТОТ"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Senegalese"
-* #284 "Sibo"
+  * ^designation[=].value = "HOTTENTOT"
+
+* #283 "GREBO"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Сибо"
+  * ^designation[=].value = "ГРЕБО/ГРЕБО"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Sibo"
-* #285 "Somali"
+  * ^designation[=].value = "GREBO"
+
+* #284 "GRUSI"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Сомалийцы"
+  * ^designation[=].value = "ГРУСИ/ГРУСИ"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Somalis"
-* #286 "Sudanlik"
+  * ^designation[=].value = "GURUNSI"
+
+* #285 "GUJARATLIK"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Суданцы"
+  * ^designation[=].value = "ГУЖАРАТЕЦ/ГУЖАРАТКА"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Sudanese"
-* #287 "Syerra-Leoneliklar"
+  * ^designation[=].value = "GUJARAT"
+
+* #286 "GUDJURLIK"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Сьерралеонцы"
+  * ^designation[=].value = "ГУДЖУР/ГУДЖУРКА"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Sierraleoneans"
-* #288 "Taylar"
+  * ^designation[=].value = "GUJUR"
+
+* #287 "GURAGE"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Таиландцы"
+  * ^designation[=].value = "ГУРУГЕ/ГУРАГЕ"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Thais"
-* #289 "Tanzaniyaliklar"
+  * ^designation[=].value = "GURAGE"
+
+* #288 "GURMA"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Танзанийцы"
+  * ^designation[=].value = "ГУРМА/ГУРМА"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Tanzanians"
-* #290 "Togo"
+  * ^designation[=].value = "GURMA"
+
+* #289 "GURUNGI"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Тоголезцы"
+  * ^designation[=].value = "ГУРУНГИ/ГУРУНГИ"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Togolese"
-* #291 "Tonganlar"
+  * ^designation[=].value = "GURUNG"
+
+* #290 "DAN"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Тонганцы"
+  * ^designation[=].value = "ДАН/ДАН"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Tongans"
-* #292 "Turklar"
+  * ^designation[=].value = "DAN"
+
+* #291 "DARXATLIK"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Тюрки"
+  * ^designation[=].value = "ДАРХАТ/ДАРХАТКА"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Turks"
-* #293 "Ugandaliklar"
+  * ^designation[=].value = "DARKHAT"
+
+* #292 "DANIYALIK"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Угандийцы"
+  * ^designation[=].value = "ДАТЧАНИН/ДАТЧАНКА"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Ugandans"
-* #294 "Urugvayliklar"
+  * ^designation[=].value = "DANE"
+
+* #293 "DAYAK"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Уругвайцы"
+  * ^designation[=].value = "ДАЯК/ДАЯК"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Uruguayans"
-* #295 "Filippinliklar"
+  * ^designation[=].value = "DAYAK"
+
+* #294 "DJAKUN"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Филиппинцы"
+  * ^designation[=].value = "ДЖАКУН/ДЖАКУН"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Filipinos"
-* #296 "Chadliklar"
+  * ^designation[=].value = "DZHAKUN"
+
+* #295 "DJATLIK"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Чадцы"
+  * ^designation[=].value = "ДЖАТ/ДЖАТ"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Chadians"
-* #297 "Chililiklar"
+  * ^designation[=].value = "JATS"
+
+* #296 "DJUKUN"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Чилийцы"
+  * ^designation[=].value = "ДЖУКУН/ДЖУКУН"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Chileans"
-* #298 "Shvedlar"
+  * ^designation[=].value = "JUKUN"
+
+* #297 "DINKA"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Шведы"
+  * ^designation[=].value = "ДИНКА/ДИНКА"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Swedes"
-* #299 "Shveytsariyalik"
+  * ^designation[=].value = "DINKA"
+
+* #298 "DIOLA"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Швейцарцы"
+  * ^designation[=].value = "ДИОЛА/ДИОЛА"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Swiss"
-* #300 "Ekvadorliklar"
+  * ^designation[=].value = "JOLA"
+
+* #299 "DOGON"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Эквадорцы"
+  * ^designation[=].value = "ДОГОН/ДОГОН"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Ecuadorians"
-* #301 "Ekvatorliklar"
+  * ^designation[=].value = "DOGON"
+
+* #300 "DOLGANLIK"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Экваторианцы"
+  * ^designation[=].value = "ДОЛГАНИН/ДОЛГАНКА"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Equatorians"
-* #302 "Eritreyaliklar"
+  * ^designation[=].value = "DOLGAN"
+
+* #301 "DUALA"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Эритрейцы"
+  * ^designation[=].value = "ДУАЛА/ДУАЛА"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Eritreans"
-* #303 "Efiopiyaliklar"
+  * ^designation[=].value = "DUALA"
+
+* #302 "DUN"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Эфиопы"
+  * ^designation[=].value = "ДУН/ДУН"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Ethiopians"
-* #304 "Yugoslavlar"
+  * ^designation[=].value = "DUN"
+
+* #303 "DUSUN"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Югославы"
+  * ^designation[=].value = "ДУСУН/ДУСУН"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Yugoslavs"
-* #305 "Janubiy Afrikaliklar"
+  * ^designation[=].value = "DUSUN"
+
+* #304 "TO?LIK YAXUDIY"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Южноафриканцы"
+  * ^designation[=].value = "ГОРСКИЙ ЕВРЕЙ/ГОРСКАЯ ЕВРЕЙКА"
   * ^designation[+].language = #en
-  * ^designation[=].value = "South Africans"
-* #306 "Yamaykaliklar"
+  * ^designation[=].value = "MOUNTAIN JEWS"
+
+* #305 "ZINZA (BAZINZA)"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Ямайцы"
+  * ^designation[=].value = "ЗИНЗА (БАЗИНЗА)/ЗИНЗА (БАЗИНЗА)"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Jamaicans"
-* #307 "Boshqa millatlar"
+  * ^designation[=].value = "ZINZA (BAZINZA)"
+
+* #306 "ZULUS"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Прочие национальности"
+  * ^designation[=].value = "ЗУЛУС/ЗУЛУСКА"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Others"
+  * ^designation[=].value = "ZULU"
+
+* #307 "IBANAGI"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "ИБАНАГИ/ИБАНАГИ"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "IBANAG"
+
+* #308 "IBAN"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "ИБАН/ИБАН"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "IBAN"
+
+* #309 "IBIBIO"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "ИБИБИО/ИБИБИО"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "IBIBIO"
+
+* #310 "IBO"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "ИБО/ИБО"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "IBO"
+
+* #311 "IDOMA"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "ИДОМА/ИДОМА"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "IDOMA"
+
+* #312 "ILOKI"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "ИЛОКИ/ИЛОКИ"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "ILOKANO"
+
+* #313 "XINDU"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "ИНДЕЕЦ/ИНДЕЕЦ"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "(AMERICAN) INDIAN"
+
+* #314 "IRLANDIYALIK"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "ИРЛАНДЕЦ/ИРЛАНДКА"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "IRISHMAN"
+
+* #315 "ISLANDIYALIK"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "ИСЛАНДЕЦ/ИСЛАНДКА"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "ICELANDER"
+
+* #316 "ISSA"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "ИССА/ИССА"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "ISSA"
+
+* #317 "ITALYAN-SHVEYSARIYALIK"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "ИТАЛО-ШВЕЙЦАРЕЦ/ИТАЛО-ШВЕЙЦАРКА"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "ITALIAN-SWISS"
+
+* #318 "ITELMEN"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "ИТЕЛЬМЕН/ИТЕЛЬМЕНКА"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "ITELMEN"
+
+* #319 "ITSZU"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "ИЦЗУ/ИЦЗУ"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "YI"
+
+* #320 "YORUBA"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "ЙОРУБА/ЙОРУБА"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "YORUBA"
+
+* #321 "KABIL"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "КАБИЛ/КАБИЛ"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "KABILIAN"
+
+* #322 "KAKCHIKELI"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "КАКЧИКЕЛИ/КАКЧИКЕЛИ"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "KAQCHIKEL"
+
+* #323 "KANADALIK"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "КАНАДЕЦ/КАНАДКА"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "CANADIAN"
+
+* #324 "KANAK"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "КАНАК/КАНАК"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "KANAKA"
+
+* #325 "KANNARA"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "КАННАРА/КАННАРА"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "KANNADIGA"
+
+* #326 "KANURI"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "КАНУРИ/КАНУРИ"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "KANURI"
+
+* #327 "KAREN"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "КАРЕН/КАРЕН"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "KAREN"
+
+* #328 "KATALAN"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "КАТАЛАН/КАТАЛАНКА"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "CATALAN"
+
+* #329 "KACHIN"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "КАЧИН/КАЧИН"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "KACHIN"
+
+* #330 "KASHMIR"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "КАШМИР/КАШМИРКА"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "KASHMIREAN"
+
+* #331 "KAYA"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "КАЯ/КАЯ"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "GAYA"
+
+* #332 "KEDOYAN"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "КЕДОЯН/КЕДОЯН"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "KEDOYAN"
+
+* #333 "KEKCHI"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "КЕКЧИ/КЕКЧИ"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "KEKCHI"
+
+* #334 "KET"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "КЕТ/КЕТ"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "KETS"
+
+* #335 "KECHUA"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "КЕЧУАН/КЕЧУАНКА"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "QUECHUA"
+
+* #336 "KINGA (VAKINGA)"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "КИНГА (ВАКИНГА)/КИНГА (ВАКИНГА)"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "KINGA (WAKINGA)"
+
+* #337 "KISI"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "КИСИ/КИСИ"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "KISSI"
+
+* #338 "KICHE"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "КИЧЕ/КИЧЕ"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "KnullICHEnull"
+
+* #339 "KLEMANTANLIK"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "КЛЕМАНТАН/КЛЕМАНТАН"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "KALIMANTANIAN"
+
+* #340 "KONGO"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "КОНОГОЛЕЗЕЦ/КОНОГОЛЕЗКА"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "CONGOLESE"
+
+* #341 "KONO (VAI)"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "КОНО (ВАИ)/КОНО (ВАИ)"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "VAI"
+
+* #342 "KOSA"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "КОСА/КОСА"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "XHOSA"
+
+* #343 "KOSTARIKALIK"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "КОСТАРИКАНЕЦ/КОСТАРИКАНКА"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "COSTARICAN"
+
+* #344 "KOTA"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "КОТА/КОТА"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "KOTA"
+
+* #345 "KPELLE"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "КПЕЛЛЕ/КПЕЛЛЕ"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "KPELLE"
+
+* #346 "KRAN"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "КРАН/КРАН"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "KRAN"
+
+* #347 "KRU"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "КРУ/КРУ"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "KRU"
+
+* #348 "KRIMCHAK"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "КРЫМЧАК/КРЫМЧАНКА"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "CRIMEAN"
+
+* #349 "KUNA"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "КУНА/КУНА"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "KUNA"
+
+* #350 "KXMER"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "КХМЕР/КХМЕРКА"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "KHMER"
+
+* #351 "KXMU"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "КХМУ/КХМУ"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "KHMU"
+
+* #352 "LADIN"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "ЛАДИН/ЛАДИН"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "LADINO"
+
+* #353 "LAO"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "ЛАО/ЛАО"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "LAO"
+
+* #354 "LIMBU"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "ЛИМБУ/ЛИМБУ"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "LIMBU"
+
+* #355 "LOBI"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "ЛОБИ/ЛОБИ"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "LOBI"
+
+* #356 "LOZI"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "ЛОЗИ/ЛОЗИ"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "LOZI"
+
+* #357 "LOMA"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "ЛОМА/ЛОМА"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "LOMA"
+
+* #358 "LUBA"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "ЛУБА/ЛУБА"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "LUBA"
+
+* #359 "LUJICHAN"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "ЛУЖИЧАН/ЛУЖИЧАНКА"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "LUSATIAN"
+
+* #360 "LUNDA"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "ЛУНДА/ЛУНДА"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "LUNDA"
+
+* #361 "LUO (DJOLUO)"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "ЛУО (ДЖОЛУО)/ЛУО (ДЖОЛУО)"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "LUO (JOLUO)"
+
+* #362 "SHIMOLIY LUO"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "СЕВЕРНЫЙ ЛУО/СЕВЕРНАЯ ЛУО"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "NORTHERN LUO"
+
+* #363 "LUR"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "ЛУР/ЛУР"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "LUR"
+
+* #364 "LUXYA"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "ЛУХЬЯ/ЛУХЬЯ"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "LUHYA"
+
+* #365 "LUCHAZI"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "ЛУЧАЗИ/ЛУЧАЗИ"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "LUCHAZI"
+
+* #366 "LYUKSEMBURG"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "ЛЮКСЕМБУРЖЕЦ/ЛЮКСЕМБУРЖЕНКА"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "LUXEMBOURGER"
+
+* #367 "MABA"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "МАБА"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "MABA"
+
+* #368 "MAGINDANAO"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "МАГИНДАНАО/МАГИНДАНАО"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "MAGUINDANAO"
+
+* #369 "MADUR"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "МАДУРЕЦ/МАДУРКА"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "MADURESE"
+
+* #370 "MAZANDARANLIK"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "МАЗАНДАРАНЕЦ/МАЗАНДАРАНКА"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "MAZANDARANI"
+
+* #371 "MAYYA"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "МАЙЯ/МАЙЯ"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "MAYA"
+
+* #372 "MAKASSAR"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "МАКАССАР/МАКАССАРКА"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "MACASSARIAN"
+
+* #373 "MAKEDONIYALIK"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "МАКЕДОНЕЦ/МАКЕДОНКА"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "MACEDONIAN"
+
+* #374 "MAKUA"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "МАКУА/МАКУА"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "MAKUA"
+
+* #375 "MALAVI"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "МАЛАВИ/МАЛАВИ"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "MALAWI"
+
+* #376 "MALAGALIK"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "МАЛАГАСИЕЦ/МАЛАГАСИЙКА"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "MALAGASY"
+
+* #377 "MALAYLIK"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "МАЛАЕЦ/МАЛАЙКА"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "MALAY"
+
+* #378 "MALANEZIYALIK"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "МАЛАНЕЗИЕЦ/МАЛАНЕЗИЙКА"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "MALANESIANS"
+
+* #379 "MALINKE"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "МАЛИНКЕ/МАЛИНКЕ"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "MALINKE"
+
+* #380 "MALTALIK"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "МАЛЬТИЕЦ/МАЛЬТИЙКА"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "MALTESE"
+
+* #381 "MAME"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "МАМЕ/МАМЕ"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "МАМЕ"
+
+* #382 "MANGBETU-MORU"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "МАНГБЕТУ-МОРУ/МАНГБЕТУ-МОРУ"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "MANGBETU-MORU"
+
+* #383 "MANDARA"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "МАНДАРА/МАНДАРА"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "MANDARIAN"
+
+* #384 "MANDJAK"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "МАНДЖАК/МАНДЖАЧКА"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "MANDJACO"
+
+* #385 "MANO"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "МАНО/МАНО"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "MANO"
+
+* #386 "MANSI"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "МАНСИЕЦ/МАНСИЙКА"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "MANSI"
+
+* #387 "MANJUR"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "МАНЖУР/МАНЖУРКА"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "MANCHURIAN"
+
+* #388 "MARATXI"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "МАРАТХИ/МАРАТХИЙКА"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "MARATHI"
+
+* #389 "MATEBELE"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "МАТЕБЕЛЕ/МЕТЕБЕЛЕ"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "MATEBELE"
+
+* #390 "SHONA"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "ШОНА/ШОНА"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "SHONA"
+
+* #391 "MBUM"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "МБУМ/МБУМ"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "MBUM"
+
+* #392 "MBUNDU"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "МБУНДУ/МБУНДУ"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "MBUNDU"
+
+* #393 "MEKSIKALIK"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "МЕКСИКАНЕЦ/МЕКСИКАНКА"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "MEXICAN"
+
+* #394 "MENDE"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "МЕНДЕ/МЕНДЕ"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "MENDE"
+
+* #395 "MILEKE (BAMILEKE)"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "МИЛЕКЕ (БАМИЛЕКЕ)/МИЛЕКЕ (БАМИЛЕКЕ)"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "MILEKE (BAMILEKE)"
+
+* #396 "MINANGKABAU"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "МИНАНГКАБАУ/МИНАНГКАБАУ"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "MINANGKABAU"
+
+* #397 "MISHTEK"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "МИШТЕК/МИШТЕК"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "MIXTEC"
+
+* #398 "MONGO"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "МОНГО/МОНГО"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "MONGO"
+
+* #399 "MON (TALAIN)"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "МОН (ТАЛАИН)/МОН (ТАЛАИН)"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "MON"
+
+* #400 "MOSI"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "МОСИ/МОСИ"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "MOSSI"
+
+* #401 "MIONG"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "МЫОНГ/МЫОНГ"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "MUONG"
+
+* #402 "MYAO"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "МЯО/МЯО"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "MIAO"
+
+* #403 "NGALA (LINGALA)"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "НГАЛА (ЛИНГАЛА)/НГАЛА (ЛИНГАЛА)"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "NGALA (LINGALA)"
+
+* #404 "NGANASAN"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "НГАНАСАН/НГАНАСАН"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "NGANASAN"
+
+* #405 "NGONI"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "НГОНИ/НГОНИ"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "NGONI"
+
+* #406 "NDA (BANDA)"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "НДА (БАНДА)/НДА (БАНДА)"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "NDA (BANDA)"
+
+* #407 "NEVARLI"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "НЕВАРЕЦ/НЕВАРКА"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "NEWA"
+
+* #408 "NEGIDAL"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "НЕГИДАЛЕЦ/НЕГИДАЛКА"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "NEGIDAL"
+
+* #409 "YANGI KALEDONIYALIK"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "НОВОКАЛЕДОНЕЦ/НОВОКАЛЕДОНКА"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "NEW CALEDONIAN"
+
+* #410 "NORVEGIYALIK"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "НОРВЕЖЕЦ/НОРВЕЖКА"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "NORWEGIAN"
+
+* #411 "NUBIYALIK"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "НУБИЕЦ/НУБИЙКА"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "NUBIAN"
+
+* #412 "NUPE"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "НУПЕ/НУПЕ"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "NUPE"
+
+* #413 "NURISTANLI"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "НУРИСТАНЕЦ/НУРИСТАНКА"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "NURISTANI"
+
+* #414 "NUER"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "НУЭР/НУЭР"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "NUER"
+
+* #415 "NIKA (VANIKA)"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "НЬИКА (ВАНЬИКА)/НЬИКА (ВАНЬИКА)"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "NYIKA (WANYIKA)"
+
+* #416 "NYAKOLE (BANYAKOLE)"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "НЬЯКОЛЕ (БАНЬЯКОЛЕ)/НЬЯКОЛЕ (БАНЬЯКОЛЕ)"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "NYAKOLE (BANYAKOLE)"
+
+* #417 "NYAMVEZI (VANYAMVEZI)"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "НЬЯМВЕЗИ (ВАНЬЯМВЕЗИ)/НЬЯМВЕЗИ (ВАНЬЯМВЕЗИ)"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "NYAMWEZI (WANYAMWEZI)"
+
+* #418 "NYARUANDA (BANYARUANDA)"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "НЬЯРУАНДА (БАНЬЯРУАНДА)/НЬЯРУАНДА (БАНЬЯРУАНДА)"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "NYARUANDA (BANYARUANDA)"
+
+* #419 "NYATURU (VANYATURU)"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "НЬЯТУРУ (ВАНЬЯТУРУ)/НЬЯТУРУ (ВАНЬЯТУРУ)"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "NYATURU (WANYATURU)"
+
+* #420 "OVAMBO"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "ОВАМБО/ОВАМБО"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "OVAMBO"
+
+* #421 "OVIMBUNDU"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "ОВИМБУНДУ/ОВИМБУНДУ"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "OVIMBUNDU"
+
+* #422 "OYRAT"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "ОЙРАТ/ОЙРАТ"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "OIRAT"
+
+* #423 "SHIMOLIY IRLANDIYALIK"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "СЕВЕРНЫЙ ИРЛАНДЕЦ/СЕВЕРНАЯ ИРЛАНДКА"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "NORTHERN IRISH"
+
+* #424 "ORIYA"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "ОРИЯ/ОРИЯ"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "ORIYA"
+
+* #425 "OROK"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "ОРОК/ОРОК"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "OROK"
+
+* #426 "OROMO"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "ОРОМО/ОРОМО"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "OROMO"
+
+* #427 "OROCHI"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "ОРОЧИ/ОРОЧИ"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "OROCH"
+
+* #428 "OTOMI"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "ОТОМИ/ОТОМИ"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "OTOMI"
+
+* #429 "PAMPANGAN"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "ПАМПАНГАН/ПАМПАНГАН"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "KAPAMPANGANS"
+
+* #430 "PANAMALIK"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "ПАНАМЕЦ/ПАНАМКА"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "PANAMANIAN"
+
+* #431 "PANGASINAN"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "ПАНГАСИНАН/ПАНГАСИНАНКА"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "PANGASINAN"
+
+* #432 "PANJOBLIK"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "ПАНЖАБЕЦ/ПАНЖАБКА"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "PUNJABI"
+
+* #433 "PAPUAS"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "ПАПУАС/ПАПУАСКА"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "PAPUAN"
+
+* #434 "PASHAI"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "ПАШАИ/ПАШАИ"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "PASHAI"
+
+* #435 "PEDI"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "ПЕДИ/ПЕДИ"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "PEDI (NOTHERN SOTHO)"
+
+* #436 "PEPEL"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "ПЕПЕЛЬ/ПЕПЕЛЬ"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "PEPEL"
+
+* #437 "PERUANLIK"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "ПЕРУАНЕЦ/ПЕРУАНКА"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "PERUVIAN"
+
+* #438 "PORTUGALIYALIK"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "ПОРТУГАЛ/ПОРТУГАЛКА"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "PORTUGUESE"
+
+* #439 "IROQLIK"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "ИРАКЕЦ"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "IRAQI"
+
+* #440 "PUERTORIKANLIK"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "ПУЭРТОРИКАНЕЦ/ПУЭРТОРИКАНКА"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "PUERTO-RICAN"
+
+* #441 "RADJASTANLIK"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "РАДЖАСТАНЕЦ/РАДЖАСТАНКА"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "RAJASTHANIAN"
+
+* #442 "RIF"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "РИФ/РИФ"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "RIFFIAN"
+
+* #443 "ROMANSH"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "РОМАНШ/РОМАНШ"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "ROMANSH"
+
+* #444 "RUNDI"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "РУНДИ/РУНДИ"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "RUNDI"
+
+* #445 "SAAMI"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "СААМИ/СААМИ"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "SAMI"
+
+* #446 "SALVADORLI"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "САЛЬВАДОРЕЦ/САЛЬВАДОРКА"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "SALVADORAN"
+
+* #447 "SANTAL"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "САНТАЛ/САНТАЛ"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "SANTAL"
+
+* #448 "SAPOTEK"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "САПОТЕК/САПОТЕК"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "ZAPOTEC"
+
+* #449 "SARA (BAGIRMI)"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "САРА (БАГИРМИ)/САРА (БАГИРМИ)"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "SARA (BAGIRMI)"
+
+* #450 "SVAZI"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "СВАЗИ/СВАЗИ"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "SWASI"
+
+* #451 "SELKUP"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "СЕЛЬКУП/СЕЛЬКУПКА"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "SELKUP"
+
+* #452 "SENUFO"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "СЕНУФО/СЕНУФО"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "SENUFO"
+
+* #453 "SERER"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "СЕРЕР/СЕРЕР"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "SERER"
+
+* #454 "SIAM"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "СТАМ/СИАМКА"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "SIAM"
+
+* #455 "SIDAMO"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "СИДАМО/СИДАМО"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "SIDAMA"
+
+* #456 "SIKON"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "СИКОН/СИКОН"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "SIKON"
+
+* #457 "SINGALLIK"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "СИНГАЛЕЦ/СИНГАЛКА"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "SINHALESE"
+
+* #458 "SINDXI"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "СИНДХИ/СИНДХИ"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "SINDHI"
+
+* #459 "SLOVEN"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "СЛОВЕН/СЛОВЕНКА"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "SLOVENE"
+
+* #460 "SOMALI"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "СОМАЛИЕЦ/СОМАЛИЙКА"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "SOMALI"
+
+* #461 "SOMBA"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "СОМБА/СОМБА"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "SOMBA"
+
+* #462 "SONGAI"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "СОНГАИ/СОНГАИ"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "SONGHAI"
+
+* #463 "SONINKE"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "СОНИНКЕ/СОНИНКЕ"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "SONINKE"
+
+* #464 "SUAXILI"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "СУАХИЛИ/СУАХИЛИ"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "SWAHILI"
+
+* #465 "SO‘I"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "СУИ/СУИ"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "SOOEY"
+
+* #466 "SULU-SAMAL"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "СУЛУСАМАЛЬ/СУЛУСАМАЛЬ"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "SULU-SAMAL"
+
+* #467 "SUNDA"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "СУНДА/СУНДАНЦЫ"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "SUNDANESE"
+
+* #468 "SUSU"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "СУСУ/СУСУ"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "SUSU"
+
+* #469 "SUTO"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "СУТО/СУТО"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "SOTHO"
+
+* #470 "TAGAL"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "ТАГАЛ/ТАГАЛКА"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "TAGALOG"
+
+* #471 "TAY"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "ТАЙ/ТАЙ"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "THAI"
+
+* #472 "TAMAZIGT"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "ТАМАЗИГТ/ТАМАЗИГТ"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "TAMAZIGHT"
+
+* #473 "TAMANGI"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "ТАМАНГИ/ТХАМАНГИ"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "TAMANGS"
+
+* #474 "TAMIL"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "ТАМИЛ/ТАМИЛКА"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "TAMIL"
+
+* #475 "TEKE (BATEKE)"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "TEKE (БATEKE)/TEKE (БATEKE)"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "TEKE (BATEKE)"
+
+* #476 "TELUGU"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "ТЕЛУГУ/ТЕЛУГУ"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "TELUGU"
+
+* #477 "TEM"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "ТЕМ/ТЕМ"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "ТЕМ"
+
+* #478 "TEMNE"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "ТЕМНЕ/ТЕМНЕ"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "TEMNE"
+
+* #479 "TETUM"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "ТЕТУМ/ТЕТУМ"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "TETUM"
+
+* #480 "TIBETLIK"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "ТИБЕТЕЦ/ТИБЕТКА"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "TIBETAN"
+
+* #481 "TIV"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "ТИ/ТИВ"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "TIV"
+
+* #482 "TIGRAI"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "ТИГРАИ/ТИГРАИ"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "TIGRAY-TIGRINYA"
+
+* #483 "TIGRE"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "ТИГРЕ/ТИГРЕ"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "TIGRE"
+
+* #484 "TIKAR"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "ТИКАР/ТИКАР"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "TIKAR"
+
+* #485 "TONGA"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "ТОНГАНЕЦ/ТОНГА"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "TONGAN"
+
+* #486 "TORADJI"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "ТОРАДЖИ/ТОРАДЖИ"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "TORAJA"
+
+* #487 "TOFALAR (TOFA)"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "ТОФАЛАР (ТОФА)/ТОФАЛАР (ТОФА)"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "TOFALARS (TOFA)"
+
+* #488 "TRINIDADLIK"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "ТРИНИДАДЕЦ/ТРИНИДАДКА"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "TRINIDADIAN"
+
+* #489 "TSVANLIK"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "ТСВАН/ТСВАНА"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "TSWANA"
+
+* #490 "TSONGA"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "ТСОНГА/ТСОНГА"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "TSONGA"
+
+* #491 "TUAREG"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "ТУАРЕГ"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "TUAREG"
+
+* #492 "TUBU"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "ТУБУ/ТУБУ"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "TUBU"
+
+* #493 "TUKULYOR"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "ТУКУЛЁР/ТУКУЛЁР"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "TOUCOULEURS"
+
+* #494 "TURKANA"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "ТУРКАНА/ТУРКАНА"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "TURKANA"
+
+* #495 "TXAY"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "ТХАЙ/ТХАЙ"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "THAY"
+
+* #496 "TXARU"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "ТХАРУ/ТХАРУ"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "THARU"
+
+* #497 "ADIGEYLI"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "АДЫГЕЙ/АДЫГЕЙКА"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "ADYGEI"
+
+* #498 "ULE-ANYA (BAULE)"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "УЛЕ-АНЬЯ (БАУЛЕ)/УЛЕ-АНЬЯ (БАУЛЕ)"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "BAULE"
+
+* #499 "O‘LCHI"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "УЛЬЧИ"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "ULCH"
+
+* #500 "URUGVAYLIK"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "УРУГВАЕЦ/УРУГВАЙКА"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "URUGUAYAN"
+
+* #501 "UELSLIK"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "УЭЛЬСЕЦ/УЭЛЬСКА"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "WELSH"
+
+* #502 "FANG"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "ФАНГ/ФАНГ"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "FANG"
+
+* #503 "FIDJI"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "ФИДЖИЕЦ/"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "FIJIAN"
+
+* #504 "FLAMAND"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "ФЛАМАНДЕЦ/ФЛАМАНДКА"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "FLEMING"
+
+* #505 "FRANSUZ-KANADALIK"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "ФРАНКО-КАНАДЕЦ/ФРАНКО-КАНАДКА"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "FRENCH-CANADIAN"
+
+* #506 "FRANSUZ-YANGIKALEDONIYALIK"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "ФРАНКО-НОВОКАЛЕДОНЕЦ/ФРАНКО-НОВОКАЛЕДОНКА"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "FRENCH-NEW CALEDONIAN"
+
+* #507 "FRANSUZ-SHVEYSARIYALIK"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "ФРАНКО-ШВЕЙЦАРЕЦ/ФРАНКО-ШВЕЙЦАРКА"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "FRENCH-SWISS"
+
+* #508 "FRIZ"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "ФРИЗ/ФРИЗКА"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "FRISIAN"
+
+* #509 "FRIUL"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "ФРИУЛИЕЦ/ФРИУЛИЙКА"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "FURLAN"
+
+* #510 "FULA"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "ФУЛА/ФУЛА"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "THULE"
+
+* #511 "FILIPPIN"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "ФИЛИППИНЕЦ/ФИЛИППИНКА"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "PHILIPPIN"
+
+* #512 "JANUBIY AFRIKALIK"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "ЮЖНОАФРИКАНЕЦ/ЮЖНОАФРИКАНКА"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "SOUTH AFRICAN"
+
+* #513 "MISIRLIK"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "ЕГИПТЯНИН"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "EGYPTIAN"
