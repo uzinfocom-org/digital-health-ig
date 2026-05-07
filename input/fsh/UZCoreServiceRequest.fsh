@@ -14,7 +14,7 @@ Description: "UZCoreServiceRequest defines how laboratory orders are represented
 * status ^short = "The status of a service order"
 * intent MS
 * intent from ServiceRequestIntentVS
-* intent ^short = "Indicates the level of obligation and intent of the service request, specifying whether the request represents an official order to be performed. "
+* intent ^short = "Indicates the level of obligation and intent of the service request, specifying whether the request represents an official order to be performed."
 * doNotPerform MS
 * doNotPerform ^short = "Indicates that the service described by the ServiceRequest should not be performed."
 * code MS
@@ -63,7 +63,7 @@ Description: "Example laboratory ServiceRequest instance for UZCore."
 * status = #active
 * intent = #order
 * doNotPerform = false
-* code = service-request-labresearch-code-cs#lab-A "CBC panel"
+* code = service-request-lab-research-code-cs#lab-pan-A "Urine macroscopic analysis"
 * subject = Reference(Patient/example-salim)
 * encounter = Reference(Encounter/example-encounter)
 * occurrenceDateTime = "2026-01-16T09:30:00+05:00"
