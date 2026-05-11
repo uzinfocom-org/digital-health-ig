@@ -53,7 +53,7 @@ Description: "An example instance of a UZ Core Procedure profile for a therapeut
 * identifier[0].system = "https://mis.dmed.uz"
 * identifier[0].value = "proc-0001"
 * basedOn[0] = Reference(example-careplan) "CarePlan #1"
-* status = procedure-event-status-cs#completed "Completed"
+* status = $event-status#completed "Completed"
 * category[0].text = "Physical therapy procedure"
 * code[0].coding = $sct#386438000 "Simple massage"
 * code[0].text = "Therapeutic massage of right foot"
