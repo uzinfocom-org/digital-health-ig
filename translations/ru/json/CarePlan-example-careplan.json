@@ -1,9 +1,0 @@
-{
-  "id" : "CarePlan-example-careplan",
-  "baseLang" : "en",
-  "languages" : [
-    {
-      "targetLang" : "ru"
-    }
-  ]
-}
