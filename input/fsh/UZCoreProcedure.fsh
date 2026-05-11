@@ -50,7 +50,7 @@ Usage: #example
 Title: "Example of a Therapeutic Leg Massage Procedure"
 Description: "An example instance of a UZ Core Procedure profile for a therapeutic massage of the left leg."
 
-* identifier[0].system = "https://mis.dmed.uz"
+* identifier[0].system = $mis-dmed-uz
 * identifier[0].value = "proc-0001"
 * basedOn[0] = Reference(example-careplan) "CarePlan #1"
 * status = $event-status#completed "Completed"
