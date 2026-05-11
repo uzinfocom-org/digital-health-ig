@@ -31,7 +31,7 @@ Description: "Uzbekistan Core Procedure Profile, used for documenting an action 
 * status from ProcedureEventStatusVS (required)
 * code from ProcedureCodeVS (required)
 * bodySite from $bodysite (required)
-* outcome from ProcedureOutcomeVS (preferred)
+* outcome from ProcedureOutcomeVS (extensible)
 
 * basedOn only Reference(CarePlan or ServiceRequest)
 * partOf only Reference(UZCoreProcedure or UZCoreObservation or MedicationAdministration)
