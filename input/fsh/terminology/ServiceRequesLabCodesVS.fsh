@@ -7,3 +7,4 @@ Description: "Defines the set of laboratory test and panel codes that may be use
 
 * include codes from system $loinc
 * include codes from system lab-pan-cs
+* include codes from system $sct where concept is-a #71388002

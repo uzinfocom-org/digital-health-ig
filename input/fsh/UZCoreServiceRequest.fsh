@@ -18,7 +18,7 @@ Description: "UZCoreServiceRequest defines how laboratory orders are represented
 * doNotPerform MS
 * doNotPerform ^short = "Indicates that the service described by the ServiceRequest should not be performed."
 * code MS
-* code from ServiceRequesLabCodesVS //Procedure codes and the  UZCoreProcedure profile are not prepared yet
+* code from ServiceRequesLabCodesVS
 * code ^short = "Specifies the laboratory test, panel, or service being requested. The codes used represent orderable laboratory services and must not be used for analytical result observations."
 * subject MS
 * subject only Reference(UZCorePatient or UZCoreLocation)
@@ -54,16 +54,10 @@ Instance: UZCoreServiceRequestLab-Example01
 InstanceOf: UZCoreServiceRequest
 Title: "UZCore ServiceRequest (Lab) Example"
 Description: "Example laboratory ServiceRequest instance for UZCore."
-/* We don't have integrated systems yet
-* identifier.system = "https://dhp.uz/fhir/identifier/servicerequest"
-* identifier.value = "SR-2026-000001"
-
-* requisition.system = "https://dhp.uz/fhir/identifier/requisition"
-* requisition.value = "REQ-2026-000045" */
 * status = #active
 * intent = #order
 * doNotPerform = false
-* code = service-request-lab-research-code-cs#lab-pan-A "Urine macroscopic analysis"
+* code = lab-pan-cs#lab-pan-E "CBC panel"
 * subject = Reference(Patient/example-salim)
 * encounter = Reference(Encounter/example-encounter)
 * occurrenceDateTime = "2026-01-16T09:30:00+05:00"
