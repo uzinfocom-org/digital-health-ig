@@ -1,5 +1,6 @@
 
 // Alias: $encounter-class = https://terminology.dhp.uz/fhir/core/ValueSet/encounter-class
+Alias: $event-status = http://hl7.org/fhir/event-status
 Alias: $address-type = http://hl7.org/fhir/address-type
 Alias: $address-use = http://hl7.org/fhir/address-use
 Alias: $audit-event-action = http://hl7.org/fhir/audit-event-action
@@ -45,6 +46,7 @@ Alias: $location-unit = https://dhp.uz/fhir/core/NamingSystem/location-unit
 Alias: $loinc = http://loinc.org
 Alias: $mfa = https://gov.uz/ru/mfa
 Alias: $militaryID = https://dhp.uz/fhir/core/sid/pid/uz/mi
+Alias: $mis-dmed-uz = https://mis.dmed.uz
 Alias: $mudofaa = https://gov.uz/ru/mudofaa
 Alias: $name-use = http://hl7.org/fhir/name-use
 Alias: $nationaluniqueID = https://dhp.uz/fhir/core/sid/pid/uz/ni
