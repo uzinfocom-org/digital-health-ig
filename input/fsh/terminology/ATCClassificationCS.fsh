@@ -3,7 +3,7 @@ Id: atc-classification-cs
 Title: "ATC classification system"
 Description: "Anatomical Therapeutic Chemical (ATC) classification system for medicinal products."
 * insert SupplementCodeSystemDraft(atc-classification-cs, $medical-product-classification, 5.0.0)
-
+* ^hierarchyMeaning = #is-a
 * #A "Ovqat hazm qilish tizimi va moddalar almashinuvi"
   * ^designation[0].language = #uz
   * ^designation[=].value = "Ovqat hazm qilish tizimi va moddalar almashinuvi"

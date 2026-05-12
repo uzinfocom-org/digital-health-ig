@@ -330,7 +330,7 @@ Description: "Naming system for the box-level aggregation identifier used to gro
 packs into a shipping/carton unit within Uzbekistan's national track-and-trace program "
 Usage: #definition
 * url = "https://terminology.dhp.uz/fhir/core/NamingSystem/uz-pharm-box-id"
-* name = "Uzbekistan pharm box group id"
+* name = "UzbekistanPharmBoxGroupID"
 * status = #active
 * kind = #identifier
 * date = "2025-10-06"
@@ -350,7 +350,7 @@ InstanceOf: NamingSystem
 Description: "NamingSystem for globally standardized trade identifiers (GTIN) used for medicinal products."
 Usage: #definition
 * url = "https://terminology.dhp.uz/fhir/core/NamingSystem/global-trade-item-id"
-* name = "Global trade item id"
+* name = "GlobalTradeItemID"
 * status = #active
 * kind = #identifier
 * date = "2025-10-09"
@@ -370,7 +370,7 @@ InstanceOf: NamingSystem
 Description: "NamingSystem for Uzbekistan's national marking identifiers (Asl Belgisi)."
 Usage: #definition
 * url = "https://terminology.dhp.uz/fhir/core/NamingSystem/uz-marking-id"
-* name = "Asl belgisi marking id"
+* name = "AslBelgisiMarkingID"
 * status = #active
 * kind = #identifier
 * date = "2025-10-09"
@@ -390,7 +390,7 @@ InstanceOf: NamingSystem
 Description: "NamingSystem for official registration certificate identifiers for medicines."
 Usage: #definition
 * url = "https://terminology.dhp.uz/fhir/core/NamingSystem/registration-certificate-id"
-* name = "Registration certificate id"
+* name = "RegistrationCertificateID"
 * status = #active
 * kind = #identifier
 * date = "2025-10-09"
@@ -410,7 +410,7 @@ InstanceOf: NamingSystem
 Description: "NamingSystem for national product and service classification codes."
 Usage: #definition
 * url = "https://terminology.dhp.uz/fhir/core/NamingSystem/product-service-id"
-* name = "Product service id"
+* name = "ProductServiceID"
 * status = #active
 * kind = #identifier
 * date = "2025-10-09"

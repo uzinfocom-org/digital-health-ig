@@ -19,7 +19,6 @@ Description: "Uzbekistan Core Medication profile, used for representing medicati
     globalTradeItemID 0..1 MS and 
     markingID 0..1 MS and 
     productServiceID 0..1 MS and
-    uzpharmInfo 0..1 MS and
     registrationCertificateID 0..1 MS
 
 * identifier[uzpharmBoxGroupID]
@@ -61,7 +60,7 @@ Description: "Uzbekistan Core Medication profile, used for representing medicati
   * type = $medicine-identifier-types#icps "Product and service identification codes"
   * use = #official
   * value 1..1 MS
-
+/*
 * identifier[uzpharmInfo]
   * system 1..1 MS
   * system = $uzpharm-agency
@@ -69,6 +68,7 @@ Description: "Uzbekistan Core Medication profile, used for representing medicati
   * type = $medicine-identifier-types#pharm_id "Pharmaceutical agency drug ID"
   * use = #official
   * value 1..1 MS
+  */
 * code MS
 * code from MedicationClassificationVS 
 * status MS
@@ -97,7 +97,7 @@ Description: "Uzbekistan Core Medication profile, used for representing medicati
 * batch.lotNumber ^short = "Identifier assigned to the batch (AIK)"
 * batch.expirationDate ^short = "The date when the batch expires"
 
-
+/*
 Instance: example-medication
 InstanceOf: UZCoreMedication
 Title: "Example UZ Core Medication - Paracetamol"
@@ -125,7 +125,7 @@ Usage: #example
 * batch
   * lotNumber = "LOT20241201"
   * expirationDate = "2027-12-01"
-
+*/
 Instance: example-neomycin-atc-medication
 InstanceOf: UZCoreMedication
 Title: "Example UZ Core Medication - Neomycin"
