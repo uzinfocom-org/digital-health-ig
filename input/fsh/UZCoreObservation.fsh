@@ -279,8 +279,6 @@ Description: "Example of CBC (Umumiy qon tahlili) as a laboratory panel with ana
 * component[=].valueString = "not detected"
 * component[+].code = lab-pan-cs#lab-pan-102 "Cabot rings [Presence] in Blood by Light microscopy"
 * component[=].valueString = "not detected"
-* component[+].code = lab-pan-cs#lab-pan-103 "Nucleated erythrocytes/Leukocytes [Ratio] in Blood by Manual count"
-* component[=].valueQuantity = 0 '/100{WBCs}' "per 100 leukocytes"
 * component[+].code = lab-pan-cs#lab-pan-104 "Megaloblasts/cells in Bone marrow"
 * component[=].valueString = "not detected"
 * component[+].code = lab-pan-cs#lab-pan-105 "Neutrophils.hypersegmented [Presence] in Blood by Light microscopy"
