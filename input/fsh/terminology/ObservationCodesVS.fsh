@@ -5,7 +5,7 @@ Description: "Codes for observations, allowing use of LOINC, local laboratory co
 * ^url = "https://terminology.dhp.uz/fhir/core/ValueSet/observation-codes-vs"
 * ^experimental = true
 
-* include codes from system ObservationLabResearchCodesCS
+* include codes from system lab-pan-cs
 * include codes from system $loinc
 
 * include codes from system $sct where concept is-a #363787002 "Observable entity (observable entity)"

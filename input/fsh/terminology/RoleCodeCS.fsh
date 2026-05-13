@@ -14,3 +14,9 @@ Description: "Role code supplement with translations in Uzbek and Russian"
   * ^designation[=].value = "устный переводчик"
   * ^designation[+].language = #uz
   * ^designation[=].value = "tarjimon"
+
+* #MTH
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Мать"
+  * ^designation[+].language = #uz
+  * ^designation[=].value = "Ona"

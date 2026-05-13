@@ -16,9 +16,9 @@ Description: "Observation category supplement with translations in Uzbek and Rus
   * ^designation[=].value = "Hayotiy muhim ko'rsatkichlar"
 * #imaging
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Визуализация"
+  * ^designation[=].value = "Медицинские снимки"
   * ^designation[+].language = #uz
-  * ^designation[=].value = "Tasvirlash"
+  * ^designation[=].value = "Tibbiy tasvirlar"
 * #laboratory
   * ^designation[0].language = #ru
   * ^designation[=].value = "Лаборатория"
