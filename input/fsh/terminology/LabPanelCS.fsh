@@ -2,10 +2,7 @@ CodeSystem: LabPanelCS
 Id: lab-pan-cs
 Title: "Laboratory Observation Panels and Analytes"
 Description: "Code system defining laboratory observation panels and individual analytes used in Ministry of Health Uzbekistan (399)."
-* ^hierarchyMeaning = #is-a
-* ^experimental = true
-* ^caseSensitive = true
-* ^language = #uz
+* insert OriginalCodeSystemDraft(lab-pan-cs)
 
 * #lab-pan-A "Siydikning makrosopik tekshiruvi"
   * ^designation[0].language = #ru

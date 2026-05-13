@@ -416,8 +416,6 @@ Usage: #definition
 * uniqueId[=].value = $pension-number
 * uniqueId[=].preferred = true
 
-
-
 Instance: immunization-recommendation-id
 InstanceOf: NamingSystem
 Description: "The immunization recommendation identifier is used to uniquely identify a vaccination recommendation record for a patient."
@@ -436,4 +434,23 @@ Usage: #definition
 * usage = "Used to record and exchange immunization recommendation identifiers across healthcare systems, supporting vaccination planning, monitoring, and clinical workflows. This identifier is specific to recommendation records and does not replace patient or immunization identifiers."
 * uniqueId[0].type = #uri
 * uniqueId[=].value = "https://dhp.uz/fhir/core/NamingSystem/immunization-recommendation-id"
+* uniqueId[=].preferred = true
+
+Instance: uzb-mis-dmed
+InstanceOf: NamingSystem
+Description: "Clinical record identifiers issued by the Uzbekistan Medical Information System (MIS)"
+Usage: #definition
+* url = "https://terminology.dhp.uz/fhir/core/NamingSystem/uzb-mis-dmed"
+* name = "UzbekistanMedicalInformationSystem"
+* status = #active
+* kind = #identifier
+* date = "2026-05-11"
+* publisher = "Uzinfocom"
+* responsible = "Ministry of Health of the Republic of Uzbekistan"
+* type = $identifier-type#FILL "Filler Identifier"
+* description = "Naming system for clinical record identifiers (e.g., procedure, encounter, observation IDs) issued by the Uzbekistan Medical Information System (MIS) at https://mis.dmed.uz."
+* jurisdiction = urn:iso:std:iso:3166#UZ "Uzbekistan"
+* usage = "Used for identifying clinical records assigned by the Uzbekistan Medical Information System."
+* uniqueId[0].type = #uri
+* uniqueId[=].value = $mis-dmed-uz
 * uniqueId[=].preferred = true
