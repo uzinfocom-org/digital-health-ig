@@ -104,7 +104,7 @@ menu:
     Vital signs: vital-signs.html
   API access: api-access.html
   Artifacts: artifacts.html
-  Services: services.html
+  Components: components.html
   Changelog: changelog.html
 
 # ╭───────────────────────────Less Common Implementation Guide Properties──────────────────────────╮
