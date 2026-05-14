@@ -3,14 +3,14 @@ Observation								DomainResource	(Обследование) Измерения 
 identifier			Σ S	D	0..*			identifier	Идентификатор		http://hl7.org/fhir/ValueSet/observation-triggeredbytype	CodeSystemTriggeredByType	все коды	Тип триггера
 instantiates[x]			Σ S	TU	0..1				"	Создает экземпляр FHIR ObservationDefinition"		http://hl7.org/fhir/ValueSet/observation-status	CodeSystemStatus	все коды	Статус обследования
 	instantiatesCanonical		Σ S					"	canonical(ObservationDefinition)"			https://terminology.medcore.uz/ValueSet/observation-category	CodeSystemCategory	все коды	Классификация типа наблюдения
-	instantiatesReference		Σ S					"	Reference(ObservationDefinition)	"			https://terminology.medcore.uz/ValueSet/dataAbsentReason	CodeSystemdataAbsentReason	все коды	Причина, по которой значение отсутствует
+	instantiatesReference		Σ S					"	Reference(ObservationDefinition)	"			https://terminology.medcore.uz/ValueSet/dataAbsentReason	CodeSystemdataAbsentReason		Причина, по которой значение отсутствует
 basedOn			Σ S	D	0..1			Reference(CarePlan | DeviceRequest | ImmunizationRecommendation | MedicationRequest | NutritionOrder | ServiceRequest)	"	
-План, предложение или заказ, который выполняется полностью или частично данным событием."		http://hl7.org/fhir/ValueSet/observation-interpretation	CodeSystemInterpretation	все коды	Категориальная оценка значения наблюдения
+План, предложение или заказ, который выполняется полностью или частично данным событием."		https://terminology.medcore.uz/ValueSet/Interpretation	CodeSystemInterpretation	N, L, H, A, AA, HH, LL, IND, NEG, POS	Категориальная оценка значения наблюдения
 triggeredBy			Σ S	TU	0..*			BackboneElement	Определяет обследование(я), которое(ые) послужило причиной выполнения этого наблюдения.		http://hl7.org/fhir/ValueSet/body-site	CodeSystemBodySite	все коды	Анатомическое место, где проявляется данное состояние
 	observation		Σ S	D	1..1			Reference(Observation)	Инициирующее обследование		http://hl7.org/fhir/ValueSet/observation-methods	CodeSystemMethod	все коды	Как это было сделано
 	type		Σ S	D	1..1	reflex	HL7.v5	code	"Тип триггера (Required)
 Binding: http://hl7.org/fhir/ValueSet/observation-triggeredbytype"		http://hl7.org/fhir/ValueSet/observation-referencerange-normalvalue	CodeSystemNormalValue	Negative, Absent	Значение нормы референтного диапазона
-	reason		Σ S	D	0..1	"""кашель"""		string	Причина, по которой было инициировано наблюдение		http://hl7.org/fhir/ValueSet/referencerange-meaning	CodeSystemReferenceRangeType	все коды	Квалификатор референтного диапазона
+	reason		Σ S	D	0..1	"""кашель"""		string	Причина, по которой было инициировано наблюдение		http://hl7.org/fhir/ValueSet/observation-referencerange-normalvalue	CodeSystemReferenceRangeType	все коды	
 part of			Σ S	D	0..*			Reference(MedicationAdministration | MedicationDispense | MedicationStatement | Procedure | Immunization | ImagingStudy | GenomicStudy | EpisodeOfCare)	Часть указанного события					
 status			?! S Σ	D	1..1	registered	HL7.v5	code	"Статус обследования (Required)
 Binding: http://hl7.org/fhir/ValueSet/observation-status"					
@@ -29,7 +29,7 @@ effective[x]			Σ S	D	0..1				Время или период времени, к�
 	effectiveInstant		Σ S					instant						
 issued			Σ S	D	0..1	03-16-25		instant	Дата и время, когда наблюдение было официально зарегистрировано, утверждено или подписано.					
 performer			Σ S	D	0..*			"	Reference(Practitioner | PractitionerRole | Organization | CareTeam | Patient | RelatedPerson | HealthcareService)"	Ответственный за обследование					
-value[x]			Σ S	C	0..1				Фактический результат					
+value[x] (подходит ли для всех случаев Observation?)			Σ S	C	0..1				Фактический результат					
 	valueQuantity		Σ S					quantity						
 	valueCodeableConcept		Σ S					codeableConcept						
 	valueString		Σ S					string						
@@ -50,7 +50,7 @@ Binding: http://hl7.org/fhir/ValueSet/observation-interpretation"
 note			Σ S	D	0..*			Annotation	Комментарии к обследованию					
 bodySite			Σ S	С	0..*	9089003 	SNOMED CT	CodeableConcept	"Анатомическое место, где проявляется данное состояние
 Binding: http://hl7.org/fhir/ValueSet/body-site"					
-method			Σ S		0..1	272389005 	SNOMED CT	CodeableConcept	"Как это было сделано
+method (нужен ли этот элемент?)			Σ S		0..1	272389005 	SNOMED CT	CodeableConcept	"Как это было сделано
 Binding: http://hl7.org/fhir/ValueSet/observation-methods"					
 specimen			Σ S	С	0..1			Reference(Specimen)	Образец, использованный для этого обследования					
 device			Σ S		0..1			Reference(Device | DeviceMetric)	Ссылка на устройство, которое генерирует измерения или настройки устройства для устройства					
@@ -85,4 +85,4 @@ Binding: http://hl7.org/fhir/ValueSet/observation-codes"
 	dataAbsentReason		Σ S	С	0..1			CodeableConcept	"Причина, по которой значение отсутствует
 Binding: https://terminology.medcore.uz/ValueSet/dataAbsentReason"					
 	interpretation		Σ S	D	0..*			CodeableConcept	"Категориальная оценка значения обследования
-Binding:  http://hl7.org/fhir/ValueSet/observation-interpretation"					
+Binding:  https://terminology.medcore.uz/ValueSet/Interpretation"					
