@@ -21,7 +21,7 @@ Description: "Uzbekistan Core Immunization profile, used to represent immunizati
 * status ^short = "Статус вакцинации"
 
 * statusReason 0..1 MS
-* statusReason from ImmunizationStatusReasonVS (example)
+* statusReason from ImmunizationStatusReasonVS (required)
 * statusReason ^short = "Причина статуса"
 
 * vaccineCode 1..1 MS
