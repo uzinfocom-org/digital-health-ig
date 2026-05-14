@@ -68,7 +68,7 @@ Description: "Uzbekistan Core Immunization profile, used to represent immunizati
 
 * informationSource 0..1 MS
 * informationSource only CodeableReference(UZCorePatient or UZCorePractitioner or UZCorePractitionerRole or RelatedPerson or UZCoreOrganization)
-* informationSource from ImmunizationOriginVS (example)
+* informationSource from ImmunizationOriginVS (extensible)
 * informationSource ^short = "Источник данных"
 
 * location 0..1 MS
