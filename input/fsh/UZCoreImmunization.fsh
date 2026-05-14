@@ -147,7 +147,7 @@ Description: "Uzbekistan Core Immunization profile, used to represent immunizati
 * protocolApplied.authority ^short = "Организация"
 
 * protocolApplied.targetDisease 0..* MS
-* protocolApplied.targetDisease from TargetDiseaseVS (example)
+* protocolApplied.targetDisease from TargetDiseaseVS (extensible)
 * protocolApplied.targetDisease ^short = "Целевое заболевание"
 
 * protocolApplied.doseNumber 1..1 MS
