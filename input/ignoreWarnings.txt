@@ -1080,3 +1080,7 @@ No definition could be found for URL value 'Encounter/example-encounter/_history
 No definition could be found for URL value 'Observation/blood-pressure-example/_history/1'
 No definition could be found for URL value 'Observation/body-weight-example/_history/1'
 No definition could be found for URL value 'Observation/body-temperature-example/_history/1'
+
+# structuredefinition-implements is referenced by FHIR R5 core spec but not published in the R5 package - known upstream HL7 issue
+The extension http://hl7.org/fhir/StructureDefinition/structuredefinition-implements could not be found so is not allowed here
+No definition could be found for URL value 'http://hl7.org/fhir/StructureDefinition/structuredefinition-implements'
