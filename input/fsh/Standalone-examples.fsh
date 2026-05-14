@@ -132,7 +132,7 @@ Description: "Example of a medication"
 // ============== Questionnaire Instance ==============
 
 Instance: PatientSatisfactionQuestionnaire
-InstanceOf: Questionnaire
+InstanceOf: UZCoreQuestionnaire
 Usage: #definition
 Title: "Опросник удовлетворённости пациента"
 Description: "Опросник для оценки удовлетворённости пациента качеством обслуживания (для Patient Portal)"
@@ -432,7 +432,7 @@ Description: "Опросник для оценки удовлетворённо�
 // ============== Example Instance ==============
 
 Instance: example-patient-satisfaction-response
-InstanceOf: QuestionnaireResponse
+InstanceOf: UZCoreQuestionnaireResponse
 Usage: #example
 Title: "Пример ответа на опросник удовлетворённости"
 Description: "Пример заполненного опросника удовлетворённости пациента"
