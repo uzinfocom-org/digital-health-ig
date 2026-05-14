@@ -46,14 +46,14 @@ Description: "Maps local UZ vaccine codes to SNOMED CT and CVX."
 
 * group[=].element[+].code = #immun-6
 * group[=].element[=].display = "botulinum antitoksini"
-* group[=].element[=].target[+].code = #385336006
-* group[=].element[=].target[=].display = "Botulinum antitoxin (substance)"
+* group[=].element[=].target[+].code = #774893001
+* group[=].element[=].target[=].display = "Botulinum antitoxin only product"
 * group[=].element[=].target[=].relationship = #equivalent
 
 * group[=].element[+].code = #immun-7
 * group[=].element[=].display = "vaboga qarshi emlash, aniqlanmagan"
 * group[=].element[=].target[+].code = #991000221105
-* group[=].element[=].target[=].display = "Vaccine product containing only Vibrio cholerae antigen (medicinal product) |"
+* group[=].element[=].target[=].display = "Vaccine product containing only Vibrio cholerae antigen (medicinal product)"
 * group[=].element[=].target[=].relationship = #equivalent
 
 * group[=].element[+].code = #immun-8
@@ -65,7 +65,7 @@ Description: "Maps local UZ vaccine codes to SNOMED CT and CVX."
 * group[=].element[+].code = #immun-9
 * group[=].element[=].display = "dangga qarshi emlash, to'rt valentli"
 * group[=].element[=].target[+].code = #871720004
-* group[=].element[=].target[=].display = "Vaccine product containing only Dengue virus antigen (medicinal product) |"
+* group[=].element[=].target[=].display = "Vaccine product containing only Dengue virus antigen (medicinal product)"
 * group[=].element[=].target[=].relationship = #source-is-narrower-than-target
 
 * group[=].element[+].code = #immun-10
@@ -76,9 +76,9 @@ Description: "Maps local UZ vaccine codes to SNOMED CT and CVX."
 
 * group[=].element[+].code = #immun-11
 * group[=].element[=].display = "bolalarda foydalanish uchun adsorbsiyalangan difteriya va tetanoz toksoidlari"
-* group[=].element[=].target[+].code = #2031000221103
-* group[=].element[=].target[=].display = "Clostridium tetani and Corynebacterium diphtheriae toxoids only adult vaccine product"
-* group[=].element[=].target[=].relationship = #source-is-narrower-than-target
+* group[=].element[=].target[+].code = #871827009
+* group[=].element[=].target[=].display = "Clostridium tetani and low dose Corynebacterium diphtheriae antigens only vaccine product"
+* group[=].element[=].target[=].relationship = #equivalent
 
 * group[=].element[+].code = #immun-12
 * group[=].element[=].display = "difteriya, qoqshol va ko'kyo'talga qarshi emlash"
@@ -88,15 +88,15 @@ Description: "Maps local UZ vaccine codes to SNOMED CT and CVX."
 
 * group[=].element[+].code = #immun-13
 * group[=].element[=].display = "difteriya, qoqshol va ko'kyo'talga qarshi emlash, 5 ta ko'kyo'tal antijeni"
-* group[=].element[=].target[+].code = #871889009
-* group[=].element[=].target[=].display = "Acellular Bordetella pertussis and Corynebacterium diphtheriae and Hepatitis B virus and inactivated whole Human poliovirus antigens only vaccine product"
+* group[=].element[=].target[+].code = #871876003
+* group[=].element[=].target[=].display = "Acellular Bordetella pertussis and Clostridium tetani and Corynebacterium diphtheriae antigens only vaccine product"
 * group[=].element[=].target[=].relationship = #source-is-narrower-than-target
 
 * group[=].element[+].code = #immun-14
 * group[=].element[=].display = "difteriya, qoqshol va ko'kyo'talga qarshi emlash, aniqlanmagan formulasi"
-* group[=].element[=].target[+].code = #871889009
-* group[=].element[=].target[=].display = "Vaccine product containing only acellular Bordetella pertussis and Corynebacterium diphtheriae and Hepatitis B virus and inactivated whole Human poliovirus antigens (medicinal product"
-* group[=].element[=].target[=].relationship = #source-is-broader-than-target
+* group[=].element[=].target[+].code = #871875004
+* group[=].element[=].target[=].display = "Bordetella pertussis and Clostridium tetani and Corynebacterium diphtheriae antigens only vaccine product"
+* group[=].element[=].target[=].relationship = #equivalent
 
 * group[=].element[+].code = #immun-15
 * group[=].element[=].display = "DTaP-gepatit B va poliovirusga qarshi emlash"
@@ -112,9 +112,9 @@ Description: "Maps local UZ vaccine codes to SNOMED CT and CVX."
 
 * group[=].element[+].code = #immun-17
 * group[=].element[=].display = "difteriya, qoqshol, hujayrasiz ko'kyo'talga qarshi vaktsina, Haemophilus influenzae turi b konjugati va poliovirus vaktsinasi, inaktivatsiyalangan (DTaP-Hib-IPV)"
-* group[=].element[=].target[+].code = #871895005
-* group[=].element[=].target[=].display = "Bordetella pertussis and Clostridium tetani and Corynebacterium diphtheriae and Haemophilus influenzae type b and Hepatitis B virus and Human poliovirus antigens (medicinal product)"
-* group[=].element[=].target[=].relationship = #source-is-narrower-than-target
+* group[=].element[=].target[+].code = #871888001
+* group[=].element[=].target[=].display = "Acellular Bordetella pertussis and Clostridium tetani and Corynebacterium diphtheriae and Haemophilus influenzae type b and inactivated whole Human poliovirus antigens only vaccine product"
+* group[=].element[=].target[=].relationship = #equivalent
 
 * group[=].element[+].code = #immun-18
 * group[=].element[=].display = "difteriya, qoqshol, hujayrali ko'kyo'talga qarshi vaktsina va poliovirusga qarshi vaktsina, inaktivatsiyalangan"
@@ -124,8 +124,8 @@ Description: "Maps local UZ vaccine codes to SNOMED CT and CVX."
 
 * group[=].element[+].code = #immun-19
 * group[=].element[=].display = "difteriya, qoqshol va ko'kyo'talga qarshi emlash"
-* group[=].element[=].target[+].code = #293109003
-* group[=].element[=].target[=].display = "Diphtheria, tetanus and pertussis vaccine"
+* group[=].element[=].target[+].code = #871875004
+* group[=].element[=].target[=].display = "Bordetella pertussis and Clostridium tetani and Corynebacterium diphtheriae antigens only vaccine product"
 * group[=].element[=].target[=].relationship = #equivalent
 
 * group[=].element[+].code = #immun-20
@@ -136,9 +136,9 @@ Description: "Maps local UZ vaccine codes to SNOMED CT and CVX."
 
 * group[=].element[+].code = #immun-21
 * group[=].element[=].display = "DTP-Haemophilus influenzae turi b konjugat vaktsinasi va gepatit B vaktsinasi"
-* group[=].element[=].target[+].code = #871887006
-* group[=].element[=].target[=].display = "Bordetella pertussis and Clostridium tetani and Corynebacterium diphtheriae and Haemophilus influenzae type b and Human poliovirus antigens only vaccine product"
-* group[=].element[=].target[=].relationship = #source-is-narrower-than-target
+* group[=].element[=].target[+].code = #871886002
+* group[=].element[=].target[=].display = "Bordetella pertussis and Clostridium tetani and Corynebacterium diphtheriae and Haemophilus influenzae type b and Hepatitis B virus antigens only vaccine product"
+* group[=].element[=].target[=].relationship = #equivalent
 
 * group[=].element[+].code = #immun-22
 * group[=].element[=].display = "hantavirusga qarshi emlash"
@@ -232,25 +232,25 @@ Description: "Maps local UZ vaccine codes to SNOMED CT and CVX."
 * group[=].element[=].display = "Haemophilus influenzae turi b vaktsinasi, PRP-D konjugati"
 * group[=].element[=].target[+].code = #2041000221105
 * group[=].element[=].target[=].display = "Vaccine product containing only Haemophilus influenzae type b capsular polysaccharide antigen conjugated (medicinal product)"
-* group[=].element[=].target[=].relationship = #equivalent
+* group[=].element[=].target[=].relationship = #source-is-narrower-than-target
 
 * group[=].element[+].code = #immun-39
 * group[=].element[=].display = "Haemophilus influenzae turi b vaktsinasi, HbOC konjugati"
 * group[=].element[=].target[+].code = #2041000221105
 * group[=].element[=].target[=].display = "Vaccine product containing only Haemophilus influenzae type b capsular polysaccharide antigen conjugated (medicinal product)"
-* group[=].element[=].target[=].relationship = #equivalent
+* group[=].element[=].target[=].relationship = #source-is-narrower-than-target
 
 * group[=].element[+].code = #immun-40
 * group[=].element[=].display = "Haemophilus influenzae turi b vaktsinasi, PRP-T konjugati"
 * group[=].element[=].target[+].code = #2041000221105
 * group[=].element[=].target[=].display = "Vaccine product containing only Haemophilus influenzae type b capsular polysaccharide antigen conjugated (medicinal product)"
-* group[=].element[=].target[=].relationship = #equivalent
+* group[=].element[=].target[=].relationship = #source-is-narrower-than-target
 
 * group[=].element[+].code = #immun-41
 * group[=].element[=].display = "Haemophilus influenzae turi b vaktsinasi, PRP-OMP konjugati"
 * group[=].element[=].target[+].code = #2041000221105
 * group[=].element[=].target[=].display = "Vaccine product containing only Haemophilus influenzae type b capsular polysaccharide antigen conjugated (medicinal product)"
-* group[=].element[=].target[=].relationship = #equivalent
+* group[=].element[=].target[=].relationship = #source-is-narrower-than-target
 
 * group[=].element[+].code = #immun-42
 * group[=].element[=].display = "Haemophilus influenzae turi b vaktsinasi, aniqlanmagan konjugat"
@@ -260,40 +260,40 @@ Description: "Maps local UZ vaccine codes to SNOMED CT and CVX."
 
 * group[=].element[+].code = #immun-43
 * group[=].element[=].display = "Haemophilus influenzae turi b konjugati va gepatit B vaktsinasi"
-* group[=].element[=].target[+].code = #836500008
-* group[=].element[=].target[=].display = "Haemophilus influenzae type b and Neisseria meningitidis serogroup C antigens only vaccine product"
+* group[=].element[=].target[+].code = #871806004
+* group[=].element[=].target[=].display = "Haemophilus influenzae type b and Hepatitis B virus antigens only vaccine product"
 * group[=].element[=].target[=].relationship = #equivalent
 
 
 * group[=].element[+].code = #immun-45
 * group[=].element[=].display = "inson papillomavirusiga qarshi vaktsina, ikki valentli"
-* group[=].element[=].target[+].code = #140611000119104
-* group[=].element[=].target[=].display = "Human papilloma virus type 16 and 18 vaccination given (situation)"
-* group[=].element[=].target[=].relationship = #source-is-narrower-than-target
+* group[=].element[=].target[+].code = #1991000221106
+* group[=].element[=].target[=].display = "Human papillomavirus 16 and 18 antigens only vaccine product"
+* group[=].element[=].target[=].relationship = #equivalent
 
 * group[=].element[+].code = #immun-46
 * group[=].element[=].display = "inson papillomavirusiga qarshi emlash, to'rt valentli"
-* group[=].element[=].target[+].code = #734152003
-* group[=].element[=].target[=].display = "Administration of vaccine product containing only Human papillomavirus 6, 11, 16 and 18 antigens (procedure)"
+* group[=].element[=].target[+].code = #2001000221108
+* group[=].element[=].target[=].display = "Human papillomavirus 6, 11, 16 and 18 antigens only vaccine product"
 * group[=].element[=].target[=].relationship = #equivalent
 
 * group[=].element[+].code = #immun-47
 * group[=].element[=].display = "immunoglobulin, mushak ichiga"
-* group[=].element[=].target[+].code = #717220006
-* group[=].element[=].target[=].display = "Vaccinia human immune globulin (substance"
-* group[=].element[=].target[=].relationship = #source-is-broader-than-target
+* group[=].element[=].target[+].code = #776947000
+* group[=].element[=].target[=].display = "Normal human immunoglobulin only product"
+* group[=].element[=].target[=].relationship = #equivalent
 
 * group[=].element[+].code = #immun-48
 * group[=].element[=].display = "immunoglobulin, tomir ichiga yuborish"
-* group[=].element[=].target[+].code = #717220006
-* group[=].element[=].target[=].display = "Vaccinia human immune globulin (substance"
-* group[=].element[=].target[=].relationship = #source-is-broader-than-target
+* group[=].element[=].target[+].code = #776947000
+* group[=].element[=].target[=].display = "Normal human immunoglobulin only product"
+* group[=].element[=].target[=].relationship = #equivalent
 
 * group[=].element[+].code = #immun-49
 * group[=].element[=].display = "immunoglobulin, aniqlanmagan"
-* group[=].element[=].target[+].code = #717220006
-* group[=].element[=].target[=].display = "Vaccinia human immune globulin (substance"
-* group[=].element[=].target[=].relationship = #source-is-broader-than-target
+* group[=].element[=].target[+].code = #776947000
+* group[=].element[=].target[=].display = "Normal human immunoglobulin only product"
+* group[=].element[=].target[=].relationship = #equivalent
 
 * group[=].element[+].code = #immun-50
 * group[=].element[=].display = "Gripp, jonli, uch valentli, intranazal"
@@ -358,7 +358,7 @@ Description: "Maps local UZ vaccine codes to SNOMED CT and CVX."
 * group[=].element[+].code = #immun-60
 * group[=].element[=].display = "Leyshmaniozga qarshi emlash"
 * group[=].element[=].target[+].code = #170392001
-* group[=].element[=].target[=].display = "Leishmaniasis vaccination (procedure) |"
+* group[=].element[=].target[=].display = "Leishmaniasis vaccination (procedure)"
 * group[=].element[=].target[=].relationship = #equivalent
 
 * group[=].element[+].code = #immun-61
@@ -375,8 +375,8 @@ Description: "Maps local UZ vaccine codes to SNOMED CT and CVX."
 
 * group[=].element[+].code = #immun-63
 * group[=].element[=].display = "Qizamiq, parotit, qizilcha virusiga qarshi emlash"
-* group[=].element[=].target[+].code = #150971000119104
-* group[=].element[=].target[=].display = "Measles, mumps and rubella vaccination given (situation)"
+* group[=].element[=].target[+].code = #871831003
+* group[=].element[=].target[=].display = "Measles morbillivirus and Mumps orthorubulavirus and Rubella virus antigens only vaccine product"
 * group[=].element[=].target[=].relationship = #equivalent
 
 * group[=].element[+].code = #immun-64
@@ -387,20 +387,20 @@ Description: "Maps local UZ vaccine codes to SNOMED CT and CVX."
 
 * group[=].element[+].code = #immun-65
 * group[=].element[=].display = "Qizamiq, qizilcha, qizilcha va qizilchaga qarshi emlash"
-* group[=].element[=].target[+].code = #4521000175102
-* group[=].element[=].target[=].display = "Measles mumps and rubella vaccination not done (situation"
-* group[=].element[=].target[=].relationship = #source-is-narrower-than-target
+* group[=].element[=].target[+].code = #871831003
+* group[=].element[=].target[=].display = "Measles morbillivirus and Mumps orthorubulavirus and Rubella virus antigens only vaccine product"
+* group[=].element[=].target[=].relationship = #equivalent
 
 * group[=].element[+].code = #immun-66
 * group[=].element[=].display = "Bezgakga qarshi emlash"
-* group[=].element[=].target[+].code = #420848008
-* group[=].element[=].target[=].display = "Malarial prophylaxis"
-* group[=].element[=].target[=].relationship = #source-is-narrower-than-target
+* group[=].element[=].target[+].code = #45861000087106
+* group[=].element[=].target[=].display = "Plasmodium falciparum antigen-containing vaccine product"
+* group[=].element[=].target[=].relationship = #equivalent
 
 * group[=].element[+].code = #immun-67
 * group[=].element[=].display = "Qizamiq virusiga qarshi emlash"
 * group[=].element[=].target[+].code = #871765008
-* group[=].element[=].target[=].display = "Measles morbillivirus antigen only vaccine produc"
+* group[=].element[=].target[=].display = "Measles morbillivirus antigen only vaccine product"
 * group[=].element[=].target[=].relationship = #source-is-narrower-than-target
 
 * group[=].element[+].code = #immun-68
@@ -411,26 +411,26 @@ Description: "Maps local UZ vaccine codes to SNOMED CT and CVX."
 
 * group[=].element[+].code = #immun-69
 * group[=].element[=].display = "meningokokk polisakkarid vaktsinasi (MPSV4)"
-* group[=].element[=].target[+].code = #259840006
-* group[=].element[=].target[=].display = "Neisseria meningitidis group C polysaccharide antibody"
-* group[=].element[=].target[=].relationship = #source-is-narrower-than-target
+* group[=].element[=].target[+].code = #871873006
+* group[=].element[=].target[=].display = "Neisseria meningitidis serogroup A, C, W135 and Y antigens only vaccine product"
+* group[=].element[=].target[=].relationship = #equivalent
 
 * group[=].element[+].code = #immun-70
 * group[=].element[=].display = "meningokokkka qarshi konjugat vaktsina C"
-* group[=].element[=].target[+].code = #259840006
-* group[=].element[=].target[=].display = "Neisseria meningitidis group C polysaccharide antibody"
-* group[=].element[=].target[=].relationship = #source-is-narrower-than-target
+* group[=].element[=].target[+].code = #951000221102
+* group[=].element[=].target[=].display = "Neisseria meningitidis serogroup C capsular polysaccharide conjugated antigen only vaccine product"
+* group[=].element[=].target[=].relationship = #equivalent
 
 * group[=].element[+].code = #immun-71
 * group[=].element[=].display = "meningokokk polisakkaridli vaktsina (A, C, Y va W-135 guruhlari) difteriya toksoid konjugat vaktsinasi (MCV4P)"
-* group[=].element[=].target[+].code = #23691000175109
-* group[=].element[=].target[=].display = "Meningococcal vaccination"
-* group[=].element[=].target[=].relationship = #source-is-narrower-than-target
+* group[=].element[=].target[+].code = #1971000221105
+* group[=].element[=].target[=].display = "Neisseria meningitidis serogroup A, C, W135 and Y capsular polysaccharide conjugated antigens only vaccine product"
+* group[=].element[=].target[=].relationship = #equivalent
 
 * group[=].element[+].code = #immun-72
 * group[=].element[=].display = "meningokokk ACWY vaktsinasi, aniqlanmagan formulasi"
-* group[=].element[=].target[+].code = #23691000175109
-* group[=].element[=].target[=].display = "Meningococcal vaccination"
+* group[=].element[=].target[+].code = #836401009
+* group[=].element[=].target[=].display = "Neisseria meningitidis antigen-containing vaccine product"
 * group[=].element[=].target[=].relationship = #source-is-narrower-than-target
 
 * group[=].element[+].code = #immun-73
@@ -459,8 +459,8 @@ Description: "Maps local UZ vaccine codes to SNOMED CT and CVX."
 
 * group[=].element[+].code = #immun-77
 * group[=].element[=].display = "pnevmokokk polisakkaridga qarshi emlash, 23 valentli"
-* group[=].element[=].target[+].code = #77891000119100
-* group[=].element[=].target[=].display = "Pneumococcal 23-valent polysaccharide vaccination given (situation)"
+* group[=].element[=].target[+].code = #1119220001
+* group[=].element[=].target[=].display = "Streptococcus pneumoniae Danish serotype 1, 2, 3, 4, 5, 6B, 7F, 8, 9N, 9V, 10A, 11A, 12F, 14, 15B, 17F, 18C, 19A, 19F, 20, 22F, 23F, and 33F capsular polysaccharide antigens only vaccine product"
 * group[=].element[=].target[=].relationship = #equivalent
 
 * group[=].element[+].code = #immun-78
@@ -471,8 +471,8 @@ Description: "Maps local UZ vaccine codes to SNOMED CT and CVX."
 
 * group[=].element[+].code = #immun-79
 * group[=].element[=].display = "pnevmokokkka qarshi emlash, aniqlanmagan"
-* group[=].element[=].target[+].code = #12866006
-* group[=].element[=].target[=].display = "Administration of vaccine product containing only Streptococcus pneumoniae antigen (procedure)"
+* group[=].element[=].target[+].code = #836398006
+* group[=].element[=].target[=].display = "Streptococcus pneumoniae antigen-containing vaccine product"
 * group[=].element[=].target[=].relationship = #equivalent
 
 * group[=].element[+].code = #immun-80
@@ -520,7 +520,7 @@ Description: "Maps local UZ vaccine codes to SNOMED CT and CVX."
 * group[=].element[+].code = #immun-87
 * group[=].element[=].display = "rotavirus vaktsinasi, jonli, monovalent"
 * group[=].element[=].target[+].code = #871761004
-* group[=].element[=].target[=].display = "Rotavirus antigen only vaccine produc"
+* group[=].element[=].target[=].display = "Rotavirus antigen only vaccine product"
 * group[=].element[=].target[=].relationship = #equivalent
 
 * group[=].element[+].code = #immun-88
@@ -538,13 +538,13 @@ Description: "Maps local UZ vaccine codes to SNOMED CT and CVX."
 * group[=].element[+].code = #immun-90
 * group[=].element[=].display = "rotavirus, jonli, to'rt vaktsina"
 * group[=].element[=].target[+].code = #1081000221109
-* group[=].element[=].target[=].display = "Live attenuated Rotavirus antigen only vaccine produc"
+* group[=].element[=].target[=].display = "Live attenuated Rotavirus antigen only vaccine product"
 * group[=].element[=].target[=].relationship = #source-is-narrower-than-target
 
 * group[=].element[+].code = #immun-91
 * group[=].element[=].display = "respirator sinsitial virus immunoglobulini, tomir ichiga yuborish"
-* group[=].element[=].target[+].code = #117090003
-* group[=].element[=].target[=].display = "Respiratory syncytial virus immune globulin, human, administration by intravascular infusion"
+* group[=].element[=].target[+].code = #777424002
+* group[=].element[=].target[=].display = "Respiratory syncytial virus immune globulin only product"
 * group[=].element[=].target[=].relationship = #equivalent
 
 * group[=].element[+].code = #immun-92
@@ -561,9 +561,9 @@ Description: "Maps local UZ vaccine codes to SNOMED CT and CVX."
 
 * group[=].element[+].code = #immun-94
 * group[=].element[=].display = "qizilcha va parotit virusiga qarshi emlash"
-* group[=].element[=].target[+].code = #571591000119106
-* group[=].element[=].target[=].display = "Administration of live attenuated measles, mumps, and rubella vaccine"
-* group[=].element[=].target[=].relationship = #source-is-narrower-than-target
+* group[=].element[=].target[+].code = #1252703004
+* group[=].element[=].target[=].display = "Measles morbillivirus and Mumps orthorubulavirus antigens only vaccine product"
+* group[=].element[=].target[=].relationship = #equivalent
 
 * group[=].element[+].code = #immun-95
 * group[=].element[=].display = "stafilokokk bakteriofag lizati"
@@ -604,7 +604,7 @@ Description: "Maps local UZ vaccine codes to SNOMED CT and CVX."
 * group[=].element[+].code = #immun-101
 * group[=].element[=].display = "Shomil ensefalitiga qarshi emlash (AQShdan tashqari)"
 * group[=].element[=].target[+].code = #871719005
-* group[=].element[=].target[=].display = "Tick-borne encephalitis virus antigen only vaccine produc"
+* group[=].element[=].target[=].display = "Tick-borne encephalitis virus antigen only vaccine product"
 * group[=].element[=].target[=].relationship = #equivalent
 
 * group[=].element[+].code = #immun-102
@@ -658,13 +658,13 @@ Description: "Maps local UZ vaccine codes to SNOMED CT and CVX."
 * group[=].element[+].code = #immun-110
 * group[=].element[=].display = "tifoid vaktsina, parenteral, aseton bilan o'ldirilgandan tashqari, quritilgan"
 * group[=].element[=].target[+].code = #961000221100
-* group[=].element[=].target[=].display = "Vaccine product containing Salmonella enterica subspecies enterica serovar Typhi antigen (medicinal product)"
+* group[=].element[=].target[=].display = "Vaccine product containing only Salmonella enterica subspecies enterica serovar Typhi antigen (medicinal product)"
 * group[=].element[=].target[=].relationship = #source-is-narrower-than-target
 
 * group[=].element[+].code = #immun-111
 * group[=].element[=].display = "Tifoga qarshi emlash, parenteral, aseton o'ldirilgan, quritilgan (AQSh harbiylari)"
 * group[=].element[=].target[+].code = #961000221100
-* group[=].element[=].target[=].display = "Vaccine product containing Salmonella enterica subspecies enterica serovar Typhi antigen (medicinal product)"
+* group[=].element[=].target[=].display = "Vaccine product containing only Salmonella enterica subspecies enterica serovar Typhi antigen (medicinal product)"
 * group[=].element[=].target[=].relationship = #source-is-narrower-than-target
 
 * group[=].element[+].code = #immun-112
@@ -683,7 +683,7 @@ Description: "Maps local UZ vaccine codes to SNOMED CT and CVX."
 * group[=].element[=].display = "Chechakka qarshi emlash, suyultirilgan"
 * group[=].element[=].target[+].code = #871727001
 * group[=].element[=].target[=].display = "Vaccine product containing only Vaccinia virus antigen (medicinal product)"
-* group[=].element[=].target[=].relationship = #equivalent
+* group[=].element[=].target[=].relationship = #source-is-narrower-than-target
 
 * group[=].element[+].code = #immun-115
 * group[=].element[=].display = "immunoglobulin vaktsinasi"
@@ -718,7 +718,7 @@ Description: "Maps local UZ vaccine codes to SNOMED CT and CVX."
 * group[=].element[+].code = #immun-122
 * group[=].element[=].display = "sariq isitmaga qarshi emlash, jonli"
 * group[=].element[=].target[+].code = #836385002
-* group[=].element[=].target[=].display = "Vaccine product containing Yellow fever virus antigen (medicinal product"
+* group[=].element[=].target[=].display = "Vaccine product containing Yellow fever virus antigen (medicinal product)"
 * group[=].element[=].target[=].relationship = #equivalent
 
 
@@ -758,8 +758,8 @@ Description: "Maps local UZ vaccine codes to SNOMED CT and CVX."
 
 * group[=].element[+].code = #immun-132
 * group[=].element[=].display = "Tifoga qarshi emlashning tarixiy rekordi"
-* group[=].element[=].target[+].code = #30338008
-* group[=].element[=].target[=].display = "Typhus vaccination"
+* group[=].element[=].target[+].code = #961000221100
+* group[=].element[=].target[=].display = "Salmonella enterica subspecies enterica serovar Typhi antigen only vaccine product"
 * group[=].element[=].target[=].relationship = #source-is-narrower-than-target
 
 * group[=].element[+].code = #immun-133
@@ -776,21 +776,21 @@ Description: "Maps local UZ vaccine codes to SNOMED CT and CVX."
 
 * group[=].element[+].code = #immun-135
 * group[=].element[=].display = "Eng yangi gripp-H1N1-09, burundan foydalanish uchun jonli virus"
-* group[=].element[=].target[+].code = #1181000221105
-* group[=].element[=].target[=].display = "Vaccine product containing only Influenza A virus antigen (medicinal product)"
-* group[=].element[=].target[=].relationship = #equivalent
+* group[=].element[=].target[+].code = #871772009
+* group[=].element[=].target[=].display = "Influenza A virus subtype H1N1 antigen only vaccine product"
+* group[=].element[=].target[=].relationship = #source-is-narrower-than-target
 
 * group[=].element[+].code = #immun-136
 * group[=].element[=].display = "Eng yangi gripp-H1N1-09, konservantlarsiz, in'ektsiya"
-* group[=].element[=].target[+].code = #442696006
-* group[=].element[=].target[=].display = "Influenza A H1N1"
-* group[=].element[=].target[=].relationship = #source-is-narrower-than-target
+* group[=].element[=].target[+].code = #871772009
+* group[=].element[=].target[=].display = "Influenza A virus subtype H1N1 antigen only vaccine product"
+* group[=].element[=].target[=].relationship = #equivalent
 
 * group[=].element[+].code = #immun-137
 * group[=].element[=].display = "Yangi gripp-H1N1-09, in'ektsiya uchun"
-* group[=].element[=].target[+].code = #442696006
-* group[=].element[=].target[=].display = "Influenza A H1N1"
-* group[=].element[=].target[=].relationship = #source-is-narrower-than-target
+* group[=].element[=].target[+].code = #871772009
+* group[=].element[=].target[=].display = "Influenza A virus subtype H1N1 antigen only vaccine product"
+* group[=].element[=].target[=].relationship = #equivalent
 
 * group[=].element[+].code = #immun-138
 * group[=].element[=].display = "tetanoz va difteriya toksoidlari, adsorbsiyalanmagan, kattalar uchun foydalanish uchun"
@@ -808,7 +808,7 @@ Description: "Maps local UZ vaccine codes to SNOMED CT and CVX."
 * group[=].element[=].display = "Gripp, split virus, trivalent, in'ektsiya, konservantsiz"
 * group[=].element[=].target[+].code = #1181000221105
 * group[=].element[=].target[=].display = "Vaccine product containing only influenza virus antigen (medicinal product)"
-* group[=].element[=].target[=].relationship = #equivalent
+* group[=].element[=].target[=].relationship = #source-is-narrower-than-target
 
 * group[=].element[+].code = #immun-141
 * group[=].element[=].display = "Yapon ensefalitiga qarshi emlash, aniqlanmagan formulasi"
@@ -826,7 +826,7 @@ Description: "Maps local UZ vaccine codes to SNOMED CT and CVX."
 * group[=].element[=].display = "tetanus toksoidi, adsorbsiyalanmagan"
 * group[=].element[=].target[+].code = #871742003
 * group[=].element[=].target[=].display = "Vaccine product containing only Clostridium tetani antigen (medicinal product)"
-* group[=].element[=].target[=].relationship = #equivalent
+* group[=].element[=].target[=].relationship = #source-is-narrower-than-target
 
 * group[=].element[+].code = #immun-144
 * group[=].element[=].display = "Adenovirus, 4-toifa va 7-toifa, jonli, og'zaki"
@@ -890,9 +890,9 @@ Description: "Maps local UZ vaccine codes to SNOMED CT and CVX."
 
 * group[=].element[+].code = #immun-154
 * group[=].element[=].display = "Gepatit A immunoglobulin"
-* group[=].element[=].target[+].code = #116800003
-* group[=].element[=].target[=].display = "Administration of Hepatitis B Virus immune globulin, human (procedure)"
-* group[=].element[=].target[=].relationship = #equivalent
+* group[=].element[=].target[+].code = #776947000
+* group[=].element[=].target[=].display = "Normal human immunoglobulin only product"
+* group[=].element[=].target[=].relationship = #source-is-narrower-than-target
 
 * group[=].element[+].code = #immun-155
 * group[=].element[=].display = "Gripp, rekombinant, trivalent, in'ektsion, konservantsiz"
@@ -916,7 +916,7 @@ Description: "Maps local UZ vaccine codes to SNOMED CT and CVX."
 * group[=].element[=].display = "Gripp, split virus, tetravalent, in'ektsiya, konservantni o'z ichiga oladi"
 * group[=].element[=].target[+].code = #1181000221105
 * group[=].element[=].target[=].display = "Vaccine product containing only influenza virus antigen (medicinal product)"
-* group[=].element[=].target[=].relationship = #equivalent
+* group[=].element[=].target[=].relationship = #source-is-narrower-than-target
 
 * group[=].element[+].code = #immun-159
 * group[=].element[=].display = "Rho(D) Aniqlanmagan formula"
@@ -974,8 +974,8 @@ Description: "Maps local UZ vaccine codes to SNOMED CT and CVX."
 
 * group[=].element[+].code = #immun-168
 * group[=].element[=].display = "noma'lum tarkibli va noma'lum serogruplarning meningokokk vaktsinasi"
-* group[=].element[=].target[+].code = #41088001
-* group[=].element[=].target[=].display = "Administration of vaccine product containing only Neisseria meningitidis antigen (procedure)"
+* group[=].element[=].target[+].code = #921000221108
+* group[=].element[=].target[=].display = "Neisseria meningitidis antigen only vaccine product"
 * group[=].element[=].target[=].relationship = #equivalent
 
 * group[=].element[+].code = #immun-169
@@ -986,9 +986,9 @@ Description: "Maps local UZ vaccine codes to SNOMED CT and CVX."
 
 * group[=].element[+].code = #immun-170
 * group[=].element[=].display = "Gepatit A, jonli zaiflashgan-IM"
-* group[=].element[=].target[+].code = #2241000221103
-* group[=].element[=].target[=].display = "Vaccine product containing only live attenuated Measles morbillivirus and Mumps orthorubulavirus and Rubella virus antigens (medicinal product)"
-* group[=].element[=].target[=].relationship = #equivalent
+* group[=].element[=].target[+].code = #871751006
+* group[=].element[=].target[=].display = "Hepatitis A virus antigen only vaccine product"
+* group[=].element[=].target[=].relationship = #source-is-narrower-than-target
 
 * group[=].element[+].code = #immun-171
 * group[=].element[=].display = "difteriya, qoqshol, hujayrasiz ko'kyo'talga qarshi vaktsina, Haemophilus influenzae turi b konjugati va poliovirus vaktsinasi, inaktivatsiyalangan (DTaP-Hib-IPV), AQShdan tashqari"
@@ -1034,9 +1034,9 @@ Description: "Maps local UZ vaccine codes to SNOMED CT and CVX."
 
 * group[=].element[+].code = #immun-178
 * group[=].element[=].display = "Pnevmokokk konjugat vaktsinasi, 10 valentli"
-* group[=].element[=].target[+].code = #981000221107
-* group[=].element[=].target[=].display = "Vaccine product containing only Streptococcus pneumoniae antigen (medicinal product)"
-* group[=].element[=].target[=].relationship = #source-is-narrower-than-target
+* group[=].element[=].target[+].code = #1052330009
+* group[=].element[=].target[=].display = "Vaccine product containing only Streptococcus pneumoniae Danish serotype 1, 4, 5, 6B, 7F, 9V, 14, 18C, 19F, and 23F capsular polysaccharide antigens conjugated (medicinal product)"
+* group[=].element[=].target[=].relationship = #equivalent
 
 * group[=].element[+].code = #immun-179
 * group[=].element[=].display = "AQShdan tashqari poliomielitga qarshi ikki valentli og'iz vaktsinasi (1 va 3 turdagi)"
@@ -1094,14 +1094,14 @@ Description: "Maps local UZ vaccine codes to SNOMED CT and CVX."
 
 * group[=].element[+].code = #immun-188
 * group[=].element[=].display = "Zoster vaktsinasi rekombinanti"
-* group[=].element[=].target[+].code = #836369007
-* group[=].element[=].target[=].display = "Vaccine product containing virus antigen (medicinal product)"
+* group[=].element[=].target[+].code = #1156183006
+* group[=].element[=].target[=].display = "Human alphaherpesvirus 3 recombinant surface glycoprotein E antigen only vaccine product"
 * group[=].element[=].target[=].relationship = #equivalent
 
 * group[=].element[+].code = #immun-189
 * group[=].element[=].display = "zoster vaktsinasi, aniqlanmagan"
-* group[=].element[=].target[+].code = #836369007
-* group[=].element[=].target[=].display = "Vaccine product containing virus antigen (medicinal product)"
+* group[=].element[=].target[+].code = #871919004
+* group[=].element[=].target[=].display = "Human alphaherpesvirus 3 antigen only vaccine product"
 * group[=].element[=].target[=].relationship = #equivalent
 
 * group[=].element[+].code = #immun-190
@@ -1142,8 +1142,8 @@ Description: "Maps local UZ vaccine codes to SNOMED CT and CVX."
 
 * group[=].element[+].code = #immun-196
 * group[=].element[=].display = "Difteriya, tetanoz, poliomielit adsorbsiyalangan"
-* group[=].element[=].target[+].code = #871826000
-* group[=].element[=].target[=].display = "Vaccine product containing only Clostridium tetani and Corynebacterium diphtheriae antigens (medicinal product)"
+* group[=].element[=].target[+].code = #871837004
+* group[=].element[=].target[=].display = "Clostridium tetani and Corynebacterium diphtheriae and Human poliovirus antigens only vaccine product"
 * group[=].element[=].target[=].relationship = #equivalent
 
 * group[=].element[+].code = #immun-197
@@ -1215,8 +1215,8 @@ Description: "Maps local UZ vaccine codes to SNOMED CT and CVX."
 * group[=].element[+].code = #immun-208
 * group[=].element[=].display = "SARS-COV-2 (COVID-19) vaksinasi, RUKSAT BERILMAGAN"
 * group[=].element[=].target[+].code = #1119305005
-* group[=].element[=].target[=].display = "Vaccine product containing only severe acute respiratory syndrome coronavirus 2 messenger ribonucleic acid (medicinal product)"
-* group[=].element[=].target[=].relationship = #equivalent
+* group[=].element[=].target[=].display = "Vaccine product containing only severe acute respiratory syndrome coronavirus 2 antigen (medicinal product)"
+* group[=].element[=].target[=].relationship = #source-is-narrower-than-target
 
 * group[=].element[+].code = #immun-209
 * group[=].element[=].display = "SARS-COV-2 (COVID-19) vaktsinasi, takrorlanmaydigan vektor, rekombinant boshoqli oqsil-ChAdOx1, konservantsiz, 0,5 ml"
@@ -1250,26 +1250,20 @@ Description: "Maps local UZ vaccine codes to SNOMED CT and CVX."
 
 * group[=].element[+].code = #immun-214
 * group[=].element[=].display = "Agrippal"
-* group[=].element[=].target[+].code = #2081000221102
-* group[=].element[=].target[=].display = "Pediatric vaccine product containing only acellular Bordetella pertussis, Clostridium tetani and Corynebacterium diphtheriae toxoids, Haemophilus influenzae type b capsular polysaccharide conjugated, Hepatitis B virus surface antigens (medicinal product)"
+* group[=].element[=].target[+].code = #1181000221105
+* group[=].element[=].target[=].display = "Influenza virus antigen only vaccine product"
 * group[=].element[=].target[=].relationship = #source-is-narrower-than-target
 
 * group[=].element[+].code = #immun-215
 * group[=].element[=].display = "Avaxim"
-* group[=].element[=].target[+].code = #871822003
-* group[=].element[=].target[=].display = "Vaccine product containing only Hepatitis B virus antigen (medicinal product)"
+* group[=].element[=].target[+].code = #871751006
+* group[=].element[=].target[=].display = "Hepatitis A virus antigen only vaccine product"
 * group[=].element[=].target[=].relationship = #source-is-narrower-than-target
 
 * group[=].element[+].code = #immun-216
 * group[=].element[=].display = "BCG"
 * group[=].element[=].target[+].code = #1861000221106
 * group[=].element[=].target[=].display = "Vaccine product containing only live attenuated Mycobacterium bovis antigen (medicinal product)"
-* group[=].element[=].target[=].relationship = #equivalent
-
-* group[=].element[+].code = #immun-217
-* group[=].element[=].display = "Bog‘langan nutqni baholash / kuzatish (protsedura)"
-* group[=].element[=].target[+].code = #277353005
-* group[=].element[=].target[=].display = "Connected discourse tracking (procedure)"
 * group[=].element[=].target[=].relationship = #equivalent
 
 * group[=].element[+].code = #immun-218
@@ -1286,8 +1280,8 @@ Description: "Maps local UZ vaccine codes to SNOMED CT and CVX."
 
 * group[=].element[+].code = #immun-220
 * group[=].element[=].display = "Difteriya, qoqshol va atsellyulyar ko‘kyo‘talga qarshi vaksin"
-* group[=].element[=].target[+].code = #429461005
-* group[=].element[=].target[=].display = "DTPA - Diethylenetriaminepentaacetic acid"
+* group[=].element[=].target[+].code = #871876003
+* group[=].element[=].target[=].display = "Acellular Bordetella pertussis and Clostridium tetani and Corynebacterium diphtheriae antigens only vaccine product"
 * group[=].element[=].target[=].relationship = #equivalent
 
 * group[=].element[+].code = #immun-221
@@ -1322,20 +1316,20 @@ Description: "Maps local UZ vaccine codes to SNOMED CT and CVX."
 
 * group[=].element[+].code = #immun-226
 * group[=].element[=].display = "Difteriyaga qarshi vaksina"
-* group[=].element[=].target[+].code = #397430003
-* group[=].element[=].target[=].display = "Diphtheria caused by Corynebacterium diphtheriae (disorder)"
+* group[=].element[=].target[+].code = #871729003
+* group[=].element[=].target[=].display = "Corynebacterium diphtheriae antigen only vaccine product"
 * group[=].element[=].target[=].relationship = #equivalent
 
 * group[=].element[+].code = #immun-227
 * group[=].element[=].display = "Grippga qarshi vaksina"
-* group[=].element[=].target[+].code = #6142004
-* group[=].element[=].target[=].display = "Influenza"
+* group[=].element[=].target[+].code = #1181000221105
+* group[=].element[=].target[=].display = "Influenza virus antigen only vaccine product"
 * group[=].element[=].target[=].relationship = #equivalent
 
 * group[=].element[+].code = #immun-228
 * group[=].element[=].display = "Gepatit B ga qarshi vaksina"
-* group[=].element[=].target[+].code = #66071002
-* group[=].element[=].target[=].display = "Viral hepatitis type B"
+* group[=].element[=].target[+].code = #871822003
+* group[=].element[=].target[=].display = "Hepatitis B virus antigen only vaccine product"
 * group[=].element[=].target[=].relationship = #equivalent
 
 * group[=].element[+].code = #immun-229
@@ -1346,32 +1340,32 @@ Description: "Maps local UZ vaccine codes to SNOMED CT and CVX."
 
 * group[=].element[+].code = #immun-230
 * group[=].element[=].display = "Gepatit A ga qarshi vaksina"
-* group[=].element[=].target[+].code = #40468003
-* group[=].element[=].target[=].display = "Hepatitis A"
+* group[=].element[=].target[+].code = #871751006
+* group[=].element[=].target[=].display = "Hepatitis A virus antigen only vaccine product"
 * group[=].element[=].target[=].relationship = #equivalent
 
 * group[=].element[+].code = #immun-231
 * group[=].element[=].display = "Yapon ensefalitiga qarshi vaksina"
-* group[=].element[=].target[+].code = #52947006
-* group[=].element[=].target[=].display = "Japanese encephalitis virus disease (disorder)"
+* group[=].element[=].target[+].code = #871724008
+* group[=].element[=].target[=].display = "Japanese encephalitis virus antigen only vaccine product"
 * group[=].element[=].target[=].relationship = #equivalent
 
 * group[=].element[+].code = #immun-232
 * group[=].element[=].display = "Qizamiqqa qarshi vaksina"
-* group[=].element[=].target[+].code = #14189004
-* group[=].element[=].target[=].display = "Measles"
+* group[=].element[=].target[+].code = #871765008
+* group[=].element[=].target[=].display = "Measles morbillivirus antigen only vaccine product"
 * group[=].element[=].target[=].relationship = #equivalent
 
 * group[=].element[+].code = #immun-233
 * group[=].element[=].display = "Meningokokk C seroguruhiga qarshi vaksina"
-* group[=].element[=].target[+].code = #33618002
-* group[=].element[=].target[=].display = "Meningococcal serogroup C vaccine"
+* group[=].element[=].target[+].code = #871866001
+* group[=].element[=].target[=].display = "Neisseria meningitidis serogroup C antigen only vaccine product"
 * group[=].element[=].target[=].relationship = #equivalent
 
 * group[=].element[+].code = #immun-234
 * group[=].element[=].display = "Epidemik parotitga qarshi vaksina"
-* group[=].element[=].target[+].code = #36989005
-* group[=].element[=].target[=].display = "Mumps"
+* group[=].element[=].target[+].code = #871737006
+* group[=].element[=].target[=].display = "Mumps orthorubulavirus antigen only vaccine product"
 * group[=].element[=].target[=].relationship = #equivalent
 
 * group[=].element[+].code = #immun-235
@@ -1382,32 +1376,32 @@ Description: "Maps local UZ vaccine codes to SNOMED CT and CVX."
 
 * group[=].element[+].code = #immun-236
 * group[=].element[=].display = "Poliomiyelit"
-* group[=].element[=].target[+].code = #398102009
-* group[=].element[=].target[=].display = "Acute poliomyelitis"
+* group[=].element[=].target[+].code = #871739009
+* group[=].element[=].target[=].display = "Human poliovirus antigen only vaccine product"
 * group[=].element[=].target[=].relationship = #equivalent
 
 * group[=].element[+].code = #immun-237
 * group[=].element[=].display = "Rotavirus"
-* group[=].element[=].target[+].code = #417542000
-* group[=].element[=].target[=].display = "Rotavirus"
+* group[=].element[=].target[+].code = #871761004
+* group[=].element[=].target[=].display = "Rotavirus antigen only vaccine product"
 * group[=].element[=].target[=].relationship = #equivalent
 
 * group[=].element[+].code = #immun-238
 * group[=].element[=].display = "Qizilcha"
-* group[=].element[=].target[+].code = #36653000
-* group[=].element[=].target[=].display = "Rubella"
+* group[=].element[=].target[+].code = #871732000
+* group[=].element[=].target[=].display = "Rubella virus antigen only vaccine product"
 * group[=].element[=].target[=].relationship = #equivalent
 
 * group[=].element[+].code = #immun-239
 * group[=].element[=].display = "Qoqshol"
-* group[=].element[=].target[+].code = #76902006
-* group[=].element[=].target[=].display = "Tetanus"
+* group[=].element[=].target[+].code = #871742003
+* group[=].element[=].target[=].display = "Clostridium tetani antigen only vaccine product"
 * group[=].element[=].target[=].relationship = #equivalent
 
 * group[=].element[+].code = #immun-240
 * group[=].element[=].display = "Suvchechak"
-* group[=].element[=].target[+].code = #38907003
-* group[=].element[=].target[=].display = "Varicella"
+* group[=].element[=].target[+].code = #871919004
+* group[=].element[=].target[=].display = "Human alphaherpesvirus 3 antigen only vaccine product"
 * group[=].element[=].target[=].relationship = #equivalent
 
 * group[=].element[+].code = #immun-241
@@ -1436,8 +1430,8 @@ Description: "Maps local UZ vaccine codes to SNOMED CT and CVX."
 
 * group[=].element[+].code = #immun-245
 * group[=].element[=].display = "HBV"
-* group[=].element[=].target[+].code = #81665004
-* group[=].element[=].target[=].display = "Hepatitis B virus"
+* group[=].element[=].target[+].code = #871822003
+* group[=].element[=].target[=].display = "Hepatitis B virus antigen only vaccine product"
 * group[=].element[=].target[=].relationship = #equivalent
 
 * group[=].element[+].code = #immun-246
@@ -1462,14 +1456,14 @@ Description: "Maps local UZ vaccine codes to SNOMED CT and CVX."
 
 * group[=].element[+].code = #immun-250
 * group[=].element[=].display = "Infanrix Penta (beshlik: difteriya, ko'kyo'tal, qoqshol, poliomielit, Hib)"
-* group[=].element[=].target[+].code = #871891001
-* group[=].element[=].target[=].display = "Vaccine product containing only acellular Bordetella pertussis and Clostridium tetani and Corynebacterium diphtheriae and Hepatitis B virus and inactivated whole Human poliovirus antigens (medicinal product)"
+* group[=].element[=].target[+].code = #871888001
+* group[=].element[=].target[=].display = "Acellular Bordetella pertussis and Clostridium tetani and Corynebacterium diphtheriae and Haemophilus influenzae type b and inactivated whole Human poliovirus antigens only vaccine product"
 * group[=].element[=].target[=].relationship = #source-is-narrower-than-target
 
 * group[=].element[+].code = #immun-251
 * group[=].element[=].display = "Infanrix (odatda uch komponentli vaktsina: difteriya, ko'kyo'tal, qoqshol)"
-* group[=].element[=].target[+].code = #252331000
-* group[=].element[=].target[=].display = "Immunofixation"
+* group[=].element[=].target[+].code = #871876003
+* group[=].element[=].target[=].display = "Acellular Bordetella pertussis and Clostridium tetani and Corynebacterium diphtheriae antigens only vaccine product"
 * group[=].element[=].target[=].relationship = #source-is-narrower-than-target
 
 * group[=].element[+].code = #immun-252
@@ -1506,9 +1500,9 @@ Description: "Maps local UZ vaccine codes to SNOMED CT and CVX."
 
 * group[=].element[+].code = #immun-258
 * group[=].element[=].display = "Menomen (meningokokk kasalligiga qarshi polisaxaridli emlash, A va C seroguruhlari)"
-* group[=].element[=].target[+].code = #871873006
-* group[=].element[=].target[=].display = "Vaccine product containing only Neisseria meningitidis serogroup A, C, W135 and Y antigens (medicinal product)"
-* group[=].element[=].target[=].relationship = #source-is-narrower-than-target
+* group[=].element[=].target[+].code = #871871008
+* group[=].element[=].target[=].display = "Neisseria meningitidis serogroup A and C antigens only vaccine product"
+* group[=].element[=].target[=].relationship = #equivalent
 
 * group[=].element[+].code = #immun-259
 * group[=].element[=].display = "MencevaxACWY (meningokokk polisakkaridiga qarshi vaktsinalar A, C, W135 va Y seroguruhlari)"
@@ -1517,7 +1511,7 @@ Description: "Maps local UZ vaccine codes to SNOMED CT and CVX."
 * group[=].element[=].target[=].relationship = #source-is-narrower-than-target
 
 * group[=].element[+].code = #immun-260
-* group[=].element[=].display = "MMR (qizamiq, qizilcha va qizilchaga qarshi emlash)"
+* group[=].element[=].display = "MMR (qizamiq, parotit va qizilchaga qarshi emlash)"
 * group[=].element[=].target[+].code = #871831003
 * group[=].element[=].target[=].display = "MMR (measles and mumps and rubella) vaccine"
 * group[=].element[=].target[=].relationship = #equivalent
@@ -1548,14 +1542,14 @@ Description: "Maps local UZ vaccine codes to SNOMED CT and CVX."
 
 * group[=].element[+].code = #immun-265
 * group[=].element[=].display = "IPV/Poliomielit (poliomielitga qarshi emlash)"
-* group[=].element[=].target[+].code = #398102009
-* group[=].element[=].target[=].display = "Acute poliomyelitis (disorder) |"
+* group[=].element[=].target[+].code = #871740006
+* group[=].element[=].target[=].display = "Inactivated whole Human poliovirus antigen only vaccine product"
 * group[=].element[=].target[=].relationship = #equivalent
 
 * group[=].element[+].code = #immun-266
 * group[=].element[=].display = "Ko'k yo'tal (ko'k yo'talga qarshi emlash)"
-* group[=].element[=].target[+].code = #27836007
-* group[=].element[=].target[=].display = "Pertussis"
+* group[=].element[=].target[+].code = #871758000
+* group[=].element[=].target[=].display = "Bordetella pertussis antigen only vaccine product"
 * group[=].element[=].target[=].relationship = #equivalent
 
 * group[=].element[+].code = #immun-267
@@ -1572,8 +1566,8 @@ Description: "Maps local UZ vaccine codes to SNOMED CT and CVX."
 
 * group[=].element[+].code = #immun-269
 * group[=].element[=].display = "Polyacel (poliomielitga qarshi emlash; ehtimol IPV ga o'xshaydi)"
-* group[=].element[=].target[+].code = #871888001
-* group[=].element[=].target[=].display = "Vaccine product containing only acellular Bordetella pertussis and Clostridium tetani and Corynebacterium diphtheriae and Haemophilus influenzae type b and inactivated whole Human poliovirus antigens (medicinal product)"
+* group[=].element[=].target[+].code = #871740006
+* group[=].element[=].target[=].display = "Inactivated whole Human poliovirus antigen only vaccine product"
 * group[=].element[=].target[=].relationship = #source-is-narrower-than-target
 
 * group[=].element[+].code = #immun-270
@@ -1683,74 +1677,74 @@ Description: "Maps local UZ vaccine codes to SNOMED CT and CVX."
 * group[=].element[+].code = #immun-116
 * group[=].element[=].display = "varikella-zoster vaktsinasi"
 * group[=].element[=].target[+].code = #21
-* group[=].element[=].target[=].display = "Vaccine product containing Yellow fever virus antigen (medicinal product)"
-* group[=].element[=].target[=].relationship = #related-to
+* group[=].element[=].target[=].display = "varicella"
+* group[=].element[=].target[=].relationship = #equivalent
 
 
 * group[=].element[+].code = #immun-117
 * group[=].element[=].display = "Venesuela ot ensefaliti, faolsizlangan"
 * group[=].element[=].target[+].code = #81
-* group[=].element[=].target[=].display = "Vaccine product containing Tick-borne encephalitis virus antigen (medicinal product)"
-* group[=].element[=].target[=].relationship = #related-to
+* group[=].element[=].target[=].display = "VEE, inactivated"
+* group[=].element[=].target[=].relationship = #equivalent
 
 
 * group[=].element[+].code = #immun-119
 * group[=].element[=].display = "Venesuela ot ensefalitiga qarshi emlash, aniqlanmagan formulasi"
 * group[=].element[=].target[+].code = #92
-* group[=].element[=].target[=].display = "Vaccine product containing Tick-borne encephalitis virus antigen (medicinal product)"
-* group[=].element[=].target[=].relationship = #related-to
+* group[=].element[=].target[=].display = "VEE, unspecified formulation"
+* group[=].element[=].target[=].relationship = #equivalent
 
 
 * group[=].element[+].code = #immun-126
 * group[=].element[=].display = "zaxiralangan - foydalanmang"
 * group[=].element[=].target[+].code = #99
-* group[=].element[=].target[=].display = "Reserved"
-* group[=].element[=].target[=].relationship = #related-to
+* group[=].element[=].target[=].display = "RESERVED - do not use"
+* group[=].element[=].target[=].relationship = #equivalent
 
 
 * group[=].element[+].code = #immun-130
 * group[=].element[=].display = "meningokokk oligosakkarid (A, C, Y va W-135 guruhlari) difteriya toksoid konjugat vaktsinasi (MCV4O)"
 * group[=].element[=].target[+].code = #136
-* group[=].element[=].target[=].display = "Bacillus Calmette-Guerin antigen-containing vaccine product"
-* group[=].element[=].target[=].relationship = #related-to
+* group[=].element[=].target[=].display = "Meningococcal MCV4O"
+* group[=].element[=].target[=].relationship = #equivalent
 
 
 * group[=].element[+].code = #immun-35
 * group[=].element[=].display = "gepatit C vaktsinasi"
 * group[=].element[=].target[+].code = #58
-* group[=].element[=].target[=].display = "Viral hepatitis type C (disorder)"
-* group[=].element[=].target[=].relationship = #related-to
+* group[=].element[=].target[=].display = "Hep C"
+* group[=].element[=].target[=].relationship = #equivalent
 
 * group[=].element[+].code = #immun-36
 * group[=].element[=].display = "gepatit E vaktsinasi"
 * group[=].element[=].target[+].code = #59
-* group[=].element[=].target[=].display = "Viral hepatitis type E (disorder)"
-* group[=].element[=].target[=].relationship = #related-to
+* group[=].element[=].target[=].display = "Hep E"
+* group[=].element[=].target[=].relationship = #equivalent
 
 * group[=].element[+].code = #immun-44
 * group[=].element[=].display = "inson immunitet tanqisligi virusiga qarshi emlash"
 * group[=].element[=].target[+].code = #61
-* group[=].element[=].target[=].display = "Human papillomavirus antigen-containing vaccine product"
-* group[=].element[=].target[=].relationship = #related-to
+* group[=].element[=].target[=].display = "HIV"
+* group[=].element[=].target[=].relationship = #equivalent
 
 
 * group[=].element[+].code = #immun-123
 * group[=].element[=].display = "zoster vaktsinasi, jonli"
 * group[=].element[=].target[+].code = #121
-* group[=].element[=].target[=].display = "Vaccine product containing Vaccinia virus antigen (medicinal product)"
-* group[=].element[=].target[=].relationship = #related-to
+* group[=].element[=].target[=].display = "zoster live"
+* group[=].element[=].target[=].relationship = #equivalent
 
 
 * group[=].element[+].code = #immun-131
 * group[=].element[=].display = "Gripp, yuqori dozali, split virus, trivalent, in'ektsion, konservantsiz"
 * group[=].element[=].target[+].code = #135
-* group[=].element[=].target[=].display = "Food preservative-free food"
-* group[=].element[=].target[=].relationship = #related-to
+* group[=].element[=].target[=].display = "Influenza, high dose seasonal"
+* group[=].element[=].target[=].relationship = #equivalent
 
 
 * group[=].element[+].code = #immun-254
 * group[=].element[=].display = "IPOL (poliomielitga qarshi emlash, poliomielitga qarshi vaktsinalar)"
 * group[=].element[=].target[+].code = #10
 * group[=].element[=].target[=].display = "poliovirus vaccine, inactivated"
-* group[=].element[=].target[=].relationship = #source-is-narrower-than-target
+* group[=].element[=].target[=].relationship = #equivalent
 
