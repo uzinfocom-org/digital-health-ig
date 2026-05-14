@@ -89,7 +89,7 @@ Description: "Uzbekistan Core ImmunizationRecommendation profile, used to repres
 
 
 ///focus on
-Invariant: imm-rec-vaccine-or-disease
+Invariant: uzcore-imrec-1
 Description: "Either vaccineCode or targetDisease SHALL be present."
 Expression: "vaccineCode.exists() or targetDisease.exists()"
 Severity: #error
