@@ -76,7 +76,7 @@ Description: "Uzbekistan Core Immunization profile, used to represent immunizati
 * location ^short = "Место вакцинации"
 
 * site 0..1 MS
-* site from ImmunizationSiteVS (example)
+* site from ImmunizationSiteVS (extensible)
 * site ^short = "Место введения"
 
 * route 0..1 MS
