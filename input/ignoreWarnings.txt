@@ -77,9 +77,8 @@ Hyperlink 'https://dhp.uz/fhir/core/sid/pid/uz/prn/*/mrt' at 'div/div/table/tr/t
 No definition could be found for URL value 'https://dhp.uz/fhir/core/sid/pid/gb/ppn'
 No definition could be found for URL value 'https://dhp.uz/fhir/core/sid/pid/gb/dl'
 
-# R5 core spec references this extension but it's not published anywhere, known FHIR R5 issue - can be ignored
-The extension http://hl7.org/fhir/StructureDefinition/structuredefinition-implements could not be found so is not allowed here
-No definition could be found for URL value 'http://hl7.org/fhir/StructureDefinition/structuredefinition-implements'
+# This version is correct as structuredefinition-implements error is only fixed in it
+The ImplementationGuide uses package hl7.fhir.uv.extensions.r5#5.3.0-ballot-tc1 released on 2025-08-03, but the most recent appropriate version is 5.2.0. This reference is getting old and the more recent version should be considered
 
 # IG Publisher generates inline scripts for Questionnaire/QuestionnaireResponse table filters then warns they're illegal - bug reported, can be ignored
 The <script> containing the javascript '//%
