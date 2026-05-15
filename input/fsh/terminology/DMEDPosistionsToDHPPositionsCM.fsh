@@ -2,7 +2,7 @@ Instance: dmed-position-to-dhp-position-cm
 InstanceOf: ConceptMap
 Usage: #definition
 Title: "DMED Position To DHP Position"
-Description: "DMED Position and Professions to DHP Position and Professions ConcepMap"
+Description: "DMED Position and Professions to DHP Position and Professions ConceptMap"
 * name = "DMEDPositionToDHPPositionCM"
 * url = "https://terminology.dhp.uz/fhir/core/ConceptMap/dmed-position-to-dhp-position-cm"
 * status = #draft

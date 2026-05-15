@@ -1,7 +1,7 @@
 CodeSystem: DMEDVaccineCS
 Id: dmed-vaccine-cs
 Title: "DMED Vaccine (UZ/RU)"
-Description: "Uzbek and Russian designations for DMED Vaccine codes"
+Description: "Russian DMED Vaccine codes"
 * insert OriginalCodeSystemDraft(dmed-vaccine-cs)
 
 
@@ -83,7 +83,7 @@ Description: "Uzbek and Russian designations for DMED Vaccine codes"
 
 * #61
   * ^designation[0].language = #ru
-  * ^designation[=].value = "ВГ "B""
+  * ^designation[=].value = "ВГ B"
 
 * #60
   * ^designation[0].language = #ru
@@ -123,7 +123,7 @@ Description: "Uzbek and Russian designations for DMED Vaccine codes"
 
 * #48
   * ^designation[0].language = #ru
-  * ^designation[=].value = "ВГ "A""
+  * ^designation[=].value = "ВГ A"
 
 * #47
   * ^designation[0].language = #ru
