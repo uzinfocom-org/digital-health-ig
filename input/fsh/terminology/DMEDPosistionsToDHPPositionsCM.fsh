@@ -12,6 +12,7 @@ Description: "DMED Position and Professions to DHP Position and Professions Conc
 // Group 1: DMEDProfessionsCS to PositionAndProfessionCS
 * group[+].source = Canonical(DMEDProfessionsCS)
 * group[=].target = Canonical(PositionAndProfessionCS)
+//* targetScopeCanonical = Canonical(PositionAndProfessionVS)
 
 * group[=].element[+].code = #1033
 * group[=].element[=].display = "Karlar o'qituvchisi" // ru: Сурдопедагог
@@ -358,7 +359,7 @@ Description: "DMED Position and Professions to DHP Position and Professions Conc
 * group[=].element[+].code = #223
 * group[=].element[=].display = "Oftalmolog" // ru: Офтальмолог
 * group[=].element[=].target[+].code = #2267.3
-* group[=].element[=].target[=].display = "Vrach oftalmolog"
+* group[=].element[=].target[=].display = "Vrach oftalьmolog"
 * group[=].element[=].target[=].relationship = #equivalent
 
 * group[=].element[+].code = #242
@@ -1259,6 +1260,7 @@ Description: "DMED Position and Professions to DHP Position and Professions Conc
 // Group 2: DMEDProfessionsCS to DHP 
 * group[+].source = Canonical(DMEDProfessionsCS)
 * group[=].target = $position-and-profession
+//* targetScopeCanonical = Canonical(PositionAndProfessionVS)
 
 * group[=].element[+].code = #384
 * group[=].element[=].display = "Psixonevrolog" // ru: Психоневролог
@@ -1786,6 +1788,7 @@ Description: "DMED Position and Professions to DHP Position and Professions Conc
 // Group 3: DMEDProfessionsCS to Snomed
 * group[+].source = Canonical(DMEDProfessionsCS)
 * group[=].target = $sct
+//* targetScopeCanonical = $sct-vs
 
 * group[=].element[+].code = #370
 * group[=].element[=].display = "Statsionar shifokori" // ru: Стационарный врач
