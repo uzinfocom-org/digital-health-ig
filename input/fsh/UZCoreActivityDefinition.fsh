@@ -11,6 +11,7 @@ Description: "Uzbekistan Core ActivityDefinition Profile, used for the definitio
 * url MS
 * identifier MS
 * version MS
+* versionAlgorithm[x] MS
 * name MS
 * title MS
 * status MS
@@ -21,6 +22,7 @@ Description: "Uzbekistan Core ActivityDefinition Profile, used for the definitio
 * description MS
 * effectivePeriod MS
 * kind MS
+* profile MS
 * code MS
 * code from ProcedureCodeVS (example)
 * intent MS
@@ -32,6 +34,8 @@ Description: "Uzbekistan Core ActivityDefinition Profile, used for the definitio
 * participant MS
   * type MS
   * type from ActionParticipantTypeVS (required)
+  * typeCanonical MS
+  * typeReference MS
   * role MS
   * function MS
 * product[x] MS
@@ -39,8 +43,10 @@ Description: "Uzbekistan Core ActivityDefinition Profile, used for the definitio
 * dosage MS
 * bodySite MS
 * bodySite from $bodysite (example)
+* specimenRequirement MS
 * observationRequirement MS
 * observationResultRequirement MS
+* transform MS
 * dynamicValue MS
   * path MS
   * expression MS

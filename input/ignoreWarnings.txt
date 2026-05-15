@@ -72,6 +72,9 @@ Hyperlink 'https://dhp.uz/fhir/core/sid/pid/uz/prn/*/mrt' at 'div/div/table/tr/t
 No definition could be found for URL value 'https://dhp.uz/fhir/core/sid/pid/gb/ppn'
 No definition could be found for URL value 'https://dhp.uz/fhir/core/sid/pid/gb/dl'
 
+# MIS DMED UZ identifier system - internal system URL, not registered as NamingSystem - can be ignored
+No definition could be found for URL value 'https://mis.dmed.uz'
+
 # R5 core spec references this extension but it's not published anywhere, known FHIR R5 issue - can be ignored
 The extension http://hl7.org/fhir/StructureDefinition/structuredefinition-implements could not be found so is not allowed here
 No definition could be found for URL value 'http://hl7.org/fhir/StructureDefinition/structuredefinition-implements'
