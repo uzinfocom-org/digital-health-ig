@@ -2,7 +2,7 @@ ValueSet: RouteCodeVS
 Id: route-code-vs
 Title: "Route of administration value set"
 Description: "Route of administration codes with Uzbek and Russian translations"
-* ^url = "https://dhp.uz/fhir/core/ValueSet/route-code-vs"
+* ^url = "https://terminology.dhp.uz/fhir/core/ValueSet/route-code-vs"
 * ^experimental = true
 * ^extension[0].url = $valueset-supplement
 * ^extension[=].valueCanonical = Canonical(RouteCodeCS)

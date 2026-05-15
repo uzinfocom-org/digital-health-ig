@@ -34,3 +34,9 @@ Description: "Route of administration supplement with Uzbek and Russian translat
   * ^designation[+].language = #ru
   * ^designation[=].value = "Трансдермальные средства"
 
+* #260617000 "Intranasal approach"
+  * ^designation[0].language = #uz
+  * ^designation[=].value = "Intranazal"
+  * ^designation[+].language = #ru
+  * ^designation[=].value = "Интраназально"
+

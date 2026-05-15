@@ -2,7 +2,7 @@ ValueSet: ImmunizationSiteVS
 Id: immunization-site-vs
 Title: "Immunization site value set"
 Description: "Immunization site codes with Uzbek and Russian translations"
-* ^url = "https://dhp.uz/fhir/core/ValueSet/immunization-site-vs"
+* ^url = "https://terminology.dhp.uz/fhir/core/ValueSet/immunization-site-vs"
 * ^experimental = true
 * ^extension[0].url = $valueset-supplement
 * ^extension[=].valueCanonical = Canonical(ImmunizationSiteCS)
