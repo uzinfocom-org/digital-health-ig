@@ -1084,3 +1084,5 @@ No definition could be found for URL value 'Encounter/example-encounter/_history
 No definition could be found for URL value 'Observation/blood-pressure-example/_history/1'
 No definition could be found for URL value 'Observation/body-weight-example/_history/1'
 No definition could be found for URL value 'Observation/body-temperature-example/_history/1'
+
+Target Code System http://hl7.org/fhir/sid/cvx doesn't have all content (content = not-present), so the target codes cannot be checked
