@@ -1559,7 +1559,7 @@ Description: "Vaccine Code with Uzbek and Russian translations"
   * ^designation[+].language = #en
   * ^designation[=].value = "Mencevax ACWY"
 
-* #immun-260 "(qizamiq, parotit va qizilchaga qarshi emlash)"
+* #immun-260 "MMR (qizamiq, parotit va qizilchaga qarshi emlash)"
   * ^designation[0].language = #ru
   * ^designation[=].value = "КПК (комбинированная вакцина против кори, паротита и краснухи)"
   * ^designation[+].language = #en
