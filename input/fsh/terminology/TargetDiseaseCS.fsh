@@ -216,7 +216,7 @@ Description: "Target Disease supplement with Uzbek and Russian translations"
 
 * #58750007 "Plague"
   * ^designation[0].language = #uz
-  * ^designation[=].value = "Vabo"
+  * ^designation[=].value = "O'lat"
   * ^designation[+].language = #ru
   * ^designation[=].value = "Чума"
 
