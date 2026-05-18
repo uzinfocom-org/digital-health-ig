@@ -2,7 +2,7 @@ ValueSet: ImmunizationStatusVS
 Id: immunization-status-vs
 Title: "Immunization status value set"
 Description: "Immunization status codes with English and Russian translations"
-* ^url = "https://dhp.uz/fhir/core/ValueSet/immunization-status-vs"
+* ^url = "https://terminology.dhp.uz/fhir/core/ValueSet/immunization-status-vs"
 * ^experimental = true
 * ^extension[0].url = $valueset-supplement
 * ^extension[=].valueCanonical = Canonical(ImmunizationStatusCS)

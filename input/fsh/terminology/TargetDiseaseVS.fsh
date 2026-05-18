@@ -2,7 +2,7 @@ ValueSet: TargetDiseaseVS
 Id: target-disease-vs
 Title: "Target disease value set"
 Description: "Target disease codes with Uzbek and Russian translations"
-* ^url = "https://dhp.uz/fhir/core/ValueSet/target-disease-vs"
+* ^url = "https://terminology.dhp.uz/fhir/core/ValueSet/target-disease-vs"
 * ^experimental = true
 * ^extension[0].url = $valueset-supplement
 * ^extension[=].valueCanonical = Canonical(TargetDiseaseCS)

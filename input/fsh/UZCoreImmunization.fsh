@@ -10,151 +10,152 @@ Description: "Uzbekistan Core Immunization profile, used to represent immunizati
 * ^publisher = "Uzinfocom"
 
 * identifier 0..* MS
-* identifier ^short = "Бизнес-идентификатор"
+* identifier ^short = "Business identifier"
 
 * basedOn 0..* MS
 * basedOn only Reference(CarePlan or MedicationRequest or ServiceRequest or ImmunizationRecommendation)
-* basedOn ^short = "Право, на котором основывается мероприятие"
+* basedOn ^short = "The legal basis for the event"
 
 * status 1..1 MS
 * status from ImmunizationStatusVS (required)
-* status ^short = "Статус вакцинации"
+* status ^short = "Vaccination status"
 
 * statusReason 0..1 MS
 * statusReason from ImmunizationStatusReasonVS (required)
-* statusReason ^short = "Причина статуса"
+* statusReason ^short = "Status Reason"
 
 * vaccineCode 1..1 MS
 * vaccineCode from VaccineCodeVS (extensible)
-* vaccineCode ^short = "Введённая вакцина"
+* vaccineCode ^short = "Administered vaccine"
 
 * administeredProduct 0..1 MS
 * administeredProduct only CodeableReference(Medication)
-* administeredProduct ^short = "Препарат"
+* administeredProduct ^short = "Vaccine product"
 
 
 * lotNumber 0..1 MS
-* lotNumber ^short = "Номер серии вакцины"
+* lotNumber ^short = "Vaccine batch number (lot number)"
 
 * expirationDate 0..1 MS
-* expirationDate ^short = "Срок годности вакцины"
+* expirationDate ^short = "Vaccine expiry date"
 
 * patient 1..1 MS
 * patient only Reference(UZCorePatient)
-* patient ^short = "Пациент"
+* patient ^short = "Patient"
 
 * encounter 0..1 MS
 * encounter only Reference(UZCoreEncounter)
-* encounter ^short = "Связанный контакт"
+* encounter ^short = "Related contact"
 
 * supportingInformation 0..* MS
 * supportingInformation only Reference(
     UZCoreObservation or
     UZCoreCondition
 )
-* supportingInformation ^short = "Дополнительная информация"
+* supportingInformation ^short = "Additional information"
 
 * occurrence[x] 1..1 MS
-* occurrence[x] ^short = "Дата введения вакцины"
+* occurrence[x] ^short = "Date of vaccine administration"
 
 * occurrenceDateTime MS
-* occurrenceDateTime ^short = "Дата (dateTime)"
+* occurrenceDateTime ^short = "Date (dateTime)"
 
 * occurrenceString MS
-* occurrenceString ^short = "Дата (string)"
+* occurrenceString ^short = "Date (string)"
 
 * primarySource 0..1 MS
-* primarySource ^short = "Первичный источник"
+* primarySource ^short = "Primary source"
 
 * informationSource 0..1 MS
 * informationSource only CodeableReference(UZCorePatient or UZCorePractitioner or UZCorePractitionerRole or RelatedPerson or UZCoreOrganization)
 * informationSource from ImmunizationOriginVS (extensible)
-* informationSource ^short = "Источник данных"
+* informationSource ^short = "Data source"
 
 * location 0..1 MS
 * location only Reference(UZCoreLocation)
-* location ^short = "Место вакцинации"
+* location ^short = "Vaccination location"
 
 * site 0..1 MS
 * site from ImmunizationSiteVS (extensible)
-* site ^short = "Место введения"
+* site ^short = "Administration site"
 
 * route 0..1 MS
 * route from RouteCodeVS (example)
-* route ^short = "Способ введения"
+* route ^short = "Route of administration"
 
 * doseQuantity 0..1 MS
-* doseQuantity ^short = "Доза"
+* doseQuantity ^short = "Dose"
 
 * performer 0..* MS
-* performer ^short = "Исполнитель"
+* performer ^short = "Performer"
 
 * performer.function 0..1 MS
-* performer.function ^short = "Роль"
+* performer.function ^short = "Role"
 
 * performer.actor 1..1 MS
 * performer.actor only Reference(UZCorePractitioner or UZCorePractitionerRole or UZCoreOrganization or UZCorePatient or RelatedPerson)
-* performer.actor ^short = "Кто выполнил"
+* performer.actor ^short = "Who completed"
 
 * note 0..* MS
-* note ^short = "Примечания"
+* note ^short = "Notes"
 
 * reason 0..* MS
 * reason only CodeableReference(UZCoreCondition or UZCoreObservation or DiagnosticReport)
-* reason ^short = "Причина вакцинации"
+* reason ^short = "Vaccination reason"
 
 * isSubpotent 0..1 MS
-* isSubpotent ^short = "Субпотентность"
+* isSubpotent ^short = "Subpotent"
 
 * subpotentReason 0..* MS
 * subpotentReason from SubpotentReasonVS (example)
-* subpotentReason ^short = "Причина субпотентности"
+* subpotentReason ^short = "Subpotent reason"
 
 * programEligibility 0..* MS
-* programEligibility ^short = "Программа вакцинации"
+* programEligibility ^short = "Vaccination program"
 
 * programEligibility.program 1..1 MS
-* programEligibility.program ^short = "Программа"
+* programEligibility.program ^short = "Program"
 
 * programEligibility.programStatus 1..1 MS
-* programEligibility.programStatus ^short = "Статус участия"
+* programEligibility.programStatus ^short = "Participation status"
 
 * fundingSource 0..1 MS
 * fundingSource from FundingSourceVS (example)
-* fundingSource ^short = "Источник финансирования"
+* fundingSource ^short = "Funding Source"
 
 * reaction 0..* MS
-* reaction ^short = "Реакции"
+* reaction ^short = "Reaction"
 
 * reaction.date 0..1 MS
-* reaction.date ^short = "Дата реакции"
+* reaction.date ^short = "Reaction date"
 
 * reaction.manifestation 0..1 MS
 * reaction.manifestation only CodeableReference(UZCoreObservation)
-* reaction.manifestation ^short = "Проявление"
+* reaction.manifestation from ReactionTypeVS
+* reaction.manifestation ^short = "Manifestation"
 
 * reaction.reported 0..1 MS
-* reaction.reported ^short = "Самоотчёт"
+* reaction.reported ^short = "Self-reported"
 
 * protocolApplied 0..* MS
-* protocolApplied ^short = "Протокол"
+* protocolApplied ^short = "Protocol"
 
 * protocolApplied.series 0..1 MS
-* protocolApplied.series ^short = "Серия"
+* protocolApplied.series ^short = "Series"
 
 * protocolApplied.authority 0..1 MS
 * protocolApplied.authority only Reference(UZCoreOrganization)
-* protocolApplied.authority ^short = "Организация"
+* protocolApplied.authority ^short = "Authority organization"
 
 * protocolApplied.targetDisease 0..* MS
 * protocolApplied.targetDisease from TargetDiseaseVS (extensible)
-* protocolApplied.targetDisease ^short = "Целевое заболевание"
+* protocolApplied.targetDisease ^short = "Target Disease"
 
 * protocolApplied.doseNumber 1..1 MS
-* protocolApplied.doseNumber ^short = "Номер дозы"
+* protocolApplied.doseNumber ^short = "Dose number"
 
 * protocolApplied.seriesDoses 0..1 MS
-* protocolApplied.seriesDoses ^short = "Всего доз"
+* protocolApplied.seriesDoses ^short = "Total doses"
 
 
 
@@ -173,17 +174,17 @@ Description: "Example immunization event for UZ Core Immunization profile."
 * status = #completed
 * statusReason = $v3-ActReason#IMMUNE "immunity"
 
-* vaccineCode = $sct#871722007 "Vaccine product containing only Adenovirus antigen (medicinal product)"
+* vaccineCode = vaccine-code-cs#immun-5 "Bacillus Calmette-Guerin vaccine"
 
 * administeredProduct.reference = Reference(medication-imm-001)
 
 * lotNumber = "LOT-BCG-2026-01"
 * expirationDate = "2027-01-31"
 
-* patient = Reference(example-emma)
+* patient = Reference(example-salim)
 * encounter = Reference(example-encounter)
 
-* supportingInformation[0] = Reference(observation-immunization-example)
+* supportingInformation[0] = Reference(body-temperature-example)
 
 * occurrenceDateTime = "2026-04-28T10:30:00+05:00"
 
@@ -197,7 +198,7 @@ Description: "Example immunization event for UZ Core Immunization profile."
 * site = $v3-ActSite#LA "Left arm"
 * route = $sct#36673005 "Intradermal injection"
 
-* doseQuantity.value = 0.5
+* doseQuantity.value = 0.05
 * doseQuantity.unit = "mL"
 * doseQuantity.system = "http://unitsofmeasure.org"
 * doseQuantity.code = #mL
@@ -205,7 +206,7 @@ Description: "Example immunization event for UZ Core Immunization profile."
 * performer[0].function = $v2-0443#AP "Administering Provider"
 * performer[0].actor = Reference(example-practitioner)
 
-* reason[0].concept = $sct#26643006 "Oral route"
+* reason[0].reference = Reference(condition-tuberculosis-risk-example)
 
 * isSubpotent = false
 
@@ -215,14 +216,14 @@ Description: "Example immunization event for UZ Core Immunization profile."
 * fundingSource = $immunization-funding-source#private "Private"
 
 * reaction[0].date = "2026-04-28T12:00:00+05:00"
-* reaction[0].manifestation.reference = Reference(observation-reaction-example)
+* reaction[0].manifestation.concept = $sct#260389003 "No reaction"
 * reaction[0].reported = false
 
-* protocolApplied[0].series = "Routine childhood vaccination"
-* protocolApplied[0].authority = Reference(example-organization)
-* protocolApplied[0].targetDisease = $sct#186772009 "RMSF - Rocky Mountain spotted fever"
+* protocolApplied[0].series = "BCG vaccination"
+* protocolApplied[0].authority = Reference(example-immunization-organization)
+* protocolApplied[0].targetDisease = $sct#56717001 "Tuberculosis"
 * protocolApplied[0].doseNumber = "1"
-* protocolApplied[0].seriesDoses = "2"
+* protocolApplied[0].seriesDoses = "1"
 
 * note[0].text = "Patient tolerated vaccination well."
 
@@ -233,48 +234,71 @@ Description: "Example immunization event for UZ Core Immunization profile."
 Instance: medication-imm-001
 InstanceOf: Medication
 Usage: #example
-Title: "Medication - Adenovirus Vaccine"
-Description: "Example Medication resource representing an Adenovirus vaccine using SNOMED CT code."
+Title: "Medication - BCG Vaccine"
+Description: "Example Medication resource representing a Bacillus Calmette-Guerin vaccine."
+* language = #en
+* code = vaccine-code-cs#immun-5 "Bacillus Calmette-Guerin vaccine"
 
-* code = $sct#871722007 "Vaccine product containing only Adenovirus antigen (medicinal product)"
 
 
 Instance: observation-reaction-example
 InstanceOf: UZCoreObservation
 Usage: #example
 Title: "Observation - Post-immunization reaction"
-Description: "Example Observation capturing a post-immunization reaction (fever) for a patient."
+Description: "Example Observation capturing a post-immunization reaction for a patient."
+
+* language = #en
 
 * status = #final
 * code = $loinc#75325-1 "Symptom"
-* subject = Reference(example-emma)
-* effectiveDateTime = "2026-04-29T10:00:00+05:00"
+* subject = Reference(example-salim)
+* effectiveDateTime = "2026-04-28T12:00:00+05:00"
+* performer = Reference(example-practitioner)
 * valueCodeableConcept = $sct#386661006 "Fever"
-
-
-
-Instance: observation-immunization-example
-InstanceOf: UZCoreObservation
-Usage: #example
-Title: "Observation - Body weight"
-Description: "Example Observation representing body weight measurement of a patient."
-
-* status = #final
-* category = $observation-category#vital-signs "Vital Signs"
-* code = $loinc#29463-7 "Body Weight"
-* subject = Reference(Patient/example-salim)
-* effectiveDateTime = "2016-03-28"
-* performer = Reference(Practitioner/example-practitioner)
-* valueQuantity = 185 '[lb_av]' "lbs"
 
 
 
 Instance: immunization-recommendation-example
 InstanceOf: ImmunizationRecommendation
 Usage: #example
-Title: "Immunization Recommendation"
-Description: "Example ImmunizationRecommendation resource indicating a due vaccine for a patient."
-* patient = Reference(example-emma)
+Title: "Immunization Recommendation - BCG"
+Description: "Example ImmunizationRecommendation resource indicating a due BCG vaccine for a patient."
+
+* language = #en
+
+* patient = Reference(example-salim)
 * date = "2026-04-27"
-* recommendation[0].vaccineCode = $sct#871751006 "Vaccine product containing only Hepatitis A virus antigen (medicinal product)"
+* recommendation[0].vaccineCode = $sct#836402002 "Bacillus Calmette-Guerin antigen-containing vaccine product"
 * recommendation[0].forecastStatus = $sct#171279008 "Immunization due"
+
+Instance: condition-tuberculosis-risk-example
+InstanceOf: UZCoreCondition
+Usage: #example
+Title: "Condition - Tuberculosis vaccination indication"
+Description: "Example condition representing indication for BCG vaccination."
+
+* language = #en
+
+* clinicalStatus = $condition-clinical#active "Active"
+* verificationStatus = $condition-ver-status#confirmed "Confirmed"
+* code = $sct#56717001 "Tuberculosis"
+* subject = Reference(example-salim)
+
+Instance: example-immunization-organization
+InstanceOf: UZCoreOrganization
+Title: "Example of Immunization Organization"
+Description: "Example of a national immunization organization"
+Usage: #example
+
+* language = #en
+
+* active = true
+
+* type.coding[organizationalStructure] =
+    organizational-structure-cs#110 "Specialized scientific and practical medical center"
+
+* type.coding[specialization] =
+    organizational-specialization-cs#153.0 "Tuberculosis in adults"
+
+* name = "Republican Tuberculosis and Pulmonology Center"
+
