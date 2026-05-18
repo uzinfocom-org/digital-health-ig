@@ -11,3 +11,4 @@ Description: "Immunization recommendation forecast status codes with Uzbek and R
 * $immunization-recommendation-status#overdue "Overdue"
 * $immunization-recommendation-status#immune "Immune"
 * $immunization-recommendation-status#contraindicated "Contraindicated"
+* $immunization-recommendation-status#complete "Complete"
