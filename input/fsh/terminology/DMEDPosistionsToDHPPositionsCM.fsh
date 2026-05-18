@@ -1257,11 +1257,7 @@ Description: "DMED Position and Professions to DHP Position and Professions Conc
 * group[=].element[=].target[=].relationship = #source-is-narrower-than-target
 
 
-// Group 2: DMEDProfessionsCS to DHP 
-* group[+].source = Canonical(DMEDProfessionsCS)
-* group[=].target = $position-and-profession
-//* targetScopeCanonical = Canonical(PositionAndProfessionVS)
-
+// Continuation: more DMEDProfessionsCS to PositionAndProfessionCS mappings
 * group[=].element[+].code = #384
 * group[=].element[=].display = "Psixonevrolog" // ru: Психоневролог
 * group[=].element[=].target[+].code = #2212-157
@@ -1783,45 +1779,3 @@ Description: "DMED Position and Professions to DHP Position and Professions Conc
 * group[=].element[=].target[+].code = #3230-004
 * group[=].element[=].target[=].display = "Xalq tabobati boʻyicha mutaxassis"
 * group[=].element[=].target[=].relationship = #equivalent
-
-
-// Group 3: DMEDProfessionsCS to Snomed
-* group[+].source = Canonical(DMEDProfessionsCS)
-* group[=].target = $sct
-//* targetScopeCanonical = $sct-vs
-
-* group[=].element[+].code = #370
-* group[=].element[=].display = "Statsionar shifokori" // ru: Стационарный врач
-* group[=].element[=].target[+].code = #405279007
-* group[=].element[=].target[=].display = "Attending physician"
-* group[=].element[=].target[=].relationship = #source-is-narrower-than-target
-
-* group[=].element[+].code = #445
-* group[=].element[=].display = "Gistolog" // ru: Гистолог
-* group[=].element[=].target[+].code = #159143006
-* group[=].element[=].target[=].display = "Histologist"
-* group[=].element[=].target[=].relationship = #equivalent
-
-* group[=].element[+].code = #1066
-* group[=].element[=].display = "Neyroreabilitolog" // ru: Нейрореабилитолог
-* group[=].element[=].target[+].code = #25855006
-* group[=].element[=].target[=].display = "Neurological rehabilitation"
-* group[=].element[=].target[=].relationship = #related-to
-
-* group[=].element[+].code = #396
-* group[=].element[=].display = "Bolalar KBB (otolaringolog)" // ru: Детский ЛОР (Отоларинголог)
-* group[=].element[=].target[+].code = #309372007
-* group[=].element[=].target[=].display = "Ear, nose and throat surgeon"
-* group[=].element[=].target[=].relationship = #equivalent
-
-* group[=].element[+].code = #433
-* group[=].element[=].display = "Dopplerografiya" // ru: Допплерография
-* group[=].element[=].target[+].code = #431488007
-* group[=].element[=].target[=].display = "Doppler ultrasound of myocardium for tissue strain rate"
-* group[=].element[=].target[=].relationship = #equivalent
-
-* group[=].element[+].code = #413
-* group[=].element[=].display = "Kunduzgi shifoxona shifokori" // ru: Врач дневного стационара
-* group[=].element[=].target[+].code = #405279007
-* group[=].element[=].target[=].display = "Attending physician"
-* group[=].element[=].target[=].relationship = #source-is-narrower-than-target

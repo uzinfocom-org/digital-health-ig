@@ -62,6 +62,8 @@ The property uri 'urn:iso:std:iso:3166' is not known, so the property values can
 # ISO 3166 allows this to be user-assigned - this is a tx.fhir.org issue that we can ignore
 Unknown code 'XY' in the CodeSystem 'urn:iso:std:iso:3166'%
 Unknown code 'XX' in the CodeSystem 'urn:iso:std:iso:3166'%
+# XK is the user-assigned ISO 3166 code commonly used for Kosovo - tx.fhir.org doesn't recognise it
+The target code 'XK' is not valid in the code system urn:iso:std:iso:3166%
 
 # IG Publisher / TX doesn't have contents of ISO 3166 codesystems - can be ignored
 Source Code System urn:iso:std:iso:3166 doesn't have all content (content = not-present), so the source codes cannot be checked

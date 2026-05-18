@@ -8,6 +8,7 @@ Description: "ConceptMap for mapping DMED  measure unit codes to DHP  measure un
 * status = #draft
 * experimental = false
 * publisher = "Uzinfocom"
+* targetScopeCanonical = $ucum-vs
 
 * group.source = Canonical(DMEDMeasureUnitCS)
 * group.target = $ucum
@@ -117,10 +118,10 @@ Description: "ConceptMap for mapping DMED  measure unit codes to DHP  measure un
 * group[=].element[=].target[=].display = "radian"
 * group[=].element[=].target[=].relationship = #related-to
 
-// 13 Осм -> osmol
+// 13 Осм -> osm
 * group[=].element[+].code = #13
 * group[=].element[=].display = "Осм"
-* group[=].element[=].target[+].code = #osmol
+* group[=].element[=].target[+].code = #osm
 * group[=].element[=].target[=].display = "osmole"
 * group[=].element[=].target[=].relationship = #related-to
 

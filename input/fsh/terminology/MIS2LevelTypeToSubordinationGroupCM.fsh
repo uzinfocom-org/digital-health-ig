@@ -10,6 +10,7 @@ Description: "Maps MIS2 organization level type codes to UZ Core Organizational 
 * publisher = "Uzinfocom"
 * targetScopeCanonical = Canonical(OrganizationalSubordinationGroupVS)
 * group.source = $ssv-organization-type-level
+* group.target = Canonical(OrganizationalSubordinationGroupCS)
 
 
 * group.element[+].code = #1
