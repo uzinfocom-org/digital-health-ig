@@ -26,6 +26,10 @@ dependencies:
     id: fhir_dicom
     uri: http://fhir.org/packages/fhir.dicom/ImplementationGuide/fhir.dicom
     version: 2025.2.20250411
+  # https://chat.fhir.org/#narrow/channel/215610-shorthand/topic/R5.20Questionnaires.20inheriting.20structuredefinition-implements
+  hl7.fhir.uv.extensions.r5: 5.3.0-ballot-tc1
+
+
 
 # the following are for offline use only
 #  hl7.fhir.uv.tools.r5: 0.5.0
@@ -104,7 +108,7 @@ menu:
     Vital signs: vital-signs.html
   API access: api-access.html
   Artifacts: artifacts.html
-  Services: services.html
+  Components: components.html
   Changelog: changelog.html
 
 # ╭───────────────────────────Less Common Implementation Guide Properties──────────────────────────╮
