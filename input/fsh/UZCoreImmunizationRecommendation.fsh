@@ -104,7 +104,6 @@ Title: "Example UZ Core ImmunizationRecommendation"
 Description: "Example of an immunization recommendation with non-mandatory elements included."
 
 * identifier.system = "https://dhp.uz/fhir/core/NamingSystem/immunization-recommendation-id"
-* identifier.value = "IMM-REC-0001"
 
 * patient = Reference(example-emma)
 
