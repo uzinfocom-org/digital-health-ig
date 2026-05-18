@@ -592,7 +592,7 @@ Description: "ConceptMap for mapping DMED  measure unit codes to DHP  measure un
 * group[=].element[=].target[+].code = #[drp]
 * group[=].element[=].target[=].display = "drop"
 * group[=].element[=].target[=].relationship = #related-to
-
+/*
 // 492 DU -> [D'ag'U]
 * group[=].element[+].code = #492
 * group[=].element[=].display = "DU"
@@ -614,7 +614,7 @@ Description: "ConceptMap for mapping DMED  measure unit codes to DHP  measure un
 * group[=].element[=].target[+].code = #[D'ag'U]
 * group[=].element[=].target[=].display = "D-antigen unit"
 * group[=].element[=].target[=].relationship = #related-to
-
+*/
 // 530 колониеобразующие единицы -> [CFU]
 * group[=].element[+].code = #530
 * group[=].element[=].display = "колониеобразующие единицы"
