@@ -21,11 +21,11 @@ Description: "Uzbekistan Core Immunization profile, used to represent immunizati
 * status ^short = "Vaccination status"
 
 * statusReason 0..1 MS
-* statusReason from ImmunizationStatusReasonVS (example)
-* statusReason ^short = "Reason status"
+* statusReason from ImmunizationStatusReasonVS (required)
+* statusReason ^short = "Status Reason"
 
 * vaccineCode 1..1 MS
-* vaccineCode from VaccineCodeVS (example)
+* vaccineCode from VaccineCodeVS (extensible)
 * vaccineCode ^short = "Administered vaccine"
 
 * administeredProduct 0..1 MS
@@ -68,7 +68,7 @@ Description: "Uzbekistan Core Immunization profile, used to represent immunizati
 
 * informationSource 0..1 MS
 * informationSource only CodeableReference(UZCorePatient or UZCorePractitioner or UZCorePractitionerRole or RelatedPerson or UZCoreOrganization)
-* informationSource from ImmunizationOriginVS (example)
+* informationSource from ImmunizationOriginVS (extensible)
 * informationSource ^short = "Data source"
 
 * location 0..1 MS
@@ -76,8 +76,8 @@ Description: "Uzbekistan Core Immunization profile, used to represent immunizati
 * location ^short = "Vaccination location"
 
 * site 0..1 MS
-* site from ImmunizationSiteVS (example)
-* site ^short = "Injection site"
+* site from ImmunizationSiteVS (extensible)
+* site ^short = "Administration site"
 
 * route 0..1 MS
 * route from RouteCodeVS (example)
@@ -148,7 +148,7 @@ Description: "Uzbekistan Core Immunization profile, used to represent immunizati
 * protocolApplied.authority ^short = "Authority organization"
 
 * protocolApplied.targetDisease 0..* MS
-* protocolApplied.targetDisease from TargetDiseaseVS (example)
+* protocolApplied.targetDisease from TargetDiseaseVS (extensible)
 * protocolApplied.targetDisease ^short = "Target Disease"
 
 * protocolApplied.doseNumber 1..1 MS

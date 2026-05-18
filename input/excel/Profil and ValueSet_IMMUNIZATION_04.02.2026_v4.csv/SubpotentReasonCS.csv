@@ -1,0 +1,6 @@
+CODE	UZ	RU	EN																						
+ partialdose	Qisman doza	Частичная доза	Partial Dose																						
+  coldchainbreak 	Sovuq zanjirning buzilishi	Нарушение холодовой цепи	Cold Chain Break	http://hl7.org/fhir/ValueSet/immunization-subpotent-reason																					
+  recall	 Ishlab chiqaruvchining sharhi	 Отзыв производителя	"	Manufacturer Recall"																						
+  adversestorage	Noqulay saqlash sharoitlari	Неблагоприятные условия хранения	Adverse Storage																						
+  expired	Muddati o'tgan mahsulot	Просроченный продукт	"	Expired Product"																						

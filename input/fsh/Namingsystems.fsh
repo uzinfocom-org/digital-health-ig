@@ -416,8 +416,6 @@ Usage: #definition
 * uniqueId[=].value = $pension-number
 * uniqueId[=].preferred = true
 
-
-
 //
 Instance: immunization-identifier
 InstanceOf: NamingSystem
@@ -432,3 +430,22 @@ Description: "Identifier system for immunization records in Uzbekistan."
 * uniqueId[0].type = #uri
 * uniqueId[0].value = "https://terminology.dhp.uz/fhir/core/NamingSystem/immunization-identifier"
 * uniqueId[0].preferred = true
+
+Instance: uzb-mis-dmed
+InstanceOf: NamingSystem
+Description: "Clinical record identifiers issued by the Uzbekistan Medical Information System (MIS)"
+Usage: #definition
+* url = "https://terminology.dhp.uz/fhir/core/NamingSystem/uzb-mis-dmed"
+* name = "UzbekistanMedicalInformationSystem"
+* status = #active
+* kind = #identifier
+* date = "2026-05-11"
+* publisher = "Uzinfocom"
+* responsible = "Ministry of Health of the Republic of Uzbekistan"
+* type = $identifier-type#FILL "Filler Identifier"
+* description = "Naming system for clinical record identifiers (e.g., procedure, encounter, observation IDs) issued by the Uzbekistan Medical Information System (MIS) at https://mis.dmed.uz."
+* jurisdiction = urn:iso:std:iso:3166#UZ "Uzbekistan"
+* usage = "Used for identifying clinical records assigned by the Uzbekistan Medical Information System."
+* uniqueId[0].type = #uri
+* uniqueId[=].value = $mis-dmed-uz
+* uniqueId[=].preferred = true
