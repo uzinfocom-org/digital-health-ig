@@ -129,4 +129,5 @@ Alias: $specimen-role = http://hl7.org/fhir/specimen-role
 Alias: $nationality-cs = https://terminology.dhp.uz/fhir/core/CodeSystem/nationality-cs
 Alias: $position-and-profession = https://cs.egov.uz/#/tableData/65f3d311971593b975865fd8
 Alias: $cvx = http://hl7.org/fhir/sid/cvx
+//Alias: $cvx = http://hl7.org/fhir/ValueSet/vaccine-code
 Alias: $ucum = http://unitsofmeasure.org
