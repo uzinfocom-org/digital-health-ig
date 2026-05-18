@@ -434,3 +434,38 @@ Usage: #definition
 * uniqueId[0].type = #uri
 * uniqueId[=].value = $mis-dmed-uz
 * uniqueId[=].preferred = true
+
+
+
+
+
+// Namingsystems for UZCorePlanDefinition
+Instance: plan-definition-id
+InstanceOf: NamingSystem
+Usage: #definition
+* name = "PlanDefinitionIdentifier"
+* status = #active
+* kind = #identifier
+* date = "2026-05-14"
+* publisher = "Digital Health Platform"
+* description = "Identifier system for PlanDefinition resources."
+* uniqueId[0].type = #uri
+* uniqueId[0].value = "https://terminology.dhp.uz/fhir/core/sid/plan-definition"
+* uniqueId[0].preferred = true
+
+
+// This namingsystem is created because reference for Group Profile is used and identifier is necessary.
+// But profile for Group has not created yet.
+Instance: group-id
+InstanceOf: NamingSystem
+Usage: #definition
+
+* name = "GroupIdentifier"
+* status = #active
+* kind = #identifier
+* date = "2026-05-14"
+* publisher = "DHP Uzbekistan"
+* description = "Identifier system for Group resources."
+* uniqueId[0].type = #uri
+* uniqueId[0].value = "https://terminology.dhp.uz/fhir/core/sid/group"
+* uniqueId[0].preferred = true
