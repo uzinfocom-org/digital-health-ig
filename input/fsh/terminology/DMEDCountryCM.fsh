@@ -9,7 +9,7 @@ Description: "DMED Country to DHP Country ConcepMap"
 * experimental = false
 * publisher = "Uzinfocom"
 * group.source = Canonical(DMEDCountryCS)
-* group.target = $sct
+* group.target = $iso-3166
 
 * group[=].element[+].code = #1
 * group[=].element[=].display = "Сенегал"
