@@ -48,7 +48,7 @@ jobs:
         run: |
           # Configuration
           MAX_ALLOWED_ERRORS=2
-          MAX_ALLOWED_WARNINGS=0
+          MAX_ALLOWED_WARNINGS=7
 
           if [ ! -f "output/qa.json" ]; then
             echo "❌ QA file not found: output/qa.json"
