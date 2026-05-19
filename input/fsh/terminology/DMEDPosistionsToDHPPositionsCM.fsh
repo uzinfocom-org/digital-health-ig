@@ -1267,31 +1267,31 @@ Description: "DMED Position and Professions to DHP Position and Professions Conc
 * group[=].element[+].code = #356
 * group[=].element[=].display = "Metodist" // ru: Методист
 * group[=].element[=].target[+].code = #2212
-* group[=].element[=].target[=].display = "Vrach-mutaxassislar"
+* group[=].element[=].target[=].display = "Vrach-mutaxasislar"
 * group[=].element[=].target[=].relationship = #source-is-narrower-than-target
 
 * group[=].element[+].code = #358
 * group[=].element[=].display = "VKK shifokori" // ru: врач ВКК
 * group[=].element[=].target[+].code = #2212
-* group[=].element[=].target[=].display = "Vrach-mutaxassislar"
+* group[=].element[=].target[=].display = "Vrach-mutaxasislar"
 * group[=].element[=].target[=].relationship = #source-is-narrower-than-target
 
 * group[=].element[+].code = #411
 * group[=].element[=].display = "TMEK shifokori (tibbiy mehnat ekspert komissiyasi)" // ru: Врач ВТЭК (врачебно-трудовая экспертная комиссия)
 * group[=].element[=].target[+].code = #2212
-* group[=].element[=].target[=].display = "Vrach-mutaxassislar"
+* group[=].element[=].target[=].display = "Vrach-mutaxasislar"
 * group[=].element[=].target[=].relationship = #source-is-narrower-than-target
 
 * group[=].element[+].code = #459
 * group[=].element[=].display = "Torakal jarroh" // ru: Торакальный хирург
 * group[=].element[=].target[+].code = #2212
-* group[=].element[=].target[=].display = "Vrach-mutaxassislar"
+* group[=].element[=].target[=].display = "Vrach-mutaxasislar"
 * group[=].element[=].target[=].relationship = #source-is-narrower-than-target
 
 * group[=].element[+].code = #383
 * group[=].element[=].display = "MedHub Integratori" // ru: Интегратор MedHub
 * group[=].element[=].target[+].code = #2511
-* group[=].element[=].target[=].display = "Tizim tahlilchilari"
+* group[=].element[=].target[=].display = "Axborot kommunikatsiya texnologiyalari bo'yicha professional-mutaxassislar. Dastur ta'minoti va ilovalar ishlab chiquvchilar va tahlilchilar. Tizim tahlilchilari"
 * group[=].element[=].target[=].relationship = #source-is-narrower-than-target
 
 * group[=].element[+].code = #818

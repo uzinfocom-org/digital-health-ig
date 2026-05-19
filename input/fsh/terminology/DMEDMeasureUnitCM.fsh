@@ -103,14 +103,14 @@ Description: "ConceptMap for mapping DMED  measure unit codes to DHP  measure un
 * group[=].element[=].target[+].code = #U
 * group[=].element[=].target[=].display = "unit"
 * group[=].element[=].target[=].relationship = #related-to
-
+/*
 // 6 Рд -> RD
 * group[=].element[+].code = #6
 * group[=].element[=].display = "Рд"
 * group[=].element[=].target[+].code = #RD
 * group[=].element[=].target[=].display = "rod"
 * group[=].element[=].target[=].relationship = #related-to
-
+*/
 // 8 рад -> rad
 * group[=].element[+].code = #8
 * group[=].element[=].display = "рад"
