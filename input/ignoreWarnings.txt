@@ -62,8 +62,6 @@ The property uri 'urn:iso:std:iso:3166' is not known, so the property values can
 # ISO 3166 allows this to be user-assigned - this is a tx.fhir.org issue that we can ignore
 Unknown code 'XY' in the CodeSystem 'urn:iso:std:iso:3166'%
 Unknown code 'XX' in the CodeSystem 'urn:iso:std:iso:3166'%
-# XK is the user-assigned ISO 3166 code commonly used for Kosovo - tx.fhir.org doesn't recognise it
-The target code 'XK' is not valid in the code system urn:iso:std:iso:3166%
 
 # IG Publisher / TX doesn't have contents of ISO 3166 codesystems - can be ignored
 Source Code System urn:iso:std:iso:3166 doesn't have all content (content = not-present), so the source codes cannot be checked
@@ -78,9 +76,6 @@ Hyperlink 'https://dhp.uz/fhir/core/sid/pid/uz/prn/*/mrt' at 'div/div/table/tr/t
 # sample systems from our IdentifierDomain where we have all foreign drivers licenses and passports - creating NamingSystem for them all is impractical
 No definition could be found for URL value 'https://dhp.uz/fhir/core/sid/pid/gb/ppn'
 No definition could be found for URL value 'https://dhp.uz/fhir/core/sid/pid/gb/dl'
-
-# This version is correct as structuredefinition-implements error is only fixed in it
-The ImplementationGuide uses package hl7.fhir.uv.extensions.r5#5.3.0-ballot-tc1 released on 2025-08-03, but the most recent appropriate version is 5.2.0. This reference is getting old and the more recent version should be considered
 
 # IG Publisher generates inline scripts for Questionnaire/QuestionnaireResponse table filters then warns they're illegal - bug reported, can be ignored
 The <script> containing the javascript '//%
@@ -1086,5 +1081,3 @@ No definition could be found for URL value 'Encounter/example-encounter/_history
 No definition could be found for URL value 'Observation/blood-pressure-example/_history/1'
 No definition could be found for URL value 'Observation/body-weight-example/_history/1'
 No definition could be found for URL value 'Observation/body-temperature-example/_history/1'
-
-Target Code System http://unitsofmeasure.org doesn't have all content (content = not-present), so the target codes cannot be checked
