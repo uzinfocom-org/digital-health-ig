@@ -1,18 +1,18 @@
-Instance: vaccine-code-conceptmap
+Instance: vaccine-code-to-snomed-cm
 InstanceOf: ConceptMap
 Usage: #definition
-Title: "Vaccine codes to SNOMED CT / CVX"
-Description: "Maps local UZ vaccine codes to SNOMED CT and CVX."
-* url = "https://terminology.dhp.uz/fhir/core/ConceptMap/vaccine-code-conceptmap"
-* name = "VaccineCodeToSnomedAndCVX"
+Title: "Vaccine codes to SNOMED CT"
+Description: "Maps local UZ vaccine codes to SNOMED CT."
+* url = "https://terminology.dhp.uz/fhir/core/ConceptMap/vaccine-code-to-snomed-cm"
+* name = "VaccineCodeToSnomed"
 * status = #draft
 * experimental = false
 * publisher = "Uzinfocom"
 
 * group[+].source = Canonical(VaccineCodeCS)
+* sourceScopeCanonical = Canonical(VaccineCodeVS)
 * group[=].target = $sct
 * targetScopeCanonical = $sct-vs
-
 
 * group[=].element[+].code = #immun-1
 * group[=].element[=].display = "Adenovirusga qarshi emlash, 4-toifa, jonli, og'iz orqali"
@@ -1667,84 +1667,3 @@ Description: "Maps local UZ vaccine codes to SNOMED CT and CVX."
 * group[=].element[=].target[+].code = #871919004
 * group[=].element[=].target[=].display = "Vaccine product containing only Human alphaherpesvirus 3 antigen (medicinal product)"
 * group[=].element[=].target[=].relationship = #equivalent
-
-
-//CVX codes
-* group[+].source = Canonical(VaccineCodeCS)
-* group[=].target = $cvx
-* targetScopeCanonical = $cvx-vs
-
-* group[=].element[+].code = #immun-116
-* group[=].element[=].display = "varikella-zoster vaktsinasi"
-* group[=].element[=].target[+].code = #21
-* group[=].element[=].target[=].display = "varicella"
-* group[=].element[=].target[=].relationship = #equivalent
-
-
-* group[=].element[+].code = #immun-117
-* group[=].element[=].display = "Venesuela ot ensefaliti, faolsizlangan"
-* group[=].element[=].target[+].code = #81
-* group[=].element[=].target[=].display = "VEE, inactivated"
-* group[=].element[=].target[=].relationship = #equivalent
-
-
-* group[=].element[+].code = #immun-119
-* group[=].element[=].display = "Venesuela ot ensefalitiga qarshi emlash, aniqlanmagan formulasi"
-* group[=].element[=].target[+].code = #92
-* group[=].element[=].target[=].display = "VEE, unspecified formulation"
-* group[=].element[=].target[=].relationship = #equivalent
-
-
-* group[=].element[+].code = #immun-126
-* group[=].element[=].display = "zaxiralangan - foydalanmang"
-* group[=].element[=].target[+].code = #99
-* group[=].element[=].target[=].display = "RESERVED - do not use"
-* group[=].element[=].target[=].relationship = #equivalent
-
-
-* group[=].element[+].code = #immun-130
-* group[=].element[=].display = "meningokokk oligosakkarid (A, C, Y va W-135 guruhlari) difteriya toksoid konjugat vaktsinasi (MCV4O)"
-* group[=].element[=].target[+].code = #136
-* group[=].element[=].target[=].display = "Meningococcal MCV4O"
-* group[=].element[=].target[=].relationship = #equivalent
-
-
-* group[=].element[+].code = #immun-35
-* group[=].element[=].display = "gepatit C vaktsinasi"
-* group[=].element[=].target[+].code = #58
-* group[=].element[=].target[=].display = "Hep C"
-* group[=].element[=].target[=].relationship = #equivalent
-
-* group[=].element[+].code = #immun-36
-* group[=].element[=].display = "gepatit E vaktsinasi"
-* group[=].element[=].target[+].code = #59
-* group[=].element[=].target[=].display = "Hep E"
-* group[=].element[=].target[=].relationship = #equivalent
-
-* group[=].element[+].code = #immun-44
-* group[=].element[=].display = "inson immunitet tanqisligi virusiga qarshi emlash"
-* group[=].element[=].target[+].code = #61
-* group[=].element[=].target[=].display = "HIV"
-* group[=].element[=].target[=].relationship = #equivalent
-
-
-* group[=].element[+].code = #immun-123
-* group[=].element[=].display = "zoster vaktsinasi, jonli"
-* group[=].element[=].target[+].code = #121
-* group[=].element[=].target[=].display = "zoster live"
-* group[=].element[=].target[=].relationship = #equivalent
-
-
-* group[=].element[+].code = #immun-131
-* group[=].element[=].display = "Gripp, yuqori dozali, split virus, trivalent, in'ektsion, konservantsiz"
-* group[=].element[=].target[+].code = #135
-* group[=].element[=].target[=].display = "Influenza, high dose seasonal"
-* group[=].element[=].target[=].relationship = #equivalent
-
-
-* group[=].element[+].code = #immun-254
-* group[=].element[=].display = "IPOL (poliomielitga qarshi emlash, poliomielitga qarshi vaktsinalar)"
-* group[=].element[=].target[+].code = #10
-* group[=].element[=].target[=].display = "poliovirus vaccine, inactivated"
-* group[=].element[=].target[=].relationship = #equivalent
-
