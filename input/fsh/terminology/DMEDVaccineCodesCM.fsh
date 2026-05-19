@@ -12,7 +12,7 @@ Description: "ConceptMap for mapping DMED Vaccine codes to CVX vaccine codes"
 * group[+].source = Canonical(DMEDVaccineCS)
 * sourceScopeCanonical = Canonical(DMEDVaccineVS)
 * group[=].target = $cvx
-* targetScopeCanonical = $cvx-vs
+// * targetScopeCanonical = $cvx-vs
 
 * group[=].element[+].code = #59
 * group[=].element[=].display = "АКДС R"
