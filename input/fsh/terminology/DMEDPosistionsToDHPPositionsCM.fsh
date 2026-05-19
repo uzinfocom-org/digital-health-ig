@@ -1256,14 +1256,6 @@ Description: "DMED Position and Professions to DHP Position and Professions Conc
 * group[=].element[=].target[=].display = "Jamoatchilik bilan aloqalar, mahsulotlar va xizmatlarni sotish va marketingi bo'yicha professional-mutaxassislar. Reklama va marketing bo'yicha professional-mutaxassislar"
 * group[=].element[=].target[=].relationship = #source-is-narrower-than-target
 
-
-// Continuation: more DMEDProfessionsCS to PositionAndProfessionCS mappings
-* group[=].element[+].code = #384
-* group[=].element[=].display = "Psixonevrolog" // ru: Психоневролог
-* group[=].element[=].target[+].code = #2212-157
-* group[=].element[=].target[=].display = "Psixonevrolog"
-* group[=].element[=].target[=].relationship = #equivalent
-
 * group[=].element[+].code = #356
 * group[=].element[=].display = "Metodist" // ru: Методист
 * group[=].element[=].target[+].code = #2212
@@ -1293,6 +1285,16 @@ Description: "DMED Position and Professions to DHP Position and Professions Conc
 * group[=].element[=].target[+].code = #2511
 * group[=].element[=].target[=].display = "Axborot kommunikatsiya texnologiyalari bo'yicha professional-mutaxassislar. Dastur ta'minoti va ilovalar ishlab chiquvchilar va tahlilchilar. Tizim tahlilchilari"
 * group[=].element[=].target[=].relationship = #source-is-narrower-than-target
+
+
+* group[+].source = Canonical(DMEDProfessionsCS)
+* group[=].target = Canonical(PositionAndProfessionCS_2)
+// Continuation: more DMEDProfessionsCS to PositionAndProfessionCS_2 mappings
+* group[=].element[+].code = #384
+* group[=].element[=].display = "Psixonevrolog" // ru: Психоневролог
+* group[=].element[=].target[+].code = #2212-157
+* group[=].element[=].target[=].display = "Psixonevrolog"
+* group[=].element[=].target[=].relationship = #equivalent
 
 * group[=].element[+].code = #818
 * group[=].element[=].display = "Ilmiy ishlar bo'yicha direktor o'rinbosari"
