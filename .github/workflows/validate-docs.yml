@@ -41,7 +41,7 @@ jobs:
       - name: Check that the IG builds successfully
         run: |
           chmod +x ./_genonce.sh
-          ./_genonce.sh
+          ./_genonce.sh -timeout 1200
           echo "✅ IG built successfully"
 
       - name: Check QA report
