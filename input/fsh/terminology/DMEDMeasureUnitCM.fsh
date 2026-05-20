@@ -8,6 +8,7 @@ Description: "ConceptMap for mapping DMED  measure unit codes to DHP  measure un
 * status = #draft
 * experimental = false
 * publisher = "Uzinfocom"
+* sourceScopeCanonical = Canonical(DMEDMeasureUnitVS)
 * targetScopeCanonical = $ucum-vs
 
 * group.source = Canonical(DMEDMeasureUnitCS)
@@ -111,11 +112,11 @@ Description: "ConceptMap for mapping DMED  measure unit codes to DHP  measure un
 * group[=].element[=].target[=].display = "rod"
 * group[=].element[=].target[=].relationship = #related-to
 */
-// 8 рад -> rad
+// 8 рад -> RAD
 * group[=].element[+].code = #8
 * group[=].element[=].display = "рад"
-* group[=].element[=].target[+].code = #rad
-* group[=].element[=].target[=].display = "radian"
+* group[=].element[=].target[+].code = #RAD
+* group[=].element[=].target[=].display = "radiation absorbed dose"
 * group[=].element[=].target[=].relationship = #related-to
 
 // 13 Осм -> osm
@@ -367,14 +368,14 @@ Description: "ConceptMap for mapping DMED  measure unit codes to DHP  measure un
 * group[=].element[+].code = #15
 * group[=].element[=].display = "%, m"
 * group[=].element[=].target[+].code = #%
-* group[=].element[=].target[=].display = "mass percent"
+* group[=].element[=].target[=].display = "percent"
 * group[=].element[=].target[=].relationship = #related-to
 
 // 16 %, vol -> %
 * group[=].element[+].code = #16
 * group[=].element[=].display = "%, vol"
 * group[=].element[=].target[+].code = #%
-* group[=].element[=].target[=].display = "volume percent"
+* group[=].element[=].target[=].display = "percent"
 * group[=].element[=].target[=].relationship = #related-to
 
 // 80 процент -> %
@@ -493,7 +494,7 @@ Description: "ConceptMap for mapping DMED  measure unit codes to DHP  measure un
 * group[=].element[+].code = #57
 * group[=].element[=].display = "ЛЕ"
 * group[=].element[=].target[+].code = #[iU]
-* group[=].element[=].target[=].display = "therapeutic unit"
+* group[=].element[=].target[=].display = "international unit"
 * group[=].element[=].target[=].relationship = #related-to
 
 // 60 ИЕ -> [iU]
@@ -514,7 +515,7 @@ Description: "ConceptMap for mapping DMED  measure unit codes to DHP  measure un
 * group[=].element[+].code = #493
 * group[=].element[=].display = "международная единица биологической активности"
 * group[=].element[=].target[+].code = #[iU]
-* group[=].element[=].target[=].display = "international biological unit"
+* group[=].element[=].target[=].display = "international unit"
 * group[=].element[=].target[=].relationship = #related-to
 
 // 529 миллиард единиц действия -> [iU]
@@ -528,7 +529,7 @@ Description: "ConceptMap for mapping DMED  measure unit codes to DHP  measure un
 * group[=].element[+].code = #531
 * group[=].element[=].display = "МЕД"
 * group[=].element[=].target[+].code = #[iU]
-* group[=].element[=].target[=].display = "MED"
+* group[=].element[=].target[=].display = "international unit"
 * group[=].element[=].target[=].relationship = #related-to
 
 // 73 ИР -> [IR]
@@ -697,5 +698,5 @@ Description: "ConceptMap for mapping DMED  measure unit codes to DHP  measure un
 * group[=].element[+].code = #76
 * group[=].element[=].display = "ЛЕД"
 * group[=].element[=].target[+].code = #[iU]
-* group[=].element[=].target[=].display = "lethal/biologic dose unit"
+* group[=].element[=].target[=].display = "international unit"
 * group[=].element[=].target[=].relationship = #related-to
