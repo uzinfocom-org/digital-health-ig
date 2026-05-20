@@ -8,11 +8,12 @@ Description: "DMED Position and Professions to DHP Position and Professions Conc
 * status = #draft
 * experimental = false
 * publisher = "Uzinfocom"
+* sourceScopeCanonical = Canonical(DMEDProfessionsVS)
+* targetScopeCanonical = Canonical(PositionAndProfessionVS)
 
 // Group 1: DMEDProfessionsCS to PositionAndProfessionCS
 * group[+].source = Canonical(DMEDProfessionsCS)
 * group[=].target = Canonical(PositionAndProfessionCS)
-//* targetScopeCanonical = Canonical(PositionAndProfessionVS)
 
 * group[=].element[+].code = #1033
 * group[=].element[=].display = "Karlar o'qituvchisi" // ru: Сурдопедагог
