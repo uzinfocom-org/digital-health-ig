@@ -41,14 +41,14 @@ jobs:
       - name: Check that the IG builds successfully
         run: |
           chmod +x ./_genonce.sh
-          ./_genonce.sh -timeout 1200
+          ./_genonce.sh
           echo "✅ IG built successfully"
 
       - name: Check QA report
         run: |
           # Configuration
-          MAX_ALLOWED_ERRORS=2
-          MAX_ALLOWED_WARNINGS=7
+          MAX_ALLOWED_ERRORS=0
+          MAX_ALLOWED_WARNINGS=0
 
           if [ ! -f "output/qa.json" ]; then
             echo "❌ QA file not found: output/qa.json"
