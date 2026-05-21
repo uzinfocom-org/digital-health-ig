@@ -6,4 +6,5 @@ Description: "Vaccine codes"
 * ^experimental = true
 * ^publisher = "Uzinfocom"
 
-* include codes from system vaccine-code-cs
+// * include codes from system vaccine-code-cs
+* include codes from system $cvx
