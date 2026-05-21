@@ -104,7 +104,7 @@ MultilingualName qoidalar to'plamida qoraqalpoq tili (kaa) qo'llab-quvvatlashi q
 
 Intellektual mulk egasi Sog'liqni saqlash vazirligiga yangilandi.
 
-[UZ Core Clinical Condition](StructureDefinition-uz-core-clinical-condition.html) klinik (ICD-10) va ICD-10 ga asoslanmagan holatlarni farqlash uchun qo'shildi.
+UZ Core Clinical Condition klinik (ICD-10) va ICD-10 ga asoslanmagan holatlarni farqlash uchun qo'shildi.
 
 Bemor nogironlik holati [Patient](StructureDefinition-uz-core-patient.html) resursidan (FHIR standart kengaytmasidan foydalangan holda) [Condition](StructureDefinition-uz-core-condition.html) resursiga ko'chirildi.
 
