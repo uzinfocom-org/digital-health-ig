@@ -10,5 +10,7 @@ Description: "Encounter discharge disposition codes with English and Russian tra
 * include $encounter-discharge-disposition#home
 * include $encounter-discharge-disposition#other-hcf
 * include $encounter-discharge-disposition#oth
-* include encounter-discharge-disposition-home-cs#mserv-0004-00001
-* include encounter-discharge-disposition-home-cs#mserv-0004-00002
+* include $encounter-discharge-disposition#exp 
+// * include encounter-discharge-disposition-home-cs#mserv-0004-00001
+// * include encounter-discharge-disposition-home-cs#mserv-0004-00002
+* include codes from system encounter-discharge-disposition-home-cs

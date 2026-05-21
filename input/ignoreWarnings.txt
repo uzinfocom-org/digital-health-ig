@@ -54,6 +54,8 @@ WARNING: ConceptMap/mis2-service-type-to-organizational-service-group-cm: Concep
 WARNING: ConceptMap/ssv-administrative-territory-to-regions-cm: ConceptMap.group[0]: No Source Code System, so the source codes cannot be checked
 WARNING: ConceptMap/ssv-administrative-territory-to-regions-cm: ConceptMap.group[1]: No Source Code System, so the source codes cannot be checked
 
+# tx.fhir.org doesn't have all UCUM codes - allowed to be ignored, needs to be reported
+Target Code System http://unitsofmeasure.org doesn't have all content (content = not-present), so the target codes cannot be checked
 
 # IG publisher has troubles validating property URIs - need to report
 The property uri 'http://terminology.hl7.org/CodeSystem/v2-0203' is not known, so the property values can not be validated fully; unless specified elsewhere, codes will be treated as internal references
@@ -76,10 +78,6 @@ Hyperlink 'https://dhp.uz/fhir/core/sid/pid/uz/prn/*/mrt' at 'div/div/table/tr/t
 # sample systems from our IdentifierDomain where we have all foreign drivers licenses and passports - creating NamingSystem for them all is impractical
 No definition could be found for URL value 'https://dhp.uz/fhir/core/sid/pid/gb/ppn'
 No definition could be found for URL value 'https://dhp.uz/fhir/core/sid/pid/gb/dl'
-
-# R5 core spec references this extension but it's not published anywhere, known FHIR R5 issue - can be ignored
-The extension http://hl7.org/fhir/StructureDefinition/structuredefinition-implements could not be found so is not allowed here
-No definition could be found for URL value 'http://hl7.org/fhir/StructureDefinition/structuredefinition-implements'
 
 # IG Publisher generates inline scripts for Questionnaire/QuestionnaireResponse table filters then warns they're illegal - bug reported, can be ignored
 The <script> containing the javascript '//%

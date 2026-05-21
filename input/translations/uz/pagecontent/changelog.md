@@ -1,5 +1,9 @@
 ### Ishlab chiqish jarayonida
 
+(Hozircha o'zgarishlar yo'q)
+
+### Versiya 0.5.0
+
 O'zbekistonda ishlatiladigan panellar va analitlar uchun [laboratoriya kuzatuv kodlari](CodeSystem-observation-lab-research-codes-cs.html) qo'shildi.
 
 [Hujjat identifikatori nomlar maydoni](identifiers.html#document-identifiers) (doc) identifikator tizimlariga qo'shildi.
@@ -21,6 +25,46 @@ O'zbekistonda ishlatiladigan panellar va analitlar uchun [laboratoriya kuzatuv k
 MIS2 JSON formatidagi tashkilotni ConceptMap yordamida UZ Core Organization resursiga o'girishni ko'rsatuvchi [misol](Organization-xonobod-medical-association.html) qo'shildi.
 
 MIS2 kodlarini UZ Core terminologiyasiga tarjima qilish uchun ConceptMap qo'shildi: [MIS2MedicalTypeToOrganizationalStructureCM](ConceptMap-mis2-medical-type-to-organizational-structure-cm.html) `type.coding[organizationalStructure]` uchun, [MIS2LevelTypeToSubordinationGroupCM](ConceptMap-mis2-level-type-to-subordination-group-cm.html) `type.coding[subordinationGroup]` uchun va [MIS2ServiceTypeToOrganizationalServiceGroupCM](ConceptMap-mis2-service-type-to-organizational-service-group-cm.html) `type.coding[organizationalServiceGroup]` uchun. MIS2 dan tarjima qilayotgan dasturchilar tegishli bo'limlarni to'ldirish uchun ushbu xaritalardan foydalanishlari kerak.
+
+[UZ Core AllergyIntolerance](StructureDefinition-uz-core-allergy-intolerance.html) profili tegishli CodeSystem va ValueSet ([AllergenCodesVS](ValueSet-allergen-codes-vs.html), [ReactionSubstanceVS](ValueSet-allergy-reaction-substance-vs.html), [ReactionManifestationVS](ValueSet-allergy-reaction-manifestation-vs.html), [AllergyCategoryVS](ValueSet-allergy-category-vs.html), [AllergyTypeVS](ValueSet-allergy-type-vs.html), [AllergyClinicalStatusVS](ValueSet-allergy-clinical-status-vs.html), [AllergyVerificationStatusVS](ValueSet-allergy-verification-status-vs.html), [AllergyReactionSeverityVS](ValueSet-allergy-reaction-severity-vs.html)) hamda lokal allergen va reaksiya ko‘rinishi kodlarini SNOMED CT ga tarjima qiluvchi ConceptMap bilan qo‘shildi. Allergiyalarni qayd qilayotgan dasturchilar ushbu profildan foydalanishlari kerak.
+
+`UZCoreClinicalCondition` olib tashlandi va [UZ Core Condition](StructureDefinition-uz-core-condition.html) bilan birlashtirildi. Dasturchilar `uz-core-clinical-condition` ga bo‘lgan havolalarni `uz-core-condition` ga yangilashlari kerak. `Condition.code` uchun endi ICD-10 va SNOMED CT kodlarini birlashtiruvchi yangi [ConditionCodeVS](ValueSet-condition-code-vs.html) qiymatlar to‘plami (preferred bog‘lanish) ishlatiladi.
+
+[Bemor qoniqishi so‘rovnomasi](Questionnaire-PatientSatisfactionQuestionnaire.html) da `answerOption` kodlari Questionnaire’ning o‘z URL’idan alohida [PatientSatisfactionCS](CodeSystem-patient-satisfaction-cs.html) kod tizimiga ko‘chirildi. Ushbu so‘rovnoma uchun QuestionnaireResponse javoblarini to‘ldiruvchi dasturchilar Coding `system` qiymatini `https://dhp.uz/fhir/core/Questionnaire/PatientSatisfactionQuestionnaire` dan `https://terminology.dhp.uz/fhir/core/CodeSystem/patient-satisfaction-cs` ga o‘zgartirishlari kerak. Kodlarning o‘zi o‘zgarmagan.
+
+[UZ Core Observation](StructureDefinition-uz-core-observation.html) da [ObservationCodesVS](ValueSet-observation-codes-vs.html) bog‘lanishi required dan **preferred** ga o‘zgartirildi va endi LOINC va lokal kodlar bilan bir qatorda SNOMED CT kodlarini ham o‘z ichiga oladi. Dasturchilar mos joylarda SNOMED CT kodlaridan foydalanishlari mumkin.
+
+[UZ Core HealthcareService](StructureDefinition-uz-core-healthcareservice.html) da `category.coding` va `type.coding` endi slayslarga bo‘linib, [LabServiceCategoriesVS](ValueSet-lab-service-categories-vs.html) ga bog‘langan yangi `labCategory` slaysini qo‘llab-quvvatlaydi (kodlar [LabCategoriesCS](CodeSystem-lab-categories-cs.html) dan). Laboratoriya xizmatlari mavjud `dhpCategory` slaysiga qo‘shimcha ravishda `labCategory` slaysini ham to‘ldirishi kerak.
+
+[UZ Core Patient](StructureDefinition-uz-core-patient.html) da [MahallaVS](ValueSet-mahalla-vs.html) (`address.city` uchun ishlatiladi) yangi [Mahalla COATO](CodeSystem-mahalla-coato-cs.html) kod tizimidagi kodlar bilan kengaytirildi va mavjud MahallaCS kodlariga qo‘shimcha ravishda 2 600 dan ortiq COATO asosidagi mahalla identifikatorlarini taqdim etadi.
+
+[UZ Core Patient](StructureDefinition-uz-core-patient.html) da [identifikatorlar hujjati](identifiers.html) milliy identifikator **JSHSHIR** (Jismoniy shaxsning shaxsiy identifikatsiya raqami) ekanligini aniqlashtirish uchun yangilandi, shuningdek `medicalRecordTemp` va `unknownPatient` identifikatorlaridan foydalanish o‘rtasidagi farq aniqlashtirildi.
+
+Dasturchilar uchun namuna sifatida [tranzaksion bandl misoli](Bundle-example-transaction-bundle.html) va [erkin matnli malaka bilan PractitionerRole misoli](PractitionerRole-example-practitionerrole-freetext.html) qo‘shildi.
+
+[UZ Core Socioeconomic Observation](StructureDefinition-uz-core-socioeconomic-observation.html) dagi **BenefitCS** kod tizimi yangi kodlar bilan kengaytirildi (masalan, `#regis0004.00020`, `#regis0004.00021`, `#regis0004.00022`, `#regis0004.00023`).
+
+[UZ Core Socioeconomic Observation](StructureDefinition-uz-core-socioeconomic-observation.html) dagi **EducationCS** kod tizimiga yangi kodlar qo‘shildi (masalan, `#regis0005.00011` "Ma’lumoti yo‘q", `#regis0005.00012` "Ixtisoslik").
+
+[UZ Core Socioeconomic Observation](StructureDefinition-uz-core-socioeconomic-observation.html) dagi **SocialStatusCS** kod tizimi kengaytirildi (masalan, `#regis0010.00010` "O‘quvchi", `#regis0010.00011` "Imtiyoz toifasi mavjud").
+
+[DisabilityCS](CodeSystem-disability-cs.html) kod tizimiga yangi termin qo‘shildi (`#regis0011.00005` "Nogironlik belgilanmagan").
+
+[UZ Core Encounter](StructureDefinition-uz-core-encounter.html) uchun yangi [AdmitSourceLocalCS](CodeSystem-admit-source-local-cs.html) kod tizimi yaratildi va unga yangi kodlar qo‘shildi (masalan, `#mserv-0006-00001` "Yo‘llanmasiz", `#mserv-0006-00002` "Dispanser", `#mserv-0006-00003` "Tuman psixiatriyasi", `#mserv-0006-00004` "Tez tibbiy yordam", `#mserv-0006-00005` "Sud ajrimi asosida", `#mserv-0006-00006` "Ekspertizaga").
+
+Qo‘shimcha ravishda, [AdmitSourceHomeCS](CodeSystem-admit-source-home-cs.html) dagi kodlarni o‘z ichiga oluvchi yangi [AdmissionOriginVS](ValueSet-admission-origin-vs.html) qiymatlar to‘plami yaratildi.
+
+[UZ Core Encounter](StructureDefinition-uz-core-encounter.html) uchun [EncounterPriorityCS](CodeSystem-encounter-priority-cs.html) HL7 `v3-ActPriority` asosidagi yetishmayotgan kodlar bilan to‘ldirildi (masalan, `#A`, `#CR`, `#EL`, `#R`, `#RR`, `#S`, `#T`, `#UD`, `#UR`), shuningdek lokal ustuvorlik kodlari (masalan, `#transferred`, `#mandatory-treatment`, `#involuntary-hospitalization`) bilan yangi [EncounterPriorityLocalCS](CodeSystem-encounter-local-priority-cs.html) kod tizimi yaratildi.
+
+[UZ Core Encounter](StructureDefinition-uz-core-encounter.html) uchun qayta yotqizish holatlari uchun yangi [ReAdmissionLocalCS](CodeSystem-re-admission-local-cs.html) kod tizimi yaratildi (masalan, `#first-time`, `#repeat-current-year`).
+
+[UZ Core Encounter](StructureDefinition-uz-core-encounter.html) uchun [EncounterDischargeDispositionHomeCS](CodeSystem-encounter-discharge-disposition-home-cs.html) kod tizimi kengaytirildi (masalan, `#mserv-0004-00004` "Chiqarildi", `#mserv-0004-00002` "Vafot etdi", `#mserv-0004-00005` "IIV muassasasiga o‘tkazildi", `#mserv-0004-00006` "Muruvvat uyiga o‘tkazildi").
+
+[UZ Core Encounter](StructureDefinition-uz-core-encounter.html) uchun bemor holatini ifodalovchi yangi [EncounterLocalSubjectStatusCS](CodeSystem-encounter-local-subject-status-cs.html) kod tizimi yaratildi (masalan, `#loc-cs-001` "Tuzaldi", `#loc-cs-002` "Ijobiy o‘zgarish bilan", `#loc-cs-003` "O‘zgarishsiz", `#loc-cs-004` "Og‘irlashdi").
+
+Coverage uchun UZCoreda Profile mavjud bo'lmasa ham, ssv formlardan biriga zarurligi sababli yangi **CoverageTypeCS** kod tizimi yaratildi va unga DTSJ va ijtimoiy jamg‘armalar orqali moliyalashtirish turlari qo‘shildi (masalan, `#dtsj-treated-case`, `#dtsj-privileged-category`, `#saxovat-komak-fund`, `#womens-notebook-fund`, `#youth-notebook-fund`).
+
+
 
 ### Versiya 0.4.0
 
@@ -100,4 +144,3 @@ Bu IG'ning birinchi, ishlab chiqish jarayonidagi versiyasi bo'lib, barcha resurs
 AuditEvent, Consent, Condition, HealthcareService, Location, Organization, Patient, Practitioner, PractitionerRole, RelatedPerson, Provenance va Socioeconomic Observation uchun UZ Core profillari qo'shildi.
 
 Profil, terminologiya resurslari va IG'ning kanonik URL manzillari vaqtinchalik `medcore.uz` domenidan rasmiy `dhp.uz` domeniga o'zgartirildi.
-

@@ -156,7 +156,7 @@ Description: "Uzbekistan Core Patient profile, used to represent patients admini
   * use = #official
   * value 1..1 MS
 
-* extension contains patient-nationality named nationality 0..1 MS and
+* extension contains PatientNationality named nationality 0..1 MS and
     patient-citizenship named citizenship 0..1 MS and
     ManagingOrganizationAttachment named managingOrganizationAttachment 0..1 MS
 * extension[nationality].extension[code].valueCodeableConcept from NationalityVS (required)
@@ -220,7 +220,7 @@ Usage: #example
   * name.text = "Ваисов Раис"
   * gender = #male
 * maritalStatus = $v3-MaritalStatus#W "Вдовец, вдова"
-* extension[nationality].extension[code].valueCodeableConcept = NationalityCS#23 "Азербайджанцы"
+* extension[nationality].extension[code].valueCodeableConcept = $nationality-cs#23 "КАРЕЛ/КАРЕЛКА"
 * extension[managingOrganizationAttachment].valueDate = "2024-03-15"
 
 Instance: example-david
@@ -256,7 +256,7 @@ Usage: #example
   * gender = #male
 * maritalStatus = $v3-MaritalStatus#M "Состоит в браке"
 * multipleBirthInteger = 2
-* extension[nationality].extension[code].valueCodeableConcept = NationalityCS#32 "Армяне"
+* extension[nationality].extension[code].valueCodeableConcept = $nationality-cs#33 "НЕМЕЦ/НЕМКА"
 
 Instance: example-emma
 InstanceOf: UZCorePatient
@@ -292,4 +292,4 @@ Usage: #example
   * gender = #female
 * maritalStatus = $v3-MaritalStatus#U "Unmarried"
 * multipleBirthInteger = 2
-* extension[nationality].extension[code].valueCodeableConcept = NationalityCS#42 "British"
+* extension[nationality].extension[code].valueCodeableConcept = $nationality-cs#42 "TURKMAN"

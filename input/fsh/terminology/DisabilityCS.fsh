@@ -23,3 +23,8 @@ Description: "Disability levels in Uzbekistan"
   * ^designation[=].value = "Ребенок-инвалид"
   * ^designation[+].language = #en
   * ^designation[=].value = "Disabled child"
+* #regis0011.00005 "Nogironlik belgilanmagan"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Инвалидность не установлена"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Disability not established"

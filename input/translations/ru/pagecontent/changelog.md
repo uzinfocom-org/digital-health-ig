@@ -1,5 +1,9 @@
 ### В разработке
 
+(Пока без изменений)
+
+### Версия 0.5.0
+
 Добавлены [коды лабораторных исследований](CodeSystem-observation-lab-research-codes-cs.html) для панелей и аналитов, используемых в Узбекистане.
 
 Добавлено [пространство имён идентификаторов документов](identifiers.html#document-identifiers) (doc) в систему идентификаторов.
@@ -21,6 +25,61 @@
 Добавлен [пример](Organization-xonobod-medical-association.html), демонстрирующий преобразование организации из MIS2 JSON в ресурс UZ Core Organization с использованием ConceptMap.
 
 Добавлены ConceptMap для перевода кодов MIS2 в терминологию UZ Core: [MIS2MedicalTypeToOrganizationalStructureCM](ConceptMap-mis2-medical-type-to-organizational-structure-cm.html) для `type.coding[organizationalStructure]`, [MIS2LevelTypeToSubordinationGroupCM](ConceptMap-mis2-level-type-to-subordination-group-cm.html) для `type.coding[subordinationGroup]` и [MIS2ServiceTypeToOrganizationalServiceGroupCM](ConceptMap-mis2-service-type-to-organizational-service-group-cm.html) для `type.coding[organizationalServiceGroup]`. Разработчикам, выполняющим перевод из MIS2, следует использовать эти карты для заполнения соответствующих слайсов.
+
+Добавлен профиль [UZ Core AllergyIntolerance](StructureDefinition-uz-core-allergy-intolerance.html) с сопутствующими CodeSystem и ValueSet ([AllergenCodesVS](ValueSet-allergen-codes-vs.html), [ReactionSubstanceVS](ValueSet-allergy-reaction-substance-vs.html), [ReactionManifestationVS](ValueSet-allergy-reaction-manifestation-vs.html), [AllergyCategoryVS](ValueSet-allergy-category-vs.html), [AllergyTypeVS](ValueSet-allergy-type-vs.html), [AllergyClinicalStatusVS](ValueSet-allergy-clinical-status-vs.html), [AllergyVerificationStatusVS](ValueSet-allergy-verification-status-vs.html), [AllergyReactionSeverityVS](ValueSet-allergy-reaction-severity-vs.html)), а также ConceptMap для перевода локальных кодов аллергенов и проявлений реакций в SNOMED CT. Разработчикам, фиксирующим аллергии, следует использовать этот профиль.
+
+`UZCoreClinicalCondition` удалён и объединён с [UZ Core Condition](StructureDefinition-uz-core-condition.html). Разработчикам необходимо обновить ссылки с `uz-core-clinical-condition` на `uz-core-condition`. Для `Condition.code` теперь используется новый набор значений [ConditionCodeVS](ValueSet-condition-code-vs.html), объединяющий коды ICD-10 и SNOMED CT (привязка preferred).
+
+В [Опроснике удовлетворённости пациента](Questionnaire-PatientSatisfactionQuestionnaire.html) коды `answerOption` вынесены из URL самого Questionnaire в отдельную систему кодов [PatientSatisfactionCS](CodeSystem-patient-satisfaction-cs.html). Разработчикам, заполняющим QuestionnaireResponse для этого опросника, необходимо обновить значение `system` в Coding с `https://dhp.uz/fhir/core/Questionnaire/PatientSatisfactionQuestionnaire` на `https://terminology.dhp.uz/fhir/core/CodeSystem/patient-satisfaction-cs`. Сами коды не изменились.
+
+В [UZ Core Observation](StructureDefinition-uz-core-observation.html) привязка [ObservationCodesVS](ValueSet-observation-codes-vs.html) изменена с required на **preferred** и теперь включает коды SNOMED CT в дополнение к LOINC и локальным кодам. Разработчики могут использовать коды SNOMED CT, где это уместно.
+
+В [UZ Core HealthcareService](StructureDefinition-uz-core-healthcareservice.html) `category.coding` и `type.coding` теперь содержат слайсы, поддерживающие новый слайс `labCategory`, привязанный к [LabServiceCategoriesVS](ValueSet-lab-service-categories-vs.html) (коды из [LabCategoriesCS](CodeSystem-lab-categories-cs.html)). Лабораторные службы должны заполнять слайс `labCategory` дополнительно к существующему `dhpCategory`.
+
+В [UZ Core Patient](StructureDefinition-uz-core-patient.html) набор значений [MahallaVS](ValueSet-mahalla-vs.html) (используется для `address.city`) расширен кодами из новой системы [Mahalla COATO](CodeSystem-mahalla-coato-cs.html), что добавляет более 2 600 идентификаторов махаллей на основе СОАТО в дополнение к существующим кодам MahallaCS.
+
+В [UZ Core Patient](StructureDefinition-uz-core-patient.html) [документация по идентификаторам](identifiers.html) уточнена: национальный идентификатор - это **ПИНФЛ** (Персональный идентификационный номер физического лица), а также разъяснена разница между использованием идентификаторов `medicalRecordTemp` и `unknownPatient`.
+
+Добавлены [пример транзакционного бандла](Bundle-example-transaction-bundle.html) и [пример PractitionerRole с произвольным текстом квалификации](PractitionerRole-example-practitionerrole-freetext.html) в качестве справочных шаблонов для разработчиков.
+
+В [UZ Core Socioeconomic Observation](StructureDefinition-uz-core-socioeconomic-observation.html) система кодов **BenefitCS** была расширена новыми кодами (например, `#regis0004.00020`, `#regis0004.00021`, `#regis0004.00022`, `#regis0004.00023`).
+
+В [UZ Core Socioeconomic Observation](StructureDefinition-uz-core-socioeconomic-observation.html) в систему кодов **EducationCS** добавлены новые коды (например, `#regis0005.00011` "Нет образования", `#regis0005.00012` "Специальность").
+
+В [UZ Core Socioeconomic Observation](StructureDefinition-uz-core-socioeconomic-observation.html) система кодов **SocialStatusCS** была расширена (например, `#regis0010.00010` "Ученик школы", `#regis0010.00011` "Имеется льготная категория").
+
+В [DisabilityCS](CodeSystem-disability-cs.html) добавлен новый термин:  
+- `#regis0011.00005` "Инвалидность не установлена"
+
+Для [UZ Core Encounter](StructureDefinition-uz-core-encounter.html) создана новая система кодов [AdmitSourceLocalCS](CodeSystem-admit-source-local-cs.html) со следующими кодами:
+- `#mserv-0006-00001` "Без направления"
+- `#mserv-0006-00002` "Диспансер"
+- `#mserv-0006-00003` "Районная психиатрия"
+- `#mserv-0006-00004` "Скорая медицинская помощь"
+- `#mserv-0006-00005` "По решению суда"
+- `#mserv-0006-00006` "На экспертизу"
+
+Дополнительно создан новый набор значений [AdmissionOriginVS](ValueSet-admission-origin-vs.html), включающий коды из [AdmitSourceHomeCS](CodeSystem-admit-source-home-cs.html).
+
+Для [UZ Core Encounter](StructureDefinition-uz-core-encounter.html) [EncounterPriorityCS](CodeSystem-encounter-priority-cs.html) был дополнен недостающими кодами на основе HL7 `v3-ActPriority` (например, `#A`, `#CR`, `#EL`, `#R`, `#RR`, `#S`, `#T`, `#UD`, `#UR`), а также создана новая система кодов [EncounterPriorityLocalCS](CodeSystem-encounter-local-priority-cs.html) с локальными кодами приоритета (например, `#transferred`, `#mandatory-treatment`, `#involuntary-hospitalization`).
+
+Для [UZ Core Encounter](StructureDefinition-uz-core-encounter.html) создана новая система кодов [ReAdmissionLocalCS](CodeSystem-re-admission-local-cs.html) для случаев повторной госпитализации (например, `#first-time`, `#repeat-current-year`).
+
+Для [UZ Core Encounter](StructureDefinition-uz-core-encounter.html) [EncounterDischargeDispositionHomeCS](CodeSystem-encounter-discharge-disposition-home-cs.html) была расширена новыми кодами:
+- `#mserv-0004-00004` "Выписан"
+- `#mserv-0004-00002` "Умер"
+- `#mserv-0004-00005` "Переведен в учреждение МВД"
+- `#mserv-0004-00006` "Переведён(а) в дом милосердия"
+
+Для [UZ Core Encounter](StructureDefinition-uz-core-encounter.html) создана новая система кодов [EncounterLocalSubjectStatusCS](CodeSystem-encounter-local-subject-status-cs.html), отражающая состояние пациента:
+- `#loc-cs-001` "Выздоровел"
+- `#loc-cs-002` "С положительной динамикой"
+- `#loc-cs-003` "Без изменений"
+- `#loc-cs-004` "Ухудшился"
+
+Хотя в UZ Core отсутствует отдельный профиль для Coverage, в связи с требованиями форм ССВ создана новая система кодов **CoverageTypeCS**.  
+Она включает типы финансирования через ДТСЖ и социальные фонды (например, `#dtsj-treated-case`, `#dtsj-privileged-category`, `#saxovat-komak-fund`, `#womens-notebook-fund`, `#youth-notebook-fund`).
+
 
 ### Версия 0.4.0
 
@@ -98,4 +157,3 @@
 Добавлены UZ Core профили для AuditEvent, Consent, Condition, HealthcareService, Location, Organization, Patient, Practitioner, PractitionerRole, RelatedPerson, Provenance и Socioeconomic Observation.
 
 Канонические URL профилей, терминологических ресурсов и IG изменены с временного домена `medcore.uz` на официальный домен `dhp.uz`.
-
