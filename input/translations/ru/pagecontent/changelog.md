@@ -119,7 +119,7 @@
 
 Обновлён владелец интеллектуальной собственности на Министерство здравоохранения.
 
-Добавлен профиль [UZ Core Clinical Condition](StructureDefinition-uz-core-clinical-condition.html) для разграничения клинических состояний, основанных на МКБ-10, и состояний, не основанных на МКБ-10.
+Добавлен профиль UZ Core Clinical Condition для разграничения клинических состояний, основанных на МКБ-10, и состояний, не основанных на МКБ-10.
 
 Статус инвалидности пациента перенесён из ресурса [Patient](StructureDefinition-uz-core-patient.html) (где он реализовывался через стандартное расширение FHIR) в ресурс [Condition](StructureDefinition-uz-core-condition.html).
 
