@@ -3,11 +3,7 @@ Id: position-and-profession-cs
 Title: "Defines the possible positions and professions"
 Description: "State classification of positions of employees and worker professions (KODP-2020)"
 * ^url = "https://terminology.dhp.uz/fhir/core/CodeSystem/position-and-profession-cs"
-* ^status = #active
-* ^experimental = true
-* ^content = #complete
-* ^language = #uz
-* ^caseSensitive = true
+* insert OriginalCodeSystemDraft(position-and-profession-cs)
 * #1111 "Rahbarlar. Qonun chiqaruvchilar, yuqori mansabdor shaxslar va boshqaruvchilar. Qonun chiqaruvchilar va yuqori mansabdor shaxslar. Qonun chiqaruvchilar"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Лидеры. Законодатели, высшие должностные лица и менеджеры. Законодатели и высшие должностные лица Законодатели"

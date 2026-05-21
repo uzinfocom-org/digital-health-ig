@@ -1,11 +1,11 @@
 {
   "resourceType": "CodeSystem",
-  "status": "active",
+  "status": "draft",
   "content": "complete",
   "name": "PositionAndProfessionCS",
   "id": "position-and-profession-cs",
   "title": "Defines the possible positions and professions",
-  "description": "State classification of positions of employees and worker professions based on [CBPEPW-2020](https://cs.egov.uz/#/tableData/65f3d311971593b975865fd8) using the 14.05.2025 update",
+  "description": "State classification of positions of employees and worker professions (KODP-2020)",
   "url": "https://terminology.dhp.uz/fhir/core/CodeSystem/position-and-profession-cs",
   "concept": [
     {
@@ -175723,10 +175723,9 @@
       ]
     }
   ],
-  "experimental": true,
-  "date": "2025-03-17",
-  "publisher": "Uzinfocom",
-  "language": "uz",
   "caseSensitive": true,
+  "hierarchyMeaning": "is-a",
+  "language": "uz",
+  "experimental": true,
   "count": 12551
 }
