@@ -30,7 +30,6 @@ dependencies:
   hl7.fhir.uv.extensions.r5: 5.3.0
 
 
-
 # the following are for offline use only
 #  hl7.fhir.uv.tools.r5: 0.5.0
 #  hl7.terminology.r5: 6.4.0
