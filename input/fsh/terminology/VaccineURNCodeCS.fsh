@@ -2,8 +2,7 @@ CodeSystem: VaccineURNCodeCS
 Id: vaccine-urn-code-cs
 Title: "Vaccine URN Code Translations"
 Description: "Supplement for vaccine urn codes with Uzbek and Russian translations"
-// if I use urn:oid:1.2.36.1.2001.1005.17, it causes error while running sushi .
-* insert SupplementCodeSystem(vaccine-urn-code-cs, "\"urn:oid:1.2.36.1.2001.1005.17\"", 3.0.1)
+* insert SupplementCodeSystem(vaccine-urn-code-cs, $aire-vaccine, 3.0.1)
 
 * #AGRPAL "Agrippal"
   * ^designation[0].language = #uz
