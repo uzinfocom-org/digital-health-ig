@@ -1,8 +1,8 @@
 // Instance: vaccine-code-conceptmap
 // InstanceOf: ConceptMap
 // Usage: #definition
-// Title: "Vaccine codes to SNOMED CT / CVX"
-// Description: "Maps local UZ vaccine codes to SNOMED CT and CVX."
+// Title: "Vaccine codes to CVX to SNOMED CT"
+// Description: "Maps CVX and URN vaccine codes to SNOMED CT."
 // * url = "https://terminology.dhp.uz/fhir/core/ConceptMap/vaccine-code-conceptmap"
 // * name = "VaccineCodeToSnomedAndCVX"
 // * status = #draft
