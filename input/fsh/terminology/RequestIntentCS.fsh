@@ -6,31 +6,19 @@ Description: "Request intent supplement with translations in Uzbek and Russian"
 * ^experimental = true
 
 * #proposal
-  * ^designation[0].language = #uz
-  * ^designation[=].value = "Taklif"
-  * ^designation[+].language = #ru
+  * ^designation[0].language = #ru
   * ^designation[=].value = "Предложение"
+  * ^designation[+].language = #uz
+  * ^designation[=].value = "Taklif"
 
 * #plan
-  * ^designation[0].language = #uz
-  * ^designation[=].value = "Reja"
-  * ^designation[+].language = #ru
+  * ^designation[0].language = #ru
   * ^designation[=].value = "План"
-
-* #directive
-  * ^designation[0].language = #uz
-  * ^designation[=].value = "Ko'rsatma"
-  * ^designation[+].language = #ru
-  * ^designation[=].value = "Директива"
+  * ^designation[+].language = #uz
+  * ^designation[=].value = "Reja"
 
 * #order
-  * ^designation[0].language = #uz
-  * ^designation[=].value = "Buyurtma"
-  * ^designation[+].language = #ru
-  * ^designation[=].value = "Заказ"
-
-* #option
-  * ^designation[0].language = #uz
-  * ^designation[=].value = "Variant"
-  * ^designation[+].language = #ru
-  * ^designation[=].value = "Вариант"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Назначение / Приказ"
+  * ^designation[+].language = #uz
+  * ^designation[=].value = "Buyruq / Tayinlash"

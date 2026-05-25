@@ -19,9 +19,9 @@ Description: "Publication status supplement with translations in Uzbek and Russi
 
 * #retired
   * ^designation[0].language = #uz
-  * ^designation[=].value = "Arxivlangan"
+  * ^designation[=].value = "Faol emas (yakunlangan)"
   * ^designation[+].language = #ru
-  * ^designation[=].value = "Архивировано"
+  * ^designation[=].value = "Выведен из эксплуатации"
 
 * #unknown
   * ^designation[0].language = #uz

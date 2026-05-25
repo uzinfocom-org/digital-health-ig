@@ -293,4 +293,3 @@ Usage: #example
 * maritalStatus = $v3-MaritalStatus#U "Unmarried"
 * multipleBirthInteger = 2
 * extension[nationality].extension[code].valueCodeableConcept = NationalityCS#42 "British"
-
