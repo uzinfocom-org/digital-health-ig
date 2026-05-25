@@ -11,7 +11,7 @@ Description: "ConceptMap for mapping DMED Vaccine codes to CVX vaccine codes"
 //Mapping DMED Vaccine codes to standard CVX vaccine codes. Enables interoperability between the DMED system and CVX-based systems.
 * group[+].source = Canonical(DMEDVaccineCS)
 * sourceScopeCanonical = Canonical(DMEDVaccineVS)
-* group[=].target = $cvx
+//* group[=].target = $cvx
 * targetScopeCanonical = $cvx-vs
 
 * group[=].element[+].code = #59

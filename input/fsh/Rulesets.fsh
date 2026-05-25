@@ -116,6 +116,7 @@ RuleSet: SupplementCodeSystem(id, supplements, version)
 * ^language = #en
 * ^experimental = false
 
+
 RuleSet: SupplementCodeSystemOid(id, oid, version)
 * ^url = "https://terminology.dhp.uz/fhir/core/CodeSystem/{id}"
 * ^status = #active
@@ -124,3 +125,4 @@ RuleSet: SupplementCodeSystemOid(id, oid, version)
 * ^version = "{version}"
 * ^language = #en
 * ^experimental = false
+

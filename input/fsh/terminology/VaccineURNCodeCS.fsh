@@ -2,7 +2,7 @@ CodeSystem: VaccineURNCodeCS
 Id: vaccine-urn-code-cs
 Title: "Vaccine URN Code Translations"
 Description: "Supplement for vaccine urn codes with Uzbek and Russian translations"
-* insert SupplementCodeSystem(vaccine-urn-code-cs, $aire-vaccine, 3.0.1)
+* insert SupplementCodeSystemOid(vaccine-urn-code-cs, $aire-vaccine, 3.0.1)
 
 * #AGRPAL "Agrippal"
   * ^designation[0].language = #uz
