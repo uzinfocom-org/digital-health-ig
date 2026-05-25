@@ -136,21 +136,17 @@ Description: "Uzbekistan Core PlanDefinition profile, used to represent structur
 
 * action[0].title = "Initial vaccination"
 * action[0].description = "Administer first vaccine dose."
-* action[0].code = $action-code#collect-information "Collect information"
+* action[0].code = $action-code#recommend-immunization "Recommend an immunization"
 * action[0].condition[0].kind = $action-condition-kind#applicability "Applicability"
 
-* action[0].condition[0].expression.description = "Patient must be older than 18 years"
-* action[0].condition[0].expression.language = #text/plain
-* action[0].condition[0].expression.expression = "Patient age is greater than 18 years"
+* action[0].condition[0].expression.description = "Patient must be 18 years or older"
+* action[0].condition[0].expression.language = #text/fhirpath
+* action[0].condition[0].expression.expression = "Patient.birthDate <= today() - 18 years"
 
-* action[0].timingTiming.repeat.frequency = 1
-* action[0].timingTiming.repeat.period = 1
-* action[0].timingTiming.repeat.periodUnit = #d
-
-* action[0].participant[0].type = $resource-types#patient
+* action[0].participant[0].type = $resource-types#practitioner
 * action[0].participant[0].actorId = "vaccinator"
 
-* action[0].definitionUri = "https://example.org/fhir/ActivityDefinition/vaccination"
+* action[0].definitionUri = "https://terminology.dhp.uz/fhir/core/ActivityDefinition/example-activity-definition"
 
 
 
@@ -165,11 +161,6 @@ Description: "Uzbekistan Core PlanDefinition profile, used to represent structur
 * action[1].relatedAction[0].offsetDuration.unit = "days"
 * action[1].relatedAction[0].offsetDuration.system = "http://unitsofmeasure.org"
 * action[1].relatedAction[0].offsetDuration.code = #d
-
-* action[1].timingAge.value = 30
-* action[1].timingAge.unit = "days"
-* action[1].timingAge.system = "http://unitsofmeasure.org"
-* action[1].timingAge.code = #d
 
 * action[1].participant[0].type = $resource-types#practitioner
 * action[1].participant[0].actorId = "vaccinator"
@@ -202,4 +193,4 @@ Usage: #example
 
 * status = #draft
 * name = "ExampleActivityDefinition"
-* kind = #Task
+* kind = #MedicationRequest
