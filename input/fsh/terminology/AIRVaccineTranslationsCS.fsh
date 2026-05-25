@@ -1,8 +1,8 @@
-CodeSystem: VaccineURNCodeCS
-Id: vaccine-urn-code-cs
-Title: "Vaccine URN Code Translations"
-Description: "Supplement for vaccine urn codes with Uzbek and Russian translations"
-* insert SupplementCodeSystemOid(vaccine-urn-code-cs, $aire-vaccine, 3.0.1)
+CodeSystem: AIRVaccineTranslationsCS
+Id: air-vaccine-translations-cs
+Title: "Australian Immunisation Register Vaccine Code Translations"
+Description: "Supplement providing Uzbek and Russian translations for the Australian Immunisation Register Vaccine code system (urn:oid:1.2.36.1.2001.1005.17)."
+* insert SupplementCodeSystemOid(air-vaccine-translations-cs, $air-vaccine, 3.0.1)
 
 * #AGRPAL "Agrippal"
   * ^designation[0].language = #uz

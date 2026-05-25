@@ -327,11 +327,11 @@ Description: "ConceptMap for mapping DMED Vaccine codes to CVX vaccine codes"
 * group[=].element[=].target[=].relationship = #related-to
 
 
-//Group 2 dmed vaccine codes to VaccineURNCodeCS
+//Group 2 dmed vaccine codes to AIR vaccine codes
 * group[+].source = Canonical(DMEDVaccineCS)
 * sourceScopeCanonical = Canonical(DMEDVaccineVS)
 
-* group[=].target = $aire-vaccine
+* group[=].target = $air-vaccine
 * group[=].element[+].code = #61
 * group[=].element[=].display = "ВГ B"
 * group[=].element[=].target[+].code = #ENGP

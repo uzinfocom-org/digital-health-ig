@@ -9,7 +9,7 @@
 // * experimental = false
 // * publisher = "Uzinfocom"
 
-// * group[+].source = Canonical(VaccineCodeCS)
+// * group[+].source = Canonical(CVXVaccineTranslationsCS)
 // * group[=].target = $sct
 // * targetScopeCanonical = $sct-vs
 
@@ -1670,7 +1670,7 @@
 
 
 // //CVX codes
-// * group[+].source = Canonical(VaccineCodeCS)
+// * group[+].source = Canonical(CVXVaccineTranslationsCS)
 // * group[=].target = $cvx
 // * targetScopeCanonical = $cvx-vs
 

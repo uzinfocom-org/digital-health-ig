@@ -1,8 +1,8 @@
-CodeSystem: VaccineCodeCS
-Id: vaccine-code-cs
-Title: "Vaccine Code Translations"
-Description: "Vaccine Code with Uzbek and Russian translations"
-* insert SupplementCodeSystem(vaccine-code-cs, $cvx , 3.0.1)
+CodeSystem: CVXVaccineTranslationsCS
+Id: cvx-vaccine-translations-cs
+Title: "CVX Vaccine Code Translations"
+Description: "Supplement providing Uzbek and Russian translations for the CVX vaccine code system (http://hl7.org/fhir/sid/cvx)."
+* insert SupplementCodeSystem(cvx-vaccine-translations-cs, $cvx , 3.0.1)
 
 * #54 "adenovirus vaccine, type 4, live, oral"
   * ^designation[0].language = #uz
