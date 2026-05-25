@@ -2,7 +2,7 @@ CodeSystem: VaccineCodeCS
 Id: vaccine-code-cs
 Title: "Vaccine Code Translations"
 Description: "Vaccine Code with Uzbek and Russian translations"
-* insert SupplementCodeSystem(vaccine-code-cs, $cvx, 3.0.1)
+* insert SupplementCodeSystem(vaccine-code-cs, $cvx , 3.0.1)
 
 * #54 "adenovirus vaccine, type 4, live, oral"
   * ^designation[0].language = #uz
