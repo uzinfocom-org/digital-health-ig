@@ -47,7 +47,7 @@ jobs:
       - name: Check QA report
         run: |
           # Configuration
-          MAX_ALLOWED_ERRORS=2
+          MAX_ALLOWED_ERRORS=0
           MAX_ALLOWED_WARNINGS=0
 
           if [ ! -f "output/qa.json" ]; then
@@ -63,15 +63,33 @@ jobs:
           echo "   Errors: $ERRORS"
           echo "   Warnings: $WARNINGS"
 
+          print_messages() {
+            if [ -f "output/qa.txt" ]; then
+              echo ""
+              echo "::group::QA report (errors + unsuppressed warnings only)"
+              # Drop:
+              #  - per-file summary rows with no errors or warnings (info-only)
+              #  - INFORMATION/HINT/NOTE detail lines
+              # The remaining content is errors + warnings (warnings are already
+              # filtered against ignoreWarnings.txt by the IG publisher).
+              grep -vE '^ [^:]+ : 0 / 0 / [0-9]+$' output/qa.txt \
+                | grep -vE '^ \* (INFORMATION|HINT|NOTE|INFO) :' \
+                || true
+              echo "::endgroup::"
+            fi
+          }
+
           # Check if errors exceed threshold
           if [ "$ERRORS" -gt $MAX_ALLOWED_ERRORS ]; then
             echo "❌ Too many errors: $ERRORS (maximum allowed: $MAX_ALLOWED_ERRORS known errors)"
+            print_messages
             exit 1
           fi
 
           # Check if there are any warnings
           if [ "$WARNINGS" -gt $MAX_ALLOWED_WARNINGS ]; then
             echo "❌ Warnings found: $WARNINGS (maximum allowed: $MAX_ALLOWED_WARNINGS)"
+            print_messages
             exit 1
           fi
 
