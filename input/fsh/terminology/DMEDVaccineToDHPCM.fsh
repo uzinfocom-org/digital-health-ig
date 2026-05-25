@@ -1,4 +1,4 @@
-Instance: dmed-vaccine-to-dhp-vaccine-cm
+/*Instance: dmed-vaccine-to-dhp-vaccine-cm
 InstanceOf: ConceptMap
 Usage: #definition
 Title: "DMED Vaccine codes To DHP Vaccine codes"
@@ -331,3 +331,4 @@ Description: "ConceptMap for mapping DMED Vaccine codes to DHP Vaccine codes"
 * group[=].element[=].target[+].code = #immun-260
 * group[=].element[=].target[=].display = "MMR (qizamiq, parotit va qizilchaga qarshi emlash)"
 * group[=].element[=].target[=].relationship = #related-to
+*/
