@@ -2,7 +2,7 @@ CodeSystem: AIRVaccineTranslationsCS
 Id: air-vaccine-translations-cs
 Title: "Australian Immunisation Register Vaccine Code Translations"
 Description: "Supplement providing Uzbek and Russian translations for the Australian Immunisation Register Vaccine code system."
-* insert SupplementCodeSystem(air-vaccine-translations-cs, $air-vaccine, 3.0.1)
+* insert SupplementCodeSystem(air-vaccine-translations-cs, $air-vaccine, 20210222)
 
 * #AGRPAL "Agrippal"
   * ^designation[0].language = #uz

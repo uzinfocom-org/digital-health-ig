@@ -335,319 +335,319 @@ Description: "ConceptMap for mapping DMED Vaccine codes to CVX vaccine codes"
 * group[=].element[+].code = #61
 * group[=].element[=].display = "ВГ B"
 * group[=].element[=].target[+].code = #ENGP
-* group[=].element[=].target[=].display = "Вакцина против гепатита B"
+* group[=].element[=].target[=].display = "Engerix-B (paediatric)"
 * group[=].element[=].target[=].relationship = #related-to
 
 * group[=].element[+].code = #9
 * group[=].element[=].display = "ВГВ-1"
 * group[=].element[=].target[+].code = #ENGP
-* group[=].element[=].target[=].display = "Вакцина против гепатита B"
+* group[=].element[=].target[=].display = "Engerix-B (paediatric)"
 * group[=].element[=].target[=].relationship = #related-to
 
 * group[=].element[+].code = #15
 * group[=].element[=].display = "ВГВ-2"
 * group[=].element[=].target[+].code = #ENGP
-* group[=].element[=].target[=].display = "Вакцина против гепатита B"
+* group[=].element[=].target[=].display = "Engerix-B (paediatric)"
 * group[=].element[=].target[=].relationship = #related-to
 
 * group[=].element[+].code = #22
 * group[=].element[=].display = "ВГВ-3"
 * group[=].element[=].target[+].code = #ENGP
-* group[=].element[=].target[=].display = "Вакцина против гепатита B"
+* group[=].element[=].target[=].display = "Engerix-B (paediatric)"
 * group[=].element[=].target[=].relationship = #related-to
 
 * group[=].element[+].code = #29
 * group[=].element[=].display = "ВГВ-4"
 * group[=].element[=].target[+].code = #ENGP
-* group[=].element[=].target[=].display = "Вакцина против гепатита B"
+* group[=].element[=].target[=].display = "Engerix-B (paediatric)"
 * group[=].element[=].target[=].relationship = #related-to
 
 * group[=].element[+].code = #131
 * group[=].element[=].display = "Гепатит Б"
 * group[=].element[=].target[+].code = #ENGP
-* group[=].element[=].target[=].display = "Вакцина против гепатита B"
+* group[=].element[=].target[=].display = "Engerix-B (paediatric)"
 * group[=].element[=].target[=].relationship = #related-to
 
 * group[=].element[+].code = #56
 * group[=].element[=].display = "СОВИ ГРИПП"
 * group[=].element[=].target[+].code = #FLRIX
-* group[=].element[=].target[=].display = "Инактивированная вакцина против гриппа"
+* group[=].element[=].target[=].display = "Fluarix"
 * group[=].element[=].target[=].relationship = #related-to
 
 * group[=].element[+].code = #54
 * group[=].element[=].display = "Гриппол плюс"
 * group[=].element[=].target[+].code = #FLRIX
-* group[=].element[=].target[=].display = "Инактивированная вакцина против гриппа"
+* group[=].element[=].target[=].display = "Fluarix"
 * group[=].element[=].target[=].relationship = #related-to
 
 * group[=].element[+].code = #30
 * group[=].element[=].display = "ХИБ-3"
 * group[=].element[=].target[+].code = #GNHIB
-* group[=].element[=].target[=].display = "Вакцина против Haemophilus influenzae типа b"
+* group[=].element[=].target[=].display = "Generic HIB"
 * group[=].element[=].target[=].relationship = #related-to
 
 * group[=].element[+].code = #23
 * group[=].element[=].display = "ХИБ-2"
 * group[=].element[=].target[+].code = #GNHIB
-* group[=].element[=].target[=].display = "Вакцина против Haemophilus influenzae типа b"
+* group[=].element[=].target[=].display = "Generic HIB"
 * group[=].element[=].target[=].relationship = #related-to
 
 * group[=].element[+].code = #16
 * group[=].element[=].display = "ХИБ-1"
 * group[=].element[=].target[+].code = #GNHIB
-* group[=].element[=].target[=].display = "Вакцина против Haemophilus influenzae типа b"
+* group[=].element[=].target[=].display = "Generic HIB"
 * group[=].element[=].target[=].relationship = #related-to
 
 * group[=].element[+].code = #48
 * group[=].element[=].display = "ВГ A"
 * group[=].element[=].target[+].code = #GNHPA
-* group[=].element[=].target[=].display = "Вакцина против гепатита A"
+* group[=].element[=].target[=].display = "Generic Hepatitis A"
 * group[=].element[=].target[=].relationship = #related-to
 
 * group[=].element[+].code = #128
 * group[=].element[=].display = "Гепатита А"
 * group[=].element[=].target[+].code = #GNHPA
-* group[=].element[=].target[=].display = "Вакцина против гепатита A"
+* group[=].element[=].target[=].display = "Generic Hepatitis A"
 * group[=].element[=].target[=].relationship = #related-to
 
 * group[=].element[+].code = #58
 * group[=].element[=].display = "Пнемокок 2"
 * group[=].element[=].target[+].code = #GNPNE
-* group[=].element[=].target[=].display = "Пневмококковая вакцина"
+* group[=].element[=].target[=].display = "Generic Pneumococcal"
 * group[=].element[=].target[=].relationship = #related-to
 
 * group[=].element[+].code = #47
 * group[=].element[=].display = "ПНЕВМО 1"
 * group[=].element[=].target[+].code = #GNPNE
-* group[=].element[=].target[=].display = "Пневмококковая вакцина"
+* group[=].element[=].target[=].display = "Generic Pneumococcal"
 * group[=].element[=].target[=].relationship = #related-to
 
 * group[=].element[+].code = #34
 * group[=].element[=].display = "ПНЕВМО 3"
 * group[=].element[=].target[+].code = #GNPNE
-* group[=].element[=].target[=].display = "Пневмококковая вакцина"
+* group[=].element[=].target[=].display = "Generic Pneumococcal"
 * group[=].element[=].target[=].relationship = #related-to
 
 * group[=].element[+].code = #24
 * group[=].element[=].display = "Пневмакокк-2"
 * group[=].element[=].target[+].code = #GNPNE
-* group[=].element[=].target[=].display = "Пневмококковая вакцина"
+* group[=].element[=].target[=].display = "Generic Pneumococcal"
 * group[=].element[=].target[=].relationship = #related-to
 
 * group[=].element[+].code = #17
 * group[=].element[=].display = "Пневмакокк-1"
 * group[=].element[=].target[+].code = #GNPNE
-* group[=].element[=].target[=].display = "Пневмококковая вакцина"
+* group[=].element[=].target[=].display = "Generic Pneumococcal"
 * group[=].element[=].target[=].relationship = #related-to
 
 * group[=].element[+].code = #70
 * group[=].element[=].display = "PNEVMO - 3"
 * group[=].element[=].target[+].code = #GNPNE
-* group[=].element[=].target[=].display = "Пневмококковая вакцина"
+* group[=].element[=].target[=].display = "Generic Pneumococcal"
 * group[=].element[=].target[=].relationship = #related-to
 
 * group[=].element[+].code = #74
 * group[=].element[=].display = "ПНЕВМО-3"
 * group[=].element[=].target[+].code = #GNPNE
-* group[=].element[=].target[=].display = "Пневмококковая вакцина"
+* group[=].element[=].target[=].display = "Generic Pneumococcal"
 * group[=].element[=].target[=].relationship = #related-to
 
 * group[=].element[+].code = #73
 * group[=].element[=].display = "ПНЕВМО-2"
 * group[=].element[=].target[+].code = #GNPNE
-* group[=].element[=].target[=].display = "Пневмококковая вакцина"
+* group[=].element[=].target[=].display = "Generic Pneumococcal"
 * group[=].element[=].target[=].relationship = #related-to
 
 * group[=].element[+].code = #72
 * group[=].element[=].display = "ПНЕВМО-1"
 * group[=].element[=].target[+].code = #GNPNE
-* group[=].element[=].target[=].display = "Пневмококковая вакцина"
+* group[=].element[=].target[=].display = "Generic Pneumococcal"
 * group[=].element[=].target[=].relationship = #related-to
 
 * group[=].element[+].code = #11
 * group[=].element[=].display = "ОПВ-1"
 * group[=].element[=].target[+].code = #GNPOL
-* group[=].element[=].target[=].display = "Полиомиелит"
+* group[=].element[=].target[=].display = "Generic Poliomyelitis"
 * group[=].element[=].target[=].relationship = #related-to
 
 * group[=].element[+].code = #18
 * group[=].element[=].display = "ОПВ-2"
 * group[=].element[=].target[+].code = #GNPOL
-* group[=].element[=].target[=].display = "Полиомиелит"
+* group[=].element[=].target[=].display = "Generic Poliomyelitis"
 * group[=].element[=].target[=].relationship = #related-to
 
 * group[=].element[+].code = #25
 * group[=].element[=].display = "ОПВ-3"
 * group[=].element[=].target[+].code = #GNPOL
-* group[=].element[=].target[=].display = "Полиомиелит"
+* group[=].element[=].target[=].display = "Generic Poliomyelitis"
 * group[=].element[=].target[=].relationship = #related-to
 
 * group[=].element[+].code = #35
 * group[=].element[=].display = "ОПВ-4"
 * group[=].element[=].target[+].code = #GNPOL
-* group[=].element[=].target[=].display = "Полиомиелит"
+* group[=].element[=].target[=].display = "Generic Poliomyelitis"
 * group[=].element[=].target[=].relationship = #related-to
 
 * group[=].element[+].code = #38
 * group[=].element[=].display = "ОПВ-5"
 * group[=].element[=].target[+].code = #GNPOL
-* group[=].element[=].target[=].display = "Полиомиелит"
+* group[=].element[=].target[=].display = "Generic Poliomyelitis"
 * group[=].element[=].target[=].relationship = #related-to
 
 * group[=].element[+].code = #57
 * group[=].element[=].display = "ОПВ R"
 * group[=].element[=].target[+].code = #GNPOL
-* group[=].element[=].target[=].display = "Полиомиелит"
+* group[=].element[=].target[=].display = "Generic Poliomyelitis"
 * group[=].element[=].target[=].relationship = #related-to
 
 * group[=].element[+].code = #49
 * group[=].element[=].display = "ОПВ2"
 * group[=].element[=].target[+].code = #GNPOL
-* group[=].element[=].target[=].display = "Полиомиелит"
+* group[=].element[=].target[=].display = "Generic Poliomyelitis"
 * group[=].element[=].target[=].relationship = #related-to
 
 * group[=].element[+].code = #44
 * group[=].element[=].display = "ОПВ1"
 * group[=].element[=].target[+].code = #GNPOL
-* group[=].element[=].target[=].display = "Полиомиелит"
+* group[=].element[=].target[=].display = "Generic Poliomyelitis"
 * group[=].element[=].target[=].relationship = #related-to
 
 * group[=].element[+].code = #84
 * group[=].element[=].display = "V1 ОПВ"
 * group[=].element[=].target[+].code = #GNPOL
-* group[=].element[=].target[=].display = "Полиомиелит"
+* group[=].element[=].target[=].display = "Generic Poliomyelitis"
 * group[=].element[=].target[=].relationship = #related-to
 
 * group[=].element[+].code = #85
 * group[=].element[=].display = "V2 ОПВ"
 * group[=].element[=].target[+].code = #GNPOL
-* group[=].element[=].target[=].display = "Полиомиелит"
+* group[=].element[=].target[=].display = "Generic Poliomyelitis"
 * group[=].element[=].target[=].relationship = #related-to
 
 * group[=].element[+].code = #86
 * group[=].element[=].display = "V3 ОПВ"
 * group[=].element[=].target[+].code = #GNPOL
-* group[=].element[=].target[=].display = "Полиомиелит"
+* group[=].element[=].target[=].display = "Generic Poliomyelitis"
 * group[=].element[=].target[=].relationship = #related-to
 
 * group[=].element[+].code = #87
 * group[=].element[=].display = "V4 ОПВ"
 * group[=].element[=].target[+].code = #GNPOL
-* group[=].element[=].target[=].display = "Полиомиелит"
+* group[=].element[=].target[=].display = "Generic Poliomyelitis"
 * group[=].element[=].target[=].relationship = #related-to
 
 * group[=].element[+].code = #26
 * group[=].element[=].display = "Рота-3"
 * group[=].element[=].target[+].code = #GNROX
-* group[=].element[=].target[=].display = "Ротавирус"
+* group[=].element[=].target[=].display = "Generic Rotavirus"
 * group[=].element[=].target[=].relationship = #related-to
 
 * group[=].element[+].code = #50
 * group[=].element[=].display = "ROT2"
 * group[=].element[=].target[+].code = #GNROX
-* group[=].element[=].target[=].display = "Ротавирус"
+* group[=].element[=].target[=].display = "Generic Rotavirus"
 * group[=].element[=].target[=].relationship = #related-to
 
 * group[=].element[+].code = #45
 * group[=].element[=].display = "РОТА 1"
 * group[=].element[=].target[+].code = #GNROX
-* group[=].element[=].target[=].display = "Ротавирус"
+* group[=].element[=].target[=].display = "Generic Rotavirus"
 * group[=].element[=].target[=].relationship = #related-to
 
 * group[=].element[+].code = #12
 * group[=].element[=].display = "РОТА-1"
 * group[=].element[=].target[+].code = #GNROX
-* group[=].element[=].target[=].display = "Ротавирус"
+* group[=].element[=].target[=].display = "Generic Rotavirus"
 * group[=].element[=].target[=].relationship = #related-to
 
 * group[=].element[+].code = #19
 * group[=].element[=].display = "РОТА-2"
 * group[=].element[=].target[+].code = #GNROX
-* group[=].element[=].target[=].display = "Ротавирус"
+* group[=].element[=].target[=].display = "Generic Rotavirus"
 * group[=].element[=].target[=].relationship = #related-to
 
 * group[=].element[+].code = #79
 * group[=].element[=].display = "В1 РОТА"
 * group[=].element[=].target[+].code = #GNROX
-* group[=].element[=].target[=].display = "Ротавирус"
+* group[=].element[=].target[=].display = "Generic Rotavirus"
 * group[=].element[=].target[=].relationship = #related-to
 
 * group[=].element[+].code = #80
 * group[=].element[=].display = "В2 РОТА"
 * group[=].element[=].target[+].code = #GNROX
-* group[=].element[=].target[=].display = "Ротавирус"
+* group[=].element[=].target[=].display = "Generic Rotavirus"
 * group[=].element[=].target[=].relationship = #related-to
 
 * group[=].element[+].code = #81
 * group[=].element[=].display = "В3 РОТА"
 * group[=].element[=].target[+].code = #GNROX
-* group[=].element[=].target[=].display = "Ротавирус"
+* group[=].element[=].target[=].display = "Generic Rotavirus"
 * group[=].element[=].target[=].relationship = #related-to
 
 * group[=].element[+].code = #88
 * group[=].element[=].display = "V2 РОТА"
 * group[=].element[=].target[+].code = #GNROX
-* group[=].element[=].target[=].display = "Ротавирус"
+* group[=].element[=].target[=].display = "Generic Rotavirus"
 * group[=].element[=].target[=].relationship = #related-to
 
 * group[=].element[+].code = #13
 * group[=].element[=].display = "Пента-1"
 * group[=].element[=].target[+].code = #IFPA
-* group[=].element[=].target[=].display = "Инфанрикс Пента (пятикомпонентная: дифтерия, коклюш, столбняк, полиомиелит, Hib)"
+* group[=].element[=].target[=].display = "Infanrix Penta"
 * group[=].element[=].target[=].relationship = #related-to
 
 * group[=].element[+].code = #20
 * group[=].element[=].display = "Пента-2"
 * group[=].element[=].target[+].code = #IFPA
-* group[=].element[=].target[=].display = "Инфанрикс Пента (пятикомпонентная: дифтерия, коклюш, столбняк, полиомиелит, Hib)"
+* group[=].element[=].target[=].display = "Infanrix Penta"
 * group[=].element[=].target[=].relationship = #related-to
 
 * group[=].element[+].code = #27
 * group[=].element[=].display = "Пента-3"
 * group[=].element[=].target[+].code = #IFPA
-* group[=].element[=].target[=].display = "Инфанрикс Пента (пятикомпонентная: дифтерия, коклюш, столбняк, полиомиелит, Hib)"
+* group[=].element[=].target[=].display = "Infanrix Penta"
 * group[=].element[=].target[=].relationship = #related-to
 
 * group[=].element[+].code = #271
 * group[=].element[=].display = "Инфлювак"
 * group[=].element[=].target[+].code = #INFLUV
-* group[=].element[=].target[=].display = "Инфлювак (вакцина против гриппа, инактивированная)"
+* group[=].element[=].target[=].display = "Influvac"
 * group[=].element[=].target[=].relationship = #related-to
 
 * group[=].element[+].code = #63
 * group[=].element[=].display = "КПК R"
 * group[=].element[=].target[+].code = #MMR
-* group[=].element[=].target[=].display = "КПК (комбинированная вакцина против кори, паротита и краснухи)"
+* group[=].element[=].target[=].display = "Generic MMR"
 * group[=].element[=].target[=].relationship = #related-to
 
 * group[=].element[+].code = #52
 * group[=].element[=].display = "КПК"
 * group[=].element[=].target[+].code = #MMR
-* group[=].element[=].target[=].display = "КПК (комбинированная вакцина против кори, паротита и краснухи)"
+* group[=].element[=].target[=].display = "Generic MMR"
 * group[=].element[=].target[=].relationship = #related-to
 
 * group[=].element[+].code = #42
 * group[=].element[=].display = "ЭПКК"
 * group[=].element[=].target[+].code = #MMR
-* group[=].element[=].target[=].display = "КПК (комбинированная вакцина против кори, паротита и краснухи)"
+* group[=].element[=].target[=].display = "Generic MMR"
 * group[=].element[=].target[=].relationship = #related-to
 
 * group[=].element[+].code = #37
 * group[=].element[=].display = "КПК-2"
 * group[=].element[=].target[+].code = #MMR
-* group[=].element[=].target[=].display = "КПК (комбинированная вакцина против кори, паротита и краснухи)"
+* group[=].element[=].target[=].display = "Generic MMR"
 * group[=].element[=].target[=].relationship = #related-to
 
 * group[=].element[+].code = #33
 * group[=].element[=].display = "КПК-1"
 * group[=].element[=].target[+].code = #MMR
-* group[=].element[=].target[=].display = "КПК (комбинированная вакцина против кори, паротита и краснухи)"
+* group[=].element[=].target[=].display = "Generic MMR"
 * group[=].element[=].target[=].relationship = #related-to
 
 * group[=].element[+].code = #62
 * group[=].element[=].display = "КПК-1 для младенцев"
 * group[=].element[=].target[+].code = #MMR
-* group[=].element[=].target[=].display = "КПК (комбинированная вакцина против кори, паротита и краснухи)"
+* group[=].element[=].target[=].display = "Generic MMR"
 * group[=].element[=].target[=].relationship = #related-to
 
 * group[=].element[+].code = #76

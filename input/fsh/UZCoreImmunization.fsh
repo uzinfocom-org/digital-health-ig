@@ -261,7 +261,7 @@ Description: "Example Observation capturing a post-immunization reaction for a p
 Instance: immunization-recommendation-example
 InstanceOf: ImmunizationRecommendation
 Usage: #example
-Title: "Immunization Recommendation - BCG "
+Title: "Immunization Recommendation - BCG"
 Description: "Example ImmunizationRecommendation resource indicating a due BCG vaccine for a patient."
 
 * language = #en

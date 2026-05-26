@@ -62,6 +62,7 @@ Target Code System http://unitsofmeasure.org doesn't have all content (content =
 # the publisher's internal expander disagrees with tx and emits
 # CONCEPTMAP_GROUP_TARGET_CODE_INVALID_VS for every target.
 # Reproducer: https://github.com/vadi2/VadimTestIG/tree/conceptmap-target-vs-bug
+# IG Publisher bug: ConceptMap target-code validation rejects codes that ARE in the target ValueSet. This has been reported and we can ignore it
 The target code '01' is not valid in the value set https://terminology.dhp.uz/fhir/core/ValueSet/vaccine-code-vs|%
 The target code '03' is not valid in the value set https://terminology.dhp.uz/fhir/core/ValueSet/vaccine-code-vs|%
 The target code '05' is not valid in the value set https://terminology.dhp.uz/fhir/core/ValueSet/vaccine-code-vs|%
