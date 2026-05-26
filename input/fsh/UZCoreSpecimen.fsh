@@ -49,10 +49,10 @@ Description: "Uzbekistan Core profile for representing laboratory and other clin
 * collection.fastingStatus[x] ^short = "Patient fasting status at collection time (or relevant clinical information affecting interpretation)."
 
 
-Instance: specimen-example-blood-cbc
+Instance: example-specimen-blood-cbc
 InstanceOf: UZCoreSpecimen
 Usage: #example
-Description: "Temporary Specimen instance for lab (based on drafted UZCoreSpecimen Excel structure)"
+Description: "Example UZ Core Specimen: venous whole blood collected for a Complete Blood Count (CBC) order."
 /* * identifier.system = "https://dhp.uz/fhir/identifier/specimen-id"
 * identifier.value = "SPC-2025-000001"
 * accessionIdentifier.system = "https://dhp.uz/fhir/identifier/lab-accession-id"
