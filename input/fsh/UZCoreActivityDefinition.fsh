@@ -62,6 +62,8 @@ Description: "Uzbekistan Core ActivityDefinition Profile, used for the definitio
   * function MS
 
 * product[x] MS
+* productReference MS
+* productCodeableConcept MS
 * quantity MS
 * dosage MS
 
@@ -111,4 +113,4 @@ Description: "Routine childhood vaccination activity definition for Uzbekistan D
 * code = $sct#33879002 "Administration of vaccine to produce active immunity"
 
 * participant[0].type = $action-participant-type#practitioner "Practitioner"
-* participant[0].role = $sct#106292003
+* participant[0].role = $sct#106292003 

@@ -1,8 +1,8 @@
-CodeSystem: ResourceTypeCS
-Id: resource-type-cs
-Title: "Resource type translations"
-Description: "Resource type supplement with translations in Uzbek and Russian"
-* insert SupplementCodeSystemDraft(resource-type-cs, $resource-types, 5.0.0)
+CodeSystem: ParticipantResourceTypeCS
+Id: participant-resource-type-cs
+Title: "Participant resource type translations"
+Description: "Participant resource type supplement with translations in Uzbek and Russian"
+* insert SupplementCodeSystemDraft(participant-resource-type-cs, $resource-types, 5.0.0)
 
 * #Patient
   * ^designation[0].language = #ru

@@ -2,7 +2,6 @@ CodeSystem: RequestResourceTypesCS
 Id: request-resource-types-cs
 Title: "Request resource types"
 Description: "FHIR request resource types in Uzbekistan"
-
 * insert SupplementCodeSystemDraft(request-resource-types-cs, $resource-types, 5.0.0)
 
 * #ImmunizationRecommendation
