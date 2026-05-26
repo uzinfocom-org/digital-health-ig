@@ -1,8 +1,8 @@
 CodeSystem: AIRVaccineTranslationsCS
 Id: air-vaccine-translations-cs
 Title: "Australian Immunisation Register Vaccine Code Translations"
-Description: "Supplement providing Uzbek and Russian translations for the Australian Immunisation Register Vaccine code system (urn:oid:1.2.36.1.2001.1005.17)."
-* insert SupplementCodeSystemOid(air-vaccine-translations-cs, $air-vaccine, 3.0.1)
+Description: "Supplement providing Uzbek and Russian translations for the Australian Immunisation Register Vaccine code system."
+* insert SupplementCodeSystem(air-vaccine-translations-cs, $air-vaccine, 3.0.1)
 
 * #AGRPAL "Agrippal"
   * ^designation[0].language = #uz
@@ -382,7 +382,7 @@ Description: "Supplement providing Uzbek and Russian translations for the Austra
   * ^designation[+].language = #ru
   * ^designation[=].value = "Превенар 13 (пневмококковая конъюгированная вакцина, 13‑валентная)"
 
-* #PRXTEX "Priorix-Tetra"
+* #PRXTET "Priorix-tetra"
   * ^designation[0].language = #uz
   * ^designation[=].value = "Priorix-Tetra (GSK dan to'rtta MMR + suvchechak vaktsinasi)"
   * ^designation[+].language = #ru
