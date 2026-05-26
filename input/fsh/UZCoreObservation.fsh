@@ -220,7 +220,7 @@ Description: "Example of CBC (Umumiy qon tahlili) as a laboratory panel with ana
 * effectiveDateTime = "2025-11-04T08:10:00Z"
 * issued = "2025-11-04T09:00:00Z"
 * performer = Reference(Practitioner/example-practitioner)
-* specimen = Reference(Specimen/specimen-example-blood)
+* specimen = Reference(Specimen/example-specimen-blood-cbc)
 * component[0].code = observation-lab-research-codes-cs#lab-1 "Leukocytes [#/volume] in Blood by Automated count"
 * component[=].valueQuantity = 6.2 '10*9/L' "10^9/L"
 * component[+].code = observation-lab-research-codes-cs#lab-2 "Neutrophils [#/volume] in Blood by Automated count"
