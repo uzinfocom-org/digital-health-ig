@@ -2,7 +2,7 @@ CodeSystem: SpecimenTypesCS
 Id: specimen-types-cs
 Title: "Specimen types translations"
 Description: "Specimen types, supplemented with translations in Uzbek and Russian"
-* insert SupplementCodeSystemDraft(specimen-types-cs, $v2-0487, 3.0.0)
+* insert SupplementCodeSystemDraft(specimen-types-cs, $v2-0487, 2.9)
 
 * #ABS
   * ^designation[0].language = #ru
