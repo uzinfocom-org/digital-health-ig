@@ -1,5 +1,7 @@
 
 // Alias: $encounter-class = https://terminology.dhp.uz/fhir/core/ValueSet/encounter-class
+//find this link
+Alias: $action-participant-type = http://hl7.org/fhir/action-participant-type
 Alias: $event-status = http://hl7.org/fhir/event-status
 Alias: $address-type = http://hl7.org/fhir/address-type
 Alias: $address-use = http://hl7.org/fhir/address-use
@@ -79,10 +81,15 @@ Alias: $participation-role-type = http://terminology.hl7.org/CodeSystem/provenan
 Alias: $passport-international = https://dhp.uz/fhir/core/sid/pid/uz/ppn/intl
 Alias: $passport-local = https://dhp.uz/fhir/core/sid/pid/uz/ppn/local
 Alias: $patient-satisfaction-cs = https://terminology.dhp.uz/fhir/core/CodeSystem/patient-satisfaction-cs
+//find this link
+Alias: $patient-satisfaction-questionnaire = https://terminology.dhp.uz/fhir/core/CodeSystem/patient-satisfaction-cs
 Alias: $penitentiaryinstitution = https://dhp.uz/fhir/core/sid/pid/uz/pcn
 Alias: $practitioner-argos-id-system = https://dhp.uz/fhir/core/sid/pro/uz/argos
 Alias: $pension-number = https://dhp.uz/fhir/core/sid/pid/uz/pen
 Alias: $provenance-entity-role = http://hl7.org/fhir/provenance-entity-role
+Alias: $publication-status = http://hl7.org/fhir/publication-status
+Alias: $request-intent = http://hl7.org/fhir/request-intent
+Alias: $request-priority = http://hl7.org/fhir/request-priority
 Alias: $provenance-participant-type = http://terminology.hl7.org/CodeSystem/provenance-participant-type
 Alias: $provider-number = https://dhp.uz/fhir/core/sid/pid/uz/prn
 Alias: $provider-number-example-org = https://dhp.uz/fhir/core/sid/pid/uz/prn/200935935
@@ -143,3 +150,6 @@ Alias: $v2-0916 = http://terminology.hl7.org/CodeSystem/v2-0916
 Alias: $v2-0487 = http://terminology.hl7.org/CodeSystem/v2-0487
 Alias: $specimen-role = http://hl7.org/fhir/specimen-role
 Alias: $nationality-cs = https://terminology.dhp.uz/fhir/core/CodeSystem/nationality-cs
+//find this link
+Alias: $version-algorithms = http://hl7.org/fhir/version-algorithm
+Alias: $resource-types = http://hl7.org/fhir/fhir-types
