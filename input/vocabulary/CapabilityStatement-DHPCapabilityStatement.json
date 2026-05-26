@@ -124,7 +124,6 @@
             }
           ],
           "supportedProfile": [
-            "https://dhp.uz/fhir/core/StructureDefinition/uz-core-clinical-condition",
             "https://dhp.uz/fhir/core/StructureDefinition/uz-core-condition"
           ],
           "type": "Condition"

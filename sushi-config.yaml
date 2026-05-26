@@ -9,7 +9,7 @@ name: DHP
 title: Uzbekistan Digital Health Platform
 description: National implementation guide for Uzbekistan using FHIR R5.
 status: draft # draft | active | retired | unknown
-version: 0.4.0
+version: 0.5.0
 fhirVersion: 5.0.0 # https://www.hl7.org/fhir/valueset-FHIR-version.html
 copyrightYear: 2025+
 releaseLabel: ci-build
@@ -104,7 +104,7 @@ menu:
     Vital signs: vital-signs.html
   API access: api-access.html
   Artifacts: artifacts.html
-  Services: services.html
+  Components: components.html
   Changelog: changelog.html
 
 # ╭───────────────────────────Less Common Implementation Guide Properties──────────────────────────╮

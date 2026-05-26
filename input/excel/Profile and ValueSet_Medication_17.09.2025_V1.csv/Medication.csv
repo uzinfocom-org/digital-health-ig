@@ -1,0 +1,117 @@
+Оriginal element	FHIR element					Flags		Cardinality	Example	Example	Type	Description & Constraints	
+	identifier	All slices					Σ	0..*			Identifier	Бизнес-идентификатор этого лекарства	
+		identifier:uzpharmInfo				S						Система выдачи разрешений на ввоз фармацевтической продукции в Узбекистан	
+			system			S		1..1	https://uzpharminfo.uz 		uri	Система Дармон - uzpharminfo.uz => название системы, в которой Регистрационное Удостоверение 	
+			type =>					1..1			CodeableConcept	Формирование данных в зависимости от того, какой тип идентификатора приходит	
+				coding									
+					system			1..1	https://dhp.uz.terminology/CodeSystem/ID-type 		uri	Типы идентификаторов лекарств	
+					code 			1..1	registration_number		code	Идентификационные коды для фармацевтической продукции (например, маркировка или GTIN)	
+					display			1..1	Registration Certificate		string	Показать, какой тип идентификатора используется	
+			use			?!	Σ	0..1	официальный		code	"обычный | официальный | временный | вторичный | старый (если известен)
+Привязка: IdentifierUse (обязательно)"	
+			value 			S	Σ	1…1	DV/M 02189/07/18		string	Номер Регистрационное Удостоверение 	
+		 identifier: AsilBelgisi										Система «AsilBelgisi» — это система маркировки продукции, импортируемой в Узбекистан.	
+			system			S		1..1	https://mobile-api.aslbelgisi.uz 		uri	URL, по которому идентификатор будет получит	
+			type =>					1..1				Формирование данных в зависимости от того, какой тип идентификатора приходит	
+				coding									
+					system			1..1	https://dhp.uz.terminology/CodeSystem/ID-type 		uri	Типы идентификаторов лекарств	
+					code 			1..1	gtin		code 	Идентификационные коды для фармацевтической продукции (например, маркировка или GTIN)	
+					display			1..1	Глобальный номер торговой единицы		string	Показать, какой тип идентификатора используется	
+			use			?!	Σ	0..1	официальный		code	"обычный | официальный | временный | вторичный | старый (если известен)
+Привязка: IdentifierUse (обязательно)"	
+			value 			S	Σ	1…1	4603276012294		string	Номер GTIN или Маркировка	
+	code =>											Включены международные непатентованные наименования лекарственных средств и анатомо-терапевтическо-химическая классификация лекарственных средств.	
+		coding						0..*			Coding	"Ввести коды ЛС по АТХ и МНН.
+Coding здесь является массивом"	"""code"": {
+    ""coding"": [
+      {
+        ""system"": ""http://www.whocc.no/atc"",
+        ""code"": ""N02BE01"",
+        ""display"": ""Paracetamol""
+      },
+      {
+        ""system"": ""https://nsi.eaeunion.org/medications"",
+        ""code"": ""123456"",
+        ""display"": ""Парацетамол 500 мг, таблетки""
+      }
+    ],
+    ""text"": ""Paracetamol""
+  }"
+			system 			S		0..1	http://dhp.uz.terminology/CodeSystem/atc 	https://nsi.eaeunion.org/	uri 	Для ввода кодов ATX и MNN для фармацевтической продукции используются два разных стандарта: Евразийской экономической комиссии и локальный код.	
+			code			S		0..1	N02BE01	005325	code	"уникальный идентификатор вещества АТХ или МНН
+Binding: АТХ  и МНН"	
+			display			S		0..1	Paracetamol	Paracetamol	string	Международные непатентованные наименования связаны с кодексом.	
+		text				S		0.1	Paratsetamol tabletkalari 500 mg №10	Paratsetamol tabletkalari 500 mg №10	string	В этом разделе указаны торговые наименования фармацевтической продукции.	
+	status 					S?!	Σ	0..1				"active | inactive | entered-in-error
+Binding: Medication Status Codes (Required)"	
+	marketingAuthorizationHolder						Σ	0..1	"""holder"": {
+                    ""holder_id"": ""8143"",
+                    ""holder_name"": ""ФГУП Московский эндокринный завод1 Российская Федерация"",
+                    ""holder_region_id"": ""10478"",
+                    ""holder_region"": ""Российская Федерация""
+                }"	"""holder"": {
+                    ""holder_id"": ""8994"",
+                    ""holder_name"": ""РУП Белмедпрепараты Республика Беларусь"",
+                    ""holder_region_id"": ""10620"",
+                    ""holder_region"": ""Республика Беларусь""
+                }"	Reference (Organization)	Организация, имеющая разрешение на продажу лекарственных средств	
+	doseForm => 					S		0..1			CodeableConcept	"порошок | таблетки | капсула +
+Binding: doseForm
+"	
+		coding						0..*			coding	Указывает на ваш локальный CodeSystem лекарственных форм (иерархический справочник).	
+			system 			S		0..1	http://dhp.uz.terminlogy/CodeSystem/doseForm 	http://dhp.uz.terminlogy/CodeSystem/doseForm	uri 	URL-ссылка на справочник лекарственных форм	
+			code			S		0..1	TAB101	SLT101	code	Локальный код формы дозы	
+			display			S		0..1	таблетки	растворитель	string	Название конечной лекарственной формы, извлекаемое из CodeSystem	
+		text						0..1	твердое тело	твердое тело/жидкость		Наименование агрегатного состояния лекарственных средств	
+	totalVolume  => 					S	Σ	0..1			Quantity	Общий объём лекарства в упаковке или контейнере. Используется, чтобы указать суммарный объём жидкости или массы, содержащийся в лекарственном средстве.	
+		Quantity =>									Element	Структурированный тип данных для хранения числового значения вместе с единицей измерения.	
+			value 				Σ	0..1	1	250	decimal	Числовое значение (с неявной точностью)	
+			comparator:code			?!	Σ	0..1			code	"это знак сравнения, который уточняет значение в Quantity.value.
+Точное ли это значение, или оно больше/меньше указанного числа.
+< | <= | >= | > | ad"	
+			unit			T	Σ	0..1	ml	mg	string	Предоставляется единица измерения	
+			system			C	Σ	0..1	http://dhp.uz.terminlogy/CodeSystem/unit_of_measurement 		uri	URL-ссылка на кодированную единицу измерения	
+			code 			C	Σ	0..1	mL	mg	code	"Кодированная форма единицы
+Binding: CodeSystem"	
+	ingredient () =>					S		0..*			BackboneElement	Активный или неактивный ингредиент	
+		item 						1..1			"	CodeableReference(Substance)"	"Ингредиент (вещество или лекарственный препарат), к которому относится значение ingredient.strength
+Привязка: Коды лекарственных препаратов МНН (пример)"	
+		isActive 						0..1	true	false	boolean	Индикатор активного ингредиента	
+		strength [x] =>						0..1				"Количество присутствующего ингредиента
+Связующее: Коды концентрации ингредиентов лекарственного средства (предпочтительно)"	
+			strengthRatio =>								"	Ratio"		
+				numerator 		C	Σ	0..1			Quantity	"это верхняя часть дроби (отношения) в типе данных Ratio.
+Он представляет собой основное количество вещества или значения, которое указывается в отношении к другой величине (denominator)."	
+					value 		Σ	0..1	500	 3.9 	decimal 	числовое значение	
+					comparator:code	?!	Σ	0..1		>=	code	"это знак сравнения, который уточняет значение в Quantity.value.
+Точное ли это значение, или оно больше/меньше указанного числа.
+< | <= | >= | > | ad"	
+					unit	T	Σ	0..1	mg	mmol/L	string	единица измерения (человекочитаемая)	
+					system	C	Σ	0..1	http://unitsofmeasure.org  для UCUM	http://unitsofmeasure.org для UCUM	uri 	система кодов (обычно http://unitsofmeasure.org для UCUM)	
+					code 	C	Σ	0..1	mg	mmol/L	code	"код единицы измерения
+Binding : Единица измерения"	
+				denominator		C	Σ	0..1			SimpleQuantity	"нижняя часть дроби в типе данных Ratio.
+Он показывает, к какой величине относится числитель (numerator)."	
+					value 		Σ	0..1	1	1	decimal	числовое значение	
+					unit	T	Σ	0..1	таблетка	таблетка	string	единица измерения (читаемое обозначение, напр. «мл», «таблетка»)	
+					system	C	Σ	0..1	http://terminology.hl7.org/CodeSystem/DrugForm 	http://terminology.hl7.org/CodeSystem/DrugForm	uri 	система кодов (обычно http://unitsofmeasure.org для UCUM)	
+					code 	C	Σ	0..1		TAB	code 	" код единицы измерения
+Binding: Единица измерения"	
+			strengthCodeableConcept								CodeableConcept	"не числовая, а категориальная сила («низкая доза», «концентрированный»).
+If we have used strengthRatio, then this resource is not used."	
+				coding =>			Σ	0..1					
+					system			0..1		http://example.org/strength-classification	uri	ссылка на систему кодирования (например, словарь классификации)	
+					code 			0..1		high	code	Код не числовой, а категориальный признак	
+					display			0..1		High potency	string	Читаемое название категории из системы (например, «Низкая доза»).	
+				text			Σ	0.1		High potency	string	Текстовое отображение, введённое пользователем («низкая доза», «концентрированный»).	
+			strengthQuantity								Quantity	"действительно, но только если ни один знаменатель не имеет смысла (например, пластырь с «всего 140 мг»).
+If we have used strengthRatio, then this resource is not used."	
+				value 			Σ	0..1	140		decimal	числовое значение (например, 140).	
+				unit		T	Σ	0..1	mg		string	"единица измерения в читаемом виде (например, ""мг"", ""таблетка"")."	
+				system		C	Σ	0..1	http://dhp.uz.terminlogy/CodeSystem/unit_of_measurement 		uri	кодовая система единиц (обычно http://unitsofmeasure.org для UCUM).	
+				code 		C	Σ	0..1	mg		code	" код единицы измерения (например, ""mg"", ""mL"", ""TAB""). 
+Binding: Единица измерения или DoseForm"	
+	batch =>					S		"	0..1"			BackboneElement	Подробная информация об упакованных лекарствах	
+		lotNumber						"	0..1"			string	Идентификатор, присвоенный партии (АИК)	
+		expirationDate						"	0..1"			dateTime	Когда истекает срок годности партии	
+	defination 							"	0..1"	"""reference"": ""MedicationKnowledge/paracetamol-info"""		Reference(MedicationKnowledge)	это специальный ресурс для хранения справочной информации о лекарственных средствах	
