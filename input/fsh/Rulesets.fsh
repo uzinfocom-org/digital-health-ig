@@ -72,7 +72,7 @@ RuleSet: HumanName
 
 RuleSet: TaxIdentifier
 * identifier[taxId]
-  * ^short = "Unique identifier of the organization in Soliq"
+  * ^short = "Unique identifier of the organization in  Soliq"
   * system 1..1 MS
   * system = $organization-tax-id-system
   * type 1..1 MS

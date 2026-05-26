@@ -1,5 +1,6 @@
 
 // Alias: $encounter-class = https://terminology.dhp.uz/fhir/core/ValueSet/encounter-class
+Alias: $event-status = http://hl7.org/fhir/event-status
 Alias: $address-type = http://hl7.org/fhir/address-type
 Alias: $address-use = http://hl7.org/fhir/address-use
 Alias: $audit-event-action = http://hl7.org/fhir/audit-event-action
@@ -43,8 +44,10 @@ Alias: $issue-severity = http://hl7.org/fhir/issue-severity
 Alias: $location-status = http://hl7.org/fhir/location-status
 Alias: $location-unit = https://dhp.uz/fhir/core/NamingSystem/location-unit
 Alias: $loinc = http://loinc.org
+Alias: $loinc-vs = http://loinc.org/vs
 Alias: $mfa = https://gov.uz/ru/mfa
 Alias: $militaryID = https://dhp.uz/fhir/core/sid/pid/uz/mi
+Alias: $mis-dmed-uz = https://mis.dmed.uz
 Alias: $mudofaa = https://gov.uz/ru/mudofaa
 Alias: $name-use = http://hl7.org/fhir/name-use
 Alias: $nationaluniqueID = https://dhp.uz/fhir/core/sid/pid/uz/ni
@@ -129,3 +132,6 @@ Alias: $v2-0916 = http://terminology.hl7.org/CodeSystem/v2-0916
 Alias: $v2-0916 = http://terminology.hl7.org/CodeSystem/v2-0916
 Alias: $v2-0487 = http://terminology.hl7.org/CodeSystem/v2-0487
 Alias: $specimen-role = http://hl7.org/fhir/specimen-role
+Alias: $nationality-cs = https://terminology.dhp.uz/fhir/core/CodeSystem/nationality-cs
+Alias: $ucum = http://unitsofmeasure.org
+Alias: $ucum-vs = http://hl7.org/fhir/ValueSet/ucum-units
