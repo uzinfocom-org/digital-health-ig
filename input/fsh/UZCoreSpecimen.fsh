@@ -16,6 +16,7 @@ Description: "Uzbekistan Core profile for representing laboratory and other clin
 * type MS
 * type from SpecimenTypesVS (preferred) 
 * type ^short = "Type of specimen (e.g., venous blood, urine, swab) used to interpret tests and processing requirements."
+* subject MS
 * subject only Reference(UZCorePatient or UZCoreLocation or Substance)
 * subject ^short = "Where the specimen came from. This may be from patient(s), from a location (e.g., the source of an environmental sample), or a sampling of a substance."
 * receivedTime MS
@@ -26,11 +27,14 @@ Description: "Uzbekistan Core profile for representing laboratory and other clin
 * request MS
 * request only Reference(ServiceRequest)
 * request ^short = "Order/request that triggered the specimen collection. Enables linking specimen to ordered tests/services."
+* combined MS
 * combined from SpecimenCombinedVS (required)
 * combined ^short = "Whether the container holds a pooled/combined specimen from multiple collection events or sources (if applicable)."
+* role MS
 * role from SpecimenRoleVS (preferred)
 * role ^short = "Role of this container in the overall specimen . Supports lab handling and result association."
 * collection MS
+* collection.collector MS
 * collection.collector only Reference(UZCorePractitioner)
 * collection.collector ^short = "Practitioner who collected the specimen."
 * collection.collected[x] MS
