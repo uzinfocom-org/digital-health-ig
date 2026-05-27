@@ -24,8 +24,3 @@ Description: "Immunization recommendation forecast status supplement with transl
   * ^designation[=].value = "Противопоказано"
   * ^designation[+].language = #uz
   * ^designation[=].value = "Qarshi ko‘rsatma mavjud"
-* #complete "Complete"
-  * ^designation[0].language = #ru
-  * ^designation[=].value = "Завершена"
-  * ^designation[+].language = #uz
-  * ^designation[=].value = "Yakunlangan"
