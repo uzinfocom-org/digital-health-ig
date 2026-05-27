@@ -111,7 +111,7 @@ Description: "Example of an immunization recommendation with non-mandatory eleme
 
 * authority = Reference(example-organization)
 
-* recommendation[0].vaccineCode[0] = VaccineCodeCS#immun-63 "measles, mumps and rubella virus vaccine"
+* recommendation[0].vaccineCode[0] = $cvx#03 "measles, mumps and rubella virus vaccine"
 * recommendation[0].targetDisease[0] = $sct#14189004 "Measles"
 // * recommendation[0].contraindicatedVaccineCode[0] = $sct#1119305005 "COVID-19 vaccine"
 
