@@ -6,3 +6,4 @@ Description: "State classification of positions of employees and worker professi
 * ^experimental = true
 * ^language = #uz
 * include codes from system position-and-profession-cs
+* include codes from system position-and-profession-cs-2
