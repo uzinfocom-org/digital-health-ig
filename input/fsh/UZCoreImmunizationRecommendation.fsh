@@ -32,7 +32,7 @@ Description: "Uzbekistan Core ImmunizationRecommendation profile, used to repres
 * recommendation obeys uzcore-imrec-1
 
 * recommendation.vaccineCode 0..* MS
-* recommendation.vaccineCode from VaccineCodeVS (example)
+* recommendation.vaccineCode from VaccineCodeVS (extensible)
 * recommendation.vaccineCode ^short = "Recommended vaccine or vaccine group"
 
 * recommendation.targetDisease 0..* MS
