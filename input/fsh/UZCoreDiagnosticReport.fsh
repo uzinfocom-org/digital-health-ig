@@ -74,7 +74,7 @@ Description: "Laboratory diagnostic report for a complete blood count, including
 
 * performer = Reference(Practitioner/example-practitioner)
 
-* specimen = Reference(Specimen/specimen-example-blood)
+* specimen = Reference(Specimen/example-specimen-blood-cbc)
 
 * result[0] = Reference(Observation/body-temperature-example)
 
