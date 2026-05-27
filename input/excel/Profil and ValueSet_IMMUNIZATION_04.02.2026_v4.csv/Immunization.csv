@@ -1,0 +1,56 @@
+	Name		Flags		Cardinality	Example	Example	Type	Description & Constraints		ValueSets																	
+	Immunization		TU					DomainResource	Информация о событии иммунизации                                     Элементы, определённые в родительских ресурсах: id, meta, implicitRules, language, text, contained, extension, modifierExtension		System	CodeSystem	Code	Display														
+	Identifier		Σ	D	0..*			identifier	Бизнес-идентификатор		http://hl7.org/fhir/event-status	ImmunizationStatusCodes	 completed,entered-in-error, not-done 	Статус вакцинации														
+	basedOn		 Σ 	D	0..*			Reference(CarePlan | MedicationRequest | ServiceRequest | ImmunizationRecommendation	Право, на котором основывается мероприятие по иммунизации		http://terminology.hl7.org/CodeSystem/v3-ActReason	ImmunizationStatusReasonCodes	 IMMUNE, MEDPREC,  OSTOCK, PATOBJ ,  PHILISOP, RELIG,VACEFF,VACSAF	Логическое определение содержания														
+	 status		?!Σ	D	1..1	completed	In progress	code	"завершено  введено с ошибкой  не выполнено
+Binding (required): http://hl7.org/fhir/event-status"		http://hl7.org/fhir/ValueSet/vaccine-code                                                                                                                                                                                         https://browser.ihtsdotools.org/?perspective=full&conceptId1=404684003&edition=MAIN/2026-01-01&release=&languages=en                                                                                	VaccineAdministeredValueSet	все коды	Идентифицирует введенное вакцинное вещество — коды SNOMED CT														
+	 statusReason			D	0..1	 IMMUNE	 MEDPREC 	CodeableConcept	"Указывает срочность встречи
+Binding (required):http://terminology.hl7.org/5.1.0/CodeSystem-v3-ActReason.html ,https://browser.ihtsdotools.org/?perspective=full&conceptId1=404684003&edition=MAIN/2026-02-01&release=&languages=en"		http://terminology.hl7.org/CodeSystem/immunization-origin	"	ImmunizationOriginCodes"	 provider,record, recall,school	Набор значений  которая состоит из или содержит концепции для поддержки описания источника данных, когда отчет о событии иммунизации не основан на информации от лица, субъекта или организации, которые ввели вакцину.														
+	 vaccineCode		Σ 	D	1..1	871722007	1340018008	CodeableConcept 	"Набор значений «Введённая вакцина»
+Binding(example):  http://hl7.org/fhir/ValueSet/vaccine-code                                                                                
+                https://browser.ihtsdotools.org/?perspective=full&conceptId1=404684003&edition=MAIN/2026-01-01&release=&languages=en                                                                                "		http://terminology.hl7.org/5.1.0/CodeSystem-v3-ActSite.html	CodesForImmunizationSiteOfAdministration	LA , RA,LT,RT	Значение,  содержит концепции, поддерживающие описание участка тела, где была сделана вакцинация. 														
+	administeredProduct			D	0..1			CodeableReference(Medication)	Продукт, который был введен		http://www.snomed.org/	ImmunizationRouteCodes	36673005, 14747002	 Cодержит концепции для поддержки описания административных маршрутов, используемых во время вакцинации														
+	 lotNumber			D	0..1			string	Номер серии вакцины		http://terminology.hl7.org/5.1.0/CodeSystem-immunization-subpotent-reason.html	"	ImmunizationSubpotentReason"	 partialdose,  coldchainbreak,  recall,  adversestorage,  expired	Набор значений которая состоит из или содержит концепции для поддержки описания причины, по которой доза считается субпотенциальной.														
+	expirationDate			D	0..1			date	Срок годности вакцины		http://terminology.hl7.org/5.1.0/CodeSystem-immunization-funding-source.html	"		ImmunizationFundingSource"	"private, public,publicly-funded
+privately-funded"	Набор значений  которая состоит из или содержит концепции для поддержки описания источника введенной вакцины. 														
+	patient		Σ	D	1..1			Reference(Patient)	Кто был вакцинирован		http://www.snomed.org/	ImmunizationTargetDiseaseCodes	все коды	Набор значений  оторая состоит из или содержит концепции для поддержки описания заболевания, против которого вводится доза. Этот набор значений предоставляется в качестве наводящего примера и включает концепции SNOMED CT из иерархии 64572001 (Болезнь).														
+	 encounter			D	0..1			Reference(Encounter)	Медицинский контакт, в рамках которого была проведена иммунизация																			
+	"supportingInformation	"				0..*			Reference(Any)	Дополнительная информация в поддержку иммунизации																			
+	 occurrence[x]		Σ		1..1				Дата введения вакцины																			
+	occurrenceDateTime			C				dateTime																				
+	occurrenceString			C				string																				
+	 primarySource		Σ	D	0..1	"start: 2024-03-01T09:30:00
+end: 2024-03-01T10:15:00"	"start: 2025-02-01T10:30:00
+end: 2025-02-02T11:15:00"	"	boolean"	Указывает контекст, в котором были получены данные.																			
+	informationSource				0..1	 provider 	 record 	CodeableReference(Patient | Practitioner | PractitionerRole | RelatedPerson | Organization)	"Указывает источник сообщенной записи
+Binding (extensible):http://terminology.hl7.org/5.1.0/CodeSystem-immunization-origin.html)"																			
+	 location			D	0..1			Reference(Location)	Где проводилась иммунизация																			
+	 site			D	0..1	LA 	 RA	"	CodeableConcept"	"Вакцина была введена в место введения на теле.        
+Binding(extensible): http://terminology.hl7.org/5.1.0/CodeSystem-v3-ActSite.html"																			
+	route				"	0..1"			"	CodeableConcept"	"Способ введения вакцины в организм
+Binding: Immunization Route Codes (Example)                      https://browser.ihtsdotools.org/?perspective=full&conceptId1=404684003&edition=MAIN/2026-01-01&release=&languages=en"																			
+	doseQuantity		S	D	0..1			SimpleQuantity	Количество введенной вакцины																			
+	performer		Σ	D	0..*	"start: 2024-03-01T09:30:00
+end: 2024-03-01T11:30:00"	"start: 2025-02-01T10:00:00
+end: 2025-02-02T12:45:00"	BackboneElement	Кто провел мероприятие																			
+	actor			D	1..1			Reference(Practitioner | PractitionerRole | Organization | Patient | RelatedPerson)	Лицо или организация, которые выполняли																			
+	note		Σ	D	0..*			Annotation	Дополнительные примечания по иммунизации																			
+	reason				0..*	26643006	300036000	CodeableReference(Condition | Observation | DiagnosticReport)	"Почему произошла иммунизация.
+Binding(required):http://www.snomed.org/"																			
+	isSubpotent	condition	?!Σ		0..1			boolean	Дозовая эффективность																			
+	 subpotentReason			D	0..*	 partialdose	 coldchainbreak 	                                                                                                                                                                                                                                                                                                                                                	"Причина для субпотенциального связывания
+Binding(example):http://terminology.hl7.org/5.1.0/CodeSystem-immunization-subpotent-reason.html"																			
+	 programEligibility			D	0..*			BackboneElement	Подробности о пребывании, во время которого предоставляется медицинская услуга																			
+	 fundingSource	reAdmission		D	0..1	 private	 public	CodeableConcept	"Источник финансирования вакцины
+ Binding(example): http://terminology.hl7.org/5.1.0/CodeSystem-immunization-funding-source.html"																			
+	 reaction	destination	S	D	0..*			BackboneElement	"	Подробности реакции, которая следует за иммунизацией"																			
+	date	dischargeDisposition	S	D	0..1			dateTime	Когда началась реакция																			
+	 manifestation				0..1			CodeableReference(Observation)	Дополнительная информация о реакции																			
+	 reported		S		0..1			"	boolean"	Признак того, что реакция была заявлена пациентом самостоятельно (самоотчёт).																			
+	 protocolApplied		S		0..*			BackboneElement	Протокол проведения иммунизации, соблюдённый медицинским работником.																			
+	series		S		0..1			string	Название серии (курса) вакцинации.																			
+	authority		S		0..1			Reference(Organization)	Организация или орган, ответственный за утверждение и публикацию рекомендаций по вакцинации																			
+	targetDisease		S		0..*	186772009		CodeableConcept	"Заболевание, предотвращаемое вакцинацией, на которое направлена вакцина.
+Binding(extensible):http://www.snomed.org/"																			
+	doseNumber		S		1..1			string	Номер дозы в серии вакцинации.																			
+	 seriesDoses		S		0..1			string	Рекомендуемое общее количество доз для формирования иммунитета.																			

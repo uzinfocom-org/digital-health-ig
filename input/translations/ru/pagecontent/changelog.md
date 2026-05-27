@@ -83,11 +83,11 @@
 
 ### Версия 0.4.0
 
-Добавлен профиль [UZ Core Goal](StructureDefinition-UZCoreGoal.html) с соответствующими кодовыми справочниками и наборами значений.
+Добавлен профиль [UZ Core Goal](StructureDefinition-uz-core-goal.html) с соответствующими кодовыми справочниками и наборами значений.
 
-Добавлены профили [UZ Core Questionnaire](StructureDefinition-UZCoreQuestionnaire.html) и [QuestionnaireResponse](StructureDefinition-UZCoreQuestionnaireResponse.html) с многоязычной поддержкой для переведённых вариантов ответов.
+Добавлены профили [UZ Core Questionnaire](StructureDefinition-uz-core-questionnaire.html) и [QuestionnaireResponse](StructureDefinition-uz-core-questionnaire-response.html) с многоязычной поддержкой для переведённых вариантов ответов.
 
-Добавлен [тип идентификатора для номера пенсионного удостоверения](NamingSystem-patient-id-uzb-pension-number.html) с поддержкой NamingSystem в ресурсе [Patient](StructureDefinition-UZCorePatient.html).
+Добавлен [тип идентификатора для номера пенсионного удостоверения](NamingSystem-patient-id-uzb-pension-number.html) с поддержкой NamingSystem в ресурсе [Patient](StructureDefinition-uz-core-patient.html).
 
 Уточнены требования к силе привязки (binding strength) в [руководстве по моделированию](https://github.com/uzinfocom-org/digital-health-ig/blob/main/modelling-guidelines.md).
 
@@ -95,7 +95,7 @@
 
 Исправлены ссылки на профили для использования профилей UZ Core вместо базовых ресурсов FHIR где возможно.
 
-Гражданство [пациента](StructureDefinition-UZCorePatient.html) теперь использует коды ISO 3166-1 alpha-2 вместо пользовательских кодов МВД.
+Гражданство [пациента](StructureDefinition-uz-core-patient.html) теперь использует коды ISO 3166-1 alpha-2 вместо пользовательских кодов МВД.
 
 Исправлена консистентность кода [OrganizationalSpecialization](CodeSystem-organizational-specialization-cs.html) (101 → 101.0).
 
@@ -103,25 +103,25 @@
 
 Уточнены описания для [NomenclatureGroup](CodeSystem-nomenclature-group-cs.html), [OrganizationalStructure](CodeSystem-organizational-structure-cs.html) и [OrganizationalServiceGroup](CodeSystem-organizational-service-group-cs.html) для объяснения их назначения и иерархии.
 
-Добавлено [расширение для отслеживания даты прикрепления пациента к управляющей организации](StructureDefinition-ManagingOrganizationAttachment.html).
+Добавлено [расширение для отслеживания даты прикрепления пациента к управляющей организации](StructureDefinition-managing-organization-attachment.html).
 
 Добавлен [ConceptMap](ConceptMap-countries-mvd-to-iso3166-alpha2-cm.html) для преобразования кодов стран МВД в коды ISO 3166-1 alpha-2.
 
 Добавлены явные срезы для номеров иностранных паспортов и водительских удостоверений пациентов с поддержкой кодов стран.
 
-Обновлено описание [EpisodeOfCare](StructureDefinition-UZCoreEpisodeOfCare.html).
+Обновлено описание [EpisodeOfCare](StructureDefinition-uz-core-episodeofcare.html).
 
 Улучшена [документация по идентификаторам](identifiers.html), включая уточнение ПИНФЛ и переход на двухбуквенные коды стран (alpha-2).
 
 Добавлен [раздел по витальным показателям](vital-signs.html) с руководством и примерами.
 
-Добавлена поддержка каракалпакского языка (kaa) в правиле MultilingualName, которое используется для многоязычных названий в профилях [Organization](StructureDefinition-UZCoreOrganization.html) и [Location](StructureDefinition-UZCoreLocation.html).
+Добавлена поддержка каракалпакского языка (kaa) в правиле MultilingualName, которое используется для многоязычных названий в профилях [Organization](StructureDefinition-uz-core-organization.html) и [Location](StructureDefinition-uz-core-location.html).
 
 Обновлён владелец интеллектуальной собственности на Министерство здравоохранения.
 
-Добавлен профиль [UZ Core Clinical Condition](StructureDefinition-UZCoreClinicalCondition.html) для разграничения клинических состояний, основанных на МКБ-10, и состояний, не основанных на МКБ-10.
+Добавлен профиль UZ Core Clinical Condition для разграничения клинических состояний, основанных на МКБ-10, и состояний, не основанных на МКБ-10.
 
-Статус инвалидности пациента перенесён из ресурса [Patient](StructureDefinition-UZCorePatient.html) (где он реализовывался через стандартное расширение FHIR) в ресурс [Condition](StructureDefinition-UZCoreCondition.html).
+Статус инвалидности пациента перенесён из ресурса [Patient](StructureDefinition-uz-core-patient.html) (где он реализовывался через стандартное расширение FHIR) в ресурс [Condition](StructureDefinition-uz-core-condition.html).
 
 Из идентификаторов NamingSystem удалены символы подчёркивания.
 
@@ -139,12 +139,12 @@
 
 Обновлены имена срезов (slice names) в соответствии с рекомендуемым стилем именования — lowerCamelCase.
 
-Добавлена поддержка международных адресов в ресурсах [Patient](StructureDefinition-UZCorePatient.html), [Practitioner](StructureDefinition-UZCorePractitioner.html) и [RelatedPerson](StructureDefinition-UZCoreRelatedPerson.html).
+Добавлена поддержка международных адресов в ресурсах [Patient](StructureDefinition-uz-core-patient.html), [Practitioner](StructureDefinition-uz-core-practitioner.html) и [RelatedPerson](StructureDefinition-uz-core-relatedperson.html).
 
 Добавлены переводы на узбекский язык.
 
 ### Версия 0.3.0
-Добавлены UZ Core профили для [Encounter](StructureDefinition-UZCoreEncounter.html), [EpisodeOfCare](StructureDefinition-UZCoreEpisodeOfCare.html) и [Observation](StructureDefinition-UZCoreObservation.html).
+Добавлены UZ Core профили для [Encounter](StructureDefinition-uz-core-encounter.html), [EpisodeOfCare](StructureDefinition-uz-core-episodeofcare.html) и [Observation](StructureDefinition-uz-core-observation.html).
 
 Канонические URL изменены на `https://dhp.uz/fhir/core` для ресурсов соответствия и `https://terminology.dhp.uz/fhir/core` для терминологических ресурсов, чтобы обеспечить будущие IG, которые будут следовать шаблону `https://dhp.uz/fhir/<ig>`.
 

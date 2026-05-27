@@ -220,7 +220,7 @@ Description: "Example of CBC (Umumiy qon tahlili) as a laboratory panel with ana
 * effectiveDateTime = "2025-11-04T08:10:00Z"
 * issued = "2025-11-04T09:00:00Z"
 * performer = Reference(Practitioner/example-practitioner)
-* specimen = Reference(Specimen/specimen-example-blood)
+* specimen = Reference(Specimen/example-specimen-blood-cbc)
 * component[0].code = lab-pan-cs#lab-pan-74 "Hemoglobin [Mass/volume] in Blood"
 * component[=].valueQuantity = 145 'g/L' "g/L"
 * component[+].code = lab-pan-cs#lab-pan-75 "Erythrocytes [#/volume] in Blood by Automated count"

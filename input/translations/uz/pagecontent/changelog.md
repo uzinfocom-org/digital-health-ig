@@ -68,11 +68,11 @@ Coverage uchun UZCoreda Profile mavjud bo'lmasa ham, ssv formlardan biriga zarur
 
 ### Versiya 0.4.0
 
-[UZ Core Goal](StructureDefinition-UZCoreGoal.html) profili tegishli kod tizimlari va qiymatlar to'plamlari bilan qo'shildi.
+[UZ Core Goal](StructureDefinition-uz-core-goal.html) profili tegishli kod tizimlari va qiymatlar to'plamlari bilan qo'shildi.
 
-[UZ Core Questionnaire](StructureDefinition-UZCoreQuestionnaire.html) va [QuestionnaireResponse](StructureDefinition-UZCoreQuestionnaireResponse.html) profillari tarjima qilingan javob variantlari uchun ko'p tillilik qo'llab-quvvatlashi bilan qo'shildi.
+[UZ Core Questionnaire](StructureDefinition-uz-core-questionnaire.html) va [QuestionnaireResponse](StructureDefinition-uz-core-questionnaire-response.html) profillari tarjima qilingan javob variantlari uchun ko'p tillilik qo'llab-quvvatlashi bilan qo'shildi.
 
-[Pensiya guvohnomasi identifikator turi](NamingSystem-patient-id-uzb-pension-number.html) (Номер пенсионного удостоверения) [Patient](StructureDefinition-UZCorePatient.html) resursida NamingSystem qo'llab-quvvatlashi bilan qo'shildi.
+[Pensiya guvohnomasi identifikator turi](NamingSystem-patient-id-uzb-pension-number.html) (Номер пенсионного удостоверения) [Patient](StructureDefinition-uz-core-patient.html) resursida NamingSystem qo'llab-quvvatlashi bilan qo'shildi.
 
 [Modellashtirish ko'rsatmalari](https://github.com/uzinfocom-org/digital-health-ig/blob/main/modelling-guidelines.md)da bog'lash kuchi (binding strength) talablari aniqlashtirildi.
 
@@ -80,7 +80,7 @@ DHP Connectathon 1 dan olingan fikr-mulohazalar qo'llandi.
 
 Profil havolalari imkon qadar asosiy FHIR resurslari o'rniga UZ Core profillaridan foydalanish uchun tuzatildi.
 
-[Bemor](StructureDefinition-UZCorePatient.html) fuqaroligi endi maxsus MVD kodlari o'rniga ISO 3166-1 alpha-2 kodlaridan foydalanadi.
+[Bemor](StructureDefinition-uz-core-patient.html) fuqaroligi endi maxsus MVD kodlari o'rniga ISO 3166-1 alpha-2 kodlaridan foydalanadi.
 
 [OrganizationalSpecialization](CodeSystem-organizational-specialization-cs.html) kod izchilligi tuzatildi (101 → 101.0).
 
@@ -88,25 +88,25 @@ Profil havolalari imkon qadar asosiy FHIR resurslari o'rniga UZ Core profillarid
 
 [NomenclatureGroup](CodeSystem-nomenclature-group-cs.html), [OrganizationalStructure](CodeSystem-organizational-structure-cs.html) va [OrganizationalServiceGroup](CodeSystem-organizational-service-group-cs.html) uchun tavsiflar ularning maqsadi va ierarxiyasini tushuntirish uchun aniqlashtirildi.
 
-Bemor boshqaruvchi tashkilotga biriktirilgan vaqtni kuzatish uchun [boshqaruvchi tashkilot biriktirish kengaytmasi](StructureDefinition-ManagingOrganizationAttachment.html) qo'shildi.
+Bemor boshqaruvchi tashkilotga biriktirilgan vaqtni kuzatish uchun [boshqaruvchi tashkilot biriktirish kengaytmasi](StructureDefinition-managing-organization-attachment.html) qo'shildi.
 
 MVD mamlakat kodlarini ISO 3166-1 alpha-2 kodlariga tarjima qilish uchun [ConceptMap](ConceptMap-countries-mvd-to-iso3166-alpha2-cm.html) qo'shildi.
 
 Mamlakat kodi qo'llab-quvvatlashi bilan chet el pasport raqamlari va haydovchilik guvohnomalari uchun aniq bo'limlar (slices) qo'shildi.
 
-[EpisodeOfCare](StructureDefinition-UZCoreEpisodeOfCare.html) tavsifi yangilandi.
+[EpisodeOfCare](StructureDefinition-uz-core-episodeofcare.html) tavsifi yangilandi.
 
 PINFL aniqligi va alpha-2 mamlakat kodlariga o'tishni o'z ichiga olgan [identifikator hujjatlari](identifiers.html) yaxshilandi.
 
 [Hayotiy ko'rsatkichlar bo'limi](vital-signs.html) ko'rsatmalar va misollar bilan qo'shildi.
 
-MultilingualName qoidalar to'plamida qoraqalpoq tili (kaa) qo'llab-quvvatlashi qo'shildi, bu [Organization](StructureDefinition-UZCoreOrganization.html) va [Location](StructureDefinition-UZCoreLocation.html) profillarida ko'p tilli nomlar uchun ishlatiladi.
+MultilingualName qoidalar to'plamida qoraqalpoq tili (kaa) qo'llab-quvvatlashi qo'shildi, bu [Organization](StructureDefinition-uz-core-organization.html) va [Location](StructureDefinition-uz-core-location.html) profillarida ko'p tilli nomlar uchun ishlatiladi.
 
 Intellektual mulk egasi Sog'liqni saqlash vazirligiga yangilandi.
 
-[UZ Core Clinical Condition](StructureDefinition-UZCoreClinicalCondition.html) klinik (ICD-10) va ICD-10 ga asoslanmagan holatlarni farqlash uchun qo'shildi.
+UZ Core Clinical Condition klinik (ICD-10) va ICD-10 ga asoslanmagan holatlarni farqlash uchun qo'shildi.
 
-Bemor nogironlik holati [Patient](StructureDefinition-UZCorePatient.html) resursidan (FHIR standart kengaytmasidan foydalangan holda) [Condition](StructureDefinition-UZCoreCondition.html) resursiga ko'chirildi.
+Bemor nogironlik holati [Patient](StructureDefinition-uz-core-patient.html) resursidan (FHIR standart kengaytmasidan foydalangan holda) [Condition](StructureDefinition-uz-core-condition.html) resursiga ko'chirildi.
 
 NamingSystem identifikatorlaridan pastki chiziqlar olib tashlandi.
 
@@ -124,13 +124,13 @@ ConceptMaplar va ularning tegishli strategiyasidan foydalanish hujjatlashtirildi
 
 Bo'lim nomlari (slice names) eng yaxshi amaliyot nomlash konvensiyasi - lowerCamelCase ga mos ravishda yangilandi.
 
-[Patient](StructureDefinition-UZCorePatient.html), [Practitioner](StructureDefinition-UZCorePractitioner.html) va [RelatedPerson](StructureDefinition-UZCoreRelatedPerson.html) resurslarida xalqaro manzillarni qo'llab-quvvatlash qo'shildi.
+[Patient](StructureDefinition-uz-core-patient.html), [Practitioner](StructureDefinition-uz-core-practitioner.html) va [RelatedPerson](StructureDefinition-uz-core-relatedperson.html) resurslarida xalqaro manzillarni qo'llab-quvvatlash qo'shildi.
 
 O'zbekcha tarjimalar qo'shildi.
 
 ### Versiya 0.3.0
 
-[Encounter](StructureDefinition-UZCoreEncounter.html), [EpisodeOfCare](StructureDefinition-UZCoreEpisodeOfCare.html) va [Observation](StructureDefinition-UZCoreObservation.html) uchun UZ Core profillari qo'shildi.
+[Encounter](StructureDefinition-uz-core-encounter.html), [EpisodeOfCare](StructureDefinition-uz-core-episodeofcare.html) va [Observation](StructureDefinition-uz-core-observation.html) uchun UZ Core profillari qo'shildi.
 
 Kanonik URL manzillari conformance resurslari uchun `https://dhp.uz/fhir/core`, terminologiya resurslari uchun esa `https://terminology.dhp.uz/fhir/core` tarzida o'zgartirildi, bu esa kelajakdagi IG'lar uchun `https://dhp.uz/fhir/<ig>` namunaviy shaklini qo'llash imkonini beradi.
 
