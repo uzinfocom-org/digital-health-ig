@@ -103,8 +103,6 @@ Usage: #example
 Title: "Example UZ Core ImmunizationRecommendation"
 Description: "Example of an immunization recommendation with non-mandatory elements included."
 
-* identifier.system = "https://dhp.uz/fhir/core/NamingSystem/immunization-recommendation-id"
-
 * patient = Reference(example-emma)
 
 * date = "2025-08-01T10:00:00+05:00"
