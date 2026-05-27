@@ -29,7 +29,7 @@ Description: "Uzbekistan Core ImmunizationRecommendation profile, used to repres
 * recommendation ^short = "Vaccination recommendation"
 * recommendation ^definition = "Recommendation for immunization. Either vaccineCode or targetDisease SHALL be present."
 
-* recommendation obeys imm-rec-vaccine-or-disease
+* recommendation obeys uzcore-imrec-1
 
 * recommendation.vaccineCode 0..* MS
 * recommendation.vaccineCode from VaccineCodeVS (example)
