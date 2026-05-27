@@ -68,3 +68,30 @@ Description: "Act reason supplement with translations in Uzbek and Russian"
   * ^designation[=].value = "операции с информацией для оказания экстренной медицинской помощи"
   * ^designation[+].language = #uz
   * ^designation[=].value = "emergency health care information operations"
+
+
+
+//Immunization Status Reason Codes
+* #IMMUNE "immunity"
+  * ^designation[0].language = #uz
+  * ^designation[=].value = "immunitet"
+  * ^designation[+].language = #ru
+  * ^designation[=].value = "иммунитет"
+
+* #MEDPREC "medical precaution"
+  * ^designation[0].language = #uz
+  * ^designation[=].value = "tibbiy ehtiyot chorasi"
+  * ^designation[+].language = #ru
+  * ^designation[=].value = "Временный отказ от вакцинации по медицинским показаниям"
+
+* #OSTOCK "product out of stock"
+  * ^designation[0].language = #uz
+  * ^designation[=].value = "sotuvda yo'q"
+  * ^designation[+].language = #ru
+  * ^designation[=].value = "отсутствие товара на складе"
+
+* #PATOBJ "patient objection"
+  * ^designation[0].language = #uz
+  * ^designation[=].value = "bemorning e'tirozi"
+  * ^designation[+].language = #ru
+  * ^designation[=].value = "возражение пациента"

@@ -1,0 +1,77 @@
+LocalCode	Equivalence	Code	English	Русский	O‘zbekcha (lotin)
+proce-0001-00001	source-is-narrower-than-target	57942008	Amplipulse therapy (SMC-therapy)	Амплипульстерапия (СМТ-терапия)	Amplipulsterapiya
+proce-0001-00002	source-is-narrower-than-target	57485005	Advanced oxygen therapy	Аэроионотерапия	Aeroionterapiya
+proce-0001-00003	source-is-broader-than-target	18678000	Barotherapy	Баротерапия	Baroterapiya
+proce-0001-00004	equivalent	46903006	Hydrotherapy	Водолечение	Suv muolajasi
+proce-0001-00005	equivalent	46903006	Therapeutic baths	Ванны лекарственные	Dorivor vannalar
+proce-0001-00006	source-is-narrower-than-target	46903006	Hydrogalvanic baths	Ванны гидрогальванические	Gidrogalvanik vannalar
+proce-0001-00007	source-is-narrower-than-target	46903006	Mineral Baths	Ванны минеральные	Mineral vannalar
+proce-0001-00008	source-is-narrower-than-target	46903006	Hydrosulfuric baths	Ванны сероводородные	Vodorod sulfidli vannalar
+proce-0001-00009	source-is-narrower-than-target	46903006	Radon baths	Ванны радоновые	Rodon vannalar
+proce-0001-00010	source-is-narrower-than-target	46903006	Gas baths	Ванны газовые	Gaz vannalar
+proce-0001-00011	source-is-narrower-than-target	46903006	Gas bath (oxygen)	Ванна газовая (кислород)	Gazli vanna(kislorod)
+proce-0001-00012	source-is-narrower-than-target	46903006	Gas bath (carbon)	Ванна газовая (карбонат)	Gazli vanna(karbonat angidrid)
+proce-0001-00013	source-is-narrower-than-target	46903006	Gas bath (nitrogen)	Ванна газовая (азот)	Gazli vanna(azot)
+proce-0001-00014	source-is-narrower-than-target	46903006	Aromatic baths	Ванны ароматические	Xushbo‘y vannalar
+proce-0001-00015	source-is-narrower-than-target	46903006	Contrast baths	Ванны контрастные	Kontrast vannalar
+proce-0001-00016	source-is-narrower-than-target	46903006	Vortex baths	Ванны вихревые	Uyurmali vannalar
+proce-0001-00017	source-is-narrower-than-target	46903006	Dry air baths	Ванны суховоздушные	Quruq havoli vannalar
+proce-0001-00018	source-is-narrower-than-target	46903006	Mud baths	Грязевые ванны	Loyli vannalar
+proce-0001-00019	source-is-narrower-than-target	46903006	Air bubble baths (pearl baths)	Ванны воздушно-пузырьковые (жемчужные)	Havo pufakchali vannalar (marvaridli)
+proce-0001-00020	source-is-narrower-than-target	46903006	Subaquatic intestinal bath	Ванна субаквальная кишечная	Subakval ichak vannasi
+proce-0001-00021	source-is-narrower-than-target	46903006	Iodine-bromine bath	Йодобромная ванна	Yodbromli vanna
+proce-0001-00022	source-is-narrower-than-target	46903006	Sand baths	Песочные ванны	Qumli vannalar
+proce-0001-00023	source-is-narrower-than-target	46903006	Therapeutic shower	Душ лечебный	Davolovchi dush
+proce-0001-00024	source-is-narrower-than-target	46903006	Underwater massage shower	Подводный душ-массаж	Suv osti dush-massaji
+proce-0001-00025	source-is-narrower-than-target	46903006	Underwater spinal traction	Подводное вытяжение позвоночника	Umurtqa pog‘onasini suv ostida cho‘zish
+proce-0001-00026	source-is-narrower-than-target	46903006	Galvanization	Гальванизация	Galvanizatsiya
+proce-0001-00027	related-to	31394004	Heliotherapy	Гелиотерапия	Gelioterapiya
+proce-0001-00028	source-is-broader-than-target	440011007	Hypoxitherapy	Гипокситерапия	Gipoksiterapiya
+proce-0001-00029	source-is-broader-than-target	229574004	Mud treatment	Грязелечение	Loy bilan davolash
+proce-0001-00030	source-is-narrower-than-target	46903006	Halotherapy	Галотерапия	Galoterapiya
+proce-0001-00031	source-is-narrower-than-target	46903006	Galvanic-mud therapy	Гальваногрязелечение	Galvanik loy bilan davolash
+proce-0001-00032	source-is-narrower-than-target	46903006	Mud inductothermy	Грязеиндуктотермия	Loyqa induktotermiya
+proce-0001-00033	source-is-narrower-than-target	46903006	Pelofofonotherapy	Пелофонотерапия	Pelofonoterapiya
+proce-0001-00034	source-is-narrower-than-target	169430000	Darsonvalization	Дарсонвализация	Darsonvalizatsiya
+proce-0001-00035	source-is-narrower-than-target	47902005	Decimeter therapy (DMV therapy)	Дециметровая терапия (ДМВ-терапия)	Detsimetrli terapiya
+proce-0001-00036	source-is-narrower-than-target	169430000	Diadynamic therapy (DDT)	Диадинамотерапия (ДДТ)	Diadinamoterapiya
+proce-0001-00037	related-to	235261009	Duodenal sounding	Дуоденальное зондирование	Duodenal zondlash
+proce-0001-00038	source-is-narrower-than-target	169430000	Inductothermy	Индуктотермия	Induktometriya
+proce-0001-00039	equivalent	702808009	Inhalation (Aerosol therapy)	Ингаляция (Аэрозольтерапия)	Ingalyatsiya (aerozolterapiya)
+proce-0001-00040	equivalent	17871006	Infrared radiation	Инфракрасное облучение	Infraqizil nurlanish
+proce-0001-00041	equivalent	229558009	Interferential therapy	Интерференцтерапия	Interferent terapiya
+proce-0001-00042	source-is-narrower-than-target	57485005	Oxygen therapy in a tent	Кислородотерапия в палатке	chodirda kislorod terapiyasi
+proce-0001-00043	source-is-narrower-than-target	169430000	Extremely high-frequency therapy (EHF therapy)	Крайне высокочастотная терапия (КВЧ-терапия)	O‘ta yuqori chastotali terapiya
+proce-0001-00044	source-is-broader-than-target	229565001	Laser therapy	Лазеротерапия	Lazer terapiya
+proce-0001-00045	source-is-narrower-than-target	44868003	Laser acupuncture	Лазеропунктура	Lazer punktura
+proce-0001-00046	source-is-broader-than-target	410088003	Physical therapy	Лечебная физическая культура (ЛФК)	Davolash jismoniy tarbiyasi
+proce-0001-00047	source-is-broader-than-target	251636002	Magnetic therapy	Магнитотерапия	Magnit terapiya
+proce-0001-00048	related-to	13801008	Magnetic puncture	Магнитопунктура	Magnit punktura
+proce-0001-00049			Therapeutic massage	Массаж лечебный	Davolovchi massaj
+proce-0001-00050			Cryomassage	Криомассаж	Kriomassaj
+proce-0001-00051			Vacuum massage	Вакуумный массаж	Vakuumli massaj
+proce-0001-00052	source-is-narrower-than-target	363695005	Biodose determination for ultraviolet irradiation (UV irradiation)	Определение биодозы для ультрафиолетового облучения (УФ-облучение)	Ultrabinafsha nurlanish (UB-nurlanish) uchun biomiqdorni aniqlash
+proce-0001-00053	source-is-narrower-than-target	229572000	Ozokeritotherapy	Озокеритолечение	Ozokeritli davolash
+proce-0001-00054	equivalent	57485005	Oxygen therapy	Оксигенотерапия	Oksigen terapiya
+proce-0001-00055	source-is-narrower-than-target	229572000	Paraffin-wax treatment	Парафинолечение	Parafinli davolash
+proce-0001-00056	source-is-narrower-than-target	169430000	Centimeter wave therapy (CMW therapy)	Сантиметроволновая терапия (СМВ-терапия)	Santimetr to‘lqinli terapiya
+proce-0001-00057	source-is-narrower-than-target	169430000	Super high-frequency electrotherapy (SHF electrotherapy)	Сверхвысокочастотная электротерапия (СВЧ-терапия)	O‘ta yuqori chastotali elektroterapiya
+proce-0001-00058	equivalent	31394004	Light therapy	Светолечение	Nur bilan davolash
+proce-0001-00059	source-is-narrower-than-target	31394004	Light bath	Световая ванна	Nurli vanna
+proce-0001-00060	equivalent	69446009	Skeletal traction	Скелетное вытяжение	Skeletni cho‘zish
+proce-0001-00061	related-to	266694003	Thermal therapy	Теплолечение	Issiqlik bilan davolash
+proce-0001-00062	source-is-broader-than-target	87750000	Tubage	Тюбаж	Tyubaj
+proce-0001-00063	source-is-broader-than-target	288153008	Spinal traction therapy	Тракционное вытяжение позвоночника	Umurtqa pog‘onasini traksion cho‘zish
+proce-0001-00064	source-is-narrower-than-target	122545008	Ultratonotherapy (UTT)	Ультратонотерапия (УТТ)	Ultratonli davolash
+proce-0001-00065	source-is-narrower-than-target	169430000	Ultrahigh-frequency therapy (UHF therapy)	Ультравысокочастотная терапия (УВЧ-терапия)	Ultra yuqori chastotali terapiya
+proce-0001-00066	related-to	16310003	Ultrasound therapy	Ультразвуковая терапия	Ultratovushli terapiya
+proce-0001-00067	related-to	363695005	Ultraviolet irradiation (UV irradiation)	Ультрафиолетовое облучение (УФ-облучение)	Ultrabinafsha nurlanish (UB nurlanish)
+proce-0001-00068	related-to	363695005	Ultraviolet irradiation. PUVA baths	Ультрафиолетовое облучение. ПУВА-ванны	Ultrabinafsha nurlanish. PUVA-vannalar
+proce-0001-00069	related-to	363695005	Ultraviolet irradiation. Tubus-quartz	Ультрафиолетовое облучение. Тубус-кварц	Ultrabinafsha nurlanish. Tubus-kvarts
+proce-0001-00070	source-is-narrower-than-target	169430000	Franklinization	Франклинизация	Franklinizatsiya
+proce-0001-00071	source-is-narrower-than-target	122545008	Phonophoresis	Фонофорез	Fonoforez
+proce-0001-00072	source-is-narrower-than-target	169430000	Fluxtuorization	Флюктуоризация	Flyuktuorizatsiya
+proce-0001-00073	equivalent	814007	Electrophoresis	Электрофорез	Elektroforez
+proce-0001-00074	source-is-narrower-than-target	169430000	Electrosleep	Электросон	Elektro uyqu
+proce-0001-00075	source-is-narrower-than-target	169430000	Electrotranquillization	Электротранквилизация	Elektrotrankvilizatsiya
+proce-0001-00076	source-is-narrower-than-target	169430000	Electrostimulation	Электростимуляция	Elektrostimulyatsiya

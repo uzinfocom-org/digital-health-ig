@@ -2472,13 +2472,13 @@ msgstr ""
 
 # Indicates the URL or the actual content to provide for the page.
 #: ImplementationGuide.definition.page.source[x]
-msgid "services.html"
+msgid "components.html"
 msgstr ""
 
 # A short title used to represent this page in navigational structures such as table of contents, bread crumbs, etc.
 #: ImplementationGuide.definition.page.title
-msgid "Services"
-msgstr "Services"
+msgid "Components"
+msgstr "Komponentlar"
 
 # Indicates the URL or the actual content to provide for the page.
 #: ImplementationGuide.definition.page.source[x]

@@ -1,0 +1,5 @@
+CODE	UZ	RU	EN
+ LA	Chap qo‘l	Левая рука	Left arm		http://terminology.hl7.org/CodeSystem/v3-ActSite
+ RA	O‘ng qo‘l	Правая рука	Right arm
+LT	Chap son	Левое бедро	Left thigh
+RT	O‘ng son	Правое бедро	Right thigh
