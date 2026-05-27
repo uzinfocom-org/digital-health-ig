@@ -1,8 +1,8 @@
 Profile: UZCoreDiagnosticReport
 Parent: DiagnosticReport
 Id: uz-core-diagnostic-report
-Title: "UZ Core AllergyIntolerance"
-Description: "Uzbekistan Core profile for AllergyIntolerance, representing clinical records of allergy or intolerance within the national health information exchange. "
+Title: "UZ Core DiagnosticReport"
+Description: "Uzbekistan Core profile for DiagnosticReport, representing clinical records of diagnostic reports within the national health information exchange."
 * ^experimental = true
 * ^status = #active
 * ^date = "2026-02-06"
