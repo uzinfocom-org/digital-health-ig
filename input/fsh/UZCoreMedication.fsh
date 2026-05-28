@@ -97,18 +97,12 @@ Description: "Uzbekistan Core Medication profile, used for representing medicati
 * batch.lotNumber ^short = "Identifier assigned to the batch (AIK)"
 * batch.expirationDate ^short = "The date when the batch expires"
 
-/*
 Instance: example-medication
 InstanceOf: UZCoreMedication
 Title: "Example UZ Core Medication - Paracetamol"
 Description: "Example instance of paracetamol tablets registered in Uzbekistan"
 Usage: #example
 * language = #en
-* identifier[uzpharmInfo]
-  * system = $uzpharm-agency
-  * type = $medicine-identifier-types#pharm_id "Pharmaceutical agency drug ID"
-  * use = #official
-  * value = "12345"
 * identifier[registrationCertificateID]
   * system = $registrationCertificateID
   * type = $medicine-identifier-types#registration_number "Registration Certificate"
@@ -125,7 +119,7 @@ Usage: #example
 * batch
   * lotNumber = "LOT20241201"
   * expirationDate = "2027-12-01"
-*/
+
 Instance: example-neomycin-atc-medication
 InstanceOf: UZCoreMedication
 Title: "Example UZ Core Medication - Neomycin"
