@@ -91,7 +91,7 @@ Description: "Example OperationOutcome returned when a transaction fails due to 
 * issue[=].diagnostics = "Observation.status: minimum required = 1, but only found 0 (from https://dhp.uz/fhir/core/StructureDefinition/uz-core-observation)"
 * issue[=].expression = "Bundle.entry[2].resource.ofType(Observation)"
 
-// Temporary stand-ins referenced by the Procedure example; both should be fleshed out (or replaced with proper profile-conforming instances) before publication
+// Temporary stand-in referenced by the Procedure example; should be fleshed out (or replaced with a proper profile-conforming instance) before publication
 Instance: example-careplan
 InstanceOf: CarePlan
 Usage: #example
@@ -100,13 +100,6 @@ Description: "Example of a careplan"
 * status = #active
 * intent = #plan
 * subject = Reference(example-david)
-
-Instance: example-medication
-InstanceOf: Medication
-Usage: #example
-Title: "example-medication"
-Description: "Example of a medication"
-* identifier.value = "medic-001"
 
 // ============== Questionnaire Instance ==============
 
