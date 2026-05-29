@@ -2,7 +2,7 @@ CodeSystem: ATCClassificationCS
 Id: atc-classification-cs
 Title: "ATC classification system"
 Description: "Anatomical Therapeutic Chemical (ATC) classification system for medicinal products."
-* insert SupplementCodeSystemDraft(atc-classification-cs, $medical-product-classification, 5.0.0)
+* insert SupplementCodeSystemDraft(atc-classification-cs, $medical-product-classification, 2025)
 * ^hierarchyMeaning = #is-a
 * #A "Ovqat hazm qilish tizimi va moddalar almashinuvi"
   * ^designation[0].language = #uz
@@ -2025,14 +2025,6 @@ Description: "Anatomical Therapeutic Chemical (ATC) classification system for me
       * ^designation[+].language = #ru
       * ^designation[=].value = "Тегасерод"
 
-/*
-// ===== A6AD =====
-* #A6AD
-  * ^designation[0].language = #uz
-  * ^designation[=].value = "Osmotik surgi vositalari"
-  * ^designation[+].language = #ru
-  * ^designation[=].value = "Осмотические слабительные средства"
-*/
 // ===== A01AD01 =====
 * #A01AD01 "Epinefrin"
   * ^designation[0].language = #uz
@@ -3658,28 +3650,6 @@ Description: "Anatomical Therapeutic Chemical (ATC) classification system for me
   * ^designation[=].value = "Vitamin B1 Vitamin B6 va/yoki  Vitamin B12 bilan majmuada"
   * ^designation[+].language = #ru
   * ^designation[=].value = "Витамин B1 в комбинации с витамином B6 и/или витамином B12"
-/*
-// ===== A11DВ01 =====
-* #A11DВ01
-  * ^designation[0].language = #uz
-  * ^designation[=].value = "Тiamin (Vitamin B1) va Piridoksin (Vitamin B6)"
-  * ^designation[+].language = #ru
-  * ^designation[=].value = "Тиамин (витамин B1) и пиридоксин (витамин B6)"
-
-// ===== A11DВ03 =====
-* #A11DВ03
-  * ^designation[0].language = #uz
-  * ^designation[=].value = "Vitamin B1, Vitamin B6 va Vitamin B12"
-  * ^designation[+].language = #ru
-  * ^designation[=].value = "Витамин B1, витамин B6 и витамин B12"
-
-// ===== A11DВ04 =====
-* #A11DВ04
-  * ^designation[0].language = #uz
-  * ^designation[=].value = "Tiamin, piridoksin va nikotinamid"
-  * ^designation[+].language = #ru
-  * ^designation[=].value = "Тиамин, пиридоксин и никотинамид"
-*/
 // ===== A11EA =====
 * #A11EA "B gurux vitaminlari"
   * ^designation[0].language = #uz
@@ -8795,14 +8765,6 @@ Description: "Anatomical Therapeutic Chemical (ATC) classification system for me
     * ^designation[=].value = "Triamsinolon"
     * ^designation[+].language = #ru
     * ^designation[=].value = "Триамцинолон"
-/*
-// ===== C05AВ =====
-* #C05AВ
-  * ^designation[0].language = #uz
-  * ^designation[=].value = "Antibiotiklar"
-  * ^designation[+].language = #ru
-  * ^designation[=].value = "Антибиотики"
-*/
 // ===== C05AD =====
 * #C05AD "Mahalliy anestetiklar"
   * ^designation[0].language = #uz
@@ -15630,14 +15592,6 @@ Description: "Anatomical Therapeutic Chemical (ATC) classification system for me
     * ^designation[=].value = "Dibromotirozin"
     * ^designation[+].language = #ru
     * ^designation[=].value = "Дибромотирозин"
-/*
-// ===== H03СА =====
-* #H03СА
-  * ^designation[0].language = #uz
-  * ^designation[=].value = "Yod prepaeratlari"
-  * ^designation[+].language = #ru
-  * ^designation[=].value = "Препараты йода"
-*/
 // ===== H04AA =====
 * #H04AA "Glikogenni parchalovchi garmonlar"
   * ^designation[0].language = #uz
@@ -16195,20 +16149,6 @@ Description: "Anatomical Therapeutic Chemical (ATC) classification system for me
     * ^designation[=].value = "Penitsillinlar majmuada"
     * ^designation[+].language = #ru
     * ^designation[=].value = "Пенициллинов в комбинации"
-/*
-// ===== J01DA =====
-* #J01DA
-  * ^designation[0].language = #uz
-  * ^designation[=].value = "Sefalosporinlar"
-  * ^designation[+].language = #ru
-  * ^designation[=].value = "Цефалоспорины"
-
-  * #J01DA82 "Sefoperazon boshqa vositalar bilan majmuada"
-    * ^designation[0].language = #uz
-    * ^designation[=].value = "Sefoperazon boshqa vositalar bilan majmuada"
-    * ^designation[+].language = #ru
-    * ^designation[=].value = "Цефоперазон в комбинации со средствами"
-*/
 // ===== J01DB =====
 * #J01DB "Birinchi avlod sefalosporinlar"
   * ^designation[0].language = #uz
@@ -19771,164 +19711,6 @@ Description: "Anatomical Therapeutic Chemical (ATC) classification system for me
     * ^designation[=].value = "Prokarbazin"
     * ^designation[+].language = #ru
     * ^designation[=].value = "Прокарбазин"
-/*
-// ===== L01XC =====
-* #L01XC "Monoklonal antitelalar"
-  * ^designation[0].language = #uz
-  * ^designation[=].value = "Monoklonal antitelalar"
-  * ^designation[+].language = #ru
-  * ^designation[=].value = "Моноклональные антитела"
-
-  * #L01XC01 "Edrekolomab"
-    * ^designation[0].language = #uz
-    * ^designation[=].value = "Edrekolomab"
-    * ^designation[+].language = #ru
-    * ^designation[=].value = "Эдреколомаб"
-
-  * #L01XC02 "Rituksimab"
-    * ^designation[0].language = #uz
-    * ^designation[=].value = "Rituksimab"
-    * ^designation[+].language = #ru
-    * ^designation[=].value = "Ритуксимаб"
-
-  * #L01XC03 "Trastuzumab"
-    * ^designation[0].language = #uz
-    * ^designation[=].value = "Trastuzumab"
-    * ^designation[+].language = #ru
-    * ^designation[=].value = "Трастузумаб"
-
-  * #L01XC04 "Alemtuzumab"
-    * ^designation[0].language = #uz
-    * ^designation[=].value = "Alemtuzumab"
-    * ^designation[+].language = #ru
-    * ^designation[=].value = "Алемтузумаб"
-
-  * #L01XC05 "Gemtuzumab"
-    * ^designation[0].language = #uz
-    * ^designation[=].value = "Gemtuzumab"
-    * ^designation[+].language = #ru
-    * ^designation[=].value = "Гемтузумаб"
-
-  * #L01XC06 "Setuksimab"
-    * ^designation[0].language = #uz
-    * ^designation[=].value = "Setuksimab"
-    * ^designation[+].language = #ru
-    * ^designation[=].value = "Цетуксимаб"
-
-  * #L01XC07 "Bevatsizumab"
-    * ^designation[0].language = #uz
-    * ^designation[=].value = "Bevatsizumab"
-    * ^designation[+].language = #ru
-    * ^designation[=].value = "Бевацизумаб"
-
-  * #L01XC08 "Panitumumab"
-    * ^designation[0].language = #uz
-    * ^designation[=].value = "Panitumumab"
-    * ^designation[+].language = #ru
-    * ^designation[=].value = "Панитумумаб"
-
-  * #L01XC09 "Katumaksomab"
-    * ^designation[0].language = #uz
-    * ^designation[=].value = "Katumaksomab"
-    * ^designation[+].language = #ru
-    * ^designation[=].value = "Катумаксомаб"
-
-  * #L01XC10 "Ofatumumab"
-    * ^designation[0].language = #uz
-    * ^designation[=].value = "Ofatumumab"
-    * ^designation[+].language = #ru
-    * ^designation[=].value = "Офатумумаб"
-
-  * #L01XC11 "Ipilimumab"
-    * ^designation[0].language = #uz
-    * ^designation[=].value = "Ipilimumab"
-    * ^designation[+].language = #ru
-    * ^designation[=].value = "Ипилимумаб"
-
-  * #L01XC12 "Brentuksimab vedotin"
-    * ^designation[0].language = #uz
-    * ^designation[=].value = "Brentuksimab vedotin"
-    * ^designation[+].language = #ru
-    * ^designation[=].value = "Брентуксимаб ведотин"
-
-  * #L01XC13 "Pertuzumab"
-    * ^designation[0].language = #uz
-    * ^designation[=].value = "Pertuzumab"
-    * ^designation[+].language = #ru
-    * ^designation[=].value = "Пертузумаб"
-
-  * #L01XC14 "Trastuzumab emtanzin"
-    * ^designation[0].language = #uz
-    * ^designation[=].value = "Trastuzumab emtanzin"
-    * ^designation[+].language = #ru
-    * ^designation[=].value = "Трастузумаб эмтанзин"
-
-  * #L01XC15 "Obinutuzumab"
-    * ^designation[0].language = #uz
-    * ^designation[=].value = "Obinutuzumab"
-    * ^designation[+].language = #ru
-    * ^designation[=].value = "Обинутузумаб"
-
-  * #L01XC16 "Dinutuksimab"
-    * ^designation[0].language = #uz
-    * ^designation[=].value = "Dinutuksimab"
-    * ^designation[+].language = #ru
-    * ^designation[=].value = "Динутуксимаб"
-
-  * #L01XC17 "Nivolumab"
-    * ^designation[0].language = #uz
-    * ^designation[=].value = "Nivolumab"
-    * ^designation[+].language = #ru
-    * ^designation[=].value = "Ниволумаб"
-
-  * #L01XC18 "Pembrolizumab"
-    * ^designation[0].language = #uz
-    * ^designation[=].value = "Pembrolizumab"
-    * ^designation[+].language = #ru
-    * ^designation[=].value = "Пембролизумаб"
-
-  * #L01XC19 "Blinatumomab"
-    * ^designation[0].language = #uz
-    * ^designation[=].value = "Blinatumomab"
-    * ^designation[+].language = #ru
-    * ^designation[=].value = "Блинатумомаб"
-
-  * #L01XC21 "Ramutsirumab"
-    * ^designation[0].language = #uz
-    * ^designation[=].value = "Ramutsirumab"
-    * ^designation[+].language = #ru
-    * ^designation[=].value = "Рамуцирумаб"
-
-  * #L01XC22 "Netsitumumab"
-    * ^designation[0].language = #uz
-    * ^designation[=].value = "Netsitumumab"
-    * ^designation[+].language = #ru
-    * ^designation[=].value = "Нецитумумаб"
-
-  * #L01XC23 "Elotuzumab"
-    * ^designation[0].language = #uz
-    * ^designation[=].value = "Elotuzumab"
-    * ^designation[+].language = #ru
-    * ^designation[=].value = "Элотузумаб"
-
-  * #L01XC24 "Daratumumab"
-    * ^designation[0].language = #uz
-    * ^designation[=].value = "Daratumumab"
-    * ^designation[+].language = #ru
-    * ^designation[=].value = "Даратумумаб"
-
-  * #L01XC25 "Mogamulizumab"
-    * ^designation[0].language = #uz
-    * ^designation[=].value = "Mogamulizumab"
-    * ^designation[+].language = #ru
-    * ^designation[=].value = "Могамулизумаб"
-
-  * #L01XC26 "Inotuzumab ozogamitsin"
-    * ^designation[0].language = #uz
-    * ^designation[=].value = "Inotuzumab ozogamitsin"
-    * ^designation[+].language = #ru
-    * ^designation[=].value = "Инотузумаб озогамицин"
-*/
 // ===== L01XD =====
 * #L01XD "Fotodinamik /nur terapiyada, qoʻllaniladigan preparatlar"
   * ^designation[0].language = #uz
@@ -19965,242 +19747,6 @@ Description: "Anatomical Therapeutic Chemical (ATC) classification system for me
     * ^designation[=].value = "Temoporfin"
     * ^designation[+].language = #ru
     * ^designation[=].value = "Темопорфин"
-/*
-// ===== L01XE =====
-* #L01XE "Proteinkinaza ingibitorlari"
-  * ^designation[0].language = #uz
-  * ^designation[=].value = "Proteinkinaza ingibitorlari"
-  * ^designation[+].language = #ru
-  * ^designation[=].value = "Ингибиторы протеинкиназы"
-
-  * #L01XE01 "Imatinib"
-    * ^designation[0].language = #uz
-    * ^designation[=].value = "Imatinib"
-    * ^designation[+].language = #ru
-    * ^designation[=].value = "Иматиниб"
-
-  * #L01XE02 "Gefitinib"
-    * ^designation[0].language = #uz
-    * ^designation[=].value = "Gefitinib"
-    * ^designation[+].language = #ru
-    * ^designation[=].value = "Гефитиниб"
-
-  * #L01XE03 "Erlotinib"
-    * ^designation[0].language = #uz
-    * ^designation[=].value = "Erlotinib"
-    * ^designation[+].language = #ru
-    * ^designation[=].value = "Эрлотиниб"
-
-  * #L01XE04 "Sunitinib"
-    * ^designation[0].language = #uz
-    * ^designation[=].value = "Sunitinib"
-    * ^designation[+].language = #ru
-    * ^designation[=].value = "Сунитиниб"
-
-  * #L01XE05 "Sorafenib"
-    * ^designation[0].language = #uz
-    * ^designation[=].value = "Sorafenib"
-    * ^designation[+].language = #ru
-    * ^designation[=].value = "Сорафениб"
-
-  * #L01XE06 "Dazatinib"
-    * ^designation[0].language = #uz
-    * ^designation[=].value = "Dazatinib"
-    * ^designation[+].language = #ru
-    * ^designation[=].value = "Дазатиниб"
-
-  * #L01XE07 "Lapatinib"
-    * ^designation[0].language = #uz
-    * ^designation[=].value = "Lapatinib"
-    * ^designation[+].language = #ru
-    * ^designation[=].value = "Лапатиниб"
-
-  * #L01XE08 "Nilotinib"
-    * ^designation[0].language = #uz
-    * ^designation[=].value = "Nilotinib"
-    * ^designation[+].language = #ru
-    * ^designation[=].value = "Нилотиниб"
-
-  * #L01XE09 "Temsirolimus"
-    * ^designation[0].language = #uz
-    * ^designation[=].value = "Temsirolimus"
-    * ^designation[+].language = #ru
-    * ^designation[=].value = "Темсиролимус"
-
-  * #L01XE10 "Everolimus"
-    * ^designation[0].language = #uz
-    * ^designation[=].value = "Everolimus"
-    * ^designation[+].language = #ru
-    * ^designation[=].value = "Эверолимус"
-
-  * #L01XE11 "Pazopanib"
-    * ^designation[0].language = #uz
-    * ^designation[=].value = "Pazopanib"
-    * ^designation[+].language = #ru
-    * ^designation[=].value = "Пазопаниб"
-
-  * #L01XE12 "Vandetanib"
-    * ^designation[0].language = #uz
-    * ^designation[=].value = "Vandetanib"
-    * ^designation[+].language = #ru
-    * ^designation[=].value = "Вандетаниб"
-
-  * #L01XE13 "Afatinib"
-    * ^designation[0].language = #uz
-    * ^designation[=].value = "Afatinib"
-    * ^designation[+].language = #ru
-    * ^designation[=].value = "Афатиниб"
-
-  * #L01XE14 "Bozutinib"
-    * ^designation[0].language = #uz
-    * ^designation[=].value = "Bozutinib"
-    * ^designation[+].language = #ru
-    * ^designation[=].value = "Бозутиниб"
-
-  * #L01XE15 "Vemurafenib"
-    * ^designation[0].language = #uz
-    * ^designation[=].value = "Vemurafenib"
-    * ^designation[+].language = #ru
-    * ^designation[=].value = "Вемурафениб"
-
-  * #L01XE16 "Krizotinib"
-    * ^designation[0].language = #uz
-    * ^designation[=].value = "Krizotinib"
-    * ^designation[+].language = #ru
-    * ^designation[=].value = "Кризотиниб"
-
-  * #L01XE17 "Aksitinib"
-    * ^designation[0].language = #uz
-    * ^designation[=].value = "Aksitinib"
-    * ^designation[+].language = #ru
-    * ^designation[=].value = "Акситиниб"
-
-  * #L01XE18 "Ruksolitinib"
-    * ^designation[0].language = #uz
-    * ^designation[=].value = "Ruksolitinib"
-    * ^designation[+].language = #ru
-    * ^designation[=].value = "Руксолитиниб"
-
-  * #L01XE19 "Ridaforolimus"
-    * ^designation[0].language = #uz
-    * ^designation[=].value = "Ridaforolimus"
-    * ^designation[+].language = #ru
-    * ^designation[=].value = "Ридафоролимус"
-
-  * #L01XE21 "Regorafenib"
-    * ^designation[0].language = #uz
-    * ^designation[=].value = "Regorafenib"
-    * ^designation[+].language = #ru
-    * ^designation[=].value = "Регорафениб"
-
-  * #L01XE22 "Mazitinib"
-    * ^designation[0].language = #uz
-    * ^designation[=].value = "Mazitinib"
-    * ^designation[+].language = #ru
-    * ^designation[=].value = "Мазитиниб"
-
-  * #L01XE23 "Yofolastat (123I)"
-    * ^designation[0].language = #uz
-    * ^designation[=].value = "Yofolastat (123I)"
-    * ^designation[+].language = #ru
-    * ^designation[=].value = "Йофоластат (123I)"
-
-  * #L01XE24 "Ponatinib"
-    * ^designation[0].language = #uz
-    * ^designation[=].value = "Ponatinib"
-    * ^designation[+].language = #ru
-    * ^designation[=].value = "Понатиниб"
-
-  * #L01XE25 "Trametinib"
-    * ^designation[0].language = #uz
-    * ^designation[=].value = "Trametinib"
-    * ^designation[+].language = #ru
-    * ^designation[=].value = "Траметиниб"
-
-  * #L01XE26 "Kabozantinib"
-    * ^designation[0].language = #uz
-    * ^designation[=].value = "Kabozantinib"
-    * ^designation[+].language = #ru
-    * ^designation[=].value = "Кабозантиниб"
-
-  * #L01XE27 "Ibrutinib"
-    * ^designation[0].language = #uz
-    * ^designation[=].value = "Ibrutinib"
-    * ^designation[+].language = #ru
-    * ^designation[=].value = "Ибрутиниб"
-
-  * #L01XE28 "Seritinib"
-    * ^designation[0].language = #uz
-    * ^designation[=].value = "Seritinib"
-    * ^designation[+].language = #ru
-    * ^designation[=].value = "Церитиниб"
-
-  * #L01XE29 "Lenvatinib"
-    * ^designation[0].language = #uz
-    * ^designation[=].value = "Lenvatinib"
-    * ^designation[+].language = #ru
-    * ^designation[=].value = "Ленватиниб"
-
-  * #L01XE31 "Nintedanib"
-    * ^designation[0].language = #uz
-    * ^designation[=].value = "Nintedanib"
-    * ^designation[+].language = #ru
-    * ^designation[=].value = "Нинтеданиб"
-
-  * #L01XE32 "Sediranib"
-    * ^designation[0].language = #uz
-    * ^designation[=].value = "Sediranib"
-    * ^designation[+].language = #ru
-    * ^designation[=].value = "Цедираниб"
-
-  * #L01XE33 "Palbotsiklib"
-    * ^designation[0].language = #uz
-    * ^designation[=].value = "Palbotsiklib"
-    * ^designation[+].language = #ru
-    * ^designation[=].value = "Палбоциклиб"
-
-  * #L01XE34 "Tivozanib"
-    * ^designation[0].language = #uz
-    * ^designation[=].value = "Tivozanib"
-    * ^designation[+].language = #ru
-    * ^designation[=].value = "Тивозаниб"
-
-  * #L01XE35 "Osimertinib"
-    * ^designation[0].language = #uz
-    * ^designation[=].value = "Osimertinib"
-    * ^designation[+].language = #ru
-    * ^designation[=].value = "Осимертиниб"
-
-  * #L01XE36 "Alektinib"
-    * ^designation[0].language = #uz
-    * ^designation[=].value = "Alektinib"
-    * ^designation[+].language = #ru
-    * ^designation[=].value = "Алектиниб"
-
-  * #L01XE37 "Rotsiletinib"
-    * ^designation[0].language = #uz
-    * ^designation[=].value = "Rotsiletinib"
-    * ^designation[+].language = #ru
-    * ^designation[=].value = "Роцилетиниб"
-
-  * #L01XE38 "Kobimetinib"
-    * ^designation[0].language = #uz
-    * ^designation[=].value = "Kobimetinib"
-    * ^designation[+].language = #ru
-    * ^designation[=].value = "Кобиметиниб"
-
-  * #L01XE39 "Midostaurin"
-    * ^designation[0].language = #uz
-    * ^designation[=].value = "Midostaurin"
-    * ^designation[+].language = #ru
-    * ^designation[=].value = "Мидостаурин"
-
-  * #L01XE40 "Olmutinib"
-    * ^designation[0].language = #uz
-    * ^designation[=].value = "Olmutinib"
-    * ^designation[+].language = #ru
-    * ^designation[=].value = "Олмутиниб"
-*/
 // ===== L01XX =====
 * #L01XX "Boshqa oʻsmaga qarshi preparatlar"
   * ^designation[0].language = #uz
@@ -24388,69 +23934,6 @@ Description: "Anatomical Therapeutic Chemical (ATC) classification system for me
     * ^designation[=].value = "Klotiapin"
     * ^designation[+].language = #ru
     * ^designation[=].value = "Клотиапин"
-/*
-// ===== N05AK =====
-* #N05AK "Sekin diskineziyalarni davolash uchun neyroleptiklar"
-  * ^designation[0].language = #uz
-  * ^designation[=].value = "Sekin diskineziyalarni davolash uchun neyroleptiklar"
-  * ^designation[+].language = #ru
-  * ^designation[=].value = "Нейролептики для лечения медленных дискинезий"
-
-  * #N05AK01 "Tetrabenazin"
-    * ^designation[0].language = #uz
-    * ^designation[=].value = "Tetrabenazin"
-    * ^designation[+].language = #ru
-    * ^designation[=].value = "Тетрабеназин"
-
-// ===== N05AL =====
-* #N05AL "Benzamidlar"
-  * ^designation[0].language = #uz
-  * ^designation[=].value = "Benzamidlar"
-  * ^designation[+].language = #ru
-  * ^designation[=].value = "Бензамиды"
-
-  * #N05AL01 "Sulpirid"
-    * ^designation[0].language = #uz
-    * ^designation[=].value = "Sulpirid"
-    * ^designation[+].language = #ru
-    * ^designation[=].value = "Сульпирид"
-
-  * #N05AL02 "Sultoprid"
-    * ^designation[0].language = #uz
-    * ^designation[=].value = "Sultoprid"
-    * ^designation[+].language = #ru
-    * ^designation[=].value = "Сультоприд"
-
-  * #N05AL03 "Tiaprid"
-    * ^designation[0].language = #uz
-    * ^designation[=].value = "Tiaprid"
-    * ^designation[+].language = #ru
-    * ^designation[=].value = "Тиаприд"
-
-  * #N05AL04 "Remoksiprid"
-    * ^designation[0].language = #uz
-    * ^designation[=].value = "Remoksiprid"
-    * ^designation[+].language = #ru
-    * ^designation[=].value = "Ремоксиприд"
-
-  * #N05AL05 "Amisulprid"
-    * ^designation[0].language = #uz
-    * ^designation[=].value = "Amisulprid"
-    * ^designation[+].language = #ru
-    * ^designation[=].value = "Амисульприд"
-
-  * #N05AL06 "Veralaprid"
-    * ^designation[0].language = #uz
-    * ^designation[=].value = "Veralaprid"
-    * ^designation[+].language = #ru
-    * ^designation[=].value = "Вералаприд"
-
-  * #N05AL07 "Levosulpirid"
-    * ^designation[0].language = #uz
-    * ^designation[=].value = "Levosulpirid"
-    * ^designation[+].language = #ru
-    * ^designation[=].value = "Левосульпирид"
-*/
 // ===== N05AN =====
 * #N05AN "Litiy preparatlari"
   * ^designation[0].language = #uz
@@ -30724,14 +30207,6 @@ Description: "Anatomical Therapeutic Chemical (ATC) classification system for me
     * ^designation[=].value = "Diazoksid"
     * ^designation[+].language = #ru
     * ^designation[=].value = "Диазоксид"
-/*
-// ===== V03AК =====
-* #V03AК "Mato yelimi"
-  * ^designation[0].language = #uz
-  * ^designation[=].value = "Mato yelimi"
-  * ^designation[+].language = #ru
-  * ^designation[=].value = "Тканевые клеи"
-*/
 // ===== V03AM =====
 * #V03AM "Embolizatsiya uchun preparatlar"
   * ^designation[0].language = #uz
@@ -31083,14 +30558,6 @@ Description: "Anatomical Therapeutic Chemical (ATC) classification system for me
     * ^designation[+].language = #ru
     * ^designation[=].value = "Гонадорелин"
 
-// ===== V04CХ =====
-/*
-* #V04CХ "Other diagnostic agents"
-  * ^designation[0].language = #uz
-  * ^designation[=].value = "Boshqa diagnostik preparatlar"
-  * ^designation[+].language = #ru
-  * ^designation[=].value = "Диагностические препараты другие"
-*/
   // ===== V04CX01 =====
   * #V04CX01 "Indotsianin yashil"
     * ^designation[0].language = #uz
