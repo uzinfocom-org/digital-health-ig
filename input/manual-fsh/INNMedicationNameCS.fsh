@@ -74770,23 +74770,6 @@ Description: "INN terminology for standardized identification of medicinal"
   * ^designation[=].value = "талкветамаб"
   * ^designation[+].language = #en
   * ^designation[=].value = "talquetamab"
-/*
-* #local code "Tasdiqlangan XPN mavjud emas"
-  * ^designation[0].language = #ru
-  * ^designation[=].value = "Отсутствует утверждённое МНН"
-  * ^designation[+].language = #en
-  * ^designation[=].value = "Approved INN not exists"
-  * ^designation[+].language = #la
-  * ^designation[=].value = "Approbata Internationalis Nonproprietary Nomine non existit"
-
-* #local code "XPN berilmagan"
-  * ^designation[0].language = #ru
-  * ^designation[=].value = "МНН не указан"
-  * ^designation[+].language = #en
-  * ^designation[=].value = "INN not given"
-  * ^designation[+].language = #la
-  * ^designation[=].value = "Internationalis Nonproprietary Nomen dedit"
-*/
 
 
 
