@@ -18,7 +18,7 @@ Description: "UZCoreServiceRequest defines how laboratory orders are represented
 * doNotPerform MS
 * doNotPerform ^short = "Indicates that the service described by the ServiceRequest should not be performed."
 * code MS
-* code from ServiceRequesLabCodesVS
+* code from ServiceRequestLabCodesVS
 * code ^short = "Specifies the laboratory test, panel, or service being requested. The codes used represent orderable laboratory services and must not be used for analytical result observations."
 * subject MS
 * subject only Reference(UZCorePatient or UZCoreLocation)
@@ -34,7 +34,7 @@ Description: "UZCoreServiceRequest defines how laboratory orders are represented
 * requester only Reference(UZCorePractitioner or UZCorePractitionerRole or UZCoreOrganization or UZCorePatient or UZCoreRelatedPerson)
 * requester ^short = "The individual, role, or organization that authored and issued the laboratory referral/order. This element identifies the healthcare professional or organizational unit responsible for initiating the ServiceRequest."
 * reason MS
-* reason from ICD10ReasonVS
+* reason from ConditionCodeVS
 * reason ^short = "A reason to a Condition or other clinical resource that represents the medical justification for the laboratory referral, such as a diagnosis coded using ICD-10. This allows structured representation of diagnosis details including onset date and clinical status."
 * insurance MS
 * insurance only Reference(Coverage)
