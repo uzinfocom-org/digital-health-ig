@@ -85,6 +85,7 @@ Alias: $observation-methods = http://hl7.org/fhir/ValueSet/observation-methods
 Alias: $observation-referencerange-normalvalue = http://hl7.org/fhir/observation-referencerange-normalvalue
 Alias: $observation-status = http://hl7.org/fhir/observation-status
 Alias: $organization-argos-id-system = https://dhp.uz/fhir/core/sid/org/uz/argos
+Alias: $organization-smif-id-system = https://dhp.uz/fhir/core/sid/org/uz/smif
 Alias: $organization-tax-id-system = https://dhp.uz/fhir/core/sid/org/uz/soliq
 Alias: $organization-type-cs = http://terminology.hl7.org/CodeSystem/organization-type
 Alias: $organization-type-vs = http://hl7.org/fhir/ValueSet/organization-type
@@ -153,3 +154,9 @@ Alias: $valueset-supplement = http://hl7.org/fhir/StructureDefinition/valueset-s
 Alias: $specimen-status = http://hl7.org/fhir/specimen-status
 Alias: $specimen-combined = http://hl7.org/fhir/specimen-combined
 Alias: $immunization-recommendation-status = http://terminology.hl7.org/CodeSystem/immunization-recommendation-status
+Alias: $nationality-cs = https://terminology.dhp.uz/fhir/core/CodeSystem/nationality-cs
+Alias: $ucum = http://unitsofmeasure.org
+Alias: $ucum-vs = http://hl7.org/fhir/ValueSet/ucum-units
+
+Alias: $adverse-event-actuality = http://hl7.org/fhir/adverse-event-actuality
+Alias: $adverse-event-seriousness = http://terminology.hl7.org/CodeSystem/adverse-event-seriousness
