@@ -57,6 +57,33 @@ WARNING: ConceptMap/ssv-administrative-territory-to-regions-cm: ConceptMap.group
 # tx.fhir.org doesn't have all UCUM codes - allowed to be ignored, needs to be reported
 Target Code System http://unitsofmeasure.org doesn't have all content (content = not-present), so the target codes cannot be checked
 
+# IG Publisher bug: ConceptMap target-code validation rejects codes that ARE in the
+# target ValueSet. tx.fhir.org $validate-code returns result:true for these codes;
+# the publisher's internal expander disagrees with tx and emits
+# CONCEPTMAP_GROUP_TARGET_CODE_INVALID_VS for every target.
+# Reproducer: https://github.com/vadi2/VadimTestIG/tree/conceptmap-target-vs-bug
+# IG Publisher bug: ConceptMap target-code validation rejects codes that ARE in the target ValueSet. This has been reported and we can ignore it
+The target code '01' is not valid in the value set https://terminology.dhp.uz/fhir/core/ValueSet/vaccine-code-vs|%
+The target code '03' is not valid in the value set https://terminology.dhp.uz/fhir/core/ValueSet/vaccine-code-vs|%
+The target code '05' is not valid in the value set https://terminology.dhp.uz/fhir/core/ValueSet/vaccine-code-vs|%
+The target code '10' is not valid in the value set https://terminology.dhp.uz/fhir/core/ValueSet/vaccine-code-vs|%
+The target code '19' is not valid in the value set https://terminology.dhp.uz/fhir/core/ValueSet/vaccine-code-vs|%
+The target code '35' is not valid in the value set https://terminology.dhp.uz/fhir/core/ValueSet/vaccine-code-vs|%
+The target code '62' is not valid in the value set https://terminology.dhp.uz/fhir/core/ValueSet/vaccine-code-vs|%
+The target code '90' is not valid in the value set https://terminology.dhp.uz/fhir/core/ValueSet/vaccine-code-vs|%
+The target code '94' is not valid in the value set https://terminology.dhp.uz/fhir/core/ValueSet/vaccine-code-vs|%
+The target code '96' is not valid in the value set https://terminology.dhp.uz/fhir/core/ValueSet/vaccine-code-vs|%
+The target code '98' is not valid in the value set https://terminology.dhp.uz/fhir/core/ValueSet/vaccine-code-vs|%
+The target code '108' is not valid in the value set https://terminology.dhp.uz/fhir/core/ValueSet/vaccine-code-vs|%
+The target code '113' is not valid in the value set https://terminology.dhp.uz/fhir/core/ValueSet/vaccine-code-vs|%
+The target code '137' is not valid in the value set https://terminology.dhp.uz/fhir/core/ValueSet/vaccine-code-vs|%
+The target code '189' is not valid in the value set https://terminology.dhp.uz/fhir/core/ValueSet/vaccine-code-vs|%
+The target code '198' is not valid in the value set https://terminology.dhp.uz/fhir/core/ValueSet/vaccine-code-vs|%
+The target code '207' is not valid in the value set https://terminology.dhp.uz/fhir/core/ValueSet/vaccine-code-vs|%
+The target code '208' is not valid in the value set https://terminology.dhp.uz/fhir/core/ValueSet/vaccine-code-vs|%
+The target code '210' is not valid in the value set https://terminology.dhp.uz/fhir/core/ValueSet/vaccine-code-vs|%
+The target code '212' is not valid in the value set https://terminology.dhp.uz/fhir/core/ValueSet/vaccine-code-vs|%
+
 # IG publisher has troubles validating property URIs - need to report
 The property uri 'http://terminology.hl7.org/CodeSystem/v2-0203' is not known, so the property values can not be validated fully; unless specified elsewhere, codes will be treated as internal references
 The property uri 'urn:iso:std:iso:3166' is not known, so the property values can not be validated fully; unless specified elsewhere, codes will be treated as internal references
@@ -1083,3 +1110,5 @@ No definition could be found for URL value 'Encounter/example-encounter/_history
 No definition could be found for URL value 'Observation/blood-pressure-example/_history/1'
 No definition could be found for URL value 'Observation/body-weight-example/_history/1'
 No definition could be found for URL value 'Observation/body-temperature-example/_history/1'
+
+Target Code System http://hl7.org/fhir/sid/cvx doesn't have all content (content = not-present), so the target codes cannot be checked
