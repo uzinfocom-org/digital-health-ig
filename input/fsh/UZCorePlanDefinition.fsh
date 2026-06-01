@@ -124,7 +124,7 @@ Description: "Uzbekistan Core PlanDefinition profile, used to represent structur
 * action[0].condition[0].expression.description = "Patient must be 18 years or older"
 * action[0].condition[0].expression.language = #text/fhirpath
 * action[0].condition[0].expression.expression = "Patient.birthDate <= today() - 18 years"
-* action[0].participant[0].type = $resource-types#practitioner
+* action[0].participant[0].type = $action-participant-type#practitioner
 * action[0].participant[0].actorId = "vaccinator"
 * action[0].definitionUri = "https://terminology.dhp.uz/fhir/core/ActivityDefinition/example-activity-definition"
 
@@ -139,7 +139,7 @@ Description: "Uzbekistan Core PlanDefinition profile, used to represent structur
 * action[1].relatedAction[0].offsetDuration.unit = "days"
 * action[1].relatedAction[0].offsetDuration.system = "http://unitsofmeasure.org"
 * action[1].relatedAction[0].offsetDuration.code = #d
-* action[1].participant[0].type = $resource-types#practitioner
+* action[1].participant[0].type = $action-participant-type#practitioner
 * action[1].participant[0].actorId = "vaccinator"
 * action[1].definitionUri = "https://terminology.dhp.uz/fhir/core/ActivityDefinition/example-activity-definition"
 

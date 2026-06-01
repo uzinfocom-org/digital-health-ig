@@ -8,4 +8,4 @@ Description: "Participant resource types codes with Uzbek and Russian translatio
 * ^extension[0].url = $valueset-supplement
 * ^extension[=].valueCanonical = Canonical(ParticipantResourceTypesCS)
 
-* include codes from system $resource-types
+* include codes from system $action-participant-type
