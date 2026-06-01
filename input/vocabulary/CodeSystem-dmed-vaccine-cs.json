@@ -1,0 +1,989 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "draft",
+  "content": "complete",
+  "name": "DMEDVaccineCS",
+  "id": "dmed-vaccine-cs",
+  "title": "DMED Vaccine Codes",
+  "description": "Russian DMED Vaccine codes",
+  "url": "https://terminology.dhp.uz/fhir/core/CodeSystem/dmed-vaccine-cs",
+  "concept": [
+    {
+      "code": "270",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "ГАРДАСИЛ"
+        }
+      ]
+    },
+    {
+      "code": "271",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Инфлювак"
+        }
+      ]
+    },
+    {
+      "code": "11",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "ОПВ-1"
+        }
+      ]
+    },
+    {
+      "code": "13",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Пента-1"
+        }
+      ]
+    },
+    {
+      "code": "18",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "ОПВ-2"
+        }
+      ]
+    },
+    {
+      "code": "20",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Пента-2"
+        }
+      ]
+    },
+    {
+      "code": "25",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "ОПВ-3"
+        }
+      ]
+    },
+    {
+      "code": "26",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Рота-3"
+        }
+      ]
+    },
+    {
+      "code": "27",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Пента-3"
+        }
+      ]
+    },
+    {
+      "code": "31",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "ИПВ-1"
+        }
+      ]
+    },
+    {
+      "code": "32",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "ИПВ-2"
+        }
+      ]
+    },
+    {
+      "code": "35",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "ОПВ-4"
+        }
+      ]
+    },
+    {
+      "code": "38",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "ОПВ-5"
+        }
+      ]
+    },
+    {
+      "code": "46",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "PENTA1"
+        }
+      ]
+    },
+    {
+      "code": "50",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "ROT2"
+        }
+      ]
+    },
+    {
+      "code": "57",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "ОПВ R"
+        }
+      ]
+    },
+    {
+      "code": "304",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "ККВ - Краснушно-коревая вакцина"
+        }
+      ]
+    },
+    {
+      "code": "337",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Витамин К"
+        }
+      ]
+    },
+    {
+      "code": "63",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "КПК R"
+        }
+      ]
+    },
+    {
+      "code": "61",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "ВГ B"
+        }
+      ]
+    },
+    {
+      "code": "60",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "АДСМ"
+        }
+      ]
+    },
+    {
+      "code": "58",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Пнемокок 2"
+        }
+      ]
+    },
+    {
+      "code": "56",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "СОВИ ГРИПП"
+        }
+      ]
+    },
+    {
+      "code": "55",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "ВПЧ 2"
+        }
+      ]
+    },
+    {
+      "code": "54",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Гриппол плюс"
+        }
+      ]
+    },
+    {
+      "code": "53",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "ПФАЙЗЕР"
+        }
+      ]
+    },
+    {
+      "code": "52",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "КПК"
+        }
+      ]
+    },
+    {
+      "code": "51",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "ПЕНТА 2"
+        }
+      ]
+    },
+    {
+      "code": "49",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "ОПВ2"
+        }
+      ]
+    },
+    {
+      "code": "48",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "ВГ A"
+        }
+      ]
+    },
+    {
+      "code": "47",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "ПНЕВМО 1"
+        }
+      ]
+    },
+    {
+      "code": "45",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "РОТА 1"
+        }
+      ]
+    },
+    {
+      "code": "44",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "ОПВ1"
+        }
+      ]
+    },
+    {
+      "code": "43",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "КОРЬ"
+        }
+      ]
+    },
+    {
+      "code": "42",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "ЭПКК"
+        }
+      ]
+    },
+    {
+      "code": "41",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "АДСМ-6"
+        }
+      ]
+    },
+    {
+      "code": "40",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "ВПЧ 1"
+        }
+      ]
+    },
+    {
+      "code": "37",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "КПК-2"
+        }
+      ]
+    },
+    {
+      "code": "36",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "АКДС-4"
+        }
+      ]
+    },
+    {
+      "code": "34",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "ПНЕВМО 3"
+        }
+      ]
+    },
+    {
+      "code": "33",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "КПК-1"
+        }
+      ]
+    },
+    {
+      "code": "30",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "ХИБ-3"
+        }
+      ]
+    },
+    {
+      "code": "28",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "АКДС-3"
+        }
+      ]
+    },
+    {
+      "code": "24",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Пневмакокк-2"
+        }
+      ]
+    },
+    {
+      "code": "23",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "ХИБ-2"
+        }
+      ]
+    },
+    {
+      "code": "21",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "АКДС-2"
+        }
+      ]
+    },
+    {
+      "code": "9",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "ВГВ-1"
+        }
+      ]
+    },
+    {
+      "code": "17",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Пневмакокк-1"
+        }
+      ]
+    },
+    {
+      "code": "16",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "ХИБ-1"
+        }
+      ]
+    },
+    {
+      "code": "14",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "АКДС-1"
+        }
+      ]
+    },
+    {
+      "code": "10",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "БЦЖ-1"
+        }
+      ]
+    },
+    {
+      "code": "8",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Johnson & Johnson"
+        }
+      ]
+    },
+    {
+      "code": "6",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Астра Зенека"
+        }
+      ]
+    },
+    {
+      "code": "5",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Модерна"
+        }
+      ]
+    },
+    {
+      "code": "4",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "ZF -UZ-VAC (2001 вакцина 202012026)"
+        }
+      ]
+    },
+    {
+      "code": "3",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Гам Ковид вак Компонент 1-0,5 мл - 1 доза в ампуле в упаковке (Спутник -V) вакцина 1-470321"
+        }
+      ]
+    },
+    {
+      "code": "1",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Pfizer вакцина против COVID"
+        }
+      ]
+    },
+    {
+      "code": "12",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "РОТА-1"
+        }
+      ]
+    },
+    {
+      "code": "19",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "РОТА-2"
+        }
+      ]
+    },
+    {
+      "code": "15",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "ВГВ-2"
+        }
+      ]
+    },
+    {
+      "code": "22",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "ВГВ-3"
+        }
+      ]
+    },
+    {
+      "code": "70",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "PNEVMO - 3"
+        }
+      ]
+    },
+    {
+      "code": "75",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "В1 ПЕНТА"
+        }
+      ]
+    },
+    {
+      "code": "77",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "В2 ПЕНТА"
+        }
+      ]
+    },
+    {
+      "code": "79",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "В1 РОТА"
+        }
+      ]
+    },
+    {
+      "code": "80",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "В2 РОТА"
+        }
+      ]
+    },
+    {
+      "code": "81",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "В3 РОТА"
+        }
+      ]
+    },
+    {
+      "code": "68",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "R3 АДСМ"
+        }
+      ]
+    },
+    {
+      "code": "84",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "V1 ОПВ"
+        }
+      ]
+    },
+    {
+      "code": "85",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "V2 ОПВ"
+        }
+      ]
+    },
+    {
+      "code": "86",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "V3 ОПВ"
+        }
+      ]
+    },
+    {
+      "code": "87",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "V4 ОПВ"
+        }
+      ]
+    },
+    {
+      "code": "88",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "V2 РОТА"
+        }
+      ]
+    },
+    {
+      "code": "90",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "V1 ИПВ"
+        }
+      ]
+    },
+    {
+      "code": "91",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "V2 ИПВ"
+        }
+      ]
+    },
+    {
+      "code": "92",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "V3 ПЕНТА"
+        }
+      ]
+    },
+    {
+      "code": "95",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Rv Корь"
+        }
+      ]
+    },
+    {
+      "code": "128",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Гепатита А"
+        }
+      ]
+    },
+    {
+      "code": "29",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "ВГВ-4"
+        }
+      ]
+    },
+    {
+      "code": "76",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "В2"
+        }
+      ]
+    },
+    {
+      "code": "237",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Корь IgM"
+        }
+      ]
+    },
+    {
+      "code": "67",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "R2 АДСМ"
+        }
+      ]
+    },
+    {
+      "code": "338",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "ВЕРОЦЕЛЛ"
+        }
+      ]
+    },
+    {
+      "code": "197",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Адсорбированный столбнячный анатоксин (АС)"
+        }
+      ]
+    },
+    {
+      "code": "164",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "ACYW - менингит"
+        }
+      ]
+    },
+    {
+      "code": "130",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Проба Манту"
+        }
+      ]
+    },
+    {
+      "code": "129",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Диаскин тест"
+        }
+      ]
+    },
+    {
+      "code": "94",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "V2 ВПЧ"
+        }
+      ]
+    },
+    {
+      "code": "93",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "V1 ВПЧ"
+        }
+      ]
+    },
+    {
+      "code": "89",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "V4 АКДС"
+        }
+      ]
+    },
+    {
+      "code": "83",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "АДСМ-5"
+        }
+      ]
+    },
+    {
+      "code": "82",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "R АКДС"
+        }
+      ]
+    },
+    {
+      "code": "78",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "В КПК"
+        }
+      ]
+    },
+    {
+      "code": "74",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "ПНЕВМО-3"
+        }
+      ]
+    },
+    {
+      "code": "73",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "ПНЕВМО-2"
+        }
+      ]
+    },
+    {
+      "code": "72",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "ПНЕВМО-1"
+        }
+      ]
+    },
+    {
+      "code": "131",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Гепатит Б"
+        }
+      ]
+    },
+    {
+      "code": "71",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "ВПЧ"
+        }
+      ]
+    },
+    {
+      "code": "69",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "БЦЖ"
+        }
+      ]
+    },
+    {
+      "code": "198",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Антирабическая вакцина высушенная на морозе"
+        }
+      ]
+    },
+    {
+      "code": "66",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "R1 АДСМ"
+        }
+      ]
+    },
+    {
+      "code": "65",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "V2 АДСМ"
+        }
+      ]
+    },
+    {
+      "code": "64",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "V1 АДСМ"
+        }
+      ]
+    },
+    {
+      "code": "62",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "КПК-1 для младенцев"
+        }
+      ]
+    },
+    {
+      "code": "59",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "АКДС R"
+        }
+      ]
+    },
+    {
+      "code": "39",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "АДС-М-5"
+        }
+      ]
+    },
+    {
+      "code": "7",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Спутник 1 компонент"
+        }
+      ]
+    },
+    {
+      "code": "2",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Гам Ковид вак Комбинированная векторная вакцина против коронавирусной инф. вызываемой вирусом САР 1-860421"
+        }
+      ]
+    }
+  ],
+  "caseSensitive": true,
+  "hierarchyMeaning": "is-a",
+  "language": "uz",
+  "experimental": true,
+  "count": 108
+}

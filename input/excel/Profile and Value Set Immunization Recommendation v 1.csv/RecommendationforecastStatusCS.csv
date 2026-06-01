@@ -1,0 +1,6 @@
+CODE	SNOMED	EN	RU	UZ
+789539003	due	Due	Подлежит вакцинации.	Emlash vaqti keldi.	
+789540001	overdue	Overdue	Подлежит вакцинации	Muddati o‘tib ketgan.			http://hl7.org/fhir/ValueSet/immunization-recommendation-status
+255386009	immune	Immune	Иммунитет сформирован.	Immunitet shakllangan
+410536001	contraindicated	Contraindicated	Противопоказано	Qarshi ko‘rsatma mavjud
+255594003	complete	Complete	Завершена	Yakunlangan
