@@ -1,4 +1,4 @@
-/*Instance: medication-total-volume-units-to-uz-display-cm
+Instance: medication-total-volume-units-to-uz-display-cm
 InstanceOf: ConceptMap
 Usage: #definition
 * id = "medication-total-volume-units-to-uz-display-cm"
@@ -12,6 +12,7 @@ Usage: #definition
 // связь с ValueSet
 * sourceScopeCanonical = Canonical(MedicationTotalVolumeUnitsVS)
 
+* group.source = $ucum
 * group.target = $ucum
 * targetScopeCanonical = $ucum-vs
 
@@ -278,4 +279,3 @@ Usage: #definition
 * group.element[=].target.code = #10*9.{cell}
 * group.element[=].target.display = "mlrd hujayra"
 * group.element[=].target.relationship = #equivalent
-*/
