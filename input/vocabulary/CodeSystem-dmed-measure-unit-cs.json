@@ -1,0 +1,1167 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "draft",
+  "content": "complete",
+  "name": "DMEDMeasureUnitCS",
+  "id": "dmed-measure-unit-cs",
+  "title": "DMED Measure Unit CodeSystem",
+  "description": "Measurement unit codes in the DMED system",
+  "url": "https://terminology.dhp.uz/fhir/core/CodeSystem/dmed-measure-unit-cs",
+  "concept": [
+    {
+      "code": "1",
+      "display": "микрограмм",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "микрограмм"
+        }
+      ]
+    },
+    {
+      "code": "2",
+      "display": "миллиграмм",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "миллиграмм"
+        }
+      ]
+    },
+    {
+      "code": "3",
+      "display": "нг",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "нг"
+        }
+      ]
+    },
+    {
+      "code": "4",
+      "display": "мкл",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "мкл"
+        }
+      ]
+    },
+    {
+      "code": "5",
+      "display": "нл",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "нл"
+        }
+      ]
+    },
+    {
+      "code": "6",
+      "display": "Рд",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Рд"
+        }
+      ]
+    },
+    {
+      "code": "7",
+      "display": "Гр",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Гр"
+        }
+      ]
+    },
+    {
+      "code": "8",
+      "display": "рад",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "рад"
+        }
+      ]
+    },
+    {
+      "code": "9",
+      "display": "ккал",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "ккал"
+        }
+      ]
+    },
+    {
+      "code": "10",
+      "display": "ммоль",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "ммоль"
+        }
+      ]
+    },
+    {
+      "code": "11",
+      "display": "мкмоль",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "мкмоль"
+        }
+      ]
+    },
+    {
+      "code": "12",
+      "display": "нмоль",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "нмоль"
+        }
+      ]
+    },
+    {
+      "code": "13",
+      "display": "Осм",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Осм"
+        }
+      ]
+    },
+    {
+      "code": "14",
+      "display": "мОсм",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "мОсм"
+        }
+      ]
+    },
+    {
+      "code": "15",
+      "display": "%, m",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "%, m"
+        }
+      ]
+    },
+    {
+      "code": "16",
+      "display": "%, vol",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "%, vol"
+        }
+      ]
+    },
+    {
+      "code": "17",
+      "display": "капля",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "капля"
+        }
+      ]
+    },
+    {
+      "code": "18",
+      "display": "доля",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "доля"
+        }
+      ]
+    },
+    {
+      "code": "19",
+      "display": "доза",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "доза"
+        }
+      ]
+    },
+    {
+      "code": "20",
+      "display": "клетка",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "клетка"
+        }
+      ]
+    },
+    {
+      "code": "21",
+      "display": "млн клеток",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "млн клеток"
+        }
+      ]
+    },
+    {
+      "code": "22",
+      "display": "млрд клеток",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "млрд клеток"
+        }
+      ]
+    },
+    {
+      "code": "23",
+      "display": "спора",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "спора"
+        }
+      ]
+    },
+    {
+      "code": "24",
+      "display": "млрд спор",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "млрд спор"
+        }
+      ]
+    },
+    {
+      "code": "25",
+      "display": "грамм на миллилитр",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "грамм на миллилитр"
+        }
+      ]
+    },
+    {
+      "code": "26",
+      "display": "мкг/мл",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "мкг/мл"
+        }
+      ]
+    },
+    {
+      "code": "27",
+      "display": "мкг/мкл",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "мкг/мкл"
+        }
+      ]
+    },
+    {
+      "code": "28",
+      "display": "мкг/г",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "мкг/г"
+        }
+      ]
+    },
+    {
+      "code": "30",
+      "display": "ммоль/л",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "ммоль/л"
+        }
+      ]
+    },
+    {
+      "code": "31",
+      "display": "ОЕ",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "ОЕ"
+        }
+      ]
+    },
+    {
+      "code": "32",
+      "display": "кв.см",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "кв.см"
+        }
+      ]
+    },
+    {
+      "code": "33",
+      "display": "литр",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "литр"
+        }
+      ]
+    },
+    {
+      "code": "34",
+      "display": "м",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "м"
+        }
+      ]
+    },
+    {
+      "code": "35",
+      "display": "см",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "см"
+        }
+      ]
+    },
+    {
+      "code": "37",
+      "display": "килограмм",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "килограмм"
+        }
+      ]
+    },
+    {
+      "code": "38",
+      "display": "Дж",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Дж"
+        }
+      ]
+    },
+    {
+      "code": "39",
+      "display": "кДж",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "кДж"
+        }
+      ]
+    },
+    {
+      "code": "40",
+      "display": "ГБк",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "ГБк"
+        }
+      ]
+    },
+    {
+      "code": "41",
+      "display": "кБк",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "кБк"
+        }
+      ]
+    },
+    {
+      "code": "42",
+      "display": "МБк",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "МБк"
+        }
+      ]
+    },
+    {
+      "code": "43",
+      "display": "моль",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "моль"
+        }
+      ]
+    },
+    {
+      "code": "44",
+      "display": "Бк",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Бк"
+        }
+      ]
+    },
+    {
+      "code": "45",
+      "display": "шт",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "шт"
+        }
+      ]
+    },
+    {
+      "code": "46",
+      "display": "доза излучения",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "доза излучения"
+        }
+      ]
+    },
+    {
+      "code": "47",
+      "display": "единица мутности",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "единица мутности"
+        }
+      ]
+    },
+    {
+      "code": "48",
+      "display": "миллион единиц действия",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "миллион единиц действия"
+        }
+      ]
+    },
+    {
+      "code": "49",
+      "display": "PFU",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "PFU"
+        }
+      ]
+    },
+    {
+      "code": "50",
+      "display": "Lf",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Lf"
+        }
+      ]
+    },
+    {
+      "code": "51",
+      "display": "Ph.Eur.U.",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Ph.Eur.U."
+        }
+      ]
+    },
+    {
+      "code": "52",
+      "display": "единица действия биологической активности",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "единица действия биологической активности"
+        }
+      ]
+    },
+    {
+      "code": "53",
+      "display": "PNU",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "PNU"
+        }
+      ]
+    },
+    {
+      "code": "55",
+      "display": "условная единица",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "условная единица"
+        }
+      ]
+    },
+    {
+      "code": "56",
+      "display": "КИЕ",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "КИЕ"
+        }
+      ]
+    },
+    {
+      "code": "57",
+      "display": "ЛЕ",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "ЛЕ"
+        }
+      ]
+    },
+    {
+      "code": "58",
+      "display": "антигенная единица",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "антигенная единица"
+        }
+      ]
+    },
+    {
+      "code": "59",
+      "display": "титрационная единицa",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "титрационная единицa"
+        }
+      ]
+    },
+    {
+      "code": "60",
+      "display": "ИЕ",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "ИЕ"
+        }
+      ]
+    },
+    {
+      "code": "61",
+      "display": "АТрЕ",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "АТрЕ"
+        }
+      ]
+    },
+    {
+      "code": "62",
+      "display": "TУ",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "TУ"
+        }
+      ]
+    },
+    {
+      "code": "63",
+      "display": "ИФА ед",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "ИФА ед"
+        }
+      ]
+    },
+    {
+      "code": "64",
+      "display": "анти-Xa МЕ",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "анти-Xa МЕ"
+        }
+      ]
+    },
+    {
+      "code": "65",
+      "display": "ТЦД 50",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "ТЦД 50"
+        }
+      ]
+    },
+    {
+      "code": "66",
+      "display": "ЛД 50",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "ЛД 50"
+        }
+      ]
+    },
+    {
+      "code": "67",
+      "display": "ELU",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "ELU"
+        }
+      ]
+    },
+    {
+      "code": "68",
+      "display": "ИД 50",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "ИД 50"
+        }
+      ]
+    },
+    {
+      "code": "69",
+      "display": "ЭИД 50",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "ЭИД 50"
+        }
+      ]
+    },
+    {
+      "code": "70",
+      "display": "ЦПД 50",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "ЦПД 50"
+        }
+      ]
+    },
+    {
+      "code": "71",
+      "display": "МИДэ",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "МИДэ"
+        }
+      ]
+    },
+    {
+      "code": "72",
+      "display": "ЕС",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "ЕС"
+        }
+      ]
+    },
+    {
+      "code": "73",
+      "display": "ИР",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "ИР"
+        }
+      ]
+    },
+    {
+      "code": "74",
+      "display": "единица антигена",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "единица антигена"
+        }
+      ]
+    },
+    {
+      "code": "75",
+      "display": "единица Аллергена",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "единица Аллергена"
+        }
+      ]
+    },
+    {
+      "code": "76",
+      "display": "ЛЕД",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "ЛЕД"
+        }
+      ]
+    },
+    {
+      "code": "77",
+      "display": "ЕД на мл",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "ЕД на мл"
+        }
+      ]
+    },
+    {
+      "code": "78",
+      "display": "микрограмм на дозу",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "микрограмм на дозу"
+        }
+      ]
+    },
+    {
+      "code": "79",
+      "display": "грамм",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "грамм"
+        }
+      ]
+    },
+    {
+      "code": "80",
+      "display": "процент",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "процент"
+        }
+      ]
+    },
+    {
+      "code": "81",
+      "display": "миллиграмм на миллилитр",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "миллиграмм на миллилитр"
+        }
+      ]
+    },
+    {
+      "code": "82",
+      "display": "миллиграмм на грамм",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "миллиграмм на грамм"
+        }
+      ]
+    },
+    {
+      "code": "115",
+      "display": "ЕД/г",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "ЕД/г"
+        }
+      ]
+    },
+    {
+      "code": "143",
+      "display": "мг/ 3мл",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "мг/ 3мл"
+        }
+      ]
+    },
+    {
+      "code": "153",
+      "display": "мг/ 100 мл",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "мг/ 100 мл"
+        }
+      ]
+    },
+    {
+      "code": "212",
+      "display": "МЕ/г",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "МЕ/г"
+        }
+      ]
+    },
+    {
+      "code": "340",
+      "display": "мг/ 4мл",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "мг/ 4мл"
+        }
+      ]
+    },
+    {
+      "code": "359",
+      "display": "мг/ 200 мл",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "мг/ 200 мл"
+        }
+      ]
+    },
+    {
+      "code": "385",
+      "display": "мг/ 10мл",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "мг/ 10мл"
+        }
+      ]
+    },
+    {
+      "code": "418",
+      "display": "мг/мл",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "мг/мл"
+        }
+      ]
+    },
+    {
+      "code": "419",
+      "display": "г/л",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "г/л"
+        }
+      ]
+    },
+    {
+      "code": "451",
+      "display": "ПЕ",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "ПЕ"
+        }
+      ]
+    },
+    {
+      "code": "484",
+      "display": "PH",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "PH"
+        }
+      ]
+    },
+    {
+      "code": "485",
+      "display": "qs",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "qs"
+        }
+      ]
+    },
+    {
+      "code": "486",
+      "display": "миллиграмм на дозу",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "миллиграмм на дозу"
+        }
+      ]
+    },
+    {
+      "code": "487",
+      "display": "МЕ/мл",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "МЕ/мл"
+        }
+      ]
+    },
+    {
+      "code": "488",
+      "display": "ТФ",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "ТФ"
+        }
+      ]
+    },
+    {
+      "code": "489",
+      "display": "флокулирующая единица",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "флокулирующая единица"
+        }
+      ]
+    },
+    {
+      "code": "490",
+      "display": "млн ЕД",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "млн ЕД"
+        }
+      ]
+    },
+    {
+      "code": "491",
+      "display": "мкг/доза",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "мкг/доза"
+        }
+      ]
+    },
+    {
+      "code": "492",
+      "display": "DU",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "DU"
+        }
+      ]
+    },
+    {
+      "code": "493",
+      "display": "международная единица биологической активности",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "международная единица биологической активности"
+        }
+      ]
+    },
+    {
+      "code": "494",
+      "display": "миллилитр",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "миллилитр"
+        }
+      ]
+    },
+    {
+      "code": "496",
+      "display": "ФНЕ",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "ФНЕ"
+        }
+      ]
+    },
+    {
+      "code": "529",
+      "display": "миллиард единиц действия",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "миллиард единиц действия"
+        }
+      ]
+    },
+    {
+      "code": "530",
+      "display": "колониеобразующие единицы",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "колониеобразующие единицы"
+        }
+      ]
+    },
+    {
+      "code": "531",
+      "display": "МЕД",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "МЕД"
+        }
+      ]
+    },
+    {
+      "code": "532",
+      "display": "млрд КЕ",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "млрд КЕ"
+        }
+      ]
+    },
+    {
+      "code": "566",
+      "display": "мл",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "мл"
+        }
+      ]
+    },
+    {
+      "code": "572",
+      "display": "миллиард спор",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "миллиард спор"
+        }
+      ]
+    },
+    {
+      "code": "604",
+      "display": "ЕД",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "ЕД"
+        }
+      ]
+    },
+    {
+      "code": "606",
+      "display": "мегабеккерель",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "мегабеккерель"
+        }
+      ]
+    },
+    {
+      "code": "607",
+      "display": "МЕ/мг",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "МЕ/мг"
+        }
+      ]
+    },
+    {
+      "code": "608",
+      "display": "единица формирования фокуса (FFU)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "единица формирования фокуса (FFU)"
+        }
+      ]
+    },
+    {
+      "code": "609",
+      "display": "50 процентная тканевая цитопатическая доза",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "50 процентная тканевая цитопатическая доза"
+        }
+      ]
+    },
+    {
+      "code": "610",
+      "display": "титр фага",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "титр фага"
+        }
+      ]
+    },
+    {
+      "code": "611",
+      "display": "часть",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "часть"
+        }
+      ]
+    },
+    {
+      "code": "612",
+      "display": "степень разведения",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "степень разведения"
+        }
+      ]
+    }
+  ],
+  "caseSensitive": true,
+  "hierarchyMeaning": "is-a",
+  "language": "uz",
+  "experimental": true,
+  "count": 115
+}
