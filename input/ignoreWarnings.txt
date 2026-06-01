@@ -42,13 +42,47 @@ No definition could be found for URL value 'https://dhp.uz/fhir/core'
 Source Code System urn:iso:std:iso:3166 doesn't have all content (content = not-present), so the source codes cannot be checked
 Target Code System urn:iso:std:iso:3166 doesn't have all content (content = not-present), so the target codes cannot be checked
 
-# MIS2/SSV ConceptMaps reference external code systems not available to the IG publisher - source codes cannot be validated
-WARNING: ConceptMap/mis2-level-type-to-subordination-group-cm: ConceptMap.group[0]: No Source Code System, so the source codes cannot be checked
-WARNING: ConceptMap/mis2-medical-type-to-organizational-structure-cm: ConceptMap.group[0]: No Source Code System, so the source codes cannot be checked
-WARNING: ConceptMap/mis2-service-type-to-organizational-service-group-cm: ConceptMap.group[0]: No Source Code System, so the source codes cannot be checked
+# MIS2 ConceptMaps reference external code systems not available to the IG publisher - source codes cannot be validated
+WARNING: ConceptMap/ssv-level-type-to-subordination-group-cm: ConceptMap.group[0].source: The Source Code System http://fhir.ssv.uz/ValueSet/organization-type-level is not fully defined and populated, and no sourceScope is specified, so the source code checking will not be performed
+WARNING: ConceptMap/ssv-medical-type-to-organizational-structure-cm: ConceptMap.group[0].source: The Source Code System http://fhir.ssv.uz/ValueSet/organization-type-medical is not fully defined and populated, and no sourceScope is specified, so the source code checking will not be performed
+WARNING: ConceptMap/ssv-medical-type-to-organizational-structure-cm: ConceptMap.group[1].source: The Source Code System http://fhir.ssv.uz/ValueSet/organization-type-medical is not fully defined and populated, and no sourceScope is specified, so the source code checking will not be performed
+WARNING: ConceptMap/ssv-service-type-to-organizational-service-group-cm: ConceptMap.group[0].source: The Source Code System http://fhir.ssv.uz/ValueSet/organization-type-service is not fully defined and populated, and no sourceScope is specified, so the source code checking will not be performed
+WARNING: ConceptMap/mis2-level-type-to-subordination-group-cm: ConceptMap.group[0].source: The Source Code System http://fhir.ssv.uz/ValueSet/organization-type-level is not fully defined and populated, and no sourceScope is specified, so the source code checking will not be performed
+WARNING: ConceptMap/mis2-medical-type-to-organizational-structure-cm: ConceptMap.group[0].source: The Source Code System http://fhir.ssv.uz/ValueSet/organization-type-medical is not fully defined and populated, and no sourceScope is specified, so the source code checking will not be performed
+WARNING: ConceptMap/mis2-medical-type-to-organizational-structure-cm: ConceptMap.group[1].source: The Source Code System http://fhir.ssv.uz/ValueSet/organization-type-medical is not fully defined and populated, and no sourceScope is specified, so the source code checking will not be performed
+WARNING: ConceptMap/mis2-service-type-to-organizational-service-group-cm: ConceptMap.group[0].source: The Source Code System http://fhir.ssv.uz/ValueSet/organization-type-service is not fully defined and populated, and no sourceScope is specified, so the source code checking will not be performed
 WARNING: ConceptMap/ssv-administrative-territory-to-regions-cm: ConceptMap.group[0]: No Source Code System, so the source codes cannot be checked
 WARNING: ConceptMap/ssv-administrative-territory-to-regions-cm: ConceptMap.group[1]: No Source Code System, so the source codes cannot be checked
 
+# tx.fhir.org doesn't have all UCUM codes - allowed to be ignored, needs to be reported
+Target Code System http://unitsofmeasure.org doesn't have all content (content = not-present), so the target codes cannot be checked
+
+# IG Publisher bug: ConceptMap target-code validation rejects codes that ARE in the
+# target ValueSet. tx.fhir.org $validate-code returns result:true for these codes;
+# the publisher's internal expander disagrees with tx and emits
+# CONCEPTMAP_GROUP_TARGET_CODE_INVALID_VS for every target.
+# Reproducer: https://github.com/vadi2/VadimTestIG/tree/conceptmap-target-vs-bug
+# IG Publisher bug: ConceptMap target-code validation rejects codes that ARE in the target ValueSet. This has been reported and we can ignore it
+The target code '01' is not valid in the value set https://terminology.dhp.uz/fhir/core/ValueSet/vaccine-code-vs|%
+The target code '03' is not valid in the value set https://terminology.dhp.uz/fhir/core/ValueSet/vaccine-code-vs|%
+The target code '05' is not valid in the value set https://terminology.dhp.uz/fhir/core/ValueSet/vaccine-code-vs|%
+The target code '10' is not valid in the value set https://terminology.dhp.uz/fhir/core/ValueSet/vaccine-code-vs|%
+The target code '19' is not valid in the value set https://terminology.dhp.uz/fhir/core/ValueSet/vaccine-code-vs|%
+The target code '35' is not valid in the value set https://terminology.dhp.uz/fhir/core/ValueSet/vaccine-code-vs|%
+The target code '62' is not valid in the value set https://terminology.dhp.uz/fhir/core/ValueSet/vaccine-code-vs|%
+The target code '90' is not valid in the value set https://terminology.dhp.uz/fhir/core/ValueSet/vaccine-code-vs|%
+The target code '94' is not valid in the value set https://terminology.dhp.uz/fhir/core/ValueSet/vaccine-code-vs|%
+The target code '96' is not valid in the value set https://terminology.dhp.uz/fhir/core/ValueSet/vaccine-code-vs|%
+The target code '98' is not valid in the value set https://terminology.dhp.uz/fhir/core/ValueSet/vaccine-code-vs|%
+The target code '108' is not valid in the value set https://terminology.dhp.uz/fhir/core/ValueSet/vaccine-code-vs|%
+The target code '113' is not valid in the value set https://terminology.dhp.uz/fhir/core/ValueSet/vaccine-code-vs|%
+The target code '137' is not valid in the value set https://terminology.dhp.uz/fhir/core/ValueSet/vaccine-code-vs|%
+The target code '189' is not valid in the value set https://terminology.dhp.uz/fhir/core/ValueSet/vaccine-code-vs|%
+The target code '198' is not valid in the value set https://terminology.dhp.uz/fhir/core/ValueSet/vaccine-code-vs|%
+The target code '207' is not valid in the value set https://terminology.dhp.uz/fhir/core/ValueSet/vaccine-code-vs|%
+The target code '208' is not valid in the value set https://terminology.dhp.uz/fhir/core/ValueSet/vaccine-code-vs|%
+The target code '210' is not valid in the value set https://terminology.dhp.uz/fhir/core/ValueSet/vaccine-code-vs|%
+The target code '212' is not valid in the value set https://terminology.dhp.uz/fhir/core/ValueSet/vaccine-code-vs|%
 
 # IG publisher has troubles validating property URIs - need to report
 The property uri 'http://terminology.hl7.org/CodeSystem/v2-0203' is not known, so the property values can not be validated fully; unless specified elsewhere, codes will be treated as internal references
@@ -71,10 +105,6 @@ Hyperlink 'https://dhp.uz/fhir/core/sid/pid/uz/prn/*/mrt' at 'div/div/table/tr/t
 # sample systems from our IdentifierDomain where we have all foreign drivers licenses and passports - creating NamingSystem for them all is impractical
 No definition could be found for URL value 'https://dhp.uz/fhir/core/sid/pid/gb/ppn'
 No definition could be found for URL value 'https://dhp.uz/fhir/core/sid/pid/gb/dl'
-
-# R5 core spec references this extension but it's not published anywhere, known FHIR R5 issue - can be ignored
-The extension http://hl7.org/fhir/StructureDefinition/structuredefinition-implements could not be found so is not allowed here
-No definition could be found for URL value 'http://hl7.org/fhir/StructureDefinition/structuredefinition-implements'
 
 # IG Publisher generates inline scripts for Questionnaire/QuestionnaireResponse table filters then warns they're illegal - bug reported, can be ignored
 The <script> containing the javascript '//%
@@ -1080,3 +1110,5 @@ No definition could be found for URL value 'Encounter/example-encounter/_history
 No definition could be found for URL value 'Observation/blood-pressure-example/_history/1'
 No definition could be found for URL value 'Observation/body-weight-example/_history/1'
 No definition could be found for URL value 'Observation/body-temperature-example/_history/1'
+
+Target Code System http://hl7.org/fhir/sid/cvx doesn't have all content (content = not-present), so the target codes cannot be checked

@@ -20,6 +20,26 @@ Usage: #definition
 * uniqueId[=].preferred = true
 * uniqueId[=].comment = "This is the canonical URI for the Uzbekistan HRM Argos system"
 
+Instance: uzb-smif
+InstanceOf: NamingSystem
+Description: "Organization identifiers assigned by the State Medical Insurance Fund (SMIF) of Uzbekistan"
+Usage: #definition
+* url = "https://terminology.dhp.uz/fhir/core/NamingSystem/uzb-smif"
+* name = "UzbekistanSmifSystem"
+* status = #active
+* kind = #identifier
+* publisher = "Uzinfocom"
+* responsible = "State Medical Insurance Fund of the Republic of Uzbekistan"
+* date = "2026-04-12"
+* type = $identifier-type#NIIP "National Insurance Payor Identifier (Payor)"
+* description = "Naming system for organization identifiers assigned by the State Medical Insurance Fund (SMIF) of the Republic of Uzbekistan to healthcare organizations that have entered into contracts with the Fund."
+* jurisdiction = urn:iso:std:iso:3166#UZ "Uzbekistan"
+* usage = "Used for identifying healthcare organizations that have contracts with the State Medical Insurance Fund of Uzbekistan."
+* uniqueId[0].type = #uri
+* uniqueId[=].value = $organization-smif-id-system
+* uniqueId[=].preferred = true
+* uniqueId[=].comment = "This is the canonical URI for the Uzbekistan SMIF organization identifier system"
+
 Instance: uzb-hrm-argos-practitioner
 InstanceOf: NamingSystem
 Description: "Healthcare professional identifiers assigned by the Uzbekistan Human Resource Management (HRM) system"
@@ -343,6 +363,60 @@ Usage: #definition
 * uniqueId[=].preferred = true
 * uniqueId[=].comment = "WHO ICHI beta release URI"
 
+Instance: ssv-organization-type-level
+InstanceOf: NamingSystem
+Description: "SSV classification of healthcare facility administrative levels (republican, regional, urban, district, etc.)"
+Usage: #definition
+* url = "https://terminology.dhp.uz/fhir/core/NamingSystem/ssv-organization-type-level"
+* name = "SSVOrganizationTypeLevel"
+* status = #active
+* kind = #codesystem
+* date = "2026-03-24"
+* publisher = "Uzinfocom"
+* responsible = "State Statistics Committee of the Republic of Uzbekistan"
+* description = "Classification of healthcare facilities by administrative level, maintained by the State Statistics Committee (SSV) of the Republic of Uzbekistan."
+* jurisdiction = urn:iso:std:iso:3166#UZ "Uzbekistan"
+* usage = "Used for classifying healthcare organizations by their administrative subordination level within the Uzbekistan healthcare system."
+* uniqueId[0].type = #uri
+* uniqueId[=].value = $ssv-organization-type-level
+* uniqueId[=].preferred = true
+
+Instance: ssv-organization-type-medical
+InstanceOf: NamingSystem
+Description: "SSV classification of healthcare facility medical types (hospital, polyclinic, dispensary, etc.)"
+Usage: #definition
+* url = "https://terminology.dhp.uz/fhir/core/NamingSystem/ssv-organization-type-medical"
+* name = "SSVOrganizationTypeMedical"
+* status = #active
+* kind = #codesystem
+* date = "2026-03-24"
+* publisher = "Uzinfocom"
+* responsible = "State Statistics Committee of the Republic of Uzbekistan"
+* description = "Classification of healthcare facilities by medical type, maintained by the State Statistics Committee (SSV) of the Republic of Uzbekistan."
+* jurisdiction = urn:iso:std:iso:3166#UZ "Uzbekistan"
+* usage = "Used for classifying healthcare organizations by their medical facility type within the Uzbekistan healthcare system."
+* uniqueId[0].type = #uri
+* uniqueId[=].value = $ssv-organization-type-medical
+* uniqueId[=].preferred = true
+
+Instance: ssv-organization-type-service
+InstanceOf: NamingSystem
+Description: "SSV classification of healthcare facility service types (outpatient, inpatient, emergency, etc.)"
+Usage: #definition
+* url = "https://terminology.dhp.uz/fhir/core/NamingSystem/ssv-organization-type-service"
+* name = "SSVOrganizationTypeService"
+* status = #active
+* kind = #codesystem
+* date = "2026-03-24"
+* publisher = "Uzinfocom"
+* responsible = "State Statistics Committee of the Republic of Uzbekistan"
+* description = "Classification of healthcare facilities by service delivery type, maintained by the State Statistics Committee (SSV) of the Republic of Uzbekistan."
+* jurisdiction = urn:iso:std:iso:3166#UZ "Uzbekistan"
+* usage = "Used for classifying healthcare organizations by their service delivery capabilities within the Uzbekistan healthcare system."
+* uniqueId[0].type = #uri
+* uniqueId[=].value = $ssv-organization-type-service
+* uniqueId[=].preferred = true
+
 Instance: patient-id-uzb-pension-number
 InstanceOf: NamingSystem
 Description: "The pension number identifier is used to determine whether a patient is registered in the pension system and to identify the type of pension received."
@@ -360,4 +434,37 @@ Usage: #definition
 * usage = "Used to record and exchange a patient's pension number for administrative and eligibility purposes, including verification of pensioner status and applicable social or healthcare benefits. This identifier is not intended to replace national personal identifiers (such as JShShIR) and should be used only when pension-related identification is required."
 * uniqueId[0].type = #uri
 * uniqueId[=].value = $pension-number
+* uniqueId[=].preferred = true
+
+Instance: immunization-identifier
+InstanceOf: NamingSystem
+Usage: #definition
+Title: "Immunization Identifier"
+Description: "Identifier system for immunization records in Uzbekistan."
+* name = "ImmunizationIdentifier"
+* status = #active
+* kind = #identifier
+* date = "2026-04-29"
+* publisher = "Uzinfocom"
+* uniqueId[0].type = #uri
+* uniqueId[0].value = "https://terminology.dhp.uz/fhir/core/NamingSystem/immunization-identifier"
+* uniqueId[0].preferred = true
+
+Instance: uzb-mis-dmed
+InstanceOf: NamingSystem
+Description: "Clinical record identifiers issued by the Uzbekistan Medical Information System (MIS)"
+Usage: #definition
+* url = "https://terminology.dhp.uz/fhir/core/NamingSystem/uzb-mis-dmed"
+* name = "UzbekistanMedicalInformationSystem"
+* status = #active
+* kind = #identifier
+* date = "2026-05-11"
+* publisher = "Uzinfocom"
+* responsible = "Ministry of Health of the Republic of Uzbekistan"
+* type = $identifier-type#FILL "Filler Identifier"
+* description = "Naming system for clinical record identifiers (e.g., procedure, encounter, observation IDs) issued by the Uzbekistan Medical Information System (MIS) at https://mis.dmed.uz."
+* jurisdiction = urn:iso:std:iso:3166#UZ "Uzbekistan"
+* usage = "Used for identifying clinical records assigned by the Uzbekistan Medical Information System."
+* uniqueId[0].type = #uri
+* uniqueId[=].value = $mis-dmed-uz
 * uniqueId[=].preferred = true

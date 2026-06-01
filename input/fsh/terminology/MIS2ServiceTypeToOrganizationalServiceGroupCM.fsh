@@ -2,46 +2,51 @@ Instance: mis2-service-type-to-organizational-service-group-cm
 InstanceOf: ConceptMap
 Usage: #definition
 Title: "MIS2 Service Type to Organizational Service Group"
-Description: "Maps MIS2 service type flags to UZ Core Organizational Service Group codes. MIS2 uses multi-select service type flags per organization (e.g. an org can have both INPATIENT and OUTPATIENT), while OrganizationalServiceGroupCS uses a single pre-combined classification. When an organization has multiple MIS2 flags, the combination should be considered to select the appropriate target code (e.g. INPATIENT + OUTPATIENT together maps to III_100)."
+Description: "Maps MIS2 service type codes to UZ Core Organizational Service Group codes. MIS2 uses service type classification per organization, while OrganizationalServiceGroupCS uses a single pre-combined classification. When an organization has multiple MIS2 service types, the combination should be considered to select the appropriate target code (e.g. Inpatient + Outpatient together maps to III_100)."
 * name = "MIS2ServiceTypeToOrganizationalServiceGroupCM"
 * url = "https://terminology.dhp.uz/fhir/core/ConceptMap/mis2-service-type-to-organizational-service-group-cm"
 * status = #draft
 * experimental = false
 * publisher = "Uzinfocom"
 * targetScopeCanonical = Canonical(OrganizationalServiceGroupVS)
+* group.source = $ssv-organization-type-service
 * group.target = Canonical(OrganizationalServiceGroupCS)
 
-* group.element[+].code = #OUTPATIENT
-* group.element[=].display = "Outpatient"
+* group.element[+].code = #1
+* group.element[=].display = "Outpatient" // uz: Ambulatoriya, ru: Амбулатория
 * group.element[=].target[+].code = #III_500
-* group.element[=].target[=].display = "Poliklinika bo'limi mavjud"
+* group.element[=].target[=].display = "There is a polyclinic department."
 * group.element[=].target[=].relationship = #related-to
-* group.element[=].target[=].comment = "Maps when OUTPATIENT is the sole service type. When combined with INPATIENT, use III_100 instead."
+* group.element[=].target[=].comment = "Maps when Outpatient is the sole service type. When combined with Inpatient, use III_100 instead."
 
-* group.element[+].code = #INPATIENT
-* group.element[=].display = "Inpatient"
+* group.element[+].code = #2
+* group.element[=].display = "Inpatient" // uz: Statsionar, ru: Стационар
 * group.element[=].target[+].code = #III_200
-* group.element[=].target[=].display = "Statsionar bo'limi mavjud"
+* group.element[=].target[=].display = "There is an inpatient department."
 * group.element[=].target[=].relationship = #related-to
-* group.element[=].target[=].comment = "Maps when INPATIENT is the sole service type. When combined with OUTPATIENT, use III_100 instead."
+* group.element[=].target[=].comment = "Maps when Inpatient is the sole service type. When combined with Outpatient, use III_100 instead."
 
-* group.element[+].code = #COMBINED
-* group.element[=].display = "Combined"
+* group.element[+].code = #3
+* group.element[=].display = "Emergency medicine" // uz: Favqulodda tibbiy yordam, ru: Чрезвычайная медицинская помощь
 * group.element[=].target[+].code = #III_100
-* group.element[=].target[=].display = "Poliklinika bo'limi va statsionar bo'limi mavjud"
+* group.element[=].target[=].display = "There is an outpatient and inpatient department."
 * group.element[=].target[=].relationship = #related-to
-* group.element[=].target[=].comment = "COMBINED indicates a facility offering multiple service modalities, closest to outpatient + inpatient."
 
-* group.element[+].code = #EMERGENCY
-* group.element[=].display = "Emergency"
-* group.element[=].noMap = true
+* group.element[+].code = #4
+* group.element[=].display = "Combined" // uz: Birlashtirilgan, ru: Комбинированная
+* group.element[=].target[+].code = #III_100
+* group.element[=].target[=].display = "There is an outpatient and inpatient department."
+* group.element[=].target[=].relationship = #related-to
+* group.element[=].target[=].comment = "Combined indicates a facility offering multiple service modalities, closest to outpatient + inpatient."
 
-* group.element[+].code = #DIAGNOSTIC
-* group.element[=].display = "Diagnostic"
-* group.element[=].noMap = true
+* group.element[+].code = #5
+* group.element[=].display = "Diagnostic" // uz: Diagnostika, ru: Диагностика
+* group.element[=].target[+].code = #III_100
+* group.element[=].target[=].display = "There is an outpatient and inpatient department."
+* group.element[=].target[=].relationship = #related-to
 
-* group.element[+].code = #OTHER
-* group.element[=].display = "Other"
+* group.element[+].code = #6
+* group.element[=].display = "Other" // uz: Boshqa, ru: Другое
 * group.element[=].target[+].code = #III_600
-* group.element[=].target[=].display = "Boshqalar"
+* group.element[=].target[=].display = "Others"
 * group.element[=].target[=].relationship = #equivalent
