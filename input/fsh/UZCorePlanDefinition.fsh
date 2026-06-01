@@ -2,14 +2,12 @@ Profile: UZCorePlanDefinition
 Parent: PlanDefinition
 Id: uz-core-plan-definition
 Title: "UZ Core PlanDefinition"
-Description: "UZ Core profile for PlanDefinition resource used to define reusable clinical or operational care plans independent of a specific patient or context within the Uzbekistan digital health system."
-
+Description: "UZ Core profile for Stores and represents the National Immunization Schedule of Uzbekistan, including planned vaccines, recommended administration periods, target age groups, dose sequences, and related scheduling rules. This profile is used to define structured immunization activities that support consistent planning, implementation, and exchange of vaccination schedules within the national digital health ecosystem."
 * ^status = #draft
 * ^experimental = true
 
 * url 1..1 MS
 * url ^short = "Canonical identifier for this PlanDefinition"
-* url obeys canonical-url-no-version-fragment
 
 * identifier MS
 * version MS
@@ -94,11 +92,6 @@ Description: "UZ Core profile for PlanDefinition resource used to define reusabl
 )
 * action.definitionCanonical MS
 * action.definitionUri MS
-
-Invariant: canonical-url-no-version-fragment
-Description: "Canonical URL must not contain | or #."
-Severity: #warning
-Expression: "matches('^[^|#]+$')"
 
 Instance: example-uz-core-plan-definition
 InstanceOf: UZCorePlanDefinition
