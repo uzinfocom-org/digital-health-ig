@@ -51,7 +51,7 @@ Description: "UZCoreServiceRequest defines how laboratory orders are represented
 
 
 Instance: UZCoreServiceRequestLab-Example01
-InstanceOf: UZCoreServiceRequest
+InstanceOf: UZCoreServiceRequestLaboratory
 Title: "UZCore ServiceRequest (Lab) Example"
 Description: "Example laboratory ServiceRequest instance for UZCore."
 * status = #active

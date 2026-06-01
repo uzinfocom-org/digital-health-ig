@@ -162,7 +162,6 @@ Alias: $cvx = http://hl7.org/fhir/sid/cvx
 Alias: $cvx-vs = http://hl7.org/fhir/ValueSet/vaccine-code
 Alias: $immunization-recommendation-status = http://terminology.hl7.org/CodeSystem/immunization-recommendation-status
 Alias: $nationality-cs = https://terminology.dhp.uz/fhir/core/CodeSystem/nationality-cs
-
-Alias: $loinc-vs = http://hl7.org/fhir/ValueSet/observation-codes
+//Alias: $loinc-vs = http://hl7.org/fhir/ValueSet/observation-codes
 Alias: $ucum = http://unitsofmeasure.org
 Alias: $ucum-vs = http://hl7.org/fhir/ValueSet/ucum-units
