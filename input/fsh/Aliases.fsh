@@ -63,6 +63,7 @@ Alias: $location-status = http://hl7.org/fhir/location-status
 Alias: $location-unit = https://dhp.uz/fhir/core/NamingSystem/location-unit
 Alias: $loinc = http://loinc.org
 Alias: $loinc-vs = http://loinc.org/vs
+Alias: $medical-product-classification = http://www.whocc.no/atc
 Alias: $mfa = https://gov.uz/ru/mfa
 Alias: $militaryID = https://dhp.uz/fhir/core/sid/pid/uz/mi
 Alias: $mis-dmed-uz = https://mis.dmed.uz
@@ -163,3 +164,6 @@ Alias: $immunization-recommendation-status = http://terminology.hl7.org/CodeSyst
 Alias: $nationality-cs = https://terminology.dhp.uz/fhir/core/CodeSystem/nationality-cs
 Alias: $ucum = http://unitsofmeasure.org
 Alias: $ucum-vs = http://hl7.org/fhir/ValueSet/ucum-units
+
+Alias: $adverse-event-actuality = http://hl7.org/fhir/adverse-event-actuality
+Alias: $adverse-event-seriousness = http://terminology.hl7.org/CodeSystem/adverse-event-seriousness
