@@ -6,11 +6,11 @@ Description: "AdverseEvent seriousness supplement with translations in Uzbek and
 
 * #non-serious
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Серьёзное"
-  * ^designation[+].language = #uz
-  * ^designation[=].value = "Jiddiy"
-* #serious
-  * ^designation[0].language = #ru
   * ^designation[=].value = "Несерьёзное"
   * ^designation[+].language = #uz
   * ^designation[=].value = "Jiddiy emas"
+* #serious
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Серьёзное"
+  * ^designation[+].language = #uz
+  * ^designation[=].value = "Jiddiy"
