@@ -1,6 +1,6 @@
-Profile: UZCoreServiceRequest
+Profile: UZCoreServiceRequestLaboratory
 Parent: ServiceRequest
-Id: uz-core-service-request
+Id: uz-core-service-request-laboratory
 Title: "UZ Core Service Request Laboratory"
 Description: "UZCoreServiceRequest defines how laboratory orders are represented in the Uzbekistan Digital Health Platform (DHP) using the HL7 FHIR ServiceRequest resource, in accordance with the UZCore Implementation Guide."
 * ^experimental = true
