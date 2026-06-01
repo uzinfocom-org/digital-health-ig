@@ -8,53 +8,53 @@ Description: "Uzbekistan Core AdverseEvent profile, used to represent an adverse
 * ^date = "2025-08-01"
 * ^publisher = "Uzinfocom"
 
-* identifier 0..* MS
-* status 1..1 MS
+* identifier MS
+* status MS
 * status from AdverseEventStatusVS (required)
-* actuality 1..1 MS
+* actuality MS
 * actuality from AdverseEventActualityVS (required)
 
-* subject 1..1 MS
+* subject MS
 * subject only Reference(UZCorePatient or Group or Practitioner or RelatedPerson or ResearchSubject)
 
-* encounter 0..1 MS
+* encounter MS
 * encounter only Reference(UZCoreEncounter)
 
-* occurrence[x] 0..1 MS
+* occurrence[x] MS
 * occurrence[x] only dateTime or Period or Timing
 
-* detected 0..1 MS
-* recordedDate 0..1 MS
+* detected MS
+* recordedDate MS
 
-* resultingEffect 0..* MS
+* resultingEffect MS
 * resultingEffect only Reference(Condition or Observation)
 
-* location 0..1 MS
+* location MS
 * location only Reference(UZCoreLocation)
 
-* seriousness 0..1 MS
+* seriousness MS
 * seriousness from AdverseEventSeriousnessVS (example)
 
-* outcome 0..* MS
+* outcome MS
 * outcome from AdverseEventOutcomeVS (example)
 
-* recorder 0..1 MS
+* recorder MS
 * recorder only Reference(UZCorePatient or Practitioner or PractitionerRole or RelatedPerson or ResearchSubject)
 
-* participant 0..* MS
+* participant MS
 
-* participant.function 0..1 MS
+* participant.function MS
 * participant.function from http://hl7.org/fhir/ValueSet/adverse-event-participant-function (example)
 
-* participant.actor 1..1 MS
+* participant.actor MS
 * participant.actor only Reference(UZCorePatient or Practitioner or PractitionerRole or RelatedPerson or ResearchSubject)
 
 
-* suspectEntity 0..* MS
-* suspectEntity.instance[x] 1..1 MS
+* suspectEntity MS
+* suspectEntity.instance[x] MS
 * suspectEntity.instance[x] only Reference(Immunization or Procedure or Substance or Medication or MedicationAdministration or MedicationStatement or Device or BiologicallyDerivedProduct or ResearchStudy)
 
-* note 0..* MS
+* note MS
 
 
 
