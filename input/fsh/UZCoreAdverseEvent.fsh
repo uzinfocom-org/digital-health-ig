@@ -15,7 +15,7 @@ Description: "Uzbekistan Core AdverseEvent profile, used to represent an adverse
 * actuality from AdverseEventActualityVS (required)
 
 * subject MS
-* subject only Reference(UZCorePatient or Group or Practitioner or RelatedPerson or ResearchSubject)
+* subject only Reference(UZCorePatient or Group or UZCorePractitioner or UZCoreRelatedPerson or ResearchSubject)
 
 * encounter MS
 * encounter only Reference(UZCoreEncounter)
@@ -27,7 +27,7 @@ Description: "Uzbekistan Core AdverseEvent profile, used to represent an adverse
 * recordedDate MS
 
 * resultingEffect MS
-* resultingEffect only Reference(Condition or Observation)
+* resultingEffect only Reference(UZCoreCondition or UZCoreObservation)
 
 * location MS
 * location only Reference(UZCoreLocation)
@@ -39,7 +39,7 @@ Description: "Uzbekistan Core AdverseEvent profile, used to represent an adverse
 * outcome from AdverseEventOutcomeVS (example)
 
 * recorder MS
-* recorder only Reference(UZCorePatient or Practitioner or PractitionerRole or RelatedPerson or ResearchSubject)
+* recorder only Reference(UZCorePatient or UZCorePractitioner or UZCorePractitionerRole or UZCoreRelatedPerson or ResearchSubject)
 
 * participant MS
 
@@ -47,12 +47,12 @@ Description: "Uzbekistan Core AdverseEvent profile, used to represent an adverse
 * participant.function from http://hl7.org/fhir/ValueSet/adverse-event-participant-function (example)
 
 * participant.actor MS
-* participant.actor only Reference(UZCorePatient or Practitioner or PractitionerRole or RelatedPerson or ResearchSubject)
+* participant.actor only Reference(UZCorePatient or UZCorePractitioner or UZCorePractitionerRole or UZCoreRelatedPerson or ResearchSubject)
 
 
 * suspectEntity MS
 * suspectEntity.instance[x] MS
-* suspectEntity.instance[x] only Reference(Immunization or Procedure or Substance or Medication or MedicationAdministration or MedicationStatement or Device or BiologicallyDerivedProduct or ResearchStudy)
+* suspectEntity.instance[x] only Reference(UZCoreImmunization or UZCoreProcedure or Substance or Medication or MedicationAdministration or MedicationStatement or Device or BiologicallyDerivedProduct or ResearchStudy)
 
 * note MS
 
