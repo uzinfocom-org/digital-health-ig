@@ -13,7 +13,7 @@ Description: "Uzbekistan Core Immunization profile, used to represent immunizati
 * identifier ^short = "Business identifier"
 
 * basedOn 0..* MS
-* basedOn only Reference(CarePlan or MedicationRequest or ServiceRequest or ImmunizationRecommendation)
+* basedOn only Reference(CarePlan or MedicationRequest or ServiceRequest or UZCoreImmunizationRecommendation)
 * basedOn ^short = "The legal basis for the event"
 
 * status 1..1 MS
@@ -67,7 +67,7 @@ Description: "Uzbekistan Core Immunization profile, used to represent immunizati
 * primarySource ^short = "Primary source"
 
 * informationSource 0..1 MS
-* informationSource only CodeableReference(UZCorePatient or UZCorePractitioner or UZCorePractitionerRole or RelatedPerson or UZCoreOrganization)
+* informationSource only CodeableReference(UZCorePatient or UZCorePractitioner or UZCorePractitionerRole or UZCoreRelatedPerson or UZCoreOrganization)
 * informationSource from ImmunizationOriginVS (extensible)
 * informationSource ^short = "Data source"
 
@@ -93,7 +93,7 @@ Description: "Uzbekistan Core Immunization profile, used to represent immunizati
 * performer.function ^short = "Role"
 
 * performer.actor 1..1 MS
-* performer.actor only Reference(UZCorePractitioner or UZCorePractitionerRole or UZCoreOrganization or UZCorePatient or RelatedPerson)
+* performer.actor only Reference(UZCorePractitioner or UZCorePractitionerRole or UZCoreOrganization or UZCorePatient or UZCoreRelatedPerson)
 * performer.actor ^short = "Who completed"
 
 * note 0..* MS

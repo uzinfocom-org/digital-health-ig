@@ -20,6 +20,26 @@ Usage: #definition
 * uniqueId[=].preferred = true
 * uniqueId[=].comment = "This is the canonical URI for the Uzbekistan HRM Argos system"
 
+Instance: uzb-smif
+InstanceOf: NamingSystem
+Description: "Organization identifiers assigned by the State Medical Insurance Fund (SMIF) of Uzbekistan"
+Usage: #definition
+* url = "https://terminology.dhp.uz/fhir/core/NamingSystem/uzb-smif"
+* name = "UzbekistanSmifSystem"
+* status = #active
+* kind = #identifier
+* publisher = "Uzinfocom"
+* responsible = "State Medical Insurance Fund of the Republic of Uzbekistan"
+* date = "2026-04-12"
+* type = $identifier-type#NIIP "National Insurance Payor Identifier (Payor)"
+* description = "Naming system for organization identifiers assigned by the State Medical Insurance Fund (SMIF) of the Republic of Uzbekistan to healthcare organizations that have entered into contracts with the Fund."
+* jurisdiction = urn:iso:std:iso:3166#UZ "Uzbekistan"
+* usage = "Used for identifying healthcare organizations that have contracts with the State Medical Insurance Fund of Uzbekistan."
+* uniqueId[0].type = #uri
+* uniqueId[=].value = $organization-smif-id-system
+* uniqueId[=].preferred = true
+* uniqueId[=].comment = "This is the canonical URI for the Uzbekistan SMIF organization identifier system"
+
 Instance: uzb-hrm-argos-practitioner
 InstanceOf: NamingSystem
 Description: "Healthcare professional identifiers assigned by the Uzbekistan Human Resource Management (HRM) system"
