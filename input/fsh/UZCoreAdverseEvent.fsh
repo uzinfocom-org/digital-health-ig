@@ -59,11 +59,12 @@ Description: "Uzbekistan Core AdverseEvent profile, used to represent an adverse
 
 
 
-// The first instance for Adverse Event Profile
+// First example: a near-miss (potential) adverse event intercepted before any harm reached the patient
 Instance: adverse-event-example-01
 InstanceOf: UZCoreAdverseEvent
-Title: "Example Adverse Event"
-Description: "Example instance of an adverse event with minimal and optional elements filled"
+Title: "Example Adverse Event - Averted Medication Error"
+Description: "A potential adverse event (near miss): a contraindicated prednisone order was intercepted before administration, so no dose reached the patient and no harm occurred"
+Usage: #example
 
 * status = $event-status#in-progress "In Progress"
 * actuality = $adverse-event-actuality#potential "Potential Adverse Event"
@@ -71,16 +72,12 @@ Description: "Example instance of an adverse event with minimal and optional ele
 * encounter = Reference(example-encounter)
 
 * occurrenceDateTime = "2026-04-30T10:30:00+05:00"
-* detected = "2026-04-30T11:00:00+05:00"
+* detected = "2026-04-30T10:35:00+05:00"
 * recordedDate = "2026-04-30T11:15:00+05:00"
-
-* resultingEffect[0] = Reference(example-headache)
-* resultingEffect[1] = Reference(head-circumference-example)
 
 * location = Reference(example-location-1)
 
 * seriousness = $adverse-event-seriousness#serious "Serious"
-* outcome[0] = $sct#405532008 "Adverse incident resulting in potentially permanent disabling damage"
 
 * recorder = Reference(example-practitioner)
 
@@ -89,16 +86,17 @@ Description: "Example instance of an adverse event with minimal and optional ele
 
 * suspectEntity[0].instanceReference = Reference(medication-02)
 
-* note[0].text = "Patient developed mild rash after medication administration. No long-term effects observed."
+* note[0].text = "Prednisone was ordered despite a documented contraindication. The order was flagged by clinical decision support and intercepted by the pharmacist before administration, so no dose reached the patient. Investigation in progress."
 
 
 
 
-// The second instance for Adverse Event Profile
+// Second example: a serious actual adverse event resulting in death
 Instance: adverse-event-example-02
 InstanceOf: UZCoreAdverseEvent
-Title: "Example Adverse Event"
-Description: "Example instance of an adverse event with minimal and optional elements filled"
+Title: "Example Adverse Event - Fatal Anaphylaxis"
+Description: "A serious actual adverse event: the patient developed anaphylaxis following amoxicillin administration and died despite resuscitation"
+Usage: #example
 
 * status = $event-status#completed "Completed"
 * actuality = $adverse-event-actuality#actual "Adverse Event"
@@ -106,14 +104,14 @@ Description: "Example instance of an adverse event with minimal and optional ele
 * encounter = Reference(example-encounter)
 
 * occurrenceDateTime = "2026-04-30T10:30:00+05:00"
-* detected = "2026-04-30T11:00:00+05:00"
+* detected = "2026-04-30T10:45:00+05:00"
 * recordedDate = "2026-04-30T11:15:00+05:00"
 
-* resultingEffect[0] = Reference(head-circumference-example)
+* resultingEffect[0] = Reference(example-anaphylaxis)
 
 * location = Reference(example-location)
 
-* seriousness = $adverse-event-seriousness#non-serious "Non-serious"
+* seriousness = $adverse-event-seriousness#serious "Serious"
 * outcome[0] = $sct#405535005 "Adverse incident resulting in death"
 
 * recorder = Reference(example-practitioner)
@@ -123,7 +121,7 @@ Description: "Example instance of an adverse event with minimal and optional ele
 
 * suspectEntity[0].instanceReference = Reference(medication-03)
 
-* note[0].text = "Patient developed severe reaction after medication administration resulting in death."
+* note[0].text = "Patient developed anaphylaxis shortly after amoxicillin administration and died despite resuscitation efforts."
 
 
 
@@ -147,3 +145,20 @@ Usage: #example
 
 * code = $sct#27658006 "Amoxicillin-containing product"
 * status = #active
+
+
+// Resulting effect Condition referenced by adverse-event-example-02
+Instance: example-anaphylaxis
+InstanceOf: UZCoreCondition
+Title: "Example UZ Core Condition - Anaphylaxis"
+Description: "Anaphylactic reaction following amoxicillin administration, recorded as the resulting effect of an adverse event"
+Usage: #example
+
+* language = #en
+* clinicalStatus = $condition-clinical#active "Active"
+* verificationStatus = $condition-ver-status#confirmed "Confirmed"
+* severity = $sct#24484000 "Severe"
+* code = $sct#39579001 "Anaphylaxis"
+* subject = Reference(example-david)
+* onsetDateTime = "2026-04-30T10:40:00+05:00"
+* recordedDate = "2026-04-30T11:00:00+05:00"
