@@ -164,6 +164,5 @@ Alias: $nationality-cs = https://terminology.dhp.uz/fhir/core/CodeSystem/nationa
 Alias: $ucum = http://unitsofmeasure.org
 Alias: $ucum-vs = http://hl7.org/fhir/ValueSet/ucum-units
 
-Alias: $event-status = http://hl7.org/fhir/event-status
 Alias: $adverse-event-actuality = http://hl7.org/fhir/adverse-event-actuality
 Alias: $adverse-event-seriousness = http://terminology.hl7.org/CodeSystem/adverse-event-seriousness
