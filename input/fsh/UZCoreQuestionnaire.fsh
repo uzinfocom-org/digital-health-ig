@@ -1,4 +1,3 @@
-/*
 Profile: UZCoreQuestionnaire
 Parent: Questionnaire
 Id: uz-core-questionnaire
@@ -70,4 +69,3 @@ Description: "Uzbekistan Core Questionnaire profile for multilingual structured 
 
   // Nested items
   * item MS
-*/
