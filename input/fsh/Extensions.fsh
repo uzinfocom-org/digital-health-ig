@@ -53,3 +53,19 @@ Context: Patient
 * ^experimental = true
 * value[x] 1..
 * value[x] only date
+
+
+Extension: PatientNationality
+Id: patient-nationality
+Title: "Patient nationality"
+Description: "The nationality of the patient."
+Context: Patient
+* ^url = "https://dhp.uz/fhir/core/StructureDefinition/patient-nationality"
+* ^experimental = true
+
+* extension contains
+    code 1..1 MS
+
+* extension[code].value[x] 1..1 MS
+* extension[code].value[x] only CodeableConcept
+* extension[code].valueCodeableConcept from NationalityVS (required)
