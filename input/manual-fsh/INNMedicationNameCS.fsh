@@ -74733,7 +74733,7 @@ Description: "INN terminology for standardized identification of medicinal"
   * ^designation[+].language = #la
   * ^designation[=].value = "riamilovirum"
 
-* #09343 "elsulfavirin"
+* #009343 "elsulfavirin"
   * ^designation[0].language = #ru
   * ^designation[=].value = "элсульфавирин"
   * ^designation[+].language = #en
