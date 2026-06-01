@@ -133,7 +133,7 @@ Title: "Example Medication"
 Description: "Example medication suspected as the cause of the adverse event"
 Usage: #example
 
-* code = $sct#373994007 "Prednisone 5 mg oral tablet"
+* code = $medical-product-classification#H02AB07 "prednisone"
 * status = #active
 
 
@@ -143,7 +143,7 @@ Title: "Amoxicillin 500 mg capsule"
 Description: "Example medication suspected as the cause of the adverse event"
 Usage: #example
 
-* code = $sct#27658006 "Amoxicillin-containing product"
+* code = $medical-product-classification#J01CA04 "amoxicillin"
 * status = #active
 
 
