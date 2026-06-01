@@ -18,7 +18,7 @@ Description: "UZ Core profile for Stores and represents the National Immunizatio
 * name ^short = "Machine-processable name for this PlanDefinition"
 
 * title MS
-* status 1..1 MS
+* status MS
 * status from PublicationStatusVS (required)
 
 * subject[x] MS
