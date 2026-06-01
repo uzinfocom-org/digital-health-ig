@@ -15,7 +15,7 @@ Description: "Uzbekistan Core Observation profile, used to represent clinical an
 * triggeredBy.type from TriggeredByTypeVS (required)
 * triggeredBy.reason MS
 * partOf MS
-* partOf only Reference(MedicationAdministration or MedicationDispense or Procedure or Immunization or ImagingStudy)
+* partOf only Reference(MedicationAdministration or MedicationDispense or UZCoreProcedure or UZCoreImmunization or ImagingStudy)
 * status MS
 * status from ObservationStatusVS (required)
 * category MS
@@ -23,7 +23,7 @@ Description: "Uzbekistan Core Observation profile, used to represent clinical an
 * code MS
 * code from ObservationCodesVS (preferred)
 * subject MS
-* subject only Reference(UZCorePatient or UZCoreLocation or UZCoreOrganization or Procedure or UZCorePractitioner or Medication)
+* subject only Reference(UZCorePatient or UZCoreLocation or UZCoreOrganization or UZCoreProcedure or UZCorePractitioner or Medication)
 * focus MS
 * encounter MS
 * encounter only Reference(UZCoreEncounter)
@@ -39,7 +39,7 @@ Description: "Uzbekistan Core Observation profile, used to represent clinical an
 * bodySite from $bodysite
 * method from LabMethodsVS
 * specimen MS
-* specimen only Reference(Specimen)
+* specimen only Reference(UZCoreSpecimen)
 * device MS
 * device only Reference(Device or DeviceMetric)
 * referenceRange MS
@@ -51,9 +51,9 @@ Description: "Uzbekistan Core Observation profile, used to represent clinical an
 * referenceRange.age MS
 * referenceRange.text MS
 * hasMember MS
-* hasMember only Reference(UZCoreObservation or QuestionnaireResponse)
+* hasMember only Reference(UZCoreObservation or UZCoreQuestionnaireResponse)
 * derivedFrom MS
-* derivedFrom only Reference(DocumentReference or ImagingStudy or QuestionnaireResponse or UZCoreObservation)
+* derivedFrom only Reference(DocumentReference or ImagingStudy or UZCoreQuestionnaireResponse or UZCoreObservation)
 * component MS
 * component.code MS
 * component.code from ObservationCodesVS (preferred)
