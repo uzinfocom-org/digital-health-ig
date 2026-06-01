@@ -87,10 +87,6 @@ Usage: #example
 Title: "Example ActivityDefinition — Childhood Vaccination"
 Description: "Routine childhood vaccination activity definition for Uzbekistan Digital Health Platform."
 
-* url = "https://dhp.uz/fhir/core/ActivityDefinition/example-activity-definition"
-* identifier[0].system = $mis-dmed-uz
-* identifier[0].value = "actdef-vac-0001"
-
 * version = "1.0.0"
 * name = "ChildhoodVaccinationActivity"
 * title = "Childhood Vaccination Activity"
