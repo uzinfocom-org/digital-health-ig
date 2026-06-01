@@ -1,0 +1,897 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "draft",
+  "content": "complete",
+  "name": "SSVAdministrativeTerritoryCS",
+  "id": "ssv-administrative-territory-cs",
+  "title": "SSV Administrative Territory",
+  "description": "State Committee on Statistics (SSV) administrative territory codes for Uzbekistan",
+  "url": "https://terminology.dhp.uz/fhir/core/CodeSystem/ssv-administrative-territory-cs",
+  "concept": [
+    {
+      "code": "UZ-AN",
+      "display": "Andijon viloyati"
+    },
+    {
+      "code": "UZ-BU",
+      "display": "Buxoro viloyati"
+    },
+    {
+      "code": "UZ-FA",
+      "display": "Farg'ona viloyati"
+    },
+    {
+      "code": "UZ-JI",
+      "display": "Jizzax viloyati"
+    },
+    {
+      "code": "UZ-NG",
+      "display": "Namangan viloyati"
+    },
+    {
+      "code": "UZ-NW",
+      "display": "Navoiy viloyati"
+    },
+    {
+      "code": "UZ-QA",
+      "display": "Qashqadaryo viloyati"
+    },
+    {
+      "code": "UZ-QR",
+      "display": "Qoraqalpog'iston Respublikasi"
+    },
+    {
+      "code": "UZ-SA",
+      "display": "Samarqand viloyati"
+    },
+    {
+      "code": "UZ-SI",
+      "display": "Sirdaryo viloyati"
+    },
+    {
+      "code": "UZ-SU",
+      "display": "Surxandaryo viloyati"
+    },
+    {
+      "code": "UZ-TK",
+      "display": "Toshkent shahri"
+    },
+    {
+      "code": "UZ-TO",
+      "display": "Toshkent viloyati"
+    },
+    {
+      "code": "UZ-XO",
+      "display": "Xorazm viloyati"
+    },
+    {
+      "code": "AN-202",
+      "display": "Oltinko‘l tumani"
+    },
+    {
+      "code": "AN-203",
+      "display": "Andijon tumani"
+    },
+    {
+      "code": "AN-206",
+      "display": "Baliqchi tumani"
+    },
+    {
+      "code": "AN-209",
+      "display": "Bo‘ston tumani"
+    },
+    {
+      "code": "AN-210",
+      "display": "Buloqboshi tumani"
+    },
+    {
+      "code": "AN-211",
+      "display": "Jalaquduq tumani"
+    },
+    {
+      "code": "AN-214",
+      "display": "Izboskan tumani"
+    },
+    {
+      "code": "AN-217",
+      "display": "Ulug‘nor tumani"
+    },
+    {
+      "code": "AN-220",
+      "display": "Qo‘rg‘ontepa tumani"
+    },
+    {
+      "code": "AN-224",
+      "display": "Asaka tumani"
+    },
+    {
+      "code": "AN-227",
+      "display": "Marxamat tumani"
+    },
+    {
+      "code": "AN-230",
+      "display": "Shaxrixon tumani"
+    },
+    {
+      "code": "AN-232",
+      "display": "Paxtaobod tumani"
+    },
+    {
+      "code": "AN-236",
+      "display": "Xo‘jaobod tumani"
+    },
+    {
+      "code": "AN-401",
+      "display": "Andijon shahri"
+    },
+    {
+      "code": "AN-408",
+      "display": "Xonobod shahri"
+    },
+    {
+      "code": "BU-204",
+      "display": "Olot tumani"
+    },
+    {
+      "code": "BU-207",
+      "display": "Buxoro tumani"
+    },
+    {
+      "code": "BU-212",
+      "display": "Vobkent tumani"
+    },
+    {
+      "code": "BU-215",
+      "display": "G‘ijduvon tumani"
+    },
+    {
+      "code": "BU-219",
+      "display": "Kogon tumani"
+    },
+    {
+      "code": "BU-230",
+      "display": "Qorako‘l tumani"
+    },
+    {
+      "code": "BU-232",
+      "display": "Qorovulbozor tumani"
+    },
+    {
+      "code": "BU-240",
+      "display": "Peshku tumani"
+    },
+    {
+      "code": "BU-242",
+      "display": "Romitan tumani"
+    },
+    {
+      "code": "BU-246",
+      "display": "Jondor tumani"
+    },
+    {
+      "code": "BU-258",
+      "display": "Shofirkon tumani"
+    },
+    {
+      "code": "BU-401",
+      "display": "Buxoro shahri"
+    },
+    {
+      "code": "BU-403",
+      "display": "Kogon shahri"
+    },
+    {
+      "code": "FA-203",
+      "display": "Oltiariq tumani"
+    },
+    {
+      "code": "FA-206",
+      "display": "Qo‘shtepa tumani"
+    },
+    {
+      "code": "FA-209",
+      "display": "Bog‘dod tumani"
+    },
+    {
+      "code": "FA-212",
+      "display": "Buvayda tumani"
+    },
+    {
+      "code": "FA-215",
+      "display": "Beshariq tumani"
+    },
+    {
+      "code": "FA-218",
+      "display": "Quva tumani"
+    },
+    {
+      "code": "FA-221",
+      "display": "Uchko‘prik tumani"
+    },
+    {
+      "code": "FA-224",
+      "display": "Rishton tumani"
+    },
+    {
+      "code": "FA-226",
+      "display": "So‘x tumani"
+    },
+    {
+      "code": "FA-227",
+      "display": "Toshloq tumani"
+    },
+    {
+      "code": "FA-230",
+      "display": "O‘zbekiston tumani"
+    },
+    {
+      "code": "FA-233",
+      "display": "Farg‘ona tumani"
+    },
+    {
+      "code": "FA-236",
+      "display": "Dang‘ara tumani"
+    },
+    {
+      "code": "FA-238",
+      "display": "Furqat tumani"
+    },
+    {
+      "code": "FA-242",
+      "display": "Yozyovon tumani"
+    },
+    {
+      "code": "FA-401",
+      "display": "Farg‘ona shahri"
+    },
+    {
+      "code": "FA-405",
+      "display": "Qo‘qon shahri"
+    },
+    {
+      "code": "FA-408",
+      "display": "Quvasoy shahri"
+    },
+    {
+      "code": "FA-412",
+      "display": "Marg‘ilon shahri"
+    },
+    {
+      "code": "JI-201",
+      "display": "Arnasoy tumani"
+    },
+    {
+      "code": "JI-204",
+      "display": "Baxmal tumani"
+    },
+    {
+      "code": "JI-209",
+      "display": "G‘allaorol tumani"
+    },
+    {
+      "code": "JI-212",
+      "display": "Sharof Rashidov tumani"
+    },
+    {
+      "code": "JI-215",
+      "display": "Do‘stlik tumani"
+    },
+    {
+      "code": "JI-218",
+      "display": "Zomin tumani"
+    },
+    {
+      "code": "JI-220",
+      "display": "Zarbdor tumani"
+    },
+    {
+      "code": "JI-223",
+      "display": "Mirzacho‘l tumani"
+    },
+    {
+      "code": "JI-225",
+      "display": "Zafarobod tumani"
+    },
+    {
+      "code": "JI-228",
+      "display": "Paxtakor tumani"
+    },
+    {
+      "code": "JI-235",
+      "display": "Forish tumani"
+    },
+    {
+      "code": "JI-237",
+      "display": "Yangiobod tumani"
+    },
+    {
+      "code": "JI-401",
+      "display": "Jizzax shahri"
+    },
+    {
+      "code": "NG-204",
+      "display": "Mingbuloq tumani"
+    },
+    {
+      "code": "NG-207",
+      "display": "Kosonsoy tumani"
+    },
+    {
+      "code": "NG-212",
+      "display": "Namangan tumani"
+    },
+    {
+      "code": "NG-216",
+      "display": "Norin tumani"
+    },
+    {
+      "code": "NG-219",
+      "display": "Pop tumani"
+    },
+    {
+      "code": "NG-224",
+      "display": "To‘raqo‘rg‘on tumani"
+    },
+    {
+      "code": "NG-229",
+      "display": "Uychi tumani"
+    },
+    {
+      "code": "NG-234",
+      "display": "Uchqo‘rg‘on tumani"
+    },
+    {
+      "code": "NG-236",
+      "display": "Chortoq tumani"
+    },
+    {
+      "code": "NG-237",
+      "display": "Chust tumani"
+    },
+    {
+      "code": "NG-242",
+      "display": "Yangiqo‘rg‘on tumani"
+    },
+    {
+      "code": "NG-401",
+      "display": "Namangan shahri"
+    },
+    {
+      "code": "NW-211",
+      "display": "Konimex tumani"
+    },
+    {
+      "code": "NW-216",
+      "display": "Qiziltepa tumani"
+    },
+    {
+      "code": "NW-230",
+      "display": "Navbahor tumani"
+    },
+    {
+      "code": "NW-234",
+      "display": "Karmana tumani"
+    },
+    {
+      "code": "NW-238",
+      "display": "Nurota tumani"
+    },
+    {
+      "code": "NW-244",
+      "display": "Tomdi tumani"
+    },
+    {
+      "code": "NW-248",
+      "display": "Uchquduq tumani"
+    },
+    {
+      "code": "NW-251",
+      "display": "Xatirchi tumani"
+    },
+    {
+      "code": "NW-401",
+      "display": "Navoiy shahri"
+    },
+    {
+      "code": "NW-408",
+      "display": "Zarafshon shahri"
+    },
+    {
+      "code": "NW-412",
+      "display": "G‘ozg‘on shahar"
+    },
+    {
+      "code": "QA-207",
+      "display": "G‘uzor tumani"
+    },
+    {
+      "code": "QA-212",
+      "display": "Dexqonobod tumani"
+    },
+    {
+      "code": "QA-220",
+      "display": "Qamashi tumani"
+    },
+    {
+      "code": "QA-224",
+      "display": "Qarshi tumani"
+    },
+    {
+      "code": "QA-229",
+      "display": "Koson tumani"
+    },
+    {
+      "code": "QA-232",
+      "display": "Kitob tumani"
+    },
+    {
+      "code": "QA-233",
+      "display": "Mirishkor tumani"
+    },
+    {
+      "code": "QA-234",
+      "display": "Muborak tumani"
+    },
+    {
+      "code": "QA-235",
+      "display": "Nishon tumani"
+    },
+    {
+      "code": "QA-237",
+      "display": "Kasbi tumani"
+    },
+    {
+      "code": "QA-242",
+      "display": "Chiroqchi tumani"
+    },
+    {
+      "code": "QA-245",
+      "display": "Shaxrisabz tumani"
+    },
+    {
+      "code": "QA-250",
+      "display": "Yakkabog‘ tumani"
+    },
+    {
+      "code": "QA-401",
+      "display": "Qarshi shahri"
+    },
+    {
+      "code": "QA-405",
+      "display": "Shaxrisabz shahri"
+    },
+    {
+      "code": "QA-240",
+      "display": "Ko'kdala tumani"
+    },
+    {
+      "code": "QR-204",
+      "display": "Amudaryo tumani"
+    },
+    {
+      "code": "QR-207",
+      "display": "Beruniy tumani"
+    },
+    {
+      "code": "QR-209",
+      "display": "Bozatov tumani"
+    },
+    {
+      "code": "QR-211",
+      "display": "Qorao‘zak tumani"
+    },
+    {
+      "code": "QR-212",
+      "display": "Kegayli tumani"
+    },
+    {
+      "code": "QR-215",
+      "display": "Qo‘ng‘irot tumani"
+    },
+    {
+      "code": "QR-218",
+      "display": "Qonliko‘l tumani"
+    },
+    {
+      "code": "QR-222",
+      "display": "Mo‘ynoq tumani"
+    },
+    {
+      "code": "QR-225",
+      "display": "Nukus tumani"
+    },
+    {
+      "code": "QR-228",
+      "display": "Taxhiatosh tumani"
+    },
+    {
+      "code": "QR-230",
+      "display": "Taxtako‘prik tumani"
+    },
+    {
+      "code": "QR-233",
+      "display": "To‘rtko‘l tumani"
+    },
+    {
+      "code": "QR-236",
+      "display": "Xo‘jayli tumani"
+    },
+    {
+      "code": "QR-240",
+      "display": "Chimboy tumani"
+    },
+    {
+      "code": "QR-243",
+      "display": "Shumanay tumani"
+    },
+    {
+      "code": "QR-250",
+      "display": "Ellikqal’a tumani"
+    },
+    {
+      "code": "QR-401",
+      "display": "Nukus shahri"
+    },
+    {
+      "code": "SA-203",
+      "display": "Oqdaryo tumani"
+    },
+    {
+      "code": "SA-206",
+      "display": "Bulung‘ur tumani"
+    },
+    {
+      "code": "SA-209",
+      "display": "Jomboy tumani"
+    },
+    {
+      "code": "SA-212",
+      "display": "Ishtixon tumani"
+    },
+    {
+      "code": "SA-215",
+      "display": "Kattaqo‘rg‘on tumani"
+    },
+    {
+      "code": "SA-216",
+      "display": "Qo‘shrabod tumani"
+    },
+    {
+      "code": "SA-218",
+      "display": "Narpay tumani"
+    },
+    {
+      "code": "SA-224",
+      "display": "Payariq tumani"
+    },
+    {
+      "code": "SA-227",
+      "display": "Pastdarg‘om tumani"
+    },
+    {
+      "code": "SA-230",
+      "display": "Paxtachi tumani"
+    },
+    {
+      "code": "SA-233",
+      "display": "Samarqand tumani"
+    },
+    {
+      "code": "SA-235",
+      "display": "Nurobod tumani"
+    },
+    {
+      "code": "SA-236",
+      "display": "Urgut tumani"
+    },
+    {
+      "code": "SA-238",
+      "display": "Toyloq tumani"
+    },
+    {
+      "code": "SA-401",
+      "display": "Samarqand shahri"
+    },
+    {
+      "code": "SA-406",
+      "display": "Kattaqo‘rg‘on shahri"
+    },
+    {
+      "code": "SI-206",
+      "display": "Oqoltin tumani"
+    },
+    {
+      "code": "SI-212",
+      "display": "Boyovut tumani"
+    },
+    {
+      "code": "SI-216",
+      "display": "Sayxunobod tumani"
+    },
+    {
+      "code": "SI-220",
+      "display": "Guliston tumani"
+    },
+    {
+      "code": "SI-226",
+      "display": "Sardoba tumani"
+    },
+    {
+      "code": "SI-228",
+      "display": "Mirzaobod tumani"
+    },
+    {
+      "code": "SI-231",
+      "display": "Sirdaryo tumani"
+    },
+    {
+      "code": "SI-235",
+      "display": "Xovos tumani"
+    },
+    {
+      "code": "SI-401",
+      "display": "Guliston shahri"
+    },
+    {
+      "code": "SI-410",
+      "display": "Shirin shahri"
+    },
+    {
+      "code": "SI-413",
+      "display": "Yangiyer shahri"
+    },
+    {
+      "code": "SU-201",
+      "display": "Oltinsoy tumani"
+    },
+    {
+      "code": "SU-202",
+      "display": "Angor tumani"
+    },
+    {
+      "code": "SU-203",
+      "display": "Bandixon tumani"
+    },
+    {
+      "code": "SU-204",
+      "display": "Boysun tumani"
+    },
+    {
+      "code": "SU-207",
+      "display": "Muzrobod tumani"
+    },
+    {
+      "code": "SU-210",
+      "display": "Denov tumani"
+    },
+    {
+      "code": "SU-212",
+      "display": "Jarqo‘rg‘on tumani"
+    },
+    {
+      "code": "SU-214",
+      "display": "Qumqo‘rg‘on tumani"
+    },
+    {
+      "code": "SU-215",
+      "display": "Qiziriq tumani"
+    },
+    {
+      "code": "SU-217",
+      "display": "Sariosiyo tumani"
+    },
+    {
+      "code": "SU-220",
+      "display": "Termiz tumani"
+    },
+    {
+      "code": "SU-221",
+      "display": "Uzun tumani"
+    },
+    {
+      "code": "SU-223",
+      "display": "Sherobod tumani"
+    },
+    {
+      "code": "SU-226",
+      "display": "Sho‘rchi tumani"
+    },
+    {
+      "code": "SU-401",
+      "display": "Termiz shahri"
+    },
+    {
+      "code": "TK-262",
+      "display": "Uchtepa tumani"
+    },
+    {
+      "code": "TK-264",
+      "display": "Bektemir tumani"
+    },
+    {
+      "code": "TK-266",
+      "display": "Yunusobod tumani"
+    },
+    {
+      "code": "TK-269",
+      "display": "Mirzo Ulug‘bek tumani"
+    },
+    {
+      "code": "TK-273",
+      "display": "Mirobod tumani"
+    },
+    {
+      "code": "TK-277",
+      "display": "Shayxontoxur tumani"
+    },
+    {
+      "code": "TK-280",
+      "display": "Olmazor tumani"
+    },
+    {
+      "code": "TK-283",
+      "display": "Sergeli tumani"
+    },
+    {
+      "code": "TK-287",
+      "display": "Yakkasaroy tumani"
+    },
+    {
+      "code": "TK-290",
+      "display": "Yashnobod tumani"
+    },
+    {
+      "code": "TK-292",
+      "display": "Yangihayot tumani"
+    },
+    {
+      "code": "TK-294",
+      "display": "Chilonzor tumani"
+    },
+    {
+      "code": "TO-206",
+      "display": "Oqqo‘rg‘on tumani"
+    },
+    {
+      "code": "TO-212",
+      "display": "Ohangaron tumani"
+    },
+    {
+      "code": "TO-220",
+      "display": "Bekobod tumani"
+    },
+    {
+      "code": "TO-224",
+      "display": "Bo‘stonliq tumani"
+    },
+    {
+      "code": "TO-228",
+      "display": "Bo‘ka tumani"
+    },
+    {
+      "code": "TO-233",
+      "display": "Quyi Chirchiq tumani"
+    },
+    {
+      "code": "TO-237",
+      "display": "Zangiota tumani"
+    },
+    {
+      "code": "TO-239",
+      "display": "Yuqori Chirchiq tumani"
+    },
+    {
+      "code": "TO-248",
+      "display": "Qibray tumani"
+    },
+    {
+      "code": "TO-249",
+      "display": "Parkent tumani"
+    },
+    {
+      "code": "TO-250",
+      "display": "Pskent tumani"
+    },
+    {
+      "code": "TO-253",
+      "display": "O‘rta Chirchiq tumani"
+    },
+    {
+      "code": "TO-256",
+      "display": "Chinoz tumani"
+    },
+    {
+      "code": "TO-259",
+      "display": "Yangiyo‘l tumani"
+    },
+    {
+      "code": "TO-265",
+      "display": "Toshkent tumani"
+    },
+    {
+      "code": "TO-401",
+      "display": "Nurafshon shaxri"
+    },
+    {
+      "code": "TO-404",
+      "display": "Olmaliq shahri"
+    },
+    {
+      "code": "TO-407",
+      "display": "Angren shahri"
+    },
+    {
+      "code": "TO-413",
+      "display": "Bekobod shahri"
+    },
+    {
+      "code": "TO-415",
+      "display": "Oxangaron shaxri"
+    },
+    {
+      "code": "TO-419",
+      "display": "Chirchiq shahri"
+    },
+    {
+      "code": "TO-424",
+      "display": "Yangiyul shaxri"
+    },
+    {
+      "code": "XO-204",
+      "display": "Bog‘ot tumani"
+    },
+    {
+      "code": "XO-208",
+      "display": "Gurlan tumani"
+    },
+    {
+      "code": "XO-212",
+      "display": "Qo‘shko‘pir tumani"
+    },
+    {
+      "code": "XO-217",
+      "display": "Urganch tumani"
+    },
+    {
+      "code": "XO-220",
+      "display": "Xazorasp tumani"
+    },
+    {
+      "code": "XO-221",
+      "display": "Tuproqqal’a tumani"
+    },
+    {
+      "code": "XO-223",
+      "display": "Xonqa tumani"
+    },
+    {
+      "code": "XO-226",
+      "display": "Xiva tumani"
+    },
+    {
+      "code": "XO-230",
+      "display": "Shovot tumani"
+    },
+    {
+      "code": "XO-233",
+      "display": "Yangiariq tumani"
+    },
+    {
+      "code": "XO-236",
+      "display": "Yangibozor tumani"
+    },
+    {
+      "code": "XO-401",
+      "display": "Urganch shahri"
+    },
+    {
+      "code": "XO-406",
+      "display": "Xiva shahri"
+    }
+  ],
+  "caseSensitive": true,
+  "hierarchyMeaning": "is-a",
+  "language": "uz",
+  "experimental": true,
+  "count": 220
+}
