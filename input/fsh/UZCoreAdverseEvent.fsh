@@ -60,7 +60,7 @@ Description: "Uzbekistan Core AdverseEvent profile, used to represent an adverse
 
 
 // First example: a near-miss (potential) adverse event intercepted before any harm reached the patient
-Instance: adverse-event-example-01
+Instance: example-averted-medication-error
 InstanceOf: UZCoreAdverseEvent
 Title: "Example Adverse Event - Averted Medication Error"
 Description: "A potential adverse event (near miss): a contraindicated prednisone order was intercepted before administration, so no dose reached the patient and no harm occurred"
@@ -84,7 +84,7 @@ Usage: #example
 * participant[0].function = http://terminology.hl7.org/CodeSystem/v3-ParticipationType#AUT "author (originator)"
 * participant[0].actor = Reference(example-practitioner)
 
-* suspectEntity[0].instanceReference = Reference(medication-02)
+* suspectEntity[0].instanceReference = Reference(example-prednisone)
 
 * note[0].text = "Prednisone was ordered despite a documented contraindication. The order was flagged by clinical decision support and intercepted by the pharmacist before administration, so no dose reached the patient. Investigation in progress."
 
@@ -92,7 +92,7 @@ Usage: #example
 
 
 // Second example: a serious actual adverse event resulting in death
-Instance: adverse-event-example-02
+Instance: example-fatal-anaphylaxis
 InstanceOf: UZCoreAdverseEvent
 Title: "Example Adverse Event - Fatal Anaphylaxis"
 Description: "A serious actual adverse event: the patient developed anaphylaxis following amoxicillin administration and died despite resuscitation"
@@ -119,7 +119,7 @@ Usage: #example
 * participant[0].function = http://terminology.hl7.org/CodeSystem/v3-ParticipationType#AUT "author (originator)"
 * participant[0].actor = Reference(example-practitioner)
 
-* suspectEntity[0].instanceReference = Reference(medication-03)
+* suspectEntity[0].instanceReference = Reference(example-amoxicillin)
 
 * note[0].text = "Patient developed anaphylaxis shortly after amoxicillin administration and died despite resuscitation efforts."
 
@@ -127,7 +127,7 @@ Usage: #example
 
 
 // Medication examples for suspectEntity[0].instanceReference references
-Instance: medication-02
+Instance: example-prednisone
 InstanceOf: Medication
 Title: "Example Medication"
 Description: "Example medication suspected as the cause of the adverse event"
@@ -137,7 +137,7 @@ Usage: #example
 * status = #active
 
 
-Instance: medication-03
+Instance: example-amoxicillin
 InstanceOf: Medication
 Title: "Amoxicillin 500 mg capsule"
 Description: "Example medication suspected as the cause of the adverse event"
@@ -147,7 +147,7 @@ Usage: #example
 * status = #active
 
 
-// Resulting effect Condition referenced by adverse-event-example-02
+// Resulting effect Condition referenced by example-fatal-anaphylaxis
 Instance: example-anaphylaxis
 InstanceOf: UZCoreCondition
 Title: "Example UZ Core Condition - Anaphylaxis"
