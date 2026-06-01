@@ -2,14 +2,12 @@ CodeSystem: MedicationTotalVolumeUCUMUnitsCS
 Id: medication-total-volume-ucum-units-cs
 Title: "Medication total volume UCUM units translations"
 Description: "Medication total volume UCUM units with Uzbek and Russian translations"
-* insert SupplementCodeSystemDraft(medication-total-volume-ucum-units-cs, $ucum , 1.0.0)
-//test started
-* #% 
+* insert SupplementCodeSystemDraft(medication-total-volume-ucum-units-cs, $ucum, 1.0.0)
+* #%
   * ^designation[0].language = #uz
   * ^designation[=].value = "foiz"
   * ^designation[+].language = #ru
   * ^designation[=].value = "процент"
-/*
 * #ng
   * ^designation[0].language = #uz
   * ^designation[=].value = "nanogramm"
@@ -27,12 +25,6 @@ Description: "Medication total volume UCUM units with Uzbek and Russian translat
   * ^designation[=].value = "nanolitr"
   * ^designation[+].language = #ru
   * ^designation[=].value = "нанолитр"
-
-* #Rd
-  * ^designation[0].language = #uz
-  * ^designation[=].value = "rezerford"
-  * ^designation[+].language = #ru
-  * ^designation[=].value = "резерфорд"
 
 * #kcal
   * ^designation[0].language = #uz
@@ -76,7 +68,7 @@ Description: "Medication total volume UCUM units with Uzbek and Russian translat
   * ^designation[+].language = #ru
   * ^designation[=].value = "капля"
 
-* #cell
+* #{cell}
   * ^designation[0].language = #uz
   * ^designation[=].value = "hujayra"
   * ^designation[+].language = #ru
@@ -267,8 +259,8 @@ Description: "Medication total volume UCUM units with Uzbek and Russian translat
   * ^designation[=].value = "mikrolitrda mikrogramm"
   * ^designation[+].language = #ru
   * ^designation[=].value = "микрограмм на микролитр"
-/*
- UCUM arbitrary unit with a decimal multiplier
+
+// UCUM arbitrary unit with a decimal multiplier
 * #10*6.{cell}
   * ^designation[0].language = #uz
   * ^designation[=].value = "mln hujayra"
@@ -280,6 +272,3 @@ Description: "Medication total volume UCUM units with Uzbek and Russian translat
   * ^designation[=].value = "mlrd hujayra"
   * ^designation[+].language = #ru
   * ^designation[=].value = "млрд клеток"
-
-
-*/
