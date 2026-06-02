@@ -8,4 +8,3 @@ Description: "Defines identifier `type`s in Uzbek and Russian"
 * ^extension[=].valueCanonical = Canonical(IdentifierTypeCS)
 
 * include codes from system $identifier-type
-* include codes from system MedicineIdentifierTypeCS
