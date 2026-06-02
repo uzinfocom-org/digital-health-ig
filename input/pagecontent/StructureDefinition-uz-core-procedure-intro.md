@@ -6,7 +6,7 @@ The elements below must always be present (mandatory) or must be supported when 
 
 #### Each UZ Core Procedure Must Have
 
-This profile adds no mandatory cardinality of its own. The required elements are inherited from the base resource: a status (preparation | in-progress | completed | not-done ...) and a subject (the patient or other target the procedure was performed on).
+This profile adds no mandatory cardinality of its own. The required elements are inherited from the base resource: a status (preparation \| in-progress \| completed \| not-done ...) and a subject (the patient or other target the procedure was performed on).
 
 #### Each UZ Core Procedure Must Support
 

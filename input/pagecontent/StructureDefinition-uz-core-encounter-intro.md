@@ -6,7 +6,7 @@ The elements below must always be present (mandatory) or must be supported when 
 
 #### Each UZ Core Encounter Must Have
 
-- a status (planned | in-progress | completed | cancelled ...) - required binding, inherited as mandatory from the base resource;
+- a status (planned \| in-progress \| completed \| cancelled ...) - required binding, inherited as mandatory from the base resource;
 - when a location is recorded, its location reference is mandatory (`location.location` 1..1) - you cannot list a location entry without saying which place it is.
 
 #### Each UZ Core Encounter Must Support

@@ -6,7 +6,7 @@ The elements below must always be present (mandatory) or must be supported when 
 
 #### Each UZ Core Observation Must Have
 
-This profile adds no mandatory cardinality of its own. The elements required come from the base resource: a status (registered | preliminary | final | amended ...) and a code identifying what was observed.
+This profile adds no mandatory cardinality of its own. The elements required come from the base resource: a status (registered \| preliminary \| final \| amended ...) and a code identifying what was observed.
 
 #### Each UZ Core Observation Must Support
 

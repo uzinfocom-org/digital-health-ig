@@ -8,7 +8,7 @@ Actors: the referring clinician; approval commissions (for state-insurance refer
 
 ### 1. Create the referral
 
-The clinician creates a `ServiceRequest` (`intent = order`) carrying the referral classification: the service requested in `code`, urgency in `priority` (`routine` / `urgent` / `stat`), the target service via `HealthcareService`, the clinical justification in `reason`, and the financing type in a `coverageKind` extension (`state-insurance` | `insurance` | `self-payment` | `other`).
+The clinician creates a `ServiceRequest` (`intent = order`) carrying the referral classification: the service requested in `code`, urgency in `priority` (`routine` \| `urgent` \| `stat`), the target service via `HealthcareService`, the clinical justification in `reason`, and the financing type in a `coverageKind` extension (`state-insurance` \| `insurance` \| `self-payment` \| `other`).
 
 ```
 POST [base]/ServiceRequest

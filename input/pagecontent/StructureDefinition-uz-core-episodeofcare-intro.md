@@ -6,7 +6,7 @@ The elements below must always be present (mandatory) or must be supported when 
 
 #### Each UZ Core EpisodeOfCare Must Have
 
-This profile adds no mandatory cardinality of its own. The required elements are inherited from the base resource: a status (planned | active | onhold | finished | cancelled ...) and a patient.
+This profile adds no mandatory cardinality of its own. The required elements are inherited from the base resource: a status (planned \| active \| onhold \| finished \| cancelled ...) and a patient.
 
 #### Each UZ Core EpisodeOfCare Must Support
 

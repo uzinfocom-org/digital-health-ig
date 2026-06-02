@@ -15,7 +15,7 @@ This profile adds no mandatory cardinality of its own. The only required element
 - an identifier;
 - a code identifying the allergen itself (extensible binding to the DHP allergen value set);
 - a type - allergy or intolerance (required binding);
-- a clinical status - active | inactive | resolved (required binding);
+- a clinical status - active \| inactive \| resolved (required binding);
 - a verification status - how well the allergy has been confirmed (required binding);
 - a category - food, medication, environment, biologic (required binding);
 - the patient and the encounter it was recorded in;
