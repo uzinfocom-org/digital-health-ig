@@ -31,4 +31,100 @@ The elements below must always be present (mandatory) or must be supported when 
 
 > An Encounter cannot be set to `completed` while its period end is earlier than its start - check `actualPeriod` before closing the visit.
 
+### Building the JSON, step by step
+
+The examples below build up a single visit - an emergency inpatient encounter - from the bare minimum to the full admission record. The complete instance is the [example Encounter](Encounter-example-encounter.html). Copy a stage and adapt it; every value shown validates against this profile.
+
+#### 1. The smallest Encounter you should send
+
+`status` is the only strictly mandatory element, but an Encounter is only useful with a `class` (how the contact happened - inpatient, ambulatory, emergency) and the `subject` it concerns. Note that in R5 `class` is a **list** of `CodeableConcept`:
+
+```json
+{
+  "resourceType": "Encounter",
+  "meta": { "profile": ["https://dhp.uz/fhir/core/StructureDefinition/uz-core-encounter"] },
+  "status": "completed",
+  "class": [
+    { "coding": [{ "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode", "code": "IMP", "display": "Inpatient encounter" }] }
+  ],
+  "subject": { "reference": "Patient/example-patient" }
+}
+```
+
+`status`, `class`, `priority`, `type` and `subjectStatus` each use a **required** binding - the value must come from the bound value set (the Snapshot view above lists each one).
+
+#### 2. A realistic visit
+
+Fill in when it happened (`actualPeriod`), what kind of service it was (`type`), the patient's state during it (`subjectStatus`), who took part (`participant`), and why (`reason` - pointing at a Condition, DiagnosticReport, Procedure or Observation):
+
+```json
+{
+  "resourceType": "Encounter",
+  "meta": { "profile": ["https://dhp.uz/fhir/core/StructureDefinition/uz-core-encounter"] },
+  "status": "completed",
+  "class": [
+    { "coding": [{ "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode", "code": "IMP", "display": "Inpatient encounter" }] }
+  ],
+  "priority": {
+    "coding": [{ "system": "http://terminology.hl7.org/CodeSystem/v3-ActPriority", "code": "EM", "display": "Emergency" }]
+  },
+  "type": [
+    { "coding": [{ "system": "https://terminology.dhp.uz/fhir/core/CodeSystem/encounter-type-cs", "code": "mserv-0001-00004", "display": "Treatment services" }] }
+  ],
+  "subject": { "reference": "Patient/example-patient" },
+  "subjectStatus": {
+    "coding": [{ "system": "https://terminology.dhp.uz/fhir/core/CodeSystem/encounter-subject-status-cs", "code": "gencl-0003-00001", "display": "Awake" }]
+  },
+  "actualPeriod": { "start": "2024-01-01T10:00:00Z", "end": "2024-01-01T11:00:00Z" },
+  "participant": [
+    {
+      "type": [
+        { "coding": [{ "system": "http://terminology.hl7.org/CodeSystem/v3-ParticipationType", "code": "ATND", "display": "attender" }] }
+      ],
+      "period": { "start": "2024-01-01T10:00:00Z", "end": "2024-01-01T11:00:00Z" }
+    }
+  ],
+  "reason": [
+    {
+      "use": [
+        { "coding": [{ "system": "https://terminology.dhp.uz/fhir/core/CodeSystem/encounter-reason-use-cs", "code": "mserv-0002-00001", "display": "Disease" }] }
+      ],
+      "value": [
+        { "reference": { "reference": "Condition/example-headache" } }
+      ]
+    }
+  ]
+}
+```
+
+`reason.value`, `serviceType` and `diagnosis.condition` are `CodeableReference` types - the reference sits one level deeper (`"value": [{ "reference": { "reference": "..." } }]`) than a plain `Reference`.
+
+#### 3. Diagnosis, admission and location
+
+For an admission, add the `diagnosis` list (each `condition` is a `CodeableReference` to a [Condition](StructureDefinition-uz-core-condition.html)), the `admission` detail (admit source, re-admission flag, discharge disposition - all required bindings), and where it took place. If you include a `location` entry you must name the place - `location.location` is mandatory:
+
+```json
+{
+  "diagnosis": [
+    { "condition": [{ "reference": { "reference": "Condition/example-headache" } }] }
+  ],
+  "admission": {
+    "admitSource": {
+      "coding": [{ "system": "http://terminology.hl7.org/CodeSystem/admit-source", "code": "psych", "display": "From psychiatric hospital" }]
+    },
+    "reAdmission": {
+      "coding": [{ "system": "http://terminology.hl7.org/CodeSystem/v2-0092", "code": "R", "display": "Re-admission" }]
+    },
+    "dischargeDisposition": {
+      "coding": [{ "system": "http://terminology.hl7.org/CodeSystem/discharge-disposition", "code": "home", "display": "Home" }]
+    }
+  },
+  "location": [
+    { "location": { "reference": "Location/example-location" }, "status": "completed" }
+  ]
+}
+```
+
+These keys slot into the same resource as stage 2. To group a visit under a longer course of care, reference an [EpisodeOfCare](StructureDefinition-uz-core-episodeofcare.html) through `episodeOfCare`.
+
 For example API calls and a sample payload, see the [Quick Start](#quick-start) at the bottom of this page.
