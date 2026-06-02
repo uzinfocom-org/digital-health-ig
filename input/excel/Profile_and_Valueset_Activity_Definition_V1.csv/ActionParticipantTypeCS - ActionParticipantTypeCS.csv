@@ -1,0 +1,5 @@
+Code,EN,UZ,RU,,,
+patient,Patient,Bemor,Пациент,,,
+practitioner,Practitioner,Shifokor / Mutaxassis,Медицинский работник,,,http://hl7.org/fhir/ValueSet/action-participant-type
+practitionerrole,PractitionerRole,Mutaxassis roli,Роль медицинского работника,,,
+relatedperson,RelatedPerson,Aloqador shaxs,Связанное лицо,,,
