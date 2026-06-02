@@ -1,8 +1,8 @@
 # Identifikator tizimlari
 
-Ushbu qo'llanma O'zbekiston Raqamli Sog'liqni Saqlash Platformasi (DHP) doirasida bemorlar, sog'liqni saqlash xodimlari va tashkilotlarni identifikatsiya qilish uchun identifikator tizimlaridan qanday foydalanishni tushuntiradi.
+Ushbu qo'llanma O'zbekiston Raqamli Sog'liqni Saqlash Platformasi doirasida bemorlar, sog'liqni saqlash xodimlari va tashkilotlarni identifikatsiya qilish uchun identifikator tizimlaridan qanday foydalanishni tushuntiradi.
 
-## Umumiy ma'lumot
+## Umumiy ko'rinish
 
 UZ Core implementatsiyasi identifikator domenlarining ierarxik tizimidan foydalanadi. Barcha identifikatorlar quyidagi strukturaga amal qiladi:
 
@@ -75,18 +75,18 @@ Ichki pasportlar O'zbekiston ichidagi identifikatsiya uchun ishlatiladi.
 }
 ```
 
-### Aniqlanmagan bemorlar uchun identifikatorlar
+### Shaxsi aniqlanmagan bemorlar uchun identifikatorlar
 
-Bemorni darhol identifikatsiya qilib bo'lmaydigan hollarda (masalan, hujjatsiz hushsiz holatdagi bemor), platforma ikkita identifikator turini taqdim etadi. Imkon bo'lganda har doim tashkilot bilan bog'langan vaqtinchalik tibbiy yozuv raqamiga ustunlik bering.
+Bemorni darhol identifikatsiya qilib bo'lmaydigan hollarda (masalan, hujjatsiz hushsiz holatdagi bemor), platforma ikkita identifikator turini taqdim etadi. Imkon bo'lganda har doim tashkilot doirasidagi vaqtinchalik tibbiy karta raqamidan foydalanishga ustunlik bering.
 
 | Stsenariy | Qaysi identifikator ishlatiladi |
-|-----------|--------------------------------|
-| Aniqlanmagan bemor ma'lum tibbiy tashkilotga qabul qilingan | `medicalRecordTemp` (afzal) |
-| Aniqlanmagan bemor, tashkilot noma'lum yoki uning soliq ID'si yo'q | `unknownPatient` (zaxira variant) |
+|----------|-------------------|
+| Shaxsi aniqlanmagan bemor ma'lum tibbiy tashkilotga qabul qilingan | `medicalRecordTemp` (afzal) |
+| Shaxsi aniqlanmagan bemor, tashkilot noma'lum yoki uning soliq ID'si yo'q | `unknownPatient` (zaxira variant) |
 
-#### Vaqtinchalik tibbiy yozuv raqami (afzal)
+#### Vaqtinchalik tibbiy karta raqami (afzal)
 
-Aniqlanmagan bemor tibbiy tashkilotga qabul qilingan va tashkilotning soliq ID'si (Soliq) ma'lum bo'lgan hollarda ushbu identifikatordan foydalaning. Bu variant afzal, chunki u identifikatorni bergan tashkilotgacha kuzatish imkonini beradi.
+Shaxsi aniqlanmagan bemor tibbiy tashkilotga qabul qilingan va tashkilotning soliq ID'si (Soliq) ma'lum bo'lgan hollarda ushbu identifikatordan foydalaning. Bu variant afzal, chunki u identifikatorni bergan tashkilotgacha kuzatish imkonini beradi.
 
 **System URI namunasi**: `https://dhp.uz/fhir/core/sid/pid/uz/prn/{soliq-id}/mrt`
 
@@ -115,7 +115,7 @@ Misol (soliq ID'si `200935935` bo'lgan tashkilot uchun):
 
 #### Noma'lum bemor identifikatori (zaxira variant)
 
-Ushbu identifikatordan faqat aniqlanmagan bemorni qabul qilgan tashkilot noma'lum bo'lganda yoki uning soliq ID'si mavjud bo'lmaganda foydalaning. Imkon bo'lganda har doim tashkilot bilan bog'langan vaqtinchalik tibbiy yozuv raqamiga ustunlik bering.
+Ushbu identifikatordan faqat shaxsi aniqlanmagan bemorni qabul qilgan tashkilot noma'lum bo'lganda yoki uning soliq ID'si mavjud bo'lmaganda foydalaning. Imkon bo'lganda har doim tashkilot doirasidagi vaqtinchalik tibbiy karta raqamidan foydalanishga ustunlik bering.
 
 **System URI**: `https://dhp.uz/fhir/core/sid/pid/uz/mrt`
 
@@ -142,7 +142,7 @@ Ushbu identifikatordan faqat aniqlanmagan bemorni qabul qilgan tashkilot noma'lu
 
 ### Xorijiy pasportlar va haydovchilik guvohnomalari
 
-Platforma xorijiy fuqarolarning pasport raqami yoki haydovchilik guvohnomasi orqali identifikatsiyalashni qo'llab-quvvatlaydi. System URI ISO 3166-1 bo'yicha mamlakatning ikki harfli kodi bilan o'sha namunaga amal qiladi:
+Platforma xorijiy fuqarolarning pasport raqami va haydovchilik guvohnomalari orqali identifikatsiyalashni qo'llab-quvvatlaydi. System URI ISO 3166-1 bo'yicha mamlakatning ikki harfli kodi bilan o'sha namunaga amal qiladi:
 
 **System URI namunalari**: pasportlar uchun `https://dhp.uz/fhir/core/sid/pid/{country-code}/ppn`, haydovchilik guvohnomalari uchun `https://dhp.uz/fhir/core/sid/pid/{country-code}/dl`.
 
@@ -351,7 +351,7 @@ Bemorning bir nechta identifikatori bo'lishi mumkin. Quyida to'g'ri foydalanishn
 }
 ```
 
-## Foydalanish bo'yicha tavsiyalar
+## Joriy etish bo'yicha qo'llanma
 
 IdentifierDomainCS CodeSystem dagi barcha tushunchalar tanlanadigan emas. Ota-ona/guruhlovchi tushunchalarda `notSelectable` xususiyati `true` qiymati bilan o'rnatilgan. FHIR resurslarida faqat barg-tushunchalar (haqiqiy identifikator tizimlari) ishlatilishi mumkin:
 
