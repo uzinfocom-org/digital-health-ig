@@ -8,7 +8,7 @@ If you are completely new to FHIR, start with [FHIR basics](fhir-basics.html) fi
 
 UZ Core does not invent new data structures. Each UZ Core profile takes a standard FHIR R5 resource (for example `Patient` or `Observation`) and adds national rules on top of it: which elements are required, which must be supported, which national identifier systems and terminologies to use, and which Uzbekistan-specific extensions apply. A FHIR resource that is valid against a UZ Core profile is also a valid base FHIR resource.
 
-Because profiles only add rules, **a profile page mostly tells you what is *different* from base FHIR** - what you must populate, and what you must be able to handle. Everything else behaves exactly as it does in the [base FHIR R5 specification](https://hl7.org/fhir/R5/).
+Because profiles only add rules, a profile page mostly tells you what is *different* from base FHIR - what you must populate, and what you must be able to handle. Everything else behaves exactly as it does in the [base FHIR R5 specification](https://hl7.org/fhir/R5/).
 
 ## The four views on a profile page
 
@@ -21,14 +21,14 @@ Every profile page (for example [UZ Core Patient](StructureDefinition-uz-core-pa
 | **Snapshot** | Every element of the resource, base + profile | When you need the full picture of an element you don't see elsewhere. |
 | **All** | Everything, including mappings and constraints | Reference. |
 
-For most implementation work, the **Key Elements** view plus the narrative on this and the profile page is all you need.
+For most implementation work, the Key Elements view plus the narrative on this and the profile page is all you need.
 
 ## Reading the element table
 
 Each row in the table is one element (field). The columns are:
 
-- **Name** - the element path, e.g. `Patient.identifier` or `Observation.value[x]`. Indentation shows nesting.
-- **Flags** - short symbols that carry the most important rules:
+- Name - the element path, e.g. `Patient.identifier` or `Observation.value[x]`. Indentation shows nesting.
+- Flags - short symbols that carry the most important rules:
 
   | Flag | Meaning | What it means for you |
   |------|---------|------------------------|
@@ -38,23 +38,23 @@ Each row in the table is one element (field). The columns are:
   | **C** | Has a constraint | An invariant applies - hover the element or read the Constraints section. |
   | **I** | Invariant | A formal rule (FHIRPath) that the data must satisfy. |
 
-- **Cardinality** - how many times the element may appear:
+- Cardinality - how many times the element may appear:
 
   | Cardinality | Meaning |
   |-------------|---------|
-  | `1..1` | **Mandatory**, exactly one. You *must* send it. |
-  | `1..*` | **Mandatory**, at least one. |
+  | `1..1` | Mandatory, exactly one. You *must* send it. |
+  | `1..*` | Mandatory, at least one. |
   | `0..1` | Optional, at most one. |
   | `0..*` | Optional, any number. |
 
-  Mandatory (`1..`) elements are the **"Must Have"** set. Must Support (`S`) elements are the **"Must Support"** set. The narrative at the top of each profile page lists both in plain language so you do not have to decode the table.
+  Mandatory (`1..`) elements are the "Must Have" set. Must Support (`S`) elements are the "Must Support" set. The narrative at the top of each profile page lists both in plain language so you do not have to decode the table.
 
-- **Type** - the data type or, for references, which resource(s) it points to. A reference like `Reference(UZ Core Patient)` means it must point to a resource conforming to that profile.
-- **Description & Constraints** - the definition, the value set binding, and any fixed values.
+- Type - the data type or, for references, which resource(s) it points to. A reference like `Reference(UZ Core Patient)` means it must point to a resource conforming to that profile.
+- Description & Constraints - the definition, the value set binding, and any fixed values.
 
 ## Slices
 
-Some elements are **sliced** - the same element is split into named variants with their own rules. For example, `Patient.identifier` is sliced into `nationalId`, `passportLocal`, `passportForeign`, and so on, each fixed to a specific national identifier system. In the table, slices appear as indented rows under the element with the slice name in brackets, e.g. `identifier:nationalId`. Populate the slice that matches your data; you do not have to populate every slice.
+Some elements are *sliced* - the same element is split into named variants with their own rules. For example, `Patient.identifier` is sliced into `nationalId`, `passportLocal`, `passportForeign`, and so on, each fixed to a specific national identifier system. In the table, slices appear as indented rows under the element with the slice name in brackets, e.g. `identifier:nationalId`. Populate the slice that matches your data; you do not have to populate every slice.
 
 See [Identifier systems](identifiers.html) for the full set of patient, practitioner and organization identifier slices and their system URIs.
 
@@ -62,24 +62,24 @@ See [Identifier systems](identifiers.html) for the full set of patient, practiti
 
 When an element is bound to a value set, the binding strength tells you how strict it is:
 
-- **required** - you *must* use a code from the value set.
-- **extensible** - use a code from the value set if one fits; otherwise you may use another code.
-- **preferred** - the value set is encouraged but not enforced.
-- **example** - illustrative only.
+- required - you *must* use a code from the value set.
+- extensible - use a code from the value set if one fits; otherwise you may use another code.
+- preferred - the value set is encouraged but not enforced.
+- example - illustrative only.
 
 UZ Core publishes national CodeSystems and ValueSets in Uzbek (with Russian and English translations) and supplements international HL7 terminology with Uzbek/Russian translations. Codes can be validated against the platform terminology server - see [General guidance](general-guidance.html#terminology).
 
 ## Conventions used across UZ Core
 
-- **Profiles are built on base FHIR R5** and document only the national delta.
-- **Identifiers** follow a single hierarchical scheme (`https://dhp.uz/fhir/core/sid/...`). See [Identifier systems](identifiers.html).
-- **Names and other human-readable text** carry Uzbek as the authoritative language, with translations as designations.
-- **Every resource** is expected to carry profile and provenance metadata - see [General guidance](general-guidance.html#metadata).
-- The platform **validates** every create/update against the relevant profile and value sets, returning an `OperationOutcome` on failure - so the rules on these pages are enforced, not advisory.
+- Profiles are built on base FHIR R5 and document only the national delta.
+- Identifiers follow a single hierarchical scheme (`https://dhp.uz/fhir/core/sid/...`). See [Identifier systems](identifiers.html).
+- Names and other human-readable text carry Uzbek as the authoritative language, with translations as designations.
+- Every resource is expected to carry profile and provenance metadata - see [General guidance](general-guidance.html#metadata).
+- The platform validates every create/update against the relevant profile and value sets, returning an `OperationOutcome` on failure - so the rules on these pages are enforced, not advisory.
 
 ## Where to go next
 
-- [Must Support](must-support.html) - what the **S** flag obliges you to do.
+- [Must Support](must-support.html) - what the `S` flag obliges you to do.
 - [General guidance](general-guidance.html) - cross-cutting rules (missing data, units, Bundles, terminology, logical delete).
 - [Workflows](workflows.html) - end-to-end scenarios showing which resources to create, in what order, for a real clinical task.
 - Each profile page - the "Must Have / Must Support" narrative plus a "Quick Start" with example API calls.

@@ -1,6 +1,6 @@
 ### Quick Start
 
-This profile is on Observation, so use the **Observation** endpoint. `[base]` is the FHIR server base URL; `|` separates system from value and must be URL-encoded as `%7C`.
+This profile is on Observation, so use the Observation endpoint. `[base]` is the FHIR server base URL; `|` separates system from value and must be URL-encoded as `%7C`.
 
 **Read by server id**
 

@@ -25,7 +25,7 @@ POST [base]/Consent
 { "resourceType": "Consent", "meta": { "profile": [ "https://dhp.uz/fhir/core/StructureDefinition/uz-core-consent" ] }, "status": "active", "subject": { "reference": "Patient/[id]" }, "decision": "permit", ... }
 ```
 
-Consent is normally set by the patient in the portal. A denied consent causes data requests to be refused with **HTTP 403**; clients should handle that outcome.
+Consent is normally set by the patient in the portal. A denied consent causes data requests to be refused with HTTP 403; clients should handle that outcome.
 
 See the [CapabilityStatement](CapabilityStatement-DHPCapabilityStatement.html) for the full list of supported search parameters.
 

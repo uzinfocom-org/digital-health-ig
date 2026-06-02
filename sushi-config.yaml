@@ -78,6 +78,8 @@ parameters:
   apply-version: false # don't override the version in the knowledge resources
   default-version: true
 
+  show-inherited-invariants: false # hide invariants inherited from the base resource in profile tables
+
   # openehr: true
 
   # multi-lingual support

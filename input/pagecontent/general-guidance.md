@@ -6,10 +6,10 @@ Cross-cutting rules that apply across all UZ Core profiles. These answer the que
 
 Every resource exchanged on the platform must carry, in addition to its clinical content:
 
-- **`meta.profile`** - the canonical URL (with version) of the UZ Core profile the resource claims to conform to. This is how the server knows which rules to validate against.
-- **`meta.lastUpdated`** - when this version of the resource was last changed.
-- **`id`** - the logical id of the resource on the server.
-- **Provenance** - the origin and authorship of the data, recorded as a [UZ Core Provenance](StructureDefinition-uz-core-provenance.html) resource referencing the target. Clinically significant records (documents, signed reports) must be accompanied by Provenance; see [Audit & Provenance](general-guidance.html) guidance and the relevant [workflow](workflows.html).
+- `meta.profile` - the canonical URL (with version) of the UZ Core profile the resource claims to conform to. This is how the server knows which rules to validate against.
+- `meta.lastUpdated` - when this version of the resource was last changed.
+- `id` - the logical id of the resource on the server.
+- Provenance - the origin and authorship of the data, recorded as a [UZ Core Provenance](StructureDefinition-uz-core-provenance.html) resource referencing the target. Clinically significant records (documents, signed reports) must be accompanied by Provenance; see [Audit & Provenance](general-guidance.html) guidance and the relevant [workflow](workflows.html).
 
 ```json
 {
@@ -28,13 +28,13 @@ Content is exchanged as JSON, UTF-8 encoded.
 
 There is a difference between "I have no value" and "there is no value", and FHIR lets you say which:
 
-- **Value simply not present** - omit the element. Do not send an empty string or a placeholder. This is allowed for any optional (`0..`) element, including Must Support optional elements.
-- **Mandatory element, value genuinely unknown** - you cannot omit a `1..` element, so use the resource's defined "unknown" mechanism: a `data-absent-reason` extension on the element, or an "unknown" code where the bound value set provides one (for example a coded element bound to a value set that includes `unknown`).
-- **Never invent data** to satisfy a constraint. A fake birth date or a dummy identifier is worse than a recorded absence.
+- Value simply not present - omit the element. Do not send an empty string or a placeholder. This is allowed for any optional (`0..`) element, including Must Support optional elements.
+- Mandatory element, value genuinely unknown - you cannot omit a `1..` element, so use the resource's defined "unknown" mechanism: a `data-absent-reason` extension on the element, or an "unknown" code where the bound value set provides one (for example a coded element bound to a value set that includes `unknown`).
+- Never invent data to satisfy a constraint. A fake birth date or a dummy identifier is worse than a recorded absence.
 
 Some profiles add an explicit `data-absent-reason` slot - for example [UZ Core Patient](StructureDefinition-uz-core-patient.html) allows a `data-absent-reason` extension on `identifier` for the rare case where even an identifier is unavailable.
 
-See [Must Support](must-support.html) for how this interacts with the **S** flag.
+See [Must Support](must-support.html) for how this interacts with the <span style="padding-left: 3px; padding-right: 3px; color: white; background-color: #D50000" title="This element must be supported">S</span> flag.
 
 ## Units and quantities
 
@@ -58,7 +58,7 @@ Numeric measurements use UCUM (`http://unitsofmeasure.org`) for the unit code:
 ## Terminology and multilingual designations {#terminology}
 
 - Use codes from the bound value set according to the [binding strength](how-to-read.html#terminology-bindings).
-- National concepts are defined as UZ CodeSystems authored in Uzbek, with Russian and English **designations** for display. International HL7 terminology is supplemented with Uzbek/Russian translations. Designations are for presentation only - the `code` is what carries meaning.
+- National concepts are defined as UZ CodeSystems authored in Uzbek, with Russian and English designations for display. International HL7 terminology is supplemented with Uzbek/Russian translations. Designations are for presentation only - the `code` is what carries meaning.
 - Codes can be checked against the platform terminology server with the standard `$validate-code` operation:
 
 ```
@@ -88,9 +88,9 @@ When several resources are related, transmit them together in a Bundle rather th
 ## Creating, updating and deleting
 
 - The platform supports the standard REST interactions: `GET` (read/search), `POST` (create), `PUT` (update), `PATCH` (partial update), and `DELETE`. The exact interactions per resource are declared in the [CapabilityStatement](CapabilityStatement-DHPCapabilityStatement.html).
-- **Logical delete, not physical delete.** Clinical data is not removed by deleting the resource. To retire a record, change its status: set `entered-in-error`, `inactive`, `revoked` or the equivalent for the resource, depending on the case. For example a withdrawn `Goal` becomes `cancelled`/`completed`, a withdrawn `Consent` is set `inactive`, an erroneous clinical record is set `entered-in-error`. The resource and its history remain queryable.
-- **Concurrency.** Updates use optimistic concurrency. If the resource was changed by someone else since you read it, the server responds with `409 Conflict`; re-read and retry.
-- **Idempotency.** For workflow and financial operations that must not be duplicated on retry, use conditional create/update so a retried request does not create a second resource.
+- Logical delete, not physical delete. Clinical data is not removed by deleting the resource. To retire a record, change its status: set `entered-in-error`, `inactive`, `revoked` or the equivalent for the resource, depending on the case. For example a withdrawn `Goal` becomes `cancelled`/`completed`, a withdrawn `Consent` is set `inactive`, an erroneous clinical record is set `entered-in-error`. The resource and its history remain queryable.
+- Concurrency. Updates use optimistic concurrency. If the resource was changed by someone else since you read it, the server responds with `409 Conflict`; re-read and retry.
+- Idempotency. For workflow and financial operations that must not be duplicated on retry, use conditional create/update so a retried request does not create a second resource.
 
 ## Errors {#errors}
 

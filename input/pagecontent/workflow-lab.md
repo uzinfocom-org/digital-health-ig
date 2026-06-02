@@ -1,10 +1,10 @@
 # Workflow: Laboratory order to result
 
-This workflow shows how a laboratory test is ordered and how the result comes back. It is the canonical FHIR diagnostic chain, with the reference wiring made explicit - a profile table tells you `Observation.specimen` *exists*, but this page tells you it **must point at the specimen produced from this order**.
+This workflow shows how a laboratory test is ordered and how the result comes back. It is the canonical FHIR diagnostic chain, with the reference wiring made explicit - a profile table tells you `Observation.specimen` *exists*, but this page tells you it must point at the specimen produced from this order.
 
-**Actors:** an ordering clinician; the laboratory (LIS); the platform (DHP).
+Actors: an ordering clinician; the laboratory (LIS); the platform (DHP).
 
-**The chain and its references:**
+The chain and its references:
 
 ```
 ServiceRequest ──< Specimen ──> (Specimen.request → ServiceRequest)
@@ -16,7 +16,7 @@ DiagnosticReport.basedOn → ServiceRequest
 DiagnosticReport.result  → Observation
 ```
 
-> Profile status: [Specimen](StructureDefinition-uz-core-specimen.html) and [Observation](StructureDefinition-uz-core-observation.html) are profiled in UZ Core. The **ServiceRequest** and **DiagnosticReport** profiles are in development - until they publish, use the base FHIR R5 resources with `meta.profile` omitted or set to the base resource, and follow the wiring below.
+> Profile status: [Specimen](StructureDefinition-uz-core-specimen.html) and [Observation](StructureDefinition-uz-core-observation.html) are profiled in UZ Core. The ServiceRequest and DiagnosticReport profiles are in development - until they publish, use the base FHIR R5 resources with `meta.profile` omitted or set to the base resource, and follow the wiring below.
 
 ## 1. Order the test
 
@@ -55,7 +55,7 @@ GET [base]/Observation?based-on=ServiceRequest/[id]
 GET [base]/Observation?patient=Patient/[id]&category=laboratory&_sort=-date
 ```
 
-The whole set is best returned as one **transaction Bundle** so the order, specimen, observations and report arrive atomically. A finalized, signed report is assembled as a **document Bundle** (`Composition` header referencing the results, signed via [Provenance](StructureDefinition-uz-core-provenance.html)) - the `Composition` references the resources rather than duplicating them. See [General guidance &rarr; Bundles](general-guidance.html#bundles-document-vs-transaction-vs-searchset).
+The whole set is best returned as one transaction Bundle so the order, specimen, observations and report arrive atomically. A finalized, signed report is assembled as a document Bundle (`Composition` header referencing the results, signed via [Provenance](StructureDefinition-uz-core-provenance.html)) - the `Composition` references the resources rather than duplicating them. See [General guidance &rarr; Bundles](general-guidance.html#bundles-document-vs-transaction-vs-searchset).
 
 ## Status and concurrency
 

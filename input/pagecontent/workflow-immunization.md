@@ -2,9 +2,9 @@
 
 This workflow shows how the national immunization schedule drives a personalised recommendation, and how a vaccine dose is recorded. All four resources used here are profiled in UZ Core.
 
-**Actors:** Immunization Program Manager / Data Steward (maintains the schedule); the patient or parent/guardian (views recommendations); a doctor and nurse (assess eligibility and administer).
+Actors: Immunization Program Manager / Data Steward (maintains the schedule); the patient or parent/guardian (views recommendations); a doctor and nurse (assess eligibility and administer).
 
-**The chain:**
+The chain:
 
 ```
 PlanDefinition (national schedule)
@@ -27,7 +27,7 @@ The national schedule is published once as a [PlanDefinition](StructureDefinitio
 GET [base]/PlanDefinition?status=active&context-type-value=focus$vaccination
 ```
 
-> Only **one** schedule version may be active at a time for a given scope/jurisdiction, and the schedule must satisfy the validation rules (no dose-sequence gaps, no impossible timing windows, no two overlapping active versions). See the [PlanDefinition](StructureDefinition-uz-core-plan-definition.html) page.
+> Only one schedule version may be active at a time for a given scope/jurisdiction, and the schedule must satisfy the validation rules (no dose-sequence gaps, no impossible timing windows, no two overlapping active versions). See the [PlanDefinition](StructureDefinition-uz-core-plan-definition.html) page.
 
 ## 2. Generate the recommendation
 
@@ -69,7 +69,7 @@ POST [base]/Immunization
 }
 ```
 
-> A dose is uniquely identified by **patient + vaccineCode + occurrence + lotNumber** - do not submit the same combination twice.
+> A dose is uniquely identified by patient + vaccineCode + occurrence + lotNumber - do not submit the same combination twice.
 
 ## 4. Record a reaction (if any)
 

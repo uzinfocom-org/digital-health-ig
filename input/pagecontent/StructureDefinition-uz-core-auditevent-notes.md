@@ -2,7 +2,7 @@
 
 Common API interactions for this profile. `[base]` is the FHIR server base URL; `|` separates a code system from its value and must be URL-encoded as `%7C`.
 
-AuditEvents are written by the platform and are **read-only** to clients - there is no create or update path. Query the audit log with read and search.
+AuditEvents are written by the platform and are read-only to clients - there is no create or update path. Query the audit log with read and search.
 
 **Read by server id**
 
