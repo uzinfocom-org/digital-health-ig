@@ -8,6 +8,15 @@ Many elements in UZ Core profiles are flagged Must Support (the <span style="pad
 
 Must Support is about *capability*. It does not, by itself, make an element mandatory - that is what cardinality (`1..`) does. An element can be Must Support and still be optional (`0..1`): you only have to send it *when you have the data*.
 
+## Two contexts where Must Support is used
+
+The flag means a slightly different thing depending on which profile it appears in:
+
+- **UZ Core profiles** - the element should be populated when systems inside Uzbekistan exchange the resource.
+- **DHP-specific profiles** - the DHP platform supports the element, and a client system must populate it when it has the data.
+
+In practice the rule is the same either way: send the element when you have the data, and be able to receive it.
+
 ## Must Have vs Must Support
 
 Each profile page lists two sets in plain language at the top:
@@ -44,7 +53,7 @@ A producer that supports an element but has no value for it should follow the ru
 
 ## How Must Support is enforced
 
-The DHP platform validates every create and update against the relevant profile and its value sets - structure, cardinality, data types and terminology bindings. A resource that violates a mandatory cardinality or a required binding is rejected with an `OperationOutcome` (see [General guidance → Errors](general-guidance.html#errors)). Must Support obligations on *consumers* are a conformance expectation for connecting systems rather than something the server can reject, but they are part of what your system is certified against when it onboards to the platform.
+The DHP platform validates every create and update against the relevant profile and its value sets - structure, cardinality, data types and terminology bindings. A resource that violates a mandatory cardinality or a required binding is rejected with an `OperationOutcome` (see [General guidance → Errors](general-guidance.html#errors)). The server cannot reject a resource because of Must Support rules for *consumers* (systems that receive data). But your system is still tested against these rules before it can connect to the platform.
 
 ## What Must Support is *not*
 
