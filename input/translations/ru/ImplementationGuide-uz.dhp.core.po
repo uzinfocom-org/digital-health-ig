@@ -7,7 +7,7 @@ msgstr "ЕПЦЗ"
 # A short, descriptive, user-friendly title for the implementation guide.
 #: ImplementationGuide.title
 msgid "Uzbekistan Digital Health Platform"
-msgstr "Единая цифровая платформа здравоохранения Узбекистана"
+msgstr "Единая платформа цифрового здравоохранения Узбекистана"
 
 # The name of the organization or individual responsible for the release and ongoing maintenance of the implementation guide.
 #: ImplementationGuide.publisher
@@ -1598,7 +1598,7 @@ msgstr ""
 # A description of the reason that a resource has been included in the implementation guide.
 #: ImplementationGuide.definition.resource.description
 msgid "Health card number identifiers assigned by the Uzbekistan Ministry of Health"
-msgstr "Идентификаторы номеров медицинских карт, присваиваемые Министерствомздравоохранения Республики Узбекистан"
+msgstr "Идентификаторы номеров медицинских карт, присваиваемые Министерством здравоохранения Республики Узбекистан"
 
 # A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).
 #: ImplementationGuide.definition.resource.name
@@ -1608,7 +1608,7 @@ msgstr ""
 # A description of the reason that a resource has been included in the implementation guide.
 #: ImplementationGuide.definition.resource.description
 msgid "Military ID number identifiers assigned by the Uzbekistan Ministry of Defense"
-msgstr "Идентификаторы номеров военных билетов, присваиваемые Министерством обороныРеспублики Узбекистан"
+msgstr "Идентификаторы номеров военных билетов, присваиваемые Министерством обороны Республики Узбекистан"
 
 # A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).
 #: ImplementationGuide.definition.resource.name
@@ -2103,7 +2103,7 @@ msgstr "Types of possible identifier uses"
 # A description of the reason that a resource has been included in the implementation guide.
 #: ImplementationGuide.definition.resource.description
 msgid "Defines the `use` of an identifier in Uzbek and Russian"
-msgstr "Дополнение «Виды возможного использования идентификаторов» с переводами наузбекский и русский языки"
+msgstr "Дополнение «Виды возможного использования идентификаторов» с переводами на узбекский и русский языки"
 
 # A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).
 #: ImplementationGuide.definition.resource.name
@@ -2283,7 +2283,7 @@ msgstr "UZ Core Provenance"
 # A description of the reason that a resource has been included in the implementation guide.
 #: ImplementationGuide.definition.resource.description
 msgid "Uzbekistan Core Provenance profile, used to digitally sign documents via myID"
-msgstr "Профиль Uzbekistan Core Provenance, используемый для цифровой подписидокументов через myID"
+msgstr "Профиль Uzbekistan Core Provenance, используемый для цифровой подписи документов через myID"
 
 # A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).
 #: ImplementationGuide.definition.resource.name
@@ -2468,7 +2468,7 @@ msgstr ""
 # A short title used to represent this page in navigational structures such as table of contents, bread crumbs, etc.
 #: ImplementationGuide.definition.page.title
 msgid "Identifiers"
-msgstr ""
+msgstr "Идентификаторы"
 
 # Indicates the URL or the actual content to provide for the page.
 #: ImplementationGuide.definition.page.source[x]
@@ -2498,5 +2498,5 @@ msgstr ""
 # A short title used to represent this page in navigational structures such as table of contents, bread crumbs, etc.
 #: ImplementationGuide.definition.page.title
 msgid "Vital Signs"
-msgstr ""
+msgstr "Жизненные показатели"
 
