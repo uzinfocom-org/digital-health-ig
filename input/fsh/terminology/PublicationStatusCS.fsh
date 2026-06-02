@@ -18,12 +18,12 @@ Description: "Publication status supplement with translations in Uzbek and Russi
 
 * #retired
   * ^designation[0].language = #uz
-  * ^designation[=].value = "Faol emas (yakunlangan)"
+  * ^designation[=].value = "Faoliyatdan chiqarilgan"
   * ^designation[+].language = #ru
-  * ^designation[=].value = "Выведен из эксплуатации"
+  * ^designation[=].value = "Выведен из использования"
 
 * #unknown
   * ^designation[0].language = #uz
-  * ^designation[=].value = "Noma'lum"
+  * ^designation[=].value = "Noma’lum"
   * ^designation[+].language = #ru
   * ^designation[=].value = "Неизвестно"
