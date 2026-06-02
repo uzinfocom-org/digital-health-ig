@@ -43,7 +43,7 @@ Description: "UZCoreServiceRequest defines how laboratory orders are represented
 * supportingInfo only CodeableReference(ServiceRequest)
 * supportingInfo ^short = "Additional clinical or administrative information supporting or justifying the requested service."
 * specimen MS
-* specimen only Reference(Specimen)
+* specimen only Reference(UZCoreSpecimen)
 * specimen ^short = "The specimen or specimens to be analyzed as part of the requested laboratory service."
 * note ^short = "Doctor's comment or conclution upon referral"
 * patientInstruction MS //we need to add markdown patient instructions.
@@ -65,5 +65,5 @@ Description: "Example laboratory ServiceRequest instance for UZCore."
 * requester = Reference(Practitioner/example-practitioner)
 // * insurance[0] = Reference(Coverage/uz-coverage-example-01) We don't have Coverage profile  yet
 //* supportingInfo[0] = Reference(UZCoreServiceRequest/uz-servicerequest-supporting-01)
-* specimen[0] = Reference(Specimen/specimen-example-blood)
+* specimen[0] = Reference(Specimen/example-specimen-blood-cbc)
 * note[0].text = "Please perform CBC urgently."
