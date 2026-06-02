@@ -56,6 +56,34 @@ O'zbekiston tashqarisidagi manzillar uchun ma'muriy bo'linmalar erkin matn sifat
 }
 ```
 
+### Bemorlarni tashkilotlarga biriktirish
+
+O'zbekiston sog'liqni saqlash tizimida bemorlar o'zlari uchun asosiy tibbiy yordam nuqtasi bo'lib xizmat qiluvchi birlamchi tibbiy tashkilotga (poliklinikaga) biriktiriladi. Ushbu biriktirish ikkita element yordamida qayd etiladi:
+
+1. **`Patient.managingOrganization`** - bemor biriktirilgan [UZCoreOrganization](StructureDefinition-UZCoreOrganization.html)ga havola
+2. **`managingOrganizationAttachment` kengaytmasi** - bemor ushbu tashkilotga biriktirilgan sana
+
+O'zbekistonda bemorlar o'zlarining biriktirilgan tashkilotini yiliga faqat bir marta o'zgartirishi mumkin. Biriktirish sanasi ushbu qoidaga rioya qilishni ta'minlash uchun ishlatiladi.
+
+```jsonc
+{
+  "resourceType": "Patient",
+  "extension": [{
+    "url": "https://dhp.uz/fhir/core/StructureDefinition/managing-organization-attachment",
+    "valueDate": "2024-03-15"    // Bemor biriktirilgan sana
+  }],
+  "managingOrganization": {
+    "reference": "Organization/example-organization"
+  }
+  // ... bemorning boshqa ma'lumotlari
+}
+```
+
+Bemorning biriktirilgan tashkilotini yangilashda tizimlar quyidagilarni bajarishi kerak:
+1. Mavjud `managingOrganizationAttachment` sanasini tekshirish
+2. Oxirgi biriktirishdan beri kamida bir yil o'tganligiga ishonch hosil qilish
+3. `managingOrganization` va kengaytma sanasini birgalikda yangilash
+
 ### Terminologiya
 
 Interoperabellikni yaxshilash uchun standartlashtirilgan terminologiya muhim ahamiyatga ega. Bunday yondashuv sog'liqni saqlash ma'lumotlarini bir xil ma'lumot tushunchalarida yig'ish, hujjatlashtirish va qayta ishlash imkonini beradi. Bu tibbiyot xodimlariga klinik bilimlarni xalqaro miqyosda tan olingan yagona tizimda almashish va solishtirish imkonini beradi. FHIR butun dunyo bo'yicha zarur bo'lgan barcha kodlarni o'zi aniqlab berolmaydi, shu sababli kodlarni boshqarish va ularning ma'nosini belgilash uchun ikki turdagi resurslardan foydalanadi:
