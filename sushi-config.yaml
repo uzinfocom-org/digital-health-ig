@@ -72,7 +72,7 @@ parameters:
   excludexml: true
   usage-stats-opt-out: true # times out often
   # language-translations-mode: preserve
-  # shownav: true
+  shownav: true # show next/previous page navigation tabs in header and footer
 
   pin-canonicals: pin-all
   apply-version: false # don't override the version in the knowledge resources
@@ -104,9 +104,13 @@ parameters:
 menu:
   Home: index.html
   Guidance:
+    How to read this guide: how-to-read.html
+    Must Support: must-support.html
+    General guidance: general-guidance.html
     FHIR basics: fhir-basics.html
     Identifiers: identifiers.html
     Vital signs: vital-signs.html
+  Workflows: workflows.html
   API access: api-access.html
   Artifacts: artifacts.html
   Components: components.html

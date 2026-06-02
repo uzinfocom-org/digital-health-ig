@@ -44,6 +44,35 @@ GET [base]/Patient?address-city=22070013
 
 See the [CapabilityStatement](CapabilityStatement-DHPCapabilityStatement.html) for the full list of supported search parameters, and [Identifier systems](identifiers.html) for all patient identifier system URIs.
 
+### Attaching to a managing organization
+
+A patient is attached to a primary healthcare organization (polyclinic) that serves as their main point of care. This is recorded with two elements:
+
+1. **`Patient.managingOrganization`** - a reference to the [UZ Core Organization](StructureDefinition-uz-core-organization.html) the patient is attached to.
+2. **`managingOrganizationAttachment` extension** - the date the patient was attached.
+
+A patient can change their managing organization only once per year; the attachment date is used to enforce this.
+
+```jsonc
+{
+  "resourceType": "Patient",
+  "extension": [{
+    "url": "https://dhp.uz/fhir/core/StructureDefinition/managing-organization-attachment",
+    "valueDate": "2024-03-15"    // Date when the patient was attached
+  }],
+  "managingOrganization": {
+    "reference": "Organization/example-organization"
+  }
+  // ... other patient data
+}
+```
+
+When updating a patient's managing organization:
+
+1. Check the existing `managingOrganizationAttachment` date.
+2. Verify at least one year has passed since the last attachment.
+3. Update both `managingOrganization` and the extension date together.
+
 ### Related
 
 - [Identifier systems](identifiers.html)

@@ -55,10 +55,52 @@ Numeric measurements use UCUM (`http://unitsofmeasure.org`) for the unit code:
 - If a result is reported with no unit (a dimensionless count, a titre, a ratio), still send `value`; only omit `code`/`system` when there is genuinely no UCUM unit.
 - Reference ranges and interpretation flags (normal / high / low / critical) belong on `Observation.referenceRange` and `Observation.interpretation` respectively.
 
+## Addresses {#addresses}
+
+Addresses appear on several resources (Patient, Practitioner, Organization, Location). UZ Core supports both Uzbekistan and international addresses.
+
+### Uzbekistan address
+
+Use **coded values** from the official registries for administrative divisions. The platform validates that region, district, and city match codes from the Digital Population Management (DPM) system:
+
+```jsonc
+{
+  "address": [{
+    "use": "home",
+    "type": "physical",
+    "country": "UZ",
+    "state": "1727",            // Region code from https://terminology.dhp.uz/fhir/core/ValueSet/state-vs (e.g., 1727 for Tashkent Region)
+    "district": "1727220",      // District code from https://terminology.dhp.uz/fhir/core/ValueSet/regions-vs (e.g., 1727220 for Bekobod district)
+    "city": "17150085",         // Mahalla code from https://terminology.dhp.uz/fhir/core/ValueSet/mahalla-vs (citizens' assembly)
+    "line": ["Amir Temur ko'chasi"],
+    "text": "Yangi Sergeli mahallasi, Amir Temur ko'chasi, 15-uy, 42-xonadon"
+  }]
+}
+```
+
+### International address
+
+For non-Uzbekistan addresses, administrative divisions are free text without required value sets, allowing flexible representation of foreign address structures:
+
+```jsonc
+{
+  "address": [{
+    "use": "home",
+    "type": "physical",
+    "country": "US",
+    "state": "California",             // Free text
+    "district": "Los Angeles County",  // Free text
+    "city": "Los Angeles",             // Free text
+    "line": ["123 Main Street", "Apt 4B"],
+    "postalCode": "90001"
+  }]
+}
+```
+
 ## Terminology and multilingual designations {#terminology}
 
 - Use codes from the bound value set according to the [binding strength](how-to-read.html#terminology-bindings).
-- National concepts are defined as UZ CodeSystems authored in Uzbek, with Russian and English designations for display. International HL7 terminology is supplemented with Uzbek/Russian translations. Designations are for presentation only - the `code` is what carries meaning.
+- Designations (Uzbek / Russian / English display names) are for presentation only - the `code` is what carries meaning. See [FHIR basics](fhir-basics.html#terminology) for how UZ CodeSystems and HL7 terminology supplements provide these multilingual designations.
 - Codes can be checked against the platform terminology server with the standard `$validate-code` operation:
 
 ```
