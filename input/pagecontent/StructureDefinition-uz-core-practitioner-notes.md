@@ -1,6 +1,6 @@
 ### Quick Start
 
-Common API interactions for this profile. `[base]` is the FHIR server base URL; `|` separates an identifier system from its value and must be URL-encoded as `%7C`.
+Common API interactions for this profile. `[base]` is the [FHIR server base URL](api-access.html#endpoints); `|` separates an identifier system from its value and must be URL-encoded as `%7C`.
 
 **Read a practitioner by server id**
 

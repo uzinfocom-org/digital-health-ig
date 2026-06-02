@@ -1,4 +1,6 @@
-### Endpoints
+### Endpoints {#endpoints}
+
+These are the FHIR server base URLs - the `[base]` shown in the API examples on every profile page. Append the resource type and any search parameters to one of them, for example `[base]/Patient?identifier=...`.
 
 - **Playground**: `playground.dhp.uz/fhir`
 - **Production**: `fhir.dhp.uz`

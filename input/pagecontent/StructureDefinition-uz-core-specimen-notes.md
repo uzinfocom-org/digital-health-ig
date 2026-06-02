@@ -1,6 +1,6 @@
 ### Quick Start
 
-This profile uses standard FHIR R5 search parameters. `[base]` is the FHIR server base URL; `|` separates system from value and must be URL-encoded as `%7C`.
+This profile uses standard FHIR R5 search parameters. `[base]` is the [FHIR server base URL](api-access.html#endpoints); `|` separates system from value and must be URL-encoded as `%7C`.
 
 **Read by server id**
 

@@ -1,6 +1,6 @@
 ### Quick Start
 
-A Questionnaire is a template, not patient data, so searches are by form metadata rather than by patient. `[base]` is the FHIR server base URL; `|` separates system from value and must be URL-encoded as `%7C`.
+A Questionnaire is a template, not patient data, so searches are by form metadata rather than by patient. `[base]` is the [FHIR server base URL](api-access.html#endpoints); `|` separates system from value and must be URL-encoded as `%7C`.
 
 **Read by server id**
 

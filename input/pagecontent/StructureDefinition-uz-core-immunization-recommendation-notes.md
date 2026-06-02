@@ -1,6 +1,6 @@
 ### Quick Start
 
-Common API interactions for this profile. `[base]` is the FHIR server base URL; `|` separates a token system from its value and must be URL-encoded as `%7C`. These interactions use standard FHIR R5 search parameters; see the [CapabilityStatement](CapabilityStatement-DHPCapabilityStatement.html) as it is finalized for this resource.
+Common API interactions for this profile. `[base]` is the [FHIR server base URL](api-access.html#endpoints); `|` separates a token system from its value and must be URL-encoded as `%7C`. These interactions use standard FHIR R5 search parameters; see the [CapabilityStatement](CapabilityStatement-DHPCapabilityStatement.html) as it is finalized for this resource.
 
 **Read a recommendation by server id**
 
