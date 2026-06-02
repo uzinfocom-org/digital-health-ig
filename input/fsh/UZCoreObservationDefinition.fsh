@@ -2,7 +2,7 @@ Profile: UZCoreObservationDefinition
 Parent: ObservationDefinition
 Id: uz-core-observation-definition
 Title: "UZ Core ObservationDefinition"
-Description: "Uzbekistan Core ObservationDefinition profile, used to define reusable observation templates"
+Description: "The UZCoreObservationDefinition profile is used to structurally describe laboratory services provided by healthcare organizations in the Patient Portal. It allows defining the laboratory service code, related analytes, reference ranges, and permitted coded normal values required to display information about laboratory tests to Patient Portal users."
 * ^experimental = true
 * ^status = #active
 
