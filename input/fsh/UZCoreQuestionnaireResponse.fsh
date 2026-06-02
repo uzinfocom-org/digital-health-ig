@@ -1,4 +1,3 @@
-/*
 Profile: UZCoreQuestionnaireResponse
 Parent: QuestionnaireResponse
 Id: uz-core-questionnaire-response
@@ -17,7 +16,6 @@ Description: "Uzbekistan Core QuestionnaireResponse profile for capturing respon
   * ^short = "Reference to the UZCoreQuestionnaire being answered"
 * status MS
 * subject MS
-* subject only Reference(UZCorePatient or UZCoreRelatedPerson)
 * encounter MS
 * encounter only Reference(UZCoreEncounter)
 * authored MS
@@ -35,4 +33,3 @@ Description: "Uzbekistan Core QuestionnaireResponse profile for capturing respon
     * value[x] MS
     * item MS
   * item MS
-*/

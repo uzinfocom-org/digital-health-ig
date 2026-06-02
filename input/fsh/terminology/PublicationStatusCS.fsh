@@ -1,9 +1,8 @@
 CodeSystem: PublicationStatusCS
 Id: publication-status-cs
-Title: "Publication Status CS"
+Title: "Publication status translations"
 Description: "Publication status supplement with translations in Uzbek and Russian"
-* insert SupplementCodeSystemDraft(publication-status-cs, $publication-status, 5.0.0)
-* ^experimental = true
+* insert SupplementCodeSystem(publication-status-cs, $publication-status, 5.0.0)
 
 * #draft
   * ^designation[0].language = #uz

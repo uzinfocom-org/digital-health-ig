@@ -1,0 +1,4046 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "draft",
+  "content": "supplement",
+  "name": "SpecimenTypesCS",
+  "id": "specimen-types-cs",
+  "title": "Specimen types translations",
+  "description": "Specimen types, supplemented with translations in Uzbek and Russian",
+  "url": "https://terminology.dhp.uz/fhir/core/CodeSystem/specimen-types-cs",
+  "concept": [
+    {
+      "code": "ABS",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Абсцесс"
+        },
+        {
+          "language": "uz",
+          "value": "Abstsess"
+        }
+      ]
+    },
+    {
+      "code": "ACNE",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Ткань, акне"
+        },
+        {
+          "language": "uz",
+          "value": "Akne to'qimasi"
+        }
+      ]
+    },
+    {
+      "code": "ACNFLD",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Жидкость, акне"
+        },
+        {
+          "language": "uz",
+          "value": "Akne suyuqligi"
+        }
+      ]
+    },
+    {
+      "code": "AIRS",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Образец воздуха"
+        },
+        {
+          "language": "uz",
+          "value": "Havo namunasi"
+        }
+      ]
+    },
+    {
+      "code": "ALL",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Аллотрансплантат"
+        },
+        {
+          "language": "uz",
+          "value": "Allograft"
+        }
+      ]
+    },
+    {
+      "code": "AMN",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Амниотическая жидкость"
+        },
+        {
+          "language": "uz",
+          "value": "Amniotik suyuqlik"
+        }
+      ]
+    },
+    {
+      "code": "AMP",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Ампутация"
+        },
+        {
+          "language": "uz",
+          "value": "Amputatsiya"
+        }
+      ]
+    },
+    {
+      "code": "ANGI",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Кончик катетера, ангио"
+        },
+        {
+          "language": "uz",
+          "value": "Kateter uchi, angio"
+        }
+      ]
+    },
+    {
+      "code": "ARTC",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Кончик катетера, артериальный"
+        },
+        {
+          "language": "uz",
+          "value": "Kateter uchi, arterial"
+        }
+      ]
+    },
+    {
+      "code": "ASERU",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Сыворотка, острая"
+        },
+        {
+          "language": "uz",
+          "value": "O'tkir zardob"
+        }
+      ]
+    },
+    {
+      "code": "ASP",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Аспират"
+        },
+        {
+          "language": "uz",
+          "value": "Aspirat"
+        }
+      ]
+    },
+    {
+      "code": "ATTE",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Окружающая среда, аттестат"
+        },
+        {
+          "language": "uz",
+          "value": "Muhit, attestatsiya"
+        }
+      ]
+    },
+    {
+      "code": "AUTOA",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Окружающая среда, автоклавная ампула"
+        },
+        {
+          "language": "uz",
+          "value": "Atrof-muhit, avtoklav ampulasi"
+        }
+      ]
+    },
+    {
+      "code": "AUTOC",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Окружающая среда, автоклавная капсула"
+        },
+        {
+          "language": "uz",
+          "value": "Atrof-muhit, avtoklav kapsulasi"
+        }
+      ]
+    },
+    {
+      "code": "AUTP",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Аутопсия"
+        },
+        {
+          "language": "uz",
+          "value": "Autopsiya"
+        }
+      ]
+    },
+    {
+      "code": "BBL",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Пакет с кровью"
+        },
+        {
+          "language": "uz",
+          "value": "Qon paketi"
+        }
+      ]
+    },
+    {
+      "code": "BCYST",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Киста Бейкера"
+        },
+        {
+          "language": "uz",
+          "value": "Beyker kistasi"
+        }
+      ]
+    },
+    {
+      "code": "BDY",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Всё тело"
+        },
+        {
+          "language": "uz",
+          "value": "Butun tana"
+        }
+      ]
+    },
+    {
+      "code": "BIFL",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Жёлчная жидкость"
+        },
+        {
+          "language": "uz",
+          "value": "O't suyuqligi"
+        }
+      ]
+    },
+    {
+      "code": "BITE",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Укус"
+        },
+        {
+          "language": "uz",
+          "value": "Tishlash"
+        }
+      ]
+    },
+    {
+      "code": "BLD",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Цельная кровь"
+        },
+        {
+          "language": "uz",
+          "value": "Butun qon"
+        }
+      ]
+    },
+    {
+      "code": "BLDA",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Артериальная кровь"
+        },
+        {
+          "language": "uz",
+          "value": "Arterial qon"
+        }
+      ]
+    },
+    {
+      "code": "BLDCO",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Пуповинная кровь"
+        },
+        {
+          "language": "uz",
+          "value": "Kindik qoni"
+        }
+      ]
+    },
+    {
+      "code": "BLDV",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Венозная кровь"
+        },
+        {
+          "language": "uz",
+          "value": "Venoz qon"
+        }
+      ]
+    },
+    {
+      "code": "BLEB",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Пузырёк"
+        },
+        {
+          "language": "uz",
+          "value": "Pufakcha"
+        }
+      ]
+    },
+    {
+      "code": "BLIST",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Волдырь"
+        },
+        {
+          "language": "uz",
+          "value": "Qavariq pufak"
+        }
+      ]
+    },
+    {
+      "code": "BOIL",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Фурункул"
+        },
+        {
+          "language": "uz",
+          "value": "Furunkul"
+        }
+      ]
+    },
+    {
+      "code": "BONE",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Кость"
+        },
+        {
+          "language": "uz",
+          "value": "Suyak"
+        }
+      ]
+    },
+    {
+      "code": "BOWL",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Содержимое кишечника"
+        },
+        {
+          "language": "uz",
+          "value": "Ichak tarkibi"
+        }
+      ]
+    },
+    {
+      "code": "BPH",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Базофилы"
+        },
+        {
+          "language": "uz",
+          "value": "Bazofillar"
+        }
+      ]
+    },
+    {
+      "code": "BPU",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Единица продукта крови"
+        },
+        {
+          "language": "uz",
+          "value": "Qon mahsuloti birligi"
+        }
+      ]
+    },
+    {
+      "code": "BRN",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Ожог"
+        },
+        {
+          "language": "uz",
+          "value": "Kuyish"
+        }
+      ]
+    },
+    {
+      "code": "BRSH",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Щётка"
+        },
+        {
+          "language": "uz",
+          "value": "Cho'tka"
+        }
+      ]
+    },
+    {
+      "code": "BRTH",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Выдыхаемый воздух"
+        },
+        {
+          "language": "uz",
+          "value": "Nafas chiqarilgan havo"
+        }
+      ]
+    },
+    {
+      "code": "BRUS",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Чистка"
+        },
+        {
+          "language": "uz",
+          "value": "Cho'tkalash"
+        }
+      ]
+    },
+    {
+      "code": "BUB",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Бубон"
+        },
+        {
+          "language": "uz",
+          "value": "Bubon"
+        }
+      ]
+    },
+    {
+      "code": "BULLA",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Булла / пузыри"
+        },
+        {
+          "language": "uz",
+          "value": "Pufaklar"
+        }
+      ]
+    },
+    {
+      "code": "BX",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Биопсия"
+        },
+        {
+          "language": "uz",
+          "value": "Biopsiya"
+        }
+      ]
+    },
+    {
+      "code": "CALC",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Конкремент (камень)"
+        },
+        {
+          "language": "uz",
+          "value": "Tosh (konkrement)"
+        }
+      ]
+    },
+    {
+      "code": "CARBU",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Карбункул"
+        },
+        {
+          "language": "uz",
+          "value": "Karbunkul"
+        }
+      ]
+    },
+    {
+      "code": "CAT",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Катетер"
+        },
+        {
+          "language": "uz",
+          "value": "Kateter"
+        }
+      ]
+    },
+    {
+      "code": "CBITE",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Укус кошки"
+        },
+        {
+          "language": "uz",
+          "value": "Mushuk tishlashi"
+        }
+      ]
+    },
+    {
+      "code": "CDM",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Сердечная мышца"
+        },
+        {
+          "language": "uz",
+          "value": "Yurak mushagi"
+        }
+      ]
+    },
+    {
+      "code": "CLIPP",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Срезы"
+        },
+        {
+          "language": "uz",
+          "value": "Qirqimlar"
+        }
+      ]
+    },
+    {
+      "code": "CNJT",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Конъюнктива"
+        },
+        {
+          "language": "uz",
+          "value": "Konyunktiva"
+        }
+      ]
+    },
+    {
+      "code": "CNL",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Канюля"
+        },
+        {
+          "language": "uz",
+          "value": "Kanyula"
+        }
+      ]
+    },
+    {
+      "code": "COL",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Молозиво"
+        },
+        {
+          "language": "uz",
+          "value": "Og'iz suti"
+        }
+      ]
+    },
+    {
+      "code": "CONE",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Коническая биопсия"
+        },
+        {
+          "language": "uz",
+          "value": "Konus biopsiyasi"
+        }
+      ]
+    },
+    {
+      "code": "CSCR",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Царапина кошки"
+        },
+        {
+          "language": "uz",
+          "value": "Mushuk tirnashi"
+        }
+      ]
+    },
+    {
+      "code": "CSERU",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Сыворотка, период выздоровления"
+        },
+        {
+          "language": "uz",
+          "value": "Sog'ayish davridagi zardob"
+        }
+      ]
+    },
+    {
+      "code": "CSF",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Цереброспинальная жидкость"
+        },
+        {
+          "language": "uz",
+          "value": "Miya-orqa miya suyuqligi"
+        }
+      ]
+    },
+    {
+      "code": "CSITE",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Место введения катетера"
+        },
+        {
+          "language": "uz",
+          "value": "Kateter kiritilgan joy"
+        }
+      ]
+    },
+    {
+      "code": "CSMY",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Жидкость из цистостомической трубки"
+        },
+        {
+          "language": "uz",
+          "value": "Tsistostomiya naychasi suyuqligi"
+        }
+      ]
+    },
+    {
+      "code": "CST",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Жидкость кисты"
+        },
+        {
+          "language": "uz",
+          "value": "Kista suyuqligi"
+        }
+      ]
+    },
+    {
+      "code": "CSVR",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Кровь, аппарат Cell Saver"
+        },
+        {
+          "language": "uz",
+          "value": "Cell Saver qoni"
+        }
+      ]
+    },
+    {
+      "code": "CTP",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Кончик катетера"
+        },
+        {
+          "language": "uz",
+          "value": "Kateter uchi"
+        }
+      ]
+    },
+    {
+      "code": "CUR",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Кюретаж"
+        },
+        {
+          "language": "uz",
+          "value": "Kyuretaj"
+        }
+      ]
+    },
+    {
+      "code": "CVM",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Цервикальная слизь"
+        },
+        {
+          "language": "uz",
+          "value": "Bachadon bo'yni shilliqi"
+        }
+      ]
+    },
+    {
+      "code": "CVPS",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Место, ЦВД"
+        },
+        {
+          "language": "uz",
+          "value": "CVP joyi"
+        }
+      ]
+    },
+    {
+      "code": "CVPT",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Кончик катетера, ЦВД"
+        },
+        {
+          "language": "uz",
+          "value": "Kateter uchi, CVP"
+        }
+      ]
+    },
+    {
+      "code": "CYN",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Узел, кистозный"
+        },
+        {
+          "language": "uz",
+          "value": "Kistoz tugun"
+        }
+      ]
+    },
+    {
+      "code": "CYST",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Киста"
+        },
+        {
+          "language": "uz",
+          "value": "Kista"
+        }
+      ]
+    },
+    {
+      "code": "DBITE",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Укус собаки"
+        },
+        {
+          "language": "uz",
+          "value": "It tishlashi"
+        }
+      ]
+    },
+    {
+      "code": "DCS",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Мокрота, глубокий кашель"
+        },
+        {
+          "language": "uz",
+          "value": "Chuqur yo'tal balg'ami"
+        }
+      ]
+    },
+    {
+      "code": "DEC",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Декубитальная язва"
+        },
+        {
+          "language": "uz",
+          "value": "Yotoq yarasi"
+        }
+      ]
+    },
+    {
+      "code": "DEION",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Окружающая среда, вода (деионизированная)"
+        },
+        {
+          "language": "uz",
+          "value": "Atrof-muhit, deionizatsiyalangan suv"
+        }
+      ]
+    },
+    {
+      "code": "DIA",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Диализат"
+        },
+        {
+          "language": "uz",
+          "value": "Dializat"
+        }
+      ]
+    },
+    {
+      "code": "DIAF",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Диализная жидкость"
+        },
+        {
+          "language": "uz",
+          "value": "Dializ suyuqligi"
+        }
+      ]
+    },
+    {
+      "code": "DISCHG",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Выделения"
+        },
+        {
+          "language": "uz",
+          "value": "Ajralmalar"
+        }
+      ]
+    },
+    {
+      "code": "DIV",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Дивертикул"
+        },
+        {
+          "language": "uz",
+          "value": "Divertikul"
+        }
+      ]
+    },
+    {
+      "code": "DRN",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Дренаж"
+        },
+        {
+          "language": "uz",
+          "value": "Drenaj"
+        }
+      ]
+    },
+    {
+      "code": "DRNG",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Дренаж, трубка"
+        },
+        {
+          "language": "uz",
+          "value": "Drenaj, naycha"
+        }
+      ]
+    },
+    {
+      "code": "DRNGP",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Дренаж, Пенроуз"
+        },
+        {
+          "language": "uz",
+          "value": "Drenaj, Penroz"
+        }
+      ]
+    },
+    {
+      "code": "DUFL",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Дуоденальная жидкость"
+        },
+        {
+          "language": "uz",
+          "value": "O'n ikki barmoq ichak suyuqligi"
+        }
+      ]
+    },
+    {
+      "code": "EARW",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Ушная сера"
+        },
+        {
+          "language": "uz",
+          "value": "Quloq kiri"
+        }
+      ]
+    },
+    {
+      "code": "EBRUSH",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Пищеводная щётка"
+        },
+        {
+          "language": "uz",
+          "value": "Qizilo'ngach cho'tkasi"
+        }
+      ]
+    },
+    {
+      "code": "EEYE",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Окружающая среда, глазная промывка"
+        },
+        {
+          "language": "uz",
+          "value": "Atrof-muhit, ko'z yuvish"
+        }
+      ]
+    },
+    {
+      "code": "EFF",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Окружающая среда, сток"
+        },
+        {
+          "language": "uz",
+          "value": "Atrof-muhit, oqindi"
+        }
+      ]
+    },
+    {
+      "code": "EFFUS",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Выпот"
+        },
+        {
+          "language": "uz",
+          "value": "Ekssudat"
+        }
+      ]
+    },
+    {
+      "code": "EFOD",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Окружающая среда, пища"
+        },
+        {
+          "language": "uz",
+          "value": "Atrof-muhit, oziq-ovqat"
+        }
+      ]
+    },
+    {
+      "code": "EISO",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Окружающая среда, инкубатор"
+        },
+        {
+          "language": "uz",
+          "value": "Atrof-muhit, inkubator"
+        }
+      ]
+    },
+    {
+      "code": "ELT",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Электрод"
+        },
+        {
+          "language": "uz",
+          "value": "Elektrod"
+        }
+      ]
+    },
+    {
+      "code": "ENVIR",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Окружающая среда, неопознанное вещество"
+        },
+        {
+          "language": "uz",
+          "value": "Atrof-muhit, noma’lum modda"
+        }
+      ]
+    },
+    {
+      "code": "EOS",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Эозинофилы"
+        },
+        {
+          "language": "uz",
+          "value": "Eozinofillar"
+        }
+      ]
+    },
+    {
+      "code": "EOTH",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Окружающая среда, другое вещество"
+        },
+        {
+          "language": "uz",
+          "value": "Atrof-muhit, boshqa modda"
+        }
+      ]
+    },
+    {
+      "code": "ESOI",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Окружающая среда, почва"
+        },
+        {
+          "language": "uz",
+          "value": "Atrof-muhit, tuproq"
+        }
+      ]
+    },
+    {
+      "code": "ESOS",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Окружающая среда, раствор (стерильный)"
+        },
+        {
+          "language": "uz",
+          "value": "Atrof-muhit, steril eritma"
+        }
+      ]
+    },
+    {
+      "code": "ETA",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Аспират, эндотрахеальный"
+        },
+        {
+          "language": "uz",
+          "value": "Aspirat, endotraxeal"
+        }
+      ]
+    },
+    {
+      "code": "ETTP",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Кончик катетера, эндотрахеальный"
+        },
+        {
+          "language": "uz",
+          "value": "Kateter uchi, endotraxeal"
+        }
+      ]
+    },
+    {
+      "code": "ETTUB",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Эндотрахеальная трубка"
+        },
+        {
+          "language": "uz",
+          "value": "Endotraxeal naycha"
+        }
+      ]
+    },
+    {
+      "code": "EWHI",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Окружающая среда, гидромассажная ванна"
+        },
+        {
+          "language": "uz",
+          "value": "Atrof-muhit, gidromassaj vannasi"
+        }
+      ]
+    },
+    {
+      "code": "EXG",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Газ, выдыхаемый"
+        },
+        {
+          "language": "uz",
+          "value": "Nafas chiqarilgan gaz"
+        }
+      ]
+    },
+    {
+      "code": "EXS",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Шунт, наружный"
+        },
+        {
+          "language": "uz",
+          "value": "Tashqi shunt"
+        }
+      ]
+    },
+    {
+      "code": "EXUDTE",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Экссудат"
+        },
+        {
+          "language": "uz",
+          "value": "Ekssudat"
+        }
+      ]
+    },
+    {
+      "code": "FAW",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Окружающая среда, колодезная вода"
+        },
+        {
+          "language": "uz",
+          "value": "Atrof-muhit, quduq suvi"
+        }
+      ]
+    },
+    {
+      "code": "FBLOOD",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Кровь, плодная"
+        },
+        {
+          "language": "uz",
+          "value": "Homila qoni"
+        }
+      ]
+    },
+    {
+      "code": "FGA",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Жидкость, брюшная полость"
+        },
+        {
+          "language": "uz",
+          "value": "Qorin bo'shlig'i suyuqligi"
+        }
+      ]
+    },
+    {
+      "code": "FIB",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Фибробласты"
+        },
+        {
+          "language": "uz",
+          "value": "Fibroblastlar"
+        }
+      ]
+    },
+    {
+      "code": "FIST",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Свищ"
+        },
+        {
+          "language": "uz",
+          "value": "Fistula"
+        }
+      ]
+    },
+    {
+      "code": "FLD",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Жидкость, другая"
+        },
+        {
+          "language": "uz",
+          "value": "Boshqa suyuqlik"
+        }
+      ]
+    },
+    {
+      "code": "FLT",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Фильтр"
+        },
+        {
+          "language": "uz",
+          "value": "Filtr"
+        }
+      ]
+    },
+    {
+      "code": "FLU",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Жидкость, тело (неуточнённая)"
+        },
+        {
+          "language": "uz",
+          "value": "Tana suyuqligi (aniqlanmagan)"
+        }
+      ]
+    },
+    {
+      "code": "FLUID",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Жидкость"
+        },
+        {
+          "language": "uz",
+          "value": "Suyuqlik"
+        }
+      ]
+    },
+    {
+      "code": "FOLEY",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Кончик катетера Фолея"
+        },
+        {
+          "language": "uz",
+          "value": "Foley kateterining uchi"
+        }
+      ]
+    },
+    {
+      "code": "FRS",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Респираторная жидкость"
+        },
+        {
+          "language": "uz",
+          "value": "Nafas yo'llari suyuqligi"
+        }
+      ]
+    },
+    {
+      "code": "FSCLP",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Кожа головы плода"
+        },
+        {
+          "language": "uz",
+          "value": "Homila bosh terisi"
+        }
+      ]
+    },
+    {
+      "code": "FUR",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Фурункул"
+        },
+        {
+          "language": "uz",
+          "value": "Furunkul"
+        }
+      ]
+    },
+    {
+      "code": "GAS",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Газ"
+        },
+        {
+          "language": "uz",
+          "value": "Gaz"
+        }
+      ]
+    },
+    {
+      "code": "GASA",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Аспират, желудочный"
+        },
+        {
+          "language": "uz",
+          "value": "Oshqozon aspirati"
+        }
+      ]
+    },
+    {
+      "code": "GASAN",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Антрум желудка"
+        },
+        {
+          "language": "uz",
+          "value": "Oshqozon antrumi"
+        }
+      ]
+    },
+    {
+      "code": "GASBR",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Щётка, желудочная"
+        },
+        {
+          "language": "uz",
+          "value": "Oshqozonni cho'tkalash"
+        }
+      ]
+    },
+    {
+      "code": "GASD",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Дренаж, желудочный"
+        },
+        {
+          "language": "uz",
+          "value": "Oshqozon drenaji"
+        }
+      ]
+    },
+    {
+      "code": "GAST",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Жидкость (содержимое), желудочная"
+        },
+        {
+          "language": "uz",
+          "value": "Oshqozon tarkibi (suyuqlik)"
+        }
+      ]
+    },
+    {
+      "code": "GENL",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Послеродовые выделения"
+        },
+        {
+          "language": "uz",
+          "value": "Jinsiy yo'llardan lohiya"
+        }
+      ]
+    },
+    {
+      "code": "GENV",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Влагалищные выделения"
+        },
+        {
+          "language": "uz",
+          "value": "Qin ajralmalari"
+        }
+      ]
+    },
+    {
+      "code": "GRAFT",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Трансплантат"
+        },
+        {
+          "language": "uz",
+          "value": "Transplantat"
+        }
+      ]
+    },
+    {
+      "code": "GRAFTS",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Место трансплантата"
+        },
+        {
+          "language": "uz",
+          "value": "Transplantat joyi"
+        }
+      ]
+    },
+    {
+      "code": "GRANU",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Гранулёма"
+        },
+        {
+          "language": "uz",
+          "value": "Granulyoma"
+        }
+      ]
+    },
+    {
+      "code": "GROSH",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Катетер Грошонга"
+        },
+        {
+          "language": "uz",
+          "value": "Groshong kateteri"
+        }
+      ]
+    },
+    {
+      "code": "GSOL",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Раствор для гастростомы"
+        },
+        {
+          "language": "uz",
+          "value": "Gastrostomiya uchun eritma"
+        }
+      ]
+    },
+    {
+      "code": "GSPEC",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Биопсия желудка"
+        },
+        {
+          "language": "uz",
+          "value": "Oshqozon biopsiyasi"
+        }
+      ]
+    },
+    {
+      "code": "GT",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Желудочная трубка"
+        },
+        {
+          "language": "uz",
+          "value": "Oshqozon naychasi"
+        }
+      ]
+    },
+    {
+      "code": "GTUBE",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Дренажная трубка (гастростома)"
+        },
+        {
+          "language": "uz",
+          "value": "Drenaj naychasi (gastrostomiya)"
+        }
+      ]
+    },
+    {
+      "code": "HAR",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Волосы"
+        },
+        {
+          "language": "uz",
+          "value": "Soch"
+        }
+      ]
+    },
+    {
+      "code": "HBITE",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Укус человека"
+        },
+        {
+          "language": "uz",
+          "value": "Inson tishlashi"
+        }
+      ]
+    },
+    {
+      "code": "HEMAQ",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Кончик катетера, Hemaquit"
+        },
+        {
+          "language": "uz",
+          "value": "Hemaquit kateteri uchi"
+        }
+      ]
+    },
+    {
+      "code": "HEMO",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Кончик катетера, Hemovac"
+        },
+        {
+          "language": "uz",
+          "value": "Hemovac kateteri uchi"
+        }
+      ]
+    },
+    {
+      "code": "HERNI",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Ткань, грыжевая"
+        },
+        {
+          "language": "uz",
+          "value": "Churrali to'qima"
+        }
+      ]
+    },
+    {
+      "code": "HEV",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Дренаж Hemovac"
+        },
+        {
+          "language": "uz",
+          "value": "Hemovac drenaji"
+        }
+      ]
+    },
+    {
+      "code": "HIC",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Катетер Хикмана"
+        },
+        {
+          "language": "uz",
+          "value": "Hickman kateteri"
+        }
+      ]
+    },
+    {
+      "code": "HYDC",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Жидкость при гидроцеле"
+        },
+        {
+          "language": "uz",
+          "value": "Gidrotsele suyuqligi"
+        }
+      ]
+    },
+    {
+      "code": "IBITE",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Укус насекомого"
+        },
+        {
+          "language": "uz",
+          "value": "Hasharot tishlashi"
+        }
+      ]
+    },
+    {
+      "code": "ICYST",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Инклюзионная киста"
+        },
+        {
+          "language": "uz",
+          "value": "Inklyuzion kista"
+        }
+      ]
+    },
+    {
+      "code": "IDC",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Кончик постоянного катетера"
+        },
+        {
+          "language": "uz",
+          "value": "Doimiy kateter uchi"
+        }
+      ]
+    },
+    {
+      "code": "IHG",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Вдыхаемый газ"
+        },
+        {
+          "language": "uz",
+          "value": "Nafas bilan yutilgan gaz"
+        }
+      ]
+    },
+    {
+      "code": "ILEO",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Дренаж, илеостома"
+        },
+        {
+          "language": "uz",
+          "value": "Ileostomiya drenaji"
+        }
+      ]
+    },
+    {
+      "code": "ILLEG",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Источник образца неразборчив"
+        },
+        {
+          "language": "uz",
+          "value": "Namuna manbai o'qilmaydi"
+        }
+      ]
+    },
+    {
+      "code": "IMP",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Имплантат"
+        },
+        {
+          "language": "uz",
+          "value": "Implant"
+        }
+      ]
+    },
+    {
+      "code": "INCI",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Место хирургического разреза"
+        },
+        {
+          "language": "uz",
+          "value": "Jarrohlik kesmasi joyi"
+        }
+      ]
+    },
+    {
+      "code": "INFIL",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Инфильтрат"
+        },
+        {
+          "language": "uz",
+          "value": "Infiltrat"
+        }
+      ]
+    },
+    {
+      "code": "INS",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Насекомое"
+        },
+        {
+          "language": "uz",
+          "value": "Hasharot"
+        }
+      ]
+    },
+    {
+      "code": "INTRD",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Кончик вводного катетера"
+        },
+        {
+          "language": "uz",
+          "value": "Kirituvchi kateter uchi"
+        }
+      ]
+    },
+    {
+      "code": "ISLT",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Изолят"
+        },
+        {
+          "language": "uz",
+          "value": "Izolat"
+        }
+      ]
+    },
+    {
+      "code": "IT",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Интубационная трубка"
+        },
+        {
+          "language": "uz",
+          "value": "Intubatsiya naychasi"
+        }
+      ]
+    },
+    {
+      "code": "IUD",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Внутриматочное устройство"
+        },
+        {
+          "language": "uz",
+          "value": "Bachadon ichki vositasi"
+        }
+      ]
+    },
+    {
+      "code": "IVCAT",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Кончик внутривенного катетера"
+        },
+        {
+          "language": "uz",
+          "value": "IV kateter uchi"
+        }
+      ]
+    },
+    {
+      "code": "IVFLD",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Внутривенная жидкость"
+        },
+        {
+          "language": "uz",
+          "value": "IV suyuqlik"
+        }
+      ]
+    },
+    {
+      "code": "IVTIP",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Кончик трубки, внутривенный"
+        },
+        {
+          "language": "uz",
+          "value": "IV naycha uchi"
+        }
+      ]
+    },
+    {
+      "code": "JEJU",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Дренаж, тощая кишка"
+        },
+        {
+          "language": "uz",
+          "value": "Yeyunal drenaj"
+        }
+      ]
+    },
+    {
+      "code": "JNTFLD",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Суставная жидкость"
+        },
+        {
+          "language": "uz",
+          "value": "Bo'g'im suyuqligi"
+        }
+      ]
+    },
+    {
+      "code": "JP",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Дренаж Джексона–Пратта"
+        },
+        {
+          "language": "uz",
+          "value": "Jackson-Pratt drenaji"
+        }
+      ]
+    },
+    {
+      "code": "KELOI",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Промывание"
+        },
+        {
+          "language": "uz",
+          "value": "Yuvish"
+        }
+      ]
+    },
+    {
+      "code": "KIDFLD",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Почечная жидкость"
+        },
+        {
+          "language": "uz",
+          "value": "Buyrak suyuqligi"
+        }
+      ]
+    },
+    {
+      "code": "LAVG",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Бронхиальный лаваж"
+        },
+        {
+          "language": "uz",
+          "value": "Bronxial lavaj"
+        }
+      ]
+    },
+    {
+      "code": "LAVGG",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Желудочный лаваж"
+        },
+        {
+          "language": "uz",
+          "value": "Oshqozon lavaji"
+        }
+      ]
+    },
+    {
+      "code": "LAVGP",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Перитонеальный лаваж"
+        },
+        {
+          "language": "uz",
+          "value": "Peritoneal lavaj"
+        }
+      ]
+    },
+    {
+      "code": "LAVPG",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Пре-бронхиальный лаваж"
+        },
+        {
+          "language": "uz",
+          "value": "Bronxdan oldingi lavaj"
+        }
+      ]
+    },
+    {
+      "code": "LENS1",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Контактная линза"
+        },
+        {
+          "language": "uz",
+          "value": "Kontakt linza"
+        }
+      ]
+    },
+    {
+      "code": "LENS2",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Контейнер для контактных линз"
+        },
+        {
+          "language": "uz",
+          "value": "Kontakt linza qutisi"
+        }
+      ]
+    },
+    {
+      "code": "LESN",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Поражение"
+        },
+        {
+          "language": "uz",
+          "value": "Shikastlanish"
+        }
+      ]
+    },
+    {
+      "code": "LIQ",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Жидкость, неуточнённая"
+        },
+        {
+          "language": "uz",
+          "value": "Suyuqlik (aniqlanmagan)"
+        }
+      ]
+    },
+    {
+      "code": "LIQO",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Жидкость, другая"
+        },
+        {
+          "language": "uz",
+          "value": "Boshqa suyuqlik"
+        }
+      ]
+    },
+    {
+      "code": "LNA",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Артериальная линия"
+        },
+        {
+          "language": "uz",
+          "value": "Arterial liniya"
+        }
+      ]
+    },
+    {
+      "code": "LNV",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Венозная линия"
+        },
+        {
+          "language": "uz",
+          "value": "Venoz liniya"
+        }
+      ]
+    },
+    {
+      "code": "LSAC",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Жидкость поясничного мешка"
+        },
+        {
+          "language": "uz",
+          "value": "Lumbal qopcha suyuqligi"
+        }
+      ]
+    },
+    {
+      "code": "LYM",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Лимфоциты"
+        },
+        {
+          "language": "uz",
+          "value": "Limfotsitlar"
+        }
+      ]
+    },
+    {
+      "code": "MAC",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Макрофаги"
+        },
+        {
+          "language": "uz",
+          "value": "Makrofaglar"
+        }
+      ]
+    },
+    {
+      "code": "MAHUR",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Кончик катетера Makurkur"
+        },
+        {
+          "language": "uz",
+          "value": "Makurkur kateteri uchi"
+        }
+      ]
+    },
+    {
+      "code": "MAR",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Костный мозг"
+        },
+        {
+          "language": "uz",
+          "value": "Suyak iligi"
+        }
+      ]
+    },
+    {
+      "code": "MASS",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Опухоль"
+        },
+        {
+          "language": "uz",
+          "value": "O'sma"
+        }
+      ]
+    },
+    {
+      "code": "MBLD",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Менструальная кровь"
+        },
+        {
+          "language": "uz",
+          "value": "Hayz qoni"
+        }
+      ]
+    },
+    {
+      "code": "MEC",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Меконий"
+        },
+        {
+          "language": "uz",
+          "value": "Mekoniy"
+        }
+      ]
+    },
+    {
+      "code": "MILK",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Грудное молоко"
+        },
+        {
+          "language": "uz",
+          "value": "Ona suti"
+        }
+      ]
+    },
+    {
+      "code": "MLK",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Молоко"
+        },
+        {
+          "language": "uz",
+          "value": "Sut"
+        }
+      ]
+    },
+    {
+      "code": "MUCOS",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Слизистая оболочка"
+        },
+        {
+          "language": "uz",
+          "value": "Shilliq qavat"
+        }
+      ]
+    },
+    {
+      "code": "MUCUS",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Слизь"
+        },
+        {
+          "language": "uz",
+          "value": "Shilliq"
+        }
+      ]
+    },
+    {
+      "code": "NAIL",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Ноготь"
+        },
+        {
+          "language": "uz",
+          "value": "Tirnoq"
+        }
+      ]
+    },
+    {
+      "code": "NASDR",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Носовой дренаж"
+        },
+        {
+          "language": "uz",
+          "value": "Burun drenaji"
+        }
+      ]
+    },
+    {
+      "code": "NEDL",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Игла"
+        },
+        {
+          "language": "uz",
+          "value": "Igna"
+        }
+      ]
+    },
+    {
+      "code": "NEPH",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Место нефростомы"
+        },
+        {
+          "language": "uz",
+          "value": "Nefrostomiya joyi"
+        }
+      ]
+    },
+    {
+      "code": "NGASP",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Аспират, назогастральный"
+        },
+        {
+          "language": "uz",
+          "value": "Nazogastral aspirat"
+        }
+      ]
+    },
+    {
+      "code": "NGAST",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Дренаж, назогастральный"
+        },
+        {
+          "language": "uz",
+          "value": "Nazogastral drenaj"
+        }
+      ]
+    },
+    {
+      "code": "NGS",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Место, назо-/желудочное"
+        },
+        {
+          "language": "uz",
+          "value": "Nazo/gastral joy"
+        }
+      ]
+    },
+    {
+      "code": "NODUL",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Узел(ы)"
+        },
+        {
+          "language": "uz",
+          "value": "Tugun(lar)"
+        }
+      ]
+    },
+    {
+      "code": "NSECR",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Носовой секрет"
+        },
+        {
+          "language": "uz",
+          "value": "Burun sekretsiyasi"
+        }
+      ]
+    },
+    {
+      "code": "ORH",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Другое"
+        },
+        {
+          "language": "uz",
+          "value": "Boshqa"
+        }
+      ]
+    },
+    {
+      "code": "ORL",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Поражение полости рта"
+        },
+        {
+          "language": "uz",
+          "value": "Og'iz bo'shlig'i shikastlanishi"
+        }
+      ]
+    },
+    {
+      "code": "OTH",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Источник, другой"
+        },
+        {
+          "language": "uz",
+          "value": "Manba, boshqa"
+        }
+      ]
+    },
+    {
+      "code": "PACEM",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Кардиостимулятор"
+        },
+        {
+          "language": "uz",
+          "value": "Kardiostimulyator"
+        }
+      ]
+    },
+    {
+      "code": "PAFL",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Панкреатическая жидкость"
+        },
+        {
+          "language": "uz",
+          "value": "Oshqozon osti bezi suyuqligi"
+        }
+      ]
+    },
+    {
+      "code": "PCFL",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Перикардиальная жидкость"
+        },
+        {
+          "language": "uz",
+          "value": "Perikardial suyuqlik"
+        }
+      ]
+    },
+    {
+      "code": "PDTS",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Туннель/Область перитонеального диализа"
+        },
+        {
+          "language": "uz",
+          "value": "Peritoneal dializ tunneli / Joyi"
+        }
+      ]
+    },
+    {
+      "code": "PELVA",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Тазовый абсцесс"
+        },
+        {
+          "language": "uz",
+          "value": "Chanoq abscessi"
+        }
+      ]
+    },
+    {
+      "code": "PENIL",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Поражение полового члена"
+        },
+        {
+          "language": "uz",
+          "value": "Jinsiy olat shikastlanishi"
+        }
+      ]
+    },
+    {
+      "code": "PERIA",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Перианальный абсцесс"
+        },
+        {
+          "language": "uz",
+          "value": "Perianal abscess"
+        }
+      ]
+    },
+    {
+      "code": "PILOC",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Пилонидальная киста"
+        },
+        {
+          "language": "uz",
+          "value": "Pilonidal kista"
+        }
+      ]
+    },
+    {
+      "code": "PINS",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Место штифта"
+        },
+        {
+          "language": "uz",
+          "value": "Pin joyi"
+        }
+      ]
+    },
+    {
+      "code": "PIS",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Место установки кардиостимулятора"
+        },
+        {
+          "language": "uz",
+          "value": "Kardiostimulyator o'rnatilgan joy"
+        }
+      ]
+    },
+    {
+      "code": "PLAN",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Растительный материал"
+        },
+        {
+          "language": "uz",
+          "value": "O'simlik materiali"
+        }
+      ]
+    },
+    {
+      "code": "PLAS",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Плазма"
+        },
+        {
+          "language": "uz",
+          "value": "Plazma"
+        }
+      ]
+    },
+    {
+      "code": "PLB",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Пакет плазмы"
+        },
+        {
+          "language": "uz",
+          "value": "Plazma paketi"
+        }
+      ]
+    },
+    {
+      "code": "PLC",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Плацента"
+        },
+        {
+          "language": "uz",
+          "value": "Platsenta"
+        }
+      ]
+    },
+    {
+      "code": "PLEVS",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Сыворотка, пиковый уровень"
+        },
+        {
+          "language": "uz",
+          "value": "Zardob, cho'qqi daraja"
+        }
+      ]
+    },
+    {
+      "code": "PLR",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Плевральная жидкость (жидкость при торакоцентезе)"
+        },
+        {
+          "language": "uz",
+          "value": "Plevra suyuqligi (torakosentez suyuqligi)"
+        }
+      ]
+    },
+    {
+      "code": "PMN",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Полиморфноядерные нейтрофилы"
+        },
+        {
+          "language": "uz",
+          "value": "Polimorfonuklear neytrofillar"
+        }
+      ]
+    },
+    {
+      "code": "PND",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Дренаж полового члена"
+        },
+        {
+          "language": "uz",
+          "value": "Jinsiy olat drenaji"
+        }
+      ]
+    },
+    {
+      "code": "POL",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Полипы"
+        },
+        {
+          "language": "uz",
+          "value": "Poliplar"
+        }
+      ]
+    },
+    {
+      "code": "POPGS",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Место трансплантата, подколенная область"
+        },
+        {
+          "language": "uz",
+          "value": "Popliteal sohadagi transplantat joyi"
+        }
+      ]
+    },
+    {
+      "code": "POPLG",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Трансплантат, подколенная область"
+        },
+        {
+          "language": "uz",
+          "value": "Popliteal transplantat"
+        }
+      ]
+    },
+    {
+      "code": "POPLV",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Место, подколенная вена"
+        },
+        {
+          "language": "uz",
+          "value": "Popliteal vena joyi"
+        }
+      ]
+    },
+    {
+      "code": "PORTA",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Катетер Porta"
+        },
+        {
+          "language": "uz",
+          "value": "Porta kateteri"
+        }
+      ]
+    },
+    {
+      "code": "PPP",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Плазма, бедная тромбоцитами"
+        },
+        {
+          "language": "uz",
+          "value": "Trombotsitlarga kambag'al plazma"
+        }
+      ]
+    },
+    {
+      "code": "PROST",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Протезное устройство"
+        },
+        {
+          "language": "uz",
+          "value": "Protez qurilma"
+        }
+      ]
+    },
+    {
+      "code": "PRP",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Плазма, богатая тромбоцитами"
+        },
+        {
+          "language": "uz",
+          "value": "Trombotsitlarga boy plazma"
+        }
+      ]
+    },
+    {
+      "code": "PSC",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Псевдокиста"
+        },
+        {
+          "language": "uz",
+          "value": "Psevdokista"
+        }
+      ]
+    },
+    {
+      "code": "PUNCT",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Рана, колотая"
+        },
+        {
+          "language": "uz",
+          "value": "Sanchilgan yara"
+        }
+      ]
+    },
+    {
+      "code": "PUS",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Гной"
+        },
+        {
+          "language": "uz",
+          "value": "Yiring"
+        }
+      ]
+    },
+    {
+      "code": "PUSFR",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Пустула"
+        },
+        {
+          "language": "uz",
+          "value": "Pustula"
+        }
+      ]
+    },
+    {
+      "code": "PUST",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Гной"
+        },
+        {
+          "language": "uz",
+          "value": "Yiring"
+        }
+      ]
+    },
+    {
+      "code": "QC3",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Контроль качества"
+        },
+        {
+          "language": "uz",
+          "value": "Sifat nazorati"
+        }
+      ]
+    },
+    {
+      "code": "RANDU",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Моча, случайная"
+        },
+        {
+          "language": "uz",
+          "value": "Tasodifiy siydik"
+        }
+      ]
+    },
+    {
+      "code": "RBC",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Эритроциты"
+        },
+        {
+          "language": "uz",
+          "value": "Eritrotsitlar"
+        }
+      ]
+    },
+    {
+      "code": "RBITE",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Укус рептилии"
+        },
+        {
+          "language": "uz",
+          "value": "Sudralib yuruvchi hayvon tishlashi"
+        }
+      ]
+    },
+    {
+      "code": "RECT",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Ректальный дренаж"
+        },
+        {
+          "language": "uz",
+          "value": "Rektal drenaj"
+        }
+      ]
+    },
+    {
+      "code": "RECTA",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Ректальный абсцесс"
+        },
+        {
+          "language": "uz",
+          "value": "Rektal abstsess"
+        }
+      ]
+    },
+    {
+      "code": "RENALC",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Почечная киста"
+        },
+        {
+          "language": "uz",
+          "value": "Buyrak kistasi"
+        }
+      ]
+    },
+    {
+      "code": "RENC",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Жидкость почечной кисты"
+        },
+        {
+          "language": "uz",
+          "value": "Buyrak kistasi suyuqligi"
+        }
+      ]
+    },
+    {
+      "code": "RES",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Респираторный материал"
+        },
+        {
+          "language": "uz",
+          "value": "Nafas yo'llari materiali"
+        }
+      ]
+    },
+    {
+      "code": "SAL",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Слюна"
+        },
+        {
+          "language": "uz",
+          "value": "So'lak"
+        }
+      ]
+    },
+    {
+      "code": "SCAR",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Ткань, келоид (рубец)"
+        },
+        {
+          "language": "uz",
+          "value": "Keloid (chandiq) to'qimasi"
+        }
+      ]
+    },
+    {
+      "code": "SCLV",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Кончик катетера, подключичный"
+        },
+        {
+          "language": "uz",
+          "value": "Subklavian kateter uchi"
+        }
+      ]
+    },
+    {
+      "code": "SCROA",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Мошоночный абсцесс"
+        },
+        {
+          "language": "uz",
+          "value": "Moyak xaltasi abstsessi"
+        }
+      ]
+    },
+    {
+      "code": "SECRE",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Выделения"
+        },
+        {
+          "language": "uz",
+          "value": "Ajralmalar"
+        }
+      ]
+    },
+    {
+      "code": "SER",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Сыворотка"
+        },
+        {
+          "language": "uz",
+          "value": "Zardob"
+        }
+      ]
+    },
+    {
+      "code": "SHU",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Место шунта"
+        },
+        {
+          "language": "uz",
+          "value": "Shunt joyi"
+        }
+      ]
+    },
+    {
+      "code": "SHUNF",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Жидкость шунта"
+        },
+        {
+          "language": "uz",
+          "value": "Shunt suyuqligi"
+        }
+      ]
+    },
+    {
+      "code": "SHUNT",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Шунт"
+        },
+        {
+          "language": "uz",
+          "value": "Shunt"
+        }
+      ]
+    },
+    {
+      "code": "SITE",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Место"
+        },
+        {
+          "language": "uz",
+          "value": "Joy"
+        }
+      ]
+    },
+    {
+      "code": "SKBP",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Биопсия кожи"
+        },
+        {
+          "language": "uz",
+          "value": "Teri biopsiyasi"
+        }
+      ]
+    },
+    {
+      "code": "SKN",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Кожа"
+        },
+        {
+          "language": "uz",
+          "value": "Teri"
+        }
+      ]
+    },
+    {
+      "code": "SMM",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Опухоль поднижнечелюстной области"
+        },
+        {
+          "language": "uz",
+          "value": "Pastki jag' osti massasi"
+        }
+      ]
+    },
+    {
+      "code": "SMN",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Семенная жидкость"
+        },
+        {
+          "language": "uz",
+          "value": "Urug' suyuqligi"
+        }
+      ]
+    },
+    {
+      "code": "SNV",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Синовиальная жидкость (суставная)"
+        },
+        {
+          "language": "uz",
+          "value": "Sinovial (bo'g'im) suyuqligi"
+        }
+      ]
+    },
+    {
+      "code": "SPRM",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Сперматозоиды"
+        },
+        {
+          "language": "uz",
+          "value": "Spermatozoidlar"
+        }
+      ]
+    },
+    {
+      "code": "SPRP",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Кончик катетера, надлобковый"
+        },
+        {
+          "language": "uz",
+          "value": "Suprapubik kateter uchi"
+        }
+      ]
+    },
+    {
+      "code": "SPS",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Окружающая среда, споровая полоска"
+        },
+        {
+          "language": "uz",
+          "value": "Atrof-muhit, sporali lenta"
+        }
+      ]
+    },
+    {
+      "code": "SPT",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Мокрота"
+        },
+        {
+          "language": "uz",
+          "value": "Balg'am"
+        }
+      ]
+    },
+    {
+      "code": "SPTC",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Мокрота, откашлянная"
+        },
+        {
+          "language": "uz",
+          "value": "Yo'tal bilan chiqarilgan balg'am"
+        }
+      ]
+    },
+    {
+      "code": "SPTT",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Мокрота, трахеальный аспират"
+        },
+        {
+          "language": "uz",
+          "value": "Traxeal aspirat balg'ami"
+        }
+      ]
+    },
+    {
+      "code": "SPUT1",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Мокрота, имитированная"
+        },
+        {
+          "language": "uz",
+          "value": "Sun’iy balg'am"
+        }
+      ]
+    },
+    {
+      "code": "SPUTIN",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Мокрота, индуцированная"
+        },
+        {
+          "language": "uz",
+          "value": "Induktsiyalangan balg'am"
+        }
+      ]
+    },
+    {
+      "code": "SPUTSP",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Мокрота, спонтанная"
+        },
+        {
+          "language": "uz",
+          "value": "Spontan balg'am"
+        }
+      ]
+    },
+    {
+      "code": "STER",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Окружающая среда, Sterrad"
+        },
+        {
+          "language": "uz",
+          "value": "Atrof-muhit, Sterrad"
+        }
+      ]
+    },
+    {
+      "code": "STL",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Кал"
+        },
+        {
+          "language": "uz",
+          "value": "Najas"
+        }
+      ]
+    },
+    {
+      "code": "STONE",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Камень почки"
+        },
+        {
+          "language": "uz",
+          "value": "Buyrak toshi"
+        }
+      ]
+    },
+    {
+      "code": "SUBMA",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Поднижнечелюстной абсцесс"
+        },
+        {
+          "language": "uz",
+          "value": "Submandibulyar abstsess"
+        }
+      ]
+    },
+    {
+      "code": "SUBMX",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Подчелюстной абсцесс"
+        },
+        {
+          "language": "uz",
+          "value": "Submaksillyar abstsess"
+        }
+      ]
+    },
+    {
+      "code": "SUMP",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Дренаж, отстойник"
+        },
+        {
+          "language": "uz",
+          "value": "Sump drenaji"
+        }
+      ]
+    },
+    {
+      "code": "SUP",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Надлобковая пункция"
+        },
+        {
+          "language": "uz",
+          "value": "Suprapubik punksiya"
+        }
+      ]
+    },
+    {
+      "code": "SUTUR",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Шовный материал"
+        },
+        {
+          "language": "uz",
+          "value": "Tikuv materiali"
+        }
+      ]
+    },
+    {
+      "code": "SWGZ",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Кончик катетера Swan-Ganz"
+        },
+        {
+          "language": "uz",
+          "value": "Swan-Ganz kateteri uchi"
+        }
+      ]
+    },
+    {
+      "code": "SWT",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Пот"
+        },
+        {
+          "language": "uz",
+          "value": "Ter"
+        }
+      ]
+    },
+    {
+      "code": "TASP",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Трахеальный аспират"
+        },
+        {
+          "language": "uz",
+          "value": "Traxeal aspirat"
+        }
+      ]
+    },
+    {
+      "code": "TEAR",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Слёзы"
+        },
+        {
+          "language": "uz",
+          "value": "Ko'z yoshlari"
+        }
+      ]
+    },
+    {
+      "code": "THRB",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Тромбоциты"
+        },
+        {
+          "language": "uz",
+          "value": "Trombotsitlar"
+        }
+      ]
+    },
+    {
+      "code": "TISS",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Ткань"
+        },
+        {
+          "language": "uz",
+          "value": "To'qima"
+        }
+      ]
+    },
+    {
+      "code": "TISU",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Язва ткани"
+        },
+        {
+          "language": "uz",
+          "value": "To'qima yarasi"
+        }
+      ]
+    },
+    {
+      "code": "TLC",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Кончик катетера, трёхпросветный"
+        },
+        {
+          "language": "uz",
+          "value": "Uch yo'lli kateter uchi"
+        }
+      ]
+    },
+    {
+      "code": "TRAC",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Место трахеостомы"
+        },
+        {
+          "language": "uz",
+          "value": "Traxeostomiya joyi"
+        }
+      ]
+    },
+    {
+      "code": "TRANS",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Транссудат"
+        },
+        {
+          "language": "uz",
+          "value": "Transudat"
+        }
+      ]
+    },
+    {
+      "code": "TSERU",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Сыворотка, минимальный уровень"
+        },
+        {
+          "language": "uz",
+          "value": "Zardob, minimal daraja"
+        }
+      ]
+    },
+    {
+      "code": "TSTES",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Тестикулярный абсцесс"
+        },
+        {
+          "language": "uz",
+          "value": "Moyak abstsessi"
+        }
+      ]
+    },
+    {
+      "code": "TTRA",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Транстрахеальный аспират"
+        },
+        {
+          "language": "uz",
+          "value": "Transtraxeal aspirat"
+        }
+      ]
+    },
+    {
+      "code": "TUBES",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Трубки"
+        },
+        {
+          "language": "uz",
+          "value": "Naychalar"
+        }
+      ]
+    },
+    {
+      "code": "TUMOR",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Опухоль"
+        },
+        {
+          "language": "uz",
+          "value": "O'sma"
+        }
+      ]
+    },
+    {
+      "code": "TZANC",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Мазок Цанка"
+        },
+        {
+          "language": "uz",
+          "value": "Tsank surtmasi"
+        }
+      ]
+    },
+    {
+      "code": "UDENT",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Источник, неустановленный"
+        },
+        {
+          "language": "uz",
+          "value": "Manba aniqlanmagan"
+        }
+      ]
+    },
+    {
+      "code": "UMED",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Неизвестное лекарство"
+        },
+        {
+          "language": "uz",
+          "value": "Noma’lum dori"
+        }
+      ]
+    },
+    {
+      "code": "UR",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Моча"
+        },
+        {
+          "language": "uz",
+          "value": "Siydik"
+        }
+      ]
+    },
+    {
+      "code": "URC",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Моча, чистый сбор"
+        },
+        {
+          "language": "uz",
+          "value": "Toza yig'ilgan siydik"
+        }
+      ]
+    },
+    {
+      "code": "URINB",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Моча, промывные воды мочевого пузыря"
+        },
+        {
+          "language": "uz",
+          "value": "Siydik pufagi yuvindisi"
+        }
+      ]
+    },
+    {
+      "code": "URINC",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Моча, катетеризированная"
+        },
+        {
+          "language": "uz",
+          "value": "Kateter orqali olingan siydik"
+        }
+      ]
+    },
+    {
+      "code": "URINM",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Моча, средняя порция"
+        },
+        {
+          "language": "uz",
+          "value": "O'rtacha oqim siydigi"
+        }
+      ]
+    },
+    {
+      "code": "URINN",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Моча, нефростома"
+        },
+        {
+          "language": "uz",
+          "value": "Nefrostoma siydigi"
+        }
+      ]
+    },
+    {
+      "code": "URINP",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Моча, педибэг"
+        },
+        {
+          "language": "uz",
+          "value": "Pedibag siydigi"
+        }
+      ]
+    },
+    {
+      "code": "URNS",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Осадок мочи"
+        },
+        {
+          "language": "uz",
+          "value": "Siydik cho'kmasi"
+        }
+      ]
+    },
+    {
+      "code": "URT",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Мочевой катетер"
+        },
+        {
+          "language": "uz",
+          "value": "Siydik kateteri"
+        }
+      ]
+    },
+    {
+      "code": "USCOP",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Моча, цистоскопия"
+        },
+        {
+          "language": "uz",
+          "value": "Tsistoskopiya siydigi"
+        }
+      ]
+    },
+    {
+      "code": "USPEC",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Источник, неуточнённый"
+        },
+        {
+          "language": "uz",
+          "value": "Manba aniqlanmagan"
+        }
+      ]
+    },
+    {
+      "code": "USUB",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Неизвестное вещество"
+        },
+        {
+          "language": "uz",
+          "value": "Noma’lum modda"
+        }
+      ]
+    },
+    {
+      "code": "VASTIP",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Кончик катетера, семявыносящий проток"
+        },
+        {
+          "language": "uz",
+          "value": "Vas kateter uchi"
+        }
+      ]
+    },
+    {
+      "code": "VENT",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Кончик катетера, желудочковый"
+        },
+        {
+          "language": "uz",
+          "value": "Ventrikulyar kateter uchi"
+        }
+      ]
+    },
+    {
+      "code": "VITF",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Стекловидное тело"
+        },
+        {
+          "language": "uz",
+          "value": "Shishasimon tana suyuqligi"
+        }
+      ]
+    },
+    {
+      "code": "VOM",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Рвотные массы"
+        },
+        {
+          "language": "uz",
+          "value": "Qusindi"
+        }
+      ]
+    },
+    {
+      "code": "WASH",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Промывание"
+        },
+        {
+          "language": "uz",
+          "value": "Yuvish"
+        }
+      ]
+    },
+    {
+      "code": "WASI",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Промывка (например, бронхиальная)"
+        },
+        {
+          "language": "uz",
+          "value": "Yuvindi (masalan, bronxial yuvindi)"
+        }
+      ]
+    },
+    {
+      "code": "WAT",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Вода"
+        },
+        {
+          "language": "uz",
+          "value": "Suv"
+        }
+      ]
+    },
+    {
+      "code": "WB",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Цельная кровь"
+        },
+        {
+          "language": "uz",
+          "value": "Butun qon"
+        }
+      ]
+    },
+    {
+      "code": "WBC",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Лейкоциты"
+        },
+        {
+          "language": "uz",
+          "value": "Leykotsitlar"
+        }
+      ]
+    },
+    {
+      "code": "WEN",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Жировик"
+        },
+        {
+          "language": "uz",
+          "value": "Yog' bez kistasi"
+        }
+      ]
+    },
+    {
+      "code": "WICK",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Фитиль"
+        },
+        {
+          "language": "uz",
+          "value": "Fitil"
+        }
+      ]
+    },
+    {
+      "code": "WND",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Рана"
+        },
+        {
+          "language": "uz",
+          "value": "Yara"
+        }
+      ]
+    },
+    {
+      "code": "WNDA",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Абсцесс раны"
+        },
+        {
+          "language": "uz",
+          "value": "Yara abstsessi"
+        }
+      ]
+    },
+    {
+      "code": "WNDD",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Дренаж раны"
+        },
+        {
+          "language": "uz",
+          "value": "Yara drenaji"
+        }
+      ]
+    },
+    {
+      "code": "WNDE",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Экссудат раны"
+        },
+        {
+          "language": "uz",
+          "value": "Yara ekssudati"
+        }
+      ]
+    },
+    {
+      "code": "WORM",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Глист"
+        },
+        {
+          "language": "uz",
+          "value": "Qurt"
+        }
+      ]
+    },
+    {
+      "code": "WRT",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Бородавка"
+        },
+        {
+          "language": "uz",
+          "value": "So'gal"
+        }
+      ]
+    },
+    {
+      "code": "WWA",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Окружающая среда, вода"
+        },
+        {
+          "language": "uz",
+          "value": "Atrof-muhit, suv"
+        }
+      ]
+    },
+    {
+      "code": "WWO",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Окружающая среда, вода (океан)"
+        },
+        {
+          "language": "uz",
+          "value": "Atrof-muhit, suv (okean)"
+        }
+      ]
+    },
+    {
+      "code": "WWT",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Окружающая среда, вода (водопровод)"
+        },
+        {
+          "language": "uz",
+          "value": "Atrof-muhit, suv (kran)"
+        }
+      ]
+    }
+  ],
+  "supplements": "http://terminology.hl7.org/CodeSystem/v2-0487",
+  "version": "2.9",
+  "language": "en",
+  "experimental": true
+}
