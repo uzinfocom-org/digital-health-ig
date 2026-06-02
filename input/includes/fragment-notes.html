@@ -1,0 +1,19 @@
+{% comment %}
+Overrides the base template's fragment-notes.html to drop the standalone
+"Notes:" heading. Every UZ Core -notes.md fragment opens with its own H3
+(### Quick Start ...), so the template heading only rendered as an empty
+section above it. Everything else is identical to the template version.
+{% endcomment %}
+{% assign notes = site.data.pages[localPage].notes %}
+{% if notes != null %}
+{% if site.data.pages[localPage].notes-type == 'xml' %}
+{% include {{include.lang}}/{{notes}} type=include.type id=include.id %}
+{% else %}
+{% capture note-content %}
+{% include {{include.lang}}/{{notes}} type=include.type id=include.id %}
+{% endcapture %}
+<div style="display:inline-block" markdown="1">
+{{ note-content | markdownify }}
+</div>
+{% endif %}
+{% endif %}
