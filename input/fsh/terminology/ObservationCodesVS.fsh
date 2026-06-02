@@ -1,10 +1,11 @@
 ValueSet: ObservationCodesVS
 Id: observation-codes-vs
 Title: "Observation codes"
-Description: "Codes for observations, allowing use of LOINC and SNOMED CT as appropriate for the context"
+Description: "Codes for observations, allowing use of LOINC, local laboratory codes, and SNOMED CT as appropriate for the context"
 * ^url = "https://terminology.dhp.uz/fhir/core/ValueSet/observation-codes-vs"
 * ^experimental = true
 
+* include codes from system lab-pan-cs
 * include codes from system $loinc
 
 * include codes from system $sct where concept is-a #363787002 "Observable entity (observable entity)"
