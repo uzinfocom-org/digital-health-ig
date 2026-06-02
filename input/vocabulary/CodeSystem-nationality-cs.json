@@ -1,0 +1,7185 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "draft",
+  "content": "complete",
+  "name": "NationalityCS",
+  "id": "nationality-cs",
+  "title": "Nationality from dmp.uz",
+  "description": "Defines a nationality of a person as used in Uzbekistan from dmp.uz",
+  "url": "https://terminology.dhp.uz/fhir/core/CodeSystem/nationality-cs",
+  "concept": [
+    {
+      "code": "739002430",
+      "display": "PERSIAN",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "ПЕРСЫ"
+        },
+        {
+          "language": "en",
+          "value": "PERSIAN"
+        }
+      ]
+    },
+    {
+      "code": "1015",
+      "display": "FULBE",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "ФУЛБЕ/ФУЛЬБЕ"
+        },
+        {
+          "language": "en",
+          "value": "FULANI"
+        }
+      ]
+    },
+    {
+      "code": "1016",
+      "display": "FUTENG",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "ФУТЕНГ/ФУТЕНГА"
+        },
+        {
+          "language": "en",
+          "value": "FUTENG"
+        }
+      ]
+    },
+    {
+      "code": "1017",
+      "display": "XA (VAXA)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "ХА (ВАХА)/ХА (ВАХА)"
+        },
+        {
+          "language": "en",
+          "value": "HA (WAHA)"
+        }
+      ]
+    },
+    {
+      "code": "1018",
+      "display": "XAZARLI",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "ХАЗАРЕЕЦ/ХАЗАРЕЙКА"
+        },
+        {
+          "language": "en",
+          "value": "HAZARA"
+        }
+      ]
+    },
+    {
+      "code": "1019",
+      "display": "XAYYA",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "ХАЙЯ/ХАЙЯ"
+        },
+        {
+          "language": "en",
+          "value": "HAYA"
+        }
+      ]
+    },
+    {
+      "code": "1020",
+      "display": "XALXA-MOGOLIYALIK",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "ХАЛХА-МОНГОЛ/ХАЛХА-МОНГОЛКА"
+        },
+        {
+          "language": "en",
+          "value": "HALHE-MONGOL"
+        }
+      ]
+    },
+    {
+      "code": "1021",
+      "display": "XAUSA",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "ХАУСА/ХАУСА"
+        },
+        {
+          "language": "en",
+          "value": "HAUSA"
+        }
+      ]
+    },
+    {
+      "code": "1023",
+      "display": "XEXE, (VAXEXE)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "ХЕХЕ, (ВАХЕХЕ)/ХЕХЕ, (ВАХЕХЕ)"
+        },
+        {
+          "language": "en",
+          "value": "HEHE, (WAHEHE)"
+        }
+      ]
+    },
+    {
+      "code": "1024",
+      "display": "XINALIKLI",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "ХИНАЛУГ/ХИНАЛУГ"
+        },
+        {
+          "language": "en",
+          "value": "KHINALIG"
+        }
+      ]
+    },
+    {
+      "code": "1025",
+      "display": "XINDUSTONLIK",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "ХИНДУСТАНЕЦ/ХИНДУСТАНКА"
+        },
+        {
+          "language": "en",
+          "value": "HINDUSTANI"
+        }
+      ]
+    },
+    {
+      "code": "1026",
+      "display": "XUEY DUNGAN",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "ХУЭЙ ДУНГАН/ХУЭЙ ДУНГАН"
+        },
+        {
+          "language": "en",
+          "value": "HUI DUNGAN"
+        }
+      ]
+    },
+    {
+      "code": "1027",
+      "display": "MONTENEGROLIK",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "ЧЕРНОГОРЕЦ/ЧЕРНОГОРКА"
+        },
+        {
+          "language": "en",
+          "value": "MONTENEGRIN"
+        }
+      ]
+    },
+    {
+      "code": "1028",
+      "display": "CHJUAN",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "ЧЖУАН/ЧЖУАН"
+        },
+        {
+          "language": "en",
+          "value": "ZHUANG"
+        }
+      ]
+    },
+    {
+      "code": "1029",
+      "display": "CHILILI",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "ЧИЛИЕЦ/ЧИЛИЙКА"
+        },
+        {
+          "language": "en",
+          "value": "CHILEAN"
+        }
+      ]
+    },
+    {
+      "code": "1030",
+      "display": "CHIN",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "ЧИН/ЧИН"
+        },
+        {
+          "language": "en",
+          "value": "CHIN"
+        }
+      ]
+    },
+    {
+      "code": "1031",
+      "display": "CHOKVE",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "ЧОКВЕ/ЧОКВЕ"
+        },
+        {
+          "language": "en",
+          "value": "CHOKWE"
+        }
+      ]
+    },
+    {
+      "code": "1032",
+      "display": "CHUVANS",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "ЧУВАНЦ/ЧУВАНЦ"
+        },
+        {
+          "language": "en",
+          "value": "CHUVANS"
+        }
+      ]
+    },
+    {
+      "code": "1033",
+      "display": "SHAVIYYA",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "ШАВИЙЯ/ШАВИЙЯ"
+        },
+        {
+          "language": "en",
+          "value": "SHAUYYA"
+        }
+      ]
+    },
+    {
+      "code": "1034",
+      "display": "SHAN",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "ШАН/ШАН"
+        },
+        {
+          "language": "en",
+          "value": "SHAN"
+        }
+      ]
+    },
+    {
+      "code": "1035",
+      "display": "SHVED",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "ШВЕД/ШВЕДКА"
+        },
+        {
+          "language": "en",
+          "value": "SWEDISH"
+        }
+      ]
+    },
+    {
+      "code": "1036",
+      "display": "SHLEX",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "ШЛЕХ/ШЛЕХ"
+        },
+        {
+          "language": "en",
+          "value": "SHLEH"
+        }
+      ]
+    },
+    {
+      "code": "1037",
+      "display": "SHOTLANDIYALIK",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "ШОТЛАНДЕЦ/ШОТЛАНДКА"
+        },
+        {
+          "language": "en",
+          "value": "SCOTISH"
+        }
+      ]
+    },
+    {
+      "code": "1038",
+      "display": "EVE",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "ЭВЕ/ЭВЕ"
+        },
+        {
+          "language": "en",
+          "value": "EWЕ"
+        }
+      ]
+    },
+    {
+      "code": "1039",
+      "display": "EVENK",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "ЭВЕНК/ЭВЕНКИЙКА"
+        },
+        {
+          "language": "en",
+          "value": "EVENK"
+        }
+      ]
+    },
+    {
+      "code": "1040",
+      "display": "EDO (BINI)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "ЭДО (БИНИ)/ЭДО (БИНИ)"
+        },
+        {
+          "language": "en",
+          "value": "EDO (BINI)"
+        }
+      ]
+    },
+    {
+      "code": "1041",
+      "display": "EKVADOR",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "ЭКВАДОРЕЦ/ЭКВАДОРКА"
+        },
+        {
+          "language": "en",
+          "value": "ECUADORIAN"
+        }
+      ]
+    },
+    {
+      "code": "1042",
+      "display": "ENETS",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "ЭНЕЦ/ЭНКА"
+        },
+        {
+          "language": "en",
+          "value": "ENETS"
+        }
+      ]
+    },
+    {
+      "code": "1043",
+      "display": "ESKIMOS",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "ЭСКИМОС/ЭСКИМОСКА"
+        },
+        {
+          "language": "en",
+          "value": "ESKIMOS"
+        }
+      ]
+    },
+    {
+      "code": "1044",
+      "display": "JANUBIY LUO",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "ЮЖНЫЙ ЛУО/АЖНАЯ ЛУО"
+        },
+        {
+          "language": "en",
+          "value": "SOUTHERN LUO"
+        }
+      ]
+    },
+    {
+      "code": "1045",
+      "display": "YUKAGIR",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "ЮКАГИР/ЮКАГИРКА"
+        },
+        {
+          "language": "en",
+          "value": "YUKAGIR"
+        }
+      ]
+    },
+    {
+      "code": "1046",
+      "display": "YAVALIK",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "ЯВАНЕЦ/ЯВАНКА"
+        },
+        {
+          "language": "en",
+          "value": "JAVANESE"
+        }
+      ]
+    },
+    {
+      "code": "1047",
+      "display": "YAMAYKALIK",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "ЯМАЙЕЦ/ЯМАЙКА"
+        },
+        {
+          "language": "en",
+          "value": "JAMAICAN"
+        }
+      ]
+    },
+    {
+      "code": "1048",
+      "display": "YAO (VAYAO)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "ЯО (ВАЯО)/ЯО (ВАЯО)"
+        },
+        {
+          "language": "en",
+          "value": "YAO (WAYA)"
+        }
+      ]
+    },
+    {
+      "code": "1049",
+      "display": "NIGERIYALIK",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "НИГЕРИЕЦ/НИГЕРИЙКА"
+        },
+        {
+          "language": "en",
+          "value": "NIGERIAN"
+        }
+      ]
+    },
+    {
+      "code": "1050",
+      "display": "SIRIYALIK",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "СИРИЕЦ/СИРИЙКА"
+        },
+        {
+          "language": "en",
+          "value": "SYRIAN"
+        }
+      ]
+    },
+    {
+      "code": "1051",
+      "display": "KRIMCHAK",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "КРИМЧАК"
+        },
+        {
+          "language": "en",
+          "value": "KRIMCHAK"
+        }
+      ]
+    },
+    {
+      "code": "1052",
+      "display": "ANGOL",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "АНГОЛЕЦ/АНГОЛКА"
+        },
+        {
+          "language": "en",
+          "value": "ANGOL"
+        }
+      ]
+    },
+    {
+      "code": "1053",
+      "display": "KURAMA",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "КУРАМА"
+        },
+        {
+          "language": "en",
+          "value": "KURAMA"
+        }
+      ]
+    },
+    {
+      "code": "739002050",
+      "display": "LACHKA",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "ЛАЧКА"
+        },
+        {
+          "language": "en",
+          "value": "LACHKA"
+        }
+      ]
+    },
+    {
+      "code": "739002053",
+      "display": "GIPSY",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "ЦЫГАН"
+        },
+        {
+          "language": "en",
+          "value": "GIPSY"
+        }
+      ]
+    },
+    {
+      "code": "739002054",
+      "display": "QORAQALPOQ",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "КАРАКАЛПАК"
+        },
+        {
+          "language": "en",
+          "value": "QORAQALPOQ"
+        }
+      ]
+    },
+    {
+      "code": "739002055",
+      "display": "ANGOL/ANGOLANKA",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "АНГОЛЕЦ/АНГОЛАНКА"
+        },
+        {
+          "language": "en",
+          "value": "ANGOL/ANGOLANKA"
+        }
+      ]
+    },
+    {
+      "code": "739002056",
+      "display": "ANGOL",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "АНГОЛЕЦ/АНГОЛАНКА"
+        },
+        {
+          "language": "en",
+          "value": "ANGOL/ANGOLANKA"
+        }
+      ]
+    },
+    {
+      "code": "739002091",
+      "display": "QORAQALPOQ",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "КАРАКАЛПАК"
+        },
+        {
+          "language": "en",
+          "value": "QORAQALPOQ"
+        }
+      ]
+    },
+    {
+      "code": "739002092",
+      "display": "FORS",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Персы (фарси)"
+        },
+        {
+          "language": "en",
+          "value": "FORS"
+        }
+      ]
+    },
+    {
+      "code": "739002093",
+      "display": "LATGALI",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "ЛАТГАЛ/ЛАТГАЛКА"
+        },
+        {
+          "language": "en",
+          "value": "LATGAL"
+        }
+      ]
+    },
+    {
+      "code": "739002094",
+      "display": "UGANDAN",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "УГАНДИЕЦ/УГАНДИЙКА"
+        },
+        {
+          "language": "en",
+          "value": "UGANDAN"
+        }
+      ]
+    },
+    {
+      "code": "739002110",
+      "display": "LAO",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "ЛАО"
+        },
+        {
+          "language": "en",
+          "value": "LAO"
+        }
+      ]
+    },
+    {
+      "code": "739002130",
+      "display": "SHORK",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "ШОРК/ШОРКА"
+        },
+        {
+          "language": "en",
+          "value": "SHORK"
+        }
+      ]
+    },
+    {
+      "code": "739002131",
+      "display": "JUGOSLAV",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "ЮГОСЛАВ"
+        },
+        {
+          "language": "en",
+          "value": "JUGOSLAV"
+        }
+      ]
+    },
+    {
+      "code": "739002170",
+      "display": "NIVHA",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "НИВХА"
+        },
+        {
+          "language": "en",
+          "value": "NIVHA"
+        }
+      ]
+    },
+    {
+      "code": "739002190",
+      "display": "QORAQOLPOQ",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "КАРАКАЛПАК"
+        },
+        {
+          "language": "en",
+          "value": "QORAQOLPOQ"
+        }
+      ]
+    },
+    {
+      "code": "739002191",
+      "display": "LATGALI",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "ЛАТГАЛ/ЛАТГАЛКА"
+        },
+        {
+          "language": "en",
+          "value": "LATGAL"
+        }
+      ]
+    },
+    {
+      "code": "739002210",
+      "display": "QRIM TATARI",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "КРЫМСКИЙ ТАТАРИН"
+        },
+        {
+          "language": "en",
+          "value": "CRIMEAN TATAR"
+        }
+      ]
+    },
+    {
+      "code": "739002230",
+      "display": "PANAMALIK",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "ПАНАМЕЦ/ПАНАМКА"
+        },
+        {
+          "language": "en",
+          "value": "PANAMANIAN"
+        }
+      ]
+    },
+    {
+      "code": "739002270",
+      "display": "MARAKANIEN",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "МАРАКАНЦЫ"
+        },
+        {
+          "language": "en",
+          "value": "MARAKANIEN"
+        }
+      ]
+    },
+    {
+      "code": "739002290",
+      "display": "LIVIYALIK",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "ЛИВИЙЦЫ"
+        },
+        {
+          "language": "en",
+          "value": "LIBYAN"
+        }
+      ]
+    },
+    {
+      "code": "739002291",
+      "display": "LAZLI",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "ЛАЗ"
+        },
+        {
+          "language": "en",
+          "value": "LAZ"
+        }
+      ]
+    },
+    {
+      "code": "739002315",
+      "display": "ЛАЗ ТЕСТ",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "ЛАЗ ТЕСТ"
+        },
+        {
+          "language": "en",
+          "value": "ЛАЗ ТЕСТ"
+        }
+      ]
+    },
+    {
+      "code": "739002316",
+      "display": "ЛАЗ ТЕСТ2",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "ЛАЗ ТЕСТ2"
+        },
+        {
+          "language": "en",
+          "value": "ЛАЗ ТЕСТ2"
+        }
+      ]
+    },
+    {
+      "code": "739002317",
+      "display": "LAZ",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "ЛАЗ"
+        },
+        {
+          "language": "en",
+          "value": "LAZ"
+        }
+      ]
+    },
+    {
+      "code": "739002330",
+      "display": "MANIKA",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "МАНИКА"
+        },
+        {
+          "language": "en",
+          "value": "MANIKA"
+        }
+      ]
+    },
+    {
+      "code": "739002350",
+      "display": "FALASTINLIK",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "ПАЛЕСТИНЕЦ"
+        },
+        {
+          "language": "en",
+          "value": "PALASTIN"
+        }
+      ]
+    },
+    {
+      "code": "739002370",
+      "display": "LAK",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Лакец/Лакчанка"
+        },
+        {
+          "language": "en",
+          "value": "LAK"
+        }
+      ]
+    },
+    {
+      "code": "739002390",
+      "display": "LAKES/LAKCHANKA",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "ЛАКЕЦ/ЛАКЧАНКА"
+        },
+        {
+          "language": "en",
+          "value": "LAKEC/LAKCHANKA"
+        }
+      ]
+    },
+    {
+      "code": "739002410",
+      "display": "LAK",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "ЛАКЕЦ"
+        },
+        {
+          "language": "en",
+          "value": "LAK"
+        }
+      ]
+    },
+    {
+      "code": "739002411",
+      "display": "LAKES",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "ЛАКЕЦ"
+        },
+        {
+          "language": "en",
+          "value": "LAKES"
+        }
+      ]
+    },
+    {
+      "code": "0",
+      "display": "ABXAZ",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "АБХАЗ/АБХАЗКА"
+        },
+        {
+          "language": "en",
+          "value": "ABKHAZIAN"
+        }
+      ]
+    },
+    {
+      "code": "1",
+      "display": "ADIGEY",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "АДЫГЕЕЦ/АДЫГЕЙКА"
+        },
+        {
+          "language": "en",
+          "value": "ADYGEI"
+        }
+      ]
+    },
+    {
+      "code": "3",
+      "display": "OLTOY",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "АЛТАЕЦ/АЛТАЙКА"
+        },
+        {
+          "language": "en",
+          "value": "ALTAI"
+        }
+      ]
+    },
+    {
+      "code": "4",
+      "display": "ARMAN",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "АРМЯНИН/АРМЯНКА"
+        },
+        {
+          "language": "en",
+          "value": "ARMENIAN"
+        }
+      ]
+    },
+    {
+      "code": "5",
+      "display": "BOLQOR",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "БАЛКАРЕЦ/БАЛКАРКА"
+        },
+        {
+          "language": "en",
+          "value": "BALKAR"
+        }
+      ]
+    },
+    {
+      "code": "6",
+      "display": "BOSHQIRD",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "БАШКИР/БАШКИРКА"
+        },
+        {
+          "language": "en",
+          "value": "BOSHKIR"
+        }
+      ]
+    },
+    {
+      "code": "7",
+      "display": "BELORUS",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "БЕЛОРУС/БЕЛОРУСКА"
+        },
+        {
+          "language": "en",
+          "value": "BYELORUSSIAN"
+        }
+      ]
+    },
+    {
+      "code": "8",
+      "display": "BELGIYALI",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "БЕЛЬГИЕЦ/БЕЛЬГИЙКА"
+        },
+        {
+          "language": "en",
+          "value": "BELGIAN"
+        }
+      ]
+    },
+    {
+      "code": "9",
+      "display": "BURYAT",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "БУРЯТ/БУРЯТКА"
+        },
+        {
+          "language": "en",
+          "value": "BURYAT"
+        }
+      ]
+    },
+    {
+      "code": "10",
+      "display": "VETNAMLI",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "ВЬЕТНАМЕЦ/ВЬЕТНАМКА"
+        },
+        {
+          "language": "en",
+          "value": "VIETNAMESE"
+        }
+      ]
+    },
+    {
+      "code": "11",
+      "display": "GRUZIN",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "ГРУЗИН/ГРУЗИНКА"
+        },
+        {
+          "language": "en",
+          "value": "GEORGIAN"
+        }
+      ]
+    },
+    {
+      "code": "12",
+      "display": "DARGIN",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "ДАРГИНЕЦ/ДАРГИНКА"
+        },
+        {
+          "language": "en",
+          "value": "DARGIN"
+        }
+      ]
+    },
+    {
+      "code": "14",
+      "display": "YAXUDIY",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "ЕВРЕЙ/ЕВРЕЙКА"
+        },
+        {
+          "language": "en",
+          "value": "JEW"
+        }
+      ]
+    },
+    {
+      "code": "15",
+      "display": "YEZID",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "ЕЗИД/ЕЗИДКА"
+        },
+        {
+          "language": "en",
+          "value": "EZID"
+        }
+      ]
+    },
+    {
+      "code": "16",
+      "display": "INGUSH",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "ИНГУШ/ИНГУШКА"
+        },
+        {
+          "language": "en",
+          "value": "INGUSH"
+        }
+      ]
+    },
+    {
+      "code": "17",
+      "display": "ITALIYALI",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "ИТАЛЬЯНЕЦ/ИТАЛЬЯНКА"
+        },
+        {
+          "language": "en",
+          "value": "ITALIAN"
+        }
+      ]
+    },
+    {
+      "code": "18",
+      "display": "KABARDIN",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "КАБАРДИНЕЦ/КАБАРДИНКА"
+        },
+        {
+          "language": "en",
+          "value": "KABARDIАN"
+        }
+      ]
+    },
+    {
+      "code": "19",
+      "display": "QOZOQ",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "КАЗАХ/КАЗАШКА"
+        },
+        {
+          "language": "en",
+          "value": "KAZAKH"
+        }
+      ]
+    },
+    {
+      "code": "20",
+      "display": "QALMIQ",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "КАЛМЫК/КАЛМЫЧКА"
+        },
+        {
+          "language": "en",
+          "value": "KALMYK"
+        }
+      ]
+    },
+    {
+      "code": "21",
+      "display": "QORAQALPOK",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "КАРАКАЛПАК/КАРАКАЛПАЧКА"
+        },
+        {
+          "language": "en",
+          "value": "KARAKALPAK"
+        }
+      ]
+    },
+    {
+      "code": "22",
+      "display": "KORACHOY",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "КАРАЧАЕВЕЦ/КАРАЧАЕВКА"
+        },
+        {
+          "language": "en",
+          "value": "KORACHAI"
+        }
+      ]
+    },
+    {
+      "code": "23",
+      "display": "KARELIYALI",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "КАРЕЛ/КАРЕЛКА"
+        },
+        {
+          "language": "en",
+          "value": "KARELIAN"
+        }
+      ]
+    },
+    {
+      "code": "24",
+      "display": "QIRG‘IZ",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "КИРГИЗ/КИРГИЗКА"
+        },
+        {
+          "language": "en",
+          "value": "KIRGHIZ"
+        }
+      ]
+    },
+    {
+      "code": "25",
+      "display": "KOMI",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "КОМИ/КОМИ"
+        },
+        {
+          "language": "en",
+          "value": "KOMI"
+        }
+      ]
+    },
+    {
+      "code": "26",
+      "display": "KOMI-PERMYAK",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "КОМИ-ПЕРМЯК/КОМИ-ПЕРМЯЧКА"
+        },
+        {
+          "language": "en",
+          "value": "KOMI_PERMYAK"
+        }
+      ]
+    },
+    {
+      "code": "27",
+      "display": "LATISH",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "ЛАТЫШ/ЛАТЫШКА"
+        },
+        {
+          "language": "en",
+          "value": "LETT"
+        }
+      ]
+    },
+    {
+      "code": "28",
+      "display": "LITVALI",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "ЛИТОВЕЦ/ЛИТОВКА"
+        },
+        {
+          "language": "en",
+          "value": "LITHUANIAN"
+        }
+      ]
+    },
+    {
+      "code": "29",
+      "display": "MARI",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "МАРИЕЦ/МАРИЙКА"
+        },
+        {
+          "language": "en",
+          "value": "MARI"
+        }
+      ]
+    },
+    {
+      "code": "30",
+      "display": "MOLDAVAN",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "МОЛДАВАНИН/МОЛДАВАНКА"
+        },
+        {
+          "language": "en",
+          "value": "MOLDAVIAN"
+        }
+      ]
+    },
+    {
+      "code": "31",
+      "display": "MORDVA",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "МОРДВИН/МОРДОВКА"
+        },
+        {
+          "language": "en",
+          "value": "MORDOVINIANS"
+        }
+      ]
+    },
+    {
+      "code": "33",
+      "display": "NEMIS",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "НЕМЕЦ/НЕМКА"
+        },
+        {
+          "language": "en",
+          "value": "GERMAN"
+        }
+      ]
+    },
+    {
+      "code": "34",
+      "display": "OSETIN",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "ОСЕТИН/ОСЕТИНКА"
+        },
+        {
+          "language": "en",
+          "value": "OSSETIAN"
+        }
+      ]
+    },
+    {
+      "code": "35",
+      "display": "POLYAK",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "ПОЛЯК/ПОЛЬКА"
+        },
+        {
+          "language": "en",
+          "value": "POLE"
+        }
+      ]
+    },
+    {
+      "code": "36",
+      "display": "RUS",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "РУССКИЙ/РУССКАЯ"
+        },
+        {
+          "language": "en",
+          "value": "RUSSIAN"
+        }
+      ]
+    },
+    {
+      "code": "37",
+      "display": "SERB",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "СЕРБ/СЕРБКА"
+        },
+        {
+          "language": "en",
+          "value": "SERB"
+        }
+      ]
+    },
+    {
+      "code": "38",
+      "display": "TABASARAN",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "ТАБАСАРАНЕЦ/ТАБАСАРАНКА"
+        },
+        {
+          "language": "en",
+          "value": "TABASARAN"
+        }
+      ]
+    },
+    {
+      "code": "39",
+      "display": "TOJIK",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "ТАДЖИК/ТАДЖИЧКА"
+        },
+        {
+          "language": "en",
+          "value": "TAJIK"
+        }
+      ]
+    },
+    {
+      "code": "40",
+      "display": "TATAR",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "ТАТАРИН/ТАТАРКА"
+        },
+        {
+          "language": "en",
+          "value": "TATAR"
+        }
+      ]
+    },
+    {
+      "code": "41",
+      "display": "TUVIN",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "ТУВИНЕЦ/ТУВИНКА"
+        },
+        {
+          "language": "en",
+          "value": "TUVINIAN"
+        }
+      ]
+    },
+    {
+      "code": "42",
+      "display": "TURKMAN",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "ТУРКМЕН/ТУРКМЕНКА"
+        },
+        {
+          "language": "en",
+          "value": "TURKMAN"
+        }
+      ]
+    },
+    {
+      "code": "43",
+      "display": "UDMURT",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "УДМУРТ/УДМУРТКА"
+        },
+        {
+          "language": "en",
+          "value": "UDMURT"
+        }
+      ]
+    },
+    {
+      "code": "44",
+      "display": "O‘ZBEK",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "УЗБЕК/УЗБЕЧКА"
+        },
+        {
+          "language": "en",
+          "value": "UZBEK"
+        }
+      ]
+    },
+    {
+      "code": "45",
+      "display": "UKRAIN",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "УКРАИНЕЦ/УКРАИНКА"
+        },
+        {
+          "language": "en",
+          "value": "UKRAINIAN"
+        }
+      ]
+    },
+    {
+      "code": "46",
+      "display": "XAKAS",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "ХАКАСЕЦ/ХАКАСКА"
+        },
+        {
+          "language": "en",
+          "value": "KHAKASS"
+        }
+      ]
+    },
+    {
+      "code": "47",
+      "display": "LO‘LI",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "ЦЫГАН/ЦЫГАНКА"
+        },
+        {
+          "language": "en",
+          "value": "LULI"
+        }
+      ]
+    },
+    {
+      "code": "48",
+      "display": "CHERKES",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "ЧЕРКЕС/ЧЕРКЕШЕНКА"
+        },
+        {
+          "language": "en",
+          "value": "CIRCASSIAN"
+        }
+      ]
+    },
+    {
+      "code": "49",
+      "display": "CHECHEN",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "ЧЕЧЕНЕЦ/ЧЕЧЕНКА"
+        },
+        {
+          "language": "en",
+          "value": "CHECHEN"
+        }
+      ]
+    },
+    {
+      "code": "50",
+      "display": "CHUVASH",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "ЧУВАШ/ЧУВАШКА"
+        },
+        {
+          "language": "en",
+          "value": "CHUVASH"
+        }
+      ]
+    },
+    {
+      "code": "51",
+      "display": "ESTONIYALI",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "ЭСТОНЕЦ/ЭСТОНКА"
+        },
+        {
+          "language": "en",
+          "value": "ESTONIAN"
+        }
+      ]
+    },
+    {
+      "code": "52",
+      "display": "YOQUT",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "ЯКУТ/ЯКУТКА"
+        },
+        {
+          "language": "en",
+          "value": "YАКUT"
+        }
+      ]
+    },
+    {
+      "code": "53",
+      "display": "TAT",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "ТАТ/ТАТКА"
+        },
+        {
+          "language": "en",
+          "value": "TATAMI"
+        }
+      ]
+    },
+    {
+      "code": "54",
+      "display": "GAGAUZ",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "ГАГАУЗ/ГАГАУЗКА"
+        },
+        {
+          "language": "en",
+          "value": "GAGAUZ"
+        }
+      ]
+    },
+    {
+      "code": "55",
+      "display": "LEZGIN",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "ЛЕЗГИН/ЛЕЗГИНКА"
+        },
+        {
+          "language": "en",
+          "value": "LEZGHIN"
+        }
+      ]
+    },
+    {
+      "code": "56",
+      "display": "KOREYS",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "КОРЕЕЦ/КОРЕЯНКА"
+        },
+        {
+          "language": "en",
+          "value": "KOREAN"
+        }
+      ]
+    },
+    {
+      "code": "57",
+      "display": "TURK",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "ТУРОК/ТУРЧАНКА"
+        },
+        {
+          "language": "en",
+          "value": "TURK"
+        }
+      ]
+    },
+    {
+      "code": "58",
+      "display": "UYG‘UR",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "УЙГУР/УЙГУРКА"
+        },
+        {
+          "language": "en",
+          "value": "UIGUR"
+        }
+      ]
+    },
+    {
+      "code": "59",
+      "display": "VENGR",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "ВЕНГР/ВЕНГЕРКА"
+        },
+        {
+          "language": "en",
+          "value": "HUNGARIAN"
+        }
+      ]
+    },
+    {
+      "code": "60",
+      "display": "GREK",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "ГРЕК/ГРЕЧАНКА"
+        },
+        {
+          "language": "en",
+          "value": "GREEK"
+        }
+      ]
+    },
+    {
+      "code": "61",
+      "display": "TUNGONI",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "ДУНГАНИН/ДУНГАНКА"
+        },
+        {
+          "language": "en",
+          "value": "DUNGAN"
+        }
+      ]
+    },
+    {
+      "code": "62",
+      "display": "MAKEDONIYALIK",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "МАКЕДОНЕЦ/МАКЕДОНКА"
+        },
+        {
+          "language": "en",
+          "value": "MACEDONIAN"
+        }
+      ]
+    },
+    {
+      "code": "63",
+      "display": "RUMIN",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "РУМЫН/РУМЫНКА"
+        },
+        {
+          "language": "en",
+          "value": "ROMANIAN"
+        }
+      ]
+    },
+    {
+      "code": "64",
+      "display": "FINIKIYALIK",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "ФИНИКИЕЦ/ФИНИКИЙКА"
+        },
+        {
+          "language": "en",
+          "value": "PHOENICIAN"
+        }
+      ]
+    },
+    {
+      "code": "65",
+      "display": "HINDI",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "ИНДИЕЦ/ИНДИАНКА"
+        },
+        {
+          "language": "en",
+          "value": "HINDOO"
+        }
+      ]
+    },
+    {
+      "code": "66",
+      "display": "MONGOL",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "МОНГОЛ/МОНГОЛКА"
+        },
+        {
+          "language": "en",
+          "value": "MONGOL"
+        }
+      ]
+    },
+    {
+      "code": "67",
+      "display": "FORS",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "ПЕРС/ПЕРСИЯНКА"
+        },
+        {
+          "language": "en",
+          "value": "PERSIAN"
+        }
+      ]
+    },
+    {
+      "code": "68",
+      "display": "ERONLI",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "ИРАНЕЦ/ИРАНКА"
+        },
+        {
+          "language": "en",
+          "value": "IRANIAN"
+        }
+      ]
+    },
+    {
+      "code": "69",
+      "display": "AFG‘ON",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "АФГАНЕЦ/АФГАНКА"
+        },
+        {
+          "language": "en",
+          "value": "AFGHAN"
+        }
+      ]
+    },
+    {
+      "code": "70",
+      "display": "ARAB",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "АРАБ/АРАБКА"
+        },
+        {
+          "language": "en",
+          "value": "ARAB"
+        }
+      ]
+    },
+    {
+      "code": "71",
+      "display": "KUMIQ",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "КУМЫК/КУМЫЧКА"
+        },
+        {
+          "language": "en",
+          "value": "KUMIQ"
+        }
+      ]
+    },
+    {
+      "code": "72",
+      "display": "BULG‘OR",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "БОЛГАРИН/БОЛГАРКА"
+        },
+        {
+          "language": "en",
+          "value": "BULGARIAN"
+        }
+      ]
+    },
+    {
+      "code": "73",
+      "display": "XITOY",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "КИТАЕЦ/КИТАЯНКА"
+        },
+        {
+          "language": "en",
+          "value": "CHINESE"
+        }
+      ]
+    },
+    {
+      "code": "74",
+      "display": "KORYAK",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "КОРЯК/КОРЯЧКА"
+        },
+        {
+          "language": "en",
+          "value": "KORYAK"
+        }
+      ]
+    },
+    {
+      "code": "75",
+      "display": "NENETS",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "НЕНЕЦ/НЕНКА"
+        },
+        {
+          "language": "en",
+          "value": "NENETS"
+        }
+      ]
+    },
+    {
+      "code": "76",
+      "display": "CHUKCHA",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "ЧУКЧА/ЧУКЧА"
+        },
+        {
+          "language": "en",
+          "value": "CHUKCHI"
+        }
+      ]
+    },
+    {
+      "code": "77",
+      "display": "LAK",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "ЛАК/ЛАКЧАНКА"
+        },
+        {
+          "language": "en",
+          "value": "LAK"
+        }
+      ]
+    },
+    {
+      "code": "78",
+      "display": "ASSIRIYETS",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "АССИРИЕЦ/АССИРИЙКА"
+        },
+        {
+          "language": "en",
+          "value": "ASSYRIAN"
+        }
+      ]
+    },
+    {
+      "code": "79",
+      "display": "KASHGARLIK",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "КАШГАРЕЦ/КАШГАРКА"
+        },
+        {
+          "language": "en",
+          "value": "KASHGARIAN"
+        }
+      ]
+    },
+    {
+      "code": "80",
+      "display": "DOG‘ISTONLIK",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "ДАГЕСТАНЕЦ/ДАГЕСТАНКА"
+        },
+        {
+          "language": "en",
+          "value": "DAGHESTANI"
+        }
+      ]
+    },
+    {
+      "code": "81",
+      "display": "AVAR",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "АВАРЕЦ/АВАРКА"
+        },
+        {
+          "language": "en",
+          "value": "AVAR"
+        }
+      ]
+    },
+    {
+      "code": "82",
+      "display": "CHEXIYALIK",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "ЧЕХ/ЧЕШКА"
+        },
+        {
+          "language": "en",
+          "value": "CZECH"
+        }
+      ]
+    },
+    {
+      "code": "83",
+      "display": "FIN",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "ФИНН/ФИНКА"
+        },
+        {
+          "language": "en",
+          "value": "FINN"
+        }
+      ]
+    },
+    {
+      "code": "84",
+      "display": "AMERIKALIK",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "АМЕРИКАНЕЦ/АМЕРИКАНКА"
+        },
+        {
+          "language": "en",
+          "value": "AMERICAN"
+        }
+      ]
+    },
+    {
+      "code": "85",
+      "display": "FRANSUZ",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "ФРАНЦУЗ/ФРАНЦУЖЕНКА"
+        },
+        {
+          "language": "en",
+          "value": "FRENCH"
+        }
+      ]
+    },
+    {
+      "code": "86",
+      "display": "KURD",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "КУРД/КУРДЯНКА"
+        },
+        {
+          "language": "en",
+          "value": "KURD"
+        }
+      ]
+    },
+    {
+      "code": "87",
+      "display": "KUBALIK",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "КУБИНЕЦ/КУБИНКА"
+        },
+        {
+          "language": "en",
+          "value": "CUBAN"
+        }
+      ]
+    },
+    {
+      "code": "88",
+      "display": "UDIN",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "УДИН/УДИНКА"
+        },
+        {
+          "language": "en",
+          "value": "UDIN"
+        }
+      ]
+    },
+    {
+      "code": "89",
+      "display": "SHOR",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "ШОРЕЦ/ШОРКА"
+        },
+        {
+          "language": "en",
+          "value": "SHOR"
+        }
+      ]
+    },
+    {
+      "code": "90",
+      "display": "JAZOIRLI",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "АЛЖИРЕЦ/АЛЖИРКА"
+        },
+        {
+          "language": "en",
+          "value": "JAZOIRLIK"
+        }
+      ]
+    },
+    {
+      "code": "91",
+      "display": "ISPANIYALI",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "ИСПАНЕЦ/ИСПАНКА"
+        },
+        {
+          "language": "en",
+          "value": "SPANISH"
+        }
+      ]
+    },
+    {
+      "code": "92",
+      "display": "ADJARIYALI",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "АДЖАРЕЦ/АДЖАРКА"
+        },
+        {
+          "language": "en",
+          "value": "ADZHARIAN"
+        }
+      ]
+    },
+    {
+      "code": "93",
+      "display": "ABAZIN",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "АБАЗИНЕЦ/АБАЗИНКА"
+        },
+        {
+          "language": "en",
+          "value": "ABAZINIAN"
+        }
+      ]
+    },
+    {
+      "code": "94",
+      "display": "YAPONIYALI",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "ЯПОНЕЦ/ЯПОНКА"
+        },
+        {
+          "language": "en",
+          "value": "JAPANESE"
+        }
+      ]
+    },
+    {
+      "code": "95",
+      "display": "BESSARAB",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "БЕССАРАБЕЦ/БЕССАРАБКА"
+        },
+        {
+          "language": "en",
+          "value": "BESSARABIAN"
+        }
+      ]
+    },
+    {
+      "code": "96",
+      "display": "NOGAY",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "НОГАЕЦ/НОГАЙКА"
+        },
+        {
+          "language": "en",
+          "value": "NOGAY"
+        }
+      ]
+    },
+    {
+      "code": "97",
+      "display": "AVSTRIYALIK",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "АВСТРИЕЦ/АВСТРИЙКА"
+        },
+        {
+          "language": "en",
+          "value": "AUSTRIAN"
+        }
+      ]
+    },
+    {
+      "code": "99",
+      "display": "PARAGVAYLI",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "ПАРАГВАЕЦ/ПАРАГВАЙКА"
+        },
+        {
+          "language": "en",
+          "value": "PARAGUAYAN"
+        }
+      ]
+    },
+    {
+      "code": "100",
+      "display": "AGUL",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "АГУЛ/АГУЛКА"
+        },
+        {
+          "language": "en",
+          "value": "AGUL"
+        }
+      ]
+    },
+    {
+      "code": "101",
+      "display": "XEMSHIL",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "ХЕМШИЛ/ХЕМШИЛ"
+        },
+        {
+          "language": "en",
+          "value": "XEMSHIL"
+        }
+      ]
+    },
+    {
+      "code": "102",
+      "display": "KUMANDIN",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "КУМАНДИН/КУМАНДИНКА"
+        },
+        {
+          "language": "en",
+          "value": "KUMANDIN"
+        }
+      ]
+    },
+    {
+      "code": "103",
+      "display": "XANTI",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "ХАНТЫ/ХАНТЫ"
+        },
+        {
+          "language": "en",
+          "value": "KHANTY"
+        }
+      ]
+    },
+    {
+      "code": "104",
+      "display": "EFIOP",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "ЭФИОП/ЭФИОПКА"
+        },
+        {
+          "language": "en",
+          "value": "ETHIOPIAN"
+        }
+      ]
+    },
+    {
+      "code": "105",
+      "display": "SAXURETS",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "ЦАХУРЕЦ/ЦАХУРКА"
+        },
+        {
+          "language": "en",
+          "value": "SAHUR"
+        }
+      ]
+    },
+    {
+      "code": "106",
+      "display": "SLOVAK",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "СЛОВАК/СЛОВАЧКА"
+        },
+        {
+          "language": "en",
+          "value": "SLOVAK"
+        }
+      ]
+    },
+    {
+      "code": "107",
+      "display": "KORAIM",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "КАРАИМЕЦ/КАРАИМКА"
+        },
+        {
+          "language": "en",
+          "value": "KORAIM"
+        }
+      ]
+    },
+    {
+      "code": "108",
+      "display": "IORDAN",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "ИОРДАНЕЦ/ИОРДАНКА"
+        },
+        {
+          "language": "en",
+          "value": "JORDANIAN"
+        }
+      ]
+    },
+    {
+      "code": "109",
+      "display": "SAXOR",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "ЦАХОРЕЦ/ЦАХОРКА"
+        },
+        {
+          "language": "en",
+          "value": "TSAXOR"
+        }
+      ]
+    },
+    {
+      "code": "110",
+      "display": "NANAY",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "НАНАЕЦ/НАНАЙКА"
+        },
+        {
+          "language": "en",
+          "value": "NANAY"
+        }
+      ]
+    },
+    {
+      "code": "111",
+      "display": "EVEN",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "ЭВЕН/ЭВЕНКА"
+        },
+        {
+          "language": "en",
+          "value": "EVEN"
+        }
+      ]
+    },
+    {
+      "code": "112",
+      "display": "BERBER",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "БЕРБЕР/БЕРБЕРКА"
+        },
+        {
+          "language": "en",
+          "value": "BERBER"
+        }
+      ]
+    },
+    {
+      "code": "113",
+      "display": "ALBANIYALI",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "АЛБАНЕЦ/АЛБАНКА"
+        },
+        {
+          "language": "en",
+          "value": "ALBANIAN"
+        }
+      ]
+    },
+    {
+      "code": "114",
+      "display": "MADYAR",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "МАДЬЯР/МАДЬЯРКА"
+        },
+        {
+          "language": "en",
+          "value": "MAGYAR"
+        }
+      ]
+    },
+    {
+      "code": "115",
+      "display": "GOLLANDIYALI",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "ГОЛЛАНДЕЦ/ГОЛЛАНДКА"
+        },
+        {
+          "language": "en",
+          "value": "DUTCHMAN"
+        }
+      ]
+    },
+    {
+      "code": "118",
+      "display": "NIKARAGUALIK",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "НИКАРАГУАНЕЦ/НИКАРАГУАНКА"
+        },
+        {
+          "language": "en",
+          "value": "NICARAGUAN"
+        }
+      ]
+    },
+    {
+      "code": "119",
+      "display": "INGLIZ",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "АНГЛИЧАНИН/АНГЛИЧАНКА"
+        },
+        {
+          "language": "en",
+          "value": "ENGLISH"
+        }
+      ]
+    },
+    {
+      "code": "120",
+      "display": "ANGLIYALIK",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "АНГЛИЧАНИН/АНГЛИЧАНКА"
+        },
+        {
+          "language": "en",
+          "value": "ENGLISH"
+        }
+      ]
+    },
+    {
+      "code": "121",
+      "display": "GONDURAS",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "ГОНДУРАС/ГОНДУРАСЕЦ"
+        },
+        {
+          "language": "en",
+          "value": "HONDURAN"
+        }
+      ]
+    },
+    {
+      "code": "122",
+      "display": "INDONEZIYALI",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "ИНДОНЕЗИЕЦ/ИНДОНЕЗИЙКА"
+        },
+        {
+          "language": "en",
+          "value": "INDONESIAN"
+        }
+      ]
+    },
+    {
+      "code": "125",
+      "display": "INDUS",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "ИНДУС/ИНДУС"
+        },
+        {
+          "language": "en",
+          "value": "INDIAN"
+        }
+      ]
+    },
+    {
+      "code": "133",
+      "display": "KENIYALIK",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "КЕНИЕЦ/КЕНИЙКА"
+        },
+        {
+          "language": "en",
+          "value": "KENYAN"
+        }
+      ]
+    },
+    {
+      "code": "135",
+      "display": "KOLUMBIYALI",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "КОЛУМБИЕЦ/КОЛУМБИЙКА"
+        },
+        {
+          "language": "en",
+          "value": "COLOMBIAN"
+        }
+      ]
+    },
+    {
+      "code": "136",
+      "display": "XORVAT",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "ХОРВАТ/ХОРВАТКА"
+        },
+        {
+          "language": "en",
+          "value": "CROAT"
+        }
+      ]
+    },
+    {
+      "code": "137",
+      "display": "TALISH",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "ТАЛЫШ/ТАЛЫШКА"
+        },
+        {
+          "language": "en",
+          "value": "TALISH"
+        }
+      ]
+    },
+    {
+      "code": "184",
+      "display": "URDU",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "УРДУ"
+        },
+        {
+          "language": "en",
+          "value": "URDU"
+        }
+      ]
+    },
+    {
+      "code": "256",
+      "display": "POKISTONLIK",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "ПАКИСТАНЕЦ/ПАКИСТАНКА"
+        },
+        {
+          "language": "en",
+          "value": "PAKISTANI"
+        }
+      ]
+    },
+    {
+      "code": "258",
+      "display": "PUSHTUN",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "ПУШТУН/ПУШТУНКА"
+        },
+        {
+          "language": "en",
+          "value": "PASHTO"
+        }
+      ]
+    },
+    {
+      "code": "259",
+      "display": "TOGOLIK",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "ТОГОЛЕЦ/ТОГОЛКА"
+        },
+        {
+          "language": "en",
+          "value": "TOGOLESE"
+        }
+      ]
+    },
+    {
+      "code": "261",
+      "display": "GVINEYALIK",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "ГВИНЕЕЦ/ГВИНЕЙКА"
+        },
+        {
+          "language": "en",
+          "value": "GUINEAN"
+        }
+      ]
+    },
+    {
+      "code": "262",
+      "display": "RUTUL",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "РУТУЛ/РУТУЛКА"
+        },
+        {
+          "language": "en",
+          "value": "RUTUL"
+        }
+      ]
+    },
+    {
+      "code": "265",
+      "display": "NEPAL",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "НЕПАЛЕЦ/НЕПАЛКА"
+        },
+        {
+          "language": "en",
+          "value": "NEPALESE"
+        }
+      ]
+    },
+    {
+      "code": "266",
+      "display": "IJORETS",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "ИЖОРЕЦ/ИЖОРКА"
+        },
+        {
+          "language": "en",
+          "value": "IJORIAN"
+        }
+      ]
+    },
+    {
+      "code": "271",
+      "display": "LIVAN",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "ЛИВАНЕЦ/ЛИВАНКА"
+        },
+        {
+          "language": "en",
+          "value": "LEBANESE"
+        }
+      ]
+    },
+    {
+      "code": "277",
+      "display": "SHVEYSARIYALI",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "ШВЕЙЦАРЕЦ/ШВЕЙЦАРКА"
+        },
+        {
+          "language": "en",
+          "value": "SWISS"
+        }
+      ]
+    },
+    {
+      "code": "279",
+      "display": "DOMENIKAN",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "ДОМЕНИКАНЕЦ/ДОМЕНИКАНКА"
+        },
+        {
+          "language": "en",
+          "value": "DOMINICAN"
+        }
+      ]
+    },
+    {
+      "code": "700",
+      "display": "AVAN",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "АВАН/АВАНКА"
+        },
+        {
+          "language": "en",
+          "value": "AWANEH"
+        }
+      ]
+    },
+    {
+      "code": "701",
+      "display": "AVSTRALIYALIK",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "АВСТРАЛИЕЦ/АВСТРАЛИЙКА"
+        },
+        {
+          "language": "en",
+          "value": "AUSTRALIANS"
+        }
+      ]
+    },
+    {
+      "code": "702",
+      "display": "ADANGME",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "АДАНГМЕ/АДАНГМЕ"
+        },
+        {
+          "language": "en",
+          "value": "ADANGME"
+        }
+      ]
+    },
+    {
+      "code": "703",
+      "display": "AZANDE",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "АЗАНДЕ/АЗАНДЕ"
+        },
+        {
+          "language": "en",
+          "value": "AZANDE"
+        }
+      ]
+    },
+    {
+      "code": "704",
+      "display": "OZARBAYJON",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "АЗЕБАЙДЖАНЕЦ/АЗЕРБАЙДЖАНКА"
+        },
+        {
+          "language": "en",
+          "value": "AZERBAIJANIAN"
+        }
+      ]
+    },
+    {
+      "code": "705",
+      "display": "AYMARA",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "АЙМАРА/АЙМАРА"
+        },
+        {
+          "language": "en",
+          "value": "AYMARA"
+        }
+      ]
+    },
+    {
+      "code": "706",
+      "display": "AYN",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "АЙН/АЙНКА"
+        },
+        {
+          "language": "en",
+          "value": "AINU"
+        }
+      ]
+    },
+    {
+      "code": "707",
+      "display": "AKMBA",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "АКАМБА/АКАМБА"
+        },
+        {
+          "language": "en",
+          "value": "AKAMBA"
+        }
+      ]
+    },
+    {
+      "code": "708",
+      "display": "AKAN",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "АКАН/АКАН"
+        },
+        {
+          "language": "en",
+          "value": "AKAN"
+        }
+      ]
+    },
+    {
+      "code": "709",
+      "display": "AKIKUYYU",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "АКИКУЙЮ/ЙКИКУЙЮ"
+        },
+        {
+          "language": "en",
+          "value": "AKIKUYU"
+        }
+      ]
+    },
+    {
+      "code": "710",
+      "display": "ALEUTLIK",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "АЛЕУТ/АЛЕУТКА"
+        },
+        {
+          "language": "en",
+          "value": "ALEUT"
+        }
+      ]
+    },
+    {
+      "code": "711",
+      "display": "AMXARA",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "АМХАРА/АМХАРА"
+        },
+        {
+          "language": "en",
+          "value": "AMHARA"
+        }
+      ]
+    },
+    {
+      "code": "712",
+      "display": "INGLIS-KANADALIK",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "АНГЛО-КАНАДЕЦ/АНГЛО-КАНАДКА"
+        },
+        {
+          "language": "en",
+          "value": "ANGLO-CANADIANS"
+        }
+      ]
+    },
+    {
+      "code": "713",
+      "display": "INGLIS-YANGIZELANDIYALIK",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "АНГЛО-НОВОЗЕЛАНДЕЦ/АНГЛО-НОВОЗЕЛЕНДКА"
+        },
+        {
+          "language": "en",
+          "value": "NEW ZEALADERS (PAKEHAS)"
+        }
+      ]
+    },
+    {
+      "code": "714",
+      "display": "ARAUKAN",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "АРАУКАН/АРАУКАН"
+        },
+        {
+          "language": "en",
+          "value": "ARAUCANIAN"
+        }
+      ]
+    },
+    {
+      "code": "715",
+      "display": "ARGENTINALIK",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "АРГЕНТИНЕЦ/АРГЕНТИНКА"
+        },
+        {
+          "language": "en",
+          "value": "ARGENTINES"
+        }
+      ]
+    },
+    {
+      "code": "716",
+      "display": "AROMUN",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "АРОМУН/АРОМУН"
+        },
+        {
+          "language": "en",
+          "value": "AROMANIAN"
+        }
+      ]
+    },
+    {
+      "code": "717",
+      "display": "ASSAMLIK",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "АССАМИЕЦ/АССАМИЙКА"
+        },
+        {
+          "language": "en",
+          "value": "ASSAM"
+        }
+      ]
+    },
+    {
+      "code": "718",
+      "display": "AFAR",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "АФАР/АФАР"
+        },
+        {
+          "language": "en",
+          "value": "AFAR"
+        }
+      ]
+    },
+    {
+      "code": "719",
+      "display": "AFRIKANERLIK",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "АФРИКАНЕР/АФРИКАНЕРКА"
+        },
+        {
+          "language": "en",
+          "value": "AFRIKANER"
+        }
+      ]
+    },
+    {
+      "code": "720",
+      "display": "ATSTEK",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "АЦТЕК/АЦТЕК"
+        },
+        {
+          "language": "en",
+          "value": "AZTEC"
+        }
+      ]
+    },
+    {
+      "code": "721",
+      "display": "ACHE",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "АЧЕ/АЧЕ"
+        },
+        {
+          "language": "en",
+          "value": "ACEHNESE"
+        }
+      ]
+    },
+    {
+      "code": "722",
+      "display": "BAGAM",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "БАГАМЕЦ/БАГАМКА"
+        },
+        {
+          "language": "en",
+          "value": "BAHAMIAN"
+        }
+      ]
+    },
+    {
+      "code": "723",
+      "display": "BADJAO",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "БАДЖАО/БАДЖАО"
+        },
+        {
+          "language": "en",
+          "value": "BAJAU"
+        }
+      ]
+    },
+    {
+      "code": "724",
+      "display": "BAKVE",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "БАКВЕ/БАКВЕ"
+        },
+        {
+          "language": "en",
+          "value": "BAKWE"
+        }
+      ]
+    },
+    {
+      "code": "725",
+      "display": "BAKELE",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "БАКЕЛЕ/БАКЕЛЕ"
+        },
+        {
+          "language": "en",
+          "value": "BANDJABI"
+        }
+      ]
+    },
+    {
+      "code": "726",
+      "display": "BAKONDJO",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "БАКОНДЖО/БАКОНДЖО"
+        },
+        {
+          "language": "en",
+          "value": "BAKONJO"
+        }
+      ]
+    },
+    {
+      "code": "727",
+      "display": "BALANTE",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "БАЛАНТЕ/БАЛАНТЕ"
+        },
+        {
+          "language": "en",
+          "value": "BALANTE"
+        }
+      ]
+    },
+    {
+      "code": "728",
+      "display": "BALI",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "БАЛИЕЦ/БАЛИЙКА"
+        },
+        {
+          "language": "en",
+          "value": "BALINESE"
+        }
+      ]
+    },
+    {
+      "code": "729",
+      "display": "BANGI",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "БАНГИ/БАНГИ"
+        },
+        {
+          "language": "en",
+          "value": "BANGUI"
+        }
+      ]
+    },
+    {
+      "code": "730",
+      "display": "BANDJAR",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "БАНДЖАР/БАНДЖАРКА"
+        },
+        {
+          "language": "en",
+          "value": "BANJAR"
+        }
+      ]
+    },
+    {
+      "code": "731",
+      "display": "BARBA",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "БАРБА/БАРБА"
+        },
+        {
+          "language": "en",
+          "value": "BARBA"
+        }
+      ]
+    },
+    {
+      "code": "732",
+      "display": "BARI",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "БАРИ/БАРИ"
+        },
+        {
+          "language": "en",
+          "value": "BARI"
+        }
+      ]
+    },
+    {
+      "code": "733",
+      "display": "BASK",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "БАСК/БАСК"
+        },
+        {
+          "language": "en",
+          "value": "BASQUE"
+        }
+      ]
+    },
+    {
+      "code": "734",
+      "display": "BASSA",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "БАССА/БАССА"
+        },
+        {
+          "language": "en",
+          "value": "BASSA"
+        }
+      ]
+    },
+    {
+      "code": "735",
+      "display": "BATAK",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "БАТАК/БАТАК"
+        },
+        {
+          "language": "en",
+          "value": "BATAK"
+        }
+      ]
+    },
+    {
+      "code": "736",
+      "display": "BAXTIYORIY",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "БАХТИАРИ/БАХТИАРИ"
+        },
+        {
+          "language": "en",
+          "value": "BAKHTIARI"
+        }
+      ]
+    },
+    {
+      "code": "737",
+      "display": "BEDJA",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "БЕДЖА/БЕДЖА"
+        },
+        {
+          "language": "en",
+          "value": "BEJA"
+        }
+      ]
+    },
+    {
+      "code": "738",
+      "display": "BELUDJI",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "БЕЛУДЖИ/БЕЛУДЖИ"
+        },
+        {
+          "language": "en",
+          "value": "BALUCHI"
+        }
+      ]
+    },
+    {
+      "code": "739",
+      "display": "BEMBA",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "БЕМБА/БЕМБА"
+        },
+        {
+          "language": "en",
+          "value": "BЕМВА"
+        }
+      ]
+    },
+    {
+      "code": "740",
+      "display": "BENGAL",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "БЕНГАЛЕЦ/БЕНГАЛКА"
+        },
+        {
+          "language": "en",
+          "value": "BENGALI"
+        }
+      ]
+    },
+    {
+      "code": "741",
+      "display": "VO?ALIK BERBER",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "БЕРБЕР/БЕРБЕРКА ОАЗИСОВ"
+        },
+        {
+          "language": "en",
+          "value": "OASIS BERBER"
+        }
+      ]
+    },
+    {
+      "code": "742",
+      "display": "BERBER-XAZARLIK",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "БЕРБЕР-ХАЗАРИЕЦ/БЕРБЕР-ХАРАРИЙКА"
+        },
+        {
+          "language": "en",
+          "value": "BERBER-KHAZAR"
+        }
+      ]
+    },
+    {
+      "code": "743",
+      "display": "BERMUDLIK",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "БЕРМУДЕЦ/БЕРМУДКА"
+        },
+        {
+          "language": "en",
+          "value": "BERMUDS"
+        }
+      ]
+    },
+    {
+      "code": "744",
+      "display": "BETE",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "БЕТЕ/БЕТЕ"
+        },
+        {
+          "language": "en",
+          "value": "BETE"
+        }
+      ]
+    },
+    {
+      "code": "745",
+      "display": "BIKOL",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "БИКОЛ/БИКОЛЕЦ"
+        },
+        {
+          "language": "en",
+          "value": "BICOLANO"
+        }
+      ]
+    },
+    {
+      "code": "746",
+      "display": "BIRMALIK",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "БИРМАНЕЦ/БИРМАНКА"
+        },
+        {
+          "language": "en",
+          "value": "BURMAN"
+        }
+      ]
+    },
+    {
+      "code": "747",
+      "display": "BIXAR",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "БИХАРЕЦ/БИХАРКА"
+        },
+        {
+          "language": "en",
+          "value": "BIHARIS"
+        }
+      ]
+    },
+    {
+      "code": "748",
+      "display": "BOBO",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "БОБО/БОБО"
+        },
+        {
+          "language": "en",
+          "value": "BOBO"
+        }
+      ]
+    },
+    {
+      "code": "749",
+      "display": "BOLIVIYALIK",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "БОЛИВИЕЦ/БОЛИВИЙКА"
+        },
+        {
+          "language": "en",
+          "value": "BOLIVIAN"
+        }
+      ]
+    },
+    {
+      "code": "750",
+      "display": "BOSNIYALIK",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "БОСНИЕЦ/БОСНИЙКА"
+        },
+        {
+          "language": "en",
+          "value": "BOSNIAN"
+        }
+      ]
+    },
+    {
+      "code": "751",
+      "display": "BRAGUI",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "БРАГУИ/БРАГУИ"
+        },
+        {
+          "language": "en",
+          "value": "BRAHUI"
+        }
+      ]
+    },
+    {
+      "code": "752",
+      "display": "BRAZILIYALIK",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "БРАЗИЛЕЦ/БРАЗИЛИЙКА"
+        },
+        {
+          "language": "en",
+          "value": "BRAZILIAN"
+        }
+      ]
+    },
+    {
+      "code": "753",
+      "display": "BRETONLIK",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "БРЕТОНЕЦ/БРЕТОНКА"
+        },
+        {
+          "language": "en",
+          "value": "BRETON"
+        }
+      ]
+    },
+    {
+      "code": "755",
+      "display": "BUGI",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "БУГИЕЦ/БУГИЙКА"
+        },
+        {
+          "language": "en",
+          "value": "BUGIS"
+        }
+      ]
+    },
+    {
+      "code": "756",
+      "display": "BUI",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "БУИ/БУИ"
+        },
+        {
+          "language": "en",
+          "value": "BUYEI"
+        }
+      ]
+    },
+    {
+      "code": "757",
+      "display": "BUSHMONLIK",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "БУШМЕН/БУШМЕНКА"
+        },
+        {
+          "language": "en",
+          "value": "BUSHMAN"
+        }
+      ]
+    },
+    {
+      "code": "758",
+      "display": "BXIL",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "БХИЛ/БХИЛ"
+        },
+        {
+          "language": "en",
+          "value": "BHIL"
+        }
+      ]
+    },
+    {
+      "code": "759",
+      "display": "VOLOF",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "ВОЛОФ/ВОЛОФ"
+        },
+        {
+          "language": "en",
+          "value": "WOLOF"
+        }
+      ]
+    },
+    {
+      "code": "760",
+      "display": "VALLON",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "ВАЛЛОН/ВАЛЛОНКА"
+        },
+        {
+          "language": "en",
+          "value": "WALLOON"
+        }
+      ]
+    },
+    {
+      "code": "761",
+      "display": "VEDDALIK",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "ВВЕДЫ/ВВЕДЫ"
+        },
+        {
+          "language": "en",
+          "value": "VEDDAS"
+        }
+      ]
+    },
+    {
+      "code": "762",
+      "display": "VENESUEL",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "ВЕНЕСУЭЛЕЦ/ВЕНЕСУЭЛКА"
+        },
+        {
+          "language": "en",
+          "value": "VENEZUELAN"
+        }
+      ]
+    },
+    {
+      "code": "763",
+      "display": "VEPS",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "ВЕПС/ВЕПС"
+        },
+        {
+          "language": "en",
+          "value": "VEPSIANS"
+        }
+      ]
+    },
+    {
+      "code": "764",
+      "display": "VISAYYALIK",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "ВИСАЙЕЦ/ВИСАЙКА"
+        },
+        {
+          "language": "en",
+          "value": "VISAYAN"
+        }
+      ]
+    },
+    {
+      "code": "765",
+      "display": "GA",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "ГА/ГА"
+        },
+        {
+          "language": "en",
+          "value": "GA-ADANGBE"
+        }
+      ]
+    },
+    {
+      "code": "766",
+      "display": "GAVAYALIK",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "ГАВАЕЦ/ГАВАЙКА"
+        },
+        {
+          "language": "en",
+          "value": "HAWAIIAN"
+        }
+      ]
+    },
+    {
+      "code": "767",
+      "display": "GAITILIK",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "ГАИТЯНИН/ГАИТЯНКА"
+        },
+        {
+          "language": "en",
+          "value": "HAITIAN"
+        }
+      ]
+    },
+    {
+      "code": "768",
+      "display": "GAYANLIK (INGLIS TILINI)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "ГАЙАНЕЦ/ГАЙАНКА (АНГЛОЯЗЫЧНЫЕ)"
+        },
+        {
+          "language": "en",
+          "value": "GAYANESE (ENG.)"
+        }
+      ]
+    },
+    {
+      "code": "769",
+      "display": "GALISIYLIK",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "ГАЛИСИЕЦ/ГАЛИСИЙКА"
+        },
+        {
+          "language": "en",
+          "value": "GALICIAN"
+        }
+      ]
+    },
+    {
+      "code": "770",
+      "display": "GANDA",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "ГАНДА/ГАНДА"
+        },
+        {
+          "language": "en",
+          "value": "GANDA"
+        }
+      ]
+    },
+    {
+      "code": "771",
+      "display": "GBAYYA",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "ГБАЙЯ/ГБАЙЯ"
+        },
+        {
+          "language": "en",
+          "value": "GBAYA"
+        }
+      ]
+    },
+    {
+      "code": "772",
+      "display": "GVATEMAL",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "ГВАТЕМАЛЕЦ/ГВАТЕМАЛКА"
+        },
+        {
+          "language": "en",
+          "value": "GUATEMALAN"
+        }
+      ]
+    },
+    {
+      "code": "773",
+      "display": "GVIANALIK (INGLIS TILINI)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "ГВИАНЕЦ/ГВИАНКА (АНГЛОЯЗЫЧНЫЕ)"
+        },
+        {
+          "language": "en",
+          "value": "GUIANA (ENG.)"
+        }
+      ]
+    },
+    {
+      "code": "774",
+      "display": "GVIANALIK (GOLLAND TILINI)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "ГВИАНЕЦ/ГВИАНКА (ГОЛЛАНДСКОЯЗЫЧНЫЕ)"
+        },
+        {
+          "language": "en",
+          "value": "GUIANA (DUTCH)"
+        }
+      ]
+    },
+    {
+      "code": "775",
+      "display": "GVIANALIK (FRANSUZ TILINI)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "ГВИАНЕЦ/ГВИАНКА (ФРАНОЯЗЫЧНЫЕ)"
+        },
+        {
+          "language": "en",
+          "value": "GUIANA (FRENCH)"
+        }
+      ]
+    },
+    {
+      "code": "776",
+      "display": "GERE",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "ГЕРЕ/ГЕРЕ"
+        },
+        {
+          "language": "en",
+          "value": "HERE"
+        }
+      ]
+    },
+    {
+      "code": "777",
+      "display": "GERMAN-SHVEYSARIYALIK",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "ГЕРМАНО-ШВЕЙЦАРЕЦ/ГЕРМАНО-ШВЕЙЦАРКА"
+        },
+        {
+          "language": "en",
+          "value": "GERMAN-SWISS"
+        }
+      ]
+    },
+    {
+      "code": "778",
+      "display": "NIVX",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "НИВХ/НИВХ"
+        },
+        {
+          "language": "en",
+          "value": "NIVKH"
+        }
+      ]
+    },
+    {
+      "code": "779",
+      "display": "GONDVANALIK",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "ГОНД/ГОНД"
+        },
+        {
+          "language": "en",
+          "value": "GONDWANA"
+        }
+      ]
+    },
+    {
+      "code": "780",
+      "display": "GOTTENTOT",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "ГОТТЕНТОТ/ГОТТЕНТОТ"
+        },
+        {
+          "language": "en",
+          "value": "HOTTENTOT"
+        }
+      ]
+    },
+    {
+      "code": "781",
+      "display": "GREBO",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "ГРЕБО/ГРЕБО"
+        },
+        {
+          "language": "en",
+          "value": "GREBO"
+        }
+      ]
+    },
+    {
+      "code": "782",
+      "display": "GRUSI",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "ГРУСИ/ГРУСИ"
+        },
+        {
+          "language": "en",
+          "value": "GURUNSI"
+        }
+      ]
+    },
+    {
+      "code": "783",
+      "display": "GUJARATLIK",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "ГУЖАРАТЕЦ/ГУЖАРАТКА"
+        },
+        {
+          "language": "en",
+          "value": "GUJARAT"
+        }
+      ]
+    },
+    {
+      "code": "784",
+      "display": "GUDJURLIK",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "ГУДЖУР/ГУДЖУРКА"
+        },
+        {
+          "language": "en",
+          "value": "GUJUR"
+        }
+      ]
+    },
+    {
+      "code": "785",
+      "display": "GURAGE",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "ГУРУГЕ/ГУРАГЕ"
+        },
+        {
+          "language": "en",
+          "value": "GURAGE"
+        }
+      ]
+    },
+    {
+      "code": "786",
+      "display": "GURMA",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "ГУРМА/ГУРМА"
+        },
+        {
+          "language": "en",
+          "value": "GURMA"
+        }
+      ]
+    },
+    {
+      "code": "787",
+      "display": "GURUNGI",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "ГУРУНГИ/ГУРУНГИ"
+        },
+        {
+          "language": "en",
+          "value": "GURUNG"
+        }
+      ]
+    },
+    {
+      "code": "788",
+      "display": "DAN",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "ДАН/ДАН"
+        },
+        {
+          "language": "en",
+          "value": "DAN"
+        }
+      ]
+    },
+    {
+      "code": "789",
+      "display": "DARXATLIK",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "ДАРХАТ/ДАРХАТКА"
+        },
+        {
+          "language": "en",
+          "value": "DARKHAT"
+        }
+      ]
+    },
+    {
+      "code": "790",
+      "display": "DANIYALIK",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "ДАТЧАНИН/ДАТЧАНКА"
+        },
+        {
+          "language": "en",
+          "value": "DANE"
+        }
+      ]
+    },
+    {
+      "code": "791",
+      "display": "DAYAK",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "ДАЯК/ДАЯК"
+        },
+        {
+          "language": "en",
+          "value": "DAYAK"
+        }
+      ]
+    },
+    {
+      "code": "792",
+      "display": "DJAKUN",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "ДЖАКУН/ДЖАКУН"
+        },
+        {
+          "language": "en",
+          "value": "DZHAKUN"
+        }
+      ]
+    },
+    {
+      "code": "793",
+      "display": "DJATLIK",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "ДЖАТ/ДЖАТ"
+        },
+        {
+          "language": "en",
+          "value": "JATS"
+        }
+      ]
+    },
+    {
+      "code": "794",
+      "display": "DJUKUN",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "ДЖУКУН/ДЖУКУН"
+        },
+        {
+          "language": "en",
+          "value": "JUKUN"
+        }
+      ]
+    },
+    {
+      "code": "795",
+      "display": "DINKA",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "ДИНКА/ДИНКА"
+        },
+        {
+          "language": "en",
+          "value": "DINKA"
+        }
+      ]
+    },
+    {
+      "code": "796",
+      "display": "DIOLA",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "ДИОЛА/ДИОЛА"
+        },
+        {
+          "language": "en",
+          "value": "JOLA"
+        }
+      ]
+    },
+    {
+      "code": "797",
+      "display": "DOGON",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "ДОГОН/ДОГОН"
+        },
+        {
+          "language": "en",
+          "value": "DOGON"
+        }
+      ]
+    },
+    {
+      "code": "798",
+      "display": "DOLGANLIK",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "ДОЛГАНИН/ДОЛГАНКА"
+        },
+        {
+          "language": "en",
+          "value": "DOLGAN"
+        }
+      ]
+    },
+    {
+      "code": "799",
+      "display": "DUALA",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "ДУАЛА/ДУАЛА"
+        },
+        {
+          "language": "en",
+          "value": "DUALA"
+        }
+      ]
+    },
+    {
+      "code": "800",
+      "display": "DUN",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "ДУН/ДУН"
+        },
+        {
+          "language": "en",
+          "value": "DUN"
+        }
+      ]
+    },
+    {
+      "code": "801",
+      "display": "DUSUN",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "ДУСУН/ДУСУН"
+        },
+        {
+          "language": "en",
+          "value": "DUSUN"
+        }
+      ]
+    },
+    {
+      "code": "802",
+      "display": "TO?LIK YAXUDIY",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "ГОРСКИЙ ЕВРЕЙ/ГОРСКАЯ ЕВРЕЙКА"
+        },
+        {
+          "language": "en",
+          "value": "MOUNTAIN JEWS"
+        }
+      ]
+    },
+    {
+      "code": "803",
+      "display": "ZINZA (BAZINZA)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "ЗИНЗА (БАЗИНЗА)/ЗИНЗА (БАЗИНЗА)"
+        },
+        {
+          "language": "en",
+          "value": "ZINZA (BAZINZA)"
+        }
+      ]
+    },
+    {
+      "code": "804",
+      "display": "ZULUS",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "ЗУЛУС/ЗУЛУСКА"
+        },
+        {
+          "language": "en",
+          "value": "ZULU"
+        }
+      ]
+    },
+    {
+      "code": "805",
+      "display": "IBANAGI",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "ИБАНАГИ/ИБАНАГИ"
+        },
+        {
+          "language": "en",
+          "value": "IBANAG"
+        }
+      ]
+    },
+    {
+      "code": "806",
+      "display": "IBAN",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "ИБАН/ИБАН"
+        },
+        {
+          "language": "en",
+          "value": "IBAN"
+        }
+      ]
+    },
+    {
+      "code": "807",
+      "display": "IBIBIO",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "ИБИБИО/ИБИБИО"
+        },
+        {
+          "language": "en",
+          "value": "IBIBIO"
+        }
+      ]
+    },
+    {
+      "code": "808",
+      "display": "IBO",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "ИБО/ИБО"
+        },
+        {
+          "language": "en",
+          "value": "IBO"
+        }
+      ]
+    },
+    {
+      "code": "809",
+      "display": "IDOMA",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "ИДОМА/ИДОМА"
+        },
+        {
+          "language": "en",
+          "value": "IDOMA"
+        }
+      ]
+    },
+    {
+      "code": "810",
+      "display": "ILOKI",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "ИЛОКИ/ИЛОКИ"
+        },
+        {
+          "language": "en",
+          "value": "ILOKANO"
+        }
+      ]
+    },
+    {
+      "code": "811",
+      "display": "XINDU",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "ИНДЕЕЦ/ИНДЕЕЦ"
+        },
+        {
+          "language": "en",
+          "value": "(AMERICAN) INDIAN"
+        }
+      ]
+    },
+    {
+      "code": "812",
+      "display": "IRLANDIYALIK",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "ИРЛАНДЕЦ/ИРЛАНДКА"
+        },
+        {
+          "language": "en",
+          "value": "IRISHMAN"
+        }
+      ]
+    },
+    {
+      "code": "813",
+      "display": "ISLANDIYALIK",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "ИСЛАНДЕЦ/ИСЛАНДКА"
+        },
+        {
+          "language": "en",
+          "value": "ICELANDER"
+        }
+      ]
+    },
+    {
+      "code": "814",
+      "display": "ISSA",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "ИССА/ИССА"
+        },
+        {
+          "language": "en",
+          "value": "ISSA"
+        }
+      ]
+    },
+    {
+      "code": "815",
+      "display": "ITALYAN-SHVEYSARIYALIK",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "ИТАЛО-ШВЕЙЦАРЕЦ/ИТАЛО-ШВЕЙЦАРКА"
+        },
+        {
+          "language": "en",
+          "value": "ITALIAN-SWISS"
+        }
+      ]
+    },
+    {
+      "code": "816",
+      "display": "ITELMEN",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "ИТЕЛЬМЕН/ИТЕЛЬМЕНКА"
+        },
+        {
+          "language": "en",
+          "value": "ITELMEN"
+        }
+      ]
+    },
+    {
+      "code": "817",
+      "display": "ITSZU",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "ИЦЗУ/ИЦЗУ"
+        },
+        {
+          "language": "en",
+          "value": "YI"
+        }
+      ]
+    },
+    {
+      "code": "818",
+      "display": "YORUBA",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "ЙОРУБА/ЙОРУБА"
+        },
+        {
+          "language": "en",
+          "value": "YORUBA"
+        }
+      ]
+    },
+    {
+      "code": "819",
+      "display": "KABIL",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "КАБИЛ/КАБИЛ"
+        },
+        {
+          "language": "en",
+          "value": "KABILIAN"
+        }
+      ]
+    },
+    {
+      "code": "820",
+      "display": "KAKCHIKELI",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "КАКЧИКЕЛИ/КАКЧИКЕЛИ"
+        },
+        {
+          "language": "en",
+          "value": "KAQCHIKEL"
+        }
+      ]
+    },
+    {
+      "code": "821",
+      "display": "KANADALIK",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "КАНАДЕЦ/КАНАДКА"
+        },
+        {
+          "language": "en",
+          "value": "CANADIAN"
+        }
+      ]
+    },
+    {
+      "code": "822",
+      "display": "KANAK",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "КАНАК/КАНАК"
+        },
+        {
+          "language": "en",
+          "value": "KANAKA"
+        }
+      ]
+    },
+    {
+      "code": "823",
+      "display": "KANNARA",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "КАННАРА/КАННАРА"
+        },
+        {
+          "language": "en",
+          "value": "KANNADIGA"
+        }
+      ]
+    },
+    {
+      "code": "824",
+      "display": "KANURI",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "КАНУРИ/КАНУРИ"
+        },
+        {
+          "language": "en",
+          "value": "KANURI"
+        }
+      ]
+    },
+    {
+      "code": "825",
+      "display": "KAREN",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "КАРЕН/КАРЕН"
+        },
+        {
+          "language": "en",
+          "value": "KAREN"
+        }
+      ]
+    },
+    {
+      "code": "826",
+      "display": "KATALAN",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "КАТАЛАН/КАТАЛАНКА"
+        },
+        {
+          "language": "en",
+          "value": "CATALAN"
+        }
+      ]
+    },
+    {
+      "code": "827",
+      "display": "KACHIN",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "КАЧИН/КАЧИН"
+        },
+        {
+          "language": "en",
+          "value": "KACHIN"
+        }
+      ]
+    },
+    {
+      "code": "828",
+      "display": "KASHMIR",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "КАШМИР/КАШМИРКА"
+        },
+        {
+          "language": "en",
+          "value": "KASHMIREAN"
+        }
+      ]
+    },
+    {
+      "code": "829",
+      "display": "KAYA",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "КАЯ/КАЯ"
+        },
+        {
+          "language": "en",
+          "value": "GAYA"
+        }
+      ]
+    },
+    {
+      "code": "830",
+      "display": "KEDOYAN",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "КЕДОЯН/КЕДОЯН"
+        },
+        {
+          "language": "en",
+          "value": "KEDOYAN"
+        }
+      ]
+    },
+    {
+      "code": "831",
+      "display": "KEKCHI",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "КЕКЧИ/КЕКЧИ"
+        },
+        {
+          "language": "en",
+          "value": "KEKCHI"
+        }
+      ]
+    },
+    {
+      "code": "832",
+      "display": "KET",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "КЕТ/КЕТ"
+        },
+        {
+          "language": "en",
+          "value": "KETS"
+        }
+      ]
+    },
+    {
+      "code": "833",
+      "display": "KECHUA",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "КЕЧУАН/КЕЧУАНКА"
+        },
+        {
+          "language": "en",
+          "value": "QUECHUA"
+        }
+      ]
+    },
+    {
+      "code": "834",
+      "display": "KINGA (VAKINGA)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "КИНГА (ВАКИНГА)/КИНГА (ВАКИНГА)"
+        },
+        {
+          "language": "en",
+          "value": "KINGA (WAKINGA)"
+        }
+      ]
+    },
+    {
+      "code": "835",
+      "display": "KISI",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "КИСИ/КИСИ"
+        },
+        {
+          "language": "en",
+          "value": "KISSI"
+        }
+      ]
+    },
+    {
+      "code": "836",
+      "display": "KICHE",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "КИЧЕ/КИЧЕ"
+        },
+        {
+          "language": "en",
+          "value": "KnullICHEnull"
+        }
+      ]
+    },
+    {
+      "code": "837",
+      "display": "KLEMANTANLIK",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "КЛЕМАНТАН/КЛЕМАНТАН"
+        },
+        {
+          "language": "en",
+          "value": "KALIMANTANIAN"
+        }
+      ]
+    },
+    {
+      "code": "838",
+      "display": "KONGO",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "КОНОГОЛЕЗЕЦ/КОНОГОЛЕЗКА"
+        },
+        {
+          "language": "en",
+          "value": "CONGOLESE"
+        }
+      ]
+    },
+    {
+      "code": "839",
+      "display": "KONO (VAI)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "КОНО (ВАИ)/КОНО (ВАИ)"
+        },
+        {
+          "language": "en",
+          "value": "VAI"
+        }
+      ]
+    },
+    {
+      "code": "840",
+      "display": "KOSA",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "КОСА/КОСА"
+        },
+        {
+          "language": "en",
+          "value": "XHOSA"
+        }
+      ]
+    },
+    {
+      "code": "841",
+      "display": "KOSTARIKALIK",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "КОСТАРИКАНЕЦ/КОСТАРИКАНКА"
+        },
+        {
+          "language": "en",
+          "value": "COSTARICAN"
+        }
+      ]
+    },
+    {
+      "code": "842",
+      "display": "KOTA",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "КОТА/КОТА"
+        },
+        {
+          "language": "en",
+          "value": "KOTA"
+        }
+      ]
+    },
+    {
+      "code": "843",
+      "display": "KPELLE",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "КПЕЛЛЕ/КПЕЛЛЕ"
+        },
+        {
+          "language": "en",
+          "value": "KPELLE"
+        }
+      ]
+    },
+    {
+      "code": "844",
+      "display": "KRAN",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "КРАН/КРАН"
+        },
+        {
+          "language": "en",
+          "value": "KRAN"
+        }
+      ]
+    },
+    {
+      "code": "845",
+      "display": "KRU",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "КРУ/КРУ"
+        },
+        {
+          "language": "en",
+          "value": "KRU"
+        }
+      ]
+    },
+    {
+      "code": "846",
+      "display": "KRIMCHAK",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "КРЫМЧАК/КРЫМЧАНКА"
+        },
+        {
+          "language": "en",
+          "value": "CRIMEAN"
+        }
+      ]
+    },
+    {
+      "code": "847",
+      "display": "KUNA",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "КУНА/КУНА"
+        },
+        {
+          "language": "en",
+          "value": "KUNA"
+        }
+      ]
+    },
+    {
+      "code": "848",
+      "display": "KXMER",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "КХМЕР/КХМЕРКА"
+        },
+        {
+          "language": "en",
+          "value": "KHMER"
+        }
+      ]
+    },
+    {
+      "code": "849",
+      "display": "KXMU",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "КХМУ/КХМУ"
+        },
+        {
+          "language": "en",
+          "value": "KHMU"
+        }
+      ]
+    },
+    {
+      "code": "850",
+      "display": "LADIN",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "ЛАДИН/ЛАДИН"
+        },
+        {
+          "language": "en",
+          "value": "LADINO"
+        }
+      ]
+    },
+    {
+      "code": "851",
+      "display": "LAO",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "ЛАО/ЛАО"
+        },
+        {
+          "language": "en",
+          "value": "LAO"
+        }
+      ]
+    },
+    {
+      "code": "852",
+      "display": "LIMBU",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "ЛИМБУ/ЛИМБУ"
+        },
+        {
+          "language": "en",
+          "value": "LIMBU"
+        }
+      ]
+    },
+    {
+      "code": "853",
+      "display": "LOBI",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "ЛОБИ/ЛОБИ"
+        },
+        {
+          "language": "en",
+          "value": "LOBI"
+        }
+      ]
+    },
+    {
+      "code": "854",
+      "display": "LOZI",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "ЛОЗИ/ЛОЗИ"
+        },
+        {
+          "language": "en",
+          "value": "LOZI"
+        }
+      ]
+    },
+    {
+      "code": "855",
+      "display": "LOMA",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "ЛОМА/ЛОМА"
+        },
+        {
+          "language": "en",
+          "value": "LOMA"
+        }
+      ]
+    },
+    {
+      "code": "856",
+      "display": "LUBA",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "ЛУБА/ЛУБА"
+        },
+        {
+          "language": "en",
+          "value": "LUBA"
+        }
+      ]
+    },
+    {
+      "code": "857",
+      "display": "LUJICHAN",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "ЛУЖИЧАН/ЛУЖИЧАНКА"
+        },
+        {
+          "language": "en",
+          "value": "LUSATIAN"
+        }
+      ]
+    },
+    {
+      "code": "858",
+      "display": "LUNDA",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "ЛУНДА/ЛУНДА"
+        },
+        {
+          "language": "en",
+          "value": "LUNDA"
+        }
+      ]
+    },
+    {
+      "code": "859",
+      "display": "LUO (DJOLUO)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "ЛУО (ДЖОЛУО)/ЛУО (ДЖОЛУО)"
+        },
+        {
+          "language": "en",
+          "value": "LUO (JOLUO)"
+        }
+      ]
+    },
+    {
+      "code": "860",
+      "display": "SHIMOLIY LUO",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "СЕВЕРНЫЙ ЛУО/СЕВЕРНАЯ ЛУО"
+        },
+        {
+          "language": "en",
+          "value": "NORTHERN LUO"
+        }
+      ]
+    },
+    {
+      "code": "861",
+      "display": "LUR",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "ЛУР/ЛУР"
+        },
+        {
+          "language": "en",
+          "value": "LUR"
+        }
+      ]
+    },
+    {
+      "code": "862",
+      "display": "LUXYA",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "ЛУХЬЯ/ЛУХЬЯ"
+        },
+        {
+          "language": "en",
+          "value": "LUHYA"
+        }
+      ]
+    },
+    {
+      "code": "863",
+      "display": "LUCHAZI",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "ЛУЧАЗИ/ЛУЧАЗИ"
+        },
+        {
+          "language": "en",
+          "value": "LUCHAZI"
+        }
+      ]
+    },
+    {
+      "code": "864",
+      "display": "LYUKSEMBURG",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "ЛЮКСЕМБУРЖЕЦ/ЛЮКСЕМБУРЖЕНКА"
+        },
+        {
+          "language": "en",
+          "value": "LUXEMBOURGER"
+        }
+      ]
+    },
+    {
+      "code": "865",
+      "display": "MABA",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "МАБА"
+        },
+        {
+          "language": "en",
+          "value": "MABA"
+        }
+      ]
+    },
+    {
+      "code": "866",
+      "display": "MAGINDANAO",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "МАГИНДАНАО/МАГИНДАНАО"
+        },
+        {
+          "language": "en",
+          "value": "MAGUINDANAO"
+        }
+      ]
+    },
+    {
+      "code": "867",
+      "display": "MADUR",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "МАДУРЕЦ/МАДУРКА"
+        },
+        {
+          "language": "en",
+          "value": "MADURESE"
+        }
+      ]
+    },
+    {
+      "code": "868",
+      "display": "MAZANDARANLIK",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "МАЗАНДАРАНЕЦ/МАЗАНДАРАНКА"
+        },
+        {
+          "language": "en",
+          "value": "MAZANDARANI"
+        }
+      ]
+    },
+    {
+      "code": "869",
+      "display": "MAYYA",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "МАЙЯ/МАЙЯ"
+        },
+        {
+          "language": "en",
+          "value": "MAYA"
+        }
+      ]
+    },
+    {
+      "code": "870",
+      "display": "MAKASSAR",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "МАКАССАР/МАКАССАРКА"
+        },
+        {
+          "language": "en",
+          "value": "MACASSARIAN"
+        }
+      ]
+    },
+    {
+      "code": "871",
+      "display": "MAKEDONIYALIK",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "МАКЕДОНЕЦ/МАКЕДОНКА"
+        },
+        {
+          "language": "en",
+          "value": "MACEDONIAN"
+        }
+      ]
+    },
+    {
+      "code": "872",
+      "display": "MAKUA",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "МАКУА/МАКУА"
+        },
+        {
+          "language": "en",
+          "value": "MAKUA"
+        }
+      ]
+    },
+    {
+      "code": "873",
+      "display": "MALAVI",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "МАЛАВИ/МАЛАВИ"
+        },
+        {
+          "language": "en",
+          "value": "MALAWI"
+        }
+      ]
+    },
+    {
+      "code": "874",
+      "display": "MALAGALIK",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "МАЛАГАСИЕЦ/МАЛАГАСИЙКА"
+        },
+        {
+          "language": "en",
+          "value": "MALAGASY"
+        }
+      ]
+    },
+    {
+      "code": "875",
+      "display": "MALAYLIK",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "МАЛАЕЦ/МАЛАЙКА"
+        },
+        {
+          "language": "en",
+          "value": "MALAY"
+        }
+      ]
+    },
+    {
+      "code": "876",
+      "display": "MALANEZIYALIK",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "МАЛАНЕЗИЕЦ/МАЛАНЕЗИЙКА"
+        },
+        {
+          "language": "en",
+          "value": "MALANESIANS"
+        }
+      ]
+    },
+    {
+      "code": "877",
+      "display": "MALINKE",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "МАЛИНКЕ/МАЛИНКЕ"
+        },
+        {
+          "language": "en",
+          "value": "MALINKE"
+        }
+      ]
+    },
+    {
+      "code": "878",
+      "display": "MALTALIK",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "МАЛЬТИЕЦ/МАЛЬТИЙКА"
+        },
+        {
+          "language": "en",
+          "value": "MALTESE"
+        }
+      ]
+    },
+    {
+      "code": "879",
+      "display": "MAME",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "МАМЕ/МАМЕ"
+        },
+        {
+          "language": "en",
+          "value": "МАМЕ"
+        }
+      ]
+    },
+    {
+      "code": "880",
+      "display": "MANGBETU-MORU",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "МАНГБЕТУ-МОРУ/МАНГБЕТУ-МОРУ"
+        },
+        {
+          "language": "en",
+          "value": "MANGBETU-MORU"
+        }
+      ]
+    },
+    {
+      "code": "881",
+      "display": "MANDARA",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "МАНДАРА/МАНДАРА"
+        },
+        {
+          "language": "en",
+          "value": "MANDARIAN"
+        }
+      ]
+    },
+    {
+      "code": "882",
+      "display": "MANDJAK",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "МАНДЖАК/МАНДЖАЧКА"
+        },
+        {
+          "language": "en",
+          "value": "MANDJACO"
+        }
+      ]
+    },
+    {
+      "code": "883",
+      "display": "MANO",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "МАНО/МАНО"
+        },
+        {
+          "language": "en",
+          "value": "MANO"
+        }
+      ]
+    },
+    {
+      "code": "884",
+      "display": "MANSI",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "МАНСИЕЦ/МАНСИЙКА"
+        },
+        {
+          "language": "en",
+          "value": "MANSI"
+        }
+      ]
+    },
+    {
+      "code": "885",
+      "display": "MANJUR",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "МАНЖУР/МАНЖУРКА"
+        },
+        {
+          "language": "en",
+          "value": "MANCHURIAN"
+        }
+      ]
+    },
+    {
+      "code": "886",
+      "display": "MARATXI",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "МАРАТХИ/МАРАТХИЙКА"
+        },
+        {
+          "language": "en",
+          "value": "MARATHI"
+        }
+      ]
+    },
+    {
+      "code": "887",
+      "display": "MATEBELE",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "МАТЕБЕЛЕ/МЕТЕБЕЛЕ"
+        },
+        {
+          "language": "en",
+          "value": "MATEBELE"
+        }
+      ]
+    },
+    {
+      "code": "888",
+      "display": "SHONA",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "ШОНА/ШОНА"
+        },
+        {
+          "language": "en",
+          "value": "SHONA"
+        }
+      ]
+    },
+    {
+      "code": "889",
+      "display": "MBUM",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "МБУМ/МБУМ"
+        },
+        {
+          "language": "en",
+          "value": "MBUM"
+        }
+      ]
+    },
+    {
+      "code": "890",
+      "display": "MBUNDU",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "МБУНДУ/МБУНДУ"
+        },
+        {
+          "language": "en",
+          "value": "MBUNDU"
+        }
+      ]
+    },
+    {
+      "code": "891",
+      "display": "MEKSIKALIK",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "МЕКСИКАНЕЦ/МЕКСИКАНКА"
+        },
+        {
+          "language": "en",
+          "value": "MEXICAN"
+        }
+      ]
+    },
+    {
+      "code": "892",
+      "display": "MENDE",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "МЕНДЕ/МЕНДЕ"
+        },
+        {
+          "language": "en",
+          "value": "MENDE"
+        }
+      ]
+    },
+    {
+      "code": "893",
+      "display": "MILEKE (BAMILEKE)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "МИЛЕКЕ (БАМИЛЕКЕ)/МИЛЕКЕ (БАМИЛЕКЕ)"
+        },
+        {
+          "language": "en",
+          "value": "MILEKE (BAMILEKE)"
+        }
+      ]
+    },
+    {
+      "code": "894",
+      "display": "MINANGKABAU",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "МИНАНГКАБАУ/МИНАНГКАБАУ"
+        },
+        {
+          "language": "en",
+          "value": "MINANGKABAU"
+        }
+      ]
+    },
+    {
+      "code": "895",
+      "display": "MISHTEK",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "МИШТЕК/МИШТЕК"
+        },
+        {
+          "language": "en",
+          "value": "MIXTEC"
+        }
+      ]
+    },
+    {
+      "code": "896",
+      "display": "MONGO",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "МОНГО/МОНГО"
+        },
+        {
+          "language": "en",
+          "value": "MONGO"
+        }
+      ]
+    },
+    {
+      "code": "897",
+      "display": "MON (TALAIN)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "МОН (ТАЛАИН)/МОН (ТАЛАИН)"
+        },
+        {
+          "language": "en",
+          "value": "MON"
+        }
+      ]
+    },
+    {
+      "code": "898",
+      "display": "MOSI",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "МОСИ/МОСИ"
+        },
+        {
+          "language": "en",
+          "value": "MOSSI"
+        }
+      ]
+    },
+    {
+      "code": "899",
+      "display": "MIONG",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "МЫОНГ/МЫОНГ"
+        },
+        {
+          "language": "en",
+          "value": "MUONG"
+        }
+      ]
+    },
+    {
+      "code": "900",
+      "display": "MYAO",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "МЯО/МЯО"
+        },
+        {
+          "language": "en",
+          "value": "MIAO"
+        }
+      ]
+    },
+    {
+      "code": "907",
+      "display": "NGALA (LINGALA)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "НГАЛА (ЛИНГАЛА)/НГАЛА (ЛИНГАЛА)"
+        },
+        {
+          "language": "en",
+          "value": "NGALA (LINGALA)"
+        }
+      ]
+    },
+    {
+      "code": "908",
+      "display": "NGANASAN",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "НГАНАСАН/НГАНАСАН"
+        },
+        {
+          "language": "en",
+          "value": "NGANASAN"
+        }
+      ]
+    },
+    {
+      "code": "909",
+      "display": "NGONI",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "НГОНИ/НГОНИ"
+        },
+        {
+          "language": "en",
+          "value": "NGONI"
+        }
+      ]
+    },
+    {
+      "code": "910",
+      "display": "NDA (BANDA)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "НДА (БАНДА)/НДА (БАНДА)"
+        },
+        {
+          "language": "en",
+          "value": "NDA (BANDA)"
+        }
+      ]
+    },
+    {
+      "code": "912",
+      "display": "NEVARLI",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "НЕВАРЕЦ/НЕВАРКА"
+        },
+        {
+          "language": "en",
+          "value": "NEWA"
+        }
+      ]
+    },
+    {
+      "code": "913",
+      "display": "NEGIDAL",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "НЕГИДАЛЕЦ/НЕГИДАЛКА"
+        },
+        {
+          "language": "en",
+          "value": "NEGIDAL"
+        }
+      ]
+    },
+    {
+      "code": "914",
+      "display": "YANGI KALEDONIYALIK",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "НОВОКАЛЕДОНЕЦ/НОВОКАЛЕДОНКА"
+        },
+        {
+          "language": "en",
+          "value": "NEW CALEDONIAN"
+        }
+      ]
+    },
+    {
+      "code": "915",
+      "display": "NORVEGIYALIK",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "НОРВЕЖЕЦ/НОРВЕЖКА"
+        },
+        {
+          "language": "en",
+          "value": "NORWEGIAN"
+        }
+      ]
+    },
+    {
+      "code": "916",
+      "display": "NUBIYALIK",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "НУБИЕЦ/НУБИЙКА"
+        },
+        {
+          "language": "en",
+          "value": "NUBIAN"
+        }
+      ]
+    },
+    {
+      "code": "917",
+      "display": "NUPE",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "НУПЕ/НУПЕ"
+        },
+        {
+          "language": "en",
+          "value": "NUPE"
+        }
+      ]
+    },
+    {
+      "code": "918",
+      "display": "NURISTANLI",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "НУРИСТАНЕЦ/НУРИСТАНКА"
+        },
+        {
+          "language": "en",
+          "value": "NURISTANI"
+        }
+      ]
+    },
+    {
+      "code": "919",
+      "display": "NUER",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "НУЭР/НУЭР"
+        },
+        {
+          "language": "en",
+          "value": "NUER"
+        }
+      ]
+    },
+    {
+      "code": "920",
+      "display": "NIKA (VANIKA)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "НЬИКА (ВАНЬИКА)/НЬИКА (ВАНЬИКА)"
+        },
+        {
+          "language": "en",
+          "value": "NYIKA (WANYIKA)"
+        }
+      ]
+    },
+    {
+      "code": "921",
+      "display": "NYAKOLE (BANYAKOLE)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "НЬЯКОЛЕ (БАНЬЯКОЛЕ)/НЬЯКОЛЕ (БАНЬЯКОЛЕ)"
+        },
+        {
+          "language": "en",
+          "value": "NYAKOLE (BANYAKOLE)"
+        }
+      ]
+    },
+    {
+      "code": "922",
+      "display": "NYAMVEZI (VANYAMVEZI)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "НЬЯМВЕЗИ (ВАНЬЯМВЕЗИ)/НЬЯМВЕЗИ (ВАНЬЯМВЕЗИ)"
+        },
+        {
+          "language": "en",
+          "value": "NYAMWEZI (WANYAMWEZI)"
+        }
+      ]
+    },
+    {
+      "code": "923",
+      "display": "NYARUANDA (BANYARUANDA)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "НЬЯРУАНДА (БАНЬЯРУАНДА)/НЬЯРУАНДА (БАНЬЯРУАНДА)"
+        },
+        {
+          "language": "en",
+          "value": "NYARUANDA (BANYARUANDA)"
+        }
+      ]
+    },
+    {
+      "code": "924",
+      "display": "NYATURU (VANYATURU)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "НЬЯТУРУ (ВАНЬЯТУРУ)/НЬЯТУРУ (ВАНЬЯТУРУ)"
+        },
+        {
+          "language": "en",
+          "value": "NYATURU (WANYATURU)"
+        }
+      ]
+    },
+    {
+      "code": "925",
+      "display": "OVAMBO",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "ОВАМБО/ОВАМБО"
+        },
+        {
+          "language": "en",
+          "value": "OVAMBO"
+        }
+      ]
+    },
+    {
+      "code": "926",
+      "display": "OVIMBUNDU",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "ОВИМБУНДУ/ОВИМБУНДУ"
+        },
+        {
+          "language": "en",
+          "value": "OVIMBUNDU"
+        }
+      ]
+    },
+    {
+      "code": "927",
+      "display": "OYRAT",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "ОЙРАТ/ОЙРАТ"
+        },
+        {
+          "language": "en",
+          "value": "OIRAT"
+        }
+      ]
+    },
+    {
+      "code": "928",
+      "display": "SHIMOLIY IRLANDIYALIK",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "СЕВЕРНЫЙ ИРЛАНДЕЦ/СЕВЕРНАЯ ИРЛАНДКА"
+        },
+        {
+          "language": "en",
+          "value": "NORTHERN IRISH"
+        }
+      ]
+    },
+    {
+      "code": "929",
+      "display": "ORIYA",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "ОРИЯ/ОРИЯ"
+        },
+        {
+          "language": "en",
+          "value": "ORIYA"
+        }
+      ]
+    },
+    {
+      "code": "930",
+      "display": "OROK",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "ОРОК/ОРОК"
+        },
+        {
+          "language": "en",
+          "value": "OROK"
+        }
+      ]
+    },
+    {
+      "code": "931",
+      "display": "OROMO",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "ОРОМО/ОРОМО"
+        },
+        {
+          "language": "en",
+          "value": "OROMO"
+        }
+      ]
+    },
+    {
+      "code": "932",
+      "display": "OROCHI",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "ОРОЧИ/ОРОЧИ"
+        },
+        {
+          "language": "en",
+          "value": "OROCH"
+        }
+      ]
+    },
+    {
+      "code": "933",
+      "display": "OTOMI",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "ОТОМИ/ОТОМИ"
+        },
+        {
+          "language": "en",
+          "value": "OTOMI"
+        }
+      ]
+    },
+    {
+      "code": "934",
+      "display": "PAMPANGAN",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "ПАМПАНГАН/ПАМПАНГАН"
+        },
+        {
+          "language": "en",
+          "value": "KAPAMPANGANS"
+        }
+      ]
+    },
+    {
+      "code": "935",
+      "display": "PANAMALIK",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "ПАНАМЕЦ/ПАНАМКА"
+        },
+        {
+          "language": "en",
+          "value": "PANAMANIAN"
+        }
+      ]
+    },
+    {
+      "code": "936",
+      "display": "PANGASINAN",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "ПАНГАСИНАН/ПАНГАСИНАНКА"
+        },
+        {
+          "language": "en",
+          "value": "PANGASINAN"
+        }
+      ]
+    },
+    {
+      "code": "937",
+      "display": "PANJOBLIK",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "ПАНЖАБЕЦ/ПАНЖАБКА"
+        },
+        {
+          "language": "en",
+          "value": "PUNJABI"
+        }
+      ]
+    },
+    {
+      "code": "938",
+      "display": "PAPUAS",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "ПАПУАС/ПАПУАСКА"
+        },
+        {
+          "language": "en",
+          "value": "PAPUAN"
+        }
+      ]
+    },
+    {
+      "code": "939",
+      "display": "PASHAI",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "ПАШАИ/ПАШАИ"
+        },
+        {
+          "language": "en",
+          "value": "PASHAI"
+        }
+      ]
+    },
+    {
+      "code": "940",
+      "display": "PEDI",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "ПЕДИ/ПЕДИ"
+        },
+        {
+          "language": "en",
+          "value": "PEDI (NOTHERN SOTHO)"
+        }
+      ]
+    },
+    {
+      "code": "941",
+      "display": "PEPEL",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "ПЕПЕЛЬ/ПЕПЕЛЬ"
+        },
+        {
+          "language": "en",
+          "value": "PEPEL"
+        }
+      ]
+    },
+    {
+      "code": "942",
+      "display": "PERUANLIK",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "ПЕРУАНЕЦ/ПЕРУАНКА"
+        },
+        {
+          "language": "en",
+          "value": "PERUVIAN"
+        }
+      ]
+    },
+    {
+      "code": "943",
+      "display": "PORTUGALIYALIK",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "ПОРТУГАЛ/ПОРТУГАЛКА"
+        },
+        {
+          "language": "en",
+          "value": "PORTUGUESE"
+        }
+      ]
+    },
+    {
+      "code": "739002432",
+      "display": "IROQLIK",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "ИРАКЕЦ"
+        },
+        {
+          "language": "en",
+          "value": "IRAQI"
+        }
+      ]
+    },
+    {
+      "code": "944",
+      "display": "PUERTORIKANLIK",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "ПУЭРТОРИКАНЕЦ/ПУЭРТОРИКАНКА"
+        },
+        {
+          "language": "en",
+          "value": "PUERTO-RICAN"
+        }
+      ]
+    },
+    {
+      "code": "945",
+      "display": "RADJASTANLIK",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "РАДЖАСТАНЕЦ/РАДЖАСТАНКА"
+        },
+        {
+          "language": "en",
+          "value": "RAJASTHANIAN"
+        }
+      ]
+    },
+    {
+      "code": "946",
+      "display": "RIF",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "РИФ/РИФ"
+        },
+        {
+          "language": "en",
+          "value": "RIFFIAN"
+        }
+      ]
+    },
+    {
+      "code": "947",
+      "display": "ROMANSH",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "РОМАНШ/РОМАНШ"
+        },
+        {
+          "language": "en",
+          "value": "ROMANSH"
+        }
+      ]
+    },
+    {
+      "code": "948",
+      "display": "RUNDI",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "РУНДИ/РУНДИ"
+        },
+        {
+          "language": "en",
+          "value": "RUNDI"
+        }
+      ]
+    },
+    {
+      "code": "949",
+      "display": "SAAMI",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "СААМИ/СААМИ"
+        },
+        {
+          "language": "en",
+          "value": "SAMI"
+        }
+      ]
+    },
+    {
+      "code": "950",
+      "display": "SALVADORLI",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "САЛЬВАДОРЕЦ/САЛЬВАДОРКА"
+        },
+        {
+          "language": "en",
+          "value": "SALVADORAN"
+        }
+      ]
+    },
+    {
+      "code": "951",
+      "display": "SANTAL",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "САНТАЛ/САНТАЛ"
+        },
+        {
+          "language": "en",
+          "value": "SANTAL"
+        }
+      ]
+    },
+    {
+      "code": "952",
+      "display": "SAPOTEK",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "САПОТЕК/САПОТЕК"
+        },
+        {
+          "language": "en",
+          "value": "ZAPOTEC"
+        }
+      ]
+    },
+    {
+      "code": "953",
+      "display": "SARA (BAGIRMI)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "САРА (БАГИРМИ)/САРА (БАГИРМИ)"
+        },
+        {
+          "language": "en",
+          "value": "SARA (BAGIRMI)"
+        }
+      ]
+    },
+    {
+      "code": "954",
+      "display": "SVAZI",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "СВАЗИ/СВАЗИ"
+        },
+        {
+          "language": "en",
+          "value": "SWASI"
+        }
+      ]
+    },
+    {
+      "code": "955",
+      "display": "SELKUP",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "СЕЛЬКУП/СЕЛЬКУПКА"
+        },
+        {
+          "language": "en",
+          "value": "SELKUP"
+        }
+      ]
+    },
+    {
+      "code": "956",
+      "display": "SENUFO",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "СЕНУФО/СЕНУФО"
+        },
+        {
+          "language": "en",
+          "value": "SENUFO"
+        }
+      ]
+    },
+    {
+      "code": "957",
+      "display": "SERER",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "СЕРЕР/СЕРЕР"
+        },
+        {
+          "language": "en",
+          "value": "SERER"
+        }
+      ]
+    },
+    {
+      "code": "958",
+      "display": "SIAM",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "СТАМ/СИАМКА"
+        },
+        {
+          "language": "en",
+          "value": "SIAM"
+        }
+      ]
+    },
+    {
+      "code": "959",
+      "display": "SIDAMO",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "СИДАМО/СИДАМО"
+        },
+        {
+          "language": "en",
+          "value": "SIDAMA"
+        }
+      ]
+    },
+    {
+      "code": "960",
+      "display": "SIKON",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "СИКОН/СИКОН"
+        },
+        {
+          "language": "en",
+          "value": "SIKON"
+        }
+      ]
+    },
+    {
+      "code": "961",
+      "display": "SINGALLIK",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "СИНГАЛЕЦ/СИНГАЛКА"
+        },
+        {
+          "language": "en",
+          "value": "SINHALESE"
+        }
+      ]
+    },
+    {
+      "code": "962",
+      "display": "SINDXI",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "СИНДХИ/СИНДХИ"
+        },
+        {
+          "language": "en",
+          "value": "SINDHI"
+        }
+      ]
+    },
+    {
+      "code": "963",
+      "display": "SLOVEN",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "СЛОВЕН/СЛОВЕНКА"
+        },
+        {
+          "language": "en",
+          "value": "SLOVENE"
+        }
+      ]
+    },
+    {
+      "code": "964",
+      "display": "SOMALI",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "СОМАЛИЕЦ/СОМАЛИЙКА"
+        },
+        {
+          "language": "en",
+          "value": "SOMALI"
+        }
+      ]
+    },
+    {
+      "code": "965",
+      "display": "SOMBA",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "СОМБА/СОМБА"
+        },
+        {
+          "language": "en",
+          "value": "SOMBA"
+        }
+      ]
+    },
+    {
+      "code": "966",
+      "display": "SONGAI",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "СОНГАИ/СОНГАИ"
+        },
+        {
+          "language": "en",
+          "value": "SONGHAI"
+        }
+      ]
+    },
+    {
+      "code": "967",
+      "display": "SONINKE",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "СОНИНКЕ/СОНИНКЕ"
+        },
+        {
+          "language": "en",
+          "value": "SONINKE"
+        }
+      ]
+    },
+    {
+      "code": "968",
+      "display": "SUAXILI",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "СУАХИЛИ/СУАХИЛИ"
+        },
+        {
+          "language": "en",
+          "value": "SWAHILI"
+        }
+      ]
+    },
+    {
+      "code": "969",
+      "display": "SO‘I",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "СУИ/СУИ"
+        },
+        {
+          "language": "en",
+          "value": "SOOEY"
+        }
+      ]
+    },
+    {
+      "code": "970",
+      "display": "SULU-SAMAL",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "СУЛУСАМАЛЬ/СУЛУСАМАЛЬ"
+        },
+        {
+          "language": "en",
+          "value": "SULU-SAMAL"
+        }
+      ]
+    },
+    {
+      "code": "971",
+      "display": "SUNDA",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "СУНДА/СУНДАНЦЫ"
+        },
+        {
+          "language": "en",
+          "value": "SUNDANESE"
+        }
+      ]
+    },
+    {
+      "code": "972",
+      "display": "SUSU",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "СУСУ/СУСУ"
+        },
+        {
+          "language": "en",
+          "value": "SUSU"
+        }
+      ]
+    },
+    {
+      "code": "973",
+      "display": "SUTO",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "СУТО/СУТО"
+        },
+        {
+          "language": "en",
+          "value": "SOTHO"
+        }
+      ]
+    },
+    {
+      "code": "974",
+      "display": "TAGAL",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "ТАГАЛ/ТАГАЛКА"
+        },
+        {
+          "language": "en",
+          "value": "TAGALOG"
+        }
+      ]
+    },
+    {
+      "code": "975",
+      "display": "TAY",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "ТАЙ/ТАЙ"
+        },
+        {
+          "language": "en",
+          "value": "THAI"
+        }
+      ]
+    },
+    {
+      "code": "976",
+      "display": "TAMAZIGT",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "ТАМАЗИГТ/ТАМАЗИГТ"
+        },
+        {
+          "language": "en",
+          "value": "TAMAZIGHT"
+        }
+      ]
+    },
+    {
+      "code": "977",
+      "display": "TAMANGI",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "ТАМАНГИ/ТХАМАНГИ"
+        },
+        {
+          "language": "en",
+          "value": "TAMANGS"
+        }
+      ]
+    },
+    {
+      "code": "978",
+      "display": "TAMIL",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "ТАМИЛ/ТАМИЛКА"
+        },
+        {
+          "language": "en",
+          "value": "TAMIL"
+        }
+      ]
+    },
+    {
+      "code": "979",
+      "display": "TEKE (BATEKE)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "TEKE (БATEKE)/TEKE (БATEKE)"
+        },
+        {
+          "language": "en",
+          "value": "TEKE (BATEKE)"
+        }
+      ]
+    },
+    {
+      "code": "980",
+      "display": "TELUGU",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "ТЕЛУГУ/ТЕЛУГУ"
+        },
+        {
+          "language": "en",
+          "value": "TELUGU"
+        }
+      ]
+    },
+    {
+      "code": "981",
+      "display": "TEM",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "ТЕМ/ТЕМ"
+        },
+        {
+          "language": "en",
+          "value": "ТЕМ"
+        }
+      ]
+    },
+    {
+      "code": "982",
+      "display": "TEMNE",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "ТЕМНЕ/ТЕМНЕ"
+        },
+        {
+          "language": "en",
+          "value": "TEMNE"
+        }
+      ]
+    },
+    {
+      "code": "983",
+      "display": "TETUM",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "ТЕТУМ/ТЕТУМ"
+        },
+        {
+          "language": "en",
+          "value": "TETUM"
+        }
+      ]
+    },
+    {
+      "code": "984",
+      "display": "TIBETLIK",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "ТИБЕТЕЦ/ТИБЕТКА"
+        },
+        {
+          "language": "en",
+          "value": "TIBETAN"
+        }
+      ]
+    },
+    {
+      "code": "985",
+      "display": "TIV",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "ТИ/ТИВ"
+        },
+        {
+          "language": "en",
+          "value": "TIV"
+        }
+      ]
+    },
+    {
+      "code": "986",
+      "display": "TIGRAI",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "ТИГРАИ/ТИГРАИ"
+        },
+        {
+          "language": "en",
+          "value": "TIGRAY-TIGRINYA"
+        }
+      ]
+    },
+    {
+      "code": "987",
+      "display": "TIGRE",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "ТИГРЕ/ТИГРЕ"
+        },
+        {
+          "language": "en",
+          "value": "TIGRE"
+        }
+      ]
+    },
+    {
+      "code": "988",
+      "display": "TIKAR",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "ТИКАР/ТИКАР"
+        },
+        {
+          "language": "en",
+          "value": "TIKAR"
+        }
+      ]
+    },
+    {
+      "code": "989",
+      "display": "TONGA",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "ТОНГАНЕЦ/ТОНГА"
+        },
+        {
+          "language": "en",
+          "value": "TONGAN"
+        }
+      ]
+    },
+    {
+      "code": "990",
+      "display": "TORADJI",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "ТОРАДЖИ/ТОРАДЖИ"
+        },
+        {
+          "language": "en",
+          "value": "TORAJA"
+        }
+      ]
+    },
+    {
+      "code": "991",
+      "display": "TOFALAR (TOFA)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "ТОФАЛАР (ТОФА)/ТОФАЛАР (ТОФА)"
+        },
+        {
+          "language": "en",
+          "value": "TOFALARS (TOFA)"
+        }
+      ]
+    },
+    {
+      "code": "992",
+      "display": "TRINIDADLIK",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "ТРИНИДАДЕЦ/ТРИНИДАДКА"
+        },
+        {
+          "language": "en",
+          "value": "TRINIDADIAN"
+        }
+      ]
+    },
+    {
+      "code": "993",
+      "display": "TSVANLIK",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "ТСВАН/ТСВАНА"
+        },
+        {
+          "language": "en",
+          "value": "TSWANA"
+        }
+      ]
+    },
+    {
+      "code": "994",
+      "display": "TSONGA",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "ТСОНГА/ТСОНГА"
+        },
+        {
+          "language": "en",
+          "value": "TSONGA"
+        }
+      ]
+    },
+    {
+      "code": "995",
+      "display": "TUAREG",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "ТУАРЕГ"
+        },
+        {
+          "language": "en",
+          "value": "TUAREG"
+        }
+      ]
+    },
+    {
+      "code": "996",
+      "display": "TUBU",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "ТУБУ/ТУБУ"
+        },
+        {
+          "language": "en",
+          "value": "TUBU"
+        }
+      ]
+    },
+    {
+      "code": "997",
+      "display": "TUKULYOR",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "ТУКУЛЁР/ТУКУЛЁР"
+        },
+        {
+          "language": "en",
+          "value": "TOUCOULEURS"
+        }
+      ]
+    },
+    {
+      "code": "998",
+      "display": "TURKANA",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "ТУРКАНА/ТУРКАНА"
+        },
+        {
+          "language": "en",
+          "value": "TURKANA"
+        }
+      ]
+    },
+    {
+      "code": "999",
+      "display": "TXAY",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "ТХАЙ/ТХАЙ"
+        },
+        {
+          "language": "en",
+          "value": "THAY"
+        }
+      ]
+    },
+    {
+      "code": "1000",
+      "display": "TXARU",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "ТХАРУ/ТХАРУ"
+        },
+        {
+          "language": "en",
+          "value": "THARU"
+        }
+      ]
+    },
+    {
+      "code": "1001",
+      "display": "ADIGEYLI",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "АДЫГЕЙ/АДЫГЕЙКА"
+        },
+        {
+          "language": "en",
+          "value": "ADYGEI"
+        }
+      ]
+    },
+    {
+      "code": "1002",
+      "display": "ULE-ANYA (BAULE)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "УЛЕ-АНЬЯ (БАУЛЕ)/УЛЕ-АНЬЯ (БАУЛЕ)"
+        },
+        {
+          "language": "en",
+          "value": "BAULE"
+        }
+      ]
+    },
+    {
+      "code": "1003",
+      "display": "O‘LCHI",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "УЛЬЧИ"
+        },
+        {
+          "language": "en",
+          "value": "ULCH"
+        }
+      ]
+    },
+    {
+      "code": "1004",
+      "display": "URUGVAYLIK",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "УРУГВАЕЦ/УРУГВАЙКА"
+        },
+        {
+          "language": "en",
+          "value": "URUGUAYAN"
+        }
+      ]
+    },
+    {
+      "code": "1005",
+      "display": "UELSLIK",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "УЭЛЬСЕЦ/УЭЛЬСКА"
+        },
+        {
+          "language": "en",
+          "value": "WELSH"
+        }
+      ]
+    },
+    {
+      "code": "1006",
+      "display": "FANG",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "ФАНГ/ФАНГ"
+        },
+        {
+          "language": "en",
+          "value": "FANG"
+        }
+      ]
+    },
+    {
+      "code": "1007",
+      "display": "FIDJI",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "ФИДЖИЕЦ/"
+        },
+        {
+          "language": "en",
+          "value": "FIJIAN"
+        }
+      ]
+    },
+    {
+      "code": "1008",
+      "display": "FLAMAND",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "ФЛАМАНДЕЦ/ФЛАМАНДКА"
+        },
+        {
+          "language": "en",
+          "value": "FLEMING"
+        }
+      ]
+    },
+    {
+      "code": "1009",
+      "display": "FRANSUZ-KANADALIK",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "ФРАНКО-КАНАДЕЦ/ФРАНКО-КАНАДКА"
+        },
+        {
+          "language": "en",
+          "value": "FRENCH-CANADIAN"
+        }
+      ]
+    },
+    {
+      "code": "1010",
+      "display": "FRANSUZ-YANGIKALEDONIYALIK",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "ФРАНКО-НОВОКАЛЕДОНЕЦ/ФРАНКО-НОВОКАЛЕДОНКА"
+        },
+        {
+          "language": "en",
+          "value": "FRENCH-NEW CALEDONIAN"
+        }
+      ]
+    },
+    {
+      "code": "1011",
+      "display": "FRANSUZ-SHVEYSARIYALIK",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "ФРАНКО-ШВЕЙЦАРЕЦ/ФРАНКО-ШВЕЙЦАРКА"
+        },
+        {
+          "language": "en",
+          "value": "FRENCH-SWISS"
+        }
+      ]
+    },
+    {
+      "code": "1012",
+      "display": "FRIZ",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "ФРИЗ/ФРИЗКА"
+        },
+        {
+          "language": "en",
+          "value": "FRISIAN"
+        }
+      ]
+    },
+    {
+      "code": "1013",
+      "display": "FRIUL",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "ФРИУЛИЕЦ/ФРИУЛИЙКА"
+        },
+        {
+          "language": "en",
+          "value": "FURLAN"
+        }
+      ]
+    },
+    {
+      "code": "1014",
+      "display": "FULA",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "ФУЛА/ФУЛА"
+        },
+        {
+          "language": "en",
+          "value": "THULE"
+        }
+      ]
+    },
+    {
+      "code": "739002433",
+      "display": "FILIPPIN",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "ФИЛИППИНЕЦ/ФИЛИППИНКА"
+        },
+        {
+          "language": "en",
+          "value": "PHILIPPIN"
+        }
+      ]
+    },
+    {
+      "code": "739002434",
+      "display": "JANUBIY AFRIKALIK",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "ЮЖНОАФРИКАНЕЦ/ЮЖНОАФРИКАНКА"
+        },
+        {
+          "language": "en",
+          "value": "SOUTH AFRICAN"
+        }
+      ]
+    },
+    {
+      "code": "739002431",
+      "display": "MISIRLIK",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "ЕГИПТЯНИН"
+        },
+        {
+          "language": "en",
+          "value": "EGYPTIAN"
+        }
+      ]
+    }
+  ],
+  "caseSensitive": true,
+  "hierarchyMeaning": "is-a",
+  "language": "uz",
+  "experimental": true,
+  "count": 512
+}

@@ -235,6 +235,34 @@ Organizations are identified by their tax identification number assigned by the 
 }
 ```
 
+### State Health Insurance Fund (SHIF)
+
+Healthcare organizations under contract with the State Health Insurance Fund (SHIF) of Uzbekistan are identified by their SHIF code. The code follows the pattern `^[A-Z]{3}[0-9]{6}$` — 3 uppercase Latin letters followed by 6 digits (e.g., `OAA000024`).
+
+**System URI**: `https://dhp.uz/fhir/core/sid/org/uz/shif`
+
+```json
+{
+  "resourceType": "Organization",
+  "identifier": [
+    {
+      "system": "https://dhp.uz/fhir/core/sid/org/uz/shif",
+      "type": {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+            "code": "NIIP",
+            "display": "National Insurance Payor Identifier (Payor)"
+          }
+        ]
+      },
+      "use": "official",
+      "value": "OAA000024"
+    }
+  ]
+}
+```
+
 For a complete list of all supported organization identifier systems, see the [OrganizationIdentifierDomainVS](ValueSet-organization-identifier-domain-vs.html) value set.
 
 ## Document identifiers

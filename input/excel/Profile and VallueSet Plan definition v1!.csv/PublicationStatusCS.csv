@@ -1,0 +1,5 @@
+Code,EN, UZ,RU,,
+draft,Draft,Qoralama,Черновик,,
+active,Active,Faol,Активный,,http://hl7.org/fhir/ValueSet/publication-status
+retired,Retired,Faoliyatdan chiqarilgan,Выведен из использования,,
+unknown,Unknown,Noma’lum,Неизвестно,,

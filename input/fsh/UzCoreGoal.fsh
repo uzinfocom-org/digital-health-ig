@@ -74,7 +74,7 @@ May be:
 * source ^short = "Who came up with/set this goal?"
 
 * addresses MS
-* addresses only Reference(UZCoreCondition or UZCoreObservation or UZCoreSocioeconomicObservation or MedicationStatement or MedicationRequest or NutritionOrder or ServiceRequest or RiskAssessment or Procedure)
+* addresses only Reference(UZCoreCondition or UZCoreObservation or UZCoreSocioeconomicObservation or MedicationStatement or MedicationRequest or NutritionOrder or ServiceRequest or RiskAssessment or UZCoreProcedure)
 * addresses ^short = "Medical problems for which the goal is set."
 
 * note MS

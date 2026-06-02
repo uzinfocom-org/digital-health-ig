@@ -118,7 +118,7 @@ Added Karakalpak language (kaa) support in the MultilingualName ruleset, used fo
 
 Updated IP holder to Ministry of Health.
 
-[UZ Core Clinical Condition](StructureDefinition-uz-core-clinical-condition.html) added to differentiate clinical (ICD-10) and non-ICD-10 based conditions.
+UZ Core Clinical Condition added to differentiate clinical (ICD-10) and non-ICD-10 based conditions.
 
 Patient disability status has been moved from the [Patient](StructureDefinition-uz-core-patient.html) resource (using a FHIR-standard extension) to the [Condition](StructureDefinition-uz-core-condition.html) resource.
 

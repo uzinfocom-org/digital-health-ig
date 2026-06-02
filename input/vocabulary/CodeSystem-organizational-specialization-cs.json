@@ -9,7 +9,7 @@
   "url": "https://terminology.dhp.uz/fhir/core/CodeSystem/organizational-specialization-cs",
   "concept": [
     {
-      "code": "101",
+      "code": "101.0",
       "display": "Terapiya",
       "designation": [
         {
@@ -130,7 +130,7 @@
         },
         {
           "language": "en",
-          "value": "Children Rehabilitation"
+          "value": "Pediatric Rehabilitation"
         }
       ]
     },
@@ -186,7 +186,7 @@
         },
         {
           "language": "en",
-          "value": "Children Infectious Diseases"
+          "value": "Pediatric Infectious Diseases"
         }
       ]
     },
@@ -270,7 +270,7 @@
         },
         {
           "language": "en",
-          "value": "Children Rheumatology"
+          "value": "Pediatric Rheumatology"
         }
       ]
     },
@@ -298,7 +298,7 @@
         },
         {
           "language": "en",
-          "value": "Children Pulmonology"
+          "value": "Pediatric Pulmonology"
         }
       ]
     },
@@ -340,7 +340,7 @@
         },
         {
           "language": "en",
-          "value": "Adult neurosurgery"
+          "value": "Adult Neurosurgery"
         }
       ]
     },
@@ -354,7 +354,7 @@
         },
         {
           "language": "en",
-          "value": "Pediatric neurosurgery"
+          "value": "Pediatric Neurosurgery"
         }
       ]
     },
@@ -368,7 +368,7 @@
         },
         {
           "language": "en",
-          "value": "Adult thoracic surgery"
+          "value": "Adult Thoracic Surgery"
         }
       ]
     },
@@ -382,7 +382,7 @@
         },
         {
           "language": "en",
-          "value": "Pediatric thoracic surgery"
+          "value": "Pediatric Thoracic Surgery"
         }
       ]
     },
@@ -396,7 +396,7 @@
         },
         {
           "language": "en",
-          "value": "Adult cardiac surgery"
+          "value": "Adult Cardiac Surgery"
         }
       ]
     },
@@ -410,7 +410,7 @@
         },
         {
           "language": "en",
-          "value": "Pediatric cardiac surgery"
+          "value": "Pediatric Cardiac Surgery"
         }
       ]
     },
@@ -424,7 +424,7 @@
         },
         {
           "language": "en",
-          "value": "Adult vascular surgery"
+          "value": "Adult Vascular Surgery"
         }
       ]
     },
@@ -438,7 +438,7 @@
         },
         {
           "language": "en",
-          "value": "Adult traumatology"
+          "value": "Adult Vascular Surgery"
         }
       ]
     },
@@ -452,7 +452,7 @@
         },
         {
           "language": "en",
-          "value": "Pediatric traumatology"
+          "value": "Adult Traumatology"
         }
       ]
     },
@@ -466,7 +466,7 @@
         },
         {
           "language": "en",
-          "value": "Burn disease in adults"
+          "value": "Pediatric Traumatology"
         }
       ]
     },
@@ -480,7 +480,7 @@
         },
         {
           "language": "en",
-          "value": "Burn disease in children"
+          "value": "Burn Disease in Adults"
         }
       ]
     },
@@ -494,7 +494,7 @@
         },
         {
           "language": "en",
-          "value": "Orthopedics for adults"
+          "value": "Burn Disease in Children"
         }
       ]
     },
@@ -508,7 +508,7 @@
         },
         {
           "language": "en",
-          "value": "Pediatric orthopedics"
+          "value": "Adult Orthopedics"
         }
       ]
     },
@@ -522,7 +522,7 @@
         },
         {
           "language": "en",
-          "value": "Adult urology"
+          "value": "Pediatric Orthopedics"
         }
       ]
     },
@@ -536,7 +536,7 @@
         },
         {
           "language": "en",
-          "value": "Pediatric urology"
+          "value": "Adult Urology"
         }
       ]
     },
@@ -550,7 +550,7 @@
         },
         {
           "language": "en",
-          "value": "Dentistry for adults"
+          "value": "Pediatric Urology"
         }
       ]
     },
@@ -564,7 +564,7 @@
         },
         {
           "language": "en",
-          "value": "Pediatric dentistry"
+          "value": "Adult Dentistry"
         }
       ]
     },
@@ -578,7 +578,7 @@
         },
         {
           "language": "en",
-          "value": "Proctology"
+          "value": "Pediatric Dentistry"
         }
       ]
     },
@@ -592,7 +592,7 @@
         },
         {
           "language": "en",
-          "value": "Esophagus surgery in adults"
+          "value": "Proctology"
         }
       ]
     },
@@ -606,7 +606,7 @@
         },
         {
           "language": "en",
-          "value": "Pediatric surgery"
+          "value": "Adult Purulent Surgery"
         }
       ]
     },
@@ -620,7 +620,7 @@
         },
         {
           "language": "en",
-          "value": "Adult oncology"
+          "value": "Pediatric Purulent Surgery"
         }
       ]
     },
@@ -634,7 +634,7 @@
         },
         {
           "language": "en",
-          "value": "Pediatric oncology"
+          "value": "Adult Oncology"
         }
       ]
     },
@@ -648,7 +648,7 @@
         },
         {
           "language": "en",
-          "value": "Radiology and roentgenology"
+          "value": "Pediatric Oncology"
         }
       ]
     },
@@ -662,7 +662,7 @@
         },
         {
           "language": "en",
-          "value": "For pregnant women, women in labor and women in childbirth (except for pregnancy pathologies)"
+          "value": "Radiology and Roentgenology"
         }
       ]
     },
@@ -676,7 +676,7 @@
         },
         {
           "language": "en",
-          "value": "For women in labor"
+          "value": "For pregnant women, women in labor and postpartum women (except pregnancy pathologies)"
         }
       ]
     },
@@ -690,7 +690,7 @@
         },
         {
           "language": "en",
-          "value": "Pathology of pregnancy"
+          "value": "For women in labor"
         }
       ]
     },
@@ -704,7 +704,7 @@
         },
         {
           "language": "en",
-          "value": "Gynecology (except abortions) for adults"
+          "value": "Pathology of Pregnancy"
         }
       ]
     },
@@ -718,7 +718,7 @@
         },
         {
           "language": "en",
-          "value": "Gynecology for children"
+          "value": "Gynecology (except abortions) for adults"
         }
       ]
     },
@@ -732,7 +732,7 @@
         },
         {
           "language": "en",
-          "value": "Gynecology for children"
+          "value": "Pediatric Gynecology"
         }
       ]
     },
@@ -746,7 +746,7 @@
         },
         {
           "language": "en",
-          "value": "For abortion"
+          "value": "For Abortion"
         }
       ]
     },
@@ -1102,7 +1102,6 @@
     }
   ],
   "experimental": true,
-  "date": "2025-02-24",
   "language": "uz",
   "caseSensitive": true,
   "count": 78
