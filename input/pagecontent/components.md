@@ -1,10 +1,12 @@
-### Ambulance
+# Components
+
+## Ambulance
 \< add one paragraph description of the service here \>
 
-### Appointment and Scheduling
-### Blood Management
-### Clinical Decision Support
-### Clinical Health Records (CHR)
+## Appointment and Scheduling
+## Blood Management
+## Clinical Decision Support
+## Clinical Health Records (CHR)
 
 CHR is designed for the centralized storage, processing, and exchange of structured patient medical data within the Digital Health Platform (DHP).
 
@@ -19,8 +21,8 @@ Primary Objectives of the CHR Component:
 5. Regulatory compliance and data traceability. All actions involving clinical data are recorded in accordance with the requirements for medical information systems, ISO/HL7 standards, and national regulatory acts, including that governing personal data protection.
 6. Support for analytics and reporting. CHR provides unified datasets for analytical and reporting systems, enabling extraction of information for statistics, epidemiological surveillance, treatment effectiveness monitoring, and medical research.
 
-### Diagnostics and Imaging
-### Laboratory
+## Diagnostics and Imaging
+## Laboratory
 
 The Laboratory component is created for standardized management of laboratory data within the Digital Health Platform. It addresses key issues of decentralized data storage, incompatibility of formats, and the absence of a unified process for handling results.
 
@@ -31,7 +33,7 @@ The Laboratory component provides:
 - Establishment of a foundation for analytics and reporting, including monitoring of the frequency and accuracy of tests, identification of epidemiological trends, and improvement of the quality of laboratory diagnostics.
 - Reduction of duplication of laboratory tests through reuse of previously performed tests when appropriate conditions and access rights are available.
 
-### Master Data Management (MDM)
+## Master Data Management (MDM)
 The Master Data Service is a mission-critical component of the DHP, as it ensures the consolidation, standardization, and centralized storage of data originating from various medical information systems. It is the platform core, within which the MDM operates, that will serve as the single source of truth for all connected digital healthcare services. This ensures continuity, accuracy and consistency of data across the national system.
 
 Description of key functionality:
@@ -56,7 +58,7 @@ The MDM Service ensures the timeliness, reliability, and accessibility of inform
 The MDM Service is not merely an auxiliary module, but rather the foundation of Uzbekistan's digital healthcare transformation. It ensures high data quality, interoperability, and security, while supporting the implementation of initiatives within the DHP. The development and implementation of the MDM, based on international standards and integrated with national systems, demonstrate a sustainable and scalable approach to the establishment of a digital healthcare ecosystem.
 
 
-### Metadata and Security Management (MSM)
+## Metadata and Security Management (MSM)
 As part of the development of the Digital Health Platform (DHP), the Metadata and Security Management component plays a key role in metadata management, ensuring information security, and implementing access control mechanisms.
 
 The development and implementation of this service are driven by the need to standardize processes related to the description, structuring, protection, and auditing of data stored and processed within the DHP, as well as to ensure compliance with legal requirements in the fields of information security, personal data protection, and healthcare regulations.
@@ -89,8 +91,8 @@ Security Management Service is used wherever medical personal data is affected, 
 - Investigation of information security incidents
 - Protection of the legal interests of the physician and the patient (through the recording of events and authorship)
 
-### Nursing
-### Patient health journey management
+## Nursing
+## Patient health journey management
 
 The PHJM Service defines the digital patient journey — from the initial point of contact to the final outcome of a treatment episode, encompassing intermediate observations, clinical orders, and interactions. The objective of the service is to provide end-to-end, structured, and reliable support for the patient's care pathway within the Unified Digital Healthcare Platform (UDHP) through:
 
@@ -122,10 +124,10 @@ Main objectives and use cases of the PHJM include:
   - analysis of the quality of care;
   - strengthening patient trust.
 
-### Prescription
-### Public Health Reporting
-### Quality Assurance
-### Referrals
+## Prescription
+## Public Health Reporting
+## Quality Assurance
+## Referrals
 
 The Referrals component is intended for centralized management of the processes for creating, transmitting, fulfilling, and monitoring patient referrals within the Digital Health Platform (DHP).
 
@@ -137,7 +139,7 @@ Referrals ensures:
 
 The component serves as a key element in coordinating the provision of medical care, ensuring continuity of patient treatment and transparency of interaction among process participants.
 
-### Reimbursement
+## Reimbursement
 
 The Reimbursement Component is intended to automate healthcare cost reimbursement processes based on the integration of clinical, administrative, and socioeconomic data, including:
 
@@ -158,9 +160,9 @@ Key purposes:
 - automation of insurance claim processing;
 - ensuring interoperability among healthcare system participants.
 
-### Screening Schedules Management
-### Supplies
-### Vaccination Management
+## Screening Schedules Management
+## Supplies
+## Vaccination Management
 
 The Vaccination Management component is developed for the purpose of creating a unified standardized digital service for managing vaccination processes at the scale of the national healthcare system.
 
