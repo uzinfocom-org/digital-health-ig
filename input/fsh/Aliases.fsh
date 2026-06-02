@@ -1,4 +1,3 @@
-
 // Alias: $encounter-class = https://terminology.dhp.uz/fhir/core/ValueSet/encounter-class
 Alias: $action-participant-type = http://hl7.org/fhir/action-participant-type
 Alias: $event-status = http://hl7.org/fhir/event-status
