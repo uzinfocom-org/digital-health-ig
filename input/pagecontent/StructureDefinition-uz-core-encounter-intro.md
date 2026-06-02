@@ -35,7 +35,7 @@ The elements below must always be present (mandatory) or must be supported when 
 
 The examples below build up a single visit - an emergency inpatient encounter - from the bare minimum to the full admission record. The complete instance is the [example Encounter](Encounter-example-encounter.html). Copy a stage and adapt it; every value shown validates against this profile.
 
-#### 1. The smallest Encounter you should send
+#### The smallest Encounter you should send
 
 `status` is the only strictly mandatory element, but an Encounter is only useful with a `class` (how the contact happened - inpatient, ambulatory, emergency) and the `subject` it concerns. Note that in R5 `class` is a **list** of `CodeableConcept`:
 
@@ -53,7 +53,7 @@ The examples below build up a single visit - an emergency inpatient encounter - 
 
 `status`, `class`, `priority`, `type` and `subjectStatus` each use a **required** binding - the value must come from the bound value set (the Snapshot view above lists each one).
 
-#### 2. A realistic visit
+#### A realistic visit
 
 Fill in when it happened (`actualPeriod`), what kind of service it was (`type`), the patient's state during it (`subjectStatus`), who took part (`participant`), and why (`reason` - pointing at a Condition, DiagnosticReport, Procedure or Observation):
 
@@ -99,7 +99,7 @@ Fill in when it happened (`actualPeriod`), what kind of service it was (`type`),
 
 `reason.value`, `serviceType` and `diagnosis.condition` are `CodeableReference` types - the reference sits one level deeper (`"value": [{ "reference": { "reference": "..." } }]`) than a plain `Reference`.
 
-#### 3. Diagnosis, admission and location
+#### Diagnosis, admission and location
 
 For an admission, add the `diagnosis` list (each `condition` is a `CodeableReference` to a [Condition](StructureDefinition-uz-core-condition.html)), the `admission` detail (admit source, re-admission flag, discharge disposition - all required bindings), and where it took place. If you include a `location` entry you must name the place - `location.location` is mandatory:
 
@@ -125,6 +125,6 @@ For an admission, add the `diagnosis` list (each `condition` is a `CodeableRefer
 }
 ```
 
-These keys slot into the same resource as stage 2. To group a visit under a longer course of care, reference an [EpisodeOfCare](StructureDefinition-uz-core-episodeofcare.html) through `episodeOfCare`.
+These keys slot into the same resource as the realistic visit above. To group a visit under a longer course of care, reference an [EpisodeOfCare](StructureDefinition-uz-core-episodeofcare.html) through `episodeOfCare`.
 
 For example API calls and a sample payload, see the [Quick Start](#quick-start) at the bottom of this page.

@@ -32,7 +32,7 @@ This profile adds no mandatory cardinality of its own. The elements required com
 
 The examples below go from a single numeric result to a multi-part panel. Copy one and adapt it - every value shown validates against this profile. The full reference instances are linked at the bottom of the page (for example [oxygen saturation](Observation-oxygen-saturation-example.html), [blood pressure](Observation-blood-pressure-example.html), [CBC panel](Observation-cbc-panel-example.html)).
 
-#### 1. A single quantitative result
+#### A single quantitative result
 
 An Observation always needs a `status` and a `code` saying what was measured. In practice you send more: the `category` that groups it, the `subject` it is about, when it was taken (`effective[x]`), and the result in `value[x]`. A numeric result is a `valueQuantity` carrying a UCUM unit - always include the machine-readable `system` and `code`, not just the human `unit`:
 
@@ -55,7 +55,7 @@ An Observation always needs a `status` and a `code` saying what was measured. In
 
 `code` is bound to LOINC/SNOMED (preferred) and says *what* was observed; `category` (`vital-signs`, `laboratory`, ...) keeps the kinds apart. See [Vital signs](vital-signs.html) for the standard vital-sign codes and [Units and quantities](general-guidance.html#units-and-quantities) for the UCUM rules.
 
-#### 2. Adding an interpretation and a reference range
+#### Adding an interpretation and a reference range
 
 For a result that has a normal range, send the `referenceRange` and flag the value with an `interpretation` (normal / high / low / critical):
 
@@ -83,7 +83,7 @@ For a result that has a normal range, send the `referenceRange` and flag the val
 }
 ```
 
-#### 3. A panel with components (e.g. blood pressure)
+#### A panel with components (e.g. blood pressure)
 
 When several measurements share one time and subject - systolic and diastolic, or the analytes of one lab panel - put each part in `component` and leave the parent `value[x]` empty. The parent `code` names the panel:
 
@@ -113,7 +113,7 @@ When several measurements share one time and subject - systolic and diastolic, o
 
 Use `component` only when the parts share one effective time and subject. To group separately-resulted Observations (each its own resource) under a panel, use `hasMember` instead.
 
-#### 4. When there is no result
+#### When there is no result
 
 If the test was performed but produced no value (sample unusable, patient declined), do not silently omit `value[x]` - send a `dataAbsentReason` in its place. On an Observation this is a coded `CodeableConcept`, not the `_value` extension used on Patient identifiers:
 

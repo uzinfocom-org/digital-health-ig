@@ -27,7 +27,7 @@ The elements below must always be present (mandatory) or must be supported when 
 
 The examples below go from the smallest instance the server will accept to a full registration payload. Copy one and adapt it - every value shown validates against this profile. The complete reference instances are linked at the bottom of the page ([Salim](Patient-example-salim.html), [Emma](Patient-example-emma.html), [unidentified patient](Patient-example-unidentified-patient.html)).
 
-#### 1. The smallest Patient you should send
+#### The smallest Patient you should send
 
 `identifier` is the only mandatory element, and the PINFL is the identifier you should send. Every UZ Core resource must also name the profile it claims to conform to in `meta.profile` - that is how the server knows which rules to validate against. This much already passes validation:
 
@@ -49,7 +49,7 @@ The examples below go from the smallest instance the server will accept to a ful
 
 What makes that identifier a PINFL is its `system` URI - the one ending in `sid/pid/uz/ni`. That is the single field the profile matches on to recognise which kind of identifier it is; the `type` and `value` simply travel with it. To record a different identifier, use the matching `system` and `type` from [the table below](#identifier-slices).
 
-#### 2. A realistic registration
+#### A realistic registration
 
 In practice you send the PINFL plus the core demographics the platform expects you to support: name, gender, birth date and address. Names carry Uzbek as the authoritative text. An Uzbek address uses **coded** administrative divisions (region, district, mahalla), not free text:
 
@@ -94,7 +94,7 @@ In practice you send the PINFL plus the core demographics the platform expects y
 
 The `state` / `district` / `city` codes come from national value sets - see [Addresses](general-guidance.html#addresses) for where each code is sourced. For a patient living abroad, use a free-text address with `country` set to the foreign ISO code instead (see the [Emma example](Patient-example-emma.html)).
 
-#### 3. Carrying more than one identifier {#identifier-slices}
+#### Carrying more than one identifier {#identifier-slices}
 
 A person usually holds several identifiers. Add one entry to the `identifier` array per document, each with its own `system` and `type`; populate only the ones you actually have. The `system` URI is what selects the slice, so it must match exactly:
 
@@ -125,7 +125,7 @@ The most common identifiers and the exact values to use:
 
 See [Identifier systems](identifiers.html) for the complete list, including the URI patterns for foreign nationals.
 
-#### 4. When you have no identifier at all
+#### When you have no identifier at all
 
 For an unidentified patient - someone brought in unconscious, say - you still cannot omit `identifier`. Rather than invent a value, mark the value as absent with a `data-absent-reason` extension (full instance: [unidentified patient](Patient-example-unidentified-patient.html)):
 
