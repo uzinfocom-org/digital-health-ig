@@ -63,7 +63,7 @@ When an element is bound to a value set, the binding strength tells you how stri
 - required - you *must* use a code from the value set.
 - extensible - use a code from the value set if one fits; otherwise you may use another code.
 - preferred - the value set is encouraged but not enforced.
-- example - illustrative only.
+- example - illustrative only, you can choose to use any code.
 
 UZ Core publishes national CodeSystems and ValueSets in Uzbek (with Russian and English translations) and supplements international HL7 terminology with Uzbek/Russian translations. Codes can be validated against the platform terminology server - see [General guidance](general-guidance.html#terminology).
 
