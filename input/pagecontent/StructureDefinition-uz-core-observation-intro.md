@@ -122,6 +122,9 @@ If the test was performed but produced no value (sample unusable, patient declin
   "resourceType": "Observation",
   "meta": { "profile": ["https://dhp.uz/fhir/core/StructureDefinition/uz-core-observation"] },
   "status": "final",
+  "category": [
+    { "coding": [{ "system": "http://terminology.hl7.org/CodeSystem/observation-category", "code": "vital-signs", "display": "Vital Signs" }] }
+  ],
   "code": { "coding": [{ "system": "http://loinc.org", "code": "2708-6", "display": "Oxygen saturation in Arterial blood" }] },
   "subject": { "reference": "Patient/example-salim" },
   "effectiveDateTime": "2025-11-04T10:30:00Z",
@@ -131,6 +134,6 @@ If the test was performed but produced no value (sample unusable, patient declin
 }
 ```
 
-See [Missing & suppressed data](general-guidance.html#missing-data) for choosing the right absence mechanism.
+Oxygen saturation is a vital sign, so the `vital-signs` `category` is still required even when the value itself is absent - dropping the result does not drop the category. See [Missing & suppressed data](general-guidance.html#missing-data) for choosing the right absence mechanism.
 
 For example API calls and a sample payload, see the [Quick Start](#quick-start) at the bottom of this page.

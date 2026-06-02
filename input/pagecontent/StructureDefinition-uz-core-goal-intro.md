@@ -6,7 +6,7 @@ The elements below must always be present (mandatory) or must be supported when 
 
 #### Each UZ Core Goal Must Have
 
-This profile adds no mandatory cardinality of its own. The only required elements are those inherited from the base resource: a lifecycleStatus and a description of the goal.
+This profile adds no mandatory cardinality of its own. The required elements are inherited from the base resource: a `lifecycleStatus`, a `description` of the goal, and a `subject` (the patient it is for).
 
 #### Each UZ Core Goal Must Support
 
@@ -36,7 +36,7 @@ The examples below go from the smallest instance the server will accept to a ful
 
 #### The smallest Goal you should send
 
-Only two elements are strictly mandatory: a `lifecycleStatus` saying where in planning the goal sits (proposed, planned, accepted, active, on-hold, completed ...) and a `description` of what the goal is. The description may be a SNOMED CT code or free text. Every UZ Core resource must also name the profile it claims to conform to in `meta.profile`. This much already passes validation:
+Three elements are strictly mandatory: a `lifecycleStatus` saying where in planning the goal sits (proposed, planned, accepted, active, on-hold, completed ...), a `description` of what the goal is, and the `subject` it is for (a plain [Patient](StructureDefinition-uz-core-patient.html) reference). The description may be a SNOMED CT code or free text. Every UZ Core resource must also name the profile it claims to conform to in `meta.profile`. This much already passes validation:
 
 ```json
 {
@@ -45,7 +45,8 @@ Only two elements are strictly mandatory: a `lifecycleStatus` saying where in pl
   "lifecycleStatus": "active",
   "description": {
     "coding": [{ "system": "http://snomed.info/sct", "code": "1201005", "display": "Benign essential hypertension" }]
-  }
+  },
+  "subject": { "reference": "Patient/example-salim" }
 }
 ```
 

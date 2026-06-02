@@ -52,6 +52,58 @@ A response must name the `questionnaire` it answers (a canonical URL, 1..1) and 
       ]
     },
     {
+      "linkId": "wait-time",
+      "text": "Сколько времени вы ожидали приём?",
+      "answer": [
+        {
+          "valueCoding": {
+            "system": "https://terminology.dhp.uz/fhir/core/CodeSystem/patient-satisfaction-cs",
+            "code": "10-15min",
+            "display": "10-15 минут"
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "doctor-competence-satisfaction",
+      "text": "Насколько Вы удовлетворены компетентностью врача?",
+      "answer": [
+        {
+          "valueCoding": {
+            "system": "https://terminology.dhp.uz/fhir/core/CodeSystem/patient-satisfaction-cs",
+            "code": "fully-satisfied",
+            "display": "Полностью удовлетворен"
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "health-info-completeness",
+      "text": "Была ли предоставлена информация о Вашем состоянии здоровья в полном объёме и понятной форме?",
+      "answer": [
+        {
+          "valueCoding": {
+            "system": "https://terminology.dhp.uz/fhir/core/CodeSystem/patient-satisfaction-cs",
+            "code": "yes-complete",
+            "display": "Да, полностью"
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "questions-answered",
+      "text": "Получили ли вы ответы на все интересующие вас вопросы?",
+      "answer": [
+        {
+          "valueCoding": {
+            "system": "https://terminology.dhp.uz/fhir/core/CodeSystem/patient-satisfaction-cs",
+            "code": "yes-complete",
+            "display": "Да, полностью"
+          }
+        }
+      ]
+    },
+    {
       "linkId": "improvement-suggestions",
       "text": "Есть ли у Вас предложения по улучшению качества обслуживания?",
       "answer": [
@@ -62,6 +114,6 @@ A response must name the `questionnaire` it answers (a canonical URL, 1..1) and 
 }
 ```
 
-`questionnaire` is a plain canonical string (not a Reference), and `subject` is a plain `Reference` (`{ "reference": "Patient/example-salim" }`). Pick the `value[x]` type that matches the question: `valueCoding` for a coded choice, `valueString` for free text, and likewise `valueBoolean`, `valueInteger`, `valueDate`, and so on for other question types.
+`questionnaire` is a plain canonical string (not a Reference), and `subject` is a plain `Reference` (`{ "reference": "Patient/example-salim" }`). Pick the `value[x]` type that matches the question: `valueCoding` for a coded choice, `valueString` for free text, and likewise `valueBoolean`, `valueInteger`, `valueDate`, and so on for other question types. Every item the referenced [Questionnaire](StructureDefinition-uz-core-questionnaire.html) marks as required must be answered - this response answers all five required questions; omitting one is a validation error.
 
 For example API calls and a sample payload, see the [Quick Start](#quick-start) at the bottom of this page.

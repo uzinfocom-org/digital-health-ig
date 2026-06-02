@@ -73,34 +73,7 @@ The `category` and `type` codes are bound to national value sets (required bindi
 
 #### A laboratory test in the catalogue
 
-When the service is a lab test, use the laboratory slices instead of the DHP slices - do not populate both. The lab `category` uses the `lab-categories-cs` system and the lab `type` uses the `observation-lab-research-codes-cs` system:
-
-```json
-{
-  "resourceType": "HealthcareService",
-  "meta": {
-    "profile": ["https://dhp.uz/fhir/core/StructureDefinition/uz-core-healthcareservice"]
-  },
-  "active": true,
-  "name": "Umumiy qon tahlili",
-  "category": [
-    {
-      "coding": [
-        { "system": "https://terminology.dhp.uz/fhir/core/CodeSystem/lab-categories-cs", "code": "lab-category-14" }
-      ]
-    }
-  ],
-  "type": [
-    {
-      "coding": [
-        { "system": "https://terminology.dhp.uz/fhir/core/CodeSystem/observation-lab-research-codes-cs", "code": "lab-A" }
-      ]
-    }
-  ]
-}
-```
-
-The lab `type` codes connect the catalogue entry to the laboratory result definitions, so a referral or order can resolve which test the service performs.
+Laboratory services are catalogued through a dedicated lab slice on `category` and `type`. That slice is still being finalized - the lab `type` code system is not yet published - so a worked JSON example for lab services will be added here once the terminology is in place. Until then, model services with the DHP slice shown above.
 
 #### Names in more than one language
 

@@ -6,7 +6,7 @@ The elements below must always be present (mandatory) or must be supported when 
 
 #### Each UZ Core Condition Must Have
 
-This profile adds no mandatory cardinality of its own. The only required element is the one inherited from the base resource: a subject (the patient the condition belongs to).
+This profile adds no mandatory cardinality of its own. The required elements are inherited from the base resource: a `clinicalStatus` (R5 makes this mandatory, 1..1) and a `subject` (the patient the condition belongs to).
 
 #### Each UZ Core Condition Must Support
 
@@ -23,7 +23,7 @@ This profile adds no mandatory cardinality of its own. The only required element
 - a participant (0..1) - the actor who asserted the condition and their function;
 - free-text notes.
 
-> `clinicalStatus` and `verificationStatus` are not mandatory here, but together they govern whether downstream views treat the condition as an active, confirmed problem - populate them whenever the data is known.
+> `verificationStatus` is not mandatory, but together with the mandatory `clinicalStatus` it governs whether downstream views treat the condition as an active, confirmed problem - populate both whenever the data is known.
 
 ### Building the JSON, step by step
 
@@ -31,13 +31,16 @@ The examples below go from the smallest instance the server will accept to a ful
 
 #### The smallest Condition you should send
 
-`subject` - the patient the condition belongs to - is the only strictly mandatory element, and a Condition is only useful with a `code` saying what the condition is. Every UZ Core resource must also name the profile it claims to conform to in `meta.profile`, so the server knows which rules to validate against. The `code` is bound to ICD-10 / the DHP condition value set (preferred); `subject` is a plain `Reference` to a [Patient](StructureDefinition-uz-core-patient.html). This much already passes validation:
+A Condition's mandatory elements are `subject` (the patient it belongs to) and `clinicalStatus` - R5 makes `clinicalStatus` 1..1 - and a Condition is only useful with a `code` saying what the condition is. Every UZ Core resource must also name the profile it claims to conform to in `meta.profile`, so the server knows which rules to validate against. The `code` is bound to ICD-10 / the DHP condition value set (preferred); `clinicalStatus` is a `CodeableConcept` bound to the DHP clinical-status value set, and `subject` is a plain `Reference` to a [Patient](StructureDefinition-uz-core-patient.html). This much already passes validation:
 
 ```json
 {
   "resourceType": "Condition",
   "meta": {
     "profile": ["https://dhp.uz/fhir/core/StructureDefinition/uz-core-condition"]
+  },
+  "clinicalStatus": {
+    "coding": [{ "system": "http://terminology.hl7.org/CodeSystem/condition-clinical", "code": "active", "display": "Active" }]
   },
   "code": {
     "coding": [{ "system": "http://hl7.org/fhir/sid/icd-10", "code": "R51", "display": "Headache" }]
