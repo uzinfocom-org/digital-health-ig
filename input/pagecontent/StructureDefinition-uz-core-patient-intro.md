@@ -6,7 +6,7 @@ The elements below must always be present (mandatory) or must be supported when 
 
 #### Each UZ Core Patient Must Have
 
-- at least one identifier - a national or document identifier from one of the defined slices (PINFL, passport, birth certificate, health card, and so on). See [Identifier systems](identifiers.html) for every supported system URI and which to use, including the temporary identifiers for unidentified patients.
+- at least one identifier. The PINFL (national personal identification number) is the primary way patients are identified on the platform and should be sent whenever it is known; the other identifiers (passport, birth certificate, health card, and so on) supplement it, or substitute for it when no PINFL is available. See [Identifier systems](identifiers.html) for every supported system URI and which to use, including the temporary identifiers for unidentified patients.
 
 #### Each UZ Core Patient Must Support
 
