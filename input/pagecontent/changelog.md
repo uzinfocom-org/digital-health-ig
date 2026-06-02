@@ -1,16 +1,14 @@
-# Changelog
-
-## In development
+### In development
 
 (No changes yet)
 
-## Version 0.5.0
+### Version 0.5.0
 
 Added [laboratory observation codes](CodeSystem-observation-lab-research-codes-cs.html) for panels and analytes used in Uzbekistan.
 
 Added [document identifier namespace](identifiers.html#document-identifiers) (doc) to identifier systems.
 
-### Organization profile changes
+#### Organization profile changes
 
 `type.coding[organizationType]` in [UZ Core Organization](StructureDefinition-uz-core-organization.html) now uses [OrganizationTypeUZCS](CodeSystem-organization-types-uz-cs.html) instead of the HL7 `organization-type` CodeSystem. For example, `$organization-type-cs#prov` must be replaced with a code from `organization-types-uz-cs` (e.g. `#I` "Distribution by management"). There is no 1:1 mapping - each organization must be classified into the new system (codes I-V).
 
@@ -83,7 +81,7 @@ Although there is no dedicated profile for Coverage in UZ Core, a new **Coverage
 It includes funding types through DTSJ and social funds (e.g., `#dtsj-treated-case`, `#dtsj-privileged-category`, `#saxovat-komak-fund`, `#womens-notebook-fund`, `#youth-notebook-fund`).
 
 
-## Version 0.4.0
+### Version 0.4.0
 Added [UZ Core Goal](StructureDefinition-uz-core-goal.html) profile with associated codesystems and valuesets.
 
 Added [UZ Core Questionnaire](StructureDefinition-uz-core-questionnaire.html) and [QuestionnaireResponse](StructureDefinition-uz-core-questionnaire-response.html) profiles with multilingual support for translated answer options.
@@ -144,7 +142,7 @@ Added support for international addresses in [Patient](StructureDefinition-uz-co
 
 Added Uzbek translations.
 
-## Version 0.3.0
+### Version 0.3.0
 
 UZ Core profiles for [Encounter](StructureDefinition-uz-core-encounter.html), [EpisodeOfCare](StructureDefinition-uz-core-episodeofcare.html), and [Observation](StructureDefinition-uz-core-observation.html) have been added.
 
@@ -152,11 +150,11 @@ Canonical URLs have been changed to `https://dhp.uz/fhir/core` for conformance r
 
 Russian translations have been added.
 
-## Version 0.2.0
+### Version 0.2.0
 
 This is a first, in-development release of the IG that updates the canonical URLs of all resources to their final version.
 
-### Major changes
+#### Major changes
 UZ Core profiles for AuditEvent, Consent, Condition, HealthcareService, Location, Organization, Patient, Practitioner, PractitionerRole, RelatedPerson, Provenance and the Socioeconomic Observation have been added.
 
 Canonical URLs of profiles, terminology resources, and the IG have been changed from the temporary `medcore.uz` domain to the official `dhp.uz` domain.

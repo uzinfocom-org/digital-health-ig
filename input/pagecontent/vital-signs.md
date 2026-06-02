@@ -1,12 +1,10 @@
-# Vital signs
-
 Vital signs measure the body's basic functions. This page provides guidance for working with vital signs in UZ Core.
 
-## Overview
+### Overview
 
 Vital signs in UZ Core are used in conjunction with [FHIR Vital Signs profiles](https://hl7.org/fhir/observation-vitalsigns.html), using the Observation resource to represent measurements consistently across Uzbekistan's healthcare ecosystem.
 
-## FHIR representation
+### FHIR representation
 
 Vital signs observations in UZ Core **compose** three profiles together:
 * [UZ Core Observation profile](https://dhp.uz/fhir/core/StructureDefinition/uz-core-observation) - Uzbekistan-specific requirements
@@ -15,7 +13,7 @@ Vital signs observations in UZ Core **compose** three profiles together:
 
 Declare all three in `meta.profile`. Most conformance rules are in the final (most specific) profile, with base profiles providing foundational requirements.
 
-## Common vital signs
+### Common vital signs
 
 | Vital Sign | LOINC Code | Description | Unit | Example |
 |------------|------------|-------------|------|---------|
@@ -29,7 +27,7 @@ Declare all three in `meta.profile`. Most conformance rules are in the final (mo
 | [Body Mass Index](http://hl7.org/fhir/r5/bmi.html) | 39156-5 | Body mass index (BMI) [Ratio] | kg/m2 | [JSON](Observation-bmi-example.json) |
 | [Blood Pressure](http://hl7.org/fhir/r5/bp.html) | 85354-9 | Blood pressure panel | — | [JSON](Observation-blood-pressure-example.json) |
 
-## Understanding observations
+### Understanding observations
 
 Observations work as key-value pairs:
 - Key: `Observation.code` (what was measured)
@@ -45,7 +43,7 @@ Key elements:
 * Effective date/time when the measurement was taken
 * Optional performer reference to who recorded the measurement
 
-## Example: body weight
+### Example: body weight
 
 ```json
 {
@@ -92,7 +90,7 @@ Key elements:
 
 All other examples can be found as links in the table above.
 
-## Links
+### Links
 
 For further reading on vital signs in FHIR:
 

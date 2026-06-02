@@ -1,10 +1,8 @@
-# Workflows
-
 The profile pages tell you the *shape* of each resource. These workflow pages tell you the *story* - for a real clinical task, which resources to create, in what order, how they reference each other, and what API calls to make. If you are not sure which resource to use for something, start here.
 
 Each workflow describes the actors, the sequence of FHIR interactions, and the key rules, with example calls and payload fragments.
 
-## Worked scenarios
+### Worked scenarios
 
 | Workflow | What it covers | Resources |
 |----------|----------------|-----------|
@@ -14,7 +12,7 @@ Each workflow describes the actors, the sequence of FHIR interactions, and the k
 
 More scenarios (clinical documentation, reimbursement) will be added as the corresponding profiles are finalized.
 
-## The interaction model
+### The interaction model
 
 A few rules apply to every workflow:
 
@@ -24,7 +22,7 @@ A few rules apply to every workflow:
 - Honour consent. Read requests are subject to the patient's [Consent](StructureDefinition-uz-core-consent.html); a denied request returns `403`. Every access is logged to [AuditEvent](StructureDefinition-uz-core-auditevent.html).
 - Logical delete only. Records are retired by changing status, not by `DELETE`. See [General guidance &rarr; deleting](general-guidance.html#creating-updating-and-deleting).
 
-## How resources relate
+### How resources relate
 
 Most clinical data hangs off the patient through a small number of reference patterns:
 

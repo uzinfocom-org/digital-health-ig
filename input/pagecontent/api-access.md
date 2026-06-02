@@ -1,12 +1,10 @@
-# API access
-
-## Endpoints
+### Endpoints
 
 - **Playground**: `playground.dhp.uz/fhir`
 - **Production**: `fhir.dhp.uz`
 
 
-## Security and authentication
+### Security and authentication
 
 To ensure security, confidentiality, and reliable access control within the National Digital Health Platform (DHP), an authentication and authorization system based on the international OAuth 2.0 standard has been implemented.
 Supporting both frontend and backend application scenarios. A centralized Single Sign-On (SSO) server ensures secure identification of all platform participants - from patients and healthcare providers to external systems.
@@ -15,18 +13,18 @@ DHP supports two main authentication scenarios:
 - Backend applications - via the `client_credentials` grant (no user interaction required),
 - Frontend applications - via the `authorization code` grant with `redirect_uri` support and optional PKCE.
 
-### Backend Integration
+#### Backend Integration
 
 This section describes the process for obtaining an access token for backend applications using the OAuth 2.0 protocol with the `client_credentials` grant type.
 This flow is used when a service needs to access protected APIs on behalf of itself, not a user.
 
-#### Client Configuration
+##### Client Configuration
 
 The backend client must be registered on the SSO server. Upon registration, you will receive:
 - **client_id** - the identifier issued by the provider
 - **client_secret** - the secret key issued by the provider
 
-#### Obtain token
+##### Obtain token
 
 **Request**
 
@@ -42,23 +40,23 @@ POST /oauth/token
 | client\_id     | \<client\_id>       |
 | client\_secret | \<client\_secret>   |
 
-#### Error Responses
+##### Error Responses
 
 * <a href="https://www.postman.com/eg3333-1491/dhp/example/45312060-dce119ab-d60d-4112-acba-cb31503753b5/dhp-core?active-environment=45312060-e14d5c80-4578-464f-a016-dd51f566a5cd" target="_blank">400 Bad Request</a>
 * <a href="https://www.postman.com/eg3333-1491/dhp/example/45312060-b279c65c-72e6-4161-be4c-0281fed405bd/dhp-core?active-environment=45312060-e14d5c80-4578-464f-a016-dd51f566a5cd" target="_blank">401 Unauthorized</a>
 
-### Frontend Integration
+#### Frontend Integration
 
 This section describes how frontend applications can authorize users via the SSO server using the standard OAuth 2.0 `Authorization Code` Grant. This flow ensures a unified login and secure user authentication within the DHP ecosystem.
 
-#### Client Configuration
+##### Client Configuration
 
 The frontend application must be registered with the SSO server. Upon registration, you will receive:
 
 - **client_id** - identifier issued by the provider
 - **redirect_uri** - URL provided by your application
 
-#### Authorization Flow
+##### Authorization Flow
 
 **1 Redirect the user to the SSO frontend:**
 
@@ -89,7 +87,7 @@ Include the access token in each request:
 Authorization: Bearer <access_token>
 ```
 
-## Transactions
+### Transactions
 
 FHIR [transactions](https://hl7.org/fhir/http.html#transaction) let you submit multiple resources in a single atomic request. Either all operations succeed, or none are applied - there are no partial results.
 
@@ -105,7 +103,7 @@ Submit the Bundle with `POST [base]` (not to a specific resource endpoint).
 
 **Example request**: [Transaction Bundle JSON](Bundle-example-transaction-bundle.json) - submits an EpisodeOfCare, an Encounter, and three Observations.
 
-### Response
+#### Response
 
 On success, the server returns a Bundle of type `transaction-response`. Each entry contains `response.status` and `response.location` with the server-assigned ID.
 
@@ -115,11 +113,11 @@ If any entry fails validation, the entire transaction is rolled back and the ser
 
 **Example**: [Error response JSON](OperationOutcome-example-transaction-response-error.json)
 
-## Error handling
+### Error handling
 
 *\<to be filled in - describe error handling here\>*
 
-## Must Support
+### Must Support
 Many elements in the profiles are flagged Must Support. See the dedicated [Must Support](must-support.html) page for what that means, the two contexts it is used in, and how to handle elements you cannot populate.
 
 {% include markdown-link-references.md %}

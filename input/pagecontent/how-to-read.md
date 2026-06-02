@@ -1,16 +1,14 @@
-# How to read this guide
-
 This page explains how to read the UZ Core profiles so you can move from "I have a clinical task" to "this is the resource and these are the fields I need". Read it once before you start implementing - it explains the conventions used on every profile page.
 
 If you are completely new to FHIR, start with [FHIR basics](fhir-basics.html) first, then come back here.
 
-## What a profile is
+### What a profile is
 
 UZ Core does not invent new data structures. Each UZ Core profile takes a standard FHIR R5 resource (for example `Patient` or `Observation`) and adds national rules on top of it: which elements are required, which must be supported, which national identifier systems and terminologies to use, and which Uzbekistan-specific extensions apply. A FHIR resource that is valid against a UZ Core profile is also a valid base FHIR resource.
 
 Because profiles only add rules, a profile page mostly tells you what is *different* from base FHIR - what you must populate, and what you must be able to handle. Everything else behaves exactly as it does in the [base FHIR R5 specification](https://hl7.org/fhir/R5/).
 
-## The four views on a profile page
+### The four views on a profile page
 
 Every profile page (for example [UZ Core Patient](StructureDefinition-uz-core-patient.html)) shows the same set of tabs above the element table:
 
@@ -23,7 +21,7 @@ Every profile page (for example [UZ Core Patient](StructureDefinition-uz-core-pa
 
 For most implementation work, the Key Elements view plus the narrative on this and the profile page is all you need.
 
-## Reading the element table
+### Reading the element table
 
 Each row in the table is one element (field). The columns are:
 
@@ -52,13 +50,13 @@ Each row in the table is one element (field). The columns are:
 - Type - the data type or, for references, which resource(s) it points to. A reference like `Reference(UZ Core Patient)` means it must point to a resource conforming to that profile.
 - Description & Constraints - the definition, the value set binding, and any fixed values.
 
-## Slices
+### Slices
 
 Some elements are *sliced* - the same element is split into named variants with their own rules. For example, `Patient.identifier` is sliced into `nationalId`, `passportLocal`, `passportForeign`, and so on, each fixed to a specific national identifier system. In the table, slices appear as indented rows under the element with the slice name in brackets, e.g. `identifier:nationalId`. Populate the slice that matches your data; you do not have to populate every slice.
 
 See [Identifier systems](identifiers.html) for the full set of patient, practitioner and organization identifier slices and their system URIs.
 
-## Terminology bindings
+### Terminology bindings
 
 When an element is bound to a value set, the binding strength tells you how strict it is:
 
@@ -69,7 +67,7 @@ When an element is bound to a value set, the binding strength tells you how stri
 
 UZ Core publishes national CodeSystems and ValueSets in Uzbek (with Russian and English translations) and supplements international HL7 terminology with Uzbek/Russian translations. Codes can be validated against the platform terminology server - see [General guidance](general-guidance.html#terminology).
 
-## Conventions used across UZ Core
+### Conventions used across UZ Core
 
 - Profiles are built on base FHIR R5 and document only the national delta.
 - Identifiers follow a single hierarchical scheme (`https://dhp.uz/fhir/core/sid/...`). See [Identifier systems](identifiers.html).
@@ -77,7 +75,7 @@ UZ Core publishes national CodeSystems and ValueSets in Uzbek (with Russian and 
 - Every resource is expected to carry profile and provenance metadata - see [General guidance](general-guidance.html#metadata).
 - The platform validates every create/update against the relevant profile and value sets, returning an `OperationOutcome` on failure - so the rules on these pages are enforced, not advisory.
 
-## Where to go next
+### Where to go next
 
 - [Must Support](must-support.html) - what the `S` flag obliges you to do.
 - [General guidance](general-guidance.html) - cross-cutting rules (missing data, units, Bundles, terminology, logical delete).
