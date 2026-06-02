@@ -10,7 +10,7 @@ Description: "Uzbekistan Core ObservationDefinition profile, used to define reus
 * url ^short = "Logical canonical URL to reference this ObservationDefinition (globally unique)"
 
 * identifier MS
-* identifier ^short = "Business identifier of the ObservationDefinition"
+* identifier ^short = "Identifier of the ObservationDefinition"
 
 * name MS
 
@@ -32,24 +32,24 @@ Description: "Uzbekistan Core ObservationDefinition profile, used to define reus
 
 * code MS
 * code from ObservationCodesVS (example)
-
+* code ^short = "Laboratory panel or test code displayed in the Patient Portal"
 * permittedUnit MS
 * permittedUnit from $ucum-common (preferred)
+* permittedUnit ^short = "Permitted unit of measure for the laboratory analyte value"
 
 * method MS
 * method from LabMethodsVS (example)
-
-* bodySite MS
-* bodySite from $bodysite (example)
+* method ^short = "Laboratory method used to perform the test or analyte measurement"
 
 * qualifiedValue MS    
   * context from ReferenceRangeMeaningVS (extensible)
-  * appliesTo from $referencerange-appliesto (example)
   * gender from AdministrativeGenderVS (required)
   * rangeCategory from ObservationRangeCategoryVS (required)
-
+  * range ^short = "Reference range used as the normal value for the laboratory analyte displayed in the Patient Portal"
+  * normalCodedValueSet ^short = "Value set defining coded normal values for the laboratory analyte"
 * hasMember MS
 * hasMember ^short = "Definitions of related resources belonging to this kind of observation group"
 
 * component MS
   * code from ObservationCodesVS (example)
+  * code ^short = "Laboratory analyte or indicator code included in the laboratory panel displayed in the Patient Portal"
