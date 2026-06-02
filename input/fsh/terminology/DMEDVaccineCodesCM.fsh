@@ -12,7 +12,15 @@ Description: "ConceptMap for mapping DMED Vaccine codes to CVX vaccine codes"
 * group[+].source = Canonical(DMEDVaccineCS)
 * sourceScopeCanonical = Canonical(DMEDVaccineVS)
 * group[=].target = $cvx
-* targetScopeCanonical = Canonical(VaccineCodeVS)
+// targetScopeCanonical intentionally omitted: VaccineCodeVS = $cvx + $air-vaccine,
+// and each group's `target` ($cvx here, $air-vaccine below) already restricts
+// target codes to a subset of that ValueSet, so the canonical was a tautological
+// constraint that triggered an IG Publisher bug
+// (CONCEPTMAP_GROUP_TARGET_CODE_INVALID_VS — the internal expander disagrees
+// with tx and rejects codes that ARE in the ValueSet). Reproducer:
+// https://github.com/vadi2/VadimTestIG/tree/conceptmap-target-vs-bug
+// A proper publisher fix is expected upstream; once it lands, re-add the
+// canonical only if it adds a real constraint over `group.target`.
 
 * group[=].element[+].code = #59
 * group[=].element[=].display = "АКДС R"
