@@ -5,9 +5,7 @@ Cross-cutting rules that apply across all UZ Core profiles. These answer the que
 Every resource exchanged on the platform must carry, in addition to its [clinical content](artifacts.html#structures-resource-profiles):
 
 - `meta.profile` - the canonical URL (with version) of the UZ Core profile the resource claims to conform to. This is how the server knows which rules to validate against.
-- `meta.lastUpdated` - when this version of the resource was last changed.
-- `id` - the logical id of the resource on the server.
-- Provenance - the origin and authorship of the data, recorded as a [UZ Core Provenance](StructureDefinition-uz-core-provenance.html) resource referencing the target. Clinically significant records (documents, signed reports) must be accompanied by Provenance; see [Audit & Provenance](general-guidance.html) guidance and the relevant [workflow](workflows.html).
+- `id` - the logical id of the resource on the server. New resources will have one assigned to them by the server.
 
 ```json
 {
