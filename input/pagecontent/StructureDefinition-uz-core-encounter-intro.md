@@ -55,7 +55,7 @@ The examples below build up a single visit - an emergency inpatient encounter - 
 
 #### A realistic visit
 
-Fill in when it happened (`actualPeriod`), what kind of service it was (`type`), the patient's state during it (`subjectStatus`), who took part (`participant`), and why (`reason` - pointing at a Condition, DiagnosticReport, Procedure or Observation):
+Fill in when it happened (`actualPeriod`), what kind of service it was (`type`), the patient's state during it (`subjectStatus`), who took part (`participant`, whose `actor` references a practitioner or [PractitionerRole](StructureDefinition-uz-core-practitioner-role.html)), and why (`reason` - pointing at a Condition, DiagnosticReport, Procedure or Observation):
 
 ```json
 {
@@ -81,6 +81,7 @@ Fill in when it happened (`actualPeriod`), what kind of service it was (`type`),
       "type": [
         { "coding": [{ "system": "http://terminology.hl7.org/CodeSystem/v3-ParticipationType", "code": "ATND", "display": "attender" }] }
       ],
+      "actor": { "reference": "PractitionerRole/example-practitionerrole" },
       "period": { "start": "2024-01-01T10:00:00Z", "end": "2024-01-01T11:00:00Z" }
     }
   ],
