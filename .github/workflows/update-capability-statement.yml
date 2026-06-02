@@ -17,12 +17,28 @@ jobs:
       - uses: actions/checkout@v6
 
       - name: Fetch Capability Statement
+        shell: bash
         run: |
-          curl -sSf "https://playground.dhp.uz/fhir/metadata" | \
-            jq -S '. + {id: "DHPCapabilityStatement"}
-              | del(.rest[0].resource[] | select(.type == "Observation" and .supportedProfile == null))
-              | walk(if type == "array" then sort else . end)' > \
+          set -euo pipefail
+
+          # Fetch to a temp file so a failed/partial download never reaches the pipeline.
+          # --max-time guards against the server stalling (it once hung for 17 min and
+          # produced an empty file that got committed); --retry handles transient errors.
+          curl -sSf --max-time 60 --retry 3 --retry-delay 10 \
+            "https://playground.dhp.uz/fhir/metadata" -o raw.json
+
+          # Refuse to proceed unless we actually got a CapabilityStatement.
+          if [ "$(jq -r '.resourceType // empty' raw.json)" != "CapabilityStatement" ]; then
+            echo "Fetched content is not a CapabilityStatement; aborting" >&2
+            exit 1
+          fi
+
+          jq -S '. + {id: "DHPCapabilityStatement"}
+            | del(.rest[0].resource[] | select(.type == "Observation" and .supportedProfile == null))
+            | walk(if type == "array" then sort else . end)' raw.json > \
             CapabilityStatement-DHPCapabilityStatement.json
+
+          rm -f raw.json
 
       - name: Check for meaningful changes
         id: check_changes
