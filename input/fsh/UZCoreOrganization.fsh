@@ -1,3 +1,8 @@
+Invariant: smif-id-format
+Description: "SMIF organization identifier must match the pattern ^[A-Z]{3}[0-9]{6}$ — 3 uppercase Latin letters followed by 6 digits (e.g., OAA000024)"
+* severity = #error
+* expression = "matches('^[A-Z]{3}[0-9]{6}$')"
+
 Profile: UZCoreOrganization
 Parent: Organization
 Id: uz-core-organization
@@ -16,7 +21,7 @@ Description: "Uzbekistan Core Organization profile, used to define healthcare or
 * identifier ^slicing.rules = #open
 * identifier ^slicing.description = "Ways an organization can be categorized"
 * identifier ^slicing.ordered = false
-* identifier contains taxId 0..1 MS and argosId 0..1 MS
+* identifier contains taxId 0..1 MS and argosId 0..1 MS and smifId 0..1 MS
 
 * insert TaxIdentifier
 
@@ -27,6 +32,24 @@ Description: "Uzbekistan Core Organization profile, used to define healthcare or
   * type = $identifier-type#XX "Organization Identifier"
   * use = #official
   * value 1..1 MS
+
+* identifier[smifId]
+  ^short = "Identifier assigned by the State Medical Insurance Fund (SMIF)"
+  * system 1..1 MS
+  * system = $organization-smif-id-system
+  * type 1..1 MS
+  * type = $identifier-type#NIIP "National Insurance Payor Identifier (Payor)"
+  * use = #official
+  * value 1..1 MS
+  * value ^short = "SMIF organization identifier (3 uppercase Latin letters + 6 digits, e.g. OAA000024)"
+  * value obeys smif-id-format
+  * value ^example[0].label = "SMIF organization identifier"
+  * value ^example[0].valueString = "OAA000024"
+  * period 0..1 MS
+    * start MS
+    * end MS
+  * assigner 0..1 MS
+    * ^short = "Ссылка на организацию Фонда государственного медицинского страхования (Organization с type.coding #pay)"
 
 * active 0..1 MS
 
@@ -117,6 +140,12 @@ Usage: #example
   * type = $identifier-type#XX "Organization Identifier"
   * system = $organization-argos-id-system
   * value = "9512"
+* identifier[smifId]
+  * use = #official
+  * type = $identifier-type#NIIP "National Insurance Payor Identifier (Payor)"
+  * system = $organization-smif-id-system
+  * value = "OAA000024"
+  * period.start = "2024-01-15"
 * active = true
 * type.coding[organizationType] = organization-types-uz-cs#I "Boshqaruv boyicha taqsimlanishi"
 * type.coding[subordinationGroup] = organizational-subordination-group-cs#I_1 "Respublika tassarufidagi muassasalari"
