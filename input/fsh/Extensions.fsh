@@ -76,7 +76,7 @@ Context: Patient
 Invariant: uzcore-turnaround-time-1
 Description: "Turnaround time must be expressed in hours, days, or weeks"
 Severity: #error
-Expression: "code = 'h' or code = 'd' or code = 'wk'"
+Expression: "code.exists() and (code = 'h' or code = 'd' or code = 'wk')"
 
 Extension: TurnaroundTime
 Id: turnaround-time
