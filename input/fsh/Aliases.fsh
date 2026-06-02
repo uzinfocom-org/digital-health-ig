@@ -62,6 +62,7 @@ Alias: $issue-severity = http://hl7.org/fhir/issue-severity
 Alias: $location-status = http://hl7.org/fhir/location-status
 Alias: $location-unit = https://dhp.uz/fhir/core/NamingSystem/location-unit
 Alias: $loinc = http://loinc.org
+Alias: $loinc-supplement-uz = https://terminology.dhp.uz/fhir/CodeSystem/loinc-supplement-uz
 Alias: $loinc-vs = http://loinc.org/vs
 Alias: $medical-product-classification = http://www.whocc.no/atc
 Alias: $mfa = https://gov.uz/ru/mfa
