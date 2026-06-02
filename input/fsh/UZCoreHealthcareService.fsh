@@ -58,7 +58,7 @@ Description: "Uzbekistan Core HealthcareService profile, used to define healthca
   * system 1..1 MS
   * system = Canonical(LabPanelCS) 
   * code 1..1 MS
-  * code from lab-pan-vs (required)
+  * code from observation-codes-vs (required)
 
 Instance: example-healthcareservice
 InstanceOf: UZCoreHealthcareService
