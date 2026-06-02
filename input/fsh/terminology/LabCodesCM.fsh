@@ -2,7 +2,7 @@ Instance: lab-pan-codes-to-loinc
 InstanceOf: ConceptMap
 Usage: #definition
 Title: "Laboratory analytes codes to LOINC"
-Description: "Maps local UZ laboratory analytes codes to LOINC."
+Description: "Maps local laboratory panel/analyte codes used in primary healthcare settings to corresponding LOINC codes. The local laboratory test list is prepared based on the Ministry of Health Order No. 399 of December 2025, which defines laboratory test types used at the primary healthcare level."
 * url = "https://dhp.uz/fhir/core/ConceptMap/lab-pan-codes-to-loinc"
 * name = "LaboratoryAnalytesCodesToLOINC"
 * status = #draft
@@ -10,7 +10,7 @@ Description: "Maps local UZ laboratory analytes codes to LOINC."
 * publisher = "Uzinfocom"
 
 * group.source = Canonical(LabPanelCS)
-* sourceScopeCanonical = Canonical(ObservationCodesVS)
+* sourceScopeCanonical = Canonical(LabPanelVS)
 * group.target = $loinc
 * targetScopeCanonical = $loinc-vs
 

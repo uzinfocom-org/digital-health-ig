@@ -1,0 +1,4 @@
+Code,EN,UZ,RU,
+after,after,keyin,после,http://hl7.org/fhir/ValueSet/action-relationship-type
+  after-start,after-start,boshlanishidan keyin,после начала,
+after-end,after end,tugashidan keyin,после завершения,

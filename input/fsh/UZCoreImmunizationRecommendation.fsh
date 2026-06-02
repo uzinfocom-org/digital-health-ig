@@ -74,7 +74,7 @@ Description: "Uzbekistan Core ImmunizationRecommendation profile, used to repres
 * recommendation.seriesDoses ^short = "Recommended number of doses for immunity"
 
 * recommendation.supportingImmunization 0..* MS
-* recommendation.supportingImmunization only Reference(Immunization or ImmunizationEvaluation)
+* recommendation.supportingImmunization only Reference(UZCoreImmunization or ImmunizationEvaluation)
 * recommendation.supportingImmunization ^short = "Previous immunizations supporting the recommendation"
 
 * recommendation.supportingPatientInformation 0..* MS

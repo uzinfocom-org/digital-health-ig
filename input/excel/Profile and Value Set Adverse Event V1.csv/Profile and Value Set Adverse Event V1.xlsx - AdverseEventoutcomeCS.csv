@@ -1,0 +1,9 @@
+Code, ENG,RU,UZ
+  405491001 ,Adverse incident resulting in no harmful effect,Неблагоприятный инцидент без вредных последствий,Zararli oqibatlarsiz nojo‘ya hodisa
+  405531001 ,Adverse incident resulting in potentially permanent but not disabling damage,"Неблагоприятный инцидент, приведший к потенциально постоянному, но не инвалидизирующему повреждению","Nogironlikka olib kelmaydigan, ammo ehtimoliy doimiy shikastlanishga olib kelgan nojo‘ya hodisa"
+  405532008 ,Adverse incident resulting in potentially permanent disabling damage,"Неблагоприятный инцидент, приведший к потенциально постоянному инвалидизирующему повреждению",Ehtimoliy doimiy nogironlikka olib kelgan nojo‘ya hodisa
+  405535005 ,Adverse incident resulting in death,"Неблагоприятный инцидент, приведший к смерти",O‘limga olib kelgan nojo‘ya hodisa
+  1335890004 ,Recovered from adverse event with sequelae (finding),Выздоровление после неблагоприятного события с остаточными последствиями,Nojo‘ya hodisadan keyin asoratlar bilan sog‘ayish
+  1336140009 ,The condition is showing improvement and it is anticipated that the subject will recover from the event.,"Состояние улучшается, ожидается выздоровление пациента","Holat yaxshilanmoqda, bemorning sog‘ayishi kutilmoqda"
+  1339036001 ,An adverse event that continues without resolution between patient evaluation timepoints.,Неблагоприятное событие продолжается без разрешения между контрольными осмотрами,Nazorat ko‘riklari oralig‘ida bartaraf etilmagan nojo‘ya hodisa
+  1352007006 ,Complete recovery from adverse event,Полное выздоровление после неблагоприятного события,Nojo‘ya hodisadan to‘liq sog‘ayish
