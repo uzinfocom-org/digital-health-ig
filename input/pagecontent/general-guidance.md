@@ -25,10 +25,10 @@ Content is exchanged as JSON, UTF-8 encoded.
 There is a difference between "I have no value" and "there is no value", and FHIR lets you say which:
 
 - Value simply not present - omit the element. Do not send an empty string or a placeholder. This is allowed for any optional (`0..`) element, including Must Support optional elements.
-- Mandatory element, but the value is genuinely unknown - you cannot omit a `1..` element, so use the resource's defined "unknown" mechanism: a `data-absent-reason` extension on the element, or an "unknown" code where the bound value set provides one (for example a coded element bound to a value set that includes `unknown`).
+- Mandatory element, but the value is genuinely unknown - you cannot omit a `1..` element, so use the resource's defined "unknown" mechanism: a `data-absent-reason` extension on the element ([example](Patient-example-unidentified-patient.html)), or an "unknown" code where the bound value set provides one (for example a coded element bound to a value set that includes `unknown`).
 - Never invent data to satisfy a constraint. A fake birth date or a dummy identifier is worse than a recorded absence.
 
-Some profiles add an explicit `data-absent-reason` slot - for example [UZ Core Patient](StructureDefinition-uz-core-patient.html) allows a `data-absent-reason` extension on `identifier` for the rare case where even an identifier is unavailable.
+Some profiles add an explicit `data-absent-reason` slot - for example [UZ Core Patient](StructureDefinition-uz-core-patient.html) allows a `data-absent-reason` extension on the identifier's `value` for the rare case where even an identifier is unavailable.
 
 See [Must Support](must-support.html) for how this interacts with the <span style="padding-left: 3px; padding-right: 3px; color: white; background-color: #D50000" title="This element must be supported">S</span> flag.
 
