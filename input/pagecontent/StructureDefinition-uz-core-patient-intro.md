@@ -23,4 +23,125 @@ The elements below must always be present (mandatory) or must be supported when 
 
 > Populate the identifier *slice* that matches your data - you do not populate every slice. A patient typically has a PINFL plus one or more document identifiers.
 
-For example API calls and a sample payload, see the [Quick Start](#quick-start) at the bottom of this page.
+### Building the JSON, step by step
+
+The examples below go from the smallest instance the server will accept to a full registration payload. Copy one and adapt it - every value shown validates against this profile. The complete reference instances are linked at the bottom of the page ([Salim](Patient-example-salim.html), [Emma](Patient-example-emma.html), [unidentified patient](Patient-example-unidentified-patient.html)).
+
+#### 1. The smallest Patient you should send
+
+`identifier` is the only mandatory element, and the PINFL is the identifier you should send. Every UZ Core resource must also name the profile it claims to conform to in `meta.profile` - that is how the server knows which rules to validate against. This much already passes validation:
+
+```json
+{
+  "resourceType": "Patient",
+  "meta": {
+    "profile": ["https://dhp.uz/fhir/core/StructureDefinition/uz-core-patient"]
+  },
+  "identifier": [
+    {
+      "type": { "coding": [{ "system": "http://terminology.hl7.org/CodeSystem/v2-0203", "code": "NI" }] },
+      "system": "https://dhp.uz/fhir/core/sid/pid/uz/ni",
+      "value": "30211975910033"
+    }
+  ]
+}
+```
+
+What makes that identifier a PINFL is its `system` URI - the one ending in `sid/pid/uz/ni`. That is the single field the profile matches on to recognise which kind of identifier it is; the `type` and `value` simply travel with it. To record a different identifier, use the matching `system` and `type` from [the table below](#identifier-slices).
+
+#### 2. A realistic registration
+
+In practice you send the PINFL plus the core demographics the platform expects you to support: name, gender, birth date and address. Names carry Uzbek as the authoritative text. An Uzbek address uses **coded** administrative divisions (region, district, mahalla), not free text:
+
+```json
+{
+  "resourceType": "Patient",
+  "meta": {
+    "profile": ["https://dhp.uz/fhir/core/StructureDefinition/uz-core-patient"]
+  },
+  "identifier": [
+    {
+      "use": "official",
+      "type": { "coding": [{ "system": "http://terminology.hl7.org/CodeSystem/v2-0203", "code": "NI" }] },
+      "system": "https://dhp.uz/fhir/core/sid/pid/uz/ni",
+      "value": "30211975910033"
+    }
+  ],
+  "active": true,
+  "name": [
+    {
+      "use": "official",
+      "text": "Usmonov Salim Saidovich",
+      "family": "Usmonov",
+      "given": ["Salim"]
+    }
+  ],
+  "gender": "male",
+  "birthDate": "1994-01-27",
+  "address": [
+    {
+      "use": "home",
+      "type": "physical",
+      "country": "UZ",
+      "state": "1727",
+      "district": "1727220",
+      "city": "17150085",
+      "line": ["Amir Temur ko'chasi, 15-uy"]
+    }
+  ]
+}
+```
+
+The `state` / `district` / `city` codes come from national value sets - see [Addresses](general-guidance.html#addresses) for where each code is sourced. For a patient living abroad, use a free-text address with `country` set to the foreign ISO code instead (see the [Emma example](Patient-example-emma.html)).
+
+#### 3. Carrying more than one identifier {#identifier-slices}
+
+A person usually holds several identifiers. Add one entry to the `identifier` array per document, each with its own `system` and `type`; populate only the ones you actually have. The `system` URI is what selects the slice, so it must match exactly:
+
+```json
+"identifier": [
+  {
+    "type": { "coding": [{ "system": "http://terminology.hl7.org/CodeSystem/v2-0203", "code": "NI" }] },
+    "system": "https://dhp.uz/fhir/core/sid/pid/uz/ni",
+    "value": "30211975910033"
+  },
+  {
+    "type": { "coding": [{ "system": "http://terminology.hl7.org/CodeSystem/v2-0203", "code": "PPN" }] },
+    "system": "https://dhp.uz/fhir/core/sid/pid/uz/ppn/local",
+    "value": "AC1234567"
+  }
+]
+```
+
+The most common identifiers and the exact values to use:
+
+| Identifier | `system` | `type` code |
+|---|---|---|
+| PINFL (national id) | `https://dhp.uz/fhir/core/sid/pid/uz/ni` | `NI` |
+| Local passport | `https://dhp.uz/fhir/core/sid/pid/uz/ppn/local` | `PPN` |
+| International passport | `https://dhp.uz/fhir/core/sid/pid/uz/ppn/intl` | `PPN` |
+| Birth certificate | `https://dhp.uz/fhir/core/sid/pid/uz/bct` | `BCT` |
+| Health card | `https://dhp.uz/fhir/core/sid/pid/uz/hc` | `HC` |
+
+See [Identifier systems](identifiers.html) for the complete list, including the URI patterns for foreign nationals.
+
+#### 4. When you have no identifier at all
+
+For an unidentified patient - someone brought in unconscious, say - you still cannot omit `identifier`. Rather than invent a value, mark the value as absent with a `data-absent-reason` extension (full instance: [unidentified patient](Patient-example-unidentified-patient.html)):
+
+```json
+"identifier": [
+  {
+    "use": "temp",
+    "_value": {
+      "extension": [
+        { "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason", "valueCode": "unknown" }
+      ]
+    }
+  }
+]
+```
+
+Note the leading underscore: `_value` is where FHIR puts the extension that stands in for the missing `value`. Better still, assign a temporary medical record number when the receiving organization is known - see [Identifier systems](identifiers.html) - and fall back to `data-absent-reason` only when it is not.
+
+For example API calls and the search-before-register flow, see the [Quick Start](#quick-start) at the bottom of this page.
