@@ -28,4 +28,135 @@ The elements below must always be present (mandatory) or must be supported when 
 
 > Use `status = not-done` with a status reason to record an exemption or refusal - do not omit the record. Reserve `entered-in-error` for records created by mistake.
 
+### Building the JSON, step by step
+
+The examples below go from the smallest instance the server will accept to a full immunization record with protocol and reaction. Copy one and adapt it - every value shown validates against this profile. The complete reference instances are linked at the bottom of the page ([BCG dose](Immunization-immunization-example-001.html), [measles dose](Immunization-example-measles-immunization.html)).
+
+#### The smallest Immunization you should send
+
+Four elements are mandatory: `status`, `vaccineCode`, `patient`, and an `occurrence`. The vaccine code may be a CVX code or a SNOMED CT code; the occurrence is usually a `occurrenceDateTime`. Every UZ Core resource must also name the profile it claims to conform to in `meta.profile`. This much already passes validation:
+
+```json
+{
+  "resourceType": "Immunization",
+  "meta": { "profile": ["https://dhp.uz/fhir/core/StructureDefinition/uz-core-immunization"] },
+  "status": "completed",
+  "vaccineCode": {
+    "coding": [{ "system": "http://snomed.info/sct", "code": "150971000119104", "display": "Measles, mumps and rubella vaccination given (situation)" }]
+  },
+  "patient": { "reference": "Patient/example-emma" },
+  "occurrenceDateTime": "2024-01-10"
+}
+```
+
+`status` is bound `required` to `completed` / `not-done` / `entered-in-error`. `vaccineCode` uses an `extensible` binding - CVX (`http://hl7.org/fhir/sid/cvx`) and SNOMED CT (`http://snomed.info/sct`) are both fine. When only an approximate date is known, send `occurrenceString` instead of `occurrenceDateTime`.
+
+#### A realistic administered dose
+
+In practice you record the product detail and the administration: a CVX `vaccineCode`, the `lotNumber` and `expirationDate`, the `encounter` and `location`, the `site` and `route`, the `doseQuantity`, and the `performer` who gave the dose. `vaccineCode` is a plain `CodeableConcept`, but `performer.actor` is a plain `Reference`:
+
+```json
+{
+  "resourceType": "Immunization",
+  "meta": { "profile": ["https://dhp.uz/fhir/core/StructureDefinition/uz-core-immunization"] },
+  "status": "completed",
+  "vaccineCode": {
+    "coding": [{ "system": "http://hl7.org/fhir/sid/cvx", "code": "19", "display": "Bacillus Calmette-Guerin vaccine" }]
+  },
+  "patient": { "reference": "Patient/example-salim" },
+  "encounter": { "reference": "Encounter/example-encounter" },
+  "occurrenceDateTime": "2026-04-28T10:30:00+05:00",
+  "primarySource": true,
+  "lotNumber": "LOT-BCG-2026-01",
+  "expirationDate": "2027-01-31",
+  "location": { "reference": "Location/example-location-1" },
+  "site": {
+    "coding": [{ "system": "http://terminology.hl7.org/CodeSystem/v3-ActSite", "code": "LA", "display": "Left arm" }]
+  },
+  "route": {
+    "coding": [{ "system": "http://snomed.info/sct", "code": "36673005", "display": "Intradermal injection" }]
+  },
+  "doseQuantity": { "value": 0.05, "unit": "mL", "system": "http://unitsofmeasure.org", "code": "mL" },
+  "performer": [
+    {
+      "function": {
+        "coding": [{ "system": "http://terminology.hl7.org/CodeSystem/v2-0443", "code": "AP", "display": "Administering Provider" }]
+      },
+      "actor": { "reference": "Practitioner/example-practitioner" }
+    }
+  ]
+}
+```
+
+`patient`, `encounter`, `location`, `basedOn`, `supportingInformation`, `performer.actor` and `protocolApplied.authority` are all plain References (`{ "reference": "Type/id" }`). `administeredProduct`, `informationSource`, `reason` and `reaction.manifestation` are `CodeableReference` types - their reference sits one level deeper (`{ "reference": { "reference": "Type/id" } }`). See [How to read these profiles](how-to-read.html) for the distinction.
+
+#### Adding protocol, reason and reaction
+
+For a complete record, add the `protocolApplied` (series name, target disease, dose number and total doses), the `reason` for vaccinating, and any `reaction` observed. Note where the CodeableReference shape applies - `reason` and `reaction.manifestation` nest the reference, while `protocolApplied.authority` is a plain Reference:
+
+```json
+{
+  "resourceType": "Immunization",
+  "meta": { "profile": ["https://dhp.uz/fhir/core/StructureDefinition/uz-core-immunization"] },
+  "status": "completed",
+  "vaccineCode": {
+    "coding": [{ "system": "http://hl7.org/fhir/sid/cvx", "code": "19", "display": "Bacillus Calmette-Guerin vaccine" }]
+  },
+  "patient": { "reference": "Patient/example-salim" },
+  "occurrenceDateTime": "2026-04-28T10:30:00+05:00",
+  "administeredProduct": {
+    "reference": { "reference": "Medication/medication-imm-001" }
+  },
+  "reason": [
+    { "reference": { "reference": "Condition/condition-tuberculosis-risk-example" } }
+  ],
+  "reaction": [
+    {
+      "date": "2026-04-28T12:00:00+05:00",
+      "manifestation": {
+        "concept": {
+          "coding": [{ "system": "http://snomed.info/sct", "code": "260389003", "display": "No reaction" }]
+        }
+      },
+      "reported": false
+    }
+  ],
+  "protocolApplied": [
+    {
+      "series": "BCG vaccination",
+      "authority": { "reference": "Organization/example-immunization-organization" },
+      "targetDisease": [
+        { "coding": [{ "system": "http://snomed.info/sct", "code": "56717001", "display": "Tuberculosis" }] }
+      ],
+      "doseNumber": "1",
+      "seriesDoses": "1"
+    }
+  ]
+}
+```
+
+`reaction.manifestation` carries its coded finding in `concept`; it may instead point at an [Observation](StructureDefinition-uz-core-observation.html) through its nested `reference`. `protocolApplied.targetDisease` is bound `extensible` to SNOMED CT. When the dose came from a [recommendation](StructureDefinition-uz-core-immunization-recommendation.html) or order, add a `basedOn` reference to it.
+
+#### When the dose was not given
+
+Do not omit the record when a vaccine is refused, contraindicated, or otherwise not administered - set `status` to `not-done` and give the `statusReason`. The `occurrence` still records when it would have been (or was scheduled to be):
+
+```json
+{
+  "resourceType": "Immunization",
+  "meta": { "profile": ["https://dhp.uz/fhir/core/StructureDefinition/uz-core-immunization"] },
+  "status": "not-done",
+  "statusReason": {
+    "coding": [{ "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason", "code": "IMMUNE", "display": "immunity" }]
+  },
+  "vaccineCode": {
+    "coding": [{ "system": "http://hl7.org/fhir/sid/cvx", "code": "19", "display": "Bacillus Calmette-Guerin vaccine" }]
+  },
+  "patient": { "reference": "Patient/example-salim" },
+  "occurrenceDateTime": "2026-04-28T10:30:00+05:00"
+}
+```
+
+`statusReason` uses a `required` binding. See [Missing & suppressed data](general-guidance.html#missing-data) for the difference between a not-done event and a missing element.
+
 For example API calls and a sample payload, see the [Quick Start](#quick-start) at the bottom of this page.

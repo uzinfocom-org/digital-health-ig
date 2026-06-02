@@ -24,4 +24,120 @@ This profile adds no mandatory cardinality of its own. The required elements are
 
 > One EpisodeOfCare spans many Encounters - link each visit back to the episode from the Encounter's `episodeOfCare`, rather than opening a fresh episode per visit.
 
+### Building the JSON, step by step
+
+The examples below go from the smallest instance the server will accept to a full case of care. Copy one and adapt it - every value shown validates against this profile. The complete reference instances are linked at the bottom of the page ([preventive episode](EpisodeOfCare-UZCoreEpisodeOfCare-Example.html), [pregnancy episode](EpisodeOfCare-UZCoreEpisodeOfCare-Example02.html)).
+
+#### The smallest EpisodeOfCare you should send
+
+This profile adds no mandatory element of its own. The base resource requires a `status` and a `patient`, and every UZ Core resource must name the profile it claims to conform to in `meta.profile` - that is how the server knows which rules to validate against. This much already passes validation:
+
+```json
+{
+  "resourceType": "EpisodeOfCare",
+  "meta": {
+    "profile": ["https://dhp.uz/fhir/core/StructureDefinition/uz-core-episodeofcare"]
+  },
+  "status": "active",
+  "patient": { "reference": "Patient/example-salim" }
+}
+```
+
+`status` uses a **required** binding - the value must come from the bound value set (planned \| active \| onhold \| finished \| cancelled \| entered-in-error). `patient` is a plain `Reference` to a [Patient](StructureDefinition-uz-core-patient.html).
+
+#### A realistic episode
+
+In practice you send the things that let the platform manage and find the episode: a business `identifier`, the `type` that classifies the episode, the `managingOrganization` that coordinates the care, the [Patient](StructureDefinition-uz-core-patient.html) it concerns, and the `period` over which it runs. The `careManager` (the coordinating practitioner) is the person to chase about the case:
+
+```json
+{
+  "resourceType": "EpisodeOfCare",
+  "meta": {
+    "profile": ["https://dhp.uz/fhir/core/StructureDefinition/uz-core-episodeofcare"]
+  },
+  "identifier": [
+    {
+      "system": "http://dhp.uz/ids/episode-of-care",
+      "value": "EOC-2025-0001"
+    }
+  ],
+  "status": "active",
+  "type": [
+    {
+      "coding": [{ "system": "https://terminology.dhp.uz/fhir/core/CodeSystem/episode-of-care-type-cs", "code": "mserv-0001-00001" }],
+      "text": "Preventive services"
+    }
+  ],
+  "patient": { "reference": "Patient/example-salim" },
+  "managingOrganization": { "reference": "Organization/example-organization" },
+  "careManager": { "reference": "Practitioner/example-practitioner" },
+  "period": { "start": "2025-08-01" }
+}
+```
+
+`patient`, `managingOrganization` and `careManager` are plain `Reference` types - the target sits directly in `reference`. Leave `period.end` off while the episode is still open; add it only when the case closes.
+
+#### Adding the reason and diagnosis
+
+The clinical content of the episode is its `reason` (why care is being given) and its `diagnosis` (the conditions being addressed). Both `reason.value` and `diagnosis.condition` are `CodeableReference` types bound to ICD-10, so the reference sits one level deeper (`{ "reference": { "reference": "..." } }`) than the plain references above. Each `diagnosis.use` records the role of that diagnosis (here `DD`, the primary diagnosis):
+
+```json
+{
+  "resourceType": "EpisodeOfCare",
+  "meta": {
+    "profile": ["https://dhp.uz/fhir/core/StructureDefinition/uz-core-episodeofcare"]
+  },
+  "status": "active",
+  "patient": { "reference": "Patient/example-salim" },
+  "managingOrganization": { "reference": "Organization/example-organization" },
+  "reason": [
+    {
+      "use": {
+        "coding": [{ "system": "https://terminology.dhp.uz/fhir/core/CodeSystem/episode-of-care-reason-use-cs", "code": "mserv-0002-00002" }],
+        "text": "Preventive visit"
+      },
+      "value": [
+        { "reference": { "reference": "Condition/example-headache" } }
+      ]
+    }
+  ],
+  "diagnosis": [
+    {
+      "condition": [
+        { "reference": { "reference": "Condition/example-headache" } }
+      ],
+      "use": {
+        "coding": [{ "system": "http://terminology.hl7.org/CodeSystem/diagnosis-role", "code": "DD" }],
+        "text": "Primary diagnosis"
+      }
+    }
+  ]
+}
+```
+
+`reason.value` may point at a [Condition](StructureDefinition-uz-core-condition.html), Procedure, Observation, or HealthcareService; `diagnosis.condition` must be a [Condition](StructureDefinition-uz-core-condition.html). See [Terminology](general-guidance.html#terminology) for the ICD-10 binding these elements share.
+
+#### Recording how the status changed over time
+
+A long-running episode moves through several statuses - it may be `planned`, then `active`, then `finished`. Set the current value in `status`; record each earlier state in `statusHistory`, where each entry carries the past `status` and the `period` it covered:
+
+```json
+{
+  "resourceType": "EpisodeOfCare",
+  "meta": {
+    "profile": ["https://dhp.uz/fhir/core/StructureDefinition/uz-core-episodeofcare"]
+  },
+  "status": "planned",
+  "patient": { "reference": "Patient/example-emma" },
+  "statusHistory": [
+    {
+      "status": "active",
+      "period": { "start": "2025-08-16", "end": "2025-09-01" }
+    }
+  ]
+}
+```
+
+Each `statusHistory.status` is drawn from the same value set as `status`. Use this to keep an audit trail when, for instance, a chronic-disease episode is put `onhold` and later resumed.
+
 For example API calls and a sample payload, see the [Quick Start](#quick-start) at the bottom of this page.

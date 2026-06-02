@@ -22,4 +22,77 @@ This profile adds no mandatory cardinality of its own. The required elements are
 
 > For signed documents, the MyID or EDS / E-IMZO signature blob lives in `signature.data`; `target` references the document that was signed.
 
+### Building the JSON, step by step
+
+Provenance is normally written by the originating system, so you will usually read these rather than build them - but the shape matters when you do. The examples below go from the smallest record the server will accept to a fully signed document event. Copy one and adapt it - every value shown validates against this profile. The full reference instance is the [example Provenance](Provenance-example-provenance.html).
+
+#### The smallest Provenance you should send
+
+A Provenance needs at least one `target` (the record it is about) and at least one `agent` with a `who` (the actor responsible). Here `target` is constrained to a [DocumentReference](https://hl7.org/fhir/R5/documentreference.html) or Medication, and `agent.who` to a [PractitionerRole](StructureDefinition-uz-core-practitioner-role.html). Both `target` and `agent.who` are plain References. In practice you also send `occurredDateTime` (when the activity happened), the `activity` performed, and the `patient` it involved:
+
+```json
+{
+  "resourceType": "Provenance",
+  "meta": { "profile": ["https://dhp.uz/fhir/core/StructureDefinition/uz-core-provenance"] },
+  "target": [
+    { "reference": "DocumentReference/example-pdf-document" }
+  ],
+  "occurredDateTime": "2025-02-05T12:58:00+05:00",
+  "activity": {
+    "coding": [{ "system": "http://terminology.hl7.org/CodeSystem/v3-DocumentCompletion", "code": "LA" }]
+  },
+  "patient": { "reference": "Patient/example-patient" },
+  "agent": [
+    {
+      "type": {
+        "coding": [{ "system": "http://terminology.hl7.org/CodeSystem/provenance-participant-type", "code": "author" }]
+      },
+      "who": { "reference": "PractitionerRole/example-practitionerrole" }
+    }
+  ]
+}
+```
+
+`activity` and `agent.type` each use a **required** binding - the value must come from the bound value set (the Snapshot view above lists each one). `agent.who` must reference a PractitionerRole.
+
+#### Adding the digital signature
+
+The reason this profile exists is to carry the signature created via MyID biometric authentication or EDS / E-IMZO. Add a `signature` entry: its `type` says how it was made (required binding), `when` is the moment it was applied, `who` references the same PractitionerRole, `sigFormat` is the media type of the blob, and `data` is the base64-encoded signature itself:
+
+```json
+{
+  "resourceType": "Provenance",
+  "meta": { "profile": ["https://dhp.uz/fhir/core/StructureDefinition/uz-core-provenance"] },
+  "target": [
+    { "reference": "DocumentReference/example-pdf-document" }
+  ],
+  "occurredDateTime": "2025-02-05T12:58:00+05:00",
+  "activity": {
+    "coding": [{ "system": "http://terminology.hl7.org/CodeSystem/v3-DocumentCompletion", "code": "LA" }]
+  },
+  "patient": { "reference": "Patient/example-patient" },
+  "agent": [
+    {
+      "type": {
+        "coding": [{ "system": "http://terminology.hl7.org/CodeSystem/provenance-participant-type", "code": "author" }]
+      },
+      "who": { "reference": "PractitionerRole/example-practitionerrole" }
+    }
+  ],
+  "signature": [
+    {
+      "type": [
+        { "system": "https://terminology.dhp.uz/fhir/core/CodeSystem/signature-type-cs", "code": "biometricAuth" }
+      ],
+      "when": "2025-02-05T12:58:00+05:00",
+      "who": { "reference": "PractitionerRole/example-practitionerrole" },
+      "sigFormat": "application/signature+xml",
+      "data": "dGhpcyBibG9iIGlzIHNuaXBwZWQ="
+    }
+  ]
+}
+```
+
+`target` here references the [DocumentReference](https://hl7.org/fhir/R5/documentreference.html) that was signed. The `data` value is the base64 signature blob (truncated above); send the full blob in production.
+
 For example API calls and a sample payload, see the [Quick Start](#quick-start) at the bottom of this page.

@@ -25,4 +25,136 @@ This profile adds no mandatory cardinality of its own. The only required element
 
 > `clinicalStatus` and `verificationStatus` are not mandatory here, but together they govern whether downstream views treat the condition as an active, confirmed problem - populate them whenever the data is known.
 
+### Building the JSON, step by step
+
+The examples below go from the smallest instance the server will accept to a full coded diagnosis. Copy one and adapt it - every value shown validates against this profile. The complete reference instances are linked at the bottom of the page ([headache](Condition-example-headache.html), [cancer](Condition-example-cancer.html), [disability](Condition-example-disability.html)).
+
+#### The smallest Condition you should send
+
+`subject` - the patient the condition belongs to - is the only strictly mandatory element, and a Condition is only useful with a `code` saying what the condition is. Every UZ Core resource must also name the profile it claims to conform to in `meta.profile`, so the server knows which rules to validate against. The `code` is bound to ICD-10 / the DHP condition value set (preferred); `subject` is a plain `Reference` to a [Patient](StructureDefinition-uz-core-patient.html). This much already passes validation:
+
+```json
+{
+  "resourceType": "Condition",
+  "meta": {
+    "profile": ["https://dhp.uz/fhir/core/StructureDefinition/uz-core-condition"]
+  },
+  "code": {
+    "coding": [{ "system": "http://hl7.org/fhir/sid/icd-10", "code": "R51", "display": "Headache" }]
+  },
+  "subject": { "reference": "Patient/example-patient" }
+}
+```
+
+ICD-10 is the coding system in use today (ICD-11 and SNOMED CT are planned). See [Terminology](general-guidance.html#terminology) for which system to use.
+
+#### A realistic diagnosis
+
+In practice you send the clinical context the platform expects you to support: `clinicalStatus` and `verificationStatus` (together they decide whether the condition is surfaced as an active, confirmed problem), when it began (`onsetDateTime`), and when it was recorded (`recordedDate`). A free-text `note` carries the clinician's narrative:
+
+```json
+{
+  "resourceType": "Condition",
+  "meta": {
+    "profile": ["https://dhp.uz/fhir/core/StructureDefinition/uz-core-condition"]
+  },
+  "clinicalStatus": {
+    "coding": [{ "system": "http://terminology.hl7.org/CodeSystem/condition-clinical", "code": "active", "display": "Active" }]
+  },
+  "verificationStatus": {
+    "coding": [{ "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status", "code": "confirmed", "display": "Confirmed" }]
+  },
+  "code": {
+    "coding": [{ "system": "http://hl7.org/fhir/sid/icd-10", "code": "R51", "display": "Headache" }]
+  },
+  "subject": { "reference": "Patient/example-patient" },
+  "onsetDateTime": "2025-07-25",
+  "recordedDate": "2025-07-29",
+  "note": [
+    { "text": "Patient complained of mild headache for two days. Condition resolved after rest and hydration." }
+  ]
+}
+```
+
+`clinicalStatus` (active, recurrence, remission, resolved ...) and `verificationStatus` (provisional, confirmed, refuted, entered-in-error ...) are each bound to a DHP value set - take the values from those bindings (the Snapshot view above lists them).
+
+#### Adding severity, body site, diagnosis type and who asserted it
+
+A fuller record adds the Must-Support elements that classify and attribute the condition: a `severity` (SNOMED, preferred), a `bodySite` (SNOMED), the `diagnosisType` extension (main diagnosis, referring-institution diagnosis ...), and a `participant` naming who asserted it. The participant `actor` is a plain `Reference` to a [Practitioner](StructureDefinition-uz-core-practitioner.html), [PractitionerRole](StructureDefinition-uz-core-practitioner-role.html), Patient, RelatedPerson, or Device:
+
+```json
+{
+  "resourceType": "Condition",
+  "meta": {
+    "profile": ["https://dhp.uz/fhir/core/StructureDefinition/uz-core-condition"]
+  },
+  "extension": [
+    {
+      "url": "https://dhp.uz/fhir/core/StructureDefinition/diagnosis-type",
+      "valueCodeableConcept": {
+        "coding": [{ "system": "https://terminology.dhp.uz/fhir/core/CodeSystem/diagnosis-type-cs", "code": "gencl-0001-00003", "display": "Main diagnosis" }]
+      }
+    }
+  ],
+  "clinicalStatus": {
+    "coding": [{ "system": "http://terminology.hl7.org/CodeSystem/condition-clinical", "code": "active", "display": "Active" }]
+  },
+  "verificationStatus": {
+    "coding": [{ "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status", "code": "confirmed", "display": "Confirmed" }]
+  },
+  "severity": {
+    "coding": [{ "system": "http://snomed.info/sct", "code": "255604002", "display": "Mild" }]
+  },
+  "code": {
+    "coding": [{ "system": "http://snomed.info/sct", "code": "254837009", "display": "Malignant neoplasm of breast" }]
+  },
+  "bodySite": [
+    { "coding": [{ "system": "http://snomed.info/sct", "code": "76752008", "display": "Breast structure" }] }
+  ],
+  "subject": { "reference": "Patient/example-emma" },
+  "onsetDateTime": "2025-08-15",
+  "recordedDate": "2025-09-01",
+  "participant": [
+    {
+      "actor": { "reference": "Practitioner/example-practitioner" },
+      "function": {
+        "coding": [{ "system": "http://terminology.hl7.org/CodeSystem/provenance-participant-type", "code": "author", "display": "Author" }]
+      }
+    }
+  ]
+}
+```
+
+The `diagnosisType` extension carries its own URL (`https://dhp.uz/fhir/core/StructureDefinition/diagnosis-type`) and a coded value from the DHP `diagnosis-type-cs` system. `bodySite` is a list of `CodeableConcept`. `participant` is 0..1 - one actor with their `function`.
+
+#### A disability classification
+
+When the `code` is the SNOMED *Disability* concept (`21134002`), the profile **requires** the `severity` to come from the DHP disability value set - the SNOMED severity scale does not apply. Send the disability group as the `severity`:
+
+```json
+{
+  "resourceType": "Condition",
+  "meta": {
+    "profile": ["https://dhp.uz/fhir/core/StructureDefinition/uz-core-condition"]
+  },
+  "clinicalStatus": {
+    "coding": [{ "system": "http://terminology.hl7.org/CodeSystem/condition-clinical", "code": "active", "display": "Active" }]
+  },
+  "verificationStatus": {
+    "coding": [{ "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status", "code": "confirmed", "display": "Confirmed" }]
+  },
+  "code": {
+    "coding": [{ "system": "http://snomed.info/sct", "code": "21134002", "display": "Disability" }]
+  },
+  "severity": {
+    "coding": [{ "system": "https://terminology.dhp.uz/fhir/core/CodeSystem/disability-cs", "code": "regis0011.00001", "display": "I guruh" }]
+  },
+  "subject": { "reference": "Patient/example-salim" },
+  "onsetDateTime": "2020-03-10",
+  "recordedDate": "2025-09-17"
+}
+```
+
+The full instance is the [disability example](Condition-example-disability.html). For any other condition, leave `severity` bound to the preferred SNOMED scale (`Mild`, and so on) as shown above.
+
 For example API calls and a sample payload, see the [Quick Start](#quick-start) at the bottom of this page.

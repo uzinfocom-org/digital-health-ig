@@ -19,4 +19,114 @@ The base FHIR HealthcareService has no mandatory elements, and this profile does
 
 > Use the laboratory category/type slices when the service is a lab test in the catalogue, and the DHP service slices for clinical services - populate the slice that matches, not both.
 
+### Building the JSON, step by step
+
+The examples below go from the smallest instance the server will accept to a full catalogue entry with translated names. Copy one and adapt it - every value shown validates against this profile. The complete reference instance is the [example HealthcareService](HealthcareService-example-healthcareservice.html).
+
+#### The smallest HealthcareService you should send
+
+This profile and the base resource add no mandatory elements, so the absolute minimum is just the profile claim in `meta.profile`. In practice you should always send the `active` flag and a `name` so the service is usable in the catalogue and as a referral target:
+
+```json
+{
+  "resourceType": "HealthcareService",
+  "meta": {
+    "profile": ["https://dhp.uz/fhir/core/StructureDefinition/uz-core-healthcareservice"]
+  },
+  "active": true,
+  "name": "IHC-ga xos"
+}
+```
+
+The `active` flag says whether the service is currently offered; set it to `false` to retire an entry from the catalogue without deleting it.
+
+#### A DHP clinical service
+
+For a clinical service, add the `category` and `type`. Both are sliced on the coding `system`: the DHP slices use the `cancer-types-cs` system, with `category` carrying the service category and `type` the specific service. The `system` URI is what selects the slice, so it must match exactly:
+
+```json
+{
+  "resourceType": "HealthcareService",
+  "meta": {
+    "profile": ["https://dhp.uz/fhir/core/StructureDefinition/uz-core-healthcareservice"]
+  },
+  "active": true,
+  "name": "IHC-ga xos",
+  "category": [
+    {
+      "coding": [
+        { "system": "https://terminology.dhp.uz/fhir/core/CodeSystem/cancer-types-cs", "code": "cancr0013.00000" }
+      ]
+    }
+  ],
+  "type": [
+    {
+      "coding": [
+        { "system": "https://terminology.dhp.uz/fhir/core/CodeSystem/cancer-types-cs", "code": "cancr0013.00001" }
+      ]
+    }
+  ]
+}
+```
+
+The `category` and `type` codes are bound to national value sets (required binding) - the value must come from the bound value set, which the Snapshot view above lists. See [Terminology](general-guidance.html#terminology) for how the national code systems are sourced.
+
+#### A laboratory test in the catalogue
+
+When the service is a lab test, use the laboratory slices instead of the DHP slices - do not populate both. The lab `category` uses the `lab-categories-cs` system and the lab `type` uses the `observation-lab-research-codes-cs` system:
+
+```json
+{
+  "resourceType": "HealthcareService",
+  "meta": {
+    "profile": ["https://dhp.uz/fhir/core/StructureDefinition/uz-core-healthcareservice"]
+  },
+  "active": true,
+  "name": "Umumiy qon tahlili",
+  "category": [
+    {
+      "coding": [
+        { "system": "https://terminology.dhp.uz/fhir/core/CodeSystem/lab-categories-cs", "code": "lab-category-14" }
+      ]
+    }
+  ],
+  "type": [
+    {
+      "coding": [
+        { "system": "https://terminology.dhp.uz/fhir/core/CodeSystem/observation-lab-research-codes-cs", "code": "lab-A" }
+      ]
+    }
+  ]
+}
+```
+
+The lab `type` codes connect the catalogue entry to the laboratory result definitions, so a referral or order can resolve which test the service performs.
+
+#### Names in more than one language
+
+The platform serves Uzbek, Russian and Karakalpak. The `name` holds the authoritative Uzbek text; translations travel as a `translation` extension on the `_name` companion element (note the leading underscore - that is where FHIR puts extensions on a primitive). Each translation pairs a `lang` code with the translated `content`:
+
+```json
+"_name": {
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+      "extension": [
+        { "url": "lang", "valueCode": "ru" },
+        { "url": "content", "valueString": "ИГХ специфические" }
+      ]
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+      "extension": [
+        { "url": "lang", "valueCode": "kaa" },
+        { "url": "content", "valueString": "IHC ushın arnawlı" }
+      ]
+    }
+  ]
+}
+```
+
+This `_name` block sits alongside the plain `name` field in the same resource. Add one `translation` extension per language you hold.
+
 For example API calls and a sample payload, see the [Quick Start](#quick-start) at the bottom of this page.
