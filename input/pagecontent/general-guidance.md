@@ -2,7 +2,7 @@ Cross-cutting rules that apply across all UZ Core profiles. These answer the que
 
 ### Mandatory resource metadata {#metadata}
 
-Every resource exchanged on the platform must carry, in addition to its clinical content:
+Every resource exchanged on the platform must carry, in addition to its [clinical content](artifacts.html#structures-resource-profiles):
 
 - `meta.profile` - the canonical URL (with version) of the UZ Core profile the resource claims to conform to. This is how the server knows which rules to validate against.
 - `meta.lastUpdated` - when this version of the resource was last changed.
