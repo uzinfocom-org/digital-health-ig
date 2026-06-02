@@ -9,6 +9,13 @@ Description: "Uzbekistan Core HealthcareService profile, used to define healthca
 * ^publisher = "Uzinfocom"
 
 * active and category and type and name MS
+
+
+// Extension Turnaround Time
+* extension contains
+    TurnaroundTime named turnaroundTime 0..1 MS
+* extension[turnaroundTime] ^short = "Time from specimen receipt to result availability"
+
 * category.coding ^slicing.discriminator.type = #value
 * category.coding ^slicing.discriminator.path = "system"
 * category.coding ^slicing.rules = #open
@@ -58,6 +65,10 @@ InstanceOf: UZCoreHealthcareService
 Description: "Example of a healthcare service"
 Usage: #example
 * active = true
+
+// Example Turnaround Time
+* extension[turnaroundTime].valueDuration = 5 'h'
+
 * category.coding[dhpCategory]
   * code = #cancr0013.00000
 * type.coding[dhpService]
