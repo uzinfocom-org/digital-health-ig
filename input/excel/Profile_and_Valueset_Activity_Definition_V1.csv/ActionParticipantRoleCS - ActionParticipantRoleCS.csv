@@ -1,0 +1,5 @@
+Code,SNOMED,EN,UZ,RU,
+doctor,309343006,Doctor,Shifokor,Врач,
+professional nurse,106292003,Professional Nurse,Professional hamshira,Профессиональная медсестра,
+,,,,,
+,,,,,http://hl7.org/fhir/ValueSet/action-participant-role
