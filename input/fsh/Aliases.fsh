@@ -170,6 +170,16 @@ Alias: $action-condition-kind = http://hl7.org/fhir/action-condition-kind
 Alias: $action-relationship-type = http://hl7.org/fhir/action-relationship-type
 Alias: $ucum = http://unitsofmeasure.org
 Alias: $ucum-vs = http://hl7.org/fhir/ValueSet/ucum-units
+Alias: $ucum-common = http://hl7.org/fhir/ValueSet/ucum-common
+Alias: $referencerange-appliesto = http://hl7.org/fhir/ValueSet/referencerange-appliesto
 
 Alias: $adverse-event-actuality = http://hl7.org/fhir/adverse-event-actuality
 Alias: $adverse-event-seriousness = http://terminology.hl7.org/CodeSystem/adverse-event-seriousness
+
+Alias: $administrative-gender = http://hl7.org/fhir/administrative-gender
+Alias: $administrative-gender-cs = https://terminology.dhp.uz/fhir/core/CodeSystem/administrative-gender-cs
+Alias: $administrative-gender-vs = https://terminology.dhp.uz/fhir/core/ValueSet/administrative-gender-vs
+
+Alias: $observation-range-category = http://hl7.org/fhir/observation-range-category
+Alias: $observation-range-category-cs = https://terminology.dhp.uz/fhir/core/CodeSystem/observation-range-category-cs
+Alias: $observation-range-category-vs = https://terminology.dhp.uz/fhir/core/ValueSet/observation-range-category-vs
