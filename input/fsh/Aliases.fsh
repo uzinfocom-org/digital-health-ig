@@ -63,10 +63,10 @@ Alias: $issue-severity = http://hl7.org/fhir/issue-severity
 Alias: $location-status = http://hl7.org/fhir/location-status
 Alias: $location-unit = https://dhp.uz/fhir/core/NamingSystem/location-unit
 Alias: $loinc = http://loinc.org
+Alias: $loinc-vs = http://loinc.org/vs
 Alias: $markingID = https://mobile-api.aslbelgisi.uz/marking
 Alias: $medical-product-classification = http://www.whocc.no/atc
 Alias: $medication-status = http://hl7.org/fhir/CodeSystem/medication-status
-Alias: $medicine-identifier-types = https://terminology.dhp.uz/fhir/core/CodeSystem/medicine-identifier-type-cs
 Alias: $mfa = https://gov.uz/ru/mfa
 Alias: $militaryID = https://dhp.uz/fhir/core/sid/pid/uz/mi
 Alias: $mis-dmed-uz = https://mis.dmed.uz
@@ -180,3 +180,11 @@ Alias: $nationality-cs = https://terminology.dhp.uz/fhir/core/CodeSystem/nationa
 //find this link
 Alias: $version-algorithms = http://hl7.org/fhir/version-algorithm
 Alias: $resource-types = http://hl7.org/fhir/fhir-types
+
+
+Alias: $action-participant-type = http://hl7.org/fhir/action-participant-type
+Alias: $action-code = http://hl7.org/fhir/action-code
+Alias: $action-condition-kind = http://hl7.org/fhir/action-condition-kind
+Alias: $action-relationship-type = http://hl7.org/fhir/action-relationship-type
+Alias: $adverse-event-actuality = http://hl7.org/fhir/adverse-event-actuality
+Alias: $adverse-event-seriousness = http://terminology.hl7.org/CodeSystem/adverse-event-seriousness
