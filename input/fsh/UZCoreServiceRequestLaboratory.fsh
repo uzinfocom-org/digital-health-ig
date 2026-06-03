@@ -59,6 +59,7 @@ Description: "Example laboratory ServiceRequest instance for UZCore."
 * doNotPerform = false
 * code = lab-pan-cs#lab-pan-E "CBC panel"
 * subject = Reference(Patient/example-salim)
+* performer[0] = Reference(Organization/tashkent-diseases-hospital)
 * encounter = Reference(Encounter/example-encounter)
 * occurrenceDateTime = "2026-01-16T09:30:00+05:00"
 * authoredOn = "2026-01-16T09:10:00+05:00"
