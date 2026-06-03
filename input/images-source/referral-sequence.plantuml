@@ -21,7 +21,7 @@ else other financing
 end
 deactivate DHP
 
-Fac -> DHP : record Procedure / Observation\n(basedOn -> ServiceRequest)
+Fac -> DHP : record [[StructureDefinition-uz-core-procedure.html Procedure]] / [[StructureDefinition-uz-core-observation.html Observation]]\n(basedOn -> ServiceRequest)
 Fac -> DHP : final Task completed
 DHP -> DHP : ServiceRequest -> completed
 @enduml

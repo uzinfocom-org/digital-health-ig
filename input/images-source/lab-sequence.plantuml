@@ -12,13 +12,13 @@ DHP --> Clin : 201 Created - ServiceRequest/[id]
 deactivate DHP
 
 DHP -> Lab : order available
-Lab -> DHP : POST Specimen\n(request -> ServiceRequest)
+Lab -> DHP : POST [[StructureDefinition-uz-core-specimen.html Specimen]]\n(request -> ServiceRequest)
 activate DHP
 DHP --> Lab : 201 Created - Specimen/[id]
 deactivate DHP
 
 loop each analyte
-  Lab -> DHP : POST Observation\n(basedOn -> ServiceRequest, specimen -> Specimen)
+  Lab -> DHP : POST [[StructureDefinition-uz-core-observation.html Observation]]\n(basedOn -> ServiceRequest, specimen -> Specimen)
 end
 Lab -> DHP : POST DiagnosticReport\n(basedOn -> ServiceRequest, result -> Observations)
 note right of DHP : Best submitted as one\ntransaction Bundle

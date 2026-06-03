@@ -4,15 +4,15 @@ hide empty members
 skinparam linetype ortho
 title How UZ Core resources relate
 
-class Patient
-class EpisodeOfCare
-class Encounter
-class Condition
-class Observation
-class Procedure
+class Patient [[StructureDefinition-uz-core-patient.html{Open the UZ Core Patient profile}]] #E8F0FE
+class EpisodeOfCare [[StructureDefinition-uz-core-episodeofcare.html{Open the UZ Core EpisodeOfCare profile}]] #E8F0FE
+class Encounter [[StructureDefinition-uz-core-encounter.html{Open the UZ Core Encounter profile}]] #E8F0FE
+class Condition [[StructureDefinition-uz-core-condition.html{Open the UZ Core Condition profile}]] #E8F0FE
+class Observation [[StructureDefinition-uz-core-observation.html{Open the UZ Core Observation profile}]] #E8F0FE
+class Procedure [[StructureDefinition-uz-core-procedure.html{Open the UZ Core Procedure profile}]] #E8F0FE
 class MedicationRequest
 class Composition
-class Specimen
+class Specimen [[StructureDefinition-uz-core-specimen.html{Open the UZ Core Specimen profile}]] #E8F0FE
 class ServiceRequest
 
 Patient "1" o-- "0..*" EpisodeOfCare : « patient »
@@ -31,5 +31,7 @@ note as N
   Each label is the FHIR reference element on the
   child that points back to its parent.
   A diamond marks the "owning" resource.
+  Blue boxes are profiled in UZ Core and link to
+  their profile page; the rest are not yet profiled.
 end note
 @enduml
