@@ -4,18 +4,7 @@ Actors: Immunization Program Manager / Data Steward (maintains the schedule); th
 
 The chain:
 
-```
-PlanDefinition (national schedule)
-        │  + Patient demographics + Immunization history
-        ▼
-ImmunizationRecommendation (what this patient is due / overdue for)
-        │  clinician assesses & administers
-        ▼
-Immunization (the dose that was given - or why it wasn't)
-        │  if a reaction occurs
-        ▼
-AdverseEvent (+ Observation)
-```
+<div>{% include immunization-flow.svg %}</div><br clear="all"/>
 
 ### 1. The schedule as code
 

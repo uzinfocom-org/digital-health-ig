@@ -1,0 +1,35 @@
+@startuml resource-relationships
+hide circle
+hide empty members
+skinparam linetype ortho
+title How UZ Core resources relate
+
+class Patient
+class EpisodeOfCare
+class Encounter
+class Condition
+class Observation
+class Procedure
+class MedicationRequest
+class Composition
+class Specimen
+class ServiceRequest
+
+Patient "1" o-- "0..*" EpisodeOfCare : « patient »
+EpisodeOfCare "0..1" o-- "0..*" Encounter : « episodeOfCare »
+
+Encounter "1" o-- "0..*" Condition : « encounter »
+Encounter "1" o-- "0..*" Observation : « encounter »
+Encounter "1" o-- "0..*" Procedure : « encounter »
+Encounter "1" o-- "0..*" MedicationRequest : « encounter »
+Encounter "1" o-- "0..1" Composition : « encounter »
+
+Observation "0..*" --> "0..1" Specimen : « specimen »
+Specimen "0..*" --> "0..1" ServiceRequest : « request »
+
+note as N
+  Each label is the FHIR reference element on the
+  child that points back to its parent.
+  A diamond marks the "owning" resource.
+end note
+@enduml

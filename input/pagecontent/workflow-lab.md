@@ -2,17 +2,13 @@ This workflow shows how a laboratory test is ordered and how the result comes ba
 
 Actors: an ordering clinician; the laboratory (LIS); the platform (DHP).
 
+The sequence of interactions:
+
+<div>{% include lab-sequence.svg %}</div><br clear="all"/>
+
 The chain and its references:
 
-```
-ServiceRequest ──< Specimen ──> (Specimen.request → ServiceRequest)
-      ▲   ▲            ▲
-      │   │            └── Observation.specimen → Specimen
-      │   └────────────── Observation.basedOn → ServiceRequest
-      │
-DiagnosticReport.basedOn → ServiceRequest
-DiagnosticReport.result  → Observation
-```
+<div>{% include lab-references.svg %}</div><br clear="all"/>
 
 > Profile status: [Specimen](StructureDefinition-uz-core-specimen.html) and [Observation](StructureDefinition-uz-core-observation.html) are profiled in UZ Core. The ServiceRequest and DiagnosticReport profiles are in development - until they publish, use the base FHIR R5 resources with `meta.profile` omitted or set to the base resource, and follow the wiring below.
 
@@ -57,7 +53,7 @@ The whole set is best returned as one transaction Bundle so the order, specimen,
 
 ### Status and concurrency
 
-The `ServiceRequest.status` follows the order lifecycle (draft &rarr; active &rarr; completed, or revoked); `entered-in-error`/`unknown` are reserved for corrections. A cancellation moves an active order to `revoked` (with a note), and a completed order cannot be modified. Concurrent edits use optimistic concurrency (`409 Conflict` on a clash - re-read and retry).
+The `ServiceRequest.status` follows the order lifecycle (draft &rarr; active &rarr; completed, or revoked); `entered-in-error`/`unknown` are reserved for corrections. A cancellation moves an active order to `revoked` (with a note), and a completed order cannot be modified. Concurrent edits use optimistic concurrency - send the `ETag` from your last read as `If-Match`; a stale version is rejected with `412 Precondition Failed`. Re-read and retry - see [Concurrency](api-access.html#concurrency).
 
 ### Related
 

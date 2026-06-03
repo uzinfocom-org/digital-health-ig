@@ -6,6 +6,8 @@ This workflow shows how a referral is created and fulfilled. Referrals are where
 
 Actors: the referring clinician; approval commissions (for state-insurance referrals); the performing facility.
 
+<div>{% include referral-sequence.svg %}</div><br clear="all"/>
+
 ### 1. Create the referral
 
 The clinician creates a `ServiceRequest` (`intent = order`) carrying the referral classification: the service requested in `code`, urgency in `priority` (`routine` \| `urgent` \| `stat`), the target service via `HealthcareService`, the clinical justification in `reason`, and the financing type in a `coverageKind` extension (`state-insurance` \| `insurance` \| `self-payment` \| `other`).
@@ -47,6 +49,8 @@ The ServiceRequest and its Tasks stay consistent by these rules:
 | A commission Task `failed`/rejected | ServiceRequest set `revoked` |
 | Returned for revision | Task &rarr; `on-hold` / `in-review`; ServiceRequest &rarr; `on-hold`, then back to `active` with a new approval Task |
 | SLA breach | only `Task.businessStatus = overdue` - the ServiceRequest status does not change |
+
+<div>{% include referral-states.svg %}</div><br clear="all"/>
 
 The user-facing label is derived from the Task state - e.g. `businessStatus=overdue` &rarr; "Overdue", `status=requested` &rarr; "Awaiting acceptance", `status=rejected` &rarr; "Rejected".
 

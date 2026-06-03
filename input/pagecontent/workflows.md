@@ -26,14 +26,7 @@ A few rules apply to every workflow:
 
 Most clinical data hangs off the patient through a small number of reference patterns:
 
-```
-Patient ──< EpisodeOfCare ──< Encounter
-                                  │
-        ┌─────────────────┬───────┼───────────────┬──────────────┐
-   Condition         Observation  Procedure   MedicationRequest  Composition
-                          │
-                       Specimen ──> ServiceRequest
-```
+<div>{% include resource-relationships.svg %}</div><br clear="all"/>
 
 - A Patient has many Encounters (visits); related Encounters may be grouped into an EpisodeOfCare (an ongoing case).
 - Within an Encounter, clinicians record Conditions (diagnoses), Observations (results, vitals), Procedures, and MedicationRequests.

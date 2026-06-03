@@ -1,0 +1,17 @@
+@startuml lab-references
+hide circle
+hide empty members
+skinparam linetype ortho
+title Laboratory result - reference wiring
+
+class ServiceRequest
+class Specimen
+class Observation
+class DiagnosticReport
+
+Specimen --> ServiceRequest : « request »
+Observation --> ServiceRequest : « basedOn »
+Observation --> Specimen : « specimen »
+DiagnosticReport --> ServiceRequest : « basedOn »
+DiagnosticReport --> Observation : « result »
+@enduml
