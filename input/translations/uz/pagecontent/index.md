@@ -1,79 +1,78 @@
-# O'zbekiston Raqamli Sog'liqni Saqlash Platformasi
+# O'zbekiston yagona raqamli sog'liqni saqlash platformasi
 
-Ushbu FHIR R5 implementatsiya qo'llanmasi (IG) ishlab chiqish jarayonida bo'lib, hali ishlab chiqarish muhitida foydalanish uchun tayyor emas. U faqatgina [Digital Health Platform](https://www.kfw.de/About-KfW/Newsroom/Latest-News/Pressemitteilungen-Details_723328.html) (DHP) doirasida sinov va fikr-mulohazalarni yig'ish maqsadida mo'ljallangan. IG mazmuni ishlab chiqish davomida o'zgarishi mumkin.
+Ushbu FHIR R5 joriy etish qo'llanmasi (IG) ishlab chiqish jarayonida bo'lib, hozircha production muhitida foydalanish uchun tayyor emas. U faqat [Raqamli sog'liqni saqlash platformasi](https://www.kfw.de/About-KfW/Newsroom/Latest-News/Pressemitteilungen-Details_723328.html) (DHP) doirasida testdan o'tkazish va fikr-mulohazalarni yig'ish uchun mo'ljallangan. IG takomillashtirilishi davomida uning mazmuni o'zgarib boradi.
 
-Hozirgi ustuvor yo'nalish — DHP'da implementatsiyani ta'minlash uchun asosiy resurs profillarini yakunlash. Keyinchalik, modellashtirish imkoniyatlari kengaytirilgach, IG'ning qolgan matn qismi to'liq ishlab chiqiladi.
+Joriy ustuvor vazifa — asosiy resurslar profillarini DHPda joriy etishni ta'minlash uchun ularni avvalo yakunlash. Shundan so'ng, modellashtirish imkoniyatlari yetarli bo'lganda, IGning matnli qismining qolgan qismi to'ldiriladi.
 
 ### Kirish qismi
 
-Ushbu qo'llanma O'zbekiston Raqamli Sog'liqni Saqlash Platformasi doirasida FHIR'ni implementatsiya qilish uchun rasmiy hujjat bo'lib, mamlakat sog'liqni saqlash tizimining real sharoitlari, ehtiyojlari va xususiyatlariga moslashtirilgan.
+Ushbu qo'llanma O'zbekistonning Raqamli sog'liqni saqlash platformasi doirasida FHIRni joriy etish bo'yicha rasmiy hujjatlar manbai hisoblanadi hamda milliy sog'liqni saqlash tizimining real sharoitlari, ehtiyojlari va xususiyatlariga moslashtirilgan.
 
-Qo'llanma quyidagi yo'nalishlar uchun asos bo'lib xizmat qiladi:
+Qo'llanma quyidagilar uchun asos bo'lib xizmat qiladi:
 
-* O'zbekiston sharoitlariga moslashtirilgan UZ Core profillarini ishlab chiqish, bu FHIR resurslarini mahalliy ehtiyojlarga moslashtirish va respublika bo'yicha yagona raqamli sog'liqni saqlash infratuzilmasini yaratish uchun zarur asosni ta'minlaydi;
-  * bu moslashtirishlar umumiy identifikatorlarni modellashtirish, HL7 kod tizimlarining tarjimalari va barcha tizimlar tomonidan qo'llab-quvvatlanishi shart bo'lgan elementlarni belgilashni o'z ichiga oladi
+* FHIR resurslarini O'zbekistonning lokal ehtiyojlariga moslashtiradigan hamda respublikada raqamli sog'liqni saqlashni qo'llab-quvvatlash uchun yagona bazani yaratadigan UZ Core profillarini ishlab chiqish;
+  * bunday moslashtirishlar umumiy identifikatorlarni modellashtirish, HL7 kod tizimlari tarjimalari va barcha tizimlar tomonidan qo'llab-quvvatlanishi lozim bo'lgan elementlarni belgilashni o'z ichiga oladi
 
-* Ma'lum klinik yoki ma'muriy stsenariylarni qo'llab-quvvatlovchi maxsus profillarni ishlab chiqish;
-  * masalan, tug'ilish va o'limni ro'yxatga olish tizimlari;
+* Alohida klinik va ma'muriy jarayonlarni qo'llab-quvvatlaydigan muayyan ssenariylar uchun profillarni ishlab chiqish;
+  * masalan, tug'ilish va o'lim reyestrlari
 
-* Xalqaro va milliy tasnif hamda terminologiyalardan foydalanish — SNOMED CT, LOINC, ICD-10, ICD-11, CBPEPW-2020 va boshqalar.
+* Xalqaro va milliy klassifikatorlar hamda terminologiyalardan foydalanish (SNOMED-CT, LOINC, ICD-10, ICD-11, CBPEPW-2020).
 
-Ushbu Implementatsiya qo'llanmasidan foydalanish tibbiy ma'lumotlarni ifodalashda izchillikni ta'minlaydi, tizimlararo interoperabellikni oshiradi hamda kengaytiriladigan raqamli sog'liqni saqlash ekotizimini yaratish uchun mustahkam asos yaratadi.
+Ushbu IGdan foydalanish tibbiy ma'lumotlarni taqdim etishda izchillikni ta'minlaydi, tizimlar interoperabelligini oshiradi va raqamli sog'liqni saqlashning kengaytiriladigan ekotizimi uchun mustahkam poydevor yaratadi.
 
 ### Loyiha tarixi
 
-Raqamli sog'liqni saqlash platformasi (DHP) "Sog'liqni saqlash tizimini raqamlashtirish islohotini qo'llab-quvvatlash" loyihasi doirasida ishlab chiqilmoqda. Loyiha O'zbekiston Respublikasi va KfW Taraqqiyot banki o'rtasidagi [bitim](https://www.kfw.de/About-KfW/Newsroom/Latest-News/Pressemitteilungen-Details_723328.html) asosida amalga oshirilmoqda. Ushbu tashabbus O'zbekiston Respublikasi Prezidentining 2023-yil 1-maydagi PQ-140-son qarori ("Sog'liqni saqlash tizimini raqamlashtirish bo'yicha qo'shimcha chora-tadbirlar to'g'risida") va 2023-yil 28-dekabrdagi PQ-415-son qarori ("Sog'liqni saqlash tizimini raqamlashtirishni jadallashtirish va ilg'or raqamli texnologiyalarni joriy etish bo'yicha qo'shimcha chora-tadbirlar to'g'risida") bilan uyg'unlashgan.
+Raqamli sog'liqni saqlash platformasi (DHP) "Sog'liqni saqlashni raqamlashtirish islohotini qo'llab-quvvatlash" loyihasi doirasida ishlab chiqilmoqda. Loyiha O'zbekiston Respublikasi va KfW Taraqqiyot banki o'rtasidagi [kelishuv](https://www.kfw.de/About-KfW/Newsroom/Latest-News/Pressemitteilungen-Details_723328.html) asosida amalga oshiriladi. Ushbu tashabbus O'zbekiston Respublikasi Prezidentining 2023-yil 1-maydagi "Sog'liqni saqlash tizimini raqamlashtirish bo'yicha qo'shimcha chora-tadbirlar to'g'risida"gi PQ-140-son qarori hamda O'zbekiston Respublikasi Prezidentining 2023-yil 28-dekabrdagi "Sog'liqni saqlash tizimini raqamlashtirishni jadallashtirish va ilg'or raqamli texnologiyalarni joriy etish bo'yicha qo'shimcha chora-tadbirlar to'g'risida"gi PQ-415-son qaroriga muvofiq keladi.
 
 ### Qamrov sohalari
 
-O'zbekiston Respublikasi Raqamli Sog'liqni Saqlash Platformasi quyidagi 19 ta xizmat asosida tashkil etilgan:
+O'zbekiston Respublikasi Raqamli sog'liqni saqlash platformasi quyidagi 19 ta xizmatga asoslanadi:
 
-* Metama'lumotlar va xavfsizlikni boshqarish (MSM)
-* Asosiy ma'lumotlarni boshqarish (MDM)
-* Bemorni davolash jarayonini boshqarish
+* Metama'lumotlar va xavfsizlikni boshqarish
+* Asosiy ma'lumotlarni boshqarish
+* Bemorning sog'liqni saqlash marshrutini boshqarish
 * Elektron tibbiy yozuvlar
 * Yo'llanmalar
-* Retseptlar
-* Qabul va rejalashtirish
+* Retsept
+* Qabulga yozish va jadvalni boshqarish
 * Laboratoriya
 * Diagnostika va nurli vizualizatsiya
 * Tez tibbiy yordam
-* Tibbiy ta'minot
+* Ta'minot
 * Xarajatlarni qoplash
 * Klinik qarorlarni qo'llab-quvvatlash
 * Hamshiralik ishi
 * Qon resurslarini boshqarish
-* Emlashni boshqarish
+* Vaksinatsiyani boshqarish
 * Jamoat salomatligi bo'yicha hisobotlar
-* Skrining jadvalini boshqarish
+* Skrining jadvallarini boshqarish
 * Sifatni ta'minlash
 
 ### Versiyalarni aniqlash
 
-Ushbu Implementatsiya qo'llanmasida keltirilgan artefaktlar — profillar, kengaytmalar, kod tizimlari (CodeSystem), qiymatlar to'plamlari (ValueSet), nomlash tizimlari (NamingSystem) va FHIR paketlari — IG versiyasi bilan bir xil versiya raqamiga ega bo'ladi. IG versiyalash [Semantic Versioning (SemVer)](https://semver.org/) tamoyillariga asoslanadi va `MAJOR.MINOR.PATCH`formatida ifodalanadi. Masalan, agar IG versiyasi `2.0.0` bo'lsa, barcha artefaktlar ham `2.0.0` versiyasiga ega bo'ladi. Bu artefaktning qaysi IG versiyasiga tegishli ekanligini oson aniqlash imkonini beradi.
+Artefaktlar, masalan profillar, kengaytmalar, kod tizimlari, qiymatlar to'plamlari, nomlash tizimlari va ushbu IGdagi FHIR paketi IGning o'z versiyasiga amal qiladi. IGni versiyalash `MAJOR.MINOR.PATCH` formatidagi [Semantic Versioning (SemVer)](https://semver.org/) tamoyillariga asoslanadi. Masalan, IGning `2.0.0` versiyasidagi barcha artefaktlar bir xil `2.0.0` versiya raqamiga ega bo'ladi. Bu esa artefakt IGning qaysi versiyasiga tegishli ekanligini oson aniqlash imkonini beradi.
 
-Artefakt ishlab chiqish jarayonida bo'lib, ishlab chiqarish uchun tayyor bo'lmaguncha, `draft`maqomiga ega bo'ladi. Ishlab chiqarishga tayyor bo'lganda esa active holatiga o'tkaziladi. Agar artefakt bekor qilingan bo'lsa, uning holati `retired` bo'ladi.
+Artefakt ishlab chiqish jarayonida bo'lsa va production muhitida foydalanish uchun tayyor bo'lmasa, uning statusi `draft` bo'ladi. Artefakt production muhitida foydalanish uchun tayyor bo'lganda, uning statusi `active` deb belgilanadi. Artefakt foydalanishdan chiqarilganda, uning statusi `retired` bo'ladi.
 
-Haqiqiy muhitda artefaktlarni sinovdan o'tkazish uchun yetuklik (maturity) modeli kelajakda joriy etiladi, hozircha barcha artefaktlar `draft` maqomida hisoblanadi.
+Kelgusida artefaktlarni real sharoitlarda testdan o'tkazish uchun yetuklik modeli joriy etiladi, biroq hozircha barcha artefaktlar production muhitida foydalanish uchun tayyor bo'lmaguncha `draft` hisoblanadi.
 
-Versiyalashdan yagona istisno [THO](https://terminology.hl7.org) kod tizimlarining tarjima qo'shimchalari (supplement) bo'lib, ular asl tizim versiyasiga mos keladi. Masalan, agar THO kod tizimi versiyasi `2.1.0` bo'lsa, qo'shimcha ham `2.1.0` versiyasiga ega bo'ladi. Agar THO tizimi `2.2.0` versiyasiga yangilansa, qo'shimcha ham shunga mos ravishda yangilanadi. Agar qo'shimchani yangilash zarur bo'lib, lekin THO tizimining o'zi o'zgarmagan bo'lsa, versiyaga qo'shimcha raqam qo'shiladi — masalan, `2.2.0.1`.
+Versiyalashdan yagona istisno rasmiy [THO](https://terminology.hl7.org) kod tizimlarining tarjima qo'shimchalari bo'lib, ular asl kod tizimining versiyalash tartibiga amal qiladi. Masalan, agar THO kod tizimi versiyasi `2.1.0` bo'lsa, qo'shimcha ham, IG versiyasidan qat'i nazar, `2.1.0` bo'ladi. Agar THO kod tizimi `2.2.0` versiyasigacha yangilansa, qo'shimcha ham `2.2.0` versiyasigacha yangilanadi. Agar THO kod tizimi o'zgarmasdan turib qo'shimchani yangilash talab etilsa, qo'shimchaga qo'shimcha versiya raqami qo'shiladi, masalan `2.2.0.1`.
 
 #### IG'ning ishlab chiqish versiyasi: 0.x.x
-- IG holati: `draft`
-- Artefaktlar holati: `draft` with `experimental` flag set to `true`
-- Dastlabki ishlab chiqish va testlash bosqichlarida qo'llaniladi
-- Kichik versiyalar orasida o'zgarishlar bo'lishi mumkin
+- IG statusi: `draft`
+- Artefaktlar statusi: `experimental` bayrog'i `true` ga o'rnatilgan `draft`
+- Ishlab chiqish va testdan o'tkazishning dastlabki bosqichlarida foydalaniladi
+- Kichik versiyalar orasida mos kelmaydigan o'zgarishlar bo'lishi mumkin
 
 #### IG'ning ishlab chiqarish versiyalari: 1.x.x+
-- IG holati: `active`
-- Artefaktlar holati: `active` with `experimental` flag set to `false`
-- Birinchi barqaror versiya: 1.0.0
-- Qat'iy SemVer moslik qoidalariga amal qiladi
+- IG statusi: `active`
+- Artefaktlar statusi: `experimental` bayrog'i `false` ga o'rnatilgan `active`
+- Birinchi barqaror versiya 1.0.0 dan boshlanadi
+- SemVer moslik qoidalariga qat'iy rioya qilinadi
 
 #### IG'ning keyingi yirik versiyalari: 2.x.x, 3.x.x va hokazo
-- Ishlab chiqarish versiyalariga o'xshash
-- IG'ning ba'zi qismlarida katta o'zgarishlar yoki arxitektura yangilanishlarini bildiradi
+- Production versiyalariga o'xshash
+- IGning ayrim qismlarida mos kelmaydigan o'zgarishlar yoki sezilarli arxitektura yangilanishlarini bildiradi
 
 ### Intellektual mulk bayonotlari
 {% lang-fragment ip-statements.xhtml %}
-

@@ -1,0 +1,4 @@
+Code,EN,UZ,RU,,
+send-message,Send a message,Xabar yuborish,Отправить сообщение,,
+recommend-immunization,Recommend an immunization,Emlashni tavsiya qilish,Рекомендовать вакцинацию,,http://hl7.org/fhir/ValueSet/action-code
+  collect-information,Collect information,Ma’lumotlarni yig‘ish,Cбор информации,,
