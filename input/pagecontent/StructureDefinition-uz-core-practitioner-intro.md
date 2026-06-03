@@ -35,25 +35,24 @@ The base Practitioner has no mandatory elements, but a record is only useful wit
 ```json
 {
   "resourceType": "Practitioner",
-  "meta": {
-    "profile": ["https://dhp.uz/fhir/core/StructureDefinition/uz-core-practitioner"]
-  },
+  "meta": { "profile": [ "https://dhp.uz/fhir/core/StructureDefinition/uz-core-practitioner" ] },
   "identifier": [
     {
       "use": "official",
-      "type": { "coding": [{ "system": "http://terminology.hl7.org/CodeSystem/v2-0203", "code": "NI", "display": "National unique individual identifier" }] },
+      "type": {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+            "code": "NI",
+            "display": "National unique individual identifier"
+          }
+        ]
+      },
       "system": "https://dhp.uz/fhir/core/sid/pro/uz/argos",
       "value": "9876543210"
     }
   ],
-  "name": [
-    {
-      "use": "official",
-      "text": "Test Test Test",
-      "family": "Test",
-      "given": ["Test"]
-    }
-  ]
+  "name": [ { "use": "official", "text": "Test Test Test", "family": "Test", "given": [ "Test" ] } ]
 }
 ```
 
@@ -66,13 +65,19 @@ In practice you send the demographics the platform expects you to support: the `
 ```json
 {
   "resourceType": "Practitioner",
-  "meta": {
-    "profile": ["https://dhp.uz/fhir/core/StructureDefinition/uz-core-practitioner"]
-  },
+  "meta": { "profile": [ "https://dhp.uz/fhir/core/StructureDefinition/uz-core-practitioner" ] },
   "identifier": [
     {
       "use": "official",
-      "type": { "coding": [{ "system": "http://terminology.hl7.org/CodeSystem/v2-0203", "code": "NI", "display": "National unique individual identifier" }] },
+      "type": {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+            "code": "NI",
+            "display": "National unique individual identifier"
+          }
+        ]
+      },
       "system": "https://dhp.uz/fhir/core/sid/pro/uz/argos",
       "value": "9876543210"
     }
@@ -83,13 +88,11 @@ In practice you send the demographics the platform expects you to support: the `
       "use": "official",
       "text": "Test Test Test",
       "family": "Test",
-      "given": ["Test"],
-      "suffix": ["Test"]
+      "given": [ "Test" ],
+      "suffix": [ "Test" ]
     }
   ],
-  "telecom": [
-    { "system": "phone", "value": "975555555", "use": "mobile" }
-  ],
+  "telecom": [ { "system": "phone", "value": "975555555", "use": "mobile" } ],
   "gender": "female",
   "birthDate": "1985-05-06",
   "address": [
@@ -99,7 +102,7 @@ In practice you send the demographics the platform expects you to support: the `
       "country": "182",
       "district": "1703217",
       "city": "22070033",
-      "line": ["mahallasi Dilobod, Katortol ko'chasi, 9-uy, 15-xonadon"]
+      "line": [ "mahallasi Dilobod, Katortol ko'chasi, 9-uy, 15-xonadon" ]
     }
   ]
 }

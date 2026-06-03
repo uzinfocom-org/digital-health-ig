@@ -24,7 +24,14 @@ GET [base]/Questionnaire?context=...
 
 ```
 POST [base]/Questionnaire
-{ "resourceType": "Questionnaire", "meta": { "profile": [ "https://dhp.uz/fhir/core/StructureDefinition/uz-core-questionnaire" ] }, "status": "draft", "title": "...", "item": [ ... ], ... }
+{
+  "resourceType": "Questionnaire",
+  "meta": { "profile": [ "https://dhp.uz/fhir/core/StructureDefinition/uz-core-questionnaire" ] },
+  "status": "draft",
+  "title": "...",
+  "item": [ ... ],
+  ...
+}
 ```
 
 See the [CapabilityStatement](CapabilityStatement-DHPCapabilityStatement.html) for all supported search parameters.

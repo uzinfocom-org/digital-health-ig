@@ -26,36 +26,11 @@ This profile adds no mandatory cardinality of its own. The only required element
 
 ### Building the JSON, step by step
 
-The examples below go from the smallest instance the server will accept to a full allergy record with a reaction. Copy one and adapt it - every value shown validates against this profile. The complete reference instance is the [grass pollen allergy](AllergyIntolerance-example-grass-pollen-allergy.html).
-
-#### The smallest AllergyIntolerance you should send
-
-The only strictly mandatory element is `patient` - the person the allergy belongs to. In practice you always send more: the `code` naming the allergen, the `clinicalStatus` (active / inactive / resolved), and the `verificationStatus` (how confirmed it is). Every UZ Core resource must also name the profile it claims to conform to in `meta.profile`. Note that `clinicalStatus` and `verificationStatus` are `CodeableConcept` types, each carrying its own HL7 `system`:
-
-```json
-{
-  "resourceType": "AllergyIntolerance",
-  "meta": {
-    "profile": ["https://dhp.uz/fhir/core/StructureDefinition/uz-core-allergy-intolerance"]
-  },
-  "clinicalStatus": {
-    "coding": [{ "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical", "code": "active", "display": "Active" }]
-  },
-  "verificationStatus": {
-    "coding": [{ "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-verification", "code": "confirmed", "display": "Confirmed" }]
-  },
-  "code": {
-    "coding": [{ "system": "https://terminology.dhp.uz/fhir/core/CodeSystem/allergen-codes-cs", "code": "aller-0010-00001", "display": "Grass pollen" }]
-  },
-  "patient": { "reference": "Patient/example-salim" }
-}
-```
-
-The allergen `code` has an extensible binding to the DHP allergen value set, so its `system` is `allergen-codes-cs`. `patient` is a plain `Reference` to a [Patient](StructureDefinition-uz-core-patient.html).
+Start from the record below - every value validates against this profile, so copy it and adapt. The two snippets after it show the small additions for a reaction and for marking the allergy resolved. The complete reference instance is the [grass pollen allergy](AllergyIntolerance-example-grass-pollen-allergy.html).
 
 #### A realistic allergy record
 
-Add the `type` (allergy or intolerance - required binding), the `category` (food / medication / environment / biologic), the `encounter` it was recorded in, and when it started (`onset[x]`). Unlike the coded status fields, `category` in R5 is a plain `code` list, not a `CodeableConcept` - send the bare code only:
+The only strictly mandatory element is `patient`, but in practice you also send the allergen `code`, the `clinicalStatus` (active / inactive / resolved), the `verificationStatus` (how confirmed it is), the `type` (allergy or intolerance), the `category` (food / medication / environment / biologic), the `encounter` it was recorded in, and when it started (`onset[x]`). Every UZ Core resource also names the profile it claims in `meta.profile`. `clinicalStatus`, `verificationStatus`, and `type` are `CodeableConcept`s, each with its own HL7 `system`; `category` in R5 is a plain `code` list, so send the bare code:
 
 ```json
 {
@@ -64,17 +39,27 @@ Add the `type` (allergy or intolerance - required binding), the `category` (food
     "profile": ["https://dhp.uz/fhir/core/StructureDefinition/uz-core-allergy-intolerance"]
   },
   "clinicalStatus": {
-    "coding": [{ "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical", "code": "active", "display": "Active" }]
+    "coding": [{
+      "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical",
+      "code": "active"
+    }]
   },
   "verificationStatus": {
-    "coding": [{ "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-verification", "code": "confirmed", "display": "Confirmed" }]
+    "coding": [{
+      "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-verification",
+      "code": "confirmed"
+    }]
   },
   "type": {
-    "coding": [{ "system": "http://hl7.org/fhir/allergy-intolerance-type", "code": "allergy", "display": "Allergy" }]
+    "coding": [{ "system": "http://hl7.org/fhir/allergy-intolerance-type", "code": "allergy" }]
   },
   "category": ["environment"],
   "code": {
-    "coding": [{ "system": "https://terminology.dhp.uz/fhir/core/CodeSystem/allergen-codes-cs", "code": "aller-0010-00001", "display": "Grass pollen" }]
+    "coding": [{
+      "system": "https://terminology.dhp.uz/fhir/core/CodeSystem/allergen-codes-cs",
+      "code": "aller-0010-00001",
+      "display": "Grass pollen"
+    }]
   },
   "patient": { "reference": "Patient/example-salim" },
   "encounter": { "reference": "Encounter/example-encounter" },
@@ -82,60 +67,54 @@ Add the `type` (allergy or intolerance - required binding), the `category` (food
 }
 ```
 
-`type`, `category`, `clinicalStatus`, and `verificationStatus` each use a required binding - the value must come from the bound value set. `encounter` is a plain `Reference` to an [Encounter](StructureDefinition-uz-core-encounter.html).
+Each of `type`, `category`, `clinicalStatus`, and `verificationStatus` uses a required binding - the value must come from the bound value set. The allergen `code` has an extensible binding to the DHP allergen value set. `patient` and `encounter` are plain `Reference`s to a [Patient](StructureDefinition-uz-core-patient.html) and an [Encounter](StructureDefinition-uz-core-encounter.html).
 
 #### Recording a reaction
 
-When the allergy has caused a reaction, add a `reaction` entry. Each reaction carries a `severity` (mild / moderate / severe - required binding), one or more `manifestation` entries (what was observed), and optionally the `substance` that triggered this particular event. Watch the shapes: `manifestation` is a `CodeableReference`, so the coded value sits one level deeper under `concept`, whereas `substance` is a plain `CodeableConcept`:
+When the allergy has caused a reaction, add a `reaction` entry: a `severity` (mild / moderate / severe - required binding), one or more `manifestation` entries (what was observed), and optionally the `substance` that triggered this event. Watch the shapes - `manifestation` is a `CodeableReference`, so its coded value sits under `concept`, whereas `substance` is a plain `CodeableConcept`. This array slots into the resource above:
 
 ```json
 {
-  "reaction": [
-    {
-      "severity": "severe",
-      "manifestation": [
-        {
-          "concept": {
-            "coding": [{ "system": "https://terminology.dhp.uz/fhir/core/CodeSystem/allergy-reaction-manifestation-cs", "code": "aller-0006-00004", "display": "Shortness of breath" }]
-          }
-        }
-      ],
-      "substance": {
-        "coding": [{ "system": "https://terminology.dhp.uz/fhir/core/CodeSystem/allergy-reaction-substance-cs", "code": "aller-0010-00031", "display": "Walnut, pollen (Jug r_pollen)" }]
+  "reaction": [{
+    "severity": "severe",
+    "manifestation": [{
+      "concept": {
+        "coding": [{
+          "system": "https://terminology.dhp.uz/fhir/core/CodeSystem/allergy-reaction-manifestation-cs",
+          "code": "aller-0006-00004",
+          "display": "Shortness of breath"
+        }]
       }
+    }],
+    "substance": {
+      "coding": [{
+        "system": "https://terminology.dhp.uz/fhir/core/CodeSystem/allergy-reaction-substance-cs",
+        "code": "aller-0010-00031",
+        "display": "Walnut, pollen (Jug r_pollen)"
+      }]
     }
-  ]
+  }]
 }
 ```
 
-This `reaction` array slots into the same resource as the realistic record above. The per-reaction `substance` is the specific agent that triggered this event; it is a separate field from the top-level allergen `code`.
+The per-reaction `substance` is the specific agent that triggered this event - a separate field from the top-level allergen `code`.
 
 #### When the allergy is no longer active
 
-To mark an allergy as resolved, set `clinicalStatus` to `resolved` and add the abatement extension to record that it has settled. The abatement detail rides on the `allergyintolerance-abatement` extension (0..1) - here as a free-text `valueString`:
+To mark an allergy as resolved, set `clinicalStatus` to `resolved` and add the `allergyintolerance-abatement` extension (0..1) - here as a free-text `valueString`. Send these in place of the active `clinicalStatus` on the record above:
 
 ```json
 {
-  "resourceType": "AllergyIntolerance",
-  "meta": {
-    "profile": ["https://dhp.uz/fhir/core/StructureDefinition/uz-core-allergy-intolerance"]
-  },
   "clinicalStatus": {
-    "coding": [{ "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical", "code": "resolved", "display": "Resolved" }]
+    "coding": [{
+      "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical",
+      "code": "resolved"
+    }]
   },
-  "verificationStatus": {
-    "coding": [{ "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-verification", "code": "confirmed", "display": "Confirmed" }]
-  },
-  "code": {
-    "coding": [{ "system": "https://terminology.dhp.uz/fhir/core/CodeSystem/allergen-codes-cs", "code": "aller-0010-00001", "display": "Grass pollen" }]
-  },
-  "patient": { "reference": "Patient/example-salim" },
-  "extension": [
-    {
-      "url": "http://hl7.org/fhir/StructureDefinition/allergyintolerance-abatement",
-      "valueString": "Symptoms resolved after antihistamine course"
-    }
-  ]
+  "extension": [{
+    "url": "http://hl7.org/fhir/StructureDefinition/allergyintolerance-abatement",
+    "valueString": "Symptoms resolved after antihistamine course"
+  }]
 }
 ```
 

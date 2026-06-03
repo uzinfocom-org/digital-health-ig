@@ -23,7 +23,18 @@ GET [base]/AllergyIntolerance?patient=Patient/[id]&code=http://snomed.info/sct%7
 
 ```
 POST [base]/AllergyIntolerance
-{ "resourceType": "AllergyIntolerance", "meta": { "profile": [ "https://dhp.uz/fhir/core/StructureDefinition/uz-core-allergy-intolerance" ] }, "clinicalStatus": { ... }, "verificationStatus": { ... }, "type": "allergy", "category": [ "environment" ], "code": { ... }, "patient": { "reference": "Patient/[id]" } }
+{
+  "resourceType": "AllergyIntolerance",
+  "meta": {
+    "profile": [ "https://dhp.uz/fhir/core/StructureDefinition/uz-core-allergy-intolerance" ]
+  },
+  "clinicalStatus": { ... },
+  "verificationStatus": { ... },
+  "type": { "coding": [ { "code": "allergy" } ] },
+  "category": [ "environment" ],
+  "code": { ... },
+  "patient": { "reference": "Patient/[id]" }
+}
 ```
 
 **Update** (e.g. mark `resolved`, or confirm a previously `unconfirmed` allergy) - PUT the full resource back with the new status:

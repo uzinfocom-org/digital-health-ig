@@ -34,17 +34,33 @@ A recommendation needs the `patient` it is for, the `date` it was created, and a
 {
   "resourceType": "ImmunizationRecommendation",
   "meta": {
-    "profile": ["https://dhp.uz/fhir/core/StructureDefinition/uz-core-immunization-recommendation"]
+    "profile": [
+      "https://dhp.uz/fhir/core/StructureDefinition/uz-core-immunization-recommendation"
+    ]
   },
   "patient": { "reference": "Patient/example-emma" },
   "date": "2025-08-01T10:00:00+05:00",
   "recommendation": [
     {
       "vaccineCode": [
-        { "coding": [{ "system": "http://hl7.org/fhir/sid/cvx", "code": "03", "display": "measles, mumps and rubella virus vaccine" }] }
+        {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/sid/cvx",
+              "code": "03",
+              "display": "measles, mumps and rubella virus vaccine"
+            }
+          ]
+        }
       ],
       "forecastStatus": {
-        "coding": [{ "system": "http://terminology.hl7.org/CodeSystem/immunization-recommendation-status", "code": "due", "display": "Due" }]
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/immunization-recommendation-status",
+            "code": "due",
+            "display": "Due"
+          }
+        ]
       }
     }
   ]
@@ -61,7 +77,9 @@ In practice the engine emits much more: the responsible `authority` organization
 {
   "resourceType": "ImmunizationRecommendation",
   "meta": {
-    "profile": ["https://dhp.uz/fhir/core/StructureDefinition/uz-core-immunization-recommendation"]
+    "profile": [
+      "https://dhp.uz/fhir/core/StructureDefinition/uz-core-immunization-recommendation"
+    ]
   },
   "patient": { "reference": "Patient/example-emma" },
   "date": "2025-08-01T10:00:00+05:00",
@@ -69,20 +87,50 @@ In practice the engine emits much more: the responsible `authority` organization
   "recommendation": [
     {
       "vaccineCode": [
-        { "coding": [{ "system": "http://hl7.org/fhir/sid/cvx", "code": "03", "display": "measles, mumps and rubella virus vaccine" }] }
+        {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/sid/cvx",
+              "code": "03",
+              "display": "measles, mumps and rubella virus vaccine"
+            }
+          ]
+        }
       ],
       "targetDisease": [
-        { "coding": [{ "system": "http://snomed.info/sct", "code": "14189004", "display": "Measles" }] }
+        {
+          "coding": [
+            { "system": "http://snomed.info/sct", "code": "14189004", "display": "Measles" }
+          ]
+        }
       ],
       "forecastStatus": {
-        "coding": [{ "system": "http://terminology.hl7.org/CodeSystem/immunization-recommendation-status", "code": "due", "display": "Due" }]
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/immunization-recommendation-status",
+            "code": "due",
+            "display": "Due"
+          }
+        ]
       },
       "forecastReason": [
-        { "coding": [{ "system": "http://snomed.info/sct", "code": "77386006", "display": "Pregnancy" }] }
+        {
+          "coding": [
+            { "system": "http://snomed.info/sct", "code": "77386006", "display": "Pregnancy" }
+          ]
+        }
       ],
       "dateCriterion": [
         {
-          "code": { "coding": [{ "system": "http://loinc.org", "code": "30981-5", "display": "Earliest date to give" }] },
+          "code": {
+            "coding": [
+              {
+                "system": "http://loinc.org",
+                "code": "30981-5",
+                "display": "Earliest date to give"
+              }
+            ]
+          },
           "value": "2025-08-10T09:00:00+05:00"
         }
       ],
@@ -90,12 +138,8 @@ In practice the engine emits much more: the responsible `authority` organization
       "series": "Routine measles immunization series",
       "doseNumber": "1",
       "seriesDoses": "2",
-      "supportingImmunization": [
-        { "reference": "Immunization/example-measles-immunization" }
-      ],
-      "supportingPatientInformation": [
-        { "reference": "Condition/example-pregnancy" }
-      ]
+      "supportingImmunization": [ { "reference": "Immunization/example-measles-immunization" } ],
+      "supportingPatientInformation": [ { "reference": "Condition/example-pregnancy" } ]
     }
   ]
 }

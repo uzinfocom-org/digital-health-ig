@@ -25,7 +25,11 @@ GET [base]/Patient?name=Salim&gender=male
 
 ```
 POST [base]/Patient
-{ "resourceType": "Patient", "meta": { "profile": [ "https://dhp.uz/fhir/core/StructureDefinition/uz-core-patient" ] }, ... }
+{
+  "resourceType": "Patient",
+  "meta": { "profile": [ "https://dhp.uz/fhir/core/StructureDefinition/uz-core-patient" ] },
+  ...
+}
 ```
 
 **Update a patient** (e.g. correct demographics or change the active flag)

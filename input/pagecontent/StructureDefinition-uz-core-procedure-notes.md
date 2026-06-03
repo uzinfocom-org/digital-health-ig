@@ -24,7 +24,15 @@ GET [base]/Procedure?performer=Practitioner/[id]
 
 ```
 POST [base]/Procedure
-{ "resourceType": "Procedure", "meta": { "profile": [ "https://dhp.uz/fhir/core/StructureDefinition/uz-core-procedure" ] }, "status": "completed", "code": { ... }, "subject": { "reference": "Patient/[id]" }, "encounter": { "reference": "Encounter/[id]" }, ... }
+{
+  "resourceType": "Procedure",
+  "meta": { "profile": [ "https://dhp.uz/fhir/core/StructureDefinition/uz-core-procedure" ] },
+  "status": "completed",
+  "code": { ... },
+  "subject": { "reference": "Patient/[id]" },
+  "encounter": { "reference": "Encounter/[id]" },
+  ...
+}
 ```
 
 **Update** (e.g. move from `in-progress` to `completed`, or record an `outcome`) - PUT the full resource back with the new values:

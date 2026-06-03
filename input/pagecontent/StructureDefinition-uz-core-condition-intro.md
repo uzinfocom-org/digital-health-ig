@@ -88,31 +88,57 @@ A fuller record adds the Must-Support elements that classify and attribute the c
 ```json
 {
   "resourceType": "Condition",
-  "meta": {
-    "profile": ["https://dhp.uz/fhir/core/StructureDefinition/uz-core-condition"]
-  },
+  "meta": { "profile": [ "https://dhp.uz/fhir/core/StructureDefinition/uz-core-condition" ] },
   "extension": [
     {
       "url": "https://dhp.uz/fhir/core/StructureDefinition/diagnosis-type",
       "valueCodeableConcept": {
-        "coding": [{ "system": "https://terminology.dhp.uz/fhir/core/CodeSystem/diagnosis-type-cs", "code": "gencl-0001-00003", "display": "Main diagnosis" }]
+        "coding": [
+          {
+            "system": "https://terminology.dhp.uz/fhir/core/CodeSystem/diagnosis-type-cs",
+            "code": "gencl-0001-00003",
+            "display": "Main diagnosis"
+          }
+        ]
       }
     }
   ],
   "clinicalStatus": {
-    "coding": [{ "system": "http://terminology.hl7.org/CodeSystem/condition-clinical", "code": "active", "display": "Active" }]
+    "coding": [
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+        "code": "active",
+        "display": "Active"
+      }
+    ]
   },
   "verificationStatus": {
-    "coding": [{ "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status", "code": "confirmed", "display": "Confirmed" }]
+    "coding": [
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+        "code": "confirmed",
+        "display": "Confirmed"
+      }
+    ]
   },
   "severity": {
-    "coding": [{ "system": "http://snomed.info/sct", "code": "255604002", "display": "Mild" }]
+    "coding": [ { "system": "http://snomed.info/sct", "code": "255604002", "display": "Mild" } ]
   },
   "code": {
-    "coding": [{ "system": "http://snomed.info/sct", "code": "254837009", "display": "Malignant neoplasm of breast" }]
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "254837009",
+        "display": "Malignant neoplasm of breast"
+      }
+    ]
   },
   "bodySite": [
-    { "coding": [{ "system": "http://snomed.info/sct", "code": "76752008", "display": "Breast structure" }] }
+    {
+      "coding": [
+        { "system": "http://snomed.info/sct", "code": "76752008", "display": "Breast structure" }
+      ]
+    }
   ],
   "subject": { "reference": "Patient/example-emma" },
   "onsetDateTime": "2025-08-15",
@@ -121,7 +147,13 @@ A fuller record adds the Must-Support elements that classify and attribute the c
     {
       "actor": { "reference": "Practitioner/example-practitioner" },
       "function": {
-        "coding": [{ "system": "http://terminology.hl7.org/CodeSystem/provenance-participant-type", "code": "author", "display": "Author" }]
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/provenance-participant-type",
+            "code": "author",
+            "display": "Author"
+          }
+        ]
       }
     }
   ]
@@ -137,20 +169,38 @@ When the `code` is the SNOMED *Disability* concept (`21134002`), the profile **r
 ```json
 {
   "resourceType": "Condition",
-  "meta": {
-    "profile": ["https://dhp.uz/fhir/core/StructureDefinition/uz-core-condition"]
-  },
+  "meta": { "profile": [ "https://dhp.uz/fhir/core/StructureDefinition/uz-core-condition" ] },
   "clinicalStatus": {
-    "coding": [{ "system": "http://terminology.hl7.org/CodeSystem/condition-clinical", "code": "active", "display": "Active" }]
+    "coding": [
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+        "code": "active",
+        "display": "Active"
+      }
+    ]
   },
   "verificationStatus": {
-    "coding": [{ "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status", "code": "confirmed", "display": "Confirmed" }]
+    "coding": [
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+        "code": "confirmed",
+        "display": "Confirmed"
+      }
+    ]
   },
   "code": {
-    "coding": [{ "system": "http://snomed.info/sct", "code": "21134002", "display": "Disability" }]
+    "coding": [
+      { "system": "http://snomed.info/sct", "code": "21134002", "display": "Disability" }
+    ]
   },
   "severity": {
-    "coding": [{ "system": "https://terminology.dhp.uz/fhir/core/CodeSystem/disability-cs", "code": "regis0011.00001", "display": "I guruh" }]
+    "coding": [
+      {
+        "system": "https://terminology.dhp.uz/fhir/core/CodeSystem/disability-cs",
+        "code": "regis0011.00001",
+        "display": "I guruh"
+      }
+    ]
   },
   "subject": { "reference": "Patient/example-salim" },
   "onsetDateTime": "2020-03-10",

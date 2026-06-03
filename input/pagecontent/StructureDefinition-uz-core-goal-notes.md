@@ -23,7 +23,14 @@ GET [base]/Goal?patient=Patient/[id]&description=http://snomed.info/sct%7C120100
 
 ```
 POST [base]/Goal
-{ "resourceType": "Goal", "meta": { "profile": [ "https://dhp.uz/fhir/core/StructureDefinition/uz-core-goal" ] }, "lifecycleStatus": "active", "description": { ... }, "subject": { "reference": "Patient/[id]" }, ... }
+{
+  "resourceType": "Goal",
+  "meta": { "profile": [ "https://dhp.uz/fhir/core/StructureDefinition/uz-core-goal" ] },
+  "lifecycleStatus": "active",
+  "description": { ... },
+  "subject": { "reference": "Patient/[id]" },
+  ...
+}
 ```
 
 **Withdraw a goal** - a Goal is never hard-deleted. PUT the full resource back with an updated `lifecycleStatus` (e.g. `cancelled` or `completed`) instead of calling `DELETE`:

@@ -30,7 +30,11 @@ GET [base]/Immunization?performer=Practitioner/[id]
 
 ```
 POST [base]/Immunization
-{ "resourceType": "Immunization", "meta": { "profile": [ "https://dhp.uz/fhir/core/StructureDefinition/uz-core-immunization" ] }, ... }
+{
+  "resourceType": "Immunization",
+  "meta": { "profile": [ "https://dhp.uz/fhir/core/StructureDefinition/uz-core-immunization" ] },
+  ...
+}
 ```
 
 Before creating, check that no record already exists for the same patient + vaccine code + occurrence + lot number, so the dose is not recorded twice.
@@ -40,7 +44,12 @@ Before creating, check that no record already exists for the same patient + vacc
 ```
 PUT [base]/Immunization/[id]
 If-Match: W/"3"   # the ETag from your last read; 412 if it changed since
-{ "resourceType": "Immunization", "id": "[id]", "meta": { "profile": [ "https://dhp.uz/fhir/core/StructureDefinition/uz-core-immunization" ] }, ... }
+{
+  "resourceType": "Immunization",
+  "id": "[id]",
+  "meta": { "profile": [ "https://dhp.uz/fhir/core/StructureDefinition/uz-core-immunization" ] },
+  ...
+}
 ```
 
 ### Related

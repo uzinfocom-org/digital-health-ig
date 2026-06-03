@@ -29,7 +29,11 @@ GET [base]/PlanDefinition?context-type-value=focus$http://snomed.info/sct%7C1418
 
 ```
 POST [base]/PlanDefinition
-{ "resourceType": "PlanDefinition", "meta": { "profile": [ "https://dhp.uz/fhir/core/StructureDefinition/uz-core-plan-definition" ] }, ... }
+{
+  "resourceType": "PlanDefinition",
+  "meta": { "profile": [ "https://dhp.uz/fhir/core/StructureDefinition/uz-core-plan-definition" ] },
+  ...
+}
 ```
 
 Before activating, confirm the schedule passes validation (no dose-sequence gaps, no impossible timing windows) and that no other version is already active for the same scope.
@@ -39,7 +43,12 @@ Before activating, confirm the schedule passes validation (no dose-sequence gaps
 ```
 PUT [base]/PlanDefinition/[id]
 If-Match: W/"3"   # the ETag from your last read; 412 if it changed since
-{ "resourceType": "PlanDefinition", "id": "[id]", "meta": { "profile": [ "https://dhp.uz/fhir/core/StructureDefinition/uz-core-plan-definition" ] }, ... }
+{
+  "resourceType": "PlanDefinition",
+  "id": "[id]",
+  "meta": { "profile": [ "https://dhp.uz/fhir/core/StructureDefinition/uz-core-plan-definition" ] },
+  ...
+}
 ```
 
 ### Related

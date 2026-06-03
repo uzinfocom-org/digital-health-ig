@@ -23,7 +23,14 @@ GET [base]/EpisodeOfCare?care-manager=Practitioner/[id]
 
 ```
 POST [base]/EpisodeOfCare
-{ "resourceType": "EpisodeOfCare", "meta": { "profile": [ "https://dhp.uz/fhir/core/StructureDefinition/uz-core-episodeofcare" ] }, "status": "active", "patient": { "reference": "Patient/[id]" }, "managingOrganization": { "reference": "Organization/[id]" }, ... }
+{
+  "resourceType": "EpisodeOfCare",
+  "meta": { "profile": [ "https://dhp.uz/fhir/core/StructureDefinition/uz-core-episodeofcare" ] },
+  "status": "active",
+  "patient": { "reference": "Patient/[id]" },
+  "managingOrganization": { "reference": "Organization/[id]" },
+  ...
+}
 ```
 
 **Update** (e.g. close the episode by setting `status` to `finished` and `period.end`, or transfer it to another `managingOrganization`) - PUT the full resource back:

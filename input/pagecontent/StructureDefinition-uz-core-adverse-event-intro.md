@@ -53,7 +53,7 @@ For a real event that reached the patient, fill in when it happened (`occurrence
 ```json
 {
   "resourceType": "AdverseEvent",
-  "meta": { "profile": ["https://dhp.uz/fhir/core/StructureDefinition/uz-core-adverse-event"] },
+  "meta": { "profile": [ "https://dhp.uz/fhir/core/StructureDefinition/uz-core-adverse-event" ] },
   "status": "completed",
   "actuality": "actual",
   "subject": { "reference": "Patient/example-david" },
@@ -61,30 +61,48 @@ For a real event that reached the patient, fill in when it happened (`occurrence
   "occurrenceDateTime": "2026-04-30T10:30:00+05:00",
   "detected": "2026-04-30T10:45:00+05:00",
   "recordedDate": "2026-04-30T11:15:00+05:00",
-  "resultingEffect": [
-    { "reference": "Condition/example-anaphylaxis" }
-  ],
+  "resultingEffect": [ { "reference": "Condition/example-anaphylaxis" } ],
   "location": { "reference": "Location/example-location" },
   "seriousness": {
-    "coding": [{ "system": "http://terminology.hl7.org/CodeSystem/adverse-event-seriousness", "code": "serious", "display": "Serious" }]
+    "coding": [
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/adverse-event-seriousness",
+        "code": "serious",
+        "display": "Serious"
+      }
+    ]
   },
   "outcome": [
-    { "coding": [{ "system": "http://snomed.info/sct", "code": "405535005", "display": "Adverse incident resulting in death" }] }
+    {
+      "coding": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "405535005",
+          "display": "Adverse incident resulting in death"
+        }
+      ]
+    }
   ],
   "recorder": { "reference": "Practitioner/example-practitioner" },
   "participant": [
     {
       "function": {
-        "coding": [{ "system": "http://terminology.hl7.org/CodeSystem/v3-ParticipationType", "code": "AUT", "display": "author (originator)" }]
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v3-ParticipationType",
+            "code": "AUT",
+            "display": "author (originator)"
+          }
+        ]
       },
       "actor": { "reference": "Practitioner/example-practitioner" }
     }
   ],
-  "suspectEntity": [
-    { "instanceReference": { "reference": "Medication/example-amoxicillin" } }
-  ],
+  "suspectEntity": [ { "instanceReference": { "reference": "Medication/example-amoxicillin" } } ],
   "note": [
-    { "text": "Patient developed anaphylaxis shortly after amoxicillin administration and died despite resuscitation efforts." }
+    {
+      "text": "Patient developed anaphylaxis shortly after amoxicillin administration and died despite resuscitation efforts."
+    }
   ]
 }
 ```
@@ -98,7 +116,7 @@ An intercepted event that never reached the patient is recorded the same way, bu
 ```json
 {
   "resourceType": "AdverseEvent",
-  "meta": { "profile": ["https://dhp.uz/fhir/core/StructureDefinition/uz-core-adverse-event"] },
+  "meta": { "profile": [ "https://dhp.uz/fhir/core/StructureDefinition/uz-core-adverse-event" ] },
   "status": "in-progress",
   "actuality": "potential",
   "subject": { "reference": "Patient/example-salim" },
@@ -108,14 +126,20 @@ An intercepted event that never reached the patient is recorded the same way, bu
   "recordedDate": "2026-04-30T11:15:00+05:00",
   "location": { "reference": "Location/example-location-1" },
   "seriousness": {
-    "coding": [{ "system": "http://terminology.hl7.org/CodeSystem/adverse-event-seriousness", "code": "serious", "display": "Serious" }]
+    "coding": [
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/adverse-event-seriousness",
+        "code": "serious",
+        "display": "Serious"
+      }
+    ]
   },
   "recorder": { "reference": "Practitioner/example-practitioner" },
-  "suspectEntity": [
-    { "instanceReference": { "reference": "Medication/example-prednisone" } }
-  ],
+  "suspectEntity": [ { "instanceReference": { "reference": "Medication/example-prednisone" } } ],
   "note": [
-    { "text": "Prednisone was ordered despite a documented contraindication. The order was flagged by clinical decision support and intercepted by the pharmacist before administration, so no dose reached the patient. Investigation in progress." }
+    {
+      "text": "Prednisone ordered despite a documented contraindication; pharmacy intercepted it before it reached the patient."
+    }
   ]
 }
 ```

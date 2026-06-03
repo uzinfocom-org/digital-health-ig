@@ -91,27 +91,49 @@ In practice you send the full picture: every identifier the organization holds, 
 ```json
 {
   "resourceType": "Organization",
-  "meta": {
-    "profile": ["https://dhp.uz/fhir/core/StructureDefinition/uz-core-organization"]
-  },
+  "meta": { "profile": [ "https://dhp.uz/fhir/core/StructureDefinition/uz-core-organization" ] },
   "active": true,
   "name": "Respublika onkologiya markazi",
   "identifier": [
     {
       "use": "official",
-      "type": { "coding": [{ "system": "http://terminology.hl7.org/CodeSystem/v2-0203", "code": "TAX", "display": "Tax ID number" }] },
+      "type": {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+            "code": "TAX",
+            "display": "Tax ID number"
+          }
+        ]
+      },
       "system": "https://dhp.uz/fhir/core/sid/org/uz/soliq",
       "value": "200935935"
     },
     {
       "use": "official",
-      "type": { "coding": [{ "system": "http://terminology.hl7.org/CodeSystem/v2-0203", "code": "XX", "display": "Organization Identifier" }] },
+      "type": {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+            "code": "XX",
+            "display": "Organization Identifier"
+          }
+        ]
+      },
       "system": "https://dhp.uz/fhir/core/sid/org/uz/argos",
       "value": "9512"
     },
     {
       "use": "official",
-      "type": { "coding": [{ "system": "http://terminology.hl7.org/CodeSystem/v2-0203", "code": "NIIP", "display": "National Insurance Payor Identifier (Payor)" }] },
+      "type": {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+            "code": "NIIP",
+            "display": "National Insurance Payor Identifier (Payor)"
+          }
+        ]
+      },
       "system": "https://dhp.uz/fhir/core/sid/org/uz/shif",
       "value": "OAA000024",
       "period": { "start": "2024-01-15" }
@@ -120,12 +142,36 @@ In practice you send the full picture: every identifier the organization holds, 
   "type": [
     {
       "coding": [
-        { "system": "https://terminology.dhp.uz/fhir/core/CodeSystem/organization-types-uz-cs", "code": "I", "display": "Boshqaruv boyicha taqsimlanishi" },
-        { "system": "https://terminology.dhp.uz/fhir/core/CodeSystem/organizational-subordination-group-cs", "code": "I_1", "display": "Respublika tassarufidagi muassasalari" },
-        { "system": "https://terminology.dhp.uz/fhir/core/CodeSystem/nomenclature-group-cs", "code": "II_100", "display": "Shifoxona muassasalari" },
-        { "system": "https://terminology.dhp.uz/fhir/core/CodeSystem/organizational-structure-cs", "code": "110", "display": "Ixtisoslashtirilgan ilmiy-amaliy tibbiyot markazi" },
-        { "system": "https://terminology.dhp.uz/fhir/core/CodeSystem/organizational-service-group-cs", "code": "III_100", "display": "Poliklinika bo'limi va statsionar bo'limi mavjud" },
-        { "system": "https://terminology.dhp.uz/fhir/core/CodeSystem/organizational-specialization-cs", "code": "145.0", "display": "Kattalar onkologiyasi" }
+        {
+          "system": "https://terminology.dhp.uz/fhir/core/CodeSystem/organization-types-uz-cs",
+          "code": "I",
+          "display": "Boshqaruv boyicha taqsimlanishi"
+        },
+        {
+          "system": "https://terminology.dhp.uz/fhir/core/CodeSystem/organizational-subordination-group-cs",
+          "code": "I_1",
+          "display": "Respublika tassarufidagi muassasalari"
+        },
+        {
+          "system": "https://terminology.dhp.uz/fhir/core/CodeSystem/nomenclature-group-cs",
+          "code": "II_100",
+          "display": "Shifoxona muassasalari"
+        },
+        {
+          "system": "https://terminology.dhp.uz/fhir/core/CodeSystem/organizational-structure-cs",
+          "code": "110",
+          "display": "Ixtisoslashtirilgan ilmiy-amaliy tibbiyot markazi"
+        },
+        {
+          "system": "https://terminology.dhp.uz/fhir/core/CodeSystem/organizational-service-group-cs",
+          "code": "III_100",
+          "display": "Poliklinika bo'limi va statsionar bo'limi mavjud"
+        },
+        {
+          "system": "https://terminology.dhp.uz/fhir/core/CodeSystem/organizational-specialization-cs",
+          "code": "145.0",
+          "display": "Kattalar onkologiyasi"
+        }
       ]
     }
   ],
@@ -137,7 +183,7 @@ In practice you send the full picture: every identifier the organization holds, 
         { "system": "url", "value": "https://cancercenter.uz" }
       ],
       "address": {
-        "line": ["Farobiy ko'chasi, 383"],
+        "line": [ "Farobiy ko'chasi, 383" ],
         "state": "1726",
         "district": "1726269",
         "country": "UZ"

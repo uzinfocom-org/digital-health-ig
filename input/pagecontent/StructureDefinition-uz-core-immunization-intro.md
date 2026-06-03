@@ -39,10 +39,16 @@ Four elements are mandatory: `status`, `vaccineCode`, `patient`, and an `occurre
 ```json
 {
   "resourceType": "Immunization",
-  "meta": { "profile": ["https://dhp.uz/fhir/core/StructureDefinition/uz-core-immunization"] },
+  "meta": { "profile": [ "https://dhp.uz/fhir/core/StructureDefinition/uz-core-immunization" ] },
   "status": "completed",
   "vaccineCode": {
-    "coding": [{ "system": "http://snomed.info/sct", "code": "150971000119104", "display": "Measles, mumps and rubella vaccination given (situation)" }]
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "150971000119104",
+        "display": "Measles, mumps and rubella vaccination given (situation)"
+      }
+    ]
   },
   "patient": { "reference": "Patient/example-emma" },
   "occurrenceDateTime": "2024-01-10"

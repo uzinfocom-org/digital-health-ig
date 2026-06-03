@@ -27,7 +27,15 @@ GET [base]/Observation?patient=Patient/[id]&value-concept=http://snomed.info/sct
 
 ```
 POST [base]/Observation
-{ "resourceType": "Observation", "meta": { "profile": [ "https://dhp.uz/fhir/core/StructureDefinition/uz-core-observation" ] }, "status": "final", "category": [ ... ], "code": { ... }, "subject": { "reference": "Patient/[id]" }, "valueQuantity": { ... } }
+{
+  "resourceType": "Observation",
+  "meta": { "profile": [ "https://dhp.uz/fhir/core/StructureDefinition/uz-core-observation" ] },
+  "status": "final",
+  "category": [ ... ],
+  "code": { ... },
+  "subject": { "reference": "Patient/[id]" },
+  "valueQuantity": { ... }
+}
 ```
 
 **Update** (e.g. promote `preliminary` to `final`, or `final` to `amended`) - PUT the full resource back with the new `status`:

@@ -21,7 +21,11 @@ GET [base]/Location?type=ONCL
 
 ```
 POST [base]/Location
-{ "resourceType": "Location", "meta": { "profile": [ "https://dhp.uz/fhir/core/StructureDefinition/uz-core-location" ] }, ... }
+{
+  "resourceType": "Location",
+  "meta": { "profile": [ "https://dhp.uz/fhir/core/StructureDefinition/uz-core-location" ] },
+  ...
+}
 ```
 
 **Update an existing location**
@@ -29,7 +33,12 @@ POST [base]/Location
 ```
 PUT [base]/Location/[id]
 If-Match: W/"3"   # the ETag from your last read; 412 if it changed since
-{ "resourceType": "Location", "id": "[id]", "meta": { "profile": [ "https://dhp.uz/fhir/core/StructureDefinition/uz-core-location" ] }, ... }
+{
+  "resourceType": "Location",
+  "id": "[id]",
+  "meta": { "profile": [ "https://dhp.uz/fhir/core/StructureDefinition/uz-core-location" ] },
+  ...
+}
 ```
 
 See the [CapabilityStatement](CapabilityStatement-DHPCapabilityStatement.html) for the full list of supported search parameters, and [Identifier systems](identifiers.html) for the identifier system URIs.

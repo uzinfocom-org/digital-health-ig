@@ -22,7 +22,14 @@ GET [base]/Consent?patient=Patient/[id]&date=ge2025-01-01
 
 ```
 POST [base]/Consent
-{ "resourceType": "Consent", "meta": { "profile": [ "https://dhp.uz/fhir/core/StructureDefinition/uz-core-consent" ] }, "status": "active", "subject": { "reference": "Patient/[id]" }, "decision": "permit", ... }
+{
+  "resourceType": "Consent",
+  "meta": { "profile": [ "https://dhp.uz/fhir/core/StructureDefinition/uz-core-consent" ] },
+  "status": "active",
+  "subject": { "reference": "Patient/[id]" },
+  "decision": "permit",
+  ...
+}
 ```
 
 Consent is normally set by the patient in the portal. A denied consent causes data requests to be refused with HTTP 403; clients should handle that outcome.

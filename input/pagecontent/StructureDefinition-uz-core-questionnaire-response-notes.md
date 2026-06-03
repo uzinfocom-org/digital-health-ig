@@ -24,7 +24,17 @@ GET [base]/QuestionnaireResponse?based-on=ServiceRequest/[id]
 
 ```
 POST [base]/QuestionnaireResponse
-{ "resourceType": "QuestionnaireResponse", "meta": { "profile": [ "https://dhp.uz/fhir/core/StructureDefinition/uz-core-questionnaire-response" ] }, "questionnaire": "https://dhp.uz/fhir/core/Questionnaire/health-declaration", "status": "completed", "subject": { "reference": "Patient/[id]" }, "item": [ ... ], ... }
+{
+  "resourceType": "QuestionnaireResponse",
+  "meta": {
+    "profile": [ "https://dhp.uz/fhir/core/StructureDefinition/uz-core-questionnaire-response" ]
+  },
+  "questionnaire": "https://dhp.uz/fhir/core/Questionnaire/health-declaration",
+  "status": "completed",
+  "subject": { "reference": "Patient/[id]" },
+  "item": [ ... ],
+  ...
+}
 ```
 
 See the [CapabilityStatement](CapabilityStatement-DHPCapabilityStatement.html) for all supported search parameters.

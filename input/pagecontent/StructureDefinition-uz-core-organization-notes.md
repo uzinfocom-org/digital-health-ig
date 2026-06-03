@@ -26,7 +26,11 @@ GET [base]/Organization?partof=Organization/[id]
 
 ```
 POST [base]/Organization
-{ "resourceType": "Organization", "meta": { "profile": [ "https://dhp.uz/fhir/core/StructureDefinition/uz-core-organization" ] }, ... }
+{
+  "resourceType": "Organization",
+  "meta": { "profile": [ "https://dhp.uz/fhir/core/StructureDefinition/uz-core-organization" ] },
+  ...
+}
 ```
 
 **Update an existing organization**
@@ -34,7 +38,12 @@ POST [base]/Organization
 ```
 PUT [base]/Organization/[id]
 If-Match: W/"3"   # the ETag from your last read; 412 if it changed since
-{ "resourceType": "Organization", "id": "[id]", "meta": { "profile": [ "https://dhp.uz/fhir/core/StructureDefinition/uz-core-organization" ] }, ... }
+{
+  "resourceType": "Organization",
+  "id": "[id]",
+  "meta": { "profile": [ "https://dhp.uz/fhir/core/StructureDefinition/uz-core-organization" ] },
+  ...
+}
 ```
 
 See the [CapabilityStatement](CapabilityStatement-DHPCapabilityStatement.html) for the full list of supported search parameters, and [Identifier systems](identifiers.html) for the organization identifier system URIs.

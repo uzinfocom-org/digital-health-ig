@@ -21,7 +21,13 @@ GET [base]/PractitionerRole?role=https://terminology.dhp.uz/fhir/core/CodeSystem
 
 ```
 POST [base]/PractitionerRole
-{ "resourceType": "PractitionerRole", "meta": { "profile": [ "https://dhp.uz/fhir/core/StructureDefinition/uz-core-practitioner-role" ] }, ... }
+{
+  "resourceType": "PractitionerRole",
+  "meta": {
+    "profile": [ "https://dhp.uz/fhir/core/StructureDefinition/uz-core-practitioner-role" ]
+  },
+  ...
+}
 ```
 
 **Update an existing practitioner role**
@@ -29,7 +35,14 @@ POST [base]/PractitionerRole
 ```
 PUT [base]/PractitionerRole/[id]
 If-Match: W/"3"   # the ETag from your last read; 412 if it changed since
-{ "resourceType": "PractitionerRole", "id": "[id]", "meta": { "profile": [ "https://dhp.uz/fhir/core/StructureDefinition/uz-core-practitioner-role" ] }, ... }
+{
+  "resourceType": "PractitionerRole",
+  "id": "[id]",
+  "meta": {
+    "profile": [ "https://dhp.uz/fhir/core/StructureDefinition/uz-core-practitioner-role" ]
+  },
+  ...
+}
 ```
 
 See the [CapabilityStatement](CapabilityStatement-DHPCapabilityStatement.html) for the full list of supported search parameters.

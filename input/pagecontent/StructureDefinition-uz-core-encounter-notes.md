@@ -26,7 +26,14 @@ GET [base]/Encounter?location=Location/[id]
 
 ```
 POST [base]/Encounter
-{ "resourceType": "Encounter", "meta": { "profile": [ "https://dhp.uz/fhir/core/StructureDefinition/uz-core-encounter" ] }, "status": "in-progress", "class": [ { "coding": [ { "code": "IMP" } ] } ], "subject": { "reference": "Patient/[id]" }, ... }
+{
+  "resourceType": "Encounter",
+  "meta": { "profile": [ "https://dhp.uz/fhir/core/StructureDefinition/uz-core-encounter" ] },
+  "status": "in-progress",
+  "class": [ { "coding": [ { "code": "IMP" } ] } ],
+  "subject": { "reference": "Patient/[id]" },
+  ...
+}
 ```
 
 **Update** (e.g. close the visit by setting `status` to `completed` and filling `actualPeriod.end`) - PUT the full resource back:

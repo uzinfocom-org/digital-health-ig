@@ -111,7 +111,15 @@ For a department inside a facility, use the unit slice - its `type` is coded fro
   {
     "use": "official",
     "system": "https://dhp.uz/fhir/core/NamingSystem/location-unit",
-    "type": { "coding": [{ "system": "https://terminology.dhp.uz/fhir/core/CodeSystem/location-kinds-cs", "code": "Branch", "display": "Bo'limi" }] },
+    "type": {
+      "coding": [
+        {
+          "system": "https://terminology.dhp.uz/fhir/core/CodeSystem/location-kinds-cs",
+          "code": "Branch",
+          "display": "Bo'limi"
+        }
+      ]
+    },
     "value": "1"
   }
 ]

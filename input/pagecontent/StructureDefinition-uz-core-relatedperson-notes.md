@@ -21,7 +21,12 @@ GET [base]/RelatedPerson?name=Zafarov
 
 ```
 POST [base]/RelatedPerson
-{ "resourceType": "RelatedPerson", "meta": { "profile": [ "https://dhp.uz/fhir/core/StructureDefinition/uz-core-relatedperson" ] }, "patient": { "reference": "Patient/[id]" }, ... }
+{
+  "resourceType": "RelatedPerson",
+  "meta": { "profile": [ "https://dhp.uz/fhir/core/StructureDefinition/uz-core-relatedperson" ] },
+  "patient": { "reference": "Patient/[id]" },
+  ...
+}
 ```
 
 **Update an existing related person**
@@ -29,7 +34,12 @@ POST [base]/RelatedPerson
 ```
 PUT [base]/RelatedPerson/[id]
 If-Match: W/"3"   # the ETag from your last read; 412 if it changed since
-{ "resourceType": "RelatedPerson", "id": "[id]", "meta": { "profile": [ "https://dhp.uz/fhir/core/StructureDefinition/uz-core-relatedperson" ] }, ... }
+{
+  "resourceType": "RelatedPerson",
+  "id": "[id]",
+  "meta": { "profile": [ "https://dhp.uz/fhir/core/StructureDefinition/uz-core-relatedperson" ] },
+  ...
+}
 ```
 
 See the [CapabilityStatement](CapabilityStatement-DHPCapabilityStatement.html) for the full list of supported search parameters, and [Identifier systems](identifiers.html) for the identifier system URIs.

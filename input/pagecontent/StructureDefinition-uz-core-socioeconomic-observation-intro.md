@@ -30,14 +30,28 @@ Four elements carry the whole record: the `status` and the `subject` (the [Patie
 ```json
 {
   "resourceType": "Observation",
-  "meta": { "profile": ["https://dhp.uz/fhir/core/StructureDefinition/uz-core-socioeconomic-observation"] },
+  "meta": {
+    "profile": [ "https://dhp.uz/fhir/core/StructureDefinition/uz-core-socioeconomic-observation" ]
+  },
   "status": "final",
   "code": {
-    "coding": [{ "system": "http://snomed.info/sct", "code": "105421008", "display": "Educational achievement" }]
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "105421008",
+        "display": "Educational achievement"
+      }
+    ]
   },
   "subject": { "reference": "Patient/example-salim" },
   "valueCodeableConcept": {
-    "coding": [{ "system": "https://terminology.dhp.uz/fhir/core/CodeSystem/education-cs", "code": "regis0005.00004", "display": "O'rtacha" }]
+    "coding": [
+      {
+        "system": "https://terminology.dhp.uz/fhir/core/CodeSystem/education-cs",
+        "code": "regis0005.00004",
+        "display": "O'rtacha"
+      }
+    ]
   },
   "effectiveDateTime": "2025-06-11"
 }
@@ -52,14 +66,24 @@ Swap the type code and the result value set together - they always move as a pai
 ```json
 {
   "resourceType": "Observation",
-  "meta": { "profile": ["https://dhp.uz/fhir/core/StructureDefinition/uz-core-socioeconomic-observation"] },
+  "meta": {
+    "profile": [ "https://dhp.uz/fhir/core/StructureDefinition/uz-core-socioeconomic-observation" ]
+  },
   "status": "final",
   "code": {
-    "coding": [{ "system": "http://snomed.info/sct", "code": "82996008", "display": "Social status" }]
+    "coding": [
+      { "system": "http://snomed.info/sct", "code": "82996008", "display": "Social status" }
+    ]
   },
   "subject": { "reference": "Patient/example-salim" },
   "valueCodeableConcept": {
-    "coding": [{ "system": "https://terminology.dhp.uz/fhir/core/CodeSystem/social-status-cs", "code": "regis0010.00003", "display": "Ishlaydi" }]
+    "coding": [
+      {
+        "system": "https://terminology.dhp.uz/fhir/core/CodeSystem/social-status-cs",
+        "code": "regis0010.00003",
+        "display": "Ishlaydi"
+      }
+    ]
   },
   "effectiveDateTime": "2025-06-11"
 }
@@ -81,14 +105,24 @@ For an occupation record, the `code` is `14679004` (Occupation) and the result c
 ```json
 {
   "resourceType": "Observation",
-  "meta": { "profile": ["https://dhp.uz/fhir/core/StructureDefinition/uz-core-socioeconomic-observation"] },
+  "meta": {
+    "profile": [ "https://dhp.uz/fhir/core/StructureDefinition/uz-core-socioeconomic-observation" ]
+  },
   "status": "final",
   "code": {
-    "coding": [{ "system": "http://snomed.info/sct", "code": "14679004", "display": "Occupation" }]
+    "coding": [
+      { "system": "http://snomed.info/sct", "code": "14679004", "display": "Occupation" }
+    ]
   },
   "subject": { "reference": "Patient/example-salim" },
   "valueCodeableConcept": {
-    "coding": [{ "system": "https://terminology.dhp.uz/fhir/core/CodeSystem/position-and-profession-cs", "code": "1321.20", "display": "Bosh mexanik" }]
+    "coding": [
+      {
+        "system": "https://terminology.dhp.uz/fhir/core/CodeSystem/position-and-profession-cs",
+        "code": "1321.20",
+        "display": "Bosh mexanik"
+      }
+    ]
   },
   "effectiveDateTime": "2025-06-11"
 }

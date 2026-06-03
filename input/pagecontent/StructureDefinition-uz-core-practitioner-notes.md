@@ -20,7 +20,11 @@ GET [base]/Practitioner?qualification-code=DIP&active=true
 
 ```
 POST [base]/Practitioner
-{ "resourceType": "Practitioner", "meta": { "profile": [ "https://dhp.uz/fhir/core/StructureDefinition/uz-core-practitioner" ] }, ... }
+{
+  "resourceType": "Practitioner",
+  "meta": { "profile": [ "https://dhp.uz/fhir/core/StructureDefinition/uz-core-practitioner" ] },
+  ...
+}
 ```
 
 **Update an existing practitioner**
@@ -28,7 +32,12 @@ POST [base]/Practitioner
 ```
 PUT [base]/Practitioner/[id]
 If-Match: W/"3"   # the ETag from your last read; 412 if it changed since
-{ "resourceType": "Practitioner", "id": "[id]", "meta": { "profile": [ "https://dhp.uz/fhir/core/StructureDefinition/uz-core-practitioner" ] }, ... }
+{
+  "resourceType": "Practitioner",
+  "id": "[id]",
+  "meta": { "profile": [ "https://dhp.uz/fhir/core/StructureDefinition/uz-core-practitioner" ] },
+  ...
+}
 ```
 
 See the [CapabilityStatement](CapabilityStatement-DHPCapabilityStatement.html) for the full list of supported search parameters, and [Identifier systems](identifiers.html) for the practitioner identifier system URIs.

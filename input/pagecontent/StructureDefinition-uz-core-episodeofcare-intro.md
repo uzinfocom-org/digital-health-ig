@@ -84,30 +84,31 @@ The clinical content of the episode is its `reason` (why care is being given) an
 ```json
 {
   "resourceType": "EpisodeOfCare",
-  "meta": {
-    "profile": ["https://dhp.uz/fhir/core/StructureDefinition/uz-core-episodeofcare"]
-  },
+  "meta": { "profile": [ "https://dhp.uz/fhir/core/StructureDefinition/uz-core-episodeofcare" ] },
   "status": "active",
   "patient": { "reference": "Patient/example-salim" },
   "managingOrganization": { "reference": "Organization/example-organization" },
   "reason": [
     {
       "use": {
-        "coding": [{ "system": "https://terminology.dhp.uz/fhir/core/CodeSystem/episode-of-care-reason-use-cs", "code": "mserv-0002-00002" }],
+        "coding": [
+          {
+            "system": "https://terminology.dhp.uz/fhir/core/CodeSystem/episode-of-care-reason-use-cs",
+            "code": "mserv-0002-00002"
+          }
+        ],
         "text": "Preventive visit"
       },
-      "value": [
-        { "reference": { "reference": "Condition/example-headache" } }
-      ]
+      "value": [ { "reference": { "reference": "Condition/example-headache" } } ]
     }
   ],
   "diagnosis": [
     {
-      "condition": [
-        { "reference": { "reference": "Condition/example-headache" } }
-      ],
+      "condition": [ { "reference": { "reference": "Condition/example-headache" } } ],
       "use": {
-        "coding": [{ "system": "http://terminology.hl7.org/CodeSystem/diagnosis-role", "code": "DD" }],
+        "coding": [
+          { "system": "http://terminology.hl7.org/CodeSystem/diagnosis-role", "code": "DD" }
+        ],
         "text": "Primary diagnosis"
       }
     }

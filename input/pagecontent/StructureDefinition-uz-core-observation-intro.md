@@ -39,17 +39,30 @@ An Observation always needs a `status` and a `code` saying what was measured. In
 ```json
 {
   "resourceType": "Observation",
-  "meta": { "profile": ["https://dhp.uz/fhir/core/StructureDefinition/uz-core-observation"] },
+  "meta": { "profile": [ "https://dhp.uz/fhir/core/StructureDefinition/uz-core-observation" ] },
   "status": "final",
   "category": [
-    { "coding": [{ "system": "http://terminology.hl7.org/CodeSystem/observation-category", "code": "vital-signs", "display": "Vital Signs" }] }
+    {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        }
+      ]
+    }
   ],
   "code": {
-    "coding": [{ "system": "http://loinc.org", "code": "8310-5", "display": "Body temperature" }]
+    "coding": [ { "system": "http://loinc.org", "code": "8310-5", "display": "Body temperature" } ]
   },
   "subject": { "reference": "Patient/example-salim" },
   "effectiveDateTime": "2025-11-04T10:30:00Z",
-  "valueQuantity": { "value": 36.5, "unit": "C", "system": "http://unitsofmeasure.org", "code": "Cel" }
+  "valueQuantity": {
+    "value": 36.5,
+    "unit": "C",
+    "system": "http://unitsofmeasure.org",
+    "code": "Cel"
+  }
 }
 ```
 
@@ -62,21 +75,45 @@ For a result that has a normal range, send the `referenceRange` and flag the val
 ```json
 {
   "resourceType": "Observation",
-  "meta": { "profile": ["https://dhp.uz/fhir/core/StructureDefinition/uz-core-observation"] },
+  "meta": { "profile": [ "https://dhp.uz/fhir/core/StructureDefinition/uz-core-observation" ] },
   "status": "final",
   "category": [
-    { "coding": [{ "system": "http://terminology.hl7.org/CodeSystem/observation-category", "code": "vital-signs", "display": "Vital Signs" }] }
+    {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        }
+      ]
+    }
   ],
-  "code": { "coding": [{ "system": "http://loinc.org", "code": "2708-6", "display": "Oxygen saturation in Arterial blood" }] },
+  "code": {
+    "coding": [
+      {
+        "system": "http://loinc.org",
+        "code": "2708-6",
+        "display": "Oxygen saturation in Arterial blood"
+      }
+    ]
+  },
   "subject": { "reference": "Patient/example-salim" },
   "effectiveDateTime": "2025-11-04T10:30:00Z",
   "valueQuantity": { "value": 95, "unit": "%", "system": "http://unitsofmeasure.org", "code": "%" },
   "interpretation": [
-    { "coding": [{ "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation", "code": "N", "display": "Normal" }] }
+    {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+          "code": "N",
+          "display": "Normal"
+        }
+      ]
+    }
   ],
   "referenceRange": [
     {
-      "low":  { "value": 90, "unit": "%", "system": "http://unitsofmeasure.org", "code": "%" },
+      "low": { "value": 90, "unit": "%", "system": "http://unitsofmeasure.org", "code": "%" },
       "high": { "value": 99, "unit": "%", "system": "http://unitsofmeasure.org", "code": "%" }
     }
   ]
@@ -90,22 +127,52 @@ When several measurements share one time and subject - systolic and diastolic, o
 ```json
 {
   "resourceType": "Observation",
-  "meta": { "profile": ["https://dhp.uz/fhir/core/StructureDefinition/uz-core-observation"] },
+  "meta": { "profile": [ "https://dhp.uz/fhir/core/StructureDefinition/uz-core-observation" ] },
   "status": "final",
   "category": [
-    { "coding": [{ "system": "http://terminology.hl7.org/CodeSystem/observation-category", "code": "vital-signs", "display": "Vital Signs" }] }
+    {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        }
+      ]
+    }
   ],
-  "code": { "coding": [{ "system": "http://loinc.org", "code": "85354-9", "display": "Blood pressure panel" }] },
+  "code": {
+    "coding": [
+      { "system": "http://loinc.org", "code": "85354-9", "display": "Blood pressure panel" }
+    ]
+  },
   "subject": { "reference": "Patient/example-salim" },
   "effectiveDateTime": "2025-11-04T10:30:00Z",
   "component": [
     {
-      "code": { "coding": [{ "system": "http://loinc.org", "code": "8480-6", "display": "Systolic blood pressure" }] },
-      "valueQuantity": { "value": 120, "unit": "mmHg", "system": "http://unitsofmeasure.org", "code": "mm[Hg]" }
+      "code": {
+        "coding": [
+          { "system": "http://loinc.org", "code": "8480-6", "display": "Systolic blood pressure" }
+        ]
+      },
+      "valueQuantity": {
+        "value": 120,
+        "unit": "mmHg",
+        "system": "http://unitsofmeasure.org",
+        "code": "mm[Hg]"
+      }
     },
     {
-      "code": { "coding": [{ "system": "http://loinc.org", "code": "8462-4", "display": "Diastolic blood pressure" }] },
-      "valueQuantity": { "value": 80, "unit": "mmHg", "system": "http://unitsofmeasure.org", "code": "mm[Hg]" }
+      "code": {
+        "coding": [
+          { "system": "http://loinc.org", "code": "8462-4", "display": "Diastolic blood pressure" }
+        ]
+      },
+      "valueQuantity": {
+        "value": 80,
+        "unit": "mmHg",
+        "system": "http://unitsofmeasure.org",
+        "code": "mm[Hg]"
+      }
     }
   ]
 }
@@ -120,16 +187,34 @@ If the test was performed but produced no value (sample unusable, patient declin
 ```json
 {
   "resourceType": "Observation",
-  "meta": { "profile": ["https://dhp.uz/fhir/core/StructureDefinition/uz-core-observation"] },
+  "meta": { "profile": [ "https://dhp.uz/fhir/core/StructureDefinition/uz-core-observation" ] },
   "status": "final",
   "category": [
-    { "coding": [{ "system": "http://terminology.hl7.org/CodeSystem/observation-category", "code": "vital-signs", "display": "Vital Signs" }] }
+    {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        }
+      ]
+    }
   ],
-  "code": { "coding": [{ "system": "http://loinc.org", "code": "2708-6", "display": "Oxygen saturation in Arterial blood" }] },
+  "code": {
+    "coding": [
+      {
+        "system": "http://loinc.org",
+        "code": "2708-6",
+        "display": "Oxygen saturation in Arterial blood"
+      }
+    ]
+  },
   "subject": { "reference": "Patient/example-salim" },
   "effectiveDateTime": "2025-11-04T10:30:00Z",
   "dataAbsentReason": {
-    "coding": [{ "system": "http://terminology.hl7.org/CodeSystem/data-absent-reason", "code": "unknown" }]
+    "coding": [
+      { "system": "http://terminology.hl7.org/CodeSystem/data-absent-reason", "code": "unknown" }
+    ]
   }
 }
 ```

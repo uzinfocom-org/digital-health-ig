@@ -34,27 +34,57 @@ A self-contained event names what happened (`code`), its grouping (`category`), 
 ```json
 {
   "resourceType": "AuditEvent",
-  "meta": { "profile": ["https://dhp.uz/fhir/core/StructureDefinition/uz-core-auditevent"] },
+  "meta": { "profile": [ "https://dhp.uz/fhir/core/StructureDefinition/uz-core-auditevent" ] },
   "category": [
-    { "coding": [{ "system": "http://dicom.nema.org/resources/ontology/DCM", "code": "110114", "display": "User Authentication" }] }
+    {
+      "coding": [
+        {
+          "system": "http://dicom.nema.org/resources/ontology/DCM",
+          "code": "110114",
+          "display": "User Authentication"
+        }
+      ]
+    }
   ],
   "code": {
-    "coding": [{ "system": "http://dicom.nema.org/resources/ontology/DCM", "code": "110122", "display": "Login" }]
+    "coding": [
+      {
+        "system": "http://dicom.nema.org/resources/ontology/DCM",
+        "code": "110122",
+        "display": "Login"
+      }
+    ]
   },
   "action": "E",
   "occurredDateTime": "2023-11-09T15:23:47.123Z",
   "recorded": "2023-11-09T15:23:47.123Z",
-  "outcome": {
-    "code": { "system": "http://hl7.org/fhir/issue-severity", "code": "success" }
-  },
+  "outcome": { "code": { "system": "http://hl7.org/fhir/issue-severity", "code": "success" } },
   "agent": [
     {
-      "type": { "coding": [{ "system": "http://terminology.hl7.org/CodeSystem/extra-security-role-type", "code": "humanuser" }] },
+      "type": {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/extra-security-role-type",
+            "code": "humanuser"
+          }
+        ]
+      },
       "role": [
-        { "coding": [{ "system": "http://hl7.org/fhir/sample-security-structural-roles", "code": "regulated-health-professionals" }] }
+        {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/sample-security-structural-roles",
+              "code": "regulated-health-professionals"
+            }
+          ]
+        }
       ],
       "authorization": [
-        { "coding": [{ "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason", "code": "TREAT" }] }
+        {
+          "coding": [
+            { "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason", "code": "TREAT" }
+          ]
+        }
       ],
       "who": { "reference": "PractitionerRole/example-practitionerrole" }
     }
@@ -62,7 +92,15 @@ A self-contained event names what happened (`code`), its grouping (`category`), 
   "source": {
     "observer": { "display": "Uzbekistan Digital Health Platform" },
     "type": [
-      { "coding": [{ "system": "http://terminology.hl7.org/CodeSystem/security-source-type", "code": "4", "display": "Application Server" }] }
+      {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/security-source-type",
+            "code": "4",
+            "display": "Application Server"
+          }
+        ]
+      }
     ]
   }
 }
@@ -77,37 +115,73 @@ When the event read or changed a specific patient's record, add the `patient` it
 ```json
 {
   "resourceType": "AuditEvent",
-  "meta": { "profile": ["https://dhp.uz/fhir/core/StructureDefinition/uz-core-auditevent"] },
+  "meta": { "profile": [ "https://dhp.uz/fhir/core/StructureDefinition/uz-core-auditevent" ] },
   "category": [
-    { "coding": [{ "system": "http://dicom.nema.org/resources/ontology/DCM", "code": "110112", "display": "Query" }] }
+    {
+      "coding": [
+        {
+          "system": "http://dicom.nema.org/resources/ontology/DCM",
+          "code": "110112",
+          "display": "Query"
+        }
+      ]
+    }
   ],
   "code": {
-    "coding": [{ "system": "http://hl7.org/fhir/restful-interaction", "code": "search" }]
+    "coding": [ { "system": "http://hl7.org/fhir/restful-interaction", "code": "search" } ]
   },
   "action": "R",
   "occurredDateTime": "2025-02-15T14:02:52Z",
   "recorded": "2025-02-15T14:02:52Z",
-  "outcome": {
-    "code": { "system": "http://hl7.org/fhir/issue-severity", "code": "success" }
-  },
+  "outcome": { "code": { "system": "http://hl7.org/fhir/issue-severity", "code": "success" } },
   "patient": { "reference": "Patient/example-patient" },
   "agent": [
     {
-      "type": { "coding": [{ "system": "http://terminology.hl7.org/CodeSystem/extra-security-role-type", "code": "humanuser" }] },
+      "type": {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/extra-security-role-type",
+            "code": "humanuser"
+          }
+        ]
+      },
       "role": [
-        { "coding": [{ "system": "http://hl7.org/fhir/sample-security-structural-roles", "code": "regulated-health-professionals" }] }
+        {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/sample-security-structural-roles",
+              "code": "regulated-health-professionals"
+            }
+          ]
+        }
       ],
       "authorization": [
-        { "coding": [{ "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason", "code": "TREAT" }] }
+        {
+          "coding": [
+            { "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason", "code": "TREAT" }
+          ]
+        }
       ],
       "who": { "reference": "PractitionerRole/example-practitionerrole" }
     }
   ],
   "entity": [
     {
-      "role": { "coding": [{ "system": "http://terminology.hl7.org/CodeSystem/object-role", "code": "4", "display": "Domain Resource" }] },
+      "role": {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/object-role",
+            "code": "4",
+            "display": "Domain Resource"
+          }
+        ]
+      },
       "securityLabel": [
-        { "coding": [{ "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode", "code": "NOAUTH" }] }
+        {
+          "coding": [
+            { "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode", "code": "NOAUTH" }
+          ]
+        }
       ],
       "what": { "reference": "Condition/example-headache" }
     }
@@ -115,7 +189,15 @@ When the event read or changed a specific patient's record, add the `patient` it
   "source": {
     "observer": { "display": "Uzbekistan Digital Health Platform" },
     "type": [
-      { "coding": [{ "system": "http://terminology.hl7.org/CodeSystem/security-source-type", "code": "4", "display": "Application Server" }] }
+      {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/security-source-type",
+            "code": "4",
+            "display": "Application Server"
+          }
+        ]
+      }
     ]
   }
 }

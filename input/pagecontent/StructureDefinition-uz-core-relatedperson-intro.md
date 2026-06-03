@@ -33,13 +33,19 @@ A RelatedPerson must carry at least one `identifier` and must name the `patient`
 ```json
 {
   "resourceType": "RelatedPerson",
-  "meta": {
-    "profile": ["https://dhp.uz/fhir/core/StructureDefinition/uz-core-relatedperson"]
-  },
+  "meta": { "profile": [ "https://dhp.uz/fhir/core/StructureDefinition/uz-core-relatedperson" ] },
   "identifier": [
     {
       "use": "official",
-      "type": { "coding": [{ "system": "http://terminology.hl7.org/CodeSystem/v2-0203", "code": "NI", "display": "National unique individual identifier" }] },
+      "type": {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+            "code": "NI",
+            "display": "National unique individual identifier"
+          }
+        ]
+      },
       "system": "https://dhp.uz/fhir/core/sid/pid/uz/ni",
       "value": "12345678901234"
     }
@@ -57,33 +63,45 @@ In practice you also send the `relationship` to the patient, a `name`, a way to 
 ```json
 {
   "resourceType": "RelatedPerson",
-  "meta": {
-    "profile": ["https://dhp.uz/fhir/core/StructureDefinition/uz-core-relatedperson"]
-  },
+  "meta": { "profile": [ "https://dhp.uz/fhir/core/StructureDefinition/uz-core-relatedperson" ] },
   "identifier": [
     {
       "use": "official",
-      "type": { "coding": [{ "system": "http://terminology.hl7.org/CodeSystem/v2-0203", "code": "NI", "display": "National unique individual identifier" }] },
+      "type": {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+            "code": "NI",
+            "display": "National unique individual identifier"
+          }
+        ]
+      },
       "system": "https://dhp.uz/fhir/core/sid/pid/uz/ni",
       "value": "12345678901234"
     }
   ],
   "patient": { "reference": "Patient/example-david" },
   "relationship": [
-    { "coding": [{ "system": "http://terminology.hl7.org/CodeSystem/v3-ParticipationType", "code": "WIT", "display": "witness" }] }
+    {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ParticipationType",
+          "code": "WIT",
+          "display": "witness"
+        }
+      ]
+    }
   ],
   "name": [
     {
       "use": "usual",
       "text": "Зафаров Дамир Каримович",
       "family": "Зафаров",
-      "given": ["Дамир"],
-      "suffix": ["Каримович"]
+      "given": [ "Дамир" ],
+      "suffix": [ "Каримович" ]
     }
   ],
-  "telecom": [
-    { "system": "phone", "value": "+998901234567", "use": "mobile" }
-  ],
+  "telecom": [ { "system": "phone", "value": "+998901234567", "use": "mobile" } ],
   "gender": "male"
 }
 ```

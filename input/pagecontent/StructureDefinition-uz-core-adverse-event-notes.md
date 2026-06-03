@@ -27,7 +27,11 @@ GET [base]/AdverseEvent?code=http://snomed.info/sct%7C39579001
 
 ```
 POST [base]/AdverseEvent
-{ "resourceType": "AdverseEvent", "meta": { "profile": [ "https://dhp.uz/fhir/core/StructureDefinition/uz-core-adverse-event" ] }, ... }
+{
+  "resourceType": "AdverseEvent",
+  "meta": { "profile": [ "https://dhp.uz/fhir/core/StructureDefinition/uz-core-adverse-event" ] },
+  ...
+}
 ```
 
 **Update an adverse event** (e.g. add an outcome or the resulting condition once known)
@@ -35,7 +39,12 @@ POST [base]/AdverseEvent
 ```
 PUT [base]/AdverseEvent/[id]
 If-Match: W/"3"   # the ETag from your last read; 412 if it changed since
-{ "resourceType": "AdverseEvent", "id": "[id]", "meta": { "profile": [ "https://dhp.uz/fhir/core/StructureDefinition/uz-core-adverse-event" ] }, ... }
+{
+  "resourceType": "AdverseEvent",
+  "id": "[id]",
+  "meta": { "profile": [ "https://dhp.uz/fhir/core/StructureDefinition/uz-core-adverse-event" ] },
+  ...
+}
 ```
 
 ### Related

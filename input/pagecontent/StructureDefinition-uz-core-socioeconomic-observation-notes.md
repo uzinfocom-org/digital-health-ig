@@ -21,7 +21,25 @@ GET [base]/Observation?patient=Patient/[id]&status=final
 
 ```
 POST [base]/Observation
-{ "resourceType": "Observation", "meta": { "profile": [ "https://dhp.uz/fhir/core/StructureDefinition/uz-core-socioeconomic-observation" ] }, "status": "final", "code": { "coding": [ { "system": "http://snomed.info/sct", "code": "1303306008", "display": "Eligible for benefit" } ] }, "subject": { "reference": "Patient/[id]" }, "effectiveDateTime": "2025-06-11", ... }
+{
+  "resourceType": "Observation",
+  "meta": {
+    "profile": [ "https://dhp.uz/fhir/core/StructureDefinition/uz-core-socioeconomic-observation" ]
+  },
+  "status": "final",
+  "code": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "1303306008",
+        "display": "Eligible for benefit"
+      }
+    ]
+  },
+  "subject": { "reference": "Patient/[id]" },
+  "effectiveDateTime": "2025-06-11",
+  ...
+}
 ```
 
 See the [CapabilityStatement](CapabilityStatement-DHPCapabilityStatement.html) for all supported search parameters.

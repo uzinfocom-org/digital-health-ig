@@ -111,7 +111,13 @@ When fasting affects interpretation of the result, record it inside `collection`
 {
   "collection": {
     "fastingStatusCodeableConcept": {
-      "coding": [{ "system": "http://terminology.hl7.org/CodeSystem/v2-0916", "code": "NF", "display": "The patient indicated they did not fast prior to the procedure." }]
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/v2-0916",
+          "code": "NF",
+          "display": "The patient indicated they did not fast prior to the procedure."
+        }
+      ]
     }
   }
 }

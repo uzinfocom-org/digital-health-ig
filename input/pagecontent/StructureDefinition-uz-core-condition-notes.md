@@ -24,7 +24,14 @@ GET [base]/Condition?patient=Patient/[id]&recorded-date=ge2025-01-01
 
 ```
 POST [base]/Condition
-{ "resourceType": "Condition", "meta": { "profile": [ "https://dhp.uz/fhir/core/StructureDefinition/uz-core-condition" ] }, "clinicalStatus": { "coding": [ { "code": "active" } ] }, "code": { ... }, "subject": { "reference": "Patient/[id]" }, ... }
+{
+  "resourceType": "Condition",
+  "meta": { "profile": [ "https://dhp.uz/fhir/core/StructureDefinition/uz-core-condition" ] },
+  "clinicalStatus": { "coding": [ { "code": "active" } ] },
+  "code": { ... },
+  "subject": { "reference": "Patient/[id]" },
+  ...
+}
 ```
 
 **Update** (e.g. mark a problem resolved) - PUT the full resource back with the new `clinicalStatus` / `abatement[x]`:

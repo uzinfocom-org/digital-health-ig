@@ -22,7 +22,15 @@ GET [base]/Specimen?accession=ACC-2025-000045
 
 ```
 POST [base]/Specimen
-{ "resourceType": "Specimen", "meta": { "profile": [ "https://dhp.uz/fhir/core/StructureDefinition/uz-core-specimen" ] }, "status": "available", "type": { ... }, "subject": { "reference": "Patient/[id]" }, "request": [ { "reference": "ServiceRequest/[id]" } ], ... }
+{
+  "resourceType": "Specimen",
+  "meta": { "profile": [ "https://dhp.uz/fhir/core/StructureDefinition/uz-core-specimen" ] },
+  "status": "available",
+  "type": { ... },
+  "subject": { "reference": "Patient/[id]" },
+  "request": [ { "reference": "ServiceRequest/[id]" } ],
+  ...
+}
 ```
 
 ### Related

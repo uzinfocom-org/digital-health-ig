@@ -52,9 +52,7 @@ In practice the schedule is the `action` list. Each dose is one action with a `l
 ```json
 {
   "resourceType": "PlanDefinition",
-  "meta": {
-    "profile": ["https://dhp.uz/fhir/core/StructureDefinition/uz-core-plan-definition"]
-  },
+  "meta": { "profile": [ "https://dhp.uz/fhir/core/StructureDefinition/uz-core-plan-definition" ] },
   "url": "https://terminology.dhp.uz/fhir/core/PlanDefinition/example-uz-core-plan-definition",
   "name": "ExamplePlanDefinition",
   "title": "Example Vaccination Follow-up Plan",
@@ -71,7 +69,13 @@ In practice the schedule is the `action` list. Each dose is one action with a `l
       "title": "Initial vaccination",
       "description": "Administer first vaccine dose.",
       "code": {
-        "coding": [{ "system": "http://hl7.org/fhir/action-code", "code": "recommend-immunization", "display": "Recommend an immunization" }]
+        "coding": [
+          {
+            "system": "http://hl7.org/fhir/action-code",
+            "code": "recommend-immunization",
+            "display": "Recommend an immunization"
+          }
+        ]
       },
       "condition": [
         {
@@ -83,9 +87,7 @@ In practice the schedule is the `action` list. Each dose is one action with a `l
           }
         }
       ],
-      "participant": [
-        { "type": "practitioner", "actorId": "vaccinator" }
-      ],
+      "participant": [ { "type": "practitioner", "actorId": "vaccinator" } ],
       "definitionUri": "https://terminology.dhp.uz/fhir/core/ActivityDefinition/example-activity-definition"
     },
     {
@@ -97,12 +99,15 @@ In practice the schedule is the `action` list. Each dose is one action with a `l
         {
           "targetId": "action-1",
           "relationship": "after-end",
-          "offsetDuration": { "value": 30, "unit": "days", "system": "http://unitsofmeasure.org", "code": "d" }
+          "offsetDuration": {
+            "value": 30,
+            "unit": "days",
+            "system": "http://unitsofmeasure.org",
+            "code": "d"
+          }
         }
       ],
-      "participant": [
-        { "type": "practitioner", "actorId": "vaccinator" }
-      ],
+      "participant": [ { "type": "practitioner", "actorId": "vaccinator" } ],
       "definitionUri": "https://terminology.dhp.uz/fhir/core/ActivityDefinition/example-activity-definition"
     }
   ]

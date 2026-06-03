@@ -52,7 +52,7 @@ In practice you state the capacity: the `code` (the position/profession) and the
 {
   "resourceType": "PractitionerRole",
   "meta": {
-    "profile": ["https://dhp.uz/fhir/core/StructureDefinition/uz-core-practitioner-role"]
+    "profile": [ "https://dhp.uz/fhir/core/StructureDefinition/uz-core-practitioner-role" ]
   },
   "active": true,
   "practitioner": { "reference": "Practitioner/example-practitioner" },
@@ -60,20 +60,26 @@ In practice you state the capacity: the `code` (the position/profession) and the
   "code": [
     {
       "coding": [
-        { "system": "https://terminology.dhp.uz/fhir/core/CodeSystem/position-and-profession-cs", "code": "2212.14", "display": "Vrach ginekolog" }
+        {
+          "system": "https://terminology.dhp.uz/fhir/core/CodeSystem/position-and-profession-cs",
+          "code": "2212.14",
+          "display": "Vrach ginekolog"
+        }
       ]
     }
   ],
   "specialty": [
     {
       "coding": [
-        { "system": "https://terminology.dhp.uz/fhir/core/CodeSystem/profession-specialization-cs", "code": "394585009", "display": "Akusherlik va ginekologiya" }
+        {
+          "system": "https://terminology.dhp.uz/fhir/core/CodeSystem/profession-specialization-cs",
+          "code": "394585009",
+          "display": "Akusherlik va ginekologiya"
+        }
       ]
     }
   ],
-  "healthcareService": [
-    { "reference": "HealthcareService/example-healthcareservice" }
-  ]
+  "healthcareService": [ { "reference": "HealthcareService/example-healthcareservice" } ]
 }
 ```
 

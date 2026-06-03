@@ -60,26 +60,62 @@ Fill in when it happened (`actualPeriod`), what kind of service it was (`type`),
 ```json
 {
   "resourceType": "Encounter",
-  "meta": { "profile": ["https://dhp.uz/fhir/core/StructureDefinition/uz-core-encounter"] },
+  "meta": { "profile": [ "https://dhp.uz/fhir/core/StructureDefinition/uz-core-encounter" ] },
   "status": "completed",
   "class": [
-    { "coding": [{ "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode", "code": "IMP", "display": "Inpatient encounter" }] }
+    {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+          "code": "IMP",
+          "display": "Inpatient encounter"
+        }
+      ]
+    }
   ],
   "priority": {
-    "coding": [{ "system": "http://terminology.hl7.org/CodeSystem/v3-ActPriority", "code": "EM", "display": "Emergency" }]
+    "coding": [
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/v3-ActPriority",
+        "code": "EM",
+        "display": "Emergency"
+      }
+    ]
   },
   "type": [
-    { "coding": [{ "system": "https://terminology.dhp.uz/fhir/core/CodeSystem/encounter-type-cs", "code": "mserv-0001-00004", "display": "Treatment services" }] }
+    {
+      "coding": [
+        {
+          "system": "https://terminology.dhp.uz/fhir/core/CodeSystem/encounter-type-cs",
+          "code": "mserv-0001-00004",
+          "display": "Treatment services"
+        }
+      ]
+    }
   ],
   "subject": { "reference": "Patient/example-patient" },
   "subjectStatus": {
-    "coding": [{ "system": "https://terminology.dhp.uz/fhir/core/CodeSystem/encounter-subject-status-cs", "code": "gencl-0003-00001", "display": "Awake" }]
+    "coding": [
+      {
+        "system": "https://terminology.dhp.uz/fhir/core/CodeSystem/encounter-subject-status-cs",
+        "code": "gencl-0003-00001",
+        "display": "Awake"
+      }
+    ]
   },
   "actualPeriod": { "start": "2024-01-01T10:00:00Z", "end": "2024-01-01T11:00:00Z" },
   "participant": [
     {
       "type": [
-        { "coding": [{ "system": "http://terminology.hl7.org/CodeSystem/v3-ParticipationType", "code": "ATND", "display": "attender" }] }
+        {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ParticipationType",
+              "code": "ATND",
+              "display": "attender"
+            }
+          ]
+        }
       ],
       "actor": { "reference": "PractitionerRole/example-practitionerrole" },
       "period": { "start": "2024-01-01T10:00:00Z", "end": "2024-01-01T11:00:00Z" }
@@ -88,11 +124,17 @@ Fill in when it happened (`actualPeriod`), what kind of service it was (`type`),
   "reason": [
     {
       "use": [
-        { "coding": [{ "system": "https://terminology.dhp.uz/fhir/core/CodeSystem/encounter-reason-use-cs", "code": "mserv-0002-00001", "display": "Disease" }] }
+        {
+          "coding": [
+            {
+              "system": "https://terminology.dhp.uz/fhir/core/CodeSystem/encounter-reason-use-cs",
+              "code": "mserv-0002-00001",
+              "display": "Disease"
+            }
+          ]
+        }
       ],
-      "value": [
-        { "reference": { "reference": "Condition/example-headache" } }
-      ]
+      "value": [ { "reference": { "reference": "Condition/example-headache" } } ]
     }
   ]
 }
@@ -107,17 +149,35 @@ For an admission, add the `diagnosis` list (each `condition` is a `CodeableRefer
 ```json
 {
   "diagnosis": [
-    { "condition": [{ "reference": { "reference": "Condition/example-headache" } }] }
+    { "condition": [ { "reference": { "reference": "Condition/example-headache" } } ] }
   ],
   "admission": {
     "admitSource": {
-      "coding": [{ "system": "http://terminology.hl7.org/CodeSystem/admit-source", "code": "psych", "display": "From psychiatric hospital" }]
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/admit-source",
+          "code": "psych",
+          "display": "From psychiatric hospital"
+        }
+      ]
     },
     "reAdmission": {
-      "coding": [{ "system": "http://terminology.hl7.org/CodeSystem/v2-0092", "code": "R", "display": "Re-admission" }]
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/v2-0092",
+          "code": "R",
+          "display": "Re-admission"
+        }
+      ]
     },
     "dischargeDisposition": {
-      "coding": [{ "system": "http://terminology.hl7.org/CodeSystem/discharge-disposition", "code": "home", "display": "Home" }]
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/discharge-disposition",
+          "code": "home",
+          "display": "Home"
+        }
+      ]
     }
   },
   "location": [

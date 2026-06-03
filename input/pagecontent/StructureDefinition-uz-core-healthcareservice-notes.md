@@ -21,7 +21,13 @@ GET [base]/HealthcareService?specialty=[specialty-code]
 
 ```
 POST [base]/HealthcareService
-{ "resourceType": "HealthcareService", "meta": { "profile": [ "https://dhp.uz/fhir/core/StructureDefinition/uz-core-healthcareservice" ] }, ... }
+{
+  "resourceType": "HealthcareService",
+  "meta": {
+    "profile": [ "https://dhp.uz/fhir/core/StructureDefinition/uz-core-healthcareservice" ]
+  },
+  ...
+}
 ```
 
 **Update an existing healthcare service**
@@ -29,7 +35,14 @@ POST [base]/HealthcareService
 ```
 PUT [base]/HealthcareService/[id]
 If-Match: W/"3"   # the ETag from your last read; 412 if it changed since
-{ "resourceType": "HealthcareService", "id": "[id]", "meta": { "profile": [ "https://dhp.uz/fhir/core/StructureDefinition/uz-core-healthcareservice" ] }, ... }
+{
+  "resourceType": "HealthcareService",
+  "id": "[id]",
+  "meta": {
+    "profile": [ "https://dhp.uz/fhir/core/StructureDefinition/uz-core-healthcareservice" ]
+  },
+  ...
+}
 ```
 
 See the [CapabilityStatement](CapabilityStatement-DHPCapabilityStatement.html) for the full list of supported search parameters.
