@@ -2468,7 +2468,7 @@ msgstr ""
 # A short title used to represent this page in navigational structures such as table of contents, bread crumbs, etc.
 #: ImplementationGuide.definition.page.title
 msgid "Identifiers"
-msgstr ""
+msgstr "Identifikatorlar"
 
 # Indicates the URL or the actual content to provide for the page.
 #: ImplementationGuide.definition.page.source[x]
@@ -2498,5 +2498,5 @@ msgstr ""
 # A short title used to represent this page in navigational structures such as table of contents, bread crumbs, etc.
 #: ImplementationGuide.definition.page.title
 msgid "Vital Signs"
-msgstr ""
+msgstr "Hayotiy ko'rsatkichlar"
 
