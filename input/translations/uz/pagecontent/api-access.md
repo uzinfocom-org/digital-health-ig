@@ -6,21 +6,21 @@
 
 # Xavfsizlik va autentifikatsiya
 
-Raqamli Sog'liqni Saqlash Platformasi (DHP) doirasida xavfsizlik, maxfiylik va ishonchli kirish nazoratini ta'minlash uchun xalqaro OAuth 2.0 standarti asosida autentifikatsiya va avtorizatsiya tizimi joriy etilgan.
-U front-end va back-end ilovalari uchun ishlash stsenariylarini qo'llab-quvvatlaydi. Markazlashgan Single Sign-On (SSO) serveri bemorlar, tibbiyot xodimlari va tashqi tizimlar kabi barcha platforma ishtirokchilarini xavfsiz identifikatsiyalashni ta'minlaydi.
+Milliy raqamli sog'liqni saqlash platformasi (DHP) doirasida xavfsizlik, maxfiylik va kirishni ishonchli nazorat qilishni ta'minlash uchun OAuth 2.0 xalqaro standartiga asoslangan autentifikatsiya va avtorizatsiya tizimi joriy etilgan.
+U ilovalarning frontend va backend ssenariylarini qo'llab-quvvatlaydi. Markazlashtirilgan Single Sign-On (SSO) serveri bemorlar va tibbiyot tashkilotlaridan tortib tashqi tizimlargacha bo'lgan platformaning barcha ishtirokchilarini xavfsiz identifikatsiya qilishni ta'minlaydi.
 
-DHP ikkita asosiy autentifikatsiya stsenariysini qo'llab-quvvatlaydi:
-- Back-end ilovalar - `client_credentials` grant orqali (foydalanuvchi ishtirokisiz),
-- Front-end ilovalar - `authorization code` grant orqali, `redirect_uri` qo'llab-quvvatlovi va ixtiyoriy PKCE bilan.
+DHP autentifikatsiyaning ikkita asosiy ssenariysini qo'llab-quvvatlaydi:
+- Backend ilovalar - `client_credentials` grant turi orqali (foydalanuvchi ishtirokisiz),
+- Frontend ilovalar - `redirect_uri` qo'llab-quvvatlanadigan va ixtiyoriy PKCE bilan `authorization code` grant turi orqali.
 
 ## Back-end Integratsiyasi
 
-Ushbu bo'limda back-end ilovalar uchun OAuth 2.0 protokoli asosida `client_credentials` grant turidan foydalangan holda access token olish jarayoni bayon etiladi.
-Bu oqim xizmat foydalanuvchi nomidan emas, balki o'zi nomidan himoyalangan API'lardan foydalanishi kerak bo'lgan holatlarda qo'llaniladi.
+Ushbu bo'limda `client_credentials` grant turidan foydalangan holda OAuth 2.0 protokoli orqali backend ilovalar uchun kirish tokenini olish jarayoni tavsiflanadi.
+Ushbu oqim servis himoyalangan APIlarga foydalanuvchi nomidan emas, balki o'z nomidan kirishi zarur bo'lganda qo'llaniladi.
 
 ### Mijoz konfiguratsiyasi
 
-Back-end mijoz SSO serverida ro'yxatdan o'tgan bo'lishi kerak. Ro'yxatdan o'tgandan so'ng sizga quyidagilar taqdim etiladi:
+Backend mijoz SSO serverida ro'yxatdan o'tkazilgan bo'lishi kerak. Ro'yxatdan o'tkazilgandan so'ng quyidagilar taqdim etiladi:
 - **client_id** - provayder tomonidan berilgan identifikator
 - **client_secret** - provayder tomonidan berilgan maxfiy kalit
 
@@ -47,18 +47,18 @@ POST /oauth/token
 
 ## Front-end integratsiyasi
 
-Ushbu bo'limda front-end ilovalarning foydalanuvchilarni SSO serveri orqali standart OAuth 2.0 Authorization Code grantidan foydalangan holda avtorizatsiya qilish tartibi keltiriladi. Bu oqim DHP ekotizimi doirasida yagona kirishni va foydalanuvchilarning xavfsiz autentifikatsiyasini ta'minlaydi.
+Ushbu bo'limda frontend ilovalar OAuth 2.0 protokolining standart `Authorization Code` grant turidan foydalangan holda SSO serveri orqali foydalanuvchilarni qanday avtorizatsiya qilishi mumkinligi tavsiflanadi. Ushbu oqim DHP ekotizimida yagona kirish va foydalanuvchilarning xavfsiz autentifikatsiyasini ta'minlaydi.
 
-### Mijoz Konfiguratsiyasi
+### Mijoz konfiguratsiyasi
 
-Front-end ilova SSO serverida ro'yxatdan o'tgan bo'lishi kerak. Ro'yxatdan o'tgandan so'ng sizga quyidagilar taqdim etiladi:
+Frontend ilova SSO serverida ro'yxatdan o'tkazilgan bo'lishi kerak. Ro'yxatdan o'tkazilgandan so'ng quyidagilar taqdim etiladi:
 
 - **client_id** - provayder tomonidan berilgan identifikator
-- **redirect_uri** - sizning ilovangiz tomonidan taqdim etilgan URL manzil
+- **redirect_uri** - ilovangiz tomonidan taqdim etilgan URL-manzil
 
 ### Avtorizatsiya jarayoni
 
-**1 Foydalanuvchini SSO front-end sahifasiga yo'naltiring:**
+**1 Foydalanuvchini frontend SSOga yo'naltiring:**
 
 ```
 GET sso.dhp.uz
@@ -73,15 +73,15 @@ GET sso.dhp.uz
 
 **2 Avtorizatsiya kodi:**
 
-Muvaffaqiyatli kirishdan so'ng foydalanuvchi redirect_uri manziliga avtorizatsiya kodi bilan qayta yo'naltiriladi.
+Muvaffaqiyatli kirishdan so'ng foydalanuvchi avtorizatsiya kodi bilan `redirect_uri` manziliga qayta yo'naltiriladi.
 
-**3 Kodni token bilan almashtirish:**
+**3 Kodni tokenga almashtirish:**
 
-Bu almashtirish jarayoni `client_secret` ni himoya qilish uchun back-end'da amalga oshirilishi kerak. Agar ilovangizda back-end mavjud bo'lmasa, PKCE dan foydalaning.
+`client_secret` himoyasini ta'minlash uchun ushbu almashinuv backend tomonida bajarilishi kerak. Agar ilovada backend bo'lmasa, `PKCE`dan foydalaning.
 
-**4 Tokenni ishlatish:**
+**4 Tokendan foydalanish:**
 
-Har bir so'rovda access tokenni quyidagicha kiriting:
+Har bir so'rovga kirish tokenini qo'shing:
 
 ```
 Authorization: Bearer <access_token>
@@ -89,40 +89,40 @@ Authorization: Bearer <access_token>
 
 # Tranzaksiyalar
 
-FHIR [tranzaksiyalar](https://hl7.org/fhir/http.html#transaction) bir nechta resurslarni bitta atomik so'rovda yuborish imkonini beradi. Barcha operatsiyalar muvaffaqiyatli bajariladi yoki hech biri qo'llanilmaydi  - qisman natijalar bo'lmaydi.
+FHIR [tranzaksiyalari](https://hl7.org/fhir/http.html#transaction) bir nechta resursni bitta atomar so'rovda yuborish imkonini beradi. Yoki barcha operatsiyalar muvaffaqiyatli bajariladi, yoki hech biri qo'llanilmaydi - qisman natijalar bo'lmaydi.
 
-Tranzaksiya  - bu `type` qiymati `transaction` ga o'rnatilgan `Bundle`. Har bir yozuv (`entry`) quyidagilarni o'z ichiga oladi:
-- `fullUrl`  - `urn:uuid:` formatidagi resurs uchun vaqtinchalik identifikatori
+Tranzaksiya - bu `type` qiymati `transaction` etib belgilangan `Bundle`. Har bir `entry` quyidagilarni o'z ichiga oladi:
+- `fullUrl`  - `urn:uuid:` formatidagi resursning vaqtinchalik identifikatori
 - `resource`  - yaratish yoki yangilash uchun resurs
-- `request.method`  - HTTP usuli (`POST` yaratish uchun, `PUT` yangilash uchun)
-- `request.url`  - resurs turi (`POST` uchun) yoki resurs yo'li (`PUT` uchun)
+- `request.method`  - HTTP metodi (`POST` yaratish uchun, `PUT` yangilash uchun)
+- `request.url`  - resurs turi (`POST` uchun) yoki resursga yo'l (`PUT` uchun)
 
-Tranzaksiya ichidagi resurslar bir-biriga `urn:uuid:` qiymatlari orqali havola qilishi mumkin. Server ularni qayta ishlagandan so'ng haqiqiy identifikatorlarga almashtiradi.
+Tranzaksiya ichidagi resurslar `urn:uuid:` qiymatlari orqali bir-biriga havola qilishi mumkin. Server ularni qayta ishlashdan so'ng haqiqiy identifikatorlar bilan almashtiradi.
 
-Bundle'ni `POST [base]` orqali yuboring (aniq resurs endpoint'iga emas).
+`Bundle`ni `POST [base]` orqali yuboring (muayyan resurs endpointiga emas).
 
-**So'rov namunasi**: [Transaction Bundle JSON](Bundle-example-transaction-bundle.json)  - EpisodeOfCare, Encounter va uchta Observation yuboradi.
+**So'rov namunasi**: [Transaction Bundle JSON](Bundle-example-transaction-bundle.json) - EpisodeOfCare, Encounter va uchta Observation yuboradi.
 
 ## Server javobi
 
-Muvaffaqiyatli bajarilganda, server `transaction-response` turidagi Bundle qaytaradi. Har bir yozuv (`entry`) `response.status` va server tomonidan berilgan identifikatorli `response.location` ni o'z ichiga oladi.
+Muvaffaqiyatli bajarilganda server `transaction-response` turidagi Bundle qaytaradi. Har bir yozuv server tomonidan berilgan identifikator bilan `response.status` va `response.location` ni o'z ichiga oladi.
 
-**Namuna**: [Muvaffaqiyatli javob JSON](Bundle-example-transaction-response.json)
+**Misol**: [Muvaffaqiyatli javob JSON](Bundle-example-transaction-response.json)
 
-Agar biron-bir yozuv validatsiyadan o'tmasa, butun tranzaksiya bekor qilinadi va server xatoni tavsiflovchi `OperationOutcome` qaytaradi.
+Agar biror yozuv validatsiyadan o'tmasa, butun tranzaksiya bekor qilinadi va server xatolik tavsifi bilan `OperationOutcome` qaytaradi.
 
-**Namuna**: [Xatolik javobi JSON](OperationOutcome-example-transaction-response-error.json)
+**Misol**: [Xatolik javobi JSON](OperationOutcome-example-transaction-response-error.json)
 
 # Xatoliklarni qayta ishlash
 
-*\<to'ldiriladi – bu yerda xatoliklarni qayta ishlash tasvirlanadi\>*
+*\<to be filled in - describe error handling here\>*
 
 # Must Support
 [Must Support] ushbu implementatsiya qo'llanmasida ikki kontekstda qo'llaniladi:
 
-1. UZ Core profillari: bu element O'zbekiston ichidagi tizimlar o'rtasida almashilganda to'ldirilishi kutilishini bildiradi.
-2. DHP-ga xos profillar: bu DHP ushbu elementni qo'llab-quvvatlashini va mijoz tizimlari ma'lumot mavjud bo'lsa uni to'ldirishi shartligini bildiradi.
+1. UZ Core profillari: bu element O'zbekistondagi tizimlar o'rtasida ma'lumot almashinuvida to'ldirilishi kutilishini bildiradi.
+2. DHPning maxsus profillari: bu DHP ushbu elementni qo'llab-quvvatlashini va mijoz tizimlar, agar ma'lumotlar mavjud bo'lsa, uni to'ldirishi shartligini bildiradi.
 
-Agar element manba tizimda mavjud bo'lmagani sababli to'ldirib bo'lmasa, va agar kardinallik qoidalari bunga ruxsat etsa, element bo'sh qoldirilishi mumkin. Agar kardinallik qoidalari elementni majburiy tarzda to'ldirishni talab qilsa, [Data Absent Reason] kengaytmasidan foydalanilishi shart.
+Agar element manba tizimda mavjud bo'lmagani sababli to'ldirib bo'lmasa va kardinallik qoidalari bunga ruxsat bersa, element bo'sh qoldirilishi mumkin. Agar kardinallik qoidalari elementni majburiy to'ldirishni talab qilsa, [Data Absent Reason] kengaytmasidan foydalanish zarur.
 
 {% include markdown-link-references.md %}
