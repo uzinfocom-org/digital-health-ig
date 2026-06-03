@@ -1,0 +1,6 @@
+Code,EN,UZ,RU,,
+semver,SemVer,Semantik versiyalash,Семантическое версионирование,,http://hl7.org/fhir/ValueSet/version-algorithm
+integer,Integer,Butun son,Целое число,,
+alpha,Alphabetical,Alifbo bo‘yicha,Алфавитный,,
+date,Date,Sana,Дата,,
+natural,Natural,Tabiiy tartiblash,Естественная сортировка,,

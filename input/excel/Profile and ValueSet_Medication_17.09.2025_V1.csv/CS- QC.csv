@@ -1,0 +1,6 @@
+Code	System	Display	Definition
+  <	http://hl7.org/fhir/quantity-comparator	Less than	The actual value is less than the given value.
+  <=	http://hl7.org/fhir/quantity-comparator	Less or Equal to	The actual value is less than or equal to the given value.
+  >=	http://hl7.org/fhir/quantity-comparator	Greater or Equal to	The actual value is greater than or equal to the given value.
+  >	http://hl7.org/fhir/quantity-comparator	Greater than	The actual value is greater than the given value.
+  ad	http://hl7.org/fhir/quantity-comparator	Sufficient to achieve this total quantity	The actual value is sufficient for the total quantity to equal the given value.

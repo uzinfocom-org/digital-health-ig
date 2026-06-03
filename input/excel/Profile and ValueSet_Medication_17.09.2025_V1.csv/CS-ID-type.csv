@@ -1,0 +1,7 @@
+Code	Display UZ	Display RU	Display Eng	
+box_group_id	Dori qadoq identifikatori	Идентификатор упаковки лекарственного средства	Medicine packaging identifier	https://uzpharminfo.uz
+gtin	Global savdo elementi raqami	Глобальный номер торговой единицы	Global Trade Item Number	https://mobile-api.aslbelgisi.uz
+icps	Mahsulot va xizmatlar identifikatsiya kodlari	Идентификационные коды продукции и услуг	Product and service identification codes	https://uzpharminfo.uz
+registration_number	Ro'yxatdan o'tish guvohnomasi	Регистрационное Удостоверение 	Registration Certificate	https://uzpharminfo.uz
+marking	Markirovka	Маркировка	Marking	https://mobile-api.aslbelgisi.uz
+pharm_id	Farmasevtika agentlik dorining IDsi	Идентификатор препарата фармацевтического агентства	Pharmaceutical agency drug ID	https://uzpharmagency.uz/
