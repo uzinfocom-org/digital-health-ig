@@ -115,6 +115,42 @@ If any entry fails validation, the entire transaction is rolled back and the ser
 
 **Example**: [Error response JSON](OperationOutcome-example-transaction-response-error.json)
 
+### Concurrency {#concurrency}
+
+The platform uses optimistic locking so that two clients updating the same resource cannot silently overwrite one another (the "lost update" problem).
+
+Every read returns the resource's current version as a weak `ETag`:
+
+```
+GET [base]/Observation/[id]
+
+200 OK
+ETag: W/"3"
+```
+
+To update safely, send that value back in an `If-Match` header. The server applies the write only if the resource is still at that version, and the version then increments:
+
+```
+PUT [base]/Observation/[id]
+If-Match: W/"3"
+
+200 OK
+ETag: W/"4"
+```
+
+If someone else changed the resource since you read it, the version no longer matches and the write is rejected - nothing is overwritten:
+
+```
+PUT [base]/Observation/[id]
+If-Match: W/"3"
+
+412 Precondition Failed
+{ "resourceType": "OperationOutcome",
+  "issue": [{ "severity": "error", "code": "invalid", "details": { "text": "Version is mismatch" } }] }
+```
+
+On a `412`, re-read the resource, re-apply your change on top of the new version, and `PUT` again. A `PUT` without `If-Match` is unconditional - it overwrites whatever is on the server - so always send `If-Match` when updating a resource you previously read.
+
 ### Error handling
 
 *\<to be filled in - describe error handling here\>*

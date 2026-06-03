@@ -127,7 +127,7 @@ When several resources are related, transmit them together in a Bundle rather th
 
 - The platform supports the standard REST interactions: `GET` (read/search), `POST` (create), `PUT` (update), `PATCH` (partial update), and `DELETE`. The exact interactions per resource are declared in the [CapabilityStatement](CapabilityStatement-DHPCapabilityStatement.html).
 - Logical delete, not physical delete. Clinical data is not removed by deleting the resource. To retire a record, change its status: set `entered-in-error`, `inactive`, `revoked` or the equivalent for the resource, depending on the case. For example a withdrawn `Goal` becomes `cancelled`/`completed`, a withdrawn `Consent` is set `inactive`, an erroneous clinical record is set `entered-in-error`. The resource and its history remain queryable.
-- Concurrency. Updates use optimistic concurrency. If the resource was changed by someone else since you read it, the server responds with `409 Conflict`; re-read and retry.
+- Concurrency. Updates use optimistic locking. Keep the `ETag` from your last read and send it back as `If-Match` on the update; if someone else changed the resource since you read it, the version no longer matches and the server responds with `412 Precondition Failed` ("Version is mismatch"). Re-read and retry - see [Concurrency](api-access.html#concurrency).
 - Idempotency. For workflow and financial operations that must not be duplicated on retry, use conditional create/update so a retried request does not create a second resource.
 
 ### Errors {#errors}
@@ -146,7 +146,7 @@ When a request fails - validation, authorization, conflict - the server returns 
 }
 ```
 
-Common codes you will see: `required`/`value`/`invariant` (the resource failed profile validation), `code-invalid` (a code is not in the bound value set), `forbidden` (authorization/consent denied the request - see access control guidance), and `conflict` (a concurrency clash). Read the `diagnostics` and `expression` to find the offending element.
+Common codes you will see: `required`/`value`/`invariant` (the resource failed profile validation), `code-invalid` (a code is not in the bound value set), `forbidden` (authorization/consent denied the request - see access control guidance), and a `412` with code `invalid` (an `If-Match` version clash - see [Concurrency](api-access.html#concurrency)). Read the `diagnostics` and `expression` to find the offending element.
 
 ### Where to go next
 

@@ -33,6 +33,7 @@ POST [base]/Organization
 
 ```
 PUT [base]/Organization/[id]
+If-Match: W/"3"   # the ETag from your last read; 412 if it changed since
 { "resourceType": "Organization", "id": "[id]", "meta": { "profile": [ "https://dhp.uz/fhir/core/StructureDefinition/uz-core-organization" ] }, ... }
 ```
 

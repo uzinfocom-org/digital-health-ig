@@ -34,6 +34,7 @@ POST [base]/AdverseEvent
 
 ```
 PUT [base]/AdverseEvent/[id]
+If-Match: W/"3"   # the ETag from your last read; 412 if it changed since
 { "resourceType": "AdverseEvent", "id": "[id]", "meta": { "profile": [ "https://dhp.uz/fhir/core/StructureDefinition/uz-core-adverse-event" ] }, ... }
 ```
 

@@ -28,6 +28,7 @@ POST [base]/Location
 
 ```
 PUT [base]/Location/[id]
+If-Match: W/"3"   # the ETag from your last read; 412 if it changed since
 { "resourceType": "Location", "id": "[id]", "meta": { "profile": [ "https://dhp.uz/fhir/core/StructureDefinition/uz-core-location" ] }, ... }
 ```
 

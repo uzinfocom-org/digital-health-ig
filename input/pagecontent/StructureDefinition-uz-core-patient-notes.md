@@ -32,6 +32,7 @@ POST [base]/Patient
 
 ```
 PUT [base]/Patient/[id]
+If-Match: W/"3"   # the ETag from your last read; 412 if it changed since
 ```
 
 **Other useful searches**

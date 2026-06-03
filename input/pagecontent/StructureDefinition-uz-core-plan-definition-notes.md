@@ -38,6 +38,7 @@ Before activating, confirm the schedule passes validation (no dose-sequence gaps
 
 ```
 PUT [base]/PlanDefinition/[id]
+If-Match: W/"3"   # the ETag from your last read; 412 if it changed since
 { "resourceType": "PlanDefinition", "id": "[id]", "meta": { "profile": [ "https://dhp.uz/fhir/core/StructureDefinition/uz-core-plan-definition" ] }, ... }
 ```
 
