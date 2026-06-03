@@ -6,6 +6,20 @@ These are the FHIR server base URLs - the `[base]` shown in the API examples on 
 - **Production**: `fhir.dhp.uz`
 
 
+### Platform availability {#availability}
+
+The profiles in this guide define the target FHIR surface for DHP. The platform enables that surface in stages, so a few capabilities are not on the **playground** yet. Build to the profile as written - the request shapes shown throughout this guide are correct; where a capability is not yet live, the note below gives an interim approach.
+
+Status reflects the playground as of 2026-06-03 and changes as the rollout progresses. Treat the profiles, not this table, as the source of truth for the intended behaviour.
+
+| Capability | Playground | Working with it today |
+|------------|------------|-----------------------|
+| `AuditEvent`, `Consent`, `Provenance`, `DocumentReference` endpoints | Not yet enabled | The examples are correct for when these go live; defer these integrations for now. |
+| Date-range search on `Observation` (`date`), `Condition` (`onset-date`), `Procedure` (`date`), `Immunization` (`date`), `Specimen` (`collected`), `AdverseEvent` (`date`), `PlanDefinition` (`date`) | Returns results unfiltered by date | Apply the date filter in your client for now. `Condition` (`recorded-date`), `Encounter` (`date`) and `EpisodeOfCare` (`date`) do filter as expected. |
+| Search on `Practitioner` (`qualification-code`), `Organization` (`partof`), `Procedure` (`status`), `PlanDefinition` (`context-type-value`) | Returns results unfiltered | Filter client-side for now. |
+| `$validate-code` / `$expand` against UZ Core CodeSystems and ValueSets | Load when this IG is published to the platform | International code systems (LOINC, SNOMED CT, ICD-10, HL7) already validate. |
+
+
 ### Security and authentication
 
 To ensure security, confidentiality, and reliable access control within the National Digital Health Platform (DHP), an authentication and authorization system based on the international OAuth 2.0 standard has been implemented.
@@ -149,7 +163,7 @@ If-Match: W/"3"
   "issue": [{ "severity": "error", "code": "invalid", "details": { "text": "Version is mismatch" } }] }
 ```
 
-On a `412`, re-read the resource, re-apply your change on top of the new version, and `PUT` again. A `PUT` without `If-Match` is unconditional - it overwrites whatever is on the server - so always send `If-Match` when updating a resource you previously read.
+On a `412`, re-read the resource, re-apply your change on top of the new version, and `PUT` again. The platform requires `If-Match` on every update: a `PUT` without it is rejected with `412`, so always send back the `ETag` from your last read.
 
 ### Error handling
 
