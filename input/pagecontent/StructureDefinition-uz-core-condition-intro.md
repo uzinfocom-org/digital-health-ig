@@ -1,4 +1,4 @@
-UZ Core Condition records a diagnosis, problem, or other clinical condition for a patient on the Digital Health Platform. Conditions are coded with ICD-10 today (ICD-11 and SNOMED CT are planned). A Condition is anchored to its [Patient](StructureDefinition-uz-core-patient.html) and to the visit it was recorded in; an [Encounter](StructureDefinition-uz-core-encounter.html) in turn points back at the Condition as one of its diagnoses, and that diagnosis code is what flows through to reporting.
+UZ Core Condition records a diagnosis, problem, or other clinical condition for a patient on the Digital Health Platform. Conditions are coded with ICD-10 or SNOMED CT (ICD-11 is planned). A Condition is anchored to its [Patient](StructureDefinition-uz-core-patient.html) and to the visit it was recorded in; an [Encounter](StructureDefinition-uz-core-encounter.html) in turn points back at the Condition as one of its diagnoses, and that diagnosis code is what flows through to reporting.
 
 ### Mandatory and Must Support data elements
 
@@ -6,7 +6,7 @@ The elements below must always be present (mandatory) or must be supported when 
 
 #### Each UZ Core Condition Must Have
 
-This profile adds no mandatory cardinality of its own. The required elements are inherited from the base resource: a `clinicalStatus` (R5 makes this mandatory, 1..1) and a `subject` (the patient the condition belongs to).
+This profile adds no mandatory cardinality of its own. The required elements are inherited from the base resource: a `clinicalStatus` (1..1) and a `subject` (the patient the condition belongs to).
 
 #### Each UZ Core Condition Must Support
 
@@ -15,7 +15,7 @@ This profile adds no mandatory cardinality of its own. The required elements are
 - a clinical status (active, recurrence, remission, resolved ...) bound to the DHP clinical-status value set;
 - a verification status (provisional, confirmed, refuted, entered-in-error ...);
 - a severity (preferred binding; a disability classification is required when the code is the SNOMED *Disability* concept);
-- a code identifying the condition itself (preferred ICD-10 / DHP condition value set);
+- a code identifying the condition itself (ICD-10 or SNOMED CT; preferred binding to the DHP condition value set);
 - a diagnosis-type extension (e.g. main diagnosis, referring-institution diagnosis), 0..1;
 - a body site;
 - the subject and the encounter it was recorded in;
@@ -31,7 +31,7 @@ The examples below go from the smallest instance the server will accept to a ful
 
 #### The smallest Condition you should send
 
-A Condition's mandatory elements are `subject` (the patient it belongs to) and `clinicalStatus` - R5 makes `clinicalStatus` 1..1 - and a Condition is only useful with a `code` saying what the condition is. Every UZ Core resource must also name the profile it claims to conform to in `meta.profile`, so the server knows which rules to validate against. The `code` is bound to ICD-10 / the DHP condition value set (preferred); `clinicalStatus` is a `CodeableConcept` bound to the DHP clinical-status value set, and `subject` is a plain `Reference` to a [Patient](StructureDefinition-uz-core-patient.html). This much already passes validation:
+A Condition's mandatory elements are `subject` (the patient it belongs to) and `clinicalStatus` (both 1..1), and a Condition is only useful with a `code` saying what the condition is. Every UZ Core resource must also name the profile it claims to conform to in `meta.profile`, so the server knows which rules to validate against. The `code` is bound to the DHP condition value set (ICD-10 or SNOMED CT; preferred); `clinicalStatus` is a `CodeableConcept` bound to the DHP clinical-status value set, and `subject` is a plain `Reference` to a [Patient](StructureDefinition-uz-core-patient.html). This much already passes validation:
 
 ```json
 {
@@ -49,7 +49,7 @@ A Condition's mandatory elements are `subject` (the patient it belongs to) and `
 }
 ```
 
-ICD-10 is the coding system in use today (ICD-11 and SNOMED CT are planned). See [Terminology](general-guidance.html#terminology) for which system to use.
+ICD-10 and SNOMED CT are the coding systems in use today (ICD-11 is planned). See [Terminology](general-guidance.html#terminology) for which system to use.
 
 #### A realistic diagnosis
 
