@@ -1,3 +1,8 @@
+Invariant: uzcore-org-1
+Description: "SHIF organization identifier must match the pattern ^[A-Z]{3}[0-9]{6}$ — 3 uppercase Latin letters followed by 6 digits (e.g., OAA000024)"
+* severity = #error
+* expression = "matches('^[A-Z]{3}[0-9]{6}$')"
+
 Profile: UZCoreOrganization
 Parent: Organization
 Id: uz-core-organization
@@ -17,6 +22,7 @@ Description: "Uzbekistan Core Organization profile, used to define healthcare or
 * identifier ^slicing.description = "Ways an organization can be categorized"
 * identifier ^slicing.ordered = false
 * identifier contains taxId 0..1 MS and argosId 0..1 MS and minzdravId 0..1 MS
+* identifier contains taxId 0..1 MS and argosId 0..1 MS and shifId 0..1 MS
 
 * insert TaxIdentifier
 * insert MinzdravIdentifier
@@ -36,6 +42,23 @@ Description: "Uzbekistan Core Organization profile, used to define healthcare or
   * type = $identifier-type#XX "Minzdrav Identifier"
   * use = #official
   * value 1..1 MS
+* identifier[shifId]
+  ^short = "Identifier assigned by the State Health Insurance Fund (SHIF)"
+  * system 1..1 MS
+  * system = $organization-shif-id-system
+  * type 1..1 MS
+  * type = $identifier-type#NIIP "National Insurance Payor Identifier (Payor)"
+  * use = #official
+  * value 1..1 MS
+  * value ^short = "SHIF organization identifier (3 uppercase Latin letters + 6 digits, e.g. OAA000024)"
+  * value obeys uzcore-org-1
+  * value ^example[0].label = "SHIF organization identifier"
+  * value ^example[0].valueString = "OAA000024"
+  * period 0..1 MS
+    * start MS
+    * end MS
+  * assigner 0..1 MS
+    * ^short = "Reference to the State Health Insurance Fund (SHIF) organization (Organization with type.coding #pay)"
 
 * active 0..1 MS
 
@@ -113,7 +136,7 @@ Description: "Uzbekistan Core Organization profile, used to define healthcare or
 
 Instance: example-organization
 InstanceOf: UZCoreOrganization
-Description: "Example of a hospital organization"
+Description: "Example of a republican-level oncology center (Respublika onkologiya markazi) with full categorization, contact, and address"
 Usage: #example
 * language = #uz
 * identifier[taxId]
@@ -126,6 +149,12 @@ Usage: #example
   * type = $identifier-type#XX "Organization Identifier"
   * system = $organization-argos-id-system
   * value = "9512"
+* identifier[shifId]
+  * use = #official
+  * type = $identifier-type#NIIP "National Insurance Payor Identifier (Payor)"
+  * system = $organization-shif-id-system
+  * value = "OAA000024"
+  * period.start = "2024-01-15"
 * active = true
 * type.coding[organizationType] = organization-types-uz-cs#I "Boshqaruv boyicha taqsimlanishi"
 * type.coding[subordinationGroup] = organizational-subordination-group-cs#I_1 "Respublika tassarufidagi muassasalari"
@@ -144,6 +173,21 @@ Usage: #example
       * valueCode = #kaa
     * extension[content][+]
       * valueString = "Respublika onkologiya orayı"
+* contact
+  * telecom[+]
+    * system = #phone
+    * value = "+998711234567"
+  * telecom[+]
+    * system = #email
+    * value = "info@example.uz"
+  * telecom[+]
+    * system = #url
+    * value = "https://cancercenter.uz"
+  * address
+    * line = "Farobiy ko'chasi, 383"
+    * state = "1726"
+    * district = "1726269"
+    * country = "UZ"
 
 Instance: xonobod-medical-association
 InstanceOf: UZCoreOrganization

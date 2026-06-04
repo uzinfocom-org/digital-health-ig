@@ -1,6 +1,6 @@
 CodeSystem: StateCS
 Id: states-cs
-Title: "Uzbekistan states and Locations"
+Title: "Uzbekistan states and Locations Code System"
 Description: "List of states and locations in Uzbekistan"
 * insert OriginalCodeSystemDraft(states-cs)
 
