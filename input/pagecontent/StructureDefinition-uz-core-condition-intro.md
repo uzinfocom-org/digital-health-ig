@@ -43,7 +43,7 @@ A Condition's mandatory elements are `subject` (the patient it belongs to) and `
     "coding": [{ "system": "http://terminology.hl7.org/CodeSystem/condition-clinical", "code": "active", "display": "Active" }]
   },
   "code": {
-    "coding": [{ "system": "http://hl7.org/fhir/sid/icd-10", "code": "R51", "display": "Headache" }]
+    "coding": [{ "system": "http://hl7.org/fhir/sid/icd-10", "code": "G43.9", "display": "Migraine, unspecified" }]
   },
   "subject": { "reference": "Patient/example-patient" }
 }
@@ -68,13 +68,13 @@ In practice you send the clinical context the platform expects you to support: `
     "coding": [{ "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status", "code": "confirmed", "display": "Confirmed" }]
   },
   "code": {
-    "coding": [{ "system": "http://hl7.org/fhir/sid/icd-10", "code": "R51", "display": "Headache" }]
+    "coding": [{ "system": "http://hl7.org/fhir/sid/icd-10", "code": "G43.9", "display": "Migraine, unspecified" }]
   },
   "subject": { "reference": "Patient/example-patient" },
   "onsetDateTime": "2025-07-25",
   "recordedDate": "2025-07-29",
   "note": [
-    { "text": "Patient complained of mild headache for two days. Condition resolved after rest and hydration." }
+    { "text": "Patient reported a mild migraine lasting two days; advised rest, hydration, and analgesia." }
   ]
 }
 ```

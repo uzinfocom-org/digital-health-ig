@@ -14,7 +14,7 @@ GET [base]/Condition/[id]
 GET [base]/Condition?patient=Patient/[id]
 GET [base]/Condition?patient=Patient/[id]&category=problem-list-item
 GET [base]/Condition?patient=Patient/[id]&clinical-status=active&verification-status=confirmed
-GET [base]/Condition?patient=Patient/[id]&code=http://hl7.org/fhir/sid/icd-10%7CR51
+GET [base]/Condition?patient=Patient/[id]&code=http://hl7.org/fhir/sid/icd-10%7CG43.9
 GET [base]/Condition?encounter=Encounter/[id]
 GET [base]/Condition?patient=Patient/[id]&onset-date=ge2025-01-01
 GET [base]/Condition?patient=Patient/[id]&recorded-date=ge2025-01-01
