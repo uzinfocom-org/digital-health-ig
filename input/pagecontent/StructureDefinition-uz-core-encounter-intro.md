@@ -37,7 +37,7 @@ The examples below build up a single visit - an emergency inpatient encounter - 
 
 #### The smallest Encounter you should send
 
-`status` is the only strictly mandatory element, but an Encounter is only useful with a `class` (how the contact happened - inpatient, ambulatory, emergency) and the `subject` it concerns. Note that in R5 `class` is a **list** of `CodeableConcept`:
+`status` is the only strictly mandatory element, but an Encounter is only useful with a `class` (how the contact happened - inpatient, ambulatory, emergency) and the `subject` it concerns. Note that `class` is a **list** of `CodeableConcept`:
 
 ```json
 {

@@ -30,7 +30,7 @@ Start from the record below - every value validates against this profile, so cop
 
 #### A realistic allergy record
 
-The only strictly mandatory element is `patient`, but in practice you also send the allergen `code`, the `clinicalStatus` (active / inactive / resolved), the `verificationStatus` (how confirmed it is), the `type` (allergy or intolerance), the `category` (food / medication / environment / biologic), the `encounter` it was recorded in, and when it started (`onset[x]`). Every UZ Core resource also names the profile it claims in `meta.profile`. `clinicalStatus`, `verificationStatus`, and `type` are `CodeableConcept`s, each with its own HL7 `system`; `category` in R5 is a plain `code` list, so send the bare code:
+The only strictly mandatory element is `patient`, but in practice you also send the allergen `code`, the `clinicalStatus` (active / inactive / resolved), the `verificationStatus` (how confirmed it is), the `type` (allergy or intolerance), the `category` (food / medication / environment / biologic), the `encounter` it was recorded in, and when it started (`onset[x]`). Every UZ Core resource also names the profile it claims in `meta.profile`. `clinicalStatus`, `verificationStatus`, and `type` are `CodeableConcept`s, each with its own HL7 `system`; `category` is a plain `code` list, so send the bare code:
 
 ```json
 {
