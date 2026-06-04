@@ -25,7 +25,7 @@ The examples below go from the smallest instance the server will accept to a ful
 
 #### The smallest HealthcareService you should send
 
-This profile and the base resource add no mandatory elements, so the absolute minimum is just the profile claim in `meta.profile`. In practice you should always send the `active` flag and a `name` so the service is usable in the catalogue and as a referral target:
+This profile and the base resource add no mandatory elements, so the absolute minimum is just the profile claim in `meta.profile`. That is not useful on its own - always send the `active` flag and a `name` so the entry is identifiable in the catalogue. To make the service routable for referrals or classifiable as a lab test, add the `category` and `type` shown next:
 
 ```json
 {
