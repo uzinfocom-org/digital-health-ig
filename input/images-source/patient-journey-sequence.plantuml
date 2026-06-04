@@ -6,9 +6,9 @@ actor "Clinician\n(GP)" as GP
 participant "DHP\nFHIR server" as DHP
 actor "Clinician\n(specialist)" as Spec
 
-GP -> DHP : confirming result recorded (Observation)
-GP -> DHP : POST EpisodeOfCare (status = active)\nperiod.start = diagnosis date
-GP -> DHP : POST Encounter (episodeOfCare -> EpisodeOfCare)\n+ Condition (the diagnosis)
+GP -> DHP : confirming result recorded ([[StructureDefinition-uz-core-observation.html Observation]])
+GP -> DHP : POST [[StructureDefinition-uz-core-episodeofcare.html EpisodeOfCare]] (status = active)\nperiod.start = diagnosis date
+GP -> DHP : POST [[StructureDefinition-uz-core-encounter.html Encounter]] (episodeOfCare -> EpisodeOfCare)\n+ [[StructureDefinition-uz-core-condition.html Condition]] (the diagnosis)
 
 note over DHP : every visit, result and prescription\nin the case references the episode
 loop each visit during the case
