@@ -42,7 +42,7 @@ Description: "UZ Core profile for Stores and represents the National Immunizatio
 // server. Every UZ Core immunization schedule carries a fixed focus context, so it is found with
 // GET [base]/PlanDefinition?context-type-value=focus$http://snomed.info/sct|33879002
 * useContext 1..* MS
-* useContext ^slicing.discriminator.type = #pattern
+* useContext ^slicing.discriminator.type = #value
 * useContext ^slicing.discriminator.path = "code"
 * useContext ^slicing.rules = #open
 * useContext ^slicing.description = "Distinguishes immunization schedules from other PlanDefinitions"
