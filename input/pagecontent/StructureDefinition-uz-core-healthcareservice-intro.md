@@ -80,6 +80,7 @@ Laboratory services are catalogued through a dedicated lab slice on `category` a
 The platform serves Uzbek, Russian and Karakalpak. The `name` holds the authoritative Uzbek text; translations travel as a `translation` extension on the `_name` companion element (note the leading underscore - that is where FHIR puts extensions on a primitive). Each translation pairs a `lang` code with the translated `content`:
 
 ```json
+"name": "IHC-ga xos",
 "_name": {
   "extension": [
     {
@@ -100,6 +101,6 @@ The platform serves Uzbek, Russian and Karakalpak. The `name` holds the authorit
 }
 ```
 
-This `_name` block sits alongside the plain `name` field in the same resource. Add one `translation` extension per language you hold.
+The `name` carries the authoritative Uzbek text; the `_name` companion holds its Russian and Karakalpak translations, paired field-by-field. Add one `translation` extension per language you hold.
 
 For example API calls and a sample payload, see the [Quick Start](#quick-start) at the bottom of this page.
