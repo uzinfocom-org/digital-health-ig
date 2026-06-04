@@ -82,8 +82,6 @@ pages:
       title: Immunization
     workflow-referral.md:
       title: e-Referral lifecycle
-    workflow-clinical-document.md:
-      title: Clinical document creation & signing
     workflow-patient-journey.md:
       title: Patient journey (Episode of Care)
     workflow-prescription.md:
