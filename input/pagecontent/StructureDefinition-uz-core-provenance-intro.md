@@ -6,7 +6,7 @@ The elements below must always be present (mandatory) or must be supported when 
 
 #### Each UZ Core Provenance Must Have
 
-This profile adds no mandatory cardinality of its own. The required elements are the ones inherited from the base resource: at least one target (the resource this Provenance describes) and at least one agent with a who (the actor responsible). Here `target` is constrained to a [DocumentReference](https://hl7.org/fhir/R5/documentreference.html) or Medication, and `agent.who` to a [PractitionerRole](StructureDefinition-uz-core-practitioner-role.html).
+This profile adds no mandatory cardinality of its own. The required elements are the ones inherited from the base resource: at least one target (the resource this Provenance describes) and at least one agent with a who (the actor responsible). Here the target is constrained to a [DocumentReference](https://hl7.org/fhir/R5/documentreference.html) or Medication, and the agent's who to a [PractitionerRole](StructureDefinition-uz-core-practitioner-role.html).
 
 #### Each UZ Core Provenance Must Support
 

@@ -6,10 +6,7 @@ The elements below must always be present (mandatory) or must be supported when 
 
 #### Each UZ Core Socioeconomic Observation Must Have
 
-- a subject - the [Patient](StructureDefinition-uz-core-patient.html) the record is about (1..1);
-- a code carrying the socioeconomic observation type, through the required `socioeconomicType` coding *slice* (1..1) - one of: *Eligible for benefit*, *Educational achievement*, *Occupation*, or *Social status* (SNOMED CT, bound to the DHP socioeconomic-observation-codes value set);
-- an effectiveDateTime - when the data was recorded or applies (1..1);
-- a status (inherited from the base resource).
+Every Socioeconomic Observation must carry a subject - the [Patient](StructureDefinition-uz-core-patient.html) the record is about (1..1), a code carrying the socioeconomic observation type through the required socioeconomicType coding slice (1..1) - one of *Eligible for benefit*, *Educational achievement*, *Occupation*, or *Social status* (SNOMED CT, bound to the DHP socioeconomic-observation-codes value set) - an effectiveDateTime (when the data was recorded or applies, 1..1), and a status inherited from the base resource.
 
 #### Each UZ Core Socioeconomic Observation Must Support
 

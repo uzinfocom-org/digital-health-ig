@@ -6,12 +6,7 @@ The elements below must always be present (mandatory) or must be supported when 
 
 #### Each UZ Core Immunization Must Have
 
-- a status - `completed` (the dose was administered), `not-done` (a medical exemption or refusal, in which case give the status reason), or `entered-in-error`;
-- the vaccine code - which vaccine was given (or would have been);
-- the patient the record is about;
-- an occurrence - the date the vaccine was administered (a date/time, or a string when only an approximate date is known);
-- where a performer is recorded, the actor who administered the dose;
-- where a protocol is recorded, the dose number within the series.
+Every Immunization must carry a status - completed (the dose was administered), not-done (a medical exemption or refusal, in which case give the status reason), or entered-in-error - the vaccine code saying which vaccine was given (or would have been), the patient the record is about, and an occurrence (the date it was administered, as a date/time, or a string when only an approximate date is known). Where a performer is recorded, the actor who administered the dose is mandatory, and where a protocol is recorded, so is the dose number within the series.
 
 #### Each UZ Core Immunization Must Support
 

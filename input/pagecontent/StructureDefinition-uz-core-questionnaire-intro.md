@@ -6,8 +6,7 @@ The elements below must always be present (mandatory) or must be supported when 
 
 #### Each UZ Core Questionnaire Must Have
 
-- a title in Uzbek (1..1), which may carry `translation` extensions for Russian and Karakalpak;
-- a status (draft, active, retired, unknown), inherited as mandatory from the base resource.
+Every Questionnaire must carry a title in Uzbek (1..1), which may bear translation extensions for Russian and Karakalpak, and a status (draft, active, retired, unknown) inherited as mandatory from the base resource.
 
 #### Each UZ Core Questionnaire Must Support
 

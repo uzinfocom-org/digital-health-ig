@@ -6,7 +6,7 @@ The elements below must always be present (mandatory) or must be supported when 
 
 #### Each UZ Core Condition Must Have
 
-This profile adds no mandatory cardinality of its own. The required elements are inherited from the base resource: a `clinicalStatus` (1..1) and a `subject` (the patient the condition belongs to).
+This profile adds no mandatory cardinality of its own. The required elements are inherited from the base resource: a clinical status (1..1) and a subject (the patient the condition belongs to).
 
 #### Each UZ Core Condition Must Support
 

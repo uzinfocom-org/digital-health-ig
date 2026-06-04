@@ -6,8 +6,7 @@ The elements below must always be present (mandatory) or must be supported when 
 
 #### Each UZ Core QuestionnaireResponse Must Have
 
-- a questionnaire reference to the [UZ Core Questionnaire](StructureDefinition-uz-core-questionnaire.html) being answered (1..1);
-- a status (in-progress, completed, amended, entered-in-error, stopped), inherited as mandatory from the base resource.
+Every QuestionnaireResponse must carry a questionnaire reference to the [UZ Core Questionnaire](StructureDefinition-uz-core-questionnaire.html) being answered (1..1) and a status (in-progress, completed, amended, entered-in-error, stopped) inherited as mandatory from the base resource.
 
 #### Each UZ Core QuestionnaireResponse Must Support
 

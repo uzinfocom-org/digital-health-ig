@@ -6,7 +6,7 @@ The elements below must always be present (mandatory) or must be supported when 
 
 #### Each UZ Core Goal Must Have
 
-This profile adds no mandatory cardinality of its own. The required elements are inherited from the base resource: a `lifecycleStatus`, a `description` of the goal, and a `subject` (the patient it is for).
+This profile adds no mandatory cardinality of its own. The required elements are inherited from the base resource: a lifecycle status, a description of the goal, and a subject (the patient it is for).
 
 #### Each UZ Core Goal Must Support
 

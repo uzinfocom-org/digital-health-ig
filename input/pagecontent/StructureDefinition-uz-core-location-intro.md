@@ -6,7 +6,7 @@ The elements below must always be present (mandatory) or must be supported when 
 
 #### Each UZ Core Location Must Have
 
-- a name in Uzbek - the authoritative location name, with Russian and Karakalpak provided as translation extensions.
+The only mandatory element this profile adds is a name in Uzbek - the authoritative location name, with Russian and Karakalpak provided as translation extensions.
 
 #### Each UZ Core Location Must Support
 

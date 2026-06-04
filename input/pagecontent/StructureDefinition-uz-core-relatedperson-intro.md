@@ -6,8 +6,7 @@ The elements below must always be present (mandatory) or must be supported when 
 
 #### Each UZ Core RelatedPerson Must Have
 
-- at least one identifier - a national or document identifier from one of the defined slices (PINFL, local or international passport, birth certificate, driver's licence, diplomatic passport, health card, or military ID). Where a value is genuinely absent, the identifier may carry a `data-absent-reason`. See [Identifier systems](identifiers.html) for the supported system URIs;
-- a patient reference - the patient this person is related to (must point to a UZ Core Patient).
+Every RelatedPerson must carry at least one identifier - a national or document identifier from one of the defined slices (PINFL, local or international passport, birth certificate, driver's licence, diplomatic passport, health card, or military ID); where a value is genuinely absent, the identifier may carry a data-absent-reason (see [Identifier systems](identifiers.html) for the supported system URIs). It must also carry a patient reference - the patient this person is related to (must point to a UZ Core Patient).
 
 #### Each UZ Core RelatedPerson Must Support
 

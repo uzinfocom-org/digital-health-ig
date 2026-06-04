@@ -6,7 +6,7 @@ The elements below must always be present (mandatory) or must be supported when 
 
 #### Each UZ Core AdverseEvent Must Have
 
-This profile adds no mandatory cardinality of its own. The required elements are inherited from the base resource: the `status` of the record (1..1), the `actuality` - actual harm versus a potential near-miss (1..1) - and the `subject` the event happened to (1..1). In practice you will also always populate the suspect entity (see Must Support below).
+This profile adds no mandatory cardinality of its own. The required elements are inherited from the base resource: the status of the record (1..1), the actuality - actual harm versus a potential near-miss (1..1) - and the subject the event happened to (1..1). In practice you will also always populate the suspect entity (see Must Support below).
 
 #### Each UZ Core AdverseEvent Must Support
 

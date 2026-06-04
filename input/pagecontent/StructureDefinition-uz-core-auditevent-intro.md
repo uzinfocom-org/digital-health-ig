@@ -6,7 +6,7 @@ The elements below must always be present (mandatory) or must be supported when 
 
 #### Each UZ Core AuditEvent Must Have
 
-This profile adds no top-level mandatory cardinality of its own. The required elements are the ones inherited from the base resource: a code (what happened), a recorded timestamp, at least one agent with a who, and a source with an observer. Within the dhpCategory category slice, when present, the system (DICOM `dcm`) and code are each 1..1.
+This profile adds no top-level mandatory cardinality of its own. The required elements are the ones inherited from the base resource: a code (what happened), a recorded timestamp, at least one agent with a who, and a source with an observer. Within the dhpCategory category slice, when present, the system (DICOM dcm) and code are each 1..1.
 
 #### Each UZ Core AuditEvent Must Support
 

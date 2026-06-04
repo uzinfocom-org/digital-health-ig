@@ -6,10 +6,7 @@ The elements below must always be present (mandatory) or must be supported when 
 
 #### Each UZ Core ImmunizationRecommendation Must Have
 
-- the patient the forecast is for;
-- the date the recommendation was created;
-- at least one recommendation entry, each of which must carry a forecast status (due, overdue, scheduled, etc.) and either a vaccine code or a target disease (the `uzcore-imrec-1` rule requires at least one of the two);
-- where a date criterion is given, its code (which kind of date) and its value (the date itself).
+Every ImmunizationRecommendation must name the patient the forecast is for, the date the recommendation was created, and at least one recommendation entry. Each entry must carry a forecast status (due, overdue, scheduled, etc.) and either a vaccine code or a target disease - the uzcore-imrec-1 rule requires at least one of the two - and where a date criterion is given, both its code (which kind of date) and its value (the date itself) are mandatory.
 
 #### Each UZ Core ImmunizationRecommendation Must Support
 
