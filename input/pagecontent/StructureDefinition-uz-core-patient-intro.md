@@ -1,4 +1,4 @@
-UZ Core Patient carries the administrative and demographic information that identifies a patient across the Digital Health Platform. It is the anchor that almost every clinical resource references through `subject` or `patient`. Patient identity is mastered centrally - in most workflows you will search for an existing Patient by identifier before creating a new one (see Quick Start below), so that the same person is not registered twice.
+UZ Core Patient carries the administrative and demographic information that identifies a patient across the Digital Health Platform. It is the anchor that almost every clinical resource points back to. Patient identity is mastered centrally - in most workflows you will search for an existing Patient by identifier before creating a new one (see Quick Start below), so that the same person is not registered twice.
 
 ### Mandatory and Must Support data elements
 

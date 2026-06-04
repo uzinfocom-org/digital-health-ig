@@ -1,4 +1,4 @@
-UZ Core Specimen represents a laboratory or other clinical specimen collected from a patient on the Digital Health Platform. In the laboratory flow it sits between the order and the result: `Specimen.request` references the `ServiceRequest` that triggered collection, and `Observation.specimen` on the result references back to the specimen. It carries the specimen type, the collection date/time, and identifiers used to track and match the specimen across systems.
+UZ Core Specimen represents a laboratory or other clinical specimen collected from a patient on the Digital Health Platform. In the laboratory flow it sits between the order and the result: it references the ServiceRequest that triggered collection, and the resulting [Observation](StructureDefinition-uz-core-observation.html) references back to the specimen it was measured on.
 
 ### Mandatory and Must Support data elements
 

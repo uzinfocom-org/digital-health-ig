@@ -1,4 +1,4 @@
-UZ Core Location represents a physical place - a building, department, branch, ward, room, or bed - operated by an [Organization](StructureDefinition-uz-core-organization.html). It is referenced by [Encounter](StructureDefinition-uz-core-encounter.html) to say where care happened and by [HealthcareService](StructureDefinition-uz-core-healthcareservice.html) to say where a service is delivered. Locations can nest through `partOf` (for example a ward inside a building inside a site).
+UZ Core Location represents a physical place - a building, department, branch, ward, room, or bed - operated by an [Organization](StructureDefinition-uz-core-organization.html). It is referenced by [Encounter](StructureDefinition-uz-core-encounter.html) to say where care happened and by [HealthcareService](StructureDefinition-uz-core-healthcareservice.html) to say where a service is delivered. Locations can nest, for example a ward inside a building inside a site.
 
 ### Mandatory and Must Support data elements
 

@@ -1,4 +1,4 @@
-UZ Core AuditEvent is the immutable audit log of who accessed or changed what on the Digital Health Platform. It follows the IHE ATNA / DICOM audit model: the platform logs reads, creates, updates, deletes, searches, logins and break-glass events. A search records its query (base64-encoded) in `entity.query`, and failed or denied access (HTTP 401 / 403) is logged with a failure `outcome`. AuditEvents are written by the platform and are read-only to clients; they link to the [Patient](StructureDefinition-uz-core-patient.html) whose data was involved through `patient`.
+UZ Core AuditEvent is the immutable audit log of who accessed or changed what on the Digital Health Platform. It follows the IHE ATNA / DICOM audit model: the platform logs reads, creates, updates, deletes, searches, logins and break-glass events, recording the query behind a search and flagging failed or denied access (HTTP 401 / 403). AuditEvents are written by the platform and are read-only to clients; they link to the [Patient](StructureDefinition-uz-core-patient.html) whose data was involved.
 
 ### Mandatory and Must Support data elements
 

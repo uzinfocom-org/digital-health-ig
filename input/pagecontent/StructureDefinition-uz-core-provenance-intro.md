@@ -1,4 +1,4 @@
-UZ Core Provenance records the origin, authorship and signature of a clinical record on the Digital Health Platform. Every clinically significant record should have a Provenance saying who recorded it and when; for signed documents the digital signature - created via MyID biometric authentication or EDS / E-IMZO - is carried in `Provenance.signature`, and `Provenance.target` references the signed resource. Provenance is generally written by the originating system alongside the data it describes, so most clients will read it rather than create it.
+UZ Core Provenance records the origin, authorship and signature of a clinical record on the Digital Health Platform. Every clinically significant record should have a Provenance saying who recorded it and when; for signed documents it carries the digital signature - created via MyID biometric authentication or EDS / E-IMZO - and references the signed resource. Provenance is generally written by the originating system alongside the data it describes, so most clients will read it rather than create it.
 
 ### Mandatory and Must Support data elements
 

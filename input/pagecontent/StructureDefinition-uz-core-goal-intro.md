@@ -1,4 +1,4 @@
-UZ Core Goal records a health goal for a patient on the Digital Health Platform - a target the patient is working towards, such as a target weight, a target HbA1c, a blood-pressure target, or a physical-activity target. Goals are often set by the patient in the portal. A Goal may address a [Condition](StructureDefinition-uz-core-condition.html) (through `addresses`) and its result may be measured by an [Observation](StructureDefinition-uz-core-observation.html) (through `outcome`).
+UZ Core Goal records a health goal for a patient on the Digital Health Platform - a target the patient is working towards, such as a target weight, a target HbA1c, a blood-pressure target, or a physical-activity target. Goals are often set by the patient in the portal. A Goal may address a [Condition](StructureDefinition-uz-core-condition.html), and its result may be measured by an [Observation](StructureDefinition-uz-core-observation.html).
 
 ### Mandatory and Must Support data elements
 
