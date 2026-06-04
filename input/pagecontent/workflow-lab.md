@@ -45,7 +45,7 @@ POST [base]/Specimen
 Each analyte is an [Observation](StructureDefinition-uz-core-observation.html) with a LOINC `code`, a `value[x]`, an `interpretation` (normal / high / low / critical) and a `referenceRange`. Each Observation sets `basedOn` to the ServiceRequest and `specimen` to the Specimen. The set is summarised by a `DiagnosticReport` whose `basedOn` is the ServiceRequest and whose `result` lists the Observations.
 
 ```
-GET [base]/Observation?based-on=ServiceRequest/[id]
+GET [base]/DiagnosticReport?based-on=ServiceRequest/[id]&_include=DiagnosticReport:result
 GET [base]/Observation?patient=Patient/[id]&category=laboratory&_sort=-date
 ```
 
