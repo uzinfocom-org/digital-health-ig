@@ -24,7 +24,7 @@ A few rules apply to every workflow:
 
 ### How resources relate
 
-Most clinical data hangs off the patient through a small number of reference patterns:
+Most clinical data hangs off the patient through a small number of reference patterns. The diagram below maps that core backbone - it is not an exhaustive list of every profile (see [Artifacts](artifacts.html) for the full set):
 
 <div>{% include resource-relationships.svg %}</div><br clear="all"/>
 
