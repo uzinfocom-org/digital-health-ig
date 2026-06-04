@@ -16,15 +16,24 @@ Description: "Uzbekistan Core Organization profile, used to define healthcare or
 * identifier ^slicing.rules = #open
 * identifier ^slicing.description = "Ways an organization can be categorized"
 * identifier ^slicing.ordered = false
-* identifier contains taxId 0..1 MS and argosId 0..1 MS
+* identifier contains taxId 0..1 MS and argosId 0..1 MS and minzdravId 0..1 MS
 
 * insert TaxIdentifier
+* insert MinzdravIdentifier
 
 * identifier[argosId]
   * system 1..1 MS
   * system = $organization-argos-id-system
   * type 1..1 MS
   * type = $identifier-type#XX "Organization Identifier"
+  * use = #official
+  * value 1..1 MS
+
+* identifier[minzdravId]
+  * system 1..1 MS
+  * system = $organization-minzdrav-id-system
+  * type 1..1 MS
+  * type = $identifier-type#XX "Minzdrav Identifier"
   * use = #official
   * value 1..1 MS
 
