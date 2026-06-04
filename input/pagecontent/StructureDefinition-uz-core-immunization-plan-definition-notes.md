@@ -19,17 +19,19 @@ GET [base]/PlanDefinition?name=NationalImmunizationSchedule
 GET [base]/PlanDefinition?title=National%20Immunization%20Schedule
 GET [base]/PlanDefinition?version=1.0.0
 
-# by publication date, jurisdiction, or use-context value
+# by publication date or jurisdiction
 GET [base]/PlanDefinition?date=ge2026-01-01
 GET [base]/PlanDefinition?jurisdiction=urn:iso:std:iso:3166%7CUZ
-GET [base]/PlanDefinition?context-type-value=focus$http://snomed.info/sct%7C14189004
+
+# only immunization schedules (tells them apart from other PlanDefinitions on the server)
+GET [base]/PlanDefinition?context-type-value=focus$http://snomed.info/sct%7C33879002
 ```
 
 **Create a schedule**
 
 ```
 POST [base]/PlanDefinition
-{ "resourceType": "PlanDefinition", "meta": { "profile": [ "https://dhp.uz/fhir/core/StructureDefinition/uz-core-plan-definition" ] }, ... }
+{ "resourceType": "PlanDefinition", "meta": { "profile": [ "https://dhp.uz/fhir/core/StructureDefinition/uz-core-immunization-plan-definition" ] }, ... }
 ```
 
 Before activating, confirm the schedule passes validation (no dose-sequence gaps, no impossible timing windows) and that no other version is already active for the same scope.
@@ -38,7 +40,7 @@ Before activating, confirm the schedule passes validation (no dose-sequence gaps
 
 ```
 PUT [base]/PlanDefinition/[id]
-{ "resourceType": "PlanDefinition", "id": "[id]", "meta": { "profile": [ "https://dhp.uz/fhir/core/StructureDefinition/uz-core-plan-definition" ] }, ... }
+{ "resourceType": "PlanDefinition", "id": "[id]", "meta": { "profile": [ "https://dhp.uz/fhir/core/StructureDefinition/uz-core-immunization-plan-definition" ] }, ... }
 ```
 
 ### Related

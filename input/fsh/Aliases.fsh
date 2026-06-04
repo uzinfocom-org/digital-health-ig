@@ -122,6 +122,7 @@ Alias: $temp-medical-record-pattern = https://dhp.uz/fhir/core/sid/pid/uz/prn/00
 Alias: $translation-extension = http://hl7.org/fhir/StructureDefinition/translation
 Alias: $triggered-by-type = http://hl7.org/fhir/observation-triggeredbytype
 Alias: $unknownpatient = https://dhp.uz/fhir/core/sid/pid/uz/mrt
+Alias: $usage-context-type = http://terminology.hl7.org/CodeSystem/usage-context-type
 Alias: $v2-0131 = http://terminology.hl7.org/CodeSystem/v2-0131
 Alias: $v2-0443 = http://terminology.hl7.org/CodeSystem/v2-0443
 Alias: $v2-0487 = http://terminology.hl7.org/CodeSystem/v2-0487

@@ -463,7 +463,7 @@ Description: "Пример заполненного опросника удов�
 Instance: example-activity-definition
 InstanceOf: ActivityDefinition
 Title: "Example ActivityDefinition"
-Description: "Example ActivityDefinition used by the UZ Core PlanDefinition example to represent the vaccination activity referenced from a plan action."
+Description: "Example ActivityDefinition used by the UZ Core Immunization PlanDefinition example to represent the vaccination activity referenced from a plan action."
 Usage: #example
 
 * id = "example-activity-definition"
