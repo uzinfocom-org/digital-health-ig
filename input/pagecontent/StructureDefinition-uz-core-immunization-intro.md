@@ -29,7 +29,7 @@ The examples below go from the smallest instance the server will accept to a ful
 
 #### The smallest Immunization you should send
 
-Four elements are mandatory: `status`, `vaccineCode`, `patient`, and an `occurrence`. The vaccine code may be a CVX code or a SNOMED CT code; the occurrence is usually a `occurrenceDateTime`. Every UZ Core resource must also name the profile it claims to conform to in `meta.profile`. This much already passes validation:
+Four elements are mandatory: `status`, `vaccineCode`, `patient`, and an `occurrence`. The vaccine code may be a CVX code or an Australian Immunisation Register (AIR) code; the occurrence is usually a `occurrenceDateTime`. Every UZ Core resource must also name the profile it claims to conform to in `meta.profile`. This much already passes validation:
 
 ```json
 {
@@ -39,9 +39,9 @@ Four elements are mandatory: `status`, `vaccineCode`, `patient`, and an `occurre
   "vaccineCode": {
     "coding": [
       {
-        "system": "http://snomed.info/sct",
-        "code": "150971000119104",
-        "display": "Measles, mumps and rubella vaccination given (situation)"
+        "system": "http://hl7.org/fhir/sid/cvx",
+        "code": "03",
+        "display": "measles, mumps and rubella virus vaccine"
       }
     ]
   },
@@ -50,7 +50,7 @@ Four elements are mandatory: `status`, `vaccineCode`, `patient`, and an `occurre
 }
 ```
 
-`status` is bound `required` to `completed` / `not-done` / `entered-in-error`. `vaccineCode` uses an `extensible` binding - CVX (`http://hl7.org/fhir/sid/cvx`) and SNOMED CT (`http://snomed.info/sct`) are both fine. When only an approximate date is known, send `occurrenceString` instead of `occurrenceDateTime`.
+`status` is bound `required` to `completed` / `not-done` / `entered-in-error`. `vaccineCode` uses an `extensible` binding to the [vaccine code value set](ValueSet-vaccine-code-vs.html) - CVX (`http://hl7.org/fhir/sid/cvx`) and the Australian Immunisation Register (AIR) are the systems in use. When only an approximate date is known, send `occurrenceString` instead of `occurrenceDateTime`.
 
 #### A realistic administered dose
 
