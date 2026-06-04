@@ -57,6 +57,8 @@ GET [base]/Encounter?episode-of-care=EpisodeOfCare/[id]&_sort=-date
 GET [base]/Observation?patient=Patient/[id]&_sort=-date
 ```
 
+Because every visit, result and prescription carries the episode reference, this returns the whole case as one thread - which is the point of grouping by `EpisodeOfCare` rather than leaving the records scattered across encounters.
+
 ### Related
 
 - Profiles: [EpisodeOfCare](StructureDefinition-uz-core-episodeofcare.html) &middot; [Encounter](StructureDefinition-uz-core-encounter.html) &middot; [Condition](StructureDefinition-uz-core-condition.html) &middot; [Observation](StructureDefinition-uz-core-observation.html)

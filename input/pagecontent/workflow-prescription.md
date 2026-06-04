@@ -54,6 +54,8 @@ GET [base]/MedicationRequest?patient=Patient/[id]&status=active
 GET [base]/MedicationDispense?prescription=MedicationRequest/[id]
 ```
 
+The `authorizingPrescription` link means a dispense always reads back against the prescription that authorized it, so SHIF and the patient see the full supply history for each order.
+
 ### Related
 
 - Profiles: [Condition](StructureDefinition-uz-core-condition.html) &middot; [Patient](StructureDefinition-uz-core-patient.html) &middot; [PractitionerRole](StructureDefinition-uz-core-practitioner-role.html)

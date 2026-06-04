@@ -1,4 +1,4 @@
-UZ Core EpisodeOfCare groups a series of [Encounters](StructureDefinition-uz-core-encounter.html) into one ongoing case of care managed by an organization on the Digital Health Platform - for example a pregnancy pathway or a chronic-disease management programme. It is anchored to its [Patient](StructureDefinition-uz-core-patient.html), owned by a managing [Organization](StructureDefinition-uz-core-organization.html), and addresses one or more ICD-10-coded [Conditions](StructureDefinition-uz-core-condition.html). Decide deliberately whether to open a new episode or reuse one: an acute, curable condition's episode is closed once the patient is cured, whereas a lifelong chronic condition's episode stays active for years and may be transferred between organizations.
+UZ Core EpisodeOfCare groups a series of [Encounters](StructureDefinition-uz-core-encounter.html) into one ongoing case of care managed by an organization on the Digital Health Platform - for example a pregnancy pathway or a chronic-disease management programme. It is anchored to its [Patient](StructureDefinition-uz-core-patient.html), owned by a managing [Organization](StructureDefinition-uz-core-organization.html), and addresses one or more [Conditions](StructureDefinition-uz-core-condition.html). Decide deliberately whether to open a new episode or reuse one: an acute, curable condition's episode is closed once the patient is cured, whereas a lifelong chronic condition's episode stays active for years and may be transferred between organizations.
 
 ### Mandatory and Must Support data elements
 
@@ -15,8 +15,8 @@ This profile adds no mandatory cardinality of its own. The required elements are
 - an identifier;
 - the status (required binding) and the statusHistory (each past `status` and its `period`);
 - a type classifying the episode;
-- the reason, with a `use` and a `value` (a Condition, Procedure, Observation, or HealthcareService, bound to ICD-10);
-- the diagnosis, with its condition (a Condition reference, ICD-10-bound) and its use (role of the diagnosis);
+- the reason, with a `use` and a `value` (a Condition, Procedure, Observation, or HealthcareService);
+- the diagnosis, with its condition (a Condition reference) and its use (role of the diagnosis);
 - the patient and the managingOrganization responsible for coordinating care;
 - the overall period;
 - the referralRequest (a ServiceRequest);
@@ -79,7 +79,7 @@ In practice you send the things that let the platform manage and find the episod
 
 #### Adding the reason and diagnosis
 
-The clinical content of the episode is its `reason` (why care is being given) and its `diagnosis` (the conditions being addressed). Both `reason.value` and `diagnosis.condition` are `CodeableReference` types bound to ICD-10, so the reference sits one level deeper (`{ "reference": { "reference": "..." } }`) than the plain references above. Each `diagnosis.use` records the role of that diagnosis (here `DD`, the primary diagnosis):
+The clinical content of the episode is its `reason` (why care is being given) and its `diagnosis` (the conditions being addressed). Both `reason.value` and `diagnosis.condition` are `CodeableReference` types, so the reference sits one level deeper (`{ "reference": { "reference": "..." } }`) than the plain references above. Each `diagnosis.use` records the role of that diagnosis (here `DD`, the primary diagnosis):
 
 ```json
 {
@@ -116,7 +116,7 @@ The clinical content of the episode is its `reason` (why care is being given) an
 }
 ```
 
-`reason.value` may point at a [Condition](StructureDefinition-uz-core-condition.html), Procedure, Observation, or HealthcareService; `diagnosis.condition` must be a [Condition](StructureDefinition-uz-core-condition.html). See [Terminology](general-guidance.html#terminology) for the ICD-10 binding these elements share.
+`reason.value` may point at a [Condition](StructureDefinition-uz-core-condition.html), Procedure, Observation, or HealthcareService; `diagnosis.condition` must be a [Condition](StructureDefinition-uz-core-condition.html).
 
 #### Recording how the status changed over time
 
