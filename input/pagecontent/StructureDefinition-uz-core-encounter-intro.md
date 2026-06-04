@@ -139,8 +139,6 @@ Fill in when it happened (`actualPeriod`), what kind of service it was (`type`),
 }
 ```
 
-`reason.value`, `serviceType` and `diagnosis.condition` are `CodeableReference` types - the reference sits one level deeper (`"value": [{ "reference": { "reference": "..." } }]`) than a plain `Reference`.
-
 #### Diagnosis, admission and location
 
 For an admission, add the `diagnosis` list (each `condition` is a `CodeableReference` to a [Condition](StructureDefinition-uz-core-condition.html)), the `admission` detail (admit source, re-admission flag, discharge disposition - all required bindings), and where it took place. If you include a `location` entry you must name the place - `location.location` is mandatory:
