@@ -15,6 +15,9 @@ Description: "UZCoreServiceRequest defines how laboratory orders are represented
 * intent MS
 * intent from ServiceRequestIntentVS
 * intent ^short = "Indicates the level of obligation and intent of the service request, specifying whether the request represents an official order to be performed."
+* category MS
+* category only CodeableReference(LabServiceCategoriesVS)
+* category ^short = "The category of the laboratory service being requested, such as hematology, biochemistry, or microbiology. This element provides a high-level classification of the type of laboratory service being ordered."
 * doNotPerform MS
 * doNotPerform ^short = "Indicates that the service described by the ServiceRequest should not be performed."
 * code MS
