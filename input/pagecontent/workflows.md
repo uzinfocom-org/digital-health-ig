@@ -9,8 +9,11 @@ Each workflow describes the actors, the sequence of FHIR interactions, and the k
 | [Immunization](workflow-immunization.html) | National schedule &rarr; recommendation &rarr; recording a dose | [PlanDefinition](StructureDefinition-uz-core-plan-definition.html), [ImmunizationRecommendation](StructureDefinition-uz-core-immunization-recommendation.html), [Immunization](StructureDefinition-uz-core-immunization.html), [AdverseEvent](StructureDefinition-uz-core-adverse-event.html) |
 | [Laboratory order to result](workflow-lab.html) | Ordering a test and returning the result | ServiceRequest, [Specimen](StructureDefinition-uz-core-specimen.html), [Observation](StructureDefinition-uz-core-observation.html), DiagnosticReport |
 | [e-Referral lifecycle](workflow-referral.html) | Creating and fulfilling a referral, including the state-insurance approval chain | ServiceRequest, Task, [Procedure](StructureDefinition-uz-core-procedure.html) |
+| [Clinical document creation & signing](workflow-clinical-document.html) | Assembling a Composition-based document and signing it for legal force | Composition, [Provenance](StructureDefinition-uz-core-provenance.html), [Encounter](StructureDefinition-uz-core-encounter.html), [Condition](StructureDefinition-uz-core-condition.html), [Observation](StructureDefinition-uz-core-observation.html) |
+| [Patient journey (Episode of Care)](workflow-patient-journey.html) | Grouping a case's visits, diagnoses and results under one episode over time | [EpisodeOfCare](StructureDefinition-uz-core-episodeofcare.html), [Encounter](StructureDefinition-uz-core-encounter.html), [Condition](StructureDefinition-uz-core-condition.html), [Observation](StructureDefinition-uz-core-observation.html) |
+| [e-Prescription and dispensing](workflow-prescription.html) | Prescribing a medicine, dispensing it, and reporting to SHIF | MedicationRequest, MedicationDispense, [Condition](StructureDefinition-uz-core-condition.html) |
 
-More scenarios (clinical documentation, reimbursement) will be added as the corresponding profiles are finalized.
+More scenarios (population screening) will be added as the corresponding profiles are finalized.
 
 ### The interaction model
 

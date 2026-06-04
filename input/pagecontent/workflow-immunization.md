@@ -40,7 +40,7 @@ The doctor reviews the recommendation and the history and decides whether the pa
 | Medical exemption | `not-done` | `statusReason` = `MEDPREC` (medical precaution) or `IMMUNE` (immunity) |
 | Refusal | `not-done` | `statusReason` = `PATOBJ` (patient objection) |
 | Product unavailable | `not-done` | `statusReason` = `OSTOCK` (product out of stock) |
-| Recorded in error | `entered-in-error` | — |
+| Recorded in error | `entered-in-error` | - |
 
 `statusReason` is bound (required) to the [Immunization status reason value set](ValueSet-immunization-status-reason-vs.html); the four codes above, from HL7 v3 ActReason, are the only valid values.
 
