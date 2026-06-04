@@ -269,7 +269,7 @@ Description: "Example ImmunizationRecommendation resource indicating a due BCG v
 * patient = Reference(example-salim)
 * date = "2026-04-27"
 * recommendation[0].vaccineCode = $cvx#19 "Bacillus Calmette-Guerin vaccine"
-* recommendation[0].forecastStatus = $sct#171279008 "Immunization due"
+* recommendation[0].forecastStatus = $immunization-recommendation-status#due "Due"
 
 Instance: condition-tuberculosis-risk-example
 InstanceOf: UZCoreCondition
