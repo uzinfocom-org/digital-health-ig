@@ -65,6 +65,7 @@ In practice you send the demographics the platform expects you to support: the `
 ```json
 {
   "resourceType": "Practitioner",
+  "language": "uz",
   "meta": { "profile": [ "https://dhp.uz/fhir/core/StructureDefinition/uz-core-practitioner" ] },
   "identifier": [
     {
@@ -117,7 +118,7 @@ A full record carries the practitioner's `qualification` (each `code` from the T
 ```json
 {
   "photo": [
-    { "url": "http://example.org/photos/practitioner.jpg", "size": "1024" }
+    { "url": "https://media.dhp.uz/practitioner/example.jpg", "size": "1024" }
   ],
   "qualification": [
     {

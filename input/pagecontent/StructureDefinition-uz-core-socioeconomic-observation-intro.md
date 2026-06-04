@@ -30,6 +30,7 @@ Four elements carry the whole record: the `status` and the `subject` (the [Patie
 ```json
 {
   "resourceType": "Observation",
+  "language": "uz",
   "meta": {
     "profile": [ "https://dhp.uz/fhir/core/StructureDefinition/uz-core-socioeconomic-observation" ]
   },
@@ -66,6 +67,7 @@ Swap the type code and the result value set together - they always move as a pai
 ```json
 {
   "resourceType": "Observation",
+  "language": "uz",
   "meta": {
     "profile": [ "https://dhp.uz/fhir/core/StructureDefinition/uz-core-socioeconomic-observation" ]
   },
@@ -105,6 +107,7 @@ For an occupation record, the `code` is `14679004` (Occupation) and the result c
 ```json
 {
   "resourceType": "Observation",
+  "language": "uz",
   "meta": {
     "profile": [ "https://dhp.uz/fhir/core/StructureDefinition/uz-core-socioeconomic-observation" ]
   },

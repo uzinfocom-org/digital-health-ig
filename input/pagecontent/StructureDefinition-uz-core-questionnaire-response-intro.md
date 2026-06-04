@@ -32,6 +32,7 @@ A response must name the `questionnaire` it answers (a canonical URL, 1..1) and 
 ```json
 {
   "resourceType": "QuestionnaireResponse",
+  "language": "uz",
   "meta": { "profile": ["https://dhp.uz/fhir/core/StructureDefinition/uz-core-questionnaire-response"] },
   "questionnaire": "https://dhp.uz/fhir/core/Questionnaire/PatientSatisfactionQuestionnaire",
   "status": "completed",
@@ -46,7 +47,7 @@ A response must name the `questionnaire` it answers (a canonical URL, 1..1) and 
           "valueCoding": {
             "system": "https://terminology.dhp.uz/fhir/core/CodeSystem/patient-satisfaction-cs",
             "code": "remote",
-            "display": "Дистанционно (через Портал Пациента)"
+            "display": "Masofadan yozildim («Портал Пациента» orqali)"
           }
         }
       ]
@@ -59,7 +60,7 @@ A response must name the `questionnaire` it answers (a canonical URL, 1..1) and 
           "valueCoding": {
             "system": "https://terminology.dhp.uz/fhir/core/CodeSystem/patient-satisfaction-cs",
             "code": "10-15min",
-            "display": "10-15 минут"
+            "display": "10-15 daqiqa"
           }
         }
       ]
@@ -72,7 +73,7 @@ A response must name the `questionnaire` it answers (a canonical URL, 1..1) and 
           "valueCoding": {
             "system": "https://terminology.dhp.uz/fhir/core/CodeSystem/patient-satisfaction-cs",
             "code": "fully-satisfied",
-            "display": "Полностью удовлетворен"
+            "display": "To'liq mamnunman"
           }
         }
       ]
@@ -85,7 +86,7 @@ A response must name the `questionnaire` it answers (a canonical URL, 1..1) and 
           "valueCoding": {
             "system": "https://terminology.dhp.uz/fhir/core/CodeSystem/patient-satisfaction-cs",
             "code": "yes-complete",
-            "display": "Да, полностью"
+            "display": "Ha, to'liq"
           }
         }
       ]
@@ -98,7 +99,7 @@ A response must name the `questionnaire` it answers (a canonical URL, 1..1) and 
           "valueCoding": {
             "system": "https://terminology.dhp.uz/fhir/core/CodeSystem/patient-satisfaction-cs",
             "code": "yes-complete",
-            "display": "Да, полностью"
+            "display": "Ha, to'liq"
           }
         }
       ]

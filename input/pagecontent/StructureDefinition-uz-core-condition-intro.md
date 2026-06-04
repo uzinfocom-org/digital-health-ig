@@ -169,13 +169,13 @@ When the `code` is the SNOMED *Disability* concept (`21134002`), the profile **r
 ```json
 {
   "resourceType": "Condition",
+  "language": "uz",
   "meta": { "profile": [ "https://dhp.uz/fhir/core/StructureDefinition/uz-core-condition" ] },
   "clinicalStatus": {
     "coding": [
       {
         "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
-        "code": "active",
-        "display": "Active"
+        "code": "active"
       }
     ]
   },
@@ -183,8 +183,7 @@ When the `code` is the SNOMED *Disability* concept (`21134002`), the profile **r
     "coding": [
       {
         "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
-        "code": "confirmed",
-        "display": "Confirmed"
+        "code": "confirmed"
       }
     ]
   },

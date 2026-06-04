@@ -50,6 +50,7 @@ Uzbek is the authoritative `name`; Russian and Karakalpak ride along as `transla
 ```json
 {
   "resourceType": "Location",
+  "language": "uz",
   "meta": {
     "profile": ["https://dhp.uz/fhir/core/StructureDefinition/uz-core-location"]
   },

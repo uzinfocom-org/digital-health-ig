@@ -51,6 +51,7 @@ A real template carries a stable `url`, a `description`, and an `item` list. The
 ```json
 {
   "resourceType": "Questionnaire",
+  "language": "uz",
   "meta": {
     "profile": ["https://dhp.uz/fhir/core/StructureDefinition/uz-core-questionnaire"]
   },
@@ -93,7 +94,7 @@ A real template carries a stable `url`, a `description`, and an `item` list. The
           "valueCoding": {
             "code": "phone",
             "system": "https://terminology.dhp.uz/fhir/core/CodeSystem/patient-satisfaction-cs",
-            "display": "По телефону",
+            "display": "Telefon orqali yozildim",
             "_display": {
               "extension": [
                 {
@@ -111,7 +112,7 @@ A real template carries a stable `url`, a `description`, and an `item` list. The
           "valueCoding": {
             "code": "other",
             "system": "https://terminology.dhp.uz/fhir/core/CodeSystem/patient-satisfaction-cs",
-            "display": "Другое",
+            "display": "Boshqa",
             "_display": {
               "extension": [
                 {
