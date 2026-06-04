@@ -15,22 +15,22 @@ class Composition
 class Specimen [[StructureDefinition-uz-core-specimen.html{Open the UZ Core Specimen profile}]] #E8F0FE
 class ServiceRequest
 
-Patient "1" o-- "0..*" EpisodeOfCare : « patient »
-EpisodeOfCare "0..1" o-- "0..*" Encounter : « episodeOfCare »
+Patient "1" <-- "0..*" EpisodeOfCare : « patient »
+EpisodeOfCare "0..1" <-- "0..*" Encounter : « episodeOfCare »
 
-Encounter "1" o-- "0..*" Condition : « encounter »
-Encounter "1" o-- "0..*" Observation : « encounter »
-Encounter "1" o-- "0..*" Procedure : « encounter »
-Encounter "1" o-- "0..*" MedicationRequest : « encounter »
-Encounter "1" o-- "0..1" Composition : « encounter »
+Encounter "1" <-- "0..*" Condition : « encounter »
+Encounter "1" <-- "0..*" Observation : « encounter »
+Encounter "1" <-- "0..*" Procedure : « encounter »
+Encounter "1" <-- "0..*" MedicationRequest : « encounter »
+Encounter "1" <-- "0..1" Composition : « encounter »
 
 Observation "0..*" --> "0..1" Specimen : « specimen »
 Specimen "0..*" --> "0..1" ServiceRequest : « request »
 
 note as N
-  Each label is the FHIR reference element on the
-  child that points back to its parent.
-  A diamond marks the "owning" resource.
+  Each arrow points from the resource that holds
+  the reference to its target; the label is the
+  FHIR reference element.
   Blue boxes are profiled in UZ Core and link to
   their profile page; the rest are not yet profiled.
 end note
