@@ -18,7 +18,7 @@ GET [base]/Consent?patient=Patient/[id]&period=ge2025-01-01
 GET [base]/Consent?patient=Patient/[id]&date=ge2025-01-01
 ```
 
-**Create**
+**Create** (opt a patient out - absent a Consent, sharing is permitted by default)
 
 ```
 POST [base]/Consent
@@ -27,9 +27,16 @@ POST [base]/Consent
   "meta": { "profile": [ "https://dhp.uz/fhir/core/StructureDefinition/uz-core-consent" ] },
   "status": "active",
   "subject": { "reference": "Patient/[id]" },
-  "decision": "permit",
+  "decision": "deny",
   ...
 }
+```
+
+**Update** (e.g. the patient opts out, or re-grants) - PUT the full resource back with the new `decision`:
+
+```
+PUT [base]/Consent/[id]
+If-Match: W/"3"   # the ETag from your last read; 412 if it changed since
 ```
 
 Consent is normally set by the patient in the portal. A denied consent causes data requests to be refused with HTTP 403; clients should handle that outcome.

@@ -1,4 +1,4 @@
-UZ Core Consent records the patient's own decision about whether their health data may be shared on the Digital Health Platform. The DHP consent model is intentionally binary - a single provision that either permits or denies - and the patient sets it themselves in the patient portal. The platform enforces it: when a consent denies access, a data request is refused with HTTP 403. Two exceptions exist - a lawful-access path for treating clinicians and other legally authorized parties, and an emergency break-glass path (recorded in [AuditEvent](StructureDefinition-uz-core-auditevent.html) with an emergency purpose-of-use). A Consent is anchored to its [Patient](StructureDefinition-uz-core-patient.html).
+UZ Core Consent records the patient's own decision about whether their health data may be shared on the Digital Health Platform. Uzbekistan operates an opt-out model: when no Consent resource exists for a patient, sharing is permitted by default, and a patient opts out by recording a Consent that denies it. The model is intentionally binary - a single provision that either permits or denies - and the patient sets it themselves in the patient portal. The platform enforces it: when a consent denies access, a data request is refused with HTTP 403. Two exceptions exist - a lawful-access path for treating clinicians and other legally authorized parties, and an emergency break-glass path (recorded in [AuditEvent](StructureDefinition-uz-core-auditevent.html) with an emergency purpose-of-use). A Consent is anchored to its [Patient](StructureDefinition-uz-core-patient.html).
 
 ### Mandatory and Must Support data elements
 
@@ -28,7 +28,7 @@ A Consent is mostly system-generated when the patient sets it in the portal, so 
 
 #### The smallest Consent you should send
 
-`status` is the only strictly mandatory element, but a Consent is only meaningful with the `subject` it is about and the `decision` it carries. `decision` is a scalar code - `permit` or `deny`. Every UZ Core resource must also name the profile it claims to conform to in `meta.profile`:
+`status` is the only strictly mandatory element, but a Consent is only meaningful when it names whose data it covers (`subject`), what it decides (`decision` - the scalar code `permit` or `deny`), and what that decision applies to (a `provision`). Because the absence of a Consent already permits sharing, the record you send is normally an opt-out: a `deny` whose `provision.action` says what is being withheld - here, disclosure. Every UZ Core resource must also name the profile it claims to conform to in `meta.profile`:
 
 ```json
 {
@@ -36,15 +36,22 @@ A Consent is mostly system-generated when the patient sets it in the portal, so 
   "meta": { "profile": ["https://dhp.uz/fhir/core/StructureDefinition/uz-core-consent"] },
   "status": "active",
   "subject": { "reference": "Patient/example-patient" },
-  "decision": "permit"
+  "decision": "deny",
+  "provision": [
+    {
+      "action": [
+        { "coding": [{ "system": "http://terminology.hl7.org/CodeSystem/consentaction", "code": "disclose" }] }
+      ]
+    }
+  ]
 }
 ```
 
-`status` and `decision` each use a **required** binding - the value must come from the bound value set (the Snapshot view above lists each one). `subject` and `grantor` are plain References, so the target sits directly under `reference`.
+`status` and `decision` each use a **required** binding - the value must come from the bound value set (the Snapshot view above lists each one). `provision.action` is a `CodeableConcept`, so its code sits in a `coding` array; `subject` is a plain Reference, so its target sits directly under `reference`.
 
 #### A realistic consent record
 
-In practice the platform also records who granted the decision (`grantor`, the patient), how long it applies (`period`), the law it rests on (`regulatoryBasis`), and a `provision` narrowing the decision to a specific `action` and `purpose`. `grantor` is a list of References, and `regulatoryBasis`, `provision.action` and `provision.purpose` are coded - each value comes from a bound value set:
+A fuller record - shown here granting access, as a patient would when re-opting in or scoping consent to a specific purpose and period - also records who granted the decision (`grantor`, the patient), how long it applies (`period`), the law it rests on (`regulatoryBasis`), and a `provision` narrowing the decision to a specific `action` and `purpose`. `grantor` is a list of References, and `regulatoryBasis`, `provision.action` and `provision.purpose` are coded - each value comes from a bound value set:
 
 ```json
 {
@@ -84,6 +91,6 @@ In practice the platform also records who granted the decision (`grantor`, the p
 }
 ```
 
-Note that `provision.purpose` is a `Coding` directly (not wrapped in a `coding` array), while `regulatoryBasis` and `provision.action` are `CodeableConcept` types that hold a `coding` array. To deny sharing instead, set `decision` to `deny`; the platform then refuses each data request with HTTP 403. See [Missing & suppressed data](general-guidance.html#missing-data) and [Terminology](general-guidance.html#terminology) for the coded-value rules.
+Note that `provision.purpose` is a `Coding` directly (not wrapped in a `coding` array), while `regulatoryBasis` and `provision.action` are `CodeableConcept` types that hold a `coding` array. This record grants access; an opt-out is the same shape with `decision` set to `deny`, after which the platform refuses each data request with HTTP 403. See [Missing & suppressed data](general-guidance.html#missing-data) and [Terminology](general-guidance.html#terminology) for the coded-value rules.
 
 For example API calls and a sample payload, see the [Quick Start](#quick-start) at the bottom of this page.
