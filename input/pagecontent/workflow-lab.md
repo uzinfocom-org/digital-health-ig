@@ -37,7 +37,7 @@ POST [base]/Specimen
   "meta": { "profile": ["https://dhp.uz/fhir/core/StructureDefinition/uz-core-specimen"] },
   "subject": { "reference": "Patient/[id]" },
   "request": [{ "reference": "ServiceRequest/[id]" }],
-  "type": { "coding": [{ "system": "http://snomed.info/sct", "code": "119364003" }] } }
+  "type": { "coding": [{ "system": "http://terminology.hl7.org/CodeSystem/v2-0487", "code": "BLD", "display": "Whole blood" }] } }
 ```
 
 ### 3. Return the results
