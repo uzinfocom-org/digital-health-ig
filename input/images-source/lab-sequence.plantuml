@@ -7,15 +7,9 @@ participant "DHP\nFHIR server" as DHP
 participant "Laboratory\n(LIS)" as Lab
 
 Clin -> DHP : POST ServiceRequest (intent = order)
-activate DHP
-DHP --> Clin : 201 Created - ServiceRequest/[id]
-deactivate DHP
 
 DHP -> Lab : order available
 Lab -> DHP : POST [[StructureDefinition-uz-core-specimen.html Specimen]]\n(request -> ServiceRequest)
-activate DHP
-DHP --> Lab : 201 Created - Specimen/[id]
-deactivate DHP
 
 loop each analyte
   Lab -> DHP : POST [[StructureDefinition-uz-core-observation.html Observation]]\n(basedOn -> ServiceRequest, specimen -> Specimen)
