@@ -42,6 +42,13 @@ POST [base]/Observation
 }
 ```
 
+**Update** (e.g. correct a recorded value by setting `status` to `corrected`) - PUT the full resource back with the new `status` / `value[x]`:
+
+```
+PUT [base]/Observation/[id]
+If-Match: W/"3"   # the ETag from your last read; 412 if it changed since
+```
+
 See the [CapabilityStatement](CapabilityStatement-DHPCapabilityStatement.html) for all supported search parameters.
 
 ### Related

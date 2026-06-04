@@ -37,6 +37,13 @@ POST [base]/QuestionnaireResponse
 }
 ```
 
+**Update** (e.g. amend a submitted response, or complete a partially-saved one) - PUT the full resource back with the new `status` and answers:
+
+```
+PUT [base]/QuestionnaireResponse/[id]
+If-Match: W/"3"   # the ETag from your last read; 412 if it changed since
+```
+
 See the [CapabilityStatement](CapabilityStatement-DHPCapabilityStatement.html) for all supported search parameters.
 
 ### Related

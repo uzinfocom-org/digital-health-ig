@@ -34,6 +34,13 @@ POST [base]/Questionnaire
 }
 ```
 
+**Update** (e.g. publish a draft by setting `status` to `active`, or retire an old template) - PUT the full resource back with the new `status`:
+
+```
+PUT [base]/Questionnaire/[id]
+If-Match: W/"3"   # the ETag from your last read; 412 if it changed since
+```
+
 See the [CapabilityStatement](CapabilityStatement-DHPCapabilityStatement.html) for all supported search parameters.
 
 ### Related

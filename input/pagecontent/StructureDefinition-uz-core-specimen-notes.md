@@ -33,6 +33,15 @@ POST [base]/Specimen
 }
 ```
 
+**Update** (e.g. mark a specimen `unavailable`, or record its `receivedTime`) - PUT the full resource back with the new `status`:
+
+```
+PUT [base]/Specimen/[id]
+If-Match: W/"3"   # the ETag from your last read; 412 if it changed since
+```
+
+See the [CapabilityStatement](CapabilityStatement-DHPCapabilityStatement.html) for all supported search parameters.
+
 ### Related
 
 - [How to read this guide](how-to-read.html) &middot; [Must Support](must-support.html) &middot; [General guidance](general-guidance.html)
