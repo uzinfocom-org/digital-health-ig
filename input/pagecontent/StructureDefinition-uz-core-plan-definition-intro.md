@@ -8,6 +8,7 @@ The elements below must always be present (mandatory) or must be supported when 
 
 - a url - the canonical identifier for this schedule;
 - a machine-processable name;
+- a status (draft, active, retired, unknown), inherited as mandatory from the base resource;
 - a description of what the schedule covers.
 
 #### Each UZ Core PlanDefinition Must Support

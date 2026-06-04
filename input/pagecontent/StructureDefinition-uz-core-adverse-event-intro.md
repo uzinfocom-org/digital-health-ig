@@ -6,7 +6,7 @@ The elements below must always be present (mandatory) or must be supported when 
 
 #### Each UZ Core AdverseEvent Must Have
 
-The base FHIR AdverseEvent has no mandatory elements, and this profile does not add any. In practice you will always populate the status, actuality, subject, and the suspect entity (see Must Support below).
+This profile adds no mandatory cardinality of its own. The required elements are inherited from the base resource: the `status` of the record (1..1), the `actuality` - actual harm versus a potential near-miss (1..1) - and the `subject` the event happened to (1..1). In practice you will also always populate the suspect entity (see Must Support below).
 
 #### Each UZ Core AdverseEvent Must Support
 
@@ -29,7 +29,7 @@ The examples below go from the smallest instance the server will accept to a ful
 
 #### The smallest AdverseEvent you should send
 
-The base resource has no mandatory elements, but an adverse event is only meaningful with the `status` of the record, the `actuality` (was it an actual harm or a potential near-miss?), the `subject` it happened to, and the `suspectEntity` thought to have caused it. Note that `status` and `actuality` are plain codes, not `CodeableConcept` - send the bare string. Every UZ Core resource must also name the profile it claims to conform to in `meta.profile`:
+The base resource requires the `status` of the record, the `actuality` (was it an actual harm or a potential near-miss?), and the `subject` it happened to; an adverse event is only meaningful when you also add the `suspectEntity` thought to have caused it. Note that `status` and `actuality` are plain codes, not `CodeableConcept` - send the bare string. Every UZ Core resource must also name the profile it claims to conform to in `meta.profile`:
 
 ```json
 {
@@ -44,7 +44,7 @@ The base resource has no mandatory elements, but an adverse event is only meanin
 }
 ```
 
-`status` (registered, in-progress, completed ...) and `actuality` (`actual` / `potential`) each use a **required** binding - the value must come from the bound value set. `suspectEntity.instance[x]` is the instance suspected of causing the event; here a [Medication](StructureDefinition-uz-core-medication.html), but for a post-immunization reaction it is the [Immunization](StructureDefinition-uz-core-immunization.html), and it may also be a Procedure, Substance, Device, or MedicationAdministration. It is a plain `Reference`, so `instanceReference` holds `{ "reference": "Type/id" }` directly.
+`status` (registered, in-progress, completed ...) and `actuality` (`actual` / `potential`) each use a **required** binding - the value must come from the bound value set. `suspectEntity.instance[x]` is the instance suspected of causing the event; here a Medication, but for a post-immunization reaction it is the [Immunization](StructureDefinition-uz-core-immunization.html), and it may also be a Procedure, Substance, Device, or MedicationAdministration. It is a plain `Reference`, so `instanceReference` holds `{ "reference": "Type/id" }` directly.
 
 #### A realistic actual adverse event
 

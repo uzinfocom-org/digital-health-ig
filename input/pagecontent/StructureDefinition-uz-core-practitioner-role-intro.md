@@ -12,6 +12,7 @@ The base FHIR PractitionerRole has no mandatory elements, and this profile does 
 
 
 
+- an identifier for the role;
 - the active flag;
 - the practitioner reference (who is acting);
 - the organization reference (the employer or hosting organization);

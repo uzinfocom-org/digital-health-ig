@@ -14,7 +14,7 @@ The elements below must always be present (mandatory) or must be supported when 
 
 - an identifier - the Soliq tax ID slice, the Argos organization ID slice, and the SHIF/SMIF insurance-payor ID slice (a 3-letter + 6-digit code such as `OAA000024`). See [Identifier systems](identifiers.html) for the supported system URIs;
 - the active flag;
-- a type - several coded classification slices (organization type, subordination group, nomenclature group, organizational structure, service group, specialization, and grouping) drawn from the national code systems;
+- a type - several coded classification slices (organization type, subordination group, nomenclature group, organizational structure, service group, specialization, without-legal-status, and grouping) drawn from the national code systems;
 - the national coverage-area extension (the geographic area served);
 - contact details;
 - a partOf reference to a parent organization (the hierarchy link);
