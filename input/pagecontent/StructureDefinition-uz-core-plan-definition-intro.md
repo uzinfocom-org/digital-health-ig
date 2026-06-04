@@ -112,6 +112,6 @@ In practice the schedule is the `action` list. Each dose is one action with a `l
 }
 ```
 
-`condition.kind`, `relatedAction.relationship` and `participant.type` each use a required binding - take the value from the bound value set (the Snapshot view above lists each one). The `relatedAction.targetId` must match the `linkId` of an action already in the same schedule.
+`condition.kind`, `relatedAction.relationship` and `participant.type` each use a required binding - take the value from the bound value set (the Snapshot view below lists each one). The `relatedAction.targetId` must match the `linkId` of an action already in the same schedule.
 
 For example API calls and a sample payload, see the [Quick Start](#quick-start) at the bottom of this page.

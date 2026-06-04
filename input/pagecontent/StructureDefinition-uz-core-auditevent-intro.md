@@ -106,7 +106,7 @@ A self-contained event names what happened (`code`), its grouping (`category`), 
 }
 ```
 
-`category`, `code`, `action`, `outcome.code`, and the `agent` codings (type, role, authorization) each use a required binding - the value must come from the bound value set (the Snapshot view above lists each one). `agent.authorization` is the purpose-of-use (`TREAT` here); a break-glass access carries an emergency purpose-of-use instead.
+`category`, `code`, `action`, `outcome.code`, and the `agent` codings (type, role, authorization) each use a required binding - the value must come from the bound value set (the Snapshot view below lists each one). `agent.authorization` is the purpose-of-use (`TREAT` here); a break-glass access carries an emergency purpose-of-use instead.
 
 #### An event that touched a patient's data
 

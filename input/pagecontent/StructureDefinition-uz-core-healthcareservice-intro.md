@@ -69,7 +69,7 @@ For a clinical service, add the `category` and `type`. Both are sliced on the co
 }
 ```
 
-The `category` and `type` codes are bound to national value sets (required binding) - the value must come from the bound value set, which the Snapshot view above lists. See [Terminology](general-guidance.html#terminology) for how the national code systems are sourced.
+The `category` and `type` codes are bound to national value sets (required binding) - `category` to [ServiceCategoriesVS](ValueSet-service-categories-vs.html) and `type` to [ServiceNamesVS](ValueSet-service-names-vs.html); the value must come from the bound set. See [Terminology](general-guidance.html#terminology) for how the national code systems are sourced.
 
 #### A laboratory test in the catalogue
 

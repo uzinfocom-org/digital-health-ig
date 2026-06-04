@@ -79,7 +79,7 @@ In practice you send the clinical context the platform expects you to support: `
 }
 ```
 
-`clinicalStatus` (active, recurrence, remission, resolved ...) and `verificationStatus` (provisional, confirmed, refuted, entered-in-error ...) are each bound to a DHP value set - take the values from those bindings (the Snapshot view above lists them).
+`clinicalStatus` (active, recurrence, remission, resolved ...) and `verificationStatus` (provisional, confirmed, refuted, entered-in-error ...) are each bound to a DHP value set - take the values from those bindings (the Snapshot view below lists them).
 
 #### Adding severity, body site, diagnosis type and who asserted it
 

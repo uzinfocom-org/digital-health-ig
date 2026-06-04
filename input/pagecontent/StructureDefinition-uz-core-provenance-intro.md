@@ -53,7 +53,7 @@ A Provenance needs at least one `target` (the record it is about) and at least o
 }
 ```
 
-`activity` and `agent.type` each use a **required** binding - the value must come from the bound value set (the Snapshot view above lists each one). `agent.who` must reference a PractitionerRole.
+`activity` and `agent.type` each use a **required** binding - the value must come from the bound value set (the Snapshot view below lists each one). `agent.who` must reference a PractitionerRole.
 
 #### Adding the digital signature
 

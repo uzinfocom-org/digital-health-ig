@@ -47,7 +47,7 @@ A Consent is mostly system-generated when the patient sets it in the portal, so 
 }
 ```
 
-`status` and `decision` each use a **required** binding - the value must come from the bound value set (the Snapshot view above lists each one). `provision.action` is a `CodeableConcept`, so its code sits in a `coding` array; `subject` is a plain Reference, so its target sits directly under `reference`.
+`status` and `decision` each use a **required** binding - the value must come from the bound value set (the Snapshot view below lists each one). `provision.action` is a `CodeableConcept`, so its code sits in a `coding` array; `subject` is a plain Reference, so its target sits directly under `reference`.
 
 #### A realistic consent record
 
