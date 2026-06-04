@@ -20,7 +20,7 @@ Status reflects the playground as of 2026-06-03 and changes as the rollout progr
 | `$validate-code` / `$expand` against UZ Core CodeSystems and ValueSets | Load when this IG is published to the platform | International code systems (LOINC, SNOMED CT, ICD-10, HL7) already validate. |
 
 
-### Security and authentication
+### Security and authentication {#security}
 
 To ensure security, confidentiality, and reliable access control within the National Digital Health Platform (DHP), an authentication and authorization system based on the international OAuth 2.0 standard has been implemented.
 Supporting both frontend and backend application scenarios. A centralized Single Sign-On (SSO) server ensures secure identification of all platform participants - from patients and healthcare providers to external systems.
