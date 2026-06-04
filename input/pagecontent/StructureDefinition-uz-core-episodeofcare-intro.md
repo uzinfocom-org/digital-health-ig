@@ -26,24 +26,7 @@ This profile adds no mandatory cardinality of its own. The required elements are
 
 ### Building the JSON, step by step
 
-The examples below go from the smallest instance the server will accept to a full case of care. Copy one and adapt it - every value shown validates against this profile. The complete reference instances are linked at the bottom of the page ([preventive episode](EpisodeOfCare-UZCoreEpisodeOfCare-Example.html), [pregnancy episode](EpisodeOfCare-UZCoreEpisodeOfCare-Example02.html)).
-
-#### The smallest EpisodeOfCare you should send
-
-This profile adds no mandatory element of its own. The base resource requires a `status` and a `patient`, and every UZ Core resource must name the profile it claims to conform to in `meta.profile` - that is how the server knows which rules to validate against. This much already passes validation:
-
-```json
-{
-  "resourceType": "EpisodeOfCare",
-  "meta": {
-    "profile": ["https://dhp.uz/fhir/core/StructureDefinition/uz-core-episodeofcare"]
-  },
-  "status": "active",
-  "patient": { "reference": "Patient/example-salim" }
-}
-```
-
-`status` uses a **required** binding - the value must come from the bound value set (planned \| active \| onhold \| finished \| cancelled \| entered-in-error). `patient` is a plain `Reference` to a [Patient](StructureDefinition-uz-core-patient.html).
+The examples below build up from a realistic episode to a full case of care. Copy one and adapt it - every value shown validates against this profile. The complete reference instances are linked at the bottom of the page ([preventive episode](EpisodeOfCare-UZCoreEpisodeOfCare-Example.html), [pregnancy episode](EpisodeOfCare-UZCoreEpisodeOfCare-Example02.html)).
 
 #### A realistic episode
 

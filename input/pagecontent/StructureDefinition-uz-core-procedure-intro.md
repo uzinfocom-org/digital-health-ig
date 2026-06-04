@@ -30,18 +30,7 @@ The examples below go from the smallest instance the server will accept to a ful
 
 #### The smallest Procedure you should send
 
-The base resource makes only `status` and `subject` mandatory, and every UZ Core resource must name the profile it claims to conform to in `meta.profile`. `status` uses a **required** binding (`preparation` \| `in-progress` \| `completed` \| `not-done` ...), and `subject` is a plain reference to the [Patient](StructureDefinition-uz-core-patient.html) the procedure was performed on. This much already passes validation:
-
-```json
-{
-  "resourceType": "Procedure",
-  "meta": { "profile": ["https://dhp.uz/fhir/core/StructureDefinition/uz-core-procedure"] },
-  "status": "completed",
-  "subject": { "reference": "Patient/example-david" }
-}
-```
-
-A Procedure is only useful once it says *what* was done. Add the `code` (a **required** binding to the DHP procedure-code value set, here a SNOMED CT code) and, in practice, the `encounter` it took place in and when it happened (`occurrence[x]`):
+A Procedure's mandatory elements are `status` (a **required** binding: `preparation` \| `in-progress` \| `completed` \| `not-done` ...) and `subject` (a plain reference to the [Patient](StructureDefinition-uz-core-patient.html) it was performed on), but it is only useful once it also says *what* was done. Add the `code` (a **required** binding to the DHP procedure-code value set, here a SNOMED CT code) and, in practice, the `encounter` it took place in and when it happened (`occurrence[x]`). Every UZ Core resource must also name the profile in `meta.profile`:
 
 ```json
 {
