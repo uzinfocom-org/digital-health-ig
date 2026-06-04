@@ -2,13 +2,13 @@ The profile pages tell you the *shape* of each resource. These workflow pages te
 
 Each workflow describes the actors, the sequence of FHIR interactions, and the key rules, with example calls and payload fragments.
 
-### Worked scenarios
+### Available scenarios
 
 | Workflow | What it covers | Resources |
 |----------|----------------|-----------|
-| [Immunization](workflow-immunization.html) | National schedule &rarr; recommendation &rarr; recording a dose | PlanDefinition, ImmunizationRecommendation, Immunization, AdverseEvent |
-| [Laboratory order to result](workflow-lab.html) | Ordering a test and returning the result | ServiceRequest, Specimen, Observation, DiagnosticReport |
-| [e-Referral lifecycle](workflow-referral.html) | Creating and fulfilling a referral, including the state-insurance approval chain | ServiceRequest, Task, Procedure |
+| [Immunization](workflow-immunization.html) | National schedule &rarr; recommendation &rarr; recording a dose | [PlanDefinition](StructureDefinition-uz-core-plan-definition.html), [ImmunizationRecommendation](StructureDefinition-uz-core-immunization-recommendation.html), [Immunization](StructureDefinition-uz-core-immunization.html), [AdverseEvent](StructureDefinition-uz-core-adverse-event.html) |
+| [Laboratory order to result](workflow-lab.html) | Ordering a test and returning the result | ServiceRequest, [Specimen](StructureDefinition-uz-core-specimen.html), [Observation](StructureDefinition-uz-core-observation.html), DiagnosticReport |
+| [e-Referral lifecycle](workflow-referral.html) | Creating and fulfilling a referral, including the state-insurance approval chain | ServiceRequest, Task, [Procedure](StructureDefinition-uz-core-procedure.html) |
 
 More scenarios (clinical documentation, reimbursement) will be added as the corresponding profiles are finalized.
 
@@ -18,7 +18,7 @@ A few rules apply to every workflow:
 
 - Authenticate first. All requests carry an OAuth2 bearer token (`Authorization: Bearer <token>`) obtained from the platform SSO. System-to-system clients use the client-credentials flow; user-facing apps use the authorization-code flow via OneID.
 - Declare the profile. Every resource you submit carries `meta.profile` so the server validates it against the right UZ Core profile. See [General guidance &rarr; metadata](general-guidance.html#metadata).
-- Group related resources in a Bundle. When several resources belong together, submit them as a transaction Bundle (atomic) or, for a finalized document, a document Bundle. See [General guidance &rarr; Bundles](general-guidance.html#bundles-document-vs-transaction-vs-searchset).
+- Group related resources in a Bundle. When several resources belong together, you may submit them as a Bundle (transaction or batch) or, for a finalized document, a document Bundle. See [General guidance &rarr; Bundles](general-guidance.html#bundles-document-vs-transaction-vs-searchset).
 - Honour consent. Read requests are subject to the patient's [Consent](StructureDefinition-uz-core-consent.html); a denied request returns `403`. Every access is logged to [AuditEvent](StructureDefinition-uz-core-auditevent.html).
 - Logical delete only. Records are retired by changing status, not by `DELETE`. See [General guidance &rarr; deleting](general-guidance.html#creating-updating-and-deleting).
 

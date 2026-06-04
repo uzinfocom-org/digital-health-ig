@@ -22,7 +22,7 @@ Each profile page lists two sets in plain language at the top:
 - "Each [Resource] Must Have …" - the mandatory elements (cardinality `1..1` or `1..*`). These must always be present, or the resource is invalid.
 - "Each [Resource] Must Support …" - the Must Support elements (the <span style="padding-left: 3px; padding-right: 3px; color: white; background-color: #D50000" title="This element must be supported">S</span> flag). These must be populated *when the data exists*, and must be handled on receipt.
 
-A worked example, [UZ Core Patient](StructureDefinition-uz-core-patient.html):
+A concrete example, [UZ Core Patient](StructureDefinition-uz-core-patient.html):
 
 - Must Have: at least one `identifier`.
 - Must Support: `name`, `gender`, `birthDate`, `address`, `active`, and the nationality / citizenship / managing-organization extensions.

@@ -73,7 +73,7 @@ The `category` and `type` codes are bound to national value sets (required bindi
 
 #### A laboratory test in the catalogue
 
-Laboratory services are catalogued through a dedicated lab slice on `category` and `type`. That slice is still being finalized - the lab `type` code system is not yet published - so a worked JSON example for lab services will be added here once the terminology is in place. Until then, model services with the DHP slice shown above.
+Laboratory services are catalogued through a dedicated lab slice on `category` and `type`. That slice is still being finalized - the lab `type` code system is not yet published - so a complete JSON example for lab services will be added here once the terminology is in place. Until then, model services with the DHP slice shown above.
 
 #### Names in more than one language
 
