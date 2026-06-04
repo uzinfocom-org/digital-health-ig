@@ -22,44 +22,45 @@ Description: "Uzbekistan Core Medication profile, used for representing medicati
     registrationCertificateID 0..1 MS
 
 * identifier[uzpharmBoxGroupID]
-  * system 1..1 MS
+  * ^short = "Naming system for the box-level aggregation identifier used to group serialized pharmaceutical packs into a shipping/carton unit within Uzbekistan's national track-and-trace program"
+  * system 0..1 MS
   * system = $uzpharmBoxGroupID
-  * type 1..1 MS
+  * type 0..1 MS
   * type = $medicine-identifier-types#box_group_id "Medicine packaging identifier"
   * use = #official
-  * value 1..1 MS
+  * value 0..1 MS
 
 * identifier[globalTradeItemID]
-  * system 1..1 MS
+  * system 0..1 MS
   * system = $globalTradeItemID 
-  * type 1..1 MS
+  * type 0..1 MS
   * type = $medicine-identifier-types#gtin "Global Trade Item Number"
   * use = #official
-  * value 1..1 MS
+  * value 0..1 MS
 
 * identifier[markingID]
-  * system 1..1 MS
+  * system 0..1 MS
   * system = $markingID
-  * type 1..1 MS
+  * type 0..1 MS
   * type = $medicine-identifier-types#marking "Marking"
   * use = #official
-  * value 1..1 MS
+  * value 0..1 MS
 
 * identifier[registrationCertificateID]
-  * system 1..1 MS
+  * system 0..1 MS
   * system = $registrationCertificateID
-  * type 1..1 MS
+  * type 0..1 MS
   * type = $medicine-identifier-types#registration_number "Registration Certificate"
   * use = #official
-  * value 1..1 MS
+  * value 0..1 MS
 
 * identifier[productServiceID]
-  * system 1..1 MS
+  * system 0..1 MS
   * system = $productServiceID
-  * type 1..1 MS
+  * type 0..1 MS
   * type = $medicine-identifier-types#icps "Product and service identification codes"
   * use = #official
-  * value 1..1 MS
+  * value 0..1 MS
 /*
 * identifier[uzpharmInfo]
   * system 1..1 MS
@@ -70,13 +71,13 @@ Description: "Uzbekistan Core Medication profile, used for representing medicati
   * value 1..1 MS
   */
 * code MS
-* code from MedicationClassificationVS 
+* code from MedicationClassificationVS (required)
 * status MS
-* status from MedicationStatusVS
+* status from MedicationStatusVS (required)
 * marketingAuthorizationHolder MS
 * marketingAuthorizationHolder only Reference(UZCoreOrganization)
 * doseForm MS
-* doseForm from MedicationDoseFormVS
+* doseForm from MedicationDoseFormVS (extensible)
 * totalVolume MS
 * totalVolume only Quantity
 * totalVolume.code from MedicationTotalVolumeUnitsVS (preferred)
@@ -84,13 +85,13 @@ Description: "Uzbekistan Core Medication profile, used for representing medicati
 
 * ingredient MS
 * ingredient.item only CodeableReference (UZCoreMedication)
-* ingredient.item from MedicationClassificationVS
+* ingredient.item from MedicationClassificationVS (example)
 
 * ingredient.strength[x] MS
 * ingredient.strengthRatio MS
 * ingredient.strengthRatio.numerator.code from MedicationTotalVolumeUnitsVS (preferred)
 * ingredient.strengthRatio.denominator.code from MedicationTotalVolumeUnitsVS (preferred)
-* ingredient.strengthRatio.numerator.comparator from QuantityComparatorVS
+* ingredient.strengthRatio.numerator.comparator from QuantityComparatorVS 
 
 * batch MS
   * ^short = "Detailed information about the packaged medication"
