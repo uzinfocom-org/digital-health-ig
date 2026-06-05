@@ -86,7 +86,7 @@ RuleSet: MinzdravIdentifier
   * system 1..1 MS
   * system = $organization-minzdrav-id-system
   * type 1..1 MS
-  * type = $identifier-type#XX "Minzdrav Identifier"
+  * type = $identifier-type#XX "Organization Identifier"
   * use = #official
   * value 1..1 MS
 
