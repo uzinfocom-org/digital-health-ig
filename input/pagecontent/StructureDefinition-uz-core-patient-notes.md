@@ -53,8 +53,8 @@ See the [CapabilityStatement](CapabilityStatement-DHPCapabilityStatement.html) f
 
 A patient is attached to a primary healthcare organization (polyclinic) that serves as their main point of care. This is recorded with two elements:
 
-1. **`Patient.managingOrganization`** - a reference to the [UZ Core Organization](StructureDefinition-uz-core-organization.html) the patient is attached to.
-2. **`managingOrganizationAttachment` extension** - the date the patient was attached.
+1. `Patient.managingOrganization` - a reference to the [UZ Core Organization](StructureDefinition-uz-core-organization.html) the patient is attached to.
+2. `managingOrganizationAttachment` extension - the date the patient was attached.
 
 A patient can change their managing organization only once per year; the attachment date is used to enforce this.
 
