@@ -22,7 +22,7 @@ Description: "Uzbekistan Core Medication profile, used for representing medicati
     registrationCertificateID 0..1 MS
 
 * identifier[uzpharmBoxGroupID]
-  * ^short = "Naming system for the box-level aggregation identifier used to group serialized pharmaceutical packs into a shipping/carton unit within Uzbekistan's national track-and-trace program"
+  * ^short = "Box-level aggregation identifier used to group serialized pharmaceutical packs into a shipping/carton unit within Uzbekistan's national track-and-trace program"
   * system 0..1 MS
   * system = $uzpharmBoxGroupID
   * type 0..1 MS
@@ -31,6 +31,7 @@ Description: "Uzbekistan Core Medication profile, used for representing medicati
   * value 0..1 MS
 
 * identifier[globalTradeItemID]
+  * ^short = "Globally standardized trade identifier (GTIN) used for medicinal products"
   * system 0..1 MS
   * system = $globalTradeItemID 
   * type 0..1 MS
@@ -39,6 +40,7 @@ Description: "Uzbekistan Core Medication profile, used for representing medicati
   * value 0..1 MS
 
 * identifier[markingID]
+  * ^short = "Uzbekistan's national marking identifier (Asl Belgisi)"
   * system 0..1 MS
   * system = $markingID
   * type 0..1 MS
@@ -47,6 +49,7 @@ Description: "Uzbekistan Core Medication profile, used for representing medicati
   * value 0..1 MS
 
 * identifier[registrationCertificateID]
+  * ^short = "Official registration certificate identifier for medicines"
   * system 0..1 MS
   * system = $registrationCertificateID
   * type 0..1 MS
@@ -55,6 +58,7 @@ Description: "Uzbekistan Core Medication profile, used for representing medicati
   * value 0..1 MS
 
 * identifier[productServiceID]
+  * ^short = "National product and service classification code"
   * system 0..1 MS
   * system = $productServiceID
   * type 0..1 MS
@@ -81,7 +85,7 @@ Description: "Uzbekistan Core Medication profile, used for representing medicati
 * totalVolume MS
 * totalVolume only Quantity
 * totalVolume.code from MedicationTotalVolumeUnitsVS (preferred)
-* totalVolume.comparator from QuantityComparatorVS
+* totalVolume.comparator from QuantityComparatorVS (required)
 
 * ingredient MS
 * ingredient.item only CodeableReference (UZCoreMedication)
@@ -91,7 +95,7 @@ Description: "Uzbekistan Core Medication profile, used for representing medicati
 * ingredient.strengthRatio MS
 * ingredient.strengthRatio.numerator.code from MedicationTotalVolumeUnitsVS (preferred)
 * ingredient.strengthRatio.denominator.code from MedicationTotalVolumeUnitsVS (preferred)
-* ingredient.strengthRatio.numerator.comparator from QuantityComparatorVS 
+* ingredient.strengthRatio.numerator.comparator from QuantityComparatorVS (required)
 
 * batch MS
   * ^short = "Detailed information about the packaged medication"
