@@ -52,7 +52,7 @@ Each row in the table is one element (field). The columns are:
 
 ### References and CodeableReferences
 
-Two different types point at other resources, and they nest differently in the JSON - getting them confused is a common cause of validation failures.
+Two different types point at other resources, and they nest differently in the JSON.
 
 A plain **`Reference`** points only at another resource. The pointer is a string under a `reference` key:
 
@@ -83,6 +83,34 @@ The Type column tells you which one you are dealing with: `Reference(...)` versu
 Some elements are *sliced* - the same element is split into named variants with their own rules. For example, `Patient.identifier` is sliced into `nationalId`, `passportLocal`, `passportForeign`, and so on, each fixed to a specific national identifier system. In the table, slices appear as indented rows under the element with the slice name in brackets, e.g. `identifier:nationalId`. Populate the slice that matches your data; you do not have to populate every slice.
 
 See [Identifier systems](identifiers.html) for the full set of patient, practitioner and organization identifier slices and their system URIs.
+
+### Coded values (CodeableConcept)
+
+Most coded elements use the `CodeableConcept` type: zero or more `coding` entries plus an optional free-text `text`.
+
+- Each `coding` is a `system` + `code` (+ `display`) drawn from a CodeSystem.
+- `text` is the human-readable phrase for the concept as a whole - typically the original wording from the source. Supply it when no code fits, or alongside the code(s) to preserve what was actually written.
+- You may give more than one `coding`, but every coding in a single CodeableConcept must mean the *same thing* - for example the same concept expressed in SNOMED CT and in a national code system. They are translations of one concept, not a list of different findings. To record several distinct concepts, repeat the element (several CodeableConcepts) rather than packing them into one.
+
+```json
+"code": {
+  "coding": [
+    { "system": "http://snomed.info/sct", "code": "25064002", "display": "Headache" },
+    { "system": "http://hl7.org/fhir/sid/icd-10", "code": "R51", "display": "Headache" }
+  ],
+  "text": "Headache"
+}
+```
+
+When no suitable code exists, supply `text` on its own - the words you have, with no `coding`:
+
+```json
+"code": {
+  "text": "Throbbing pain behind the left eye since this morning"
+}
+```
+
+The binding strength on the element (below) tells you whether this is allowed: a `required` binding rejects a text-only value - at least one `coding` must be from the value set - while `extensible`, `preferred` and `example` bindings permit text when no suitable code is available.
 
 ### Terminology bindings
 
