@@ -25,7 +25,7 @@ Every Patient must carry at least one identifier. The PINFL (national personal i
 
 ### Building the JSON, step by step
 
-The examples below go from the smallest instance the server will accept to a full registration payload. Copy one and adapt it - every value shown validates against this profile. The complete reference instances are linked at the bottom of the page ([Salim](Patient-example-salim.html), [Emma](Patient-example-emma.html), [unidentified patient](Patient-example-unidentified-patient.html)).
+The examples below go from the smallest instance the server will accept to a full registration payload. Copy one and adapt it - every value shown validates against this profile. The complete reference instances are linked at the bottom of the page ([Salim](Patient-example-salim.html), [Emma](Patient-example-emma.html), [David](Patient-example-david.html), [unidentified patient](Patient-example-unidentified-patient.html)).
 
 #### The smallest Patient you should send
 
@@ -143,5 +143,29 @@ For an unidentified patient - someone brought in unconscious, say - you still ca
 ```
 
 Note the leading underscore: `_value` is where FHIR puts the extension that stands in for the missing `value`. Better still, assign a temporary medical record number when the receiving organization is known - see [Identifier systems](identifiers.html) - and fall back to `data-absent-reason` only when it is not.
+
+#### Recording a non-binary gender
+
+When `gender` is `other`, attach the national `gender-other` extension to qualify it. The extension hangs off the `_gender` companion element (the leading underscore is where FHIR puts an extension on a primitive), and its `valueCoding` comes from the national gender value set (full instance: [David](Patient-example-david.html)):
+
+```json
+{
+  "gender": "other",
+  "_gender": {
+    "extension": [
+      {
+        "url": "https://dhp.uz/fhir/core/StructureDefinition/gender-other",
+        "valueCoding": {
+          "system": "https://terminology.dhp.uz/fhir/core/CodeSystem/gender-other-cs",
+          "code": "regis0007.00005",
+          "display": "Jinsni erkakka o'zgartirdi"
+        }
+      }
+    ]
+  }
+}
+```
+
+The `gender-other` extension may only be used when `gender` is set to `other` - the profile rejects it otherwise. See [Missing & suppressed data](general-guidance.html#missing-data) for related conventions.
 
 For example API calls and the search-before-register flow, see the [Quick Start](#quick-start) at the bottom of this page.

@@ -132,28 +132,4 @@ A full record carries the practitioner's `qualification` (each `code` from the T
 
 `qualification.code` is bound (required) to the Tibtoifa licence/certificate value set. Use `deceasedDateTime` when the exact date of death is known, or `deceasedBoolean` when only the fact is known.
 
-#### Recording a non-binary gender
-
-When `gender` is `other`, attach the national `gender-other` extension to qualify it. The extension hangs off the `_gender` companion element (the leading underscore is where FHIR puts an extension on a primitive), and its `valueCoding` comes from the national gender value set (full instance: [practitioner with gender extension](Practitioner-example-practitioner-gender-other.html)):
-
-```json
-{
-  "gender": "other",
-  "_gender": {
-    "extension": [
-      {
-        "url": "https://dhp.uz/fhir/core/StructureDefinition/gender-other",
-        "valueCoding": {
-          "system": "https://terminology.dhp.uz/fhir/core/CodeSystem/gender-other-cs",
-          "code": "regis0007.00005",
-          "display": "Jinsni erkakka o'zgartirdi"
-        }
-      }
-    ]
-  }
-}
-```
-
-The `gender-other` extension may only be used when `gender` is set to `other` - the profile rejects it otherwise. See [Missing & suppressed data](general-guidance.html#missing-data) for related conventions.
-
 For example API calls and a sample payload, see the [Quick Start](#quick-start) at the bottom of this page.
