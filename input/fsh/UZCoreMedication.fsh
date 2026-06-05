@@ -25,17 +25,13 @@ Description: "Uzbekistan Core Medication profile, used for representing medicati
   * ^short = "Box-level aggregation identifier used to group serialized pharmaceutical packs into a shipping/carton unit within Uzbekistan's national track-and-trace program"
   * system 0..1 MS
   * system = $uzpharmBoxGroupID
-  * type 0..1 MS
-  * type = $medicine-identifier-types#box_group_id "Medicine packaging identifier"
   * use = #official
   * value 0..1 MS
 
 * identifier[globalTradeItemID]
   * ^short = "Globally standardized trade identifier (GTIN) used for medicinal products"
   * system 0..1 MS
-  * system = $globalTradeItemID 
-  * type 0..1 MS
-  * type = $medicine-identifier-types#gtin "Global Trade Item Number"
+  * system = $globalTradeItemID
   * use = #official
   * value 0..1 MS
 
@@ -43,8 +39,6 @@ Description: "Uzbekistan Core Medication profile, used for representing medicati
   * ^short = "Uzbekistan's national marking identifier (Asl Belgisi)"
   * system 0..1 MS
   * system = $markingID
-  * type 0..1 MS
-  * type = $medicine-identifier-types#marking "Marking"
   * use = #official
   * value 0..1 MS
 
@@ -52,8 +46,6 @@ Description: "Uzbekistan Core Medication profile, used for representing medicati
   * ^short = "Official registration certificate identifier for medicines"
   * system 0..1 MS
   * system = $registrationCertificateID
-  * type 0..1 MS
-  * type = $medicine-identifier-types#registration_number "Registration Certificate"
   * use = #official
   * value 0..1 MS
 
@@ -61,16 +53,12 @@ Description: "Uzbekistan Core Medication profile, used for representing medicati
   * ^short = "National product and service classification code"
   * system 0..1 MS
   * system = $productServiceID
-  * type 0..1 MS
-  * type = $medicine-identifier-types#icps "Product and service identification codes"
   * use = #official
   * value 0..1 MS
 /*
 * identifier[uzpharmInfo]
   * system 1..1 MS
   * system = $uzpharm-agency
-  * type 1..1 MS
-  * type = $medicine-identifier-types#pharm_id "Pharmaceutical agency drug ID"
   * use = #official
   * value 1..1 MS
   */
@@ -110,7 +98,6 @@ Usage: #example
 * language = #en
 * identifier[registrationCertificateID]
   * system = $registrationCertificateID
-  * type = $medicine-identifier-types#registration_number "Registration Certificate"
   * use = #official
   * value = "UZ/MED/2024/00123"
 * code = inn-medication-name-cs#005325 "paracetamol"
@@ -133,12 +120,10 @@ Usage: #example
 * language = #en
 * identifier[globalTradeItemID]
   * system = $globalTradeItemID
-  * type = $medicine-identifier-types#gtin "Global Trade Item Number"
   * use = #official
   * value = "PH2025"
 * identifier[productServiceID]
   * system = $productServiceID
-  * type = $medicine-identifier-types#icps "Product and service identification codes"
   * use = #official
   * value = "PS2212"
 * code = $medical-product-classification#A01AB08 "Neomycin"
@@ -161,12 +146,10 @@ Usage: #example
 * language = #en
 * identifier[uzpharmBoxGroupID]
   * system = $uzpharmBoxGroupID
-  * type = $medicine-identifier-types#box_group_id "Medicine packaging identifier"
   * use = #official
   * value = "UZ-PHARM-BOX-000245"
 * identifier[productServiceID]
   * system = $productServiceID
-  * type = $medicine-identifier-types#icps "Product and service identification codes"
   * use = #official
   * value = "BOX-GRP-245"
 * code = $medical-product-classification#A06AH03 "naloxegol"

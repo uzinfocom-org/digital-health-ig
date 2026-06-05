@@ -67,7 +67,6 @@ Alias: $loinc-vs = http://loinc.org/vs
 Alias: $markingID = https://mobile-api.aslbelgisi.uz/marking
 Alias: $medical-product-classification = http://www.whocc.no/atc
 Alias: $medication-status = http://hl7.org/fhir/CodeSystem/medication-status
-Alias: $medicine-identifier-types = https://terminology.dhp.uz/fhir/core/CodeSystem/medicine-identifier-type-cs
 Alias: $mfa = https://gov.uz/ru/mfa
 Alias: $militaryID = https://dhp.uz/fhir/core/sid/pid/uz/mi
 Alias: $mis-dmed-uz = https://mis.dmed.uz
