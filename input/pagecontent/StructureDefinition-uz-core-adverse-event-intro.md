@@ -44,7 +44,7 @@ The base resource requires the `status` of the record, the `actuality` (was it a
 }
 ```
 
-`status` (registered, in-progress, completed ...) and `actuality` (`actual` / `potential`) each use a **required** binding - the value must come from the bound value set. `suspectEntity.instance[x]` is the instance suspected of causing the event; here a Medication, but for a post-immunization reaction it is the [Immunization](StructureDefinition-uz-core-immunization.html), and it may also be a Procedure, Substance, Device, or MedicationAdministration. It is a plain `Reference`, so `instanceReference` holds `{ "reference": "Type/id" }` directly.
+`status` (registered, in-progress, completed ...) and `actuality` (`actual` / `potential`) each use a required binding - the value must come from the bound value set. `suspectEntity.instance[x]` is the instance suspected of causing the event; here a Medication, but for a post-immunization reaction it is the [Immunization](StructureDefinition-uz-core-immunization.html), and it may also be a Procedure, Substance, Device, or MedicationAdministration. It is a plain `Reference`, so `instanceReference` holds `{ "reference": "Type/id" }` directly.
 
 #### A realistic actual adverse event
 

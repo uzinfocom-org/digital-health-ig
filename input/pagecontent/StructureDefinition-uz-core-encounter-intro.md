@@ -50,7 +50,7 @@ The examples below build up a single visit - an emergency inpatient encounter - 
 }
 ```
 
-`status`, `class`, `priority`, `type` and `subjectStatus` each use a **required** binding - the value must come from the bound value set (the Snapshot view below lists each one).
+`status`, `class`, `priority`, `type` and `subjectStatus` each use a required binding - the value must come from the bound value set (the Snapshot view below lists each one).
 
 #### A realistic visit
 

@@ -105,7 +105,7 @@ In practice you also send the `relationship` to the patient, a `name`, a way to 
 }
 ```
 
-`telecom.system` and `telecom.use` each use a **required** binding, as does `relationship` - the value must come from the bound value set (the Snapshot view below lists each one). When `gender` is `other`, supply the national `gender-other` extension; that extension is only allowed in that case.
+`telecom.system` and `telecom.use` each use a required binding, as does `relationship` - the value must come from the bound value set (the Snapshot view below lists each one). When `gender` is `other`, supply the national `gender-other` extension; that extension is only allowed in that case.
 
 #### Adding an address and the relationship period
 

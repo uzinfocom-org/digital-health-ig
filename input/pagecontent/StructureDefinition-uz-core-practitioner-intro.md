@@ -109,7 +109,7 @@ In practice you send the demographics the platform expects you to support: the `
 }
 ```
 
-`telecom.system` and `name.use` use **required** bindings - the value must come from the bound value set. The `district` / `city` codes come from national value sets - see [Addresses](general-guidance.html#addresses) for where each code is sourced. For a practitioner living abroad, use a free-text address with `country` set to the foreign ISO code instead.
+`telecom.system` and `name.use` use required bindings - the value must come from the bound value set. The `district` / `city` codes come from national value sets - see [Addresses](general-guidance.html#addresses) for where each code is sourced. For a practitioner living abroad, use a free-text address with `country` set to the foreign ISO code instead.
 
 #### Adding qualifications, photo and deceased status
 

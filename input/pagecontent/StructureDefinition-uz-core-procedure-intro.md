@@ -30,7 +30,7 @@ The examples below go from the smallest instance the server will accept to a ful
 
 #### The smallest Procedure you should send
 
-A Procedure's mandatory elements are `status` (a **required** binding: `preparation` \| `in-progress` \| `completed` \| `not-done` ...) and `subject` (a plain reference to the [Patient](StructureDefinition-uz-core-patient.html) it was performed on), but it is only useful once it also says *what* was done. Add the `code` (a **required** binding to the DHP procedure-code value set, here a SNOMED CT code) and, in practice, the `encounter` it took place in and when it happened (`occurrence[x]`). Every UZ Core resource must also name the profile in `meta.profile`:
+A Procedure's mandatory elements are `status` (a required binding: `preparation` \| `in-progress` \| `completed` \| `not-done` ...) and `subject` (a plain reference to the [Patient](StructureDefinition-uz-core-patient.html) it was performed on), but it is only useful once it also says *what* was done. Add the `code` (a required binding to the DHP procedure-code value set, here a SNOMED CT code) and, in practice, the `encounter` it took place in and when it happened (`occurrence[x]`). Every UZ Core resource must also name the profile in `meta.profile`:
 
 ```json
 {
@@ -84,7 +84,7 @@ Fill in the elements the platform expects you to support: an `identifier`, the `
 
 #### Adding the order, reason, body site and outcome
 
-To close the clinical loop, link back to the order that prompted the procedure (`basedOn`, a CarePlan or ServiceRequest), say why it was done (`reason`), where on the body (`bodySite`, a **required** binding), how it turned out (`outcome`, an extensible binding), and any free-text `note` or items `used`. Note that `reason` and `used` are `CodeableReference` types - the reference sits one level deeper than a plain reference - while `bodySite` and `outcome` are coded `CodeableConcept`s:
+To close the clinical loop, link back to the order that prompted the procedure (`basedOn`, a CarePlan or ServiceRequest), say why it was done (`reason`), where on the body (`bodySite`, a required binding), how it turned out (`outcome`, an extensible binding), and any free-text `note` or items `used`. Note that `reason` and `used` are `CodeableReference` types - the reference sits one level deeper than a plain reference - while `bodySite` and `outcome` are coded `CodeableConcept`s:
 
 ```json
 {

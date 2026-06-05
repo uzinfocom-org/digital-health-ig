@@ -41,7 +41,7 @@ The examples below go from the smallest instance the server will accept to a ful
 }
 ```
 
-`status` uses a **required** binding (`active` / `suspended` / `inactive`); the value must come from that value set. A bare name plus status is enough to register a place you can then reference from an [Encounter](StructureDefinition-uz-core-encounter.html) or [HealthcareService](StructureDefinition-uz-core-healthcareservice.html).
+`status` uses a required binding (`active` / `suspended` / `inactive`); the value must come from that value set. A bare name plus status is enough to register a place you can then reference from an [Encounter](StructureDefinition-uz-core-encounter.html) or [HealthcareService](StructureDefinition-uz-core-healthcareservice.html).
 
 #### Adding the multilingual name, type and address
 

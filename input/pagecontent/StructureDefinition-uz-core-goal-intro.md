@@ -50,7 +50,7 @@ Three elements are strictly mandatory: a `lifecycleStatus` saying where in plann
 }
 ```
 
-`lifecycleStatus` uses a **required** binding, so the value must come from the bound value set. To describe a goal that has no suitable code, send `description.text` instead of `coding`.
+`lifecycleStatus` uses a required binding, so the value must come from the bound value set. To describe a goal that has no suitable code, send `description.text` instead of `coding`.
 
 #### A realistic goal
 
@@ -85,7 +85,7 @@ In practice you send the goal in context: who it is for (`subject`, usually a [P
 }
 ```
 
-`achievementStatus`, `priority` and `lifecycleStatus` each use a **required** binding; `category` and `description` are bound `example`, so you may use other codes where they fit. `subject` and `source` are plain `Reference` values (`{ "reference": "Type/id" }`).
+`achievementStatus`, `priority` and `lifecycleStatus` each use a required binding; `category` and `description` are bound `example`, so you may use other codes where they fit. `subject` and `source` are plain `Reference` values (`{ "reference": "Type/id" }`).
 
 #### Adding a measurable target
 
