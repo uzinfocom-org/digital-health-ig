@@ -1,5 +1,7 @@
 UZ Core PractitionerRole is the join that places a [Practitioner](StructureDefinition-uz-core-practitioner.html) inside an [Organization](StructureDefinition-uz-core-organization.html) - and optionally at a [Location](StructureDefinition-uz-core-location.html) or offering a [HealthcareService](StructureDefinition-uz-core-healthcareservice.html) - with a stated role and specialty. This is the context that clinical resources point to as the performer or requester: it answers "in what capacity, and on whose behalf, did this professional act". Roles and specialties are coded from the Tibtoifa-derived national value sets.
 
+> When a clinical resource records who acted, point it at the PractitionerRole, not the bare [Practitioner](StructureDefinition-uz-core-practitioner.html): the same practitioner may hold several roles, and only the role captures the capacity - and the organization - they acted on behalf of.
+
 ### Mandatory and Must Support data elements
 
 The elements below must always be present (mandatory) or must be supported when the data is available ([Must Support](must-support.html)) - not all are required, but your system must populate each Must Support element when it has the data and process it on receipt. This is the human-readable summary; the [formal views](#profile) below give the exact cardinalities, types, and terminology bindings.

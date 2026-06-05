@@ -1,5 +1,7 @@
 UZ Core Practitioner describes an individual healthcare professional - a doctor, nurse, technician, or other clinical staff member - across the Digital Health Platform. A Practitioner on its own carries identity, demographics, and qualifications; it is placed into a working context (organization, specialty, role) by [PractitionerRole](StructureDefinition-uz-core-practitioner-role.html), which is what clinical resources reference as the performer or requester. Practitioner records are mastered centrally: identity and demographics flow from the State Personalization Centre by PINFL, the professional identifier comes from the HRM Argos system, and qualifications come from Tibtoifa - so you should search for an existing Practitioner by identifier before creating a new one.
 
+> Prefer referencing a [PractitionerRole](StructureDefinition-uz-core-practitioner-role.html) over the bare Practitioner when recording who performed or requested something: one practitioner can hold several roles - across organizations, specialties, or positions - and only the role says in which capacity they acted.
+
 ### Mandatory and Must Support data elements
 
 The elements below must always be present (mandatory) or must be supported when the data is available ([Must Support](must-support.html)) - not all are required, but your system must populate each Must Support element when it has the data and process it on receipt. This is the human-readable summary; the [formal views](#profile) below give the exact cardinalities, types, and terminology bindings.
