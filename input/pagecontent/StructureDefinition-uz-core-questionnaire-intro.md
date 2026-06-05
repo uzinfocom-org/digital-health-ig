@@ -1,4 +1,4 @@
-UZ Core Questionnaire is a centrally-approved (Ministry of Health) form template on the Digital Health Platform - the set of questions, not the answers. A completed form is captured separately as a [QuestionnaireResponse](StructureDefinition-uz-core-questionnaire-response.html). A Questionnaire has a lifecycle of draft -> active -> retired; only `active` templates should be used to capture new responses. Items, titles, and answer-option displays support multilingual content (Uzbek, with Russian and Karakalpak translations).
+UZ Core Questionnaire is a form template on the Digital Health Platform - the set of questions, not the answers. Some are nationally standardized (for example, approved by the Ministry of Health); systems and organizations may also define their own local templates. A completed form is captured separately as a [QuestionnaireResponse](StructureDefinition-uz-core-questionnaire-response.html). A Questionnaire has a lifecycle of draft -> active -> retired; only `active` templates should be used to capture new responses. Items, titles, and answer-option displays support multilingual content (Uzbek, with Russian and Karakalpak translations).
 
 ### Mandatory and Must Support data elements
 
@@ -36,7 +36,7 @@ A `status` is the only strictly mandatory element (inherited from the base resou
   },
   "status": "active",
   "name": "PatientSatisfactionQuestionnaire",
-  "title": "Опросник удовлетворённости пациента",
+  "title": "Bemor so'rovnomasi",
   "subjectType": ["Patient"]
 }
 ```
@@ -57,14 +57,25 @@ A real template carries a stable `url`, a `description`, and an `item` list. The
   "url": "https://dhp.uz/fhir/core/Questionnaire/PatientSatisfactionQuestionnaire",
   "status": "active",
   "name": "PatientSatisfactionQuestionnaire",
-  "title": "Опросник удовлетворённости пациента",
-  "description": "Вопросы для опросника пациента (для Patient Portal)",
+  "title": "Bemor so'rovnomasi",
+  "_title": {
+    "extension": [
+      {
+        "extension": [
+          { "url": "lang", "valueCode": "ru" },
+          { "url": "content", "valueString": "Опросник удовлетворённости пациента" }
+        ],
+        "url": "http://hl7.org/fhir/StructureDefinition/translation"
+      }
+    ]
+  },
+  "description": "Bemor so'rovnomasi uchun savollar (Patient Portal uchun)",
   "_description": {
     "extension": [
       {
         "extension": [
-          { "url": "lang", "valueCode": "uz" },
-          { "url": "content", "valueString": "Bemor so'rovnomasi uchun savollar (Patient Portal uchun)" }
+          { "url": "lang", "valueCode": "ru" },
+          { "url": "content", "valueString": "Вопросы для опросника пациента (для Patient Portal)" }
         ],
         "url": "http://hl7.org/fhir/StructureDefinition/translation"
       }
@@ -74,13 +85,13 @@ A real template carries a stable `url`, a `description`, and an `item` list. The
   "item": [
     {
       "linkId": "appointment-method",
-      "text": "Как вы записались на приём?",
+      "text": "Qabulga qanday yozildingiz?",
       "_text": {
         "extension": [
           {
             "extension": [
-              { "url": "lang", "valueCode": "uz" },
-              { "url": "content", "valueString": "Qabulga qanday yozildingiz?" }
+              { "url": "lang", "valueCode": "ru" },
+              { "url": "content", "valueString": "Как вы записались на приём?" }
             ],
             "url": "http://hl7.org/fhir/StructureDefinition/translation"
           }
@@ -98,8 +109,8 @@ A real template carries a stable `url`, a `description`, and an `item` list. The
               "extension": [
                 {
                   "extension": [
-                    { "url": "lang", "valueCode": "uz" },
-                    { "url": "content", "valueString": "Telefon orqali yozildim" }
+                    { "url": "lang", "valueCode": "ru" },
+                    { "url": "content", "valueString": "По телефону" }
                   ],
                   "url": "http://hl7.org/fhir/StructureDefinition/translation"
                 }
@@ -116,8 +127,8 @@ A real template carries a stable `url`, a `description`, and an `item` list. The
               "extension": [
                 {
                   "extension": [
-                    { "url": "lang", "valueCode": "uz" },
-                    { "url": "content", "valueString": "Boshqa" }
+                    { "url": "lang", "valueCode": "ru" },
+                    { "url": "content", "valueString": "Другое" }
                   ],
                   "url": "http://hl7.org/fhir/StructureDefinition/translation"
                 }
@@ -129,7 +140,18 @@ A real template carries a stable `url`, a `description`, and an `item` list. The
       "item": [
         {
           "linkId": "appointment-method-other",
-          "text": "Другое (укажите)",
+          "text": "Boshqa (ko'rsating)",
+          "_text": {
+            "extension": [
+              {
+                "extension": [
+                  { "url": "lang", "valueCode": "ru" },
+                  { "url": "content", "valueString": "Другое (укажите)" }
+                ],
+                "url": "http://hl7.org/fhir/StructureDefinition/translation"
+              }
+            ]
+          },
           "type": "string"
         }
       ]
