@@ -81,6 +81,7 @@ Alias: $observation-methods = http://hl7.org/fhir/ValueSet/observation-methods
 Alias: $observation-referencerange-normalvalue = http://hl7.org/fhir/observation-referencerange-normalvalue
 Alias: $observation-status = http://hl7.org/fhir/observation-status
 Alias: $organization-argos-id-system = https://dhp.uz/fhir/core/sid/org/uz/argos
+Alias: $organization-minzdrav-id-system = https://dhp.uz/fhir/core/sid/org/uz/minzdrav
 Alias: $organization-shif-id-system = https://dhp.uz/fhir/core/sid/org/uz/shif
 Alias: $organization-tax-id-system = https://dhp.uz/fhir/core/sid/org/uz/soliq
 Alias: $organization-type-cs = http://terminology.hl7.org/CodeSystem/organization-type
@@ -170,6 +171,5 @@ Alias: $action-condition-kind = http://hl7.org/fhir/action-condition-kind
 Alias: $action-relationship-type = http://hl7.org/fhir/action-relationship-type
 Alias: $ucum = http://unitsofmeasure.org
 Alias: $ucum-vs = http://hl7.org/fhir/ValueSet/ucum-units
-
 Alias: $adverse-event-actuality = http://hl7.org/fhir/adverse-event-actuality
 Alias: $adverse-event-seriousness = http://terminology.hl7.org/CodeSystem/adverse-event-seriousness
