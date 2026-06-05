@@ -1,7 +1,7 @@
 CodeSystem: MedicationDoseFormCS
 Id: medication-doseform-cs
 Title: "Medication dose form"
-Description: "A unique local identifier from the doseForm code system used to represent the dosage form of a medicinal product for standardized identification"
+Description: "A unique identifier from the doseForm code system used to represent the dosage form of a medicinal product for standardized identification"
 * insert OriginalCodeSystemDraft(medication-doseform-cs)
 
 * #AER101 "aerozol"
