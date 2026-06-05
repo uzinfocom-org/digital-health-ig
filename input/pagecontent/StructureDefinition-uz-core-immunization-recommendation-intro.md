@@ -21,9 +21,9 @@ Every ImmunizationRecommendation must name the patient the forecast is for, the 
 
 ### Building the JSON, step by step
 
-This resource is produced by the recommendation engine, but it helps to know its shape when you read one. The examples below go from the smallest instance the server will accept to a fully populated forecast. Copy one and adapt it - every value shown validates against this profile. The full reference instance is linked at the bottom of the page ([example recommendation](ImmunizationRecommendation-example-uz-core-immunization-recommendation.html)).
+This resource is produced by the recommendation engine, but it helps to know its shape when you read one. The examples below go from the smallest valid instance to a fully populated forecast - every value shown validates against this profile. The full reference instance is linked at the bottom of the page ([example recommendation](ImmunizationRecommendation-example-uz-core-immunization-recommendation.html)).
 
-#### The smallest recommendation you should send
+#### The smallest valid recommendation
 
 A recommendation needs the `patient` it is for, the `date` it was created, and at least one `recommendation` entry. Each entry must carry a `forecastStatus` and either a `vaccineCode` or a `targetDisease` (the `uzcore-imrec-1` rule requires at least one of the two). Every UZ Core resource also names the profile it claims to conform to in `meta.profile`. This much already validates:
 
