@@ -89,7 +89,7 @@ In practice you record the product detail and the administration: a CVX `vaccine
 }
 ```
 
-`patient`, `encounter`, `location`, `basedOn`, `supportingInformation`, `performer.actor` and `protocolApplied.authority` are all plain References (`{ "reference": "Type/id" }`). `administeredProduct`, `informationSource`, `reason` and `reaction.manifestation` are `CodeableReference` types - their reference sits one level deeper (`{ "reference": { "reference": "Type/id" } }`). See [How to read these profiles](how-to-read.html) for the distinction.
+`patient`, `encounter`, `location`, `basedOn`, `supportingInformation`, `performer.actor` and `protocolApplied.authority` are all plain References (`{ "reference": "Type/id" }`). `administeredProduct`, `informationSource`, `reason` and `reaction.manifestation` are `CodeableReference` types - their reference sits one level deeper (`{ "reference": { "reference": "Type/id" } }`). See [References and CodeableReferences](how-to-read.html#references-and-codeablereferences) for the distinction.
 
 #### Adding protocol, reason and reaction
 

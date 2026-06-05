@@ -50,6 +50,34 @@ Each row in the table is one element (field). The columns are:
 - Type - the data type or, for references, which resource(s) it points to. A reference like `Reference(UZ Core Patient)` means it must point to a resource conforming to that profile.
 - Description & Constraints - the definition, the value set binding, and any fixed values.
 
+### References and CodeableReferences
+
+Two different types point at other resources, and they nest differently in the JSON - getting them confused is a common cause of validation failures.
+
+A plain **`Reference`** points only at another resource. The pointer is a string under a `reference` key:
+
+```json
+"patient": { "reference": "Patient/example" }
+```
+
+A **`CodeableReference`** is a FHIR R5 type that can carry *either* a coded concept *or* a reference to a resource (or both) in the same field - so a field like `Immunization.reason` can say "because of this coded reason" or "because of this Condition resource". When it points at a resource, the reference sits one level deeper, nested inside a `reference` object:
+
+```json
+"reason": [
+  { "reference": { "reference": "Condition/example" } }
+]
+```
+
+and to give a code instead of a pointer, use `concept`:
+
+```json
+"reason": [
+  { "concept": { "coding": [{ "system": "...", "code": "..." }] } }
+]
+```
+
+The Type column tells you which one you are dealing with: `Reference(...)` versus `CodeableReference(...)`. When in doubt, the [base FHIR R5 definition](https://hl7.org/fhir/R5/references.html) of each field is authoritative.
+
 ### Slices
 
 Some elements are *sliced* - the same element is split into named variants with their own rules. For example, `Patient.identifier` is sliced into `nationalId`, `passportLocal`, `passportForeign`, and so on, each fixed to a specific national identifier system. In the table, slices appear as indented rows under the element with the slice name in brackets, e.g. `identifier:nationalId`. Populate the slice that matches your data; you do not have to populate every slice.
