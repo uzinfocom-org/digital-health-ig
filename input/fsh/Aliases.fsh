@@ -153,7 +153,6 @@ Alias: $valueset-supplement = http://hl7.org/fhir/StructureDefinition/valueset-s
 Alias: $specimen-status = http://hl7.org/fhir/specimen-status
 Alias: $specimen-combined = http://hl7.org/fhir/specimen-combined
 Alias: $immunization-recommendation-status = http://terminology.hl7.org/CodeSystem/immunization-recommendation-status
-Alias: $nationality-cs = https://terminology.dhp.uz/fhir/core/CodeSystem/nationality-cs
 Alias: $version-algorithm = http://hl7.org/fhir/version-algorithm
 Alias: $publication-status = http://hl7.org/fhir/publication-status
 Alias: $action-participant-type = http://hl7.org/fhir/action-participant-type

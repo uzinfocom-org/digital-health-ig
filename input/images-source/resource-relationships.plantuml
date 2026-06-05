@@ -1,0 +1,38 @@
+@startuml resource-relationships
+hide circle
+hide empty members
+skinparam linetype ortho
+title The core clinical record backbone
+
+class Patient [[StructureDefinition-uz-core-patient.html{Open the UZ Core Patient profile}]] #E8F0FE
+class EpisodeOfCare [[StructureDefinition-uz-core-episodeofcare.html{Open the UZ Core EpisodeOfCare profile}]] #E8F0FE
+class Encounter [[StructureDefinition-uz-core-encounter.html{Open the UZ Core Encounter profile}]] #E8F0FE
+class Condition [[StructureDefinition-uz-core-condition.html{Open the UZ Core Condition profile}]] #E8F0FE
+class Observation [[StructureDefinition-uz-core-observation.html{Open the UZ Core Observation profile}]] #E8F0FE
+class Procedure [[StructureDefinition-uz-core-procedure.html{Open the UZ Core Procedure profile}]] #E8F0FE
+class MedicationRequest
+class Composition
+class Specimen [[StructureDefinition-uz-core-specimen.html{Open the UZ Core Specimen profile}]] #E8F0FE
+class ServiceRequest
+
+Patient "1" <-- "0..*" EpisodeOfCare : « patient »
+EpisodeOfCare "0..1" <-- "0..*" Encounter : « episodeOfCare »
+
+Encounter "1" <-- "0..*" Condition : « encounter »
+Encounter "1" <-- "0..*" Observation : « encounter »
+Encounter "1" <-- "0..*" Procedure : « encounter »
+Encounter "1" <-- "0..*" MedicationRequest : « encounter »
+Encounter "1" <-- "0..1" Composition : « encounter »
+
+Observation "0..*" --> "0..1" Specimen : « specimen »
+Specimen "0..*" --> "0..1" ServiceRequest : « request »
+
+note as N
+  These are the core record resources, not every
+  UZ Core profile. Each arrow points from the
+  resource that holds the reference to its target;
+  the label is the FHIR reference element.
+  Blue boxes are profiled and link to their page;
+  grey boxes are referenced but not yet profiled.
+end note
+@enduml

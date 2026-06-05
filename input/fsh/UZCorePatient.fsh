@@ -9,7 +9,7 @@ Description: "Uzbekistan Core Patient profile, used to represent patients admini
 * ^publisher = "Uzinfocom"
 
 * identifier 1..* MS
-  * extension contains data-absent-reason named data-absent-reason 0..1 MS
+  * value.extension contains data-absent-reason named data-absent-reason 0..1 MS
 * identifier.use from IdentifierUseVS (required)
 * identifier.type from IdentifierTypeVS (required)
 * identifier ^slicing.discriminator.type = #value
@@ -293,3 +293,15 @@ Usage: #example
 * maritalStatus = $v3-MaritalStatus#U "Unmarried"
 * multipleBirthInteger = 2
 * extension[nationality].extension[code].valueCodeableConcept = $nationality-cs#42 "TURKMAN"
+
+Instance: example-unidentified-patient
+InstanceOf: UZCorePatient
+Description: "Unidentified patient brought in unconscious, with no identifier available. Patient.identifier is mandatory (1..*), so rather than inventing a fake value the single identifier carries a data-absent-reason extension - the resource still validates without fabricating data."
+Usage: #example
+* identifier
+  * use = #temp
+  * value.extension[data-absent-reason].valueCode = #unknown
+* active = true
+* name
+  * use = #anonymous
+  * text = "Unidentified patient"
