@@ -5,7 +5,7 @@
   "name": "MedicationDoseFormCS",
   "id": "medication-doseform-cs",
   "title": "Medication dose form",
-  "description": "Local code system of pharmaceutical dose forms (e.g., tablet, capsule, solution).",
+  "description": "Code system of pharmaceutical dose forms (e.g., tablet, capsule, solution).",
   "url": "https://terminology.dhp.uz/fhir/core/CodeSystem/medication-doseform-cs",
   "concept": [
     {
