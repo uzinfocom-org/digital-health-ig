@@ -90,14 +90,14 @@ Swap the type code and the result value set together - they always move as a pai
 
 #### Choosing the type code and its value set
 
-The only thing that changes between a benefits, education, profession, or social-status record is the SNOMED `code` and the matching `valueCodeableConcept` system. Keep the two in step - the result code system below must match the type code in the same row:
+The only thing that changes between a benefits, education, profession, or social-status record is the SNOMED `code` and the matching `valueCodeableConcept` system. Keep the two in step - the result code system below must match the type code in the same row. Each system links to the value set of codes you can use:
 
 | Socioeconomic fact | `code` (SNOMED CT) | `valueCodeableConcept` system |
 |---|---|---|
-| Eligible for benefit | `1303306008` | `https://terminology.dhp.uz/fhir/core/CodeSystem/benefits-cs` |
-| Educational achievement | `105421008` | `https://terminology.dhp.uz/fhir/core/CodeSystem/education-cs` |
-| Occupation | `14679004` | `https://terminology.dhp.uz/fhir/core/CodeSystem/position-and-profession-cs` |
-| Social status | `82996008` | `https://terminology.dhp.uz/fhir/core/CodeSystem/social-status-cs` |
+| Eligible for benefit | `1303306008` | [`https://terminology.dhp.uz/fhir/core/CodeSystem/benefits-cs`](ValueSet-benefits-vs.html) |
+| Educational achievement | `105421008` | [`https://terminology.dhp.uz/fhir/core/CodeSystem/education-cs`](ValueSet-education-vs.html) |
+| Occupation | `14679004` | [`https://terminology.dhp.uz/fhir/core/CodeSystem/position-and-profession-cs`](ValueSet-position-and-profession-vs.html) |
+| Social status | `82996008` | [`https://terminology.dhp.uz/fhir/core/CodeSystem/social-status-cs`](ValueSet-social-status-vs.html) |
 
 For an occupation record, the `code` is `14679004` (Occupation) and the result comes from the profession code system:
 
