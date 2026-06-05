@@ -1,4 +1,4 @@
-UZ Core Provenance records the origin, authorship and signature of a clinical record on the Digital Health Platform. Every clinically significant record should have a Provenance saying who recorded it and when; for signed documents it carries the digital signature - created via MyID biometric authentication or EDS / E-IMZO - and references the signed resource. Provenance is generally written by the originating system alongside the data it describes, so most clients will read it rather than create it.
+UZ Core Provenance records the origin, authorship and signature of a clinical record on the Digital Health Platform. Every clinically significant record should have a Provenance saying who recorded it and when; for signed documents it carries the digital signature - obtained when the practitioner authenticates via oneID in a DHP-hosted iframe - and references the signed resource. Your system writes the Provenance alongside the data it submits - both to record who authored the record and, for signed documents, to carry the signature.
 
 ### Mandatory and Must Support data elements
 
@@ -20,11 +20,11 @@ This profile adds no mandatory cardinality of its own. The required elements are
 - an entity with its role (required binding) and what it points to;
 - a signature carrying its type (required binding), when it was made, who signed (a PractitionerRole), the sigFormat and the signature data.
 
-> For signed documents, the MyID or EDS / E-IMZO signature blob lives in `signature.data`; `target` references the document that was signed.
+> For signed documents, the signature blob lives in `signature.data`; `target` references the document that was signed.
 
 ### Building the JSON, step by step
 
-Provenance is normally written by the originating system, so you will usually read these rather than build them - but the shape matters when you do. The examples below go from the smallest record the server will accept to a fully signed document event. Copy one and adapt it - every value shown validates against this profile. The full reference instance is the [example Provenance](Provenance-example-provenance.html).
+You build a Provenance when you submit clinically significant data - to record who authored it and, for signed documents, to carry the signature. The examples below go from the smallest record the server will accept to a fully signed document event. Copy one and adapt it - every value shown validates against this profile. The full reference instance is the [example Provenance](Provenance-example-provenance.html).
 
 #### The smallest Provenance you should send
 
@@ -57,7 +57,7 @@ A Provenance needs at least one `target` (the record it is about) and at least o
 
 #### Adding the digital signature
 
-The reason this profile exists is to carry the signature created via MyID biometric authentication or EDS / E-IMZO. Add a `signature` entry: its `type` says how it was made (required binding), `when` is the moment it was applied, `who` references the same PractitionerRole, `sigFormat` is the media type of the blob, and `data` is the base64-encoded signature itself:
+The reason this profile exists is to carry the digital signature the platform returns after the practitioner authenticates via oneID in a DHP-hosted iframe. Add a `signature` entry: its `type` says how it was made (required binding), `when` is the moment it was applied, `who` references the same PractitionerRole, `sigFormat` is the media type of the blob, and `data` is the base64-encoded signature itself:
 
 ```json
 {

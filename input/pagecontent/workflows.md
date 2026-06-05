@@ -20,7 +20,7 @@ More scenarios (population screening) will be added as the corresponding profile
 
 A few rules apply to every workflow:
 
-- Authenticate first. All requests carry an OAuth2 bearer token (`Authorization: Bearer <token>`) obtained from the platform SSO. System-to-system clients use the client-credentials flow; user-facing apps use the authorization-code flow via OneID.
+- Authenticate first. All requests carry an OAuth2 bearer token (`Authorization: Bearer <token>`) obtained from the platform SSO. System-to-system clients use the client-credentials flow; user-facing apps use the authorization-code flow via oneID.
 - Declare the profile. Every resource you submit carries `meta.profile` so the server validates it against the right UZ Core profile. See [General guidance &rarr; metadata](general-guidance.html#metadata).
 - Group related resources in a Bundle. When several resources belong together, you may submit them as a Bundle (transaction or batch) or, for a finalized document, a document Bundle. See [General guidance &rarr; Bundles](general-guidance.html#bundles-document-vs-transaction-vs-searchset).
 - Honour consent. Read requests are subject to the patient's [Consent](StructureDefinition-uz-core-consent.html); a denied request returns `403`. Every access is logged to [AuditEvent](StructureDefinition-uz-core-auditevent.html).
