@@ -34,14 +34,6 @@ Description: "Uzbekistan Core Organization profile, used to define healthcare or
   * use = #official
   * value 1..1 MS
 
-* identifier[minzdravId]
-  * system 1..1 MS
-  * system = $organization-minzdrav-id-system
-  * type 1..1 MS
-  * type = $identifier-type#XX "Organization Identifier"
-  * use = #official
-  * value 1..1 MS
-
 * identifier[shifId]
   ^short = "Identifier assigned by the State Health Insurance Fund (SHIF)"
   * system 1..1 MS
