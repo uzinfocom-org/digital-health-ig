@@ -1,8 +1,6 @@
-# Identifier systems
-
 This guide explains how to use identifier systems within the Uzbekistan Digital Health Platform for identifying patients, healthcare professionals, and organizations.
 
-## Overview
+### Overview
 
 The UZ Core implementation uses a hierarchical identifier domain system. All identifiers follow the structure:
 
@@ -18,9 +16,9 @@ Where:
 
 For a complete list of all supported identifier systems across all countries, see the [IdentifierDomainCS CodeSystem](CodeSystem-identifier-domain-cs.html).
 
-## Patient identifiers
+### Patient identifiers
 
-### National ID (PINFL)
+#### National ID (PINFL)
 
 The national unique identifier (PINFL - Personal Identification Number for Foreign and Local citizens) is the primary identifier for Uzbek citizens and residents.
 
@@ -48,7 +46,7 @@ The national unique identifier (PINFL - Personal Identification Number for Forei
 }
 ```
 
-### Passport - local (internal)
+#### Passport - local (internal)
 
 Local passports are used for domestic identification within Uzbekistan.
 
@@ -75,7 +73,7 @@ Local passports are used for domestic identification within Uzbekistan.
 }
 ```
 
-### Identifiers for unidentified patients
+#### Identifiers for unidentified patients
 
 When a patient cannot be immediately identified (e.g., an unconscious patient who cannot provide identification), the platform provides two identifier types. Always prefer the organization-scoped temporary medical record number when possible.
 
@@ -84,7 +82,7 @@ When a patient cannot be immediately identified (e.g., an unconscious patient wh
 | Unidentified patient admitted to a known healthcare organization | `medicalRecordTemp` (preferred) |
 | Unidentified patient, organization unknown or tax ID unavailable | `unknownPatient` (fallback) |
 
-#### Temporary medical record number (preferred)
+##### Temporary medical record number (preferred)
 
 Use this identifier when an unidentified patient is admitted to a healthcare organization and the organization's tax ID (Soliq) is known. This is the preferred approach because it provides traceability to the issuing organization.
 
@@ -113,7 +111,7 @@ Example (using organization with tax ID `200935935`):
 }
 ```
 
-#### Unknown patient identifier (fallback)
+##### Unknown patient identifier (fallback)
 
 Use this identifier only when an unidentified patient's receiving organization is unknown or the organization's tax ID is not available. Prefer using the organization-scoped temporary medical record number whenever possible.
 
@@ -140,7 +138,7 @@ Use this identifier only when an unidentified patient's receiving organization i
 }
 ```
 
-### Foreign passports and driver's licenses
+#### Foreign passports and driver's licenses
 
 The platform supports identification of foreign nationals using their passport numbers and driver's licenses. The system URI follows the same pattern using the ISO 3166-1 two-letter country code:
 
@@ -171,9 +169,9 @@ Example for an Estonian passport:
 
 For a complete list of all supported patient identifier systems, including all supported countries for foreign passports and driver's licenses, see the [PatientIdentifierDomainVS](ValueSet-patient-identifier-domain-vs.html) value set.
 
-## Practitioner identifiers
+### Practitioner identifiers
 
-### Healthcare professional ID (HRM Argos)
+#### Healthcare professional ID (HRM Argos)
 
 Healthcare professionals are identified using the Human Resource Management (HRM) Argos system.
 
@@ -205,9 +203,9 @@ Healthcare professionals are identified using the Human Resource Management (HRM
 
 For a complete list of all supported practitioner identifier systems, see the [PractitionerIdentifierDomainVS](ValueSet-practitioner-identifier-domain-vs.html) value set.
 
-## Organization identifiers
+### Organization identifiers
 
-### Tax ID (Soliq)
+#### Tax ID (Soliq)
 
 Organizations are identified by their tax identification number assigned by the State Tax Committee.
 
@@ -235,7 +233,7 @@ Organizations are identified by their tax identification number assigned by the 
 }
 ```
 
-### State Health Insurance Fund (SHIF)
+#### State Health Insurance Fund (SHIF)
 
 Healthcare organizations under contract with the State Health Insurance Fund (SHIF) of Uzbekistan are identified by their SHIF code. The code follows the pattern `^[A-Z]{3}[0-9]{6}$` — 3 uppercase Latin letters followed by 6 digits (e.g., `OAA000024`).
 
@@ -265,13 +263,13 @@ Healthcare organizations under contract with the State Health Insurance Fund (SH
 
 For a complete list of all supported organization identifier systems, see the [OrganizationIdentifierDomainVS](ValueSet-organization-identifier-domain-vs.html) value set.
 
-## Document identifiers
+### Document identifiers
 
 Documents are identified using the `doc` namespace. This allows tracking of clinical documents, reports, and other healthcare documentation.
 
 **System URI pattern**: `https://dhp.uz/fhir/core/sid/doc/{country}/{type}`
 
-## Complete example: patient with multiple identifiers
+### Complete example: patient with multiple identifiers
 
 A patient may have multiple identifiers. Here's a complete example showing proper usage:
 
@@ -351,7 +349,7 @@ A patient may have multiple identifiers. Here's a complete example showing prope
 }
 ```
 
-## Implementation guidelines
+### Implementation guidelines
 
 Not all concepts in the IdentifierDomainCS CodeSystem are selectable. Parent/grouping concepts have the `notSelectable` property set to `true`. Only leaf concepts (actual identifier systems) can be used:
 
@@ -366,7 +364,7 @@ Not all concepts in the IdentifierDomainCS CodeSystem are selectable. Parent/gro
 - `https://dhp.uz/fhir/core/sid/pid/uz/ppn` (passport root)
 
 
-### Searching
+#### Searching
 
 To search for resources by identifier, use the standard FHIR search parameters:
 
@@ -378,7 +376,7 @@ GET [base]/Practitioner?identifier=https://dhp.uz/fhir/core/sid/pro/uz/argos|987
 GET [base]/Organization?identifier=https://dhp.uz/fhir/core/sid/org/uz/soliq|200935935
 ```
 
-## Related resources
+### Related resources
 
 - [IdentifierDomainCS CodeSystem](CodeSystem-identifier-domain-cs.html)
 - [UZCorePatient Profile](StructureDefinition-uz-core-patient.html)

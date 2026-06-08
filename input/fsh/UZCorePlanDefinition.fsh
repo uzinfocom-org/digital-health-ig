@@ -2,7 +2,7 @@ Profile: UZCorePlanDefinition
 Parent: PlanDefinition
 Id: uz-core-plan-definition
 Title: "UZ Core PlanDefinition"
-Description: "UZ Core profile for Stores and represents the National Immunization Schedule of Uzbekistan, including planned vaccines, recommended administration periods, target age groups, dose sequences, and related scheduling rules. This profile is used to define structured immunization activities that support consistent planning, implementation, and exchange of vaccination schedules within the national digital health ecosystem."
+Description: "Uzbekistan Core PlanDefinition profile, used to express the national immunization schedule as computable logic"
 * ^status = #draft
 * ^experimental = true
 

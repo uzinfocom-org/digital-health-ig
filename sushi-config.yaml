@@ -55,7 +55,44 @@ dependencies:
 #     title: Examples Overview
 #     simpleExamples.xml:
 #     complexExamples.xml:
-#
+
+# Curated page order: drives the TOC and the prev/next page navigation.
+# Declaring pages: disables SUSHI auto-generation, so every narrative page
+# must be listed here or it drops out of the navigation.
+pages:
+  index.md:
+    title: Home
+  fhir-basics.md:
+    title: FHIR basics
+  how-to-read.md:
+    title: How to read this guide
+  general-guidance.md:
+    title: General guidance
+  must-support.md:
+    title: Must Support
+  identifiers.md:
+    title: Identifier systems
+  vital-signs.md:
+    title: Vital signs
+  workflows.md:
+    title: Workflows
+    workflow-lab.md:
+      title: Laboratory order to result
+    workflow-immunization.md:
+      title: Immunization
+    workflow-referral.md:
+      title: e-Referral lifecycle
+    workflow-patient-journey.md:
+      title: Patient journey (Episode of Care)
+    workflow-prescription.md:
+      title: e-Prescription and dispensing
+  api-access.md:
+    title: API access
+  components.md:
+    title: Components
+  changelog.md:
+    title: Changelog
+
 #
 # The parameters property represents IG.definition.parameter. Rather
 # than a list of code/value pairs (as in the ImplementationGuide
@@ -72,11 +109,13 @@ parameters:
   excludexml: true
   usage-stats-opt-out: true # times out often
   # language-translations-mode: preserve
-  # shownav: true
+  shownav: true # show next/previous page navigation tabs in header and footer
 
   pin-canonicals: pin-all
   apply-version: false # don't override the version in the knowledge resources
   default-version: true
+
+  show-inherited-invariants: false # hide invariants inherited from the base resource in profile tables
 
   # openehr: true
 
@@ -103,8 +142,12 @@ menu:
   Home: index.html
   Guidance:
     FHIR basics: fhir-basics.html
+    How to read this guide: how-to-read.html
+    General guidance: general-guidance.html
+    Must Support: must-support.html
     Identifiers: identifiers.html
     Vital signs: vital-signs.html
+  Workflows: workflows.html
   API access: api-access.html
   Artifacts: artifacts.html
   Components: components.html

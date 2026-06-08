@@ -1,6 +1,6 @@
 ### Quick Start
 
-Common API interactions for this profile. `[base]` is the FHIR server base URL; `|` separates a token system from its value and must be URL-encoded as `%7C`. These interactions use standard FHIR R5 search parameters; see the [CapabilityStatement](CapabilityStatement-DHPCapabilityStatement.html) as it is finalized for this resource.
+Common API interactions for this profile. Requests require a JWT access token - see [Security and authentication](api-access.html#security). `[base]` is the [FHIR server base URL](api-access.html#endpoints); `|` separates a token system from its value and must be URL-encoded as `%7C`. These interactions use standard FHIR R5 search parameters; see the [CapabilityStatement](CapabilityStatement-DHPCapabilityStatement.html) as it is finalized for this resource.
 
 **Read an adverse event by server id**
 
@@ -27,14 +27,24 @@ GET [base]/AdverseEvent?code=http://snomed.info/sct%7C39579001
 
 ```
 POST [base]/AdverseEvent
-{ "resourceType": "AdverseEvent", "meta": { "profile": [ "https://dhp.uz/fhir/core/StructureDefinition/uz-core-adverse-event" ] }, ... }
+{
+  "resourceType": "AdverseEvent",
+  "meta": { "profile": [ "https://dhp.uz/fhir/core/StructureDefinition/uz-core-adverse-event" ] },
+  ...
+}
 ```
 
 **Update an adverse event** (e.g. add an outcome or the resulting condition once known)
 
 ```
 PUT [base]/AdverseEvent/[id]
-{ "resourceType": "AdverseEvent", "id": "[id]", "meta": { "profile": [ "https://dhp.uz/fhir/core/StructureDefinition/uz-core-adverse-event" ] }, ... }
+If-Match: W/"3"   # the ETag from your last read; 412 if it changed since
+{
+  "resourceType": "AdverseEvent",
+  "id": "[id]",
+  "meta": { "profile": [ "https://dhp.uz/fhir/core/StructureDefinition/uz-core-adverse-event" ] },
+  ...
+}
 ```
 
 ### Related

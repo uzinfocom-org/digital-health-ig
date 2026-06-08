@@ -1,0 +1,25 @@
+@startuml immunization-flow
+title National schedule to recorded dose
+autonumber
+
+actor "Program\nmanager" as PM
+participant "DHP\n(recommendation engine)" as DHP
+actor "Doctor" as Doc
+actor "Nurse" as Nurse
+
+PM -> DHP : publish [[StructureDefinition-uz-core-plan-definition.html PlanDefinition]] (national schedule)
+note over DHP : one active schedule\nper jurisdiction
+
+Doc -> DHP : GET [[StructureDefinition-uz-core-immunization-recommendation.html ImmunizationRecommendation]]?patient=[id]
+activate DHP
+note over DHP : engine reads PlanDefinition\n+ Immunization history\n+ patient demographics
+DHP --> Doc : ImmunizationRecommendation\n(due / overdue, dose number)
+deactivate DHP
+
+Doc -> Doc : assess eligibility
+Nurse -> DHP : POST [[StructureDefinition-uz-core-immunization.html Immunization]]\n(status = completed | not-done)
+
+opt reaction occurs
+  Nurse -> DHP : POST [[StructureDefinition-uz-core-adverse-event.html AdverseEvent]]\n(suspectEntity -> Immunization) + [[StructureDefinition-uz-core-observation.html Observation]]
+end
+@enduml

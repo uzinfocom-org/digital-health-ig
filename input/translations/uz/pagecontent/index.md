@@ -1,3 +1,5 @@
+> **Mashina tarjimasi, inson tomonidan tekshirilishi zarur.** Ushbu sahifa ingliz tilidan sun'iy intellekt yordamida avtomatik tarjima qilingan va hali muharrir tomonidan tekshirilmagan. Har qanday nomuvofiqlikda asl inglizcha versiya ustuvor hisoblanadi.
+
 # O'zbekiston yagona raqamli sog'liqni saqlash platformasi
 
 Ushbu FHIR R5 joriy etish qo'llanmasi (IG) ishlab chiqish jarayonida bo'lib, hozircha production muhitida foydalanish uchun tayyor emas. U faqat [Raqamli sog'liqni saqlash platformasi](https://www.kfw.de/About-KfW/Newsroom/Latest-News/Pressemitteilungen-Details_723328.html) (DHP) doirasida testdan o'tkazish va fikr-mulohazalarni yig'ish uchun mo'ljallangan. IG takomillashtirilishi davomida uning mazmuni o'zgarib boradi.
@@ -26,27 +28,27 @@ Raqamli sog'liqni saqlash platformasi (DHP) "Sog'liqni saqlashni raqamlashtirish
 
 ### Qamrov sohalari
 
-O'zbekiston Respublikasi Raqamli sog'liqni saqlash platformasi quyidagi 19 ta xizmatga asoslanadi:
+O'zbekiston Respublikasi Raqamli sog'liqni saqlash platformasi quyidagi 19 ta [komponentga](components.html) asoslanadi:
 
-* Metama'lumotlar va xavfsizlikni boshqarish
-* Asosiy ma'lumotlarni boshqarish
-* Bemorning sog'liqni saqlash marshrutini boshqarish
-* Elektron tibbiy yozuvlar
-* Yo'llanmalar
-* Retsept
-* Qabulga yozish va jadvalni boshqarish
-* Laboratoriya
-* Diagnostika va nurli vizualizatsiya
-* Tez tibbiy yordam
-* Ta'minot
-* Xarajatlarni qoplash
-* Klinik qarorlarni qo'llab-quvvatlash
-* Hamshiralik ishi
-* Qon resurslarini boshqarish
-* Vaksinatsiyani boshqarish
-* Jamoat salomatligi bo'yicha hisobotlar
-* Skrining jadvallarini boshqarish
-* Sifatni ta'minlash
+* [Metama'lumotlar va xavfsizlikni boshqarish](components.html#metadata-and-security-management-msm)
+* [Asosiy ma'lumotlarni boshqarish](components.html#master-data-management-mdm)
+* [Bemorning sog'liqni saqlash marshrutini boshqarish](components.html#patient-health-journey-management)
+* [Elektron tibbiy yozuvlar](components.html#clinical-health-records-chr)
+* [Yo'llanmalar](components.html#referrals)
+* [Retsept](components.html#prescription)
+* [Qabulga yozish va jadvalni boshqarish](components.html#appointment-and-scheduling)
+* [Laboratoriya](components.html#laboratory)
+* [Diagnostika va nurli vizualizatsiya](components.html#diagnostics-and-imaging)
+* [Tez tibbiy yordam](components.html#ambulance)
+* [Ta'minot](components.html#supplies)
+* [Xarajatlarni qoplash](components.html#reimbursement)
+* [Klinik qarorlarni qo'llab-quvvatlash](components.html#clinical-decision-support)
+* [Hamshiralik ishi](components.html#nursing)
+* [Qon resurslarini boshqarish](components.html#blood-management)
+* [Vaksinatsiyani boshqarish](components.html#vaccination-management)
+* [Jamoat salomatligi bo'yicha hisobotlar](components.html#public-health-reporting)
+* [Skrining jadvallarini boshqarish](components.html#screening-schedules-management)
+* [Sifatni ta'minlash](components.html#quality-assurance)
 
 ### Versiyalarni aniqlash
 

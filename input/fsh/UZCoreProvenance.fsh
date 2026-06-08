@@ -2,7 +2,7 @@ Profile: UZCoreProvenance
 Parent: Provenance
 Id: uz-core-provenance
 Title: "UZ Core Provenance"
-Description: "Uzbekistan Core Provenance profile, used to digitally sign documents via myID"
+Description: "Uzbekistan Core Provenance profile, used to digitally sign documents via oneID"
 * ^experimental = true
 * ^status = #active
 * ^date = "2025-03-13"
@@ -26,7 +26,7 @@ Description: "Uzbekistan Core Provenance profile, used to digitally sign documen
 
 Instance: example-pdf-document
 InstanceOf: DocumentReference
-Description: "Example of a PDF document signed with myID"
+Description: "Example of a PDF document signed via oneID"
 Usage: #example
 * status = #current
 * content.attachment

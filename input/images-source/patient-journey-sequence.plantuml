@@ -1,0 +1,22 @@
+@startuml patient-journey-sequence
+title A case grouped under one EpisodeOfCare
+autonumber
+
+actor "Clinician\n(GP)" as GP
+participant "DHP\nFHIR server" as DHP
+actor "Clinician\n(specialist)" as Spec
+
+GP -> DHP : POST [[StructureDefinition-uz-core-episodeofcare.html EpisodeOfCare]] (status = active)\nperiod.start = diagnosis date
+GP -> DHP : POST [[StructureDefinition-uz-core-encounter.html Encounter]] (episodeOfCare -> EpisodeOfCare)\n+ [[StructureDefinition-uz-core-condition.html Condition]] (diagnosis)\n+ [[StructureDefinition-uz-core-observation.html Observation]] (confirming result)
+
+note over DHP : every visit, result and prescription\nin the case references the episode
+loop each visit during the case
+  Spec -> DHP : POST Encounter / Observation / MedicationRequest\n(-> EpisodeOfCare)
+end
+
+alt acute / curable case
+  Spec -> DHP : PUT EpisodeOfCare (status = finished)\nperiod.end = recovery
+else chronic / lifelong case
+  Spec -> DHP : append to statusHistory (onhold <-> active);\nepisode stays open
+end
+@enduml
