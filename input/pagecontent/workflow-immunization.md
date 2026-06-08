@@ -1,25 +1,12 @@
-# Workflow: Immunization
-
 This workflow shows how the national immunization schedule drives a personalised recommendation, and how a vaccine dose is recorded. All four resources used here are profiled in UZ Core.
 
-**Actors:** Immunization Program Manager / Data Steward (maintains the schedule); the patient or parent/guardian (views recommendations); a doctor and nurse (assess eligibility and administer).
+Actors: Immunization Program Manager / Data Steward (maintains the schedule); the patient or parent/guardian (views recommendations); a doctor and nurse (assess eligibility and administer).
 
-**The chain:**
+The chain:
 
-```
-PlanDefinition (national schedule)
-        │  + Patient demographics + Immunization history
-        ▼
-ImmunizationRecommendation (what this patient is due / overdue for)
-        │  clinician assesses & administers
-        ▼
-Immunization (the dose that was given - or why it wasn't)
-        │  if a reaction occurs
-        ▼
-AdverseEvent (+ Observation)
-```
+<div>{% include immunization-flow.svg %}</div><br clear="all"/>
 
-## 1. The schedule as code
+### 1. The schedule as code
 
 The national schedule is published once as a [PlanDefinition](StructureDefinition-uz-core-plan-definition.html). Each recommended dose is a `PlanDefinition.action`; the vaccine and dosing detail are carried on the action, via `definitionCanonical` to an `ActivityDefinition`, or via the national extensions (`doseSequence`, `maximumInterval`, `gracePeriod`). Minimum intervals between doses use `action.relatedAction.offsetDuration`; eligibility uses `action.condition`.
 
@@ -27,9 +14,9 @@ The national schedule is published once as a [PlanDefinition](StructureDefinitio
 GET [base]/PlanDefinition?status=active&context-type-value=focus$vaccination
 ```
 
-> Only **one** schedule version may be active at a time for a given scope/jurisdiction, and the schedule must satisfy the validation rules (no dose-sequence gaps, no impossible timing windows, no two overlapping active versions). See the [PlanDefinition](StructureDefinition-uz-core-plan-definition.html) page.
+> Only one schedule version may be active at a time for a given scope/jurisdiction, and the schedule must satisfy the validation rules (no dose-sequence gaps, no impossible timing windows, no two overlapping active versions). See the [PlanDefinition](StructureDefinition-uz-core-plan-definition.html) page.
 
-## 2. Generate the recommendation
+### 2. Generate the recommendation
 
 The recommendation engine reads the active PlanDefinition, the patient's existing [Immunization](StructureDefinition-uz-core-immunization.html) history, and the patient's demographics, and produces an [ImmunizationRecommendation](StructureDefinition-uz-core-immunization-recommendation.html). Each entry carries `vaccineCode` and/or `targetDisease`, `doseNumber`, a `forecastStatus` (due, overdue, …) and a `dateCriterion` (earliest/recommended/latest dates).
 
@@ -43,16 +30,19 @@ GET [base]/Immunization?patient=Patient/[id]&status=completed
 
 The recommendation is *computed*, not hand-entered - clients display it, they do not author it.
 
-## 3. Assess and administer
+### 3. Assess and administer
 
 The doctor reviews the recommendation and the history and decides whether the patient is eligible. The nurse administers, and the system records an `Immunization`. The `status` carries the outcome:
 
 | Outcome | `Immunization.status` | Also set |
 |---------|------------------------|----------|
 | Vaccine given | `completed` | `occurrence`, `vaccineCode`, `administeredProduct`, `lotNumber`, `doseQuantity`, `performer` |
-| Medical exemption | `not-done` | `statusReason` (the exemption reason) |
-| Refusal | `not-done` | `statusReason` (the refusal reason) |
-| Recorded in error | `entered-in-error` | — |
+| Medical exemption | `not-done` | `statusReason` = `MEDPREC` (medical precaution) or `IMMUNE` (immunity) |
+| Refusal | `not-done` | `statusReason` = `PATOBJ` (patient objection) |
+| Product unavailable | `not-done` | `statusReason` = `OSTOCK` (product out of stock) |
+| Recorded in error | `entered-in-error` | - |
+
+`statusReason` is bound (required) to the [Immunization status reason value set](ValueSet-immunization-status-reason-vs.html); the four codes above, from HL7 v3 ActReason, are the only valid values.
 
 ```
 POST [base]/Immunization
@@ -69,13 +59,13 @@ POST [base]/Immunization
 }
 ```
 
-> A dose is uniquely identified by **patient + vaccineCode + occurrence + lotNumber** - do not submit the same combination twice.
+> A dose is uniquely identified by patient + vaccineCode + occurrence + lotNumber - do not submit the same combination twice.
 
-## 4. Record a reaction (if any)
+### 4. Record a reaction (if any)
 
 If the patient has a post-immunization reaction, record an [AdverseEvent](StructureDefinition-uz-core-adverse-event.html) whose `suspectEntity` references the Immunization, optionally with an [Observation](StructureDefinition-uz-core-observation.html) describing the reaction.
 
-## Related
+### Related
 
 - Profiles: [PlanDefinition](StructureDefinition-uz-core-plan-definition.html) &middot; [ImmunizationRecommendation](StructureDefinition-uz-core-immunization-recommendation.html) &middot; [Immunization](StructureDefinition-uz-core-immunization.html) &middot; [AdverseEvent](StructureDefinition-uz-core-adverse-event.html)
 - [Workflows overview](workflows.html) &middot; [General guidance](general-guidance.html)

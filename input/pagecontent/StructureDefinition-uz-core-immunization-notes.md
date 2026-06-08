@@ -1,6 +1,6 @@
 ### Quick Start
 
-Common API interactions for this profile. `[base]` is the FHIR server base URL; `|` separates a token system from its value and must be URL-encoded as `%7C`. These interactions use standard FHIR R5 search parameters; see the [CapabilityStatement](CapabilityStatement-DHPCapabilityStatement.html) as it is finalized for this resource.
+Common API interactions for this profile. Requests require a JWT access token - see [Security and authentication](api-access.html#security). `[base]` is the [FHIR server base URL](api-access.html#endpoints); `|` separates a token system from its value and must be URL-encoded as `%7C`. These interactions use standard FHIR R5 search parameters; see the [CapabilityStatement](CapabilityStatement-DHPCapabilityStatement.html) as it is finalized for this resource.
 
 **Read an immunization by server id**
 
@@ -30,7 +30,11 @@ GET [base]/Immunization?performer=Practitioner/[id]
 
 ```
 POST [base]/Immunization
-{ "resourceType": "Immunization", "meta": { "profile": [ "https://dhp.uz/fhir/core/StructureDefinition/uz-core-immunization" ] }, ... }
+{
+  "resourceType": "Immunization",
+  "meta": { "profile": [ "https://dhp.uz/fhir/core/StructureDefinition/uz-core-immunization" ] },
+  ...
+}
 ```
 
 Before creating, check that no record already exists for the same patient + vaccine code + occurrence + lot number, so the dose is not recorded twice.
@@ -39,7 +43,13 @@ Before creating, check that no record already exists for the same patient + vacc
 
 ```
 PUT [base]/Immunization/[id]
-{ "resourceType": "Immunization", "id": "[id]", "meta": { "profile": [ "https://dhp.uz/fhir/core/StructureDefinition/uz-core-immunization" ] }, ... }
+If-Match: W/"3"   # the ETag from your last read; 412 if it changed since
+{
+  "resourceType": "Immunization",
+  "id": "[id]",
+  "meta": { "profile": [ "https://dhp.uz/fhir/core/StructureDefinition/uz-core-immunization" ] },
+  ...
+}
 ```
 
 ### Related

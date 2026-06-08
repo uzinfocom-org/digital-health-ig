@@ -143,7 +143,7 @@ Title: "Immunization - Measles, Mumps and Rubella (MMR)"
 Description: "Example Immunization resource representing administration of measles, mumps and rubella (MMR) vaccine to a patient."
 
 * status = #completed
-* vaccineCode = $sct#150971000119104 "Measles, mumps and rubella vaccination given (situation)"
+* vaccineCode = $cvx#03 "measles, mumps and rubella virus vaccine"
 * patient = Reference(example-emma)
 * occurrenceDateTime = "2024-01-10"
 

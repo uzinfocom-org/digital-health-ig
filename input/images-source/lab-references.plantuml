@@ -1,0 +1,22 @@
+@startuml lab-references
+hide circle
+hide empty members
+skinparam linetype ortho
+title Laboratory result - reference wiring
+
+class ServiceRequest
+class Specimen [[StructureDefinition-uz-core-specimen.html{Open the UZ Core Specimen profile}]] #E8F0FE
+class Observation [[StructureDefinition-uz-core-observation.html{Open the UZ Core Observation profile}]] #E8F0FE
+class DiagnosticReport
+
+Specimen --> ServiceRequest : « request »
+Observation --> ServiceRequest : « basedOn »
+Observation --> Specimen : « specimen »
+DiagnosticReport --> ServiceRequest : « basedOn »
+DiagnosticReport --> Observation : « result »
+
+note as N
+  Blue boxes are profiled in UZ Core and link to
+  their profile page; the rest are not yet profiled.
+end note
+@enduml

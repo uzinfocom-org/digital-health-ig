@@ -344,6 +344,121 @@ Description: "Identifier system used for EpisodeOfCare resources within the Uzbe
 * uniqueId[0].value = "http://dhp.uz/ids/episode-of-care"
 * uniqueId[0].preferred = true
 
+Instance: uz-pharm-box-id
+InstanceOf: NamingSystem
+Description: "Naming system for the box-level aggregation identifier used to group serialized pharmaceutical 
+packs into a shipping/carton unit within Uzbekistan's national track-and-trace program "
+Usage: #definition
+* url = "https://terminology.dhp.uz/fhir/core/NamingSystem/uz-pharm-box-id"
+* name = "UzbekistanPharmBoxGroupID"
+* status = #active
+* kind = #identifier
+* date = "2025-10-06"
+* publisher = "Uzinfocom"
+* responsible = "Ministry of Health of the Republic of Uzbekistan."
+* description = "Box-level aggregate identifier for serialized pharmaceutical packaging in Uzbekistan's track-and-trace system."
+* jurisdiction = urn:iso:std:iso:3166#UZ "Uzbekistan"
+* usage = "Use as Identifier.system for box-level aggregation (pharm box group ID) in Uzbekistan's pharma track-and-trace."
+* uniqueId[0].type = #uri
+* uniqueId[=].value = $uzpharmBoxGroupID
+* uniqueId[=].preferred = true
+* uniqueId[=].comment = "Canonical URI to populate Identifier.system when recording a pharm box group ID."
+
+Instance: global-trade-item-id
+InstanceOf: NamingSystem
+Description: "NamingSystem for globally standardized trade identifiers (GTIN) used for medicinal products."
+Usage: #definition
+* url = "https://terminology.dhp.uz/fhir/core/NamingSystem/global-trade-item-id"
+* name = "GlobalTradeItemID"
+* status = #active
+* kind = #identifier
+* date = "2025-10-09"
+* publisher = "Uzinfocom"
+* responsible = "Ministry of Health of the Republic of Uzbekistan."
+* description = "Identifies the Global Trade Item Number (GTIN) assigned to medicinal products distributed in Uzbekistan, ensuring global interoperability in product identification."
+* jurisdiction = urn:iso:std:iso:3166#UZ "Uzbekistan"
+* usage = "Use as Identifier.system when recording a GTIN for any medicine or medical device in FHIR resources such as Medication, Device, or MedicationRequest."
+* uniqueId[0].type = #uri
+* uniqueId[=].value = $globalTradeItemID 
+* uniqueId[=].preferred = true
+* uniqueId[=].comment = "Canonical URI to be used as Identifier.system for GTIN codes in product records."
+
+Instance: uz-marking-id
+InstanceOf: NamingSystem
+Description: "NamingSystem for Uzbekistan's national marking identifiers (Asl Belgisi)."
+Usage: #definition
+* url = "https://terminology.dhp.uz/fhir/core/NamingSystem/uz-marking-id"
+* name = "AslBelgisiMarkingID"
+* status = #active
+* kind = #identifier
+* date = "2025-10-09"
+* publisher = "Uzinfocom"
+* responsible = "Ministry of Health of the Republic of Uzbekistan."
+* description = "Identifies the national marking (Asl Belgisi) code assigned to serialized pharmaceutical packages within Uzbekistan's track-and-trace system."
+* jurisdiction = urn:iso:std:iso:3166#UZ "Uzbekistan"
+* usage = "Use as Identifier.system when referencing the Asl Belgisi marking ID in medication packaging, transport, and verification records."
+* uniqueId[0].type = #uri
+* uniqueId[=].value = $markingID
+* uniqueId[=].preferred = true
+* uniqueId[=].comment = "Canonical URI to populate Identifier.system when recording an Asl Belgisi marking identifier."
+
+Instance: registration-certificate-id
+InstanceOf: NamingSystem
+Description: "NamingSystem for official registration certificate identifiers for medicines."
+Usage: #definition
+* url = "https://terminology.dhp.uz/fhir/core/NamingSystem/registration-certificate-id"
+* name = "RegistrationCertificateID"
+* status = #active
+* kind = #identifier
+* date = "2025-10-09"
+* publisher = "Uzinfocom"
+* responsible = "Ministry of Health of the Republic of Uzbekistan."
+* description = "Represents the registration certificate number assigned by the Ministry of Health of the Republic of Uzbekistan to authorize the marketing of medicinal products."
+* jurisdiction = urn:iso:std:iso:3166#UZ "Uzbekistan"
+* usage = "Use as Identifier.system when capturing or validating a medicine's registration certificate number in regulatory and inventory systems."
+* uniqueId[0].type = #uri
+* uniqueId[=].value = $registrationCertificateID
+* uniqueId[=].preferred = true
+* uniqueId[=].comment = "Canonical URI to be used as Identifier.system for registration certificate identifiers."
+
+Instance: product-service-id
+InstanceOf: NamingSystem
+Description: "NamingSystem for national product and service classification codes."
+Usage: #definition
+* url = "https://terminology.dhp.uz/fhir/core/NamingSystem/product-service-id"
+* name = "ProductServiceID"
+* status = #active
+* kind = #identifier
+* date = "2025-10-09"
+* publisher = "Uzinfocom"
+* responsible = "Ministry of Health of the Republic of Uzbekistan."
+* description = "Represents the Product and Service Identification Code (ICPS) used to categorize medicines, healthcare products, and services within Uzbekistan's health information systems."
+* jurisdiction = urn:iso:std:iso:3166#UZ "Uzbekistan"
+* usage = "Use as Identifier.system when referencing ICPS-based codes in product catalogs, invoices, or billing-related FHIR resources."
+* uniqueId[0].type = #uri
+* uniqueId[=].value = $productServiceID
+* uniqueId[=].preferred = true
+* uniqueId[=].comment = "Canonical URI to populate Identifier.system for ICPS product and service codes."
+/*
+Instance: uz-pharm-id
+InstanceOf: NamingSystem
+Description: "NamingSystem for identifiers issued by the Uzbekistan Pharmaceutical Agency."
+Usage: #definition
+* url = "https://terminology.dhp.uz/fhir/core/NamingSystem/uz-pharm-id"
+* name = "Pharmaceutical agency drug id"
+* status = #active
+* kind = #identifier
+* date = "2025-10-09"
+* publisher = "Uzinfocom"
+* responsible = "Ministry of Health of the Republic of Uzbekistan."
+* description = "Represents the official drug identifier (Pharm ID) assigned by the Pharmaceutical Agency of Uzbekistan for national medicine registry management and data exchange."
+* jurisdiction = urn:iso:std:iso:3166#UZ "Uzbekistan"
+* usage = "Use as Identifier.system when recording or exchanging official Pharmaceutical Agency drug identifiers in FHIR resources like Medication or MedicationKnowledge."
+* uniqueId[0].type = #uri
+* uniqueId[=].value = $uzpharm-agency
+* uniqueId[=].preferred = true
+* uniqueId[=].comment = "Canonical URI to be used as Identifier.system for Pharmaceutical Agency drug identifiers."
+*/
 Instance: who-ichi
 InstanceOf: NamingSystem
 Description: "WHO International Classification of Health Interventions (ICHI)"

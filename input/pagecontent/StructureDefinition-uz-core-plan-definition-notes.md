@@ -1,6 +1,6 @@
 ### Quick Start
 
-Common API interactions for this profile. `[base]` is the FHIR server base URL; `|` separates a token system from its value and must be URL-encoded as `%7C`. These interactions use standard FHIR R5 search parameters; see the [CapabilityStatement](CapabilityStatement-DHPCapabilityStatement.html) as it is finalized for this resource.
+Common API interactions for this profile. Requests require a JWT access token - see [Security and authentication](api-access.html#security). `[base]` is the [FHIR server base URL](api-access.html#endpoints); `|` separates a token system from its value and must be URL-encoded as `%7C`. These interactions use standard FHIR R5 search parameters; see the [CapabilityStatement](CapabilityStatement-DHPCapabilityStatement.html) as it is finalized for this resource.
 
 **Read a schedule by server id**
 
@@ -29,7 +29,11 @@ GET [base]/PlanDefinition?context-type-value=focus$http://snomed.info/sct%7C1418
 
 ```
 POST [base]/PlanDefinition
-{ "resourceType": "PlanDefinition", "meta": { "profile": [ "https://dhp.uz/fhir/core/StructureDefinition/uz-core-plan-definition" ] }, ... }
+{
+  "resourceType": "PlanDefinition",
+  "meta": { "profile": [ "https://dhp.uz/fhir/core/StructureDefinition/uz-core-plan-definition" ] },
+  ...
+}
 ```
 
 Before activating, confirm the schedule passes validation (no dose-sequence gaps, no impossible timing windows) and that no other version is already active for the same scope.
@@ -38,7 +42,13 @@ Before activating, confirm the schedule passes validation (no dose-sequence gaps
 
 ```
 PUT [base]/PlanDefinition/[id]
-{ "resourceType": "PlanDefinition", "id": "[id]", "meta": { "profile": [ "https://dhp.uz/fhir/core/StructureDefinition/uz-core-plan-definition" ] }, ... }
+If-Match: W/"3"   # the ETag from your last read; 412 if it changed since
+{
+  "resourceType": "PlanDefinition",
+  "id": "[id]",
+  "meta": { "profile": [ "https://dhp.uz/fhir/core/StructureDefinition/uz-core-plan-definition" ] },
+  ...
+}
 ```
 
 ### Related

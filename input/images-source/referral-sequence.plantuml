@@ -1,0 +1,27 @@
+@startuml referral-sequence
+title e-Referral lifecycle
+autonumber
+
+actor "Referring\nclinician" as Clin
+participant "DHP" as DHP
+participant "Approval\ncommissions" as Comm
+participant "Performing\nfacility" as Fac
+
+Clin -> DHP : POST ServiceRequest\n(intent = order, coverageKind)
+activate DHP
+
+alt coverageKind = state-insurance
+  DHP -> DHP : create approval Task chain\n(first Task status = requested)
+  loop approve-family-doctor ... approve-hospitalization
+    Comm -> DHP : advance Task\n(accepted -> in-progress -> completed)
+  end
+  note over DHP : final approval Task completed
+else other financing
+  DHP --> Clin : referral proceeds directly\n(no Task created)
+end
+deactivate DHP
+
+Fac -> DHP : record [[StructureDefinition-uz-core-procedure.html Procedure]] / [[StructureDefinition-uz-core-observation.html Observation]]\n(basedOn -> ServiceRequest)
+Fac -> DHP : final Task completed
+DHP -> DHP : ServiceRequest -> completed
+@enduml
