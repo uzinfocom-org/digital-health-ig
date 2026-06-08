@@ -56,6 +56,7 @@ WARNING: ConceptMap/ssv-administrative-territory-to-regions-cm: ConceptMap.group
 
 # tx.fhir.org doesn't have all UCUM codes - allowed to be ignored, needs to be reported
 Target Code System http://unitsofmeasure.org doesn't have all content (content = not-present), so the target codes cannot be checked
+Source Code System http://unitsofmeasure.org doesn't have all content (content = not-present), so the source codes cannot be checked
 
 # IG publisher has troubles validating property URIs - need to report
 The property uri 'http://terminology.hl7.org/CodeSystem/v2-0203' is not known, so the property values can not be validated fully; unless specified elsewhere, codes will be treated as internal references

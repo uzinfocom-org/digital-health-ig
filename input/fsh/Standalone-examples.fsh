@@ -91,7 +91,7 @@ Description: "Example OperationOutcome returned when a transaction fails due to 
 * issue[=].diagnostics = "Observation.status: minimum required = 1, but only found 0 (from https://dhp.uz/fhir/core/StructureDefinition/uz-core-observation)"
 * issue[=].expression = "Bundle.entry[2].resource.ofType(Observation)"
 
-// Temporary stand-ins referenced by the Procedure example; both should be fleshed out (or replaced with proper profile-conforming instances) before publication
+// Temporary stand-in referenced by the Procedure example; should be fleshed out (or replaced with a proper profile-conforming instance) before publication
 Instance: example-careplan
 InstanceOf: CarePlan
 Usage: #example
@@ -101,309 +101,302 @@ Description: "Example of a careplan"
 * intent = #plan
 * subject = Reference(example-david)
 
-Instance: example-medication
-InstanceOf: Medication
-Usage: #example
-Title: "example-medication"
-Description: "Example of a medication"
-* identifier.value = "medic-001"
-
 // ============== Questionnaire Instance ==============
 
 Instance: PatientSatisfactionQuestionnaire
 InstanceOf: UZCoreQuestionnaire
 Usage: #definition
-Title: "Опросник удовлетворённости пациента"
-Description: "Опросник для оценки удовлетворённости пациента качеством обслуживания (для Patient Portal)"
+Title: "Patient Satisfaction Survey"
+Description: "Example patient satisfaction survey questionnaire (for Patient Portal)"
 * url = "https://dhp.uz/fhir/core/Questionnaire/PatientSatisfactionQuestionnaire"
 * name = "PatientSatisfactionQuestionnaire"
-* title = "Опросник удовлетворённости пациента"
-* language = #ru
+* language = #uz
+* status = #active
+* subjectType = #Patient
+* title = "Bemor so'rovnomasi"
+  * extension[$translation-extension][+]
+    * extension[lang].valueCode = #ru
+    * extension[content].valueString = "Опросник удовлетворённости пациента"
   * extension[$translation-extension][+]
     * extension[lang].valueCode = #en
     * extension[content].valueString = "Patient Satisfaction Survey"
+* description = "Bemor so'rovnomasi uchun savollar (Patient Portal uchun)"
   * extension[$translation-extension][+]
-    * extension[lang].valueCode = #uz
-    * extension[content].valueString = "Bemor so'rovnomasi"
-* status = #active
-* subjectType = #Patient
-* description = "Вопросы для опросника пациента (для Patient Portal)"
+    * extension[lang].valueCode = #ru
+    * extension[content].valueString = "Вопросы для опросника пациента (для Patient Portal)"
   * extension[$translation-extension][+]
     * extension[lang].valueCode = #en
     * extension[content].valueString = "Patient satisfaction survey questions (for Patient Portal)"
-  * extension[$translation-extension][+]
-    * extension[lang].valueCode = #uz
-    * extension[content].valueString = "Bemor so'rovnomasi uchun savollar (Patient Portal uchun)"
 
-// Question 1: Как вы записались на приём?
+// Question 1: How did you make an appointment?
 * item[+]
   * linkId = "appointment-method"
-  * text = "Как вы записались на приём?"
+  * text = "Qabulga qanday yozildingiz?"
+    * extension[$translation-extension][+]
+      * extension[lang].valueCode = #ru
+      * extension[content].valueString = "Как вы записались на приём?"
     * extension[$translation-extension][+]
       * extension[lang].valueCode = #en
       * extension[content].valueString = "How did you make an appointment?"
-    * extension[$translation-extension][+]
-      * extension[lang].valueCode = #uz
-      * extension[content].valueString = "Qabulga qanday yozildingiz?"
   * type = #coding
   * required = true
-  * answerOption[+].valueCoding = $patient-satisfaction-cs#remote "Дистанционно (через Портал Пациента)"
+  * answerOption[+].valueCoding = $patient-satisfaction-cs#remote "Masofadan yozildim («Портал Пациента» orqali)"
+  * answerOption[=].valueCoding.display.extension[$translation-extension][+]
+    * extension[lang].valueCode = #ru
+    * extension[content].valueString = "Дистанционно (через Портал Пациента)"
   * answerOption[=].valueCoding.display.extension[$translation-extension][+]
     * extension[lang].valueCode = #en
     * extension[content].valueString = "Remotely (via Patient Portal)"
+  * answerOption[+].valueCoding = $patient-satisfaction-cs#in-person "Tibbiyot muassasasiga kelib yozildim"
   * answerOption[=].valueCoding.display.extension[$translation-extension][+]
-    * extension[lang].valueCode = #uz
-    * extension[content].valueString = "Masofadan yozildim («Портал Пациента» orqali)"
-  * answerOption[+].valueCoding = $patient-satisfaction-cs#in-person "По приходу в мед.учреждение"
+    * extension[lang].valueCode = #ru
+    * extension[content].valueString = "По приходу в мед.учреждение"
   * answerOption[=].valueCoding.display.extension[$translation-extension][+]
     * extension[lang].valueCode = #en
     * extension[content].valueString = "In person at the medical facility"
+  * answerOption[+].valueCoding = $patient-satisfaction-cs#phone "Telefon orqali yozildim"
   * answerOption[=].valueCoding.display.extension[$translation-extension][+]
-    * extension[lang].valueCode = #uz
-    * extension[content].valueString = "Tibbiyot muassasasiga kelib yozildim"
-  * answerOption[+].valueCoding = $patient-satisfaction-cs#phone "По телефону"
+    * extension[lang].valueCode = #ru
+    * extension[content].valueString = "По телефону"
   * answerOption[=].valueCoding.display.extension[$translation-extension][+]
     * extension[lang].valueCode = #en
     * extension[content].valueString = "By phone"
+  * answerOption[+].valueCoding = $patient-satisfaction-cs#by-staff "Meni shifokor / hamshira yozdi"
   * answerOption[=].valueCoding.display.extension[$translation-extension][+]
-    * extension[lang].valueCode = #uz
-    * extension[content].valueString = "Telefon orqali yozildim"
-  * answerOption[+].valueCoding = $patient-satisfaction-cs#by-staff "Записал врач/мед.сестра"
+    * extension[lang].valueCode = #ru
+    * extension[content].valueString = "Записал врач/мед.сестра"
   * answerOption[=].valueCoding.display.extension[$translation-extension][+]
     * extension[lang].valueCode = #en
     * extension[content].valueString = "Scheduled by doctor/nurse"
+  * answerOption[+].valueCoding = $patient-satisfaction-cs#other "Boshqa"
   * answerOption[=].valueCoding.display.extension[$translation-extension][+]
-    * extension[lang].valueCode = #uz
-    * extension[content].valueString = "Meni shifokor / hamshira yozdi"
-  * answerOption[+].valueCoding = $patient-satisfaction-cs#other "Другое"
+    * extension[lang].valueCode = #ru
+    * extension[content].valueString = "Другое"
   * answerOption[=].valueCoding.display.extension[$translation-extension][+]
     * extension[lang].valueCode = #en
     * extension[content].valueString = "Other"
-  * answerOption[=].valueCoding.display.extension[$translation-extension][+]
-    * extension[lang].valueCode = #uz
-    * extension[content].valueString = "Boshqa"
   * item[+]
     * linkId = "appointment-method-other"
-    * text = "Другое (укажите)"
+    * text = "Boshqa (ko'rsating)"
+      * extension[$translation-extension][+]
+        * extension[lang].valueCode = #ru
+        * extension[content].valueString = "Другое (укажите)"
       * extension[$translation-extension][+]
         * extension[lang].valueCode = #en
         * extension[content].valueString = "Other (please specify)"
-      * extension[$translation-extension][+]
-        * extension[lang].valueCode = #uz
-        * extension[content].valueString = "Boshqa (ko'rsating)"
     * type = #string
 
-// Question 2: Сколько времени вы ожидали приём?
+// Question 2: How long did you wait for your appointment?
 * item[+]
   * linkId = "wait-time"
-  * text = "Сколько времени вы ожидали приём?"
+  * text = "Qabulni qancha vaqt kutdingiz?"
+    * extension[$translation-extension][+]
+      * extension[lang].valueCode = #ru
+      * extension[content].valueString = "Сколько времени вы ожидали приём?"
     * extension[$translation-extension][+]
       * extension[lang].valueCode = #en
       * extension[content].valueString = "How long did you wait for your appointment?"
-    * extension[$translation-extension][+]
-      * extension[lang].valueCode = #uz
-      * extension[content].valueString = "Qabulni qancha vaqt kutdingiz?"
   * type = #coding
   * required = true
-  * answerOption[+].valueCoding = $patient-satisfaction-cs#10-15min "10-15 минут"
+  * answerOption[+].valueCoding = $patient-satisfaction-cs#10-15min "10-15 daqiqa"
+  * answerOption[=].valueCoding.display.extension[$translation-extension][+]
+    * extension[lang].valueCode = #ru
+    * extension[content].valueString = "10-15 минут"
   * answerOption[=].valueCoding.display.extension[$translation-extension][+]
     * extension[lang].valueCode = #en
     * extension[content].valueString = "10-15 minutes"
+  * answerOption[+].valueCoding = $patient-satisfaction-cs#20-30min "20-30 daqiqa"
   * answerOption[=].valueCoding.display.extension[$translation-extension][+]
-    * extension[lang].valueCode = #uz
-    * extension[content].valueString = "10-15 daqiqa"
-  * answerOption[+].valueCoding = $patient-satisfaction-cs#20-30min "20-30 минут"
+    * extension[lang].valueCode = #ru
+    * extension[content].valueString = "20-30 минут"
   * answerOption[=].valueCoding.display.extension[$translation-extension][+]
     * extension[lang].valueCode = #en
     * extension[content].valueString = "20-30 minutes"
+  * answerOption[+].valueCoding = $patient-satisfaction-cs#60min-plus "60 daqiqa yoki undan ortiq"
   * answerOption[=].valueCoding.display.extension[$translation-extension][+]
-    * extension[lang].valueCode = #uz
-    * extension[content].valueString = "20-30 daqiqa"
-  * answerOption[+].valueCoding = $patient-satisfaction-cs#60min-plus "60 минут и больше"
+    * extension[lang].valueCode = #ru
+    * extension[content].valueString = "60 минут и больше"
   * answerOption[=].valueCoding.display.extension[$translation-extension][+]
     * extension[lang].valueCode = #en
     * extension[content].valueString = "60 minutes or more"
-  * answerOption[=].valueCoding.display.extension[$translation-extension][+]
-    * extension[lang].valueCode = #uz
-    * extension[content].valueString = "60 daqiqa yoki undan ortiq"
 
-// Question 3: Насколько Вы удовлетворены компетентностью врача?
+// Question 3: How satisfied are you with the doctor's competence?
 * item[+]
   * linkId = "doctor-competence-satisfaction"
-  * text = "Насколько Вы удовлетворены компетентностью врача?"
+  * text = "Shifokorning malakasidan qanchalik mamnunsiz?"
+    * extension[$translation-extension][+]
+      * extension[lang].valueCode = #ru
+      * extension[content].valueString = "Насколько Вы удовлетворены компетентностью врача?"
     * extension[$translation-extension][+]
       * extension[lang].valueCode = #en
       * extension[content].valueString = "How satisfied are you with the doctor's competence?"
-    * extension[$translation-extension][+]
-      * extension[lang].valueCode = #uz
-      * extension[content].valueString = "Shifokorning malakasidan qanchalik mamnunsiz?"
   * type = #coding
   * required = true
-  * answerOption[+].valueCoding = $patient-satisfaction-cs#fully-satisfied "Полностью удовлетворен"
+  * answerOption[+].valueCoding = $patient-satisfaction-cs#fully-satisfied "To'liq mamnunman"
+  * answerOption[=].valueCoding.display.extension[$translation-extension][+]
+    * extension[lang].valueCode = #ru
+    * extension[content].valueString = "Полностью удовлетворен"
   * answerOption[=].valueCoding.display.extension[$translation-extension][+]
     * extension[lang].valueCode = #en
     * extension[content].valueString = "Fully satisfied"
+  * answerOption[+].valueCoding = $patient-satisfaction-cs#rather-satisfied "Ko'proq mamnunman"
   * answerOption[=].valueCoding.display.extension[$translation-extension][+]
-    * extension[lang].valueCode = #uz
-    * extension[content].valueString = "To'liq mamnunman"
-  * answerOption[+].valueCoding = $patient-satisfaction-cs#rather-satisfied "Скорее удовлетворен"
+    * extension[lang].valueCode = #ru
+    * extension[content].valueString = "Скорее удовлетворен"
   * answerOption[=].valueCoding.display.extension[$translation-extension][+]
     * extension[lang].valueCode = #en
     * extension[content].valueString = "Rather satisfied"
+  * answerOption[+].valueCoding = $patient-satisfaction-cs#rather-unsatisfied "Ko'proq mamnun emasman"
   * answerOption[=].valueCoding.display.extension[$translation-extension][+]
-    * extension[lang].valueCode = #uz
-    * extension[content].valueString = "Ko'proq mamnunman"
-  * answerOption[+].valueCoding = $patient-satisfaction-cs#rather-unsatisfied "Скорее не удовлетворен"
+    * extension[lang].valueCode = #ru
+    * extension[content].valueString = "Скорее не удовлетворен"
   * answerOption[=].valueCoding.display.extension[$translation-extension][+]
     * extension[lang].valueCode = #en
     * extension[content].valueString = "Rather unsatisfied"
+  * answerOption[+].valueCoding = $patient-satisfaction-cs#not-satisfied "Umuman mamnun emasman"
   * answerOption[=].valueCoding.display.extension[$translation-extension][+]
-    * extension[lang].valueCode = #uz
-    * extension[content].valueString = "Ko'proq mamnun emasman"
-  * answerOption[+].valueCoding = $patient-satisfaction-cs#not-satisfied "Совсем не удовлетворен"
+    * extension[lang].valueCode = #ru
+    * extension[content].valueString = "Совсем не удовлетворен"
   * answerOption[=].valueCoding.display.extension[$translation-extension][+]
     * extension[lang].valueCode = #en
     * extension[content].valueString = "Not satisfied at all"
+  * answerOption[+].valueCoding = $patient-satisfaction-cs#other "Boshqa"
   * answerOption[=].valueCoding.display.extension[$translation-extension][+]
-    * extension[lang].valueCode = #uz
-    * extension[content].valueString = "Umuman mamnun emasman"
-  * answerOption[+].valueCoding = $patient-satisfaction-cs#other "Другое"
+    * extension[lang].valueCode = #ru
+    * extension[content].valueString = "Другое"
   * answerOption[=].valueCoding.display.extension[$translation-extension][+]
     * extension[lang].valueCode = #en
     * extension[content].valueString = "Other"
-  * answerOption[=].valueCoding.display.extension[$translation-extension][+]
-    * extension[lang].valueCode = #uz
-    * extension[content].valueString = "Boshqa"
   * item[+]
     * linkId = "doctor-competence-other"
-    * text = "Другое (укажите)"
+    * text = "Boshqa (ko'rsating)"
+      * extension[$translation-extension][+]
+        * extension[lang].valueCode = #ru
+        * extension[content].valueString = "Другое (укажите)"
       * extension[$translation-extension][+]
         * extension[lang].valueCode = #en
         * extension[content].valueString = "Other (please specify)"
-      * extension[$translation-extension][+]
-        * extension[lang].valueCode = #uz
-        * extension[content].valueString = "Boshqa (ko'rsating)"
     * type = #string
 
-// Question 4: Была ли предоставлена информация о Вашем состоянии здоровья в полном объёме и понятной форме?
+// Question 4: Was information about your health condition provided in full and in an understandable form?
 * item[+]
   * linkId = "health-info-completeness"
-  * text = "Была ли предоставлена информация о Вашем состоянии здоровья в полном объёме и понятной форме?"
+  * text = "Sog'lig'ingiz holati haqida ma'lumot to'liq va tushunarli shaklda berildimi?"
+    * extension[$translation-extension][+]
+      * extension[lang].valueCode = #ru
+      * extension[content].valueString = "Была ли предоставлена информация о Вашем состоянии здоровья в полном объёме и понятной форме?"
     * extension[$translation-extension][+]
       * extension[lang].valueCode = #en
       * extension[content].valueString = "Was information about your health condition provided in full and in an understandable form?"
-    * extension[$translation-extension][+]
-      * extension[lang].valueCode = #uz
-      * extension[content].valueString = "Sog'lig'ingiz holati haqida ma'lumot to'liq va tushunarli shaklda berildimi?"
   * type = #coding
   * required = true
-  * answerOption[+].valueCoding = $patient-satisfaction-cs#yes-complete "Да, полностью"
+  * answerOption[+].valueCoding = $patient-satisfaction-cs#yes-complete "Ha, to'liq"
+  * answerOption[=].valueCoding.display.extension[$translation-extension][+]
+    * extension[lang].valueCode = #ru
+    * extension[content].valueString = "Да, полностью"
   * answerOption[=].valueCoding.display.extension[$translation-extension][+]
     * extension[lang].valueCode = #en
     * extension[content].valueString = "Yes, completely"
+  * answerOption[+].valueCoding = $patient-satisfaction-cs#not-quite-complete "Unchalik to'liq emas"
   * answerOption[=].valueCoding.display.extension[$translation-extension][+]
-    * extension[lang].valueCode = #uz
-    * extension[content].valueString = "Ha, to'liq"
-  * answerOption[+].valueCoding = $patient-satisfaction-cs#not-quite-complete "Не совсем полностью"
+    * extension[lang].valueCode = #ru
+    * extension[content].valueString = "Не совсем полностью"
   * answerOption[=].valueCoding.display.extension[$translation-extension][+]
     * extension[lang].valueCode = #en
     * extension[content].valueString = "Not quite completely"
+  * answerOption[+].valueCoding = $patient-satisfaction-cs#only-partial "Faqat qisman"
   * answerOption[=].valueCoding.display.extension[$translation-extension][+]
-    * extension[lang].valueCode = #uz
-    * extension[content].valueString = "Unchalik to'liq emas"
-  * answerOption[+].valueCoding = $patient-satisfaction-cs#only-partial "Только частично"
+    * extension[lang].valueCode = #ru
+    * extension[content].valueString = "Только частично"
   * answerOption[=].valueCoding.display.extension[$translation-extension][+]
     * extension[lang].valueCode = #en
     * extension[content].valueString = "Only partially"
+  * answerOption[+].valueCoding = $patient-satisfaction-cs#no "Yo'q"
   * answerOption[=].valueCoding.display.extension[$translation-extension][+]
-    * extension[lang].valueCode = #uz
-    * extension[content].valueString = "Faqat qisman"
-  * answerOption[+].valueCoding = $patient-satisfaction-cs#no "Нет"
+    * extension[lang].valueCode = #ru
+    * extension[content].valueString = "Нет"
   * answerOption[=].valueCoding.display.extension[$translation-extension][+]
     * extension[lang].valueCode = #en
     * extension[content].valueString = "No"
+  * answerOption[+].valueCoding = $patient-satisfaction-cs#other "Boshqa"
   * answerOption[=].valueCoding.display.extension[$translation-extension][+]
-    * extension[lang].valueCode = #uz
-    * extension[content].valueString = "Yo'q"
-  * answerOption[+].valueCoding = $patient-satisfaction-cs#other "Другое"
+    * extension[lang].valueCode = #ru
+    * extension[content].valueString = "Другое"
   * answerOption[=].valueCoding.display.extension[$translation-extension][+]
     * extension[lang].valueCode = #en
     * extension[content].valueString = "Other"
-  * answerOption[=].valueCoding.display.extension[$translation-extension][+]
-    * extension[lang].valueCode = #uz
-    * extension[content].valueString = "Boshqa"
   * item[+]
     * linkId = "health-info-other"
-    * text = "Другое (укажите)"
+    * text = "Boshqa (ko'rsating)"
+      * extension[$translation-extension][+]
+        * extension[lang].valueCode = #ru
+        * extension[content].valueString = "Другое (укажите)"
       * extension[$translation-extension][+]
         * extension[lang].valueCode = #en
         * extension[content].valueString = "Other (please specify)"
-      * extension[$translation-extension][+]
-        * extension[lang].valueCode = #uz
-        * extension[content].valueString = "Boshqa (ko'rsating)"
     * type = #string
 
-// Question 5: Получили ли вы ответы на все интересующие вас вопросы?
+// Question 5: Did you get answers to all your questions?
 * item[+]
   * linkId = "questions-answered"
-  * text = "Получили ли вы ответы на все интересующие вас вопросы?"
+  * text = "Sizni qiziqtirgan barcha savollarga javob oldingizmi?"
+    * extension[$translation-extension][+]
+      * extension[lang].valueCode = #ru
+      * extension[content].valueString = "Получили ли вы ответы на все интересующие вас вопросы?"
     * extension[$translation-extension][+]
       * extension[lang].valueCode = #en
       * extension[content].valueString = "Did you get answers to all your questions?"
-    * extension[$translation-extension][+]
-      * extension[lang].valueCode = #uz
-      * extension[content].valueString = "Sizni qiziqtirgan barcha savollarga javob oldingizmi?"
   * type = #coding
   * required = true
-  * answerOption[+].valueCoding = $patient-satisfaction-cs#yes-complete "Да, полностью"
+  * answerOption[+].valueCoding = $patient-satisfaction-cs#yes-complete "Ha, to'liq"
+  * answerOption[=].valueCoding.display.extension[$translation-extension][+]
+    * extension[lang].valueCode = #ru
+    * extension[content].valueString = "Да, полностью"
   * answerOption[=].valueCoding.display.extension[$translation-extension][+]
     * extension[lang].valueCode = #en
     * extension[content].valueString = "Yes, completely"
+  * answerOption[+].valueCoding = $patient-satisfaction-cs#only-partial "Faqat qisman"
   * answerOption[=].valueCoding.display.extension[$translation-extension][+]
-    * extension[lang].valueCode = #uz
-    * extension[content].valueString = "Ha, to'liq"
-  * answerOption[+].valueCoding = $patient-satisfaction-cs#only-partial "Только частично"
+    * extension[lang].valueCode = #ru
+    * extension[content].valueString = "Только частично"
   * answerOption[=].valueCoding.display.extension[$translation-extension][+]
     * extension[lang].valueCode = #en
     * extension[content].valueString = "Only partially"
+  * answerOption[+].valueCoding = $patient-satisfaction-cs#no-answers "Yo'q, javob olmadim"
   * answerOption[=].valueCoding.display.extension[$translation-extension][+]
-    * extension[lang].valueCode = #uz
-    * extension[content].valueString = "Faqat qisman"
-  * answerOption[+].valueCoding = $patient-satisfaction-cs#no-answers "Нет, не получил(а) ответы"
+    * extension[lang].valueCode = #ru
+    * extension[content].valueString = "Нет, не получил(а) ответы"
   * answerOption[=].valueCoding.display.extension[$translation-extension][+]
     * extension[lang].valueCode = #en
     * extension[content].valueString = "No, I didn't get answers"
+  * answerOption[+].valueCoding = $patient-satisfaction-cs#other "Boshqa"
   * answerOption[=].valueCoding.display.extension[$translation-extension][+]
-    * extension[lang].valueCode = #uz
-    * extension[content].valueString = "Yo'q, javob olmadim"
-  * answerOption[+].valueCoding = $patient-satisfaction-cs#other "Другое"
+    * extension[lang].valueCode = #ru
+    * extension[content].valueString = "Другое"
   * answerOption[=].valueCoding.display.extension[$translation-extension][+]
     * extension[lang].valueCode = #en
     * extension[content].valueString = "Other"
-  * answerOption[=].valueCoding.display.extension[$translation-extension][+]
-    * extension[lang].valueCode = #uz
-    * extension[content].valueString = "Boshqa"
   * item[+]
     * linkId = "questions-answered-other"
-    * text = "Другое (укажите)"
+    * text = "Boshqa (ko'rsating)"
+      * extension[$translation-extension][+]
+        * extension[lang].valueCode = #ru
+        * extension[content].valueString = "Другое (укажите)"
       * extension[$translation-extension][+]
         * extension[lang].valueCode = #en
         * extension[content].valueString = "Other (please specify)"
-      * extension[$translation-extension][+]
-        * extension[lang].valueCode = #uz
-        * extension[content].valueString = "Boshqa (ko'rsating)"
     * type = #string
 
-// Question 6: Есть ли у Вас предложения по улучшению качества обслуживания?
+// Question 6: Do you have any suggestions for improving the quality of service?
 * item[+]
   * linkId = "improvement-suggestions"
-  * text = "Есть ли у Вас предложения по улучшению качества обслуживания?"
+  * text = "Xizmat ko'rsatish sifatini yaxshilash bo'yicha takliflaringiz bormi?"
+    * extension[$translation-extension][+]
+      * extension[lang].valueCode = #ru
+      * extension[content].valueString = "Есть ли у Вас предложения по улучшению качества обслуживания?"
     * extension[$translation-extension][+]
       * extension[lang].valueCode = #en
       * extension[content].valueString = "Do you have any suggestions for improving the quality of service?"
-    * extension[$translation-extension][+]
-      * extension[lang].valueCode = #uz
-      * extension[content].valueString = "Xizmat ko'rsatish sifatini yaxshilash bo'yicha takliflaringiz bormi?"
   * type = #text
   * required = false
 
@@ -424,37 +417,31 @@ Description: "Пример заполненного опросника удов�
 // Answer 1: Как вы записались на приём?
 * item[+]
   * linkId = "appointment-method"
-  * text = "Как вы записались на приём?"
   * answer[+].valueCoding = $patient-satisfaction-cs#remote "Дистанционно (через Портал Пациента)"
 
 // Answer 2: Сколько времени вы ожидали приём?
 * item[+]
   * linkId = "wait-time"
-  * text = "Сколько времени вы ожидали приём?"
   * answer[+].valueCoding = $patient-satisfaction-cs#10-15min "10-15 минут"
 
 // Answer 3: Насколько Вы удовлетворены компетентностью врача?
 * item[+]
   * linkId = "doctor-competence-satisfaction"
-  * text = "Насколько Вы удовлетворены компетентностью врача?"
   * answer[+].valueCoding = $patient-satisfaction-cs#fully-satisfied "Полностью удовлетворен"
 
 // Answer 4: Была ли предоставлена информация о Вашем состоянии здоровья?
 * item[+]
   * linkId = "health-info-completeness"
-  * text = "Была ли предоставлена информация о Вашем состоянии здоровья в полном объёме и понятной форме?"
   * answer[+].valueCoding = $patient-satisfaction-cs#yes-complete "Да, полностью"
 
 // Answer 5: Получили ли вы ответы на все интересующие вас вопросы?
 * item[+]
   * linkId = "questions-answered"
-  * text = "Получили ли вы ответы на все интересующие вас вопросы?"
   * answer[+].valueCoding = $patient-satisfaction-cs#yes-complete "Да, полностью"
 
 // Answer 6: Есть ли у Вас предложения по улучшению качества обслуживания?
 * item[+]
   * linkId = "improvement-suggestions"
-  * text = "Есть ли у Вас предложения по улучшению качества обслуживания?"
   * answer[+].valueString = "Было бы удобно иметь возможность получать напоминания о приёме через SMS."
 
 

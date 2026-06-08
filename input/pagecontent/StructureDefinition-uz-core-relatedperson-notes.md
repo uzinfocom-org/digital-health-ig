@@ -1,6 +1,6 @@
 ### Quick Start
 
-Common API interactions for this profile. `[base]` is the FHIR server base URL; `|` separates an identifier system from its value and must be URL-encoded as `%7C`.
+Common API interactions for this profile. Requests require a JWT access token - see [Security and authentication](api-access.html#security). `[base]` is the [FHIR server base URL](api-access.html#endpoints); `|` separates an identifier system from its value and must be URL-encoded as `%7C`.
 
 **Read a related person by server id**
 
@@ -21,14 +21,25 @@ GET [base]/RelatedPerson?name=Zafarov
 
 ```
 POST [base]/RelatedPerson
-{ "resourceType": "RelatedPerson", "meta": { "profile": [ "https://dhp.uz/fhir/core/StructureDefinition/uz-core-relatedperson" ] }, "patient": { "reference": "Patient/[id]" }, ... }
+{
+  "resourceType": "RelatedPerson",
+  "meta": { "profile": [ "https://dhp.uz/fhir/core/StructureDefinition/uz-core-relatedperson" ] },
+  "patient": { "reference": "Patient/[id]" },
+  ...
+}
 ```
 
 **Update an existing related person**
 
 ```
 PUT [base]/RelatedPerson/[id]
-{ "resourceType": "RelatedPerson", "id": "[id]", "meta": { "profile": [ "https://dhp.uz/fhir/core/StructureDefinition/uz-core-relatedperson" ] }, ... }
+If-Match: W/"3"   # the ETag from your last read; 412 if it changed since
+{
+  "resourceType": "RelatedPerson",
+  "id": "[id]",
+  "meta": { "profile": [ "https://dhp.uz/fhir/core/StructureDefinition/uz-core-relatedperson" ] },
+  ...
+}
 ```
 
 See the [CapabilityStatement](CapabilityStatement-DHPCapabilityStatement.html) for the full list of supported search parameters, and [Identifier systems](identifiers.html) for the identifier system URIs.

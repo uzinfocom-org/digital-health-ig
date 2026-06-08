@@ -1,6 +1,6 @@
 ### Quick Start
 
-Common API interactions for this profile. `[base]` is the FHIR server base URL; `|` separates an identifier system from its value and must be URL-encoded as `%7C`.
+Common API interactions for this profile. Requests require a JWT access token - see [Security and authentication](api-access.html#security). `[base]` is the [FHIR server base URL](api-access.html#endpoints); `|` separates an identifier system from its value and must be URL-encoded as `%7C`.
 
 **Read an organization by server id**
 
@@ -26,14 +26,24 @@ GET [base]/Organization?partof=Organization/[id]
 
 ```
 POST [base]/Organization
-{ "resourceType": "Organization", "meta": { "profile": [ "https://dhp.uz/fhir/core/StructureDefinition/uz-core-organization" ] }, ... }
+{
+  "resourceType": "Organization",
+  "meta": { "profile": [ "https://dhp.uz/fhir/core/StructureDefinition/uz-core-organization" ] },
+  ...
+}
 ```
 
 **Update an existing organization**
 
 ```
 PUT [base]/Organization/[id]
-{ "resourceType": "Organization", "id": "[id]", "meta": { "profile": [ "https://dhp.uz/fhir/core/StructureDefinition/uz-core-organization" ] }, ... }
+If-Match: W/"3"   # the ETag from your last read; 412 if it changed since
+{
+  "resourceType": "Organization",
+  "id": "[id]",
+  "meta": { "profile": [ "https://dhp.uz/fhir/core/StructureDefinition/uz-core-organization" ] },
+  ...
+}
 ```
 
 See the [CapabilityStatement](CapabilityStatement-DHPCapabilityStatement.html) for the full list of supported search parameters, and [Identifier systems](identifiers.html) for the organization identifier system URIs.
