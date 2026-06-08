@@ -1,0 +1,4 @@
+Code	Display UZ	Display RU	Display ENG	System
+  active	Faol	Активно	Active	http://hl7.org/fhir/CodeSystem/medication-status 
+  inactive	Faol emas	Неактивно	Inactive	http://hl7.org/fhir/CodeSystem/medication-status 
+  entered-in-error	Xatoda kiritilgan	Введено по ошибке	Entered in Error	http://hl7.org/fhir/CodeSystem/medication-status

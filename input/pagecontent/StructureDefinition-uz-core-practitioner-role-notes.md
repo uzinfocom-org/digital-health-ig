@@ -1,6 +1,6 @@
 ### Quick Start
 
-Common API interactions for this profile. `[base]` is the FHIR server base URL; `|` separates a code system from its value and must be URL-encoded as `%7C`.
+Common API interactions for this profile. Requests require a JWT access token - see [Security and authentication](api-access.html#security). `[base]` is the [FHIR server base URL](api-access.html#endpoints); `|` separates a code system from its value and must be URL-encoded as `%7C`.
 
 **Read a practitioner role by server id**
 
@@ -21,14 +21,28 @@ GET [base]/PractitionerRole?role=https://terminology.dhp.uz/fhir/core/CodeSystem
 
 ```
 POST [base]/PractitionerRole
-{ "resourceType": "PractitionerRole", "meta": { "profile": [ "https://dhp.uz/fhir/core/StructureDefinition/uz-core-practitioner-role" ] }, ... }
+{
+  "resourceType": "PractitionerRole",
+  "meta": {
+    "profile": [ "https://dhp.uz/fhir/core/StructureDefinition/uz-core-practitioner-role" ]
+  },
+  ...
+}
 ```
 
 **Update an existing practitioner role**
 
 ```
 PUT [base]/PractitionerRole/[id]
-{ "resourceType": "PractitionerRole", "id": "[id]", "meta": { "profile": [ "https://dhp.uz/fhir/core/StructureDefinition/uz-core-practitioner-role" ] }, ... }
+If-Match: W/"3"   # the ETag from your last read; 412 if it changed since
+{
+  "resourceType": "PractitionerRole",
+  "id": "[id]",
+  "meta": {
+    "profile": [ "https://dhp.uz/fhir/core/StructureDefinition/uz-core-practitioner-role" ]
+  },
+  ...
+}
 ```
 
 See the [CapabilityStatement](CapabilityStatement-DHPCapabilityStatement.html) for the full list of supported search parameters.
