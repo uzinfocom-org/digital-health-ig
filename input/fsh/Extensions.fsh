@@ -10,7 +10,7 @@ Context: Patient.gender, RelatedPerson.gender, Person.gender, Practitioner.gende
 * value[x] only Coding
 * value[x] from gender-other-vs (required)
   * obeys uzcore-gender-other-1
-
+ 
 Extension: DiagnosisType
 Id: diagnosis-type
 Title: "Diagnosis type"

@@ -15,10 +15,13 @@ Description: "UZCoreServiceRequest defines how laboratory orders are represented
 * intent MS
 * intent from ServiceRequestIntentVS
 * intent ^short = "Indicates the level of obligation and intent of the service request, specifying whether the request represents an official order to be performed."
+* category MS
+* category from LabServiceCategoriesVS (extensible)
+* category ^short = "The category of the laboratory service being requested, such as hematology, biochemistry, or microbiology. This element provides a high-level classification of the type of laboratory service being ordered."
 * doNotPerform MS
 * doNotPerform ^short = "Indicates that the service described by the ServiceRequest should not be performed."
 * code MS
-* code from ServiceRequestLabCodesVS
+* code from ServiceRequestLabCodesVS (extensible)
 * code ^short = "Specifies the laboratory test, panel, or service being requested. The codes used represent orderable laboratory services and must not be used for analytical result observations."
 * subject MS
 * subject only Reference(UZCorePatient or UZCoreLocation)
@@ -43,7 +46,7 @@ Description: "UZCoreServiceRequest defines how laboratory orders are represented
 * supportingInfo only CodeableReference(ServiceRequest)
 * supportingInfo ^short = "Additional clinical or administrative information supporting or justifying the requested service."
 * specimen MS
-* specimen only Reference(Specimen)
+* specimen only Reference(UZCoreSpecimen)
 * specimen ^short = "The specimen or specimens to be analyzed as part of the requested laboratory service."
 * note ^short = "Doctor's comment or conclution upon referral"
 * patientInstruction MS //we need to add markdown patient instructions.
@@ -59,6 +62,7 @@ Description: "Example laboratory ServiceRequest instance for UZCore."
 * doNotPerform = false
 * code = lab-pan-cs#lab-pan-E "CBC panel"
 * subject = Reference(Patient/example-salim)
+* performer[0] = Reference(Organization/tashkent-diseases-hospital)
 * encounter = Reference(Encounter/example-encounter)
 * occurrenceDateTime = "2026-01-16T09:30:00+05:00"
 * authoredOn = "2026-01-16T09:10:00+05:00"
