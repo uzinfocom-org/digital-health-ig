@@ -7,7 +7,7 @@ participant "DHP\n(recommendation engine)" as DHP
 actor "Doctor" as Doc
 actor "Nurse" as Nurse
 
-PM -> DHP : publish [[StructureDefinition-uz-core-plan-definition.html PlanDefinition]] (national schedule)
+PM -> DHP : publish [[StructureDefinition-uz-core-immunization-plan-definition.html PlanDefinition]] (national schedule)
 note over DHP : one active schedule\nper jurisdiction
 
 Doc -> DHP : GET [[StructureDefinition-uz-core-immunization-recommendation.html ImmunizationRecommendation]]?patient=[id]
