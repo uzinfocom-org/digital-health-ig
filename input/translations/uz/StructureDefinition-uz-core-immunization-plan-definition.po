@@ -1,13 +1,13 @@
 
 # A natural language name identifying the structure definition. This name should be usable as an identifier for the module by machine processing applications such as code generation.
 #: StructureDefinition.name
-msgid "UZCorePlanDefinition"
-msgstr "UZCorePlanDefinition"
+msgid "UZCoreImmunizationPlanDefinition"
+msgstr "UZCoreImmunizationPlanDefinition"
 
 # A short, descriptive, user-friendly title for the structure definition.
 #: StructureDefinition.title
-msgid "UZ Core PlanDefinition"
-msgstr "UZ Core PlanDefinition"
+msgid "UZ Core Immunization PlanDefinition"
+msgstr "UZ Core Immunization PlanDefinition"
 
 # The name of the organization or individual responsible for the release and ongoing maintenance of the structure definition.
 #: StructureDefinition.publisher

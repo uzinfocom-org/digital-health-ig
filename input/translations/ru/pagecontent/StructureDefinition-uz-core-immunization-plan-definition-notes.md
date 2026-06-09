@@ -33,7 +33,7 @@ GET [base]/PlanDefinition?context-type-value=focus$http://snomed.info/sct%7C1418
 POST [base]/PlanDefinition
 {
   "resourceType": "PlanDefinition",
-  "meta": { "profile": [ "https://dhp.uz/fhir/core/StructureDefinition/uz-core-plan-definition" ] },
+  "meta": { "profile": [ "https://dhp.uz/fhir/core/StructureDefinition/uz-core-immunization-plan-definition" ] },
   ...
 }
 ```
@@ -48,7 +48,7 @@ If-Match: W/"3"   # the ETag from your last read; 412 if it changed since
 {
   "resourceType": "PlanDefinition",
   "id": "[id]",
-  "meta": { "profile": [ "https://dhp.uz/fhir/core/StructureDefinition/uz-core-plan-definition" ] },
+  "meta": { "profile": [ "https://dhp.uz/fhir/core/StructureDefinition/uz-core-immunization-plan-definition" ] },
   ...
 }
 ```

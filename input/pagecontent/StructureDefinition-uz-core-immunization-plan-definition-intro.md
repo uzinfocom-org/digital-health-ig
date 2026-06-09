@@ -1,14 +1,14 @@
-UZ Core PlanDefinition holds the national immunization schedule of Uzbekistan expressed as computable logic - each recommended dose, its timing, the minimum intervals between doses, and the eligibility rules that decide who it applies to. This is the resource the recommendation engine reads to build each patient's [ImmunizationRecommendation](StructureDefinition-uz-core-immunization-recommendation.html). Only one schedule version may be active at a time for a given scope or jurisdiction.
+UZ Core Immunization PlanDefinition holds the national immunization schedule of Uzbekistan expressed as computable logic - each recommended dose, its timing, the minimum intervals between doses, and the eligibility rules that decide who it applies to. This is the resource the recommendation engine reads to build each patient's [ImmunizationRecommendation](StructureDefinition-uz-core-immunization-recommendation.html). Only one schedule version may be active at a time for a given scope or jurisdiction.
 
 ### Mandatory and Must Support data elements
 
 The elements below must always be present (mandatory) or must be supported when the data is available ([Must Support](must-support.html)) - not all are required, but your system must populate each Must Support element when it has the data and process it on receipt. This is the human-readable summary; the [formal views](#profile) below give the exact cardinalities, types, and terminology bindings.
 
-#### Each UZ Core PlanDefinition Must Have
+#### Each UZ Core Immunization PlanDefinition Must Have
 
 Every PlanDefinition must carry a url (the canonical identifier for this schedule), a machine-processable name, a status (draft, active, retired, unknown) inherited as mandatory from the base resource, and a description of what the schedule covers.
 
-#### Each UZ Core PlanDefinition Must Support
+#### Each UZ Core Immunization PlanDefinition Must Support
 
 
 
@@ -22,7 +22,7 @@ Every PlanDefinition must carry a url (the canonical identifier for this schedul
 
 ### Building the JSON, step by step
 
-A PlanDefinition is mostly authored once and read by the recommendation engine, so the examples below are short. They go from the smallest instance the server will accept to a schedule that carries its actions. Copy one and adapt it - every value shown validates against this profile. The full reference instance is the [example PlanDefinition](PlanDefinition-example-uz-core-plan-definition.html).
+A PlanDefinition is mostly authored once and read by the recommendation engine, so the examples below are short. They go from the smallest instance the server will accept to a schedule that carries its actions. Copy one and adapt it - every value shown validates against this profile. The full reference instance is the [example PlanDefinition](PlanDefinition-example-uz-core-immunization-plan-definition.html).
 
 #### The smallest PlanDefinition you should send
 
@@ -32,10 +32,10 @@ A PlanDefinition is mostly authored once and read by the recommendation engine, 
 {
   "resourceType": "PlanDefinition",
   "meta": {
-    "profile": ["https://dhp.uz/fhir/core/StructureDefinition/uz-core-plan-definition"]
+    "profile": ["https://dhp.uz/fhir/core/StructureDefinition/uz-core-immunization-plan-definition"]
   },
-  "url": "https://terminology.dhp.uz/fhir/core/PlanDefinition/example-uz-core-plan-definition",
-  "name": "ExamplePlanDefinition",
+  "url": "https://terminology.dhp.uz/fhir/core/PlanDefinition/example-uz-core-immunization-plan-definition",
+  "name": "ExampleImmunizationPlanDefinition",
   "status": "draft",
   "description": "Example PlanDefinition demonstrating actions and relationships."
 }
@@ -50,9 +50,9 @@ In practice the schedule is the `action` list. Each dose is one action with a `l
 ```json
 {
   "resourceType": "PlanDefinition",
-  "meta": { "profile": [ "https://dhp.uz/fhir/core/StructureDefinition/uz-core-plan-definition" ] },
-  "url": "https://terminology.dhp.uz/fhir/core/PlanDefinition/example-uz-core-plan-definition",
-  "name": "ExamplePlanDefinition",
+  "meta": { "profile": [ "https://dhp.uz/fhir/core/StructureDefinition/uz-core-immunization-plan-definition" ] },
+  "url": "https://terminology.dhp.uz/fhir/core/PlanDefinition/example-uz-core-immunization-plan-definition",
+  "name": "ExampleImmunizationPlanDefinition",
   "title": "Example Vaccination Follow-up Plan",
   "status": "draft",
   "date": "2026-08-10",

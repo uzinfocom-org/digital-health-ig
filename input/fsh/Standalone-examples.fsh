@@ -443,19 +443,3 @@ Description: "Пример заполненного опросника удов�
 * item[+]
   * linkId = "improvement-suggestions"
   * answer[+].valueString = "Было бы удобно иметь возможность получать напоминания о приёме через SMS."
-
-
-
-// This instance will be removed after adding Profile for ActivityDefinition
-// Instance: example-activity-definition
-// InstanceOf: ActivityDefinition
-// Title: "Example ActivityDefinition"
-// Description: "Example ActivityDefinition used by the UZ Core PlanDefinition example to represent the vaccination activity referenced from a plan action."
-// Usage: #example
-
-// * id = "example-activity-definition"
-// * url = "https://terminology.dhp.uz/fhir/core/ActivityDefinition/example-activity-definition"
-
-// * status = #draft
-// * name = "ExampleActivityDefinition"
-// * kind = #MedicationRequest

@@ -1,16 +1,16 @@
 > **Mashina tarjimasi, inson tomonidan tekshirilishi zarur.** Ushbu sahifa ingliz tilidan sun'iy intellekt yordamida avtomatik tarjima qilingan va hali muharrir tomonidan tekshirilmagan. Har qanday nomuvofiqlikda asl inglizcha versiya ustuvor hisoblanadi.
 
-UZ Core PlanDefinition Oʻzbekistonning milliy emlash jadvalini hisoblanadigan mantiq koʻrinishida saqlaydi - har bir tavsiya etilgan doza, uning vaqti, dozalar orasidagi eng kichik intervallar va u kimga taalluqli ekanligini belgilovchi muvofiqlik qoidalari. Bu shunday resurski, tavsiya mexanizmi uni oʻqib har bir bemorning [ImmunizationRecommendation](StructureDefinition-uz-core-immunization-recommendation.html) resursini tuzadi. Berilgan koʻlam yoki yurisdiksiya uchun bir vaqtning oʻzida jadvalning faqat bitta versiyasi faol boʻlishi mumkin.
+UZ Core Immunization PlanDefinition Oʻzbekistonning milliy emlash jadvalini hisoblanadigan mantiq koʻrinishida saqlaydi - har bir tavsiya etilgan doza, uning vaqti, dozalar orasidagi eng kichik intervallar va u kimga taalluqli ekanligini belgilovchi muvofiqlik qoidalari. Bu shunday resurski, tavsiya mexanizmi uni oʻqib har bir bemorning [ImmunizationRecommendation](StructureDefinition-uz-core-immunization-recommendation.html) resursini tuzadi. Berilgan koʻlam yoki yurisdiksiya uchun bir vaqtning oʻzida jadvalning faqat bitta versiyasi faol boʻlishi mumkin.
 
 ### Majburiy va Must Support maʼlumot elementlari
 
 Quyidagi elementlar har doim mavjud boʻlishi (majburiy) yoki maʼlumot mavjud boʻlganda qoʻllab-quvvatlanishi kerak ([Must Support](must-support.html)) - hammasi ham talab qilinmaydi, lekin sizning tizimingiz har bir Must Support elementini maʼlumotga ega boʻlganda toʻldirishi va qabul qilinganda uni qayta ishlashi kerak. Bu inson tomonidan oʻqiladigan xulosa; quyidagi [rasmiy koʻrinishlar](#profile) aniq kardinalliklar, turlar va terminologik bogʻlanishlarni beradi.
 
-#### Har bir UZ Core PlanDefinition quyidagilarga ega boʻlishi shart
+#### Har bir UZ Core Immunization PlanDefinition quyidagilarga ega boʻlishi shart
 
 Har bir PlanDefinition url (ushbu jadval uchun kanonik identifikator), mashina tomonidan qayta ishlanadigan name, status (draft, active, retired, unknown - asosiy resursdan majburiy sifatida meros olingan) va jadval nimani qamrab olishi haqidagi description ni olib yurishi shart.
 
-#### Har bir UZ Core PlanDefinition quyidagilarni Must Support qiladi
+#### Har bir UZ Core Immunization PlanDefinition quyidagilarni Must Support qiladi
 
 
 
@@ -24,7 +24,7 @@ Har bir PlanDefinition url (ushbu jadval uchun kanonik identifikator), mashina t
 
 ### JSON ni bosqichma-bosqich tuzish
 
-PlanDefinition asosan bir marta yoziladi va tavsiya mexanizmi tomonidan oʻqiladi, shuning uchun quyidagi misollar qisqa. Ular server qabul qiladigan eng kichik nusxadan oʻz action larini olib yuruvchi jadvalgacha boradi. Bittasini nusxalab moslang - koʻrsatilgan har bir qiymat ushbu profilga muvofiq tekshiruvdan oʻtadi. Toʻliq maʼlumotnoma nusxasi - [example PlanDefinition](PlanDefinition-example-uz-core-plan-definition.html).
+PlanDefinition asosan bir marta yoziladi va tavsiya mexanizmi tomonidan oʻqiladi, shuning uchun quyidagi misollar qisqa. Ular server qabul qiladigan eng kichik nusxadan oʻz action larini olib yuruvchi jadvalgacha boradi. Bittasini nusxalab moslang - koʻrsatilgan har bir qiymat ushbu profilga muvofiq tekshiruvdan oʻtadi. Toʻliq maʼlumotnoma nusxasi - [example PlanDefinition](PlanDefinition-example-uz-core-immunization-plan-definition.html).
 
 #### Yuborishingiz kerak boʻlgan eng kichik PlanDefinition
 
@@ -34,10 +34,10 @@ PlanDefinition asosan bir marta yoziladi va tavsiya mexanizmi tomonidan oʻqilad
 {
   "resourceType": "PlanDefinition",
   "meta": {
-    "profile": ["https://dhp.uz/fhir/core/StructureDefinition/uz-core-plan-definition"]
+    "profile": ["https://dhp.uz/fhir/core/StructureDefinition/uz-core-immunization-plan-definition"]
   },
-  "url": "https://terminology.dhp.uz/fhir/core/PlanDefinition/example-uz-core-plan-definition",
-  "name": "ExamplePlanDefinition",
+  "url": "https://terminology.dhp.uz/fhir/core/PlanDefinition/example-uz-core-immunization-plan-definition",
+  "name": "ExampleImmunizationPlanDefinition",
   "status": "draft",
   "description": "Example PlanDefinition demonstrating actions and relationships."
 }
@@ -52,9 +52,9 @@ Amalda jadval - bu `action` roʻyxati. Har bir doza `linkId`, `title`, `descript
 ```json
 {
   "resourceType": "PlanDefinition",
-  "meta": { "profile": [ "https://dhp.uz/fhir/core/StructureDefinition/uz-core-plan-definition" ] },
-  "url": "https://terminology.dhp.uz/fhir/core/PlanDefinition/example-uz-core-plan-definition",
-  "name": "ExamplePlanDefinition",
+  "meta": { "profile": [ "https://dhp.uz/fhir/core/StructureDefinition/uz-core-immunization-plan-definition" ] },
+  "url": "https://terminology.dhp.uz/fhir/core/PlanDefinition/example-uz-core-immunization-plan-definition",
+  "name": "ExampleImmunizationPlanDefinition",
   "title": "Example Vaccination Follow-up Plan",
   "status": "draft",
   "date": "2026-08-10",
