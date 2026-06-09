@@ -1,0 +1,4 @@
+Code,EN,UZ,RU,,
+proposal,Proposal,Taklif,Предложение,,http://hl7.org/fhir/ValueSet/request-intent
+	  plan,Plan,Reja,План,,
+order,Order,Buyruq / Tayinlash,Назначение / Приказ,,
