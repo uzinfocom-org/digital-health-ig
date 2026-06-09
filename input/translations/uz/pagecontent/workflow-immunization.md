@@ -10,13 +10,13 @@ Zanjir:
 
 ### 1. Jadval kod sifatida
 
-Milliy jadval bir marta [PlanDefinition](StructureDefinition-uz-core-plan-definition.html) sifatida e'lon qilinadi. Har bir tavsiya etilgan doza `PlanDefinition.action` hisoblanadi; vaksina va dozalash tafsilotlari `definitionCanonical` orqali `ActivityDefinition`ga yoki milliy kengaytmalar (`doseSequence`, `maximumInterval`, `gracePeriod`) orqali harakat ustida olib boriladi. Dozalar orasidagi minimal intervallar `action.relatedAction.offsetDuration`dan foydalanadi; yaroqlilik `action.condition`dan foydalanadi.
+Milliy jadval bir marta [PlanDefinition](StructureDefinition-uz-core-immunization-plan-definition.html) sifatida e'lon qilinadi. Har bir tavsiya etilgan doza `PlanDefinition.action` hisoblanadi; vaksina va dozalash tafsilotlari `definitionCanonical` orqali `ActivityDefinition`ga yoki milliy kengaytmalar (`doseSequence`, `maximumInterval`, `gracePeriod`) orqali harakat ustida olib boriladi. Dozalar orasidagi minimal intervallar `action.relatedAction.offsetDuration`dan foydalanadi; yaroqlilik `action.condition`dan foydalanadi.
 
 ```
 GET [base]/PlanDefinition?status=active&context-type-value=focus$vaccination
 ```
 
-> Berilgan ko'lam/yurisdiksiya uchun bir vaqtning o'zida faqat bitta jadval versiyasi faol bo'lishi mumkin va jadval validatsiya qoidalarini qondirishi shart (doza ketma-ketligida uzilishlar yo'q, imkonsiz vaqt oynalari yo'q, ikkita bir-biriga ustma-ust tushadigan faol versiya yo'q). [PlanDefinition](StructureDefinition-uz-core-plan-definition.html) sahifasiga qarang.
+> Berilgan ko'lam/yurisdiksiya uchun bir vaqtning o'zida faqat bitta jadval versiyasi faol bo'lishi mumkin va jadval validatsiya qoidalarini qondirishi shart (doza ketma-ketligida uzilishlar yo'q, imkonsiz vaqt oynalari yo'q, ikkita bir-biriga ustma-ust tushadigan faol versiya yo'q). [PlanDefinition](StructureDefinition-uz-core-immunization-plan-definition.html) sahifasiga qarang.
 
 ### 2. Tavsiyani shakllantirish
 
@@ -69,5 +69,5 @@ Agar bemorda emlashdan keyingi reaksiya bo'lsa, `suspectEntity`si Immunization'g
 
 ### Bog'liq
 
-- Profillar: [PlanDefinition](StructureDefinition-uz-core-plan-definition.html) &middot; [ImmunizationRecommendation](StructureDefinition-uz-core-immunization-recommendation.html) &middot; [Immunization](StructureDefinition-uz-core-immunization.html) &middot; [AdverseEvent](StructureDefinition-uz-core-adverse-event.html)
+- Profillar: [PlanDefinition](StructureDefinition-uz-core-immunization-plan-definition.html) &middot; [ImmunizationRecommendation](StructureDefinition-uz-core-immunization-recommendation.html) &middot; [Immunization](StructureDefinition-uz-core-immunization.html) &middot; [AdverseEvent](StructureDefinition-uz-core-adverse-event.html)
 - [Ish jarayonlari sharhi](workflows.html) &middot; [Umumiy ko'rsatmalar](general-guidance.html)

@@ -1236,7 +1236,7 @@ msgstr ""
 
 # ImplementationGuide.definition.resource.description
 #: ImplementationGuide.definition.resource.description
-msgid "Example ActivityDefinition used by the UZ Core PlanDefinition example to represent the vaccination activity referenced from a plan action."
+msgid "Example ActivityDefinition used by the UZ Core Immunization PlanDefinition example to represent the vaccination activity referenced from a plan action."
 msgstr ""
 
 # ImplementationGuide.definition.resource.name
@@ -3812,7 +3812,7 @@ msgstr ""
 
 # ImplementationGuide.definition.resource.name
 #: ImplementationGuide.definition.resource.name
-msgid "UZ Core PlanDefinition"
+msgid "UZ Core Immunization PlanDefinition"
 msgstr ""
 
 # ImplementationGuide.definition.resource.description
