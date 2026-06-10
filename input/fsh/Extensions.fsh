@@ -10,7 +10,7 @@ Context: Patient.gender, RelatedPerson.gender, Person.gender, Practitioner.gende
 * value[x] only Coding
 * value[x] from gender-other-vs (required)
   * obeys uzcore-gender-other-1
-
+ 
 Extension: DiagnosisType
 Id: diagnosis-type
 Title: "Diagnosis type"
@@ -69,3 +69,22 @@ Context: Patient
 * extension[code].value[x] 1..1 MS
 * extension[code].value[x] only CodeableConcept
 * extension[code].valueCodeableConcept from NationalityVS (required)
+
+
+
+// Turnaround Time for HealthcareService Profile
+Invariant: uzcore-turnaround-time-1
+Description: "Turnaround time must be expressed in hours, days, or weeks"
+Severity: #error
+Expression: "code.exists() and (code = 'h' or code = 'd' or code = 'wk')"
+
+Extension: TurnaroundTime
+Id: turnaround-time
+Title: "Turnaround Time"
+Description: "Expected turnaround time for the healthcare service"
+Context: HealthcareService
+
+* value[x] only Duration
+// Laboratory TAT is typically measured in hours, days, or weeks; months are excluded due to variable month lengths.
+* valueDuration obeys uzcore-turnaround-time-1
+

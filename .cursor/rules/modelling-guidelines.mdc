@@ -1,0 +1,12 @@
+---
+description: UZ Core FHIR modelling guidelines - naming conventions, cardinality, binding strengths, slicing, and structural patterns for all FSH artifacts
+alwaysApply: true
+---
+
+# UZ Core modelling guidelines
+
+Before creating or modifying any FHIR profile, extension, value set, code system, instance, or other modelling artifact in this repository, read and follow the project modelling guidelines in [modelling-guidelines.md](mdc:modelling-guidelines.md) at the repository root.
+
+They define the naming conventions, cardinality rules, binding strengths, slicing patterns, and structural conventions every artifact must follow.
+
+@modelling-guidelines.md

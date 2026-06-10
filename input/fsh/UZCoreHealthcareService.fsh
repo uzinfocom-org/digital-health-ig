@@ -9,6 +9,13 @@ Description: "Uzbekistan Core HealthcareService profile, used to define healthca
 * ^publisher = "Uzinfocom"
 
 * active and category and type and name MS
+
+
+// Extension Turnaround Time
+* extension contains
+    TurnaroundTime named turnaroundTime 0..1 MS
+* extension[turnaroundTime] ^short = "Time from specimen receipt to result availability"
+
 * category.coding ^slicing.discriminator.type = #value
 * category.coding ^slicing.discriminator.path = "system"
 * category.coding ^slicing.rules = #open
@@ -49,7 +56,7 @@ Description: "Uzbekistan Core HealthcareService profile, used to define healthca
 
 * type.coding[labService]
   * system 1..1 MS
-  * system = Canonical(ObservationLabResearchCodesCS) //This link is temporary. After merging the ObservationLabCodes branch, it will be updated.
+  * system = Canonical(LabPanelCS) 
   * code 1..1 MS
   * code from observation-codes-vs (required)
 
@@ -58,6 +65,7 @@ InstanceOf: UZCoreHealthcareService
 Description: "Example of a healthcare service"
 Usage: #example
 * active = true
+
 * category.coding[dhpCategory]
   * code = #cancr0013.00000
 * type.coding[dhpService]
@@ -74,3 +82,46 @@ Usage: #example
       * valueCode = #kaa
     * extension[content][+]
       * valueString = "IHC ushın arnawlı"
+
+
+
+
+Instance: example-healthcareservice-complete-blood-count
+InstanceOf: UZCoreHealthcareService
+Description: "Example of a laboratory healthcare service"
+Usage: #example
+
+* active = true
+
+// Example Turnaround Time
+* extension[turnaroundTime].valueDuration.value = 4
+* extension[turnaroundTime].valueDuration.unit = "hours"
+* extension[turnaroundTime].valueDuration.system = "http://unitsofmeasure.org"
+* extension[turnaroundTime].valueDuration.code = #h
+
+* category.coding[labCategory]
+  * code = #lab-category-02 "Hematology"
+
+* type.coding[labService]
+  * code = #lab-pan-E "CBC panel"
+
+* language = #en
+
+* name = "Complete Blood Count (CBC)"
+  * extension[translation][0]
+    * extension[lang][0]
+      * valueCode = #ru
+    * extension[content][0]
+      * valueString = "Общий анализ крови"
+
+  * extension[translation][+]
+    * extension[lang][0]
+      * valueCode = #uz
+    * extension[content][0]
+      * valueString = "Umumiy qon tahlili"
+
+  * extension[translation][+]
+    * extension[lang][0]
+      * valueCode = #en
+    * extension[content][0]
+      * valueString = "Complete Blood Count (CBC)"

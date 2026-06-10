@@ -74,7 +74,7 @@ Description: "Uzbekistan Core ImmunizationRecommendation profile, used to repres
 * recommendation.seriesDoses ^short = "Recommended number of doses for immunity"
 
 * recommendation.supportingImmunization 0..* MS
-* recommendation.supportingImmunization only Reference(Immunization or ImmunizationEvaluation)
+* recommendation.supportingImmunization only Reference(UZCoreImmunization or ImmunizationEvaluation)
 * recommendation.supportingImmunization ^short = "Previous immunizations supporting the recommendation"
 
 * recommendation.supportingPatientInformation 0..* MS
@@ -143,7 +143,7 @@ Title: "Immunization - Measles, Mumps and Rubella (MMR)"
 Description: "Example Immunization resource representing administration of measles, mumps and rubella (MMR) vaccine to a patient."
 
 * status = #completed
-* vaccineCode = $sct#150971000119104 "Measles, mumps and rubella vaccination given (situation)"
+* vaccineCode = $cvx#03 "measles, mumps and rubella virus vaccine"
 * patient = Reference(example-emma)
 * occurrenceDateTime = "2024-01-10"
 

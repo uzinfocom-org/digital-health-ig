@@ -13,7 +13,7 @@ Description: "Uzbekistan Core Immunization profile, used to represent immunizati
 * identifier ^short = "Business identifier"
 
 * basedOn 0..* MS
-* basedOn only Reference(CarePlan or MedicationRequest or ServiceRequest or ImmunizationRecommendation)
+* basedOn only Reference(CarePlan or MedicationRequest or ServiceRequest or UZCoreImmunizationRecommendation)
 * basedOn ^short = "The legal basis for the event"
 
 * status 1..1 MS
@@ -67,7 +67,7 @@ Description: "Uzbekistan Core Immunization profile, used to represent immunizati
 * primarySource ^short = "Primary source"
 
 * informationSource 0..1 MS
-* informationSource only CodeableReference(UZCorePatient or UZCorePractitioner or UZCorePractitionerRole or RelatedPerson or UZCoreOrganization)
+* informationSource only CodeableReference(UZCorePatient or UZCorePractitioner or UZCorePractitionerRole or UZCoreRelatedPerson or UZCoreOrganization)
 * informationSource from ImmunizationOriginVS (extensible)
 * informationSource ^short = "Data source"
 
@@ -93,7 +93,7 @@ Description: "Uzbekistan Core Immunization profile, used to represent immunizati
 * performer.function ^short = "Role"
 
 * performer.actor 1..1 MS
-* performer.actor only Reference(UZCorePractitioner or UZCorePractitionerRole or UZCoreOrganization or UZCorePatient or RelatedPerson)
+* performer.actor only Reference(UZCorePractitioner or UZCorePractitionerRole or UZCoreOrganization or UZCorePatient or UZCoreRelatedPerson)
 * performer.actor ^short = "Who completed"
 
 * note 0..* MS
@@ -268,8 +268,8 @@ Description: "Example ImmunizationRecommendation resource indicating a due BCG v
 
 * patient = Reference(example-salim)
 * date = "2026-04-27"
-* recommendation[0].vaccineCode = $sct#836402002 "Bacillus Calmette-Guerin antigen-containing vaccine product"
-* recommendation[0].forecastStatus = $sct#171279008 "Immunization due"
+* recommendation[0].vaccineCode = $cvx#19 "Bacillus Calmette-Guerin vaccine"
+* recommendation[0].forecastStatus = $immunization-recommendation-status#due "Due"
 
 Instance: condition-tuberculosis-risk-example
 InstanceOf: UZCoreCondition
