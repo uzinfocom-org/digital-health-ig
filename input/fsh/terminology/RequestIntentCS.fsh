@@ -22,3 +22,35 @@ Description: "Request intent supplement with translations in Uzbek and Russian"
   * ^designation[=].value = "Назначение / Приказ"
   * ^designation[+].language = #uz
   * ^designation[=].value = "Buyruq / Tayinlash"
+
+* #directive
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "распоряжение"
+  * ^designation[+].language = #uz
+  * ^designation[=].value = "ko'rsatma"
+
+* #original-order
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "первичное назначение"
+  * ^designation[+].language = #uz
+  * ^designation[=].value = "birlamchi tayinlash"
+* #reflex-order
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "рефлексное назначение"
+  * ^designation[+].language = #uz
+  * ^designation[=].value = "refleks tayinlash"
+* #filler-order
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "назначение исполнителя"
+  * ^designation[+].language = #uz
+  * ^designation[=].value = "ijrochi tayinlashi"
+* #instance-order
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "конкретное назначение"
+  * ^designation[+].language = #uz
+  * ^designation[=].value = "aniq tayinlash"
+* #option
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "вариант"
+  * ^designation[+].language = #uz
+  * ^designation[=].value = "variant"

@@ -88,3 +88,14 @@ Context: HealthcareService
 // Laboratory TAT is typically measured in hours, days, or weeks; months are excluded due to variable month lengths.
 * valueDuration obeys uzcore-turnaround-time-1
 
+
+Extension: PaymentType
+Id: payment-type
+Title: "Payment Type"
+Description: "Extension to indicate the payment type or funding source for a requested healthcare service."
+Context: ServiceRequest
+
+* ^experimental = true
+
+* value[x] only CodeableConcept
+* valueCodeableConcept from PaymentTypeVS (required)

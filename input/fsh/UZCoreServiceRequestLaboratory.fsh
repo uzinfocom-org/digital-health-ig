@@ -13,7 +13,7 @@ Description: "UZCoreServiceRequestLaboratory defines how laboratory orders are r
 * status from ServiceRequestStatusVS
 * status ^short = "The status of a service order"
 * intent MS
-* intent from ServiceRequestIntentVS
+* intent from RequestIntentVS
 * intent ^short = "Indicates the level of obligation and intent of the service request, specifying whether the request represents an official order to be performed."
 * category MS
 * category from LabServiceCategoriesVS (extensible)
@@ -39,6 +39,10 @@ Description: "UZCoreServiceRequestLaboratory defines how laboratory orders are r
 * reason MS
 * reason from ConditionCodeVS
 * reason ^short = "A reason to a Condition or other clinical resource that represents the medical justification for the laboratory referral, such as a diagnosis coded using ICD-10. This allows structured representation of diagnosis details including onset date and clinical status."
+
+* extension contains PaymentType named paymentType 0..1 MS
+* extension[paymentType] ^short = "Payment type or funding source for the requested laboratory service"
+
 * insurance MS
 * insurance only Reference(Coverage)
 * insurance ^short = "Insurance coverage or funding source applicable to the requested service."
@@ -57,8 +61,8 @@ Instance: UZCoreServiceRequestLab-Example01
 InstanceOf: UZCoreServiceRequestLaboratory
 Title: "UZCore ServiceRequest (Lab) Example"
 Description: "Example laboratory ServiceRequest instance for UZCore."
-* status = #active
-* intent = #order
+* status = $service-request-status#active
+* intent = $request-intent#order
 * doNotPerform = false
 * code = lab-pan-cs#lab-pan-E "CBC panel"
 * subject = Reference(Patient/example-salim)
@@ -69,5 +73,8 @@ Description: "Example laboratory ServiceRequest instance for UZCore."
 * requester = Reference(Practitioner/example-practitioner)
 // * insurance[0] = Reference(Coverage/uz-coverage-example-01) We don't have Coverage profile  yet
 //* supportingInfo[0] = Reference(UZCoreServiceRequest/uz-servicerequest-supporting-01)
+
+* extension[paymentType].valueCodeableConcept = payment-type-cs#py-ty-cs-0003 "Insurance"
+
 * specimen[0] = Reference(Specimen/example-specimen-blood-cbc)
 * note[0].text = "Please perform CBC urgently."
