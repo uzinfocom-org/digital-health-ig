@@ -5,6 +5,6 @@ Description: "Defines the set of allowed intent codes for ServiceRequest used to
 * ^url = "https://terminology.dhp.uz/fhir/core/ValueSet/service-request-intent-vs"
 * ^experimental = true
 * ^extension[0].url = $valueset-supplement
-* ^extension[=].valueCanonical = Canonical(ServiceRequestIntentCS)
+* ^extension[=].valueCanonical = Canonical(RequestIntentCS)
 
-* include codes from system $service-request-intent
+* include codes from system $request-intent
