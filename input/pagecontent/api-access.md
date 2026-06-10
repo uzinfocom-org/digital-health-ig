@@ -17,12 +17,12 @@ Status reflects the playground as of 2026-06-03 and changes as the rollout progr
 | `AuditEvent`, `Consent`, `Provenance`, `DocumentReference` endpoints | Not yet enabled | The examples are correct for when these go live; defer these integrations for now. |
 | Date-range search on `Observation` (`date`), `Condition` (`onset-date`), `Procedure` (`date`), `Immunization` (`date`), `Specimen` (`collected`), `AdverseEvent` (`date`), `PlanDefinition` (`date`) | Returns results unfiltered by date | Apply the date filter in your client for now. `Condition` (`recorded-date`), `Encounter` (`date`) and `EpisodeOfCare` (`date`) do filter as expected. |
 | Search on `Practitioner` (`qualification-code`), `Organization` (`partof`), `Procedure` (`status`), `PlanDefinition` (`context-type-value`) | Returns results unfiltered | Filter client-side for now. |
-| `$validate-code` / `$expand` against UZ Core CodeSystems and ValueSets | Load when this IG is published to the platform | International code systems (LOINC, SNOMED CT, ICD-10, HL7) already validate. |
+| `$validate-code` / `$expand` against UZ Core CodeSystems and ValueSets | Load when this IG is published to the platform | International code systems (ICD-10, HL7) already validate. Full LOINC and SNOMED CT terminology services are not yet live. |
 
 
 ### Security and authentication {#security}
 
-Access to the DHP FHIR APIs is secured with OAuth 2.0 through a centralized Single Sign-On (SSO) server, supporting both backend (`client_credentials` grant) and frontend (`authorization code` grant with optional PKCE) applications.
+Access to the DHP FHIR APIs is secured with OAuth 2.0 through a centralized Single Sign-On (SSO) server, supporting both backend (`client_credentials` grant) and frontend (`authorization code` grant with mandatory PKCE) applications.
 
 Client registration, the authorization flows, obtaining and using access tokens, and error responses are documented in full on the SSO server: [sso.dhp.uz/docs](https://sso.dhp.uz/docs).
 

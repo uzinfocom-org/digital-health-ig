@@ -19,12 +19,12 @@ Holat playgroundni 2026-06-03 holatiga ko'ra aks ettiradi va joriy etish davom e
 | `AuditEvent`, `Consent`, `Provenance`, `DocumentReference` endpointlari | Hali yoqilmagan | Bular ishga tushganda namunalar to'g'ri bo'ladi; hozircha ushbu integratsiyalarni keyinga qoldiring. |
 | `Observation` (`date`), `Condition` (`onset-date`), `Procedure` (`date`), `Immunization` (`date`), `Specimen` (`collected`), `AdverseEvent` (`date`), `PlanDefinition` (`date`) bo'yicha sana oralig'i qidiruvi | Natijalarni sana bo'yicha filtrlamasdan qaytaradi | Hozircha sana filtrini o'z mijozingizda qo'llang. `Condition` (`recorded-date`), `Encounter` (`date`) va `EpisodeOfCare` (`date`) kutilganidek filtrlaydi. |
 | `Practitioner` (`qualification-code`), `Organization` (`partof`), `Procedure` (`status`), `PlanDefinition` (`context-type-value`) bo'yicha qidiruv | Natijalarni filtrlamasdan qaytaradi | Hozircha mijoz tomonida filtrlang. |
-| UZ Core CodeSystem va ValueSetlarga nisbatan `$validate-code` / `$expand` | Ushbu IG platformaga nashr etilganda yuklanadi | Xalqaro kod tizimlari (LOINC, SNOMED CT, ICD-10, HL7) allaqachon validatsiyadan o'tadi. |
+| UZ Core CodeSystem va ValueSetlarga nisbatan `$validate-code` / `$expand` | Ushbu IG platformaga nashr etilganda yuklanadi | Xalqaro kod tizimlari (ICD-10, HL7) allaqachon validatsiyadan o'tadi. To'liq LOINC va SNOMED CT terminologiya xizmatlari hali ishga tushmagan. |
 
 
 ### Xavfsizlik va autentifikatsiya {#security}
 
-DHP FHIR API'lariga kirish OAuth 2.0 standarti bo'yicha markazlashtirilgan Single Sign-On (SSO) serveri orqali himoyalangan va ham backend ilovalarni (`client_credentials` grant turi), ham frontend ilovalarni (ixtiyoriy PKCE bilan `authorization code` grant turi) qo'llab-quvvatlaydi.
+DHP FHIR API'lariga kirish OAuth 2.0 standarti bo'yicha markazlashtirilgan Single Sign-On (SSO) serveri orqali himoyalangan va ham backend ilovalarni (`client_credentials` grant turi), ham frontend ilovalarni (majburiy PKCE bilan `authorization code` grant turi) qo'llab-quvvatlaydi.
 
 Mijozni ro'yxatdan o'tkazish, avtorizatsiya oqimlari, kirish tokenlarini olish va ulardan foydalanish hamda xatolik javoblari SSO serverida to'liq hujjatlashtirilgan: [sso.dhp.uz/docs](https://sso.dhp.uz/docs).
 
