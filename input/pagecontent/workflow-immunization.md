@@ -1,6 +1,6 @@
-This workflow shows how the national immunization schedule drives a personalised recommendation, and how a vaccine dose is recorded. All four resources used here are profiled in UZ Core.
+This workflow shows how the national immunization schedule drives a personalised recommendation, how the patient is seen across the booking, consultation and vaccination visits, and how a vaccine dose is recorded. All resources used here are profiled in UZ Core.
 
-Actors: Immunization Program Manager / Data Steward (maintains the schedule); the patient or parent/guardian (views recommendations); a doctor and nurse (assess eligibility and administer).
+Actors: Immunization Program Manager / Data Steward (maintains the schedule); a medical registrar (books the patient); the patient or parent/guardian (views recommendations); a doctor and nurse (assess eligibility and administer). The clinical visits are carried as FHIR [Encounters](StructureDefinition-uz-core-encounter.html) - one consultation encounter and a separate vaccination encounter.
 
 The chain:
 
@@ -11,7 +11,7 @@ The chain:
 The national schedule is published once as a [PlanDefinition](StructureDefinition-uz-core-immunization-plan-definition.html). Each recommended dose is a `PlanDefinition.action`; the vaccine and dosing detail are carried on the action, via `definitionCanonical` to an `ActivityDefinition`, or via the national extensions (`doseSequence`, `maximumInterval`, `gracePeriod`). Minimum intervals between doses use `action.relatedAction.offsetDuration`; eligibility uses `action.condition`.
 
 ```
-GET [base]/PlanDefinition?status=active&context-type-value=focus$vaccination
+GET [base]/PlanDefinition?status=active&context-type-value=focus$http://snomed.info/sct|33879002
 ```
 
 > Only one schedule version may be active at a time for a given scope/jurisdiction, and the schedule must satisfy the validation rules (no dose-sequence gaps, no impossible timing windows, no two overlapping active versions). See the [PlanDefinition](StructureDefinition-uz-core-immunization-plan-definition.html) page.
@@ -28,11 +28,38 @@ GET [base]/ImmunizationRecommendation?patient=Patient/[id]&_sort=-date
 GET [base]/Immunization?patient=Patient/[id]&status=completed
 ```
 
-The recommendation is *computed*, not hand-entered - clients display it, they do not author it.
+The recommendation is normally *computed* by the engine from the schedule and the patient's history - clients display it. During the consultation a clinician may also review it, or author one where the engine has not produced it.
 
-### 3. Assess and administer
+### 3. The consultation encounter
 
-The doctor reviews the recommendation and the history and decides whether the patient is eligible. The nurse administers, and the system records an `Immunization`. The `status` carries the outcome:
+Care is delivered within an [Encounter](StructureDefinition-uz-core-encounter.html). Booking and consultation share a single, long-lived consultation encounter whose `status` advances as the visit progresses - no new encounter is created for each clinician:
+
+- A medical registrar books the patient and creates the encounter with `status = planned`. `subject` is the patient, `serviceProvider` is the clinic, and `participant` lists the registrar and the assigned nurse. The patient now appears in that nurse's worklist.
+- The nurse opens the visit for the primary intake and updates the same encounter to `status = in-progress`, recording the `reason` for the visit and the `actualPeriod`.
+- The family doctor examines the patient on the same encounter, reviews or authors the [ImmunizationRecommendation](StructureDefinition-uz-core-immunization-recommendation.html), and links it by setting `Encounter.reason` to reference that recommendation. When the consultation ends the encounter moves to `status = completed`.
+
+```
+# registrar books the patient (consultation encounter)
+POST [base]/Encounter
+{
+  "resourceType": "Encounter",
+  "meta": { "profile": ["https://dhp.uz/fhir/core/StructureDefinition/uz-core-encounter"] },
+  "status": "planned",
+  "subject": { "reference": "Patient/[id]" },
+  "serviceProvider": { "reference": "Organization/[clinic]" },
+  "participant": [{ "actor": { "reference": "Practitioner/[nurse]" } }]
+}
+
+# nurse opens the visit
+PUT [base]/Encounter/[id]    # status -> in-progress, set reason, actualPeriod
+
+# doctor links the recommendation and closes the consult
+PUT [base]/Encounter/[id]    # reason -> ImmunizationRecommendation, status -> completed
+```
+
+### 4. Administer the dose
+
+The vaccination typically happens at another facility, on another day, than the consultation - so it is recorded against a separate encounter rather than the consultation one. The nurse opens that vaccination encounter (`status = in-progress`) for the administration, then records an [Immunization](StructureDefinition-uz-core-immunization.html) that points back to it via `Immunization.encounter` and to the recommendation via `Immunization.basedOn`. The `status` carries the outcome:
 
 | Outcome | `Immunization.status` | Also set |
 |---------|------------------------|----------|
@@ -52,6 +79,8 @@ POST [base]/Immunization
   "status": "completed",
   "vaccineCode": { "coding": [{ "system": "http://hl7.org/fhir/sid/cvx", "code": "03" }] },
   "patient": { "reference": "Patient/[id]" },
+  "encounter": { "reference": "Encounter/[vaccination-encounter-id]" },
+  "basedOn": [{ "reference": "ImmunizationRecommendation/[id]" }],
   "occurrenceDateTime": "2026-05-30",
   "lotNumber": "AB-2231",
   "performer": [{ "actor": { "reference": "PractitionerRole/[id]" } }],
@@ -61,11 +90,11 @@ POST [base]/Immunization
 
 > A dose is uniquely identified by patient + vaccineCode + occurrence + lotNumber - do not submit the same combination twice.
 
-### 4. Record a reaction (if any)
+### 5. Record a reaction (if any)
 
 If the patient has a post-immunization reaction, record an [AdverseEvent](StructureDefinition-uz-core-adverse-event.html) whose `suspectEntity` references the Immunization, optionally with an [Observation](StructureDefinition-uz-core-observation.html) describing the reaction.
 
 ### Related
 
-- Profiles: [PlanDefinition](StructureDefinition-uz-core-immunization-plan-definition.html) &middot; [ImmunizationRecommendation](StructureDefinition-uz-core-immunization-recommendation.html) &middot; [Immunization](StructureDefinition-uz-core-immunization.html) &middot; [AdverseEvent](StructureDefinition-uz-core-adverse-event.html)
+- Profiles: [PlanDefinition](StructureDefinition-uz-core-immunization-plan-definition.html) &middot; [ImmunizationRecommendation](StructureDefinition-uz-core-immunization-recommendation.html) &middot; [Encounter](StructureDefinition-uz-core-encounter.html) &middot; [Immunization](StructureDefinition-uz-core-immunization.html) &middot; [AdverseEvent](StructureDefinition-uz-core-adverse-event.html)
 - [Workflows overview](workflows.html) &middot; [General guidance](general-guidance.html)
