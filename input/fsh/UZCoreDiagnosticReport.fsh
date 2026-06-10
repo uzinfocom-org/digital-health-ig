@@ -21,7 +21,7 @@ Description: "Uzbekistan Core profile for DiagnosticReport, representing clinica
 * code from LabReportTypesVS (extensible)
   * ^short = "Report types used in Ministry of Health of Uzbekistan (399)"
 * subject MS
-* subject only Reference(UZCorePatient or UZCoreOrganization or UZCorePractitioner or UZCoreLocation or UZCoreMedication or UZCoreEncounter)
+* subject only Reference(UZCorePatient or UZCoreOrganization or UZCorePractitioner or UZCoreLocation or UZCoreMedication)
   * ^short = "Who and/or what this report is about"
 * encounter MS
 * encounter only Reference(Encounter)
