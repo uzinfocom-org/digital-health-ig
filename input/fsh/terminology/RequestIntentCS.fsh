@@ -25,32 +25,36 @@ Description: "Request intent supplement with translations in Uzbek and Russian"
 
 * #directive
   * ^designation[0].language = #ru
-  * ^designation[=].value = "распоряжение"
+  * ^designation[=].value = "Распоряжение"
   * ^designation[+].language = #uz
-  * ^designation[=].value = "ko'rsatma"
+  * ^designation[=].value = "Ko'rsatma"
 
 * #original-order
   * ^designation[0].language = #ru
-  * ^designation[=].value = "первичное назначение"
+  * ^designation[=].value = "Первичное назначение"
   * ^designation[+].language = #uz
-  * ^designation[=].value = "birlamchi tayinlash"
+  * ^designation[=].value = "Birlamchi tayinlash"
+
 * #reflex-order
   * ^designation[0].language = #ru
-  * ^designation[=].value = "рефлексное назначение"
+  * ^designation[=].value = "Рефлексное назначение"
   * ^designation[+].language = #uz
-  * ^designation[=].value = "refleks tayinlash"
+  * ^designation[=].value = "Refleks tayinlash"
+
 * #filler-order
   * ^designation[0].language = #ru
-  * ^designation[=].value = "назначение исполнителя"
+  * ^designation[=].value = "Назначение исполнителя"
   * ^designation[+].language = #uz
-  * ^designation[=].value = "ijrochi tayinlashi"
+  * ^designation[=].value = "Ijrochi tayinlashi"
+
 * #instance-order
   * ^designation[0].language = #ru
-  * ^designation[=].value = "конкретное назначение"
+  * ^designation[=].value = "Конкретное назначение"
   * ^designation[+].language = #uz
-  * ^designation[=].value = "aniq tayinlash"
+  * ^designation[=].value = "Aniq tayinlash"
+
 * #option
   * ^designation[0].language = #ru
-  * ^designation[=].value = "вариант"
+  * ^designation[=].value = "Вариант"
   * ^designation[+].language = #uz
-  * ^designation[=].value = "variant"
+  * ^designation[=].value = "Variant"

@@ -41,7 +41,9 @@ Description: "UZCoreServiceRequestLaboratory defines how laboratory orders are r
 * reason ^short = "A reason to a Condition or other clinical resource that represents the medical justification for the laboratory referral, such as a diagnosis coded using ICD-10. This allows structured representation of diagnosis details including onset date and clinical status."
 
 * extension contains PaymentType named paymentType 0..1 MS
-* extension[paymentType] ^short = "Payment type or funding source for the requested laboratory service"
+* extension[paymentType] ^short = "Payment type for the laboratory service"
+* extension[paymentType] ^definition = "Indicates the type of payment or financing model used for the requested laboratory service. This extension may be used when a laboratory test is ordered directly by a laboratory medical registrar without a prior physician referral, for example when the patient receives the laboratory service as a paid service."
+* extension[paymentType] ^comment = "For example, this extension can be used to distinguish paid laboratory services from services covered by state programs, insurance, or other financing mechanisms. In the direct-to-laboratory scenario, the value may be set to 'paid'."
 
 * insurance MS
 * insurance only Reference(Coverage)
