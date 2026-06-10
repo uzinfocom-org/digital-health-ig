@@ -4,133 +4,133 @@ Title: "DiagnosticReport status supplement"
 Description: "DiagnosticReport status supplement with translations in uzbek and russian"
 * insert SupplementCodeSystemDraft(diagnostic-report-service-category-cs, $diagnostic-report-service-category, 5.0.0)
 
-* #AU "Audiologiya"
+* #AU 
   * ^designation[0].language = #ru
   * ^designation[=].value = "Аудиология"
   * ^designation[+].language = #uz
   * ^designation[=].value = "Audiologiya"
 
-* #BG "Qon gazlari"
+* #BG 
   * ^designation[0].language = #ru
   * ^designation[=].value = "Газы крови"
   * ^designation[+].language = #uz
   * ^designation[=].value = "Qon gazlari"
 
-* #BLB "Qon banki"
+* #BLB 
   * ^designation[0].language = #ru
   * ^designation[=].value = "Банк крови"
   * ^designation[+].language = #uz
   * ^designation[=].value = "Qon banki"
 
-* #CG "Sitogenetika"
+* #CG 
   * ^designation[0].language = #ru
   * ^designation[=].value = "Цитогенетика"
   * ^designation[+].language = #uz
   * ^designation[=].value = "Sitogenetika"
 
-* #CUS "Yurak ultratovush tekshiruvi"
+* #CUS 
   * ^designation[0].language = #ru
   * ^designation[=].value = "Ультразвуковое исследование сердца"
   * ^designation[+].language = #uz
   * ^designation[=].value = "Yurak ultratovush tekshiruvi"
 
-* #CTH "Yurak kateterizatsiyasi"
+* #CTH 
   * ^designation[0].language = #ru
   * ^designation[=].value = "Катетеризация сердца"
   * ^designation[+].language = #uz
   * ^designation[=].value = "Yurak kateterizatsiyasi"
 
-* #CT "KT skanerlash"
+* #CT 
   * ^designation[0].language = #ru
   * ^designation[=].value = "КТ-сканирование"
   * ^designation[+].language = #uz
   * ^designation[=].value = "KT skanerlash"
 
-* #CH "Kimyo"
+* #CH 
   * ^designation[0].language = #ru
   * ^designation[=].value = "Химия"
   * ^designation[+].language = #uz
   * ^designation[=].value = "Kimyo"
 
-* #CP "Sitopatologiya"
+* #CP 
   * ^designation[0].language = #ru
   * ^designation[=].value = "Цитопатология"
   * ^designation[+].language = #uz
   * ^designation[=].value = "Sitopatologiya"
 
-* #EC "Elektrokardiologiya (masalan, EKG, EEC, Holter)"
+* #EC 
   * ^designation[0].language = #ru
   * ^designation[=].value = "Электрокардиология (например, ЭКГ, ЭЭК, Холтер)"
   * ^designation[+].language = #uz
   * ^designation[=].value = "Elektrokardiologiya (masalan, EKG, EEC, Holter)"
 
-* #EN "Elektroensefalografiya (EEG, EMG, EP, PSG)"
+* #EN 
   * ^designation[0].language = #ru
   * ^designation[=].value = "Электроэнцефалография (ЭЭГ, ЭМГ, ВП, ПСГ)"
   * ^designation[+].language = #uz
   * ^designation[=].value = "Elektroensefalografiya (EEG, EMG, EP, PSG)"
 
-* #GE "Genetika"
+* #GE 
   * ^designation[0].language = #ru
   * ^designation[=].value = "Генетика"
   * ^designation[+].language = #uz
   * ^designation[=].value = "Genetika"
 
-* #HM "Gematologiya"
+* #HM 
   * ^designation[0].language = #ru
   * ^designation[=].value = "Гематология"
   * ^designation[+].language = #uz
   * ^designation[=].value = "Gematologiya"
 
-* #IMG "Diagnostik tasvirlash"
+* #IMG 
   * ^designation[0].language = #ru
   * ^designation[=].value = "Диагностическая визуализация"
   * ^designation[+].language = #uz
   * ^designation[=].value = "Diagnostik tasvirlash"
 
-* #ICU "Reanimatsiyada yotoq yonida monitoring"
+* #ICU 
   * ^designation[0].language = #ru
   * ^designation[=].value = "Прикроватный мониторинг в ОРИТ"
   * ^designation[+].language = #uz
   * ^designation[=].value = "Reanimatsiyada yotoq yonida monitoring"
 
-* #IMM "Immunologiya"
+* #IMM 
   * ^designation[0].language = #ru
   * ^designation[=].value = "Иммунология"
   * ^designation[+].language = #uz
   * ^designation[=].value = "Immunologiya"
 
-* #LAB "Laboratoriya"
+* #LAB 
   * ^designation[0].language = #ru
   * ^designation[=].value = "Лаборатория"
   * ^designation[+].language = #uz
   * ^designation[=].value = "Laboratoriya"
 
-* #MB "Mikrobiologiya"
+* #MB 
   * ^designation[0].language = #ru
   * ^designation[=].value = "Микробиология"
   * ^designation[+].language = #uz
   * ^designation[=].value = "Mikrobiologiya"
 
-* #MCB "Mikobakteriologiya"
+* #MCB 
   * ^designation[0].language = #ru
   * ^designation[=].value = "Микобактериология"
   * ^designation[+].language = #uz
   * ^designation[=].value = "Mikobakteriologiya"
 
-* #MYC "Mikologiya"
+* #MYC 
   * ^designation[0].language = #ru
   * ^designation[=].value = "Микология"
   * ^designation[+].language = #uz
   * ^designation[=].value = "Mikologiya"
 
-* #VR "Virusologiya"
+* #VR 
   * ^designation[0].language = #ru
   * ^designation[=].value = "Вирусология"
   * ^designation[+].language = #uz
   * ^designation[=].value = "Virusologiya"
 
-* #URN "Siydik tahlili"
+* #URN 
   * ^designation[0].language = #ru
   * ^designation[=].value = "Анализ мочи"
   * ^designation[+].language = #uz

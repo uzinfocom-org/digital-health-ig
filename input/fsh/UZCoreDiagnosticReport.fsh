@@ -1,8 +1,8 @@
 Profile: UZCoreDiagnosticReport
 Parent: DiagnosticReport
 Id: uz-core-diagnostic-report
-Title: "UZ Core AllergyIntolerance"
-Description: "Uzbekistan Core profile for AllergyIntolerance, representing clinical records of allergy or intolerance within the national health information exchange. "
+Title: "UZ Core DiagnosticReport"
+Description: "Uzbekistan Core profile for DiagnosticReport, representing clinical records of diagnostic reports within the national health information exchange."
 * ^experimental = true
 * ^status = #active
 * ^date = "2026-02-06"
@@ -44,6 +44,40 @@ Description: "Uzbekistan Core profile for AllergyIntolerance, representing clini
 * media.link MS
   * ^short = "Reference to the image or data"
 * presentedForm MS
-  * ^short = "Entire report as issued pdf "
+  * ^short = "Entire report as issued pdf"
 
 
+Instance: uz-core-diagnostic-report-example
+InstanceOf: UZCoreDiagnosticReport
+Usage: #example
+Title: "UZ Core DiagnosticReport Example"
+Description: "Laboratory diagnostic report for a complete blood count (CBC), including the hematology panel result and the issued report as a PDF."
+
+* identifier.system = "https://terminology.dhp.uz/fhir/core/NamingSystem/diagnostic-report-id"
+* identifier.value = "DR-2026-0001"
+
+* basedOn = Reference(ServiceRequest/example-cbc-order)
+
+* status = #final
+
+* category = $diagnostic-report-service-category#HM "Hematology"
+
+* code = lab-report-types-cs#lab-rep-02 "CBC panel"
+
+* subject = Reference(Patient/example-salim)
+
+* encounter = Reference(Encounter/example-encounter)
+
+* effectiveDateTime = "2026-02-06T10:30:00+05:00"
+
+* performer = Reference(Practitioner/example-practitioner)
+
+* specimen = Reference(Specimen/example-specimen-blood-cbc)
+
+* result[0] = Reference(Observation/cbc-panel-example)
+
+* issued = "2026-02-06T11:00:00+05:00"
+
+* presentedForm.contentType = #application/pdf
+* presentedForm.title = "Complete Blood Count report"
+* presentedForm.url = "http://example.org/fhir/Binary/cbc-report-pdf"
