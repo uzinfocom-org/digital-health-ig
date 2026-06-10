@@ -53,7 +53,7 @@ Instance: uz-core-diagnostic-report-example
 InstanceOf: UZCoreDiagnosticReport
 Usage: #example
 Title: "UZ Core DiagnosticReport Example"
-Description: "Laboratory diagnostic report for a complete blood count, including hematology observations and an associated imaging reference."
+Description: "Laboratory diagnostic report for a complete blood count (CBC), including the hematology panel result and the issued report as a PDF."
 
 * identifier.system = "https://terminology.dhp.uz/fhir/core/NamingSystem/diagnostic-report-id"
 * identifier.value = "DR-2026-0001"
@@ -62,9 +62,9 @@ Description: "Laboratory diagnostic report for a complete blood count, including
 
 * status = #final
 
-* category = $diagnostic-report-service-category#AU "Audiology"
+* category = $diagnostic-report-service-category#HM "Hematology"
 
-* code = lab-report-types-cs#lab-rep-01 "Laboratory report"
+* code = lab-report-types-cs#lab-rep-02 "CBC panel"
 
 * subject = Reference(Patient/example-salim)
 
@@ -76,26 +76,10 @@ Description: "Laboratory diagnostic report for a complete blood count, including
 
 * specimen = Reference(Specimen/example-specimen-blood-cbc)
 
-* result[0] = Reference(Observation/body-temperature-example)
+* result[0] = Reference(Observation/cbc-panel-example)
 
-* media.comment = "Related diagnostic image"
-* media.link = Reference(DocumentReference/example-diagnostic-media)
+* issued = "2026-02-06T11:00:00+05:00"
 
-
-
-
-
-Instance: example-diagnostic-media
-InstanceOf: DocumentReference
-Title: "Example Diagnostic Media"
-Description: "Represents an imaging artifact associated with a diagnostic report, such as a photograph or radiology image used for clinical evaluation."
-Usage: #example
-
-* status = #current
-* subject = Reference(example-salim)
-* type = http://loinc.org#18748-4 "Diagnostic imaging study"
-* content[0].attachment.contentType = #image/jpeg
-* content[=].attachment.url = "http://example.org/fhir/Binary/example-diagnostic-image"
-
-
-
+* presentedForm.contentType = #application/pdf
+* presentedForm.title = "Complete Blood Count report"
+* presentedForm.url = "http://example.org/fhir/Binary/cbc-report-pdf"
