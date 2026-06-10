@@ -1,0 +1,4 @@
+Code,EN,UZ,RU,,
+Patient,Patient,Bemor,Пациент,,http://hl7.org/fhir/ValueSet/participant-resource-types
+Practitioner,Practitioner,Shifokor / Mutaxassis,Медицинский работник,,
+RelatedPerson,RelatedPerson,Aloqador shaxs,Связанное лицо,,

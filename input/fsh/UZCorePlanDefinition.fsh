@@ -1,8 +1,8 @@
-Profile: UZCorePlanDefinition
+Profile: UZCoreImmunizationPlanDefinition
 Parent: PlanDefinition
-Id: uz-core-plan-definition
-Title: "UZ Core PlanDefinition"
-Description: "Uzbekistan Core PlanDefinition profile, used to express the national immunization schedule as computable logic"
+Id: uz-core-immunization-plan-definition
+Title: "UZ Core Immunization PlanDefinition"
+Description: "UZ Core profile for Stores and represents the National Immunization Schedule of Uzbekistan, including planned vaccines, recommended administration periods, target age groups, dose sequences, and related scheduling rules. This profile is used to define structured immunization activities that support consistent planning, implementation, and exchange of vaccination schedules within the national digital health ecosystem."
 * ^status = #draft
 * ^experimental = true
 
@@ -37,7 +37,21 @@ Description: "Uzbekistan Core PlanDefinition profile, used to express the nation
 * date MS
 * publisher MS
 * description 1..1 MS
-* useContext MS
+
+// useContext lets clients tell immunization schedules apart from other PlanDefinitions on the
+// server. Every UZ Core immunization schedule carries a fixed focus context, so it is found with
+// GET [base]/PlanDefinition?context-type-value=focus$http://snomed.info/sct|33879002
+* useContext 1..* MS
+* useContext ^slicing.discriminator.type = #value
+* useContext ^slicing.discriminator.path = "code"
+* useContext ^slicing.rules = #open
+* useContext ^slicing.description = "Distinguishes immunization schedules from other PlanDefinitions"
+* useContext contains immunizationFocus 1..1 MS
+* useContext[immunizationFocus] ^short = "Marks this PlanDefinition as an immunization schedule"
+* useContext[immunizationFocus].code = $usage-context-type#focus
+* useContext[immunizationFocus].value[x] only CodeableConcept
+* useContext[immunizationFocus].valueCodeableConcept = $sct#33879002 "Active immunization"
+
 * approvalDate MS
 * effectivePeriod MS
 
@@ -93,23 +107,25 @@ Description: "Uzbekistan Core PlanDefinition profile, used to express the nation
 * action.definitionCanonical MS
 * action.definitionUri MS
 
-Instance: example-uz-core-plan-definition
-InstanceOf: UZCorePlanDefinition
+Instance: example-uz-core-immunization-plan-definition
+InstanceOf: UZCoreImmunizationPlanDefinition
 Usage: #example
-Title: "UZ Core PlanDefinition"
-Description: "Uzbekistan Core PlanDefinition profile, used to represent structured clinical and administrative workflow definitions, including actions, timing, participants, and related activities"
-* id = "example-uz-core-plan-definition"
+Title: "UZ Core Immunization PlanDefinition"
+Description: "Uzbekistan Core Immunization PlanDefinition profile, used to represent structured immunization schedule definitions, including actions, timing, participants, and related activities"
+* id = "example-uz-core-immunization-plan-definition"
 
-* url = "https://terminology.dhp.uz/fhir/core/PlanDefinition/example-uz-core-plan-definition"
+* url = "https://terminology.dhp.uz/fhir/core/PlanDefinition/example-uz-core-immunization-plan-definition"
 
 // * version = "1.0.0"
 
-* name = "ExamplePlanDefinition"
+* name = "ExampleImmunizationPlanDefinition"
 * title = "Example Vaccination Follow-up Plan"
 * status = $publication-status#draft
 * date = "2026-08-10"
 * publisher = "DHP Uzbekistan"
 * description = "Example PlanDefinition demonstrating actions and relationships."
+* useContext[immunizationFocus].code = $usage-context-type#focus
+* useContext[immunizationFocus].valueCodeableConcept = $sct#33879002 "Active immunization"
 * approvalDate = "2026-08-01"
 
 * effectivePeriod.start = "2026-08-01"

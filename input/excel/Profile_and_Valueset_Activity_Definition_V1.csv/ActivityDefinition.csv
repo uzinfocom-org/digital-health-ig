@@ -1,0 +1,61 @@
+Name,,,Flags,,Cardinality,Example,,document,Type,,Description & Constraints,,ValueSets,,
+ ActivityDefinition,,,TU,,,,,,"Определение конкретного действия, которое должно быть выполнено, независимо от какого-либо конкретного пациента или контекста. Name должен быть пригоден для использования в качестве идентификатора модуля при машинной обработке, например при генерации кода.                                                Элементы, определённые в родительских ресурсах:id, meta, implicitRules, language, text, contained, extension, modifierExtension Реализуемые интерфейсы:
+MetadataResource ",,,System,CodeSystem,Code,Display
+url,,,ΣC,0..1,,,,,"Канонический идентификатор данного ActivityDefinition, представленный в виде URI (ссылки).URL не должен содержать символы | или #, так как это может вызвать проблемы при ссылках.aa",,,,,,
+ identifier,,,Σ,0..*,,,,,Дополнительный идентификатор для данного определения.,,,,,,
+ version,,,Σ,0..1,,,,,Бизнес-версия ActivityDefinition (версия для управления изменениями).,,,,,,
+ versionAlgorithm[x],,,Σ,0..1,,,,,Как сравнивать версии.                                                                                                                   Binding: Version Algorithm (Extensible),,,,,,
+, versionAlgorithmString,,,,,,,,,,,,,,
+, versionAlgorithmCoding,,,,,,,,,,,,,,
+ name,,,	ΣC,0..1,,,,,"Имя для данного ActivityDefinition (для системы, техническое)",,,,,,
+title,,,ΣT,0..1,,,,,"Имя для данного ActivityDefinition (для пользователей, человеко-понятное)",,,,,,
+ status,,,	?!Σ,1..1,,draft,active,,draft | active | retired | unknown                                                                                                                                                Binding: PublicationStatus (Required)                                                             ,,,,,,
+subject[x],,,,0..1,,Patient,RelatedPerson,,Тип сущности (кого касается это действие),,,,,,
+,subjectCodeableConcept	,,,,,,,,,,,,,,
+,subjectReference,,,,,,,,,,,,,,
+,subjectCanonical,,,,,,,,,,,,,,
+date,,,Σ,0..1,,,,,Дата последнего изменения,,,,,,
+publisher,,,ΣT,0..1,,,,,Название издателя / ответственного (организация или человек),,,,,,
+description,,,ΣT,0..1,,,,,Описание ActivityDefinition на обычном (человеческом) языке,,,,,,
+ effectivePeriod,,,Σ,0..1,,,,,"Период, в течение которого ActivityDefinition должен использоваться",,,,,,
+kind,,,Σ,0..1,,ImmunizationRecommendation																				,,,Тип ресурса                                                                                                                                                               Binding: Request Resource Types (Required),,,,,,
+ profile,,,,0..*,,HL7.v5,,,Какому профилю должен соответствовать ресурс,,,,,,
+ code,,,Σ,0..*,,HL7.v5,,,Детальный тип действия                                                                                                                  Binding: Procedure Codes (SNOMED CT) (Example),,,,,,
+ intent,,,,0..*,,,,,"proposal — предложение
+plan — план рекомендации по календарю                                                                                                      
+order— врач подтвердил вакцинацию                                                                                                                   Binding: RequestIntent (Required)                                                                                                                                               ",,,,,,
+priority,measure,,,0..1,,SNOMED CT,,,routine — обычный                                                                                                              Binding: RequestPriority (Required),,,,,,
+doNotPerform,,,?!Σ,,,SNOMED CT,,,"Истина (true), если действие НЕ должно выполня",,,,,,
+timing[x],,,,,,,,,Когда должно происходить действие,,,,,,
+, timingAge,,,,,,,,,,,,,,
+, timingDuration,,,,,,,,,,,,,,
+, timingRange,,,,,,,,,,,,,,
+, timingTiming,,,,,,,,,,,,,,
+participant,,,,0..*,,,,,Кто должен участвовать в выполнении действия,,,,,,
+, type,,,0..1,,,,,"careteam — медицинская команда
+device — устройство
+group — группа
+healthcareService — медицинская услуга
+location — место
+organization — организация
+patient — пациент
+practitioner — врач
+practitionerRole — роль врача
+relatedPerson — родственник / связанное лицо                                                                              Binding: Action Participant Type (Required)",,,,,,
+,,typeCanonical,,0..1,,,,,,,,,,,
+,,typeReference,,0..1,,,,,,,,,,,
+, role,,,,,,,,"Например: медсестра, хирург, родитель и т.д.                                                                                                           Binding: Action Participant Role (Example)",,,,,,
+, function,,,0..*,,,,,"Например: автор, проверяющий, свидетель и т.д                                                                                                     Binding: Action Participant Function (Example)",,,,,,
+product[x],,,,0..1,,,,,"Что вводится / используется (например, вакцина или препарат)                                                                             Binding: SNOMED CT Medication Codes (Example)",,,,,,
+, productReference,,,0..1,,,,,,,,,,,
+,productCodeableConcept,,,0..1,,,,,,,,,,,
+quantity,,,,0..1,,,,,Сколько вводится / потребляется / предоставляется,,,,,,
+ dosage,,,,0..1,,,,,Подробные инструкции по дозировке,,,,,,
+ bodySite,,,,0..1,,,,,На какую часть тела выполняется действие                                                                                                      Binding: SNOMED CT Body Structures (Example),,,,,,
+specimenRequirement,,,,0..1,,,,,Какие образцы (specimens) требуются для выполнения этого действия,,,,,,
+ observationRequirement,,,,0..*,,,,,Какие наблюдения (observations) требуются для выполнения этого действия,,,,,,
+ observationResultRequirement	,,,,,,,,,Какие наблюдения должны быть получены в результате этого действия,,,,,,
+ transform,,,,0..*,,,,,Преобразование для применения шаблона,,,,,,
+dynamicValue,,,,0..1,,,,,Динамические аспекты определения,,,,,,
+, path,,,,,,,,"Путь к элементу, который должен быть задан динамически",,,,,,
+, expression,,,,,,,,"Выражение, которое задаёт динамическое значение для настройки",,,,,,
