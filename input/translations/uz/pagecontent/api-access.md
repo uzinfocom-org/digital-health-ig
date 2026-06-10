@@ -24,86 +24,9 @@ Holat playgroundni 2026-06-03 holatiga ko'ra aks ettiradi va joriy etish davom e
 
 ### Xavfsizlik va autentifikatsiya {#security}
 
-Milliy raqamli sog'liqni saqlash platformasi (DHP) doirasida xavfsizlik, maxfiylik va kirishni ishonchli nazorat qilishni ta'minlash uchun OAuth 2.0 xalqaro standartiga asoslangan autentifikatsiya va avtorizatsiya tizimi joriy etilgan.
-U ilovalarning frontend va backend ssenariylarini qo'llab-quvvatlaydi. Markazlashtirilgan Single Sign-On (SSO) serveri bemorlar va tibbiyot tashkilotlaridan tortib tashqi tizimlargacha bo'lgan platformaning barcha ishtirokchilarini xavfsiz identifikatsiya qilishni ta'minlaydi.
+DHP FHIR API'lariga kirish OAuth 2.0 standarti bo'yicha markazlashtirilgan Single Sign-On (SSO) serveri orqali himoyalangan va ham backend ilovalarni (`client_credentials` grant turi), ham frontend ilovalarni (ixtiyoriy PKCE bilan `authorization code` grant turi) qo'llab-quvvatlaydi.
 
-DHP autentifikatsiyaning ikkita asosiy ssenariysini qo'llab-quvvatlaydi:
-- Backend ilovalar - `client_credentials` grant turi orqali (foydalanuvchi ishtirokisiz),
-- Frontend ilovalar - `redirect_uri` qo'llab-quvvatlanadigan va ixtiyoriy PKCE bilan `authorization code` grant turi orqali.
-
-#### Back-end Integratsiyasi
-
-Ushbu bo'limda `client_credentials` grant turidan foydalangan holda OAuth 2.0 protokoli orqali backend ilovalar uchun kirish tokenini olish jarayoni tavsiflanadi.
-Ushbu oqim servis himoyalangan APIlarga foydalanuvchi nomidan emas, balki o'z nomidan kirishi zarur bo'lganda qo'llaniladi.
-
-##### Mijoz konfiguratsiyasi
-
-Backend mijoz SSO serverida ro'yxatdan o'tkazilgan bo'lishi kerak. Ro'yxatdan o'tkazilgandan so'ng quyidagilar taqdim etiladi:
-- **client_id** - provayder tomonidan berilgan identifikator
-- **client_secret** - provayder tomonidan berilgan maxfiy kalit
-
-##### Token olish
-
-**So'rov**
-
-```
-POST /oauth/token
-```
-
-**So'rov tanasi**
-
-| Parameter      | Value               |
-|----------------|---------------------|
-| grant\_type    | client\_credentials |
-| client\_id     | \<client\_id>       |
-| client\_secret | \<client\_secret>   |
-
-##### Xatolik javoblari
-
-* <a href="https://www.postman.com/eg3333-1491/dhp/example/45312060-dce119ab-d60d-4112-acba-cb31503753b5/dhp-core?active-environment=45312060-e14d5c80-4578-464f-a016-dd51f566a5cd" target="_blank">400 Bad Request</a>
-* <a href="https://www.postman.com/eg3333-1491/dhp/example/45312060-b279c65c-72e6-4161-be4c-0281fed405bd/dhp-core?active-environment=45312060-e14d5c80-4578-464f-a016-dd51f566a5cd" target="_blank">401 Unauthorized</a>
-
-#### Front-end integratsiyasi
-
-Ushbu bo'limda frontend ilovalar OAuth 2.0 protokolining standart `Authorization Code` grant turidan foydalangan holda SSO serveri orqali foydalanuvchilarni qanday avtorizatsiya qilishi mumkinligi tavsiflanadi. Ushbu oqim DHP ekotizimida yagona kirish va foydalanuvchilarning xavfsiz autentifikatsiyasini ta'minlaydi.
-
-##### Mijoz konfiguratsiyasi
-
-Frontend ilova SSO serverida ro'yxatdan o'tkazilgan bo'lishi kerak. Ro'yxatdan o'tkazilgandan so'ng quyidagilar taqdim etiladi:
-
-- **client_id** - provayder tomonidan berilgan identifikator
-- **redirect_uri** - ilovangiz tomonidan taqdim etilgan URL-manzil
-
-##### Avtorizatsiya jarayoni
-
-**1 Foydalanuvchini frontend SSOga yo'naltiring:**
-
-```
-GET sso.dhp.uz
-```
-
-**Parametrlar**:
-
-| Parameter     | Value            |
-|---------------|------------------|
-| client\_id    | \<client\_id>    |
-| redirect\_uri | \<redirect\_uri> |
-
-**2 Avtorizatsiya kodi:**
-
-Muvaffaqiyatli kirishdan so'ng foydalanuvchi avtorizatsiya kodi bilan `redirect_uri` manziliga qayta yo'naltiriladi.
-
-**3 Kodni tokenga almashtirish:**
-
-`client_secret` himoyasini ta'minlash uchun ushbu almashinuv backend tomonida bajarilishi kerak. Agar ilovada backend bo'lmasa, `PKCE`dan foydalaning.
-
-**4 Tokendan foydalanish:**
-
-Har bir so'rovga kirish tokenini qo'shing:
-
-```
-Authorization: Bearer <access_token>
-```
+Mijozni ro'yxatdan o'tkazish, avtorizatsiya oqimlari, kirish tokenlarini olish va ulardan foydalanish hamda xatolik javoblari SSO serverida to'liq hujjatlashtirilgan: [sso.dhp.uz/docs](https://sso.dhp.uz/docs).
 
 ### Tranzaksiyalar
 

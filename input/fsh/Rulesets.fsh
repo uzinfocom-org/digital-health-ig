@@ -80,6 +80,16 @@ RuleSet: TaxIdentifier
   * use = #official
   * value 1..1 MS
 
+RuleSet: MinzdravIdentifier
+* identifier[minzdravId]
+  * ^short = "Unique identifier of the organization in Minzdrav"
+  * system 1..1 MS
+  * system = $organization-minzdrav-id-system
+  * type 1..1 MS
+  * type = $identifier-type#XX "Organization Identifier"
+  * use = #official
+  * value 1..1 MS
+
 RuleSet: OriginalCodeSystemDraft(id)
 * ^url = "https://terminology.dhp.uz/fhir/core/CodeSystem/{id}"
 * ^status = #draft

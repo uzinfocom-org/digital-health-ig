@@ -10,13 +10,13 @@
 
 ### 1. Календарь как код
 
-Национальный календарь публикуется один раз в виде [PlanDefinition](StructureDefinition-uz-core-plan-definition.html). Каждая рекомендованная доза — это `PlanDefinition.action`; вакцина и сведения о дозировании переносятся в действие через `definitionCanonical`, ссылающийся на `ActivityDefinition`, либо через национальные расширения (`doseSequence`, `maximumInterval`, `gracePeriod`). Минимальные интервалы между дозами используют `action.relatedAction.offsetDuration`; показания используют `action.condition`.
+Национальный календарь публикуется один раз в виде [PlanDefinition](StructureDefinition-uz-core-immunization-plan-definition.html). Каждая рекомендованная доза — это `PlanDefinition.action`; вакцина и сведения о дозировании переносятся в действие через `definitionCanonical`, ссылающийся на `ActivityDefinition`, либо через национальные расширения (`doseSequence`, `maximumInterval`, `gracePeriod`). Минимальные интервалы между дозами используют `action.relatedAction.offsetDuration`; показания используют `action.condition`.
 
 ```
 GET [base]/PlanDefinition?status=active&context-type-value=focus$vaccination
 ```
 
-> Для данной области/юрисдикции одновременно может быть активна только одна версия календаря, и календарь должен удовлетворять правилам валидации (отсутствие пропусков в последовательности доз, отсутствие невозможных временных окон, отсутствие двух перекрывающихся активных версий). См. страницу [PlanDefinition](StructureDefinition-uz-core-plan-definition.html).
+> Для данной области/юрисдикции одновременно может быть активна только одна версия календаря, и календарь должен удовлетворять правилам валидации (отсутствие пропусков в последовательности доз, отсутствие невозможных временных окон, отсутствие двух перекрывающихся активных версий). См. страницу [PlanDefinition](StructureDefinition-uz-core-immunization-plan-definition.html).
 
 ### 2. Формирование рекомендации
 
@@ -69,5 +69,5 @@ POST [base]/Immunization
 
 ### Связанные материалы
 
-- Профили: [PlanDefinition](StructureDefinition-uz-core-plan-definition.html) &middot; [ImmunizationRecommendation](StructureDefinition-uz-core-immunization-recommendation.html) &middot; [Immunization](StructureDefinition-uz-core-immunization.html) &middot; [AdverseEvent](StructureDefinition-uz-core-adverse-event.html)
+- Профили: [PlanDefinition](StructureDefinition-uz-core-immunization-plan-definition.html) &middot; [ImmunizationRecommendation](StructureDefinition-uz-core-immunization-recommendation.html) &middot; [Immunization](StructureDefinition-uz-core-immunization.html) &middot; [AdverseEvent](StructureDefinition-uz-core-adverse-event.html)
 - [Обзор рабочих процессов](workflows.html) &middot; [Общие рекомендации](general-guidance.html)
