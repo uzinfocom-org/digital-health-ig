@@ -1089,3 +1089,8 @@ No definition could be found for URL value 'Observation/body-weight-example/_his
 No definition could be found for URL value 'Observation/body-temperature-example/_history/1'
 
 Target Code System http://hl7.org/fhir/sid/cvx doesn't have all content (content = not-present), so the target codes cannot be checked
+
+# UCUM is grammar-based and cannot be expansion-validated, so every target code in the
+# UcumToRuUnitsDisplayCM / UcumToUzUnitsDisplayCM display-translation maps is reported as
+# "not in ucum-common". The codes are valid UCUM; these warnings are benign (PR #173).
+%is not valid in the value set http://terminology.hl7.org/ValueSet/ucum-common%
