@@ -1,0 +1,5 @@
+snomed Code,EN,UZ,RU,,
+368210008,Left arm,Chap qo‘l,Левая рука,,http://hl7.org/fhir/ValueSet/body-site
+368211007,Right arm,O‘ng qo‘l,Правая рука ,,
+368225008,Left thigh,Chap son,Левое бедро ,,
+368224007,Right thigh ,O‘ng son,Правое бедро,,

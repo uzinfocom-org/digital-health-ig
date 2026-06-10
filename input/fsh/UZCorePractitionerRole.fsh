@@ -38,7 +38,7 @@ Description: "Uzbekistan Core PractitionerRole profile, used to define roles of 
   * system 1..1 MS
   * system = "https://terminology.dhp.uz/fhir/core/CodeSystem/position-and-profession-cs"
   * code 1..1 MS
-  * code from practitioner-role-vs (required)
+  * code from position-and-profession-vs (required)
 
 Instance: example-practitionerrole
 InstanceOf: UZCorePractitionerRole
@@ -50,4 +50,15 @@ Usage: #example
 * organization = Reference(Organization/example-organization)
 * code = position-and-profession-cs#2212.14 "Vrach ginekolog"
 * specialty = profession-specialization-cs#394585009 "Akusherlik va ginekologiya"
+* healthcareService = Reference(HealthcareService/example-healthcareservice)
+
+Instance: example-practitionerrole-freetext
+InstanceOf: UZCorePractitionerRole
+Description: "Example of a practitioner's role with a freetext description"
+Usage: #example
+* language = #uz
+* active = true
+* practitioner = Reference(Practitioner/example-practitioner)
+* organization = Reference(Organization/example-organization)
+* code.text = "Surgeon at Republican Specialized Scientific Center of Surgery, inpatient care"
 * healthcareService = Reference(HealthcareService/example-healthcareservice)

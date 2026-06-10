@@ -1,7 +1,7 @@
 CodeSystem: MahallaCS
 Id: mahalla-cs
 Title: "Mahalla Codes and Names"
-Description: "Mahalla codes and names with translations in Russian and English"
+Description: "Mahalla codes and names with translations in Russian and English from dmp.uz"
 * insert OriginalCodeSystemDraft(mahalla-cs)
 
 * #17150085 "Uzumzor MFY"

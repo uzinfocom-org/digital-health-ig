@@ -1,0 +1,2998 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "active",
+  "content": "supplement",
+  "name": "CVXVaccineTranslationsCS",
+  "id": "cvx-vaccine-translations-cs",
+  "title": "CVX Vaccine Code Translations",
+  "description": "Supplement providing Uzbek and Russian translations for the CVX vaccine code system (http://hl7.org/fhir/sid/cvx).",
+  "url": "https://terminology.dhp.uz/fhir/core/CodeSystem/cvx-vaccine-translations-cs",
+  "concept": [
+    {
+      "code": "54",
+      "display": "adenovirus vaccine, type 4, live, oral",
+      "designation": [
+        {
+          "language": "uz",
+          "value": "Adenovirusga qarshi emlash, 4-toifa, jonli, og'iz orqali"
+        },
+        {
+          "language": "ru",
+          "value": "Аденовирусная вакцина, тип 4, живая, пероральная"
+        }
+      ]
+    },
+    {
+      "code": "55",
+      "display": "adenovirus vaccine, type 7, live, oral",
+      "designation": [
+        {
+          "language": "uz",
+          "value": "Adenovirusga qarshi emlash, 7-toifa, jonli, og'iz orqali"
+        },
+        {
+          "language": "ru",
+          "value": "Аденовирусная вакцина, тип 7, живая, пероральная"
+        }
+      ]
+    },
+    {
+      "code": "82",
+      "display": "adenovirus vaccine, unspecified formulation",
+      "designation": [
+        {
+          "language": "uz",
+          "value": "Adenovirusga qarshi emlash, aniqlanmagan"
+        },
+        {
+          "language": "ru",
+          "value": "Аденовирусная вакцина, неуточненная формулировка"
+        }
+      ]
+    },
+    {
+      "code": "24",
+      "display": "anthrax vaccine",
+      "designation": [
+        {
+          "language": "uz",
+          "value": "Kuydirgiga qarshi emlash, adsorbsiyalangan, ta'sir qilishdan oldingi va keyingi profilaktika uchun"
+        },
+        {
+          "language": "ru",
+          "value": "Вакцина против сибирской язвы, адсорбированная, для пред- и постконтактной профилактики"
+        }
+      ]
+    },
+    {
+      "code": "19",
+      "display": "Bacillus Calmette-Guerin vaccine",
+      "designation": [
+        {
+          "language": "uz",
+          "value": "Bacillus Calmette-Guerin vaktsinasi"
+        },
+        {
+          "language": "ru",
+          "value": "Вакцина против бациллы Кальметта-Герина"
+        }
+      ]
+    },
+    {
+      "code": "27",
+      "display": "Botulinum antitoxin (substance)",
+      "designation": [
+        {
+          "language": "uz",
+          "value": "botulinum antitoksini"
+        },
+        {
+          "language": "ru",
+          "value": "ботулинический антитоксин"
+        }
+      ]
+    },
+    {
+      "code": "26",
+      "display": "cholera vaccine, unspecified formulation",
+      "designation": [
+        {
+          "language": "uz",
+          "value": "vaboga qarshi emlash, aniqlanmagan"
+        },
+        {
+          "language": "ru",
+          "value": "холерная вакцина, неуточненная формулировка"
+        }
+      ]
+    },
+    {
+      "code": "29",
+      "display": "cytomegalovirus immune globulin, intravenous",
+      "designation": [
+        {
+          "language": "uz",
+          "value": "sitomegalovirus immunoglobulini, tomir ichiga yuborish"
+        },
+        {
+          "language": "ru",
+          "value": "цитомегаловирусный иммуноглобулин, внутривенный"
+        }
+      ]
+    },
+    {
+      "code": "56",
+      "display": "dengue fever vaccine",
+      "designation": [
+        {
+          "language": "uz",
+          "value": "dangga qarshi emlash, to'rt valentli"
+        },
+        {
+          "language": "ru",
+          "value": "вакцина против лихорадки денге, четырехвалентная"
+        }
+      ]
+    },
+    {
+      "code": "12",
+      "display": "diphtheria antitoxin",
+      "designation": [
+        {
+          "language": "uz",
+          "value": "difteriyaga qarshi toksin"
+        },
+        {
+          "language": "ru",
+          "value": "дифтерийный антитоксин"
+        }
+      ]
+    },
+    {
+      "code": "28",
+      "display": "diphtheria and tetanus toxoids, adsorbed for pediatric use",
+      "designation": [
+        {
+          "language": "uz",
+          "value": "bolalarda foydalanish uchun adsorbsiyalangan difteriya va tetanoz toksoidlari"
+        },
+        {
+          "language": "ru",
+          "value": "дифтерийный и столбнячный токсоиды, адсорбированные для педиатрического применения"
+        }
+      ]
+    },
+    {
+      "code": "20",
+      "display": "diphtheria, tetanus toxoids and acellular pertussis vaccine",
+      "designation": [
+        {
+          "language": "uz",
+          "value": "difteriya, qoqshol va ko'kyo'talga qarshi emlash"
+        },
+        {
+          "language": "ru",
+          "value": "вакцина против дифтерии, столбняка и ацеллюлярного коклюша"
+        }
+      ]
+    },
+    {
+      "code": "106",
+      "display": "diphtheria, tetanus toxoids and acellular pertussis vaccine, 5 pertussis antigens",
+      "designation": [
+        {
+          "language": "uz",
+          "value": "difteriya, qoqshol va ko'kyo'talga qarshi emlash, 5 ta ko'kyo'tal antijeni"
+        },
+        {
+          "language": "ru",
+          "value": "вакцина против дифтерии, столбняка и ацеллюлярного коклюша, 5 коклюшных антигенов"
+        }
+      ]
+    },
+    {
+      "code": "107",
+      "display": "diphtheria, tetanus toxoids and acellular pertussis vaccine, unspecified formulation",
+      "designation": [
+        {
+          "language": "uz",
+          "value": "difteriya, qoqshol va ko'kyo'talga qarshi emlash, aniqlanmagan formulasi"
+        },
+        {
+          "language": "ru",
+          "value": "вакцина против дифтерии, столбняка и ацеллюлярного коклюша, неуточненная формула"
+        }
+      ]
+    },
+    {
+      "code": "110",
+      "display": "DTaP-hepatitis B and poliovirus vaccine",
+      "designation": [
+        {
+          "language": "uz",
+          "value": "DTaP-gepatit B va poliovirusga qarshi emlash"
+        },
+        {
+          "language": "ru",
+          "value": "DTaP-гепатит B и полиовирусная вакцина"
+        }
+      ]
+    },
+    {
+      "code": "50",
+      "display": "DTaP-Haemophilus influenzae type b conjugate vaccine",
+      "designation": [
+        {
+          "language": "uz",
+          "value": "DTaP-Haemophilus influenzae turi b konjugat vaktsinasi"
+        },
+        {
+          "language": "ru",
+          "value": "конъюгированная вакцина DTaP-Haemophilus influenzae типа b"
+        }
+      ]
+    },
+    {
+      "code": "120",
+      "display": "diphtheria, tetanus toxoids and acellular pertussis vaccine, Haemophilus influenzae type b conjugate, and poliovirus vaccine, inactivated (DTaP-Hib-IPV)",
+      "designation": [
+        {
+          "language": "uz",
+          "value": "difteriya, qoqshol, hujayrasiz ko'kyo'talga qarshi vaktsina, Haemophilus influenzae turi b konjugati va poliovirus vaktsinasi, inaktivatsiyalangan (DTaP-Hib-IPV)"
+        },
+        {
+          "language": "ru",
+          "value": "вакцина против дифтерии, столбняка и ацеллюлярного коклюша, конъюгат Haemophilus influenzae типа b и полиовирусная вакцина, инактивированная (DTaP-Hib-IPV)"
+        }
+      ]
+    },
+    {
+      "code": "130",
+      "display": "Diphtheria, tetanus toxoids and acellular pertussis vaccine, and poliovirus vaccine, inactivated",
+      "designation": [
+        {
+          "language": "uz",
+          "value": "difteriya, qoqshol, hujayrali ko'kyo'talga qarshi vaktsina va poliovirusga qarshi vaktsina, inaktivatsiyalangan"
+        },
+        {
+          "language": "ru",
+          "value": "Вакцина против дифтерии, столбняка, ацеллюлярного коклюша и полиовирусная вакцина, инактивированная"
+        }
+      ]
+    },
+    {
+      "code": "01",
+      "display": "diphtheria, tetanus toxoids and pertussis vaccine",
+      "designation": [
+        {
+          "language": "uz",
+          "value": "difteriya, qoqshol va ko'kyo'talga qarshi emlash"
+        },
+        {
+          "language": "ru",
+          "value": "вакцина против дифтерии, столбняка и коклюша"
+        }
+      ]
+    },
+    {
+      "code": "22",
+      "display": "DTP-Haemophilus influenzae type b conjugate vaccine",
+      "designation": [
+        {
+          "language": "uz",
+          "value": "DTP-Haemophilus influenzae turi b konjugat vaktsinasi"
+        },
+        {
+          "language": "ru",
+          "value": "Конъюгированная вакцина DTP-Haemophilus influenzae типа b"
+        }
+      ]
+    },
+    {
+      "code": "102",
+      "display": "DTP- Haemophilus influenzae type b conjugate and hepatitis b vaccine",
+      "designation": [
+        {
+          "language": "uz",
+          "value": "DTP-Haemophilus influenzae turi b konjugat vaktsinasi va gepatit B vaktsinasi"
+        },
+        {
+          "language": "ru",
+          "value": "Конъюгированная вакцина DTP-Haemophilus influenzae типа b и вакцина против гепатита b"
+        }
+      ]
+    },
+    {
+      "code": "57",
+      "display": "hantavirus vaccine",
+      "designation": [
+        {
+          "language": "uz",
+          "value": "hantavirusga qarshi emlash"
+        },
+        {
+          "language": "ru",
+          "value": "хантавирусная вакцина"
+        }
+      ]
+    },
+    {
+      "code": "52",
+      "display": "hepatitis A vaccine, adult dosage",
+      "designation": [
+        {
+          "language": "uz",
+          "value": "gepatit A vaktsinasi, kattalar dozasi"
+        },
+        {
+          "language": "ru",
+          "value": "вакцина против гепатита А, дозировка для взрослых"
+        }
+      ]
+    },
+    {
+      "code": "83",
+      "display": "hepatitis A vaccine, pediatric/adolescent dosage, 2 dose schedule",
+      "designation": [
+        {
+          "language": "uz",
+          "value": "gepatit A vaktsinasi, bolalar / o'smirlar dozasi, 2 dozali sxema"
+        },
+        {
+          "language": "ru",
+          "value": "вакцина против гепатита А, детская/подростковая дозировка, график введения 2 доз"
+        }
+      ]
+    },
+    {
+      "code": "84",
+      "display": "hepatitis A vaccine, pediatric/adolescent dosage, 3 dose schedule",
+      "designation": [
+        {
+          "language": "uz",
+          "value": "gepatit A vaktsinasi, bolalar / o'smirlar dozasi, 3 dozali sxema"
+        },
+        {
+          "language": "ru",
+          "value": "вакцина против гепатита А, детская/подростковая дозировка, график 3 дозы"
+        }
+      ]
+    },
+    {
+      "code": "31",
+      "display": "hepatitis A vaccine, pediatric dosage, unspecified formulation",
+      "designation": [
+        {
+          "language": "uz",
+          "value": "gepatit A vaktsinasi, bolalar dozasi, aniqlanmagan formulasi"
+        },
+        {
+          "language": "ru",
+          "value": "вакцина против гепатита А, детская дозировка, неуточненная формула"
+        }
+      ]
+    },
+    {
+      "code": "85",
+      "display": "hepatitis A vaccine, unspecified formulation",
+      "designation": [
+        {
+          "language": "uz",
+          "value": "gepatit A vaktsinasi, aniqlanmagan formulasi"
+        },
+        {
+          "language": "ru",
+          "value": "вакцина против гепатита А, неуточненная формулировка"
+        }
+      ]
+    },
+    {
+      "code": "104",
+      "display": "hepatitis A and hepatitis B vaccine",
+      "designation": [
+        {
+          "language": "uz",
+          "value": "gepatit A va gepatit B ga qarshi emlash"
+        },
+        {
+          "language": "ru",
+          "value": "вакцина против гепатита А и гепатита В"
+        }
+      ]
+    },
+    {
+      "code": "30",
+      "display": "hepatitis B immune globulin",
+      "designation": [
+        {
+          "language": "uz",
+          "value": "gepatit B immunoglobulini"
+        },
+        {
+          "language": "ru",
+          "value": "иммуноглобулин против гепатита В"
+        }
+      ]
+    },
+    {
+      "code": "08",
+      "display": "hepatitis B vaccine, pediatric or pediatric/adolescent dosage",
+      "designation": [
+        {
+          "language": "uz",
+          "value": "gepatit B vaktsinasi, bolalar yoki bolalar / o'smirlar dozasi"
+        },
+        {
+          "language": "ru",
+          "value": "вакцина против гепатита В, педиатрическая или педиатрическая/подростковая дозировка"
+        }
+      ]
+    },
+    {
+      "code": "42",
+      "display": "hepatitis B vaccine, adolescent/high risk infant dosage",
+      "designation": [
+        {
+          "language": "uz",
+          "value": "gepatit B ga qarshi emlash, yuqori xavfli bolalar uchun o'smirlar / bolalar dozalari"
+        },
+        {
+          "language": "ru",
+          "value": "вакцина против гепатита В, подростковая/детская дозировка для детей высокого риска"
+        }
+      ]
+    },
+    {
+      "code": "43",
+      "display": "hepatitis B vaccine, adult dosage",
+      "designation": [
+        {
+          "language": "uz",
+          "value": "gepatit B vaktsinasi, kattalar dozasi"
+        },
+        {
+          "language": "ru",
+          "value": "вакцина против гепатита В, дозировка для взрослых"
+        }
+      ]
+    },
+    {
+      "code": "44",
+      "display": "hepatitis B vaccine, dialysis patient dosage",
+      "designation": [
+        {
+          "language": "uz",
+          "value": "gepatit B ga qarshi emlash, dializ dozasi"
+        },
+        {
+          "language": "ru",
+          "value": "вакцина против гепатита В, дозировка для пациентов, находящихся на диализе"
+        }
+      ]
+    },
+    {
+      "code": "45",
+      "display": "hepatitis B vaccine, unspecified formulation",
+      "designation": [
+        {
+          "language": "uz",
+          "value": "gepatit B vaktsinasi, aniqlanmagan formulasi"
+        },
+        {
+          "language": "ru",
+          "value": "вакцина против гепатита В, неуточненная формулировка"
+        }
+      ]
+    },
+    {
+      "code": "58",
+      "display": "hepatitis C vaccine",
+      "designation": [
+        {
+          "language": "uz",
+          "value": "gepatit C vaktsinasi"
+        },
+        {
+          "language": "ru",
+          "value": "вакцина против гепатита С"
+        }
+      ]
+    },
+    {
+      "code": "59",
+      "display": "hepatitis E vaccine",
+      "designation": [
+        {
+          "language": "uz",
+          "value": "gepatit E vaktsinasi"
+        },
+        {
+          "language": "ru",
+          "value": "вакцина против гепатита Е"
+        }
+      ]
+    },
+    {
+      "code": "60",
+      "display": "herpes simplex virus, type 2 vaccine",
+      "designation": [
+        {
+          "language": "uz",
+          "value": "2-toifa herpes simplex virusiga qarshi emlash"
+        },
+        {
+          "language": "ru",
+          "value": "вакцина против вируса простого герпеса, тип 2"
+        }
+      ]
+    },
+    {
+      "code": "46",
+      "display": "Haemophilus influenzae type b vaccine, PRP-D conjugate",
+      "designation": [
+        {
+          "language": "uz",
+          "value": "Haemophilus influenzae turi b vaktsinasi, PRP-D konjugati"
+        },
+        {
+          "language": "ru",
+          "value": "Вакцина против Haemophilus influenzae типа b, конъюгат PRP-D"
+        }
+      ]
+    },
+    {
+      "code": "47",
+      "display": "Haemophilus influenzae type b vaccine, HbOC conjugate",
+      "designation": [
+        {
+          "language": "uz",
+          "value": "Haemophilus influenzae turi b vaktsinasi, HbOC konjugati"
+        },
+        {
+          "language": "ru",
+          "value": "Вакцина против Haemophilus influenzae типа b, конъюгат HbOC"
+        }
+      ]
+    },
+    {
+      "code": "48",
+      "display": "Haemophilus influenzae type b vaccine, PRP-T conjugate",
+      "designation": [
+        {
+          "language": "uz",
+          "value": "Haemophilus influenzae turi b vaktsinasi, PRP-T konjugati"
+        },
+        {
+          "language": "ru",
+          "value": "Вакцина Haemophilus influenzae типа b, конъюгат PRP-T"
+        }
+      ]
+    },
+    {
+      "code": "49",
+      "display": "Haemophilus influenzae type b vaccine, PRP-OMP conjugate",
+      "designation": [
+        {
+          "language": "uz",
+          "value": "Haemophilus influenzae turi b vaktsinasi, PRP-OMP konjugati"
+        },
+        {
+          "language": "ru",
+          "value": "Вакцина против Haemophilus influenzae типа b, конъюгат PRP-OMP"
+        }
+      ]
+    },
+    {
+      "code": "17",
+      "display": "Haemophilus influenzae type b vaccine, conjugate unspecified formulation",
+      "designation": [
+        {
+          "language": "uz",
+          "value": "Haemophilus influenzae turi b vaktsinasi, aniqlanmagan konjugat"
+        },
+        {
+          "language": "ru",
+          "value": "Вакцина Haemophilus influenzae типа b, конъюгат неуточненного состава"
+        }
+      ]
+    },
+    {
+      "code": "51",
+      "display": "Haemophilus influenzae type b conjugate and Hepatitis B vaccine",
+      "designation": [
+        {
+          "language": "uz",
+          "value": "Haemophilus influenzae turi b konjugati va gepatit B vaktsinasi"
+        },
+        {
+          "language": "ru",
+          "value": "Конъюгат против Haemophilus influenzae типа b и вакцина против гепатита В"
+        }
+      ]
+    },
+    {
+      "code": "61",
+      "display": "human immunodeficiency virus vaccine",
+      "designation": [
+        {
+          "language": "uz",
+          "value": "inson immunitet tanqisligi virusiga qarshi emlash"
+        },
+        {
+          "language": "ru",
+          "value": "вакцина против вируса иммунодефицита человека"
+        }
+      ]
+    },
+    {
+      "code": "118",
+      "display": "human papilloma virus vaccine, bivalent",
+      "designation": [
+        {
+          "language": "uz",
+          "value": "inson papillomavirusiga qarshi vaktsina, ikki valentli"
+        },
+        {
+          "language": "ru",
+          "value": "вакцина против вируса папилломы человека, бивалентная"
+        }
+      ]
+    },
+    {
+      "code": "62",
+      "display": "human papilloma virus vaccine, quadrivalent",
+      "designation": [
+        {
+          "language": "uz",
+          "value": "inson papillomavirusiga qarshi emlash, to'rt valentli"
+        },
+        {
+          "language": "ru",
+          "value": "вакцина против вируса папилломы человека, четырехвалентная"
+        }
+      ]
+    },
+    {
+      "code": "86",
+      "display": "immune globulin, intramuscular",
+      "designation": [
+        {
+          "language": "uz",
+          "value": "immunoglobulin, mushak ichiga"
+        },
+        {
+          "language": "ru",
+          "value": "иммуноглобулин, внутримышечно"
+        }
+      ]
+    },
+    {
+      "code": "87",
+      "display": "immune globulin, intravenous",
+      "designation": [
+        {
+          "language": "uz",
+          "value": "immunoglobulin, tomir ichiga yuborish"
+        },
+        {
+          "language": "ru",
+          "value": "иммуноглобулин, внутривенный"
+        }
+      ]
+    },
+    {
+      "code": "14",
+      "display": "immune globulin, unspecified formulation",
+      "designation": [
+        {
+          "language": "uz",
+          "value": "immunoglobulin, aniqlanmagan"
+        },
+        {
+          "language": "ru",
+          "value": "иммуноглобулин, неуточненная формулировка"
+        }
+      ]
+    },
+    {
+      "code": "111",
+      "display": "influenza virus vaccine, live, attenuated, for intranasal use",
+      "designation": [
+        {
+          "language": "uz",
+          "value": "Gripp, jonli, uch valentli, intranazal"
+        },
+        {
+          "language": "ru",
+          "value": "Грипп, живой, трехвалентный, интраназальный"
+        }
+      ]
+    },
+    {
+      "code": "15",
+      "display": "influenza virus vaccine, split virus (incl. purified surface antigen)-retired CODE",
+      "designation": [
+        {
+          "language": "uz",
+          "value": "grippga qarshi emlash, split virus (shu jumladan, tozalangan sirt antijeni) - pensiya bo'yicha KOD"
+        },
+        {
+          "language": "ru",
+          "value": "вакцина против вируса гриппа, расщепленный вирус (в т.ч. очищенный поверхностный антиген) - КОД на пенсии"
+        }
+      ]
+    },
+    {
+      "code": "16",
+      "display": "influenza virus vaccine, whole virus",
+      "designation": [
+        {
+          "language": "uz",
+          "value": "grippga qarshi emlash, butun virus"
+        },
+        {
+          "language": "ru",
+          "value": "вакцина против вируса гриппа, цельный вирус"
+        }
+      ]
+    },
+    {
+      "code": "88",
+      "display": "influenza virus vaccine, unspecified formulation",
+      "designation": [
+        {
+          "language": "uz",
+          "value": "gripp virusiga qarshi emlash, aniqlanmagan"
+        },
+        {
+          "language": "ru",
+          "value": "вакцина против вируса гриппа, неуточненная формулировка"
+        }
+      ]
+    },
+    {
+      "code": "123",
+      "display": "influenza virus vaccine, H5N1, A/Vietnam/1203/2004 (national stockpile)",
+      "designation": [
+        {
+          "language": "uz",
+          "value": "gripp virusiga qarshi emlash, H5N1, A/Vyetnam/1203/2004 (milliy zaxira)"
+        },
+        {
+          "language": "ru",
+          "value": "вакцина против вируса гриппа, H5N1, A/Вьетнам/1203/2004 (национальные запасы)"
+        }
+      ]
+    },
+    {
+      "code": "10",
+      "display": "poliovirus vaccine, inactivated",
+      "designation": [
+        {
+          "language": "uz",
+          "value": "poliovirusga qarshi emlash, faolsizlangan"
+        },
+        {
+          "language": "ru",
+          "value": "полиовирусная вакцина, инактивированная"
+        }
+      ]
+    },
+    {
+      "code": "02",
+      "display": "trivalent poliovirus vaccine, live, oral",
+      "designation": [
+        {
+          "language": "uz",
+          "value": "trivalent poliovirus vaktsinasi, jonli, og'iz"
+        },
+        {
+          "language": "ru",
+          "value": "трехвалентная полиовирусная вакцина, живая, пероральная"
+        }
+      ]
+    },
+    {
+      "code": "89",
+      "display": "poliovirus vaccine, unspecified formulation",
+      "designation": [
+        {
+          "language": "uz",
+          "value": "poliovirusga qarshi emlash, aniqlanmagan dozalash shakli"
+        },
+        {
+          "language": "ru",
+          "value": "полиовирусная вакцина, неуточненная форма выпуска"
+        }
+      ]
+    },
+    {
+      "code": "39",
+      "display": "Japanese Encephalitis Vaccine SC",
+      "designation": [
+        {
+          "language": "uz",
+          "value": "Yapon ensefalitiga qarshi emlash SC"
+        },
+        {
+          "language": "ru",
+          "value": "Вакцина против японского энцефалита SC"
+        }
+      ]
+    },
+    {
+      "code": "63",
+      "display": "Junin virus vaccine",
+      "designation": [
+        {
+          "language": "uz",
+          "value": "Junin virusiga qarshi emlash"
+        },
+        {
+          "language": "ru",
+          "value": "Вакцина против вируса Хунин"
+        }
+      ]
+    },
+    {
+      "code": "64",
+      "display": "leishmaniasis vaccine",
+      "designation": [
+        {
+          "language": "uz",
+          "value": "Leyshmaniozga qarshi emlash"
+        },
+        {
+          "language": "ru",
+          "value": "вакцина против лейшманиоза"
+        }
+      ]
+    },
+    {
+      "code": "65",
+      "display": "leprosy vaccine",
+      "designation": [
+        {
+          "language": "uz",
+          "value": "Moxovga qarshi emlash"
+        },
+        {
+          "language": "ru",
+          "value": "вакцина против проказы"
+        }
+      ]
+    },
+    {
+      "code": "66",
+      "display": "Lyme disease vaccine",
+      "designation": [
+        {
+          "language": "uz",
+          "value": "Lyme kasalligiga qarshi emlash"
+        },
+        {
+          "language": "ru",
+          "value": "Вакцина против болезни Лайма"
+        }
+      ]
+    },
+    {
+      "code": "03",
+      "display": "measles, mumps and rubella virus vaccine",
+      "designation": [
+        {
+          "language": "uz",
+          "value": "Qizamiq, parotit, qizilcha virusiga qarshi emlash"
+        },
+        {
+          "language": "ru",
+          "value": "вакцина против вируса кори, паротита и краснухи"
+        }
+      ]
+    },
+    {
+      "code": "04",
+      "display": "measles and rubella virus vaccine",
+      "designation": [
+        {
+          "language": "uz",
+          "value": "Qizamiq va qizilchaga qarshi emlash"
+        },
+        {
+          "language": "ru",
+          "value": "Вакцина против кори и краснухи"
+        }
+      ]
+    },
+    {
+      "code": "94",
+      "display": "measles, mumps, rubella, and varicella virus vaccine",
+      "designation": [
+        {
+          "language": "uz",
+          "value": "Qizamiq, qizilcha, qizilcha va qizilchaga qarshi emlash"
+        },
+        {
+          "language": "ru",
+          "value": "вакцина против кори, паротита, краснухи и ветряной оспы"
+        }
+      ]
+    },
+    {
+      "code": "67",
+      "display": "malaria vaccine",
+      "designation": [
+        {
+          "language": "uz",
+          "value": "Bezgakga qarshi emlash"
+        },
+        {
+          "language": "ru",
+          "value": "вакцина против малярии"
+        }
+      ]
+    },
+    {
+      "code": "05",
+      "display": "measles virus vaccine",
+      "designation": [
+        {
+          "language": "uz",
+          "value": "Qizamiq virusiga qarshi emlash"
+        },
+        {
+          "language": "ru",
+          "value": "вакцина против вируса кори"
+        }
+      ]
+    },
+    {
+      "code": "68",
+      "display": "melanoma vaccine",
+      "designation": [
+        {
+          "language": "uz",
+          "value": "melanoma vaktsinasi"
+        },
+        {
+          "language": "ru",
+          "value": "вакцина против меланомы"
+        }
+      ]
+    },
+    {
+      "code": "32",
+      "display": "meningococcal polysaccharide vaccine (MPSV4)",
+      "designation": [
+        {
+          "language": "uz",
+          "value": "meningokokk polisakkarid vaktsinasi (MPSV4)"
+        },
+        {
+          "language": "ru",
+          "value": "менингококковая полисахаридная вакцина (MPSV4)"
+        }
+      ]
+    },
+    {
+      "code": "103",
+      "display": "meningococcal C conjugate vaccine",
+      "designation": [
+        {
+          "language": "uz",
+          "value": "meningokokkka qarshi konjugat vaktsina C"
+        },
+        {
+          "language": "ru",
+          "value": "менингококковая конъюгированная вакцина C"
+        }
+      ]
+    },
+    {
+      "code": "114",
+      "display": "meningococcal polysaccharide (groups A, C, Y and W-135) diphtheria toxoid conjugate vaccine (MCV4P)",
+      "designation": [
+        {
+          "language": "uz",
+          "value": "meningokokk polisakkaridli vaktsina (A, C, Y va W-135 guruhlari) difteriya toksoid konjugat vaktsinasi (MCV4P)"
+        },
+        {
+          "language": "ru",
+          "value": "вакцина менингококковая полисахаридная (группы A, C, Y и W-135) дифтерийно-токсоидная конъюгированная (MCV4P)"
+        }
+      ]
+    },
+    {
+      "code": "108",
+      "display": "meningococcal ACWY vaccine, unspecified formulation",
+      "designation": [
+        {
+          "language": "uz",
+          "value": "meningokokk ACWY vaktsinasi, aniqlanmagan formulasi"
+        },
+        {
+          "language": "ru",
+          "value": "менингококковая вакцина ACWY, неуточненная формулировка"
+        }
+      ]
+    },
+    {
+      "code": "07",
+      "display": "mumps virus vaccine",
+      "designation": [
+        {
+          "language": "uz",
+          "value": "parotitga qarshi emlash"
+        },
+        {
+          "language": "ru",
+          "value": "вакцина против паротита"
+        }
+      ]
+    },
+    {
+      "code": "69",
+      "display": "parainfluenza-3 virus vaccine",
+      "designation": [
+        {
+          "language": "uz",
+          "value": "parainfluenza virusi-3 vaktsinasi"
+        },
+        {
+          "language": "ru",
+          "value": "вакцина против вируса парагриппа-3"
+        }
+      ]
+    },
+    {
+      "code": "11",
+      "display": "pertussis vaccine",
+      "designation": [
+        {
+          "language": "uz",
+          "value": "ko'k yo'talga qarshi emlash"
+        },
+        {
+          "language": "ru",
+          "value": "вакцина против коклюша"
+        }
+      ]
+    },
+    {
+      "code": "23",
+      "display": "plague vaccine",
+      "designation": [
+        {
+          "language": "uz",
+          "value": "vaboga qarshi emlash"
+        },
+        {
+          "language": "ru",
+          "value": "вакцина против чумы"
+        }
+      ]
+    },
+    {
+      "code": "33",
+      "display": "pneumococcal polysaccharide vaccine, 23 valent",
+      "designation": [
+        {
+          "language": "uz",
+          "value": "pnevmokokk polisakkaridga qarshi emlash, 23 valentli"
+        },
+        {
+          "language": "ru",
+          "value": "пневмококковая полисахаридная вакцина, 23 валентная"
+        }
+      ]
+    },
+    {
+      "code": "100",
+      "display": "pneumococcal conjugate vaccine, 7 valent",
+      "designation": [
+        {
+          "language": "uz",
+          "value": "pnevmokokk konjugat vaktsinasi, 7 valentli"
+        },
+        {
+          "language": "ru",
+          "value": "пневмококковая конъюгированная вакцина, 7 валент"
+        }
+      ]
+    },
+    {
+      "code": "109",
+      "display": "pneumococcal vaccine, unspecified formulation",
+      "designation": [
+        {
+          "language": "uz",
+          "value": "pnevmokokkka qarshi emlash, aniqlanmagan"
+        },
+        {
+          "language": "ru",
+          "value": "пневмококковая вакцина, неуточненная формулировка"
+        }
+      ]
+    },
+    {
+      "code": "70",
+      "display": "Q fever vaccine",
+      "designation": [
+        {
+          "language": "uz",
+          "value": "Ku isitmasi vaktsinasi"
+        },
+        {
+          "language": "ru",
+          "value": "вакцина против лихорадки Ку"
+        }
+      ]
+    },
+    {
+      "code": "18",
+      "display": "rabies vaccine, for intramuscular injection RETIRED CODE",
+      "designation": [
+        {
+          "language": "uz",
+          "value": "quturganga qarshi emlash, mushak ichiga yuborish uchun OLD CODE"
+        },
+        {
+          "language": "ru",
+          "value": "вакцина против бешенства, для внутримышечной инъекции СТАРЫЙ КОД"
+        }
+      ]
+    },
+    {
+      "code": "40",
+      "display": "rabies vaccine, for intradermal injection",
+      "designation": [
+        {
+          "language": "uz",
+          "value": "quturishga qarshi emlash, intradermal in'ektsiya uchun"
+        },
+        {
+          "language": "ru",
+          "value": "вакцина против бешенства, для внутрикожной инъекции"
+        }
+      ]
+    },
+    {
+      "code": "90",
+      "display": "rabies vaccine, unspecified formulation",
+      "designation": [
+        {
+          "language": "uz",
+          "value": "quturishga qarshi emlash, aniqlanmagan"
+        },
+        {
+          "language": "ru",
+          "value": "вакцина против бешенства, неуточненная формулировка"
+        }
+      ]
+    },
+    {
+      "code": "72",
+      "display": "rheumatic fever vaccine",
+      "designation": [
+        {
+          "language": "uz",
+          "value": "revmatik isitmaga qarshi emlash"
+        },
+        {
+          "language": "ru",
+          "value": "вакцина против ревматической лихорадки"
+        }
+      ]
+    },
+    {
+      "code": "73",
+      "display": "Rift Valley fever vaccine",
+      "designation": [
+        {
+          "language": "uz",
+          "value": "Rift vodiysi isitmasi vaktsinasi"
+        },
+        {
+          "language": "ru",
+          "value": "Вакцина против лихорадки долины Рифт"
+        }
+      ]
+    },
+    {
+      "code": "34",
+      "display": "rabies immune globulin",
+      "designation": [
+        {
+          "language": "uz",
+          "value": "quturgan immunoglobulini"
+        },
+        {
+          "language": "ru",
+          "value": "иммуноглобулин против бешенства"
+        }
+      ]
+    },
+    {
+      "code": "119",
+      "display": "rotavirus, live, monovalent vaccine",
+      "designation": [
+        {
+          "language": "uz",
+          "value": "rotavirus vaktsinasi, jonli, monovalent"
+        },
+        {
+          "language": "ru",
+          "value": "ротавирусная вакцина, живая, моновалентная"
+        }
+      ]
+    },
+    {
+      "code": "122",
+      "display": "rotavirus vaccine, unspecified formulation",
+      "designation": [
+        {
+          "language": "uz",
+          "value": "rotavirusga qarshi emlash, aniqlanmagan"
+        },
+        {
+          "language": "ru",
+          "value": "ротавирусная вакцина, неуточненная формулировка"
+        }
+      ]
+    },
+    {
+      "code": "116",
+      "display": "rotavirus, live, pentavalent vaccine",
+      "designation": [
+        {
+          "language": "uz",
+          "value": "rotavirus, jonli, pentavalent vaktsina"
+        },
+        {
+          "language": "ru",
+          "value": "ротавирус, живой, пятивалентная вакцина"
+        }
+      ]
+    },
+    {
+      "code": "74",
+      "display": "rotavirus, live, tetravalent vaccine",
+      "designation": [
+        {
+          "language": "uz",
+          "value": "rotavirus, jonli, to'rt vaktsina"
+        },
+        {
+          "language": "ru",
+          "value": "ротавирус, живой, четырехвалентная вакцина"
+        }
+      ]
+    },
+    {
+      "code": "71",
+      "display": "respiratory syncytial virus immune globulin, intravenous",
+      "designation": [
+        {
+          "language": "uz",
+          "value": "respirator sinsitial virus immunoglobulini, tomir ichiga yuborish"
+        },
+        {
+          "language": "ru",
+          "value": "иммуноглобулин против респираторно-синцитиального вируса, внутривенный"
+        }
+      ]
+    },
+    {
+      "code": "93",
+      "display": "respiratory syncytial virus monoclonal antibody (palivizumab), intramuscular",
+      "designation": [
+        {
+          "language": "uz",
+          "value": "respirator sinsitial virus monoklonal antikor (palivizumab), mushak ichiga"
+        },
+        {
+          "language": "ru",
+          "value": "моноклональное антитело к респираторно-синцитиальному вирусу (паливизумаб), внутримышечно"
+        }
+      ]
+    },
+    {
+      "code": "06",
+      "display": "rubella virus vaccine",
+      "designation": [
+        {
+          "language": "uz",
+          "value": "qizilcha virusiga qarshi emlash"
+        },
+        {
+          "language": "ru",
+          "value": "вакцина против вируса краснухи"
+        }
+      ]
+    },
+    {
+      "code": "38",
+      "display": "rubella and mumps virus vaccine",
+      "designation": [
+        {
+          "language": "uz",
+          "value": "qizilcha va parotit virusiga qarshi emlash"
+        },
+        {
+          "language": "ru",
+          "value": "вакцина против вируса краснухи и паротита"
+        }
+      ]
+    },
+    {
+      "code": "76",
+      "display": "Staphylococcus bacteriophage lysate",
+      "designation": [
+        {
+          "language": "uz",
+          "value": "stafilokokk bakteriofag lizati"
+        },
+        {
+          "language": "ru",
+          "value": "лизат бактериофага стафилококка"
+        }
+      ]
+    },
+    {
+      "code": "113",
+      "display": "tetanus and diphtheria toxoids, adsorbed, preservative free, for adult use (5 Lf of tetanus toxoid and 2 Lf of diphtheria toxoid)",
+      "designation": [
+        {
+          "language": "uz",
+          "value": "qoqshol va difteriya toksoidlari, adsorbsiyalangan, konservantlarsiz, kattalar uchun (5 l tetanus va 2 l difteriya toksoidi)"
+        },
+        {
+          "language": "ru",
+          "value": "столбнячный и дифтерийный токсоиды, адсорбированные, без консервантов, для взрослого применения (5 л столбнячного токсоида и 2 л дифтерийного токсоида)"
+        }
+      ]
+    },
+    {
+      "code": "09",
+      "display": "tetanus and diphtheria toxoids, adsorbed, preservative free, for adult use (2 Lf of tetanus toxoid and 2 Lf of diphtheria toxoid)",
+      "designation": [
+        {
+          "language": "uz",
+          "value": "qoqshol va difteriya toksoidlari, adsorbsiyalangan, konservantlarsiz, kattalar uchun (2 Lf tetanus va 2 Lf difteriya toksoidi)"
+        },
+        {
+          "language": "ru",
+          "value": "столбнячный и дифтерийный токсоиды, адсорбированные, без консервантов, для взрослого применения (2 Lf столбнячного токсоида и 2 Lf дифтерийного токсоида)"
+        }
+      ]
+    },
+    {
+      "code": "115",
+      "display": "tetanus toxoid, reduced diphtheria toxoid, and acellular pertussis vaccine, adsorbed",
+      "designation": [
+        {
+          "language": "uz",
+          "value": "tetanoz, difteriya toksini va hujayrali ko'kyo'talga qarshi emlash, adsorbsiyalangan"
+        },
+        {
+          "language": "ru",
+          "value": "вакцина против столбняка, дифтерийного токсина и ацеллюлярного коклюша, адсорбированная"
+        }
+      ]
+    },
+    {
+      "code": "35",
+      "display": "tetanus toxoid, adsorbed",
+      "designation": [
+        {
+          "language": "uz",
+          "value": "tetanus toksoidi, adsorbsiyalangan"
+        },
+        {
+          "language": "ru",
+          "value": "столбнячный анатоксоид, адсорбированный"
+        }
+      ]
+    },
+    {
+      "code": "112",
+      "display": "tetanus toxoid, unspecified formulation",
+      "designation": [
+        {
+          "language": "uz",
+          "value": "tetanoz toksoidi, aniqlanmagan"
+        },
+        {
+          "language": "ru",
+          "value": "столбнячный токсоид, неуточненная формулировка"
+        }
+      ]
+    },
+    {
+      "code": "77",
+      "display": "tick-borne encephalitis vaccine",
+      "designation": [
+        {
+          "language": "uz",
+          "value": "Shomil ensefalitiga qarshi emlash (AQShdan tashqari)"
+        },
+        {
+          "language": "ru",
+          "value": "Вакцина против клещевого энцефалита (не США)"
+        }
+      ]
+    },
+    {
+      "code": "13",
+      "display": "tetanus immune globulin",
+      "designation": [
+        {
+          "language": "uz",
+          "value": "tetanoz immunoglobulini"
+        },
+        {
+          "language": "ru",
+          "value": "столбнячный иммуноглобулин"
+        }
+      ]
+    },
+    {
+      "code": "95",
+      "display": "tuberculin skin test; old tuberculin, multipuncture device",
+      "designation": [
+        {
+          "language": "uz",
+          "value": "tuberkulin teri testi; eski tuberkulin, ko'p teshikli qurilma"
+        },
+        {
+          "language": "ru",
+          "value": "туберкулиновая кожная проба; старый туберкулин, многопункционное устройство"
+        }
+      ]
+    },
+    {
+      "code": "96",
+      "display": "tuberculin skin test; purified protein derivative solution, intradermal",
+      "designation": [
+        {
+          "language": "uz",
+          "value": "tuberkulin teri testi; tozalangan protein lotin eritmasi, intradermal"
+        },
+        {
+          "language": "ru",
+          "value": "туберкулиновая кожная проба; очищенный раствор производного белка, внутрикожно"
+        }
+      ]
+    },
+    {
+      "code": "97",
+      "display": "tuberculin skin test; purified protein derivative, multipuncture device",
+      "designation": [
+        {
+          "language": "uz",
+          "value": "tuberkulin teri testi; tozalangan oqsil hosilasi, ko'p teshikli qurilma"
+        },
+        {
+          "language": "ru",
+          "value": "туберкулиновая кожная проба; очищенное производное белка, многопункционный прибор"
+        }
+      ]
+    },
+    {
+      "code": "98",
+      "display": "tuberculin skin test; unspecified formulation",
+      "designation": [
+        {
+          "language": "uz",
+          "value": "tuberkulin teri testi; aniqlanmagan formula"
+        },
+        {
+          "language": "ru",
+          "value": "туберкулиновая кожная проба; неуточненная формула"
+        }
+      ]
+    },
+    {
+      "code": "78",
+      "display": "tularemia vaccine",
+      "designation": [
+        {
+          "language": "uz",
+          "value": "tulyaremiyaga qarshi emlash"
+        },
+        {
+          "language": "ru",
+          "value": "вакцина против туляремии"
+        }
+      ]
+    },
+    {
+      "code": "91",
+      "display": "typhoid vaccine, unspecified formulation",
+      "designation": [
+        {
+          "language": "uz",
+          "value": "tifga qarshi emlash, aniqlanmagan"
+        },
+        {
+          "language": "ru",
+          "value": "вакцина против брюшного тифа, неуточненная формулировка"
+        }
+      ]
+    },
+    {
+      "code": "25",
+      "display": "typhoid vaccine, live, oral",
+      "designation": [
+        {
+          "language": "uz",
+          "value": "tifga qarshi emlash, jonli, og'iz"
+        },
+        {
+          "language": "ru",
+          "value": "вакцина против брюшного тифа, живая, пероральная"
+        }
+      ]
+    },
+    {
+      "code": "41",
+      "display": "typhoid vaccine, parenteral, other than acetone-killed, dried",
+      "designation": [
+        {
+          "language": "uz",
+          "value": "tifoid vaktsina, parenteral, aseton bilan o'ldirilgandan tashqari, quritilgan"
+        },
+        {
+          "language": "ru",
+          "value": "вакцина против брюшного тифа, парентеральная, кроме убитой ацетоном, высушенная"
+        }
+      ]
+    },
+    {
+      "code": "53",
+      "display": "typhoid vaccine, parenteral, acetone-killed, dried (U.S. military)",
+      "designation": [
+        {
+          "language": "uz",
+          "value": "Tifoga qarshi emlash, parenteral, aseton o'ldirilgan, quritilgan (AQSh harbiylari)"
+        },
+        {
+          "language": "ru",
+          "value": "вакцина против брюшного тифа, парентеральная, убитая ацетоном, высушенная (военные США)"
+        }
+      ]
+    },
+    {
+      "code": "101",
+      "display": "typhoid Vi capsular polysaccharide vaccine",
+      "designation": [
+        {
+          "language": "uz",
+          "value": "Qorin tifiga qarshi emlash, kapsulali polisaxarid Vi"
+        },
+        {
+          "language": "ru",
+          "value": "капсульная полисахаридная вакцина против брюшного тифа Vi"
+        }
+      ]
+    },
+    {
+      "code": "75",
+      "display": "vaccinia (smallpox) vaccine",
+      "designation": [
+        {
+          "language": "uz",
+          "value": "Chechakka qarshi emlash (chechakka qarshi vaktsina)"
+        },
+        {
+          "language": "ru",
+          "value": "вакцина против оспы (вакцина против оспы)"
+        }
+      ]
+    },
+    {
+      "code": "105",
+      "display": "vaccinia (smallpox) vaccine, diluted",
+      "designation": [
+        {
+          "language": "uz",
+          "value": "Chechakka qarshi emlash, suyultirilgan"
+        },
+        {
+          "language": "ru",
+          "value": "вакцина против оспы, разведенная"
+        }
+      ]
+    },
+    {
+      "code": "79",
+      "display": "vaccinia immune globulin",
+      "designation": [
+        {
+          "language": "uz",
+          "value": "immunoglobulin vaktsinasi"
+        },
+        {
+          "language": "ru",
+          "value": "иммуноглобулин вакцины"
+        }
+      ]
+    },
+    {
+      "code": "21",
+      "display": "varicella virus vaccine",
+      "designation": [
+        {
+          "language": "uz",
+          "value": "varikella-zoster vaktsinasi"
+        },
+        {
+          "language": "ru",
+          "value": "вакцина против вируса ветряной оспы"
+        }
+      ]
+    },
+    {
+      "code": "81",
+      "display": "Venezuelan equine encephalitis, inactivated",
+      "designation": [
+        {
+          "language": "uz",
+          "value": "Venesuela ot ensefaliti, faolsizlangan"
+        },
+        {
+          "language": "ru",
+          "value": "Венесуэльский энцефалит лошадей, инактивированная"
+        }
+      ]
+    },
+    {
+      "code": "80",
+      "display": "Venezuelan equine encephalitis, live, attenuated",
+      "designation": [
+        {
+          "language": "uz",
+          "value": "Venesuela ot ensefaliti, jonli, zaiflashgan"
+        },
+        {
+          "language": "ru",
+          "value": "Венесуэльский конский энцефалит, живой, аттенуированный"
+        }
+      ]
+    },
+    {
+      "code": "92",
+      "display": "Venezuelan equine encephalitis vaccine, unspecified formulation",
+      "designation": [
+        {
+          "language": "uz",
+          "value": "Venesuela ot ensefalitiga qarshi emlash, aniqlanmagan formulasi"
+        },
+        {
+          "language": "ru",
+          "value": "Вакцина против венесуэльского конского энцефалита, неуточненная формула"
+        }
+      ]
+    },
+    {
+      "code": "36",
+      "display": "varicella zoster immune globulin",
+      "designation": [
+        {
+          "language": "uz",
+          "value": "herpes zosterga qarshi immunoglobulin"
+        },
+        {
+          "language": "ru",
+          "value": "иммуноглобулин против опоясывающего лишая"
+        }
+      ]
+    },
+    {
+      "code": "117",
+      "display": "varicella zoster immune globulin (Investigational New Drug)",
+      "designation": [
+        {
+          "language": "uz",
+          "value": "zoster immun globulin (yangi tadqiqot preparati)"
+        },
+        {
+          "language": "ru",
+          "value": "иммуноглобулин против опоясывающего лишая (новый исследуемый препарат)"
+        }
+      ]
+    },
+    {
+      "code": "37",
+      "display": "yellow fever vaccine",
+      "designation": [
+        {
+          "language": "uz",
+          "value": "sariq isitmaga qarshi emlash, jonli"
+        },
+        {
+          "language": "ru",
+          "value": "вакцина против желтой лихорадки живая"
+        }
+      ]
+    },
+    {
+      "code": "121",
+      "display": "zoster vaccine, live",
+      "designation": [
+        {
+          "language": "uz",
+          "value": "zoster vaktsinasi, jonli"
+        },
+        {
+          "language": "ru",
+          "value": "вакцина против опоясывающего лишая, живая"
+        }
+      ]
+    },
+    {
+      "code": "998",
+      "display": "no vaccine administered",
+      "designation": [
+        {
+          "language": "uz",
+          "value": "vaktsina berilmagan"
+        },
+        {
+          "language": "ru",
+          "value": "вакцина не вводилась"
+        }
+      ]
+    },
+    {
+      "code": "999",
+      "display": "unknown vaccine or immune globulin",
+      "designation": [
+        {
+          "language": "uz",
+          "value": "noma'lum vaktsina yoki immun globulin"
+        },
+        {
+          "language": "ru",
+          "value": "неизвестная вакцина или иммуноглобулин"
+        }
+      ]
+    },
+    {
+      "code": "99",
+      "display": "RESERVED - do not use",
+      "designation": [
+        {
+          "language": "uz",
+          "value": "zaxiralangan - foydalanmang"
+        },
+        {
+          "language": "ru",
+          "value": "зарезервировано - не использовать"
+        }
+      ]
+    },
+    {
+      "code": "133",
+      "display": "pneumococcal conjugate vaccine, 13 valent",
+      "designation": [
+        {
+          "language": "uz",
+          "value": "pnevmokokk konjugat vaktsinasi, 13 valentli"
+        },
+        {
+          "language": "ru",
+          "value": "пневмококковая конъюгированная вакцина, 13 валентная"
+        }
+      ]
+    },
+    {
+      "code": "134",
+      "display": "Japanese Encephalitis vaccine for intramuscular administration",
+      "designation": [
+        {
+          "language": "uz",
+          "value": "Mushak ichiga yuborish uchun yapon ensefalitiga qarshi emlash"
+        },
+        {
+          "language": "ru",
+          "value": "Вакцина против японского энцефалита для внутримышечного введения"
+        }
+      ]
+    },
+    {
+      "code": "137",
+      "display": "HPV, unspecified formulation",
+      "designation": [
+        {
+          "language": "uz",
+          "value": "HPV, aniqlanmagan formulasi"
+        },
+        {
+          "language": "ru",
+          "value": "ВПЧ, неуточненная формулировка"
+        }
+      ]
+    },
+    {
+      "code": "136",
+      "display": "meningococcal oligosaccharide (groups A, C, Y and W-135) diphtheria toxoid conjugate vaccine (MCV4O)",
+      "designation": [
+        {
+          "language": "uz",
+          "value": "meningokokk oligosakkarid (A, C, Y va W-135 guruhlari) difteriya toksoid konjugat vaktsinasi (MCV4O)"
+        },
+        {
+          "language": "ru",
+          "value": "менингококковая олигосахаридная (группы A, C, Y и W-135) дифтерийно-токсоидная конъюгированная вакцина (MCV4O)"
+        }
+      ]
+    },
+    {
+      "code": "135",
+      "display": "influenza, high dose seasonal, preservative-free",
+      "designation": [
+        {
+          "language": "uz",
+          "value": "Gripp, yuqori dozali, split virus, trivalent, in'ektsion, konservantsiz"
+        },
+        {
+          "language": "ru",
+          "value": "Гриппозная, высокодозная, расщепленный вирус, трехвалентная, инъекционная, без консервантов"
+        }
+      ]
+    },
+    {
+      "code": "131",
+      "display": "Historical record of a typhus vaccination",
+      "designation": [
+        {
+          "language": "uz",
+          "value": "Tifoga qarshi emlashning tarixiy rekordi"
+        },
+        {
+          "language": "ru",
+          "value": "Историческая запись о вакцинации против сыпного тифа"
+        }
+      ]
+    },
+    {
+      "code": "132",
+      "display": "Historical diphtheria and tetanus toxoids and acellular pertussis, poliovirus, Haemophilus b conjugate and hepatitis B (recombinant) vaccine.",
+      "designation": [
+        {
+          "language": "uz",
+          "value": "Difteriya va qoqshol, hujayrasiz ko'kyo'tal, poliovirus, Haemophilus influenzae b konjugati va gepatit B (rekombinant) ga qarshi emlashning tarixiy rekordi."
+        },
+        {
+          "language": "ru",
+          "value": "Историческая запись о вакцинации против дифтерии и столбняка, ацеллюлярного коклюша, полиовируса, конъюгата гемофильной палочки b и гепатита B (рекомбинантная)."
+        }
+      ]
+    },
+    {
+      "code": "128",
+      "display": "Novel influenza-H1N1-09, all formulations",
+      "designation": [
+        {
+          "language": "uz",
+          "value": "Eng yangi gripp-H1N1-09, barcha formulalar"
+        },
+        {
+          "language": "ru",
+          "value": "Новейший грипп-H1N1-09, все формулы"
+        }
+      ]
+    },
+    {
+      "code": "125",
+      "display": "Novel Influenza-H1N1-09, live virus for nasal administration",
+      "designation": [
+        {
+          "language": "uz",
+          "value": "Eng yangi gripp-H1N1-09, burundan foydalanish uchun jonli virus"
+        },
+        {
+          "language": "ru",
+          "value": "Новейший грипп-H1N1-09, живой вирус для назального применения"
+        }
+      ]
+    },
+    {
+      "code": "126",
+      "display": "Novel influenza-H1N1-09, preservative-free, injectable",
+      "designation": [
+        {
+          "language": "uz",
+          "value": "Eng yangi gripp-H1N1-09, konservantlarsiz, in'ektsiya"
+        },
+        {
+          "language": "ru",
+          "value": "Новейший грипп-H1N1-09, без консервантов, инъекционная"
+        }
+      ]
+    },
+    {
+      "code": "127",
+      "display": "Novel influenza-H1N1-09, injectable",
+      "designation": [
+        {
+          "language": "uz",
+          "value": "Yangi gripp-H1N1-09, in'ektsiya uchun"
+        },
+        {
+          "language": "ru",
+          "value": "Новый грипп-H1N1-09, инъекционный"
+        }
+      ]
+    },
+    {
+      "code": "138",
+      "display": "tetanus and diphtheria toxoids, not adsorbed, for adult use",
+      "designation": [
+        {
+          "language": "uz",
+          "value": "tetanoz va difteriya toksoidlari, adsorbsiyalanmagan, kattalar uchun foydalanish uchun"
+        },
+        {
+          "language": "ru",
+          "value": "столбнячный и дифтерийный токсоиды, не адсорбированные, для взрослого применения"
+        }
+      ]
+    },
+    {
+      "code": "139",
+      "display": "Td(adult) unspecified formulation",
+      "designation": [
+        {
+          "language": "uz",
+          "value": "Td (kattalar uchun) aniqlanmagan formula"
+        },
+        {
+          "language": "ru",
+          "value": "Td(взрослый) неуточненная формула"
+        }
+      ]
+    },
+    {
+      "code": "140",
+      "display": "Influenza, seasonal, injectable, preservative free",
+      "designation": [
+        {
+          "language": "uz",
+          "value": "Gripp, split virus, trivalent, in'ektsiya, konservantsiz"
+        },
+        {
+          "language": "ru",
+          "value": "Гриппозная, расщепленный вирус, трехвалентная, инъекционная, без консервантов"
+        }
+      ]
+    },
+    {
+      "code": "129",
+      "display": "Japanese Encephalitis vaccine, unspecified formulation",
+      "designation": [
+        {
+          "language": "uz",
+          "value": "Yapon ensefalitiga qarshi emlash, aniqlanmagan formulasi"
+        },
+        {
+          "language": "ru",
+          "value": "Вакцина против японского энцефалита, неуточненная формулировка"
+        }
+      ]
+    },
+    {
+      "code": "141",
+      "display": "Influenza, seasonal, injectable",
+      "designation": [
+        {
+          "language": "uz",
+          "value": "Gripp, split virus, trivalent, in'ektsiya, konservantni o'z ichiga oladi"
+        },
+        {
+          "language": "ru",
+          "value": "Гриппозная, расщепленный вирус, трехвалентная, инъекционная, содержит консервант"
+        }
+      ]
+    },
+    {
+      "code": "142",
+      "display": "tetanus toxoid, not adsorbed",
+      "designation": [
+        {
+          "language": "uz",
+          "value": "tetanus toksoidi, adsorbsiyalanmagan"
+        },
+        {
+          "language": "ru",
+          "value": "столбнячный токсоид, не адсорбированный"
+        }
+      ]
+    },
+    {
+      "code": "143",
+      "display": "Adenovirus, type 4 and type 7, live, oral",
+      "designation": [
+        {
+          "language": "uz",
+          "value": "Adenovirus, 4-toifa va 7-toifa, jonli, og'zaki"
+        },
+        {
+          "language": "ru",
+          "value": "Аденовирус, тип 4 и тип 7, живой, пероральный"
+        }
+      ]
+    },
+    {
+      "code": "144",
+      "display": "seasonal influenza, intradermal, preservative free",
+      "designation": [
+        {
+          "language": "uz",
+          "value": "mavsumiy gripp, intradermal, konservantlarsiz"
+        },
+        {
+          "language": "ru",
+          "value": "сезонный грипп, внутрикожно, без консервантов"
+        }
+      ]
+    },
+    {
+      "code": "145",
+      "display": "respiratory syncytial virus monoclonal antibody (motavizumab), intramuscular",
+      "designation": [
+        {
+          "language": "uz",
+          "value": "respirator sinsitial virusga monoklonal antikor (motavizumab), mushak ichiga"
+        },
+        {
+          "language": "ru",
+          "value": "моноклональное антитело к респираторно-синцитиальному вирусу (мотавизумаб), внутримышечно"
+        }
+      ]
+    },
+    {
+      "code": "146",
+      "display": "Diphtheria and Tetanus Toxoids and Acellular Pertussis Adsorbed, Inactivated Poliovirus, Haemophilus b Conjugate (Meningococcal Protein Conjugate), and Hepatitis B (Recombinant) Vaccine.",
+      "designation": [
+        {
+          "language": "uz",
+          "value": "Difteriya va qoqshol toksoidlari va adsorbsiyalangan hujayrali ko'k yo'tal, inaktivatsiyalangan poliovirus, Haemophilus influenzae b konjugati (meningokokk oqsil konjugati) va gepatit B vaktsinasi (rekombinant)."
+        },
+        {
+          "language": "ru",
+          "value": "Токсоиды дифтерии и столбняка и ацеллюлярный коклюш адсорбированные, инактивированный полиовирус, конъюгат гемофильной палочки b (конъюгат менингококкового белка) и вакцина против гепатита B (рекомбинантная)."
+        }
+      ]
+    },
+    {
+      "code": "147",
+      "display": "Meningococcal, MCV4, unspecified conjugate formulation(groups A, C, Y and W-135)",
+      "designation": [
+        {
+          "language": "uz",
+          "value": "Meningokokk, MCV4, aniqlanmagan konjugat formulasi (A, C, Y va W-135 guruhlari)"
+        },
+        {
+          "language": "ru",
+          "value": "Менингококковая, MCV4, неуточненная конъюгированная формула (группы A, C, Y и W-135)"
+        }
+      ]
+    },
+    {
+      "code": "148",
+      "display": "Meningococcal Groups C and Y and Haemophilus b Tetanus Toxoid Conjugate Vaccine",
+      "designation": [
+        {
+          "language": "uz",
+          "value": "Meningokokk konjugat vaktsinasi C va Y guruhlari va tetanoz konjugati vaktsina b"
+        },
+        {
+          "language": "ru",
+          "value": "Конъюгированная менингококковая вакцина групп C и Y и конъюгированная вакцина против столбняка b"
+        }
+      ]
+    },
+    {
+      "code": "149",
+      "display": "influenza, live, intranasal, quadrivalent",
+      "designation": [
+        {
+          "language": "uz",
+          "value": "Gripp, jonli, to'rt valentli, intranazal"
+        },
+        {
+          "language": "ru",
+          "value": "Гриппозная, живая, четырехвалентная, интраназальная"
+        }
+      ]
+    },
+    {
+      "code": "150",
+      "display": "Influenza, injectable, quadrivalent, preservative free",
+      "designation": [
+        {
+          "language": "uz",
+          "value": "Gripp, split virus, tetravalent, in'ektsion, konservantsiz"
+        },
+        {
+          "language": "ru",
+          "value": "Грипп, расщепленный вирус, четырехвалентный, инъекционный, без консервантов"
+        }
+      ]
+    },
+    {
+      "code": "152",
+      "display": "Pneumococcal Conjugate, unspecified formulation",
+      "designation": [
+        {
+          "language": "uz",
+          "value": "Pnevmokokk konjugati, aniqlanmagan"
+        },
+        {
+          "language": "ru",
+          "value": "Пневмококковый конъюгат, неуточненная формулировка"
+        }
+      ]
+    },
+    {
+      "code": "153",
+      "display": "Influenza, injectable, Madin Darby Canine Kidney, preservative free",
+      "designation": [
+        {
+          "language": "uz",
+          "value": "Gripp, Madin Darby Canin buyrak, subunit, trivalent, in'ektsiya, konservantsiz"
+        },
+        {
+          "language": "ru",
+          "value": "Грипп, Мадин Дарби Канин Кидни, субъединичная, трехвалентная, инъекционная, без консервантов"
+        }
+      ]
+    },
+    {
+      "code": "154",
+      "display": "Hepatitis A immune globulin",
+      "designation": [
+        {
+          "language": "uz",
+          "value": "Gepatit A immunoglobulin"
+        },
+        {
+          "language": "ru",
+          "value": "Иммуноглобулин против гепатита А"
+        }
+      ]
+    },
+    {
+      "code": "155",
+      "display": "Seasonal, trivalent, recombinant, injectable influenza vaccine, preservative free",
+      "designation": [
+        {
+          "language": "uz",
+          "value": "Gripp, rekombinant, trivalent, in'ektsion, konservantsiz"
+        },
+        {
+          "language": "ru",
+          "value": "Грипп, рекомбинантный, трехвалентный, инъекционный, без консервантов"
+        }
+      ]
+    },
+    {
+      "code": "156",
+      "display": "Rho(D) Immune globulin- IV or IM",
+      "designation": [
+        {
+          "language": "uz",
+          "value": "Rho (D) Immunoglobulin - tomir ichiga yoki mushak ichiga"
+        },
+        {
+          "language": "ru",
+          "value": "Rho(D) Иммуноглобулин - внутривенно или внутримышечно"
+        }
+      ]
+    },
+    {
+      "code": "157",
+      "display": "Rho(D) Immune globulin - IM",
+      "designation": [
+        {
+          "language": "uz",
+          "value": "Rho(D) immunoglobulin - IM"
+        },
+        {
+          "language": "ru",
+          "value": "Иммуноглобулин Rho(D) - IM"
+        }
+      ]
+    },
+    {
+      "code": "158",
+      "display": "influenza, injectable, quadrivalent, contains preservative",
+      "designation": [
+        {
+          "language": "uz",
+          "value": "Gripp, split virus, tetravalent, in'ektsiya, konservantni o'z ichiga oladi"
+        },
+        {
+          "language": "ru",
+          "value": "Грипп, расщепленный вирус, четырехвалентный, инъекционный, содержит консервант"
+        }
+      ]
+    },
+    {
+      "code": "159",
+      "display": "Rho(D) Unspecified formulation",
+      "designation": [
+        {
+          "language": "uz",
+          "value": "Rho(D) Aniqlanmagan formula"
+        },
+        {
+          "language": "ru",
+          "value": "Rho(D) Неуточненная формулировка"
+        }
+      ]
+    },
+    {
+      "code": "160",
+      "display": "Influenza A monovalent (H5N1), adjuvanted, National stockpile 2013",
+      "designation": [
+        {
+          "language": "uz",
+          "value": "A grippi monovalent (H5N1), adjuvant, milliy zahira 2013 yil"
+        },
+        {
+          "language": "ru",
+          "value": "Грипп А моновалентный (H5N1), адъювантный, национальный запас 2013 г."
+        }
+      ]
+    },
+    {
+      "code": "801",
+      "display": "AS03 Adjuvant",
+      "designation": [
+        {
+          "language": "uz",
+          "value": "AS03 yordamchi"
+        },
+        {
+          "language": "ru",
+          "value": "AS03 Адъювант"
+        }
+      ]
+    },
+    {
+      "code": "161",
+      "display": "Influenza, injectable,quadrivalent, preservative free, pediatric",
+      "designation": [
+        {
+          "language": "uz",
+          "value": "Gripp, in'ektsiya, to'rt valentli, konservantlarsiz, pediatrik"
+        },
+        {
+          "language": "ru",
+          "value": "Гриппозная, инъекционная, четырехвалентная, без консервантов, педиатрическая"
+        }
+      ]
+    },
+    {
+      "code": "162",
+      "display": "meningococcal B vaccine, fully recombinant",
+      "designation": [
+        {
+          "language": "uz",
+          "value": "meningokokk B vaktsinasi, to'liq rekombinant"
+        },
+        {
+          "language": "ru",
+          "value": "менингококковая вакцина В, полностью рекомбинантная"
+        }
+      ]
+    },
+    {
+      "code": "163",
+      "display": "meningococcal B vaccine, recombinant, OMV, adjuvanted",
+      "designation": [
+        {
+          "language": "uz",
+          "value": "meningokokk B vaktsinasi, rekombinant, OMV, yordamchi"
+        },
+        {
+          "language": "ru",
+          "value": "менингококковая В вакцина, рекомбинантная, ОМВ, адъювантная"
+        }
+      ]
+    },
+    {
+      "code": "164",
+      "display": "meningococcal B, unspecified formulation",
+      "designation": [
+        {
+          "language": "uz",
+          "value": "meningokokk B, aniqlanmagan formulasi"
+        },
+        {
+          "language": "ru",
+          "value": "менингококковая В, неуточненная формулировка"
+        }
+      ]
+    },
+    {
+      "code": "165",
+      "display": "Human Papillomavirus 9-valent vaccine",
+      "designation": [
+        {
+          "language": "uz",
+          "value": "Odam papillomavirusiga qarshi emlash, 9 valentli"
+        },
+        {
+          "language": "ru",
+          "value": "Вакцина против папилломавируса человека 9-валентная"
+        }
+      ]
+    },
+    {
+      "code": "166",
+      "display": "influenza, intradermal, quadrivalent, preservative free, injectable",
+      "designation": [
+        {
+          "language": "uz",
+          "value": "gripp, intradermal, tetravalent, konservantsiz, in'ektsiya"
+        },
+        {
+          "language": "ru",
+          "value": "гриппозная, внутрикожная, четырехвалентная, без консервантов, инъекционная"
+        }
+      ]
+    },
+    {
+      "code": "167",
+      "display": "meningococcal vaccine of unknown formulation and unknown serogroups",
+      "designation": [
+        {
+          "language": "uz",
+          "value": "noma'lum tarkibli va noma'lum serogruplarning meningokokk vaktsinasi"
+        },
+        {
+          "language": "ru",
+          "value": "менингококковая вакцина неизвестного состава и неизвестных серогрупп"
+        }
+      ]
+    },
+    {
+      "code": "168",
+      "display": "Seasonal trivalent influenza vaccine, adjuvanted, preservative free",
+      "designation": [
+        {
+          "language": "uz",
+          "value": "Gripp, adjuvant, inaktiv, trivalent, in'ektsiya, konservantlarsiz"
+        },
+        {
+          "language": "ru",
+          "value": "Гриппозная, адъювантная, инактивированная, трехвалентная, инъекционная, без консервантов"
+        }
+      ]
+    },
+    {
+      "code": "169",
+      "display": "Hep A, live attenuated-IM",
+      "designation": [
+        {
+          "language": "uz",
+          "value": "Gepatit A, jonli zaiflashgan-IM"
+        },
+        {
+          "language": "ru",
+          "value": "Гепатит А, живая аттенуированная-IM"
+        }
+      ]
+    },
+    {
+      "code": "170",
+      "display": "non-US diphtheria, tetanus toxoids and acellular pertussis vaccine, Haemophilus influenzae type b conjugate, and poliovirus vaccine, inactivated (DTaP-Hib-IPV)",
+      "designation": [
+        {
+          "language": "uz",
+          "value": "difteriya, qoqshol, hujayrasiz ko'kyo'talga qarshi vaktsina, Haemophilus influenzae turi b konjugati va poliovirus vaktsinasi, inaktivatsiyalangan (DTaP-Hib-IPV), AQShdan tashqari"
+        },
+        {
+          "language": "ru",
+          "value": "вакцина против дифтерии, столбняка и ацеллюлярного коклюша, конъюгат Haemophilus influenzae типа b и полиовирусная вакцина, инактивированная (DTaP-Hib-IPV), не относящиеся к США"
+        }
+      ]
+    },
+    {
+      "code": "171",
+      "display": "Influenza, injectable, Madin Darby Canine Kidney, preservative free, quadrivalent",
+      "designation": [
+        {
+          "language": "uz",
+          "value": "Gripp, Madin Darby Canin buyrak, subunit, to'rt valentli, in'ektsiya, konservantlarsiz"
+        },
+        {
+          "language": "ru",
+          "value": "Гриппозная, Мадин Дарби Канин Кидни, субъединичная, четырехвалентная, инъекционная, без консервантов"
+        }
+      ]
+    },
+    {
+      "code": "172",
+      "display": "cholera, WC-rBS",
+      "designation": [
+        {
+          "language": "uz",
+          "value": "vabo, WC-rBS"
+        },
+        {
+          "language": "ru",
+          "value": "холера, WC-rBS"
+        }
+      ]
+    },
+    {
+      "code": "173",
+      "display": "cholera, BivWC",
+      "designation": [
+        {
+          "language": "uz",
+          "value": "vabo, BivWC"
+        },
+        {
+          "language": "ru",
+          "value": "холера, BivWC"
+        }
+      ]
+    },
+    {
+      "code": "174",
+      "display": "cholera, live attenuated",
+      "designation": [
+        {
+          "language": "uz",
+          "value": "vabo, jonli zaiflashgan"
+        },
+        {
+          "language": "ru",
+          "value": "холера, живая аттенуированная"
+        }
+      ]
+    },
+    {
+      "code": "175",
+      "display": "Human Rabies vaccine from human diploid cell culture",
+      "designation": [
+        {
+          "language": "uz",
+          "value": "Inson diploid hujayra madaniyatidan odam quturgan vaktsinasi"
+        },
+        {
+          "language": "ru",
+          "value": "Вакцина против бешенства человека из культуры диплоидных клеток человека"
+        }
+      ]
+    },
+    {
+      "code": "176",
+      "display": "Human rabies vaccine from Chicken fibroblast culture",
+      "designation": [
+        {
+          "language": "uz",
+          "value": "Tovuq fibroblast madaniyatidan odam quturishga qarshi emlash"
+        },
+        {
+          "language": "ru",
+          "value": "Вакцина против бешенства человека из культуры куриных фибробластов"
+        }
+      ]
+    },
+    {
+      "code": "177",
+      "display": "pneumococcal conjugate vaccine, 10 valent",
+      "designation": [
+        {
+          "language": "uz",
+          "value": "Pnevmokokk konjugat vaktsinasi, 10 valentli"
+        },
+        {
+          "language": "ru",
+          "value": "пневмококковая конъюгированная вакцина, 10 валентная"
+        }
+      ]
+    },
+    {
+      "code": "178",
+      "display": "Non-US bivalent oral polio vaccine (types 1 and 3)",
+      "designation": [
+        {
+          "language": "uz",
+          "value": "AQShdan tashqari poliomielitga qarshi ikki valentli og'iz vaktsinasi (1 va 3 turdagi)"
+        },
+        {
+          "language": "ru",
+          "value": "Неамериканская бивалентная оральная полиомиелитная вакцина (типы 1 и 3)"
+        }
+      ]
+    },
+    {
+      "code": "179",
+      "display": "Non-US monovalent oral polio vaccine, unspecified formulation",
+      "designation": [
+        {
+          "language": "uz",
+          "value": "AQShdan tashqari bir valentli og'iz poliomielitga qarshi emlash, aniqlanmagan"
+        },
+        {
+          "language": "ru",
+          "value": "Неамериканская моновалентная оральная полиомиелитная вакцина, неуточненная формулировка"
+        }
+      ]
+    },
+    {
+      "code": "180",
+      "display": "tetanus immune globulin",
+      "designation": [
+        {
+          "language": "uz",
+          "value": "tetanoz immunoglobulini"
+        },
+        {
+          "language": "ru",
+          "value": "иммуноглобулин против столбняка"
+        }
+      ]
+    },
+    {
+      "code": "181",
+      "display": "anthrax immune globulin",
+      "designation": [
+        {
+          "language": "uz",
+          "value": "kuydirgi immunoglobulini"
+        },
+        {
+          "language": "ru",
+          "value": "иммуноглобулин против сибирской язвы"
+        }
+      ]
+    },
+    {
+      "code": "182",
+      "display": "Oral Polio Vaccine, Unspecified formulation",
+      "designation": [
+        {
+          "language": "uz",
+          "value": "Og'iz orqali poliomielitga qarshi emlash, aniqlanmagan"
+        },
+        {
+          "language": "ru",
+          "value": "Оральная полиомиелитная вакцина, неуточненная формулировка"
+        }
+      ]
+    },
+    {
+      "code": "183",
+      "display": "Yellow fever vaccine alternative formulation",
+      "designation": [
+        {
+          "language": "uz",
+          "value": "Sariq isitmaga qarshi emlash, jonli - vaktsina etishmovchiligi bo'lgan taqdirda muqobil formula"
+        },
+        {
+          "language": "ru",
+          "value": "Вакцина против желтой лихорадки живая - альтернативная формулировка на случай нехватки вакцины"
+        }
+      ]
+    },
+    {
+      "code": "184",
+      "display": "Yellow fever vaccine, unspecified formulation",
+      "designation": [
+        {
+          "language": "uz",
+          "value": "Sariq isitmaga qarshi emlash, aniqlanmagan"
+        },
+        {
+          "language": "ru",
+          "value": "Вакцина против желтой лихорадки, неуточненная формулировка"
+        }
+      ]
+    },
+    {
+      "code": "185",
+      "display": "Seasonal, quadrivalent, recombinant, injectable influenza vaccine, preservative free",
+      "designation": [
+        {
+          "language": "uz",
+          "value": "Gripp, rekombinant, tetravalent, in'ektsiya, konservantsiz"
+        },
+        {
+          "language": "ru",
+          "value": "Гриппозная, рекомбинантная, четырехвалентная, инъекционная, без консервантов"
+        }
+      ]
+    },
+    {
+      "code": "186",
+      "display": "Influenza, injectable, Madin Darby Canine Kidney, quadrivalent with preservative",
+      "designation": [
+        {
+          "language": "uz",
+          "value": "Gripp, Madin Darbi Canin buyrak, subunit, tetravalent, in'ektsiya, konservantni o'z ichiga oladi"
+        },
+        {
+          "language": "ru",
+          "value": "Грипп, Мадин Дарби Канин Кидни, субъединичная, четырехвалентная, инъекционная, содержит консервант"
+        }
+      ]
+    },
+    {
+      "code": "187",
+      "display": "zoster vaccine recombinant",
+      "designation": [
+        {
+          "language": "uz",
+          "value": "Zoster vaktsinasi rekombinanti"
+        },
+        {
+          "language": "ru",
+          "value": "вакцина зостер рекомбинантная"
+        }
+      ]
+    },
+    {
+      "code": "188",
+      "display": "zoster vaccine, unspecified formulation",
+      "designation": [
+        {
+          "language": "uz",
+          "value": "zoster vaktsinasi, aniqlanmagan"
+        },
+        {
+          "language": "ru",
+          "value": "вакцина против опоясывающего лишая, неуточненная формулировка"
+        }
+      ]
+    },
+    {
+      "code": "189",
+      "display": "Hepatitis B vaccine (recombinant), CpG adjuvanted",
+      "designation": [
+        {
+          "language": "uz",
+          "value": "Gepatit B vaktsinasi (rekombinant), CpG adjuvant"
+        },
+        {
+          "language": "ru",
+          "value": "Вакцина против гепатита В (рекомбинантная), с адъювантом CpG"
+        }
+      ]
+    },
+    {
+      "code": "190",
+      "display": "Typhoid conjugate vaccine (non-US)",
+      "designation": [
+        {
+          "language": "uz",
+          "value": "Tifoga qarshi konjugat vaktsina (AQShdan tashqari)"
+        },
+        {
+          "language": "ru",
+          "value": "Тифозная конъюгированная вакцина (не США)"
+        }
+      ]
+    },
+    {
+      "code": "191",
+      "display": "meningococcal A polysaccharide vaccine (non-US)",
+      "designation": [
+        {
+          "language": "uz",
+          "value": "meningokokk polisakkarid vaktsinasi A (AQShdan tashqari)"
+        },
+        {
+          "language": "ru",
+          "value": "менингококковая полисахаридная вакцина А (не США)"
+        }
+      ]
+    },
+    {
+      "code": "192",
+      "display": "meningococcal AC polysaccharide vaccine (non-US)",
+      "designation": [
+        {
+          "language": "uz",
+          "value": "meningokokk polisakkarid vaktsinasi AC (AQShdan tashqari)"
+        },
+        {
+          "language": "ru",
+          "value": "менингококковая полисахаридная вакцина АС (не США)"
+        }
+      ]
+    },
+    {
+      "code": "193",
+      "display": "hepatitis A and hepatitis B vaccine, pediatric/adolescent (non-US)",
+      "designation": [
+        {
+          "language": "uz",
+          "value": "gepatit A va gepatit B vaktsinasi, bolalar/o'smirlar (AQShdan tashqari)"
+        },
+        {
+          "language": "ru",
+          "value": "вакцина против гепатита А и гепатита В, педиатрическая/подростковая (не США)"
+        }
+      ]
+    },
+    {
+      "code": "194",
+      "display": "influenza, Southern Hemisphere, unspecified formulation",
+      "designation": [
+        {
+          "language": "uz",
+          "value": "gripp, janubiy yarim shar, aniqlanmagan"
+        },
+        {
+          "language": "ru",
+          "value": "грипп, Южное полушарие, неуточненная формулировка"
+        }
+      ]
+    },
+    {
+      "code": "195",
+      "display": "Diphtheria, Tetanus, Poliomyelitis adsorbed",
+      "designation": [
+        {
+          "language": "uz",
+          "value": "Difteriya, tetanoz, poliomielit adsorbsiyalangan"
+        },
+        {
+          "language": "ru",
+          "value": "Дифтерия, столбняк, полиомиелит адсорбированная"
+        }
+      ]
+    },
+    {
+      "code": "196",
+      "display": "tetanus and diphtheria toxoids, adsorbed, preservative free, for adult use, Lf unspecified",
+      "designation": [
+        {
+          "language": "uz",
+          "value": "Qoqshol va difteriya toksoidlari, adsorbsiyalangan, saqlanmagan, kattalar uchun foydalanish, Lf aniqlanmagan"
+        },
+        {
+          "language": "ru",
+          "value": "Токсоиды столбняка и дифтерии, адсорбированные, без консервантов, для взрослого применения, Lf неуточненная"
+        }
+      ]
+    },
+    {
+      "code": "197",
+      "display": "influenza, high-dose seasonal, quadrivalent, .7mL dose, preservative free",
+      "designation": [
+        {
+          "language": "uz",
+          "value": "Gripp, yuqori dozali, split virus, tetravalent, in'ektsiya, saqlanmagan"
+        },
+        {
+          "language": "ru",
+          "value": "Грипп, высокая доза, расщепленный вирус, четырехвалентный, инъекционный, без консервантов"
+        }
+      ]
+    },
+    {
+      "code": "200",
+      "display": "influenza, seasonal, Southern Hemisphere, quadrivalent, pediatric 0.25mL dose, preservative free",
+      "designation": [
+        {
+          "language": "uz",
+          "value": "gripp, mavsumiy, janubiy yarim shar, tetravalent, bolalar dozasi 0,25 ml, konservantlarsiz"
+        },
+        {
+          "language": "ru",
+          "value": "грипп, сезонный, Южное полушарие, четырехвалентный, педиатрическая доза 0,25 мл, без консервантов"
+        }
+      ]
+    },
+    {
+      "code": "201",
+      "display": "influenza, seasonal, Southern Hemisphere, quadrivalent, 0.5mL dose, no preservative",
+      "designation": [
+        {
+          "language": "uz",
+          "value": "gripp, mavsumiy, janubiy yarim shar, tetravalent, dozasi 0,5 ml, konservantsiz"
+        },
+        {
+          "language": "ru",
+          "value": "грипп, сезонный, Южное полушарие, четырехвалентный, доза 0,5 мл, без консерванта"
+        }
+      ]
+    },
+    {
+      "code": "202",
+      "display": "influenza, seasonal, Southern Hemisphere, quadrivalent, 0.5mL dose, with preservative",
+      "designation": [
+        {
+          "language": "uz",
+          "value": "gripp, mavsumiy, janubiy yarim shar, tetravalent, dozasi 0,5 ml, konservant bilan"
+        },
+        {
+          "language": "ru",
+          "value": "грипп, сезонный, Южное полушарие, четырехвалентный, доза 0,5 мл, с консервантом"
+        }
+      ]
+    },
+    {
+      "code": "198",
+      "display": "Diphtheria, pertussis, tetanus, hepatitis B, Haemophilus Influenza Type b, (Pentavalent)",
+      "designation": [
+        {
+          "language": "uz",
+          "value": "difteriya, ko'k yo'tal, qoqshol, gepatit B, gemofil influenzae turi b, (besh valentli)"
+        },
+        {
+          "language": "ru",
+          "value": "дифтерия, коклюш, столбняк, гепатит В, гемофильный грипп типа b, (пентавалент)"
+        }
+      ]
+    },
+    {
+      "code": "203",
+      "display": "meningococcal polysaccharide (groups A, C, Y, W-135) tetanus toxoid conjugate vaccine .5mL dose, preservative free",
+      "designation": [
+        {
+          "language": "uz",
+          "value": "Meningokokk polisakkaridlari (A, C, Y, W-135 guruhlari) tetanoz konjugati vaktsinasi 0,5 ml dozada, konservantsiz"
+        },
+        {
+          "language": "ru",
+          "value": "полисахарид менингококка (группы A, C, Y, W-135) конъюгированная вакцина против столбняка 0,5 мл доза, без консерванта"
+        }
+      ]
+    },
+    {
+      "code": "205",
+      "display": "influenza, seasonal vaccine, quadrivalent, adjuvanted, .5mL dose, preservative free",
+      "designation": [
+        {
+          "language": "uz",
+          "value": "Gripp, adjuvantlangan, inaktivatsiyalangan, tetravalent, in'ektsion, konservantsiz"
+        },
+        {
+          "language": "ru",
+          "value": "Гриппозная, адъювантная, инактивированная, четырехвалентная, инъекционная, без консервантов"
+        }
+      ]
+    },
+    {
+      "code": "206",
+      "display": "smallpox monkeypox vaccine, live attenuated, preservative free (National Stockpile)",
+      "designation": [
+        {
+          "language": "uz",
+          "value": "Maymunchechakka qarshi emlash, jonli zaiflashtirilgan, konservantlarsiz, teri ostiga yoki teri ichiga yuborish."
+        },
+        {
+          "language": "ru",
+          "value": "Вакцина против оспы обезьян, живая аттенуированная, без консервантов, подкожная или внутрикожная инъекция"
+        }
+      ]
+    },
+    {
+      "code": "207",
+      "display": "SARS-COV-2 (COVID-19) vaccine, mRNA, spike protein, LNP, preservative free, 100 mcg/0.5mL dose",
+      "designation": [
+        {
+          "language": "uz",
+          "value": "SARS-COV-2 (COVID-19) vaktsinasi, mRNK, boshoq oqsili, LNP, konservantlarsiz, 100 mkg/0,5 ml yoki 50 mkg/0,25 ml doza"
+        },
+        {
+          "language": "ru",
+          "value": "Вакцина SARS-COV-2 (COVID-19), мРНК, спайк-протеин, LNP, без консервантов, доза 100 мкг/0,5 мл или 50 мкг/0,25 мл"
+        }
+      ]
+    },
+    {
+      "code": "208",
+      "display": "SARS-COV-2 (COVID-19) vaccine, mRNA, spike protein, LNP, preservative free, 30 mcg/0.3mL dose",
+      "designation": [
+        {
+          "language": "uz",
+          "value": "SARS-COV-2 (COVID-19) vaktsinasi, mRNK, boshoq oqsili, LNP, konservantlarsiz, 30 mkg/0,3 ml doza"
+        },
+        {
+          "language": "ru",
+          "value": "Вакцина SARS-COV-2 (COVID-19), мРНК, шиповидный белок, LNP, без консервантов, доза 30 мкг/0,3 мл"
+        }
+      ]
+    },
+    {
+      "code": "213",
+      "display": "SARS-COV-2 (COVID-19) vaccine, UNSPECIFIED",
+      "designation": [
+        {
+          "language": "uz",
+          "value": "SARS-COV-2 (COVID-19) vaksinasi, RUKSAT BERILMAGAN"
+        },
+        {
+          "language": "ru",
+          "value": "Вакцина SARS-COV-2 (COVID-19), НЕРАЗРЕШЕННАЯ"
+        }
+      ]
+    },
+    {
+      "code": "210",
+      "display": "SARS-COV-2 (COVID-19) vaccine, vector non-replicating, recombinant spike protein-ChAdOx1, preservative free, 0.5 mL",
+      "designation": [
+        {
+          "language": "uz",
+          "value": "SARS-COV-2 (COVID-19) vaktsinasi, takrorlanmaydigan vektor, rekombinant boshoqli oqsil-ChAdOx1, konservantsiz, 0,5 ml"
+        },
+        {
+          "language": "ru",
+          "value": "Вакцина SARS-COV-2 (COVID-19), вектор нереплицирующийся, рекомбинантный спайковый белок-ChAdOx1, без консервантов, 0,5 мл"
+        }
+      ]
+    },
+    {
+      "code": "212",
+      "display": "SARS-COV-2 (COVID-19) vaccine, vector non-replicating, recombinant spike protein-ChAdOx1, preservative free, 0.5 mL",
+      "designation": [
+        {
+          "language": "uz",
+          "value": "SARS-COV-2 (COVID-19) vaktsinasi, takrorlanmaydigan vektor, rekombinant boshoq oqsili-Ad26, konservantsiz, 0,5 ml"
+        },
+        {
+          "language": "ru",
+          "value": "Вакцина SARS-COV-2 (COVID-19), вектор нереплицирующийся, рекомбинантный спайковый белок-Ad26, без консервантов, 0,5 мл"
+        }
+      ]
+    },
+    {
+      "code": "204",
+      "display": "Ebola Zaire vaccine, live, recombinant, 1mL dose",
+      "designation": [
+        {
+          "language": "uz",
+          "value": "Ebola vaktsinasi Zaire, jonli, rekombinant, 1 ml doza"
+        },
+        {
+          "language": "ru",
+          "value": "Вакцина Эбола Заир, живая, рекомбинантная, доза 1 мл"
+        }
+      ]
+    },
+    {
+      "code": "214",
+      "display": "Ebola, unspecified",
+      "designation": [
+        {
+          "language": "uz",
+          "value": "Ebola, aniqlanmagan"
+        },
+        {
+          "language": "ru",
+          "value": "Эбола, неуточненная"
+        }
+      ]
+    },
+    {
+      "code": "211",
+      "display": "SARS-COV-2 (COVID-19) vaccine, Subunit, recombinant spike protein-nanoparticle+Matrix-M1 Adjuvant, preservative free, 0.5mL per dose",
+      "designation": [
+        {
+          "language": "uz",
+          "value": "SARS-CoV-2 (COVID-19) ga qarshi vaksina, subbirlikli, rekombinant spike-oqsil nanozarrachali + Matrix-M1 ad’yuvantli, konservantsiz, har doza 0,5 ml"
+        },
+        {
+          "language": "ru",
+          "value": "Вакцина против SARS-CoV-2 (COVID-19), субъединичная, рекомбинантный наночастичный спайк-белок с адъювантом Matrix-M1, без консервантов, 0,5 мл на дозу"
+        }
+      ]
+    }
+  ],
+  "supplements": "http://hl7.org/fhir/sid/cvx",
+  "version": "4.0.1",
+  "language": "en",
+  "experimental": false
+}

@@ -150,6 +150,7 @@ Id: uz-core-condition-diagnosis-type
     driversLicense 0..1 MS
 
 * identifier[nationalId]
+  * ^short = "PINFL of the patient"
   * system 1..1 MS
   * system = $nationaluniqueID
   * type 1..1 MS
@@ -197,6 +198,16 @@ Id: uz-core-condition-diagnosis-type
 
 В этом примере один профиль UZCoreSocioeconomicObservation используется для наблюдений о льготах, образовании, профессии и социальном статусе — каждый с соответствующим ValueSet в зависимости от типа наблюдения, вместо создания четырёх отдельных профилей.
 
+- **Целевые профили ссылок (Reference и Canonical)**: Если для целевого ресурса ссылки существует национальный профиль UZ Core, ограничивайте ссылку этим профилем через `only Reference(...)`, а не базовым ресурсом FHIR. Базовый ресурс оставляйте только если национального профиля для него нет. То же правило применяется к каноническим ссылкам (`only Canonical(...)`). Благодаря этому IG Publisher отображает ссылки на страницы национальных профилей, а валидатор проверяет, что целевые ресурсы соответствуют требованиям UZ Core. Пример из UZCoreObservation:
+
+```fsh
+// UZ Core профили существуют — указываем их
+* performer only Reference(UZCorePractitioner or UZCorePractitionerRole or UZCoreOrganization)
+* encounter only Reference(UZCoreEncounter)
+// Для CarePlan, MedicationRequest и ServiceRequest национальных профилей нет — оставляем базовые ресурсы
+* basedOn only Reference(CarePlan or MedicationRequest or ServiceRequest)
+```
+
 ## 4) Терминологические артефакты
 
 ### 4.1 Почему нужен supplement для CodeSystem и ValueSet
@@ -231,7 +242,7 @@ Id: uz-core-condition-diagnosis-type
 - `OriginalCodeSystemDraft` - для черновых версий оригинальных CodeSystems
 - `OriginalCodeSystem` - для активных версий оригинальных CodeSystems
 
-**Важно:** 
+**Важно:**
 - В оригинальных CodeSystems не указывайте версию явно — она автоматически наследуется от версии IG.
 - В оригинальных CodeSystems язык по умолчанию — узбекский (`#uz`), поэтому добавляются переводы на русский и английский языки.
 - В supplements язык по умолчанию — английский (`#en`), поэтому добавляются переводы на русский и узбекский языки.
@@ -288,6 +299,15 @@ Description: "Diagnosis types in Uzbekistan"
   * ^designation[=].value = "Diagnosis of the referring institution"
 ```
 
+**Большие CodeSystems (>100 кодов):**
+
+CodeSystems с более чем 100 кодами замедляют каждую сборку SUSHI. Предгенерируйте их JSON:
+
+1. Соберите IG через SUSHI.
+2. Переместите `fsh-generated/resources/CodeSystem-<id>.json` → `input/vocabulary/`.
+3. Переместите исходный `.fsh` → `input/manual-fsh/` (SUSHI его не парсит, но FSH сохраняется как источник).
+4. При обновлении справочника: верните `.fsh` в `input/fsh/terminology/`, пересоберите, повторите шаги 2-3.
+
 ### 4.2 Пример FSH для ClinicalStatusCS (на примере Condition)
 
 ```fsh
@@ -320,7 +340,7 @@ Title: "Clinical Status"
 
 ```
 
-**Важно:** 
+**Важно:**
 - Расширение `valueset-supplement` необходимо только для ValueSets, которые включают коды из supplement CodeSystems. Для ValueSets с только оригинальными кодами это расширение не требуется.
 - При использовании supplement CodeSystems в ValueSet необходимо включать коды из **оригинальной** CodeSystem (например, `$condition-clinical`), а не из supplement CodeSystem. Расширение `valueset-supplement` указывает на supplement, который предоставляет переводы к оригинальным кодам.
 

@@ -1,0 +1,851 @@
+code	In uzbek	In russian	In english					
+AER101	aerozol	аэрозоль						
+AER102	ingalyatsiya uchun dozalangan aerozol	аэрозоль для ингаляций дозированный						
+AER103	mahalliy qoʻllash uchun aerozol	аэрозоль для местного применения						
+AER104	ogʻiz boʻshligʻi shilliq qavatida qoʻllash uchun aerozol	аэрозоль для нанесения на слизистую оболочку полости рта						
+AER105	sirtga qoʻllash uchun aerozol	аэрозоль для наружного применения						
+AER106	nazal aerozol	аэрозоль назальный						
+AER107	til osti aerozoli	аэрозоль подъязычный						
+AER108	transdermal aerozol	аэрозоль трансдермальный						
+AER109	quloq aerozoli	аэрозоль ушной						
+GEL101	gel	гель						
+GEL102	vaginal gel	гель вагинальный						
+GEL103	koʻz geli	гель глазной						
+GEL104	inyeksiya uchun gel	гель для инъекций						
+GEL105	mahalliy qoʻllash uchun gel 	гель для местного применения						
+GEL106	milkka surtish uchun gel	гель для нанесения на десны						
+GEL107	ogʻiz boʻshligʻi shilliq qavatiga qoʻllash uchun gel	гель для нанесения на слизистую оболочку полости рта						
+GEL108	sirtga qoʻllash uchun gel	гель для наружного применения						
+GEL109	teri ostiga yuborish uchun gel	гель для подкожного введения						
+GEL110	ichga qabul qilish uchun gel 	гель для приема внутрь						
+GEL111	tish geli	гель зубной						
+GEL112	intestinal gel	гель интестинальный						
+GEL113	nazal gel	гель назальный						
+GEL114	periodantal gel	гель периодонтальный						
+GEL115	rektal gel	гель ректальный						
+GEL116	stomatologik gel	гель стоматологический						
+GEL117	transdermal gel	гель трансдермальный						
+GEL118	uretral gel	гель уретральный						
+GEL119	quloq geli	гель ушной						
+GEL120	endotservikal gel	гель эндоцервикальный						
+GEL121	suspenziya tayyorlash uchun ichga qabul qilish uchun gel	гель для приготовления суспензии для приема внутрь						
+DIS101	dispersiya	дисперсия						
+DIS102	vena ichiga yuborish uchun dispersiya	дисперсия для внутривенного введения						
+DIS103	teri ichiga yuborish uchun dispersiya	дисперсия для внутрикожного введения						
+DIS104	infuziya uchun dispersiya	дисперсия для инфузий						
+DIS105								
+DIS106	vena ichiga yuborish uchun dispersiya	дисперсия для внутривенного введения						
+DIS107	teri ichiga yuborish uchun dispersiya	дисперсия для внутрикожного введения						
+DIS108	infuziya uchun dispersiya	дисперсия для инфузий						
+CRE101	krem	крем						
+CRE102	vaginal krem	крем вагинальный						
+CRE103	koʻz kremi	крем глазной						
+CRE104	mahalliy qoʻllash uchun krem	крем для местного применения						
+CRE105	ogʻiz boʻshligʻi shilliq qavatida qoʻllash uchun krem	крем для нанесения на слизистую оболочку полости рта						
+CRE106	sirtga qoʻllash uchun krem	крем для наружного применения						
+CRE107	nazal krem	крем назальный						
+CRE108	rektal krem	крем ректальный						
+CRE109	quloq kremi	крем ушной						
+CRE110	krem	крем						
+CRE111	vaginal krem	крем вагинальный						
+CRE112	koʻz kremi	крем глазной						
+CRE113	mahalliy qoʻllash uchun krem	крем для местного применения						
+CRE114	ogʻiz boʻshligʻi shilliq qavatida qoʻllash uchun krem	крем для нанесения на слизистую оболочку полости рта						
+CRE115	sirtga qoʻllash uchun krem	крем для наружного применения						
+CRE116	nazal krem	крем назальный						
+CRE117	rektal krem	крем ректальный						
+CRE118	quloq kremi	крем ушной						
+LIN101	liniment	линимент						
+LIN102	vaginal liniment	линимент вагинальный						
+LIN103	mahalliy qoʻllash uchun liniment	линимент для местного применения						
+LIN104	sirtga qoʻllash uchun liniment	линимент для наружного применения						
+LIN105	periodantal liniment	линимент периодонтальный						
+LIN106	endotservikal liniment	линимент эндоцервикальный						
+OIN101	surtma	мазь						
+OIN102	vaginal surtma	мазь вагинальная						
+OIN103	koʻz surtmasi	мазь глазная						
+OIN104	ingalyatsiya uchun surtma	мазь для ингаляций						
+OIN105	mahalliy qoʻllash uchun surtma	мазь для местного применения						
+OIN106	ogʻiz boʻshligʻi shilliq qavatiga surtish uchun surtma	мазь для нанесения на слизистую оболочку полости рта						
+OIN107	sirtga qoʻllash uchun surtma	мазь для наружного применения						
+OIN108	nazal surtma	мазь назальная						
+OIN109	rektal surtma	мазь ректальная						
+OIN110	quloq surtmasi	мазь ушная						
+PAS101	pasta	паста						
+PAS102	milkka surtish uchun pasta	паста для нанесения на десны						
+PAS103	ogʻiz boʻshligʻi shilliq qavatiga surtish uchun pasta	паста для нанесения на слизистую оболочку полости рта						
+PAS104	sirtga qoʻllash uchun pasta	паста для наружного применения						
+PAS105	ichga qabul qilish uchun suspenziya tayyorlash uchun pasta	паста для приготовления суспензии для приема внутрь						
+PAS106	ichga qabul qilish uchun pasta	паста для приема внутрь						
+PAS107	stomotologik dori pastasi	паста лекарственная стоматологическая						
+FOA101	koʻpik	пена						
+FOA102	vaginal koʻpik	пена вагинальная						
+FOA103	bachadon ichiga koʻpik	пена внутриматочная						
+FOA104	sirtga qoʻllash uchun koʻpik	пена для наружного применения						
+FOA105	rektal koʻpik	пена ректальная						
+SPR101	sprey	спрей						
+SPR102	mahalliy qoʻllash uchun sprey	спрей для местного применения						
+SPR103	sirtga qoʻllash uchun sprey	спрей для наружного применения						
+SPR104	ogʻiz boʻshligʻi shilliq qavati uchun sprey	спрей для слизистой оболочки полости рта						
+SPR105	burun spreyi	спрей назальный						
+SPR106	dozalangan til osti spreyi	спрей подъязычный дозированный						
+SPR107	transdermal sprey 	спрей трансдермальный						
+SPR108	quloq spreyi	спрей ушной						
+MEG101	tibbiyot gazi	газ медицинский						
+MEG102	kriogen tibbiyot gazi	газ медицинский криогенный						
+MEG103	siqilgan tibbiyot gazi	газ медицинский сжатый						
+MEG104	suyultirilgan tibbiyot gazi	газ медицинский сжиженный						
+ELI101	eliksir	эликсир						
+EMU101	emulsiya	эмульсия						
+EMU102	qin ichi emulsiyasi	эмульсия вагинальная						
+EMU103	bachadon ichi emulsiyasi	эмульсия внутриматочная						
+EMU104	vena ichiga yuborish uchun emulsiya	эмульсия для внутривенного введения						
+EMU105	mushak ichiga yuborish uchun emulsiya	эмульсия для внутримышечного введения						
+EMU106	gastroenteral yuborish uchun emulsiya	эмульсия для гастроэнтерального введения						
+EMU107	ingalyatsiya uchun emulsiya	эмульсия для ингаляций						
+EMU108	infuziya uchun emulsiya	эмульсия для инфузий						
+EMU109	inyeksiya uchun emulsiya	эмульсия для инъекций						
+EMU110	mahalliy qoʻllash uchun emulsiya	эмульсия для местного применения						
+EMU111	sirtga qoʻllash uchun emulsiya	эмульсия для наружного применения						
+EMU112	ichga qabul qilish uchun emulsiya	эмульсия для приема внутрь						
+EMU113	eshitish yoʻllarini yuvish emulsiyasi	эмульсия для промывания слухового прохода						
+EMU114	tish emulsiyalari	эмульсия зубная						
+EMU115	rektal emulsiyalar	эмульсия ректальная						
+SOL101	eritma	раствор						
+SOL102	vaginal eritma	раствор вагинальный						
+SOL103	bachadon ichiga eritma	раствор внутриматочный						
+SOL104	arteriya ichiga yuborish uchun eritma	раствор для внутриартериального введения						
+SOL105	qorin boʻshligʻi ichiga yuborish uchun eritma	раствор для внутрибрюшинного введения						
+SOL106	vena ichiga yuborish uchun eritma	раствор для внутривенного введения						
+SOL107	koʻz ichiga yuborish uchun eritma	раствор для внутриглазного введения						
+SOL108	teri ichiga yuborish uchun eritma	раствор для внутрикожного введения						
+SOL109	koronar tomir ichiga yuborish uchun eritma	раствор для внутрикоронарного введения						
+SOL110	mushak ichiga yuborish uchun eritma 	раствор для внутримышечного введения						
+SOL111	boʻshliq ichiga yuborish uchun eritma 	раствор для внутриполостного введения						
+SOL112	pufak ichiga yuborish uchun eritma	раствор для внутрипузырного введения						
+SOL113	boʻgʻim ichiga yuborish uchun eritma	раствор для внутрисуставного введения						
+SOL114	gastroenteral yuborish uchun eritma	раствор для гастроэнтерального введения						
+SOL115	gemodializ uchun eritma	раствор для гемодиализа						
+SOL116	gemodiafiltratsiya uchun eritma 	раствор для гемодиафильтрации						
+SOL117	gemofiltratsiya uchun eritma	раствор для гемофильтрации						
+SOL118	ingalyatsiya uchun eritma 	раствор для ингаляций						
+SOL119	intraamniotik (amniotik qavat ichiga) yuborish uchun eritma	раствор для интраамниального введения						
+SOL120	limfa ichiga yuborish uchun eritma 	раствор для интралимфатического введения						
+SOL121	intratekal yuborish uchun eritma	раствор для интратекального введения						
+SOL122	infuziya uchun eritma 	раствор для инфузий						
+SOL123	inyeksiya uchun eritma 	раствор для инъекций						
+SOL124	mahalliy qoʻllash uchun eritma 	раствор для местного применения						
+SOL125	teri ustiga skarifikatsiya sinamasi uchun eritma 	раствор для накожного скарификационного нанесения						
+SOL126	milklarga surtish uchun eritma	раствор для нанесения на десны						
+SOL127	sirtga qoʻllash uchun eritma 	раствор для наружного применения						
+SOL128	boʻgʻim atrofiga yuborish uchun eritma 	раствор для околосуставного введения						
+SOL129	meʼdani yuvish uchun eritma 	раствор для орошения желудка						
+SOL130	siydik pufagini yuvish uchun eritma	раствор для орошения мочевого пузыря						
+SOL131	parabulbar yuborish uchun eritma 	раствор для парабульбарного введения						
+SOL132	peritoneal dializ uchun eritma	раствор для перитонеального диализа						
+SOL133	teri ostiga yuborish uchun eritma 	раствор для подкожного введения						
+SOL134	chayish uchun eritma 	раствор для полоскания						
+SOL135	ichga qabul qilish uchun eritma 	раствор для приема внутрь						
+SOL136	prik-test oʻtkazish uchun eritma	раствор для проведения прик-теста						
+SOL137	koʻzni yuvish uchun eritma 	раствор для промывания глаз						
+SOL138	burun boʻshligʻini yuvish uchun eritma 	раствор для промывания полости носа						
+SOL139	ogʻiz boʻshligʻini yuvish uchun eritma 	раствор для промывания полости рта						
+SOL140	eshitish yoʻllarini yuvish uchun eritma 	раствор для промывания слухового прохода						
+SOL141	ogʻiz boʻshligʻi shilliq qavati uchun eritma 	раствор для слизистой оболочки полости рта						
+SOL142	subkonyunktival yuborish uchun eritma	раствор для субконъюнктивального введения						
+SOL143	ekstraamniotik (amniotik qavat sirtiga) yuborish uchun eritma	раствор для экстраамниального введения						
+SOL144	endosinusial yuborish uchun eritma 	раствор для эндосинусиального введения						
+SOL145	endotraxeal yuborish uchun eritma	раствор для эндотрахеального введения						
+SOL146	tish eritmasi 	раствор зубной						
+SOL147	rektal eritma 	раствор ректальный						
+SOL148	transdermal eritma	раствор трансдермальный						
+IMP101	implantat	имплантат						
+IMP102	teri ostiga yuborish uchun implantat	имплантат для подкожного введения						
+IMP103	intravitreal implantat	имплантат интравитреальный						
+SPI101	inyeksiya uchun vaksina tayyorlash uchun erituvchi	растворитель для приготовления вакцин для инъекций						
+CON101	konsentrat	концентрат						
+CON102	vena ichiga yuborish uchun dispersiya tayyorlash uchun konsentrat	концентрат для приготовления дисперсии для внутривенного введения						
+CON103	teri ichiga yuborish uchun dispersiya tayyorlash uchun konsentrat	концентрат для приготовления дисперсии для внутрикожного введения						
+CON104	infuziya uchun dispersiya tayyorlash uchun konsentrat	концентрат для приготовления дисперсии для инфузий						
+CON105	inyeksiya uchun dispersiya tayyorlash uchun konsentrat	концентрат для приготовления дисперсии для инъекций						
+CON106	vaginal eritma tayyorlash uchun konsentrat	концентрат для приготовления раствора вагинального						
+CON107	bachadon ichiga eritma tayyorlash uchun konsentrat	концентрат для приготовления раствора внутриматочного						
+CON108	arteriya ichiga yuborish uchun eritma tayyorlash uchun konsentrat	концентрат для приготовления раствора для внутриартериального введения						
+CON109	qorin boʻshligʻi ichiga yuborish uchun eritma tayyorlash uchun konsentrat	концентрат для приготовления раствора для внутрибрюшинного введения						
+CON110	vena ichiga yuborish uchun eritma tayyorlash uchun konsentrat	концентрат для приготовления раствора для внутривенного введения						
+CON111	koʻz ichiga yuborish uchun eritma tayyorlash uchun konsentrat	концентрат для приготовления раствора для внутриглазного введения						
+CON112	teri ichiga yuborish uchun eritma tayyorlash uchun konsentrat	концентрат для приготовления раствора для внутрикожного введения						
+CON113	koronar tomir ichiga yuborish uchun eritma tayyorlash uchun konsentrat	концентрат для приготовления раствора для внутрикоронарного введения						
+CON114	mushak ichiga yuborish uchun eritma tayyorlash uchun konsentrat	концентрат для приготовления раствора для внутримышечного введения						
+CON115	boʻshliq ichiga yuborish uchun eritma tayyorlash uchun konsentrat	концентрат для приготовления раствора для внутриполостного введения						
+CON116	pufak ichiga yuborish uchun eritma tayyorlash uchun konsentrat	концентрат для приготовления раствора для внутрипузырного введения						
+CON117	boʻgʻim ichiga yuborish uchun eritma tayyorlash uchun konsentrat	концентрат для приготовления раствора для внутрисуставного введения						
+CON118	gastroenteral yuborish uchun eritma tayyorlash uchun konsentrat	концентрат для приготовления раствора для гастроэнтерального введения						
+CON119	gemodializ uchun eritma tayyorlash uchun konsentrat	концентрат для приготовления раствора для гемодиализа						
+CON120	gemodiafiltratsiya uchun eritma tayyorlash uchun konsentrat	концентрат для приготовления раствора для гемодиафильтрации						
+CON121	gemofiltratsiya uchun eritma tayyorlash uchun konsentrat	концентрат для приготовления раствора для гемофильтрации						
+CON122	ingalyatsiya uchun eritma tayyorlash uchun konsentrat 	концентрат для приготовления раствора для ингаляций						
+CON123	intraamnial yuborish uchun eritma tayyorlash uchun konsentrat 	концентрат для приготовления раствора для интраамниального введения						
+CON124	intralimfatik (limfa ichiga) yuborish uchun eritma tayyorlash uchun konsentrat	концентрат для приготовления раствора для интралимфатического введения						
+CON125	intratekal yuborish uchun eritma tayyorlash uchun konsentrat 	концентрат для приготовления раствора для интратекального введения						
+CON126	infuziya uchun eritma tayyorlash uchun konsentrat 	концентрат для приготовления раствора для инфузий						
+CON127	inyeksiya uchun eritma tayyorlash uchun konsentrat  	концентрат для приготовления раствора для инъекций						
+CON128	mahalliy qoʻllash uchun eritma tayyorlash uchun konsentrat  	концентрат для приготовления раствора для местного применения						
+CON129	teri ustiga skarifikatsiya sinamasi uchun eritma tayyorlash uchun konsentrat	концентрат для приготовления раствора для накожного скарифицированного нанесения						
+CON130	milklarga surtish uchun eritma tayyorlash uchun konsentrat	концентрат для приготовления раствора для нанесения на десны						
+CON131	sirtga qoʻllash uchun eritma tayyorlash uchun konsentrat	концентрат для приготовления раствора для наружного применения						
+CON132	boʻgʻim atrofiga yuborish uchun eritma tayyorlash uchun konsentrat	концентрат для приготовления раствора для околосуставного введения						
+CON133	meʼdani yuvish uchun eritma tayyorlash uchun konsentrat	концентрат для приготовления раствора для орошения желудка						
+CON134	siydik pufagini yuvish uchun eritma tayyorlash uchun konsentrat 	концентрат для приготовления раствора для орошения мочевого пузыря						
+CON135	parabulbar yuborish uchun eritma tayyorlash uchun konsentrat	концентрат для приготовления раствора для парабульбарного введения						
+CON136	peritoneal dializ uchun eritma tayyorlash uchun konsentrat 	концентрат для приготовления раствора для перитонеального диализа						
+CON137	teri ostiga yuborish uchun eritma tayyorlash uchun konsentrat 	концентрат для приготовления раствора для подкожного введения						
+CON138	chayish uchun eritma tayyorlash uchun konsentrat	концентрат для приготовления раствора для полоскания						
+CON139	ichga qabul qilish uchun eritma tayyorlash uchun konsentrat	концентрат для приготовления раствора для приема внутрь						
+CON140	prik-testni oʻtkazish uchun eritma tayyorlash uchun konsentrat	концентрат для приготовления раствора для проведения прик-теста						
+CON141	koʻzni yuvish uchun eritma tayyorlash uchun konsentrat	концентрат для приготовления раствора для промывания глаз						
+CON142	burun boʻshligʻini yuvish uchun eritma tayyorlash uchun konsentrat	концентрат для приготовления раствора для промывания полости носа						
+CON143	ogʻiz boʻshligʻini chayish uchun eritma tayyorlash uchun konsentrat	концентрат для приготовления раствора для промывания полости рта						
+CON144	eshitish yoʻlini yuvish uchun eritma tayyorlash uchun konsentrat	концентрат для приготовления раствора для промывания слухового прохода						
+CON145	ogʻiz boʻshligʻi shilliq qavati uchun eritma tayyorlash uchun konsentrat	концентрат для приготовления раствора для слизистой оболочки полости рта						
+CON146	subkonyunktival yuborish uchun eritma tayyorlash uchun konsentrat 	концентрат для приготовления раствора для субконъюнктивального введения						
+CON147	ekstraamnial yuborish uchun eritma tayyorlash uchun konsentrat 	концентрат для приготовления раствора для экстраамниального введения						
+CON148	endosinusial yuborish uchun eritma tayyorlash uchun konsentrat 	концентрат для приготовления раствора для эндосинусиального введения						
+CON149	endotraxeal yuborish uchun eritma tayyorlash uchun konsentrat	концентрат для приготовления раствора для эндотрахеального введения						
+CON150	tish eritmasi tayyorlash uchun konsentrat	концентрат для приготовления раствора зубного						
+CON151	rektal ertima tayyorlash uchun konsentrat	концентрат для приготовления раствора ректального						
+CON152	transdermal eritma tayyorlash uchun konsentrat	концентрат для приготовления раствора трансдермального						
+CON153	vaginal suspenziya tayyorlash uchun konsentrat	концентрат для приготовления суспензии вагинальной						
+CON154	teri ichiga yuborish uchun suspenziya tayyorlash uchun konsentrat	концентрат для приготовления суспензии для внутрикожного введения						
+CON155	mushak ichiga yuborish uchun suspenziya tayyorlash uchun konsentrat	концентрат для приготовления суспензии для внутримышечного введения						
+CON156	boʻgʻim ichiga yuborish uchun suspenziya tayyorlash uchun konsentrat 	концентрат для приготовления суспензии для внутрисуставного введения						
+CON157	gastroenteral yuborish uchun suspenziya tayyorlash uchun konsentrat 	концентрат для приготовления суспензии для гастроэнтерального введения						
+CON158	inyeksiya uchun suspenziya tayyorlash uchun konsentrat 	концентрат для приготовления суспензии для инъекций						
+CON159	ajralib chiqishi uzaytirilgan inyeksiya uchun suspenziya tayyorlash uchun konsentrat	концентрат для приготовления суспензии для инъекций с пролонгированным высвобождением						
+CON160	implantatsiya uchun suspenziya tayyorlash uchun konsentrat	концентрат для приготовления суспензии для имплантации						
+CON161	ingalyatsiya uchun suspenziya tayyorlash uchun konsentrat	концентрат для приготовления суспензии для ингаляций						
+CON162	mahalliy qoʻllash uchun suspenziya tayyorlash uchun konsentrat	концентрат для приготовления суспензии для местного применения						
+CON163	teri ustiga skarifikatsiya sinamasi uchun suspenziya tayyorlash uchun konsentrat	концентрат для приготовления суспензии для накожного скарификационного нанесения						
+CON164	sirtga qoʻllash uchun suspenziya tayyorlash uchun konsentrat	концентрат для приготовления суспензии для наружного применения						
+CON165	boʻgʻim atrofiga yuborish uchun suspenziya tayyorlash uchun konsentrat	концентрат для приготовления суспензии для околосуставного введения						
+CON166	teri ostiga yuborish uchun suspenziya tayyorlash uchun konsentrat	концентрат для приготовления суспензии для подкожного введения						
+CON167	ichga qabul qilish uchun suspenziya tayyorlash uchun konsentrat	концентрат для приготовления суспензии для приема внутрь						
+CON168	ogʻiz boʻshligʻi shilliq qavati uchun suspenziya tayyorlash uchun konsentrat	концентрат для приготовления суспензии для слизистой оболочки полости рта						
+CON169	endosinusial yuborish uchun suspenziya tayyorlash uchun konsentrat	концентрат для приготовления суспензии для эндосинусиального введения						
+CON170	endotraxeal yuborish uchun suspenziya tayyorlash uchun konsentrat	концентрат для приготовления суспензии для эндотрахеального введения						
+CON171	tish suspenziyasi tayyorlash uchun konsentrat	концентрат для приготовления суспензии зубной						
+CON172	rektal suspenziya tayyorlash uchun konsentrat	концентрат для приготовления суспензии ректальной						
+CON173	vaginal emulsiya tayyorlash uchun konsentrat	концентрат для приготовления эмульсии вагинальной						
+CON174	bachadon ichiga emulsiya tayyorlash uchun konsentrat	концентрат для приготовления эмульсии внутриматочной						
+CON175	vena ichiga yuborish uchun emulsiya tayyorlash uchun konsentrat	концентрат для приготовления эмульсии для внутривенного введения						
+CON176	mushak ichiga yuborish uchun emulsiya tayyorlash uchun konsentrat	концентрат для приготовления эмульсии для внутримышечного введения						
+CON177	gastroenteral yuborish uchun emulsiya tayyorlash uchun konsentrat	концентрат для приготовления эмульсии для гастроэнтерального введения						
+CON178	ingalyatsiya uchun emulsiya tayyorlash uchun konsentrat	концентрат для приготовления эмульсии для ингаляций						
+CON179	infuziya uchun emulsiya tayyorlash uchun konsentrat	концентрат для приготовления эмульсии для инфузий						
+CON180	inyeksiya uchun emulsiya tayyorlash uchun konsentrat	концентрат для приготовления эмульсии для инъекций						
+CON181	mahalliy qoʻllash uchun emulsiya tayyorlash uchun konsentrat	концентрат для приготовления эмульсии для местного применения						
+CON182	sirtga qoʻllash uchun emulsiya tayyorlash uchun konsentrat	концентрат для приготовления эмульсии для наружного применения						
+CON183	ichga qabul qilish uchun emulsiya tayyorlash uchun konsentrat	концентрат для приготовления эмульсии для приема внутрь						
+CON184	eshitish yoʻlini yuvish uchun emulsiya tayyorlash uchun konsentrat	концентрат для приготовления эмульсии для промывания слухового прохода						
+CON185	tish emulsiyasi tayyorlash uchun konsentrat	концентрат для приготовления эмульсии зубной						
+CON186	rektal emulsiya tayyorlash uchun konsentrat	концентрат для приготовления эмульсии ректальной						
+OIL101	moy	масло						
+OIL102	ingalyatsiya uchun moy	масло для ингаляций						
+OIL103	mahalliy qoʻllash uchun moy	масло для местного применения						
+OIL104	sirtga qoʻllash uchun moy	масло для наружного применения						
+OIL105	ichga qabul qilish uchun moy	масло для приема внутрь						
+SYR101	sirop	сироп						
+SUS101	suspenziya	суспензия						
+SUS102	vaginal suspenziya	суспензия вагинальная						
+SUS103	teri ichiga yuborish uchun suspenziya 	суспензия для внутрикожного введения						
+SUS104	mushak ichiga yuborish uchun suspenziya 	суспензия для внутримышечного введения						
+SUS105	boʻgʻim ichiga yuborish uchun suspenziya 	суспензия для внутрисуставного введения						
+SUS106	gastroenteral yuborish uchun suspenziya 	суспензия для гастроэнтерального введения						
+SUS107	inyeksiya uchun suspenziya 	суспензия для инъекций						
+SUS108	taʼsiri uzaytirilgan inyeksiya uchun suspenziya 	суспензия для инъекций с пролонгированным высвобождением						
+SUS109	implantatsiya uchun suspenziya 	суспензия для имплантации						
+SUS110	ingalyatsiya uchun suspenziya 	суспензия для ингаляций						
+SUS111	mahalliy qoʻllash uchun suspenziya 	суспензия для местного применения						
+SUS112	teri ustiga skarifikatsiya sinamasi uchun suspenziya 	суспензия для накожного скарификационного нанесения						
+SUS113	sirtga qoʻllash uchun suspenziya 	суспензия для наружного применения						
+SUS114	boʻgʻim atrofiga yuborish uchun suspenziya 	суспензия для околосуставного введения						
+SUS115	teri ostiga yuborish uchun suspenziya 	суспензия для подкожного введения						
+SUS116	ichga qabul qilish uchun suspenziya 	суспензия для приема внутрь						
+SUS117	ogʻiz boʻshligʻi shilliq qavati uchun suspenziya	суспензия для слизистой оболочки полости рта						
+SUS118	endosinusial yuborish uchun suspenziya 	суспензия для эндосинусиального введения						
+SUS119	endotraxeal yuborish uchun suspenziya	суспензия для эндотрахеального введения						
+SUS120	tish suspenziyasi	суспензия зубная						
+SUS121	rektal suspenziya	суспензия ректальная						
+LIE101	suyuq ekstrakt	экстракт жидкий						
+LIQ101	suyuqlik	жидкость						
+LIQ102	ingalyatsiya uchun suyuqlik	жидкость для ингаляций						
+LIQ103	sirtga qoʻllash uchun suyuqlik	жидкость для наружного применения						
+LIQ104	ichga qoʻllash uchun suyuqlik	жидкость для приема внутрь						
+TIN101	tindirma	настойка						
+TIN102	ingalyatsiya uchun tindirma	настойка для ингаляций						
+TIN103	mahalliy qoʻllash uchun tindirma	настойка для местного применения						
+TIN104	sirtga qoʻllash uchun tindirma	настойка для наружного применения						
+DRO101	tomchilar	капли						
+DRO102	koʻz tomchilari	капли глазные						
+DRO103	ajralib chiqishi uzaytirilgan koʻz tomchilari  	капли глазные с пролонгированным высвобождением						
+DRO104	ingalyatsiya uchun tomchilar	капли для ингаляций						
+DRO105	mahalliy qoʻllash uchun tomchilar	капли для местного применения						
+DRO106	ogʻiz boʻshligʻi shilliq qavatida qoʻllash uchun tomchilar	капли для нанесения на слизистую оболочку полости рта						
+DRO107	ichga qabul qilish uchun tomchilar	капли для приема внутрь						
+DRO108	tish tomchilari	капли зубные						
+DRO109	nazal tomchilari	капли назальные						
+DRO110	til osti tomchilari	капли подъязычные						
+DRO111	quloq tomchilari	капли ушные						
+CHM101	dorivor chaynov saqichi	резинка жевательная лекарственная						
+SPM101	dorivor gubka	губка лекарственная						
+PEM101	dorivor qalamchalar	карандаш лекарственный						
+LOM101	dorivor pastilkalar	пастилки лекарственные						
+PLM101	dorivor plastinalar	пластины лекарственные						
+LOM101	dorivor shiimladigan tabletkalar 	леденцы лекарственные						
+DRA101	draje	драже						
+SHP101	gomeopatik dorilarning maxsus shakli	специальные формы гомеопатических препаратов						
+GRA101	granulalar	гранулы						
+GRA102	shimish uchun granulalar	гранулы для рассасывания						
+GRA103	ichakda eruvchi granulalar	гранулы кишечнорастворимые						
+GRA104	ajralib chiqishi uzaytirilgan ichakda eruvchi granulalar	гранулы кишечнорастворимые с пролонгированным высвобождением						
+GRA105	qobiq bilan qoplangan granulalar	гранулы, покрытые оболочкой						
+GRA106	kesib presslangan granulalar	гранулы резано-прессованные						
+GRA107	ajralib chiqishi modifikatsiya qilingan granulalar	гранулы с модифицированным высвобождением						
+GRA108	ajralib chiqishi uzaytirilgan granulalar	гранулы с пролонгированным высвобождением						
+GRA109	vishillovchi granulalar	гранулы шипучие						
+GRA110	koʻz tomchilari tayyorlash uchun granulalar	гранулы для приготовления капель глазных						
+GRA111	ajralib chiqishi uzaytirilgan koʻz tomchilari tayyorlash uchun granulalar 	гранулы для приготовления капель глазных с пролонгированным высвобождением						
+GRA112	ingalyatsiya uchun tomchi tayyorlash uchun granulalar	гранулы для приготовления капель для ингаляции						
+GRA113	mahalliy qoʻllash uchun tomchi tayyorlash uchun granulalar	гранулы для приготовления капель для местного применения						
+GRA114	ogʻiz boʻshligʻi shilliq qavatida qoʻllash uchun tomchi tayyorlash uchun granulalar	гранулы для приготовления капель для нанесения на слизистую оболочку полости рта						
+GRA115	ichga qabul qilish uchun tomchi tayyorlash uchun granulalar	гранулы для приготовления капель для приема внутрь						
+GRA116	tish tomchilari tayyorlash uchun granulalar	гранулы для приготовления капель зубных						
+GRA117	nazal tomchilarini tayyorlash uchun granulalar	гранулы для приготовления капель назальных						
+GRA118	til osti tomchilarini tayyorlash uchun granulalar	гранулы для приготовления капель подъязычных						
+GRA119	quloq tomchilarini tayyorlash uchun granulalar	гранулы для приготовления капель ушных						
+GRA120	vaginal eritma tayyorlash uchun granulalar	гранулы для приготовления раствора вагинального						
+GRA121	bachadon ichiga eritma tayyorlash uchun granulalar	гранулы для приготовления раствора внутриматочного						
+GRA122	arteriya ichiga yuborish uchun eritma tayyorlash uchun granulalar	гранулы для приготовления раствора для внутриартериального введения						
+GRA123	qorin boʻshligʻi ichiga yuborish uchun eritma tayyorlash uchun granulalar	гранулы для приготовления раствора для внутрибрюшинного введения						
+GRA124	vena ichiga yuborish uchun eritma tayyorlash uchun granulalar	гранулы для приготовления раствора для внутривенного введения						
+GRA125	koʻz ichiga yuborish uchun eritma tayyorlash uchun granulalar	гранулы для приготовления раствора для внутриглазного введения						
+GRA126	teri ichiga yuborish uchun eritma tayyorlash uchun granulalar	гранулы для приготовления раствора для внутрикожного введения						
+GRA127	koronar qon tomiri ichiga yuborish uchun eritma tayyorlash uchun granulalar	гранулы для приготовления раствора для внутрикоронарного введения						
+GRA128	mushak ichiga yuborish uchun eritma tayyorlash uchun granulalar	гранулы для приготовления раствора для внутримышечного введения						
+GRA129	boʻshliq ichiga yuborish uchun eritma tayyorlash uchun granulalar	гранулы для приготовления раствора для внутриполостного введения						
+GRA130	pufak ichiga yuborish uchun eritma tayyorlash uchun granulalar	гранулы для приготовления раствора для внутрипузырного введения						
+GRA131	boʻgʻim ichiga yuborish uchun eritma tayyorlash uchun granulalar 	гранулы для приготовления раствора для внутрисуставного введения						
+GRA132	gastroenteral yuborish uchun eritma tayyorlash uchun granulalar 	гранулы для приготовления раствора для гастроэнтерального введения						
+GRA133	gemodializ uchun eritma tayyorlash uchun granulalar 	гранулы для приготовления раствора для гемодиализа						
+GRA134	gemodiafiltratsiya uchun eritma tayyorlash uchun granulalar 	гранулы для приготовления раствора для гемодиафильтрации						
+GRA135	gemofiltratsiya uchun eritma tayyorlash uchun granulalar 	гранулы для приготовления раствора для гемофильтрации						
+GRA136	ingalyatsiya uchun eritma tayyorlash uchun granulalar 	гранулы для приготовления раствора для ингаляций						
+GRA137	intraamnial yuborish uchun eritma tayyorlash uchun granulalar 	гранулы для приготовления раствора для интраамниального введения						
+GRA138	intralimfatik (limfa ichiga) yuborish uchun eritma tayyorlash uchun granulalar 	гранулы для приготовления раствора для интралимфатического введения						
+GRA139	intratekal yuborish uchun eritma tayyorlash uchun granulalar 	гранулы для приготовления раствора для интратекального введения						
+GRA140	infuziya uchun eritma tayyorlash uchun granulalar 	гранулы для приготовления раствора для инфузий						
+GRA141	inyeksiya uchun eritma tayyorlash uchun granulalar 	гранулы для приготовления раствора для инъекций						
+GRA142	mahalliy qoʻllash uchun eritma tayyorlash uchun granulalar 	гранулы для приготовления раствора для местного применения						
+GRA143	teri ustiga skarifikatsiya sinamasi uchun eritma tayyorlash uchun granulalar	гранулы для приготовления раствора для накожного скарифицированного нанесения						
+GRA144	milklarga surtish uchun eritma tayyorlash uchun granulalar	гранулы для приготовления раствора для нанесения на десны						
+GRA145	sirtga qoʻllash uchun eritma tayyorlash uchun granulalar	гранулы для приготовления раствора для наружного применения						
+GRA146	boʻgʻim atrofiga yuborish uchun eritma tayyorlash uchun granulalar	гранулы для приготовления раствора для околосуставного введения						
+GRA147	meʼdani yuvish uchun eritma tayyorlash uchun granulalar	гранулы для приготовления раствора для орошения желудка						
+GRA148	siydik pufagi (qovuq)ni yuvish uchun eritma tayyorlash uchun granulalar 	гранулы для приготовления раствора для орошения мочевого пузыря						
+GRA149	parabulbar yuborish uchun eritma tayyorlash uchun granulalar 	гранулы для приготовления раствора для парабульбарного введения						
+GRA150	peritoneal dializ uchun eritma tayyorlash uchun granulalar 	гранулы для приготовления раствора для перитонеального диализа						
+GRA151	teri ostiga yuborish uchun eritma tayyorlash uchun granulalar 	гранулы для приготовления раствора для подкожного введения						
+GRA152	chayish uchun eritma tayyorlash uchun granulalar	гранулы для приготовления раствора для полоскания						
+GRA153	ichga qabul qilish uchun eritma tayyorlash uchun granulalar	гранулы для приготовления раствора для приема внутрь						
+GRA154	koʻzni yuvish uchun eritma tayyorlash uchun granulalar	гранулы для приготовления раствора для промывания глаз						
+GRA155	burun boʻshligʻini yuvish uchun eritma tayyorlash uchun granulalar	гранулы для приготовления раствора для промывания полости носа						
+GRA156	ogʻiz boʻshligʻini chayish uchun eritma tayyorlash uchun granulalar	гранулы для приготовления раствора для промывания полости рта						
+GRA157	eshitish yoʻlini yuvish uchun eritma tayyorlash uchun granulalar	гранулы для приготовления раствора для промывания слухового прохода						
+GRA158	ogʻiz boʻshligʻi shilliq qavati uchun eritma tayyorlash uchun granulalar	гранулы для приготовления раствора для слизистой оболочки полости рта						
+GRA159	subkonyunktival yuborish uchun eritma tayyorlash uchun granulalar 	гранулы для приготовления раствора для субконъюнктивального введения						
+GRA160	ekstraamnial yuborish uchun eritma tayyorlash uchun granulalar 	гранулы для приготовления раствора для экстраамниального введения						
+GRA161	endosinusial yuborish uchun eritma tayyorlash uchun granulalar	гранулы для приготовления раствора для эндосинусиального введения						
+GRA162	endotraxeal yuborish uchun eritma tayyorlash uchun granulalar	гранулы для приготовления раствора для эндотрахеального введения						
+GRA163	tish eritmasi tayyorlash uchun granulalar	гранулы для приготовления раствора зубного						
+GRA164	rektal ertima tayyorlash uchun granulalar	гранулы для приготовления раствора ректального						
+GRA165	transdermal eritma tayyorlash uchun granulalar	гранулы для приготовления раствора трансдермального						
+GRA166	sirop tayyorlash uchun granulalar	гранулы для приготовления сиропа						
+GRA167	vaginal suspenziya tayyorlash uchun granulalar	гранулы для приготовления суспензии вагинальной						
+GRA168	teri ichiga yuborish uchun eritma tayyorlash uchun granulalar	гранулы для приготовления суспензии для внутрикожного введения						
+GRA169	mushak ichiga yuborish uchun eritma eritma tayyorlash uchun granulalar	гранулы для приготовления суспензии для внутримышечного введения						
+GRA170	boʻgʻim ichiga yuborish uchun suspenziya tayyorlash uchun granulalar 	гранулы для приготовления суспензии для внутрисуставного введения						
+GRA171	gastroenteral yuborish uchun suspenziya tayyorlash uchun granulalar 	гранулы для приготовления суспензии для гастроэнтерального введения						
+GRA172	inyeksiya uchun suspenziya tayyorlash uchun granulalar 	гранулы для приготовления суспензии для инъекций						
+GRA173	ajralib chiqishi uzaytirilgan inyeksiya uchun suspenziya tayyorlash uchun granulalar	гранулы для приготовления суспензии для инъекций с пролонгированным высвобождением						
+GRA174	implantatsiya uchun suspenziya tayyorlash uchun granulalar	гранулы для приготовления суспензии для имплантации						
+GRA175	ingalyatsiya uchun suspenziya tayyorlash uchun granulalar	гранулы для приготовления суспензии для ингаляций						
+GRA176	mahalliy qoʻllash uchun suspenziya tayyorlash uchun granulalar 	гранулы для приготовления суспензии для местного применения						
+GRA177	teri ustiga skarifikatsiya sinamasi uchun suspenziya tayyorlash uchun granulalar	гранулы для приготовления суспензии для накожного скарификационного нанесения						
+GRA178	sirtga qoʻllash uchun suspenziya tayyorlash uchun granulalar 	гранулы для приготовления суспензии для наружного применения						
+GRA179	boʻgʻim atrofiga yuborish uchun suspenziya tayyorlash uchun granulalar	гранулы для приготовления суспензии для околосуставного введения						
+GRA180	teri ostiga yuborish uchun suspenziya tayyorlash uchun granulalar	гранулы для приготовления суспензии для подкожного введения						
+GRA181	ichga qabul qilish uchun suspenziya tayyorlash uchun granulalar	гранулы для приготовления суспензии для приема внутрь						
+GRA182	ogʻiz boʻshligʻi shilliq qavati uchun suspenziya tayyorlash uchun granulalar	гранулы для приготовления суспензии для слизистой оболочки полости рта						
+GRA183	endosinusial yuborish uchun suspenziya tayyorlash uchun granulalar	гранулы для приготовления суспензии для эндосинусиального введения						
+GRA184	endotraxeal yuborish uchun suspenziya tayyorlash uchun granulalar	гранулы для приготовления суспензии для эндотрахеального введения						
+GRA185	tish suspenziyasi tayyorlash uchun granulalar	гранулы для приготовления суспензии зубной						
+GRA186	rektal suspenziya tayyorlash uchun granulalar	гранулы для приготовления суспензии ректальной						
+CAP1	kapsulalar	капсулы						
+CAP101	kapsulalar	капсулы						
+CAP102	vaginal kapsulalar	капсулы вагинальные						
+CAP103	bachadon ichi kapsulalari	капсулы внутриматочные						
+CAP104	chaynaladigan kapsulalar	капсулы жевательные						
+CAP105	ichakda eruvchi kapsulalar	капсулы кишечнорастворимые						
+CAP106	ajralib chiqishi uzaytirilgan ichakda eruvchi kapsulalar 	капсулы кишечнорастворимые с пролонгированным высвобождением						
+CAP107	til osti kapsulalari	капсулы подъязычные						
+CAP108	rektal kapsulalar	капсулы ректальные						
+CAP109	ajralib chiqishi modifikatsiya qilingan kapsulalar	капсулы с модифицированным высвобождением						
+CAP110	ingalyatsiya uchun kukunli kapsulalar	капсулы с порошком для ингаляций						
+CAP111	ajralib chiqishi uzaytirilgan kapsulalar 	капсулы с пролонгированным высвобождением						
+POW101	kukun	порошок						
+POW102	ingalyatsiya uchun dozalangan kukun	порошок для ингаляций дозированный						
+POW103	mahalliy qoʻllash uchun kukun	порошок для местного применения						
+POW104	sirtga qoʻllash uchun kukun	порошок для наружного применения						
+POW105	ichga qabul uchun kukun	порошок для приема внутрь						
+POW106	nazal kukun	порошок назальный						
+POW107	periodontal kukun	порошок периодонтальный						
+POW108	quloq kukuni	порошок ушной						
+POW109	vishillovchi kukun	порошок шипучий						
+POW110	vaginal gel tayyorlash uchun kukun	порошок для приготовления геля вагинального						
+POW111	koʻzga gel tayyorlash uchun kukun	порошок для приготовления геля глазного						
+POW112	inyeksiya uchun gel tayyorlash uchun kukun	порошок для приготовления геля для инъекций						
+POW113	mahalliy qoʻllash uchun gel tayyorlash uchun kukun	порошок для приготовления геля для местного применения						
+POW114	milkka surtish uchun gel tayyorlash uchun kukun	порошок для приготовления геля для нанесения на десны						
+POW115	ogʻiz boʻshligʻi shilliq qavatiga surtish uchun gel tayyorlash uchun kukun	порошок для приготовления геля для нанесения на слизистую оболочку рта						
+POW116	sirtga qoʻllash uchun gel tayyorlash uchun kukun	порошок для приготовления геля для наружного применения						
+POW117	teri ostiga yuborish uchun gel tayyorlash uchun kukun	порошок для приготовления геля для подкожного введения						
+POW118	ichga qabul qilish uchun suspenziya tayyorlash uchun gel tayyorlash uchun kukun	порошок для приготовления геля для приготовления суспензии для приема внутрь						
+POW119	ichga qabul qilish uchun gel tayyorlash uchun kukun	порошок для приготовления геля для приема внутрь						
+POW120	tishga gel tayyorlash uchun kukun	порошок для приготовления геля зубного						
+POW121	intestinal gel tayyorlash uchun kukun	порошок для приготовления геля интестинального						
+POW122	burunga gel tayyorlash uchun kukun	порошок для приготовления геля назального						
+POW123	periodontal gelni tayyorlash uchun kukun	порошок для приготовления геля периодонтального						
+POW124	rektal gel tayyorlash uchun kukun	порошок для приготовления геля ректального						
+POW125	stomotologik gel tayyorlash uchun kukun	порошок для приготовления геля стоматологического						
+POW126	transdermal gel tayyorlash uchun kukun	порошок для приготовления геля трансдермального						
+POW127	uretral gel tayyorlash uchun kukun	порошок для приготовления геля уретрального						
+POW128	quloq gelini tayyorlash uchun kukun	порошок для приготовления геля ушного						
+POW129	endotservikal gel tayyorlash uchun kukun	порошок для приготовления геля эндоцервикального						
+POW130	vena ichiga yuborish uchun dispersiya tayyorlash uchun kukun 	порошок для приготовления дисперсии для внутривенного введения						
+POW131	teri ichiga yuborish uchun dispersiya tayyorlash uchun kukun 	порошок для приготовления дисперсии для внутрикожного введения						
+POW132	infuziya uchun dispersiya tayyorlash uchun kukun 	порошок для приготовления дисперсии для инфузий						
+POW133	inyeksiya uchun dispersiya tayyorlash uchun kukun 	порошок для приготовления дисперсии для инъекций						
+POW134	koʻz tomchilarini tayyorlash uchun kukun	порошок для приготовления капель глазных						
+POW135	taʼsiri uzaytirilgan koʻz tomchilarini tayyorlash uchun kukun	порошок для приготовления капель глазных с пролонгированным высвобождением						
+POW136	ingalyatsiya uchun tomchi tayyorlash uchun kukun	порошок для приготовления капель для ингаляции						
+POW137	mahalliy qoʻllash uchun tomchi tayyorlash uchun kukun	порошок для приготовления капель для местного применения						
+POW138	ogʻiz shilliq qavatiga surish uchun tomchi tayyorlash uchun kukun	порошок для приготовления капель для нанесения на слизистую оболочку полости рта						
+POW139	ichga qabul qilish uchun tomchi tayyorlash uchun kukun	порошок для приготовления капель для приема внутрь						
+POW140	tish tomchilari tayyorlash uchun kukun	порошок для приготовления капель зубных						
+POW141	burun tomchilarini tayyorlash uchun kukun	порошок для приготовления капель назальных						
+POW142	til osti tomchilarini tayyorlash uchun kukun	порошок для приготовления капель подъязычных						
+POW143	quloq tomchilarini tayyorlash uchun kukun	порошок для приготовления капель ушных						
+POW144	vaginal eritma tayyorlash uchun kukun	порошок для приготовления раствора вагинального						
+POW145	bachadon ichiga eritma tayyorlash uchun kukun	порошок для приготовления раствора внутриматочного						
+POW146	arteriya ichiga yuborish uchun eritma tayyorlash uchunu kukun	порошок для приготовления раствора для внутриартериального введения						
+POW147	qorin boʻshligʻi ichiga yuborish uchun eritma tayyorlash uchun kukun	порошок для приготовления раствора для внутрибрюшинного введения						
+POW148	vena ichiga yuborish uchun eritma tayyorlash uchun kukun	порошок для приготовления раствора для внутривенного введения						
+POW149	koʻz ichiga yuborish uchun eritma tayyorlash uchun kukun	порошок для приготовления раствора для внутриглазного введения						
+POW150	teri ichiga yuborish uchun eritma tayyorlash kukun	порошок для приготовления раствора для внутрикожного введения						
+POW151	koronar tomir ichiga yuborish uchun eritma tayyorlash uchun kukun	порошок для приготовления раствора для внутрикоронарного введения						
+POW152	mushak ichiga yuborish uchun eritma tayyorlash uchun kukun	порошок для приготовления раствора для внутримышечного введения						
+POW153	boʻshliq ichiga yuborish uchun eritma tayyorlash uchun kukun	порошок для приготовления раствора для внутриполостного введения						
+POW154	pufak ichiga yuborish uchun eritma tayyorlash uchun kukun	порошок для приготовления раствора для внутрипузырного введения						
+POW155	boʻgʻim ichiga yuborish uchun eritma tayyorlash uchun kukun	порошок для приготовления раствора для внутрисуставного введения						
+POW156	gastroenteral yuborish uchun eritma tayyorlash uchun kukun	порошок для приготовления раствора для гастроэнтерального введения						
+POW157	gemodializa uchun eritma tayyorlash uchun kukun	порошок для приготовления раствора для гемодиализа						
+POW158	gemodiafiltratsiya uchun eritma tayyorlash uchun kukun	порошок для приготовления раствора для гемодиафильтрации						
+POW159	gemofiltratsiya uchun eritma tayyorlash uchun kukun	порошок для приготовления раствора для гемофильтрации						
+POW160	ingalyatsiya uchun eritma tayyorlash uchun kukun	порошок для приготовления раствора для ингаляций						
+POW161	intraamniotik (amniotik qavat ichiga) yuborish uchun eritma tayyorlash uchun kukun	порошок для приготовления раствора для интраамниального введения						
+POW162	limfa ichiga yuborish uchun eritma tayyorlash uchun kukun	порошок для приготовления раствора для интралимфатического введения						
+POW163	intratekal yuborish uchun eritma tayyorlash uchun kukun	порошок для приготовления раствора для интратекального введения						
+POW164	infuziya uchun eritma tayyorlash uchun kukun	порошок для приготовления раствора для инфузий						
+POW165	inyeksiya uchun eritma tayyorlash uchun kukun 	порошок для приготовления раствора для инъекций						
+POW166	mahalliy qoʻllash uchun eritma tayyorlash uchun kukun	порошок для приготовления раствора для местного применения						
+POW167	teri ustiga skarifikatsiya sinamasi uchun eritmani tayyorlash uchun kukun	порошок для приготовления раствора для накожного скарифицированного нанесения						
+POW168	milklarga surtish uchun eritma tayyorlash uchun kukun	порошок для приготовления раствора для нанесения на десны						
+POW169	sirtga qoʻllash uchun eritma tayyorlash uchun kukun	порошок для приготовления раствора для наружного применения						
+POW170	boʻgʻim atrofiga yuborish uchun eritma tayyorlash uchun kukun	порошок для приготовления раствора для околосуставного введения						
+POW171	meʼdani yuvish uchun eritma tayyorlash uchun kukun	порошок для приготовления раствора для орошения желудка						
+POW172	siydik pufagini yuvish uchun eritma tayyorlash uchun kukun	порошок для приготовления раствора для орошения мочевого пузыря						
+POW173	parabulbar yuborish uchun eritma tayyorlash uchun kukun	порошок для приготовления раствора для парабульбарного введения						
+POW174	peritoneal dializ uchun eritma tayyorlash uchun kukun	порошок для приготовления раствора для перитонеального диализа						
+POW175	teri ostiga yuborish uchun eritma tayyorlash uchun kukun	порошок для приготовления раствора для подкожного введения						
+POW176	ogʻiz boʻshligʻi va/yoki xalqumni yuvish uchun eritma tayyorlash uchun kukun	порошок для приготовления раствора для полоскания полости рта и/или глотки						
+POW177	ichga qabul qilish uchun eritma tayyorlash uchun kukun	порошок для приготовления раствора для приема внутрь						
+POW178	prik-test oʻtkazish uchun eritma tayyorlash uchun kukun	порошок для приготовления раствора для проведения прик-теста						
+POW179	koʻzni yuvish uchun eritma tayyorlash uchun kukun	порошок для приготовления раствора для промывания глаз						
+POW180	burun boʻshligʻini yuvish uchun eritma tayyorlash uchun kukun	порошок для приготовления раствора для промывания полости носа						
+POW181	ogʻiz boʻshligʻini yuvish uchun eritma tayyorlash uchun kukun	порошок для приготовления раствора для промывания полости рта						
+POW182	eshitish yoʻllarini yuvish uchun eritma tayyorlash uchun kukun	порошок для приготовления раствора для промывания слухового прохода						
+POW183	ogʻiz boʻshligʻi shilliq qavati uchun eritma tayyorlash uchun kukun	порошок для приготовления раствора для слизистой оболочки полости рта						
+POW184	subkonyunktival yuborish uchun eritma tayyorlash uchun kukun	порошок для приготовления раствора для субконъюнктивального введения						
+POW185	ekstraamniotik (amniotik qavat sirtiga) yuborish uchun eritma tayyorlash uchun kukun	порошок для приготовления раствора для экстраамниального введения						
+POW186	endosinusial yuborish uchun eritma tayyorlash uchun kukun	порошок для приготовления раствора для эндосинусиального введения						
+POW187	endotraxeal yuborish uchun eritma tayyorlash uchun kukun	порошок для приготовления раствора для эндотрахеального введения						
+POW188	tishga eritma tayyorlash uchun kukun	порошок для приготовления раствора зубного						
+POW189	rektal eritma tayyorlash uchun kukun	порошок для приготовления раствора ректального						
+POW190	transdermal eritma tayyorlash uchun kukun	порошок для приготовления раствора трансдермального						
+POW191	milklarga surtish uchun pasta tayyorlash uchun kukun	порошок для приготовления пасты для нанесения на десны						
+POW192	ogʻiz shilliq qavatiga pasta tayyorlash uchun kukun	порошок для приготовления пасты для нанесения на слизистую оболочку полости рта						
+POW193	sirtga qoʻllash uchun pasta tayyorlash uchun kukun	порошок для приготовления пасты для наружного применения						
+POW194	ichga qabul qilish uchun pasta tayyorlash uchun suspenziya tayyorlash uchun kukun	порошок для приготовления пасты для приготовления суспензии для приема внутрь						
+POW195	ichga qabul qilish uchun pastani tayyorlash uchun kukun	порошок для приготовления пасты для приема внутрь						
+POW196	dorivor stomotologik pastani tayyorlash uchun kukun 	порошок для приготовления пасты лекарственной стоматологической						
+POW197	sirop tayyorlash uchun kukun	порошок для приготовления сиропа						
+POW198	mahalliy qoʻllash uchun sprey tayyorlash uchun kukun	порошок для приготовления спрея для местного применения						
+POW199	sirtga qoʻllash uchun sprey tayyorlash uchun kukun	порошок для приготовления спрея для наружного применения						
+POW200	ogʻiz boʻshligʻi shilliq qavati uchun sprey tayyorlash uchun kukun 	порошок для приготовления спрея для слизистой оболочки полости рта						
+POW201	burunga sprey tayyorlash uchun kukun	порошок для приготовления спрея назального						
+POW202	til ostiga dozalangan sprey tayyorlash uchun kukun	порошок для приготовления спрея подъязычного дозированного						
+POW203	transdermal sprey tayyorlash uchun kukun	порошок для приготовления спрея трансдермального						
+POW204	quloq spreyini tayyorlash uchun kukun	порошок для приготовления спрея ушного						
+POW205	vaginal suspenziyani tayyorlash uchun kukun	порошок для приготовления суспензии вагинальной						
+POW206	teri ichiga yuborish uchun suspenziya tayyorlash uchun kukun	порошок для приготовления суспензии для внутрикожного введения						
+POW207	mushak ichiga yuborish uchun suspenziya tayyorlash uchun kukun	порошок для приготовления суспензии для внутримышечного введения						
+POW208	boʻgʻim ichiga yuborish uchun suspenziya tayyorlash uchun kukun	порошок для приготовления суспензии для внутрисуставного введения						
+POW209	gastroenteral yuborish uchun suspenziya tayyorlash uchun kukun	порошок для приготовления суспензии для гастроэнтерального введения						
+POW210	inyeksiya uchun suspenziya tayyorlash uchun kukun	порошок для приготовления суспензии для инъекций						
+POW211	taʼsiri uzaytirilgan inyeksiya uchun suspenziya tayyorlash uchun kukun	порошок для приготовления суспензии для инъекций с пролонгированным высвобождением						
+POW212	implantatsiya uchun suspenziya tayyorlash uchun kukun	порошок для приготовления суспензии для имплантации						
+POW213	ingalyatsiya uchun suspenziya tayyorlash uchun kukun	порошок для приготовления суспензии для ингаляций						
+POW214	mahalliy qoʻllash uchun suspenziya tayyorlash uchun kukun	порошок для приготовления суспензии для местного применения						
+POW215	teri ustiga skarifikatsiya sinamasi uchun suspenziya tayyorlash uchun kukun	порошок для приготовления суспензии для накожного скарификационного нанесения						
+POW216	sirtga qoʻllash uchun suspenziya tayyorlash uchun kukun	порошок для приготовления суспензии для наружного применения						
+POW217	boʻgʻim atrofiga yuborish uchun suspenziya tayyorlash uchun kukun	порошок для приготовления суспензии для околосуставного введения						
+POW218	teri ostiga yuborish uchun suspenziya tayyorlash uchun kukun	порошок для приготовления суспензии для подкожного введения						
+POW219	ichga qabul qilish uchun suspenziya tayyorlash uchun kukun	порошок для приготовления суспензии для приема внутрь						
+POW220	ogʻiz boʻshligʻi shilliq qavati uchun suspenziya tayyorlash uchun kukun 	порошок для приготовления суспензии для слизистой оболочки полости рта						
+POW221	endosinusial yuborish uchun suspenziya tayyorlash uchun kukun	порошок для приготовления суспензии для эндосинусиального введения						
+POW222	endotraxeal yuborish uchun suspenziya tayyorlash uchun kukun	порошок для приготовления суспензии для эндотрахеального введения						
+POW223	tish suspenziyasini tayyorlash uchun kukun	порошок для приготовления суспензии зубной						
+POW224	rektal suspenziya tayyorlash uchun kukun	порошок для приготовления суспензии ректальной						
+LYO101	liofilizat	лиофилизат						
+LYO102	vena ichiga yuborish uchun dispersiya tayyorlash uchun liofilizat	лиофилизат для приготовления дисперсии для внутривенного введения						
+LYO103	teri ichiga yuborish uchun dispersiya tayyorlash uchun liofilizat	лиофилизат для приготовления дисперсии для внутрикожного введения						
+LYO104	infuziya uchun dispersiya tayyorlash uchun liofilizat	лиофилизат для приготовления дисперсии для инфузий						
+LYO105	inyeksiya uchun dispersiya tayyorlash uchun liofilizat	лиофилизат для приготовления дисперсии для инъекций						
+LYO106	koʻz tomchilari tayyorlash uchun liofilizat	лиофилизат для приготовления капель глазных						
+LYO107	ajralib chiqishi uzaytirilgan koʻz tomchilari tayyorlash uchun liofilizat	лиофилизат для приготовления капель глазных с пролонгированным высвобождением						
+LYO108	ingalyatsiya uchun tomchi tayyorlash uchun liofilizat	лиофилизат для приготовления капель для ингаляции						
+LYO109	mahalliy qoʻllash uchun tomchi tayyorlash uchun liofilizat	лиофилизат для приготовления капель для местного применения						
+LYO110	ogʻiz boʻshligʻi shilliq qavatida qoʻllash uchun tomchi tayyorlash uchun liofilizat	лиофилизат для приготовления капель для нанесения на слизистую оболочку полости рта						
+LYO111	ichga qabul qilish uchun tomchi tayyorlash uchun liofilizat	лиофилизат для приготовления капель для приема внутрь						
+LYO112	tish tomchilari tayyorlash uchun liofilizat	лиофилизат для приготовления капель зубных						
+LYO113	nazal tomchilari tayyorlash uchun liofilizat	лиофилизат для приготовления капель назальных						
+LYO114	til osti tomchilari tayyorlash uchun liofilizat	лиофилизат для приготовления капель подъязычных						
+LYO115	quloq tomchilari tayyorlash uchun liofilizat	лиофилизат для приготовления капель ушных						
+LYO116	vena ichiga yuborish uchun dispersiya tayyorlash uchun konsentrat tayyorlash uchun liofilizat	лиофилизат для приготовления концентрата для приготовления дисперсии для внутривенного введения						
+LYO117	teri ichiga yuborish uchun dispersiya tayyorlash uchun konsentrat tayyorlash uchun liofilizat	лиофилизат для приготовления концентрата для приготовления дисперсии для внутрикожного введения						
+LYO118	infuziya uchun dispersiya tayyorlash uchun konsentrat tayyorlash uchun liofilizat	лиофилизат для приготовления концентрата для приготовления дисперсии для инфузий						
+LYO119	inyeksiya uchun dispersiya tayyorlash uchun konsentrat tayyorlash uchun liofilizat	лиофилизат для приготовления концентрата для приготовления дисперсии для инъекций						
+LYO120	vaginal eritma tayyorlash uchun konsentrat tayyorlash uchun liofilizat	лиофилизат для приготовления концентрата для приготовления раствора вагинального						
+LYO121	bachadon ichiga eritma tayyorlash uchun konsentrat tayyorlash uchun liofilizat	лиофилизат для приготовления концентрата для приготовления раствора внутриматочного						
+LYO122	arteriya ichiga yuborish uchun eritma tayyorlash uchun konsentrat tayyorlash uchun liofilizat	лиофилизат для приготовления концентрата для приготовления раствора для внутриартериального введения						
+LYO123	qorin boʻshligʻi ichiga yuborish uchun eritma tayyorlash uchun konsentrat tayyorlash uchun liofilizat	лиофилизат для приготовления концентрата для приготовления раствора для внутрибрюшинного введения						
+LYO124	vena ichiga yuborish uchun eritma tayyorlash uchun konsentrat tayyorlash uchun liofilizat	лиофилизат для приготовления концентрата для приготовления раствора для внутривенного введения						
+LYO125	koʻz ichiga yuborish uchun eritma tayyorlash uchun konsentrat tayyorlash uchun liofilizat	лиофилизат для приготовления концентрата для приготовления раствора для внутриглазного введения						
+LYO126	teri ichiga yuborish uchun eritma tayyorlash uchun konsentrat tayyorlash uchun liofilizat	лиофилизат для приготовления концентрата для приготовления раствора для внутрикожного введения						
+LYO127	koronar tomir ichiga yuborish uchun eritma tayyorlash uchun konsentrat tayyorlash uchun liofilizat 	лиофилизат для приготовления концентрата для приготовления раствора для внутрикоронарного введения						
+LYO128	mushak ichiga yuborish uchun eritma tayyorlash uchun konsentrat tayyorlash uchun liofilizat 	лиофилизат для приготовления концентрата для приготовления раствора для внутримышечного введения						
+LYO129	boʻshliq ichiga yuborish uchun eritma tayyorlash uchun konsentrat tayyorlash uchun liofilizat 	лиофилизат для приготовления концентрата для приготовления раствора для внутриполостного введения						
+LYO130	pufak ichiga yuborish uchun eritma tayyorlash uchun konsentrat tayyorlash uchun liofilizat 	лиофилизат для приготовления концентрата для приготовления раствора для внутрипузырного введения						
+LYO131	boʻgʻim ichiga yuborish uchun eritma tayyorlash uchun konsentrat tayyorlash uchun liofilizat 	лиофилизат для приготовления концентрата для приготовления раствора для внутрисуставного введения						
+LYO132	gastroenteral yuborish uchun eritma tayyorlash uchun konsentrat tayyorlash uchun liofilizat	лиофилизат для приготовления концентрата для приготовления раствора для гастроэнтерального введения						
+LYO133	gemodializ uchun eritma tayyorlash uchun konsentrat tayyorlash uchun liofilizat	лиофилизат для приготовления концентрата для приготовления раствора для гемодиализа						
+LYO134	gemodiafiltratsiya uchun eritma tayyorlash uchun konsentrat tayyorlash uchun liofilizat	лиофилизат для приготовления концентрата для приготовления раствора для гемодиафильтрации						
+LYO135	gemofiltratsiya uchun eritma tayyorlash uchun konsentrat tayyorlash uchun liofilizat	лиофилизат для приготовления концентрата для приготовления раствора для гемофильтрации						
+LYO136	ingalyatsiya uchun eritma tayyorlash uchun konsentrat tayyorlash uchun liofilizat	лиофилизат для приготовления концентрата для приготовления раствора для ингаляций						
+LYO137	intraamnial yuborish uchun eritma tayyorlash uchun konsentrat tayyorlash uchun liofilizat	лиофилизат для приготовления концентрата для приготовления раствора для интраамниального введения						
+LYO138	limfa ichiga yuborish uchun eritma tayyorlash uchun konsentrat tayyorlash uchun liofilizat	лиофилизат для приготовления концентрата для приготовления раствора для интралимфатического введения						
+LYO139	intratekal yuborish uchun eritma tayyorlash uchun konsentrat tayyorlash uchun liofilizat 	лиофилизат для приготовления концентрата для приготовления раствора для интратекального введения						
+LYO140	infuziya uchun eritma tayyorlash uchun konsentrat tayyorlash uchun liofilizat 	лиофилизат для приготовления концентрата для приготовления раствора для инфузий						
+LYO141	inyeksiya uchun eritma tayyorlash uchun konsentrat tayyorlash uchun liofilizat 	лиофилизат для приготовления концентрата для приготовления раствора для инъекций						
+LYO142	mahalliy qoʻllash uchun eritma tayyorlash uchun konsentrat tayyorlash uchun liofilizat 	лиофилизат для приготовления концентрата для приготовления раствора для местного применения						
+LYO143	teri ustiga skarifikatsiya sinamasi uchun eritma tayyorlash uchun konsentrat tayyorlash uchun liofilizat  	лиофилизат для приготовления концентрата для приготовления раствора для накожного скарифицированного нанесения						
+LYO144	milklarga surtish uchun eritma tayyorlash uchun konsentrat tayyorlash uchun liofilizat   	лиофилизат для приготовления концентрата для приготовления раствора для нанесения на десны						
+LYO145	sirtga qoʻllash uchun eritma tayyorlash uchun konsentrat tayyorlash uchun liofilizat  	лиофилизат для приготовления концентрата для приготовления раствора для наружного применения						
+LYO146	boʻgʻim atrofiga yuborish uchun eritma tayyorlash uchun konsentrat tayyorlash uchun liofilizat  	лиофилизат для приготовления концентрата для приготовления раствора для околосуставного введения						
+LYO147	meʼdani yuvish uchun eritma tayyorlash uchun konsentrat tayyorlash uchun liofilizat  	лиофилизат для приготовления концентрата для приготовления раствора для орошения желудка						
+LYO148	siydik pufagini yuvish uchun eritma tayyorlash uchun konsentrat tayyorlash uchun liofilizat 	лиофилизат для приготовления концентрата для приготовления раствора для орошения мочевого пузыря						
+LYO149	parabulbar yuborish uchun eritma tayyorlash uchun konsentrat tayyorlash uchun liofilizat 	лиофилизат для приготовления концентрата для приготовления раствора для парабульбарного введения						
+LYO150	peritoneal dializ uchun eritma tayyorlash uchun konsentrat tayyorlash uchun liofilizat 	лиофилизат для приготовления концентрата для приготовления раствора для перитонеального диализа						
+LYO151	teri ostiga yuborish uchun eritma tayyorlash uchun konsentrat tayyorlash uchun liofilizat 	лиофилизат для приготовления концентрата для приготовления раствора для подкожного введения						
+LYO152	chayish uchun eritma tayyorlash uchun konsentrat tayyorlash uchun liofilizat 	лиофилизат для приготовления концентрата для приготовления раствора для полоскания						
+LYO153	ichga qabul qilish uchun eritma tayyorlash uchun konsentrat tayyorlash uchun liofilizat 	лиофилизат для приготовления концентрата для приготовления раствора для приема внутрь						
+LYO154	prik-testni oʻtkazish uchun eritma tayyorlash uchun konsentrat tayyorlash uchun liofilizat 	лиофилизат для приготовления концентрата для приготовления раствора для проведения прик-теста						
+LYO155	koʻzni yuvish uchun eritma tayyorlash uchun konsentrat tayyorlash uchun liofilizat 	лиофилизат для приготовления концентрата для приготовления раствора для промывания глаз						
+LYO156	burun boʻshligʻini yuvish uchun eritma tayyorlash uchun konsentrat tayyorlash uchun liofilizat 	лиофилизат для приготовления концентрата для приготовления раствора для промывания полости носа						
+LYO157	ogʻiz boʻshligʻini chayish uchun eritma tayyorlash uchun granulalar konsentrat tayyorlash uchun liofilizat 	лиофилизат для приготовления концентрата для приготовления раствора для промывания полости рта						
+LYO158	eshitish yoʻlini yuvish uchun eritma tayyorlash uchun konsentrat tayyorlash uchun liofilizat 	лиофилизат для приготовления концентрата для приготовления раствора для промывания слухового прохода						
+LYO159	ogʻiz boʻshligʻi shilliq qavati uchun eritma tayyorlash uchun konsentrat tayyorlash uchun liofilizat 	лиофилизат для приготовления концентрата для приготовления раствора для слизистой оболочки полости рта						
+LYO160	subkonyunktival yuborish uchun eritma tayyorlash uchun konsentrat tayyorlash uchun liofilizat 	лиофилизат для приготовления концентрата для приготовления раствора для субконъюнктивального введения						
+LYO161	ekstraamnial yuborish uchun eritma tayyorlash uchun konsentrat tayyorlash uchun liofilizat 	лиофилизат для приготовления концентрата для приготовления раствора для экстраамниального введения						
+LYO162	endosinusial yuborish uchun eritma tayyorlash uchun konsentrat tayyorlash uchun liofilizat	лиофилизат для приготовления концентрата для приготовления раствора для эндосинусиального введения						
+LYO163	endotraxeal yuborish uchun eritma tayyorlash uchun konsentrat tayyorlash uchun liofilizat 	лиофилизат для приготовления концентрата для приготовления раствора для эндотрахеального введения						
+LYO164	tish eritmasi tayyorlash uchun konsentrat tayyorlash uchun liofilizat	лиофилизат для приготовления концентрата для приготовления раствора зубного						
+LYO165	rektal ertima tayyorlash uchun konsentrat tayyorlash uchun liofilizat	лиофилизат для приготовления концентрата для приготовления раствора ректального						
+LYO166	transdermal eritma tayyorlash uchun konsentrat tayyorlash uchun liofilizat	лиофилизат для приготовления концентрата для приготовления раствора трансдермального						
+LYO167	vaginal suspenziya tayyorlash uchun konsentrat tayyorlash uchun liofilizat	лиофилизат для приготовления концентрата для приготовления суспензии вагинальной						
+LYO168	teri ichiga yuborish uchun eritma tayyorlash uchun konsentrat tayyorlash uchun liofilizat	лиофилизат для приготовления концентрата для приготовления суспензии для внутрикожного введения						
+LYO169	mushak ichiga yuborish uchun eritma eritma tayyorlash uchun konsentrat tayyorlash uchun liofilizat	лиофилизат для приготовления концентрата для приготовления суспензии для внутримышечного введения						
+LYO170	boʻgʻim ichiga yuborish uchun suspenziya tayyorlash uchun konsentrat tayyorlash uchun liofilizat	лиофилизат для приготовления концентрата для приготовления суспензии для внутрисуставного введения						
+LYO171	gastroenteral yuborish uchun suspenziya tayyorlash uchun konsentrat tayyorlash uchun liofilizat	лиофилизат для приготовления концентрата для приготовления суспензии для гастроэнтерального введения						
+LYO172	inyeksiya uchun suspenziya tayyorlash uchun konsentrat tayyorlash uchun liofilizat	лиофилизат для приготовления концентрата для приготовления суспензии для инъекций						
+LYO173	ajralib chiqishi uzaytirilgan inyeksiya uchun suspenziya tayyorlash uchun konsentrat tayyorlash uchun liofilizat 	лиофилизат для приготовления концентрата для приготовления суспензии для инъекций с пролонгированным высвобождением						
+LYO174	implantatsiya uchun suspenziya tayyorlash uchun konsentrat tayyorlash uchun liofilizat	лиофилизат для приготовления концентрата для приготовления суспензии для имплантации						
+LYO175	ingalyatsiya uchun suspenziya tayyorlash uchun konsentrat tayyorlash uchun liofilizat	лиофилизат для приготовления концентрата для приготовления суспензии для ингаляций						
+LYO176	mahalliy qoʻllash uchun suspenziya tayyorlash uchun konsentrat tayyorlash uchun liofilizat	лиофилизат для приготовления концентрата для приготовления суспензии для местного применения						
+LYO177	teri ustiga skarifikatsiya sinamasi uchun suspenziya tayyorlash uchun konsentrat tayyorlash uchun liofilizat	лиофилизат для приготовления концентрата для приготовления суспензии для накожного скарификационного нанесения						
+LYO178	sirtga qoʻllash uchun suspenziya tayyorlash uchun konsentrat tayyorlash uchun liofilizat	лиофилизат для приготовления концентрата для приготовления суспензии для наружного применения						
+LYO179	boʻgʻim atrofiga yuborish uchun suspenziya tayyorlash uchun konsentrat tayyorlash uchun liofilizat 	лиофилизат для приготовления концентрата для приготовления суспензии для околосуставного введения						
+LYO180	teri ostiga yuborish uchun suspenziya tayyorlash uchun konsentrat tayyorlash uchun liofilizat  	лиофилизат для приготовления концентрата для приготовления суспензии для подкожного введения						
+LYO181	suspenziya tayyorlash uchun ichga qabul qilish uchun konsentrat tayyorlash uchun liofilizat  	лиофилизат для приготовления концентрата для приготовления суспензии для приема внутрь						
+LYO182	ogʻiz boʻshligʻi shilliq qavati uchun suspenziya tayyorlash uchun konsentrat tayyorlash uchun liofilizat 	лиофилизат для приготовления концентрата для приготовления суспензии для слизистой оболочки полости рта						
+LYO183	endosinusial yuborish uchun suspenziya tayyorlash uchun konsentrat tayyorlash uchun liofilizat	лиофилизат для приготовления концентрата для приготовления суспензии для эндосинусиального введения						
+LYO184	endotraxeal yuborish uchun suspenziya tayyorlash uchun konsentrat tayyorlash uchun liofilizat	лиофилизат для приготовления концентрата для приготовления суспензии для эндотрахеального введения						
+LYO185	tish suspenziyasi tayyorlash uchun konsentrat tayyorlash uchun liofilizat 	лиофилизат для приготовления концентрата для приготовления суспензии зубной						
+LYO186	rektal suspenziya tayyorlash uchun konsentrat tayyorlash uchun liofilizat 	лиофилизат для приготовления концентрата для приготовления суспензии ректальной						
+LYO187	vaginal emulsiya tayyorlash uchun konsentrat tayyorlash uchun liofilizat	лиофилизат для приготовления концентрата для приготовления эмульсии вагинальной						
+LYO188	bachadon ichiga emulsiya tayyorlash uchun konsentrat tayyorlash uchun liofilizat	лиофилизат для приготовления концентрата для приготовления эмульсии внутриматочной						
+LYO189	vena ichiga yuborish uchun emulsiya tayyorlash uchun konsentrat tayyorlash uchun liofilizat	лиофилизат для приготовления концентрата для приготовления эмульсии для внутривенного введения						
+LYO190	mushak ichiga yuborish uchun emulsiya tayyorlash uchun konsentrat tayyorlash uchun liofilizat	лиофилизат для приготовления концентрата для приготовления эмульсии для внутримышечного введения						
+LYO191	gastroenteral yuborish uchun emulsiya tayyorlash uchun konsentrat tayyorlash uchun liofilizat	лиофилизат для приготовления концентрата для приготовления эмульсии для гастроэнтерального введения						
+LYO192	ingalyatsiya uchun emulsiya tayyorlash uchun konsentrat tayyorlash uchun liofilizat	лиофилизат для приготовления концентрата для приготовления эмульсии для ингаляций						
+LYO193	infuziya uchun emulsiya tayyorlash uchun konsentrat tayyorlash uchun liofilizat	лиофилизат для приготовления концентрата для приготовления эмульсии для инфузий						
+LYO194	inyeksiya uchun emulsiya tayyorlash uchun konsentrat tayyorlash uchun liofilizat	лиофилизат для приготовления концентрата для приготовления эмульсии для инъекций						
+LYO195	mahalliy qoʻllash uchun emulsiya tayyorlash uchun konsentrat tayyorlash uchun liofilizat	лиофилизат для приготовления концентрата для приготовления эмульсии для местного применения						
+LYO196	sirtga qoʻllash uchun emulsiya tayyorlash uchun konsentrat tayyorlash uchun liofilizat	лиофилизат для приготовления концентрата для приготовления эмульсии для наружного применения						
+LYO197	ichga qabul qilish uchun emulsiya tayyorlash uchun konsentrat tayyorlash uchun liofilizat	лиофилизат для приготовления концентрата для приготовления эмульсии для приема внутрь						
+LYO198	eshitish yoʻlini yuvish uchun emulsiya tayyorlash uchun konsentrat tayyorlash uchun liofilizat	лиофилизат для приготовления концентрата для приготовления эмульсии для промывания слухового прохода						
+LYO199	tish emulsiyasi tayyorlash uchun konsentrat tayyorlash uchun liofilizat	лиофилизат для приготовления концентрата для приготовления эмульсии зубной						
+LYO200	rektal emulsiya tayyorlash uchun konsentrat tayyorlash uchun liofilizat	лиофилизат для приготовления концентрата для приготовления эмульсии ректальной						
+LYO201	vaginal eritma tayyorlash uchun liofilizat	лиофилизат для приготовления раствора вагинального						
+LYO202	bachadon ichiga eritma tayyorlash uchun liofilizat	лиофилизат для приготовления раствора внутриматочного						
+LYO203	arteriya ichiga yuborish uchun eritma tayyorlash uchun liofilizat	лиофилизат для приготовления раствора для внутриартериального введения						
+LYO204	qorin boʻshligʻi ichiga yuborish uchun eritma tayyorlash uchun liofilizat	лиофилизат для приготовления раствора для внутрибрюшинного введения						
+LYO205	vena ichiga yuborish uchun eritma tayyorlash uchun liofilizat	лиофилизат для приготовления раствора для внутривенного введения						
+LYO206	koʻz ichiga yuborish uchun eritma tayyorlash uchun liofilizat	лиофилизат для приготовления раствора для внутриглазного введения						
+LYO207	teri ichiga yuborish uchun eritma tayyorlash uchun liofilizat	лиофилизат для приготовления раствора для внутрикожного введения						
+LYO208	koronar tomir ichiga yuborish uchun eritma tayyorlash uchun liofilizat	лиофилизат для приготовления раствора для внутрикоронарного введения						
+LYO209	mushak ichiga yuborish uchun eritma tayyorlash uchun liofilizat 	лиофилизат для приготовления раствора для внутримышечного введения						
+LYO210	boʻshliq ichiga yuborish uchun eritma tayyorlash uchun liofilizat	лиофилизат для приготовления раствора для внутриполостного введения						
+LYO211	pufak ichiga yuborish uchun eritma tayyorlash uchun liofilizat	лиофилизат для приготовления раствора для внутрипузырного введения						
+LYO212	boʻgʻim ichiga yuborish uchun eritma tayyorlash uchun liofilizat	лиофилизат для приготовления раствора для внутрисуставного введения						
+LYO213	gastroenteral yuborish uchun eritma tayyorlash uchun liofilizat	лиофилизат для приготовления раствора для гастроэнтерального введения						
+LYO214	gemodializ uchun eritma tayyorlash uchun liofilizat	лиофилизат для приготовления раствора для гемодиализа						
+LYO215	gemodiafiltratsiya uchun eritma tayyorlash uchun liofilizat	лиофилизат для приготовления раствора для гемодиафильтрации						
+LYO216	gemofiltratsiya uchun eritma tayyorlash uchun liofilizat	лиофилизат для приготовления раствора для гемофильтрации						
+LYO217	ingalyatsiya uchun eritma tayyorlash uchun liofilizat	лиофилизат для приготовления раствора для ингаляций						
+LYO218	intraamniotik (amniotik qavat ichiga) yuborish uchun eritma tayyorlash uchun liofilizat	лиофилизат для приготовления раствора для интраамниального введения						
+LYO219	limfa ichiga yuborish uchun eritma tayyorlash uchun liofilizat	лиофилизат для приготовления раствора для интралимфатического введения						
+LYO220	intratekal yuborish uchun eritma tayyorlash uchun liofilizat	лиофилизат для приготовления раствора для интратекального введения						
+LYO221	infuziya uchun eritma tayyorlash uchun liofilizat	лиофилизат для приготовления раствора для инфузий						
+LYO222	inyeksiya uchun eritma tayyorlash uchun liofilizat	лиофилизат для приготовления раствора для инъекций						
+LYO223	mahalliy qoʻllash uchun eritma tayyorlash uchun liofilizat	лиофилизат для приготовления раствора для местного применения						
+LYO224	teri ustiga skarifikatsiya sinamasi uchun eritma tayyorlash uchun liofilizat	лиофилизат для приготовления раствора для накожного скарифицированного нанесения						
+LYO225	milklarga surtish uchun eritma tayyorlash uchun liofilizat	лиофилизат для приготовления раствора для нанесения на десны						
+LYO226	sirtga qoʻllash uchun eritma tayyorlash uchun liofilizat	лиофилизат для приготовления раствора для наружного применения						
+LYO227	boʻgʻim atrofiga yuborish uchun eritma tayyorlash uchun liofilizat	лиофилизат для приготовления раствора для околосуставного введения						
+LYO228	meʼdani yuvish uchun eritma tayyorlash uchun liofilizat	лиофилизат для приготовления раствора для орошения желудка						
+LYO229	siydik pufagini yuvish uchun eritma tayyorlash uchun liofilizat	лиофилизат для приготовления раствора для орошения мочевого пузыря						
+LYO230	parabulbar yuborish uchun eritma tayyorlash uchun liofilizat	лиофилизат для приготовления раствора для парабульбарного введения						
+LYO231	peritoneal dializa uchun eritma tayyorlash uchun liofilizat	лиофилизат для приготовления раствора для перитонеального диализа						
+LYO232	teri ostiga yuborish uchun eritma tayyorlash uchun liofilizat	лиофилизат для приготовления раствора для подкожного введения						
+LYO233	chayish uchun eritma tayyorlash uchun liofilizat	лиофилизат для приготовления раствора для полоскания						
+LYO234	ichga qabul qilish uchun eritma tayyorlash uchun liofilizat	лиофилизат для приготовления раствора для приема внутрь						
+LYO235	prik-test oʻtkazish uchun eritma tayyorlash uchun liofilizat	лиофилизат для приготовления раствора для проведения прик-теста						
+LYO236	koʻzni yuvish uchun eritma tayyorlash uchun liofilizat	лиофилизат для приготовления раствора для промывания глаз						
+LYO237	burun boʻshligʻini yuvish uchun eritma tayyorlash uchun liofilizat	лиофилизат для приготовления раствора для промывания полости носа						
+LYO238	ogʻiz boʻshligʻini yuvish uchun eritma tayyorlash uchun liofilizat	лиофилизат для приготовления раствора для промывания полости рта						
+LYO239	eshitish yoʻllarini yuvish uchun eritma tayyorlash uchun liofilizat	лиофилизат для приготовления раствора для промывания слухового прохода						
+LYO240	ogʻiz boʻshligʻi shilliq qavati uchun eritma tayyorlash uchun liofilizat	лиофилизат для приготовления раствора для слизистой оболочки полости рта						
+LYO241	subkonyunktival yuborish uchun eritma tayyorlash uchun liofilizat	лиофилизат для приготовления раствора для субконъюнктивального введения						
+LYO242	ekstraamniotik (amniotik qavat sirtiga) yuborish uchun eritma tayyorlash uchun liofilizat	лиофилизат для приготовления раствора для экстраамниального введения						
+LYO243	endosinusial yuborish uchun eritma tayyorlash uchun liofilizat	лиофилизат для приготовления раствора для эндосинусиального введения						
+LYO244	endotraxeal yuborish uchun eritma tayyorlash uchun liofilizat	лиофилизат для приготовления раствора для эндотрахеального введения						
+LYO245	tishga eritma tayyorlash uchun liofilizat	лиофилизат для приготовления раствора зубного						
+LYO246	rektal eritma tayyorlash uchun liofilizat	лиофилизат для приготовления раствора ректального						
+LYO247	transdermal eritma tayyorlash uchun liofilizat	лиофилизат для приготовления раствора трансдермального						
+LYO248	mahalliy qoʻllash uchun sprey tayyorlash uchun liofilizat	лиофилизат для приготовления спрея для местного применения						
+LYO249	sirtga qoʻllash uchun sprey tayyorlash uchun liofilizat	лиофилизат для приготовления спрея для наружного применения						
+LYO250	ogʻiz shilliq qavti uchun sprey tayyorlash uchun liofilizat	лиофилизат для приготовления спрея для слизистой оболочки полости рта						
+LYO251	nazal sprey tayyorlash uchun liofilizat	лиофилизат для приготовления спрея назального						
+LYO252	til ostiga dozalangan sprey tayyorlash uchun liofilizat	лиофилизат для приготовления спрея подъязычного дозированного						
+LYO253	transdermal sprey tayyorlash uchun liofilizat	лиофилизат для приготовления спрея трансдермального						
+LYO254	quloqga sprey tayyorlash uchun liofilizat	лиофилизат для приготовления спрея ушного						
+LYO255	vaginal suspenziya tayyorlash uchun liofilizat	лиофилизат для приготовления суспензии вагинальной						
+LYO256	teri ichiga yuborish uchun suspenziya tayyorlash uchun liofilizat	лиофилизат для приготовления суспензии для внутрикожного введения						
+LYO257	mushak ichiga yuborish uchun suspenziya tayyorlash uchun liofilizat	лиофилизат для приготовления суспензии для внутримышечного введения						
+LYO258	boʻgʻim ichiga yuborish uchun suspenziya tayyorlash uchun liofilizat	лиофилизат для приготовления суспензии для внутрисуставного введения						
+LYO259	gastroenteral yuborish uchun suspenziya tayyorlash uchun liofilizat	лиофилизат для приготовления суспензии для гастроэнтерального введения						
+LYO260	inyeksiya uchun suspenziya tayyorlash uchun liofilizat	лиофилизат для приготовления суспензии для инъекций						
+LYO261	taʼsiri uzaytirilgan inyeksiya uchun suspenziya tayyorlash uchun liofilizat	лиофилизат для приготовления суспензии для инъекций с пролонгированным высвобождением						
+LYO262	implantatsiya uchun suspenziya tayyorlash uchun liofilizat	лиофилизат для приготовления суспензии для имплантации						
+LYO263	ingalyatsiya uchun suspenziya tayyorlash uchun liofilizat	лиофилизат для приготовления суспензии для ингаляций						
+LYO264	mahalliy qoʻllash uchun suspenziya tayyorlash uchun liofilizat	лиофилизат для приготовления суспензии для местного применения						
+LYO265	teri ustiga skarifikatsiya sinamasi uchun suspenziya tayyorlash uchun liofilizat	лиофилизат для приготовления суспензии для накожного скарификационного нанесения						
+LYO266	sirtga qoʻllash uchun suspenziya tayyorlash uchun liofilizat	лиофилизат для приготовления суспензии для наружного применения						
+LYO267	boʻgʻim atrofiga yuborish uchun suspenziya tayyorlash uchun liofilizat	лиофилизат для приготовления суспензии для околосуставного введения						
+LYO268	teri ostiga yuborish uchun suspenziya tayyorlash uchun liofilizat	лиофилизат для приготовления суспензии для подкожного введения						
+LYO269	ichga qabul qilish uchun suspenziya tayyorlash uchun liofilizat	лиофилизат для приготовления суспензии для приема внутрь						
+LYO270	ogʻiz boʻshligʻi shilliq qavati uchun suspenziya tayyorlash uchun liofilizat	лиофилизат для приготовления суспензии для слизистой оболочки полости рта						
+LYO271	endosinusial yuborish uchun suspenziya tayyorlash uchun liofilizat	лиофилизат для приготовления суспензии для эндосинусиального введения						
+LYO272	endotraxeal yuborish uchun suspenziya tayyorlash uchun liofilizat	лиофилизат для приготовления суспензии для эндотрахеального введения						
+LYO273	tishga suspenziya tayyorlash uchun liofilizat	лиофилизат для приготовления суспензии зубной						
+LYO274	rektal suspenziya tayyorlash uchun liofilizat	лиофилизат для приготовления суспензии ректальной						
+LYO275	vaginal emulsiya tayyorlash uchun liofilizat 	лиофилизат для приготовления эмульсии вагинальной						
+LYO276	bachadon ichiga emulsiya tayyorlash uchun liofilizat	лиофилизат для приготовления эмульсии внутриматочной						
+LYO277	vena ichiga yuborish uchun emulsiya tayyorlash uchun liofilizat	лиофилизат для приготовления эмульсии для внутривенного введения						
+LYO278	mushak ichiga yuborish uchun emulsiya tayyorlash uchun liofilizat	лиофилизат для приготовления эмульсии для внутримышечного введения						
+LYO279	gastroenteral yuborish uchun emulsiya tayyorlash uchun liofilizat	лиофилизат для приготовления эмульсии для гастроэнтерального введения						
+LYO280	ingalyatsiya uchun emulsiya tayyorlash uchun liofilizat	лиофилизат для приготовления эмульсии для ингаляций						
+LYO281	infuziya uchun emulsiya tayyorlash uchun liofilizat	лиофилизат для приготовления эмульсии для инфузий						
+LYO282	inyeksiya uchun emulsiya tayyorlash uchun liofilizat	лиофилизат для приготовления эмульсии для инъекций						
+LYO283	mahalliy qoʻllash uchun emulsiya tayyorlash uchun liofilizat	лиофилизат для приготовления эмульсии для местного применения						
+LYO284	sirtga qoʻllash uchun emulsiya tayyorlash uchun liofilizat	лиофилизат для приготовления эмульсии для наружного применения						
+LYO285	ichga qabul qilish uchun emulsiya tayyorlash uchun liofilizat	лиофилизат для приготовления эмульсии для приема внутрь						
+LYO286	eshitish yoʻllarini yuvish uchun emulsiya tayyorlash uchun liofilizat	лиофилизат для приготовления эмульсии для промывания слухового прохода						
+LYO287	tishga emulsiya tayyorlash uchun liofilizat	лиофилизат для приготовления эмульсии зубной						
+LYO288	rektal emulsiya tayyorlash uchun liofilizat	лиофилизат для приготовления эмульсии ректальной						
+PIL101	pilyulalar	пилюли						
+PLA101	plasterlar	пластырь						
+PLA102	teri yuzasiga yopishtirish uchun plasterlar	пластырь для наклеивания на поверхность кожи						
+PLA103	ogʻiz boʻshligʻi shilliq qavati uchun plasterlar	пластырь для слизистой оболочки полости рта						
+PLA104	transdermal plasterlar	пластырь трансдермальный						
+TIL101	plitkalar	плитки						
+FIL101	plyonkalar	пленки						
+FIL102	koʻz plyonkalari	пленки глазные						
+FIL103	ogʻiz boʻshligʻida dispersiyalanadigan plyonkalar	пленки, диспергируемые в полости рта						
+FIL104	milkka yopishtirish uchun plenkalar	пленки для наклеивания на десну						
+FIL105	lunj plyonkalari	пленки защечные						
+FIL106	periodontal plyonkalar	пленки периодонтальные						
+FIL107	til osti plyonkalari	пленки подъязычные						
+DRM101	quruq ekstrakt	экстракт сухой						
+SUP101	suppozitoriylar	суппозитории						
+SUP102	vaginal suppazitoriylar	суппозитории вагинальные						
+SUP103	rektal suppozitoriylar	суппозитории ректальные						
+SYS101	sistema	система						
+SYS102	vaginal terapevtik sistema	система вагинальная терапевтическая						
+SYS103	bachadon ichiga terapevtik sistema	система внутриматочная терапевтическая						
+AMW101	soʻriladigan dorivor salfetkalar	салфетки лекарственные рассасывающиеся						
+TAB101	tabletkalar	таблетки						
+TAB102	vaginal tabletkalar	таблетки вагинальные						
+TAB103	vishillovchi vaginal tabletkalari	таблетки вагинальные шипучие						
+TAB104	bachadon ichi tabletkalari	таблетки внутриматочные						
+TAB105	ogʻiz boʻshligʻida dispersiyalanadigan tabletkalar	таблетки, диспергируемые в полости рта						
+TAB106	dispersiyalanadigan tabletkalar	таблетки диспергируемые						
+TAB107	implantatsiya uchun tabletkalar	таблетки для имплантации						
+TAB108	ingalyatsiya uchun tabletkalar	таблетки для ингаляций						
+TAB109	shimish uchun tabletkalar	таблетки для рассасывания						
+TAB110	chaynaladigan tabletkalar	таблетки жевательные						
+TAB111	lunj orti sohasiga qo’llash uchun tabletkalar	таблетки защечные						
+TAB112	lunj orti sohasiga qoʻllash uchun mukoadgeziv tabletkalar	таблетки защечные мукоадгезивные						
+TAB113	ichakda eriydigan tabletkalar	таблетки кишечнорастворимые						
+TAB114	ichakda eriydigan, taʼsiri uzaytirilgan tabletkalar	таблетки кишечнорастворимые с пролонгированным высвобождением						
+TAB115	liofilizat tabletkalar	таблетки лиофилизат						
+TAB116	til osti tabletkalar	таблетки подъязычные						
+TAB117	qobiq bilan qoplangan tabletkalar	таблетки, покрытые оболочкой						
+TAB118	plyonka qobiq bilan qoplangan tabletkalar	таблетки, покрытые пленочной оболочкой						
+TAB119	eruvchi tabletkalar	таблетки растворимые						
+TAB120	ajralib chiqarilishi modifikatsiyalangan tabletkalar	таблетки с модифицированным высвобождением						
+TAB121	taʼsiri uzaytirilgan tabletkalar	таблетки с пролонгированным высвобождением						
+TAB122	vishillovchi tabletkalar	таблетки шипучие						
+TAB123	koʻz tomchilarini tayyorlash uchun tabletkalar	таблетки для приготовления капель глазных						
+TAB124	taʼsiri uzaytirilgan koʻz tomchilarini tayyorlash uchun tabletkalar	таблетки для приготовления капель глазных с пролонгированным высвобождением						
+TAB125	ingalyatsiya uchun tomchi tayyorlash uchun tabletkalar	таблетки для приготовления капель для ингаляции						
+TAB126	mahalliy qoʻllash uchun tomchi tayyorlash uchun tabletkalar	таблетки для приготовления капель для местного применения						
+TAB127	ogʻiz boʻshligʻiga surtish uchun tomchi tayyorlash uchun tabletkalar	таблетки для приготовления капель для нанесения на слизистую оболочку полости рта						
+TAB128	ichga qabul qilish uchun tomchi tayyorlash uchun tabletkalar	таблетки для приготовления капель для приема внутрь						
+TAB129	tishga tomchi tayyorlash uchun tabletkalar	таблетки для приготовления капель зубных						
+TAB130	burun tomchilarini tayyorlash uchun tabletkalar	таблетки для приготовления капель назальных						
+TAB131	til ostiga tomchi tayyorlash uchun tabletkalar	таблетки для приготовления капель подъязычных						
+TAB132	quloq tomchilari tayyorlash uchun tabletkalar	таблетки для приготовления капель ушных						
+TAB133	qin ichiga eritma tayyorlash uchun tabletkalar 	таблетки для приготовления раствора вагинального						
+TAB134	bachadon ichiga eritma tayyorlash uchun tabletkalar	таблетки для приготовления раствора внутриматочного						
+TAB135	arteriya ichiga yuborish uchun eritma tayyorlash uchun tabletkalar	таблетки для приготовления раствора для внутриартериального введения						
+TAB136	qorin boʻshligʻi ichiga yuborish uchun eritmani tayyorlash uchun tabletkalar	таблетки для приготовления раствора для внутрибрюшинного введения						
+TAB137	vena ichiga yuborish uchun eritmani tayyorlash uchun tabletkalar	таблетки для приготовления раствора для внутривенного введения						
+TAB138	koʻz ichiga yuborish uchun eritma tayyorlash uchun tabletkalar	таблетки для приготовления раствора для внутриглазного введения						
+TAB139	teri ichiga yuborish uchun eritmani tayyorlash uchun tabletkalar	таблетки для приготовления раствора для внутрикожного введения						
+TAB140	koronar tomir ichiga yuborish uchun eritma tayyorlash uchun tabletkalar	таблетки для приготовления раствора для внутрикоронарного введения						
+TAB141	mushak ichiga yuborish uchun eritma tayyorlash uchun tabletkalar	таблетки для приготовления раствора для внутримышечного введения						
+TAB142	boʻshliq ichiga yuborish uchun eritma tayyorlash uchun tabletkalar	таблетки для приготовления раствора для внутриполостного введения						
+TAB143	pufak ichiga yuborish uchun eritmani tayyorlash uchun tabletkalar	таблетки для приготовления раствора для внутрипузырного введения						
+TAB144	boʻgʻim ichiga yuborish uchun eritma tayyorlash uchun tabletkalar	таблетки для приготовления раствора для внутрисуставного введения						
+TAB145	gastroenteral yuborish uchun eritmani tayyorlash uchun tabletkalar 	таблетки для приготовления раствора для гастроэнтерального введения						
+TAB146	gemodializ uchun eritma tayyorlash uchun tabletkalar 	таблетки для приготовления раствора для гемодиализа						
+TAB147	gemofiltratsiya uchun eritma tayyorlash uchun tabletkalar	таблетки для приготовления раствора для гемофильтрации						
+TAB148	ingalyatsiya uchun eritma tayyorlash uchun tabletkalar	таблетки для приготовления раствора для ингаляций						
+TAB149	intraamniotik (amniotik qavat ichiga) yuborish uchun 	таблетки для приготовления раствора для интраамниального введения						
+TAB150	limfa ichiga yuborish uchun eritma tayyorlash uchun tabletkalar 	таблетки для приготовления раствора для интралимфатического введения						
+TAB151	infuziya uchun eritmani tayyorlash uchun tabletkalar	таблетки для приготовления раствора для инфузий						
+TAB152	inyeksiya uchun eritmani tayyorlash uchun tabletkalar	таблетки для приготовления раствора для инъекций						
+TAB153	mahalliy qoʻllash uchun eritmani tayyorlash uchun tabletkalar	таблетки для приготовления раствора для местного применения						
+TAB154	teri ustiga skarifikatsiya sinamasi uchun eritmani tayyorlash uchun tabletkalar	таблетки для приготовления раствора для накожного скарифицированного нанесения						
+TAB155	milklarga surtish uchun eritma tayyorlash uchun tabletkalar	таблетки для приготовления раствора для нанесения на десны						
+TAB156	sirtga qoʻllash uchun eritma tayyorlash uchun tabletkalar	таблетки для приготовления раствора для наружного применения						
+TAB157	boʻgʻim atrofiga yuborish uchun eritma tayyorlash uchun tabletkalar	таблетки для приготовления раствора для околосуставного введения						
+TAB158	meʼdani yuvish uchun eritma tayyorlash uchun tabletkalar	таблетки для приготовления раствора для орошения желудка						
+TAB159	siydik pufagini yuvish uchun eritma tayyorlash uchun tabletkalar	таблетки для приготовления раствора для орошения мочевого пузыря						
+TAB160	parabulbar yuborish uchun eritma tayyorlash uchun tabletkalar	таблетки для приготовления раствора для парабульбарного введения						
+TAB161	peritoneal dializ uchun eritma tayyorlash uchun tabletkalar	таблетки для приготовления раствора для перитонеального диализа						
+TAB162	teri ostiga yuborish uchun eritma tayyorlash uchun tabletkalar	таблетки для приготовления раствора для подкожного введения						
+TAB163	chayish uchun eritma tayyorlash uchun tabletkalar	таблетки для приготовления раствора для полоскания						
+TAB164	ichga qabul qilish uchun eritma tayyorlash uchun tabletkalar	таблетки для приготовления раствора для приема внутрь						
+TAB165	prik-test oʻtkazish uchun eritma tayyorlash uchun tabletkalar	таблетки для приготовления раствора для проведения прик-теста						
+TAB166	koʻzni yuvish uchun eritma tayyorlash uchun tabletkalar	таблетки для приготовления раствора для промывания глаз						
+TAB167	burun boʻshligʻini yuvish uchun eritma tayyorlash uchun tabletkalar	таблетки для приготовления раствора для промывания полости носа						
+TAB168	ogʻiz boʻshligʻini yuvish uchun eritma tayyorlash uchun tabletkalar	таблетки для приготовления раствора для промывания полости рта						
+TAB169	eshitish yoʻllarini yuvish uchun eritma tayyorlash uchun tabletkalar	таблетки для приготовления раствора для промывания слухового прохода						
+TAB170	ogʻiz boʻshligʻi shilliq qavati uchun eritma tayyorlash uchun tabletkalar	таблетки для приготовления раствора для слизистой оболочки полости рта						
+TAB171	subkonyunktival yuborish uchun eritma tayyorlash uchun tabletkalar	таблетки для приготовления раствора для субконъюктивального введения						
+TAB172	ekstraamniotik (amniotik qavat sirtiga) yuborish uchun eritma tayyorlash uchun tabletkalar	таблетки для приготовления раствора для экстраамниального введения						
+TAB173	endosinusial yuborish uchun eritmani tayyorlash uchun tabletkalar	таблетки для приготовления раствора для эндосинусиального введения						
+TAB174	endotraxeal yuborish uchun eritmani tayyorlash uchun tabletkalar	таблетки для приготовления раствора для эндотрахеального введения						
+TAB175	tish eritmasi tayyorlash uchun tabletkalar	таблетки для приготовления раствора зубного						
+TAB176	rektal eritma tayyorlash uchun tabletkalar	таблетки для приготовления раствора ректального						
+TAB177	transdermal eritma tayyorlash uchun tabletkalar	таблетки для приготовления раствора трансдермального						
+TAB178	vaginal suspenziya tayyorlash uchun tabletkalar	таблетки для приготовления суспензии вагинальной						
+TAB179	teri ichiga yuborish uchun suspenziya tayyorlash uchun tabletkalar	таблетки для приготовления суспензии для внутрикожного введения						
+TAB180	mushak ichiga yuborish uchun suspenziya tayyorlash uchun tabletkalar	таблетки для приготовления суспензии для внутримышечного введения						
+TAB181	boʻgʻim ichiga yuborish uchun suspenziyani tayyorlash uchun tabletkalar 	таблетки для приготовления суспензии для внутрисуставного введения						
+TAB182	gastroenteral yuborish uchun suspenziya tayyorlash uchun tabletkalar	таблетки для приготовления суспензии для гастроэнтерального введения						
+TAB183	inyeksiya uchun suspenziya tayyorlash uchun tabletkalar	таблетки для приготовления суспензии для инъекций						
+TAB184	taʼsiri uzaytirilgan inyeksiya uchun suspenziya tayyorlash uchun tabletkalar	таблетки для приготовления суспензии для инъекций с пролонгированным высвобождением						
+TAB185	implantatsiya uchun suspenziya tayyorlash uchun tabletkalar	таблетки для приготовления суспензии для имплантации						
+TAB186	ingalyatsiya uchun suspenziya tayyorlash uchun tabletkalar	таблетки для приготовления суспензии для ингаляций						
+TAB187	mahalliy qoʻllash uchun suspenziya tayyorlash uchun tabletkalar	таблетки для приготовления суспензии для местного применения						
+TAB188	teri ustiga skarifikatsiya sinamasi uchun suspenziya tayyorlash uchun tabletkalar	таблетки для приготовления суспензии для накожного скарификационного нанесения						
+TAB189	sirtga qoʻllash uchun suspenziya tayyorlash uchun tabletkalar	таблетки для приготовления суспензии для наружного применения						
+TAB190	boʻgʻim atrofiga yuborish uchun suspenziya tayyorlash uchun tabletkalar	таблетки для приготовления суспензии для околосуставного введения						
+TAB191	teri ostiga yuborish uchun suspenziya tayyorlash uchun tabletkalar	таблетки для приготовления суспензии для подкожного введения						
+TAB192	ichga qabul qilish uchun suspenziya tayyorlash uchun tabletkalar	таблетки для приготовления суспензии для приема внутрь						
+TAB193	ogʻiz boʻshligʻi shilliq qavati uchun suspenziya tayyorlash uchun tabletkalar	таблетки для приготовления суспензии для слизистой оболочки полости рта						
+TAB194	endosinusial yuborish uchun suspenziya tayyorlash uchun tabletkalar	таблетки для приготовления суспензии для эндосинусиального введения						
+TAB195	endotraxeal yuborish uchun suspenziyani tayyorlash uchun tabletkalar	таблетки для приготовления суспензии для эндотрахеального введения						
+TAB196	tish suspenziyasini tayyorlash uchun tabletkalar	таблетки для приготовления суспензии зубной						
+TAB197	rektal suspenziyani tayyorlash uchun tabletkalar	таблетки для приготовления суспензии ректальной						
+TAM101	dorivor tamponlar	тампоны лекарственные						
+TAM102	vaginal dorivor tamponlar	тампоны лекарственные вагинальные						
+TAM103	ingalyatsiya uchun dorivor tamponlar	тампоны лекарственные для ингаляций						
+TAM104	rektal dorivor tamponlar	тампоны лекарственные ректальные						
+TAM105	quloq uchun dorivor tamponlar	тампоны лекарственные ушные						
+STI101	tayoqchalar	палочки						
+STI102	dental tayoqchalar	палочки дентальные						
+STI103	nazal tayoqchalar	палочки назальные						
+STI104	periodontal tayoqchalar	палочки периодонтальные						
+STI105	siydik yoʻllari tayoqchalari	палочки уретральные						
+STI106	quloq tayoqchalari	палочки ушные						
+MED101	dorivor tirnoq boʻyogʻi	лак для ногтей лекарственный						
+EXT101	mahalliy qoʻllash uchun ekstrakt	экстракт для местного применения						
+EXT102	sirtga qoʻllash uchun ekstrakt	экстракт для наружного применения						
+EXT103	ichga qabul qilish uchun ekstrakt	экстракт для приема внутрь						
+SLT102	erituvchi	растворитель						
+OTH101	boshqa dori shakllari	другие лекарственные формы						

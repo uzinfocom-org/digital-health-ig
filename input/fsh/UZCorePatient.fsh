@@ -9,7 +9,7 @@ Description: "Uzbekistan Core Patient profile, used to represent patients admini
 * ^publisher = "Uzinfocom"
 
 * identifier 1..* MS
-  * extension contains data-absent-reason named data-absent-reason 0..1 MS
+  * value.extension contains data-absent-reason named data-absent-reason 0..1 MS
 * identifier.use from IdentifierUseVS (required)
 * identifier.type from IdentifierTypeVS (required)
 * identifier ^slicing.discriminator.type = #value
@@ -37,7 +37,7 @@ Description: "Uzbekistan Core Patient profile, used to represent patients admini
   * system 1..1 MS
   * system = $passport-local
   * type 1..1 MS
-  * type = $identifier-type#PPN "Passport number"
+  * type = $identifier-type#PPN
   * use = #official
   * value 1..1 MS
 
@@ -45,7 +45,7 @@ Description: "Uzbekistan Core Patient profile, used to represent patients admini
   * system 1..1 MS
   * system = $passport-international
   * type 1..1 MS
-  * type = $identifier-type#PPN "Passport number"
+  * type = $identifier-type#PPN
   * use = #official
   * value 1..1 MS
 
@@ -55,15 +55,16 @@ Description: "Uzbekistan Core Patient profile, used to represent patients admini
   * system 1..1 MS
   * system from ForeignPassportSystemVS (required)
   * type 1..1 MS
-  * type = $identifier-type#PPN "Passport number"
+  * type = $identifier-type#PPN
   * use = #official
   * value 1..1 MS
 
 * identifier[nationalId]
+  * ^short = "PINFL of the patient"
   * system 1..1 MS
   * system = $nationaluniqueID
   * type 1..1 MS
-  * type = $identifier-type#NI "National unique individual identifier"
+  * type = $identifier-type#NI
   * use = #official
   * value 1..1 MS
 
@@ -71,7 +72,7 @@ Description: "Uzbekistan Core Patient profile, used to represent patients admini
   * system 1..1 MS
   * system = $birthcertificate
   * type 1..1 MS
-  * type = $identifier-type#BCT "Birth Certificate"
+  * type = $identifier-type#BCT
   * use = #official
   * value 1..1 MS
 
@@ -79,7 +80,7 @@ Description: "Uzbekistan Core Patient profile, used to represent patients admini
   * system 1..1 MS
   * system = $driverslicense
   * type 1..1 MS
-  * type = $identifier-type#DL "Driver's license number"
+  * type = $identifier-type#DL
   * use = #official
   * value 1..1 MS
 
@@ -89,7 +90,7 @@ Description: "Uzbekistan Core Patient profile, used to represent patients admini
   * system 1..1 MS
   * system from ForeignDriversLicenseSystemVS (required)
   * type 1..1 MS
-  * type = $identifier-type#DL "Driver's license number"
+  * type = $identifier-type#DL
   * use = #official
   * value 1..1 MS
 
@@ -97,7 +98,7 @@ Description: "Uzbekistan Core Patient profile, used to represent patients admini
   * system 1..1 MS
   * system = $diplomaticpassport
   * type 1..1 MS
-  * type = $identifier-type#DP "Diplomatic Passport"
+  * type = $identifier-type#DP
   * use = #official
   * value 1..1 MS
 
@@ -105,7 +106,7 @@ Description: "Uzbekistan Core Patient profile, used to represent patients admini
   * system 1..1 MS
   * system = $healthcard
   * type 1..1 MS
-  * type = $identifier-type#HC "Health card number"
+  * type = $identifier-type#HC
   * use = #official
   * value 1..1 MS
 
@@ -113,7 +114,7 @@ Description: "Uzbekistan Core Patient profile, used to represent patients admini
   * system 1..1 MS
   * system = $militaryID
   * type 1..1 MS
-  * type = $identifier-type#MI "Military ID number"
+  * type = $identifier-type#MI
   * use = #official
   * value 1..1 MS
 
@@ -121,7 +122,7 @@ Description: "Uzbekistan Core Patient profile, used to represent patients admini
   * system 1..1 MS
   * system = $penitentiaryinstitution
   * type 1..1 MS
-  * type = $identifier-type#PCN "Penitentiary/correctional institution Number"
+  * type = $identifier-type#PCN
   * use = #official
   * value 1..1 MS
 
@@ -131,7 +132,7 @@ Description: "Uzbekistan Core Patient profile, used to represent patients admini
   * system 1..1 MS
   * system = $temp-medical-record-pattern
   * type 1..1 MS
-  * type = $identifier-type#MRT "Temporary Medical Record Number"
+  * type = $identifier-type#MRT
   * use = #temp
   * value 1..1 MS
 
@@ -141,7 +142,7 @@ Description: "Uzbekistan Core Patient profile, used to represent patients admini
   * system 1..1 MS
   * system = $unknownpatient
   * type 1..1 MS
-  * type = $identifier-type#MR "Medical record number"
+  * type = $identifier-type#MR
   * use = #temp
   * value 1..1 MS
 
@@ -151,11 +152,11 @@ Description: "Uzbekistan Core Patient profile, used to represent patients admini
   * system 1..1 MS
   * system = $pension-number
   * type 1..1 MS
-  * type = $identifier-type#PEN "Pension number"
+  * type = $identifier-type#PEN
   * use = #official
   * value 1..1 MS
 
-* extension contains patient-nationality named nationality 0..1 MS and
+* extension contains PatientNationality named nationality 0..1 MS and
     patient-citizenship named citizenship 0..1 MS and
     ManagingOrganizationAttachment named managingOrganizationAttachment 0..1 MS
 * extension[nationality].extension[code].valueCodeableConcept from NationalityVS (required)
@@ -219,7 +220,7 @@ Usage: #example
   * name.text = "Ваисов Раис"
   * gender = #male
 * maritalStatus = $v3-MaritalStatus#W "Вдовец, вдова"
-* extension[nationality].extension[code].valueCodeableConcept = NationalityCS#23 "Азербайджанцы"
+* extension[nationality].extension[code].valueCodeableConcept = $nationality-cs#23 "КАРЕЛ/КАРЕЛКА"
 * extension[managingOrganizationAttachment].valueDate = "2024-03-15"
 
 Instance: example-david
@@ -255,7 +256,7 @@ Usage: #example
   * gender = #male
 * maritalStatus = $v3-MaritalStatus#M "Состоит в браке"
 * multipleBirthInteger = 2
-* extension[nationality].extension[code].valueCodeableConcept = NationalityCS#32 "Армяне"
+* extension[nationality].extension[code].valueCodeableConcept = $nationality-cs#33 "НЕМЕЦ/НЕМКА"
 
 Instance: example-emma
 InstanceOf: UZCorePatient
@@ -291,4 +292,16 @@ Usage: #example
   * gender = #female
 * maritalStatus = $v3-MaritalStatus#U "Unmarried"
 * multipleBirthInteger = 2
-* extension[nationality].extension[code].valueCodeableConcept = NationalityCS#42 "British"
+* extension[nationality].extension[code].valueCodeableConcept = $nationality-cs#42 "TURKMAN"
+
+Instance: example-unidentified-patient
+InstanceOf: UZCorePatient
+Description: "Unidentified patient brought in unconscious, with no identifier available. Patient.identifier is mandatory (1..*), so rather than inventing a fake value the single identifier carries a data-absent-reason extension - the resource still validates without fabricating data."
+Usage: #example
+* identifier
+  * use = #temp
+  * value.extension[data-absent-reason].valueCode = #unknown
+* active = true
+* name
+  * use = #anonymous
+  * text = "Unidentified patient"
