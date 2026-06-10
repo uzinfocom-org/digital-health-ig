@@ -10,8 +10,10 @@ Usage: #definition
 * description = "Uzbek display translations for units in MedicationTotalVolumeUnitsVS (UCUM + local)."
 
 // связь с ValueSet
+* sourceScopeCanonical = Canonical(MedicationTotalVolumeUnitsVS)
 * group.source = $ucum
 * group.target = Canonical(MedicationTotalVolumeUCUMUnitsCS)
+* targetScopeCanonical = $ucum-vs
 
 * group.element[+].code = #%
 * group.element[=].display = "%"
