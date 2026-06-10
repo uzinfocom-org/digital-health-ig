@@ -256,7 +256,7 @@ Description: "Laboratory Report types in Uzbekistan with translations"
 
 * #lab-rep-43 "Limfa-uzel UTT tekshiruv bayoni"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Протокол УЗИ лимфатических узлов "
+  * ^designation[=].value = "Протокол УЗИ лимфатических узлов"
   * ^designation[+].language = #en
   * ^designation[=].value = "Lymph Node Ultrasound Report"
 
@@ -316,7 +316,7 @@ Description: "Laboratory Report types in Uzbekistan with translations"
 
 * #lab-rep-53 "Beshlik qon tahlili"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Анализ крови пятипараметрический "
+  * ^designation[=].value = "Анализ крови пятипараметрический"
   * ^designation[+].language = #en
   * ^designation[=].value = "Five-Parameter Blood Test"
 
@@ -388,7 +388,7 @@ Description: "Laboratory Report types in Uzbekistan with translations"
 
 * #lab-rep-65 "Siydik shakliy elementlar sonini aniqlash tahlili"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Анализ мочи на количество форменных элементов "
+  * ^designation[=].value = "Анализ мочи на количество форменных элементов"
   * ^designation[+].language = #en
   * ^designation[=].value = "Urine Formed Elements Count Test"
 
@@ -688,7 +688,7 @@ Description: "Laboratory Report types in Uzbekistan with translations"
 
 * #lab-rep-115 "Sud-tibbiy laboratoriya va mutaxassis maslahatiga yo'llanma dalolatnomasi"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Акт направления на судебно-медицинскую лабораторию и консультацию специалиста "
+  * ^designation[=].value = "Акт направления на судебно-медицинскую лабораторию и консультацию специалиста"
   * ^designation[+].language = #en
   * ^designation[=].value = "Referral Act for Forensic Medical Laboratory and Specialist Consultation"
 
@@ -844,7 +844,7 @@ Description: "Laboratory Report types in Uzbekistan with translations"
 
 * #lab-rep-141 "Dozimetrik o'lchov bo'yicha -sonli bayonnoma"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Числовой протокол дозиметрических измерений "
+  * ^designation[=].value = "Числовой протокол дозиметрических измерений"
   * ^designation[+].language = #en
   * ^designation[=].value = "Numerical Protocol for Dosimetric Measurements"
 
