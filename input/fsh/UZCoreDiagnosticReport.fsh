@@ -15,15 +15,13 @@ Description: "Uzbekistan Core profile for AllergyIntolerance, representing clini
   * ^short = "What was requested"
 * status MS
 * status from DiagnosticReportStatusVS
-  * ^short = "Diagnostic Report status . Binding : http://hl7.org/fhir/diagnostic-report-status"
 * category MS
 * category from DiagnosticReportServiceCategoryVS
-  * ^short = "Service category Binding: http://terminology.hl7.org/CodeSystem/v2-0074"
 * code MS
-* code from LabReportTypesVS
-  * ^short = "Type of Report Binding: LabReportTypesVS"
+* code from LabReportTypesVS (extensible)
+  * ^short = "Report types used in Ministry of Health of Uzbekistan (399)"
 * subject MS
-* subject only Reference(Patient or Organization or Practitioner)
+* subject only Reference(UZCorePatient or UZCoreOrganization or UZCorePractitioner or UZCoreLocation or UZCoreMedication or UZCoreEncounter)
   * ^short = "Who and/or what this report is about"
 * encounter MS
 * encounter only Reference(Encounter)

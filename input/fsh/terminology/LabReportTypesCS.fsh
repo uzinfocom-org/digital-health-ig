@@ -1,7 +1,7 @@
 CodeSystem: LabReportTypesCS
 Id: lab-report-types-cs
 Title: "Laboratory Report types"
-Description: "Laboratory Report types in Uzbekistan with translations"
+Description: "This CodeSystem contains laboratory report types used in Uzbekistan, including translations, based on Order No. 399 of the Ministry of Health of the Republic of Uzbekistan."
 * insert OriginalCodeSystemDraft(lab-report-types-cs)
 * #lab-rep-01 "Laboratoriya hisoboti"
   * ^designation[0].language = #ru
