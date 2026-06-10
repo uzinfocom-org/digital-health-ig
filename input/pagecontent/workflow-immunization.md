@@ -11,7 +11,7 @@ The chain:
 The national schedule is published once as a [PlanDefinition](StructureDefinition-uz-core-immunization-plan-definition.html). Each recommended dose is a `PlanDefinition.action`; the vaccine and dosing detail are carried on the action, via `definitionCanonical` to an `ActivityDefinition`, or via the national extensions (`doseSequence`, `maximumInterval`, `gracePeriod`). Minimum intervals between doses use `action.relatedAction.offsetDuration`; eligibility uses `action.condition`.
 
 ```
-GET [base]/PlanDefinition?status=active&context-type-value=focus$vaccination
+GET [base]/PlanDefinition?status=active&context-type-value=focus$http://snomed.info/sct|33879002
 ```
 
 > Only one schedule version may be active at a time for a given scope/jurisdiction, and the schedule must satisfy the validation rules (no dose-sequence gaps, no impossible timing windows, no two overlapping active versions). See the [PlanDefinition](StructureDefinition-uz-core-immunization-plan-definition.html) page.
@@ -34,9 +34,9 @@ The recommendation is normally *computed* by the engine from the schedule and th
 
 Care is delivered within an [Encounter](StructureDefinition-uz-core-encounter.html). Booking and consultation share a single, long-lived consultation encounter whose `status` advances as the visit progresses - no new encounter is created for each clinician:
 
-- A **medical registrar** books the patient and creates the encounter with `status = planned`. `subject` is the patient, `serviceProvider` is the clinic, and `participant` lists the registrar and the assigned nurse. The patient now appears in that nurse's worklist.
-- The **nurse** opens the visit for the primary intake and updates the *same* encounter to `status = in-progress`, recording the `reason` for the visit and the `actualPeriod`.
-- The **family doctor** examines the patient on the same encounter, reviews or authors the [ImmunizationRecommendation](StructureDefinition-uz-core-immunization-recommendation.html), and links it by setting `Encounter.reason` to reference that recommendation. When the consultation ends the encounter moves to `status = completed`.
+- A medical registrar books the patient and creates the encounter with `status = planned`. `subject` is the patient, `serviceProvider` is the clinic, and `participant` lists the registrar and the assigned nurse. The patient now appears in that nurse's worklist.
+- The nurse opens the visit for the primary intake and updates the same encounter to `status = in-progress`, recording the `reason` for the visit and the `actualPeriod`.
+- The family doctor examines the patient on the same encounter, reviews or authors the [ImmunizationRecommendation](StructureDefinition-uz-core-immunization-recommendation.html), and links it by setting `Encounter.reason` to reference that recommendation. When the consultation ends the encounter moves to `status = completed`.
 
 ```
 # registrar books the patient (consultation encounter)
@@ -59,7 +59,7 @@ PUT [base]/Encounter/[id]    # reason -> ImmunizationRecommendation, status -> c
 
 ### 4. Administer the dose
 
-The nurse opens a **separate vaccination encounter** (`status = in-progress`) for the administration, then records an [Immunization](StructureDefinition-uz-core-immunization.html) that points back to that encounter via `Immunization.encounter` and to the recommendation via `Immunization.basedOn`. The `status` carries the outcome:
+The vaccination typically happens at another facility, on another day, than the consultation - so it is recorded against a separate encounter rather than the consultation one. The nurse opens that vaccination encounter (`status = in-progress`) for the administration, then records an [Immunization](StructureDefinition-uz-core-immunization.html) that points back to it via `Immunization.encounter` and to the recommendation via `Immunization.basedOn`. The `status` carries the outcome:
 
 | Outcome | `Immunization.status` | Also set |
 |---------|------------------------|----------|
