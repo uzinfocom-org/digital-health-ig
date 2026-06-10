@@ -11,10 +11,8 @@ Usage: #definition
 
 // связь с ValueSet
 
-* sourceScopeCanonical = Canonical(MedicationTotalVolumeUnitsVS)
 * group.source = $ucum
-* group.target = $ucum
-* targetScopeCanonical = $ucum-vs
+* group.target = Canonical(MedicationTotalVolumeUCUMUnitsCS)
 
 * group.element[+].code = #%
 * group.element[=].display = "%"
