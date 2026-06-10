@@ -3,12 +3,17 @@ title National schedule to recorded dose
 autonumber
 
 actor "Program\nmanager" as PM
-participant "DHP\n(recommendation engine)" as DHP
+actor "Registrar" as Reg
 actor "Doctor" as Doc
 actor "Nurse" as Nurse
+participant "DHP\n(recommendation engine)" as DHP
 
 PM -> DHP : publish [[StructureDefinition-uz-core-immunization-plan-definition.html PlanDefinition]] (national schedule)
 note over DHP : one active schedule\nper jurisdiction
+
+Reg -> DHP : POST [[StructureDefinition-uz-core-encounter.html Encounter]] 1 - consult\n(status = planned; subject = patient;\nparticipant = nurse; serviceProvider = clinic)
+
+Nurse -> DHP : PUT Encounter 1 (status = in-progress)\nprimary intake, sets reason
 
 Doc -> DHP : GET [[StructureDefinition-uz-core-immunization-recommendation.html ImmunizationRecommendation]]?patient=[id]
 activate DHP
@@ -16,8 +21,10 @@ note over DHP : engine reads PlanDefinition\n+ Immunization history\n+ patient d
 DHP --> Doc : ImmunizationRecommendation\n(due / overdue, dose number)
 deactivate DHP
 
-Doc -> Doc : assess eligibility
-Nurse -> DHP : POST [[StructureDefinition-uz-core-immunization.html Immunization]]\n(status = completed | not-done)
+Doc -> DHP : PUT Encounter 1 (status = completed)\nassess eligibility; reason -> ImmunizationRecommendation
+
+Nurse -> DHP : POST Encounter 2 - vaccination\n(status = in-progress)
+Nurse -> DHP : POST [[StructureDefinition-uz-core-immunization.html Immunization]]\n(encounter -> Encounter 2; basedOn -> ImmunizationRecommendation;\nstatus = completed | not-done)
 
 opt reaction occurs
   Nurse -> DHP : POST [[StructureDefinition-uz-core-adverse-event.html AdverseEvent]]\n(suspectEntity -> Immunization) + [[StructureDefinition-uz-core-observation.html Observation]]
