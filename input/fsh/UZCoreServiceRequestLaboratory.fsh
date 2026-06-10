@@ -61,12 +61,13 @@ Description: "UZCoreServiceRequestLaboratory defines how laboratory orders are r
 
 Instance: UZCoreServiceRequestLab-Example01
 InstanceOf: UZCoreServiceRequestLaboratory
+Usage: #example
 Title: "UZCore ServiceRequest (Lab) Example"
 Description: "Example laboratory ServiceRequest instance for UZCore."
 * status = $service-request-status#active
 * intent = $request-intent#order
 * doNotPerform = false
-* code = lab-pan-cs#lab-pan-E "CBC panel"
+* code = lab-pan-cs#lab-pan-E "Umumiy qon tahlili"
 * subject = Reference(Patient/example-salim)
 * performer[0] = Reference(Organization/tashkent-diseases-hospital)
 * encounter = Reference(Encounter/example-encounter)
