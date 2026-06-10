@@ -9,7 +9,7 @@ Description: "Uzbekistan Core Observation profile, used to represent clinical an
 * identifier MS
 * instantiates[x] MS
 * basedOn 0..1 MS
-* basedOn only Reference(CarePlan or MedicationRequest or ServiceRequest)
+* basedOn only Reference(CarePlan or MedicationRequest or ServiceRequest or UZCoreImmunizationRecommendation)
 * triggeredBy MS
 * triggeredBy.observation only Reference(UZCoreObservation)
 * triggeredBy.type from TriggeredByTypeVS (required)
