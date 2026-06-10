@@ -19,12 +19,12 @@
 | Эндпоинты `AuditEvent`, `Consent`, `Provenance`, `DocumentReference` | Пока не включены | Примеры корректны для момента запуска; пока отложите эти интеграции. |
 | Поиск по диапазону дат для `Observation` (`date`), `Condition` (`onset-date`), `Procedure` (`date`), `Immunization` (`date`), `Specimen` (`collected`), `AdverseEvent` (`date`), `PlanDefinition` (`date`) | Возвращает результаты без фильтрации по дате | Пока применяйте фильтр по дате на стороне клиента. `Condition` (`recorded-date`), `Encounter` (`date`) и `EpisodeOfCare` (`date`) фильтруют как ожидается. |
 | Поиск по `Practitioner` (`qualification-code`), `Organization` (`partof`), `Procedure` (`status`), `PlanDefinition` (`context-type-value`) | Возвращает результаты без фильтрации | Пока фильтруйте на стороне клиента. |
-| `$validate-code` / `$expand` для CodeSystems и ValueSets UZ Core | Будут загружены, когда это руководство будет опубликовано на платформе | Международные системы кодирования (LOINC, SNOMED CT, ICD-10, HL7) уже валидируются. |
+| `$validate-code` / `$expand` для CodeSystems и ValueSets UZ Core | Будут загружены, когда это руководство будет опубликовано на платформе | Международные системы кодирования (ICD-10, HL7) уже валидируются. Полноценные сервисы терминологии LOINC и SNOMED CT пока не запущены. |
 
 
 ### Безопасность и аутентификация {#security}
 
-Доступ к FHIR API платформы DHP защищён по стандарту OAuth 2.0 через централизованный сервер Single Sign-On (SSO) и поддерживает как backend-приложения (grant `client_credentials`), так и frontend-приложения (grant `authorization code` с опциональным PKCE).
+Доступ к FHIR API платформы DHP защищён по стандарту OAuth 2.0 через централизованный сервер Single Sign-On (SSO) и поддерживает как backend-приложения (grant `client_credentials`), так и frontend-приложения (grant `authorization code` с обязательным PKCE).
 
 Регистрация клиента, потоки авторизации, получение и использование токенов доступа, а также описания ошибок полностью документированы на сервере SSO: [sso.dhp.uz/docs](https://sso.dhp.uz/docs).
 
