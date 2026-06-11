@@ -1,0 +1,1004 @@
+CODE,UZ,RU,Long common name (EN)
+lab-pan-A,Siydikning makrosopik tekshiruvi,Макроскопическое исследование мочи,Urine macroscopic analysis
+lab-pan-1,Miqdori  ,Количество,Urine volume [Volume]
+lab-pan-2,Rangi ,Цвет,Color of Urine
+lab-pan-3,Shaffofligi,Прозрачность,Appearance of Urine
+lab-pan-4,Nisbiy zichligi ,Относительная плотность,Specific gravity of Urine by Refractometry
+lab-pan-5,Reaksiya,Реакция,Urine pH
+lab-pan-6,Oqsil ,Белок,Protein [Mass/volume] in Urine by Test strip
+lab-pan-7,Glyukoza ,Глюкоза,Glucose [Mass/volume] in Urine by Test strip
+lab-pan-8,Keton tanachalari,Кетоновые тела,Ketones [Mass/volume] in Urine by Test strip
+lab-pan-9,Qon borligini aniqlash ryeaksiyasi,Реакция на наличие крови,Hemoglobin [Presence] in Urine by Test strip
+lab-pan-10,Bilirubin ,Билирубин,Bilirubin.total [Presence] in Urine by Test strip
+lab-pan-11,Urobilinoidlar,Уробилиноген,Urobilinogen [Presence] in Urine by Test strip
+lab-pan-12,Oʻt kilotasi ,Желчные кислоты,Bile acids [Presence] in Urine
+lab-pan-AA,Siydikning mikroskopik tekshiruvi,Микроскопическое исследование мочи,
+lab-pan-13,Epiteliy: yassi,Эпителий: плоский,Epithelial cells.squamous [#/area] in Urine sediment by Microscopy HPF
+lab-pan-14,Epiteliy: o‘tuvchi,Эпителий: переходный,Epithelial cells.transitional [#/area] in Urine sediment by Microscopy HPF
+lab-pan-15,Epiteliy: buyrak epiteliyasi,Эпителий: почечный,Epithelial cells.renal [#/area] in Urine sediment
+lab-pan-16,Leykotsitlar,Лейкоциты,Leukocytes [#/area] in Urine sediment by Microscopy HPF
+lab-pan-17,Eritrotsitlar o‘zgargan,Эритроциты изменённые,Erythrocytes.dysmorphic [#/area] in Urine sediment by Computer assisted method
+lab-pan-18,Eritrotsitlar o‘zgarmagan,Эритроциты неизменённые,Erythrocytes [#/volume] in Urine by Test strip
+lab-pan-19,Silindrlar: gialinli,Цилиндры: гиалиновые,Hyaline casts [#/area] in Urine sediment by Microscopy LPF
+lab-pan-20,Silindrlar: mumsimon,Цилиндры: восковидные,Waxy casts [#/area] in Urine sediment by Microscopy LPF
+lab-pan-21,Silindrlar: donador,Цилиндры: зернистые,Granular casts [#/area] in Urine sediment by Microscopy LPF
+lab-pan-22,Silindrlar: eritrotsitar,Цилиндры: эритроцитарные,RBC casts [#/area] in Urine sediment by Microscopy LPF
+lab-pan-23,Silindrlar: leykotsitar,Цилиндры: лейкоцитарные,WBC casts [#/area] in Urine sediment by Microscopy LPF
+lab-pan-24,Silindrlar: epitelial,Цилиндры: эпителиальные,Epithelial casts [#/area] in Urine sediment by Microscopy LPF
+lab-pan-25,Shilliq,Слизь,Mucus [#/area] in Urine sediment by Microscopy LPF
+lab-pan-26,Tuzlar,Соли,Crystals [Presence] in Urine sediment by Light microscopy
+lab-pan-27,Bakteriyalar,Бактерии,Bacteria [#/area] in Urine sediment by Microscopy HPF
+lab-pan-B,Najasning makroskopik tekshiruvi,Макроскопическое исследование кала,Macroscopic stool analysis
+lab-pan-28,Miqdori,Количество,Volume of Stool
+lab-pan-29,Konsistensiyasi,Консистенция,Consistency of Stool
+lab-pan-30,Shakli,Форма,Appearance of Stool
+lab-pan-31,Hidi,Запах,Appearance of Stool
+lab-pan-32,Rangi,Цвет,Color of Stool
+lab-pan-33,Muhit (pH reaksiyasi),Среда (реакция pH),pH of Stool
+lab-pan-34,Shilliq,Слизь,Mucus [Presence] in Stool by Light microscopy
+lab-pan-35,Qon,Кровь,Hemoglobin [Presence] in Stool from gastrointestinal
+lab-pan-36,Hazm bo‘lmagan ovqat qoldiqlari,Непереваренные остатки пищи,Epithelial casts [#/area] in Urine sediment by Microscopy LPF
+lab-pan-37,Yashirin qonga reaksiya,Реакция на скрытую кровь,Hemoglobin [Presence] in Stool from gastrointestinal lower by Immunoassay --1st specimen
+lab-pan-38,Sterkobilinga reaksiya,Реакция на стеркобилин,Stercobilin [Presence] in Stool
+lab-pan-39,Bilirubinga reaksiya,Реакция на билирубин,Bilirubin.total [Presence] in Stool
+lab-pan-BB,Najasning mikroskopik tekshiruvi,Микроскопическая исследование кала,
+lab-pan-40,Mushak tolalari: ko‘ndalang chiziqli,Мышечные волокна:С исчерченностью,Meat fibers [Presence] in Stool by Light microscopy
+lab-pan-41,Mushak tolalari: ko‘ndalang chiziqsiz,Мышечные волокна:Без исчерченности,Meat fibers [Presence] in Stool by Light microscopy
+lab-pan-42,Biriktiruvchi to‘qima,Соединительная ткань,Connective tissue [Presence] in Stool by Light microscopy
+lab-pan-43,Neytral yog‘,Жир нейтральный,Fat.neutral [Presence] in Stool
+lab-pan-44,Yog‘ kislotalari,Жирные кислоты,Fatty acids [Presence] in Stool
+lab-pan-45,Sovunlar,Мыла,Fatty acid salts [Presence] in Stool by Light microscopy
+lab-pan-46,O‘simlik kletchatkasi (hazm bo‘ladigan),Растительная клетчатка перевариваемая," 	Vegetable fibers [Presence] in Stool by Light microscopy"
+lab-pan-47,Kraxmal,Крахмал,Starch granules [Presence] in Stool by Light microscopy
+lab-pan-48,Yodofil flora,Йодофильная флора,Iodophilic bacteria [Presence] in Stool by Light microscopy
+lab-pan-49,Kristallar,Кристаллы,Crystals [type] in Stool by Light microscopy
+lab-pan-50,Shilliq,Слизь,Mucus [Presence] in Stool by Light microscopy
+lab-pan-51,Epiteliy,Эпителий,Epithelial cells [Presence] in Stool by Light microscopy
+lab-pan-52,Leykotsitlar,Лейкоциты,Leukocytes [Presence] in Stool by Light microscopy
+lab-pan-53,Eritrotsitlar,Эритроциты," 	Erythrocytes [Presence] in Stool"
+lab-pan-54,Sodda parazitlar (protozoylar),Простейшие,         Protozoa identified in Specimen
+lab-pan-55,Gelmint tuxumlari,Яйца глистов,Ova and parasites identified in Stool by Light microscopy
+lab-pan-56,Achitqi zamburug‘lar,Дрожжевые грибы,Yeast [Presence] in Stool by Light microscopy
+lab-pan-C,Sitologik tahlil (mazok),Цитологическое исследование(мазок),Cytology study of genital specimen by Light microscopy
+lab-pan-57,Leykotsitlar,Лейкоциты,Leukocytes [Presence] in Genital specimen by Light microscopy
+lab-pan-58,Epitelial hujayralar,Эпителиалные клетки,Epithelial cells [Presence] in Specimen by Wet preparation
+lab-pan-59,Mikroflora,Микрофлора,Bacteria [Presence] in Genital specimen by Wet preparation
+lab-pan-60,Gonokokklar,Гонококки,Neisseria gonorrhoeae [Presence] in Urethra by Organism specific culture
+lab-pan-61,Trichomonadalar,Трихомонады,Trichomonas vaginalis [Presence] in Genital specimen by Light microscopy
+lab-pan-62,Zamburug‘lar,Грибы,Yeast [Presence] in Genital specimen by Wet preparation
+lab-pan-D,Qon koagulogrammasi,Коагулограммы крови,Blood Coagulation panel
+lab-pan-63,Protrombin indeks,Протромбиновый индекс,Prothrombin activity (Quick) [Ratio] in Platelet poor plasma by Coagulation assay
+lab-pan-64,Protrombin vaqti,Протромбиновое время,Prothrombin time (PT) [Time] in Platelet poor plasma by Coagulation assay
+lab-pan-65,Tromin vaqti (TB),Тромбиновое время (ТВ),Thrombin time (TT) [Time] in Platelet poor plasma by Coagulation assay
+lab-pan-66,Fibrinogen,Фибриноген,Fibrinogen [Mass/volume] in Platelet poor plasma by Coagulation assay
+lab-pan-67,Fibrin-monomer eruvchi komplekslari (FMEK),Растворимые фибрин-мономерные комплексы (РФМК),Fibrin monomer [Presence] in Platelet poor plasma by Hemagglutination
+lab-pan-68,Plazmaning geparinga tolerantligi ,Толерантность плазмы к гепарину,Clotting time of Blood by Heparin protamine titration
+lab-pan-69,Rekalsifikatsiya vaqti,Время рекальцификации,Recalcification time in Platelet poor plasma by Coagulation assay
+lab-pan-70,МНО,МНО (Международное нормализованное отношение),INR (International normalized ratio) in Platelet poor plasma by Coagulation assay
+lab-pan-71,Trombotest,Тромботест,Prothrombin activity actual/normal in Platelet poor plasma by Coagulation assay
+lab-pan-72,Qisman faollashtirilgan tromboplastin vaqti (ҚФТВ),Частично активированное тромбопластиновое время (ЧАСТВ),aPTT in Platelet poor plasma by Coagulation assay
+lab-pan-73,Etanol,Этанол,Ethanol [Presence] in Blood
+lab-pan-E,Umumiy qon tahlili,Общий анализ крови,CBC panel
+lab-pan-74,Gemoglobin (HB),Гемоглобин (HB),Hemoglobin [Mass/volume] in Blood
+lab-pan-75,Eritrotsitlar (RBC),Эритроциты (RBC),Erythrocytes [#/volume] in Blood by Automated count
+lab-pan-76,Rang ko‘rsatkichi,Цветовой показатель,Color index
+lab-pan-77,Eritrotsitlarning o‘rtacha hajmi (MCV),Средний объём эритроцитов (MCV),MCV [Entitic volume] by Automated count
+lab-pan-78,1 dona eritrotsitdagi gemoglobin miqdori (MCH),Среднее содержание гемоглобина в одном эритроците (MCH),MCH [Entitic mass] by Automated count
+lab-pan-79,Eritrotsitdagi gemoglobin konsentratsiyasi (MCHC),Средняя концентрация гемоглобина в эритроците (MCHC),MCHC [Mass/volume] by Automated count
+lab-pan-80,Eritrotsitlar anizotsitozi (RDW-CV),Анизоцитоз эритроцитов (RDW-CV),Erythrocyte distribution width (RDW-CV) [Ratio] by Automated count
+lab-pan-81,Gematokrit (HCT),Гематокрит (HCT),Hematocrit [Volume Fraction] of Blood by Automated count
+lab-pan-82,Trombotsitlar (PLT),Тромбоциты (PLT),Platelets [#/volume] in Blood by Automated count
+lab-pan-83,Trombotsitlarning o‘rtacha hajmi (MPV),Средний объём тромбоцитов (MPV),Platelet [Entitic mean volume] in Blood by Automated count
+lab-pan-84,Trombotsitlar anizotsitozi (PDW),Анизоцитоз тромбоцитов (PDW),Platelet distribution width [Entitic volume] in Blood by Automated count
+lab-pan-85,Trombokrit (PCT),Тромбокрит (PCT),Platelet [Entitic mean volume] in Blood
+lab-pan-86,Leykotsitlar (WBC),Лейкоциты (WBC),Leukocytes [#/volume] in Blood by Automated count
+lab-pan-87,Miyelotsitlar,Миелоциты,Myelocytes [#/volume] in Blood by Manual count
+lab-pan-88,Metamiyelotsitlar,Метамиелоциты,Metamyelocytes/100 leukocytes in Blood by Manual count
+lab-pan-89,Tayoqchasimon yadroli neytrofillar,Палочкоядерные нейтрофилы,Neutrophils.band form/100 leukocytes in Blood by Manual count
+lab-pan-90,Segment yadroli neytrofillar,Сегментоядерные нейтрофилы,Neutrophils [#/volume] in Blood by Automated count
+lab-pan-91,Eozinofillar,Эозинофилы,Eosinophils [#/volume] in Blood by Automated count
+lab-pan-92,Bazofillar,Базофилы,Basophils [#/volume] in Blood by Automated count
+lab-pan-93,Monotsitlar,Моноциты,Monocytes/100 leukocytes in Blood by Automated count
+lab-pan-94,Limfotsitlar,Лимфоциты,Lymphocytes [#/volume] in Blood by Automated count
+lab-pan-95,Plazmatik hujayralar,Плазматические клетки,Plasma cells monotypic population [Identifier] in Bone marrow by Flow cytometry (FC)
+lab-pan-96,Eritrotsitlarning cho‘kish tezligi (ECHT),Скорость оседания эритроцитов (СОЭ),Erythrocyte [Sedimentation Rate] in Blood by Westergren method
+lab-pan-97,"Anizotsitoz (mikrotsitlar, makrotsitlar, megalotsitlar)","Анизоцитоз (микроциты, макроциты, мегалоциты)",Platelet anisocytosis [Presence] in Blood by Light microscopy
+lab-pan-98,Poykilotsitoz,Пойкилоцитоз,Poikilocytosis [Presence] in Blood by Light microscopy
+lab-pan-99,Eritrotsitlarning bazofil donadorligi,Базофильная зернистость эритроцитов,Basophilic stippling [Presence] in Blood by Light microscopy
+lab-pan-100,Polixromatofiliya,Полихроматофилия, Polychromasia [Presence] in Blood by Light microscopy
+lab-pan-101,Jolli tanachalari,Тельца Жолли, Howell-Jolly bodies [Presence] in Blood by Light microscopy
+lab-pan-102,Kebot halqalari,Кольца Кебота,Cabot rings [Presence] in Blood by Light microscopy
+lab-pan-103,Eritronormoblastlar (100 ta leykotsitga nisbatan),Эритронормобласты (на 100 лейкоцитов),Nucleated erythrocytes/Leukocytes [Ratio] in Blood by Manual count
+lab-pan-104,Megaloblastlar,Мегалобласты, Megaloblasts/cells in Bone marrow
+lab-pan-105,Yadro gipersegmentatsiyasi,Гиперсегментация ядер,"Neutrophils.hypersegmented [Presence] in Blood by Light microscopy 	"
+lab-pan-106,Toksogen donadorlik,Токсическая зернистость,Toxic granules [Presence] in Blood by Light microscopy
+lab-pan-CC,Umumiy qon tahlili,Общий анализ крови,CBC panel
+lab-pan-107,Leykositlar (WBC),Лейкоциты (WBC),Leukocytes [#/volume] in Blood by Automated count
+lab-pan-108,Barcha neurofil elementlar (Neu#),Абсолютное количество нейтрофилов (Neu#),Neutrophils [#/volume] in Blood by Automated count
+lab-pan-109,Limfotsitlar soni (Lym#),Абсолютное количество лимфоцитов (Lym#),Lymphocytes [#/volume] in Blood by Automated count
+lab-pan-110,Monotsitlar soni (Mon#),Абсолютное количество моноцитов (Mon#),Monocytes [#/volume] in Blood by Automated count
+lab-pan-111,Eozinofillar soni (Eos#),Абсолютное количество эозинофилов (Eos#),Eosinophils [#/volume] in Blood by Automated count
+lab-pan-112,Bazofillar soni (Bas#),Абсолютное количество базофилов (Bas#),Basophils [#/volume] in Blood by Automated count
+lab-pan-113,Neytrofillar yetilish indeksi (Neu%),Нейтрофилы (Neu%),Neutrophils/Leukocytes in Blood by Automated count
+lab-pan-114,Limfotsitlar (Lym%) ,Лимфоциты (Lym%),Lymphocytes/Leukocytes in Blood by Automated count
+lab-pan-115,Monositlar (Mon%),Моноциты (Mon%),Monocytes/Leukocytes in Blood by Automated count
+lab-pan-116,Eozinofillar (Eos%),Эозинофилы (Eos%),Eosinophils/Leukocytes in Blood by Automated count
+lab-pan-117,Bazofillar (Bas%),Базофилы (Bas%),Basophils/Leukocytes in Blood by Automated count
+lab-pan-118,Eritrotsitlar (RBC),Эритроциты (RBC),Erythrocytes [#/volume] in Blood by Automated count
+lab-pan-119,Gemoglobin (HGB),Гемоглобин (HGB),Hemoglobin [Mass/volume] in Blood
+lab-pan-120,Gematokrit (HCT),Гематокрит (HCT),Hematocrit [Volume Fraction] of Blood by Automated count
+lab-pan-121,Eritrotsit o'rtacha hajmi (MCV),Средний объем эритроцита (MCV),MCV [Entitic mean volume] in Red Blood Cells by Automated count
+lab-pan-122,1 dona eritrotsitdagi gemoglobinning miqdori (MCH),Среднее содержание гемоглобина в эритроците (MCH),MCH [Entitic mass] by Automated count
+lab-pan-123,Eritrotsitdagi gemoglobin konsentratsiyasi (MCHC),Средняя концентрация гемоглобина в эритроците (MCHC),MCHC [Entitic Mass/volume] in Red Blood Cells by Automated count
+lab-pan-124,Eritrotsitlar anizotsitozi (RDW-CV),Ширина распределения эритроцитов по объему (RDW-CV),Erythrocyte [DistWidth] in Blood by Automated count
+lab-pan-125,Eritrotsit hajmi standart og‘ishi (RDW-SD),Стандартное отклонение распределения эритроцитов по объему (RDW-SD),Erythrocyte distribution width [Entitic volume] by Automated count
+lab-pan-126,Trombotsitlar (PLT),Тромбоциты (PLT),Platelets [#/volume] in Blood by Automated count
+lab-pan-127,Trombotsitlar o'rtacha hajmi (MPV),Средний объем тромбоцитов (MPV),Platelet [Entitic mean volume] in Blood by Automated count
+lab-pan-128,Trombotsitlar anizotsitozi (PDW),Ширина распределения тромбоцитов (PDW),Platelet distribution width [Entitic volume] in Blood by Automated count
+lab-pan-129,Trombokrit (PCT),Тромбокрит (PCT),Platelet [Entitic mean volume] in Blood
+lab-pan-130,Yirik trombotsitlar soni (P-LCC),Количество крупных тромбоцитов (P-LCC),"	Leukocytes [#/volume] in Blood by Estimate"
+lab-pan-131,Yirik trombotsitlar ulushi (P-LCR),Доля крупных тромбоцитов (P-LCR),Platelets Large/Platelets in Blood by Automated count
+lab-pan-132,Eritrotsitning cho'kish tezligi (ЭЧТ),Скорость оседания эритроцитов (СОЭ),Erythrocyte [Sedimentation Rate] in Blood by Westergren method
+lab-pan-133,IMG#,IMG#,Immature granulocytes [#/volume] in Blood by Automated count
+lab-pan-134,NRBC#,NRBC#,Nucleated erythrocytes [#/volume] in Blood by Automated count
+lab-pan-135,NRBC%,NRBC%,Nucleated erythrocytes/Leukocytes [Ratio] in Blood
+lab-pan-136,Miyelositlar,Миелоциты,Myelocytes [#/volume] in Blood
+lab-pan-137,Metamiyelositlar,Метамиелоциты,Metamyelocytes [Presence] in Blood
+lab-pan-138,Tayoqcha yadroli neytrofil,Tayoqcha yadroli neytrofil,Band form neutrophils/Leukocytes in Blood
+lab-pan-139,Plazmatik hujayralar,Плазматические клетки,Plasma cells/Leukocytes in Blood
+lab-pan-F,Biokimyoviy qon tahlili,Биохимическое исследование крови,
+lab-pan-140,Umumiy oqsil,Общий белок,Protein [Mass/volume] in Serum or Plasma
+lab-pan-141,Albumin,Альбумин,Albumin [Mass/volume] in Serum or Plasma
+lab-pan-142,Xolesterin (umumiy),Холестерин (общий),Cholesterol [Mass/volume] in Serum or Plasma
+lab-pan-143,Triglitseridlar,Триглицериды,Triglyceride [Mass/volume] in Serum or Plasma
+lab-pan-144,Glyukoza,Глюкоза,Glucose [Mass/volume] in Serum or Plasma
+lab-pan-145,Mochevina,Мочевина,Urea nitrogen [Mass/volume] in Serum or Plasma
+lab-pan-146,Kreatinin,Креатинин,Creatinine [Mass/volume] in Serum or Plasma
+lab-pan-147,Umumiy bilirubin,Билирубин общий,Bilirubin.total [Mass/volume] in Serum or Plasma
+lab-pan-148,To‘g‘ri (bog‘langan) bilirubin,Билирубин прямой (связанный),Bilirubin.direct [Mass/volume] in Serum or Plasma
+lab-pan-149,Noto‘g‘ri (erkin) bilirubin,Билирубин непрямой (свободный),Bilirubin.indirect [Mass/volume] in Serum or Plasma
+lab-pan-150,Alaninaminotransferaza (ALT),Аланинаминотрансфераза (АЛТ),Alanine aminotransferase [Enzymatic activity/volume] in Serum or Plasma
+lab-pan-151,Aspartataminotransferaza (AST),Аспартатаминотрансфераза (АСТ),Aspartate aminotransferase [Enzymatic activity/volume] in Serum or Plasma
+lab-pan-152,Laktatdegidrogenaza (LDG),Лактатдегидрогеназа (ЛДГ),Lactate dehydrogenase [Enzymatic activity/volume] in Serum or Plasma
+lab-pan-153,Gammaglutamiltransferaza (GGT),Гаммаглутамилтрансфераза (ГГТ),Gamma glutamyl transferase [Enzymatic activity/volume] in Serum or Plasma
+lab-pan-154,Alfa-amilaza,Альфа-амилаза,Amylase [Enzymatic activity/volume] in Serum or Plasma
+lab-pan-155,Ishqoriy fosfataza (IF),Щелочная фосфатаза (ИФ),Alkaline phosphatase [Enzymatic activity/volume] in Serum or Plasma
+lab-pan-156,Kaliy,Калий,Potassium [Moles/volume] in Serum or Plasma
+lab-pan-157,Natriy,Натрий,Sodium [Moles/volume] in Serum or Plasma
+lab-pan-158,Kalsiy,Кальций,Calcium [Mass/volume] in Serum or Plasma
+lab-pan-159,Temir,Железо,Iron [Mass/volume] in Serum or Plasma
+lab-pan-160,Fosfor,Фосфор,Phosphate [Mass/volume] in Serum or Plasma
+lab-pan-161,Xlor,Хлор,Chloride [Moles/volume] in Serum or Plasma
+lab-pan-162,Magniy, Магний,Magnesium [Mass/volume] in Serum or Plasma
+lab-pan-163,Eritrotsitlardagi magniy, Магний в эритроцитах,Magnesium [Moles/volume] in Red Blood Cells
+lab-pan-G,Gormonal qon tahlili,Гормональное исследование крови,
+lab-pan-164,T3,Т3,Triiodothyronine (T3) [Mass/volume] in Serum or Plasma
+lab-pan-165,T4,Т4,Thyroxine (T4) [Mass/volume] in Serum or Plasma
+lab-pan-166, TTG,ТТГ,Thyrotropin (TSH) [Units/volume] in Serum or Plasma
+lab-pan-167,Estradiol,Эстрадиол,Estradiol (E2) [Mass/volume] in Serum or Plasma
+lab-pan-168,Testosteron,Тестостерон,Testosterone [Mass/volume] in Serum or Plasma
+lab-pan-169,Kortizol,Кортизол,Cortisol [Mass/volume] in Serum or Plasma
+lab-pan-170,Prolaktin,Пролактин,Prolactin [Mass/volume] in Serum or Plasma
+lab-pan-171,LG,ЛГ,Lutropin [Units/volume] in Serum or Plasma
+lab-pan-172,FSG,ФСГ,Follitropin [Units/volume] in Serum or Plasma
+lab-pan-173,Progesteron,Прогестерон,Progesterone [Mass/volume] in Serum or Plasma
+lab-pan-174,PSA,ПСА,Prostate specific Ag (PSA) [Mass/volume] in Serum or Plasma
+lab-pan-H,Spermogramma tahlili,Исследование спермограммы,Spermogram analysis
+lab-pan-175,Hajm,Объём,Volume of Semen
+lab-pan-176,Rangi,Цвет,Semen color [Type]
+lab-pan-177,Hidi,Запах,Semen odor [Type]
+lab-pan-178,Suyulish vaqti,Время разжижения,Semen liquefaction time
+lab-pan-179,Kislotalilik (pH,Кислотность (pH),Semen pH
+lab-pan-180,Qovushqoqlik,Вязкость,Semen viscosity [Presence]
+lab-pan-181,1 ml dagi spermatozoidlar soni,Количество сперматозоидов в 1 мл,Spermatozoa [#/volume] in Semen
+lab-pan-182,Umumiy hajmdagi spermatozoidlar soni,Количество сперматозоидов в общем объёме,Spermatozoa total count [#] in Ejaculate
+lab-pan-183,Harakatchanlik - faol,Подвижность — активные,Spermatozoa progressive motility [#/volume] in Semen
+lab-pan-184,Harakatchanlik - sust,Подвижность — вялые,Spermatozoa non-progressive motility [#/volume] in Semen
+lab-pan-185,Harakatchanlik - harakatsiz,Подвижность — неподвижные,Spermatozoa immotile [#/volume] in Semen
+lab-pan-186,Tirik spermatozoidlar,Живые сперматозоиды,Spermatozoa Viable/Spermatozoa in Semen
+lab-pan-187,Patologik shakldagi sermatozoidlar,Патологические формы сперматозоидов,Spermatozoa abnormal forms [#/volume] in Semen
+lab-pan-188,Spermatogenez epiteliysi,Эпителий сперматогенеза,Epithelial cells [Presence] in Semen by Light microscopy
+lab-pan-189,Leykositlar,Лейкоциты,Leukocytes [#/volume] in Semen
+lab-pan-190,Letsitin donachalari,Лецитиновые зёрна,Lecithin bodies [Presence] in Semen by Microscopy
+lab-pan-191,Agglyutinatsiya,Агглютинация,Spermatozoa agglutination [Presence] in Semen
+lab-pan-192,Fruktoza,Фруктоза,Fructose [Moles/volume] in Semen
+lab-pan-193,Limon kislotasi,Лимонная кислота,Citric acid [Moles/volume] in Semen
+lab-pan-I,Balg'am tahlili,Анализ мокроты,Sputum analysis
+lab-pan-194,Miqdori,Количество,Volume of Sputum
+lab-pan-195,Hidi,Запах,Odor of Lower respiratory specimen
+lab-pan-196,Rangi,Цвет,Sputum color [Type]
+lab-pan-197,Xususiyati (ta'rifi),Характер (описание),Sputum gross description
+lab-pan-198,Aralashmalar,Примеси,Psychiatry study
+lab-pan-199,Konsistensiyasi,Консистенция,Appearance of Sputum
+lab-pan-200,Epiteliy,Эпителий,Epithelial cells.renal [Presence] in Urine sediment by Light microscopy
+lab-pan-201,Alveolyar makrofaglar,Альвеолярные макрофаги,Alveolar macrophages [#/volume] in Lower respiratory specimen by Manual count
+lab-pan-202,Leykositlar,Лейкоциты, Leukocytes [#/area] in Sputum by Microscopy high power field
+lab-pan-203,Eritrositalr,Эритроциты,Erythrocytes [Presence] in Sputum by Light microscopy
+lab-pan-204,Tolalar,Волокна,Elastic fibers [#/volume] in Lower respiratory specimen by Manual count
+lab-pan-205,Elastik tolalar,Эластические волокна,Elastic fibers [Presence] in Sputum by Light microscopy
+lab-pan-206,Kalsiylangan (toshga aylangan zarrachalar),Обызвествлённые (окаменевшие частицы),"	Crystals [type] in Semen by Light microscopy"
+lab-pan-207,Tuberkulyoz mikrobakteriyalari,Микобактерии туберкулёза,Mycobacterium tuberculosis [Presence] in Sputum by Microscopy (Ziehl–Neelsen stain)
+lab-pan-208,Eozinofillar,Эозинофилы,Eosinophils/Leukocytes in Sputum
+lab-pan-209,Zamburug'lar,Грибы,Fungus [Presence] in Sputum by KOH preparation
+lab-pan-210,Boshqa flora,Другая флора,"Bacteria identified in Sputum by Culture
+"
+lab-pan-211,Kurshman spirallari,Спирали Куршмана,Curschmann's spirals and crystals [type] in Lower respiratory specimen by Light microscopy
+lab-pan-212,Sharko-Leyden kristallari,Кристаллы Шарко–Лейдена,Charcot-leyden crystals [type] in Specimen by Trichrome stain
+lab-pan-213,Atipik belgili hujayralar,Клетки с атипичными признаками,"	Spermatozoa.abnormal/Spermatozoa"
+lab-pan-J,Prostata bezi shirasi tahlili,Анализ секрета предстательной железы,Prostate gland juice analysis
+lab-pan-214,Miqdori,Количество,Volume of Prostatic fluid
+lab-pan-215,Rangi,Цвет,Color of Prostatic fluid
+lab-pan-216,Shaffofligi,Прозрачность,Appearance of Body fluid
+lab-pan-217,Konsistensiyasi,Консистенция,Appearance of Body fluid
+lab-pan-218,Leykositlar,Лейкоциты,Leukocytes [#/area] in Prostatic fluid by Light microscopy
+lab-pan-219,Eritrositlar,Эритроциты,Curschmann's spirals and crystals [type] in Lower respiratory specimen by Light microscopy
+lab-pan-220,Epiteliy,Эпителий,Epithelial cells [#/area] in Prostatic fluid by Light microscopy
+lab-pan-221,Makrofaglar,Макрофаги,Macrophages [#/area] in Prostatic fluid by Light microscopy
+lab-pan-222,Letsitin donachalari,Лецитиновые зёрна,Lecithin bodies [Presence] in Prostatic fluid by Light microscopy
+lab-pan-223,Amiloid tanachalar,Амилоидные тельца,Amyloid bodies [Presence] in Prostatic fluid by Light microscopy
+lab-pan-224,Spermatozoidlar,Сперматозоиды,Spermatozoa [#/volume] in Semen
+lab-pan-225,Trixomonadalar,Трихомонады,Trichomonas vaginalis [Presence] in Prostatic fluid by Light microscopy
+lab-pan-226,Gonokokklar,Гонококки,Neisseria gonorrhoeae [Presence] in Genital specimen by Organism specific culture
+lab-pan-227,Boshqa flora,Другая флора,Bacteria [Presence] in Prostatic fluid by Light microscopy
+lab-pan-228,Atipik belgili hujayralar,Клетки с атипичными признаками,Epithelial cells atypical [Presence] in Prostatic fluid by Cytology
+lab-pan-K,TORCH-infeksiya tahlili, Анализ на TORCH-инфекцию,TORCH-infection analysis
+lab-pan-229,Xlamidiya (IgG antitanachalar),Хламидия (антитела IgG),Chlamydia trachomatis IgG Ab [Presence] in Serum by Immunoassay
+lab-pan-230,Toksopazmoz (IgG antitanachalar),Токсоплазмоз (антитела IgG),Toxoplasma gondii IgG Ab [Presence] in Serum by Immunoassay
+lab-pan-231,Sitomegalovirus (IgG antitanachalar),Цитомегаловирус (антитела IgG),Cytomegalovirus IgG Ab [Presence] in Serum by Immunoassay
+lab-pan-232,Oddiy gerpes virusi (IgG antitanachalar),Вирус простого герпеса (антитела IgG),HIV 1+O+2 Ab [Units/volume] in Serum or Plasma
+lab-pan-233,Ureaplazma,Уреаплазма,Ureaplasma urealyticum DNA [Presence] in Specimen by NAA with probe detection
+lab-pan-L,O'n ikki barmoqli ichak shirasi tahlili,Исследование дуоденального сока,Duodenal juice analysis
+lab-pan-234,Oshqozon tarkibi hajmi,Объем желудочного содержимого,Gastric juice volume
+lab-pan-235,Erkin HCl,Свободная HCl,Gastric free hydrochloric acid
+lab-pan-236,Umumiy kislotalilik,Общая кислотность,Total gastric acidity
+lab-pan-237,O'n ikki barmoq ichakka o'tish vaqti,Время перехода в дуоденум,Time to duodenal passage
+lab-pan-238,Rentgen nazorati,Рентген контроль,X-ray control performed
+lab-pan-239,A porsiya - ajralish vaqti,Порция A – время выделения,Duodenal fluid portion A excretion time
+lab-pan-240,A porsiya - hajmi,Порция A – объем,Duodenal fluid portion A volume
+lab-pan-241,A porsiya - rangi,Порция A – цвет,Duodenal fluid portion A color
+lab-pan-242,A porsiya - shaffofligi,Порция A – прозрачность,Duodenal fluid clarity
+lab-pan-243,A porsiya - mikroskopiya,Порция A – микроскопия,Duodenal fluid microscopy
+lab-pan-244,B porsiya - ajralish vaqti,Порция B – время выделения,Duodenal fluid portion B excretion time
+lab-pan-245,B porsiya - hajmi,Порция B – объем,Duodenal fluid portion B volume
+lab-pan-246,B porsiya - rangi,Порция B – цвет,Duodenal fluid portion B color
+lab-pan-247,B porsiya - billurbin ko'rsatgichi,Порция B – билирубин индекс,Bilirubin index in duodenal fluid
+lab-pan-248,B porsiya - mikroskopiya,Порция B – микроскопия,Duodenal fluid microscopy
+lab-pan-249,C porsiya - ajralish vaqti,Порция C – время выделения,Duodenal fluid portion C excretion time
+lab-pan-250,C porsiya - hajmi,Порция C – объем,Duodenal fluid portion C volume
+lab-pan-251,C porsiya rangi,Порция C – цвет,Duodenal fluid portion C color
+lab-pan-252,C porsiya  - shaffofligi,Порция C – прозрачность,Duodenal fluid clarity
+lab-pan-253,C porsiya - mikroskopiya,Порция C – микроскопия,Duodenal fluid microscopy
+lab-pan-254,Billurbin,Билирубин, Bilirubin.total [Mass/volume] in Body fluid
+lab-pan-255,O't kislotalari,Желчные кислоты,Bile acid [Moles/volume] in Serum or Plasma
+lab-pan-256,Xolesterin,Холестерин, Cholesterol [Mass/volume] in Serum or Plasma
+lab-pan-257,Xolat-xolestering koeffisenti,Холато-холестериновый коэффициент,Cholate-cholesterol ratio
+lab-pan-258,"Flora A, B, C","Флора A, B, C",Bacterial flora in bile
+lab-pan-M,Orqa miya suyuqligi (MS) tahlili,Исследование цереброспинальной жидкости (ликвора),Cerebrospinal fluid (CSF) analysis
+lab-pan-259,Miqdori,Количество,Volume of Cerebral spinal fluid
+lab-pan-260,Sentrefugadan keyingi rangi,Цвет после центрифугирования,Color of Cerebral spinal fluid
+lab-pan-261,Sentrefugagacha ksantoxromiya,Ксантохромия до центрифугирования,Xanthochromia [Presence] of Cerebral spinal fluid Qualitative
+lab-pan-262,Sentrefugadan keyingi shaffofligi,Прозрачность после центрифугирования,Clarity of Cerebral spinal fluid
+lab-pan-263,Oqsil,Белок,Protein [Mass/volume] in Cerebrospinal fluid
+lab-pan-264,Pandi reaksiyasi,Реакция Панди,"	Protein [Presence] in Cerebral spinal fluid"
+lab-pan-265,Limfositlar,Лимфоциты,Lymphocytes [#/volume] in Cerebrospinal fluid by Manual count
+lab-pan-266,Eozinoffillar,Эозинофилы,Eosinophils [#/volume] in Cerebral spinal fluid by Manual count
+lab-pan-267,Neytrofillar,Нейтрофилы,Neutrophils [#/volume] in Cerebral spinal fluid by Manual count
+lab-pan-268,Makrofaglar,Макрофаги,Monocytes+Macrophages [Presence] in Cerebral spinal fluid by Light microscopy
+lab-pan-269,O'zgargan hujayralar,Изменённые клетки,Abnormal lymphocytes/Leukocytes in Cerebral spinal fluid
+lab-pan-270,Poliblastlar,Полибласты,Nucleated cells [#/volume] in Bone marrow
+lab-pan-271,Plazmatik hujayralar,Плазматические клетки,Plasma cells/Leukocytes in Cerebral spinal fluid by Microscopy
+lab-pan-272,Araxnoidal endoteliy hujayralari,Клетки арахноидального эндотелия,Leukocytes other [#/volume] in Cerebral spinal fluid
+lab-pan-273,Ependima hujayralari,Клетки эпендимы,Cerebroventricular lining cells/Leukocytes in Cerebral spinal fluid
+lab-pan-274,Donador sharlar,Зернистые шары,Lipophages/Leukocytes in Cerebral spinal fluid by Manual count
+lab-pan-275,Zamburug'lar,Грибы,Fungus identified in Cerebral spinal fluid by Culture
+lab-pan-276,Eritrositlar,Эритроциты,Erythrocytes [#/volume] in Cerebral spinal fluid by Manual count
+lab-pan-N,Suyak ilik punktati tahlili,Анализ пунктата костного мозга,Bone marrow aspirate analysis
+lab-pan-277,Miyelokariotsitlar soni ,Количество миелокариоцитов,Nucleated cells [#/volume] in Bone marrow
+lab-pan-278,Megakariotsitlar soni,Количество мегакариоцитов,Megakaryocytes [Presence] in Bone marrow by Light microscopy
+lab-pan-279,Yetilmagan blastlar,Незрелые бласты,Blasts/cells in Bone marrow
+lab-pan-280,Miyeloblastlar,Миелобласты,Myeloblasts/cells in Bone marrow by Manual count
+lab-pan-281,Promiyelotsitlar,Промиелоциты,Promyelocytes/cells in Bone marrow by Manual count
+lab-pan-282,Miyelotsitlar,Миелоциты,Myelocytes/cells in Bone marrow by Manual count
+lab-pan-283,Metamiyelotsitlar,Метамиелоциты,Metamyelocytes/cells in Bone marrow by Manual count
+lab-pan-284,Tayoqchayadrolilar,Палочкоядерные нейтрофилы,Band form neutrophils/cells in Bone marrow by Manual count
+lab-pan-285,Segmentyadrolilar,Сегментоядерные нейтрофилы,Segmented neutrophils/Leukocytes in Bone marrow by Manual count
+lab-pan-286,Miyelotsitlar,Миелоциты,
+lab-pan-287,Metamiyelotsitlar,Метамиелоциты,
+lab-pan-288,Tayoqchayadrolilar,Палочкоядерные нейтрофилы,
+lab-pan-289,Segmentyadrolilar,Сегментоядерные нейтрофилы,
+lab-pan-290,Miyelotsitlar,Миелоциты,
+lab-pan-291,Metamiyelotsitlar,Метамиелоциты,
+lab-pan-292,Tayoqchayadrolilar,Палочкоядерные нейтрофилы,
+lab-pan-293,Segmentyadrolilar,Сегментоядерные нейтрофилы,
+lab-pan-294,Limfoblastlar,Лимфобласты,Lymphoblasts/Leukocytes in Bone marrow by Manual count
+lab-pan-295,Prolimfotsitlar,Пролимфоциты,Prolymphocytes/cells in Bone marrow by Manual count
+lab-pan-296,Limfotsitlar,Лимфоциты,Lymphocytes/cells in Bone marrow by Manual count
+lab-pan-297,Monoblastlar,Монобласты,Monoblasts/Leukocytes in Bone marrow by Manual count
+lab-pan-298,Promonotsitlar,Промоноциты,Promonocytes/cells in Bone marrow by Manual count
+lab-pan-299,Monotsitlar,Моноциты,Monocytes/cells in Bone marrow by Manual count
+lab-pan-300,Leyko-eritroblastik nisbat,Лейко-эритробластическое соотношение,Myeloid cells/Erythroid cells [# Ratio] in Bone marrow
+lab-pan-301,Neytrofillar yetilish indeksi,Индекс созревания нейтрофилов," 	Segmented neutrophils/cells in Bone marrow"
+lab-pan-302,Proeritroblastlar,Проэритробласты,Pronormoblasts/cells in Bone marrow by Manual count
+lab-pan-303,Bazofil eritroblastlar,Базофильные эритробласты,Basophils/cells in Bone marrow by Manual count
+lab-pan-304,Polixromafil eritroblastlar,Полихроматофильные эритробласты,Normoblasts Polychromatophilic/cells in Bone marrow by Manual count
+lab-pan-305,Oksifil eritroblastlar,Оксифильные эритробласты,Normoblasts oxyphilic+polychromatophilic/Normoblasts.total in Bone marrow by Manual count
+lab-pan-306,Polixromatofil normoblastlar,Полихроматофильные нормобласты,Normoblasts Polychromatophilic/cells in Bone marrow by Manual count
+lab-pan-307,Oksifil normoblastlar,Оксифильные нормобласты,Normoblasts Orthochromic/cells in Bone marrow by Manual count
+lab-pan-308,Promegaloblastlar,Промегалобласты,Megaloblasts/cells in Bone marrow by Manual count
+lab-pan-309,Bazofil megaloblastlar,Базофильные мегалобласты,Normoblasts Basophilic/cells in Bone marrow by Manual count
+lab-pan-310,Polixromatofil megaloblastlar,Полихроматофильные мегалобласты,Normoblasts Polychromatophilic/cells in Bone marrow by Manual count
+lab-pan-311,Oksifil megaloblastlar,Оксифильные мегалобласты,Normoblasts Orthochromic/cells in Bone marrow by Manual count
+lab-pan-312,Megakarioblastlar,Мегакариобласты,Megakaryoblasts/cells in Bone marrow by Manual count
+lab-pan-313,Promegakariotsitlar,Промегакариоциты,Promegakaryocytes/cells in Bone marrow by Manual count
+lab-pan-314,Megokariotsitlar,Мегакариоциты,Megakaryocytes/cells in Bone marrow by Manual count
+lab-pan-315,Retikulyar hujayralar,Ретикулярные клетки,"	Reticulum cell/cells in Bone marrow by Gomori stain"
+lab-pan-316,Plazmoblastlar,Плазмобласты,Plasma cells immature/cells in Bone marrow by Manual count
+lab-pan-317,Proplazmotsitlar,Проплазмоциты,Plasma cells immature/cells in Bone marrow by Manual count
+lab-pan-318,Plazmotik xujayralar,Плазматические клетки,Plasma cells/cells in Bone marrow by Manual count
+lab-pan-319,Xujayralar mitozi granulopoez,Митоз клеток гранулопоэза,Myelocytes/cells in Bone marrow by Manual count
+lab-pan-320,Eritropoez hujayra mitozi,Митоз клеток эритропоэза,Erythropoiesis assessment in Bone marrow Narrative
+lab-pan-321,Eritroblast va normoblastlar sitoplazmasining yetilish indeksi,Индекс зрелости цитоплазмы эритробластов и нормобластов,Differential panel - Bone marrow 
+lab-pan-O,"Antistreptolizin-0, S- reaktiv oqsili va
+revmatoid omiliga qonni tekshirish tahlili","Анализ крови на антистрептолизин-О, С-реактивный белок и ревматоидный фактор","Blood analysis for antistreptolysin-0, S-reactive protein and rheumatoid factor"
+lab-pan-322,S-reyeaktiv oqsil,С-реактивный белок (CRP),C reactive protein [Presence] in Serum or Plasma
+lab-pan-323,Revmotoid omili,Ревматоидный фактор (RF),Rheumatoid factor [Presence] in Serum
+lab-pan-324,Antistriptolizin-O,Антистрептолизин-O (ASO),"
+Streptolysin O Ab [Presence] in Serum"
+lab-pan-P,Klinik - diagnostik laboratoriya miyelogramma,КЛИНИК-ДИАГНОСТИК ЛАБОРАТОРИЯ МИЕЛОГРАММА,Clinical - diagnostic laboratory myelogram
+lab-pan-325,Suyak ko'migi hujayralari,Клетки костного мозга,Bone marrow cells
+lab-pan-326,Blastlar,Бласты,Blasts
+lab-pan-327,Barcha neytrofil elementlar,Все нейтрофильные элементы,All neutrophil elements
+lab-pan-328,Promiyelositlar,Промиелоциты,Promyelocytes
+lab-pan-329,Miyelositlar,Миелоциты,Myelocytes
+lab-pan-330,Metamiyelositlar,Метамиелоциты,Metamyelocytes
+lab-pan-331,Tayoqcha yadrolilar,Палочкоядерные нейтрофилы,Band neutrophils
+lab-pan-332,Segment yadrolilar,Сегментоядерные нейтрофилы,Segmented neutrophils
+lab-pan-333,Eozinofillar,Эозинофилы,Eosinophils
+lab-pan-334,- Miyelosit eozinofillar,Эозинофильные миелоциты,- Eosinophilic myelocytes
+lab-pan-335,- Metamiyelosit eozinofillar,Эозинофильные метамиелоциты,- Eosinophilic metamyelocytes
+lab-pan-336,- Tayoqcha yadroli eozinofillar,Палочкоядерные эозинофилы,- Band eosinophils
+lab-pan-337,- Segment yadroli eozinofillar,Сегментоядерные эозинофилы,- Segmented eosinophils
+lab-pan-338,Bazofillar,Базофилы,Basophils
+lab-pan-339,Limfoblastlar,Лимфобласты,Lymphoblasts
+lab-pan-340,Prolimfositlar,Пролимфоциты,Prolymphocytes
+lab-pan-341,Limfositlar,Лимфоциты,Lymphocytes
+lab-pan-342,Monoblastlar,Монобласты,Monoblasts
+lab-pan-343,Promonositlar,Промоноциты,Promonocytes
+lab-pan-344,Monositlar,Моноциты,Monocytes
+lab-pan-345,Plazmoblastlar,Плазмобласты,Plasmablasts
+lab-pan-346,Proplazmositlar,Проплазмоциты,Proplasmacytes
+lab-pan-347,Plazmositlar,Плазмоциты,Plasma cells
+lab-pan-348,Retikulyar hujayralar,Ретикулярные клетки,Reticular cells
+lab-pan-349,Barcha eritron elementlar,Все элементы эритрона,All erythroid elements
+lab-pan-350,Eritroblastlar,Эритробласты,Erythroblasts
+lab-pan-351,Pronormositlar,Пронормоциты,Pronormocytes
+lab-pan-352,Bazofil normositlar,Базофильные нормоциты,Basophilic normocytes
+lab-pan-353,Polixromotofil normositlar,Полихроматофильные нормоциты,Polychromatophilic normocytes
+lab-pan-354,Oksifil normositlar,Оксифильные нормоциты,Oxyphilic normocytes
+lab-pan-355,Mitoz shakllari,Фигуры митоза,Mitotic figures
+lab-pan-356,Indekslar,Индексы,Indices
+lab-pan-357,Leyko-eritroblastik nisbat,Лейко-эритробластическое соотношение,Leukoerythroblastic ratio
+lab-pan-358,Eritrokariositlar yetilish indeksi,Индекс созревания эритрокариоцитов,Erythrokaryocyte maturation index
+lab-pan-359,Neytrofillar yetilish indeksi,Индекс созревания нейтрофилов,Neutrophil maturation index
+lab-pan-Q,Qon zardobidagi lipoproteinlarni tekshirish,Исследование сывороточных липопротеинов,Serum lipoprotein analysis
+lab-pan-360,Umumiy xolesterin,Общий холестерин,Cholesterol [Mass/volume] in Serum or Plasma
+lab-pan-361,Triglitserid,Триглицериды,Triglyceride [Mass/volume] in Serum or Plasma
+lab-pan-362,XS-LPVP,Холестерин ЛПВП (липопротеины высокой плотности),Cholesterol in LDL [Mass/volume] in Serum or Plasma by calculation
+lab-pan-363,XS-LPNP,Холестерин ЛПНП (липопротеины низкой плотности),Cholesterol in HDL [Mass/volume] in Serum or Plasma
+lab-pan-364,XS-LPONP,Холестерин ЛПОНП (липопротеины очень низкой плотности), Cholesterol in VLDL [Mass/volume] in Serum or Plasma by calculation
+lab-pan-365,Xolesterin koeffisenti,Коэффициент атерогенности (коэффициент холестерина),Cholesterol.total/Cholesterol in HDL [Mass Ratio] in Serum or Plasma
+lab-pan-R,SIydik shakliy elementlar soni tahlili,Исследование подсчета образцов мочи,Urine elemental count analysis
+lab-pan-366,Leykositlar,Лейкоциты в моче (тест-полоска),Leukocytes [#/volume] in Urine by Test strip
+lab-pan-367,Eritrositlar,Эритроциты в моче (тест-полоска),Erythrocytes [#/volume] in Urine by Test strip
+lab-pan-368,Silindrlar,Цилиндры в осадке мочи,Casts [#/area] in Urine sediment
+lab-pan-S,TORCH infeksiyasi IXLA  tahlili,Анализ на TORCH-инфекции методом ИХЛА,TORCH infection IXLA analysis
+lab-pan-369,Cytomegalovirus Ig G,Цитомегаловирус IgG, Cytomegalovirus IgG Ab [Presence] in Serum or Plasma by Immunoassay
+lab-pan-370,Gerpes simplex virus1/2 Ig G,Вирус простого герпеса 1/2 типа IgG,Herpes simplex virus 1+2 IgG Ab [Units/volume] in Serum by Immunoassay
+lab-pan-371,Toxoplasma gondil Ig G,Toxoplasma gondii IgG,Toxoplasma gondii IgG Ab [Presence] in Serum
+lab-pan-372,Chlamedia pneumonia Ig G,Chlamydia pneumoniae IgG,Chlamydophila pneumoniae IgG Ab [Presence] in Serum
+lab-pan-373,Mycoplasma hominis Ig G,Mycoplasma hominis IgG,Mycoplasma hominis Ab [Presence] in Serum
+lab-pan-374,Ureaplasma urealyticum Ig G,Ureaplasma urealyticum IgG,Ureaplasma urealyticum [Presence] in Specimen by Organism specific culture
+lab-pan-T,Neonatal retest skrining tahlili,Неонатальный ретест-скрининг анализ,Neonatal retest screening analysis
+lab-pan-375,Immunoreaktiv tripsin (IRT),Иммунореактивный трипсин (IRT),Trypsinogen I Free [Mass/volume] in DBS
+lab-pan-376,Fenilalanin (PA),Фенилаланин (PA),Phenylalanine [Moles/volume] in DBS
+lab-pan-377,Tireotrop gormon (TSH),Тиреотропный гормон (TSH),Thyrotropin [Units/volume] in Serum or Plasma
+lab-pan-U,Immunoxemilyuminestsent tahlil (IXLA),Иммунохемилюминесцентный анализ (ИХЛА),Immunochemiluminescent analysis (IXLA)
+lab-pan-378,SA 125,CA 125,Cancer Ag 125 [Units/volume] in Serum or Plasma
+lab-pan-379,HВsAg quant,HBsAg количественный,Hepatitis B virus surface Ag [Presence] in Serum
+lab-pan-380,Anti-HCV,Антитела к вирусу гепатита C (Anti-HCV),Hepatitis C virus Ab [Presence] in Serum or Plasma by Immunoassay
+lab-pan-381,Insulin,Инсулин,Insulin [Units/volume] in Serum or Plasma
+lab-pan-382,Insulinga o'xshash o'sish omili (IGF-1),Инсулиноподобный фактор роста (IGF-1),Insulin-like growth factor-I [Mass/volume] in Serum or Plasma
+lab-pan-383,Somatotrop gormon (CH),Соматотропный гормон (СТГ),Somatotropin [Mass/volume] in Serum or Plasma
+lab-pan-384,Foliyevaya kislota (FA),Фолиевая кислота (FA),Folate [Mass/volume] in Serum or Plasma
+lab-pan-385,25-ON Vitamin D,25-ОН витамин D,25-Hydroxyvitamin D3+25-Hydroxyvitamin D2 [Mass/volume] in Serum or Plasma
+lab-pan-386,Alfa-fetoprotein (CAFP),Альфа-фетопротеин (AFP),Alpha-1-Fetoprotein [Mass/volume] in Serum or Plasma
+lab-pan-387,Mioglobin,Миоглобин,Myoglobin [Mass/volume] in Serum or Plasma
+lab-pan-388,Vitamin V 12,Витамин B12,Cobalamin (Vitamin B12) [Mass/volume] in Serum or Plasma
+lab-pan-389,Gomoctictein,Гомоцистеин,Homocysteine [Moles/volume] in Serum or Plasma
+lab-pan-390,Ferritin,Ферритин,Ferritin [Mass/volume] in Serum or Plasma
+lab-pan-391,Кreatinkinaza -МВ,Креатинкиназа-МВ (CK-MB),Creatine kinase.MB [Mass/volume] in Serum or Plasma
+lab-pan-392,Troponin I,Тропонин I,Troponin I.cardiac [Mass/volume] in Serum or Plasma
+lab-pan-393,Prokalsitonin,Прокальцитонин,Procalcitonin [Mass/volume] in Serum or Plasma
+lab-pan-394,Kortizol,Кортизол,Cortisol [Mass/volume] in Serum or Plasma
+lab-pan-395,HIV Ab/Ag Combi,Комбинированный тест на ВИЧ (HIV Ag/Ab Combo),HIV 1+2 Ab+HIV1 p24 Ag [Presence] in Serum or Plasma by Immunoassay
+lab-pan-V,Tandem mass-spektrometriya tahlili,Исследование методом тандемной масс-спектрометрии (MS/MS),Tandem mass spectrometry analysis
+lab-pan-396,ALA(alanine),ALA (аланин),Alanine [Moles/volume] in Serum or Plasma
+lab-pan-397,ARG (arginine),ARG (аргинин),Arginine [Moles/volume] in Serum or Plasma
+lab-pan-398,CIT (sitruliv),CIT (цитруллин),Citrulline [Moles/volume] in Serum or Plasma
+lab-pan-399,GLY (glisin),GLY (глицин),Glycine [Moles/volume] in Serum or Plasma
+lab-pan-400,LEU (leysin),LEU (лейцин), Leucine [Moles/volume] in Serum or Plasma
+lab-pan-401,MET(metionin),MET (метионин), Methionine [Moles/volume] in DBS
+lab-pan-402,ORN (оrnitin),ORN (орнитин),Ornithine [Moles/volume] in Serum or Plasma
+lab-pan-403,PHE (fenilalanin),PHE (фенилаланин),Phenylalanine [Moles/volume] in Serum or Plasma
+lab-pan-404,PRO (prolin),PRO (пролин),Proline [Moles/volume] in DBS
+lab-pan-405,SA (suksinilasiton),SA (сукцинилацетон),Succinylacetone [Moles/volume] in DBS
+lab-pan-406,TYR (tirozin),TYR (тирозин),Tyrosine [Moles/volume] in DBS
+lab-pan-407,VAL (valin),VAL (валин),Valine [Moles/volume] in DBS
+lab-pan-408,CO (erkin karnitin),CO (свободный карнитин),Carnitine free (C0) [Moles/volume] in DBS
+lab-pan-409,C2 (asetilkarnitil),C2 (ацетилкарнитин),Acetylcarnitine (C2) [Moles/volume] in DBS
+lab-pan-410,C3 (propionilkornitin),C3 (пропионилкарнитин),Propionylcarnitine (C3) [Moles/volume] in DBS
+lab-pan-411,C4 (butirilkornitin),C4 (бутирилкарнитин),Butyrylcarnitine (C4) [Moles/volume] in DBS
+lab-pan-412,С4ОН/C3DC,C4OH/C3DC (гидроксибутирилкарнитин/малонилкарнитин),Malonylcarnitine (C3-DC)+3-Hydroxybutyrylcarnitine (C4-OH) [Moles/volume] in DBS
+lab-pan-413,С5 (izovalerilkornitin),C5 (изовалерилкарнитин),Isovalerylcarnitine (C5) [Moles/volume] in DBS
+lab-pan-414,С5:1(tiglilkornitin),C5:1 (тиглилкарнитин),Tiglylcarnitine (C5:1) [Moles/volume] in DBS
+lab-pan-415,С5DC\C6OH,C5DC/C6OH (глутарилкарнитин/гидроксигексаноилкарнитин),Glutarylcarnitine (C5-DC)+3-Hydroxyhexanoylcarnitine (C6-OH) [Moles/volume] in DBS
+lab-pan-416,C5OH\C4DC,C5OH/C4DC (гидроксиизовалерилкарнитин/сукцинилкарнитин),Methylmalonylcarnitine (C4-DC)/3-Hydroxyisovalerylcarnitine (C5-OH) [Molar ratio] in DBS
+lab-pan-417,C6 (teksanoilkornitin),C6 (гексаноилкарнитин),Hexanoylcarnitine (C6) [Moles/volume] in DBS
+lab-pan-418,C6DC (teksanoilkornitin),C6DC (адипоилкарнитин),Adipoylcarnitine (C6-DC) [Moles/volume] in DBS
+lab-pan-419,C8 (оktanoilkornitin),C8 (октаноилкарнитин),Octanoylcarnitine (C8) [Moles/volume] in DBS
+lab-pan-420,C8: 1(oktenoilkornitin),C8:1 (октеноилкарнитин),Octenoylcarnitine (C8:1) [Moles/volume] in DBS
+lab-pan-421,C10 (dikanoilkornitin),C10 (деканоилкарнитин),Decanoylcarnitine (C10) [Moles/volume] in DBS
+lab-pan-422,C10:1 (desinoilkornitin),C10:1 (деценоилкарнитин),Decenoylcarnitine (C10:1) [Moles/volume] in DBS
+lab-pan-423,C10:2 (dekadienoilkornitin),C10:2 (декадиеноилкарнитин),Decadienoylcarnitine (C10:2) [Moles/volume] in DBS
+lab-pan-424,C12 (dodekanoilkornitin),C12 (додеканоилкарнитин),Dodecanoylcarnitine (C12) [Moles/volume] in DBS
+lab-pan-425,C12:1 (deodesenoikornitin),C12:1 (додеценоилкарнитин),Dodecenoylcarnitine (C12:1) [Moles/volume] in DBS
+lab-pan-426,C1 (formilkarnitin),C1 (формилкарнитин),C1 (Formylcarnitine)
+lab-pan-427,C14:1 (tetradesenoilkornitin),C14:1 (тетрадценоилкарнитин),Tetradecenoylcarnitine (C14:1) [Moles/volume] in DBS
+lab-pan-428,C14:2 (tetradekadienoilkornitin),C14:2 (тетрадцадиеноилкарнитин),Tetradecadienoylcarnitine (C14:2) [Moles/volume] in DBS
+lab-pan-429,C14OH (3-gidroksi- tetradekadienoilkornitin),C14OH (3-гидрокситетрадеканоилкарнитин),3-Hydroxytetradecanoylcarnitine (C14-OH) [Moles/volume] in DBS
+lab-pan-430,С16 (Palmitoylcarnitine),С16 (пальмитоилкарнитин),Palmitoylcarnitine (C16) [Moles/volume] in Blood
+lab-pan-431,C16:1 (gексadetsenoil karnitin),С16:1 (гексадеценоилкарнитин),C16:1 (Hexadecenoylcarnitine)
+lab-pan-432,C16:1OH (3-gidroksi-gексadetsenoil karnitin),С16:1ОН (3-гидрокси-гексадеценоилкарнитин),3-Hydroxypalmitoleylcarnitine (C16:1-OH) [Moles/volume] in DBS
+lab-pan-433,C16OH (3-gidroksi-gексadekanoil karnitin),C16OH (3-гидрокси-гекадеканоилкарнитин),3-Hydroxyhexanoylcarnitine (C6-OH) [Moles/volume] in DBS
+lab-pan-434,C18 (stearoil karnitin),C18 (октадеканоилкарнитин),Stearoylcarnitine (C18) [Moles/volume] in DBS
+lab-pan-435,C18:1 (oktadetsenoil karnitin),C18:1 (октадеценоилкарнитин),Oleoylcarnitine (C18:1) [Moles/volume] in DBS
+lab-pan-436,C18:1OH (3-gidroksi-oktadetsenoil karnitin),C18:1OH (3-гидрокси-октадеценоилкарнитин),3-Hydroxyoleoylcarnitine (C18:1-OH) [Moles/volume] in DBS
+lab-pan-437,C18:2 (linoleil karnitin),C18:2 (линолеилкарнитин),Linoleoylcarnitine (C18:2) [Moles/volume] in DBS
+lab-pan-438,C18OH (3-gidroksi-oktadekanoil karnitin),C18OH (3-гидрокси-октадеканоилкарнитин),3-Hydroxystearoylcarnitine (C18-OH) [Moles/volume] in DBS
+lab-pan-W,Vasserman reaksiyasiga qon tahlili va boshqalar (Zaxm uchun serologik reaksiyalar paneli),"Анализ крови на реакцию Вассермана и другие (панель серологических реакций на сифилис)
+",Treponema pallidum Ab [Presence] in Serum by Immunoassay
+lab-pan-439,Vasserman bo'yicha natija,Результат по Вассерману,Reagin Ab [Presence] in Serum by VDRL
+lab-pan-440,Kan natija,Результат по Кану,Reagin Ab [Presence] in Serum
+lab-pan-441,Zaks vitebskiy natija,Результат по Заксу-Витебскому,Reagin Ab [Presence] in Serum
+lab-pan-442,Zaks georgiy natija,Результат по Заксу-Георгию,Reagin Ab [Presence] in Serum
+lab-pan-443,Meynik natija,Результат по Мейнику,Reagin Ab [Presence] in Serum
+lab-pan-X,Klinik - diagnostik laboratoriya IXLA tahlili,"Клинико-диагностическая лаборатория, ИХЛА анализ","Clinical diagnostic laboratory, CLIA (chemiluminescent immunoassay) analysis"
+lab-pan-444,Cytomegalovirus Ig G,Цитомегаловирус (антитела IgG),Cytomegalovirus immune globulin given [Volume]
+lab-pan-445,Gerpes simplex virus1/2 Ig G,Вирус простого герпеса 1/2 типа (антитела IgG),Herpes simplex virus 1+2 IgG Ab [Units/volume] in Serum
+lab-pan-446,Toxoplasma gondil Ig G,Токсоплазма (антитела IgG),Toxoplasma gondii IgG Ab [Presence] in Serum
+lab-pan-447,Chlamedia pneumonia Ig G,Хламидия пневмонии (антитела IgG),Chlamydophila pneumoniae IgG Ab [Units/volume] in Serum
+lab-pan-448,Mycoplasma hominis Ig G,Микоплазма хоминис (антитела IgG),Mycoplasma pneumoniae IgG Ab [Presence] in Serum
+lab-pan-449,Ureaplasma urealyticum Ig G,Уреаплазма уреалитикум (антитела IgG),Ureaplasma urealyticum [Presence] in Specimen by Organism specific culture
+lab-pan-450,Anti -dsDNA Ig G,Антитела к двуспиральной ДНК (IgG),DNA double strand IgG Ab [Presence] in Serum
+lab-pan-451,Kollogen  C IV,Коллаген IV типа,Collagen crosslinked C-telopeptide [Mass/volume] in Urine
+lab-pan-452,Gialuronovaya kislota (NA),Гиалуроновая кислота,Collagen type 4 Ag [Presence] in Tissue by Immune stain
+lab-pan-453,Foliyevaya kislota (FA),Фолиевая кислота,Folate [Mass/volume] in Blood
+lab-pan-454,Immunoglobulin Ig A,Иммуноглобулин A (IgA),IgA [Presence] in Serum
+lab-pan-455,Immunoglobulin Ig M,Иммуноглобулин M (IgM),IgM [Presence] in Serum
+lab-pan-456,Immunoglobulin Ig G,Иммуноглобулин G (IgG),IgG [Presence] in Serum
+lab-pan-457,Anti-SSP (Anti-CCP),Антитела к циклическому цитруллинированному пептиду (Anti-CCP),Cyclic citrullinated peptide IgG Ab [Presence] in Serum
+lab-pan-458,25-ON Vitamin D,25-ОН витамин D,25-Hydroxyvitamin D3+25-Hydroxyvitamin D2 [Mass/volume] in Serum or Plasma
+lab-pan-459,Alfa-fetoprotein (CAFP),Альфа-фетопротеин (АФП),Alpha-1-Fetoprotein [Presence] in Serum or Plasma
+lab-pan-460,Epshteyn-Barr (EBV VCA IgM),Вирус Эпштейна–Барр (VCA IgM),Epstein Barr virus capsid IgM Ab [Units/volume] in Serum
+lab-pan-461,Mioglobin,Миоглобин,Myoglobin [Presence] in Serum or Plasma
+lab-pan-462,FT3 (свободный),FT3 (свободный),Triiodothyronine (T3) Free [Mass/volume] in Serum or Plasma
+lab-pan-463,FT4 (свободный),FT4 (свободный),Thyroxine (T4) free [Mass/volume] in Serum or Plasma
+lab-pan-464,Tireotrop gormon (TTG/TSH) [Birlik/hajm],Tиреотропный гормон (ТТГ/TSH) [концентраци,Thyrotropin [Units/volume] in Serum or Plasma
+lab-pan-465,Erkin triyodtironin (T3) [Zichlik],Свободный трийодтиронин (T3) [концентрация],Triiodothyronine (T3) Free [Mass/volume] in Serum or Plasma
+lab-pan-466,Erkin tiroksin (T4) [Zichlik],Свободный тироксин (T4) [концентрация],Thyroxine (T4) free [Mass/volume] in Serum or Plasma
+,,,
+,,,
+lab-pan-467,Gepatit V DNK(HVV) (sifatli),"Гепатит B ДНК(HBV), качественный",Hepatitis B virus DNA [Presence] in Serum or Plasma by NAA with probe detection
+lab-pan-468,"РНК вируса гепатита C (HCV), количественный",Gepatit S RNK (HCV) (miqdoriy),Hepatitis C virus RNA [Units/volume] (viral load) in Serum or Plasma by NAA with probe detection
+lab-pan-469,Laboratoriya diagnostika boʻlimi Vitamin -D,Витамин D (отдел лабораторной диагностики),Vitamin D+Metabolites [Mass/volume] in Serum or Plasma
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,

@@ -16,6 +16,12 @@ Description: "Local code system for representing measurement units of total medi
   * ^designation[0].language = #ru
   * ^designation[=].value = "рад"
 
+* #rutherford "rezerford"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "rutherford"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "резерфорд"
+
 * #mass-percent "massa foizi"
   * ^designation[+].language = #en
   * ^designation[=].value = "mass percent"

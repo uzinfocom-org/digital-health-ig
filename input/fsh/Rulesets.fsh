@@ -72,11 +72,21 @@ RuleSet: HumanName
 
 RuleSet: TaxIdentifier
 * identifier[taxId]
-  * ^short = "Unique identifier of the organization in Soliq"
+  * ^short = "Unique identifier of the organization in  Soliq"
   * system 1..1 MS
   * system = $organization-tax-id-system
   * type 1..1 MS
   * type = $identifier-type#TAX "Tax ID number"
+  * use = #official
+  * value 1..1 MS
+
+RuleSet: MinzdravIdentifier
+* identifier[minzdravId]
+  * ^short = "Unique identifier of the organization in Minzdrav"
+  * system 1..1 MS
+  * system = $organization-minzdrav-id-system
+  * type 1..1 MS
+  * type = $identifier-type#XX "Organization Identifier"
   * use = #official
   * value 1..1 MS
 
@@ -115,3 +125,14 @@ RuleSet: SupplementCodeSystem(id, supplements, version)
 * ^version = "{version}"
 * ^language = #en
 * ^experimental = false
+
+
+RuleSet: SupplementCodeSystemOid(id, oid, version)
+* ^url = "https://terminology.dhp.uz/fhir/core/CodeSystem/{id}"
+* ^status = #active
+* ^content = #supplement
+* ^supplements = "urn:oid:{oid}"
+* ^version = "{version}"
+* ^language = #en
+* ^experimental = false
+

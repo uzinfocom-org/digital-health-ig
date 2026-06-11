@@ -10,3 +10,6 @@ Description: "Encounter subject status codes with English and Russian translatio
 * include encounter-subject-status-cs#gencl-0003-00003
 * include encounter-subject-status-cs#gencl-0003-00004
 * include encounter-subject-status-cs#gencl-0003-00005
+
+
+* include codes from system encounter-local-subject-status-cs

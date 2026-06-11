@@ -98,3 +98,28 @@ Description: "Types of benefits in Uzbekistan"
   * ^designation[=].value = "Медицинские работники"
   * ^designation[+].language = #en
   * ^designation[=].value = "Medical staff"
+
+  
+* #regis0004.00020 "Davlat tibbiyot muassasalarida birlamchi tibbiy-sanitariya yordami, ixtisoslashtirilgan tibbiy yordam, tez tibbiy yordam, shu jumladan ixtisoslashtirilgan psixiatriya tez tibbiy yordami ko‘rsatish chog‘ida bepul psixiatriya yordami (O‘RQ-690-son Qonun, 6-modda)."
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Бесплатная психиатрическая помощь при оказании первичной медико-санитарной помощи, специализированной медицинской помощи, скорой медицинской помощи, включая специализированную психиатрическую скорую помощь, в государственных медицинских учреждениях (Закон № ОРК-690, статья 6)."
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Free psychiatric care provided during primary healthcare, specialized medical care, emergency medical services, including specialized psychiatric emergency care, in state medical institutions (Law No. ORQ-690, Article 6)."
+
+* #regis0004.00021 "Qonunchilikka muvofiq barcha turdagi psixiatriya ekspertizalarini o‘tkazish (O‘RQ-690-son Qonun, 6-modda)."
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Проведение всех видов психиатрических экспертиз в соответствии с законодательством (Закон № ОРК-690, статья 6)."
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Conducting all types of psychiatric examinations in accordance with legislation (Law No. ORQ-690, Article 6)."
+
+* #regis0004.00022 "O‘zbekiston Respublikasining “Narkologik kasalliklar profilaktikasi va ularni davolash to‘g‘risida”gi Qonuni 12-moddasi."
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Статья 12 Закона Республики Узбекистан «О профилактике наркологических заболеваний и их лечении»"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Article 12 of the Law of the Republic of Uzbekistan “On the Prevention and Treatment of Narcological Diseases”"
+
+* #regis0004.00023 "Psixoaktiv moddalardan o‘tkir zaharlanish, psixoaktiv moddalarni iste’mol qilish bilan bog‘liq alkogolli psixozlar hamda zaharlanish natijasidagi psixozlarda shoshilinch tibbiy yordam ko‘rsatish, tekshiruvdan o‘tkazish, maslahat berish, tashxis qo‘yish, ambulatoriya va statsionar sharoitlarda davolash, shuningdek tibbiy-ijtimoiy reabilitatsiya qilish bo‘yicha bepul narkologik yordam."
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Бесплатная наркологическая помощь при острых отравлениях психоактивными веществами, алкогольных психозах, связанных с их употреблением, а также психозах вследствие отравления: оказание неотложной медицинской помощи, обследование, консультирование, диагностика, лечение в амбулаторных и стационарных условиях, а также медико-социальная реабилитация."
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Free narcological care in cases of acute intoxication with psychoactive substances, alcohol-related psychoses, and intoxication-induced psychoses: provision of emergency medical care, examination, consultation, diagnosis, treatment in outpatient and inpatient settings, as well as medical and social rehabilitation."

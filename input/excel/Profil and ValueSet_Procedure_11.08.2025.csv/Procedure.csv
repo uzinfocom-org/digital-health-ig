@@ -1,0 +1,50 @@
+Name		Flags		Cardinality	Example1	Сomments	Document	Type	Description & Constraints			ValueSets			
+Procedure		TU						DomainResource	Действие, которое выполняется или выполнялось в отношении физического или юридического лица			System	CodeSystem	Code	Display
+identifier		        SΣ	D	0..*	"system: ""https://mis.dmed.uz""
+value: ""proc-0001"""			Identifier	Внешний идентификатор, позволяет однозначно различить конкретную процедуру среди других			http://hl7.org/fhir/ValueSet/event-status (Required)	CS-EventStatus	все коды	Статус процедуры
+basedOn		        SΣ	D	0..*	"reference: example-careplan
+display: ""CarePlan #1"""			Reference(CarePlan | ServiceRequest)	Напрямую указывает на запрос или план, который инициировал выполнение данной процедуры			https://terminology.dhp.uz/ValueSet/procedure-category (Example)	CS-ProcedureCategory	в процессе	Классификация типа процедуры
+partOf		        SΣ	D	0..*				Reference(Procedure | Observation | MedicationAdministration)	Данная процедура является частью другой процедуры, события или действия			https://terminology.dhp.uz/ValueSet/procedure-code (Example)	CS-ProcedureCode	в процессе	Какая именно процедура была выполнена
+status		        SΣ	D	1..1	completed		FHIR ValueSet	code	"Текущее состояние выполнения медицинской процедуры
+Binding: http://hl7.org/fhir/ValueSet/event-status (Required)"			https://terminology.dhp.uz/ValueSet/procedure-outcome (Example)	CS-ProcedureOutcome	все коды	Результат выполнения процедуры
+category		        SΣ	D	0..*	"coding: proce-0001 ""Physical therapy procedure""
+text: "		SNOMED-CT	CodeableConcept	Классификацию процедуры по её типу, цели или клиническому контексту						
+code		        SΣ	D	0..1	"coding: proce-0001-00049 ""Therapeutic massage""
+text: ""Therapeutic massage of right foot"""		SNOMED-CT	CodeableConcept	"Какая именно процедура была выполнена
+Binding: https://terminology.dhp.uz/ValueSet/procedure-code (Required)"						
+subject		        SΣ	D	1..1	"reference: example-patient
+display: ""David Davidov"""			Reference(Patient | Group | Device | Practitioner | Organization | Location)	Указывает на основного участника процедуры — чаще всего это пациент						
+encounter		        SΣ	D	0..1	"reference: example-encounter,
+display: ""Outpatient Visit"""			Reference(Encounter)	Встреча, в ходе которой была создана эта Процедура						
+occurrence[x]		        SΣ	D	0..1					Когда была (или будет) проведена медицинская процедура						
+	occurrenceDateTime		D					dateTime	Выбирается один вариант						
+	occurrencePeriod		D		"start: 2025-05-15T08:00:00Z
+end: 2025-05-15T10:00:00Z"			Period							
+	occurrenceString		D					string							
+	occurrenceAge		D			здесь будет возраст пациэта на момент процедуры		Age							
+	occurrenceRange		D					Range							
+	occurrenceTiming		D			более детально описанная дата и время		Timing							
+recorded		SΣ	D	0..1	2025-05-19T09:30:00Z			dateTime	Дата и время, когда информация о процедуре была записана в систему, а не когда сама процедура была проведена						
+recorder		SΣ	D	0..1	"reference: example-practitioner
+display: ""Nurse Jane Smith"""			Reference(Patient | RelatedPerson | Practitioner | PractitionerRole)	Кто записал информацию о процедуре в систему	Пациент может записывать процедуру, но функционал реализуем в будущем					
+performer		SΣC	D	0..*				BackboneElement	"Кто выполнил процедуру и что они сделали
++ Правило: Procedure.performer.onBehalfOf может быть заполнен только тогда, когда performer.actor не является Practitioner или PractitionerRole"						
+	actor	SΣC	D	1..1	"reference: example-practitioner
+display: ""Paul Ivanov, PT"""			Reference(Practitioner | PractitionerRole | Organization | Patient | RelatedPerson | Device | CareTeam | HealthcareService)	Кто проводил процедуру						
+location		SΣ	D	0..1	"reference: example-location
+display: ""Toshkent shahar 1-sonli shifoxona"""			Reference(Location)	Место, где была выполнена медицинская процедура						
+reason		SΣ	D	0..*	"coding: example-condition ""Aching right foot""
+text: "	можно выбрать код из ValueSet, а так же дать ссылку на ресурс	FHIR ValueSet	CodeableReference(Condition | Observation | Procedure | DiagnosticReport | DocumentReference)	"1. Обоснование того, что процедура была выполнена
+2. Причина, по которой была проведена процедура
+Bibding: https://terminology.dhp.uz/ValueSet/procedure-reason (Example)"	ССылка на Condition. Коды можно не делать или прикрепим коды из Condition??					
+bodySite		SΣ	D	0..*	"coding: sct#7769000 ""Right foot""
+text: "		SNOMED CT	CodeableConcept	"Анатомическую(ие) область(и) тела, на которую(ые) была направлена процедура
+Binding: http://terminology.dhp.uz/ValueSet/body-site (Required)"	справочник имеется в Observation					
+outcome		SΣ	D	0..1	"coding: sct#385669000 ""Successful""
+text: "		SNOMED CT	CodeableConcept	"Результат выполнения процедуры
+Binding: https://terminology.dhp.uz/ValueSet/procedure-outcome (Extensible)"						
+note		S	D	0..*				Annotation	Дополнительная информация о процедуре(комментарий)						
+used		S	D	0..*		ресурсы и материалы, использованные во время процедуры, но не являющиеся объектом самой процедуры	"FHIR ValueSet-systems:
+urn:iso:std:iso:11073:10101
+urn:oid:2.16.840.1.113883.6.276"	CodeableReference(Device | Medication | Substance | BiologicallyDerivedProduct)	"Устройства, материалы или медикаменты, которые были использованы во время выполнения процедуры
+Binding: https://terminology.dhp.uz/ValueSet/device-type (Example)"	не нужны коды					

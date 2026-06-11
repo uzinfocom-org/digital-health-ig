@@ -1,0 +1,6 @@
+CODE	UZ	RU	EN	Значение	Link
+uncomfirmed	Tasdiqlanmagan	Не подтверждена	Unconfirmed	Предполагаемая аллергия, требуется подтверждение.	http://hl7.org/fhir/ValueSet/allergyintolerance-verification 
+presumed	Taxmin qilingan	Предполагаемый	Presumed		
+confirmed	Tasdiqlangan	Подтверждена	Confirmed	"	Аллергия подтверждена медицински."	
+refuted	Rad etilgan	Опровергнута	Refuted	Аллергия исключена после анализа.	
+entered-in-error	Xatolik bilan kiritilgan	Ошибка ввода	Entered in Error	Информация ошибочна, должна быть удалена из учёта.	

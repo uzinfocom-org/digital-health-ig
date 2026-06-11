@@ -1,0 +1,5 @@
+CODE	UZ	RU	EN																						
+ provider 	Boshqa tibbiy xizmat ko‘rsatuvchi	Другой поставщик	Other Provider		http://hl7.org/fhir/ValueSet/immunization-origin																				
+ record 	Yozma qayd	Письменная запись	Written Record																						
+ recall	Qayta chaqiruv / Eslatma	Консультативные	Parent/Guardian/Patient Recall																						
+ school	Maktab yozuvi	 Школьная запись	School Record																						
