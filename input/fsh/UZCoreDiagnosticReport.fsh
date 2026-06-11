@@ -96,8 +96,8 @@ Description: "Diagnostic report whose type is not in LabReportTypesCS. Preferred
 
 * category = $diagnostic-report-service-category#LAB "Laboratory"
 
-// Aurora LIS code system below is illustrative - the real source system and codes vary in practice
-* code.coding[0].system = "https://aurora.uz/fhir/CodeSystem/lab-report-type"
+// Code system below is illustrative - the real source system and codes vary in practice
+* code.coding[0].system = "http://example.org/fhir/CodeSystem/lab-report-type"
 * code.coding[0].code = #AUR-0142
 * code.coding[0].display = "Maxsus immunologik tahlil"
 * code.text = "Special immunology assay reported by Aurora LIS"
