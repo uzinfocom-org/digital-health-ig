@@ -47,6 +47,7 @@ Description: "Uzbekistan Core Laboratory ObservationDefinition profile, used to 
 * code MS
 * code from ObservationCodesVS (example)
 * code ^short = "Laboratory panel or test code displayed in the Patient Portal"
+* permittedDataType MS
 * permittedUnit MS
 * permittedUnit from $ucum-common (preferred)
 * permittedUnit ^short = "Permitted unit of measure for the laboratory analyte value"
@@ -86,6 +87,7 @@ Description: "Definition of the blood hemoglobin laboratory test displayed in th
 * subject = $sct#116154003 "Patient"
 * category = $observation-category#laboratory "Laboratory"
 * code = lab-pan-cs#lab-pan-74 "Hemoglobin [Mass/volume] in Blood"
+* permittedDataType = #Quantity
 * permittedUnit = $ucum#"g/L" "g/L"
 * method = lab-methods-cs#lab-method-6 "Spectrophotometry"
 // Sex-specific reference (normal) ranges shown in the Patient Portal
