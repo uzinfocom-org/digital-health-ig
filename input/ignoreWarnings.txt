@@ -1094,3 +1094,6 @@ Target Code System http://hl7.org/fhir/sid/cvx doesn't have all content (content
 # UcumToRuUnitsDisplayCM / UcumToUzUnitsDisplayCM display-translation maps is reported as
 # "not in ucum-common". The codes are valid UCUM; these warnings are benign (PR #173).
 %is not valid in the value set http://terminology.hl7.org/ValueSet/ucum-common%
+
+# Fictional external code system in the external-lab-report example, unresolvable by design
+A definition for CodeSystem 'http://example.org/fhir/CodeSystem/lab-report-type' could not be found, so the code cannot be validated

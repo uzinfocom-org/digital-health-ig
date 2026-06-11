@@ -571,6 +571,24 @@ Usage: #definition
 * uniqueId[=].value = $pension-number
 * uniqueId[=].preferred = true
 
+Instance: diagnostic-report-id
+InstanceOf: NamingSystem
+Description: "Identifier used to uniquely identify a diagnostic report within the Uzbekistan digital health system."
+Usage: #definition
+* url = "https://terminology.dhp.uz/fhir/core/NamingSystem/diagnostic-report-id"
+* name = "UzbekistanDiagnosticReportIdSystem"
+* status = #active
+* kind = #identifier
+* date = "2026-02-06"
+* publisher = "Uzinfocom"
+* responsible = "Ministry of Health of the Republic of Uzbekistan"
+* description = "Naming system defining the identifier assigned to diagnostic reports within Uzbekistan’s national health information exchange. This identifier ensures uniqueness of laboratory and clinical diagnostic reports and supports interoperability across healthcare providers, laboratories, and national registries."
+* jurisdiction = urn:iso:std:iso:3166#UZ "Uzbekistan"
+* usage = "Used to record and exchange unique identifiers for diagnostic reports across healthcare systems, including laboratory results and imaging reports. This identifier supports traceability, result validation, and integration with national eHealth services."
+* uniqueId[0].type = #uri
+* uniqueId[=].value = "https://terminology.dhp.uz/fhir/core/NamingSystem/diagnostic-report-id"
+* uniqueId[=].preferred = true
+
 Instance: immunization-identifier
 InstanceOf: NamingSystem
 Usage: #definition
