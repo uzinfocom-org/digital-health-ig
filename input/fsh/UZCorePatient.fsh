@@ -163,6 +163,7 @@ Description: "Uzbekistan Core Patient profile, used to represent patients admini
 * extension[nationality].extension[code].valueCodeableConcept from NationalityVS (required)
 * extension[citizenship].extension[code].valueCodeableConcept from ISO3166_2 (required)
 * gender MS
+* gender from AdministrativeGenderVS (required)
   * extension contains GenderOtherUZ named gender-other 0..1 MS
 * obeys uzcore-gender-other-2
 * insert IntAndUzAddressRules
