@@ -67,3 +67,35 @@ Description: "Uzbekistan Core Laboratory ObservationDefinition profile, used to 
 * component MS
   * code from ObservationCodesVS (example)
   * code ^short = "Laboratory analyte or indicator code included in the laboratory panel displayed in the Patient Portal"
+
+Instance: example-laboratory-hemoglobin
+InstanceOf: UZCoreLaboratoryObservationDefinition
+Usage: #example
+Title: "Example UZ Core Laboratory ObservationDefinition - Hemoglobin"
+Description: "Definition of the blood hemoglobin laboratory test displayed in the Patient Portal, with its permitted unit, measurement method, and sex-specific reference ranges. Hemoglobin is the first analyte of the CBC panel (lab-pan-E) reported by the UZ Core Observation example."
+* url = "https://dhp.uz/fhir/core/ObservationDefinition/example-laboratory-hemoglobin"
+* identifier.system = "https://dhp.uz/fhir/core/sid/lab-test-catalog"
+* identifier.value = "lab-pan-74"
+* name = "HemoglobinMassPerVolumeInBlood"
+* title = "Hemoglobin [Mass/volume] in Blood"
+* status = $publication-status#active
+* date = "2026-01-16"
+* description = "Mass concentration of hemoglobin in whole blood, reported in g/L and shown to Patient Portal users with sex-specific normal ranges."
+* useContext[laboratoryFocus].code = $usage-context-type#focus
+* useContext[laboratoryFocus].valueCodeableConcept = $sct#108252007 "Laboratory procedure"
+* subject = $sct#116154003 "Patient"
+* category = $observation-category#laboratory "Laboratory"
+* code = lab-pan-cs#lab-pan-74 "Hemoglobin [Mass/volume] in Blood"
+* permittedUnit = $ucum#"g/L" "g/L"
+* method = lab-methods-cs#lab-method-6 "Spectrophotometry"
+// Sex-specific reference (normal) ranges shown in the Patient Portal
+* qualifiedValue[0].context = $reference-meaning#normal "Normal Range"
+* qualifiedValue[0].gender = #male
+* qualifiedValue[0].rangeCategory = #reference
+* qualifiedValue[0].range.low = 130 'g/L' "g/L"
+* qualifiedValue[0].range.high = 170 'g/L' "g/L"
+* qualifiedValue[1].context = $reference-meaning#normal "Normal Range"
+* qualifiedValue[1].gender = #female
+* qualifiedValue[1].rangeCategory = #reference
+* qualifiedValue[1].range.low = 120 'g/L' "g/L"
+* qualifiedValue[1].range.high = 150 'g/L' "g/L"
