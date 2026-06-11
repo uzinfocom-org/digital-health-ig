@@ -62,7 +62,7 @@ Description: "Laboratory diagnostic report for a complete blood count (CBC), inc
 
 * category = $diagnostic-report-service-category#HM "Hematology"
 
-* code = lab-report-types-cs#lab-rep-02 "CBC panel"
+* code = lab-report-types-cs#lab-rep-01 "CBC panel"
 
 * subject = Reference(Patient/example-salim)
 
