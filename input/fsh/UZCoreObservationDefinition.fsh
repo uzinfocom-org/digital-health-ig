@@ -74,8 +74,8 @@ InstanceOf: UZCoreLaboratoryObservationDefinition
 Usage: #example
 Title: "Example UZ Core Laboratory ObservationDefinition - Hemoglobin"
 Description: "Definition of the blood hemoglobin laboratory test displayed in the Patient Portal, with its permitted unit, measurement method, and sex-specific reference ranges. Hemoglobin is the first analyte of the CBC panel (lab-pan-E) reported by the UZ Core Observation example."
-* url = "https://dhp.uz/fhir/core/ObservationDefinition/example-laboratory-hemoglobin"
-* identifier.system = "https://dhp.uz/fhir/core/sid/lab-test-catalog"
+* url = "http://example.org/fhir/ObservationDefinition/example-laboratory-hemoglobin"
+* identifier.system = "http://example.org/fhir/sid/lab-test-catalog"
 * identifier.value = "lab-pan-74"
 * name = "HemoglobinMassPerVolumeInBlood"
 * title = "Hemoglobin [Mass/volume] in Blood"
