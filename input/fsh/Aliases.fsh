@@ -167,8 +167,6 @@ Alias: $action-participant-type = http://hl7.org/fhir/action-participant-type
 Alias: $action-code = http://hl7.org/fhir/action-code
 Alias: $action-condition-kind = http://hl7.org/fhir/action-condition-kind
 Alias: $action-relationship-type = http://hl7.org/fhir/action-relationship-type
-Alias: $ucum = http://unitsofmeasure.org
-Alias: $ucum-vs = http://hl7.org/fhir/ValueSet/ucum-units
 Alias: $ucum-common = http://hl7.org/fhir/ValueSet/ucum-common
 Alias: $referencerange-appliesto = http://hl7.org/fhir/ValueSet/referencerange-appliesto
 
