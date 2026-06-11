@@ -77,7 +77,7 @@ Description: "Example laboratory ServiceRequest instance for UZCore."
 // * insurance[0] = Reference(Coverage/uz-coverage-example-01) We don't have Coverage profile  yet
 //* supportingInfo[0] = Reference(UZCoreServiceRequest/uz-servicerequest-supporting-01)
 
-* extension[paymentType].valueCodeableConcept = payment-type-cs#paytype-0001 "Free"
+* extension[paymentType].valueCodeableConcept = payment-type-cs#paytype-0001-0001 "Free"
 
 
 * specimen[0] = Reference(Specimen/example-specimen-blood-cbc)
