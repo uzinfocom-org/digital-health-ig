@@ -1,7 +1,7 @@
 CodeSystem: ServiceRequestStatusCS
 Id: service-request-status-cs
-Title: "Service Request status translations"
-Description: "Service request status with translations in Uzbek and Russian"
+Title: "ServiceRequest status translations"
+Description: "ServiceRequest status with translations in Uzbek and Russian"
 * insert SupplementCodeSystemDraft(service-request-status-cs, $service-request-status, 5.0.0)
 
 * #draft
