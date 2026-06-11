@@ -157,6 +157,7 @@ Alias: $v3-RoleClass = http://terminology.hl7.org/CodeSystem/v3-RoleClass
 Alias: $v3-RoleCode = http://terminology.hl7.org/CodeSystem/v3-RoleCode
 Alias: $v3ActPriority = http://terminology.hl7.org/CodeSystem/v3-ActPriority
 Alias: $valueset-supplement = http://hl7.org/fhir/StructureDefinition/valueset-supplement
+Alias: $service-request-status = http://hl7.org/fhir/request-status
 Alias: $specimen-status = http://hl7.org/fhir/specimen-status
 Alias: $specimen-combined = http://hl7.org/fhir/specimen-combined
 Alias: $immunization-recommendation-status = http://terminology.hl7.org/CodeSystem/immunization-recommendation-status
