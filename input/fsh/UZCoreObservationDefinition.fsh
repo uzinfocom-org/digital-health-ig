@@ -1,8 +1,8 @@
-Profile: UZCoreObservationDefinition
+Profile: UZCoreLaboratoryObservationDefinition
 Parent: ObservationDefinition
-Id: uz-core-observation-definition
-Title: "UZ Core ObservationDefinition"
-Description: "The UZCoreObservationDefinition profile is used to structurally describe laboratory services provided by healthcare organizations in the Patient Portal. It allows defining the laboratory service code, related analytes, reference ranges, and permitted coded normal values required to display information about laboratory tests to Patient Portal users."
+Id: uz-core-laboratory-observation-definition
+Title: "UZ Core Laboratory ObservationDefinition"
+Description: "Uzbekistan Core Laboratory ObservationDefinition profile, used to structurally describe laboratory services provided by healthcare organizations in the Patient Portal. It allows defining the laboratory service code, related analytes, reference ranges, and permitted coded normal values required to display information about laboratory tests to Patient Portal users."
 * ^experimental = true
 * ^status = #active
 
@@ -24,6 +24,20 @@ Description: "The UZCoreObservationDefinition profile is used to structurally de
 
 * description MS
 * description ^short = "Natural language description of the ObservationDefinition"
+
+// useContext lets clients tell laboratory definitions apart from other ObservationDefinitions on the
+// server. Every UZ Core laboratory ObservationDefinition carries a fixed focus context, so it is found
+// with GET [base]/ObservationDefinition?context-type-value=focus$http://snomed.info/sct|108252007
+* useContext 1..* MS
+* useContext ^slicing.discriminator.type = #value
+* useContext ^slicing.discriminator.path = "code"
+* useContext ^slicing.rules = #open
+* useContext ^slicing.description = "Distinguishes laboratory definitions from other ObservationDefinitions"
+* useContext contains laboratoryFocus 1..1 MS
+* useContext[laboratoryFocus] ^short = "Marks this ObservationDefinition as a laboratory definition"
+* useContext[laboratoryFocus].code = $usage-context-type#focus
+* useContext[laboratoryFocus].value[x] only CodeableConcept
+* useContext[laboratoryFocus].valueCodeableConcept = $sct#108252007 "Laboratory procedure"
 
 * subject MS
 
