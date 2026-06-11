@@ -88,3 +88,14 @@ Context: HealthcareService
 // Laboratory TAT is typically measured in hours, days, or weeks; months are excluded due to variable month lengths.
 * valueDuration obeys uzcore-turnaround-time-1
 
+
+Extension: PaymentType
+Id: payment-type
+Title: "Payment Type"
+Description: "Extension indicating the type of payment or financing model used for a requested laboratory service. It may be used when a laboratory test is ordered directly by a laboratory medical registrar without a prior physician referral, for example when the patient receives the laboratory service as a paid service. The extension can be used to distinguish paid laboratory services from services covered by state programs, insurance, or other financing mechanisms."
+Context: ServiceRequest
+
+* ^experimental = true
+
+* value[x] only CodeableConcept
+* valueCodeableConcept from PaymentTypeVS (required)

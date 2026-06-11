@@ -52,6 +52,11 @@ Local passports are used for domestic identification within Uzbekistan.
 
 **System URI**: `https://dhp.uz/fhir/core/sid/pid/uz/ppn/local`
 
+The same local-passport system covers both the modern ID card and the older book-form passport it replaces - they carry the same kind of internal passport number, so there is no separate system URI for the ID card. Distinguish them with `use`:
+
+- `use = official` - the credential currently in force, typically the ID card. Use this in normal day-to-day records.
+- `use = old` - a superseded paper passport number, kept for historical or matching purposes after the holder moved to an ID card.
+
 ```json
 {
   "identifier": [
