@@ -114,12 +114,35 @@ The binding strength on the element (below) tells you whether this is allowed: a
 
 ### Terminology bindings
 
-When an element is bound to a value set, the binding strength tells you how strict it is:
+When an element is bound to a value set, the binding strength tells you how strict it is - and what to do when none of the value set's codes fit your data:
 
-- required - you *must* use a code from the value set.
-- extensible - use a code from the value set if one fits; otherwise you may use another code.
-- preferred - the value set is encouraged but not enforced.
-- example - illustrative only, you can choose to use any code.
+- required - you *must* use a code from the value set. There is no escape hatch: a text-only value is rejected, and a code from another system does not satisfy the binding. For example `Patient.identifier.type` is bound to [Identifier types](ValueSet-identifier-type-vs.html); if a concept you need is missing, ask the UZ Core maintainers to add it rather than working around it.
+- extensible - use a code from the value set if one fits; only if none fits, send the source system's own code in `coding` and put the original wording in `text`. For example `AllergyIntolerance.code` is bound to [Allergen codes](ValueSet-allergen-codes-vs.html) (see below).
+- preferred - the value set is encouraged but not enforced; you may use any code, and should add `text`. For example `Condition.code` is bound to [Condition codes](ValueSet-condition-code-vs.html).
+- example - the value set is illustrative only; use whatever code system is appropriate. For example `Immunization.route` is bound to [Route codes](ValueSet-route-code-vs.html).
+
+When the allergen is in the national list, use that code:
+
+```json
+"code": {
+  "coding": [
+    { "system": "https://terminology.dhp.uz/fhir/core/CodeSystem/allergen-codes-cs", "code": "aller-0010-00001", "display": "O't changlari" }
+  ]
+}
+```
+
+When it is not (here a penicillin allergy, which the national list does not cover), send the source system's code and keep the original label in `text`:
+
+```json
+"code": {
+  "coding": [
+    { "system": "http://snomed.info/sct", "code": "764146007", "display": "Penicillin" }
+  ],
+  "text": "Penicillin allergy"
+}
+```
+
+Whenever you send a code from a system other than the one UZ Core bound, keep the original human-readable label in `text` so the meaning is preserved and the code can be mapped later.
 
 UZ Core publishes national CodeSystems and ValueSets in Uzbek (with Russian and English translations) and supplements international HL7 terminology with Uzbek/Russian translations. Codes can be validated against the platform terminology server - see [General guidance](general-guidance.html#terminology).
 
