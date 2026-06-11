@@ -24,18 +24,18 @@ Description: "Uzbekistan Core profile for DiagnosticReport, representing clinica
 * subject only Reference(UZCorePatient or UZCoreOrganization or UZCorePractitioner or UZCoreLocation or UZCoreMedication)
   * ^short = "Who and/or what this report is about"
 * encounter MS
-* encounter only Reference(Encounter)
+* encounter only Reference(UZCoreEncounter)
   * ^short = "The healthcare event which this Laboratory Report is about (when test ordered)."
 * effective[x] MS
   * ^short = "Clinically relevant time/time-period for report."
 * performer MS
-* performer only Reference(Practitioner or PractitionerRole)
+* performer only Reference(UZCorePractitioner or UZCorePractitionerRole)
   * ^short = "Responsible Diagnostic Service."
 * specimen MS
-* specimen only Reference(Specimen)
+* specimen only Reference(UZCoreSpecimen)
   * ^short = "Specimens this report is based on."
 * result MS
-* result only Reference(Observation)
+* result only Reference(UZCoreObservation)
   * ^short = "Laboratory and etc,. results"
 * media MS
   * ^short = "Additional data (like images, diagrams or documents) associated with this report"
