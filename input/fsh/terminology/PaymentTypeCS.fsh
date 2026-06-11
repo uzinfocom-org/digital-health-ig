@@ -4,25 +4,25 @@ Title: "Payment Type Code System"
 Description: "List of payment types used in Uzbekistan healthcare system"
 * insert OriginalCodeSystemDraft(payment-type-cs)
 
-* #py-ty-cs-0001 "Bepul"
+* #paytype-0001 "Bepul"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Бесплатно"
   * ^designation[+].language = #en
   * ^designation[=].value = "Free"
 
-* #py-ty-cs-0002 "Pullik"
+* #paytype-0002 "Pullik"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Платно"
   * ^designation[+].language = #en
   * ^designation[=].value = "Paid"
 
-* #py-ty-cs-0003 "Sug'urta"
+* #paytype-0003 "Sug'urta"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Страхование"
   * ^designation[+].language = #en
   * ^designation[=].value = "Insurance"
 
-* #py-ty-cs-0004 "Davlat tomonidan moliyalashtiriladigan"
+* #paytype-0004 "Davlat tomonidan moliyalashtiriladigan"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Финансируется государством"
   * ^designation[+].language = #en
