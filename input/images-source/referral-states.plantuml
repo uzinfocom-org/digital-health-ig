@@ -1,0 +1,23 @@
+@startuml referral-states
+title Referral ServiceRequest status, driven by Task events
+hide empty description
+
+state "on-hold" as onhold
+state "entered-in-error" as eie
+
+[*] --> active : created (status = active)
+active --> onhold : returned for revision
+onhold --> active : resubmitted with a new approval Task
+active --> completed : final approval / fulfilment Task completed
+active --> revoked : cancelled, or a commission Task failed / rejected
+onhold --> revoked : cancelled
+active --> eie : correction
+completed --> [*]
+revoked --> [*]
+eie --> [*]
+
+note bottom of active
+  An SLA breach sets only Task.businessStatus = overdue;
+  the ServiceRequest status does not change.
+end note
+@enduml

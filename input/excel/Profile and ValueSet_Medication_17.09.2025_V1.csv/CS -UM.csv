@@ -1,0 +1,84 @@
+code	ucum code 	Naming/			The designation	
+		In Uzbek	In russian	In English	In Uzbek	In russian
+%	"%	"	foiz	процент	percent	%	%
+ng	"ng	"	nanogramm	нанограмм	nanogram	ng	нг
+uL	uL	mikrolitr	микролитр	microliter	mkl	мкл
+nL	"nL	"	nanolitr	нанолитр	nanoliter	nl	нл
+Rd	Rd	rezerford	резерфорд	rutherford	Rd	Рд
+		grey	грей	gray	Gr	Гр
+		rad	рад	glad	rad	рад
+kcal	kCal	kilokaloriya	килокалория	kilocalorie	kkal	ккал
+mmol	mmol	millimol	миллимоль	millimole	mmol	ммоль
+umol	umol	mikromol	микромоль	micromoles	mkmol	мкмоль
+nmol	nmol	nanomol	наномоль	nanomole	nmol	нмоль
+osm	osm	osmol	осмоль	osmol	Osm	Осм
+mosm	mosm	milliosmol	миллиосмоль		mOsm	мОсм
+		massa foizi	процент массовый		%, m	%, m
+		hajm foizi	процент объемный		%, vol	%, vol
+[drp]	[drp]	tomchi	капля		tomchi	капля
+		ulush	доля		ulush	доля
+		doza	доза		doza	доза
+cell	{Cells}	hujayra	клетка	cell 	xujayra	клетка
+10*6.{cell}	10*6.{cell}	mln hujayra	млн клеток		mln xujayra	млн клеток
+10*9.{cell}	10*9.{cell}	mlrd hujayra	млрд клеток		mlrd xujayra	млрд клеток
+{spore}	{spore}	spora	спора	spore	spora	спора
+		mlrd spor	млрд спор		mlrd spor	млрд спор
+g/mL	g/mL	millilitrda gramm	грамм на миллилитр	gramsPerMilliLiter	g/ml	г/мл
+mg/mL	mg/mL	millilitrda milligramm	миллиграмм на миллилитр	"milliGramsPerMilliLiter	"	mg/ml	мг/мл
+ug/mL	ug/mL	millilitrda mikrogramm	микрограмм на миллилитр	"microGramsPerMilliLiter	"	mkg/ml	мкг/мл
+		mikrolitrda mikrogramm	микрограмм на микролитр		mkg/mkl	мкг/мкл
+mg/g	mg/g	grammda milligramm	миллиграмм на грамм	"milliGramsPerGram	"	mg/g	мг/г
+ug/g	ug/g	grammda mikrogramm	микрограмм на грамм	"microGramsPerGram	"	mkg/g	мкг/г
+ug/mg	ug/mg	milligrammda mikrogramm	микрограмм на миллиграмм	"microGramsPerMilliGram	"	mkg/mg	мкг/мг
+mmol/L	mmol/L	litrda millimol	миллимоль на литр	"milliMolesPerLiter	"	mmol/l	ммоль/л
+		optik birlik	оптическая единица	optical unit	OB	ОЕ
+"cm2	"	"cm2	"	kvadrat santimetr	квадратный сантиметр	square centimeter	kv.sm	кв.см
+mL	mL	millilitr	миллилитр	"milliLiter	"	ml	мл
+L	"L	"	litr	литр	liter	l	л
+mg	"mg	"	milligramm	миллиграмм	milligram	mg	мг
+g	g	gramm	грамм		g	г
+ug	ug	mikrogramm	микрограмм	microGram		мкг
+kg	kg	kilogramm	килограмм	kiloGram	kg	кг
+J	J	joul	джоуль	joule	J	Дж
+	kJ	kilojoul	килоджоуль	kilojoule	kJ	кДж
+GBq	GBq	gigabekkerel	гигабеккерель	gigabecquerel	GBk	ГБк
+kBq	kBq	kilobekkerel	килобеккерель	kilobecquerel	kBk	кБк
+MBq	MBq	megabekkerel	мегабеккерель	megabecquerel	MBk	МБк
+mol	mol	mol	моль	mole	mol	моль
+Bq	Bq	bekkerel	беккерель	becquerel	Bk	Бк
+		dona	штука		dona	шт
+RAD (radiation absorbed dose)	RAD	oʻrtacha samarali immunizatsiya qilingan doza miqdori	количество среднеэффективных иммунизирующих доз	number of average effective immunizing doses	nurlanish dozasi	доза излучения
+		loyqalik birligi	единица мутности		loyqalik birligi	единица мутности
+[IU]	[IU]	xalqaro birlik	международная единица	"InternationalUnit	"	XB	МЕ
+[PFU]	[PFU]	chechak hosil qiluvchi birlik (tiqin hosil qiluvchi raqam)	оспообразующая единица (бляшкообразующее число)	plaque forming unit	PFU	PFU
+[Lf]	[Lf]	flokulyatsiya birligi	флокулирующая единица	limit of flocculation	FB	Lf
+		Yevropa farmakopeyasining taʼsir birligi	единица действия Европейской фармакопеи	European Pharmacopoeia unit of action	Ph.Eur.U.	Ph.Eur.U.
+		biologik faollikning taʼsir birligi	единица действия биологической активности	unit of action of biological activity	BFTB	ЕД
+[PNU]	[PNU]	oqsil azoti birligi	единица белкового азота	protein nitrogen unit	OAB	PNU
+[CFU]		koloniya hosil qiluvchi birlik	колониеобразующая единица		KHB	КОЕ
+		shartli birlik	условная единица	conventional unit	SHB	УЕ
+		kallikreinni faolsizlantirish birligi	калликреин инактивирующая единица	kallikrein inactivating unit	KFB	КИЕ
+		lipoprotein-lipaza birligi	единица липопротеина-липазы	lipoprotein lipase unit	LB	ЛЕ
+		antigenik birlik	антигенная единица	antigenic unit	AB	АЕ
+		titrlash birligi	титрационная единица	titration unit	TB	ТЕ
+[IU]	[IU]	xalqaro birlik	интернациональная единица	international unit	IE	ИЕ
+		antitripsin birligi	антитрипсиновая единица	antitrypsin unit	ATrB	АТрЕ
+[tb'U]	[tb'U]	tuberkulin birligi	туберкулиновая единица	tuberculin unit	TB	TУ
+		immunoferment tahlili birligi	единица иммуноферментного анализа	enzyme immunoassay unit	IFT birl.	ИФА ед
+		antitrombotik taʼsirning xalqaro birligi	международная единица антитромботического действия	international unit of antithrombotic action	anti-Xa XB	анти-Xa МЕ
+		toʻqimalarning 50% sitopatik dozasi	50-процентная тканевая цитопатическая доза	50% tissue cytopathic dose	TSD 50	ТЦД 50
+		yarimletal doza birligi	единица полулетальной дозы	half-lethal dose unit	LD 50	ЛД 50
+		Elayza biologik faolligining taʼsir birligi	единица действия биологической активности Элайза (ELISA)	Elisa biological activity unit (ELISA)	ELU	ELU
+		yarim yuqumli doza birligi	единица полуинфицирующей дозы	unit of semi-infectious dose	ID 50	ИД 50
+		yarim patologik oʻzgarishlarning doza birliklari	единицы дозы полупатологоанатомических изменений	units of dose per half of pathological changes	EID 50	ЭИД 50
+		yarimsitopatik taʼsir birligi dozasi	единица дозы полуцитопатического эффекта	unit dose of semi-cytopathic effect	SPD 50	ЦПД 50
+		minimal infeksion doza	минимальная инфицирующая доза	minimum infectious dose	MIDe	МИДэ
+		bogʻlash birligi	единица связывания	binding unit	BB	ЕС
+		reaktivlik indeksi (standartlashtirishning biologik birligi)	индекс реактивности (биологическая единица стандартизации)	reactivity index (biological unit of standardization)	RI	ИР
+		antigen birligi	единица антигена	antigen unit	antigen birligi	единица антигена
+[AU]	[AU]	allergen birligi	единица аллергена	allergen unit	allergyen birligi	единица аллергена
+		qurbaqa taʼsiri birligi	лягушачья единица действия	frog action unit	QTB	ЛЕД
+		millilitrda biologik faollikning taʼsir birligi	единица действия биологической активности на миллилитр	unit of biological activity per milliliter	TB/ml	ЕД/мл
+		millilitrda oqsil azot birligi	единица белкового азота на миллилитр	unit of protein nitrogen per milliliter	RNU/ml	РNU/мл
+		millilitrda reaktivlik indeksi (standartlashtirishning biologik birligi) 	индекс реактивности (биологическая единица стандартизации) на миллилитр	reactivity index (biological unit of standardization) per milliliter	IR/ml	ИР/мл
+[D'ag'U]		D-antigen birligi	единица D-антигена	D antigen unit	D-antigen birligi	Единица D-антигена

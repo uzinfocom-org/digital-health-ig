@@ -1,6 +1,6 @@
 ### Quick Start
 
-Common API interactions for this profile. `[base]` is the FHIR server base URL; `|` separates system from value and must be URL-encoded as `%7C`.
+Common API interactions for this profile. Requests require a JWT access token - see [Security and authentication](api-access.html#security). `[base]` is the [FHIR server base URL](api-access.html#endpoints); `|` separates system from value and must be URL-encoded as `%7C`.
 
 **Read by server id**
 
@@ -23,13 +23,21 @@ GET [base]/Goal?patient=Patient/[id]&description=http://snomed.info/sct%7C120100
 
 ```
 POST [base]/Goal
-{ "resourceType": "Goal", "meta": { "profile": [ "https://dhp.uz/fhir/core/StructureDefinition/uz-core-goal" ] }, "lifecycleStatus": "active", "description": { ... }, "subject": { "reference": "Patient/[id]" }, ... }
+{
+  "resourceType": "Goal",
+  "meta": { "profile": [ "https://dhp.uz/fhir/core/StructureDefinition/uz-core-goal" ] },
+  "lifecycleStatus": "active",
+  "description": { ... },
+  "subject": { "reference": "Patient/[id]" },
+  ...
+}
 ```
 
 **Withdraw a goal** - a Goal is never hard-deleted. PUT the full resource back with an updated `lifecycleStatus` (e.g. `cancelled` or `completed`) instead of calling `DELETE`:
 
 ```
 PUT [base]/Goal/[id]
+If-Match: W/"3"   # the ETag from your last read; 412 if it changed since
 ```
 
 See the [CapabilityStatement](CapabilityStatement-DHPCapabilityStatement.html) for all supported search parameters.

@@ -26,27 +26,27 @@ The Digital Health Platform (DHP) is being developed within the framework of the
 
 ### Areas of coverage
 
-The Digital Healthcare Platform of the Republic of Uzbekistan is based on the following 19 services:
+The Digital Healthcare Platform of the Republic of Uzbekistan is based on the following 19 [components](components.html):
 
-* Metadata and Security Management
-* Master Data Management
-* Patient health journey management
-* Clinical Health Records
-* Referrals
-* Prescription
-* Appointment and Scheduling
-* Laboratory
-* Diagnostics and Imaging
-* Ambulance
-* Supplies
-* Reimbursement
-* Clinical Decision Support
-* Nursing
-* Blood Management
-* Vaccination Management
-* Public Health Reporting
-* Screening Schedules Management
-* Quality Assurance
+* [Metadata and Security Management](components.html#metadata-and-security-management-msm)
+* [Master Data Management](components.html#master-data-management-mdm)
+* [Patient health journey management](components.html#patient-health-journey-management)
+* [Clinical Health Records](components.html#clinical-health-records-chr)
+* [Referrals](components.html#referrals)
+* [Prescription](components.html#prescription)
+* [Appointment and Scheduling](components.html#appointment-and-scheduling)
+* [Laboratory](components.html#laboratory)
+* [Diagnostics and Imaging](components.html#diagnostics-and-imaging)
+* [Ambulance](components.html#ambulance)
+* [Supplies](components.html#supplies)
+* [Reimbursement](components.html#reimbursement)
+* [Clinical Decision Support](components.html#clinical-decision-support)
+* [Nursing](components.html#nursing)
+* [Blood Management](components.html#blood-management)
+* [Vaccination Management](components.html#vaccination-management)
+* [Public Health Reporting](components.html#public-health-reporting)
+* [Screening Schedules Management](components.html#screening-schedules-management)
+* [Quality Assurance](components.html#quality-assurance)
 
 ### Identification of versions
 

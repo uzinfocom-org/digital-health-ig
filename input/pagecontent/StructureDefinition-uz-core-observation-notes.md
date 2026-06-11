@@ -1,6 +1,6 @@
 ### Quick Start
 
-Common API interactions for this profile. `[base]` is the FHIR server base URL; `|` separates system from value and must be URL-encoded as `%7C`.
+Common API interactions for this profile. Requests require a JWT access token - see [Security and authentication](api-access.html#security). `[base]` is the [FHIR server base URL](api-access.html#endpoints); `|` separates system from value and must be URL-encoded as `%7C`.
 
 **Read by server id**
 
@@ -27,13 +27,22 @@ GET [base]/Observation?patient=Patient/[id]&value-concept=http://snomed.info/sct
 
 ```
 POST [base]/Observation
-{ "resourceType": "Observation", "meta": { "profile": [ "https://dhp.uz/fhir/core/StructureDefinition/uz-core-observation" ] }, "status": "final", "category": [ ... ], "code": { ... }, "subject": { "reference": "Patient/[id]" }, "valueQuantity": { ... } }
+{
+  "resourceType": "Observation",
+  "meta": { "profile": [ "https://dhp.uz/fhir/core/StructureDefinition/uz-core-observation" ] },
+  "status": "final",
+  "category": [ ... ],
+  "code": { ... },
+  "subject": { "reference": "Patient/[id]" },
+  "valueQuantity": { ... }
+}
 ```
 
 **Update** (e.g. promote `preliminary` to `final`, or `final` to `amended`) - PUT the full resource back with the new `status`:
 
 ```
 PUT [base]/Observation/[id]
+If-Match: W/"3"   # the ETag from your last read; 412 if it changed since
 ```
 
 See the [CapabilityStatement](CapabilityStatement-DHPCapabilityStatement.html) for all supported search parameters.
