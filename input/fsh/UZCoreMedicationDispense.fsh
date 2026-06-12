@@ -35,7 +35,7 @@ Description: "Uzbekistan Core profile for MedicationDispense, used to record the
 * quantity.code from MedicationTotalVolumeUnitsVS (required)
 
 * notPerformedReason only CodeableReference(DetectedIssue)
-* medication only CodeableReference(Medication)
+* medication only CodeableReference(UZCoreMedication)
 * subject only Reference(UZCorePatient or Group)
 * performer.actor only Reference(UZCorePractitioner or UZCorePractitionerRole or UZCoreOrganization or UZCorePatient or Device or UZCoreRelatedPerson or CareTeam)
 * authorizingPrescription only Reference(MedicationRequest)
