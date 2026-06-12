@@ -92,4 +92,5 @@ Extension: Trustee
 Id: trustee
 Title: "Trustee Extension"
 Description: "Extension to specify a trustee (RelatedPerson or PractitionerRole)"
+Context: MedicationRequest
 * value[x] only Reference(RelatedPerson or PractitionerRole)
