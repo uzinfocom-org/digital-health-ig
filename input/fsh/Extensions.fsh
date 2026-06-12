@@ -88,3 +88,8 @@ Context: HealthcareService
 // Laboratory TAT is typically measured in hours, days, or weeks; months are excluded due to variable month lengths.
 * valueDuration obeys uzcore-turnaround-time-1
 
+Extension: Trustee
+Id: trustee
+Title: "Trustee Extension"
+Description: "Extension to specify a trustee (RelatedPerson or PractitionerRole)"
+* value[x] only Reference(RelatedPerson or PractitionerRole)

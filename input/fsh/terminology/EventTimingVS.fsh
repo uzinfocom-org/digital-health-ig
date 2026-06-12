@@ -11,4 +11,18 @@ Description: "A value set defining when an event occurs (Morning, Evening, Befor
 
 // Включаем коды из ОБЕИХ систем
 * include codes from system $event-timing
-* include codes from system $v3-timing-event
+
+* include $v3-timing-event#HS
+* include $v3-timing-event#WAKE
+* include $v3-timing-event#C
+* include $v3-timing-event#CM
+* include $v3-timing-event#CD
+* include $v3-timing-event#CV
+* include $v3-timing-event#AC
+* include $v3-timing-event#ACM
+* include $v3-timing-event#ACD
+* include $v3-timing-event#ACV
+* include $v3-timing-event#PC
+* include $v3-timing-event#PCM
+* include $v3-timing-event#PCD
+* include $v3-timing-event#PCV
