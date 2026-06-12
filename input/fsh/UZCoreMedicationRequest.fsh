@@ -165,15 +165,15 @@ SHOULD NOT BE USED:
 * note MS
 * note ^short = "Информация о рецепте"
 
-* medication only CodeableReference(Medication)
-* subject only Reference(Patient)
-* informationSource only Reference(Patient or Practitioner or PractitionerRole or RelatedPerson or Organization)
-* extension[trustee].valueReference only Reference(RelatedPerson or PractitionerRole)
-* encounter only Reference(Encounter)
-* requester only Reference(PractitionerRole)
-* reason only CodeableReference(Condition or Observation)
+* medication only CodeableReference(UZCoreMedication)
+* subject only Reference(UZCorePatient)
+* informationSource only Reference(UZCorePatient or UZCorePractitioner or UZCorePractitionerRole or RelatedPerson or UZCoreOrganization)
+* extension[trustee].valueReference only Reference(RelatedPerson or UZCorePractitionerRole)
+* encounter only Reference(UZCoreEncounter)
+* requester only Reference(UZCorePractitionerRole)
+* reason only CodeableReference(UZCoreCondition or UZCoreObservation)
 * insurance only Reference(Coverage)
-* dispenseRequest.dispenser only Reference (Organization)
+* dispenseRequest.dispenser only Reference(UZCoreOrganization)
 
 
 * identifier.use from IdentifierUseVS (required)
