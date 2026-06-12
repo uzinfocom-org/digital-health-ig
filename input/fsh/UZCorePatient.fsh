@@ -34,11 +34,12 @@ Description: "Uzbekistan Core Patient profile, used to represent patients admini
     unknownPatient 0..1 MS
 
 * identifier[passportLocal]
+  * ^short = "Local passport / ID card number"
+  * ^definition = "Local (internal) passport number, shared by the modern ID card and the older book-form passport. Set use = official for the credential currently in force (typically the ID card) and use = old for a superseded paper passport number."
   * system 1..1 MS
   * system = $passport-local
   * type 1..1 MS
   * type = $identifier-type#PPN
-  * use = #official
   * value 1..1 MS
 
 * identifier[passportInternational]
@@ -162,6 +163,7 @@ Description: "Uzbekistan Core Patient profile, used to represent patients admini
 * extension[nationality].extension[code].valueCodeableConcept from NationalityVS (required)
 * extension[citizenship].extension[code].valueCodeableConcept from ISO3166_2 (required)
 * gender MS
+* gender from AdministrativeGenderVS (required)
   * extension contains GenderOtherUZ named gender-other 0..1 MS
 * obeys uzcore-gender-other-2
 * insert IntAndUzAddressRules
