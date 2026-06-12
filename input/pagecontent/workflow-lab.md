@@ -10,7 +10,7 @@ The chain and its references:
 
 <div>{% include lab-references.svg %}</div><br clear="all"/>
 
-> Profile status: all four resources are now profiled in UZ Core - [Specimen](StructureDefinition-uz-core-specimen.html), [Observation](StructureDefinition-uz-core-observation.html), [ServiceRequest](StructureDefinition-uz-core-servicerequest-laboratory.html) (laboratory-specific) and [DiagnosticReport](StructureDefinition-uz-core-diagnostic-report.html). Set `meta.profile` to the matching profile on each resource and follow the wiring below.
+> Profile status: all four resources are profiled in UZ Core - [Specimen](StructureDefinition-uz-core-specimen.html), [Observation](StructureDefinition-uz-core-observation.html), [ServiceRequest](StructureDefinition-uz-core-servicerequest-laboratory.html) (laboratory-specific) and [DiagnosticReport](StructureDefinition-uz-core-diagnostic-report.html). Set `meta.profile` to the matching profile on each resource and follow the wiring below.
 
 ### 1. Order the test
 
