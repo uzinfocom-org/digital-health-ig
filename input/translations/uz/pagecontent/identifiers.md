@@ -54,6 +54,11 @@ Ichki pasportlar O'zbekiston ichidagi identifikatsiya uchun ishlatiladi.
 
 **System URI**: `https://dhp.uz/fhir/core/sid/pid/uz/ppn/local`
 
+Bitta mahalliy pasport tizimi ham zamonaviy ID-kartani, ham u almashtirayotgan eski kitobcha ko'rinishidagi pasportni qamrab oladi - ular bir xil ichki pasport raqamini saqlaydi, shuning uchun ID-karta uchun alohida System URI mavjud emas. Ularni `use` orqali ajrating:
+
+- `use = official` - hozirda amalda bo'lgan hujjat, odatda ID-karta. Buni kundalik oddiy yozuvlarda ishlating.
+- `use = old` - eskirgan qog'oz pasport raqami; egasi ID-kartaga o'tgandan keyin tarixiy yoki moslashtirish maqsadida saqlanadi.
+
 ```json
 {
   "identifier": [

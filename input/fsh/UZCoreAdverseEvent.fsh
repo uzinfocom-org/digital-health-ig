@@ -52,7 +52,7 @@ Description: "Uzbekistan Core AdverseEvent profile, used to represent an adverse
 
 * suspectEntity MS
 * suspectEntity.instance[x] MS
-* suspectEntity.instance[x] only Reference(UZCoreImmunization or UZCoreProcedure or Substance or Medication or MedicationAdministration or MedicationStatement or Device or BiologicallyDerivedProduct or ResearchStudy)
+* suspectEntity.instance[x] only Reference(UZCoreImmunization or UZCoreProcedure or Substance or UZCoreMedication or MedicationAdministration or MedicationStatement or Device or BiologicallyDerivedProduct or ResearchStudy)
 
 * note MS
 

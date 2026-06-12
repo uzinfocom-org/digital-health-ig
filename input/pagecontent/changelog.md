@@ -4,7 +4,7 @@
 
 ### Version 0.5.0
 
-Added [laboratory observation codes](CodeSystem-observation-lab-research-codes-cs.html) for panels and analytes used in Uzbekistan.
+Added [laboratory observation codes](CodeSystem-lab-pan-cs.html) for panels and analytes used in Uzbekistan. 
 
 Added [document identifier namespace](identifiers.html#document-identifiers) (doc) to identifier systems.
 

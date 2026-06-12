@@ -23,7 +23,7 @@ Description: "Uzbekistan Core Observation profile, used to represent clinical an
 * code MS
 * code from ObservationCodesVS (preferred)
 * subject MS
-* subject only Reference(UZCorePatient or UZCoreLocation or UZCoreOrganization or UZCoreProcedure or UZCorePractitioner or Medication)
+* subject only Reference(UZCorePatient or UZCoreLocation or UZCoreOrganization or UZCoreProcedure or UZCorePractitioner or UZCoreMedication)
 * focus MS
 * encounter MS
 * encounter only Reference(UZCoreEncounter)

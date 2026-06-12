@@ -29,7 +29,7 @@ Description: "Uzbekistan Core Immunization profile, used to represent immunizati
 * vaccineCode ^short = "Administered vaccine"
 
 * administeredProduct 0..1 MS
-* administeredProduct only CodeableReference(Medication)
+* administeredProduct only CodeableReference(UZCoreMedication)
 * administeredProduct ^short = "Vaccine product"
 
 
@@ -100,7 +100,7 @@ Description: "Uzbekistan Core Immunization profile, used to represent immunizati
 * note ^short = "Notes"
 
 * reason 0..* MS
-* reason only CodeableReference(UZCoreCondition or UZCoreObservation or DiagnosticReport)
+* reason only CodeableReference(UZCoreCondition or UZCoreObservation or UZCoreDiagnosticReport)
 * reason ^short = "Vaccination reason"
 
 * isSubpotent 0..1 MS
