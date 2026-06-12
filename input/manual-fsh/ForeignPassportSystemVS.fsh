@@ -5,7 +5,7 @@ ValueSet: ForeignPassportSystemVS
 Id: foreign-passport-system-vs
 Title: "Foreign Passport System Value Set"
 Description: "Allowed system URIs for foreign (non-Uzbekistan) passport identifiers. Used in the [UZ Core Patient](StructureDefinition-uz-core-patient.html) profile for the passportForeign slice."
-* ^url = "https://dhp.uz/fhir/core/ValueSet/foreign-passport-system-vs"
+* ^url = "https://terminology.dhp.uz/fhir/core/ValueSet/foreign-passport-system-vs"
 * ^experimental = true
 
 * include codes from system IdentifierDomainCS
