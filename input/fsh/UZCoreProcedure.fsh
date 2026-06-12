@@ -40,7 +40,7 @@ Description: "Uzbekistan Core Procedure Profile, used for documenting an action 
 * recorder only Reference(UZCorePatient or UZCoreRelatedPerson or UZCorePractitioner or UZCorePractitionerRole)
 * performer.actor only Reference(UZCorePractitioner or UZCorePractitionerRole or UZCoreOrganization or UZCorePatient or UZCoreRelatedPerson or Device or CareTeam or UZCoreHealthcareService)
 * location only Reference(UZCoreLocation)
-* reason only CodeableReference(UZCoreCondition or UZCoreObservation or UZCoreProcedure or DiagnosticReport or DocumentReference)
+* reason only CodeableReference(UZCoreCondition or UZCoreObservation or UZCoreProcedure or UZCoreDiagnosticReport or DocumentReference)
 
 
 

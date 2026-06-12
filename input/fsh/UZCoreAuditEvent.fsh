@@ -36,7 +36,7 @@ Description: "Uzbekistan Core AuditEvent profile, used to track user and applica
   * type from AuditParticipationRoleTypeVS (required)
   * role from SecurityRoleTypeVS (required)
   * authorization from AuditPurposeOfUseVS (required)
-  * who only Reference (UZCorePractitionerRole or UZCorePractitioner or UZCorePatient or RelatedPerson) 
+  * who only Reference (UZCorePractitionerRole or UZCorePractitioner or UZCorePatient or UZCoreRelatedPerson) 
 
 * entity
   * role and what and securityLabel and query MS
