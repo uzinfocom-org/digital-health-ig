@@ -1,0 +1,996 @@
+CODE,UZ,RU,EN
+#cancr0003.00000,IHC nonspesifik_antikorlari,ИГХ неспецифическое_Антитела,IHC non-specific_Antibodies
+#cancr0003.00001,"pS2 (TFF1, Trefoil Factor 1)","pS2 (TFF1, Trefoil Factor 1)","pS2 (TFF1, Trefoil Factor 1)"
+#cancr0003.00002,Bcl-2 (B-hujayrali limfoma 2),Bcl-2(B-cell lymphoma 2),Bcl-2(B-cell lymphoma 2)
+#cancr0003.00003,P53 (o'simta oqsili 53),P53(Tumor Protein 53),P53(Tumor Protein 53)
+#cancr0003.00004,CD3 (oqsil kompleksi),CD3(Комплекс белков),CD3(Protein complex)
+#cancr0003.00005,OIV / OITS bilan kasallangan bemorlarda CD4 (glikoprotein).,CD4 (Гликопротеин) у пациентов с ВИЧ/СПИД.,CD4 (Glycoprotein) in patients with HIV/AIDS.
+#cancr0003.00006,CD5 (oqsil),CD5( Белок),CD5(Protein)
+#cancr0003.00007,CD8 (glikoprotein),CD8 (Гликопротеин),CD8 (Glycoprotein)
+#cancr0003.00008,CD10 (membran oqsili),CD10 (Мембранный белок),CD10 (Membrane protein)
+#cancr0003.00009,CD15 (sirt antijeni),CD15 (Поверхностный антиген),CD15 (Surface antigen)
+#cancr0003.00010,CD20 (B limfotsitlari yuzasida ifodalangan oqsil),"CD20 (Белок, экспрессируемый на поверхности В-лимфоцитов)",CD20 (Protein expressed on the surface of B-lymphocytes)
+#cancr0003.00011,CD23 (ba'zi B limfotsitlarida ifodalangan sirt antijeni),"СD23 (Поверхностный антиген, экспрессируемый на некоторых В-лимфоцитах)",CD23 (Surface antigen expressed on some B lymphocytes)
+#cancr0003.00012,CD30 (faollashgan limfotsitlarda ifodalangan membrana oqsili),"СD30 (Мембранный белок, экспрессируемый на активированных лимфоцитах)",CD30 (Membrane protein expressed on activated lymphocytes)
+#cancr0003.00013,CD79 a (B-hujayra antijeni retseptorlarining tarkibiy qismi bo'lgan oqsil),"СD79 α (Белок, являющийся компонентом B-клеточного антиген-рецептора)",CD79 α (A protein that is a component of the B-cell antigen receptor)
+#cancr0003.00014,CD99 (Ewing sarkomasi va boshqa ibtidoiy neyroektodermal o'smalarni tashxislash uchun marker sifatida ishlatiladigan membrana oqsili),"СD99 (Мембранный белок, используемый как маркер для диагностики саркомы Юинга и других примитивных нейроэктодермальных опухолей)",CD99 (A membrane protein used as a marker for the diagnosis of Ewing's sarcoma and other primitive neuroectodermal tumors)
+#cancr0003.00015,"CD117 (protein, c-Kit deb ham ataladi)","CD117 (Белок, также известный как c-Kit)",CD117 (A protein also known as c-Kit)
+#cancr0003.00016,"CD138 (membran oqsili, sindikan-1 sifatida ham tanilgan)","CD138 (Мембранный белок, также известный как синдикан-1)",CD138 (A membrane protein also known as syndecan-1)
+#cancr0003.00017,CD34 (poya va progenitor hujayralarda ifodalangan glikoprotein. Gematopoetik ildiz hujayralarini aniqlash uchun ishlatiladi),"СD34 (Гликопротеин, экспрессируемый на стволовых клетках и клетках-предшественниках. Используется для идентификации гемопоэтических стволовых клеток)",CD34 (A glycoprotein expressed on stem and progenitor cells. Used to identify hematopoietic stem cells)
+#cancr0003.00018,CD45 (OLA) (Oq qon hujayralarining barcha turlarida ifodalangan oqsil. Oq qon hujayralarini aniqlash va o'rganish uchun ishlatiladi.,"CD45 (ОЛА) (Белок, экспрессируемый на всех типах лейкоцитов. Используется для идентификации и исследования лейкоцитов",CD45 (OLA) (A protein expressed on all types of white blood cells. Used to identify and study white blood cells
+#cancr0003.00019,Pan-B (barcha B hujayralarini aniqlash uchun Pan B hujayra belgisi ishlatiladi),"Pan-B (Пан-В-клеточный маркер, используемый для идентификации всех В-лимфоцитов)",Pan-B (A pan-B cell marker used to identify all B lymphocytes)
+#cancr0003.00020,Pan-T Pan-T hujayra belgisi barcha T-limfotsitlarni aniqlash uchun ishlatiladi,"Pan-T Пан-Т-клеточный маркер, используемый для идентификации всех Т-лимфоцитов",Pan-T A pan-T cell marker used to identify all T lymphocytes
+#cancr0003.00021,BLA-36 B hujayralari va ba'zi limfomalar uchun maxsus marker.,BLA-36 Специфический маркер для B-клеток и некоторых лимфом.,BLA-36 A specific marker for B cells and some lymphomas.
+#cancr0003.00022,TDT (terminal deoksinukleotidil transferaza) Limfoid hujayralar rivojlanishining boshida ifodalangan oqsil,"TDT (Terminal deoxynucleotidyl transferase) Белок, экспрессируемый на ранних этапах развития лимфоидных клеток",TDT (Terminal deoxynucleotidyl transferase) A protein expressed early in the development of lymphoid cells
+#cancr0003.00023,l zanjirlari (Immunoglobulinlarning engil zanjirlari B hujayrali malign o'smalarda klonallikni aniqlash uchun ishlatiladi),"λ-цепи (Легкие цепи иммуноглобулинов, используемые для определения клональности в В-клеточных злокачественных новообразованиях)",λ chains (Immunoglobulin light chains used to determine clonality in B-cell malignancies)
+#cancr0003.00024,k zanjirlari (Immunoglobulin engil zanjirlari B hujayrali malign o'smalarda klonallikni aniqlash uchun ishlatiladi),"κ-цепи (Легкие цепи иммуноглобулинов, используемые для определения клональности в В-клеточных злокачественных новообразованиях)",κ chains (Immunoglobulin light chains used to determine clonality in B-cell malignancies)
+#cancr0003.00025,Siklin D1 Protein hujayra siklini tartibga solishda ishtirok etadi,"Cyclin D1 Белок, участвующий в регуляции клеточного цикла",Cyclin D1 Protein involved in cell cycle regulation
+#cancr0003.00026,Bcl-2 apoptozni inhibe qiluvchi proto-onkogen,"Bcl-2 Протоонкоген, ингибирующий апоптоз",Bcl-2 Proto-oncogene that inhibits apoptosis
+#cancr0003.00027,Bcl-6 B hujayralarini tartibga solishda ishtirok etadigan transkripsiya omili,"Bcl-6 Транскрипционный фактор, участвующий в регуляции В-клеток",Bcl-6 Transcription factor involved in B-cell regulation
+#cancr0003.00028,MPO (Myeloperoksidaza): Granulotsitlarda ifodalangan ferment.,"MРО (Myeloperoxidase): Фермент, экспрессируемый в гранулоцитах.",MPO (Myeloperoxidase): An enzyme expressed in granulocytes.
+#cancr0003.00029,CD68 Makrofaglarda ifodalangan oqsil,"CD68 Белок, экспрессируемый на макрофагах",CD68 A protein expressed on macrophages
+#cancr0003.00030,Sitokeratin-Pan: marker barcha turdagi epiteliya hujayralarini aniqlash uchun ishlatiladi.,"ЦКР-ПАН (Cytokeratin-Pan): Маркер, используемый для идентификации всех типов эпителиальных клеток.",CKR-PAN (Cytokeratin-Pan): A marker used to identify all types of epithelial cells.
+#cancr0003.00031,EMA (epitelial membrana antijeni): epiteliya o'smalarini aniqlash uchun ishlatiladigan marker.,"EMA (Epithelial Membrane Antigen): Маркер, используемый для идентификации эпителиальных опухолей.",EMA (Epithelial Membrane Antigen): A marker used to identify epithelial tumors.
+#cancr0003.00032,"BER-EP-4 Antikor epiteliya hujayralarini aniqlashda, ayniqsa karsinomalarni tashxislashda ishlatiladi.","BER-EP-4 Антитело, используемое для идентификации эпителиальных клеток, особенно в диагностике карцином.","BER-EP-4 An antibody used to identify epithelial cells, especially in the diagnosis of carcinomas."
+#cancr0003.00033,TTF-1 (Tiroid transkripsiya faktor-1): Qalqonsimon bez va o'pka hujayralarida ifodalangan transkripsiya omili,"TTF-1 (Thyroid Transcription Factor-1): Транскрипционный фактор, экспрессируемый в клетках щитовидной железы и легких",TTF-1 (Thyroid Transcription Factor-1): A transcription factor expressed in thyroid and lung cells
+#cancr0003.00034,GFAP (Glial fibrilyar kislota oqsili): glial hujayralarda ifodalangan oqsil.,"GFAP (Glial Fibrillary Acidic Protein): Белок, экспрессируемый в глиальных клетках.",GFAP (Glial Fibrillary Acidic Protein): A protein expressed in glial cells.
+#cancr0003.00035,EGFR (HER-1) Epidermal o'sish omili retseptorlari,EGFR (HER-1) Рецептор эпидермального фактора роста,EGFR (HER-1) Epidermal growth factor receptor
+#cancr0003.00036,Sitokeratin 7: adenokarsinoma va boshqa epiteliya o'smalarini tashxislash uchun ishlatiladigan marker.,"ЦКР 7 (Cytokeratin 7): Маркер, используемый для диагностики аденокарцином и других эпителиальных опухолей.",CKR 7 (Cytokeratin 7): A marker used to diagnose adenocarcinomas and other epithelial tumors.
+#cancr0003.00037,Sitokeratin 8: Turli xil karsinomalarni tashxislash uchun ishlatiladigan marker.,"ЦКР 8 (Cytokeratin 8): Маркер, используемый для диагностики различных карцином.",Cytokeratin 8: A marker used to diagnose various carcinomas.
+#cancr0003.00038,Sitokeratin 19: Marker metastatik karsinomalarni tashxislash uchun ishlatiladi.,"ЦКР 19 (Cytoconatin 19): Маркер, используемый для диагностики метастатических карцином.",Cytokeratin 19: A marker used to diagnose metastatic carcinomas.
+#cancr0003.00039,Sitokeratin 20: Kolorektal va boshqa adenokarsinomalarni tashxislash uchun ishlatiladigan marker.,"ЦКР 20 (Cytokeratin 20): Маркер, используемый для диагностики колоректальных и других аденокарцином.",Cytokeratin 20: A marker used to diagnose colorectal and other adenocarcinomas.
+#cancr0003.00040,Sitokeratin-skuamoz: skuamoz hujayrali karsinomalarni tashxislash uchun marker.,ЦКР-плоск (Cytokeratin-squamous): Маркер для диагностики плоскоклеточных карцином.,Cytokeratin-squamous: A marker for diagnosing squamous cell carcinomas.
+#cancr0003.00041,CEA (Carcinoembrionic Antigen): saraton kasalligini tashxislash va monitoring qilish uchun o'simta belgisi sifatida ishlatiladigan oqsil.,"РЭА (CEA, Carcinoembryonic Antigen): Белок, используемый как опухолевый маркер для диагностики и мониторинга рака.",CEA (Carcinoembryonic Antigen): A protein used as a tumor marker for diagnosing and monitoring cancer.
+#cancr0003.00042,PSA (prostata o'ziga xos antigen): prostata saratoni tashxisi va monitoringi uchun marker sifatida ishlatiladigan protein.,"PSA (Prostate-Specific Antigen): Белок, используемый как маркер для диагностики и мониторинга рака предстательной железы.",PSA (Prostate-Specific Antigen): A protein used as a marker for diagnosing and monitoring prostate cancer.
+#cancr0003.00043,AR (Androgen retseptorlari): prostata saratoni tashxisi va tadqiqoti uchun ishlatiladigan androgen retseptorlari.,"AR (Androgen Receptor): Рецептор андрогенов, используемый для диагностики и исследования рака предстательной железы.",AR (Androgen Receptor): An androgen receptor used to diagnose and research prostate cancer.
+#cancr0003.00044,Vimentin Mezenxima hujayralarini aniqlash va sarkomalarni tashxislash uchun ishlatiladigan oraliq filament oqsili.,"Vimentin Белок промежуточных филаментов, используемый для идентификации мезенхимальных клеток и диагностики сарком.",Vimentin An intermediate filament protein used to identify mesenchymal cells and diagnose sarcomas.
+#cancr0003.00045,Desmin Mushak hujayralarida ifodalangan oraliq filament oqsili.,"Desmin Белок промежуточных филаментов, экспрессируемый в мышечных клетках.",Desmin An intermediate filament protein expressed in muscle cells.
+#cancr0003.00046,Pan-aktin: hujayralardagi aktin filamentlarini aniqlash uchun ishlatiladigan oqsil.,"Пан-актин (Pan-actin): Белок, используемый для идентификации актиновых филаментов в клетках.",Pan-actin: A protein used to identify actin filaments in cells.
+#cancr0003.00047,a-aktin SM (a-Smooth Muscle Actin): silliq mushak o'smalarini tashxislash uchun ishlatiladigan silliq mushak hujayralari belgisi.,"α-актин SM (α-Smooth Muscle Actin): Маркер гладкомышечных клеток, используемый для диагностики гладкомышечных опухолей.",α-Smooth Muscle Actin: A smooth muscle cell marker used to diagnose smooth muscle tumors.
+#cancr0003.00048,E-kaderin: adenokarsinomalarni tashxislash uchun ishlatiladigan adezyon oqsili.,"Е-кадгерин (E-cadherin): Адгезионный белок, используемый для диагностики аденокарцином.",E-cadherin: An adhesion protein used to diagnose adenocarcinomas.
+#cancr0003.00049,P63 Transkripsiya omili skuamoz hujayrali karsinoma va boshqa o'smalarni tashxislashda qo'llaniladi.,"Р63 Танскрипционный фактор, используемый для диагностики плоскоклеточных карцином и других опухолей.",P63 A transcription factor used to diagnose squamous cell carcinomas and other tumors.
+#cancr0003.00050,Kollagen IV Bazal membrana kasalliklarini tashxislashorqa ishlatiladigan protein.,"Collagen IV Белок, используемый для диагностики заболеваний базальной мембраны.",Collagen IV A protein used to diagnose basement membrane diseases.
+#cancr0003.00051,NF (neyrofilament): neyronlarda ifodalangan oqsil. Neyron o'smalarini tashxislash uchun ishlatiladi.(,"NF (Neurofilament): Белок, экспрессируемый в нейронах. Используется для диагностики нейрональных опухолей.(",NF (Neurofilament): A protein expressed in neurons. Used to diagnose neuronal tumors.
+#cancr0003.00052,MBP (Myoglobin): Mushaklarning shikastlanishini tashxislash uchun ishlatiladigan protein.,"МВР (Myoglobin): Белок, используемый для диагностики повреждений мышц.",MBP (Myoglobin): A protein used to diagnose muscle damage.
+#cancr0003.00053,NSE (neyronga xos enolaza): neyroendokrin o'smalarini tashxislash uchun ishlatiladigan oqsil.,"NSE (Neuron-Specific Enolase): Белок, используемый для диагностики нейроэндокринных опухолей.",NSE (Neuron-Specific Enolase): A protein used to diagnose neuroendocrine tumors.
+#cancr0003.00054,S100 Protein melanoma va boshqa o'smalarni tashxislash uchun ishlatiladi.,"S100 Белок, используемый для диагностики меланомы и других опухолей.",S100 A protein used to diagnose melanoma and other tumors.
+#cancr0003.00055,HMB-45 antikori melanoma tashxisi uchun ishlatiladi.,"HMB-45 Антитело, используемое для диагностики меланомы.",HMB-45 An antibody used to diagnose melanoma.
+#cancr0003.00056,a-1-AChT (a-1-Antitripsin): Jigar va o'pka kasalliklarini tashxislash uchun ishlatiladigan oqsil.,"α-1-АХТ (α-1-Antitrypsin): Белок, используемый для диагностики заболеваний печени и легких.",α-1-Antitrypsin: A protein used to diagnose liver and lung disease.
+#cancr0003.00057,NBME-1 antikori mezotelyoma tashxisi uchun ishlatiladi.,"НВМЕ-1 Антитело, используемое для диагностики мезотелиомы.",HBME-1 An antibody used to diagnose mesothelioma.
+#cancr0003.00058,Kalsitonin: qalqonsimon bezning medullar saratonini tashxislash uchun ishlatiladigan gormon.,"Кальцитонин (Calcitonin): Гормон, используемый для диагностики медуллярного рака щитовидной железы.",Calcitonin: A hormone used to diagnose medullary thyroid cancer.
+#cancr0003.00059,Tiroglobulin: qalqonsimon bez saratonini kuzatish uchun ishlatiladigan protein.,"Тиреоглобулин (Thyroglobulin): Белок, используемый для мониторинга рака щитовидной железы.",Thyroglobulin: A protein used to monitor thyroid cancer.
+#cancr0003.00060,Sinaptofizin: Neyroendokrin o'smalarni tashxislash uchun ishlatiladigan oqsil.,"Синаптофизин (Synaptophysin): Белок, используемый для диагностики нейроэндокринных опухолей.",Synaptophysin: A protein used to diagnose neuroendocrine tumors.
+#cancr0003.00061,Xromogranin Neyroendokrin hujayralarda ifodalangan glikoprotein.,"Хромогранин (Chromogranin)Гликопротеин, экспрессируемый в нейроэндокринных клетках.",Chromogranin (Chromogranin) A glycoprotein expressed in neuroendocrine cells.
+#cancr0003.00062,"AFP AFP, alfa-fetoprotein) Odatda homilaning jigari va sarig'i qopchasi tomonidan ishlab chiqariladigan oqsil.","АФП AFP, Alpha-Fetoprotein) Белок, который в норме вырабатывается печенью и желточным мешком плода",AFP (Alpha-Fetoprotein) A protein that is normally produced by the liver and yolk sac of the fetus
+#cancr0003.00063,PLAP (platsenta ishqoriy fosfataza) platsentada ifodalangan ferment,"PLAP(Placental Alkaline Phosphatase) Фермент, экспрессируемый в плаценте",PLAP (Placental Alkaline Phosphatase) An enzyme expressed in the placenta
+#cancr0003.00064,VEGF (qon tomir endotelial o'sish omili) yangi qon tomirlarining o'sishini rag'batlantiradigan oqsil.,"VEGF(Vascular Endothelial Growth Factor) Белок, стимулирующий рост новых кровеносных сосудов",VEGF (Vascular Endothelial Growth Factor) A protein that stimulates the growth of new blood vessels
+#cancr0003.00065,VEGFR (qon tomir endotelial o'sish omili retseptorlari) angiogenezda ishtirok etadigan VEGF retseptorlari,"VEGFR (Vascular Endothelial Growth Factor Receptor) Рецептор для VEGF, участвующий в ангиогенезе",VEGFR (Vascular Endothelial Growth Factor Receptor) A receptor for VEGF involved in angiogenesis
+#cancr0003.00066,ALK (anaplastik limfoma kinaz) hujayra o'sishida ishtirok etadigan tirozin kinaz,"ALK (Anaplastic Lymphoma Kinase) Тирозинкиназа, участвующая в клеточном росте",ALK (Anaplastic Lymphoma Kinase) A tyrosine kinase involved in cell growth
+#cancr0003.00067,p16 (Siklinga bog'liq kinaz inhibitori 2A) Hujayra bo'linish siklini inhibe qiluvchi oqsil,"р16 (Cyclin-Dependent Kinase Inhibitor 2A)Белок, ингибирующий цикл клеточного деления",p16 (Cyclin-Dependent Kinase Inhibitor 2A) A protein that inhibits the cell division cycle
+#cancr0003.00068,Amacr Amacr (Alpha-Methylacyl-CoA Racemase) yog 'kislotalari almashinuvida ishtirok etadigan ferment,"Amacr Amacr (Alpha-Methylacyl-CoA Racemase)Фермент, участвующий в метаболизме жирных кислот",Amacr Amacr (Alpha-Methylacyl-CoA Racemase) An enzyme involved in the metabolism of fatty acids
+#cancr0003.00069,Androgen R (Androgen retseptorlari) Androgen retseptorlari erkaklarning jinsiy xususiyatlarini tartibga solishda ishtirok etadilar.,"Androgen R (Androgen Receptor) Рецептор андрогенов, участвующий в регуляции мужских половых характеристик",Androgen R (Androgen Receptor) Androgen receptor involved in the regulation of male sexual characteristics
+#cancr0003.00070,Annexin A1 Yallig'lanish jarayonlarida va apoptozni tartibga solishda ishtirok etadigan oqsil.,"Annexin A1 Белок, участвующий в воспалительных процессах и регуляции апоптоза.",Annexin A1 Protein involved in inflammatory processes and the regulation of apoptosis.
+#cancr0003.00071,Arginaza-1 fermenti arginin almashinuvida ishtirok etadi,"Arginase-1 Фермент, участвующий в метаболизме аргинина",Arginase-1 Enzyme involved in the metabolism of arginine
+#cancr0005.00000,Molekulyar genetik tadqiqotlar markerlari,Молекулярно генетическое исследование_Маркеры,Molecular genetic research Markers
+#cancr0005.00001,"ABCB11 ATP-bog'lovchi kassetali B sub-familiyasi a'zosi 11) Protein, jigarda o't kislotalarini tashuvchisi","ABCB11 ATP-Binding Cassette Sub-Family B Member 11) Белок, транспортер желчных кислот в печени","ABCB11 ATP-Binding Cassette Sub-Family B Member 11) Protein, bile acid transporter in the liver"
+#cancr0005.00002,ABRAXAS1 (FAM175A) DNKni tiklashda ishtirok etadigan oqsil.,"ABRAXAS1 (FAM175A) Белок, участвующий в репарации ДНК.",ABRAXAS1 (FAM175A) Protein involved in DNA repair.
+#cancr0005.00003,ACD (adrenokortikal displazi homologi) telomerni saqlashda ishtirok etadigan oqsil,"ACD (Adrenocortical Dysplasia Homolog) Белок, участвующий в поддержании теломер",ACD (Adrenocortical Dysplasia Homolog) Protein involved in telomere maintenance
+#cancr0005.00004,AIP (Aril uglevodorod retseptorlari bilan o'zaro ta'sir qiluvchi protein) aril uglevodorod retseptorlari funktsiyalarini tartibga soluvchi oqsil,"AIP (Aryl Hydrocarbon Receptor Interacting Protein) Белок, регулирующий функции арилуглеводородного рецептора",AIP (Aryl Hydrocarbon Receptor Interacting Protein) Protein that regulates the functions of the aryl hydrocarbon receptor
+#cancr0005.00005,AKT1 (AKT Serin/Treonin Kinaz 1) Kinaz hujayra o'sishi va omon qolishini tartibga soluvchi signal yo'llarida ishtirok etadi,"AKT1 (AKT Serine/Threonine Kinase 1) Киназа, участвующая в сигнальных путях, регулирующих клеточный рост и выживание",AKT1 (AKT Serine/Threonine Kinase 1) Kinase involved in signaling pathways regulating cell growth and survival
+#cancr0005.00006,ALK (anaplastik limfoma kinaz) hujayra o'sishida ishtirok etadigan tirozin kinaz,"ALK (Anaplastic Lymphoma Kinase) Тирозинкиназа, участвующая в клеточном росте",ALK (Anaplastic Lymphoma Kinase) Tyrosine kinase involved in cell growth
+#cancr0005.00007,"ANKRD26 (Ankyrin Repeat Domain 26) Noma'lum aniq funktsiyaga ega protein, ammo mutatsiyalar trombotsitopeniya va miyeloid neoplaziyaning irsiy shakllari bilan bog'liq.","ANKRD26 (Ankyrin Repeat Domain 26) Белок с неизвестной точной функцией, но мутации связаны с наследственными формами тромбоцитопении и миелоидными неоплазиями.","ANKRD26 (Ankyrin Repeat Domain 26) A protein of unknown precise function, but mutations are associated with inherited forms of thrombocytopenia and myeloid neoplasia."
+#cancr0005.00008,APC (Adenomatous Polyposis Coli) Hujayra siklini tartibga solishda ishtirok etadigan o'simta bostiruvchi oqsil.,"APC (Adenomatous Polyposis Coli) Белок-супрессор опухолей, участвующий в регуляции клеточного цикла.",APC (Adenomatous Polyposis Coli) A tumor suppressor protein involved in cell cycle regulation.
+#cancr0005.00009,AR (Androgen retseptorlari) Androgen retseptorlari erkaklarning jinsiy xususiyatlarini tartibga solishda ishtirok etadilar,"AR (Androgen Receptor) Рецептор андрогенов, участвующий в регуляции мужских половых характеристик",AR (Androgen Receptor) Androgen receptor involved in regulating male sexual characteristics
+#cancr0005.00010,ASCC1 (Faollashtiruvchi Signal Kointegrator 1 Kompleks Subunit 1) Transkripsiya va DNK ta'mirlashni tartibga solishda ishtirok etadigan oqsil,"ASCC1 (Activating Signal Cointegrator 1 Complex Subunit 1) Белок, участвующий в регуляции транскрипции и репарации ДНК",ASCC1 (Activating Signal Cointegrator 1 Complex Subunit 1) Protein involved in regulating transcription and DNA repair
+#cancr0005.00011,ASXL1 (1 kabi qo'shimcha jinsiy taroq) Transkripsiyani tartibga solishda ishtirok etadigan oqsil,"ASXL1 (Additional Sex Combs Like 1) Белок, участвующий в регуляции транскрипции",ASXL1 (Additional Sex Combs Like 1) Protein involved in regulating transcription
+#cancr0005.00012,ATM (ataksiya telangiektaziyasi mutatsiyaga uchragan) oqsil DNKni tiklash va hujayra siklini tartibga solishda muhim rol o'ynaydi.,"ATM (Ataxia Telangiectasia Mutated) Белок, играющий ключевую роль в репарации ДНК и регуляции клеточного цикла",ATM (Ataxia Telangiectasia Mutated) Protein that plays a key role in DNA repair and cell cycle regulation
+#cancr0005.00013,ATP8B1 (ATPase Fosfolipidni tashuvchi 8B1) Fosfolipidlarni tashishda ishtirok etadigan oqsil,"ATP8B1 (ATPase Phospholipid Transporting 8B1) Белок, участвующий в транспорте фосфолипидов",ATP8B1 (ATPase Phospholipid Transporting 8B1) Protein involved in phospholipid transport
+#cancr0005.00014,ATR (ATR Serin / Treonin Kinaz) kinaz DNKning shikastlanishiga javob berish va tiklashda muhim rol o'ynaydi.,"ATR (ATR Serine/Threonine Kinase) Киназа, играющая ключевую роль в ответе на повреждения ДНК и репарации",ATR (ATR Serine/Threonine Kinase) Kinase that plays a key role in DNA damage response and repair
+#cancr0005.00015,AXIN2 (Axis Inhibition Protein 2) Wnt signalizatsiya yo'lini tartibga solishda ishtirok etadigan oqsil. Mutatsiyalar kolorektal saraton xavfining oshishi bilan bog'liq.,"AXIN2 (Axis Inhibition Protein 2) Белок, участвующий в регуляции сигнального пути Wnt. Мутации связаны с повышенным риском развития колоректального рака.",AXIN2 (Axis Inhibition Protein 2) Protein involved in regulating the Wnt signaling pathway. Mutations are associated with an increased risk of colorectal cancer.
+#cancr0005.00016,BAP1 (BRCA1 Associated Protein 1) Deubiquitinase hujayra siklini tartibga solish va DNKni tiklashda ishtirok etadi,"BAP1 (BRCA1 Associated Protein 1) Деубиквитиназа, участвующая в регуляции клеточного цикла и репарации ДНК",BAP1 (BRCA1 Associated Protein 1) Deubiquitinase involved in cell cycle regulation and DNA repair
+#cancr0005.00017,BARD1 (BRCA1 Associated RING Domain 1) DNKni tiklashda ishtirok etadigan BRCA1 bilan o'zaro ta'sir qiluvchi protein,"BARD1 (BRCA1 Associated RING Domain 1) Белок, взаимодействующий с BRCA1 и участвующий в репарации ДНК",BARD1 (BRCA1 Associated RING Domain 1) Protein interacting with BRCA1 and involved in DNA repair
+#cancr0005.00018,"BLM (Bloom sindromi, RecQ Helicase-like) DNKni tiklashda ishtirok etadigan helikaz.","BLM (Bloom Syndrome, RecQ Helicase-Like) Геликаза, участвующая в репарации ДНК.","BLM (Bloom Syndrome, RecQ Helicase-Like) Helicase involved in DNA repair."
+#cancr0005.00019,BMPR1A (Suyak morfogenetik oqsil retseptorlari turi 1A) o'sish va rivojlanishni tartibga solishda ishtirok etadigan suyak morfogenetik oqsil retseptorlari,"BMPR1A (Bone Morphogenetic Protein Receptor Type 1A) Рецептор костного морфогенетического белка, участвующий в регуляции роста и развития",BMPR1A (Bone Morphogenetic Protein Receptor Type 1A) Bone morphogenetic protein receptor involved in the regulation of growth and development
+#cancr0005.00020,"BRAF (B-Raf Proto-Onkogen, Serin/Treonin Kinaz) MAPK/ERK signalizatsiya yo'lida ishtirok etadi.","BRAF (B-Raf Proto-Oncogene, Serine/Threonine Kinase) Киназа, участвующая в сигнальном пути MAPK/ERK","BRAF (B-Raf Proto-Oncogene, Serine/Threonine Kinase) Kinase involved in the MAPK/ERK signaling pathway"
+#cancr0005.00021,BRCA1 (Ko'krak bezi saratoni 1) DNKni tiklashda ishtirok etadigan o'simtani bostiruvchi oqsil,"BRCA1(Breast Cancer 1) Белок-супрессор опухолей, участвующий в репарации ДНК",BRCA1(Breast Cancer 1) Tumor suppressor protein involved in DNA repair
+#cancr0005.00022,BRCA2 (ko'krak bezi saratoni 2) DNKni tiklashda ishtirok etadigan o'simtani bostiruvchi oqsil.,"BRCA2 (Breast Cancer 2) Белок-супрессор опухолей, участвующий в репарации ДНК.",BRCA2 (Breast Cancer 2) Tumor suppressor protein involved in DNA repair.
+#cancr0005.00023,BRIP1 (BRCA1 o'zaro ta'sir qiluvchi protein C-terminal helikaz 1) BRCA1 bilan o'zaro ta'sir qiluvchi va DNKni tiklashda ishtirok etadigan helikaz,"BRIP1 (BRCA1 Interacting Protein C-Terminal Helicase 1) Геликаза, взаимодействующая с BRCA1 и участвующая в репарации ДНК",BRIP1 (BRCA1 Interacting Protein C-Terminal Helicase 1) Helicase interacting with BRCA1 and involved in DNA repair
+#cancr0005.00024,BTNL2 (Butirofilinga o'xshash 2) protein immun javobini tartibga solishda ishtirok etadi,"BTNL2 (Butyrophilin-Like 2) Белок, участвующий в регуляции иммунного ответа",BTNL2 (Butyrophilin-Like 2) Protein involved in the regulation of the immune response
+#cancr0005.00025,BUB1B (BUB1 Mitotik nazorat punkti Serin/Treonin Kinaz B) Mitotik nazorat punktida rol o'ynaydigan kinaz,"BUB1B (BUB1 Mitotic Checkpoint Serine/Threonine Kinase B) Киназа, играющая роль в митотическом контрольном пункте",BUB1B (BUB1 Mitotic Checkpoint Serine/Threonine Kinase B) Kinase playing a role in the mitotic checkpoint
+#cancr0005.00026,CBL (Casitas B-Lineage Lymphoma) Ubiquitin ligaza oqsil degradatsiyasini tartibga solishda ishtirok etadi.,"CBL (Casitas B-Lineage Lymphoma) Убиквитинлигаза, участвующая в регуляции деградации белков.",CBL (Casitas B-Lineage Lymphoma) Ubiquitin ligase involved in the regulation of protein degradation.
+#cancr0005.00027,CDC73 (Hujayra bo'linish sikli 73) Hujayra siklini tartibga solish va o'smalarni bostirishda ishtirok etadigan oqsil.,"CDC73 (Cell Division Cycle 73) Белок, участвующий в регуляции клеточного цикла и супрессии опухолей.",CDC73 (Cell Division Cycle 73) Protein involved in cell cycle regulation and tumor suppression.
+#cancr0005.00028,CDH1 (Cadherin 1) Hujayra yopishqoqligini saqlashda muhim rol o'ynaydigan hujayra yopishish oqsili,"CDH1 (Cadherin 1) Белок адгезии клеток, играющий ключевую роль в поддержании клеточной адгезии",CDH1 (Cadherin 1) Cell adhesion protein that plays a key role in maintaining cell adhesion
+#cancr0005.00029,CDK4 (Cyclin Dependent Kinase 4) Hujayra siklini tartibga soluvchi kinaz.,"CDK4 (Cyclin Dependent Kinase 4) Киназа, регулирующая клеточный цикл.",CDK4 (Cyclin Dependent Kinase 4) Kinase that regulates the cell cycle.
+#cancr0005.00030,CDKN1B (Cyclin Dependent Kinase Inhibitor 1B) Hujayra siklini tartibga soluvchi kinazalarning inhibitori,"CDKN1B (Cyclin Dependent Kinase Inhibitor 1B) Ингибитор киназ, регулирующих клеточный цикл",CDKN1B (Cyclin Dependent Kinase Inhibitor 1B) Inhibitor of kinases that regulate the cell cycle
+#cancr0005.00031,CDKN1C (Cyclin Dependent Kinase Inhibitor 1C) Hujayra siklini tartibga soluvchi kinazalarning inhibitori,"CDKN1C (Cyclin Dependent Kinase Inhibitor 1C) Ингибитор киназ, регулирующих клеточный цикл",CDKN1C (Cyclin Dependent Kinase Inhibitor 1C) Inhibitor of kinases that regulate the cell cycle
+#cancr0005.00032,CDKN2A (Cyclin Dependent Kinase Inhibitor 2A) Hujayra siklini tartibga soluvchi kinazalarning inhibitori,"CDKN2A (Cyclin Dependent Kinase Inhibitor 2A) Ингибитор киназ, регулирующих клеточный цикл",CDKN2A (Cyclin Dependent Kinase Inhibitor 2A) Inhibitor of kinases that regulate the cell cycle
+#cancr0005.00033,CEBPA (CCAAT Enhancer Binding Protein Alpha) Hujayra differentsiatsiyasi va proliferatsiyasini tartibga soluvchi transkripsiya omili.,"CEBPA (CCAAT Enhancer Binding Protein Alpha) Транскрипционный фактор, регулирующий дифференцировку и пролиферацию клеток.",CEBPA (CCAAT Enhancer Binding Protein Alpha) Transcription factor that regulates cell differentiation and proliferation.
+#cancr0005.00034,CEP57 (Centrosomal Protein 57) Mikrotubulalar tashkil etilishida ishtirok etadigan oqsil,"CEP57 (Centrosomal Protein 57) Белок, участвующий в организации микротрубочек",CEP57 (Centrosomal Protein 57) A protein involved in the organization of microtubules
+#cancr0005.00035,CFTR (kistik fibroz transmembran o'tkazuvchanlik regulyatori) xlorid ionlarining tashishini tartibga soluvchi ion kanali,"CFTR (Cystic Fibrosis Transmembrane Conductance Regulator) Ионный канал, регулирующий транспорт ионов хлора",CFTR (Cystic Fibrosis Transmembrane Conductance Regulator) An ion channel that regulates the transport of chloride ions
+#cancr0005.00036,CHEK2 (Checkpoint Kinase 2) Kinaz hujayra siklini tartibga solish va DNKning shikastlanishiga javob berishda ishtirok etadi,"CHEK2 (Checkpoint Kinase 2) Киназа, участвующая в регуляции клеточного цикла и ответе на повреждения ДНК",CHEK2 (Checkpoint Kinase 2) A kinase involved in the regulation of the cell cycle and the response to DNA damage
+#cancr0005.00037,CTC1 (CST Telomer replikatsiya kompleksi komponenti 1) Telomerni saqlashda ishtirok etadigan oqsil,"CTC1 (CST Telomere Replication Complex Component 1) Белок, участвующий в поддержании теломер",CTC1 (CST Telomere Replication Complex Component 1) A protein involved in the maintenance of telomeres
+#cancr0005.00038,CTHRC1 (Kollagen Triple Helix Repeat Containing 1) hujayradan tashqari matritsani qayta qurishda ishtirok etadigan oqsil,"CTHRC1 (Collagen Triple Helix Repeat Containing 1) Белок, участвующий в ремоделировании внеклеточного матрикса",CTHRC1 (Collagen Triple Helix Repeat Containing 1) A protein involved in the remodeling of the extracellular matrix
+#cancr0005.00039,CTNNA1 (Catenin Alpha 1) Protein hujayra yopishishi va signalizatsiya yo'llarida ishtirok etadi,"CTNNA1 (Catenin Alpha 1) Белок, участвующий в клеточной адгезии и сигнальных путях",CTNNA1 (Catenin Alpha 1) A protein involved in cell adhesion and signaling pathways
+#cancr0005.00040,CTRC (Chymotrypsin C) Ovqat hazm qilishda ishtirok etadigan ferment,"CTRC (Chymotrypsin C) Фермент, участвующий в пищеварении",CTRC (Chymotrypsin C) An enzyme involved in digestion
+#cancr0005.00041,CYLD (silindromatoz) hujayra siklini va apoptozni tartibga solishda ishtirok etadigan o'simta bostiruvchi oqsil,"CYLD (Cylindromatosis) Белок-супрессор опухолей, участвующий в регуляции клеточного цикла и апоптоза",CYLD (Cylindromatosis) A tumor suppressor protein involved in the regulation of the cell cycle and apoptosis
+#cancr0005.00042,CYP21A2 (Sitoxrom P450 oilasi 21 kichik oila A a'zosi 2) Ukol gormonlar sintezida ishtirok etadigan ferment,"CYP21A2 (Cytochrome P450 Family 21 Subfamily A Member 2) Фермент, участвующий в синтезе стероидных гормонов",CYP21A2 (Cytochrome P450 Family 21 Subfamily A Member 2) An enzyme involved in the synthesis of steroid hormones
+#cancr0005.00043,DCLRE1C (DNK Cross-Link Repair 1C) DNKni tiklashda ishtirok etadigan oqsil,"DCLRE1C (DNA Cross-Link Repair 1C) Белок, участвующий в репарации ДНК",DCLRE1C (DNA Cross-Link Repair 1C) A protein involved in DNA repair
+#cancr0005.00044,DDB2 (Zararga xos DNKni bog'lovchi protein 2) DNKni tiklashda ishtirok etadigan oqsil,"DDB2 (Damage Specific DNA Binding Protein 2) Белок, участвующий в репарации ДНК",DDB2 (Damage Specific DNA Binding Protein 2) A protein involved in DNA repair
+#cancr0005.00045,DDX41 (DEAD-Box Helicase 41) Helikaz RNK metabolizmida ishtirok etadi,"DDX41 (DEAD-Box Helicase 41) Геликаза, участвующая в метаболизме РНК",DDX41 (DEAD-Box Helicase 41) A helicase involved in RNA metabolism
+#cancr0005.00046,"DICER1 (Dicer 1, Ribonuklease III) mikroRNK biogenezida ishtirok etadigan ferment","DICER1 (Dicer 1, Ribonuclease III) Фермент, участвующий в биогенезе микроРНК","DICER1 (Dicer 1, Ribonuclease III) An enzyme involved in the biogenesis of microRNA"
+#cancr0005.00047,DIS3L2 (DIS3 kabi 3'-5' ekzoribonukleaza 2) RNK degradatsiyasida ishtirok etadigan ekzoribonukleaza,"DIS3L2 (DIS3 Like 3'-5' Exoribonuclease 2) Экзорибонуклеаза, участвующая в деградации РНК",DIS3L2 (DIS3 Like 3'-5' Exoribonuclease 2) An exoribonuclease involved in RNA degradation
+#cancr0005.00048,DKC1 (Dyskerin Pseudouridin Synthase 1) Protein ribosoma RNKni o'zgartirish va telomerlarni saqlashda ishtirok etadi.,"DKC1 (Dyskerin Pseudouridine Synthase 1) Белок, участвующий в модификации рибосомной РНК и поддержании теломер",DKC1 (Dyskerin Pseudouridine Synthase 1) A protein involved in the modification of ribosomal RNA and telomere maintenance
+#cancr0005.00049,DOCK8 (Cytokinesis 8 dedicator) Aktinni tartibga solishda ishtirok etadigan oqsil,"DOCK8 (Dedicator of Cytokinesis 8) Белок, участвующий в регуляции актина",DOCK8 (Dedicator of Cytokinesis 8) A protein involved in the regulation of actin
+#cancr0005.00050,EGFR (Epidermal o'sish omili retseptorlari) hujayra o'sishi va differentsiatsiyasini tartibga solishda ishtirok etadigan epidermal o'sish omili retseptorlari,"EGFR (Epidermal Growth Factor Receptor) Рецептор эпидермального фактора роста, участвующий в регуляции клеточного роста и дифференцировки",EGFR (Epidermal Growth Factor Receptor) An epidermal growth factor receptor growth factor involved in the regulation of cell growth and differentiation
+#cancr0005.00051,EGLN1 (Egl-9 oilasi gipoksiya qo'zg'atuvchi omil 1) gipoksiyaga javobni tartibga solishda ishtirok etadigan ferment,"EGLN1 (Egl-9 Family Hypoxia Inducible Factor 1) Фермент, участвующий в регуляции ответа на гипоксию",EGLN1 (Egl-9 Family Hypoxia Inducible Factor 1) An enzyme involved in the regulation of the response to hypoxia
+#cancr0005.00052,ELAC2 (ElaC Ribonuklease Z 2) tRNKdan oldingi ishlov berishda ishtirok etadigan ferment,"ELAC2 (ElaC Ribonuclease Z 2) Фермент, участвующий в обработке пре-тРНК",ELAC2 (ElaC Ribonuclease Z 2) An enzyme involved in the processing of pre-tRNA
+#cancr0005.00053,"ELANE (elastaz, neytrofil ifodalangan) hujayradan tashqari matritsa oqsillarining parchalanishida ishtirok etadigan ferment.","ELANE (Elastase, Neutrophil Expressed) Фермент, участвующий в деградации белков внеклеточного матрикса.","ELANE (Elastase, Neutrophil Expressed) An enzyme involved in the degradation of extracellular matrix proteins."
+#cancr0005.00054,EPCAM (epitelial hujayra yopishish molekulasi) oqsil hujayra yopishishi va signalizatsiya yo'llarida ishtirok etadi,"EPCAM (Epithelial Cell Adhesion Molecule)Белок, участвующий в клеточной адгезии и сигнальных путях",EPCAM (Epithelial Cell Adhesion Molecule) A protein involved in cell adhesion and signaling pathways
+#cancr0005.00055,"ERBB2 (Erb-B2 retseptorlari tirozin kinaz 2, HER2 nomi bilan ham tanilgan) Hujayra o'sishini tartibga solishda ishtirok etadigan tirozin kinaz retseptorlari.","ERBB2 (Erb-B2 Receptor Tyrosine Kinase 2, также известен как HER2) Рецептор тирозинкиназы, участвующий в регуляции клеточного роста.","ERBB2 (Erb-B2 Receptor Tyrosine Kinase 2, also known as HER2) A tyrosine kinase receptor involved in the regulation of cell growth."
+#cancr0005.00056,"ERCC1 (ERCC Excision Repair 1, Endonuklease Non-Catalitic Subunit) DNKning nukleotid eksizyonini tiklashda ishtirok etadigan oqsil","ERCC1 (ERCC Excision Repair 1, Endonuclease Non-Catalytic Subunit) Белок, участвующий в нуклеотидной эксцизионной репарации ДНК","ERCC1 (ERCC Excision Repair 1, Endonuclease Non-Catalytic Subunit) Protein involved in nucleotide excision repair of DNA"
+#cancr0005.00057,"ERCC2 (ERCC Excision Repair 2, TFIIH Core Complex Helicase Subunit, shuningdek XPD nomi bilan tanilgan) Helikaz DNK nukleotid eksizyonini tiklashda ishtirok etadi","ERCC2 (ERCC Excision Repair 2, TFIIH Core Complex Helicase Subunit, также известен как XPD) Геликаза, участвующая в нуклеотидной эксцизионной репарации ДНК","ERCC2 (ERCC Excision Repair 2, TFIIH Core Complex Helicase Subunit, also known as XPD) Helicase involved in nucleotide excision repair of DNA"
+#cancr0005.00058,"ERCC3 (ERCC Excision Repair 3, shuningdek XPB nomi bilan ham tanilgan) DNK nukleotid eksizyonini tiklashda ishtirok etgan helikaz.","ERCC3 (ERCC Excision Repair 3, также известен как XPB) Геликаза, участвующая в нуклеотидной эксцизионной репарации ДНК.","ERCC3 (ERCC Excision Repair 3, also known as XPB) Helicase involved in nucleotide excision repair of DNA."
+#cancr0005.00059,"ERCC4 (ERCC Excision Repair 4, shuningdek XPF nomi bilan ham tanilgan) DNK nukleotidlarining eksizyonini tiklashda ishtirok etadigan oqsil.","ERCC4 (ERCC Excision Repair 4, также известен как XPF) Белок, участвующий в нуклеотидной эксцизионной репарации ДНК.","ERCC4 (ERCC Excision Repair 4, also known as XPF) Protein involved in nucleotide excision repair of DNA."
+#cancr0005.00060,"ERCC5 (ERCC Excision Repair 5, shuningdek, XPG nomi bilan ham tanilgan) DNK nukleotid eksizyonini tiklashda ishtirok etadigan oqsil.","ERCC5 (ERCC Excision Repair 5, также известен как XPG)Белок, участвующий в нуклеотидной эксцизионной репарации ДНК.","ERCC5 (ERCC Excision Repair 5, also known as XPG) Protein involved in nucleotide excision repair of DNA."
+#cancr0005.00061,ETV6 (ETS Variant Transkripsiya Faktori 6) Gematopoezni tartibga solishda ishtirok etadigan transkripsiya omili,"ETV6 (ETS Variant Transcription Factor 6) Транскрипционный фактор, участвующий в регуляции гемопоэза",ETV6 (ETS Variant Transcription Factor 6) Transcription factor involved in the regulation of hematopoiesis
+#cancr0005.00062,EXT1 (Exostosin Glycosyltransferase 1) Glikosiltransferaza geparan sulfat sintezida ishtirok etadi.,"EXT1 (Exostosin Glycosyltransferase 1) Гликозилтрансфераза, участвующая в синтезе гепарансульфата.",EXT1 (Exostosin Glycosyltransferase 1) Glycosyltransferase involved in the synthesis of heparan sulfate.
+#cancr0005.00063,EXT2 (Exostosin Glycosyltransferase 2) Glikosiltransferaza geparan sulfat sintezida ishtirok etadi.,"EXT2 (Exostosin Glycosyltransferase 2) Гликозилтрансфераза, участвующая в синтезе гепарансульфата",EXT2 (Exostosin Glycosyltransferase 2) Glycosyltransferase involved in the synthesis of heparan sulfate
+#cancr0005.00064,EZH2 (Enhancer Of Zeste 2 Polycomb Repressive Complex 2 Subunit) Xromatin modifikatsiyasi orqali transkripsiyani tartibga solishda ishtirok etadigan oqsil,"EZH2 (Enhancer Of Zeste 2 Polycomb Repressive Complex 2 Subunit) Белок, участвующий в регуляции транскрипции через модификацию хроматина",EZH2 (Enhancer Of Zeste 2 Polycomb Repressive Complex 2 Subunit) Protein involved in the regulation of transcription through chromatin modification
+#cancr0005.00065,FANCA (Fanconi Anemia Complementation Group A) DNKni tiklashda ishtirok etadigan oqsil,"FANCA (Fanconi Anemia Complementation Group A) Белок, участвующий в репарации ДНК",FANCA (Fanconi Anemia Complementation Group A) Protein involved in DNA repair
+#cancr0005.00066,FANCB (Fanconi anemiya komplementatsiyasi guruhi B): DNKni tiklashda ishtirok etadigan oqsil,"FANCB (Fanconi Anemia Complementation Group B): Белок, участвующий в репарации ДНК",FANCB (Fanconi Anemia Complementation Group B): Protein involved in DNA repair
+#cancr0005.00067,FANCC (Fanconi Anemia Complementation Group C) DNKni tiklashda ishtirok etadigan oqsil,"FANCC (Fanconi Anemia Complementation Group C) Белок, участвующий в репарации ДНК",FANCC (Fanconi Anemia Complementation Group C) Protein involved in DNA repair
+#cancr0005.00068,FANCD2 (Fanconi anemiya komplementatsiyasi guruhi D2) DNKni tiklashda ishtirok etadigan oqsil,"FANCD2 (Fanconi Anemia Complementation Group D2) Белок, участвующий в репарации ДНК",FANCD2 (Fanconi Anemia Complementation Group D2) Protein involved in DNA repair
+#cancr0005.00069,FANCE (Fanconi Anemia Complementation Group E) DNKni tiklashda ishtirok etadigan oqsil,"FANCE (Fanconi Anemia Complementation Group E) Белок, участвующий в репарации ДНК",FANCE (Fanconi Anemia Complementation Group E) Protein involved in DNA repair
+#cancr0005.00070,FANCF (Fanconi Anemia Complementation Group F) DNKni tiklashda ishtirok etadigan oqsil,"FANCF (Fanconi Anemia Complementation Group F) Белок, участвующий в репарации ДНК",FANCF (Fanconi Anemia Complementation Group F) Protein involved in DNA repair
+#cancr0005.00071,FANCG (Fanconi Anemia Complementation Group G) DNKni tiklashda ishtirok etadigan oqsil,"FANCG (Fanconi Anemia Complementation Group G) Белок, участвующий в репарации ДНК",FANCG (Fanconi Anemia Complementation Group G) Protein involved in DNA repair
+#cancr0005.00072,FANCI (Fanconi Anemia Complementation Group I) DNKni tiklashda ishtirok etadigan oqsil,"FANCI (Fanconi Anemia Complementation Group I) Белок, участвующий в репарации ДНК",FANCI (Fanconi Anemia Complementation Group I) Protein involved in DNA repair
+#cancr0005.00073,FANCL (Fanconi Anemia Complementation Group L) DNKni tiklashda ishtirok etadigan oqsil,"FANCL (Fanconi Anemia Complementation Group L)Белок, участвующий в репарации ДНК",FANCL (Fanconi Anemia Complementation Group L) Protein involved in DNA repair
+#cancr0005.00074,FANCM (Fanconi Anemia Complementation Group M) DNKni tiklashda ishtirok etadigan oqsil,"FANCM (Fanconi Anemia Complementation Group M) Белок, участвующий в репарации ДНК",FANCM (Fanconi Anemia Complementation Group M) Protein involved in DNA repair
+#cancr0005.00075,Apoptozni tartibga solishda ishtirok etadigan FAS (Fas Cell Surface Death Receptor) retseptorlari,"FAS (Fas Cell Surface Death Receptor) Рецептор, регулирующий аоптоз",FAS (Fas Cell Surface Death Receptor) Receptor regulating apoptosis
+#cancr0005.00076,FASLG (Fas Ligand) Fas retseptorlari ligandi apoptozni qo'zg'atishda ishtirok etadi.,"FASLG (Fas Ligand) Лиганд рецептора Fas, участвующий в индукции апоптоза",FASLG (Fas Ligand) Fas receptor ligand involved in apoptosis induction
+#cancr0005.00077,FH (Fumarat gidrataz) Limon kislotasi aylanishida ishtirok etadigan ferment.,"FH (Fumarate Hydratase) Фермент, участвующий в цикле лимонной кислоты.",FH (Fumarate Hydratase) Enzyme involved in the citric acid cycle.
+#cancr0005.00078,FLCN (Follikulin) O'simtani bostiruvchi oqsil,FLCN (Folliculin) Белок-супрессор опухолей,FLCN (Folliculin) Tumor suppressor protein
+#cancr0005.00079,GALNT12 (polipeptid N-asetilgalaktozaminiltransferaza 12) glikosiltransferaza O-glikozillanishda ishtirok etadi,"GALNT12 (Polypeptide N-Acetylgalactosaminyltransferase 12)Гликозилтрансфераза, участвующая в O-гликозилировании",GALNT12 (Polypeptide N-Acetylgalactosaminyltransferase 12) Glycosyltransferase involved in O-glycosylation
+#cancr0005.00080,GATA2 (GATA bog'lovchi oqsil 2) gematopoezni tartibga solishda ishtirok etadigan transkripsiya omili,"GATA2 (GATA Binding Protein 2) Транскрипционный фактор, участвующий в регуляции гемопоэза",GATA2 (GATA Binding Protein 2) Transcription factor involved in the regulation of hematopoiesis
+#cancr0005.00081,GEN1 (GEN1 Holliday Junction 5' Flap Endonuklease) oqsili DNKni tiklashda ishtirok etadi,"GEN1 (GEN1 Holliday Junction 5' Flap Endonuclease) Белок, участвующий в репарации ДНК",GEN1 (GEN1 Holliday Junction 5' Flap Endonuclease) Protein involved in DNA repair
+#cancr0005.00082,GNAS (GNAS Complex Locus) G protein signalizatsiya yo'llarida ishtirok etadigan oqsil.,"GNAS (GNAS Complex Locus) Белок, участвующий в сигнальных путях G-белков.",GNAS (GNAS Complex Locus) Protein involved in G-protein signaling pathways.
+#cancr0005.00083,GPC3 (Glypican 3) Proteoglikan hujayra o'sishini tartibga solishda ishtirok etadi,"GPC3 (Glypican 3) Протеогликан, участвующий в регуляции роста клеток",GPC3 (Glypican 3) Proteoglycan involved in the regulation of cell growth
+#cancr0005.00084,"GREM1 (Gremlin 1, DAN oilasi BMP antagonisti) Suyak morfogenezini tartibga solishda ishtirok etadigan oqsil","GREM1 (Gremlin 1, DAN Family BMP Antagonist) Белок, участвующий в регуляции костной морфогенезы","GREM1 (Gremlin 1, DAN Family BMP Antagonist) Protein involved in the regulation of bone morphogenesis"
+#cancr0005.00085,HNF1A (gepatotsit yadro omili 1 alfa) glyukoza metabolizmini tartibga solishda ishtirok etadigan transkripsiya omili,"HNF1A (Hepatocyte Nuclear Factor 1 Alpha) Транскрипционный фактор, участвующий в регуляции глюкозного метаболизма",HNF1A (Hepatocyte Nuclear Factor 1 Alpha) Transcription factor involved in the regulation of glucose metabolism
+#cancr0005.00086,HNF1B (gepatotsit yadro omili 1 beta) glyukoza metabolizmini va organlar rivojlanishini tartibga solishda ishtirok etadigan transkripsiya omili,"HNF1B (Hepatocyte Nuclear Factor 1 Beta) Транскрипционный фактор, участвующий в регуляции глюкозного метаболизма и развития органов",HNF1B (Hepatocyte Nuclear Factor 1 Beta) Transcription factor involved in the regulation of glucose metabolism and organ development
+#cancr0005.00087,HOXB13 (Homeobox B13) Prostata rivojlanishida ishtirok etadigan transkripsiya omili,"HOXB13 (Homeobox B13) Транскрипционный фактор, участвующий в развитии предстательной железы",HOXB13 (Homeobox B13) Transcription factor involved in the development of the prostate gland
+#cancr0005.00088,"HER2 (inson epidermal o'sish omili retseptorlari 2, shuningdek, ERBB2 sifatida ham tanilgan) Hujayra o'sishini tartibga solishda ishtirok etadigan tirozin kinaz retseptorlari.","HER2 (Human Epidermal Growth Factor Receptor 2, также известен как ERBB2) Рецептор тирозинкиназы, участвующий в регуляции клеточного роста.","HER2 (Human Epidermal Growth Factor Receptor 2, also known as ERBB2) Tyrosine kinase receptor involved in the regulation of cell growth."
+#cancr0005.00089,"HRAS (HRas Proto-Oncogene, GTPase) oqsil hujayra o'sishi va differentsiatsiyasining signalizatsiya yo'llarida ishtirok etadi","HRAS (HRas Proto-Oncogene, GTPase)Белок, участвующий в сигнальных путях клеточного роста и дифференцировки","HRAS (HRas Proto-Oncogene, GTPase) A protein involved in signaling pathways of cell growth and differentiation"
+#cancr0005.00090,IFNGR1 (Interferon Gamma Receptor 1) Immunitetni tartibga solish va virusga qarshi mudofaa bilan shug'ullanadigan interferon gamma retseptorlari,"IFNGR1 (Interferon Gamma Receptor 1)Рецептор интерферона гамма, участвующий в иммунной регуляции и антивирусной защите",IFNGR1 (Interferon Gamma Receptor 1) An interferon gamma receptor involved in immune regulation and antiviral protection
+#cancr0005.00091,IKZF1 (IKAROS Family Sinc Finger 1) Limfotsitlar rivojlanishini tartibga soluvchi transkripsiya omili.,"IKZF1 (IKAROS Family Zinc Finger 1)Транскрипционный фактор, регулирующий развитие лимфоцитов.",IKZF1 (IKAROS Family Zinc Finger 1) A transcription factor that regulates the development of lymphocytes.
+#cancr0005.00092,JAK2 (Janus Kinase 2) tirozin kinaz sitokinlardan hujayra yadrosiga signal uzatishda ishtirok etadi,"JAK2 (Janus Kinase 2)Тирозинкиназа, участвующая в передаче сигнала от цитокинов к ядру клетки",JAK2 (Janus Kinase 2) A tyrosine kinase involved in signaling from cytokines to the cell nucleus
+#cancr0005.00093,"JAK3 (Janus Kinase 3) Tirozin kinaz sitokinlardan hujayra yadrosiga, ayniqsa immun hujayralarida signal o'tkazishda ishtirok etadi.","JAK3 (Janus Kinase 3) Тирозинкиназа, участвующая в передаче сигнала от цитокинов к ядру клетки, особенно в иммунных клетках","JAK3 (Janus Kinase 3) A tyrosine kinase involved in signaling from cytokines to the cell nucleus, especially in immune cells"
+#cancr0005.00094,"KDR (Kinase Insert Domain Receptor, VEGFR2 nomi bilan ham tanilgan) Angiogenezda ishtirok etadigan tomir endotelial o'sish omili (VEGF) uchun tirozin kinaz retseptorlari","KDR (Kinase Insert Domain Receptor, также известен как VEGFR2) Рецептор тирозинкиназы для сосудистого эндетелиального фактора роста (VEGF), участвующий в ангиогенезе","KDR (Kinase Insert Domain Receptor, also known as VEGFR2) A tyrosine kinase receptor for vascular endothelial growth factor (VEGF), involved in angiogenesis"
+#cancr0005.00095,KIF1B (Kinesin oilasi a'zosi 1B) Organellalarni mikronaychalar bo'ylab tashishda ishtirok etadigan oqsil.","KIF1B (Kinesin Family Member 1B)Белок, участвующий в транспортировке органелл вдоль микротрубочек.",KIF1B (Kinesin Family Member 1B) A protein involved in the transport of organelles along microtubules.
+#cancr0005.00096,"KIT (KIT proto-onkogen, retseptor tirozin kinaz) hujayra o'sishi va differentsiatsiyasini tartibga solishda ishtirok etadigan retseptor tirozin kinaz","KIT (KIT Proto-Oncogene, Receptor Tyrosine Kinase) Рецептор тирозинкиназы, участвующий в регуляции клеточного роста и дифференцировки","KIT (KIT Proto-Oncogene, Receptor Tyrosine Kinase) Tyrosine kinase receptor involved in the regulation of cell growth and differentiation"
+#cancr0005.00097,"KRAS (KRAS proto-onkogen, GTPaz) oqsili hujayra o'sishi signalizatsiya yo'llarida ishtirok etadi","KRAS (KRAS Proto-Oncogene, GTPase) Белок, участвующий в сигнальных путях клеточного роста","KRAS (KRAS Proto-Oncogene, GTPase) Protein involved in cell growth signaling pathways"
+#cancr0005.00098,LIG4 (DNK Ligase IV) Ligaza ikki zanjirli DNK uzilishlarini tiklashda ishtirok etadi,"LIG4 (DNA Ligase IV) Лигаза, участвующая в репарации двухцепочечных разрывов ДНК",LIG4 (DNA Ligase IV) Ligase involved in the repair of double-strand DNA breaks
+#cancr0005.00099,LZTR1 (Leucine Zipper Like Transkripsiya regulyatori 1) Hujayra o'sishi va apoptozni tartibga solishda ishtirok etadigan oqsil,"LZTR1 (Leucine Zipper Like Transcription Regulator 1) Белок, участвующий в регуляции клеточного роста и апоптоза",LZTR1 (Leucine Zipper Like Transcription Regulator 1) Protein involved in the regulation of cell growth and apoptosis
+#cancr0005.00100,MAX (MYC Associated Factor X) Hujayra o'sishi va apoptozni tartibga solishda ishtirok etadigan transkripsiya omili.,"MAX (MYC Associated Factor X) Транскрипционный фактор, участвующий в регуляции клеточного роста и апоптоза.",MAX (MYC Associated Factor X) Transcription factor involved in the regulation of cell growth and apoptosis.
+#cancr0005.00101,MC1R (Melanokortin 1 retseptorlari) teri pigmentatsiyasini tartibga solishda ishtirok etadigan retseptorlari,"MC1R (Melanocortin 1 Receptor) Рецептор, участвующий в регуляции пигментации кожи",MC1R (Melanocortin 1 Receptor) Receptor involved in the regulation of skin pigmentation
+#cancr0005.00102,MEN1 (Menin 1) Hujayra o'sishini tartibga solishda ishtirok etadigan o'simta bostiruvchi oqsil.,"MEN1 (Menin 1)Белок-супрессор опухолей, участвующий в регуляции клеточного роста.",MEN1 (Menin 1) Tumor suppressor protein involved in the regulation of cell growth.
+#cancr0005.00103,"MET (MET proto-onkogen, retseptor tirozin kinaz) hujayra o'sishi, yashashi va migratsiyasini tartibga solishda ishtirok etadigan retseptor tirozin kinaz","MET (MET Proto-Oncogene, Receptor Tyrosine Kinase) Рецептор тирозинкиназы, участвующий в регуляции клеточного роста, выживания и миграции","MET (MET Proto-Oncogene, Receptor Tyrosine Kinase) A tyrosine kinase receptor involved in the regulation of cell growth, survival, and migration"
+#cancr0005.00104,MITF (Mikroftalmiya bilan bog'liq transkripsiya omili) melanotsitlar rivojlanishida ishtirok etadigan transkripsiya omili,"MITF (Microphthalmia Associated Transcription Factor)Транскрипционный фактор, участвующий в развитии меланоцитов",MITF (Microphthalmia Associated Transcription Factor) A transcription factor involved in the development of melanocytes
+#cancr0005.00105,MLH1 (MutL Homolog 1) DNK nomuvofiqligini tuzatishda ishtirok etadigan oqsil,"MLH1 (MutL Homolog 1)Белок, участвующий в репарации несоответствий ДНК",MLH1 (MutL Homolog 1) A protein involved in the repair of DNA mismatches
+#cancr0005.00106,MLH3 (MutL Homolog 3) DNK nomuvofiqligini tuzatishda ishtirok etadigan oqsil,"MLH3 (MutL Homolog 3)Белок, участвующий в репарации несоответствий ДНК",MLH3 (MutL Homolog 3) A protein involved in the repair of DNA mismatches
+#cancr0005.00107,"MRE11 (MRE11 homologi, ikki zanjirli uzilishni tiklovchi nukleaz) Ikki zanjirli DNK uzilishlarini tiklash va genomik barqarorlikni saqlashda ishtirok etadigan oqsil.","MRE11 (MRE11 Homolog, Double Strand Break Repair Nuclease) Белок, участвующий в репарации двухцепочечных разрывов ДНК и поддержании геномной стабильности","MRE11 (MRE11 Homolog, Double Strand Break Repair Nuclease) A protein involved in the repair of double-strand DNA breaks and the maintenance of genomic stability"
+#cancr0005.00108,MSH2 (MutS Homolog 2) DNK nomuvofiqligini tiklashda ishtirok etadigan oqsil.,"MSH2 (MutS Homolog 2)Белок, участвующий в репарации несоответствий ДНК",MSH2 (MutS Homolog 2) A protein involved in the repair of DNA mismatches.
+#cancr0005.00109,MSH3 (MutS Homolog 3) DNK nomuvofiqligini tuzatishda ishtirok etadigan oqsil,"MSH3 (MutS Homolog 3) Белок, участвующий в репарации несоответствий ДНК",MSH3 (MutS Homolog 3) A protein involved in DNA mismatch repair
+#cancr0005.00110,MSH6 (MutS Homolog 6) DNK nomuvofiqligini tuzatishda ishtirok etadigan oqsil,"MSH6 (MutS Homolog 6) Белок, участвующий в репарации несоответствий ДНК",MSH6 (MutS Homolog 6) A protein involved in DNA mismatch repair
+#cancr0005.00111,MSR1 (Makrofaglarni tozalash retseptorlari 1) immun javob va oksidlangan lipidlarni tozalashda ishtirok etadigan oqsil.,"MSR1 (Macrophage Scavenger Receptor 1) Белок, участвующий в иммунном ответе и очистке окисленных липидов.",MSR1 (Macrophage Scavenger Receptor 1) A protein involved in the immune response and clearance of oxidized lipids.
+#cancr0005.00112,MUTYH (MutY DNK glycosylase) DNKning bazal eksizyonini tiklashda ishtirok etadigan oqsil.,"MUTYH (MutY DNA Glycosylase) Белок, участвующий в базовой эксцизионной репарации ДНК.",MUTYH (MutY DNA Glycosylase) A protein involved in base excision repair of DNA.
+#cancr0005.00113,NBN (Nibrin) oqsili DNKni tiklashda ishtirok etadi,"NBN (Nibrin) Белок, участвующий в репарации ДНК",NBN (Nibrin) Protein involved in DNA repair
+#cancr0005.00114,NF1 (neyrofibromin 1) Ras signalizatsiyasini tartibga soluvchi o'simta bostiruvchi oqsil,"NF1 (Neurofibromin 1) Белок-супрессор опухолей, регулирующий сигналинг Ras",NF1 (Neurofibromin 1) Tumor suppressor protein that regulates Ras signaling
+#cancr0005.00115,"NF2 (neyrofibromin 2, Merlin) Hujayra shakli va harakatini tartibga soluvchi o'simta bostiruvchi oqsil","NF2 (Neurofibromin 2, Merlin) Белок-супрессор опухолей, регулирующий клеточную форму и движение","NF2 (Neurofibromin 2, Merlin) Tumor suppressor protein that regulates cell shape and movement"
+#cancr0005.00116,NHEJ1 (Gomolog bo'lmagan oxirgi qo'shilish omili) ikki zanjirli DNK uzilishlarini tiklash jarayonida gomologik bo'lmagan rekombinatsiyada ishtirok etadigan oqsil,"NHEJ1 (Non-Homologous End-Joining Factor 1) Белок, участвующий в негомологичной рекомбинации при репарации двухцепочечных разрывов ДНК",NHEJ1 (Non-Homologous End-Joining Factor 1) Protein involved in non-homologous recombination during repair of double-strand DNA breaks
+#cancr0005.00117,NHP2 (NHP2 Ribonukleoprotein) Protein ribosoma biogenezi va telomerlarda ishtirok etadi.,"NHP2 (NHP2 Ribonucleoprotein) Белок, участвующий в биогенезе рибосом и теломерах",NHP2 (NHP2 Ribonucleoprotein) Protein involved in ribosome biogenesis and telomeres
+#cancr0005.00118,NOP10 (NOP10 Ribonukleoprotein) Protein ribosoma biogenezi va telomerlarda ishtirok etadi,"NOP10 (NOP10 Ribonucleoprotein) Белок, участвующий в биогенезе рибосом и теломерах",NOP10 (NOP10 Ribonucleoprotein) Protein involved in ribosome biogenesis and telomeres
+#cancr0005.00119,"NRAS (NRAS proto-onkogen, GTPaz) oqsil hujayra o'sishi signalizatsiya yo'llarida ishtirok etadi","NRAS (NRAS Proto-Oncogene, GTPase) Белок, участвующий в сигнальных путях клеточного роста","NRAS (NRAS Proto-Oncogene, GTPase) Protein involved in cell growth signaling pathways"
+#cancr0005.00120,NSD1 (Nuclear Receptor Binding SET Domain Protein 1) transkripsiyani tartibga solishda ishtirok etadigan histon metiltransferaza,"NSD1 (Nuclear Receptor Binding SET Domain Protein 1) Гистонметилтрансфераза, участвующая в регуляции транскрипции",NSD1 (Nuclear Receptor Binding SET Domain Protein 1) Histone methyltransferase involved in transcription regulation
+#cancr0005.00121,NTHL1 (DNK glikozilaza 1 kabi N) DNKning bazal eksizyonini tiklashda ishtirok etadigan oqsil,"NTHL1 (Nth Like DNA Glycosylase 1)Белок, участвующий в базовой эксцизионной репарации ДНК",NTHL1 (Nth Like DNA Glycosylase 1) Protein involved in DNA base excision repair
+#cancr0005.00122,PALB2 (BRCA2 hamkori va lokalizatori) BRCA2 bilan o'zaro ta'sir qiluvchi va DNKni tiklashda ishtirok etadigan oqsil,"PALB2 (Partner And Localizer Of BRCA2) Белок, взаимодействующий с BRCA2 и участвующий в репарации ДНК",PALB2 (Partner And Localizer Of BRCA2) Protein interacting with BRCA2 and involved in DNA repair
+#cancr0005.00123,PALLD (Palladin) Hujayra shakli va harakatini tartibga solishda ishtirok etadigan sitoskeletal oqsil.,"PALLD (Palladin) Цитоскелетный белок, участвующий в регуляции клеточной формы и подвижности.",PALLD (Palladin) Cytoskeletal protein involved in the regulation of cell shape and motility.
+#cancr0005.00124,PARN (Poli(A)-maxsus ribonukleaza) mRNKni qayta ishlashda ishtirok etadigan oqsil,"PARN (Poly(A)-Specific Ribonuclease) Белок, участвующий в процессинге мРНК",PARN (Poly(A)-Specific Ribonuclease) A protein involved in mRNA processing
+#cancr0005.00125,PAX5 (Paired Box 5) B hujayralari rivojlanishida ishtirok etadigan transkripsiya omili,"PAX5 (Paired Box 5) Транскрипционный фактор, участвующий в развитии B-клеток",PAX5 (Paired Box 5) A transcription factor involved in B-cell development
+#cancr0005.00126,PDGFRA (trombotsitlardan olingan o'sish omili retseptorlari alfa) hujayra o'sishi va rivojlanishini tartibga solishda ishtirok etadigan tirozin kinaz retseptorlari,"PDGFRA (Platelet-Derived Growth Factor Receptor Alpha) Рецептор тирозинкиназы, участвующий в регуляции клеточного роста и развития",PDGFRA (Platelet-Derived Growth Factor Receptor Alpha) A tyrosine kinase receptor involved in the regulation of cell growth and development
+#cancr0005.00127,PDGFRB (trombotsitlardan olingan o'sish omili retseptorlari beta) hujayra o'sishi va rivojlanishini tartibga solishda ishtirok etadigan retseptor tirozin kinaz,"PDGFRB (Platelet-Derived Growth Factor Receptor Beta) Рецептор тирозинкиназы, участвующий в регуляции клеточного роста и развития",PDGFRB (Platelet-Derived Growth Factor Receptor Beta) A tyrosine kinase receptor involved in the regulation of cell growth and development
+#cancr0005.00128,PHOX2B (Homeobox 2b kabi juftlangan) Neyrorivojlanish uchun muhim transkripsiya omili.,"PHOX2B (Paired Like Homeobox 2b) Транскрипционный фактор, важный для развития нервной системы.",PHOX2B (Paired Like Homeobox 2b) A transcription factor important for the development of the nervous system.
+#cancr0005.00129,"PIK3CA (Fosfatidilinositol-4,5-Bisfosfat 3-Kinaz Katalitik Subunit Alpha) PI3K ning katalitik bo'linmasi hujayra o'sishi signalizatsiyasida ishtirok etadi","PIK3CA (Phosphatidylinositol-4,5-Bisphosphate 3-Kinase Catalytic Subunit Alpha) Каталитическая субъединица PI3K, участвующая в сигнализации клеточного роста","PIK3CA (Phosphatidylinositol-4,5-Bisphosphate 3-Kinase Catalytic Subunit Alpha) The catalytic subunit of PI3K involved in cell growth signaling"
+#cancr0005.00130,"PIK3CD (Fosfatidilinositol-4,5-Bisfosfat 3-Kinaz Katalitik Subunit Delta) PI3K ning katalitik subuniti immun javobini tartibga solishda ishtirok etadi.","PIK3CD (Phosphatidylinositol-4,5-Bisphosphate 3-Kinase Catalytic Subunit Delta) Каталитическая субъединица PI3K, участвующая в регуляции иммунного ответа.","PIK3CD (Phosphatidylinositol-4,5-Bisphosphate 3-Kinase Catalytic Subunit Delta) The catalytic subunit of PI3K involved in regulating the immune response."
+#cancr0005.00131,PIK3R1 (Fosfoinositid-3-Kinaz regulatory subunit 1) Hujayra o'sishi signalizatsiyasida ishtirok etadigan PI3K ning tartibga soluvchi subbirligi,"PIK3R1 (Phosphoinositide-3-Kinase Regulatory Subunit 1) Регуляторная субъединица PI3K, участвующая в сигнализации клеточного роста",PIK3R1 (Phosphoinositide-3-Kinase Regulatory Subunit 1) The regulatory subunit of PI3K involved in cell growth signaling
+#cancr0005.00132,"PMS1 (PMS1 homologi 1, nomuvofiqlikni tiklash tizimining komponenti) DNK nomuvofiqligini tuzatishda ishtirok etadigan oqsil.","PMS1 (PMS1 Homolog 1, Mismatch Repair System Component) Белок, участвующий в репарации несоответствий ДНК.","PMS1 (PMS1 Homolog 1, Mismatch Repair System Component) A protein involved in DNA mismatch repair."
+#cancr0005.00133,"PMS2 (PMS1 homologi 2, nomuvofiqlikni tiklash tizimining komponenti) DNK nomuvofiqligini tuzatishda ishtirok etgan oqsil","PMS2 (PMS1 Homolog 2, Mismatch Repair System Component) Белок, участвующий в репарации несоответствий ДНК","PMS2 (PMS1 Homolog 2, Mismatch Repair System Component) A protein involved in DNA mismatch repair"
+#cancr0005.00134,"POLD1 (DNK Polimeraza Delta 1, Katalitik Subbirlik) DNK polimeraza deltasining katalitik bo'linmasi DNKni ta'mirlash va replikatsiya qilishda ishtirok etadi","POLD1 (DNA Polymerase Delta 1, Catalytic Subunit) Каталитическая субъединица ДНК-полимеразы дельта, участвующая в репарации и репликации ДНК","POLD1 (DNA Polymerase Delta 1, Catalytic Subunit) The catalytic subunit of DNA polymerase delta involved in DNA repair and replication"
+#cancr0005.00135,"POLE (DNK Polimeraza Epsilon, Katalitik Subbirlik) DNK polimeraza epsilonning katalitik bo'linmasi DNKni tiklash va replikatsiya qilishda ishtirok etadi","POLE (DNA Polymerase Epsilon, Catalytic Subunit) Каталитическая субъединица ДНК-полимеразы эпсилон, участвующая в репарации и репликации ДНК","POLE (DNA Polymerase Epsilon, Catalytic Subunit) The catalytic subunit of DNA polymerase epsilon involved in DNA repair and replication"
+#cancr0005.00136,POLH (DNK polimeraza Eta) DNK polimeraza translatsiya sintezida ishtirok etadi,"POLH (DNA Polymerase Eta) ДНК-полимераза, участвующая в трансляционной синтезе",POLH (DNA Polymerase Eta) DNA polymerase involved in translational synthesis
+#cancr0005.00137,POT1 (Telomerlarni himoya qilish 1) Telomerlarni parchalanishdan himoya qiluvchi va ularning uzunligini saqlashda ishtirok etadigan oqsil.,"POT1 (Protection Of Telomeres 1) Белок, защищающий теломеры от деградации и участвующий в поддержании их длины",POT1 (Protection Of Telomeres 1) A protein that protects telomeres from degradation and is involved in maintaining their length
+#cancr0005.00138,PRF1 (Perforin 1) maqsadli hujayralarning lizisini keltirib chiqaradigan hujayra immunitetida ishtirok etadigan oqsil.,"PRF1 (Perforin 1) Белок, участвующий в клеточном иммунитете, вызывая лизис клеток-мишеней.","PRF1 (Perforin 1) A protein involved in cellular immunity, causing lysis of target cells."
+#cancr0005.00139,PRKAR1A (Protein kinazasi CAMP-ga bog'liq bo'lgan I turdagi tartibga soluvchi subbirlik alfa) Protein kinaz turli xil hujayra jarayonlarida ishtirok etadigan tartibga soluvchi subbirlik.,"PRKAR1A (Protein Kinase CAMP-Dependent Type I Regulatory Subunit Alpha) Регуляторная субъединица протеинкиназы A, участвующая в различных клеточных процессах","PRKAR1A (Protein Kinase CAMP-Dependent Type I Regulatory Subunit Alpha) Regulatory subunit of protein kinase A, involved in various cellular processes"
+#cancr0005.00140,"PRSS1 (Proteaz, Serin 1) Tripsinogen, oshqozon osti bezi fermenti","PRSS1 (Protease, Serine 1) Трипсиноген, фермент поджелудочной железы","PRSS1 (Protease, Serine 1) Trypsinogen, a pancreatic enzyme"
+#cancr0005.00141,PTCH1 (Yamalgan 1) Kirpi signalizatsiyasida ishtirok etgan o'simta bostiruvchi oqsil,"PTCH1 (Patched 1) Белок-супрессор опухолей, участвующий в сигнализации Hedgehog",PTCH1 (Patched 1) Tumor suppressor protein involved in Hedgehog signaling
+#cancr0005.00142,PTCH2 (Yamalgan 2) PTCH1 ga o'xshash protein Kirpi signalizatsiyasida ishtirok etadi,"PTCH2 (Patched 2) Белок, аналогичный PTCH1, участвующий в сигнализации Hedgehog","PTCH2 (Patched 2) Protein similar to PTCH1, involved in Hedgehog signaling"
+#cancr0005.00143,PTEN (fosfataza va tensin homologi) Hujayra o'sishi va omon qolishini tartibga solishda rol o'ynaydigan fosfataza.,"PTEN (Phosphatase And Tensin Homolog) Фосфатаза, играющая роль в регуляции клеточного роста и выживания.",PTEN (Phosphatase And Tensin Homolog) Phosphatase that plays a role in regulating cell growth and survival.
+#cancr0005.00144,PTPN11 (11-toifali protein tirozin fosfataza retseptorlari bo'lmagan) fosfataza hujayra o'sishi va differentsiya signalizatsiya yo'llarida ishtirok etadi,"PTPN11 (Protein Tyrosine Phosphatase Non-Receiver Type 11) Фосфатаза, участвующая в сигнальных путях роста и дифференцировки клеток",PTPN11 (Protein Tyrosine Phosphatase Non-Receiver Type 11) Phosphatase involved in cell growth and differentiation signaling pathways
+#cancr0005.00145,RAD50 (RAD50 Double Strand Break Repair Protein) Ikki zanjirli DNK uzilishlarini tiklash va genomik barqarorlikni saqlashda ishtirok etadigan oqsil.,"RAD50 (RAD50 Double Strand Break Repair Protein)Белок, участвующий в репарации двухцепочечных разрывов ДНК и поддержании геномной стабильности.",RAD50 (RAD50 Double Strand Break Repair Protein) A protein involved in the repair of double-strand DNA breaks and maintaining genomic stability.
+#cancr0005.00146,RAD51 (RAD51 rekombinaz) Gomologik rekombinatsiya va DNKni tiklashda ishtirok etadigan oqsil.,"RAD51 (RAD51 Recombinase) Белок, участвующий в гомологичной рекомбинации и репарации ДНК.",RAD51 (RAD51 Recombinase) A protein involved in homologous recombination and DNA repair.
+#cancr0005.00147,RAD51C (RAD51 Paralog C) Gomologik rekombinatsiya va DNKni tiklashda ishtirok etadigan oqsil.,"RAD51C (RAD51 Paralog C) Белок, участвующий в гомологичной рекомбинации и репарации ДНК.",RAD51C (RAD51 Paralog C) A protein involved in homologous recombination and DNA repair.
+#cancr0005.00148,RAD51D (RAD51 Paralog D) Gomologik rekombinatsiya va DNKni tiklashda ishtirok etadigan oqsil.,"RAD51D (RAD51 Paralog D) Белок, участвующий в гомологичной рекомбинации и репарации ДНК.",RAD51D (RAD51 Paralog D) A protein involved in homologous recombination and DNA repair.
+#cancr0005.00149,"RAF1 (Raf-1 proto-onkogen, serin/treonin kinaz) kinaz hujayra o'sishi va differentsiatsiyasini tartibga solishda ishtirok etadi.","RAF1 (Raf-1 Proto-Oncogene, Serine/Threonine Kinase) Киназа, участвующая в регуляции клеточного роста и дифференцировки.","RAF1 (Raf-1 Proto-Oncogene, Serine/Threonine Kinase) A kinase involved in the regulation of cell growth and differentiation."
+#cancr0005.00150,RASAL1 (RAS Protein faollashtiruvchisi kabi) Ras signalizatsiya yo'llarini salbiy tartibga soluvchi protein,"RASAL1 (RAS Protein Activator Like 1) Белок, негативно регулирующий сигнальные пути Ras",RASAL1 (RAS Protein Activator Like 1) A protein that negatively regulates Ras signaling pathways
+#cancr0005.00151,RB1 (RB Transkripsiyali Korepressor 1) Hujayra siklini tartibga soluvchi o'simta bostiruvchi oqsil.,"RB1 (RB Transcriptional Corepressor 1) Белок-супрессор опухолей, регулирующий клеточный цикл.",RB1 (RB Transcriptional Corepressor 1) A tumor suppressor protein that regulates the cell cycle.
+#cancr0005.00152,RECQL (RecQ Like Helicase) Helikaz DNKni tiklash va genomik barqarorlikni saqlashda ishtirok etadi,"RECQL (RecQ Like Helicase) Геликаза, участвующая в репарации ДНК и поддержании геномной стабильности",RECQL (RecQ Like Helicase) A helicase involved in DNA repair and maintaining genomic stability
+#cancr0005.00153,RECQL4 (RecQ Like Helicase 4) Helikaz DNKni tiklashda ishtirok etadi,"RECQL4 (RecQ Like Helicase 4) Геликаза, участвующая в репарации ДНК",RECQL4 (RecQ Like Helicase 4) A helicase involved in DNA repair
+#cancr0005.00154,REST (RE1 o'chirish transkripsiya faktori) asab tizimi uchun muhim genlar ifodasini tartibga soluvchi transkripsiya omili,"REST (RE1 Silencing Transcription Factor)  Транскрипционный фактор, регулирующий экспрессию генов, важных для нервной системы",REST (RE1 Silencing Transcription Factor) A transcription factor that regulates the expression of genes important for the nervous system
+#cancr0005.00155,RET (Ret proto-onkogen) tirozin kinaz retseptorlari asab tizimi va buyraklar rivojlanishida ishtirok etadi.,"RET (Ret Proto-Oncogene) Рецептор тирозинкиназы, участвующий в развитии нервной системы и почек.",RET (Ret Proto-Oncogene) A tyrosine kinase receptor involved in the development of the nervous system and kidneys.
+#cancr0005.00156,RHBDF2 (Rhomboid 5 Gomolog 2) Yallig'lanish reaktsiyasini va yarani davolashni tartibga solishda ishtirok etadigan oqsil.,"RHBDF2 (Rhomboid 5 Homolog 2) Белок, участвующий в регуляции воспалительного ответа и заживлении ран.",RHBDF2 (Rhomboid 5 Homolog 2) A protein involved in the regulation of the inflammatory response and wound healing.
+#cancr0005.00157,RINT1 (RAD50 Interactor 1) DNKni tiklash va genomik barqarorlikni saqlashda ishtirok etadigan oqsil.,"RINT1 (RAD50 Interactor 1) Белок, участвующий в репарации ДНК и поддержании геномной стабильности.",RINT1 (RAD50 Interactor 1) A protein involved in DNA repair and maintenance of genomic stability.
+#cancr0005.00158,RNASEL (ribonukleaz L) Endonukleaz antiviral javobda ishtirok etadi,"RNASEL (Ribonuclease L) Эндонуклеаза, участвующая в антивирусном ответе",RNASEL (Ribonuclease L) An endonuclease involved in the antiviral response
+#cancr0005.00159,"RNF43 (Ring Finger Protein 43) E3 ubiquitin ligaza oqsili bo'lib, Wnt signalizatsiya yo'lini tartibga solishda ishtirok etadi.","RNF43 (Ring Finger Protein 43) E3-убиквитинлигазный белок, участвующий в регуляции сигнального пути Wnt.",RNF43 (Ring Finger Protein 43) An E3-ubiquitin ligase protein involved in the regulation of the Wnt signaling pathway.
+#cancr0005.00160,RPS20 (Ribosomal Protein S20) Protein ribosoma biogenezida ishtirok etadi,"RPS20 (Ribosomal Protein S20) Белок, участвующий в биогенезе рибосом",RPS20 (Ribosomal Protein S20) A protein involved in ribosome biogenesis
+#cancr0005.00161,RRAS (Related RAS Viral (R-Ras) onkogen homologi) Hujayra o'sishi va differentsiatsiyasini tartibga solishda ishtirok etadigan oqsil.,"RRAS (Related RAS Viral (R-Ras) Oncogene Homolog) Белок, участвующий в регуляции клеточного роста и дифференцировки.",RRAS (Related RAS Viral (R-Ras) Oncogene Homolog) A protein involved in the regulation of cell growth and differentiation.
+#cancr0005.00162,RTEL1 (Telomer cho'zilishi helikazining regulyatori 1) Helikaz telomer uzunligi va DNKni ta'mirlashda ishtirok etadi.,"RTEL1 (Regulator Of Telomere Elongation Helicase 1) Геликаза, участвующая в поддержании теломерной длины и репарации ДНК.",RTEL1 (Regulator Of Telomere Elongation Helicase 1) A helicase involved in the maintenance of telomere length and DNA repair.
+#cancr0005.00163,RUNX1 (Runt bilan bog'liq transkripsiya omili 1) gematopoetik tizimning rivojlanishida muhim rol o'ynaydigan transkripsiya omili,"RUNX1 (Runt-Related Transcription Factor 1) Транскрипционный фактор, играющий важную роль в развитии кроветворной системы",RUNX1 (Runt-Related Transcription Factor 1) A transcription factor that plays an important role in the development of the hematopoietic system
+#cancr0005.00164,Hujayra o'sishi va ko'payishini tartibga solishda ishtirok etadigan SAMD9L (9-o'xshash Steril Alpha Motif Domeni) oqsili,"SAMD9L (Sterile Alpha Motif Domain Containing 9-Like) Белок, участвующий в регуляции роста и пролиферации клеток",SAMD9L (Sterile Alpha Motif Domain Containing 9-Like) A protein involved in the regulation of cell growth and proliferation
+#cancr0005.00165,SBDS (Shvachman-Bodian-Diamond sindromi) ribosoma biogenezi va hujayra o'sishida ishtirok etadigan oqsil,"SBDS (Shwachman-Bodian-Diamond Syndrome) Белок, участвующий в биогенезе рибосом и клеточном росте",SBDS (Shwachman-Bodian-Diamond Syndrome) A protein involved in ribosome biogenesis and cell growth
+#cancr0005.00166,SCG5 (Secretogranin V) Neyropeptidlar va gormonlarni qayta ishlash va saralashda ishtirok etadigan oqsil.,"SCG5 (Secretogranin V) Белок, участвующий в процессинге и сортировке нейропептидов и гормонов.",SCG5 (Secretogranin V) A protein involved in the processing and sorting of neuropeptides and hormones.
+#cancr0005.00167,SDHA (Suksinat dehidrogenaza kompleksi Flavoprotein subbirligi A) Krebs sikli va nafas olish zanjiridagi asosiy ferment bo'lgan suksinat dehidrogenazning sub birligi.,"SDHA (Succinate Dehydrogenase Complex Flavoprotein Subunit A) Субъединица сукцинатдегидрогеназы, ключевого фермента цикла Кребса и дыхательной цепи","SDHA (Succinate Dehydrogenase Complex Flavoprotein Subunit A) Subunit of succinate dehydrogenase, a key enzyme of the Krebs cycle and respiratory chain"
+#cancr0005.00168,SDHAF2 (Suksinatdehidrogenaza kompleksining yig'ilish omili 2) Suksinat dehidrogenaza yig'ilishida ishtirok etadigan oqsil,"SDHAF2 (Succinate Dehydrogenase Complex Assembly Factor 2) Белок, участвующий в сборке сукцинатдегидрогеназы",SDHAF2 (Succinate Dehydrogenase Complex Assembly Factor 2) Protein involved in the assembly of succinate dehydrogenase
+#cancr0005.00169,SDHB (suksinat dehidrogenaza kompleksi temir oltingugurt bo'linmasi B) suksinat dehidrogenaza subbirligi,SDHB (Succinate Dehydrogenase Complex Iron Sulfur Subunit B) Субъединица сукцинатдегидрогеназы,SDHB (Succinate Dehydrogenase Complex Iron Sulfur Subunit B) Subunit of succinate dehydrogenase
+#cancr0005.00170,SDHC (suksinat dehidrogenaza kompleksi sub birligi C) suksinat dehidrogenaza subbirligi,SDHC (Succinate Dehydrogenase Complex Subunit C) Субъединица сукцинатдегидрогеназы,SDHC (Succinate Dehydrogenase Complex Subunit C) Subunit of succinate dehydrogenase
+#cancr0005.00171,SDHD (suksinat dehidrogenaza kompleksi bo'linmasi D) suksinat dehidrogenaza subbirligi,SDHD (Succinate Dehydrogenase Complex Subunit D) Субъединица сукцинатдегидрогеназы,SDHD (Succinate Dehydrogenase Complex Subunit D) Subunit of succinate dehydrogenase
+#cancr0005.00172,SEC23B (Sec23 Homolog B) Vesikulyar tashishda ishtirok etadigan oqsil,"SEC23B (Sec23 Homolog B) Белок, участвующий в везикулярном транспорте",SEC23B (Sec23 Homolog B) Protein involved in vesicular transport
+#cancr0005.00173,SH2D1A (SH2 domenini o'z ichiga olgan 1A) protein immun hujayra signalizatsiyasida ishtirok etadi,"SH2D1A (SH2 Domain Containing 1A) Белок, участвующий в сигнализации иммунных клеток",SH2D1A (SH2 Domain Containing 1A) Protein involved in immune cell signaling
+#cancr0005.00174,Ras-MAPK signalizatsiya yo'lida ishtirok etadigan SHOC2 (SHOC2 Leucine Rich Repeat Scaffold Protein) oqsili,"SHOC2 (SHOC2 Leucine Rich Repeat Scaffold Protein) Белок, участвующий в сигнальном пути Ras-MAPK",SHOC2 (SHOC2 Leucine Rich Repeat Scaffold Protein) A protein involved in the Ras-MAPK signaling pathway
+#cancr0005.00175,SLX4 (SLX4 tuzilmasiga xos endonukleaz subunit) DNK taʼmirida va xromosomalarning kesishishida ishtirok etadigan oqsil,"SLX4 (SLX4 Structure-Specific Endonuclease Subunit) Белок, участвующий в репарации ДНК и перекрестках хромосом",SLX4 (SLX4 Structure-Specific Endonuclease Subunit) A protein involved in DNA repair and chromosome crossovers
+#cancr0005.00176,SMAD4 (SMAD oila a'zosi 4) TGF-beta signalizatsiya yo'lida ishtirok etadigan transkripsiya omili.,"SMAD4 (SMAD Family Member 4)  Транскрипционный фактор, участвующий в сигнальном пути TGF-beta.",SMAD4 (SMAD Family Member 4) A transcription factor involved in the TGF-beta signaling pathway.
+#cancr0005.00177,"SMARCA4 (SWI/SNF bilan bog'liq, matritsa bilan bog'liq, xromatinning aktinga bog'liq regulyatori, A subfamily, a'zo 4) Xromatinni qayta qurishda ishtirok etadigan oqsil","SMARCA4 (SWI/SNF Related, Matrix Associated, Actin Dependent Regulator Of Chromatin, Subfamily A, Member 4) Белок, участвующий в ремоделировании хроматина","SMARCA4 (SWI/SNF Related, Matrix Associated, Actin Dependent Regulator Of Chromatin, Subfamily A, Member 4) Protein involved in chromatin remodeling"
+#cancr0005.00178,"SMARCB1 (SWI/SNF bilan bog'liq, matritsa bilan bog'liq, xromatinning aktinga bog'liq regulyatori, B subfamily, a'zo 1) Xromatinni qayta qurishda ishtirok etadigan oqsil","SMARCB1 (SWI/SNF Related, Matrix Associated, Actin Dependent Regulator Of Chromatin, Subfamily B, Member 1) Белок, участвующий в ремоделировании хроматина","SMARCB1 (SWI/SNF Related, Matrix Associated, Actin Dependent Regulator Of Chromatin, Subfamily B, Member 1) Protein involved in chromatin remodeling"
+#cancr0005.00179,"SMARCE1 (SWI/SNF bilan bog'liq, matritsa bilan bog'liq, xromatinning aktinga bog'liq regulyatori, E subfamily, a'zo 1) Xromatinni qayta qurishda ishtirok etadigan oqsil.","SMARCE1 (SWI/SNF Related, Matrix Associated, Actin Dependent Regulator Of Chromatin, Subfamily E, Member 1) Белок, участвующий в ремоделировании хроматина.","SMARCE1 (SWI/SNF Related, Matrix Associated, Actin Dependent Regulator Of Chromatin, Subfamily E, Member 1) Protein involved in chromatin remodeling."
+#cancr0005.00180,SOS1 (SOS Ras/Rac Guanin Nukleotid almashinuvi omili 1) Ras faollashuvida ishtirok etadigan oqsil. Mutatsiyalar Noonan sindromi bilan bog'liq.,"SOS1 (SOS Ras/Rac Guanine Nucleotide Exchange Factor 1) Белок, участвующий в активации Ras. Мутации связаны с синдромом Нунан.",SOS1 (SOS Ras/Rac Guanine Nucleotide Exchange Factor 1) A protein involved in Ras activation. Mutations are associated with Noonan syndrome.
+#cancr0005.00181,SOS2 (SOS Ras/Rac guanin nukleotid almashinuvi omili 2) Ras faollashuvida ishtirok etgan oqsil,"SOS2 (SOS Ras/Rac Guanine Nucleotide Exchange Factor 2) Белок, участвующий в активации Ras",SOS2 (SOS Ras/Rac Guanine Nucleotide Exchange Factor 2) A protein involved in Ras activation
+#cancr0005.00182,SPINK1 (Serine Peptidase Inhibitor Kazal Type 1) Serin proteazalarini inhibe qiluvchi oqsil.,"SPINK1 (Serine Peptidase Inhibitor Kazal Type 1) Белок, ингибирующий сериновые протеазы.",SPINK1 (Serine Peptidase Inhibitor Kazal Type 1) A protein that inhibits serine proteases.
+#cancr0005.00183,SPRED1 (Sprouty Related EVH1 Domain Containing 1) Ras/MAPK signalizatsiya yo'lini inhibe qiluvchi oqsil. Mutatsiyalar Legus sindromi bilan bog'liq.,"SPRED1 (Sprouty Related EVH1 Domain Containing 1) Белок, ингибирующий сигнальные пути Ras/MAPK. Мутации связаны с синдромом Легуса.",SPRED1 (Sprouty Related EVH1 Domain Containing 1) A protein that inhibits Ras/MAPK signaling pathways. Mutations are associated with Legus syndrome.
+#cancr0005.00184,SRGAP1 (SLIT-ROBO Rho GTPase faollashtiruvchi oqsil 1) Aktin sitoskeletini va hujayra migratsiyasini tartibga solishda ishtirok etadigan oqsil.,"SRGAP1 (SLIT-ROBO Rho GTPase Activating Protein 1)  Белок, участвующий в регуляции актинового цитоскелета и клеточной миграции.",SRGAP1 (SLIT-ROBO Rho GTPase Activating Protein 1) A protein involved in the regulation of the actin cytoskeleton and cell migration.
+#cancr0005.00185,SRP72 (Signal Recognition Particle 72) Ribosoma biogenezi va translyatsiyasida ishtirok etadigan oqsil. Mutatsiyalar aplastik anemiya bilan bog'liq bo'lishi mumkin.,"SRP72 (Signal Recognition Particle 72) Белок, участвующий в биогенезе рибосом и трансляции. Мутации могут быть связаны с апластической анемией.",SRP72 (Signal Recognition Particle 72) A protein involved in ribosome biogenesis and translation. Mutations may be associated with aplastic anemia.
+#cancr0005.00186,STAT3 (Signal Transducer and activator Of Transkripsiya 3) Hujayra o'sishi va omon qolishini tartibga solishda ishtirok etadigan transkripsiya omili. Mutatsiyalar giper IgE sindromi (Job sindromi) va turli xil saraton turlari bilan bog'liq.,"STAT3 (Signal Transducer And Activator Of Transcription 3)Транскрипционный фактор, участвующий в регуляции клеточного роста и выживания. Мутации связаны с гипер IgE синдромом (синдром Джоба) и различными видами рака.",STAT3 (Signal Transducer And Activator Of Transcription 3) A transcription factor involved in the regulation of cell growth and survival. Mutations are associated with hyper IgE syndrome (Job's syndrome) and various cancers.
+#cancr0005.00187,STK11 (Serin/Treonin Kinaz 11) Uyali metabolizm va o'sishda rol o'ynaydigan kinaz. Mutatsiyalar Peutz-Jegers sindromini keltirib chiqaradi va turli xil saraton kasalliklari xavfini oshiradi.,"STK11 (Serine/Threonine Kinase 11) Киназа, играющая роль в клеточном метаболизме и росте. Мутации вызывают синдром Пейтца-Егерса и связаны с повышенным риском различных видов рака.",STK11 (Serine/Threonine Kinase 11) A kinase that plays a role in cellular metabolism and growth. Mutations cause Peutz-Jeghers syndrome and are associated with an increased risk of various cancers.
+#cancr0005.00188,SUFU (eritilgan gomologni bostiruvchi) Kirpi signalizatsiya yo'lini inhibe qiluvchi oqsil. Mutatsiyalar medulloblastomalar va boshqa o'smalar bilan bog'liq.,"SUFU (Suppressor Of Fused Homolog) Белок, ингибирующий сигнальный путь Hedgehog. Мутации связаны с медуллобластомами и другими опухолями.",SUFU (Suppressor Of Fused Homolog) A protein that inhibits the Hedgehog signaling pathway. Mutations are associated with medulloblastomas and other tumors.
+#cancr0005.00189,TERC telomeraza RNK komponenti) telomera uzunligini saqlashda rol o'ynaydigan telomeraza komponenti. Mutatsiyalar diskeroz konjenit va boshqa telomeropatiyalar bilan bog'liq bo'lishi mumkin.,"TERC Telomerase RNA Component) Компонент теломеразы, играющий роль в поддержании длины теломер. Мутации могут быть связаны с дискерозисом конгенита и другими теломеропатиями.",TERC Telomerase RNA Component) A component of telomerase that plays a role in maintaining telomere length. Mutations may be associated with dyskerosis congenita and other telomeropathies.
+#cancr0005.00190,TERT (telomeraza teskari transkriptaza) telomerazaning katalitik sub birligi. Mutatsiyalar saratonning turli shakllari va telomerlarning qisqarishi bilan bog'liq kasalliklar bilan bog'liq.,"TERT (Telomerase Reverse Transcriptase) Каталитическая субъединица теломеразы. Мутации связаны с различными формами рака и заболеваниями, связанными с укорочением теломер.",TERT (Telomerase Reverse Transcriptase) The catalytic subunit of telomerase. Mutations are associated with various forms of cancer and diseases associated with telomere shortening.
+#cancr0005.00191,TINF2 (TERF1-O'zaro ta'sir qiluvchi yadro omili 2) Telomer tuzilishini saqlashda ishtirok etadigan oqsil. Mutatsiyalar diskerozli konjenit va boshqa telomeropatiyalarga olib kelishi mumkin.,"TINF2 (TERF1-Interacting Nuclear Factor 2) Белок, участвующий в поддержании структуры теломер. Мутации могут вызывать дискерозис конгенита и другие теломеропатии.",TINF2 (TERF1-Interacting Nuclear Factor 2) A protein involved in maintaining telomere structure. Mutations can cause dyskerosis congenita and other telomeropathies.
+#cancr0005.00192,TJP2 (Tight Junction Protein 2) Qattiq hujayralararo birikmalar hosil bo'lishida ishtirok etadigan oqsil. Mutatsiyalar progressiv oilaviy kolestaz bilan bog'liq.,"TJP2 (Tight Junction Protein 2) Белок, участвующий в формировании плотных межклеточных контактов. Мутации связаны с прогрессирующей семейной холестазой.",TJP2 (Tight Junction Protein 2) A protein involved in the formation of tight intercellular junctions. Mutations are associated with progressive familial cholestasis.
+#cancr0005.00193,TMEM127 (Transmembran oqsili 127) Hujayra o'sishini tartibga solishda rol o'ynaydigan oqsil. Mutatsiyalar feokromotsitomalar va paragangliomalar bilan bog'liq.,"TMEM127 (Transmembrane Protein 127) Белок, играющий роль в регуляции клеточного роста. Мутации связаны с феохромоцитомами и параганглиомами.",TMEM127 (Transmembrane Protein 127) A protein that plays a role in the regulation of cell growth. Mutations are associated with pheochromocytomas and paragangliomas.
+#cancr0005.00194,"TP53 (Tumor Protein p53) O'smani bostirish, hujayra siklini tartibga solish va apoptozda asosiy rol o'ynaydigan transkripsiya omili. Mutatsiyalar saratonning ko'plab shakllari bilan bog'liq.","TP53 (Tumor Protein p53) Транскрипционный фактор, играющий ключевую роль в супрессии опухолей, регуляции клеточного цикла и апоптозе. Мутации связаны с многочисленными формами рака.","TP53 (Tumor Protein p53) A transcription factor that plays a key role in tumor suppression, cell cycle regulation, and apoptosis. Mutations are associated with numerous forms of cancer."
+#cancr0005.00195,TSC1 (tuberoz skleroz 1) Hujayra o'sishi va bo'linishini tartibga solishda ishtirok etadigan oqsil. Mutatsiyalar turli organlarda yaxshi xulqli o'smalar bilan ajralib turadigan tuberous sklerozni keltirib chiqaradi.,"TSC1 (Tuberous Sclerosis 1) Белок, участвующий в регуляции клеточного роста и деления. Мутации вызывают туберозный склероз, характеризующийся доброкачественными опухолями в различных органах.","TSC1 (Tuberous Sclerosis 1) A protein involved in the regulation of cell growth and division. Mutations cause tuberous sclerosis, characterized by benign tumors in various organs."
+#cancr0005.00196,TSC2 (Tuberous sklerosis 2) mTOR signalizatsiya yo'lini inhibe qilish uchun TSC1 bilan o'zaro ta'sir qiluvchi oqsil. Mutatsiyalar ham tuberous sklerozga olib keladi.,"TSC2 (Tuberous Sclerosis 2) Белок, взаимодействующий с TSC1 для ингибирования mTOR сигнального пути. Мутации также вызывают туберозный склероз.",TSC2 (Tuberous Sclerosis 2) A protein that interacts with TSC1 to inhibit the mTOR signaling pathway. Mutations also cause tuberous sclerosis.
+#cancr0005.00197,"UBE2T (Ubiquitin Conjugating Enzyme E2 T) Ubiquitinatsiya jarayonida ishtirok etadigan, oqsil parchalanishi va hujayra jarayonlarini tartibga solishlik uchun muhim bo'lgan oqsil. Mutatsiyalar Fankoni anemiya sindromi bilan bog'liq.","UBE2T (Ubiquitin Conjugating Enzyme E2 T) Белок, участвующий в процессе убиквитинирования, важном для деградации белков и регуляции клеточных процессов. Мутации связаны с синдромом Fanconi anemia.","UBE2T (Ubiquitin Conjugating Enzyme E2 T) A protein involved in the ubiquitination process, important for protein degradation and regulation of cellular processes. Mutations are associated with Fanconi anemia syndrome."
+#cancr0005.00198,UROD (uroporfirinogen dekarboksilaza) Gem biosintezida ishtirok etadigan ferment. Mutatsiyalar porfiriya kutana tardega olib keladi.,"UROD (Uroporphyrinogen Decarboxylase) Фермент, участвующий в биосинтезе гема. Мутации вызывают порфирию кутану тарду.",UROD (Uroporphyrinogen Decarboxylase) An enzyme involved in heme biosynthesis. Mutations cause porphyria cutanea tardu.
+#cancr0005.00199,"VHL (Von Hippel-Lindau o'simtalarini bostiruvchi) gipoksiyani tartibga solishda ishtirok etadigan o'simta bostiruvchi oqsil. Mutatsiyalar fon Hippel-Lindau kasalligini keltirib chiqaradi, bu ko'plab o'smalar bilan tavsiflanadi.","VHL (Von Hippel-Lindau Tumor Suppressor) Белок-супрессор опухолей, участвующий в регуляции гипоксии. Мутации вызывают болезнь фон Гиппеля-Линдау, характеризующуюся множественными опухолями.","VHL (Von Hippel-Lindau Tumor Suppressor) A tumor suppressor protein involved in the regulation of hypoxia. Mutations cause von Hippel-Lindau disease, characterized by multiple tumors."
+#cancr0005.00200,WAS (Wiskott-Aldrich sindromi) - aktin sitoskeletini tartibga solishda ishtirok etadigan oqsil. Mutatsiyalar immunitet tanqisligi va trombotsitopeniya bilan tavsiflangan Wiskott-Aldrich sindromini keltirib chiqaradi.,"WAS (Wiskott-Aldrich Syndrome)Белок, участвующий в регуляции актинового цитоскелета. Мутации вызывают синдром Вискотта-Олдрича, характеризующийся иммунодефицитом и тромбоцитопенией.","WAS (Wiskott-Aldrich Syndrome) A protein involved in the regulation of the actin cytoskeleton. Mutations cause Wiskott-Aldrich syndrome, characterized by immunodeficiency and thrombocytopenia."
+#cancr0005.00201,WNT10A (Wnt Oila a'zosi 10A) embrion rivojlanishi va hujayra proliferatsiyasi uchun muhim bo'lgan Wnt signalizatsiya yo'lida ishtirok etadigan oqsil. Mutatsiyalar turli xil rivojlanish anomaliyalari bilan bog'liq bo'lishi mumkin.,"WNT10A (Wnt Family Member 10A)Белок, участвующий в сигнальном пути Wnt, важном для эмбрионального развития и клеточной пролиферации. Мутации могут быть связаны с различными аномалиями развития.","WNT10A (Wnt Family Member 10A)A protein involved in the Wnt signaling pathway, which is important for embryonic development and cell proliferation. Mutations can be associated with various developmental abnormalities."
+#cancr0005.00202,"WRAP53 (TP53ga WD Repeat Containing Antisense to TP53) Telomeraza stabilizatsiyasi va lokalizatsiyasini tartibga soluvchi, shuningdek, DNKni tiklash jarayonida rol o'ynaydigan oqsil. Mutatsiyalar turli kasalliklar, jumladan, diskeroz konjenit bilan bog'liq.","WRAP53 (WD Repeat Containing Antisense to TP53)Белок, регулирующий стабилизацию и локализацию теломеразы, а также играющий роль в процессе репарации ДНК. Мутации связаны с различными заболеваниями, включая дискерозис конгенита.","WRAP53 (WD Repeat Containing Antisense to TP53)A protein that regulates telomerase stabilization and localization, and also plays a role in DNA repair. Mutations are associated with various diseases, including dyskerosis congenita."
+#cancr0005.00203,"WRN Verner sindromi RecQ Helicase kabi) Helikaz genomik barqarorlikni saqlashda ishtirok etadi. Mutatsiyalar Verner sindromini keltirib chiqaradi, bu erta qarish va saraton xavfining oshishi bilan tavsiflanadi.","WRN Werner Syndrome RecQ Like Helicase) Геликаза, участвующая в поддержании геномной стабильности. Мутации вызывают синдром Вернера, характеризующийся преждевременным старением и повышенным риском рака.","WRN Werner Syndrome RecQ Like Helicase) A helicase involved in maintaining genomic stability. Mutations cause Werner syndrome, characterized by premature aging and an increased risk of cancer."
+#cancr0005.00204,WT1 (Wilms Tumor 1) Buyrak va jinsiy bez rivojlanishida rol o'ynaydigan transkripsiya omili. Mutatsiyalar Wilms shishi va boshqa sindromlar bilan bog'liq.,"WT1 (Wilms Tumor 1)Транскрипционный фактор, играющий роль в развитии почек и гонад. Мутации связаны с опухолью Вильмса и другими синдромами.",WT1 (Wilms Tumor 1)A transcription factor that plays a role in the development of the kidneys and gonads. Mutations are associated with Wilms tumor and other syndromes.
+#cancr0005.00205,"XPA (Xeroderma Pigmentosum, Komplementatsiya guruhi A) ultrabinafsha nurlanish natijasida kelib chiqqan DNK shikastlanishini tiklashda ishtirok etadigan oqsil. Mutatsiyalar ultrabinafsha nurlanishiga yuqori sezuvchanlik va teri saratoni xavfi bilan tavsiflangan kseroderma pigmentozini keltirib chiqaradi.","XPA (Xeroderma Pigmentosum, Complementation Group A) Белок, участвующий в репарации повреждений ДНК, вызванных ультрафиолетовым излучением. Мутации вызывают ксеродерму пигментозу, характеризующуюся повышенной чувствительностью к ультрафиолету и риском рака кожи.","XPA (Xeroderma Pigmentosum, Complementation Group A) A protein involved in the repair of DNA damage caused by ultraviolet radiation. Mutations cause xeroderma pigmentosis, characterized by increased sensitivity to ultraviolet radiation and the risk of skin cancer."
+#cancr0005.00206,"XPC (Xeroderma Pigmentosum, Komplementatsiya guruhi C) DNKning nukleotidlar eksizyonini tiklash jarayonida ishtirok etadigan oqsil. Mutatsiyalar kseroderma pigmentozini ham keltirib chiqaradi.","XPC (Xeroderma Pigmentosum, Complementation Group C) Белок, участвующий в процессе нуклеотидной эксцизионной репарации ДНК. Мутации также вызывают ксеродерму пигментозу.","XPC (Xeroderma Pigmentosum, Complementation Group C) A protein involved in the process of nucleotide excision repair of DNA. Mutations also cause xeroderma pigmentosis."
+#cancr0005.00207,XRCC2 (X-Ray Repair Cross Complementing 2) Gomologik rekombinatsiya va DNKni tiklashda ishtirok etadigan oqsil. Mutatsiyalar turli xil saraton turlarini rivojlanish xavfi bilan bog'liq bo'lishi mumkin.,"XRCC2 (X-Ray Repair Cross Complementing 2)Белок, участвующий в гомологичной рекомбинации и репарации ДНК. Мутации могут быть связаны с повышенным риском различных видов рака.",XRCC2 (X-Ray Repair Cross Complementing 2) A protein involved in homologous recombination and DNA repair. Mutations may be associated with an increased risk of various cancers.
+#cancr0005.00208,"XRCC3 (X-Ray Repair Cross Complementing 3) Gomologik rekombinatsiya va DNKni tiklashda ishtirok etadigan oqsil. Mutatsiyalar, shuningdek, saratonning har xil turlarini rivojlanish xavfi bilan bog'liq bo'lishi mumkin.","XRCC3 (X-Ray Repair Cross Complementing 3)Белок, участвующий в гомологичной рекомбинации и репарации ДНК. Мутации также могут быть связаны с повышенным риском различных видов рака.",XRCC3 (X-Ray Repair Cross Complementing 3) A protein involved in homologous recombination and DNA repair. Mutations may also be associated with an increased risk of various cancers.
+#cancr0012.00000,IHCga xos gormonlar immunohistokimyosi,ИГХ специфическое_Гормоны иммуногистохимии,IHC specific_Immunohistochemistry hormones
+#cancr0012.00001,Estrogen,Эстроген,Estrogen
+#cancr0012.00002,Progesteron,Прогестерон,Progesterone
+#cancr0012.00003,har-2 neu,her-2 neu,her-2 neu
+#cancr0012.00004,Ki-67,Ki-67,Ki-67
+#cancr0012.00005,PD-L1,PD-L1,PD-L1
+#cancr0013.00000,Tadqiqot nomi,Наименование Исследования,Research Title
+#cancr0013.00001,IHC-ga xos,ИГХ специфические,IHC specific
+#cancr0013.00002,IHC o'ziga xos bo'lmagan,ИГХ неспецифические,IHC non-specific
+#cancr0013.00003,TNM tasnifi,TNM классификация,TNM classification
+#cancr0013.00004,Molekulyar genetik tadqiqotlar,Молекулярно-генетическое исследование,Molecular genetic testing
+#cancr0022.00000,Onkologik operatsiyalar,Операции онкологии,Oncology operations
+#cancr0022.00001,oddiy sut amputatsiyasi,простая ампутация молочной железы,simple amputation of the mammary gland
+#cancr0022.00002,limfa tugunlari bilan ko'krakning radikal rezektsiyasi,радикальная резекция молочной железы с лимфодиссекцией,radical resection of the mammary gland with lymph node dissection
+#cancr0022.00003,ko'krak lumpektomiyasi,лампэктомия молочной железы,lumpectomy of the mammary gland
+#cancr0022.00004,limfa tugunlari diseksiyasi bilan ko'krakning palliativ amputatsiyasi,паллиативная ампутация молочной железы с лимфодиссекцией,palliative amputation of the mammary gland with lymph node dissection
+#cancr0022.00005,radikal rezektsiyadan keyin TDL qopqog'i bilan plastik jarrohlik,пластическая операция ТДЛ лоскутом после радикальной резекции,plastic surgery with TDL flap after radical resection
+#cancr0022.00006,xo'ppoz yoki kist bo'shlig'ini drenajlash,дренирование абсцесса или полости кисты,abscess or cyst cavity drainage
+#cancr0022.00007,adrenalektomiya,адреналэктомия,adrenalectomy
+#cancr0022.00008,gastrektomiya,гастрэктомия,gastrectomy
+#cancr0022.00009,jigar rezektsiyasi,резекция печени,liver resection
+#cancr0022.00010,ostoma,наложение стомы,ostomy
+#cancr0022.00011,o'n ikki barmoqli ichak rezektsiyasi,резекция двенадцатиперстной кишки,resection of the duodenum
+#cancr0022.00012,ingichka ichak rezektsiyasi,резекция тонкого кишечника,small intestine resection
+#cancr0022.00013,kengaytirilgan gastrektomiya,расширенная гастрэктомия,extended gastrectomy
+#cancr0022.00014,"kengaytirilgan gastrektomiya, qizilo'ngachning n/3 qismini rezektsiya qilish","расширенная гастрэктомия, с резекцией н/3 части пищевода","extended gastrectomy, with resection of the lower third of the esophagus"
+#cancr0022.00015,hemigeptektomiya,гемигепатэктомия,hemihepatectomy
+#cancr0022.00016,jigardan tashqari kanallarni rezektsiya qilish,резекция внепеченочных протоков,resection of extrahepatic ducts
+#cancr0022.00017,kombinatsiyalangan gastrektomiya,комбинированная гастрэктомия,combined gastrectomy
+#cancr0022.00018,qizilo'ngachning n/3 qismini rezektsiya qilish bilan kombinatsiyalangan gastrektomiya,"комбинированная гастрэктомия, с резекцией н/3 части пищевода","combined gastrectomy, with resection of the lower third of the esophagus"
+#cancr0022.00019,retroperitoneal noorgan o'smalarini olib tashlash,удаление забрюшинных неорганных опухолей,removal of retroperitoneal non-organ tumors
+#cancr0022.00020,distal subtotal gastrektomiya,дистально субтотальная резекция желудка,distal subtotal gastrectomy
+#cancr0022.00021,oshqozon osti bezi dumini rezektsiya qilish + splenektomiya,резекция хвоста поджелудочной железы + спленэктомия,resection of the tail of the pancreas + splenectomy
+#cancr0022.00022,proksimal subtotal gastrektomiya,проксимально субтотальная резекция желудка,proximal subtotal gastrectomy
+#cancr0022.00023,qorin old devori shishini olib tashlash,удаление опухоли передней брюшной стенки,removal of tumor of the anterior abdominal wall
+#cancr0022.00024,"laparotomiya, yopishishlarni ajratish (yopishqoqlarni ajratish)","лапаротомия, отделение спаек (разъединение спаек)","laparotomy, separation of adhesions (disconnection of adhesions)"
+#cancr0022.00025,oshqozon devorining iqtisodiy rezektsiyasi,экономная резекция стенки желудка,economical resection of the stomach wall
+#cancr0022.00026,"oshqozon osti bezining rezektsiyasi, pankreato-gastroanastomoz","резекция поджелудочной железы, панкреато-гастроанастамоз","resection of the pancreas, pancreato-gastroanastomosis"
+#cancr0022.00027,Oshqozonni sun'iy almashtirish rezervuarini yaratish bilan gastrektomiya (1-toifa),гастрэктомия с созданием искусственного желудкозамещающего резервуара (по 1 типу),gastrectomy with creation of an artificial gastric-substituting reservoir (type 1)
+#cancr0022.00028,sun'iy oshqozonni almashtirish rezervuarini yaratish bilan gastrektomiya (2-toifa),гастрэктомия с созданием искусственного желудкозамещающего резервуара (по 2 типу),gastrectomy with creation of an artificial gastric-substituting reservoir (type 2)
+#cancr0022.00029,tikuvchi o'simta teshilishi,ушивание туморозной перфорации,suturing of tumor perforation
+#cancr0022.00030,oshqozon bo'g'inining kombinatsiyalangan ekstirpatsiyasi,комбинированная экстирпация культи желудка,combined extirpation of the gastric stump
+#cancr0022.00031,oshqozon po'stlog'ining ekstirpatsiyasi,экстирпация культи желудка,extirpation of the gastric stump
+#cancr0022.00032,oshqozonning 2/3 qismini rezektsiya qilish,резекция 2/3 части желудка,resection of 2/3 of the stomach
+#cancr0022.00033,palliativ gastrektomiya,паллиативная гастрэктомия,palliative gastrectomy
+#cancr0022.00034,palliativ distal subtotal gastrektomiya,паллиативная дистально субтотальная резекция желудка,palliative distal subtotal gastrectomy
+#cancr0022.00035,pankreatoduodenal rezektsiya (PDR),панкреатодуоденальная резекция (ПДР),pancreatoduodenal resection (PDR)
+#cancr0022.00036,"relaparotomiya, qorin bo'shlig'ining sanitariyasi, stoma","релапаротомия, санация брюшной полости, наложение стомы","relaparotomy, sanitation of the abdominal cavity, imposition stomas"
+#cancr0022.00037,splenektomiya,спленэктомия,splenectomy
+#cancr0022.00038,perkutan transhepatik xolangiostomiya (PTCHS),чрескожно-чреспеченочная холангиостомия (ЧЧХС),percutaneous transhepatic cholangiostomy (PTC)
+#cancr0022.00039,transduodenal papillektomiya,трансдуоденальная папиллэктомия,transduodenal papillectomy
+#cancr0022.00040,xoletsistektomiya,холецистэктомия,cholecystectomy
+#cancr0022.00041,qizilo'ngach-jejunal anastomozning rezektsiyasi,резекция эзофаго-еюно анастомоза,resection of esophagojejunal anastomosis
+#cancr0022.00042,transanal rektal o'smani olib tashlash,трансанальное удаление опухоли прямой кишки,transanal removal of rectal tumor
+#cancr0022.00043,ileo-ko'ndalang anastomoz bilan o'ng hemikolektomiya,правосторонняя гемиколэктомия с наложением илео-трансверзо анастомоза,right hemicolectomy with ileo-transverse anastomosis
+#cancr0022.00044,transvers-rektal anastomoz bilan chap tomonlama hemikolektomiya,левосторонняя гемиколэктомия с наложением трансверзо-ректального анастомоза,left hemicolectomy with transverse-rectal anastomosis
+#cancr0022.00045,ileo-sigma anastomozi bilan subtotal kolektomiya,субтотальная колэктомия с наложением илео-сигма анастомоза,subtotal colectomy with ileo-sigmoid anastomosis
+#cancr0022.00046,dessendo-rektal anastomoz bilan sigmoidektomiya,сигмоидэктомия с наложением десцендо-ректального анастомоза,sigmoidectomy with descendo-rectal anastomosis
+#cancr0022.00047,Hartman operatsiyasi,операция Гартмана,Hartmann's operation
+#cancr0022.00048,bir barrelli kolostoma bilan oldingi rektal rezektsiya,передняя резекция прямой кишки с наложением одноствольной колостомы,anterior resection of the rectum with single-barrel colostomy
+#cancr0022.00049,reduksiya bilan to'g'ri ichakning abdominal-anal rezektsiyasi,брюшно-анальная резекция прямой кишки с низведением,abdominoanal resection of the rectum with pull-down
+#cancr0022.00050,to'g'ri ichakning abdominoperineal ekstirpatsiyasi,брюшно-промежностная экстирпация прямой кишки,abdominoperineal extirpation of the rectum
+#cancr0022.00051,ileostomiya bilan umumiy kolektomiya,тотальная колэктомия с илеостомой,total colectomy with ileostomy
+#cancr0022.00052,ileostomiya bilan umumiy kolproektomiya,тотальная колпроэктомия с илеостомой,total colproectomy with ileostomy
+#cancr0022.00053,kolostomani anastomoz bilan yopish,закрытие колостомы с наложением анастомоза,colostomy closure with anastomosis
+#cancr0022.00054,ileorektal anastomoz bilan umumiy kolektomiya,тотальная колэктомия с наложением илео-ректального анастамоза,total colectomy with ileo-rectal anastomosis
+#cancr0022.00055,umumiy kolektomiyadan keyin ingichka ichakdan rezervuarlar yaratish (j-naych w-naych),создание резервуаров из тонкой кишки (j-nayч w-nayч) после тотальной колэктомии,creation of reservoirs from the small intestine (j-nayч w-nayч) after total colectomy
+#cancr0022.00056,"to'g'ri ichakning abdominoperineal ekstirpatsiyasidan keyin neorektum, neosfinkterni yaratish","создание неоректума, неосфинктера после брюшно-промежностной экстирпации прямой кишки","creation of neorectum, neosphincter after abdominoperineal extirpation of the rectum"
+#cancr0022.00057,dumaloq stapler yordamida anastomoz bilan to'g'ri ichakning oldingi ultra-past rezektsiyasi,передняя ультранизкая резекции прямой кишки с наложением анастамоза при помощи циркулярно-сшивающего аппарата,anterior ultra-low resection of the rectum with the imposition of anastomosis using a circular-suturing device
+#cancr0022.00058,"kolostomani, ileostomiyani olib tashlash","выведение колостомы, илеостомы","creation of colostomy, ileostomy"
+#cancr0022.00059,limfa tugunlarini kesish bilan radikal nefrektomiya,радикальная нефрэктомия с лимфодиссекцией,radical nephrectomy with lymph node dissection
+#cancr0022.00060,"limfa tugunlari diseksiyasi bilan radikal nefrektomiya, trombektomiya","радикальная нефрэктомия с лимфодиссекцией, тромбэктомия","radical nephrectomy with lymph node dissection, thrombectomy"
+#cancr0022.00061,buyrak rezektsiyasi,резекция почки,resection of the kidney
+#cancr0022.00062,palliativ nefrektomiya,паллиативная нефрэктомия,palliative nephrectomy
+#cancr0022.00063,siydik pufagi rezektsiyasi bilan nefroureterektomiya,нефруретерэктомия с резекцией мочевого пузыря,nephroureterectomy with bladder resection
+#cancr0022.00064,diagnostik laparotomiya. qayta ko'rib chiqish. drenaj.,диагностическая лапаротомия. ревизия. дренирование.,diagnostic laparotomy. revision. drainage.
+#cancr0022.00065,diagnostik laparotomiya. qayta ko'rib chiqish. drenaj. biopsiya.,диагностическая лапаротомия. ревизия. дренирование. биопсия.,diagnostic laparotomy. revision. drainage. biopsy.
+#cancr0022.00066,diagnostik laparoskopiya. qayta ko'rib chiqish. drenaj.,диагностическая лапароскопия. ревизия. дренирование.,diagnostic laparoscopy. revision. drainage.
+#cancr0022.00067,diagnostik laparoskopiya. qayta ko'rib chiqish. drenaj. biopsiya,диагностическая лапароскопия. ревизия. дренирование. биопсия,diagnostic laparoscopy. revision. drainage. biopsy
+#cancr0022.00068,relaparotomiya. qayta ko'rib chiqish. qayta tashkil etish drenaj.,релапаротомия. ревизия. санация. дренирование.,relaparotomy. revision. sanitation. drainage.
+#cancr0022.00069,Quviqning TUR,ТУР мочевого пузыря,TUR of the bladder
+#cancr0022.00070,Quviq reTUR,реТУР мочевого пузыря,retUR of the bladder
+#cancr0022.00071,siydik pufagining rezektsiyasi. epitsistostomiya.,резекция мочевого пузыря. эпицистостомия.,resection of the bladder. epicystostomy.
+#cancr0022.00072,siydik pufagini qayta ko'rib chiqish. biopsiya. epitsistostomiya.,ревизия мочевого пузыря. биопсия. эпицистостомия.,revision of the bladder. biopsy. epicystostomy.
+#cancr0022.00073,"Ikki tomondan kistprostatektomiya, ureterokutoneostomiya (UX)",цистпростатэктомия с 2-х сторон уретерокутонеостомия (укс),cystprostatectomy from both sides ureterocutoneostomy (UCS)
+#cancr0022.00074,kistprostatektomiya. g'isht ustidagi urostomiyaning shakllanishi,цистпростатэктомия. формирование уростомы по бриккеру,cystprostatectomy. formation of a urostomy according to Bricker
+#cancr0022.00075,kistprostatektomiya. yo'g'on ichakdan siydik rezervuarining shakllanishi. appendikostomiya.,цистпростатэктомия. формирование мочевого резервуара из толстой кишки. аппендикостомия.,cystprostatectomy. formation of a urinary reservoir from the colon. appendicostomy.
+#cancr0022.00076,"Ikki tomondan sistektomiya, ureterokutoneostomiya (Buyuk Britaniya)",цистэктомия с 2-х сторон уретерокутонеостомия (укс),cystectomy from both sides ureterocutoneostomy (uks)
+#cancr0022.00077,sistektomiya. yo'g'on ichakdan siydik rezervuarining shakllanishi. appendikostomiya.,цистэктомия. формирование мочевого резервуара из толстой кишки. аппендикостомия.,cystectomy. formation of a urinary reservoir from the colon. appendicostomy.
+#cancr0022.00078,sistektomiya. Briker urostomiyasi shakllanishi,цистэктомия. формирование уростомы по Бриккеру,cystectomy. formation of a urostomy according to Bricker
+#cancr0022.00079,"ikkala tomonning tos a'zolarining oldingi ichini tozalash, ureterokutoneostomiya (UC)",передняя эвисцерация органов малого таза с 2х сторон уретерокутонеостомия (укс),anterior evisceration of the pelvic organs from both sides ureterocutoneostomy (uks)
+#cancr0022.00080,tos a'zolarining oldingi ichi chiqishi. Bricker bo'yicha urostomiyaning shakllanishi.,передняя эвисцерация органов малого таза. формирование уростомы по Бриккеру.,anterior evisceration of the pelvic organs. formation of a urostomy according to Bricker.
+#cancr0022.00081,tos a'zolarining oldingi ichi chiqishi. yo'g'on ichakdan siydik rezervuarining shakllanishi. appendikostomiya.,передняя эвисцерация органов малого таза. формирование мочевого резервуара из толстой кишки. аппендикостомия.,anterior evisceration of the pelvic organs. formation of a urinary reservoir from the colon. appendicostomy.
+#cancr0022.00082,limfa tugunlari diseksiyasi bilan radikal prostatektomiya.,радикальная простатэктомия с лимфодиссекцией.,radical prostatectomy with lymph node dissection.
+#cancr0022.00083,ekskursiya adenomasi,тур аденомы,tour of adenoma
+#cancr0022.00084,adenomektomiya. epitsistostomiya.,аденомэктомия. эпицистостомия.,adenomectomy. epicystostomy.
+#cancr0022.00085,orxofunikulektomiya,орхофуникулэктомия,orchofuniculectomy
+#cancr0022.00086,Chevassu operatsiyasi,операция Шевассю,Chevassu operation
+#cancr0022.00087,retroperitoneal limfadenektomiya,лимфаденэктомия забрюшинного пространства,retroperitoneal lymphadenectomy
+#cancr0022.00088,2 tomonlama orxiektomiya,2-х стороння орхиэктомия,bilateral orchiectomy
+#cancr0022.00089,penektomiya,пенэктомия,penectomy
+#cancr0022.00090,siydik pufagidagi toshlarning transuretral sistolitotripsi,трансуретральная цистолитотрипсия конкрементов мочевого пузыря,transurethral cystolithotripsy of bladder stones
+#cancr0022.00091,tashqi genitoüriner organlarning shakllanishi uchun minimal invaziv jarrohlik (polipektomiya va boshqalar).,малоинвазивная операция при образованиях наружных мочеполовых органов (полипэктомия и др.),"minimally invasive surgery for external urogenital tract lesions (polypectomy, etc.)"
+#cancr0022.00092,ureteral toshlarning transuretral ureterolitotripsi,трансуретральная уретеролитотрипсия конкрементов мочеточника,transurethral ureterolithotripsy of ureteral stones
+#cancr0022.00093,ureteropyeloskopiya (biopsiya),уретеропиелоскопия (биопсия),ureteropyeloscopy (biopsy)
+#cancr0022.00094,nefroskopiya,нефроскопия,nephroscopy
+#cancr0022.00095,SC nefrostomiyasi,п/к нефростомия,sc nephrostomy
+#cancr0022.00096,SC sistostomiyasi,п/к цистостомия,sc cystostomy
+#cancr0022.00097,SC nefrolitotomiya,п/к нефролитотомия,sc nephrolithotomy
+#cancr0022.00098,ureteroplastika,пластика мочеточника,ureteroplasty
+#cancr0022.00099,siydik yo'llarining stentlanishi,стентирование мочеточника,ureteral stenting
+#cancr0022.00100,uretral rezektsiya. uretroplastika,резекция уретры. пластика уретры,urethral resection. urethral plastic surgery
+#cancr0022.00101,ureterosistneoanastamoz bilan gemisistektomiya. Epitsistostomiya,гемицистэктомия с уретероцистнеоанастамозом. Эпицистостомия,hemicistectomy with ureterocystneoanastomosis. Epicystostomy
+#cancr0022.00102,ureterosistneoanastomoz,наложение уретероцистнеоанастамоза,Ureterocystneoanastomosis
+#cancr0022.00103,sunnat,циркумцизия,Circumcision
+#cancr0022.00104,ileo-obturator limfa tugunlarining diseksiyasi,подвздошно- обтураторная лимфодиссекция,Ileal-obturator lymph node dissection
+#cancr0022.00105,yo'g'on ichakning uzluksizligini tiklash uchun rekonstruktiv jarrohlik,реконструктивно-восстановительная операция восстановление непрерывности толстой кишки,Reconstructive surgery to restore colon continuity
+#cancr0022.00106,kolostoma va ileostomiyani yopish,закрытие колостомы и илеостомы,Colostomy and ileostomy closure
+#cancr0022.00107,bachadon bo'yni konizatsiyasi,конизация шейки матки,Cervical conization
+#cancr0022.00108,laparosentez,лапароцентез,Laparocentesis
+#cancr0022.00109,vulvektomiya,вульвэктомия,Vulvectomy
+#cancr0022.00110,kengaytirilgan vulvektomiya (vulvektomiya va Duquesne operatsiyasi),расширенная вульвэктомия (вульвэктомия и операция дюкена),Extended vulvectomy (vulvectomy and Duquesne operation)
+#cancr0022.00111,tubovariektomiya,тубовариоэктомия,Tubovariectomy
+#cancr0022.00112,bachadon va qo'shimchalarning amputatsiyasi,ампутация матки с придатками,Amputation of the uterus with appendages
+#cancr0022.00113,qo'shimchalarsiz bachadon amputatsiyasi,ампутация матки без придатков,Amputation of the uterus without appendages
+#cancr0022.00114,bachadonni qo'shimchalar bilan ekstirpatsiya qilish,экстирпация матки с придатками,Extirpation of the uterus with appendages
+#cancr0022.00115,qo'shimchalarsiz histerektomiya,экстирпация матки без придатков,Extirpation of the uterus without appendages
+#cancr0022.00116,"bachadonni qo'shimchalar bilan ekstirpatsiya qilish, omentektomiya","экстирпация матки с придатками, оментэктомия","Extirpation of the uterus with appendages, omentectomy"
+#cancr0022.00117,bachadonni qo'shimchalar bilan uzaytirish (Vertheim operatsiyasi),расширенная экстирпация матки с придатками (операция Вертгейма),Extended extirpation of the uterus with appendages (Wertheim operation)
+#cancr0022.00118,tuxumdonlarning transpozitsiyasi bilan kengaytirilgan histerektomiya,расширенная экстирпация матки с транспозицией яичников,Extended extirpation of the uterus with transposition of the ovaries
+#cancr0022.00119,traxelektomiya,трахелэктомия,Trachelectomy
+#cancr0022.00120,tashqi ayol jinsiy a'zolarining kriyodestruktsiyasi,криодеструкция наружных женских половых органов,cryodestruction of external female genitalia
+#cancr0022.00121,bachadon bo'yni bo'g'inining ekstirpatsiyasi,экстирпация культи шейки матки,extirpation of cervical stump
+#cancr0022.00122,teri o'smalarining eksizyoni,иссечение опухоли кожи,excision of skin tumor
+#cancr0022.00123,takroriy va metastatik teri o'smalarini olib tashlash,иссечение рецидивной и метастатичекой опухоли кожи,excision of recurrent and metastatic skin tumor
+#cancr0022.00124,bepul plastik jarrohlik yo'li bilan teri shishini olib tashlash,иссечение опухоли кожи со свободной пластикой,excision of skin tumor with free plastic surgery
+#cancr0022.00125,Duquesne operatsiyasi,операция Дюкена,Duquesne operation
+#cancr0022.00126,Melnikov operatsiyasi,операция Мельникова,Melnikov operation
+#cancr0022.00127,aksiller limfadenektomiya,подмышечная лимфаденэктомия,axillary lymphadenectomy
+#cancr0022.00128,operatsiyadan keyingi nuqsonni almashtirish uchun terini bepul payvandlash,свободная кожная пластика для замещения послеоперационного дефекта,free skin plastic surgery to replace postoperative defect
+#cancr0022.00129,yumshoq to'qimalarning o'simtasini olib tashlash,иссечение опухоли мягких тканей,excision of soft tissue tumor
+#cancr0022.00130,takroriy yumshoq to'qimalar o'simtasini kesish yoki o'simta metastazini kesish,иссечение рецидивной опухоли мягких тканей или иссечение метастаза опухоли,excision of recurrent soft tissue tumor or excision of tumor metastasis
+#cancr0022.00131,tomir protezlari bilan o'simtani olib tashlash,иссечение опухоли с протезированием сосудов,excision of tumor with vascular prosthetics
+#cancr0022.00132,nuqsonni tomir pedikulyar qopqog'i bilan almashtirish bilan o'simtani kesish,иссечение опухоли с замещением дефекта лоскутом сосудистой ножке,excision of tumor with replacement of defect with vascular pedicle flap
+#cancr0022.00133,o'smaning ekskokleatsiyasi,экскохлеациия опухоли,excochleation of tumor
+#cancr0022.00134,qovurg'a rezektsiyasi,резекция ребер,rib resection
+#cancr0022.00135,sternum rezektsiyasi,резекция грудины,sternal resection
+#cancr0022.00136,klavikula rezektsiyasi,резекция ключицы,clavicle resection
+#cancr0022.00137,skapula rezektsiyasi,резекция лопатки,scapula resection
+#cancr0022.00138,skapulektomiya,скапулэктомия,scapulectomy
+#cancr0022.00139,otoplastika bilan distal humerus rezektsiyasi,резекция дистального отдела плечевой кости с аутопластикой,resection of distal humerus with autoplasty
+#cancr0022.00140,metakarpal rezektsiya,резекция пястных костей,resection of metacarpal bones
+#cancr0022.00141,tos suyaklarini rezektsiya qilish va sakrumni rezektsiya qilish,резекция костей таза и резекция крестца,resection of pelvic bones and resection of sacrum
+#cancr0022.00142,fibula rezektsiyasi,резекция малоберцовой кости,resection of fibula
+#cancr0022.00143,segmental suyak rezektsiyasi,сегментарная резекция кости,segmental bone resection
+#cancr0022.00144,marginal suyak rezektsiyasi,краевая резекция кости,marginal bone resection
+#cancr0022.00145,spacerni o'rnatish bilan segmental suyak rezektsiyasi,сегментарная резекция кости с установлением спейцера,segmental bone resection with establishment Speitzer
+#cancr0022.00146,metall osteosintezi bilan suyaklarni qayta joylashtirish,репозиция костей с металл остеосинтезом,bone reposition with metal osteosynthesis
+#cancr0022.00147,o'simta ekskokleatsiyasi + kriyo + sementoplastika,экскохлеация опухоли + крио + цементопластика,tumor excochleation + cryo + cementoplasty
+#cancr0022.00148,o'simta ekskokleatsiyasi + kriyo + tsementoplastika + metall osteosintezi,экскохлеация опухоли + крио + цементопластика + металл остеосинтез,tumor excochleation + cryo + cementoplasty + metal osteosynthesis
+#cancr0022.00149,sementoplastika bilan o'simtani ekskokletsiya qilish,экскохлеация опухоли с цементопластикой,tumor excochleation with cementoplasty
+#cancr0022.00150,autoplastika bilan o'simtaning ekskokleatsiyasi,экскохлеация опухоли с аутопластикой,tumor excochleation with autoplasty
+#cancr0022.00151,pastki oyoq amputatsiyasi,ампутация нижней конечности,lower limb amputation
+#cancr0022.00152,oyoq amputatsiyasi,ампутация голени,lower leg amputation
+#cancr0022.00153,yuqori oyoq amputatsiyasi,ампутация верхней конечности,upper limb amputation
+#cancr0022.00154,bilak amputatsiyasi,ампутация предплечья,forearm amputation
+#cancr0022.00155,qo'lning amputatsiyasi,ампутация кисти,hand amputation
+#cancr0022.00156,oyoq amputatsiyasi,ампутация стопы,foot amputation
+#cancr0022.00157,yuqori oyoq-qo'llarning disartikulyatsiyasi,экзартикуляция верхней конечности,upper limb disarticulation
+#cancr0022.00158,pastki oyoq-qo'llarning disartikulyatsiyasi,экзартикуляция нижней конечности,lower limb disarticulation
+#cancr0022.00159,bilakning dezartikulyatsiyasi,экзартикуляция предплечья,forearm disarticulation
+#cancr0022.00160,qo'lning dezartikulyatsiyasi,экзартикуляция кисти,hand disarticulation
+#cancr0022.00161,barmoq amputatsiyasi,ампутация пальца,finger amputation
+#cancr0022.00162,barmoqlarning disartikulyatsiyasi,экзартикуляция пальца,finger disarticulation
+#cancr0022.00163,tizza bo'g'imi darajasida disartikulyatsiya,экзартикуляция на уровне коленного сустава,knee joint level disarticulation
+#cancr0022.00164,oyoq Bilagi zo'r bo'g'im darajasida disartikulyatsiya,экзартикуляция на уровне голеностопного сустава,ankle joint level disarticulation
+#cancr0022.00165,elka artroplastikasi,эндопротезирование плечевого сустава,shoulder joint arthroplasty
+#cancr0022.00166,tirsakni almashtirish,эндопротезирование локтевого сустава,elbow joint arthroplasty
+#cancr0022.00167,tos suyaklarining endoprostetikasi,эндопротезирование костей таза,pelvic bone arthroplasty
+#cancr0022.00168,sonni almashtirish,эндопротезирование тазобедренного сустава,hip joint arthroplasty
+#cancr0022.00169,tizzani almashtirish,эндопротезирование коленного сустава,knee joint arthroplasty
+#cancr0022.00170,oyoq Bilagi zo'r almashtirish,эндопротезирование голеностопного сустава,ankle joint arthroplasty
+#cancr0022.00171,diafiz suyaklarining endoprostetikasi,эндопротезирование диафизарных отделов костей,diaphyseal bone arthroplasty
+#cancr0022.00172,bilak qo'shimchasini almashtirish,эндопротезирование лучезапястного сустава,wrist joint arthroplasty
+#cancr0022.00173,radial suyakni almashtirish,эндопротезирование лучевой кости,radius bone arthroplasty
+#cancr0022.00174,endoprotezni olib tashlash,удаление эндопротеза,endoprosthesis removal
+#cancr0022.00175,qayta endoprotez bilan endoprotezni olib tashlash,удаление эндопротеза с реэндопротезированием,endoprosthesis removal with re-arthroplasty
+#cancr0022.00176,endoprotezni qayta tiklash,реконструкция эндопротеза,endoprosthesis reconstruction
+#cancr0022.00177,oqma eksiziyasi,иссечение свища,fistula excision
+#cancr0022.00178,ochiq suyak shishi biopsiyasi,открытая биопсия опухоли кости,open bone tumor biopsy
+#cancr0022.00179,yumshoq to'qimalar o'simtasining ochiq biopsiyasi,открытая биопсия опухоли мягких тканей,open soft tissue tumor biopsy
+#cancr0022.00180,eksizyonel biopsiya,эксцизионная биопсия,excisional biopsy
+#cancr0022.00181,trefin biopsiyasi,трепан биопсия,trephine biopsy
+#cancr0022.00182,hemipelviektomiya,гемипельвиоэктомия,hemipelviectomy
+#cancr0022.00183,intramedullar pinni o'rnatish bilan segmental suyak rezektsiyasi,сегментарная резекция кости с установлением интрамедулярного штифта,segmental bone resection with intramedullary pin placement
+#cancr0022.00184,otoplastika bilan segmental suyak rezektsiyasi,сегментарная резекция кости с аутопластикой,segmental bone resection with autografting
+#cancr0022.00185,interskapular torakal rezektsiya,межлопаточная грудная резекция,interscapular thoracic resection
+#cancr0022.00186,interskapular torakal amputatsiya,межлопаточная грудная ампутация,interscapular thoracic amputation
+#cancr0022.00187,orqa miya o'smalarini eksizyon qilish,иссечение опухолей спинного мозга,spinal cord tumor excision
+#cancr0022.00188,umurtqa pog'onasining o'murtqa jarayonlarini rezektsiya qilish,резекция остистых отростков позвоночника,spinous process resection
+#cancr0022.00189,umurtqa pog'onasining lateral jarayonlarini rezektsiya qilish,резекция боковых отростков позвоночника,lateral process resection
+#cancr0022.00190,qafasni o'rnatish bilan vertebra tanasini rezektsiya qilish,резекция тела позвонка с установлением кейджа,vertebral body resection with cage placement
+#cancr0022.00191,transpedikulyar fiksatorlarni o'rnatish,установление транспедикулярных фиксаторов,transpedicular fixator placement
+#cancr0022.00192,ajratgichni olib tashlash,удаление спейсера,spacer removal
+#cancr0022.00193,skapula rezektsiyasi,резекция лопатки,scapular resection
+#cancr0022.00194,sternumektomiya,стернумэктомия,sternumectomy
+#cancr0022.00195,parotid tuprik bezining rezektsiyasi,резекция околоушной слюнной железы,parotid gland resection
+#cancr0022.00196,tashqi submandibular kirish yordamida parotid tuprik bezining faringeal jarayonini rezektsiya qilish,резекция глоточного отростка околоушной слюнной железы наружным подчелюстным доступом,pharyngeal process resection of the parotid salivary gland via external submandibular approach
+#cancr0022.00197,parotid tuprik bezining subtotal rezektsiyasi,субтотальная резекция околоушной слюнной железы,subtotal parotid gland resection
+#cancr0022.00198,parotidektomiya,паротидэктомия,parotidectomy
+#cancr0022.00199,submandibular tuprik bezining ekstirpatsiyasi,экстирпация подчелюстной слюнной железы,submandibular salivary gland extirpation
+#cancr0022.00200,hemitiroidektomiya,гемитиреоидэктомия,hemithyroidectomy
+#cancr0022.00201,qalqonsimon bezning subtotal rezektsiyasi,субтотальная резекция щитовидной железы,subtotal thyroid resection
+#cancr0022.00202,tiroidektomiya,тиреоидэктомия,thyroidectomy
+#cancr0022.00203,Halqum xordektomiyasi,хордэктомия гортани,laryngeal chordectomy
+#cancr0022.00204,anterolateral laringektomiya,переднебоковая резекция гортани,anterolateral laryngeal resection
+#cancr0022.00205,halqumning supraglottik gorizontal rezektsiyasi,надскладочная горизонтальная резекция гортани,supraglottic horizontal laryngeal resection
+#cancr0022.00206,laringektomiya,ларингэктомия,laryngectomy
+#cancr0022.00207,yuqori jag'ning rezektsiyasi,резекция верхней челюсти,maxillary resection
+#cancr0022.00208,yuqori jag'ning estrodiol rezektsiyasi,комбинированная резекция верхней челюсти,combined maxillary resection
+#cancr0022.00209,o'simta biopsiyasi bilan diagnostik maksiller sinusotomiya,диагностическая гайморотомия с биопсией опухоли,diagnostic maxillary antrotomy with tumor biopsy
+#cancr0022.00210,o'simtani olib tashlash bilan maksiller sinusotomiya,гайморотомия с удалением опухоли,maxillary antrotomy with tumor removal
+#cancr0022.00211,o'simta biopsiyasi bilan diagnostik rinotomiya,диагностическая ринотомия с биопсией опухоли,diagnostic rhinotomy with tumor biopsy
+#cancr0022.00212,o'simtani olib tashlash bilan rinotomiya,ринотомия с удалением опухоли,rhinotomy with tumor removal
+#cancr0022.00213,o'simta biopsiyasi bilan diagnostik etmoidotomiya,диагностическая этмоидотомия с биопсией опухоли,diagnostic ethmoidectomy with tumor biopsy
+#cancr0022.00214,o'simtani olib tashlash bilan etmoidotomiya,этмоидотомия с удалением опухоли,ethmoidectomy with tumor removal
+#cancr0022.00215,o'simta biopsiyasi bilan diagnostik faringotomiya,диагностическая фаринготомия с биопсией опухоли,diagnostic pharyngotomy with tumor biopsy
+#cancr0022.00216,o'smani olib tashlash bilan faringotomiya,фаринготомия с удалением опухоли,pharyngotomy with tumor removal
+#cancr0022.00217,farenks rezektsiyasi bilan laringektomiya,ларингэктомия с резекцией глотки,laryngectomy with pharyngeal resection
+#cancr0022.00218,laringofaringektomiya,ларингофарингэктомия,laryngopharyngectomy
+#cancr0022.00219,qizilo'ngach rezektsiyasi bilan laringofaringektomiya,ларингофарингэктомия с резекцией пищевода,laryngopharyngectomy with esophageal resection
+#cancr0022.00220,yarim til rezektsiyasi,половинная резекция языка,half tongue resection
+#cancr0022.00221,tilning kombinatsiyalangan rezektsiyasi,комбинированная резекция языка,combined tongue resection
+#cancr0022.00222,og'iz tubining rezektsiyasi,резекция дна полости рта,resection of the floor of the mouth
+#cancr0022.00223,og'iz yonoqlarini rezektsiya qilish,резекция щеки полости рта,resection of the cheek of the oral cavity
+#cancr0022.00224,pastki jagning marginal rezektsiyasi,краевая резекция нижней челюсти,marginal resection of the lower jaw
+#cancr0022.00225,pastki jag'ning segmental rezektsiyasi,сегментарная резекция нижней челюсти,segmental resection of the lower jaw
+#cancr0022.00226,pastki jag'ning subtotal rezektsiyasi,субтотальная резекция нижней челюсти,subtotal resection of the lower jaw
+#cancr0022.00227,hemimandibulektomiya (pastki jag'ning yarim rezektsiyasi),гемимандибулэктомия (половинная резекция нижней челюсти),hemimandibulectomy (half resection of the lower jaw)
+#cancr0022.00228,og'iz bo'shlig'i o'smalari uchun rekonstruktiv jarrohlik,реконструктивно-восстановительные операция при опухолях полости рта,reconstructive and restorative surgery for tumors of the oral cavity
+#cancr0022.00229,yuqori jag'ning o'smalari uchun rekonstruktiv operatsiyalar,реконструктивно-восстановительные операции при опухолях верхней челюсти,reconstructive and restorative surgery for tumors of the upper jaw
+#cancr0022.00230,og'iz o'smalari uchun plastik jarrohlik,пластические операции при опухолях полости рта,plastic surgery for tumors of the oral cavity
+#cancr0022.00231,yuqori jag'ning o'smalari uchun plastik jarrohlik,пластические операции при опухолях верхней челюсти,plastic surgery for tumors of the upper jaw
+#cancr0022.00232,teri shishini plastik jarrohlik bilan olib tashlash,иссечение опухоли кожи с пластикой,excision of a skin tumor with plastic surgery
+#cancr0022.00233,bosh va bo'yin hududida yumshoq to'qimalarning shishlarini radikal tarzda olib tashlash,радикальное удаление опухоли мягких тканей области головы и шеи,radical removal of a tumor of the soft tissues of the head and neck
+#cancr0022.00234,traxeostomiya,трахеостомия,tracheostomy
+#cancr0022.00235,tashqi uyqu arteriyasini bog'lash,перевязка наружной сонной артерии,ligation of the external carotid artery
+#cancr0022.00236,selektiv servikal limfa tugunlarining diseksiyasi,селективная шейная лимфодиссекция,selective cervical lymph node dissection
+#cancr0022.00237,bachadon bo'yni limfa tugunlarining radikal diseksiyasi,радикальная шейная лимфодиссекция,radical cervical lymph node dissection
+#cancr0022.00238,yumshoq to'qimalarning o'simta takrorlanishining eksizyoni,иссечение опухоли рецидива мягких тканей,excision of a recurrent soft tissue tumor
+#cancr0022.00239,limfa tugunlari va o'smaning ochiq biopsiyasi,открытая биопсия лимфоузла и опухоли,open biopsy of a lymph node and tumor
+#cancr0022.00240,metastatik o'smani olib tashlash,иссечение метастатической опухоли,excision of a metastatic tumor
+#cancr0022.00241,o'simta biopsiyasi bilan laringotomiya,ларинготомия с биопсией опухоли,laryngotomy with tumor biopsy
+#cancr0022.00242,laringoplastika,ларингопластика,laryngoplasty
+#cancr0022.00243,limfogemangiomaning bog'lanishi va sklerozi,лигирование и склерозирование лимфогемангиомы,ligation and sclerotherapy of lymphohemangioma
+#cancr0022.00244,yuqori yoki pastki labni plastik jarrohlik bilan rezektsiya qilish,резекция верхней или нижней губы с пластикой,resection of the upper or lower lip with plastic surgery
+#cancr0022.00245,bolalarda orbital shishlarning ponksiyon biopsiyasi,пункционная биопсия опухолей орбиты у детей,puncture biopsy of orbital tumors in children
+#cancr0022.00246,orbital yumshoq to'qimalarning o'smalaridan biopsiya,биопсия из опухолей мягких тканей орбиты,biopsy from orbital soft tissue tumors
+#cancr0022.00247,kon'yunktiva va terining o'smalaridan biopsiya,биопсия из опухолей конъюнктивы и кожи,biopsy from conjunctiva and skin tumors
+#cancr0022.00248,orbital operatsiya,операция на орбите,surgery on the orbit
+#cancr0022.00249,ko'z olmasining enukleatsiyasi,энуклеация глазного яблока,enucleation of the eyeball
+#cancr0022.00250,kon'yunktiva va sklerada jarrohlik,операция на конъюктиве и склере,surgery on the conjunctiva and sclera
+#cancr0022.00251,ko'z qopqog'i terisi operatsiyasi,операция на коже век,surgery on the skin of the eyelids
+#cancr0022.00252,orbital eksenteratsiya,экзентерация орбиты,orbital exenteration
+#cancr0022.00253,kengaytirilgan orbital eksenteratsiya,расширенная экзентерация орбиты,extended orbital exenteration
+#cancr0022.00254,"sklerotomiya, ko'z ichi o'simtasini olib tashlash bilan","склеротомия, с удалением внутриглазной опухоли","sclerotomy, with removal of an intraocular tumor"
+#cancr0022.00255,o'pkaning o'simtasi bilan o'pkaning atipik rezektsiyasi bilan biopsiya,биопсия опухоли легкого путем атипической резекцией легкого с опухолью,lung tumor biopsy by atypical resection of the lung with a tumor
+#cancr0022.00256,mediastin va plevraning o'simta biopsiyasi bilan diagnostik torakoskopiya;,диагностическая торакоскопия с биопсией опухоли средостения и плевры;,diagnostic thoracoscopy with tumor biopsy mediastinum and pleura;
+#cancr0022.00257,kengaytirilgan (yoki + kombinatsiyalangan) lobektomiya yoki bilobektomiya;,расширенная (или +комбинированная) лобэктомияили билобэктомия;,extended (or + combined) lobectomy or bilobectomy;
+#cancr0022.00258,kengaytirilgan (yoki + kombinatsiyalangan) segmentektomiya yoki o'pkaning atipik rezektsiyasi;,расширенняя(или +комбинированная) сегментэктомия или атипическая резекция легкого;,extended (or + combined) segmentectomy or atypical lung resection;
+#cancr0022.00259,"o'pka o'simtasini (metastaz, tuberkulyoma, xondroma, hamartoxondroma, kist va boshqalar) olib tashlash (yoki + kombinatsiyalangan)","удаление (или +комбинированное) опухоли (метастаза, туберкулемы, хондромы, гамартохондромы, кисты и др.) легкого","removal (or + combined) of a tumor (metastasis, tuberculoma, chondroma, hamartochondroma, cyst, etc.) of the lung"
+#cancr0022.00260,kengaytirilgan pnevmonektomiya,расширенная пульмонэктомия,extended pulmonectomy
+#cancr0022.00261,kengaytirilgan kombinatsiyalangan pnevmonektomiya,расширенно-комбинированная пульмонэктомия,extended combined pulmonectomy
+#cancr0022.00262,o'pka dekortikatsiyasi bilan plevrektomiya,плеврэктомия с декортикацией легкого,pleurectomy with lung decortication
+#cancr0022.00263,torakomioplastika bilan qovurg'a rezektsiyasi,резекция ребер с торакомиопластикой,rib resection with thoracomyoplasty
+#cancr0022.00264,torakomioplastika bilan sternum rezektsiyasi,резекция грудины с торакомиопластикой,sternal resection with thoracomyoplasty
+#cancr0022.00265,traxeyaning dumaloq rezektsiyasi,циркулярная резекция трахеи,circular trachea resection
+#cancr0022.00266,torakotomiya orqali mediastinal shishlarni olib tashlash,удаление опухолей средостения через торакотомию,removal of mediastinal tumors through thoracotomy
+#cancr0022.00267,sternotomiya orqali mediastinal shishlarni olib tashlash,удаление опухолей средостения через стернотомию,removal of mediastinal tumors through sternotomy
+#cancr0022.00268,torakomioplastika bilan qovurg'alar va sternum rezektsiyasi,резекция ребер и грудины с торакомиопластикой,resection of ribs and sternum with thoracomyoplasty
+#cancr0022.00269,Lyuis operatsiyasi,операция Льюиса,Lewis operation
+#cancr0022.00270,Garlok-Osava operatsiyasi,операция Гарлока-Осавы,Harlock-Osawa operation
+#cancr0022.00271,"qizilo'ngachning abdominoservikal ekstirpatsiyasini qizilo'ngachgastroplastika, bo'yniga EGA qo'llash","абдоминоцервикальная экстирпация пищевода с эзофагогастропластикой, наложение Эга на шее","abdominocervical extirpation of the esophagus with esophagogastroplasty, imposition of EGA on the neck"
+#cancr0022.00272,Makkeyn operatsiyasi (3 marta qizilo'ngachning ekstirpatsiyasi).,операция Маккейна (3х доступная экстирпация пищевода).,McCain operation (3x accessible extirpation of the esophagus).
+#cancr0022.00273,Garlok operatsiyasi,операция Гарлока,Harlock operation
+#cancr0022.00274,eksplorativ torakotomiya,эксплоративная торакотомия,exploratory thoracotomy
+#cancr0022.00275,retorakotomiya,реторакотомия,rethoracotomy
+#cancr0022.00276,"torasentez, plevra bo'shlig'ini drenajlash","торакоцентез, дренирование плевральной полости","thoracocentesis, drainage of the pleural cavity"
+#cancr0043.00000,Boshqa ta'sir turlari,Другие виды воздействия,Other types of influence
+#cancr0043.00001,Gipertermiya,Гипертермия,Hyperthermia
+#cancr0043.00002,Giperglikemiya,Гипергликемия,Hyperglycemia
+#cancr0043.00003,Magnetoterapiya,Магнитотерапия,Magnetotherapy
+#cancr0043.00004,Fotodinamik terapiya,Фотодинамическая терапия,Photodynamic therapy
+#cancr0043.00005,Radiochastota ablasyonu (RFA),Радиочастотная абляция (РЧА),Radiofrequency ablation (RFA)
+#cancr0043.00006,Mahalliy kimyoterapiya,Локальная химиотерапия,Local chemotherapy
+#cancr0043.00007,Lazer ta'siri (TTT),Лазерное воздействие (ТТТ),Laser exposure (TTT)
+#cancr0043.00008,Elektrokoagulyatsiya,Электрокоагуляция,Electrocoagulation
+#cancr0043.00009,Elektrokimyoviy lizis,Электрохимический лизис,Electrochemical lysis
+#cancr0043.00010,Mikroto'lqinli ablasyon (MWA),Микроволновая абляция (МВА),Microwave ablation (MWA)
+#cancr0043.00011,IV lazerli qon nurlanishi (ILBI),В/в лазерное облучение крови (ВЛОК),Intravenous laser blood irradiation (IVLIB)
+#cancr0043.00012,Dendritik hujayralarni in'ektsiya qilish,Введение дендритных клеток,Introduction of dendritic cells
+#cancr0043.00013,BMC Mirena,BMC Мирена,BMC Mirena
+#cancr0043.00014,CAR-T terapiyasi,CAR-T терапия,CAR-T therapy
+#cancr0043.00015,Qonni almashtirish terapiyasi,Кровезаместительная терапия,Blood replacement therapy
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,

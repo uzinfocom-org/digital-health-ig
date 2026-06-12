@@ -1,0 +1,3913 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "draft",
+  "content": "complete",
+  "name": "DMEDProfessionsCS",
+  "id": "dmed-specialties-cs",
+  "title": "DMED Positions and Professions (UZ/RU)",
+  "description": "Uzbek and Russian designations for DMED Professions codes",
+  "url": "https://terminology.dhp.uz/fhir/core/CodeSystem/dmed-specialties-cs",
+  "concept": [
+    {
+      "code": "1033",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Сурдопедагог"
+        },
+        {
+          "language": "uz",
+          "value": "Karlar o'qituvchisi"
+        }
+      ]
+    },
+    {
+      "code": "365",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Мануальный терапевт"
+        },
+        {
+          "language": "uz",
+          "value": "Manual terapevt"
+        }
+      ]
+    },
+    {
+      "code": "425",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Лучевой терапевт"
+        },
+        {
+          "language": "uz",
+          "value": "Radiatsiya terapevti"
+        }
+      ]
+    },
+    {
+      "code": "996",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Фельдшер"
+        },
+        {
+          "language": "uz",
+          "value": "Feldsher"
+        }
+      ]
+    },
+    {
+      "code": "388",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Детский стоматолог"
+        },
+        {
+          "language": "uz",
+          "value": "Bolalar tish shifokori"
+        }
+      ]
+    },
+    {
+      "code": "284",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Медсестра"
+        },
+        {
+          "language": "uz",
+          "value": "Hamshira"
+        }
+      ]
+    },
+    {
+      "code": "375",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Биолог"
+        },
+        {
+          "language": "uz",
+          "value": "Biolog"
+        }
+      ]
+    },
+    {
+      "code": "400",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Детский ортопед"
+        },
+        {
+          "language": "uz",
+          "value": "Bolalar ortopedi"
+        }
+      ]
+    },
+    {
+      "code": "929",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Врач вирусолог"
+        },
+        {
+          "language": "uz",
+          "value": "Virusolog"
+        }
+      ]
+    },
+    {
+      "code": "205",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Уролог"
+        },
+        {
+          "language": "uz",
+          "value": "Urolog"
+        }
+      ]
+    },
+    {
+      "code": "412",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Подростковый врач"
+        },
+        {
+          "language": "uz",
+          "value": "O'smirlar shifokori"
+        }
+      ]
+    },
+    {
+      "code": "419",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Медсестра-гинеколог"
+        },
+        {
+          "language": "uz",
+          "value": "Ginekolog hamshirasi"
+        }
+      ]
+    },
+    {
+      "code": "265",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Ревматолог"
+        },
+        {
+          "language": "uz",
+          "value": "Revmatolog"
+        }
+      ]
+    },
+    {
+      "code": "416",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Травматолог"
+        },
+        {
+          "language": "uz",
+          "value": "Travmatolog"
+        }
+      ]
+    },
+    {
+      "code": "250",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Амбулаторный хирург"
+        },
+        {
+          "language": "uz",
+          "value": "Ambulator jarroh"
+        }
+      ]
+    },
+    {
+      "code": "450",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Онкоуролог"
+        },
+        {
+          "language": "uz",
+          "value": "Onkurolog"
+        }
+      ]
+    },
+    {
+      "code": "443",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Детский анестезиолог-реаниматолог"
+        },
+        {
+          "language": "uz",
+          "value": "Bolalar anesteziolog-reanimatologi"
+        }
+      ]
+    },
+    {
+      "code": "444",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Цитолог"
+        },
+        {
+          "language": "uz",
+          "value": "Sitolog"
+        }
+      ]
+    },
+    {
+      "code": "294",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Генетик"
+        },
+        {
+          "language": "uz",
+          "value": "Genetik"
+        }
+      ]
+    },
+    {
+      "code": "372",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Рабиолог"
+        },
+        {
+          "language": "uz",
+          "value": "Rabiolog"
+        }
+      ]
+    },
+    {
+      "code": "376",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Бактериолог"
+        },
+        {
+          "language": "uz",
+          "value": "Bakteriolog"
+        }
+      ]
+    },
+    {
+      "code": "381",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Административный персонал"
+        },
+        {
+          "language": "uz",
+          "value": "Ma'muriy xodim"
+        }
+      ]
+    },
+    {
+      "code": "385",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Детский кардиоревматолог"
+        },
+        {
+          "language": "uz",
+          "value": "Bolalar kardiorevmatologi"
+        }
+      ]
+    },
+    {
+      "code": "389",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Администратор Аптеки"
+        },
+        {
+          "language": "uz",
+          "value": "Dorixona ma'muri"
+        }
+      ]
+    },
+    {
+      "code": "417",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Хирург-стоматолог"
+        },
+        {
+          "language": "uz",
+          "value": "Jarroh-stomatolog"
+        }
+      ]
+    },
+    {
+      "code": "452",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Детский онколог"
+        },
+        {
+          "language": "uz",
+          "value": "Bolalar onkologi"
+        }
+      ]
+    },
+    {
+      "code": "453",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Детский микрохирург"
+        },
+        {
+          "language": "uz",
+          "value": "Bolalar mikroxirurg"
+        }
+      ]
+    },
+    {
+      "code": "420",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Физиотерапевтическая медсестра"
+        },
+        {
+          "language": "uz",
+          "value": "Jismoniy terapiya hamshirasi"
+        }
+      ]
+    },
+    {
+      "code": "422",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Интенсивный терапевт"
+        },
+        {
+          "language": "uz",
+          "value": "Intensiv terapevt"
+        }
+      ]
+    },
+    {
+      "code": "426",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Патологоанатом"
+        },
+        {
+          "language": "uz",
+          "value": "Patolog"
+        }
+      ]
+    },
+    {
+      "code": "454",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Детский нефролог"
+        },
+        {
+          "language": "uz",
+          "value": "Bolalar nefrologi"
+        }
+      ]
+    },
+    {
+      "code": "373",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Судмедэксперт"
+        },
+        {
+          "language": "uz",
+          "value": "Sud tibbiy ekspert"
+        }
+      ]
+    },
+    {
+      "code": "344",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Семейный врач"
+        },
+        {
+          "language": "uz",
+          "value": "Oilaviy shifokor"
+        }
+      ]
+    },
+    {
+      "code": "200",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Невролог"
+        },
+        {
+          "language": "uz",
+          "value": "Nevrolog"
+        }
+      ]
+    },
+    {
+      "code": "192",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Терапевт"
+        },
+        {
+          "language": "uz",
+          "value": "Terapevt"
+        }
+      ]
+    },
+    {
+      "code": "410",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Врач Спирограф"
+        },
+        {
+          "language": "uz",
+          "value": "Spirograf"
+        }
+      ]
+    },
+    {
+      "code": "367",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Врач фтизиатр"
+        },
+        {
+          "language": "uz",
+          "value": "Ftiziatr"
+        }
+      ]
+    },
+    {
+      "code": "345",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Акушер"
+        },
+        {
+          "language": "uz",
+          "value": "Akusher"
+        }
+      ]
+    },
+    {
+      "code": "210",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Кардиолог"
+        },
+        {
+          "language": "uz",
+          "value": "Kardiolog"
+        }
+      ]
+    },
+    {
+      "code": "997",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Эндоуролог"
+        },
+        {
+          "language": "uz",
+          "value": "Endourolog"
+        }
+      ]
+    },
+    {
+      "code": "273",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Психолог"
+        },
+        {
+          "language": "uz",
+          "value": "Psixolog"
+        }
+      ]
+    },
+    {
+      "code": "197",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Окулист"
+        },
+        {
+          "language": "uz",
+          "value": "Okulist"
+        }
+      ]
+    },
+    {
+      "code": "215",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Иглорефлексотерапевт"
+        },
+        {
+          "language": "uz",
+          "value": "Iglorefleksoterapevt"
+        }
+      ]
+    },
+    {
+      "code": "418",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Статист"
+        },
+        {
+          "language": "uz",
+          "value": "Statist"
+        }
+      ]
+    },
+    {
+      "code": "270",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Ортопед"
+        },
+        {
+          "language": "uz",
+          "value": "Ortoped"
+        }
+      ]
+    },
+    {
+      "code": "441",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Медсестра эндоскопист"
+        },
+        {
+          "language": "uz",
+          "value": "Hamshira endoskopisti"
+        }
+      ]
+    },
+    {
+      "code": "257",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Маммолог"
+        },
+        {
+          "language": "uz",
+          "value": "Mammolog"
+        }
+      ]
+    },
+    {
+      "code": "234",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Имплантолог-ортопед"
+        },
+        {
+          "language": "uz",
+          "value": "Implantolog-ortoped"
+        }
+      ]
+    },
+    {
+      "code": "249",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Отоларинголог"
+        },
+        {
+          "language": "uz",
+          "value": "Otorinolaringolog"
+        }
+      ]
+    },
+    {
+      "code": "414",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Иммунолог"
+        },
+        {
+          "language": "uz",
+          "value": "Immunolog"
+        }
+      ]
+    },
+    {
+      "code": "260",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Нейрофизиолог"
+        },
+        {
+          "language": "uz",
+          "value": "Neyrofiziolog"
+        }
+      ]
+    },
+    {
+      "code": "251",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Радиолог"
+        },
+        {
+          "language": "uz",
+          "value": "Radiolog"
+        }
+      ]
+    },
+    {
+      "code": "261",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Биохимик"
+        },
+        {
+          "language": "uz",
+          "value": "Biokimyogar"
+        }
+      ]
+    },
+    {
+      "code": "458",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Абдоминальный хирург"
+        },
+        {
+          "language": "uz",
+          "value": "Qorin bo'shlig'i jarrohi"
+        }
+      ]
+    },
+    {
+      "code": "199",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Косметолог"
+        },
+        {
+          "language": "uz",
+          "value": "Kosmetolog"
+        }
+      ]
+    },
+    {
+      "code": "201",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Аллерголог-иммунолог"
+        },
+        {
+          "language": "uz",
+          "value": "Allergist-immunolog"
+        }
+      ]
+    },
+    {
+      "code": "229",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Нейрохирург"
+        },
+        {
+          "language": "uz",
+          "value": "Neyrohirurg"
+        }
+      ]
+    },
+    {
+      "code": "238",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Пластический хирург"
+        },
+        {
+          "language": "uz",
+          "value": "Plastik jarroh"
+        }
+      ]
+    },
+    {
+      "code": "223",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Офтальмолог"
+        },
+        {
+          "language": "uz",
+          "value": "Oftalmolog"
+        }
+      ]
+    },
+    {
+      "code": "242",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Логопед"
+        },
+        {
+          "language": "uz",
+          "value": "Logoped"
+        }
+      ]
+    },
+    {
+      "code": "240",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Сосудистый хирург"
+        },
+        {
+          "language": "uz",
+          "value": "Tomir jarroh"
+        }
+      ]
+    },
+    {
+      "code": "819",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Ученый секретарь"
+        },
+        {
+          "language": "uz",
+          "value": "Ilmiy kotib"
+        }
+      ]
+    },
+    {
+      "code": "222",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Онколог"
+        },
+        {
+          "language": "uz",
+          "value": "Onkolog"
+        }
+      ]
+    },
+    {
+      "code": "193",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Гинеколог"
+        },
+        {
+          "language": "uz",
+          "value": "Ginekolog"
+        }
+      ]
+    },
+    {
+      "code": "268",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Кардиохирург"
+        },
+        {
+          "language": "uz",
+          "value": "Kardiojarroh"
+        }
+      ]
+    },
+    {
+      "code": "279",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Хореограф"
+        },
+        {
+          "language": "uz",
+          "value": "Xoreograf"
+        }
+      ]
+    },
+    {
+      "code": "263",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Реаниматолог"
+        },
+        {
+          "language": "uz",
+          "value": "Reanimatolog"
+        }
+      ]
+    },
+    {
+      "code": "235",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Педиатр"
+        },
+        {
+          "language": "uz",
+          "value": "Pediatr"
+        }
+      ]
+    },
+    {
+      "code": "225",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Онкогинеколог"
+        },
+        {
+          "language": "uz",
+          "value": "Onkoginekolog"
+        }
+      ]
+    },
+    {
+      "code": "352",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Заведующий отделением"
+        },
+        {
+          "language": "uz",
+          "value": "Bo'lim mudiri"
+        }
+      ]
+    },
+    {
+      "code": "353",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Эпидемиолог"
+        },
+        {
+          "language": "uz",
+          "value": "Epidemiolog"
+        }
+      ]
+    },
+    {
+      "code": "354",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Функциональный диагност"
+        },
+        {
+          "language": "uz",
+          "value": "Funktsional diagnostika"
+        }
+      ]
+    },
+    {
+      "code": "290",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Диетолог"
+        },
+        {
+          "language": "uz",
+          "value": "Dietolog"
+        }
+      ]
+    },
+    {
+      "code": "347",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Профпатолог"
+        },
+        {
+          "language": "uz",
+          "value": "Profpatolog"
+        }
+      ]
+    },
+    {
+      "code": "349",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Главный врач"
+        },
+        {
+          "language": "uz",
+          "value": "Bosh shifokor"
+        }
+      ]
+    },
+    {
+      "code": "350",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Замглавврача"
+        },
+        {
+          "language": "uz",
+          "value": "Bosh shifokor o'rinbosari"
+        }
+      ]
+    },
+    {
+      "code": "293",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Детский Невролог"
+        },
+        {
+          "language": "uz",
+          "value": "Bolalar nevrologi"
+        }
+      ]
+    },
+    {
+      "code": "355",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Нарколог"
+        },
+        {
+          "language": "uz",
+          "value": "Narkolog"
+        }
+      ]
+    },
+    {
+      "code": "403",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Детский Гинеколог"
+        },
+        {
+          "language": "uz",
+          "value": "Bolalar ginekologi"
+        }
+      ]
+    },
+    {
+      "code": "361",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Процедурная медсестра"
+        },
+        {
+          "language": "uz",
+          "value": "Muolaja hamshirasi"
+        }
+      ]
+    },
+    {
+      "code": "374",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Фармацевт"
+        },
+        {
+          "language": "uz",
+          "value": "Farmasevt"
+        }
+      ]
+    },
+    {
+      "code": "448",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Терапевт-нефролог"
+        },
+        {
+          "language": "uz",
+          "value": "Terapevt-nefrolog"
+        }
+      ]
+    },
+    {
+      "code": "346",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Врач валеолог"
+        },
+        {
+          "language": "uz",
+          "value": "Valeolog"
+        }
+      ]
+    },
+    {
+      "code": "820",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Помощник зам.директора по научной работе"
+        },
+        {
+          "language": "uz",
+          "value": "Ilmiy ishlar bo'yicha direktor o'rinbosari yordamchisi"
+        }
+      ]
+    },
+    {
+      "code": "424",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Радиотерапевт"
+        },
+        {
+          "language": "uz",
+          "value": "Radioterapevt"
+        }
+      ]
+    },
+    {
+      "code": "429",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Комбустиолог"
+        },
+        {
+          "language": "uz",
+          "value": "Kombustiolog"
+        }
+      ]
+    },
+    {
+      "code": "449",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Фтизиопедиатр"
+        },
+        {
+          "language": "uz",
+          "value": "Ftiziopedatr"
+        }
+      ]
+    },
+    {
+      "code": "456",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Трансплантолог"
+        },
+        {
+          "language": "uz",
+          "value": "Transplantolog"
+        }
+      ]
+    },
+    {
+      "code": "460",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Онкодерматолог"
+        },
+        {
+          "language": "uz",
+          "value": "Onkodermatolog"
+        }
+      ]
+    },
+    {
+      "code": "494",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Электронейромиография"
+        },
+        {
+          "language": "uz",
+          "value": "Elektroneuromiyografiya"
+        }
+      ]
+    },
+    {
+      "code": "528",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Детский воспитатель"
+        },
+        {
+          "language": "uz",
+          "value": "Bolalar tarbiyachisi"
+        }
+      ]
+    },
+    {
+      "code": "594",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Ортодонт"
+        },
+        {
+          "language": "uz",
+          "value": "Ortodontist"
+        }
+      ]
+    },
+    {
+      "code": "595",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Стоматолог-терапевт"
+        },
+        {
+          "language": "uz",
+          "value": "Tish shifokori"
+        }
+      ]
+    },
+    {
+      "code": "282",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Психиатр"
+        },
+        {
+          "language": "uz",
+          "value": "Psixiatr"
+        }
+      ]
+    },
+    {
+      "code": "262",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Гематолог"
+        },
+        {
+          "language": "uz",
+          "value": "Gematolog"
+        }
+      ]
+    },
+    {
+      "code": "281",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Психотерапевт"
+        },
+        {
+          "language": "uz",
+          "value": "Psixoterapevt"
+        }
+      ]
+    },
+    {
+      "code": "271",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Нефролог"
+        },
+        {
+          "language": "uz",
+          "value": "Nefrolog"
+        }
+      ]
+    },
+    {
+      "code": "297",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Дерматовенеролог"
+        },
+        {
+          "language": "uz",
+          "value": "Dermatovenerolog"
+        }
+      ]
+    },
+    {
+      "code": "255",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Физиотерапевт"
+        },
+        {
+          "language": "uz",
+          "value": "Fizioterapevt"
+        }
+      ]
+    },
+    {
+      "code": "357",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Координатор"
+        },
+        {
+          "language": "uz",
+          "value": "Koordinator"
+        }
+      ]
+    },
+    {
+      "code": "437",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Медсестра вакцинации"
+        },
+        {
+          "language": "uz",
+          "value": "Emlash hamshirasi"
+        }
+      ]
+    },
+    {
+      "code": "206",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Гастроэнтеролог"
+        },
+        {
+          "language": "uz",
+          "value": "Gastroenterolog"
+        }
+      ]
+    },
+    {
+      "code": "442",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Анестезиолог-реаниматолог"
+        },
+        {
+          "language": "uz",
+          "value": "Anesteziolog-reanimatolog"
+        }
+      ]
+    },
+    {
+      "code": "359",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Неонатолог"
+        },
+        {
+          "language": "uz",
+          "value": "Neonatolog"
+        }
+      ]
+    },
+    {
+      "code": "760",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Детский педиатр"
+        },
+        {
+          "language": "uz",
+          "value": "Bolalar pediatri"
+        }
+      ]
+    },
+    {
+      "code": "599",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Руководитель отделения"
+        },
+        {
+          "language": "uz",
+          "value": "Bo'lim boshlig'i"
+        }
+      ]
+    },
+    {
+      "code": "632",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "врач фтизиатрического отделения"
+        },
+        {
+          "language": "uz",
+          "value": "ftiziatriya bo'limi shifokori"
+        }
+      ]
+    },
+    {
+      "code": "635",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Врач отделения торакальной хирургии"
+        },
+        {
+          "language": "uz",
+          "value": "Torokal jarrohlik bo'limi shifokori"
+        }
+      ]
+    },
+    {
+      "code": "636",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Торакальный хирург"
+        },
+        {
+          "language": "uz",
+          "value": "Torokal jarroh"
+        }
+      ]
+    },
+    {
+      "code": "638",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Интервенцион кардиолог"
+        },
+        {
+          "language": "uz",
+          "value": "Interventsion kardiolog"
+        }
+      ]
+    },
+    {
+      "code": "407",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Врач ВЭМ"
+        },
+        {
+          "language": "uz",
+          "value": "VEM shifokori"
+        }
+      ]
+    },
+    {
+      "code": "561",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Ортодонт"
+        },
+        {
+          "language": "uz",
+          "value": "Ортодонт"
+        }
+      ]
+    },
+    {
+      "code": "633",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "заведующий отделением фтизиатрии"
+        },
+        {
+          "language": "uz",
+          "value": "ftiziatriya bo'limi mudiri"
+        }
+      ]
+    },
+    {
+      "code": "683",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Медсестра стерилизации"
+        },
+        {
+          "language": "uz",
+          "value": "Hamshira sterilizatsiyasi"
+        }
+      ]
+    },
+    {
+      "code": "716",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Суицидолог"
+        },
+        {
+          "language": "uz",
+          "value": "Suicidolog"
+        }
+      ]
+    },
+    {
+      "code": "821",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Врач приемного отделения"
+        },
+        {
+          "language": "uz",
+          "value": "Qabul bo'limi shifokori"
+        }
+      ]
+    },
+    {
+      "code": "781",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Детский гастроэнтеролог"
+        },
+        {
+          "language": "uz",
+          "value": "Bolalar gastroenterologi"
+        }
+      ]
+    },
+    {
+      "code": "749",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Вертебролог"
+        },
+        {
+          "language": "uz",
+          "value": "Vertebrolog"
+        }
+      ]
+    },
+    {
+      "code": "750",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Детский пульмонолог"
+        },
+        {
+          "language": "uz",
+          "value": "Bolalar pulmonologi"
+        }
+      ]
+    },
+    {
+      "code": "761",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Детский кардиолог"
+        },
+        {
+          "language": "uz",
+          "value": "Bolalar kardiologi"
+        }
+      ]
+    },
+    {
+      "code": "763",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Детский кардиохирург"
+        },
+        {
+          "language": "uz",
+          "value": "Bolalar kardiojarrox"
+        }
+      ]
+    },
+    {
+      "code": "767",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Детский радиолог"
+        },
+        {
+          "language": "uz",
+          "value": "Bolalar radiologi"
+        }
+      ]
+    },
+    {
+      "code": "770",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Детский цистоскопист"
+        },
+        {
+          "language": "uz",
+          "value": "Bolalar sistoskopisti"
+        }
+      ]
+    },
+    {
+      "code": "772",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Детский нейрохирург"
+        },
+        {
+          "language": "uz",
+          "value": "Bolalar neyrohirurgi"
+        }
+      ]
+    },
+    {
+      "code": "774",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Детский методист"
+        },
+        {
+          "language": "uz",
+          "value": "Bolalar metodisti"
+        }
+      ]
+    },
+    {
+      "code": "776",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Неонатаолог-хирург"
+        },
+        {
+          "language": "uz",
+          "value": "Неонатаолог-хирург"
+        }
+      ]
+    },
+    {
+      "code": "777",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Неонатал-Хирург"
+        },
+        {
+          "language": "uz",
+          "value": "Неонатал-Хирург"
+        }
+      ]
+    },
+    {
+      "code": "243",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Врач Эндоскопист"
+        },
+        {
+          "language": "uz",
+          "value": "Endoskopist"
+        }
+      ]
+    },
+    {
+      "code": "765",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Детский гемато-онколог"
+        },
+        {
+          "language": "uz",
+          "value": "Bolalar gemato-onkologi"
+        }
+      ]
+    },
+    {
+      "code": "827",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Врач бактериолог"
+        },
+        {
+          "language": "uz",
+          "value": "Врач бактериолог"
+        }
+      ]
+    },
+    {
+      "code": "832",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Медсестра  кабинета"
+        },
+        {
+          "language": "uz",
+          "value": "Ofis hamshirasi"
+        }
+      ]
+    },
+    {
+      "code": "834",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Завед.лабораторией"
+        },
+        {
+          "language": "uz",
+          "value": "Boshliq.laboratoriya tomonidan"
+        }
+      ]
+    },
+    {
+      "code": "831",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Медсестра перевязочная"
+        },
+        {
+          "language": "uz",
+          "value": "Boglov hamshirasi"
+        }
+      ]
+    },
+    {
+      "code": "348",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Рентгенолаборант"
+        },
+        {
+          "language": "uz",
+          "value": "Rentgenolaborant"
+        }
+      ]
+    },
+    {
+      "code": "755",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Детский инфекционист"
+        },
+        {
+          "language": "uz",
+          "value": "Bolalar infektsionisti"
+        }
+      ]
+    },
+    {
+      "code": "637",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "медсестра фтизиатрического отделения"
+        },
+        {
+          "language": "uz",
+          "value": "ftiziatriya bo'limi hamshirasi"
+        }
+      ]
+    },
+    {
+      "code": "639",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Гнойно-септический хирург"
+        },
+        {
+          "language": "uz",
+          "value": "Yiringli septik jarroh"
+        }
+      ]
+    },
+    {
+      "code": "642",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Бронхоскопист"
+        },
+        {
+          "language": "uz",
+          "value": "Бронхоскопист"
+        }
+      ]
+    },
+    {
+      "code": "679",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Фтизиохирург"
+        },
+        {
+          "language": "uz",
+          "value": "Ftiziojarrox"
+        }
+      ]
+    },
+    {
+      "code": "461",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Онколопроктология"
+        },
+        {
+          "language": "uz",
+          "value": "Onkoproktologiya"
+        }
+      ]
+    },
+    {
+      "code": "495",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Медсестра дезинфекции"
+        },
+        {
+          "language": "uz",
+          "value": "Дезинфектор хамшираси"
+        }
+      ]
+    },
+    {
+      "code": "681",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Серолог"
+        },
+        {
+          "language": "uz",
+          "value": "Serolog"
+        }
+      ]
+    },
+    {
+      "code": "825",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Врач детский дерматовенеролог"
+        },
+        {
+          "language": "uz",
+          "value": "Pediatrik dermatovenerolog"
+        }
+      ]
+    },
+    {
+      "code": "634",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Врач отделения пульмонологии"
+        },
+        {
+          "language": "uz",
+          "value": "Pulmonologiya bo'limi shifokori"
+        }
+      ]
+    },
+    {
+      "code": "764",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Детский ангиограф"
+        },
+        {
+          "language": "uz",
+          "value": "Bolalar angiografi"
+        }
+      ]
+    },
+    {
+      "code": "640",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Экстракорпорал детоксикация и гемадиализ"
+        },
+        {
+          "language": "uz",
+          "value": "Ekstrakorporeal detoksifikatsiya va gemodializ"
+        }
+      ]
+    },
+    {
+      "code": "643",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Заместитель Директора"
+        },
+        {
+          "language": "uz",
+          "value": "Direktor O'rinbosari"
+        }
+      ]
+    },
+    {
+      "code": "644",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Паразитолог"
+        },
+        {
+          "language": "uz",
+          "value": "Parazitolog"
+        }
+      ]
+    },
+    {
+      "code": "680",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Фтизиоортопед"
+        },
+        {
+          "language": "uz",
+          "value": "Ftizioortoped"
+        }
+      ]
+    },
+    {
+      "code": "287",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Химиотерапевт"
+        },
+        {
+          "language": "uz",
+          "value": "Kimyoterapevt"
+        }
+      ]
+    },
+    {
+      "code": "751",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Подиатрист"
+        },
+        {
+          "language": "uz",
+          "value": "Podiatrist"
+        }
+      ]
+    },
+    {
+      "code": "754",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Детский аллерголог"
+        },
+        {
+          "language": "uz",
+          "value": "Bolalar allergologi"
+        }
+      ]
+    },
+    {
+      "code": "757",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Фтизиоуролог"
+        },
+        {
+          "language": "uz",
+          "value": "Ftiziourolog"
+        }
+      ]
+    },
+    {
+      "code": "758",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Колоноскопист"
+        },
+        {
+          "language": "uz",
+          "value": "Kolonoskopist"
+        }
+      ]
+    },
+    {
+      "code": "783",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Детский дерматолог"
+        },
+        {
+          "language": "uz",
+          "value": "Bolalar dermatologi"
+        }
+      ]
+    },
+    {
+      "code": "759",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Детский неонатолог"
+        },
+        {
+          "language": "uz",
+          "value": "Bolalar neonatologi"
+        }
+      ]
+    },
+    {
+      "code": "769",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Детский рентгенолог"
+        },
+        {
+          "language": "uz",
+          "value": "Bolalar rentgenolog"
+        }
+      ]
+    },
+    {
+      "code": "771",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Детский нефролог-гемодиализ"
+        },
+        {
+          "language": "uz",
+          "value": "Bolalar nefrolog gemodializa"
+        }
+      ]
+    },
+    {
+      "code": "773",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Детский эпидемиолог"
+        },
+        {
+          "language": "uz",
+          "value": "Bolalar epidemiolog"
+        }
+      ]
+    },
+    {
+      "code": "775",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Детский диетолог"
+        },
+        {
+          "language": "uz",
+          "value": "Bolalar dietologi"
+        }
+      ]
+    },
+    {
+      "code": "823",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Врач дерматовенеролог-лепролог"
+        },
+        {
+          "language": "uz",
+          "value": "Dermatovenerolog-moxov shifokori"
+        }
+      ]
+    },
+    {
+      "code": "762",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Детский уролог"
+        },
+        {
+          "language": "uz",
+          "value": "Bolalar urologi"
+        }
+      ]
+    },
+    {
+      "code": "833",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Ассистент  фармацевта"
+        },
+        {
+          "language": "uz",
+          "value": "Farmatsevt yordamchisi"
+        }
+      ]
+    },
+    {
+      "code": "394",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Лаборант"
+        },
+        {
+          "language": "uz",
+          "value": "Laborant"
+        }
+      ]
+    },
+    {
+      "code": "858",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Профессор"
+        },
+        {
+          "language": "uz",
+          "value": "Professor"
+        }
+      ]
+    },
+    {
+      "code": "859",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Анестезист"
+        },
+        {
+          "language": "uz",
+          "value": "Anestezist"
+        }
+      ]
+    },
+    {
+      "code": "962",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Хирург-трансплантолог"
+        },
+        {
+          "language": "uz",
+          "value": "Хирург-трансплантолог"
+        }
+      ]
+    },
+    {
+      "code": "391",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Акушер-Гинеколог"
+        },
+        {
+          "language": "uz",
+          "value": "Akusher-ginekolog"
+        }
+      ]
+    },
+    {
+      "code": "835",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Заведующий научной лабораторией"
+        },
+        {
+          "language": "uz",
+          "value": "Ilmiy laboratoriya mudiri"
+        }
+      ]
+    },
+    {
+      "code": "999",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Кардиолог (PhD)"
+        },
+        {
+          "language": "uz",
+          "value": "Kardiolog (PhD)"
+        }
+      ]
+    },
+    {
+      "code": "256",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Рентгенолог"
+        },
+        {
+          "language": "uz",
+          "value": "Rentgenolog"
+        }
+      ]
+    },
+    {
+      "code": "384",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Психоневролог"
+        },
+        {
+          "language": "uz",
+          "value": "Psixonevrolog"
+        }
+      ]
+    },
+    {
+      "code": "779",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Детский психотерапевт"
+        },
+        {
+          "language": "uz",
+          "value": "Bolalar psixoterapevti"
+        }
+      ]
+    },
+    {
+      "code": "782",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Детский генетик"
+        },
+        {
+          "language": "uz",
+          "value": "Bolalar genetiki"
+        }
+      ]
+    },
+    {
+      "code": "784",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Детский пластический хирург"
+        },
+        {
+          "language": "uz",
+          "value": "Bolalar plastik jarrohi"
+        }
+      ]
+    },
+    {
+      "code": "780",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Детский дефэктолог"
+        },
+        {
+          "language": "uz",
+          "value": "Bolalar defektologi"
+        }
+      ]
+    },
+    {
+      "code": "785",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Медицинский психолог"
+        },
+        {
+          "language": "uz",
+          "value": "Tibbiy psixolog"
+        }
+      ]
+    },
+    {
+      "code": "862",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Сотрудник отделения централизованной стерилизации"
+        },
+        {
+          "language": "uz",
+          "value": "Markazlashtirilgan sterilizatsiya bo‘limi xodimi"
+        }
+      ]
+    },
+    {
+      "code": "392",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Патронажная Медсестра"
+        },
+        {
+          "language": "uz",
+          "value": "Patronaj Hamshirasi"
+        }
+      ]
+    },
+    {
+      "code": "830",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Медсестра  постовая"
+        },
+        {
+          "language": "uz",
+          "value": "Navbatchi hamshira"
+        }
+      ]
+    },
+    {
+      "code": "451",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Патоморфолог"
+        },
+        {
+          "language": "uz",
+          "value": "Patolog"
+        }
+      ]
+    },
+    {
+      "code": "380",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Регистратура"
+        },
+        {
+          "language": "uz",
+          "value": "Ro'yxatxona"
+        }
+      ]
+    },
+    {
+      "code": "404",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Рецензент электронных рецептов"
+        },
+        {
+          "language": "uz",
+          "value": "Elektron retseptlar sharhlovchisi"
+        }
+      ]
+    },
+    {
+      "code": "382",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Сотрудник Отдела Кадров"
+        },
+        {
+          "language": "uz",
+          "value": "Xodimlar bo'limi xodimi"
+        }
+      ]
+    },
+    {
+      "code": "766",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Детский реаниматолог-неонатолог"
+        },
+        {
+          "language": "uz",
+          "value": "Bolalar reanimatolog-neanotologi"
+        }
+      ]
+    },
+    {
+      "code": "768",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Детский бронхоскопист"
+        },
+        {
+          "language": "uz",
+          "value": "Bolalar bronxoskopisti"
+        }
+      ]
+    },
+    {
+      "code": "826",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Врач методист"
+        },
+        {
+          "language": "uz",
+          "value": "Врач методист"
+        }
+      ]
+    },
+    {
+      "code": "393",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Врач ЭХО КГ"
+        },
+        {
+          "language": "uz",
+          "value": "EXO KG shifokori"
+        }
+      ]
+    },
+    {
+      "code": "408",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Врач Эхо-ЭГ"
+        },
+        {
+          "language": "uz",
+          "value": "Exo-EG shifokori"
+        }
+      ]
+    },
+    {
+      "code": "362",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Врач ЭЭГ"
+        },
+        {
+          "language": "uz",
+          "value": "EEG shifokori"
+        }
+      ]
+    },
+    {
+      "code": "998",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Фтизиоофтальмолог"
+        },
+        {
+          "language": "uz",
+          "value": "Ftizioftalmolog"
+        }
+      ]
+    },
+    {
+      "code": "596",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Фтизиатр-пульмонолог"
+        },
+        {
+          "language": "uz",
+          "value": "Фтизиатр-пульмонолог"
+        }
+      ]
+    },
+    {
+      "code": "195",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "ЛОР (Отоларинголог)"
+        },
+        {
+          "language": "uz",
+          "value": "LOR (otolaringolog)"
+        }
+      ]
+    },
+    {
+      "code": "836",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Лаборант научной лаборатории"
+        },
+        {
+          "language": "uz",
+          "value": "Ilmiy laboratoriya laboratoriya yordamchisi"
+        }
+      ]
+    },
+    {
+      "code": "194",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Стоматолог"
+        },
+        {
+          "language": "uz",
+          "value": "Tish shifokori"
+        }
+      ]
+    },
+    {
+      "code": "863",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "ЛФК (лечебная физкультура)"
+        },
+        {
+          "language": "uz",
+          "value": "LFK (terapevtik jismoniy tarbiya)"
+        }
+      ]
+    },
+    {
+      "code": "896",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Врач дерматовенеролог инновационного кабинета"
+        },
+        {
+          "language": "uz",
+          "value": "Инновация кабинети дерматовенеролог врачи"
+        }
+      ]
+    },
+    {
+      "code": "824",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Врач дерматовенеролог-сифилидолог"
+        },
+        {
+          "language": "uz",
+          "value": "Врач дерматовенеролог-сифилидолог"
+        }
+      ]
+    },
+    {
+      "code": "405",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Администратор MedHub"
+        },
+        {
+          "language": "uz",
+          "value": "MedHub administratori"
+        }
+      ]
+    },
+    {
+      "code": "446",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Детский реаниматолог"
+        },
+        {
+          "language": "uz",
+          "value": "Bolalar reanimatologi"
+        }
+      ]
+    },
+    {
+      "code": "303",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Эхокардиографист"
+        },
+        {
+          "language": "uz",
+          "value": "Ekokardiyograf"
+        }
+      ]
+    },
+    {
+      "code": "641",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Детский сурдолог"
+        },
+        {
+          "language": "uz",
+          "value": "Bolalar surdologi"
+        }
+      ]
+    },
+    {
+      "code": "213",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Врач УЗИ"
+        },
+        {
+          "language": "uz",
+          "value": "UTT shifokori"
+        }
+      ]
+    },
+    {
+      "code": "366",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Кольпоскопист"
+        },
+        {
+          "language": "uz",
+          "value": "Kolposkopist"
+        }
+      ]
+    },
+    {
+      "code": "398",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Детский Офтальмолог"
+        },
+        {
+          "language": "uz",
+          "value": "Bolalar Oftalmologi"
+        }
+      ]
+    },
+    {
+      "code": "440",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Аудиолог"
+        },
+        {
+          "language": "uz",
+          "value": "Audiolog"
+        }
+      ]
+    },
+    {
+      "code": "291",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Врач реабилитолог"
+        },
+        {
+          "language": "uz",
+          "value": "Reabilitatsiya shifokori"
+        }
+      ]
+    },
+    {
+      "code": "356",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Методист"
+        },
+        {
+          "language": "uz",
+          "value": "Metodist"
+        }
+      ]
+    },
+    {
+      "code": "358",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "врач ВКК"
+        },
+        {
+          "language": "uz",
+          "value": "VKK shifokori"
+        }
+      ]
+    },
+    {
+      "code": "411",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Врач ВТЭК (врачебно-трудовая экспертная комиссия)"
+        },
+        {
+          "language": "uz",
+          "value": "TMEK shifokori (tibbiy mehnat ekspert komissiyasi)"
+        }
+      ]
+    },
+    {
+      "code": "459",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Торакальный хирург"
+        },
+        {
+          "language": "uz",
+          "value": "Torakal jarroh"
+        }
+      ]
+    },
+    {
+      "code": "383",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Интегратор MedHub"
+        },
+        {
+          "language": "uz",
+          "value": "MedHub Integratori"
+        }
+      ]
+    },
+    {
+      "code": "409",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Врач Сурдолог"
+        },
+        {
+          "language": "uz",
+          "value": "Sudrologist"
+        }
+      ]
+    },
+    {
+      "code": "828",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Специалист информационной службы"
+        },
+        {
+          "language": "uz",
+          "value": "Information Service Specialist"
+        }
+      ]
+    },
+    {
+      "code": "818",
+      "designation": [
+        {
+          "language": "uz",
+          "value": "Ilmiy ishlar bo'yicha direktor o'rinbosari"
+        }
+      ]
+    },
+    {
+      "code": "397",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Детский Хирург"
+        },
+        {
+          "language": "uz",
+          "value": "Bolalar Jarrohi"
+        }
+      ]
+    },
+    {
+      "code": "401",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Детский психоневролог"
+        },
+        {
+          "language": "uz",
+          "value": "Bolalar psixonevrologi"
+        }
+      ]
+    },
+    {
+      "code": "430",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Микрохирург"
+        },
+        {
+          "language": "uz",
+          "value": "Mikrojarroh"
+        }
+      ]
+    },
+    {
+      "code": "455",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Морфология"
+        },
+        {
+          "language": "uz",
+          "value": "Morfologiya"
+        }
+      ]
+    },
+    {
+      "code": "378",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Маммограф"
+        },
+        {
+          "language": "uz",
+          "value": "Mammograf"
+        }
+      ]
+    },
+    {
+      "code": "402",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Аллерголог"
+        },
+        {
+          "language": "uz",
+          "value": "Allergolog"
+        }
+      ]
+    },
+    {
+      "code": "236",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Пульмонолог"
+        },
+        {
+          "language": "uz",
+          "value": "Pulmonolog"
+        }
+      ]
+    },
+    {
+      "code": "211",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Невропатолог"
+        },
+        {
+          "language": "uz",
+          "value": "Nevropatolog"
+        }
+      ]
+    },
+    {
+      "code": "390",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Администратор Бюджета Фонда"
+        },
+        {
+          "language": "uz",
+          "value": "Fond byudjeti ma'muri"
+        }
+      ]
+    },
+    {
+      "code": "1000",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Фтизиогинеколог"
+        },
+        {
+          "language": "uz",
+          "value": "Ftizioginekolog"
+        }
+      ]
+    },
+    {
+      "code": "239",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Врач УЗД"
+        },
+        {
+          "language": "uz",
+          "value": "UTT mutahassisi"
+        }
+      ]
+    },
+    {
+      "code": "245",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Андролог"
+        },
+        {
+          "language": "uz",
+          "value": "Androlog"
+        }
+      ]
+    },
+    {
+      "code": "248",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Сексопатолог"
+        },
+        {
+          "language": "uz",
+          "value": "Jinsiy terapevt"
+        }
+      ]
+    },
+    {
+      "code": "598",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Цитогенетик"
+        },
+        {
+          "language": "uz",
+          "value": "Sitogenetik"
+        }
+      ]
+    },
+    {
+      "code": "434",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Онкопедиатр"
+        },
+        {
+          "language": "uz",
+          "value": "Onkopediatr"
+        }
+      ]
+    },
+    {
+      "code": "778",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Гинеколог-эндокринолог"
+        },
+        {
+          "language": "uz",
+          "value": "Гинеколог-эндокринолог"
+        }
+      ]
+    },
+    {
+      "code": "435",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Таксиколог"
+        },
+        {
+          "language": "uz",
+          "value": "Taksikolog"
+        }
+      ]
+    },
+    {
+      "code": "421",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "ИТ Оператор"
+        },
+        {
+          "language": "uz",
+          "value": "IT operator"
+        }
+      ]
+    },
+    {
+      "code": "423",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Онкомаммолог"
+        },
+        {
+          "language": "uz",
+          "value": "Onkomammolog"
+        }
+      ]
+    },
+    {
+      "code": "427",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Рентгенхирург"
+        },
+        {
+          "language": "uz",
+          "value": "Rentgen jarrohi"
+        }
+      ]
+    },
+    {
+      "code": "431",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Кардиореаниматолог"
+        },
+        {
+          "language": "uz",
+          "value": "Kardioreanimatolog"
+        }
+      ]
+    },
+    {
+      "code": "438",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Операционная медсестра"
+        },
+        {
+          "language": "uz",
+          "value": "Operatsion hamshira"
+        }
+      ]
+    },
+    {
+      "code": "439",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Сперматолог"
+        },
+        {
+          "language": "uz",
+          "value": "Spermatolog"
+        }
+      ]
+    },
+    {
+      "code": "269",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Нейропсихолог"
+        },
+        {
+          "language": "uz",
+          "value": "Nevropsixolog"
+        }
+      ]
+    },
+    {
+      "code": "217",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Гепатолог"
+        },
+        {
+          "language": "uz",
+          "value": "Gepatolog"
+        }
+      ]
+    },
+    {
+      "code": "231",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Кинезитерапевт"
+        },
+        {
+          "language": "uz",
+          "value": "Kineziterapevt"
+        }
+      ]
+    },
+    {
+      "code": "252",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Трихолог"
+        },
+        {
+          "language": "uz",
+          "value": "Tricholog"
+        }
+      ]
+    },
+    {
+      "code": "259",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Проктолог"
+        },
+        {
+          "language": "uz",
+          "value": "Proktolog"
+        }
+      ]
+    },
+    {
+      "code": "267",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Флеболог"
+        },
+        {
+          "language": "uz",
+          "value": "Flebolog"
+        }
+      ]
+    },
+    {
+      "code": "214",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Гирудотерапевт"
+        },
+        {
+          "language": "uz",
+          "value": "Girudoterapevt"
+        }
+      ]
+    },
+    {
+      "code": "221",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Кардионевролог"
+        },
+        {
+          "language": "uz",
+          "value": "Kardionevrolog"
+        }
+      ]
+    },
+    {
+      "code": "286",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Гигиенист"
+        },
+        {
+          "language": "uz",
+          "value": "Gigienist"
+        }
+      ]
+    },
+    {
+      "code": "274",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Вестибулолог"
+        },
+        {
+          "language": "uz",
+          "value": "Vestibulolog"
+        }
+      ]
+    },
+    {
+      "code": "208",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Венеролог"
+        },
+        {
+          "language": "uz",
+          "value": "Venereolog"
+        }
+      ]
+    },
+    {
+      "code": "232",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Логопед-дефектолог"
+        },
+        {
+          "language": "uz",
+          "value": "Logoped-defektolog"
+        }
+      ]
+    },
+    {
+      "code": "237",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Анестезиолог"
+        },
+        {
+          "language": "uz",
+          "value": "Anesteziolog"
+        }
+      ]
+    },
+    {
+      "code": "244",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Реабилитолог"
+        },
+        {
+          "language": "uz",
+          "value": "Reabilitolog"
+        }
+      ]
+    },
+    {
+      "code": "224",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Инфекционист"
+        },
+        {
+          "language": "uz",
+          "value": "Infeksionist"
+        }
+      ]
+    },
+    {
+      "code": "202",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Дерматолог"
+        },
+        {
+          "language": "uz",
+          "value": "Dermatolog"
+        }
+      ]
+    },
+    {
+      "code": "227",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Кардиоревматолог"
+        },
+        {
+          "language": "uz",
+          "value": "Kardiorevmatolog"
+        }
+      ]
+    },
+    {
+      "code": "207",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Эндокринолог"
+        },
+        {
+          "language": "uz",
+          "value": "Endokrinolog"
+        }
+      ]
+    },
+    {
+      "code": "241",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Хирург"
+        },
+        {
+          "language": "uz",
+          "value": "Jarroh"
+        }
+      ]
+    },
+    {
+      "code": "860",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Патогистолог"
+        },
+        {
+          "language": "uz",
+          "value": "Патогистолог"
+        }
+      ]
+    },
+    {
+      "code": "246",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Врач КЛД"
+        },
+        {
+          "language": "uz",
+          "value": "KLD mutahasissi"
+        }
+      ]
+    },
+    {
+      "code": "272",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Афазиолог"
+        },
+        {
+          "language": "uz",
+          "value": "Afaziolog"
+        }
+      ]
+    },
+    {
+      "code": "275",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Аритмолог"
+        },
+        {
+          "language": "uz",
+          "value": "Aritmolog"
+        }
+      ]
+    },
+    {
+      "code": "285",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Репродуктолог"
+        },
+        {
+          "language": "uz",
+          "value": "Reproduktolog"
+        }
+      ]
+    },
+    {
+      "code": "288",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Кинезиолог"
+        },
+        {
+          "language": "uz",
+          "value": "Kinesiolog"
+        }
+      ]
+    },
+    {
+      "code": "299",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Ринохирург"
+        },
+        {
+          "language": "uz",
+          "value": "Rinoxirurg"
+        }
+      ]
+    },
+    {
+      "code": "301",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Эмбриолог"
+        },
+        {
+          "language": "uz",
+          "value": "Embriolog"
+        }
+      ]
+    },
+    {
+      "code": "311",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Медбрат"
+        },
+        {
+          "language": "uz",
+          "value": "Tibbiyot xodimi"
+        }
+      ]
+    },
+    {
+      "code": "253",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Массажист"
+        },
+        {
+          "language": "uz",
+          "value": "Massajchi"
+        }
+      ]
+    },
+    {
+      "code": "264",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Онкохирург"
+        },
+        {
+          "language": "uz",
+          "value": "onkojarroh"
+        }
+      ]
+    },
+    {
+      "code": "258",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Хирург-проктолог"
+        },
+        {
+          "language": "uz",
+          "value": "Jarroh proktolog"
+        }
+      ]
+    },
+    {
+      "code": "280",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Косметолог-эстетист"
+        },
+        {
+          "language": "uz",
+          "value": "Kosmetolog-estetist"
+        }
+      ]
+    },
+    {
+      "code": "283",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Косметолог-дерматолог"
+        },
+        {
+          "language": "uz",
+          "value": "Kosmetolog-dermatolog"
+        }
+      ]
+    },
+    {
+      "code": "289",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Висцеральный терапевт"
+        },
+        {
+          "language": "uz",
+          "value": "Visseral terapevt"
+        }
+      ]
+    },
+    {
+      "code": "292",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Врач УЗДГ"
+        },
+        {
+          "language": "uz",
+          "value": "UTDG mutahasissi"
+        }
+      ]
+    },
+    {
+      "code": "296",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Вертеброневролог"
+        },
+        {
+          "language": "uz",
+          "value": "Vertebronevrolog"
+        }
+      ]
+    },
+    {
+      "code": "298",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Челюстно-лицевой хирург"
+        },
+        {
+          "language": "uz",
+          "value": "Jag'-yuz jarrohi"
+        }
+      ]
+    },
+    {
+      "code": "198",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Травматолог-ортопед"
+        },
+        {
+          "language": "uz",
+          "value": "Travmatolog-ortoped"
+        }
+      ]
+    },
+    {
+      "code": "351",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Врач СМП"
+        },
+        {
+          "language": "uz",
+          "value": "Tez yordam shifokori"
+        }
+      ]
+    },
+    {
+      "code": "387",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Администратор Фонда"
+        },
+        {
+          "language": "uz",
+          "value": "Fond ma'muri"
+        }
+      ]
+    },
+    {
+      "code": "432",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Врач трансфузиолог"
+        },
+        {
+          "language": "uz",
+          "value": "Transfuziolog shifokor"
+        }
+      ]
+    },
+    {
+      "code": "247",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Врач МСКТ"
+        },
+        {
+          "language": "uz",
+          "value": "MSKT mutaxassisi"
+        }
+      ]
+    },
+    {
+      "code": "395",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Фтизиопульмонолог"
+        },
+        {
+          "language": "uz",
+          "value": "Ftiziopulmonolog"
+        }
+      ]
+    },
+    {
+      "code": "415",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Детский Невропатолог"
+        },
+        {
+          "language": "uz",
+          "value": "Bolalar nevropatologi"
+        }
+      ]
+    },
+    {
+      "code": "399",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Детский Эндокринолог"
+        },
+        {
+          "language": "uz",
+          "value": "Bolalar Endokrinologi"
+        }
+      ]
+    },
+    {
+      "code": "447",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Старшая медсестра"
+        },
+        {
+          "language": "uz",
+          "value": "Bosh hamshira"
+        }
+      ]
+    },
+    {
+      "code": "597",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Врач традиционной медицины"
+        },
+        {
+          "language": "uz",
+          "value": "Xalq tabobati shifokori"
+        }
+      ]
+    },
+    {
+      "code": "360",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Практикующая Медсестра"
+        },
+        {
+          "language": "uz",
+          "value": "Amaliyotchi hamshira"
+        }
+      ]
+    },
+    {
+      "code": "254",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Остеопат"
+        },
+        {
+          "language": "uz",
+          "value": "Osteopat"
+        }
+      ]
+    },
+    {
+      "code": "682",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "ЭКГ медсестра"
+        },
+        {
+          "language": "uz",
+          "value": "EKG hamshira"
+        }
+      ]
+    },
+    {
+      "code": "386",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Врач УЗИ (скрининг)"
+        },
+        {
+          "language": "uz",
+          "value": "UTT shifokori (skrining)"
+        }
+      ]
+    },
+    {
+      "code": "822",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Врач верификатор"
+        },
+        {
+          "language": "uz",
+          "value": "Врач верификатор"
+        }
+      ]
+    },
+    {
+      "code": "995",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Медсестра приёмного отделения"
+        },
+        {
+          "language": "uz",
+          "value": "Qabul bo`limi hamshirasi"
+        }
+      ]
+    },
+    {
+      "code": "829",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Медсестра палатная"
+        },
+        {
+          "language": "uz",
+          "value": "Hamshira palatasi"
+        }
+      ]
+    },
+    {
+      "code": "406",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Врач ЭКГ"
+        },
+        {
+          "language": "uz",
+          "value": "EKG shifokori"
+        }
+      ]
+    },
+    {
+      "code": "861",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Специалист народной медицины"
+        },
+        {
+          "language": "uz",
+          "value": "Xalq Tabobati mutaxassisi"
+        }
+      ]
+    },
+    {
+      "code": "370",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Стационарный врач"
+        },
+        {
+          "language": "uz",
+          "value": "Statsionar shifokori"
+        }
+      ]
+    },
+    {
+      "code": "445",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Гистолог"
+        },
+        {
+          "language": "uz",
+          "value": "Gistolog"
+        }
+      ]
+    },
+    {
+      "code": "1066",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Нейрореабилитолог"
+        },
+        {
+          "language": "uz",
+          "value": "Neyroreabilitolog"
+        }
+      ]
+    },
+    {
+      "code": "396",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Детский ЛОР (Отоларинголог)"
+        },
+        {
+          "language": "uz",
+          "value": "Bolalar KBB (otolaringolog)"
+        }
+      ]
+    },
+    {
+      "code": "433",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Допплерография"
+        },
+        {
+          "language": "uz",
+          "value": "Dopplerografiya"
+        }
+      ]
+    },
+    {
+      "code": "413",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Врач дневного стационара"
+        },
+        {
+          "language": "uz",
+          "value": "Kunduzgi shifoxona shifokori"
+        }
+      ]
+    }
+  ],
+  "caseSensitive": true,
+  "hierarchyMeaning": "is-a",
+  "language": "uz",
+  "experimental": true,
+  "count": 300
+}

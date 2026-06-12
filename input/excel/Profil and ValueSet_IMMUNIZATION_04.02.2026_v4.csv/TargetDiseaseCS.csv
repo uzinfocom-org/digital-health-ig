@@ -1,0 +1,41 @@
+CODE	UZ	RU	EN
+397430003 	Difteriya (kasallik)	Дифтерия (заболевание)	Diphtheria (disorder)		ValueSet http://hl7.org/fhir/ValueSet/immunization-target-disease
+27836007 	Ko'k yo'tal	Коклюш	Pertussis		
+76902006 	Qoqshol	Столбняк	Tetanus
+721764008 	Odam poliovirus infektsiyasi (kasallik)	Инфекция, вызванная полиовирусом человека (заболевание)	Infection caused by Human poliovirus (disorder)
+14189004 	Qizamiq	Корь	Measles
+36989005 	Parotit	Свинка	Mumps
+36653000 	Qizilcha	Краснуха	Rubella
+16814004 	Pnevmokokk yuqumli kasallik	Пневмококковая инфекционная болезнь	Pneumococcal infectious disease
+23511006 	Meningokokk yuqumli kasalligi	Менингококковая инфекционная болезнь	Meningococcal infectious disease
+709410003 	Haemophilus influenzae turi b infektsiyasi	Инфекция Haemophilus influenzae типа b	Haemophilus influenzae type b infection
+56717001 	Sil kasalligi	Туберкулез	Tuberculosis
+363354003 	Bachadon bo'yni saratoni	Злокачественная опухоль шейки матки	Malignant tumor of cervix
+266113007 	Genital siğillar	Генитальные бородавки	Genital warts
+415822001 	Rotavirus tufayli kelib chiqqan virusli gastroenterit	Вирусный гастроэнтерит, вызванный ротавирусом	Viral gastroenteritis due to Rotavirus
+66071002 	Virusli gepatit B turi	Вирусный гепатит типа B	Type B viral hepatitis
+40468003 	Virusli gepatit A turi	Вирусный гепатит, тип А	Viral hepatitis, type A
+7111000119109 	Gepatit E virusi infektsiyasi	Вирусная инфекция гепатита Е	Hepatitis E virus infection
+719590007 	Mavsumiy gripp virusi (kasallik)	Грипп, вызванный сезонным вирусом гриппа (заболевание)	Influenza caused by seasonal influenza virus (disorder)
+719865001 	Pandemik gripp virusi (kasallik)	Грипп, вызванный пандемическим вирусом гриппа (заболевание)	Influenza caused by pandemic influenza virus (disorder)
+38907003 	Suvchechak	Ветряная оспа	Varicella
+4740000 	Shingles	Опоясывающий герпес	Herpes zoster
+55735004 	Respirator sinsitial virusli infektsiya	Респираторно-синцитиальная вирусная инфекция	Respiratory syncytial virus infection
+240613006 	Tif guruhining rikketsial kasalligi	Риккетсиальная болезнь группы тифа	Typhus group rickettsial disease
+4834000 	Tifo isitmasi	Брюшной тиф	Typhoid fever
+85904008 	Paratif	Паратиф	Paratyphoid fever
+63650001 	vabo	Холера	Cholera
+16541001 	Sariq isitma	Желтая лихорадка	Yellow fever
+38362002 	Denga	Денге	Dengue
+61462000 	Вezgak	Малярия	Malaria
+14168008 	Quturma	Бешенство	Rabies
+186772009 	RMSF - Rokki tog'li dog'li isitmasi	РМСФ - Пятнистая лихорадка Скалистых гор	RMSF - Rocky Mountain spotted fever
+712986001 	Shomil orqali yuqadigan ensefalit	Клещевой энцефалит	Tickborne encephalitis
+52947006 	Yapon ensefalit virusi kasalligi	Вирусная болезнь японского энцефалита	Japanese encephalitis virus disease
+186788009 	Q isitmasi	Лихорадка Ку	Q fever
+409498004 	Kuydirgi (buzilish)	Сибирская язва (расстройство)	Anthrax (disorder)
+58750007 	Vabo	Чума	Plague
+19265001 	Tulyaremiya	Туляремия	Tularemia
+23502006 	Lyme kasalligi	Болезнь Лайма	Lyme disease
+75702008 	Brutselloz	Бруцеллез	Brucellosis
+80612004 	Leyshmanioz	Лейшманиоз	Leishmaniasis

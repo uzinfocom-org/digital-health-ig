@@ -1,0 +1,20 @@
+@startuml lab-sequence
+title Ordering a test and returning the result
+autonumber
+
+actor "Ordering\nclinician" as Clin
+participant "DHP\nFHIR server" as DHP
+participant "Laboratory\n(LIS)" as Lab
+
+Clin -> DHP : POST ServiceRequest (intent = order)
+
+DHP -> Lab : order available
+
+note over Lab : collect specimen,\nrun each analyte
+Lab -> DHP : POST Bundle (transaction):\n[[StructureDefinition-uz-core-specimen.html Specimen]] + [[StructureDefinition-uz-core-observation.html Observation]]s + DiagnosticReport\n(all reference ServiceRequest)
+
+Clin -> DHP : GET DiagnosticReport?based-on=ServiceRequest/[id]\n&_include=DiagnosticReport:result
+activate DHP
+DHP --> Clin : Bundle - report + observations
+deactivate DHP
+@enduml

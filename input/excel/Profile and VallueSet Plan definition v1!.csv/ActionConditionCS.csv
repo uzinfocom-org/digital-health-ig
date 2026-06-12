@@ -1,0 +1,4 @@
+Code,EN, UZ, RU,,
+ applicability,Applicability	,Qo‘llanilish sharti	,Условие применимости,,http://hl7.org/fhir/ValueSet/action-condition-kind
+ start,	Start,Boshlanish,Начало,,
+stop,Stop,Tugash,Завершение,,

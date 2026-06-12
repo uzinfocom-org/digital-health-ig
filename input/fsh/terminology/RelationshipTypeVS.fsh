@@ -23,3 +23,4 @@ Description: "Relationship types in Uzbekistan"
 * include $v2-0131#O
 * include $v2-0131#U
 * include $v3-RoleCode#INTPRTER
+* include $v3-RoleCode#MTH

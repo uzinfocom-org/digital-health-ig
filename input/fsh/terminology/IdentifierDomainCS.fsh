@@ -54,6 +54,15 @@ Description: """
       * ^property[=].valueString = Canonical(uzb-hrm-argos)
       * ^property[+].code = #notSelectable
       * ^property[=].valueBoolean = false
+    * #https://dhp.uz/fhir/core/sid/org/uz/shif "Organization identifiers assigned by the State Health Insurance Fund (SHIF) of Uzbekistan"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCoding = $identifier-type#NIIP
+      * ^property[+].code = #country
+      * ^property[=].valueCoding = $iso-3166#UZ
+      * ^property[+].code = #naming-system
+      * ^property[=].valueString = Canonical(uzb-shif)
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
 * #https://dhp.uz/fhir/core/sid/pro "Root of identifiers for healthcare professionals"
   * ^property[0].code = #notSelectable
   * ^property[=].valueBoolean = true

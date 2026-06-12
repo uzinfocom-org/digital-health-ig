@@ -1,0 +1,469 @@
+CODE,UZ,RU,EN
+739002430,Fors,ПЕРСЫ,PERSIAN
+1015,Fulbe,ФУЛБЕ/ФУЛЬБЕ,FULANI
+1016,Futeng,ФУТЕНГ/ФУТЕНГА,FUTENG
+1017,Xa (Vaxa),ХА (ВАХА)/ХА (ВАХА),HA (WAHA)
+1018,Xazarli,ХАЗАРЕЕЦ/ХАЗАРЕЙКА,HAZARA
+1019,Xayya,ХАЙЯ/ХАЙЯ,HAYA
+1020,Xalxa-Mogoliyalik,ХАЛХА-МОНГОЛ/ХАЛХА-МОНГОЛКА,HALHE-MONGOL
+1021,Xausa,ХАУСА/ХАУСА,HAUSA
+1023,Xexe (Vaxexe),"ХЕХЕ, (ВАХЕХЕ)/ХЕХЕ, (ВАХЕХЕ)","HEHE, (WAHEHE)"
+1024,Xinalikli,ХИНАЛУГ/ХИНАЛУГ,KHINALIG
+1025,Xindustonlik,ХИНДУСТАНЕЦ/ХИНДУСТАНКА,HINDUSTANI
+1026,Xuey Dungan,ХУЭЙ ДУНГАН/ХУЭЙ ДУНГАН,HUI DUNGAN
+1027,Montenegrolik,ЧЕРНОГОРЕЦ/ЧЕРНОГОРКА,MONTENEGRIN
+1028,Chjuan,ЧЖУАН/ЧЖУАН,ZHUANG
+1029,Chilili,ЧИЛИЕЦ/ЧИЛИЙКА,CHILEAN
+1030,Chin,ЧИН/ЧИН,CHIN
+1031,Chokve,ЧОКВЕ/ЧОКВЕ,CHOKWE
+1032,Chuvans,ЧУВАНЦ/ЧУВАНЦ,CHUVANS
+1033,Shaviyya,ШАВИЙЯ/ШАВИЙЯ,SHAUYYA
+1034,Shan,ШАН/ШАН,SHAN
+1035,Shved,ШВЕД/ШВЕДКА,SWEDISH
+1036,Shlex,ШЛЕХ/ШЛЕХ,SHLEH
+1037,Shotlandiyalik,ШОТЛАНДЕЦ/ШОТЛАНДКА,SCOTISH
+1038,Eve,ЭВЕ/ЭВЕ,EWЕ
+1039,Evenk,ЭВЕНК/ЭВЕНКИЙКА,EVENK
+1040,Edo (Bini),ЭДО (БИНИ)/ЭДО (БИНИ),EDO (BINI)
+1041,Ekvadorlik,ЭКВАДОРЕЦ/ЭКВАДОРКА,ECUADORIAN
+1042,Enets,ЭНЕЦ/ЭНКА,ENETS
+1043,Eskimos,ЭСКИМОС/ЭСКИМОСКА,ESKIMOS
+1044,Janubiy Luo,ЮЖНЫЙ ЛУО/АЖНАЯ ЛУО,SOUTHERN LUO
+1045,Yukagir,ЮКАГИР/ЮКАГИРКА,YUKAGIR
+1046,Yavalik,ЯВАНЕЦ/ЯВАНКА,JAVANESE
+1047,Yamaykalik,ЯМАЙЕЦ/ЯМАЙКА,JAMAICAN
+1048,Yao (Vayao),ЯО (ВАЯО)/ЯО (ВАЯО),YAO (WAYA)
+1049,Nigeriyalik,НИГЕРИЕЦ/НИГЕРИЙКА,NIGERIAN
+1050,Suriyalik,СИРИЕЦ/СИРИЙКА,SYRIAN
+1051,Krimchak,КРИМЧАК,KRIMCHAK
+1052,Angolalik,АНГОЛЕЦ/АНГОЛКА,ANGOL
+1053,Kurama,КУРАМА,KURAMA
+739002050,Lachka,ЛАЧКА,LACHKA
+739002053,Lo'li (Sigan),ЦЫГАН,GIPSY
+739002054,Qoraqalpoq,КАРАКАЛПАК,QORAQALPOQ
+739002055,Angolalik,АНГОЛЕЦ/АНГОЛАНКА,ANGOL/ANGOLANKA
+739002056,Angolalik (Muqobil),АНГОЛЕЦ/АНГОЛАНКА,ANGOL/ANGOLANKA
+739002091,Qoraqalpoq (Muqobil),КАРАКАЛПАК,QORAQALPOQ
+739002092,Fors (Farsi),Персы (фарси),FORS
+739002093,Latgali,ЛАТГАЛ/ЛАТГАЛКА,LATGAL
+739002094,Ugandalik,УГАНДИЕЦ/УГАНДИЙКА,UGANDAN
+739002110,Lao,ЛАО,LAO
+739002130,Shork,ШОРК/ШОРКА,SHORK
+739002131,Yugoslav,ЮГОСЛАВ,JUGOSLAV
+739002170,Nivxa,НИВХА,NIVHA
+739002190,Qoraqalpoq (Takroriy),КАРАКАЛПАК,QORAQALPOQ
+739002191,Latgali (Muqobil),ЛАТГАЛ/ЛАТГАЛКА,LATGAL
+739002210,Qrim Tatari,КРЫМСКИЙ ТАТАРИН,CRIMEAN TATAR
+739002230,Panamalik,ПАНАМЕЦ/ПАНАМКА,PANAMANIAN
+739002270,Marakaniyen,МАРАКАНЦЫ,MARAKANIEN
+739002290,Liviyalik,ЛИВИЙЦЫ,LIBYAN
+739002291,Lazli,ЛАЗ,LAZ
+739002315,Laz Test,ЛАЗ ТЕСТ,ЛАЗ ТЕСТ
+739002316,Laz Test 2,ЛАЗ ТЕСТ2,ЛАЗ ТЕСТ2
+739002317,Laz (Muqobil),ЛАЗ,LAZ
+739002330,Manika,МАНИКА,MANIKA
+739002350,Falastinlik,ПАЛЕСТИНЕЦ,PALASTIN
+739002370,Lak (Lachanka),Лакец/Лакчанка,LAK
+739002390,Lak (Lakes),ЛАКЕЦ/ЛАКЧАНКА,LAKEC/LAKCHANKA
+739002410,Lak,ЛАКЕЦ,LAK
+739002411,Lakes,ЛАКЕЦ,LAKES
+0,Abxaz,АБХАЗ/АБХАЗКА,ABKHAZIAN
+1,Adigey,АДЫГЕЕЦ/АДЫГЕЙКА,ADYGEI
+3,Oltoy,АЛТАЕЦ/АЛТАЙКА,ALTAI
+4,Arman,АРМЯНИН/АРМЯНКА,ARMENIAN
+5,Bolqor,БАЛКАРЕЦ/БАЛКАРКА,BALKAR
+6,Boshqird,БАШКИР/БАШКИРКА,BOSHKIR
+7,Belorus,БЕЛОРУС/БЕЛОРУСКА,BYELORUSSIAN
+8,Belgiyalik,БЕСЬГИЕЦ/БЕЛЬГИЙКА,BELGIAN
+9,Buryat,БУРЯТ/БУРЯТКА,BURYAT
+10,Vetnamlik,ВЬЕТНАМЕЦ/ВЬЕТНАМКА,VIETNAMESE
+11,Gruzin,ГРУЗИН/ГРУЗИНКА,GEORGIAN
+12,Dargin,ДАРГИНЕЦ/ДАРГИНКА,DARGIN
+14,Yaxudiy,ЕВРЕЙ/ЕВРЕЙКА,JEW
+15,Yezid,ЕЗИД/ЕЗИДКА,EZID
+16,Ingush,ИНГУШ/ИНГУШКА,INGUSH
+17,Italiyalik,ИТАЛЬЯНЕЦ/ИТАЛЬЯНКА,ITALIAN
+18,Kabardin,КАБАРДИНЕЦ/КАБАРДИНКА,KABARDIАN
+19,Qozoq,КАЗАХ/КАЗАШКА,KAZAKH
+20,Qalmiq,КАЛМЫК/КАЛМЫЧКА,KALMYK
+21,Qoraqalpoq,КАРАКАЛПАК/КАРАКАЛПАЧКА,KARAKALPAK
+22,Qorachoy,КАРАЧАЕВЕЦ/КАРАЧАЕВКА,KORACHAI
+23,Kareliyalik,КАРЕЛ/КАРЕЛКА,KARELIAN
+24,Qirg'iz,КИРГИЗ/КИРГИЗКА,KIRGHIZ
+25,Komi,КОМИ/КОМИ,KOMI
+26,Komi-Permyak,КОМИ-ПЕРМЯК/КОМИ-ПЕРМЯЧКА,KOMI_PERMYAK
+27,Latish,ЛАТЫШ/ЛАТЫШКА,LETT
+28,Litvalik,ЛИТОВЕЦ/ЛИТОВКА,LITHUANIAN
+29,Mari,МАРИЕЦ/МАРИЙКА,MARI
+30,Moldavan,МОЛДАВАНИН/МОЛДАВАНКА,MOLDAVIAN
+31,Mordva,МОРДВИН/МОРДОВКА,MORDOVINIANS
+33,Nemis,НЕМЕЦ/НЕМКА,GERMAN
+34,Osetin,ОСЕТИН/ОСЕТИНКА,OSSETIAN
+35,Polyak,ПОЛЯК/ПОЛЬКА,POLE
+36,Rus,РУССКИЙ/РУССКАЯ,RUSSIAN
+37,Serb,СЕРБ/СЕРБКА,SERB
+38,Tabasaran,ТАБАСАРАНЕЦ/ТАБАСАРАНКА,TABASARAN
+39,Tojik,ТАДЖИК/ТАДЖИЧКА,TAJIK
+40,Tatar,ТАТАРИН/ТАТАРКА,TATAR
+41,Tuvin,ТУВИНЕЦ/ТУВИНКА,TUVINIAN
+42,Turkman,ТУРКМЕН/ТУРКМЕНКА,TURKMAN
+43,Udmurt,УДМУРТ/УДМУРТКА,UDMURT
+44,O'zbek,УЗБЕК/УЗБЕЧКА,UZBEK
+45,Ukrain,УКРАИНЕЦ/УКРАИНКА,UKRAINIAN
+46,Xakas,ХАКАСЕЦ/ХАКАСКА,KHAKASS
+47,Lo'li,ЦЫГАН/ЦЫГАНКА,LULI
+48,Cherkes,ЧЕРКЕС/ЧЕРКЕШЕНКА,CIRCASSIAN
+49,Chechen,ЧЕЧЕНЕЦ/ЧЕЧЕНКА,CHECHEN
+50,Chuvash,ЧУВАШ/ЧУВАШКА,CHUVASH
+51,Estoniyalik,ЭСТОНЕЦ/ЭСТОНКА,ESTONIAN
+52,Yoqut,ЯКУТ/ЯКУТКА,YАКUT
+53,Tat,ТАТ/ТАТКА,TATAMI
+54,Gagauz,ГАГАУЗ/ГАГАУЗКА,GAGAUZ
+55,Lezgin,ЛЕЗГИН/ЛЕЗГИНКА,LEZGHIN
+56,Koreys,КОРЕЕЦ/КОРЕЯНКА,KOREAN
+57,Turk,ТУРОК/ТУРЧАНКА,TURK
+58,Uyg'ur,УЙГУР/УЙГУРКА,UIGUR
+59,Vengr,ВЕНГР/ВЕНГЕРКА,HUNGARIAN
+60,Grek,ГРЕК/ГРЕЧАНКА,GREEK
+61,Dungani,ДУНГАНИН/ДУНГАНКА,DUNGAN
+62,Makedoniyalik,МАКЕДОНЕЦ/МАКЕДОНКА,MACEDONIAN
+63,Rumin,РУМЫН/РУМЫНКА,ROMANIAN
+64,Finikiyalik,ФИНИКИЕЦ/ФИНИКИЙКА,PHOENICIAN
+65,Hindi,ИНДИЕЦ/ИНДИАНКА,HINDOO
+66,Mongol,МОНГОЛ/МОНГОЛКА,MONGOL
+67,Fors (Muqobil),ПЕРС/ПЕРСИЯНКА,PERSIAN
+68,Eronli,ИРАНЕЦ/ИРАНКА,IRANIAN
+69,Afg'on,АФГАНЕЦ/АФГАНКА,AFGHAN
+70,Arab,АРАБ/АРАБКА,ARAB
+71,Kumiq,КУМЫК/КУМЫЧКА,KUMIQ
+72,Bulg'or,БОЛГАРИН/БОЛГАРКА,BULGARIAN
+73,Xitoylik,КИТАЕЦ/КИТАЯНКА,CHINESE
+74,Koryak,КОРЯК/КОРЯЧКА,KORYAK
+75,Nenets (Muqobil),НЕНЕЦ/НЕНКА,NENETS
+76,Chukcha,ЧУКЧА/ЧУКЧА,CHUKCHI
+77,Lak (Muqobil),ЛАК/ЛАКЧАНКА,LAK
+78,Assiriyalik,АССИРИЕЦ/АССИРИЙКА,ASSYRIAN
+79,Kashgarlik,КАШГАРЕЦ/КАШГАРКА,KASHGARIAN
+80,Dog'istonlik,ДАГЕСТАНЕЦ/ДАГЕСТАНКА,DAGHESTANI
+81,Avar (Muqobil),АВАРЕЦ/АВАРКА,AVAR
+82,Chexiyalik,ЧЕХ/ЧЕШКА,CZECH
+83,Fin,ФИНН/ФИНКА,FINN
+84,Amerikalik,АМЕРИКАНЕЦ/АМЕРИКАНКА,AMERICAN
+85,Fransuz,ФРАНЦУЗ/ФРАНЦУЖЕНКА,FRENCH
+86,Kurd,КУРД/КУРДЯНКА,KURD
+87,Kubalik,КУБИНЕЦ/КУБИНКА,CUBAN
+88,Udin,УДИН/УДИНКА,UDIN
+89,Shor,ШОРЕЦ/ШОРКА,SHOR
+90,Jazoirlik,АЛЖИРЕЦ/АЛЖИРКА,JAZOIRLIK
+91,Ispaniyalik,ИСПАНЕЦ/ИСПАНКА,SPANISH
+92,Adjariyalik,АДЖАРЕЦ/АДЖАРКА,ADZHARIAN
+93,Abazin (Muqobil),АБАЗИНЕЦ/АБАЗИНКА,ABAZINIAN
+94,Yaponiyalik,ЯПОНЕЦ/ЯПОНКА,JAPANESE
+95,Bessarab,БЕССАРАБЕЦ/БЕССАРАБКА,BESSARABIAN
+96,Nogay,НОГАЕЦ/НОГАЙКА,NOGAY
+97,Avstriyalik (Muqobil),АВСТРИЕЦ/АВСТРИЙКА,AUSTRIAN
+99,Paragvaylik,ПАРАГВАЕЦ/ПАРАГВАЙКА,PARAGUAYAN
+100,Agul (Muqobil),АГУЛ/АГУЛКА,AGUL
+101,Xemshil,ХЕМШИЛ/ХЕМШИЛ,XEMSHIL
+102,Kumandin,КУМАНДИН/КУМАНДИНКА,KUMANDIN
+103,Xanti,ХАНТЫ/ХАНТЫ,KHANTY
+104,Efiop,ЭФИОП/ЭФИОПКА,ETHIOPIAN
+105,Saxurets,ЦАХУРЕЦ/ЦАХУРКА,SAHUR
+106,Slovak,СЛОВАК/СЛОВАЧКА,SLOVAK
+107,Koraim,КАРАИМЕЦ/КАРАИМКА,KORAIM
+108,Iordanulik,ИОРДАНЕЦ/ИОРДАНКА,JORDANIAN
+109,Saxor,ЦАХОРЕЦ/ЦАХОРКА,TSAXOR
+110,Nanay,НАНАЕЦ/НАНАЙКА,NANAY
+111,Even,ЭВЕН/ЭВЕНКА,EVEN
+112,Berber,БЕРБЕР/БЕРБЕРКА,BERBER
+113,Albaniyalik,АЛБАНЕЦ/АЛБАНКА,ALBANIAN
+114,Madyar,МАДЬЯР/МАДЬЯРКА,MAGYAR
+115,Gollandiyalik,ГОЛЛАНДЕЦ/ГОЛЛАНДКА,DUTCHMAN
+118,Nikaragualik,НИКАРАГУАНЕЦ/НИКАРАГУАНКА,NICARAGUAN
+119,Ingliz,АНГЛИЧАНИН/АНГЛИЧАНКА,ENGLISH
+120,Angliyalik,АНГЛИЧАНИН/АНГЛИЧАНКА,ENGLISH
+121,Gonduraslik,ГОНДУРАС/ГОНДУРАСЕЦ,HONDURAN
+122,Indoneziyalik,ИНДОНЕЗИЕЦ/ИНДОНЕЗИЙКА,INDONESIAN
+125,Indus,ИНДУС/ИНДУС,INDIAN
+133,Keniyalik,КЕНИЕЦ/КЕНИЙКА,KENYAN
+135,Kolumbiyalik,КОЛУМБИЕЦ/КОЛУМБИЙКА,COLOMBIAN
+136,Xorvat,ХОРВАТ/ХОРВАТКА,CROAT
+137,Talish,ТАЛЫШ/ТАЛЫШКА,TALISH
+184,Urdu,УРДУ,URDU
+256,Pokistonlik,ПАКИСТАНЕЦ/ПАКИСТАНКА,PAKISTANI
+258,Pushtun,ПУШТУН/ПУШТУНКА,PASHTO
+259,Togolik,ТОГОЛЕЦ/ТОГОЛКА,TOGOLESE
+261,Gvineyalik,ГВИНЕЕЦ/ГВИНЕЙКА,GUINEAN
+262,Rutul,РУТУЛ/РУТУЛКА,RUTUL
+265,Nepallik,НЕПАЛЕЦ/НЕПАЛКА,NEPALESE
+266,Ijorets,ИЖОРЕЦ/ИЖОРКА,IJORIAN
+271,Livanlik,ЛИВАНЕЦ/ЛИВАНКА,LEBANESE
+277,Shveytsariyalik,ШВЕЙЦАРЕЦ/ШВЕЙЦАРКА,SWISS
+279,Dominikanlik,ДОМЕНИКАНЕЦ/ДОМЕНИКАНКА,DOMINICAN
+700,Avan,АВАН/АВАНКА,AWANEH
+701,Avstraliyalik,АВСТРАЛИЕЦ/АВСТРАЛИЙКА,AUSTRALIANS
+702,Adangme,АДАНГМЕ/АДАНГМЕ,ADANGME
+703,Azande,АЗАНДЕ/АЗАНДЕ,AZANDE
+704,Ozarbayjon,АЗЕБАЙДЖАНЕЦ/АЗЕРБАЙДЖАНКА,AZERBAIJANIAN
+705,Aymara,АЙМАРА/АЙМАРА,AYMARA
+706,Ayn,АЙН/АЙНКА,AINU
+707,Akamba,АКАМБА/АКАМБА,AKAMBA
+708,Akan,АКАН/АКАН,AKAN
+709,Akikuyyu,АКИКУЙЮ/ЙКИКУЙЮ,AKIKUYU
+710,Aleutlik,АЛЕУТ/АЛЕУТКА,ALEUT
+711,Amxara,АМХАРА/АМХАРА,AMHARA
+712,Ingliz-Kanadalik,АНГЛО-КАНАДЕЦ/АНГЛО-КАНАДКА,ANGLO-CANADIANS
+713,Ingliz-Yangizelandiyalik,АНГЛО-НОВОЗЕЛАНДЕЦ/АНГЛО-НОВОЗЕЛЕНДКА,NEW ZEALADERS (PAKEHAS)
+714,Araukan,АРАУКАН/АРАУКАН,ARAUCANIAN
+715,Argentinalik,АРГЕНТИНЕЦ/АРГЕНТИНКА,ARGENTINES
+716,Aromun,АРОМУН/АРОМУН,AROMANIAN
+717,Assamlik,АССАМИЕЦ/АССАМИЙКА,ASSAM
+718,Afar,АФАР/АФАР,AFAR
+719,Afrikanerlik,АФРИКАНЕР/АФРИКАНЕРКА,AFRIKANER
+720,Atstek,АЦТЕК/АЦТЕК,AZTEC
+721,Ache,АЧЕ/АЧЕ,ACEHNESE
+722,Bagamlik,БАГАМЕЦ/БАГАМКА,BAHAMIAN
+723,Badjao,БАДЖАО/БАДЖАО,BAJAU
+724,Bakve,БАКВЕ/БАКВЕ,BAKWE
+725,Bakele,БАКЕЛЕ/БАКЕЛЕ,BANDJABI
+726,Bakondjo,БАКОНДЖО/БАКОНДЖО,BAKONJO
+727,Balante,БАЛАНТЕ/БАЛАНТЕ,BALANTE
+728,Balilik,БАЛИЕЦ/БАЛИЙКА,BALINESE
+729,Bangi,БАНГИ/БАНГИ,BANGUI
+730,Bandjar,БАНДЖАР/БАНДЖАРКА,BANJAR
+731,Barba,БАРБА/БАРБА,BARBA
+732,Bari,БАРИ/БАРИ,BARI
+733,Bask,БАСК/БАСК,BASQUE
+734,Bassa,БАССА/БАССА,BASSA
+735,Batak,БАТАК/БАТАК,BATAK
+736,Baxtiyoriy,БАХТИАРИ/БАХТИАРИ,BAKHTIARI
+737,Bedja,БЕДЖА/БЕДЖА,BEJA
+738,Beludji,БЕЛУДЖИ/БЕЛУДЖИ,BALUCHI
+739,Bemba,БЕМБА/БЕМБА,BЕМВА
+740,Bengal,БЕНГАЛЕЦ/БЕНГАЛКА,BENGALI
+741,Vohalik Berber,БЕРБЕР/БЕРБЕРКА ОАЗИСОВ,OASIS BERBER
+742,Berber-Xazarlik,БЕРБЕР-ХАЗАРИЕЦ/БЕРБЕР-ХАРАРИЙКА,BERBER-KHAZAR
+743,Bermudlik,БЕРМУДЕЦ/БЕРМУДКА,BERMUDS
+744,Bete,БЕТЕ/БЕТЕ,BETE
+745,Bikol,БИКОЛ/БИКОЛЕЦ,BICOLANO
+746,Birmalik,БИРМАНЕЦ/БИРМАНКА,BURMAN
+747,Bixar,БИХАРЕЦ/БИХАРКА,BIHARIS
+748,Bobo,БОБО/БОБО,BOBO
+749,Boliviyalik,БОЛИВИЕЦ/БОЛИВИЙКА,BOLIVIAN
+750,Bosniyalik,БОСНИЕЦ/БОСНИЙКА,BOSNIAN
+751,Bragui,БРАГУИ/БРАГУИ,BRAHUI
+752,Braziliyalik,БРАЗИЛЕЦ/БРАЗИЛИЙКА,BRAZILIAN
+753,Bretonlik,БРЕТОНЕЦ/БРЕТОНКА,BRETON
+755,Bugi,БУГИЕЦ/БУГИЙКА,BUGIS
+756,Bui,БУИ/БУИ,BUYEI
+757,Bushmonlik,БУШМЕН/БУШМЕНКА,BUSHMAN
+758,Bxil,БХИЛ/БХИЛ,BHIL
+759,Volof,ВОЛОФ/ВОЛОФ,WOLOF
+760,Vallon,ВАЛЛОН/ВАЛЛОНКА,WALLOON
+761,Veddalik,ВВЕДЫ/ВВЕДЫ,VEDDAS
+762,Venesuelalik,ВЕНЕСУЭЛЕЦ/ВЕНЕСУЭЛКА,VENEZUELAN
+763,Veps,ВЕПС/ВЕПС,VEPSIANS
+764,Visayyalik,ВИСАЙЕЦ/ВИСАЙКА,VISAYAN
+765,Ga,ГА/ГА,GA-ADANGBE
+766,Gavayalik,ГАВАЕЦ/ГАВАЙКА,HAWAIIAN
+767,Gaitilik,ГАИТЯНИН/ГАИТЯНКА,HAITIAN
+768,Gayanlik (Ingliz tilidagi),ГАЙАНЕЦ/ГАЙАНКА (АНГЛОЯЗЫЧНЫЕ),GAYANESE (ENG.)
+769,Galisiylik,ГАЛИСИЕЦ/ГАЛИСИЙКА,GALICIAN
+770,Ganda,ГАНДА/ГАНДА,GANDA
+771,Gbayya,ГБАЙЯ/ГБАЙЯ,GBAYA
+772,Gvatemalalik,ГВАТЕМАЛЕЦ/ГВАТЕМАЛКА,GUATEMALAN
+773,Gvianalik (Ingliz tilidagi),ГВИАНЕЦ/ГВИАНКА (АНГЛОЯЗЫЧНЫЕ),GUIANA (ENG.)
+774,Gvianalik (Golland tilidagi),ГВИАНЕЦ/ГВИАНКА (ГОЛЛАНДСКОЯЗЫЧНЫЕ),GUIANA (DUTCH)
+775,Gvianalik (Fransuz tilidagi),ГВИАНЕЦ/ГВИАНКА (ФРАНОЯЗЫЧНЫЕ),GUIANA (FRENCH)
+776,Gere,ГЕРЕ/ГЕРЕ,HERE
+777,German-Shveytsariyalik,ГЕРМАНО-ШВЕЙЦАРЕЦ/ГЕРМАНО-ШВЕЙЦАРКА,GERMAN-SWISS
+778,Nivx,НИВХ/НИВХ,NIVKH
+779,Gondvanalik,ГОНД/ГОНД,GONDWANA
+780,Gottentot,ГОТТЕНТОТ/ГОТТЕНТОТ,HOTTENTOT
+781,Grebo,ГРЕБО/ГРЕБО,GREBO
+782,Grusi,ГРУСИ/ГРУСИ,GURUNSI
+783,Gujaratlik,ГУЖАРАТЕЦ/ГУЖАРАТКА,GUJARAT
+784,Gudjurlik,ГУДЖУР/ГУДЖУРКА,GUJUR
+785,Gurage,ГУРУГЕ/ГУРАГЕ,GURAGE
+786,Gurma,ГУРМА/ГУРМА,GURMA
+787,Gurungi,ГУРУНГИ/ГУРУНГИ,GURUNG
+788,Dan,ДАН/ДАН,DAN
+789,Darxatlik,ДАРХАТ/ДАРХАТКА,DARKHAT
+790,Daniyalik,ДАТЧАНИН/ДАТЧАНКА,DANE
+791,Dayak,ДАЯК/ДАЯК,DAYAK
+792,Djakun,ДЖАКУН/ДЖАКУН,DZHAKUN
+793,Djatlik,ДЖАТ/ДЖАТ,JATS
+794,Djukun,ДЖУКУН/ДЖУКУН,JUKUN
+795,Dinka,ДИНКА/ДИНКА,DINKA
+796,Diola,ДИОЛА/ДИОЛА,JOLA
+797,Dogon,ДОГОН/ДОГОН,DOGON
+798,Dolganlik,ДОЛГАНИН/ДОЛГАНКА,DOLGAN
+799,Duala,ДУАЛА/ДУАЛА,DUALA
+800,Dun,ДУН/ДУН,DUN
+801,Dusun,ДУСУН/ДУСУН,DUSUN
+802,Tog'lik Yaxudiy,ГОРСКИЙ ЕВРЕЙ/ГОРСКАЯ ЕВРЕЙКА,MOUNTAIN JEWS
+803,Zinza (Bazinza),ЗИНЗА (БАЗИНЗА)/ЗИНЗА (БАЗИНЗА),ZINZA (BAZINZA)
+804,Zulus,ЗУЛУС/ЗУЛУСКА,ZULU
+805,Ibanagi,ИБАНАГИ/ИБАНАГИ,IBANAG
+806,Iban,ИБАН/ИБАН,IBAN
+807,Ibibio,ИБИБИО/ИБИБИО,IBIBIO
+808,Ibo,ИБО/ИБО,IBO
+809,Idoma,ИДОМА/ИДОМА,IDOMA
+810,Iloki,ИЛОКИ/ИЛОКИ,ILOKANO
+811,Xindu,ИНДЕЕЦ/ИНДЕЕЦ,(AMERICAN) INDIAN
+812,Irlandiyalik,ИРЛАНДЕЦ/ИРЛАНДКА,IRISHMAN
+813,Islandiyalik,ИСЛАНДЕЦ/ИСЛАНДКА,ICELANDER
+814,Issa,ИССА/ИССА,ISSA
+815,Italyan-Shveytsariyalik,ИТАЛО-ШВЕЙЦАРЕЦ/ИТАЛО-ШВЕЙЦАРКА,ITALIAN-SWISS
+816,Itelmen,ИТЕЛЬМЕН/ИТЕЛЬМЕНКА,ITELMEN
+817,Itszu,ИЦЗУ/ИЦЗУ,YI
+818,Yoruba,ЙОРУБА/ЙОРУБА,YORUBA
+819,Kabil,КАБИЛ/КАБИЛ,KABILIAN
+820,Kakchikeli,КАКЧИКЕЛИ/КАКЧИКЕЛИ,KAQCHIKEL
+821,Kanadalik,КАНАДЕЦ/КАНАДКА,CANADIAN
+822,Kanak,КАНАК/КАНАК,KANAKA
+823,Kannara,КАННАРА/КАННАРА,KANNADIGA
+824,Kanuri,КАНУРИ/КАНУРИ,KANURI
+825,Karen,КАРЕН/КАРЕН,KAREN
+826,Katalan,КАТАЛАН/КАТАЛАНКА,CATALAN
+827,Kachin,КАЧИН/КАЧИН,KACHIN
+828,Kashmir,КАШМИР/КАШМИРКА,KASHMIREAN
+829,Kaya,КАЯ/КАЯ,GAYA
+830,Kedoyan,КЕДОЯН/КЕДОЯН,KEDOYAN
+831,Kekchi,КЕКЧИ/КЕКЧИ,KEKCHI
+832,Ket,КЕТ/КЕТ,KETS
+833,Kechua,КЕЧУАН/КЕЧУАНКА,QUECHUA
+834,Kinga (Vakinga),КИНГА (ВАКИНГА)/КИНГА (ВАКИНГА),KINGA (WAKINGA)
+835,Kisi,КИСИ/КИСИ,KISSI
+836,Kiche,КИЧЕ/КИЧЕ,KICHE
+837,Klemantanlik,КЛЕМАНТАН/КЛЕМАНТАН,KALIMANTANIAN
+838,Kongo,КОНОГОЛЕЗЕЦ/КОНОГОЛЕЗКА,CONGOLESE
+839,Kono (Vai),КОНО (ВАИ)/КОНО (ВАИ),VAI
+840,Kosa,КОСА/КОСА,XHOSA
+841,Kostarikalik,КОСТАРИКАНЕЦ/КОСТАРИКАНКА,COSTARICAN
+842,Kota,КОСТА/КОТА,KOTA
+843,Kpelle,КПЕЛЛЕ/КПЕЛЛЕ,KPELLE
+844,Kran,КРАН/КРАН,KRAN
+845,Kru,КРУ/КРУ,KRU
+846,Krimchak,КРЫМЧАК/КРЫМЧАНКА,CRIMEAN
+847,Kuna,КУНА/КУНА,KUNA
+848,Kxmer,КХМЕР/КХМЕРКА,KHMER
+849,Kxmu,КХМУ/КХМУ,KHMU
+850,Ladin,ЛАДИН/ЛАДИН,LADINO
+851,Lao,ЛАО/ЛАО,LAO
+852,Limbu,ЛИМБУ/ЛИМБУ,LIMBU
+853,Lobi,ЛОБИ/ЛОБИ,LOBI
+854,Lozi,ЛОЗИ/ЛОЗИ,LOZI
+855,Loma,ЛОМА/ЛОМА,LOMA
+856,Luba,ЛУБА/ЛУБА,LUBA
+857,Lujichan,ЛУЖИЧАН/ЛУЖИЧАНКА,LUSATIAN
+858,Lunda,ЛУНДА/ЛУНДА,LUNDA
+859,Luo (Djoluo),ЛУО (ДЖОЛУО)/ЛУО (ДЖОЛУО),LUO (JOLUO)
+860,Shimoliy Luo,СЕВЕРНЫЙ ЛУО/СЕВЕРНАЯ ЛУО,NORTHERN LUO
+861,Lur,ЛУР/ЛУР,LUR
+862,Luxya,ЛУХЬЯ/ЛУХЬЯ,LUHYA
+863,Luchazi,ЛУЧАЗИ/ЛУЧАЗИ,LUCHAZI
+864,Lyuksemburg,ЛЮКСЕМБУРЖЕЦ/ЛЮКСЕМБУРЖЕНКА,LUXEMBOURGER
+865,Maba,МАБА,MABA
+866,Magindanao,МАГИНДАНАО/МАГИНДАНАО,MAGUINDANAO
+867,Madur,МАДУРЕЦ/МАДУРКА,MADURESE
+868,Mazandaranlik,МАЗАНДАРАНЕЦ/МАЗАНДАРАНКА,MAZANDARANI
+869,Mayya,МАЙЯ/МАЙЯ,MAYA
+870,Makassar,МАКАССАР/МАКАССАРКА,MACASSARIAN
+871,Makedoniyalik,МАКЕДОНЕЦ/МАКЕДОНКА,MACEDONIAN
+872,Makua,МАКУА/МАКУА,MAKUA
+873,Malavi,МАЛАВИ/МАЛАВИ,MALAWI
+874,Malagalik,МАЛАГАСИЕЦ/МАЛАГАСИЙКА,MALAGASY
+875,Malaylik,МАЛАЕЦ/МАЛАЙКА,MALAY
+876,Malaneziyalik,МАЛАНЕЗИЕЦ/МАЛАНЕЗИЙКА,MALANESIANS
+877,Malinke,МАЛИНКЕ/МАЛИНКЕ,MALINKE
+878,Maltalik,МАЛЬТИЕЦ/МАЛЬТИЙКА,MALTESE
+879,Mame,МАМЕ/МАМЕ,МАМЕ
+880,Mangbetu-Moru,МАНГБЕТУ-МОРУ/МАНГБЕТУ-МОРУ,MANGBETU-MORU
+881,Mandara,МАНДАРА/МАНДАРА,MANDARIAN
+882,Mandjak,МАНДЖАК/МАНДЖАЧКА,MANDJACO
+883,Mano,МАНО/МАНО,MANO
+884,Mansi,МАНСИЕЦ/МАНСИЙКА,MANSI
+885,Manjur,МАНЖУР/МАНЖУРКА,MANCHURIAN
+886,Maratxi,МАРАТХИ/МАРАТХИЙКА,MARATHI
+887,Matebele,МАТЕБЕЛЕ/МЕТЕБЕЛЕ,MATEBELE
+888,Shona,ШОНА/ШОНА,SHONA
+889,Mbum,МБУМ/МБУМ,MBUM
+890,Mbundu,МБУНДУ/МБУНДУ,MBUNDU
+891,Meksikalik,МЕКСИКАНЕЦ/МЕКСИКАНКА,MEXICAN
+892,Mende,МЕНДЕ/МЕНДЕ,MENDE
+893,Mileke (Bamileke),МИЛЕКЕ (БАМИЛЕКЕ)/МИЛЕКЕ (БАМИЛЕКЕ),MILEKE (BAMILEKE)
+894,Minangkabau,МИНАНГКАБАУ/МИНАНГКАБАУ,MINANGKABAU
+895,Mishtek,МИШТЕК/МИШТЕК,MIXTEC
+896,Mongo,МОНГО/МОНГО,MONGO
+897,Mon (Talain),МОН (ТАЛАИН)/МОН (ТАЛАИН),MON
+898,Mosi,МОСИ/МОСИ,MOSSI
+899,Miong,МЫОНГ/МЫОНГ,MUONG
+900,Myao,МЯО/МЯО,MIAO
+907,Ngala (Lingala),НГАЛА (ЛИНГАЛА)/НГАЛА (ЛИНГАЛА),NGALA (LINGALA)
+908,Nganasan,НГАНАСАН/НГАНАСАН,NGANASAN
+909,Ngoni,НГОНИ/НГОНИ,NGONI
+910,Nda (Banda),НДА (БАНДА)/НДА (БАНДА),NDA (BANDA)
+912,Nevarli,НЕВАРЕЦ/НЕВАРКА,NEWA
+913,Negidal,НЕГИДАЛЕЦ/НЕГИДАЛКА,NEGIDAL
+914,Yangi Kaledoniyalik,НОВОКАЛЕДОНЕЦ/НОВОКАЛЕДОНКА,NEW CALEDONIAN
+915,Norvegiyalik,НОРВЕЖЕЦ/НОРВЕЖКА,NORWEGIAN
+916,Nubiyalik,НУБИЕЦ/НУБИЙКА,NUBIAN
+917,Nupe,НУПЕ/НУПЕ,NUPE
+918,Nuristanli,НУРИСТАНЕЦ/НУРИСТАНКА,NURISTANI
+919,Nuer,НУЭР/НУЭР,NUER
+920,Nika (Vanika),НЬИКА (ВАНЬИКА)/НЬИКА (ВАНЬИКА),NYIKA (WANYIKA)
+921,Nyakole (Banyakole),НЬЯКОЛЕ (БАНЬЯКОЛЕ)/НЬЯКОЛЕ (БАНЬЯКОЛЕ),NYAKOLE (BANYAKOLE)
+922,Nyamvezi (Vanyamvezi),НЬЯМВЕЗИ (ВАНЬЯМВЕЗИ)/НЬЯМВЕЗИ (ВАНЬЯМВЕЗИ),NYAMWEZI (WANYAMWEZI)
+923,Nyaruanda (Banyaruanda),НЬЯРУАНДА (БАНЬЯРУАНДА)/НЬЯРУАНДА (БАНЬЯРУАНДА),NYARUANDA (BANYARUANDA)
+924,Nyaturu (Vanyaturu),НЬЯТУРУ (ВАНЬЯТУРУ)/НЬЯТУРУ (ВАНЬЯТУРУ),NYATURU (WANYATURU)
+925,Ovambo,ОВАМБО/ОВАМБО,OVAMBO
+926,Ovimbundu,ОВИМБУНДУ/ОВИМБУНДУ,OVIMBUNDU
+927,Oyrat,ОЙРАТ/ОЙРАТ,OIRAT
+928,Shimoliy Irlandiyalik,СЕВЕРНЫЙ ИРЛАНДЕЦ/СЕВЕРНАЯ ИРЛАНДКА,NORTHERN IRISH
+929,Oriya,ОРИЯ/ОРИЯ,ORIYA
+930,Orok,ОРОК/ОРОК,OROK
+931,Oromo,ОРОМО/ОРОМО,OROMO
+932,Orochi,ОРОЧИ/ОРОЧИ,OROCH
+933,Otomi,ОТОМИ/ОТОМИ,OTOMI
+934,Pampangan,ПАМПАНГАН/ПАМПАНГАН,KAPAMPANGANS
+935,Panamalik,ПАНАМЕЦ/ПАНАМКА,PANAMANIAN
+936,Pangasinan,ПАНГАСИНАН/ПАНГАСИНАНКА,PANGASINAN
+937,Panjoblik,ПАНЖАБЕЦ/ПАНЖАБКА,PUNJABI
+938,Papuas,ПАПУАС/ПАПУАСКА,PAPUAN
+939,Pashai,ПАШАИ/ПАШАИ,PASHAI
+940,Pedi,ПЕДИ/ПЕДИ,PEDI (NOTHERN SOTHO)
+941,Pepel,ПЕПЕЛЬ/ПЕПЕЛЬ,PEPEL
+942,Peruanlik,ПЕРУАНЕЦ/ПЕРУАНКА,PERUVIAN
+943,Portugaliyalik,ПОРТУГАЛ/ПОРТУГАЛКА,PORTUGUESE
+739002432,Iroqlik,ИРАКЕЦ,IRAQI
+944,Puertorikanlik,ПУЭРТОРИКАНЕЦ/ПУЭРТОРИКАНКА,PUERTO-RICAN
+945,Radjastanlik,РАДЖАСТАНЕЦ/РАДЖАСТАНКА,RAJASTHANIAN
+946,Rif,РИФ/РИФ,RIFFIAN
+947,Romansh,РОМАНШ/РОМАНШ,ROMANSH
+948,Rundi,РУНДИ/РУНДИ,RUNDI
+949,Saami,СААМИ/СААМИ,SAMI
+950,Salvadorlik,САЛЬВАДОРЕЦ/САЛЬВАДОРКА,SALVADORAN
+951,Santal,САНТАЛ/САНТАЛ,SANTAL
+952,Sapotek,САПОТЕК/САПОТЕК,ZAPOTEC
+953,Sara (Bagirmi),САРА (БАГИРМИ)/САРА (БАГИРМИ),SARA (BAGIRMI)
+954,Svazi,СВАЗИ/СВАЗИ,SWASI
+955,Selkup,СЕЛЬКУП/СЕЛЬКУПКА,SELKUP
+956,Senufo,СЕНУФО/СЕНУФО,SENUFO
+957,Serer,СЕРЕР/СЕРЕР,SERER
+958,Siam,СИАМ/СИАМКА,SIAM
+959,Sidamo,СИДАМО/СИДАМО,SIDAMA
+960,Sikon,СИКОН/СИКОН,SIKON
+961,Singallik,СИНГАЛЕЦ/СИНГАЛКА,SINHALESE
+962,Sindxi,СИНДХИ/СИНДХИ,SINDHI
+963,Sloven,СЛОВЕН/СЛОВЕНКА,SLOVENE
+964,Somali,СОМАЛИЕЦ/СОМАЛИЙКА,SOMALI
+965,Somba,СОМБА/СОМБА,SOMBA
+966,Songai,СОНГАИ/СОНГАИ,SONGHAI
+967,Soninke,СОНИНКЕ/СОНИНКЕ,SONINKE
+968,Suaxili,СУАХИЛИ/СУАХИЛИ,SWAHILI
+969,So'i,СУИ/СУИ,SOOEY
+970,Sulu-Samal,СУЛУСАМАЛЬ/СУЛУСАМАЛЬ,SULU-SAMAL
+971,Sunda,СУНДА/СУНДАНЦЫ,SUNDANESE
+972,Susu,СУСУ/СУСУ,SUSU
+973,Suto,СУТО/С,SUTO

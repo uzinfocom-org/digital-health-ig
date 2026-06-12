@@ -198,6 +198,16 @@ Id: uz-core-condition-diagnosis-type
 
 В этом примере один профиль UZCoreSocioeconomicObservation используется для наблюдений о льготах, образовании, профессии и социальном статусе — каждый с соответствующим ValueSet в зависимости от типа наблюдения, вместо создания четырёх отдельных профилей.
 
+- **Целевые профили ссылок (Reference и Canonical)**: Если для целевого ресурса ссылки существует национальный профиль UZ Core, ограничивайте ссылку этим профилем через `only Reference(...)`, а не базовым ресурсом FHIR. Базовый ресурс оставляйте только если национального профиля для него нет. То же правило применяется к каноническим ссылкам (`only Canonical(...)`). Благодаря этому IG Publisher отображает ссылки на страницы национальных профилей, а валидатор проверяет, что целевые ресурсы соответствуют требованиям UZ Core. Пример из UZCoreObservation:
+
+```fsh
+// UZ Core профили существуют — указываем их
+* performer only Reference(UZCorePractitioner or UZCorePractitionerRole or UZCoreOrganization)
+* encounter only Reference(UZCoreEncounter)
+// Для CarePlan, MedicationRequest и ServiceRequest национальных профилей нет — оставляем базовые ресурсы
+* basedOn only Reference(CarePlan or MedicationRequest or ServiceRequest)
+```
+
 ## 4) Терминологические артефакты
 
 ### 4.1 Почему нужен supplement для CodeSystem и ValueSet
@@ -288,6 +298,15 @@ Description: "Diagnosis types in Uzbekistan"
   * ^designation[+].language = #en
   * ^designation[=].value = "Diagnosis of the referring institution"
 ```
+
+**Большие CodeSystems (>100 кодов):**
+
+CodeSystems с более чем 100 кодами замедляют каждую сборку SUSHI. Предгенерируйте их JSON:
+
+1. Соберите IG через SUSHI.
+2. Переместите `fsh-generated/resources/CodeSystem-<id>.json` → `input/vocabulary/`.
+3. Переместите исходный `.fsh` → `input/manual-fsh/` (SUSHI его не парсит, но FSH сохраняется как источник).
+4. При обновлении справочника: верните `.fsh` в `input/fsh/terminology/`, пересоберите, повторите шаги 2-3.
 
 ### 4.2 Пример FSH для ClinicalStatusCS (на примере Condition)
 

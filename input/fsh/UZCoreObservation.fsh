@@ -2,28 +2,28 @@ Profile: UZCoreObservation
 Parent: Observation
 Id: uz-core-observation
 Title: "UZ Core Observation"
-Description: "Uzbekistan Core Observation profile, used to represent clinical and laboratory observations"
+Description: "Uzbekistan Core Observation profile, used to represent clinical and laboratory observations using SNOMED CT, LOINC, or local codes"
 * ^experimental = true
 * ^status = #active
 //rules
 * identifier MS
 * instantiates[x] MS
 * basedOn 0..1 MS
-* basedOn only Reference(CarePlan or MedicationRequest or ServiceRequest)
+* basedOn only Reference(CarePlan or MedicationRequest or ServiceRequest or UZCoreImmunizationRecommendation)
 * triggeredBy MS
 * triggeredBy.observation only Reference(UZCoreObservation)
 * triggeredBy.type from TriggeredByTypeVS (required)
 * triggeredBy.reason MS
 * partOf MS
-* partOf only Reference(MedicationAdministration or MedicationDispense or Procedure or Immunization or ImagingStudy)
+* partOf only Reference(MedicationAdministration or MedicationDispense or UZCoreProcedure or UZCoreImmunization or ImagingStudy)
 * status MS
 * status from ObservationStatusVS (required)
 * category MS
 * category from ObservationCategoryVS
 * code MS
-* code from ObservationCodesVS (required)
+* code from ObservationCodesVS (preferred)
 * subject MS
-* subject only Reference(UZCorePatient or UZCoreLocation or UZCoreOrganization or Procedure or UZCorePractitioner or Medication)
+* subject only Reference(UZCorePatient or UZCoreLocation or UZCoreOrganization or UZCoreProcedure or UZCorePractitioner or Medication)
 * focus MS
 * encounter MS
 * encounter only Reference(UZCoreEncounter)
@@ -37,9 +37,9 @@ Description: "Uzbekistan Core Observation profile, used to represent clinical an
 * interpretation from ObservationInterpretationVS
 * note MS
 * bodySite from $bodysite
-* method from $observation-methods
+* method from LabMethodsVS
 * specimen MS
-* specimen only Reference(Specimen)
+* specimen only Reference(UZCoreSpecimen)
 * device MS
 * device only Reference(Device or DeviceMetric)
 * referenceRange MS
@@ -51,12 +51,12 @@ Description: "Uzbekistan Core Observation profile, used to represent clinical an
 * referenceRange.age MS
 * referenceRange.text MS
 * hasMember MS
-* hasMember only Reference(UZCoreObservation or QuestionnaireResponse)
+* hasMember only Reference(UZCoreObservation or UZCoreQuestionnaireResponse)
 * derivedFrom MS
-* derivedFrom only Reference(DocumentReference or ImagingStudy or QuestionnaireResponse or UZCoreObservation)
+* derivedFrom only Reference(DocumentReference or ImagingStudy or UZCoreQuestionnaireResponse or UZCoreObservation)
 * component MS
 * component.code MS
-* component.code from ObservationCodesVS
+* component.code from ObservationCodesVS (preferred)
 * component.value[x] MS
 * component.dataAbsentReason from DataAbsentReasonVS (extensible)
 * component.interpretation from ObservationInterpretationVS (extensible)
@@ -100,7 +100,7 @@ Description: "Example of a body mass index (BMI) vital sign observation"
 Instance: body-height-example
 InstanceOf: Observation
 Usage: #example
-Description: "Example of a body height vital sign observation"
+Description: "Example of a body height vital sign  observation"
 * meta.profile[0] = "https://dhp.uz/fhir/core/StructureDefinition/uz-core-observation"
 * meta.profile[+] = "http://hl7.org/fhir/StructureDefinition/vitalsigns"
 * meta.profile[+] = "http://hl7.org/fhir/StructureDefinition/bodyheight"
@@ -214,62 +214,74 @@ Description: "Example of CBC (Umumiy qon tahlili) as a laboratory panel with ana
 * meta.profile[0] = "https://dhp.uz/fhir/core/StructureDefinition/uz-core-observation"
 * status = #final
 * category = $observation-category#laboratory "Laboratory"
-* code = observation-lab-research-codes-cs#lab-A "CBC panel"
+* code = lab-pan-cs#lab-pan-E "CBC panel"
 * subject = Reference(Patient/example-salim)
 * encounter = Reference(Encounter/example-encounter)
 * effectiveDateTime = "2025-11-04T08:10:00Z"
 * issued = "2025-11-04T09:00:00Z"
 * performer = Reference(Practitioner/example-practitioner)
-* specimen = Reference(Specimen/specimen-example-blood)
-* component[0].code = observation-lab-research-codes-cs#lab-1 "Leukocytes [#/volume] in Blood by Automated count"
-* component[=].valueQuantity = 6.2 '10*9/L' "10^9/L"
-* component[+].code = observation-lab-research-codes-cs#lab-2 "Neutrophils [#/volume] in Blood by Automated count"
-* component[=].valueQuantity = 3.7 '10*9/L' "10^9/L"
-* component[+].code = observation-lab-research-codes-cs#lab-3 "Lymphocytes [#/volume] in Blood by Automated count"
-* component[=].valueQuantity = 2.0 '10*9/L' "10^9/L"
-* component[+].code = observation-lab-research-codes-cs#lab-4 "Monocytes [#/volume] in Blood by Automated count"
-* component[=].valueQuantity = 0.4 '10*9/L' "10^9/L"
-* component[+].code = observation-lab-research-codes-cs#lab-5 "Eosinophils [#/volume] in Blood by Automated count"
-* component[=].valueQuantity = 0.1 '10*9/L' "10^9/L"
-* component[+].code = observation-lab-research-codes-cs#lab-6 "Basophils [#/volume] in Blood by Automated count"
-* component[=].valueQuantity = 0.0 '10*9/L' "10^9/L"
-* component[+].code = observation-lab-research-codes-cs#lab-7 "Neutrophils/100 leukocytes in Blood by Automated count"
-* component[=].valueQuantity = 60 '%' "%"
-* component[+].code = observation-lab-research-codes-cs#lab-8 "Lymphocytes/100 leukocytes in Blood by Automated count"
-* component[=].valueQuantity = 32 '%' "%"
-* component[+].code = observation-lab-research-codes-cs#lab-9 "Monocytes/100 leukocytes in Blood by Automated count"
-* component[=].valueQuantity = 6 '%' "%"
-* component[+].code = observation-lab-research-codes-cs#lab-10 "Eosinophils/100 leukocytes in Blood by Automated count"
-* component[=].valueQuantity = 2 '%' "%"
-* component[+].code = observation-lab-research-codes-cs#lab-11 "Basophils/100 leukocytes in Blood by Automated count"
-* component[=].valueQuantity = 0 '%' "%"
-* component[+].code = observation-lab-research-codes-cs#lab-12 "Erythrocytes [#/volume] in Blood by Automated count"
-* component[=].valueQuantity = 4.7 '10*12/L' "10^12/L"
-* component[+].code = observation-lab-research-codes-cs#lab-13 "Hemoglobin [Mass/volume] in Blood"
+* specimen = Reference(Specimen/example-specimen-blood-cbc)
+* component[0].code = lab-pan-cs#lab-pan-74 "Hemoglobin [Mass/volume] in Blood"
 * component[=].valueQuantity = 145 'g/L' "g/L"
-* component[+].code = observation-lab-research-codes-cs#lab-14 "Hematocrit [Volume Fraction] of Blood by Automated count"
-* component[=].valueQuantity = 43 '%' "%"
-* component[+].code = observation-lab-research-codes-cs#lab-15 "MCV [Entitic volume] by Automated count"
+* component[+].code = lab-pan-cs#lab-pan-75 "Erythrocytes [#/volume] in Blood by Automated count"
+* component[=].valueQuantity = 4.7 '10*12/L' "10^12/L"
+* component[+].code = lab-pan-cs#lab-pan-76 "Color index"
+* component[=].valueString = "0.93"
+* component[+].code = lab-pan-cs#lab-pan-77 "MCV [Entitic volume] by Automated count"
 * component[=].valueQuantity = 91 'fL' "fL"
-* component[+].code = observation-lab-research-codes-cs#lab-16 "MCH [Entitic mass] by Automated count"
+* component[+].code = lab-pan-cs#lab-pan-78 "MCH [Entitic mass] by Automated count"
 * component[=].valueQuantity = 30.9 'pg' "pg"
-* component[+].code = observation-lab-research-codes-cs#lab-17 "MCHC [Mass/volume] by Automated count"
+* component[+].code = lab-pan-cs#lab-pan-79 "MCHC [Mass/volume] by Automated count"
 * component[=].valueQuantity = 338 'g/L' "g/L"
-* component[+].code = observation-lab-research-codes-cs#lab-18 "Erythrocyte distribution width (RDW-CV) [Ratio] by Automated count"
+* component[+].code = lab-pan-cs#lab-pan-80 "Erythrocyte distribution width (RDW-CV) [Ratio] by Automated count"
 * component[=].valueQuantity = 13.1 '%' "%"
-* component[+].code = observation-lab-research-codes-cs#lab-19 "Erythrocyte distribution width (RDW-SD) [Entitic volume] by Automated count"
-* component[=].valueQuantity = 42 'fL' "fL"
-* component[+].code = observation-lab-research-codes-cs#lab-20 "Platelets [#/volume] in Blood by Automated count"
+* component[+].code = lab-pan-cs#lab-pan-81 "Hematocrit [Volume Fraction] of Blood by Automated count"
+* component[=].valueQuantity = 43 '%' "%"
+* component[+].code = lab-pan-cs#lab-pan-82 "Platelets [#/volume] in Blood by Automated count"
 * component[=].valueQuantity = 250 '10*9/L' "10^9/L"
-* component[+].code = observation-lab-research-codes-cs#lab-21 "Mean platelet volume [Entitic volume] in Blood by Automated count"
+* component[+].code = lab-pan-cs#lab-pan-83 "Mean platelet volume [Entitic volume] in Blood by Automated count"
 * component[=].valueQuantity = 9.8 'fL' "fL"
-* component[+].code = observation-lab-research-codes-cs#lab-22 "Platelet distribution width [Entitic volume] in Blood by Automated count"
+* component[+].code = lab-pan-cs#lab-pan-84 "Platelet distribution width [Entitic volume] in Blood by Automated count"
 * component[=].valueQuantity = 12.1 'fL' "fL"
-* component[+].code = observation-lab-research-codes-cs#lab-23 "Plateletcrit [Volume Fraction] of Blood by Automated count"
+* component[+].code = lab-pan-cs#lab-pan-85 "Plateletcrit [Volume Fraction] of Blood by Automated count"
 * component[=].valueQuantity = 0.24 '%' "%"
-* component[+].code = observation-lab-research-codes-cs#lab-24 "Platelet large cell count [#/volume] in Blood by Automated count"
-* component[=].valueQuantity = 60 '10*9/L' "10^9/L"
-* component[+].code = observation-lab-research-codes-cs#lab-25 "Platelet large cell ratio [#] in Blood by Automated count"
-* component[=].valueQuantity = 24 '%' "%"
-* component[+].code = observation-lab-research-codes-cs#lab-26 "Erythrocyte sedimentation rate (ESR) by Westergren method"
+* component[+].code = lab-pan-cs#lab-pan-86 "Leukocytes [#/volume] in Blood by Automated count"
+* component[=].valueQuantity = 6.2 '10*9/L' "10^9/L"
+* component[+].code = lab-pan-cs#lab-pan-87 "Myelocytes [#/volume] in Blood by Manual count"
+* component[=].valueQuantity = 0 '10*9/L' "10^9/L"
+* component[+].code = lab-pan-cs#lab-pan-88 "Metamyelocytes/100 leukocytes in Blood by Manual count"
+* component[=].valueQuantity = 0 '%' "%"
+* component[+].code = lab-pan-cs#lab-pan-89 "Neutrophils.band form/100 leukocytes in Blood by Manual count"
+* component[=].valueQuantity = 3 '%' "%"
+* component[+].code = lab-pan-cs#lab-pan-90 "Neutrophils [#/volume] in Blood by Automated count"
+* component[=].valueQuantity = 3.7 '10*9/L' "10^9/L"
+* component[+].code = lab-pan-cs#lab-pan-91 "Eosinophils [#/volume] in Blood by Automated count"
+* component[=].valueQuantity = 0.1 '10*9/L' "10^9/L"
+* component[+].code = lab-pan-cs#lab-pan-92 "Basophils [#/volume] in Blood by Automated count"
+* component[=].valueQuantity = 0.0 '10*9/L' "10^9/L"
+* component[+].code = lab-pan-cs#lab-pan-93 "Monocytes/100 leukocytes in Blood by Automated count"
+* component[=].valueQuantity = 6 '%' "%"
+* component[+].code = lab-pan-cs#lab-pan-94 "Lymphocytes [#/volume] in Blood by Automated count"
+* component[=].valueQuantity = 2.0 '10*9/L' "10^9/L"
+* component[+].code = lab-pan-cs#lab-pan-95 "Plasma cells monotypic population [Identifier] in Bone marrow by Flow cytometry (FC)"
+* component[=].valueString = "not detected"
+* component[+].code = lab-pan-cs#lab-pan-96 "Erythrocyte sedimentation rate (ESR) by Westergren method"
 * component[=].valueQuantity = 8 'mm/h' "mm/h"
+* component[+].code = lab-pan-cs#lab-pan-97 "Platelet anisocytosis [Presence] in Blood by Light microscopy"
+* component[=].valueString = "not detected"
+* component[+].code = lab-pan-cs#lab-pan-98 "Poikilocytosis [Presence] in Blood by Light microscopy"
+* component[=].valueString = "not detected"
+* component[+].code = lab-pan-cs#lab-pan-99 "Basophilic stippling [Presence] in Blood by Light microscopy"
+* component[=].valueString = "not detected"
+* component[+].code = lab-pan-cs#lab-pan-100 "Polychromasia [Presence] in Blood by Light microscopy"
+* component[=].valueString = "not detected"
+* component[+].code = lab-pan-cs#lab-pan-101 "Howell-Jolly bodies [Presence] in Blood by Light microscopy"
+* component[=].valueString = "not detected"
+* component[+].code = lab-pan-cs#lab-pan-102 "Cabot rings [Presence] in Blood by Light microscopy"
+* component[=].valueString = "not detected"
+* component[+].code = lab-pan-cs#lab-pan-104 "Megaloblasts/cells in Bone marrow"
+* component[=].valueString = "not detected"
+* component[+].code = lab-pan-cs#lab-pan-105 "Neutrophils.hypersegmented [Presence] in Blood by Light microscopy"
+* component[=].valueString = "not detected"
+* component[+].code = lab-pan-cs#lab-pan-106 "Toxic granules [Presence] in Blood by Light microscopy"
+* component[=].valueString = "not detected"
