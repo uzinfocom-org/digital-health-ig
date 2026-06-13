@@ -34,23 +34,12 @@ Description: "Uzbekistan Core Organization profile, used to define healthcare or
   * use = #official
   * value 1..1 MS
 
-* identifier[shifId]
-  ^short = "Identifier assigned by the State Health Insurance Fund (SHIF)"
-  * system 1..1 MS
-  * system = $organization-shif-id-system
-  * type 1..1 MS
-  * type = $identifier-type#NIIP "National Insurance Payor Identifier (Payor)"
-  * use = #official
-  * value 1..1 MS
-  * value ^short = "SHIF organization identifier (3 uppercase Latin letters + 6 digits, e.g. OAA000024)"
-  * value obeys uzcore-org-1
-  * value ^example[0].label = "SHIF organization identifier"
-  * value ^example[0].valueString = "OAA000024"
-  * period 0..1 MS
-    * start MS
-    * end MS
-  * assigner 0..1 MS
-    * ^short = "Reference to the State Health Insurance Fund (SHIF) organization (Organization with type.coding #pay)"
+* insert InsurerProviderIdentifier(shifId, $organization-shif-id-system)
+* identifier[shifId] ^short = "Identifier assigned by the State Health Insurance Fund (SHIF)"
+* identifier[shifId].value ^short = "SHIF organization identifier (3 uppercase Latin letters + 6 digits, e.g. OAA000024)"
+* identifier[shifId].value obeys uzcore-org-1
+* identifier[shifId].value ^example[0].label = "SHIF organization identifier"
+* identifier[shifId].value ^example[0].valueString = "OAA000024"
 
 * active 0..1 MS
 
@@ -143,7 +132,7 @@ Usage: #example
   * value = "9512"
 * identifier[shifId]
   * use = #official
-  * type = $identifier-type#NIIP "National Insurance Payor Identifier (Payor)"
+  * type = $identifier-type#PRN "Provider number"
   * system = $organization-shif-id-system
   * value = "OAA000024"
   * period.start = "2024-01-15"

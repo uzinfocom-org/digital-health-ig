@@ -56,7 +56,7 @@ Description: """
       * ^property[=].valueBoolean = false
     * #https://dhp.uz/fhir/core/sid/org/uz/shif "Organization identifiers assigned by the State Health Insurance Fund (SHIF) of Uzbekistan"
       * ^property[0].code = #idtype
-      * ^property[=].valueCoding = $identifier-type#NIIP
+      * ^property[=].valueCoding = $identifier-type#PRN
       * ^property[+].code = #country
       * ^property[=].valueCoding = $iso-3166#UZ
       * ^property[+].code = #naming-system

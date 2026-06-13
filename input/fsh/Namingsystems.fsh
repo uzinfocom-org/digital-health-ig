@@ -51,7 +51,7 @@ Usage: #definition
 * publisher = "Uzinfocom"
 * responsible = "State Health Insurance Fund of the Republic of Uzbekistan"
 * date = "2026-05-19"
-* type = $identifier-type#NIIP "National Insurance Payor Identifier (Payor)"
+* type = $identifier-type#PRN "Provider number"
 * description = "Naming system for organization identifiers assigned by the State Health Insurance Fund (SHIF) of the Republic of Uzbekistan to healthcare organizations that have entered into contracts with the Fund."
 * jurisdiction = urn:iso:std:iso:3166#UZ "Uzbekistan"
 * usage = "Used for identifying healthcare organizations that have contracts with the State Health Insurance Fund of Uzbekistan."

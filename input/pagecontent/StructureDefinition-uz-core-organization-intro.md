@@ -12,7 +12,7 @@ The only mandatory element this profile adds is a name in Uzbek - the authoritat
 
 
 
-- an identifier - the Soliq tax ID slice, the Argos organization ID slice, and the SHIF/SMIF insurance-payor ID slice (a 3-letter + 6-digit code such as `OAA000024`). See [Identifier systems](identifiers.html) for the supported system URIs;
+- an identifier - the Soliq tax ID slice, the Argos organization ID slice, and the SHIF/SMIF provider ID slice (a 3-letter + 6-digit code such as `OAA000024`). See [Identifier systems](identifiers.html) for the supported system URIs;
 - the active flag;
 - a type - several coded classification slices (organization type, subordination group, nomenclature group, organizational structure, service group, specialization, without-legal-status, and grouping) drawn from the national code systems;
 - the national coverage-area extension (the geographic area served);
@@ -129,8 +129,8 @@ In practice you send the full picture: every identifier the organization holds, 
         "coding": [
           {
             "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
-            "code": "NIIP",
-            "display": "National Insurance Payor Identifier (Payor)"
+            "code": "PRN",
+            "display": "Provider number"
           }
         ]
       },
@@ -203,7 +203,7 @@ An organization may hold up to three identifiers; populate only the ones you hav
 |---|---|---|
 | Soliq tax ID | `https://dhp.uz/fhir/core/sid/org/uz/soliq` | `TAX` |
 | Argos organization ID | `https://dhp.uz/fhir/core/sid/org/uz/argos` | `XX` |
-| SHIF insurance-payor ID | `https://dhp.uz/fhir/core/sid/org/uz/shif` | `NIIP` |
+| SHIF provider ID | `https://dhp.uz/fhir/core/sid/org/uz/shif` | `PRN` |
 
 The SHIF identifier value must be 3 uppercase Latin letters followed by 6 digits (for example `OAA000024`). See [Identifier systems](identifiers.html) for the complete list of supported system URIs.
 
