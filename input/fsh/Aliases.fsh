@@ -2,10 +2,10 @@
 Alias: $medicationdispense-admin-location = http://hl7.org/fhir/medicationdispense-admin-location
 Alias: $medicationdispense-status-reason = http://hl7.org/fhir/CodeSystem/medicationdispense-status-reason
 Alias: $medicationdispense-status = http://hl7.org/fhir/CodeSystem/medicationdispense-status
+
 Alias: $medical-product-classification = http://www.whocc.no/atc
 Alias: $action-participant-type = http://hl7.org/fhir/action-participant-type
 Alias: $event-status = http://hl7.org/fhir/event-status
-
 Alias: $address-type = http://hl7.org/fhir/address-type
 Alias: $address-use = http://hl7.org/fhir/address-use
 Alias: $allergy-category = 	http://hl7.org/fhir/allergy-intolerance-category
