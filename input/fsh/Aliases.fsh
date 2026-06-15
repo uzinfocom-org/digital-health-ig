@@ -169,7 +169,16 @@ Alias: $action-participant-type = http://hl7.org/fhir/action-participant-type
 Alias: $action-code = http://hl7.org/fhir/action-code
 Alias: $action-condition-kind = http://hl7.org/fhir/action-condition-kind
 Alias: $action-relationship-type = http://hl7.org/fhir/action-relationship-type
+Alias: $ucum-common = http://hl7.org/fhir/ValueSet/ucum-common
+Alias: $referencerange-appliesto = http://hl7.org/fhir/ValueSet/referencerange-appliesto
+
 Alias: $adverse-event-actuality = http://hl7.org/fhir/adverse-event-actuality
 Alias: $adverse-event-seriousness = http://terminology.hl7.org/CodeSystem/adverse-event-seriousness
-Alias: $diagnostic-report-status = http://hl7.org/fhir/diagnostic-report-status
-Alias: $diagnostic-report-service-category = http://terminology.hl7.org/CodeSystem/v2-0074
+
+Alias: $administrative-gender = http://hl7.org/fhir/administrative-gender
+Alias: $administrative-gender-cs = https://terminology.dhp.uz/fhir/core/CodeSystem/administrative-gender-cs
+Alias: $administrative-gender-vs = https://terminology.dhp.uz/fhir/core/ValueSet/administrative-gender-vs
+
+Alias: $observation-range-category = http://hl7.org/fhir/observation-range-category
+Alias: $observation-range-category-cs = https://terminology.dhp.uz/fhir/core/CodeSystem/observation-range-category-cs
+Alias: $observation-range-category-vs = https://terminology.dhp.uz/fhir/core/ValueSet/observation-range-category-vs
