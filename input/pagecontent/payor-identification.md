@@ -1,16 +1,14 @@
 ## Payor identification
 
-In the healthcare system of the Republic of Uzbekistan, care is paid for by payors — organizations that finance the services of providers (healthcare organizations). This page describes how payors themselves are identified in the UZ Core profiles, and how a payor identifies the providers it has contracted with.
+In the healthcare system of the Republic of Uzbekistan, care is paid for by payors — organizations that finance the services of providers (healthcare organizations). Today the only payor is the State Health Insurance Fund (SHIF), though the model allows for others in the future. This page describes how payors themselves are identified in the UZ Core profiles, and how a payor identifies the providers it has contracted with.
 
 ### How a payor is identified
 
-A payor is an organization (`Organization` with `type.coding = #pay`). Today a payor is identified by its tax identifier (Soliq), the same universal legal-entity identifier that any organization in the Republic carries. There is no separate payor registry with its own numbering scheme yet.
-
-When such an external registry appears and a payor-registration authority is designated, payor identity may be expressed with a dedicated identifier typed as HL7 v2-0203 `NIIP` ("National Insurance Payor Identifier") or `NII` ("National Insurance Organization Identifier") in a dedicated namespace. Until then, no such identifier is introduced, to avoid self-assigned codes issued without an external registrar.
+A payor is an organization (`Organization` with `type.coding = #pay`). Today a payor is identified by its tax identifier (Soliq), the same universal legal-entity identifier that any organization in the Republic carries.
 
 ### How a payor identifies providers
 
-A payor maintains its own registry of the providers it has contracted with and assigns each of them a registration number within that registry. In FHIR this identifier is modelled as follows:
+A payor (such as SHIF) maintains its own registry of the providers it has contracted with and assigns each of them a registration number within that registry. In FHIR this identifier is modelled as follows:
 
 - type HL7 v2-0203 `PRN` ("Provider number") — it identifies the provider, not the payor;
 - `system` — the namespace of the specific payor;
@@ -25,7 +23,7 @@ A payor contracts with a legal entity, so the contracted organization always has
 
 Care, however, may be delivered by branches of that legal entity. A branch is modelled as a separate `Organization` linked to the head organization through `partOf`. A branch is not always a separate economic entity and may not have its own `taxId`. Therefore the existence of a contract with the payor is determined not from the branch itself but from the head legal entity: from the branch, follow `partOf` up to the organization that has a `taxId` (and the payor's code), and check the contract against it.
 
-### Example: State Health Insurance Fund (SHIF)
+### State Health Insurance Fund (SHIF)
 
 SHIF is a payor (`type.coding = #pay`); as an organization it is identified by its tax identifier (Soliq). To the providers that have contracted with it, the Fund assigns a code within its own namespace:
 
