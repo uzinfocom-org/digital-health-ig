@@ -20,7 +20,14 @@ Description: "Uzbekistan Core profile for EpisodeOfCare, representing a patient'
   * ^short = "Duration of the EpisodeOfCare in the specified status"
 * type MS
   * ^short = "Classification of the episode of care type"
-* type from EpisodeOfCareTypeVS
+  * ^slicing.discriminator.type = #value
+  * ^slicing.discriminator.path = "coding.system"
+  * ^slicing.rules = #open
+  * ^slicing.description = "A national service-type classification is required; additional type codings from other systems are allowed"
+* type contains serviceType 1..1 MS
+* type[serviceType] from EpisodeOfCareTypeVS (required)
+  * ^short = "National service-type classification of the episode of care"
+  * coding.system = Canonical(EpisodeOfCareTypeCS)
 * reason MS
   * ^short = "List of medical conditions expected to be addressed during care"
 * reason.use MS
