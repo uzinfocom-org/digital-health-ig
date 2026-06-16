@@ -65,3 +65,8 @@ A definition for CodeSystem 'http://example.org/fhir/CodeSystem/lab-report-type'
 # The hemoglobin ObservationDefinition is example data using example.org URLs, so its self-referencing canonical link and undefined identifier system are expected.
 Hyperlink 'http://example.org/fhir/ObservationDefinition/example-laboratory-hemoglobin' at 'div/div/p/a' for 'http://example.org/fhir/ObservationDefinition/example-laboratory-hemoglobin' does not resolve
 No definition could be found for URL value 'http://example.org/fhir/sid/lab-test-catalog'
+
+# Publisher 2.2.9: the UCUM display ConceptMaps (UcumToRu/UzUnitsDisplayCM) map UCUM units to our
+# RU/UZ translation supplement (MedicationTotalVolumeUCUMUnitsCS). UCUM is content=not-present, so the
+# publisher cannot confirm the target codes against the supplement value set - false positive, reported.
+%is not valid in the value set https://terminology.dhp.uz/fhir/core/CodeSystem/medication-total-volume-ucum-units-cs%
