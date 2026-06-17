@@ -31,7 +31,7 @@ Description: "Uzbekistan Core profile for EpisodeOfCare, representing a patient'
 * reason MS
   * ^short = "List of medical conditions expected to be addressed during care"
 * reason.use MS
-  * ^short = "Purpose of the reason value"
+  * ^short = "Purpose of the reason value "
 * reason.use from EpisodeOfCareReasonUseVS
 * reason.value MS
   * ^short = "Medical reason requiring consideration"
