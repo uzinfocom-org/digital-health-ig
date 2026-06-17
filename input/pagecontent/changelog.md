@@ -1,6 +1,64 @@
 ### In development
 
-(No changes yet)
+#### New profiles
+
+Added [UZ Core DiagnosticReport](StructureDefinition-uz-core-diagnostic-report.html) profile for laboratory and diagnostic reports, with supporting terminology for [service category](ValueSet-diagnostic-report-service-category-vs.html), [status](ValueSet-diagnostic-report-status-vs.html) and [report types](ValueSet-lab-report-types-vs.html). Implementers exchanging laboratory results should use this profile.
+
+Added [UZ Core ServiceRequest Laboratory](StructureDefinition-uz-core-servicerequest-laboratory.html) profile for ordering laboratory tests and panels, including [payment type](ValueSet-payment-type-vs.html) and [request status](ValueSet-service-request-status-vs.html) terminology. Implementers placing laboratory orders should use this profile.
+
+Added [UZ Core Specimen](StructureDefinition-uz-core-specimen.html) profile for clinical specimens, with terminology for [collection method](ValueSet-specimen-collection-method-vs.html), [specimen type](ValueSet-specimen-types-vs.html), [role](ValueSet-specimen-role-vs.html) and [status](ValueSet-specimen-status-vs.html). It is referenced from the laboratory ServiceRequest and DiagnosticReport profiles.
+
+Added [UZ Core Laboratory ObservationDefinition](StructureDefinition-uz-core-laboratory-observation-definition.html) profile so systems can publish definitions of laboratory tests - permitted units, measurement methods and sex-specific reference ranges - for the Patient Portal and integrating systems.
+
+Added [UZ Core Immunization](StructureDefinition-uz-core-immunization.html) profile for recording vaccinations, with terminology for [target disease](ValueSet-target-disease-vs.html), [administration site](ValueSet-immunization-site-vs.html), [route](ValueSet-route-code-vs.html) and [funding source](ValueSet-funding-source-vs.html), plus a ConceptMap translating [national DMED vaccine codes to CVX](ConceptMap-dmed-vaccine-to-cvx-cm.html).
+
+Added [UZ Core ImmunizationRecommendation](StructureDefinition-uz-core-immunization-recommendation.html) profile for vaccination forecasts, with [forecast status](ValueSet-recommendation-forecast-status-vs.html), [date criterion](ValueSet-recommendation-date-criterion-vs.html) and [reason](ValueSet-recommendation-reason-vs.html) terminology.
+
+Added [UZ Core Immunization PlanDefinition](StructureDefinition-uz-core-immunization-plan-definition.html) profile for national immunization schedules. It carries a mandatory immunization use-context (SNOMED CT `33879002`), so clients can discover schedules with `PlanDefinition?context-type-value=focus$http://snomed.info/sct|33879002`.
+
+Added [UZ Core ActivityDefinition](StructureDefinition-uz-core-activity-definition.html) profile for defining reusable clinical activities (procedures, tests, medication protocols) independent of a specific patient.
+
+Added [UZ Core AdverseEvent](StructureDefinition-uz-core-adverse-event.html) profile for reporting adverse events, with [actuality](ValueSet-adverse-event-actuality-vs.html), [seriousness](ValueSet-adverse-event-seriousness-vs.html), [outcome](ValueSet-adverse-event-outcome-vs.html) and [status](ValueSet-adverse-event-status-vs.html) terminology.
+
+Added [UZ Core Medication](StructureDefinition-uz-core-medication.html) profile with Uzbekistan-specific medication identifiers (marking ID, registration certificate, GTIN, box aggregation ID) and ATC-based [classification](ValueSet-medication-classification-vs.html) and [dose form](ValueSet-medication-doseform-vs.html) terminology.
+
+Added [UZ Core Procedure](StructureDefinition-uz-core-procedure.html) profile, with [procedure status](ValueSet-procedure-event-status-vs.html), SNOMED CT-based [procedure codes](ValueSet-procedure-code-vs.html) and [outcome](ValueSet-procedure-outcome-vs.html) terminology, plus an example [SNOMED CT to ICHI](ConceptMap-snomed-to-ichi-procedures.html) ConceptMap for reimbursement reporting.
+
+#### Terminology and binding changes
+
+Added [laboratory method codes](CodeSystem-lab-methods-cs.html), with ConceptMaps mapping the laboratory [panel and analyte codes](ConceptMap-lab-pan-codes-to-loinc.html) to LOINC and [method codes](ConceptMap-lab-methods-to-loinc.html) to SNOMED CT.
+
+[UZ Core PractitionerRole](StructureDefinition-uz-core-practitioner-role.html) `code` is now bound (required) to the new [position and profession ValueSet](ValueSet-position-and-profession-vs.html), and `specialty` to the new [profession specialization ValueSet](ValueSet-profession-specialization-vs.html). Implementers must populate practitioner roles with codes from these value sets.
+
+Added a [turnaround time extension](StructureDefinition-turnaround-time.html) to [UZ Core HealthcareService](StructureDefinition-uz-core-healthcareservice.html) for stating the expected result turnaround on laboratory services. The category and type bindings on this profile have also been relaxed from required to extensible, so implementers may add local codes.
+
+`type` on [UZ Core Encounter](StructureDefinition-uz-core-encounter.html) and [UZ Core EpisodeOfCare](StructureDefinition-uz-core-episodeofcare.html), and `signature.type` on [UZ Core Provenance](StructureDefinition-uz-core-provenance.html), are now sliced so a national code is required while additional codings remain allowed.
+
+Reference targets across several profiles now point to UZ Core profiles where they exist - for example [UZ Core Observation](StructureDefinition-uz-core-observation.html) `specimen` to UZ Core Specimen and `partOf` to UZ Core Procedure/Immunization, [UZ Core Immunization](StructureDefinition-uz-core-immunization.html) `administeredProduct` to UZ Core Medication, and [UZ Core AdverseEvent](StructureDefinition-uz-core-adverse-event.html) `suspectEntity` to UZ Core Medication. Referenced resources must now conform to the corresponding UZ Core profile.
+
+[UZ Core Encounter](StructureDefinition-uz-core-encounter.html) `reason` and [UZ Core Observation](StructureDefinition-uz-core-observation.html) `basedOn` may now reference an ImmunizationRecommendation.
+
+The canonical URLs of the identifier-domain and EpisodeOfCare value sets (and the foreign passport and drivers-license value sets) moved from `https://dhp.uz/fhir/core/ValueSet/...` to `https://terminology.dhp.uz/fhir/core/ValueSet/...`. Implementers referencing these canonicals directly must update them.
+
+The [nationality value set](ValueSet-nationality-vs.html) used on [UZ Core Patient](StructureDefinition-uz-core-patient.html) has been revised.
+
+Corrected English display names in [OrganizationalSpecializationCS](CodeSystem-organizational-specialization-cs.html) (consistent casing; "Children" changed to "Pediatric"). Codes are unchanged.
+
+#### Organization and identifiers
+
+Added State Health Insurance Fund (SHIF) and Ministry of Health (Minzdrav) identifier slices to [UZ Core Organization](StructureDefinition-uz-core-organization.html). SHIF-assigned provider codes are typed as `PRN` (provider number). A new [payor identification](payor-identification.html) page explains how payors and their contracted providers are identified.
+
+On [UZ Core Patient](StructureDefinition-uz-core-patient.html) and [UZ Core RelatedPerson](StructureDefinition-uz-core-relatedperson.html), the local passport identifier no longer fixes `use` to `official`: use `official` for the current ID card and `old` for a superseded paper passport sharing the same system. See the [identifiers](identifiers.html) page.
+
+#### Documentation
+
+Added implementation guidance pages - [how to read this guide](how-to-read.html), [general guidance](general-guidance.html) and [Must Support](must-support.html) - plus end-to-end [workflow walkthroughs](workflows.html) for the [laboratory](workflow-lab.html), [immunization](workflow-immunization.html), [referral](workflow-referral.html), [patient journey](workflow-patient-journey.html) and [prescription](workflow-prescription.html) processes. Each profile now also has narrative intro and notes sections.
+
+Added [guidance on validating resources against UZ Core](api-access.html#validation) using the command-line validator and validator.fhir.org.
+
+Updated [API access](api-access.html) guidance: only ICD-10 and HL7 code systems currently validate on the playground, PKCE is mandatory for frontend clients, and the authentication details now link to the external SSO documentation.
+
+Renamed the Services page to [Components](components.html) and expanded it with trilingual component names and descriptions.
 
 ### Version 0.5.0
 
