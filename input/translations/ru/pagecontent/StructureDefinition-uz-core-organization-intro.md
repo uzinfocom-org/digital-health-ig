@@ -142,41 +142,41 @@ UZ Core Organization представляет медицинскую или ад
     }
   ],
   "type": [
-    {
-      "coding": [
-        {
-          "system": "https://terminology.dhp.uz/fhir/core/CodeSystem/organization-types-uz-cs",
-          "code": "I",
-          "display": "Boshqaruv boyicha taqsimlanishi"
-        },
-        {
-          "system": "https://terminology.dhp.uz/fhir/core/CodeSystem/organizational-subordination-group-cs",
-          "code": "I_1",
-          "display": "Respublika tassarufidagi muassasalari"
-        },
-        {
-          "system": "https://terminology.dhp.uz/fhir/core/CodeSystem/nomenclature-group-cs",
-          "code": "II_100",
-          "display": "Shifoxona muassasalari"
-        },
-        {
-          "system": "https://terminology.dhp.uz/fhir/core/CodeSystem/organizational-structure-cs",
-          "code": "110",
-          "display": "Ixtisoslashtirilgan ilmiy-amaliy tibbiyot markazi"
-        },
-        {
-          "system": "https://terminology.dhp.uz/fhir/core/CodeSystem/organizational-service-group-cs",
-          "code": "III_100",
-          "display": "Poliklinika bo'limi va statsionar bo'limi mavjud"
-        },
-        {
-          "system": "https://terminology.dhp.uz/fhir/core/CodeSystem/organizational-specialization-cs",
-          "code": "145.0",
-          "display": "Kattalar onkologiyasi"
-        }
-      ]
-    }
-  ],
+  {
+    "coding": [
+      {
+        "system": "https://terminology.dhp.uz/fhir/core/CodeSystem/organizational-subordination-group-cs",
+        "code": "I_1",
+        "display": "Respublika tassarufidagi muassasalari"
+      },
+      {
+        "system": "https://terminology.dhp.uz/fhir/core/CodeSystem/nomenclature-group-cs",
+        "code": "II_100",
+        "display": "Shifoxona muassasalari"
+      },
+      {
+        "system": "https://terminology.dhp.uz/fhir/core/CodeSystem/organizational-service-group-cs",
+        "code": "III_100",
+        "display": "Poliklinika bo'limi va statsionar bo'limi mavjud"
+      },
+      {
+        "system": "https://terminology.dhp.uz/fhir/core/CodeSystem/organizational-structure-cs",
+        "code": "110",
+        "display": "Ixtisoslashtirilgan ilmiy-amaliy tibbiyot markazi"
+      },
+     {
+        "system": "https://terminology.dhp.uz/fhir/core/CodeSystem/organization-grouping-uz-cs",
+        "code": "164",
+        "display": "Ixtisoslashtirilgan ona va bola salomatligi ilmiy-amaliy tibbiyot markazi"
+      },
+      {
+        "system": "https://terminology.dhp.uz/fhir/core/CodeSystem/organizational-specialization-cs",
+        "code": "145.0",
+        "display": "Kattalar onkologiyasi"
+      }
+    ]
+  }
+],
   "contact": [
     {
       "telecom": [

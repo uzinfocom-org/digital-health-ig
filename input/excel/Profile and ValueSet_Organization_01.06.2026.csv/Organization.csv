@@ -27,9 +27,6 @@ Binding: IdentifierTypeCS (required) #NIP",,,,,
 active,,Σ S,  D,0..1,,TRUE,,boolean,Активна или нет запись об организации,,https://terminology.medcore.uz/ValueSet/Organizational-structure,CodeSysOrganizationalStructure,все коды,Организационная структура медучреждения
 Slicing for type.coding,,,,,,,,CodeableConcept,,,https://terminology.medcore.uz/ValueSet/Organization-specialization,OrganizationSpecialization,все коды,Медицинская специализация организации
 type,,Σ S,D,,,,,CodeableConcept,,,https://terminology.medcore.uz/ValueSet/ Identifier Type (required),CodeSystemIdentifierType,все коды,Код типа идентификатора организации
-type.coding[organizationType],,Σ S,D,0..*,,"I ""Boshqaruv boyicha taqsimlanishi""",,Coding,Вид организации System: https://terminology.dhp.uz/fhir/core/CodeSystem/organization-types-uz-cs Binding: OrganizationTypeCS (required),,,,,
-,system,Σ S,D,1..1,,https://terminology.dhp.uz/fhir/core/CodeSystem/organization-types-uz-cs,,uri,,,,,,
-,code,Σ S,D,1..1,,I,,code,Binding: OrganizationTypeCS (required),,,,,
 type.coding[subordinationGroup],,Σ S,D,0..1,,"I_1 ""Respublika tassarufidagi muassasalari""",,Coding,Группа подчинения медорганизации System: https://terminology.dhp.uz/fhir/core/CodeSystem/organizational-subordination-group-cs Binding: OrganizationalSubordiantionGroupCS (required),,,,,
 ,system,Σ S,D,1..1,,https://terminology.dhp.uz/fhir/core/CodeSystem/organizational-subordination-group-cs,,uri,,,,,,
 ,code,Σ S,D,1..1,,I_1,,code,Binding: OrganizationalSubordiantionGroupCS (required),,,,,
@@ -45,10 +42,7 @@ type.coding[organizationalServiceGroup],,Σ S,D,0..*,,organizational-service-gro
 type.coding[specialization],,Σ S,D,0..*,,organizational-specialization-cs#145.0,,Coding,Определяет специализацию медорганизации System: https://terminology.dhp.uz/fhir/core/CodeSystem/organizational-specialization-cs Binding: OrganizationalSpecializationCS (required),,,,,
 ,system,Σ S,D,1..1,,https://terminology.dhp.uz/fhir/core/CodeSystem/organizational-specialization-cs,,uri,,,,,,
 ,code,Σ S,D,1..1,,145,,code,Binding: OrganizationalSpecializationCS (required),,,,,
-type.coding[withoutLegalStatus],,Σ S,D,0..1,,,,Coding,Определяет тип медорганизаций без образования юридического лица System: https://terminology.dhp.uz/fhir/core/CodeSystem/organizational-subordination-institution-cs Binding: OrganizationalSubordinationInstitutionCS (required),,,,,
-,system,Σ S,D,1..1,,https://terminology.dhp.uz/fhir/core/CodeSystem/organizational-subordination-institution-cs,,uri,,,,,,
-,code,Σ S,D,1..1,,STIR-I_30,,code,Binding: OrganizationalSubordinationInstitutionCS (required),,,,,
-type.coding[organizationGrouping],,Σ S,D,0..1,,organizational-subordination-institution-cs#STIR-I_30,,Coding,Определяет тип группировки межучреждению System: https://terminology.dhp.uz/fhir/core/CodeSystem/organization-grouping-uz-cs Binding: OrganizationGroupCS (required),,,,,
+type.coding[organizationGrouping],,Σ S,D,0..1,,organization-grouping-uz-cs#116,,Coding,Определяет тип группировки межучреждению System: https://terminology.dhp.uz/fhir/core/CodeSystem/organization-grouping-uz-cs Binding: OrganizationGroupCS (required),,,,,
 ,system,Σ S,D,1..1,,,,uri,Fixed system,,,,,
 ,code,Σ S,D,1..1,,,,code,Binding: OrganizationGroupCS (required),,,,,
 name,,Σ S,D,0..1,,Respublika Onkologiya Markazi,,string,Название организации FSH: insert MultilingualName(организации),,,,,
