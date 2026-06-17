@@ -92,6 +92,55 @@ On a `412`, re-read the resource, re-apply your change on top of the new version
 
 *\<to be filled in - describe error handling here\>*
 
+### Validating resources against UZ Core {#validation}
+
+Before sending data to the platform, check it against the UZ Core profiles. Use the [hosted web validator](#validation-web) (nothing to install) or the [FHIR validator command-line tool](#validation-cli) (scriptable, runs offline). Both run the same validation engine; the setup that matters is loading this IG so the `uz-core-*` profiles resolve.
+
+#### Command-line validator {#validation-cli}
+
+For scripted or offline use, download the [HL7 FHIR validator](https://github.com/hapifhir/org.hl7.fhir.core/releases/latest/download/validator_cli.jar) and run:
+
+```
+java -jar validator_cli.jar resource.json -version 5.0.0 -ig uz.dhp.core#current
+```
+
+The `-ig` flag plays the same role as adding the IG in the web validator below.
+
+#### Web validator (validator.fhir.org) {#validation-web}
+
+1. Open [validator.fhir.org](https://validator.fhir.org/).
+2. On the Options tab, set FHIR version to `5.0.0`. Then under Implementation Guides, type `uz.dhp` in the *Select IG* box, choose `uz.dhp.core`, pick version `current`, and click Add. Confirm it now reads `Selected IGs (1): uz.dhp.core#current`.
+3. On the Validate tab, paste your resource under Enter Resource (or use Upload Resources), then click Validate.
+4. Read the results. Each issue shows its severity, location, and message.
+
+<figure style="margin: 1.5em 0;">
+<img src="validator-fhir-org-1-options.png" width="460" alt="Loading the UZ Core IG on the validator.fhir.org Options tab"/>
+<figcaption style="font-size: 0.9em; color: #555;">Step 2 - loading <code>uz.dhp.core#current</code> in Options.</figcaption>
+</figure>
+
+<figure style="margin: 1.5em 0;">
+<img src="validator-fhir-org-2-enter-resource.png" width="560" alt="Entering a resource on the Validate tab"/>
+<figcaption style="font-size: 0.9em; color: #555;">Step 3 - entering the resource on the Validate tab.</figcaption>
+</figure>
+
+<figure style="margin: 1.5em 0;">
+<img src="validator-fhir-org-3-results.png" width="760" alt="Validation results"/>
+<figcaption style="font-size: 0.9em; color: #555;">Step 4 - the validation results.</figcaption>
+</figure>
+
+Loading the IG in step 2 is the step people miss. If you skip it, the validator cannot resolve the `uz-core-*` profile named in the resource's `meta.profile` and instead tries to dereference its canonical URL over the network, which returns a 404:
+
+```
+Profile reference 'https://dhp.uz/fhir/core/StructureDefinition/uz-core-encounter'
+has not been checked because it could not be found ... 404 Not Found
+```
+
+When that happens the resource is only checked against base FHIR R5, not UZ Core, so genuine profile violations are missed.
+
+#### Choosing a version {#validation-version}
+
+`current` tracks the latest build of this IG. A pinned release such as `uz.dhp.core#0.5.0` validates against the last formal publication, which can lag behind `current` and so report fewer issues. Use `current` while the IG is still evolving.
+
 ### Must Support
 Many elements in the profiles are flagged Must Support. See the dedicated [Must Support](must-support.html) page for what that means, the two contexts it is used in, and how to handle elements you cannot populate.
 
