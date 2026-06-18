@@ -1,0 +1,33 @@
+name: Build FHIR IG
+
+on:
+  push:
+    branches: [ UZCoreTask ]
+  pull_request:
+    branches: [ UZCoreTask ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-java@v4
+        with:
+          java-version: '17'
+          distribution: 'temurin'
+      - name: Install Jekyll
+        run: sudo gem install jekyll
+      - name: Install SUSHI
+        run: npm install -g fsh-sushi
+      - name: Download IG Publisher
+        run: |
+          mkdir -p input-cache
+          curl -L https://github.com/HL7/fhir-ig-publisher/releases/latest/download/publisher.jar \
+            -o input-cache/publisher.jar
+      - name: Run IG Publisher
+        run: java -Xmx6g -jar input-cache/publisher.jar -ig ig.ini
+      - name: Upload output
+        uses: actions/upload-artifact@v4
+        with:
+          name: ig-output
+          path: output/
