@@ -10,7 +10,7 @@
 
 #### Изменения профиля Organization
 
-Слайс `type.coding[organizationType]` в [UZ Core Organization](StructureDefinition-uz-core-organization.html) теперь использует [OrganizationTypeUZCS](CodeSystem-organization-types-uz-cs.html) вместо международного CodeSystem HL7 `organization-type`. Например, `$organization-type-cs#prov` необходимо заменить на код из `organization-types-uz-cs` (напр. `#I` "Распределение по управлению"). Прямого соответствия нет - каждую организацию необходимо классифицировать в новой системе (коды I-V).
+Слайс `type.coding[organizationType]` в [UZ Core Organization](StructureDefinition-uz-core-organization.html) теперь использует OrganizationTypeUZCS вместо международного CodeSystem HL7 `organization-type`. Например, `$organization-type-cs#prov` необходимо заменить на код из `organization-types-uz-cs` (напр. `#I` "Распределение по управлению"). Прямого соответствия нет - каждую организацию необходимо классифицировать в новой системе (коды I-V).
 
 Добавлен слайс `type.coding[organizationGrouping]` в [UZ Core Organization](StructureDefinition-uz-core-organization.html) с использованием [OrganizationGroupingCS](CodeSystem-organization-grouping-uz-cs.html) для детальной группировки учреждений (напр. `#104` "Специализированные больницы", `#210` "Семейная поликлиника"). Разработчикам следует заполнять этот новый слайс.
 

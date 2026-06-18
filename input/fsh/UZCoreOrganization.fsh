@@ -58,7 +58,6 @@ Description: "Uzbekistan Core Organization profile, used to define healthcare or
     specialization 0..* MS and
     organizationGrouping 0..1 MS
 
-
 * type.coding[subordinationGroup]
   ^short = "Группа подчинения медорганизации"
   * system 1..1 MS
