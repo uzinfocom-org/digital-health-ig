@@ -2,14 +2,11 @@ ValueSet: TaskIntentVS
 Id: task-intent-vs
 Title: "Task Intent VS"
 Description: "ValueSet for Task Intent VS"
-
 * ^experimental = true
 * ^status = #draft
 * ^url = "https://terminology.dhp.uz/fhir/core/ValueSet/task-intent-vs"
-
 * ^extension[0].url = $valueset-supplement
 * ^extension[=].valueCanonical = Canonical(TaskIntentCS)
-
 * ^extension[+].url = $valueset-supplement
 * ^extension[=].valueCanonical = Canonical(RequestIntentCS)
 

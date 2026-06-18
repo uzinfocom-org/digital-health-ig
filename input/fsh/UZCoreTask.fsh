@@ -55,9 +55,9 @@ Usage: #example
 * code = TaskCodesCS#approve-family-doctor "Oilaviy shifokorning roziligi"
 * basedOn = Reference(ServiceRequest/example-state-insurance-referral)
 * status = #in-progress
-* businessStatus = TaskBusinessStatusCS#active "Faol"
+* businessStatus = TaskBusinessStatusCS#overdue "Muddati o'tgan"
 * intent = $request-intent#order
-* focus = Reference(ServiceRequest/example-state-insurance-referral)
+* focus = Reference(ServiceRequest/example-cbc-order)
 * for = Reference(UZCorePatient/example-salim)
 * owner = Reference(Organization/xonobod-medical-association)
 * requestedPeriod
@@ -73,12 +73,12 @@ Description: "Example of a state-insurance workflow task assigned to a specialis
 Usage: #example
 * language = #uz
 * code = TaskCodesCS#approve-specialist "Mutaxassisning roziligi"
-* basedOn = Reference(ServiceRequest/example-state-insurance-referral)
+* basedOn = Reference(ServiceRequest/example-cbc-order)
 * partOf = Reference(Task/example-task-family-doctor)
 * status = #requested
-* businessStatus = TaskBusinessStatusCS#active "Faol"
+* businessStatus = TaskBusinessStatusCS#overdue "Muddati o'tgan"
 * intent = $request-intent#order
-* focus = Reference(ServiceRequest/example-state-insurance-referral)
+* focus = Reference(ServiceRequest/example-cbc-order)
 * for = Reference(UZCorePatient/example-david)
 * owner = Reference(UZCoreOrganization/tashkent-diseases-hospital)
 * requestedPeriod
@@ -94,12 +94,12 @@ Description: "Example of a state-insurance workflow task assigned to the regiona
 Usage: #example
 * language = #uz
 * code = TaskCodesCS#approve-regional-commission "Mintaqaviy komissiyaning roziligi"
-* basedOn = Reference(ServiceRequest/example-state-insurance-referral)
+* basedOn = Reference(ServiceRequest/example-cbc-order)
 * partOf = Reference(Task/example-task-specialist)
 * status = #completed
 * businessStatus = TaskBusinessStatusCS#confirmed "Tasdiqlangan"
 * intent = $request-intent#order
-* focus = Reference(ServiceRequest/example-state-insurance-referral)
+* focus = Reference(ServiceRequest/example-cbc-order)
 * for = Reference(UZCorePatient/example-emma)
 * owner = Reference(UZCoreOrganization/example-organization)
 * requestedPeriod
@@ -115,12 +115,12 @@ Description: "Example of a state-insurance workflow task assigned to the nationa
 Usage: #example
 * language = #uz
 * code = TaskCodesCS#approve-national-commission "Respublika komissiyasining roziligi"
-* basedOn = Reference(ServiceRequest/example-state-insurance-referral)
+* basedOn = Reference(ServiceRequest/example-cbc-order)
 * partOf = Reference(Task/example-task-regional-commission)
 * status = #completed
 * businessStatus = TaskBusinessStatusCS#confirmed "Tasdiqlangan"
 * intent = $request-intent#order
-* focus = Reference(ServiceRequest/example-state-insurance-referral)
+* focus = Reference(ServiceRequest/example-cbc-order)
 * for = Reference(UZCorePatient/example-unidentified-patient)
 * owner = Reference(UZCoreOrganization/xonobod-medical-association)
 * requestedPeriod
@@ -136,14 +136,14 @@ Description: "Example of a state-insurance workflow task representing the hospit
 Usage: #example
 * language = #uz
 * code = TaskCodesCS#approve-hospitalization "Kasalxonaga yotqizishni tasdiqlash"
-* basedOn = Reference(ServiceRequest/example-state-insurance-referral)
+* basedOn = Reference(ServiceRequest/example-cbc-order)
 * partOf = Reference(Task/example-task-national-commission)
 * status = #completed
 * businessStatus = TaskBusinessStatusCS#completed "Tugallangan"
 * intent = $request-intent#order
-* focus = Reference(ServiceRequest/example-state-insurance-referral)
-* for = Reference(UZCorePatient/example-organization)
-* owner = Reference(UZCoreOrganization/example-david)
+* focus = Reference(ServiceRequest/example-cbc-order)
+* for = Reference(UZCorePatient/example-david)
+* owner = Reference(UZCoreOrganization/example-organization)
 * requestedPeriod
   * start = "2026-03-10"
   * end = "2026-05-10"
