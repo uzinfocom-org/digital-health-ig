@@ -53,12 +53,12 @@ Description: "Example of a state-insurance workflow task assigned to the family 
 Usage: #example
 * language = #uz
 * code = TaskCodesCS#approve-family-doctor "Oilaviy shifokorning roziligi"
-* basedOn = Reference(ServiceRequest/example-state-insurance-referral)
+* basedOn = Reference(ServiceRequest/example-cbc-order)
 * status = #in-progress
 * businessStatus = TaskBusinessStatusCS#overdue "Muddati o'tgan"
 * intent = $request-intent#order
 * focus = Reference(ServiceRequest/example-cbc-order)
-* for = Reference(UZCorePatient/example-salim)
+* for = Reference(Patient/example-salim)
 * owner = Reference(Organization/xonobod-medical-association)
 * requestedPeriod
   * start = "2026-03-05"
@@ -79,8 +79,8 @@ Usage: #example
 * businessStatus = TaskBusinessStatusCS#overdue "Muddati o'tgan"
 * intent = $request-intent#order
 * focus = Reference(ServiceRequest/example-cbc-order)
-* for = Reference(UZCorePatient/example-david)
-* owner = Reference(UZCoreOrganization/tashkent-diseases-hospital)
+* for = Reference(Patient/example-david)
+* owner = Reference(Organization/tashkent-diseases-hospital)
 * requestedPeriod
   * start = "2026-03-06"
   * end = "2026-03-07"
@@ -100,8 +100,8 @@ Usage: #example
 * businessStatus = TaskBusinessStatusCS#confirmed "Tasdiqlangan"
 * intent = $request-intent#order
 * focus = Reference(ServiceRequest/example-cbc-order)
-* for = Reference(UZCorePatient/example-emma)
-* owner = Reference(UZCoreOrganization/example-organization)
+* for = Reference(Patient/example-emma)
+* owner = Reference(Organization/example-organization)
 * requestedPeriod
   * start = "2026-03-07"
   * end = "2026-03-08"
@@ -121,8 +121,8 @@ Usage: #example
 * businessStatus = TaskBusinessStatusCS#confirmed "Tasdiqlangan"
 * intent = $request-intent#order
 * focus = Reference(ServiceRequest/example-cbc-order)
-* for = Reference(UZCorePatient/example-unidentified-patient)
-* owner = Reference(UZCoreOrganization/xonobod-medical-association)
+* for = Reference(Patient/example-unidentified-patient)
+* owner = Reference(Organization/xonobod-medical-association)
 * requestedPeriod
   * start = "2026-03-08"
   * end = "2026-03-10"
@@ -142,8 +142,8 @@ Usage: #example
 * businessStatus = TaskBusinessStatusCS#completed "Tugallangan"
 * intent = $request-intent#order
 * focus = Reference(ServiceRequest/example-cbc-order)
-* for = Reference(UZCorePatient/example-david)
-* owner = Reference(UZCoreOrganization/example-organization)
+* for = Reference(Patient/example-david)
+* owner = Reference(Organization/example-organization)
 * requestedPeriod
   * start = "2026-03-10"
   * end = "2026-05-10"
