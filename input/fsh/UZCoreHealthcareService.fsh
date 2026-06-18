@@ -30,13 +30,13 @@ Description: "Uzbekistan Core HealthcareService profile, used to define healthca
   * system 1..1 MS
   * system = Canonical(CancerTypesCS)
   * code 1..1 MS
-  * code from ServiceCategoriesVS (required)
+  * code from ServiceCategoriesVS (extensible)
 
 * category.coding[labCategory]
   * system 1..1 MS
   * system = Canonical(LabCategoriesCS)
   * code 1..1 MS
-  * code from lab-service-categories-vs (required)
+  * code from lab-service-categories-vs (extensible)
 
 * type.coding ^slicing.discriminator.type = #value
 * type.coding ^slicing.discriminator.path = "system"
@@ -52,13 +52,13 @@ Description: "Uzbekistan Core HealthcareService profile, used to define healthca
   * system 1..1 MS
   * system = Canonical(CancerTypesCS)
   * code 1..1 MS
-  * code from ServiceNamesVS (required)
+  * code from ServiceNamesVS (extensible)
 
 * type.coding[labService]
   * system 1..1 MS
   * system = Canonical(LabPanelCS) 
   * code 1..1 MS
-  * code from observation-codes-vs (required)
+  * code from observation-codes-vs (extensible)
 
 Instance: example-healthcareservice
 InstanceOf: UZCoreHealthcareService

@@ -242,6 +242,8 @@ Organizations are identified by their tax identification number assigned by the 
 
 Healthcare organizations under contract with the State Health Insurance Fund (SHIF) of Uzbekistan are identified by their SHIF code. The code follows the pattern `^[A-Z]{3}[0-9]{6}$` — 3 uppercase Latin letters followed by 6 digits (e.g., `OAA000024`).
 
+The SHIF code is a provider number (HL7 v2-0203 `PRN`) assigned by the Fund (the assigning authority) to each contracted organization within the Fund's identifier namespace. It identifies the contracted provider, not the Fund itself: the Fund, as a payor, is identified by its tax identifier (Soliq). This follows the general model for insurer-assigned provider identifiers in Uzbekistan, where each payor assigns provider numbers within its own namespace.
+
 **System URI**: `https://dhp.uz/fhir/core/sid/org/uz/shif`
 
 ```json
@@ -254,8 +256,8 @@ Healthcare organizations under contract with the State Health Insurance Fund (SH
         "coding": [
           {
             "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
-            "code": "NIIP",
-            "display": "National Insurance Payor Identifier (Payor)"
+            "code": "PRN",
+            "display": "Provider number"
           }
         ]
       },

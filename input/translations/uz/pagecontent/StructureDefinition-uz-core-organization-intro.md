@@ -14,7 +14,7 @@ Ushbu profil qo'shadigan yagona majburiy element - bu o'zbek tilidagi nom - rusc
 
 
 
-- identifikator - Soliq soliq identifikatori slaysi, Argos tashkilot identifikatori slaysi va SHIF/SMIF sug'urta to'lovchisi identifikatori slaysi (`OAA000024` kabi 3 ta harf + 6 ta raqamdan iborat kod). Qo'llab-quvvatlanadigan tizim URI lari uchun [Identifikator tizimlari](identifiers.html) ga qarang;
+- identifikator - Soliq soliq identifikatori slaysi, Argos tashkilot identifikatori slaysi va SHIF/SMIF provayder identifikatori slaysi (`OAA000024` kabi 3 ta harf + 6 ta raqamdan iborat kod). Qo'llab-quvvatlanadigan tizim URI lari uchun [Identifikator tizimlari](identifiers.html) ga qarang;
 - active belgisi;
 - type - milliy kod tizimlaridan olingan bir nechta kodlangan tasniflash slayslari (tashkilot turi, bo'ysunish guruhi, nomenklatura guruhi, tashkiliy tuzilma, xizmat guruhi, ixtisoslashuv, yuridik maqomsiz va guruhlash);
 - milliy qamrov-hududi kengaytmasi (xizmat ko'rsatiladigan geografik hudud);
@@ -131,8 +131,8 @@ Amaliyotda siz to'liq manzarani yuborasiz: tashkilot egalik qiladigan har bir id
         "coding": [
           {
             "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
-            "code": "NIIP",
-            "display": "National Insurance Payor Identifier (Payor)"
+            "code": "PRN",
+            "display": "Provider number"
           }
         ]
       },
@@ -205,7 +205,7 @@ Tashkilot uchtagacha identifikatorga ega bo'lishi mumkin; faqat sizda mavjudlari
 |---|---|---|
 | Soliq soliq identifikatori | `https://dhp.uz/fhir/core/sid/org/uz/soliq` | `TAX` |
 | Argos tashkilot identifikatori | `https://dhp.uz/fhir/core/sid/org/uz/argos` | `XX` |
-| SHIF sug'urta to'lovchisi identifikatori | `https://dhp.uz/fhir/core/sid/org/uz/shif` | `NIIP` |
+| SHIF provayder identifikatori | `https://dhp.uz/fhir/core/sid/org/uz/shif` | `PRN` |
 
 SHIF identifikatori qiymati 3 ta bosh harfli lotin harfi va undan keyin 6 ta raqamdan iborat bo'lishi shart (masalan `OAA000024`). Qo'llab-quvvatlanadigan tizim URI larining to'liq ro'yxati uchun [Identifikator tizimlari](identifiers.html) ga qarang.
 
