@@ -80,13 +80,21 @@ RuleSet: TaxIdentifier
   * use = #official
   * value 1..1 MS
 
-RuleSet: MinzdravIdentifier
-* identifier[minzdravId]
-  * ^short = "Unique identifier of the organization in Minzdrav"
+RuleSet: MohIdentifier
+* identifier[mohId]
+  * ^short = "Unique identifier of the organization in Ministry of Health"
   * system 1..1 MS
-  * system = $organization-minzdrav-id-system
+  * system = $organization-moh-id-system
   * type 1..1 MS
   * type = $identifier-type#XX "Organization Identifier"
+  * use = #official
+  * value 1..1 MS
+
+RuleSet: DhpIdentifier
+* identifier[dhpId]
+  * ^short = "Unique identifier of the organization in Digital Health Platform"
+  * system 1..1 MS
+  * system = $organization-dhp-id-system
   * use = #official
   * value 1..1 MS
 

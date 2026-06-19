@@ -24,7 +24,8 @@ Description: "Uzbekistan Core Organization profile, used to define healthcare or
 * identifier contains taxId 0..1 MS and argosId 0..1 MS and shifId 0..1 MS and minzdravId 0..1 MS
 
 * insert TaxIdentifier
-* insert MinzdravIdentifier
+* insert MohIdentifier
+* insert DhpIdentifier
 
 * identifier[argosId]
   * system 1..1 MS
