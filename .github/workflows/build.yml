@@ -2,9 +2,9 @@ name: Build FHIR IG
 
 on:
   push:
-    branches: [ UZCoreTask ]
+    branches: [ UzCoreClaim ]
   pull_request:
-    branches: [ UZCoreTask ]
+    branches: [ UzCoreClaim ]
 
 jobs:
   build:
