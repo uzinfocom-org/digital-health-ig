@@ -14,35 +14,49 @@ Description: "Uzbekistan Core Task profile, used to track workflow steps of the 
 * ^publisher = "Uzinfocom"
 
 * identifier 0..1 MS
+* identifier ^short = "Identifiers assigned to this task"
 
 * code MS
+* code ^short = "Task category"
 * code from TaskCodesVS (required)
 
 * basedOn 1..1 MS
+* basedOn ^short = "Request under which this task was completed"
 * basedOn only Reference(ServiceRequest)
 
+* partOf MS
+* partOf ^short = "Composite Task" 
 * partOf only Reference(Task)
 
 * status MS
+* status ^short = "Task Status"
 * status from TaskStatusVS (required)
 
 * businessStatus MS
+* businessStatus ^short = "Business status of task"
 * businessStatus from TaskBusinessStatusVS (required)
 
 * intent MS
+* intent ^short = "Task completion level"
 * intent from TaskIntentVS (required)
 
 * focus 1..1 MS
+* focus ^short = "On which task the action is being performed"
 * focus only Reference(ServiceRequest)
 
 * for MS
+* for ^short = "For whom this task is performed"
 * for only Reference(UZCorePatient)
 
+* owner MS
+* owner ^short = "Task responsible person"
 * owner only Reference(UZCoreOrganization or UZCorePractitionerRole)
 
 * requestedPeriod MS
+  * ^short = "When execution is required"
   * start and end MS
 * executionPeriod MS
+  * ^short = "Actual start and end time"
   * start and end MS
 
 * obeys uzcore-tsk-1
@@ -52,10 +66,10 @@ InstanceOf: UZCoreTask
 Description: "Example of a state-insurance workflow task assigned to the family doctor for initial approval"
 Usage: #example
 * language = #uz
-* code = TaskCodesCS#approve-family-doctor "Oilaviy shifokorning roziligi"
+* code = task-codes-cs#approve-family-doctor "Oilaviy shifokorning roziligi"
 * basedOn = Reference(ServiceRequest/example-cbc-order)
 * status = #in-progress
-* businessStatus = TaskBusinessStatusCS#overdue "Muddati o'tgan"
+* businessStatus = task-business-status-cs#overdue "Muddati o'tgan"
 * intent = $request-intent#order
 * focus = Reference(ServiceRequest/example-cbc-order)
 * for = Reference(Patient/example-salim)
@@ -72,11 +86,11 @@ InstanceOf: UZCoreTask
 Description: "Example of a state-insurance workflow task assigned to a specialist physician for review"
 Usage: #example
 * language = #uz
-* code = TaskCodesCS#approve-specialist "Mutaxassisning roziligi"
+* code = task-codes-cs#approve-specialist "Mutaxassisning roziligi"
 * basedOn = Reference(ServiceRequest/example-cbc-order)
 * partOf = Reference(Task/example-task-family-doctor)
 * status = #requested
-* businessStatus = TaskBusinessStatusCS#overdue "Muddati o'tgan"
+* businessStatus = task-business-status-cs#overdue "Muddati o'tgan"
 * intent = $request-intent#order
 * focus = Reference(ServiceRequest/example-cbc-order)
 * for = Reference(Patient/example-david)
@@ -93,11 +107,11 @@ InstanceOf: UZCoreTask
 Description: "Example of a state-insurance workflow task assigned to the regional health commission for approval"
 Usage: #example
 * language = #uz
-* code = TaskCodesCS#approve-regional-commission "Mintaqaviy komissiyaning roziligi"
+* code = task-codes-cs#approve-regional-commission "Mintaqaviy komissiyaning roziligi"
 * basedOn = Reference(ServiceRequest/example-cbc-order)
 * partOf = Reference(Task/example-task-specialist)
 * status = #completed
-* businessStatus = TaskBusinessStatusCS#confirmed "Tasdiqlangan"
+* businessStatus = task-business-status-cs#confirmed "Tasdiqlangan"
 * intent = $request-intent#order
 * focus = Reference(ServiceRequest/example-cbc-order)
 * for = Reference(Patient/example-emma)
@@ -114,11 +128,11 @@ InstanceOf: UZCoreTask
 Description: "Example of a state-insurance workflow task assigned to the national (republican) health commission for approval"
 Usage: #example
 * language = #uz
-* code = TaskCodesCS#approve-national-commission "Respublika komissiyasining roziligi"
+* code = task-codes-cs#approve-national-commission "Respublika komissiyasining roziligi"
 * basedOn = Reference(ServiceRequest/example-cbc-order)
 * partOf = Reference(Task/example-task-regional-commission)
 * status = #completed
-* businessStatus = TaskBusinessStatusCS#confirmed "Tasdiqlangan"
+* businessStatus = task-business-status-cs#confirmed "Tasdiqlangan"
 * intent = $request-intent#order
 * focus = Reference(ServiceRequest/example-cbc-order)
 * for = Reference(Patient/example-unidentified-patient)
@@ -135,11 +149,11 @@ InstanceOf: UZCoreTask
 Description: "Example of a state-insurance workflow task representing the hospitalization step at the receiving clinic"
 Usage: #example
 * language = #uz
-* code = TaskCodesCS#approve-hospitalization "Kasalxonaga yotqizishni tasdiqlash"
+* code = task-codes-cs#approve-hospitalization "Kasalxonaga yotqizishni tasdiqlash"
 * basedOn = Reference(ServiceRequest/example-cbc-order)
 * partOf = Reference(Task/example-task-national-commission)
 * status = #completed
-* businessStatus = TaskBusinessStatusCS#completed "Tugallangan"
+* businessStatus = task-business-status-cs#completed "Tugallangan"
 * intent = $request-intent#order
 * focus = Reference(ServiceRequest/example-cbc-order)
 * for = Reference(Patient/example-david)
