@@ -1,0 +1,13 @@
+CODE,UZ,RU,EN
+  unknown,Noma'lum,Неизвестно,Unknown
+  proposal,Taklif,Предложение,Proposal
+  plan,Reja,План,Plan
+  order,Buyurtma,Заказ,Order
+  original-order,Asl buyurtma,Первоначальный заказ,Original Order
+  reflex-order,Refleks buyurtma,Рефлекторный заказ,Reflex Order
+  filler-order,To'ldiruvchi buyurtma,Заказ на пополнение,Filler Order
+  instance-order,Nusxa buyurtmasi,Заказ экземпляра,Instance Order
+  option,Tanlov,Опция,Option
+,,,
+,,,
+,,,
