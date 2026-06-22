@@ -14,49 +14,49 @@ Description: "Uzbekistan Core Task profile, used to track workflow steps of the 
 * ^publisher = "Uzinfocom"
 
 * identifier 0..1 MS
-* identifier ^short = "Identifiers assigned to this task"
+* identifier ^short = "Identifiers assigned to the task"
 
 * code MS
 * code ^short = "Task category"
 * code from TaskCodesVS (required)
 
 * basedOn 1..1 MS
-* basedOn ^short = "Request under which this task was completed"
+* basedOn ^short = "Service request under which this task is performed"
 * basedOn only Reference(ServiceRequest)
 
 * partOf MS
-* partOf ^short = "Composite Task" 
+* partOf ^short = "Parent task in the workflow"
 * partOf only Reference(Task)
 
 * status MS
-* status ^short = "Task Status"
+* status ^short = "Task status"
 * status from TaskStatusVS (required)
 
 * businessStatus MS
-* businessStatus ^short = "Business status of task"
+* businessStatus ^short = "Business status"
 * businessStatus from TaskBusinessStatusVS (required)
 
 * intent MS
-* intent ^short = "Task completion level"
+* intent ^short = "Task intent"
 * intent from TaskIntentVS (required)
 
 * focus 1..1 MS
-* focus ^short = "On which task the action is being performed"
+* focus ^short = "Service request being acted upon"
 * focus only Reference(ServiceRequest)
 
 * for MS
-* for ^short = "For whom this task is performed"
+* for ^short = "Patient for whom this task is performed"
 * for only Reference(UZCorePatient)
 
-* owner MS
-* owner ^short = "Task responsible person"
+* owner ^short = "Organization or practitioner responsible for the task"
 * owner only Reference(UZCoreOrganization or UZCorePractitionerRole)
 
 * requestedPeriod MS
-  * ^short = "When execution is required"
+* requestedPeriod ^short = "Planned timeframe for task completion"
   * start and end MS
+
 * executionPeriod MS
-  * ^short = "Actual start and end time"
+* executionPeriod ^short = "Actual start and end time of task execution"
   * start and end MS
 
 * obeys uzcore-tsk-1
