@@ -14,7 +14,7 @@ The only mandatory element this profile adds is a name in Uzbek - the authoritat
 
 - an identifier - the Soliq tax ID slice, the Argos organization ID slice, and the SHIF/SMIF provider ID slice (a 3-letter + 6-digit code such as `OAA000024`). See [Identifier systems](identifiers.html) for the supported system URIs;
 - the active flag;
-- a type - several coded classification slices (organization type, subordination group, nomenclature group, organizational structure, service group, specialization, without-legal-status, and grouping) drawn from the national code systems;
+- a type - several coded classification slices (subordination group, nomenclature group, organizational structure, service group, specialization, and grouping) drawn from the national code systems;
 - the national coverage-area extension (the geographic area served);
 - contact details;
 - a partOf reference to a parent organization (the hierarchy link);
@@ -33,6 +33,7 @@ The examples below go from the smallest instance the server will accept to a ful
 ```json
 {
   "resourceType": "Organization",
+  "language": "uz",
   "meta": {
     "profile": ["https://dhp.uz/fhir/core/StructureDefinition/uz-core-organization"]
   },
@@ -58,6 +59,7 @@ The Uzbek `name` is authoritative; the Russian and Karakalpak names travel along
 ```json
 {
   "resourceType": "Organization",
+  "language": "uz",
   "meta": {
     "profile": ["https://dhp.uz/fhir/core/StructureDefinition/uz-core-organization"]
   },
@@ -91,6 +93,7 @@ In practice you send the full picture: every identifier the organization holds, 
 ```json
 {
   "resourceType": "Organization",
+  "language": "uz",
   "meta": { "profile": [ "https://dhp.uz/fhir/core/StructureDefinition/uz-core-organization" ] },
   "active": true,
   "name": "Respublika onkologiya markazi",
@@ -143,11 +146,6 @@ In practice you send the full picture: every identifier the organization holds, 
     {
       "coding": [
         {
-          "system": "https://terminology.dhp.uz/fhir/core/CodeSystem/organization-types-uz-cs",
-          "code": "I",
-          "display": "Boshqaruv boyicha taqsimlanishi"
-        },
-        {
           "system": "https://terminology.dhp.uz/fhir/core/CodeSystem/organizational-subordination-group-cs",
           "code": "I_1",
           "display": "Respublika tassarufidagi muassasalari"
@@ -158,14 +156,19 @@ In practice you send the full picture: every identifier the organization holds, 
           "display": "Shifoxona muassasalari"
         },
         {
+          "system": "https://terminology.dhp.uz/fhir/core/CodeSystem/organizational-service-group-cs",
+          "code": "III_100",
+          "display": "Poliklinika bo'limi va statsionar bo'limi mavjud"
+        },
+        {
           "system": "https://terminology.dhp.uz/fhir/core/CodeSystem/organizational-structure-cs",
           "code": "110",
           "display": "Ixtisoslashtirilgan ilmiy-amaliy tibbiyot markazi"
         },
         {
-          "system": "https://terminology.dhp.uz/fhir/core/CodeSystem/organizational-service-group-cs",
-          "code": "III_100",
-          "display": "Poliklinika bo'limi va statsionar bo'limi mavjud"
+          "system": "https://terminology.dhp.uz/fhir/core/CodeSystem/organization-grouping-uz-cs",
+          "code": "164",
+          "display": "Ixtisoslashtirilgan ona va bola salomatligi ilmiy-amaliy tibbiyot markazi"
         },
         {
           "system": "https://terminology.dhp.uz/fhir/core/CodeSystem/organizational-specialization-cs",
@@ -214,6 +217,7 @@ When an organization serves a defined geographic area, add the national `coverag
 ```json
 {
   "resourceType": "Organization",
+  "language": "uz",
   "meta": {
     "profile": ["https://dhp.uz/fhir/core/StructureDefinition/uz-core-organization"]
   },

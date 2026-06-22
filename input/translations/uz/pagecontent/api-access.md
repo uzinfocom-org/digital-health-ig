@@ -96,11 +96,11 @@ If-Match: W/"3"
 
 ### Resurslarni UZ Core bo'yicha validatsiya qilish {#validation}
 
-Ma'lumotlarni platformaga yuborishdan oldin, ularni UZ Core profillariga nisbatan tekshiring. [Onlayn validator](#validation-web)dan (o'rnatish shart emas) yoki [FHIR validatorining buyruq qatori vositasi](#validation-cli)dan (skript qilinadi, oflayn ishlaydi) foydalaning. Ikkalasi ham bir xil validatsiya dvigatelidan foydalanadi; muhimi - `uz-core-*` profillari aniqlanishi uchun ushbu IG ni yuklashdir.
+Ma'lumotlarni platformaga yuborishdan oldin, ularni UZ Core profillariga nisbatan tekshiring. [Onlayn validator](#validation-web)dan (o'rnatish shart emas) yoki [FHIR validatorining buyruq qatori vositasi](#validation-cli)dan (skript qilinadi) foydalaning. Ikkalasi ham bir xil validatsiya dvigatelidan foydalanadi; muhimi - `uz-core-*` profillari aniqlanishi uchun ushbu IG ni yuklashdir.
 
 #### Buyruq qatori validatori {#validation-cli}
 
-Skript yoki oflayn foydalanish uchun [HL7 FHIR validatorini](https://github.com/hapifhir/org.hl7.fhir.core/releases/latest/download/validator_cli.jar) yuklab oling va ishga tushiring:
+Skript yoki avtomatlashtirilgan foydalanish uchun [HL7 FHIR validatorini](https://github.com/hapifhir/org.hl7.fhir.core/releases/latest/download/validator_cli.jar) yuklab oling va ishga tushiring:
 
 ```
 java -jar validator_cli.jar resource.json -version 5.0.0 -ig uz.dhp.core#current

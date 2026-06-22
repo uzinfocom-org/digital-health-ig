@@ -10,7 +10,7 @@ Added [document identifier namespace](identifiers.html#document-identifiers) (do
 
 #### Organization profile changes
 
-`type.coding[organizationType]` in [UZ Core Organization](StructureDefinition-uz-core-organization.html) now uses [OrganizationTypeUZCS](CodeSystem-organization-types-uz-cs.html) instead of the HL7 `organization-type` CodeSystem. For example, `$organization-type-cs#prov` must be replaced with a code from `organization-types-uz-cs` (e.g. `#I` "Distribution by management"). There is no 1:1 mapping - each organization must be classified into the new system (codes I-V).
+`type.coding[organizationType]` in [UZ Core Organization](StructureDefinition-uz-core-organization.html) now uses OrganizationTypeUZCS instead of the HL7 `organization-type` CodeSystem. For example, `$organization-type-cs#prov` must be replaced with a code from `organization-types-uz-cs` (e.g. `#I` "Distribution by management"). There is no 1:1 mapping - each organization must be classified into the new system (codes I-V).
 
 Added `type.coding[organizationGrouping]` slice to [UZ Core Organization](StructureDefinition-uz-core-organization.html) using [OrganizationGroupingCS](CodeSystem-organization-grouping-uz-cs.html) for detailed facility grouping (e.g. `#104` "Specialized hospitals", `#210` "Family polyclinic"). Implementers should populate this new slice.
 

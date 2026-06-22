@@ -1,7 +1,7 @@
 ValueSet: GoalStatusVS
 Id: goal-status-vs
-Title: "Goal Lifecycle Status VS"
-Description: "Value Set for Goal Lifecycle Status translations"
+Title: "Goal Status VS"
+Description: "Value Set for Goal Status translations"
 * ^url = "https://terminology.dhp.uz/fhir/core/ValueSet/goal-status-vs"
 * ^experimental = true
 * ^extension[0].url = $valueset-supplement

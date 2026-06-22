@@ -94,11 +94,11 @@ On a `412`, re-read the resource, re-apply your change on top of the new version
 
 ### Validating resources against UZ Core {#validation}
 
-Before sending data to the platform, check it against the UZ Core profiles. Use the [hosted web validator](#validation-web) (nothing to install) or the [FHIR validator command-line tool](#validation-cli) (scriptable, runs offline). Both run the same validation engine; the setup that matters is loading this IG so the `uz-core-*` profiles resolve.
+Before sending data to the platform, check it against the UZ Core profiles. Use the [hosted web validator](#validation-web) (nothing to install) or the [FHIR validator command-line tool](#validation-cli) (scriptable). Both run the same validation engine; the setup that matters is loading this IG so the `uz-core-*` profiles resolve.
 
 #### Command-line validator {#validation-cli}
 
-For scripted or offline use, download the [HL7 FHIR validator](https://github.com/hapifhir/org.hl7.fhir.core/releases/latest/download/validator_cli.jar) and run:
+For scripted or automated use, download the [HL7 FHIR validator](https://github.com/hapifhir/org.hl7.fhir.core/releases/latest/download/validator_cli.jar) and run:
 
 ```
 java -jar validator_cli.jar resource.json -version 5.0.0 -ig uz.dhp.core#current
