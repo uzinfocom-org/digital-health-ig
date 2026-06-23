@@ -99,3 +99,15 @@ Context: ServiceRequest
 
 * value[x] only CodeableConcept
 * valueCodeableConcept from PaymentTypeVS (required)
+
+Extension: RecommendationAuthor
+Id: recommendation-author
+Title: "Recommendation Author"
+Description: "Extension to indicate the author of the immunization recommendation"
+
+* ^context.type = #element
+* ^context.expression = "ImmunizationRecommendation"
+* ^experimental = true
+
+* value[x] 1..
+* value[x] only Reference(UZCorePractitioner or UZCorePractitionerRole)
