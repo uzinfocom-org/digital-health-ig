@@ -1,0 +1,33 @@
+name: Lint changelog links (draft)
+
+# Draft: verifies that every StructureDefinition-<id>.html link in changelog
+# files resolves to an actual fsh-generated resource. Requires fsh-generated/
+# to be built first (e.g. via sushi) — wire in once a build job produces it.
+
+on:
+  pull_request:
+    paths:
+      - 'input/pagecontent/changelog.md'
+      - 'input/translations/*/pagecontent/changelog.md'
+      - 'input/fsh/**'
+      - 'scripts/lint-changelog-links.sh'
+
+jobs:
+  lint-links:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v6
+        with:
+          node-version: '20'
+
+      - name: Install SUSHI
+        run: npm install -g fsh-sushi
+
+      - name: Run SUSHI
+        run: sushi .
+
+      - name: Lint changelog links
+        run: bash scripts/lint-changelog-links.sh

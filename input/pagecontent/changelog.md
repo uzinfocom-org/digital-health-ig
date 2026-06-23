@@ -4,13 +4,13 @@
 
 ### Version 0.5.0
 
-Added [laboratory observation codes](CodeSystem-observation-lab-research-codes-cs.html) for panels and analytes used in Uzbekistan.
+Added [laboratory observation codes](CodeSystem-lab-pan-cs.html) for panels and analytes used in Uzbekistan. 
 
 Added [document identifier namespace](identifiers.html#document-identifiers) (doc) to identifier systems.
 
 #### Organization profile changes
 
-`type.coding[organizationType]` in [UZ Core Organization](StructureDefinition-uz-core-organization.html) now uses [OrganizationTypeUZCS](CodeSystem-organization-types-uz-cs.html) instead of the HL7 `organization-type` CodeSystem. For example, `$organization-type-cs#prov` must be replaced with a code from `organization-types-uz-cs` (e.g. `#I` "Distribution by management"). There is no 1:1 mapping - each organization must be classified into the new system (codes I-V).
+`type.coding[organizationType]` in [UZ Core Organization](StructureDefinition-uz-core-organization.html) now uses OrganizationTypeUZCS instead of the HL7 `organization-type` CodeSystem. For example, `$organization-type-cs#prov` must be replaced with a code from `organization-types-uz-cs` (e.g. `#I` "Distribution by management"). There is no 1:1 mapping - each organization must be classified into the new system (codes I-V).
 
 Added `type.coding[organizationGrouping]` slice to [UZ Core Organization](StructureDefinition-uz-core-organization.html) using [OrganizationGroupingCS](CodeSystem-organization-grouping-uz-cs.html) for detailed facility grouping (e.g. `#104` "Specialized hospitals", `#210` "Family polyclinic"). Implementers should populate this new slice.
 
@@ -118,7 +118,7 @@ Added Karakalpak language (kaa) support in the MultilingualName ruleset, used fo
 
 Updated IP holder to Ministry of Health.
 
-[UZ Core Clinical Condition](StructureDefinition-uz-core-clinical-condition.html) added to differentiate clinical (ICD-10) and non-ICD-10 based conditions.
+UZ Core Clinical Condition added to differentiate clinical (ICD-10) and non-ICD-10 based conditions.
 
 Patient disability status has been moved from the [Patient](StructureDefinition-uz-core-patient.html) resource (using a FHIR-standard extension) to the [Condition](StructureDefinition-uz-core-condition.html) resource.
 

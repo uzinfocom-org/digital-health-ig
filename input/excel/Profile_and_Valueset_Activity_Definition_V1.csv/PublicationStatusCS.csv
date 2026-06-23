@@ -1,0 +1,5 @@
+Code,EN,UZ,RU,,
+draft,Draft,Qoralama,Черновик,,http://hl7.org/fhir/ValueSet/publication-status
+active,Active,Faol,Активный,,
+retired,Retired,Faol emas (yakunlangan),Выведен из эксплуатации,,
+unknown,Unknown,Noma’lum,Неизвестно,,

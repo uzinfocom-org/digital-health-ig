@@ -72,13 +72,42 @@ RuleSet: HumanName
 
 RuleSet: TaxIdentifier
 * identifier[taxId]
-  * ^short = "Unique identifier of the organization in Soliq"
+  * ^short = "Unique identifier of the organization in  Soliq"
   * system 1..1 MS
   * system = $organization-tax-id-system
   * type 1..1 MS
   * type = $identifier-type#TAX "Tax ID number"
   * use = #official
   * value 1..1 MS
+
+RuleSet: MinzdravIdentifier
+* identifier[minzdravId]
+  * ^short = "Unique identifier of the organization in Minzdrav"
+  * system 1..1 MS
+  * system = $organization-minzdrav-id-system
+  * type 1..1 MS
+  * type = $identifier-type#XX "Organization Identifier"
+  * use = #official
+  * value 1..1 MS
+
+// Provider-registration identifier assigned to a healthcare organization by an
+// insurer/payor (the assigning authority). One slice per payor, discriminated by
+// system. Type is PRN ("Provider number") — the identified entity is a provider,
+// not the payor; payor identity itself is carried separately (taxId today, NIIP
+// once an external payor registrar exists).
+RuleSet: InsurerProviderIdentifier(slice, system)
+* identifier[{slice}]
+  * system 1..1 MS
+  * system = {system}
+  * type 1..1 MS
+  * type = $identifier-type#PRN "Provider number"
+  * use = #official
+  * value 1..1 MS
+  * period 0..1 MS
+    * start MS
+    * end MS
+  * assigner 0..1 MS
+    * ^short = "Reference to the insurer/payor organization that assigned this identifier (Organization with type.coding #pay)"
 
 RuleSet: OriginalCodeSystemDraft(id)
 * ^url = "https://terminology.dhp.uz/fhir/core/CodeSystem/{id}"
@@ -115,3 +144,14 @@ RuleSet: SupplementCodeSystem(id, supplements, version)
 * ^version = "{version}"
 * ^language = #en
 * ^experimental = false
+
+
+RuleSet: SupplementCodeSystemOid(id, oid, version)
+* ^url = "https://terminology.dhp.uz/fhir/core/CodeSystem/{id}"
+* ^status = #active
+* ^content = #supplement
+* ^supplements = "urn:oid:{oid}"
+* ^version = "{version}"
+* ^language = #en
+* ^experimental = false
+

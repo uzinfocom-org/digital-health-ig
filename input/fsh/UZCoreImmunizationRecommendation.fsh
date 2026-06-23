@@ -3,12 +3,15 @@ Parent: ImmunizationRecommendation
 Id: uz-core-immunization-recommendation
 Title: "UZ Core ImmunizationRecommendation"
 Description: "Uzbekistan Core ImmunizationRecommendation profile, used to represent guidance or recommendations related to immunization."
-
-* ^url = "https://dhp.uz/fhir/core/StructureDefinition/uz-core-immunization-recommendation"
 * ^experimental = true
 * ^status = #active
-* ^date = "2025-08-01"
+* ^date = "2026-05-07"
 * ^publisher = "Uzinfocom"
+
+* extension contains RecommendationAuthor named recommendationAuthor 0..* MS
+
+* extension[recommendationAuthor] ^short = "Author of recommendation"
+* extension[recommendationAuthor] ^definition = "Practitioner or PractitionerRole responsible for creating the immunization recommendation."
 
 * identifier 0..* MS
 * identifier ^short = "Business identifier"
@@ -31,10 +34,10 @@ Description: "Uzbekistan Core ImmunizationRecommendation profile, used to repres
 * recommendation ^short = "Vaccination recommendation"
 * recommendation ^definition = "Recommendation for immunization. Either vaccineCode or targetDisease SHALL be present."
 
-* recommendation obeys imm-rec-vaccine-or-disease
+* recommendation obeys uzcore-imrec-1
 
 * recommendation.vaccineCode 0..* MS
-* recommendation.vaccineCode from VaccineCodeVS (example)
+* recommendation.vaccineCode from VaccineCodeVS (extensible)
 * recommendation.vaccineCode ^short = "Recommended vaccine or vaccine group"
 
 * recommendation.targetDisease 0..* MS
@@ -76,7 +79,7 @@ Description: "Uzbekistan Core ImmunizationRecommendation profile, used to repres
 * recommendation.seriesDoses ^short = "Recommended number of doses for immunity"
 
 * recommendation.supportingImmunization 0..* MS
-* recommendation.supportingImmunization only Reference(Immunization or ImmunizationEvaluation)
+* recommendation.supportingImmunization only Reference(UZCoreImmunization or ImmunizationEvaluation)
 * recommendation.supportingImmunization ^short = "Previous immunizations supporting the recommendation"
 
 * recommendation.supportingPatientInformation 0..* MS
@@ -91,7 +94,7 @@ Description: "Uzbekistan Core ImmunizationRecommendation profile, used to repres
 
 
 ///focus on
-Invariant: imm-rec-vaccine-or-disease
+Invariant: uzcore-imrec-1
 Description: "Either vaccineCode or targetDisease SHALL be present."
 Expression: "vaccineCode.exists() or targetDisease.exists()"
 Severity: #error
@@ -105,16 +108,15 @@ Usage: #example
 Title: "Example UZ Core ImmunizationRecommendation"
 Description: "Example of an immunization recommendation with non-mandatory elements included."
 
-* identifier.system = "https://dhp.uz/fhir/core/NamingSystem/immunization-recommendation-id"
-* identifier.value = "IMM-REC-0001"
-
 * patient = Reference(example-emma)
 
 * date = "2025-08-01T10:00:00+05:00"
 
 * authority = Reference(example-organization)
 
-* recommendation[0].vaccineCode[0] = VaccineCodeCS#immun-63 "measles, mumps and rubella virus vaccine"
+* extension[recommendationAuthor].valueReference = Reference(example-practitioner)
+
+* recommendation[0].vaccineCode[0] = $cvx#03 "measles, mumps and rubella virus vaccine"
 * recommendation[0].targetDisease[0] = $sct#14189004 "Measles"
 // * recommendation[0].contraindicatedVaccineCode[0] = $sct#1119305005 "COVID-19 vaccine"
 
@@ -148,7 +150,7 @@ Title: "Immunization - Measles, Mumps and Rubella (MMR)"
 Description: "Example Immunization resource representing administration of measles, mumps and rubella (MMR) vaccine to a patient."
 
 * status = #completed
-* vaccineCode = $sct#150971000119104 "Measles, mumps and rubella vaccination given (situation)"
+* vaccineCode = $cvx#03 "measles, mumps and rubella virus vaccine"
 * patient = Reference(example-emma)
 * occurrenceDateTime = "2024-01-10"
 
