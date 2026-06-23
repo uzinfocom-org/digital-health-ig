@@ -130,6 +130,13 @@ parameters:
     - input/translations/ru
     - input/translations/uz
 
+  logging:
+    - init
+    - progress
+    - context
+    - html
+    - tx
+
 #   validation: [allow-any-extensions, no-broken-links]
 #
 # ╭────────────────────────────────────────────menu.xml────────────────────────────────────────────╮
