@@ -6,5 +6,5 @@ Description: "A ValueSet defining the purpose of a Claim."
 * ^experimental = true
 * ^extension[0].url = $valueset-supplement
 * ^extension[=].valueCanonical = Canonical(ClaimUseCS)
-* include $claim-use#preauthorization
-* include $claim-use#predetermination
+* include codes from system $claim-use
+

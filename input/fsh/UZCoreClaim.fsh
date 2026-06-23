@@ -62,3 +62,15 @@ Description: "Uzbekistan Core Claim profile, used for insurance claims, pre-auth
   * currency 0..1 MS
   * currency ^short = "Insurance information"
   * currency from $currencies-vs (required)
+
+
+Instance: example-claim
+InstanceOf: UZCoreClaim
+Description: "Example of claim responce"
+Usage: #example
+* language = #en
+* status = #active
+* type = #institutional 
+* use = #claim
+* patient = Reference(Patient/example-salim)
+* created = "2026-10-03"
