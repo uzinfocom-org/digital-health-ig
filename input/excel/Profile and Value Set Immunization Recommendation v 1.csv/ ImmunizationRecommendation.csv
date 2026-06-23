@@ -1,0 +1,26 @@
+	Name		Flags		Cardinality		Example		Type			ValueSets																	
+	 ImmunizationRecommendation		TU						DomainResource	Руководство или рекомендации, относящиеся к иммунизации  Элементы, унаследованные от базовых ресурсов: id, meta, implicitRules, language, text, contained, extension, modifierExtension		System	CodeSystem	Code	Display														
+	Identifier		Σ	D	0..*				"	Identifier"	Бизнес-идентификатор		http://www.snomed.org/	VaccineAdministeredValueSet	все коды	Идентифицирует введенное вакцинное вещество — коды SNOMED CT														
+	 patient		 Σ 	D	1..1				Reference(Patient)	Для кого предназначен данный профиль		http://www.snomed.org/	ImmunizationTargetDiseaseCodes	все коды	Набор значений  оторая состоит из или содержит концепции для поддержки описания заболевания, против которого вводится доза. Этот набор значений предоставляется в качестве наводящего примера и включает концепции SNOMED CT из иерархии 64572001 (Болезнь).														
+	date		"	Σ"	D	1..1			HL7.v5	dateTime	Дата создания рекомендации(й)		http://www.snomed.org/	VaccineAdministeredValueSet	все коды	Идентифицирует введенное вакцинное вещество — коды SNOMED CT														
+		 authority		D	0..1			HL7.v5, SNOMED CT,МКБ-10	Reference(Organization)	Ответственный за протокол вакцинации		http://hl7.org/fhir/ValueSet/immunization-recommendation-status	"	Immunization Recommendation Status Codes"	  due,overdue 	Набор значений для заполнения данного атрибута должен быть выбран из терминологически устойчивой кодовой системы, содержащей концепты, позволяющие описывать статус пациента в отношении предполагаемого иммунитета к заболеванию, предотвращаемому вакцинацией. Данный набор значений приводится в качестве рекомендательного примера.														
+	recommendation		"	ΣC"	D	1..*			SNOMED CT	"	BackboneElement"	Рекомендации по проведению вакцинации                                  Правило: должно быть указано либо поле vaccineCode, либо targetDisease		http://www.snomed.org/	Immunization Recommendation Reason Codes	 77176002, 77386006	Набор значений для заполнения данного атрибута должен выбираться из терминологически устойчивой кодовой системы, содержащей концепты, позволяющие описывать причины, по которым присваивается конкретный статус рекомендации. Данный набор значений приводится в качестве рекомендательного примера и включает концепты SNOMED CT.														
+	vaccineCode		ΣC		0..*				"	CodeableConcept"	Вакцина или группа вакцин, к которым применяется рекомендация                                                                                       Binding: Vaccine Administered Value Set (Example)		http://www.snomed.org/	 Immunization Recommendation Date Criterion Codes (Example)	789539003	Набор значений для заполнения данного атрибута должен выбираться из терминологически устойчивой кодовой системы, содержащей концепты, позволяющие определять даты, относящиеся к рекомендациям по введению будущих доз вакцин. Данный набор значений приводится в качестве рекомендательного примера.														
+	targetDisease		ΣC	D	0..*				CodeableReference	"Заболевание, против которого проводится иммунизация
+Binding: Immunization Target Disease Codes (Example)"																			
+	contraindicatedVaccineCode		Σ	D	0..*				CodeableConcept	"Вакцина, которая противопоказана для выполнения данной рекомендации
+Binding: Vaccine Administered Value Set (Example)"																			
+	 forecastStatus		?!Σ	D	1..1				CodeableConcept	"Статус рекомендации по вакцинации
+Binding: Immunization Recommendation Status Codes (Example)"																			
+	forecastReason		Σ	D	"	0..*"				CodeableConcept	"Причина статуса рекомендации по вакцинации
+Binding: Immunization Recommendation Reason Codes (Example)"																			
+	 dateCriterion			D	"	0..*"				"	BackboneElement"	Даты, определяющие предлагаемую вакцинацию																			
+	"	"	code			1..1				CodeableConcept	"Тип даты
+Binding: Immunization Recommendation Date Criterion Codes (Example)"																			
+		value	Σ		1..1				dateTime	Рекомендуемая дата																			
+	description			C	0..1				markdown	Сведения о протоколе вакцинации																			
+	series			C	0..1				string	Наименование серии вакцинации																			
+	 doseNumber		Σ	D	0..1				string	Рекомендуемый номер дозы в серии																			
+	seriesDoses				0..1			HL7.v5	string	Рекомендуемое количество доз для формирования иммунитета																			
+	supportingImmunization			D	0..*				Reference(Immunization | ImmunizationEvaluation)	Ранее проведённые вакцинации, обосновывающие рекомендацию																			
+	" supportingPatientInformation	"			D	0..*			HL7.v5	"	Reference(Any)"	Наблюдения пациента, подтверждающие рекомендацию																			

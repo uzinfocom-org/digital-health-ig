@@ -2,20 +2,20 @@ Profile: UZCoreObservation
 Parent: Observation
 Id: uz-core-observation
 Title: "UZ Core Observation"
-Description: "Uzbekistan Core Observation profile, used to represent clinical and laboratory  observations"
+Description: "Uzbekistan Core Observation profile, used to represent clinical and laboratory observations using SNOMED CT, LOINC, or local codes"
 * ^experimental = true
 * ^status = #active
 //rules
 * identifier MS
 * instantiates[x] MS
 * basedOn 0..1 MS
-* basedOn only Reference(CarePlan or MedicationRequest or ServiceRequest)
+* basedOn only Reference(CarePlan or MedicationRequest or ServiceRequest or UZCoreImmunizationRecommendation)
 * triggeredBy MS
 * triggeredBy.observation only Reference(UZCoreObservation)
 * triggeredBy.type from TriggeredByTypeVS (required)
 * triggeredBy.reason MS
 * partOf MS
-* partOf only Reference(MedicationAdministration or MedicationDispense or Procedure or Immunization or ImagingStudy)
+* partOf only Reference(MedicationAdministration or MedicationDispense or UZCoreProcedure or UZCoreImmunization or ImagingStudy)
 * status MS
 * status from ObservationStatusVS (required)
 * category MS
@@ -23,7 +23,7 @@ Description: "Uzbekistan Core Observation profile, used to represent clinical an
 * code MS
 * code from ObservationCodesVS (preferred)
 * subject MS
-* subject only Reference(UZCorePatient or UZCoreLocation or UZCoreOrganization or Procedure or UZCorePractitioner or Medication)
+* subject only Reference(UZCorePatient or UZCoreLocation or UZCoreOrganization or UZCoreProcedure or UZCorePractitioner or UZCoreMedication)
 * focus MS
 * encounter MS
 * encounter only Reference(UZCoreEncounter)
@@ -39,7 +39,7 @@ Description: "Uzbekistan Core Observation profile, used to represent clinical an
 * bodySite from $bodysite
 * method from LabMethodsVS
 * specimen MS
-* specimen only Reference(Specimen)
+* specimen only Reference(UZCoreSpecimen)
 * device MS
 * device only Reference(Device or DeviceMetric)
 * referenceRange MS
@@ -51,9 +51,9 @@ Description: "Uzbekistan Core Observation profile, used to represent clinical an
 * referenceRange.age MS
 * referenceRange.text MS
 * hasMember MS
-* hasMember only Reference(UZCoreObservation or QuestionnaireResponse)
+* hasMember only Reference(UZCoreObservation or UZCoreQuestionnaireResponse)
 * derivedFrom MS
-* derivedFrom only Reference(DocumentReference or ImagingStudy or QuestionnaireResponse or UZCoreObservation)
+* derivedFrom only Reference(DocumentReference or ImagingStudy or UZCoreQuestionnaireResponse or UZCoreObservation)
 * component MS
 * component.code MS
 * component.code from ObservationCodesVS (preferred)
@@ -220,7 +220,7 @@ Description: "Example of CBC (Umumiy qon tahlili) as a laboratory panel with ana
 * effectiveDateTime = "2025-11-04T08:10:00Z"
 * issued = "2025-11-04T09:00:00Z"
 * performer = Reference(Practitioner/example-practitioner)
-* specimen = Reference(Specimen/specimen-example-blood)
+* specimen = Reference(Specimen/example-specimen-blood-cbc)
 * component[0].code = lab-pan-cs#lab-pan-74 "Hemoglobin [Mass/volume] in Blood"
 * component[=].valueQuantity = 145 'g/L' "g/L"
 * component[+].code = lab-pan-cs#lab-pan-75 "Erythrocytes [#/volume] in Blood by Automated count"

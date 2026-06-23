@@ -55,7 +55,7 @@ This Implementation Guide includes:
 
 ## 🛠️ Repository Management and Development Standards
 
-**Semantic versioning**: Version identification follows the conventions documented at https://build.fhir.org/ig/vadi2/DHP-temp/en/index.html#identification-of-versions.
+**Semantic versioning**: Version identification follows the conventions documented at https://build.fhir.org/ig/uzinfocom-org/digital-health-ig/en/index.html#identification-of-versions.
 
 **Branching strategy**: Feature branches are created as needed and merged into the main branch via rebase or squash-commit. All releases are tagged from the main branch according to semantic versioning standards.
 

@@ -1,0 +1,4 @@
+Code,EN, UZ,RU,,
+patient, Patient,Bemor,Пациент,,
+practitioner,Practitioner,Tibbiyot xodimi, Медицинский работник,,http://hl7.org/fhir/ValueSet/action-participant-type
+relatedperson,RelatedPerson, Qarindosh (ota-ona yoki vasiy),Родитель / опекун,,

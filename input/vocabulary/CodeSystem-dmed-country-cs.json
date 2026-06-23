@@ -1,0 +1,3517 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "draft",
+  "content": "complete",
+  "name": "DMEDCountryCS",
+  "id": "dmed-country-cs",
+  "title": "DMED Country (UZ/RU)",
+  "description": "Uzbek and Russian designations for DMED Country codes",
+  "url": "https://terminology.dhp.uz/fhir/core/CodeSystem/dmed-country-cs",
+  "concept": [
+    {
+      "code": "1",
+      "display": "Senegal",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Сенегал"
+        },
+        {
+          "language": "en",
+          "value": "Senegal"
+        }
+      ]
+    },
+    {
+      "code": "2",
+      "display": "Farer orollari",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Фарерские острова"
+        },
+        {
+          "language": "en",
+          "value": "Faroe Islands"
+        }
+      ]
+    },
+    {
+      "code": "3",
+      "display": "Salvador",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Сальвадор"
+        },
+        {
+          "language": "en",
+          "value": "El Salvador"
+        }
+      ]
+    },
+    {
+      "code": "4",
+      "display": "Angilya",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Ангилья"
+        },
+        {
+          "language": "en",
+          "value": "Anguilla"
+        }
+      ]
+    },
+    {
+      "code": "5",
+      "display": "Uganda",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Уганда"
+        },
+        {
+          "language": "en",
+          "value": "Uganda"
+        }
+      ]
+    },
+    {
+      "code": "6",
+      "display": "Mali",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Мали"
+        },
+        {
+          "language": "en",
+          "value": "Mali"
+        }
+      ]
+    },
+    {
+      "code": "7",
+      "display": "Nikaragua",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Никарагуа"
+        },
+        {
+          "language": "en",
+          "value": "Nicaragua"
+        }
+      ]
+    },
+    {
+      "code": "8",
+      "display": "Zimbabve",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Зимбабве"
+        },
+        {
+          "language": "en",
+          "value": "Zimbabwe"
+        }
+      ]
+    },
+    {
+      "code": "9",
+      "display": "Kamerun",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Камерун"
+        },
+        {
+          "language": "en",
+          "value": "Cameroon"
+        }
+      ]
+    },
+    {
+      "code": "10",
+      "display": "Shimoliy Makedoniya",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Северная Македония"
+        },
+        {
+          "language": "en",
+          "value": "North Macedonia"
+        }
+      ]
+    },
+    {
+      "code": "11",
+      "display": "Laos",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Лаос"
+        },
+        {
+          "language": "en",
+          "value": "Laos"
+        }
+      ]
+    },
+    {
+      "code": "12",
+      "display": "Urugvay",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Уругвай"
+        },
+        {
+          "language": "en",
+          "value": "Uruguay"
+        }
+      ]
+    },
+    {
+      "code": "13",
+      "display": "Malta",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Мальта"
+        },
+        {
+          "language": "en",
+          "value": "Malta"
+        }
+      ]
+    },
+    {
+      "code": "14",
+      "display": "Chexiya",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Чехия"
+        },
+        {
+          "language": "en",
+          "value": "Czechia"
+        }
+      ]
+    },
+    {
+      "code": "15",
+      "display": "Turkmaniston",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Туркмения"
+        },
+        {
+          "language": "en",
+          "value": "Turkmenistan"
+        }
+      ]
+    },
+    {
+      "code": "16",
+      "display": "Aland orollari",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Аландские острова"
+        },
+        {
+          "language": "en",
+          "value": "Aland Islands"
+        }
+      ]
+    },
+    {
+      "code": "17",
+      "display": "Dominikan Respublikasi",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Доминиканская Республика"
+        },
+        {
+          "language": "en",
+          "value": "Dominican Republic"
+        }
+      ]
+    },
+    {
+      "code": "18",
+      "display": "Yaman",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Йемен"
+        },
+        {
+          "language": "en",
+          "value": "Yemen"
+        }
+      ]
+    },
+    {
+      "code": "19",
+      "display": "AQSH yondosh kichik orollari",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Внешние малые острова США"
+        },
+        {
+          "language": "en",
+          "value": "United States Minor Outlying Islands"
+        }
+      ]
+    },
+    {
+      "code": "20",
+      "display": "Ukraina",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Украина"
+        },
+        {
+          "language": "en",
+          "value": "Ukraine"
+        }
+      ]
+    },
+    {
+      "code": "21",
+      "display": "Chili",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Чили"
+        },
+        {
+          "language": "en",
+          "value": "Chile"
+        }
+      ]
+    },
+    {
+      "code": "22",
+      "display": "Gvineya-Bisau",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Гвинея-Бисау"
+        },
+        {
+          "language": "en",
+          "value": "Guinea-Bissau"
+        }
+      ]
+    },
+    {
+      "code": "23",
+      "display": "Rossiya",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Россия"
+        },
+        {
+          "language": "en",
+          "value": "Russia"
+        }
+      ]
+    },
+    {
+      "code": "24",
+      "display": "Quvayt",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Кувейт"
+        },
+        {
+          "language": "en",
+          "value": "Kuwait"
+        }
+      ]
+    },
+    {
+      "code": "25",
+      "display": "Liviya",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Ливия"
+        },
+        {
+          "language": "en",
+          "value": "Libya"
+        }
+      ]
+    },
+    {
+      "code": "26",
+      "display": "Mavritaniya",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Мавритания"
+        },
+        {
+          "language": "en",
+          "value": "Mauritania"
+        }
+      ]
+    },
+    {
+      "code": "27",
+      "display": "Filippin",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Филиппины"
+        },
+        {
+          "language": "en",
+          "value": "Philippines"
+        }
+      ]
+    },
+    {
+      "code": "28",
+      "display": "Tuvalu",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Тувалу"
+        },
+        {
+          "language": "en",
+          "value": "Tuvalu"
+        }
+      ]
+    },
+    {
+      "code": "29",
+      "display": "Syerra-Leone",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Сьерра-Леоне"
+        },
+        {
+          "language": "en",
+          "value": "Sierra Leone"
+        }
+      ]
+    },
+    {
+      "code": "30",
+      "display": "Myanma",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Мьянма"
+        },
+        {
+          "language": "en",
+          "value": "Myanmar"
+        }
+      ]
+    },
+    {
+      "code": "31",
+      "display": "Somali",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Сомали"
+        },
+        {
+          "language": "en",
+          "value": "Somalia"
+        }
+      ]
+    },
+    {
+      "code": "32",
+      "display": "Lyuksemburg",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Люксембург"
+        },
+        {
+          "language": "en",
+          "value": "Luxembourg"
+        }
+      ]
+    },
+    {
+      "code": "33",
+      "display": "Qatar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Катар"
+        },
+        {
+          "language": "en",
+          "value": "Qatar"
+        }
+      ]
+    },
+    {
+      "code": "34",
+      "display": "Isroil",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Израиль"
+        },
+        {
+          "language": "en",
+          "value": "Israel"
+        }
+      ]
+    },
+    {
+      "code": "35",
+      "display": "Lesoto",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Лесото"
+        },
+        {
+          "language": "en",
+          "value": "Lesotho"
+        }
+      ]
+    },
+    {
+      "code": "36",
+      "display": "Niger",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Нигер"
+        },
+        {
+          "language": "en",
+          "value": "Niger"
+        }
+      ]
+    },
+    {
+      "code": "37",
+      "display": "Madagaskar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Мадагаскар"
+        },
+        {
+          "language": "en",
+          "value": "Madagascar"
+        }
+      ]
+    },
+    {
+      "code": "38",
+      "display": "Ispaniya",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Испания"
+        },
+        {
+          "language": "en",
+          "value": "Spain"
+        }
+      ]
+    },
+    {
+      "code": "39",
+      "display": "Gvadelupa",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Гваделупа"
+        },
+        {
+          "language": "en",
+          "value": "Guadeloupe"
+        }
+      ]
+    },
+    {
+      "code": "40",
+      "display": "San-Marino",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Сан-Марино"
+        },
+        {
+          "language": "en",
+          "value": "San Marino"
+        }
+      ]
+    },
+    {
+      "code": "41",
+      "display": "Sloveniya",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Словения"
+        },
+        {
+          "language": "en",
+          "value": "Slovenia"
+        }
+      ]
+    },
+    {
+      "code": "42",
+      "display": "Janubiy Sudan",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Южный Судан"
+        },
+        {
+          "language": "en",
+          "value": "South Sudan"
+        }
+      ]
+    },
+    {
+      "code": "43",
+      "display": "Bahrayn",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Бахрейн"
+        },
+        {
+          "language": "en",
+          "value": "Bahrain"
+        }
+      ]
+    },
+    {
+      "code": "44",
+      "display": "Daniya",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Дания"
+        },
+        {
+          "language": "en",
+          "value": "Denmark"
+        }
+      ]
+    },
+    {
+      "code": "45",
+      "display": "Gabon",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Габон"
+        },
+        {
+          "language": "en",
+          "value": "Gabon"
+        }
+      ]
+    },
+    {
+      "code": "46",
+      "display": "Norfolk oroli",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Норфолк"
+        },
+        {
+          "language": "en",
+          "value": "Norfolk Island"
+        }
+      ]
+    },
+    {
+      "code": "47",
+      "display": "Malayziya",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Малайзия"
+        },
+        {
+          "language": "en",
+          "value": "Malaysia"
+        }
+      ]
+    },
+    {
+      "code": "48",
+      "display": "Meksika",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Мексика"
+        },
+        {
+          "language": "en",
+          "value": "Mexico"
+        }
+      ]
+    },
+    {
+      "code": "49",
+      "display": "Fransuz Polineziyasi",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Французская Полинезия"
+        },
+        {
+          "language": "en",
+          "value": "French Polynesia"
+        }
+      ]
+    },
+    {
+      "code": "50",
+      "display": "Chad",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Чад"
+        },
+        {
+          "language": "en",
+          "value": "Chad"
+        }
+      ]
+    },
+    {
+      "code": "51",
+      "display": "Shveysariya",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Швейцария"
+        },
+        {
+          "language": "en",
+          "value": "Switzerland"
+        }
+      ]
+    },
+    {
+      "code": "52",
+      "display": "Uollis va Futuna",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Уоллис и Футуна"
+        },
+        {
+          "language": "en",
+          "value": "Wallis and Futuna"
+        }
+      ]
+    },
+    {
+      "code": "53",
+      "display": "Folklend orollari",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Фолклендские острова"
+        },
+        {
+          "language": "en",
+          "value": "Falkland Islands"
+        }
+      ]
+    },
+    {
+      "code": "54",
+      "display": "Kot-d'Ivuar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Кот-д’Ивуар"
+        },
+        {
+          "language": "en",
+          "value": "Cote d'Ivoire"
+        }
+      ]
+    },
+    {
+      "code": "55",
+      "display": "Puerto-Riko",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Пуэрто-Рико"
+        },
+        {
+          "language": "en",
+          "value": "Puerto Rico"
+        }
+      ]
+    },
+    {
+      "code": "56",
+      "display": "Mavrikiy",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Маврикий"
+        },
+        {
+          "language": "en",
+          "value": "Mauritius"
+        }
+      ]
+    },
+    {
+      "code": "57",
+      "display": "Bangladesh",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Бангладеш"
+        },
+        {
+          "language": "en",
+          "value": "Bangladesh"
+        }
+      ]
+    },
+    {
+      "code": "58",
+      "display": "Gibraltar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Гибралтар"
+        },
+        {
+          "language": "en",
+          "value": "Gibraltar"
+        }
+      ]
+    },
+    {
+      "code": "59",
+      "display": "Suriya",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Сирия"
+        },
+        {
+          "language": "en",
+          "value": "Syria"
+        }
+      ]
+    },
+    {
+      "code": "60",
+      "display": "Albaniya",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Албания"
+        },
+        {
+          "language": "en",
+          "value": "Albania"
+        }
+      ]
+    },
+    {
+      "code": "61",
+      "display": "Estoniya",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Эстония"
+        },
+        {
+          "language": "en",
+          "value": "Estonia"
+        }
+      ]
+    },
+    {
+      "code": "62",
+      "display": "Komor orollari",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Коморы"
+        },
+        {
+          "language": "en",
+          "value": "Comoros"
+        }
+      ]
+    },
+    {
+      "code": "63",
+      "display": "Britaniyaning Hind okeanidagi hududi",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Британская территория в Индийском океане"
+        },
+        {
+          "language": "en",
+          "value": "British Indian Ocean Territory"
+        }
+      ]
+    },
+    {
+      "code": "64",
+      "display": "Ruminiya",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Румыния"
+        },
+        {
+          "language": "en",
+          "value": "Romania"
+        }
+      ]
+    },
+    {
+      "code": "65",
+      "display": "Venesuela",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Венесуэла"
+        },
+        {
+          "language": "en",
+          "value": "Venezuela"
+        }
+      ]
+    },
+    {
+      "code": "66",
+      "display": "Sen-Pyer va Mikelon",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Сен-Пьер и Микелон"
+        },
+        {
+          "language": "en",
+          "value": "Saint Pierre and Miquelon"
+        }
+      ]
+    },
+    {
+      "code": "67",
+      "display": "Janubiy Georgiya va Janubiy Sendvich orollari",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Южная Георгия и Южные Сандвичевы острова"
+        },
+        {
+          "language": "en",
+          "value": "South Georgia and the South Sandwich Islands"
+        }
+      ]
+    },
+    {
+      "code": "68",
+      "display": "Slovakiya",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Словакия"
+        },
+        {
+          "language": "en",
+          "value": "Slovakia"
+        }
+      ]
+    },
+    {
+      "code": "69",
+      "display": "Xorvatiya",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Хорватия"
+        },
+        {
+          "language": "en",
+          "value": "Croatia"
+        }
+      ]
+    },
+    {
+      "code": "70",
+      "display": "Esvatini",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Свазиленд"
+        },
+        {
+          "language": "en",
+          "value": "Eswatini"
+        }
+      ]
+    },
+    {
+      "code": "71",
+      "display": "Gana",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Гана"
+        },
+        {
+          "language": "en",
+          "value": "Ghana"
+        }
+      ]
+    },
+    {
+      "code": "72",
+      "display": "Gretsiya",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Греция"
+        },
+        {
+          "language": "en",
+          "value": "Greece"
+        }
+      ]
+    },
+    {
+      "code": "73",
+      "display": "Monako",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Монако"
+        },
+        {
+          "language": "en",
+          "value": "Monaco"
+        }
+      ]
+    },
+    {
+      "code": "74",
+      "display": "Sent-Kits va Nevis",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Сент-Китс и Невис"
+        },
+        {
+          "language": "en",
+          "value": "Saint Kitts and Nevis"
+        }
+      ]
+    },
+    {
+      "code": "75",
+      "display": "Misr",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Египет"
+        },
+        {
+          "language": "en",
+          "value": "Egypt"
+        }
+      ]
+    },
+    {
+      "code": "76",
+      "display": "Koreya Xalq Demokratik Respublikasi",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Северная Корея"
+        },
+        {
+          "language": "en",
+          "value": "North Korea"
+        }
+      ]
+    },
+    {
+      "code": "77",
+      "display": "Liberiya",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Либерия"
+        },
+        {
+          "language": "en",
+          "value": "Liberia"
+        }
+      ]
+    },
+    {
+      "code": "78",
+      "display": "Gambiya",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Гамбия"
+        },
+        {
+          "language": "en",
+          "value": "Gambia"
+        }
+      ]
+    },
+    {
+      "code": "79",
+      "display": "Norvegiya",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Норвегия"
+        },
+        {
+          "language": "en",
+          "value": "Norway"
+        }
+      ]
+    },
+    {
+      "code": "80",
+      "display": "Sent-Vinsent va Grenadina",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Сент-Винсент и Гренадины"
+        },
+        {
+          "language": "en",
+          "value": "Saint Vincent and the Grenadines"
+        }
+      ]
+    },
+    {
+      "code": "81",
+      "display": "Gaiti",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Гаити"
+        },
+        {
+          "language": "en",
+          "value": "Haiti"
+        }
+      ]
+    },
+    {
+      "code": "82",
+      "display": "Kipr",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Кипр"
+        },
+        {
+          "language": "en",
+          "value": "Cyprus"
+        }
+      ]
+    },
+    {
+      "code": "83",
+      "display": "Birlashgan Arab Amirliklari",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Объединённые Арабские Эмираты"
+        },
+        {
+          "language": "en",
+          "value": "United Arab Emirates"
+        }
+      ]
+    },
+    {
+      "code": "84",
+      "display": "Makao",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Макао"
+        },
+        {
+          "language": "en",
+          "value": "Macao"
+        }
+      ]
+    },
+    {
+      "code": "85",
+      "display": "Eritreya",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Эритрея"
+        },
+        {
+          "language": "en",
+          "value": "Eritrea"
+        }
+      ]
+    },
+    {
+      "code": "86",
+      "display": "Papua Yangi Gvineya",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Папуа — Новая Гвинея"
+        },
+        {
+          "language": "en",
+          "value": "Papua New Guinea"
+        }
+      ]
+    },
+    {
+      "code": "87",
+      "display": "Tojikiston",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Таджикистан"
+        },
+        {
+          "language": "en",
+          "value": "Tajikistan"
+        }
+      ]
+    },
+    {
+      "code": "88",
+      "display": "Barbados",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Барбадос"
+        },
+        {
+          "language": "en",
+          "value": "Barbados"
+        }
+      ]
+    },
+    {
+      "code": "89",
+      "display": "Vyetnam",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Вьетнам"
+        },
+        {
+          "language": "en",
+          "value": "Vietnam"
+        }
+      ]
+    },
+    {
+      "code": "90",
+      "display": "Panama",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Панама"
+        },
+        {
+          "language": "en",
+          "value": "Panama"
+        }
+      ]
+    },
+    {
+      "code": "91",
+      "display": "Grenada",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Гренада"
+        },
+        {
+          "language": "en",
+          "value": "Grenada"
+        }
+      ]
+    },
+    {
+      "code": "92",
+      "display": "Antigua va Barbuda",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Антигуа и Барбуда"
+        },
+        {
+          "language": "en",
+          "value": "Antigua and Barbuda"
+        }
+      ]
+    },
+    {
+      "code": "93",
+      "display": "Italiya",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Италия"
+        },
+        {
+          "language": "en",
+          "value": "Italy"
+        }
+      ]
+    },
+    {
+      "code": "94",
+      "display": "Markaziy Afrika Respublikasi",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Центральноафриканская Республика"
+        },
+        {
+          "language": "en",
+          "value": "Central African Republic"
+        }
+      ]
+    },
+    {
+      "code": "95",
+      "display": "Avstriya",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Австрия"
+        },
+        {
+          "language": "en",
+          "value": "Austria"
+        }
+      ]
+    },
+    {
+      "code": "96",
+      "display": "Tunis",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Тунис"
+        },
+        {
+          "language": "en",
+          "value": "Tunisia"
+        }
+      ]
+    },
+    {
+      "code": "97",
+      "display": "Iordaniya",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Иордания"
+        },
+        {
+          "language": "en",
+          "value": "Jordan"
+        }
+      ]
+    },
+    {
+      "code": "98",
+      "display": "Kuk orollari",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Острова Кука"
+        },
+        {
+          "language": "en",
+          "value": "Cook Islands"
+        }
+      ]
+    },
+    {
+      "code": "99",
+      "display": "Ekvatorial Gvineya",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Экваториальная Гвинея"
+        },
+        {
+          "language": "en",
+          "value": "Equatorial Guinea"
+        }
+      ]
+    },
+    {
+      "code": "100",
+      "display": "Sint-Marten",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Синт-Мартен"
+        },
+        {
+          "language": "en",
+          "value": "Sint Maarten (Dutch part)"
+        }
+      ]
+    },
+    {
+      "code": "101",
+      "display": "Bruney",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Бруней"
+        },
+        {
+          "language": "en",
+          "value": "Brunei Darussalam"
+        }
+      ]
+    },
+    {
+      "code": "102",
+      "display": "Serbiya",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Сербия"
+        },
+        {
+          "language": "en",
+          "value": "Serbia"
+        }
+      ]
+    },
+    {
+      "code": "103",
+      "display": "Saudiya Arabistoni",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Саудовская Аравия"
+        },
+        {
+          "language": "en",
+          "value": "Saudi Arabia"
+        }
+      ]
+    },
+    {
+      "code": "104",
+      "display": "Marokash",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Марокко"
+        },
+        {
+          "language": "en",
+          "value": "Morocco"
+        }
+      ]
+    },
+    {
+      "code": "105",
+      "display": "Dominika",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Доминика"
+        },
+        {
+          "language": "en",
+          "value": "Dominica"
+        }
+      ]
+    },
+    {
+      "code": "106",
+      "display": "Xitoy",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Китай"
+        },
+        {
+          "language": "en",
+          "value": "China"
+        }
+      ]
+    },
+    {
+      "code": "107",
+      "display": "Latviya",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Латвия"
+        },
+        {
+          "language": "en",
+          "value": "Latvia"
+        }
+      ]
+    },
+    {
+      "code": "108",
+      "display": "Mozambik",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Мозамбик"
+        },
+        {
+          "language": "en",
+          "value": "Mozambique"
+        }
+      ]
+    },
+    {
+      "code": "109",
+      "display": "Vatikan",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Ватикан"
+        },
+        {
+          "language": "en",
+          "value": "Holy See"
+        }
+      ]
+    },
+    {
+      "code": "110",
+      "display": "Burkina-Faso",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Буркина-Фасо"
+        },
+        {
+          "language": "en",
+          "value": "Burkina Faso"
+        }
+      ]
+    },
+    {
+      "code": "111",
+      "display": "Nepal",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Непал"
+        },
+        {
+          "language": "en",
+          "value": "Nepal"
+        }
+      ]
+    },
+    {
+      "code": "112",
+      "display": "Rojdestvo oroli",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Остров Рождества"
+        },
+        {
+          "language": "en",
+          "value": "Christmas Island"
+        }
+      ]
+    },
+    {
+      "code": "113",
+      "display": "Peru",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Перу"
+        },
+        {
+          "language": "en",
+          "value": "Peru"
+        }
+      ]
+    },
+    {
+      "code": "114",
+      "display": "Ozarbayjon",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Азербайджан"
+        },
+        {
+          "language": "en",
+          "value": "Azerbaijan"
+        }
+      ]
+    },
+    {
+      "code": "115",
+      "display": "Seyshell orollari",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Сейшельские Острова"
+        },
+        {
+          "language": "en",
+          "value": "Seychelles"
+        }
+      ]
+    },
+    {
+      "code": "116",
+      "display": "Tonga",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Тонга"
+        },
+        {
+          "language": "en",
+          "value": "Tonga"
+        }
+      ]
+    },
+    {
+      "code": "117",
+      "display": "Moldaviya",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Молдавия"
+        },
+        {
+          "language": "en",
+          "value": "Moldova"
+        }
+      ]
+    },
+    {
+      "code": "118",
+      "display": "Hindiston",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Индия"
+        },
+        {
+          "language": "en",
+          "value": "India"
+        }
+      ]
+    },
+    {
+      "code": "119",
+      "display": "Belarus",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Беларусь"
+        },
+        {
+          "language": "en",
+          "value": "Belarus"
+        }
+      ]
+    },
+    {
+      "code": "120",
+      "display": "Argentina",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Аргентина"
+        },
+        {
+          "language": "en",
+          "value": "Argentina"
+        }
+      ]
+    },
+    {
+      "code": "121",
+      "display": "Livan",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Ливан"
+        },
+        {
+          "language": "en",
+          "value": "Lebanon"
+        }
+      ]
+    },
+    {
+      "code": "122",
+      "display": "Paragvay",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Парагвай"
+        },
+        {
+          "language": "en",
+          "value": "Paraguay"
+        }
+      ]
+    },
+    {
+      "code": "123",
+      "display": "Vanuatu",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Вануату"
+        },
+        {
+          "language": "en",
+          "value": "Vanuatu"
+        }
+      ]
+    },
+    {
+      "code": "124",
+      "display": "Maldiv orollari",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Мальдивы"
+        },
+        {
+          "language": "en",
+          "value": "Maldives"
+        }
+      ]
+    },
+    {
+      "code": "125",
+      "display": "Kosta-Rika",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Коста-Рика"
+        },
+        {
+          "language": "en",
+          "value": "Costa Rica"
+        }
+      ]
+    },
+    {
+      "code": "126",
+      "display": "Singapur",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Сингапур"
+        },
+        {
+          "language": "en",
+          "value": "Singapore"
+        }
+      ]
+    },
+    {
+      "code": "127",
+      "display": "Fiji",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Фиджи"
+        },
+        {
+          "language": "en",
+          "value": "Fiji"
+        }
+      ]
+    },
+    {
+      "code": "128",
+      "display": "Bosniya va Gertsegovina",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Босния и Герцеговина"
+        },
+        {
+          "language": "en",
+          "value": "Bosnia and Herzegovina"
+        }
+      ]
+    },
+    {
+      "code": "129",
+      "display": "Jersi",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Джерси"
+        },
+        {
+          "language": "en",
+          "value": "Jersey"
+        }
+      ]
+    },
+    {
+      "code": "130",
+      "display": "Vengriya",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Венгрия"
+        },
+        {
+          "language": "en",
+          "value": "Hungary"
+        }
+      ]
+    },
+    {
+      "code": "131",
+      "display": "Afgʻoniston",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Афганистан"
+        },
+        {
+          "language": "en",
+          "value": "Afghanistan"
+        }
+      ]
+    },
+    {
+      "code": "132",
+      "display": "Gonkong",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Гонконг"
+        },
+        {
+          "language": "en",
+          "value": "Hong Kong"
+        }
+      ]
+    },
+    {
+      "code": "133",
+      "display": "Gʻarbiy Sahroi Kabir",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Западная Сахара"
+        },
+        {
+          "language": "en",
+          "value": "Western Sahara"
+        }
+      ]
+    },
+    {
+      "code": "134",
+      "display": "Moʻgʻuliston",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Монголия"
+        },
+        {
+          "language": "en",
+          "value": "Mongolia"
+        }
+      ]
+    },
+    {
+      "code": "135",
+      "display": "Beliz",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Белиз"
+        },
+        {
+          "language": "en",
+          "value": "Belize"
+        }
+      ]
+    },
+    {
+      "code": "136",
+      "display": "AQSH Virgin orollari",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Виргинские Острова"
+        },
+        {
+          "language": "en",
+          "value": "United States Virgin Islands"
+        }
+      ]
+    },
+    {
+      "code": "137",
+      "display": "Mikroneziya Federativ Shtatlari",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Федеративные Штаты Микронезии"
+        },
+        {
+          "language": "en",
+          "value": "Micronesia"
+        }
+      ]
+    },
+    {
+      "code": "138",
+      "display": "Sent-Lyusiya",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Сент-Люсия"
+        },
+        {
+          "language": "en",
+          "value": "Saint Lucia"
+        }
+      ]
+    },
+    {
+      "code": "139",
+      "display": "Sharqiy Timor",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Восточный Тимор"
+        },
+        {
+          "language": "en",
+          "value": "Timor-Leste"
+        }
+      ]
+    },
+    {
+      "code": "140",
+      "display": "Sen-Bartelemi",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Сен-Бартелеми"
+        },
+        {
+          "language": "en",
+          "value": "Saint Barthelemy"
+        }
+      ]
+    },
+    {
+      "code": "141",
+      "display": "Britaniya Virgin orollari",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Британские Виргинские острова"
+        },
+        {
+          "language": "en",
+          "value": "British Virgin Islands"
+        }
+      ]
+    },
+    {
+      "code": "142",
+      "display": "Boliviya",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Боливия"
+        },
+        {
+          "language": "en",
+          "value": "Bolivia"
+        }
+      ]
+    },
+    {
+      "code": "143",
+      "display": "Bolgariya",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Болгария"
+        },
+        {
+          "language": "en",
+          "value": "Bulgaria"
+        }
+      ]
+    },
+    {
+      "code": "144",
+      "display": "Avstraliya",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Австралия"
+        },
+        {
+          "language": "en",
+          "value": "Australia"
+        }
+      ]
+    },
+    {
+      "code": "145",
+      "display": "Yamayka",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Ямайка"
+        },
+        {
+          "language": "en",
+          "value": "Jamaica"
+        }
+      ]
+    },
+    {
+      "code": "146",
+      "display": "Shri-Lanka",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Шри-Ланка"
+        },
+        {
+          "language": "en",
+          "value": "Sri Lanka"
+        }
+      ]
+    },
+    {
+      "code": "147",
+      "display": "Tanzaniya",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Танзания"
+        },
+        {
+          "language": "en",
+          "value": "Tanzania"
+        }
+      ]
+    },
+    {
+      "code": "148",
+      "display": "Kokos orollari",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Кокосовые острова"
+        },
+        {
+          "language": "en",
+          "value": "Cocos (Keeling) Islands"
+        }
+      ]
+    },
+    {
+      "code": "149",
+      "display": "Kabo-Verde",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Кабо-Верде"
+        },
+        {
+          "language": "en",
+          "value": "Cabo Verde"
+        }
+      ]
+    },
+    {
+      "code": "150",
+      "display": "Ummon",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Оман"
+        },
+        {
+          "language": "en",
+          "value": "Oman"
+        }
+      ]
+    },
+    {
+      "code": "151",
+      "display": "Bonayre, Sint-Estatius va Saba",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Карибские Нидерланды"
+        },
+        {
+          "language": "en",
+          "value": "Bonaire, Sint Eustatius and Saba"
+        }
+      ]
+    },
+    {
+      "code": "152",
+      "display": "Turkiya",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Турция"
+        },
+        {
+          "language": "en",
+          "value": "Turkiye"
+        }
+      ]
+    },
+    {
+      "code": "153",
+      "display": "Kiribati",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Кирибати"
+        },
+        {
+          "language": "en",
+          "value": "Kiribati"
+        }
+      ]
+    },
+    {
+      "code": "154",
+      "display": "Efiopiya",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Эфиопия"
+        },
+        {
+          "language": "en",
+          "value": "Ethiopia"
+        }
+      ]
+    },
+    {
+      "code": "155",
+      "display": "Pitkern orollari",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Острова Питкэрн"
+        },
+        {
+          "language": "en",
+          "value": "Pitcairn"
+        }
+      ]
+    },
+    {
+      "code": "156",
+      "display": "Armaniston",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Армения"
+        },
+        {
+          "language": "en",
+          "value": "Armenia"
+        }
+      ]
+    },
+    {
+      "code": "157",
+      "display": "Marshall orollari",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Маршалловы Острова"
+        },
+        {
+          "language": "en",
+          "value": "Marshall Islands"
+        }
+      ]
+    },
+    {
+      "code": "158",
+      "display": "Ekvador",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Эквадор"
+        },
+        {
+          "language": "en",
+          "value": "Ecuador"
+        }
+      ]
+    },
+    {
+      "code": "159",
+      "display": "Butan",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Бутан"
+        },
+        {
+          "language": "en",
+          "value": "Bhutan"
+        }
+      ]
+    },
+    {
+      "code": "160",
+      "display": "Kolumbiya",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Колумбия"
+        },
+        {
+          "language": "en",
+          "value": "Colombia"
+        }
+      ]
+    },
+    {
+      "code": "161",
+      "display": "Jibuti",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Джибути"
+        },
+        {
+          "language": "en",
+          "value": "Djibouti"
+        }
+      ]
+    },
+    {
+      "code": "162",
+      "display": "Ruanda",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Руанда"
+        },
+        {
+          "language": "en",
+          "value": "Rwanda"
+        }
+      ]
+    },
+    {
+      "code": "163",
+      "display": "Togo",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Того"
+        },
+        {
+          "language": "en",
+          "value": "Togo"
+        }
+      ]
+    },
+    {
+      "code": "164",
+      "display": "Kuba",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Куба"
+        },
+        {
+          "language": "en",
+          "value": "Cuba"
+        }
+      ]
+    },
+    {
+      "code": "165",
+      "display": "Samoa",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Самоа"
+        },
+        {
+          "language": "en",
+          "value": "Samoa"
+        }
+      ]
+    },
+    {
+      "code": "166",
+      "display": "Niderlandiya",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Нидерланды"
+        },
+        {
+          "language": "en",
+          "value": "Netherlands"
+        }
+      ]
+    },
+    {
+      "code": "167",
+      "display": "Germaniya",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Германия"
+        },
+        {
+          "language": "en",
+          "value": "Germany"
+        }
+      ]
+    },
+    {
+      "code": "168",
+      "display": "Namibiya",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Намибия"
+        },
+        {
+          "language": "en",
+          "value": "Namibia"
+        }
+      ]
+    },
+    {
+      "code": "169",
+      "display": "Jazoir",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Алжир"
+        },
+        {
+          "language": "en",
+          "value": "Algeria"
+        }
+      ]
+    },
+    {
+      "code": "170",
+      "display": "Bagama orollari",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Багамские Острова"
+        },
+        {
+          "language": "en",
+          "value": "Bahamas"
+        }
+      ]
+    },
+    {
+      "code": "171",
+      "display": "Tokelau",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Токелау"
+        },
+        {
+          "language": "en",
+          "value": "Tokelau"
+        }
+      ]
+    },
+    {
+      "code": "172",
+      "display": "Montserrat",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Монтсеррат"
+        },
+        {
+          "language": "en",
+          "value": "Montserrat"
+        }
+      ]
+    },
+    {
+      "code": "173",
+      "display": "Guam",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Гуам"
+        },
+        {
+          "language": "en",
+          "value": "Guam"
+        }
+      ]
+    },
+    {
+      "code": "174",
+      "display": "Chernogoriya",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Черногория"
+        },
+        {
+          "language": "en",
+          "value": "Montenegro"
+        }
+      ]
+    },
+    {
+      "code": "175",
+      "display": "Qirgʻiziston",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Киргизия"
+        },
+        {
+          "language": "en",
+          "value": "Kyrgyzstan"
+        }
+      ]
+    },
+    {
+      "code": "176",
+      "display": "Braziliya",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Бразилия"
+        },
+        {
+          "language": "en",
+          "value": "Brazil"
+        }
+      ]
+    },
+    {
+      "code": "177",
+      "display": "Buve oroli",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Остров Буве"
+        },
+        {
+          "language": "en",
+          "value": "Bouvet Island"
+        }
+      ]
+    },
+    {
+      "code": "178",
+      "display": "Men oroli",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Остров Мэн"
+        },
+        {
+          "language": "en",
+          "value": "Isle of Man"
+        }
+      ]
+    },
+    {
+      "code": "179",
+      "display": "Qozogʻiston",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Казахстан"
+        },
+        {
+          "language": "en",
+          "value": "Kazakhstan"
+        }
+      ]
+    },
+    {
+      "code": "180",
+      "display": "Yangi Kaledoniya",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Новая Каледония"
+        },
+        {
+          "language": "en",
+          "value": "New Caledonia"
+        }
+      ]
+    },
+    {
+      "code": "181",
+      "display": "Herd oroli va Makdonald orollari",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Остров Херд и острова Макдональд"
+        },
+        {
+          "language": "en",
+          "value": "Heard Island and McDonald Islands"
+        }
+      ]
+    },
+    {
+      "code": "182",
+      "display": "Gvatemala",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Гватемала"
+        },
+        {
+          "language": "en",
+          "value": "Guatemala"
+        }
+      ]
+    },
+    {
+      "code": "183",
+      "display": "Pokiston",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Пакистан"
+        },
+        {
+          "language": "en",
+          "value": "Pakistan"
+        }
+      ]
+    },
+    {
+      "code": "184",
+      "display": "Belgiya",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Бельгия"
+        },
+        {
+          "language": "en",
+          "value": "Belgium"
+        }
+      ]
+    },
+    {
+      "code": "185",
+      "display": "Kongo Respublikasi",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Республика Конго"
+        },
+        {
+          "language": "en",
+          "value": "Republic of the Congo"
+        }
+      ]
+    },
+    {
+      "code": "186",
+      "display": "Kambodja",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Камбоджа"
+        },
+        {
+          "language": "en",
+          "value": "Cambodia"
+        }
+      ]
+    },
+    {
+      "code": "187",
+      "display": "Aruba",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Аруба"
+        },
+        {
+          "language": "en",
+          "value": "Aruba"
+        }
+      ]
+    },
+    {
+      "code": "188",
+      "display": "Kyurasao",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Кюрасао"
+        },
+        {
+          "language": "en",
+          "value": "Curacao"
+        }
+      ]
+    },
+    {
+      "code": "189",
+      "display": "Andorra",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Андорра"
+        },
+        {
+          "language": "en",
+          "value": "Andorra"
+        }
+      ]
+    },
+    {
+      "code": "190",
+      "display": "Iroq",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Ирак"
+        },
+        {
+          "language": "en",
+          "value": "Iraq"
+        }
+      ]
+    },
+    {
+      "code": "191",
+      "display": "Eron",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Иран"
+        },
+        {
+          "language": "en",
+          "value": "Iran"
+        }
+      ]
+    },
+    {
+      "code": "192",
+      "display": "Nigeriya",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Нигерия"
+        },
+        {
+          "language": "en",
+          "value": "Nigeria"
+        }
+      ]
+    },
+    {
+      "code": "193",
+      "display": "Polsha",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Польша"
+        },
+        {
+          "language": "en",
+          "value": "Poland"
+        }
+      ]
+    },
+    {
+      "code": "194",
+      "display": "Finlandiya",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Финляндия"
+        },
+        {
+          "language": "en",
+          "value": "Finland"
+        }
+      ]
+    },
+    {
+      "code": "195",
+      "display": "Portugaliya",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Португалия"
+        },
+        {
+          "language": "en",
+          "value": "Portugal"
+        }
+      ]
+    },
+    {
+      "code": "196",
+      "display": "Reyunion",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Реюньон"
+        },
+        {
+          "language": "en",
+          "value": "Reunion"
+        }
+      ]
+    },
+    {
+      "code": "197",
+      "display": "Zambiya",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Замбия"
+        },
+        {
+          "language": "en",
+          "value": "Zambia"
+        }
+      ]
+    },
+    {
+      "code": "198",
+      "display": "Fransuz Gvianasi",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Французская Гвиана"
+        },
+        {
+          "language": "en",
+          "value": "French Guiana"
+        }
+      ]
+    },
+    {
+      "code": "199",
+      "display": "Mayotta",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Майотта"
+        },
+        {
+          "language": "en",
+          "value": "Mayotte"
+        }
+      ]
+    },
+    {
+      "code": "200",
+      "display": "Kongo Demokratik Respublikasi",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Демократическая Республика Конго"
+        },
+        {
+          "language": "en",
+          "value": "Democratic Republic of the Congo"
+        }
+      ]
+    },
+    {
+      "code": "201",
+      "display": "Sen-Marten",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Сен-Мартен"
+        },
+        {
+          "language": "en",
+          "value": "Saint Martin (French part)"
+        }
+      ]
+    },
+    {
+      "code": "202",
+      "display": "Grenlandiya",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Гренландия"
+        },
+        {
+          "language": "en",
+          "value": "Greenland"
+        }
+      ]
+    },
+    {
+      "code": "203",
+      "display": "Amerika Samoasi",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Американское Самоа"
+        },
+        {
+          "language": "en",
+          "value": "American Samoa"
+        }
+      ]
+    },
+    {
+      "code": "204",
+      "display": "Gvineya",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Гвинея"
+        },
+        {
+          "language": "en",
+          "value": "Guinea"
+        }
+      ]
+    },
+    {
+      "code": "205",
+      "display": "Gernsi",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Гернси"
+        },
+        {
+          "language": "en",
+          "value": "Guernsey"
+        }
+      ]
+    },
+    {
+      "code": "206",
+      "display": "Tayvan",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Тайвань"
+        },
+        {
+          "language": "en",
+          "value": "Taiwan"
+        }
+      ]
+    },
+    {
+      "code": "207",
+      "display": "Amerika Qoʻshma Shtatlari",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Соединённые Штаты Америки"
+        },
+        {
+          "language": "en",
+          "value": "United States of America"
+        }
+      ]
+    },
+    {
+      "code": "208",
+      "display": "Kosovo",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Республика Косово"
+        },
+        {
+          "language": "en",
+          "value": "Kosovo"
+        }
+      ]
+    },
+    {
+      "code": "209",
+      "display": "Bermud orollari",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Бермудские Острова"
+        },
+        {
+          "language": "en",
+          "value": "Bermuda"
+        }
+      ]
+    },
+    {
+      "code": "210",
+      "display": "Muqaddas Yelena, Meʼroj va Tristan-da-Kunya orollari",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Острова Святой Елены, Вознесения и Тристан-да-Кунья"
+        },
+        {
+          "language": "en",
+          "value": "Saint Helena, Ascension and Tristan da Cunha"
+        }
+      ]
+    },
+    {
+      "code": "211",
+      "display": "Yangi Zelandiya",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Новая Зеландия"
+        },
+        {
+          "language": "en",
+          "value": "New Zealand"
+        }
+      ]
+    },
+    {
+      "code": "212",
+      "display": "Surinam",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Суринам"
+        },
+        {
+          "language": "en",
+          "value": "Suriname"
+        }
+      ]
+    },
+    {
+      "code": "213",
+      "display": "Botsvana",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Ботсвана"
+        },
+        {
+          "language": "en",
+          "value": "Botswana"
+        }
+      ]
+    },
+    {
+      "code": "214",
+      "display": "Fransiyaning janubiy va Antarktika yerlari",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Французские Южные и Антарктические территории"
+        },
+        {
+          "language": "en",
+          "value": "French Southern Territories"
+        }
+      ]
+    },
+    {
+      "code": "215",
+      "display": "Burundi",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Бурунди"
+        },
+        {
+          "language": "en",
+          "value": "Burundi"
+        }
+      ]
+    },
+    {
+      "code": "216",
+      "display": "Irlandiya",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Ирландия"
+        },
+        {
+          "language": "en",
+          "value": "Ireland"
+        }
+      ]
+    },
+    {
+      "code": "217",
+      "display": "Islandiya",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Исландия"
+        },
+        {
+          "language": "en",
+          "value": "Iceland"
+        }
+      ]
+    },
+    {
+      "code": "218",
+      "display": "Fransiya",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Франция"
+        },
+        {
+          "language": "en",
+          "value": "France"
+        }
+      ]
+    },
+    {
+      "code": "219",
+      "display": "Niue",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Ниуэ"
+        },
+        {
+          "language": "en",
+          "value": "Niue"
+        }
+      ]
+    },
+    {
+      "code": "220",
+      "display": "Keniya",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Кения"
+        },
+        {
+          "language": "en",
+          "value": "Kenya"
+        }
+      ]
+    },
+    {
+      "code": "221",
+      "display": "Shpitsbergen va Yan-Mayen",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Шпицберген и Ян-Майен"
+        },
+        {
+          "language": "en",
+          "value": "Svalbard and Jan Mayen"
+        }
+      ]
+    },
+    {
+      "code": "222",
+      "display": "Antarktika",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Антарктида"
+        },
+        {
+          "language": "en",
+          "value": "Antarctica"
+        }
+      ]
+    },
+    {
+      "code": "223",
+      "display": "Falastin",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Палестина"
+        },
+        {
+          "language": "en",
+          "value": "Palestine"
+        }
+      ]
+    },
+    {
+      "code": "224",
+      "display": "Malavi",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Малави"
+        },
+        {
+          "language": "en",
+          "value": "Malawi"
+        }
+      ]
+    },
+    {
+      "code": "225",
+      "display": "Kayman orollari",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Каймановы острова"
+        },
+        {
+          "language": "en",
+          "value": "Cayman Islands"
+        }
+      ]
+    },
+    {
+      "code": "226",
+      "display": "Nauru",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Науру"
+        },
+        {
+          "language": "en",
+          "value": "Nauru"
+        }
+      ]
+    },
+    {
+      "code": "227",
+      "display": "Shvetsiya",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Швеция"
+        },
+        {
+          "language": "en",
+          "value": "Sweden"
+        }
+      ]
+    },
+    {
+      "code": "228",
+      "display": "Gonduras",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Гондурас"
+        },
+        {
+          "language": "en",
+          "value": "Honduras"
+        }
+      ]
+    },
+    {
+      "code": "229",
+      "display": "Gruziya",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Грузия"
+        },
+        {
+          "language": "en",
+          "value": "Georgia"
+        }
+      ]
+    },
+    {
+      "code": "230",
+      "display": "Buyuk Britaniya",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Великобритания"
+        },
+        {
+          "language": "en",
+          "value": "United Kingdom"
+        }
+      ]
+    },
+    {
+      "code": "231",
+      "display": "Tailand",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Таиланд"
+        },
+        {
+          "language": "en",
+          "value": "Thailand"
+        }
+      ]
+    },
+    {
+      "code": "232",
+      "display": "Lixtenshteyn",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Лихтенштейн"
+        },
+        {
+          "language": "en",
+          "value": "Liechtenstein"
+        }
+      ]
+    },
+    {
+      "code": "233",
+      "display": "Angola",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Ангола"
+        },
+        {
+          "language": "en",
+          "value": "Angola"
+        }
+      ]
+    },
+    {
+      "code": "234",
+      "display": "Koreya Respublikasi",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Южная Корея"
+        },
+        {
+          "language": "en",
+          "value": "South Korea"
+        }
+      ]
+    },
+    {
+      "code": "235",
+      "display": "Benin",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Бенин"
+        },
+        {
+          "language": "en",
+          "value": "Benin"
+        }
+      ]
+    },
+    {
+      "code": "236",
+      "display": "San-Tome va Prinsipi",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Сан-Томе и Принсипи"
+        },
+        {
+          "language": "en",
+          "value": "Sao Tome and Principe"
+        }
+      ]
+    },
+    {
+      "code": "237",
+      "display": "Litva",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Литва"
+        },
+        {
+          "language": "en",
+          "value": "Lithuania"
+        }
+      ]
+    },
+    {
+      "code": "238",
+      "display": "Yaponiya",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Япония"
+        },
+        {
+          "language": "en",
+          "value": "Japan"
+        }
+      ]
+    },
+    {
+      "code": "239",
+      "display": "Oʻzbekiston",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Узбекистан"
+        },
+        {
+          "language": "en",
+          "value": "Uzbekistan"
+        }
+      ]
+    },
+    {
+      "code": "240",
+      "display": "Gayana",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Гайана"
+        },
+        {
+          "language": "en",
+          "value": "Guyana"
+        }
+      ]
+    },
+    {
+      "code": "241",
+      "display": "Shimoliy Mariana orollari",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Северные Марианские острова"
+        },
+        {
+          "language": "en",
+          "value": "Northern Mariana Islands"
+        }
+      ]
+    },
+    {
+      "code": "242",
+      "display": "Sudan",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Судан"
+        },
+        {
+          "language": "en",
+          "value": "Sudan"
+        }
+      ]
+    },
+    {
+      "code": "243",
+      "display": "Janubiy Afrika Respublikasi",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Южная Африка"
+        },
+        {
+          "language": "en",
+          "value": "South Africa"
+        }
+      ]
+    },
+    {
+      "code": "244",
+      "display": "Trinidad va Tobago",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Тринидад и Тобаго"
+        },
+        {
+          "language": "en",
+          "value": "Trinidad and Tobago"
+        }
+      ]
+    },
+    {
+      "code": "245",
+      "display": "Palau",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Палау"
+        },
+        {
+          "language": "en",
+          "value": "Palau"
+        }
+      ]
+    },
+    {
+      "code": "246",
+      "display": "Martinika",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Мартиника"
+        },
+        {
+          "language": "en",
+          "value": "Martinique"
+        }
+      ]
+    },
+    {
+      "code": "247",
+      "display": "Indoneziya",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Индонезия"
+        },
+        {
+          "language": "en",
+          "value": "Indonesia"
+        }
+      ]
+    },
+    {
+      "code": "248",
+      "display": "Turks va Kaykos orollari",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Теркс и Кайкос"
+        },
+        {
+          "language": "en",
+          "value": "Turks and Caicos Islands"
+        }
+      ]
+    },
+    {
+      "code": "249",
+      "display": "Kanada",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Канада"
+        },
+        {
+          "language": "en",
+          "value": "Canada"
+        }
+      ]
+    },
+    {
+      "code": "250",
+      "display": "Solomon orollari",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Соломоновы Острова"
+        },
+        {
+          "language": "en",
+          "value": "Solomon Islands"
+        }
+      ]
+    }
+  ],
+  "caseSensitive": true,
+  "hierarchyMeaning": "is-a",
+  "language": "uz",
+  "experimental": true,
+  "count": 250
+}
