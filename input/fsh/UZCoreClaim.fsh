@@ -70,7 +70,7 @@ Description: "Example of claim responce"
 Usage: #example
 * language = #en
 * status = #active
-* type = #institutional 
+* type = $claim-type#institutional 
 * use = #claim
 * patient = Reference(Patient/example-salim)
 * created = "2026-10-03"
