@@ -21,10 +21,11 @@ Description: "Uzbekistan Core Organization profile, used to define healthcare or
 * identifier ^slicing.rules = #open
 * identifier ^slicing.description = "Ways an organization can be categorized"
 * identifier ^slicing.ordered = false
-* identifier contains taxId 0..1 MS and argosId 0..1 MS and shifId 0..1 MS and minzdravId 0..1 MS
+* identifier contains taxId 0..1 MS and argosId 0..1 MS and shifId 0..1 MS and mohId 0..1 MS and dhpId 0..1 MS
 
 * insert TaxIdentifier
-* insert MinzdravIdentifier
+* insert MohIdentifier
+* insert DHPIdentifier
 
 * identifier[argosId]
   * system 1..1 MS
