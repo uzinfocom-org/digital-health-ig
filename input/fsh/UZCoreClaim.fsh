@@ -1,6 +1,7 @@
 Profile: UZCoreClaim
 Parent: Claim
 Id: uz-core-claim
+Title: "UZ Core Claim"
 Description: "Uzbekistan Core Claim profile, used for insurance claims, pre-authorization and predetermination processes. "
 * ^experimental = true
 * ^date = "2026-06-22"
