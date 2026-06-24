@@ -11,7 +11,6 @@ Description: "Uzbekistan Core HealthcareService profile, used to define healthca
 * active and category and type and name MS
 
 
-// Extensions
 * extension contains
     TurnaroundTime named turnaroundTime 0..1 MS and
     ServiceDefinition named serviceDefinition 0..1 MS
@@ -95,12 +94,9 @@ Usage: #example
 
 * active = true
 
-// Link this per-organization offering to its global ObservationDefinition catalogue entry.
-// Illustrative: points to the hemoglobin analyte definition (the first analyte of this CBC panel)
-// until a panel-level ObservationDefinition is published.
+// Illustrative: no panel-level ObservationDefinition exists yet, so this points at the hemoglobin analyte definition
 * extension[serviceDefinition].valueCanonical = Canonical(example-laboratory-hemoglobin)
 
-// Example Turnaround Time
 * extension[turnaroundTime].valueDuration.value = 4
 * extension[turnaroundTime].valueDuration.unit = "hours"
 * extension[turnaroundTime].valueDuration.system = "http://unitsofmeasure.org"
