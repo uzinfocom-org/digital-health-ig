@@ -115,7 +115,7 @@ Description: "Extension to indicate the author of the immunization recommendatio
 Extension: ServiceDefinition
 Id: service-definition
 Title: "Service Definition"
-Description: "Canonical reference to the laboratory ObservationDefinition that specifies the service offered by this HealthcareService. Many per-organization HealthcareService offerings point to one global ObservationDefinition catalogue entry."
+Description: "Canonical reference to the laboratory ObservationDefinition that specifies the service offered by this HealthcareService. Many per-organization HealthcareService offerings can point to one global ObservationDefinition catalogue entry."
 
 * ^context.type = #element
 * ^context.expression = "HealthcareService"
