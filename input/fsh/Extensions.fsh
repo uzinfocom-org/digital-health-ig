@@ -112,14 +112,14 @@ Description: "Extension to indicate the author of the immunization recommendatio
 * value[x] 1..
 * value[x] only Reference(UZCorePractitioner or UZCorePractitionerRole)
 
-Extension: PartOfHealthcareService
-Id: part-of-healthcare-service
-Title: "Part Of Healthcare Service"
-Description: "Extension to indicate the HealthcareService associated with a laboratory ObservationDefinition."
+Extension: ServiceDefinition
+Id: service-definition
+Title: "Service Definition"
+Description: "Canonical reference to the laboratory ObservationDefinition that specifies the service offered by this HealthcareService. Many per-organization HealthcareService offerings point to one global ObservationDefinition catalogue entry."
 
 * ^context.type = #element
-* ^context.expression = "ObservationDefinition"
+* ^context.expression = "HealthcareService"
 * ^experimental = true
 
 * value[x] 1..1
-* value[x] only Reference(UZCoreHealthcareService)
+* value[x] only Canonical(UZCoreLaboratoryObservationDefinition)
