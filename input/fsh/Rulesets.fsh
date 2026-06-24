@@ -80,16 +80,25 @@ RuleSet: TaxIdentifier
   * use = #official
   * value 1..1 MS
 
-RuleSet: MinzdravIdentifier
-* identifier[minzdravId]
-  * ^short = "Unique identifier of the organization in Minzdrav"
+RuleSet: MohIdentifier
+* identifier[mohId]
+  * ^short = "Unique identifier of the organization in Ministry of Health of the Republic of Uzbekistan"
   * system 1..1 MS
-  * system = $organization-minzdrav-id-system
+  * system = $organization-moh-id-system
   * type 1..1 MS
   * type = $identifier-type#XX "Organization Identifier"
   * use = #official
   * value 1..1 MS
 
+RuleSet: DHPIdentifier
+* identifier[dhpId]
+  * ^short = "Unique identifier of the organization in Digital Health Platform"
+  * system 1..1 MS
+  * system = $organization-dhp-id-system
+  * use = #official
+  * value 1..1 MS
+
+  
 // Provider-registration identifier assigned to a healthcare organization by an
 // insurer/payor (the assigning authority). One slice per payor, discriminated by
 // system. Type is PRN ("Provider number") — the identified entity is a provider,
