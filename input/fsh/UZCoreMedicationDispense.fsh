@@ -17,7 +17,8 @@ Description: "Uzbekistan Core profile for MedicationDispense, used to record the
 * subject MS
 * performer MS
 * performer.actor MS
-* authorizingPrescription MS
+// this must be added after MedicationRequest is merged with reference and instance.
+// * authorizingPrescription MS
 * quantity MS
 * quantity.value MS
 * quantity.unit MS
@@ -38,7 +39,7 @@ Description: "Uzbekistan Core profile for MedicationDispense, used to record the
 * medication only CodeableReference(UZCoreMedication)
 * subject only Reference(UZCorePatient or Group)
 * performer.actor only Reference(UZCorePractitioner or UZCorePractitionerRole or UZCoreOrganization or UZCorePatient or Device or UZCoreRelatedPerson or CareTeam)
-* authorizingPrescription only Reference(MedicationRequest)
+// * authorizingPrescription only Reference(UZCoreMedicationRequest)
 * receiver only Reference(UZCorePatient or UZCorePractitioner or UZCoreRelatedPerson or UZCoreLocation or UZCorePractitionerRole)
 
 
@@ -52,7 +53,7 @@ Usage: #example
 * subject = Reference(example-david)
 * performer[0].actor = Reference(example-practitioner)
 * performer[1].actor = Reference(tashkent-diseases-hospital)
-* authorizingPrescription[0] = Reference(example-medicationrequest)
+// * authorizingPrescription[0] = Reference(example-medicationrequest)
 * quantity
   * value = 30
   * unit = "capsules"
