@@ -3,6 +3,7 @@ Id: medicationdispense-status-cs
 Title: "MedicationDispense Status (UZ supplement)"
 Description: "Uzbek and Russian display translations for HL7 MedicationDispense status codes"
 * insert SupplementCodeSystemDraft(medicationdispense-status-cs, $medicationdispense-status, 5.0.0)
+* ^language = #uz
 
 * #preparation "Tayyorgarlik"
   * ^designation[0].language = #ru

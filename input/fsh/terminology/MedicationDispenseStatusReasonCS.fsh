@@ -3,6 +3,7 @@ Id: medicationdispense-status-reason-cs
 Title: "MedicationDispense Status Reason (UZ supplement)"
 Description: "Uzbek and Russian display translations for HL7 MedicationDispense status reason codes"
 * insert SupplementCodeSystemDraft(medicationdispense-status-reason-cs, $medicationdispense-status-reason, 5.0.0)
+* ^language = #uz
 
 * #frr01 "Buyurtma to‘xtatildi"
   * ^designation[0].language = #ru

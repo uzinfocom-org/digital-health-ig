@@ -3,6 +3,7 @@ Id: medication-dispense-admin-location-cs
 Title: "MedicationDispense AdminLocation (UZ supplement)"
 Description: "Uzbek and Russian display translations for MedicationDispense administration location codes"
 * insert SupplementCodeSystemDraft(medication-dispense-admin-location-cs, $medicationdispense-admin-location, 5.0.0)
+* ^language = #uz
 
 * #inpatient "Statsionar"
   * ^designation[0].language = #ru
