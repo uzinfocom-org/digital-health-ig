@@ -75,3 +75,10 @@ Usage: #example
 * use = #claim
 * patient = Reference(Patient/example-salim)
 * created = "2026-10-03"
+
+* provider = Reference(Organization/tashkent-diseases-hospital)
+* referral = Reference(ServiceRequest/UZCoreServiceRequestLab-Example01)
+* facility = Reference(Organization/tashkent-diseases-hospital)
+
+* total.value = 100000
+* total.currency = #UZS
