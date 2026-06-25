@@ -181,3 +181,10 @@ Alias: $administrative-gender-vs = https://terminology.dhp.uz/fhir/core/ValueSet
 Alias: $observation-range-category = http://hl7.org/fhir/observation-range-category
 Alias: $observation-range-category-cs = https://terminology.dhp.uz/fhir/core/CodeSystem/observation-range-category-cs
 Alias: $observation-range-category-vs = https://terminology.dhp.uz/fhir/core/ValueSet/observation-range-category-vs
+
+Alias: $claim-response-category = http://terminology.hl7.org/CodeSystem/adjudication
+Alias: $claim-response-status = http://hl7.org/fhir/fm-status
+Alias: $claim-response-type = http://terminology.hl7.org/CodeSystem/claim-type
+Alias: $claim-response-use = http://hl7.org/fhir/claim-use
+Alias: $claim-response-outcome = http://hl7.org/fhir/claim-outcome
+Alias: $claim-response-decision = http://hl7.org/fhir/claim-decision
