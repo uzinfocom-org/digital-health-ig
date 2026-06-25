@@ -20,7 +20,7 @@ Muayyan bemordan mustaqil ravishda qayta foydalaniladigan klinik faoliyatlarni (
 
 Nojo'ya hodisalar haqida xabar berish uchun [UZ Core AdverseEvent](StructureDefinition-uz-core-adverse-event.html) profili qo'shildi, [haqiqiylik](ValueSet-adverse-event-actuality-vs.html), [jiddiylik](ValueSet-adverse-event-seriousness-vs.html), [natija](ValueSet-adverse-event-outcome-vs.html) va [holat](ValueSet-adverse-event-status-vs.html) terminologiyasi bilan.
 
-O'zbekistonga xos dori identifikatorlari (markirovka ID, ro'yxatdan o'tkazish guvohnomasi, GTIN, quti agregatsiya ID) va ATC asosidagi [tasnif](ValueSet-medication-classification-vs.html) hamda [dori shakli](ValueSet-medication-doseform-vs.html) terminologiyasi bilan [UZ Core Medication](StructureDefinition-uz-core-medication.html) profili qo'shildi.
+O'zbekistonga xos dori identifikatorlari (markirovka ID, ro'yxatdan o'tkazish guvohnomasi, GTIN, quti agregatsiya ID, milliy mahsulot va xizmatlar tasnifi kodi) va ATC asosidagi [tasnif](ValueSet-medication-classification-vs.html) hamda [dori shakli](ValueSet-medication-doseform-vs.html) terminologiyasi bilan [UZ Core Medication](StructureDefinition-uz-core-medication.html) profili qo'shildi.
 
 [UZ Core Procedure](StructureDefinition-uz-core-procedure.html) profili qo'shildi, [protsedura holati](ValueSet-procedure-event-status-vs.html), SNOMED CT asosidagi [protsedura kodlari](ValueSet-procedure-code-vs.html) va [natija](ValueSet-procedure-outcome-vs.html) terminologiyasi bilan birga, shuningdek qoplama hisobotlari uchun namuna sifatida [SNOMED CT dan ICHI ga](ConceptMap-snomed-to-ichi-procedures.html) ConceptMap bilan.
 
@@ -28,7 +28,7 @@ O'zbekistonga xos dori identifikatorlari (markirovka ID, ro'yxatdan o'tkazish gu
 
 [Laboratoriya usuli kodlari](CodeSystem-lab-methods-cs.html) qo'shildi, laboratoriya [panel va analit kodlari](ConceptMap-lab-pan-codes-to-loinc.html) ni LOINC ga va [usul kodlari](ConceptMap-lab-methods-to-loinc.html) ni SNOMED CT ga moslashtiruvchi ConceptMaplar bilan. Usul kodlari [laboratoriya usullari qiymatlar to'plami](ValueSet-lab-method-vs.html) sifatida taqdim etilgan va [UZ Core Observation](StructureDefinition-uz-core-observation.html) profilining `method` elementiga bog'langan.
 
-[UZ Core PractitionerRole](StructureDefinition-uz-core-practitioner-role.html) dagi `code` endi yangi [lavozim va kasb ValueSet](ValueSet-position-and-profession-vs.html) ga (required) bog'langan, `specialty` esa yangi [kasb ixtisosligi ValueSet](ValueSet-profession-specialization-vs.html) ga bog'langan. Dasturchilar shifokor rollarini ushbu qiymatlar to'plamlaridagi kodlar bilan to'ldirishlari shart.
+[UZ Core PractitionerRole](StructureDefinition-uz-core-practitioner-role.html) dagi `code` endi [lavozim va kasb ValueSet](ValueSet-position-and-profession-vs.html) ga (required) bog'langan (ilgari - shifokor roli qiymatlar to'plami); `specialty` esa avvalgidek [kasb ixtisosligi ValueSet](ValueSet-profession-specialization-vs.html) ga (required) bog'langan. Dasturchilar shifokor rollarini ushbu qiymatlar to'plamlaridagi kodlar bilan to'ldirishlari shart.
 
 Laboratoriya xizmatlarida natija kutilayotgan vaqtni ko'rsatish uchun [UZ Core HealthcareService](StructureDefinition-uz-core-healthcareservice.html) ga [natija kutish vaqti kengaytmasi](StructureDefinition-turnaround-time.html) qo'shildi. Ushbu profildagi toifa va tur bog'lanishlari ham required dan extensible ga yumshatildi, shu sababli dasturchilar lokal kodlar qo'sha olishlari mumkin.
 
@@ -40,9 +40,13 @@ Bir nechta profillardagi havola maqsadlari endi mavjud bo'lgan joylarda UZ Core 
 
 Identifikator-domeni va EpisodeOfCare qiymatlar to'plamlarining (shuningdek chet el pasporti va haydovchilik guvohnomasi qiymatlar to'plamlarining) kanonik URL manzillari `https://dhp.uz/fhir/core/ValueSet/...` dan `https://terminology.dhp.uz/fhir/core/ValueSet/...` ga ko'chirildi. Ushbu kanonik manzillarga to'g'ridan-to'g'ri havola qiluvchi dasturchilar ularni yangilashlari shart.
 
-[UZ Core Patient](StructureDefinition-uz-core-patient.html) dagi [fuqarolik qiymatlar to'plami](ValueSet-nationality-vs.html) asosidagi [fuqarolik CodeSystem'i](CodeSystem-nationality-cs.html) yangilangan dmp.uz fuqarolik ro'yxati asosida qayta qurildi: u 306 tadan 512 taga oshdi, nomlar endi inglizcha, ruscha tarjimalari bilan, kodlar esa qayta tayinlandi - bitta kod endi boshqa millatni anglatishi mumkin (masalan, `#1` "Ruslar" dan "ADIGEY" ga o'zgardi). Bu buzuvchi o'zgarish: oldingi versiyada saqlangan fuqarolik kodlari qayta moslashtirilishi kerak.
+[UZ Core Patient](StructureDefinition-uz-core-patient.html) dagi [fuqarolik qiymatlar to'plami](ValueSet-nationality-vs.html) asosidagi [fuqarolik CodeSystem'i](CodeSystem-nationality-cs.html) yangilangan dmp.uz fuqarolik ro'yxati asosida qayta qurildi: u 306 tadan 512 taga oshdi, nomlar katta harflarga standartlashtirildi, ruscha va inglizcha tarjimalar qo'shildi, kodlar esa qayta tayinlandi - bitta kod endi boshqa millatni anglatishi mumkin (masalan, `#1` "Ruslar" dan "ADIGEY" ga o'zgardi). Bu buzuvchi o'zgarish: oldingi versiyada saqlangan fuqarolik kodlari qayta moslashtirilishi kerak.
 
 [OrganizationalSpecializationCS](CodeSystem-organizational-specialization-cs.html) dagi inglizcha ko'rsatuv nomlari tuzatildi (izchil katta-kichik harflar; "Children" "Pediatric" ga o'zgartirildi). Kodlar o'zgarmagan.
+
+Milliy DMED tizimidan ma'lumotlarni qabul qilish uchun DMED terminologik ko'priklari qo'shildi: [mamlakat kodlari](ConceptMap-dmed-country-to-dhp-country-cm.html) ISO 3166 ga, [o'lchov birliklari](ConceptMap-dmed-measure-unit-to-dhp-cm.html) UCUM ga moslashtirildi, DMED kasblari esa ham [SNOMED CT](ConceptMap-dmed-position-to-snomed-cm.html) ga, ham [DHP lavozimlari](ConceptMap-dmed-position-to-dhp-position-cm.html) ga moslashtirildi.
+
+[UZ Core Patient](StructureDefinition-uz-core-patient.html) dagi `gender` endi ruscha va o'zbekcha tarjimalari bilan yangi [ma'muriy jins ValueSet](ValueSet-administrative-gender-vs.html) ga (required) bog'langan.
 
 #### Tashkilot va identifikatorlar
 
@@ -58,7 +62,7 @@ Buyruq qatori validatori va validator.fhir.org yordamida [resurslarni UZ Core ga
 
 [API kirishi](api-access.html) ko'rsatmalari yangilandi: hozircha playgroundda faqat ICD-10 va HL7 kod tizimlari validatsiyadan o'tadi, frontend mijozlar uchun PKCE majburiy, va autentifikatsiya tafsilotlari endi tashqi SSO hujjatlariga havola qiladi.
 
-Services sahifasi [Components](components.html) ga o'zgartirildi va uch tilli komponent nomlari va tavsiflari bilan kengaytirildi.
+Services sahifasi [Components](components.html) ga o'zgartirildi va komponent tavsiflari hamda ruscha va o'zbekcha tarjimalar bilan kengaytirildi.
 
 ### Versiya 0.5.0
 
