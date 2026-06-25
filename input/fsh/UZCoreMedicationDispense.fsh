@@ -45,6 +45,7 @@ Description: "Uzbekistan Core MedicationDispense profile, used to record the pro
 
 Instance: example-medication-dispense
 InstanceOf: UZCoreMedicationDispense
+Title: "Example UZ Core MedicationDispense - Amoxicillin"
 Description: "Example of a medication dispense for a patient"
 Usage: #example
 * identifier[0].value = "MD-2025-00001"
@@ -67,6 +68,7 @@ Usage: #example
 // Outpatient dispense that fulfils the UZCoreMedicationRequest example (ibuprofen 400 mg, twice daily for five days -> 10 tablets).
 Instance: example-medication-dispense-outpatient
 InstanceOf: UZCoreMedicationDispense
+Title: "Example UZ Core MedicationDispense - Outpatient ibuprofen"
 Description: "Example of an outpatient dispense fulfilling an ibuprofen prescription: 10 ibuprofen 400 mg tablets handed to the patient"
 Usage: #example
 * identifier[0].value = "MD-2026-00002"
