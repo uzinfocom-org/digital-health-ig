@@ -17,7 +17,7 @@ Description: "Uzbekistan Core MedicationDispense profile, used to record the pro
 * subject MS
 * performer MS
 * performer.actor MS
-// add a typed reference to MedicaionRequest when that is merged
+// add a typed reference to MedicationRequest when that is merged
 * authorizingPrescription MS
 * quantity MS
 * quantity.value MS
