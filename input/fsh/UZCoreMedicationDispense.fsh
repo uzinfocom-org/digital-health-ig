@@ -62,3 +62,28 @@ Usage: #example
 * whenHandedOver = "2025-02-24T10:30:00+05:00"
 * recorded = "2025-02-24T10:35:00+05:00"
 * receiver = Reference(example-david)
+
+
+// Outpatient dispense that fulfils the UZCoreMedicationRequest example (ibuprofen 400 mg, twice daily for five days -> 10 tablets).
+Instance: example-medication-dispense-outpatient
+InstanceOf: UZCoreMedicationDispense
+Description: "Example of an outpatient dispense fulfilling an ibuprofen prescription: 10 ibuprofen 400 mg tablets handed to the patient"
+Usage: #example
+* identifier[0].value = "MD-2026-00002"
+* status = #completed
+* category = $medicationdispense-admin-location#outpatient
+* medication.concept.text = "Ibuprofen 400 mg tablet"
+* subject = Reference(example-salim)
+// Authorising prescription is the UZCoreMedicationRequest example; uncomment once MedicationRequest is merged.
+// * authorizingPrescription[0] = Reference(example-medication-request)
+* performer[0].actor = Reference(example-practitioner)
+* performer[1].actor = Reference(tashkent-diseases-hospital)
+* quantity
+  * value = 10
+  * unit = "dona"
+  * system = "https://terminology.dhp.uz/fhir/core/CodeSystem/medication-total-volume-local-units-cs"
+  * code = #piece
+* whenPrepared = "2026-03-02T10:50:00+05:00"
+* whenHandedOver = "2026-03-02T11:00:00+05:00"
+* recorded = "2026-03-02T11:05:00+05:00"
+* receiver = Reference(example-salim)
