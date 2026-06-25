@@ -21,7 +21,13 @@ Description: "Uzbekistan Core Provenance profile, used to digitally sign documen
   * role from ProvenanceEntityRoleVS (required)
 * signature
   * type and when and who and sigFormat and data MS
-  * type from SignatureTypeVS (required)
+  * type ^slicing.discriminator.type = #value
+  * type ^slicing.discriminator.path = "system"
+  * type ^slicing.rules = #open
+  * type ^slicing.description = "A national signature-type code is required; additional type codings from other systems are allowed"
+  * type contains nationalType 1..1 MS
+  * type[nationalType] from SignatureTypeVS (required)
+  * type[nationalType].system = Canonical(SignatureTypeCS)
   * who only Reference(UZCorePractitionerRole)
 
 Instance: example-pdf-document
@@ -47,7 +53,7 @@ Usage: #example
   * type = $provenance-participant-type#author
   * who = Reference(PractitionerRole/example-practitionerrole)
 * signature
-  * type = signature-type-cs#biometricAuth
+  * type[nationalType] = signature-type-cs#biometricAuth
   * when = "2025-02-05T12:58:00+05:00"
   * who = Reference(PractitionerRole/example-practitionerrole)
   * sigFormat = #application/signature+xml

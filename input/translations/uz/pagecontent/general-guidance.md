@@ -1,13 +1,11 @@
-> **Mashina tarjimasi, inson tomonidan tekshirilishi zarur.** Ushbu sahifa ingliz tilidan sun'iy intellekt yordamida avtomatik tarjima qilingan va hali muharrir tomonidan tekshirilmagan. Har qanday nomuvofiqlikda asl inglizcha versiya ustuvor hisoblanadi.
+Barcha UZ Core profillariga tatbiq etiladigan umumiy qoidalar. Ular joriy etuvchilar eng ko'p beradigan savollarga javob beradi: har bir resurs uchun qanday metama'lumotlar talab etiladi, maydon qiymati mavjud bo'lmaganda nima qilish kerak, o'lchov birliklarini qanday kodlash, resurslarni Bundle tarkibida qanday birlashtirish va Platforma xatolar haqida qanday xabar beradi.
 
-Barcha UZ Core profillariga taalluqli kesishuvchi qoidalar. Ular implementatsiya qiluvchilar eng ko'p beradigan savollarga javob beradi - har bir resursga qanday metama'lumot kerakligi, maydon uchun qiymat bo'lmaganda nima qilish kerakligi, birliklarni qanday kodlash, resurslarni qanday to'plamga (bundle) birlashtirish va platforma xatolarni qanday xabar berishi.
+### Resursning majburiy metama'lumotlari {#metadata}
 
-### Majburiy resurs metama'lumoti {#metadata}
+Platformada almashiniladigan har bir resurs [klinik ma'lumotlaridan](artifacts.html#structures-resource-profiles) tashqari quyidagilarni ham o'z ichiga olishi shart:
 
-Platformada almashinadigan har bir resurs, o'zining [klinik mazmuni](artifacts.html#structures-resource-profiles)dan tashqari, quyidagilarni o'z ichiga olishi shart:
-
-- `meta.profile` - resurs muvofiq ekanligini da'vo qilayotgan UZ Core profilining kanonik URL manzili (versiyasi bilan). Server qaysi qoidalarga ko'ra validatsiya qilishni shu orqali biladi.
-- `id` - serverdagi resursning mantiqiy identifikatori. Yangi resurslarga uni server o'zi tayinlaydi.
+- `meta.profile` - resurs muvofiq ekanini ko'rsatadigan UZ Core profilining kanonik URL manzili (versiyasi bilan). Server resursni qaysi qoidalar bo'yicha validatsiya qilish kerakligini shu ma'lumot orqali aniqlaydi.
+- `id` - resursning serverdagi mantiqiy identifikatori. Yangi resursga identifikator server tomonidan biriktiriladi.
 
 ```json
 {
@@ -20,23 +18,23 @@ Platformada almashinadigan har bir resurs, o'zining [klinik mazmuni](artifacts.h
 }
 ```
 
-Mazmun JSON formatida, UTF-8 kodlashda almashinadi.
+Ma'lumotlar UTF-8 kodlashidagi JSON formatida almashiladi.
 
-### Yo'q va bostirilgan ma'lumotlar {#missing-data}
+### Mavjud bo'lmagan va yashirilgan ma'lumotlar {#missing-data}
 
-"Menda qiymat yo'q" va "qiymat mavjud emas" o'rtasida farq bor va FHIR qaysi biri ekanligini ko'rsatishga imkon beradi:
+"Menda qiymat yo'q" va "qiymat mavjud emas" holatlari o'rtasida farq bor. FHIR qaysi holat yuz berganini ko'rsatish imkonini beradi:
 
-- Qiymat shunchaki mavjud emas - elementni tushirib qoldiring. Bo'sh satr yoki o'rinbosar (placeholder) yubormang. Bu har qanday ixtiyoriy (`0..`) element uchun, jumladan Must Support ixtiyoriy elementlari uchun ham ruxsat etiladi.
-- Majburiy element, lekin qiymat haqiqatan ham noma'lum - `1..` elementni tushirib qoldira olmaysiz, shuning uchun resursning aniqlangan "noma'lum" mexanizmidan foydalaning: element ustidagi `data-absent-reason` kengaytmasi ([misol](Patient-example-unidentified-patient.html)) yoki bog'langan qiymatlar to'plami uni taqdim etgan holatda "unknown" kodi (masalan, `unknown`ni o'z ichiga olgan qiymatlar to'plamiga bog'langan kodlangan element).
-- Cheklovni qondirish uchun hech qachon ma'lumot to'qib chiqarmang. Soxta tug'ilgan sana yoki qalbaki identifikator qayd etilgan yo'qlikdan ham yomonroq.
+- Qiymat shunchaki mavjud emas - elementni yubormang. Bo'sh satr yoki o'rinbosar qiymat yubormang. Bunga har qanday ixtiyoriy (`0..`) element, jumladan ixtiyoriy Must Support elementlari uchun ruxsat etiladi.
+- Element majburiy, ammo qiymat haqiqatan ham noma'lum - `1..` karralilikka ega elementni tashlab ketib bo'lmaydi. Shu sababli resursda belgilangan "unknown" mexanizmidan foydalaning: elementga `data-absent-reason` kengaytmasini qo'shing ([misol](Patient-example-unidentified-patient.html)) yoki bog'langan ValueSet tarkibida shunday qiymat mavjud bo'lsa, unknown kodidan foydalaning (masalan, unknown kodini o'z ichiga olgan ValueSet'ga bog'langan kodlangan element uchun `unknown`).
+- Cheklovni bajarish uchun hech qachon ma'lumot o'ylab topmang. Soxta tug'ilgan sana yoki soxta identifikator ma'lumot yo'qligini qayd etishdan yomonroq.
 
-Ba'zi profillar aniq `data-absent-reason` slotini qo'shadi - masalan [UZ Core Patient](StructureDefinition-uz-core-patient.html) hatto identifikator ham mavjud bo'lmagan kamdan-kam holatlar uchun identifikatorning `value` qiymatida `data-absent-reason` kengaytmasiga ruxsat beradi.
+Ayrim profillarda `data-absent-reason` uchun alohida joy mavjud. Masalan, [UZ Core Patient](StructureDefinition-uz-core-patient.html) profilida hatto identifikator mavjud bo'lmagan kam uchraydigan holatlar uchun identifier elementining `value` qismiga `data-absent-reason` kengaytmasini qo'shishga ruxsat beriladi.
 
-Bu <span style="padding-left: 3px; padding-right: 3px; color: white; background-color: #D50000" title="This element must be supported">S</span> bayrog'i bilan qanday o'zaro ta'sir qilishini bilish uchun [Must Support](must-support.html)ga qarang.
+[Must Support](must-support.html) bo'limida buning <span style="padding-left: 3px; padding-right: 3px; color: white; background-color: #D50000" title="This element must be supported">S</span> belgisi bilan qanday bog'liqligi bayon qilingan.
 
-### Birliklar va miqdorlar
+### O'lchov birliklari va miqdorlar
 
-Sonli o'lchovlar birlik kodi uchun UCUM (`http://unitsofmeasure.org`)dan foydalanadi:
+Raqamli o'lchovlarda o'lchov birligi kodi uchun UCUM (`http://unitsofmeasure.org`) ishlatiladi:
 
 ```json
 {
@@ -49,17 +47,17 @@ Sonli o'lchovlar birlik kodi uchun UCUM (`http://unitsofmeasure.org`)dan foydala
 }
 ```
 
-- `system` va `code`ni har doim faqat insonga mo'ljallangan `unit` satri bilan emas, balki mashina o'qiy oladigan UCUM kodi bilan to'ldiring.
-- Agar natija birliksiz xabar qilinsa (o'lchamsiz son, titr, nisbat), baribir `value`ni yuboring; faqat haqiqatan ham UCUM birligi bo'lmaganda `code`/`system`ni tushirib qoldiring.
-- Mos yozuvlar diapazonlari va talqin bayroqlari (normal / yuqori / past / kritik) mos ravishda `Observation.referenceRange` va `Observation.interpretation`ga tegishli.
+- `system` va `code` elementlarini faqat inson o'qishi uchun mo'ljallangan `unit` satri bilan cheklamasdan, mashina o'qiy oladigan UCUM kodi bilan doimo to'ldiring.
+- Natija o'lchov birligisiz (o'lchovsiz sanoq qiymati, titr yoki nisbat) berilgan bo'lsa ham, `value` elementini yuboring; `code`/`system` faqat haqiqatan ham UCUM birligi mavjud bo'lmaganda tashlab ketiladi.
+- Referens diapazonlar va interpretatsiya belgilari (normal / high / low / critical) mos ravishda `Observation.referenceRange` va `Observation.interpretation` elementlarida beriladi.
 
 ### Manzillar {#addresses}
 
-Manzillar bir nechta resurslarda (Patient, Practitioner, Organization, Location) uchraydi. UZ Core ham O'zbekiston, ham xalqaro manzillarni qo'llab-quvvatlaydi.
+Manzillar bir nechta resurslarda (Patient, Practitioner, Organization, Location) qo'llanadi. UZ Core O'zbekistondagi va xalqaro manzillarni qo'llab-quvvatlaydi.
 
-#### O'zbekiston manzili
+#### O'zbekistondagi manzil
 
-Ma'muriy bo'linmalar uchun rasmiy reestrlardan **kodlangan qiymatlar**dan foydalaning. Platforma viloyat, tuman va shahar kodlari Raqamli aholini boshqarish (DPM) tizimidagi kodlarga mos kelishini tekshiradi:
+Ma'muriy-hududiy birliklar uchun rasmiy registrlardagi **kodlangan qiymatlardan** foydalaning. Platforma viloyat, tuman va shahar qiymatlari Aholini raqamli boshqarish (DPM) tizimidagi kodlarga mos kelishini tekshiradi:
 
 ```jsonc
 {
@@ -78,7 +76,7 @@ Ma'muriy bo'linmalar uchun rasmiy reestrlardan **kodlangan qiymatlar**dan foydal
 
 #### Xalqaro manzil
 
-O'zbekistondan tashqaridagi manzillar uchun ma'muriy bo'linmalar majburiy qiymatlar to'plamlarisiz erkin matn bo'lib, bu xorijiy manzil tuzilmalarini moslashuvchan tarzda ifodalashga imkon beradi:
+O'zbekistondan tashqaridagi manzillarda ma'muriy-hududiy birliklar erkin matn ko'rinishida beriladi va majburiy ValueSet talab qilinmaydi. Bu xorijiy manzil tuzilmalarini moslashuvchan ifodalash imkonini beradi:
 
 ```jsonc
 {
@@ -95,11 +93,11 @@ O'zbekistondan tashqaridagi manzillar uchun ma'muriy bo'linmalar majburiy qiymat
 }
 ```
 
-### Terminologiya va ko'p tilli nomlar {#terminology}
+### Terminologiya va ko'p tilli nomlanishlar {#terminology}
 
-- Bog'langan qiymatlar to'plamidan [bog'lanish kuchi](how-to-read.html#terminology-bindings)ga ko'ra kodlardan foydalaning.
-- Nomlar (o'zbekcha / ruscha / inglizcha ko'rsatuv nomlari) faqat taqdim etish uchun mo'ljallangan - ma'noni `code` ifodalaydi. UZ CodeSystemlar va HL7 terminologiya supplementlari bu ko'p tilli nomlarni qanday taqdim etishini bilish uchun [FHIR asoslari](fhir-basics.html#terminology)ga qarang.
-- Kodlarni platforma terminologiya serverida standart `$validate-code` amaliyoti bilan tekshirish mumkin:
+- Bog'langan ValueSet kodlaridan [bog'lash qat'iyligiga](how-to-read.html#terminology-bindings) muvofiq foydalaning.
+- Nomlanishlar (o'zbekcha / ruscha / inglizcha ko'rsatiladigan nomlar) faqat ko'rsatish uchun ishlatiladi; ma'noni `code` elementi ifodalaydi. [FHIR asoslari](fhir-basics.html#terminology) bo'limida UZ CodeSystem'lari va HL7 terminologiya qo'shimchalari bu ko'p tilli nomlanishlarni qanday taqdim etishi bayon qilingan.
+- Kodlarni Platformaning terminologiya serverida standart `$validate-code` operatsiyasi yordamida tekshirish mumkin:
 
 ```
 POST [base]/ValueSet/$validate-code
@@ -110,31 +108,31 @@ POST [base]/ValueSet/$validate-code
     { "name": "code", "valueCode": "E11" } ] }
 ```
 
-Identifikator (terminologiya emas) tizimlari uchun [Identifikator tizimlari](identifiers.html)ga qarang.
+[Identifikator tizimlari](identifiers.html) bo'limida terminologiya tizimlari emas, aynan identifikator tizimlari haqida ma'lumot berilgan.
 
-### Bundlelar: hujjat, tranzaksiya yoki searchset
+### Bundle'lar: document, transaction va searchset
 
-`Bundle.type`ni qilayotgan ishingizga qarab tanlang:
+Amalga oshirayotgan vazifangizga qarab `Bundle.type` qiymatini tanlang:
 
-| `Bundle.type` | Qachon ishlatiladi |
+| `Bundle.type` | Qaysi holatda ishlatiladi |
 |---------------|-----------|
-| **transaction** | Bir nechta o'zaro bog'liq resurslarni bitta atomik birlik sifatida yuborish (hammasi muvaffaqiyatli yoki hammasi muvaffaqiyatsiz) - masalan, laboratoriya natijalari to'plami (`ServiceRequest` + `Specimen` + `Observation` + `DiagnosticReport`). |
-| **batch** | Bir nechta mustaqil amallarni atomiklikka talab qilmasdan birga yuborish. |
-| **document** | Yakunlangan, yuridik ahamiyatga ega klinik hujjat - sarlavha sifatidagi `Composition` va undan keyin havola qilingan klinik resurslar. Tashxis xulosalari, sertifikatlar, imzolangan hisobotlar uchun ishlatiladi. |
-| **searchset** | Qidiruvga javoban server tomonidan qaytariladi. Siz ularni iste'mol qilasiz; ularni yaratmaysiz. |
+| **transaction** | Bir-biriga bog'liq bir nechta resursni bitta atomar birlik sifatida yuborish (barchasi muvaffaqiyatli bajariladi yoki hech biri bajarilmaydi), masalan, laboratoriya natijalari to'plami (`ServiceRequest` + `Specimen` + `Observation` + `DiagnosticReport`). |
+| **batch** | Bir nechta mustaqil operatsiyani atomarlik talab qilinmasdan birgalikda yuborish. |
+| **document** | Yuridik ahamiyatga ega yakuniy klinik hujjat: sarlavha sifatidagi `Composition` va undan keyin unga Reference orqali bog'langan klinik resurslar. Shifoxonadan chiqarish xulosalari, ma'lumotnomalar va imzolangan hisobotlar uchun ishlatiladi. |
+| **searchset** | Server qidiruvga javoban qaytaradi. Siz bunday Bundle'larni qabul qilib qayta ishlaysiz, lekin yaratmaysiz. |
 
-Bir nechta resurs o'zaro bog'liq bo'lganda, ularni alohida muvofiqlashtirilmagan chaqiruvlar sifatida emas, balki Bundle ichida birga uzating. Aniq tranzaksiya va hujjat Bundle misollari uchun [Ish jarayonlari](workflows.html)ga qarang.
+Bir nechta resurs o'zaro bog'liq bo'lsa, ularni muvofiqlashtirilmagan alohida chaqiruvlar orqali emas, bitta Bundle tarkibida birgalikda yuboring. [Ish jarayonlari](workflows.html) bo'limida transaction va document turidagi Bundle'larning aniq misollari keltirilgan.
 
 ### Yaratish, yangilash va o'chirish
 
-- Platforma standart REST o'zaro ta'sirlarini qo'llab-quvvatlaydi: `GET` (o'qish/qidirish), `POST` (yaratish), `PUT` (yangilash), `PATCH` (qisman yangilash) va `DELETE`. Har bir resurs uchun aniq o'zaro ta'sirlar [CapabilityStatement](CapabilityStatement-DHPCapabilityStatement.html)da e'lon qilinadi.
-- Mantiqiy o'chirish, fizik o'chirish emas. Klinik ma'lumotlar resursni o'chirish orqali olib tashlanmaydi. Yozuvni faolsizlantirish uchun uning holatini o'zgartiring: holatga qarab `entered-in-error`, `inactive`, `revoked` yoki resurs uchun ekvivalentini o'rnating. Masalan, bekor qilingan `Goal` `cancelled`/`completed`ga, bekor qilingan `Consent` `inactive`ga, xato klinik yozuv `entered-in-error`ga o'rnatiladi. Resurs va uning tarixi so'rov qilinishi mumkin bo'lib qoladi.
-- Bir vaqtdalik (concurrency). Yangilashlar optimistik bloklashdan foydalanadi. Oxirgi o'qishingizdan `ETag`ni saqlang va yangilashda uni `If-Match` sifatida qaytaring; agar siz o'qiganingizdan beri kimdir resursni o'zgartirgan bo'lsa, versiya endi mos kelmaydi va server `412 Precondition Failed` ("Version is mismatch") bilan javob beradi. Qayta o'qing va qaytadan urinib ko'ring - [Bir vaqtdalik](api-access.html#concurrency)ka qarang.
-- Idempotentlik. Qayta urinishda takrorlanmasligi kerak bo'lgan ish jarayoni va moliyaviy amallar uchun shartli yaratish/yangilashdan foydalaning, shunda qayta yuborilgan so'rov ikkinchi resursni yaratmaydi.
+- Platforma standart REST amallarini qo'llab-quvvatlaydi: `GET` (o'qish/qidirish), `POST` (yaratish), `PUT` (yangilash), `PATCH` (qisman yangilash) va `DELETE`. Har bir resurs uchun aniq amallar [CapabilityStatement](CapabilityStatement-DHPCapabilityStatement.html)'da ko'rsatilgan.
+- Mantiqiy o'chirish, jismoniy o'chirish emas. Resursni o'chirish orqali klinik ma'lumotlar yo'q qilinmaydi. Yozuvdan foydalanishni to'xtatish uchun uning holatini o'zgartiring: holatga qarab `entered-in-error`, `inactive`, `revoked` yoki ushbu resurs uchun mos boshqa qiymatni belgilang. Masalan, qaytarib olingan `Goal` `cancelled`/`completed` holatiga o'tkaziladi, qaytarib olingan `Consent` uchun `inactive` belgilanadi, xato klinik yozuv uchun esa `entered-in-error` belgilanadi. Resurs va uning tarixi bo'yicha so'rov yuborish imkoniyati saqlanib qoladi.
+- Parallel yangilash. Yangilashlarda optimistik bloklash qo'llanadi. Oxirgi o'qishdan olingan `ETag` qiymatini saqlang va yangilash so'rovida `If-Match` sifatida qayta yuboring; agar resurs siz uni o'qigandan keyin boshqa mijoz tomonidan o'zgartirilgan bo'lsa, versiyalar endi mos kelmaydi va server `412 Precondition Failed` ("Version is mismatch") javobini qaytaradi. Resursni qayta o'qing va so'rovni takrorlang - [Parallel yangilash](api-access.html#concurrency) bo'limiga qarang.
+- Idempotentlik. Qayta yuborilganda takrorlanmasligi kerak bo'lgan ish jarayoni va moliyaviy operatsiyalar uchun shartli yaratish/yangilashdan foydalaning. Shunda qayta yuborilgan so'rov ikkinchi resursni yaratmaydi.
 
 ### Xatolar {#errors}
 
-So'rov muvaffaqiyatsiz bo'lganda - validatsiya, avtorizatsiya, ziddiyat - server jiddiylik darajasi, kod va insonga o'qish mumkin bo'lgan diagnostika bilan `OperationOutcome` qaytaradi:
+So'rov validatsiya, avtorizatsiya yoki ziddiyat tufayli muvaffaqiyatsiz tugasa, server jiddiylik darajasi, kod va inson o'qishi uchun mo'ljallangan diagnostika matnini o'z ichiga olgan `OperationOutcome` qaytaradi:
 
 ```json
 {
@@ -148,10 +146,10 @@ So'rov muvaffaqiyatsiz bo'lganda - validatsiya, avtorizatsiya, ziddiyat - server
 }
 ```
 
-Siz ko'radigan keng tarqalgan kodlar: `required`/`value`/`invariant` (resurs profil validatsiyasidan o'tmadi), `code-invalid` (kod bog'langan qiymatlar to'plamida yo'q), `forbidden` (avtorizatsiya/rozilik so'rovni rad etdi - kirishni boshqarish bo'yicha qo'llanmaga qarang) va `invalid` kodli `412` (`If-Match` versiya ziddiyati - [Bir vaqtdalik](api-access.html#concurrency)ka qarang). Muammoli elementni topish uchun `diagnostics` va `expression`ni o'qing.
+Ko'p uchraydigan kodlar: `required`/`value`/`invariant` (resurs profil bo'yicha validatsiyadan o'tmadi), `code-invalid` (kod bog'langan ValueSet tarkibida mavjud emas), `forbidden` (avtorizatsiya yoki rozilik tekshiruvi tufayli so'rov rad etildi - kirishni boshqarish bo'yicha tavsiyalarga qarang), shuningdek `412` javobi (code = `invalid`; `If-Match` versiyalari ziddiyati - [Parallel yangilash](api-access.html#concurrency)). Xatoga sabab bo'lgan elementni aniqlash uchun `diagnostics` va `expression` elementlarini o'qing.
 
-### Keyin qayerga borish
+### Keyingi qadamlar
 
-- [Ushbu qo'llanmani qanday o'qish kerak](how-to-read.html) va [Must Support](must-support.html) - konvensiyalar.
-- [Ish jarayonlari](workflows.html) - haqiqiy Bundlelar bilan boshdan-oxir stsenariylar.
-- [Identifikator tizimlari](identifiers.html) - identifikator tizimi URI manzillari.
+- [Ushbu qo'llanmadan qanday foydalanish](how-to-read.html) va [Must Support](must-support.html) - qo'llanmada qabul qilingan qoidalar.
+- [Ish jarayonlari](workflows.html) - haqiqiy Bundle'lar bilan boshidan oxirigacha ko'rsatilgan ssenariylar.
+- [Identifikator tizimlari](identifiers.html) - identifikator tizimlarining URI'lari.

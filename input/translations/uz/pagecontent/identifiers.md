@@ -244,6 +244,8 @@ Tashkilotlar Davlat soliq qo'mitasi tomonidan beriladigan soliq identifikatsiya 
 
 O'zbekiston Respublikasi Davlat tibbiy sug'urta jamg'armasi (DTSJ) bilan shartnoma asosida ishlovchi tibbiy tashkilotlar o'zlarining DTSJ kodi orqali identifikatsiyalanadi. Kod `^[A-Z]{3}[0-9]{6}$` namunasiga amal qiladi — 3 ta bosh harf, undan keyin 6 ta raqam (masalan, `OAA000024`).
 
+DTSJ kodi — bu Fond (biriktiruvchi organ) tomonidan shartnoma asosidagi har bir tashkilotga Fondning identifikatorlar fazosida beriladigan provayder raqami (HL7 v2-0203 `PRN`). U Fondning o'zini emas, balki shartnoma asosidagi provayderni identifikatsiyalaydi: Fond to'lovchi sifatida o'zining soliq identifikatori (Soliq) orqali identifikatsiyalanadi. Bu O'zbekistonda sug'urtalovchilar tomonidan beriladigan provayder identifikatorlarining umumiy modeliga mos keladi, bunda har bir to'lovchi o'z fazosida provayder raqamlarini beradi.
+
 **System URI**: `https://dhp.uz/fhir/core/sid/org/uz/shif`
 
 ```json
@@ -256,8 +258,8 @@ O'zbekiston Respublikasi Davlat tibbiy sug'urta jamg'armasi (DTSJ) bilan shartno
         "coding": [
           {
             "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
-            "code": "NIIP",
-            "display": "National Insurance Payor Identifier (Payor)"
+            "code": "PRN",
+            "display": "Provider number"
           }
         ]
       },

@@ -14,9 +14,9 @@ Ushbu profil qo'shadigan yagona majburiy element - bu o'zbek tilidagi nom - rusc
 
 
 
-- identifikator - Soliq soliq identifikatori slaysi, Argos tashkilot identifikatori slaysi va SHIF/SMIF sug'urta to'lovchisi identifikatori slaysi (`OAA000024` kabi 3 ta harf + 6 ta raqamdan iborat kod). Qo'llab-quvvatlanadigan tizim URI lari uchun [Identifikator tizimlari](identifiers.html) ga qarang;
+- identifikator - Soliq soliq identifikatori slaysi, Argos tashkilot identifikatori slaysi va SHIF/SMIF provayder identifikatori slaysi (`OAA000024` kabi 3 ta harf + 6 ta raqamdan iborat kod). Qo'llab-quvvatlanadigan tizim URI lari uchun [Identifikator tizimlari](identifiers.html) ga qarang;
 - active belgisi;
-- type - milliy kod tizimlaridan olingan bir nechta kodlangan tasniflash slayslari (tashkilot turi, bo'ysunish guruhi, nomenklatura guruhi, tashkiliy tuzilma, xizmat guruhi, ixtisoslashuv, yuridik maqomsiz va guruhlash);
+- type - milliy kod tizimlaridan olingan bir nechta kodlangan tasniflash slayslari (bo'ysunish guruhi, nomenklatura guruhi, tashkiliy tuzilma, xizmat guruhi, ixtisoslashuv va guruhlash);
 - milliy qamrov-hududi kengaytmasi (xizmat ko'rsatiladigan geografik hudud);
 - aloqa ma'lumotlari;
 - ota-ona tashkilotga partOf havolasi (ierarxiya aloqasi);
@@ -35,6 +35,7 @@ Quyidagi misollar serverning qabul qila oladigan eng kichik nusxasidan to to'liq
 ```json
 {
   "resourceType": "Organization",
+  "language": "uz",
   "meta": {
     "profile": ["https://dhp.uz/fhir/core/StructureDefinition/uz-core-organization"]
   },
@@ -60,6 +61,7 @@ O'zbekcha `name` vakolatlidir; ruscha va qoraqalpoqcha nomlar uning yonida `_nam
 ```json
 {
   "resourceType": "Organization",
+  "language": "uz",
   "meta": {
     "profile": ["https://dhp.uz/fhir/core/StructureDefinition/uz-core-organization"]
   },
@@ -93,6 +95,7 @@ Amaliyotda siz to'liq manzarani yuborasiz: tashkilot egalik qiladigan har bir id
 ```json
 {
   "resourceType": "Organization",
+  "language": "uz",
   "meta": { "profile": [ "https://dhp.uz/fhir/core/StructureDefinition/uz-core-organization" ] },
   "active": true,
   "name": "Respublika onkologiya markazi",
@@ -131,8 +134,8 @@ Amaliyotda siz to'liq manzarani yuborasiz: tashkilot egalik qiladigan har bir id
         "coding": [
           {
             "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
-            "code": "NIIP",
-            "display": "National Insurance Payor Identifier (Payor)"
+            "code": "PRN",
+            "display": "Provider number"
           }
         ]
       },
@@ -145,11 +148,6 @@ Amaliyotda siz to'liq manzarani yuborasiz: tashkilot egalik qiladigan har bir id
     {
       "coding": [
         {
-          "system": "https://terminology.dhp.uz/fhir/core/CodeSystem/organization-types-uz-cs",
-          "code": "I",
-          "display": "Boshqaruv boyicha taqsimlanishi"
-        },
-        {
           "system": "https://terminology.dhp.uz/fhir/core/CodeSystem/organizational-subordination-group-cs",
           "code": "I_1",
           "display": "Respublika tassarufidagi muassasalari"
@@ -160,14 +158,19 @@ Amaliyotda siz to'liq manzarani yuborasiz: tashkilot egalik qiladigan har bir id
           "display": "Shifoxona muassasalari"
         },
         {
+          "system": "https://terminology.dhp.uz/fhir/core/CodeSystem/organizational-service-group-cs",
+          "code": "III_100",
+          "display": "Poliklinika bo'limi va statsionar bo'limi mavjud"
+        },
+        {
           "system": "https://terminology.dhp.uz/fhir/core/CodeSystem/organizational-structure-cs",
           "code": "110",
           "display": "Ixtisoslashtirilgan ilmiy-amaliy tibbiyot markazi"
         },
         {
-          "system": "https://terminology.dhp.uz/fhir/core/CodeSystem/organizational-service-group-cs",
-          "code": "III_100",
-          "display": "Poliklinika bo'limi va statsionar bo'limi mavjud"
+          "system": "https://terminology.dhp.uz/fhir/core/CodeSystem/organization-grouping-uz-cs",
+          "code": "164",
+          "display": "Ixtisoslashtirilgan ona va bola salomatligi ilmiy-amaliy tibbiyot markazi"
         },
         {
           "system": "https://terminology.dhp.uz/fhir/core/CodeSystem/organizational-specialization-cs",
@@ -205,7 +208,7 @@ Tashkilot uchtagacha identifikatorga ega bo'lishi mumkin; faqat sizda mavjudlari
 |---|---|---|
 | Soliq soliq identifikatori | `https://dhp.uz/fhir/core/sid/org/uz/soliq` | `TAX` |
 | Argos tashkilot identifikatori | `https://dhp.uz/fhir/core/sid/org/uz/argos` | `XX` |
-| SHIF sug'urta to'lovchisi identifikatori | `https://dhp.uz/fhir/core/sid/org/uz/shif` | `NIIP` |
+| SHIF provayder identifikatori | `https://dhp.uz/fhir/core/sid/org/uz/shif` | `PRN` |
 
 SHIF identifikatori qiymati 3 ta bosh harfli lotin harfi va undan keyin 6 ta raqamdan iborat bo'lishi shart (masalan `OAA000024`). Qo'llab-quvvatlanadigan tizim URI larining to'liq ro'yxati uchun [Identifikator tizimlari](identifiers.html) ga qarang.
 
@@ -216,6 +219,7 @@ Tashkilot belgilangan geografik hududga xizmat ko'rsatganda, resursning ildiziga
 ```json
 {
   "resourceType": "Organization",
+  "language": "uz",
   "meta": {
     "profile": ["https://dhp.uz/fhir/core/StructureDefinition/uz-core-organization"]
   },

@@ -72,6 +72,8 @@ pages:
     title: Must Support
   identifiers.md:
     title: Identifier systems
+  payor-identification.md:
+    title: Payor identification
   vital-signs.md:
     title: Vital signs
   workflows.md:
@@ -146,6 +148,7 @@ menu:
     General guidance: general-guidance.html
     Must Support: must-support.html
     Identifiers: identifiers.html
+    Payors: payor-identification.html
     Vital signs: vital-signs.html
   Workflows: workflows.html
   API access: api-access.html

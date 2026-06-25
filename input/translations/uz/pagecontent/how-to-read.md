@@ -1,68 +1,66 @@
-> **Mashina tarjimasi, inson tomonidan tekshirilishi zarur.** Ushbu sahifa ingliz tilidan sun'iy intellekt yordamida avtomatik tarjima qilingan va hali muharrir tomonidan tekshirilmagan. Har qanday nomuvofiqlikda asl inglizcha versiya ustuvor hisoblanadi.
+Ushbu sahifada UZ Core profillari bilan qanday ishlash kerakligi tushuntiriladi. Bu sizga "menda klinik vazifa bor" degan nuqtadan "mana kerakli resurs va menga kerak bo'lgan maydonlar" degan nuqtaga o'tishga yordam beradi. Implementatsiyani boshlashdan oldin ushbu sahifa bilan bir marta tanishib chiqing - unda har bir profil sahifasida qo'llaniladigan kelishuvlar tushuntirilgan.
 
-Ushbu sahifada UZ Core profillarini qanday o'qish kerakligi tushuntiriladi, shunda siz "menda klinik vazifa bor" holatidan "mana bu resurs va menga kerakli maydonlar shular" holatiga o'tishingiz mumkin. Implementatsiyani boshlashdan oldin uni bir marta o'qib chiqing - unda har bir profil sahifasida ishlatiladigan konvensiyalar tushuntirilgan.
-
-Agar siz FHIR bilan umuman tanish bo'lmasangiz, avval [FHIR asoslari](fhir-basics.html) bilan boshlang, so'ng bu yerga qayting.
+Agar FHIR bilan endi tanishayotgan bo'lsangiz, avval [FHIR asoslari](fhir-basics.html) bilan tanishishdan boshlang, keyin ushbu sahifaga qayting.
 
 ### Profil nima
 
-UZ Core yangi ma'lumot tuzilmalarini ixtiro qilmaydi. Har bir UZ Core profili standart FHIR R5 resursini (masalan, `Patient` yoki `Observation`) oladi va uning ustiga milliy qoidalarni qo'shadi: qaysi elementlar majburiy, qaysilari qo'llab-quvvatlanishi kerak, qaysi milliy identifikator tizimlari va terminologiyalardan foydalanish kerak hamda O'zbekistonga xos qaysi kengaytmalar qo'llaniladi. UZ Core profiliga muvofiq bo'lgan FHIR resursi shu bilan birga to'g'ri asosiy FHIR resursi hamdir.
+UZ Core yangi ma'lumotlar tuzilmalarini yaratmaydi. Har bir UZ Core profili standart FHIR R5 resursini (masalan, `Patient` yoki `Observation`) oladi va uning ustiga milliy qoidalarni qo'shadi: qaysi elementlar majburiy, qaysi elementlar qo'llab-quvvatlanishi shart, qaysi milliy identifikator tizimlari va terminologiyalardan foydalanish kerak, shuningdek, O'zbekistonga xos qaysi kengaytmalar qo'llaniladi. UZ Core profiliga mos keladigan FHIR resursi bazaviy FHIR resursi sifatida ham valid hisoblanadi.
 
-Profillar faqat qoidalar qo'shgani sababli, profil sahifasi asosan asosiy FHIR'dan *farqli* nima ekanligini - nimani to'ldirishingiz kerakligini va nimani qayta ishlay olishingiz kerakligini ko'rsatadi. Qolgan hammasi [asosiy FHIR R5 spetsifikatsiyasi](https://hl7.org/fhir/R5/)dagi kabi aniq ishlaydi.
+Profillar faqat qoidalarni qo'shgani sababli, profil sahifasi asosan profil bazaviy FHIR'dan nimasi bilan farq qilishini ko'rsatadi: qaysi elementlarni to'ldirish kerak va qaysi ma'lumotlarni qayta ishlay olishingiz kerak. Qolgan barcha jihatlar [bazaviy FHIR R5 spetsifikatsiyasida](https://hl7.org/fhir/R5/) qanday ishlasa, xuddi shunday ishlaydi.
 
 ### Profil sahifasidagi to'rtta ko'rinish
 
-Har bir profil sahifasi (masalan, [UZ Core Patient](StructureDefinition-uz-core-patient.html)) element jadvali ustida bir xil yorliqlar to'plamini ko'rsatadi:
+Har bir profil sahifasida (masalan, [UZ Core Patient](StructureDefinition-uz-core-patient.html)) elementlar jadvali ustida profilning turli ko'rinishlarini tanlash imkonini beruvchi bir xil bo'limlar joylashgan:
 
-| Ko'rinish | Nimani ko'rsatadi | Qachon ishlatish kerak |
+| Ko'rinish | Nimalarni ko'rsatadi | Qachon foydalaniladi |
 |------|---------------|----------------|
-| **Key Elements** | Cheklangan, qo'llab-quvvatlanishi shart va majburiy elementlar - tanlab olingan qisqa ro'yxat | Shu yerdan boshlang. Bu "menga aslida nima kerak" ko'rinishi. |
-| **Differential** | Faqat UZ Core asosiy FHIR'ga nisbatan o'zgartirgan narsalar | Milliy qoidalarni bir qarashda ko'rish uchun. |
-| **Snapshot** | Resursning har bir elementi, asosiy + profil | Boshqa joyda ko'rmagan elementning to'liq tasvirini olish kerak bo'lganda. |
-| **All** | Hamma narsa, jumladan, xaritalashlar va cheklovlar | Ma'lumotnoma. |
+| **Key Elements (asosiy elementlar)** | Cheklov qo'yilgan, Must Support va majburiy elementlar - saralangan qisqa ro'yxat | Shu ko'rinishdan boshlang. U "Menga aslida nimalar kerak?" degan savolga javob beradi. |
+| **Differential (bazaviy FHIR'dan farqlar)** | Faqat UZ Core bazaviy FHIR'ga nisbatan kiritgan o'zgarishlar | Milliy qoidalarni bir qarashda ko'rish uchun. |
+| **Snapshot (to'liq tuzilma)** | Resursning barcha elementlari: bazaviy resurs + profil | Boshqa ko'rinishlarda ko'rsatilmagan element haqida to'liq ma'lumot kerak bo'lganda. |
+| **All (barchasi)** | Barcha ma'lumotlar, jumladan, mosliklar va cheklovlar | Ma'lumotnoma sifatida. |
 
-Ko'pchilik implementatsiya ishlari uchun Key Elements ko'rinishi hamda ushbu sahifa va profil sahifasidagi bayon sizga kifoya qiladi.
+Implementatsiya bilan bog'liq aksariyat vazifalar uchun Key Elements ko'rinishi hamda ushbu sahifa va profil sahifasidagi tushuntiruvchi matn yetarli bo'ladi.
 
-### Element jadvalini o'qish
+### Elementlar jadvali bilan ishlash
 
-Jadvaldagi har bir qator bitta elementni (maydonni) bildiradi. Ustunlar quyidagilar:
+Jadvaldagi har bir satr bitta elementga (maydonga) mos keladi. Ustunlar:
 
-- Name - element yo'li, masalan, `Patient.identifier` yoki `Observation.value[x]`. Chekinish ichma-ichlikni ko'rsatadi.
-- Flags - eng muhim qoidalarni tashuvchi qisqa belgilar:
+- Nomi - element yo'li, masalan, `Patient.identifier` yoki `Observation.value[x]`. Chekinishlar elementlarning ichma-ich joylashuvini ko'rsatadi.
+- Belgilar - eng muhim qoidalarni ifodalovchi qisqa belgilar:
 
-  | Bayroq | Ma'nosi | Sizning uchun nimani anglatadi |
+  | Belgi | Ma'nosi | Siz uchun nimani anglatadi |
   |------|---------|------------------------|
-  | **S** | Must Support | Ma'lumot bo'lganda buni to'ldira olishingiz va qabul qilganingizda qayta ishlay olishingiz kerak. [Must Support](must-support.html)ga qarang. |
-  | **?!** | Modifikator element | Bu element/kengaytma resursning ma'nosini o'zgartiradi (masalan, `status = entered-in-error`). Ilovalar ushbu element/kengaytmani qayta ishlashi shart va uni e'tiborsiz qoldirishga ruxsat etilmaydi. |
-  | **&Sigma;** | Xulosa elementi | Qidiruv xulosalarida qaytariladi. |
-  | **C** | Cheklovga ega | Invariant qo'llaniladi - element ustiga kursorni olib boring yoki Constraints bo'limini o'qing. |
-  | **I** | Invariant | Ma'lumot qondirishi kerak bo'lgan rasmiy qoida (FHIRPath). |
+  | **S** | Must Support | Agar ma'lumot mavjud bo'lsa, ushbu elementni to'ldira olishingiz va uni qabul qilganingizda qayta ishlay olishingiz kerak. [Must Support](must-support.html) bo'limiga qarang. |
+  | **?!** | Modifikator element | Ushbu element/kengaytma resursning ma'nosini o'zgartiradi (masalan, `status = entered-in-error`). Ilovalar ushbu element/kengaytmani qayta ishlashi shart va uni e'tiborsiz qoldirishi mumkin emas. |
+  | **&Sigma;** | Qisqa ko'rinish elementi | Qidiruv natijalarining qisqa ko'rinishida qaytariladi. |
+  | **C** | Cheklov mavjud | Elementga invariant, ya'ni majburiy formal qoida qo'llaniladi. Batafsil ma'lumot uchun kursorni element ustiga olib boring yoki "Cheklovlar" bo'limini ko'ring. |
+  | **I** | Invariant | Ma'lumotlar mos kelishi shart bo'lgan FHIRPath asosidagi formal qoida. |
 
-- Cardinality - element necha marta paydo bo'lishi mumkinligi:
+- Karralilik - element necha marta ko'rsatilishi mumkinligini belgilaydi:
 
-  | Cardinality | Ma'nosi |
+  | Karralilik | Ma'nosi |
   |-------------|---------|
-  | `1..1` | Majburiy, aniq bitta. Siz uni *yuborishingiz shart*. |
+  | `1..1` | Majburiy, aynan bitta. Shartli ravishda yuboriladi. |
   | `1..*` | Majburiy, kamida bitta. |
   | `0..1` | Ixtiyoriy, ko'pi bilan bitta. |
   | `0..*` | Ixtiyoriy, istalgan miqdorda. |
 
-  Majburiy (`1..`) elementlar "Must Have" to'plamini tashkil etadi. Must Support (`S`) elementlar "Must Support" to'plamini tashkil etadi. Har bir profil sahifasi yuqorisidagi bayon ikkalasini ham sodda tilda ro'yxatlaydi, shunda siz jadvalni ochib o'qishingiz shart emas.
+  Majburiy (`1..`) elementlar "Must Have" to'plamini tashkil qiladi. Must Support (`S`) elementlari esa "Must Support" to'plamini tashkil qiladi. Har bir profil sahifasining yuqori qismidagi tushuntiruvchi matnda ikkala to'plam ham sodda tilda keltiriladi, shuning uchun jadvalni alohida talqin qilishingiz shart emas.
 
-- Type - ma'lumot turi yoki, havolalar uchun, u qaysi resurs(lar)ga ishora qilishi. `Reference(UZ Core Patient)` kabi havola u ushbu profilga muvofiq bo'lgan resursga ishora qilishi kerakligini anglatadi.
-- Description & Constraints - ta'rif, qiymatlar to'plami bog'lanishi va har qanday belgilangan qiymatlar.
+- Turi - ma'lumot turi yoki references uchun ular qaysi resurs(lar)ga ishora qilishini ko'rsatadi. `Reference(UZ Core Patient)` kabi Reference ushbu profilga mos keladigan resursga ishora qilishi kerakligini anglatadi.
+- Tavsif va cheklovlar - ta'rif, ValueSet'ga terminologik bog'lash va qat'iy belgilangan qiymatlar.
 
 ### References va CodeableReferences
 
-Ikki xil tur boshqa resurslarga ishora qiladi va ular JSON'da turlicha ichma-ich joylashadi.
+Ikki xil tur boshqa resurslarga ishora qiladi va JSON tuzilmasida turlicha ichma-ich joylashadi.
 
-Oddiy **`Reference`** faqat boshqa resursga ishora qiladi. Ko'rsatkich `reference` kaliti ostidagi satr (string)dir:
+Oddiy **`Reference`** faqat boshqa resursga ishora qiladi. Ko'rsatkich `reference` kaliti ostida satr ko'rinishida beriladi:
 
 ```json
 "patient": { "reference": "Patient/example" }
 ```
 
-**`CodeableReference`** - bu FHIR R5 turi bo'lib, bir xil maydonda *yo* kodlangan tushunchani *yo* resursga havolani (yoki ikkalasini ham) tashishi mumkin - shu sababli `Immunization.reason` kabi maydon "ushbu kodlangan sabab tufayli" yoki "ushbu Condition resursi tufayli" deyishi mumkin. U resursga ishora qilganda, havola bir daraja chuqurroqda, `reference` obyekti ichida ichma-ich joylashadi:
+**`CodeableReference`** - bu FHIR R5 turi bo'lib, bitta maydonda kodlangan tushunchani, resursga reference'ni yoki ikkalasini birgalikda saqlashi mumkin. Shu sababli `Immunization.reason` kabi maydon "ushbu kodlangan sabab tufayli" yoki "ushbu Condition resursi tufayli" degan ma'noni ifodalashi mumkin. CodeableReference resursga ishora qilganda, reference bir pog'ona chuqurroq - `reference` obyekti ichida joylashadi:
 
 ```json
 "reason": [
@@ -70,7 +68,7 @@ Oddiy **`Reference`** faqat boshqa resursga ishora qiladi. Ko'rsatkich `referenc
 ]
 ```
 
-ko'rsatkich o'rniga kod berish uchun esa `concept`'dan foydalaning:
+Ko'rsatkich o'rniga kod berish uchun `concept`'dan foydalaning:
 
 ```json
 "reason": [
@@ -78,21 +76,21 @@ ko'rsatkich o'rniga kod berish uchun esa `concept`'dan foydalaning:
 ]
 ```
 
-Type ustuni sizga qaysi biri bilan ish ko'rayotganingizni aytadi: `Reference(...)` yoki `CodeableReference(...)`. Shubha tug'ilganda, har bir maydonning [asosiy FHIR R5 ta'rifi](https://hl7.org/fhir/R5/references.html) hal qiluvchi hisoblanadi.
+Type ustuni qaysi tur bilan ishlayotganingizni ko'rsatadi: `Reference(...)` yoki `CodeableReference(...)`. Shubha tug'ilganda, har bir maydonning [bazaviy FHIR R5 spetsifikatsiyasidagi](https://hl7.org/fhir/R5/references.html) ta'rifi ustuvor hisoblanadi.
 
-### Slayslar
+### Kesimlar (Slices)
 
-Ba'zi elementlar *slayslangan* (sliced) - bir xil element o'ziga xos qoidalarga ega nomlangan variantlarga bo'linadi. Masalan, `Patient.identifier` `nationalId`, `passportLocal`, `passportForeign` va boshqalarga slayslangan bo'lib, ularning har biri muayyan milliy identifikator tizimiga belgilangan. Jadvalda slayslar element ostida chekintirilgan qatorlar sifatida, slays nomi qavs ichida ko'rsatilgan holda paydo bo'ladi, masalan, `identifier:nationalId`. Ma'lumotingizga mos slaysni to'ldiring; har bir slaysni to'ldirishingiz shart emas.
+Ba'zi elementlar kesimlarga ajratiladi: bir xil element o'z qoidalariga ega nomlangan variantlarga bo'linadi. Masalan, `Patient.identifier` elementi `nationalId`, `passportLocal`, `passportForeign` va boshqa kesimlarga ajratiladi; har bir kesim muayyan milliy identifikator tizimiga qat'iy biriktirilgan. Jadvalda kesimlar tegishli element ostida ichkariga surilgan satrlar ko'rinishida, kesim nomi bilan ko'rsatiladi, masalan, `identifier:nationalId`. Ma'lumotlaringizga mos keladigan kesimni to'ldiring; barcha kesimlarni to'ldirish shart emas.
 
-Bemor, tibbiyot xodimi va tashkilot identifikator slayslarining to'liq to'plami hamda ularning tizim URI'lari uchun [Identifikator tizimlari](identifiers.html)ga qarang.
+Bemorlar, tibbiyot xodimlari va tashkilotlar identifikatorlari kesimlarining to'liq ro'yxati hamda tegishli tizimlarning URI'lari uchun "[Identifikator tizimlari](identifiers.html)" bo'limiga qarang.
 
 ### Kodlangan qiymatlar (CodeableConcept)
 
-Ko'pchilik kodlangan elementlar `CodeableConcept` turidan foydalanadi: nol yoki undan ortiq `coding` yozuvlari hamda ixtiyoriy erkin matnli `text`.
+Kodlangan elementlarning aksariyati `CodeableConcept` turidan foydalanadi: nol yoki undan ortiq `coding` yozuvlari hamda ixtiyoriy erkin matnli `text` maydoni.
 
-- Har bir `coding` CodeSystem'dan olingan `system` + `code` (+ `display`)dir.
-- `text` - tushunchaning yaxlit holdagi inson o'qiy oladigan iborasi - odatda manbadagi asl ifoda. Hech qaysi kod mos kelmaganda yoki aslida nima yozilganini saqlash uchun kod(lar) bilan birga uni keltiring.
-- Siz bir nechta `coding` berishingiz mumkin, lekin bitta CodeableConcept ichidagi har bir coding *bir xil narsani* anglatishi kerak - masalan, SNOMED CT'da va milliy kod tizimida ifodalangan bir xil tushuncha. Ular bitta tushunchaning tarjimalaridir, turli topilmalar ro'yxati emas. Bir nechta alohida tushunchani qayd etish uchun, ularni bittaga jamlash o'rniga, elementni takrorlang (bir nechta CodeableConcept).
+- Har bir `coding` CodeSystem'dan olingan `system` + `code` (+ `display`) dan iborat.
+- `text` - tushunchani to'liq ifodalovchi, inson o'qishi uchun mo'ljallangan ibora; odatda bu manbadagi asl ifoda bo'ladi. Mos kod topilmasa, `text`'ni kiriting. Haqiqatda nima yozilganini saqlab qolish uchun uni kod yoki kodlar bilan birga ham berish mumkin.
+- Agar bir tushuncha bir nechta kodlash tizimida mavjud bo'lsa, bitta `CodeableConcept` ichida bir nechta `coding` ko'rsatishingiz mumkin. Muhimi, ularning barchasi aynan bir xil ma'noni ifodalashi kerak. Masalan, bir klinik tushuncha SNOMED CT kodi va unga mos milliy kod bilan bir vaqtda berilishi mumkin. Biroq turli ma'noga ega bo'lgan tushunchalarni bitta `CodeableConcept` ichiga jamlamang. Agar bir nechta alohida klinik tushunchani qayd etishingiz kerak bo'lsa, har biri uchun alohida `CodeableConcept` yarating yoki elementni takrorlab kiriting.
 
 ```json
 "code": {
@@ -104,7 +102,7 @@ Ko'pchilik kodlangan elementlar `CodeableConcept` turidan foydalanadi: nol yoki 
 }
 ```
 
-Mos kod mavjud bo'lmaganda, faqat `text`'ni keltiring - sizdagi so'zlar, `coding`siz:
+Mos kod mavjud bo'lmasa, faqat `text` maydonini kiriting - mavjud matnni `coding`siz ko'rsating:
 
 ```json
 "code": {
@@ -112,30 +110,30 @@ Mos kod mavjud bo'lmaganda, faqat `text`'ni keltiring - sizdagi so'zlar, `coding
 }
 ```
 
-Elementdagi bog'lanish kuchi (quyida) buning ruxsat etilgan yoki etilmaganligini aytadi: `required` bog'lanish faqat matnli qiymatni rad etadi - kamida bitta `coding` qiymatlar to'plamidan bo'lishi kerak - `extensible`, `preferred` va `example` bog'lanishlar esa mos kod mavjud bo'lmaganda matnga ruxsat beradi.
+Element uchun belgilangan bog'lash qat'iyligi (quyida) bunga ruxsat berilgan yoki berilmaganini ko'rsatadi: `required` bog'lash faqat text'dan iborat qiymatni qabul qilmaydi - kamida bitta `coding` ValueSet'dan olinishi shart. `extensible`, `preferred` va `example` bog'lashlari esa mos kod mavjud bo'lmaganda text'dan foydalanishga ruxsat beradi.
 
-### Terminologiya bog'lanishlari
+### Terminologik bog'lashlar
 
-Element qiymatlar to'plamiga bog'langanda, bog'lanish kuchi uning qanchalik qattiqligini aytadi:
+Element ValueSet'ga bog'langanda, bog'lash qat'iyligi ushbu talabni qanchalik qat'iy bajarish kerakligini ko'rsatadi:
 
-- required - siz qiymatlar to'plamidan kod *ishlatishingiz shart*.
-- extensible - mos kelsa qiymatlar to'plamidan kod ishlating; aks holda boshqa kodni ishlatishingiz mumkin.
-- preferred - qiymatlar to'plami rag'batlantiriladi, lekin majburiy emas.
-- example - faqat tasviriy, istalgan kodni ishlatishni tanlashingiz mumkin.
+- required - ValueSet'dan olingan koddan foydalanish shart.
+- extensible - ValueSet'da mos kod mavjud bo'lsa, undan foydalaning; aks holda boshqa koddan foydalanish mumkin.
+- preferred - ValueSet'dan foydalanish tavsiya etiladi, ammo majburiy emas.
+- example - faqat misol sifatida keltirilgan; istalgan koddan foydalanish mumkin.
 
-UZ Core milliy CodeSystem va ValueSet'larni o'zbek tilida (rus va ingliz tarjimalari bilan) nashr etadi va xalqaro HL7 terminologiyasini o'zbek/rus tarjimalari bilan to'ldiradi. Kodlarni platforma terminologiya serveriga nisbatan tekshirish mumkin - [Umumiy qo'llanma](general-guidance.html#terminology)ga qarang.
+UZ Core milliy CodeSystem va ValueSet'larni o'zbek tilida, rus va ingliz tillaridagi tarjimalari bilan birga e'lon qiladi, shuningdek, xalqaro HL7 terminologiyasini o'zbek va rus tillaridagi tarjimalar bilan to'ldiradi. Kodlarni Platformaning terminologiya serverida tekshirish mumkin - "[Umumiy tavsiyalar](general-guidance.html#terminology)" bo'limiga qarang.
 
-### UZ Core bo'ylab ishlatiladigan konvensiyalar
+### UZ Core doirasida qo'llaniladigan kelishuvlar
 
-- Profillar asosiy FHIR R5 ustiga quriladi va faqat milliy farqni hujjatlashtiradi.
-- Identifikatorlar yagona ierarxik sxemaga amal qiladi (`https://dhp.uz/fhir/core/sid/...`). [Identifikator tizimlari](identifiers.html)ga qarang.
-- Nomlar va boshqa inson o'qiy oladigan matn o'zbek tilini hal qiluvchi til sifatida tashiydi, tarjimalar esa belgilanishlar (designation) sifatida beriladi.
-- Har bir resurs profil va kelib chiqish (provenance) metama'lumotlarini tashishi kutiladi - [Umumiy qo'llanma](general-guidance.html#metadata)ga qarang.
-- Platforma har bir yaratish/yangilashni tegishli profil va qiymatlar to'plamlariga nisbatan tekshiradi va xatolikda `OperationOutcome` qaytaradi - shu sababli ushbu sahifalardagi qoidalar majburiy bo'lib, tavsiyaviy emas.
+- Profillar bazaviy FHIR R5 asosida yaratiladi va faqat milliy farqlarni tavsiflaydi.
+- Identifikatorlar yagona ierarxik sxemaga amal qiladi (`https://dhp.uz/fhir/core/sid/...`). "[Identifikator tizimlari](identifiers.html)" bo'limiga qarang.
+- Nomlar va boshqa inson o'qishi uchun mo'ljallangan matnlarda o'zbek tili ustuvor til hisoblanadi, tarjimalar esa designations sifatida beriladi.
+- Har bir resursda profil va Provenance metama'lumotlari bo'lishi kutiladi - "[Umumiy tavsiyalar](general-guidance.html#metadata)" bo'limiga qarang.
+- Platforma har bir yaratish yoki yangilash so'rovini tegishli profil va ValueSet'lar bo'yicha tekshiradi hamda xatolik yuz berganda `OperationOutcome` qaytaradi. Shu sababli ushbu sahifalardagi qoidalar majburiy ravishda qo'llaniladi va tavsiyaviy xususiyatga ega emas.
 
-### Keyin qayerga borish kerak
+### Keyingi qadamlar
 
-- [Must Support](must-support.html) - `S` bayrog'i sizni nima qilishga majbur qilishi.
-- [Umumiy qo'llanma](general-guidance.html) - ko'ndalang qoidalar (yo'q ma'lumot, birliklar, Bundle'lar, terminologiya, mantiqiy o'chirish).
-- [Ish jarayonlari](workflows.html) - real klinik vazifa uchun qaysi resurslarni, qaysi tartibda yaratish kerakligini ko'rsatuvchi to'liq stsenariylar.
-- Har bir profil sahifasi - "Must Have / Must Support" bayoni hamda misol API chaqiruvlari bilan "Quick Start".
+- [Must Support](must-support.html) - `S` belgisi sizdan nimalarni bajarishni talab qilishini tushuntiradi.
+- [Umumiy tavsiyalar](general-guidance.html) - barcha bo'limlarga taalluqli qoidalar: mavjud bo'lmagan ma'lumotlar, o'lchov birliklari, Bundle'lar, terminologiya va mantiqiy o'chirish.
+- [Ish jarayonlari](workflows.html) - real klinik vazifani bajarish uchun qaysi resurslarni va qanday ketma-ketlikda yaratish kerakligini ko'rsatuvchi boshidan oxirigacha bo'lgan ssenariylar.
+- Har bir profil sahifasi - "Must Have / Must Support" talablari tavsifi hamda API chaqiruvlari misollari keltirilgan "Quick Start" bo'limi.
