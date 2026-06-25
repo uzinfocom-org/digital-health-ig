@@ -9,7 +9,7 @@ Description: "A value set defining when an event occurs (Morning, Evening, Befor
 * ^extension[1].url = $valueset-supplement
 * ^extension[1].valueCanonical = Canonical(TimingEventCS)
 
-// Включаем коды из ОБЕИХ систем
+// Include codes from BOTH systems
 * include codes from system $event-timing
 
 * include $v3-timing-event#HS

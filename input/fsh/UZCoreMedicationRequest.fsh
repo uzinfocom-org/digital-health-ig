@@ -1,85 +1,81 @@
 Profile: UZCoreMedicationRequest
 Parent: MedicationRequest
 Id: uz-core-medication-request
-Title: "UZ Core Medication Request"
-Description: "Uzbekistan Core profile for MedicationRequest, used to order medications for a patient"
+Title: "UZ Core MedicationRequest"
+Description: "Uzbekistan Core MedicationRequest profile, used to order medications for a patient"
 * ^experimental = true
 * ^status = #active
 * ^date = "2026-02-06"
 * ^publisher = "Uzinfocom"
 
 * identifier MS
-* identifier ^short = "Идентификатор заказа или рецепта"
+* identifier ^short = "Identifier for the order or prescription"
 
 * identifier.use MS
-* identifier.use ^short = "Определяет вид использования идентификатора (официальный, вторичный, временный, старый, обычный)"
+* identifier.use ^short = "Defines how the identifier is used (official, secondary, temporary, old, usual)"
 
 * identifier.type MS
-* identifier.type ^short = "Код типа идентификатора"
+* identifier.type ^short = "Identifier type code"
 
 * identifier.value MS
-* identifier.value ^short = "Значение идентификатора"
+* identifier.value ^short = "The identifier value"
 
 * status MS
-* status ^short = "Статус запроса"
+* status ^short = "Status of the request"
 
 * statusReason MS
-* statusReason ^short = "Причина текущего статуса"
-* statusReason ^definition = "Причина текущего статуса. В системе DMED (MIS) этот процесс вводится вручную врачами и фармацевтами"
+* statusReason ^short = "Reason for the current status"
+* statusReason ^definition = "Reason for the current status. In the DMED (MIS) system this is entered manually by physicians and pharmacists"
 
 * statusChanged MS
-* statusChanged ^short = "Когда статус был изменен"
 
 * intent MS
-* intent ^short = "Цель заказа"
+* intent ^short = "Intent of the order"
 
 * category MS
-* category ^short = "Категория места приема лекарства"
+* category ^short = "Category of the location where the medication is administered"
 
 * medication MS
-* medication ^short = "Лекарства, которые необходимо принять"
-* medication ^definition = "Лекарства, которые необходимо принять. При назначении лекарственного препарата сложного состава врач укажет его торговое название. В других случаях используется международное непатентованное название"
+* medication ^definition = "Medication to be taken. When prescribing a compound medicinal product, the physician specifies its trade name. In other cases the international nonproprietary name (INN) is used"
 
 * subject MS
-* subject ^short = "Лицо, для которого выписывается рецепт"
+* subject ^short = "The person for whom the prescription is issued"
 
 * informationSource MS
-* informationSource ^short = "Источник информации о заказе препарата"
-* informationSource ^definition = "Используется для указания источника информации о заказе препарата. То есть, указывается, кто или какой источник предоставил информацию об этом препарате"
+* informationSource ^short = "Source of information about the medication order"
+* informationSource ^definition = "Used to indicate the source of information about the medication order, i.e. who or what source provided the information about this medication"
 
 * extension contains trustee named trustee 0..* MS
-* extension[trustee] ^short = "Доверенное лицо {Патронажная медсестра | Родственник}"
-* extension[trustee] ^definition = "Доверенное лицо — это лицо, уполномоченное забирать лекарства из аптеки от имени пациента на основании письменного рецепта"
+* extension[trustee] ^short = "Trustee {patronage nurse | relative}"
+* extension[trustee] ^definition = "A trustee is a person authorized to collect medication from the pharmacy on behalf of the patient based on a written prescription"
 
 * encounter MS
-* encounter ^short = "Прием, во время которого сделан запрос"
+* encounter ^short = "Encounter during which the request was made"
 
 * authoredOn MS
-* authoredOn ^short = "Когда был сделан запрос"
+* authoredOn ^short = "When the request was made"
 
 * requester MS
-* requester ^short = "Кто сделал запрос"
+* requester ^short = "Who made the request"
 
 * reason MS
-* reason ^short = "Причина или показание для назначения или неназначения лекарственного средства"
 
 * effectiveDosePeriod MS
-* effectiveDosePeriod ^short = "Период, в течение которого следует принимать лекарство"
+* effectiveDosePeriod ^short = "Period over which the medication should be taken"
 
 * insurance MS
-* insurance ^short = "Сопутствующее страховое покрытие"
 
 * dosageInstruction MS
-* dosageInstruction ^short = "Конкретные инструкции по приему лекарств"
+* dosageInstruction ^short = "Specific instructions for taking the medication"
 
 * dosageInstruction.patientInstruction MS
-* dosageInstruction.patientInstruction ^short = "Текстовая инструкция по дозировке и приему лекарства для пациента"
+* dosageInstruction.patientInstruction ^short = "Patient-facing free-text dosage and administration instructions"
 
 * dosageInstruction.timing MS
 * dosageInstruction.timing ^short = "This section contains a few types of mechanism"
 * dosageInstruction.timing ^definition = """SHOULD BE USED:
 - frequency should be used with period and periodUntil
-- frequency should be used with timeOfDay 
+- frequency should be used with timeOfDay
 SHOULD NOT BE USED:
 - 'when' should not be used with 'timeOfDay'
 - event should not be used with bounds[x]
@@ -96,74 +92,72 @@ SHOULD NOT BE USED:
 
 * dosageInstruction.timing.repeat MS
 * dosageInstruction.timing.repeat.bounds[x] MS
-* dosageInstruction.timing.repeat.bounds[x] ^short = "Длина/диапазон длин или (начальные и/или конечные) пределы"
+* dosageInstruction.timing.repeat.bounds[x] ^short = "Length/range of lengths, or (start and/or end) limits"
 
 * dosageInstruction.timing.repeat.count MS
-* dosageInstruction.timing.repeat.count ^short = "Продолжительность определяется количеством, а не временем"
+* dosageInstruction.timing.repeat.count ^short = "Duration is determined by a count rather than by time"
 
 * dosageInstruction.timing.repeat.countMax MS
-* dosageInstruction.timing.repeat.countMax ^short = "максимально допустимое количество повторений"
+* dosageInstruction.timing.repeat.countMax ^short = "Maximum number of repetitions allowed"
 
 * dosageInstruction.timing.repeat.duration MS
-* dosageInstruction.timing.repeat.duration ^short = "Продолжительность выполнения действия"
+* dosageInstruction.timing.repeat.duration ^short = "Duration of the action"
 
 * dosageInstruction.timing.repeat.durationUnit MS
-* dosageInstruction.timing.repeat.durationUnit ^short = "с | мин | ч | д | нед | мес | год - единица времени"
+* dosageInstruction.timing.repeat.durationUnit ^short = "s | min | h | d | wk | mo | a - unit of time"
 
 * dosageInstruction.timing.repeat.frequency MS
-* dosageInstruction.timing.repeat.frequency ^short = "Указывает количество повторений, которые должны произойти в течение периода"
+* dosageInstruction.timing.repeat.frequency ^short = "Indicates the number of repetitions that should occur within a period"
 
 * dosageInstruction.timing.repeat.period MS
-* dosageInstruction.timing.repeat.period ^short = "Продолжительность, к которой применяется частота"
+* dosageInstruction.timing.repeat.period ^short = "The duration to which the frequency applies"
 
 * dosageInstruction.timing.repeat.periodUnit MS
-* dosageInstruction.timing.repeat.periodUnit ^short = "с | мин | ч | д | нед | мес | год - единица времени"
+* dosageInstruction.timing.repeat.periodUnit ^short = "s | min | h | d | wk | mo | a - unit of time"
 
 * dosageInstruction.timing.repeat.timeOfDay MS
-* dosageInstruction.timing.repeat.timeOfDay ^short = "Время суток для действия"
+* dosageInstruction.timing.repeat.timeOfDay ^short = "Time of day for the action"
 
 * dosageInstruction.timing.repeat.dayOfWeek MS
-* dosageInstruction.timing.repeat.dayOfWeek ^short = "пн | вт | ср | чт | пт | сб | вс"
 
 * dosageInstruction.timing.repeat.when MS
-* dosageInstruction.timing.repeat.when ^short = "Код периода времени возникновения"
+* dosageInstruction.timing.repeat.when ^short = "Code for the time period of occurrence"
 
 * dosageInstruction.timing.code MS
 * dosageInstruction.timing.code ^short = "C | BID | TID | QID | AM | PM | QD | QOD | +"
 
 * dosageInstruction.route MS
-* dosageInstruction.route ^short = "Способ введения лекарства"
+* dosageInstruction.route ^short = "Route of administration of the medication"
 
 * dosageInstruction.doseAndRate MS
-* dosageInstruction.doseAndRate ^short = "Количество вводимого лекарства, которое должно быть введено"
+* dosageInstruction.doseAndRate ^short = "Amount of medication to be administered"
 
 * dosageInstruction.doseAndRate.doseQuantity MS
 * dosageInstruction.doseAndRate.doseQuantity.value MS
-* dosageInstruction.doseAndRate.doseQuantity.value ^short = "Количество лекарства"
+* dosageInstruction.doseAndRate.doseQuantity.value ^short = "Amount of medication"
 
 * dosageInstruction.doseAndRate.doseQuantity.unit MS
-* dosageInstruction.doseAndRate.doseQuantity.unit ^short = "Значение единицы измерения количества"
+* dosageInstruction.doseAndRate.doseQuantity.unit ^short = "Unit of measure for the amount"
 
 * dispenseRequest MS
-* dispenseRequest ^short = "Разрешение на поставку лекарственных препаратов"
+* dispenseRequest ^short = "Authorization for the supply of the medication"
 
 * dispenseRequest.quantity MS
-* dispenseRequest.quantity ^short = "Количество из общего, сколько можно взять"
+* dispenseRequest.quantity ^short = "Amount of the total that can be dispensed at once"
 
 * dispenseRequest.validityPeriod MS
-* dispenseRequest.validityPeriod ^short = "Срок поставки разрешен на"
+* dispenseRequest.validityPeriod ^short = "Period for which the supply is authorized"
 
 * dispenseRequest.validityPeriod.start MS
-* dispenseRequest.validityPeriod.start ^short = "Время выписки рецепта"
+* dispenseRequest.validityPeriod.start ^short = "Time when the prescription was issued"
 
 * dispenseRequest.validityPeriod.end MS
-* dispenseRequest.validityPeriod.end ^short = "Срок действия рецепта"
+* dispenseRequest.validityPeriod.end ^short = "Expiry of the prescription"
 
 * dispenseRequest.dispenser MS
-* dispenseRequest.dispenser ^short = "В какой аптеке я могу получить этот рецепт"
+* dispenseRequest.dispenser ^short = "Pharmacy where this prescription can be dispensed"
 
 * note MS
-* note ^short = "Информация о рецепте"
 
 * medication only CodeableReference(UZCoreMedication)
 * subject only Reference(UZCorePatient)
@@ -195,7 +189,7 @@ SHOULD NOT BE USED:
 
 Instance: example-medication-request
 InstanceOf: UZCoreMedicationRequest
-Description: "Пример с одной инструкцией"
+Description: "Example outpatient prescription: ibuprofen 400 mg tablet taken twice daily for five days for headache"
 Usage: #example
 
 * identifier
@@ -206,40 +200,32 @@ Usage: #example
 * status = #active
 * intent = #order
 * category = $medicationrequest-admin-location#outpatient
-* medication.concept.text = "авитриптан"
+* medication.concept.text = "Ibuprofen 400 mg tablet"
 * subject = Reference(example-salim)
 
-// Extension: trustee
-// * extension[trustee].url = "http://dmed.uz/"
-* extension[trustee].valueReference.display = "Ruslan Isakhov (Father)"
+* extension[trustee].valueReference.display = "Ruslan Isakhov (father)"
 
-* authoredOn = "2026-03-02T06:44:12+05:00"
+* authoredOn = "2026-03-02T09:00:00+05:00"
 * reason.concept.text = "headache"
-* effectiveDosePeriod.start = "2026-03-02" 
-// Обозначено как 3 month, для примера:
-* effectiveDosePeriod.end = "2026-06-02"
+* effectiveDosePeriod.start = "2026-03-02"
+* effectiveDosePeriod.end = "2026-03-06"
 
 * dosageInstruction[0]
   * timing
     * repeat
       * boundsPeriod
-        * start = "2026-01-27"
-        * end = "2026-02-01" // 5d из таблицы
-      * count = 5
-      * countMax = 5
-      * duration = 6
-      * durationUnit = #mo
+        * start = "2026-03-02"
+        * end = "2026-03-06"
       * frequency = 2
       * period = 1
       * periodUnit = #d
       * timeOfDay[0] = "08:00:00"
       * timeOfDay[1] = "16:00:00"
-      * dayOfWeek[0] = #mon
-    * code.text = "Two times a day at institution specified time"
+    * code.text = "Twice a day"
   * route.coding[0]
-    * system = "https://terminology.dhp.uz/fhir/core/CodeSystem/route-codes-cs" 
-    * code = #pharm.0001.00062 
-    * display = "External"
+    * system = "https://terminology.dhp.uz/fhir/core/CodeSystem/route-codes-cs"
+    * code = #pharm.0001.00046
+    * display = "Peroral"
   * doseAndRate[0].doseQuantity
     * value = 1
     * unit = "dona"
@@ -249,5 +235,5 @@ Usage: #example
 * dispenseRequest
   * quantity.value = 10
   * validityPeriod
-    * start = "2026-01-27"
-    * end = "2026-02-27"
+    * start = "2026-03-02"
+    * end = "2026-04-02"

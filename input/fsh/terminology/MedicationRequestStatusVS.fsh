@@ -1,6 +1,6 @@
 ValueSet: MedicationRequestStatusVS
 Id: medicationrequest-status-vs
-Title: "Medication Request Status ValueSet"
+Title: "MedicationRequest Status ValueSet"
 Description: "A set of status values ​​for prescribing medications"
 * ^url = "https://terminology.dhp.uz/fhir/core/ValueSet/medicationrequest-status-vs"
 * ^experimental = true

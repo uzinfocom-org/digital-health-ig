@@ -1,6 +1,6 @@
 CodeSystem: DaysOfWeekCS
 Id: days-of-week-cs
-Title: "Days of Week - UZ/RU Translations"
+Title: "Days of Week translations"
 Description: "Uzbek and Russian translations for the standard Days of Week codes."
 * insert SupplementCodeSystemDraft(days-of-week-cs, $days-of-week, 5.0.0)
 

@@ -1,6 +1,6 @@
 ValueSet: GTSAbbreviationVS
 Id: v3-gts-abbreviation-vs
-Title: "v3 GTS Abbreviation - UZ/RU Translations VS"
+Title: "v3 GTS Abbreviation ValueSet"
 Description: "Value Set for v3 GTS Abbreviation codes (BID, TID, QID, etc.)"
 * ^url = "https://terminology.dhp.uz/fhir/core/ValueSet/v3-gts-abbreviation-vs"
 * ^experimental = true

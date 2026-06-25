@@ -1,6 +1,6 @@
 CodeSystem: MedicationRequestStatusReasonCS
 Id: medicationrequest-status-reason-cs
-Title: "Medication Request Status Reason - UZ/RU Translations"
+Title: "MedicationRequest Status Reason translations"
 Description: "Uzbek and Russian translations for the standard HL7 MedicationRequest status reason codes."
 * insert SupplementCodeSystemDraft(medicationrequest-status-reason-cs, $medicationrequest-status-reason, 5.0.0)
 

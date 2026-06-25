@@ -1,6 +1,6 @@
 CodeSystem: MedicationRequestStatusCS
 Id: medicationrequest-status-cs
-Title: "Medication Request Status"
+Title: "MedicationRequest Status translations"
 Description: "MedicationRequest statuses with translations into Uzbek and Russian."
 * insert SupplementCodeSystemDraft(medicationrequest-status-cs, $medicationrequest-status, 5.0.0)
 

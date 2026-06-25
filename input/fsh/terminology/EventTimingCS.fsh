@@ -1,6 +1,6 @@
 CodeSystem: EventTimingCS
 Id: event-timing-cs
-Title: "Event Timing - UZ/RU Translations"
+Title: "Event Timing translations"
 Description: "Translations for standard EventTiming codes (MORN, AFT, EVE, NIGHT, etc.)"
 * insert SupplementCodeSystemDraft(event-timing-cs, $event-timing, 5.0.0)
 

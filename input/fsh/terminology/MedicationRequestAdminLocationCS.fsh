@@ -1,6 +1,6 @@
 CodeSystem: MedicationRequestAdminLocationCS
 Id: medicationrequest-admin-location-cs
-Title: "Medication Request Administration Location - UZ/RU Translations"
+Title: "MedicationRequest Administration Location translations"
 Description: "Uzbek and Russian translations for the MedicationRequest category codes (inpatient, outpatient, community)."
 * insert SupplementCodeSystemDraft(medicationrequest-admin-location-cs, $medicationrequest-admin-location, 5.0.0)
 

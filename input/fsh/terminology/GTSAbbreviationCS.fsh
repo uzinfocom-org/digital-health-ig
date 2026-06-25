@@ -1,6 +1,6 @@
 CodeSystem: GTSAbbreviationCS
 Id: v3-gts-abbreviation-cs
-Title: "v3 GTS Abbreviation - UZ/RU Translations"
+Title: "v3 GTS Abbreviation translations"
 Description: "Translations for v3 GTS Abbreviation codes (BID, TID, QID, etc.)"
 * insert SupplementCodeSystemDraft(v3-gts-abbreviation-cs, $v3-gts-abbreviation, 4.0.0)
 
