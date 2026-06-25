@@ -2,9 +2,9 @@
 
 #### Yangi profillar
 
-Laboratoriya va diagnostika hisobotlari uchun [UZ Core DiagnosticReport](StructureDefinition-uz-core-diagnostic-report.html) profili qo'shildi, [xizmat toifasi](ValueSet-diagnostic-report-service-category-vs.html), [holat](ValueSet-diagnostic-report-status-vs.html) va [hisobot turlari](ValueSet-lab-report-types-vs.html) uchun tegishli terminologiya bilan birga. Laboratoriya natijalarini almashayotgan dasturchilar ushbu profildan foydalanishlari kerak.
+Laboratoriya va diagnostika hisobotlari uchun [UZ Core DiagnosticReport](StructureDefinition-uz-core-diagnostic-report.html) profili qo'shildi, [xizmat toifasi](ValueSet-diagnostic-report-service-category-vs.html), [holat](ValueSet-diagnostic-report-status-vs.html) va [hisobot turlari](ValueSet-lab-report-types-vs.html) uchun tegishli terminologiya bilan birga.
 
-Laboratoriya tahlillari va panellarini buyurtma qilish uchun [UZ Core ServiceRequest Laboratory](StructureDefinition-uz-core-servicerequest-laboratory.html) profili qo'shildi, jumladan [to'lov turi](ValueSet-payment-type-vs.html) va [so'rov holati](ValueSet-service-request-status-vs.html) terminologiyasi bilan. Laboratoriya buyurtmalarini joylashtirayotgan dasturchilar ushbu profildan foydalanishlari kerak.
+Laboratoriya tahlillari va panellarini buyurtma qilish uchun [UZ Core ServiceRequest Laboratory](StructureDefinition-uz-core-servicerequest-laboratory.html) profili qo'shildi, jumladan [to'lov turi](ValueSet-payment-type-vs.html) va [so'rov holati](ValueSet-service-request-status-vs.html) terminologiyasi bilan.
 
 Klinik namunalar uchun [UZ Core Specimen](StructureDefinition-uz-core-specimen.html) profili qo'shildi, [yig'ish usuli](ValueSet-specimen-collection-method-vs.html), [namuna turi](ValueSet-specimen-types-vs.html), [rol](ValueSet-specimen-role-vs.html) va [holat](ValueSet-specimen-status-vs.html) terminologiyasi bilan birga. U laboratoriya ServiceRequest va DiagnosticReport profillaridan havola qilinadi.
 
@@ -14,7 +14,7 @@ Emlashlarni qayd etish uchun [UZ Core Immunization](StructureDefinition-uz-core-
 
 Emlash bashoratlari uchun [UZ Core ImmunizationRecommendation](StructureDefinition-uz-core-immunization-recommendation.html) profili qo'shildi, [bashorat holati](ValueSet-recommendation-forecast-status-vs.html), [sana mezoni](ValueSet-recommendation-date-criterion-vs.html) va [sabab](ValueSet-recommendation-reason-vs.html) terminologiyasi bilan.
 
-Milliy emlash jadvallari uchun [UZ Core Immunization PlanDefinition](StructureDefinition-uz-core-immunization-plan-definition.html) profili qo'shildi. U majburiy emlash foydalanish konteksti (SNOMED CT `33879002`) ni o'z ichiga oladi, shu sababli mijozlar jadvallarni `PlanDefinition?context-type-value=focus$http://snomed.info/sct|33879002` orqali topishlari mumkin.
+Milliy emlash jadvallari uchun [UZ Core Immunization PlanDefinition](StructureDefinition-uz-core-immunization-plan-definition.html) profili qo'shildi.
 
 Muayyan bemordan mustaqil ravishda qayta foydalaniladigan klinik faoliyatlarni (protseduralar, tahlillar, dori protokollari) belgilash uchun [UZ Core ActivityDefinition](StructureDefinition-uz-core-activity-definition.html) profili qo'shildi.
 
@@ -26,7 +26,7 @@ O'zbekistonga xos dori identifikatorlari (markirovka ID, ro'yxatdan o'tkazish gu
 
 #### Terminologiya va bog'lanish o'zgarishlari
 
-[Laboratoriya usuli kodlari](CodeSystem-lab-methods-cs.html) qo'shildi, laboratoriya [panel va analit kodlari](ConceptMap-lab-pan-codes-to-loinc.html) ni LOINC ga va [usul kodlari](ConceptMap-lab-methods-to-loinc.html) ni SNOMED CT ga moslashtiruvchi ConceptMaplar bilan.
+[Laboratoriya usuli kodlari](CodeSystem-lab-methods-cs.html) qo'shildi, laboratoriya [panel va analit kodlari](ConceptMap-lab-pan-codes-to-loinc.html) ni LOINC ga va [usul kodlari](ConceptMap-lab-methods-to-loinc.html) ni SNOMED CT ga moslashtiruvchi ConceptMaplar bilan. Usul kodlari [laboratoriya usullari qiymatlar to'plami](ValueSet-lab-method-vs.html) sifatida taqdim etilgan va [UZ Core Observation](StructureDefinition-uz-core-observation.html) profilining `method` elementiga bog'langan.
 
 [UZ Core PractitionerRole](StructureDefinition-uz-core-practitioner-role.html) dagi `code` endi yangi [lavozim va kasb ValueSet](ValueSet-position-and-profession-vs.html) ga (required) bog'langan, `specialty` esa yangi [kasb ixtisosligi ValueSet](ValueSet-profession-specialization-vs.html) ga bog'langan. Dasturchilar shifokor rollarini ushbu qiymatlar to'plamlaridagi kodlar bilan to'ldirishlari shart.
 
@@ -40,7 +40,7 @@ Bir nechta profillardagi havola maqsadlari endi mavjud bo'lgan joylarda UZ Core 
 
 Identifikator-domeni va EpisodeOfCare qiymatlar to'plamlarining (shuningdek chet el pasporti va haydovchilik guvohnomasi qiymatlar to'plamlarining) kanonik URL manzillari `https://dhp.uz/fhir/core/ValueSet/...` dan `https://terminology.dhp.uz/fhir/core/ValueSet/...` ga ko'chirildi. Ushbu kanonik manzillarga to'g'ridan-to'g'ri havola qiluvchi dasturchilar ularni yangilashlari shart.
 
-[UZ Core Patient](StructureDefinition-uz-core-patient.html) da ishlatiladigan [fuqarolik qiymatlar to'plami](ValueSet-nationality-vs.html) qayta ko'rib chiqildi.
+[UZ Core Patient](StructureDefinition-uz-core-patient.html) dagi [fuqarolik qiymatlar to'plami](ValueSet-nationality-vs.html) asosidagi [fuqarolik CodeSystem'i](CodeSystem-nationality-cs.html) yangilangan dmp.uz fuqarolik ro'yxati asosida qayta qurildi: u 306 tadan 512 taga oshdi, nomlar endi inglizcha, ruscha tarjimalari bilan, kodlar esa qayta tayinlandi - bitta kod endi boshqa millatni anglatishi mumkin (masalan, `#1` "Ruslar" dan "ADIGEY" ga o'zgardi). Bu buzuvchi o'zgarish: oldingi versiyada saqlangan fuqarolik kodlari qayta moslashtirilishi kerak.
 
 [OrganizationalSpecializationCS](CodeSystem-organizational-specialization-cs.html) dagi inglizcha ko'rsatuv nomlari tuzatildi (izchil katta-kichik harflar; "Children" "Pediatric" ga o'zgartirildi). Kodlar o'zgarmagan.
 
@@ -84,7 +84,7 @@ MIS2 JSON formatidagi tashkilotni ConceptMap yordamida UZ Core Organization resu
 
 MIS2 kodlarini UZ Core terminologiyasiga tarjima qilish uchun ConceptMap qo'shildi: [MIS2MedicalTypeToOrganizationalStructureCM](ConceptMap-mis2-medical-type-to-organizational-structure-cm.html) `type.coding[organizationalStructure]` uchun, [MIS2LevelTypeToSubordinationGroupCM](ConceptMap-mis2-level-type-to-subordination-group-cm.html) `type.coding[subordinationGroup]` uchun va [MIS2ServiceTypeToOrganizationalServiceGroupCM](ConceptMap-mis2-service-type-to-organizational-service-group-cm.html) `type.coding[organizationalServiceGroup]` uchun. MIS2 dan tarjima qilayotgan dasturchilar tegishli bo'limlarni to'ldirish uchun ushbu xaritalardan foydalanishlari kerak.
 
-[UZ Core AllergyIntolerance](StructureDefinition-uz-core-allergy-intolerance.html) profili tegishli CodeSystem va ValueSet ([AllergenCodesVS](ValueSet-allergen-codes-vs.html), [ReactionSubstanceVS](ValueSet-allergy-reaction-substance-vs.html), [ReactionManifestationVS](ValueSet-allergy-reaction-manifestation-vs.html), [AllergyCategoryVS](ValueSet-allergy-category-vs.html), [AllergyTypeVS](ValueSet-allergy-type-vs.html), [AllergyClinicalStatusVS](ValueSet-allergy-clinical-status-vs.html), [AllergyVerificationStatusVS](ValueSet-allergy-verification-status-vs.html), [AllergyReactionSeverityVS](ValueSet-allergy-reaction-severity-vs.html)) hamda lokal allergen va reaksiya ko‘rinishi kodlarini SNOMED CT ga tarjima qiluvchi ConceptMap bilan qo‘shildi. Allergiyalarni qayd qilayotgan dasturchilar ushbu profildan foydalanishlari kerak.
+[UZ Core AllergyIntolerance](StructureDefinition-uz-core-allergy-intolerance.html) profili tegishli CodeSystem va ValueSet ([AllergenCodesVS](ValueSet-allergen-codes-vs.html), [ReactionSubstanceVS](ValueSet-allergy-reaction-substance-vs.html), [ReactionManifestationVS](ValueSet-allergy-reaction-manifestation-vs.html), [AllergyCategoryVS](ValueSet-allergy-category-vs.html), [AllergyTypeVS](ValueSet-allergy-type-vs.html), [AllergyClinicalStatusVS](ValueSet-allergy-clinical-status-vs.html), [AllergyVerificationStatusVS](ValueSet-allergy-verification-status-vs.html), [AllergyReactionSeverityVS](ValueSet-allergy-reaction-severity-vs.html)) hamda lokal allergen va reaksiya ko‘rinishi kodlarini SNOMED CT ga tarjima qiluvchi ConceptMap bilan qo‘shildi.
 
 `UZCoreClinicalCondition` olib tashlandi va [UZ Core Condition](StructureDefinition-uz-core-condition.html) bilan birlashtirildi. Dasturchilar `uz-core-clinical-condition` ga bo‘lgan havolalarni `uz-core-condition` ga yangilashlari kerak. `Condition.code` uchun endi ICD-10 va SNOMED CT kodlarini birlashtiruvchi yangi [ConditionCodeVS](ValueSet-condition-code-vs.html) qiymatlar to‘plami (preferred bog‘lanish) ishlatiladi.
 
