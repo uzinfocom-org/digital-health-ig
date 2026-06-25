@@ -1,8 +1,8 @@
 Profile: UZCoreMedicationDispense
 Parent: MedicationDispense
 Id: uz-core-medication-dispense
-Title: "UZ Core Medication Dispense"
-Description: "Uzbekistan Core profile for MedicationDispense, used to record the provision of a medication to a patient"
+Title: "UZ Core MedicationDispense"
+Description: "Uzbekistan Core MedicationDispense profile, used to record the provision of a medication to a patient"
 * ^experimental = true
 * ^status = #active
 * ^date = "2026-02-06"
