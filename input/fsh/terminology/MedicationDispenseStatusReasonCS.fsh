@@ -3,130 +3,129 @@ Id: medicationdispense-status-reason-cs
 Title: "MedicationDispense Status Reason (UZ supplement)"
 Description: "Uzbek and Russian display translations for HL7 MedicationDispense status reason codes"
 * insert SupplementCodeSystemDraft(medicationdispense-status-reason-cs, $medicationdispense-status-reason, 5.0.0)
-* ^language = #uz
 
-* #frr01 "Buyurtma to‘xtatildi"
+* #frr01
   * ^designation[0].language = #ru
   * ^designation[=].value = "Назначение отменено"
-  * ^designation[+].language = #en
-  * ^designation[=].value = "Order Stopped"
+  * ^designation[+].language = #uz
+  * ^designation[=].value = "Buyurtma to‘xtatildi"
 
-* #frr02 "Muddati o‘tgan buyurtma"
+* #frr02
   * ^designation[0].language = #ru
   * ^designation[=].value = "Просроченное назначение"
-  * ^designation[+].language = #en
-  * ^designation[=].value = "Stale-dated Order"
+  * ^designation[+].language = #uz
+  * ^designation[=].value = "Muddati o‘tgan buyurtma"
 
-* #frr03 "Ma'lumotlar to‘liq emas"
+* #frr03
   * ^designation[0].language = #ru
   * ^designation[=].value = "Неполные данные"
-  * ^designation[+].language = #en
-  * ^designation[=].value = "Incomplete data"
+  * ^designation[+].language = #uz
+  * ^designation[=].value = "Ma'lumotlar to‘liq emas"
 
-* #frr04 "Mahsulot mavjud emas"
+* #frr04
   * ^designation[0].language = #ru
   * ^designation[=].value = "Продукт недоступен"
-  * ^designation[+].language = #en
-  * ^designation[=].value = "Product unavailable"
+  * ^designation[+].language = #uz
+  * ^designation[=].value = "Mahsulot mavjud emas"
 
-* #frr05 "Axloqiy/diniy sabablar"
+* #frr05
   * ^designation[0].language = #ru
   * ^designation[=].value = "Этические/религиозные причины"
-  * ^designation[+].language = #en
-  * ^designation[=].value = "Ethical/religious"
+  * ^designation[+].language = #uz
+  * ^designation[=].value = "Axloqiy/diniy sabablar"
 
-* #frr06 "Xizmat ko‘rsatish imkonsiz"
+* #frr06
   * ^designation[0].language = #ru
   * ^designation[=].value = "Невозможность оказать помощь"
-  * ^designation[+].language = #en
-  * ^designation[=].value = "Unable to provide care"
+  * ^designation[+].language = #uz
+  * ^designation[=].value = "Xizmat ko‘rsatish imkonsiz"
 
-* #altchoice "Avval boshqa davolashni sinab ko‘ring"
+* #altchoice
   * ^designation[0].language = #ru
   * ^designation[=].value = "Сначала попробовать другое лечение"
-  * ^designation[+].language = #en
-  * ^designation[=].value = "Try another treatment first"
+  * ^designation[+].language = #uz
+  * ^designation[=].value = "Avval boshqa davolashni sinab ko‘ring"
 
-* #clarif "Retsept/So‘rov aniqlashtirishni talab qiladi"
+* #clarif
   * ^designation[0].language = #ru
   * ^designation[=].value = "Рецепт/Запрос требует уточнения"
-  * ^designation[+].language = #en
-  * ^designation[=].value = "Prescription/Request requires clarification"
+  * ^designation[+].language = #uz
+  * ^designation[=].value = "Retsept/So‘rov aniqlashtirishni talab qiladi"
 
-* #drughigh "Dori darajasi juda yuqori"
+* #drughigh
   * ^designation[0].language = #ru
   * ^designation[=].value = "Уровень препарата слишком высок"
-  * ^designation[+].language = #en
-  * ^designation[=].value = "Drug level too high"
+  * ^designation[+].language = #uz
+  * ^designation[=].value = "Dori darajasi juda yuqori"
 
-* #hospadm "Kasalxonaga yotqizish"
+* #hospadm
   * ^designation[0].language = #ru
   * ^designation[=].value = "Госпитализация"
-  * ^designation[+].language = #en
-  * ^designation[=].value = "Admission to hospital"
+  * ^designation[+].language = #uz
+  * ^designation[=].value = "Kasalxonaga yotqizish"
 
-* #labint "Laboratoriya ko‘rsatkichlariga ta'sir qilish muammolari"
+* #labint
   * ^designation[0].language = #ru
   * ^designation[=].value = "Проблемы с лабораторными показателями"
-  * ^designation[+].language = #en
-  * ^designation[=].value = "Lab interference issues"
+  * ^designation[+].language = #uz
+  * ^designation[=].value = "Laboratoriya ko‘rsatkichlariga ta'sir qilish muammolari"
 
-* #non-avail "Bemor mavjud emas"
+* #non-avail
   * ^designation[0].language = #ru
   * ^designation[=].value = "Пациент недоступен"
-  * ^designation[+].language = #en
-  * ^designation[=].value = "Patient not available"
+  * ^designation[+].language = #uz
+  * ^designation[=].value = "Bemor mavjud emas"
 
-* #preg "Bemor homilador yoki emizikli"
+* #preg
   * ^designation[0].language = #ru
   * ^designation[=].value = "Пациентка беременна или кормит грудью"
-  * ^designation[+].language = #en
-  * ^designation[=].value = "Patient is pregnant or breastfeeding"
+  * ^designation[+].language = #uz
+  * ^designation[=].value = "Bemor homilador yoki emizikli"
 
-* #saig "Allergiya"
+* #saig
   * ^designation[0].language = #ru
   * ^designation[=].value = "Аллергия"
-  * ^designation[+].language = #en
-  * ^designation[=].value = "Allergy"
+  * ^designation[+].language = #uz
+  * ^designation[=].value = "Allergiya"
 
-* #sddi "Dori vositalarining o‘zaro ta'siri"
+* #sddi
   * ^designation[0].language = #ru
   * ^designation[=].value = "Лекарственное взаимодействие"
-  * ^designation[+].language = #en
-  * ^designation[=].value = "Drug interacts with another drug"
+  * ^designation[+].language = #uz
+  * ^designation[=].value = "Dori vositalarining o‘zaro ta'siri"
 
-* #sdupther "Takroriy terapiya"
+* #sdupther
   * ^designation[0].language = #ru
   * ^designation[=].value = "Дублирование терапии"
-  * ^designation[+].language = #en
-  * ^designation[=].value = "Duplicate therapy"
+  * ^designation[+].language = #uz
+  * ^designation[=].value = "Takroriy terapiya"
 
-* #sintol "Dori ko‘tara olmaslikka shubha"
+* #sintol
   * ^designation[0].language = #ru
   * ^designation[=].value = "Подозрение на непереносимость"
-  * ^designation[+].language = #en
-  * ^designation[=].value = "Suspected intolerance"
+  * ^designation[+].language = #uz
+  * ^designation[=].value = "Dori ko‘tara olmaslikka shubha"
 
-* #surg "Bemor operatsiyaga rejalashtirilgan"
+* #surg
   * ^designation[0].language = #ru
   * ^designation[=].value = "Пациент записан на операцию"
-  * ^designation[+].language = #en
-  * ^designation[=].value = "Patient scheduled for surgery"
+  * ^designation[+].language = #uz
+  * ^designation[=].value = "Bemor operatsiyaga rejalashtirilgan"
 
-* #washout "Organizmdan chiqarilish davri (Washout)"
+* #washout
   * ^designation[0].language = #ru
   * ^designation[=].value = "Период выведения (Washout)"
-  * ^designation[+].language = #en
-  * ^designation[=].value = "Washout"
+  * ^designation[+].language = #uz
+  * ^designation[=].value = "Organizmdan chiqarilish davri (Washout)"
 
-* #outofstock "Dori mavjud emas - omborda yo‘q"
+* #outofstock
   * ^designation[0].language = #ru
   * ^designation[=].value = "Препарат недоступен - нет на складе"
-  * ^designation[+].language = #en
-  * ^designation[=].value = "Drug not available - out of stock"
+  * ^designation[+].language = #uz
+  * ^designation[=].value = "Dori mavjud emas - omborda yo‘q"
 
-* #offmarket "Dori mavjud emas - sotuvdan olingan"
+* #offmarket
   * ^designation[0].language = #ru
   * ^designation[=].value = "Препарат недоступен - снят с продажи"
-  * ^designation[+].language = #en
-  * ^designation[=].value = "Drug not available - off market"
+  * ^designation[+].language = #uz
+  * ^designation[=].value = "Dori mavjud emas - sotuvdan olingan"

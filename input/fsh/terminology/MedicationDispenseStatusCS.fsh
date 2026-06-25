@@ -3,58 +3,57 @@ Id: medicationdispense-status-cs
 Title: "MedicationDispense Status (UZ supplement)"
 Description: "Uzbek and Russian display translations for HL7 MedicationDispense status codes"
 * insert SupplementCodeSystemDraft(medicationdispense-status-cs, $medicationdispense-status, 5.0.0)
-* ^language = #uz
 
-* #preparation "Tayyorgarlik"
+* #preparation
   * ^designation[0].language = #ru
   * ^designation[=].value = "Подготовка"
-  * ^designation[+].language = #en
-  * ^designation[=].value = "Preparation"
+  * ^designation[+].language = #uz
+  * ^designation[=].value = "Tayyorgarlik"
 
-* #in-progress "Jarayonda"
+* #in-progress
   * ^designation[0].language = #ru
   * ^designation[=].value = "В процессе"
-  * ^designation[+].language = #en
-  * ^designation[=].value = "In Progress"
+  * ^designation[+].language = #uz
+  * ^designation[=].value = "Jarayonda"
 
-* #cancelled "Bekor qilingan"
+* #cancelled
   * ^designation[0].language = #ru
   * ^designation[=].value = "Отменено"
-  * ^designation[+].language = #en
-  * ^designation[=].value = "Cancelled"
+  * ^designation[+].language = #uz
+  * ^designation[=].value = "Bekor qilingan"
 
-* #on-hold "To‘xtatib turilgan"
+* #on-hold
   * ^designation[0].language = #ru
   * ^designation[=].value = "Приостановлено"
-  * ^designation[+].language = #en
-  * ^designation[=].value = "On Hold"
+  * ^designation[+].language = #uz
+  * ^designation[=].value = "To‘xtatib turilgan"
 
-* #completed "Yakunlandi"
+* #completed
   * ^designation[0].language = #ru
   * ^designation[=].value = "Завершено"
-  * ^designation[+].language = #en
-  * ^designation[=].value = "Completed"
+  * ^designation[+].language = #uz
+  * ^designation[=].value = "Yakunlandi"
 
-* #entered-in-error "Xato kiritilgan"
+* #entered-in-error
   * ^designation[0].language = #ru
   * ^designation[=].value = "Ошибка ввода"
-  * ^designation[+].language = #en
-  * ^designation[=].value = "Entered in Error"
+  * ^designation[+].language = #uz
+  * ^designation[=].value = "Xato kiritilgan"
 
-* #stopped "To‘xtatildi"
+* #stopped
   * ^designation[0].language = #ru
   * ^designation[=].value = "Остановлено"
-  * ^designation[+].language = #en
-  * ^designation[=].value = "Stopped"
+  * ^designation[+].language = #uz
+  * ^designation[=].value = "To‘xtatildi"
 
-* #declined "Rad etilgan"
+* #declined
   * ^designation[0].language = #ru
   * ^designation[=].value = "Отклонено"
-  * ^designation[+].language = #en
-  * ^designation[=].value = "Declined"
+  * ^designation[+].language = #uz
+  * ^designation[=].value = "Rad etilgan"
 
-* #unknown "Noma'lum"
+* #unknown
   * ^designation[0].language = #ru
   * ^designation[=].value = "Неизвестно"
-  * ^designation[+].language = #en
-  * ^designation[=].value = "Unknown"
+  * ^designation[+].language = #uz
+  * ^designation[=].value = "Noma'lum"

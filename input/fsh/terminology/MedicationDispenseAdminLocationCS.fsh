@@ -3,22 +3,21 @@ Id: medicationdispense-admin-location-cs
 Title: "MedicationDispense AdminLocation (UZ supplement)"
 Description: "Uzbek and Russian display translations for MedicationDispense administration location codes"
 * insert SupplementCodeSystemDraft(medicationdispense-admin-location-cs, $medicationdispense-admin-location, 5.0.0)
-* ^language = #uz
 
-* #inpatient "Statsionar"
+* #inpatient
   * ^designation[0].language = #ru
   * ^designation[=].value = "Стационар"
-  * ^designation[+].language = #en
-  * ^designation[=].value = "Inpatient"
+  * ^designation[+].language = #uz
+  * ^designation[=].value = "Statsionar"
 
-* #outpatient "Ambulator"
+* #outpatient
   * ^designation[0].language = #ru
   * ^designation[=].value = "Амбулаторный"
-  * ^designation[+].language = #en
-  * ^designation[=].value = "Outpatient"
+  * ^designation[+].language = #uz
+  * ^designation[=].value = "Ambulator"
 
-* #community "Yashash joyida"
+* #community
   * ^designation[0].language = #ru
   * ^designation[=].value = "По месту жительства"
-  * ^designation[+].language = #en
-  * ^designation[=].value = "Community"
+  * ^designation[+].language = #uz
+  * ^designation[=].value = "Yashash joyida"
