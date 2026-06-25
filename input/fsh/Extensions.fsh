@@ -132,3 +132,14 @@ Invariant: uzcore-clmresp-cancellation-reason-1
 Description: "A cancellation reason code shall be provided."
 Expression: "exists()"
 Severity: #error
+Extension: ServiceDefinition
+Id: service-definition
+Title: "Service Definition"
+Description: "Canonical reference to the laboratory ObservationDefinition that specifies the service offered by this HealthcareService. Many per-organization HealthcareService offerings can point to one global ObservationDefinition catalogue entry."
+
+* ^context.type = #element
+* ^context.expression = "HealthcareService"
+* ^experimental = true
+
+* value[x] 1..1
+* value[x] only Canonical(UZCoreLaboratoryObservationDefinition)
