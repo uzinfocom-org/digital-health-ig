@@ -51,7 +51,7 @@ Usage: #definition
 * publisher = "Uzinfocom"
 * responsible = "State Health Insurance Fund of the Republic of Uzbekistan"
 * date = "2026-05-19"
-* type = $identifier-type#NIIP "National Insurance Payor Identifier (Payor)"
+* type = $identifier-type#PRN "Provider number"
 * description = "Naming system for organization identifiers assigned by the State Health Insurance Fund (SHIF) of the Republic of Uzbekistan to healthcare organizations that have entered into contracts with the Fund."
 * jurisdiction = urn:iso:std:iso:3166#UZ "Uzbekistan"
 * usage = "Used for identifying healthcare organizations that have contracts with the State Health Insurance Fund of Uzbekistan."
@@ -569,6 +569,24 @@ Usage: #definition
 * usage = "Used to record and exchange a patient's pension number for administrative and eligibility purposes, including verification of pensioner status and applicable social or healthcare benefits. This identifier is not intended to replace national personal identifiers (such as JShShIR) and should be used only when pension-related identification is required."
 * uniqueId[0].type = #uri
 * uniqueId[=].value = $pension-number
+* uniqueId[=].preferred = true
+
+Instance: diagnostic-report-id
+InstanceOf: NamingSystem
+Description: "Identifier used to uniquely identify a diagnostic report within the Uzbekistan digital health system."
+Usage: #definition
+* url = "https://terminology.dhp.uz/fhir/core/NamingSystem/diagnostic-report-id"
+* name = "UzbekistanDiagnosticReportIdSystem"
+* status = #active
+* kind = #identifier
+* date = "2026-02-06"
+* publisher = "Uzinfocom"
+* responsible = "Ministry of Health of the Republic of Uzbekistan"
+* description = "Naming system defining the identifier assigned to diagnostic reports within Uzbekistan’s national health information exchange. This identifier ensures uniqueness of laboratory and clinical diagnostic reports and supports interoperability across healthcare providers, laboratories, and national registries."
+* jurisdiction = urn:iso:std:iso:3166#UZ "Uzbekistan"
+* usage = "Used to record and exchange unique identifiers for diagnostic reports across healthcare systems, including laboratory results and imaging reports. This identifier supports traceability, result validation, and integration with national eHealth services."
+* uniqueId[0].type = #uri
+* uniqueId[=].value = "https://terminology.dhp.uz/fhir/core/NamingSystem/diagnostic-report-id"
 * uniqueId[=].preferred = true
 
 Instance: immunization-identifier

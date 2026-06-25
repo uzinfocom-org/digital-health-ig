@@ -24,8 +24,15 @@ Description: "Uzbekistan Core Encounter profile, used to represent clinical enco
 * priority ^short = "Указывает срочность встречи"
 
 * type MS
-* type from EncounterTypeVS (required)
-* type ^short = "Конкретный тип встречи"
+  * ^short = "Конкретный тип встречи"
+  * ^slicing.discriminator.type = #value
+  * ^slicing.discriminator.path = "coding.system"
+  * ^slicing.rules = #open
+  * ^slicing.description = "A national encounter-type classification is required; additional type codings from other systems are allowed"
+* type contains nationalType 1..1 MS
+* type[nationalType] from EncounterTypeVS (required)
+  * ^short = "National encounter-type classification"
+  * coding.system = Canonical(EncounterTypeCS)
 
 * serviceType MS
 * serviceType only CodeableReference(UZCoreHealthcareService)

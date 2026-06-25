@@ -34,23 +34,12 @@ Description: "Uzbekistan Core Organization profile, used to define healthcare or
   * use = #official
   * value 1..1 MS
 
-* identifier[shifId]
-  ^short = "Identifier assigned by the State Health Insurance Fund (SHIF)"
-  * system 1..1 MS
-  * system = $organization-shif-id-system
-  * type 1..1 MS
-  * type = $identifier-type#NIIP "National Insurance Payor Identifier (Payor)"
-  * use = #official
-  * value 1..1 MS
-  * value ^short = "SHIF organization identifier (3 uppercase Latin letters + 6 digits, e.g. OAA000024)"
-  * value obeys uzcore-org-1
-  * value ^example[0].label = "SHIF organization identifier"
-  * value ^example[0].valueString = "OAA000024"
-  * period 0..1 MS
-    * start MS
-    * end MS
-  * assigner 0..1 MS
-    * ^short = "Reference to the State Health Insurance Fund (SHIF) organization (Organization with type.coding #pay)"
+* insert InsurerProviderIdentifier(shifId, $organization-shif-id-system)
+* identifier[shifId] ^short = "Identifier assigned by the State Health Insurance Fund (SHIF)"
+* identifier[shifId].value ^short = "SHIF organization identifier (3 uppercase Latin letters + 6 digits, e.g. OAA000024)"
+* identifier[shifId].value obeys uzcore-org-1
+* identifier[shifId].value ^example[0].label = "SHIF organization identifier"
+* identifier[shifId].value ^example[0].valueString = "OAA000024"
 
 * active 0..1 MS
 
@@ -62,21 +51,13 @@ Description: "Uzbekistan Core Organization profile, used to define healthcare or
 * type.coding ^slicing.ordered = false
 
 * type.coding contains
-    organizationType 0..* MS and
     subordinationGroup 0..1 MS and
     nomenclatureGroup 0..1 MS and //organizationalStructure is child of nomenclatureGroup
     organizationalStructure 0..1 MS and
     organizationalServiceGroup 0..* MS and //specialization is child of organizationalServiceGroup
     specialization 0..* MS and
-    withoutLegalStatus 0..1 MS and
     organizationGrouping 0..1 MS
 
-* type.coding[organizationType]
-  ^short = "Вид организации"
-  * system 1..1 MS
-  * system = "https://terminology.dhp.uz/fhir/core/CodeSystem/organization-types-uz-cs"
-  * code 1..1 MS
-  * code from organization-types-uz-vs (required)
 * type.coding[subordinationGroup]
   ^short = "Группа подчинения медорганизации"
   * system 1..1 MS
@@ -107,12 +88,6 @@ Description: "Uzbekistan Core Organization profile, used to define healthcare or
   * system = "https://terminology.dhp.uz/fhir/core/CodeSystem/organizational-specialization-cs"
   * code 1..1 MS
   * code from organizational-specialization-vs (required)
-* type.coding[withoutLegalStatus]
-  ^short = "Определяет тип медорганизаций без образования юридического лица"
-  * system 1..1 MS
-  * system = "https://terminology.dhp.uz/fhir/core/CodeSystem/organizational-subordination-institution-cs"
-  * code 1..1 MS
-  * code from organizational-subordination-institution-vs (required)
 * type.coding[organizationGrouping]
   ^short = "Определяет тип группировки межучреждению"
   * system 1..1 MS
@@ -143,12 +118,11 @@ Usage: #example
   * value = "9512"
 * identifier[shifId]
   * use = #official
-  * type = $identifier-type#NIIP "National Insurance Payor Identifier (Payor)"
+  * type = $identifier-type#PRN "Provider number"
   * system = $organization-shif-id-system
   * value = "OAA000024"
   * period.start = "2024-01-15"
 * active = true
-* type.coding[organizationType] = organization-types-uz-cs#I "Boshqaruv boyicha taqsimlanishi"
 * type.coding[subordinationGroup] = organizational-subordination-group-cs#I_1 "Respublika tassarufidagi muassasalari"
 * type.coding[nomenclatureGroup] = nomenclature-group-cs#II_100 "Shifoxona muassasalari"
 * type.coding[organizationalStructure] = organizational-structure-cs#110 "Ixtisoslashtirilgan ilmiy-amaliy tibbiyot markazi"
@@ -239,10 +213,8 @@ Usage: #example
     * extension[content][+]
       * valueString = "Tashkent wálayat juqpalı kesellikler emlewxanası"
 * type
-  * coding[0] = organization-types-uz-cs#I "Boshqaruv boyicha taqsimlanishi"
   * coding[+] = organizational-subordination-group-cs#I_2 "Hududiy boshqaruv tarkibidagi"
   * coding[+] = nomenclature-group-cs#II_100 "Shifoxona muassasalari"
   * coding[+] = organizational-structure-cs#146 "Shifoxonasi"
   * coding[+] = organizational-service-group-cs#III_200 "Statsionar bo'limi mavjud"
   * coding[+] = organizational-specialization-cs#145.0 "Kattalar onkologiyasi"
-  * coding[+] = organizational-subordination-institution-cs#STIR-I_30 "Oilaviy poliklinika"

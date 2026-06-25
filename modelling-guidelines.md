@@ -114,8 +114,6 @@ Id: uz-core-condition-diagnosis-type
 * description = "Search for conditions by diagnosis type"
 ```
 
-## 3) Структура профиля
-
 ## 3) Конвенции слайсинга
 
 ### 3.1 Основные принципы слайсинга
@@ -179,7 +177,7 @@ Id: uz-core-condition-diagnosis-type
 
 При определении правил профиля необходимо учитывать следующие принципы:
 
-- **MustSupport (MS)**: Все элементы, которые должны поддерживаться всеми системами в Узбекистане, должны быть помечены как MS. Подробное описание MustSupport можно найти в [документации](https://build.fhir.org/ig/vadi2/DHP-temp/en/api-access.html#must-support).
+- **MustSupport (MS)**: Все элементы, которые должны поддерживаться всеми системами в Узбекистане, должны быть помечены как MS. Подробное описание MustSupport можно найти в [документации](https://build.fhir.org/ig/uzinfocom-org/digital-health-ig/en/api-access.html#must-support).
 - **Кардинальности**: Указывайте кардинальности элементов только если они отличаются от базового FHIR ресурса. Если кардинальность совпадает с базовым ресурсом, не дублируйте эту информацию.
 - **Связки**: При указании связки с ValueSet всегда явно указывайте силу связки (`required`, `extensible`, `preferred` или `example`). Используйте `required` связку для обязательных элементов с фиксированным набором значений. Используйте `extensible` связку когда разрешены дополнительные коды. Используйте `preferred` связку когда DHP не может или не хочет принудительно применять определённые коды, но даёт рекомендацию по их использованию. Используйте `example` связку когда ValueSet служит только примером без какой-либо рекомендации. **Предупреждение**: если использовать `extensible` связку, валидатор не сможет различить опечатки от новых допустимых кодов.
 - **Дополнительные связки (Additional Bindings)**: Используйте `^binding.additional` когда есть возможность объединить несколько профилей в один. Это позволяет указать разные ValueSet для разных контекстов использования одного элемента. Пример из UZCoreSocioeconomicObservation:
@@ -208,9 +206,9 @@ Id: uz-core-condition-diagnosis-type
 * basedOn only Reference(CarePlan or MedicationRequest or ServiceRequest)
 ```
 
-## 4) Терминологические артефакты
+## 5) Терминологические артефакты
 
-### 4.1 Почему нужен supplement для CodeSystem и ValueSet
+### 5.1 Почему нужен supplement для CodeSystem и ValueSet
 
 При создании национальных профилей часто возникает необходимость локализации терминологий. Создание **supplement** к существующим CodeSystem HL7 (например, `condition-clinical` для профиля Condition) позволяет:
 
@@ -308,7 +306,7 @@ CodeSystems с более чем 100 кодами замедляют кажду�
 3. Переместите исходный `.fsh` → `input/manual-fsh/` (SUSHI его не парсит, но FSH сохраняется как источник).
 4. При обновлении справочника: верните `.fsh` в `input/fsh/terminology/`, пересоберите, повторите шаги 2-3.
 
-### 4.2 Пример FSH для ClinicalStatusCS (на примере Condition)
+### 5.2 Пример FSH для ClinicalStatusCS (на примере Condition)
 
 ```fsh
 CodeSystem: ClinicalStatusCS
@@ -324,7 +322,7 @@ Description: "Clinical status supplement with translations in Uzbek and Russian"
   * ^designation[=].value = "Faol"
 ```
 
-### 4.3 Пример FSH для ClinicalStatusVS (на примере Condition)
+### 5.3 Пример FSH для ClinicalStatusVS (на примере Condition)
 
 При создании ValueSets, которые включают коды из supplement CodeSystems, необходимо добавить специальное расширение. ValueSets, использующие только оригинальные коды, не требуют этого расширения.
 
@@ -332,10 +330,10 @@ Description: "Clinical status supplement with translations in Uzbek and Russian"
 ValueSet: ClinicalStatusVS
 Id: clinical-status-vs
 Title: "Clinical Status"
-* ^url = "http://terminology.dhp.uz/ValueSet/clinical-status-vs"
+* ^url = "https://terminology.dhp.uz/fhir/core/ValueSet/clinical-status-vs"
 * ^status = #active
 * ^extension[0].url = $valueset-supplement
-* ^extension[=].valueCanonical = = Canonical(ClinicalStatusCS)
+* ^extension[=].valueCanonical = Canonical(ClinicalStatusCS)
 * include codes from system $condition-clinical
 
 ```
@@ -344,7 +342,7 @@ Title: "Clinical Status"
 - Расширение `valueset-supplement` необходимо только для ValueSets, которые включают коды из supplement CodeSystems. Для ValueSets с только оригинальными кодами это расширение не требуется.
 - При использовании supplement CodeSystems в ValueSet необходимо включать коды из **оригинальной** CodeSystem (например, `$condition-clinical`), а не из supplement CodeSystem. Расширение `valueset-supplement` указывает на supplement, который предоставляет переводы к оригинальным кодам.
 
-### 4.4 Почему и как создавать Extensions
+### 5.4 Почему и как создавать Extensions
 
 При создании национальных профилей часто требуются дополнительные атрибуты, которые отсутствуют в базовых ресурсах FHIR. В таких случаях создаются **Extensions**. Например, для профиля Condition может потребоваться «Тип диагноза» (первичный, направившего учреждения, уточнённый и т.д.). Расширения позволяют:
 
@@ -363,20 +361,19 @@ Title: "Clinical Status"
 
 > **Примечание:** все Extensions сохраняются в отдельном файле `Extensions.fsh`.
 
-**Пример FSH для Extension (diagnosisType для Condition):**
+**Пример FSH для Extension (DiagnosisType для Condition):**
 
 ```fsh
-Extension: diagnosisType
-Id: diagnosis-type-ext
+Extension: DiagnosisType
+Id: diagnosis-type
 Title: "Diagnosis Type"
-* ^url = "http://terminology.dhp.uz/StructureDefinition/diagnosis-type-ext"
-* ^context.type = #element
-* ^context.expression = "Condition"
+* ^url = "https://dhp.uz/fhir/core/StructureDefinition/diagnosis-type"
+Context: Condition
 * valueCodeableConcept 1..1
 * valueCodeableConcept from DiagnosisTypeVS (required)
 ```
 
-### 4.5 Почему и как создавать Aliases
+### 5.5 Почему и как создавать Aliases
 
 **Зачем:**
 
@@ -408,7 +405,7 @@ Alias: $provenance-participant-type = http://terminology.hl7.org/CodeSystem/prov
 - **Алфавитный порядок**: Поддерживайте алфавитный порядок alias для удобства поиска.
 - **Очистка**: Периодически проверяйте файл на наличие неиспользуемых или дублирующихся alias и удаляйте их.
 
-### 4.6 Почему всегда нужно создавать Instance‑примеры для профилей
+### 5.6 Почему всегда нужно создавать Instance‑примеры для профилей
 
 **Зачем:**
 
@@ -464,7 +461,7 @@ Description: "Example instance of a headache condition documented during a patie
 * recordedDate = "2025-07-29"
 ```
 
-## 5) Переводы и локализация
+## 6) Переводы и локализация
 
 ### Принципы работы с переводами
 
@@ -530,7 +527,7 @@ input/
         └── ...
 ```
 
-### 8.4 Рекомендации по переводу
+### Рекомендации по переводу
 
 **Терминология:**
 - Используйте консистентную медицинскую терминологию

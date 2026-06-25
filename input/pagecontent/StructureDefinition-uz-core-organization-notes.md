@@ -13,7 +13,6 @@ GET [base]/Organization/[id]
 ```
 GET [base]/Organization?identifier=https://dhp.uz/fhir/core/sid/org/uz/soliq|200935935
 GET [base]/Organization?name=onkologiya&active=true
-GET [base]/Organization?type=https://terminology.dhp.uz/fhir/core/CodeSystem/organization-types-uz-cs|I&address-city=22070022
 ```
 
 **Find the sub-units of a parent organization**

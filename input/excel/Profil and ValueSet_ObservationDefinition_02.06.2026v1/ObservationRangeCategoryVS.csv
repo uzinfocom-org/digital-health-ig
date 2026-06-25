@@ -1,0 +1,4 @@
+CODE,RU,UZ,,http://hl7.org/fhir/ValueSet/observation-range-category
+reference,референсный диапазон,referens diapazon (me’yor),,
+critical,критический диапазон,kritik diapazon,,
+absolute,абсолютный диапазон,mutlaq diapazon,,

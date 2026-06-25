@@ -2,9 +2,7 @@ CodeSystem: LabMethodsCS
 Id: lab-methods-cs
 Title: "Laboratory technique (method of measurement)"
 Description: "Laboratory technique (method of measurement) used for the result measurement"
-* ^experimental = true
-* ^caseSensitive = true
-* ^language = #uz
+* insert OriginalCodeSystemDraft(lab-methods-cs)
 
 * #lab-method-1 "PZR (Polimeraza zanjir reaksiyasi)"
   * ^designation[0].language = #ru

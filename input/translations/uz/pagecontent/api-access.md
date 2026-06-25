@@ -94,6 +94,55 @@ If-Match: W/"3"
 
 *\<to be filled in - describe error handling here\>*
 
+### Resurslarni UZ Core bo'yicha validatsiya qilish {#validation}
+
+Ma'lumotlarni platformaga yuborishdan oldin, ularni UZ Core profillariga nisbatan tekshiring. [Onlayn validator](#validation-web)dan (o'rnatish shart emas) yoki [FHIR validatorining buyruq qatori vositasi](#validation-cli)dan (skript qilinadi) foydalaning. Ikkalasi ham bir xil validatsiya dvigatelidan foydalanadi; muhimi - `uz-core-*` profillari aniqlanishi uchun ushbu IG ni yuklashdir.
+
+#### Buyruq qatori validatori {#validation-cli}
+
+Skript yoki avtomatlashtirilgan foydalanish uchun [HL7 FHIR validatorini](https://github.com/hapifhir/org.hl7.fhir.core/releases/latest/download/validator_cli.jar) yuklab oling va ishga tushiring:
+
+```
+java -jar validator_cli.jar resource.json -version 5.0.0 -ig uz.dhp.core#current
+```
+
+`-ig` bayrog'i quyidagi onlayn validatorda IG ni qo'shish bilan bir xil vazifani bajaradi.
+
+#### Onlayn validator (validator.fhir.org) {#validation-web}
+
+1. [validator.fhir.org](https://validator.fhir.org/) ni oching.
+2. Options yorlig'ida FHIR versiyasini `5.0.0` ga o'rnating. So'ngra Implementation Guides bo'limida *Select IG* maydoniga `uz.dhp` deb yozing, `uz.dhp.core` ni tanlang, `current` versiyasini belgilang va Add tugmasini bosing. `Selected IGs (1): uz.dhp.core#current` deb ko'rsatilganiga ishonch hosil qiling.
+3. Validate yorlig'ida resursingizni Enter Resource maydoniga joylashtiring (yoki Upload Resources dan foydalaning) va Validate tugmasini bosing.
+4. Natijalarni ko'rib chiqing. Har bir muammo uning jiddiylik darajasini, joylashuvini va xabarini ko'rsatadi.
+
+<figure style="margin: 1.5em 0;">
+<img src="validator-fhir-org-1-options.png" width="460" alt="validator.fhir.org dagi Options yorlig'ida UZ Core IG ni yuklash"/>
+<figcaption style="font-size: 0.9em; color: #555;">2-qadam - Options da <code>uz.dhp.core#current</code> ni yuklash.</figcaption>
+</figure>
+
+<figure style="margin: 1.5em 0;">
+<img src="validator-fhir-org-2-enter-resource.png" width="560" alt="Validate yorlig'ida resursni kiritish"/>
+<figcaption style="font-size: 0.9em; color: #555;">3-qadam - Validate yorlig'ida resursni kiritish.</figcaption>
+</figure>
+
+<figure style="margin: 1.5em 0;">
+<img src="validator-fhir-org-3-results.png" width="760" alt="Validatsiya natijalari"/>
+<figcaption style="font-size: 0.9em; color: #555;">4-qadam - validatsiya natijalari.</figcaption>
+</figure>
+
+2-qadamda IG ni yuklash - ko'pchilik o'tkazib yuboradigan qadam. Agar uni o'tkazib yuborsangiz, validator resursning `meta.profile` da ko'rsatilgan `uz-core-*` profilini aniqlay olmaydi va uning kanonik URL manziliga tarmoq orqali murojaat qilishga harakat qiladi, bu esa 404 xatosini qaytaradi:
+
+```
+Profile reference 'https://dhp.uz/fhir/core/StructureDefinition/uz-core-encounter'
+has not been checked because it could not be found ... 404 Not Found
+```
+
+Bunday holatda resurs faqat asosiy FHIR R5 spetsifikatsiyasiga nisbatan tekshiriladi, UZ Core ga emas, shuning uchun haqiqiy profil buzilishlari e'tibordan chetda qoladi.
+
+#### Versiyani tanlash {#validation-version}
+
+`current` ushbu IG ning eng so'nggi qurilishini kuzatib boradi. `uz.dhp.core#0.5.0` kabi belgilangan reliz oxirgi rasmiy nashrga nisbatan tekshiradi, bu esa `current` dan orqada qolishi va shu sababli kamroq muammolar haqida xabar berishi mumkin. IG hali rivojlanayotgan ekan, `current` dan foydalaning.
+
 ### Must Support
 Profillardagi ko'plab elementlar Must Support deb belgilangan. Bu nimani anglatishini, u qo'llaniladigan ikki kontekstni va to'ldira olmaydigan elementlar bilan qanday ishlashni alohida [Must Support](must-support.html) sahifasida ko'ring.
 

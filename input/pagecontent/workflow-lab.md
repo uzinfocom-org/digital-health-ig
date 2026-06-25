@@ -10,15 +10,17 @@ The chain and its references:
 
 <div>{% include lab-references.svg %}</div><br clear="all"/>
 
-> Profile status: [Specimen](StructureDefinition-uz-core-specimen.html) and [Observation](StructureDefinition-uz-core-observation.html) are profiled in UZ Core. The ServiceRequest and DiagnosticReport profiles are in development - until they publish, use the base FHIR R5 resources with `meta.profile` omitted or set to the base resource, and follow the wiring below.
+> Profile status: all four resources are profiled in UZ Core - [Specimen](StructureDefinition-uz-core-specimen.html), [Observation](StructureDefinition-uz-core-observation.html), [ServiceRequest](StructureDefinition-uz-core-servicerequest-laboratory.html) (laboratory-specific) and [DiagnosticReport](StructureDefinition-uz-core-diagnostic-report.html). Set `meta.profile` to the matching profile on each resource and follow the wiring below.
 
 ### 1. Order the test
 
-The clinician creates a `ServiceRequest` with `intent = order`, the test or panel in `code`, the patient in `subject`, the requester, and a `reasonCode`/`reasonReference` (the Condition being investigated). The orderable tests are published as [HealthcareService](StructureDefinition-uz-core-healthcareservice.html) entries; `priority` is `routine`, `urgent` or `asap`.
+The clinician creates a [ServiceRequest](StructureDefinition-uz-core-servicerequest-laboratory.html) with `intent = order`, the test or panel in `code`, the patient in `subject`, the requester, and a `reasonCode`/`reasonReference` (the Condition being investigated). The orderable tests are published as [HealthcareService](StructureDefinition-uz-core-healthcareservice.html) entries; `priority` is `routine`, `urgent` or `asap`.
 
 ```
 POST [base]/ServiceRequest
-{ "resourceType": "ServiceRequest", "status": "active", "intent": "order",
+{ "resourceType": "ServiceRequest",
+  "meta": { "profile": ["https://dhp.uz/fhir/core/StructureDefinition/uz-core-servicerequest-laboratory"] },
+  "status": "active", "intent": "order",
   "code": { "coding": [{ "system": "http://loinc.org", "code": "58410-2" }] },
   "subject": { "reference": "Patient/[id]" },
   "requester": { "reference": "PractitionerRole/[id]" },
@@ -42,7 +44,7 @@ POST [base]/Specimen
 
 ### 3. Return the results
 
-Each analyte is an [Observation](StructureDefinition-uz-core-observation.html) with a LOINC `code`, a `value[x]`, an `interpretation` (normal / high / low / critical) and a `referenceRange`. Each Observation sets `basedOn` to the ServiceRequest and `specimen` to the Specimen. The set is summarised by a `DiagnosticReport` whose `basedOn` is the ServiceRequest and whose `result` lists the Observations.
+Each analyte is an [Observation](StructureDefinition-uz-core-observation.html) with a LOINC `code`, a `value[x]`, an `interpretation` (normal / high / low / critical) and a `referenceRange`. Each Observation sets `basedOn` to the ServiceRequest and `specimen` to the Specimen. The set is summarised by a [DiagnosticReport](StructureDefinition-uz-core-diagnostic-report.html) whose `basedOn` is the ServiceRequest and whose `result` lists the Observations.
 
 ```
 GET [base]/DiagnosticReport?based-on=ServiceRequest/[id]&_include=DiagnosticReport:result
@@ -57,5 +59,5 @@ The `ServiceRequest.status` follows the order lifecycle (draft &rarr; active &ra
 
 ### Related
 
-- Profiles: [Specimen](StructureDefinition-uz-core-specimen.html) &middot; [Observation](StructureDefinition-uz-core-observation.html) &middot; [HealthcareService](StructureDefinition-uz-core-healthcareservice.html)
+- Profiles: [Specimen](StructureDefinition-uz-core-specimen.html) &middot; [Observation](StructureDefinition-uz-core-observation.html) &middot; [ServiceRequest](StructureDefinition-uz-core-servicerequest-laboratory.html) &middot; [DiagnosticReport](StructureDefinition-uz-core-diagnostic-report.html) &middot; [HealthcareService](StructureDefinition-uz-core-healthcareservice.html)
 - [Workflows overview](workflows.html) &middot; [General guidance](general-guidance.html) &middot; [Vital signs](vital-signs.html)
