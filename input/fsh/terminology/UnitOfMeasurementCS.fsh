@@ -1,7 +1,7 @@
 CodeSystem: UnitOfMeasurementCS
 Id: unit-of-measurement-cs
 Title: "Unit of measurement codes"
-Description: "Unit of measurement codes codes supplement with translations in uzbek and russian"
+Description: "Local unit of measurement codes with Uzbek and Russian translations"
 * insert OriginalCodeSystemDraft(unit-of-measurement-cs)
 
 * #253 "foiz"

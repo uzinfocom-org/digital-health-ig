@@ -90,10 +90,11 @@ Context: HealthcareService
 
 Extension: Trustee
 Id: trustee
-Title: "Trustee Extension"
+Title: "Trustee"
 Description: "Extension to specify a trustee (RelatedPerson or PractitionerRole)"
 Context: MedicationRequest
-* value[x] only Reference(RelatedPerson or PractitionerRole)
+* ^experimental = true
+* value[x] only Reference(UZCoreRelatedPerson or UZCorePractitionerRole)
 
 
 Extension: PaymentType

@@ -46,7 +46,7 @@ Description: "Uzbekistan Core MedicationRequest profile, used to order medicatio
 * informationSource ^definition = "Used to indicate the source of information about the medication order, i.e. who or what source provided the information about this medication"
 
 * extension contains trustee named trustee 0..* MS
-* extension[trustee] ^short = "Trustee {patronage nurse | relative}"
+* extension[trustee] ^short = "Person authorized to collect the medication, such as a patronage nurse or relative"
 * extension[trustee] ^definition = "A trustee is a person authorized to collect medication from the pharmacy on behalf of the patient based on a written prescription"
 
 * encounter MS
@@ -162,7 +162,7 @@ SHOULD NOT BE USED:
 * medication only CodeableReference(UZCoreMedication)
 * subject only Reference(UZCorePatient)
 * informationSource only Reference(UZCorePatient or UZCorePractitioner or UZCorePractitionerRole or RelatedPerson or UZCoreOrganization)
-* extension[trustee].valueReference only Reference(RelatedPerson or UZCorePractitionerRole)
+* extension[trustee].valueReference only Reference(UZCoreRelatedPerson or UZCorePractitionerRole)
 * encounter only Reference(UZCoreEncounter)
 * requester only Reference(UZCorePractitionerRole)
 * reason only CodeableReference(UZCoreCondition or UZCoreObservation)
