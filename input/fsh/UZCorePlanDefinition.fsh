@@ -71,14 +71,6 @@ Description: "Uzbekistan Core profile that stores and represents the National Im
 * action.code MS
 * action.code from ActionCodeVS (example)
 
-// A vaccine dose is often applicable to several risk groups, but action.subject is 0..1.
-// Model one action per risk group rather than repeating subject; the precise eligibility
-// rule lives in action.condition (kind = applicability).
-* action.subject[x] MS
-* action.subject[x] only CodeableConcept
-* action.subjectCodeableConcept from RiskGroupVS (extensible)
-* action.subject[x] ^short = "Risk group this immunization action is applicable to"
-
 * action.condition MS
 * action.condition.kind MS
 * action.condition.kind from ActionConditionVS (required)
@@ -170,111 +162,6 @@ Description: "Uzbekistan Core Immunization PlanDefinition profile, used to repre
 * action[1].participant[0].type = $action-participant-type#practitioner
 * action[1].participant[0].actorId = "vaccinator"
 * action[1].definitionUri = "https://terminology.dhp.uz/fhir/core/ActivityDefinition/example-activity-definition"
-
-
-Instance: example-hepatitis-b-risk-based-schedule
-InstanceOf: UZCoreImmunizationPlanDefinition
-Usage: #example
-Title: "Example UZ Core Immunization PlanDefinition - Hepatitis B by risk group"
-Description: "Hepatitis B schedule demonstrating risk-group-targeted actions: a universal birth dose, the protocol for infants of HBsAg-positive mothers, and the occupational 0-1-6 month series for healthcare workers. Each dose targets a single risk group via action.subject, so risk groups are expressed as separate actions rather than a repeating field."
-* id = "example-hepatitis-b-risk-based-schedule"
-
-* url = "https://terminology.dhp.uz/fhir/core/PlanDefinition/example-hepatitis-b-risk-based-schedule"
-* name = "HepatitisBRiskBasedImmunizationSchedule"
-* title = "Hepatitis B Immunization Schedule by Risk Group"
-* status = $publication-status#draft
-* experimental = true
-* date = "2026-06-29"
-* publisher = "DHP Uzbekistan"
-* description = "National hepatitis B immunization actions, split by the population each dose targets. The universal birth dose applies to all newborns; additional actions target infants of HBsAg-positive mothers and occupationally exposed healthcare workers."
-
-* useContext[immunizationFocus].code = $usage-context-type#focus
-* useContext[immunizationFocus].valueCodeableConcept = $sct#33879002 "Active immunization"
-
-* approvalDate = "2025-12-15"
-* effectivePeriod.start = "2026-01-01"
-
-// Action 0 - universal birth dose: applies to every newborn, so it carries no risk-group subject
-* action[0].id = "hepb-birth-universal"
-* action[0].linkId = "hepb-birth-universal"
-* action[0].title = "Hepatitis B vaccine - birth dose"
-* action[0].description = "Administer monovalent hepatitis B vaccine to all newborns within 24 hours of birth."
-* action[0].code = $action-code#recommend-immunization "Recommend an immunization"
-* action[0].timingAge.value = 0
-* action[0].timingAge.unit = "day"
-* action[0].timingAge.system = "http://unitsofmeasure.org"
-* action[0].timingAge.code = #d
-* action[0].participant[0].type = $action-participant-type#practitioner
-* action[0].participant[0].actorId = "vaccinator"
-* action[0].definitionUri = "https://terminology.dhp.uz/fhir/core/ActivityDefinition/hepatitis-b-monovalent"
-
-// Action 1 - infants of HBsAg-positive mothers (life-stage / exposure risk group)
-* action[1].id = "hepb-hbsag-mother"
-* action[1].linkId = "hepb-hbsag-mother"
-* action[1].title = "Hepatitis B vaccine and HBIG - infant of HBsAg-positive mother"
-* action[1].description = "For infants born to HBsAg-positive mothers, give the hepatitis B vaccine birth dose together with hepatitis B immunoglobulin (HBIG) within 12 hours of birth, then complete the primary series on schedule."
-* action[1].code = $action-code#recommend-immunization "Recommend an immunization"
-* action[1].subjectCodeableConcept = risk-group-cs#newborn-hbsag-positive-mother "Newborns of HBsAg-positive mothers"
-* action[1].condition[0].kind = $action-condition-kind#applicability "Applicability"
-* action[1].condition[0].expression.description = "Infant whose mother is hepatitis B surface antigen (HBsAg) positive"
-* action[1].condition[0].expression.language = #text/fhirpath
-* action[1].condition[0].expression.expression = "%maternalHBsAg = 'positive'"
-* action[1].timingAge.value = 0
-* action[1].timingAge.unit = "day"
-* action[1].timingAge.system = "http://unitsofmeasure.org"
-* action[1].timingAge.code = #d
-* action[1].participant[0].type = $action-participant-type#practitioner
-* action[1].participant[0].actorId = "vaccinator"
-* action[1].definitionUri = "https://terminology.dhp.uz/fhir/core/ActivityDefinition/hepatitis-b-monovalent"
-
-// Action 2 - healthcare workers, dose 1 of the 0-1-6 month occupational series
-* action[2].id = "hepb-hcw-dose1"
-* action[2].linkId = "hepb-hcw-dose1"
-* action[2].title = "Hepatitis B vaccine - healthcare worker, dose 1"
-* action[2].description = "First dose of the 3-dose hepatitis B series for healthcare workers exposed to blood and body fluids who lack documented immunity."
-* action[2].code = $action-code#recommend-immunization "Recommend an immunization"
-* action[2].subjectCodeableConcept = risk-group-cs#medical-workers "Healthcare workers"
-* action[2].condition[0].kind = $action-condition-kind#applicability "Applicability"
-* action[2].condition[0].expression.description = "Healthcare worker with occupational exposure to blood or body fluids and no documented hepatitis B immunity"
-* action[2].condition[0].expression.language = #text/fhirpath
-* action[2].condition[0].expression.expression = "%occupationalBloodExposure = true"
-* action[2].participant[0].type = $action-participant-type#practitioner
-* action[2].participant[0].actorId = "vaccinator"
-* action[2].definitionUri = "https://terminology.dhp.uz/fhir/core/ActivityDefinition/hepatitis-b-adult"
-
-// Action 3 - healthcare workers, dose 2 (one month after dose 1)
-* action[3].id = "hepb-hcw-dose2"
-* action[3].linkId = "hepb-hcw-dose2"
-* action[3].title = "Hepatitis B vaccine - healthcare worker, dose 2"
-* action[3].description = "Second dose, given one month after the first dose."
-* action[3].code = $action-code#recommend-immunization "Recommend an immunization"
-* action[3].subjectCodeableConcept = risk-group-cs#medical-workers "Healthcare workers"
-* action[3].relatedAction[0].targetId = "hepb-hcw-dose1"
-* action[3].relatedAction[0].relationship = $action-relationship-type#after-end
-* action[3].relatedAction[0].offsetDuration.value = 1
-* action[3].relatedAction[0].offsetDuration.unit = "month"
-* action[3].relatedAction[0].offsetDuration.system = "http://unitsofmeasure.org"
-* action[3].relatedAction[0].offsetDuration.code = #mo
-* action[3].participant[0].type = $action-participant-type#practitioner
-* action[3].participant[0].actorId = "vaccinator"
-* action[3].definitionUri = "https://terminology.dhp.uz/fhir/core/ActivityDefinition/hepatitis-b-adult"
-
-// Action 4 - healthcare workers, dose 3 (six months after dose 1), completing the series
-* action[4].id = "hepb-hcw-dose3"
-* action[4].linkId = "hepb-hcw-dose3"
-* action[4].title = "Hepatitis B vaccine - healthcare worker, dose 3"
-* action[4].description = "Third dose, given six months after the first dose, completing the series."
-* action[4].code = $action-code#recommend-immunization "Recommend an immunization"
-* action[4].subjectCodeableConcept = risk-group-cs#medical-workers "Healthcare workers"
-* action[4].relatedAction[0].targetId = "hepb-hcw-dose1"
-* action[4].relatedAction[0].relationship = $action-relationship-type#after-end
-* action[4].relatedAction[0].offsetDuration.value = 6
-* action[4].relatedAction[0].offsetDuration.unit = "month"
-* action[4].relatedAction[0].offsetDuration.system = "http://unitsofmeasure.org"
-* action[4].relatedAction[0].offsetDuration.code = #mo
-* action[4].participant[0].type = $action-participant-type#practitioner
-* action[4].participant[0].actorId = "vaccinator"
-* action[4].definitionUri = "https://terminology.dhp.uz/fhir/core/ActivityDefinition/hepatitis-b-adult"
 
 
 
