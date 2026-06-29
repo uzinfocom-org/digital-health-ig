@@ -1,16 +1,14 @@
-> **Mashina tarjimasi, inson tomonidan tekshirilishi zarur.** Ushbu sahifa ingliz tilidan sun'iy intellekt yordamida avtomatik tarjima qilingan va hali muharrir tomonidan tekshirilmagan. Har qanday nomuvofiqlikda asl inglizcha versiya ustuvor hisoblanadi.
+Ushbu jarayon bitta muammo bo'yicha bemorga ko'rsatiladigan tibbiy yordam ma'lumotlari vaqt davomida qanday guruhlanishini ko'rsatadi. Alohida tashrif [Encounter](StructureDefinition-uz-core-encounter.html) resursi bilan ifodalanadi; bir nechta tashrifni qamrab oladigan tibbiy yordam jarayoni - masalan, homiladorlikni kuzatish, onkologik kasallikni davolash yoki surunkali infeksiyani boshqarish - [EpisodeOfCare](StructureDefinition-uz-core-episodeofcare.html) resursi bilan ifodalanadi. EpisodeOfCare bitta klinik holatga tegishli tashriflar, tashxislar va natijalarni bog'laydi, natijada klinitsist tarqoq yozuvlar o'rniga holatning to'liq tarixini ko'radi.
 
-Ushbu ish jarayoni bemorning bitta muammo bo'yicha tibbiy yordami vaqt davomida qanday guruhlanishini ko'rsatadi. Bitta tashrif - bu [Encounter](StructureDefinition-uz-core-encounter.html); ko'plab tashriflarni qamrab oluvchi davolanish kursi - homiladorlik, saraton kasalligi davolash yo'li, surunkali infeksiya - bu [EpisodeOfCare](StructureDefinition-uz-core-episodeofcare.html). Epizod bitta holatning tashriflari, tashxislari va natijalarini bir-biriga bog'laydigan ipdir, shunda klinisist tarqoq yozuvlarni emas, balki butun hikoyani ko'radi.
+> Profillarning holati: [EpisodeOfCare](StructureDefinition-uz-core-episodeofcare.html), [Encounter](StructureDefinition-uz-core-encounter.html), [Condition](StructureDefinition-uz-core-condition.html) va [Observation](StructureDefinition-uz-core-observation.html) UZ Core doirasida profillangan. Davolash vaqtida ishlatiladigan MedicationRequest profili ishlab chiqilmoqda. U e'lon qilingunga qadar FHIR R5 bazaviy resursidan foydalaning.
 
-> Profil holati: [EpisodeOfCare](StructureDefinition-uz-core-episodeofcare.html), [Encounter](StructureDefinition-uz-core-encounter.html), [Condition](StructureDefinition-uz-core-condition.html) va [Observation](StructureDefinition-uz-core-observation.html) UZ Core'da profillangan. Davolanish davomida ishlatiladigan MedicationRequest profili ishlab chiqilmoqda - u nashr etilgunga qadar bazaviy FHIR R5 resursidan foydalaning.
-
-Ishtirokchilar: umumiy amaliyot shifokori (holatni ochadi va kuzatib boradi); mutaxassislar (holat doirasida davolaydi); platforma (DHP).
+Ishtirokchilar: umumiy amaliyot shifokori (klinik holatni ochadi va kuzatib boradi); mutaxassislar (klinik holat doirasida davolaydi); DHP (Digital Health Platform - Raqamli sog'liqni saqlash platformasi).
 
 <div>{% include patient-journey-sequence.svg %}</div><br clear="all"/>
 
-### 1. Epizodni ochish
+### 1. EpisodeOfCare resursini ochish
 
-Muammo boshqarilishi kerak bo'lgan holatga aylanganda - odatda tasdiqlovchi natija olinganda - klinisist `status = active` bilan `EpisodeOfCare` yaratadi, `patient`da bemorni, mas'ul klinisist/jamoani va `period.start`da tashxis sanasini ko'rsatadi. Tashxis qo'yilgan [Encounter](StructureDefinition-uz-core-encounter.html) va [Condition](StructureDefinition-uz-core-condition.html) unga bog'lanadi.
+Muammo yuritilishi kerak bo'lgan klinik holatga aylanganda - odatda tasdiqlovchi natija olingach - klinitsist `status = active` bo'lgan `EpisodeOfCare` resursini yaratadi, `patient` elementida bemorni, mas'ul klinitsist yoki jamoani ko'rsatadi va `period.start` elementiga tashxis qo'yilgan sanani kiritadi. Diagnostik [Encounter](StructureDefinition-uz-core-encounter.html) va [Condition](StructureDefinition-uz-core-condition.html) ushbu EpisodeOfCare bilan bog'lanadi.
 
 ```
 POST [base]/EpisodeOfCare
@@ -21,9 +19,9 @@ POST [base]/EpisodeOfCare
   "period": { "start": "2026-05-30" } }
 ```
 
-### 2. Holatdagi hamma narsa epizodga murojaat qiladi
+### 2. Klinik holatga tegishli barcha ma'lumotlar EpisodeOfCare bilan bog'lanadi
 
-Holat amal qilgan davr mobaynida har bir tashrif va har bir natija epizodga murojaat qiladi, shunda yozuv guruhlangan holda qoladi. [Encounter](StructureDefinition-uz-core-encounter.html) `episodeOfCare`ni o'z ichiga oladi; [Observation](StructureDefinition-uz-core-observation.html) o'zining `encounter`ini qayd etadi; davolanish o'sha tashriflarda `MedicationRequest` (yoki `MedicationAdministration`) sifatida qayd etiladi.
+Klinik holat davomida har bir tashrif va har bir natija EpisodeOfCare resursiga reference saqlaydi, shu sababli yozuvlar birgalikda guruhlangan holda qoladi. [Encounter](StructureDefinition-uz-core-encounter.html) resursida `episodeOfCare` elementi orqali EpisodeOfCare ko'rsatiladi; [Observation](StructureDefinition-uz-core-observation.html) resursida unga tegishli Encounter `encounter` elementida qayd etiladi; davolash esa shu Encounter resurslari doirasida `MedicationRequest` (yoki `MedicationAdministration`) yordamida qayd etiladi.
 
 ```
 POST [base]/Encounter
@@ -34,24 +32,24 @@ POST [base]/Encounter
   "episodeOfCare": [{ "reference": "EpisodeOfCare/[id]" }] }
 ```
 
-### 3. Yo'lning ikki ko'rinishi
+### 3. Tibbiy yordam jarayonining ikki ko'rinishi
 
-Epizodning hayot tsikli holat turiga qarab farq qiladi:
+EpisodeOfCare resursining hayotiy sikli klinik holat turiga qarab farq qiladi:
 
-**O'tkir / davolanadigan (masalan, HCV davolash kursi).** Epizod tashxis qo'yilganda ochiladi, davolash tashriflari va monitoring tahlillari orqali davom etadi va davolanish tasdiqlanganda yopiladi: `status = finished` qo'ying va `period.end`ni tuzalish sanasiga o'rnating.
+**O'tkir / davolash mumkin bo'lgan holat (masalan, HCV - C gepatiti virusini davolash kursi).** EpisodeOfCare tashxis qo'yilganda ochiladi, davolash tashriflari va nazorat laboratoriya tekshiruvlarini qamrab oladi hamda sog'ayish tasdiqlanganda yopiladi: `status = finished` qiymatini belgilang va `period.end` elementida sog'ayish sanasini ko'rsating.
 
-**Surunkali / umrbod (masalan, HBV boshqaruvi).** Epizod yillar davomida `active` holatida qoladi. To'xtatishlar va qayta tiklashlar uni yopish orqali emas, balki `EpisodeOfCare.statusHistory`da qayd etiladi. Bemor boshqa provayderga o'tganda, epizodni **qayta tayinlamang**: asl epizodni yoping (`status = finished`) va qabul qiluvchi tashkilotda yangi `EpisodeOfCare` oching, shunda har bir tashkilot o'zi taqdim etgan yo'l qismiga egalik qiladi.
+**Surunkali / umrbod kuzatuvni talab qiladigan holat (masalan, HBV - B gepatiti virusi bilan bog'liq holatni yuritish).** EpisodeOfCare ko'p yillar davomida `active` statusida qoladi. Tibbiy yordamning to'xtatilishi va qayta boshlanishi EpisodeOfCare resursini yopish orqali emas, `EpisodeOfCare.statusHistory` elementida qayd etiladi. Bemor boshqa tibbiy xizmat ko'rsatuvchi tashkilotga o'tganda, EpisodeOfCare resursini boshqa tashkilotga **qayta biriktirmang**: dastlabki EpisodeOfCare resursini yoping (`status = finished`) va qabul qiluvchi tashkilotda yangi `EpisodeOfCare` yarating. Shunda har bir tashkilot o'zi ko'rsatgan tibbiy yordam qismi uchun javob beradi.
 
-| Hodisa | Ta'siri |
+| Hodisa | Natija |
 |-------|--------|
-| Holat boshlanadi (tasdiqlovchi natija) | `EpisodeOfCare.status = active`, `period.start` o'rnatiladi |
-| Yordam to'xtatildi / qayta tiklandi | `statusHistory`ga qo'shing (`onhold` &rarr; `active`); epizod ochiq qoladi |
-| Davolanish tasdiqlandi (o'tkir) | `status = finished`, `period.end` o'rnatiladi |
-| Yordamni o'tkazish | asl `status = finished`; yangi tashkilotda yangi `EpisodeOfCare` ochiladi |
+| Klinik holat boshlanadi (tasdiqlovchi natija) | `EpisodeOfCare.status = active`, `period.start` ko'rsatiladi |
+| Tibbiy yordam to'xtatiladi / qayta boshlanadi | `statusHistory` elementiga yozuv qo'shiladi (`onhold` &rarr; `active`); EpisodeOfCare ochiq holatda qoladi |
+| Sog'ayish tasdiqlandi (o'tkir holat) | `status = finished`, `period.end` ko'rsatiladi |
+| Tibbiy yordamni boshqa tashkilotga o'tkazish | dastlabki `status = finished`; yangi tashkilotda yangi `EpisodeOfCare` ochiladi |
 
-### 4. Yo'lni o'qish
+### 4. Tibbiy yordam jarayonini ko'rish
 
-Klinisist epizodni va unga murojaat qiluvchi resurslarni o'qish orqali holatni ochadi:
+Klinitsist EpisodeOfCare va unga reference saqlaydigan resurslarni o'qish orqali klinik holatni ochadi:
 
 ```
 GET [base]/EpisodeOfCare?patient=Patient/[id]&status=active
@@ -59,9 +57,9 @@ GET [base]/Encounter?episode-of-care=EpisodeOfCare/[id]&_sort=-date
 GET [base]/Observation?patient=Patient/[id]&_sort=-date
 ```
 
-Har bir tashrif, natija va retsept epizod murojaatini o'z ichiga olgani uchun, bu butun holatni bitta ip sifatida qaytaradi - bu yozuvlarni tashriflar bo'ylab tarqoq qoldirish o'rniga `EpisodeOfCare` bo'yicha guruhlashning mohiyatidir.
+Har bir tashrif, natija va dori vositasini tayinlash EpisodeOfCare resursiga reference saqlaganligi sababli, ushbu so'rovlar butun klinik holatni yagona bog'langan ketma-ketlik sifatida qaytaradi. Yozuvlarni alohida Encounter resurslari bo'yicha tarqoq qoldirmasdan `EpisodeOfCare` yordamida guruhlashning maqsadi ham shundan iborat.
 
-### Tegishli
+### Bog'liq materiallar
 
 - Profillar: [EpisodeOfCare](StructureDefinition-uz-core-episodeofcare.html) &middot; [Encounter](StructureDefinition-uz-core-encounter.html) &middot; [Condition](StructureDefinition-uz-core-condition.html) &middot; [Observation](StructureDefinition-uz-core-observation.html)
-- [Ish jarayonlari sharhi](workflows.html) &middot; [Umumiy ko'rsatmalar](general-guidance.html)
+- [Jarayonlar sharhi](workflows.html) &middot; [Umumiy ko'rsatmalar](general-guidance.html)
