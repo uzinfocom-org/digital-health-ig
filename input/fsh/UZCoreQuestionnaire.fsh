@@ -17,6 +17,7 @@ Description: "Uzbekistan Core Questionnaire profile for multilingual structured 
 
 // Multilingual title
 * insert MultilingualTitle(Questionnaire)
+* title 1..1
 
 // Description with translation
 * description MS
