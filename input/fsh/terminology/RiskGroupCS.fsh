@@ -1,19 +1,25 @@
-// Risk groups a vaccine dose can be applicable to, for use on
-// PlanDefinition.action.subject in the UZ Core Immunization PlanDefinition.
+// Provenance - which source provided which codes:
 //
-// Immunization schedules express applicability along several axes: age, position
-// in the dose series, and "indications" - coded medical, behavioural, occupational
-// and exposure conditions that make a vaccine applicable to a person (see CDC ACIP
-// "by medical indication" schedule and CDSi indications, and the WHO risk-group
-// recommendations). This code system enumerates those named risk groups so a dose
-// can declare the population it targets, while the precise eligibility rule is
-// carried by PlanDefinition.action.condition (kind = applicability).
-//
-// The set is a comprehensive starter list synthesised from WHO recommendations,
-// the CDC/ACIP medical-indication categories, and Uzbekistan's "by epidemiological
-// indications" (по эпидемиологическим показаниям) contingents. Labels should be
-// reconciled against the official SanPiN contingent list before the profile leaves
-// draft.
+// - CDC Child & Adolescent schedule by medical indication
+//   (https://www.cdc.gov/vaccines/hcp/imz-schedules/child-adolescent-medical-indication.html):
+//   immunocompromised, hiv-infection, asplenia, complement-deficiency, chronic-heart-disease,
+//   chronic-lung-disease, chronic-liver-disease, chronic-kidney-disease, diabetes,
+//   csf-leak-cochlear-implant
+// - WHO Table 1 PDF, Hepatitis B note
+//   (https://cdn.who.int/media/docs/default-source/immunization/tables/immunization-routine-table1.pdf):
+//   transplant-recipient, high-risk-sexual-behavior, newborn-hbsag-positive-mother, hbv-carrier-contact
+// - WHO Table 1 PDF, BCG note (same URL): laboratory-personnel, congregate-settings
+// - WHO Table 1 PDF, premature/low-birth-weight note (same URL): preterm-infant
+// - WHO Table 1 PDF, "high-risk populations" and regional bands - typhoid/cholera/meningococcal/
+//   rabies/hepatitis A/JE/TBE (same URL): animal-exposure, travelers-endemic-area, residents-endemic-area
+// - WHO Table 4, Immunization of Health Care Workers
+//   (https://www.who.int/teams/immunization-vaccines-and-biologicals/policies/who-recommendations-for-routine-immunization---summary-tables):
+//   medical-workers
+// - WHO influenza risk-group study, PMC (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8800189/):
+//   pregnant-women, older-adults
+// - Australian Immunisation Handbook, household contacts
+//   (https://immunisationhandbook.health.gov.au/recommendations/healthcare-workers-carers-and-household-contacts-of-people-in-high-risk-groups-are-recommended-to-receive-influenza-vaccine-every-year):
+//   household-contact-case
 
 CodeSystem: RiskGroupCS
 Id: risk-group-cs
@@ -34,46 +40,6 @@ Description: "Risk groups that an immunization dose can be applicable to, coveri
   * ^designation[=].value = "Сотрудники лабораторий, работающие с патогенами"
   * ^designation[+].language = #en
   * ^designation[=].value = "Laboratory personnel handling pathogens"
-* #veterinary-workers "Veterinariya xodimlari"
-  * ^designation[0].language = #ru
-  * ^designation[=].value = "Ветеринарные работники"
-  * ^designation[+].language = #en
-  * ^designation[=].value = "Veterinary workers"
-* #livestock-workers "Chorvachilik va qishloq xo'jaligi xodimlari"
-  * ^designation[0].language = #ru
-  * ^designation[=].value = "Работники животноводства и сельского хозяйства"
-  * ^designation[+].language = #en
-  * ^designation[=].value = "Livestock and agricultural workers"
-* #slaughterhouse-workers "So'yishxona va go'sht qayta ishlash xodimlari"
-  * ^designation[0].language = #ru
-  * ^designation[=].value = "Работники скотобоен и мясопереработки"
-  * ^designation[+].language = #en
-  * ^designation[=].value = "Slaughterhouse and meat-processing workers"
-* #animal-product-workers "Teri, jun va hayvon xom ashyosi bilan ishlovchi xodimlar"
-  * ^designation[0].language = #ru
-  * ^designation[=].value = "Работники, контактирующие с кожсырьём, шерстью и животным сырьём"
-  * ^designation[+].language = #en
-  * ^designation[=].value = "Workers handling hides, wool and animal raw materials"
-* #water-sewerage-workers "Suv ta'minoti va kanalizatsiya xodimlari"
-  * ^designation[0].language = #ru
-  * ^designation[=].value = "Работники водоснабжения и канализации"
-  * ^designation[+].language = #en
-  * ^designation[=].value = "Water supply and sewerage workers"
-* #food-industry-workers "Oziq-ovqat sanoati va umumiy ovqatlanish xodimlari"
-  * ^designation[0].language = #ru
-  * ^designation[=].value = "Работники пищевой промышленности и общественного питания"
-  * ^designation[+].language = #en
-  * ^designation[=].value = "Food industry and catering workers"
-* #education-childcare-workers "Ta'lim va bolalar muassasalari xodimlari"
-  * ^designation[0].language = #ru
-  * ^designation[=].value = "Работники образования и детских учреждений"
-  * ^designation[+].language = #en
-  * ^designation[=].value = "Education and childcare workers"
-* #military-personnel "Harbiy xizmatchilar va chaqiriluvchilar"
-  * ^designation[0].language = #ru
-  * ^designation[=].value = "Военнослужащие и призывники"
-  * ^designation[+].language = #en
-  * ^designation[=].value = "Military personnel and conscripts"
 
 // ===== Medical / host condition =====
 
@@ -186,22 +152,12 @@ Description: "Risk groups that an immunization dose can be applicable to, coveri
   * ^designation[=].value = "Жители эндемичных или природно-очаговых территорий"
   * ^designation[+].language = #en
   * ^designation[=].value = "Residents of endemic or natural-focus areas"
-* #outbreak-affected "Kasallik avj olgan o'choqlardagi shaxslar"
-  * ^designation[0].language = #ru
-  * ^designation[=].value = "Лица в очагах вспышек заболеваний"
-  * ^designation[+].language = #en
-  * ^designation[=].value = "Persons in disease outbreak foci"
 * #congregate-settings "Uyushgan jamoalarda yashovchi shaxslar"
   * ^definition = "Residents of congregate settings such as boarding institutions, long-term care facilities and places of detention."
   * ^designation[0].language = #ru
   * ^designation[=].value = "Лица, проживающие в организованных коллективах (интернаты, дома престарелых, места лишения свободы)"
   * ^designation[+].language = #en
   * ^designation[=].value = "Residents of congregate settings"
-* #people-who-inject-drugs "In'eksion giyohvand moddalarni iste'mol qiluvchilar"
-  * ^designation[0].language = #ru
-  * ^designation[=].value = "Лица, употребляющие инъекционные наркотики"
-  * ^designation[+].language = #en
-  * ^designation[=].value = "People who inject drugs"
 * #high-risk-sexual-behavior "Xavfli jinsiy xulq-atvorli shaxslar"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Лица с рискованным сексуальным поведением"
