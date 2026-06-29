@@ -66,6 +66,12 @@ RuleSet: MultilingualName(entityType)
   * extension contains translation named translation 0..* MS
     * ^short = "{entityType} name (in Russian and Karakalpak languages)"
 
+RuleSet: MultilingualTitle(entityType)
+* title 1..1 MS
+  * ^short = "{entityType} title (in Uzbek language)"
+  * extension contains translation named translation 0..* MS
+    * ^short = "{entityType} title (in Russian and Karakalpak languages)"
+
 RuleSet: HumanName
 * name MS
   * use and text and family and given and suffix and period MS
