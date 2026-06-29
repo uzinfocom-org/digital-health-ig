@@ -1,16 +1,78 @@
 ### В разработке
 
-(Пока без изменений)
+#### Новые профили
+
+Добавлен профиль [UZ Core DiagnosticReport](StructureDefinition-uz-core-diagnostic-report.html) для лабораторных и диагностических отчётов с сопутствующей терминологией для [категории услуг](ValueSet-diagnostic-report-service-category-vs.html), [статуса](ValueSet-diagnostic-report-status-vs.html) и [типов отчётов](ValueSet-lab-report-types-vs.html).
+
+Добавлен профиль [UZ Core ServiceRequest Laboratory](StructureDefinition-uz-core-servicerequest-laboratory.html) для заказа лабораторных тестов и панелей, включая терминологию для [типа оплаты](ValueSet-payment-type-vs.html) и [статуса запроса](ValueSet-service-request-status-vs.html).
+
+Добавлен профиль [UZ Core Specimen](StructureDefinition-uz-core-specimen.html) для клинических образцов с терминологией для [метода сбора](ValueSet-specimen-collection-method-vs.html), [типа образца](ValueSet-specimen-types-vs.html), [роли](ValueSet-specimen-role-vs.html) и [статуса](ValueSet-specimen-status-vs.html). На него ссылаются профили лабораторного ServiceRequest и DiagnosticReport.
+
+Добавлен профиль [UZ Core Laboratory ObservationDefinition](StructureDefinition-uz-core-laboratory-observation-definition.html), чтобы системы могли публиковать определения лабораторных тестов - допустимые единицы измерения, методы измерения и референсные диапазоны с учётом пола - для Портала пациента и интегрирующихся систем.
+
+Добавлен профиль [UZ Core Immunization](StructureDefinition-uz-core-immunization.html) для регистрации вакцинаций с терминологией для [целевого заболевания](ValueSet-target-disease-vs.html), [места введения](ValueSet-immunization-site-vs.html), [пути введения](ValueSet-route-code-vs.html) и [источника финансирования](ValueSet-funding-source-vs.html), а также ConceptMap для перевода [национальных кодов вакцин DMED в CVX](ConceptMap-dmed-vaccine-to-cvx-cm.html).
+
+Добавлен профиль [UZ Core ImmunizationRecommendation](StructureDefinition-uz-core-immunization-recommendation.html) для прогнозов вакцинации с терминологией для [статуса прогноза](ValueSet-recommendation-forecast-status-vs.html), [критерия даты](ValueSet-recommendation-date-criterion-vs.html) и [причины](ValueSet-recommendation-reason-vs.html).
+
+Добавлен профиль [UZ Core Immunization PlanDefinition](StructureDefinition-uz-core-immunization-plan-definition.html) для национальных календарей иммунизации.
+
+Добавлен профиль [UZ Core ActivityDefinition](StructureDefinition-uz-core-activity-definition.html) для определения переиспользуемых клинических активностей (процедур, тестов, протоколов медикаментозной терапии) независимо от конкретного пациента.
+
+Добавлен профиль [UZ Core AdverseEvent](StructureDefinition-uz-core-adverse-event.html) для регистрации нежелательных явлений с терминологией для [фактичности](ValueSet-adverse-event-actuality-vs.html), [серьёзности](ValueSet-adverse-event-seriousness-vs.html), [исхода](ValueSet-adverse-event-outcome-vs.html) и [статуса](ValueSet-adverse-event-status-vs.html).
+
+Добавлен профиль [UZ Core Medication](StructureDefinition-uz-core-medication.html) с характерными для Узбекистана идентификаторами медикаментов (ID маркировки, регистрационное удостоверение, GTIN, ID агрегации коробки, код национальной классификации продуктов и услуг) и терминологией на основе АТХ для [классификации](ValueSet-medication-classification-vs.html) и [лекарственной формы](ValueSet-medication-doseform-vs.html).
+
+Добавлен профиль [UZ Core Procedure](StructureDefinition-uz-core-procedure.html) с терминологией для [статуса процедуры](ValueSet-procedure-event-status-vs.html), [кодов процедур](ValueSet-procedure-code-vs.html) на основе SNOMED CT и [исхода](ValueSet-procedure-outcome-vs.html), а также примером ConceptMap [SNOMED CT в ICHI](ConceptMap-snomed-to-ichi-procedures.html) для отчётности по возмещению расходов.
+
+#### Изменения терминологии и привязок
+
+Добавлены [коды лабораторных методов](CodeSystem-lab-methods-cs.html) с ConceptMap, сопоставляющими лабораторные [коды панелей и аналитов](ConceptMap-lab-pan-codes-to-loinc.html) с LOINC и [коды методов](ConceptMap-lab-methods-to-loinc.html) с SNOMED CT. Коды методов представлены [набором значений лабораторных методов](ValueSet-lab-method-vs.html), привязанным к элементу `method` профиля [UZ Core Observation](StructureDefinition-uz-core-observation.html).
+
+В [UZ Core PractitionerRole](StructureDefinition-uz-core-practitioner-role.html) `code` теперь привязан (required) к [набору значений должностей и профессий](ValueSet-position-and-profession-vs.html) (ранее - набор значений ролей медработников); `specialty` по-прежнему привязан (required) к [набору значений специализаций профессий](ValueSet-profession-specialization-vs.html). Реализаторы должны заполнять роли медработников кодами из этих наборов значений.
+
+Добавлено [расширение времени обработки](StructureDefinition-turnaround-time.html) в [UZ Core HealthcareService](StructureDefinition-uz-core-healthcareservice.html) для указания ожидаемого времени получения результатов по лабораторным услугам. Привязки категории и типа в этом профиле также смягчены с required на extensible, чтобы реализаторы могли добавлять локальные коды.
+
+`type` в [UZ Core Encounter](StructureDefinition-uz-core-encounter.html) и [UZ Core EpisodeOfCare](StructureDefinition-uz-core-episodeofcare.html), а также `signature.type` в [UZ Core Provenance](StructureDefinition-uz-core-provenance.html) теперь разбиты на слайсы, так что национальный код требуется, а дополнительные кодировки остаются разрешёнными.
+
+Целевые ссылки в нескольких профилях теперь указывают на профили UZ Core там, где они существуют - например, [UZ Core Observation](StructureDefinition-uz-core-observation.html) `specimen` на UZ Core Specimen и `partOf` на UZ Core Procedure/Immunization, [UZ Core Immunization](StructureDefinition-uz-core-immunization.html) `administeredProduct` на UZ Core Medication и [UZ Core AdverseEvent](StructureDefinition-uz-core-adverse-event.html) `suspectEntity` на UZ Core Medication. Ресурсы, на которые ссылаются, теперь должны соответствовать соответствующему профилю UZ Core.
+
+[UZ Core Encounter](StructureDefinition-uz-core-encounter.html) `reason` и [UZ Core Observation](StructureDefinition-uz-core-observation.html) `basedOn` теперь могут ссылаться на ImmunizationRecommendation.
+
+Канонические URL наборов значений домена идентификаторов и EpisodeOfCare (а также наборов значений иностранных паспортов и водительских удостоверений) перемещены с `https://dhp.uz/fhir/core/ValueSet/...` на `https://terminology.dhp.uz/fhir/core/ValueSet/...`. Реализаторам, ссылающимся на эти канонические URL напрямую, необходимо их обновить.
+
+[CodeSystem гражданства](CodeSystem-nationality-cs.html), на основе которого построен [набор значений гражданства](ValueSet-nationality-vs.html) в [UZ Core Patient](StructureDefinition-uz-core-patient.html), пересоздан на основе обновлённого списка гражданств dmp.uz: он вырос с 306 до 512 записей, отображаемые названия стандартизированы (верхний регистр), добавлены русские и английские переводы, а коды переназначены - один и тот же код теперь может обозначать другую национальность (например, `#1` изменился с "Ruslar" на "ADIGEY"). Это критическое изменение: коды гражданства, сохранённые в предыдущей версии, необходимо сопоставить заново.
+
+Исправлены английские отображаемые названия в [OrganizationalSpecializationCS](CodeSystem-organizational-specialization-cs.html) (единообразный регистр; "Children" изменено на "Pediatric"). Коды не изменились.
+
+Добавлены терминологические мосты DMED для приёма данных из национальной системы DMED: [коды стран](ConceptMap-dmed-country-to-dhp-country-cm.html) сопоставлены с ISO 3166, [единицы измерения](ConceptMap-dmed-measure-unit-to-dhp-cm.html) - с UCUM, а профессии DMED сопоставлены как с [SNOMED CT](ConceptMap-dmed-position-to-snomed-cm.html), так и с [должностями DHP](ConceptMap-dmed-position-to-dhp-position-cm.html).
+
+`gender` в [UZ Core Patient](StructureDefinition-uz-core-patient.html) теперь привязан (required) к новому [набору значений административного пола](ValueSet-administrative-gender-vs.html) с русскими и узбекскими переводами.
+
+#### Организация и идентификаторы
+
+Добавлены слайсы идентификаторов Государственного фонда медицинского страхования (SHIF) и Министерства здравоохранения (Минздрав) в [UZ Core Organization](StructureDefinition-uz-core-organization.html). Коды поставщиков, назначаемые SHIF, типизированы как `PRN` (номер поставщика). Новая страница [идентификация плательщиков](payor-identification.html) объясняет, как идентифицируются плательщики и их законтрактованные поставщики.
+
+В [UZ Core Patient](StructureDefinition-uz-core-patient.html) и [UZ Core RelatedPerson](StructureDefinition-uz-core-relatedperson.html) локальный идентификатор паспорта больше не фиксирует `use` как `official`: используйте `official` для текущей ID-карты и `old` для устаревшего бумажного паспорта с той же системой. См. страницу [идентификаторы](identifiers.html).
+
+#### Документация
+
+Добавлены страницы руководства по внедрению - [как читать это руководство](how-to-read.html), [общее руководство](general-guidance.html) и [Must Support](must-support.html) - а также сквозные [разборы рабочих процессов](workflows.html) для [лабораторного](workflow-lab.html), [иммунизационного](workflow-immunization.html), [направительного](workflow-referral.html) процессов, [пути пациента](workflow-patient-journey.html) и [процесса назначения лекарств](workflow-prescription.html). Каждый профиль теперь также имеет вводные разделы с описанием и примечаниями.
+
+Добавлено [руководство по валидации ресурсов на соответствие UZ Core](api-access.html#validation) с использованием валидатора командной строки и validator.fhir.org.
+
+Обновлено руководство по [доступу к API](api-access.html): на данный момент на песочнице валидируются только системы кодов ICD-10 и HL7, PKCE обязателен для фронтенд-клиентов, а детали аутентификации теперь ссылаются на внешнюю документацию SSO.
+
+Страница Services переименована в [Компоненты](components.html) и дополнена описаниями компонентов и переводами на русский и узбекский.
 
 ### Версия 0.5.0
 
-Добавлены [коды лабораторных исследований](CodeSystem-observation-lab-research-codes-cs.html) для панелей и аналитов, используемых в Узбекистане.
+Добавлены [коды лабораторных исследований](CodeSystem-lab-pan-cs.html) для панелей и аналитов, используемых в Узбекистане.
 
 Добавлено [пространство имён идентификаторов документов](identifiers.html#document-identifiers) (doc) в систему идентификаторов.
 
 #### Изменения профиля Organization
 
-Слайс `type.coding[organizationType]` в [UZ Core Organization](StructureDefinition-uz-core-organization.html) теперь использует [OrganizationTypeUZCS](CodeSystem-organization-types-uz-cs.html) вместо международного CodeSystem HL7 `organization-type`. Например, `$organization-type-cs#prov` необходимо заменить на код из `organization-types-uz-cs` (напр. `#I` "Распределение по управлению"). Прямого соответствия нет - каждую организацию необходимо классифицировать в новой системе (коды I-V).
+Слайс `type.coding[organizationType]` в [UZ Core Organization](StructureDefinition-uz-core-organization.html) теперь использует OrganizationTypeUZCS вместо международного CodeSystem HL7 `organization-type`. Например, `$organization-type-cs#prov` необходимо заменить на код из `organization-types-uz-cs` (напр. `#I` "Распределение по управлению"). Прямого соответствия нет - каждую организацию необходимо классифицировать в новой системе (коды I-V).
 
 Добавлен слайс `type.coding[organizationGrouping]` в [UZ Core Organization](StructureDefinition-uz-core-organization.html) с использованием [OrganizationGroupingCS](CodeSystem-organization-grouping-uz-cs.html) для детальной группировки учреждений (напр. `#104` "Специализированные больницы", `#210` "Семейная поликлиника"). Разработчикам следует заполнять этот новый слайс.
 
@@ -26,7 +88,7 @@
 
 Добавлены ConceptMap для перевода кодов MIS2 в терминологию UZ Core: [MIS2MedicalTypeToOrganizationalStructureCM](ConceptMap-mis2-medical-type-to-organizational-structure-cm.html) для `type.coding[organizationalStructure]`, [MIS2LevelTypeToSubordinationGroupCM](ConceptMap-mis2-level-type-to-subordination-group-cm.html) для `type.coding[subordinationGroup]` и [MIS2ServiceTypeToOrganizationalServiceGroupCM](ConceptMap-mis2-service-type-to-organizational-service-group-cm.html) для `type.coding[organizationalServiceGroup]`. Разработчикам, выполняющим перевод из MIS2, следует использовать эти карты для заполнения соответствующих слайсов.
 
-Добавлен профиль [UZ Core AllergyIntolerance](StructureDefinition-uz-core-allergy-intolerance.html) с сопутствующими CodeSystem и ValueSet ([AllergenCodesVS](ValueSet-allergen-codes-vs.html), [ReactionSubstanceVS](ValueSet-allergy-reaction-substance-vs.html), [ReactionManifestationVS](ValueSet-allergy-reaction-manifestation-vs.html), [AllergyCategoryVS](ValueSet-allergy-category-vs.html), [AllergyTypeVS](ValueSet-allergy-type-vs.html), [AllergyClinicalStatusVS](ValueSet-allergy-clinical-status-vs.html), [AllergyVerificationStatusVS](ValueSet-allergy-verification-status-vs.html), [AllergyReactionSeverityVS](ValueSet-allergy-reaction-severity-vs.html)), а также ConceptMap для перевода локальных кодов аллергенов и проявлений реакций в SNOMED CT. Разработчикам, фиксирующим аллергии, следует использовать этот профиль.
+Добавлен профиль [UZ Core AllergyIntolerance](StructureDefinition-uz-core-allergy-intolerance.html) с сопутствующими CodeSystem и ValueSet ([AllergenCodesVS](ValueSet-allergen-codes-vs.html), [ReactionSubstanceVS](ValueSet-allergy-reaction-substance-vs.html), [ReactionManifestationVS](ValueSet-allergy-reaction-manifestation-vs.html), [AllergyCategoryVS](ValueSet-allergy-category-vs.html), [AllergyTypeVS](ValueSet-allergy-type-vs.html), [AllergyClinicalStatusVS](ValueSet-allergy-clinical-status-vs.html), [AllergyVerificationStatusVS](ValueSet-allergy-verification-status-vs.html), [AllergyReactionSeverityVS](ValueSet-allergy-reaction-severity-vs.html)), а также ConceptMap для перевода локальных кодов аллергенов и проявлений реакций в SNOMED CT.
 
 `UZCoreClinicalCondition` удалён и объединён с [UZ Core Condition](StructureDefinition-uz-core-condition.html). Разработчикам необходимо обновить ссылки с `uz-core-clinical-condition` на `uz-core-condition`. Для `Condition.code` теперь используется новый набор значений [ConditionCodeVS](ValueSet-condition-code-vs.html), объединяющий коды ICD-10 и SNOMED CT (привязка preferred).
 

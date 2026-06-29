@@ -1,4 +1,4 @@
-# DHP-temp FHIR Implementation Guide
+# Uzbekistan Digital Health Platform FHIR Implementation Guide
 
 ## Build Commands
 - **Full build**: `./_build.sh` or `./_genonce.sh` (main build command)

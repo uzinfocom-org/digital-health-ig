@@ -2,7 +2,7 @@ Profile: UZCoreImmunizationPlanDefinition
 Parent: PlanDefinition
 Id: uz-core-immunization-plan-definition
 Title: "UZ Core Immunization PlanDefinition"
-Description: "UZ Core profile for Stores and represents the National Immunization Schedule of Uzbekistan, including planned vaccines, recommended administration periods, target age groups, dose sequences, and related scheduling rules. This profile is used to define structured immunization activities that support consistent planning, implementation, and exchange of vaccination schedules within the national digital health ecosystem."
+Description: "Uzbekistan Core profile that stores and represents the National Immunization Schedule of Uzbekistan, including planned vaccines, recommended administration periods, target age groups, dose sequences, and related scheduling rules. It is used to define structured immunization activities that support consistent planning, implementation, and exchange of vaccination schedules within the national digital health ecosystem."
 * ^status = #draft
 * ^experimental = true
 
@@ -50,7 +50,11 @@ Description: "UZ Core profile for Stores and represents the National Immunizatio
 * useContext[immunizationFocus] ^short = "Marks this PlanDefinition as an immunization schedule"
 * useContext[immunizationFocus].code = $usage-context-type#focus
 * useContext[immunizationFocus].value[x] only CodeableConcept
-* useContext[immunizationFocus].valueCodeableConcept = $sct#33879002 "Active immunization"
+* useContext[immunizationFocus].valueCodeableConcept.coding 1..1
+* useContext[immunizationFocus].valueCodeableConcept.coding.system 1..1
+* useContext[immunizationFocus].valueCodeableConcept.coding.code 1..1
+* useContext[immunizationFocus].valueCodeableConcept.coding.display ^short = "Active immunization"
+* useContext[immunizationFocus].valueCodeableConcept = $sct#33879002
 
 * approvalDate MS
 * effectivePeriod MS

@@ -94,6 +94,55 @@ If-Match: W/"3"
 
 *\<to be filled in - describe error handling here\>*
 
+### Валидация ресурсов по UZ Core {#validation}
+
+Прежде чем отправлять данные на платформу, проверьте их по профилям UZ Core. Используйте [онлайн-валидатор](#validation-web) (ничего не нужно устанавливать) или [командную строку FHIR-валидатора](#validation-cli) (можно автоматизировать). Оба используют один и тот же движок валидации; важно загрузить это руководство (IG), чтобы профили `uz-core-*` разрешались.
+
+#### Командная строка валидатора {#validation-cli}
+
+Для автоматизации или скриптового использования скачайте [HL7 FHIR валидатор](https://github.com/hapifhir/org.hl7.fhir.core/releases/latest/download/validator_cli.jar) и выполните:
+
+```
+java -jar validator_cli.jar resource.json -version 5.0.0 -ig uz.dhp.core#current
+```
+
+Флаг `-ig` выполняет ту же роль, что и добавление IG в онлайн-валидаторе ниже.
+
+#### Онлайн-валидатор (validator.fhir.org) {#validation-web}
+
+1. Откройте [validator.fhir.org](https://validator.fhir.org/).
+2. На вкладке Options установите версию FHIR `5.0.0`. Затем в разделе Implementation Guides введите `uz.dhp` в поле *Select IG*, выберите `uz.dhp.core`, укажите версию `current` и нажмите Add. Убедитесь, что появилось `Selected IGs (1): uz.dhp.core#current`.
+3. На вкладке Validate вставьте ресурс в поле Enter Resource (или используйте Upload Resources) и нажмите Validate.
+4. Просмотрите результаты. Каждое замечание показывает уровень серьёзности, местоположение и сообщение.
+
+<figure style="margin: 1.5em 0;">
+<img src="validator-fhir-org-1-options.png" width="460" alt="Загрузка руководства UZ Core на вкладке Options в validator.fhir.org"/>
+<figcaption style="font-size: 0.9em; color: #555;">Шаг 2 - загрузка <code>uz.dhp.core#current</code> в Options.</figcaption>
+</figure>
+
+<figure style="margin: 1.5em 0;">
+<img src="validator-fhir-org-2-enter-resource.png" width="560" alt="Ввод ресурса на вкладке Validate"/>
+<figcaption style="font-size: 0.9em; color: #555;">Шаг 3 - ввод ресурса на вкладке Validate.</figcaption>
+</figure>
+
+<figure style="margin: 1.5em 0;">
+<img src="validator-fhir-org-3-results.png" width="760" alt="Результаты валидации"/>
+<figcaption style="font-size: 0.9em; color: #555;">Шаг 4 - результаты валидации.</figcaption>
+</figure>
+
+Загрузка IG на шаге 2 - это шаг, который часто пропускают. Если его пропустить, валидатор не сможет разрешить профиль `uz-core-*`, указанный в `meta.profile` ресурса, и попытается обратиться к его каноническому URL по сети, что вернёт ошибку 404:
+
+```
+Profile reference 'https://dhp.uz/fhir/core/StructureDefinition/uz-core-encounter'
+has not been checked because it could not be found ... 404 Not Found
+```
+
+В этом случае ресурс проверяется только по базовой спецификации FHIR R5, а не по UZ Core, и реальные нарушения профиля остаются незамеченными.
+
+#### Выбор версии {#validation-version}
+
+`current` отслеживает последнюю сборку этого руководства. Закреплённый релиз, например `uz.dhp.core#0.5.0`, проверяет по последней официальной публикации, которая может отставать от `current` и поэтому сообщать о меньшем числе проблем. Используйте `current`, пока руководство ещё развивается.
+
 ### Must Support
 Многие элементы в профилях помечены как Must Support. О том, что это означает, в каких двух контекстах используется и как обращаться с элементами, которые вы не можете заполнить, см. на отдельной странице [Must Support](must-support.html).
 

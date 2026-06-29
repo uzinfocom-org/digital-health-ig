@@ -1,0 +1,5 @@
+CODE,RU,UZ,,http://hl7.org/fhir/ValueSet/administrative-gender
+male,мужской,erkak,,
+female,женский,ayol,,
+other,другой,boshqa,,
+unknown,неизвестно,noma'lum,,

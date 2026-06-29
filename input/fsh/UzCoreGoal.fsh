@@ -83,7 +83,7 @@ May be:
 * outcome MS
 * outcome only CodeableReference(UZCoreObservation)
 * outcome ^short = "What result was achieved regarding this goal? Free-text in concept.text, SNOMED, or custom codes may be used."
-
+* outcome from GoalOutcomeVS (preferred)
 
 Instance: example-goal
 InstanceOf: UZCoreGoal

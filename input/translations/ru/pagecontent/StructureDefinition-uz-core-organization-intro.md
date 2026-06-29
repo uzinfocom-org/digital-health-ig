@@ -14,9 +14,9 @@ UZ Core Organization представляет медицинскую или ад
 
 
 
-- идентификатор - срез с налоговым ID Soliq, срез с ID организации Argos и срез с ID плательщика страхования SHIF/SMIF (код из 3 букв + 6 цифр, например `OAA000024`). Поддерживаемые URI систем см. в разделе [Системы идентификаторов](identifiers.html);
+- идентификатор - срез с налоговым ID Soliq, срез с ID организации Argos и срез с ID поставщика SHIF/SMIF (код из 3 букв + 6 цифр, например `OAA000024`). Поддерживаемые URI систем см. в разделе [Системы идентификаторов](identifiers.html);
 - флаг active;
-- тип (type) - несколько кодированных срезов классификации (тип организации, группа подчинённости, номенклатурная группа, организационная структура, группа служб, специализация, без юридического статуса и группировка), взятых из национальных кодовых систем;
+- тип (type) - несколько кодированных срезов классификации (группа подчинённости, номенклатурная группа, организационная структура, группа служб, специализация и группировка), взятых из национальных кодовых систем;
 - национальное расширение зоны обслуживания (coverage-area) (обслуживаемая географическая зона);
 - контактные данные;
 - ссылку partOf на родительскую организацию (связь иерархии);
@@ -35,6 +35,7 @@ UZ Core Organization представляет медицинскую или ад
 ```json
 {
   "resourceType": "Organization",
+  "language": "uz",
   "meta": {
     "profile": ["https://dhp.uz/fhir/core/StructureDefinition/uz-core-organization"]
   },
@@ -60,6 +61,7 @@ UZ Core Organization представляет медицинскую или ад
 ```json
 {
   "resourceType": "Organization",
+  "language": "uz",
   "meta": {
     "profile": ["https://dhp.uz/fhir/core/StructureDefinition/uz-core-organization"]
   },
@@ -93,6 +95,7 @@ UZ Core Organization представляет медицинскую или ад
 ```json
 {
   "resourceType": "Organization",
+  "language": "uz",
   "meta": { "profile": [ "https://dhp.uz/fhir/core/StructureDefinition/uz-core-organization" ] },
   "active": true,
   "name": "Respublika onkologiya markazi",
@@ -131,8 +134,8 @@ UZ Core Organization представляет медицинскую или ад
         "coding": [
           {
             "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
-            "code": "NIIP",
-            "display": "National Insurance Payor Identifier (Payor)"
+            "code": "PRN",
+            "display": "Provider number"
           }
         ]
       },
@@ -145,11 +148,6 @@ UZ Core Organization представляет медицинскую или ад
     {
       "coding": [
         {
-          "system": "https://terminology.dhp.uz/fhir/core/CodeSystem/organization-types-uz-cs",
-          "code": "I",
-          "display": "Boshqaruv boyicha taqsimlanishi"
-        },
-        {
           "system": "https://terminology.dhp.uz/fhir/core/CodeSystem/organizational-subordination-group-cs",
           "code": "I_1",
           "display": "Respublika tassarufidagi muassasalari"
@@ -160,14 +158,19 @@ UZ Core Organization представляет медицинскую или ад
           "display": "Shifoxona muassasalari"
         },
         {
+          "system": "https://terminology.dhp.uz/fhir/core/CodeSystem/organizational-service-group-cs",
+          "code": "III_100",
+          "display": "Poliklinika bo'limi va statsionar bo'limi mavjud"
+        },
+        {
           "system": "https://terminology.dhp.uz/fhir/core/CodeSystem/organizational-structure-cs",
           "code": "110",
           "display": "Ixtisoslashtirilgan ilmiy-amaliy tibbiyot markazi"
         },
         {
-          "system": "https://terminology.dhp.uz/fhir/core/CodeSystem/organizational-service-group-cs",
-          "code": "III_100",
-          "display": "Poliklinika bo'limi va statsionar bo'limi mavjud"
+          "system": "https://terminology.dhp.uz/fhir/core/CodeSystem/organization-grouping-uz-cs",
+          "code": "164",
+          "display": "Ixtisoslashtirilgan ona va bola salomatligi ilmiy-amaliy tibbiyot markazi"
         },
         {
           "system": "https://terminology.dhp.uz/fhir/core/CodeSystem/organizational-specialization-cs",
@@ -205,7 +208,7 @@ UZ Core Organization представляет медицинскую или ад
 |---|---|---|
 | Налоговый ID Soliq | `https://dhp.uz/fhir/core/sid/org/uz/soliq` | `TAX` |
 | ID организации Argos | `https://dhp.uz/fhir/core/sid/org/uz/argos` | `XX` |
-| ID плательщика страхования SHIF | `https://dhp.uz/fhir/core/sid/org/uz/shif` | `NIIP` |
+| ID поставщика SHIF | `https://dhp.uz/fhir/core/sid/org/uz/shif` | `PRN` |
 
 Значение идентификатора SHIF должно состоять из 3 заглавных латинских букв, за которыми следуют 6 цифр (например, `OAA000024`). Полный список поддерживаемых URI систем см. в разделе [Системы идентификаторов](identifiers.html).
 
@@ -216,6 +219,7 @@ UZ Core Organization представляет медицинскую или ад
 ```json
 {
   "resourceType": "Organization",
+  "language": "uz",
   "meta": {
     "profile": ["https://dhp.uz/fhir/core/StructureDefinition/uz-core-organization"]
   },

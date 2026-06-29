@@ -5,3 +5,4 @@ Description: "Value set containing all position and profession codes from the DM
 * ^url = "https://terminology.dhp.uz/fhir/core/ValueSet/dmed-specialties-vs"
 * ^experimental = true
 * include codes from system dmed-specialties-cs
+* include codes from system dmed-role-cs
