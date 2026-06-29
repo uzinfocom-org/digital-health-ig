@@ -10,7 +10,7 @@
 
 ### 1. Календарь как код
 
-Национальный календарь публикуется один раз в виде [PlanDefinition](StructureDefinition-uz-core-immunization-plan-definition.html). Каждая рекомендованная доза — это `PlanDefinition.action`; вакцина и сведения о дозировании переносятся в действие через `definitionCanonical`, ссылающийся на `ActivityDefinition`, либо через национальные расширения (`doseSequence`, `maximumInterval`, `gracePeriod`). Минимальные интервалы между дозами используют `action.relatedAction.offsetDuration`; показания используют `action.condition`.
+Национальный календарь публикуется один раз в виде [PlanDefinition](StructureDefinition-uz-core-immunization-plan-definition.html). Каждая рекомендованная доза — это `PlanDefinition.action`; вакцина и сведения о дозировании переносятся в действие через `definitionCanonical`, ссылающийся на `ActivityDefinition`. Целевой возраст или расписание задаётся через `action.timing[x]` (`Age` или `Timing`); минимальные интервалы между дозами используют `action.relatedAction.offsetDuration`; показания используют `action.condition`.
 
 ```
 GET [base]/PlanDefinition?status=active&context-type-value=focus$http://snomed.info/sct|33879002

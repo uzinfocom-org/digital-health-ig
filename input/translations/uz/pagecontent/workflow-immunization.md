@@ -10,7 +10,7 @@ Zanjir:
 
 ### 1. Jadval kod sifatida
 
-Milliy jadval bir marta [PlanDefinition](StructureDefinition-uz-core-immunization-plan-definition.html) sifatida e'lon qilinadi. Har bir tavsiya etilgan doza `PlanDefinition.action` hisoblanadi; vaksina va dozalash tafsilotlari `definitionCanonical` orqali `ActivityDefinition`ga yoki milliy kengaytmalar (`doseSequence`, `maximumInterval`, `gracePeriod`) orqali harakat ustida olib boriladi. Dozalar orasidagi minimal intervallar `action.relatedAction.offsetDuration`dan foydalanadi; yaroqlilik `action.condition`dan foydalanadi.
+Milliy jadval bir marta [PlanDefinition](StructureDefinition-uz-core-immunization-plan-definition.html) sifatida e'lon qilinadi. Har bir tavsiya etilgan doza `PlanDefinition.action` hisoblanadi; vaksina va dozalash tafsilotlari `definitionCanonical` orqali `ActivityDefinition`ga bog'lanib, harakat ustida olib boriladi. Maqsadli yosh yoki jadval `action.timing[x]` (`Age` yoki `Timing`) orqali beriladi; dozalar orasidagi minimal intervallar `action.relatedAction.offsetDuration`dan foydalanadi; yaroqlilik `action.condition`dan foydalanadi.
 
 ```
 GET [base]/PlanDefinition?status=active&context-type-value=focus$http://snomed.info/sct|33879002
