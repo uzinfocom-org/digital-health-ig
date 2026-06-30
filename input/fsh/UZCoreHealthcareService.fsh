@@ -8,7 +8,9 @@ Description: "Uzbekistan Core HealthcareService profile, used to define healthca
 * ^date = "2025-03-11"
 * ^publisher = "Uzinfocom"
 
-* active and category and type and name MS
+* active and category and type and providedBy MS
+
+* insert MultilingualName(услуги)
 
 
 * extension contains

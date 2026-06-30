@@ -4,13 +4,13 @@
 
 > Статус профилей: профили ServiceRequest и Task находятся в разработке. На этой странице описана предполагаемая модель, чтобы системы могли уже сейчас реализовывать интеграцию на её основе. До публикации профилей используйте базовые ресурсы FHIR R5 и приведённые ниже правила. Ресурсы [Procedure](StructureDefinition-uz-core-procedure.html), [Observation](StructureDefinition-uz-core-observation.html), [Encounter](StructureDefinition-uz-core-encounter.html) и [Condition](StructureDefinition-uz-core-condition.html), используемые при выполнении направления, уже профилированы.
 
-Участники: направляющий клиницист; комиссии по согласованию (для направлений по государственному медицинскому страхованию); медицинская организация, оказывающая услугу.
+Участники: направляющий клиницист; комиссии по согласованию (для направлений, финансируемых государством); медицинская организация, оказывающая услугу.
 
 <div>{% include referral-sequence.svg %}</div><br clear="all"/>
 
 ### 1. Создание направления
 
-Клиницист создаёт `ServiceRequest` (`intent = order`), содержащий классификационные данные направления: запрашиваемую услугу в `code`, срочность в `priority` (`routine` \| `urgent` \| `stat`), целевую услугу через `HealthcareService`, клиническое обоснование в `reason` и тип финансирования в extension `coverageKind` (`state-insurance` \| `insurance` \| `self-payment` \| `other`).
+Клиницист создаёт `ServiceRequest` (`intent = order`), содержащий классификационные данные направления: запрашиваемую услугу в `code`, срочность в `priority` (`routine` \| `urgent` \| `stat`), целевую услугу через `HealthcareService`, клиническое обоснование в `reason` и тип финансирования в расширении [PaymentType](StructureDefinition-payment-type.html) (`Free` \| `Paid` \| `Insurance` \| `State-funded`).
 
 ```
 POST [base]/ServiceRequest
@@ -22,11 +22,11 @@ POST [base]/ServiceRequest
   "reason": [{ "reference": { "reference": "Condition/[id]" } }] }
 ```
 
-### 2. Цепочка согласования (только для государственного медицинского страхования)
+### 2. Цепочка согласования (только для финансируемых государством)
 
 Это основное правило принятия решения:
 
-> Если `ServiceRequest.coverageKind = state-insurance`, платформа создаёт цепочку `Task` для согласования; в противном случае Task не создаётся, и направление обрабатывается напрямую.
+> Если PaymentType у ServiceRequest равен `State-funded`, платформа создаёт цепочку `Task` для согласования; в противном случае Task не создаётся, и направление обрабатывается напрямую.
 
 Каждый этап согласования представлен отдельным `Task`, содержащим reference на ServiceRequest (`Task.focus`/`basedOn`), а в `Task.code` указывается код из набора категорий согласования:
 
@@ -42,7 +42,7 @@ ServiceRequest и связанные с ним Task синхронизируют
 
 | Событие | Результат |
 |-------|--------|
-| ServiceRequest переводится в `active` (state-insurance) | создаётся первый Task согласования со `status=requested` |
+| ServiceRequest переводится в `active` (state-funded) | создаётся первый Task согласования со `status=requested` |
 | ServiceRequest переводится в `revoked` | всем открытым Task присваивается `revoked` |
 | ServiceRequest переводится в `entered-in-error` | всем Task присваивается `entered-in-error` |
 | Последний Task согласования переводится в `completed` | ServiceRequest переводится в `completed` |

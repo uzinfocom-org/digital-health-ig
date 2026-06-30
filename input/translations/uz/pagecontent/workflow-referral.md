@@ -4,13 +4,13 @@ Ushbu jarayon yo'llanma qanday yaratilishi va bajarilishini ko'rsatadi. Yo'llanm
 
 > Profillarning holati: ServiceRequest va Task profillari ishlab chiqilmoqda. Ushbu sahifada tizimlar integratsiyani hozirdanoq shu model asosida amalga oshirishi uchun rejalashtirilgan modellashtirish yondashuvi tavsiflangan. Profillar e'lon qilingunga qadar FHIR R5 bazaviy resurslari va quyidagi qoidalardan foydalaning. Yo'llanmani bajarishda qo'llaniladigan [Procedure](StructureDefinition-uz-core-procedure.html), [Observation](StructureDefinition-uz-core-observation.html), [Encounter](StructureDefinition-uz-core-encounter.html) va [Condition](StructureDefinition-uz-core-condition.html) resurslari profillangan.
 
-Ishtirokchilar: yo'llanma beruvchi klinitsist; kelishish komissiyalari (davlat tibbiy sug'urtasi bo'yicha yo'llanmalar uchun); xizmat ko'rsatuvchi tibbiyot tashkiloti.
+Ishtirokchilar: yo'llanma beruvchi klinitsist; kelishish komissiyalari (davlat tomonidan moliyalashtiriladigan yo'llanmalar uchun); xizmat ko'rsatuvchi tibbiyot tashkiloti.
 
 <div>{% include referral-sequence.svg %}</div><br clear="all"/>
 
 ### 1. Yo'llanmani yaratish
 
-Klinitsist yo'llanmaning tasniflash ma'lumotlarini o'z ichiga oluvchi `ServiceRequest` (`intent = order`) resursini yaratadi: so'ralgan xizmat `code` elementida, shoshilinchlik darajasi `priority` elementida (`routine` \| `urgent` \| `stat`), maqsadli xizmat `HealthcareService` orqali, klinik asos `reason` elementida va moliyalashtirish turi `coverageKind` extensionida (`state-insurance` \| `insurance` \| `self-payment` \| `other`) ko'rsatiladi.
+Klinitsist yo'llanmaning tasniflash ma'lumotlarini o'z ichiga oluvchi `ServiceRequest` (`intent = order`) resursini yaratadi: so'ralgan xizmat `code` elementida, shoshilinchlik darajasi `priority` elementida (`routine` \| `urgent` \| `stat`), maqsadli xizmat `HealthcareService` orqali, klinik asos `reason` elementida va moliyalashtirish turi [PaymentType](StructureDefinition-payment-type.html) kengaytmasida (`Free` \| `Paid` \| `Insurance` \| `State-funded`) ko'rsatiladi.
 
 ```
 POST [base]/ServiceRequest
@@ -22,11 +22,11 @@ POST [base]/ServiceRequest
   "reason": [{ "reference": { "reference": "Condition/[id]" } }] }
 ```
 
-### 2. Kelishish bosqichlari zanjiri (faqat davlat tibbiy sug'urtasi uchun)
+### 2. Kelishish bosqichlari zanjiri (faqat davlat tomonidan moliyalashtiriladigan uchun)
 
 Bu asosiy qaror qabul qilish qoidasidir:
 
-> Agar `ServiceRequest.coverageKind = state-insurance` bo'lsa, platforma kelishish uchun `Task` resurslari zanjirini yaratadi; aks holda Task yaratilmaydi va yo'llanma bevosita davom etadi.
+> Agar ServiceRequest ning PaymentType qiymati `State-funded` bo'lsa, platforma kelishish uchun `Task` resurslari zanjirini yaratadi; aks holda Task yaratilmaydi va yo'llanma bevosita davom etadi.
 
 Har bir kelishish bosqichi ServiceRequest resursiga reference saqlovchi alohida `Task` resursi bilan ifodalanadi (`Task.focus`/`basedOn`), `Task.code` elementida esa kelishish toifalari to'plamidagi kod ko'rsatiladi:
 
@@ -42,7 +42,7 @@ ServiceRequest va unga bog'liq Task resurslari quyidagi qoidalar asosida o'zaro 
 
 | Hodisa | Natija |
 |-------|--------|
-| ServiceRequest `active` statusiga o'tadi (state-insurance) | birinchi kelishish Task resursi `status=requested` bilan yaratiladi |
+| ServiceRequest `active` statusiga o'tadi (state-funded) | birinchi kelishish Task resursi `status=requested` bilan yaratiladi |
 | ServiceRequest `revoked` statusiga o'tkaziladi | barcha ochiq Task resurslariga `revoked` statusi beriladi |
 | ServiceRequest `entered-in-error` statusiga o'tkaziladi | barcha Task resurslariga `entered-in-error` statusi beriladi |
 | Yakuniy kelishish Task resursi `completed` statusiga o'tadi | ServiceRequest `completed` statusiga o'tkaziladi |

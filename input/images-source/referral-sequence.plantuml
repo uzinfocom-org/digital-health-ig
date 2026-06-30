@@ -7,10 +7,10 @@ participant "DHP" as DHP
 participant "Approval\ncommissions" as Comm
 participant "Performing\nfacility" as Fac
 
-Clin -> DHP : POST ServiceRequest\n(intent = order, coverageKind)
+Clin -> DHP : POST ServiceRequest\n(intent = order, PaymentType)
 activate DHP
 
-alt coverageKind = state-insurance
+alt PaymentType = State-funded
   DHP -> DHP : create approval Task chain\n(first Task status = requested)
   loop approve-family-doctor ... approve-hospitalization
     Comm -> DHP : advance Task\n(accepted -> in-progress -> completed)

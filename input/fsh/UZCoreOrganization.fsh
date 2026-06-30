@@ -97,6 +97,7 @@ Description: "Uzbekistan Core Organization profile, used to define healthcare or
   * code from organization-grouping-uz-vs (required)
 
 * insert MultilingualName(организации)
+* name 1..1
 
 * contact MS
 * partOf MS
