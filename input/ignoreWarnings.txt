@@ -67,4 +67,4 @@ Hyperlink 'http://example.org/fhir/ObservationDefinition/example-laboratory-hemo
 No definition could be found for URL value 'http://example.org/fhir/sid/lab-test-catalog'
 
 # IG Publisher 2.2.10 emits an OID-assignment recommendation for every CodeSystem/ValueSet. We don't use OID-based terminology (e.g. CDA), so assigning OIDs IG-wide adds no value here.
-The resource %should have an OID assigned to cater for possible use with OID based terminology systems%
+%should have an OID assigned to cater for possible use with OID based terminology systems%
