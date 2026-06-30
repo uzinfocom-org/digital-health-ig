@@ -1,9 +1,7 @@
 .DS_Store
 Thumbs.db
 /fsh-generated
-/input-cache/*
-# keep the terminology cache committed so CI builds don't need a live tx server
-!/input-cache/txcache
+/input-cache
 /output*
 /temp
 /template
