@@ -172,6 +172,7 @@ Description: "Uzbekistan Core Patient profile, used to represent patients admini
 * active MS
 * birthDate MS
 * managingOrganization MS
+* managingOrganization only Reference(UZCoreOrganization)
 
 Instance: example-salim
 InstanceOf: UZCorePatient
