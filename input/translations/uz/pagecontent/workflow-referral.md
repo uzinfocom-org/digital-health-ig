@@ -6,13 +6,13 @@ Ushbu ish jarayoni yo'llanma qanday yaratilishini va bajarilishini ko'rsatadi. Y
 
 > Profil holati: ServiceRequest va Task profillari ishlab chiqilmoqda. Ushbu sahifa mo'ljallangan modellashtirishni tavsiflaydi, shunda tizimlar hozircha shunga asoslanib qurilishi mumkin; profillar e'lon qilinmaguncha, asosiy FHIR R5 resurslaridan va quyidagi qoidalardan foydalaning. Bajarishda ishlatiladigan [Procedure](StructureDefinition-uz-core-procedure.html), [Observation](StructureDefinition-uz-core-observation.html), [Encounter](StructureDefinition-uz-core-encounter.html) va [Condition](StructureDefinition-uz-core-condition.html) profillangan.
 
-Ishtirokchilar: yo'llovchi shifokor; tasdiqlash komissiyalari (davlat sug'urtasi yo'llanmalari uchun); xizmat ko'rsatuvchi muassasa.
+Ishtirokchilar: yo'llovchi shifokor; tasdiqlash komissiyalari (davlat tomonidan moliyalashtiriladigan yo'llanmalar uchun); xizmat ko'rsatuvchi muassasa.
 
 <div>{% include referral-sequence.svg %}</div><br clear="all"/>
 
 ### 1. Yo'llanmani yaratish
 
-Shifokor `ServiceRequest` (`intent = order`) yaratadi va unda yo'llanma tasnifini joylashtiradi: `code` da so'ralayotgan xizmat, `priority` da shoshilinchlik (`routine` \| `urgent` \| `stat`), `HealthcareService` orqali maqsadli xizmat, `reason` da klinik asoslanish va `coverageKind` kengaytmasida moliyalashtirish turi (`state-insurance` \| `insurance` \| `self-payment` \| `other`).
+Shifokor `ServiceRequest` (`intent = order`) yaratadi va unda yo'llanma tasnifini joylashtiradi: `code` da so'ralayotgan xizmat, `priority` da shoshilinchlik (`routine` \| `urgent` \| `stat`), `HealthcareService` orqali maqsadli xizmat, `reason` da klinik asoslanish va [PaymentType](StructureDefinition-payment-type.html) kengaytmasida moliyalashtirish turi (`Free` \| `Paid` \| `Insurance` \| `State-funded`).
 
 ```
 POST [base]/ServiceRequest
@@ -24,11 +24,11 @@ POST [base]/ServiceRequest
   "reason": [{ "reference": { "reference": "Condition/[id]" } }] }
 ```
 
-### 2. Tasdiqlash zanjiri (faqat davlat sug'urtasi)
+### 2. Tasdiqlash zanjiri (faqat davlat tomonidan moliyalashtiriladigan)
 
 Bu markaziy qaror qoidasi:
 
-> Agar `ServiceRequest.coverageKind = state-insurance` bo'lsa, platforma tasdiqlash `Task`lari zanjirini yaratadi; aks holda hech qanday Task yaratilmaydi va yo'llanma to'g'ridan-to'g'ri davom etadi.
+> Agar PaymentType kengaytmasi `State-funded` bo'lsa, platforma tasdiqlash `Task`lari zanjirini yaratadi; aks holda hech qanday Task yaratilmaydi va yo'llanma to'g'ridan-to'g'ri davom etadi.
 
 Har bir tasdiqlash bosqichi ServiceRequest ga (`Task.focus`/`basedOn`) murojaat qiluvchi `Task` bo'lib, uning `Task.code` qiymati tasdiqlash toifalari to'plamidan olinadi:
 
@@ -44,7 +44,7 @@ ServiceRequest va uning Tasklari quyidagi qoidalar orqali bir-biriga mos qoladi:
 
 | Hodisa | Natija |
 |-------|--------|
-| ServiceRequest `active` holatiga o'tadi (davlat sug'urtasi) | birinchi tasdiqlash Task `status=requested` bilan yaratiladi |
+| ServiceRequest `active` holatiga o'tadi (davlat tomonidan moliyalashtiriladigan) | birinchi tasdiqlash Task `status=requested` bilan yaratiladi |
 | ServiceRequest `revoked` qilib belgilanadi | barcha ochiq Tasklar `revoked` qilib belgilanadi |
 | ServiceRequest `entered-in-error` qilib belgilanadi | barcha Tasklar `entered-in-error` qilib belgilanadi |
 | Yakuniy tasdiqlash Task `completed` | ServiceRequest `completed` qilib belgilanadi |
