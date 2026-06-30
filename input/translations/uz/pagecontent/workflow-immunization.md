@@ -8,7 +8,7 @@ Jarayon ketma-ketligi:
 
 ### 1. Vaksinatsiya jadvali kod ko'rinishida
 
-Milliy vaksinatsiya jadvali [PlanDefinition](StructureDefinition-uz-core-immunization-plan-definition.html) sifatida bir marta e'lon qilinadi. Har bir tavsiya etilgan doza `PlanDefinition.action` orqali ifodalanadi; vaksina va dozalash tafsilotlari action'da `definitionCanonical` orqali `ActivityDefinition`'ga reference berish yoki milliy extension'lar (`doseSequence`, `maximumInterval`, `gracePeriod`) yordamida ko'rsatiladi. Dozalar orasidagi eng qisqa vaqt oralig'i `action.relatedAction.offsetDuration` orqali, muvofiqlik shartlari esa `action.condition` orqali belgilanadi.
+Milliy vaksinatsiya jadvali [PlanDefinition](StructureDefinition-uz-core-immunization-plan-definition.html) sifatida bir marta e'lon qilinadi. Har bir tavsiya etilgan doza `PlanDefinition.action` orqali ifodalanadi; vaksina va dozalash tafsilotlari action'da `definitionCanonical` orqali `ActivityDefinition`'ga reference berish yordamida ko'rsatiladi. Maqsadli yosh yoki jadval `action.timing[x]` (`Age` yoki `Timing`) orqali beriladi; dozalar orasidagi eng qisqa vaqt oralig'i `action.relatedAction.offsetDuration` orqali, muvofiqlik shartlari esa `action.condition` orqali belgilanadi.
 
 ```
 GET [base]/PlanDefinition?status=active&context-type-value=focus$http://snomed.info/sct|33879002

@@ -8,7 +8,7 @@
 
 ### 1. Календарь вакцинации в виде кода
 
-Национальный календарь вакцинации публикуется в виде одного ресурса [PlanDefinition](StructureDefinition-uz-core-immunization-plan-definition.html). Каждая рекомендуемая доза представлена отдельным `PlanDefinition.action`; сведения о вакцине и дозировании задаются в action через `definitionCanonical`, содержащий reference на `ActivityDefinition`, либо через национальные extensions (`doseSequence`, `maximumInterval`, `gracePeriod`). Минимальные интервалы между дозами задаются в `action.relatedAction.offsetDuration`; критерии применимости - в `action.condition`.
+Национальный календарь вакцинации публикуется в виде одного ресурса [PlanDefinition](StructureDefinition-uz-core-immunization-plan-definition.html). Каждая рекомендуемая доза представлена отдельным `PlanDefinition.action`; сведения о вакцине и дозировании задаются в action через `definitionCanonical`, содержащий reference на `ActivityDefinition`. Целевой возраст или расписание задаётся в `action.timing[x]` (`Age` или `Timing`); минимальные интервалы между дозами задаются в `action.relatedAction.offsetDuration`; критерии применимости - в `action.condition`.
 
 ```
 GET [base]/PlanDefinition?status=active&context-type-value=focus$http://snomed.info/sct|33879002
