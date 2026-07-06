@@ -48,6 +48,10 @@ Milliy DMED tizimidan ma'lumotlarni qabul qilish uchun DMED terminologik ko'prik
 
 [UZ Core Patient](StructureDefinition-uz-core-patient.html) dagi `gender` endi ruscha va o'zbekcha tarjimalari bilan yangi [ma'muriy jins ValueSet](ValueSet-administrative-gender-vs.html) ga (required) bog'langan.
 
+[UZ Core Patient](StructureDefinition-uz-core-patient.html) dagi `managingOrganization` endi Must Support hisoblanadi va [UZ Core Organization](StructureDefinition-uz-core-organization.html) ga havola qilishi kerak.
+
+Ko'p tilli tarjima kengaytmasi (o'zbekcha asosiy qiymat hamda ruscha va qoraqalpoqcha tarjimalar) [UZ Core HealthcareService](StructureDefinition-uz-core-healthcareservice.html) dagi `name` ga hamda [UZ Core ActivityDefinition](StructureDefinition-uz-core-activity-definition.html), [UZ Core Laboratory ObservationDefinition](StructureDefinition-uz-core-laboratory-observation-definition.html), [UZ Core Immunization PlanDefinition](StructureDefinition-uz-core-immunization-plan-definition.html) va [UZ Core Questionnaire](StructureDefinition-uz-core-questionnaire.html) dagi `title` ga qo'shildi. `name` endi [UZ Core Organization](StructureDefinition-uz-core-organization.html) va [UZ Core Location](StructureDefinition-uz-core-location.html) da majburiy.
+
 #### Tashkilot va identifikatorlar
 
 [UZ Core Organization](StructureDefinition-uz-core-organization.html) ga Davlat sog'liqni saqlash sug'urtasi jamg'armasi (DTSJ) va Sog'liqni saqlash vazirligi (Minzdrav) identifikator slayslari qo'shildi. DTSJ tomonidan tayinlangan provayder kodlari `PRN` (provayder raqami) sifatida tiplangan. Yangi [to'lovchini identifikatsiya qilish](payor-identification.html) sahifasi to'lovchilar va ular bilan shartnoma tuzgan provayderlar qanday identifikatsiya qilinishini tushuntiradi.
