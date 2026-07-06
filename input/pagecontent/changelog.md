@@ -1,5 +1,9 @@
 ### In development
 
+(No changes yet)
+
+### Version 0.6.0
+
 #### New profiles
 
 Added [UZ Core DiagnosticReport](StructureDefinition-uz-core-diagnostic-report.html) profile for laboratory and diagnostic reports, with supporting terminology for [service category](ValueSet-diagnostic-report-service-category-vs.html), [status](ValueSet-diagnostic-report-status-vs.html) and [report types](ValueSet-lab-report-types-vs.html).

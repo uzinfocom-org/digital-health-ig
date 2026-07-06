@@ -1,5 +1,9 @@
 ### Ishlab chiqish jarayonida
 
+(Hozircha o'zgarishlar yo'q)
+
+### Versiya 0.6.0
+
 #### Yangi profillar
 
 Laboratoriya va diagnostika hisobotlari uchun [UZ Core DiagnosticReport](StructureDefinition-uz-core-diagnostic-report.html) profili qo'shildi, [xizmat toifasi](ValueSet-diagnostic-report-service-category-vs.html), [holat](ValueSet-diagnostic-report-status-vs.html) va [hisobot turlari](ValueSet-lab-report-types-vs.html) uchun tegishli terminologiya bilan birga.
