@@ -1,5 +1,9 @@
 ### Ishlab chiqish jarayonida
 
+(Hozircha o'zgarishlar yo'q)
+
+### Versiya 0.6.0
+
 #### Yangi profillar
 
 Laboratoriya va diagnostika hisobotlari uchun [UZ Core DiagnosticReport](StructureDefinition-uz-core-diagnostic-report.html) profili qo'shildi, [xizmat toifasi](ValueSet-diagnostic-report-service-category-vs.html), [holat](ValueSet-diagnostic-report-status-vs.html) va [hisobot turlari](ValueSet-lab-report-types-vs.html) uchun tegishli terminologiya bilan birga.
@@ -47,6 +51,10 @@ Identifikator-domeni va EpisodeOfCare qiymatlar to'plamlarining (shuningdek chet
 Milliy DMED tizimidan ma'lumotlarni qabul qilish uchun DMED terminologik ko'priklari qo'shildi: [mamlakat kodlari](ConceptMap-dmed-country-to-dhp-country-cm.html) ISO 3166 ga, [o'lchov birliklari](ConceptMap-dmed-measure-unit-to-dhp-cm.html) UCUM ga moslashtirildi, DMED kasblari esa ham [SNOMED CT](ConceptMap-dmed-position-to-snomed-cm.html) ga, ham [DHP lavozimlari](ConceptMap-dmed-position-to-dhp-position-cm.html) ga moslashtirildi.
 
 [UZ Core Patient](StructureDefinition-uz-core-patient.html) dagi `gender` endi ruscha va o'zbekcha tarjimalari bilan yangi [ma'muriy jins ValueSet](ValueSet-administrative-gender-vs.html) ga (required) bog'langan.
+
+[UZ Core Patient](StructureDefinition-uz-core-patient.html) dagi `managingOrganization` endi Must Support hisoblanadi va [UZ Core Organization](StructureDefinition-uz-core-organization.html) ga havola qilishi kerak.
+
+Ko'p tilli tarjima kengaytmasi (o'zbekcha asosiy qiymat hamda ruscha va qoraqalpoqcha tarjimalar) [UZ Core HealthcareService](StructureDefinition-uz-core-healthcareservice.html) dagi `name` ga hamda [UZ Core ActivityDefinition](StructureDefinition-uz-core-activity-definition.html), [UZ Core Laboratory ObservationDefinition](StructureDefinition-uz-core-laboratory-observation-definition.html), [UZ Core Immunization PlanDefinition](StructureDefinition-uz-core-immunization-plan-definition.html) va [UZ Core Questionnaire](StructureDefinition-uz-core-questionnaire.html) dagi `title` ga qo'shildi. `name` endi [UZ Core Organization](StructureDefinition-uz-core-organization.html) va [UZ Core Location](StructureDefinition-uz-core-location.html) da majburiy.
 
 #### Tashkilot va identifikatorlar
 

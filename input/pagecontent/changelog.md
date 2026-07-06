@@ -1,5 +1,9 @@
 ### In development
 
+(No changes yet)
+
+### Version 0.6.0
+
 #### New profiles
 
 Added [UZ Core DiagnosticReport](StructureDefinition-uz-core-diagnostic-report.html) profile for laboratory and diagnostic reports, with supporting terminology for [service category](ValueSet-diagnostic-report-service-category-vs.html), [status](ValueSet-diagnostic-report-status-vs.html) and [report types](ValueSet-lab-report-types-vs.html).
@@ -47,6 +51,10 @@ Corrected English display names in [OrganizationalSpecializationCS](CodeSystem-o
 Added DMED terminology bridges for ingesting data from the national DMED system: [country codes](ConceptMap-dmed-country-to-dhp-country-cm.html) mapped to ISO 3166, [measurement units](ConceptMap-dmed-measure-unit-to-dhp-cm.html) to UCUM, and DMED professions mapped to both [SNOMED CT](ConceptMap-dmed-position-to-snomed-cm.html) and [DHP positions](ConceptMap-dmed-position-to-dhp-position-cm.html).
 
 `gender` on [UZ Core Patient](StructureDefinition-uz-core-patient.html) is now bound (required) to a new [administrative gender ValueSet](ValueSet-administrative-gender-vs.html) with Russian and Uzbek translations.
+
+`managingOrganization` on [UZ Core Patient](StructureDefinition-uz-core-patient.html) is now Must Support and must reference [UZ Core Organization](StructureDefinition-uz-core-organization.html).
+
+The multilingual translation extension (Uzbek base value plus Russian and Karakalpak translations) has been added to `name` on [UZ Core HealthcareService](StructureDefinition-uz-core-healthcareservice.html), and to `title` on [UZ Core ActivityDefinition](StructureDefinition-uz-core-activity-definition.html), [UZ Core Laboratory ObservationDefinition](StructureDefinition-uz-core-laboratory-observation-definition.html), [UZ Core Immunization PlanDefinition](StructureDefinition-uz-core-immunization-plan-definition.html) and [UZ Core Questionnaire](StructureDefinition-uz-core-questionnaire.html). `name` is now required on [UZ Core Organization](StructureDefinition-uz-core-organization.html) and [UZ Core Location](StructureDefinition-uz-core-location.html).
 
 #### Organization and identifiers
 
