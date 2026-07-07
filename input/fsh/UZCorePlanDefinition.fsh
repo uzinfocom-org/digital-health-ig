@@ -11,6 +11,10 @@ Description: "Uzbekistan Core profile that stores and represents the National Im
 
 * identifier MS
 * version MS
+* type MS
+* type from PlanDefinitionTypeVS (extensible)
+
+
 * versionAlgorithm[x] MS
 * versionAlgorithm[x] from VersionAlgorithmVS (extensible)
 
