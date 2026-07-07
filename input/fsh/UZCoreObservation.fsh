@@ -37,7 +37,7 @@ Description: "Uzbekistan Core Observation profile, used to represent clinical an
 * interpretation from ObservationInterpretationVS
 * note MS
 * bodySite from $bodysite
-* method from LabMethodsVS (example)
+* method from LabMethodsVS (extensible)
 * specimen MS
 * specimen only Reference(UZCoreSpecimen)
 * device MS
