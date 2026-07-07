@@ -2,9 +2,9 @@ name: Build FHIR IG
 
 on:
   push:
-    branches: [ main ]
+    branches: [ PlandefinitionType ]
   pull_request:
-    branches: [ main ]
+    branches: [ PlandefinitionType ]
 
 jobs:
   build:
