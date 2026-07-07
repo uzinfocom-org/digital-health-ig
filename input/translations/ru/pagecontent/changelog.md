@@ -1,5 +1,9 @@
 ### В разработке
 
+(Пока без изменений)
+
+### Версия 0.6.0
+
 #### Новые профили
 
 Добавлен профиль [UZ Core DiagnosticReport](StructureDefinition-uz-core-diagnostic-report.html) для лабораторных и диагностических отчётов с сопутствующей терминологией для [категории услуг](ValueSet-diagnostic-report-service-category-vs.html), [статуса](ValueSet-diagnostic-report-status-vs.html) и [типов отчётов](ValueSet-lab-report-types-vs.html).
@@ -48,6 +52,10 @@
 
 `gender` в [UZ Core Patient](StructureDefinition-uz-core-patient.html) теперь привязан (required) к новому [набору значений административного пола](ValueSet-administrative-gender-vs.html) с русскими и узбекскими переводами.
 
+`managingOrganization` в [UZ Core Patient](StructureDefinition-uz-core-patient.html) теперь Must Support и должен ссылаться на [UZ Core Organization](StructureDefinition-uz-core-organization.html).
+
+Расширение для многоязычного перевода (базовое значение на узбекском плюс переводы на русский и каракалпакский) добавлено к `name` в [UZ Core HealthcareService](StructureDefinition-uz-core-healthcareservice.html) и к `title` в [UZ Core ActivityDefinition](StructureDefinition-uz-core-activity-definition.html), [UZ Core Laboratory ObservationDefinition](StructureDefinition-uz-core-laboratory-observation-definition.html), [UZ Core Immunization PlanDefinition](StructureDefinition-uz-core-immunization-plan-definition.html) и [UZ Core Questionnaire](StructureDefinition-uz-core-questionnaire.html). Элемент `name` теперь обязателен в [UZ Core Organization](StructureDefinition-uz-core-organization.html) и [UZ Core Location](StructureDefinition-uz-core-location.html).
+
 #### Организация и идентификаторы
 
 Добавлены слайсы идентификаторов Государственного фонда медицинского страхования (SHIF) и Министерства здравоохранения (Минздрав) в [UZ Core Organization](StructureDefinition-uz-core-organization.html). Коды поставщиков, назначаемые SHIF, типизированы как `PRN` (номер поставщика). Новая страница [идентификация плательщиков](payor-identification.html) объясняет, как идентифицируются плательщики и их законтрактованные поставщики.
@@ -66,29 +74,13 @@
 
 ### Версия 0.5.0
 
-Добавлены [коды лабораторных исследований](CodeSystem-lab-pan-cs.html) для панелей и аналитов, используемых в Узбекистане.
-
-Добавлено [пространство имён идентификаторов документов](identifiers.html#document-identifiers) (doc) в систему идентификаторов.
-
-#### Изменения профиля Organization
-
-Слайс `type.coding[organizationType]` в [UZ Core Organization](StructureDefinition-uz-core-organization.html) теперь использует OrganizationTypeUZCS вместо международного CodeSystem HL7 `organization-type`. Например, `$organization-type-cs#prov` необходимо заменить на код из `organization-types-uz-cs` (напр. `#I` "Распределение по управлению"). Прямого соответствия нет - каждую организацию необходимо классифицировать в новой системе (коды I-V).
-
-Добавлен слайс `type.coding[organizationGrouping]` в [UZ Core Organization](StructureDefinition-uz-core-organization.html) с использованием [OrganizationGroupingCS](CodeSystem-organization-grouping-uz-cs.html) для детальной группировки учреждений (напр. `#104` "Специализированные больницы", `#210` "Семейная поликлиника"). Разработчикам следует заполнять этот новый слайс.
-
-Кардинальность `type.coding[organizationalServiceGroup]` и `type.coding[specialization]` в [UZ Core Organization](StructureDefinition-uz-core-organization.html) расширена с 0..1 до 0..\*. Теперь можно указывать несколько кодов сервисных групп и специализаций для одной организации.
-
-Добавлен код I_6 "Организации с участием иностранных инвесторов" в [OrganizationalSubordinationGroupCS](CodeSystem-organizational-subordination-group-cs.html). Разработчикам следует использовать этот код в `type.coding[subordinationGroup]` для соответствующих организаций.
-
-[OrganizationalStructureCS](CodeSystem-organizational-structure-cs.html) расширен новыми кодами для амбулаторных учреждений (напр. `#200` поликлиники), образовательных учреждений (`#300`), центров переливания крови (`#400`), санэпидслужб (`#500`) и других. Исправлены некоторые существующие переводы (напр. `#116` исправлено с "Медицинский центр Центр" на "Медицинский центр"). Разработчикам следует проверить, существует ли теперь более точный код для их учреждений.
-
-Добавлено [расширение зоны обслуживания](StructureDefinition-coverage-area.html) для [UZ Core Organization](StructureDefinition-uz-core-organization.html), указывающее административную территорию, которую обслуживает организация, привязанное к [StateVS](ValueSet-state-vs.html). Коды территорий SSV можно преобразовать в StateCS с помощью [SSVAdministrativeTerritoryToRegionsCM](ConceptMap-ssv-administrative-territory-to-regions-cm.html).
-
-Добавлен [пример](Organization-xonobod-medical-association.html), демонстрирующий преобразование организации из MIS2 JSON в ресурс UZ Core Organization с использованием ConceptMap.
-
-Добавлены ConceptMap для перевода кодов MIS2 в терминологию UZ Core: [MIS2MedicalTypeToOrganizationalStructureCM](ConceptMap-mis2-medical-type-to-organizational-structure-cm.html) для `type.coding[organizationalStructure]`, [MIS2LevelTypeToSubordinationGroupCM](ConceptMap-mis2-level-type-to-subordination-group-cm.html) для `type.coding[subordinationGroup]` и [MIS2ServiceTypeToOrganizationalServiceGroupCM](ConceptMap-mis2-service-type-to-organizational-service-group-cm.html) для `type.coding[organizationalServiceGroup]`. Разработчикам, выполняющим перевод из MIS2, следует использовать эти карты для заполнения соответствующих слайсов.
+#### Новые профили
 
 Добавлен профиль [UZ Core AllergyIntolerance](StructureDefinition-uz-core-allergy-intolerance.html) с сопутствующими CodeSystem и ValueSet ([AllergenCodesVS](ValueSet-allergen-codes-vs.html), [ReactionSubstanceVS](ValueSet-allergy-reaction-substance-vs.html), [ReactionManifestationVS](ValueSet-allergy-reaction-manifestation-vs.html), [AllergyCategoryVS](ValueSet-allergy-category-vs.html), [AllergyTypeVS](ValueSet-allergy-type-vs.html), [AllergyClinicalStatusVS](ValueSet-allergy-clinical-status-vs.html), [AllergyVerificationStatusVS](ValueSet-allergy-verification-status-vs.html), [AllergyReactionSeverityVS](ValueSet-allergy-reaction-severity-vs.html)), а также ConceptMap для перевода локальных кодов аллергенов и проявлений реакций в SNOMED CT.
+
+#### Изменения терминологии и привязок
+
+Добавлены [коды лабораторных исследований](CodeSystem-lab-pan-cs.html) для панелей и аналитов, используемых в Узбекистане.
 
 `UZCoreClinicalCondition` удалён и объединён с [UZ Core Condition](StructureDefinition-uz-core-condition.html). Разработчикам необходимо обновить ссылки с `uz-core-clinical-condition` на `uz-core-condition`. Для `Condition.code` теперь используется новый набор значений [ConditionCodeVS](ValueSet-condition-code-vs.html), объединяющий коды ICD-10 и SNOMED CT (привязка preferred).
 
@@ -99,10 +91,6 @@
 В [UZ Core HealthcareService](StructureDefinition-uz-core-healthcareservice.html) `category.coding` и `type.coding` теперь содержат слайсы, поддерживающие новый слайс `labCategory`, привязанный к [LabServiceCategoriesVS](ValueSet-lab-service-categories-vs.html) (коды из [LabCategoriesCS](CodeSystem-lab-categories-cs.html)). Лабораторные службы должны заполнять слайс `labCategory` дополнительно к существующему `dhpCategory`.
 
 В [UZ Core Patient](StructureDefinition-uz-core-patient.html) набор значений [MahallaVS](ValueSet-mahalla-vs.html) (используется для `address.city`) расширен кодами из новой системы [Mahalla COATO](CodeSystem-mahalla-coato-cs.html), что добавляет более 2 600 идентификаторов махаллей на основе СОАТО в дополнение к существующим кодам MahallaCS.
-
-В [UZ Core Patient](StructureDefinition-uz-core-patient.html) [документация по идентификаторам](identifiers.html) уточнена: национальный идентификатор - это **ПИНФЛ** (Персональный идентификационный номер физического лица), а также разъяснена разница между использованием идентификаторов `medicalRecordTemp` и `unknownPatient`.
-
-Добавлены [пример транзакционного бандла](Bundle-example-transaction-bundle.html) и [пример PractitionerRole с произвольным текстом квалификации](PractitionerRole-example-practitionerrole-freetext.html) в качестве справочных шаблонов для разработчиков.
 
 В [UZ Core Socioeconomic Observation](StructureDefinition-uz-core-socioeconomic-observation.html) система кодов **BenefitCS** была расширена новыми кодами (например, `#regis0004.00020`, `#regis0004.00021`, `#regis0004.00022`, `#regis0004.00023`).
 
@@ -142,6 +130,31 @@
 Хотя в UZ Core отсутствует отдельный профиль для Coverage, в связи с требованиями форм ССВ создана новая система кодов **CoverageTypeCS**.  
 Она включает типы финансирования через ДТСЖ и социальные фонды (например, `#dtsj-treated-case`, `#dtsj-privileged-category`, `#saxovat-komak-fund`, `#womens-notebook-fund`, `#youth-notebook-fund`).
 
+#### Организация и идентификаторы
+
+Добавлено [пространство имён идентификаторов документов](identifiers.html#document-identifiers) (doc) в систему идентификаторов.
+
+Слайс `type.coding[organizationType]` в [UZ Core Organization](StructureDefinition-uz-core-organization.html) теперь использует OrganizationTypeUZCS вместо международного CodeSystem HL7 `organization-type`. Например, `$organization-type-cs#prov` необходимо заменить на код из `organization-types-uz-cs` (напр. `#I` "Распределение по управлению"). Прямого соответствия нет - каждую организацию необходимо классифицировать в новой системе (коды I-V).
+
+Добавлен слайс `type.coding[organizationGrouping]` в [UZ Core Organization](StructureDefinition-uz-core-organization.html) с использованием [OrganizationGroupingCS](CodeSystem-organization-grouping-uz-cs.html) для детальной группировки учреждений (напр. `#104` "Специализированные больницы", `#210` "Семейная поликлиника"). Разработчикам следует заполнять этот новый слайс.
+
+Кардинальность `type.coding[organizationalServiceGroup]` и `type.coding[specialization]` в [UZ Core Organization](StructureDefinition-uz-core-organization.html) расширена с 0..1 до 0..\*. Теперь можно указывать несколько кодов сервисных групп и специализаций для одной организации.
+
+Добавлен код I_6 "Организации с участием иностранных инвесторов" в [OrganizationalSubordinationGroupCS](CodeSystem-organizational-subordination-group-cs.html). Разработчикам следует использовать этот код в `type.coding[subordinationGroup]` для соответствующих организаций.
+
+[OrganizationalStructureCS](CodeSystem-organizational-structure-cs.html) расширен новыми кодами для амбулаторных учреждений (напр. `#200` поликлиники), образовательных учреждений (`#300`), центров переливания крови (`#400`), санэпидслужб (`#500`) и других. Исправлены некоторые существующие переводы (напр. `#116` исправлено с "Медицинский центр Центр" на "Медицинский центр"). Разработчикам следует проверить, существует ли теперь более точный код для их учреждений.
+
+Добавлено [расширение зоны обслуживания](StructureDefinition-coverage-area.html) для [UZ Core Organization](StructureDefinition-uz-core-organization.html), указывающее административную территорию, которую обслуживает организация, привязанное к [StateVS](ValueSet-state-vs.html). Коды территорий SSV можно преобразовать в StateCS с помощью [SSVAdministrativeTerritoryToRegionsCM](ConceptMap-ssv-administrative-territory-to-regions-cm.html).
+
+Добавлен [пример](Organization-xonobod-medical-association.html), демонстрирующий преобразование организации из MIS2 JSON в ресурс UZ Core Organization с использованием ConceptMap.
+
+Добавлены ConceptMap для перевода кодов MIS2 в терминологию UZ Core: [MIS2MedicalTypeToOrganizationalStructureCM](ConceptMap-mis2-medical-type-to-organizational-structure-cm.html) для `type.coding[organizationalStructure]`, [MIS2LevelTypeToSubordinationGroupCM](ConceptMap-mis2-level-type-to-subordination-group-cm.html) для `type.coding[subordinationGroup]` и [MIS2ServiceTypeToOrganizationalServiceGroupCM](ConceptMap-mis2-service-type-to-organizational-service-group-cm.html) для `type.coding[organizationalServiceGroup]`. Разработчикам, выполняющим перевод из MIS2, следует использовать эти карты для заполнения соответствующих слайсов.
+
+#### Документация
+
+В [UZ Core Patient](StructureDefinition-uz-core-patient.html) [документация по идентификаторам](identifiers.html) уточнена: национальный идентификатор - это **ПИНФЛ** (Персональный идентификационный номер физического лица), а также разъяснена разница между использованием идентификаторов `medicalRecordTemp` и `unknownPatient`.
+
+Добавлены [пример транзакционного бандла](Bundle-example-transaction-bundle.html) и [пример PractitionerRole с произвольным текстом квалификации](PractitionerRole-example-practitionerrole-freetext.html) в качестве справочных шаблонов для разработчиков.
 
 ### Версия 0.4.0
 
