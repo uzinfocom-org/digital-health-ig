@@ -62,7 +62,7 @@ Description: "Uzbekistan Core VaccinationActivityDefinition Profile, used for th
   * function MS
 
 * product[x] MS
-* product[x] from VaccineCodeVS (example)
+* product[x] from VaccineCodeVS (required)
 
 * productReference MS
 * productCodeableConcept MS
