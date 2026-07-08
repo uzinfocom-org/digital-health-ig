@@ -1,8 +1,8 @@
-Profile: UZCoreActivityDefinition
+Profile: UZCoreVaccinationActivityDefinition
 Parent: ActivityDefinition
-Id: uz-core-activity-definition
-Title: "UZ Core ActivityDefinition"
-Description: "Uzbekistan Core ActivityDefinition Profile, used for the definition of some activity to be performed, independent of a particular patient, practitioner, or other performance context."
+Id: uz-core-vaccination-activity-definition
+Title: "UZ Core VaccinationActivityDefinition"
+Description: "Uzbekistan Core VaccinationActivityDefinition Profile, used for the definition of some activity to be performed, independent of a particular patient, practitioner, or other performance context."
 
 * ^experimental = true
 * ^status = #active
@@ -62,6 +62,8 @@ Description: "Uzbekistan Core ActivityDefinition Profile, used for the definitio
   * function MS
 
 * product[x] MS
+* product[x] from VaccineCodeVS (example)
+
 * productReference MS
 * productCodeableConcept MS
 * quantity MS
@@ -82,7 +84,7 @@ Description: "Uzbekistan Core ActivityDefinition Profile, used for the definitio
 
 
 Instance: example-activity-definition
-InstanceOf: UZCoreActivityDefinition
+InstanceOf: UZCoreVaccinationActivityDefinition
 Usage: #example
 Title: "Example ActivityDefinition — Childhood Vaccination"
 Description: "Routine childhood vaccination activity definition for Uzbekistan Digital Health Platform."
