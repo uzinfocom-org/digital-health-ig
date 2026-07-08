@@ -108,18 +108,10 @@ Description: "Uzbekistan Core profile that stores and represents the National Im
 * action.participant.type MS
 * action.participant.type from ParticipantResourceTypesVS (required)
 
+// definition[x]'s types and canonical targets are inherited from base R5 unchanged;
+// restating them as choice-type slices makes the validator reject definitionCanonical
+// with a false "allows for the type uri but found type canonical" error
 * action.definition[x] MS
-* action.definition[x] only canonical or uri
-* action.definitionCanonical only Canonical(
-    ActivityDefinition or
-    MessageDefinition or
-    ObservationDefinition or
-    PlanDefinition or
-    Questionnaire or
-    SpecimenDefinition
-)
-* action.definitionCanonical MS
-* action.definitionUri MS
 
 Instance: example-uz-core-immunization-plan-definition
 InstanceOf: UZCoreImmunizationPlanDefinition
