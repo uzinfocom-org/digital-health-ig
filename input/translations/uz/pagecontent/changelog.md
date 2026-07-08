@@ -20,7 +20,7 @@ Emlash bashoratlari uchun [UZ Core ImmunizationRecommendation](StructureDefiniti
 
 Milliy emlash jadvallari uchun [UZ Core Immunization PlanDefinition](StructureDefinition-uz-core-immunization-plan-definition.html) profili qo'shildi.
 
-Muayyan bemordan mustaqil ravishda qayta foydalaniladigan klinik faoliyatlarni (protseduralar, tahlillar, dori protokollari) belgilash uchun [UZ Core ActivityDefinition](StructureDefinition-uz-core-activity-definition.html) profili qo'shildi.
+Muayyan bemordan mustaqil ravishda qayta foydalaniladigan klinik faoliyatlarni (protseduralar, tahlillar, dori protokollari) belgilash uchun [UZ Core ActivityDefinition](StructureDefinition-uz-core-vaccination-activity-definition.html) profili qo'shildi.
 
 Nojo'ya hodisalar haqida xabar berish uchun [UZ Core AdverseEvent](StructureDefinition-uz-core-adverse-event.html) profili qo'shildi, [haqiqiylik](ValueSet-adverse-event-actuality-vs.html), [jiddiylik](ValueSet-adverse-event-seriousness-vs.html), [natija](ValueSet-adverse-event-outcome-vs.html) va [holat](ValueSet-adverse-event-status-vs.html) terminologiyasi bilan.
 
@@ -54,7 +54,7 @@ Milliy DMED tizimidan ma'lumotlarni qabul qilish uchun DMED terminologik ko'prik
 
 [UZ Core Patient](StructureDefinition-uz-core-patient.html) dagi `managingOrganization` endi Must Support hisoblanadi va [UZ Core Organization](StructureDefinition-uz-core-organization.html) ga havola qilishi kerak.
 
-Ko'p tilli tarjima kengaytmasi (o'zbekcha asosiy qiymat hamda ruscha va qoraqalpoqcha tarjimalar) [UZ Core HealthcareService](StructureDefinition-uz-core-healthcareservice.html) dagi `name` ga hamda [UZ Core ActivityDefinition](StructureDefinition-uz-core-activity-definition.html), [UZ Core Laboratory ObservationDefinition](StructureDefinition-uz-core-laboratory-observation-definition.html), [UZ Core Immunization PlanDefinition](StructureDefinition-uz-core-immunization-plan-definition.html) va [UZ Core Questionnaire](StructureDefinition-uz-core-questionnaire.html) dagi `title` ga qo'shildi. `name` endi [UZ Core Organization](StructureDefinition-uz-core-organization.html) va [UZ Core Location](StructureDefinition-uz-core-location.html) da majburiy.
+Ko'p tilli tarjima kengaytmasi (o'zbekcha asosiy qiymat hamda ruscha va qoraqalpoqcha tarjimalar) [UZ Core HealthcareService](StructureDefinition-uz-core-healthcareservice.html) dagi `name` ga hamda [UZ Core ActivityDefinition](StructureDefinition-uz-core-vaccination-activity-definition.html), [UZ Core Laboratory ObservationDefinition](StructureDefinition-uz-core-laboratory-observation-definition.html), [UZ Core Immunization PlanDefinition](StructureDefinition-uz-core-immunization-plan-definition.html) va [UZ Core Questionnaire](StructureDefinition-uz-core-questionnaire.html) dagi `title` ga qo'shildi. `name` endi [UZ Core Organization](StructureDefinition-uz-core-organization.html) va [UZ Core Location](StructureDefinition-uz-core-location.html) da majburiy.
 
 #### Tashkilot va identifikatorlar
 
