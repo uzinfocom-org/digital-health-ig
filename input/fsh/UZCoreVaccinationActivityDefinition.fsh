@@ -38,7 +38,7 @@ Description: "Uzbekistan Core VaccinationActivityDefinition Profile, used for th
 * profile MS
 
 * code MS
-* code from ProcedureCodeVS (example)
+* code = $sct#33879002
 
 * intent MS
 * intent from RequestIntentVS (required)
