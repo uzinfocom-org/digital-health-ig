@@ -11,6 +11,8 @@ Description: "Uzbekistan Core profile that stores and represents the National Im
 
 * identifier MS
 * version MS
+
+
 * versionAlgorithm[x] MS
 * versionAlgorithm[x] from VersionAlgorithmVS (extensible)
 
@@ -41,20 +43,28 @@ Description: "Uzbekistan Core profile that stores and represents the National Im
 // useContext lets clients tell immunization schedules apart from other PlanDefinitions on the
 // server. Every UZ Core immunization schedule carries a fixed focus context, so it is found with
 // GET [base]/PlanDefinition?context-type-value=focus$http://snomed.info/sct|33879002
-* useContext 1..* MS
+* useContext 2..* MS
 * useContext ^slicing.discriminator.type = #value
 * useContext ^slicing.discriminator.path = "code"
 * useContext ^slicing.rules = #open
-* useContext ^slicing.description = "Distinguishes immunization schedules from other PlanDefinitions"
-* useContext contains immunizationFocus 1..1 MS
+* useContext ^slicing.description = "Distinguishes immunization schedules and their categories"
+
+* useContext contains
+    immunizationFocus 1..1 MS and
+    scheduleCategory 1..1 MS
+
 * useContext[immunizationFocus] ^short = "Marks this PlanDefinition as an immunization schedule"
 * useContext[immunizationFocus].code = $usage-context-type#focus
 * useContext[immunizationFocus].value[x] only CodeableConcept
 * useContext[immunizationFocus].valueCodeableConcept.coding 1..1
 * useContext[immunizationFocus].valueCodeableConcept.coding.system 1..1
 * useContext[immunizationFocus].valueCodeableConcept.coding.code 1..1
-* useContext[immunizationFocus].valueCodeableConcept.coding.display ^short = "Active immunization"
 * useContext[immunizationFocus].valueCodeableConcept = $sct#33879002
+
+* useContext[scheduleCategory] ^short = "Kind of immunization schedule"
+* useContext[scheduleCategory].code = $usage-context-type#topic
+* useContext[scheduleCategory].value[x] only CodeableConcept
+* useContext[scheduleCategory].valueCodeableConcept from ImmunizationScheduleTypeVS (extensible)
 
 * approvalDate MS
 * effectivePeriod MS
@@ -98,24 +108,16 @@ Description: "Uzbekistan Core profile that stores and represents the National Im
 * action.participant.type MS
 * action.participant.type from ParticipantResourceTypesVS (required)
 
+// definition[x]'s types and canonical targets are inherited from base R5 unchanged;
+// restating them as choice-type slices makes the validator reject definitionCanonical
+// with a false "allows for the type uri but found type canonical" error
 * action.definition[x] MS
-* action.definition[x] only canonical or uri
-* action.definitionCanonical only Canonical(
-    ActivityDefinition or
-    MessageDefinition or
-    ObservationDefinition or
-    PlanDefinition or
-    Questionnaire or
-    SpecimenDefinition
-)
-* action.definitionCanonical MS
-* action.definitionUri MS
 
 Instance: example-uz-core-immunization-plan-definition
 InstanceOf: UZCoreImmunizationPlanDefinition
 Usage: #example
 Title: "UZ Core Immunization PlanDefinition"
-Description: "Uzbekistan Core Immunization PlanDefinition profile, used to represent structured immunization schedule definitions, including actions, timing, participants, and related activities"
+Description: "Uzbekistan Core Immunization PlanDefinition profile, used to represent structured immunization schedule definitions, including actions, timing, participants, and related activities."
 * id = "example-uz-core-immunization-plan-definition"
 
 * url = "https://terminology.dhp.uz/fhir/core/PlanDefinition/example-uz-core-immunization-plan-definition"
@@ -127,9 +129,14 @@ Description: "Uzbekistan Core Immunization PlanDefinition profile, used to repre
 * status = $publication-status#draft
 * date = "2026-08-10"
 * publisher = "DHP Uzbekistan"
-* description = "Example PlanDefinition demonstrating actions and relationships."
+* description = "Example age-based immunization PlanDefinition demonstrating vaccination actions and relationships."
+
 * useContext[immunizationFocus].code = $usage-context-type#focus
 * useContext[immunizationFocus].valueCodeableConcept = $sct#33879002 "Active immunization"
+
+* useContext[scheduleCategory].code = $usage-context-type#topic
+* useContext[scheduleCategory].valueCodeableConcept = ImmunizationScheduleTypeCS#pd-type-0001-00001 "Age-based"
+
 * approvalDate = "2026-08-01"
 
 * effectivePeriod.start = "2026-08-01"
@@ -140,28 +147,32 @@ Description: "Uzbekistan Core Immunization PlanDefinition profile, used to repre
 * action[0].title = "Initial vaccination"
 * action[0].description = "Administer first vaccine dose."
 * action[0].code = $action-code#recommend-immunization "Recommend an immunization"
+
 * action[0].condition[0].kind = $action-condition-kind#applicability "Applicability"
 * action[0].condition[0].expression.description = "Patient must be 18 years or older"
 * action[0].condition[0].expression.language = #text/fhirpath
 * action[0].condition[0].expression.expression = "Patient.birthDate <= today() - 18 years"
+
 * action[0].participant[0].type = $action-participant-type#practitioner
 * action[0].participant[0].actorId = "vaccinator"
-* action[0].definitionUri = "https://dhp.uz/fhir/core/ActivityDefinition/example-activity-definition"
+* action[0].definitionCanonical = "https://terminology.dhp.uz/fhir/core/ActivityDefinition/example-activity-definition"
 
 
 * action[1].id = "action-2"
 * action[1].linkId = "action-2"
 * action[1].title = "Follow-up vaccination"
 * action[1].description = "Administer second vaccine dose."
+
 * action[1].relatedAction[0].targetId = "action-1"
 * action[1].relatedAction[0].relationship = $action-relationship-type#after-end
 * action[1].relatedAction[0].offsetDuration.value = 30
 * action[1].relatedAction[0].offsetDuration.unit = "days"
 * action[1].relatedAction[0].offsetDuration.system = "http://unitsofmeasure.org"
 * action[1].relatedAction[0].offsetDuration.code = #d
+
 * action[1].participant[0].type = $action-participant-type#practitioner
 * action[1].participant[0].actorId = "vaccinator"
-* action[1].definitionUri = "https://dhp.uz/fhir/core/ActivityDefinition/example-activity-definition"
+* action[1].definitionCanonical = "https://terminology.dhp.uz/fhir/core/ActivityDefinition/example-activity-definition"
 
 
 
