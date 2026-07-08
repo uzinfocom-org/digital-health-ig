@@ -21,7 +21,7 @@ Description: "Codes defining the types of PlanDefinition artifacts used in clini
   * ^designation[0].language = #en
   * ^designation[=].value = "Risk-based"
   * ^designation[+].language = #ru
-  * ^designation[=].value = "риск"
+  * ^designation[=].value = "по группам риска"
 
 
 * #pd-type-0001-00004 "Kampaniya"
