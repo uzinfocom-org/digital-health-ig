@@ -61,10 +61,16 @@ RuleSet: UzAddressRules
   * period ^short = "Time period when the address was/is used"
 
 RuleSet: MultilingualName(entityType)
-* name 1..1 MS
+* name MS
   * ^short = "{entityType} name (in Uzbek language)"
   * extension contains translation named translation 0..* MS
     * ^short = "{entityType} name (in Russian and Karakalpak languages)"
+
+RuleSet: MultilingualTitle(entityType)
+* title MS
+  * ^short = "{entityType} title (in Uzbek language)"
+  * extension contains translation named translation 0..* MS
+    * ^short = "{entityType} title (in Russian and Karakalpak languages)"
 
 RuleSet: HumanName
 * name MS

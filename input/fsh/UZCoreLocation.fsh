@@ -31,6 +31,7 @@ Description: "Uzbekistan Core Location profile, used to define locations of heal
 
 * insert UzAddressRules
 * insert MultilingualName(локации)
+* name 1..1
 * status from LocationStatusVS (required)
 
 * type.coding ^slicing.discriminator.type = #value

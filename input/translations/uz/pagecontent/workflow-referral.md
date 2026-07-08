@@ -1,18 +1,16 @@
-> **Mashina tarjimasi, inson tomonidan tekshirilishi zarur.** Ushbu sahifa ingliz tilidan sun'iy intellekt yordamida avtomatik tarjima qilingan va hali muharrir tomonidan tekshirilmagan. Har qanday nomuvofiqlikda asl inglizcha versiya ustuvor hisoblanadi.
+Ushbu jarayon yo'llanma qanday yaratilishi va bajarilishini ko'rsatadi. Yo'llanmalar bilan ishlashda dasturchilar ko'pincha qiyinchilikka duch keladi, chunki bu jarayonda ikkita resurs ishtirok etadi va ularning o'zaro bog'liqligi profil jadvallaridan aniq ko'rinmaydi. Asosiy qoida bir jumlada quyidagicha:
 
-Ushbu ish jarayoni yo'llanma qanday yaratilishini va bajarilishini ko'rsatadi. Yo'llanmalar dasturchilar eng ko'p adashadigan joy hisoblanadi, chunki bunda ikkita resurs ishtirok etadi va ularning o'zaro bog'liqligi profil jadvallaridan aniq ko'rinmaydi. Bir qatorli qoida:
+> `ServiceRequest` - yo'llanmaning o'zi, ya'ni *nima* bajarilishi kerakligini ifodalaydi. `Task` - uni bajarish bo'yicha ishni, ya'ni ishni *kim* bajargani, *qachon* bajargani va *qaysi bosqichda* ekanini ifodalaydi.
 
-> `ServiceRequest` — bu yo'llanmaning o'zi, ya'ni *nima* bajarilishi kerakligi. `Task` — bu uni bajarish ishi, ya'ni *kim* qildi, *qachon* va *qay darajada bajarildi*.
+> Profillarning holati: ServiceRequest va Task profillari ishlab chiqilmoqda. Ushbu sahifada tizimlar integratsiyani hozirdanoq shu model asosida amalga oshirishi uchun rejalashtirilgan modellashtirish yondashuvi tavsiflangan. Profillar e'lon qilingunga qadar FHIR R5 bazaviy resurslari va quyidagi qoidalardan foydalaning. Yo'llanmani bajarishda qo'llaniladigan [Procedure](StructureDefinition-uz-core-procedure.html), [Observation](StructureDefinition-uz-core-observation.html), [Encounter](StructureDefinition-uz-core-encounter.html) va [Condition](StructureDefinition-uz-core-condition.html) resurslari profillangan.
 
-> Profil holati: ServiceRequest va Task profillari ishlab chiqilmoqda. Ushbu sahifa mo'ljallangan modellashtirishni tavsiflaydi, shunda tizimlar hozircha shunga asoslanib qurilishi mumkin; profillar e'lon qilinmaguncha, asosiy FHIR R5 resurslaridan va quyidagi qoidalardan foydalaning. Bajarishda ishlatiladigan [Procedure](StructureDefinition-uz-core-procedure.html), [Observation](StructureDefinition-uz-core-observation.html), [Encounter](StructureDefinition-uz-core-encounter.html) va [Condition](StructureDefinition-uz-core-condition.html) profillangan.
-
-Ishtirokchilar: yo'llovchi shifokor; tasdiqlash komissiyalari (davlat sug'urtasi yo'llanmalari uchun); xizmat ko'rsatuvchi muassasa.
+Ishtirokchilar: yo'llanma beruvchi klinitsist; kelishish komissiyalari (davlat tomonidan moliyalashtiriladigan yo'llanmalar uchun); xizmat ko'rsatuvchi tibbiyot tashkiloti.
 
 <div>{% include referral-sequence.svg %}</div><br clear="all"/>
 
 ### 1. Yo'llanmani yaratish
 
-Shifokor `ServiceRequest` (`intent = order`) yaratadi va unda yo'llanma tasnifini joylashtiradi: `code` da so'ralayotgan xizmat, `priority` da shoshilinchlik (`routine` \| `urgent` \| `stat`), `HealthcareService` orqali maqsadli xizmat, `reason` da klinik asoslanish va `coverageKind` kengaytmasida moliyalashtirish turi (`state-insurance` \| `insurance` \| `self-payment` \| `other`).
+Klinitsist yo'llanmaning tasniflash ma'lumotlarini o'z ichiga oluvchi `ServiceRequest` (`intent = order`) resursini yaratadi: so'ralgan xizmat `code` elementida, shoshilinchlik darajasi `priority` elementida (`routine` \| `urgent` \| `stat`), maqsadli xizmat `HealthcareService` orqali, klinik asos `reason` elementida va moliyalashtirish turi [PaymentType](StructureDefinition-payment-type.html) kengaytmasida (`Free` \| `Paid` \| `Insurance` \| `State-funded`) ko'rsatiladi.
 
 ```
 POST [base]/ServiceRequest
@@ -24,41 +22,41 @@ POST [base]/ServiceRequest
   "reason": [{ "reference": { "reference": "Condition/[id]" } }] }
 ```
 
-### 2. Tasdiqlash zanjiri (faqat davlat sug'urtasi)
+### 2. Kelishish bosqichlari zanjiri (faqat davlat tomonidan moliyalashtiriladigan uchun)
 
-Bu markaziy qaror qoidasi:
+Bu asosiy qaror qabul qilish qoidasidir:
 
-> Agar `ServiceRequest.coverageKind = state-insurance` bo'lsa, platforma tasdiqlash `Task`lari zanjirini yaratadi; aks holda hech qanday Task yaratilmaydi va yo'llanma to'g'ridan-to'g'ri davom etadi.
+> Agar ServiceRequest ning PaymentType qiymati `State-funded` bo'lsa, platforma kelishish uchun `Task` resurslari zanjirini yaratadi; aks holda Task yaratilmaydi va yo'llanma bevosita davom etadi.
 
-Har bir tasdiqlash bosqichi ServiceRequest ga (`Task.focus`/`basedOn`) murojaat qiluvchi `Task` bo'lib, uning `Task.code` qiymati tasdiqlash toifalari to'plamidan olinadi:
+Har bir kelishish bosqichi ServiceRequest resursiga reference saqlovchi alohida `Task` resursi bilan ifodalanadi (`Task.focus`/`basedOn`), `Task.code` elementida esa kelishish toifalari to'plamidagi kod ko'rsatiladi:
 
 `approve-family-doctor` &rarr; `approve-specialist` &rarr; `approve-regional-commission` &rarr; `approve-national-commission` &rarr; `approve-insurance-fund` &rarr; `approve-hospitalization`
 
-Task ikkita holat o'qini olib boradi: FHIR `Task.status` (hayot sikli: `requested`, `accepted`, `in-progress`, `completed`, `rejected`, `on-hold`, `failed`, …) va `Task.businessStatus` (foydalanuvchilarga ko'rsatiladigan domen holati: `in-review`, `confirmed`, `overdue`, …).
+Task resursida ikkita mustaqil status yo'nalishi mavjud: FHIR-status `Task.status` (hayotiy sikl: `requested`, `accepted`, `in-progress`, `completed`, `rejected`, `on-hold`, `failed`, …) va `Task.businessStatus` (foydalanuvchilarga ko'rsatiladigan biznes holati: `in-review`, `confirmed`, `overdue`, …).
 
-> Tasklarning foydalanuvchiga ko'rinadigan interfeysi yo'q. Menejerlar jarayon hodisalari asosida harakat qiladi; ular hech qachon Taskni to'g'ridan-to'g'ri yopmaydi. Bu asosiy ish bajarilmasdan turib bosqichning bajarilgan deb belgilanishining oldini oladi.
+> Task resurslari uchun alohida foydalanuvchi interfeysi nazarda tutilmagan. Menejerlar jarayon hodisalari asosida harakat qiladi va Task resursini bevosita yakunlamaydi. Bu asosiy ish bajarilmasdan turib bosqichni yakunlangan deb belgilashning oldini oladi.
 
-### 3. Sinxronizatsiya qoidalari
+### 3. Statuslarni sinxronlashtirish qoidalari
 
-ServiceRequest va uning Tasklari quyidagi qoidalar orqali bir-biriga mos qoladi:
+ServiceRequest va unga bog'liq Task resurslari quyidagi qoidalar asosida o'zaro muvofiq holatda saqlanadi:
 
 | Hodisa | Natija |
 |-------|--------|
-| ServiceRequest `active` holatiga o'tadi (davlat sug'urtasi) | birinchi tasdiqlash Task `status=requested` bilan yaratiladi |
-| ServiceRequest `revoked` qilib belgilanadi | barcha ochiq Tasklar `revoked` qilib belgilanadi |
-| ServiceRequest `entered-in-error` qilib belgilanadi | barcha Tasklar `entered-in-error` qilib belgilanadi |
-| Yakuniy tasdiqlash Task `completed` | ServiceRequest `completed` qilib belgilanadi |
-| Komissiya Task `failed`/rad etilgan | ServiceRequest `revoked` qilib belgilanadi |
-| Qayta ko'rib chiqishga qaytarildi | Task &rarr; `on-hold` / `in-review`; ServiceRequest &rarr; `on-hold`, so'ngra yangi tasdiqlash Task bilan qaytadan `active` ga |
-| SLA buzilishi | faqat `Task.businessStatus = overdue` — ServiceRequest holati o'zgarmaydi |
+| ServiceRequest `active` statusiga o'tadi (state-funded) | birinchi kelishish Task resursi `status=requested` bilan yaratiladi |
+| ServiceRequest `revoked` statusiga o'tkaziladi | barcha ochiq Task resurslariga `revoked` statusi beriladi |
+| ServiceRequest `entered-in-error` statusiga o'tkaziladi | barcha Task resurslariga `entered-in-error` statusi beriladi |
+| Yakuniy kelishish Task resursi `completed` statusiga o'tadi | ServiceRequest `completed` statusiga o'tkaziladi |
+| Komissiya Task resursi `failed`/rejected statusiga o'tadi | ServiceRequest `revoked` statusiga o'tkaziladi |
+| Qayta ishlash uchun qaytarish | Task &rarr; `on-hold` / `in-review`; ServiceRequest &rarr; `on-hold`, so'ngra yangi kelishish Task resursi bilan yana `active` statusiga qaytariladi |
+| SLA buzilishi | faqat `Task.businessStatus = overdue` - ServiceRequest statusi o'zgarmaydi |
 
 <div>{% include referral-states.svg %}</div><br clear="all"/>
 
-Foydalanuvchiga ko'rinadigan yorliq Task holatidan kelib chiqib hosil qilinadi — masalan, `businessStatus=overdue` &rarr; "Muddati o'tgan", `status=requested` &rarr; "Qabul qilinishini kutmoqda", `status=rejected` &rarr; "Rad etilgan".
+Foydalanuvchiga ko'rsatiladigan yorliq Task holatidan kelib chiqib shakllantiriladi - masalan, `businessStatus=overdue` &rarr; «Muddati o'tgan», `status=requested` &rarr; «Qabul qilinishini kutmoqda», `status=rejected` &rarr; «Rad etilgan».
 
-### 4. Bajarish
+### 4. Yo'llanmani bajarish
 
-Xizmat ko'rsatilganda, xizmat ko'rsatuvchi muassasa natijani yo'llanmaga nisbatan qayd etadi: [Procedure](StructureDefinition-uz-core-procedure.html) va/yoki [Observation](StructureDefinition-uz-core-observation.html) (hamda tashrif uchun [Encounter](StructureDefinition-uz-core-encounter.html)), ularning har biri `basedOn` orqali ServiceRequest ga bog'lanadi. Tasvirlash natijalari `ImagingStudy`/`DocumentReference` dan foydalanadi; matnli xulosa esa `DiagnosticReport` dan foydalanadi. Yakunlanganda oxirgi Task `completed` bo'ladi va ServiceRequest `completed` bo'ladi.
+Xizmat ko'rsatilganda, xizmat ko'rsatuvchi tibbiyot tashkiloti natijani yo'llanma bilan bog'langan holda qayd etadi: [Procedure](StructureDefinition-uz-core-procedure.html) va/yoki [Observation](StructureDefinition-uz-core-observation.html) resursini (tashrif uchun esa [Encounter](StructureDefinition-uz-core-encounter.html) resursini) yaratadi; ularning har biri `basedOn` orqali ServiceRequest resursiga reference saqlaydi. Tasviriy tekshiruv natijalari uchun `ImagingStudy`/`DocumentReference`, matnli xulosa uchun esa `DiagnosticReport` qo'llaniladi. Jarayon yakunlanganda yakuniy Task resursiga `completed` statusi, ServiceRequest resursiga ham `completed` statusi beriladi.
 
 ```
 GET [base]/Task?based-on=ServiceRequest/[id]&_sort=-modified
@@ -66,9 +64,9 @@ GET [base]/ServiceRequest?patient=Patient/[id]&status=active
 GET [base]/Procedure?based-on=ServiceRequest/[id]
 ```
 
-Bekor qilingan yo'llanma bajarilishi mumkin emas, Procedure faol ServiceRequestsiz boshlanishi mumkin emas va yakunlangan Procedure o'zgartirilishi mumkin emas.
+Bekor qilingan yo'llanma bajarilishi mumkin emas; faol ServiceRequest mavjud bo'lmasa, Procedure boshlanishi mumkin emas; yakunlangan Procedure resursini o'zgartirish mumkin emas.
 
-### Aloqador
+### Bog'liq materiallar
 
-- Bajarishda ishlatiladigan profillar: [Procedure](StructureDefinition-uz-core-procedure.html) &middot; [Observation](StructureDefinition-uz-core-observation.html) &middot; [Encounter](StructureDefinition-uz-core-encounter.html) &middot; [Condition](StructureDefinition-uz-core-condition.html) &middot; [HealthcareService](StructureDefinition-uz-core-healthcareservice.html)
-- [Ish jarayonlari haqida umumiy ma'lumot](workflows.html) &middot; [Umumiy ko'rsatmalar](general-guidance.html)
+- Yo'llanmani bajarishda qo'llaniladigan profillar: [Procedure](StructureDefinition-uz-core-procedure.html) &middot; [Observation](StructureDefinition-uz-core-observation.html) &middot; [Encounter](StructureDefinition-uz-core-encounter.html) &middot; [Condition](StructureDefinition-uz-core-condition.html) &middot; [HealthcareService](StructureDefinition-uz-core-healthcareservice.html)
+- [Jarayonlar haqida umumiy ma'lumot](workflows.html) &middot; [Umumiy ko'rsatmalar](general-guidance.html)

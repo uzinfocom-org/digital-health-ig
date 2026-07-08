@@ -17,7 +17,7 @@ Description: "Uzbekistan Core ActivityDefinition Profile, used for the definitio
 * versionAlgorithm[x] from VersionAlgorithmVS (extensible)
 
 * name MS
-* title MS
+* insert MultilingualTitle(Activity definition)
 
 * status MS
 * status from PublicationStatusVS (required)
