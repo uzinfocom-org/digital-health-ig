@@ -33,15 +33,20 @@ jobs:
       - name: Install Sushi
         run: sudo npm install -g fsh-sushi
 
+      # Download the publisher directly and invoke it without the wrapper scripts:
+      # _updatePublisher.sh and _genonce.sh both probe the tx.fhir.org landing page
+      # and abort (or silently fall back to -tx n/a, skipping terminology validation)
+      # when that page is down even though the terminology API itself is up.
       - name: Install IG publisher
         run: |
-          chmod +x ./_updatePublisher.sh
-          ./_updatePublisher.sh -y
+          mkdir -p input-cache
+          curl -fL --retry 3 --max-time 300 \
+            https://github.com/HL7/fhir-ig-publisher/releases/latest/download/publisher.jar \
+            -o input-cache/publisher.jar
 
       - name: Check that the IG builds successfully
         run: |
-          chmod +x ./_genonce.sh
-          ./_genonce.sh
+          java -Dfile.encoding=UTF-8 -Xmx10g -jar input-cache/publisher.jar -ig .
           echo "✅ IG built successfully"
 
       - name: Check QA report
