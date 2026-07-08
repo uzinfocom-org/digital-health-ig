@@ -37,9 +37,6 @@ jobs:
         run: |
           chmod +x ./_updatePublisher.sh
           ./_updatePublisher.sh -y
-          # _updatePublisher.sh re-downloads the stock build scripts, whose broken
-          # tx.fhir.org check silently forces offline builds; keep our fixed copies.
-          git checkout -- _genonce.sh _updatePublisher.sh
 
       - name: Check that the IG builds successfully
         run: |

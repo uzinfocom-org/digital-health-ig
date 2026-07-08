@@ -1,13 +1,12 @@
 #!/bin/bash
 publisher_jar=publisher.jar
 input_cache_path=./input-cache/
-echo Checking terminology server availability...
-if curl -sSf --max-time 15 --retry 2 https://tx.fhir.org/r5/metadata > /dev/null 2>&1; then
-	echo "Online (tx.fhir.org)"
+echo Checking internet connection...
+curl -sSf tx.fhir.org > /dev/null
+
+if [ $? -eq 0 ]; then
+	echo "Online"
 	txoption=""
-elif curl -sSf --max-time 15 --retry 2 https://tx.hl7europe.eu/r5/metadata > /dev/null 2>&1; then
-	echo "Online (tx.hl7europe.eu)"
-	txoption="-tx https://tx.hl7europe.eu/r5"
 else
 	echo "Offline"
 	txoption="-tx n/a"
