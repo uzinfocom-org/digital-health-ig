@@ -4,13 +4,13 @@ This workflow shows how a referral is created and fulfilled. Referrals are where
 
 > Profile status: the ServiceRequest and Task profiles are in development. This page describes the intended modelling so systems can build against it now; until the profiles publish, use the base FHIR R5 resources and the rules below. [Procedure](StructureDefinition-uz-core-procedure.html), [Observation](StructureDefinition-uz-core-observation.html), [Encounter](StructureDefinition-uz-core-encounter.html) and [Condition](StructureDefinition-uz-core-condition.html) used at fulfilment are profiled.
 
-Actors: the referring clinician; approval commissions (for state-insurance referrals); the performing facility.
+Actors: the referring clinician; approval commissions (for state-funded referrals); the performing facility.
 
 <div>{% include referral-sequence.svg %}</div><br clear="all"/>
 
 ### 1. Create the referral
 
-The clinician creates a `ServiceRequest` (`intent = order`) carrying the referral classification: the service requested in `code`, urgency in `priority` (`routine` \| `urgent` \| `stat`), the target service via `HealthcareService`, the clinical justification in `reason`, and the financing type in a `coverageKind` extension (`state-insurance` \| `insurance` \| `self-payment` \| `other`).
+The clinician creates a `ServiceRequest` (`intent = order`) carrying the referral classification: the service requested in `code`, urgency in `priority` (`routine` \| `urgent` \| `stat`), the target service via `HealthcareService`, the clinical justification in `reason`, and the financing type in the [PaymentType](StructureDefinition-payment-type.html) extension (`Free` \| `Paid` \| `Insurance` \| `State-funded`).
 
 ```
 POST [base]/ServiceRequest
@@ -22,11 +22,11 @@ POST [base]/ServiceRequest
   "reason": [{ "reference": { "reference": "Condition/[id]" } }] }
 ```
 
-### 2. The approval chain (state-insurance only)
+### 2. The approval chain (state-funded only)
 
 This is the central decision rule:
 
-> If `ServiceRequest.coverageKind = state-insurance`, the platform creates a chain of approval `Task`s; otherwise no Task is created and the referral proceeds directly.
+> If the ServiceRequest's PaymentType is `State-funded`, the platform creates a chain of approval `Task`s; otherwise no Task is created and the referral proceeds directly.
 
 Each approval stage is a `Task` referencing the ServiceRequest (`Task.focus`/`basedOn`) with a `Task.code` from the approval category set:
 
@@ -42,7 +42,7 @@ The ServiceRequest and its Tasks stay consistent by these rules:
 
 | Event | Effect |
 |-------|--------|
-| ServiceRequest becomes `active` (state-insurance) | first approval Task created with `status=requested` |
+| ServiceRequest becomes `active` (state-funded) | first approval Task created with `status=requested` |
 | ServiceRequest set `revoked` | all open Tasks set `revoked` |
 | ServiceRequest set `entered-in-error` | all Tasks set `entered-in-error` |
 | Final approval Task `completed` | ServiceRequest set `completed` |

@@ -65,3 +65,6 @@ A definition for CodeSystem 'http://example.org/fhir/CodeSystem/lab-report-type'
 # The hemoglobin ObservationDefinition is example data using example.org URLs, so its self-referencing canonical link and undefined identifier system are expected.
 Hyperlink 'http://example.org/fhir/ObservationDefinition/example-laboratory-hemoglobin' at 'div/div/p/a' for 'http://example.org/fhir/ObservationDefinition/example-laboratory-hemoglobin' does not resolve
 No definition could be found for URL value 'http://example.org/fhir/sid/lab-test-catalog'
+
+# IG Publisher 2.2.10 emits an OID-assignment recommendation for every CodeSystem/ValueSet. We don't use OID-based terminology (e.g. CDA), so assigning OIDs IG-wide adds no value here.
+%should have an OID assigned to cater for possible use with OID based terminology systems%

@@ -17,7 +17,7 @@ Description: "Uzbekistan Core profile that stores and represents the National Im
 * name 1..1 MS
 * name ^short = "Machine-processable name for this PlanDefinition"
 
-* title MS
+* insert MultilingualTitle(Plan definition)
 * status MS
 * status from PublicationStatusVS (required)
 

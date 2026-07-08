@@ -16,10 +16,8 @@ Description: "Uzbekistan Core Questionnaire profile for multilingual structured 
 * status MS
 
 // Multilingual title
-* title 1..1 MS
-  * ^short = "Questionnaire title (in Uzbek language)"
-  * extension contains $translation-extension named translation 0..* MS
-    * ^short = "Questionnaire title (in Russian and Karakalpak languages)"
+* insert MultilingualTitle(Questionnaire)
+* title 1..1
 
 // Description with translation
 * description MS
