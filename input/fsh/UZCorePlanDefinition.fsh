@@ -155,7 +155,6 @@ Description: "Uzbekistan Core Immunization PlanDefinition profile, used to repre
 
 * action[0].participant[0].type = $action-participant-type#practitioner
 * action[0].participant[0].actorId = "vaccinator"
-
 * action[0].definitionCanonical = "https://terminology.dhp.uz/fhir/core/ActivityDefinition/example-activity-definition"
 
 
@@ -173,7 +172,6 @@ Description: "Uzbekistan Core Immunization PlanDefinition profile, used to repre
 
 * action[1].participant[0].type = $action-participant-type#practitioner
 * action[1].participant[0].actorId = "vaccinator"
-
 * action[1].definitionCanonical = "https://terminology.dhp.uz/fhir/core/ActivityDefinition/example-activity-definition"
 
 
