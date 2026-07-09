@@ -20,12 +20,12 @@ Usage: #definition
 * uniqueId[=].preferred = true
 * uniqueId[=].comment = "This is the canonical URI for the Uzbekistan HRM Argos system"
 
-Instance: uzb-minzdrav-id
+Instance: uzb-moh-id
 InstanceOf: NamingSystem
-Description: "Organization identifiers assigned by the Ministry of Health (Minzdrav) of Uzbekistan"
+Description: "Organization identifiers assigned by the Ministry of Health (MOH) of Uzbekistan"
 Usage: #definition
-* url = "https://terminology.dhp.uz/fhir/core/NamingSystem/uzb-minzdrav-id"
-* name = "UzbekistanMinzdravOrganizationSystem"
+* url = "https://terminology.dhp.uz/fhir/core/NamingSystem/uzb-moh-id"
+* name = "UzbekistanMohOrganizationSystem"
 * status = #active
 * kind = #identifier
 * publisher = "Uzinfocom"
@@ -36,9 +36,28 @@ Usage: #definition
 * jurisdiction = urn:iso:std:iso:3166#UZ "Uzbekistan"
 * usage = "Used to uniquely identify healthcare organizations managed or registered by the Ministry of Health of the Republic of Uzbekistan"
 * uniqueId[0].type = #uri
-* uniqueId[=].value = $organization-minzdrav-id-system
+* uniqueId[=].value = $organization-moh-id-system
 * uniqueId[=].preferred = true
-* uniqueId[=].comment = "This is the canonical URI for the Uzbekistan Minzdrav organization identifier system"
+* uniqueId[=].comment = "This is the canonical URI for the Uzbekistan Ministry of Health organization identifier system"
+Instance: uzb-dhp-id
+InstanceOf: NamingSystem
+Description: "Organization identifiers assigned by the Digital Health Platform (DHP) of Uzbekistan"
+Usage: #definition
+
+* url = "https://terminology.dhp.uz/fhir/core/NamingSystem/uzb-dhp-id"
+* name = "UzbekistanDhpOrganizationSystem"
+* status = #active
+* kind = #identifier
+* publisher = "Uzinfocom"
+* responsible = "Digital Health Platform of the Republic of Uzbekistan"
+* date = "2026-06-08"
+* description = "Naming system for healthcare organization identifiers assigned by the Digital Health Platform of the Republic of Uzbekistan"
+* jurisdiction = urn:iso:std:iso:3166#UZ "Uzbekistan"
+* usage = "Used to uniquely identify healthcare organizations registered in the Digital Health Platform of the Republic of Uzbekistan"
+* uniqueId[0].type = #uri
+* uniqueId[=].value = $organization-dhp-id-system
+* uniqueId[=].preferred = true
+* uniqueId[=].comment = "This is the canonical URI for the Uzbekistan Digital Health Platform organization identifier system"
 
 Instance: uzb-shif
 InstanceOf: NamingSystem

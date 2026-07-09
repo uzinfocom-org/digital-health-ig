@@ -8,6 +8,11 @@ Description: "Uzbekistan Core ImmunizationRecommendation profile, used to repres
 * ^date = "2026-05-07"
 * ^publisher = "Uzinfocom"
 
+* extension contains RecommendationAuthor named recommendationAuthor 0..* MS
+
+* extension[recommendationAuthor] ^short = "Author of recommendation"
+* extension[recommendationAuthor] ^definition = "Practitioner or PractitionerRole responsible for creating the immunization recommendation."
+
 * identifier 0..* MS
 * identifier ^short = "Business identifier"
 * identifier ^definition = "Business identifier for this immunization recommendation."
@@ -108,6 +113,8 @@ Description: "Example of an immunization recommendation with non-mandatory eleme
 * date = "2025-08-01T10:00:00+05:00"
 
 * authority = Reference(example-organization)
+
+* extension[recommendationAuthor].valueReference = Reference(example-practitioner)
 
 * recommendation[0].vaccineCode[0] = $cvx#03 "measles, mumps and rubella virus vaccine"
 * recommendation[0].targetDisease[0] = $sct#14189004 "Measles"
