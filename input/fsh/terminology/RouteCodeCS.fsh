@@ -40,3 +40,9 @@ Description: "Route of administration supplement with Uzbek and Russian translat
   * ^designation[+].language = #ru
   * ^designation[=].value = "Интраназально"
 
+* #394841004 "Other category"
+  * ^designation[0].language = #uz
+  * ^designation[=].value = "Boshqa kategoriya"
+  * ^designation[+].language = #ru
+  * ^designation[=].value = "Другая категория"
+
