@@ -7,6 +7,7 @@
   "title": "All FHIR Types",
   "description": "One of the types defined as part of this version of FHIR with Uzbek and Russian translations.",
   "url": "https://terminology.dhp.uz/fhir/core/CodeSystem/fhir-types-cs",
+  "version": "5.0.0",
   "concept": [
     {
       "code": "Account",
