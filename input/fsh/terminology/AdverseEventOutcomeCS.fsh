@@ -2,7 +2,7 @@ CodeSystem: AdverseEventOutcomeCS
 Id: adverse-event-outcome-cs
 Title: "AdverseEvent outcome translations"
 Description: "AdverseEvent outcome supplement with translations in Uzbek and Russian"
-* insert SupplementCodeSystemDraft(adverse-event-outcome-cs, $sct, 2026-01)
+* insert SupplementCodeSystemDraft(adverse-event-outcome-cs, $sct, 2026.1.0)
 
 * #405491001 "Adverse incident resulting in no harmful effect"
   * ^designation[0].language = #ru

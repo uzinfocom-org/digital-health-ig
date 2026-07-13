@@ -29,7 +29,8 @@ Description: "Uzbekistan Core Condition profile, used for documenting a patient'
 * abatement[x] MS
 * recordedDate MS
 
-* participant  0..1 MS
+* participant 0..* MS
+* participant.actor 1..1 MS
 * participant.actor  only Reference(UZCorePractitioner or UZCorePractitionerRole or UZCorePatient or UZCoreRelatedPerson or Device)
 * participant.function MS
 * participant.function from ConditionParticipationRoleTypeVS (extensible)

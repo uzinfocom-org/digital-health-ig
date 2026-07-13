@@ -1287,7 +1287,7 @@ Description: "DMED Position and Professions to DHP Position and Professions Conc
 * group[=].element[=].target[=].display = "Axborot kommunikatsiya texnologiyalari bo'yicha professional-mutaxassislar. Dastur ta'minoti va ilovalar ishlab chiquvchilar va tahlilchilar. Tizim tahlilchilari"
 * group[=].element[=].target[=].relationship = #source-is-narrower-than-target
 
-
+//Group 2
 * group[+].source = Canonical(DMEDProfessionsCS)
 * group[=].target = Canonical(PositionAndProfessionCS_2)
 // Continuation: more DMEDProfessionsCS to PositionAndProfessionCS_2 mappings
@@ -1781,4 +1781,39 @@ Description: "DMED Position and Professions to DHP Position and Professions Conc
 * group[=].element[=].display = "Xalq Tabobati mutaxassisi" // ru: Специалист народной медицины
 * group[=].element[=].target[+].code = #3230-004
 * group[=].element[=].target[=].display = "Xalq tabobati boʻyicha mutaxassis"
+* group[=].element[=].target[=].relationship = #equivalent
+
+
+// Group 3: DMEDRoleCS to PositionAndProfessionCS
+* group[+].source = Canonical(DMEDRoleCS)
+* group[=].target = Canonical(PositionAndProfessionCS)
+
+* group[=].element[+].code = #director
+* group[=].element[=].display = "Direktor"
+* group[=].element[=].target[+].code = #1120.30
+* group[=].element[=].target[=].display = "Direktor"
+* group[=].element[=].target[=].relationship = #equivalent
+
+* group[=].element[+].code = #doctor
+* group[=].element[=].display = "Shifokor"
+* group[=].element[=].target[+].code = #2211
+* group[=].element[=].target[=].display = "Sog'liqni saqlash sohasida professional-mutaxassislar.  Vrachlar.  Umumiy amaliyot vrachlari"
+* group[=].element[=].target[=].relationship = #source-is-narrower-than-target
+
+* group[=].element[+].code = #manager
+* group[=].element[=].display = "Menejer"
+* group[=].element[=].target[+].code = #1221.11
+* group[=].element[=].target[=].display = "Menejer"
+* group[=].element[=].target[=].relationship = #equivalent
+
+* group[=].element[+].code = #laboratory
+* group[=].element[=].display = "Laboratoriya xodimi"
+* group[=].element[=].target[+].code = #2145.16
+* group[=].element[=].target[=].display = "Laborant"
+* group[=].element[=].target[=].relationship = #equivalent
+
+* group[=].element[+].code = #nurse
+* group[=].element[=].display = "Hamshira"
+* group[=].element[=].target[+].code = #3221.2
+* group[=].element[=].target[=].display = "Tibbiyot hamshirasi"
 * group[=].element[=].target[=].relationship = #equivalent

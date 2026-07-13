@@ -2,7 +2,7 @@ CodeSystem: GoalOutcomeCS
 Id: goal-outcome-cs
 Title: "Goal Outcome translations"
 Description: "Goal Outcome supplement with Uzbek and Russian translations"
-* insert SupplementCodeSystem(goal-outcome-cs, $sct, 2026-01)
+* insert SupplementCodeSystem(goal-outcome-cs, $sct, 2026.1.0)
 
 * #404684003 "Clinical finding (finding)"
   * ^designation[0].language = #uz

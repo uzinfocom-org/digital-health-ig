@@ -1,8 +1,8 @@
-Profile: UZCoreActivityDefinition
+Profile: UZCoreVaccinationActivityDefinition
 Parent: ActivityDefinition
-Id: uz-core-activity-definition
-Title: "UZ Core ActivityDefinition"
-Description: "Uzbekistan Core ActivityDefinition Profile, used for the definition of some activity to be performed, independent of a particular patient, practitioner, or other performance context."
+Id: uz-core-vaccination-activity-definition
+Title: "UZ Core VaccinationActivityDefinition"
+Description: "Uzbekistan Core VaccinationActivityDefinition Profile, used for the definition of some activity to be performed, independent of a particular patient, practitioner, or other performance context."
 
 * ^experimental = true
 * ^status = #active
@@ -17,7 +17,7 @@ Description: "Uzbekistan Core ActivityDefinition Profile, used for the definitio
 * versionAlgorithm[x] from VersionAlgorithmVS (extensible)
 
 * name MS
-* title MS
+* insert MultilingualTitle(Activity definition)
 
 * status MS
 * status from PublicationStatusVS (required)
@@ -38,7 +38,7 @@ Description: "Uzbekistan Core ActivityDefinition Profile, used for the definitio
 * profile MS
 
 * code MS
-* code from ProcedureCodeVS (example)
+* code = $sct#33879002
 
 * intent MS
 * intent from RequestIntentVS (required)
@@ -62,6 +62,8 @@ Description: "Uzbekistan Core ActivityDefinition Profile, used for the definitio
   * function MS
 
 * product[x] MS
+* product[x] from VaccineCodeVS (required)
+
 * productReference MS
 * productCodeableConcept MS
 * quantity MS
@@ -82,15 +84,12 @@ Description: "Uzbekistan Core ActivityDefinition Profile, used for the definitio
 
 
 Instance: example-activity-definition
-InstanceOf: UZCoreActivityDefinition
+InstanceOf: UZCoreVaccinationActivityDefinition
 Usage: #example
 Title: "Example ActivityDefinition — Childhood Vaccination"
 Description: "Routine childhood vaccination activity definition for Uzbekistan Digital Health Platform."
 
-
-* id = "example-activity-definition"
 * url = "https://terminology.dhp.uz/fhir/core/ActivityDefinition/example-activity-definition"
-
 * version = "1.0.0"
 * name = "ChildhoodVaccinationActivity"
 * title = "Childhood Vaccination Activity"

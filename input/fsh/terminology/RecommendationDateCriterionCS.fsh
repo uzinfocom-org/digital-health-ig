@@ -3,7 +3,7 @@ Id: recommendation-date-criterion-cs
 Title: "Immunization recommendation date criterion translations"
 Description: "Immunization recommendation date criteria with Uzbek and Russian translations"
 
-* insert SupplementCodeSystemDraft(recommendation-date-criterion-cs, $loinc, 2.82)
+* insert SupplementCodeSystemDraft(recommendation-date-criterion-cs, $loinc, 2.82.0)
 
 * #30981-5 "Earliest date to give"
   * ^designation[0].language = #ru

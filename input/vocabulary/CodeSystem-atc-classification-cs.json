@@ -69141,7 +69141,7 @@
     }
   ],
   "supplements": "http://www.whocc.no/atc",
-  "version": "2025",
+  "version": "2025.0.0",
   "language": "en",
   "experimental": true,
   "hierarchyMeaning": "is-a"
