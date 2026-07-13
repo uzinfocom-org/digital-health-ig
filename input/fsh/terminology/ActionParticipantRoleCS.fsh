@@ -3,7 +3,7 @@ Id: action-participant-role-cs
 Title: "Action Participant Role CS"
 Description: "Action participant role supplement with translations in Uzbek and Russian"
 
-* insert SupplementCodeSystemDraft(action-participant-role-cs, $sct, 5.0.0)
+* insert SupplementCodeSystemDraft(action-participant-role-cs, $sct, 2026.1.0)
 
 
 * #309343006

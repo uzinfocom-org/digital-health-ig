@@ -1,0 +1,105 @@
+name: Release
+
+# Publishes a release when a semver tag (e.g. 0.6.0) is pushed:
+#   1. builds the IG,
+#   2. verifies the built package is uz.dhp.core#<tag>,
+#   3. creates the GitHub Release <tag> with package.tgz attached,
+#   4. opens a PR adding <tag> to docs/package-feed.xml so the FHIR registry
+#      discovers it (main is ruleset-protected, so the feed cannot be pushed
+#      directly).
+# See RELEASING.md.
+
+on:
+  push:
+    tags:
+      - '[0-9]+.[0-9]+.[0-9]+'
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    env:
+      JAVA_TOOL_OPTIONS: "-Xmx8g"
+      # Falls back to GITHUB_TOKEN; if a RELEASE_TOKEN PAT is added later the
+      # feed PR's checks run and it can auto-merge. Otherwise merge it manually.
+      GH_TOKEN: ${{ secrets.RELEASE_TOKEN || github.token }}
+      VERSION: ${{ github.ref_name }}
+
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          fetch-depth: 0
+          token: ${{ secrets.RELEASE_TOKEN || github.token }}
+
+      - name: Check tag matches sushi-config and release is new
+        run: |
+          CFG_VERSION=$(grep -E '^version:' sushi-config.yaml | awk '{print $2}')
+          echo "Tag: $VERSION | sushi-config.yaml: $CFG_VERSION"
+          if [ "$VERSION" != "$CFG_VERSION" ]; then
+            echo "::error::Tag $VERSION does not match sushi-config version $CFG_VERSION - bump sushi-config first."
+            exit 1
+          fi
+          if gh release view "$VERSION" >/dev/null 2>&1; then
+            echo "::error::Release $VERSION already exists."
+            exit 1
+          fi
+
+      - name: Install Jekyll
+        run: sudo gem install jekyll
+
+      - name: Install Sushi
+        run: sudo npm install -g fsh-sushi
+
+      - name: Install IG publisher
+        run: |
+          chmod +x ./_updatePublisher.sh
+          ./_updatePublisher.sh -y
+
+      - name: Build IG
+        run: |
+          chmod +x ./_genonce.sh
+          ./_genonce.sh
+
+      - name: Verify built package
+        run: |
+          test -f output/package.tgz || { echo "::error::output/package.tgz was not produced"; exit 1; }
+          PKG=$(tar -xzOf output/package.tgz package/package.json)
+          NAME=$(echo "$PKG" | jq -r .name)
+          PVER=$(echo "$PKG" | jq -r .version)
+          echo "Built $NAME#$PVER"
+          if [ "$NAME" != "uz.dhp.core" ] || [ "$PVER" != "$VERSION" ]; then
+            echo "::error::Built package $NAME#$PVER does not match uz.dhp.core#$VERSION"
+            exit 1
+          fi
+
+      - name: Create GitHub release
+        run: |
+          gh release create "$VERSION" output/package.tgz \
+            --title "Version $VERSION" \
+            --notes "Published \`uz.dhp.core#$VERSION\`. See the [changelog](https://dhp.uz/fhir/core/changelog.html)."
+
+      - name: Open package-feed PR
+        run: |
+          FHIR_VERSION=$(grep -E '^fhirVersion:' sushi-config.yaml | awk '{print $2}')
+          BRANCH="chore/package-feed-$VERSION"
+          git fetch origin main
+          git checkout -- . 2>/dev/null || true
+          git checkout -B "$BRANCH" origin/main
+          python3 .github/scripts/update_package_feed.py "$VERSION" "$FHIR_VERSION"
+          if git diff --quiet docs/package-feed.xml; then
+            echo "Feed already contains $VERSION; no PR needed."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add docs/package-feed.xml
+          git commit -m "Add $VERSION to package feed"
+          git push origin "$BRANCH"
+          gh pr create --base main --head "$BRANCH" \
+            --title "Add $VERSION to package feed" \
+            --body "Automated by the Release workflow: adds \`uz.dhp.core#$VERSION\` to the package feed so the FHIR registry discovers it. Release: ${{ github.server_url }}/${{ github.repository }}/releases/tag/$VERSION"
+          gh pr merge --auto --squash "$BRANCH" \
+            || echo "::warning::Auto-merge not enabled on the feed PR - merge it manually."

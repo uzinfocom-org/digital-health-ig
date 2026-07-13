@@ -1,37 +1,37 @@
-> **Mashina tarjimasi, inson tomonidan tekshirilishi zarur.** Ushbu sahifa ingliz tilidan sun'iy intellekt yordamida avtomatik tarjima qilingan va hali muharrir tomonidan tekshirilmagan. Har qanday nomuvofiqlikda asl inglizcha versiya ustuvor hisoblanadi.
+Ushbu jarayon laboratoriya tekshiruvi qanday tayinlanishi va uning natijasi qanday qaytarilishini ko'rsatadi. Bu FHIR diagnostikasining kanonik zanjiri bo'lib, undagi references tuzilmasi aniq ko'rsatilgan - profil jadvali `Observation.specimen` elementi *mavjudligini* ko'rsatadi, ushbu sahifada esa u mazkur tayinlash doirasida olingan namunaga reference ko'rsatishi kerakligi tushuntiriladi.
 
-Ushbu ish jarayoni laboratoriya tahlili qanday buyurtirilishini va natija qanday qaytishini ko'rsatadi. Bu FHIR ning kanonik diagnostika zanjiri bo'lib, unda havolalar bog'lanishi aniq ko'rsatilgan - profil jadvali sizga `Observation.specimen` *mavjudligini* aytadi, ammo ushbu sahifa uning aynan shu buyurtmadan olingan namunaga ishora qilishi kerakligini bildiradi.
+Ishtirokchilar: tekshiruvni tayinlaydigan klinitsist; laboratoriya (LIS - Laboratory Information System, laboratoriya axborot tizimi); platforma (DHP - Digital Health Platform, Raqamli sog'liqni saqlash platformasi).
 
-Ishtirokchilar: buyurtma beruvchi shifokor; laboratoriya (LIS); platforma (DHP).
-
-O'zaro ta'sirlar ketma-ketligi:
+O'zaro ishlash ketma-ketligi:
 
 <div>{% include lab-sequence.svg %}</div><br clear="all"/>
 
-Zanjir va uning havolalari:
+Resurslar zanjiri va uning references:
 
 <div>{% include lab-references.svg %}</div><br clear="all"/>
 
-> Profil holati: [Specimen](StructureDefinition-uz-core-specimen.html) va [Observation](StructureDefinition-uz-core-observation.html) UZ Core da profillangan. ServiceRequest va DiagnosticReport profillari ishlab chiqilmoqda - ular e'lon qilinmaguncha, `meta.profile` ni tashlab qoldirib yoki asosiy resursga o'rnatib, asosiy FHIR R5 resurslaridan foydalaning va quyidagi bog'lanishga amal qiling.
+> Profil holati: to'rtta resursning barchasi UZ Core'da profillangan - [Specimen](StructureDefinition-uz-core-specimen.html), [Observation](StructureDefinition-uz-core-observation.html), [ServiceRequest](StructureDefinition-uz-core-servicerequest-laboratory.html) (laboratoriyaga xos) va [DiagnosticReport](StructureDefinition-uz-core-diagnostic-report.html). Har bir resursdagi `meta.profile` elementida mos profilni ko'rsating va quyidagi references tuzilmasiga rioya qiling.
 
-### 1. Tahlilni buyurtirish
+### 1. Tekshiruvni tayinlash
 
-Shifokor `ServiceRequest` yaratadi: `intent = order`, `code` da tahlil yoki panel, `subject` da bemor, buyurtmachi va `reasonCode`/`reasonReference` (tekshirilayotgan Condition). Buyurtirish mumkin bo'lgan tahlillar [HealthcareService](StructureDefinition-uz-core-healthcareservice.html) yozuvlari sifatida e'lon qilinadi; `priority` qiymati `routine`, `urgent` yoki `asap`.
+Klinitsist [ServiceRequest](StructureDefinition-uz-core-servicerequest-laboratory.html) resursini yaratadi va unda `intent = order` qiymatini, tekshiruv yoki panelni `code` elementida, bemorni `subject` elementida, requester elementida so'rov yuboruvchini va `reasonCode`/`reasonReference` elementida tekshirilayotgan Condition resursini ko'rsatadi. Tayinlash mumkin bo'lgan tekshiruvlar [HealthcareService](StructureDefinition-uz-core-healthcareservice.html) yozuvlari sifatida e'lon qilinadi; `priority` qiymati `routine`, `urgent` yoki `asap`.
 
 ```
 POST [base]/ServiceRequest
-{ "resourceType": "ServiceRequest", "status": "active", "intent": "order",
+{ "resourceType": "ServiceRequest",
+  "meta": { "profile": ["https://dhp.uz/fhir/core/StructureDefinition/uz-core-servicerequest-laboratory"] },
+  "status": "active", "intent": "order",
   "code": { "coding": [{ "system": "http://loinc.org", "code": "58410-2" }] },
   "subject": { "reference": "Patient/[id]" },
   "requester": { "reference": "PractitionerRole/[id]" },
   "priority": "routine" }
 ```
 
-Avvalgi tahlilning takrori `ServiceRequest.basedOn` ni dastlabki buyurtmaga o'rnatadi.
+Avvalgi tekshiruv takrorlanganda `ServiceRequest.basedOn` elementida dastlabki tayinlashga reference ko'rsatiladi.
 
 ### 2. Namunani olish
 
-Laboratoriya [Specimen](StructureDefinition-uz-core-specimen.html) ni qayd etadi: uning `type` i, olingan sana/vaqti va identifikatori, `subject` da bemor va eng muhimi `Specimen.request` ServiceRequest ga qaytib ishora qiladi.
+Laboratoriya [Specimen](StructureDefinition-uz-core-specimen.html) resursini qayd etadi. Unda `type` elementi, namuna olingan sana va vaqt, identifikator hamda bemor `subject` elementida ko'rsatiladi. Eng muhimi, `Specimen.request` elementida ServiceRequest resursiga reference ko'rsatiladi.
 
 ```
 POST [base]/Specimen
@@ -44,20 +44,20 @@ POST [base]/Specimen
 
 ### 3. Natijalarni qaytarish
 
-Har bir analit - bu LOINC `code`, `value[x]`, `interpretation` (normal / high / low / critical) va `referenceRange` ga ega [Observation](StructureDefinition-uz-core-observation.html). Har bir Observation `basedOn` ni ServiceRequest ga va `specimen` ni Specimen ga o'rnatadi. To'plam `DiagnosticReport` orqali jamlanadi: uning `basedOn` i ServiceRequest, `result` i esa Observation larni sanab o'tadi.
+Har bir aniqlanadigan ko'rsatkich [Observation](StructureDefinition-uz-core-observation.html) resursi sifatida taqdim etiladi; unda LOINC `code` elementi, `value[x]`, `interpretation` (normal / high / low / critical) hamda `referenceRange` elementi ko'rsatiladi. Har bir Observation resursida `basedOn` elementida ServiceRequest resursiga reference, `specimen` elementida esa Specimen resursiga reference ko'rsatiladi. Natijalar to'plami umumlashtiriladi va [DiagnosticReport](StructureDefinition-uz-core-diagnostic-report.html) resursida taqdim etiladi: uning `basedOn` elementi ServiceRequest resursiga reference saqlaydi, `result` elementida esa Observation resurslari ro'yxati ko'rsatiladi.
 
 ```
 GET [base]/DiagnosticReport?based-on=ServiceRequest/[id]&_include=DiagnosticReport:result
 GET [base]/Observation?patient=Patient/[id]&category=laboratory&_sort=-date
 ```
 
-Butun to'plamni bitta transaction Bundle sifatida qaytarish maqsadga muvofiq, shunda buyurtma, namuna, kuzatuvlar va hisobot atomar tarzda yetib keladi. Yakunlangan, imzolangan hisobot document Bundle sifatida yig'iladi (`Composition` sarlavhasi natijalarga ishora qiladi va [Provenance](StructureDefinition-uz-core-provenance.html) orqali imzolanadi) - `Composition` resurslarni takrorlamasdan ularga ishora qiladi. Qarang: [Umumiy ko'rsatmalar &rarr; Bundle lar](general-guidance.html#bundles-document-vs-transaction-vs-searchset).
+Butun to'plamni bitta tranzaksion Bundle sifatida qaytarish tavsiya etiladi, shunda tayinlash, namuna, Observation resurslari va hisobot birgalikda atomar tarzda qaytariladi. Yakunlangan va imzolangan hisobot hujjat Bundle sifatida shakllantiriladi (`Composition` natijalarga references saqlaydigan sarlavha vazifasini bajaradi va hisobot [Provenance](StructureDefinition-uz-core-provenance.html) orqali imzolanadi) - `Composition` resurslarni takrorlamaydi, balki ularga references saqlaydi. [Umumiy ko'rsatmalar &rarr; Bundle](general-guidance.html#bundles-document-vs-transaction-vs-searchset) bo'limiga qarang.
 
-### Holat va parallellik
+### Statuslar va parallel o'zgartirishlar
 
-`ServiceRequest.status` buyurtma hayotiy tsikliga amal qiladi (draft &rarr; active &rarr; completed yoki revoked); `entered-in-error`/`unknown` tuzatishlar uchun ajratilgan. Bekor qilish faol buyurtmani `revoked` ga o'tkazadi (izoh bilan), yakunlangan buyurtmani esa o'zgartirib bo'lmaydi. Parallel tahrirlar optimistik parallellikdan foydalanadi - oxirgi o'qishdan olingan `ETag` ni `If-Match` sifatida yuboring; eskirgan versiya `412 Precondition Failed` bilan rad etiladi. Qaytadan o'qing va qayta urinib ko'ring - qarang: [Parallellik](api-access.html#concurrency).
+`ServiceRequest.status` tayinlashning hayotiy sikliga mos ravishda o'zgaradi (draft &rarr; active &rarr; completed yoki revoked); `entered-in-error`/`unknown` qiymatlari tuzatishlar uchun ajratilgan. Bekor qilishda faol tayinlash `revoked` holatiga o'tkaziladi (izoh bilan), yakunlangan tayinlashni esa o'zgartirib bo'lmaydi. Bir vaqtda tahrirlashda optimistik versiya nazorati qo'llaniladi - oxirgi o'qishda olingan `ETag` qiymatini `If-Match` sifatida yuboring; eskirgan versiya `412 Precondition Failed` xatosi bilan rad etiladi. Resursni qayta o'qing va so'rovni takrorlang - [Parallel o'zgartirishlar](api-access.html#concurrency) bo'limiga qarang.
 
-### Aloqador
+### Tegishli materiallar
 
-- Profillar: [Specimen](StructureDefinition-uz-core-specimen.html) &middot; [Observation](StructureDefinition-uz-core-observation.html) &middot; [HealthcareService](StructureDefinition-uz-core-healthcareservice.html)
-- [Ish jarayonlari sharhi](workflows.html) &middot; [Umumiy ko'rsatmalar](general-guidance.html) &middot; [Hayotiy ko'rsatkichlar](vital-signs.html)
+- Profillar: [Specimen](StructureDefinition-uz-core-specimen.html) &middot; [Observation](StructureDefinition-uz-core-observation.html) &middot; [ServiceRequest](StructureDefinition-uz-core-servicerequest-laboratory.html) &middot; [DiagnosticReport](StructureDefinition-uz-core-diagnostic-report.html) &middot; [HealthcareService](StructureDefinition-uz-core-healthcareservice.html)
+- [Ish jarayonlari haqida umumiy ma'lumot](workflows.html) &middot; [Umumiy ko'rsatmalar](general-guidance.html) &middot; [Hayotiy ko'rsatkichlar](vital-signs.html)

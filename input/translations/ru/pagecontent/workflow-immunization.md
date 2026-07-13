@@ -1,47 +1,45 @@
-> **Машинный перевод, требуется проверка человеком.** Эта страница автоматически переведена с английского языка с помощью искусственного интеллекта и пока не проверена редактором. При любых расхождениях приоритет имеет оригинальная англоязычная версия.
+В этом рабочем процессе показано, как национальный календарь вакцинации используется для формирования персонализированной рекомендации, как пациент проходит этапы записи, консультации и визита для вакцинации и как регистрируется введённая доза вакцины. Все используемые здесь ресурсы профилированы в UZ Core.
 
-Этот рабочий процесс показывает, как национальный календарь иммунизации формирует персонализированную рекомендацию, как пациента ведут на этапах записи, консультации и вакцинации, и как регистрируется введённая доза вакцины. Все ресурсы, используемые здесь, профилированы в UZ Core.
+Участники: руководитель программы вакцинации / ответственный за управление данными (ведёт календарь); медицинский регистратор (записывает пациента); пациент или родитель/законный представитель (просматривает рекомендации); врач и медсестра (оценивают возможность проведения вакцинации и вводят вакцину). Клинические визиты представлены в FHIR ресурсами [Encounter](StructureDefinition-uz-core-encounter.html): один Encounter для консультации и отдельный Encounter для вакцинации.
 
-Участники: менеджер программы иммунизации / распорядитель данных (поддерживает календарь); медицинский регистратор (записывает пациента); пациент или родитель/опекун (просматривает рекомендации); врач и медсестра (оценивают показания и проводят вакцинацию). Клинические визиты передаются как ресурсы FHIR [Encounter](StructureDefinition-uz-core-encounter.html) — один визит-консультация и отдельный визит-вакцинация.
-
-Цепочка:
+Последовательность процесса:
 
 <div>{% include immunization-flow.svg %}</div><br clear="all"/>
 
-### 1. Календарь как код
+### 1. Календарь вакцинации в виде кода
 
-Национальный календарь публикуется один раз в виде [PlanDefinition](StructureDefinition-uz-core-immunization-plan-definition.html). Каждая рекомендованная доза — это `PlanDefinition.action`; вакцина и сведения о дозировании переносятся в действие через `definitionCanonical`, ссылающийся на `ActivityDefinition`, либо через национальные расширения (`doseSequence`, `maximumInterval`, `gracePeriod`). Минимальные интервалы между дозами используют `action.relatedAction.offsetDuration`; показания используют `action.condition`.
+Национальный календарь вакцинации публикуется в виде одного ресурса [PlanDefinition](StructureDefinition-uz-core-immunization-plan-definition.html). Каждая рекомендуемая доза представлена отдельным `PlanDefinition.action`; сведения о вакцине и дозировании задаются в action через `definitionCanonical`, содержащий reference на `ActivityDefinition`. Целевой возраст или расписание задаётся в `action.timing[x]` (`Age` или `Timing`); минимальные интервалы между дозами задаются в `action.relatedAction.offsetDuration`; критерии применимости - в `action.condition`.
 
 ```
 GET [base]/PlanDefinition?status=active&context-type-value=focus$http://snomed.info/sct|33879002
 ```
 
-> Для данной области/юрисдикции одновременно может быть активна только одна версия календаря, и календарь должен удовлетворять правилам валидации (отсутствие пропусков в последовательности доз, отсутствие невозможных временных окон, отсутствие двух перекрывающихся активных версий). См. страницу [PlanDefinition](StructureDefinition-uz-core-immunization-plan-definition.html).
+> Для каждой области применения или юрисдикции одновременно может быть активна только одна версия календаря. Календарь должен соответствовать правилам валидации: без пропусков в последовательности доз, недопустимых временных интервалов и двух пересекающихся активных версий. См. страницу [PlanDefinition](StructureDefinition-uz-core-immunization-plan-definition.html).
 
 ### 2. Формирование рекомендации
 
-Механизм рекомендаций считывает активный PlanDefinition, существующую историю [Immunization](StructureDefinition-uz-core-immunization.html) пациента и демографические данные пациента и формирует [ImmunizationRecommendation](StructureDefinition-uz-core-immunization-recommendation.html). Каждая запись содержит `vaccineCode` и/или `targetDisease`, `doseNumber`, `forecastStatus` (предстоит, просрочено, …) и `dateCriterion` (самая ранняя/рекомендованная/самая поздняя даты).
+Механизм формирования рекомендаций анализирует активный PlanDefinition, имеющуюся историю [Immunization](StructureDefinition-uz-core-immunization.html) пациента и его демографические данные, после чего формирует [ImmunizationRecommendation](StructureDefinition-uz-core-immunization-recommendation.html). Каждая запись содержит `vaccineCode` и/или `targetDisease`, `doseNumber`, `forecastStatus` (due, overdue, …) и `dateCriterion` (наиболее ранняя, рекомендуемая и наиболее поздняя даты).
 
 ```
-# read what a patient is due for
+# получить актуальные рекомендации для пациента
 GET [base]/ImmunizationRecommendation?patient=Patient/[id]&_sort=-date
 
-# read the doses already given
+# получить уже введённые дозы
 GET [base]/Immunization?patient=Patient/[id]&status=completed
 ```
 
-Рекомендация обычно *вычисляется* механизмом на основе календаря и истории пациента — клиенты её отображают. Во время консультации клиницист также может её просмотреть или создать, если механизм её не сформировал.
+Рекомендация обычно *рассчитывается* механизмом на основе календаря и истории пациента - клиентские системы отображают её. Во время консультации медицинский работник также может просмотреть рекомендацию или создать её, если механизм её не сформировал.
 
-### 3. Визит-консультация
+### 3. Консультация в рамках Encounter
 
-Медицинская помощь оказывается в рамках [Encounter](StructureDefinition-uz-core-encounter.html). Запись и консультация используют один долгоживущий визит-консультацию, чей `status` меняется по мере прохождения визита — для каждого медработника новый Encounter не создаётся:
+Медицинская помощь оказывается в рамках [Encounter](StructureDefinition-uz-core-encounter.html). Запись пациента и консультация проводятся в рамках одного консультационного Encounter, который сохраняется на протяжении всего визита и чей `status` меняется по мере прохождения его этапов. Для каждого медицинского работника новый Encounter не создаётся:
 
-- Медицинский регистратор записывает пациента и создаёт Encounter со `status = planned`. `subject` — это пациент, `serviceProvider` — клиника, а `participant` содержит регистратора и назначенную медсестру. Пациент теперь появляется в рабочем списке этой медсестры.
-- Медсестра открывает визит для первичного приёма и обновляет тот же Encounter до `status = in-progress`, фиксируя `reason` визита и `actualPeriod`.
-- Семейный врач осматривает пациента в рамках того же Encounter, просматривает или создаёт [ImmunizationRecommendation](StructureDefinition-uz-core-immunization-recommendation.html) и связывает её, устанавливая `Encounter.reason` как ссылку на эту рекомендацию. По завершении консультации Encounter переходит в `status = completed`.
+- Медицинский регистратор записывает пациента и создаёт Encounter со `status = planned`. `subject` указывает на пациента, `serviceProvider` - на клинику, а `participant` содержит регистратора и назначенную медсестру. После этого пациент появляется в рабочем списке этой медсестры.
+- Медсестра открывает визит для первичного приёма и переводит тот же Encounter в `status = in-progress`, указывая `reason` визита и `actualPeriod`.
+- Семейный врач осматривает пациента в рамках того же Encounter, просматривает или создаёт [ImmunizationRecommendation](StructureDefinition-uz-core-immunization-recommendation.html) и связывает её с Encounter, установив в `Encounter.reason` reference на эту рекомендацию. По завершении консультации Encounter переводится в `status = completed`.
 
 ```
-# registrar books the patient (consultation encounter)
+# регистратор записывает пациента (консультационный Encounter)
 POST [base]/Encounter
 {
   "resourceType": "Encounter",
@@ -52,26 +50,26 @@ POST [base]/Encounter
   "participant": [{ "actor": { "reference": "Practitioner/[nurse]" } }]
 }
 
-# nurse opens the visit
-PUT [base]/Encounter/[id]    # status -> in-progress, set reason, actualPeriod
+# медсестра открывает визит
+PUT [base]/Encounter/[id]    # status -> in-progress, заполнить reason и actualPeriod
 
-# doctor links the recommendation and closes the consult
+# врач связывает рекомендацию и завершает консультацию
 PUT [base]/Encounter/[id]    # reason -> ImmunizationRecommendation, status -> completed
 ```
 
 ### 4. Введение дозы
 
-Вакцинация обычно проходит в другом учреждении и в другой день, нежели консультация, поэтому она регистрируется в отдельном Encounter, а не в визите-консультации. Медсестра открывает этот визит-вакцинацию (`status = in-progress`) для введения, затем регистрирует [Immunization](StructureDefinition-uz-core-immunization.html), который ссылается на него через `Immunization.encounter`, а на рекомендацию — через `Immunization.basedOn`. `status` отражает исход:
+Вакцинация обычно проводится в другом учреждении и в другой день, чем консультация, поэтому она регистрируется в отдельном Encounter, а не в консультационном. Для введения вакцины медсестра открывает этот Encounter для вакцинации (`status = in-progress`), а затем регистрирует ресурс [Immunization](StructureDefinition-uz-core-immunization.html), который ссылается на него через `Immunization.encounter` и на рекомендацию через `Immunization.basedOn`. Исход указывается в `status`:
 
-| Исход | `Immunization.status` | Также устанавливается |
+| Исход | `Immunization.status` | Также заполнить |
 |---------|------------------------|----------|
 | Вакцина введена | `completed` | `occurrence`, `vaccineCode`, `administeredProduct`, `lotNumber`, `doseQuantity`, `performer` |
-| Медицинский отвод | `not-done` | `statusReason` = `MEDPREC` (медицинская предосторожность) или `IMMUNE` (иммунитет) |
-| Отказ | `not-done` | `statusReason` = `PATOBJ` (возражение пациента) |
-| Продукт недоступен | `not-done` | `statusReason` = `OSTOCK` (продукт отсутствует на складе) |
-| Зарегистрировано ошибочно | `entered-in-error` | - |
+| Медицинский отвод | `not-done` | `statusReason` = `MEDPREC` (медицинское противопоказание) или `IMMUNE` (наличие иммунитета) |
+| Отказ | `not-done` | `statusReason` = `PATOBJ` (отказ пациента) |
+| Препарат отсутствует | `not-done` | `statusReason` = `OSTOCK` (препарат отсутствует в наличии) |
+| Запись создана ошибочно | `entered-in-error` | - |
 
-`statusReason` связан (required) с [набором значений причин статуса иммунизации](ValueSet-immunization-status-reason-vs.html); четыре приведённых выше кода из HL7 v3 ActReason являются единственными допустимыми значениями.
+`statusReason` имеет обязательную привязку (required) к [ValueSet причин статуса Immunization](ValueSet-immunization-status-reason-vs.html); перечисленные выше четыре кода из HL7 v3 ActReason являются единственными допустимыми значениями.
 
 ```
 POST [base]/Immunization
@@ -90,11 +88,11 @@ POST [base]/Immunization
 }
 ```
 
-> Доза уникально идентифицируется по сочетанию пациент + vaccineCode + occurrence + lotNumber — не отправляйте одну и ту же комбинацию дважды.
+> Доза однозначно идентифицируется комбинацией patient + vaccineCode + occurrence + lotNumber. Не отправляйте одну и ту же комбинацию повторно.
 
-### 5. Регистрация реакции (при наличии)
+### 5. Регистрация реакции при её наличии
 
-Если у пациента возникает поствакцинальная реакция, зарегистрируйте [AdverseEvent](StructureDefinition-uz-core-adverse-event.html), чей `suspectEntity` ссылается на Immunization, при необходимости с [Observation](StructureDefinition-uz-core-observation.html), описывающим реакцию.
+Если у пациента возникла реакция после вакцинации, зарегистрируйте ресурс [AdverseEvent](StructureDefinition-uz-core-adverse-event.html), в котором `suspectEntity` содержит reference на Immunization, и при необходимости добавьте [Observation](StructureDefinition-uz-core-observation.html) с описанием реакции.
 
 ### Связанные материалы
 

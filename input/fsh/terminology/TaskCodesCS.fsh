@@ -1,11 +1,9 @@
-// === FILENAME: TaskCodesCS.fsh ===
 CodeSystem: TaskCodesCS
 Id: task-codes-cs
 Title: "Task Codes"
 Description: "Uzbekistan national code system for Task codes. This CodeSystem contains codes for different types of tasks in the healthcare workflow."
+
 * insert OriginalCodeSystemDraft(task-codes-cs)
-* ^language = #uz
-* ^experimental = true
 
 * #approve-family-doctor "Oilaviy shifokorning roziligi"
   * ^designation[0].language = #ru

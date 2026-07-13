@@ -3,7 +3,7 @@ Id: body-site-cs
 Title: "Body Site CS"
 Description: "Body site supplement with Uzbek and Russian translations"
 
-* insert SupplementCodeSystemDraft(body-site-cs, $sct, 5.0.0)
+* insert SupplementCodeSystemDraft(body-site-cs, $sct, 2026.1.0)
 
 * #368210008
   * ^designation[0].language = #ru
