@@ -3,7 +3,7 @@ Id: recommendation-reason-cs
 Title: "Immunization reason translations"
 Description: "Immunization recommendation reason supplement with Uzbek and Russian translations"
 
-* insert SupplementCodeSystemDraft(recommendation-reason-cs, $sct, 2026-01)
+* insert SupplementCodeSystemDraft(recommendation-reason-cs, $sct, 2026.1.0)
 
 * #77176002 "Smoker"
   * ^designation[0].language = #ru
