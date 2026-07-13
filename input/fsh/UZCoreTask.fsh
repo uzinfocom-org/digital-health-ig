@@ -3,11 +3,11 @@ Description: "If Task.status is not completed, cancelled, or failed, and request
 Severity: #warning
 Expression: "(status != 'completed' and status != 'cancelled' and status != 'failed' and requestedPeriod.end.exists() and requestedPeriod.end < now()) implies businessStatus.coding.exists(code = 'overdue')"
 
-Profile: UZCoreTask
+Profile: UZCoreReferralApprovalTask
 Parent: Task
-Id: uz-core-task
-Title: "UZ Core Task"
-Description: "Uzbekistan Core Task profile, used to track workflow steps of the state-insurance referral and hospitalization approval process (Annex 1 to Resolution of the Cabinet of Ministers No. 694, 04.11.2025)"
+Id: uz-core-referral-approval-task
+Title: "UZ Core Task Referral Approval"
+Description: "Uzbekistan Core Task Referral Approval profile, used to track workflow steps of the state-insurance referral and hospitalization approval process (Annex 1 to Resolution of the Cabinet of Ministers No. 694, 04.11.2025)"
 * ^experimental = true
 * ^status = #active
 * ^date = "2026-06-18"
@@ -62,7 +62,7 @@ Description: "Uzbekistan Core Task profile, used to track workflow steps of the 
 * obeys uzcore-tsk-1
 
 Instance: example-task-family-doctor
-InstanceOf: UZCoreTask
+InstanceOf: UZCoreReferralApprovalTask
 Description: "Example of a state-insurance workflow task assigned to the family doctor for initial approval"
 Usage: #example
 * language = #uz
@@ -82,7 +82,7 @@ Usage: #example
   * end = "2026-03-06"
 
 Instance: example-task-specialist
-InstanceOf: UZCoreTask
+InstanceOf: UZCoreReferralApprovalTask
 Description: "Example of a state-insurance workflow task assigned to a specialist physician for review"
 Usage: #example
 * language = #uz
@@ -103,7 +103,7 @@ Usage: #example
   * end = "2026-03-07"
 
 Instance: example-task-regional-commission
-InstanceOf: UZCoreTask
+InstanceOf: UZCoreReferralApprovalTask
 Description: "Example of a state-insurance workflow task assigned to the regional health commission for approval"
 Usage: #example
 * language = #uz
@@ -124,7 +124,7 @@ Usage: #example
   * end = "2026-03-08"
 
 Instance: example-task-national-commission
-InstanceOf: UZCoreTask
+InstanceOf: UZCoreReferralApprovalTask
 Description: "Example of a state-insurance workflow task assigned to the national (republican) health commission for approval"
 Usage: #example
 * language = #uz
@@ -145,7 +145,7 @@ Usage: #example
   * end = "2026-03-10"
 
 Instance: example-task-hospitalization
-InstanceOf: UZCoreTask
+InstanceOf: UZCoreReferralApprovalTask
 Description: "Example of a state-insurance workflow task representing the hospitalization step at the receiving clinic"
 Usage: #example
 * language = #uz
