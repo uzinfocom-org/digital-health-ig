@@ -45,3 +45,9 @@ Description: "ConceptMap for mapping DMED administration route codes to DHP/SNOM
 * group[=].element[=].target[+].code = #260617000
 * group[=].element[=].target[=].display = "Intranasal approach"
 * group[=].element[=].target[=].relationship = #equivalent
+
+* group[=].element[+].code = #other
+* group[=].element[=].display = "Другие способы введения"
+* group[=].element[=].target[+].code = #394841004
+* group[=].element[=].target[=].display = "Other category"
+* group[=].element[=].target[=].relationship = #equivalent
