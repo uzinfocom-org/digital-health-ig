@@ -33,3 +33,9 @@ Description: "Defines routes of administration in Uzbek, Russian and English"
   * ^designation[=].value = "Интраназально"
   * ^designation[+].language = #en
   * ^designation[=].value = "Intranasally"
+
+* #other "Boshqa yuborish usullari"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Другие способы введения"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Other input methods"
