@@ -38,4 +38,4 @@ Description: "Defines routes of administration in Uzbek, Russian and English"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Другие способы введения"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Other input methods"
+  * ^designation[=].value = "Other administration methods"
