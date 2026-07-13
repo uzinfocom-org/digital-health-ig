@@ -2,7 +2,7 @@ CodeSystem: TargetDiseaseCS
 Id: target-disease-cs
 Title: "Target Disease translations"
 Description: "Target Disease supplement with Uzbek and Russian translations"
-* insert SupplementCodeSystem(target-disease-cs, $sct, 2026-01)
+* insert SupplementCodeSystem(target-disease-cs, $sct, 2026.1.0)
 
 * #397430003 "Diphtheria (disorder)"
   * ^designation[0].language = #uz
