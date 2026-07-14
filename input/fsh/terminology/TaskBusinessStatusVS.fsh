@@ -1,4 +1,3 @@
-// === FILENAME: TaskBusinessStatusCodesVS.fsh ===
 ValueSet: TaskBusinessStatusVS
 Id: task-business-status-vs
 Title: "Task Business Status Codes ValueSet"

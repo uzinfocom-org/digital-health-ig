@@ -1,35 +1,33 @@
-// === FILENAME: TaskCodesCS.fsh ===
 CodeSystem: TaskCodesCS
 Id: task-codes-cs
 Title: "Task Codes"
 Description: "Uzbekistan national code system for Task codes. This CodeSystem contains codes for different types of tasks in the healthcare workflow."
+
 * insert OriginalCodeSystemDraft(task-codes-cs)
-* ^language = #uz
-* ^experimental = true
 
 * #approve-family-doctor "Oilaviy shifokorning roziligi"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Утверждение семейного врача"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Family doctor approval"
+  * ^designation[=].value = "Approval by family doctor"
 
 * #approve-specialist "Mutaxassisning roziligi"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Утверждение узкого специалиста"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Specialist approval"
+  * ^designation[=].value = "Approval by specialist"
 
 * #approve-regional-commission "Mintaqaviy komissiyaning roziligi"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Утверждение региональной комиссии"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Regional commission approval"
+  * ^designation[=].value = "Approval by regional commission"
 
 * #approve-national-commission "Respublika komissiyasining roziligi"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Утверждение республиканской комиссии"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Republican commission approval"
+  * ^designation[=].value = "Approval by national commission"
 
 * #approve-hospitalization "Kasalxonaga yotqizishni tasdiqlash"
   * ^designation[0].language = #ru
@@ -41,4 +39,4 @@ Description: "Uzbekistan national code system for Task codes. This CodeSystem co
   * ^designation[0].language = #ru
   * ^designation[=].value = "Утверждение фондом страхования"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Approval insurance fund"
+  * ^designation[=].value = "Approval by insurance fund"

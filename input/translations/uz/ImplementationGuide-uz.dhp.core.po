@@ -2827,68 +2827,68 @@ msgstr ""
 
 # ImplementationGuide.definition.resource.name
 #: ImplementationGuide.definition.resource.name
-msgid "MIS2 Level Type to Subordination Group"
+msgid "SSV Level Type to Subordination Group"
 msgstr ""
-"MIS2 daraja turini Subordination Group ga moslashtirish"
+"SSV daraja turini Subordination Group ga moslashtirish"
 
 # ImplementationGuide.definition.resource.description
 #: ImplementationGuide.definition.resource.description
 msgid ""
-"Maps MIS2 organization level type codes to UZ Core Organizational "
-"Subordination Group codes. MIS2 classifies healthcare facilities into "
+"Maps SSV organization level type codes to UZ Core Organizational "
+"Subordination Group codes. SSV classifies healthcare facilities into "
 "administrative levels, while OrganizationalSubordinationGroupCS groups "
 "institutions by their administrative subordination (republican, territorial, "
-"district/city, other ministries, private). The MIS2 level types Shahar "
+"district/city, other ministries, private). The SSV level types Shahar "
 "(Urban), Tuman (Area), and Mahalla (District) all fall under the combined "
 "district-and-city administration category in the target."
 msgstr ""
-"MIS2 tashkilot darajasi turi kodlarini UZ Core Organizational Subordination "
-"Group kodlariga moslashtiradi. MIS2 tibbiyot muassasalarini ma’muriy "
+"SSV tashkilot darajasi turi kodlarini UZ Core Organizational Subordination "
+"Group kodlariga moslashtiradi. SSV tibbiyot muassasalarini ma’muriy "
 "darajalar bo‘yicha tasniflaydi, OrganizationalSubordinationGroupCS esa "
 "muassasalarni ularning ma’muriy bo‘ysunuvi bo‘yicha guruhlaydi (respublika, "
-"hududiy, tuman/shahar, boshqa vazirliklar, xususiy). MIS2 dagi Shahar, Tuman "
+"hududiy, tuman/shahar, boshqa vazirliklar, xususiy). SSV dagi Shahar, Tuman "
 "va Mahalla daraja turlari maqsadli tizimdagi birlashtirilgan tuman-shahar "
 "boshqaruvi toifasiga kiradi."
 
 # ImplementationGuide.definition.resource.name
 #: ImplementationGuide.definition.resource.name
-msgid "MIS2 Medical Type to Organizational Structure"
+msgid "SSV Medical Type to Organizational Structure"
 msgstr ""
-"MIS2 tibbiy turini Organizational Structure ga moslashtirish"
+"SSV tibbiy turini Organizational Structure ga moslashtirish"
 
 # ImplementationGuide.definition.resource.description
 #: ImplementationGuide.definition.resource.description
 msgid ""
-"Maps MIS2 medical type codes to UZ Core Organizational Structure codes. MIS2 "
+"Maps SSV medical type codes to UZ Core Organizational Structure codes. SSV "
 "classifies healthcare facilities into 45 medical types, while "
 "OrganizationalStructureCS provides the Ministry of Health's detailed "
 "classification of institution types."
 msgstr ""
-"MIS2 tibbiy tur kodlarini UZ Core Organizational Structure kodlariga "
-"moslashtiradi. MIS2 tibbiyot muassasalarini 45 ta tibbiy turga tasniflaydi, "
+"SSV tibbiy tur kodlarini UZ Core Organizational Structure kodlariga "
+"moslashtiradi. SSV tibbiyot muassasalarini 45 ta tibbiy turga tasniflaydi, "
 "OrganizationalStructureCS esa Sog‘liqni saqlash vazirligi tomonidan "
 "belgilangan muassasa turlarining batafsil tasnifini taqdim etadi."
 
 # ImplementationGuide.definition.resource.name
 #: ImplementationGuide.definition.resource.name
-msgid "MIS2 Service Type to Organizational Service Group"
+msgid "SSV Service Type to Organizational Service Group"
 msgstr ""
-"MIS2 xizmat turini Organizational Service Group ga moslashtirish"
+"SSV xizmat turini Organizational Service Group ga moslashtirish"
 
 # ImplementationGuide.definition.resource.description
 #: ImplementationGuide.definition.resource.description
 msgid ""
-"Maps MIS2 service type codes to UZ Core Organizational Service Group codes. "
-"MIS2 uses service type classification per organization, while "
+"Maps SSV service type codes to UZ Core Organizational Service Group codes. "
+"SSV uses service type classification per organization, while "
 "OrganizationalServiceGroupCS uses a single pre-combined classification. When "
-"an organization has multiple MIS2 service types, the combination should be "
+"an organization has multiple SSV service types, the combination should be "
 "considered to select the appropriate target code (e.g. Inpatient + "
 "Outpatient together maps to III_100)."
 msgstr ""
-"MIS2 xizmat turi kodlarini UZ Core Organizational Service Group kodlariga "
-"moslashtiradi. MIS2 har bir tashkilot bo‘yicha xizmat turi tasnifidan "
+"SSV xizmat turi kodlarini UZ Core Organizational Service Group kodlariga "
+"moslashtiradi. SSV har bir tashkilot bo‘yicha xizmat turi tasnifidan "
 "foydalanadi, OrganizationalServiceGroupCS esa yagona oldindan "
-"birlashtirilgan tasnifdan foydalanadi. Agar tashkilotda bir nechta MIS2 "
+"birlashtirilgan tasnifdan foydalanadi. Agar tashkilotda bir nechta SSV "
 "xizmat turi mavjud bo‘lsa, tegishli maqsadli kodni tanlash uchun ularning "
 "kombinatsiyasi hisobga olinishi kerak (masalan, Statsionar + ambulatoriya "
 "birgalikda III_100 ga moslashtiriladi)."

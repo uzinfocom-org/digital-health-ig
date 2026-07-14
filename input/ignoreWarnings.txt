@@ -29,15 +29,11 @@ There are multiple resources with the same title%
 Source Code System urn:iso:std:iso:3166 doesn't have all content (content = not-present), so the source codes cannot be checked
 Target Code System urn:iso:std:iso:3166 doesn't have all content (content = not-present), so the target codes cannot be checked
 
-# MIS2 ConceptMaps reference external code systems not available to the IG publisher - source codes cannot be validated
+# SSV ConceptMaps reference external code systems not available to the IG publisher - source codes cannot be validated
 WARNING: ConceptMap/ssv-level-type-to-subordination-group-cm: ConceptMap.group[0].source: The Source Code System http://fhir.ssv.uz/ValueSet/organization-type-level is not fully defined and populated, and no sourceScope is specified, so the source code checking will not be performed
 WARNING: ConceptMap/ssv-medical-type-to-organizational-structure-cm: ConceptMap.group[0].source: The Source Code System http://fhir.ssv.uz/ValueSet/organization-type-medical is not fully defined and populated, and no sourceScope is specified, so the source code checking will not be performed
 WARNING: ConceptMap/ssv-medical-type-to-organizational-structure-cm: ConceptMap.group[1].source: The Source Code System http://fhir.ssv.uz/ValueSet/organization-type-medical is not fully defined and populated, and no sourceScope is specified, so the source code checking will not be performed
 WARNING: ConceptMap/ssv-service-type-to-organizational-service-group-cm: ConceptMap.group[0].source: The Source Code System http://fhir.ssv.uz/ValueSet/organization-type-service is not fully defined and populated, and no sourceScope is specified, so the source code checking will not be performed
-WARNING: ConceptMap/mis2-level-type-to-subordination-group-cm: ConceptMap.group[0].source: The Source Code System http://fhir.ssv.uz/ValueSet/organization-type-level is not fully defined and populated, and no sourceScope is specified, so the source code checking will not be performed
-WARNING: ConceptMap/mis2-medical-type-to-organizational-structure-cm: ConceptMap.group[0].source: The Source Code System http://fhir.ssv.uz/ValueSet/organization-type-medical is not fully defined and populated, and no sourceScope is specified, so the source code checking will not be performed
-WARNING: ConceptMap/mis2-medical-type-to-organizational-structure-cm: ConceptMap.group[1].source: The Source Code System http://fhir.ssv.uz/ValueSet/organization-type-medical is not fully defined and populated, and no sourceScope is specified, so the source code checking will not be performed
-WARNING: ConceptMap/mis2-service-type-to-organizational-service-group-cm: ConceptMap.group[0].source: The Source Code System http://fhir.ssv.uz/ValueSet/organization-type-service is not fully defined and populated, and no sourceScope is specified, so the source code checking will not be performed
 
 # tx.fhir.org doesn't have all UCUM codes - allowed to be ignored, needs to be reported
 Target Code System http://unitsofmeasure.org doesn't have all content (content = not-present), so the target codes cannot be checked
@@ -65,3 +61,6 @@ A definition for CodeSystem 'http://example.org/fhir/CodeSystem/lab-report-type'
 # The hemoglobin ObservationDefinition is example data using example.org URLs, so its self-referencing canonical link and undefined identifier system are expected.
 Hyperlink 'http://example.org/fhir/ObservationDefinition/example-laboratory-hemoglobin' at 'div/div/p/a' for 'http://example.org/fhir/ObservationDefinition/example-laboratory-hemoglobin' does not resolve
 No definition could be found for URL value 'http://example.org/fhir/sid/lab-test-catalog'
+
+# IG Publisher 2.2.10 emits an OID-assignment recommendation for every CodeSystem/ValueSet. We don't use OID-based terminology (e.g. CDA), so assigning OIDs IG-wide adds no value here.
+%should have an OID assigned to cater for possible use with OID based terminology systems%

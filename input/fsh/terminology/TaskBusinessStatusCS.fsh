@@ -1,4 +1,3 @@
-// === FILENAME: TaskBusinessStatusCodesCS.fsh ===
 CodeSystem: TaskBusinessStatusCS
 Id: task-business-status-cs
 Title: "Task Business Status Codes"

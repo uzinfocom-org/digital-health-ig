@@ -171,6 +171,8 @@ Description: "Uzbekistan Core Patient profile, used to represent patients admini
 * insert HumanName
 * active MS
 * birthDate MS
+* managingOrganization MS
+* managingOrganization only Reference(UZCoreOrganization)
 
 Instance: example-salim
 InstanceOf: UZCorePatient
@@ -307,3 +309,20 @@ Usage: #example
 * name
   * use = #anonymous
   * text = "Unidentified patient"
+
+Instance: example-nodira
+InstanceOf: UZCorePatient
+Description: "Example of a patient named Nodira, the subject of the state-insurance referral approval workflow examples"
+Usage: #example
+* language = #uz
+* identifier[nationalId]
+  * value = "40503855900021"
+* active = true
+* name
+  * use = #usual
+  * text = "Karimova Nodira Anvarovna"
+  * family = "Karimova"
+  * given = "Nodira"
+  * suffix = "Anvarovna"
+* gender = #female
+* birthDate = "1985-03-05"

@@ -61,10 +61,16 @@ RuleSet: UzAddressRules
   * period ^short = "Time period when the address was/is used"
 
 RuleSet: MultilingualName(entityType)
-* name 1..1 MS
+* name MS
   * ^short = "{entityType} name (in Uzbek language)"
   * extension contains translation named translation 0..* MS
     * ^short = "{entityType} name (in Russian and Karakalpak languages)"
+
+RuleSet: MultilingualTitle(entityType)
+* title MS
+  * ^short = "{entityType} title (in Uzbek language)"
+  * extension contains translation named translation 0..* MS
+    * ^short = "{entityType} title (in Russian and Karakalpak languages)"
 
 RuleSet: HumanName
 * name MS
@@ -136,6 +142,12 @@ RuleSet: OriginalCodeSystem(id)
 * ^language = #uz
 * ^experimental = false
 
+// The supplement version must be SemVer (X.Y.Z) - the DHP terminology platform cannot parse
+// other formats. When the supplemented system's release identifier is not SemVer, encode it
+// (see modelling-guidelines.md section 5): 2026-01 -> 2026.1.0, 20210222 -> 2021.2.22, 2.9 -> 2.9.0.
+// Do NOT version-pin {supplements} (url|version): the publisher/tx supplement resolution matches
+// CodeSystem.supplements against the bare system URL and pinned supplements break every
+// ValueSet expansion that needs them ("Required supplement not found").
 RuleSet: SupplementCodeSystemDraft(id, supplements, version)
 * ^url = "https://terminology.dhp.uz/fhir/core/CodeSystem/{id}"
 * ^status = #draft

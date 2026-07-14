@@ -1,16 +1,14 @@
-> **Машинный перевод, требуется проверка человеком.** Эта страница автоматически переведена с английского языка с помощью искусственного интеллекта и пока не проверена редактором. При любых расхождениях приоритет имеет оригинальная англоязычная версия.
+Этот процесс показывает, как данные о медицинской помощи пациенту по поводу одной проблемы группируются во времени. Отдельный визит представлен ресурсом [Encounter](StructureDefinition-uz-core-encounter.html); продолжительный процесс оказания помощи, охватывающий несколько визитов - например, ведение беременности, лечение онкологического заболевания или хронической инфекции, - представлен ресурсом [EpisodeOfCare](StructureDefinition-uz-core-episodeofcare.html). EpisodeOfCare связывает визиты, диагнозы и результаты одного клинического случая, чтобы клиницист видел целостную картину, а не разрозненные записи.
 
-Этот рабочий процесс показывает, как медицинская помощь пациенту по одной проблеме группируется во времени. Отдельный приём - это [Encounter](StructureDefinition-uz-core-encounter.html); курс помощи, охватывающий множество приёмов - беременность, онкологический маршрут, хроническая инфекция, - это [EpisodeOfCare](StructureDefinition-uz-core-episodeofcare.html). Эпизод - это та нить, что связывает воедино приёмы, диагнозы и результаты одного случая, чтобы клиницист видел всю историю целиком, а не разрозненные записи.
+> Статус профилей: [EpisodeOfCare](StructureDefinition-uz-core-episodeofcare.html), [Encounter](StructureDefinition-uz-core-encounter.html), [Condition](StructureDefinition-uz-core-condition.html) и [Observation](StructureDefinition-uz-core-observation.html) профилированы в UZ Core. Профиль MedicationRequest, используемый во время лечения, находится в разработке. До его публикации используйте базовый ресурс FHIR R5.
 
-> Статус профилей: [EpisodeOfCare](StructureDefinition-uz-core-episodeofcare.html), [Encounter](StructureDefinition-uz-core-encounter.html), [Condition](StructureDefinition-uz-core-condition.html) и [Observation](StructureDefinition-uz-core-observation.html) профилированы в UZ Core. Профиль MedicationRequest, используемый при лечении, находится в разработке - пока он не опубликован, используйте базовый ресурс FHIR R5.
-
-Участники: врач общей практики (открывает случай и ведёт его); специалисты (лечат в рамках случая); платформа (DHP).
+Участники: врач общей практики (открывает клинический случай и ведёт его); профильные специалисты (оказывают помощь в рамках клинического случая); платформа DHP (Digital Health Platform - Цифровая платформа здравоохранения).
 
 <div>{% include patient-journey-sequence.svg %}</div><br clear="all"/>
 
-### 1. Открытие эпизода
+### 1. Открытие EpisodeOfCare
 
-Когда проблема становится случаем, требующим ведения - как правило, при подтверждающем результате, - клиницист создаёт `EpisodeOfCare` со `status = active`, указанием пациента в `patient`, ответственного клинициста/команды и значением `period.start`, равным дате диагноза. К нему привязываются диагностический [Encounter](StructureDefinition-uz-core-encounter.html) и [Condition](StructureDefinition-uz-core-condition.html).
+Когда проблема становится клиническим случаем, требующим ведения - обычно после получения подтверждающего результата, - клиницист создаёт `EpisodeOfCare` со `status = active`, указывает пациента в `patient`, ответственного клинициста или команду, а в `period.start` - дату постановки диагноза. Диагностический [Encounter](StructureDefinition-uz-core-encounter.html) и [Condition](StructureDefinition-uz-core-condition.html) связываются с этим EpisodeOfCare.
 
 ```
 POST [base]/EpisodeOfCare
@@ -21,9 +19,9 @@ POST [base]/EpisodeOfCare
   "period": { "start": "2026-05-30" } }
 ```
 
-### 2. Всё в случае ссылается на эпизод
+### 2. Все данные клинического случая связаны с EpisodeOfCare
 
-На протяжении всего случая каждый приём и каждый результат ссылаются на эпизод, благодаря чему запись остаётся сгруппированной. [Encounter](StructureDefinition-uz-core-encounter.html) несёт `episodeOfCare`; [Observation](StructureDefinition-uz-core-observation.html) фиксирует свой `encounter`; лечение фиксируется как `MedicationRequest` (или `MedicationAdministration`) на тех же приёмах.
+На протяжении всего клинического случая каждый визит и каждый результат содержат reference на EpisodeOfCare, благодаря чему записи остаются сгруппированными. [Encounter](StructureDefinition-uz-core-encounter.html) содержит `episodeOfCare`; [Observation](StructureDefinition-uz-core-observation.html) указывает связанный Encounter в элементе `encounter`; лечение фиксируется в `MedicationRequest` (или `MedicationAdministration`) в рамках тех же Encounter.
 
 ```
 POST [base]/Encounter
@@ -34,24 +32,24 @@ POST [base]/Encounter
   "episodeOfCare": [{ "reference": "EpisodeOfCare/[id]" }] }
 ```
 
-### 3. Два варианта маршрута
+### 3. Два сценария маршрута пациента
 
-Жизненный цикл эпизода различается в зависимости от вида случая:
+Жизненный цикл EpisodeOfCare зависит от типа клинического случая:
 
-**Острый / излечимый (например, курс лечения ВГС).** Эпизод открывается при постановке диагноза, проходит через лечебные приёмы и контрольные лабораторные исследования и закрывается при подтверждении излечения: устанавливаются `status = finished` и `period.end`, равный дате выздоровления.
+**Острый / излечимый случай (например, курс лечения HCV - вируса гепатита C).** EpisodeOfCare открывается при постановке диагноза, охватывает визиты в рамках лечения и контрольные лабораторные исследования и закрывается после подтверждения выздоровления: установите `status = finished`, а в `period.end` укажите дату выздоровления.
 
-**Хронический / пожизненный (например, ведение ВГВ).** Эпизод остаётся `active` годами. Приостановки и возобновления фиксируются в `EpisodeOfCare.statusHistory`, а не путём его закрытия. Когда пациент переходит к другому поставщику, **не** переназначайте эпизод: закройте исходный (`status = finished`) и откройте новый `EpisodeOfCare` в принимающей организации, чтобы каждая организация владела той частью маршрута, которую она обеспечила.
+**Хронический / пожизненный случай (например, ведение HBV - вируса гепатита B).** EpisodeOfCare может оставаться в статусе `active` в течение многих лет. Периоды приостановки и возобновления помощи фиксируются в `EpisodeOfCare.statusHistory`, а не посредством закрытия EpisodeOfCare. При переходе пациента к другому поставщику медицинских услуг **не** переназначайте EpisodeOfCare: закройте исходный (`status = finished`) и создайте новый `EpisodeOfCare` в принимающей организации. Это позволяет каждой организации отвечать за ту часть маршрута пациента, в рамках которой она оказывала помощь.
 
-| Событие | Эффект |
+| Событие | Результат |
 |-------|--------|
-| Случай начинается (подтверждающий результат) | `EpisodeOfCare.status = active`, установлен `period.start` |
-| Помощь приостановлена / возобновлена | добавление в `statusHistory` (`onhold` &rarr; `active`); эпизод остаётся открытым |
-| Излечение подтверждено (острый) | `status = finished`, установлен `period.end` |
-| Передача помощи | у исходного `status = finished`; новый `EpisodeOfCare` открыт в новой организации |
+| Начало клинического случая (подтверждающий результат) | `EpisodeOfCare.status = active`, указать `period.start` |
+| Приостановка / возобновление помощи | добавить запись в `statusHistory` (`onhold` &rarr; `active`); EpisodeOfCare остаётся открытым |
+| Подтверждено выздоровление (острый случай) | `status = finished`, указать `period.end` |
+| Передача пациента другой медицинской организации | исходный `status = finished`; в новой организации создаётся новый `EpisodeOfCare` |
 
-### 4. Чтение маршрута
+### 4. Просмотр маршрута пациента
 
-Клиницист открывает случай, считывая эпизод и ресурсы, которые на него ссылаются:
+Клиницист открывает клинический случай, получая EpisodeOfCare и ресурсы, содержащие reference на него:
 
 ```
 GET [base]/EpisodeOfCare?patient=Patient/[id]&status=active
@@ -59,9 +57,9 @@ GET [base]/Encounter?episode-of-care=EpisodeOfCare/[id]&_sort=-date
 GET [base]/Observation?patient=Patient/[id]&_sort=-date
 ```
 
-Поскольку каждый приём, результат и назначение несут ссылку на эпизод, это возвращает весь случай как единую нить - в чём и состоит смысл группировки по `EpisodeOfCare`, а не оставления записей разрозненными по разным приёмам.
+Поскольку каждый визит, результат и назначение содержит reference на EpisodeOfCare, эти запросы возвращают весь клинический случай как единую связанную последовательность данных. Именно для этого записи группируются с помощью `EpisodeOfCare`, а не остаются разрозненными по отдельным Encounter.
 
-### Связанное
+### Связанные материалы
 
 - Профили: [EpisodeOfCare](StructureDefinition-uz-core-episodeofcare.html) &middot; [Encounter](StructureDefinition-uz-core-encounter.html) &middot; [Condition](StructureDefinition-uz-core-condition.html) &middot; [Observation](StructureDefinition-uz-core-observation.html)
-- [Обзор рабочих процессов](workflows.html) &middot; [Общие рекомендации](general-guidance.html)
+- [Обзор процессов](workflows.html) &middot; [Общие рекомендации](general-guidance.html)
