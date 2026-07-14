@@ -8,6 +8,7 @@ Description: "Maps SSV service type codes to UZ Core Organizational Service Grou
 * status = #draft
 * experimental = false
 * publisher = "Uzinfocom"
+* sourceScopeCanonical = $ssv-organization-type-service
 * targetScopeCanonical = Canonical(OrganizationalServiceGroupVS)
 * group.source = $ssv-organization-type-service
 * group.target = Canonical(OrganizationalServiceGroupCS)
