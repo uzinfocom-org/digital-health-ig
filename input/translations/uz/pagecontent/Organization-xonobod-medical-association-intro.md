@@ -37,7 +37,7 @@ Ushbu misol Hepatitis JSON formatidagi tashkilotni [UZ Core Organization](Struct
 | `phone`, `email` | `contact.telecom` | - |
 | `country`, `state`, `city`, `line` | `contact.address` | [SSVAdministrativeTerritoryToRegionsCM](ConceptMap-ssv-administrative-territory-to-regions-cm.html) `state` (UZ-AN -> 1703) va `city` (AN-408 -> 1703408) uchun |
 | `serviceArea` | `extension[coverage-area]` | [SSVAdministrativeTerritoryToRegionsCM](ConceptMap-ssv-administrative-territory-to-regions-cm.html) (UZ-AN -> StateCS#1703) |
-| `levelType` | `type.coding[subordinationGroup]` | [MIS2LevelTypeToSubordinationGroupCM](ConceptMap-mis2-level-type-to-subordination-group-cm.html) (3 "Urban" -> I_3 "In district and city administration") |
-| `medicalType` | `type.coding[organizationalStructure]` | [MIS2MedicalTypeToOrganizationalStructureCM](ConceptMap-mis2-medical-type-to-organizational-structure-cm.html) (16 "Medical Association" -> 148 "Medical association") |
-| `serviceTypes` | `type.coding[organizationalServiceGroup]` | [MIS2ServiceTypeToOrganizationalServiceGroupCM](ConceptMap-mis2-service-type-to-organizational-service-group-cm.html) (2 "Inpatient" + 1 "Outpatient" -> III_100, 1 "Outpatient" -> III_500) |
+| `levelType` | `type.coding[subordinationGroup]` | [SSVLevelTypeToSubordinationGroupCM](ConceptMap-ssv-level-type-to-subordination-group-cm.html) (3 "Urban" -> I_3 "In district and city administration") |
+| `medicalType` | `type.coding[organizationalStructure]` | [SSVMedicalTypeToOrganizationalStructureCM](ConceptMap-ssv-medical-type-to-organizational-structure-cm.html) (16 "Medical Association" -> 148 "Medical association") |
+| `serviceTypes` | `type.coding[organizationalServiceGroup]` | [SSVServiceTypeToOrganizationalServiceGroupCM](ConceptMap-ssv-service-type-to-organizational-service-group-cm.html) (2 "Inpatient" + 1 "Outpatient" -> III_100, 1 "Outpatient" -> III_500) |
 | `id`, `uuid` | mapping qilinmagan | Hepatitis ichki identifikatorlari |

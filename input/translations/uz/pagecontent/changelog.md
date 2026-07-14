@@ -1,6 +1,8 @@
 ### Ishlab chiqish jarayonida
 
-(Hozircha o'zgarishlar yo'q)
+#### Terminologiya va bog'lanish o'zgarishlari
+
+Tashkilot turlari ConceptMap'lari MIS2 prefiksidan SSV prefiksiga o'zgartirildi, chunki ular SSV ValueSet'laridan moslashtiradi: [SSVLevelTypeToSubordinationGroupCM](ConceptMap-ssv-level-type-to-subordination-group-cm.html), [SSVMedicalTypeToOrganizationalStructureCM](ConceptMap-ssv-medical-type-to-organizational-structure-cm.html) va [SSVServiceTypeToOrganizationalServiceGroupCM](ConceptMap-ssv-service-type-to-organizational-service-group-cm.html). Takrorlangan `mis2-*` ConceptMap'lar olib tashlandi; dasturchilar `ssv-*` kanonik URL'laridan foydalanishlari kerak.
 
 ### Versiya 0.6.0
 
@@ -132,7 +134,7 @@ Coverage uchun UZCoreda Profile mavjud bo'lmasa ham, ssv formlardan biriga zarur
 
 MIS2 JSON formatidagi tashkilotni ConceptMap yordamida UZ Core Organization resursiga o'girishni ko'rsatuvchi [misol](Organization-xonobod-medical-association.html) qo'shildi.
 
-MIS2 kodlarini UZ Core terminologiyasiga tarjima qilish uchun ConceptMap qo'shildi: [MIS2MedicalTypeToOrganizationalStructureCM](ConceptMap-mis2-medical-type-to-organizational-structure-cm.html) `type.coding[organizationalStructure]` uchun, [MIS2LevelTypeToSubordinationGroupCM](ConceptMap-mis2-level-type-to-subordination-group-cm.html) `type.coding[subordinationGroup]` uchun va [MIS2ServiceTypeToOrganizationalServiceGroupCM](ConceptMap-mis2-service-type-to-organizational-service-group-cm.html) `type.coding[organizationalServiceGroup]` uchun. MIS2 dan tarjima qilayotgan dasturchilar tegishli bo'limlarni to'ldirish uchun ushbu xaritalardan foydalanishlari kerak.
+MIS2 kodlarini UZ Core terminologiyasiga tarjima qilish uchun ConceptMap qo'shildi: [SSVMedicalTypeToOrganizationalStructureCM](ConceptMap-ssv-medical-type-to-organizational-structure-cm.html) `type.coding[organizationalStructure]` uchun, [SSVLevelTypeToSubordinationGroupCM](ConceptMap-ssv-level-type-to-subordination-group-cm.html) `type.coding[subordinationGroup]` uchun va [SSVServiceTypeToOrganizationalServiceGroupCM](ConceptMap-ssv-service-type-to-organizational-service-group-cm.html) `type.coding[organizationalServiceGroup]` uchun. MIS2 dan tarjima qilayotgan dasturchilar tegishli bo'limlarni to'ldirish uchun ushbu xaritalardan foydalanishlari kerak.
 
 #### Hujjatlashtirish
 

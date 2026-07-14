@@ -2859,67 +2859,67 @@ msgstr ""
 
 # ImplementationGuide.definition.resource.name
 #: ImplementationGuide.definition.resource.name
-msgid "MIS2 Level Type to Subordination Group"
-msgstr "Сопоставление типов уровней MIS2 с группами подчинённости"
+msgid "SSV Level Type to Subordination Group"
+msgstr "Сопоставление типов уровней SSV с группами подчинённости"
 
 # ImplementationGuide.definition.resource.description
 #: ImplementationGuide.definition.resource.description
 msgid ""
-"Maps MIS2 organization level type codes to UZ Core Organizational "
-"Subordination Group codes. MIS2 classifies healthcare facilities into "
+"Maps SSV organization level type codes to UZ Core Organizational "
+"Subordination Group codes. SSV classifies healthcare facilities into "
 "administrative levels, while OrganizationalSubordinationGroupCS groups "
 "institutions by their administrative subordination (republican, territorial, "
-"district/city, other ministries, private). The MIS2 level types Shahar "
+"district/city, other ministries, private). The SSV level types Shahar "
 "(Urban), Tuman (Area), and Mahalla (District) all fall under the combined "
 "district-and-city administration category in the target."
 msgstr ""
-"Сопоставляет коды типов уровня организации MIS2 с кодами UZ Core "
-"Organizational Subordination Group. MIS2 классифицирует медицинские "
+"Сопоставляет коды типов уровня организации SSV с кодами UZ Core "
+"Organizational Subordination Group. SSV классифицирует медицинские "
 "учреждения по административным уровням, тогда как "
 "OrganizationalSubordinationGroupCS группирует учреждения по их "
 "административной подчинённости (республиканские, территориальные, "
-"районные/городские, другие министерства, частные). Типы уровней MIS2 Shahar "
+"районные/городские, другие министерства, частные). Типы уровней SSV Shahar "
 "(Urban), Tuman (Area) и Mahalla (District) относятся к объединённой "
 "категории районной/городской административной подчинённости в целевой "
 "системе."
 
 # ImplementationGuide.definition.resource.name
 #: ImplementationGuide.definition.resource.name
-msgid "MIS2 Medical Type to Organizational Structure"
-msgstr "Сопоставление медицинских типов MIS2 с Organizational Structure"
+msgid "SSV Medical Type to Organizational Structure"
+msgstr "Сопоставление медицинских типов SSV с Organizational Structure"
 
 # ImplementationGuide.definition.resource.description
 #: ImplementationGuide.definition.resource.description
 msgid ""
-"Maps MIS2 medical type codes to UZ Core Organizational Structure codes. MIS2 "
+"Maps SSV medical type codes to UZ Core Organizational Structure codes. SSV "
 "classifies healthcare facilities into 45 medical types, while "
 "OrganizationalStructureCS provides the Ministry of Health's detailed "
 "classification of institution types."
 msgstr ""
-"Сопоставляет коды медицинских типов MIS2 с кодами UZ Core Organizational "
-"Structure. MIS2 классифицирует медицинские учреждения по 45 медицинским "
+"Сопоставляет коды медицинских типов SSV с кодами UZ Core Organizational "
+"Structure. SSV классифицирует медицинские учреждения по 45 медицинским "
 "типам, тогда как OrganizationalStructureCS предоставляет детальную "
 "классификацию типов учреждений Министерства здравоохранения."
 
 # ImplementationGuide.definition.resource.name
 #: ImplementationGuide.definition.resource.name
-msgid "MIS2 Service Type to Organizational Service Group"
-msgstr "Сопоставление типов услуг MIS2 с Organizational Service Group"
+msgid "SSV Service Type to Organizational Service Group"
+msgstr "Сопоставление типов услуг SSV с Organizational Service Group"
 
 # ImplementationGuide.definition.resource.description
 #: ImplementationGuide.definition.resource.description
 msgid ""
-"Maps MIS2 service type codes to UZ Core Organizational Service Group codes. "
-"MIS2 uses service type classification per organization, while "
+"Maps SSV service type codes to UZ Core Organizational Service Group codes. "
+"SSV uses service type classification per organization, while "
 "OrganizationalServiceGroupCS uses a single pre-combined classification. When "
-"an organization has multiple MIS2 service types, the combination should be "
+"an organization has multiple SSV service types, the combination should be "
 "considered to select the appropriate target code (e.g. Inpatient + "
 "Outpatient together maps to III_100)."
 msgstr ""
-"Сопоставляет коды типов услуг MIS2 с кодами UZ Core Organizational Service "
-"Group. MIS2 использует классификацию типов услуг по организациям, тогда как "
+"Сопоставляет коды типов услуг SSV с кодами UZ Core Organizational Service "
+"Group. SSV использует классификацию типов услуг по организациям, тогда как "
 "OrganizationalServiceGroupCS использует единую заранее объединённую "
-"классификацию. Если у организации есть несколько типов услуг MIS2, следует "
+"классификацию. Если у организации есть несколько типов услуг SSV, следует "
 "учитывать их сочетание для выбора соответствующего целевого кода (например, "
 "Inpatient + Outpatient вместе сопоставляются с III_100)."
 

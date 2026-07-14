@@ -8,6 +8,7 @@ Description: "Maps SSV organization level type codes to UZ Core Organizational S
 * status = #draft
 * experimental = false
 * publisher = "Uzinfocom"
+* sourceScopeCanonical = $ssv-organization-type-level
 * targetScopeCanonical = Canonical(OrganizationalSubordinationGroupVS)
 * group.source = $ssv-organization-type-level
 * group.target = Canonical(OrganizationalSubordinationGroupCS)

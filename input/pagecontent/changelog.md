@@ -1,6 +1,8 @@
 ### In development
 
-(No changes yet)
+#### Terminology and binding changes
+
+The organization type ConceptMaps have been renamed from the MIS2 prefix to SSV, matching the SSV ValueSets they map from: [SSVLevelTypeToSubordinationGroupCM](ConceptMap-ssv-level-type-to-subordination-group-cm.html), [SSVMedicalTypeToOrganizationalStructureCM](ConceptMap-ssv-medical-type-to-organizational-structure-cm.html) and [SSVServiceTypeToOrganizationalServiceGroupCM](ConceptMap-ssv-service-type-to-organizational-service-group-cm.html). The duplicate `mis2-*` ConceptMaps have been removed; implementers should reference the `ssv-*` canonical URLs. The nomenclature group mappings have been split out of SSVMedicalTypeToOrganizationalStructureCM into the new [SSVMedicalTypeToNomenclatureGroupCM](ConceptMap-ssv-medical-type-to-nomenclature-group-cm.html), so that each ConceptMap declares a single source and target scope.
 
 ### Version 0.6.0
 
@@ -148,7 +150,7 @@ Added [coverage area extension](StructureDefinition-coverage-area.html) to [UZ C
 
 Added [example](Organization-xonobod-medical-association.html) demonstrating how to translate a MIS2 JSON organization into a UZ Core Organization resource using the ConceptMaps.
 
-Added ConceptMaps for translating MIS2 codes to UZ Core terminology: [MIS2MedicalTypeToOrganizationalStructureCM](ConceptMap-mis2-medical-type-to-organizational-structure-cm.html) for `type.coding[organizationalStructure]`, [MIS2LevelTypeToSubordinationGroupCM](ConceptMap-mis2-level-type-to-subordination-group-cm.html) for `type.coding[subordinationGroup]`, and [MIS2ServiceTypeToOrganizationalServiceGroupCM](ConceptMap-mis2-service-type-to-organizational-service-group-cm.html) for `type.coding[organizationalServiceGroup]`. Implementers translating from MIS2 should use these maps to populate the corresponding slices.
+Added ConceptMaps for translating MIS2 codes to UZ Core terminology: [SSVMedicalTypeToOrganizationalStructureCM](ConceptMap-ssv-medical-type-to-organizational-structure-cm.html) for `type.coding[organizationalStructure]`, [SSVLevelTypeToSubordinationGroupCM](ConceptMap-ssv-level-type-to-subordination-group-cm.html) for `type.coding[subordinationGroup]`, and [SSVServiceTypeToOrganizationalServiceGroupCM](ConceptMap-ssv-service-type-to-organizational-service-group-cm.html) for `type.coding[organizationalServiceGroup]`. Implementers translating from MIS2 should use these maps to populate the corresponding slices.
 
 #### Documentation
 
