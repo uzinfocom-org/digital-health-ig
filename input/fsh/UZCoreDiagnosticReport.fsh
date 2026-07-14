@@ -29,7 +29,7 @@ Description: "Uzbekistan Core profile for DiagnosticReport, representing clinica
 * effective[x] MS
   * ^short = "Clinically relevant time/time-period for report."
 * performer MS
-* performer only Reference(UZCorePractitioner or UZCorePractitionerRole)
+* performer only Reference(UZCorePractitioner or UZCorePractitionerRole or UZCoreOrganization)
   * ^short = "Responsible Diagnostic Service."
 * specimen MS
 * specimen only Reference(UZCoreSpecimen)

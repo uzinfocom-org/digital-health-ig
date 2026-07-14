@@ -1,4 +1,7 @@
 // Alias: $encounter-class = https://terminology.dhp.uz/fhir/core/ValueSet/encounter-class
+Alias: $medicationdispense-admin-location = http://hl7.org/fhir/medicationdispense-admin-location
+Alias: $medicationdispense-status-reason = http://hl7.org/fhir/CodeSystem/medicationdispense-status-reason
+Alias: $medicationdispense-status = http://hl7.org/fhir/CodeSystem/medicationdispense-status
 Alias: $action-participant-type = http://hl7.org/fhir/action-participant-type
 Alias: $event-status = http://hl7.org/fhir/event-status
 Alias: $address-type = http://hl7.org/fhir/address-type
@@ -188,3 +191,5 @@ Alias: $claim-response-type = http://terminology.hl7.org/CodeSystem/claim-type
 Alias: $claim-response-use = http://hl7.org/fhir/claim-use
 Alias: $claim-response-outcome = http://hl7.org/fhir/claim-outcome
 Alias: $claim-response-decision = http://hl7.org/fhir/claim-decision
+Alias: $task-status = http://hl7.org/fhir/task-status
+Alias: $task-intent = http://hl7.org/fhir/task-intent

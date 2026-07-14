@@ -2,7 +2,7 @@ CodeSystem: RouteCodeCS
 Id: route-code-cs
 Title: "Route of Administration translations"
 Description: "Route of administration supplement with Uzbek and Russian translations"
-* insert SupplementCodeSystem(route-code-cs, $sct, 2026-01)
+* insert SupplementCodeSystem(route-code-cs, $sct, 2026.1.0)
 
 * #36673005 "Intradermal injection"
   * ^designation[0].language = #uz
@@ -39,4 +39,10 @@ Description: "Route of administration supplement with Uzbek and Russian translat
   * ^designation[=].value = "Intranazal"
   * ^designation[+].language = #ru
   * ^designation[=].value = "Интраназально"
+
+* #394841004 "Other category"
+  * ^designation[0].language = #uz
+  * ^designation[=].value = "Boshqa kategoriya"
+  * ^designation[+].language = #ru
+  * ^designation[=].value = "Другая категория"
 

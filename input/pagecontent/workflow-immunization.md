@@ -8,7 +8,7 @@ The chain:
 
 ### 1. The schedule as code
 
-The national schedule is published once as a [PlanDefinition](StructureDefinition-uz-core-immunization-plan-definition.html). Each recommended dose is a `PlanDefinition.action`; the vaccine and dosing detail are carried on the action, via `definitionCanonical` to an `ActivityDefinition`, or via the national extensions (`doseSequence`, `maximumInterval`, `gracePeriod`). Minimum intervals between doses use `action.relatedAction.offsetDuration`; eligibility uses `action.condition`.
+The national schedule is published once as a [PlanDefinition](StructureDefinition-uz-core-immunization-plan-definition.html). Each recommended dose is a `PlanDefinition.action`; the vaccine and dosing detail are carried on the action via `definitionCanonical` to an `ActivityDefinition`. The target age or schedule uses `action.timing[x]` (an `Age` or a `Timing`); minimum intervals between doses use `action.relatedAction.offsetDuration`; eligibility uses `action.condition`.
 
 ```
 GET [base]/PlanDefinition?status=active&context-type-value=focus$http://snomed.info/sct|33879002

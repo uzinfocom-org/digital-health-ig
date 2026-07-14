@@ -14,7 +14,7 @@ Description: "Uzbekistan Core Laboratory ObservationDefinition profile, used to 
 
 * name MS
 
-* title MS
+* insert MultilingualTitle(Observation definition)
 
 * status MS
 * status from PublicationStatusVS (required)
