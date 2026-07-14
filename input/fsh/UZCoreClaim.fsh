@@ -44,7 +44,7 @@ Description: "Uzbekistan Core Claim profile, used for insurance claims, pre-auth
 
 * facility MS
 * facility ^short = "Servicing facility"
-* facility only Reference(Organization)
+* facility only Reference(UZCoreLocation or UZCoreOrganization)
 
 * diagnosis MS
   * diagnosis[x] MS
