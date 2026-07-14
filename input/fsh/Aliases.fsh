@@ -184,3 +184,6 @@ Alias: $administrative-gender-vs = https://terminology.dhp.uz/fhir/core/ValueSet
 Alias: $observation-range-category = http://hl7.org/fhir/observation-range-category
 Alias: $observation-range-category-cs = https://terminology.dhp.uz/fhir/core/CodeSystem/observation-range-category-cs
 Alias: $observation-range-category-vs = https://terminology.dhp.uz/fhir/core/ValueSet/observation-range-category-vs
+
+Alias: $task-status = http://hl7.org/fhir/task-status
+Alias: $task-intent = http://hl7.org/fhir/task-intent
