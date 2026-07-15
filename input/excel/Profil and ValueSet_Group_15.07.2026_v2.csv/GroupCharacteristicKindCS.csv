@@ -1,0 +1,37 @@
+CodeSystem: screening-group-characteristic	LOINC			
+Код	Код	English	Русский	Oʻzbekcha (Lotin)
+	  76691-5 	Gender identity	Гендерная идентичность	Gender identifikatsiyasi
+	  76689-9 	Sex assigned at birth	Пол, присвоенный при рождении	Tug‘ilganda belgilangan jins
+	  21112-8 	Birth date	Дата рождения	Tug‘ilgan sana
+	  46463-6 	Race or ethnicity	Раса или этническая принадлежность	Irqi yoki etnik mansubligi
+	  45402-5 	Primary language	Основной язык	Asosiy til
+	  71802-3 	Housing status	Жилищный статус	Yashash sharoiti
+diagnosis	  8302-2 	Body height	Рост	Bo‘yi
+chronic-condition	  29463-7 	Body weight	Масса тела	Tana vazni
+risk-factor	  39156-5 	BMI (Body Mass Index)	Индекс массы тела (ИМТ)	Tana massasi indeksi (TMI)
+disability-status	  8480-6 	Systolic blood pressure	Систолическое артериальное давление	Sistolik arterial bosim
+previous-screening	  8462-4 	Diastolic blood pressure	Диастолическое артериальное давление	Diastolik arterial bosim
+previous-result	  15074-8 	Glucose [Moles/volume] in Blood	Концентрация глюкозы в крови (моль/объем)	Qondagi glyukoza konsentratsiyasi (mol/hajm)
+contraindication	  2085-9 	HDL Cholesterol	Холестерин ЛПВП	Yuqori zichlikdagi lipoprotein (HDL) xolesterini
+patient-refusal	  4548-4 	Hemoglobin A1c/Hemoglobin.total in Blood	Гликированный гемоглобин (HbA1c)	Glikatsiyalangan gemoglobin (HbA1c)
+laboratory-indicator	  75323-6 	Condition status	Статус заболевания	Kasallik holati
+clinical-indicator	  55758-7 	Diabetes status	Статус сахарного диабета	Qandli diabet holati
+custom	  45701-0 	Smoking status	Статус курения	Chekish holati
+questionnaire-response	  68518-0 	Pregnancy status	Статус беременности	Homiladorlik holati
+procedure	  74468-0 	Vaccination status	Статус вакцинации	Emlash holati
+clinical-observation	  38208-5 	Risk assessment cardiovascular disease	Оценка риска сердечно-сосудистых заболеваний	Yurak-qon tomir kasalliklari xavfini baholash
+	  79423-0 	Cardiovascular disease risk score	Показатель риска сердечно-сосудистых заболеваний	Yurak-qon tomir kasalliklari xavfi ko‘rsatkichi
+	  75640-3 	Fall risk assessment	Оценка риска падения	Yiqilish xavfini baholash
+Код	  10160-0 	Medication use	Применение лекарственных средств	Dori vositalarini qabul qilish
+age	  45260-7 	Medication compliance	Приверженность к лечению	Davolanishga rioya qilish
+gender	  68358-1 	Date chronic dialysis began	Дата начала хронического диализа	Surunkali dializ boshlangan sana
+pregnancy	  77301-0 	Activities of daily living assessment	Оценка повседневной жизнедеятельности	Kundalik hayot faoliyatini baholash
+region	  77160-0 	Functional outcome score GOSE	Шкала функционального исхода GOSE	GOSE funksional natija shkalasi
+district	  72133-2 	Montreal Cognitive Assessment [MoCA]	Монреальская шкала оценки когнитивных функций (MoCA)	Monreal kognitiv baholash testi (MoCA)
+organization	  95023-8 	FASI v1.0 - Mobility [CMS Assessment]	FASI v1.0 — Оценка мобильности (оценка CMS)	FASI v1.0 — Harakatchanlikni baholash (CMS baholashi)
+diagnosis		Region of residence	Регион проживания	Yashash hududi (viloyat)
+laboratory-observation		District of residence	Район проживания	Yashash tumani
+clinical-observation		Healthcare organization	Медицинская организация	Tibbiyot tashkiloti
+procedure		Diagnosis	Наличие диагноза	Ташхис
+questionnaire-response		Disability status	Инвалидность	Ногиронлик
+		Previous screening	Проходил данный скрининг ранее	Илгари ушбу скринингдан ўтган
