@@ -6,67 +6,67 @@ Description: "Permitted data type supplement with translations in Uzbek and Russ
 
 * #Quantity
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Son bilan kiritiladi (birligi bilan)"
-  * ^designation[+].language = #uz
   * ^designation[=].value = "Вводится числом (с единицей измерения)"
+  * ^designation[+].language = #uz
+  * ^designation[=].value = "Son bilan kiritiladi (birligi bilan)"
 
 * #CodeableConcept
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Tayyor ro'yxatdan tanlanadi"
-  * ^designation[+].language = #uz
   * ^designation[=].value = "Выбирается из готового списка"
+  * ^designation[+].language = #uz
+  * ^designation[=].value = "Tayyor ro'yxatdan tanlanadi"
 
 * #string
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Erkin matn kiritiladi"
-  * ^designation[+].language = #uz
   * ^designation[=].value = "Вводится произвольный текст"
+  * ^designation[+].language = #uz
+  * ^designation[=].value = "Erkin matn kiritiladi"
 
 * #boolean
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Ha yoki Yo'q tanlanadi"
-  * ^designation[+].language = #uz
   * ^designation[=].value = "Выбирается Да или Нет"
+  * ^designation[+].language = #uz
+  * ^designation[=].value = "Ha yoki Yo'q tanlanadi"
 
 * #integer
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Faqat butun son kiritiladi"
-  * ^designation[+].language = #uz
   * ^designation[=].value = "Вводится только целое число"
+  * ^designation[+].language = #uz
+  * ^designation[=].value = "Faqat butun son kiritiladi"
 
 * #Range
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Minimal va maksimal qiymat kiritiladi"
-  * ^designation[+].language = #uz
   * ^designation[=].value = "Вводится диапазон значений"
+  * ^designation[+].language = #uz
+  * ^designation[=].value = "Minimal va maksimal qiymat kiritiladi"
 
 * #Ratio
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Nisbat ko'rinishida kiritiladi"
-  * ^designation[+].language = #uz
   * ^designation[=].value = "Вводится в виде отношения"
+  * ^designation[+].language = #uz
+  * ^designation[=].value = "Nisbat ko'rinishida kiritiladi"
 
 * #SampledData
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Qurilma o'lchovlari avtomatik uzatiladi"
-  * ^designation[+].language = #uz
   * ^designation[=].value = "Данные автоматически поступают с прибора"
+  * ^designation[+].language = #uz
+  * ^designation[=].value = "Qurilma o'lchovlari avtomatik uzatiladi"
 
 * #time
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Faqat vaqt kiritiladi"
-  * ^designation[+].language = #uz
   * ^designation[=].value = "Вводится только время"
+  * ^designation[+].language = #uz
+  * ^designation[=].value = "Faqat vaqt kiritiladi"
 
 * #dateTime
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Sana va vaqt kiritiladi"
-  * ^designation[+].language = #uz
   * ^designation[=].value = "Вводится дата и время"
+  * ^designation[+].language = #uz
+  * ^designation[=].value = "Sana va vaqt kiritiladi"
 
 * #Period
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Boshlanish va tugash vaqti kiritiladi"
-  * ^designation[+].language = #uz
   * ^designation[=].value = "Вводится начало и конец периода"
+  * ^designation[+].language = #uz
+  * ^designation[=].value = "Boshlanish va tugash vaqti kiritiladi"
 
