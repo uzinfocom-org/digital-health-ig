@@ -189,3 +189,5 @@ Alias: $observation-range-category-vs = https://terminology.dhp.uz/fhir/core/Val
 
 Alias: $task-status = http://hl7.org/fhir/task-status
 Alias: $task-intent = http://hl7.org/fhir/task-intent
+
+Alias: $permitted-data-type = http://hl7.org/fhir/permitted-data-type
