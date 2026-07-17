@@ -2859,67 +2859,67 @@ msgstr ""
 
 # ImplementationGuide.definition.resource.name
 #: ImplementationGuide.definition.resource.name
-msgid "MIS2 Level Type to Subordination Group"
-msgstr "Сопоставление типов уровней MIS2 с группами подчинённости"
+msgid "SSV Level Type to Subordination Group"
+msgstr "Сопоставление типов уровней SSV с группами подчинённости"
 
 # ImplementationGuide.definition.resource.description
 #: ImplementationGuide.definition.resource.description
 msgid ""
-"Maps MIS2 organization level type codes to UZ Core Organizational "
-"Subordination Group codes. MIS2 classifies healthcare facilities into "
+"Maps SSV organization level type codes to UZ Core Organizational "
+"Subordination Group codes. SSV classifies healthcare facilities into "
 "administrative levels, while OrganizationalSubordinationGroupCS groups "
 "institutions by their administrative subordination (republican, territorial, "
-"district/city, other ministries, private). The MIS2 level types Shahar "
+"district/city, other ministries, private). The SSV level types Shahar "
 "(Urban), Tuman (Area), and Mahalla (District) all fall under the combined "
 "district-and-city administration category in the target."
 msgstr ""
-"Сопоставляет коды типов уровня организации MIS2 с кодами UZ Core "
-"Organizational Subordination Group. MIS2 классифицирует медицинские "
+"Сопоставляет коды типов уровня организации SSV с кодами UZ Core "
+"Organizational Subordination Group. SSV классифицирует медицинские "
 "учреждения по административным уровням, тогда как "
 "OrganizationalSubordinationGroupCS группирует учреждения по их "
 "административной подчинённости (республиканские, территориальные, "
-"районные/городские, другие министерства, частные). Типы уровней MIS2 Shahar "
+"районные/городские, другие министерства, частные). Типы уровней SSV Shahar "
 "(Urban), Tuman (Area) и Mahalla (District) относятся к объединённой "
 "категории районной/городской административной подчинённости в целевой "
 "системе."
 
 # ImplementationGuide.definition.resource.name
 #: ImplementationGuide.definition.resource.name
-msgid "MIS2 Medical Type to Organizational Structure"
-msgstr "Сопоставление медицинских типов MIS2 с Organizational Structure"
+msgid "SSV Medical Type to Organizational Structure"
+msgstr "Сопоставление медицинских типов SSV с Organizational Structure"
 
 # ImplementationGuide.definition.resource.description
 #: ImplementationGuide.definition.resource.description
 msgid ""
-"Maps MIS2 medical type codes to UZ Core Organizational Structure codes. MIS2 "
+"Maps SSV medical type codes to UZ Core Organizational Structure codes. SSV "
 "classifies healthcare facilities into 45 medical types, while "
 "OrganizationalStructureCS provides the Ministry of Health's detailed "
 "classification of institution types."
 msgstr ""
-"Сопоставляет коды медицинских типов MIS2 с кодами UZ Core Organizational "
-"Structure. MIS2 классифицирует медицинские учреждения по 45 медицинским "
+"Сопоставляет коды медицинских типов SSV с кодами UZ Core Organizational "
+"Structure. SSV классифицирует медицинские учреждения по 45 медицинским "
 "типам, тогда как OrganizationalStructureCS предоставляет детальную "
 "классификацию типов учреждений Министерства здравоохранения."
 
 # ImplementationGuide.definition.resource.name
 #: ImplementationGuide.definition.resource.name
-msgid "MIS2 Service Type to Organizational Service Group"
-msgstr "Сопоставление типов услуг MIS2 с Organizational Service Group"
+msgid "SSV Service Type to Organizational Service Group"
+msgstr "Сопоставление типов услуг SSV с Organizational Service Group"
 
 # ImplementationGuide.definition.resource.description
 #: ImplementationGuide.definition.resource.description
 msgid ""
-"Maps MIS2 service type codes to UZ Core Organizational Service Group codes. "
-"MIS2 uses service type classification per organization, while "
+"Maps SSV service type codes to UZ Core Organizational Service Group codes. "
+"SSV uses service type classification per organization, while "
 "OrganizationalServiceGroupCS uses a single pre-combined classification. When "
-"an organization has multiple MIS2 service types, the combination should be "
+"an organization has multiple SSV service types, the combination should be "
 "considered to select the appropriate target code (e.g. Inpatient + "
 "Outpatient together maps to III_100)."
 msgstr ""
-"Сопоставляет коды типов услуг MIS2 с кодами UZ Core Organizational Service "
-"Group. MIS2 использует классификацию типов услуг по организациям, тогда как "
+"Сопоставляет коды типов услуг SSV с кодами UZ Core Organizational Service "
+"Group. SSV использует классификацию типов услуг по организациям, тогда как "
 "OrganizationalServiceGroupCS использует единую заранее объединённую "
-"классификацию. Если у организации есть несколько типов услуг MIS2, следует "
+"классификацию. Если у организации есть несколько типов услуг SSV, следует "
 "учитывать их сочетание для выбора соответствующего целевого кода (например, "
 "Inpatient + Outpatient вместе сопоставляются с III_100)."
 
@@ -5358,3 +5358,64 @@ msgstr "vital-signs.html"
 #: ImplementationGuide.definition.page.title
 msgid "Vital Signs"
 msgstr "Жизненные показатели"
+
+# --- UZ Core Group profile, examples and terminology (resource descriptions) ---
+# ImplementationGuide.definition.resource.description
+#: ImplementationGuide.definition.resource.description
+msgid "Uzbekistan Core Group profile, used to represent a defined collection of entities (for example patients, practitioners or specimens), such as screening, vaccination and donation target groups and their outcome cohorts"
+msgstr "Профиль UZ Core Group, используемый для представления определённой совокупности сущностей (например, пациентов, медицинских работников или биоматериалов), таких как целевые группы скрининга, вакцинации и донации, а также их итоговые когорты"
+
+# ImplementationGuide.definition.resource.description
+#: ImplementationGuide.definition.resource.description
+msgid "Definitional group describing adults with elevated body mass index targeted for type 2 diabetes screening, excluding those already diagnosed with type 2 diabetes"
+msgstr "Определяющая группа, описывающая взрослых с повышенным индексом массы тела, отобранных для скрининга сахарного диабета 2 типа, за исключением лиц с уже установленным диагнозом сахарного диабета 2 типа"
+
+# ImplementationGuide.definition.resource.description
+#: ImplementationGuide.definition.resource.description
+msgid "Enumerated group listing patients who received a measles-containing vaccine at the polyclinic during the first quarter of 2026"
+msgstr "Перечислительная группа, содержащая пациентов, получивших вакцину против кори в поликлинике в первом квартале 2026 года"
+
+# ImplementationGuide.definition.resource.description
+#: ImplementationGuide.definition.resource.description
+msgid "Kinds of characteristics used to include or exclude members of a group, drawn from LOINC and local codes, with Uzbek and Russian translations"
+msgstr "Виды характеристик, используемых для включения или исключения участников группы, взятых из LOINC и локальных кодов, с переводами на узбекский и русский языки"
+
+# ImplementationGuide.definition.resource.description
+#: ImplementationGuide.definition.resource.description
+msgid "Local codes for kinds of group characteristics that are not covered by LOINC, such as place of residence, healthcare organization and prior screening"
+msgstr "Локальные коды для видов характеристик группы, не охваченных LOINC, таких как место жительства, медицинская организация и ранее пройденный скрининг"
+
+# ImplementationGuide.definition.resource.description
+#: ImplementationGuide.definition.resource.description
+msgid "LOINC supplement adding Uzbek and Russian translations for the LOINC codes used to describe the kind of characteristic that defines a group"
+msgstr "Дополнение LOINC, добавляющее переводы на узбекский и русский языки для кодов LOINC, используемых для описания вида характеристики, определяющей группу"
+
+# ImplementationGuide.definition.resource.description
+#: ImplementationGuide.definition.resource.description
+msgid "Purpose or kind of a group, such as screening, vaccination and donation target groups and their outcome cohorts"
+msgstr "Назначение или вид группы, например целевые группы скрининга, вакцинации и донации, а также их итоговые когорты"
+
+# ImplementationGuide.definition.resource.description
+#: ImplementationGuide.definition.resource.description
+msgid "Local classifier describing the purpose or kind of a group, such as screening, vaccination and donation target groups and their outcome cohorts"
+msgstr "Локальный классификатор, описывающий назначение или вид группы, например целевые группы скрининга, вакцинации и донации, а также их итоговые когорты"
+
+# ImplementationGuide.definition.resource.description
+#: ImplementationGuide.definition.resource.description
+msgid "Basis for membership in a group: definitional (defined by characteristics) or enumerated (defined by listed members), with Uzbek and Russian translations"
+msgstr "Основа членства в группе: определяющая (задаётся характеристиками) или перечислительная (задаётся списком участников), с переводами на узбекский и русский языки"
+
+# ImplementationGuide.definition.resource.description
+#: ImplementationGuide.definition.resource.description
+msgid "Group membership basis supplement with translations in Uzbek and Russian"
+msgstr "Дополнение основы членства в группе с переводами на узбекский и русский языки"
+
+# ImplementationGuide.definition.resource.description
+#: ImplementationGuide.definition.resource.description
+msgid "Types of resources that a group may enumerate, with Uzbek and Russian translations"
+msgstr "Типы ресурсов, которые может перечислять группа, с переводами на узбекский и русский языки"
+
+# ImplementationGuide.definition.resource.description
+#: ImplementationGuide.definition.resource.description
+msgid "Group type supplement with translations in Uzbek and Russian"
+msgstr "Дополнение типа группы с переводами на узбекский и русский языки"

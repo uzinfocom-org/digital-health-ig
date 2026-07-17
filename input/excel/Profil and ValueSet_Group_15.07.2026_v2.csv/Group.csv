@@ -1,0 +1,35 @@
+Name			Flags		Cardinality	Example	Document	Type	Description & Constraints
+Group			TU					DomainResource	Group of multiple entities
+Identifier			Σ S	D	0..*			identifier	Идентификатор, соответствующий этому  Group
+active			?! Σ S	D	0..1			boolean	Активно ли используется запись этой группы
+type			Σ S	D	1..1	  person		code	"Тип группы
+Binding: Group Type (Required)
+http://hl7.org/fhir/ValueSet/group-type"
+membership			Σ S	D	1..1	definitional		code	"definitional | enumerated
+Binding: Group Membership Basis (Required) 
+http://hl7.org/fhir/ValueSet/group-membership-basis"
+code			Σ S	D	0..1	group-0001-00001		CodeableConcept	"Тип участников группы
+Binding: GroupKind (Extensible) (местный классификатор)"
+name			Σ S	D	0..1	"""Screening group"""		string	Название группы
+description			Σ S	D	0..1			markdown	Описание группы
+quantity			Σ S	D	0..1	5000		unsignedInt	Количество участников
+managingEntity			Σ S	D	0..1			Reference(Organization | RelatedPerson | Practitioner | PractitionerRole)	Организация, ответственная за определение и поддержание характеристик группы и/или зарегистрированных участников
+characteristic			Σ S	D	0..*			BackboneElement	Включение / исключение участников группы по признаку
+	code		Σ S	D	1..1	55758-7		CodeableConcept	"Вид характеристики
+Binding: GroupCharacteristicKind (extensible )
+http://hl7.org/fhir/ValueSet/example-characteristic-codes"
+	value[x]			D	1..1				"Значение, удерживаемое характеристикой
+Binding: GroupCharacteristicValue (Example) (МКБ-10)"
+		valueCodeableConcept						CodeableConcept	
+		valueBoolean				false		boolean	
+		valueQuantity						Quantity	
+		valueRange						Range	
+		valueReference						Reference()	
+	exclude		Σ S	D	1..1			boolean	Группа включает или исключает
+	period		Σ S	D	0..1	"start: 2025-07-01T09:30:00
+end: 2026-12-01T11:30:00"		Period	Период, в течение которого проверяется характеристика
+member			Σ S	D	0..*			BackboneElement	Кто или что входит в группу
+	entity		Σ S	D	1..1			Reference(CareTeam | Device | Group | HealthcareService | Location | Organization | Patient | Practitioner | PractitionerRole | RelatedPerson | Specimen)	Reference на участника группы
+	period		Σ S	D	0..1	"start: 2026-07-01T09:30:00
+end: 2026-12-01T11:30:00"		Period	Период, в течение которого участник принадлежал группе
+	inactive		Σ S	D	0..1			boolean	Если участник больше не входит в группу
