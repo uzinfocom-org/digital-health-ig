@@ -12,14 +12,14 @@ Description: "Uzbekistan Core Claim profile, used for insurance claims, pre-auth
 
 * status MS 
 * status ^short = "Status of current claim"
-* status from ClaimFMStatusVS (required)
+* status from FMStatusVS (required)
 
 * type MS
 * type ^short = "Category or discipline"
-* type from ClaimTypeCodeVS (required)
+* type from ClaimTypeVS (required)
 
 * use MS
-* use ^short = "preauthorization | predetermination"
+* use ^short = "preauthorization | predetermination | claim"
 * use from ClaimUseVS (required)
 
 
@@ -72,7 +72,7 @@ Usage: #example
 * language = #en
 * status = #active
 * type = $claim-type#institutional 
-* use = #claim
+* use = #preauthorization
 * patient = Reference(Patient/example-salim)
 * created = "2026-10-03"
 
