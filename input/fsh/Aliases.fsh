@@ -46,6 +46,8 @@ Alias: $goal-achievement = http://terminology.hl7.org/CodeSystem/goal-achievemen
 Alias: $goal-category = http://terminology.hl7.org/CodeSystem/goal-category
 Alias: $goal-Priority = http://terminology.hl7.org/CodeSystem/goal-priority
 Alias: $goal-status = http://hl7.org/fhir/goal-status
+Alias: $group-membership-basis = http://hl7.org/fhir/group-membership-basis
+Alias: $group-type = http://hl7.org/fhir/group-type
 Alias: $healthcard = https://dhp.uz/fhir/core/sid/pid/uz/hc
 Alias: $http-interaction = http://hl7.org/fhir/restful-interaction
 Alias: $icd-10 = http://hl7.org/fhir/sid/icd-10
@@ -184,3 +186,8 @@ Alias: $administrative-gender-vs = https://terminology.dhp.uz/fhir/core/ValueSet
 Alias: $observation-range-category = http://hl7.org/fhir/observation-range-category
 Alias: $observation-range-category-cs = https://terminology.dhp.uz/fhir/core/CodeSystem/observation-range-category-cs
 Alias: $observation-range-category-vs = https://terminology.dhp.uz/fhir/core/ValueSet/observation-range-category-vs
+
+Alias: $task-status = http://hl7.org/fhir/task-status
+Alias: $task-intent = http://hl7.org/fhir/task-intent
+
+Alias: $permitted-data-type = http://hl7.org/fhir/permitted-data-type

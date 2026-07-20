@@ -1,6 +1,8 @@
 ### В разработке
 
-(Пока без изменений)
+#### Изменения терминологии и привязок
+
+ConceptMap типов организаций переименованы с префикса MIS2 на SSV в соответствии с SSV ValueSet, из которых выполняется сопоставление: [SSVLevelTypeToSubordinationGroupCM](ConceptMap-ssv-level-type-to-subordination-group-cm.html), [SSVMedicalTypeToOrganizationalStructureCM](ConceptMap-ssv-medical-type-to-organizational-structure-cm.html) и [SSVServiceTypeToOrganizationalServiceGroupCM](ConceptMap-ssv-service-type-to-organizational-service-group-cm.html). Дублирующие ConceptMap `mis2-*` удалены; разработчикам следует использовать канонические URL `ssv-*`.
 
 ### Версия 0.6.0
 
@@ -20,7 +22,7 @@
 
 Добавлен профиль [UZ Core Immunization PlanDefinition](StructureDefinition-uz-core-immunization-plan-definition.html) для национальных календарей иммунизации.
 
-Добавлен профиль [UZ Core ActivityDefinition](StructureDefinition-uz-core-activity-definition.html) для определения переиспользуемых клинических активностей (процедур, тестов, протоколов медикаментозной терапии) независимо от конкретного пациента.
+Добавлен профиль [UZ Core ActivityDefinition](StructureDefinition-uz-core-vaccination-activity-definition.html) для определения переиспользуемых клинических активностей (процедур, тестов, протоколов медикаментозной терапии) независимо от конкретного пациента.
 
 Добавлен профиль [UZ Core AdverseEvent](StructureDefinition-uz-core-adverse-event.html) для регистрации нежелательных явлений с терминологией для [фактичности](ValueSet-adverse-event-actuality-vs.html), [серьёзности](ValueSet-adverse-event-seriousness-vs.html), [исхода](ValueSet-adverse-event-outcome-vs.html) и [статуса](ValueSet-adverse-event-status-vs.html).
 
@@ -54,7 +56,7 @@
 
 `managingOrganization` в [UZ Core Patient](StructureDefinition-uz-core-patient.html) теперь Must Support и должен ссылаться на [UZ Core Organization](StructureDefinition-uz-core-organization.html).
 
-Расширение для многоязычного перевода (базовое значение на узбекском плюс переводы на русский и каракалпакский) добавлено к `name` в [UZ Core HealthcareService](StructureDefinition-uz-core-healthcareservice.html) и к `title` в [UZ Core ActivityDefinition](StructureDefinition-uz-core-activity-definition.html), [UZ Core Laboratory ObservationDefinition](StructureDefinition-uz-core-laboratory-observation-definition.html), [UZ Core Immunization PlanDefinition](StructureDefinition-uz-core-immunization-plan-definition.html) и [UZ Core Questionnaire](StructureDefinition-uz-core-questionnaire.html). Элемент `name` теперь обязателен в [UZ Core Organization](StructureDefinition-uz-core-organization.html) и [UZ Core Location](StructureDefinition-uz-core-location.html).
+Расширение для многоязычного перевода (базовое значение на узбекском плюс переводы на русский и каракалпакский) добавлено к `name` в [UZ Core HealthcareService](StructureDefinition-uz-core-healthcareservice.html) и к `title` в [UZ Core ActivityDefinition](StructureDefinition-uz-core-vaccination-activity-definition.html), [UZ Core Laboratory ObservationDefinition](StructureDefinition-uz-core-laboratory-observation-definition.html), [UZ Core Immunization PlanDefinition](StructureDefinition-uz-core-immunization-plan-definition.html) и [UZ Core Questionnaire](StructureDefinition-uz-core-questionnaire.html). Элемент `name` теперь обязателен в [UZ Core Organization](StructureDefinition-uz-core-organization.html) и [UZ Core Location](StructureDefinition-uz-core-location.html).
 
 #### Организация и идентификаторы
 
@@ -148,7 +150,7 @@
 
 Добавлен [пример](Organization-xonobod-medical-association.html), демонстрирующий преобразование организации из MIS2 JSON в ресурс UZ Core Organization с использованием ConceptMap.
 
-Добавлены ConceptMap для перевода кодов MIS2 в терминологию UZ Core: [MIS2MedicalTypeToOrganizationalStructureCM](ConceptMap-mis2-medical-type-to-organizational-structure-cm.html) для `type.coding[organizationalStructure]`, [MIS2LevelTypeToSubordinationGroupCM](ConceptMap-mis2-level-type-to-subordination-group-cm.html) для `type.coding[subordinationGroup]` и [MIS2ServiceTypeToOrganizationalServiceGroupCM](ConceptMap-mis2-service-type-to-organizational-service-group-cm.html) для `type.coding[organizationalServiceGroup]`. Разработчикам, выполняющим перевод из MIS2, следует использовать эти карты для заполнения соответствующих слайсов.
+Добавлены ConceptMap для перевода кодов MIS2 в терминологию UZ Core: [SSVMedicalTypeToOrganizationalStructureCM](ConceptMap-ssv-medical-type-to-organizational-structure-cm.html) для `type.coding[organizationalStructure]`, [SSVLevelTypeToSubordinationGroupCM](ConceptMap-ssv-level-type-to-subordination-group-cm.html) для `type.coding[subordinationGroup]` и [SSVServiceTypeToOrganizationalServiceGroupCM](ConceptMap-ssv-service-type-to-organizational-service-group-cm.html) для `type.coding[organizationalServiceGroup]`. Разработчикам, выполняющим перевод из MIS2, следует использовать эти карты для заполнения соответствующих слайсов.
 
 #### Документация
 

@@ -22,6 +22,17 @@ Description: "Example ServiceRequest for CBC (Umumiy qon tahlili) order"
 * authoredOn = "2025-11-04T08:00:00Z"
 * specimen[0] = Reference(Specimen/example-specimen-blood-cbc)
 
+Instance: example-hospitalization-referral
+InstanceOf: ServiceRequest
+Usage: #example
+Description: "Example state-insurance referral for planned hospitalization; its approval chain is tracked by the UZCoreTask examples"
+* status = #active
+* intent = #order
+* code = $sct#306206005 "Referral to service"
+* subject = Reference(Patient/example-nodira)
+* requester = Reference(PractitionerRole/example-practitionerrole)
+* authoredOn = "2026-03-05T08:00:00Z"
+
 Instance: example-transaction-bundle
 InstanceOf: Bundle
 Usage: #example

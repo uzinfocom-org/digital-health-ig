@@ -1,0 +1,41 @@
+CODE,UZ,RU,EN
+draft,Loyiha,Проект,Project
+active,Faol,Активный,Active
+on-hold,To'xtatilgan,Приостановлен,Suspended
+revoked,Bekor qilingan,Аннулирован,Cancelled
+completed,Tugallangan,Завершен,Completed
+entered-in-error,Xatolik tufayli kiritilgan,Введен по ошибке,Entered by Error
+in-review,Ko'rib chiqilmoqda,На рассмотрении,Under Review
+confirmed,Tasdiqlangan,Подтвержден,Confirmed
+not-used,Foydalanilmayapti,Не используется,Not Used
+overdue,Muddati o'tgan,Просрочен,Overdue
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,На рассмотрении,
+,,Запрос отклонен,
+,,Возвращено на доработку,
+,,Запрос направлен в обл. комиссию,
+,,Запрос направлен в респ. комиссию,
+,,Ожидание выбора мед. учреждения,
+,,Госпитализация запланирована,
+,,Госпитализирован,
+,,Выписан,
+,,Истек срок направления,

@@ -1,0 +1,469 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "draft",
+  "content": "complete",
+  "name": "LabUnitsCS",
+  "id": "lab-units-cs",
+  "title": "Laboratory source system units of measure",
+  "description": "Units of measure as they are sent verbatim by laboratory information systems in Uzbekistan. This code system mirrors the source data, including spellings that are not valid UCUM, so that incoming results can be received, mapped to UCUM (see LabUnitsToUCUMCM) and progressively corrected at source. It is not a code system to author against: new laboratory results must carry UCUM in Observation.valueQuantity.",
+  "url": "https://terminology.dhp.uz/fhir/core/CodeSystem/lab-units-cs",
+  "concept": [
+    {
+      "code": "mcg/dl",
+      "display": "mcg/dl"
+    },
+    {
+      "code": "10^12/L",
+      "display": "10^12/L"
+    },
+    {
+      "code": "mmol/l",
+      "display": "mmol/l"
+    },
+    {
+      "code": "mlU/mL",
+      "display": "mlU/mL"
+    },
+    {
+      "code": "yr",
+      "display": "yr"
+    },
+    {
+      "code": "KP",
+      "display": "KP"
+    },
+    {
+      "code": "nmol/l",
+      "display": "nmol/l"
+    },
+    {
+      "code": "Копий/10^5 клеток",
+      "display": "Копий/10^5 клеток"
+    },
+    {
+      "code": "№",
+      "display": "№"
+    },
+    {
+      "code": "min",
+      "display": "min"
+    },
+    {
+      "code": "Mcg/ml",
+      "display": "Mcg/ml"
+    },
+    {
+      "code": "g/l",
+      "display": "g/l"
+    },
+    {
+      "code": "mg/%",
+      "display": "mg/%"
+    },
+    {
+      "code": "EIU",
+      "display": "EIU"
+    },
+    {
+      "code": "mkl",
+      "display": "mkl"
+    },
+    {
+      "code": "ug/dL",
+      "display": "ug/dL"
+    },
+    {
+      "code": "sec",
+      "display": "sec"
+    },
+    {
+      "code": "mg/l",
+      "display": "mg/l"
+    },
+    {
+      "code": "п/з",
+      "display": "п/з"
+    },
+    {
+      "code": "Mcg/l",
+      "display": "Mcg/l"
+    },
+    {
+      "code": "mkmol/l",
+      "display": "mkmol/l"
+    },
+    {
+      "code": "yed/ml",
+      "display": "yed/ml"
+    },
+    {
+      "code": "mmol/L",
+      "display": "mmol/L"
+    },
+    {
+      "code": "минут",
+      "display": "минут"
+    },
+    {
+      "code": "me/l",
+      "display": "me/l"
+    },
+    {
+      "code": "ul/ml",
+      "display": "ul/ml"
+    },
+    {
+      "code": "U/ml",
+      "display": "U/ml"
+    },
+    {
+      "code": "IU/ml",
+      "display": "IU/ml"
+    },
+    {
+      "code": "yed/l",
+      "display": "yed/l"
+    },
+    {
+      "code": "IU/L",
+      "display": "IU/L"
+    },
+    {
+      "code": "в п/зр",
+      "display": "в п/зр"
+    },
+    {
+      "code": "AU/ml",
+      "display": "AU/ml"
+    },
+    {
+      "code": "RH",
+      "display": "RH"
+    },
+    {
+      "code": "µmol/l",
+      "display": "µmol/l"
+    },
+    {
+      "code": "MYe/ml",
+      "display": "MYe/ml"
+    },
+    {
+      "code": "mlU/ml",
+      "display": "mlU/ml"
+    },
+    {
+      "code": "Me/l",
+      "display": "Me/l"
+    },
+    {
+      "code": "pmol/L",
+      "display": "pmol/L"
+    },
+    {
+      "code": "GE/ml",
+      "display": "GE/ml"
+    },
+    {
+      "code": "min/%",
+      "display": "min/%"
+    },
+    {
+      "code": "pg/ml",
+      "display": "pg/ml"
+    },
+    {
+      "code": "pg",
+      "display": "pg"
+    },
+    {
+      "code": "mmol/d",
+      "display": "mmol/d"
+    },
+    {
+      "code": "Mmol/D",
+      "display": "Mmol/D"
+    },
+    {
+      "code": "sek",
+      "display": "sek"
+    },
+    {
+      "code": "mkg/ml",
+      "display": "mkg/ml"
+    },
+    {
+      "code": "Ml",
+      "display": "Ml"
+    },
+    {
+      "code": "day",
+      "display": "day"
+    },
+    {
+      "code": "ml",
+      "display": "ml"
+    },
+    {
+      "code": "+",
+      "display": "+"
+    },
+    {
+      "code": "µmol/L",
+      "display": "µmol/L"
+    },
+    {
+      "code": "text",
+      "display": "text"
+    },
+    {
+      "code": "10^3/ml",
+      "display": "10^3/ml"
+    },
+    {
+      "code": "fL",
+      "display": "fL"
+    },
+    {
+      "code": "mg/s",
+      "display": "mg/s"
+    },
+    {
+      "code": "mg/L",
+      "display": "mg/L"
+    },
+    {
+      "code": "ng/mL",
+      "display": "ng/mL"
+    },
+    {
+      "code": "mm/h",
+      "display": "mm/h"
+    },
+    {
+      "code": "G/L",
+      "display": "G/L"
+    },
+    {
+      "code": "pH",
+      "display": "pH"
+    },
+    {
+      "code": "mg/dL",
+      "display": "mg/dL"
+    },
+    {
+      "code": "Mk ME/ml",
+      "display": "Mk ME/ml"
+    },
+    {
+      "code": "Nm/mg",
+      "display": "Nm/mg"
+    },
+    {
+      "code": "nmol/L",
+      "display": "nmol/L"
+    },
+    {
+      "code": "ng/dl",
+      "display": "ng/dl"
+    },
+    {
+      "code": "ml%",
+      "display": "ml%"
+    },
+    {
+      "code": "mkg/l",
+      "display": "mkg/l"
+    },
+    {
+      "code": "U/L",
+      "display": "U/L"
+    },
+    {
+      "code": "mIU/mL",
+      "display": "mIU/mL"
+    },
+    {
+      "code": "10^9/L",
+      "display": "10^9/L"
+    },
+    {
+      "code": "μg/dL",
+      "display": "μg/dL"
+    },
+    {
+      "code": "+/-",
+      "display": "+/-"
+    },
+    {
+      "code": "Klet./mkl",
+      "display": "Klet./mkl"
+    },
+    {
+      "code": "ug/dl",
+      "display": "ug/dl"
+    },
+    {
+      "code": "mIU/ml",
+      "display": "mIU/ml"
+    },
+    {
+      "code": "мкл",
+      "display": "мкл"
+    },
+    {
+      "code": ",",
+      "display": ","
+    },
+    {
+      "code": "Me/ml",
+      "display": "Me/ml"
+    },
+    {
+      "code": ".",
+      "display": "."
+    },
+    {
+      "code": "ratio",
+      "display": "ratio"
+    },
+    {
+      "code": "pg/mL",
+      "display": "pg/mL"
+    },
+    {
+      "code": "ng/ml",
+      "display": "ng/ml"
+    },
+    {
+      "code": "mmol/h",
+      "display": "mmol/h"
+    },
+    {
+      "code": "mkmol/L",
+      "display": "mkmol/L"
+    },
+    {
+      "code": "IU/mL",
+      "display": "IU/mL"
+    },
+    {
+      "code": "U/e",
+      "display": "U/e"
+    },
+    {
+      "code": "E/m",
+      "display": "E/m"
+    },
+    {
+      "code": "cm",
+      "display": "cm"
+    },
+    {
+      "code": "uU/ml",
+      "display": "uU/ml"
+    },
+    {
+      "code": "Mg/l",
+      "display": "Mg/l"
+    },
+    {
+      "code": "%",
+      "display": "%"
+    },
+    {
+      "code": "в п/з",
+      "display": "в п/з"
+    },
+    {
+      "code": "number",
+      "display": "number"
+    },
+    {
+      "code": "ml/min",
+      "display": "ml/min"
+    },
+    {
+      "code": "ME/ml",
+      "display": "ME/ml"
+    },
+    {
+      "code": "ml/m",
+      "display": "ml/m"
+    },
+    {
+      "code": "mIU/L",
+      "display": "mIU/L"
+    },
+    {
+      "code": "Mmol/L",
+      "display": "Mmol/L"
+    },
+    {
+      "code": "U",
+      "display": "U"
+    },
+    {
+      "code": "f/l",
+      "display": "f/l"
+    },
+    {
+      "code": "PH",
+      "display": "PH"
+    },
+    {
+      "code": "сек",
+      "display": "сек"
+    },
+    {
+      "code": "AU/mL",
+      "display": "AU/mL"
+    },
+    {
+      "code": "У. е.",
+      "display": "У. е."
+    },
+    {
+      "code": "S/CO",
+      "display": "S/CO"
+    },
+    {
+      "code": "mME/ml",
+      "display": "mME/ml"
+    },
+    {
+      "code": "10^g/L",
+      "display": "10^g/L"
+    },
+    {
+      "code": "OP",
+      "display": "OP"
+    },
+    {
+      "code": "lg",
+      "display": "lg"
+    },
+    {
+      "code": "на 100 лейк.",
+      "display": "на 100 лейк."
+    },
+    {
+      "code": "10*9/L",
+      "display": "10*9/L"
+    },
+    {
+      "code": "Ng/ml",
+      "display": "Ng/ml"
+    },
+    {
+      "code": "mmol/sperm",
+      "display": "mmol/sperm"
+    }
+  ],
+  "caseSensitive": true,
+  "hierarchyMeaning": "is-a",
+  "language": "uz",
+  "experimental": true,
+  "count": 113
+}
