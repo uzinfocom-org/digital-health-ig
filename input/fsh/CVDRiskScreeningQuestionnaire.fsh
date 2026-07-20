@@ -214,8 +214,6 @@ Description: "Example for CVD Risk Screening Questionnaire"
   // FHIRPath scoring variables (SDC), inherited by the child items below. The 10-year risk %
   // is looked up from the WHO/ISH chart encoded as a fixed-width string %grid (2 digits per cell),
   // indexed by discretised age/sex/smoking/BMI/systolic-BP bands.
-  // WARNING: %grid was transcribed from the source chart image and MUST be verified against the
-  // authoritative WHO source before any production/clinical use.
   * extension[$variable][+].valueExpression.name = #weight
   * extension[$variable][=].valueExpression.language = #"text/fhirpath"
   * extension[$variable][=].valueExpression.expression = "%resource.item.where(linkId='weight').answer.value.ofType(decimal).first()"
@@ -380,7 +378,8 @@ Description: "Example for CVD Risk Screening Questionnaire"
     * enableWhen[=].operator = #<
     * enableWhen[=].answerInteger = 20
 
-  // Recommendation shown for a high risk result (20% - <30%)
+  // Recommendation shown for high and very-high risk (score >= 20%). The source sheet merges
+  // the 20-<30% and >=30% rows into a single shared recommendation, so it covers both bands.
   * item[+]
     * linkId = "recommendation-high"
     * text = "Sog'lom turmush tarziga rioya qilish, to'g'ri ovqatlanish, jismoniy faollik, tamaki chekishni kamaytirish (agar bemor tamaki mahsulotlari iste'mol qilsa), spirtli ichimliklar iste'mol qilishni chegaralash (agar bemor alkogol mahsulotlari ichsa) tavsiya etiladi. Monitoring har 3-6 oyda - arterial bosim maqsadli darajasiga yetgunigacha o'tkaziladi. Qondagi glyukoza, xolesterin, siydikdagi oqsil monitoringi, ko'z tubi tekshiruvi, EKG - reja yoki ko'rsatma bo'yicha yilda 1 marta. Lipid spektri va qondagi kreatinin darajasi hamda koptokchali filtratsiya tezligi (KFT) hisobi reja yoki ko'rsatma bo'yicha yilda 1 marta. Kardiolog, terapevt ko'rigi - reja yoki ko'rsatma bo'yicha yilda 1 marta."
@@ -388,13 +387,6 @@ Description: "Example for CVD Risk Screening Questionnaire"
         * extension[lang].valueCode = #ru
         * extension[content].valueString = "Рекомендуется здоровый образ жизни, правильное питание, физическая активность, ограничение употребления табака (если пациент употребляет табачные изделия), ограничение употребления алкоголя (если пациент употребляет алкоголь). Мониторинг каждые 3-6 месяцев до достижения целевого уровня артериального давления. Мониторинг глюкозы в крови, холестерина, белка мочи, исследование глазного дна, ЭКГ - 1 раз в год по плану или по назначению. Определение липидного спектра и уровня креатинина в крови и расчёт скорости клубочковой фильтрации (СКФ) 1 раз в год в плановом порядке или по назначению. Осмотр кардиолога, терапевта - плановый 1 раз в год или по назначению."
     * type = #display
-    * enableBehavior = #all
     * enableWhen[+].question = "cvd-risk-score"
     * enableWhen[=].operator = #>=
     * enableWhen[=].answerInteger = 20
-    * enableWhen[+].question = "cvd-risk-score"
-    * enableWhen[=].operator = #<
-    * enableWhen[=].answerInteger = 30
-
-  // Note: the source spreadsheet defines a very-high risk band (>=30%) but leaves its
-  // recommendation blank, so no recommendation item is provided for #very-high yet.
