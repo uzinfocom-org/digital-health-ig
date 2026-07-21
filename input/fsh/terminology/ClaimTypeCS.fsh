@@ -1,35 +1,35 @@
-CodeSystem: ClaimResponseTypeCS
-Id: claim-response-type-cs
-Title: "Claim Response Type CS"
-Description: "Claim response type supplement with translations in Uzbek and Russian"
+CodeSystem: ClaimTypeCS
+Id: claim-type-cs
+Title: "Claim Type CS"
+Description: "Claim type supplement with translations in Uzbek and Russian"
 
-* insert SupplementCodeSystemDraft(claim-response-type-cs, $claim-response-type, 5.0.0)
+* insert SupplementCodeSystemDraft(claim-type-cs, $claim-type, 5.0.0)
 
-* #institutional "Institutional"
+* #institutional 
   * ^designation[0].language = #uz
   * ^designation[=].value = "Statsionar davolanish"
   * ^designation[+].language = #ru
   * ^designation[=].value = "Стационарное лечение"
 
-* #oral "Oral"
+* #oral 
   * ^designation[0].language = #uz
   * ^designation[=].value = "Stomatologik xizmatlar"
   * ^designation[+].language = #ru
   * ^designation[=].value = "Стоматологические услуги"
 
-* #pharmacy "Pharmacy"
+* #pharmacy 
   * ^designation[0].language = #uz
   * ^designation[=].value = "Farmatsevtik xizmatlar"
   * ^designation[+].language = #ru
   * ^designation[=].value = "Фармацевтические услуги"
 
-* #professional "Professional"
+* #professional 
   * ^designation[0].language = #uz
   * ^designation[=].value = "Ambulator tibbiy xizmatlar"
   * ^designation[+].language = #ru
   * ^designation[=].value = "Амбулаторные медицинские услуги"
 
-* #vision "Vision"
+* #vision 
   * ^designation[0].language = #uz
   * ^designation[=].value = "Oftalmologik xizmatlar"
   * ^designation[+].language = #ru
