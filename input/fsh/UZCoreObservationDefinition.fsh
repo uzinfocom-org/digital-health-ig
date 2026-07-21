@@ -71,6 +71,38 @@ Description: "Uzbekistan Core Laboratory ObservationDefinition profile, used to 
 
 * component MS
   * code from ObservationCodesVS (example)
+    // The base binding stays open so catalogue analytes can keep their national laboratory codes.
+    // The additional binding narrows the picker offered by the Patient Portal when a user builds a
+    // custom laboratory definition: in that flow only LOINC codes may be chosen.
+    * ^binding.additional[+].purpose = #ui
+    * ^binding.additional[=].valueSet = $loinc-vs
+    * ^binding.additional[=].shortDoco = "LOINC only when a user creates a custom laboratory definition"
+    * ^binding.additional[=].documentation = "When a user creates a custom laboratory definition in the Patient Portal user interface, the analyte code MUST be selected from LOINC. Codes from the national laboratory panel code system are reserved for analytes of the pre-defined laboratory catalogue and are not offered in that flow."
+    // The IG Publisher exports binding.additional documentation into the .po files (keys /ab/doco and
+    // /ab/short) but LanguageUtils.importFromTranslationsForSD never reads them back, so the .po
+    // translations of these two strings are ignored. Carry them as translation extensions instead -
+    // that is the same representation the .po import would have produced. Remove once the publisher
+    // round-trips these keys.
+    * ^binding.additional[=].shortDoco.extension[0].url = $translation-extension
+    * ^binding.additional[=].shortDoco.extension[=].extension[0].url = "lang"
+    * ^binding.additional[=].shortDoco.extension[=].extension[=].valueCode = #ru
+    * ^binding.additional[=].shortDoco.extension[=].extension[+].url = "content"
+    * ^binding.additional[=].shortDoco.extension[=].extension[=].valueString = "Только LOINC при создании пользователем собственного лабораторного определения"
+    * ^binding.additional[=].shortDoco.extension[+].url = $translation-extension
+    * ^binding.additional[=].shortDoco.extension[=].extension[0].url = "lang"
+    * ^binding.additional[=].shortDoco.extension[=].extension[=].valueCode = #uz
+    * ^binding.additional[=].shortDoco.extension[=].extension[+].url = "content"
+    * ^binding.additional[=].shortDoco.extension[=].extension[=].valueString = "Foydalanuvchi o'z laboratoriya ta'rifini yaratganda faqat LOINC"
+    * ^binding.additional[=].documentation.extension[0].url = $translation-extension
+    * ^binding.additional[=].documentation.extension[=].extension[0].url = "lang"
+    * ^binding.additional[=].documentation.extension[=].extension[=].valueCode = #ru
+    * ^binding.additional[=].documentation.extension[=].extension[+].url = "content"
+    * ^binding.additional[=].documentation.extension[=].extension[=].valueString = "Когда пользователь создаёт собственное лабораторное определение в интерфейсе портала пациента, код аналита ДОЛЖЕН выбираться из LOINC. Коды национальной системы кодов лабораторных панелей зарезервированы за аналитами предопределённого лабораторного справочника и в этом сценарии не предлагаются."
+    * ^binding.additional[=].documentation.extension[+].url = $translation-extension
+    * ^binding.additional[=].documentation.extension[=].extension[0].url = "lang"
+    * ^binding.additional[=].documentation.extension[=].extension[=].valueCode = #uz
+    * ^binding.additional[=].documentation.extension[=].extension[+].url = "content"
+    * ^binding.additional[=].documentation.extension[=].extension[=].valueString = "Foydalanuvchi bemor portali interfeysida o'zining laboratoriya ta'rifini yaratganda, analit kodi LOINC dan tanlanishi SHART. Milliy laboratoriya panellari kod tizimining kodlari oldindan belgilangan laboratoriya katalogi analitlari uchun ajratilgan va bu jarayonda taklif etilmaydi."
   * code ^short = "Laboratory analyte or indicator code included in the laboratory panel displayed in the Patient Portal"
   * permittedDataType from PermittedDataTypeVS (required)
   * permittedDataType ^short = "Allowed value types for laboratory observation results"
