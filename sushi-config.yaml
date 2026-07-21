@@ -28,6 +28,10 @@ dependencies:
     version: 2025.2.20250411
   # https://chat.fhir.org/#narrow/channel/215610-shorthand/topic/R5.20Questionnaires.20inheriting.20structuredefinition-implements
   hl7.fhir.uv.extensions.r5: 5.3.0
+  # SDC only ships for R4; loaded cross-version so the validator can resolve
+  # sdc-questionnaire-calculatedExpression used by CVDRiskScreeningQuestionnaire.
+  # Pinned to 3.0.0: 4.0.0 pulls a conflicting transitive hl7.fhir.uv.extensions.r4 package.
+  hl7.fhir.uv.sdc: 3.0.0
 
 
 # the following are for offline use only
