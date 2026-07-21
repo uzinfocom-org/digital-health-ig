@@ -76,7 +76,7 @@ Usage: #example
 * created = "2026-10-03"
 
 * provider = Reference(Organization/tashkent-diseases-hospital)
-* referral = Reference(ServiceRequest/UZCoreServiceRequestLab-Example01)
+* referral = Reference(ServiceRequest/UZCoreServiceRequest-Example01)
 * facility = Reference(Organization/tashkent-diseases-hospital)
 
 * total.value = 100000
