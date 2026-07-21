@@ -8,7 +8,7 @@ Description: "Uzbekistan Core Claim profile, used for insurance claims, pre-auth
 * ^publisher = "Uzinfocom"
 
 * identifier MS
-* identifier ^short = "Business Identifier for a claim response"
+* identifier ^short = "Business Identifier for claim"
 
 * status MS 
 * status ^short = "Status of current claim"
@@ -48,7 +48,6 @@ Description: "Uzbekistan Core Claim profile, used for insurance claims, pre-auth
 
 * diagnosis MS
   * diagnosis[x] MS
-  * diagnosisCodeableConcept
 
 * insurance MS
   * focal 1..1 MS
@@ -61,7 +60,7 @@ Description: "Uzbekistan Core Claim profile, used for insurance claims, pre-auth
   * value 0..1 MS
   * value ^short = "Numerical value (with implicit precision)"
   * currency 0..1 MS
-  * currency ^short = "Insurance information"
+  * currency ^short = "ISO 4217 currency code"
   * currency from $currencies-vs (required)
 
 
