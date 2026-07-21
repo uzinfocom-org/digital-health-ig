@@ -47,7 +47,11 @@ Description: "Uzbekistan Core Laboratory ObservationDefinition profile, used to 
 * code MS
 * code from ObservationCodesVS (example)
 * code ^short = "Laboratory panel or test code displayed in the Patient Portal"
+
 * permittedDataType MS
+* permittedDataType from PermittedDataTypeVS (required)
+* permittedDataType ^short = "Allowed value types for laboratory observation results"
+
 * permittedUnit MS
 * permittedUnit from $ucum-common (preferred)
 * permittedUnit ^short = "Permitted unit of measure for the laboratory analyte value"
@@ -68,6 +72,8 @@ Description: "Uzbekistan Core Laboratory ObservationDefinition profile, used to 
 * component MS
   * code from ObservationCodesVS (example)
   * code ^short = "Laboratory analyte or indicator code included in the laboratory panel displayed in the Patient Portal"
+  * permittedDataType from PermittedDataTypeVS (required)
+  * permittedDataType ^short = "Allowed value types for laboratory observation results"
 
 Instance: example-laboratory-hemoglobin
 InstanceOf: UZCoreLaboratoryObservationDefinition

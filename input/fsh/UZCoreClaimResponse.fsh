@@ -41,8 +41,7 @@ Description: "Uzbekistan Core Claim Response profile, used to represent claim ad
 * insurer ^short = "Organization responsible for reimbursement"
 
 * request MS
-//comment will be removed after UZCoreClaim profile will be added to main branch
-//* request only Reference(UZCoreClaim) 
+* request only Reference(UZCoreClaim) 
 * request ^short = "Reference to the original claim"
 
 * outcome MS
@@ -51,7 +50,6 @@ Description: "Uzbekistan Core Claim Response profile, used to represent claim ad
 
 * decision MS
 * decision ^short = "Adjudication decision"
-// * decision from ClaimResponseDecisionVS (example)
 * decision from ClaimResponseDecisionVS (required)
 
 * preAuthRef MS
@@ -89,6 +87,8 @@ Usage: #example
 * created = "2026-03-10"
 
 * insurer = Reference(Organization/example-organization)
+
+* request = Reference(Claim/example-claim)
 
 * outcome = #complete
 
