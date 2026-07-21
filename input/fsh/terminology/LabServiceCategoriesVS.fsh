@@ -11,7 +11,7 @@ Description: "ValueSet including categories of healthcare service requests used 
 * include codes from system lab-categories-cs
 
 * $sct#108252007 "Laboratory procedure"
-* $sct#363679005 "Imaging procedure"
+* $sct#363679005 "Imaging (procedure)"
 * $sct#165197003 "Diagnostic procedure"
 * $sct#387713003 "Surgical procedure"
 * $sct#91251008 "Physiotherapy procedure"

@@ -4,68 +4,68 @@ Title: "ServiceRequest SNOMED Category translations"
 Description: "ServiceRequest SNOMED CT category supplement with translations in Uzbek and Russian"
 * insert SupplementCodeSystemDraft(sr-sct-category-cs, $sct, 2026.1.0)
 
-* #108252007 "Laboratoriya muolajasi"
+* #108252007 "Laboratory procedure"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Лабораторные исследования"
-  * ^designation[+].language = #en
-  * ^designation[=].value = "Laboratory procedure"
-* #363679005 "Rasmlash muolajasi"
+  * ^designation[+].language = #uz
+  * ^designation[=].value = "Laboratoriya muolajasi"
+* #363679005 "Imaging (procedure)" 
   * ^designation[0].language = #ru
   * ^designation[=].value = "Инструментальная диагностика"
-  * ^designation[+].language = #en
-  * ^designation[=].value = "Imaging procedure"
-* #165197003 "Diagnostika muolajasi"
+  * ^designation[+].language = #uz
+  * ^designation[=].value = "Rasmlash muolajasi"
+* #165197003 "Diagnostic procedure" 
   * ^designation[0].language = #ru
   * ^designation[=].value = "Функциональные исследования"
-  * ^designation[+].language = #en
-  * ^designation[=].value = "Diagnostic procedure"
-* #387713003 "Jarrohlik muolajasi"
+  * ^designation[+].language = #uz
+  * ^designation[=].value = "Diagnostika muolajasi"
+* #387713003 "Surgical procedure"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Операции"
-  * ^designation[+].language = #en
-  * ^designation[=].value = "Surgical procedure"
-* #91251008 "Fizioterapiya muolajasi"
+  * ^designation[+].language = #uz
+  * ^designation[=].value = "Jarrohlik muolajasi"
+* #91251008 "Physiotherapy procedure" 
   * ^designation[0].language = #ru
   * ^designation[=].value = "Физиотерапия"
-  * ^designation[+].language = #en
-  * ^designation[=].value = "Physiotherapy procedure"
-* #277132007 "Terapevtik muolaja"
+  * ^designation[+].language = #uz
+  * ^designation[=].value = "Fizioterapiya muolajasi"
+* #277132007 "Therapeutic procedure" 
   * ^designation[0].language = #ru
   * ^designation[=].value = "Инъекции, перевязки"
-  * ^designation[+].language = #en
-  * ^designation[=].value = "Therapeutic procedure"
-* #371883000 "Ambulatoriya muolajasi"
+  * ^designation[+].language = #uz
+  * ^designation[=].value = "Terapevtik muolaja"
+* #371883000 "Outpatient procedure" 
   * ^designation[0].language = #ru
   * ^designation[=].value = "Амбулаторные процедуры"
-  * ^designation[+].language = #en
-  * ^designation[=].value = "Outpatient procedure"
-* #11429006 "Konsultatsiya"
+  * ^designation[+].language = #uz
+  * ^designation[=].value = "Ambulatoriya muolajasi"
+* #11429006 "Consultation" 
   * ^designation[0].language = #ru
   * ^designation[=].value = "Консультации"
-  * ^designation[+].language = #en
-  * ^designation[=].value = "Consultation"
-* #32485007 "Kasalxonaga yotqizish"
+  * ^designation[+].language = #uz
+  * ^designation[=].value = "Konsultatsiya"
+* #32485007 "Admission to hospital" 
   * ^designation[0].language = #ru
   * ^designation[=].value = "Госпитализация"
-  * ^designation[+].language = #en
-  * ^designation[=].value = "Admission to hospital"
-* #52052004 "Reabilitatsiya terapiyasi"
+  * ^designation[+].language = #uz
+  * ^designation[=].value = "Kasalxonaga yotqizish"
+* #52052004 "Rehabilitation therapy" 
   * ^designation[0].language = #ru
   * ^designation[=].value = "Реабилитация"
-  * ^designation[+].language = #en
-  * ^designation[=].value = "Rehabilitation therapy"
-* #448337001 "Teletibbiyot bo'yicha konsultatsiya"
+  * ^designation[+].language = #uz
+  * ^designation[=].value = "Reabilitatsiya terapiyasi"
+* #448337001 "Telemedicine consultation" 
   * ^designation[0].language = #ru
   * ^designation[=].value = "Телемедицина"
-  * ^designation[+].language = #en
-  * ^designation[=].value = "Telemedicine consultation"
-* #20135006 "Skrining tekshiruvi va patronaj"
+  * ^designation[+].language = #uz
+  * ^designation[=].value = "Teletibbiyot bo'yicha konsultatsiya"
+* #20135006 "Screening and home visits" 
   * ^designation[0].language = #ru
   * ^designation[=].value = "Скрининг и патронажные мероприятия"
-  * ^designation[+].language = #en
-  * ^designation[=].value = "Screening and home visits"
-* #25179006 "Qon berish"
+  * ^designation[+].language = #uz
+  * ^designation[=].value = "Skrining tekshiruvi va patronaj"
+* #25179006 "Donation" 
   * ^designation[0].language = #ru
   * ^designation[=].value = "Донация"
-  * ^designation[+].language = #en
-  * ^designation[=].value = "Donation"
+  * ^designation[+].language = #uz
+  * ^designation[=].value = "Qon berish"

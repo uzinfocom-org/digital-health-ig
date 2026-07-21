@@ -17,7 +17,7 @@ Description: "Uzbekistan Core ServiceRequest profile, used to represent a reques
 * intent ^short = "Indicates the level of obligation and intent of the service request, specifying whether the request represents an official order to be performed."
 * category MS
 * category from ServiceRequestCategoriesVS (extensible)
-* category ^short = "The category of the laboratory service being requested, such as hematology, biochemistry, or microbiology. This element provides a high-level classification of the type of laboratory service being ordered."
+* category ^short = "The category of the service being requested, such as laboratory, imaging, or procedural care. This element provides a high-level classification of the type of service being ordered."
 * priority MS
 * priority from RequestPriorityVS (required)
 * priority ^short = "Indicates how quickly the ServiceRequest should be addressed with respect to other requests"
@@ -25,7 +25,7 @@ Description: "Uzbekistan Core ServiceRequest profile, used to represent a reques
 * doNotPerform ^short = "Indicates that the service described by the ServiceRequest should not be performed."
 * code MS
 * code from ServiceRequestCodesVS (extensible)
-* code ^short = "Specifies the laboratory test, panel, or service being requested. The codes used represent orderable laboratory services and must not be used for analytical result observations."
+* code ^short = "Specifies the procedure, diagnostic investigation, or panel being requested. The codes used represent orderable services and must not be used for analytical result observations."
 * subject MS
 * subject only Reference(UZCorePatient or UZCoreLocation)
 * subject ^short = "The patient for whom the laboratory referral or order is issued. This element identifies the individual who is the subject of the requested laboratory investigation."
@@ -85,7 +85,7 @@ Description: "Example ServiceRequest instance for UZCore."
 //* supportingInfo[0] = Reference(UZCoreServiceRequest/uz-servicerequest-supporting-01)
 
 * extension[paymentType].valueCodeableConcept = payment-type-cs#paytype-0001-0001 "Free"
-
+* extension[coverageKind].valueCodeableConcept = coverage-kind-cs#state-insurance "State Insurance"
 
 * specimen[0] = Reference(Specimen/example-specimen-blood-cbc)
 * note[0].text = "Please perform CBC urgently."
