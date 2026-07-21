@@ -1,0 +1,11 @@
+CODE	UZ	RU	EN
+  person	Shaxs	Личность	Person
+  animal	Hayvon	Животное	Animal
+  practitioner	Tibbiyot xodimi	Медицинский работник	Practitioner
+  device	Qurilma	Устройство	Device
+  careteam	Tibbiy yordam guruhi	Команда по оказанию медицинской помощи	CareTeam
+  healthcareservice	Tibbiy xizmat	Медицинская услуга	HealthcareService
+  location	Lokatsiya	Локация	Location
+  organization	Tashkilot	Организация	Organization
+  relatedperson	Aloqador shaxs	Лицо, связанное с пациентом	RelatedPerson
+  specimen	Biologik namuna	Биоматериал	Specimen
