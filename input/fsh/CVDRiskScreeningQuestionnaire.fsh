@@ -339,6 +339,9 @@ Description: "Example for CVD Risk Screening Questionnaire"
       * extension[$translation-extension][+]
         * extension[lang].valueCode = #ru
         * extension[content].valueString = "Рекомендуется здоровый образ жизни, правильное питание, физическая активность, ограничение употребления табака (если пациент употребляет табачные изделия), ограничение употребления алкоголя (если пациент употребляет алкоголь). Повторное обследование через 12 месяцев."
+      * extension[$translation-extension][+]
+        * extension[lang].valueCode = #en
+        * extension[content].valueString = "A healthy lifestyle, proper nutrition, physical activity, reduced tobacco use (if the patient uses tobacco products) and limited alcohol consumption (if the patient drinks alcohol) are recommended. Repeat assessment after 12 months."
     * type = #display
     // Gated on the computed numeric score so it fires in SDC renderers (a coding calc result
     // is not reliably mapped back to an answerOption by every renderer)
@@ -353,6 +356,9 @@ Description: "Example for CVD Risk Screening Questionnaire"
       * extension[$translation-extension][+]
         * extension[lang].valueCode = #ru
         * extension[content].valueString = "Рекомендуется здоровый образ жизни, правильное питание, физическая активность, ограничение употребления табака (если пациент употребляет табачные изделия), ограничение употребления алкоголя (если пациент употребляет алкоголь). Повторные обследования каждые 3 месяца (при достижении артериального давления целевого уровня - повторные обследования каждые 6-9 месяцев). Мониторинг глюкозы в крови, холестерина, белка мочи, осмотр глаз, ЭКГ - 1 раз в 2 года или по назначению."
+      * extension[$translation-extension][+]
+        * extension[lang].valueCode = #en
+        * extension[content].valueString = "A healthy lifestyle, proper nutrition, physical activity, reduced tobacco use (if the patient uses tobacco products) and limited alcohol consumption (if the patient drinks alcohol) are recommended. Repeat assessment every 3 months (once the blood pressure target is reached - every 6-9 months). Monitoring of blood glucose, cholesterol and urine protein, eye examination and ECG - once every 2 years or as prescribed."
     * type = #display
     * enableBehavior = #all
     * enableWhen[+].question = "cvd-risk-score"
@@ -369,6 +375,9 @@ Description: "Example for CVD Risk Screening Questionnaire"
       * extension[$translation-extension][+]
         * extension[lang].valueCode = #ru
         * extension[content].valueString = "Рекомендуется здоровый образ жизни, правильное питание, физическая активность, ограничение употребления табака (если пациент употребляет табачные изделия), ограничение употребления алкоголя (если пациент употребляет алкоголь). Мониторинг каждые 3-6 месяцев до достижения целевого уровня артериального давления. Мониторинг глюкозы в крови, холестерина, белка мочи, исследование глазного дна, ЭКГ - 1 раз в год по плану или по назначению. Осмотр кардиолога, терапевта плановый 1 раз в год или по назначению."
+      * extension[$translation-extension][+]
+        * extension[lang].valueCode = #en
+        * extension[content].valueString = "A healthy lifestyle, proper nutrition, physical activity, reduced tobacco use (if the patient uses tobacco products) and limited alcohol consumption (if the patient drinks alcohol) are recommended. Monitoring every 3-6 months until the blood pressure target is reached. Monitoring of blood glucose, cholesterol and urine protein, fundus examination and ECG - once a year as scheduled or as prescribed. Cardiologist and general practitioner review - once a year as scheduled or as prescribed."
     * type = #display
     * enableBehavior = #all
     * enableWhen[+].question = "cvd-risk-score"
@@ -386,6 +395,9 @@ Description: "Example for CVD Risk Screening Questionnaire"
       * extension[$translation-extension][+]
         * extension[lang].valueCode = #ru
         * extension[content].valueString = "Рекомендуется здоровый образ жизни, правильное питание, физическая активность, ограничение употребления табака (если пациент употребляет табачные изделия), ограничение употребления алкоголя (если пациент употребляет алкоголь). Мониторинг каждые 3-6 месяцев до достижения целевого уровня артериального давления. Мониторинг глюкозы в крови, холестерина, белка мочи, исследование глазного дна, ЭКГ - 1 раз в год по плану или по назначению. Определение липидного спектра и уровня креатинина в крови и расчёт скорости клубочковой фильтрации (СКФ) 1 раз в год в плановом порядке или по назначению. Осмотр кардиолога, терапевта - плановый 1 раз в год или по назначению."
+      * extension[$translation-extension][+]
+        * extension[lang].valueCode = #en
+        * extension[content].valueString = "A healthy lifestyle, proper nutrition, physical activity, reduced tobacco use (if the patient uses tobacco products) and limited alcohol consumption (if the patient drinks alcohol) are recommended. Monitoring every 3-6 months until the blood pressure target is reached. Monitoring of blood glucose, cholesterol and urine protein, fundus examination and ECG - once a year as scheduled or as prescribed. Lipid profile, blood creatinine and glomerular filtration rate (GFR) calculation - once a year as scheduled or as prescribed. Cardiologist and general practitioner review - once a year as scheduled or as prescribed."
     * type = #display
     * enableWhen[+].question = "cvd-risk-score"
     * enableWhen[=].operator = #>=
