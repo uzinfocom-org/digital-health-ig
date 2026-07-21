@@ -5293,3 +5293,64 @@ msgstr "vital-signs.html"
 #: ImplementationGuide.definition.page.title
 msgid "Vital Signs"
 msgstr "Hayotiy ko'rsatkichlar"
+
+# --- UZ Core Group profile, examples and terminology (resource descriptions) ---
+# ImplementationGuide.definition.resource.description
+#: ImplementationGuide.definition.resource.description
+msgid "Uzbekistan Core Group profile, used to represent a defined collection of entities (for example patients, practitioners or specimens), such as screening, vaccination and donation target groups and their outcome cohorts"
+msgstr "UZ Core Group profili, ma'lum bir ob'ektlar to'plamini (masalan, bemorlar, tibbiyot xodimlari yoki biologik namunalar) ifodalash uchun ishlatiladi, masalan skrining, vaksinatsiya va donorlik maqsadli guruhlari hamda ularning yakuniy kogortalari"
+
+# ImplementationGuide.definition.resource.description
+#: ImplementationGuide.definition.resource.description
+msgid "Definitional group describing adults with elevated body mass index targeted for type 2 diabetes screening, excluding those already diagnosed with type 2 diabetes"
+msgstr "Tana massasi indeksi yuqori bo'lgan, 2-tip qandli diabet skriningi uchun tanlangan kattalarni ta'riflovchi guruh; 2-tip qandli diabet tashxisi allaqachon qo'yilgan shaxslar bundan mustasno"
+
+# ImplementationGuide.definition.resource.description
+#: ImplementationGuide.definition.resource.description
+msgid "Enumerated group listing patients who received a measles-containing vaccine at the polyclinic during the first quarter of 2026"
+msgstr "2026-yilning birinchi choragida poliklinikada qizamiqqa qarshi vaksina olgan bemorlarni sanab o'tuvchi guruh"
+
+# ImplementationGuide.definition.resource.description
+#: ImplementationGuide.definition.resource.description
+msgid "Kinds of characteristics used to include or exclude members of a group, drawn from LOINC and local codes, with Uzbek and Russian translations"
+msgstr "Guruh a'zolarini qo'shish yoki chiqarib tashlash uchun ishlatiladigan xususiyat turlari, LOINC va mahalliy kodlardan olingan, o'zbek va rus tillariga tarjimalari bilan"
+
+# ImplementationGuide.definition.resource.description
+#: ImplementationGuide.definition.resource.description
+msgid "Local codes for kinds of group characteristics that are not covered by LOINC, such as place of residence, healthcare organization and prior screening"
+msgstr "LOINC bilan qamrab olinmagan guruh xususiyatlari turlari uchun mahalliy kodlar, masalan yashash joyi, tibbiyot tashkiloti va ilgari o'tilgan skrining"
+
+# ImplementationGuide.definition.resource.description
+#: ImplementationGuide.definition.resource.description
+msgid "LOINC supplement adding Uzbek and Russian translations for the LOINC codes used to describe the kind of characteristic that defines a group"
+msgstr "Guruhni belgilovchi xususiyat turini ta'riflash uchun ishlatiladigan LOINC kodlariga o'zbek va rus tillaridagi tarjimalarni qo'shuvchi LOINC to'ldirmasi"
+
+# ImplementationGuide.definition.resource.description
+#: ImplementationGuide.definition.resource.description
+msgid "Purpose or kind of a group, such as screening, vaccination and donation target groups and their outcome cohorts"
+msgstr "Guruhning maqsadi yoki turi, masalan skrining, vaksinatsiya va donorlik maqsadli guruhlari hamda ularning yakuniy kogortalari"
+
+# ImplementationGuide.definition.resource.description
+#: ImplementationGuide.definition.resource.description
+msgid "Local classifier describing the purpose or kind of a group, such as screening, vaccination and donation target groups and their outcome cohorts"
+msgstr "Guruhning maqsadi yoki turini ta'riflovchi mahalliy klassifikator, masalan skrining, vaksinatsiya va donorlik maqsadli guruhlari hamda ularning yakuniy kogortalari"
+
+# ImplementationGuide.definition.resource.description
+#: ImplementationGuide.definition.resource.description
+msgid "Basis for membership in a group: definitional (defined by characteristics) or enumerated (defined by listed members), with Uzbek and Russian translations"
+msgstr "Guruhga a'zolik asosi: ta'riflovchi (xususiyatlar bilan belgilanadi) yoki sanab o'tilgan (a'zolar ro'yxati bilan belgilanadi), o'zbek va rus tillariga tarjimalari bilan"
+
+# ImplementationGuide.definition.resource.description
+#: ImplementationGuide.definition.resource.description
+msgid "Group membership basis supplement with translations in Uzbek and Russian"
+msgstr "Guruhga a'zolik asosi to'ldirmasi, o'zbek va rus tillariga tarjimalari bilan"
+
+# ImplementationGuide.definition.resource.description
+#: ImplementationGuide.definition.resource.description
+msgid "Types of resources that a group may enumerate, with Uzbek and Russian translations"
+msgstr "Guruh sanab o'tishi mumkin bo'lgan resurs turlari, o'zbek va rus tillariga tarjimalari bilan"
+
+# ImplementationGuide.definition.resource.description
+#: ImplementationGuide.definition.resource.description
+msgid "Group type supplement with translations in Uzbek and Russian"
+msgstr "Guruh turi to'ldirmasi, o'zbek va rus tillariga tarjimalari bilan"

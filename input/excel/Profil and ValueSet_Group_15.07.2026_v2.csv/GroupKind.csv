@@ -1,0 +1,13 @@
+CODE	UZ	RU	EN	
+group-0001-00001	Skriningning maqsadli guruhi	Целевая группа скрининга	Screening target group	
+group-0001-00002	Vaksinatsiyaning maqsadli guruhi	Целевая группа вакцинации	Vaccination target group	
+group-0001-00003	Donorlikning maqsadli guruhi	Целевая группа донации	Donation target group	
+group-0001-00004	Chiqarib tashlangan bemorlar	Исключенные пациенты	Excluded patients	
+group-0001-00005	Taklif etilgan bemorlar	Приглашенные пациенты	Invited patients	
+group-0001-00006	Skriningdan o‘tgan bemorlar	Прошедшие скрининг	Screened patients	
+group-0001-00007	Skriningdan o‘tmagan bemorlar	Не прошедшие скрининг	Overdue patients	
+group-0001-00008	Vaksina olgan bemorlar	Получившие вакцину	Vaccinated patients	
+group-0001-00009	Vaksina olmagan bemorlar	Не получившие вакцину	Unvaccinated patients	
+group-0001-00010	Donorlikni amalga oshirgan donorlar	Прошедшие донацию	Donors who completed donation	
+group-0001-00011	Donorlikni amalga oshirmagan donorlar	Не прошедшие донацию	Donors who did not complete donation	
+group-0001-00012	Qo‘shimcha tekshiruv talab etiladi	Требующие дообследования	Follow-up required	

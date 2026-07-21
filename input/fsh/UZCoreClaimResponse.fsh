@@ -19,26 +19,29 @@ Description: "Uzbekistan Core Claim Response profile, used to represent claim ad
 
 * status MS
 * status ^short = "Current status of the claim response"
-* status from ClaimResponseStatusVS (required)
+* status from FMStatusVS (required)
 
 * type MS
 * type ^short = "Category or discipline of the claim"
-* type from ClaimResponseTypeVS (required)
+* type from ClaimTypeVS (required)
 
 * use MS
 * use ^short = "Purpose of the claim response"
-* use from ClaimResponseUseVS (required)
+* use from ClaimUseVS (required)
 
 * patient 1..1 MS
+* patient only Reference(UZCorePatient)
 * patient ^short = "Patient associated with the claim"
 
 * created MS
 * created ^short = "Date the claim response was created"
 
 * insurer MS
+* insurer only Reference(UZCoreOrganization)
 * insurer ^short = "Organization responsible for reimbursement"
 
 * request MS
+* request only Reference(UZCoreClaim) 
 * request ^short = "Reference to the original claim"
 
 * outcome MS
@@ -47,7 +50,7 @@ Description: "Uzbekistan Core Claim Response profile, used to represent claim ad
 
 * decision MS
 * decision ^short = "Adjudication decision"
-* decision from ClaimResponseDecisionVS (example)
+* decision from ClaimResponseDecisionVS (required)
 
 * preAuthRef MS
 * preAuthRef ^short = "Reference to a prior authorization"
@@ -75,15 +78,17 @@ Usage: #example
 
 * extension[cancellationReason].valueCodeableConcept = cancellation-reason-cs#Reimb0001-00001 "Expired"
 
-* type = $claim-response-type#institutional
+* type = $claim-type#institutional
 
-* use = #claim
+* use = #preauthorization
 
 * patient = Reference(Patient/example-salim)
 
 * created = "2026-03-10"
 
 * insurer = Reference(Organization/example-organization)
+
+* request = Reference(Claim/example-claim)
 
 * outcome = #complete
 
