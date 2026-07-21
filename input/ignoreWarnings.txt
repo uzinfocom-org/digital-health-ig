@@ -11,6 +11,12 @@ Best Practice Recommendation: In general, all observations should have a perform
 This IG is version 5.0.0, while the IG 'fhir.dicom' is from version 4.0.1
 The ImplementationGuide is based on FHIR version 5.0.0 but package fhir.dicom#2025.2.20250411 is based on FHIR version 4.0.1. In general, this version mismatch should be avoided - some tools will try to make this work with variable degrees of success, but others will not even try
 
+# SDC only publishes for R4 (no R5 package exists); we depend on it cross-version so the
+# sdc-questionnaire-calculatedExpression used by CVDRiskScreeningQuestionnaire resolves - same known issue as DICOM above
+This IG is version 5.0.0, while the IG 'hl7.fhir.uv.sdc' is from version 4.0.1
+The ImplementationGuide is based on FHIR version 5.0.0 but package hl7.fhir.uv.sdc#3.0.0 is based on FHIR version 4.0.1. In general, this version mismatch should be avoided - some tools will try to make this work with variable degrees of success, but others will not even try
+The ImplementationGuide uses package hl7.fhir.uv.sdc#3.0.0 released on 2022-03-08, but the most recent appropriate version is 4.0.0. This reference is getting old and the more recent version should be considered
+
 # Warning that can be ignored for our use since our instances use Uzbek/Russian but generated narrative in English
 Resource has a language (uz), and the XHTML has a lang (en), but they differ
 Resource has a language (ru), and the XHTML has a lang (en), but they differ
