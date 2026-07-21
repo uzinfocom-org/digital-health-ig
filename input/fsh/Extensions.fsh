@@ -143,3 +143,14 @@ Description: "Canonical reference to the laboratory ObservationDefinition that s
 
 * value[x] 1..1
 * value[x] only Canonical(UZCoreLaboratoryObservationDefinition)
+
+Extension: CoverageKind
+Id: coverage-kind
+Title: "Coverage Kind"
+Description: "Extension indicating the kind of financing or coverage source for a requested service, such as state insurance, private insurance, self-pay, or other."
+Context: ServiceRequest
+
+* ^experimental = true
+
+* value[x] only CodeableConcept
+* valueCodeableConcept from CoverageKindVS (required)

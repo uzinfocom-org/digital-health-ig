@@ -39,7 +39,7 @@ Description: "Uzbekistan Core HealthcareService profile, used to define healthca
   * system 1..1 MS
   * system = Canonical(LabCategoriesCS)
   * code 1..1 MS
-  * code from lab-service-categories-vs (extensible)
+  * code from service-categories-vs (extensible)
 
 * type.coding ^slicing.discriminator.type = #value
 * type.coding ^slicing.discriminator.path = "system"
