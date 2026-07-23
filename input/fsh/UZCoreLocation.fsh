@@ -14,9 +14,9 @@ Description: "Uzbekistan Core Location profile, used to define locations of heal
 * identifier ^slicing.rules = #open
 * identifier ^slicing.description = "Ways an organization can be categorized"
 * identifier ^slicing.ordered = false
-* identifier contains taxId 0..1 MS and unit 0..1 MS
+* identifier contains unit 0..1 MS
 
-* insert TaxIdentifier
+//* insert TaxIdentifier
 * identifier[unit]
   * ^short = "Unique identifier of the location unit (branch, ward, bed)"
   * system 1..1 MS
@@ -31,7 +31,7 @@ Description: "Uzbekistan Core Location profile, used to define locations of heal
 
 * insert UzAddressRules
 * insert MultilingualName(локации)
-* name 1..1
+* name 0..1
 * status from LocationStatusVS (required)
 
 * type.coding ^slicing.discriminator.type = #value
@@ -52,8 +52,8 @@ InstanceOf: UZCoreLocation
 Description: "Example of an organization location"
 Usage: #example
 * language = #uz
-* identifier[taxId]
-  * value = "200935935"
+// * identifier[taxId]
+//   * value = "200935935"
 * status = #active
 * mode = #instance
 * name = "Respublika onkologiya markazi"
