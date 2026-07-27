@@ -194,6 +194,9 @@ Alias: $observation-range-category-vs = https://terminology.dhp.uz/fhir/core/Val
 Alias: $task-status = http://hl7.org/fhir/task-status
 Alias: $task-intent = http://hl7.org/fhir/task-intent
 
+Alias: $claim-response-category = http://terminology.hl7.org/CodeSystem/adjudication
+Alias: $claim-response-outcome = http://hl7.org/fhir/claim-outcome
+Alias: $claim-response-decision = http://hl7.org/fhir/claim-decision
 Alias: $fm-status = http://hl7.org/fhir/fm-status
 Alias: $claim-type = http://terminology.hl7.org/CodeSystem/claim-type
 Alias: $claim-use = http://hl7.org/fhir/claim-use
