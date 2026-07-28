@@ -5091,3 +5091,45 @@ Description: "A selected list of UCUM (Unified Code for Units of Measure) units 
   * ^designation[=].value = "yil"
   * ^designation[+].language = #ru
   * ^designation[=].value = "год"
+
+* #"[ELU]"
+  * ^designation[0].language = #uz
+  * ^designation[=].value = "IFA birligi"
+  * ^designation[+].language = #ru
+  * ^designation[=].value = "единица ИФА"
+
+* #"mmol/{sperm}"
+  * ^designation[0].language = #uz
+  * ^designation[=].value = "sperma namunasiga millimol"
+  * ^designation[+].language = #ru
+  * ^designation[=].value = "миллимоль на образец спермы"
+
+* #"{S/CO}"
+  * ^designation[0].language = #uz
+  * ^designation[=].value = "signalning chegara qiymatiga nisbati"
+  * ^designation[+].language = #ru
+  * ^designation[=].value = "отношение сигнала к пороговому значению"
+
+* #"{cell}/uL"
+  * ^designation[0].language = #uz
+  * ^designation[=].value = "mikrolitrga hujayralar"
+  * ^designation[+].language = #ru
+  * ^designation[=].value = "клеток на микролитр"
+
+* #"{copies}/10*5{cell}"
+  * ^designation[0].language = #uz
+  * ^designation[=].value = "100 000 ta hujayraga nusxalar"
+  * ^designation[+].language = #ru
+  * ^designation[=].value = "копий на 100 000 клеток"
+
+* #"{log10}"
+  * ^designation[0].language = #uz
+  * ^designation[=].value = "10 asosli logarifm"
+  * ^designation[+].language = #ru
+  * ^designation[=].value = "десятичный логарифм"
+
+* #"{per_HPF}"
+  * ^designation[0].language = #uz
+  * ^designation[=].value = "katta kattalashtirishdagi ko‘rish maydoniga"
+  * ^designation[+].language = #ru
+  * ^designation[=].value = "на поле зрения при большом увеличении"
