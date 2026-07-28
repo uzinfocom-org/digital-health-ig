@@ -9,7 +9,7 @@ Description: "Value Set for Goal Description"
 * ^extension[0].url = $valueset-supplement
 * ^extension[=].valueCanonical = Canonical(GoalDescriptionCS)
 
- * include codes from system $sct  where concept is-a 404684003
+* include codes from system $sct where concept is-a #404684003
 // * include $sct#1201005 "Benign essential hypertension"
 // * include $sct#364006 "Acute left-sided heart failure"
 // * include $sct#3424008 "Tachycardia"
