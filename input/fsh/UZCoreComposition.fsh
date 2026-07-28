@@ -14,19 +14,19 @@ Description: "UZ Core Composition profile, which defines the core elements of a 
 * category from CompositionCategoryVS
 
 * subject 1..* MS
-* subject only Reference(Patient)
+* subject only Reference(UZCorePatient or UZCoreRelatedPerson)
 
 * author 1..* MS
-* author only Reference(PractitionerRole)
+* author only Reference(UZCorePractitionerRole or UZCorePractitioner or UZCoreOrganization or UZCoreRelatedPerson)
 
 * attester
   * mode 1..1 MS
   * mode from CompositionAttModeVS (preferred)
   * party 0..1 MS
-  * party only Reference(PractitionerRole)
+  * party only Reference(UZCorePractitionerRole or UZCorePractitioner or UZCoreOrganization or UZCoreRelatedPerson or UZCorePatient)
 
 * custodian 0..1 MS
-* custodian only Reference(Organization)
+* custodian only Reference(UZCoreOrganization)
 
 * section
   * title and code and author and text and entry and emptyReason and orderedBy MS
@@ -36,7 +36,7 @@ Description: "UZ Core Composition profile, which defines the core elements of a 
     * div 1..1 MS
   * orderedBy from CompositionListOrderVS (preferred)
   * emptyReason from CompositionListEmptyReasonVS
-  * author only Reference(PractitionerRole)
+  * author only Reference(UZCorePractitionerRole or UZCorePractitioner or UZCoreOrganization or UZCoreRelatedPerson or UZCorePatient)
 
 
 Instance: example-medical-composition
