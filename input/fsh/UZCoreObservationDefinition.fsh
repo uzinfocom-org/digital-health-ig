@@ -53,8 +53,8 @@ Description: "Uzbekistan Core Laboratory ObservationDefinition profile, used to 
 * permittedDataType ^short = "Allowed value types for laboratory observation results"
 
 * permittedUnit MS
-* permittedUnit from $ucum-common (preferred)
-* permittedUnit ^short = "Permitted unit of measure for the laboratory analyte value"
+* permittedUnit from UCUMUnitsSupplementVS (extensible)
+* permittedUnit ^short = "Permitted unit of measure for the laboratory analyte value in uzbek and russian translations"
 
 * method MS
 * method from LabMethodsVS (example)
@@ -104,8 +104,11 @@ Description: "Uzbekistan Core Laboratory ObservationDefinition profile, used to 
     * ^binding.additional[=].documentation.extension[=].extension[+].url = "content"
     * ^binding.additional[=].documentation.extension[=].extension[=].valueString = "Foydalanuvchi bemor portali interfeysida o'zining laboratoriya ta'rifini yaratganda, analit kodi LOINC dan tanlanishi SHART. Milliy laboratoriya panellari kod tizimining kodlari oldindan belgilangan laboratoriya katalogi analitlari uchun ajratilgan va bu jarayonda taklif etilmaydi."
   * code ^short = "Laboratory analyte or indicator code included in the laboratory panel displayed in the Patient Portal"
-  * permittedDataType from PermittedDataTypeVS (required)
+  * permittedDataType from PermittedDataTypeVS (extensible)
   * permittedDataType ^short = "Allowed value types for laboratory observation results"
+  * permittedUnit MS
+  * permittedUnit from UCUMUnitsSupplementVS (preferred)
+  * permittedUnit ^short = "Permitted unit of measure for the laboratory analyte value in uzbek and russian translations"
 
 Instance: example-laboratory-hemoglobin
 InstanceOf: UZCoreLaboratoryObservationDefinition
