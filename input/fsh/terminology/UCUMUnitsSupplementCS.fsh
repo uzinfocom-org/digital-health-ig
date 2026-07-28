@@ -5020,17 +5020,11 @@ Description: "A selected list of UCUM (Unified Code for Units of Measure) units 
   * ^designation[+].language = #ru
   * ^designation[=].value = "единица Тодда"
 
-* #"Torr"
-  * ^designation[0].language = #uz
-  * ^designation[=].value = "Torr"
-  * ^designation[+].language = #ru
-  * ^designation[=].value = "Torr"
-
 * #"10*12/L"
   * ^designation[0].language = #uz
-  * ^designation[=].value = ""
+  * ^designation[=].value = "10*12/L"
   * ^designation[+].language = #ru
-  * ^designation[=].value = ""
+  * ^designation[=].value = "10*12/L"
 
 * #"[oz_tr]"
   * ^designation[0].language = #uz

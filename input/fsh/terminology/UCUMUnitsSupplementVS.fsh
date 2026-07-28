@@ -6,3 +6,5 @@ Description: "UCUM units with Uzbek and Russian translation supplements."
 * ^experimental = true
 * ^extension[0].url = $valueset-supplement
 * ^extension[=].valueCanonical = Canonical(UCUMUnitsSupplementCS)
+
+* include codes from system $ucum
