@@ -104,7 +104,7 @@ Description: "Uzbekistan Core Laboratory ObservationDefinition profile, used to 
     * ^binding.additional[=].documentation.extension[=].extension[+].url = "content"
     * ^binding.additional[=].documentation.extension[=].extension[=].valueString = "Foydalanuvchi bemor portali interfeysida o'zining laboratoriya ta'rifini yaratganda, analit kodi LOINC dan tanlanishi SHART. Milliy laboratoriya panellari kod tizimining kodlari oldindan belgilangan laboratoriya katalogi analitlari uchun ajratilgan va bu jarayonda taklif etilmaydi."
   * code ^short = "Laboratory analyte or indicator code included in the laboratory panel displayed in the Patient Portal"
-  * permittedDataType from PermittedDataTypeVS (extensible)
+  * permittedDataType from PermittedDataTypeVS (required)
   * permittedDataType ^short = "Allowed value types for laboratory observation results"
   * permittedUnit MS
   * permittedUnit from UCUMUnitsSupplementVS (preferred)
