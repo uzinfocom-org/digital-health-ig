@@ -700,3 +700,135 @@ Description: "ConceptMap for mapping DMED  measure unit codes to DHP  measure un
 * group[=].element[=].target[+].code = #[iU]
 * group[=].element[=].target[=].display = "international unit"
 * group[=].element[=].target[=].relationship = #related-to
+
+
+// #18 | доля
+* group[=].element[+].code = #18
+* group[=].element[=].display = "доля"
+* group[=].element[=].target[+].code = #%
+* group[=].element[=].target[=].display = "percent"
+* group[=].element[=].target[=].relationship = #related-to
+
+
+
+
+// #51 | Ph.Eur.U.
+* group[=].element[+].code = #51
+* group[=].element[=].display = "Ph.Eur.U."
+* group[=].element[=].target[+].code = #[USP'U]
+* group[=].element[=].target[=].display = "United States Pharmacopeia unit"
+* group[=].element[=].target[=].relationship = #related-to
+
+// #62 | ТУ
+* group[=].element[+].code = #62
+* group[=].element[=].display = "TУ"
+* group[=].element[=].target[+].code = #att
+* group[=].element[=].target[=].display = "technical atmosphere"
+* group[=].element[=].target[=].relationship = #related-to
+
+
+// #143 | мг/3мл
+* group[=].element[+].code = #143
+* group[=].element[=].display = "мг/ 3мл"
+* group[=].element[=].target[+].code = #mg/mL
+* group[=].element[=].target[=].display = "milligram per milliliter"
+* group[=].element[=].target[=].relationship = #related-to
+
+// #340 | мг/4мл
+* group[=].element[+].code = #340
+* group[=].element[=].display = "мг/ 4мл"
+* group[=].element[=].target[+].code = #mg/mL
+* group[=].element[=].target[=].display = "milligram per milliliter"
+* group[=].element[=].target[=].relationship = #related-to
+
+// #359 | мг/200 мл
+* group[=].element[+].code = #359
+* group[=].element[=].display = "мг/ 200 мл"
+* group[=].element[=].target[+].code = #mg/mL
+* group[=].element[=].target[=].display = "milligram per milliliter"
+* group[=].element[=].target[=].relationship = #related-to
+
+// #385 | мг/10мл
+* group[=].element[+].code = #385
+* group[=].element[=].display = "мг/ 10мл"
+* group[=].element[=].target[+].code = #mg/mL
+* group[=].element[=].target[=].display = "milligram per milliliter"
+* group[=].element[=].target[=].relationship = #related-to
+
+
+// #572 | миллиард спор
+* group[=].element[+].code = #572
+* group[=].element[=].display = "миллиард спор"
+* group[=].element[=].target[+].code = #10*9
+* group[=].element[=].target[=].display = "billion"
+* group[=].element[=].target[=].relationship = #related-to
+
+// #611 | часть
+* group[=].element[+].code = #611
+* group[=].element[=].display = "часть"
+* group[=].element[=].target[+].code = #1
+* group[=].element[=].target[=].display = "one"
+* group[=].element[=].target[=].relationship = #related-to
+
+// #451 | ПЕ
+* group[=].element[+].code = #451
+* group[=].element[=].display = "ПЕ"
+* group[=].element[=].target[+].code = #[PNU]
+* group[=].element[=].target[=].display = "Protein Nitrogen Units"
+* group[=].element[=].target[=].relationship = #related-to
+
+// #19 | доза
+* group[=].element[+].code = #19
+* group[=].element[=].display = "доза"
+* group[=].element[=].target[+].code = #1 
+* group[=].element[=].target[=].display = "1*"
+* group[=].element[=].target[=].relationship = #related-to
+
+// #45 | шт
+* group[=].element[+].code = #45
+* group[=].element[=].display = "шт"
+* group[=].element[=].target[+].code = #1
+* group[=].element[=].target[=].display = "one"
+* group[=].element[=].target[=].relationship = #related-to
+
+// #20 | клетка
+* group[=].element[+].code = #20
+* group[=].element[=].display = "клетка"
+* group[=].element[=].target[+].code = #[CFU]
+* group[=].element[=].target[=].display = "colony forming unit"
+* group[=].element[=].target[=].relationship = #related-to
+
+
+
+// #66 | ЛД 50
+* group[=].element[+].code = #66
+* group[=].element[=].display = "ЛД 50"
+* group[=].element[=].target[+].code = #mg/kg
+* group[=].element[=].target[=].display = "milligram per kilogram"
+* group[=].element[=].target[=].relationship = #related-to
+
+
+// #485 | qs
+* group[=].element[+].code = #485
+* group[=].element[=].display = "qs"
+* group[=].element[=].target[+].code = #1
+* group[=].element[=].target[=].display = "1*"
+* group[=].element[=].target[=].relationship = #related-to
+
+
+// #488 | ТФ
+* group[=].element[+].code = #488
+* group[=].element[=].display = "ТФ"
+* group[=].element[=].target[+].code = #1
+* group[=].element[=].target[=].display = "1*"
+* group[=].element[=].target[=].relationship = #related-to
+
+
+// #612 | степень разведения
+* group[=].element[+].code = #612
+* group[=].element[=].display = "степень разведения"
+* group[=].element[=].target[+].code = #1
+* group[=].element[=].target[=].display = "1*"
+* group[=].element[=].target[=].relationship = #equivalent
+
+
