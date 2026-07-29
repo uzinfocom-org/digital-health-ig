@@ -1157,11 +1157,91 @@
           "value": "степень разведения"
         }
       ]
+    },
+    {
+      "code": "571",
+      "display": "килограмм",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "килограмм"
+        }
+      ]
+    },
+    {
+      "code": "569",
+      "display": "миллиграмм",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "миллиграмм"
+        }
+      ]
+    },
+    {
+      "code": "29",
+      "display": "мкг/мг",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "мкг/мг"
+        }
+      ]
+    },
+    {
+      "code": "570",
+      "display": "микрограмм на миллилитр",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "микрограмм на миллилитр"
+        }
+      ]
+    },
+    {
+      "code": "495",
+      "display": "спор",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "спор"
+        }
+      ]
+    },
+    {
+      "code": "567",
+      "display": "миллиграмм",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "миллиграмм"
+        }
+      ]
+    },
+    {
+      "code": "565",
+      "display": "микрограмм",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "микрограмм"
+        }
+      ]
+    },
+    {
+      "code": "54",
+      "display": "колониеобразующие единицы",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "колониеобразующие единицы"
+        }
+      ]
     }
   ],
   "caseSensitive": true,
   "hierarchyMeaning": "is-a",
   "language": "uz",
   "experimental": true,
-  "count": 115
+  "count": 123
 }
