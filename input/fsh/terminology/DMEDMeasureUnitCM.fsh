@@ -63,6 +63,13 @@ Description: "ConceptMap for mapping DMED  measure unit codes to DHP  measure un
 * group[=].element[=].target[=].display = "microgram"
 * group[=].element[=].target[=].relationship = #equivalent
 
+// 565 микрограмм -> ug
+* group[=].element[+].code = #565
+* group[=].element[=].display = "микрограмм"
+* group[=].element[=].target[+].code = #ug
+* group[=].element[=].target[=].display = "microgram"
+* group[=].element[=].target[=].relationship = #equivalent
+
 // 78 микрограмм на дозу -> ug/{dose}
 * group[=].element[+].code = #78
 * group[=].element[=].display = "микрограмм на дозу"
@@ -196,6 +203,7 @@ Description: "ConceptMap for mapping DMED  measure unit codes to DHP  measure un
 * group[=].element[=].target[=].display = "milligram per milliliter"
 * group[=].element[=].target[=].relationship = #equivalent
 
+
 // 418 мг/мл -> mg/mL
 * group[=].element[+].code = #418
 * group[=].element[=].display = "мг/мл"
@@ -219,6 +227,20 @@ Description: "ConceptMap for mapping DMED  measure unit codes to DHP  measure un
 
 // 2 миллиграмм -> mg
 * group[=].element[+].code = #2
+* group[=].element[=].display = "миллиграмм"
+* group[=].element[=].target[+].code = #mg
+* group[=].element[=].target[=].display = "milligram"
+* group[=].element[=].target[=].relationship = #equivalent
+
+// 567 миллиграмм -> mg
+* group[=].element[+].code = #567
+* group[=].element[=].display = "миллиграмм"
+* group[=].element[=].target[+].code = #mg
+* group[=].element[=].target[=].display = "milligram"
+* group[=].element[=].target[=].relationship = #equivalent
+
+// 569 миллиграмм -> mg
+* group[=].element[+].code = #569
 * group[=].element[=].display = "миллиграмм"
 * group[=].element[=].target[+].code = #mg
 * group[=].element[=].target[=].display = "milligram"
@@ -391,6 +413,13 @@ Description: "ConceptMap for mapping DMED  measure unit codes to DHP  measure un
 * group[=].element[=].target[+].code = #{spore}
 * group[=].element[=].target[=].display = "spore"
 * group[=].element[=].target[=].relationship = #equivalent
+
+// 23 спора -> {spore}
+* group[=].element[+].code = #495
+* group[=].element[=].display = "спор"
+* group[=].element[=].target[+].code = #{spore}
+* group[=].element[=].target[=].display = "spore"
+* group[=].element[=].target[=].relationship = #related-to
 
 // 610 титр фага -> {phage_titer}
 * group[=].element[+].code = #610
@@ -624,6 +653,13 @@ Description: "ConceptMap for mapping DMED  measure unit codes to DHP  measure un
 * group[=].element[=].target[=].display = "colony forming units"
 * group[=].element[=].target[=].relationship = #equivalent
 
+// 54 колониеобразующие единицы -> [CFU]
+* group[=].element[+].code = #54
+* group[=].element[=].display = "колониеобразующие единицы"
+* group[=].element[=].target[+].code = #[CFU]
+* group[=].element[=].target[=].display = "colony forming units"
+* group[=].element[=].target[=].relationship = #equivalent
+
 // 532 млрд КЕ -> [CFU]
 * group[=].element[+].code = #532
 * group[=].element[=].display = "млрд КЕ"
@@ -682,6 +718,13 @@ Description: "ConceptMap for mapping DMED  measure unit codes to DHP  measure un
 
 // 37 килограмм -> kg
 * group[=].element[+].code = #37
+* group[=].element[=].display = "килограмм"
+* group[=].element[=].target[+].code = #kg
+* group[=].element[=].target[=].display = "kilogram"
+* group[=].element[=].target[=].relationship = #equivalent
+
+// 571 килограмм -> kg
+* group[=].element[+].code = #571
 * group[=].element[=].display = "килограмм"
 * group[=].element[=].target[+].code = #kg
 * group[=].element[=].target[=].display = "kilogram"
@@ -824,11 +867,27 @@ Description: "ConceptMap for mapping DMED  measure unit codes to DHP  measure un
 * group[=].element[=].target[=].relationship = #related-to
 
 
-// #612 | степень разведения
+// #612 степень разведения | 1
 * group[=].element[+].code = #612
 * group[=].element[=].display = "степень разведения"
 * group[=].element[=].target[+].code = #1
 * group[=].element[=].target[=].display = "1*"
+* group[=].element[=].target[=].relationship = #equivalent
+
+
+// #570 микрограмм на миллилитр | microgram per milliliter
+* group[=].element[+].code = #570
+* group[=].element[=].display = "микрограмм на миллилитр"
+* group[=].element[=].target[+].code = #ug/mL
+* group[=].element[=].target[=].display = "microgram per milliliter"
+* group[=].element[=].target[=].relationship = #equivalent
+
+
+// #29 микрограмм на миллилитр | microgram per milliliter
+* group[=].element[+].code = #29
+* group[=].element[=].display = "мкг/мг"
+* group[=].element[=].target[+].code = #ug/mg
+* group[=].element[=].target[=].display = "microgram per milligram"
 * group[=].element[=].target[=].relationship = #equivalent
 
 
