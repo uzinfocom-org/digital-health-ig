@@ -7,7 +7,8 @@ Description: "Procedure outcome ValueSet with translations in Uzbek and Russian"
 * ^extension[0].url = $valueset-supplement
 * ^extension[=].valueCanonical = Canonical(ProcedureOutcomeCS)
 
-* include codes from system $sct
+* include codes from system $sct where concept is-a #281296001
+// * include codes from system $sct
 
 // * include $sct#385669000 "Successful"
 // * include $sct#385670004 "Partially successful"

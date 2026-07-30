@@ -12,7 +12,8 @@ Description: "Codes for socioeconomic observations including benefits, education
 * ^extension[0].url = $valueset-supplement
 * ^extension[=].valueCanonical = Canonical(SocioeconomicObservationCodesCS)
 
-* include codes from system $sct
+* include codes from system $sct where concept is-a #365508006
+// * include codes from system $sct
 // * $sct#1303306008 "Eligible for benefit"
 // * $sct#105421008 "Educational achievement"
 // * $sct#14679004 "Occupation"

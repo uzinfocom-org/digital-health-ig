@@ -7,7 +7,9 @@ Description: "Route of administration codes with Uzbek and Russian translations"
 * ^extension[0].url = $valueset-supplement
 * ^extension[=].valueCanonical = Canonical(RouteCodeCS)
 
-* include codes from system $sct
+* include codes from system $sct where concept is-a #284009009
+
+// * include codes from system $sct
 // * $sct#36673005 "Intradermal injection"
 // * $sct#76601001 "Injection, intramuscular"
 // * $sct#26643006 "Swallow, oral"
