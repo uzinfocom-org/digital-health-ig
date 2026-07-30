@@ -8,8 +8,8 @@ Description: "Types of Condition severities in Uzbekistan"
 * ^extension[0].url = $valueset-supplement
 * ^extension[=].valueCanonical = Canonical(ConditionSeverityCS)
 
-* include codes from system $sct where concept is-a #272141005
-// * include codes from system $sct
+
+* include codes from system $sct
 
 // * include $sct#255604002 "Mild"
 // * include $sct#6736007 "Moderate severity"

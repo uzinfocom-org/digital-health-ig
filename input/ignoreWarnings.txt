@@ -72,3 +72,5 @@ No definition could be found for URL value 'http://example.org/fhir/sid/lab-test
 %should have an OID assigned to cater for possible use with OID based terminology systems%
 
 Error from https://tx.fhir.org/r5: Error: The code System "http://snomed.info/sct" has a grammar, and cannot be enumerated directly
+
+Error from https://tx.fhir.org/r5: Error: (no details supplied)

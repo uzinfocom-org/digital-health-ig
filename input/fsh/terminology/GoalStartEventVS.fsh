@@ -9,8 +9,8 @@ Description: "Value Set for Goal Start Event"
 * ^extension[0].url = $valueset-supplement
 * ^extension[=].valueCanonical = Canonical(GoalStartEventCS)
 
-* include codes from system $sct where concept is-a #138875005
-// * include codes from system $sct
+
+* include codes from system $sct
 // * include $sct#32485007 "Admission to hospital"
 // * include $sct#308283009 "Discharge from hospital"
 // * include $sct#442137000 "Completion time of procedure"
