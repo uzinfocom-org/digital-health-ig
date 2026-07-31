@@ -111,14 +111,14 @@ Description: "ConceptMap for mapping DMED  measure unit codes to DHP  measure un
 * group[=].element[=].target[+].code = #U
 * group[=].element[=].target[=].display = "unit"
 * group[=].element[=].target[=].relationship = #equivalent
-/*
+
 // 6 Рд -> RD
 * group[=].element[+].code = #6
 * group[=].element[=].display = "Рд"
-* group[=].element[=].target[+].code = #RD
+* group[=].element[=].target[+].code = #[rd_us]
 * group[=].element[=].target[=].display = "rod"
 * group[=].element[=].target[=].relationship = #equivalent
-*/
+
 // 8 рад -> RAD
 * group[=].element[+].code = #8
 * group[=].element[=].display = "рад"
@@ -623,7 +623,7 @@ Description: "ConceptMap for mapping DMED  measure unit codes to DHP  measure un
 * group[=].element[=].target[+].code = #[drp]
 * group[=].element[=].target[=].display = "drop"
 * group[=].element[=].target[=].relationship = #equivalent
-/*
+
 // 492 DU -> [D'ag'U]
 * group[=].element[+].code = #492
 * group[=].element[=].display = "DU"
@@ -634,7 +634,6 @@ Description: "ConceptMap for mapping DMED  measure unit codes to DHP  measure un
 // 58 антигенная единица -> [D'ag'U]
 * group[=].element[+].code = #58
 * group[=].element[=].display = "антигенная единица"
-* group[=].element[+].code = #[D'ag'U]
 * group[=].element[=].target[+].code = #[D'ag'U]
 * group[=].element[=].target[=].display = "D-antigen unit"
 * group[=].element[=].target[=].relationship = #equivalent
@@ -645,7 +644,7 @@ Description: "ConceptMap for mapping DMED  measure unit codes to DHP  measure un
 * group[=].element[=].target[+].code = #[D'ag'U]
 * group[=].element[=].target[=].display = "D-antigen unit"
 * group[=].element[=].target[=].relationship = #equivalent
-*/
+
 // 530 колониеобразующие единицы -> [CFU]
 * group[=].element[+].code = #530
 * group[=].element[=].display = "колониеобразующие единицы"
