@@ -1,7 +1,7 @@
-Every [Questionnaire](artifacts.html) published by this guide can be filled in here as a
-working form. This is meant for reviewing and trying a form before implementing it: check
-the wording, the answer options, the skip logic, and - where a questionnaire calculates
-something - the calculated results.
+Любой [опросник](artifacts.html), опубликованный в этом руководстве, можно заполнить здесь
+как рабочую форму. Это нужно для того, чтобы просмотреть и опробовать форму до её
+внедрения: проверить формулировки, варианты ответов, логику переходов между вопросами и -
+если опросник что-то вычисляет - результаты вычислений.
 
 <style>
 #form-controls { display: flex; flex-wrap: wrap; gap: 12px; align-items: center; margin: 16px 0; }
@@ -19,13 +19,13 @@ something - the calculated results.
 </style>
 
 <div id="form-controls">
-  <select id="form-picker" aria-label="Form"></select>
-  <div id="form-langs" role="group" aria-label="Language"></div>
-  <button id="form-autofill" type="button">Fill in sample answers</button>
+  <select id="form-picker" aria-label="Форма"></select>
+  <div id="form-langs" role="group" aria-label="Язык"></div>
+  <button id="form-autofill" type="button">Заполнить примерными ответами</button>
   <a id="form-json" href="artifacts.html" target="_blank" rel="noopener">JSON</a>
 </div>
 
-<div id="form-status">Loading the forms...</div>
+<div id="form-status">Загрузка форм...</div>
 <div id="form-target"></div>
 
 <!-- NLM LHC-Forms 43.0.0, vendored into input/images/. The IG Publisher rejects
