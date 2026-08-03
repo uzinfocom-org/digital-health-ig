@@ -8,6 +8,4 @@ This repository is an HL7 FHIR R5 Implementation Guide authored in FHIR Shorthan
 
 ## Modelling guidelines (required reading)
 
-Before creating or modifying any FHIR profile, extension, value set, code system, instance, or other modelling artifact, read and follow the project modelling guidelines. They define the naming conventions, cardinality rules, binding strengths, slicing patterns, and structural conventions every artifact must follow.
-
-@modelling-guidelines.md
+Before creating or modifying any FHIR profile, extension, value set, code system, instance, or other modelling artifact, you MUST read `modelling-guidelines.md` in full and follow it. It defines the naming conventions, canonical URL patterns, cardinality rules, binding strengths, slicing patterns, terminology and versioning rules, and structural conventions every artifact must follow.
