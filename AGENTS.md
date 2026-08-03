@@ -8,14 +8,6 @@
 - **Clean**: `./_build.sh clean` (remove temp directories)
 - **Test**: No specific test framework - validation happens during build
 
-## Architecture
-- **Type**: FHIR R5 Implementation Guide using SUSHI/FSH (FHIR Shorthand)
-- **Main config**: `sushi-config.yaml` (IG metadata, parameters, menu)
-- **IG config**: `ig.ini` (publisher settings)
-- **Source**: `input/` directory containing FSH files, vocabulary, and content
-- **Generated**: `fsh-generated/` (SUSHI output), `output/` (final IG), `temp/` (build temp)
-- **Publisher**: HL7 FHIR IG Publisher (Java-based, stored in `input-cache/`)
-
 ## Code Style & Conventions
 - **FSH files**: Most are located in `input/fsh/` with extra-large codesystems in `input/manual-fsh/`
 - **Vocabulary**: Pre-rendered extra-large codesystems are stored in `input/vocabulary/`
