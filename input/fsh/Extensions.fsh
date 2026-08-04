@@ -112,6 +112,26 @@ Description: "Extension to indicate the author of the immunization recommendatio
 * value[x] 1..
 * value[x] only Reference(UZCorePractitioner or UZCorePractitionerRole)
 
+
+Extension: ClaimResponseCancellationReason
+Id: claim-response-cancellation-reason
+Title: "ClaimResponse Cancellation Reason"
+Description: "Extension used to record the reason for cancellation of a ClaimResponse, particularly when a preauthorization expires before the claim process is completed."
+Context: ClaimResponse
+
+* ^url = "https://dhp.uz/fhir/core/StructureDefinition/claim-response-cancellation-reason"
+* ^experimental = true
+* ^date = "2026-06-24"
+
+* value[x] 1..
+* value[x] only CodeableConcept
+* value[x] from CancellationReasonVS (required)
+  * obeys uzcore-clmresp-cancellation-reason-1
+
+Invariant: uzcore-clmresp-cancellation-reason-1
+Description: "A cancellation reason code shall be provided."
+Expression: "exists()"
+Severity: #error
 Extension: ServiceDefinition
 Id: service-definition
 Title: "Service Definition"

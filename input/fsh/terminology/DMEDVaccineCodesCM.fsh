@@ -665,3 +665,7 @@ Description: "ConceptMap for mapping DMED Vaccine codes to CVX vaccine codes"
 * group[=].element[+].code = #4
 * group[=].element[=].display = "ZF -UZ-VAC (2001 вакцина 202012026)"
 * group[=].element[=].noMap = true
+
+* group[=].element[+].code = #337
+* group[=].element[=].display = "Витамин К"
+* group[=].element[=].noMap = true

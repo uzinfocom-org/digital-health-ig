@@ -1,8 +1,52 @@
 ### В разработке
 
+(Пока без изменений)
+
+### Версия 0.7.0
+
+#### Новые профили
+
+Добавлены профили [UZ Core Claim](StructureDefinition-uz-core-claim.html) и [UZ Core Claim Response](StructureDefinition-uz-core-claim-response.html) для страховых счетов, предварительной авторизации и предварительного определения, а также для ответов с решением по оплате и возмещению. Их поддерживает терминология [типа счёта](ValueSet-claim-type-vs.html), [назначения счёта](ValueSet-claim-use-vs.html) и [статуса финансового управления](ValueSet-fm-status-vs.html), а также коды [категории ответа](ValueSet-claim-response-category-vs.html), [решения](ValueSet-claim-response-decision-vs.html) и [результата](ValueSet-claim-response-outcome-vs.html). [Расширение причины отмены](StructureDefinition-claim-response-cancellation-reason.html) фиксирует, почему ответ был отменён - например, когда срок действия предварительной авторизации истёк до завершения обработки счёта.
+
+Добавлен профиль [UZ Core Task Referral Approval](StructureDefinition-uz-core-referral-approval-task.html) для отслеживания шагов процесса согласования направления и госпитализации в системе государственного медицинского страхования (Приложение 1 к постановлению Кабинета Министров № 694 от 04.11.2025), с терминологией [кодов задач](ValueSet-task-codes-vs.html), [статуса](ValueSet-task-status-vs.html), [намерения](ValueSet-task-intent-vs.html) и [бизнес-статуса](ValueSet-task-business-status-vs.html). Ограничение уровня предупреждения выявляет незавершённые задачи, у которых истёк запрошенный срок, но не проставлен статус просрочки - для контроля SLA.
+
+Добавлен профиль [UZ Core Group](StructureDefinition-uz-core-group.html) для определённых наборов сущностей - целевых групп скрининга, вакцинации и донорства и их когорт по результатам - с терминологией [типа группы](ValueSet-group-type-vs.html), [вида группы](ValueSet-group-kind-vs.html), [основания членства](ValueSet-group-membership-basis-vs.html) и [вида характеристики](ValueSet-group-characteristic-kind-vs.html).
+
+Добавлен [опросник скрининга риска сердечно-сосудистых заболеваний](Questionnaire-CVDRiskScreeningQuestionnaire.html) - форма раннего выявления риска ССЗ, которая рассчитывает балл и категорию риска по ответам с помощью выражений SDC FHIRPath. Руководство теперь зависит от `hl7.fhir.uv.sdc`, чтобы эти выражения разрешались.
+
 #### Изменения терминологии и привязок
 
-ConceptMap типов организаций переименованы с префикса MIS2 на SSV в соответствии с SSV ValueSet, из которых выполняется сопоставление: [SSVLevelTypeToSubordinationGroupCM](ConceptMap-ssv-level-type-to-subordination-group-cm.html), [SSVMedicalTypeToOrganizationalStructureCM](ConceptMap-ssv-medical-type-to-organizational-structure-cm.html) и [SSVServiceTypeToOrganizationalServiceGroupCM](ConceptMap-ssv-service-type-to-organizational-service-group-cm.html). Дублирующие ConceptMap `mis2-*` удалены; разработчикам следует использовать канонические URL `ssv-*`.
+ConceptMap типов организаций переименованы с префикса MIS2 на SSV в соответствии с SSV ValueSet, из которых выполняется сопоставление: [SSVLevelTypeToSubordinationGroupCM](ConceptMap-ssv-level-type-to-subordination-group-cm.html), [SSVMedicalTypeToOrganizationalStructureCM](ConceptMap-ssv-medical-type-to-organizational-structure-cm.html) и [SSVServiceTypeToOrganizationalServiceGroupCM](ConceptMap-ssv-service-type-to-organizational-service-group-cm.html). Дублирующие ConceptMap `mis2-*` удалены; разработчикам следует использовать канонические URL `ssv-*`. Сопоставления номенклатурных групп вынесены из SSVMedicalTypeToOrganizationalStructureCM в новый [SSVMedicalTypeToNomenclatureGroupCM](ConceptMap-ssv-medical-type-to-nomenclature-group-cm.html), чтобы каждый ConceptMap объявлял одну область источника и цели.
+
+Добавлены supplement к SNOMED CT с узбекскими и русскими обозначениями для [степени тяжести состояния](CodeSystem-condition-severity-cs.html), [результата процедуры](CodeSystem-procedure-outcome-cs.html), [типа реакции](CodeSystem-reaction-type-cs.html), [описания цели](CodeSystem-goal-description-cs.html), [события начала цели](CodeSystem-goal-start-event-cs.html) и [кодов социально-экономических наблюдений](CodeSystem-socioeconomic-observation-codes-cs.html).
+
+ValueSet на основе SNOMED CT теперь отбирают иерархию там, где она выражает замысел, вместо перечисления отдельных кодов: [часть тела](ValueSet-body-site-vs.html) - любая анатомическая структура, [код процедуры](ValueSet-procedure-code-vs.html) - любая процедура, [целевое заболевание](ValueSet-target-disease-vs.html) - любое заболевание, [код пути введения](ValueSet-route-code-vs.html) - любой путь введения, [степень тяжести состояния](ValueSet-condition-severity-vs.html) - любая степень тяжести, [исход нежелательного явления](ValueSet-adverse-event-outcome-vs.html) - любая нежелательная реакция, а [описание цели](ValueSet-goal-description-vs.html), [тип реакции](ValueSet-reaction-type-vs.html) и [причина рекомендации](ValueSet-recommendation-reason-vs.html) - любой клинический признак. Это расширяет набор допустимых значений по сравнению с 0.6.0. [Результат процедуры](ValueSet-procedure-outcome-vs.html), [коды социально-экономических наблюдений](ValueSet-socioeconomic-observation-codes-vs.html), [событие начала цели](ValueSet-goal-start-event-vs.html) и [роль участника действия](ValueSet-action-participant-role-vs.html) сохраняют явные списки кодов, так как их понятия не имеют общего предка, достаточно узкого для отбора.
+
+Добавлен [supplement единиц UCUM](CodeSystem-ucum-units-supp-cs.html) с узбекскими и русскими переводами наименований единиц, представленный как [ValueSet единиц UCUM](ValueSet-ucum-units-supp-vs.html). `permittedUnit` в [UZ Core Laboratory ObservationDefinition](StructureDefinition-uz-core-laboratory-observation-definition.html) теперь привязан к нему (extensible), а не к общему ValueSet единиц UCUM, а `permittedDataType` теперь привязан (required) к новому ValueSet [типов значений лабораторных наблюдений](ValueSet-permitted-data-type-vs.html).
+
+Добавлены [CodeSystem единиц измерения исходных лабораторных систем](CodeSystem-lab-units-cs.html) со строками единиц, используемыми исходными системами, его [ValueSet](ValueSet-lab-units-vs.html) и [ConceptMap для перевода их в UCUM](ConceptMap-lab-units-to-ucum-cm.html), чтобы результаты, поступающие с локальными обозначениями единиц, можно было нормализовать.
+
+[CodeSystem лабораторных панелей](CodeSystem-lab-pan-cs.html) теперь объявляет свойства `kind` и `parent`, поэтому клиент, разворачивающий ValueSet кодов наблюдений, может отличить панели от аналитов, входящих в них. Также исправлены языковые обозначения кодов панелей.
+
+`component.code` в [UZ Core Laboratory ObservationDefinition](StructureDefinition-uz-core-laboratory-observation-definition.html) получил дополнительную привязку для сценария пользовательского интерфейса: когда пользователь создаёт собственное лабораторное определение в портале пациента, код аналита должен выбираться из LOINC. Коды национальных лабораторных панелей остаются зарезервированными за предопределённым лабораторным справочником.
+
+`method` в [UZ Core Observation](StructureDefinition-uz-core-observation.html) теперь явно указывает силу привязки как extensible.
+
+[UZ Core Immunization PlanDefinition](StructureDefinition-uz-core-immunization-plan-definition.html) теперь требует второй `useContext` с указанием вида календаря, привязанный (extensible) к новому ValueSet [типа календаря иммунизации](ValueSet-immunization-schedule-type-vs.html). Слайсинг по типу для `action.definition[x]` удалён, поскольку из-за него валидатор отклонял `definitionCanonical`, и примеры теперь используют `definitionCanonical`.
+
+`participant.actor` в [UZ Core Condition](StructureDefinition-uz-core-condition.html) теперь может ссылаться на [UZ Core Organization](StructureDefinition-uz-core-organization.html).
+
+Профиль UZ Core ActivityDefinition переименован в [UZ Core VaccinationActivityDefinition](StructureDefinition-uz-core-vaccination-activity-definition.html), его канонический URL изменён с `.../uz-core-activity-definition` на `.../uz-core-vaccination-activity-definition`. Разработчики, ссылающиеся на прежний канонический URL, должны его обновить.
+
+В [UZ Core Location](StructureDefinition-uz-core-location.html) удалён слайс налогового идентификатора, а `name` снова необязателен (0..1) - требование, введённое в 0.6.0, отменено.
+
+Добавлены терминологические мосты DMED для [путей введения](ConceptMap-dmed-administration-route-to-dhp-sct-cm.html), сопоставленных с национальными кодами и кодами SNOMED CT, а также расширены сопоставления [единиц измерения](ConceptMap-dmed-measure-unit-to-dhp-cm.html) и [кодов вакцин](ConceptMap-dmed-vaccine-to-cvx-cm.html); в [CodeSystem единиц измерения DMED](CodeSystem-dmed-measure-unit-cs.html) добавлены новые единицы.
+
+#### Документация
+
+Добавлена страница [Формы](forms.html), на которой любой опросник, публикуемый этим руководством, можно заполнить как рабочую форму на узбекском, русском или английском языке, чтобы проверить формулировки, варианты ответов, логику переходов и рассчитываемые результаты до реализации. Страница может заполнить форму примерами ответов и содержит ссылку на итоговый JSON ресурса QuestionnaireResponse.
+
+Руководство по моделированию теперь требует, чтобы версии терминологий были в формате SemVer (`MAJOR.MINOR.PATCH`), так как платформа терминологий DHP не распознаёт другие форматы, и описывает, как кодировать идентификаторы релизов, не соответствующие SemVer, например `2026-01` у SNOMED CT.
 
 ### Версия 0.6.0
 

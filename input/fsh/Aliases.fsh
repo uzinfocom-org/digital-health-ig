@@ -196,9 +196,11 @@ Alias: $task-intent = http://hl7.org/fhir/task-intent
 
 Alias: $permitted-data-type = http://hl7.org/fhir/permitted-data-type
 
+Alias: $claim-response-category = http://terminology.hl7.org/CodeSystem/adjudication
+Alias: $claim-response-outcome = http://hl7.org/fhir/claim-outcome
+Alias: $claim-response-decision = http://hl7.org/fhir/claim-decision
 Alias: $fm-status = http://hl7.org/fhir/fm-status
 Alias: $claim-type = http://terminology.hl7.org/CodeSystem/claim-type
 Alias: $claim-use = http://hl7.org/fhir/claim-use
 // valueset currency
 Alias: $currencies-vs = http://hl7.org/fhir/ValueSet/currencies
-Alias: $permitted-data-type = http://hl7.org/fhir/permitted-data-type
