@@ -77,7 +77,7 @@ Description: "Uzbekistan Core HealthcareService profile, used to define healthca
   * coding.system 1..1 MS
   * coding.system = Canonical(PaymentTypeCS)
   * coding.code 1..1 MS
-  * coding.code from PaymentTypeVS (extensible)
+  * coding.code from PaymentTypeVS (required)
 
 Instance: example-healthcareservice
 InstanceOf: UZCoreHealthcareService
