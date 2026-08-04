@@ -1,7 +1,7 @@
 CodeSystem: CompositionCategoryCS
 Id: composition-category-cs
 Title: "Composition category"
-Description: "Composition category supplement with translations in uzbek and russian"
+Description: "Composition categories in Uzbekistan"
 * insert OriginalCodeSystem(composition-category-cs)
 
 * #Comp001-0001

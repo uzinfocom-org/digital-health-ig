@@ -1,7 +1,7 @@
 CodeSystem: CompositionAttModeCS
 Id: composition-att-mode-cs
-Title: "DocumentReference Status CodeSystem"
-Description: "This field is a mandatory attribute of the FHIR DocumentReference resource and indicates the current state of the document in the system."
+Title: "Composition attestation mode"
+Description: "Composition attestation mode supplement with translations in uzbek and russian"
 * insert SupplementCodeSystem(composition-att-mode-cs, $composition-att-mode, 5.0.0)
 
 * #personal

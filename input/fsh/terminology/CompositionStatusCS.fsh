@@ -1,7 +1,7 @@
 CodeSystem: CompositionStatusCS
 Id: composition-status-cs
-Title: "Document Reference Status CodeSystem"
-Description: "This field is a mandatory attribute of the FHIR DocumentReference resource and indicates the current state of the document in the system."
+Title: "Composition status"
+Description: "Composition status supplement with translations in uzbek and russian"
 * insert SupplementCodeSystem(composition-status-cs, $composition-status, 5.0.0)
 
 * #registered
@@ -21,12 +21,12 @@ Description: "This field is a mandatory attribute of the FHIR DocumentReference 
   * ^designation[=].value = "Dastlabki"
 * #final
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Окончательный"     
+  * ^designation[=].value = "Окончательный"
   * ^designation[+].language = #uz
-  * ^designation[=].value = "Final"
+  * ^designation[=].value = "Yakuniy"
 * #amended
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Исправленный"
+  * ^designation[=].value = "Изменённый"
   * ^designation[+].language = #uz
   * ^designation[=].value = "O'zgartirilgan"
 * #corrected

@@ -1,7 +1,7 @@
 ValueSet: CompositionStatusVS
 Id: composition-status-vs
-Title: "Document Reference Status ValueSet"
-Description: "Defines the consent state codes in Russian and Uzbek"
+Title: "Composition status"
+Description: "Composition status codes with Uzbek and Russian designations"
 * ^url = "https://terminology.dhp.uz/fhir/core/ValueSet/composition-status-vs"
 * ^experimental = false
 * ^extension[0].url = $valueset-supplement

@@ -50,11 +50,11 @@ Usage: #example
 * date = "2026-03-05T10:00:00+05:00"
 * title = "Bemorning elektron tibbiy kartasi"
 * subject = Reference(example-patient)
-* author = Reference(example-practitionerrole )
+* author = Reference(example-practitionerrole)
 
 * attester
   * mode = $composition-att-mode#professional
-  * party = Reference(example-practitionerrole )
+  * party = Reference(example-practitionerrole)
 
 * section
   * title = "Anamnez"
