@@ -1,7 +1,8 @@
-Every [Questionnaire](artifacts.html) published by this guide can be filled in here as a
-working form. This is meant for reviewing and trying a form before implementing it: check
-the wording, the answer options, the skip logic, and - where a questionnaire calculates
-something - the calculated results.
+Ushbu qo'llanmada chop etilgan har bir [so'rovnomani](artifacts.html) shu yerda ishlaydigan
+forma sifatida to'ldirish mumkin. Bu formani joriy etishdan oldin ko'rib chiqish va sinab
+ko'rish uchun mo'ljallangan: savollarning matnini, javob variantlarini, savollar orasidagi
+o'tish mantig'ini va - agar so'rovnoma biror narsani hisoblasa - hisoblash natijalarini
+tekshiring.
 
 <style>
 #form-controls { display: flex; flex-wrap: wrap; gap: 12px; align-items: center; margin: 16px 0; }
@@ -19,13 +20,13 @@ something - the calculated results.
 </style>
 
 <div id="form-controls">
-  <select id="form-picker" aria-label="Form"></select>
-  <div id="form-langs" role="group" aria-label="Language"></div>
-  <button id="form-autofill" type="button">Fill in sample answers</button>
+  <select id="form-picker" aria-label="Forma"></select>
+  <div id="form-langs" role="group" aria-label="Til"></div>
+  <button id="form-autofill" type="button">Namunaviy javoblar bilan to'ldirish</button>
   <a id="form-json" href="artifacts.html" target="_blank" rel="noopener">JSON</a>
 </div>
 
-<div id="form-status">Loading the forms...</div>
+<div id="form-status">Formalar yuklanmoqda...</div>
 <div id="form-target"></div>
 
 <!-- NLM LHC-Forms 43.0.0, vendored into input/images/. The IG Publisher rejects
