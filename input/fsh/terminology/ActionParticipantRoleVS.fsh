@@ -4,6 +4,11 @@ Title: "Action Participant Role VS"
 Description: "Value Set for Action Participant Role"
 * ^url = "https://terminology.dhp.uz/fhir/core/ValueSet/action-participant-role-vs"
 * ^experimental = true
+* ^extension[0].url = $valueset-supplement
+* ^extension[=].valueCanonical = Canonical(ActionParticipantRoleCS)
 
-* include $sct#309343006
-* include $sct#106292003
+
+
+* include codes from system $sct  
+// * include $sct#309343006
+// * include $sct#106292003

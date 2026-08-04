@@ -70,3 +70,7 @@ No definition could be found for URL value 'http://example.org/fhir/sid/lab-test
 
 # IG Publisher 2.2.10 emits an OID-assignment recommendation for every CodeSystem/ValueSet. We don't use OID-based terminology (e.g. CDA), so assigning OIDs IG-wide adds no value here.
 %should have an OID assigned to cater for possible use with OID based terminology systems%
+
+Error from https://tx.fhir.org/r5: Error: The code System "http://snomed.info/sct" has a grammar, and cannot be enumerated directly
+
+Error from https://tx.fhir.org/r5: Error: (no details supplied)
