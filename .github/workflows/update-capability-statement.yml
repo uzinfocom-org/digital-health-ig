@@ -24,12 +24,16 @@ jobs:
           # Fetch to a temp file so a failed/partial download never reaches the pipeline.
           # --max-time guards against the server stalling (it once hung for 17 min and
           # produced an empty file that got committed); --retry handles transient errors.
-          curl -sSf --max-time 60 --retry 3 --retry-delay 10 \
+          # --compressed is required: the server gzips the response even when the client
+          # does not ask for it, so without it we write raw gzip bytes and jq chokes.
+          curl -sSf --compressed --max-time 60 --retry 3 --retry-delay 10 \
             "https://playground.dhp.uz/fhir/metadata" -o raw.json
 
           # Refuse to proceed unless we actually got a CapabilityStatement.
           if [ "$(jq -r '.resourceType // empty' raw.json)" != "CapabilityStatement" ]; then
             echo "Fetched content is not a CapabilityStatement; aborting" >&2
+            echo "First 200 bytes of the response:" >&2
+            head -c 200 raw.json | cat -v >&2
             exit 1
           fi
 

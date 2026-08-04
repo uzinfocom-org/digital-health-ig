@@ -5,21 +5,8 @@ Description: "Reaction type codes"
 * ^url = "https://terminology.dhp.uz/fhir/core/ValueSet/reaction-type-vs"
 * ^experimental = true
 * ^publisher = "Uzinfocom"
+* ^extension[0].url = $valueset-supplement
+* ^extension[=].valueCanonical = Canonical(ReactionTypeCS)
 
-* $sct#260389003 "No reaction"
-  * ^designation[0].language = #uz
-  * ^designation[=].value = "Reaksiya yo'q"
-  * ^designation[+].language = #ru
-  * ^designation[=].value = "Реакция отсутствует"
-
-* $sct#281647001 "Adverse reaction"
-  * ^designation[0].language = #uz
-  * ^designation[=].value = "Umumiy reaksiya"
-  * ^designation[+].language = #ru
-  * ^designation[=].value = "Общая реакция"
-
-* $sct#95376002 "Injection site disorder"
-  * ^designation[0].language = #uz
-  * ^designation[=].value = "Mahalliy / Tana a'zosi reaksiyasi"
-  * ^designation[+].language = #ru
-  * ^designation[=].value = "Местная реакция"
+* include codes from system $sct where concept is-a #404684003
+// * include codes from system $sct

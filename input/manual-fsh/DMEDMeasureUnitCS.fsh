@@ -349,3 +349,39 @@ Description: "Measurement unit codes in the DMED system"
 * #612 "степень разведения"
   * ^designation[0].language = #ru
   * ^designation[=].value = "степень разведения"
+
+* #571 "килограмм"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "килограмм"
+
+* #569 "миллиграмм"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "миллиграмм"
+
+* #29 "мкг/мг"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "мкг/мг"
+
+* #570 "микрограмм на миллилитр"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "микрограмм на миллилитр"
+
+* #495 "спор"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "спор"
+
+* #567 "миллиграмм"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "миллиграмм"
+
+* #565 "микрограмм"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "микрограмм"
+
+* #54 "колониеобразующие единицы"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "колониеобразующие единицы"
+
+
+
+
