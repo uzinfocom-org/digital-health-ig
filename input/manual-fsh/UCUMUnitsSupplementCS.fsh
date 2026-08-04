@@ -2,7 +2,7 @@ CodeSystem: UCUMUnitsSupplementCS
 Id: ucum-units-supp-cs
 Title: "UCUM Units Supplement Code System"
 Description: "A selected list of UCUM (Unified Code for Units of Measure) units used in laboratory and clinical results. Each concept.code value conforms to the official UCUM syntax defined at http://unitsofmeasure.org. The primary display text is provided in Uzbek, while English and Russian translations are included as designation entries. "
-* insert SupplementCodeSystemDraft(ucum-units-supp-cs, $ucum, 1.5.0)
+* insert SupplementCodeSystemDraft(ucum-units-supp-cs, $ucum, 2.2.0)
 
 * #"10.L/min"
   * ^designation[0].language = #uz
@@ -3616,18 +3616,6 @@ Description: "A selected list of UCUM (Unified Code for Units of Measure) units 
   * ^designation[+].language = #ru
   * ^designation[=].value = "наномоль эквивалента костного коллагена на литр"
 
-* #"nmol/mmol{creat}"
-  * ^designation[0].language = #uz
-  * ^designation[=].value = "nanomol suyak kollageni ekvivalenti/millimol kreatininning"
-  * ^designation[+].language = #ru
-  * ^designation[=].value = "наномоль эквивалента костного коллагена на миллимоль креатинина"
-
-* #"nmol/mg{prot}"
-  * ^designation[0].language = #uz
-  * ^designation[=].value = "nanomol 1/2 sistin/milligramm oqsilning"
-  * ^designation[+].language = #ru
-  * ^designation[=].value = "наномоль 1/2 цистина на миллиграмм белка"
-
 * #"nmol{ATP}"
   * ^designation[0].language = #uz
   * ^designation[=].value = "nanomol ATF"
@@ -5022,57 +5010,57 @@ Description: "A selected list of UCUM (Unified Code for Units of Measure) units 
 
 * #"10*12/L"
   * ^designation[0].language = #uz
-  * ^designation[=].value = "10*12/L"
-  * ^designation[+].language = #ru
-  * ^designation[=].value = "10*12/L"
-
-* #"[oz_tr]"
-  * ^designation[0].language = #uz
   * ^designation[=].value = "trillion/litr"
   * ^designation[+].language = #ru
   * ^designation[=].value = "триллион на литр"
 
-* #"[tb'U]"
+* #"[oz_tr]"
   * ^designation[0].language = #uz
   * ^designation[=].value = "troy untsiyasi"
   * ^designation[+].language = #ru
   * ^designation[=].value = "тройская унция"
 
-* #"V"
+* #"[tb'U]"
   * ^designation[0].language = #uz
   * ^designation[=].value = "tuberkulin birligi"
   * ^designation[+].language = #ru
   * ^designation[=].value = "туберкулиновая единица"
 
-* #"Wb"
+* #"V"
   * ^designation[0].language = #uz
   * ^designation[=].value = "volt"
   * ^designation[+].language = #ru
   * ^designation[=].value = "вольт"
 
-* #"wk"
+* #"Wb"
   * ^designation[0].language = #uz
   * ^designation[=].value = "veber"
   * ^designation[+].language = #ru
   * ^designation[=].value = "вебер"
 
-* #"{WBCs}"
+* #"wk"
   * ^designation[0].language = #uz
   * ^designation[=].value = "hafta"
   * ^designation[+].language = #ru
   * ^designation[=].value = "неделя"
 
-* #"[yd_i]"
+* #"{WBCs}"
   * ^designation[0].language = #uz
   * ^designation[=].value = "leykotsitlar"
   * ^designation[+].language = #ru
   * ^designation[=].value = "лейкоциты"
 
-* #"a"
+* #"[yd_i]"
   * ^designation[0].language = #uz
   * ^designation[=].value = "yard (xalqaro)"
   * ^designation[+].language = #ru
   * ^designation[=].value = "ярд (международный)"
+
+* #"a"
+  * ^designation[0].language = #uz
+  * ^designation[=].value = "yil"
+  * ^designation[+].language = #ru
+  * ^designation[=].value = "год"
 
 * #"{yyyy}"
   * ^designation[0].language = #uz
@@ -5082,9 +5070,9 @@ Description: "A selected list of UCUM (Unified Code for Units of Measure) units 
 
 * #"{Zscore}"
   * ^designation[0].language = #uz
-  * ^designation[=].value = "yil"
+  * ^designation[=].value = "Z-ball"
   * ^designation[+].language = #ru
-  * ^designation[=].value = "год"
+  * ^designation[=].value = "Z-оценка"
 
 * #"[ELU]"
   * ^designation[0].language = #uz

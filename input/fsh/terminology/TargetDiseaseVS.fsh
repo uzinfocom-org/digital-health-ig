@@ -7,7 +7,10 @@ Description: "Target disease codes with Uzbek and Russian translations"
 * ^extension[0].url = $valueset-supplement
 * ^extension[=].valueCanonical = Canonical(TargetDiseaseCS)
  
-* include codes from system $sct
+
+* include codes from system $sct where concept is-a #64572001
+
+// * include codes from system $sct
 
 // * $sct#397430003 "Diphtheria (disorder)"
 // * $sct#27836007 "Pertussis"

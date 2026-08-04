@@ -8,4 +8,5 @@ Description: "Reaction type codes"
 * ^extension[0].url = $valueset-supplement
 * ^extension[=].valueCanonical = Canonical(ReactionTypeCS)
 
-* include codes from system $sct
+* include codes from system $sct where concept is-a #404684003
+// * include codes from system $sct
