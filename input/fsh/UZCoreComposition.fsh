@@ -13,11 +13,11 @@ Description: "UZ Core Composition profile, used as a foundation for creating med
 * type from CompositionTypeVS (required)
 * category from CompositionCategoryVS
 
-* subject 1..* MS
-* subject only Reference(UZCorePatient or UZCoreRelatedPerson)
+* subject 0..* MS
+  * ^short = "Who and/or what the medical document or digital form is about."
 
 * author 1..* MS
-* author only Reference(UZCorePractitionerRole or UZCorePractitioner or UZCoreOrganization or UZCoreRelatedPerson)
+* author only Reference(UZCorePractitionerRole or UZCorePractitioner or UZCoreOrganization or UZCoreRelatedPerson or UZCorePatient or Device)
 
 * attester
   * mode 1..1 MS
