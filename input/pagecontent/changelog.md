@@ -1,8 +1,52 @@
 ### In development
 
+(No changes yet)
+
+### Version 0.7.0
+
+#### New profiles
+
+Added [UZ Core Claim](StructureDefinition-uz-core-claim.html) and [UZ Core Claim Response](StructureDefinition-uz-core-claim-response.html) profiles for insurance claims, pre-authorization and predetermination, and for the adjudication and reimbursement responses to them. They are supported by [claim type](ValueSet-claim-type-vs.html), [claim use](ValueSet-claim-use-vs.html) and [financial management status](ValueSet-fm-status-vs.html) terminology, plus [response category](ValueSet-claim-response-category-vs.html), [decision](ValueSet-claim-response-decision-vs.html) and [outcome](ValueSet-claim-response-outcome-vs.html) codes. A [cancellation reason extension](StructureDefinition-claim-response-cancellation-reason.html) records why a response was cancelled, for example when a pre-authorization expires before the claim completes.
+
+Added [UZ Core Task Referral Approval](StructureDefinition-uz-core-referral-approval-task.html) profile for tracking the workflow steps of the state insurance referral and hospitalization approval process (Annex 1 to Resolution of the Cabinet of Ministers No. 694, 04.11.2025), with [task code](ValueSet-task-codes-vs.html), [status](ValueSet-task-status-vs.html), [intent](ValueSet-task-intent-vs.html) and [business status](ValueSet-task-business-status-vs.html) terminology. A warning-level constraint flags unfinished tasks that are past their requested end date but not marked overdue, for SLA monitoring.
+
+Added [UZ Core Group](StructureDefinition-uz-core-group.html) profile for defined collections of entities - screening, vaccination and donation target groups and their outcome cohorts - with [group type](ValueSet-group-type-vs.html), [group kind](ValueSet-group-kind-vs.html), [membership basis](ValueSet-group-membership-basis-vs.html) and [characteristic kind](ValueSet-group-characteristic-kind-vs.html) terminology.
+
+Added the [CVD risk screening questionnaire](Questionnaire-CVDRiskScreeningQuestionnaire.html), an early-detection form for cardiovascular disease risk that calculates its score and risk category from the answers using SDC FHIRPath expressions. The guide now depends on `hl7.fhir.uv.sdc` so those expressions resolve.
+
 #### Terminology and binding changes
 
 The organization type ConceptMaps have been renamed from the MIS2 prefix to SSV, matching the SSV ValueSets they map from: [SSVLevelTypeToSubordinationGroupCM](ConceptMap-ssv-level-type-to-subordination-group-cm.html), [SSVMedicalTypeToOrganizationalStructureCM](ConceptMap-ssv-medical-type-to-organizational-structure-cm.html) and [SSVServiceTypeToOrganizationalServiceGroupCM](ConceptMap-ssv-service-type-to-organizational-service-group-cm.html). The duplicate `mis2-*` ConceptMaps have been removed; implementers should reference the `ssv-*` canonical URLs. The nomenclature group mappings have been split out of SSVMedicalTypeToOrganizationalStructureCM into the new [SSVMedicalTypeToNomenclatureGroupCM](ConceptMap-ssv-medical-type-to-nomenclature-group-cm.html), so that each ConceptMap declares a single source and target scope.
+
+Added SNOMED CT supplements carrying Uzbek and Russian designations for [condition severity](CodeSystem-condition-severity-cs.html), [procedure outcome](CodeSystem-procedure-outcome-cs.html), [reaction type](CodeSystem-reaction-type-cs.html), [goal description](CodeSystem-goal-description-cs.html), [goal start event](CodeSystem-goal-start-event-cs.html) and [socioeconomic observation codes](CodeSystem-socioeconomic-observation-codes-cs.html).
+
+The SNOMED CT value sets now select a hierarchy where one expresses the intent, instead of listing individual codes: [body site](ValueSet-body-site-vs.html) is any body structure, [procedure code](ValueSet-procedure-code-vs.html) any procedure, [target disease](ValueSet-target-disease-vs.html) any disease, [route code](ValueSet-route-code-vs.html) any route of administration, [condition severity](ValueSet-condition-severity-vs.html) any severity, [adverse event outcome](ValueSet-adverse-event-outcome-vs.html) any adverse reaction, and [goal description](ValueSet-goal-description-vs.html), [reaction type](ValueSet-reaction-type-vs.html) and [recommendation reason](ValueSet-recommendation-reason-vs.html) any clinical finding. This widens what these value sets accept compared with 0.6.0. [Procedure outcome](ValueSet-procedure-outcome-vs.html), [socioeconomic observation codes](ValueSet-socioeconomic-observation-codes-vs.html), [goal start event](ValueSet-goal-start-event-vs.html) and [action participant role](ValueSet-action-participant-role-vs.html) keep their explicit code lists, because their concepts share no ancestor narrow enough to select on.
+
+Added a [UCUM units supplement](CodeSystem-ucum-units-supp-cs.html) with Uzbek and Russian translations of the unit displays, surfaced as the [UCUM units value set](ValueSet-ucum-units-supp-vs.html). `permittedUnit` on [UZ Core Laboratory ObservationDefinition](StructureDefinition-uz-core-laboratory-observation-definition.html) is now bound to it (extensible) rather than to the UCUM common units value set, and `permittedDataType` is now bound (required) to the new [laboratory observation value types](ValueSet-permitted-data-type-vs.html) value set.
+
+Added a [laboratory source system units CodeSystem](CodeSystem-lab-units-cs.html) holding the unit strings used by the source laboratory systems, its [value set](ValueSet-lab-units-vs.html), and a [ConceptMap translating them to UCUM](ConceptMap-lab-units-to-ucum-cm.html), so results arriving with local unit strings can be normalised.
+
+The [laboratory panel code system](CodeSystem-lab-pan-cs.html) now declares `kind` and `parent` properties, so a client expanding the observation codes value set can tell panels apart from the analytes reported within them. Language designations on the panel codes were also corrected.
+
+`component.code` on [UZ Core Laboratory ObservationDefinition](StructureDefinition-uz-core-laboratory-observation-definition.html) gained an additional binding for the user interface flow: when a user creates a custom laboratory definition in the Patient Portal, the analyte code must be selected from LOINC. National laboratory panel codes remain reserved for the pre-defined laboratory catalogue.
+
+`method` on [UZ Core Observation](StructureDefinition-uz-core-observation.html) now states its binding strength explicitly as extensible.
+
+[UZ Core Immunization PlanDefinition](StructureDefinition-uz-core-immunization-plan-definition.html) now requires a second `useContext` stating the kind of schedule, bound (extensible) to the new [immunization schedule type](ValueSet-immunization-schedule-type-vs.html) value set. The choice-type slicing on `action.definition[x]` has been removed, because it made the validator reject `definitionCanonical`, and the examples now use `definitionCanonical`.
+
+`participant.actor` on [UZ Core Condition](StructureDefinition-uz-core-condition.html) may now reference [UZ Core Organization](StructureDefinition-uz-core-organization.html).
+
+The UZ Core ActivityDefinition profile has been renamed to [UZ Core VaccinationActivityDefinition](StructureDefinition-uz-core-vaccination-activity-definition.html) and its canonical URL changed from `.../uz-core-activity-definition` to `.../uz-core-vaccination-activity-definition`. Implementers referencing the old canonical must update it.
+
+On [UZ Core Location](StructureDefinition-uz-core-location.html) the tax identifier slice has been removed, and `name` is optional again (0..1), reverting the requirement introduced in 0.6.0.
+
+Added DMED terminology bridges for [administration routes](ConceptMap-dmed-administration-route-to-dhp-sct-cm.html) mapped to the national and SNOMED CT route codes, and expanded the [measurement unit](ConceptMap-dmed-measure-unit-to-dhp-cm.html) and [vaccine code](ConceptMap-dmed-vaccine-to-cvx-cm.html) mappings, with further units added to the [DMED measurement unit code system](CodeSystem-dmed-measure-unit-cs.html).
+
+#### Documentation
+
+Added a [Forms](forms.html) page where any questionnaire published by this guide can be filled in as a working form, in Uzbek, Russian or English, to check the wording, answer options, skip logic and calculated results before implementing it. The page can pre-fill a form with sample answers and links to the underlying QuestionnaireResponse JSON.
+
+The modelling guidelines now require terminology versions to be in SemVer format (`MAJOR.MINOR.PATCH`), because the DHP terminology platform cannot parse other formats, and describe how to encode release identifiers that are not SemVer, such as SNOMED CT's `2026-01`.
 
 ### Version 0.6.0
 

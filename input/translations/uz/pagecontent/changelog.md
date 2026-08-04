@@ -1,8 +1,52 @@
 ### Ishlab chiqish jarayonida
 
+(Hozircha o'zgarishlar yo'q)
+
+### Versiya 0.7.0
+
+#### Yangi profillar
+
+Sug'urta hisob-fakturalari, oldindan avtorizatsiya va oldindan aniqlash uchun, shuningdek ularga qaytariladigan qaror va to'lov javoblari uchun [UZ Core Claim](StructureDefinition-uz-core-claim.html) va [UZ Core Claim Response](StructureDefinition-uz-core-claim-response.html) profillari qo'shildi. Ularni [hisob-faktura turi](ValueSet-claim-type-vs.html), [hisob-faktura maqsadi](ValueSet-claim-use-vs.html) va [moliyaviy boshqaruv holati](ValueSet-fm-status-vs.html) terminologiyasi, shuningdek [javob toifasi](ValueSet-claim-response-category-vs.html), [qaror](ValueSet-claim-response-decision-vs.html) va [natija](ValueSet-claim-response-outcome-vs.html) kodlari qo'llab-quvvatlaydi. [Bekor qilish sababi kengaytmasi](StructureDefinition-claim-response-cancellation-reason.html) javob nima uchun bekor qilinganini qayd etadi - masalan, oldindan avtorizatsiya muddati hisob-faktura yakunlanguncha tugaganda.
+
+Davlat tibbiy sug'urtasi bo'yicha yo'llanma va gospitalizatsiyani tasdiqlash jarayonining bosqichlarini kuzatish uchun [UZ Core Task Referral Approval](StructureDefinition-uz-core-referral-approval-task.html) profili qo'shildi (Vazirlar Mahkamasining 04.11.2025 yildagi 694-son qaroriga 1-ilova), u [vazifa kodlari](ValueSet-task-codes-vs.html), [holat](ValueSet-task-status-vs.html), [maqsad](ValueSet-task-intent-vs.html) va [biznes holati](ValueSet-task-business-status-vs.html) terminologiyasiga ega. Ogohlantirish darajasidagi cheklov so'ralgan muddati o'tgan, ammo kechikkan deb belgilanmagan tugallanmagan vazifalarni aniqlaydi - SLA nazorati uchun.
+
+Skrining, emlash va donorlik maqsadli guruhlari hamda ularning natijaviy kogortalari kabi belgilangan ob'ektlar to'plamlari uchun [UZ Core Group](StructureDefinition-uz-core-group.html) profili qo'shildi, u [guruh turi](ValueSet-group-type-vs.html), [guruh ko'rinishi](ValueSet-group-kind-vs.html), [a'zolik asosi](ValueSet-group-membership-basis-vs.html) va [xususiyat turi](ValueSet-group-characteristic-kind-vs.html) terminologiyasiga ega.
+
+[Yurak-qon tomir kasalliklari xavfi skriningi so'rovnomasi](Questionnaire-CVDRiskScreeningQuestionnaire.html) qo'shildi - bu YQTK xavfini erta aniqlash shakli bo'lib, javoblar asosida SDC FHIRPath ifodalari yordamida ballni va xavf toifasini hisoblab beradi. Ushbu ifodalar hal qilinishi uchun qo'llanma endi `hl7.fhir.uv.sdc` ga bog'liq.
+
 #### Terminologiya va bog'lanish o'zgarishlari
 
-Tashkilot turlari ConceptMap'lari MIS2 prefiksidan SSV prefiksiga o'zgartirildi, chunki ular SSV ValueSet'laridan moslashtiradi: [SSVLevelTypeToSubordinationGroupCM](ConceptMap-ssv-level-type-to-subordination-group-cm.html), [SSVMedicalTypeToOrganizationalStructureCM](ConceptMap-ssv-medical-type-to-organizational-structure-cm.html) va [SSVServiceTypeToOrganizationalServiceGroupCM](ConceptMap-ssv-service-type-to-organizational-service-group-cm.html). Takrorlangan `mis2-*` ConceptMap'lar olib tashlandi; dasturchilar `ssv-*` kanonik URL'laridan foydalanishlari kerak.
+Tashkilot turlari ConceptMap'lari MIS2 prefiksidan SSV prefiksiga o'zgartirildi, chunki ular SSV ValueSet'laridan moslashtiradi: [SSVLevelTypeToSubordinationGroupCM](ConceptMap-ssv-level-type-to-subordination-group-cm.html), [SSVMedicalTypeToOrganizationalStructureCM](ConceptMap-ssv-medical-type-to-organizational-structure-cm.html) va [SSVServiceTypeToOrganizationalServiceGroupCM](ConceptMap-ssv-service-type-to-organizational-service-group-cm.html). Takrorlangan `mis2-*` ConceptMap'lar olib tashlandi; dasturchilar `ssv-*` kanonik URL'laridan foydalanishlari kerak. Nomenklatura guruhlari moslashtirishlari SSVMedicalTypeToOrganizationalStructureCM dan yangi [SSVMedicalTypeToNomenclatureGroupCM](ConceptMap-ssv-medical-type-to-nomenclature-group-cm.html) ga ajratildi, shunda har bir ConceptMap bitta manba va maqsad doirasini e'lon qiladi.
+
+[Holat og'irligi](CodeSystem-condition-severity-cs.html), [muolaja natijasi](CodeSystem-procedure-outcome-cs.html), [reaksiya turi](CodeSystem-reaction-type-cs.html), [maqsad tavsifi](CodeSystem-goal-description-cs.html), [maqsad boshlanish hodisasi](CodeSystem-goal-start-event-cs.html) va [ijtimoiy-iqtisodiy kuzatuv kodlari](CodeSystem-socioeconomic-observation-codes-cs.html) uchun o'zbekcha va ruscha atamalarni saqlovchi SNOMED CT supplement'lari qo'shildi.
+
+SNOMED CT asosidagi ValueSet'lar endi maqsadni ierarxiya yaxshiroq ifodalaydigan joylarda alohida kodlarni sanash o'rniga ierarxiyani tanlaydi: [tana qismi](ValueSet-body-site-vs.html) - har qanday anatomik tuzilma, [muolaja kodi](ValueSet-procedure-code-vs.html) - har qanday muolaja, [maqsadli kasallik](ValueSet-target-disease-vs.html) - har qanday kasallik, [yuborish yo'li kodi](ValueSet-route-code-vs.html) - har qanday yuborish yo'li, [holat og'irligi](ValueSet-condition-severity-vs.html) - har qanday og'irlik darajasi, [nojo'ya hodisa natijasi](ValueSet-adverse-event-outcome-vs.html) - har qanday nojo'ya reaksiya, [maqsad tavsifi](ValueSet-goal-description-vs.html), [reaksiya turi](ValueSet-reaction-type-vs.html) va [tavsiya sababi](ValueSet-recommendation-reason-vs.html) esa - har qanday klinik topilma. Bu 0.6.0 ga nisbatan qabul qilinadigan qiymatlar doirasini kengaytiradi. [Muolaja natijasi](ValueSet-procedure-outcome-vs.html), [ijtimoiy-iqtisodiy kuzatuv kodlari](ValueSet-socioeconomic-observation-codes-vs.html), [maqsad boshlanish hodisasi](ValueSet-goal-start-event-vs.html) va [harakat ishtirokchisi roli](ValueSet-action-participant-role-vs.html) o'zining aniq kodlar ro'yxatini saqlab qoladi, chunki ularning tushunchalari tanlash uchun yetarlicha tor umumiy ajdodga ega emas.
+
+Birlik nomlarining o'zbekcha va ruscha tarjimalari bilan [UCUM birliklari supplement'i](CodeSystem-ucum-units-supp-cs.html) qo'shildi va [UCUM birliklari ValueSet'i](ValueSet-ucum-units-supp-vs.html) sifatida taqdim etildi. [UZ Core Laboratory ObservationDefinition](StructureDefinition-uz-core-laboratory-observation-definition.html) dagi `permittedUnit` endi umumiy UCUM birliklari ValueSet'iga emas, balki unga bog'langan (extensible), `permittedDataType` esa endi yangi [laboratoriya kuzatuvi qiymat turlari](ValueSet-permitted-data-type-vs.html) ValueSet'iga bog'langan (required).
+
+Manba laboratoriya tizimlari ishlatadigan birlik satrlarini saqlovchi [laboratoriya manba tizimlari birliklari CodeSystem'i](CodeSystem-lab-units-cs.html), uning [ValueSet'i](ValueSet-lab-units-vs.html) va ularni UCUM ga [o'giruvchi ConceptMap](ConceptMap-lab-units-to-ucum-cm.html) qo'shildi, shunda mahalliy birlik satrlari bilan keladigan natijalarni normallashtirish mumkin bo'ladi.
+
+[Laboratoriya panellari CodeSystem'i](CodeSystem-lab-pan-cs.html) endi `kind` va `parent` xossalarini e'lon qiladi, shuning uchun kuzatuv kodlari ValueSet'ini kengaytirayotgan mijoz panellarni ular tarkibidagi analitlardan ajrata oladi. Panel kodlaridagi til atamalari ham tuzatildi.
+
+[UZ Core Laboratory ObservationDefinition](StructureDefinition-uz-core-laboratory-observation-definition.html) dagi `component.code` foydalanuvchi interfeysi jarayoni uchun qo'shimcha bog'lanishga ega bo'ldi: foydalanuvchi bemor portalida o'zining laboratoriya ta'rifini yaratganda, analit kodi LOINC dan tanlanishi shart. Milliy laboratoriya panellari kodlari oldindan belgilangan laboratoriya katalogi uchun ajratilgan holicha qoladi.
+
+[UZ Core Observation](StructureDefinition-uz-core-observation.html) dagi `method` endi bog'lanish kuchini extensible sifatida aniq ko'rsatadi.
+
+[UZ Core Immunization PlanDefinition](StructureDefinition-uz-core-immunization-plan-definition.html) endi kalendar turini ko'rsatuvchi ikkinchi `useContext` ni talab qiladi, u yangi [emlash kalendari turi](ValueSet-immunization-schedule-type-vs.html) ValueSet'iga bog'langan (extensible). `action.definition[x]` bo'yicha tur slayslash olib tashlandi, chunki u tufayli validator `definitionCanonical` ni rad etardi, va misollar endi `definitionCanonical` dan foydalanadi.
+
+[UZ Core Condition](StructureDefinition-uz-core-condition.html) dagi `participant.actor` endi [UZ Core Organization](StructureDefinition-uz-core-organization.html) ga havola qila oladi.
+
+UZ Core ActivityDefinition profili [UZ Core VaccinationActivityDefinition](StructureDefinition-uz-core-vaccination-activity-definition.html) deb nomlandi va uning kanonik URL'i `.../uz-core-activity-definition` dan `.../uz-core-vaccination-activity-definition` ga o'zgardi. Eski kanonik URL'ga havola qiluvchi dasturchilar uni yangilashlari kerak.
+
+[UZ Core Location](StructureDefinition-uz-core-location.html) da soliq identifikatori slaysi olib tashlandi va `name` yana ixtiyoriy (0..1) bo'ldi - 0.6.0 da kiritilgan talab bekor qilindi.
+
+Milliy va SNOMED CT yuborish yo'li kodlariga moslashtirilgan [yuborish yo'llari](ConceptMap-dmed-administration-route-to-dhp-sct-cm.html) uchun DMED terminologiya ko'priklari qo'shildi, shuningdek [o'lchov birliklari](ConceptMap-dmed-measure-unit-to-dhp-cm.html) va [vaksina kodlari](ConceptMap-dmed-vaccine-to-cvx-cm.html) moslashtirishlari kengaytirildi; [DMED o'lchov birliklari CodeSystem'iga](CodeSystem-dmed-measure-unit-cs.html) yangi birliklar qo'shildi.
+
+#### Hujjatlashtirish
+
+[Shakllar](forms.html) sahifasi qo'shildi - unda ushbu qo'llanma nashr etadigan har qanday so'rovnomani o'zbek, rus yoki ingliz tilida ishchi shakl sifatida to'ldirib, amalga oshirishdan oldin matn, javob variantlari, o'tish mantig'i va hisoblanadigan natijalarni tekshirish mumkin. Sahifa shaklni namunaviy javoblar bilan to'ldira oladi va hosil bo'lgan QuestionnaireResponse JSON'iga havola beradi.
+
+Modellashtirish bo'yicha qo'llanma endi terminologiya versiyalari SemVer formatida (`MAJOR.MINOR.PATCH`) bo'lishini talab qiladi, chunki DHP terminologiya platformasi boshqa formatlarni tanimaydi, va SemVer bo'lmagan relizlar identifikatorlarini, masalan SNOMED CT dagi `2026-01` ni, qanday kodlashni tavsiflaydi.
 
 ### Versiya 0.6.0
 
