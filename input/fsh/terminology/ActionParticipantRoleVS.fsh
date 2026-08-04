@@ -9,6 +9,6 @@ Description: "Value Set for Action Participant Role"
 
 
 
-* include codes from system $sct  
-// * include $sct#309343006
-// * include $sct#106292003
+// Enumerated to match the supplement, which translates exactly these two roles.
+* include $sct#309343006
+* include $sct#106292003
