@@ -9,9 +9,9 @@ Description: "UZ Core Composition profile, used as a foundation for creating med
 * ^publisher = "Uzinfocom"
 
 * status and type and category and subject and date and author and title and attester and custodian and section MS
-* status from CompositionStatusVS
+* status from CompositionStatusVS (required)
 * type from CompositionTypeVS (required)
-* category from CompositionCategoryVS
+* category from CompositionCategoryVS (extensible)
 
 * subject 0..* MS
   * ^short = "Who and/or what the medical document or digital form is about."
