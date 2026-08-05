@@ -1,0 +1,10 @@
+Code,Name (UZ),Name (RU),Name (EN)
+user,Foydalanuvchi tomonidan tartiblangan,Отсортировано пользователем,Sorted by User
+system,Tizim tomonidan tartiblangan,Отсортировано системой,Sorted by System
+event-date,Hodisa sanasi bo‘yicha tartiblangan,Отсортировано по дате события,Sorted by Event Date
+entry-date,Ro‘yxatga qo‘shilgan sana bo‘yicha tartiblangan,Отсортировано по дате добавления элемента,Sorted by Item Date
+priority,Ustuvorlik bo‘yicha tartiblangan,Отсортировано по приоритету,Sorted by Priority
+alphabetic,Alifbo bo‘yicha tartiblangan,Отсортировано в алфавитном порядке,Sorted Alphabetically
+category,Kategoriya bo‘yicha tartiblangan,Отсортировано по категории,Sorted by Category
+patient,Bemor bo‘yicha guruhlangan tartib,Отсортировано по пациентам,Sorted by Patient
+publication-date,Nashr qilingan sana bo‘yicha tartiblangan,Отсортировано по дате публикации,Sorted by Publication Date
