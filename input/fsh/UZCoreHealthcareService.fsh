@@ -72,7 +72,7 @@ Description: "Uzbekistan Core HealthcareService profile, used to define healthca
 * characteristic contains
     fundingSource 0..* MS
 
-* characteristic[paymentType]
+* characteristic[fundingSource]
   * coding 1..*
   * coding.system 1..1 MS
   * coding.system = Canonical(PaymentTypeCS)
