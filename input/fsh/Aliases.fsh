@@ -204,3 +204,4 @@ Alias: $claim-type = http://terminology.hl7.org/CodeSystem/claim-type
 Alias: $claim-use = http://hl7.org/fhir/claim-use
 // valueset currency
 Alias: $currencies-vs = http://hl7.org/fhir/ValueSet/currencies
+Alias: $coverage-kind = http://hl7.org/fhir/coverage-kind

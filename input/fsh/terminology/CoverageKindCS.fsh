@@ -1,26 +1,23 @@
 CodeSystem: CoverageKindCS
 Id: coverage-kind-cs
-Title: "Coverage Kind Code System"
-Description: "Kind of financing or coverage source for a healthcare service in Uzbekistan"
-* insert OriginalCodeSystemDraft(coverage-kind-cs)
+Title: "Coverage Kind Supplement"
+Description: "Coverage kind supplement with translations in uzbek and russian"
+* insert SupplementCodeSystemDraft(coverage-kind-cs, $coverage-kind, 5.0.0)
 
-* #state-insurance "Davlat sug'urtasi"
-  * ^designation[0].language = #ru
-  * ^designation[=].value = "Государственное страхование"
-  * ^designation[+].language = #en
-  * ^designation[=].value = "State Insurance"
-* #insurance "Sug'urta"
+* #insurance 
   * ^designation[0].language = #ru
   * ^designation[=].value = "Страхование"
-  * ^designation[+].language = #en
-  * ^designation[=].value = "Insurance"
-* #self-pay "Shaxsiy to'lov"
+  * ^designation[+].language = #uz
+  * ^designation[=].value = "Sug'urta"
+
+* #self-pay 
   * ^designation[0].language = #ru
   * ^designation[=].value = "Самооплата"
-  * ^designation[+].language = #en
-  * ^designation[=].value = "Self-pay"
-* #other "Boshqa"
+  * ^designation[+].language = #uz
+  * ^designation[=].value = "Shaxsiy to'lov"
+
+* #other 
   * ^designation[0].language = #ru
   * ^designation[=].value = "Другое"
-  * ^designation[+].language = #en
-  * ^designation[=].value = "Other"
+  * ^designation[+].language = #uz
+  * ^designation[=].value = "Boshqa"
