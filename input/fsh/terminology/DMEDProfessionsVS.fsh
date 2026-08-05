@@ -6,3 +6,4 @@ Description: "Value set containing all position and profession codes from the DM
 * ^experimental = true
 * include codes from system dmed-specialties-cs
 * include codes from system dmed-role-cs
+* include codes from system dmed-specialties-cs
