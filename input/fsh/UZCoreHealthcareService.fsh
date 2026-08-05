@@ -70,9 +70,9 @@ Description: "Uzbekistan Core HealthcareService profile, used to define healthca
 * characteristic ^slicing.ordered = false
 
 * characteristic contains
-    fundingSource 0..* MS
+    paymentType 0..* MS
 
-* characteristic[fundingSource]
+* characteristic[paymentType]
   * coding 1..*
   * coding.system 1..1 MS
   * coding.system = Canonical(PaymentTypeCS)
@@ -89,7 +89,7 @@ Usage: #example
   * code = #cancr0013.00000
 * type.coding[dhpService]
   * code = #cancr0013.00001
-* characteristic[fundingSource]
+* characteristic[paymentType]
   * coding.code = #paytype-0001-0004
 * language = #uz
 * name = "IHC-ga xos"
