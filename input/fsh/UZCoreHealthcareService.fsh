@@ -90,7 +90,7 @@ Usage: #example
 * type.coding[dhpService]
   * code = #cancr0013.00001
 * characteristic[fundingSource]
-  * coding.code = #paytype-0001-0005
+  * coding.code = #paytype-0001-0004
 * language = #uz
 * name = "IHC-ga xos"
   * extension[translation][0]
