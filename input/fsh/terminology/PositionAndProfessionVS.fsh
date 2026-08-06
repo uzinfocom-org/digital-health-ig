@@ -14,6 +14,7 @@ Description: "State classification of positions of employees and worker professi
 // "cannot be checked due to special rules around the code system". Expansion is fine; the
 // expander has the null guard the validator is missing. Restore the extensions once the
 // publisher carries the fix. Do not delete the two supplements in the meantime.
+// Reported as https://github.com/hapifhir/org.hl7.fhir.core/issues/2540
 
 * include codes from system position-and-profession-cs
 * include codes from system position-and-profession-cs-2
