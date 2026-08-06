@@ -1,7 +1,11 @@
 CodeSystem: ScreeningCodeCS
 Id: screening-code-cs
 Title: "Screening and Home Visits Code System"
+<<<<<<< HEAD
 Description: "Category of the requested healthcare service, including screening activities (e.g., breast cancer screening, cervical cancer screening, diabetes screening, etc.) and patronage (home visit) services. This element provides a high-level classification of the requested service type and is used for request routing, workflow processing, interoperability between healthcare information systems, and reporting purposes"
+=======
+Description: "Codes for screening examinations and patronage (home visit) services in Uzbekistan"
+>>>>>>> behzod/General_ServiceRequest
 * insert OriginalCodeSystemDraft(screening-code-cs)
 
 * #mserv-0007-00001 "Yurak ishemik kasalligining testoldi ehtimolini baholash so'rovnomasi"
@@ -98,9 +102,13 @@ Description: "Category of the requested healthcare service, including screening 
   * ^designation[0].language = #ru
   * ^designation[=].value = "Дети (3-6-9-12-18-24-36-48-60 месяцев)"
   * ^designation[+].language = #en
+<<<<<<< HEAD
   * ^designation[=].value = "Children (3–6–9–12–18–24–36–48–60 Months)"
 * #mserv-0007-00020 "Ko'krak bezi saratoni skriningi"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Скрининг по раку молочной железы"
   * ^designation[+].language = #en
   * ^designation[=].value = "Breast Cancer Screening"
+=======
+  * ^designation[=].value = "Children (3–6–9–12–18–24–36–48–60 Months)"
+>>>>>>> behzod/General_ServiceRequest

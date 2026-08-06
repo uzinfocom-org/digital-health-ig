@@ -158,6 +158,7 @@ menu:
     Vital signs: vital-signs.html
   Workflows: workflows.html
   Forms: forms.html
+  Patient instructions: patient-instructions.html
   API access: api-access.html
   Artifacts: artifacts.html
   Components: components.html

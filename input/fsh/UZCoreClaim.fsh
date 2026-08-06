@@ -38,6 +38,11 @@ Description: "Uzbekistan Core Claim profile, used for insurance claims, pre-auth
 * provider ^short = "Party responsible for the claim"
 * provider only Reference(UZCoreOrganization)
 
+* prescription MS
+* prescription ^short = "Refers to the reimbursement prescription."
+// The reference will be changed to UZCoreMedicationRequest after UZCoreMedicationRequest is published in the IG.
+* prescription only Reference(MedicationRequest)
+
 * referral MS
 * referral ^short = "Treatment referral"
 * referral only Reference(ServiceRequest)
