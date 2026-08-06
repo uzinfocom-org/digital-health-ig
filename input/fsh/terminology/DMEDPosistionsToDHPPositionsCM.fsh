@@ -9,10 +9,7 @@ Description: "DMED Position and Professions to DHP Position and Professions Conc
 * experimental = false
 * publisher = "Uzinfocom"
 * sourceScopeCanonical = Canonical(DMEDProfessionsVS)
-// * targetScopeCanonical = Canonical(PositionAndProfessionVS)
-// targetScopeCanonical removed to avoid unnecessary validator warnings.
-// Validation is performed against each group's target ValueSet instead of the
-// combined PositionAndProfessionVS, which includes SNOMED CT ($sct).
+* targetScopeCanonical = Canonical(PositionAndProfessionVS)
 
 // Group 1: DMEDProfessionsCS to PositionAndProfessionCS
 * group[+].source = Canonical(DMEDProfessionsCS)
@@ -1979,30 +1976,30 @@ Description: "DMED Position and Professions to DHP Position and Professions Conc
 
 // Group 4: DMEDRoleCS to RoleCodesCS
 * group[+].source = Canonical(DMEDRoleCS)
-* group[=].target = Canonical(RoleCodeCS)
+* group[=].target = $v3-RoleCode
 
 * group[=].element[+].code = #insurance-fund-administrator
 * group[=].element[=].display = "Sug'urta fondi administratori"
 * group[=].element[=].target[+].code = #TPA
-* group[=].element[=].target[=].display = "Uchinchi tomon administratori"
+* group[=].element[=].target[=].display = "Third party administrator" // uz: Uchinchi tomon administratori
 * group[=].element[=].target[=].relationship = #source-is-broader-than-target
 
 * group[=].element[+].code = #insurance-fund-employee
 * group[=].element[=].display = "Sug'urta fondi xodimi"
 * group[=].element[=].target[+].code = #PAYOR
-* group[=].element[=].target[=].display = "To'lovchi bilan bog'lanish"
+* group[=].element[=].target[=].display = "Payor Contact" // uz: To'lovchi bilan bog'lanish
 * group[=].element[=].target[=].relationship = #source-is-broader-than-target
 
 * group[=].element[+].code = #department-employee
 * group[=].element[=].display = "Departament xodimi"
 * group[=].element[=].target[+].code = #ORG
-* group[=].element[=].target[=].display = "Tashkiliy aloqa"
+* group[=].element[=].target[=].display = "organizational contact" // uz: Tashkiliy aloqa
 * group[=].element[=].target[=].relationship = #source-is-broader-than-target
 
 * group[=].element[+].code = #moderator
 * group[=].element[=].display = "Moderator"
 * group[=].element[=].target[+].code = #VALIDATOR
-* group[=].element[=].target[=].display = "Yozuvga kiritish uchun ma'lumotni tasdiqlash vakolatiga ega bo'lgan tashkilot"
+* group[=].element[=].target[=].display = "validator" // uz: Yozuvga kiritish uchun ma'lumotni tasdiqlash vakolatiga ega bo'lgan tashkilot
 * group[=].element[=].target[=].relationship = #source-is-broader-than-target
 
 // Group 5: DMED patient role to HL7 v3 RoleClass
@@ -2017,7 +2014,7 @@ Description: "DMED Position and Professions to DHP Position and Professions Conc
 
 // Group 6: DMEDRoleCS to Supplement DMEDPositionSctCS
 * group[+].source = Canonical(DMEDRoleCS)
-* group[=].target = Canonical(DMEDPositionSctCS)
+* group[=].target = $sct
     
 * group[=].element[+].code = #district-health-department
 * group[=].element[=].display = "Tuman sog'liqni saqlash bo'limi"
@@ -2066,7 +2063,7 @@ Description: "DMED Position and Professions to DHP Position and Professions Conc
 // Splitting them into separate ConceptMaps would require two requests,  two cached resources, and separate processing.
 // Group 7: DMEDProfessionsCS to Supplement SNOMED codes 
 * group[+].source = Canonical(DMEDProfessionsCS)
-* group[=].target = Canonical(DMEDPositionSctCS)
+* group[=].target = $sct
 
 * group[=].element[+].code = #370
 * group[=].element[=].display = "Statsionar shifokori" // ru: Стационарный врач
