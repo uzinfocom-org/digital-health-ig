@@ -22,8 +22,8 @@ Description: "List of payment types used in Uzbekistan healthcare system"
   * ^designation[+].language = #en
   * ^designation[=].value = "Insurance"
 
-* #paytype-0001-0004 "Davlat tomonidan moliyalashtiriladigan"
+* #paytype-0001-0004 "Davlat tarifi"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Финансируется государством"
+  * ^designation[=].value = "Государственный тариф"
   * ^designation[+].language = #en
-  * ^designation[=].value = "State-funded"
+  * ^designation[=].value = "State tariff"
