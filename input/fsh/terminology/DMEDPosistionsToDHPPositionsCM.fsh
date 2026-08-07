@@ -1817,3 +1817,286 @@ Description: "DMED Position and Professions to DHP Position and Professions Conc
 * group[=].element[=].target[+].code = #3221.2
 * group[=].element[=].target[=].display = "Tibbiyot hamshirasi"
 * group[=].element[=].target[=].relationship = #equivalent
+
+* group[=].element[+].code = #admin
+* group[=].element[=].display = "Administrator"
+* group[=].element[=].target[+].code = #3341.1
+* group[=].element[=].target[=].display = "Ma'mur"
+* group[=].element[=].target[=].relationship = #equivalent
+
+* group[=].element[+].code = #consultant
+* group[=].element[=].display = "Konsultant"
+* group[=].element[=].target[+].code = #2149.86
+* group[=].element[=].target[=].display = "Maslahatchi"
+* group[=].element[=].target[=].relationship = #equivalent
+
+* group[=].element[+].code = #head_nurse
+* group[=].element[=].display = "Katta hamshira"
+* group[=].element[=].target[+].code = #3221.17
+* group[=].element[=].target[=].display = "Katta hamshira"
+* group[=].element[=].target[=].relationship = #equivalent
+
+* group[=].element[+].code = #warehouse
+* group[=].element[=].display = "Ombor xodimi"
+* group[=].element[=].target[+].code = #4321.3
+* group[=].element[=].target[=].display = "Omborchi"
+* group[=].element[=].target[=].relationship = #equivalent
+
+* group[=].element[+].code = #accountant
+* group[=].element[=].display = "Buxgalter"
+* group[=].element[=].target[+].code = #2411.2
+* group[=].element[=].target[=].display = "Buxgalter"
+* group[=].element[=].target[=].relationship = #equivalent
+
+* group[=].element[+].code = #registry
+* group[=].element[=].display = "Registratura"
+* group[=].element[=].target[+].code = #3252.2
+* group[=].element[=].target[=].display = "Tibbiy ro'yxatdan o'tkazuvchi"
+* group[=].element[=].target[=].relationship = #equivalent
+
+* group[=].element[+].code = #pharmacist
+* group[=].element[=].display = "Farmatsevt"
+* group[=].element[=].target[+].code = #2262.13
+* group[=].element[=].target[=].display = "Farmatsevt"
+* group[=].element[=].target[=].relationship = #equivalent
+
+* group[=].element[+].code = #minister
+* group[=].element[=].display = "Vazir"
+* group[=].element[=].target[+].code = #1112.122
+* group[=].element[=].target[=].display = "O'zbekiston Respublikasi vaziri"
+* group[=].element[=].target[=].relationship = #source-is-broader-than-target
+
+* group[=].element[+].code = #cashier
+* group[=].element[=].display = "Kassir"
+* group[=].element[=].target[+].code = #4211.6
+* group[=].element[=].target[=].display = "Kassir"
+* group[=].element[=].target[=].relationship = #equivalent
+
+* group[=].element[+].code = #prescription-reviewer
+* group[=].element[=].display = "Retseptlarni ko'rib chiquvchi"
+* group[=].element[=].target[+].code = #2262.9
+* group[=].element[=].target[=].display = "Retsept bo'yicha provizor"
+* group[=].element[=].target[=].relationship = #related-to
+
+* group[=].element[+].code = #head-laboratory
+* group[=].element[=].display = "Laboratoriya mudiri"
+* group[=].element[=].target[+].code = #1345.14
+* group[=].element[=].target[=].display = "Laboratoriya mudiri"
+* group[=].element[=].target[=].relationship = #equivalent
+
+* group[=].element[+].code = #statistician
+* group[=].element[=].display = "Statistik"
+* group[=].element[=].target[+].code = #3252.4
+* group[=].element[=].target[=].display = "Tibbiy statistika"
+* group[=].element[=].target[=].relationship = #equivalent
+
+* group[=].element[+].code = #laboratory-reader
+* group[=].element[=].display = "Shifokor-laborant"
+* group[=].element[=].target[+].code = #2212.54
+* group[=].element[=].target[=].display = "Klinik va biokimyoviy/ immunobiologik/ immunoferment/ serologik / PTsR-diagnostik va boshqa laboratoriyalar laboranti"
+* group[=].element[=].target[=].relationship = #source-is-broader-than-target
+
+* group[=].element[+].code = #ministry-statistician
+* group[=].element[=].display = "Vazirlik statistigi"
+* group[=].element[=].target[+].code = #2120.12
+* group[=].element[=].target[=].display = "Statistik" 
+* group[=].element[=].target[=].relationship = #equivalent
+
+* group[=].element[+].code = #sterilization_worker
+* group[=].element[=].display = "Markazlashtirilgan sterilizatsiya bo'limi xodimi"
+* group[=].element[=].target[+].code = #3221.7
+* group[=].element[=].target[=].display = "Sterilizatsiya bo'limi hamshirasi"
+* group[=].element[=].target[=].relationship = #related-to
+
+* group[=].element[+].code = #laboratory-registrar
+* group[=].element[=].display = "Laboratoriya registratori"
+* group[=].element[=].target[+].code = #3252.2
+* group[=].element[=].target[=].display = "Tibbiy ro'yxatdan o'tkazuvchi"
+* group[=].element[=].target[=].relationship = #source-is-narrower-than-target
+
+* group[=].element[+].code = #district-dermatology
+* group[=].element[=].display = "Dermatolog shifokor"
+* group[=].element[=].target[+].code = #2212.17
+* group[=].element[=].target[=].display = "Vrach dermatovenerolog"
+* group[=].element[=].target[=].relationship = #equivalent
+
+* group[=].element[+].code = #super-admin
+* group[=].element[=].display = "Katta administrator"
+* group[=].element[=].target[+].code = #1211.45
+* group[=].element[=].target[=].display = "Katta ma'mur"
+* group[=].element[=].target[=].relationship = #equivalent
+
+* group[=].element[+].code = #deputy_warehouse
+* group[=].element[=].display = "Ombor menejeri"
+* group[=].element[=].target[+].code = #1311.94
+* group[=].element[=].target[=].display = "Quyi ombor boshlig'i"
+* group[=].element[=].target[=].relationship = #equivalent
+
+* group[=].element[+].code = #ops_center
+* group[=].element[=].display = "Operatsion markaz"
+* group[=].element[=].target[+].code = #2164.6
+* group[=].element[=].target[=].display = "Dispetcherlik xizmatini boshqarish dispetcheri"
+* group[=].element[=].target[=].relationship = #equivalent
+
+* group[=].element[+].code = #bi_admin
+* group[=].element[=].display = "BI administrator"
+* group[=].element[=].target[+].code = #1330.17
+* group[=].element[=].target[=].display = "Аxborot texnologiyalari bo'yicha menejer"
+* group[=].element[=].target[=].relationship = #equivalent
+
+* group[=].element[+].code = #bi_viewer
+* group[=].element[=].display = "BI ko'rish"
+* group[=].element[=].target[+].code = #2153.47
+* group[=].element[=].target[=].display = "Аxborot xizmatlari texnologi (faoliyat turi bo'yicha)"
+* group[=].element[=].target[=].relationship = #equivalent
+
+* group[=].element[+].code = #bi_tester
+* group[=].element[=].display = "BI testerchi"
+* group[=].element[=].target[+].code = #2529.14
+* group[=].element[=].target[=].display = "Аxborot texnologiyalar sohasida testlovchi mutaxassis (testlovchi)"
+* group[=].element[=].target[=].relationship = #equivalent
+
+* group[=].element[+].code = #bi_ceo
+* group[=].element[=].display = "BI direktor"
+* group[=].element[=].target[+].code = #1330.14
+* group[=].element[=].target[=].display = "Аxborot-texnologiyalari bo'yicha direktor"
+* group[=].element[=].target[=].relationship = #equivalent
+
+* group[=].element[+].code = #bi_security_department
+* group[=].element[=].display = "BI xavfsizlik"
+* group[=].element[=].target[+].code = #5414
+* group[=].element[=].target[=].display = "Qo'riqchilar"
+* group[=].element[=].target[=].relationship = #equivalent
+
+* group[=].element[+].code = #tech-support-specialist
+* group[=].element[=].display = "Texnik yordam mutaxassisi"
+* group[=].element[=].target[+].code = #2529.12
+* group[=].element[=].target[=].display = "Аxborot texnologiyalari mutaxassisi"
+* group[=].element[=].target[=].relationship = #related-to
+
+// Group 4: DMEDRoleCS to RoleCodesCS
+* group[+].source = Canonical(DMEDRoleCS)
+* group[=].target = $v3-RoleCode
+
+* group[=].element[+].code = #insurance-fund-administrator
+* group[=].element[=].display = "Sug'urta fondi administratori"
+* group[=].element[=].target[+].code = #TPA
+* group[=].element[=].target[=].display = "Third party administrator" // uz: Uchinchi tomon administratori
+* group[=].element[=].target[=].relationship = #source-is-broader-than-target
+
+* group[=].element[+].code = #insurance-fund-employee
+* group[=].element[=].display = "Sug'urta fondi xodimi"
+* group[=].element[=].target[+].code = #PAYOR
+* group[=].element[=].target[=].display = "Payor Contact" // uz: To'lovchi bilan bog'lanish
+* group[=].element[=].target[=].relationship = #source-is-broader-than-target
+
+* group[=].element[+].code = #department-employee
+* group[=].element[=].display = "Departament xodimi"
+* group[=].element[=].target[+].code = #ORG
+* group[=].element[=].target[=].display = "organizational contact" // uz: Tashkiliy aloqa
+* group[=].element[=].target[=].relationship = #source-is-broader-than-target
+
+* group[=].element[+].code = #moderator
+* group[=].element[=].display = "Moderator"
+* group[=].element[=].target[+].code = #VALIDATOR
+* group[=].element[=].target[=].display = "validator" // uz: Yozuvga kiritish uchun ma'lumotni tasdiqlash vakolatiga ega bo'lgan tashkilot
+* group[=].element[=].target[=].relationship = #source-is-broader-than-target
+
+// Group 5: DMED patient role to HL7 v3 RoleClass
+* group[+].source = Canonical(DMEDRoleCS)
+* group[=].target = $v3-RoleClass
+
+* group[=].element[+].code = #patient
+* group[=].element[=].display = "Bemor"
+* group[=].element[=].target[+].code = #PAT
+* group[=].element[=].target[=].display = "patient"
+* group[=].element[=].target[=].relationship = #equivalent
+
+// Group 6: DMEDRoleCS to Supplement DMEDPositionSctCS
+* group[+].source = Canonical(DMEDRoleCS)
+* group[=].target = $sct
+    
+* group[=].element[+].code = #district-health-department
+* group[=].element[=].display = "Tuman sog'liqni saqlash bo'limi"
+* group[=].element[=].target[+].code = #224577009
+* group[=].element[=].target[=].display = "Healthcare Assistant"
+* group[=].element[=].target[=].relationship = #source-is-broader-than-target
+
+* group[=].element[+].code = #city-health-department
+* group[=].element[=].display = "Shahar sog'liqni saqlash bo'limi"
+* group[=].element[=].target[+].code = #224577009
+* group[=].element[=].target[=].display = "Healthcare Assistant"
+* group[=].element[=].target[=].relationship = #source-is-broader-than-target
+
+* group[=].element[+].code = #private-doctor
+* group[=].element[=].display = "Xususiy klinika shifokori"
+* group[=].element[=].target[+].code = #158965000
+* group[=].element[=].target[=].display = "Medical practitioner"
+* group[=].element[=].target[=].relationship = #source-is-broader-than-target
+
+* group[=].element[+].code = #private-clinic-doctor
+* group[=].element[=].display = "Xususiy klinika shifokori (VN)"
+* group[=].element[=].target[+].code = #158965000
+* group[=].element[=].target[=].display = "Medical practitioner"
+* group[=].element[=].target[=].relationship = #source-is-broader-than-target
+
+* group[=].element[+].code = #ministry-health-department
+* group[=].element[=].display = "Sog'liqni saqlash vazirligi"
+* group[=].element[=].target[+].code = #24794006
+* group[=].element[=].target[=].display = "Government administrator"
+* group[=].element[=].target[=].relationship = #source-is-broader-than-target
+
+* group[=].element[+].code = #family-doctor
+* group[=].element[=].display = "Oilaviy shifokor"
+* group[=].element[=].target[+].code = #446050000
+* group[=].element[=].target[=].display = "Primary care physician"
+* group[=].element[=].target[=].relationship = #source-is-narrower-than-target
+
+* group[=].element[+].code = #pharm-regulator
+* group[=].element[=].display = "Farm-nazorat"
+* group[=].element[=].target[+].code = #1255514008
+* group[=].element[=].target[=].display = "Regulatory affairs pharmacist"
+* group[=].element[=].target[=].relationship = #source-is-narrower-than-target
+
+// DMED-to-DHP and DMED-to-SNOMED position mappings are intentionally kept in a single ConceptMap. 
+// Cyclone periodically fetches and caches this resource, then iterates over its mappings to build the SSO endpoint response. 
+// Splitting them into separate ConceptMaps would require two requests,  two cached resources, and separate processing.
+// Group 7: DMEDProfessionsCS to Supplement SNOMED codes 
+* group[+].source = Canonical(DMEDProfessionsCS)
+* group[=].target = $sct
+
+* group[=].element[+].code = #370
+* group[=].element[=].display = "Statsionar shifokori" // ru: Стационарный врач
+* group[=].element[=].target[+].code = #405279007
+* group[=].element[=].target[=].display = "Attending physician"
+* group[=].element[=].target[=].relationship = #source-is-narrower-than-target
+
+* group[=].element[+].code = #445
+* group[=].element[=].display = "Gistolog" // ru: Гистолог
+* group[=].element[=].target[+].code = #159143006
+* group[=].element[=].target[=].display = "Histologist"
+* group[=].element[=].target[=].relationship = #equivalent
+
+* group[=].element[+].code = #1066
+* group[=].element[=].display = "Neyroreabilitolog" // ru: Нейрореабилитолог
+* group[=].element[=].target[+].code = #25855006
+* group[=].element[=].target[=].display = "Neurological rehabilitation"
+* group[=].element[=].target[=].relationship = #related-to
+
+* group[=].element[+].code = #396
+* group[=].element[=].display = "Bolalar KBB (otolaringolog)" // ru: Детский ЛОР (Отоларинголог)
+* group[=].element[=].target[+].code = #309372007
+* group[=].element[=].target[=].display = "Ear, nose and throat surgeon"
+* group[=].element[=].target[=].relationship = #equivalent
+
+* group[=].element[+].code = #433
+* group[=].element[=].display = "Dopplerografiya" // ru: Допплерография
+* group[=].element[=].target[+].code = #431488007
+* group[=].element[=].target[=].display = "Doppler ultrasound of myocardium for tissue strain rate"
+* group[=].element[=].target[=].relationship = #equivalent
+
+* group[=].element[+].code = #413
+* group[=].element[=].display = "Kunduzgi shifoxona shifokori" // ru: Врач дневного стационара
+* group[=].element[=].target[+].code = #405279007
+* group[=].element[=].target[=].display = "Attending physician"
+* group[=].element[=].target[=].relationship = #source-is-narrower-than-target

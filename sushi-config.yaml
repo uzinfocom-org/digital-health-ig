@@ -21,6 +21,8 @@ publisher:
   email: info@ssv.uz
 
 dependencies:
+  # HL7 Terminology — v3-RoleCode, v3-RoleClass va boshqa THO terminologiyalari
+  hl7.terminology.r5: 7.3.0
   # while we don't strictly needs this, this helps resolve the DICOM supplement correctly until tx.fhir.org can do this
   fhir.dicom:
     id: fhir_dicom
