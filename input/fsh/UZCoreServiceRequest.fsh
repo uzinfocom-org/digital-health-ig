@@ -85,7 +85,7 @@ Description: "Example ServiceRequest instance for UZCore."
 //* supportingInfo[0] = Reference(UZCoreServiceRequest/uz-servicerequest-supporting-01)
 
 * extension[paymentType].valueCodeableConcept = payment-type-cs#paytype-0001-0001 "Free"
-* extension[coverageKind].valueCodeableConcept = coverage-kind-cs#state-insurance "State Insurance"
+* extension[coverageKind].valueCodeableConcept = state-insurance-cs#state-insurance "State Insurance"
 
 * specimen[0] = Reference(Specimen/example-specimen-blood-cbc)
 * note[0].text = "Please perform CBC urgently."
