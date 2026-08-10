@@ -54,9 +54,9 @@ Modellashtirish bo'yicha qo'llanma endi terminologiya versiyalari SemVer formati
 
 Laboratoriya va diagnostika hisobotlari uchun [UZ Core DiagnosticReport](StructureDefinition-uz-core-diagnostic-report.html) profili qo'shildi, [xizmat toifasi](ValueSet-diagnostic-report-service-category-vs.html), [holat](ValueSet-diagnostic-report-status-vs.html) va [hisobot turlari](ValueSet-lab-report-types-vs.html) uchun tegishli terminologiya bilan birga.
 
-Laboratoriya tahlillari va panellarini buyurtma qilish uchun [UZ Core ServiceRequest Laboratory](StructureDefinition-uz-core-servicerequest-laboratory.html) profili qo'shildi, jumladan [to'lov turi](ValueSet-payment-type-vs.html) va [so'rov holati](ValueSet-service-request-status-vs.html) terminologiyasi bilan.
+Muolajalar, diagnostik tekshiruvlar yoki tekshiruvlar panelini buyurtma qilish uchun [UZ Core ServiceRequest](StructureDefinition-uz-core-servicerequest.html) profili qo'shildi, jumladan [to'lov turi](ValueSet-payment-type-vs.html) va [so'rov holati](ValueSet-service-request-status-vs.html) terminologiyasi bilan.
 
-Klinik namunalar uchun [UZ Core Specimen](StructureDefinition-uz-core-specimen.html) profili qo'shildi, [yig'ish usuli](ValueSet-specimen-collection-method-vs.html), [namuna turi](ValueSet-specimen-types-vs.html), [rol](ValueSet-specimen-role-vs.html) va [holat](ValueSet-specimen-status-vs.html) terminologiyasi bilan birga. U laboratoriya ServiceRequest va DiagnosticReport profillaridan havola qilinadi.
+Klinik namunalar uchun [UZ Core Specimen](StructureDefinition-uz-core-specimen.html) profili qo'shildi, [yig'ish usuli](ValueSet-specimen-collection-method-vs.html), [namuna turi](ValueSet-specimen-types-vs.html), [rol](ValueSet-specimen-role-vs.html) va [holat](ValueSet-specimen-status-vs.html) terminologiyasi bilan birga. U ServiceRequest va DiagnosticReport profillaridan havola qilinadi.
 
 Tizimlar laboratoriya tahlillari ta'riflarini - ruxsat etilgan o'lchov birliklari, o'lchash usullari va jinsga xos referens diapazonlarini - Bemor portali va integratsiyalashayotgan tizimlar uchun e'lon qila olishi maqsadida [UZ Core Laboratory ObservationDefinition](StructureDefinition-uz-core-laboratory-observation-definition.html) profili qo'shildi.
 

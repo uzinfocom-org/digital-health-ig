@@ -194,6 +194,8 @@ Alias: $observation-range-category-vs = https://terminology.dhp.uz/fhir/core/Val
 Alias: $task-status = http://hl7.org/fhir/task-status
 Alias: $task-intent = http://hl7.org/fhir/task-intent
 
+Alias: $permitted-data-type = http://hl7.org/fhir/permitted-data-type
+
 Alias: $claim-response-category = http://terminology.hl7.org/CodeSystem/adjudication
 Alias: $claim-response-outcome = http://hl7.org/fhir/claim-outcome
 Alias: $claim-response-decision = http://hl7.org/fhir/claim-decision
@@ -209,3 +211,6 @@ Alias: $composition-list-empty-reason = http://terminology.hl7.org/CodeSystem/li
 Alias: $composition-status = http://hl7.org/fhir/composition-status
 Alias: $composition-narrative-status = http://hl7.org/fhir/narrative-status
 Alias: $composition-list-order = http://terminology.hl7.org/CodeSystem/list-order
+Alias: $service-request-intent = http://hl7.org/fhir/request-intent
+
+Alias: $coverage-kind = http://hl7.org/fhir/coverage-kind
