@@ -21,9 +21,6 @@ The ImplementationGuide uses package hl7.fhir.uv.sdc#3.0.0 released on 2022-03-0
 Resource has a language (uz), and the XHTML has a lang (en), but they differ
 Resource has a language (ru), and the XHTML has a lang (en), but they differ
 
-# Publisher bug with new .ai.html pages, can be ignored
-The link%
-
 # Publisher issue where codesystems and valuesets can no longer share the same name
 There are multiple resources with the same title%
 
