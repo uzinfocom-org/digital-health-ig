@@ -173,7 +173,7 @@ Description: "Example for CVD Risk Screening Questionnaire"
   * type = #coding
   * required = true
 
-  * answerOption[+].valueCoding = $cvd-tobacco-use-cs#not-use "Iste'mol qilmaydi"
+  * answerOption[+].valueCoding = $cvd-tobacco-use-cs#scrn-0073-00001 "Iste'mol qilmaydi"
   * answerOption[=].valueCoding.display.extension[$translation-extension][+]
     * extension[lang].valueCode = #ru
     * extension[content].valueString = "Не употребляет"
@@ -181,7 +181,7 @@ Description: "Example for CVD Risk Screening Questionnaire"
     * extension[lang].valueCode = #en
     * extension[content].valueString = "Does not use"
 
-  * answerOption[+].valueCoding = $cvd-tobacco-use-cs#use "Iste'mol qiladi"
+  * answerOption[+].valueCoding = $cvd-tobacco-use-cs#scrn-0073-00002 "Iste'mol qiladi"
   * answerOption[=].valueCoding.display.extension[$translation-extension][+]
     * extension[lang].valueCode = #ru
     * extension[content].valueString = "Употребляет"
@@ -189,7 +189,7 @@ Description: "Example for CVD Risk Screening Questionnaire"
     * extension[lang].valueCode = #en
     * extension[content].valueString = "Uses"
 
-  * answerOption[+].valueCoding = $cvd-tobacco-use-cs#quit "Tashlagan"
+  * answerOption[+].valueCoding = $cvd-tobacco-use-cs#scrn-0073-00003 "Tashlagan"
   * answerOption[=].valueCoding.display.extension[$translation-extension][+]
     * extension[lang].valueCode = #ru
     * extension[content].valueString = "Бросил"
@@ -249,7 +249,7 @@ Description: "Example for CVD Risk Screening Questionnaire"
   * extension[$variable][=].valueExpression.expression = "iif(%sexcode = 'male', 0, iif(%sexcode = 'female', 1, {}))"
   * extension[$variable][+].valueExpression.name = #smkIdx
   * extension[$variable][=].valueExpression.language = #"text/fhirpath"
-  * extension[$variable][=].valueExpression.expression = "iif(%smk = 'use', 1, 0)"
+  * extension[$variable][=].valueExpression.expression = "iif(%smk = 'scrn-0073-00002', 1, 0)"
   * extension[$variable][+].valueExpression.name = #idx
   * extension[$variable][=].valueExpression.language = #"text/fhirpath"
   * extension[$variable][=].valueExpression.expression = "((((%sexIdx * 2 + %smkIdx) * 7 + %ageIdx) * 5 + %sbpIdx) * 5 + %bmiIdx)"
@@ -402,3 +402,56 @@ Description: "Example for CVD Risk Screening Questionnaire"
     * enableWhen[+].question = "cvd-risk-score"
     * enableWhen[=].operator = #>=
     * enableWhen[=].answerInteger = 20
+
+Instance: example-cvd-risk-screening-questionnaire-response
+InstanceOf: UZCoreQuestionnaireResponse
+Usage: #example
+Title: "Yurak-qon tomir kasalliklari xavfi skriningiga javob namunasi"
+Description: "Bemorning yurak-qon tomir kasalliklari xavfini erta aniqlash skriningiga to'ldirilgan javob namunasi"
+* questionnaire = Canonical(CVDRiskScreeningQuestionnaire)
+* status = #completed
+* subject = Reference(example-salim)
+* authored = "2026-07-01T14:30:00+05:00"
+* language = #uz
+
+* item[+]
+  * linkId = "age"
+  * answer[+].valueInteger = 55
+
+* item[+]
+  * linkId = "sex"
+  * answer[+].valueCoding = $administrative-gender#male "Male"
+
+* item[+]
+  * linkId = "weight"
+  * answer[+].valueDecimal = 82
+
+* item[+]
+  * linkId = "height"
+  * answer[+].valueDecimal = 175
+
+* item[+]
+  * linkId = "bmi"
+  * answer[+].valueDecimal = 26.8
+
+* item[+]
+  * linkId = "systolic-bp"
+  * answer[+].valueDecimal = 145
+
+* item[+]
+  * linkId = "diastolic-bp"
+  * answer[+].valueDecimal = 90
+
+* item[+]
+  * linkId = "tobacco-use"
+  * answer[+].valueCoding = $cvd-tobacco-use-cs#scrn-0073-00002 "Iste'mol qiladi"
+
+* item[+]
+  * linkId = "cvd-risk-result"
+  * item[+]
+    * linkId = "cvd-risk-score"
+    * answer[+].valueInteger = 23
+  * item[+]
+    * linkId = "cvd-risk-category"
+    * answer[+].valueCoding = $cvd-risk-category-cs#high "Yuqori xavf (20% - <30%)"
+

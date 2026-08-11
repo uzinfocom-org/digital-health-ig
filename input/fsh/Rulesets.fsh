@@ -176,3 +176,19 @@ RuleSet: SupplementCodeSystemOid(id, oid, version)
 * ^language = #en
 * ^experimental = false
 
+RuleSet: yes-no-options-uz
+* answerOption[+].valueCoding = $fertility-questionnaire-cs#Y "Yes"
+* answerOption[=].valueCoding.display.extension[$translation-extension][+]
+  * extension[lang].valueCode = #ru
+  * extension[content].valueString = "Да"
+* answerOption[=].valueCoding.display.extension[$translation-extension][+]
+  * extension[lang].valueCode = #en
+  * extension[content].valueString = "Yes"
+* answerOption[+].valueCoding = $fertility-questionnaire-cs#N "No"
+* answerOption[=].valueCoding.display.extension[$translation-extension][+]
+  * extension[lang].valueCode = #ru
+  * extension[content].valueString = "Нет"
+* answerOption[=].valueCoding.display.extension[$translation-extension][+]
+  * extension[lang].valueCode = #en
+  * extension[content].valueString = "No"
+
