@@ -1,0 +1,101 @@
+Name	Unnamed: 1	Unnamed: 2	Unnamed: 3	Flags	Unnamed: 5	Cardinality	Document	Type	Description & Constraints	example 1	Unnamed: 11	ValueSets	Unnamed: 13	Unnamed: 14
+MedicationRequest				TU				DomainResource	Заказ лекарств для пациента или группы			System	Code	Display
+identifier												ValueSet/identifier-use	все коды	вид использования идентификатора
+identifier				S	SD	0..*		Identifier	Идентификатор заказа или рецепта			ValueSet/IdentifierType	все коды	Код типа идентификатора
+	use				S	0..1		code	"Определяет вид использования идентификатора (официальный, вторичный, временный, старый, обычный)
+Binding: https://terminology.dhp.uz/fhir/core/ValueSet/identifier-use (required)"	official		ValueSet/medicationrequest-status	все коды	Статус запроса
+	type			Σ S	S	0..1		CodeableConcept	"Код типа идентификатора
+Binding: https://terminology.dhp.uz/fhir/core/ValueSet/IdentifierType (required)"	PLAC		ValueSet/medicationrequest-intent	все коды	Цель заказа
+	value			Σ C	S	0..1		string	Значение идентификатора 	12345678		ValueSet/medicationrequest-admin-location	все коды	Категория места приема лекарства
+status				Σ S	S	1..1		code	"Статус запроса
+Binding: https://terminology.dhp.uz/ValueSet/medicationrequest-status (required)"	active		ValueSet/Medication Codes	все коды	Наименование медикаментов
+statusReason 					S	0..1		CodeableConcept	"Причина текущего статуса
+Binding: https://terminology.dhp.uz/fhir/core/ValueSet/medicationrequest-statusReason (required)
+NOTE: В системе DMED (MIS) этот процесс вводится вручную врачами и фармацевтами."			ValuSet/Route Codes SNOMED 	все коды	Cпособ введения
+statusChanged					S	0..1		dateTime	Когда статус был изменен			ValuSet/Route Codes Local	все коды	Cпособ введения
+intent				Σ S	S	1..1		code	"Цель заказа
+Binding: https://terminology.dhp.uz/fhir/core/ValueSet/medicationrequest-intent (required)"	order		ValueSet/UnitsOfTime	все коды	Единицы времени приема
+category				Σ S	S	1..*		CodeableConcept	"Категория места приема лекарства
+Binding: https://terminology.dhp.uz/fhir/core/ValueSet/medicationrequest-admin-location (required)"	outpatient				
+medication				Σ S	S	1..1		"CodeableReference
+(Medication)"	"Лекарства, которые необходимо принять. При назначении лекарственного препарата сложного состава врач укажет его торговое название. В других случаях используется международное непатентованное название.  
+Binding: https://terminology.dhp.uz/fhir/core/ValueSet/fhir/core/Medication Codes (required)  It is used when it is not a reference to medication.
+Mapping: Medication.code.coding (МНН)  or Medication.code.text (Торговое наименование)"	авитриптан		ValueSet/Days of Weeks		Дни недели
+subject 					S	1..1		Referance(Patient)	Лицо, для которого выписывается рецепт. 			ValueSet/timing-abbreviation		Использование времени приема лекарств 
+informationSource					S	0..*		Reference(Patient | Practitioner | PractitionerRole | RelatedPerson | Organization)	Используется для указания источника информации о заказе препарата. То есть, указывается, кто или какой источник предоставил информацию об этом препарате.					
+extension:trustee				S	S	0..*		Extension	"Доверенное лицо {Патронажная медсестра | Родственник}
+"					
+	url			SΣ	S	1..1		uri	"Элементы, определенные в Ancestors: id, extension 
+определяет значение расширения"	dmed.uz				
+	valueReferance			SΣC	S	0..1		Referance (RelatedPerson | PractitionerRole )	     	Ruslan Isakhov (Father)		ValueSet/Units	все коды	Единица измерения количества
+encounter				Σ	S	0..1		Reference(Encounter)	Прием, во время которого сделан запрос					
+authoredOn				Σ	S	0..1		dateTime	Когда был сделан запрос	Mon, 02 Mar 2026 06:44:12 				
+requester				Σ	S	0..1		Reference(PractitionerRole)	Кто сделал запрос					
+reason					S	0..*		CodeableReferance(Condition | Observation)	"Причина или показание для назначения или неназначения лекарственного средства.
+Binding: http://hl7.org/fhir/ValueSet/icd-10 || Condition vs Diagnosis code vs Problem"	headache				
+effectiveDosePeriod					S	0..1		Period 	Период, в течение которого следует принимать лекарство	3 month				
+insurance					S	0..1		Reference(Coverage)	Сопутствующее страховое покрытие					
+dosageInstruction				S	S	0..*		Dosage	Конкретные инструкции по приему лекарств					
+	patientInstruction			Σ S	S	0..1		string	Текстовая инструкция  по дозировке и приему лекарства для пациента					
+	timing			Σ	S	0..1		Timing	"This section contains a few types of mechanism. 
+SHOULD BE USED:
+- frequency should be used with period and periodUntil.
+- frequency should be used with timeOfDay. 
+SHOULD NOT BE USED:
+- 'when' should not be used with 'timeOfDay'.
+- event should not be used with bounds[x].
+- bounds[x] should not be used with count.
+- event should not be used with period and Frequency.
+- event should not be used with timeOfDay and DayOfWeek.
+- period should not be used if timeOfDay + Exact Times (Count)
+- period should not be used if when + countMax
+- period should not be used with boundsRange.
+- 'dayOfWeek' and 'periodUnit' should not be used together.
+- dayOfWeek and timeOfDay should not be used with count.
+- dayOfWeek should not be used with boundsRange.
+- frequency should not be used with count alone unless there is a cycle."					
+					S									
+		repeat			S									
+			bounds[x]	Σ	S	0..1			"Длина/диапазон длин или (начальные и/или конечные) пределы. 
+Note: Может быть только один из трех."					
+			 boundsDuration		S			Duration	Как много времени это займет	5d				
+			 boundsRange		S			Range	между (СЛЕГКА ИСПОЛЬЗОВАННЫЙ)	5d-7d				
+			 boundsPeriod		S			Period	с какого времени → до какого времени (наиболее часто используемый вариант)	"""2026-01-27"" - ""2026-02-01"""				
+			count 	ΣC	S	0..1		positiveInt	"Продолжительность определяется количеством, а не временем.
+Note: Использование с  frequency vs period"	5 times				
+			countMax	ΣC	S	0..1		positiveInt	"максимально допустимое количество повторений.
+Note: Использование с  when vs period vs frequency "	PRN, no more than 5 times				
+			duration	ΣC	S	0..1		decimal	Продолжительность выполнения действия	6 месяцев				
+			durationUnit	ΣC	S	0..1		code	"с | мин | ч | д | нед | мес | год - единица времени
+Binding: http://terminology.dhp.uz/fhir/core/ValuSet/UnitsOfTime"	mo				
+			frequency	Σ	S	0..1		positiveInt	Указывает количество повторений, которые должны произойти в течение периода. Т. е. событие происходит частота раз за период.	2				
+			period	ΣC	S	0..1		decimal	Продолжительность, к которой применяется частота. Т. е. событие происходит частота раз за период.	1				
+			periodUntil	ΣC	S	0..1		code	"с | мин | ч | д | нед | мес | год - единица времени
+Binding: http://terminology.dhp.uz/fhir/core/ValuSet/UnitsOfTime"	d				
+			timeOfDay	ΣC	S	0..*		time	Время суток для действия. 	"[""08:00:00"", ""16:00:00""]"				
+			dayOfWeek	ΣC	S	0..*		code	"пн | вт | ср | чт | пт | сб | вс
+Binding: https://terminology.dhp.uz/fhir/core/ValuSet/DaysOfWeek"	Mn				
+			when	ΣC	S	0..*		code	"Код периода времени возникновения
+http://terminology.dhp.uz/fhir/core/ValueSet/event-timing"	"	event occurs at a meal"				
+		code		Σ	S	0..1		CodeableConcept	"C | BID | TID | QID | AM | PM | QD | QOD | +
+Binding: http://hl7.org/fhir/ValueSet/timing-abbreviation"	Two times a day at institution specified time				
+	route			Σ S	S	0..1		"	CodeableConcept"	"Способ введения лекарства
+Binding: https://terminology.dhp.uz/fhir/core/ValueSet/Route Codes_local (required)  Using SNOME"	External				
+	doseAndRate			Σ S	S	0..*		Element	Количество вводимого лекарства, которое должно быть введено					
+		doseQuantity		ΣC	S	0..1								
+			value	Σ S	S	0..1		SimpleQuantity	Количество лекарства	1				
+			unit	Σ S	S	0..1		string	"Значение единицы измерения количества
+Binding: https://terminology.dhp.uz/fhir/core/ValuSet/UnitOfMeasurement (required)"	шт				
+dispenseRequest					S	0..1		BackboneElement	Разрешение на поставку лекарственных препаратов					
+	quantity				S	0..1		SimpleQuantity	Количество из общего, сколько можно взять 	10				
+	validityPeriod				S	0..1		Period	"	Срок поставки разрешен на"					
+		start		ΣC	S	0..1		dateTime	время выписки рецепта	2026-01-27 00:00:00				
+		end		ΣC	S	0..1		dateTime	Срок действия рецепта	2026-02-27 00:00:00				
+	dispenser				S	0..1		Reference (Organization)	В какой аптеке я могу получить этот рецепт					
+note 					S	0..*		Annotation	Информация о рецепте					
+														
+														
+														
+														
+														
+								  						
