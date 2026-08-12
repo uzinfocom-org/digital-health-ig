@@ -37,8 +37,32 @@ jobs:
             exit 1
           fi
 
-          jq -S '. + {id: "DHPCapabilityStatement"}
+          # The server metadata has defects that fail IG publisher QA; scrub them here
+          # until they are fixed server-side:
+          #  - custom operations (force-refresh, populate, merge, ...) are registered
+          #    under fabricated hl7.org canonicals the publisher cannot resolve; keep
+          #    only hl7.org operations that actually exist in the FHIR spec ($core_ops)
+          #  - some search parameters are registered twice (a broken empty-expression
+          #    copy next to the real one), violating cpb-12; keep one per name,
+          #    preferring the entry with a real expression
+          #  - Condition advertises supportedProfile uz-core-clinical-condition, which
+          #    does not exist in this IG
+          # Dropping a resource's whole operation list leaves an empty array, which
+          # FHIR forbids, so empty arrays are stripped afterwards.
+          jq -S --argjson core_ops '["CodeSystem-lookup", "CodeSystem-subsumes",
+              "CodeSystem-validate-code", "ConceptMap-translate", "ValueSet-expand",
+              "ValueSet-validate-code", "Patient-everything", "Patient-match",
+              "Patient-merge", "Encounter-everything", "Resource-validate"]' \
+            '. + {id: "DHPCapabilityStatement"}
             | del(.rest[0].resource[] | select(.type == "Observation" and .supportedProfile == null))
+            | del(.rest[0].resource[].operation[]? | select(
+                (.definition | startswith("http://hl7.org/fhir/OperationDefinition/"))
+                and ((.definition | ltrimstr("http://hl7.org/fhir/OperationDefinition/")) as $op
+                  | ($core_ops | index($op)) == null)))
+            | (.rest[0].resource[] | select(.searchParam) | .searchParam) |=
+                (group_by(.name) | map(sort_by(.documentation // "" | test("^expression: *$")) | .[0]))
+            | del(.rest[0].resource[].supportedProfile[]? | select(. == "https://dhp.uz/fhir/core/StructureDefinition/uz-core-clinical-condition"))
+            | walk(if type == "object" then with_entries(select(.value != [])) else . end)
             | walk(if type == "array" then sort else . end)' raw.json > \
             CapabilityStatement-DHPCapabilityStatement.json
 
