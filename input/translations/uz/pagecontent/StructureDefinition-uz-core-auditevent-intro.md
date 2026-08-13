@@ -1,37 +1,35 @@
-> **Mashina tarjimasi, inson tomonidan tekshirilishi zarur.** Ushbu sahifa ingliz tilidan sun'iy intellekt yordamida avtomatik tarjima qilingan va hali muharrir tomonidan tekshirilmagan. Har qanday nomuvofiqlikda asl inglizcha versiya ustuvor hisoblanadi.
+UZ Core AuditEvent - DHP (Digital Health Platform - Raqamli sog'liqni saqlash platformasi)da kim qaysi ma'lumotlarga kirgani yoki nimani o'zgartirganini qayd etuvchi o'zgartirib bo'lmaydigan audit jurnali. Profil IHE ATNA / DICOM audit modeliga asoslanadi: platforma ma'lumotlarni o'qish, yaratish, yangilash, o'chirish va qidirish, tizimga kirish hamda favqulodda kirish (break-glass) hodisalarini qayd etadi, qidiruv asosida bajarilgan so'rovni saqlaydi va muvaffaqiyatsiz yoki rad etilgan kirishlarni (HTTP 401 / 403) belgilaydi. AuditEvent resurslari platforma tomonidan yaratiladi va mijozlar uchun faqat o'qish rejimida mavjud; ular ma'lumotlari hodisaga aloqador bo'lgan [Patient](StructureDefinition-uz-core-patient.html) resursiga reference beradi.
 
-UZ Core AuditEvent - bu Raqamli sog'liqni saqlash platformasida kim nimaga kirgani yoki nimani o'zgartirgani haqidagi o'zgarmas audit jurnali. U IHE ATNA / DICOM audit modeliga amal qiladi: platforma o'qishlar, yaratishlar, yangilashlar, o'chirishlar, qidiruvlar, tizimga kirishlar va favqulodda kirish (break-glass) hodisalarini qayd etadi, qidiruv ortidagi so'rovni yozib oladi hamda muvaffaqiyatsiz yoki rad etilgan kirishni (HTTP 401 / 403) belgilab qo'yadi. AuditEvent yozuvlari platforma tomonidan yoziladi va mijozlar uchun faqat o'qish uchun mo'ljallangan; ular ma'lumotlari jalb qilingan [Patient](StructureDefinition-uz-core-patient.html) bilan bog'lanadi.
+### Majburiy ma'lumot elementlari va Must Support elementlari
 
-### Majburiy va Must Support ma'lumot elementlari
+Quyida keltirilgan elementlar doimo mavjud bo'lishi (mandatory) yoki ma'lumot mavjud bo'lganda qo'llab-quvvatlanishi ([Must Support](must-support.html)) kerak. Ularning barchasi majburiy emas, biroq tizim tegishli ma'lumot mavjud bo'lsa, har bir Must Support elementini to'ldirishi va qabul qilganda qayta ishlashi kerak. Bu inson o'qishi uchun mo'ljallangan qisqacha tavsif; aniq karralilik, turlar va terminologik bog'lanishlar quyidagi [formal ko'rinishlarda](#profile) berilgan.
 
-Quyidagi elementlar har doim mavjud bo'lishi (majburiy) yoki ma'lumot mavjud bo'lganda qo'llab-quvvatlanishi kerak ([Must Support](must-support.html)) - hammasi talab qilinmaydi, lekin sizning tizimingiz ma'lumotga ega bo'lganda har bir Must Support elementini to'ldirishi va uni qabul qilganda qayta ishlashi kerak. Bu inson o'qishi uchun mo'ljallangan xulosa; quyidagi [rasmiy ko'rinishlar](#profile) aniq kardinalliklar, turlar va terminologiya bog'lanishlarini beradi.
+#### Har bir UZ Core AuditEvent quyidagilarga ega bo'lishi kerak (Must Have)
 
-#### Har bir UZ Core AuditEvent quyidagilarga ega bo'lishi shart
+Ushbu profil yuqori darajaga o'zining majburiy karralilik talablarini qo'shmaydi. Majburiy elementlar bazaviy resursdan meros qilib olinadi: `code` (nima sodir bo'lgani), `recorded` vaqt belgisi, `who` elementi mavjud bo'lgan kamida bitta `agent`, shuningdek `observer` elementi mavjud bo'lgan `source`. `dhpCategory` kategoriya slice ishlatilganda, undagi `system` (DICOM `dcm`) va `code` elementlarining har biri 1..1 karralilikka ega.
 
-Ushbu profil o'zining hech qanday yuqori darajadagi majburiy kardinalligini qo'shmaydi. Talab qilinadigan elementlar bazaviy resursdan meros qilib olinganlardir: kod (nima sodir bo'lgani), qayd etilgan vaqt belgisi, who bilan kamida bitta agent va observer bilan source. dhpCategory kategoriya slaysi ichida, mavjud bo'lganda, system (DICOM dcm) va code har biri 1..1 hisoblanadi.
-
-#### Har bir UZ Core AuditEvent quyidagilarni qo'llab-quvvatlashi kerak
+#### Har bir UZ Core AuditEvent quyidagilarni qo'llab-quvvatlashi kerak (Must Support)
 
 
 
-- category - hodisa guruhlanishi, DICOM dan slaylangan dhpCategory coding bilan (uning kodida required bog'lanish);
-- code - aniq hodisa kichik turi (required bog'lanish);
-- action - create, read, update, delete yoki execute (required bog'lanish);
-- occurredDateTime va recorded vaqt belgisi;
-- outcome, uning code i required outcome bog'lanishidan foydalanadi (success yoki rad etilgan 401 / 403 kirish uchun muvaffaqiyatsizlik);
-- ma'lumotlari jalb qilingan bemor;
-- agent, uning type, role, who va authorization (purpose-of-use, required bog'lanish) bilan - `who` PractitionerRole, Practitioner, Patient yoki RelatedPerson bo'lishi mumkin;
-- entity, uning role, what, securityLabel va query (base64 ga kodlangan qidiruv, qo'llanadigan joyda) bilan.
+- kategoriya - DICOM tizimidagi `dhpCategory` slice kodlashiga ega hodisalar guruhi (uning `code` elementi uchun majburiy bog'lanish);
+- `code` - hodisaning muayyan quyi turi (majburiy bog'lanish);
+- `action` - yaratish, o'qish, yangilash, o'chirish yoki amalni bajarish (majburiy bog'lanish);
+- `occurredDateTime` va `recorded` vaqt belgisi;
+- `outcome`, uning `code` elementi majburiy natija bog'lanishidan foydalanadi (muvaffaqiyatli bajarilish yoki HTTP 401 / 403 bilan kirish rad etilgandagi xato);
+- ma'lumotlari hodisaga aloqador bo'lgan `patient`;
+- `type`, `role`, `who` va `authorization` elementlariga ega `agent` (`authorization` - ma'lumotlardan foydalanish maqsadi, majburiy bog'lanish); `who` PractitionerRole, Practitioner, Patient yoki RelatedPerson resursiga ko'rsatishi mumkin;
+- `role`, `what`, `securityLabel` va `query` elementlariga ega `entity` (qo'llanilganda base64 formatida kodlangan qidiruv so'rovi).
 
-> Favqulodda kirish (break-glass) bu yerda `agent.authorization` favqulodda purpose-of-use ni olib yuradigan AuditEvent sifatida qayd etiladi.
+> Favqulodda kirish (break-glass) `agent.authorization` elementida favqulodda ma'lumotlardan foydalanish maqsadi ko'rsatilgan AuditEvent sifatida qayd etiladi.
 
-### JSON ni qadam-baqadam qurish
+### JSONni bosqichma-bosqich shakllantirish
 
-AuditEvent yozuvlari mijozlar tomonidan emas, platforma tomonidan yoziladi, shuning uchun siz asosan ularni o'qiysiz - lekin ularning shaklini bilish foydali. Quyidagi misollar mustaqil hodisani, so'ngra bemorning ma'lumotlariga tegadigan hodisani ko'rsatadi. Ko'rsatilgan har bir qiymat ushbu profilga muvofiq validatsiyadan o'tadi. To'liq mos namuna nusxalari sahifaning pastki qismida bog'langan ([login](AuditEvent-example-auditevent-login.html), [holatni qidirish](AuditEvent-example-auditevent-condition-lookup.html)).
+AuditEvent resurslari mijozlar tomonidan emas, platforma tomonidan yaratiladi, shuning uchun odatda ularni o'qish talab etiladi; biroq ularning tuzilishini tushunish muhim. Quyidagi misollarda mustaqil hodisa va bemor ma'lumotlariga ta'sir qilgan hodisa ko'rsatilgan. Keltirilgan barcha qiymatlar ushbu profil bo'yicha validatsiyadan o'tadi. To'liq etalon nusxalar sahifaning pastki qismida berilgan ([tizimga kirish](AuditEvent-example-auditevent-login.html), [Condition qidiruvi](AuditEvent-example-auditevent-condition-lookup.html)).
 
-#### Vakil bo'lgan hodisa (tizimga kirish)
+#### Namunaviy hodisa (tizimga kirish)
 
-Mustaqil hodisa nima sodir bo'lganini (`code`), uning guruhlanishini (`category`), `action` ni (E = execute), qachon `occurredDateTime` va `recorded` bo'lganini, `outcome.code` ni, uni bajargan `agent` ni va uni qayd etgan `source` ni nomlaydi. `agent.who` oddiy `Reference` bo'lib, PractitionerRole, Practitioner, Patient yoki RelatedPerson ga ko'rsatishi mumkin:
+Mustaqil hodisada nima sodir bo'lgani (`code`), uning guruhi (`category`), bajarilgan amal (`action`, `E` = execute), amal qachon bajarilgani (`occurredDateTime`) va qachon qayd etilgani (`recorded`), `outcome.code`, amalni bajargan `agent` hamda hodisani qayd etgan `source` ko'rsatiladi. `agent.who` oddiy `Reference` bo'lib, PractitionerRole, Practitioner, Patient yoki RelatedPerson resursiga ko'rsatishi mumkin:
 
 ```json
 {
@@ -108,11 +106,11 @@ Mustaqil hodisa nima sodir bo'lganini (`code`), uning guruhlanishini (`category`
 }
 ```
 
-`category`, `code`, `action`, `outcome.code` va `agent` coding lari (type, role, authorization) har biri required bog'lanishdan foydalanadi - qiymat bog'langan value set dan kelishi kerak (quyidagi Snapshot ko'rinishi har birini sanab o'tadi). `agent.authorization` bu purpose-of-use (bu yerda `TREAT`); favqulodda kirish (break-glass) buning o'rniga favqulodda purpose-of-use ni olib yuradi.
+`category`, `code`, `action`, `outcome.code` va `agent` kodlashlari (type, role, authorization) majburiy bog'lanishlardan foydalanadi: qiymat tegishli ValueSet tarkibidan tanlanishi kerak (har bir bog'lanish quyidagi Snapshot ko'rinishida keltirilgan). `agent.authorization` ma'lumotlardan foydalanish maqsadini ko'rsatadi (bu yerda `TREAT`); favqulodda kirish (break-glass) uchun esa favqulodda foydalanish maqsadi ko'rsatiladi.
 
-#### Bemor ma'lumotlariga tegadigan hodisa
+#### Bemor ma'lumotlariga ta'sir qilgan hodisa
 
-Hodisa muayyan bemorning yozuvini o'qigan yoki o'zgartirgan bo'lsa, u tegishli bo'lgan `patient` ni va tegilgan resursni tavsiflovchi `entity` ni qo'shing. Bu yerda shifokor [Condition](StructureDefinition-uz-core-condition.html) ni qidirdi: `action` bu `R` (read), `code` bu FHIR `search` o'zaro ta'siri va `entity.what` qaytarilgan resursga havola qiladi. `patient` ham, `entity.what` ham oddiy `Reference` turlari hisoblanadi:
+Hodisa muayyan bemor yozuvini o'qish yoki o'zgartirish bilan bog'liq bo'lsa, tegishli `patient` va ta'sir ko'rsatilgan resursni tavsiflovchi `entity` qo'shiladi. Ushbu misolda Practitioner [Condition](StructureDefinition-uz-core-condition.html) resursini qidirgan: `action` qiymati `R` (read), `code` FHIR `search` o'zaro ta'siriga mos keladi, `entity.what` esa qaytarilgan resursga reference beradi. `patient` va `entity.what` oddiy `Reference` turiga ega:
 
 ```json
 {
@@ -205,6 +203,6 @@ Hodisa muayyan bemorning yozuvini o'qigan yoki o'zgartirgan bo'lsa, u tegishli b
 }
 ```
 
-Qidiruv uchun platforma so'rovning o'zini ham (base64 ga kodlangan) `entity.query` da qayd etadi. Muvaffaqiyatsiz yoki rad etilgan kirish (HTTP 401 / 403) xuddi shu tarzda, lekin muvaffaqiyatsizlik `outcome.code` bilan qayd etiladi.
+Qidiruv bajarilganda platforma so'rovning o'zini ham `entity.query` elementida base64 formatida kodlab saqlaydi. Muvaffaqiyatsiz yoki rad etilgan kirish (HTTP 401 / 403) xuddi shu tarzda, biroq `outcome.code` elementidagi xato kodi bilan qayd etiladi.
 
-API chaqiruvlari va namunaviy yuk (payload) misollari uchun ushbu sahifaning pastki qismidagi [Tezkor boshlash](#quick-start) bo'limiga qarang.
+API chaqiruvlari misollari va namuna payload ushbu sahifaning pastki qismidagi [Tezkor boshlash](#quick-start) bo'limida keltirilgan.

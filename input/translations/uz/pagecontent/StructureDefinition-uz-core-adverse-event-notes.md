@@ -1,8 +1,6 @@
-> **Mashina tarjimasi, inson tomonidan tekshirilishi zarur.** Ushbu sahifa ingliz tilidan sun'iy intellekt yordamida avtomatik tarjima qilingan va hali muharrir tomonidan tekshirilmagan. Har qanday nomuvofiqlikda asl inglizcha versiya ustuvor hisoblanadi.
-
 ### Tezkor boshlash
 
-Ushbu profil uchun keng tarqalgan API o'zaro ta'sirlari. So'rovlar JWT kirish tokenini talab qiladi - [Xavfsizlik va autentifikatsiya](api-access.html#security) bo'limiga qarang. `[base]` - bu [FHIR server bazaviy URL manzili](api-access.html#endpoints); `|` token tizimini uning qiymatidan ajratadi va URL-kodlash sifatida `%7C` ko'rinishida kodlanishi shart. Ushbu o'zaro ta'sirlar standart FHIR R5 qidiruv parametrlaridan foydalanadi; ushbu resurs uchun yakunlangani sari [CapabilityStatement](CapabilityStatement-DHPCapabilityStatement.html) hujjatiga qarang.
+Ushbu profil uchun keng tarqalgan API amallari. So'rovlar JWT kirish tokenini talab qiladi - [Xavfsizlik va autentifikatsiya](api-access.html#security) bo'limiga qarang. `[base]` - [FHIR-serverning bazaviy URL manzili](api-access.html#endpoints); `|` belgisi token tizimini uning qiymatidan ajratadi va `%7C` ko'rinishida URL-kodlanishi kerak. Ushbu amallarda standart FHIR R5 qidiruv parametrlaridan foydalaniladi; ushbu resurs uchun [CapabilityStatement](CapabilityStatement-DHPCapabilityStatement.html) yakuniy holatga keltirilishi davomida uni tekshirib boring.
 
 **Nojo'ya hodisani server identifikatori bo'yicha o'qish**
 
@@ -13,13 +11,13 @@ GET [base]/AdverseEvent/[id]
 **Foydali qidiruvlar**
 
 ```
-# all adverse events for a patient
+# bemorning barcha nojo'ya hodisalari
 GET [base]/AdverseEvent?subject=Patient/[id]
 
-# serious events only, most recent first
+# faqat jiddiy hodisalar, eng so'nggilari birinchi
 GET [base]/AdverseEvent?subject=Patient/[id]&seriousness=http://terminology.hl7.org/CodeSystem/adverse-event-seriousness%7Cserious&_sort=-date
 
-# by date, status, or event code
+# sana, status yoki hodisa kodi bo'yicha
 GET [base]/AdverseEvent?subject=Patient/[id]&date=ge2026-01-01
 GET [base]/AdverseEvent?status=completed
 GET [base]/AdverseEvent?code=http://snomed.info/sct%7C39579001
@@ -36,11 +34,11 @@ POST [base]/AdverseEvent
 }
 ```
 
-**Nojo'ya hodisani yangilash** (masalan, ma'lum bo'lgach natija yoki yuzaga kelgan holatni qo'shish)
+**Nojo'ya hodisani yangilash** (masalan, ma'lum bo'lgach oqibat yoki yuzaga kelgan Condition ni qo'shish)
 
 ```
 PUT [base]/AdverseEvent/[id]
-If-Match: W/"3"   # the ETag from your last read; 412 if it changed since
+If-Match: W/"3"   # oxirgi o'qishda olingan ETag; o'shandan beri o'zgargan bo'lsa 412
 {
   "resourceType": "AdverseEvent",
   "id": "[id]",
@@ -49,7 +47,7 @@ If-Match: W/"3"   # the ETag from your last read; 412 if it changed since
 }
 ```
 
-### Aloqador
+### Bog'liq materiallar
 
-- [Immunizatsiya ish jarayoni](workflow-immunization.html)
-- [Ushbu qo'llanmani qanday o'qish kerak](how-to-read.html) &middot; [Must Support](must-support.html) &middot; [Umumiy ko'rsatmalar](general-guidance.html)
+- [Immunization ish jarayoni](workflow-immunization.html)
+- [Ushbu qo'llanmani qanday o'qish](how-to-read.html) &middot; [Must Support](must-support.html) &middot; [Umumiy tavsiyalar](general-guidance.html)

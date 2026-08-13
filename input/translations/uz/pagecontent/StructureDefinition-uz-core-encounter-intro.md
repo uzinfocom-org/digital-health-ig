@@ -1,44 +1,42 @@
-> **Mashina tarjimasi, inson tomonidan tekshirilishi zarur.** Ushbu sahifa ingliz tilidan sun'iy intellekt yordamida avtomatik tarjima qilingan va hali muharrir tomonidan tekshirilmagan. Har qanday nomuvofiqlikda asl inglizcha versiya ustuvor hisoblanadi.
-
-UZ Core Encounter bemor va sog'liqni saqlash tizimi o'rtasidagi yagona o'zaro aloqani - tashrifni - Raqamli sog'liqni saqlash platformasida ifodalaydi. U bemor yo'lining markaziy bo'g'inidir: [Observations](StructureDefinition-uz-core-observation.html), [Procedures](StructureDefinition-uz-core-procedure.html), [Conditions](StructureDefinition-uz-core-condition.html), MedicationRequests va klinik hujjatlarning barchasi o'zlari tegishli bo'lgan Encounter'ga havola qiladi. U tashrif qayerda bo'lib o'tganini, uni kim taqdim etganini va uning davomida qo'yilgan tashxislarni (har biri biror [Condition](StructureDefinition-uz-core-condition.html)'ga ishora qiladi) qayd etadi hamda [EpisodeOfCare](StructureDefinition-uz-core-episodeofcare.html) ostida guruhlanishi mumkin.
+UZ Core Encounter Raqamli sog'liqni saqlash platformasida bemor va sog'liqni saqlash tizimi o'rtasidagi bitta o'zaro aloqani - tashrifni - ifodalaydi. U bemorning tibbiy yordam olish jarayonida markaziy o'rin tutadi: [Observation](StructureDefinition-uz-core-observation.html), [Procedure](StructureDefinition-uz-core-procedure.html), [Condition](StructureDefinition-uz-core-condition.html), MedicationRequest va klinik hujjatlar o'zlari tegishli bo'lgan Encounter ga reference beradi. Unda tashrif qayerda o'tkazilgani, kim tomonidan xizmat ko'rsatilgani va tashrif davomida belgilangan tashxislar (har biri [Condition](StructureDefinition-uz-core-condition.html) ga reference beradi) qayd etiladi; shuningdek, u [EpisodeOfCare](StructureDefinition-uz-core-episodeofcare.html) doirasida guruhlanishi mumkin.
 
 ### Majburiy va Must Support ma'lumot elementlari
 
-Quyidagi elementlar har doim mavjud bo'lishi (majburiy) yoki ma'lumot mavjud bo'lganda qo'llab-quvvatlanishi kerak ([Must Support](must-support.html)) - ularning hammasi ham talab qilinmaydi, ammo tizimingiz har bir Must Support elementni ma'lumot bo'lganda to'ldirishi va qabul qilishda qayta ishlashi kerak. Bu inson o'qiy oladigan xulosadir; quyidagi [rasmiy ko'rinishlar](#profile) aniq kardinalliklar, turlar va terminologiya bog'lanishlarini beradi.
+Quyidagi elementlar har doim mavjud bo'lishi (mandatory) yoki ma'lumot mavjud bo'lganda qo'llab-quvvatlanishi ([Must Support](must-support.html)) kerak. Ularning barchasi majburiy emas, biroq tizimingiz ma'lumotga ega bo'lsa, har bir Must Support elementini to'ldirishi va uni qabul qilganda qayta ishlashi shart. Bu inson o'qishi uchun mo'ljallangan qisqacha tavsif; quyidagi [formal ko'rinishlar](#profile) aniq karralilik, turlar va terminologik bog'lanishlarni ko'rsatadi.
 
-#### Har bir UZ Core Encounter quyidagilarga ega bo'lishi shart
+#### Har bir UZ Core Encounter Must Have
 
-Ushbu profilning yagona majburiy elementlari - status (planned \| in-progress \| completed \| cancelled ...), bazaviy resursdan majburiy sifatida required bog'lanish ostida meros qilib olingan, va - joylashuv qayd etilganda - uning joylashuv havolasi (location.location 1..1), chunki joylashuv yozuvini qaysi joy ekanligini ko'rsatmasdan sanab bo'lmaydi.
+Ushbu profilning yagona shartsiz majburiy elementi - bazaviy resursdan required bog'lanish bilan meros olingan `status` (planned \| in-progress \| completed \| cancelled ...). Agar `location` qayd etilsa, undagi location reference - `location.location` (1..1) ham majburiy, chunki joyning o'zi ko'rsatilmasdan location yozuvini kiritib bo'lmaydi.
 
-#### Har bir UZ Core Encounter quyidagilarni qo'llab-quvvatlashi shart
+#### Har bir UZ Core Encounter Must Support
 
 
 
-- identifikator (0..1);
-- status, class, priority va type (har biri required bog'lanish);
-- serviceType (HealthcareService'ga havola qiluvchi);
-- subject (bemor) va subjectStatus (required bog'lanish);
-- episodeOfCare, basedOn, careTeam va partOf havolalari;
-- serviceProvider tashkiloti;
-- participant yozuvlari ularning actor, type (extensible bog'lanish) va period bilan;
-- uchrashuvni rejalashtirgan appointment;
-- reason - `use` (preferred bog'lanish) va Condition, DiagnosticReport, Procedure yoki Observation'ga havola qiluvchi `value` bilan;
-- virtualService (teletibbiyot) tafsiloti;
-- actualPeriod, plannedStartDate, plannedEndDate va length;
-- diagnosis ro'yxati, har biri o'zining condition (Condition havolasi) va use bilan;
-- to'lov uchun account;
-- admission tafsiloti - origin, admitSource, reAdmission, destination, dischargeDisposition (har bir kodlangan qiymat required bog'lanish);
-- uchrashuv bo'lib o'tadigan joylashuv.
+- `identifier` (0..1);
+- `status`, `class`, `priority` va `type` (har biri required bog'lanishga ega);
+- HealthcareService ga reference beruvchi `serviceType`;
+- `subject` (bemor) va `subjectStatus` (required bog'lanish);
+- `episodeOfCare`, `basedOn`, `careTeam` va `partOf` orqali bog'lanishlar;
+- `serviceProvider` sifatidagi Organization;
+- `actor`, `type` (extensible bog'lanish) va `period` ko'rsatilgan `participant` yozuvlari;
+- Encounter ni rejalashtirgan `appointment`;
+- `reason` - `use` (preferred bog'lanish) hamda [Condition](StructureDefinition-uz-core-condition.html), DiagnosticReport, Procedure yoki Observation ga reference beruvchi `value`;
+- `virtualService` (telemeditsina) tafsilotlari;
+- `actualPeriod`, `plannedStartDate`, `plannedEndDate` va `length`;
+- har birida `condition` ([Condition](StructureDefinition-uz-core-condition.html) ga reference) va `use` mavjud bo'lgan `diagnosis` ro'yxati;
+- hisob-kitob uchun `account`;
+- `admission` tafsilotlari - `origin`, `admitSource`, `reAdmission`, `destination`, `dischargeDisposition` (har bir kodlangan qiymat required bog'lanishga ega);
+- Encounter o'tkaziladigan location.
 
-> Encounter `completed` holatiga uning davri tugashi boshlanishidan oldinroq bo'lganida o'rnatib bo'lmaydi - tashrifni yopishdan oldin `actualPeriod`'ni tekshiring.
+> Agar period tugash vaqti boshlanish vaqtidan oldin bo'lsa, Encounter ni `completed` holatiga o'tkazib bo'lmaydi - tashrifni yakunlashdan oldin `actualPeriod` ni tekshiring.
 
-### JSON'ni bosqichma-bosqich qurish
+### JSON ni bosqichma-bosqich shakllantirish
 
-Quyidagi misollar yagona tashrifni - shoshilinch statsionar uchrashuvni - eng minimal holatdan to to'liq qabul qilish yozuvigacha quradi. To'liq instans bu [example Encounter](Encounter-example-encounter.html). Bosqichni nusxalab oling va moslang; ko'rsatilgan har bir qiymat ushbu profilga muvofiqligi tekshiriladi.
+Quyidagi misollarda bitta tashrif - shoshilinch statsionar Encounter - minimal tarkibdan to'liq admission yozuvigacha bosqichma-bosqich shakllantiriladi. To'liq nusxa [Encounter namunasi](Encounter-example-encounter.html) orqali berilgan. Kerakli bosqichdan nusxa olib moslashtiring; ko'rsatilgan barcha qiymatlar ushbu profil bo'yicha validatsiyadan o'tadi.
 
-#### Yuborishingiz kerak bo'lgan eng kichik Encounter
+#### Yuborilishi kerak bo'lgan eng kichik Encounter
 
-`status` yagona qat'iy majburiy element, ammo Encounter faqat `class` (aloqa qanday sodir bo'lgani - statsionar, ambulator, shoshilinch) va u tegishli bo'lgan `subject` bilan foydalidir. E'tibor bering, `class` bu `CodeableConcept`larning **ro'yxati**:
+`status` yagona qat'iy majburiy element hisoblanadi, biroq Encounter amaliy jihatdan `class` (o'zaro aloqa shakli - statsionar, ambulator yoki shoshilinch) va tegishli `subject` ko'rsatilgandagina mazmunli bo'ladi. E'tibor bering, `class` ro'yxat ko'rinishidagi `CodeableConcept` hisoblanadi:
 
 ```json
 {
@@ -52,11 +50,11 @@ Quyidagi misollar yagona tashrifni - shoshilinch statsionar uchrashuvni - eng mi
 }
 ```
 
-`status`, `class`, `priority`, `type` va `subjectStatus` har biri required bog'lanishdan foydalanadi - qiymat bog'langan qiymatlar to'plamidan kelishi kerak (quyidagi Snapshot ko'rinishi har birini sanab beradi).
+`status`, `class`, `priority`, `type` va `subjectStatus` ning har biri required bog'lanishdan foydalanadi - qiymat bog'langan ValueSet dan olinishi kerak (quyidagi Snapshot ko'rinishida har biri keltirilgan).
 
-#### Real tashrif
+#### Amaliy tashrif namunasi
 
-U qachon sodir bo'lganini (`actualPeriod`), bu qanday xizmat turi ekanligini (`type`), bemorning uning davomidagi holatini (`subjectStatus`), kim ishtirok etganini (`participant`, uning `actor`'i amaliyotchi yoki [PractitionerRole](StructureDefinition-uz-core-practitioner-role.html)'ga havola qiladi) va nima uchun ekanligini (`reason` - Condition, DiagnosticReport, Procedure yoki Observation'ga ishora qiluvchi) to'ldiring:
+Tashrif qachon bo'lganini (`actualPeriod`), qanday xizmat ko'rsatilganini (`type`), tashrif davridagi bemor holatini (`subjectStatus`), kim ishtirok etganini (`participant`, uning `actor` elementi [Practitioner](StructureDefinition-uz-core-practitioner.html) yoki [PractitionerRole](StructureDefinition-uz-core-practitioner-role.html) ga reference beradi) va tashrif sababini (`reason` - Condition, DiagnosticReport, Procedure yoki Observation ga reference beradi) ko'rsating:
 
 ```json
 {
@@ -143,7 +141,7 @@ U qachon sodir bo'lganini (`actualPeriod`), bu qanday xizmat turi ekanligini (`t
 
 #### Tashxis, qabul qilish va joylashuv
 
-Qabul qilish uchun `diagnosis` ro'yxatini (har bir `condition` bu [Condition](StructureDefinition-uz-core-condition.html)'ga `CodeableReference`), `admission` tafsilotini (qabul manbasi, qayta qabul bayrog'i, chiqarish tartibi - barchasi required bog'lanishlar) va bu qayerda sodir bo'lganini qo'shing. Agar `location` yozuvini kiritsangiz, joyni nomlashingiz kerak - `location.location` majburiydir:
+Gospitalizatsiya uchun `diagnosis` ro'yxatini (har bir `condition` - `CodeableReference` orqali [Condition](StructureDefinition-uz-core-condition.html) ga reference), `admission` tafsilotlarini (qabul manbasi, qayta gospitalizatsiya belgisi va chiqarish holati - barchasi required bog'lanishga ega) hamda xizmat ko'rsatilgan joyni qo'shing. Agar `location` yozuvi kiritilsa, aniq joy ko'rsatilishi shart - `location.location` majburiy:
 
 ```json
 {
@@ -185,6 +183,6 @@ Qabul qilish uchun `diagnosis` ro'yxatini (har bir `condition` bu [Condition](St
 }
 ```
 
-Bu kalitlar yuqoridagi real tashrif bilan bir xil resursga joylashadi. Tashrifni uzoqroq davom etadigan parvarish kursi ostida guruhlash uchun `episodeOfCare` orqali [EpisodeOfCare](StructureDefinition-uz-core-episodeofcare.html)'ga havola qiling.
+Ushbu kalitlar yuqoridagi amaliy tashrif bilan bir xil resurs tarkibiga qo'shiladi. Tashrifni uzoqroq davolash jarayoni doirasida guruhlash uchun [EpisodeOfCare](StructureDefinition-uz-core-episodeofcare.html) ga `episodeOfCare` orqali reference bering.
 
-API chaqiruvlari va namuna payload misollari uchun ushbu sahifaning pastidagi [Quick Start](#quick-start) bo'limiga qarang.
+API chaqiruvlari va namuna payload uchun sahifaning quyi qismidagi [Tezkor boshlash](#quick-start) bo'limiga qarang.

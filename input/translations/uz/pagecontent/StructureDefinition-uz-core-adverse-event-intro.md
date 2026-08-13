@@ -1,37 +1,35 @@
-> **Mashina tarjimasi, inson tomonidan tekshirilishi zarur.** Ushbu sahifa ingliz tilidan sun'iy intellekt yordamida avtomatik tarjima qilingan va hali muharrir tomonidan tekshirilmagan. Har qanday nomuvofiqlikda asl inglizcha versiya ustuvor hisoblanadi.
+UZ Core AdverseEvent Raqamli sog'liqni saqlash platformasida (DHP) nojo'ya hodisani, masalan, vaksinatsiyadan keyingi reaksiyani qayd etadi. U hodisa bilan bog'liq bo'lishi mumkin bo'lgan taxminiy manbaga reference saqlaydi; vaksina reaksiyasi uchun bunday resurs [Immunization](StructureDefinition-uz-core-immunization.html) hisoblanadi. Reaksiyaning o'zini tavsiflovchi [Observation](StructureDefinition-uz-core-observation.html) yoki [Condition](StructureDefinition-uz-core-condition.html) ham unga qo'shilishi mumkin. Resurs hodisa ta'sir qilgan [Patient](StructureDefinition-uz-core-patient.html) va uni qayd etgan [Practitioner](StructureDefinition-uz-core-practitioner.html) resurslarini ko'rsatadi. Hodisa amalda zarar yetkazgan bo'lishi yoki zarar yetkazilishining oldi olingan potensial xavfli holat bo'lishi mumkin.
 
-UZ Core AdverseEvent Raqamli sogʻliqni saqlash platformasida emlashdan keyingi reaksiya kabi nojoʻya hodisani qayd etadi. U hodisaga sabab boʻlgan deb gumon qilingan obʼyektga havola qiladi - vaksina reaksiyasi uchun bu [Immunization](StructureDefinition-uz-core-immunization.html) hisoblanadi - va u reaksiyaning oʻzini tavsiflovchi [Observation](StructureDefinition-uz-core-observation.html) yoki [Condition](StructureDefinition-uz-core-condition.html) bilan birga kelishi mumkin. U taʼsirga uchragan [Patient](StructureDefinition-uz-core-patient.html) va uni qayd etgan [Practitioner](StructureDefinition-uz-core-practitioner.html) ni aniqlaydi. Hodisa real zarar yoki oldi olingan "deyarli sodir boʻlgan" (near-miss) holat boʻlishi mumkin.
+### Majburiy va Must Support ma'lumot elementlari
 
-### Majburiy va Must Support maʼlumot elementlari
+Quyidagi elementlar doimo mavjud bo'lishi (majburiy) yoki tegishli ma'lumot mavjud bo'lganda qo'llab-quvvatlanishi ([Must Support](must-support.html)) kerak. Ularning barchasi ham majburiy emas, biroq tizim ma'lumotga ega bo'lsa, har bir Must Support elementini to'ldirishi va uni qabul qilganda qayta ishlashi kerak. Quyida inson o'qishi uchun mo'ljallangan qisqacha tavsif berilgan; pastdagi [formal ko'rinishlarda](#profile) aniq karralilik, turlar va terminologik bog'lanishlar keltirilgan.
 
-Quyidagi elementlar har doim mavjud boʻlishi (majburiy) yoki maʼlumot mavjud boʻlganda qoʻllab-quvvatlanishi shart ([Must Support](must-support.html)) - hammasi ham talab qilinmaydi, lekin sizning tizimingiz maʼlumotga ega boʻlganda har bir Must Support elementini toʻldirishi va qabul qilingan paytda uni qayta ishlashi kerak. Bu inson oʻqiy oladigan qisqacha xulosa; quyidagi [rasmiy koʻrinishlar](#profile) aniq kardinalliklar, tiplar va terminologiya bogʻlanishlarini beradi.
+#### Har bir UZ Core AdverseEvent uchun Must Have elementlari
 
-#### Har bir UZ Core AdverseEvent quyidagilarga ega boʻlishi shart
+Ushbu profil o'ziga xos qo'shimcha majburiy karralilik belgilamaydi. Majburiy elementlar bazaviy resursdan meros olinadi: yozuv statusi (1..1), actuality - amalda yetkazilgan zarar yoki zarar yetkazilishining oldi olingan potensial xavfli holat (1..1), shuningdek hodisa sodir bo'lgan subject (1..1). Amalda taxminiy manba ham doimo to'ldiriladi (quyidagi Must Support bo'limiga qarang).
 
-Ushbu profil oʻzining hech qanday majburiy kardinalligini qoʻshmaydi. Talab qilinadigan elementlar bazaviy resursdan meros qilib olinadi: yozuvning holati (status) (1..1), aniqlik darajasi - real zarar yoki potensial near-miss (actuality) (1..1) - va hodisa sodir boʻlgan obʼyekt (subject) (1..1). Amalda siz har doim gumon qilingan obʼyektni (suspect entity) ham toʻldirasiz (quyidagi Must Support ga qarang).
-
-#### Har bir UZ Core AdverseEvent quyidagilarni qoʻllab-quvvatlashi shart
+#### Har bir UZ Core AdverseEvent uchun Must Support elementlari
 
 
 
-- identifikator, yozuvning holati (status) va aniqlik darajasi (actuality) (real zarar yoki potensial near-miss);
-- hodisa sodir boʻlgan obʼyekt (subject), uchrashuv (encounter) va yuz berish vaqti (occurrence) (sana/vaqt, davr yoki jadval);
+- identifikator, yozuv statusi va actuality (amalda yetkazilgan zarar yoki zarar yetkazilishining oldi olingan potensial xavfli holat);
+- hodisa sodir bo'lgan subject, unga bog'liq Encounter va hodisaning yuz berish vaqti (sana/vaqt, davr yoki jadval);
 - hodisa qachon aniqlangani va uning qayd etilgan sanasi;
-- natijaviy taʼsir - hodisa keltirib chiqargan [Condition](StructureDefinition-uz-core-condition.html) yoki [Observation](StructureDefinition-uz-core-observation.html) - va joylashuv (location);
-- jiddiylik (seriousness) va natija (outcome);
-- qayd etuvchi (recorder) va ishtirokchi (participant) (uning funksiyasi va aktyori);
-- gumon qilingan obʼyekt (suspect entity) - hodisaga sabab boʻlgan deb gumon qilinayotgan obʼyekt boʻlib, emlashdan keyingi reaksiya uchun bu [Immunization](StructureDefinition-uz-core-immunization.html) hisoblanadi;
+- yuzaga kelgan oqibat - hodisa sababli paydo bo'lgan [Condition](StructureDefinition-uz-core-condition.html) yoki [Observation](StructureDefinition-uz-core-observation.html) - va hodisa sodir bo'lgan joy;
+- jiddiylik darajasi va oqibat;
+- hodisani qayd etgan shaxs hamda ishtirokchi (uning funksiyasi va actor);
+- taxminiy manba - hodisa bilan bog'liq deb taxmin qilinayotgan aniq obyekt; vaksinatsiyadan keyingi reaksiya uchun bu [Immunization](StructureDefinition-uz-core-immunization.html);
 - izohlar.
 
-> Emlashdan keyingi reaksiya uchun gumon qilingan obʼyektni [Immunization](StructureDefinition-uz-core-immunization.html) ga yoʻnaltiring va reaksiyani tavsiflovchi Condition yoki Observation ni bogʻlash uchun natijaviy taʼsirdan (resulting effect) foydalaning.
+> Vaksinatsiyadan keyingi reaksiya uchun taxminiy manbada [Immunization](StructureDefinition-uz-core-immunization.html) resursiga reference ko'rsating, `resultingEffect` elementida esa reaksiyani tavsiflovchi Condition yoki Observation resursiga reference bering.
 
-### JSON ni bosqichma-bosqich qurish
+### JSONni bosqichma-bosqich shakllantirish
 
-Quyidagi misollar server qabul qiladigan eng kichik nusxadan toʻliq nojoʻya hodisa yozuvigacha boradi. Birini koʻchirib oling va moslang - koʻrsatilgan har bir qiymat ushbu profilga nisbatan validatsiyadan oʻtadi. Toʻliq maʼlumot uchun namunaviy nusxalar sahifaning pastki qismida havola qilingan ([oʻlim bilan yakunlangan anafilaksiya](AdverseEvent-example-fatal-anaphylaxis.html), [oldi olingan dori xatosi](AdverseEvent-example-averted-medication-error.html)).
+Quyidagi misollar server qabul qiladigan eng kichik nusxadan boshlab, nojo'ya hodisa haqidagi to'liq yozuvgacha boradi. Mos misolni nusxalang va moslashtiring - ko'rsatilgan har bir qiymat ushbu profil bo'yicha validatsiyadan o'tadi. To'liq etalon nusxalarga sahifaning pastki qismida reference berilgan ([o'lim bilan yakunlangan anafilaksiya](AdverseEvent-example-fatal-anaphylaxis.html), [oldi olingan dori vositasi bilan bog'liq xato](AdverseEvent-example-averted-medication-error.html)).
 
-#### Siz yuborishingiz kerak boʻlgan eng kichik AdverseEvent
+#### Yuborilishi kerak bo'lgan eng kichik AdverseEvent
 
-Bazaviy resurs yozuvning `status` ini, `actuality` ni (bu real zarar boʻldimi yoki potensial near-miss?) va u sodir boʻlgan `subject` ni talab qiladi; nojoʻya hodisa faqat siz unga sabab boʻlgan deb hisoblangan `suspectEntity` ni ham qoʻshganingizda maʼnoga ega boʻladi. Eʼtibor bering, `status` va `actuality` oddiy kodlardir, `CodeableConcept` emas - oddiy satr (string) ni yuboring. Har bir UZ Core resursi shuningdek `meta.profile` da oʻzi mos kelishini daʼvo qilayotgan profilni nomlashi shart:
+Bazaviy resurs yozuvning `status`, `actuality` (amalda zarar yetkazilganmi yoki zarar yetkazilishining oldi olingan potensial xavfli holat yuz berganmi?) va hodisa sodir bo'lgan `subject` elementlarini talab qiladi. Nojo'ya hodisa `suspectEntity` - hodisaning taxminiy manbai - ko'rsatilgandagina amaliy ma'no kasb etadi. E'tibor bering: `status` va `actuality` `CodeableConcept` emas, balki oddiy kodlardir; ularni qo'shimcha tuzilmasiz satr ko'rinishida yuboring. Har bir UZ Core resursi `meta.profile` elementida qaysi profilga muvofiqligini ham ko'rsatishi kerak:
 
 ```json
 {
@@ -46,11 +44,11 @@ Bazaviy resurs yozuvning `status` ini, `actuality` ni (bu real zarar boʻldimi y
 }
 ```
 
-`status` (registered, in-progress, completed ...) va `actuality` (`actual` / `potential`) ning har biri talab qilinadigan (required) bogʻlanishdan foydalanadi - qiymat bogʻlangan qiymatlar toʻplamidan (value set) kelishi shart. `suspectEntity.instance[x]` - hodisaga sabab boʻlgan deb gumon qilinayotgan obʼyekt; bu yerda Medication, lekin emlashdan keyingi reaksiya uchun bu [Immunization](StructureDefinition-uz-core-immunization.html), shuningdek u Procedure, Substance, Device yoki MedicationAdministration ham boʻlishi mumkin. Bu oddiy `Reference`, shuning uchun `instanceReference` toʻgʻridan-toʻgʻri `{ "reference": "Type/id" }` ni saqlaydi.
+`status` (registered, in-progress, completed ...) va `actuality` (`actual` / `potential`) uchun majburiy bog'lanish qo'llanadi: qiymat tegishli ValueSet tarkibidan tanlanishi kerak. `suspectEntity.instance[x]` elementida hodisa bilan bog'liq deb taxmin qilinayotgan nusxa ko'rsatiladi. Ushbu misolda bu Medication; vaksinatsiyadan keyingi reaksiya uchun [Immunization](StructureDefinition-uz-core-immunization.html) ishlatiladi. Shuningdek Procedure, Substance, Device yoki MedicationAdministration ham ko'rsatilishi mumkin. Bu oddiy `Reference` bo'lgani uchun `instanceReference` bevosita `{ "reference": "Type/id" }` tuzilmasini saqlaydi.
 
-#### Real nojoʻya hodisaga oid haqqoniy misol
+#### Amalda yuz bergan nojo'ya hodisaning realistik misoli
 
-Bemorga yetib borgan real hodisa uchun u qachon sodir boʻlganini (`occurrenceDateTime`), qachon `detected` boʻlganini, `recordedDate` ni, `encounter` va `location` ni, `resultingEffect` ni (hodisa keltirib chiqargan [Condition](StructureDefinition-uz-core-condition.html) yoki [Observation](StructureDefinition-uz-core-observation.html)), `seriousness` va `outcome` ni, `recorder` ni va uni xabar qilgan `participant` ni toʻldiring:
+Bemorga amalda ta'sir qilgan hodisa uchun uning yuz bergan vaqtini (`occurrenceDateTime`), `detected` elementida aniqlangan vaqtni, `recordedDate`, bog'liq `encounter` va `location`, `resultingEffect` - hodisa sababli yuzaga kelgan [Condition](StructureDefinition-uz-core-condition.html) yoki [Observation](StructureDefinition-uz-core-observation.html) - `seriousness`, `outcome`, `recorder` va hodisa haqida xabar bergan `participant` ma'lumotlarini to'ldiring:
 
 ```json
 {
@@ -109,11 +107,11 @@ Bemorga yetib borgan real hodisa uchun u qachon sodir boʻlganini (`occurrenceDa
 }
 ```
 
-`CodeableConcept` boʻlgan `seriousness` va `outcome` dan farqli oʻlaroq (bu yerda `outcome` SNOMED CT dan, `seriousness` esa HL7 jiddiylik kod tizimidan foydalanadi), `resultingEffect`, `subject`, `encounter`, `location`, `recorder` va `participant.actor` ning hammasi oddiy `Reference` lardir - `{ "reference": "Type/id" }`, qoʻshimcha ichma-ich joylashtirishsiz. `participant.function` oʻsha shaxs nima uchun jalb qilinganini bildiradi (bu yerda `AUT`, yaʼni uni qayd etgan muallif).
+`CodeableConcept` turidagi `seriousness` va `outcome` elementlaridan farqli ravishda (ushbu misolda `outcome` SNOMED CTdan, `seriousness` esa HL7 jiddiylik kodlari tizimidan foydalanadi), `resultingEffect`, `subject`, `encounter`, `location`, `recorder` va `participant.actor` elementlarining barchasi qo'shimcha ichma-ich tuzilmasiz `{ "reference": "Type/id" }` formatidagi oddiy `Reference` hisoblanadi. `participant.function` mazkur shaxs nima sababdan ishtirok etganini ko'rsatadi (bu yerda `AUT` - hodisani qayd etgan muallif).
 
-#### Bu real zarar emas, near-miss boʻlganda
+#### Hodisa amalda zarar emas, balki oldi olingan potensial xavfli holat bo'lganda
 
-Bemorga hech qachon yetib bormagan, oldi olingan hodisa xuddi shu tarzda qayd etiladi, lekin `actuality` `potential` ga oʻrnatiladi. `resultingEffect` boʻlmaydi (bemorga hech narsa boʻlmagan) va `outcome` tushirib qoldiriladi; uni qanday ushlab qolinganini tushuntirish uchun `note` dan foydalaning. `suspectEntity` hamon zararga sabab boʻlishi mumkin boʻlgan narsaga ishora qiladi:
+Bemorga yetib bormagan, oldi olingan hodisa xuddi shu tarzda qayd etiladi, biroq `actuality` uchun `potential` qiymati ko'rsatiladi. `resultingEffect` bo'lmaydi, chunki bemorga hech qanday ta'sir yuz bermagan, `outcome` esa ko'rsatilmaydi. Hodisa qanday aniqlanib, oldi olinganini `note` elementida tushuntiring. `suspectEntity` baribir zarar yetkazishi mumkin bo'lgan obyektga reference saqlaydi:
 
 ```json
 {
@@ -146,6 +144,6 @@ Bemorga hech qachon yetib bormagan, oldi olingan hodisa xuddi shu tarzda qayd et
 }
 ```
 
-Near-miss hodisani qayd etish baribir foydali: `seriousness` u qanchalik yomon boʻlishi mumkinligini aks ettiradi, `detected` esa xavfsizlik tarmogʻi uni qachon ushlab qolganini qayd etadi. Elementni qachon tushirib qoldirish va qachon yoʻq deb belgilash haqida [Yetishmayotgan va yashirilgan maʼlumotlar](general-guidance.html#missing-data) ga qarang.
+Zarar yetkazilishining oldi olingan potensial xavfli holatni ham qayd etish muhim: `seriousness` yuz berishi mumkin bo'lgan oqibatning qanchalik og'irligini, `detected` esa xavfsizlik mexanizmi hodisani qachon aniqlaganini ko'rsatadi. Elementni qachon qoldirib ketish va qachon ma'lumot yo'qligini belgilash kerakligi [Yetishmayotgan va yashirilgan ma'lumotlar](general-guidance.html#missing-data) bo'limida tushuntirilgan.
 
-API chaqiruvlari va namunaviy yuk (payload) misoli uchun ushbu sahifaning pastki qismidagi [Tezkor boshlash](#quick-start) ga qarang.
+API chaqiruvlari misollari va namunaviy payload ushbu sahifaning pastki qismidagi [Tezkor boshlash](#quick-start) bo'limida keltirilgan.

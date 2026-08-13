@@ -4548,10 +4548,7 @@ msgid ""
 "Uzbekistan Core AdverseEvent profile, used to represent an adverse event "
 "that may be associated with unintended consequences for a patient or "
 "research participant."
-msgstr ""
-"Uzbekistan Core AdverseEvent profili, bemor yoki tadqiqot ishtirokchisi "
-"uchun kutilmagan oqibatlar bilan bog‘liq bo‘lishi mumkin bo‘lgan noxush "
-"hodisani ifodalash uchun ishlatiladi."
+msgstr "Uzbekistan Core AdverseEvent profili bemor yoki tadqiqot ishtirokchisi uchun kutilmagan oqibatlar bilan bog'liq bo'lishi mumkin bo'lgan nojo'ya hodisani ifodalash uchun ishlatiladi."
 
 # ImplementationGuide.definition.resource.name
 #: ImplementationGuide.definition.resource.name
@@ -4564,10 +4561,7 @@ msgid ""
 "Uzbekistan Core profile for AllergyIntolerance, representing clinical "
 "records of allergy or intolerance within the national health information "
 "exchange."
-msgstr ""
-"Uzbekistan Core AllergyIntolerance profili, milliy sog‘liqni saqlash axborot "
-"almashinuvi doirasida allergiya yoki ko‘tara olmaslik bo‘yicha klinik "
-"yozuvlarni ifodalaydi."
+msgstr "Uzbekistan Core AllergyIntolerance profili milliy sog'liqni saqlash axborot almashinuvi doirasida allergiya yoki o'zlashtira olmaslik haqidagi klinik yozuvlarni ifodalaydi."
 
 # ImplementationGuide.definition.resource.name
 #: ImplementationGuide.definition.resource.name
@@ -4579,9 +4573,7 @@ msgstr "UZ Core AuditEvent"
 msgid ""
 "Uzbekistan Core AuditEvent profile, used to track user and application "
 "activity"
-msgstr ""
-"Uzbekistan Core AuditEvent profili, foydalanuvchi va ilova faoliyatini "
-"kuzatish uchun ishlatiladi"
+msgstr "Foydalanuvchilar va ilovalar faoliyatini kuzatish uchun mo'ljallangan Uzbekistan Core AuditEvent profili"
 
 # ImplementationGuide.definition.resource.name
 #: ImplementationGuide.definition.resource.name
@@ -4593,9 +4585,7 @@ msgstr "UZ Core Condition"
 msgid ""
 "Uzbekistan Core Condition profile, used for documenting a patient's symptoms,"
 " conditions, and their characteristics"
-msgstr ""
-"Uzbekistan Core Condition profili, bemorning simptomlari, holatlari va "
-"ularning xususiyatlarini hujjatlashtirish uchun ishlatiladi"
+msgstr "Bemorning simptomlari, klinik holatlari va ularning xususiyatlarini hujjatlashtirish uchun ishlatiladigan Uzbekistan Core Condition profili"
 
 # ImplementationGuide.definition.resource.name
 #: ImplementationGuide.definition.resource.name
@@ -4607,9 +4597,7 @@ msgstr "UZ Core Consent"
 msgid ""
 "Uzbekistan Core Consent profile, used to manage patient consent for data "
 "sharing and processing"
-msgstr ""
-"Uzbekistan Core Consent profili, ma’lumotlarni almashish va qayta ishlash "
-"bo‘yicha bemor roziligini boshqarish uchun ishlatiladi"
+msgstr "Bemorning ma'lumotlarni almashish va qayta ishlashga roziligini boshqarish uchun foydalaniladigan Uzbekistan Core Consent profili"
 
 # ImplementationGuide.definition.resource.name
 #: ImplementationGuide.definition.resource.name
@@ -4620,9 +4608,7 @@ msgstr "UZ Core Encounter"
 #: ImplementationGuide.definition.resource.description
 msgid ""
 "Uzbekistan Core Encounter profile, used to represent clinical encounters"
-msgstr ""
-"Uzbekistan Core Encounter profili, klinik Encounterlarni ifodalash uchun "
-"ishlatiladi"
+msgstr "Klinik tashriflarni ifodalash uchun qo'llaniladigan Uzbekistan Core Encounter profili"
 
 # ImplementationGuide.definition.resource.name
 #: ImplementationGuide.definition.resource.name
@@ -4634,10 +4620,7 @@ msgstr "UZ Core EpisodeOfCare"
 msgid ""
 "Uzbekistan Core profile for EpisodeOfCare, representing a patient's period "
 "of long-term care such as pregnancy care or chronic disease management."
-msgstr ""
-"Homiladorlikni boshqarish yoki surunkali kasalliklarni davolash kabi uzoq "
-"muddatli parvarishlash davrini ifodalovchi EpizodOfCare uchun "
-"O'zbekistonning asosiy profili."
+msgstr "O'zbekiston Core EpisodeOfCare profili bemorga uzoq muddat davomida tibbiy yordam ko'rsatish davrini, masalan, homiladorlikni kuzatish yoki surunkali kasallikni boshqarishni ifodalaydi."
 
 # ImplementationGuide.definition.resource.name
 #: ImplementationGuide.definition.resource.name
