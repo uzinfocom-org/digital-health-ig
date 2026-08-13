@@ -1,44 +1,42 @@
-> **Машинный перевод, требуется проверка человеком.** Эта страница автоматически переведена с английского языка с помощью искусственного интеллекта и пока не проверена редактором. При любых расхождениях приоритет имеет оригинальная англоязычная версия.
+UZ Core Encounter представляет отдельное взаимодействие пациента с системой здравоохранения - визит - на Цифровой платформе здравоохранения. Encounter является центральным ресурсом маршрута пациента: ресурсы [Observation](StructureDefinition-uz-core-observation.html), [Procedure](StructureDefinition-uz-core-procedure.html), [Condition](StructureDefinition-uz-core-condition.html), MedicationRequest и клинические документы содержат reference на Encounter, к которому они относятся. Он фиксирует место проведения визита, участников оказания помощи и диагнозы, установленные в его рамках (каждый из которых указывает на [Condition](StructureDefinition-uz-core-condition.html)), а также может быть сгруппирован в рамках [EpisodeOfCare](StructureDefinition-uz-core-episodeofcare.html).
 
-UZ Core Encounter представляет собой единичное взаимодействие между пациентом и системой здравоохранения - визит - на Платформе цифрового здравоохранения. Это опорная точка пути пациента: [Observations](StructureDefinition-uz-core-observation.html), [Procedures](StructureDefinition-uz-core-procedure.html), [Conditions](StructureDefinition-uz-core-condition.html), MedicationRequests и клинические документы - все они ссылаются на тот Encounter, к которому относятся. Он фиксирует, где состоялся визит, кто его провёл и какие диагнозы были поставлены в его ходе (каждый из которых указывает на [Condition](StructureDefinition-uz-core-condition.html)), и может быть сгруппирован в рамках [EpisodeOfCare](StructureDefinition-uz-core-episodeofcare.html).
+### Обязательные элементы и элементы Must Support
 
-### Обязательные и Must Support элементы данных
+Перечисленные ниже элементы должны либо всегда присутствовать (обязательные элементы), либо поддерживаться при наличии соответствующих данных ([Must Support](must-support.html)). Не все они обязательны, однако система должна заполнять каждый элемент Must Support при наличии данных и обрабатывать его при получении. Ниже приведено человекочитаемое описание; точные кардинальности, типы и терминологические привязки указаны в [формальных представлениях](#profile).
 
-Перечисленные ниже элементы должны присутствовать всегда (обязательные) либо должны поддерживаться, когда данные доступны ([Must Support](must-support.html)) - не все из них являются обязательными, но ваша система должна заполнять каждый Must Support элемент, когда располагает соответствующими данными, и обрабатывать его при получении. Это удобочитаемое резюме; [формальные представления](#profile) ниже задают точные кардинальности, типы и терминологические связки.
+#### Что обязательно должно присутствовать в каждом UZ Core Encounter
 
-#### Каждый UZ Core Encounter должен иметь
+Единственным безусловно обязательным элементом этого профиля является `status` (planned \| in-progress \| completed \| cancelled ...), унаследованный как обязательный от базового ресурса и имеющий обязательную терминологическую привязку. Кроме того, если добавлена запись `location`, в ней обязательно должен быть указан reference на место (`location.location` с кардинальностью 1..1), поскольку запись местоположения не может существовать без указания конкретного места.
 
-Единственными обязательными элементами этого профиля являются статус (planned \| in-progress \| completed \| cancelled ...), унаследованный как обязательный от базового ресурса под required связкой, и - когда указано местоположение - ссылка на это местоположение (location.location 1..1), поскольку нельзя указать запись о местоположении, не сообщив, какое именно это место.
-
-#### Каждый UZ Core Encounter должен поддерживать
+#### Что должен поддерживать каждый UZ Core Encounter
 
 
 
-- идентификатор (0..1);
-- статус, класс, приоритет и тип (каждый под required связкой);
-- serviceType (со ссылкой на HealthcareService);
-- subject (пациента) и subjectStatus (required связка);
-- связи episodeOfCare, basedOn, careTeam и partOf;
-- организацию serviceProvider;
-- записи participant с их actor, type (extensible связка) и period;
-- appointment, по которому был запланирован визит;
-- reason - с `use` (preferred связка) и `value`, ссылающимся на Condition, DiagnosticReport, Procedure или Observation;
-- детали virtualService (телемедицина);
-- actualPeriod, plannedStartDate, plannedEndDate и length;
-- список diagnosis, каждый со своим condition (ссылка на Condition) и use;
-- account для выставления счетов;
-- детали admission - origin, admitSource, reAdmission, destination, dischargeDisposition (каждое кодированное значение под required связкой);
-- местоположение, где происходит взаимодействие.
+- элемент `identifier` (0..1);
+- элементы `status`, `class`, `priority` и `type` (каждый с обязательной терминологической привязкой);
+- элемент `serviceType`, содержащий reference на HealthcareService;
+- элементы `subject` (Patient) и `subjectStatus` (обязательная терминологическая привязка);
+- references в элементах `episodeOfCare`, `basedOn`, `careTeam` и `partOf`;
+- Organization в элементе `serviceProvider`;
+- записи `participant` с элементами `actor`, `type` (расширяемая привязка) и `period`;
+- Appointment, в рамках которого был запланирован Encounter;
+- элемент `reason` с `use` (предпочтительная привязка) и `value`, содержащим reference на [Condition](StructureDefinition-uz-core-condition.html), DiagnosticReport, Procedure или Observation;
+- сведения о `virtualService` (телемедицине);
+- элементы `actualPeriod`, `plannedStartDate`, `plannedEndDate` и `length`;
+- список `diagnosis`, где каждая запись содержит `condition` (reference на [Condition](StructureDefinition-uz-core-condition.html)) и `use`;
+- элемент `account` для выставления счетов;
+- сведения `admission`: `origin`, `admitSource`, `reAdmission`, `destination` и `dischargeDisposition` (каждое кодированное значение имеет обязательную привязку);
+- место, где проводится Encounter.
 
-> Encounter не может быть установлен в `completed`, если дата окончания его периода раньше даты начала - проверьте `actualPeriod` перед закрытием визита.
+> Encounter нельзя перевести в статус `completed`, если окончание периода раньше его начала. Перед закрытием визита проверьте `actualPeriod`.
 
-### Построение JSON, шаг за шагом
+### Пошаговое формирование JSON
 
-Приведённые ниже примеры выстраивают единичный визит - экстренное стационарное взаимодействие - от минимально необходимого до полной записи о госпитализации. Полный экземпляр - это [пример Encounter](Encounter-example-encounter.html). Скопируйте этап и адаптируйте его; каждое показанное значение проходит валидацию по этому профилю.
+Примеры ниже последовательно дополняют один визит - экстренную госпитализацию - от минимально допустимой записи до полной записи о поступлении. Полный экземпляр приведён в [примере Encounter](Encounter-example-encounter.html). Скопируйте подходящий этап и адаптируйте его: все показанные значения проходят валидацию по этому профилю.
 
-#### Минимальный Encounter, который вам следует отправлять
+#### Минимальный Encounter для отправки
 
-`status` - единственный строго обязательный элемент, но Encounter полезен только при наличии `class` (как произошёл контакт - стационарный, амбулаторный, экстренный) и `subject`, которого он касается. Обратите внимание, что `class` - это **список** `CodeableConcept`:
+`status` - единственный строго обязательный элемент, однако Encounter практически полезен только при наличии `class` (как проходил контакт: стационарно, амбулаторно или экстренно) и `subject`, к которому он относится. Обратите внимание: `class` представляет собой список `CodeableConcept`:
 
 ```json
 {
@@ -52,11 +50,11 @@ UZ Core Encounter представляет собой единичное вза�
 }
 ```
 
-`status`, `class`, `priority`, `type` и `subjectStatus` - каждый использует required связку - значение должно происходить из связанного набора значений (представление Snapshot ниже перечисляет каждый из них).
+`status`, `class`, `priority`, `type` и `subjectStatus` имеют обязательную терминологическую привязку: значение должно быть выбрано из связанного ValueSet (каждая привязка приведена ниже в представлении Snapshot).
 
-#### Реалистичный визит
+#### Реалистичный пример визита
 
-Заполните, когда это произошло (`actualPeriod`), какого рода была услуга (`type`), состояние пациента в её ходе (`subjectStatus`), кто принимал участие (`participant`, чей `actor` ссылается на практикующего специалиста или [PractitionerRole](StructureDefinition-uz-core-practitioner-role.html)), и почему (`reason` - указывающий на Condition, DiagnosticReport, Procedure или Observation):
+Укажите, когда состоялся визит (`actualPeriod`), тип услуги (`type`), состояние пациента во время визита (`subjectStatus`), участников (`participant`, где `actor` содержит reference на [Practitioner](StructureDefinition-uz-core-practitioner.html) или [PractitionerRole](StructureDefinition-uz-core-practitioner-role.html)) и причину обращения (`reason`, указывающий на Condition, DiagnosticReport, Procedure или Observation):
 
 ```json
 {
@@ -141,9 +139,9 @@ UZ Core Encounter представляет собой единичное вза�
 }
 ```
 
-#### Диагноз, госпитализация и местоположение
+#### Диагноз, поступление и место оказания помощи
 
-Для госпитализации добавьте список `diagnosis` (каждый `condition` - это `CodeableReference` на [Condition](StructureDefinition-uz-core-condition.html)), детали `admission` (источник госпитализации, признак повторной госпитализации, исход выписки - все под required связками) и где это произошло. Если вы включаете запись `location`, вы должны указать место - `location.location` является обязательным:
+Для госпитализации добавьте список `diagnosis` (каждый `condition` представляет собой `CodeableReference` на [Condition](StructureDefinition-uz-core-condition.html)), сведения `admission` (источник поступления, признак повторной госпитализации и способ выбытия - все значения имеют обязательные привязки) и место оказания помощи. Если добавлена запись `location`, необходимо указать конкретное место: `location.location` является обязательным:
 
 ```json
 {
@@ -185,6 +183,6 @@ UZ Core Encounter представляет собой единичное вза�
 }
 ```
 
-Эти ключи встраиваются в тот же ресурс, что и реалистичный визит выше. Чтобы сгруппировать визит в рамках более продолжительного курса лечения, сошлитесь на [EpisodeOfCare](StructureDefinition-uz-core-episodeofcare.html) через `episodeOfCare`.
+Эти ключи добавляются в тот же ресурс, что и в приведённом выше реалистичном примере визита. Чтобы связать визит с более продолжительным курсом лечения, укажите reference на [EpisodeOfCare](StructureDefinition-uz-core-episodeofcare.html) в элементе `episodeOfCare`.
 
-Примеры вызовов API и образец полезной нагрузки см. в разделе [Быстрый старт](#quick-start) в нижней части этой страницы.
+Примеры API-запросов и образец полезной нагрузки приведены в разделе [Быстрый старт](#quick-start) внизу страницы.

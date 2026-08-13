@@ -1,39 +1,37 @@
-> **Mashina tarjimasi, inson tomonidan tekshirilishi zarur.** Ushbu sahifa ingliz tilidan sun'iy intellekt yordamida avtomatik tarjima qilingan va hali muharrir tomonidan tekshirilmagan. Har qanday nomuvofiqlikda asl inglizcha versiya ustuvor hisoblanadi.
+UZ Core Condition DHP (Digital Health Platform - Raqamli sog'liqni saqlash platformasi) da bemorning tashxisi, muammosi yoki boshqa klinik holati haqidagi ma'lumotlarni qayd etadi. Klinik holatlarni kodlash uchun ICD-10 yoki SNOMED CT qo'llanadi; ICD-11 dan foydalanish rejalashtirilgan. Condition [Patient](StructureDefinition-uz-core-patient.html) hamda u qayd etilgan tashrif bilan bog'lanadi. [Encounter](StructureDefinition-uz-core-encounter.html), o'z navbatida, Condition resursini tashxislardan biri sifatida ko'rsatishi mumkin va tegishli tashxis kodi hisobotlarni shakllantirishda qo'llanadi.
 
-UZ Core Condition Raqamli sog'liqni saqlash platformasida bemor uchun tashxis, muammo yoki boshqa klinik holatni qayd etadi. Holatlar ICD-10 yoki SNOMED CT bilan kodlanadi (ICD-11 rejalashtirilgan). Holat o'zining [Patient](StructureDefinition-uz-core-patient.html) resursiga va u qayd etilgan tashrifga bog'lanadi; o'z navbatida [Encounter](StructureDefinition-uz-core-encounter.html) Holatga o'zining tashxislaridan biri sifatida ishora qiladi va aynan o'sha tashxis kodi hisobotlarga o'tadi.
+### Majburiy ma'lumot elementlari va Must Support elementlari
 
-### Majburiy va Must Support ma'lumot elementlari
+Quyida keltirilgan elementlar har doim mavjud bo'lishi (mandatory) yoki ma'lumot mavjud bo'lganda qo'llab-quvvatlanishi ([Must Support](must-support.html)) kerak. Ularning barchasi ham majburiy emas, biroq tizim tegishli ma'lumot mavjud bo'lsa, har bir Must Support elementini to'ldirishi va qabul qilganda qayta ishlashi kerak. Bu inson o'qishi uchun mo'ljallangan qisqacha tavsif; aniq karralilik, turlar va terminologik bog'lanishlar quyidagi [formal ko'rinishlarda](#profile) keltirilgan.
 
-Quyidagi elementlar har doim mavjud bo'lishi (majburiy) yoki ma'lumot mavjud bo'lganda qo'llab-quvvatlanishi kerak ([Must Support](must-support.html)) - hammasi ham talab qilinmaydi, lekin tizimingiz har bir Must Support elementini ma'lumot mavjud bo'lganda to'ldirishi va uni qabul qilishda qayta ishlashi shart. Bu inson o'qiy oladigan xulosa; quyidagi [rasmiy ko'rinishlar](#profile) aniq kardinalliklar, turlar va terminologiya bog'lanishlarini beradi.
+#### Har bir UZ Core Condition tarkibida bo'lishi kerak bo'lgan elementlar (Must Have)
 
-#### Har bir UZ Core Condition quyidagiga ega bo'lishi shart
+Ushbu profil o'ziga xos majburiy karraliliklarni qo'shmaydi. Majburiy elementlar asosiy resursdan meros qilib olinadi: klinik status (1..1) va `subject` - klinik holat qayd etilgan Patient.
 
-Bu profil o'zining hech qanday majburiy kardinalligini qo'shmaydi. Talab qilinadigan elementlar asosiy resursdan meros qilib olinadi: klinik holat (1..1) va subyekt (holat tegishli bo'lgan bemor).
-
-#### Har bir UZ Core Condition quyidagini qo'llab-quvvatlashi shart
+#### Har bir UZ Core Condition qo'llab-quvvatlashi kerak bo'lgan elementlar (Must Support)
 
 
 
-- DHP clinical-status qiymatlar to'plamiga bog'langan klinik holat (active, recurrence, remission, resolved ...);
-- tasdiqlash holati (provisional, confirmed, refuted, entered-in-error ...);
-- og'irlik darajasi (preferred bog'lanish; kod SNOMED *Disability* tushunchasi bo'lganda nogironlik tasnifi talab qilinadi);
-- holatning o'zini aniqlovchi kod (ICD-10 yoki SNOMED CT; DHP condition qiymatlar to'plamiga preferred bog'lanish);
-- diagnosis-type kengaytmasi (masalan, asosiy tashxis, yo'naltiruvchi muassasa tashxisi), 0..1;
-- tana qismi;
-- subyekt va u qayd etilgan tashrif;
-- onset[x] va abatement[x] vaqti hamda recordedDate;
-- ishtirokchi (0..1) - holatni tasdiqlagan aktyor va uning vazifasi;
-- erkin matnli izohlar.
+- DHP klinik statuslar ValueSet iga bog'langan klinik status (active, recurrence, remission, resolved va boshqalar);
+- tasdiqlanganlik statusi (provisional, confirmed, refuted, entered-in-error va boshqalar);
+- og'irlik darajasi (preferred bog'lanish; agar `code` SNOMED Disability tushunchasiga mos kelsa, nogironlik tasnifi majburiy);
+- klinik holatning o'zini identifikatsiya qiluvchi `code` (ICD-10 yoki SNOMED CT; DHP klinik holatlar ValueSet iga preferred bog'lanish);
+- `diagnosisType` extensioni - masalan, asosiy tashxis yoki yo'llanma bergan tashkilot tashxisi (0..1);
+- `bodySite` elementidagi anatomik joylashuv;
+- `subject` va klinik holat qayd etilgan Encounter;
+- `onset[x]` orqali boshlanish vaqti, `abatement[x]` orqali tugash yoki bartaraf bo'lish vaqti, shuningdek `recordedDate`;
+- `participant` (0..*) - klinik holatni qayd etgan ishtirokchi va uning funksiyasi;
+- erkin matn ko'rinishidagi izohlar.
 
-> `verificationStatus` majburiy emas, lekin majburiy `clinicalStatus` bilan birgalikda u keyingi ko'rinishlar holatni faol, tasdiqlangan muammo sifatida ko'rib chiqishini belgilaydi - ma'lumot ma'lum bo'lganda ikkalasini ham to'ldiring.
+> `verificationStatus` majburiy emas, biroq u majburiy `clinicalStatus` bilan birgalikda holat keyingi ko'rinishlarda faol va tasdiqlangan muammo sifatida aks ettirilishini belgilaydi. Ma'lumot ma'lum bo'lsa, ikkala element ham to'ldirilishi kerak.
 
-### JSON ni bosqichma-bosqich qurish
+### JSON ni bosqichma-bosqich shakllantirish
 
-Quyidagi misollar server qabul qiladigan eng kichik namunadan to'liq kodlangan tashxisgacha boradi. Birini nusxa oling va moslang - ko'rsatilgan har bir qiymat ushbu profilga muvofiq validatsiyadan o'tadi. To'liq ma'lumotnoma namunalari sahifaning pastki qismida bog'langan ([bosh og'rig'i](Condition-example-headache.html), [saraton](Condition-example-cancer.html), [nogironlik](Condition-example-disability.html)).
+Quyidagi misollar server qabul qiladigan eng kichik instansiyadan to'liq kodlangan tashxisgacha bo'lgan jarayonni ko'rsatadi. Mos misolni nusxalab, ehtiyojga qarab moslashtiring: keltirilgan barcha qiymatlar ushbu profil bo'yicha validatsiyadan o'tadi. To'liq etalon instansiyalar sahifaning pastki qismidagi havolalarda mavjud ([bosh og'rig'i](Condition-example-headache.html), [saraton](Condition-example-cancer.html), [nogironlik](Condition-example-disability.html)).
 
-#### Siz yuborishingiz kerak bo'lgan eng kichik Condition
+#### Yuborilishi kerak bo'lgan eng kichik Condition
 
-Condition ning majburiy elementlari `subject` (u tegishli bo'lgan bemor) va `clinicalStatus` (ikkalasi ham 1..1), va Condition faqat holat nima ekanligini bildiruvchi `code` bilan foydali bo'ladi. Har bir UZ Core resursi o'zi mos kelishini da'vo qilayotgan profilni `meta.profile` da ham nomlashi shart, shunda server qaysi qoidalarga qarshi validatsiya qilishni biladi. `code` DHP condition qiymatlar to'plamiga bog'langan (ICD-10 yoki SNOMED CT; preferred); `clinicalStatus` DHP clinical-status qiymatlar to'plamiga bog'langan `CodeableConcept`, va `subject` [Patient](StructureDefinition-uz-core-patient.html) ga oddiy `Reference`. Shuncha narsa allaqachon validatsiyadan o'tadi:
+Condition resursining majburiy elementlari - `subject` (klinik holati qayd etilgan [Patient](StructureDefinition-uz-core-patient.html)) va `clinicalStatus` (ikkalasining karraliligi 1..1). Condition faqat qanday holat qayd etilganini ko'rsatuvchi `code` mavjud bo'lgandagina amaliy ahamiyatga ega. Har bir UZ Core resursi server qaysi qoidalar bo'yicha validatsiya qilishini bilishi uchun `meta.profile` elementida mos kelishini bildirgan profilni ham ko'rsatishi kerak. `code` DHP klinik holatlar ValueSet iga bog'langan (ICD-10 yoki SNOMED CT; preferred), `clinicalStatus` `CodeableConcept` turiga ega va DHP klinik statuslar ValueSet iga bog'langan, `subject` esa Patient resursiga oddiy `Reference` hisoblanadi. Quyidagi ma'lumotlar validatsiyadan o'tish uchun yetarli:
 
 ```json
 {
@@ -51,11 +49,11 @@ Condition ning majburiy elementlari `subject` (u tegishli bo'lgan bemor) va `cli
 }
 ```
 
-ICD-10 va SNOMED CT bugungi kunda qo'llanilayotgan kodlash tizimlaridir (ICD-11 rejalashtirilgan). Qaysi tizimdan foydalanish kerakligini [Terminologiya](general-guidance.html#terminology) bo'limidan ko'ring.
+Hozirgi vaqtda ICD-10 va SNOMED CT kodlash tizimlari qo'llanadi; ICD-11 ni qo'llab-quvvatlash rejalashtirilgan. Qaysi tizimdan foydalanish bo'yicha tavsiyalar [Terminologiya](general-guidance.html#terminology) bo'limida keltirilgan.
 
-#### Real tashxis
+#### Haqiqiy tashxis yozuvi
 
-Amalda siz platforma sizdan qo'llab-quvvatlashingizni kutadigan klinik kontekstni yuborasiz: `clinicalStatus` va `verificationStatus` (ular birgalikda holat faol, tasdiqlangan muammo sifatida ko'rsatilishini hal qiladi), u qachon boshlangani (`onsetDateTime`) va qachon qayd etilgani (`recordedDate`). Erkin matnli `note` shifokorning bayonini olib yuradi:
+Amalda platforma qo'llab-quvvatlanishini kutadigan klinik kontekst yuboriladi: `clinicalStatus` va `verificationStatus` (ular birgalikda holat faol va tasdiqlangan muammo sifatida ko'rsatilishini belgilaydi), boshlanish sanasi (`onsetDateTime`) va qayd etilgan sana (`recordedDate`). `note` elementidagi erkin matn tibbiyot xodimining klinik tavsifini o'z ichiga oladi:
 
 ```json
 {
@@ -81,11 +79,11 @@ Amalda siz platforma sizdan qo'llab-quvvatlashingizni kutadigan klinik kontekstn
 }
 ```
 
-`clinicalStatus` (active, recurrence, remission, resolved ...) va `verificationStatus` (provisional, confirmed, refuted, entered-in-error ...) ning har biri DHP qiymatlar to'plamiga bog'langan - qiymatlarni o'sha bog'lanishlardan oling (quyidagi Snapshot ko'rinishi ularni sanab o'tadi).
+`clinicalStatus` (active, recurrence, remission, resolved va boshqalar) va `verificationStatus` (provisional, confirmed, refuted, entered-in-error va boshqalar) tegishli DHP ValueSet lariga bog'langan. Qiymatlar shu bog'lanishlardan tanlanishi kerak; to'liq ro'yxat quyidagi Snapshot ko'rinishida keltirilgan.
 
-#### Og'irlik darajasi, tana qismi, tashxis turi va kim tasdiqlaganini qo'shish
+#### Og'irlik darajasi, anatomik joylashuv, tashxis turi va holatni qayd etgan ishtirokchini qo'shish
 
-To'liqroq yozuv holatni tasniflovchi va unga mansubligini ko'rsatuvchi Must-Support elementlarini qo'shadi: `severity` (SNOMED, preferred), `bodySite` (SNOMED), `diagnosisType` kengaytmasi (asosiy tashxis, yo'naltiruvchi muassasa tashxisi ...) va uni kim tasdiqlaganini nomlovchi `participant`. Ishtirokchi `actor` [Practitioner](StructureDefinition-uz-core-practitioner.html), [PractitionerRole](StructureDefinition-uz-core-practitioner-role.html), Patient, RelatedPerson yoki Device ga oddiy `Reference`:
+To'liqroq resurs Condition ni tasniflaydigan va ma'lumot manbasini ko'rsatadigan Must Support elementlarini o'z ichiga oladi: `severity` (SNOMED, preferred), `bodySite` (SNOMED), `diagnosisType` extensioni (asosiy tashxis, yo'llanma bergan tashkilot tashxisi va boshqalar) hamda holatni kim qayd etganini ko'rsatuvchi `participant`. `participant.actor` [Practitioner](StructureDefinition-uz-core-practitioner.html), [PractitionerRole](StructureDefinition-uz-core-practitioner-role.html), Patient, RelatedPerson yoki Device resursiga oddiy `Reference` hisoblanadi:
 
 ```json
 {
@@ -162,11 +160,11 @@ To'liqroq yozuv holatni tasniflovchi va unga mansubligini ko'rsatuvchi Must-Supp
 }
 ```
 
-`diagnosisType` kengaytmasi o'zining URL manzilini (`https://dhp.uz/fhir/core/StructureDefinition/diagnosis-type`) va DHP `diagnosis-type-cs` tizimidan kodlangan qiymatni olib yuradi. `bodySite` - bu `CodeableConcept` ro'yxati. `participant` 0..1 - o'z `function` vazifasiga ega bitta aktyor.
+`diagnosisType` extensioni o'z URL manziliga (`https://dhp.uz/fhir/core/StructureDefinition/diagnosis-type`) va DHP `diagnosis-type-cs` tizimidan olingan kodlangan qiymatga ega. `bodySite` `CodeableConcept` ro'yxati hisoblanadi. `participant` 0..* karralilikka ega: har bir actor va uning `function` elementi.
 
 #### Nogironlik tasnifi
 
-`code` SNOMED *Disability* tushunchasi (`21134002`) bo'lganda, profil `severity` ning DHP disability qiymatlar to'plamidan kelishini **talab qiladi** - SNOMED og'irlik darajasi shkalasi qo'llanilmaydi. Nogironlik guruhini `severity` sifatida yuboring:
+Agar `code` SNOMED *Disability* tushunchasiga (`21134002`) mos kelsa, profil `severity` qiymatini DHP nogironlik ValueSet idan tanlashni talab qiladi; bu holatda oddiy SNOMED og'irlik shkalasi qo'llanmaydi. `severity` elementida nogironlik guruhi yuborilishi kerak:
 
 ```json
 {
@@ -209,6 +207,6 @@ To'liqroq yozuv holatni tasniflovchi va unga mansubligini ko'rsatuvchi Must-Supp
 }
 ```
 
-To'liq namuna - bu [nogironlik misoli](Condition-example-disability.html). Boshqa har qanday holat uchun `severity` ni yuqorida ko'rsatilgandek preferred SNOMED shkalasiga (`Mild` va hokazo) bog'langan holda qoldiring.
+To'liq instansiya [nogironlik misolida](Condition-example-disability.html) keltirilgan. Boshqa har qanday klinik holat uchun `severity` yuqorida ko'rsatilganidek SNOMED ning preferred shkalasiga (masalan, Mild) bog'langan holda qoladi.
 
-Misol API chaqiruvlari va namunaviy yuk uchun ushbu sahifaning pastki qismidagi [Tez boshlash](#quick-start) bo'limini ko'ring.
+API chaqiruvlari misollari va foydali yuklama namunasi ushbu sahifaning pastki qismidagi [Tezkor boshlash](#quick-start) bo'limida keltirilgan.
