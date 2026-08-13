@@ -20,7 +20,7 @@ This profile adds no mandatory cardinality of its own. The required elements are
 - a body site;
 - the subject and the encounter it was recorded in;
 - the onset[x] and abatement[x] timing and the recordedDate;
-- a participant (0..1) - the actor who asserted the condition and their function;
+- a participant (0..*) - the actor who asserted the condition and their function;
 - free-text notes.
 
 > `verificationStatus` is not mandatory, but together with the mandatory `clinicalStatus` it governs whether downstream views treat the condition as an active, confirmed problem - populate both whenever the data is known.
@@ -160,7 +160,7 @@ A fuller record adds the Must-Support elements that classify and attribute the c
 }
 ```
 
-The `diagnosisType` extension carries its own URL (`https://dhp.uz/fhir/core/StructureDefinition/diagnosis-type`) and a coded value from the DHP `diagnosis-type-cs` system. `bodySite` is a list of `CodeableConcept`. `participant` is 0..1 - one actor with their `function`.
+The `diagnosisType` extension carries its own URL (`https://dhp.uz/fhir/core/StructureDefinition/diagnosis-type`) and a coded value from the DHP `diagnosis-type-cs` system. `bodySite` is a list of `CodeableConcept`. `participant` is 0..* - each actor with their `function`.
 
 #### A disability classification
 

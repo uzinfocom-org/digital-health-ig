@@ -1,16 +1,14 @@
-> **Mashina tarjimasi, inson tomonidan tekshirilishi zarur.** Ushbu sahifa ingliz tilidan sun'iy intellekt yordamida avtomatik tarjima qilingan va hali muharrir tomonidan tekshirilmagan. Har qanday nomuvofiqlikda asl inglizcha versiya ustuvor hisoblanadi.
-
 ### Tezkor boshlash
 
-Ushbu profil uchun keng tarqalgan API o'zaro ta'sirlari. So'rovlar JWT kirish tokenini talab qiladi - qarang [Xavfsizlik va autentifikatsiya](api-access.html#security). `[base]` bu [FHIR serverining bazaviy URL manzili](api-access.html#endpoints); `|` belgisi system va value qiymatlarini ajratadi va URL kodlashda `%7C` ko'rinishida yozilishi shart.
+Ushbu profil uchun keng tarqalgan API amallari. So'rovlar JWT kirish tokenini talab qiladi - [Xavfsizlik va autentifikatsiya](api-access.html#security) bo'limiga qarang. `[base]` - [FHIR-serverning bazaviy URL manzili](api-access.html#endpoints); `|` tizimni qiymatdan ajratadi va URL da `%7C` ko'rinishida kodlanishi shart.
 
-**Server identifikatori bo'yicha o'qish**
+**Server identifikatori bo'yicha olish**
 
 ```
 GET [base]/Encounter/[id]
 ```
 
-**Murojaatlarni topish**
+**Encounter resurslarini qidirish**
 
 ```
 GET [base]/Encounter?patient=Patient/[id]
@@ -38,16 +36,16 @@ POST [base]/Encounter
 }
 ```
 
-**Yangilash** (masalan, `status` qiymatini `completed` ga o'rnatib va `actualPeriod.end` ni to'ldirib tashrifni yopish) - to'liq resursni qaytarib PUT qiling:
+**Yangilash** (masalan, `status` qiymatini `completed` ga o'zgartirish va `actualPeriod.end` ni to'ldirish orqali tashrifni yakunlash) - to'liq resursni PUT orqali qayta yuboring:
 
 ```
 PUT [base]/Encounter/[id]
-If-Match: W/"3"   # the ETag from your last read; 412 if it changed since
+If-Match: W/"3"   # oxirgi o'qishdan olingan ETag; agar shundan keyin resurs o'zgargan bo'lsa, 412 qaytariladi
 ```
 
 Barcha qo'llab-quvvatlanadigan qidiruv parametrlari uchun [CapabilityStatement](CapabilityStatement-DHPCapabilityStatement.html) ga qarang.
 
-### Aloqador
+### Bog'liq bo'limlar
 
 - [Ushbu qo'llanmani qanday o'qish kerak](how-to-read.html) &middot; [Must Support](must-support.html) &middot; [Umumiy ko'rsatmalar](general-guidance.html)
 - [Ish jarayonlari](workflows.html)

@@ -4602,10 +4602,7 @@ msgid ""
 "Uzbekistan Core AdverseEvent profile, used to represent an adverse event "
 "that may be associated with unintended consequences for a patient or "
 "research participant."
-msgstr ""
-"Профиль Uzbekistan Core AdverseEvent, используемый для представления "
-"нежелательного события, которое может быть связано с непредвиденными "
-"последствиями для пациента или участника исследования."
+msgstr "Профиль Uzbekistan Core AdverseEvent используется для представления нежелательного явления, которое может быть связано с непреднамеренными последствиями для пациента или участника исследования."
 
 # ImplementationGuide.definition.resource.name
 #: ImplementationGuide.definition.resource.name
@@ -4618,10 +4615,7 @@ msgid ""
 "Uzbekistan Core profile for AllergyIntolerance, representing clinical "
 "records of allergy or intolerance within the national health information "
 "exchange."
-msgstr ""
-"Профиль Uzbekistan Core для AllergyIntolerance, представляющий клинические "
-"записи об аллергии или непереносимости в рамках национального обмена "
-"медицинской информацией."
+msgstr "Профиль Uzbekistan Core для AllergyIntolerance представляет клинические записи об аллергии или непереносимости в рамках национального обмена медицинской информацией."
 
 # ImplementationGuide.definition.resource.name
 #: ImplementationGuide.definition.resource.name
@@ -4633,9 +4627,7 @@ msgstr "UZ Core AuditEvent"
 msgid ""
 "Uzbekistan Core AuditEvent profile, used to track user and application "
 "activity"
-msgstr ""
-"Профиль Uzbekistan Core AuditEvent, используемый для отслеживания действий "
-"пользователей и приложений"
+msgstr "Профиль Uzbekistan Core AuditEvent, предназначенный для отслеживания действий пользователей и приложений"
 
 # ImplementationGuide.definition.resource.name
 #: ImplementationGuide.definition.resource.name
@@ -4647,9 +4639,7 @@ msgstr "UZ Core Condition"
 msgid ""
 "Uzbekistan Core Condition profile, used for documenting a patient's symptoms,"
 " conditions, and their characteristics"
-msgstr ""
-"Профиль Uzbekistan Core Condition, используемый для документирования "
-"симптомов, состояний пациента и их характеристик"
+msgstr "Профиль Uzbekistan Core Condition, предназначенный для документирования симптомов, клинических состояний пациента и их характеристик"
 
 # ImplementationGuide.definition.resource.name
 #: ImplementationGuide.definition.resource.name
@@ -4661,9 +4651,7 @@ msgstr "UZ Core Consent"
 msgid ""
 "Uzbekistan Core Consent profile, used to manage patient consent for data "
 "sharing and processing"
-msgstr ""
-"Профиль Uzbekistan Core Consent, используемый для управления согласием "
-"пациента на обмен данными и их обработку"
+msgstr "Профиль Uzbekistan Core Consent, используемый для управления согласием пациента на обмен и обработку данных"
 
 # ImplementationGuide.definition.resource.name
 #: ImplementationGuide.definition.resource.name
@@ -4674,9 +4662,7 @@ msgstr "UZ Core Encounter"
 #: ImplementationGuide.definition.resource.description
 msgid ""
 "Uzbekistan Core Encounter profile, used to represent clinical encounters"
-msgstr ""
-"Профиль Uzbekistan Core Encounter, используемый для представления "
-"клинических обращений"
+msgstr "Профиль Uzbekistan Core Encounter, предназначенный для представления клинических визитов"
 
 # ImplementationGuide.definition.resource.name
 #: ImplementationGuide.definition.resource.name
@@ -4688,10 +4674,7 @@ msgstr "UZ Core EpisodeOfCare"
 msgid ""
 "Uzbekistan Core profile for EpisodeOfCare, representing a patient's period "
 "of long-term care such as pregnancy care or chronic disease management."
-msgstr ""
-"Профиль Uzbekistan Core для EpisodeOfCare, представляющий период "
-"долгосрочного ухода пациента, например ведение беременности или лечение "
-"хронического заболевания."
+msgstr "Профиль UZ Core для EpisodeOfCare, предназначенный для представления периода продолжительного оказания медицинской помощи пациенту, например ведения беременности или хронического заболевания."
 
 # ImplementationGuide.definition.resource.name
 #: ImplementationGuide.definition.resource.name

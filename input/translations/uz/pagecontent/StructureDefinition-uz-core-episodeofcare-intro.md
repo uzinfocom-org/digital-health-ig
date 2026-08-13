@@ -1,38 +1,36 @@
-> **Mashina tarjimasi, inson tomonidan tekshirilishi zarur.** Ushbu sahifa ingliz tilidan sun'iy intellekt yordamida avtomatik tarjima qilingan va hali muharrir tomonidan tekshirilmagan. Har qanday nomuvofiqlikda asl inglizcha versiya ustuvor hisoblanadi.
+UZ Core EpisodeOfCare bir nechta [Encounter](StructureDefinition-uz-core-encounter.html) resursini Raqamli sog'liqni saqlash platformasida tibbiyot tashkiloti tomonidan yuritiladigan bitta davomli klinik holat doirasida birlashtiradi - masalan, homiladorlikni kuzatish yo'li yoki surunkali kasallikni boshqarish dasturi. EpisodeOfCare tegishli [Patient](StructureDefinition-uz-core-patient.html) bilan bog'langan, uni yuritish uchun mas'ul [Organization](StructureDefinition-uz-core-organization.html) tomonidan boshqariladi va bir yoki bir nechta [Condition](StructureDefinition-uz-core-condition.html) ga taalluqlidir. Yangi EpisodeOfCare yaratish yoki mavjudini davom ettirish masalasini ongli ravishda hal qiling: o'tkir, davolanishi mumkin bo'lgan holat bo'yicha EpisodeOfCare bemor sog'aygach yakunlanadi, umr bo'yi kuzatuvni talab qiladigan surunkali holat bo'yicha EpisodeOfCare esa yillar davomida faol bo'lib qolishi va tashkilotlar o'rtasida o'tkazilishi mumkin.
 
-UZ Core EpisodeOfCare bir qator [Encounter'larni](StructureDefinition-uz-core-encounter.html) Raqamli sog'liqni saqlash platformasida tashkilot tomonidan boshqariladigan bitta davom etayotgan parvarish holatiga birlashtiradi - masalan, homiladorlik yo'li yoki surunkali kasalliklarni boshqarish dasturi. U o'zining [Patient'iga](StructureDefinition-uz-core-patient.html) bog'lanadi, boshqaruvchi [Organization'ga](StructureDefinition-uz-core-organization.html) tegishli bo'ladi va bir yoki bir nechta [Condition'larni](StructureDefinition-uz-core-condition.html) qamrab oladi. Yangi epizod ochish yoki mavjudini qayta ishlatish haqida ongli ravishda qaror qabul qiling: o'tkir, davolanadigan kasallik epizodi bemor sog'aygach yopiladi, surunkali umrbod kasallik epizodi esa ko'p yillar davomida faol bo'lib qoladi va tashkilotlar o'rtasida o'tkazilishi mumkin.
+### Majburiy va Must Support elementlar
 
-### Majburiy va Must Support ma'lumot elementlari
+Quyidagi elementlar doimo mavjud bo'lishi (majburiy) yoki ma'lumot mavjud bo'lganda qo'llab-quvvatlanishi kerak ([Must Support](must-support.html)) - ularning barchasi ham majburiy emas, biroq tizimingiz ma'lumot mavjud bo'lsa har bir Must Support elementini to'ldirishi va qabul qilinganda qayta ishlashi kerak. Bu inson o'qishi uchun mo'ljallangan qisqacha tavsif; quyidagi [formal ko'rinishlar](#profile) aniq karralilik, turlar va terminologik bog'lanishlarni ko'rsatadi.
 
-Quyidagi elementlar har doim mavjud bo'lishi (majburiy) yoki ma'lumot mavjud bo'lganda qo'llab-quvvatlanishi kerak ([Must Support](must-support.html)) - hammasi talab qilinmaydi, biroq sizning tizimingiz ma'lumotga ega bo'lganda har bir Must Support elementini to'ldirishi va qabul qilishda uni qayta ishlashi shart. Bu inson o'qiy oladigan qisqacha bayon; quyidagi [rasmiy ko'rinishlar](#profile) aniq kardinalliklar, turlar va terminologik bog'lanishlarni beradi.
+#### UZ Core EpisodeOfCare uchun majburiy elementlar (Must Have)
 
-#### Har bir UZ Core EpisodeOfCare quyidagilarga ega bo'lishi shart
+Ushbu profil o'ziga xos yangi majburiy karraliliklarni qo'shmaydi. Majburiy elementlar bazaviy resursdan meros qilib olinadi: status (planned \| active \| onhold \| finished \| cancelled ...) va patient.
 
-Ushbu profil o'zining hech qanday majburiy kardinalligini qo'shmaydi. Talab qilinadigan elementlar asosiy resursdan meros qilib olinadi: status (planned \| active \| onhold \| finished \| cancelled ...) va bemor.
-
-#### Har bir UZ Core EpisodeOfCare quyidagilarni qo'llab-quvvatlashi shart
+#### UZ Core EpisodeOfCare uchun Must Support elementlar
 
 
 
-- identifikator;
-- status (required bog'lanish) va statusHistory (har bir o'tgan `status` va uning `period`i);
-- epizodni tasniflovchi type;
-- reason, `use` va `value` bilan (Condition, Procedure, Observation yoki HealthcareService);
-- diagnosis, o'zining condition'i (Condition havolasi) va use'i (diagnozning roli) bilan;
-- bemor (patient) va parvarishni muvofiqlashtirish uchun mas'ul managingOrganization;
+- identifier;
+- status (required binding) va statusHistory (har bir oldingi `status` va uning `period`);
+- EpisodeOfCare turini tasniflovchi type;
+- reason, uning `use` va `value` (Condition, Procedure, Observation yoki HealthcareService);
+- diagnosis, undagi condition (Condition resursiga reference) va use (tashxisning roli);
+- patient va tibbiy yordamni muvofiqlashtirish uchun mas'ul managingOrganization;
 - umumiy period;
 - referralRequest (ServiceRequest);
-- careManager (muvofiqlashtiruvchi amaliyotchi yoki rol) va careTeam.
+- careManager (yordamni muvofiqlashtiruvchi Practitioner yoki PractitionerRole) va careTeam.
 
-> Bitta EpisodeOfCare ko'plab Encounter'larni qamrab oladi - har bir tashrifda yangi epizod ochish o'rniga, har bir tashrifni Encounter'ning `episodeOfCare`i orqali epizodga bog'lang.
+> Bitta EpisodeOfCare bir nechta Encounter resursini birlashtirishi mumkin - har bir tashrifni tegishli EpisodeOfCare bilan Encounter ning `episodeOfCare` elementi orqali bog'lang, har bir tashrif uchun alohida EpisodeOfCare yaratmang.
 
-### JSON'ni bosqichma-bosqich qurish
+### JSON ni bosqichma-bosqich shakllantirish
 
-Quyidagi misollar realistik epizoddan to'liq parvarish holatiga qadar bosqichma-bosqich quriladi. Birini nusxalab moslang - ko'rsatilgan har bir qiymat ushbu profilga muvofiq tekshiruvdan o'tadi. To'liq mos yozuvlar namunalari sahifaning pastida havola qilingan ([profilaktik epizod](EpisodeOfCare-UZCoreEpisodeOfCare-Example.html), [homiladorlik epizodi](EpisodeOfCare-UZCoreEpisodeOfCare-Example02.html)).
+Quyidagi misollar amaliy EpisodeOfCare dan boshlab to'liq klinik holatgacha bosqichma-bosqich kengaytiriladi. Kerakli bosqichni nusxalab, o'z holatingizga moslashtiring - ko'rsatilgan barcha qiymatlar ushbu profilga muvofiq validatsiyadan o'tadi. To'liq namuna resurslariga sahifaning pastki qismida havolalar berilgan ([profilaktik EpisodeOfCare](EpisodeOfCare-UZCoreEpisodeOfCare-Example.html), [homiladorlik bo'yicha EpisodeOfCare](EpisodeOfCare-UZCoreEpisodeOfCare-Example02.html)).
 
-#### Realistik epizod
+#### Amaliy EpisodeOfCare
 
-Amaliyotda siz platformaga epizodni boshqarish va topish imkonini beradigan narsalarni yuborasiz: biznes `identifier`, epizodni tasniflovchi `type`, parvarishni muvofiqlashtiradigan `managingOrganization`, u tegishli bo'lgan [Patient](StructureDefinition-uz-core-patient.html) va u amal qiladigan `period`. `careManager` (muvofiqlashtiruvchi amaliyotchi) - bu holat bo'yicha murojaat qilinadigan shaxs:
+Amalda platformaga EpisodeOfCare ni boshqarish va topish uchun zarur ma'lumotlar yuboriladi: biznes `identifier`, `type` EpisodeOfCare ni tasniflaydi, `managingOrganization` tibbiy yordamni muvofiqlashtiradi, [Patient](StructureDefinition-uz-core-patient.html) resursiga tegishli bo'ladi va `period` uning amal qilish davrini ko'rsatadi. `careManager` (yordamni muvofiqlashtiruvchi mutaxassis) ushbu klinik holat doirasida tibbiy yordamni muvofiqlashtirish uchun mas'ul mutaxassisni ko'rsatadi:
 
 ```json
 {
@@ -60,11 +58,11 @@ Amaliyotda siz platformaga epizodni boshqarish va topish imkonini beradigan nars
 }
 ```
 
-`patient`, `managingOrganization` va `careManager` - oddiy `Reference` turlari - maqsad to'g'ridan-to'g'ri `reference` ichida joylashadi. Epizod hali ochiq turganda `period.end`ni qo'shmang; uni faqat holat yopilganda qo'shing.
+`patient`, `managingOrganization` va `careManager` oddiy `Reference` turlaridir - maqsad resurs to'g'ridan-to'g'ri `reference` elementida ko'rsatiladi. EpisodeOfCare ochiq bo'lib turganda `period.end` ni ko'rsatmang; uni faqat klinik holat yakunlanganda qo'shing.
 
-#### Reason va diagnosis qo'shish
+#### reason va diagnosis ni qo'shish
 
-Epizodning klinik mazmuni uning `reason`i (nima uchun parvarish ko'rsatilayotgani) va `diagnosis`idir (qaratilgan kasalliklar). Ham `reason.value`, ham `diagnosis.condition` `CodeableReference` turlari hisoblanadi, shuning uchun havola yuqoridagi oddiy havolalarga qaraganda bir daraja chuqurroq joylashadi (`{ "reference": { "reference": "..." } }`). Har bir `diagnosis.use` o'sha diagnozning rolini qayd etadi (bu yerda `DD`, asosiy diagnoz):
+EpisodeOfCare ning klinik mazmuni uning `reason` (tibbiy yordam nima sababdan ko'rsatilayotgani) va `diagnosis` (qaysi holatlar bo'yicha yordam ko'rsatilayotgani) bilan belgilanadi. `reason.value` va `diagnosis.condition` `CodeableReference` turiga ega, shu sababli reference yuqoridagi oddiy Reference lardan bir daraja chuqurroq joylashadi (`{ "reference": { "reference": "..." } }`). Har bir `diagnosis.use` ushbu tashxisning rolini qayd etadi (bu yerda `DD`, asosiy tashxis):
 
 ```json
 {
@@ -101,11 +99,11 @@ Epizodning klinik mazmuni uning `reason`i (nima uchun parvarish ko'rsatilayotgan
 }
 ```
 
-`reason.value` [Condition](StructureDefinition-uz-core-condition.html), Procedure, Observation yoki HealthcareService'ga ishora qilishi mumkin; `diagnosis.condition` esa [Condition](StructureDefinition-uz-core-condition.html) bo'lishi shart.
+`reason.value` quyidagilarga reference berishi mumkin: [Condition](StructureDefinition-uz-core-condition.html), Procedure, Observation yoki HealthcareService; `diagnosis.condition` faqat [Condition](StructureDefinition-uz-core-condition.html) bo'lishi kerak.
 
-#### Status vaqt o'tishi bilan qanday o'zgarganini qayd etish
+#### Statusning vaqt davomida o'zgarishini qayd etish
 
-Uzoq davom etadigan epizod bir nechta statuslardan o'tadi - u `planned`, keyin `active`, so'ngra `finished` bo'lishi mumkin. Joriy qiymatni `status`da o'rnating; har bir oldingi holatni `statusHistory`da qayd eting, bu yerda har bir yozuv o'tgan `status`ni va u qamrab olgan `period`ni saqlaydi:
+Uzoq davom etadigan EpisodeOfCare bir nechta statusdan o'tishi mumkin - avval `planned`, keyin `active`, keyin `finished`. Joriy qiymatni `status` elementida ko'rsating; har bir oldingi statusni `statusHistory` elementida qayd eting; har bir yozuvda oldingi `status` va u amal qilgan `period` ko'rsatiladi:
 
 ```json
 {
@@ -124,6 +122,6 @@ Uzoq davom etadigan epizod bir nechta statuslardan o'tadi - u `planned`, keyin `
 }
 ```
 
-Har bir `statusHistory.status` `status` bilan bir xil value set'dan olinadi. Bundan, masalan, surunkali kasallik epizodi `onhold` qilinib, keyinroq qayta tiklanganda audit izini saqlash uchun foydalaning.
+Har bir `statusHistory.status` qiymati `status` bilan bir xil ValueSet dan olinadi. Masalan, surunkali kasallik bo'yicha EpisodeOfCare `onhold` holatiga o'tkazilib, keyin yana davom ettirilganda, bu status o'zgarishlari tarixini saqlash imkonini beradi.
 
-Misol API chaqiruvlari va namuna yuk (payload) uchun ushbu sahifaning pastidagi [Quick Start](#quick-start) bo'limiga qarang.
+API so'rovlariga misollar va namuna payload uchun sahifaning pastki qismidagi [Tezkor boshlash](#quick-start) bo'limiga qarang.
