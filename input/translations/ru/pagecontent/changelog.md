@@ -105,6 +105,8 @@ ValueSet на основе SNOMED CT теперь отбирают иерарх�
 
 `participant.actor` в [UZ Core Condition](StructureDefinition-uz-core-condition.html) теперь может ссылаться на [UZ Core Organization](StructureDefinition-uz-core-organization.html).
 
+Профиль UZ Core ActivityDefinition переименован в UZ Core VaccinationActivityDefinition, его канонический URL изменён с `.../uz-core-activity-definition` на `.../uz-core-vaccination-activity-definition`. Разработчики, ссылающиеся на прежний канонический URL, должны его обновить.
+
 В [UZ Core Location](StructureDefinition-uz-core-location.html) удалён слайс налогового идентификатора, а `name` снова необязателен (0..1) - требование, введённое в 0.6.0, отменено.
 
 #### Несовместимые изменения

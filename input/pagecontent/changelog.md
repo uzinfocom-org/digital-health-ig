@@ -105,6 +105,8 @@ The [laboratory panel code system](CodeSystem-lab-pan-cs.html) now declares `kin
 
 `participant.actor` on [UZ Core Condition](StructureDefinition-uz-core-condition.html) may now reference [UZ Core Organization](StructureDefinition-uz-core-organization.html).
 
+The UZ Core ActivityDefinition profile has been renamed to UZ Core VaccinationActivityDefinition and its canonical URL changed from `.../uz-core-activity-definition` to `.../uz-core-vaccination-activity-definition`. Implementers referencing the old canonical must update it.
+
 On [UZ Core Location](StructureDefinition-uz-core-location.html) the tax identifier slice has been removed, and `name` is optional again (0..1), reverting the requirement introduced in 0.6.0.
 
 #### Breaking changes
@@ -113,7 +115,6 @@ The organization type ConceptMaps have been renamed from the MIS2 prefix to SSV,
 
 [UZ Core PlanDefinition](StructureDefinition-uz-core-plan-definition.html) now requires a second `useContext` stating the kind of schedule, bound (extensible) to the new [immunization schedule type](ValueSet-immunization-schedule-type-vs.html) value set. The choice-type slicing on `action.definition[x]` has been removed, because it made the validator reject `definitionCanonical`, and the examples now use `definitionCanonical`.
 
-The UZ Core ActivityDefinition profile has been renamed to [UZ Core VaccinationActivityDefinition](StructureDefinition-uz-core-vaccination-activity-definition.html) and its canonical URL changed from `.../uz-core-activity-definition` to `.../uz-core-vaccination-activity-definition`. Implementers referencing the old canonical must update it.
 
 #### Documentation
 
