@@ -215,3 +215,4 @@ Alias: $composition-list-order = http://terminology.hl7.org/CodeSystem/list-orde
 Alias: $service-request-intent = http://hl7.org/fhir/request-intent
 
 Alias: $coverage-kind = http://hl7.org/fhir/coverage-kind
+Alias: $general-activity-definition = https://dhp.uz/fhir/core/StructureDefinition/uz-core-activity-definition

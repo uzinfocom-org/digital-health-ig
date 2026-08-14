@@ -11,6 +11,7 @@
 #### Документация
 
 Страница «Формы» теперь называется [Опросники](forms.html), чтобы её не принимали за медицинские формы, используемые в Узбекистане. Адрес страницы не изменился.
+Профиль UZ Core VaccinationActivityDefinition переименован в [UZ Core ActivityDefinition](StructureDefinition-uz-core-activity-definition.html), а его канонический URL изменён с `.../uz-core-vaccination-activity-definition` на `.../uz-core-activity-definition`. Реализациям, использующим старый канонический URL, необходимо обновить ссылку.
 
 ### Версия 0.7.0
 
@@ -46,7 +47,7 @@ ValueSet на основе SNOMED CT теперь отбирают иерарх�
 
 `participant.actor` в [UZ Core Condition](StructureDefinition-uz-core-condition.html) теперь может ссылаться на [UZ Core Organization](StructureDefinition-uz-core-organization.html).
 
-Профиль UZ Core ActivityDefinition переименован в [UZ Core VaccinationActivityDefinition](StructureDefinition-uz-core-vaccination-activity-definition.html), его канонический URL изменён с `.../uz-core-activity-definition` на `.../uz-core-vaccination-activity-definition`. Разработчики, ссылающиеся на прежний канонический URL, должны его обновить.
+Профиль UZ Core VaccinationActivityDefinition переименован в [UZ Core ActivityDefinition], его канонический URL изменён с `.../uz-core-activity-definition` на `.../uz-core-vaccination-activity-definition`. Разработчики, ссылающиеся на прежний канонический URL, должны его обновить.
 
 В [UZ Core Location](StructureDefinition-uz-core-location.html) удалён слайс налогового идентификатора, а `name` снова необязателен (0..1) - требование, введённое в 0.6.0, отменено.
 
@@ -76,7 +77,7 @@ ValueSet на основе SNOMED CT теперь отбирают иерарх�
 
 Добавлен профиль [UZ Core PlanDefinition](StructureDefinition-uz-core-plan-definition.html) для национальных календарей иммунизации.
 
-Добавлен профиль [UZ Core ActivityDefinition](StructureDefinition-uz-core-vaccination-activity-definition.html) для определения переиспользуемых клинических активностей (процедур, тестов, протоколов медикаментозной терапии) независимо от конкретного пациента.
+Добавлен профиль [UZ Core ActivityDefinition](StructureDefinition-uz-core-activity-definition.html) для определения переиспользуемых клинических активностей (процедур, тестов, протоколов медикаментозной терапии) независимо от конкретного пациента.
 
 Добавлен профиль [UZ Core AdverseEvent](StructureDefinition-uz-core-adverse-event.html) для регистрации нежелательных явлений с терминологией для [фактичности](ValueSet-adverse-event-actuality-vs.html), [серьёзности](ValueSet-adverse-event-seriousness-vs.html), [исхода](ValueSet-adverse-event-outcome-vs.html) и [статуса](ValueSet-adverse-event-status-vs.html).
 
@@ -110,8 +111,7 @@ ValueSet на основе SNOMED CT теперь отбирают иерарх�
 
 `managingOrganization` в [UZ Core Patient](StructureDefinition-uz-core-patient.html) теперь Must Support и должен ссылаться на [UZ Core Organization](StructureDefinition-uz-core-organization.html).
 
-Расширение для многоязычного перевода (базовое значение на узбекском плюс переводы на русский и каракалпакский) добавлено к `name` в [UZ Core HealthcareService](StructureDefinition-uz-core-healthcareservice.html) и к `title` в [UZ Core ActivityDefinition](StructureDefinition-uz-core-vaccination-activity-definition.html), [UZ Core Laboratory ObservationDefinition](StructureDefinition-uz-core-laboratory-observation-definition.html), [UZ Core PlanDefinition](StructureDefinition-uz-core-plan-definition.html) и [UZ Core Questionnaire](StructureDefinition-uz-core-questionnaire.html). Элемент `name` теперь обязателен в [UZ Core Organization](StructureDefinition-uz-core-organization.html) и [UZ Core Location](StructureDefinition-uz-core-location.html).
-
+Расширение для многоязычного перевода (базовое значение на узбекском плюс переводы на русский и каракалпакский) добавлено к `name` в [UZ Core HealthcareService](StructureDefinition-uz-core-healthcareservice.html) и к `title` в [UZ Core ActivityDefinition](StructureDefinition-uz-core-activity-definition.html), [UZ Core Laboratory ObservationDefinition](StructureDefinition-uz-core-laboratory-observation-definition.html), [UZ Core PlanDefinition](StructureDefinition-uz-core-plan-definition.html) и [UZ Core Questionnaire](StructureDefinition-uz-core-questionnaire.html). Элемент `name` теперь обязателен в [UZ Core Organization](StructureDefinition-uz-core-organization.html) и [UZ Core Location](StructureDefinition-uz-core-location.html).
 #### Организация и идентификаторы
 
 Добавлены слайсы идентификаторов Государственного фонда медицинского страхования (SHIF) и Министерства здравоохранения (Минздрав) в [UZ Core Organization](StructureDefinition-uz-core-organization.html). Коды поставщиков, назначаемые SHIF, типизированы как `PRN` (номер поставщика). Новая страница [идентификация плательщиков](payor-identification.html) объясняет, как идентифицируются плательщики и их законтрактованные поставщики.

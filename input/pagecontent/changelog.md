@@ -1,4 +1,5 @@
 ### In development
+The UZ Core VaccinationActivityDefinition profile has been renamed to [UZ Core ActivityDefinition](StructureDefinition-uz-core-activity-definition.html) and its canonical URL changed from `.../uz-core-vaccination-activity-definition` to `.../uz-core-activity-definition`. Implementers referencing the old canonical must update it.
 
 #### Profile changes
 
@@ -46,7 +47,7 @@ The [laboratory panel code system](CodeSystem-lab-pan-cs.html) now declares `kin
 
 `participant.actor` on [UZ Core Condition](StructureDefinition-uz-core-condition.html) may now reference [UZ Core Organization](StructureDefinition-uz-core-organization.html).
 
-The UZ Core ActivityDefinition profile has been renamed to [UZ Core VaccinationActivityDefinition](StructureDefinition-uz-core-vaccination-activity-definition.html) and its canonical URL changed from `.../uz-core-activity-definition` to `.../uz-core-vaccination-activity-definition`. Implementers referencing the old canonical must update it.
+The UZ Core ActivityDefinition profile has been renamed to [UZ Core VaccinationActivityDefinition] and its canonical URL changed from `.../uz-core-activity-definition` to `.../uz-core-vaccination-activity-definition`. Implementers referencing the old canonical must update it.
 
 On [UZ Core Location](StructureDefinition-uz-core-location.html) the tax identifier slice has been removed, and `name` is optional again (0..1), reverting the requirement introduced in 0.6.0.
 
@@ -76,7 +77,7 @@ Added [UZ Core ImmunizationRecommendation](StructureDefinition-uz-core-immunizat
 
 Added [UZ Core PlanDefinition](StructureDefinition-uz-core-plan-definition.html) profile for national immunization schedules.
 
-Added [UZ Core ActivityDefinition](StructureDefinition-uz-core-vaccination-activity-definition.html) profile for defining reusable clinical activities (procedures, tests, medication protocols) independent of a specific patient.
+Added [UZ Core ActivityDefinition](StructureDefinition-uz-core-activity-definition.html) profile for defining reusable clinical activities (procedures, tests, medication protocols) independent of a specific patient.
 
 Added [UZ Core AdverseEvent](StructureDefinition-uz-core-adverse-event.html) profile for reporting adverse events, with [actuality](ValueSet-adverse-event-actuality-vs.html), [seriousness](ValueSet-adverse-event-seriousness-vs.html), [outcome](ValueSet-adverse-event-outcome-vs.html) and [status](ValueSet-adverse-event-status-vs.html) terminology.
 
@@ -110,7 +111,7 @@ Added DMED terminology bridges for ingesting data from the national DMED system:
 
 `managingOrganization` on [UZ Core Patient](StructureDefinition-uz-core-patient.html) is now Must Support and must reference [UZ Core Organization](StructureDefinition-uz-core-organization.html).
 
-The multilingual translation extension (Uzbek base value plus Russian and Karakalpak translations) has been added to `name` on [UZ Core HealthcareService](StructureDefinition-uz-core-healthcareservice.html), and to `title` on [UZ Core ActivityDefinition](StructureDefinition-uz-core-vaccination-activity-definition.html), [UZ Core Laboratory ObservationDefinition](StructureDefinition-uz-core-laboratory-observation-definition.html), [UZ Core PlanDefinition](StructureDefinition-uz-core-plan-definition.html) and [UZ Core Questionnaire](StructureDefinition-uz-core-questionnaire.html). `name` is now required on [UZ Core Organization](StructureDefinition-uz-core-organization.html) and [UZ Core Location](StructureDefinition-uz-core-location.html).
+The multilingual translation extension (Uzbek base value plus Russian and Karakalpak translations) has been added to `name` on [UZ Core HealthcareService](StructureDefinition-uz-core-healthcareservice.html), and to `title` on [UZ Core ActivityDefinition](StructureDefinition-uz-core-activity-definition.html), [UZ Core Laboratory ObservationDefinition](StructureDefinition-uz-core-laboratory-observation-definition.html), [UZ Core PlanDefinition](StructureDefinition-uz-core-plan-definition.html) and [UZ Core Questionnaire](StructureDefinition-uz-core-questionnaire.html). `name` is now required on [UZ Core Organization](StructureDefinition-uz-core-organization.html) and [UZ Core Location](StructureDefinition-uz-core-location.html).
 
 #### Organization and identifiers
 

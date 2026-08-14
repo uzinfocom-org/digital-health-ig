@@ -1,9 +1,9 @@
-Profile: UZCoreVaccinationActivityDefinition
+Profile: UZCoreActivityDefinition
 Parent: ActivityDefinition
-Id: uz-core-vaccination-activity-definition
-Title: "UZ Core VaccinationActivityDefinition"
-Description: "Uzbekistan Core VaccinationActivityDefinition Profile, used for the definition of some activity to be performed, independent of a particular patient, practitioner, or other performance context."
-
+Id: uz-core-activity-definition
+Title: "UZ Core ActivityDefinition"
+Description: "Uzbekistan Core ActivityDefinition Profile, used for the definition of some activity to be performed, independent of a particular patient, practitioner, or other performance context."
+* ^url = $general-activity-definition
 * ^experimental = true
 * ^status = #active
 * ^date = "2025-08-18"
@@ -38,7 +38,7 @@ Description: "Uzbekistan Core VaccinationActivityDefinition Profile, used for th
 * profile MS
 
 * code MS
-* code = $sct#33879002
+* code from ProcedureCodeVS (extensible)
 
 * intent MS
 * intent from RequestIntentVS (required)
@@ -62,7 +62,12 @@ Description: "Uzbekistan Core VaccinationActivityDefinition Profile, used for th
   * function MS
 
 * product[x] MS
-* product[x] from VaccineCodeVS (required)
+* product[x] from VaccineCodeVS (extensible) 
+* productCodeableConcept ^binding.additional[0].purpose = #required
+* productCodeableConcept ^binding.additional[=].valueSet = Canonical(VaccineCodeVS)
+* productCodeableConcept ^binding.additional[=].usage.code = $general-activity-definition#ActivityDefinition.code
+* productCodeableConcept ^binding.additional[=].usage.valueCodeableConcept = $sct#33879002
+
 
 * productReference MS
 * productCodeableConcept MS
@@ -84,7 +89,7 @@ Description: "Uzbekistan Core VaccinationActivityDefinition Profile, used for th
 
 
 Instance: example-activity-definition
-InstanceOf: UZCoreVaccinationActivityDefinition
+InstanceOf: UZCoreActivityDefinition
 Usage: #example
 Title: "Example ActivityDefinition — Childhood Vaccination"
 Description: "Routine childhood vaccination activity definition for Uzbekistan Digital Health Platform."
