@@ -1,5 +1,10 @@
 ### Ishlab chiqish jarayonida
 
+#### Profil o'zgarishlari
+
+UZ Core Immunization PlanDefinition profili [UZ Core PlanDefinition](StructureDefinition-uz-core-plan-definition.html) deb qayta nomlandi, chunki u endi emlash jadvallari bilan bir qatorda toʻliq qon donatsiyasi va skrining jadvallarini ham qamrab oladi. Bu buzuvchi oʻzgarish: kanonik URL `https://dhp.uz/fhir/core/StructureDefinition/uz-core-immunization-plan-definition` dan `https://dhp.uz/fhir/core/StructureDefinition/uz-core-plan-definition` ga oʻzgaradi va nusxalar `meta.profile` ni yangilashi kerak.
+
+Profil endi jadval turini bildiruvchi `focus` foydalanish kontekstini olib yuradi - `33879002` (faol immunizatsiya), `25179006` (toʻliq qon dozasini yigʻish) yoki `360156006` (skrining) - va cheklov ulardan aniq bittasini talab qiladi, shuning uchun kerakli turdagi jadval `GET [base]/PlanDefinition?context-type-value=focus$http://snomed.info/sct|33879002` soʻrovi bilan topiladi. Jadval kategoriyasi konteksti uchun [emlash kalendari turi](ValueSet-immunization-schedule-type-vs.html) bogʻlanishi endi extensible emas, balki required, bu slayslashni tekshirish imkonini beradi.
 #### Hujjatlashtirish
 
 «Shakllar» sahifasi endi [So'rovnomalar](forms.html) deb ataladi - u O'zbekistonda qo'llaniladigan tibbiy shakllar bilan chalkashtirilmasligi uchun. Sahifa manzili o'zgarmadi.
@@ -34,7 +39,7 @@ Manba laboratoriya tizimlari ishlatadigan birlik satrlarini saqlovchi [laborator
 
 [UZ Core Observation](StructureDefinition-uz-core-observation.html) dagi `method` endi bog'lanish kuchini extensible sifatida aniq ko'rsatadi.
 
-[UZ Core Immunization PlanDefinition](StructureDefinition-uz-core-immunization-plan-definition.html) endi kalendar turini ko'rsatuvchi ikkinchi `useContext` ni talab qiladi, u yangi [emlash kalendari turi](ValueSet-immunization-schedule-type-vs.html) ValueSet'iga bog'langan (extensible). `action.definition[x]` bo'yicha tur slayslash olib tashlandi, chunki u tufayli validator `definitionCanonical` ni rad etardi, va misollar endi `definitionCanonical` dan foydalanadi.
+[UZ Core PlanDefinition](StructureDefinition-uz-core-plan-definition.html) endi kalendar turini ko'rsatuvchi ikkinchi `useContext` ni talab qiladi, u yangi [emlash kalendari turi](ValueSet-immunization-schedule-type-vs.html) ValueSet'iga bog'langan (extensible). `action.definition[x]` bo'yicha tur slayslash olib tashlandi, chunki u tufayli validator `definitionCanonical` ni rad etardi, va misollar endi `definitionCanonical` dan foydalanadi.
 
 [UZ Core Condition](StructureDefinition-uz-core-condition.html) dagi `participant.actor` endi [UZ Core Organization](StructureDefinition-uz-core-organization.html) ga havola qila oladi.
 
@@ -66,7 +71,7 @@ Emlashlarni qayd etish uchun [UZ Core Immunization](StructureDefinition-uz-core-
 
 Emlash bashoratlari uchun [UZ Core ImmunizationRecommendation](StructureDefinition-uz-core-immunization-recommendation.html) profili qo'shildi, [bashorat holati](ValueSet-recommendation-forecast-status-vs.html), [sana mezoni](ValueSet-recommendation-date-criterion-vs.html) va [sabab](ValueSet-recommendation-reason-vs.html) terminologiyasi bilan.
 
-Milliy emlash jadvallari uchun [UZ Core Immunization PlanDefinition](StructureDefinition-uz-core-immunization-plan-definition.html) profili qo'shildi.
+Milliy emlash jadvallari uchun [UZ Core PlanDefinition](StructureDefinition-uz-core-plan-definition.html) profili qo'shildi.
 
 Muayyan bemordan mustaqil ravishda qayta foydalaniladigan klinik faoliyatlarni (protseduralar, tahlillar, dori protokollari) belgilash uchun [UZ Core ActivityDefinition](StructureDefinition-uz-core-vaccination-activity-definition.html) profili qo'shildi.
 
@@ -102,7 +107,7 @@ Milliy DMED tizimidan ma'lumotlarni qabul qilish uchun DMED terminologik ko'prik
 
 [UZ Core Patient](StructureDefinition-uz-core-patient.html) dagi `managingOrganization` endi Must Support hisoblanadi va [UZ Core Organization](StructureDefinition-uz-core-organization.html) ga havola qilishi kerak.
 
-Ko'p tilli tarjima kengaytmasi (o'zbekcha asosiy qiymat hamda ruscha va qoraqalpoqcha tarjimalar) [UZ Core HealthcareService](StructureDefinition-uz-core-healthcareservice.html) dagi `name` ga hamda [UZ Core ActivityDefinition](StructureDefinition-uz-core-vaccination-activity-definition.html), [UZ Core Laboratory ObservationDefinition](StructureDefinition-uz-core-laboratory-observation-definition.html), [UZ Core Immunization PlanDefinition](StructureDefinition-uz-core-immunization-plan-definition.html) va [UZ Core Questionnaire](StructureDefinition-uz-core-questionnaire.html) dagi `title` ga qo'shildi. `name` endi [UZ Core Organization](StructureDefinition-uz-core-organization.html) va [UZ Core Location](StructureDefinition-uz-core-location.html) da majburiy.
+Ko'p tilli tarjima kengaytmasi (o'zbekcha asosiy qiymat hamda ruscha va qoraqalpoqcha tarjimalar) [UZ Core HealthcareService](StructureDefinition-uz-core-healthcareservice.html) dagi `name` ga hamda [UZ Core ActivityDefinition](StructureDefinition-uz-core-vaccination-activity-definition.html), [UZ Core Laboratory ObservationDefinition](StructureDefinition-uz-core-laboratory-observation-definition.html), [UZ Core PlanDefinition](StructureDefinition-uz-core-plan-definition.html) va [UZ Core Questionnaire](StructureDefinition-uz-core-questionnaire.html) dagi `title` ga qo'shildi. `name` endi [UZ Core Organization](StructureDefinition-uz-core-organization.html) va [UZ Core Location](StructureDefinition-uz-core-location.html) da majburiy.
 
 #### Tashkilot va identifikatorlar
 

@@ -1,16 +1,16 @@
 > **Машинный перевод, требуется проверка человеком.** Эта страница автоматически переведена с английского языка с помощью искусственного интеллекта и пока не проверена редактором. При любых расхождениях приоритет имеет оригинальная англоязычная версия.
 
-UZ Core Immunization PlanDefinition содержит национальный календарь иммунизации Узбекистана, выраженный в виде вычислимой логики - каждую рекомендованную дозу, её сроки, минимальные интервалы между дозами и правила соответствия, которые определяют, к кому она применяется. Это ресурс, который считывает механизм рекомендаций для построения [ImmunizationRecommendation](StructureDefinition-uz-core-immunization-recommendation.html) каждого пациента. Для данной области применения или юрисдикции одновременно может быть активна только одна версия календаря.
+UZ Core PlanDefinition содержит национальный календарь здравоохранения Узбекистана, выраженный в виде вычислимой логики - каждое запланированное мероприятие, его сроки, минимальные интервалы между мероприятиями и правила соответствия, которые определяют, к кому оно применяется. Один и тот же профиль охватывает национальный календарь иммунизации, календари донации цельной крови и календари скрининга; контекст использования `focus` указывает, к какому виду относится конкретный календарь. Календарь иммунизации - это ресурс, который считывает механизм рекомендаций для построения [ImmunizationRecommendation](StructureDefinition-uz-core-immunization-recommendation.html) каждого пациента. Для данной области применения или юрисдикции одновременно может быть активна только одна версия календаря.
 
 ### Обязательные и Must Support элементы данных
 
 Перечисленные ниже элементы должны всегда присутствовать (обязательные) или должны поддерживаться, когда данные доступны ([Must Support](must-support.html)) - не все они являются обязательными, но ваша система должна заполнять каждый Must Support элемент, когда у неё есть соответствующие данные, и обрабатывать его при получении. Это человекочитаемое резюме; [формальные представления](#profile) ниже дают точные кардинальности, типы и терминологические связки.
 
-#### Каждый UZ Core Immunization PlanDefinition должен иметь
+#### Каждый UZ Core PlanDefinition должен иметь
 
-Каждый PlanDefinition должен содержать url (канонический идентификатор данного календаря), машиночитаемое name, status (draft, active, retired, unknown), унаследованный как обязательный от базового ресурса, и description того, что охватывает календарь.
+Каждый PlanDefinition должен содержать url (канонический идентификатор данного календаря), машиночитаемое name, status (draft, active, retired, unknown), унаследованный как обязательный от базового ресурса, description того, что охватывает календарь, и ровно один контекст использования с кодом `focus`, указывающим вид календаря.
 
-#### Каждый UZ Core Immunization PlanDefinition должен поддерживать
+#### Каждый UZ Core PlanDefinition должен поддерживать
 
 
 
@@ -28,20 +28,39 @@ PlanDefinition в основном создаётся один раз и счи�
 
 #### Наименьший PlanDefinition, который вам следует отправлять
 
-`url`, `name` и `description` являются обязательными элементами, а `status` обязателен в базовом ресурсе (draft \| active \| retired \| unknown - required связка). `url` - это канонический идентификатор, на который ссылаются другие ресурсы, поэтому он должен быть стабильным. Каждый UZ Core ресурс также указывает профиль, которому он заявляет о своём соответствии, в `meta.profile`. Уже этого достаточно для прохождения валидации:
+`url`, `name` и `description` являются обязательными элементами, а `status` обязателен в базовом ресурсе (draft \| active \| retired \| unknown - required связка). `url` - это канонический идентификатор, на который ссылаются другие ресурсы, поэтому он должен быть стабильным. Каждый UZ Core ресурс также указывает профиль, которому он заявляет о своём соответствии, в `meta.profile`. Также обязателен один `useContext` с кодом `focus` - он указывает, что это за календарь, и именно по нему клиенты находят календарь на сервере. Уже этого достаточно для прохождения валидации:
 
 ```json
 {
   "resourceType": "PlanDefinition",
   "meta": {
-    "profile": ["https://dhp.uz/fhir/core/StructureDefinition/uz-core-immunization-plan-definition"]
+    "profile": ["https://dhp.uz/fhir/core/StructureDefinition/uz-core-plan-definition"]
   },
   "url": "https://terminology.dhp.uz/fhir/core/PlanDefinition/example-uz-core-immunization-plan-definition",
   "name": "ExampleImmunizationPlanDefinition",
   "status": "draft",
-  "description": "Example PlanDefinition demonstrating actions and relationships."
+  "description": "Example PlanDefinition demonstrating actions and relationships.",
+  "useContext": [
+    {
+      "code": {
+        "system": "http://terminology.hl7.org/CodeSystem/usage-context-type",
+        "code": "focus"
+      },
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "33879002",
+            "display": "Active immunization"
+          }
+        ]
+      }
+    }
+  ]
 }
 ```
+
+Допускается ровно один контекст `focus`. Используйте `33879002` для календаря вакцинации, `25179006` для календаря донации цельной крови или `360156006` для календаря скрининга. Календарь находится запросом `GET [base]/PlanDefinition?context-type-value=focus$http://snomed.info/sct|33879002`.
 
 `name` - это машиночитаемое имя (без пробелов); добавьте человекочитаемый `title`, когда он у вас есть. См. [Метаданные](general-guidance.html#metadata) для полей издателя, даты и версии, которые также должен нести опубликованный календарь.
 
@@ -52,7 +71,7 @@ PlanDefinition в основном создаётся один раз и счи�
 ```json
 {
   "resourceType": "PlanDefinition",
-  "meta": { "profile": [ "https://dhp.uz/fhir/core/StructureDefinition/uz-core-immunization-plan-definition" ] },
+  "meta": { "profile": [ "https://dhp.uz/fhir/core/StructureDefinition/uz-core-plan-definition" ] },
   "url": "https://terminology.dhp.uz/fhir/core/PlanDefinition/example-uz-core-immunization-plan-definition",
   "name": "ExampleImmunizationPlanDefinition",
   "title": "Example Vaccination Follow-up Plan",
@@ -60,6 +79,20 @@ PlanDefinition в основном создаётся один раз и счи�
   "date": "2026-08-10",
   "publisher": "DHP Uzbekistan",
   "description": "Example PlanDefinition demonstrating actions and relationships.",
+  "useContext": [
+    {
+      "code": { "system": "http://terminology.hl7.org/CodeSystem/usage-context-type", "code": "focus" },
+      "valueCodeableConcept": {
+        "coding": [ { "system": "http://snomed.info/sct", "code": "33879002", "display": "Active immunization" } ]
+      }
+    },
+    {
+      "code": { "system": "http://terminology.hl7.org/CodeSystem/usage-context-type", "code": "topic" },
+      "valueCodeableConcept": {
+        "coding": [ { "system": "https://terminology.dhp.uz/fhir/core/CodeSystem/immunization-schedule-type-cs", "code": "pd-type-0001-00001", "display": "Age-based" } ]
+      }
+    }
+  ],
   "approvalDate": "2026-08-01",
   "effectivePeriod": { "start": "2026-08-01", "end": "2027-08-01" },
   "action": [
