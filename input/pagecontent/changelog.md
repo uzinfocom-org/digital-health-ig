@@ -1,6 +1,8 @@
 ### In development
 
-(No changes yet)
+#### Documentation
+
+The Forms page is now called [Questionnaires](forms.html), so that it is not read as the medical forms used in Uzbekistan. The page address is unchanged.
 
 ### Version 0.7.0
 
