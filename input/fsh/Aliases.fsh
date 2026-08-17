@@ -52,6 +52,7 @@ Alias: $group-membership-basis = http://hl7.org/fhir/group-membership-basis
 Alias: $group-type = http://hl7.org/fhir/group-type
 Alias: $healthcard = https://dhp.uz/fhir/core/sid/pid/uz/hc
 Alias: $http-interaction = http://hl7.org/fhir/restful-interaction
+Alias: $iccc-3-cs = https://terminology.dhp.uz/fhir/core/CodeSystem/iccc-3-cs
 Alias: $icd-10 = http://hl7.org/fhir/sid/icd-10
 Alias: $icd-10-vs = http://hl7.org/fhir/ValueSet/icd-10
 Alias: $identifier-type = http://terminology.hl7.org/CodeSystem/v2-0203
