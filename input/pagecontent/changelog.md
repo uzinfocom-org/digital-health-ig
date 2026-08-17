@@ -6,6 +6,8 @@ UZ Core Immunization PlanDefinition has been renamed to [UZ Core PlanDefinition]
 
 The profile now carries a `focus` use context naming the kind of schedule - `33879002` (active immunization), `25179006` (whole blood unit collection) or `360156006` (screening intent) - and a constraint requires exactly one of them, so a schedule of a given kind is found with `GET [base]/PlanDefinition?context-type-value=focus$http://snomed.info/sct|33879002`. The [immunization schedule type](ValueSet-immunization-schedule-type-vs.html) binding on the schedule category context is now required rather than extensible, so that the slicing can be validated.
 
+The title and description of [UZ Core ClaimResponse](StructureDefinition-uz-core-claim-response.html) no longer split the resource name - "UZ Core Claim Response" is now "UZ Core ClaimResponse". Its canonical URL is unchanged.
+
 #### Documentation
 
 The Forms page is now called [Questionnaires](forms.html), so that it is not read as the medical forms used in Uzbekistan. The page address is unchanged.
@@ -14,7 +16,7 @@ The Forms page is now called [Questionnaires](forms.html), so that it is not rea
 
 #### New profiles
 
-Added [UZ Core Claim](StructureDefinition-uz-core-claim.html) and [UZ Core Claim Response](StructureDefinition-uz-core-claim-response.html) profiles for insurance claims, pre-authorization and predetermination, and for the adjudication and reimbursement responses to them. They are supported by [claim type](ValueSet-claim-type-vs.html), [claim use](ValueSet-claim-use-vs.html) and [financial management status](ValueSet-fm-status-vs.html) terminology, plus [response category](ValueSet-claim-response-category-vs.html), [decision](ValueSet-claim-response-decision-vs.html) and [outcome](ValueSet-claim-response-outcome-vs.html) codes. A [cancellation reason extension](StructureDefinition-claim-response-cancellation-reason.html) records why a response was cancelled, for example when a pre-authorization expires before the claim completes.
+Added [UZ Core Claim](StructureDefinition-uz-core-claim.html) and [UZ Core ClaimResponse](StructureDefinition-uz-core-claim-response.html) profiles for insurance claims, pre-authorization and predetermination, and for the adjudication and reimbursement responses to them. They are supported by [claim type](ValueSet-claim-type-vs.html), [claim use](ValueSet-claim-use-vs.html) and [financial management status](ValueSet-fm-status-vs.html) terminology, plus [response category](ValueSet-claim-response-category-vs.html), [decision](ValueSet-claim-response-decision-vs.html) and [outcome](ValueSet-claim-response-outcome-vs.html) codes. A [cancellation reason extension](StructureDefinition-claim-response-cancellation-reason.html) records why a response was cancelled, for example when a pre-authorization expires before the claim completes.
 
 Added [UZ Core Task Referral Approval](StructureDefinition-uz-core-referral-approval-task.html) profile for tracking the workflow steps of the state insurance referral and hospitalization approval process (Annex 1 to Resolution of the Cabinet of Ministers No. 694, 04.11.2025), with [task code](ValueSet-task-codes-vs.html), [status](ValueSet-task-status-vs.html), [intent](ValueSet-task-intent-vs.html) and [business status](ValueSet-task-business-status-vs.html) terminology. A warning-level constraint flags unfinished tasks that are past their requested end date but not marked overdue, for SLA monitoring.
 

@@ -26,8 +26,28 @@ Description: "Uzbekistan Core Condition profile, used for documenting a patient'
 - **Profile**: `UZCore[ResourceName]` (например, `UZCorePatient`, `UZCoreObservation`)
 - **Parent**: Соответствующий базовый FHIR ресурс
 - **Id**: `uz-core-[resource-name]` в нижнем регистре с дефисами
-- **Title**: `"UZ Core [Resource Name]"`
-- **Description**: `"Uzbekistan Core [Resource Name] profile, used to [описание назначения]"`
+- **Title**: `"UZ Core [ResourceName]"`
+- **Description**: `"Uzbekistan Core [ResourceName] profile, used to [описание назначения]"`
+
+**Имена ресурсов из нескольких слов:**
+
+Имя FHIR-ресурса пишется ровно так, как его пишет спецификация FHIR — одним словом в CamelCase. Пробел в шаблонах выше отделяет только префикс (`UZ Core`, `Uzbekistan Core`), а не части имени ресурса.
+
+| Ресурс | Profile | Title | Description |
+|---|---|---|---|
+| `MedicationRequest` | `UZCoreMedicationRequest` | `"UZ Core MedicationRequest"` | `"Uzbekistan Core MedicationRequest profile, used to ..."` |
+| `ClaimResponse` | `UZCoreClaimResponse` | `"UZ Core ClaimResponse"` | `"Uzbekistan Core ClaimResponse profile, used to ..."` |
+| `PractitionerRole` | `UZCorePractitionerRole` | `"UZ Core PractitionerRole"` | `"Uzbekistan Core PractitionerRole profile, used to ..."` |
+
+**Неправильно:** `Title: "UZ Core Medication Request"`, `Description: "Uzbekistan Core Claim Response profile, ..."` — имя ресурса разделено на два слова.
+
+В `Id`, наоборот, слова разделяются дефисами: `uz-core-medication-request`, `uz-core-claim-response`, `uz-core-practitioner-role`.
+
+**Существующие исключения — не исправлять:** пять профилей опубликованы с `Id`, в котором слова слиты:
+
+`uz-core-auditevent`, `uz-core-episodeofcare`, `uz-core-healthcareservice`, `uz-core-relatedperson`, `uz-core-servicerequest`
+
+Их канонические URL уже опубликованы, поэтому переименование сломает ссылки у разработчиков и адреса страниц IG. Оставьте их как есть; правило с дефисами действует для новых профилей.
 
 ### 2.3 Именование файлов
 
