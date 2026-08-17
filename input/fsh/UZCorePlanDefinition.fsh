@@ -97,6 +97,9 @@ Description: "Uzbekistan Core PlanDefinition profile, used to represent national
 * approvalDate MS
 * effectivePeriod MS
 
+* extension contains PlanDefinitionStatusHistory named statusHistory 0..* MS
+* extension[statusHistory] ^short = "History of PlanDefinition status changes"
+
 * action MS
 * action ^short = "Definition of action included in the plan"
 
@@ -169,6 +172,12 @@ Description: "Example age-based national immunization schedule, showing the focu
 
 * effectivePeriod.start = "2026-08-01"
 * effectivePeriod.end = "2027-08-01"
+
+* extension[statusHistory].extension[status].valueCode = #draft
+* extension[statusHistory].extension[period].valuePeriod.start = "2026-08-01"
+* extension[statusHistory].extension[reason].valueString = "Initial draft."
+* extension[statusHistory].extension[changedBy].valueReference = Reference(example-practitioner) 
+
 
 * action[0].id = "action-1"
 * action[0].linkId = "action-1"
