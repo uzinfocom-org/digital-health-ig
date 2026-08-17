@@ -68,5 +68,5 @@ GET [base]/Procedure?based-on=ServiceRequest/[id]
 
 ### Связанные материалы
 
-- Профили, используемые при выполнении направления: [Procedure](StructureDefinition-uz-core-procedure.html) &middot; [Observation](StructureDefinition-uz-core-observation.html) &middot; [Encounter](StructureDefinition-uz-core-encounter.html) &middot; [Condition](StructureDefinition-uz-core-condition.html) &middot; [HealthcareService](StructureDefinition-uz-core-healthcare-service.html)
+- Профили, используемые при выполнении направления: [Procedure](StructureDefinition-uz-core-procedure.html) &middot; [Observation](StructureDefinition-uz-core-observation.html) &middot; [Encounter](StructureDefinition-uz-core-encounter.html) &middot; [Condition](StructureDefinition-uz-core-condition.html) &middot; [HealthcareService](StructureDefinition-uz-core-healthcareservice.html)
 - [Обзор процессов](workflows.html) &middot; [Общие рекомендации](general-guidance.html)

@@ -34,7 +34,7 @@ UZ Core AuditEvent представляет собой неизменяемый 
 ```json
 {
   "resourceType": "AuditEvent",
-  "meta": { "profile": [ "https://dhp.uz/fhir/core/StructureDefinition/uz-core-audit-event" ] },
+  "meta": { "profile": [ "https://dhp.uz/fhir/core/StructureDefinition/uz-core-auditevent" ] },
   "category": [
     {
       "coding": [
@@ -115,7 +115,7 @@ UZ Core AuditEvent представляет собой неизменяемый 
 ```json
 {
   "resourceType": "AuditEvent",
-  "meta": { "profile": [ "https://dhp.uz/fhir/core/StructureDefinition/uz-core-audit-event" ] },
+  "meta": { "profile": [ "https://dhp.uz/fhir/core/StructureDefinition/uz-core-auditevent" ] },
   "category": [
     {
       "coding": [

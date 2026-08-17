@@ -1,4 +1,4 @@
-UZ Core Location represents a physical place - a building, department, branch, ward, room, or bed - operated by an [Organization](StructureDefinition-uz-core-organization.html). It is referenced by [Encounter](StructureDefinition-uz-core-encounter.html) to say where care happened and by [HealthcareService](StructureDefinition-uz-core-healthcare-service.html) to say where a service is delivered. Locations can nest, for example a ward inside a building inside a site.
+UZ Core Location represents a physical place - a building, department, branch, ward, room, or bed - operated by an [Organization](StructureDefinition-uz-core-organization.html). It is referenced by [Encounter](StructureDefinition-uz-core-encounter.html) to say where care happened and by [HealthcareService](StructureDefinition-uz-core-healthcareservice.html) to say where a service is delivered. Locations can nest, for example a ward inside a building inside a site.
 
 ### Mandatory and Must Support data elements
 
@@ -41,7 +41,7 @@ The examples below go from the smallest instance the server will accept to a ful
 }
 ```
 
-`status` uses a required binding (`active` / `suspended` / `inactive`); the value must come from that value set. A bare name plus status is enough to register a place you can then reference from an [Encounter](StructureDefinition-uz-core-encounter.html) or [HealthcareService](StructureDefinition-uz-core-healthcare-service.html).
+`status` uses a required binding (`active` / `suspended` / `inactive`); the value must come from that value set. A bare name plus status is enough to register a place you can then reference from an [Encounter](StructureDefinition-uz-core-encounter.html) or [HealthcareService](StructureDefinition-uz-core-healthcareservice.html).
 
 #### Adding the multilingual name, type and address
 

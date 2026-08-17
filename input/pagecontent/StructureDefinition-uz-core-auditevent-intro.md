@@ -34,7 +34,7 @@ A self-contained event names what happened (`code`), its grouping (`category`), 
 ```json
 {
   "resourceType": "AuditEvent",
-  "meta": { "profile": [ "https://dhp.uz/fhir/core/StructureDefinition/uz-core-audit-event" ] },
+  "meta": { "profile": [ "https://dhp.uz/fhir/core/StructureDefinition/uz-core-auditevent" ] },
   "category": [
     {
       "coding": [
@@ -115,7 +115,7 @@ When the event read or changed a specific patient's record, add the `patient` it
 ```json
 {
   "resourceType": "AuditEvent",
-  "meta": { "profile": [ "https://dhp.uz/fhir/core/StructureDefinition/uz-core-audit-event" ] },
+  "meta": { "profile": [ "https://dhp.uz/fhir/core/StructureDefinition/uz-core-auditevent" ] },
   "category": [
     {
       "coding": [

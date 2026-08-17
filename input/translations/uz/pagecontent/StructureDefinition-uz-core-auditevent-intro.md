@@ -34,7 +34,7 @@ Mustaqil hodisada nima sodir bo'lgani (`code`), uning guruhi (`category`), bajar
 ```json
 {
   "resourceType": "AuditEvent",
-  "meta": { "profile": [ "https://dhp.uz/fhir/core/StructureDefinition/uz-core-audit-event" ] },
+  "meta": { "profile": [ "https://dhp.uz/fhir/core/StructureDefinition/uz-core-auditevent" ] },
   "category": [
     {
       "coding": [
@@ -115,7 +115,7 @@ Hodisa muayyan bemor yozuvini o'qish yoki o'zgartirish bilan bog'liq bo'lsa, teg
 ```json
 {
   "resourceType": "AuditEvent",
-  "meta": { "profile": [ "https://dhp.uz/fhir/core/StructureDefinition/uz-core-audit-event" ] },
+  "meta": { "profile": [ "https://dhp.uz/fhir/core/StructureDefinition/uz-core-auditevent" ] },
   "category": [
     {
       "coding": [

@@ -5,7 +5,7 @@ skinparam linetype ortho
 title The core clinical record backbone
 
 class Patient [[StructureDefinition-uz-core-patient.html{Open the UZ Core Patient profile}]] #E8F0FE
-class EpisodeOfCare [[StructureDefinition-uz-core-episode-of-care.html{Open the UZ Core EpisodeOfCare profile}]] #E8F0FE
+class EpisodeOfCare [[StructureDefinition-uz-core-episodeofcare.html{Open the UZ Core EpisodeOfCare profile}]] #E8F0FE
 class Encounter [[StructureDefinition-uz-core-encounter.html{Open the UZ Core Encounter profile}]] #E8F0FE
 class Condition [[StructureDefinition-uz-core-condition.html{Open the UZ Core Condition profile}]] #E8F0FE
 class Observation [[StructureDefinition-uz-core-observation.html{Open the UZ Core Observation profile}]] #E8F0FE

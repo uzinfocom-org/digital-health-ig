@@ -36,7 +36,7 @@ Amalda platformaga EpisodeOfCare ni boshqarish va topish uchun zarur ma'lumotlar
 {
   "resourceType": "EpisodeOfCare",
   "meta": {
-    "profile": ["https://dhp.uz/fhir/core/StructureDefinition/uz-core-episode-of-care"]
+    "profile": ["https://dhp.uz/fhir/core/StructureDefinition/uz-core-episodeofcare"]
   },
   "identifier": [
     {
@@ -67,7 +67,7 @@ EpisodeOfCare ning klinik mazmuni uning `reason` (tibbiy yordam nima sababdan ko
 ```json
 {
   "resourceType": "EpisodeOfCare",
-  "meta": { "profile": [ "https://dhp.uz/fhir/core/StructureDefinition/uz-core-episode-of-care" ] },
+  "meta": { "profile": [ "https://dhp.uz/fhir/core/StructureDefinition/uz-core-episodeofcare" ] },
   "status": "active",
   "patient": { "reference": "Patient/example-salim" },
   "managingOrganization": { "reference": "Organization/example-organization" },
@@ -109,7 +109,7 @@ Uzoq davom etadigan EpisodeOfCare bir nechta statusdan o'tishi mumkin - avval `p
 {
   "resourceType": "EpisodeOfCare",
   "meta": {
-    "profile": ["https://dhp.uz/fhir/core/StructureDefinition/uz-core-episode-of-care"]
+    "profile": ["https://dhp.uz/fhir/core/StructureDefinition/uz-core-episodeofcare"]
   },
   "status": "planned",
   "patient": { "reference": "Patient/example-emma" },

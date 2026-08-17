@@ -1,6 +1,6 @@
 Profile: UZCoreAuditEvent
 Parent: AuditEvent
-Id: uz-core-audit-event
+Id: uz-core-auditevent
 Title: "UZ Core AuditEvent"
 Description: "Uzbekistan Core AuditEvent profile, used to track user and application activity"
 * ^experimental = true

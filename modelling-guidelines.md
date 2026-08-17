@@ -41,6 +41,14 @@ Description: "Uzbekistan Core Condition profile, used for documenting a patient'
 
 **Неправильно:** `Title: "UZ Core Medication Request"`, `Description: "Uzbekistan Core Claim Response profile, ..."` — имя ресурса разделено на два слова.
 
+В `Id`, наоборот, слова разделяются дефисами: `uz-core-medication-request`, `uz-core-claim-response`, `uz-core-practitioner-role`.
+
+**Существующие исключения — не исправлять:** пять профилей опубликованы с `Id`, в котором слова слиты:
+
+`uz-core-auditevent`, `uz-core-episodeofcare`, `uz-core-healthcareservice`, `uz-core-relatedperson`, `uz-core-servicerequest`
+
+Их канонические URL уже опубликованы, поэтому переименование сломает ссылки у разработчиков и адреса страниц IG. Оставьте их как есть; правило с дефисами действует для новых профилей.
+
 ### 2.3 Именование файлов
 
 **Исходные Excel-файлы:** В `input/excel/` храните только последнюю версию каждого файла. Исторические версии не коммитятся.

@@ -1,6 +1,6 @@
 Profile: UZCoreHealthcareService
 Parent: HealthcareService
-Id: uz-core-healthcare-service
+Id: uz-core-healthcareservice
 Title: "UZ Core HealthcareService"
 Description: "Uzbekistan Core HealthcareService profile, used to define healthcare services available"
 * ^experimental = true

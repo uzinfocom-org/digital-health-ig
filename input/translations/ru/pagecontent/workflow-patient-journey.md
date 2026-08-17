@@ -1,6 +1,6 @@
-Этот процесс показывает, как данные о медицинской помощи пациенту по поводу одной проблемы группируются во времени. Отдельный визит представлен ресурсом [Encounter](StructureDefinition-uz-core-encounter.html); продолжительный процесс оказания помощи, охватывающий несколько визитов - например, ведение беременности, лечение онкологического заболевания или хронической инфекции, - представлен ресурсом [EpisodeOfCare](StructureDefinition-uz-core-episode-of-care.html). EpisodeOfCare связывает визиты, диагнозы и результаты одного клинического случая, чтобы клиницист видел целостную картину, а не разрозненные записи.
+Этот процесс показывает, как данные о медицинской помощи пациенту по поводу одной проблемы группируются во времени. Отдельный визит представлен ресурсом [Encounter](StructureDefinition-uz-core-encounter.html); продолжительный процесс оказания помощи, охватывающий несколько визитов - например, ведение беременности, лечение онкологического заболевания или хронической инфекции, - представлен ресурсом [EpisodeOfCare](StructureDefinition-uz-core-episodeofcare.html). EpisodeOfCare связывает визиты, диагнозы и результаты одного клинического случая, чтобы клиницист видел целостную картину, а не разрозненные записи.
 
-> Статус профилей: [EpisodeOfCare](StructureDefinition-uz-core-episode-of-care.html), [Encounter](StructureDefinition-uz-core-encounter.html), [Condition](StructureDefinition-uz-core-condition.html) и [Observation](StructureDefinition-uz-core-observation.html) профилированы в UZ Core. Профиль MedicationRequest, используемый во время лечения, находится в разработке. До его публикации используйте базовый ресурс FHIR R5.
+> Статус профилей: [EpisodeOfCare](StructureDefinition-uz-core-episodeofcare.html), [Encounter](StructureDefinition-uz-core-encounter.html), [Condition](StructureDefinition-uz-core-condition.html) и [Observation](StructureDefinition-uz-core-observation.html) профилированы в UZ Core. Профиль MedicationRequest, используемый во время лечения, находится в разработке. До его публикации используйте базовый ресурс FHIR R5.
 
 Участники: врач общей практики (открывает клинический случай и ведёт его); профильные специалисты (оказывают помощь в рамках клинического случая); платформа DHP (Digital Health Platform - Цифровая платформа здравоохранения).
 
@@ -13,7 +13,7 @@
 ```
 POST [base]/EpisodeOfCare
 { "resourceType": "EpisodeOfCare",
-  "meta": { "profile": ["https://dhp.uz/fhir/core/StructureDefinition/uz-core-episode-of-care"] },
+  "meta": { "profile": ["https://dhp.uz/fhir/core/StructureDefinition/uz-core-episodeofcare"] },
   "status": "active",
   "patient": { "reference": "Patient/[id]" },
   "period": { "start": "2026-05-30" } }
@@ -61,5 +61,5 @@ GET [base]/Observation?patient=Patient/[id]&_sort=-date
 
 ### Связанные материалы
 
-- Профили: [EpisodeOfCare](StructureDefinition-uz-core-episode-of-care.html) &middot; [Encounter](StructureDefinition-uz-core-encounter.html) &middot; [Condition](StructureDefinition-uz-core-condition.html) &middot; [Observation](StructureDefinition-uz-core-observation.html)
+- Профили: [EpisodeOfCare](StructureDefinition-uz-core-episodeofcare.html) &middot; [Encounter](StructureDefinition-uz-core-encounter.html) &middot; [Condition](StructureDefinition-uz-core-condition.html) &middot; [Observation](StructureDefinition-uz-core-observation.html)
 - [Обзор процессов](workflows.html) &middot; [Общие рекомендации](general-guidance.html)

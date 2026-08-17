@@ -1,4 +1,4 @@
-UZ Core Encounter Raqamli sog'liqni saqlash platformasida bemor va sog'liqni saqlash tizimi o'rtasidagi bitta o'zaro aloqani - tashrifni - ifodalaydi. U bemorning tibbiy yordam olish jarayonida markaziy o'rin tutadi: [Observation](StructureDefinition-uz-core-observation.html), [Procedure](StructureDefinition-uz-core-procedure.html), [Condition](StructureDefinition-uz-core-condition.html), MedicationRequest va klinik hujjatlar o'zlari tegishli bo'lgan Encounter ga reference beradi. Unda tashrif qayerda o'tkazilgani, kim tomonidan xizmat ko'rsatilgani va tashrif davomida belgilangan tashxislar (har biri [Condition](StructureDefinition-uz-core-condition.html) ga reference beradi) qayd etiladi; shuningdek, u [EpisodeOfCare](StructureDefinition-uz-core-episode-of-care.html) doirasida guruhlanishi mumkin.
+UZ Core Encounter Raqamli sog'liqni saqlash platformasida bemor va sog'liqni saqlash tizimi o'rtasidagi bitta o'zaro aloqani - tashrifni - ifodalaydi. U bemorning tibbiy yordam olish jarayonida markaziy o'rin tutadi: [Observation](StructureDefinition-uz-core-observation.html), [Procedure](StructureDefinition-uz-core-procedure.html), [Condition](StructureDefinition-uz-core-condition.html), MedicationRequest va klinik hujjatlar o'zlari tegishli bo'lgan Encounter ga reference beradi. Unda tashrif qayerda o'tkazilgani, kim tomonidan xizmat ko'rsatilgani va tashrif davomida belgilangan tashxislar (har biri [Condition](StructureDefinition-uz-core-condition.html) ga reference beradi) qayd etiladi; shuningdek, u [EpisodeOfCare](StructureDefinition-uz-core-episodeofcare.html) doirasida guruhlanishi mumkin.
 
 ### Majburiy va Must Support ma'lumot elementlari
 
@@ -183,6 +183,6 @@ Gospitalizatsiya uchun `diagnosis` ro'yxatini (har bir `condition` - `CodeableRe
 }
 ```
 
-Ushbu kalitlar yuqoridagi amaliy tashrif bilan bir xil resurs tarkibiga qo'shiladi. Tashrifni uzoqroq davolash jarayoni doirasida guruhlash uchun [EpisodeOfCare](StructureDefinition-uz-core-episode-of-care.html) ga `episodeOfCare` orqali reference bering.
+Ushbu kalitlar yuqoridagi amaliy tashrif bilan bir xil resurs tarkibiga qo'shiladi. Tashrifni uzoqroq davolash jarayoni doirasida guruhlash uchun [EpisodeOfCare](StructureDefinition-uz-core-episodeofcare.html) ga `episodeOfCare` orqali reference bering.
 
 API chaqiruvlari va namuna payload uchun sahifaning quyi qismidagi [Tezkor boshlash](#quick-start) bo'limiga qarang.
