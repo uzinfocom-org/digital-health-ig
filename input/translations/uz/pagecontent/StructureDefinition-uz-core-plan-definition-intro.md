@@ -1,16 +1,16 @@
 > **Mashina tarjimasi, inson tomonidan tekshirilishi zarur.** Ushbu sahifa ingliz tilidan sun'iy intellekt yordamida avtomatik tarjima qilingan va hali muharrir tomonidan tekshirilmagan. Har qanday nomuvofiqlikda asl inglizcha versiya ustuvor hisoblanadi.
 
-UZ Core Immunization PlanDefinition Oʻzbekistonning milliy emlash jadvalini hisoblanadigan mantiq koʻrinishida saqlaydi - har bir tavsiya etilgan doza, uning vaqti, dozalar orasidagi eng kichik intervallar va u kimga taalluqli ekanligini belgilovchi muvofiqlik qoidalari. Bu shunday resurski, tavsiya mexanizmi uni oʻqib har bir bemorning [ImmunizationRecommendation](StructureDefinition-uz-core-immunization-recommendation.html) resursini tuzadi. Berilgan koʻlam yoki yurisdiksiya uchun bir vaqtning oʻzida jadvalning faqat bitta versiyasi faol boʻlishi mumkin.
+UZ Core PlanDefinition Oʻzbekistonning milliy sogʻliqni saqlash jadvalini hisoblanadigan mantiq koʻrinishida saqlaydi - har bir rejalashtirilgan faoliyat, uning vaqti, faoliyatlar orasidagi eng kichik intervallar va u kimga taalluqli ekanligini belgilovchi muvofiqlik qoidalari. Ayni shu profil milliy emlash jadvalini, toʻliq qon donatsiyasi jadvallarini va skrining jadvallarini qamrab oladi; `focus` foydalanish konteksti muayyan jadval qaysi turga tegishli ekanini bildiradi. Emlash jadvali - bu shunday resurski, tavsiya mexanizmi uni oʻqib har bir bemorning [ImmunizationRecommendation](StructureDefinition-uz-core-immunization-recommendation.html) resursini tuzadi. Berilgan koʻlam yoki yurisdiksiya uchun bir vaqtning oʻzida jadvalning faqat bitta versiyasi faol boʻlishi mumkin.
 
 ### Majburiy va Must Support maʼlumot elementlari
 
 Quyidagi elementlar har doim mavjud boʻlishi (majburiy) yoki maʼlumot mavjud boʻlganda qoʻllab-quvvatlanishi kerak ([Must Support](must-support.html)) - hammasi ham talab qilinmaydi, lekin sizning tizimingiz har bir Must Support elementini maʼlumotga ega boʻlganda toʻldirishi va qabul qilinganda uni qayta ishlashi kerak. Bu inson tomonidan oʻqiladigan xulosa; quyidagi [rasmiy koʻrinishlar](#profile) aniq kardinalliklar, turlar va terminologik bogʻlanishlarni beradi.
 
-#### Har bir UZ Core Immunization PlanDefinition quyidagilarga ega boʻlishi shart
+#### Har bir UZ Core PlanDefinition quyidagilarga ega boʻlishi shart
 
-Har bir PlanDefinition url (ushbu jadval uchun kanonik identifikator), mashina tomonidan qayta ishlanadigan name, status (draft, active, retired, unknown - asosiy resursdan majburiy sifatida meros olingan) va jadval nimani qamrab olishi haqidagi description ni olib yurishi shart.
+Har bir PlanDefinition url (ushbu jadval uchun kanonik identifikator), mashina tomonidan qayta ishlanadigan name, status (draft, active, retired, unknown - asosiy resursdan majburiy sifatida meros olingan), jadval nimani qamrab olishi haqidagi description va jadval qaysi turga tegishli ekanini bildiruvchi `focus` kodli aniq bitta foydalanish kontekstini olib yurishi shart.
 
-#### Har bir UZ Core Immunization PlanDefinition quyidagilarni Must Support qiladi
+#### Har bir UZ Core PlanDefinition quyidagilarni Must Support qiladi
 
 
 
@@ -28,20 +28,39 @@ PlanDefinition asosan bir marta yoziladi va tavsiya mexanizmi tomonidan oʻqilad
 
 #### Yuborishingiz kerak boʻlgan eng kichik PlanDefinition
 
-`url`, `name` va `description` majburiy elementlardir, `status` esa asosiy resursda majburiydir (draft \| active \| retired \| unknown - required bogʻlanish). `url` boshqa resurslar havola qiladigan kanonik identifikator, shuning uchun u barqaror boʻlishi shart. Har bir UZ Core resursi shuningdek `meta.profile` da oʻzi muvofiqligini daʼvo qilayotgan profilni nomlaydi. Mana shuncha allaqachon tekshiruvdan oʻtadi:
+`url`, `name` va `description` majburiy elementlardir, `status` esa asosiy resursda majburiydir (draft \| active \| retired \| unknown - required bogʻlanish). `url` boshqa resurslar havola qiladigan kanonik identifikator, shuning uchun u barqaror boʻlishi shart. Har bir UZ Core resursi shuningdek `meta.profile` da oʻzi muvofiqligini daʼvo qilayotgan profilni nomlaydi. Shuningdek `focus` kodi bilan bitta `useContext` majburiy - u bu qanday jadval ekanini bildiradi va mijozlar jadvalni serverda aynan shu orqali topadi. Mana shuncha allaqachon tekshiruvdan oʻtadi:
 
 ```json
 {
   "resourceType": "PlanDefinition",
   "meta": {
-    "profile": ["https://dhp.uz/fhir/core/StructureDefinition/uz-core-immunization-plan-definition"]
+    "profile": ["https://dhp.uz/fhir/core/StructureDefinition/uz-core-plan-definition"]
   },
   "url": "https://terminology.dhp.uz/fhir/core/PlanDefinition/example-uz-core-immunization-plan-definition",
   "name": "ExampleImmunizationPlanDefinition",
   "status": "draft",
-  "description": "Example PlanDefinition demonstrating actions and relationships."
+  "description": "Example PlanDefinition demonstrating actions and relationships.",
+  "useContext": [
+    {
+      "code": {
+        "system": "http://terminology.hl7.org/CodeSystem/usage-context-type",
+        "code": "focus"
+      },
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "33879002",
+            "display": "Active immunization"
+          }
+        ]
+      }
+    }
+  ]
 }
 ```
+
+Aniq bitta `focus` konteksti ruxsat etiladi. Emlash jadvali uchun `33879002`, toʻliq qon donatsiyasi jadvali uchun `25179006`, skrining jadvali uchun esa `360156006` dan foydalaning. Jadval `GET [base]/PlanDefinition?context-type-value=focus$http://snomed.info/sct|33879002` soʻrovi bilan topiladi.
 
 `name` - mashina tomonidan qayta ishlanadigan nom (boʻshliqlarsiz); mavjud boʻlsa, inson tomonidan oʻqiladigan `title` ni qoʻshing. Nashr etilgan jadval olib yurishi kerak boʻlgan publisher, date va version maydonlari uchun [Metadata](general-guidance.html#metadata) ga qarang.
 
@@ -52,7 +71,7 @@ Amalda jadval - bu `action` roʻyxati. Har bir doza `linkId`, `title`, `descript
 ```json
 {
   "resourceType": "PlanDefinition",
-  "meta": { "profile": [ "https://dhp.uz/fhir/core/StructureDefinition/uz-core-immunization-plan-definition" ] },
+  "meta": { "profile": [ "https://dhp.uz/fhir/core/StructureDefinition/uz-core-plan-definition" ] },
   "url": "https://terminology.dhp.uz/fhir/core/PlanDefinition/example-uz-core-immunization-plan-definition",
   "name": "ExampleImmunizationPlanDefinition",
   "title": "Example Vaccination Follow-up Plan",
@@ -60,6 +79,20 @@ Amalda jadval - bu `action` roʻyxati. Har bir doza `linkId`, `title`, `descript
   "date": "2026-08-10",
   "publisher": "DHP Uzbekistan",
   "description": "Example PlanDefinition demonstrating actions and relationships.",
+  "useContext": [
+    {
+      "code": { "system": "http://terminology.hl7.org/CodeSystem/usage-context-type", "code": "focus" },
+      "valueCodeableConcept": {
+        "coding": [ { "system": "http://snomed.info/sct", "code": "33879002", "display": "Active immunization" } ]
+      }
+    },
+    {
+      "code": { "system": "http://terminology.hl7.org/CodeSystem/usage-context-type", "code": "topic" },
+      "valueCodeableConcept": {
+        "coding": [ { "system": "https://terminology.dhp.uz/fhir/core/CodeSystem/immunization-schedule-type-cs", "code": "pd-type-0001-00001", "display": "Age-based" } ]
+      }
+    }
+  ],
   "approvalDate": "2026-08-01",
   "effectivePeriod": { "start": "2026-08-01", "end": "2027-08-01" },
   "action": [
