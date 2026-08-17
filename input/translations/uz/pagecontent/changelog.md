@@ -1,6 +1,8 @@
 ### Ishlab chiqish jarayonida
 
-(Hozircha o'zgarishlar yo'q)
+#### Hujjatlashtirish
+
+«Shakllar» sahifasi endi [So'rovnomalar](forms.html) deb ataladi - u O'zbekistonda qo'llaniladigan tibbiy shakllar bilan chalkashtirilmasligi uchun. Sahifa manzili o'zgarmadi.
 
 ### Versiya 0.7.0
 
