@@ -1,0 +1,2032 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "draft",
+  "content": "complete",
+  "name": "ICCC3CS",
+  "id": "iccc-3-cs",
+  "title": "International Classification of Childhood Cancer, 3rd edition",
+  "description": "Diagnostic groups, subgroups and divisions of the International Classification of Childhood Cancer, 3rd edition (ICCC-3), used to classify childhood cancers by morphology for registry reporting",
+  "url": "https://terminology.dhp.uz/fhir/core/CodeSystem/iccc-3-cs",
+  "concept": [
+    {
+      "code": "I",
+      "display": "Leykozlar, miyeloproliferativ kasalliklar va miyelodisplastik kasalliklar",
+      "concept": [
+        {
+          "code": "Ia",
+          "display": "Limfoid leykozlar",
+          "concept": [
+            {
+              "code": "Ia1",
+              "display": "Old hujayralardan rivojlangan leykozlar",
+              "designation": [
+                {
+                  "language": "ru",
+                  "value": "Лейкозы из клеток-предшественников"
+                },
+                {
+                  "language": "en",
+                  "value": "Precursor cell leukemias"
+                }
+              ]
+            },
+            {
+              "code": "Ia2",
+              "display": "Yetuk B-hujayrali leykozlar",
+              "designation": [
+                {
+                  "language": "ru",
+                  "value": "Лейкозы зрелых B-клеток"
+                },
+                {
+                  "language": "en",
+                  "value": "Mature B-cell leukemias"
+                }
+              ]
+            },
+            {
+              "code": "Ia4",
+              "display": "Limfoid leykoz, aniqlanmagan",
+              "designation": [
+                {
+                  "language": "ru",
+                  "value": "Лимфоидный лейкоз, неуточнённый"
+                },
+                {
+                  "language": "en",
+                  "value": "Lymphoid leukemia, NOS"
+                }
+              ]
+            }
+          ],
+          "designation": [
+            {
+              "language": "ru",
+              "value": "Лимфоидные лейкозы"
+            },
+            {
+              "language": "en",
+              "value": "Lymphoid leukemias"
+            }
+          ]
+        },
+        {
+          "code": "Ib",
+          "display": "O‘tkir miyeloid leykozlar",
+          "designation": [
+            {
+              "language": "ru",
+              "value": "Острые миелоидные лейкозы"
+            },
+            {
+              "language": "en",
+              "value": "Acute myeloid leukemias"
+            }
+          ]
+        },
+        {
+          "code": "Ic",
+          "display": "Surunkali miyeloproliferativ kasalliklar",
+          "designation": [
+            {
+              "language": "ru",
+              "value": "Хронические миелопролиферативные заболевания"
+            },
+            {
+              "language": "en",
+              "value": "Chronic myeloproliferative diseases"
+            }
+          ]
+        },
+        {
+          "code": "Id",
+          "display": "Miyelodisplastik sindrom va boshqa miyeloproliferativ kasalliklar",
+          "designation": [
+            {
+              "language": "ru",
+              "value": "Миелодиспластический синдром и другие миелопролиферативные заболевания"
+            },
+            {
+              "language": "en",
+              "value": "Myelodysplastic syndrome and other myeloproliferative diseases"
+            }
+          ]
+        },
+        {
+          "code": "Ie",
+          "display": "Aniqlanmagan va boshqa aniqlangan leykozlar",
+          "designation": [
+            {
+              "language": "ru",
+              "value": "Неуточнённые и другие уточнённые лейкозы"
+            },
+            {
+              "language": "en",
+              "value": "Unspecified and other specified leukemias"
+            }
+          ]
+        }
+      ],
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Лейкозы, миелопролиферативные заболевания и миелодиспластические заболевания"
+        },
+        {
+          "language": "en",
+          "value": "Leukemias, myeloproliferative diseases, and myelodysplastic diseases"
+        }
+      ]
+    },
+    {
+      "code": "II",
+      "display": "Limfomalar va retikuloendotelial o‘smalar",
+      "concept": [
+        {
+          "code": "IIa",
+          "display": "Xodjkin limfomalari",
+          "designation": [
+            {
+              "language": "ru",
+              "value": "Лимфомы Ходжкина"
+            },
+            {
+              "language": "en",
+              "value": "Hodgkin lymphomas"
+            }
+          ]
+        },
+        {
+          "code": "IIb",
+          "display": "Non-Xodjkin limfomalari (Berkitt limfomasidan tashqari)",
+          "concept": [
+            {
+              "code": "IIb1",
+              "display": "Old hujayralardan rivojlangan limfomalar",
+              "designation": [
+                {
+                  "language": "ru",
+                  "value": "Лимфомы из клеток-предшественников"
+                },
+                {
+                  "language": "en",
+                  "value": "Precursor cell lymphomas"
+                }
+              ]
+            },
+            {
+              "code": "IIb2",
+              "display": "Yetuk B-hujayrali limfomalar (Berkitt limfomasidan tashqari)",
+              "designation": [
+                {
+                  "language": "ru",
+                  "value": "Лимфомы зрелых B-клеток (кроме лимфомы Беркитта)"
+                },
+                {
+                  "language": "en",
+                  "value": "Mature B-cell lymphomas (except Burkitt lymphoma)"
+                }
+              ]
+            },
+            {
+              "code": "IIb3",
+              "display": "Yetuk T-hujayra va NK-hujayra limfomalari",
+              "designation": [
+                {
+                  "language": "ru",
+                  "value": "Лимфомы зрелых T-клеток и NK-клеток"
+                },
+                {
+                  "language": "en",
+                  "value": "Mature T-cell and NK-cell lymphomas"
+                }
+              ]
+            },
+            {
+              "code": "IIb4",
+              "display": "Non-Xodjkin limfomalari, aniqlanmagan",
+              "designation": [
+                {
+                  "language": "ru",
+                  "value": "Неходжкинские лимфомы, неуточнённые"
+                },
+                {
+                  "language": "en",
+                  "value": "Non-Hodgkin lymphomas, NOS"
+                }
+              ]
+            }
+          ],
+          "designation": [
+            {
+              "language": "ru",
+              "value": "Неходжкинские лимфомы (кроме лимфомы Беркитта)"
+            },
+            {
+              "language": "en",
+              "value": "Non-Hodgkin lymphomas (except Burkitt lymphoma)"
+            }
+          ]
+        },
+        {
+          "code": "IIc",
+          "display": "Berkitt limfomasi",
+          "designation": [
+            {
+              "language": "ru",
+              "value": "Лимфома Беркитта"
+            },
+            {
+              "language": "en",
+              "value": "Burkitt lymphoma"
+            }
+          ]
+        },
+        {
+          "code": "IId",
+          "display": "Boshqa limforetikulyar o‘smalar",
+          "designation": [
+            {
+              "language": "ru",
+              "value": "Прочие лимфоретикулярные новообразования"
+            },
+            {
+              "language": "en",
+              "value": "Miscellaneous lymphoreticular neoplasms"
+            }
+          ]
+        },
+        {
+          "code": "IIe",
+          "display": "Aniqlanmagan limfomalar",
+          "designation": [
+            {
+              "language": "ru",
+              "value": "Неуточнённые лимфомы"
+            },
+            {
+              "language": "en",
+              "value": "Unspecified lymphomas"
+            }
+          ]
+        }
+      ],
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Лимфомы и ретикулоэндотелиальные новообразования"
+        },
+        {
+          "language": "en",
+          "value": "Lymphomas and reticuloendothelial neoplasms"
+        }
+      ]
+    },
+    {
+      "code": "III",
+      "display": "CNS va boshqa intrakranial va intraspinal o‘smalar",
+      "concept": [
+        {
+          "code": "IIIa",
+          "display": "Ependimomalar va tomirli pleksus o‘smalari",
+          "concept": [
+            {
+              "code": "IIIa1",
+              "display": "Ependimomalar",
+              "designation": [
+                {
+                  "language": "ru",
+                  "value": "Эпендимомы"
+                },
+                {
+                  "language": "en",
+                  "value": "Ependymomas"
+                }
+              ]
+            },
+            {
+              "code": "IIIa2",
+              "display": "Tomirli pleksus o‘smalari",
+              "designation": [
+                {
+                  "language": "ru",
+                  "value": "Опухоли сосудистого сплетения"
+                },
+                {
+                  "language": "en",
+                  "value": "Choroid plexus tumor"
+                }
+              ]
+            }
+          ],
+          "designation": [
+            {
+              "language": "ru",
+              "value": "Эпендимомы и опухоли сосудистого сплетения"
+            },
+            {
+              "language": "en",
+              "value": "Ependymomas and choroid plexus tumor"
+            }
+          ]
+        },
+        {
+          "code": "IIIb",
+          "display": "Astrositomalar",
+          "designation": [
+            {
+              "language": "ru",
+              "value": "Астроцитомы"
+            },
+            {
+              "language": "en",
+              "value": "Astrocytomas"
+            }
+          ]
+        },
+        {
+          "code": "IIIc",
+          "display": "Intrakranial va intraspinal embrional o‘smalar",
+          "concept": [
+            {
+              "code": "IIIc1",
+              "display": "Medulloblastomalar",
+              "designation": [
+                {
+                  "language": "ru",
+                  "value": "Медуллобластомы"
+                },
+                {
+                  "language": "en",
+                  "value": "Medulloblastomas"
+                }
+              ]
+            },
+            {
+              "code": "IIIc2",
+              "display": "Primitiv neyroektodermal o‘sma (PNET)",
+              "designation": [
+                {
+                  "language": "ru",
+                  "value": "Примитивная нейроэктодермальная опухоль (ПНЭТ)"
+                },
+                {
+                  "language": "en",
+                  "value": "PNET"
+                }
+              ]
+            },
+            {
+              "code": "IIIc3",
+              "display": "Medulloepitelioma",
+              "designation": [
+                {
+                  "language": "ru",
+                  "value": "Медуллоэпителиома"
+                },
+                {
+                  "language": "en",
+                  "value": "Medulloepithelioma"
+                }
+              ]
+            },
+            {
+              "code": "IIIc4",
+              "display": "Atipik teratoid/rabdoid o‘sma",
+              "designation": [
+                {
+                  "language": "ru",
+                  "value": "Атипичная тератоидно-рабдоидная опухоль"
+                },
+                {
+                  "language": "en",
+                  "value": "Atypical teratoid/rhabdoid tumor"
+                }
+              ]
+            }
+          ],
+          "designation": [
+            {
+              "language": "ru",
+              "value": "Внутричерепные и внутриспинальные эмбриональные опухоли"
+            },
+            {
+              "language": "en",
+              "value": "Intracranial and intraspinal embryonal tumors"
+            }
+          ]
+        },
+        {
+          "code": "IIId",
+          "display": "Boshqa gliomalar",
+          "concept": [
+            {
+              "code": "IIId1",
+              "display": "Oligodendrogliomalar",
+              "designation": [
+                {
+                  "language": "ru",
+                  "value": "Олигодендроглиомы"
+                },
+                {
+                  "language": "en",
+                  "value": "Oligodendrogliomas"
+                }
+              ]
+            },
+            {
+              "code": "IIId2",
+              "display": "Aralash va aniqlanmagan gliomalar",
+              "designation": [
+                {
+                  "language": "ru",
+                  "value": "Смешанные и неуточнённые глиомы"
+                },
+                {
+                  "language": "en",
+                  "value": "Mixed and unspecified gliomas"
+                }
+              ]
+            },
+            {
+              "code": "IIId3",
+              "display": "Kelib chiqishi noaniq neyroepitelial glial o‘smalar",
+              "designation": [
+                {
+                  "language": "ru",
+                  "value": "Нейроэпителиальные глиальные опухоли неясного происхождения"
+                },
+                {
+                  "language": "en",
+                  "value": "Neuroepithelial glial tumors of uncertain origin"
+                }
+              ]
+            }
+          ],
+          "designation": [
+            {
+              "language": "ru",
+              "value": "Другие глиомы"
+            },
+            {
+              "language": "en",
+              "value": "Other gliomas"
+            }
+          ]
+        },
+        {
+          "code": "IIIe",
+          "display": "Boshqa aniqlangan intrakranial va intraspinal o‘smalar",
+          "concept": [
+            {
+              "code": "IIIe1",
+              "display": "Gipofiz adenomasi va karsinomasi",
+              "designation": [
+                {
+                  "language": "ru",
+                  "value": "Аденомы и карциномы гипофиза"
+                },
+                {
+                  "language": "en",
+                  "value": "Pituitary adenomas and carcinomas"
+                }
+              ]
+            },
+            {
+              "code": "IIIe2",
+              "display": "Sellar soha o‘smalari (kraniofaringiomalar)",
+              "designation": [
+                {
+                  "language": "ru",
+                  "value": "Опухоли селлярной области (краниофарингиомы)"
+                },
+                {
+                  "language": "en",
+                  "value": "Tumors of the sellar region (craniopharyngiomas)"
+                }
+              ]
+            },
+            {
+              "code": "IIIe3",
+              "display": "Pineal parenxima o‘smalari",
+              "designation": [
+                {
+                  "language": "ru",
+                  "value": "Опухоли паренхимы шишковидной железы"
+                },
+                {
+                  "language": "en",
+                  "value": "Pineal parenchymal tumors"
+                }
+              ]
+            },
+            {
+              "code": "IIIe4",
+              "display": "Neyronal va aralash neyronal-glial o‘smalar",
+              "designation": [
+                {
+                  "language": "ru",
+                  "value": "Нейрональные и смешанные нейронально-глиальные опухоли"
+                },
+                {
+                  "language": "en",
+                  "value": "Neuronal and mixed neuronal-glial tumors"
+                }
+              ]
+            },
+            {
+              "code": "IIIe5",
+              "display": "Meningiomalar",
+              "designation": [
+                {
+                  "language": "ru",
+                  "value": "Менингиомы"
+                },
+                {
+                  "language": "en",
+                  "value": "Meningiomas"
+                }
+              ]
+            }
+          ],
+          "designation": [
+            {
+              "language": "ru",
+              "value": "Другие уточнённые внутричерепные и внутриспинальные новообразования"
+            },
+            {
+              "language": "en",
+              "value": "Other specified intracranial and intraspinal neoplasms"
+            }
+          ]
+        },
+        {
+          "code": "IIIf",
+          "display": "Aniqlanmagan intrakranial va intraspinal o‘smalar",
+          "designation": [
+            {
+              "language": "ru",
+              "value": "Неуточнённые внутричерепные и внутриспинальные новообразования"
+            },
+            {
+              "language": "en",
+              "value": "Unspecified intracranial and intraspinal neoplasms"
+            }
+          ]
+        }
+      ],
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Опухоли ЦНС и прочие внутричерепные и внутриспинальные новообразования"
+        },
+        {
+          "language": "en",
+          "value": "CNS and miscellaneous intracranial and intraspinal neoplasms"
+        }
+      ]
+    },
+    {
+      "code": "IV",
+      "display": "Neyroblastoma va boshqa periferik nerv hujayralari o‘smalari",
+      "concept": [
+        {
+          "code": "IVa",
+          "display": "Neyroblastoma va ganglionevroblastoma",
+          "designation": [
+            {
+              "language": "ru",
+              "value": "Нейробластома и ганглионейробластома"
+            },
+            {
+              "language": "en",
+              "value": "Neuroblastoma and ganglioneuroblastoma"
+            }
+          ]
+        },
+        {
+          "code": "IVb",
+          "display": "Boshqa periferik nerv hujayralari o‘smalari",
+          "designation": [
+            {
+              "language": "ru",
+              "value": "Другие опухоли клеток периферической нервной системы"
+            },
+            {
+              "language": "en",
+              "value": "Other peripheral nervous cell tumors"
+            }
+          ]
+        }
+      ],
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Нейробластома и другие опухоли клеток периферической нервной системы"
+        },
+        {
+          "language": "en",
+          "value": "Neuroblastoma and other peripheral nervous cell tumors"
+        }
+      ]
+    },
+    {
+      "code": "V",
+      "display": "Retinoblastoma",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Ретинобластома"
+        },
+        {
+          "language": "en",
+          "value": "Retinoblastoma"
+        }
+      ]
+    },
+    {
+      "code": "VI",
+      "display": "Buyrak o‘smalari",
+      "concept": [
+        {
+          "code": "VIa",
+          "display": "Nefroblastoma va boshqa epitelial bo‘lmagan buyrak o‘smalari",
+          "concept": [
+            {
+              "code": "VIa1",
+              "display": "Nefroblastoma",
+              "designation": [
+                {
+                  "language": "ru",
+                  "value": "Нефробластома"
+                },
+                {
+                  "language": "en",
+                  "value": "Nephroblastoma"
+                }
+              ]
+            },
+            {
+              "code": "VIa2",
+              "display": "Buyrakning rabdoid o‘smasi",
+              "designation": [
+                {
+                  "language": "ru",
+                  "value": "Рабдоидная опухоль почки"
+                },
+                {
+                  "language": "en",
+                  "value": "Rhabdoid renal tumor"
+                }
+              ]
+            },
+            {
+              "code": "VIa3",
+              "display": "Buyrak sarkomalari",
+              "designation": [
+                {
+                  "language": "ru",
+                  "value": "Саркомы почки"
+                },
+                {
+                  "language": "en",
+                  "value": "Kidney sarcomas"
+                }
+              ]
+            },
+            {
+              "code": "VIa4",
+              "display": "Buyrak pPNET",
+              "designation": [
+                {
+                  "language": "ru",
+                  "value": "pPNET почки"
+                },
+                {
+                  "language": "en",
+                  "value": "pPNET of kidney"
+                }
+              ]
+            }
+          ],
+          "designation": [
+            {
+              "language": "ru",
+              "value": "Нефробластома и другие неэпителиальные опухоли почки"
+            },
+            {
+              "language": "en",
+              "value": "Nephroblastoma and other nonepithelial renal tumors"
+            }
+          ]
+        },
+        {
+          "code": "VIb",
+          "display": "Buyrak karsinomasi",
+          "designation": [
+            {
+              "language": "ru",
+              "value": "Карциномы почки"
+            },
+            {
+              "language": "en",
+              "value": "Renal carcinomas"
+            }
+          ]
+        },
+        {
+          "code": "VIc",
+          "display": "Aniqlanmagan yomon sifatli buyrak o‘smalari",
+          "designation": [
+            {
+              "language": "ru",
+              "value": "Неуточнённые злокачественные опухоли почки"
+            },
+            {
+              "language": "en",
+              "value": "Unspecified malignant renal tumors"
+            }
+          ]
+        }
+      ],
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Опухоли почки"
+        },
+        {
+          "language": "en",
+          "value": "Renal tumors"
+        }
+      ]
+    },
+    {
+      "code": "VII",
+      "display": "Jigar o‘smalari",
+      "concept": [
+        {
+          "code": "VIIa",
+          "display": "Gepatoblastoma",
+          "designation": [
+            {
+              "language": "ru",
+              "value": "Гепатобластома"
+            },
+            {
+              "language": "en",
+              "value": "Hepatoblastoma"
+            }
+          ]
+        },
+        {
+          "code": "VIIb",
+          "display": "Jigar karsinomasi",
+          "designation": [
+            {
+              "language": "ru",
+              "value": "Карциномы печени"
+            },
+            {
+              "language": "en",
+              "value": "Hepatic carcinomas"
+            }
+          ]
+        },
+        {
+          "code": "VIIc",
+          "display": "Aniqlanmagan yomon sifatli jigar o‘smalari",
+          "designation": [
+            {
+              "language": "ru",
+              "value": "Неуточнённые злокачественные опухоли печени"
+            },
+            {
+              "language": "en",
+              "value": "Unspecified malignant hepatic tumors"
+            }
+          ]
+        }
+      ],
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Опухоли печени"
+        },
+        {
+          "language": "en",
+          "value": "Hepatic tumors"
+        }
+      ]
+    },
+    {
+      "code": "VIII",
+      "display": "Suyaklarning yomon sifatli o‘smalari",
+      "concept": [
+        {
+          "code": "VIIIa",
+          "display": "Osteosarkomalar",
+          "designation": [
+            {
+              "language": "ru",
+              "value": "Остеосаркомы"
+            },
+            {
+              "language": "en",
+              "value": "Osteosarcomas"
+            }
+          ]
+        },
+        {
+          "code": "VIIIb",
+          "display": "Xondrosarkomalar",
+          "designation": [
+            {
+              "language": "ru",
+              "value": "Хондросаркомы"
+            },
+            {
+              "language": "en",
+              "value": "Chondrosarcomas"
+            }
+          ]
+        },
+        {
+          "code": "VIIIc",
+          "display": "Ewing o‘smasi va unga o‘xshash suyak sarkomalari",
+          "concept": [
+            {
+              "code": "VIIIc1",
+              "display": "Ewing va Askin suyak o‘smalari",
+              "designation": [
+                {
+                  "language": "ru",
+                  "value": "Опухоль Юинга и опухоль Аскина костей"
+                },
+                {
+                  "language": "en",
+                  "value": "Ewing tumor and Askin tumor of bone"
+                }
+              ]
+            },
+            {
+              "code": "VIIIc2",
+              "display": "Suyak pPNET",
+              "designation": [
+                {
+                  "language": "ru",
+                  "value": "pPNET костей"
+                },
+                {
+                  "language": "en",
+                  "value": "pPNET of bone"
+                }
+              ]
+            }
+          ],
+          "designation": [
+            {
+              "language": "ru",
+              "value": "Опухоль Юинга и родственные саркомы костей"
+            },
+            {
+              "language": "en",
+              "value": "Ewing tumor and related sarcomas of bone"
+            }
+          ]
+        },
+        {
+          "code": "VIIId",
+          "display": "Boshqa aniqlangan yomon sifatli suyak o‘smalari",
+          "concept": [
+            {
+              "code": "VIIId1",
+              "display": "Suyaklarning yomon sifatli fibroz o‘smalari",
+              "designation": [
+                {
+                  "language": "ru",
+                  "value": "Злокачественные фиброзные новообразования костей"
+                },
+                {
+                  "language": "en",
+                  "value": "Malignant fibrous neoplasms of bone"
+                }
+              ]
+            },
+            {
+              "code": "VIIId2",
+              "display": "Yomon sifatli xordomalar",
+              "designation": [
+                {
+                  "language": "ru",
+                  "value": "Злокачественные хордомы"
+                },
+                {
+                  "language": "en",
+                  "value": "Malignant chordomas"
+                }
+              ]
+            },
+            {
+              "code": "VIIId3",
+              "display": "Odontogen yomon sifatli o‘smalar",
+              "designation": [
+                {
+                  "language": "ru",
+                  "value": "Одонтогенные злокачественные опухоли"
+                },
+                {
+                  "language": "en",
+                  "value": "Odontogenic malignant tumors"
+                }
+              ]
+            },
+            {
+              "code": "VIIId4",
+              "display": "Boshqa yomon sifatli suyak o‘smalari",
+              "designation": [
+                {
+                  "language": "ru",
+                  "value": "Прочие злокачественные опухоли костей"
+                },
+                {
+                  "language": "en",
+                  "value": "Miscellaneous malignant bone tumors"
+                }
+              ]
+            }
+          ],
+          "designation": [
+            {
+              "language": "ru",
+              "value": "Другие уточнённые злокачественные опухоли костей"
+            },
+            {
+              "language": "en",
+              "value": "Other specified malignant bone tumors"
+            }
+          ]
+        },
+        {
+          "code": "VIIIe",
+          "display": "Aniqlanmagan yomon sifatli suyak o‘smalari",
+          "designation": [
+            {
+              "language": "ru",
+              "value": "Неуточнённые злокачественные опухоли костей"
+            },
+            {
+              "language": "en",
+              "value": "Unspecified malignant bone tumors"
+            }
+          ]
+        }
+      ],
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Злокачественные опухоли костей"
+        },
+        {
+          "language": "en",
+          "value": "Malignant bone tumors"
+        }
+      ]
+    },
+    {
+      "code": "IX",
+      "display": "Yumshoq to‘qima va boshqa ekstrasuyak sarkomalari",
+      "concept": [
+        {
+          "code": "IXa",
+          "display": "Rabdomiosarkomalar",
+          "designation": [
+            {
+              "language": "ru",
+              "value": "Рабдомиосаркомы"
+            },
+            {
+              "language": "en",
+              "value": "Rhabdomyosarcomas"
+            }
+          ]
+        },
+        {
+          "code": "IXb",
+          "display": "Fibrosarkomalar, periferik nerv qobig‘i o‘smalari va boshqa fibroz o‘smalar",
+          "concept": [
+            {
+              "code": "IXb1",
+              "display": "Fibroblastik va miofibroblastik o‘smalar",
+              "designation": [
+                {
+                  "language": "ru",
+                  "value": "Фибробластические и миофибробластические опухоли"
+                },
+                {
+                  "language": "en",
+                  "value": "Fibroblastic and myofibroblastic tumors"
+                }
+              ]
+            },
+            {
+              "code": "IXb2",
+              "display": "Nerv qobig‘i o‘smalari",
+              "designation": [
+                {
+                  "language": "ru",
+                  "value": "Опухоли оболочек нервов"
+                },
+                {
+                  "language": "en",
+                  "value": "Nerve sheath tumors"
+                }
+              ]
+            },
+            {
+              "code": "IXb3",
+              "display": "Boshqa fibromatoz o‘smalar",
+              "designation": [
+                {
+                  "language": "ru",
+                  "value": "Другие фиброматозные новообразования"
+                },
+                {
+                  "language": "en",
+                  "value": "Other fibromatous neoplasms"
+                }
+              ]
+            }
+          ],
+          "designation": [
+            {
+              "language": "ru",
+              "value": "Фибросаркомы, опухоли оболочек периферических нервов и другие фиброзные новообразования"
+            },
+            {
+              "language": "en",
+              "value": "Fibrosarcomas, peripheral nerve sheath tumors, and other fibrous neoplasms"
+            }
+          ]
+        },
+        {
+          "code": "IXc",
+          "display": "Kaposi sarkomasi",
+          "designation": [
+            {
+              "language": "ru",
+              "value": "Саркома Капоши"
+            },
+            {
+              "language": "en",
+              "value": "Kaposi sarcoma"
+            }
+          ]
+        },
+        {
+          "code": "IXd",
+          "display": "Boshqa aniqlangan yumshoq to‘qima sarkomalari",
+          "concept": [
+            {
+              "code": "IXd1",
+              "display": "Yumshoq to‘qimalarning Ewing va Askin o‘smalari",
+              "designation": [
+                {
+                  "language": "ru",
+                  "value": "Опухоль Юинга и опухоль Аскина мягких тканей"
+                },
+                {
+                  "language": "en",
+                  "value": "Ewing tumor and Askin tumor of soft tissue"
+                }
+              ]
+            },
+            {
+              "code": "IXd2",
+              "display": "Yumshoq to‘qima pPNET",
+              "designation": [
+                {
+                  "language": "ru",
+                  "value": "pPNET мягких тканей"
+                },
+                {
+                  "language": "en",
+                  "value": "pPNET of soft tissue"
+                }
+              ]
+            },
+            {
+              "code": "IXd3",
+              "display": "Ekstrarenal rabdoid o‘sma",
+              "designation": [
+                {
+                  "language": "ru",
+                  "value": "Внепочечная рабдоидная опухоль"
+                },
+                {
+                  "language": "en",
+                  "value": "Extrarenal rhabdoid tumor"
+                }
+              ]
+            },
+            {
+              "code": "IXd4",
+              "display": "Liposarkomalar",
+              "designation": [
+                {
+                  "language": "ru",
+                  "value": "Липосаркомы"
+                },
+                {
+                  "language": "en",
+                  "value": "Liposarcomas"
+                }
+              ]
+            },
+            {
+              "code": "IXd5",
+              "display": "Fibrogistiotsitar o‘smalar",
+              "designation": [
+                {
+                  "language": "ru",
+                  "value": "Фиброгистиоцитарные опухоли"
+                },
+                {
+                  "language": "en",
+                  "value": "Fibrohistiocytic tumors"
+                }
+              ]
+            },
+            {
+              "code": "IXd6",
+              "display": "Leyomiosarkomalar",
+              "designation": [
+                {
+                  "language": "ru",
+                  "value": "Лейомиосаркомы"
+                },
+                {
+                  "language": "en",
+                  "value": "Leiomyosarcomas"
+                }
+              ]
+            },
+            {
+              "code": "IXd7",
+              "display": "Sinovial sarkomalar",
+              "designation": [
+                {
+                  "language": "ru",
+                  "value": "Синовиальные саркомы"
+                },
+                {
+                  "language": "en",
+                  "value": "Synovial sarcomas"
+                }
+              ]
+            },
+            {
+              "code": "IXd8",
+              "display": "Qon tomir o‘smalari",
+              "designation": [
+                {
+                  "language": "ru",
+                  "value": "Опухоли кровеносных сосудов"
+                },
+                {
+                  "language": "en",
+                  "value": "Blood vessel tumors"
+                }
+              ]
+            },
+            {
+              "code": "IXd9",
+              "display": "Yumshoq to‘qimaning suyak va tog‘ay o‘smalari",
+              "designation": [
+                {
+                  "language": "ru",
+                  "value": "Костные и хрящевые новообразования мягких тканей"
+                },
+                {
+                  "language": "en",
+                  "value": "Osseous and chondromatous neoplasms of soft tissue"
+                }
+              ]
+            },
+            {
+              "code": "IXd10",
+              "display": "Alveolyar yumshoq to‘qima sarkomasi",
+              "designation": [
+                {
+                  "language": "ru",
+                  "value": "Альвеолярная саркома мягких тканей"
+                },
+                {
+                  "language": "en",
+                  "value": "Alveolar soft parts sarcoma"
+                }
+              ]
+            },
+            {
+              "code": "IXd11",
+              "display": "Boshqa yumshoq to‘qima sarkomalari",
+              "designation": [
+                {
+                  "language": "ru",
+                  "value": "Прочие саркомы мягких тканей"
+                },
+                {
+                  "language": "en",
+                  "value": "Miscellaneous soft tissue sarcomas"
+                }
+              ]
+            }
+          ],
+          "designation": [
+            {
+              "language": "ru",
+              "value": "Другие уточнённые саркомы мягких тканей"
+            },
+            {
+              "language": "en",
+              "value": "Other specified soft tissue sarcomas"
+            }
+          ]
+        },
+        {
+          "code": "IXe",
+          "display": "Aniqlanmagan yumshoq to‘qima sarkomalari",
+          "designation": [
+            {
+              "language": "ru",
+              "value": "Неуточнённые саркомы мягких тканей"
+            },
+            {
+              "language": "en",
+              "value": "Unspecified soft tissue sarcomas"
+            }
+          ]
+        }
+      ],
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Саркомы мягких тканей и другие вне-костные саркомы"
+        },
+        {
+          "language": "en",
+          "value": "Soft tissue and other extraosseous sarcomas"
+        }
+      ]
+    },
+    {
+      "code": "X",
+      "display": "Jinsiy hujayra o‘smalari, trofoblastik o‘smalar va gonada o‘smalari",
+      "concept": [
+        {
+          "code": "Xa",
+          "display": "Intrakranial va intraspinal jinsiy hujayra o‘smalari",
+          "concept": [
+            {
+              "code": "Xa1",
+              "display": "Intrakranial va intraspinal germinomalar",
+              "designation": [
+                {
+                  "language": "ru",
+                  "value": "Внутричерепные и внутриспинальные герминомы"
+                },
+                {
+                  "language": "en",
+                  "value": "Intracranial and intraspinal germinomas"
+                }
+              ]
+            },
+            {
+              "code": "Xa2",
+              "display": "Intrakranial va intraspinal teratomalar",
+              "designation": [
+                {
+                  "language": "ru",
+                  "value": "Внутричерепные и внутриспинальные тератомы"
+                },
+                {
+                  "language": "en",
+                  "value": "Intracranial and intraspinal teratomas"
+                }
+              ]
+            },
+            {
+              "code": "Xa3",
+              "display": "Intrakranial va intraspinal embrional karsinomalar",
+              "designation": [
+                {
+                  "language": "ru",
+                  "value": "Внутричерепные и внутриспинальные эмбриональные карциномы"
+                },
+                {
+                  "language": "en",
+                  "value": "Intracranial and intraspinal embryonal carcinomas"
+                }
+              ]
+            },
+            {
+              "code": "Xa4",
+              "display": "Intrakranial va intraspinal sariq xalta o‘smalari",
+              "designation": [
+                {
+                  "language": "ru",
+                  "value": "Внутричерепная и внутриспинальная опухоль желточного мешка"
+                },
+                {
+                  "language": "en",
+                  "value": "Intracranial and intraspinal yolk sac tumor"
+                }
+              ]
+            },
+            {
+              "code": "Xa5",
+              "display": "Intrakranial va intraspinal xoriokarsinoma",
+              "designation": [
+                {
+                  "language": "ru",
+                  "value": "Внутричерепная и внутриспинальная хориокарцинома"
+                },
+                {
+                  "language": "en",
+                  "value": "Intracranial and intraspinal choriocarcinoma"
+                }
+              ]
+            },
+            {
+              "code": "Xa6",
+              "display": "Intrakranial va intraspinal aralash turdagi o‘smalar",
+              "designation": [
+                {
+                  "language": "ru",
+                  "value": "Внутричерепные и внутриспинальные опухоли смешанных форм"
+                },
+                {
+                  "language": "en",
+                  "value": "Intracranial and intraspinal tumors of mixed forms"
+                }
+              ]
+            }
+          ],
+          "designation": [
+            {
+              "language": "ru",
+              "value": "Внутричерепные и внутриспинальные опухоли зародышевых клеток"
+            },
+            {
+              "language": "en",
+              "value": "Intracranial and intraspinal germ cell tumors"
+            }
+          ]
+        },
+        {
+          "code": "Xb",
+          "display": "Ekstrakranial va ekstragonadal yomon sifatli jinsiy hujayra o‘smalari",
+          "concept": [
+            {
+              "code": "Xb1",
+              "display": "Ekstrakranial va ekstragonadal joylashuvdagi yomon sifatli germinomalar",
+              "designation": [
+                {
+                  "language": "ru",
+                  "value": "Злокачественные герминомы внечерепных и внегональных локализаций"
+                },
+                {
+                  "language": "en",
+                  "value": "Malignant germinomas of extracranial and extragonadal sites"
+                }
+              ]
+            },
+            {
+              "code": "Xb2",
+              "display": "Ekstrakranial va ekstragonadal joylashuvdagi yomon sifatli teratomalar",
+              "designation": [
+                {
+                  "language": "ru",
+                  "value": "Злокачественные тератомы внечерепных и внегональных локализаций"
+                },
+                {
+                  "language": "en",
+                  "value": "Malignant teratomas of extracranial and extragonadal sites"
+                }
+              ]
+            },
+            {
+              "code": "Xb3",
+              "display": "Ekstrakranial va ekstragonadal embrional karsinomalar",
+              "designation": [
+                {
+                  "language": "ru",
+                  "value": "Эмбриональные карциномы внечерепных и внегональных локализаций"
+                },
+                {
+                  "language": "en",
+                  "value": "Embryonal carcinomas of extracranial and extragonadal sites"
+                }
+              ]
+            },
+            {
+              "code": "Xb4",
+              "display": "Ekstrakranial va ekstragonadal sariq xalta o‘smalari",
+              "designation": [
+                {
+                  "language": "ru",
+                  "value": "Опухоль желточного мешка внечерепных и внегональных локализаций"
+                },
+                {
+                  "language": "en",
+                  "value": "Yolk sac tumor of extracranial and extragonadal sites"
+                }
+              ]
+            },
+            {
+              "code": "Xb5",
+              "display": "Ekstrakranial va ekstragonadal xoriokarsinomalar",
+              "designation": [
+                {
+                  "language": "ru",
+                  "value": "Хориокарциномы внечерепных и внегональных локализаций"
+                },
+                {
+                  "language": "en",
+                  "value": "Choriocarcinomas of extracranial and extragonadal sites"
+                }
+              ]
+            },
+            {
+              "code": "Xb6",
+              "display": "Ekstrakranial va ekstragonadal boshqa va aniqlanmagan aralash jinsiy hujayra o‘smalari",
+              "designation": [
+                {
+                  "language": "ru",
+                  "value": "Другие и неуточнённые злокачественные смешанные опухоли зародышевых клеток внечерепных и внегональных локализаций"
+                },
+                {
+                  "language": "en",
+                  "value": "Other and unspecified malignant mixed germ cell tumors of extracranial and extragonadal sites"
+                }
+              ]
+            }
+          ],
+          "designation": [
+            {
+              "language": "ru",
+              "value": "Злокачественные внечерепные и внегональные опухоли зародышевых клеток"
+            },
+            {
+              "language": "en",
+              "value": "Malignant extracranial and extragonadal germ cell tumors"
+            }
+          ]
+        },
+        {
+          "code": "Xc",
+          "display": "Gonadal yomon sifatli jinsiy hujayra o‘smalari",
+          "concept": [
+            {
+              "code": "Xc1",
+              "display": "Gonadal yomon sifatli germinomalar",
+              "designation": [
+                {
+                  "language": "ru",
+                  "value": "Злокачественные гонадные герминомы"
+                },
+                {
+                  "language": "en",
+                  "value": "Malignant gonadal germinomas"
+                }
+              ]
+            },
+            {
+              "code": "Xc2",
+              "display": "Gonadal yomon sifatli teratomalar",
+              "designation": [
+                {
+                  "language": "ru",
+                  "value": "Злокачественные гонадные тератомы"
+                },
+                {
+                  "language": "en",
+                  "value": "Malignant gonadal teratomas"
+                }
+              ]
+            },
+            {
+              "code": "Xc3",
+              "display": "Gonadal embrional karsinomalar",
+              "designation": [
+                {
+                  "language": "ru",
+                  "value": "Гонадные эмбриональные карциномы"
+                },
+                {
+                  "language": "en",
+                  "value": "Gonadal embryonal carcinomas"
+                }
+              ]
+            },
+            {
+              "code": "Xc4",
+              "display": "Gonadal sariq xalta o‘smalari",
+              "designation": [
+                {
+                  "language": "ru",
+                  "value": "Гонадная опухоль желточного мешка"
+                },
+                {
+                  "language": "en",
+                  "value": "Gonadal yolk sac tumor"
+                }
+              ]
+            },
+            {
+              "code": "Xc5",
+              "display": "Gonadal xoriokarsinoma",
+              "designation": [
+                {
+                  "language": "ru",
+                  "value": "Гонадная хориокарцинома"
+                },
+                {
+                  "language": "en",
+                  "value": "Gonadal choriocarcinoma"
+                }
+              ]
+            },
+            {
+              "code": "Xc6",
+              "display": "Gonadal aralash turdagi yomon sifatli o‘smalar",
+              "designation": [
+                {
+                  "language": "ru",
+                  "value": "Злокачественные гонадные опухоли смешанных форм"
+                },
+                {
+                  "language": "en",
+                  "value": "Malignant gonadal tumors of mixed forms"
+                }
+              ]
+            },
+            {
+              "code": "Xc7",
+              "display": "Gonadal yomon sifatli gonadoblastoma",
+              "designation": [
+                {
+                  "language": "ru",
+                  "value": "Злокачественная гонадная гонадобластома"
+                },
+                {
+                  "language": "en",
+                  "value": "Malignant gonadal gonadoblastoma"
+                }
+              ]
+            }
+          ],
+          "designation": [
+            {
+              "language": "ru",
+              "value": "Злокачественные гонадные опухоли зародышевых клеток"
+            },
+            {
+              "language": "en",
+              "value": "Malignant gonadal germ cell tumors"
+            }
+          ]
+        },
+        {
+          "code": "Xd",
+          "display": "Gonadal karsinomalar",
+          "designation": [
+            {
+              "language": "ru",
+              "value": "Гонадные карциномы"
+            },
+            {
+              "language": "en",
+              "value": "Gonadal carcinomas"
+            }
+          ]
+        },
+        {
+          "code": "Xe",
+          "display": "Boshqa va aniqlanmagan gonadal yomon sifatli o‘smalar",
+          "designation": [
+            {
+              "language": "ru",
+              "value": "Другие и неуточнённые злокачественные гонадные опухоли"
+            },
+            {
+              "language": "en",
+              "value": "Other and unspecified malignant gonadal tumors"
+            }
+          ]
+        }
+      ],
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Опухоли зародышевых клеток, трофобластические опухоли и новообразования гонад"
+        },
+        {
+          "language": "en",
+          "value": "Germ cell tumors, trophoblastic tumors, and neoplasms of gonads"
+        }
+      ]
+    },
+    {
+      "code": "XI",
+      "display": "Boshqa yomon sifatli epitelial o‘smalar va melanomalar",
+      "concept": [
+        {
+          "code": "XIa",
+          "display": "Adrenokortikal karsinomalar",
+          "designation": [
+            {
+              "language": "ru",
+              "value": "Адренокортикальные карциномы"
+            },
+            {
+              "language": "en",
+              "value": "Adrenocortical carcinomas"
+            }
+          ]
+        },
+        {
+          "code": "XIb",
+          "display": "Qalqonsimon bez karsinomasi",
+          "designation": [
+            {
+              "language": "ru",
+              "value": "Карциномы щитовидной железы"
+            },
+            {
+              "language": "en",
+              "value": "Thyroid carcinomas"
+            }
+          ]
+        },
+        {
+          "code": "XIc",
+          "display": "Nazofaringeal karsinomalar",
+          "designation": [
+            {
+              "language": "ru",
+              "value": "Карциномы носоглотки"
+            },
+            {
+              "language": "en",
+              "value": "Nasopharyngeal carcinomas"
+            }
+          ]
+        },
+        {
+          "code": "XId",
+          "display": "Yomon sifatli melanomalar",
+          "designation": [
+            {
+              "language": "ru",
+              "value": "Злокачественные меланомы"
+            },
+            {
+              "language": "en",
+              "value": "Malignant melanomas"
+            }
+          ]
+        },
+        {
+          "code": "XIe",
+          "display": "Teri karsinomasi",
+          "designation": [
+            {
+              "language": "ru",
+              "value": "Карциномы кожи"
+            },
+            {
+              "language": "en",
+              "value": "Skin carcinomas"
+            }
+          ]
+        },
+        {
+          "code": "XIf",
+          "display": "Boshqa va aniqlanmagan karsinomalar",
+          "concept": [
+            {
+              "code": "XIf1",
+              "display": "So‘lak bezlari karsinomasi",
+              "designation": [
+                {
+                  "language": "ru",
+                  "value": "Карциномы слюнных желез"
+                },
+                {
+                  "language": "en",
+                  "value": "Carcinomas of salivary glands"
+                }
+              ]
+            },
+            {
+              "code": "XIf2",
+              "display": "Yo‘g‘on va to‘g‘ri ichak karsinomasi",
+              "designation": [
+                {
+                  "language": "ru",
+                  "value": "Карциномы толстой и прямой кишки"
+                },
+                {
+                  "language": "en",
+                  "value": "Carcinomas of colon and rectum"
+                }
+              ]
+            },
+            {
+              "code": "XIf3",
+              "display": "Apendiks karsinomasi",
+              "designation": [
+                {
+                  "language": "ru",
+                  "value": "Карциномы аппендикса"
+                },
+                {
+                  "language": "en",
+                  "value": "Carcinomas of appendix"
+                }
+              ]
+            },
+            {
+              "code": "XIf4",
+              "display": "O‘pka karsinomasi",
+              "designation": [
+                {
+                  "language": "ru",
+                  "value": "Карциномы лёгких"
+                },
+                {
+                  "language": "en",
+                  "value": "Carcinomas of lung"
+                }
+              ]
+            },
+            {
+              "code": "XIf5",
+              "display": "Timus karsinomasi",
+              "designation": [
+                {
+                  "language": "ru",
+                  "value": "Карциномы тимуса"
+                },
+                {
+                  "language": "en",
+                  "value": "Carcinomas of thymus"
+                }
+              ]
+            },
+            {
+              "code": "XIf6",
+              "display": "Ko‘krak bezi karsinomasi",
+              "designation": [
+                {
+                  "language": "ru",
+                  "value": "Карциномы молочной железы"
+                },
+                {
+                  "language": "en",
+                  "value": "Carcinomas of breast"
+                }
+              ]
+            },
+            {
+              "code": "XIf7",
+              "display": "Bachadon bo‘yni karsinomasi",
+              "designation": [
+                {
+                  "language": "ru",
+                  "value": "Карциномы шейки матки"
+                },
+                {
+                  "language": "en",
+                  "value": "Carcinomas of cervix uteri"
+                }
+              ]
+            },
+            {
+              "code": "XIf8",
+              "display": "Siydik pufagi karsinomasi",
+              "designation": [
+                {
+                  "language": "ru",
+                  "value": "Карциномы мочевого пузыря"
+                },
+                {
+                  "language": "en",
+                  "value": "Carcinomas of bladder"
+                }
+              ]
+            },
+            {
+              "code": "XIf9",
+              "display": "Ko‘z karsinomasi",
+              "designation": [
+                {
+                  "language": "ru",
+                  "value": "Карциномы глаза"
+                },
+                {
+                  "language": "en",
+                  "value": "Carcinomas of eye"
+                }
+              ]
+            },
+            {
+              "code": "XIf10",
+              "display": "Boshqa aniqlangan joylashuvdagi karsinomalar",
+              "designation": [
+                {
+                  "language": "ru",
+                  "value": "Карциномы других уточнённых локализаций"
+                },
+                {
+                  "language": "en",
+                  "value": "Carcinomas of other specified sites"
+                }
+              ]
+            },
+            {
+              "code": "XIf11",
+              "display": "Aniqlanmagan joylashuvdagi karsinomalar",
+              "designation": [
+                {
+                  "language": "ru",
+                  "value": "Карциномы неуточнённой локализации"
+                },
+                {
+                  "language": "en",
+                  "value": "Carcinomas of unspecified site"
+                }
+              ]
+            }
+          ],
+          "designation": [
+            {
+              "language": "ru",
+              "value": "Другие и неуточнённые карциномы"
+            },
+            {
+              "language": "en",
+              "value": "Other and unspecified carcinomas"
+            }
+          ]
+        }
+      ],
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Другие злокачественные эпителиальные новообразования и злокачественные меланомы"
+        },
+        {
+          "language": "en",
+          "value": "Other malignant epithelial neoplasms and malignant melanomas"
+        }
+      ]
+    },
+    {
+      "code": "XII",
+      "display": "Boshqa va aniqlanmagan yomon sifatli o‘smalar",
+      "concept": [
+        {
+          "code": "XIIa",
+          "display": "Boshqa aniqlangan yomon sifatli o‘smalar",
+          "concept": [
+            {
+              "code": "XIIa1",
+              "display": "Gastrointestinal stromal o‘sma",
+              "designation": [
+                {
+                  "language": "ru",
+                  "value": "Гастроинтестинальная стромальная опухоль"
+                },
+                {
+                  "language": "en",
+                  "value": "Gastrointestinal stromal tumor"
+                }
+              ]
+            },
+            {
+              "code": "XIIa2",
+              "display": "Pankreatoblastoma",
+              "designation": [
+                {
+                  "language": "ru",
+                  "value": "Панкреатобластома"
+                },
+                {
+                  "language": "en",
+                  "value": "Pancreatoblastoma"
+                }
+              ]
+            },
+            {
+              "code": "XIIa3",
+              "display": "O‘pka blastomasi va plevropulmonal blastoma",
+              "designation": [
+                {
+                  "language": "ru",
+                  "value": "Лёгочная бластома и плевропульмональная бластома"
+                },
+                {
+                  "language": "en",
+                  "value": "Pulmonary blastoma and pleuropulmonary blastoma"
+                }
+              ]
+            },
+            {
+              "code": "XIIa4",
+              "display": "Boshqa murakkab aralash va stromal o‘smalar",
+              "designation": [
+                {
+                  "language": "ru",
+                  "value": "Другие сложные смешанные и стромальные новообразования"
+                },
+                {
+                  "language": "en",
+                  "value": "Other complex mixed and stromal neoplasms"
+                }
+              ]
+            },
+            {
+              "code": "XIIa5",
+              "display": "Mezotelioma",
+              "designation": [
+                {
+                  "language": "ru",
+                  "value": "Мезотелиома"
+                },
+                {
+                  "language": "en",
+                  "value": "Mesothelioma"
+                }
+              ]
+            },
+            {
+              "code": "XIIa6",
+              "display": "Boshqa aniqlangan yomon sifatli o‘smalar",
+              "designation": [
+                {
+                  "language": "ru",
+                  "value": "Другие уточнённые злокачественные опухоли"
+                },
+                {
+                  "language": "en",
+                  "value": "Other specified malignant tumors"
+                }
+              ]
+            }
+          ],
+          "designation": [
+            {
+              "language": "ru",
+              "value": "Другие уточнённые злокачественные опухоли"
+            },
+            {
+              "language": "en",
+              "value": "Other specified malignant tumors"
+            }
+          ]
+        },
+        {
+          "code": "XIIb",
+          "display": "Boshqa aniqlanmagan yomon sifatli o‘smalar",
+          "designation": [
+            {
+              "language": "ru",
+              "value": "Другие неуточнённые злокачественные опухоли"
+            },
+            {
+              "language": "en",
+              "value": "Other unspecified malignant tumors"
+            }
+          ]
+        }
+      ],
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Другие и неуточнённые злокачественные новообразования"
+        },
+        {
+          "language": "en",
+          "value": "Other and unspecified malignant neoplasms"
+        }
+      ]
+    }
+  ],
+  "caseSensitive": true,
+  "hierarchyMeaning": "classified-with",
+  "language": "uz",
+  "experimental": true,
+  "copyright": "International Classification of Childhood Cancer, third edition (ICCC-3). Steliarova-Foucher E, Stiller C, Lacour B, Kaatsch P. Cancer 2005;103(7):1457-1467. Published by the International Agency for Research on Cancer (IARC) and the US National Cancer Institute SEER Program.",
+  "count": 140
+}
