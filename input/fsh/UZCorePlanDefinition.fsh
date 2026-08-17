@@ -1,8 +1,13 @@
-Profile: UZCoreImmunizationPlanDefinition
+Invariant: uzcore-plandef-1
+Description: "A schedule must declare exactly one focus useContext, so clients can tell what kind of schedule it is"
+* severity = #error
+* expression = "useContext.where(code.system = 'http://terminology.hl7.org/CodeSystem/usage-context-type' and code.code = 'focus').count() = 1"
+
+Profile: UZCorePlanDefinition
 Parent: PlanDefinition
-Id: uz-core-immunization-plan-definition
-Title: "UZ Core Immunization PlanDefinition"
-Description: "Uzbekistan Core profile that stores and represents the National Immunization Schedule of Uzbekistan, including planned vaccines, recommended administration periods, target age groups, dose sequences, and related scheduling rules. It is used to define structured immunization activities that support consistent planning, implementation, and exchange of vaccination schedules within the national digital health ecosystem."
+Id: uz-core-plan-definition
+Title: "UZ Core PlanDefinition"
+Description: "Uzbekistan Core PlanDefinition profile, used to represent national healthcare schedules - immunization, whole blood donation and screening - including planned activities, recommended administration or visit periods, target groups, dose and visit sequences, and related scheduling rules. It supports consistent planning, implementation, and exchange of these schedules within the national digital health ecosystem."
 * ^status = #draft
 * ^experimental = true
 
@@ -40,18 +45,24 @@ Description: "Uzbekistan Core profile that stores and represents the National Im
 * publisher MS
 * description 1..1 MS
 
-// useContext lets clients tell immunization schedules apart from other PlanDefinitions on the
-// server. Every UZ Core immunization schedule carries a fixed focus context, so it is found with
+// useContext lets clients tell schedules apart from other PlanDefinitions on the server, and tell
+// the kinds of schedule apart from each other. Every UZ Core schedule carries exactly one focus
+// context, so a schedule of a given kind is found with
 // GET [base]/PlanDefinition?context-type-value=focus$http://snomed.info/sct|33879002
-* useContext 2..* MS
+// The focus slices are 0..1 rather than 1..1: a schedule has one focus, not all of them. Making
+// them mandatory would make SUSHI inject the missing fixed values into every instance.
+* useContext 1..* MS
+* obeys uzcore-plandef-1
 * useContext ^slicing.discriminator.type = #value
-* useContext ^slicing.discriminator.path = "code"
+* useContext ^slicing.discriminator.path = "value"
 * useContext ^slicing.rules = #open
-* useContext ^slicing.description = "Distinguishes immunization schedules and their categories"
+* useContext ^slicing.description = "Distinguishes healthcare schedules and their categories"
 
 * useContext contains
-    immunizationFocus 1..1 MS and
-    scheduleCategory 1..1 MS
+    immunizationFocus 0..1 MS and
+    scheduleCategory 0..1 MS and
+    bloodDonationFocus 0..1 MS and
+    screeningFocus 0..1 MS
 
 * useContext[immunizationFocus] ^short = "Marks this PlanDefinition as an immunization schedule"
 * useContext[immunizationFocus].code = $usage-context-type#focus
@@ -62,12 +73,32 @@ Description: "Uzbekistan Core profile that stores and represents the National Im
 * useContext[immunizationFocus].valueCodeableConcept = $sct#33879002
 
 * useContext[scheduleCategory] ^short = "Kind of immunization schedule"
+* useContext[scheduleCategory] ^comment = "Only meaningful on immunization schedules; the bound value set is immunization-specific."
 * useContext[scheduleCategory].code = $usage-context-type#topic
 * useContext[scheduleCategory].value[x] only CodeableConcept
-* useContext[scheduleCategory].valueCodeableConcept from ImmunizationScheduleTypeVS (extensible)
+* useContext[scheduleCategory].valueCodeableConcept from ImmunizationScheduleTypeVS (required)
+
+* useContext[bloodDonationFocus] ^short = "Marks this PlanDefinition as a whole blood donation schedule"
+* useContext[bloodDonationFocus].code = $usage-context-type#focus
+* useContext[bloodDonationFocus].value[x] only CodeableConcept
+* useContext[bloodDonationFocus].valueCodeableConcept.coding 1..1
+* useContext[bloodDonationFocus].valueCodeableConcept.coding.system 1..1
+* useContext[bloodDonationFocus].valueCodeableConcept.coding.code 1..1
+* useContext[bloodDonationFocus].valueCodeableConcept = $sct#25179006
+
+* useContext[screeningFocus] ^short = "Marks this PlanDefinition as a screening schedule"
+* useContext[screeningFocus].code = $usage-context-type#focus
+* useContext[screeningFocus].value[x] only CodeableConcept
+* useContext[screeningFocus].valueCodeableConcept.coding 1..1
+* useContext[screeningFocus].valueCodeableConcept.coding.system 1..1
+* useContext[screeningFocus].valueCodeableConcept.coding.code 1..1
+* useContext[screeningFocus].valueCodeableConcept = $sct#360156006
 
 * approvalDate MS
 * effectivePeriod MS
+
+* extension contains PlanDefinitionStatusHistory named statusHistory 0..* MS
+* extension[statusHistory] ^short = "History of PlanDefinition status changes"
 
 * action MS
 * action ^short = "Definition of action included in the plan"
@@ -114,10 +145,10 @@ Description: "Uzbekistan Core profile that stores and represents the National Im
 * action.definition[x] MS
 
 Instance: example-uz-core-immunization-plan-definition
-InstanceOf: UZCoreImmunizationPlanDefinition
+InstanceOf: UZCorePlanDefinition
 Usage: #example
-Title: "UZ Core Immunization PlanDefinition"
-Description: "Uzbekistan Core Immunization PlanDefinition profile, used to represent structured immunization schedule definitions, including actions, timing, participants, and related activities."
+Title: "Example UZ Core PlanDefinition - Immunization Schedule"
+Description: "Example age-based national immunization schedule, showing the focus and category use contexts, the vaccination actions, their timing, and the relationship between two doses."
 * id = "example-uz-core-immunization-plan-definition"
 
 * url = "https://terminology.dhp.uz/fhir/core/PlanDefinition/example-uz-core-immunization-plan-definition"
@@ -141,6 +172,12 @@ Description: "Uzbekistan Core Immunization PlanDefinition profile, used to repre
 
 * effectivePeriod.start = "2026-08-01"
 * effectivePeriod.end = "2027-08-01"
+
+* extension[statusHistory].extension[status].valueCode = #draft
+* extension[statusHistory].extension[period].valuePeriod.start = "2026-08-01"
+* extension[statusHistory].extension[reason].valueString = "Initial draft."
+* extension[statusHistory].extension[changedBy].valueReference = Reference(example-practitioner) 
+
 
 * action[0].id = "action-1"
 * action[0].linkId = "action-1"

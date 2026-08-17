@@ -2,6 +2,10 @@
 
 #### Изменения профилей
 
+Профиль UZ Core Immunization PlanDefinition переименован в [UZ Core PlanDefinition](StructureDefinition-uz-core-plan-definition.html), поскольку теперь он охватывает не только календари иммунизации, но и календари донации цельной крови и скрининга. Это ломающее изменение: канонический URL меняется с `https://dhp.uz/fhir/core/StructureDefinition/uz-core-immunization-plan-definition` на `https://dhp.uz/fhir/core/StructureDefinition/uz-core-plan-definition`, и экземпляры должны обновить `meta.profile`.
+
+Профиль теперь несёт контекст использования `focus`, указывающий вид календаря - `33879002` (активная иммунизация), `25179006` (заготовка дозы цельной крови) или `360156006` (скрининг), - а ограничение требует ровно одного из них, поэтому календарь нужного вида находится запросом `GET [base]/PlanDefinition?context-type-value=focus$http://snomed.info/sct|33879002`. Связка [типа календаря иммунизации](ValueSet-immunization-schedule-type-vs.html) для контекста категории календаря теперь required, а не extensible, чтобы слайсинг поддавался валидации.
+
 В названии и описании профиля [UZ Core ClaimResponse](StructureDefinition-uz-core-claim-response.html) имя ресурса больше не разделяется на два слова - «UZ Core Claim Response» стало «UZ Core ClaimResponse». Канонический URL профиля не изменился.
 
 #### Документация
@@ -38,7 +42,7 @@ ValueSet на основе SNOMED CT теперь отбирают иерарх�
 
 `method` в [UZ Core Observation](StructureDefinition-uz-core-observation.html) теперь явно указывает силу привязки как extensible.
 
-[UZ Core Immunization PlanDefinition](StructureDefinition-uz-core-immunization-plan-definition.html) теперь требует второй `useContext` с указанием вида календаря, привязанный (extensible) к новому ValueSet [типа календаря иммунизации](ValueSet-immunization-schedule-type-vs.html). Слайсинг по типу для `action.definition[x]` удалён, поскольку из-за него валидатор отклонял `definitionCanonical`, и примеры теперь используют `definitionCanonical`.
+[UZ Core PlanDefinition](StructureDefinition-uz-core-plan-definition.html) теперь требует второй `useContext` с указанием вида календаря, привязанный (extensible) к новому ValueSet [типа календаря иммунизации](ValueSet-immunization-schedule-type-vs.html). Слайсинг по типу для `action.definition[x]` удалён, поскольку из-за него валидатор отклонял `definitionCanonical`, и примеры теперь используют `definitionCanonical`.
 
 `participant.actor` в [UZ Core Condition](StructureDefinition-uz-core-condition.html) теперь может ссылаться на [UZ Core Organization](StructureDefinition-uz-core-organization.html).
 
@@ -70,7 +74,7 @@ ValueSet на основе SNOMED CT теперь отбирают иерарх�
 
 Добавлен профиль [UZ Core ImmunizationRecommendation](StructureDefinition-uz-core-immunization-recommendation.html) для прогнозов вакцинации с терминологией для [статуса прогноза](ValueSet-recommendation-forecast-status-vs.html), [критерия даты](ValueSet-recommendation-date-criterion-vs.html) и [причины](ValueSet-recommendation-reason-vs.html).
 
-Добавлен профиль [UZ Core Immunization PlanDefinition](StructureDefinition-uz-core-immunization-plan-definition.html) для национальных календарей иммунизации.
+Добавлен профиль [UZ Core PlanDefinition](StructureDefinition-uz-core-plan-definition.html) для национальных календарей иммунизации.
 
 Добавлен профиль [UZ Core ActivityDefinition](StructureDefinition-uz-core-vaccination-activity-definition.html) для определения переиспользуемых клинических активностей (процедур, тестов, протоколов медикаментозной терапии) независимо от конкретного пациента.
 
@@ -106,7 +110,7 @@ ValueSet на основе SNOMED CT теперь отбирают иерарх�
 
 `managingOrganization` в [UZ Core Patient](StructureDefinition-uz-core-patient.html) теперь Must Support и должен ссылаться на [UZ Core Organization](StructureDefinition-uz-core-organization.html).
 
-Расширение для многоязычного перевода (базовое значение на узбекском плюс переводы на русский и каракалпакский) добавлено к `name` в [UZ Core HealthcareService](StructureDefinition-uz-core-healthcareservice.html) и к `title` в [UZ Core ActivityDefinition](StructureDefinition-uz-core-vaccination-activity-definition.html), [UZ Core Laboratory ObservationDefinition](StructureDefinition-uz-core-laboratory-observation-definition.html), [UZ Core Immunization PlanDefinition](StructureDefinition-uz-core-immunization-plan-definition.html) и [UZ Core Questionnaire](StructureDefinition-uz-core-questionnaire.html). Элемент `name` теперь обязателен в [UZ Core Organization](StructureDefinition-uz-core-organization.html) и [UZ Core Location](StructureDefinition-uz-core-location.html).
+Расширение для многоязычного перевода (базовое значение на узбекском плюс переводы на русский и каракалпакский) добавлено к `name` в [UZ Core HealthcareService](StructureDefinition-uz-core-healthcareservice.html) и к `title` в [UZ Core ActivityDefinition](StructureDefinition-uz-core-vaccination-activity-definition.html), [UZ Core Laboratory ObservationDefinition](StructureDefinition-uz-core-laboratory-observation-definition.html), [UZ Core PlanDefinition](StructureDefinition-uz-core-plan-definition.html) и [UZ Core Questionnaire](StructureDefinition-uz-core-questionnaire.html). Элемент `name` теперь обязателен в [UZ Core Organization](StructureDefinition-uz-core-organization.html) и [UZ Core Location](StructureDefinition-uz-core-location.html).
 
 #### Организация и идентификаторы
 
