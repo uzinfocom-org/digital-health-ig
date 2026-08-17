@@ -8,13 +8,13 @@
 
 ### 1. Календарь вакцинации в виде кода
 
-Национальный календарь вакцинации публикуется в виде одного ресурса [PlanDefinition](StructureDefinition-uz-core-immunization-plan-definition.html). Каждая рекомендуемая доза представлена отдельным `PlanDefinition.action`; сведения о вакцине и дозировании задаются в action через `definitionCanonical`, содержащий reference на `ActivityDefinition`. Целевой возраст или расписание задаётся в `action.timing[x]` (`Age` или `Timing`); минимальные интервалы между дозами задаются в `action.relatedAction.offsetDuration`; критерии применимости - в `action.condition`.
+Национальный календарь вакцинации публикуется в виде одного ресурса [PlanDefinition](StructureDefinition-uz-core-plan-definition.html). Каждая рекомендуемая доза представлена отдельным `PlanDefinition.action`; сведения о вакцине и дозировании задаются в action через `definitionCanonical`, содержащий reference на `ActivityDefinition`. Целевой возраст или расписание задаётся в `action.timing[x]` (`Age` или `Timing`); минимальные интервалы между дозами задаются в `action.relatedAction.offsetDuration`; критерии применимости - в `action.condition`.
 
 ```
 GET [base]/PlanDefinition?status=active&context-type-value=focus$http://snomed.info/sct|33879002
 ```
 
-> Для каждой области применения или юрисдикции одновременно может быть активна только одна версия календаря. Календарь должен соответствовать правилам валидации: без пропусков в последовательности доз, недопустимых временных интервалов и двух пересекающихся активных версий. См. страницу [PlanDefinition](StructureDefinition-uz-core-immunization-plan-definition.html).
+> Для каждой области применения или юрисдикции одновременно может быть активна только одна версия календаря. Календарь должен соответствовать правилам валидации: без пропусков в последовательности доз, недопустимых временных интервалов и двух пересекающихся активных версий. См. страницу [PlanDefinition](StructureDefinition-uz-core-plan-definition.html).
 
 ### 2. Формирование рекомендации
 
@@ -96,5 +96,5 @@ POST [base]/Immunization
 
 ### Связанные материалы
 
-- Профили: [PlanDefinition](StructureDefinition-uz-core-immunization-plan-definition.html) &middot; [ImmunizationRecommendation](StructureDefinition-uz-core-immunization-recommendation.html) &middot; [Encounter](StructureDefinition-uz-core-encounter.html) &middot; [Immunization](StructureDefinition-uz-core-immunization.html) &middot; [AdverseEvent](StructureDefinition-uz-core-adverse-event.html)
+- Профили: [PlanDefinition](StructureDefinition-uz-core-plan-definition.html) &middot; [ImmunizationRecommendation](StructureDefinition-uz-core-immunization-recommendation.html) &middot; [Encounter](StructureDefinition-uz-core-encounter.html) &middot; [Immunization](StructureDefinition-uz-core-immunization.html) &middot; [AdverseEvent](StructureDefinition-uz-core-adverse-event.html)
 - [Обзор рабочих процессов](workflows.html) &middot; [Общие рекомендации](general-guidance.html)
