@@ -95,7 +95,7 @@ pages:
     workflow-prescription.md:
       title: e-Prescription and dispensing
   forms.md:
-    title: Forms
+    title: Questionnaires
   api-access.md:
     title: API access
   components.md:
@@ -159,7 +159,7 @@ menu:
     Payors: payor-identification.html
     Vital signs: vital-signs.html
   Workflows: workflows.html
-  Forms: forms.html
+  Questionnaires: forms.html
   API access: api-access.html
   Artifacts: artifacts.html
   Components: components.html

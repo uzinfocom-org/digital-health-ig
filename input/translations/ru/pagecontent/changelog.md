@@ -1,8 +1,13 @@
 ### В разработке
 
+#### Изменения профилей
+
 Профиль UZ Core Immunization PlanDefinition переименован в [UZ Core PlanDefinition](StructureDefinition-uz-core-plan-definition.html), поскольку теперь он охватывает не только календари иммунизации, но и календари донации цельной крови и скрининга. Это ломающее изменение: канонический URL меняется с `https://dhp.uz/fhir/core/StructureDefinition/uz-core-immunization-plan-definition` на `https://dhp.uz/fhir/core/StructureDefinition/uz-core-plan-definition`, и экземпляры должны обновить `meta.profile`.
 
 Профиль теперь несёт контекст использования `focus`, указывающий вид календаря - `33879002` (активная иммунизация), `25179006` (заготовка дозы цельной крови) или `360156006` (скрининг), - а ограничение требует ровно одного из них, поэтому календарь нужного вида находится запросом `GET [base]/PlanDefinition?context-type-value=focus$http://snomed.info/sct|33879002`. Связка [типа календаря иммунизации](ValueSet-immunization-schedule-type-vs.html) для контекста категории календаря теперь required, а не extensible, чтобы слайсинг поддавался валидации.
+#### Документация
+
+Страница «Формы» теперь называется [Опросники](forms.html), чтобы её не принимали за медицинские формы, используемые в Узбекистане. Адрес страницы не изменился.
 
 ### Версия 0.7.0
 

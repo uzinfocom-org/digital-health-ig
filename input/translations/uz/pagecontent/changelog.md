@@ -1,8 +1,13 @@
 ### Ishlab chiqish jarayonida
 
+#### Profil o'zgarishlari
+
 UZ Core Immunization PlanDefinition profili [UZ Core PlanDefinition](StructureDefinition-uz-core-plan-definition.html) deb qayta nomlandi, chunki u endi emlash jadvallari bilan bir qatorda toʻliq qon donatsiyasi va skrining jadvallarini ham qamrab oladi. Bu buzuvchi oʻzgarish: kanonik URL `https://dhp.uz/fhir/core/StructureDefinition/uz-core-immunization-plan-definition` dan `https://dhp.uz/fhir/core/StructureDefinition/uz-core-plan-definition` ga oʻzgaradi va nusxalar `meta.profile` ni yangilashi kerak.
 
 Profil endi jadval turini bildiruvchi `focus` foydalanish kontekstini olib yuradi - `33879002` (faol immunizatsiya), `25179006` (toʻliq qon dozasini yigʻish) yoki `360156006` (skrining) - va cheklov ulardan aniq bittasini talab qiladi, shuning uchun kerakli turdagi jadval `GET [base]/PlanDefinition?context-type-value=focus$http://snomed.info/sct|33879002` soʻrovi bilan topiladi. Jadval kategoriyasi konteksti uchun [emlash kalendari turi](ValueSet-immunization-schedule-type-vs.html) bogʻlanishi endi extensible emas, balki required, bu slayslashni tekshirish imkonini beradi.
+#### Hujjatlashtirish
+
+«Shakllar» sahifasi endi [So'rovnomalar](forms.html) deb ataladi - u O'zbekistonda qo'llaniladigan tibbiy shakllar bilan chalkashtirilmasligi uchun. Sahifa manzili o'zgarmadi.
 
 ### Versiya 0.7.0
 

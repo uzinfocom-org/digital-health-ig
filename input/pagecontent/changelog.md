@@ -1,8 +1,14 @@
 ### In development
 
+#### Profile changes
+
 UZ Core Immunization PlanDefinition has been renamed to [UZ Core PlanDefinition](StructureDefinition-uz-core-plan-definition.html), because it now covers whole blood donation and screening schedules alongside immunization ones. This is a breaking change: the canonical URL moves from `https://dhp.uz/fhir/core/StructureDefinition/uz-core-immunization-plan-definition` to `https://dhp.uz/fhir/core/StructureDefinition/uz-core-plan-definition`, and instances must update `meta.profile`.
 
 The profile now carries a `focus` use context naming the kind of schedule - `33879002` (active immunization), `25179006` (whole blood unit collection) or `360156006` (screening intent) - and a constraint requires exactly one of them, so a schedule of a given kind is found with `GET [base]/PlanDefinition?context-type-value=focus$http://snomed.info/sct|33879002`. The [immunization schedule type](ValueSet-immunization-schedule-type-vs.html) binding on the schedule category context is now required rather than extensible, so that the slicing can be validated.
+
+#### Documentation
+
+The Forms page is now called [Questionnaires](forms.html), so that it is not read as the medical forms used in Uzbekistan. The page address is unchanged.
 
 ### Version 0.7.0
 
