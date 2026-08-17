@@ -31,7 +31,7 @@ This profile and the base resource add no mandatory elements, so the absolute mi
 {
   "resourceType": "HealthcareService",
   "meta": {
-    "profile": ["https://dhp.uz/fhir/core/StructureDefinition/uz-core-healthcareservice"]
+    "profile": ["https://dhp.uz/fhir/core/StructureDefinition/uz-core-healthcare-service"]
   },
   "active": true,
   "name": "IHC-ga xos"
@@ -48,7 +48,7 @@ For a clinical service, add the `category` and `type`. Both are sliced on the co
 {
   "resourceType": "HealthcareService",
   "meta": {
-    "profile": ["https://dhp.uz/fhir/core/StructureDefinition/uz-core-healthcareservice"]
+    "profile": ["https://dhp.uz/fhir/core/StructureDefinition/uz-core-healthcare-service"]
   },
   "active": true,
   "name": "IHC-ga xos",

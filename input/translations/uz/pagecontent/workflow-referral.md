@@ -68,5 +68,5 @@ Bekor qilingan yo'llanma bajarilishi mumkin emas; faol ServiceRequest mavjud bo'
 
 ### Bog'liq materiallar
 
-- Yo'llanmani bajarishda qo'llaniladigan profillar: [Procedure](StructureDefinition-uz-core-procedure.html) &middot; [Observation](StructureDefinition-uz-core-observation.html) &middot; [Encounter](StructureDefinition-uz-core-encounter.html) &middot; [Condition](StructureDefinition-uz-core-condition.html) &middot; [HealthcareService](StructureDefinition-uz-core-healthcareservice.html)
+- Yo'llanmani bajarishda qo'llaniladigan profillar: [Procedure](StructureDefinition-uz-core-procedure.html) &middot; [Observation](StructureDefinition-uz-core-observation.html) &middot; [Encounter](StructureDefinition-uz-core-encounter.html) &middot; [Condition](StructureDefinition-uz-core-condition.html) &middot; [HealthcareService](StructureDefinition-uz-core-healthcare-service.html)
 - [Jarayonlar haqida umumiy ma'lumot](workflows.html) &middot; [Umumiy ko'rsatmalar](general-guidance.html)

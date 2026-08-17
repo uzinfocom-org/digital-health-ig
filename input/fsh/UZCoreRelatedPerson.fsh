@@ -1,6 +1,6 @@
 Profile: UZCoreRelatedPerson
 Parent: RelatedPerson
-Id: uz-core-relatedperson
+Id: uz-core-related-person
 Title: "UZ Core RelatedPerson"
 Description: "Uzbekistan Core RelatedPerson profile, used to represent persons related to the patient"
 * ^experimental = true

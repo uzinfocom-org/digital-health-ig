@@ -1,5 +1,11 @@
 ### In development
 
+#### Profile changes
+
+Five profiles had their canonical URLs corrected to the hyphenated `uz-core-[resource-name]` form the modelling guidelines require: [UZ Core AuditEvent](StructureDefinition-uz-core-audit-event.html), [UZ Core EpisodeOfCare](StructureDefinition-uz-core-episode-of-care.html), [UZ Core HealthcareService](StructureDefinition-uz-core-healthcare-service.html), [UZ Core RelatedPerson](StructureDefinition-uz-core-related-person.html) and [UZ Core ServiceRequest](StructureDefinition-uz-core-service-request.html). Implementers referencing `.../uz-core-auditevent`, `.../uz-core-episodeofcare`, `.../uz-core-healthcareservice`, `.../uz-core-relatedperson` or `.../uz-core-servicerequest` must update to the new canonical URLs.
+
+The title and description of [UZ Core ClaimResponse](StructureDefinition-uz-core-claim-response.html) no longer split the resource name - "UZ Core Claim Response" is now "UZ Core ClaimResponse". Its canonical URL is unchanged.
+
 #### Documentation
 
 The Forms page is now called [Questionnaires](forms.html), so that it is not read as the medical forms used in Uzbekistan. The page address is unchanged.
@@ -8,7 +14,7 @@ The Forms page is now called [Questionnaires](forms.html), so that it is not rea
 
 #### New profiles
 
-Added [UZ Core Claim](StructureDefinition-uz-core-claim.html) and [UZ Core Claim Response](StructureDefinition-uz-core-claim-response.html) profiles for insurance claims, pre-authorization and predetermination, and for the adjudication and reimbursement responses to them. They are supported by [claim type](ValueSet-claim-type-vs.html), [claim use](ValueSet-claim-use-vs.html) and [financial management status](ValueSet-fm-status-vs.html) terminology, plus [response category](ValueSet-claim-response-category-vs.html), [decision](ValueSet-claim-response-decision-vs.html) and [outcome](ValueSet-claim-response-outcome-vs.html) codes. A [cancellation reason extension](StructureDefinition-claim-response-cancellation-reason.html) records why a response was cancelled, for example when a pre-authorization expires before the claim completes.
+Added [UZ Core Claim](StructureDefinition-uz-core-claim.html) and [UZ Core ClaimResponse](StructureDefinition-uz-core-claim-response.html) profiles for insurance claims, pre-authorization and predetermination, and for the adjudication and reimbursement responses to them. They are supported by [claim type](ValueSet-claim-type-vs.html), [claim use](ValueSet-claim-use-vs.html) and [financial management status](ValueSet-fm-status-vs.html) terminology, plus [response category](ValueSet-claim-response-category-vs.html), [decision](ValueSet-claim-response-decision-vs.html) and [outcome](ValueSet-claim-response-outcome-vs.html) codes. A [cancellation reason extension](StructureDefinition-claim-response-cancellation-reason.html) records why a response was cancelled, for example when a pre-authorization expires before the claim completes.
 
 Added [UZ Core Task Referral Approval](StructureDefinition-uz-core-referral-approval-task.html) profile for tracking the workflow steps of the state insurance referral and hospitalization approval process (Annex 1 to Resolution of the Cabinet of Ministers No. 694, 04.11.2025), with [task code](ValueSet-task-codes-vs.html), [status](ValueSet-task-status-vs.html), [intent](ValueSet-task-intent-vs.html) and [business status](ValueSet-task-business-status-vs.html) terminology. A warning-level constraint flags unfinished tasks that are past their requested end date but not marked overdue, for SLA monitoring.
 
@@ -56,7 +62,7 @@ The modelling guidelines now require terminology versions to be in SemVer format
 
 Added [UZ Core DiagnosticReport](StructureDefinition-uz-core-diagnostic-report.html) profile for laboratory and diagnostic reports, with supporting terminology for [service category](ValueSet-diagnostic-report-service-category-vs.html), [status](ValueSet-diagnostic-report-status-vs.html) and [report types](ValueSet-lab-report-types-vs.html).
 
-Added [UZ Core ServiceRequest](StructureDefinition-uz-core-servicerequest.html) profile for ordering services such as procedures, diagnostic investigations, or panels of investigations, including [payment type](ValueSet-payment-type-vs.html) and [request status](ValueSet-service-request-status-vs.html) terminology.
+Added [UZ Core ServiceRequest](StructureDefinition-uz-core-service-request.html) profile for ordering services such as procedures, diagnostic investigations, or panels of investigations, including [payment type](ValueSet-payment-type-vs.html) and [request status](ValueSet-service-request-status-vs.html) terminology.
 
 Added [UZ Core Specimen](StructureDefinition-uz-core-specimen.html) profile for clinical specimens, with terminology for [collection method](ValueSet-specimen-collection-method-vs.html), [specimen type](ValueSet-specimen-types-vs.html), [role](ValueSet-specimen-role-vs.html) and [status](ValueSet-specimen-status-vs.html). It is referenced from the ServiceRequest and DiagnosticReport profiles.
 
@@ -82,9 +88,9 @@ Added [laboratory method codes](CodeSystem-lab-methods-cs.html), with ConceptMap
 
 [UZ Core PractitionerRole](StructureDefinition-uz-core-practitioner-role.html) `code` is now bound (required) to the [position and profession ValueSet](ValueSet-position-and-profession-vs.html) (previously the practitioner-role value set); `specialty` remains bound (required) to the [profession specialization ValueSet](ValueSet-profession-specialization-vs.html). Implementers must populate practitioner roles with codes from these value sets.
 
-Added a [turnaround time extension](StructureDefinition-turnaround-time.html) to [UZ Core HealthcareService](StructureDefinition-uz-core-healthcareservice.html) for stating the expected result turnaround on laboratory services. The category and type bindings on this profile have also been relaxed from required to extensible, so implementers may add local codes.
+Added a [turnaround time extension](StructureDefinition-turnaround-time.html) to [UZ Core HealthcareService](StructureDefinition-uz-core-healthcare-service.html) for stating the expected result turnaround on laboratory services. The category and type bindings on this profile have also been relaxed from required to extensible, so implementers may add local codes.
 
-`type` on [UZ Core Encounter](StructureDefinition-uz-core-encounter.html) and [UZ Core EpisodeOfCare](StructureDefinition-uz-core-episodeofcare.html), and `signature.type` on [UZ Core Provenance](StructureDefinition-uz-core-provenance.html), are now sliced so a national code is required while additional codings remain allowed.
+`type` on [UZ Core Encounter](StructureDefinition-uz-core-encounter.html) and [UZ Core EpisodeOfCare](StructureDefinition-uz-core-episode-of-care.html), and `signature.type` on [UZ Core Provenance](StructureDefinition-uz-core-provenance.html), are now sliced so a national code is required while additional codings remain allowed.
 
 Reference targets across several profiles now point to UZ Core profiles where they exist - for example [UZ Core Observation](StructureDefinition-uz-core-observation.html) `specimen` to UZ Core Specimen and `partOf` to UZ Core Procedure/Immunization, [UZ Core Immunization](StructureDefinition-uz-core-immunization.html) `administeredProduct` to UZ Core Medication, and [UZ Core AdverseEvent](StructureDefinition-uz-core-adverse-event.html) `suspectEntity` to UZ Core Medication. Referenced resources must now conform to the corresponding UZ Core profile.
 
@@ -102,13 +108,13 @@ Added DMED terminology bridges for ingesting data from the national DMED system:
 
 `managingOrganization` on [UZ Core Patient](StructureDefinition-uz-core-patient.html) is now Must Support and must reference [UZ Core Organization](StructureDefinition-uz-core-organization.html).
 
-The multilingual translation extension (Uzbek base value plus Russian and Karakalpak translations) has been added to `name` on [UZ Core HealthcareService](StructureDefinition-uz-core-healthcareservice.html), and to `title` on [UZ Core ActivityDefinition](StructureDefinition-uz-core-vaccination-activity-definition.html), [UZ Core Laboratory ObservationDefinition](StructureDefinition-uz-core-laboratory-observation-definition.html), [UZ Core Immunization PlanDefinition](StructureDefinition-uz-core-immunization-plan-definition.html) and [UZ Core Questionnaire](StructureDefinition-uz-core-questionnaire.html). `name` is now required on [UZ Core Organization](StructureDefinition-uz-core-organization.html) and [UZ Core Location](StructureDefinition-uz-core-location.html).
+The multilingual translation extension (Uzbek base value plus Russian and Karakalpak translations) has been added to `name` on [UZ Core HealthcareService](StructureDefinition-uz-core-healthcare-service.html), and to `title` on [UZ Core ActivityDefinition](StructureDefinition-uz-core-vaccination-activity-definition.html), [UZ Core Laboratory ObservationDefinition](StructureDefinition-uz-core-laboratory-observation-definition.html), [UZ Core Immunization PlanDefinition](StructureDefinition-uz-core-immunization-plan-definition.html) and [UZ Core Questionnaire](StructureDefinition-uz-core-questionnaire.html). `name` is now required on [UZ Core Organization](StructureDefinition-uz-core-organization.html) and [UZ Core Location](StructureDefinition-uz-core-location.html).
 
 #### Organization and identifiers
 
 Added State Health Insurance Fund (SHIF) and Ministry of Health (Minzdrav) identifier slices to [UZ Core Organization](StructureDefinition-uz-core-organization.html). SHIF-assigned provider codes are typed as `PRN` (provider number). A new [payor identification](payor-identification.html) page explains how payors and their contracted providers are identified.
 
-On [UZ Core Patient](StructureDefinition-uz-core-patient.html) and [UZ Core RelatedPerson](StructureDefinition-uz-core-relatedperson.html), the local passport identifier no longer fixes `use` to `official`: use `official` for the current ID card and `old` for a superseded paper passport sharing the same system. See the [identifiers](identifiers.html) page.
+On [UZ Core Patient](StructureDefinition-uz-core-patient.html) and [UZ Core RelatedPerson](StructureDefinition-uz-core-related-person.html), the local passport identifier no longer fixes `use` to `official`: use `official` for the current ID card and `old` for a superseded paper passport sharing the same system. See the [identifiers](identifiers.html) page.
 
 #### Documentation
 
@@ -136,7 +142,7 @@ In the [Patient Satisfaction Questionnaire](Questionnaire-PatientSatisfactionQue
 
 In [UZ Core Observation](StructureDefinition-uz-core-observation.html), [ObservationCodesVS](ValueSet-observation-codes-vs.html) has been changed from required to **preferred** binding and now includes SNOMED CT codes in addition to LOINC and local codes. Implementers may use SNOMED CT codes where appropriate.
 
-In [UZ Core HealthcareService](StructureDefinition-uz-core-healthcareservice.html), `category.coding` and `type.coding` are now sliced to support a new `labCategory` slice bound to [LabServiceCategoriesVS](ValueSet-lab-service-categories-vs.html) (codes from [LabCategoriesCS](CodeSystem-lab-categories-cs.html)). Laboratory healthcare services should populate the `labCategory` slice in addition to the existing `dhpCategory`.
+In [UZ Core HealthcareService](StructureDefinition-uz-core-healthcare-service.html), `category.coding` and `type.coding` are now sliced to support a new `labCategory` slice bound to [LabServiceCategoriesVS](ValueSet-lab-service-categories-vs.html) (codes from [LabCategoriesCS](CodeSystem-lab-categories-cs.html)). Laboratory healthcare services should populate the `labCategory` slice in addition to the existing `dhpCategory`.
 
 In [UZ Core Patient](StructureDefinition-uz-core-patient.html), [MahallaVS](ValueSet-mahalla-vs.html) (used for `address.city`) has been expanded to include codes from the new [Mahalla COATO](CodeSystem-mahalla-coato-cs.html) code system, providing 2,600+ COATO-based mahalla identifiers in addition to the existing MahallaCS codes.
 
@@ -231,7 +237,7 @@ Added [ConceptMap](ConceptMap-countries-mvd-to-iso3166-alpha2-cm.html) for trans
 
 Added explicit slices for foreign patient passport numbers and drivers licenses with country code support.
 
-Updated [EpisodeOfCare](StructureDefinition-uz-core-episodeofcare.html) description.
+Updated [EpisodeOfCare](StructureDefinition-uz-core-episode-of-care.html) description.
 
 Improved [identifier documentation](identifiers.html) including PINFL clarity and migration to alpha-2 country codes.
 
@@ -261,13 +267,13 @@ Documented use of ConceptMaps and their associated strategy.
 
 Updated slice names to follow best practice naming convention of lower camelCase.
 
-Added support for international addresses in [Patient](StructureDefinition-uz-core-patient.html), [Practitioner](StructureDefinition-uz-core-practitioner.html), and [RelatedPerson](StructureDefinition-uz-core-relatedperson.html) resources.
+Added support for international addresses in [Patient](StructureDefinition-uz-core-patient.html), [Practitioner](StructureDefinition-uz-core-practitioner.html), and [RelatedPerson](StructureDefinition-uz-core-related-person.html) resources.
 
 Added Uzbek translations.
 
 ### Version 0.3.0
 
-UZ Core profiles for [Encounter](StructureDefinition-uz-core-encounter.html), [EpisodeOfCare](StructureDefinition-uz-core-episodeofcare.html), and [Observation](StructureDefinition-uz-core-observation.html) have been added.
+UZ Core profiles for [Encounter](StructureDefinition-uz-core-encounter.html), [EpisodeOfCare](StructureDefinition-uz-core-episode-of-care.html), and [Observation](StructureDefinition-uz-core-observation.html) have been added.
 
 Canonical URLs have been changed to `https://dhp.uz/fhir/core` for conformance resources and `https://terminology.dhp.uz/fhir/core` for terminology resources to accommodate future IGs, which will follow a pattern of `https://dhp.uz/fhir/<ig>`.
 

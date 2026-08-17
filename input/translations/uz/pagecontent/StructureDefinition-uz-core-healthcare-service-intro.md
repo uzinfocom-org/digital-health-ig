@@ -33,7 +33,7 @@ Ushbu profil va bazaviy resurs hech qanday majburiy element qo'shmaydi, shuning 
 {
   "resourceType": "HealthcareService",
   "meta": {
-    "profile": ["https://dhp.uz/fhir/core/StructureDefinition/uz-core-healthcareservice"]
+    "profile": ["https://dhp.uz/fhir/core/StructureDefinition/uz-core-healthcare-service"]
   },
   "active": true,
   "name": "IHC-ga xos"
@@ -50,7 +50,7 @@ Klinik xizmat uchun `category` va `type` ni qo'shing. Ikkalasi ham `system` kodl
 {
   "resourceType": "HealthcareService",
   "meta": {
-    "profile": ["https://dhp.uz/fhir/core/StructureDefinition/uz-core-healthcareservice"]
+    "profile": ["https://dhp.uz/fhir/core/StructureDefinition/uz-core-healthcare-service"]
   },
   "active": true,
   "name": "IHC-ga xos",

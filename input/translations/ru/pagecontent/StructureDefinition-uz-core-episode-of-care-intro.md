@@ -36,7 +36,7 @@ UZ Core EpisodeOfCare объединяет несколько [Encounter](Struct
 {
   "resourceType": "EpisodeOfCare",
   "meta": {
-    "profile": ["https://dhp.uz/fhir/core/StructureDefinition/uz-core-episodeofcare"]
+    "profile": ["https://dhp.uz/fhir/core/StructureDefinition/uz-core-episode-of-care"]
   },
   "identifier": [
     {
@@ -67,7 +67,7 @@ UZ Core EpisodeOfCare объединяет несколько [Encounter](Struct
 ```json
 {
   "resourceType": "EpisodeOfCare",
-  "meta": { "profile": [ "https://dhp.uz/fhir/core/StructureDefinition/uz-core-episodeofcare" ] },
+  "meta": { "profile": [ "https://dhp.uz/fhir/core/StructureDefinition/uz-core-episode-of-care" ] },
   "status": "active",
   "patient": { "reference": "Patient/example-salim" },
   "managingOrganization": { "reference": "Organization/example-organization" },
@@ -109,7 +109,7 @@ UZ Core EpisodeOfCare объединяет несколько [Encounter](Struct
 {
   "resourceType": "EpisodeOfCare",
   "meta": {
-    "profile": ["https://dhp.uz/fhir/core/StructureDefinition/uz-core-episodeofcare"]
+    "profile": ["https://dhp.uz/fhir/core/StructureDefinition/uz-core-episode-of-care"]
   },
   "status": "planned",
   "patient": { "reference": "Patient/example-emma" },

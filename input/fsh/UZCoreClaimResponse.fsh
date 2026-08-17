@@ -1,8 +1,8 @@
 Profile: UZCoreClaimResponse
 Parent: ClaimResponse
 Id: uz-core-claim-response
-Title: "UZ Core Claim Response"
-Description: "Uzbekistan Core Claim Response profile, used to represent claim adjudication and reimbursement responses"
+Title: "UZ Core ClaimResponse"
+Description: "Uzbekistan Core ClaimResponse profile, used to represent claim adjudication and reimbursement responses"
 
 * ^experimental = true
 * ^status = #active
@@ -70,7 +70,7 @@ Description: "Uzbekistan Core Claim Response profile, used to represent claim ad
 
 Instance: example-claim-response
 InstanceOf: UZCoreClaimResponse
-Title: "Example Claim Response"
+Title: "Example UZ Core ClaimResponse - Cancelled institutional claim"
 Description: "An example claim response for institutional claim"
 Usage: #example
 

@@ -32,7 +32,7 @@ A RelatedPerson must carry at least one `identifier` and must name the `patient`
 ```json
 {
   "resourceType": "RelatedPerson",
-  "meta": { "profile": [ "https://dhp.uz/fhir/core/StructureDefinition/uz-core-relatedperson" ] },
+  "meta": { "profile": [ "https://dhp.uz/fhir/core/StructureDefinition/uz-core-related-person" ] },
   "identifier": [
     {
       "use": "official",
@@ -62,7 +62,7 @@ In practice you also send the `relationship` to the patient, a `name`, a way to 
 ```json
 {
   "resourceType": "RelatedPerson",
-  "meta": { "profile": [ "https://dhp.uz/fhir/core/StructureDefinition/uz-core-relatedperson" ] },
+  "meta": { "profile": [ "https://dhp.uz/fhir/core/StructureDefinition/uz-core-related-person" ] },
   "identifier": [
     {
       "use": "official",

@@ -34,7 +34,7 @@ RelatedPerson должен содержать как минимум один `id
 ```json
 {
   "resourceType": "RelatedPerson",
-  "meta": { "profile": [ "https://dhp.uz/fhir/core/StructureDefinition/uz-core-relatedperson" ] },
+  "meta": { "profile": [ "https://dhp.uz/fhir/core/StructureDefinition/uz-core-related-person" ] },
   "identifier": [
     {
       "use": "official",
@@ -64,7 +64,7 @@ RelatedPerson должен содержать как минимум один `id
 ```json
 {
   "resourceType": "RelatedPerson",
-  "meta": { "profile": [ "https://dhp.uz/fhir/core/StructureDefinition/uz-core-relatedperson" ] },
+  "meta": { "profile": [ "https://dhp.uz/fhir/core/StructureDefinition/uz-core-related-person" ] },
   "identifier": [
     {
       "use": "official",

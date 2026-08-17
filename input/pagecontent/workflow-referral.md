@@ -68,5 +68,5 @@ A cancelled referral cannot be fulfilled, a Procedure cannot start without an ac
 
 ### Related
 
-- Profiles used at fulfilment: [Procedure](StructureDefinition-uz-core-procedure.html) &middot; [Observation](StructureDefinition-uz-core-observation.html) &middot; [Encounter](StructureDefinition-uz-core-encounter.html) &middot; [Condition](StructureDefinition-uz-core-condition.html) &middot; [HealthcareService](StructureDefinition-uz-core-healthcareservice.html)
+- Profiles used at fulfilment: [Procedure](StructureDefinition-uz-core-procedure.html) &middot; [Observation](StructureDefinition-uz-core-observation.html) &middot; [Encounter](StructureDefinition-uz-core-encounter.html) &middot; [Condition](StructureDefinition-uz-core-condition.html) &middot; [HealthcareService](StructureDefinition-uz-core-healthcare-service.html)
 - [Workflows overview](workflows.html) &middot; [General guidance](general-guidance.html)

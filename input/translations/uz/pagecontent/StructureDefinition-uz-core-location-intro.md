@@ -1,6 +1,6 @@
 > **Mashina tarjimasi, inson tomonidan tekshirilishi zarur.** Ushbu sahifa ingliz tilidan sun'iy intellekt yordamida avtomatik tarjima qilingan va hali muharrir tomonidan tekshirilmagan. Har qanday nomuvofiqlikda asl inglizcha versiya ustuvor hisoblanadi.
 
-UZ Core Location [Organization](StructureDefinition-uz-core-organization.html) tomonidan boshqariladigan jismoniy joyni - bino, bo'lim, filial, palata, xona yoki to'shakni - ifodalaydi. Unga [Encounter](StructureDefinition-uz-core-encounter.html) tibbiy yordam qayerda ko'rsatilganini bildirish uchun va [HealthcareService](StructureDefinition-uz-core-healthcareservice.html) xizmat qayerda yetkazib berilishini bildirish uchun murojaat qiladi. Joylar bir-birining ichiga joylashishi mumkin, masalan, bino ichidagi maydon ichidagi palata.
+UZ Core Location [Organization](StructureDefinition-uz-core-organization.html) tomonidan boshqariladigan jismoniy joyni - bino, bo'lim, filial, palata, xona yoki to'shakni - ifodalaydi. Unga [Encounter](StructureDefinition-uz-core-encounter.html) tibbiy yordam qayerda ko'rsatilganini bildirish uchun va [HealthcareService](StructureDefinition-uz-core-healthcare-service.html) xizmat qayerda yetkazib berilishini bildirish uchun murojaat qiladi. Joylar bir-birining ichiga joylashishi mumkin, masalan, bino ichidagi maydon ichidagi palata.
 
 ### Majburiy va Must Support ma'lumot elementlari
 
@@ -43,7 +43,7 @@ Quyidagi misollar server qabul qiladigan eng kichik namunadan to'liq tibbiy muas
 }
 ```
 
-`status` talab etiladigan bog'lanishdan foydalanadi (`active` / `suspended` / `inactive`); qiymat shu qiymatlar to'plamidan kelishi kerak. Yalang'och nom va holat siz keyin [Encounter](StructureDefinition-uz-core-encounter.html) yoki [HealthcareService](StructureDefinition-uz-core-healthcareservice.html) dan murojaat qila oladigan joyni ro'yxatga olish uchun yetarli.
+`status` talab etiladigan bog'lanishdan foydalanadi (`active` / `suspended` / `inactive`); qiymat shu qiymatlar to'plamidan kelishi kerak. Yalang'och nom va holat siz keyin [Encounter](StructureDefinition-uz-core-encounter.html) yoki [HealthcareService](StructureDefinition-uz-core-healthcare-service.html) dan murojaat qila oladigan joyni ro'yxatga olish uchun yetarli.
 
 #### Ko'p tilli nom, tur va manzilni qo'shish
 

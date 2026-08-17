@@ -794,7 +794,7 @@
             }
           ],
           "supportedProfile": [
-            "https://dhp.uz/fhir/core/StructureDefinition/uz-core-relatedperson"
+            "https://dhp.uz/fhir/core/StructureDefinition/uz-core-related-person"
           ],
           "type": "RelatedPerson"
         },
@@ -945,7 +945,7 @@
             }
           ],
           "supportedProfile": [
-            "https://dhp.uz/fhir/core/StructureDefinition/uz-core-episodeofcare"
+            "https://dhp.uz/fhir/core/StructureDefinition/uz-core-episode-of-care"
           ],
           "type": "EpisodeOfCare"
         },
@@ -2232,7 +2232,7 @@
             }
           ],
           "supportedProfile": [
-            "https://dhp.uz/fhir/core/StructureDefinition/uz-core-healthcareservice"
+            "https://dhp.uz/fhir/core/StructureDefinition/uz-core-healthcare-service"
           ],
           "type": "HealthcareService"
         },
@@ -8560,7 +8560,7 @@
             }
           ],
           "supportedProfile": [
-            "https://dhp.uz/fhir/core/StructureDefinition/uz-core-auditevent"
+            "https://dhp.uz/fhir/core/StructureDefinition/uz-core-audit-event"
           ],
           "type": "AuditEvent"
         },

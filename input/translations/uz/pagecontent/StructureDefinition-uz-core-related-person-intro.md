@@ -34,7 +34,7 @@ RelatedPerson kamida bitta `identifier` olib yurishi va o'zi bog'liq bo'lgan `pa
 ```json
 {
   "resourceType": "RelatedPerson",
-  "meta": { "profile": [ "https://dhp.uz/fhir/core/StructureDefinition/uz-core-relatedperson" ] },
+  "meta": { "profile": [ "https://dhp.uz/fhir/core/StructureDefinition/uz-core-related-person" ] },
   "identifier": [
     {
       "use": "official",
@@ -64,7 +64,7 @@ Amalda siz bemorga `relationship` ni, `name` ni, shaxsga yetishish usulini (`tel
 ```json
 {
   "resourceType": "RelatedPerson",
-  "meta": { "profile": [ "https://dhp.uz/fhir/core/StructureDefinition/uz-core-relatedperson" ] },
+  "meta": { "profile": [ "https://dhp.uz/fhir/core/StructureDefinition/uz-core-related-person" ] },
   "identifier": [
     {
       "use": "official",

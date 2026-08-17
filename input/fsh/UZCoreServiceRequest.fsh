@@ -1,6 +1,6 @@
 Profile: UZCoreServiceRequest
 Parent: ServiceRequest
-Id: uz-core-servicerequest
+Id: uz-core-service-request
 Title: "UZ Core ServiceRequest"
 Description: "Uzbekistan Core ServiceRequest profile, used to represent a request for service such as diagnostic investigations, treatments, or operations to be performed."
 * ^experimental = true

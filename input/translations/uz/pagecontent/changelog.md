@@ -1,5 +1,11 @@
 ### Ishlab chiqish jarayonida
 
+#### Profillardagi o'zgarishlar
+
+Beshta profilning kanonik URL'lari modellashtirish qo'llanmasi talab qiladigan defisli `uz-core-[resource-name]` shakliga keltirildi: [UZ Core AuditEvent](StructureDefinition-uz-core-audit-event.html), [UZ Core EpisodeOfCare](StructureDefinition-uz-core-episode-of-care.html), [UZ Core HealthcareService](StructureDefinition-uz-core-healthcare-service.html), [UZ Core RelatedPerson](StructureDefinition-uz-core-related-person.html) va [UZ Core ServiceRequest](StructureDefinition-uz-core-service-request.html). `.../uz-core-auditevent`, `.../uz-core-episodeofcare`, `.../uz-core-healthcareservice`, `.../uz-core-relatedperson` yoki `.../uz-core-servicerequest` ga havola qiluvchi dasturchilar yangi kanonik URL'larga o'tishlari kerak.
+
+[UZ Core ClaimResponse](StructureDefinition-uz-core-claim-response.html) profilining nomi va tavsifida resurs nomi endi ikki so'zga ajratilmaydi - «UZ Core Claim Response» endi «UZ Core ClaimResponse». Profilning kanonik URL'i o'zgarmadi.
+
 #### Hujjatlashtirish
 
 «Shakllar» sahifasi endi [So'rovnomalar](forms.html) deb ataladi - u O'zbekistonda qo'llaniladigan tibbiy shakllar bilan chalkashtirilmasligi uchun. Sahifa manzili o'zgarmadi.
@@ -8,7 +14,7 @@
 
 #### Yangi profillar
 
-Sug'urta hisob-fakturalari, oldindan avtorizatsiya va oldindan aniqlash uchun, shuningdek ularga qaytariladigan qaror va to'lov javoblari uchun [UZ Core Claim](StructureDefinition-uz-core-claim.html) va [UZ Core Claim Response](StructureDefinition-uz-core-claim-response.html) profillari qo'shildi. Ularni [hisob-faktura turi](ValueSet-claim-type-vs.html), [hisob-faktura maqsadi](ValueSet-claim-use-vs.html) va [moliyaviy boshqaruv holati](ValueSet-fm-status-vs.html) terminologiyasi, shuningdek [javob toifasi](ValueSet-claim-response-category-vs.html), [qaror](ValueSet-claim-response-decision-vs.html) va [natija](ValueSet-claim-response-outcome-vs.html) kodlari qo'llab-quvvatlaydi. [Bekor qilish sababi kengaytmasi](StructureDefinition-claim-response-cancellation-reason.html) javob nima uchun bekor qilinganini qayd etadi - masalan, oldindan avtorizatsiya muddati hisob-faktura yakunlanguncha tugaganda.
+Sug'urta hisob-fakturalari, oldindan avtorizatsiya va oldindan aniqlash uchun, shuningdek ularga qaytariladigan qaror va to'lov javoblari uchun [UZ Core Claim](StructureDefinition-uz-core-claim.html) va [UZ Core ClaimResponse](StructureDefinition-uz-core-claim-response.html) profillari qo'shildi. Ularni [hisob-faktura turi](ValueSet-claim-type-vs.html), [hisob-faktura maqsadi](ValueSet-claim-use-vs.html) va [moliyaviy boshqaruv holati](ValueSet-fm-status-vs.html) terminologiyasi, shuningdek [javob toifasi](ValueSet-claim-response-category-vs.html), [qaror](ValueSet-claim-response-decision-vs.html) va [natija](ValueSet-claim-response-outcome-vs.html) kodlari qo'llab-quvvatlaydi. [Bekor qilish sababi kengaytmasi](StructureDefinition-claim-response-cancellation-reason.html) javob nima uchun bekor qilinganini qayd etadi - masalan, oldindan avtorizatsiya muddati hisob-faktura yakunlanguncha tugaganda.
 
 Davlat tibbiy sug'urtasi bo'yicha yo'llanma va gospitalizatsiyani tasdiqlash jarayonining bosqichlarini kuzatish uchun [UZ Core Task Referral Approval](StructureDefinition-uz-core-referral-approval-task.html) profili qo'shildi (Vazirlar Mahkamasining 04.11.2025 yildagi 694-son qaroriga 1-ilova), u [vazifa kodlari](ValueSet-task-codes-vs.html), [holat](ValueSet-task-status-vs.html), [maqsad](ValueSet-task-intent-vs.html) va [biznes holati](ValueSet-task-business-status-vs.html) terminologiyasiga ega. Ogohlantirish darajasidagi cheklov so'ralgan muddati o'tgan, ammo kechikkan deb belgilanmagan tugallanmagan vazifalarni aniqlaydi - SLA nazorati uchun.
 
@@ -56,7 +62,7 @@ Modellashtirish bo'yicha qo'llanma endi terminologiya versiyalari SemVer formati
 
 Laboratoriya va diagnostika hisobotlari uchun [UZ Core DiagnosticReport](StructureDefinition-uz-core-diagnostic-report.html) profili qo'shildi, [xizmat toifasi](ValueSet-diagnostic-report-service-category-vs.html), [holat](ValueSet-diagnostic-report-status-vs.html) va [hisobot turlari](ValueSet-lab-report-types-vs.html) uchun tegishli terminologiya bilan birga.
 
-Muolajalar, diagnostik tekshiruvlar yoki tekshiruvlar panelini buyurtma qilish uchun [UZ Core ServiceRequest](StructureDefinition-uz-core-servicerequest.html) profili qo'shildi, jumladan [to'lov turi](ValueSet-payment-type-vs.html) va [so'rov holati](ValueSet-service-request-status-vs.html) terminologiyasi bilan.
+Muolajalar, diagnostik tekshiruvlar yoki tekshiruvlar panelini buyurtma qilish uchun [UZ Core ServiceRequest](StructureDefinition-uz-core-service-request.html) profili qo'shildi, jumladan [to'lov turi](ValueSet-payment-type-vs.html) va [so'rov holati](ValueSet-service-request-status-vs.html) terminologiyasi bilan.
 
 Klinik namunalar uchun [UZ Core Specimen](StructureDefinition-uz-core-specimen.html) profili qo'shildi, [yig'ish usuli](ValueSet-specimen-collection-method-vs.html), [namuna turi](ValueSet-specimen-types-vs.html), [rol](ValueSet-specimen-role-vs.html) va [holat](ValueSet-specimen-status-vs.html) terminologiyasi bilan birga. U ServiceRequest va DiagnosticReport profillaridan havola qilinadi.
 
@@ -82,9 +88,9 @@ O'zbekistonga xos dori identifikatorlari (markirovka ID, ro'yxatdan o'tkazish gu
 
 [UZ Core PractitionerRole](StructureDefinition-uz-core-practitioner-role.html) dagi `code` endi [lavozim va kasb ValueSet](ValueSet-position-and-profession-vs.html) ga (required) bog'langan (ilgari - shifokor roli qiymatlar to'plami); `specialty` esa avvalgidek [kasb ixtisosligi ValueSet](ValueSet-profession-specialization-vs.html) ga (required) bog'langan. Dasturchilar shifokor rollarini ushbu qiymatlar to'plamlaridagi kodlar bilan to'ldirishlari shart.
 
-Laboratoriya xizmatlarida natija kutilayotgan vaqtni ko'rsatish uchun [UZ Core HealthcareService](StructureDefinition-uz-core-healthcareservice.html) ga [natija kutish vaqti kengaytmasi](StructureDefinition-turnaround-time.html) qo'shildi. Ushbu profildagi toifa va tur bog'lanishlari ham required dan extensible ga yumshatildi, shu sababli dasturchilar lokal kodlar qo'sha olishlari mumkin.
+Laboratoriya xizmatlarida natija kutilayotgan vaqtni ko'rsatish uchun [UZ Core HealthcareService](StructureDefinition-uz-core-healthcare-service.html) ga [natija kutish vaqti kengaytmasi](StructureDefinition-turnaround-time.html) qo'shildi. Ushbu profildagi toifa va tur bog'lanishlari ham required dan extensible ga yumshatildi, shu sababli dasturchilar lokal kodlar qo'sha olishlari mumkin.
 
-[UZ Core Encounter](StructureDefinition-uz-core-encounter.html) va [UZ Core EpisodeOfCare](StructureDefinition-uz-core-episodeofcare.html) dagi `type`, hamda [UZ Core Provenance](StructureDefinition-uz-core-provenance.html) dagi `signature.type` endi slayslarga bo'lingan, shu sababli milliy kod talab qilinadi, qo'shimcha kodlashlar esa ruxsat etilgan bo'lib qoladi.
+[UZ Core Encounter](StructureDefinition-uz-core-encounter.html) va [UZ Core EpisodeOfCare](StructureDefinition-uz-core-episode-of-care.html) dagi `type`, hamda [UZ Core Provenance](StructureDefinition-uz-core-provenance.html) dagi `signature.type` endi slayslarga bo'lingan, shu sababli milliy kod talab qilinadi, qo'shimcha kodlashlar esa ruxsat etilgan bo'lib qoladi.
 
 Bir nechta profillardagi havola maqsadlari endi mavjud bo'lgan joylarda UZ Core profillariga ishora qiladi - masalan, [UZ Core Observation](StructureDefinition-uz-core-observation.html) dagi `specimen` UZ Core Specimen ga va `partOf` UZ Core Procedure/Immunization ga, [UZ Core Immunization](StructureDefinition-uz-core-immunization.html) dagi `administeredProduct` UZ Core Medication ga, hamda [UZ Core AdverseEvent](StructureDefinition-uz-core-adverse-event.html) dagi `suspectEntity` UZ Core Medication ga. Havola qilingan resurslar endi tegishli UZ Core profiliga mos kelishi shart.
 
@@ -102,13 +108,13 @@ Milliy DMED tizimidan ma'lumotlarni qabul qilish uchun DMED terminologik ko'prik
 
 [UZ Core Patient](StructureDefinition-uz-core-patient.html) dagi `managingOrganization` endi Must Support hisoblanadi va [UZ Core Organization](StructureDefinition-uz-core-organization.html) ga havola qilishi kerak.
 
-Ko'p tilli tarjima kengaytmasi (o'zbekcha asosiy qiymat hamda ruscha va qoraqalpoqcha tarjimalar) [UZ Core HealthcareService](StructureDefinition-uz-core-healthcareservice.html) dagi `name` ga hamda [UZ Core ActivityDefinition](StructureDefinition-uz-core-vaccination-activity-definition.html), [UZ Core Laboratory ObservationDefinition](StructureDefinition-uz-core-laboratory-observation-definition.html), [UZ Core Immunization PlanDefinition](StructureDefinition-uz-core-immunization-plan-definition.html) va [UZ Core Questionnaire](StructureDefinition-uz-core-questionnaire.html) dagi `title` ga qo'shildi. `name` endi [UZ Core Organization](StructureDefinition-uz-core-organization.html) va [UZ Core Location](StructureDefinition-uz-core-location.html) da majburiy.
+Ko'p tilli tarjima kengaytmasi (o'zbekcha asosiy qiymat hamda ruscha va qoraqalpoqcha tarjimalar) [UZ Core HealthcareService](StructureDefinition-uz-core-healthcare-service.html) dagi `name` ga hamda [UZ Core ActivityDefinition](StructureDefinition-uz-core-vaccination-activity-definition.html), [UZ Core Laboratory ObservationDefinition](StructureDefinition-uz-core-laboratory-observation-definition.html), [UZ Core Immunization PlanDefinition](StructureDefinition-uz-core-immunization-plan-definition.html) va [UZ Core Questionnaire](StructureDefinition-uz-core-questionnaire.html) dagi `title` ga qo'shildi. `name` endi [UZ Core Organization](StructureDefinition-uz-core-organization.html) va [UZ Core Location](StructureDefinition-uz-core-location.html) da majburiy.
 
 #### Tashkilot va identifikatorlar
 
 [UZ Core Organization](StructureDefinition-uz-core-organization.html) ga Davlat sog'liqni saqlash sug'urtasi jamg'armasi (DTSJ) va Sog'liqni saqlash vazirligi (Minzdrav) identifikator slayslari qo'shildi. DTSJ tomonidan tayinlangan provayder kodlari `PRN` (provayder raqami) sifatida tiplangan. Yangi [to'lovchini identifikatsiya qilish](payor-identification.html) sahifasi to'lovchilar va ular bilan shartnoma tuzgan provayderlar qanday identifikatsiya qilinishini tushuntiradi.
 
-[UZ Core Patient](StructureDefinition-uz-core-patient.html) va [UZ Core RelatedPerson](StructureDefinition-uz-core-relatedperson.html) da lokal pasport identifikatori endi `use` ni `official` ga qat'iy belgilamaydi: joriy ID karta uchun `official`, bir xil tizimni ulashadigan eskirgan qog'oz pasport uchun esa `old` dan foydalaning. [Identifikatorlar](identifiers.html) sahifasiga qarang.
+[UZ Core Patient](StructureDefinition-uz-core-patient.html) va [UZ Core RelatedPerson](StructureDefinition-uz-core-related-person.html) da lokal pasport identifikatori endi `use` ni `official` ga qat'iy belgilamaydi: joriy ID karta uchun `official`, bir xil tizimni ulashadigan eskirgan qog'oz pasport uchun esa `old` dan foydalaning. [Identifikatorlar](identifiers.html) sahifasiga qarang.
 
 #### Hujjatlashtirish
 
@@ -136,7 +142,7 @@ O'zbekistonda ishlatiladigan panellar va analitlar uchun [laboratoriya kuzatuv k
 
 [UZ Core Observation](StructureDefinition-uz-core-observation.html) da [ObservationCodesVS](ValueSet-observation-codes-vs.html) bog‘lanishi required dan **preferred** ga o‘zgartirildi va endi LOINC va lokal kodlar bilan bir qatorda SNOMED CT kodlarini ham o‘z ichiga oladi. Dasturchilar mos joylarda SNOMED CT kodlaridan foydalanishlari mumkin.
 
-[UZ Core HealthcareService](StructureDefinition-uz-core-healthcareservice.html) da `category.coding` va `type.coding` endi slayslarga bo‘linib, [LabServiceCategoriesVS](ValueSet-lab-service-categories-vs.html) ga bog‘langan yangi `labCategory` slaysini qo‘llab-quvvatlaydi (kodlar [LabCategoriesCS](CodeSystem-lab-categories-cs.html) dan). Laboratoriya xizmatlari mavjud `dhpCategory` slaysiga qo‘shimcha ravishda `labCategory` slaysini ham to‘ldirishi kerak.
+[UZ Core HealthcareService](StructureDefinition-uz-core-healthcare-service.html) da `category.coding` va `type.coding` endi slayslarga bo‘linib, [LabServiceCategoriesVS](ValueSet-lab-service-categories-vs.html) ga bog‘langan yangi `labCategory` slaysini qo‘llab-quvvatlaydi (kodlar [LabCategoriesCS](CodeSystem-lab-categories-cs.html) dan). Laboratoriya xizmatlari mavjud `dhpCategory` slaysiga qo‘shimcha ravishda `labCategory` slaysini ham to‘ldirishi kerak.
 
 [UZ Core Patient](StructureDefinition-uz-core-patient.html) da [MahallaVS](ValueSet-mahalla-vs.html) (`address.city` uchun ishlatiladi) yangi [Mahalla COATO](CodeSystem-mahalla-coato-cs.html) kod tizimidagi kodlar bilan kengaytirildi va mavjud MahallaCS kodlariga qo‘shimcha ravishda 2 600 dan ortiq COATO asosidagi mahalla identifikatorlarini taqdim etadi.
 
@@ -216,7 +222,7 @@ MVD mamlakat kodlarini ISO 3166-1 alpha-2 kodlariga tarjima qilish uchun [Concep
 
 Mamlakat kodi qo'llab-quvvatlashi bilan chet el pasport raqamlari va haydovchilik guvohnomalari uchun aniq bo'limlar (slices) qo'shildi.
 
-[EpisodeOfCare](StructureDefinition-uz-core-episodeofcare.html) tavsifi yangilandi.
+[EpisodeOfCare](StructureDefinition-uz-core-episode-of-care.html) tavsifi yangilandi.
 
 PINFL aniqligi va alpha-2 mamlakat kodlariga o'tishni o'z ichiga olgan [identifikator hujjatlari](identifiers.html) yaxshilandi.
 
@@ -246,13 +252,13 @@ ConceptMaplar va ularning tegishli strategiyasidan foydalanish hujjatlashtirildi
 
 Bo'lim nomlari (slice names) eng yaxshi amaliyot nomlash konvensiyasi - lowerCamelCase ga mos ravishda yangilandi.
 
-[Patient](StructureDefinition-uz-core-patient.html), [Practitioner](StructureDefinition-uz-core-practitioner.html) va [RelatedPerson](StructureDefinition-uz-core-relatedperson.html) resurslarida xalqaro manzillarni qo'llab-quvvatlash qo'shildi.
+[Patient](StructureDefinition-uz-core-patient.html), [Practitioner](StructureDefinition-uz-core-practitioner.html) va [RelatedPerson](StructureDefinition-uz-core-related-person.html) resurslarida xalqaro manzillarni qo'llab-quvvatlash qo'shildi.
 
 O'zbekcha tarjimalar qo'shildi.
 
 ### Versiya 0.3.0
 
-[Encounter](StructureDefinition-uz-core-encounter.html), [EpisodeOfCare](StructureDefinition-uz-core-episodeofcare.html) va [Observation](StructureDefinition-uz-core-observation.html) uchun UZ Core profillari qo'shildi.
+[Encounter](StructureDefinition-uz-core-encounter.html), [EpisodeOfCare](StructureDefinition-uz-core-episode-of-care.html) va [Observation](StructureDefinition-uz-core-observation.html) uchun UZ Core profillari qo'shildi.
 
 Kanonik URL manzillari conformance resurslari uchun `https://dhp.uz/fhir/core`, terminologiya resurslari uchun esa `https://terminology.dhp.uz/fhir/core` tarzida o'zgartirildi, bu esa kelajakdagi IG'lar uchun `https://dhp.uz/fhir/<ig>` namunaviy shaklini qo'llash imkonini beradi.
 

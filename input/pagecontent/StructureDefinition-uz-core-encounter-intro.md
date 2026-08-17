@@ -1,4 +1,4 @@
-UZ Core Encounter represents a single interaction between a patient and the health system - a visit - on the Digital Health Platform. It is the pivot of the patient journey: [Observations](StructureDefinition-uz-core-observation.html), [Procedures](StructureDefinition-uz-core-procedure.html), [Conditions](StructureDefinition-uz-core-condition.html), MedicationRequests, and clinical documents all reference the Encounter they belong to. It records where the visit took place, who provided it, and the diagnoses assigned during it (each pointing at a [Condition](StructureDefinition-uz-core-condition.html)), and may be grouped under an [EpisodeOfCare](StructureDefinition-uz-core-episodeofcare.html).
+UZ Core Encounter represents a single interaction between a patient and the health system - a visit - on the Digital Health Platform. It is the pivot of the patient journey: [Observations](StructureDefinition-uz-core-observation.html), [Procedures](StructureDefinition-uz-core-procedure.html), [Conditions](StructureDefinition-uz-core-condition.html), MedicationRequests, and clinical documents all reference the Encounter they belong to. It records where the visit took place, who provided it, and the diagnoses assigned during it (each pointing at a [Condition](StructureDefinition-uz-core-condition.html)), and may be grouped under an [EpisodeOfCare](StructureDefinition-uz-core-episode-of-care.html).
 
 ### Mandatory and Must Support data elements
 
@@ -183,6 +183,6 @@ For an admission, add the `diagnosis` list (each `condition` is a `CodeableRefer
 }
 ```
 
-These keys slot into the same resource as the realistic visit above. To group a visit under a longer course of care, reference an [EpisodeOfCare](StructureDefinition-uz-core-episodeofcare.html) through `episodeOfCare`.
+These keys slot into the same resource as the realistic visit above. To group a visit under a longer course of care, reference an [EpisodeOfCare](StructureDefinition-uz-core-episode-of-care.html) through `episodeOfCare`.
 
 For example API calls and a sample payload, see the [Quick Start](#quick-start) at the bottom of this page.

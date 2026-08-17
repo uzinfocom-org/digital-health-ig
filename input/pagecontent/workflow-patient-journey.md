@@ -1,6 +1,6 @@
-This workflow shows how a patient's care for one problem is grouped over time. A single visit is an [Encounter](StructureDefinition-uz-core-encounter.html); a course of care that spans many visits - a pregnancy, a cancer pathway, a chronic infection - is an [EpisodeOfCare](StructureDefinition-uz-core-episodeofcare.html). The episode is the thread that ties the visits, diagnoses and results of one case together so a clinician sees the whole story, not scattered records.
+This workflow shows how a patient's care for one problem is grouped over time. A single visit is an [Encounter](StructureDefinition-uz-core-encounter.html); a course of care that spans many visits - a pregnancy, a cancer pathway, a chronic infection - is an [EpisodeOfCare](StructureDefinition-uz-core-episode-of-care.html). The episode is the thread that ties the visits, diagnoses and results of one case together so a clinician sees the whole story, not scattered records.
 
-> Profile status: [EpisodeOfCare](StructureDefinition-uz-core-episodeofcare.html), [Encounter](StructureDefinition-uz-core-encounter.html), [Condition](StructureDefinition-uz-core-condition.html) and [Observation](StructureDefinition-uz-core-observation.html) are profiled in UZ Core. The MedicationRequest profile used during treatment is in development - until it publishes, use the base FHIR R5 resource.
+> Profile status: [EpisodeOfCare](StructureDefinition-uz-core-episode-of-care.html), [Encounter](StructureDefinition-uz-core-encounter.html), [Condition](StructureDefinition-uz-core-condition.html) and [Observation](StructureDefinition-uz-core-observation.html) are profiled in UZ Core. The MedicationRequest profile used during treatment is in development - until it publishes, use the base FHIR R5 resource.
 
 Actors: a general practitioner (opens the case and follows it); specialists (treat within the case); the platform (DHP).
 
@@ -13,7 +13,7 @@ When a problem becomes a case to be managed - typically on a confirming result -
 ```
 POST [base]/EpisodeOfCare
 { "resourceType": "EpisodeOfCare",
-  "meta": { "profile": ["https://dhp.uz/fhir/core/StructureDefinition/uz-core-episodeofcare"] },
+  "meta": { "profile": ["https://dhp.uz/fhir/core/StructureDefinition/uz-core-episode-of-care"] },
   "status": "active",
   "patient": { "reference": "Patient/[id]" },
   "period": { "start": "2026-05-30" } }
@@ -61,5 +61,5 @@ Because every visit, result and prescription carries the episode reference, this
 
 ### Related
 
-- Profiles: [EpisodeOfCare](StructureDefinition-uz-core-episodeofcare.html) &middot; [Encounter](StructureDefinition-uz-core-encounter.html) &middot; [Condition](StructureDefinition-uz-core-condition.html) &middot; [Observation](StructureDefinition-uz-core-observation.html)
+- Profiles: [EpisodeOfCare](StructureDefinition-uz-core-episode-of-care.html) &middot; [Encounter](StructureDefinition-uz-core-encounter.html) &middot; [Condition](StructureDefinition-uz-core-condition.html) &middot; [Observation](StructureDefinition-uz-core-observation.html)
 - [Workflows overview](workflows.html) &middot; [General guidance](general-guidance.html)

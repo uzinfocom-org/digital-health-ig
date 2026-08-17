@@ -36,7 +36,7 @@ In practice you send the things that let the platform manage and find the episod
 {
   "resourceType": "EpisodeOfCare",
   "meta": {
-    "profile": ["https://dhp.uz/fhir/core/StructureDefinition/uz-core-episodeofcare"]
+    "profile": ["https://dhp.uz/fhir/core/StructureDefinition/uz-core-episode-of-care"]
   },
   "identifier": [
     {
@@ -67,7 +67,7 @@ The clinical content of the episode is its `reason` (why care is being given) an
 ```json
 {
   "resourceType": "EpisodeOfCare",
-  "meta": { "profile": [ "https://dhp.uz/fhir/core/StructureDefinition/uz-core-episodeofcare" ] },
+  "meta": { "profile": [ "https://dhp.uz/fhir/core/StructureDefinition/uz-core-episode-of-care" ] },
   "status": "active",
   "patient": { "reference": "Patient/example-salim" },
   "managingOrganization": { "reference": "Organization/example-organization" },
@@ -109,7 +109,7 @@ A long-running episode moves through several statuses - it may be `planned`, the
 {
   "resourceType": "EpisodeOfCare",
   "meta": {
-    "profile": ["https://dhp.uz/fhir/core/StructureDefinition/uz-core-episodeofcare"]
+    "profile": ["https://dhp.uz/fhir/core/StructureDefinition/uz-core-episode-of-care"]
   },
   "status": "planned",
   "patient": { "reference": "Patient/example-emma" },

@@ -1,6 +1,6 @@
-Ushbu jarayon bitta muammo bo'yicha bemorga ko'rsatiladigan tibbiy yordam ma'lumotlari vaqt davomida qanday guruhlanishini ko'rsatadi. Alohida tashrif [Encounter](StructureDefinition-uz-core-encounter.html) resursi bilan ifodalanadi; bir nechta tashrifni qamrab oladigan tibbiy yordam jarayoni - masalan, homiladorlikni kuzatish, onkologik kasallikni davolash yoki surunkali infeksiyani boshqarish - [EpisodeOfCare](StructureDefinition-uz-core-episodeofcare.html) resursi bilan ifodalanadi. EpisodeOfCare bitta klinik holatga tegishli tashriflar, tashxislar va natijalarni bog'laydi, natijada klinitsist tarqoq yozuvlar o'rniga holatning to'liq tarixini ko'radi.
+Ushbu jarayon bitta muammo bo'yicha bemorga ko'rsatiladigan tibbiy yordam ma'lumotlari vaqt davomida qanday guruhlanishini ko'rsatadi. Alohida tashrif [Encounter](StructureDefinition-uz-core-encounter.html) resursi bilan ifodalanadi; bir nechta tashrifni qamrab oladigan tibbiy yordam jarayoni - masalan, homiladorlikni kuzatish, onkologik kasallikni davolash yoki surunkali infeksiyani boshqarish - [EpisodeOfCare](StructureDefinition-uz-core-episode-of-care.html) resursi bilan ifodalanadi. EpisodeOfCare bitta klinik holatga tegishli tashriflar, tashxislar va natijalarni bog'laydi, natijada klinitsist tarqoq yozuvlar o'rniga holatning to'liq tarixini ko'radi.
 
-> Profillarning holati: [EpisodeOfCare](StructureDefinition-uz-core-episodeofcare.html), [Encounter](StructureDefinition-uz-core-encounter.html), [Condition](StructureDefinition-uz-core-condition.html) va [Observation](StructureDefinition-uz-core-observation.html) UZ Core doirasida profillangan. Davolash vaqtida ishlatiladigan MedicationRequest profili ishlab chiqilmoqda. U e'lon qilingunga qadar FHIR R5 bazaviy resursidan foydalaning.
+> Profillarning holati: [EpisodeOfCare](StructureDefinition-uz-core-episode-of-care.html), [Encounter](StructureDefinition-uz-core-encounter.html), [Condition](StructureDefinition-uz-core-condition.html) va [Observation](StructureDefinition-uz-core-observation.html) UZ Core doirasida profillangan. Davolash vaqtida ishlatiladigan MedicationRequest profili ishlab chiqilmoqda. U e'lon qilingunga qadar FHIR R5 bazaviy resursidan foydalaning.
 
 Ishtirokchilar: umumiy amaliyot shifokori (klinik holatni ochadi va kuzatib boradi); mutaxassislar (klinik holat doirasida davolaydi); DHP (Digital Health Platform - Raqamli sog'liqni saqlash platformasi).
 
@@ -13,7 +13,7 @@ Muammo yuritilishi kerak bo'lgan klinik holatga aylanganda - odatda tasdiqlovchi
 ```
 POST [base]/EpisodeOfCare
 { "resourceType": "EpisodeOfCare",
-  "meta": { "profile": ["https://dhp.uz/fhir/core/StructureDefinition/uz-core-episodeofcare"] },
+  "meta": { "profile": ["https://dhp.uz/fhir/core/StructureDefinition/uz-core-episode-of-care"] },
   "status": "active",
   "patient": { "reference": "Patient/[id]" },
   "period": { "start": "2026-05-30" } }
@@ -61,5 +61,5 @@ Har bir tashrif, natija va dori vositasini tayinlash EpisodeOfCare resursiga ref
 
 ### Bog'liq materiallar
 
-- Profillar: [EpisodeOfCare](StructureDefinition-uz-core-episodeofcare.html) &middot; [Encounter](StructureDefinition-uz-core-encounter.html) &middot; [Condition](StructureDefinition-uz-core-condition.html) &middot; [Observation](StructureDefinition-uz-core-observation.html)
+- Profillar: [EpisodeOfCare](StructureDefinition-uz-core-episode-of-care.html) &middot; [Encounter](StructureDefinition-uz-core-encounter.html) &middot; [Condition](StructureDefinition-uz-core-condition.html) &middot; [Observation](StructureDefinition-uz-core-observation.html)
 - [Jarayonlar sharhi](workflows.html) &middot; [Umumiy ko'rsatmalar](general-guidance.html)

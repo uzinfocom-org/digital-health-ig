@@ -25,7 +25,7 @@ GET [base]/EpisodeOfCare?care-manager=Practitioner/[id]
 POST [base]/EpisodeOfCare
 {
   "resourceType": "EpisodeOfCare",
-  "meta": { "profile": [ "https://dhp.uz/fhir/core/StructureDefinition/uz-core-episodeofcare" ] },
+  "meta": { "profile": [ "https://dhp.uz/fhir/core/StructureDefinition/uz-core-episode-of-care" ] },
   "status": "active",
   "patient": { "reference": "Patient/[id]" },
   "managingOrganization": { "reference": "Organization/[id]" },

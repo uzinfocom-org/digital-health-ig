@@ -1,4 +1,4 @@
-UZ Core Encounter представляет отдельное взаимодействие пациента с системой здравоохранения - визит - на Цифровой платформе здравоохранения. Encounter является центральным ресурсом маршрута пациента: ресурсы [Observation](StructureDefinition-uz-core-observation.html), [Procedure](StructureDefinition-uz-core-procedure.html), [Condition](StructureDefinition-uz-core-condition.html), MedicationRequest и клинические документы содержат reference на Encounter, к которому они относятся. Он фиксирует место проведения визита, участников оказания помощи и диагнозы, установленные в его рамках (каждый из которых указывает на [Condition](StructureDefinition-uz-core-condition.html)), а также может быть сгруппирован в рамках [EpisodeOfCare](StructureDefinition-uz-core-episodeofcare.html).
+UZ Core Encounter представляет отдельное взаимодействие пациента с системой здравоохранения - визит - на Цифровой платформе здравоохранения. Encounter является центральным ресурсом маршрута пациента: ресурсы [Observation](StructureDefinition-uz-core-observation.html), [Procedure](StructureDefinition-uz-core-procedure.html), [Condition](StructureDefinition-uz-core-condition.html), MedicationRequest и клинические документы содержат reference на Encounter, к которому они относятся. Он фиксирует место проведения визита, участников оказания помощи и диагнозы, установленные в его рамках (каждый из которых указывает на [Condition](StructureDefinition-uz-core-condition.html)), а также может быть сгруппирован в рамках [EpisodeOfCare](StructureDefinition-uz-core-episode-of-care.html).
 
 ### Обязательные элементы и элементы Must Support
 
@@ -183,6 +183,6 @@ UZ Core Encounter представляет отдельное взаимодей
 }
 ```
 
-Эти ключи добавляются в тот же ресурс, что и в приведённом выше реалистичном примере визита. Чтобы связать визит с более продолжительным курсом лечения, укажите reference на [EpisodeOfCare](StructureDefinition-uz-core-episodeofcare.html) в элементе `episodeOfCare`.
+Эти ключи добавляются в тот же ресурс, что и в приведённом выше реалистичном примере визита. Чтобы связать визит с более продолжительным курсом лечения, укажите reference на [EpisodeOfCare](StructureDefinition-uz-core-episode-of-care.html) в элементе `episodeOfCare`.
 
 Примеры API-запросов и образец полезной нагрузки приведены в разделе [Быстрый старт](#quick-start) внизу страницы.

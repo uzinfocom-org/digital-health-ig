@@ -1,5 +1,11 @@
 ### В разработке
 
+#### Изменения профилей
+
+У пяти профилей канонические URL приведены к дефисной форме `uz-core-[resource-name]`, которую требует руководство по моделированию: [UZ Core AuditEvent](StructureDefinition-uz-core-audit-event.html), [UZ Core EpisodeOfCare](StructureDefinition-uz-core-episode-of-care.html), [UZ Core HealthcareService](StructureDefinition-uz-core-healthcare-service.html), [UZ Core RelatedPerson](StructureDefinition-uz-core-related-person.html) и [UZ Core ServiceRequest](StructureDefinition-uz-core-service-request.html). Разработчики, ссылающиеся на `.../uz-core-auditevent`, `.../uz-core-episodeofcare`, `.../uz-core-healthcareservice`, `.../uz-core-relatedperson` или `.../uz-core-servicerequest`, должны перейти на новые канонические URL.
+
+В названии и описании профиля [UZ Core ClaimResponse](StructureDefinition-uz-core-claim-response.html) имя ресурса больше не разделяется на два слова - «UZ Core Claim Response» стало «UZ Core ClaimResponse». Канонический URL профиля не изменился.
+
 #### Документация
 
 Страница «Формы» теперь называется [Опросники](forms.html), чтобы её не принимали за медицинские формы, используемые в Узбекистане. Адрес страницы не изменился.
@@ -8,7 +14,7 @@
 
 #### Новые профили
 
-Добавлены профили [UZ Core Claim](StructureDefinition-uz-core-claim.html) и [UZ Core Claim Response](StructureDefinition-uz-core-claim-response.html) для страховых счетов, предварительной авторизации и предварительного определения, а также для ответов с решением по оплате и возмещению. Их поддерживает терминология [типа счёта](ValueSet-claim-type-vs.html), [назначения счёта](ValueSet-claim-use-vs.html) и [статуса финансового управления](ValueSet-fm-status-vs.html), а также коды [категории ответа](ValueSet-claim-response-category-vs.html), [решения](ValueSet-claim-response-decision-vs.html) и [результата](ValueSet-claim-response-outcome-vs.html). [Расширение причины отмены](StructureDefinition-claim-response-cancellation-reason.html) фиксирует, почему ответ был отменён - например, когда срок действия предварительной авторизации истёк до завершения обработки счёта.
+Добавлены профили [UZ Core Claim](StructureDefinition-uz-core-claim.html) и [UZ Core ClaimResponse](StructureDefinition-uz-core-claim-response.html) для страховых счетов, предварительной авторизации и предварительного определения, а также для ответов с решением по оплате и возмещению. Их поддерживает терминология [типа счёта](ValueSet-claim-type-vs.html), [назначения счёта](ValueSet-claim-use-vs.html) и [статуса финансового управления](ValueSet-fm-status-vs.html), а также коды [категории ответа](ValueSet-claim-response-category-vs.html), [решения](ValueSet-claim-response-decision-vs.html) и [результата](ValueSet-claim-response-outcome-vs.html). [Расширение причины отмены](StructureDefinition-claim-response-cancellation-reason.html) фиксирует, почему ответ был отменён - например, когда срок действия предварительной авторизации истёк до завершения обработки счёта.
 
 Добавлен профиль [UZ Core Task Referral Approval](StructureDefinition-uz-core-referral-approval-task.html) для отслеживания шагов процесса согласования направления и госпитализации в системе государственного медицинского страхования (Приложение 1 к постановлению Кабинета Министров № 694 от 04.11.2025), с терминологией [кодов задач](ValueSet-task-codes-vs.html), [статуса](ValueSet-task-status-vs.html), [намерения](ValueSet-task-intent-vs.html) и [бизнес-статуса](ValueSet-task-business-status-vs.html). Ограничение уровня предупреждения выявляет незавершённые задачи, у которых истёк запрошенный срок, но не проставлен статус просрочки - для контроля SLA.
 
@@ -56,7 +62,7 @@ ValueSet на основе SNOMED CT теперь отбирают иерарх�
 
 Добавлен профиль [UZ Core DiagnosticReport](StructureDefinition-uz-core-diagnostic-report.html) для лабораторных и диагностических отчётов с сопутствующей терминологией для [категории услуг](ValueSet-diagnostic-report-service-category-vs.html), [статуса](ValueSet-diagnostic-report-status-vs.html) и [типов отчётов](ValueSet-lab-report-types-vs.html).
 
-Добавлен профиль [UZ Core ServiceRequest](StructureDefinition-uz-core-servicerequest.html) для заказа услуг, таких как процедуры, диагностические исследования или комплексы исследований, включая терминологию для [типа оплаты](ValueSet-payment-type-vs.html) и [статуса запроса](ValueSet-service-request-status-vs.html).
+Добавлен профиль [UZ Core ServiceRequest](StructureDefinition-uz-core-service-request.html) для заказа услуг, таких как процедуры, диагностические исследования или комплексы исследований, включая терминологию для [типа оплаты](ValueSet-payment-type-vs.html) и [статуса запроса](ValueSet-service-request-status-vs.html).
 
 Добавлен профиль [UZ Core Specimen](StructureDefinition-uz-core-specimen.html) для клинических образцов с терминологией для [метода сбора](ValueSet-specimen-collection-method-vs.html), [типа образца](ValueSet-specimen-types-vs.html), [роли](ValueSet-specimen-role-vs.html) и [статуса](ValueSet-specimen-status-vs.html). На него ссылаются профили ServiceRequest и DiagnosticReport.
 
@@ -82,9 +88,9 @@ ValueSet на основе SNOMED CT теперь отбирают иерарх�
 
 В [UZ Core PractitionerRole](StructureDefinition-uz-core-practitioner-role.html) `code` теперь привязан (required) к [набору значений должностей и профессий](ValueSet-position-and-profession-vs.html) (ранее - набор значений ролей медработников); `specialty` по-прежнему привязан (required) к [набору значений специализаций профессий](ValueSet-profession-specialization-vs.html). Реализаторы должны заполнять роли медработников кодами из этих наборов значений.
 
-Добавлено [расширение времени обработки](StructureDefinition-turnaround-time.html) в [UZ Core HealthcareService](StructureDefinition-uz-core-healthcareservice.html) для указания ожидаемого времени получения результатов по лабораторным услугам. Привязки категории и типа в этом профиле также смягчены с required на extensible, чтобы реализаторы могли добавлять локальные коды.
+Добавлено [расширение времени обработки](StructureDefinition-turnaround-time.html) в [UZ Core HealthcareService](StructureDefinition-uz-core-healthcare-service.html) для указания ожидаемого времени получения результатов по лабораторным услугам. Привязки категории и типа в этом профиле также смягчены с required на extensible, чтобы реализаторы могли добавлять локальные коды.
 
-`type` в [UZ Core Encounter](StructureDefinition-uz-core-encounter.html) и [UZ Core EpisodeOfCare](StructureDefinition-uz-core-episodeofcare.html), а также `signature.type` в [UZ Core Provenance](StructureDefinition-uz-core-provenance.html) теперь разбиты на слайсы, так что национальный код требуется, а дополнительные кодировки остаются разрешёнными.
+`type` в [UZ Core Encounter](StructureDefinition-uz-core-encounter.html) и [UZ Core EpisodeOfCare](StructureDefinition-uz-core-episode-of-care.html), а также `signature.type` в [UZ Core Provenance](StructureDefinition-uz-core-provenance.html) теперь разбиты на слайсы, так что национальный код требуется, а дополнительные кодировки остаются разрешёнными.
 
 Целевые ссылки в нескольких профилях теперь указывают на профили UZ Core там, где они существуют - например, [UZ Core Observation](StructureDefinition-uz-core-observation.html) `specimen` на UZ Core Specimen и `partOf` на UZ Core Procedure/Immunization, [UZ Core Immunization](StructureDefinition-uz-core-immunization.html) `administeredProduct` на UZ Core Medication и [UZ Core AdverseEvent](StructureDefinition-uz-core-adverse-event.html) `suspectEntity` на UZ Core Medication. Ресурсы, на которые ссылаются, теперь должны соответствовать соответствующему профилю UZ Core.
 
@@ -102,13 +108,13 @@ ValueSet на основе SNOMED CT теперь отбирают иерарх�
 
 `managingOrganization` в [UZ Core Patient](StructureDefinition-uz-core-patient.html) теперь Must Support и должен ссылаться на [UZ Core Organization](StructureDefinition-uz-core-organization.html).
 
-Расширение для многоязычного перевода (базовое значение на узбекском плюс переводы на русский и каракалпакский) добавлено к `name` в [UZ Core HealthcareService](StructureDefinition-uz-core-healthcareservice.html) и к `title` в [UZ Core ActivityDefinition](StructureDefinition-uz-core-vaccination-activity-definition.html), [UZ Core Laboratory ObservationDefinition](StructureDefinition-uz-core-laboratory-observation-definition.html), [UZ Core Immunization PlanDefinition](StructureDefinition-uz-core-immunization-plan-definition.html) и [UZ Core Questionnaire](StructureDefinition-uz-core-questionnaire.html). Элемент `name` теперь обязателен в [UZ Core Organization](StructureDefinition-uz-core-organization.html) и [UZ Core Location](StructureDefinition-uz-core-location.html).
+Расширение для многоязычного перевода (базовое значение на узбекском плюс переводы на русский и каракалпакский) добавлено к `name` в [UZ Core HealthcareService](StructureDefinition-uz-core-healthcare-service.html) и к `title` в [UZ Core ActivityDefinition](StructureDefinition-uz-core-vaccination-activity-definition.html), [UZ Core Laboratory ObservationDefinition](StructureDefinition-uz-core-laboratory-observation-definition.html), [UZ Core Immunization PlanDefinition](StructureDefinition-uz-core-immunization-plan-definition.html) и [UZ Core Questionnaire](StructureDefinition-uz-core-questionnaire.html). Элемент `name` теперь обязателен в [UZ Core Organization](StructureDefinition-uz-core-organization.html) и [UZ Core Location](StructureDefinition-uz-core-location.html).
 
 #### Организация и идентификаторы
 
 Добавлены слайсы идентификаторов Государственного фонда медицинского страхования (SHIF) и Министерства здравоохранения (Минздрав) в [UZ Core Organization](StructureDefinition-uz-core-organization.html). Коды поставщиков, назначаемые SHIF, типизированы как `PRN` (номер поставщика). Новая страница [идентификация плательщиков](payor-identification.html) объясняет, как идентифицируются плательщики и их законтрактованные поставщики.
 
-В [UZ Core Patient](StructureDefinition-uz-core-patient.html) и [UZ Core RelatedPerson](StructureDefinition-uz-core-relatedperson.html) локальный идентификатор паспорта больше не фиксирует `use` как `official`: используйте `official` для текущей ID-карты и `old` для устаревшего бумажного паспорта с той же системой. См. страницу [идентификаторы](identifiers.html).
+В [UZ Core Patient](StructureDefinition-uz-core-patient.html) и [UZ Core RelatedPerson](StructureDefinition-uz-core-related-person.html) локальный идентификатор паспорта больше не фиксирует `use` как `official`: используйте `official` для текущей ID-карты и `old` для устаревшего бумажного паспорта с той же системой. См. страницу [идентификаторы](identifiers.html).
 
 #### Документация
 
@@ -136,7 +142,7 @@ ValueSet на основе SNOMED CT теперь отбирают иерарх�
 
 В [UZ Core Observation](StructureDefinition-uz-core-observation.html) привязка [ObservationCodesVS](ValueSet-observation-codes-vs.html) изменена с required на **preferred** и теперь включает коды SNOMED CT в дополнение к LOINC и локальным кодам. Разработчики могут использовать коды SNOMED CT, где это уместно.
 
-В [UZ Core HealthcareService](StructureDefinition-uz-core-healthcareservice.html) `category.coding` и `type.coding` теперь содержат слайсы, поддерживающие новый слайс `labCategory`, привязанный к [LabServiceCategoriesVS](ValueSet-lab-service-categories-vs.html) (коды из [LabCategoriesCS](CodeSystem-lab-categories-cs.html)). Лабораторные службы должны заполнять слайс `labCategory` дополнительно к существующему `dhpCategory`.
+В [UZ Core HealthcareService](StructureDefinition-uz-core-healthcare-service.html) `category.coding` и `type.coding` теперь содержат слайсы, поддерживающие новый слайс `labCategory`, привязанный к [LabServiceCategoriesVS](ValueSet-lab-service-categories-vs.html) (коды из [LabCategoriesCS](CodeSystem-lab-categories-cs.html)). Лабораторные службы должны заполнять слайс `labCategory` дополнительно к существующему `dhpCategory`.
 
 В [UZ Core Patient](StructureDefinition-uz-core-patient.html) набор значений [MahallaVS](ValueSet-mahalla-vs.html) (используется для `address.city`) расширен кодами из новой системы [Mahalla COATO](CodeSystem-mahalla-coato-cs.html), что добавляет более 2 600 идентификаторов махаллей на основе СОАТО в дополнение к существующим кодам MahallaCS.
 
@@ -232,7 +238,7 @@ ValueSet на основе SNOMED CT теперь отбирают иерарх�
 
 Добавлены явные срезы для номеров иностранных паспортов и водительских удостоверений пациентов с поддержкой кодов стран.
 
-Обновлено описание [EpisodeOfCare](StructureDefinition-uz-core-episodeofcare.html).
+Обновлено описание [EpisodeOfCare](StructureDefinition-uz-core-episode-of-care.html).
 
 Улучшена [документация по идентификаторам](identifiers.html), включая уточнение ПИНФЛ и переход на двухбуквенные коды стран (alpha-2).
 
@@ -262,12 +268,12 @@ ValueSet на основе SNOMED CT теперь отбирают иерарх�
 
 Обновлены имена срезов (slice names) в соответствии с рекомендуемым стилем именования — lowerCamelCase.
 
-Добавлена поддержка международных адресов в ресурсах [Patient](StructureDefinition-uz-core-patient.html), [Practitioner](StructureDefinition-uz-core-practitioner.html) и [RelatedPerson](StructureDefinition-uz-core-relatedperson.html).
+Добавлена поддержка международных адресов в ресурсах [Patient](StructureDefinition-uz-core-patient.html), [Practitioner](StructureDefinition-uz-core-practitioner.html) и [RelatedPerson](StructureDefinition-uz-core-related-person.html).
 
 Добавлены переводы на узбекский язык.
 
 ### Версия 0.3.0
-Добавлены UZ Core профили для [Encounter](StructureDefinition-uz-core-encounter.html), [EpisodeOfCare](StructureDefinition-uz-core-episodeofcare.html) и [Observation](StructureDefinition-uz-core-observation.html).
+Добавлены UZ Core профили для [Encounter](StructureDefinition-uz-core-encounter.html), [EpisodeOfCare](StructureDefinition-uz-core-episode-of-care.html) и [Observation](StructureDefinition-uz-core-observation.html).
 
 Канонические URL изменены на `https://dhp.uz/fhir/core` для ресурсов соответствия и `https://terminology.dhp.uz/fhir/core` для терминологических ресурсов, чтобы обеспечить будущие IG, которые будут следовать шаблону `https://dhp.uz/fhir/<ig>`.
 

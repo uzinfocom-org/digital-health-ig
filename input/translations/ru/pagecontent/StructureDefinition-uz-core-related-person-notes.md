@@ -25,7 +25,7 @@ GET [base]/RelatedPerson?name=Zafarov
 POST [base]/RelatedPerson
 {
   "resourceType": "RelatedPerson",
-  "meta": { "profile": [ "https://dhp.uz/fhir/core/StructureDefinition/uz-core-relatedperson" ] },
+  "meta": { "profile": [ "https://dhp.uz/fhir/core/StructureDefinition/uz-core-related-person" ] },
   "patient": { "reference": "Patient/[id]" },
   ...
 }
@@ -39,7 +39,7 @@ If-Match: W/"3"   # the ETag from your last read; 412 if it changed since
 {
   "resourceType": "RelatedPerson",
   "id": "[id]",
-  "meta": { "profile": [ "https://dhp.uz/fhir/core/StructureDefinition/uz-core-relatedperson" ] },
+  "meta": { "profile": [ "https://dhp.uz/fhir/core/StructureDefinition/uz-core-related-person" ] },
   ...
 }
 ```

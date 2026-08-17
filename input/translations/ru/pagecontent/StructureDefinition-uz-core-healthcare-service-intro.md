@@ -33,7 +33,7 @@ UZ Core HealthcareService описывает услугу, которую [Organ
 {
   "resourceType": "HealthcareService",
   "meta": {
-    "profile": ["https://dhp.uz/fhir/core/StructureDefinition/uz-core-healthcareservice"]
+    "profile": ["https://dhp.uz/fhir/core/StructureDefinition/uz-core-healthcare-service"]
   },
   "active": true,
   "name": "IHC-ga xos"
@@ -50,7 +50,7 @@ UZ Core HealthcareService описывает услугу, которую [Organ
 {
   "resourceType": "HealthcareService",
   "meta": {
-    "profile": ["https://dhp.uz/fhir/core/StructureDefinition/uz-core-healthcareservice"]
+    "profile": ["https://dhp.uz/fhir/core/StructureDefinition/uz-core-healthcare-service"]
   },
   "active": true,
   "name": "IHC-ga xos",
