@@ -1,13 +1,17 @@
 ValueSet: RouteCodeVS
 Id: route-code-vs
 Title: "Route of administration value set"
-Description: "Route of administration codes with Uzbek and Russian translations"
+Description: "Route of administration codes with Uzbek and Russian translations, including SNOMED CT and local codes"
 * ^url = "https://terminology.dhp.uz/fhir/core/ValueSet/route-code-vs"
 * ^experimental = true
 * ^extension[0].url = $valueset-supplement
 * ^extension[=].valueCanonical = Canonical(RouteCodeCS)
 
+// 1. Standart SNOMED CT kodlari (Supplement orqali uz/ru tarjimalari ulanadi)
 * include codes from system $sct where concept is-a #284009009
+
+// 2. SNOMED da yo'q bo'lgan lokal kodlar tizimi
+* include codes from system route-codes-cs
 
 // * include codes from system $sct
 // * $sct#36673005 "Intradermal injection"
@@ -16,3 +20,4 @@ Description: "Route of administration codes with Uzbek and Russian translations"
 // * $sct#300036000 "Subcutaneous infusion"
 // * $sct#738987007 "Transdermal"
 // * $sct#394841004 "Other category"
+

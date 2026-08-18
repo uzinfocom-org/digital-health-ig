@@ -1,7 +1,7 @@
 Profile: UZCoreMedicationRequest
 Parent: MedicationRequest
-Id: uz-core-medication-request
-Title: "UZ Core Medication Request"
+Id: uz-core-medicationrequest
+Title: "UZ Core MedicationRequest"
 Description: "Uzbekistan Core profile for MedicationRequest, used to order medications for a patient"
 * ^experimental = true
 * ^status = #active
@@ -9,88 +9,71 @@ Description: "Uzbekistan Core profile for MedicationRequest, used to order medic
 * ^publisher = "Uzinfocom"
 
 * identifier MS
-* identifier ^short = "Order or prescription identifier"
+* identifier ^short = "Prescription ID in DMED or local MIS"
 
 * identifier.use MS
 * identifier.use from IdentifierUseVS (required)
-* identifier.use ^short = "Defines the type of identifier usage (official, secondary, temporary, old, usual)"
 
 
 * identifier.type MS
 * identifier.type from IdentifierTypeVS (required)
-* identifier.type ^short = "Identifier type code"
 
 * identifier.value MS
-* identifier.value ^short = "Identifier value"
 
 * status MS
 * status from MedicationRequestStatusVS (required)
-* status ^short = "Request status"
 
 * statusReason MS
 * statusReason from MedicationRequestStatusReasonVS (required)
-* statusReason ^short = "Reason for the current status"
-* statusReason ^definition = "Reason for the current status. In the DMED (MIS) system, this process is entered manually by physicians and pharmacists."
+* statusReason ^short = "Reason for prescription status in DMED"
+* statusReason ^definition = "Reason for the current prescription status, entered manually by physicians or pharmacists in DMED"
 
 * statusChanged MS
-* statusChanged ^short = "When the status was changed"
 
 * intent MS
 * intent from MedicationRequestIntentVS (required)
-* intent ^short = "Purpose of the order"
 
 * category MS
 * category from MedicationRequestAdminLocationVS (example)
-* category ^short = "Medication administration location category"
 
 
 * medication MS
 * medication only CodeableReference(UZCoreMedication)
-* medication ^short = "Medication to be taken"
-* medication ^definition = "Medication to be taken. When prescribing a medicinal product with a complex composition, the physician specifies its brand name. In other cases, the international nonproprietary name is used."
 
 * subject MS
 * subject only Reference(UZCorePatient)
-* subject ^short = "Person for whom the prescription is issued"
+* subject ^short = "Patient for whom the prescription is written"
 
 * informationSource MS
 * informationSource only Reference(UZCorePatient or UZCorePractitioner or UZCorePractitionerRole or RelatedPerson or UZCoreOrganization)
-* informationSource ^short = "Source of medication request information"
-* informationSource ^definition = "Used to specify the source of information about the medication request. That is, it identifies who or what source provided the information about this medication."
 
 * extension contains Trustee named trustee 0..* MS
 * extension[trustee].valueReference only Reference(UZCoreRelatedPerson or UZCorePractitionerRole)
-* extension[trustee] ^short = "Authorized representative {Patronage nurse | Relative}"
+* extension[trustee] ^short = "Authorized representative to pick up the medication, either a patronage nurse or a relative"
 * extension[trustee] ^definition = "An authorized representative is a person authorized to collect medications from the pharmacy on behalf of the patient based on a written prescription."
 
 * encounter MS
 * encounter only Reference(UZCoreEncounter)
-* encounter ^short = "Encounter during which the request was made"
 
 * authoredOn MS
-* authoredOn ^short = "When the request was made"
+
 
 * requester MS
-* requester only Reference(UZCorePractitionerRole)
-* requester ^short = "Who made the request"
+* requester only Reference(UZCorePractitioner or UZCorePractitionerRole or UZCoreOrganization or UZCorePatient or UZCoreRelatedPerson)
+* requester ^short = "Healthcare provider or organization issuing the prescription"
 
 * reason MS
 * reason from ConditionCodeVS (required)
 * reason only CodeableReference(UZCoreCondition or UZCoreObservation)
-* reason ^short = "Reason or indication for prescribing or not prescribing the medication"
 
 * effectiveDosePeriod MS
-* effectiveDosePeriod ^short = "Period during which the medication should be taken"
 
 * insurance MS
-* insurance only Reference(Coverage or ClaimResponse)
-* insurance ^short = "Associated insurance coverage"
+* insurance only Reference(Coverage or UZCoreClaimResponse)
 
 * dosageInstruction MS
-* dosageInstruction ^short = "Specific medication administration instructions"
 
 * dosageInstruction.patientInstruction MS
-* dosageInstruction.patientInstruction ^short = "Text instructions for the patient on dosage and medication administration"
 
 * dosageInstruction.timing MS
 * dosageInstruction.timing ^short = "This section contains a few types of mechanism"
@@ -115,70 +98,55 @@ SHOULD NOT BE USED:
 
 
 * dosageInstruction.timing.repeat.bounds[x] MS
-* dosageInstruction.timing.repeat.bounds[x] ^short = "Length/range of lengths or (start and/or end) limits"
 
 * dosageInstruction.timing.repeat.count MS
-* dosageInstruction.timing.repeat.count ^short = "Duration is defined by count rather than time"
 
 * dosageInstruction.timing.repeat.countMax MS
-* dosageInstruction.timing.repeat.countMax ^short = "Maximum allowed number of repetitions"
 
 * dosageInstruction.timing.repeat.duration MS
-* dosageInstruction.timing.repeat.duration ^short = "Duration of performing the action"
 
 * dosageInstruction.timing.repeat.durationUnit MS
 * dosageInstruction.timing.repeat.durationUnit from UnitsOfTimeVS (required)
-* dosageInstruction.timing.repeat.durationUnit ^short = "s | min | h | d | wk | mo | a - unit of time"
 
 * dosageInstruction.timing.repeat.frequency MS
-* dosageInstruction.timing.repeat.frequency ^short = "Indicates the number of repetitions that should occur within the period"
 
 * dosageInstruction.timing.repeat.period MS
-* dosageInstruction.timing.repeat.period ^short = "The duration to which the frequency applies"
 
 * dosageInstruction.timing.repeat.periodUnit MS
 * dosageInstruction.timing.repeat.periodUnit from UnitsOfTimeVS (required)
-* dosageInstruction.timing.repeat.periodUnit ^short = "s | min | h | d | wk | mo | a - unit of time"
 
 * dosageInstruction.timing.repeat.timeOfDay MS
-* dosageInstruction.timing.repeat.timeOfDay ^short = "Time of day for the action"
 
 * dosageInstruction.timing.repeat.dayOfWeek MS
 * dosageInstruction.timing.repeat.dayOfWeek from DaysOfWeekVS (required)
-* dosageInstruction.timing.repeat.dayOfWeek ^short = "Mon | Tue | Wed | Thu | Fri | Sat | Sun"
+* dosageInstruction.timing.repeat.dayOfWeek ^short = "mon | tue | wed | thu | fri | sat | sun"
 
 * dosageInstruction.timing.repeat.when MS
 * dosageInstruction.timing.repeat.when from EventTimingVS (required)
-* dosageInstruction.timing.repeat.when ^short = "Timing event code"
 
 * dosageInstruction.timing.code MS
 * dosageInstruction.timing.code from TimingAbbreviationVS (preferred)
 * dosageInstruction.timing.code ^short = "C | BID | TID | QID | AM | PM | QD | QOD | +"
 
 * dosageInstruction.route MS
-* dosageInstruction.route from RouteCodesVS (required)
+* dosageInstruction.route from RouteCodeVS (extensible)
 * dosageInstruction.route ^short = "Route of medication administration"
 
 * dosageInstruction.doseAndRate MS
 * dosageInstruction.doseAndRate ^short = "Amount of medication to be administered"
 
 * dosageInstruction.doseAndRate.doseQuantity MS
-* dosageInstruction.doseAndRate.doseQuantity.code from UnitOfMeasurementVS (required)
+* dosageInstruction.doseAndRate.doseQuantity.code from UCUMUnitsSupplementVS (extensible)
 
 * dosageInstruction.doseAndRate.doseQuantity.value MS
-* dosageInstruction.doseAndRate.doseQuantity.value ^short = "Medication quantity"
 
 * dosageInstruction.doseAndRate.doseQuantity.unit MS
-* dosageInstruction.doseAndRate.doseQuantity.unit ^short = "Unit of measure for the quantity"
 
 * dispenseRequest MS
-* dispenseRequest ^short = "Authorization for medication dispensing"
 
 * dispenseRequest.quantity MS
-* dispenseRequest.quantity ^short = "Quantity that may be dispensed from the total"
 
 * dispenseRequest.validityPeriod MS
-* dispenseRequest.validityPeriod ^short = "Period during which dispensing is authorized"
 
 * dispenseRequest.validityPeriod.start MS
 * dispenseRequest.validityPeriod.start ^short = "Prescription issue date"
@@ -191,7 +159,7 @@ SHOULD NOT BE USED:
 * dispenseRequest.dispenser ^short = "Pharmacy where this prescription can be dispensed"
 
 * note MS
-* note ^short = "Prescription information"
+* note ^short = "Additional notes or instructions for the pharmacist/patient"
 
 
 Instance: example-medication-request
@@ -219,14 +187,14 @@ Usage: #example
 * reason = $sct#25064002 "Headache"
 * effectiveDosePeriod.start = "2026-03-02" 
 // Обозначено как 3 month, для примера:
-* effectiveDosePeriod.end = "2026-06-02"
+* effectiveDosePeriod.end = "2026-09-02"
 
 * dosageInstruction[0]
   * timing
     * repeat
       * boundsPeriod
-        * start = "2026-01-27"
-        * end = "2026-02-01" // 5d из таблицы
+        * start = "2026-03-02"
+        * end = "2026-09-02" // 5d из таблицы
       * count = 5
       * countMax = 5
       * duration = 6
@@ -243,13 +211,13 @@ Usage: #example
     * code = #pharm-0001-0062 
     * display = "External"
   * doseAndRate[0].doseQuantity
-    * value = 1
-    * unit = "dona"
-    * system = "https://terminology.dhp.uz/fhir/core/CodeSystem/unit-of-measurement-cs"
-    * code = #252
+    * value = 500
+    * unit = "mg"
+    * system = "http://unitsofmeasure.org"
+    * code = #mg
 
 * dispenseRequest
   * quantity.value = 10
   * validityPeriod
-    * start = "2026-01-27"
-    * end = "2026-02-27"
+    * start = "2026-03-02"
+    * end = "2026-09-02"

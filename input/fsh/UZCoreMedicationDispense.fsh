@@ -39,7 +39,7 @@ Description: "Uzbekistan Core MedicationDispense profile, used to record the pro
 * medication only CodeableReference(UZCoreMedication)
 * subject only Reference(UZCorePatient or Group)
 * performer.actor only Reference(UZCorePractitioner or UZCorePractitionerRole or UZCoreOrganization or UZCorePatient or Device or UZCoreRelatedPerson or CareTeam)
-// * authorizingPrescription only Reference(UZCoreMedicationRequest)
+* authorizingPrescription only Reference(UZCoreMedicationRequest)
 * receiver only Reference(UZCorePatient or UZCorePractitioner or UZCoreRelatedPerson or UZCoreLocation or UZCorePractitionerRole)
 
 
@@ -77,7 +77,7 @@ Usage: #example
 * medication.concept.text = "Ibuprofen 400 mg tablet"
 * subject = Reference(example-salim)
 // Authorising prescription is the UZCoreMedicationRequest example; uncomment once MedicationRequest is merged.
-// * authorizingPrescription[0] = Reference(example-medication-request)
+* authorizingPrescription[0] = Reference(example-medication-request)
 * performer[0].actor = Reference(example-practitioner)
 * performer[1].actor = Reference(tashkent-diseases-hospital)
 * quantity
