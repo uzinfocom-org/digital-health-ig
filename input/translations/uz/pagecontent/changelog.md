@@ -1,16 +1,62 @@
 ### Ishlab chiqish jarayonida
 
+#### Yangi profillar
+
+Tibbiy hujjatlar va raqamli shakllar uchun asos sifatida [UZ Core Composition](StructureDefinition-uz-core-composition.html) profili qo'shildi - [hujjat turi](ValueSet-composition-type-vs.html) (470 ta milliy hujjat, jurnal va blank kodi), [kategoriya](ValueSet-composition-category-vs.html), [holat](ValueSet-composition-status-vs.html) va [tasdiqlash usuli](ValueSet-composition-att-mode-vs.html) terminologiyasi bilan, har bir bo'lim uchun esa [matn holati](ValueSet-composition-narrative-status-vs.html), [tartiblash](ValueSet-composition-list-order-vs.html) va [bo'lim bo'sh qolish sababi](ValueSet-composition-list-empty-reason-vs.html) terminologiyasi bilan.
+
+#### Operatsiyalar
+
+Platforma taqdim etadigan operatsiyalar endi OperationDefinition sifatida nashr etilgan, shunda ishlab chiquvchilar ularning parametrlarini, xatoliklardagi xatti-harakatini va idempotentligini platforma hujjatlariga murojaat qilmasdan ko'ra oladi. [Person/$populate](OperationDefinition-person-populate.html) va [Patient/$populate](OperationDefinition-patient-populate.html) shaxsni tasdiqlovchi hujjat - PINFL (`NI`), pasport yoki ID-karta (`PPN`), tug'ilganlik haqidagi guvohnoma (`BCT`) - asosida Person yoki Patient yaratadi va uni davlat reyestrlaridagi ma'lumotlar bilan to'ldiradi; agar shu PINFL uchun resurs allaqachon mavjud bo'lsa, dublikat o'rniga mavjud resurs qaytariladi. [Organization/$practitioners](OperationDefinition-organization-practitioners.html), [Practitioner/$organizations](OperationDefinition-practitioner-organizations.html) va [Practitioner/$specializations](OperationDefinition-practitioner-specializations.html) tibbiyot xodimlari va ular ishlaydigan tashkilotlar o'rtasidagi bog'lanishlarni ochib beradi.
+
 #### Profil o'zgarishlari
+
+UZ Core ServiceRequest Laboratory profili [UZ Core ServiceRequest](StructureDefinition-uz-core-servicerequest.html) deb qayta nomlandi va laboratoriya buyurtmalaridan har qanday so'raladigan xizmatga - muolajalar, diagnostik tekshiruvlar, konsultatsiyalar, skrining va statsionarga yotqizishga - umumlashtirildi. Bu buzuvchi o'zgarish: kanonik URL `https://dhp.uz/fhir/core/StructureDefinition/uz-core-servicerequest-laboratory` dan `https://dhp.uz/fhir/core/StructureDefinition/uz-core-servicerequest` ga o'zgaradi va nusxalar `meta.profile` ni yangilashi kerak. `priority` endi Must Support hisoblanadi va [so'rov ustuvorligi](ValueSet-request-priority-vs.html) ga (required) bog'langan, yangi [qoplama turi kengaytmasi](StructureDefinition-coverage-kind.html) esa so'ralgan xizmat qanday moliyalashtirilishini ko'rsatadi. Shu bilan birga `category` va `code` bog'lanishlari ham o'zgardi - quyidagi terminologiya bo'limiga qarang.
 
 UZ Core Immunization PlanDefinition profili [UZ Core PlanDefinition](StructureDefinition-uz-core-plan-definition.html) deb qayta nomlandi, chunki u endi emlash jadvallari bilan bir qatorda toʻliq qon donatsiyasi va skrining jadvallarini ham qamrab oladi. Bu buzuvchi oʻzgarish: kanonik URL `https://dhp.uz/fhir/core/StructureDefinition/uz-core-immunization-plan-definition` dan `https://dhp.uz/fhir/core/StructureDefinition/uz-core-plan-definition` ga oʻzgaradi va nusxalar `meta.profile` ni yangilashi kerak.
 
 Profil endi jadval turini bildiruvchi `focus` foydalanish kontekstini olib yuradi - `33879002` (faol immunizatsiya), `25179006` (toʻliq qon dozasini yigʻish) yoki `360156006` (skrining) - va cheklov ulardan aniq bittasini talab qiladi, shuning uchun kerakli turdagi jadval `GET [base]/PlanDefinition?context-type-value=focus$http://snomed.info/sct|33879002` soʻrovi bilan topiladi. Jadval kategoriyasi konteksti uchun [emlash kalendari turi](ValueSet-immunization-schedule-type-vs.html) bogʻlanishi endi extensible emas, balki required, bu slayslashni tekshirish imkonini beradi.
 
-[UZ Core ClaimResponse](StructureDefinition-uz-core-claim-response.html) profilining nomi va tavsifida resurs nomi endi ikki so'zga ajratilmaydi - «UZ Core Claim Response» endi «UZ Core ClaimResponse». Profilning kanonik URL'i o'zgarmadi.
+[UZ Core PlanDefinition](StructureDefinition-uz-core-plan-definition.html) ga [holatlar tarixi kengaytmasi](StructureDefinition-plan-definition-status-history.html) qo'shildi: u ta'rif o'tgan har bir holatni, uning amal qilgan davrini, o'zgarish sababini va o'zgarishni kim kiritganini qayd etadi.
+
+[UZ Core PractitionerRole](StructureDefinition-uz-core-practitioner-role.html) da `code` endi majburiy (1..1). Bu buzuvchi o'zgarish: lavozim kodisiz PractitionerRole endi validatsiyadan o'tmaydi.
+
+[UZ Core Practitioner](StructureDefinition-uz-core-practitioner.html) dagi milliy identifikator slaysi endi `system` ni `https://dhp.uz/fhir/core/sid/pro/uz/argos` o'rniga PINFL tizimi `https://dhp.uz/fhir/core/sid/pid/uz/ni` sifatida belgilaydi. Bu slays allaqachon olib yurgan `NI` identifikator turiga va shu identifikator uchun [UZ Core Patient](StructureDefinition-uz-core-patient.html) hamda [UZ Core RelatedPerson](StructureDefinition-uz-core-relatedperson.html) da ishlatiladigan tizimga mos keladi. Bu buzuvchi o'zgarish: ARGOS tizimida yozilgan tibbiyot xodimlari identifikatorlari PINFL tizimida qayta yozilishi kerak.
+
+[UZ Core Patient](StructureDefinition-uz-core-patient.html) dagi `passportLocal` va `passportInternational` identifikator slayslari endi 0..1 emas, balki 0..* kardinallikka ega, shuning uchun bemorda ularning har biridan bittadan ko'p bo'lishi mumkin - masalan, amaldagi ID-karta bilan birga almashtirilgan qog'oz pasport, [identifikatorlar](identifiers.html) sahifasida tasvirlanganidek.
+
+[UZ Core HealthcareService](StructureDefinition-uz-core-healthcareservice.html) dagi `characteristic` endi `paymentType` slaysi bilan slayslanadi va u [to'lov turi](ValueSet-payment-type-vs.html) ga (required) bog'langan, shunda xizmat qanday moliyalashtirish shartlarida ko'rsatilishini bildira oladi. `category.coding` dagi `labCategory` slaysi endi qayta nomlangan laboratoriya ValueSet iga emas, [xizmat kategoriyalari](ValueSet-service-categories-vs.html) ga bog'langan (quyiga qarang).
+
+[UZ Core Claim](StructureDefinition-uz-core-claim.html) dagi `prescription` endi Must Support hisoblanadi - hisob-kitob qilinayotgan qoplama retsepti uchun. U MedicationRequest ga ishora qiladi va bu profil nashr etilgandan so'ng UZ Core MedicationRequest gacha toraytiriladi.
+
+[UZ Core ClaimResponse](StructureDefinition-uz-core-claim-response.html) ning sarlavhasi va tavsifi endi resurs nomini ajratmaydi - "UZ Core Claim Response" o'rniga "UZ Core ClaimResponse". Uning kanonik URL i o'zgarmadi.
+
+#### Terminologiya va bog'lanish o'zgarishlari
+
+[Qoplama turi CodeSystem](CodeSystem-coverage-type-cs.html) idagi barcha 13 ta kod mnemonik kodlardan boshqa milliy kod tizimlarida ishlatiladigan `covtp-0001-000NN` shabloniga o'tkazildi: `dtsj-treated-case` endi `covtp-0001-00001`, `moh-budget` - `covtp-0001-00008`, `self-pay` - `covtp-0001-00009` va hokazo, kodlar sanab o'tilgan tartibda. Nomlanishlar va ma'nolar o'zgarmadi. Bu buzuvchi o'zgarish: oldingi versiyada saqlangan qoplama turi kodlari qayta moslashtirilishi kerak.
+
+DMEDPositionToSnomedCM ConceptMap i o'chirildi. Uning moslashtirishlari endi [DMEDPositionToDHPPositionCM](ConceptMap-dmed-position-to-dhp-position-cm.html) ichidagi guruhlardir; u bitta ConceptMap da DMED rol va kasb kodlarini milliy lavozimlarga, SNOMED CT ga, v3 RoleCode va v3 RoleClass ga moslashtiradi. `https://terminology.dhp.uz/fhir/core/ConceptMap/dmed-position-to-snomed-cm` ga murojaat qiluvchi ishlab chiquvchilar `https://terminology.dhp.uz/fhir/core/ConceptMap/dmed-position-to-dhp-position-cm` dan foydalanishi kerak.
+
+[UZ Core PractitionerRole](StructureDefinition-uz-core-practitioner-role.html) dagi `code` ga (required) bog'langan [lavozim va kasblar ValueSet i](ValueSet-position-and-profession-vs.html) endi v3 RoleClass kod tizimini to'liq, v3 RoleCode ning to'rtta kodini (`TPA`, `PAYOR`, `ORG` va `VALIDATOR`) va SNOMED CT ning nomma-nom sanab o'tilgan o'nta tushunchasini ham qabul qiladi, shunda DMEDPositionToDHPPositionCM ning har bir maqsadi bog'lanish bo'yicha yaroqli bo'ladi. SNOMED CT tushunchalari ierarxiya bilan emas, bittalab sanab o'tilgan, shunda required bog'lanish ixtiyoriy SNOMED CT kodlarini qabul qilmaydi. Ular uchun o'zbekcha va ruscha belgilanishlarni yangi [DMED lavozimlarining SNOMED CT supplement i](CodeSystem-dmed-position-sct-cs.html) va [DMED rol sinflari supplement i](CodeSystem-dmed-role-class-cs.html) olib yuradi. Natijada [DMEDRoleCS](CodeSystem-dmed-role-cs.html) 5 tadan 43 ta kodga, [RoleCodeCS](CodeSystem-role-code-cs.html) esa 2 tadan 6 taga o'sdi.
+
+LabServiceCategoriesVS [ServiceRequestCategoriesVS](ValueSet-service-request-categories-vs.html) deb qayta nomlandi va har qanday turdagi xizmat so'rovlarini qamrab olishga kengaytirildi: nurli, diagnostik, jarrohlik, fizioterapevtik, davolash va ambulator muolajalar, konsultatsiya, statsionarga yotqizish, reabilitatsiya, telemeditsina, skrining va donorlik uchun SNOMED CT kategoriyalari qo'shildi, [supplement](CodeSystem-sr-sct-category-cs.html) esa ularning o'zbekcha va ruscha belgilanishlarini olib yuradi. Bu buzuvchi o'zgarish: kanonik URL `https://dhp.uz/fhir/core/ValueSet/lab-service-categories-vs` dan `https://terminology.dhp.uz/fhir/core/ValueSet/service-request-categories-vs` ga o'zgaradi.
+
+ServiceRequestLabCodesVS [ServiceRequestCodesVS](ValueSet-service-request-code-vs.html) bilan almashtirildi; u avvaldan olib yurgan LOINC buyurtma kodlari, milliy laboratoriya panel kodlari va SNOMED CT muolajalariga yangi [skrining va patronaj kodlarini](CodeSystem-screening-code-cs.html) qo'shadi - skrining so'rovnomalari va dasturlari uchun 20 ta kod, ular orasida yurak-qon tomir kasalliklari xavfi, qandli diabet, ko'krak bezi saratoni va bachadon bo'yni saratoni, shuningdek uy sharoitidagi patronaj xizmatlari. Bu buzuvchi o'zgarish: kanonik URL `https://terminology.dhp.uz/fhir/core/ValueSet/service-request-labresearch-code-vs` dan `https://terminology.dhp.uz/fhir/core/ValueSet/service-request-code-vs` ga o'zgaradi.
+
+Yangi qoplama turi kengaytmasi uchun [qoplama turi ValueSet i](ValueSet-coverage-kind-vs.html) qo'shildi; u HL7 kodlarini milliy [davlat sug'urtasi kodi](CodeSystem-state-insurance-cs.html) bilan birlashtiradi, [supplement](CodeSystem-coverage-kind-cs.html) esa HL7 kodlarining o'zbekcha va ruscha tarjimalarini olib yuradi.
+
+[To'lov turlari CodeSystem](CodeSystem-payment-type-cs.html) idagi `paytype-0001-0004` kodining nomlanishi "Davlat tomonidan moliyalashtiriladigan" dan "Davlat tarifi" ga o'zgardi. Kodning o'zi o'zgarmadi, shuning uchun uni saqlaydigan tizimlar o'z yorliqlari hamon mos kelishini tekshirishi lozim.
+
+[So'rov ustuvorligi](CodeSystem-request-priority-cs.html) va [so'rov niyati](CodeSystem-request-intent-cs.html) supplement laridagi `routine` va `order` belgilanishlari bittadan atamagacha qisqartirildi - "Обычный (плановый)" o'rniga "Обычный", "Назначение / Приказ" o'rniga "Назначение" - `urgent`, `asap` va `stat` esa o'zbekcha va ruscha belgilanishlarga ega bo'ldi.
+
+Bolalar onkologik kasalliklarining xalqaro tasnifi, 3-nashri ([ICCC-3](CodeSystem-iccc-3-cs.html)) o'zining 140 ta diagnostik guruhi, kichik guruhi va bo'limi bilan qo'shildi, shuningdek ularni tanlaydigan [ValueSet](ValueSet-iccc-3-vs.html) - reyestr hisobotida bolalar onkologik kasalliklarini morfologiya bo'yicha tasniflash uchun. Hozircha unga hech narsa bog'lanmagan.
+
+Chaqaloq kuzatuvi qayd etilgan hayot kunining lokal kodlari bilan [kuzatuv kuni CodeSystem](CodeSystem-observation-day-cs.html) i qo'shildi - 097-shakldagi ichma-ich joylashgan Composition bo'limlarini farqlash uchun.
 
 #### Hujjatlashtirish
 
 «Shakllar» sahifasi endi [So'rovnomalar](forms.html) deb ataladi - u O'zbekistonda qo'llaniladigan tibbiy shakllar bilan chalkashtirilmasligi uchun. Sahifa manzili o'zgarmadi.
+
+[Ushbu qo'llanmani qanday o'qish kerak](how-to-read.html) sahifasi endi bog'langan ValueSet dagi hech bir kod ma'lumotlarga to'g'ri kelmaganda nima qilish kerakligini har bir bog'lanish kuchi uchun tushuntiradi va JSON misollarini keltiradi: extensible bog'lanish avval milliy ro'yxatdagi kod bilan, so'ngra SNOMED CT kodi bilan qanoatlantiriladi, dastlabki ifoda esa `text` da saqlanadi.
 
 ### Versiya 0.7.0
 
@@ -104,7 +150,7 @@ Identifikator-domeni va EpisodeOfCare qiymatlar to'plamlarining (shuningdek chet
 
 [OrganizationalSpecializationCS](CodeSystem-organizational-specialization-cs.html) dagi inglizcha ko'rsatuv nomlari tuzatildi (izchil katta-kichik harflar; "Children" "Pediatric" ga o'zgartirildi). Kodlar o'zgarmagan.
 
-Milliy DMED tizimidan ma'lumotlarni qabul qilish uchun DMED terminologik ko'priklari qo'shildi: [mamlakat kodlari](ConceptMap-dmed-country-to-dhp-country-cm.html) ISO 3166 ga, [o'lchov birliklari](ConceptMap-dmed-measure-unit-to-dhp-cm.html) UCUM ga moslashtirildi, DMED kasblari esa ham [SNOMED CT](ConceptMap-dmed-position-to-snomed-cm.html) ga, ham [DHP lavozimlari](ConceptMap-dmed-position-to-dhp-position-cm.html) ga moslashtirildi.
+Milliy DMED tizimidan ma'lumotlarni qabul qilish uchun DMED terminologik ko'priklari qo'shildi: [mamlakat kodlari](ConceptMap-dmed-country-to-dhp-country-cm.html) ISO 3166 ga, [o'lchov birliklari](ConceptMap-dmed-measure-unit-to-dhp-cm.html) UCUM ga moslashtirildi, DMED kasblari esa ham SNOMED CT ga, ham [DHP lavozimlari](ConceptMap-dmed-position-to-dhp-position-cm.html) ga moslashtirildi.
 
 [UZ Core Patient](StructureDefinition-uz-core-patient.html) dagi `gender` endi ruscha va o'zbekcha tarjimalari bilan yangi [ma'muriy jins ValueSet](ValueSet-administrative-gender-vs.html) ga (required) bog'langan.
 
@@ -144,7 +190,7 @@ O'zbekistonda ishlatiladigan panellar va analitlar uchun [laboratoriya kuzatuv k
 
 [UZ Core Observation](StructureDefinition-uz-core-observation.html) da [ObservationCodesVS](ValueSet-observation-codes-vs.html) bog‘lanishi required dan **preferred** ga o‘zgartirildi va endi LOINC va lokal kodlar bilan bir qatorda SNOMED CT kodlarini ham o‘z ichiga oladi. Dasturchilar mos joylarda SNOMED CT kodlaridan foydalanishlari mumkin.
 
-[UZ Core HealthcareService](StructureDefinition-uz-core-healthcareservice.html) da `category.coding` va `type.coding` endi slayslarga bo‘linib, [LabServiceCategoriesVS](ValueSet-lab-service-categories-vs.html) ga bog‘langan yangi `labCategory` slaysini qo‘llab-quvvatlaydi (kodlar [LabCategoriesCS](CodeSystem-lab-categories-cs.html) dan). Laboratoriya xizmatlari mavjud `dhpCategory` slaysiga qo‘shimcha ravishda `labCategory` slaysini ham to‘ldirishi kerak.
+[UZ Core HealthcareService](StructureDefinition-uz-core-healthcareservice.html) da `category.coding` va `type.coding` endi slayslarga bo‘linib, [LabServiceCategoriesVS](ValueSet-service-request-categories-vs.html) ga bog‘langan yangi `labCategory` slaysini qo‘llab-quvvatlaydi (kodlar [LabCategoriesCS](CodeSystem-lab-categories-cs.html) dan). Laboratoriya xizmatlari mavjud `dhpCategory` slaysiga qo‘shimcha ravishda `labCategory` slaysini ham to‘ldirishi kerak.
 
 [UZ Core Patient](StructureDefinition-uz-core-patient.html) da [MahallaVS](ValueSet-mahalla-vs.html) (`address.city` uchun ishlatiladi) yangi [Mahalla COATO](CodeSystem-mahalla-coato-cs.html) kod tizimidagi kodlar bilan kengaytirildi va mavjud MahallaCS kodlariga qo‘shimcha ravishda 2 600 dan ortiq COATO asosidagi mahalla identifikatorlarini taqdim etadi.
 

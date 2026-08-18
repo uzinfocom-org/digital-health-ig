@@ -1,16 +1,62 @@
 ### In development
 
+#### New profiles
+
+Added [UZ Core Composition](StructureDefinition-uz-core-composition.html) profile as the foundation for medical documents and digital forms, with terminology for the [document type](ValueSet-composition-type-vs.html) (470 national document, journal and form codes), [category](ValueSet-composition-category-vs.html), [status](ValueSet-composition-status-vs.html), [attestation mode](ValueSet-composition-att-mode-vs.html), and, on each section, the [narrative status](ValueSet-composition-narrative-status-vs.html), [ordering](ValueSet-composition-list-order-vs.html) and [reason a section is empty](ValueSet-composition-list-empty-reason-vs.html).
+
+#### Operations
+
+The operations the platform exposes are now published as OperationDefinitions, so implementers can see their parameters, error behaviour and idempotency without reading the platform documentation. [Person/$populate](OperationDefinition-person-populate.html) and [Patient/$populate](OperationDefinition-patient-populate.html) create a Person or Patient from an identity document - PINFL (`NI`), passport or ID card (`PPN`), or birth certificate (`BCT`) - populating it from the state registries, and return the existing resource rather than a duplicate when one already exists for that PINFL. [Organization/$practitioners](OperationDefinition-organization-practitioners.html), [Practitioner/$organizations](OperationDefinition-practitioner-organizations.html) and [Practitioner/$specializations](OperationDefinition-practitioner-specializations.html) resolve the links between practitioners and the organizations they work at.
+
 #### Profile changes
+
+UZ Core ServiceRequest Laboratory has been renamed to [UZ Core ServiceRequest](StructureDefinition-uz-core-servicerequest.html) and generalised from laboratory orders to any requested service - procedures, diagnostic investigations, consultations, screening and admissions. This is a breaking change: the canonical URL moves from `https://dhp.uz/fhir/core/StructureDefinition/uz-core-servicerequest-laboratory` to `https://dhp.uz/fhir/core/StructureDefinition/uz-core-servicerequest`, and instances must update `meta.profile`. `priority` is now Must Support and bound (required) to [request priority](ValueSet-request-priority-vs.html), and a new [coverage kind extension](StructureDefinition-coverage-kind.html) states how the requested service is financed. The `category` and `code` bindings have changed with it - see the terminology section below.
 
 UZ Core Immunization PlanDefinition has been renamed to [UZ Core PlanDefinition](StructureDefinition-uz-core-plan-definition.html), because it now covers whole blood donation and screening schedules alongside immunization ones. This is a breaking change: the canonical URL moves from `https://dhp.uz/fhir/core/StructureDefinition/uz-core-immunization-plan-definition` to `https://dhp.uz/fhir/core/StructureDefinition/uz-core-plan-definition`, and instances must update `meta.profile`.
 
 The profile now carries a `focus` use context naming the kind of schedule - `33879002` (active immunization), `25179006` (whole blood unit collection) or `360156006` (screening intent) - and a constraint requires exactly one of them, so a schedule of a given kind is found with `GET [base]/PlanDefinition?context-type-value=focus$http://snomed.info/sct|33879002`. The [immunization schedule type](ValueSet-immunization-schedule-type-vs.html) binding on the schedule category context is now required rather than extensible, so that the slicing can be validated.
 
+A [status history extension](StructureDefinition-plan-definition-status-history.html) has been added to [UZ Core PlanDefinition](StructureDefinition-uz-core-plan-definition.html), recording each status the definition has held with the period it applied, the reason it changed and who changed it.
+
+`code` on [UZ Core PractitionerRole](StructureDefinition-uz-core-practitioner-role.html) is now mandatory (1..1). This is a breaking change: a PractitionerRole without a position code no longer validates.
+
+The national identifier slice on [UZ Core Practitioner](StructureDefinition-uz-core-practitioner.html) now fixes `system` to the PINFL system `https://dhp.uz/fhir/core/sid/pid/uz/ni`, instead of `https://dhp.uz/fhir/core/sid/pro/uz/argos`. This matches the `NI` identifier type the slice already carried, and the system used for the same identifier on [UZ Core Patient](StructureDefinition-uz-core-patient.html) and [UZ Core RelatedPerson](StructureDefinition-uz-core-relatedperson.html). This is a breaking change: practitioner identifiers recorded under the ARGOS system must be restated under the PINFL system.
+
+The `passportLocal` and `passportInternational` identifier slices on [UZ Core Patient](StructureDefinition-uz-core-patient.html) are now 0..* rather than 0..1, so a patient may carry more than one of each - for example a current ID card alongside a superseded paper passport, as described on the [identifiers](identifiers.html) page.
+
+`characteristic` on [UZ Core HealthcareService](StructureDefinition-uz-core-healthcareservice.html) is now sliced with a `paymentType` slice bound (required) to [payment type](ValueSet-payment-type-vs.html), so a service can state the funding arrangements it is offered under. The `labCategory` slice on `category.coding` is now bound to [service categories](ValueSet-service-categories-vs.html) rather than to the laboratory-specific value set that has been renamed (see below).
+
+`prescription` on [UZ Core Claim](StructureDefinition-uz-core-claim.html) is now Must Support, for the reimbursement prescription the claim is made against. It references MedicationRequest and will be narrowed to UZ Core MedicationRequest once that profile is published.
+
 The title and description of [UZ Core ClaimResponse](StructureDefinition-uz-core-claim-response.html) no longer split the resource name - "UZ Core Claim Response" is now "UZ Core ClaimResponse". Its canonical URL is unchanged.
+
+#### Terminology and binding changes
+
+All 13 codes in the [coverage type CodeSystem](CodeSystem-coverage-type-cs.html) have been renumbered from mnemonic codes to the `covtp-0001-000NN` pattern used by the other national code systems: `dtsj-treated-case` is now `covtp-0001-00001`, `moh-budget` is `covtp-0001-00008`, `self-pay` is `covtp-0001-00009`, and so on in the order the codes are listed. Displays and meanings are unchanged. This is a breaking change: coverage type codes stored under the previous version must be re-mapped.
+
+The DMEDPositionToSnomedCM ConceptMap has been removed. Its mappings are now groups inside [DMEDPositionToDHPPositionCM](ConceptMap-dmed-position-to-dhp-position-cm.html), which maps DMED role and profession codes to national positions, SNOMED CT, v3 RoleCode and v3 RoleClass in a single map. Implementers referencing `https://terminology.dhp.uz/fhir/core/ConceptMap/dmed-position-to-snomed-cm` must use `https://terminology.dhp.uz/fhir/core/ConceptMap/dmed-position-to-dhp-position-cm` instead.
+
+The [position and profession value set](ValueSet-position-and-profession-vs.html), bound (required) to `code` on [UZ Core PractitionerRole](StructureDefinition-uz-core-practitioner-role.html), now also admits the v3 RoleClass code system in full, four v3 RoleCode codes (`TPA`, `PAYOR`, `ORG` and `VALIDATOR`) and ten named SNOMED CT concepts, so that every target of DMEDPositionToDHPPositionCM is valid against the binding. The SNOMED CT concepts are enumerated one by one rather than included as a hierarchy, so that a required binding cannot accept arbitrary SNOMED CT. Uzbek and Russian designations for them are carried by the new [DMED position SNOMED supplement](CodeSystem-dmed-position-sct-cs.html) and [DMED role class supplement](CodeSystem-dmed-role-class-cs.html). [DMEDRoleCS](CodeSystem-dmed-role-cs.html) grew from 5 to 43 codes and [RoleCodeCS](CodeSystem-role-code-cs.html) from 2 to 6 as a result.
+
+LabServiceCategoriesVS has been renamed to [ServiceRequestCategoriesVS](ValueSet-service-request-categories-vs.html) and widened to cover service requests of any kind, adding SNOMED CT categories for imaging, diagnostic, surgical, physiotherapy, therapeutic and outpatient procedures, consultation, admission, rehabilitation, telemedicine, screening and donation, with a [supplement](CodeSystem-sr-sct-category-cs.html) carrying their Uzbek and Russian designations. This is a breaking change: the canonical URL moves from `https://dhp.uz/fhir/core/ValueSet/lab-service-categories-vs` to `https://terminology.dhp.uz/fhir/core/ValueSet/service-request-categories-vs`.
+
+ServiceRequestLabCodesVS has been replaced by [ServiceRequestCodesVS](ValueSet-service-request-code-vs.html), which adds the new [screening and home visit codes](CodeSystem-screening-code-cs.html) - 20 codes for screening questionnaires and programmes, among them cardiovascular risk, diabetes, breast cancer and cervical cancer, and for patronage (home visit) services - to the LOINC order codes, national laboratory panel codes and SNOMED CT procedures it already carried. This is a breaking change: the canonical URL moves from `https://terminology.dhp.uz/fhir/core/ValueSet/service-request-labresearch-code-vs` to `https://terminology.dhp.uz/fhir/core/ValueSet/service-request-code-vs`.
+
+Added a [coverage kind value set](ValueSet-coverage-kind-vs.html) for the new coverage kind extension, combining the HL7 coverage kind codes with a national [state insurance code](CodeSystem-state-insurance-cs.html), and a [supplement](CodeSystem-coverage-kind-cs.html) carrying Uzbek and Russian translations of the HL7 codes.
+
+The display of `paytype-0001-0004` in the [payment type CodeSystem](CodeSystem-payment-type-cs.html) has changed from "Davlat tomonidan moliyalashtiriladigan" ("State-funded") to "Davlat tarifi" ("State tariff"). The code is unchanged, so systems storing it should check that their own label still matches.
+
+The `routine` and `order` designations in the [request priority](CodeSystem-request-priority-cs.html) and [request intent](CodeSystem-request-intent-cs.html) supplements have been shortened to a single term each - "Обычный" rather than "Обычный (плановый)", "Назначение" rather than "Назначение / Приказ" - and `urgent`, `asap` and `stat` gained Uzbek and Russian designations.
+
+Added the [International Classification of Childhood Cancer, 3rd edition](CodeSystem-iccc-3-cs.html) with its 140 diagnostic groups, subgroups and divisions, and the [value set](ValueSet-iccc-3-vs.html) selecting them, for classifying childhood cancers by morphology in registry reporting. Nothing is bound to it yet.
+
+Added an [observation day CodeSystem](CodeSystem-observation-day-cs.html) with local codes for the day of life on which a newborn observation was recorded, to discriminate the nested Composition sections of Form 097.
 
 #### Documentation
 
 The Forms page is now called [Questionnaires](forms.html), so that it is not read as the medical forms used in Uzbekistan. The page address is unchanged.
+
+The [how to read this guide](how-to-read.html) page now says what to do when no code in a bound value set fits the data, for each binding strength, with worked JSON showing an extensible binding satisfied from the national list and then from SNOMED CT with the original wording kept in `text`.
 
 ### Version 0.7.0
 
@@ -104,7 +150,7 @@ The [nationality CodeSystem](CodeSystem-nationality-cs.html), used by the [natio
 
 Corrected English display names in [OrganizationalSpecializationCS](CodeSystem-organizational-specialization-cs.html) (consistent casing; "Children" changed to "Pediatric"). Codes are unchanged.
 
-Added DMED terminology bridges for ingesting data from the national DMED system: [country codes](ConceptMap-dmed-country-to-dhp-country-cm.html) mapped to ISO 3166, [measurement units](ConceptMap-dmed-measure-unit-to-dhp-cm.html) to UCUM, and DMED professions mapped to both [SNOMED CT](ConceptMap-dmed-position-to-snomed-cm.html) and [DHP positions](ConceptMap-dmed-position-to-dhp-position-cm.html).
+Added DMED terminology bridges for ingesting data from the national DMED system: [country codes](ConceptMap-dmed-country-to-dhp-country-cm.html) mapped to ISO 3166, [measurement units](ConceptMap-dmed-measure-unit-to-dhp-cm.html) to UCUM, and DMED professions mapped to both SNOMED CT and [DHP positions](ConceptMap-dmed-position-to-dhp-position-cm.html).
 
 `gender` on [UZ Core Patient](StructureDefinition-uz-core-patient.html) is now bound (required) to a new [administrative gender ValueSet](ValueSet-administrative-gender-vs.html) with Russian and Uzbek translations.
 
@@ -144,7 +190,7 @@ In the [Patient Satisfaction Questionnaire](Questionnaire-PatientSatisfactionQue
 
 In [UZ Core Observation](StructureDefinition-uz-core-observation.html), [ObservationCodesVS](ValueSet-observation-codes-vs.html) has been changed from required to **preferred** binding and now includes SNOMED CT codes in addition to LOINC and local codes. Implementers may use SNOMED CT codes where appropriate.
 
-In [UZ Core HealthcareService](StructureDefinition-uz-core-healthcareservice.html), `category.coding` and `type.coding` are now sliced to support a new `labCategory` slice bound to [LabServiceCategoriesVS](ValueSet-lab-service-categories-vs.html) (codes from [LabCategoriesCS](CodeSystem-lab-categories-cs.html)). Laboratory healthcare services should populate the `labCategory` slice in addition to the existing `dhpCategory`.
+In [UZ Core HealthcareService](StructureDefinition-uz-core-healthcareservice.html), `category.coding` and `type.coding` are now sliced to support a new `labCategory` slice bound to [LabServiceCategoriesVS](ValueSet-service-request-categories-vs.html) (codes from [LabCategoriesCS](CodeSystem-lab-categories-cs.html)). Laboratory healthcare services should populate the `labCategory` slice in addition to the existing `dhpCategory`.
 
 In [UZ Core Patient](StructureDefinition-uz-core-patient.html), [MahallaVS](ValueSet-mahalla-vs.html) (used for `address.city`) has been expanded to include codes from the new [Mahalla COATO](CodeSystem-mahalla-coato-cs.html) code system, providing 2,600+ COATO-based mahalla identifiers in addition to the existing MahallaCS codes.
 
