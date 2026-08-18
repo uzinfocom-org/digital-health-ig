@@ -48,9 +48,9 @@ Description: "Uzbekistan Core ServiceRequest profile, used to represent a reques
 * extension[paymentType] ^definition = "Indicates the type of payment or financing model used for the requested laboratory service. This extension may be used when a laboratory test is ordered directly by a laboratory medical registrar without a prior physician referral, for example when the patient receives the laboratory service as a paid service."
 * extension[paymentType] ^comment = "For example, this extension can be used to distinguish paid laboratory services from services covered by state programs, insurance, or other financing mechanisms. In the direct-to-laboratory scenario, the value may be set to 'paid'."
 
-* extension contains CoverageKind named coverageKind 0..1 MS
-* extension[coverageKind] ^short = "Kind of financing or coverage source for the laboratory service"
-* extension[coverageKind] ^definition = "Indicates the kind of financing or coverage source for the requested laboratory service, such as state insurance, private insurance, self-pay, or other."
+// * extension contains CoverageKind named coverageKind 0..1 MS
+// * extension[coverageKind] ^short = "Kind of financing or coverage source for the laboratory service"
+// * extension[coverageKind] ^definition = "Indicates the kind of financing or coverage source for the requested laboratory service, such as state insurance, private insurance, self-pay, or other."
 
 * insurance MS
 * insurance only Reference(Coverage)
@@ -85,7 +85,7 @@ Description: "Example ServiceRequest instance for UZCore."
 //* supportingInfo[0] = Reference(UZCoreServiceRequest/uz-servicerequest-supporting-01)
 
 * extension[paymentType].valueCodeableConcept = payment-type-cs#paytype-0001-0001 "Free"
-* extension[coverageKind].valueCodeableConcept = state-insurance-cs#state-insurance "State Insurance"
+// * extension[coverageKind].valueCodeableConcept = state-insurance-cs#state-insurance "State Insurance"
 
 * specimen[0] = Reference(Specimen/example-specimen-blood-cbc)
 * note[0].text = "Please perform CBC urgently."
