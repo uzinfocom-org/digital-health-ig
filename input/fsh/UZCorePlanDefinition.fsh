@@ -5,7 +5,7 @@ Description: "A schedule must declare exactly one focus useContext, so clients c
 
 Profile: UZCorePlanDefinition
 Parent: PlanDefinition
-Id: uz-core-plan-definition
+Id: uz-core-plandefinition
 Title: "UZ Core PlanDefinition"
 Description: "Uzbekistan Core PlanDefinition profile, used to represent national healthcare schedules - immunization, whole blood donation and screening - including planned activities, recommended administration or visit periods, target groups, dose and visit sequences, and related scheduling rules. It supports consistent planning, implementation, and exchange of these schedules within the national digital health ecosystem."
 * ^status = #draft

@@ -25,7 +25,7 @@ Description: "Uzbekistan Core Condition profile, used for documenting a patient'
 **Конвенции для профилей:**
 - **Profile**: `UZCore[ResourceName]` (например, `UZCorePatient`, `UZCoreObservation`)
 - **Parent**: Соответствующий базовый FHIR ресурс
-- **Id**: `uz-core-[resource-name]` в нижнем регистре с дефисами
+- **Id**: `uz-core-[resourcename]` — имя ресурса слитно, в нижнем регистре
 - **Title**: `"UZ Core [ResourceName]"`
 - **Description**: `"Uzbekistan Core [ResourceName] profile, used to [описание назначения]"`
 
@@ -33,21 +33,17 @@ Description: "Uzbekistan Core Condition profile, used for documenting a patient'
 
 Имя FHIR-ресурса пишется ровно так, как его пишет спецификация FHIR — одним словом в CamelCase. Пробел в шаблонах выше отделяет только префикс (`UZ Core`, `Uzbekistan Core`), а не части имени ресурса.
 
-| Ресурс | Profile | Title | Description |
+| Ресурс | Profile | Id | Title |
 |---|---|---|---|
-| `MedicationRequest` | `UZCoreMedicationRequest` | `"UZ Core MedicationRequest"` | `"Uzbekistan Core MedicationRequest profile, used to ..."` |
-| `ClaimResponse` | `UZCoreClaimResponse` | `"UZ Core ClaimResponse"` | `"Uzbekistan Core ClaimResponse profile, used to ..."` |
-| `PractitionerRole` | `UZCorePractitionerRole` | `"UZ Core PractitionerRole"` | `"Uzbekistan Core PractitionerRole profile, used to ..."` |
+| `MedicationRequest` | `UZCoreMedicationRequest` | `uz-core-medicationrequest` | `"UZ Core MedicationRequest"` |
+| `PlanDefinition` | `UZCorePlanDefinition` | `uz-core-plandefinition` | `"UZ Core PlanDefinition"` |
+| `PractitionerRole` | `UZCorePractitionerRole` | `uz-core-practitionerrole` | `"UZ Core PractitionerRole"` |
+
+`Description` следует за `Title`: `"Uzbekistan Core MedicationRequest profile, used to ..."`.
 
 **Неправильно:** `Title: "UZ Core Medication Request"`, `Description: "Uzbekistan Core Claim Response profile, ..."` — имя ресурса разделено на два слова.
 
-В `Id`, наоборот, слова разделяются дефисами: `uz-core-medication-request`, `uz-core-claim-response`, `uz-core-practitioner-role`.
-
-**Существующие исключения — не исправлять:** пять профилей опубликованы с `Id`, в котором слова слиты:
-
-`uz-core-auditevent`, `uz-core-episodeofcare`, `uz-core-healthcareservice`, `uz-core-relatedperson`, `uz-core-servicerequest`
-
-Их канонические URL уже опубликованы, поэтому переименование сломает ссылки у разработчиков и адреса страниц IG. Оставьте их как есть; правило с дефисами действует для новых профилей.
+**Существующие исключения — не исправлять:** часть профилей опубликована с `Id`, в котором слова разделены дефисами — например `uz-core-claim-response`, `uz-core-practitioner-role`, `uz-core-medication-dispense`, `uz-core-adverse-event`, `uz-core-questionnaire-response`. Их канонические URL уже опубликованы, поэтому переименование сломает ссылки у разработчиков и адреса страниц IG. Оставьте их как есть; правило слитного написания действует для новых профилей.
 
 ### 2.3 Именование файлов
 

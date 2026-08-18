@@ -34,7 +34,7 @@ PlanDefinition в основном создаётся один раз и счи�
 {
   "resourceType": "PlanDefinition",
   "meta": {
-    "profile": ["https://dhp.uz/fhir/core/StructureDefinition/uz-core-plan-definition"]
+    "profile": ["https://dhp.uz/fhir/core/StructureDefinition/uz-core-plandefinition"]
   },
   "url": "https://terminology.dhp.uz/fhir/core/PlanDefinition/example-uz-core-immunization-plan-definition",
   "name": "ExampleImmunizationPlanDefinition",
@@ -71,7 +71,7 @@ PlanDefinition в основном создаётся один раз и счи�
 ```json
 {
   "resourceType": "PlanDefinition",
-  "meta": { "profile": [ "https://dhp.uz/fhir/core/StructureDefinition/uz-core-plan-definition" ] },
+  "meta": { "profile": [ "https://dhp.uz/fhir/core/StructureDefinition/uz-core-plandefinition" ] },
   "url": "https://terminology.dhp.uz/fhir/core/PlanDefinition/example-uz-core-immunization-plan-definition",
   "name": "ExampleImmunizationPlanDefinition",
   "title": "Example Vaccination Follow-up Plan",
