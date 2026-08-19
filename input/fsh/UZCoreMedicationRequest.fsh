@@ -45,7 +45,7 @@ Description: "Uzbekistan Core profile for MedicationRequest, used to order medic
 * subject ^short = "Patient for whom the prescription is written"
 
 * informationSource MS
-* informationSource only Reference(UZCorePatient or UZCorePractitioner or UZCorePractitionerRole or RelatedPerson or UZCoreOrganization)
+* informationSource only Reference(UZCorePatient or UZCorePractitioner or UZCorePractitionerRole or UZCoreRelatedPerson or UZCoreOrganization)
 
 * extension contains Trustee named trustee 0..* MS
 * extension[trustee].valueReference only Reference(UZCoreRelatedPerson or UZCorePractitionerRole)
