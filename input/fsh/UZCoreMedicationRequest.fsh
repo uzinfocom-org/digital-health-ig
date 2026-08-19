@@ -63,7 +63,7 @@ Description: "Uzbekistan Core profile for MedicationRequest, used to order medic
 * requester ^short = "Healthcare provider or organization issuing the prescription"
 
 * reason MS
-* reason from ConditionCodeVS (required)
+* reason from ConditionCodeVS (preferred)
 * reason only CodeableReference(UZCoreCondition or UZCoreObservation)
 
 * effectiveDosePeriod MS
