@@ -47,7 +47,7 @@ The [laboratory panel code system](CodeSystem-lab-pan-cs.html) now declares `kin
 
 `participant.actor` on [UZ Core Condition](StructureDefinition-uz-core-condition.html) may now reference [UZ Core Organization](StructureDefinition-uz-core-organization.html).
 
-The UZ Core ActivityDefinition profile has been renamed to [UZ Core VaccinationActivityDefinition] and its canonical URL changed from `.../uz-core-activity-definition` to `.../uz-core-vaccination-activity-definition`. Implementers referencing the old canonical must update it.
+The UZ Core ActivityDefinition profile has been renamed to (UZ Core VaccinationActivityDefinition) and its canonical URL changed from `.../uz-core-activity-definition` to `.../uz-core-vaccination-activity-definition`. Implementers referencing the old canonical must update it.
 
 On [UZ Core Location](StructureDefinition-uz-core-location.html) the tax identifier slice has been removed, and `name` is optional again (0..1), reverting the requirement introduced in 0.6.0.
 

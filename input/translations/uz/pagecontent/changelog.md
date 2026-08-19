@@ -47,7 +47,7 @@ Manba laboratoriya tizimlari ishlatadigan birlik satrlarini saqlovchi [laborator
 
 [UZ Core Condition](StructureDefinition-uz-core-condition.html) dagi `participant.actor` endi [UZ Core Organization](StructureDefinition-uz-core-organization.html) ga havola qila oladi.
 
-UZ Core VaccinationActivityDefinition profili [UZ Core ActivityDefinition] deb nomlandi va uning kanonik URL'i `.../uz-core-vaccination-activity-definition` dan `.../uz-core-activity-definition` ga o'zgardi. Eski kanonik URL'ga havola qiluvchi dasturchilar uni yangilashlari kerak.
+UZ Core ActivityDefinition profili UZ Core VaccinationActivityDefinition deb nomlandi va uning kanonik URL'i .../uz-core-activity-definition dan .../uz-core-vaccination-activity-definition ga o'zgardi. Eski kanonik URL'ga havola qiluvchi dasturchilar uni yangilashlari kerak.
 
 [UZ Core Location](StructureDefinition-uz-core-location.html) da soliq identifikatori slaysi olib tashlandi va `name` yana ixtiyoriy (0..1) bo'ldi - 0.6.0 da kiritilgan talab bekor qilindi.
 
