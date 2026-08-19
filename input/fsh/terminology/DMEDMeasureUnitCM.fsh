@@ -34,7 +34,7 @@ Description: "ConceptMap for mapping DMED  measure unit codes to DHP  measure un
 
 * group.element[+].code = #320
 * group.element[=].display = "rezerford"
-* group.element[=].target[+].code = #"Rd"
+* group.element[=].target[+].code = #"MBq"
 * group.element[=].target[=].relationship = #equivalent
 
 * group.element[+].code = #721
@@ -44,7 +44,7 @@ Description: "ConceptMap for mapping DMED  measure unit codes to DHP  measure un
 
 * group.element[+].code = #286
 * group.element[=].display = "kilokaloriya"
-* group.element[=].target[+].code = #"kCal"
+* group.element[=].target[+].code = #"kcal"
 * group.element[=].target[=].relationship = #equivalent
 
 * group.element[+].code = #310

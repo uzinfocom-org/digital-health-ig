@@ -26,7 +26,7 @@ Description: "Uzbekistan Core profile for MedicationRequest, used to order medic
 * statusReason MS
 * statusReason from MedicationRequestStatusReasonVS (required)
 * statusReason ^short = "Reason for prescription status in DMED"
-* statusReason ^definition = "Reason for the current prescription status, entered manually by physicians or pharmacists in DMED"
+* statusReason ^definition = "Reason for the current prescription status, entered by physicians or pharmacists in DMED"
 
 * statusChanged MS
 
@@ -106,14 +106,12 @@ SHOULD NOT BE USED:
 * dosageInstruction.timing.repeat.duration MS
 
 * dosageInstruction.timing.repeat.durationUnit MS
-* dosageInstruction.timing.repeat.durationUnit from UnitsOfTimeVS (required)
 
 * dosageInstruction.timing.repeat.frequency MS
 
 * dosageInstruction.timing.repeat.period MS
 
 * dosageInstruction.timing.repeat.periodUnit MS
-* dosageInstruction.timing.repeat.periodUnit from UnitsOfTimeVS (required)
 
 * dosageInstruction.timing.repeat.timeOfDay MS
 
