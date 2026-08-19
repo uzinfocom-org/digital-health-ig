@@ -35,3 +35,21 @@ Description: "Encounter discharge disposition home codes with English and Russia
   * ^designation[+].language = #ru
   * ^designation[=].value = "Переведён(а) в дом милосердия"
 
+// cancer discharge disposition home codesystems
+* #cancer-0001-0001 "Tirik"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Жив"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Alive"
+
+* #cancer-0001-0002 "Tashxis tasdiqlanmadi"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Диагноз не подтвердился"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Diagnosis not confirmed"
+
+* #cancer-0001-0003 "Kuzatuv muddati tugaganligi sababli hisobdan chiqarilgan"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Снят с учета в связи с истечением сроков наблюдения"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Removed from the registry due to completion of the follow-up period"
