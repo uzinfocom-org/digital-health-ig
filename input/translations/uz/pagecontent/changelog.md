@@ -1,5 +1,9 @@
 ### Ishlab chiqish jarayonida
 
+(Hozircha o'zgarishlar yo'q)
+
+### Versiya 0.8.0
+
 #### Qo'shildi
 
 Tibbiy hujjatlar va raqamli shakllar uchun asos sifatida [UZ Core Composition](StructureDefinition-uz-core-composition.html) profili qo'shildi - [hujjat turi](ValueSet-composition-type-vs.html) (470 ta milliy hujjat, jurnal va blank kodi), [kategoriya](ValueSet-composition-category-vs.html), [holat](ValueSet-composition-status-vs.html) va [tasdiqlash usuli](ValueSet-composition-att-mode-vs.html) terminologiyasi bilan, har bir bo'lim uchun esa [matn holati](ValueSet-composition-narrative-status-vs.html), [tartiblash](ValueSet-composition-list-order-vs.html) va [bo'lim bo'sh qolish sababi](ValueSet-composition-list-empty-reason-vs.html) terminologiyasi bilan.

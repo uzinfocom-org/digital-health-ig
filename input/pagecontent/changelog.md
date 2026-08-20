@@ -1,5 +1,9 @@
 ### In development
 
+(No changes yet)
+
+### Version 0.8.0
+
 #### Added
 
 Added [UZ Core Composition](StructureDefinition-uz-core-composition.html) profile as the foundation for medical documents and digital forms, with terminology for the [document type](ValueSet-composition-type-vs.html) (470 national document, journal and form codes), [category](ValueSet-composition-category-vs.html), [status](ValueSet-composition-status-vs.html), [attestation mode](ValueSet-composition-att-mode-vs.html), and, on each section, the [narrative status](ValueSet-composition-narrative-status-vs.html), [ordering](ValueSet-composition-list-order-vs.html) and [reason a section is empty](ValueSet-composition-list-empty-reason-vs.html).

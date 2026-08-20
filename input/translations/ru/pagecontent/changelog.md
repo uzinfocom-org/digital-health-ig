@@ -1,5 +1,9 @@
 ### В разработке
 
+(Пока без изменений)
+
+### Версия 0.8.0
+
 #### Добавлено
 
 Добавлен профиль [UZ Core Composition](StructureDefinition-uz-core-composition.html) как основа для медицинских документов и цифровых форм, с терминологией [типа документа](ValueSet-composition-type-vs.html) (470 национальных кодов документов, журналов и бланков), [категории](ValueSet-composition-category-vs.html), [статуса](ValueSet-composition-status-vs.html), [режима заверения](ValueSet-composition-att-mode-vs.html), а для каждого раздела - [статуса повествования](ValueSet-composition-narrative-status-vs.html), [порядка сортировки](ValueSet-composition-list-order-vs.html) и [причины, по которой раздел пуст](ValueSet-composition-list-empty-reason-vs.html).
