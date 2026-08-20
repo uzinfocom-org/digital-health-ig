@@ -17,7 +17,6 @@ Description: "Uzbekistan Core MedicationDispense profile, used to record the pro
 * subject MS
 * performer MS
 * performer.actor MS
-// add a typed reference to MedicationRequest when that is merged
 * authorizingPrescription MS
 * quantity MS
 * quantity.value MS
@@ -65,18 +64,17 @@ Usage: #example
 * receiver = Reference(example-david)
 
 
-// Outpatient dispense that fulfils the UZCoreMedicationRequest example (ibuprofen 400 mg, twice daily for five days -> 10 tablets).
+// Outpatient dispense that fulfils the UZCoreMedicationRequest example (paracetamol 500 mg, twice daily for five days -> 10 tablets).
 Instance: example-medication-dispense-outpatient
 InstanceOf: UZCoreMedicationDispense
-Title: "Example UZ Core MedicationDispense - Outpatient ibuprofen"
-Description: "Example of an outpatient dispense fulfilling an ibuprofen prescription: 10 ibuprofen 400 mg tablets handed to the patient"
+Title: "Example UZ Core MedicationDispense - Outpatient paracetamol"
+Description: "Example of an outpatient dispense fulfilling a paracetamol prescription: 10 paracetamol 500 mg tablets handed to the patient"
 Usage: #example
 * identifier[0].value = "MD-2026-00002"
 * status = #completed
 * category = $medicationdispense-admin-location#outpatient
-* medication.concept.text = "Ibuprofen 400 mg tablet"
+* medication.concept.text = "Paracetamol 500 mg tablet"
 * subject = Reference(example-salim)
-// Authorising prescription is the UZCoreMedicationRequest example; uncomment once MedicationRequest is merged.
 * authorizingPrescription[0] = Reference(example-medication-request)
 * performer[0].actor = Reference(example-practitioner)
 * performer[1].actor = Reference(tashkent-diseases-hospital)

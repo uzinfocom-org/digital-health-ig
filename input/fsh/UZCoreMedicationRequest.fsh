@@ -124,7 +124,6 @@ SHOULD NOT BE USED:
 
 * dosageInstruction.timing.code MS
 * dosageInstruction.timing.code from TimingAbbreviationVS (preferred)
-* dosageInstruction.timing.code ^short = "C | BID | TID | QID | AM | PM | QD | QOD | +"
 
 * dosageInstruction.route MS
 * dosageInstruction.route from RouteCodeVS (extensible)
@@ -204,10 +203,7 @@ Usage: #example
       * timeOfDay[1] = "16:00:00"
       * dayOfWeek[0] = #mon
     * code.text = "Two times a day at institution specified time"
-  * route.coding[0]
-    * system = "https://terminology.dhp.uz/fhir/core/CodeSystem/route-codes-cs" 
-    * code = #pharm-0001-0062 
-    * display = "External"
+  * route = $sct#6064005 "Topical route"
   * doseAndRate[0].doseQuantity
     * value = 500
     * unit = "mg"

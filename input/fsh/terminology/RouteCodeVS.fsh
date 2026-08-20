@@ -7,10 +7,10 @@ Description: "Route of administration codes with Uzbek and Russian translations,
 * ^extension[0].url = $valueset-supplement
 * ^extension[=].valueCanonical = Canonical(RouteCodeCS)
 
-// 1. Standart SNOMED CT kodlari (Supplement orqali uz/ru tarjimalari ulanadi)
+// SNOMED CT routes, with uz/ru translations supplied by RouteCodeCS
 * include codes from system $sct where concept is-a #284009009
 
-// 2. SNOMED da yo'q bo'lgan lokal kodlar tizimi
+// Local codes for the routes SNOMED CT does not cover
 * include codes from system route-codes-cs
 
 // * include codes from system $sct
