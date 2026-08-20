@@ -1,5 +1,5 @@
 {
-  "date": "2026-08-12T07:08:56+00:00",
+  "date": "2026-08-20T06:43:25+00:00",
   "fhirVersion": "5.0.0",
   "format": [
     "application/fhir+json",
@@ -24,6 +24,790 @@
       ],
       "mode": "server",
       "resource": [
+        {
+          "conditionalCreate": false,
+          "conditionalDelete": "not-supported",
+          "conditionalPatch": false,
+          "conditionalRead": "not-supported",
+          "conditionalUpdate": false,
+          "interaction": [
+            {
+              "code": "create"
+            },
+            {
+              "code": "delete"
+            },
+            {
+              "code": "history-instance"
+            },
+            {
+              "code": "read"
+            },
+            {
+              "code": "search-type"
+            },
+            {
+              "code": "update"
+            },
+            {
+              "code": "vread"
+            }
+          ],
+          "operation": [
+            {
+              "definition": "https://dhp.uz/fhir/core/OperationDefinition/patient-populate",
+              "name": "populate"
+            }
+          ],
+          "searchParam": [
+            {
+              "documentation": "expression: ",
+              "name": "_has",
+              "type": "special"
+            },
+            {
+              "documentation": "expression: ",
+              "name": "_include",
+              "type": "special"
+            },
+            {
+              "documentation": "expression: ",
+              "name": "_include:iterate",
+              "type": "special"
+            },
+            {
+              "documentation": "expression: ",
+              "name": "_revinclude",
+              "type": "special"
+            },
+            {
+              "documentation": "expression: ",
+              "name": "_revinclude:iterate",
+              "type": "special"
+            },
+            {
+              "documentation": "expression: Patient.active\nsubtype: boolean",
+              "name": "active",
+              "type": "token"
+            },
+            {
+              "documentation": "expression: Patient.address",
+              "name": "address",
+              "type": "string"
+            },
+            {
+              "documentation": "expression: Patient.address.city",
+              "name": "address-city",
+              "type": "string"
+            },
+            {
+              "documentation": "expression: Patient.address.country",
+              "name": "address-country",
+              "type": "string"
+            },
+            {
+              "documentation": "expression: Patient.address.postalCode",
+              "name": "address-postalcode",
+              "type": "string"
+            },
+            {
+              "documentation": "expression: Patient.address.state",
+              "name": "address-state",
+              "type": "string"
+            },
+            {
+              "documentation": "expression: Patient.address.use\nsubtype: code",
+              "name": "address-use",
+              "type": "token"
+            },
+            {
+              "documentation": "expression: Patient.birthDate\nsubtype: date",
+              "name": "birthdate",
+              "type": "date"
+            },
+            {
+              "documentation": "expression: Patient.communication.language\nsubtype: CodeableConcept",
+              "name": "language",
+              "type": "token"
+            },
+            {
+              "documentation": "expression: Patient.deceased != false\nsubtype: boolean",
+              "name": "deceased",
+              "type": "token"
+            },
+            {
+              "documentation": "expression: Patient.deceasedDateTime\nsubtype: dateTime",
+              "name": "death-date",
+              "type": "date"
+            },
+            {
+              "documentation": "expression: Patient.gender\nsubtype: code",
+              "name": "gender",
+              "type": "token"
+            },
+            {
+              "documentation": "expression: Patient.generalPractitioner",
+              "name": "general-practitioner",
+              "type": "reference"
+            },
+            {
+              "documentation": "expression: Patient.identifier\nsubtype: Identifier",
+              "name": "identifier",
+              "type": "token"
+            },
+            {
+              "documentation": "expression: Patient.link.other",
+              "name": "link",
+              "type": "reference"
+            },
+            {
+              "documentation": "expression: Patient.managingOrganization",
+              "name": "organization",
+              "type": "reference"
+            },
+            {
+              "documentation": "expression: Patient.name",
+              "name": "name",
+              "type": "string"
+            },
+            {
+              "documentation": "expression: Patient.name",
+              "name": "phonetic",
+              "type": "string"
+            },
+            {
+              "documentation": "expression: Patient.name.family",
+              "name": "family",
+              "type": "string"
+            },
+            {
+              "documentation": "expression: Patient.name.given",
+              "name": "given",
+              "type": "string"
+            },
+            {
+              "documentation": "expression: Patient.telecom\nsubtype: ContactPoint",
+              "name": "telecom",
+              "type": "token"
+            },
+            {
+              "documentation": "expression: Patient.telecom.where(system='email')\nsubtype: string",
+              "name": "email",
+              "type": "token"
+            },
+            {
+              "documentation": "expression: Patient.telecom.where(system='phone')\nsubtype: string",
+              "name": "phone",
+              "type": "token"
+            },
+            {
+              "documentation": "expression: Resource.id\nsubtype: id",
+              "name": "_id",
+              "type": "token"
+            },
+            {
+              "documentation": "expression: Resource.meta.lastUpdated\nsubtype: dateTime",
+              "name": "_lastUpdated",
+              "type": "date"
+            },
+            {
+              "documentation": "expression: Resource.meta.profile",
+              "name": "_profile",
+              "type": "reference"
+            },
+            {
+              "documentation": "expression: Resource.meta.security\nsubtype: Coding",
+              "name": "_security",
+              "type": "token"
+            },
+            {
+              "documentation": "expression: Resource.meta.tag\nsubtype: Coding",
+              "name": "_tag",
+              "type": "token"
+            }
+          ],
+          "supportedProfile": [
+            "https://dhp.uz/fhir/core/StructureDefinition/uz-core-patient"
+          ],
+          "type": "Patient"
+        },
+        {
+          "conditionalCreate": true,
+          "conditionalDelete": "not-supported",
+          "conditionalPatch": false,
+          "conditionalRead": "not-supported",
+          "conditionalUpdate": false,
+          "interaction": [
+            {
+              "code": "create"
+            },
+            {
+              "code": "delete"
+            },
+            {
+              "code": "history-instance"
+            },
+            {
+              "code": "read"
+            },
+            {
+              "code": "search-type"
+            },
+            {
+              "code": "update"
+            },
+            {
+              "code": "vread"
+            }
+          ],
+          "operation": [
+            {
+              "definition": "https://dhp.uz/fhir/core/OperationDefinition/organization-practitioners",
+              "name": "practitioners"
+            }
+          ],
+          "searchParam": [
+            {
+              "documentation": "expression: ",
+              "name": "_has",
+              "type": "special"
+            },
+            {
+              "documentation": "expression: ",
+              "name": "_include",
+              "type": "special"
+            },
+            {
+              "documentation": "expression: ",
+              "name": "_include:iterate",
+              "type": "special"
+            },
+            {
+              "documentation": "expression: ",
+              "name": "_revinclude",
+              "type": "special"
+            },
+            {
+              "documentation": "expression: ",
+              "name": "_revinclude:iterate",
+              "type": "special"
+            },
+            {
+              "documentation": "expression: ",
+              "name": "address-postalcode",
+              "type": "string"
+            },
+            {
+              "documentation": "expression: ",
+              "name": "partof",
+              "type": "reference"
+            },
+            {
+              "documentation": "expression: ",
+              "name": "phonetic",
+              "type": "string"
+            },
+            {
+              "documentation": "expression: Organization.active\nsubtype: boolean",
+              "name": "active",
+              "type": "token"
+            },
+            {
+              "documentation": "expression: Organization.contact.address.city",
+              "name": "address-city",
+              "type": "string"
+            },
+            {
+              "documentation": "expression: Organization.contact.address.city |\n\t\t\tOrganization.contact.address.country |\n\t\t\tOrganization.contact.address.postalCode |\n\t\t\tOrganization.contact.address.state |\n\t\t\tOrganization.contact.address.line |\n\t\t\tOrganization.contact.address.district |\n\t\t\tOrganization.contact.address.text",
+              "name": "address",
+              "type": "string"
+            },
+            {
+              "documentation": "expression: Organization.contact.address.country",
+              "name": "address-country",
+              "type": "string"
+            },
+            {
+              "documentation": "expression: Organization.contact.address.postalCode",
+              "name": "address-postalCode",
+              "type": "string"
+            },
+            {
+              "documentation": "expression: Organization.contact.address.state",
+              "name": "address-state",
+              "type": "string"
+            },
+            {
+              "documentation": "expression: Organization.contact.address.use\nsubtype: code",
+              "name": "address-use",
+              "type": "token"
+            },
+            {
+              "documentation": "expression: Organization.endpoint",
+              "name": "endpoint",
+              "type": "reference"
+            },
+            {
+              "documentation": "expression: Organization.identifier | Organization.qualification.identifier\nsubtype: Identifier",
+              "name": "identifier",
+              "type": "token"
+            },
+            {
+              "documentation": "expression: Organization.name | Organization.alias",
+              "name": "name",
+              "type": "string"
+            },
+            {
+              "documentation": "expression: Organization.partOf",
+              "name": "partOf",
+              "type": "reference"
+            },
+            {
+              "documentation": "expression: Organization.type\nsubtype: CodeableConcept",
+              "name": "type",
+              "type": "token"
+            },
+            {
+              "documentation": "expression: Resource.id\nsubtype: id",
+              "name": "_id",
+              "type": "token"
+            },
+            {
+              "documentation": "expression: Resource.meta.lastUpdated\nsubtype: dateTime",
+              "name": "_lastUpdated",
+              "type": "date"
+            },
+            {
+              "documentation": "expression: Resource.meta.profile",
+              "name": "_profile",
+              "type": "reference"
+            },
+            {
+              "documentation": "expression: Resource.meta.security\nsubtype: Coding",
+              "name": "_security",
+              "type": "token"
+            },
+            {
+              "documentation": "expression: Resource.meta.tag\nsubtype: Coding",
+              "name": "_tag",
+              "type": "token"
+            }
+          ],
+          "supportedProfile": [
+            "https://dhp.uz/fhir/core/StructureDefinition/uz-core-organization"
+          ],
+          "type": "Organization"
+        },
+        {
+          "conditionalCreate": true,
+          "conditionalDelete": "not-supported",
+          "conditionalPatch": false,
+          "conditionalRead": "not-supported",
+          "conditionalUpdate": false,
+          "interaction": [
+            {
+              "code": "create"
+            },
+            {
+              "code": "delete"
+            },
+            {
+              "code": "history-instance"
+            },
+            {
+              "code": "read"
+            },
+            {
+              "code": "search-type"
+            },
+            {
+              "code": "update"
+            },
+            {
+              "code": "vread"
+            }
+          ],
+          "operation": [
+            {
+              "definition": "https://dhp.uz/fhir/core/OperationDefinition/practitioner-organizations",
+              "name": "organizations"
+            },
+            {
+              "definition": "https://dhp.uz/fhir/core/OperationDefinition/practitioner-specializations",
+              "name": "specializations"
+            }
+          ],
+          "searchParam": [
+            {
+              "documentation": "expression: ",
+              "name": "_has",
+              "type": "special"
+            },
+            {
+              "documentation": "expression: ",
+              "name": "_include",
+              "type": "special"
+            },
+            {
+              "documentation": "expression: ",
+              "name": "_include:iterate",
+              "type": "special"
+            },
+            {
+              "documentation": "expression: ",
+              "name": "_revinclude",
+              "type": "special"
+            },
+            {
+              "documentation": "expression: ",
+              "name": "_revinclude:iterate",
+              "type": "special"
+            },
+            {
+              "documentation": "expression: ",
+              "name": "address-postalcode",
+              "type": "string"
+            },
+            {
+              "documentation": "expression: ",
+              "name": "phonetic",
+              "type": "string"
+            },
+            {
+              "documentation": "expression: ",
+              "name": "qualification-code",
+              "type": "token"
+            },
+            {
+              "documentation": "expression: (Practitioner.deceased.ofType(dateTime))\nsubtype: dateTime",
+              "name": "death-date",
+              "type": "date"
+            },
+            {
+              "documentation": "expression: Practitioner.active\nsubtype: boolean",
+              "name": "active",
+              "type": "token"
+            },
+            {
+              "documentation": "expression: Practitioner.address.city",
+              "name": "address-city",
+              "type": "string"
+            },
+            {
+              "documentation": "expression: Practitioner.address.city |\n\t\t\tPractitioner.address.country |\n\t\t\tPractitioner.address.postalCode |\n\t\t\tPractitioner.address.state |\n\t\t\tPractitioner.address.line |\n\t\t\tPractitioner.address.district |\n\t\t\tPractitioner.address.text",
+              "name": "address",
+              "type": "string"
+            },
+            {
+              "documentation": "expression: Practitioner.address.country",
+              "name": "address-country",
+              "type": "string"
+            },
+            {
+              "documentation": "expression: Practitioner.address.postalCode",
+              "name": "address-postalCode",
+              "type": "string"
+            },
+            {
+              "documentation": "expression: Practitioner.address.state",
+              "name": "address-state",
+              "type": "string"
+            },
+            {
+              "documentation": "expression: Practitioner.address.use\nsubtype: code",
+              "name": "address-use",
+              "type": "token"
+            },
+            {
+              "documentation": "expression: Practitioner.communication.language\nsubtype: CodeableConcept",
+              "name": "communication",
+              "type": "token"
+            },
+            {
+              "documentation": "expression: Practitioner.deceased.exists() and Practitioner.deceased != false\nsubtype: boolean",
+              "name": "deceased",
+              "type": "token"
+            },
+            {
+              "documentation": "expression: Practitioner.gender\nsubtype: code",
+              "name": "gender",
+              "type": "token"
+            },
+            {
+              "documentation": "expression: Practitioner.identifier | Practitioner.qualification.identifier\nsubtype: Identifier",
+              "name": "identifier",
+              "type": "token"
+            },
+            {
+              "documentation": "expression: Practitioner.name.family",
+              "name": "family",
+              "type": "string"
+            },
+            {
+              "documentation": "expression: Practitioner.name.given",
+              "name": "given",
+              "type": "string"
+            },
+            {
+              "documentation": "expression: Practitioner.name.given |\n\t\t\tPractitioner.name.family |\n\t\t\tPractitioner.name.prefix |\n\t\t\tPractitioner.name.suffix |\n\t\t\tPractitioner.name.text",
+              "name": "name",
+              "type": "string"
+            },
+            {
+              "documentation": "expression: Practitioner.qualification.period\nsubtype: period",
+              "name": "qualification-period",
+              "type": "date"
+            },
+            {
+              "documentation": "expression: Practitioner.telecom\nsubtype: ContactPoint",
+              "name": "telecom",
+              "type": "token"
+            },
+            {
+              "documentation": "expression: Practitioner.telecom.where(system='email')\nsubtype: ContactPoint",
+              "name": "email",
+              "type": "token"
+            },
+            {
+              "documentation": "expression: Practitioner.telecom.where(system='phone')\nsubtype: ContactPoint",
+              "name": "phone",
+              "type": "token"
+            },
+            {
+              "documentation": "expression: Resource.id\nsubtype: id",
+              "name": "_id",
+              "type": "token"
+            },
+            {
+              "documentation": "expression: Resource.meta.lastUpdated\nsubtype: dateTime",
+              "name": "_lastUpdated",
+              "type": "date"
+            },
+            {
+              "documentation": "expression: Resource.meta.profile",
+              "name": "_profile",
+              "type": "reference"
+            },
+            {
+              "documentation": "expression: Resource.meta.security\nsubtype: Coding",
+              "name": "_security",
+              "type": "token"
+            },
+            {
+              "documentation": "expression: Resource.meta.tag\nsubtype: Coding",
+              "name": "_tag",
+              "type": "token"
+            }
+          ],
+          "supportedProfile": [
+            "https://dhp.uz/fhir/core/StructureDefinition/uz-core-practitioner"
+          ],
+          "type": "Practitioner"
+        },
+        {
+          "conditionalCreate": false,
+          "conditionalDelete": "not-supported",
+          "conditionalPatch": false,
+          "conditionalRead": "not-supported",
+          "conditionalUpdate": false,
+          "interaction": [
+            {
+              "code": "create"
+            },
+            {
+              "code": "delete"
+            },
+            {
+              "code": "history-instance"
+            },
+            {
+              "code": "read"
+            },
+            {
+              "code": "search-type"
+            },
+            {
+              "code": "update"
+            },
+            {
+              "code": "vread"
+            }
+          ],
+          "operation": [
+            {
+              "definition": "https://dhp.uz/fhir/core/OperationDefinition/person-populate",
+              "name": "populate"
+            }
+          ],
+          "searchParam": [
+            {
+              "documentation": "expression: ",
+              "name": "_has",
+              "type": "special"
+            },
+            {
+              "documentation": "expression: ",
+              "name": "_include",
+              "type": "special"
+            },
+            {
+              "documentation": "expression: ",
+              "name": "_include:iterate",
+              "type": "special"
+            },
+            {
+              "documentation": "expression: ",
+              "name": "_revinclude",
+              "type": "special"
+            },
+            {
+              "documentation": "expression: ",
+              "name": "_revinclude:iterate",
+              "type": "special"
+            },
+            {
+              "documentation": "expression: ",
+              "name": "patient",
+              "type": "reference"
+            },
+            {
+              "documentation": "expression: ",
+              "name": "phonetic",
+              "type": "string"
+            },
+            {
+              "documentation": "expression: ",
+              "name": "practitioner",
+              "type": "reference"
+            },
+            {
+              "documentation": "expression: ",
+              "name": "relatedperson",
+              "type": "reference"
+            },
+            {
+              "documentation": "expression: (Person.deceased.ofType(dateTime))\nsubtype: dateTime",
+              "name": "death-date",
+              "type": "date"
+            },
+            {
+              "documentation": "expression: Person.address.city",
+              "name": "address-city",
+              "type": "string"
+            },
+            {
+              "documentation": "expression: Person.address.city |\n\t\t\tPerson.address.country |\n\t\t\tPerson.address.postalCode |\n\t\t\tPerson.address.state |\n\t\t\tPerson.address.line |\n\t\t\tPerson.address.district |\n\t\t\tPerson.address.text",
+              "name": "address",
+              "type": "string"
+            },
+            {
+              "documentation": "expression: Person.address.country",
+              "name": "address-country",
+              "type": "string"
+            },
+            {
+              "documentation": "expression: Person.address.postalCode",
+              "name": "address-postalcode",
+              "type": "string"
+            },
+            {
+              "documentation": "expression: Person.address.state",
+              "name": "address-state",
+              "type": "string"
+            },
+            {
+              "documentation": "expression: Person.address.use\nsubtype: code",
+              "name": "address-use",
+              "type": "token"
+            },
+            {
+              "documentation": "expression: Person.birthDate\nsubtype: date",
+              "name": "birthdate",
+              "type": "date"
+            },
+            {
+              "documentation": "expression: Person.deceased.exists() and Person.deceased != false\nsubtype: boolean",
+              "name": "deceased",
+              "type": "token"
+            },
+            {
+              "documentation": "expression: Person.gender\nsubtype: code",
+              "name": "gender",
+              "type": "token"
+            },
+            {
+              "documentation": "expression: Person.identifier\nsubtype: Identifier",
+              "name": "identifier",
+              "type": "token"
+            },
+            {
+              "documentation": "expression: Person.link.target",
+              "name": "link",
+              "type": "reference"
+            },
+            {
+              "documentation": "expression: Person.managingOrganization",
+              "name": "organization",
+              "type": "reference"
+            },
+            {
+              "documentation": "expression: Person.name.family",
+              "name": "family",
+              "type": "string"
+            },
+            {
+              "documentation": "expression: Person.name.given",
+              "name": "given",
+              "type": "string"
+            },
+            {
+              "documentation": "expression: Person.name.given |\n\t\t\tPerson.name.family |\n\t\t\tPerson.name.prefix |\n\t\t\tPerson.name.suffix |\n\t\t\tPerson.name.text",
+              "name": "name",
+              "type": "string"
+            },
+            {
+              "documentation": "expression: Person.telecom\nsubtype: ContactPoint",
+              "name": "telecom",
+              "type": "token"
+            },
+            {
+              "documentation": "expression: Person.telecom.where(system='email')\nsubtype: ContactPoint",
+              "name": "email",
+              "type": "token"
+            },
+            {
+              "documentation": "expression: Person.telecom.where(system='phone')\nsubtype: ContactPoint",
+              "name": "phone",
+              "type": "token"
+            },
+            {
+              "documentation": "expression: Resource.id\nsubtype: id",
+              "name": "_id",
+              "type": "token"
+            },
+            {
+              "documentation": "expression: Resource.meta.lastUpdated\nsubtype: dateTime",
+              "name": "_lastUpdated",
+              "type": "date"
+            },
+            {
+              "documentation": "expression: Resource.meta.profile",
+              "name": "_profile",
+              "type": "reference"
+            },
+            {
+              "documentation": "expression: Resource.meta.security\nsubtype: Coding",
+              "name": "_security",
+              "type": "token"
+            },
+            {
+              "documentation": "expression: Resource.meta.tag\nsubtype: Coding",
+              "name": "_tag",
+              "type": "token"
+            }
+          ],
+          "type": "Person"
+        },
         {
           "conditionalCreate": false,
           "conditionalDelete": "not-supported",
@@ -1176,207 +1960,6 @@
           "type": "Encounter"
         },
         {
-          "conditionalCreate": false,
-          "conditionalDelete": "not-supported",
-          "conditionalPatch": false,
-          "conditionalRead": "not-supported",
-          "conditionalUpdate": false,
-          "interaction": [
-            {
-              "code": "create"
-            },
-            {
-              "code": "delete"
-            },
-            {
-              "code": "history-instance"
-            },
-            {
-              "code": "read"
-            },
-            {
-              "code": "search-type"
-            },
-            {
-              "code": "update"
-            },
-            {
-              "code": "vread"
-            }
-          ],
-          "searchParam": [
-            {
-              "documentation": "expression: ",
-              "name": "_has",
-              "type": "special"
-            },
-            {
-              "documentation": "expression: ",
-              "name": "_include",
-              "type": "special"
-            },
-            {
-              "documentation": "expression: ",
-              "name": "_include:iterate",
-              "type": "special"
-            },
-            {
-              "documentation": "expression: ",
-              "name": "_revinclude",
-              "type": "special"
-            },
-            {
-              "documentation": "expression: ",
-              "name": "_revinclude:iterate",
-              "type": "special"
-            },
-            {
-              "documentation": "expression: Patient.active\nsubtype: boolean",
-              "name": "active",
-              "type": "token"
-            },
-            {
-              "documentation": "expression: Patient.address",
-              "name": "address",
-              "type": "string"
-            },
-            {
-              "documentation": "expression: Patient.address.city",
-              "name": "address-city",
-              "type": "string"
-            },
-            {
-              "documentation": "expression: Patient.address.country",
-              "name": "address-country",
-              "type": "string"
-            },
-            {
-              "documentation": "expression: Patient.address.postalCode",
-              "name": "address-postalcode",
-              "type": "string"
-            },
-            {
-              "documentation": "expression: Patient.address.state",
-              "name": "address-state",
-              "type": "string"
-            },
-            {
-              "documentation": "expression: Patient.address.use\nsubtype: code",
-              "name": "address-use",
-              "type": "token"
-            },
-            {
-              "documentation": "expression: Patient.birthDate\nsubtype: date",
-              "name": "birthdate",
-              "type": "date"
-            },
-            {
-              "documentation": "expression: Patient.communication.language\nsubtype: CodeableConcept",
-              "name": "language",
-              "type": "token"
-            },
-            {
-              "documentation": "expression: Patient.deceased != false\nsubtype: boolean",
-              "name": "deceased",
-              "type": "token"
-            },
-            {
-              "documentation": "expression: Patient.deceasedDateTime\nsubtype: dateTime",
-              "name": "death-date",
-              "type": "date"
-            },
-            {
-              "documentation": "expression: Patient.gender\nsubtype: code",
-              "name": "gender",
-              "type": "token"
-            },
-            {
-              "documentation": "expression: Patient.generalPractitioner",
-              "name": "general-practitioner",
-              "type": "reference"
-            },
-            {
-              "documentation": "expression: Patient.identifier\nsubtype: Identifier",
-              "name": "identifier",
-              "type": "token"
-            },
-            {
-              "documentation": "expression: Patient.link.other",
-              "name": "link",
-              "type": "reference"
-            },
-            {
-              "documentation": "expression: Patient.managingOrganization",
-              "name": "organization",
-              "type": "reference"
-            },
-            {
-              "documentation": "expression: Patient.name",
-              "name": "name",
-              "type": "string"
-            },
-            {
-              "documentation": "expression: Patient.name",
-              "name": "phonetic",
-              "type": "string"
-            },
-            {
-              "documentation": "expression: Patient.name.family",
-              "name": "family",
-              "type": "string"
-            },
-            {
-              "documentation": "expression: Patient.name.given",
-              "name": "given",
-              "type": "string"
-            },
-            {
-              "documentation": "expression: Patient.telecom\nsubtype: ContactPoint",
-              "name": "telecom",
-              "type": "token"
-            },
-            {
-              "documentation": "expression: Patient.telecom.where(system='email')\nsubtype: string",
-              "name": "email",
-              "type": "token"
-            },
-            {
-              "documentation": "expression: Patient.telecom.where(system='phone')\nsubtype: string",
-              "name": "phone",
-              "type": "token"
-            },
-            {
-              "documentation": "expression: Resource.id\nsubtype: id",
-              "name": "_id",
-              "type": "token"
-            },
-            {
-              "documentation": "expression: Resource.meta.lastUpdated\nsubtype: dateTime",
-              "name": "_lastUpdated",
-              "type": "date"
-            },
-            {
-              "documentation": "expression: Resource.meta.profile",
-              "name": "_profile",
-              "type": "reference"
-            },
-            {
-              "documentation": "expression: Resource.meta.security\nsubtype: Coding",
-              "name": "_security",
-              "type": "token"
-            },
-            {
-              "documentation": "expression: Resource.meta.tag\nsubtype: Coding",
-              "name": "_tag",
-              "type": "token"
-            }
-          ],
-          "supportedProfile": [
-            "https://dhp.uz/fhir/core/StructureDefinition/uz-core-patient"
-          ],
-          "type": "Patient"
-        },
-        {
           "conditionalCreate": true,
           "conditionalDelete": "not-supported",
           "conditionalPatch": false,
@@ -1551,363 +2134,6 @@
             "https://dhp.uz/fhir/core/StructureDefinition/uz-core-location"
           ],
           "type": "Location"
-        },
-        {
-          "conditionalCreate": true,
-          "conditionalDelete": "not-supported",
-          "conditionalPatch": false,
-          "conditionalRead": "not-supported",
-          "conditionalUpdate": false,
-          "interaction": [
-            {
-              "code": "create"
-            },
-            {
-              "code": "delete"
-            },
-            {
-              "code": "history-instance"
-            },
-            {
-              "code": "read"
-            },
-            {
-              "code": "search-type"
-            },
-            {
-              "code": "update"
-            },
-            {
-              "code": "vread"
-            }
-          ],
-          "searchParam": [
-            {
-              "documentation": "expression: ",
-              "name": "_has",
-              "type": "special"
-            },
-            {
-              "documentation": "expression: ",
-              "name": "_include",
-              "type": "special"
-            },
-            {
-              "documentation": "expression: ",
-              "name": "_include:iterate",
-              "type": "special"
-            },
-            {
-              "documentation": "expression: ",
-              "name": "_revinclude",
-              "type": "special"
-            },
-            {
-              "documentation": "expression: ",
-              "name": "_revinclude:iterate",
-              "type": "special"
-            },
-            {
-              "documentation": "expression: ",
-              "name": "address-postalcode",
-              "type": "string"
-            },
-            {
-              "documentation": "expression: ",
-              "name": "partof",
-              "type": "reference"
-            },
-            {
-              "documentation": "expression: ",
-              "name": "phonetic",
-              "type": "string"
-            },
-            {
-              "documentation": "expression: Organization.active\nsubtype: boolean",
-              "name": "active",
-              "type": "token"
-            },
-            {
-              "documentation": "expression: Organization.contact.address.city",
-              "name": "address-city",
-              "type": "string"
-            },
-            {
-              "documentation": "expression: Organization.contact.address.city |\n\t\t\tOrganization.contact.address.country |\n\t\t\tOrganization.contact.address.postalCode |\n\t\t\tOrganization.contact.address.state |\n\t\t\tOrganization.contact.address.line |\n\t\t\tOrganization.contact.address.district |\n\t\t\tOrganization.contact.address.text",
-              "name": "address",
-              "type": "string"
-            },
-            {
-              "documentation": "expression: Organization.contact.address.country",
-              "name": "address-country",
-              "type": "string"
-            },
-            {
-              "documentation": "expression: Organization.contact.address.postalCode",
-              "name": "address-postalCode",
-              "type": "string"
-            },
-            {
-              "documentation": "expression: Organization.contact.address.state",
-              "name": "address-state",
-              "type": "string"
-            },
-            {
-              "documentation": "expression: Organization.contact.address.use\nsubtype: code",
-              "name": "address-use",
-              "type": "token"
-            },
-            {
-              "documentation": "expression: Organization.endpoint",
-              "name": "endpoint",
-              "type": "reference"
-            },
-            {
-              "documentation": "expression: Organization.identifier | Organization.qualification.identifier\nsubtype: Identifier",
-              "name": "identifier",
-              "type": "token"
-            },
-            {
-              "documentation": "expression: Organization.name | Organization.alias",
-              "name": "name",
-              "type": "string"
-            },
-            {
-              "documentation": "expression: Organization.partOf",
-              "name": "partOf",
-              "type": "reference"
-            },
-            {
-              "documentation": "expression: Organization.type\nsubtype: CodeableConcept",
-              "name": "type",
-              "type": "token"
-            },
-            {
-              "documentation": "expression: Resource.id\nsubtype: id",
-              "name": "_id",
-              "type": "token"
-            },
-            {
-              "documentation": "expression: Resource.meta.lastUpdated\nsubtype: dateTime",
-              "name": "_lastUpdated",
-              "type": "date"
-            },
-            {
-              "documentation": "expression: Resource.meta.profile",
-              "name": "_profile",
-              "type": "reference"
-            },
-            {
-              "documentation": "expression: Resource.meta.security\nsubtype: Coding",
-              "name": "_security",
-              "type": "token"
-            },
-            {
-              "documentation": "expression: Resource.meta.tag\nsubtype: Coding",
-              "name": "_tag",
-              "type": "token"
-            }
-          ],
-          "supportedProfile": [
-            "https://dhp.uz/fhir/core/StructureDefinition/uz-core-organization"
-          ],
-          "type": "Organization"
-        },
-        {
-          "conditionalCreate": true,
-          "conditionalDelete": "not-supported",
-          "conditionalPatch": false,
-          "conditionalRead": "not-supported",
-          "conditionalUpdate": false,
-          "interaction": [
-            {
-              "code": "create"
-            },
-            {
-              "code": "delete"
-            },
-            {
-              "code": "history-instance"
-            },
-            {
-              "code": "read"
-            },
-            {
-              "code": "search-type"
-            },
-            {
-              "code": "update"
-            },
-            {
-              "code": "vread"
-            }
-          ],
-          "searchParam": [
-            {
-              "documentation": "expression: ",
-              "name": "_has",
-              "type": "special"
-            },
-            {
-              "documentation": "expression: ",
-              "name": "_include",
-              "type": "special"
-            },
-            {
-              "documentation": "expression: ",
-              "name": "_include:iterate",
-              "type": "special"
-            },
-            {
-              "documentation": "expression: ",
-              "name": "_revinclude",
-              "type": "special"
-            },
-            {
-              "documentation": "expression: ",
-              "name": "_revinclude:iterate",
-              "type": "special"
-            },
-            {
-              "documentation": "expression: ",
-              "name": "address-postalcode",
-              "type": "string"
-            },
-            {
-              "documentation": "expression: ",
-              "name": "phonetic",
-              "type": "string"
-            },
-            {
-              "documentation": "expression: ",
-              "name": "qualification-code",
-              "type": "token"
-            },
-            {
-              "documentation": "expression: (Practitioner.deceased.ofType(dateTime))\nsubtype: dateTime",
-              "name": "death-date",
-              "type": "date"
-            },
-            {
-              "documentation": "expression: Practitioner.active\nsubtype: boolean",
-              "name": "active",
-              "type": "token"
-            },
-            {
-              "documentation": "expression: Practitioner.address.city",
-              "name": "address-city",
-              "type": "string"
-            },
-            {
-              "documentation": "expression: Practitioner.address.city |\n\t\t\tPractitioner.address.country |\n\t\t\tPractitioner.address.postalCode |\n\t\t\tPractitioner.address.state |\n\t\t\tPractitioner.address.line |\n\t\t\tPractitioner.address.district |\n\t\t\tPractitioner.address.text",
-              "name": "address",
-              "type": "string"
-            },
-            {
-              "documentation": "expression: Practitioner.address.country",
-              "name": "address-country",
-              "type": "string"
-            },
-            {
-              "documentation": "expression: Practitioner.address.postalCode",
-              "name": "address-postalCode",
-              "type": "string"
-            },
-            {
-              "documentation": "expression: Practitioner.address.state",
-              "name": "address-state",
-              "type": "string"
-            },
-            {
-              "documentation": "expression: Practitioner.address.use\nsubtype: code",
-              "name": "address-use",
-              "type": "token"
-            },
-            {
-              "documentation": "expression: Practitioner.communication.language\nsubtype: CodeableConcept",
-              "name": "communication",
-              "type": "token"
-            },
-            {
-              "documentation": "expression: Practitioner.deceased.exists() and Practitioner.deceased != false\nsubtype: boolean",
-              "name": "deceased",
-              "type": "token"
-            },
-            {
-              "documentation": "expression: Practitioner.gender\nsubtype: code",
-              "name": "gender",
-              "type": "token"
-            },
-            {
-              "documentation": "expression: Practitioner.identifier | Practitioner.qualification.identifier\nsubtype: Identifier",
-              "name": "identifier",
-              "type": "token"
-            },
-            {
-              "documentation": "expression: Practitioner.name.family",
-              "name": "family",
-              "type": "string"
-            },
-            {
-              "documentation": "expression: Practitioner.name.given",
-              "name": "given",
-              "type": "string"
-            },
-            {
-              "documentation": "expression: Practitioner.name.given |\n\t\t\tPractitioner.name.family |\n\t\t\tPractitioner.name.prefix |\n\t\t\tPractitioner.name.suffix |\n\t\t\tPractitioner.name.text",
-              "name": "name",
-              "type": "string"
-            },
-            {
-              "documentation": "expression: Practitioner.qualification.period\nsubtype: period",
-              "name": "qualification-period",
-              "type": "date"
-            },
-            {
-              "documentation": "expression: Practitioner.telecom\nsubtype: ContactPoint",
-              "name": "telecom",
-              "type": "token"
-            },
-            {
-              "documentation": "expression: Practitioner.telecom.where(system='email')\nsubtype: ContactPoint",
-              "name": "email",
-              "type": "token"
-            },
-            {
-              "documentation": "expression: Practitioner.telecom.where(system='phone')\nsubtype: ContactPoint",
-              "name": "phone",
-              "type": "token"
-            },
-            {
-              "documentation": "expression: Resource.id\nsubtype: id",
-              "name": "_id",
-              "type": "token"
-            },
-            {
-              "documentation": "expression: Resource.meta.lastUpdated\nsubtype: dateTime",
-              "name": "_lastUpdated",
-              "type": "date"
-            },
-            {
-              "documentation": "expression: Resource.meta.profile",
-              "name": "_profile",
-              "type": "reference"
-            },
-            {
-              "documentation": "expression: Resource.meta.security\nsubtype: Coding",
-              "name": "_security",
-              "type": "token"
-            },
-            {
-              "documentation": "expression: Resource.meta.tag\nsubtype: Coding",
-              "name": "_tag",
-              "type": "token"
-            }
-          ],
-          "supportedProfile": [
-            "https://dhp.uz/fhir/core/StructureDefinition/uz-core-practitioner"
-          ],
-          "type": "Practitioner"
         },
         {
           "conditionalCreate": true,
@@ -2541,204 +2767,6 @@
             }
           ],
           "type": "Medication"
-        },
-        {
-          "conditionalCreate": false,
-          "conditionalDelete": "not-supported",
-          "conditionalPatch": false,
-          "conditionalRead": "not-supported",
-          "conditionalUpdate": false,
-          "interaction": [
-            {
-              "code": "create"
-            },
-            {
-              "code": "delete"
-            },
-            {
-              "code": "history-instance"
-            },
-            {
-              "code": "read"
-            },
-            {
-              "code": "search-type"
-            },
-            {
-              "code": "update"
-            },
-            {
-              "code": "vread"
-            }
-          ],
-          "searchParam": [
-            {
-              "documentation": "expression: ",
-              "name": "_has",
-              "type": "special"
-            },
-            {
-              "documentation": "expression: ",
-              "name": "_include",
-              "type": "special"
-            },
-            {
-              "documentation": "expression: ",
-              "name": "_include:iterate",
-              "type": "special"
-            },
-            {
-              "documentation": "expression: ",
-              "name": "_revinclude",
-              "type": "special"
-            },
-            {
-              "documentation": "expression: ",
-              "name": "_revinclude:iterate",
-              "type": "special"
-            },
-            {
-              "documentation": "expression: ",
-              "name": "patient",
-              "type": "reference"
-            },
-            {
-              "documentation": "expression: ",
-              "name": "phonetic",
-              "type": "string"
-            },
-            {
-              "documentation": "expression: ",
-              "name": "practitioner",
-              "type": "reference"
-            },
-            {
-              "documentation": "expression: ",
-              "name": "relatedperson",
-              "type": "reference"
-            },
-            {
-              "documentation": "expression: (Person.deceased.ofType(dateTime))\nsubtype: dateTime",
-              "name": "death-date",
-              "type": "date"
-            },
-            {
-              "documentation": "expression: Person.address.city",
-              "name": "address-city",
-              "type": "string"
-            },
-            {
-              "documentation": "expression: Person.address.city |\n\t\t\tPerson.address.country |\n\t\t\tPerson.address.postalCode |\n\t\t\tPerson.address.state |\n\t\t\tPerson.address.line |\n\t\t\tPerson.address.district |\n\t\t\tPerson.address.text",
-              "name": "address",
-              "type": "string"
-            },
-            {
-              "documentation": "expression: Person.address.country",
-              "name": "address-country",
-              "type": "string"
-            },
-            {
-              "documentation": "expression: Person.address.postalCode",
-              "name": "address-postalcode",
-              "type": "string"
-            },
-            {
-              "documentation": "expression: Person.address.state",
-              "name": "address-state",
-              "type": "string"
-            },
-            {
-              "documentation": "expression: Person.address.use\nsubtype: code",
-              "name": "address-use",
-              "type": "token"
-            },
-            {
-              "documentation": "expression: Person.birthDate\nsubtype: date",
-              "name": "birthdate",
-              "type": "date"
-            },
-            {
-              "documentation": "expression: Person.deceased.exists() and Person.deceased != false\nsubtype: boolean",
-              "name": "deceased",
-              "type": "token"
-            },
-            {
-              "documentation": "expression: Person.gender\nsubtype: code",
-              "name": "gender",
-              "type": "token"
-            },
-            {
-              "documentation": "expression: Person.identifier\nsubtype: Identifier",
-              "name": "identifier",
-              "type": "token"
-            },
-            {
-              "documentation": "expression: Person.link.target",
-              "name": "link",
-              "type": "reference"
-            },
-            {
-              "documentation": "expression: Person.managingOrganization",
-              "name": "organization",
-              "type": "reference"
-            },
-            {
-              "documentation": "expression: Person.name.family",
-              "name": "family",
-              "type": "string"
-            },
-            {
-              "documentation": "expression: Person.name.given",
-              "name": "given",
-              "type": "string"
-            },
-            {
-              "documentation": "expression: Person.name.given |\n\t\t\tPerson.name.family |\n\t\t\tPerson.name.prefix |\n\t\t\tPerson.name.suffix |\n\t\t\tPerson.name.text",
-              "name": "name",
-              "type": "string"
-            },
-            {
-              "documentation": "expression: Person.telecom\nsubtype: ContactPoint",
-              "name": "telecom",
-              "type": "token"
-            },
-            {
-              "documentation": "expression: Person.telecom.where(system='email')\nsubtype: ContactPoint",
-              "name": "email",
-              "type": "token"
-            },
-            {
-              "documentation": "expression: Person.telecom.where(system='phone')\nsubtype: ContactPoint",
-              "name": "phone",
-              "type": "token"
-            },
-            {
-              "documentation": "expression: Resource.id\nsubtype: id",
-              "name": "_id",
-              "type": "token"
-            },
-            {
-              "documentation": "expression: Resource.meta.lastUpdated\nsubtype: dateTime",
-              "name": "_lastUpdated",
-              "type": "date"
-            },
-            {
-              "documentation": "expression: Resource.meta.profile",
-              "name": "_profile",
-              "type": "reference"
-            },
-            {
-              "documentation": "expression: Resource.meta.security\nsubtype: Coding",
-              "name": "_security",
-              "type": "token"
-            },
-            {
-              "documentation": "expression: Resource.meta.tag\nsubtype: Coding",
-              "name": "_tag",
-              "type": "token"
-            }
-          ],
-          "type": "Person"
         },
         {
           "conditionalCreate": false,
