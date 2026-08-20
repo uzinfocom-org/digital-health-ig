@@ -259,14 +259,14 @@ In practice, several of the components described above exchange the same underly
     <div class="arch-canvas" id="arch-canvas">
       <svg id="arch-svg" width="100%" height="100%"></svg>
     </div>
-    <aside class="arch-info" id="arch-info">
+    <div class="arch-info" id="arch-info">
       <div id="arch-info-body">
         <p class="arch-info-hint">Hover or tab to a resource, component, or legend item to see what it connects to.</p>
         <div class="arch-stat-row"><span>Components shown</span><span class="arch-stat-n" id="arch-stat-components">–</span></div>
         <div class="arch-stat-row"><span>Resources</span><span class="arch-stat-n" id="arch-stat-resources">–</span></div>
         <div class="arch-stat-row"><span>Relationships</span><span class="arch-stat-n" id="arch-stat-relationships">–</span></div>
       </div>
-    </aside>
+    </div>
   </div>
 </div>
 <script src="architecture-diagram.js"></script>
