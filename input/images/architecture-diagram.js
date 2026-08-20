@@ -311,6 +311,7 @@
 
   var canvas = document.getElementById('arch-canvas');
   var tx = 0, ty = 0, scale = 1, dragging = false, dragMoved = false, lastX = 0, lastY = 0;
+  var userAdjusted = false;
 
   function applyTransform() { viewport.setAttribute('transform', 'translate(' + tx + ',' + ty + ') scale(' + scale + ')'); }
 
@@ -332,7 +333,7 @@
   canvas.addEventListener('pointermove', function (ev) {
     if (!dragging) return;
     var dx = ev.clientX - lastX, dy = ev.clientY - lastY;
-    if (Math.abs(dx) > 2 || Math.abs(dy) > 2) dragMoved = true;
+    if (Math.abs(dx) > 2 || Math.abs(dy) > 2) { dragMoved = true; userAdjusted = true; }
     tx += dx; ty += dy; lastX = ev.clientX; lastY = ev.clientY;
     applyTransform();
   });
@@ -349,11 +350,22 @@
     var newScale = Math.max(0.25, Math.min(2.5, scale * factor));
     var contentX = (mx - tx) / scale, contentY = (my - ty) / scale;
     tx = mx - contentX * newScale; ty = my - contentY * newScale; scale = newScale;
+    userAdjusted = true;
     applyTransform();
   }, { passive: false });
 
   var resetBtn = document.getElementById('arch-reset');
-  if (resetBtn) resetBtn.addEventListener('click', function () { pinnedId = null; setActive(null); fitView(); });
-  window.addEventListener('resize', fitView);
+  if (resetBtn) resetBtn.addEventListener('click', function () { pinnedId = null; userAdjusted = false; setActive(null); fitView(); });
+
+  // The page's own layout (e.g. the floating table of contents) can still be
+  // settling after this script runs, changing the canvas's width out from
+  // under the initial fitView(). Re-fit on any size change until the reader
+  // has taken control (panned/zoomed), rather than relying on 'resize' alone.
+  function refitIfUntouched() { if (!userAdjusted) fitView(); }
+  if (window.ResizeObserver) {
+    new ResizeObserver(refitIfUntouched).observe(canvas);
+  } else {
+    window.addEventListener('resize', refitIfUntouched);
+  }
   fitView();
 })();
