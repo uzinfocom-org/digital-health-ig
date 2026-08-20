@@ -392,8 +392,6 @@
     applyTransform();
   }, { passive: false });
 
-  var resetBtn = document.getElementById('arch-reset');
-  if (resetBtn) resetBtn.addEventListener('click', function () { pinnedId = null; setActive(null); fitView(); });
   window.addEventListener('resize', fitView);
   fitView();
 })();

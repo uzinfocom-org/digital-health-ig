@@ -25,19 +25,6 @@ Each component below is described on its own; in practice several of them exchan
   .arch-legend .swatch-box { width: 12px; height: 12px; background: var(--blueprint-soft); border: 1px solid var(--line); }
   .arch-legend .swatch-box.pale { background: var(--pencil-soft); }
 
-  .arch-toolbar { display: flex; justify-content: flex-end; margin-bottom: 0.5rem; }
-  .arch-btn {
-    background: var(--paper-raised);
-    border: 1px solid var(--line);
-    color: var(--blueprint);
-    font-family: var(--mono-font);
-    font-size: 0.72rem;
-    letter-spacing: 0.03em;
-    padding: 0.35rem 0.7rem;
-    cursor: pointer;
-  }
-  .arch-btn:hover { background: var(--blueprint-soft); }
-
   .arch-wrap { display: flex; gap: 1rem; align-items: flex-start; flex-wrap: wrap; }
 
   .arch-canvas {
@@ -108,9 +95,6 @@ Each component below is described on its own; in practice several of them exchan
   <div class="arch-legend">
     <span data-legend="profiled" tabindex="0" role="button"><span class="swatch-box"></span> profiled in this IG</span>
     <span data-legend="unprofiled" tabindex="0" role="button"><span class="swatch-box pale"></span> named, not yet profiled</span>
-  </div>
-  <div class="arch-toolbar">
-    <button type="button" id="arch-reset" class="arch-btn">Reset view</button>
   </div>
   <div class="arch-wrap">
     <div class="arch-canvas" id="arch-canvas">
