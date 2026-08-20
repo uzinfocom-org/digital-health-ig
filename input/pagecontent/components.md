@@ -1,4 +1,4 @@
-### How the components relate
+### Cross-component resource architecture
 
 Each component below is described on its own; in practice several of them exchange the same underlying FHIR resources. This diagram drops to the resource level: which resources each component owns, and which of those resources connect to another component. Plain lines show two components integrating broadly; arrows show a specific resource flowing from one component into another. Drag to pan, scroll to zoom, and hover or tab to a resource, component, or legend item to see its connections.
 
