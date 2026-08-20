@@ -1,3 +1,5 @@
+Ushbu komponentlar bir-biri bilan qanday bog'langanini sahifa oxiridagi [komponentlararo resurs arxitekturasi](#komponentlararo-resurs-arxitekturasi) diagrammasida ko'rishingiz mumkin.
+
 ### Tez tibbiy yordam
 \< bu xizmat bo'yicha qisqacha tavsif keyinchalik qo'shiladi \\>
 
@@ -172,3 +174,117 @@ Komponent quyidagilarni ta'minlaydi:
 - vaksinatsiyaning to'liq hayotiy siklini qo'llab-quvvatlashni, jumladan tayinlash, rejalashtirish, o'tkazish va kuzatishni;
 - tibbiy axborot tizimlari va milliy vaksinatsiya dasturlari bilan integratsiyani;
 - aholining immunizatsiya darajasini monitoring qilish uchun analitika va hisobotlarni shakllantirishni.
+
+### Komponentlararo resurs arxitekturasi
+
+Amalda yuqorida tavsiflangan bir nechta komponent bir xil FHIR resurslari bilan almashadi. Ushbu diagramma resurs darajasiga tushadi: har bir komponent qaysi resurslarga egalik qiladi va ulardan qaysilari boshqa komponent bilan bog'lanadi. Oddiy chiziqlar ikki komponentning keng integratsiyasini, strelkalar esa muayyan resursning bir komponentdan boshqasiga o'tishini ko'rsatadi. Ko'chirish uchun sudrang, masshtabni o'zgartirish uchun aylantiring, aloqalarni ko'rish uchun resurs, komponent yoki legenda elementiga sichqonchani olib boring yoki tab bilan o'ting.
+
+<br clear="all"/>
+
+<style>
+  .arch-diagram {
+    --blueprint: #2255AA;
+    --blueprint-soft: #dce7f6;
+    --pencil-soft: #e6e6e6;
+    --ink: #1b232a;
+    --ink-soft: #5c6b74;
+    --paper: #ffffff;
+    --paper-raised: #f4f7f9;
+    --line: #c9d2d6;
+    --grid: rgba(27, 35, 42, 0.05);
+    --mono-font: ui-monospace, "SFMono-Regular", Menlo, Consolas, "Liberation Mono", monospace;
+    margin: 1.5rem 0;
+  }
+  .arch-legend { display: flex; flex-wrap: wrap; gap: 1.1rem; margin: 0 0 0.7rem; font-size: 0.78rem; color: var(--ink-soft); }
+  .arch-legend span { display: inline-flex; align-items: center; gap: 0.35rem; }
+  .arch-legend span[data-legend] { cursor: pointer; padding: 2px 4px; margin: -2px -4px; border-radius: 3px; }
+  .arch-legend span[data-legend]:hover, .arch-legend span[data-legend]:focus-visible { background: var(--paper-raised); }
+  .arch-legend .swatch-box { width: 12px; height: 12px; background: var(--blueprint-soft); border: 1px solid var(--line); }
+  .arch-legend .swatch-box.pale { background: var(--pencil-soft); }
+
+  .arch-wrap { display: flex; gap: 1rem; align-items: flex-start; flex-wrap: wrap; }
+
+  .arch-canvas {
+    flex: 1 1 480px;
+    height: 640px;
+    position: relative;
+    overflow: hidden;
+    border: 1px solid var(--line);
+    cursor: grab;
+    touch-action: none;
+    background-color: var(--paper);
+    background-image:
+      linear-gradient(var(--grid) 1px, transparent 1px),
+      linear-gradient(90deg, var(--grid) 1px, transparent 1px);
+    background-size: 24px 24px;
+  }
+  .arch-canvas.dragging { cursor: grabbing; }
+  .arch-canvas svg { display: block; }
+
+  .arch-info {
+    flex: 0 0 240px;
+    min-width: 220px;
+    border: 1px solid var(--line);
+    background: var(--paper-raised);
+    padding: 0.9rem 1rem;
+    font-size: 0.82rem;
+    max-height: 640px;
+    overflow-y: auto;
+  }
+  .arch-info-hint { margin: 0 0 0.8rem; color: var(--ink-soft); font-size: 0.82rem; }
+  .arch-stat-row {
+    display: flex; justify-content: space-between; gap: 0.6rem;
+    padding: 0.28rem 0; border-bottom: 1px solid var(--line);
+    color: var(--ink-soft); font-size: 0.78rem;
+  }
+  .arch-stat-row:last-child { border-bottom: none; }
+  .arch-stat-n { color: var(--ink); font-weight: 600; font-family: var(--mono-font); }
+
+  .arch-info-title {
+    font-family: var(--mono-font);
+    font-weight: 600; font-size: 0.92rem; color: var(--ink); margin: 0 0 0.2rem;
+  }
+  .arch-info-sub { font-size: 0.76rem; color: var(--ink-soft); margin: 0 0 0.8rem; }
+  .arch-rel-list { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 0.55rem; }
+  .arch-rel-item { border-left: 2px solid var(--blueprint); padding-left: 0.6rem; }
+  .arch-rel-head { font-size: 0.8rem; color: var(--ink); font-weight: 600; }
+  .arch-rel-desc { font-size: 0.76rem; color: var(--ink-soft); margin: 0.15rem 0 0; }
+
+  .arch-node { cursor: pointer; }
+  .arch-node rect { transition: opacity 0.15s ease; }
+  .arch-node text { pointer-events: none; }
+  .arch-edge { transition: opacity 0.15s ease; }
+  .arch-node.dim, .arch-edge.dim { opacity: 0.15; }
+  .arch-node.active { filter: drop-shadow(0 0 3px var(--blueprint)); }
+  #arch-arrow path { fill: var(--blueprint); }
+
+  @media (prefers-reduced-motion: reduce) {
+    .arch-node rect, .arch-edge { transition: none; }
+  }
+
+  @media (max-width: 720px) {
+    .arch-canvas { height: 420px; }
+    .arch-info { flex-basis: 100%; }
+  }
+</style>
+
+<div class="arch-diagram">
+  <div class="arch-legend">
+    <span data-legend="profiled" tabindex="0" role="button"><span class="swatch-box"></span> ushbu qo'llanmada profillangan</span>
+    <span data-legend="unprofiled" tabindex="0" role="button"><span class="swatch-box pale"></span> nomlangan, lekin hali profillanmagan</span>
+  </div>
+  <div class="arch-wrap">
+    <div class="arch-canvas" id="arch-canvas">
+      <svg id="arch-svg" width="100%" height="100%"></svg>
+    </div>
+    <div class="arch-info" id="arch-info">
+      <div id="arch-info-body">
+        <p class="arch-info-hint">Aloqalarni ko'rish uchun resurs, komponent yoki legenda elementiga sichqonchani olib boring yoki tab bilan o'ting.</p>
+        <div class="arch-stat-row"><span>Ko'rsatilgan komponentlar</span><span class="arch-stat-n" id="arch-stat-components">–</span></div>
+        <div class="arch-stat-row"><span>Resurslar</span><span class="arch-stat-n" id="arch-stat-resources">–</span></div>
+        <div class="arch-stat-row"><span>Aloqalar</span><span class="arch-stat-n" id="arch-stat-relationships">–</span></div>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="architecture-diagram.js"></script>

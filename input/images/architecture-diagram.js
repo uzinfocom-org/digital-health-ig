@@ -66,24 +66,120 @@
   };
 
   var EDGES = [
-    { from: "CHR", to: "MDM", label: "full compatibility" },
-    { from: "CHR", to: "MSM", label: "full compatibility" },
-    { from: "MDM", to: "MSM", label: "metadata, security, clinical info" },
-    { from: "PHJM", to: "CHR", label: "integration" },
-    { from: "PHJM", to: "MSM", label: "integration" },
-    { from: "PHJM", to: "MDM", label: "integration" },
-    { from: "CHR.EpisodeOfCare", to: "PHJM.EpisodeOfCare", label: "shares this resource type" },
-    { from: "CHR.Condition", to: "PHJM.Condition", label: "shares this resource type" },
-    { from: "CHR.Observation", to: "PHJM.Observation", label: "shares this resource type" },
-    { from: "LAB.Observation", to: "CHR.Observation", label: "lab results" },
-    { from: "REFERRALS", to: "LAB.ServiceRequest", label: "referral request" },
-    { from: "CHR.Procedure", to: "REIMB.Procedure", label: "shares this resource type" },
-    { from: "CHR.Condition", to: "REIMB.Condition", label: "shares this resource type" },
-    { from: "CHR.Observation", to: "REIMB.Observation", label: "shares this resource type" },
-    { from: "PHJM.Encounter", to: "REIMB.Encounter", label: "shares this resource type" },
-    { from: "PHJM.CarePlan", to: "REIMB.CarePlan", label: "shares this resource type" },
-    { from: "PHJM.Questionnaire", to: "SCREEN.Questionnaire", label: "shares this resource type" }
+    { from: "CHR", to: "MDM", kind: "fullCompat" },
+    { from: "CHR", to: "MSM", kind: "fullCompat" },
+    { from: "MDM", to: "MSM", kind: "metaSecClinical" },
+    { from: "PHJM", to: "CHR", kind: "integration" },
+    { from: "PHJM", to: "MSM", kind: "integration" },
+    { from: "PHJM", to: "MDM", kind: "integration" },
+    { from: "CHR.EpisodeOfCare", to: "PHJM.EpisodeOfCare", kind: "sharesType" },
+    { from: "CHR.Condition", to: "PHJM.Condition", kind: "sharesType" },
+    { from: "CHR.Observation", to: "PHJM.Observation", kind: "sharesType" },
+    { from: "LAB.Observation", to: "CHR.Observation", kind: "labResults" },
+    { from: "REFERRALS", to: "LAB.ServiceRequest", kind: "referralRequest" },
+    { from: "CHR.Procedure", to: "REIMB.Procedure", kind: "sharesType" },
+    { from: "CHR.Condition", to: "REIMB.Condition", kind: "sharesType" },
+    { from: "CHR.Observation", to: "REIMB.Observation", kind: "sharesType" },
+    { from: "PHJM.Encounter", to: "REIMB.Encounter", kind: "sharesType" },
+    { from: "PHJM.CarePlan", to: "REIMB.CarePlan", kind: "sharesType" },
+    { from: "PHJM.Questionnaire", to: "SCREEN.Questionnaire", kind: "sharesType" }
   ];
+
+  // Everything the diagram renders as prose, per page language. The publisher
+  // sets <html lang="..."> and copies this file into every language directory,
+  // so one file serves en/ru/uz, following the same STRINGS[lang] || STRINGS.en
+  // convention as forms-renderer.js. Component wording matches the section
+  // headings in each language's components.md so page and diagram agree. FHIR
+  // resource type names (Patient, Observation ...) are never translated, and
+  // English falls through to the short/label already on COMPONENTS above.
+  var STRINGS = {
+    en: {
+      comp: {},
+      edge: {
+        fullCompat: "full compatibility",
+        metaSecClinical: "metadata, security, clinical info",
+        integration: "integration",
+        sharesType: "shares this resource type",
+        labResults: "lab results",
+        referralRequest: "referral request"
+      },
+      noRelations: "No stated or inferred relationships for this node.",
+      profiledTitle: "Profiled in this IG",
+      unprofiledTitle: "Named, not yet profiled",
+      resourceCount: function (n) { return n + (n === 1 ? " resource" : " resources"); }
+    },
+    ru: {
+      comp: {
+        MDM: { short: "MDM", label: "Управление основными данными (MDM)" },
+        MSM: { short: "MSM", label: "Управление метаданными и безопасностью (MSM)" },
+        CHR: { short: "CHR", label: "Электронные медицинские записи (CHR)" },
+        PHJM: { short: "PHJM", label: "Управление клиническим маршрутом пациента (PHJM)" },
+        LAB: { short: "Лаборатория", label: "Лаборатория" },
+        REFERRALS: { short: "Направления", label: "Направления" },
+        REIMB: { short: "Реимбурсация", label: "Реимбурсация" },
+        SCREEN: { short: "Графики скрининга", label: "Управление графиками скрининга" },
+        VACC: { short: "Вакцинация", label: "Управление вакцинацией" }
+      },
+      edge: {
+        fullCompat: "полная совместимость",
+        metaSecClinical: "метаданные, безопасность, клиническая информация",
+        integration: "интеграция",
+        sharesType: "общий тип ресурса",
+        labResults: "результаты лабораторных исследований",
+        referralRequest: "запрос по направлению"
+      },
+      noRelations: "Для этого узла нет заявленных или предполагаемых связей.",
+      profiledTitle: "Профилировано в этом руководстве",
+      unprofiledTitle: "Упомянуто, но ещё не профилировано",
+      // 1 ресурс / 2-4 ресурса / 5+ ресурсов, with the 11-14 exception.
+      resourceCount: function (n) {
+        var m10 = n % 10, m100 = n % 100;
+        if (m10 === 1 && m100 !== 11) return n + " ресурс";
+        if (m10 >= 2 && m10 <= 4 && (m100 < 12 || m100 > 14)) return n + " ресурса";
+        return n + " ресурсов";
+      }
+    },
+    uz: {
+      comp: {
+        MDM: { short: "MDM", label: "Asosiy ma'lumotlarni boshqarish (MDM)" },
+        MSM: { short: "MSM", label: "Metama'lumotlar va xavfsizlikni boshqarish (MSM)" },
+        CHR: { short: "CHR", label: "Elektron tibbiy yozuvlar (CHR)" },
+        PHJM: { short: "PHJM", label: "Bemorning klinik marshrutini boshqarish (PHJM)" },
+        LAB: { short: "Laboratoriya", label: "Laboratoriya" },
+        REFERRALS: { short: "Yo'llanmalar", label: "Yo'llanmalar" },
+        REIMB: { short: "Reimbursatsiya", label: "Reimbursatsiya" },
+        SCREEN: { short: "Skrining jadvallari", label: "Skrining jadvallarini boshqarish" },
+        VACC: { short: "Vaksinatsiya", label: "Vaksinatsiyani boshqarish" }
+      },
+      edge: {
+        fullCompat: "to'liq moslik",
+        metaSecClinical: "metama'lumotlar, xavfsizlik, klinik ma'lumot",
+        integration: "integratsiya",
+        sharesType: "umumiy resurs turi",
+        labResults: "laboratoriya natijalari",
+        referralRequest: "yo'llanma so'rovi"
+      },
+      noRelations: "Bu tugun uchun belgilangan yoki taxmin qilingan aloqalar yo'q.",
+      profiledTitle: "Ushbu qo'llanmada profillangan",
+      unprofiledTitle: "Nomlangan, lekin hali profillanmagan",
+      resourceCount: function (n) { return n + " ta resurs"; }
+    }
+  };
+
+  var LANG = (document.documentElement.getAttribute("lang") || "en").slice(0, 2).toLowerCase();
+  var T = STRINGS[LANG] || STRINGS.en;
+
+  function compShort(id) {
+    var c = T.comp && T.comp[id];
+    return (c && c.short) || COMPONENTS[id].short;
+  }
+  function compLabel(id) {
+    var c = T.comp && T.comp[id];
+    return (c && c.label) || COMPONENTS[id].label;
+  }
+  function edgeLabel(e) {
+    return (T.edge && T.edge[e.kind]) || STRINGS.en.edge[e.kind];
+  }
 
   var BOX_W = 220, PILL_H = 26, PILL_GAP = 6, PILL_INSET = 10,
       TITLE_H = 30, PAD_TOP = 8, PAD_BOTTOM = 10, EMPTY_H = 46,
@@ -193,7 +289,7 @@
     }
     g.appendChild(r);
 
-    var label = isBox ? COMPONENTS[id].short : data.name;
+    var label = isBox ? compShort(id) : data.name;
     var text = el('text', {
       x: isBox ? rect.x + 10 : rect.x + rect.w / 2,
       y: isBox ? rect.y + 19 : rect.y + rect.h / 2 + 4,
@@ -206,7 +302,7 @@
     text.textContent = label;
     g.appendChild(text);
 
-    g.setAttribute('aria-label', isBox ? COMPONENTS[id].label : (data.name + ' — ' + COMPONENTS[data.compId].label));
+    g.setAttribute('aria-label', isBox ? compLabel(id) : (data.name + ' — ' + compLabel(data.compId)));
     nodeLayer.appendChild(g);
     nodeEls[id] = { el: g };
   }
@@ -239,7 +335,7 @@
     var fromMatches = isBox ? edge.fromR.compId === id : edge.fromR.id === id;
     var other = fromMatches ? edge.toR : edge.fromR;
     var dir = edge.isBoxLevel ? '↔' : (fromMatches ? '→' : '←');
-    var label = other.kind === 'pill' ? (pills[other.id].name + ' · ' + COMPONENTS[other.compId].short) : COMPONENTS[other.compId].label;
+    var label = other.kind === 'pill' ? (pills[other.id].name + ' · ' + compShort(other.compId)) : compLabel(other.compId);
     return { dir: dir, label: label };
   }
 
@@ -268,8 +364,8 @@
       nodeEls[nid].el.classList.toggle('active', nid === id);
     });
 
-    var titleText = isBox ? COMPONENTS[id].short : pills[id].name;
-    var subText = isBox ? COMPONENTS[id].label : COMPONENTS[pills[id].compId].label;
+    var titleText = isBox ? compShort(id) : pills[id].name;
+    var subText = isBox ? compLabel(id) : compLabel(pills[id].compId);
     var wrap = document.createElement('div');
     var t = document.createElement('p'); t.className = 'arch-info-title'; t.textContent = titleText;
     var s = document.createElement('p'); s.className = 'arch-info-sub'; s.textContent = subText;
@@ -278,7 +374,7 @@
     if (related.length === 0) {
       var hint = document.createElement('p');
       hint.className = 'arch-info-hint';
-      hint.textContent = 'No stated or inferred relationships for this node.';
+      hint.textContent = T.noRelations;
       wrap.appendChild(hint);
     } else {
       var ul = document.createElement('ul');
@@ -293,7 +389,7 @@
         head.textContent = info.dir + ' ' + info.label;
         var desc = document.createElement('p');
         desc.className = 'arch-rel-desc';
-        desc.textContent = e.label;
+        desc.textContent = edgeLabel(e);
         li.appendChild(head);
         li.appendChild(desc);
         ul.appendChild(li);
@@ -318,9 +414,9 @@
 
     var wrap = document.createElement('div');
     var t = document.createElement('p'); t.className = 'arch-info-title';
-    t.textContent = legendKind === 'profiled' ? 'Profiled in this IG' : 'Named, not yet profiled';
+    t.textContent = legendKind === 'profiled' ? T.profiledTitle : T.unprofiledTitle;
     var s = document.createElement('p'); s.className = 'arch-info-sub';
-    s.textContent = matchCount + (matchCount === 1 ? ' resource' : ' resources');
+    s.textContent = T.resourceCount(matchCount);
     wrap.appendChild(t); wrap.appendChild(s);
     infoBody.innerHTML = '';
     while (wrap.firstChild) infoBody.appendChild(wrap.firstChild);
