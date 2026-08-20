@@ -1,12 +1,13 @@
 ### How the components relate
 
-Each component below is described on its own; in practice several of them exchange the same underlying FHIR resources. This diagram drops to the resource level: which resources each component owns, and which of those resources plausibly flow between components. Solid blue lines are relationships stated in the components' Technical Projects (ТП); dashed grey lines are inferred from shared resource types and have not been separately confirmed. Drag to pan, scroll to zoom, and hover or tab to a resource or component to see its connections.
+Each component below is described on its own; in practice several of them exchange the same underlying FHIR resources. This diagram drops to the resource level: which resources each component owns, and which of those resources connect to another component. Plain lines show two components integrating broadly; arrows show a specific resource flowing from one component into another. Drag to pan, scroll to zoom, and hover or tab to a resource, component, or legend item to see its connections.
+
+<br clear="all"/>
 
 <style>
   .arch-diagram {
     --blueprint: #2255AA;
     --blueprint-soft: #dce7f6;
-    --pencil: #888888;
     --pencil-soft: #e6e6e6;
     --ink: #1b232a;
     --ink-soft: #5c6b74;
@@ -19,8 +20,8 @@ Each component below is described on its own; in practice several of them exchan
   }
   .arch-legend { display: flex; flex-wrap: wrap; gap: 1.1rem; margin: 0 0 0.7rem; font-size: 0.78rem; color: var(--ink-soft); }
   .arch-legend span { display: inline-flex; align-items: center; gap: 0.35rem; }
-  .arch-legend .swatch-line { width: 18px; height: 0; border-top: 2px solid var(--blueprint); }
-  .arch-legend .swatch-line.inferred { border-top: 2px dashed var(--pencil); }
+  .arch-legend span[data-legend] { cursor: pointer; padding: 2px 4px; margin: -2px -4px; border-radius: 3px; }
+  .arch-legend span[data-legend]:hover, .arch-legend span[data-legend]:focus-visible { background: var(--paper-raised); }
   .arch-legend .swatch-box { width: 12px; height: 12px; background: var(--blueprint-soft); border: 1px solid var(--line); }
   .arch-legend .swatch-box.pale { background: var(--pencil-soft); }
 
@@ -81,9 +82,7 @@ Each component below is described on its own; in practice several of them exchan
   }
   .arch-info-sub { font-size: 0.76rem; color: var(--ink-soft); margin: 0 0 0.8rem; }
   .arch-rel-list { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 0.55rem; }
-  .arch-rel-item { border-left: 2px solid var(--line); padding-left: 0.6rem; }
-  .arch-rel-item.documented { border-left-color: var(--blueprint); }
-  .arch-rel-item.inferred { border-left-color: var(--pencil); }
+  .arch-rel-item { border-left: 2px solid var(--blueprint); padding-left: 0.6rem; }
   .arch-rel-head { font-size: 0.8rem; color: var(--ink); font-weight: 600; }
   .arch-rel-desc { font-size: 0.76rem; color: var(--ink-soft); margin: 0.15rem 0 0; }
 
@@ -93,7 +92,7 @@ Each component below is described on its own; in practice several of them exchan
   .arch-edge { transition: opacity 0.15s ease; }
   .arch-node.dim, .arch-edge.dim { opacity: 0.15; }
   .arch-node.active { filter: drop-shadow(0 0 3px var(--blueprint)); }
-  #arch-arrow-inferred path { fill: var(--pencil); }
+  #arch-arrow path { fill: var(--blueprint); }
 
   @media (prefers-reduced-motion: reduce) {
     .arch-node rect, .arch-edge { transition: none; }
@@ -107,10 +106,8 @@ Each component below is described on its own; in practice several of them exchan
 
 <div class="arch-diagram">
   <div class="arch-legend">
-    <span><span class="swatch-line"></span> TC-documented</span>
-    <span><span class="swatch-line inferred"></span> inferred</span>
-    <span><span class="swatch-box"></span> profiled in this IG</span>
-    <span><span class="swatch-box pale"></span> named, not yet profiled</span>
+    <span data-legend="profiled" tabindex="0" role="button"><span class="swatch-box"></span> profiled in this IG</span>
+    <span data-legend="unprofiled" tabindex="0" role="button"><span class="swatch-box pale"></span> named, not yet profiled</span>
   </div>
   <div class="arch-toolbar">
     <button type="button" id="arch-reset" class="arch-btn">Reset view</button>
@@ -121,11 +118,10 @@ Each component below is described on its own; in practice several of them exchan
     </div>
     <aside class="arch-info" id="arch-info">
       <div id="arch-info-body">
-        <p class="arch-info-hint">Hover or tab to a resource or component to see what it connects to.</p>
+        <p class="arch-info-hint">Hover or tab to a resource, component, or legend item to see what it connects to.</p>
         <div class="arch-stat-row"><span>Components shown</span><span class="arch-stat-n" id="arch-stat-components">–</span></div>
         <div class="arch-stat-row"><span>Resources</span><span class="arch-stat-n" id="arch-stat-resources">–</span></div>
-        <div class="arch-stat-row"><span>Documented links</span><span class="arch-stat-n" id="arch-stat-documented">–</span></div>
-        <div class="arch-stat-row"><span>Inferred flows</span><span class="arch-stat-n" id="arch-stat-inferred">–</span></div>
+        <div class="arch-stat-row"><span>Relationships</span><span class="arch-stat-n" id="arch-stat-relationships">–</span></div>
       </div>
     </aside>
   </div>

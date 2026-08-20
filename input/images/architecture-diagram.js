@@ -1,9 +1,8 @@
 /*
  * Interactive resource-flow diagram for the Components page: which FHIR
  * resources each component owns, and which of those resources plausibly
- * flow to another component. Solid edges are relationships stated in the
- * components' Technical Projects; dashed edges are inferred from shared
- * resource types.
+ * connect to another component. Plain lines are component-to-component
+ * integration; arrows are a specific resource flowing between components.
  *
  * This file lives in input/images/ (copied verbatim to output/ and to every
  * language directory) and is loaded from the components page. It must stay
@@ -12,7 +11,11 @@
  *
  * Data mirrors input/images-source/resource-relationships.plantuml and the
  * component-to-component relationships documented in each component's
- * Technical Project (see components.md).
+ * Technical Project (see components.md). Internally, some of these edges are
+ * stated verbatim in a Technical Project and others are inferred from two
+ * components sharing a FHIR resource type - but that provenance is an
+ * editorial/audit detail, not something readers of this public page need to
+ * weigh, so it is intentionally not tracked or displayed per edge here.
  */
 (function () {
   var svgNS = 'http://www.w3.org/2000/svg';
@@ -63,23 +66,23 @@
   };
 
   var EDGES = [
-    { from: "CHR", to: "MDM", kind: "documented", label: "full compatibility" },
-    { from: "CHR", to: "MSM", kind: "documented", label: "full compatibility" },
-    { from: "MDM", to: "MSM", kind: "documented", label: "metadata, security, clinical info" },
-    { from: "PHJM", to: "CHR", kind: "documented", label: "integration" },
-    { from: "PHJM", to: "MSM", kind: "documented", label: "integration" },
-    { from: "PHJM", to: "MDM", kind: "documented", label: "integration" },
-    { from: "CHR.EpisodeOfCare", to: "PHJM.EpisodeOfCare", kind: "inferred", label: "inferred" },
-    { from: "CHR.Condition", to: "PHJM.Condition", kind: "inferred", label: "inferred" },
-    { from: "CHR.Observation", to: "PHJM.Observation", kind: "inferred", label: "inferred" },
-    { from: "LAB.Observation", to: "CHR.Observation", kind: "inferred", label: "lab results — inferred" },
-    { from: "REFERRALS", to: "LAB.ServiceRequest", kind: "inferred", label: "referral request — inferred" },
-    { from: "CHR.Procedure", to: "REIMB.Procedure", kind: "inferred", label: "inferred" },
-    { from: "CHR.Condition", to: "REIMB.Condition", kind: "inferred", label: "inferred" },
-    { from: "CHR.Observation", to: "REIMB.Observation", kind: "inferred", label: "inferred" },
-    { from: "PHJM.Encounter", to: "REIMB.Encounter", kind: "inferred", label: "inferred" },
-    { from: "PHJM.CarePlan", to: "REIMB.CarePlan", kind: "inferred", label: "inferred" },
-    { from: "PHJM.Questionnaire", to: "SCREEN.Questionnaire", kind: "inferred", label: "inferred" }
+    { from: "CHR", to: "MDM", label: "full compatibility" },
+    { from: "CHR", to: "MSM", label: "full compatibility" },
+    { from: "MDM", to: "MSM", label: "metadata, security, clinical info" },
+    { from: "PHJM", to: "CHR", label: "integration" },
+    { from: "PHJM", to: "MSM", label: "integration" },
+    { from: "PHJM", to: "MDM", label: "integration" },
+    { from: "CHR.EpisodeOfCare", to: "PHJM.EpisodeOfCare", label: "shares this resource type" },
+    { from: "CHR.Condition", to: "PHJM.Condition", label: "shares this resource type" },
+    { from: "CHR.Observation", to: "PHJM.Observation", label: "shares this resource type" },
+    { from: "LAB.Observation", to: "CHR.Observation", label: "lab results" },
+    { from: "REFERRALS", to: "LAB.ServiceRequest", label: "referral request" },
+    { from: "CHR.Procedure", to: "REIMB.Procedure", label: "shares this resource type" },
+    { from: "CHR.Condition", to: "REIMB.Condition", label: "shares this resource type" },
+    { from: "CHR.Observation", to: "REIMB.Observation", label: "shares this resource type" },
+    { from: "PHJM.Encounter", to: "REIMB.Encounter", label: "shares this resource type" },
+    { from: "PHJM.CarePlan", to: "REIMB.CarePlan", label: "shares this resource type" },
+    { from: "PHJM.Questionnaire", to: "SCREEN.Questionnaire", label: "shares this resource type" }
   ];
 
   var BOX_W = 220, PILL_H = 26, PILL_GAP = 6, PILL_INSET = 10,
@@ -122,7 +125,11 @@
   }
   function rectOf(r) { return r.kind === "pill" ? pills[r.id] : boxes[r.id]; }
 
-  EDGES.forEach(function (e) { e.fromR = resolveEndpoint(e.from); e.toR = resolveEndpoint(e.to); });
+  EDGES.forEach(function (e) {
+    e.fromR = resolveEndpoint(e.from);
+    e.toR = resolveEndpoint(e.to);
+    e.isBoxLevel = e.fromR.kind === "box" && e.toR.kind === "box";
+  });
 
   function boundaryPoint(rect, other) {
     var acx = rect.x + rect.w / 2, acy = rect.y + rect.h / 2;
@@ -146,9 +153,9 @@
   if (!svg) return;
 
   var defs = el('defs', {});
-  var arrowInferred = el('marker', { id: 'arch-arrow-inferred', viewBox: '0 0 10 10', refX: '8', refY: '5', markerWidth: '7', markerHeight: '7', orient: 'auto' });
-  arrowInferred.appendChild(el('path', { d: 'M0,0 L10,5 L0,10 z' }));
-  defs.appendChild(arrowInferred);
+  var arrow = el('marker', { id: 'arch-arrow', viewBox: '0 0 10 10', refX: '8', refY: '5', markerWidth: '7', markerHeight: '7', orient: 'auto' });
+  arrow.appendChild(el('path', { d: 'M0,0 L10,5 L0,10 z' }));
+  defs.appendChild(arrow);
   svg.appendChild(defs);
 
   var viewport = el('g', { id: 'arch-viewport' });
@@ -163,11 +170,10 @@
     var p1 = boundaryPoint(rectOf(e.fromR), rectOf(e.toR));
     var p2 = boundaryPoint(rectOf(e.toR), rectOf(e.fromR));
     var path = el('path', { d: curvePath(p1, p2), class: 'arch-edge', fill: 'none' });
-    path.style.stroke = e.kind === 'documented' ? 'var(--blueprint)' : 'var(--pencil)';
-    path.setAttribute('stroke-width', e.kind === 'documented' ? '2' : '1.5');
-    if (e.kind === 'inferred') {
-      path.setAttribute('stroke-dasharray', '5,4');
-      path.setAttribute('marker-end', 'url(#arch-arrow-inferred)');
+    path.style.stroke = 'var(--blueprint)';
+    path.setAttribute('stroke-width', e.isBoxLevel ? '2' : '1.5');
+    if (!e.isBoxLevel) {
+      path.setAttribute('marker-end', 'url(#arch-arrow)');
     }
     edgeLayer.appendChild(path);
     edgeEls.push({ el: path, edge: e });
@@ -214,13 +220,11 @@
   var statEls = {
     components: document.getElementById('arch-stat-components'),
     resources: document.getElementById('arch-stat-resources'),
-    documented: document.getElementById('arch-stat-documented'),
-    inferred: document.getElementById('arch-stat-inferred')
+    relationships: document.getElementById('arch-stat-relationships')
   };
   if (statEls.components) statEls.components.textContent = Object.keys(boxes).length;
   if (statEls.resources) statEls.resources.textContent = Object.keys(pills).length;
-  if (statEls.documented) statEls.documented.textContent = EDGES.filter(function (e) { return e.kind === 'documented'; }).length;
-  if (statEls.inferred) statEls.inferred.textContent = EDGES.filter(function (e) { return e.kind === 'inferred'; }).length;
+  if (statEls.relationships) statEls.relationships.textContent = EDGES.length;
 
   var defaultInfoHTML = infoBody.innerHTML;
 
@@ -234,33 +238,38 @@
   function otherInfo(edge, id, isBox) {
     var fromMatches = isBox ? edge.fromR.compId === id : edge.fromR.id === id;
     var other = fromMatches ? edge.toR : edge.fromR;
-    var dir = edge.kind === 'documented' ? '↔' : (fromMatches ? '→' : '←');
+    var dir = edge.isBoxLevel ? '↔' : (fromMatches ? '→' : '←');
     var label = other.kind === 'pill' ? (pills[other.id].name + ' · ' + COMPONENTS[other.compId].short) : COMPONENTS[other.compId].label;
     return { dir: dir, label: label };
   }
 
+  function clearHighlight() {
+    edgeEls.forEach(function (rec) { rec.el.classList.remove('dim'); });
+    Object.keys(nodeEls).forEach(function (nid) {
+      nodeEls[nid].el.classList.remove('dim', 'active');
+    });
+  }
+
   function setActive(id) {
-    var isBox = id ? !!boxes[id] : false;
-    var related = id ? edgesFor(id, isBox) : [];
+    if (!id) { clearHighlight(); infoBody.innerHTML = defaultInfoHTML; return; }
+
+    var isBox = !!boxes[id];
+    var related = edgesFor(id, isBox);
     var activeNodeIds = {};
-    if (id) activeNodeIds[id] = true;
+    activeNodeIds[id] = true;
     related.forEach(function (rec) { activeNodeIds[rec.edge.fromR.id] = true; activeNodeIds[rec.edge.toR.id] = true; });
 
     edgeEls.forEach(function (rec) {
-      var isActive = !id || related.indexOf(rec) !== -1;
-      rec.el.classList.toggle('dim', !!id && !isActive);
+      rec.el.classList.toggle('dim', related.indexOf(rec) === -1);
     });
     Object.keys(nodeEls).forEach(function (nid) {
-      var isActive = !id || nid === id || activeNodeIds[nid];
-      nodeEls[nid].el.classList.toggle('dim', !!id && !isActive);
-      nodeEls[nid].el.classList.toggle('active', !!id && nid === id);
+      var isActive = nid === id || activeNodeIds[nid];
+      nodeEls[nid].el.classList.toggle('dim', !isActive);
+      nodeEls[nid].el.classList.toggle('active', nid === id);
     });
 
-    if (!id) { infoBody.innerHTML = defaultInfoHTML; return; }
-
-    var isBoxNode = !!boxes[id];
-    var titleText = isBoxNode ? COMPONENTS[id].short : pills[id].name;
-    var subText = isBoxNode ? COMPONENTS[id].label : COMPONENTS[pills[id].compId].label;
+    var titleText = isBox ? COMPONENTS[id].short : pills[id].name;
+    var subText = isBox ? COMPONENTS[id].label : COMPONENTS[pills[id].compId].label;
     var wrap = document.createElement('div');
     var t = document.createElement('p'); t.className = 'arch-info-title'; t.textContent = titleText;
     var s = document.createElement('p'); s.className = 'arch-info-sub'; s.textContent = subText;
@@ -276,21 +285,43 @@
       ul.className = 'arch-rel-list';
       related.forEach(function (rec) {
         var e = rec.edge;
-        var info = otherInfo(e, id, isBoxNode);
+        var info = otherInfo(e, id, isBox);
         var li = document.createElement('li');
-        li.className = 'arch-rel-item ' + e.kind;
+        li.className = 'arch-rel-item';
         var head = document.createElement('div');
         head.className = 'arch-rel-head';
         head.textContent = info.dir + ' ' + info.label;
         var desc = document.createElement('p');
         desc.className = 'arch-rel-desc';
-        desc.textContent = (e.kind === 'documented' ? 'TC-documented' : 'Inferred') + ' — ' + e.label;
+        desc.textContent = e.label;
         li.appendChild(head);
         li.appendChild(desc);
         ul.appendChild(li);
       });
       wrap.appendChild(ul);
     }
+    infoBody.innerHTML = '';
+    while (wrap.firstChild) infoBody.appendChild(wrap.firstChild);
+  }
+
+  function setLegendActive(legendKind) {
+    clearHighlight();
+    edgeEls.forEach(function (rec) { rec.el.classList.add('dim'); });
+    var matchCount = 0;
+    Object.keys(nodeEls).forEach(function (nid) {
+      if (boxes[nid]) { nodeEls[nid].el.classList.add('dim'); return; }
+      var match = legendKind === 'profiled' ? pills[nid].profiled : !pills[nid].profiled;
+      if (match) matchCount++;
+      nodeEls[nid].el.classList.toggle('dim', !match);
+      nodeEls[nid].el.classList.toggle('active', match);
+    });
+
+    var wrap = document.createElement('div');
+    var t = document.createElement('p'); t.className = 'arch-info-title';
+    t.textContent = legendKind === 'profiled' ? 'Profiled in this IG' : 'Named, not yet profiled';
+    var s = document.createElement('p'); s.className = 'arch-info-sub';
+    s.textContent = matchCount + (matchCount === 1 ? ' resource' : ' resources');
+    wrap.appendChild(t); wrap.appendChild(s);
     infoBody.innerHTML = '';
     while (wrap.firstChild) infoBody.appendChild(wrap.firstChild);
   }
@@ -309,9 +340,17 @@
     });
   });
 
+  var legendEls = document.querySelectorAll('.arch-legend [data-legend]');
+  Array.prototype.forEach.call(legendEls, function (legendEl) {
+    var legendKind = legendEl.getAttribute('data-legend');
+    legendEl.addEventListener('pointerenter', function () { if (!pinnedId) setLegendActive(legendKind); });
+    legendEl.addEventListener('pointerleave', function () { if (!pinnedId) setActive(null); });
+    legendEl.addEventListener('focus', function () { if (!pinnedId) setLegendActive(legendKind); });
+    legendEl.addEventListener('blur', function () { if (!pinnedId) setActive(null); });
+  });
+
   var canvas = document.getElementById('arch-canvas');
   var tx = 0, ty = 0, scale = 1, dragging = false, dragMoved = false, lastX = 0, lastY = 0;
-  var userAdjusted = false;
 
   function applyTransform() { viewport.setAttribute('transform', 'translate(' + tx + ',' + ty + ') scale(' + scale + ')'); }
 
@@ -333,7 +372,7 @@
   canvas.addEventListener('pointermove', function (ev) {
     if (!dragging) return;
     var dx = ev.clientX - lastX, dy = ev.clientY - lastY;
-    if (Math.abs(dx) > 2 || Math.abs(dy) > 2) { dragMoved = true; userAdjusted = true; }
+    if (Math.abs(dx) > 2 || Math.abs(dy) > 2) dragMoved = true;
     tx += dx; ty += dy; lastX = ev.clientX; lastY = ev.clientY;
     applyTransform();
   });
@@ -350,22 +389,11 @@
     var newScale = Math.max(0.25, Math.min(2.5, scale * factor));
     var contentX = (mx - tx) / scale, contentY = (my - ty) / scale;
     tx = mx - contentX * newScale; ty = my - contentY * newScale; scale = newScale;
-    userAdjusted = true;
     applyTransform();
   }, { passive: false });
 
   var resetBtn = document.getElementById('arch-reset');
-  if (resetBtn) resetBtn.addEventListener('click', function () { pinnedId = null; userAdjusted = false; setActive(null); fitView(); });
-
-  // The page's own layout (e.g. the floating table of contents) can still be
-  // settling after this script runs, changing the canvas's width out from
-  // under the initial fitView(). Re-fit on any size change until the reader
-  // has taken control (panned/zoomed), rather than relying on 'resize' alone.
-  function refitIfUntouched() { if (!userAdjusted) fitView(); }
-  if (window.ResizeObserver) {
-    new ResizeObserver(refitIfUntouched).observe(canvas);
-  } else {
-    window.addEventListener('resize', refitIfUntouched);
-  }
+  if (resetBtn) resetBtn.addEventListener('click', function () { pinnedId = null; setActive(null); fitView(); });
+  window.addEventListener('resize', fitView);
   fitView();
 })();
