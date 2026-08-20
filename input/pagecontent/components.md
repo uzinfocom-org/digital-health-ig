@@ -1,6 +1,51 @@
+### At a glance
+
+The Digital Health Platform is made up of 19 components, each covering a distinct part of the national healthcare system.
+
+<style>
+  .component-index { display: flex; flex-wrap: wrap; gap: 0.5rem 0.6rem; margin: 0.75rem 0 0.5rem; }
+  .component-index a {
+    display: inline-block;
+    padding: 0.4rem 0.9rem;
+    border: 1px solid #c9d2d6;
+    border-radius: 999px;
+    background: #f4f7f9;
+    color: #2255AA;
+    font-size: 0.85rem;
+    text-decoration: none;
+    transition: background 0.15s ease, border-color 0.15s ease;
+  }
+  .component-index a:hover, .component-index a:focus-visible {
+    background: #dce7f6;
+    border-color: #2255AA;
+  }
+</style>
+
+<div class="component-index">
+  <a href="#ambulance">Ambulance</a>
+  <a href="#appointment-and-scheduling">Appointment and Scheduling</a>
+  <a href="#blood-management">Blood Management</a>
+  <a href="#clinical-decision-support">Clinical Decision Support</a>
+  <a href="#clinical-health-records-chr">Clinical Health Records (CHR)</a>
+  <a href="#diagnostics-and-imaging">Diagnostics and Imaging</a>
+  <a href="#laboratory">Laboratory</a>
+  <a href="#master-data-management-mdm">Master Data Management (MDM)</a>
+  <a href="#metadata-and-security-management-msm">Metadata and Security Management (MSM)</a>
+  <a href="#nursing">Nursing</a>
+  <a href="#patient-health-journey-management">Patient health journey management</a>
+  <a href="#prescription">Prescription</a>
+  <a href="#public-health-reporting">Public Health Reporting</a>
+  <a href="#quality-assurance">Quality Assurance</a>
+  <a href="#referrals">Referrals</a>
+  <a href="#reimbursement">Reimbursement</a>
+  <a href="#screening-schedules-management">Screening Schedules Management</a>
+  <a href="#supplies">Supplies</a>
+  <a href="#vaccination-management">Vaccination Management</a>
+</div>
+
 ### Cross-component resource architecture
 
-Each component below is described on its own; in practice several of them exchange the same underlying FHIR resources. This diagram drops to the resource level: which resources each component owns, and which of those resources connect to another component. Plain lines show two components integrating broadly; arrows show a specific resource flowing from one component into another. Drag to pan, scroll to zoom, and hover or tab to a resource, component, or legend item to see its connections.
+In practice, several of the components above exchange the same underlying FHIR resources. This diagram drops to the resource level: which resources each component owns, and which of those resources connect to another component. Plain lines show two components integrating broadly; arrows show a specific resource flowing from one component into another. Drag to pan, scroll to zoom, and hover or tab to a resource, component, or legend item to see its connections.
 
 <br clear="all"/>
 
