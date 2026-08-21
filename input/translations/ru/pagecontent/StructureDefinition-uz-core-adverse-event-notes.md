@@ -1,10 +1,8 @@
-> **Машинный перевод, требуется проверка человеком.** Эта страница автоматически переведена с английского языка с помощью искусственного интеллекта и пока не проверена редактором. При любых расхождениях приоритет имеет оригинальная англоязычная версия.
-
 ### Быстрый старт
 
-Типовые взаимодействия с API для данного профиля. Запросы требуют JWT-токена доступа - см. [Безопасность и аутентификация](api-access.html#security). `[base]` - это [базовый URL FHIR-сервера](api-access.html#endpoints); `|` отделяет систему токена от его значения и должен быть URL-кодирован как `%7C`. Эти взаимодействия используют стандартные параметры поиска FHIR R5; см. [CapabilityStatement](CapabilityStatement-DHPCapabilityStatement.html) по мере его финализации для данного ресурса.
+Распространённые операции API для этого профиля. Для запросов требуется JWT-токен доступа - см. раздел [Безопасность и аутентификация](api-access.html#security). `[base]` - [базовый URL FHIR-сервера](api-access.html#endpoints); символ `|` разделяет систему токенов и её значение и должен быть URL-кодирован как `%7C`. В этих операциях используются стандартные параметры поиска FHIR R5; по мере окончательной настройки этого ресурса сверяйтесь с [CapabilityStatement](CapabilityStatement-DHPCapabilityStatement.html).
 
-**Чтение нежелательного явления по серверному id**
+**Чтение нежелательного явления по серверному идентификатору**
 
 ```
 GET [base]/AdverseEvent/[id]
@@ -13,13 +11,13 @@ GET [base]/AdverseEvent/[id]
 **Полезные поисковые запросы**
 
 ```
-# all adverse events for a patient
+# все нежелательные явления пациента
 GET [base]/AdverseEvent?subject=Patient/[id]
 
-# serious events only, most recent first
+# только серьёзные события, сначала самые недавние
 GET [base]/AdverseEvent?subject=Patient/[id]&seriousness=http://terminology.hl7.org/CodeSystem/adverse-event-seriousness%7Cserious&_sort=-date
 
-# by date, status, or event code
+# поиск по дате, статусу или коду события
 GET [base]/AdverseEvent?subject=Patient/[id]&date=ge2026-01-01
 GET [base]/AdverseEvent?status=completed
 GET [base]/AdverseEvent?code=http://snomed.info/sct%7C39579001
@@ -36,11 +34,11 @@ POST [base]/AdverseEvent
 }
 ```
 
-**Обновление нежелательного явления** (например, добавление исхода или результирующего состояния, когда оно станет известно)
+**Обновление нежелательного явления** (например, добавление исхода или возникшего Condition после получения соответствующих данных)
 
 ```
 PUT [base]/AdverseEvent/[id]
-If-Match: W/"3"   # the ETag from your last read; 412 if it changed since
+If-Match: W/"3"   # ETag, полученный при последнем чтении; 412, если ресурс с тех пор изменился
 {
   "resourceType": "AdverseEvent",
   "id": "[id]",
@@ -51,5 +49,5 @@ If-Match: W/"3"   # the ETag from your last read; 412 if it changed since
 
 ### Связанные материалы
 
-- [Рабочий процесс иммунизации](workflow-immunization.html)
+- [Рабочий процесс Immunization](workflow-immunization.html)
 - [Как читать это руководство](how-to-read.html) &middot; [Must Support](must-support.html) &middot; [Общие рекомендации](general-guidance.html)

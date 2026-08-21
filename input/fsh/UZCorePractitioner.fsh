@@ -21,7 +21,7 @@ Description: "Uzbekistan Core Practitioner profile, used to define healthcare pr
 * identifier[nationalId]
   * ^short = "PINFL of the practitioner"
   * system 1..1 MS
-  * system = $practitioner-argos-id-system
+  * system = $nationaluniqueID
   * type 1..1 MS
   * type = $identifier-type#NI "National unique individual identifier"
   * use = #official

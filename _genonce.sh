@@ -14,7 +14,7 @@ fi
 
 echo "$txoption"
 
-export JAVA_TOOL_OPTIONS="-Xms6g -Xmx14g -Dfile.encoding=UTF-8"
+export JAVA_TOOL_OPTIONS="-Xms6g -Xmx12g -Dfile.encoding=UTF-8"
 
 publisher=$input_cache_path/$publisher_jar
 if test -f "$publisher"; then

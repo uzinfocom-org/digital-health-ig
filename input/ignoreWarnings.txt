@@ -21,9 +21,6 @@ The ImplementationGuide uses package hl7.fhir.uv.sdc#3.0.0 released on 2022-03-0
 Resource has a language (uz), and the XHTML has a lang (en), but they differ
 Resource has a language (ru), and the XHTML has a lang (en), but they differ
 
-# Publisher bug with new .ai.html pages, can be ignored
-The link%
-
 # Publisher issue where codesystems and valuesets can no longer share the same name
 There are multiple resources with the same title%
 
@@ -35,15 +32,8 @@ There are multiple resources with the same title%
 Source Code System urn:iso:std:iso:3166 doesn't have all content (content = not-present), so the source codes cannot be checked
 Target Code System urn:iso:std:iso:3166 doesn't have all content (content = not-present), so the target codes cannot be checked
 
-# SSV ConceptMaps reference external code systems not available to the IG publisher - source codes cannot be validated
-WARNING: ConceptMap/ssv-level-type-to-subordination-group-cm: ConceptMap.group[0].source: The Source Code System http://fhir.ssv.uz/ValueSet/organization-type-level is not fully defined and populated, and no sourceScope is specified, so the source code checking will not be performed
-WARNING: ConceptMap/ssv-medical-type-to-organizational-structure-cm: ConceptMap.group[0].source: The Source Code System http://fhir.ssv.uz/ValueSet/organization-type-medical is not fully defined and populated, and no sourceScope is specified, so the source code checking will not be performed
-WARNING: ConceptMap/ssv-medical-type-to-organizational-structure-cm: ConceptMap.group[1].source: The Source Code System http://fhir.ssv.uz/ValueSet/organization-type-medical is not fully defined and populated, and no sourceScope is specified, so the source code checking will not be performed
-WARNING: ConceptMap/ssv-service-type-to-organizational-service-group-cm: ConceptMap.group[0].source: The Source Code System http://fhir.ssv.uz/ValueSet/organization-type-service is not fully defined and populated, and no sourceScope is specified, so the source code checking will not be performed
-
 # tx.fhir.org doesn't have all UCUM codes - allowed to be ignored, needs to be reported
 Target Code System http://unitsofmeasure.org doesn't have all content (content = not-present), so the target codes cannot be checked
-Source Code System http://unitsofmeasure.org doesn't have all content (content = not-present), so the source codes cannot be checked
 
 # sample systems from our IdentifierDomain where we have all foreign drivers licenses and passports - creating NamingSystem for them all is impractical
 No definition could be found for URL value 'https://dhp.uz/fhir/core/sid/pid/gb/ppn'
@@ -56,21 +46,10 @@ No definition could be found for URL value 'Observation/blood-pressure-example/_
 No definition could be found for URL value 'Observation/body-weight-example/_history/1'
 No definition could be found for URL value 'Observation/body-temperature-example/_history/1'
 
-# UCUM is grammar-based and cannot be expansion-validated, so every target code in the
-# UcumToRuUnitsDisplayCM / UcumToUzUnitsDisplayCM display-translation maps is reported as
-# "not in ucum-common". The codes are valid UCUM; these warnings are benign (PR #173).
-%is not valid in the value set http://terminology.hl7.org/ValueSet/ucum-common%
 
 # Fictional external code system in the external-lab-report example, unresolvable by design
 A definition for CodeSystem 'http://example.org/fhir/CodeSystem/lab-report-type' could not be found, so the code cannot be validated
 
-# The hemoglobin ObservationDefinition is example data using example.org URLs, so its self-referencing canonical link and undefined identifier system are expected.
-Hyperlink 'http://example.org/fhir/ObservationDefinition/example-laboratory-hemoglobin' at 'div/div/p/a' for 'http://example.org/fhir/ObservationDefinition/example-laboratory-hemoglobin' does not resolve
-No definition could be found for URL value 'http://example.org/fhir/sid/lab-test-catalog'
 
 # IG Publisher 2.2.10 emits an OID-assignment recommendation for every CodeSystem/ValueSet. We don't use OID-based terminology (e.g. CDA), so assigning OIDs IG-wide adds no value here.
 %should have an OID assigned to cater for possible use with OID based terminology systems%
-
-Error from https://tx.fhir.org/r5: Error: The code System "http://snomed.info/sct" has a grammar, and cannot be enumerated directly
-
-Error from https://tx.fhir.org/r5: Error: (no details supplied)

@@ -7,8 +7,9 @@ Description: "Procedure outcome ValueSet with translations in Uzbek and Russian"
 * ^extension[0].url = $valueset-supplement
 * ^extension[=].valueCanonical = Canonical(ProcedureOutcomeCS)
 
-* include codes from system $sct
-
-// * include $sct#385669000 "Successful"
-// * include $sct#385670004 "Partially successful"
-// * include $sct#385671000 "Unsuccessful" 
+// Enumerated rather than selected by hierarchy: the only SNOMED CT parent of these three is
+// <<106239005 |Modifier mainly for procedure|, which also carries priorities, urgency and
+// catheterisation phases and so does not describe a procedure outcome.
+* include $sct#385669000 "Successful"
+* include $sct#385670004 "Partially successful"
+* include $sct#385671000 "Unsuccessful"

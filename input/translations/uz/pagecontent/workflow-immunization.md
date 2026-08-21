@@ -8,13 +8,13 @@ Jarayon ketma-ketligi:
 
 ### 1. Vaksinatsiya jadvali kod ko'rinishida
 
-Milliy vaksinatsiya jadvali [PlanDefinition](StructureDefinition-uz-core-immunization-plan-definition.html) sifatida bir marta e'lon qilinadi. Har bir tavsiya etilgan doza `PlanDefinition.action` orqali ifodalanadi; vaksina va dozalash tafsilotlari action'da `definitionCanonical` orqali `ActivityDefinition`'ga reference berish yordamida ko'rsatiladi. Maqsadli yosh yoki jadval `action.timing[x]` (`Age` yoki `Timing`) orqali beriladi; dozalar orasidagi eng qisqa vaqt oralig'i `action.relatedAction.offsetDuration` orqali, muvofiqlik shartlari esa `action.condition` orqali belgilanadi.
+Milliy vaksinatsiya jadvali [PlanDefinition](StructureDefinition-uz-core-plan-definition.html) sifatida bir marta e'lon qilinadi. Har bir tavsiya etilgan doza `PlanDefinition.action` orqali ifodalanadi; vaksina va dozalash tafsilotlari action'da `definitionCanonical` orqali `ActivityDefinition`'ga reference berish yordamida ko'rsatiladi. Maqsadli yosh yoki jadval `action.timing[x]` (`Age` yoki `Timing`) orqali beriladi; dozalar orasidagi eng qisqa vaqt oralig'i `action.relatedAction.offsetDuration` orqali, muvofiqlik shartlari esa `action.condition` orqali belgilanadi.
 
 ```
 GET [base]/PlanDefinition?status=active&context-type-value=focus$http://snomed.info/sct|33879002
 ```
 
-> Muayyan qo'llanish sohasi/yurisdiksiya uchun bir vaqtning o'zida jadvalning faqat bitta versiyasi faol bo'lishi mumkin. Jadval validatsiya qoidalariga mos kelishi shart (dozalar ketma-ketligida uzilishlar, bajarib bo'lmaydigan vaqt oralig'i va bir-birini qoplaydigan ikkita faol versiya bo'lmasligi kerak). [PlanDefinition](StructureDefinition-uz-core-immunization-plan-definition.html) sahifasiga qarang.
+> Muayyan qo'llanish sohasi/yurisdiksiya uchun bir vaqtning o'zida jadvalning faqat bitta versiyasi faol bo'lishi mumkin. Jadval validatsiya qoidalariga mos kelishi shart (dozalar ketma-ketligida uzilishlar, bajarib bo'lmaydigan vaqt oralig'i va bir-birini qoplaydigan ikkita faol versiya bo'lmasligi kerak). [PlanDefinition](StructureDefinition-uz-core-plan-definition.html) sahifasiga qarang.
 
 ### 2. Tavsiyani shakllantirish
 
@@ -96,5 +96,5 @@ Bemorda vaksinatsiyadan keyingi reaksiya kuzatilsa, [AdverseEvent](StructureDefi
 
 ### Bog'liq materiallar
 
-- Profillar: [PlanDefinition](StructureDefinition-uz-core-immunization-plan-definition.html) &middot; [ImmunizationRecommendation](StructureDefinition-uz-core-immunization-recommendation.html) &middot; [Encounter](StructureDefinition-uz-core-encounter.html) &middot; [Immunization](StructureDefinition-uz-core-immunization.html) &middot; [AdverseEvent](StructureDefinition-uz-core-adverse-event.html)
+- Profillar: [PlanDefinition](StructureDefinition-uz-core-plan-definition.html) &middot; [ImmunizationRecommendation](StructureDefinition-uz-core-immunization-recommendation.html) &middot; [Encounter](StructureDefinition-uz-core-encounter.html) &middot; [Immunization](StructureDefinition-uz-core-immunization.html) &middot; [AdverseEvent](StructureDefinition-uz-core-adverse-event.html)
 - [Ish jarayonlari haqida umumiy ma'lumot](workflows.html) &middot; [Umumiy tavsiyalar](general-guidance.html)

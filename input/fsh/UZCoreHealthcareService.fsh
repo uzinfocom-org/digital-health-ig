@@ -39,7 +39,7 @@ Description: "Uzbekistan Core HealthcareService profile, used to define healthca
   * system 1..1 MS
   * system = Canonical(LabCategoriesCS)
   * code 1..1 MS
-  * code from lab-service-categories-vs (extensible)
+  * code from service-categories-vs (extensible)
 
 * type.coding ^slicing.discriminator.type = #value
 * type.coding ^slicing.discriminator.path = "system"
@@ -63,6 +63,22 @@ Description: "Uzbekistan Core HealthcareService profile, used to define healthca
   * code 1..1 MS
   * code from observation-codes-vs (extensible)
 
+* characteristic ^slicing.discriminator.type = #value
+* characteristic ^slicing.discriminator.path = "coding.system"
+* characteristic ^slicing.rules = #open
+* characteristic ^slicing.description = "Funding source for each healthcare service"
+* characteristic ^slicing.ordered = false
+
+* characteristic contains
+    paymentType 0..* MS
+
+* characteristic[paymentType]
+  * coding 1..*
+  * coding.system 1..1 MS
+  * coding.system = Canonical(PaymentTypeCS)
+  * coding.code 1..1 MS
+  * coding.code from PaymentTypeVS (required)
+
 Instance: example-healthcareservice
 InstanceOf: UZCoreHealthcareService
 Description: "Example of a healthcare service"
@@ -73,6 +89,8 @@ Usage: #example
   * code = #cancr0013.00000
 * type.coding[dhpService]
   * code = #cancr0013.00001
+* characteristic[paymentType]
+  * coding.code = #paytype-0001-0004
 * language = #uz
 * name = "IHC-ga xos"
   * extension[translation][0]

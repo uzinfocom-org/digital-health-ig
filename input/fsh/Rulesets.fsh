@@ -142,6 +142,19 @@ RuleSet: OriginalCodeSystem(id)
 * ^language = #uz
 * ^experimental = false
 
+// Statistical classifications (ICCC-3, ICD-O-3, ICD-10 ...) are not subsumption hierarchies:
+// they are exhaustive groupings with residual "other/unspecified" categories, so a child is not
+// necessarily an is-a of its parent. HL7 Terminology uses classified-with for the ICD family for
+// the same reason - see https://terminology.hl7.org/ICD.html.
+RuleSet: OriginalClassificationCodeSystemDraft(id)
+* ^url = "https://terminology.dhp.uz/fhir/core/CodeSystem/{id}"
+* ^status = #draft
+* ^content = #complete
+* ^caseSensitive = true
+* ^hierarchyMeaning = #classified-with
+* ^language = #uz
+* ^experimental = true
+
 // The supplement version must be SemVer (X.Y.Z) - the DHP terminology platform cannot parse
 // other formats. When the supplemented system's release identifier is not SemVer, encode it
 // (see modelling-guidelines.md section 5): 2026-01 -> 2026.1.0, 20210222 -> 2021.2.22, 2.9 -> 2.9.0.

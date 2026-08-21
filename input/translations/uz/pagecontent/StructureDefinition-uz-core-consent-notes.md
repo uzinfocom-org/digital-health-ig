@@ -1,16 +1,14 @@
-> **Mashina tarjimasi, inson tomonidan tekshirilishi zarur.** Ushbu sahifa ingliz tilidan sun'iy intellekt yordamida avtomatik tarjima qilingan va hali muharrir tomonidan tekshirilmagan. Har qanday nomuvofiqlikda asl inglizcha versiya ustuvor hisoblanadi.
+### Tezkor boshlash
 
-### Tez boshlash
+Ushbu profil uchun keng tarqalgan API amallari. So'rovlar JWT kirish tokenini talab qiladi - [Xavfsizlik va autentifikatsiya](api-access.html#security) bo'limiga qarang. `[base]` - [FHIR-serverning bazaviy URL manzili](api-access.html#endpoints); `|` kod tizimini qiymatdan ajratadi va `%7C` ko'rinishida URL-kodlanishi kerak.
 
-Ushbu profil uchun keng tarqalgan API o'zaro ta'sirlari. So'rovlar JWT kirish tokenini talab qiladi - qarang [Xavfsizlik va autentifikatsiya](api-access.html#security). `[base]` bu [FHIR server bazaviy URL manzili](api-access.html#endpoints); `|` belgisi kod tizimini uning qiymatidan ajratadi va `%7C` sifatida URL-kodlanishi shart.
-
-**Server identifikatori bo'yicha o'qish**
+**Server identifikatori bo'yicha olish**
 
 ```
 GET [base]/Consent/[id]
 ```
 
-**Bemorning rozilik qarorlarini topish**
+**Bemorning rozilik bo'yicha qarorlarini qidirish**
 
 ```
 GET [base]/Consent?patient=Patient/[id]
@@ -20,7 +18,7 @@ GET [base]/Consent?patient=Patient/[id]&period=ge2025-01-01
 GET [base]/Consent?patient=Patient/[id]&date=ge2025-01-01
 ```
 
-**Yaratish** (bemorni rad etishga o'tkazish - Consent mavjud bo'lmasa, ma'lumotlar almashinuviga sukut bo'yicha ruxsat beriladi)
+**Yaratish** - bemorning ma'lumot almashishni rad etishini qayd etish; Consent mavjud bo'lmasa, almashishga sukut bo'yicha ruxsat beriladi
 
 ```
 POST [base]/Consent
@@ -34,18 +32,18 @@ POST [base]/Consent
 }
 ```
 
-**Yangilash** (masalan, bemor rad etadi yoki qaytadan ruxsat beradi) - yangi `decision` bilan to'liq resursni qaytarib PUT qiling:
+**Yangilash** - masalan, bemor almashishni rad etsa yoki qayta ruxsat bersa: to'liq resursni yangi `decision` qiymati bilan yuboring:
 
 ```
 PUT [base]/Consent/[id]
-If-Match: W/"3"   # the ETag from your last read; 412 if it changed since
+If-Match: W/"3"   # oxirgi o'qishdagi ETag; resurs shu vaqtdan beri o'zgargan bo'lsa, 412
 ```
 
-Rozilik odatda bemor tomonidan portalda o'rnatiladi. Rad etilgan rozilik ma'lumotlar so'rovlarining HTTP 403 bilan rad etilishiga olib keladi; mijozlar bu natijani qayta ishlashi kerak.
+Consent odatda bemor tomonidan portalda belgilanadi. Consent kirishni taqiqlasa, ma'lumot so'rovlari HTTP 403 bilan rad etiladi; mijoz tizimlari bu natijani to'g'ri qayta ishlashi kerak.
 
-Qo'llab-quvvatlanadigan qidiruv parametrlarining to'liq ro'yxati uchun [CapabilityStatement](CapabilityStatement-DHPCapabilityStatement.html) ga qarang.
+Qo'llab-quvvatlanadigan qidiruv parametrlarining to'liq ro'yxati [CapabilityStatement](CapabilityStatement-DHPCapabilityStatement.html) da keltirilgan.
 
-### Aloqador
+### Bog'liq bo'limlar
 
 - [Ish jarayonlari](workflows.html)
-- [Ushbu qo'llanmani qanday o'qish kerak](how-to-read.html) &middot; [Must Support](must-support.html) &middot; [Umumiy ko'rsatmalar](general-guidance.html)
+- [Ushbu qo'llanmani qanday o'qish kerak](how-to-read.html) &middot; [Must Support](must-support.html) &middot; [Umumiy tavsiyalar](general-guidance.html)

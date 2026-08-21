@@ -10,8 +10,9 @@ Description: "Value Set for Goal Start Event"
 * ^extension[=].valueCanonical = Canonical(GoalStartEventCS)
 
 
-* include codes from system $sct
-// * include $sct#32485007 "Admission to hospital"
-// * include $sct#308283009 "Discharge from hospital"
-// * include $sct#442137000 "Completion time of procedure"
-// * include $sct#386216000 "Childbirth"
+// Enumerated rather than selected by hierarchy: these events span procedures and findings and have
+// no common SNOMED CT ancestor narrower than the top of the hierarchy.
+* include $sct#32485007 "Admission to hospital"
+* include $sct#308283009 "Discharge from hospital"
+* include $sct#442137000 "Completion time of procedure"
+* include $sct#386216000 "Childbirth"

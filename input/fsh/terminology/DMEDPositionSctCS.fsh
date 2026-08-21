@@ -33,3 +33,33 @@ Description: "DMED Position SNOMED supplement with translations in Uzbek and Rus
   * ^designation[=].value = "Фармацевт, специализирующийся на вопросах регулирования."
   * ^designation[+].language = #en
   * ^designation[=].value = "Regulatory affairs pharmacist"
+
+* #405279007
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Врач, осуществляющий уход за пациентом"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Attending physician"
+
+* #159143006
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Гистолог"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Histologist"
+
+* #25855006
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Нейрореабилитолог"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Neurological rehabilitation"
+
+* #309372007
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Отоларинголог"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Ear, nose and throat surgeon"
+
+* #431488007
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Допплерография"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Doppler ultrasound of myocardium for tissue strain rate"

@@ -19,9 +19,9 @@ Description: "Request intent supplement with translations in Uzbek and Russian"
 
 * #order
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Назначение / Приказ"
+  * ^designation[=].value = "Назначение"
   * ^designation[+].language = #uz
-  * ^designation[=].value = "Buyruq / Tayinlash"
+  * ^designation[=].value = "Buyruq"
 
 * #directive
   * ^designation[0].language = #ru

@@ -52,6 +52,7 @@ Alias: $group-membership-basis = http://hl7.org/fhir/group-membership-basis
 Alias: $group-type = http://hl7.org/fhir/group-type
 Alias: $healthcard = https://dhp.uz/fhir/core/sid/pid/uz/hc
 Alias: $http-interaction = http://hl7.org/fhir/restful-interaction
+Alias: $iccc-3-cs = https://terminology.dhp.uz/fhir/core/CodeSystem/iccc-3-cs
 Alias: $icd-10 = http://hl7.org/fhir/sid/icd-10
 Alias: $icd-10-vs = http://hl7.org/fhir/ValueSet/icd-10
 Alias: $identifier-type = http://terminology.hl7.org/CodeSystem/v2-0203
@@ -194,6 +195,8 @@ Alias: $observation-range-category-vs = https://terminology.dhp.uz/fhir/core/Val
 Alias: $task-status = http://hl7.org/fhir/task-status
 Alias: $task-intent = http://hl7.org/fhir/task-intent
 
+Alias: $permitted-data-type = http://hl7.org/fhir/permitted-data-type
+
 Alias: $claim-response-category = http://terminology.hl7.org/CodeSystem/adjudication
 Alias: $claim-response-outcome = http://hl7.org/fhir/claim-outcome
 Alias: $claim-response-decision = http://hl7.org/fhir/claim-decision
@@ -214,3 +217,12 @@ Alias: $breast-cancer-risk-category-cs = https://dhp.uz/fhir/core/CodeSystem/bre
 Alias: $breast-cancer-risk-assessment-category-cs = https://dhp.uz/fhir/core/CodeSystem/breast-cancer-risk-assessment-category-cs
 Alias: $cervical-risk-category-cs = https://dhp.uz/fhir/core/CodeSystem/cervical-risk-category-cs
 Alias: $child-development-result-cs = https://dhp.uz/fhir/core/CodeSystem/child-development-result-cs
+
+Alias: $composition-att-mode = http://hl7.org/fhir/composition-attestation-mode
+Alias: $composition-list-empty-reason = http://terminology.hl7.org/CodeSystem/list-empty-reason
+Alias: $composition-status = http://hl7.org/fhir/composition-status
+Alias: $composition-narrative-status = http://hl7.org/fhir/narrative-status
+Alias: $composition-list-order = http://terminology.hl7.org/CodeSystem/list-order
+Alias: $service-request-intent = http://hl7.org/fhir/request-intent
+
+Alias: $coverage-kind = http://hl7.org/fhir/coverage-kind

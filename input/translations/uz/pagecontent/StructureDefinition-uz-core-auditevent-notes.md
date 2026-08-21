@@ -1,18 +1,16 @@
-> **Mashina tarjimasi, inson tomonidan tekshirilishi zarur.** Ushbu sahifa ingliz tilidan sun'iy intellekt yordamida avtomatik tarjima qilingan va hali muharrir tomonidan tekshirilmagan. Har qanday nomuvofiqlikda asl inglizcha versiya ustuvor hisoblanadi.
-
 ### Tezkor boshlash
 
-Ushbu profil uchun keng tarqalgan API o'zaro ta'sirlari. So'rovlar JWT kirish tokenini talab qiladi - qarang [Xavfsizlik va autentifikatsiya](api-access.html#security). `[base]` bu [FHIR serverining bazaviy URL manzili](api-access.html#endpoints); `|` belgisi kod tizimini uning qiymatidan ajratadi va URL kodlashda `%7C` ko'rinishida yozilishi shart.
+Ushbu profil uchun odatiy API amallari. So'rovlar uchun JWT kirish tokeni talab qilinadi - [Xavfsizlik va autentifikatsiya](api-access.html#security) bo'limiga qarang. `[base]` - [FHIR-serverining bazaviy URL manzili](api-access.html#endpoints); `|` belgisi kod tizimini qiymatdan ajratadi va URLda `%7C` ko'rinishida kodlanishi kerak.
 
-AuditEvent yozuvlari platforma tomonidan yoziladi va mijozlar uchun faqat o'qish uchun mo'ljallangan - yaratish yoki yangilash yo'li mavjud emas. Audit jurnalini o'qish va qidiruv orqali so'rang.
+AuditEvent resurslari platforma tomonidan yaratiladi va mijozlar uchun faqat o'qish rejimida mavjud - yaratish yoki yangilash yo'li mavjud emas. Audit jurnalidan ma'lumot olish uchun o'qish va qidirish amallaridan foydalaning.
 
-**Server identifikatori bo'yicha o'qish**
+**Server identifikatori bo'yicha olish**
 
 ```
 GET [base]/AuditEvent/[id]
 ```
 
-**Audit jurnalini qidirish**
+**Audit jurnalida qidirish**
 
 ```
 GET [base]/AuditEvent?patient=Patient/[id]
@@ -24,11 +22,11 @@ GET [base]/AuditEvent?patient=Patient/[id]&entity=Condition/[id]
 GET [base]/AuditEvent?patient=Patient/[id]&outcome=http://hl7.org/fhir/issue-severity%7Cerror
 ```
 
-FHIR R5 da hodisalar guruhlanishi `category` orqali, aniq sub-tip esa `code` orqali qidiriladi (R4 dagi `type` / `subtype`). Ushbu profilda `outcome.code` issue-severity qiymatlar to'plamiga bog'langan, shuning uchun rad etilgan yoki muvaffaqiyatsiz tugagan kirish `success` emas, balki `error` (yoki `fatal`) sifatida qidiriladi.
+FHIR R5 da hodisalar guruhi `category` parametri, muayyan quyi tur esa `code` parametri bo'yicha qidiriladi (FHIR R4 da `type` / `subtype` ishlatilgan). Ushbu profilda `outcome.code` issue-severity ValueSet bilan bog'langan, shu sababli rad etilgan yoki muvaffaqiyatsiz kirish `success` emas, `error` (yoki `fatal`) qiymati bo'yicha qidiriladi.
 
-Qo'llab-quvvatlanadigan qidiruv parametrlarining to'liq ro'yxati uchun [CapabilityStatement](CapabilityStatement-DHPCapabilityStatement.html) ga qarang.
+Qo'llab-quvvatlanadigan barcha qidiruv parametrlari [CapabilityStatement](CapabilityStatement-DHPCapabilityStatement.html) da keltirilgan.
 
-### Aloqador
+### Bog'liq materiallar
 
 - [Ish jarayonlari](workflows.html)
-- [Ushbu qo'llanmani qanday o'qish kerak](how-to-read.html) &middot; [Must Support](must-support.html) &middot; [Umumiy ko'rsatmalar](general-guidance.html)
+- [Ushbu qo'llanmani qanday o'qish kerak](how-to-read.html) &middot; [Must Support](must-support.html) &middot; [Umumiy tavsiyalar](general-guidance.html)

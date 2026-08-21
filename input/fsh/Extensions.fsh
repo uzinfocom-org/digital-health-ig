@@ -143,3 +143,49 @@ Description: "Canonical reference to the laboratory ObservationDefinition that s
 
 * value[x] 1..1
 * value[x] only Canonical(UZCoreLaboratoryObservationDefinition)
+
+// Extension: CoverageKind
+// Id: coverage-kind
+// Title: "Coverage Kind"
+// Description: "Extension indicating the kind of financing or coverage source for a requested service, such as state insurance, private insurance, self-pay, or other."
+// Context: ServiceRequest
+
+// * ^experimental = true
+
+// * value[x] only CodeableConcept
+// * valueCodeableConcept from CoverageKindVS (required)
+
+
+Extension: PlanDefinitionStatusHistory 
+Id: plan-definition-status-history 
+Title: "PlanDefinition Status History" 
+Description: "Records the history of status changes for a PlanDefinition, including the status, period during which the status was effective, reason for the status change, and the actor who performed the change."
+Context: PlanDefinition
+
+* ^status = #draft
+* ^experimental = true
+
+* extension contains
+    status 1..1 MS and
+    period 1..1 MS and
+    reason 1..1 MS and
+    changedBy 1..1 MS
+
+
+* extension[status] ^short = "Status of the PlanDefinition during this period"
+* extension[status].value[x] 1..1
+* extension[status].value[x] only code
+* extension[status].valueCode from PublicationStatusVS (required)
+
+* extension[period] ^short = "Period during which this status was effective"
+* extension[period].value[x] 1..1
+* extension[period].value[x] only Period
+
+* extension[reason] ^short = "Reason for changing the PlanDefinition status"
+* extension[reason].value[x] 1..1
+* extension[reason].value[x] only string
+
+* extension[changedBy] ^short = "Person who changed the PlanDefinition status"
+* extension[changedBy].value[x] 1..1
+* extension[changedBy].value[x] only Reference
+* extension[changedBy].valueReference only Reference(Practitioner or PractitionerRole)

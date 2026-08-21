@@ -1,38 +1,36 @@
-> **Машинный перевод, требуется проверка человеком.** Эта страница автоматически переведена с английского языка с помощью искусственного интеллекта и пока не проверена редактором. При любых расхождениях приоритет имеет оригинальная англоязычная версия.
+UZ Core EpisodeOfCare объединяет несколько [Encounter](StructureDefinition-uz-core-encounter.html) в один продолжительный клинический случай, ведение которого осуществляется медицинской организацией на DHP (Digital Health Platform - Цифровой платформе здравоохранения), например в рамках ведения беременности или программы ведения хронического заболевания. EpisodeOfCare связан с [Patient](StructureDefinition-uz-core-patient.html), за его ведение отвечает соответствующая [Organization](StructureDefinition-uz-core-organization.html), и он охватывает одно или несколько [Condition](StructureDefinition-uz-core-condition.html). Решение о создании нового EpisodeOfCare или повторном использовании существующего должно приниматься осознанно: EpisodeOfCare для острого излечимого состояния закрывается после выздоровления пациента, тогда как EpisodeOfCare для хронического состояния, требующего пожизненного наблюдения, может оставаться активным в течение многих лет и передаваться между организациями.
 
-UZ Core EpisodeOfCare объединяет серию [Encounters](StructureDefinition-uz-core-encounter.html) в один непрерывный случай оказания помощи, управляемый организацией на Платформе цифрового здравоохранения - например, маршрут ведения беременности или программу управления хроническим заболеванием. Он привязан к своему [Patient](StructureDefinition-uz-core-patient.html), принадлежит управляющей [Organization](StructureDefinition-uz-core-organization.html) и охватывает одно или несколько [Conditions](StructureDefinition-uz-core-condition.html). Осознанно решайте, открывать ли новый эпизод или повторно использовать существующий: эпизод острого, излечимого состояния закрывается после выздоровления пациента, тогда как эпизод пожизненного хронического состояния остаётся активным в течение многих лет и может передаваться между организациями.
+### Обязательные элементы и элементы Must Support
 
-### Обязательные элементы данных и элементы Must Support
+Перечисленные ниже элементы должны либо всегда присутствовать (mandatory), либо поддерживаться при наличии соответствующих данных ([Must Support](must-support.html)). Не все они обязательны, однако система должна заполнять каждый элемент Must Support, если располагает соответствующими данными, и корректно обрабатывать его при получении. Ниже приведено человекочитаемое описание; точные кардинальности, типы и терминологические привязки указаны в [формальных представлениях](#profile) ниже.
 
-Перечисленные ниже элементы должны всегда присутствовать (обязательные) либо должны поддерживаться при наличии данных ([Must Support](must-support.html)) - не все из них являются обязательными, но ваша система должна заполнять каждый элемент Must Support при наличии соответствующих данных и обрабатывать его при получении. Это удобочитаемое для человека резюме; [формальные представления](#profile) ниже задают точные кардинальности, типы и терминологические связки.
+#### Обязательные элементы UZ Core EpisodeOfCare (Must Have)
 
-#### Каждый UZ Core EpisodeOfCare должен иметь
+Этот профиль не добавляет собственных обязательных кардинальностей. Обязательные элементы унаследованы от базового ресурса: status (planned \| active \| onhold \| finished \| cancelled ...) и patient.
 
-Этот профиль не добавляет собственных обязательных кардинальностей. Обязательные элементы унаследованы от базового ресурса: статус (planned \| active \| onhold \| finished \| cancelled ...) и пациент.
-
-#### Каждый UZ Core EpisodeOfCare должен поддерживать
+#### Элементы Must Support для UZ Core EpisodeOfCare
 
 
 
-- идентификатор;
-- статус (required binding) и statusHistory (каждый прошлый `status` и его `period`);
-- type, классифицирующий эпизод;
-- reason, с `use` и `value` (Condition, Procedure, Observation или HealthcareService);
-- diagnosis, с его condition (ссылка на Condition) и его use (роль диагноза);
-- пациента и managingOrganization, ответственную за координацию помощи;
-- общий период;
+- identifier;
+- status (обязательная привязка) и statusHistory (каждый предыдущий `status` и соответствующий `period`);
+- type, классифицирующий EpisodeOfCare;
+- reason с `use` и `value` (Condition, Procedure, Observation или HealthcareService);
+- diagnosis с condition (reference на Condition) и use (роль диагноза);
+- patient и managingOrganization, ответственную за координацию оказания помощи;
+- общий period;
 - referralRequest (ServiceRequest);
-- careManager (координирующий практик или роль) и careTeam.
+- careManager (координирующий Practitioner или PractitionerRole) и careTeam.
 
-> Один EpisodeOfCare охватывает множество Encounters - связывайте каждый визит обратно с эпизодом через `episodeOfCare` в Encounter, вместо того чтобы открывать новый эпизод на каждый визит.
+> Один EpisodeOfCare может объединять несколько Encounter - каждый визит необходимо связать с соответствующим EpisodeOfCare через элемент `Encounter.episodeOfCare` вместо создания отдельного EpisodeOfCare для каждого визита.
 
-### Построение JSON, шаг за шагом
+### Пошаговое формирование JSON
 
-Приведённые ниже примеры строятся от реалистичного эпизода к полному случаю оказания помощи. Скопируйте один из них и адаптируйте - каждое показанное значение проходит валидацию по этому профилю. Полные эталонные экземпляры приведены по ссылкам внизу страницы ([профилактический эпизод](EpisodeOfCare-UZCoreEpisodeOfCare-Example.html), [эпизод беременности](EpisodeOfCare-UZCoreEpisodeOfCare-Example02.html)).
+В приведённых ниже примерах ресурс последовательно расширяется от реалистичного EpisodeOfCare до полного клинического случая. Скопируйте подходящий вариант и адаптируйте его - все приведённые значения проходят валидацию по этому профилю. Полные эталонные экземпляры доступны по ссылкам в нижней части страницы ([профилактический EpisodeOfCare](EpisodeOfCare-UZCoreEpisodeOfCare-Example.html), [EpisodeOfCare для ведения беременности](EpisodeOfCare-UZCoreEpisodeOfCare-Example02.html)).
 
-#### Реалистичный эпизод
+#### Реалистичный пример EpisodeOfCare
 
-На практике вы отправляете то, что позволяет платформе управлять эпизодом и находить его: бизнес-`identifier`, `type`, классифицирующий эпизод, `managingOrganization`, координирующую помощь, [Patient](StructureDefinition-uz-core-patient.html), которого он касается, и `period`, в течение которого он длится. `careManager` (координирующий практик) - это лицо, к которому следует обращаться по поводу данного случая:
+На практике передаются данные, позволяющие платформе вести и находить EpisodeOfCare: бизнес-`identifier`, `type` для классификации EpisodeOfCare, `managingOrganization` для координации оказания помощи, [Patient](StructureDefinition-uz-core-patient.html), к которому относится EpisodeOfCare, и `period` его действия. Элемент `careManager` (координирующий специалист) указывает специалиста, ответственного за координацию медицинской помощи в рамках данного клинического случая:
 
 ```json
 {
@@ -60,11 +58,11 @@ UZ Core EpisodeOfCare объединяет серию [Encounters](StructureDefi
 }
 ```
 
-`patient`, `managingOrganization` и `careManager` - это простые типы `Reference`, целевой объект находится прямо в `reference`. Не указывайте `period.end`, пока эпизод ещё открыт; добавляйте его только при закрытии случая.
+`patient`, `managingOrganization` и `careManager` имеют обычный тип `Reference` - целевой ресурс указывается непосредственно в `reference`. Пока EpisodeOfCare остаётся открытым, `period.end` не указывается; добавьте его только при завершении клинического случая.
 
-#### Добавление reason и diagnosis
+#### Добавление причины и диагноза
 
-Клиническое содержание эпизода - это его `reason` (почему оказывается помощь) и его `diagnosis` (рассматриваемые состояния). И `reason.value`, и `diagnosis.condition` являются типами `CodeableReference`, поэтому ссылка находится на один уровень глубже (`{ "reference": { "reference": "..." } }`), чем простые ссылки выше. Каждый `diagnosis.use` фиксирует роль данного диагноза (здесь `DD`, основной диагноз):
+Клиническое содержание EpisodeOfCare определяется причиной оказания помощи (`reason`) и диагнозами (`diagnosis`), в отношении которых оказывается медицинская помощь. `reason.value` и `diagnosis.condition` имеют тип `CodeableReference`, поэтому reference располагается на один уровень вложенности глубже (`{ "reference": { "reference": "..." } }`) по сравнению с обычными Reference выше. Каждый `diagnosis.use` фиксирует роль соответствующего диагноза (здесь `DD`, основной диагноз):
 
 ```json
 {
@@ -101,11 +99,11 @@ UZ Core EpisodeOfCare объединяет серию [Encounters](StructureDefi
 }
 ```
 
-`reason.value` может указывать на [Condition](StructureDefinition-uz-core-condition.html), Procedure, Observation или HealthcareService; `diagnosis.condition` должен быть [Condition](StructureDefinition-uz-core-condition.html).
+`reason.value` может содержать reference на [Condition](StructureDefinition-uz-core-condition.html), Procedure, Observation или HealthcareService; `diagnosis.condition` должен содержать [Condition](StructureDefinition-uz-core-condition.html).
 
-#### Фиксация изменения статуса с течением времени
+#### Фиксация изменений статуса во времени
 
-Длительный эпизод проходит через несколько статусов - он может быть `planned`, затем `active`, затем `finished`. Установите текущее значение в `status`; зафиксируйте каждое предыдущее состояние в `statusHistory`, где каждая запись содержит прошлый `status` и `period`, который он охватывал:
+Продолжительный EpisodeOfCare может последовательно менять несколько статусов: сначала `planned`, затем `active`, затем `finished`. Текущее значение указывается в `status`; каждый предыдущий статус фиксируется в `statusHistory`, где для каждой записи указываются предыдущий `status` и соответствующий `period`:
 
 ```json
 {
@@ -124,6 +122,6 @@ UZ Core EpisodeOfCare объединяет серию [Encounters](StructureDefi
 }
 ```
 
-Каждый `statusHistory.status` берётся из того же набора значений, что и `status`. Используйте это для ведения журнала аудита, когда, например, эпизод хронического заболевания переводится в `onhold` и позже возобновляется.
+Каждый `statusHistory.status` выбирается из того же ValueSet, что и `status`. Используйте это для сохранения истории изменений статуса, например когда EpisodeOfCare для хронического заболевания переводится в `onhold` и затем возобновляется.
 
-Примеры вызовов API и образец полезной нагрузки см. в разделе [Быстрый старт](#quick-start) внизу этой страницы.
+Примеры API-запросов и пример payload приведены в разделе [Быстрый старт](#quick-start) в нижней части страницы.

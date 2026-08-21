@@ -9,7 +9,7 @@ name: DHP
 title: Uzbekistan Digital Health Platform
 description: National implementation guide for Uzbekistan using FHIR R5.
 status: draft # draft | active | retired | unknown
-version: 0.6.0
+version: 0.8.0
 fhirVersion: 5.0.0 # https://www.hl7.org/fhir/valueset-FHIR-version.html
 copyrightYear: 2025+
 releaseLabel: ci-build
@@ -21,6 +21,8 @@ publisher:
   email: info@ssv.uz
 
 dependencies:
+  # HL7 Terminology — v3-RoleCode, v3-RoleClass va boshqa THO terminologiyalari
+  hl7.terminology.r5: 7.3.0
   # while we don't strictly needs this, this helps resolve the DICOM supplement correctly until tx.fhir.org can do this
   fhir.dicom:
     id: fhir_dicom
@@ -93,7 +95,7 @@ pages:
     workflow-prescription.md:
       title: e-Prescription and dispensing
   forms.md:
-    title: Forms
+    title: Questionnaires
   api-access.md:
     title: API access
   components.md:
@@ -157,7 +159,7 @@ menu:
     Payors: payor-identification.html
     Vital signs: vital-signs.html
   Workflows: workflows.html
-  Forms: forms.html
+  Questionnaires: forms.html
   API access: api-access.html
   Artifacts: artifacts.html
   Components: components.html

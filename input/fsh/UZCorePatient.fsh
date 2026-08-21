@@ -18,8 +18,8 @@ Description: "Uzbekistan Core Patient profile, used to represent patients admini
 * identifier ^slicing.description = "Ways a patient can be identified"
 * identifier ^slicing.ordered = false
 * identifier contains nationalId 0..1 MS and
-    passportLocal 0..1 MS and
-    passportInternational 0..1 MS and
+    passportLocal 0..* MS and
+    passportInternational 0..* MS and
     passportForeign 0..1 MS and
     pensionNumber 0..1 MS and
     birthCertificate 0..1 MS and
