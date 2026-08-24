@@ -1,3 +1,5 @@
+See how these components relate to each other in the [cross-component resource architecture](#cross-component-resource-architecture) diagram at the end of this page.
+
 ### Ambulance
 \< add one paragraph description of the service here \>
 
@@ -32,7 +34,7 @@ The Laboratory component provides:
 - Reduction of duplication of laboratory tests through reuse of previously performed tests when appropriate conditions and access rights are available.
 
 ### Master Data Management (MDM)
-The Master Data Service is a mission-critical component of the DHP, as it ensures the consolidation, standardization, and centralized storage of data originating from various medical information systems. It is the platform core, within which the MDM operates, that will serve as the single source of truth for all connected digital healthcare services. This ensures continuity, accuracy and consistency of data across the national system.
+The Master Data Management (MDM) component provides centralized management of master (reference) data within the Digital Health Platform (DHP). It unifies and normalizes data originating from various medical information systems - eliminating duplication of information about patients, healthcare organizations, personnel, services, and resources - and creates a single source of truth (SSOT) for all DHP components, supporting data consistency, quality, and the identification and minimal deduplication of records (including patients, based on key parameters such as PINFL, passport, and date of birth).
 
 Description of key functionality:
 
@@ -53,74 +55,45 @@ Description of key functionality:
 
 The MDM Service ensures the timeliness, reliability, and accessibility of information, thereby supporting effective coordination, adherence to regulatory requirements, and the safe and high-quality provision of healthcare services.
 
-The MDM Service is not merely an auxiliary module, but rather the foundation of Uzbekistan's digital healthcare transformation. It ensures high data quality, interoperability, and security, while supporting the implementation of initiatives within the DHP. The development and implementation of the MDM, based on international standards and integrated with national systems, demonstrate a sustainable and scalable approach to the establishment of a digital healthcare ecosystem.
-
 
 ### Metadata and Security Management (MSM)
-As part of the development of the Digital Health Platform (DHP), the Metadata and Security Management component plays a key role in metadata management, ensuring information security, and implementing access control mechanisms.
+The MSM component is implemented as a metadata management and data security service, based on the FHIR R5 (Fast Healthcare Interoperability Resources) architecture. It includes FHIR resources (StructureDefinition, ValueSet, CodeSystem, Provenance, AuditEvent, Consent, CapabilityStatement), catalogs (CodeSystem, ValueSet), a set of open API interfaces for data access, editing, and synchronization, and a mechanism for record normalization, identification, and minimal deduplication.
 
-The development and implementation of this service are driven by the need to standardize processes related to the description, structuring, protection, and auditing of data stored and processed within the DHP, as well as to ensure compliance with legal requirements in the fields of information security, personal data protection, and healthcare regulations.
+The MSM is designed for:
 
-The purpose of creating the Metadata and Security Management service is:
+- Message Validation Gateway: acting as a validation layer for messages exchanged within and through the DHP to ensure structural and semantic consistency.
+- Metadata Management: storing and providing information about components' structure and capabilities through CapabilityStatement and StructureDefinition resources.
+- Auditing and Access Control: logging user and application actions (AuditEvent), tracking data changes (Provenance), and managing access based on patient consents (Consent).
+- Data Standardization: using coded catalogs (CodeSystem) and value sets (ValueSet) for data unification.
+- Integration with External Systems: supporting interaction with MIS and other systems.
+- Flexible Configuration: adapting FHIR profiles for various scenarios and customer requirements.
+- Data Security: implementing access control, protecting confidential information, and logging security events.
 
-- To ensure reliable, standardized, and secure interaction among the components of the healthcare ecosystem connected to the Digital Health Platform (DHP) through:
-  - Metadata is a centralized and machine-readable description of the capabilities, constraints, and structure of the FHIR server, expressed through the CapabilityStatement resource, StructureDefinition profiles, as well as dictionaries and classifiers (CodeSystem, ValueSet).
-  - Security Management:
-- access control, transparent audit of actions, and patient consent management (Consent),
-- recording authorship and the legal significance of operations (Provenance),
-- action logging (AuditEvent).
-- To create a digital environment in which each participant (patient, physician, system, administrator) clearly understands:
-  - What the platform does
-  - How it protects data
-  - Who has access, when, and for what purpose
-
-The Metadata service is used in all cases when it is required to:
-
-- Find out what the server supports (resources, operations, versions, profiles)
-- Automatically configure the FHIR client for interaction
-- Get a description of extensions, restrictions, and custom profiles
-- Verify compliance with international or local requirements
-
-Security Management Service is used wherever medical personal data is affected, including:
-
-- Signing of electronic medical documents (Provenance)
-- Managing patient access to data (Consent)
-- Audit of all operations and actions of users (AuditEvent)
-- Investigation of information security incidents
-- Protection of the legal interests of the physician and the patient (through the recording of events and authorship)
+The goal of developing the MSM is to create a centralized mechanism for managing metadata from medical information systems; ensure transparent and controlled access to medical data based on patient consents and a role-based model; implement comprehensive auditing mechanisms to log all significant actions within the system; introduce tools for protecting personal data and adhering to information security policies; and support integration with national and industry-specific medical information systems.
 
 ### Nursing
 ### Patient health journey management
 
-The PHJM Service defines the digital patient journey — from the initial point of contact to the final outcome of a treatment episode, encompassing intermediate observations, clinical orders, and interactions. The objective of the service is to provide end-to-end, structured, and reliable support for the patient's care pathway within the Unified Digital Healthcare Platform (UDHP) through:
+The Patient Health Journey Management (PHJM) component is designed to manage data related to the clinical journey of a patient — from the initial contact to the completion of treatment and subsequent follow-up. It provides collection, storage, aggregation, and analysis of medical information about patients at all levels of healthcare delivery, using the HL7 FHIR R5 standard. PHJM is a core component of the Digital Health Platform (DHP) and serves as a connecting layer between clinical components, healthcare service management systems, and analytical components of the platform.
 
-* integration of all key clinical events of the patient into a single chain: encounters, diagnoses, observations, treatments, episodes, and outcomes;
+Within its functionality, the component provides:
 
-* use of FHIR resources for standardized storage and linking of data across healthcare organizations, medical information systems (MIS), and the platform;
+- maintenance of a unified Patient Journey — consistent tracking of encounters, examinations, prescriptions, and procedures;
+- coordination of interaction between organizations, practitioners, and patients at all stages of care;
+- centralized storage and access to treatment data, including EpisodeOfCare, Encounter, Condition, CarePlan, and Observation resources;
+- integration with other DHP components (CHR, MSM, MDM, DHP Core Services) to ensure data consistency and completeness of medical records;
+- generation of analytical and clinical-statistical reports based on patient journeys and associated clinical data;
+- implementation of security and confidentiality principles, including auditing, consent management, and access control.
 
-* provision of a unified view of treatment for the patient, physician, and administrator — in machine-readable, analytical, and visual forms.
+The main development objectives of PHJM include:
 
-Main objectives and use cases of the PHJM include:
-
-- Viewing the complete patient history (medical record):
-  - consolidation of all visits, diagnoses, tests, and prescriptions from different healthcare organizations into a single electronic patient record;
-  - enabling physicians to access the context of previous encounters (including inpatient, outpatient, and laboratory data).
-- Analyzing the effectiveness and outcomes of treatment:
-  - identification of repeated visits, relapses, and chronic conditions;
-  - monitoring the patient's condition dynamics through key indicators.
-- Supporting interagency cooperation:
-  - facilitating communication between different healthcare institutions and levels of care;
-  - eliminating duplication of tests and reducing the burden on patients.
-- Patient engagement in managing their health:
-  - providing the patient with access to their medical events via a personal account;
-  - enabling preparation for visits, tracking health dynamics, and monitoring prescriptions.
-- Quality control of medical care delivery:
-  - assessment of the completeness, timeliness, and justification of medical actions;
-  - detection of deviations, duplicate encounters, and unnecessary prescriptions.
-- Collecting patient feedback via the patient portal:
-  - evaluation of the performance of a specific institution, physician, or service;
-  - analysis of the quality of care;
-  - strengthening patient trust.
+- Digitalization of the patient lifecycle — an end-to-end digital patient journey covering registration, diagnosis, treatment, follow-up, and rehabilitation.
+- Integration of clinical data — consolidating information from various components into a unified logical structure providing a holistic view of the patient's health status.
+- Support for clinical decision-making — generating structured data suitable for use in clinical decision support systems (CDSS).
+- Improvement of healthcare efficiency — enabling monitoring of the quality and accessibility of healthcare services at both organizational and system levels.
+- Compliance with FHIR and HL7 standards — ensuring interoperability with internal and external systems.
+- Transparency and accountability — a unified audit trail and complete history of patient-related medical events.
+- Implementation of patient-centered care principles — engaging patients in their care process through access to personalized data and questionnaire-based feedback (Questionnaire / QuestionnaireResponse).
 
 ### Prescription
 ### Public Health Reporting
@@ -159,6 +132,17 @@ Key purposes:
 - ensuring interoperability among healthcare system participants.
 
 ### Screening Schedules Management
+
+The Screening Schedules Management component is developed to create a single digital service for centralized management of screening activities within the national healthcare system of the Republic of Uzbekistan. Its purpose is to automate the planning, ordering, performance, and monitoring of screening examinations, and to ensure the timely detection of diseases and risk factors among the population.
+
+The component provides:
+
+- centralized screening records;
+- increased population coverage by preventive programs;
+- data transparency and accessibility;
+- integration with national and local medical systems;
+- decision support, including risk assessment through Questionnaire.
+
 ### Supplies
 ### Vaccination Management
 
@@ -172,4 +156,118 @@ The component ensures:
 - support of the full vaccination lifecycle (prescription, scheduling, administration, monitoring);
 - integration with Medical Information Systems and national immunization programs;
 - generation of analytics and reporting for monitoring population immunization coverage.
+
+### Cross-component resource architecture
+
+In practice, several of the components described above exchange the same underlying FHIR resources. This diagram drops to the resource level: which resources each component owns, and which of those resources connect to another component. Plain lines show two components integrating broadly; arrows show a specific resource flowing from one component into another. Drag to pan, scroll to zoom, and hover or tab to a resource, component, or legend item to see its connections.
+
+<br clear="all"/>
+
+<style>
+  .arch-diagram {
+    --blueprint: #2255AA;
+    --blueprint-soft: #dce7f6;
+    --pencil-soft: #e6e6e6;
+    --ink: #1b232a;
+    --ink-soft: #5c6b74;
+    --paper: #ffffff;
+    --paper-raised: #f4f7f9;
+    --line: #c9d2d6;
+    --grid: rgba(27, 35, 42, 0.05);
+    --mono-font: ui-monospace, "SFMono-Regular", Menlo, Consolas, "Liberation Mono", monospace;
+    margin: 1.5rem 0;
+  }
+  .arch-legend { display: flex; flex-wrap: wrap; gap: 1.1rem; margin: 0 0 0.7rem; font-size: 0.78rem; color: var(--ink-soft); }
+  .arch-legend span { display: inline-flex; align-items: center; gap: 0.35rem; }
+  .arch-legend span[data-legend] { cursor: pointer; padding: 2px 4px; margin: -2px -4px; border-radius: 3px; }
+  .arch-legend span[data-legend]:hover, .arch-legend span[data-legend]:focus-visible { background: var(--paper-raised); }
+  .arch-legend .swatch-box { width: 12px; height: 12px; background: var(--blueprint-soft); border: 1px solid var(--line); }
+  .arch-legend .swatch-box.pale { background: var(--pencil-soft); }
+
+  .arch-wrap { display: flex; gap: 1rem; align-items: flex-start; flex-wrap: wrap; }
+
+  .arch-canvas {
+    flex: 1 1 480px;
+    height: 640px;
+    position: relative;
+    overflow: hidden;
+    border: 1px solid var(--line);
+    cursor: grab;
+    touch-action: none;
+    background-color: var(--paper);
+    background-image:
+      linear-gradient(var(--grid) 1px, transparent 1px),
+      linear-gradient(90deg, var(--grid) 1px, transparent 1px);
+    background-size: 24px 24px;
+  }
+  .arch-canvas.dragging { cursor: grabbing; }
+  .arch-canvas svg { display: block; }
+
+  .arch-info {
+    flex: 0 0 240px;
+    min-width: 220px;
+    border: 1px solid var(--line);
+    background: var(--paper-raised);
+    padding: 0.9rem 1rem;
+    font-size: 0.82rem;
+    max-height: 640px;
+    overflow-y: auto;
+  }
+  .arch-info-hint { margin: 0 0 0.8rem; color: var(--ink-soft); font-size: 0.82rem; }
+  .arch-stat-row {
+    display: flex; justify-content: space-between; gap: 0.6rem;
+    padding: 0.28rem 0; border-bottom: 1px solid var(--line);
+    color: var(--ink-soft); font-size: 0.78rem;
+  }
+  .arch-stat-row:last-child { border-bottom: none; }
+  .arch-stat-n { color: var(--ink); font-weight: 600; font-family: var(--mono-font); }
+
+  .arch-info-title {
+    font-family: var(--mono-font);
+    font-weight: 600; font-size: 0.92rem; color: var(--ink); margin: 0 0 0.2rem;
+  }
+  .arch-info-sub { font-size: 0.76rem; color: var(--ink-soft); margin: 0 0 0.8rem; }
+  .arch-rel-list { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 0.55rem; }
+  .arch-rel-item { border-left: 2px solid var(--blueprint); padding-left: 0.6rem; }
+  .arch-rel-head { font-size: 0.8rem; color: var(--ink); font-weight: 600; }
+  .arch-rel-desc { font-size: 0.76rem; color: var(--ink-soft); margin: 0.15rem 0 0; }
+
+  .arch-node { cursor: pointer; }
+  .arch-node rect { transition: opacity 0.15s ease; }
+  .arch-node text { pointer-events: none; }
+  .arch-edge { transition: opacity 0.15s ease; }
+  .arch-node.dim, .arch-edge.dim { opacity: 0.15; }
+  .arch-node.active { filter: drop-shadow(0 0 3px var(--blueprint)); }
+  #arch-arrow path { fill: var(--blueprint); }
+
+  @media (prefers-reduced-motion: reduce) {
+    .arch-node rect, .arch-edge { transition: none; }
+  }
+
+  @media (max-width: 720px) {
+    .arch-canvas { height: 420px; }
+    .arch-info { flex-basis: 100%; }
+  }
+</style>
+
+<div class="arch-diagram">
+  <div class="arch-legend">
+    <span data-legend="profiled" tabindex="0" role="button"><span class="swatch-box"></span> profiled in this IG</span>
+    <span data-legend="unprofiled" tabindex="0" role="button"><span class="swatch-box pale"></span> named, not yet profiled</span>
+  </div>
+  <div class="arch-wrap">
+    <div class="arch-canvas" id="arch-canvas">
+      <svg id="arch-svg" width="100%" height="100%"></svg>
+    </div>
+    <div class="arch-info" id="arch-info">
+      <div id="arch-info-body">
+        <p class="arch-info-hint">Hover or tab to a resource, component, or legend item to see what it connects to.</p>
+        <div class="arch-stat-row"><span>Components shown</span><span class="arch-stat-n" id="arch-stat-components">–</span></div>
+        <div class="arch-stat-row"><span>Resources</span><span class="arch-stat-n" id="arch-stat-resources">–</span></div>
+        <div class="arch-stat-row"><span>Relationships</span><span class="arch-stat-n" id="arch-stat-relationships">–</span></div>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="architecture-diagram.js"></script>
 
