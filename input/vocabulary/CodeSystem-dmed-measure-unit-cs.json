@@ -9,606 +9,448 @@
   "url": "https://terminology.dhp.uz/fhir/core/CodeSystem/dmed-measure-unit-cs",
   "concept": [
     {
-      "code": "253",
-      "display": "foiz",
-      "designation": [
-        {
-          "language": "ru",
-          "value": "процент"
-        },
-        {
-          "language": "en",
-          "value": "percent"
-        }
-      ]
-    },
-    {
-      "code": "314",
-      "display": "nanogramm",
-      "designation": [
-        {
-          "language": "ru",
-          "value": "нанограмм"
-        },
-        {
-          "language": "en",
-          "value": "nanogram"
-        }
-      ]
-    },
-    {
-      "code": "303",
-      "display": "mikrolitr",
-      "designation": [
-        {
-          "language": "ru",
-          "value": "микролитр"
-        },
-        {
-          "language": "en",
-          "value": "microliter"
-        }
-      ]
-    },
-    {
-      "code": "315",
-      "display": "nanolitr",
-      "designation": [
-        {
-          "language": "ru",
-          "value": "нанолитр"
-        },
-        {
-          "language": "en",
-          "value": "nanoliter"
-        }
-      ]
-    },
-    {
-      "code": "320",
-      "display": "rezerford",
-      "designation": [
-        {
-          "language": "ru",
-          "value": "резерфорд"
-        },
-        {
-          "language": "en",
-          "value": "rutherford"
-        }
-      ]
-    },
-    {
-      "code": "721",
-      "display": "grey",
-      "designation": [
-        {
-          "language": "ru",
-          "value": "грей"
-        },
-        {
-          "language": "en",
-          "value": "gray"
-        }
-      ]
-    },
-    {
-      "code": "286",
-      "display": "kilokaloriya",
-      "designation": [
-        {
-          "language": "ru",
-          "value": "килокалория"
-        },
-        {
-          "language": "en",
-          "value": "kilocalorie"
-        }
-      ]
-    },
-    {
-      "code": "310",
-      "display": "millimol",
-      "designation": [
-        {
-          "language": "ru",
-          "value": "миллимоль"
-        },
-        {
-          "language": "en",
-          "value": "millimole"
-        }
-      ]
-    },
-    {
-      "code": "304",
-      "display": "mikromol",
-      "designation": [
-        {
-          "language": "ru",
-          "value": "микромоль"
-        },
-        {
-          "language": "en",
-          "value": "micromoles"
-        }
-      ]
-    },
-    {
-      "code": "316",
-      "display": "nanomol",
-      "designation": [
-        {
-          "language": "ru",
-          "value": "наномоль"
-        },
-        {
-          "language": "en",
-          "value": "nanomole"
-        }
-      ]
-    },
-    {
-      "code": "319",
-      "display": "osmol",
-      "designation": [
-        {
-          "language": "ru",
-          "value": "осмоль"
-        },
-        {
-          "language": "en",
-          "value": "osmol"
-        }
-      ]
-    },
-    {
-      "code": "313",
-      "display": "milliosmol",
-      "designation": [
-        {
-          "language": "ru",
-          "value": "миллиосмоль"
-        }
-      ]
-    },
-    {
-      "code": "840",
-      "display": "massa foizi",
-      "designation": [
-        {
-          "language": "ru",
-          "value": "процент массовый"
-        },
-        {
-          "language": "en",
-          "value": "mass percentage"
-        }
-      ]
-    },
-    {
-      "code": "1220",
-      "display": "hajm foizi",
-      "designation": [
-        {
-          "language": "ru",
-          "value": "процент объемный"
-        },
-        {
-          "language": "en",
-          "value": "volume percentage"
-        }
-      ]
-    },
-    {
-      "code": "280",
-      "display": "tomchi",
-      "designation": [
-        {
-          "language": "ru",
-          "value": "капля"
-        },
-        {
-          "language": "en",
-          "value": "drop"
-        }
-      ]
-    },
-    {
-      "code": "264",
-      "display": "ulush",
-      "designation": [
-        {
-          "language": "ru",
-          "value": "доля"
-        },
-        {
-          "language": "en",
-          "value": "fraction"
-        }
-      ]
-    },
-    {
-      "code": "262",
-      "display": "doza",
-      "designation": [
-        {
-          "language": "ru",
-          "value": "доза"
-        },
-        {
-          "language": "en",
-          "value": "dose"
-        }
-      ]
-    },
-    {
-      "code": "287",
-      "display": "hujayra",
-      "designation": [
-        {
-          "language": "ru",
-          "value": "клетка"
-        },
-        {
-          "language": "en",
-          "value": "cell"
-        }
-      ]
-    },
-    {
-      "code": "306",
-      "display": "mln hujayra",
-      "designation": [
-        {
-          "language": "ru",
-          "value": "млн клеток"
-        },
-        {
-          "language": "en",
-          "value": "million cells"
-        }
-      ]
-    },
-    {
-      "code": "307",
-      "display": "mlrd hujayra",
-      "designation": [
-        {
-          "language": "ru",
-          "value": "млрд клеток"
-        },
-        {
-          "language": "en",
-          "value": "billion cells"
-        }
-      ]
-    },
-    {
-      "code": "309",
-      "display": "mlrd spor",
-      "designation": [
-        {
-          "language": "ru",
-          "value": "млрд спор"
-        },
-        {
-          "language": "en",
-          "value": "billion disputes"
-        }
-      ]
-    },
-    {
-      "code": "259",
-      "display": "millilitrda gramm",
-      "designation": [
-        {
-          "language": "ru",
-          "value": "грамм на миллилитр"
-        },
-        {
-          "language": "en",
-          "value": "gramsPerMilliLiter"
-        }
-      ]
-    },
-    {
-      "code": "298",
-      "display": "millilitrda milligramm",
-      "designation": [
-        {
-          "language": "ru",
-          "value": "миллиграмм на миллилитр"
-        },
-        {
-          "language": "en",
-          "value": "milliGramsPerMilliLiter"
-        }
-      ]
-    },
-    {
-      "code": "302",
-      "display": "millilitrda mikrogramm",
-      "designation": [
-        {
-          "language": "ru",
-          "value": "микрограмм на миллилитр"
-        },
-        {
-          "language": "en",
-          "value": "microGramsPerMilliLiter"
-        }
-      ]
-    },
-    {
-      "code": "296",
-      "display": "grammda milligramm",
-      "designation": [
-        {
-          "language": "ru",
-          "value": "миллиграмм на грамм"
-        },
-        {
-          "language": "en",
-          "value": "milliGramsPerGram"
-        }
-      ]
-    },
-    {
-      "code": "311",
-      "display": "litrda millimol",
-      "designation": [
-        {
-          "language": "ru",
-          "value": "миллимоль на литр"
-        },
-        {
-          "language": "en",
-          "value": "milliMolesPerLiter"
-        }
-      ]
-    },
-    {
-      "code": "317",
-      "display": "optik birlik",
-      "designation": [
-        {
-          "language": "ru",
-          "value": "оптическая единица"
-        },
-        {
-          "language": "en",
-          "value": "optical unit"
-        }
-      ]
-    },
-    {
-      "code": "282",
-      "display": "kvadrat santimetr",
-      "designation": [
-        {
-          "language": "ru",
-          "value": "квадратный сантиметр"
-        },
-        {
-          "language": "en",
-          "value": "square centimeter"
-        }
-      ]
-    },
-    {
-      "code": "300",
-      "display": "millilitr",
-      "designation": [
-        {
-          "language": "ru",
-          "value": "миллилитр"
-        },
-        {
-          "language": "en",
-          "value": "milliLiter"
-        }
-      ]
-    },
-    {
-      "code": "291",
-      "display": "litr",
-      "designation": [
-        {
-          "language": "ru",
-          "value": "литр"
-        },
-        {
-          "language": "en",
-          "value": "liter"
-        }
-      ]
-    },
-    {
-      "code": "295",
-      "display": "milligramm",
-      "designation": [
-        {
-          "language": "ru",
-          "value": "миллиграмм"
-        },
-        {
-          "language": "en",
-          "value": "milligram"
-        }
-      ]
-    },
-    {
-      "code": "258",
-      "display": "gramm",
-      "designation": [
-        {
-          "language": "ru",
-          "value": "грамм"
-        },
-        {
-          "language": "en",
-          "value": "gramm"
-        }
-      ]
-    },
-    {
-      "code": "301",
-      "display": "mikrogramm",
+      "code": "1",
+      "display": "микрограмм",
       "designation": [
         {
           "language": "ru",
           "value": "микрограмм"
-        },
-        {
-          "language": "en",
-          "value": "microGram"
         }
       ]
     },
     {
-      "code": "283",
-      "display": "kilogramm",
+      "code": "2",
+      "display": "миллиграмм",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "миллиграмм"
+        }
+      ]
+    },
+    {
+      "code": "3",
+      "display": "нг",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "нг"
+        }
+      ]
+    },
+    {
+      "code": "4",
+      "display": "мкл",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "мкл"
+        }
+      ]
+    },
+    {
+      "code": "5",
+      "display": "нл",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "нл"
+        }
+      ]
+    },
+    {
+      "code": "6",
+      "display": "Рд",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Рд"
+        }
+      ]
+    },
+    {
+      "code": "7",
+      "display": "Гр",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Гр"
+        }
+      ]
+    },
+    {
+      "code": "8",
+      "display": "рад",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "рад"
+        }
+      ]
+    },
+    {
+      "code": "9",
+      "display": "ккал",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "ккал"
+        }
+      ]
+    },
+    {
+      "code": "10",
+      "display": "ммоль",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "ммоль"
+        }
+      ]
+    },
+    {
+      "code": "11",
+      "display": "мкмоль",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "мкмоль"
+        }
+      ]
+    },
+    {
+      "code": "12",
+      "display": "нмоль",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "нмоль"
+        }
+      ]
+    },
+    {
+      "code": "13",
+      "display": "Осм",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Осм"
+        }
+      ]
+    },
+    {
+      "code": "14",
+      "display": "мОсм",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "мОсм"
+        }
+      ]
+    },
+    {
+      "code": "15",
+      "display": "%, m",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "%, m"
+        }
+      ]
+    },
+    {
+      "code": "16",
+      "display": "%, vol",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "%, vol"
+        }
+      ]
+    },
+    {
+      "code": "17",
+      "display": "капля",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "капля"
+        }
+      ]
+    },
+    {
+      "code": "18",
+      "display": "доля",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "доля"
+        }
+      ]
+    },
+    {
+      "code": "19",
+      "display": "доза",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "доза"
+        }
+      ]
+    },
+    {
+      "code": "20",
+      "display": "клетка",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "клетка"
+        }
+      ]
+    },
+    {
+      "code": "21",
+      "display": "млн клеток",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "млн клеток"
+        }
+      ]
+    },
+    {
+      "code": "22",
+      "display": "млрд клеток",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "млрд клеток"
+        }
+      ]
+    },
+    {
+      "code": "23",
+      "display": "спора",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "спора"
+        }
+      ]
+    },
+    {
+      "code": "24",
+      "display": "млрд спор",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "млрд спор"
+        }
+      ]
+    },
+    {
+      "code": "25",
+      "display": "грамм на миллилитр",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "грамм на миллилитр"
+        }
+      ]
+    },
+    {
+      "code": "26",
+      "display": "мкг/мл",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "мкг/мл"
+        }
+      ]
+    },
+    {
+      "code": "27",
+      "display": "мкг/мкл",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "мкг/мкл"
+        }
+      ]
+    },
+    {
+      "code": "28",
+      "display": "мкг/г",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "мкг/г"
+        }
+      ]
+    },
+    {
+      "code": "30",
+      "display": "ммоль/л",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "ммоль/л"
+        }
+      ]
+    },
+    {
+      "code": "31",
+      "display": "ОЕ",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "ОЕ"
+        }
+      ]
+    },
+    {
+      "code": "32",
+      "display": "кв.см",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "кв.см"
+        }
+      ]
+    },
+    {
+      "code": "33",
+      "display": "литр",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "литр"
+        }
+      ]
+    },
+    {
+      "code": "34",
+      "display": "м",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "м"
+        }
+      ]
+    },
+    {
+      "code": "35",
+      "display": "см",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "см"
+        }
+      ]
+    },
+    {
+      "code": "37",
+      "display": "килограмм",
       "designation": [
         {
           "language": "ru",
           "value": "килограмм"
-        },
-        {
-          "language": "en",
-          "value": "kiloGram"
         }
       ]
     },
     {
-      "code": "261",
-      "display": "joul",
+      "code": "38",
+      "display": "Дж",
       "designation": [
         {
           "language": "ru",
-          "value": "джоуль"
-        },
-        {
-          "language": "en",
-          "value": "joule"
+          "value": "Дж"
         }
       ]
     },
     {
-      "code": "284",
-      "display": "kilojoul",
+      "code": "39",
+      "display": "кДж",
       "designation": [
         {
           "language": "ru",
-          "value": "килоджоуль"
-        },
-        {
-          "language": "en",
-          "value": "kilojoule"
+          "value": "кДж"
         }
       ]
     },
     {
-      "code": "260",
-      "display": "gigabekkerel",
+      "code": "40",
+      "display": "ГБк",
       "designation": [
         {
           "language": "ru",
-          "value": "гигабеккерель"
-        },
-        {
-          "language": "en",
-          "value": "gigabecquerel"
+          "value": "ГБк"
         }
       ]
     },
     {
-      "code": "281",
-      "display": "kilobekkerel",
+      "code": "41",
+      "display": "кБк",
       "designation": [
         {
           "language": "ru",
-          "value": "килобеккерель"
-        },
-        {
-          "language": "en",
-          "value": "kilobecquerel"
+          "value": "кБк"
         }
       ]
     },
     {
-      "code": "294",
-      "display": "megabekkerel",
+      "code": "42",
+      "display": "МБк",
       "designation": [
         {
           "language": "ru",
-          "value": "мегабеккерель"
-        },
-        {
-          "language": "en",
-          "value": "megabecquerel"
+          "value": "МБк"
         }
       ]
     },
     {
-      "code": "312",
-      "display": "mol",
+      "code": "43",
+      "display": "моль",
       "designation": [
         {
           "language": "ru",
           "value": "моль"
-        },
-        {
-          "language": "en",
-          "value": "mole"
         }
       ]
     },
     {
-      "code": "257",
-      "display": "bekkerel",
+      "code": "44",
+      "display": "Бк",
       "designation": [
         {
           "language": "ru",
-          "value": "беккерель"
-        },
-        {
-          "language": "en",
-          "value": "becquerel"
+          "value": "Бк"
         }
       ]
     },
     {
-      "code": "252",
-      "display": "dona",
+      "code": "45",
+      "display": "шт",
       "designation": [
         {
           "language": "ru",
-          "value": "штука"
-        },
-        {
-          "language": "en",
-          "value": "thing"
+          "value": "шт"
         }
       ]
     },
     {
-      "code": "263",
-      "display": "oʻrtacha samarali immunizatsiya qilingan doza miqdori",
+      "code": "46",
+      "display": "доза излучения",
       "designation": [
         {
           "language": "ru",
-          "value": "количество среднеэффективных иммунизирующих доз"
-        },
-        {
-          "language": "en",
-          "value": "number of average effective immunizing doses"
+          "value": "доза излучения"
         }
       ]
     },
     {
-      "code": "271",
-      "display": "loyqalik birligi",
+      "code": "47",
+      "display": "единица мутности",
       "designation": [
         {
           "language": "ru",
@@ -617,1920 +459,782 @@
       ]
     },
     {
-      "code": "265",
-      "display": "biologik faollikning taʼsir birligi",
+      "code": "48",
+      "display": "миллион единиц действия",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "миллион единиц действия"
+        }
+      ]
+    },
+    {
+      "code": "49",
+      "display": "PFU",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "PFU"
+        }
+      ]
+    },
+    {
+      "code": "50",
+      "display": "Lf",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Lf"
+        }
+      ]
+    },
+    {
+      "code": "51",
+      "display": "Ph.Eur.U.",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Ph.Eur.U."
+        }
+      ]
+    },
+    {
+      "code": "52",
+      "display": "единица действия биологической активности",
       "designation": [
         {
           "language": "ru",
           "value": "единица действия биологической активности"
-        },
-        {
-          "language": "en",
-          "value": "unit of action of biological activity"
         }
       ]
     },
     {
-      "code": "323",
-      "display": "shartli birlik",
+      "code": "53",
+      "display": "PNU",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "PNU"
+        }
+      ]
+    },
+    {
+      "code": "55",
+      "display": "условная единица",
       "designation": [
         {
           "language": "ru",
           "value": "условная единица"
-        },
-        {
-          "language": "en",
-          "value": "conventional unit"
         }
       ]
     },
     {
-      "code": "285",
-      "display": "kallikreinni faolsizlantirish birligi",
+      "code": "56",
+      "display": "КИЕ",
       "designation": [
         {
           "language": "ru",
-          "value": "калликреин инактивирующая единица"
-        },
-        {
-          "language": "en",
-          "value": "kallikrein inactivating unit"
+          "value": "КИЕ"
         }
       ]
     },
     {
-      "code": "293",
-      "display": "lipoprotein-lipaza birligi",
+      "code": "57",
+      "display": "ЛЕ",
       "designation": [
         {
           "language": "ru",
-          "value": "единица липопротеина-липазы"
-        },
-        {
-          "language": "en",
-          "value": "lipoprotein lipase unit"
+          "value": "ЛЕ"
         }
       ]
     },
     {
-      "code": "254",
-      "display": "antigenik birlik",
+      "code": "58",
+      "display": "антигенная единица",
       "designation": [
         {
           "language": "ru",
           "value": "антигенная единица"
-        },
-        {
-          "language": "en",
-          "value": "antigenic unit"
         }
       ]
     },
     {
-      "code": "642",
-      "display": "titrlash birligi",
+      "code": "59",
+      "display": "титрационная единицa",
       "designation": [
         {
           "language": "ru",
-          "value": "титрационная единица"
-        },
-        {
-          "language": "en",
-          "value": "titration unit"
+          "value": "титрационная единицa"
         }
       ]
     },
     {
-      "code": "256",
-      "display": "antitripsin birligi",
+      "code": "60",
+      "display": "ИЕ",
       "designation": [
         {
           "language": "ru",
-          "value": "антитрипсиновая единица"
-        },
-        {
-          "language": "en",
-          "value": "antitrypsin unit"
+          "value": "ИЕ"
         }
       ]
     },
     {
-      "code": "279",
-      "display": "immunoferment tahlili birligi",
+      "code": "61",
+      "display": "АТрЕ",
       "designation": [
         {
           "language": "ru",
-          "value": "единица иммуноферментного анализа"
-        },
-        {
-          "language": "en",
-          "value": "enzyme immunoassay unit"
+          "value": "АТрЕ"
         }
       ]
     },
     {
-      "code": "255",
-      "display": "antitrombotik taʼsirning xalqaro birligi",
+      "code": "62",
+      "display": "TУ",
       "designation": [
         {
           "language": "ru",
-          "value": "международная единица антитромботического действия"
-        },
-        {
-          "language": "en",
-          "value": "international unit of antithrombotic action"
+          "value": "TУ"
         }
       ]
     },
     {
-      "code": "322",
-      "display": "toʻqimalarning 50% sitopatik dozasi",
+      "code": "63",
+      "display": "ИФА ед",
       "designation": [
         {
           "language": "ru",
-          "value": "50-процентная тканевая цитопатическая доза"
-        },
-        {
-          "language": "en",
-          "value": "50% tissue cytopathic dose"
+          "value": "ИФА ед"
         }
       ]
     },
     {
-      "code": "292",
-      "display": "yarimletal doza birligi",
+      "code": "64",
+      "display": "анти-Xa МЕ",
       "designation": [
         {
           "language": "ru",
-          "value": "единица полулетальной дозы"
-        },
-        {
-          "language": "en",
-          "value": "half-lethal dose unit"
+          "value": "анти-Xa МЕ"
         }
       ]
     },
     {
-      "code": "266",
-      "display": "Elayza biologik faolligining taʼsir birligi",
+      "code": "65",
+      "display": "ТЦД 50",
       "designation": [
         {
           "language": "ru",
-          "value": "единица действия биологической активности Элайза (ELISA)"
-        },
-        {
-          "language": "en",
-          "value": "Elisa biological activity unit (ELISA)"
+          "value": "ТЦД 50"
         }
       ]
     },
     {
-      "code": "275",
-      "display": "yarim yuqumli doza birligi",
+      "code": "66",
+      "display": "ЛД 50",
       "designation": [
         {
           "language": "ru",
-          "value": "единица полуинфицирующей дозы"
-        },
-        {
-          "language": "en",
-          "value": "unit of semi-infectious dose"
+          "value": "ЛД 50"
         }
       ]
     },
     {
-      "code": "327",
-      "display": "yarim patologik oʻzgarishlarning doza birliklari",
+      "code": "67",
+      "display": "ELU",
       "designation": [
         {
           "language": "ru",
-          "value": "единицы дозы полупатологоанатомических изменений"
-        },
-        {
-          "language": "en",
-          "value": "units of dose per half of pathological changes"
+          "value": "ELU"
         }
       ]
     },
     {
-      "code": "325",
-      "display": "yarimsitopatik taʼsir birligi dozasi",
+      "code": "68",
+      "display": "ИД 50",
       "designation": [
         {
           "language": "ru",
-          "value": "единица дозы полуцитопатического эффекта"
-        },
-        {
-          "language": "en",
-          "value": "unit dose of semi-cytopathic effect"
+          "value": "ИД 50"
         }
       ]
     },
     {
-      "code": "274",
-      "display": "bogʻlash birligi",
+      "code": "69",
+      "display": "ЭИД 50",
       "designation": [
         {
           "language": "ru",
-          "value": "единица связывания"
-        },
-        {
-          "language": "en",
-          "value": "binding unit"
+          "value": "ЭИД 50"
         }
       ]
     },
     {
-      "code": "277",
-      "display": "reaktivlik indeksi (standartlashtirishning biologik birligi)",
+      "code": "70",
+      "display": "ЦПД 50",
       "designation": [
         {
           "language": "ru",
-          "value": "индекс реактивности (биологическая единица стандартизации)"
-        },
-        {
-          "language": "en",
-          "value": "reactivity index (biological unit of standardization)"
+          "value": "ЦПД 50"
         }
       ]
     },
     {
-      "code": "267",
-      "display": "antigen birligi",
+      "code": "71",
+      "display": "МИДэ",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "МИДэ"
+        }
+      ]
+    },
+    {
+      "code": "72",
+      "display": "ЕС",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "ЕС"
+        }
+      ]
+    },
+    {
+      "code": "73",
+      "display": "ИР",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "ИР"
+        }
+      ]
+    },
+    {
+      "code": "74",
+      "display": "единица антигена",
       "designation": [
         {
           "language": "ru",
           "value": "единица антигена"
-        },
-        {
-          "language": "en",
-          "value": "antigen unit"
         }
       ]
     },
     {
-      "code": "270",
-      "display": "millilitrda biologik faollikning taʼsir birligi",
+      "code": "75",
+      "display": "единица Аллергена",
       "designation": [
         {
           "language": "ru",
-          "value": "единица действия биологической активности на миллилитр"
-        },
-        {
-          "language": "en",
-          "value": "unit of biological activity per milliliter"
+          "value": "единица Аллергена"
         }
       ]
     },
     {
-      "code": "269",
-      "display": "millilitrda oqsil azot birligi",
+      "code": "76",
+      "display": "ЛЕД",
       "designation": [
         {
           "language": "ru",
-          "value": "единица белкового азота на миллилитр"
-        },
-        {
-          "language": "en",
-          "value": "unit of protein nitrogen per milliliter"
+          "value": "ЛЕД"
         }
       ]
     },
     {
-      "code": "278",
-      "display": "reaktivlik indeksi (standartizatsiya biologik birligi)/ml",
-      "designation": [
-        {
-          "language": "ru",
-          "value": "индекс реактивности (биологическая единица стандартизации) на миллилитр"
-        },
-        {
-          "language": "en",
-          "value": "reactivity index (biological unit of standardization) per milliliter"
-        }
-      ]
-    },
-    {
-      "code": "273",
-      "display": "D-antigen birligi",
-      "designation": [
-        {
-          "language": "ru",
-          "value": "единица D-антигена"
-        },
-        {
-          "language": "en",
-          "value": "D antigen unit"
-        }
-      ]
-    },
-    {
-      "code": "1080",
-      "display": "% massa/hajm",
-      "designation": [
-        {
-          "language": "ru",
-          "value": "% масса/объем"
-        },
-        {
-          "language": "en",
-          "value": "% mass/volume"
-        }
-      ]
-    },
-    {
-      "code": "1140",
-      "display": "bar",
-      "designation": [
-        {
-          "language": "ru",
-          "value": "bar"
-        },
-        {
-          "language": "en",
-          "value": "bar"
-        }
-      ]
-    },
-    {
-      "code": "660",
-      "display": "DU",
-      "designation": [
-        {
-          "language": "ru",
-          "value": "DU"
-        },
-        {
-          "language": "en",
-          "value": "DU"
-        }
-      ]
-    },
-    {
-      "code": "1160",
-      "display": "G",
-      "designation": [
-        {
-          "language": "ru",
-          "value": "G"
-        },
-        {
-          "language": "en",
-          "value": "G"
-        }
-      ]
-    },
-    {
-      "code": "1060",
-      "display": "Gauge",
-      "designation": [
-        {
-          "language": "ru",
-          "value": "Gauge"
-        },
-        {
-          "language": "en",
-          "value": "Gauge"
-        }
-      ]
-    },
-    {
-      "code": "681",
-      "display": "amper",
-      "designation": [
-        {
-          "language": "ru",
-          "value": "ампер"
-        },
-        {
-          "language": "en",
-          "value": "amper"
-        }
-      ]
-    },
-    {
-      "code": "691",
-      "display": "amper kvadrat metr",
-      "designation": [
-        {
-          "language": "ru",
-          "value": "ампер на квадратный метр"
-        },
-        {
-          "language": "en",
-          "value": "ampere per square meter"
-        }
-      ]
-    },
-    {
-      "code": "692",
-      "display": "amper metr",
-      "designation": [
-        {
-          "language": "ru",
-          "value": "ампер на метр"
-        },
-        {
-          "language": "en",
-          "value": "ampere per meter"
-        }
-      ]
-    },
-    {
-      "code": "800",
-      "display": "анти-ХА МЕ",
-      "designation": [
-        {
-          "language": "ru",
-          "value": "анти-ХА МЕ"
-        },
-        {
-          "language": "en",
-          "value": "анти-ХА МЕ"
-        }
-      ]
-    },
-    {
-      "code": "1180",
-      "display": "в/об",
-      "designation": [
-        {
-          "language": "ru",
-          "value": "в/об"
-        },
-        {
-          "language": "en",
-          "value": "w/v"
-        }
-      ]
-    },
-    {
-      "code": "702",
-      "display": "vatt",
-      "designation": [
-        {
-          "language": "ru",
-          "value": "ватт"
-        },
-        {
-          "language": "en",
-          "value": "vatt"
-        }
-      ]
-    },
-    {
-      "code": "730",
-      "display": "vatt kvadrat metr",
-      "designation": [
-        {
-          "language": "ru",
-          "value": "ватт на квадратный метр"
-        },
-        {
-          "language": "en",
-          "value": "vatt kvadrat metr"
-        }
-      ]
-    },
-    {
-      "code": "729",
-      "display": "vatt metr-kelvin",
-      "designation": [
-        {
-          "language": "ru",
-          "value": "ватт на метр-кельвин"
-        },
-        {
-          "language": "en",
-          "value": "vatt metr-kelvin"
-        }
-      ]
-    },
-    {
-      "code": "716",
-      "display": "grey steradian",
-      "designation": [
-        {
-          "language": "ru",
-          "value": "ватт на стерадиан"
-        },
-        {
-          "language": "en",
-          "value": "grey steradian"
-        }
-      ]
-    },
-    {
-      "code": "715",
-      "display": "vatt steradian uchun - kvadrat metr",
-      "designation": [
-        {
-          "language": "ru",
-          "value": "ватт на стерадиан- \r\nквадратный метр"
-        },
-        {
-          "language": "en",
-          "value": "watt per steradian - square \r\nmeter"
-        }
-      ]
-    },
-    {
-      "code": "708",
-      "display": "veber",
-      "designation": [
-        {
-          "language": "ru",
-          "value": "вебер"
-        },
-        {
-          "language": "en",
-          "value": "veber"
-        }
-      ]
-    },
-    {
-      "code": "760",
-      "display": "virusli zarralar",
-      "designation": [
-        {
-          "language": "ru",
-          "value": "вирусные частицы"
-        },
-        {
-          "language": "en",
-          "value": "viral particles"
-        }
-      ]
-    },
-    {
-      "code": "740",
-      "display": "Vodorod ko'rsatkichi",
-      "designation": [
-        {
-          "language": "ru",
-          "value": "Водородный показатель"
-        },
-        {
-          "language": "en",
-          "value": "Hydrogen exponent"
-        }
-      ]
-    },
-    {
-      "code": "704",
-      "display": "volt",
-      "designation": [
-        {
-          "language": "ru",
-          "value": "вольт"
-        },
-        {
-          "language": "en",
-          "value": "volt"
-        }
-      ]
-    },
-    {
-      "code": "713",
-      "display": "volt metr",
-      "designation": [
-        {
-          "language": "ru",
-          "value": "вольт на метр"
-        },
-        {
-          "language": "en",
-          "value": "volt metr"
-        }
-      ]
-    },
-    {
-      "code": "341",
-      "display": "g/mol",
-      "designation": [
-        {
-          "language": "ru",
-          "value": "г/моль"
-        },
-        {
-          "language": "en",
-          "value": "g/mol"
-        }
-      ]
-    },
-    {
-      "code": "712",
-      "display": "genri",
-      "designation": [
-        {
-          "language": "ru",
-          "value": "генри"
-        },
-        {
-          "language": "en",
-          "value": "genri"
-        }
-      ]
-    },
-    {
-      "code": "734",
-      "display": "genri metr",
-      "designation": [
-        {
-          "language": "ru",
-          "value": "генри на метр"
-        },
-        {
-          "language": "en",
-          "value": "genri metr"
-        }
-      ]
-    },
-    {
-      "code": "701",
-      "display": "gers",
-      "designation": [
-        {
-          "language": "ru",
-          "value": "герц"
-        },
-        {
-          "language": "en",
-          "value": "gers"
-        }
-      ]
-    },
-    {
-      "code": "727",
-      "display": "Selsiy gradus",
-      "designation": [
-        {
-          "language": "ru",
-          "value": "градус Цельсия"
-        },
-        {
-          "language": "en",
-          "value": "Selsiy gradus"
-        }
-      ]
-    },
-    {
-      "code": "1100",
-      "display": "daraja°",
-      "designation": [
-        {
-          "language": "ru",
-          "value": "градус°"
-        },
-        {
-          "language": "en",
-          "value": "degree°"
-        }
-      ]
-    },
-    {
-      "code": "381",
-      "display": "грамм на литр",
-      "designation": [
-        {
-          "language": "ru",
-          "value": "грамм на литр"
-        },
-        {
-          "language": "en",
-          "value": "грамм на литр"
-        }
-      ]
-    },
-    {
-      "code": "719",
-      "display": "grey sekund",
-      "designation": [
-        {
-          "language": "ru",
-          "value": "грей в секунду"
-        },
-        {
-          "language": "en",
-          "value": "grey sekund"
-        }
-      ]
-    },
-    {
-      "code": "732",
-      "display": "joul kelvin",
-      "designation": [
-        {
-          "language": "ru",
-          "value": "джоуль на кельвин"
-        },
-        {
-          "language": "en",
-          "value": "joul kelvin"
-        }
-      ]
-    },
-    {
-      "code": "733",
-      "display": "joul kilogramm",
-      "designation": [
-        {
-          "language": "ru",
-          "value": "джоуль на килограмм"
-        },
-        {
-          "language": "en",
-          "value": "joul kilogramm"
-        }
-      ]
-    },
-    {
-      "code": "731",
-      "display": "joul kilogramm-kelvin",
-      "designation": [
-        {
-          "language": "ru",
-          "value": "джоуль на килограмм-кельвин"
-        },
-        {
-          "language": "en",
-          "value": "joul kilogramm-kelvin"
-        }
-      ]
-    },
-    {
-      "code": "726",
-      "display": "joul mol",
-      "designation": [
-        {
-          "language": "ru",
-          "value": "джоуль на моль"
-        },
-        {
-          "language": "en",
-          "value": "joul mol"
-        }
-      ]
-    },
-    {
-      "code": "724",
-      "display": "joul mol-kelvin",
-      "designation": [
-        {
-          "language": "ru",
-          "value": "джоуль на моль-кельвин"
-        },
-        {
-          "language": "en",
-          "value": "joul mol-kelvin"
-        }
-      ]
-    },
-    {
-      "code": "1280",
-      "display": "dioptr",
-      "designation": [
-        {
-          "language": "ru",
-          "value": "диоптр"
-        },
-        {
-          "language": "en",
-          "value": "diopter"
-        }
-      ]
-    },
-    {
-      "code": "742",
-      "display": "Kerakli miqdor",
-      "designation": [
-        {
-          "language": "ru",
-          "value": "Достаточное количество"
-        },
-        {
-          "language": "en",
-          "value": "Quality specification"
-        }
-      ]
-    },
-    {
-      "code": "1120",
-      "display": "dyum",
-      "designation": [
-        {
-          "language": "ru",
-          "value": "дюйм"
-        },
-        {
-          "language": "en",
-          "value": "inch"
-        }
-      ]
-    },
-    {
-      "code": "542",
-      "display": "ЕД",
-      "designation": [
-        {
-          "language": "ru",
-          "value": "ЕД"
-        },
-        {
-          "language": "en",
-          "value": "ЕД"
-        }
-      ]
-    },
-    {
-      "code": "383",
+      "code": "77",
       "display": "ЕД на мл",
       "designation": [
         {
           "language": "ru",
           "value": "ЕД на мл"
-        },
-        {
-          "language": "en",
-          "value": "ЕД на мл"
         }
       ]
     },
     {
-      "code": "272",
-      "display": "Allergan birligi",
-      "designation": [
-        {
-          "language": "ru",
-          "value": "единица Аллерген"
-        },
-        {
-          "language": "en",
-          "value": "Allergan unit"
-        }
-      ]
-    },
-    {
-      "code": "268",
-      "display": "oqsil azot birligi",
-      "designation": [
-        {
-          "language": "ru",
-          "value": "единица белкового азота"
-        },
-        {
-          "language": "en",
-          "value": "protein nitrogen unit"
-        }
-      ]
-    },
-    {
-      "code": "900",
-      "display": "Fokusni shakllantirish birligi (FFU)",
-      "designation": [
-        {
-          "language": "ru",
-          "value": "единица формирования фокуса (FFU)"
-        },
-        {
-          "language": "en",
-          "value": "focus shaping unit (FFU)"
-        }
-      ]
-    },
-    {
-      "code": "1200",
-      "display": "O'zgartirish harakat birliklari",
-      "designation": [
-        {
-          "language": "ru",
-          "value": "Единицы модифицирующего \r\nдействия"
-        },
-        {
-          "language": "en",
-          "value": "Units of modifying action"
-        }
-      ]
-    },
-    {
-      "code": "720",
-      "display": "zivert",
-      "designation": [
-        {
-          "language": "ru",
-          "value": "зиверт"
-        },
-        {
-          "language": "en",
-          "value": "zivert"
-        }
-      ]
-    },
-    {
-      "code": "276",
-      "display": "xalqaro birlik",
-      "designation": [
-        {
-          "language": "ru",
-          "value": "интернациональная единица"
-        },
-        {
-          "language": "en",
-          "value": "international unit"
-        }
-      ]
-    },
-    {
-      "code": "780",
-      "display": "hujayra madaniyati \r\ninfektsion dozasi",
-      "designation": [
-        {
-          "language": "ru",
-          "value": "инфекционная доза \r\nдля клеточной культуры"
-        },
-        {
-          "language": "en",
-          "value": "cell culture infectious dose"
-        }
-      ]
-    },
-    {
-      "code": "683",
-      "display": "kandela",
-      "designation": [
-        {
-          "language": "ru",
-          "value": "кандела"
-        },
-        {
-          "language": "en",
-          "value": "kandela"
-        }
-      ]
-    },
-    {
-      "code": "694",
-      "display": "kandela kvadrat metr",
-      "designation": [
-        {
-          "language": "ru",
-          "value": "кандела на квадратный метр"
-        },
-        {
-          "language": "en",
-          "value": "candela per square meter"
-        }
-      ]
-    },
-    {
-      "code": "725",
-      "display": "katal",
-      "designation": [
-        {
-          "language": "ru",
-          "value": "катал"
-        },
-        {
-          "language": "en",
-          "value": "catal"
-        }
-      ]
-    },
-    {
-      "code": "684",
-      "display": "kvadrat metr",
-      "designation": [
-        {
-          "language": "ru",
-          "value": "квадратный метр"
-        },
-        {
-          "language": "en",
-          "value": "kvadrat metr"
-        }
-      ]
-    },
-    {
-      "code": "1101",
-      "display": "kvadrat millimetr",
-      "designation": [
-        {
-          "language": "ru",
-          "value": "Квадратный миллиметр"
-        },
-        {
-          "language": "en",
-          "value": "square millimeter"
-        }
-      ]
-    },
-    {
-      "code": "682",
-      "display": "kelvin",
-      "designation": [
-        {
-          "language": "ru",
-          "value": "кельвин"
-        },
-        {
-          "language": "en",
-          "value": "kelvin"
-        }
-      ]
-    },
-    {
-      "code": "690",
-      "display": "kilogramm kub metr",
-      "designation": [
-        {
-          "language": "ru",
-          "value": "килограмм на кубический \r\nметр"
-        },
-        {
-          "language": "en",
-          "value": "kilogram per cubic meter"
-        }
-      ]
-    },
-    {
-      "code": "580",
-      "display": "koloniya hosil qiluvchi \r\no'lchov birligi",
-      "designation": [
-        {
-          "language": "ru",
-          "value": "колониеобразующие единицы"
-        },
-        {
-          "language": "en",
-          "value": "colony-forming units"
-        }
-      ]
-    },
-    {
-      "code": "288",
-      "display": "detsimetr kub",
-      "designation": [
-        {
-          "language": "ru",
-          "value": "кубический дециметр"
-        },
-        {
-          "language": "en",
-          "value": "cubic decimeter"
-        }
-      ]
-    },
-    {
-      "code": "685",
-      "display": "kub metr",
-      "designation": [
-        {
-          "language": "ru",
-          "value": "кубический метр"
-        },
-        {
-          "language": "en",
-          "value": "kub metr"
-        }
-      ]
-    },
-    {
-      "code": "689",
-      "display": "kilogramm uchun kubometr",
-      "designation": [
-        {
-          "language": "ru",
-          "value": "кубический метр на \r\nкилограмм"
-        },
-        {
-          "language": "en",
-          "value": "cubic meter per kilogram"
-        }
-      ]
-    },
-    {
-      "code": "289",
-      "display": "millimetr kub",
-      "designation": [
-        {
-          "language": "ru",
-          "value": "кубический миллиметр"
-        },
-        {
-          "language": "en",
-          "value": "cubic millimeter"
-        }
-      ]
-    },
-    {
-      "code": "290",
-      "display": "santimetr kub",
-      "designation": [
-        {
-          "language": "ru",
-          "value": "кубический сантиметр"
-        },
-        {
-          "language": "en",
-          "value": "cubic centimeter"
-        }
-      ]
-    },
-    {
-      "code": "703",
-      "display": "kulon",
-      "designation": [
-        {
-          "language": "ru",
-          "value": "кулон"
-        },
-        {
-          "language": "en",
-          "value": "culon"
-        }
-      ]
-    },
-    {
-      "code": "710",
-      "display": "kulon kvadrat metr",
-      "designation": [
-        {
-          "language": "ru",
-          "value": "кулон на квадратный метр"
-        },
-        {
-          "language": "en",
-          "value": "pendant per square meter"
-        }
-      ]
-    },
-    {
-      "code": "728",
-      "display": "kulon kilogramm",
-      "designation": [
-        {
-          "language": "ru",
-          "value": "кулон на килограмм"
-        },
-        {
-          "language": "en",
-          "value": "culon kilogramm"
-        }
-      ]
-    },
-    {
-      "code": "711",
-      "display": "kulon kub metr",
-      "designation": [
-        {
-          "language": "ru",
-          "value": "кулон на кубический метр"
-        },
-        {
-          "language": "en",
-          "value": "pendant per cubic meter"
-        }
-      ]
-    },
-    {
-      "code": "360",
-      "display": "LE",
-      "designation": [
-        {
-          "language": "ru",
-          "value": "ЛЕ"
-        },
-        {
-          "language": "en",
-          "value": "LE"
-        }
-      ]
-    },
-    {
-      "code": "820",
-      "display": "lipoprotein lipaz birligi",
-      "designation": [
-        {
-          "language": "ru",
-          "value": "липопротеинлипазная единица"
-        },
-        {
-          "language": "en",
-          "value": "lipoprotein lipase \r\nreleasing units"
-        }
-      ]
-    },
-    {
-      "code": "722",
-      "display": "lyuks",
-      "designation": [
-        {
-          "language": "ru",
-          "value": "люкс"
-        },
-        {
-          "language": "en",
-          "value": "lyux"
-        }
-      ]
-    },
-    {
-      "code": "723",
-      "display": "lyumen",
-      "designation": [
-        {
-          "language": "ru",
-          "value": "люмен"
-        },
-        {
-          "language": "en",
-          "value": "lyumen"
-        }
-      ]
-    },
-    {
-      "code": "480",
-      "display": "МЕ/g",
-      "designation": [
-        {
-          "language": "ru",
-          "value": "МЕ/г"
-        },
-        {
-          "language": "en",
-          "value": "ME/g"
-        }
-      ]
-    },
-    {
-      "code": "1260",
-      "display": "ME/mg",
-      "designation": [
-        {
-          "language": "ru",
-          "value": "МЕ/мг"
-        },
-        {
-          "language": "en",
-          "value": "ME/mg"
-        }
-      ]
-    },
-    {
-      "code": "385",
-      "display": "МЕ/мл",
-      "designation": [
-        {
-          "language": "ru",
-          "value": "МЕ/мл"
-        },
-        {
-          "language": "en",
-          "value": "МЕ/мл"
-        }
-      ]
-    },
-    {
-      "code": "299",
-      "display": "biologik aktivlikning \r\nxalqaro birligi",
-      "designation": [
-        {
-          "language": "ru",
-          "value": "международная единица \r\nбиологической активности"
-        },
-        {
-          "language": "en",
-          "value": "international unit of \r\nbiological activity"
-        }
-      ]
-    },
-    {
-      "code": "500",
-      "display": "Международная единица \r\nна грамм",
-      "designation": [
-        {
-          "language": "ru",
-          "value": "Международная единица \r\nна грамм"
-        },
-        {
-          "language": "en",
-          "value": "Международная единица \r\nна грамм"
-        }
-      ]
-    },
-    {
-      "code": "980",
-      "display": "metr",
-      "designation": [
-        {
-          "language": "ru",
-          "value": "метр"
-        },
-        {
-          "language": "en",
-          "value": "meter"
-        }
-      ]
-    },
-    {
-      "code": "688",
-      "display": "metr minus birinchi daraja",
-      "designation": [
-        {
-          "language": "ru",
-          "value": "метр в минус первой степени"
-        },
-        {
-          "language": "en",
-          "value": "meter minus the first degree"
-        }
-      ]
-    },
-    {
-      "code": "686",
-      "display": "sekundiga metr",
-      "designation": [
-        {
-          "language": "ru",
-          "value": "метр на секунду"
-        },
-        {
-          "language": "en",
-          "value": "meter per second"
-        }
-      ]
-    },
-    {
-      "code": "687",
-      "display": "kvadrat sekundiga metr",
-      "designation": [
-        {
-          "language": "ru",
-          "value": "метр на секунду в квадрате"
-        },
-        {
-          "language": "en",
-          "value": "meter per square second"
-        }
-      ]
-    },
-    {
-      "code": "380",
+      "code": "78",
       "display": "микрограмм на дозу",
       "designation": [
         {
           "language": "ru",
           "value": "микрограмм на дозу"
-        },
-        {
-          "language": "en",
-          "value": "микрограмм на дозу"
         }
       ]
     },
     {
-      "code": "440",
-      "display": "mikrogramm taqsim soat",
+      "code": "79",
+      "display": "грамм",
       "designation": [
         {
           "language": "ru",
-          "value": "микрограмм на час"
-        },
-        {
-          "language": "en",
-          "value": "micrograms per hour"
+          "value": "грамм"
         }
       ]
     },
     {
-      "code": "308",
-      "display": "milliard tasir birligi",
+      "code": "80",
+      "display": "процент",
       "designation": [
         {
           "language": "ru",
-          "value": "миллиард единиц действия"
-        },
-        {
-          "language": "en",
-          "value": "billion efficient unit"
+          "value": "процент"
         }
       ]
     },
     {
-      "code": "1020",
-      "display": "soatiga milligramm",
+      "code": "81",
+      "display": "миллиграмм на миллилитр",
       "designation": [
         {
           "language": "ru",
-          "value": "миллиграм на час"
-        },
-        {
-          "language": "en",
-          "value": "milligram per hour"
+          "value": "миллиграмм на миллилитр"
         }
       ]
     },
     {
-      "code": "297",
-      "display": "milligramm taqsim \r\ndoza (miqdor)",
+      "code": "82",
+      "display": "миллиграмм на грамм",
       "designation": [
         {
           "language": "ru",
-          "value": "миллиграмм на дозу"
-        },
-        {
-          "language": "en",
-          "value": "milligram per dose"
+          "value": "миллиграмм на грамм"
         }
       ]
     },
     {
-      "code": "570",
-      "display": "millilitrga doza",
+      "code": "115",
+      "display": "ЕД/г",
       "designation": [
         {
           "language": "ru",
-          "value": "миллилитр на доза"
-        },
-        {
-          "language": "en",
-          "value": "milliliter per dose"
+          "value": "ЕД/г"
         }
       ]
     },
     {
-      "code": "1320",
-      "display": "daqiqasiga millilitr",
+      "code": "143",
+      "display": "мг/ 3мл",
       "designation": [
         {
           "language": "ru",
-          "value": "миллилитры в минуту"
-        },
-        {
-          "language": "en",
-          "value": "milliliters per minute"
+          "value": "мг/ 3мл"
         }
       ]
     },
     {
-      "code": "680",
-      "display": "Millimetr",
+      "code": "153",
+      "display": "мг/ 100 мл",
       "designation": [
         {
           "language": "ru",
-          "value": "Миллиметр"
-        },
-        {
-          "language": "en",
-          "value": "millimeter"
+          "value": "мг/ 100 мл"
         }
       ]
     },
     {
-      "code": "1302",
-      "display": "Simob ustunining millimetri",
+      "code": "212",
+      "display": "МЕ/г",
       "designation": [
         {
           "language": "ru",
-          "value": "миллиметры ртутного столба"
-        },
-        {
-          "language": "en",
-          "value": "Millimeters of mercury"
+          "value": "МЕ/г"
         }
       ]
     },
     {
-      "code": "305",
-      "display": "million tasir birligi",
+      "code": "340",
+      "display": "мг/ 4мл",
       "designation": [
         {
           "language": "ru",
-          "value": "миллион единиц действия"
-        },
-        {
-          "language": "en",
-          "value": "million efficient unit"
+          "value": "мг/ 4мл"
         }
       ]
     },
     {
-      "code": "860",
-      "display": "ммоль/г",
+      "code": "359",
+      "display": "мг/ 200 мл",
       "designation": [
         {
           "language": "ru",
-          "value": "ммоль/г"
-        },
-        {
-          "language": "en",
-          "value": "ммоль/г"
+          "value": "мг/ 200 мл"
         }
       ]
     },
     {
-      "code": "693",
-      "display": "mol metr kub",
+      "code": "385",
+      "display": "мг/ 10мл",
       "designation": [
         {
           "language": "ru",
-          "value": "моль на кубический метр"
-        },
-        {
-          "language": "en",
-          "value": "mole per cubic meter"
+          "value": "мг/ 10мл"
         }
       ]
     },
     {
-      "code": "620",
-      "display": "Мышиная Единица Действия",
+      "code": "418",
+      "display": "мг/мл",
       "designation": [
         {
           "language": "ru",
-          "value": "Мышиная Единица Действия"
-        },
-        {
-          "language": "en",
-          "value": "Мышиная Единица Действия"
+          "value": "мг/мл"
         }
       ]
     },
     {
-      "code": "1000",
-      "display": "nanometr",
+      "code": "419",
+      "display": "г/л",
       "designation": [
         {
           "language": "ru",
-          "value": "нанометр"
-        },
-        {
-          "language": "en",
-          "value": "nanometer"
+          "value": "г/л"
         }
       ]
     },
     {
-      "code": "697",
-      "display": "nyuton",
-      "designation": [
-        {
-          "language": "ru",
-          "value": "ньютон"
-        },
-        {
-          "language": "en",
-          "value": "nyuton"
-        }
-      ]
-    },
-    {
-      "code": "699",
-      "display": "nyuton-metr",
-      "designation": [
-        {
-          "language": "ru",
-          "value": "ньютон-метр"
-        },
-        {
-          "language": "en",
-          "value": "nyuton-metr"
-        }
-      ]
-    },
-    {
-      "code": "706",
-      "display": "om",
-      "designation": [
-        {
-          "language": "ru",
-          "value": "ом"
-        },
-        {
-          "language": "en",
-          "value": "om"
-        }
-      ]
-    },
-    {
-      "code": "318",
-      "display": "chechak hosil qiluvchi birlik",
-      "designation": [
-        {
-          "language": "ru",
-          "value": "оспаобразующая единица"
-        },
-        {
-          "language": "en",
-          "value": "smallpox forming unit"
-        }
-      ]
-    },
-    {
-      "code": "698",
-      "display": "paskal",
-      "designation": [
-        {
-          "language": "ru",
-          "value": "паскаль"
-        },
-        {
-          "language": "en",
-          "value": "paskal"
-        }
-      ]
-    },
-    {
-      "code": "700",
-      "display": "paskal-sekund",
-      "designation": [
-        {
-          "language": "ru",
-          "value": "паскаль-секунда"
-        },
-        {
-          "language": "en",
-          "value": "paskal-sekund"
-        }
-      ]
-    },
-    {
-      "code": "460",
-      "display": "PE",
+      "code": "451",
+      "display": "ПЕ",
       "designation": [
         {
           "language": "ru",
           "value": "ПЕ"
-        },
-        {
-          "language": "en",
-          "value": "PE"
         }
       ]
     },
     {
-      "code": "695",
-      "display": "radian",
+      "code": "484",
+      "display": "PH",
       "designation": [
         {
           "language": "ru",
-          "value": "радиан"
-        },
-        {
-          "language": "en",
-          "value": "radian"
+          "value": "PH"
         }
       ]
     },
     {
-      "code": "718",
-      "display": "radian sekund",
+      "code": "485",
+      "display": "qs",
       "designation": [
         {
           "language": "ru",
-          "value": "радиан в секунду"
-        },
-        {
-          "language": "en",
-          "value": "radian sekund"
+          "value": "qs"
         }
       ]
     },
     {
-      "code": "717",
-      "display": "kvadrat sekundiga radian",
+      "code": "486",
+      "display": "миллиграмм на дозу",
       "designation": [
         {
           "language": "ru",
-          "value": "радиан на секунду в квадрате"
-        },
-        {
-          "language": "en",
-          "value": "radian per second squared"
+          "value": "миллиграмм на дозу"
         }
       ]
     },
     {
-      "code": "960",
-      "display": "santimetr",
+      "code": "487",
+      "display": "МЕ/мл",
       "designation": [
         {
           "language": "ru",
-          "value": "сантиметр"
-        },
-        {
-          "language": "en",
-          "value": "centimeter"
+          "value": "МЕ/мл"
         }
       ]
     },
     {
-      "code": "707",
-      "display": "simens",
+      "code": "488",
+      "display": "ТФ",
       "designation": [
         {
           "language": "ru",
-          "value": "сименс"
-        },
-        {
-          "language": "en",
-          "value": "simens"
+          "value": "ТФ"
         }
       ]
     },
     {
-      "code": "600",
-      "display": "suyultirish darajasi",
+      "code": "489",
+      "display": "флокулирующая единица",
       "designation": [
         {
           "language": "ru",
-          "value": "степень разведения"
-        },
-        {
-          "language": "en",
-          "value": "dilution rate"
+          "value": "флокулирующая единица"
         }
       ]
     },
     {
-      "code": "696",
-      "display": "steradian",
+      "code": "490",
+      "display": "млн ЕД",
       "designation": [
         {
           "language": "ru",
-          "value": "стерадиан"
-        },
-        {
-          "language": "en",
-          "value": "steradian"
+          "value": "млн ЕД"
         }
       ]
     },
     {
-      "code": "741",
-      "display": "Standartlashtirilgan sifat birligi \r\nuchun tabletka",
+      "code": "491",
+      "display": "мкг/доза",
       "designation": [
         {
           "language": "ru",
-          "value": "Таблетка стандартизированных \r\nединиц качества"
-        },
-        {
-          "language": "en",
-          "value": "Standardized Quality \r\nUnits Tablet"
+          "value": "мкг/доза"
         }
       ]
     },
     {
-      "code": "709",
-      "display": "tesla",
+      "code": "492",
+      "display": "DU",
       "designation": [
         {
           "language": "ru",
-          "value": "тесла"
-        },
-        {
-          "language": "en",
-          "value": "tesla"
+          "value": "DU"
         }
       ]
     },
     {
-      "code": "521",
+      "code": "493",
+      "display": "международная единица биологической активности",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "международная единица биологической активности"
+        }
+      ]
+    },
+    {
+      "code": "494",
+      "display": "миллилитр",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "миллилитр"
+        }
+      ]
+    },
+    {
+      "code": "496",
+      "display": "ФНЕ",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "ФНЕ"
+        }
+      ]
+    },
+    {
+      "code": "529",
+      "display": "миллиард единиц действия",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "миллиард единиц действия"
+        }
+      ]
+    },
+    {
+      "code": "530",
+      "display": "колониеобразующие единицы",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "колониеобразующие единицы"
+        }
+      ]
+    },
+    {
+      "code": "531",
+      "display": "МЕД",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "МЕД"
+        }
+      ]
+    },
+    {
+      "code": "532",
+      "display": "млрд КЕ",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "млрд КЕ"
+        }
+      ]
+    },
+    {
+      "code": "566",
+      "display": "мл",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "мл"
+        }
+      ]
+    },
+    {
+      "code": "572",
+      "display": "миллиард спор",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "миллиард спор"
+        }
+      ]
+    },
+    {
+      "code": "604",
+      "display": "ЕД",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "ЕД"
+        }
+      ]
+    },
+    {
+      "code": "606",
+      "display": "мегабеккерель",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "мегабеккерель"
+        }
+      ]
+    },
+    {
+      "code": "607",
+      "display": "МЕ/мг",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "МЕ/мг"
+        }
+      ]
+    },
+    {
+      "code": "608",
+      "display": "единица формирования фокуса (FFU)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "единица формирования фокуса (FFU)"
+        }
+      ]
+    },
+    {
+      "code": "609",
+      "display": "50 процентная тканевая цитопатическая доза",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "50 процентная тканевая цитопатическая доза"
+        }
+      ]
+    },
+    {
+      "code": "610",
       "display": "титр фага",
       "designation": [
         {
           "language": "ru",
           "value": "титр фага"
-        },
-        {
-          "language": "en",
-          "value": "титр фага"
         }
       ]
     },
     {
-      "code": "321",
-      "display": "titrlash birligi",
-      "designation": [
-        {
-          "language": "ru",
-          "value": "титрационная единица"
-        },
-        {
-          "language": "en",
-          "value": "titration unit"
-        }
-      ]
-    },
-    {
-      "code": "705",
-      "display": "farad",
-      "designation": [
-        {
-          "language": "ru",
-          "value": "фарад"
-        },
-        {
-          "language": "en",
-          "value": "farad"
-        }
-      ]
-    },
-    {
-      "code": "714",
-      "display": "farad metr",
-      "designation": [
-        {
-          "language": "ru",
-          "value": "фарад на метр"
-        },
-        {
-          "language": "en",
-          "value": "farad per meter"
-        }
-      ]
-    },
-    {
-      "code": "324",
-      "display": "flokulirlanadigan birlik",
-      "designation": [
-        {
-          "language": "ru",
-          "value": "флокулирующая единица"
-        },
-        {
-          "language": "en",
-          "value": "flocculating units"
-        }
-      ]
-    },
-    {
-      "code": "1300",
-      "display": "FTU",
-      "designation": [
-        {
-          "language": "ru",
-          "value": "ФНЕ"
-        },
-        {
-          "language": "en",
-          "value": "FTU"
-        }
-      ]
-    },
-    {
-      "code": "1301",
-      "display": "FTU/ml",
-      "designation": [
-        {
-          "language": "ru",
-          "value": "ФНЕ/мл"
-        },
-        {
-          "language": "en",
-          "value": "FTU/ml"
-        }
-      ]
-    },
-    {
-      "code": "1040",
-      "display": "French",
-      "designation": [
-        {
-          "language": "ru",
-          "value": "Френч"
-        },
-        {
-          "language": "en",
-          "value": "French"
-        }
-      ]
-    },
-    {
-      "code": "880",
-      "display": "qismi",
+      "code": "611",
+      "display": "часть",
       "designation": [
         {
           "language": "ru",
           "value": "часть"
-        },
-        {
-          "language": "en",
-          "value": "part"
         }
       ]
     },
     {
-      "code": "940",
-      "display": "Соат",
+      "code": "612",
+      "display": "степень разведения",
       "designation": [
         {
           "language": "ru",
-          "value": "Часы"
-        },
+          "value": "степень разведения"
+        }
+      ]
+    },
+    {
+      "code": "571",
+      "display": "килограмм",
+      "designation": [
         {
-          "language": "en",
-          "value": "Time"
+          "language": "ru",
+          "value": "килограмм"
+        }
+      ]
+    },
+    {
+      "code": "569",
+      "display": "миллиграмм",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "миллиграмм"
+        }
+      ]
+    },
+    {
+      "code": "29",
+      "display": "мкг/мг",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "мкг/мг"
+        }
+      ]
+    },
+    {
+      "code": "570",
+      "display": "микрограмм на миллилитр",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "микрограмм на миллилитр"
+        }
+      ]
+    },
+    {
+      "code": "495",
+      "display": "спор",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "спор"
+        }
+      ]
+    },
+    {
+      "code": "567",
+      "display": "миллиграмм",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "миллиграмм"
+        }
+      ]
+    },
+    {
+      "code": "565",
+      "display": "микрограмм",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "микрограмм"
+        }
+      ]
+    },
+    {
+      "code": "54",
+      "display": "колониеобразующие единицы",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "колониеобразующие единицы"
         }
       ]
     }
@@ -2539,5 +1243,5 @@
   "hierarchyMeaning": "is-a",
   "language": "uz",
   "experimental": true,
-  "count": 181
+  "count": 123
 }
