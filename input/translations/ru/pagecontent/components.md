@@ -350,8 +350,8 @@ CHR обеспечивает стандартизированное ведени
 
 <div class="arch-diagram">
   <div class="arch-legend">
-    <span data-legend="profiled" tabindex="0" role="button"><span class="swatch-box"></span> профилировано в этом руководстве</span>
-    <span data-legend="unprofiled" tabindex="0" role="button"><span class="swatch-box pale"></span> упомянуто, но ещё не профилировано</span>
+    <span data-legend="profiled" tabindex="0" role="button"><span class="swatch-box"></span> определено в этом руководстве</span>
+    <span data-legend="unprofiled" tabindex="0" role="button"><span class="swatch-box pale"></span> упомянуто, но ещё не определено</span>
   </div>
   <div class="arch-wrap">
     <div class="arch-canvas" id="arch-canvas">

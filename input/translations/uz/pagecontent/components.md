@@ -346,8 +346,8 @@ Amalda yuqorida tavsiflangan bir nechta komponent bir xil FHIR resurslari bilan 
 
 <div class="arch-diagram">
   <div class="arch-legend">
-    <span data-legend="profiled" tabindex="0" role="button"><span class="swatch-box"></span> ushbu qo'llanmada profillangan</span>
-    <span data-legend="unprofiled" tabindex="0" role="button"><span class="swatch-box pale"></span> nomlangan, lekin hali profillanmagan</span>
+    <span data-legend="profiled" tabindex="0" role="button"><span class="swatch-box"></span> ushbu qo'llanmada belgilangan</span>
+    <span data-legend="unprofiled" tabindex="0" role="button"><span class="swatch-box pale"></span> nomlangan, lekin hali belgilanmagan</span>
   </div>
   <div class="arch-wrap">
     <div class="arch-canvas" id="arch-canvas">
