@@ -317,8 +317,8 @@ In practice, several of the components described above exchange the same underly
 
 <div class="arch-diagram">
   <div class="arch-legend">
-    <span data-legend="profiled" tabindex="0" role="button"><span class="swatch-box"></span> profiled in this IG</span>
-    <span data-legend="unprofiled" tabindex="0" role="button"><span class="swatch-box pale"></span> named, not yet profiled</span>
+    <span data-legend="profiled" tabindex="0" role="button"><span class="swatch-box"></span> defined in this IG</span>
+    <span data-legend="unprofiled" tabindex="0" role="button"><span class="swatch-box pale"></span> named, not yet defined</span>
   </div>
   <div class="arch-wrap">
     <div class="arch-canvas" id="arch-canvas">
