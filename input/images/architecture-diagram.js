@@ -37,7 +37,11 @@
   ];
 
   var COMPONENTS = {
-    MDM: { short: "MDM", label: "Master Data Management (MDM)", resources: [] },
+    MDM: { short: "MDM", label: "Master Data Management (MDM)", resources: [
+      { name: "Patient", profiled: true }, { name: "Organization", profiled: true },
+      { name: "Practitioner", profiled: true }, { name: "PractitionerRole", profiled: true },
+      { name: "HealthcareService", profiled: true }, { name: "Location", profiled: true }
+    ]},
     MSM: { short: "MSM", label: "Metadata and Security Management (MSM)", resources: [
       { name: "StructureDefinition" }, { name: "ValueSet" }, { name: "CodeSystem" }, { name: "CapabilityStatement" },
       { name: "Provenance", profiled: true }, { name: "AuditEvent", profiled: true }, { name: "Consent", profiled: true }
@@ -67,7 +71,12 @@
     SCREEN: { short: "Screening Schedules", label: "Screening Schedules Management", resources: [
       { name: "Questionnaire", profiled: true }
     ]},
-    VACC: { short: "Vaccination Mgmt", label: "Vaccination Management", resources: [] },
+    VACC: { short: "Vaccination Mgmt", label: "Vaccination Management", resources: [
+      { name: "Immunization", profiled: true }, { name: "ImmunizationRecommendation", profiled: true },
+      { name: "PlanDefinition", profiled: true }, { name: "ActivityDefinition", profiled: true },
+      { name: "AdverseEvent", profiled: true }, { name: "Encounter", profiled: true },
+      { name: "Observation", profiled: true }
+    ]},
     BLOOD: { short: "Blood Mgmt", label: "Blood Management", resources: [
       { name: "ServiceRequest", profiled: true }, { name: "SupplyRequest" },
       { name: "Procedure", profiled: true }, { name: "Observation", profiled: true },
@@ -108,7 +117,11 @@
     { from: "NURSING.Procedure", to: "CHR.Procedure", kind: "sharesType" },
     { from: "LAB.Observation", to: "BLOOD.Observation", kind: "labResults" },
     { from: "BLOOD.Observation", to: "CHR.Observation", kind: "sharesType" },
-    { from: "BLOOD.Procedure", to: "CHR.Procedure", kind: "sharesType" }
+    { from: "BLOOD.Procedure", to: "CHR.Procedure", kind: "sharesType" },
+    { from: "MDM.Patient", to: "CHR.Patient", kind: "sharesType" },
+    { from: "VACC.PlanDefinition", to: "BLOOD.PlanDefinition", kind: "sharesType" },
+    { from: "VACC.Encounter", to: "PHJM.Encounter", kind: "sharesType" },
+    { from: "VACC.Observation", to: "CHR.Observation", kind: "sharesType" }
   ];
 
   // Everything the diagram renders as prose, per page language. The publisher
@@ -404,6 +417,16 @@
       g.setAttribute('aria-label', label);
       if (openable) g.setAttribute('aria-expanded', expanded[id] ? 'true' : 'false');
       nodeLayer.appendChild(g);
+
+      // A few resource type names, and some component names once translated,
+      // are wider than the box holding them. Rather than size every box to the
+      // longest string, condense just the labels that do not fit.
+      var avail = isBox ? rect.w - 10 - (openable ? 20 : 10) : rect.w - 6;
+      if (text.getComputedTextLength() > avail) {
+        text.setAttribute('textLength', avail);
+        text.setAttribute('lengthAdjust', 'spacingAndGlyphs');
+      }
+
       nodeEls[id] = { el: g };
     }
 
