@@ -2,7 +2,7 @@ This workflow shows how a referral is created and fulfilled. Referrals are where
 
 > `ServiceRequest` is the referral itself - *what* is to be done. `Task` is the work of fulfilling it - *who* did it, *when*, and *how far along* it is.
 
-> Profile status: the ServiceRequest and Task profiles are in development. This page describes the intended modelling so systems can build against it now; until the profiles publish, use the base FHIR R5 resources and the rules below. [Procedure](StructureDefinition-uz-core-procedure.html), [Observation](StructureDefinition-uz-core-observation.html), [Encounter](StructureDefinition-uz-core-encounter.html) and [Condition](StructureDefinition-uz-core-condition.html) used at fulfilment are profiled.
+> Profile status: both resources are now profiled - [UZ Core ServiceRequest](StructureDefinition-uz-core-servicerequest.html) for the referral and [UZ Core Task Referral Approval](StructureDefinition-uz-core-referral-approval-task.html) for the approval stages. Both are still marked experimental, so review them before building against them. [Procedure](StructureDefinition-uz-core-procedure.html), [Observation](StructureDefinition-uz-core-observation.html), [Encounter](StructureDefinition-uz-core-encounter.html) and [Condition](StructureDefinition-uz-core-condition.html) used at fulfilment are profiled.
 
 Actors: the referring clinician; approval commissions (for state-funded referrals); the performing facility.
 
@@ -69,4 +69,5 @@ A cancelled referral cannot be fulfilled, a Procedure cannot start without an ac
 ### Related
 
 - Profiles used at fulfilment: [Procedure](StructureDefinition-uz-core-procedure.html) &middot; [Observation](StructureDefinition-uz-core-observation.html) &middot; [Encounter](StructureDefinition-uz-core-encounter.html) &middot; [Condition](StructureDefinition-uz-core-condition.html) &middot; [HealthcareService](StructureDefinition-uz-core-healthcareservice.html)
+- Component: [Referrals](components.html#referrals)
 - [Workflows overview](workflows.html) &middot; [General guidance](general-guidance.html)

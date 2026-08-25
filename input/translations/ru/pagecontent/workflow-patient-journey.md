@@ -62,4 +62,5 @@ GET [base]/Observation?patient=Patient/[id]&_sort=-date
 ### Связанные материалы
 
 - Профили: [EpisodeOfCare](StructureDefinition-uz-core-episodeofcare.html) &middot; [Encounter](StructureDefinition-uz-core-encounter.html) &middot; [Condition](StructureDefinition-uz-core-condition.html) &middot; [Observation](StructureDefinition-uz-core-observation.html)
+- Компонент: [Управление клиническим маршрутом пациента](components.html#управление-клиническим-маршрутом-пациента)
 - [Обзор процессов](workflows.html) &middot; [Общие рекомендации](general-guidance.html)

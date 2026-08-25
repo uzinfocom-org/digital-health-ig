@@ -97,4 +97,5 @@ POST [base]/Immunization
 ### Связанные материалы
 
 - Профили: [PlanDefinition](StructureDefinition-uz-core-plan-definition.html) &middot; [ImmunizationRecommendation](StructureDefinition-uz-core-immunization-recommendation.html) &middot; [Encounter](StructureDefinition-uz-core-encounter.html) &middot; [Immunization](StructureDefinition-uz-core-immunization.html) &middot; [AdverseEvent](StructureDefinition-uz-core-adverse-event.html)
+- Компонент: [Управление вакцинацией](components.html#управление-вакцинацией)
 - [Обзор рабочих процессов](workflows.html) &middot; [Общие рекомендации](general-guidance.html)
