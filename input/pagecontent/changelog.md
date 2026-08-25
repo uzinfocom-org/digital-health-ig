@@ -6,9 +6,7 @@ The [Components](components.html) page now describes Blood Management, Nursing a
 
 Each component that has a workflow page now links to it, and each workflow page links back to the component it belongs to. The Prescription section, whose Technical Project is still being written, points at the [e-Prescription and dispensing](workflow-prescription.html) workflow in the meantime.
 
-The cross-component resource architecture diagram on that page now covers Blood Management and Nursing, and shows the two profiles Referrals owns rather than leaving it empty.
-
-That diagram now opens with every component closed, each card showing how many resources it holds, and opens a component's resource list when you click the card. Drawing all 52 resources at once fitted the frame only at 40%, which left the resource names hard to read; the closed view fits at 80%. While two components are both closed, the resource arrows between them are drawn as a single line.
+The cross-component resource architecture diagram on that page now covers Blood Management and Nursing, and shows the two profiles Referrals owns rather than leaving it empty. It opens with every component closed, each card showing how many resources it holds, and opens a component's resource list when you click the card or press Enter on it; while two components are both closed, the resource arrows between them are drawn as a single line. Drawing all 52 resources at once fitted the frame only at 40%, which left the resource names hard to read - the closed view fits at 80%.
 
 The [e-Referral lifecycle](workflow-referral.html) no longer states that the ServiceRequest and Task profiles are unpublished. Both have since published, as [UZ Core ServiceRequest](StructureDefinition-uz-core-servicerequest.html) and [UZ Core Task Referral Approval](StructureDefinition-uz-core-referral-approval-task.html), and both are still marked experimental.
 
