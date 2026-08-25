@@ -1,6 +1,16 @@
 ### In development
 
-(No changes yet)
+#### Documentation
+
+The [Components](components.html) page now describes Blood Management, Nursing and Supplies, from the Technical Projects for those components. The [Referrals](components.html#referrals) section has been extended with the seven axes a referral is classified along, and with the split between the ServiceRequest that carries the referral and the approval Tasks that drive its state-insurance approval chain.
+
+Each component that has a workflow page now links to it, and each workflow page links back to the component it belongs to. The Prescription section, whose Technical Project is still being written, points at the [e-Prescription and dispensing](workflow-prescription.html) workflow in the meantime.
+
+The cross-component resource architecture diagram on that page now covers Blood Management and Nursing, and shows the two profiles Referrals owns rather than leaving it empty.
+
+The [e-Referral lifecycle](workflow-referral.html) no longer states that the ServiceRequest and Task profiles are unpublished. Both have since published, as [UZ Core ServiceRequest](StructureDefinition-uz-core-servicerequest.html) and [UZ Core Task Referral Approval](StructureDefinition-uz-core-referral-approval-task.html), and both are still marked experimental.
+
+The [Laboratory order to result](workflow-lab.html) workflow linked to `uz-core-servicerequest-laboratory`, which was renamed in 0.8.0. Its two links and the `meta.profile` in its worked example now point at [UZ Core ServiceRequest](StructureDefinition-uz-core-servicerequest.html).
 
 ### Version 0.8.0
 

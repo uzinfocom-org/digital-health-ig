@@ -1,6 +1,16 @@
 ### Ishlab chiqish jarayonida
 
-(Hozircha o'zgarishlar yo'q)
+#### Hujjatlashtirish
+
+[Komponentlar](components.html) sahifasi endi Qon resurslarini boshqarish, Hamshiralik ishi va Ta'minot komponentlarini ularning Texnik loyihalari asosida tavsiflaydi. [Yo'llanmalar](components.html#yollanmalar) bo'limi yo'llanma tasniflanadigan yettita o'lcham bilan hamda yo'llanmani saqlovchi ServiceRequest va uning davlat sug'urtasi bo'yicha kelishish zanjirini boshqaruvchi Task resurslari o'rtasidagi taqsimot bilan to'ldirildi.
+
+Ish jarayoni sahifasiga ega bo'lgan har bir komponent endi unga havola beradi, har bir ish jarayoni sahifasi esa o'zi tegishli bo'lgan komponentga qaytadan havola qiladi. Texnik loyihasi hali yozilayotgan Retseptlar bo'limi shu vaqt ichida [Elektron retsept va dori vositasini berish](workflow-prescription.html) jarayoniga ishora qiladi.
+
+O'sha sahifadagi komponentlararo resurs arxitekturasi diagrammasi endi Qon resurslarini boshqarish va Hamshiralik ishi komponentlarini ham qamrab oladi hamda Yo'llanmalar komponentini bo'sh qoldirmasdan, unga tegishli ikkita profilni ko'rsatadi.
+
+[Elektron yo'llanmaning hayot sikli](workflow-referral.html) sahifasida endi ServiceRequest va Task profillari nashr etilmagan deb aytilmaydi. O'shandan beri ularning ikkalasi ham [UZ Core ServiceRequest](StructureDefinition-uz-core-servicerequest.html) va [UZ Core Task Referral Approval](StructureDefinition-uz-core-referral-approval-task.html) sifatida nashr etildi va ikkalasi ham hali eksperimental deb belgilangan.
+
+[Laboratoriya tekshiruvini tayinlashdan natijani olishgacha](workflow-lab.html) jarayoni 0.8.0 da qayta nomlangan `uz-core-servicerequest-laboratory` ga havola qilar edi. Uning ikkita havolasi va misolidagi `meta.profile` endi [UZ Core ServiceRequest](StructureDefinition-uz-core-servicerequest.html) ga ishora qiladi.
 
 ### Versiya 0.8.0
 
