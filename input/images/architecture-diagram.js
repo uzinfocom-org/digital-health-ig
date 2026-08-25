@@ -39,7 +39,8 @@
   var COMPONENTS = {
     MDM: { short: "MDM", label: "Master Data Management (MDM)", resources: [] },
     MSM: { short: "MSM", label: "Metadata and Security Management (MSM)", resources: [
-      { name: "StructureDefinition" }, { name: "ValueSet" }, { name: "CodeSystem" }, { name: "CapabilityStatement" },
+      { name: "StructureDefinition", profiled: true }, { name: "ValueSet", profiled: true },
+      { name: "CodeSystem", profiled: true }, { name: "CapabilityStatement", profiled: true },
       { name: "Provenance", profiled: true }, { name: "AuditEvent", profiled: true }, { name: "Consent", profiled: true }
     ]},
     CHR: { short: "CHR", label: "Clinical Health Records (CHR)", resources: [
@@ -130,8 +131,8 @@
         referralRequest: "referral request"
       },
       noRelations: "No stated or inferred relationships for this node.",
-      profiledTitle: "Profiled in this IG",
-      unprofiledTitle: "Named, not yet profiled",
+      profiledTitle: "Defined in this IG",
+      unprofiledTitle: "Named, not yet defined",
       resourceCount: function (n) { return n + (n === 1 ? " resource" : " resources"); }
     },
     ru: {
@@ -157,8 +158,8 @@
         referralRequest: "запрос по направлению"
       },
       noRelations: "Для этого узла нет заявленных или предполагаемых связей.",
-      profiledTitle: "Профилировано в этом руководстве",
-      unprofiledTitle: "Упомянуто, но ещё не профилировано",
+      profiledTitle: "Определено в этом руководстве",
+      unprofiledTitle: "Упомянуто, но ещё не определено",
       // 1 ресурс / 2-4 ресурса / 5+ ресурсов, with the 11-14 exception.
       resourceCount: function (n) {
         var m10 = n % 10, m100 = n % 100;
@@ -190,8 +191,8 @@
         referralRequest: "yo'llanma so'rovi"
       },
       noRelations: "Bu tugun uchun belgilangan yoki taxmin qilingan aloqalar yo'q.",
-      profiledTitle: "Ushbu qo'llanmada profillangan",
-      unprofiledTitle: "Nomlangan, lekin hali profillanmagan",
+      profiledTitle: "Ushbu qo'llanmada belgilangan",
+      unprofiledTitle: "Nomlangan, lekin hali belgilanmagan",
       resourceCount: function (n) { return n + " ta resurs"; }
     }
   };
