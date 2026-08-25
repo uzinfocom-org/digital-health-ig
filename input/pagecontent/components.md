@@ -224,7 +224,7 @@ The [Immunization](workflow-immunization.html) workflow shows how the national s
 
 ### Cross-component resource architecture
 
-In practice, several of the components described above exchange the same underlying FHIR resources. This diagram drops to the resource level: which resources each component owns, and which of those resources connect to another component. Plain lines show two components integrating broadly; arrows show a specific resource flowing from one component into another. Drag to pan, scroll to zoom, and hover or tab to a resource, component, or legend item to see its connections.
+In practice, several of the components described above exchange the same underlying FHIR resources. This diagram drops to the resource level: which resources each component owns, and which of those resources connect to another component. Each component starts closed, showing only how many resources it holds; click one, or press Enter on it, to open its resource list, and again to close it. Plain lines show two components integrating broadly, or several resource connections merged into one while both components are closed; arrows show a specific resource flowing from one component into another. Drag to pan, scroll to zoom, and hover or tab to a resource, component, or legend item to see its connections.
 
 <br clear="all"/>
 
@@ -326,7 +326,7 @@ In practice, several of the components described above exchange the same underly
     </div>
     <div class="arch-info" id="arch-info">
       <div id="arch-info-body">
-        <p class="arch-info-hint">Hover or tab to a resource, component, or legend item to see what it connects to.</p>
+        <p class="arch-info-hint">Click a component to open its resources. Hover or tab to a resource, component, or legend item to see what it connects to.</p>
         <div class="arch-stat-row"><span>Components shown</span><span class="arch-stat-n" id="arch-stat-components">–</span></div>
         <div class="arch-stat-row"><span>Resources</span><span class="arch-stat-n" id="arch-stat-resources">–</span></div>
         <div class="arch-stat-row"><span>Relationships</span><span class="arch-stat-n" id="arch-stat-relationships">–</span></div>
