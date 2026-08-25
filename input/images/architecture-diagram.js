@@ -30,7 +30,8 @@
   var TIERS = [
     ["MDM", "MSM"],
     ["CHR", "PHJM"],
-    ["LAB", "REFERRALS", "REIMB", "SCREEN", "VACC"]
+    ["LAB", "REFERRALS", "REIMB", "SCREEN", "VACC"],
+    ["BLOOD", "NURSING"]
   ];
 
   var COMPONENTS = {
@@ -53,7 +54,9 @@
       { name: "Observation", profiled: true }, { name: "Specimen", profiled: true },
       { name: "DiagnosticReport", profiled: true }, { name: "ServiceRequest", profiled: true }
     ]},
-    REFERRALS: { short: "Referrals", label: "Referrals", resources: [] },
+    REFERRALS: { short: "Referrals", label: "Referrals", resources: [
+      { name: "ServiceRequest", profiled: true }, { name: "Task", profiled: true }
+    ]},
     REIMB: { short: "Reimbursement", label: "Reimbursement", resources: [
       { name: "Claim", profiled: true }, { name: "ClaimResponse", profiled: true }, { name: "Encounter", profiled: true },
       { name: "Procedure", profiled: true }, { name: "MedicationDispense", profiled: true }, { name: "Condition", profiled: true },
@@ -62,7 +65,19 @@
     SCREEN: { short: "Screening Schedules", label: "Screening Schedules Management", resources: [
       { name: "Questionnaire", profiled: true }
     ]},
-    VACC: { short: "Vaccination Mgmt", label: "Vaccination Management", resources: [] }
+    VACC: { short: "Vaccination Mgmt", label: "Vaccination Management", resources: [] },
+    BLOOD: { short: "Blood Mgmt", label: "Blood Management", resources: [
+      { name: "ServiceRequest", profiled: true }, { name: "SupplyRequest" },
+      { name: "Procedure", profiled: true }, { name: "Observation", profiled: true },
+      { name: "InventoryItem" }, { name: "InventoryReport" },
+      { name: "PlanDefinition", profiled: true }, { name: "Group", profiled: true }
+    ]},
+    NURSING: { short: "Nursing", label: "Nursing", resources: [
+      { name: "ServiceRequest", profiled: true }, { name: "Encounter", profiled: true },
+      { name: "Observation", profiled: true }, { name: "Procedure", profiled: true },
+      { name: "Condition", profiled: true }, { name: "Questionnaire", profiled: true },
+      { name: "QuestionnaireResponse", profiled: true }
+    ]}
   };
 
   var EDGES = [
@@ -76,13 +91,22 @@
     { from: "CHR.Condition", to: "PHJM.Condition", kind: "sharesType" },
     { from: "CHR.Observation", to: "PHJM.Observation", kind: "sharesType" },
     { from: "LAB.Observation", to: "CHR.Observation", kind: "labResults" },
-    { from: "REFERRALS", to: "LAB.ServiceRequest", kind: "referralRequest" },
+    { from: "REFERRALS.ServiceRequest", to: "LAB.ServiceRequest", kind: "referralRequest" },
+    { from: "REFERRALS.ServiceRequest", to: "NURSING.ServiceRequest", kind: "referralRequest" },
     { from: "CHR.Procedure", to: "REIMB.Procedure", kind: "sharesType" },
     { from: "CHR.Condition", to: "REIMB.Condition", kind: "sharesType" },
     { from: "CHR.Observation", to: "REIMB.Observation", kind: "sharesType" },
     { from: "PHJM.Encounter", to: "REIMB.Encounter", kind: "sharesType" },
     { from: "PHJM.CarePlan", to: "REIMB.CarePlan", kind: "sharesType" },
-    { from: "PHJM.Questionnaire", to: "SCREEN.Questionnaire", kind: "sharesType" }
+    { from: "PHJM.Questionnaire", to: "SCREEN.Questionnaire", kind: "sharesType" },
+    { from: "NURSING.Encounter", to: "PHJM.Encounter", kind: "sharesType" },
+    { from: "NURSING.Questionnaire", to: "PHJM.Questionnaire", kind: "sharesType" },
+    { from: "NURSING.Condition", to: "CHR.Condition", kind: "sharesType" },
+    { from: "NURSING.Observation", to: "CHR.Observation", kind: "sharesType" },
+    { from: "NURSING.Procedure", to: "CHR.Procedure", kind: "sharesType" },
+    { from: "LAB.Observation", to: "BLOOD.Observation", kind: "labResults" },
+    { from: "BLOOD.Observation", to: "CHR.Observation", kind: "sharesType" },
+    { from: "BLOOD.Procedure", to: "CHR.Procedure", kind: "sharesType" }
   ];
 
   // Everything the diagram renders as prose, per page language. The publisher
@@ -118,7 +142,9 @@
         REFERRALS: { short: "Направления", label: "Направления" },
         REIMB: { short: "Реимбурсация", label: "Реимбурсация" },
         SCREEN: { short: "Графики скрининга", label: "Управление графиками скрининга" },
-        VACC: { short: "Вакцинация", label: "Управление вакцинацией" }
+        VACC: { short: "Вакцинация", label: "Управление вакцинацией" },
+        BLOOD: { short: "Управление кровью", label: "Управление кровью" },
+        NURSING: { short: "Сестринское дело", label: "Сестринское дело" }
       },
       edge: {
         fullCompat: "полная совместимость",
@@ -149,7 +175,9 @@
         REFERRALS: { short: "Yo'llanmalar", label: "Yo'llanmalar" },
         REIMB: { short: "Reimbursatsiya", label: "Reimbursatsiya" },
         SCREEN: { short: "Skrining jadvallari", label: "Skrining jadvallarini boshqarish" },
-        VACC: { short: "Vaksinatsiya", label: "Vaksinatsiyani boshqarish" }
+        VACC: { short: "Vaksinatsiya", label: "Vaksinatsiyani boshqarish" },
+        BLOOD: { short: "Qon resurslari", label: "Qon resurslarini boshqarish" },
+        NURSING: { short: "Hamshiralik ishi", label: "Hamshiralik ishi" }
       },
       edge: {
         fullCompat: "to'liq moslik",

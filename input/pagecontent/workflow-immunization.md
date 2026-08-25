@@ -97,4 +97,5 @@ If the patient has a post-immunization reaction, record an [AdverseEvent](Struct
 ### Related
 
 - Profiles: [PlanDefinition](StructureDefinition-uz-core-plan-definition.html) &middot; [ImmunizationRecommendation](StructureDefinition-uz-core-immunization-recommendation.html) &middot; [Encounter](StructureDefinition-uz-core-encounter.html) &middot; [Immunization](StructureDefinition-uz-core-immunization.html) &middot; [AdverseEvent](StructureDefinition-uz-core-adverse-event.html)
+- Component: [Vaccination Management](components.html#vaccination-management)
 - [Workflows overview](workflows.html) &middot; [General guidance](general-guidance.html)
