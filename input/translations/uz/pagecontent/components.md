@@ -253,7 +253,7 @@ Komponent quyidagilarni ta'minlaydi:
 
 ### Komponentlararo resurs arxitekturasi
 
-Amalda yuqorida tavsiflangan bir nechta komponent bir xil FHIR resurslari bilan almashadi. Ushbu diagramma resurs darajasiga tushadi: har bir komponent qaysi resurslarga egalik qiladi va ulardan qaysilari boshqa komponent bilan bog'lanadi. Oddiy chiziqlar ikki komponentning keng integratsiyasini, strelkalar esa muayyan resursning bir komponentdan boshqasiga o'tishini ko'rsatadi. Ko'chirish uchun sudrang, masshtabni o'zgartirish uchun aylantiring, aloqalarni ko'rish uchun resurs, komponent yoki legenda elementiga sichqonchani olib boring yoki tab bilan o'ting.
+Amalda yuqorida tavsiflangan bir nechta komponent bir xil FHIR resurslari bilan almashadi. Ushbu diagramma resurs darajasiga tushadi: har bir komponent qaysi resurslarga egalik qiladi va ulardan qaysilari boshqa komponent bilan bog'lanadi. Har bir komponent boshida yopiq bo'lib, faqat resurslar sonini ko'rsatadi; resurslar ro'yxatini ochish uchun uni bosing yoki Enter tugmasini bosing, yopish uchun yana bosing. Oddiy chiziqlar ikki komponentning keng integratsiyasini yoki ikkala komponent yopiq bo'lganda bitta chiziqqa birlashtirilgan bir nechta resurs aloqasini, strelkalar esa muayyan resursning bir komponentdan boshqasiga o'tishini ko'rsatadi. Ko'chirish uchun sudrang, masshtabni o'zgartirish uchun aylantiring, aloqalarni ko'rish uchun resurs, komponent yoki legenda elementiga sichqonchani olib boring yoki tab bilan o'ting.
 
 <br clear="all"/>
 
@@ -355,7 +355,7 @@ Amalda yuqorida tavsiflangan bir nechta komponent bir xil FHIR resurslari bilan 
     </div>
     <div class="arch-info" id="arch-info">
       <div id="arch-info-body">
-        <p class="arch-info-hint">Aloqalarni ko'rish uchun resurs, komponent yoki legenda elementiga sichqonchani olib boring yoki tab bilan o'ting.</p>
+        <p class="arch-info-hint">Komponent resurslarini ochish uchun uni bosing. Aloqalarni ko'rish uchun resurs, komponent yoki legenda elementiga sichqonchani olib boring yoki tab bilan o'ting.</p>
         <div class="arch-stat-row"><span>Ko'rsatilgan komponentlar</span><span class="arch-stat-n" id="arch-stat-components">–</span></div>
         <div class="arch-stat-row"><span>Resurslar</span><span class="arch-stat-n" id="arch-stat-resources">–</span></div>
         <div class="arch-stat-row"><span>Aloqalar</span><span class="arch-stat-n" id="arch-stat-relationships">–</span></div>

@@ -8,6 +8,8 @@ Ish jarayoni sahifasiga ega bo'lgan har bir komponent endi unga havola beradi, h
 
 O'sha sahifadagi komponentlararo resurs arxitekturasi diagrammasi endi Qon resurslarini boshqarish va Hamshiralik ishi komponentlarini ham qamrab oladi hamda Yo'llanmalar komponentini bo'sh qoldirmasdan, unga tegishli ikkita profilni ko'rsatadi.
 
+Bu diagramma endi barcha komponentlar yopiq holda ochiladi: har bir kartada uning resurslari soni ko'rsatiladi, resurslar ro'yxati esa kartani bosganda ochiladi. Barcha 52 resursni bir vaqtda chizish ramkaga faqat 40% masshtabda sig'ar edi, shu sababli resurs nomlarini o'qish qiyin edi; yopiq ko'rinish 80% masshtabda sig'adi. Ikkala komponent yopiq bo'lganda, ular orasidagi resurs aloqalari bitta chiziq bilan chiziladi.
+
 [Elektron yo'llanmaning hayot sikli](workflow-referral.html) sahifasida endi ServiceRequest va Task profillari nashr etilmagan deb aytilmaydi. O'shandan beri ularning ikkalasi ham [UZ Core ServiceRequest](StructureDefinition-uz-core-servicerequest.html) va [UZ Core Task Referral Approval](StructureDefinition-uz-core-referral-approval-task.html) sifatida nashr etildi va ikkalasi ham hali eksperimental deb belgilangan.
 
 [Laboratoriya tekshiruvini tayinlashdan natijani olishgacha](workflow-lab.html) jarayoni 0.8.0 da qayta nomlangan `uz-core-servicerequest-laboratory` ga havola qilar edi. Uning ikkita havolasi va misolidagi `meta.profile` endi [UZ Core ServiceRequest](StructureDefinition-uz-core-servicerequest.html) ga ishora qiladi.
