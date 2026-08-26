@@ -1,4 +1,5 @@
 ### In development
+
 The UZ Core VaccinationActivityDefinition profile has been renamed to [UZ Core ActivityDefinition](StructureDefinition-uz-core-activity-definition.html) and its canonical URL changed from `.../uz-core-vaccination-activity-definition` to `.../uz-core-activity-definition`. Implementers referencing the old canonical must update it.
 
 #### Documentation
@@ -115,7 +116,6 @@ The organization type ConceptMaps have been renamed from the MIS2 prefix to SSV,
 
 [UZ Core PlanDefinition](StructureDefinition-uz-core-plan-definition.html) now requires a second `useContext` stating the kind of schedule, bound (extensible) to the new [immunization schedule type](ValueSet-immunization-schedule-type-vs.html) value set. The choice-type slicing on `action.definition[x]` has been removed, because it made the validator reject `definitionCanonical`, and the examples now use `definitionCanonical`.
 
-
 #### Documentation
 
 Added a [Forms](forms.html) page where any questionnaire published by this guide can be filled in as a working form, in Uzbek, Russian or English, to check the wording, answer options, skip logic and calculated results before implementing it. The page can pre-fill a form with sample answers and links to the underlying QuestionnaireResponse JSON.
@@ -168,7 +168,6 @@ Corrected English display names in [OrganizationalSpecializationCS](CodeSystem-o
 
 `managingOrganization` on [UZ Core Patient](StructureDefinition-uz-core-patient.html) is now Must Support and must reference [UZ Core Organization](StructureDefinition-uz-core-organization.html).
 
-The multilingual translation extension (Uzbek base value plus Russian and Karakalpak translations) has been added to `name` on [UZ Core HealthcareService](StructureDefinition-uz-core-healthcareservice.html), and to `title` on [UZ Core ActivityDefinition](StructureDefinition-uz-core-activity-definition.html), [UZ Core Laboratory ObservationDefinition](StructureDefinition-uz-core-laboratory-observation-definition.html), [UZ Core PlanDefinition](StructureDefinition-uz-core-plan-definition.html) and [UZ Core Questionnaire](StructureDefinition-uz-core-questionnaire.html). `name` is now required on [UZ Core Organization](StructureDefinition-uz-core-organization.html) and [UZ Core Location](StructureDefinition-uz-core-location.html).
 On [UZ Core Patient](StructureDefinition-uz-core-patient.html) and [UZ Core RelatedPerson](StructureDefinition-uz-core-relatedperson.html), the local passport identifier no longer fixes `use` to `official`: use `official` for the current ID card and `old` for a superseded paper passport sharing the same system. See the [identifiers](identifiers.html) page.
 
 #### Breaking changes
@@ -181,7 +180,7 @@ The canonical URLs of the identifier-domain and EpisodeOfCare value sets (and th
 
 The [nationality CodeSystem](CodeSystem-nationality-cs.html), used by the [nationality value set](ValueSet-nationality-vs.html) on [UZ Core Patient](StructureDefinition-uz-core-patient.html), has been rebuilt from the updated dmp.uz nationality list: it grew from 306 to 512 entries, displays were standardised to uppercase, with Russian and English designations added, and codes were reassigned - the same code can now denote a different nationality (e.g. `#1` changed from "Ruslar" to "ADIGEY"). This is a breaking change: nationality codes stored under the previous version must be re-mapped.
 
-The multilingual translation extension (Uzbek base value plus Russian and Karakalpak translations) has been added to `name` on [UZ Core HealthcareService](StructureDefinition-uz-core-healthcareservice.html), and to `title` on [UZ Core ActivityDefinition](StructureDefinition-uz-core-vaccination-activity-definition.html), [UZ Core Laboratory ObservationDefinition](StructureDefinition-uz-core-laboratory-observation-definition.html), [UZ Core PlanDefinition](StructureDefinition-uz-core-plan-definition.html) and [UZ Core Questionnaire](StructureDefinition-uz-core-questionnaire.html). `name` is now required on [UZ Core Organization](StructureDefinition-uz-core-organization.html) and [UZ Core Location](StructureDefinition-uz-core-location.html).
+The multilingual translation extension (Uzbek base value plus Russian and Karakalpak translations) has been added to `name` on [UZ Core HealthcareService](StructureDefinition-uz-core-healthcareservice.html), and to `title` on [UZ Core ActivityDefinition](StructureDefinition-uz-core-activity-definition.html), [UZ Core Laboratory ObservationDefinition](StructureDefinition-uz-core-laboratory-observation-definition.html), [UZ Core PlanDefinition](StructureDefinition-uz-core-plan-definition.html) and [UZ Core Questionnaire](StructureDefinition-uz-core-questionnaire.html). `name` is now required on [UZ Core Organization](StructureDefinition-uz-core-organization.html) and [UZ Core Location](StructureDefinition-uz-core-location.html).
 
 #### Documentation
 

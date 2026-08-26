@@ -1,5 +1,7 @@
 ### В разработке
 
+Профиль UZ Core VaccinationActivityDefinition переименован в [UZ Core ActivityDefinition](StructureDefinition-uz-core-activity-definition.html), а его канонический URL изменён с `.../uz-core-vaccination-activity-definition` на `.../uz-core-activity-definition`. Реализациям, использующим старый канонический URL, необходимо обновить ссылку.
+
 #### Документация
 
 На странице [Компоненты](components.html) теперь описаны компоненты "Управление кровью", "Сестринское дело" и "Поставки" - на основе технических проектов этих компонентов. Раздел [Направления](components.html#направления) дополнен семью признаками, по которым классифицируется направление, а также разделением между ServiceRequest, который несёт само направление, и согласующими Task, которые ведут цепочку согласования в рамках государственного медицинского страхования.
@@ -69,7 +71,6 @@ ConceptMap DMEDPositionToSnomedCM удалён. Его сопоставлени�
 #### Документация
 
 Страница «Формы» теперь называется [Опросники](forms.html), чтобы её не принимали за медицинские формы, используемые в Узбекистане. Адрес страницы не изменился.
-Профиль UZ Core VaccinationActivityDefinition переименован в [UZ Core ActivityDefinition](StructureDefinition-uz-core-activity-definition.html), а его канонический URL изменён с `.../uz-core-vaccination-activity-definition` на `.../uz-core-activity-definition`. Реализациям, использующим старый канонический URL, необходимо обновить ссылку.
 
 Страница [как читать это руководство](how-to-read.html) теперь объясняет, что делать, когда ни один код привязанного ValueSet не подходит к данным, - для каждой силы привязки, с примерами JSON, где привязка extensible удовлетворяется сначала кодом из национального списка, а затем кодом SNOMED CT с сохранением исходной формулировки в `text`.
 
@@ -114,8 +115,6 @@ ValueSet на основе SNOMED CT теперь отбирают иерарх�
 ConceptMap типов организаций переименованы с префикса MIS2 на SSV в соответствии с SSV ValueSet, из которых выполняется сопоставление: [SSVLevelTypeToSubordinationGroupCM](ConceptMap-ssv-level-type-to-subordination-group-cm.html), [SSVMedicalTypeToOrganizationalStructureCM](ConceptMap-ssv-medical-type-to-organizational-structure-cm.html) и [SSVServiceTypeToOrganizationalServiceGroupCM](ConceptMap-ssv-service-type-to-organizational-service-group-cm.html). Дублирующие ConceptMap `mis2-*` удалены; разработчикам следует использовать канонические URL `ssv-*`. Сопоставления номенклатурных групп вынесены из SSVMedicalTypeToOrganizationalStructureCM в новый [SSVMedicalTypeToNomenclatureGroupCM](ConceptMap-ssv-medical-type-to-nomenclature-group-cm.html), чтобы каждый ConceptMap объявлял одну область источника и цели.
 
 [UZ Core PlanDefinition](StructureDefinition-uz-core-plan-definition.html) теперь требует второй `useContext` с указанием вида календаря, привязанный (extensible) к новому ValueSet [типа календаря иммунизации](ValueSet-immunization-schedule-type-vs.html). Слайсинг по типу для `action.definition[x]` удалён, поскольку из-за него валидатор отклонял `definitionCanonical`, и примеры теперь используют `definitionCanonical`.
-
-Профиль UZ Core ActivityDefinition переименован в [UZ Core VaccinationActivityDefinition](StructureDefinition-uz-core-vaccination-activity-definition.html), его канонический URL изменён с `.../uz-core-activity-definition` на `.../uz-core-vaccination-activity-definition`. Разработчики, ссылающиеся на прежний канонический URL, должны его обновить.
 
 #### Документация
 
@@ -169,8 +168,6 @@ ConceptMap типов организаций переименованы с пр�
 
 `managingOrganization` в [UZ Core Patient](StructureDefinition-uz-core-patient.html) теперь Must Support и должен ссылаться на [UZ Core Organization](StructureDefinition-uz-core-organization.html).
 
-Расширение для многоязычного перевода (базовое значение на узбекском плюс переводы на русский и каракалпакский) добавлено к `name` в [UZ Core HealthcareService](StructureDefinition-uz-core-healthcareservice.html) и к `title` в [UZ Core ActivityDefinition](StructureDefinition-uz-core-activity-definition.html), [UZ Core Laboratory ObservationDefinition](StructureDefinition-uz-core-laboratory-observation-definition.html), [UZ Core PlanDefinition](StructureDefinition-uz-core-plan-definition.html) и [UZ Core Questionnaire](StructureDefinition-uz-core-questionnaire.html). Элемент `name` теперь обязателен в [UZ Core Organization](StructureDefinition-uz-core-organization.html) и [UZ Core Location](StructureDefinition-uz-core-location.html).
-#### Организация и идентификаторы
 В [UZ Core Patient](StructureDefinition-uz-core-patient.html) и [UZ Core RelatedPerson](StructureDefinition-uz-core-relatedperson.html) локальный идентификатор паспорта больше не фиксирует `use` как `official`: используйте `official` для текущей ID-карты и `old` для устаревшего бумажного паспорта с той же системой. См. страницу [идентификаторы](identifiers.html).
 
 #### Несовместимые изменения
@@ -183,7 +180,7 @@ ConceptMap типов организаций переименованы с пр�
 
 [CodeSystem гражданства](CodeSystem-nationality-cs.html), на основе которого построен [набор значений гражданства](ValueSet-nationality-vs.html) в [UZ Core Patient](StructureDefinition-uz-core-patient.html), пересоздан на основе обновлённого списка гражданств dmp.uz: он вырос с 306 до 512 записей, отображаемые названия стандартизированы (верхний регистр), добавлены русские и английские переводы, а коды переназначены - один и тот же код теперь может обозначать другую национальность (например, `#1` изменился с "Ruslar" на "ADIGEY"). Это несовместимое изменение: коды гражданства, сохранённые в предыдущей версии, необходимо сопоставить заново.
 
-Расширение для многоязычного перевода (базовое значение на узбекском плюс переводы на русский и каракалпакский) добавлено к `name` в [UZ Core HealthcareService](StructureDefinition-uz-core-healthcareservice.html) и к `title` в [UZ Core ActivityDefinition](StructureDefinition-uz-core-vaccination-activity-definition.html), [UZ Core Laboratory ObservationDefinition](StructureDefinition-uz-core-laboratory-observation-definition.html), [UZ Core PlanDefinition](StructureDefinition-uz-core-plan-definition.html) и [UZ Core Questionnaire](StructureDefinition-uz-core-questionnaire.html). Элемент `name` теперь обязателен в [UZ Core Organization](StructureDefinition-uz-core-organization.html) и [UZ Core Location](StructureDefinition-uz-core-location.html).
+Расширение для многоязычного перевода (базовое значение на узбекском плюс переводы на русский и каракалпакский) добавлено к `name` в [UZ Core HealthcareService](StructureDefinition-uz-core-healthcareservice.html) и к `title` в [UZ Core ActivityDefinition](StructureDefinition-uz-core-activity-definition.html), [UZ Core Laboratory ObservationDefinition](StructureDefinition-uz-core-laboratory-observation-definition.html), [UZ Core PlanDefinition](StructureDefinition-uz-core-plan-definition.html) и [UZ Core Questionnaire](StructureDefinition-uz-core-questionnaire.html). Элемент `name` теперь обязателен в [UZ Core Organization](StructureDefinition-uz-core-organization.html) и [UZ Core Location](StructureDefinition-uz-core-location.html).
 
 #### Документация
 

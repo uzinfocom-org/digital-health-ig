@@ -1,4 +1,5 @@
 ### Ishlab chiqilmoqda
+
 UZ Core VaccinationActivityDefinition profili [UZ Core ActivityDefinition](StructureDefinition-uz-core-activity-definition.html) deb qayta nomlandi va uning kanonik URL manzili `.../uz-core-vaccination-activity-definition` dan `.../uz-core-activity-definition` ga o‘zgartirildi. Eski kanonik URL manzilidan foydalanayotgan tizimlarda tegishli havolani yangilash kerak.
 
 #### Hujjatlashtirish
@@ -115,8 +116,6 @@ Tashkilot turlari ConceptMap'lari MIS2 prefiksidan SSV prefiksiga o'zgartirildi,
 
 [UZ Core PlanDefinition](StructureDefinition-uz-core-plan-definition.html) endi kalendar turini ko'rsatuvchi ikkinchi `useContext` ni talab qiladi, u yangi [emlash kalendari turi](ValueSet-immunization-schedule-type-vs.html) ValueSet'iga bog'langan (extensible). `action.definition[x]` bo'yicha tur slayslash olib tashlandi, chunki u tufayli validator `definitionCanonical` ni rad etardi, va misollar endi `definitionCanonical` dan foydalanadi.
 
-UZ Core ActivityDefinition profili [UZ Core VaccinationActivityDefinition](StructureDefinition-uz-core-vaccination-activity-definition.html) deb nomlandi va uning kanonik URL'i `.../uz-core-activity-definition` dan `.../uz-core-vaccination-activity-definition` ga o'zgardi. Eski kanonik URL'ga havola qiluvchi dasturchilar uni yangilashlari kerak.
-
 #### Hujjatlashtirish
 
 [Shakllar](forms.html) sahifasi qo'shildi - unda ushbu qo'llanma nashr etadigan har qanday so'rovnomani o'zbek, rus yoki ingliz tilida ishchi shakl sifatida to'ldirib, amalga oshirishdan oldin matn, javob variantlari, o'tish mantig'i va hisoblanadigan natijalarni tekshirish mumkin. Sahifa shaklni namunaviy javoblar bilan to'ldira oladi va hosil bo'lgan QuestionnaireResponse JSON'iga havola beradi.
@@ -169,7 +168,6 @@ Bir nechta profillardagi havola maqsadlari endi mavjud bo'lgan joylarda UZ Core 
 
 [UZ Core Patient](StructureDefinition-uz-core-patient.html) dagi `managingOrganization` endi Must Support hisoblanadi va [UZ Core Organization](StructureDefinition-uz-core-organization.html) ga havola qilishi kerak.
 
-Ko'p tilli tarjima kengaytmasi (o'zbekcha asosiy qiymat hamda ruscha va qoraqalpoqcha tarjimalar) [UZ Core HealthcareService](StructureDefinition-uz-core-healthcareservice.html) dagi `name` ga hamda [UZ Core ActivityDefinition](StructureDefinition-uz-core-activity-definition.html), [UZ Core Laboratory ObservationDefinition](StructureDefinition-uz-core-laboratory-observation-definition.html), [UZ Core PlanDefinition](StructureDefinition-uz-core-plan-definition.html) va [UZ Core Questionnaire](StructureDefinition-uz-core-questionnaire.html) dagi `title` ga qo'shildi. `name` endi [UZ Core Organization](StructureDefinition-uz-core-organization.html) va [UZ Core Location](StructureDefinition-uz-core-location.html) da majburiy.
 [UZ Core Patient](StructureDefinition-uz-core-patient.html) va [UZ Core RelatedPerson](StructureDefinition-uz-core-relatedperson.html) da lokal pasport identifikatori endi `use` ni `official` ga qat'iy belgilamaydi: joriy ID karta uchun `official`, bir xil tizimni ulashadigan eskirgan qog'oz pasport uchun esa `old` dan foydalaning. [Identifikatorlar](identifiers.html) sahifasiga qarang.
 
 #### Buzuvchi o'zgarishlar
@@ -182,7 +180,7 @@ Identifikator-domeni va EpisodeOfCare qiymatlar to'plamlarining (shuningdek chet
 
 [UZ Core Patient](StructureDefinition-uz-core-patient.html) dagi [fuqarolik qiymatlar to'plami](ValueSet-nationality-vs.html) asosidagi [fuqarolik CodeSystem'i](CodeSystem-nationality-cs.html) yangilangan dmp.uz fuqarolik ro'yxati asosida qayta qurildi: u 306 tadan 512 taga oshdi, nomlar katta harflarga standartlashtirildi, ruscha va inglizcha tarjimalar qo'shildi, kodlar esa qayta tayinlandi - bitta kod endi boshqa millatni anglatishi mumkin (masalan, `#1` "Ruslar" dan "ADIGEY" ga o'zgardi). Bu buzuvchi o'zgarish: oldingi versiyada saqlangan fuqarolik kodlari qayta moslashtirilishi kerak.
 
-Ko'p tilli tarjima kengaytmasi (o'zbekcha asosiy qiymat hamda ruscha va qoraqalpoqcha tarjimalar) [UZ Core HealthcareService](StructureDefinition-uz-core-healthcareservice.html) dagi `name` ga hamda [UZ Core ActivityDefinition](StructureDefinition-uz-core-vaccination-activity-definition.html), [UZ Core Laboratory ObservationDefinition](StructureDefinition-uz-core-laboratory-observation-definition.html), [UZ Core PlanDefinition](StructureDefinition-uz-core-plan-definition.html) va [UZ Core Questionnaire](StructureDefinition-uz-core-questionnaire.html) dagi `title` ga qo'shildi. `name` endi [UZ Core Organization](StructureDefinition-uz-core-organization.html) va [UZ Core Location](StructureDefinition-uz-core-location.html) da majburiy.
+Ko'p tilli tarjima kengaytmasi (o'zbekcha asosiy qiymat hamda ruscha va qoraqalpoqcha tarjimalar) [UZ Core HealthcareService](StructureDefinition-uz-core-healthcareservice.html) dagi `name` ga hamda [UZ Core ActivityDefinition](StructureDefinition-uz-core-activity-definition.html), [UZ Core Laboratory ObservationDefinition](StructureDefinition-uz-core-laboratory-observation-definition.html), [UZ Core PlanDefinition](StructureDefinition-uz-core-plan-definition.html) va [UZ Core Questionnaire](StructureDefinition-uz-core-questionnaire.html) dagi `title` ga qo'shildi. `name` endi [UZ Core Organization](StructureDefinition-uz-core-organization.html) va [UZ Core Location](StructureDefinition-uz-core-location.html) da majburiy.
 
 #### Hujjatlashtirish
 
