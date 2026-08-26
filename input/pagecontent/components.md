@@ -224,7 +224,7 @@ The [Immunization](workflow-immunization.html) workflow shows how the national s
 
 ### Cross-component resource architecture
 
-In practice, several of the components described above exchange the same underlying FHIR resources. This diagram drops to the resource level: which resources each component owns, and which of those resources connect to another component. Each component starts closed, showing only how many resources it holds; click one, or press Enter on it, to open its resource list, and again to close it. Plain lines show two components integrating broadly, or several resource connections merged into one while both components are closed; arrows show a specific resource flowing from one component into another. Drag to pan, scroll to zoom, and hover or tab to a resource, component, or legend item to see its connections.
+In practice, several of the components described above exchange the same underlying FHIR resources. This diagram drops to the resource level: which resources each component owns, and which of those resources connect to another component. Plain lines show two components integrating broadly, or several resource connections merged into one while both components are closed; arrows show a specific resource flowing from one component into another. Drag to pan, scroll to zoom, and hover or tab to a resource, component, or legend item to see its connections.
 
 <br clear="all"/>
 
@@ -317,8 +317,8 @@ In practice, several of the components described above exchange the same underly
 
 <div class="arch-diagram">
   <div class="arch-legend">
-    <span data-legend="profiled" tabindex="0" role="button"><span class="swatch-box"></span> profiled in this IG</span>
-    <span data-legend="unprofiled" tabindex="0" role="button"><span class="swatch-box pale"></span> named, not yet profiled</span>
+    <span data-legend="profiled" tabindex="0" role="button"><span class="swatch-box"></span> defined in this IG</span>
+    <span data-legend="unprofiled" tabindex="0" role="button"><span class="swatch-box pale"></span> named, not yet defined</span>
   </div>
   <div class="arch-wrap">
     <div class="arch-canvas" id="arch-canvas">

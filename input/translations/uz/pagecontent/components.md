@@ -253,7 +253,7 @@ Komponent quyidagilarni ta'minlaydi:
 
 ### Komponentlararo resurs arxitekturasi
 
-Amalda yuqorida tavsiflangan bir nechta komponent bir xil FHIR resurslari bilan almashadi. Ushbu diagramma resurs darajasiga tushadi: har bir komponent qaysi resurslarga egalik qiladi va ulardan qaysilari boshqa komponent bilan bog'lanadi. Har bir komponent boshida yopiq bo'lib, faqat resurslar sonini ko'rsatadi; resurslar ro'yxatini ochish uchun uni bosing yoki Enter tugmasini bosing, yopish uchun yana bosing. Oddiy chiziqlar ikki komponentning keng integratsiyasini yoki ikkala komponent yopiq bo'lganda bitta chiziqqa birlashtirilgan bir nechta resurs aloqasini, strelkalar esa muayyan resursning bir komponentdan boshqasiga o'tishini ko'rsatadi. Ko'chirish uchun sudrang, masshtabni o'zgartirish uchun aylantiring, aloqalarni ko'rish uchun resurs, komponent yoki legenda elementiga sichqonchani olib boring yoki tab bilan o'ting.
+Amalda yuqorida tavsiflangan bir nechta komponent bir xil FHIR resurslari bilan almashadi. Ushbu diagramma resurs darajasiga tushadi: har bir komponent qaysi resurslarga egalik qiladi va ulardan qaysilari boshqa komponent bilan bog'lanadi. Oddiy chiziqlar ikki komponentning keng integratsiyasini yoki ikkala komponent yopiq bo'lganda bitta chiziqqa birlashtirilgan bir nechta resurs aloqasini, strelkalar esa muayyan resursning bir komponentdan boshqasiga o'tishini ko'rsatadi. Ko'chirish uchun sudrang, masshtabni o'zgartirish uchun aylantiring, aloqalarni ko'rish uchun resurs, komponent yoki legenda elementiga sichqonchani olib boring yoki tab bilan o'ting.
 
 <br clear="all"/>
 
@@ -346,8 +346,8 @@ Amalda yuqorida tavsiflangan bir nechta komponent bir xil FHIR resurslari bilan 
 
 <div class="arch-diagram">
   <div class="arch-legend">
-    <span data-legend="profiled" tabindex="0" role="button"><span class="swatch-box"></span> ushbu qo'llanmada profillangan</span>
-    <span data-legend="unprofiled" tabindex="0" role="button"><span class="swatch-box pale"></span> nomlangan, lekin hali profillanmagan</span>
+    <span data-legend="profiled" tabindex="0" role="button"><span class="swatch-box"></span> ushbu qo'llanmada belgilangan</span>
+    <span data-legend="unprofiled" tabindex="0" role="button"><span class="swatch-box pale"></span> nomlangan, lekin hali belgilanmagan</span>
   </div>
   <div class="arch-wrap">
     <div class="arch-canvas" id="arch-canvas">
