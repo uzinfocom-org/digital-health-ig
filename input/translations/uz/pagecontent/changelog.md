@@ -116,8 +116,6 @@ SNOMED CT asosidagi ValueSet'lar endi maqsadni ierarxiya yaxshiroq ifodalaydigan
 
 [UZ Core Condition](StructureDefinition-uz-core-condition.html) dagi `participant.actor` endi [UZ Core Organization](StructureDefinition-uz-core-organization.html) ga havola qila oladi.
 
-UZ Core ActivityDefinition profili UZ Core VaccinationActivityDefinition deb nomlandi va uning kanonik URL'i `.../uz-core-activity-definition` dan `.../uz-core-vaccination-activity-definition` ga o'zgardi. Eski kanonik URL'ga havola qiluvchi dasturchilar uni yangilashlari kerak.
-
 [UZ Core Location](StructureDefinition-uz-core-location.html) da soliq identifikatori slaysi olib tashlandi va `name` yana ixtiyoriy (0..1) bo'ldi - 0.6.0 da kiritilgan talab bekor qilindi.
 
 #### Buzuvchi o'zgarishlar
@@ -125,6 +123,8 @@ UZ Core ActivityDefinition profili UZ Core VaccinationActivityDefinition deb nom
 Tashkilot turlari ConceptMap'lari MIS2 prefiksidan SSV prefiksiga o'zgartirildi, chunki ular SSV ValueSet'laridan moslashtiradi: [SSVLevelTypeToSubordinationGroupCM](ConceptMap-ssv-level-type-to-subordination-group-cm.html), [SSVMedicalTypeToOrganizationalStructureCM](ConceptMap-ssv-medical-type-to-organizational-structure-cm.html) va [SSVServiceTypeToOrganizationalServiceGroupCM](ConceptMap-ssv-service-type-to-organizational-service-group-cm.html). Takrorlangan `mis2-*` ConceptMap'lar olib tashlandi; dasturchilar `ssv-*` kanonik URL'laridan foydalanishlari kerak. Nomenklatura guruhlari moslashtirishlari SSVMedicalTypeToOrganizationalStructureCM dan yangi [SSVMedicalTypeToNomenclatureGroupCM](ConceptMap-ssv-medical-type-to-nomenclature-group-cm.html) ga ajratildi, shunda har bir ConceptMap bitta manba va maqsad doirasini e'lon qiladi.
 
 [UZ Core PlanDefinition](StructureDefinition-uz-core-plan-definition.html) endi kalendar turini ko'rsatuvchi ikkinchi `useContext` ni talab qiladi, u yangi [emlash kalendari turi](ValueSet-immunization-schedule-type-vs.html) ValueSet'iga bog'langan (extensible). `action.definition[x]` bo'yicha tur slayslash olib tashlandi, chunki u tufayli validator `definitionCanonical` ni rad etardi, va misollar endi `definitionCanonical` dan foydalanadi.
+
+UZ Core ActivityDefinition profili UZ Core VaccinationActivityDefinition deb nomlandi va uning kanonik URL'i `.../uz-core-activity-definition` dan `.../uz-core-vaccination-activity-definition` ga o'zgardi. Eski kanonik URL'ga havola qiluvchi dasturchilar uni yangilashlari kerak.
 
 #### Hujjatlashtirish
 
