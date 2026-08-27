@@ -1,6 +1,24 @@
 ### In development
 
-(No changes yet)
+#### Added
+
+Added the [International Classification of Diseases for Oncology, 3rd edition, 2nd revision (ICD-O-3.2)](CodeSystem-icd-o-3.html) in full - 330 topography and 1143 morphology codes, with Uzbek and Russian designations - under its HL7 Terminology canonical `http://terminology.hl7.org/CodeSystem/icd-o-3`, with value sets selecting the [topography](ValueSet-icd-o-3-topography-vs.html) and [morphology](ValueSet-icd-o-3-morphology-vs.html) codes.
+
+#### Changed
+
+The [ICCC-3 CodeSystem](CodeSystem-iccc-3-cs.html) has moved from the DHP canonical `https://terminology.dhp.uz/fhir/core/CodeSystem/iccc-3-cs` to `http://terminology.hl7.org/CodeSystem/iccc-3`, the HL7 Terminology canonical for the IARC classification (the one the HL7 Europe PanCareSurPass IG uses), since the classification is IARC's rather than DHP's. The [value set](ValueSet-iccc-3-vs.html) keeps its URL.
+
+#### Documentation
+
+The [Components](components.html) page now describes Blood Management, Nursing and Supplies, from the Technical Projects for those components. The [Referrals](components.html#referrals) section has been extended with the seven axes a referral is classified along, and with the split between the ServiceRequest that carries the referral and the approval Tasks that drive its state-insurance approval chain.
+
+Each component that has a workflow page now links to it, and each workflow page links back to the component it belongs to. The Prescription section, whose Technical Project is still being written, points at the [e-Prescription and dispensing](workflow-prescription.html) workflow in the meantime.
+
+The cross-component resource architecture diagram on that page now covers Blood Management and Nursing, and shows the two profiles Referrals owns rather than leaving it empty. Master Data Management and Vaccination Management were empty placeholders and now list what they hold: the patient, organization, practitioner, practitioner role, healthcare service and location registries MDM is the source of truth for, and the Immunization, ImmunizationRecommendation, PlanDefinition, ActivityDefinition, AdverseEvent, Encounter and Observation behind the immunization workflow. It opens with every component closed, each card showing how many resources it holds, and opens a component's resource list when you click the card or press Enter on it; while two components are both closed, the resource arrows between them are drawn as a single line. Drawing every resource at once fitted the frame only at 40%, which left the resource names hard to read - the closed view fits at 80%. Its legend now reads defined in this IG rather than profiled in this IG, and on that reading the StructureDefinitions, ValueSets, CodeSystems and CapabilityStatement MSM publishes count as defined: they are instances rather than profiles, and were previously shown as not yet profiled.
+
+The [e-Referral lifecycle](workflow-referral.html) no longer states that the ServiceRequest and Task profiles are unpublished. Both have since published, as [UZ Core ServiceRequest](StructureDefinition-uz-core-servicerequest.html) and [UZ Core Task Referral Approval](StructureDefinition-uz-core-referral-approval-task.html), and both are still marked experimental.
+
+The [Laboratory order to result](workflow-lab.html) workflow linked to `uz-core-servicerequest-laboratory`, which was renamed in 0.8.0. Its two links and the `meta.profile` in its worked example now point at [UZ Core ServiceRequest](StructureDefinition-uz-core-servicerequest.html).
 
 ### Version 0.8.0
 

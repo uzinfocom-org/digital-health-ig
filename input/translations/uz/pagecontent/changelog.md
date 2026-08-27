@@ -1,6 +1,24 @@
 ### Ishlab chiqish jarayonida
 
-(Hozircha o'zgarishlar yo'q)
+#### Qo'shildi
+
+[Onkologiya uchun kasalliklarning xalqaro tasnifi, 3-nashr, 2-qayta ko'rib chiqish (ICD-O-3.2)](CodeSystem-icd-o-3.html) to'liq holda qo'shildi - o'zbek va rus tilidagi belgilashlar bilan 330 ta topografiya va 1143 ta morfologiya kodi - uning HL7 Terminology kanonik URL manzili `http://terminology.hl7.org/CodeSystem/icd-o-3` ostida, shuningdek [topografiya](ValueSet-icd-o-3-topography-vs.html) va [morfologiya](ValueSet-icd-o-3-morphology-vs.html) kodlarini tanlovchi qiymatlar to'plamlari.
+
+#### O'zgartirildi
+
+[ICCC-3 kod tizimi](CodeSystem-iccc-3-cs.html) DHP kanonik URL manzili `https://terminology.dhp.uz/fhir/core/CodeSystem/iccc-3-cs` dan `http://terminology.hl7.org/CodeSystem/iccc-3` ga ko'chirildi - bu IARC tasnifi uchun HL7 Terminology kanonik URL manzili (uni HL7 Europe PanCareSurPass qo'llanmasi ishlatadi), chunki tasnif DHP ga emas, IARC ga tegishli. [Qiymatlar to'plami](ValueSet-iccc-3-vs.html) o'z URL manzilini saqlab qoladi.
+
+#### Hujjatlashtirish
+
+[Komponentlar](components.html) sahifasi endi Qon resurslarini boshqarish, Hamshiralik ishi va Ta'minot komponentlarini ularning Texnik loyihalari asosida tavsiflaydi. [Yo'llanmalar](components.html#yollanmalar) bo'limi yo'llanma tasniflanadigan yettita o'lcham bilan hamda yo'llanmani saqlovchi ServiceRequest va uning davlat sug'urtasi bo'yicha kelishish zanjirini boshqaruvchi Task resurslari o'rtasidagi taqsimot bilan to'ldirildi.
+
+Ish jarayoni sahifasiga ega bo'lgan har bir komponent endi unga havola beradi, har bir ish jarayoni sahifasi esa o'zi tegishli bo'lgan komponentga qaytadan havola qiladi. Texnik loyihasi hali yozilayotgan Retseptlar bo'limi shu vaqt ichida [Elektron retsept va dori vositasini berish](workflow-prescription.html) jarayoniga ishora qiladi.
+
+O'sha sahifadagi komponentlararo resurs arxitekturasi diagrammasi endi Qon resurslarini boshqarish va Hamshiralik ishi komponentlarini ham qamrab oladi hamda Yo'llanmalar komponentini bo'sh qoldirmasdan, unga tegishli ikkita profilni ko'rsatadi. Asosiy ma'lumotlarni boshqarish va Vaksinatsiyani boshqarish komponentlari bo'sh o'rin egallab turgan edi, endi esa o'z tarkibini sanaydi: MDM haqiqat manbai bo'lgan bemorlar, tashkilotlar, tibbiyot xodimlari, ularning rollari, tibbiy xizmatlar va joylashuvlar reyestrlari hamda immunizatsiya jarayoni asosidagi Immunization, ImmunizationRecommendation, PlanDefinition, ActivityDefinition, AdverseEvent, Encounter va Observation resurslari. U barcha komponentlar yopiq holda ochiladi: har bir kartada uning resurslari soni ko'rsatiladi, resurslar ro'yxati esa kartani bosganda yoki Enter tugmasi bilan ochiladi; ikkala komponent yopiq bo'lganda, ular orasidagi resurs aloqalari bitta chiziq bilan chiziladi. Barcha resurslarni bir vaqtda chizish ramkaga faqat 40% masshtabda sig'ar edi va resurs nomlarini o'qish qiyin edi - yopiq ko'rinish 80% masshtabda sig'adi. Legendada endi "ushbu qo'llanmada profillangan" o'rniga "ushbu qo'llanmada belgilangan" deb yoziladi, shu ma'noda MSM chop etadigan StructureDefinition, ValueSet, CodeSystem va CapabilityStatement belgilangan deb hisoblanadi: ular profillar emas, balki resurs nusxalari bo'lib, ilgari hali profillanmagan deb ko'rsatilar edi.
+
+[Elektron yo'llanmaning hayot sikli](workflow-referral.html) sahifasida endi ServiceRequest va Task profillari nashr etilmagan deb aytilmaydi. O'shandan beri ularning ikkalasi ham [UZ Core ServiceRequest](StructureDefinition-uz-core-servicerequest.html) va [UZ Core Task Referral Approval](StructureDefinition-uz-core-referral-approval-task.html) sifatida nashr etildi va ikkalasi ham hali eksperimental deb belgilangan.
+
+[Laboratoriya tekshiruvini tayinlashdan natijani olishgacha](workflow-lab.html) jarayoni 0.8.0 da qayta nomlangan `uz-core-servicerequest-laboratory` ga havola qilar edi. Uning ikkita havolasi va misolidagi `meta.profile` endi [UZ Core ServiceRequest](StructureDefinition-uz-core-servicerequest.html) ga ishora qiladi.
 
 ### Versiya 0.8.0
 

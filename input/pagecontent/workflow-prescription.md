@@ -59,4 +59,5 @@ The `authorizingPrescription` link means a dispense always reads back against th
 ### Related
 
 - Profiles: [Condition](StructureDefinition-uz-core-condition.html) &middot; [Patient](StructureDefinition-uz-core-patient.html) &middot; [PractitionerRole](StructureDefinition-uz-core-practitioner-role.html)
+- Component: [Prescription](components.html#prescription)
 - [Workflows overview](workflows.html) &middot; [General guidance](general-guidance.html)

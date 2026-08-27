@@ -62,4 +62,5 @@ Because every visit, result and prescription carries the episode reference, this
 ### Related
 
 - Profiles: [EpisodeOfCare](StructureDefinition-uz-core-episodeofcare.html) &middot; [Encounter](StructureDefinition-uz-core-encounter.html) &middot; [Condition](StructureDefinition-uz-core-condition.html) &middot; [Observation](StructureDefinition-uz-core-observation.html)
+- Component: [Patient health journey management](components.html#patient-health-journey-management)
 - [Workflows overview](workflows.html) &middot; [General guidance](general-guidance.html)

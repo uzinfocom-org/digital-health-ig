@@ -2,7 +2,7 @@ Ushbu jarayon yo'llanma qanday yaratilishi va bajarilishini ko'rsatadi. Yo'llanm
 
 > `ServiceRequest` - yo'llanmaning o'zi, ya'ni *nima* bajarilishi kerakligini ifodalaydi. `Task` - uni bajarish bo'yicha ishni, ya'ni ishni *kim* bajargani, *qachon* bajargani va *qaysi bosqichda* ekanini ifodalaydi.
 
-> Profillarning holati: ServiceRequest va Task profillari ishlab chiqilmoqda. Ushbu sahifada tizimlar integratsiyani hozirdanoq shu model asosida amalga oshirishi uchun rejalashtirilgan modellashtirish yondashuvi tavsiflangan. Profillar e'lon qilingunga qadar FHIR R5 bazaviy resurslari va quyidagi qoidalardan foydalaning. Yo'llanmani bajarishda qo'llaniladigan [Procedure](StructureDefinition-uz-core-procedure.html), [Observation](StructureDefinition-uz-core-observation.html), [Encounter](StructureDefinition-uz-core-encounter.html) va [Condition](StructureDefinition-uz-core-condition.html) resurslari profillangan.
+> Profillarning holati: ikkala resurs ham endi profillangan - yo'llanmaning o'zi uchun [UZ Core ServiceRequest](StructureDefinition-uz-core-servicerequest.html), kelishish bosqichlari uchun esa [UZ Core Task Referral Approval](StructureDefinition-uz-core-referral-approval-task.html). Ularning ikkalasi ham hali eksperimental deb belgilangan, shuning uchun integratsiyani boshlashdan oldin ularni ko'rib chiqing. Yo'llanmani bajarishda qo'llaniladigan [Procedure](StructureDefinition-uz-core-procedure.html), [Observation](StructureDefinition-uz-core-observation.html), [Encounter](StructureDefinition-uz-core-encounter.html) va [Condition](StructureDefinition-uz-core-condition.html) resurslari profillangan.
 
 Ishtirokchilar: yo'llanma beruvchi klinitsist; kelishish komissiyalari (davlat tomonidan moliyalashtiriladigan yo'llanmalar uchun); xizmat ko'rsatuvchi tibbiyot tashkiloti.
 
@@ -69,4 +69,5 @@ Bekor qilingan yo'llanma bajarilishi mumkin emas; faol ServiceRequest mavjud bo'
 ### Bog'liq materiallar
 
 - Yo'llanmani bajarishda qo'llaniladigan profillar: [Procedure](StructureDefinition-uz-core-procedure.html) &middot; [Observation](StructureDefinition-uz-core-observation.html) &middot; [Encounter](StructureDefinition-uz-core-encounter.html) &middot; [Condition](StructureDefinition-uz-core-condition.html) &middot; [HealthcareService](StructureDefinition-uz-core-healthcareservice.html)
+- Komponent: [Yo'llanmalar](components.html#yollanmalar)
 - [Jarayonlar haqida umumiy ma'lumot](workflows.html) &middot; [Umumiy ko'rsatmalar](general-guidance.html)

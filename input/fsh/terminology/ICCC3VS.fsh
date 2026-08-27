@@ -6,4 +6,4 @@ Description: "Diagnostic groups, subgroups and divisions of the International Cl
 * ^url = "https://terminology.dhp.uz/fhir/core/ValueSet/iccc-3-vs"
 * ^experimental = true
 
-* include codes from system $iccc-3-cs
+* include codes from system $iccc-3

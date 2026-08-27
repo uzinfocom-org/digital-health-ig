@@ -97,4 +97,5 @@ Bemorda vaksinatsiyadan keyingi reaksiya kuzatilsa, [AdverseEvent](StructureDefi
 ### Bog'liq materiallar
 
 - Profillar: [PlanDefinition](StructureDefinition-uz-core-plan-definition.html) &middot; [ImmunizationRecommendation](StructureDefinition-uz-core-immunization-recommendation.html) &middot; [Encounter](StructureDefinition-uz-core-encounter.html) &middot; [Immunization](StructureDefinition-uz-core-immunization.html) &middot; [AdverseEvent](StructureDefinition-uz-core-adverse-event.html)
+- Komponent: [Vaksinatsiyani boshqarish](components.html#vaksinatsiyani-boshqarish)
 - [Ish jarayonlari haqida umumiy ma'lumot](workflows.html) &middot; [Umumiy tavsiyalar](general-guidance.html)
