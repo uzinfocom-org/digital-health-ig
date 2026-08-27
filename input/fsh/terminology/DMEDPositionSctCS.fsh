@@ -65,4 +65,4 @@ Description: "DMED Position SNOMED supplement with translations in Uzbek and Rus
   * ^designation[0].language = #ru
   * ^designation[=].value = "Допплерография"
   * ^designation[+].language = #uz
-  * ^designation[=].value = "Miokard to'qima cho'zilish tezligini baholash uchun Doppler ultratovush tekshiruvi"
+  * ^designation[=].value = "Dopplerografiya"

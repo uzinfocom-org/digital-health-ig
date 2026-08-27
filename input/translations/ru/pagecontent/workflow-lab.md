@@ -10,16 +10,16 @@
 
 <div>{% include lab-references.svg %}</div><br clear="all"/>
 
-> Статус профилирования: все четыре ресурса профилированы в UZ Core - [Specimen](StructureDefinition-uz-core-specimen.html), [Observation](StructureDefinition-uz-core-observation.html), [ServiceRequest](StructureDefinition-uz-core-servicerequest-laboratory.html) (лабораторный профиль) и [DiagnosticReport](StructureDefinition-uz-core-diagnostic-report.html). В элементе `meta.profile` каждого ресурса укажите соответствующий профиль и настройте связи, как показано ниже.
+> Статус профилирования: все четыре ресурса профилированы в UZ Core - [Specimen](StructureDefinition-uz-core-specimen.html), [Observation](StructureDefinition-uz-core-observation.html), [ServiceRequest](StructureDefinition-uz-core-servicerequest.html) и [DiagnosticReport](StructureDefinition-uz-core-diagnostic-report.html). В элементе `meta.profile` каждого ресурса укажите соответствующий профиль и настройте связи, как показано ниже.
 
 ### 1. Назначение исследования
 
-Клиницист создаёт [ServiceRequest](StructureDefinition-uz-core-servicerequest-laboratory.html), указывая `intent = order`, исследование или панель в `code`, пациента в `subject`, инициатора запроса и `reasonCode`/`reasonReference` (состояние Condition, по поводу которого проводится исследование). Доступные для назначения исследования публикуются как записи [HealthcareService](StructureDefinition-uz-core-healthcareservice.html); в `priority` указывается `routine`, `urgent` или `asap`.
+Клиницист создаёт [ServiceRequest](StructureDefinition-uz-core-servicerequest.html), указывая `intent = order`, исследование или панель в `code`, пациента в `subject`, инициатора запроса и `reasonCode`/`reasonReference` (состояние Condition, по поводу которого проводится исследование). Доступные для назначения исследования публикуются как записи [HealthcareService](StructureDefinition-uz-core-healthcareservice.html); в `priority` указывается `routine`, `urgent` или `asap`.
 
 ```
 POST [base]/ServiceRequest
 { "resourceType": "ServiceRequest",
-  "meta": { "profile": ["https://dhp.uz/fhir/core/StructureDefinition/uz-core-servicerequest-laboratory"] },
+  "meta": { "profile": ["https://dhp.uz/fhir/core/StructureDefinition/uz-core-servicerequest"] },
   "status": "active", "intent": "order",
   "code": { "coding": [{ "system": "http://loinc.org", "code": "58410-2" }] },
   "subject": { "reference": "Patient/[id]" },
@@ -59,5 +59,6 @@ GET [base]/Observation?patient=Patient/[id]&category=laboratory&_sort=-date
 
 ### Связанные материалы
 
-- Профили: [Specimen](StructureDefinition-uz-core-specimen.html) &middot; [Observation](StructureDefinition-uz-core-observation.html) &middot; [ServiceRequest](StructureDefinition-uz-core-servicerequest-laboratory.html) &middot; [DiagnosticReport](StructureDefinition-uz-core-diagnostic-report.html) &middot; [HealthcareService](StructureDefinition-uz-core-healthcareservice.html)
+- Профили: [Specimen](StructureDefinition-uz-core-specimen.html) &middot; [Observation](StructureDefinition-uz-core-observation.html) &middot; [ServiceRequest](StructureDefinition-uz-core-servicerequest.html) &middot; [DiagnosticReport](StructureDefinition-uz-core-diagnostic-report.html) &middot; [HealthcareService](StructureDefinition-uz-core-healthcareservice.html)
+- Компонент: [Лаборатория](components.html#лаборатория)
 - [Обзор процессов](workflows.html) &middot; [Общие рекомендации](general-guidance.html) &middot; [Жизненные показатели](vital-signs.html)

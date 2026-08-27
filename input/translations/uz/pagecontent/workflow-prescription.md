@@ -59,4 +59,5 @@ GET [base]/MedicationDispense?prescription=MedicationRequest/[id]
 ### Bog'liq materiallar
 
 - Profillar: [Condition](StructureDefinition-uz-core-condition.html) &middot; [Patient](StructureDefinition-uz-core-patient.html) &middot; [PractitionerRole](StructureDefinition-uz-core-practitioner-role.html)
+- Komponent: [Retseptlar](components.html#retseptlar)
 - [Jarayonlar haqida umumiy ma'lumot](workflows.html) &middot; [Umumiy tavsiyalar](general-guidance.html)
