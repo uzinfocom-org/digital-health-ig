@@ -2,11 +2,11 @@
 
 #### Qo'shildi
 
-[Onkologiya uchun kasalliklarning xalqaro tasnifi, 3-nashr, 2-qayta ko'rib chiqish (ICD-O-3.2)](CodeSystem-icd-o-3.html) to'liq holda qo'shildi - o'zbek va rus tilidagi belgilashlar bilan 330 ta topografiya va 1143 ta morfologiya kodi - uning HL7 Terminology kanonik URL manzili `http://terminology.hl7.org/CodeSystem/icd-o-3` ostida, shuningdek [topografiya](ValueSet-icd-o-3-topography-vs.html) va [morfologiya](ValueSet-icd-o-3-morphology-vs.html) kodlarini tanlovchi qiymatlar to'plamlari. U integratsiya qo'llanmasi onkologik kasalliklarni ro'yxatga olish uchun yuritgan ICD-3 topografiya va morfologiyasining to'liq bo'lmagan nusxalari o'rnini bosadi va terminologiya xizmatiga ushbu kodlarni tekshirish imkonini beradi.
+[Onkologiya uchun kasalliklarning xalqaro tasnifi, 3-nashr, 2-qayta ko'rib chiqish (ICD-O-3.2)](CodeSystem-icd-o-3.html) to'liq holda qo'shildi - o'zbek va rus tilidagi belgilashlar bilan 330 ta topografiya va 1143 ta morfologiya kodi - uning HL7 Terminology kanonik URL manzili `http://terminology.hl7.org/CodeSystem/icd-o-3` ostida, shuningdek [topografiya](ValueSet-icd-o-3-topography-vs.html) va [morfologiya](ValueSet-icd-o-3-morphology-vs.html) kodlarini tanlovchi qiymatlar to'plamlari.
 
-#### Buzuvchi o'zgarishlar
+#### O'zgartirildi
 
-[ICCC-3 kod tizimi](CodeSystem-iccc-3-cs.html) DHP kanonik URL manzili `https://terminology.dhp.uz/fhir/core/CodeSystem/iccc-3-cs` dan `http://terminology.hl7.org/CodeSystem/iccc-3` ga ko'chirildi - bu IARC tasnifi uchun HL7 Terminology kanonik URL manzili (uni HL7 Europe PanCareSurPass qo'llanmasi ishlatadi), chunki tasnif DHP ga emas, IARC ga tegishli. [Qiymatlar to'plami](ValueSet-iccc-3-vs.html) o'z URL manzilini saqlab qoladi. Eski tizim URL manzili bo'yicha kodlangan namunalarni yangilash kerak.
+[ICCC-3 kod tizimi](CodeSystem-iccc-3-cs.html) DHP kanonik URL manzili `https://terminology.dhp.uz/fhir/core/CodeSystem/iccc-3-cs` dan `http://terminology.hl7.org/CodeSystem/iccc-3` ga ko'chirildi - bu IARC tasnifi uchun HL7 Terminology kanonik URL manzili (uni HL7 Europe PanCareSurPass qo'llanmasi ishlatadi), chunki tasnif DHP ga emas, IARC ga tegishli. [Qiymatlar to'plami](ValueSet-iccc-3-vs.html) o'z URL manzilini saqlab qoladi.
 
 #### Hujjatlashtirish
 

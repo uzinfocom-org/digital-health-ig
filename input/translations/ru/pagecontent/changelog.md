@@ -2,11 +2,11 @@
 
 #### Добавлено
 
-Добавлена в полном объёме [Международная классификация болезней для онкологии, 3-е издание, 2-й пересмотр (ICD-O-3.2)](CodeSystem-icd-o-3.html) - 330 кодов топографии и 1143 кода морфологии с обозначениями на узбекском и русском языках - под её каноническим URL HL7 Terminology `http://terminology.hl7.org/CodeSystem/icd-o-3`, а также наборы значений, выбирающие коды [топографии](ValueSet-icd-o-3-topography-vs.html) и [морфологии](ValueSet-icd-o-3-morphology-vs.html). Она заменяет неполные копии топографии и морфологии ICD-3, которые интеграционное руководство вело для регистрации онкологических заболеваний, и позволяет терминологическому сервису проверять эти коды.
+Добавлена в полном объёме [Международная классификация болезней для онкологии, 3-е издание, 2-й пересмотр (ICD-O-3.2)](CodeSystem-icd-o-3.html) - 330 кодов топографии и 1143 кода морфологии с обозначениями на узбекском и русском языках - под её каноническим URL HL7 Terminology `http://terminology.hl7.org/CodeSystem/icd-o-3`, а также наборы значений, выбирающие коды [топографии](ValueSet-icd-o-3-topography-vs.html) и [морфологии](ValueSet-icd-o-3-morphology-vs.html).
 
-#### Несовместимые изменения
+#### Изменено
 
-[Система кодов ICCC-3](CodeSystem-iccc-3-cs.html) перенесена с канонического URL DHP `https://terminology.dhp.uz/fhir/core/CodeSystem/iccc-3-cs` на `http://terminology.hl7.org/CodeSystem/iccc-3` - канонический URL HL7 Terminology для этой классификации IARC (его использует руководство HL7 Europe PanCareSurPass), поскольку классификация принадлежит IARC, а не DHP. [Набор значений](ValueSet-iccc-3-vs.html) сохраняет свой URL. Экземпляры, закодированные по старому URL системы, необходимо обновить.
+[Система кодов ICCC-3](CodeSystem-iccc-3-cs.html) перенесена с канонического URL DHP `https://terminology.dhp.uz/fhir/core/CodeSystem/iccc-3-cs` на `http://terminology.hl7.org/CodeSystem/iccc-3` - канонический URL HL7 Terminology для этой классификации IARC (его использует руководство HL7 Europe PanCareSurPass), поскольку классификация принадлежит IARC, а не DHP. [Набор значений](ValueSet-iccc-3-vs.html) сохраняет свой URL.
 
 #### Документация
 
