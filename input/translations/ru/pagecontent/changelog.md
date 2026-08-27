@@ -124,7 +124,7 @@ ConceptMap типов организаций переименованы с пр�
 
 [UZ Core PlanDefinition](StructureDefinition-uz-core-plan-definition.html) теперь требует второй `useContext` с указанием вида календаря, привязанный (extensible) к новому ValueSet [типа календаря иммунизации](ValueSet-immunization-schedule-type-vs.html). Слайсинг по типу для `action.definition[x]` удалён, поскольку из-за него валидатор отклонял `definitionCanonical`, и примеры теперь используют `definitionCanonical`.
 
-Профиль UZ Core ActivityDefinition переименован в UZ Core VaccinationActivityDefinition, его канонический URL изменён с `.../uz-core-activitydefinition` на `.../uz-core-vaccination-activity-definition`. Разработчики, ссылающиеся на прежний канонический URL, должны его обновить.
+Профиль UZ Core ActivityDefinition переименован в UZ Core VaccinationActivityDefinition, его канонический URL изменён с `.../uz-core-activity-definition` на `.../uz-core-vaccination-activity-definition`. Разработчики, ссылающиеся на прежний канонический URL, должны его обновить.
 
 #### Документация
 
