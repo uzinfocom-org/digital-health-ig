@@ -226,3 +226,23 @@ Alias: $composition-list-order = http://terminology.hl7.org/CodeSystem/list-orde
 Alias: $service-request-intent = http://hl7.org/fhir/request-intent
 
 Alias: $coverage-kind = http://hl7.org/fhir/coverage-kind
+
+Alias: $breast-cancer-risk-category-cs = https://terminology.dhp.uz/fhir/core/CodeSystem/breast-cancer-risk-category-cs
+Alias: $cerebrovascular-alcohol-stress-level-cs = https://terminology.dhp.uz/fhir/core/CodeSystem/cerebrovascular-alcohol-stress-level-cs
+Alias: $cerebrovascular-blood-pressure-status-cs = https://terminology.dhp.uz/fhir/core/CodeSystem/cerebrovascular-blood-pressure-status-cs
+Alias: $cerebrovascular-cholesterol-status-cs = https://terminology.dhp.uz/fhir/core/CodeSystem/cerebrovascular-cholesterol-status-cs
+Alias: $cerebrovascular-diabetes-status-cs = https://terminology.dhp.uz/fhir/core/CodeSystem/cerebrovascular-diabetes-status-cs
+Alias: $cerebrovascular-family-history-cs = https://terminology.dhp.uz/fhir/core/CodeSystem/cerebrovascular-family-history-cs
+Alias: $cerebrovascular-heart-condition-cs = https://terminology.dhp.uz/fhir/core/CodeSystem/cerebrovascular-heart-condition-cs
+Alias: $cerebrovascular-physical-activity-cs = https://terminology.dhp.uz/fhir/core/CodeSystem/cerebrovascular-physical-activity-cs
+Alias: $cerebrovascular-risk-category-cs = https://terminology.dhp.uz/fhir/core/CodeSystem/cerebrovascular-risk-category-cs
+Alias: $cerebrovascular-smoking-status-cs = https://terminology.dhp.uz/fhir/core/CodeSystem/cerebrovascular-smoking-status-cs
+Alias: $cerebrovascular-weight-status-cs = https://terminology.dhp.uz/fhir/core/CodeSystem/cerebrovascular-weight-status-cs
+Alias: $cervical-cancer-menstrual-cycle-cs = https://terminology.dhp.uz/fhir/core/CodeSystem/cervical-cancer-menstrual-cycle-cs
+Alias: $diabetes-in-relatives-cs = https://terminology.dhp.uz/fhir/core/CodeSystem/diabetes-in-relatives-cs
+Alias: $diabetes-risk-category-cs = https://terminology.dhp.uz/fhir/core/CodeSystem/diabetes-risk-category-cs
+Alias: $fertility-contraception-kind-cs = https://terminology.dhp.uz/fhir/core/CodeSystem/fertility-contraception-kind-cs
+Alias: $fertility-contraception-type-cs = https://terminology.dhp.uz/fhir/core/CodeSystem/fertility-contraception-type-cs
+Alias: $ihd-chest-pain-type-cs = https://terminology.dhp.uz/fhir/core/CodeSystem/ihd-chest-pain-type-cs
+Alias: $ihd-risk-category-cs = https://terminology.dhp.uz/fhir/core/CodeSystem/ihd-risk-category-cs
+Alias: $oncohematology-result-category-cs = https://terminology.dhp.uz/fhir/core/CodeSystem/oncohematology-result-category-cs
