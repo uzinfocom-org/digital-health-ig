@@ -1,65 +1,68 @@
+// Uzbek designations for #431488007 have no sourced translation (neither prior version of this
+// file had one) — the value below is an unreviewed placeholder pending native-speaker review,
+// unlike the other nine concepts which use the Uzbek text already confirmed elsewhere.
 CodeSystem: DMEDPositionSctCS
 Id: dmed-position-sct-cs
 Title: "DMED Position SNOMED CodeSystem"
 Description: "DMED Position SNOMED supplement with translations in Uzbek and Russian"
 * insert SupplementCodeSystem(dmed-position-sct-cs, $sct, 2026.1.0)
 
-* #224577009 
+* #224577009
   * ^designation[0].language = #ru
   * ^designation[=].value = "Помощник медицинского работника"
-  * ^designation[+].language = #en
-  * ^designation[=].value = "Healthcare Assistant"
+  * ^designation[+].language = #uz
+  * ^designation[=].value = "Tibbiyot xodimi yordamchisi"
 
 * #158965000
   * ^designation[0].language = #ru
   * ^designation[=].value = "Врач"
-  * ^designation[+].language = #en
-  * ^designation[=].value = "Medical practitioner"
+  * ^designation[+].language = #uz
+  * ^designation[=].value = "Shifokor"
 
 * #24794006
   * ^designation[0].language = #ru
   * ^designation[=].value = "Государственный администратор"
-  * ^designation[+].language = #en
-  * ^designation[=].value = "Government administrator"
+  * ^designation[+].language = #uz
+  * ^designation[=].value = "Davlat ma'muri"
 
 * #446050000
   * ^designation[0].language = #ru
   * ^designation[=].value = "Врач общей практики"
-  * ^designation[+].language = #en
-  * ^designation[=].value = "Primary care physician"
+  * ^designation[+].language = #uz
+  * ^designation[=].value = "Umumiy amaliyot shifokori"
 
 * #1255514008
   * ^designation[0].language = #ru
   * ^designation[=].value = "Фармацевт, специализирующийся на вопросах регулирования."
-  * ^designation[+].language = #en
-  * ^designation[=].value = "Regulatory affairs pharmacist"
+  * ^designation[+].language = #uz
+  * ^designation[=].value = "Tartibga solish masalalari bo'yicha farmatsevt"
 
 * #405279007
   * ^designation[0].language = #ru
   * ^designation[=].value = "Врач, осуществляющий уход за пациентом"
-  * ^designation[+].language = #en
-  * ^designation[=].value = "Attending physician"
+  * ^designation[+].language = #uz
+  * ^designation[=].value = "Bemorni kuzatuvchi shifokor"
 
 * #159143006
   * ^designation[0].language = #ru
   * ^designation[=].value = "Гистолог"
-  * ^designation[+].language = #en
-  * ^designation[=].value = "Histologist"
+  * ^designation[+].language = #uz
+  * ^designation[=].value = "Gistolog"
 
 * #25855006
   * ^designation[0].language = #ru
   * ^designation[=].value = "Нейрореабилитолог"
-  * ^designation[+].language = #en
-  * ^designation[=].value = "Neurological rehabilitation"
+  * ^designation[+].language = #uz
+  * ^designation[=].value = "Nevroreabilitolog"
 
 * #309372007
   * ^designation[0].language = #ru
   * ^designation[=].value = "Отоларинголог"
-  * ^designation[+].language = #en
-  * ^designation[=].value = "Ear, nose and throat surgeon"
+  * ^designation[+].language = #uz
+  * ^designation[=].value = "Otorinolaringolog"
 
 * #431488007
   * ^designation[0].language = #ru
   * ^designation[=].value = "Допплерография"
-  * ^designation[+].language = #en
-  * ^designation[=].value = "Doppler ultrasound of myocardium for tissue strain rate"
+  * ^designation[+].language = #uz
+  * ^designation[=].value = "Miokard to'qima cho'zilish tezligini baholash uchun Doppler ultratovush tekshiruvi"
