@@ -253,7 +253,7 @@ Komponent quyidagilarni ta'minlaydi:
 
 ### Komponentlararo resurs arxitekturasi
 
-Amalda yuqorida tavsiflangan bir nechta komponent bir xil FHIR resurslari bilan almashadi. Ushbu diagramma resurs darajasiga tushadi: har bir komponent qaysi resurslarga egalik qiladi va ulardan qaysilari boshqa komponent bilan bog'lanadi. Oddiy chiziqlar ikki komponentning keng integratsiyasini yoki ikkala komponent yopiq bo'lganda bitta chiziqqa birlashtirilgan bir nechta resurs aloqasini, strelkalar esa muayyan resursning bir komponentdan boshqasiga o'tishini ko'rsatadi. Ko'chirish uchun sudrang, masshtabni o'zgartirish uchun aylantiring, aloqalarni ko'rish uchun resurs, komponent yoki legenda elementiga sichqonchani olib boring yoki tab bilan o'ting.
+Amalda yuqorida tavsiflangan bir nechta komponent bir xil FHIR resurslari bilan almashadi. Ushbu diagramma resurs darajasiga tushadi: har bir komponent qaysi resurslarga egalik qiladi va ulardan qaysilari boshqa komponent bilan bog'lanadi. Oddiy chiziqlar ikki komponentning keng integratsiyasini yoki ikkala komponent yopiq bo'lganda bitta chiziqqa birlashtirilgan bir nechta resurs aloqasini, strelkalar esa muayyan resursning bir komponentdan boshqasiga o'tishini ko'rsatadi. Ko'chirish uchun sudrang, masshtabni o'zgartirish uchun aylantiring, aloqalarni ko'rish uchun resurs, komponent yoki legenda elementiga sichqonchani olib boring yoki tab bilan o'ting. ★ komponentning o'zi javobgar bo'lgan resursni belgilaydi; qolganlarini u ular uchun javobgar komponent bilan birgalikda ishlatadi.
 
 <br clear="all"/>
 
@@ -277,6 +277,7 @@ Amalda yuqorida tavsiflangan bir nechta komponent bir xil FHIR resurslari bilan 
   .arch-legend span[data-legend]:hover, .arch-legend span[data-legend]:focus-visible { background: var(--paper-raised); }
   .arch-legend .swatch-box { width: 12px; height: 12px; background: var(--blueprint-soft); border: 1px solid var(--line); }
   .arch-legend .swatch-box.pale { background: var(--pencil-soft); }
+  .arch-legend .swatch-star { color: var(--blueprint); font-size: 0.85rem; line-height: 1; }
 
   .arch-wrap { display: flex; gap: 1rem; align-items: flex-start; flex-wrap: wrap; }
 
@@ -321,6 +322,7 @@ Amalda yuqorida tavsiflangan bir nechta komponent bir xil FHIR resurslari bilan 
     font-weight: 600; font-size: 0.92rem; color: var(--ink); margin: 0 0 0.2rem;
   }
   .arch-info-sub { font-size: 0.76rem; color: var(--ink-soft); margin: 0 0 0.8rem; }
+  .arch-info-service { font-family: var(--mono-font); font-size: 0.76rem; color: var(--ink-soft); margin: -0.55rem 0 0.8rem; }
   .arch-rel-list { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 0.55rem; }
   .arch-rel-item { border-left: 2px solid var(--blueprint); padding-left: 0.6rem; }
   .arch-rel-head { font-size: 0.8rem; color: var(--ink); font-weight: 600; }
@@ -348,6 +350,7 @@ Amalda yuqorida tavsiflangan bir nechta komponent bir xil FHIR resurslari bilan 
   <div class="arch-legend">
     <span data-legend="profiled" tabindex="0" role="button"><span class="swatch-box"></span> ushbu qo'llanmada belgilangan</span>
     <span data-legend="unprofiled" tabindex="0" role="button"><span class="swatch-box pale"></span> nomlangan, lekin hali belgilanmagan</span>
+    <span data-legend="own" tabindex="0" role="button"><span class="swatch-star">★</span> komponent ushbu resurs uchun javobgar</span>
   </div>
   <div class="arch-wrap">
     <div class="arch-canvas" id="arch-canvas">
@@ -355,7 +358,7 @@ Amalda yuqorida tavsiflangan bir nechta komponent bir xil FHIR resurslari bilan 
     </div>
     <div class="arch-info" id="arch-info">
       <div id="arch-info-body">
-        <p class="arch-info-hint">Komponent resurslarini ochish uchun uni bosing. Aloqalarni ko'rish uchun resurs, komponent yoki legenda elementiga sichqonchani olib boring yoki tab bilan o'ting.</p>
+        <p class="arch-info-hint">Komponent resurslarini ochish uchun uni bosing; ★ komponent javobgar bo'lgan resurslarni belgilaydi. Aloqalarni ko'rish uchun resurs, komponent yoki legenda elementiga sichqonchani olib boring yoki tab bilan o'ting.</p>
         <div class="arch-stat-row"><span>Ko'rsatilgan komponentlar</span><span class="arch-stat-n" id="arch-stat-components">–</span></div>
         <div class="arch-stat-row"><span>Resurslar</span><span class="arch-stat-n" id="arch-stat-resources">–</span></div>
         <div class="arch-stat-row"><span>Aloqalar</span><span class="arch-stat-n" id="arch-stat-relationships">–</span></div>
