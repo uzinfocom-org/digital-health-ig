@@ -37,34 +37,34 @@
   ];
 
   var COMPONENTS = {
-    MDM: { short: "MDM", label: "Master Data Management (MDM)", resources: [
+    MDM: { service: "mdm", short: "MDM", label: "Master Data Management (MDM)", resources: [
       { name: "Patient", profiled: true }, { name: "Organization", profiled: true },
       { name: "Practitioner", profiled: true }, { name: "PractitionerRole", profiled: true },
       { name: "HealthcareService", profiled: true }, { name: "Location", profiled: true }
     ]},
-    MSM: { short: "MSM", label: "Metadata and Security Management (MSM)", resources: [
+    MSM: { service: "metadata", short: "MSM", label: "Metadata and Security Management (MSM)", resources: [
       { name: "StructureDefinition", profiled: true }, { name: "ValueSet", profiled: true },
       { name: "CodeSystem", profiled: true }, { name: "CapabilityStatement", profiled: true },
       { name: "Provenance", profiled: true }, { name: "AuditEvent", profiled: true }, { name: "Consent", profiled: true }
     ]},
-    CHR: { short: "CHR", label: "Clinical Health Records (CHR)", resources: [
+    CHR: { service: "chr", short: "CHR", label: "Clinical Health Records (CHR)", resources: [
       { name: "Patient", profiled: true }, { name: "EpisodeOfCare", profiled: true }, { name: "Condition", profiled: true },
       { name: "Observation", profiled: true }, { name: "Procedure", profiled: true }, { name: "AllergyIntolerance", profiled: true },
       { name: "MedicationRequest" }
     ]},
-    PHJM: { short: "PHJM", label: "Patient health journey management (PHJM)", resources: [
+    PHJM: { service: "phjm", short: "PHJM", label: "Patient health journey management (PHJM)", resources: [
       { name: "EpisodeOfCare", profiled: true }, { name: "Encounter", profiled: true }, { name: "Condition", profiled: true },
       { name: "Observation", profiled: true }, { name: "CarePlan" }, { name: "Questionnaire", profiled: true },
       { name: "QuestionnaireResponse", profiled: true }
     ]},
-    LAB: { short: "Laboratory", label: "Laboratory", resources: [
+    LAB: { service: "laboratory", short: "Laboratory", label: "Laboratory", resources: [
       { name: "Observation", profiled: true }, { name: "Specimen", profiled: true },
       { name: "DiagnosticReport", profiled: true }, { name: "ServiceRequest", profiled: true }
     ]},
-    REFERRALS: { short: "Referrals", label: "Referrals", resources: [
+    REFERRALS: { service: "referrals", short: "Referrals", label: "Referrals", resources: [
       { name: "ServiceRequest", profiled: true }, { name: "Task", profiled: true }
     ]},
-    REIMB: { short: "Reimbursement", label: "Reimbursement", resources: [
+    REIMB: { service: "reimbursement", short: "Reimbursement", label: "Reimbursement", resources: [
       { name: "Claim", profiled: true }, { name: "ClaimResponse", profiled: true }, { name: "Encounter", profiled: true },
       { name: "Procedure", profiled: true }, { name: "MedicationDispense", profiled: true }, { name: "Condition", profiled: true },
       { name: "Observation", profiled: true }, { name: "CarePlan" }, { name: "Composition", profiled: true }
@@ -72,26 +72,57 @@
     SCREEN: { short: "Screening Schedules", label: "Screening Schedules Management", resources: [
       { name: "Questionnaire", profiled: true }
     ]},
-    VACC: { short: "Vaccination Mgmt", label: "Vaccination Management", resources: [
+    VACC: { service: "vm", short: "Vaccination Mgmt", label: "Vaccination Management", resources: [
       { name: "Immunization", profiled: true }, { name: "ImmunizationRecommendation", profiled: true },
       { name: "PlanDefinition", profiled: true }, { name: "ActivityDefinition", profiled: true },
       { name: "AdverseEvent", profiled: true }, { name: "Encounter", profiled: true },
       { name: "Observation", profiled: true }
     ]},
-    BLOOD: { short: "Blood Mgmt", label: "Blood Management", resources: [
+    BLOOD: { service: "blood", short: "Blood Mgmt", label: "Blood Management", resources: [
       { name: "ServiceRequest", profiled: true }, { name: "SupplyRequest" },
       { name: "Procedure", profiled: true }, { name: "Observation", profiled: true },
       { name: "InventoryItem" }, { name: "InventoryReport" },
       { name: "PlanDefinition", profiled: true }, { name: "Group", profiled: true },
       { name: "BiologicallyDerivedProduct" }, { name: "DiagnosticReport", profiled: true }
     ]},
-    NURSING: { short: "Nursing", label: "Nursing", resources: [
+    NURSING: { service: "nursing", short: "Nursing", label: "Nursing", resources: [
       { name: "ServiceRequest", profiled: true }, { name: "Encounter", profiled: true },
       { name: "Observation", profiled: true }, { name: "Procedure", profiled: true },
       { name: "Condition", profiled: true }, { name: "Questionnaire", profiled: true },
       { name: "QuestionnaireResponse", profiled: true }
     ]}
   };
+
+  // Which platform service is responsible for each FHIR resource type, from
+  // the platform team's service-to-resource allocation. A resource type used
+  // by several components is still stored by exactly one service, so this is
+  // keyed by resource type rather than by component. Resource types with no
+  // service listed yet (CapabilityStatement, Provenance, AuditEvent, Consent,
+  // InventoryReport, Group) simply have no entry.
+  var SERVICES = {
+    metadata: ["NamingSystem", "ValueSet", "CodeSystem", "ConceptMap", "StructureDefinition", "OperationDefinition", "SearchParameter"],
+    mdm: ["Organization", "Practitioner", "PractitionerRole", "Location", "Person", "HealthcareService"],
+    referrals: ["Task"],
+    prescription: ["Medication", "MedicationAdministration"],
+    aas: ["Appointment", "Schedule", "Slot"],
+    laboratory: ["Specimen", "DiagnosticReport", "ObservationDefinition", "ServiceRequest"],
+    dai: ["ImagingStudy"],
+    ambulance: ["Communication"],
+    supplies: ["SupplyRequest", "SupplyDelivery", "InventoryItem"],
+    reimbursement: ["Claim", "ClaimResponse", "Coverage", "Invoice", "PaymentNotice", "PaymentReconciliation"],
+    cds: ["Library", "GuidanceResponse"],
+    nursing: ["CarePlan"],
+    blood: ["BiologicallyDerivedProduct"],
+    vm: ["Immunization", "PlanDefinition", "ActivityDefinition", "ImmunizationRecommendation", "AdverseEvent"],
+    phr: ["Measure", "RiskAssessment"],
+    phjm: ["Patient", "RelatedPerson", "Condition", "EpisodeOfCare", "Encounter", "Questionnaire", "QuestionnaireResponse", "Observation"],
+    chr: ["AllergyIntolerance", "Flag", "Procedure", "Composition", "MedicationRequest", "MedicationDispense", "Goal"],
+    coordinator: ["Bundle"]
+  };
+  var SERVICE_OF = {};
+  Object.keys(SERVICES).forEach(function (s) {
+    SERVICES[s].forEach(function (r) { SERVICE_OF[r] = s; });
+  });
 
   var EDGES = [
     { from: "CHR", to: "MDM", kind: "fullCompat" },
@@ -148,6 +179,10 @@
       noRelations: "No stated or inferred relationships for this node.",
       profiledTitle: "Defined in this IG",
       unprofiledTitle: "Named, not yet defined",
+      ownTitle: "Resources the component is responsible for",
+      own: "the component is responsible for this resource",
+      service: "Service",
+      noService: "No service assigned yet",
       resourceCount: function (n) { return n + (n === 1 ? " resource" : " resources"); }
     },
     ru: {
@@ -175,6 +210,10 @@
       noRelations: "Для этого узла нет заявленных или предполагаемых связей.",
       profiledTitle: "Определено в этом руководстве",
       unprofiledTitle: "Упомянуто, но ещё не определено",
+      ownTitle: "Ресурсы, за которые отвечает компонент",
+      own: "компонент отвечает за этот ресурс",
+      service: "Сервис",
+      noService: "Сервис ещё не назначен",
       // 1 ресурс / 2-4 ресурса / 5+ ресурсов, with the 11-14 exception.
       resourceCount: function (n) {
         var m10 = n % 10, m100 = n % 100;
@@ -208,9 +247,19 @@
       noRelations: "Bu tugun uchun belgilangan yoki taxmin qilingan aloqalar yo'q.",
       profiledTitle: "Ushbu qo'llanmada belgilangan",
       unprofiledTitle: "Nomlangan, lekin hali belgilanmagan",
+      ownTitle: "Komponent javobgar bo'lgan resurslar",
+      own: "komponent ushbu resurs uchun javobgar",
+      service: "Xizmat",
+      noService: "Xizmat hali belgilanmagan",
       resourceCount: function (n) { return n + " ta resurs"; }
     }
   };
+
+  // True when the component's own service is the one storing the resource.
+  function isOwn(compId, name) {
+    var svc = COMPONENTS[compId].service;
+    return !!svc && SERVICE_OF[name] === svc;
+  }
 
   var LANG = (document.documentElement.getAttribute("lang") || "en").slice(0, 2).toLowerCase();
   var T = STRINGS[LANG] || STRINGS.en;
@@ -290,7 +339,8 @@
               x: curX + PILL_INSET,
               y: curY + TITLE_H + PAD_TOP + ri * (PILL_H + PILL_GAP),
               w: BOX_W - 2 * PILL_INSET, h: PILL_H,
-              name: r.name, profiled: !!r.profiled, compId: id
+              name: r.name, profiled: !!r.profiled, compId: id,
+              service: SERVICE_OF[r.name] || null, own: isOwn(id, r.name)
             };
           });
         }
@@ -389,7 +439,7 @@
       g.appendChild(r);
 
       var text = el('text', {
-        x: isBox ? rect.x + 10 : rect.x + rect.w / 2,
+        x: isBox ? rect.x + 10 : rect.x + rect.w / 2 + (data.own ? 6 : 0),
         y: isBox ? rect.y + 19 : rect.y + rect.h / 2 + 4,
         'text-anchor': isBox ? 'start' : 'middle',
         'font-family': MONO_FONT,
@@ -399,6 +449,14 @@
       text.style.fill = isBox ? 'var(--ink)' : (data.profiled ? 'var(--blueprint)' : 'var(--ink-soft)');
       text.textContent = isBox ? compShort(id) : data.name;
       g.appendChild(text);
+      if (!isBox && data.own) {
+        var mark = el('text', {
+          x: rect.x + 6, y: rect.y + rect.h / 2 + 4, 'font-family': MONO_FONT, 'font-size': '10'
+        });
+        mark.style.fill = 'var(--blueprint)';
+        mark.textContent = '★';
+        g.appendChild(mark);
+      }
 
       if (isBox && !expanded[id]) {
         var count = el('text', { x: rect.x + 10, y: rect.y + 40, 'font-family': MONO_FONT, 'font-size': '10' });
@@ -416,7 +474,8 @@
         g.appendChild(toggle);
       }
 
-      var label = isBox ? compLabel(id) : (data.name + ' — ' + compLabel(data.compId));
+      var label = isBox ? compLabel(id) : (data.name + ' — ' + compLabel(data.compId)
+        + ' — ' + T.service + ': ' + (data.service || T.noService) + (data.own ? ' (' + T.own + ')' : ''));
       g.setAttribute('aria-label', label);
       if (openable) g.setAttribute('aria-expanded', expanded[id] ? 'true' : 'false');
       nodeLayer.appendChild(g);
@@ -424,7 +483,7 @@
       // A few resource type names, and some component names once translated,
       // are wider than the box holding them. Rather than size every box to the
       // longest string, condense just the labels that do not fit.
-      var avail = isBox ? rect.w - 10 - (openable ? 20 : 10) : rect.w - 6;
+      var avail = isBox ? rect.w - 10 - (openable ? 20 : 10) : rect.w - 6 - (data.own ? 18 : 0);
       if (text.getComputedTextLength() > avail) {
         text.setAttribute('textLength', avail);
         text.setAttribute('lengthAdjust', 'spacingAndGlyphs');
@@ -483,6 +542,11 @@
       var s = document.createElement('p'); s.className = 'arch-info-sub';
       s.textContent = isBox ? compLabel(id) : compLabel(pills[id].compId);
       wrap.appendChild(t); wrap.appendChild(s);
+      if (!isBox) {
+        var svc = document.createElement('p'); svc.className = 'arch-info-service';
+        svc.textContent = T.service + ': ' + (pills[id].service || T.noService) + (pills[id].own ? ' · ' + T.own : '');
+        wrap.appendChild(svc);
+      }
 
       if (related.length === 0) {
         var hint = document.createElement('p');
@@ -515,24 +579,28 @@
     function setLegendActive(legendKind) {
       clearHighlight();
       drawn.forEach(function (rec) { rec.el.classList.add('dim'); });
+      function matches(kind, r, cid) {
+        if (kind === 'own') return isOwn(cid, r.name);
+        return kind === 'profiled' ? !!r.profiled : !r.profiled;
+      }
       var matchCount = 0;
       Object.keys(COMPONENTS).forEach(function (cid) {
         COMPONENTS[cid].resources.forEach(function (r) {
-          if (legendKind === 'profiled' ? !!r.profiled : !r.profiled) matchCount++;
+          if (matches(legendKind, r, cid)) matchCount++;
         });
       });
       Object.keys(nodeEls).forEach(function (nid) {
         // With every component closed there is nothing to pick out, so the
         // boxes stay as they are rather than all dimming at once.
         if (boxes[nid]) { if (anyPills) nodeEls[nid].el.classList.add('dim'); return; }
-        var match = legendKind === 'profiled' ? pills[nid].profiled : !pills[nid].profiled;
+        var match = matches(legendKind, pills[nid], pills[nid].compId);
         nodeEls[nid].el.classList.toggle('dim', !match);
         nodeEls[nid].el.classList.toggle('active', match);
       });
 
       var wrap = document.createElement('div');
       var t = document.createElement('p'); t.className = 'arch-info-title';
-      t.textContent = legendKind === 'profiled' ? T.profiledTitle : T.unprofiledTitle;
+      t.textContent = legendKind === 'own' ? T.ownTitle : (legendKind === 'profiled' ? T.profiledTitle : T.unprofiledTitle);
       var s = document.createElement('p'); s.className = 'arch-info-sub';
       s.textContent = T.resourceCount(matchCount);
       wrap.appendChild(t); wrap.appendChild(s);
