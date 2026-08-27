@@ -10,7 +10,7 @@ The [ICCC-3 CodeSystem](CodeSystem-iccc-3-cs.html) has moved from the DHP canoni
 
 #### Breaking changes
 
-The UZ Core VaccinationActivityDefinition profile has been renamed to [UZ Core ActivityDefinition](StructureDefinition-uz-core-activity-definition.html) and its canonical URL changed from `.../uz-core-vaccination-activity-definition` to `.../uz-core-activity-definition`. Implementers referencing the old canonical must update it.
+The UZ Core VaccinationActivityDefinition profile has been renamed to [UZ Core ActivityDefinition](StructureDefinition-uz-core-activitydefinition.html) and its canonical URL changed from `.../uz-core-vaccination-activity-definition` to `.../uz-core-activitydefinition`. Implementers referencing the old canonical must update it.
 
 #### Documentation
 
@@ -150,7 +150,7 @@ Added [UZ Core ImmunizationRecommendation](StructureDefinition-uz-core-immunizat
 
 Added [UZ Core PlanDefinition](StructureDefinition-uz-core-plan-definition.html) profile for national immunization schedules.
 
-Added [UZ Core ActivityDefinition](StructureDefinition-uz-core-activity-definition.html) profile for defining reusable clinical activities (procedures, tests, medication protocols) independent of a specific patient.
+Added [UZ Core ActivityDefinition](StructureDefinition-uz-core-activitydefinition.html) profile for defining reusable clinical activities (procedures, tests, medication protocols) independent of a specific patient.
 
 Added [UZ Core AdverseEvent](StructureDefinition-uz-core-adverse-event.html) profile for reporting adverse events, with [actuality](ValueSet-adverse-event-actuality-vs.html), [seriousness](ValueSet-adverse-event-seriousness-vs.html), [outcome](ValueSet-adverse-event-outcome-vs.html) and [status](ValueSet-adverse-event-status-vs.html) terminology.
 
@@ -190,7 +190,7 @@ The canonical URLs of the identifier-domain and EpisodeOfCare value sets (and th
 
 The [nationality CodeSystem](CodeSystem-nationality-cs.html), used by the [nationality value set](ValueSet-nationality-vs.html) on [UZ Core Patient](StructureDefinition-uz-core-patient.html), has been rebuilt from the updated dmp.uz nationality list: it grew from 306 to 512 entries, displays were standardised to uppercase, with Russian and English designations added, and codes were reassigned - the same code can now denote a different nationality (e.g. `#1` changed from "Ruslar" to "ADIGEY"). This is a breaking change: nationality codes stored under the previous version must be re-mapped.
 
-The multilingual translation extension (Uzbek base value plus Russian and Karakalpak translations) has been added to `name` on [UZ Core HealthcareService](StructureDefinition-uz-core-healthcareservice.html), and to `title` on [UZ Core ActivityDefinition](StructureDefinition-uz-core-activity-definition.html), [UZ Core Laboratory ObservationDefinition](StructureDefinition-uz-core-laboratory-observation-definition.html), [UZ Core PlanDefinition](StructureDefinition-uz-core-plan-definition.html) and [UZ Core Questionnaire](StructureDefinition-uz-core-questionnaire.html). `name` is now required on [UZ Core Organization](StructureDefinition-uz-core-organization.html) and [UZ Core Location](StructureDefinition-uz-core-location.html).
+The multilingual translation extension (Uzbek base value plus Russian and Karakalpak translations) has been added to `name` on [UZ Core HealthcareService](StructureDefinition-uz-core-healthcareservice.html), and to `title` on [UZ Core ActivityDefinition](StructureDefinition-uz-core-activitydefinition.html), [UZ Core Laboratory ObservationDefinition](StructureDefinition-uz-core-laboratory-observation-definition.html), [UZ Core PlanDefinition](StructureDefinition-uz-core-plan-definition.html) and [UZ Core Questionnaire](StructureDefinition-uz-core-questionnaire.html). `name` is now required on [UZ Core Organization](StructureDefinition-uz-core-organization.html) and [UZ Core Location](StructureDefinition-uz-core-location.html).
 
 #### Documentation
 

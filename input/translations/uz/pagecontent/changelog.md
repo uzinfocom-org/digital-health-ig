@@ -10,7 +10,7 @@
 
 #### Buzuvchi o'zgarishlar
 
-UZ Core VaccinationActivityDefinition profili [UZ Core ActivityDefinition](StructureDefinition-uz-core-activity-definition.html) deb qayta nomlandi va uning kanonik URL manzili `.../uz-core-vaccination-activity-definition` dan `.../uz-core-activity-definition` ga o‘zgartirildi. Eski kanonik URL manzilidan foydalanayotgan tizimlarda tegishli havolani yangilash kerak.
+UZ Core VaccinationActivityDefinition profili [UZ Core ActivityDefinition](StructureDefinition-uz-core-activitydefinition.html) deb qayta nomlandi va uning kanonik URL manzili `.../uz-core-vaccination-activity-definition` dan `.../uz-core-activitydefinition` ga o‘zgartirildi. Eski kanonik URL manzilidan foydalanayotgan tizimlarda tegishli havolani yangilash kerak.
 
 #### Hujjatlashtirish
 
@@ -150,7 +150,7 @@ Emlash bashoratlari uchun [UZ Core ImmunizationRecommendation](StructureDefiniti
 
 Milliy emlash jadvallari uchun [UZ Core PlanDefinition](StructureDefinition-uz-core-plan-definition.html) profili qo'shildi.
 
-Muayyan bemordan mustaqil ravishda qayta foydalaniladigan klinik faoliyatlarni (protseduralar, tahlillar, dori protokollari) belgilash uchun [UZ Core ActivityDefinition](StructureDefinition-uz-core-activity-definition.html) profili qo'shildi.
+Muayyan bemordan mustaqil ravishda qayta foydalaniladigan klinik faoliyatlarni (protseduralar, tahlillar, dori protokollari) belgilash uchun [UZ Core ActivityDefinition](StructureDefinition-uz-core-activitydefinition.html) profili qo'shildi.
 
 Nojo'ya hodisalar haqida xabar berish uchun [UZ Core AdverseEvent](StructureDefinition-uz-core-adverse-event.html) profili qo'shildi, [haqiqiylik](ValueSet-adverse-event-actuality-vs.html), [jiddiylik](ValueSet-adverse-event-seriousness-vs.html), [natija](ValueSet-adverse-event-outcome-vs.html) va [holat](ValueSet-adverse-event-status-vs.html) terminologiyasi bilan.
 
@@ -190,7 +190,7 @@ Identifikator-domeni va EpisodeOfCare qiymatlar to'plamlarining (shuningdek chet
 
 [UZ Core Patient](StructureDefinition-uz-core-patient.html) dagi [fuqarolik qiymatlar to'plami](ValueSet-nationality-vs.html) asosidagi [fuqarolik CodeSystem'i](CodeSystem-nationality-cs.html) yangilangan dmp.uz fuqarolik ro'yxati asosida qayta qurildi: u 306 tadan 512 taga oshdi, nomlar katta harflarga standartlashtirildi, ruscha va inglizcha tarjimalar qo'shildi, kodlar esa qayta tayinlandi - bitta kod endi boshqa millatni anglatishi mumkin (masalan, `#1` "Ruslar" dan "ADIGEY" ga o'zgardi). Bu buzuvchi o'zgarish: oldingi versiyada saqlangan fuqarolik kodlari qayta moslashtirilishi kerak.
 
-Ko'p tilli tarjima kengaytmasi (o'zbekcha asosiy qiymat hamda ruscha va qoraqalpoqcha tarjimalar) [UZ Core HealthcareService](StructureDefinition-uz-core-healthcareservice.html) dagi `name` ga hamda [UZ Core ActivityDefinition](StructureDefinition-uz-core-activity-definition.html), [UZ Core Laboratory ObservationDefinition](StructureDefinition-uz-core-laboratory-observation-definition.html), [UZ Core PlanDefinition](StructureDefinition-uz-core-plan-definition.html) va [UZ Core Questionnaire](StructureDefinition-uz-core-questionnaire.html) dagi `title` ga qo'shildi. `name` endi [UZ Core Organization](StructureDefinition-uz-core-organization.html) va [UZ Core Location](StructureDefinition-uz-core-location.html) da majburiy.
+Ko'p tilli tarjima kengaytmasi (o'zbekcha asosiy qiymat hamda ruscha va qoraqalpoqcha tarjimalar) [UZ Core HealthcareService](StructureDefinition-uz-core-healthcareservice.html) dagi `name` ga hamda [UZ Core ActivityDefinition](StructureDefinition-uz-core-activitydefinition.html), [UZ Core Laboratory ObservationDefinition](StructureDefinition-uz-core-laboratory-observation-definition.html), [UZ Core PlanDefinition](StructureDefinition-uz-core-plan-definition.html) va [UZ Core Questionnaire](StructureDefinition-uz-core-questionnaire.html) dagi `title` ga qo'shildi. `name` endi [UZ Core Organization](StructureDefinition-uz-core-organization.html) va [UZ Core Location](StructureDefinition-uz-core-location.html) da majburiy.
 
 #### Hujjatlashtirish
 

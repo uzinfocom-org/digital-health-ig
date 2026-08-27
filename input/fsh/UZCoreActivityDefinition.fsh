@@ -1,6 +1,6 @@
 Profile: UZCoreActivityDefinition
 Parent: ActivityDefinition
-Id: uz-core-activity-definition
+Id: uz-core-activitydefinition
 Title: "UZ Core ActivityDefinition"
 Description: "Uzbekistan Core ActivityDefinition Profile, used for the definition of some activity to be performed, independent of a particular patient, practitioner, or other performance context."
 * ^url = $general-activity-definition
