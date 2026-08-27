@@ -82,7 +82,8 @@
       { name: "ServiceRequest", profiled: true }, { name: "SupplyRequest" },
       { name: "Procedure", profiled: true }, { name: "Observation", profiled: true },
       { name: "InventoryItem" }, { name: "InventoryReport" },
-      { name: "PlanDefinition", profiled: true }, { name: "Group", profiled: true }
+      { name: "PlanDefinition", profiled: true }, { name: "Group", profiled: true },
+      { name: "BiologicallyDerivedProduct" }, { name: "DiagnosticReport", profiled: true }
     ]},
     NURSING: { short: "Nursing", label: "Nursing", resources: [
       { name: "ServiceRequest", profiled: true }, { name: "Encounter", profiled: true },
@@ -117,6 +118,7 @@
     { from: "NURSING.Observation", to: "CHR.Observation", kind: "sharesType" },
     { from: "NURSING.Procedure", to: "CHR.Procedure", kind: "sharesType" },
     { from: "LAB.Observation", to: "BLOOD.Observation", kind: "labResults" },
+    { from: "LAB.DiagnosticReport", to: "BLOOD.DiagnosticReport", kind: "labResults" },
     { from: "BLOOD.Observation", to: "CHR.Observation", kind: "sharesType" },
     { from: "BLOOD.Procedure", to: "CHR.Procedure", kind: "sharesType" },
     { from: "MDM.Patient", to: "CHR.Patient", kind: "sharesType" },
