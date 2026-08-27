@@ -208,12 +208,15 @@ Alias: $currencies-vs = http://hl7.org/fhir/ValueSet/currencies
 Alias: $permitted-data-type = http://hl7.org/fhir/permitted-data-type
 Alias: $fertility-questionnaire-cs = http://terminology.hl7.org/CodeSystem/v2-0532
 Alias: $ihd-pain-type-cs = https://dhp.uz/fhir/core/CodeSystem/ihd-pain-type-cs
-Alias: $ihd-risk-category-cs = https://dhp.uz/fhir/core/CodeSystem/ihd-risk-category-cs
+// $ihd-risk-category-cs removed here: duplicate of the terminology.dhp.uz definition below
+// (line ~247), which is the one with an actual CodeSystem resource (IhdRiskCategoryCS.fsh).
+// This dhp.uz (no "terminology.") host had no matching resource — SUSHI rejected the redefinition.
 Alias: $ordinal-value = http://hl7.org/fhir/StructureDefinition/ordinalValue
 Alias: $sdc-calculated-expression = http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-calculatedExpression
 Alias: $variable = http://hl7.org/fhir/StructureDefinition/variable
-Alias: $diabetes-risk-category-cs = https://dhp.uz/fhir/core/CodeSystem/diabetes-risk-category-cs
-Alias: $breast-cancer-risk-category-cs = https://dhp.uz/fhir/core/CodeSystem/breast-cancer-risk-category-cs
+// $diabetes-risk-category-cs and $breast-cancer-risk-category-cs removed here for the same
+// reason — duplicates of the terminology.dhp.uz definitions below, which have the actual
+// CodeSystem resources (DiabetesRiskCategoryCS.fsh, BreastCancerRiskCategoryCS.fsh).
 Alias: $breast-cancer-risk-assessment-category-cs = https://dhp.uz/fhir/core/CodeSystem/breast-cancer-risk-assessment-category-cs
 Alias: $cervical-risk-category-cs = https://dhp.uz/fhir/core/CodeSystem/cervical-risk-category-cs
 Alias: $child-development-result-cs = https://dhp.uz/fhir/core/CodeSystem/child-development-result-cs
