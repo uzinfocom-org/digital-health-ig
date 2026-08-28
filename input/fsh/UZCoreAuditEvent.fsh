@@ -42,6 +42,8 @@ Description: "Uzbekistan Core AuditEvent profile, used to track user and applica
   * role and what and securityLabel and query MS
   * role from ObjectRoleVS (required)
   * securityLabel from SecurityLabelVS (required)
+  * detail MS
+  * detail.type from AuditEventDetailTypeVS (example)
 
 Instance: example-auditevent-login
 InstanceOf: UZCoreAuditEvent
