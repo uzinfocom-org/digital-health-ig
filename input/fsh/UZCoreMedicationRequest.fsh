@@ -161,7 +161,7 @@ SHOULD NOT BE USED:
 
 Instance: example-medication-request
 InstanceOf: UZCoreMedicationRequest
-Description: "Example with a single instruction"
+Description: "Outpatient paracetamol prescription: 500 mg twice a day for five days"
 Usage: #example
 
 * identifier
@@ -175,35 +175,26 @@ Usage: #example
 * medication = Reference(example-medication)
 * subject = Reference(example-salim)
 
-// Extension: trustee
-// * extension[trustee].url = "http://dmed.uz/"
 * extension[trustee].valueReference.display = "Ruslan Isakhov (Father)"
 
 * authoredOn = "2026-03-02T06:44:12+05:00"
-// * reason.concept.text = "headache"
 * reason = $sct#25064002 "Headache"
-* effectiveDosePeriod.start = "2026-03-02" 
-// Обозначено как 3 month, для примера:
-* effectiveDosePeriod.end = "2026-09-02"
+* effectiveDosePeriod.start = "2026-03-02"
+* effectiveDosePeriod.end = "2026-03-06"
 
 * dosageInstruction[0]
   * timing
     * repeat
       * boundsPeriod
         * start = "2026-03-02"
-        * end = "2026-09-02" // 5d из таблицы
-      * count = 5
-      * countMax = 5
-      * duration = 6
-      * durationUnit = #mo
+        * end = "2026-03-06"
       * frequency = 2
       * period = 1
       * periodUnit = #d
       * timeOfDay[0] = "08:00:00"
       * timeOfDay[1] = "16:00:00"
-      * dayOfWeek[0] = #mon
-    * code.text = "Two times a day at institution specified time"
-  * route = $sct#6064005 "Topical route"
+    * code.text = "Two times a day, at 08:00 and 16:00"
+  * route = $sct#26643006 "Oral route"
   * doseAndRate[0].doseQuantity
     * value = 500
     * unit = "mg"
@@ -211,7 +202,11 @@ Usage: #example
     * code = #mg
 
 * dispenseRequest
-  * quantity.value = 10
+  * quantity
+    * value = 10
+    * unit = "dona"
+    * system = "https://terminology.dhp.uz/fhir/core/CodeSystem/medication-total-volume-local-units-cs"
+    * code = #piece
   * validityPeriod
     * start = "2026-03-02"
-    * end = "2026-09-02"
+    * end = "2026-04-01"
