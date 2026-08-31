@@ -6,10 +6,8 @@ Description: "ConceptMap for mapping DMED  measure unit codes to DHP  measure un
 * name = "DMEDMeasureUnitCM"
 * url = "https://terminology.dhp.uz/fhir/core/ConceptMap/dmed-measure-unit-to-dhp-cm"
 * status = #draft
-* experimental = false
+* experimental = true
 * publisher = "Uzinfocom"
-* sourceScopeCanonical = Canonical(DMEDMeasureUnitVS)
-* targetScopeCanonical = $ucum-vs
 
 * group.source = Canonical(DMEDMeasureUnitCS)
 * group.target = $ucum

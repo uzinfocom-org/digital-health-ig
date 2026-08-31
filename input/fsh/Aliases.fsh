@@ -216,4 +216,14 @@ Alias: $composition-list-order = http://terminology.hl7.org/CodeSystem/list-orde
 Alias: $service-request-intent = http://hl7.org/fhir/request-intent
 
 Alias: $coverage-kind = http://hl7.org/fhir/coverage-kind
+
+Alias: $medicationrequest-admin-location = http://terminology.hl7.org/CodeSystem/medicationrequest-admin-location
+Alias: $medicationrequest-intent = http://hl7.org/fhir/CodeSystem/medicationrequest-intent
+Alias: $medicationrequest-status-reason = http://terminology.hl7.org/CodeSystem/medicationrequest-status-reason
+Alias: $medicationrequest-status = http://hl7.org/fhir/CodeSystem/medicationrequest-status
+Alias: $days-of-week = http://hl7.org/fhir/days-of-week
+Alias: $event-timing = http://hl7.org/fhir/event-timing
+Alias: $v3-timing-event = http://terminology.hl7.org/CodeSystem/v3-TimingEvent
+Alias: $v3-gts-abbreviation = http://terminology.hl7.org/CodeSystem/v3-GTSAbbreviation
+Alias: $timing-abbreviation = http://terminology.hl7.org/CodeSystem/timing-abbreviation
 Alias: $general-activity-definition = https://dhp.uz/fhir/core/StructureDefinition/uz-core-activitydefinition
