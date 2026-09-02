@@ -329,8 +329,8 @@ Usage: #example
 
 Instance: example-jasur
 InstanceOf: UZCorePatient
-Title: "Example UZ Core Patient - Child under 16"
-Description: "Example of a child under 16 whose mother acts for them - the relationship itself is held by the RelatedPerson example-mother-of-a-minor"
+Title: "Example UZ Core Patient - Child"
+Description: "Example of a child whose mother is recorded against them - the relationship itself is held by the RelatedPerson example-mother-of-a-child"
 Usage: #example
 * language = #uz
 * identifier[nationalId]

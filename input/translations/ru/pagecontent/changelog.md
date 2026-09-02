@@ -24,6 +24,8 @@
 
 Процесс [От назначения лабораторного исследования до получения результата](workflow-lab.html) ссылался на `uz-core-servicerequest-laboratory`, переименованный в 0.8.0. Обе его ссылки и `meta.profile` в рабочем примере теперь указывают на [UZ Core ServiceRequest](StructureDefinition-uz-core-servicerequest.html).
 
+[UZ Core RelatedPerson](StructureDefinition-uz-core-relatedperson.html) теперь показывает, как родитель связывается со своим ребёнком, чтобы система могла разрешить родителю действовать от его имени. Новый пример [example-mother-of-a-child](RelatedPerson-example-mother-of-a-child.html) записывает мать по отношению к её ребёнку ([example-jasur](Patient-example-jasur.html)) с кодом связи `MTH`, а страница профиля объясняет, как система по PINFL находит детей, за которых родитель может действовать, почему возраст ребёнка читается из его `Patient.birthDate`, а не из связи, и почему сама по себе связь не предоставляет доступ.
+
 ### Версия 0.8.0
 
 #### Добавлено
