@@ -163,3 +163,36 @@ Description: "Example of a related person"
     * start = "1999-06-04"
 
 * gender = #male
+
+Instance: example-mother-of-a-minor
+InstanceOf: UZCoreRelatedPerson
+Title: "Example UZ Core RelatedPerson - Mother of a child under 16"
+Description: "The mother of a child under 16, recorded so that a system can let her act for the child. She carries the same PINFL as her own patient record (example-nodira), which is how a system matches the parent to this relationship; the child's age is read from the child's Patient.birthDate, not from this resource."
+Usage: #example
+* language = #uz
+* identifier[nationalId]
+  * value = "40503855900021"
+* active = true
+* patient = Reference(example-jasur)
+* relationship[0].coding[0] = $v3-RoleCode#MTH "Ona"
+* name
+  * use = #usual
+  * text = "Karimova Nodira Anvarovna"
+  * family = "Karimova"
+  * given = "Nodira"
+  * suffix = "Anvarovna"
+  * period.start = "1985-03-05"
+* telecom
+  * system = #phone
+  * value = "+998901112233"
+  * use = #mobile
+* gender = #female
+* birthDate = "1985-03-05"
+* address[uzAddress]
+  * use = #home
+  * type = #physical
+  * line = "2 квартал 13 дом 12 квартира"
+  * country = "UZ"
+  * district = "1703206"
+  * city = "22070011"
+  * period.start = "2015-06-20"

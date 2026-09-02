@@ -24,6 +24,8 @@ The [e-Referral lifecycle](workflow-referral.html) no longer states that the Ser
 
 The [Laboratory order to result](workflow-lab.html) workflow linked to `uz-core-servicerequest-laboratory`, which was renamed in 0.8.0. Its two links and the `meta.profile` in its worked example now point at [UZ Core ServiceRequest](StructureDefinition-uz-core-servicerequest.html).
 
+[UZ Core RelatedPerson](StructureDefinition-uz-core-relatedperson.html) now shows how a parent is linked to a child under 16, so that a system can let the parent act for them. A new example, [example-mother-of-a-minor](RelatedPerson-example-mother-of-a-minor.html), records a mother against her child ([example-jasur](Patient-example-jasur.html)) with the `MTH` relationship code, and the profile page explains how a system matches a parent to the children they may act for by PINFL, why the child's age is read from the child's `Patient.birthDate` rather than from the relationship, and why the relationship on its own does not grant access.
+
 ### Version 0.8.0
 
 #### Added

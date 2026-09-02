@@ -326,3 +326,38 @@ Usage: #example
   * suffix = "Anvarovna"
 * gender = #female
 * birthDate = "1985-03-05"
+
+Instance: example-jasur
+InstanceOf: UZCorePatient
+Title: "Example UZ Core Patient - Child under 16"
+Description: "Example of a child under 16 whose mother acts for them - the relationship itself is held by the RelatedPerson example-mother-of-a-minor"
+Usage: #example
+* language = #uz
+* identifier[nationalId]
+  * value = "52006155900123"
+* identifier[birthCertificate]
+  * value = "II-ЮА №654321"
+* active = true
+* name
+  * use = #usual
+  * text = "Karimov Jasur Bekzodovich"
+  * family = "Karimov"
+  * given = "Jasur"
+  * suffix = "Bekzodovich"
+  * period.start = "2015-06-20"
+* telecom
+  * system = #phone
+  * value = "+998901112233"
+  * use = #mobile
+  * rank = 1
+  * period.start = "2015-06-20"
+* gender = #male
+* birthDate = "2015-06-20"
+* address[uzAddress]
+  * use = #home
+  * type = #physical
+  * line = "2 квартал 13 дом 12 квартира"
+  * country = "UZ"
+  * district = "1703206"
+  * city = "22070011"
+  * period.start = "2015-06-20"
