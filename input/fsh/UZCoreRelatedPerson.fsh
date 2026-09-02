@@ -18,8 +18,8 @@ Description: "Uzbekistan Core RelatedPerson profile, used to represent persons r
 * identifier ^slicing.ordered = false
 * identifier contains
     nationalId 0..1 MS and
-    passportLocal 0..1 MS and
-    passportInternational 0..1 MS and
+    passportLocal 0..* MS and
+    passportInternational 0..* MS and
     birthCertificate 0..1 MS and
     driversLicense 0..1 MS and
     diplomaticPassport 0..1 MS and
