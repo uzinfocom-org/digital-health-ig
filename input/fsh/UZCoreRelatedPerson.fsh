@@ -164,10 +164,10 @@ Description: "Example of a related person"
 
 * gender = #male
 
-Instance: example-mother-of-a-minor
+Instance: example-mother-of-a-child
 InstanceOf: UZCoreRelatedPerson
-Title: "Example UZ Core RelatedPerson - Mother of a child under 16"
-Description: "The mother of a child under 16, recorded so that a system can let her act for the child. She carries the same PINFL as her own patient record (example-nodira), which is how a system matches the parent to this relationship; the child's age is read from the child's Patient.birthDate, not from this resource."
+Title: "Example UZ Core RelatedPerson - Mother of a child"
+Description: "The mother of a child, recorded so that a system can recognise her as the parent and, where the rules allow, let her act for the child. She carries the same PINFL as her own patient record (example-nodira), which is how a system matches the parent to this relationship; the child's age, where it matters, is read from the child's Patient.birthDate, not from this resource."
 Usage: #example
 * language = #uz
 * identifier[nationalId]

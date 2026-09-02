@@ -168,9 +168,9 @@ If a value is genuinely absent - the person has no passport, say - do not invent
 
 Note the leading underscore: `_value` is where FHIR puts the extension that stands in for the missing `value`. See [Identifier systems](identifiers.html) for the complete list of supported system URIs and [Missing & suppressed data](general-guidance.html#missing-data) for choosing the right absence mechanism.
 
-#### A parent and their child under 16
+#### A parent and their child
 
-A parent who acts for a minor child is recorded the same way: one RelatedPerson per parent-child pair, pointing at the *child*, with the parent's own details on it. The `patient` reference names the child, and `relationship` says what the person is to them, from the v3 RoleCode system: `MTH` for a mother, `FTH` for a father, `GUARD` for a legal guardian. The example below is a mother:
+A parent is recorded against their child the same way: one RelatedPerson per parent-child pair, pointing at the *child*, with the parent's own details on it. The `patient` reference names the child, and `relationship` says what the person is to them, from the v3 RoleCode system: `MTH` for a mother, `FTH` for a father, `GUARD` for a legal guardian. Nothing about it depends on how old the child is - the same resource stands whether the parent acts for a young child or is simply the parent of an adult one. The example below is a mother:
 
 ```json
 {
@@ -225,8 +225,8 @@ The parent carries their own PINFL in `identifier`, the same one that identifies
 GET [base]/RelatedPerson?identifier=https://dhp.uz/fhir/core/sid/pid/uz/ni|40503855900021
 ```
 
-`patient` names the child, so the child's age is read from the child's `Patient.birthDate` rather than from this resource. RelatedPerson records *that* the relationship exists; it does not by itself grant access. Whether the parent may see the child's record - until the child turns 16, say - is decided by the system holding it, against the relationship and the child's age.
+`patient` names the child, so the child's age is read from the child's `Patient.birthDate` rather than from this resource. RelatedPerson records *that* the relationship exists; it does not by itself grant access. Whether the parent may act for the child - see their record, or consent on their behalf - is decided by the system holding it, against the relationship and the rules that apply, the child's age among them.
 
-The full instance is [example-mother-of-a-minor](RelatedPerson-example-mother-of-a-minor.html), pointing at the child [example-jasur](Patient-example-jasur.html).
+The full instance is [example-mother-of-a-child](RelatedPerson-example-mother-of-a-child.html), pointing at the child [example-jasur](Patient-example-jasur.html).
 
 For example API calls and a sample payload, see the [Quick Start](#quick-start) at the bottom of this page.

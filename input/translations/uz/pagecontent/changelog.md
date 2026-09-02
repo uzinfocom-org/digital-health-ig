@@ -24,6 +24,8 @@ O'sha sahifadagi komponentlararo resurs arxitekturasi diagrammasi endi Qon resur
 
 [Laboratoriya tekshiruvini tayinlashdan natijani olishgacha](workflow-lab.html) jarayoni 0.8.0 da qayta nomlangan `uz-core-servicerequest-laboratory` ga havola qilar edi. Uning ikkita havolasi va misolidagi `meta.profile` endi [UZ Core ServiceRequest](StructureDefinition-uz-core-servicerequest.html) ga ishora qiladi.
 
+[UZ Core RelatedPerson](StructureDefinition-uz-core-relatedperson.html) endi ota-ona farzandiga qanday bog'lanishini ko'rsatadi - shunda tizim ota-onaga bola nomidan ish ko'rishga ruxsat bera oladi. Yangi misol - [example-mother-of-a-child](RelatedPerson-example-mother-of-a-child.html) - onani o'z farzandiga ([example-jasur](Patient-example-jasur.html)) nisbatan `MTH` munosabat kodi bilan qayd etadi, profil sahifasi esa tizim PINFL orqali ota-ona nomidan ish ko'ra oladigan bolalarni qanday topishini, nima uchun bolaning yoshi munosabatdan emas, balki uning `Patient.birthDate` idan o'qilishini va nima uchun munosabatning o'zi kirish huquqini bermasligini tushuntiradi.
+
 ### Versiya 0.8.0
 
 #### Qo'shildi
