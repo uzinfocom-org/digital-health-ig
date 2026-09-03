@@ -1,5 +1,5 @@
 include:
-  - project: moh/dhp/deploy/fhir/igs/digital-health
+  - project: moh/e-health/dhp/deployment/fhir/implementation-guides/digital-health-integration
     ref: ci
     file:
       - /.gitlab-ci.yml
