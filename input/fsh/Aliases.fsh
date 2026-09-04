@@ -228,11 +228,6 @@ Alias: $service-request-intent = http://hl7.org/fhir/request-intent
 
 Alias: $coverage-kind = http://hl7.org/fhir/coverage-kind
 
-// $breast-cancer-risk-category-cs, the 10 $cerebrovascular-*-cs, $diabetes-risk-category-cs and
-// $ihd-chest-pain-type-cs removed here: their CodeSystem resources moved to
-// digital-health-integration along with the questionnaires that used them
-// (BreastCancerScreeningQuestionnaire, CerebrovascularScreeningQuestionnaire,
-// DiabetesScreeningQuestionnaire, IhdPretestQuestionnaire).
 Alias: $cervical-cancer-menstrual-cycle-cs = https://terminology.dhp.uz/fhir/core/CodeSystem/cervical-cancer-menstrual-cycle-cs
 Alias: $diabetes-in-relatives-cs = https://terminology.dhp.uz/fhir/core/CodeSystem/diabetes-in-relatives-cs
 Alias: $fertility-contraception-kind-cs = https://terminology.dhp.uz/fhir/core/CodeSystem/fertility-contraception-kind-cs
