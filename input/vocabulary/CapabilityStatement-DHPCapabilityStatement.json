@@ -1,5 +1,5 @@
 {
-  "date": "2026-08-25T06:55:03+00:00",
+  "date": "2026-09-06T10:29:23+00:00",
   "fhirVersion": "5.0.0",
   "format": [
     "application/fhir+json",
@@ -56,8 +56,16 @@
           ],
           "operation": [
             {
+              "definition": "https://dhp.uz/fhir/core/OperationDefinition/patient-attach",
+              "name": "attach"
+            },
+            {
               "definition": "https://dhp.uz/fhir/core/OperationDefinition/patient-populate",
               "name": "populate"
+            },
+            {
+              "definition": "https://dhp.uz/fhir/core/OperationDefinition/patient-relate",
+              "name": "relate"
             }
           ],
           "searchParam": [
@@ -8425,6 +8433,16 @@
               "documentation": "expression: Resource.meta.profile",
               "name": "_profile",
               "type": "reference"
+            },
+            {
+              "documentation": "expression: Resource.meta.security\nsubtype: Coding",
+              "name": "_security",
+              "type": "token"
+            },
+            {
+              "documentation": "expression: Resource.meta.tag\nsubtype: Coding",
+              "name": "_tag",
+              "type": "token"
             },
             {
               "name": "_has",
