@@ -219,8 +219,6 @@ Alias: $composition-list-order = http://terminology.hl7.org/CodeSystem/list-orde
 Alias: $service-request-intent = http://hl7.org/fhir/request-intent
 
 Alias: $coverage-kind = http://hl7.org/fhir/coverage-kind
-<<<<<<< HEAD
-=======
 
 Alias: $diabetes-in-relatives-cs = https://terminology.dhp.uz/fhir/core/CodeSystem/diabetes-in-relatives-cs
 Alias: $fertility-contraception-kind-cs = https://terminology.dhp.uz/fhir/core/CodeSystem/fertility-contraception-kind-cs
@@ -236,4 +234,3 @@ Alias: $v3-timing-event = http://terminology.hl7.org/CodeSystem/v3-TimingEvent
 Alias: $v3-gts-abbreviation = http://terminology.hl7.org/CodeSystem/v3-GTSAbbreviation
 Alias: $timing-abbreviation = http://terminology.hl7.org/CodeSystem/timing-abbreviation
 Alias: $general-activity-definition = https://dhp.uz/fhir/core/StructureDefinition/uz-core-activitydefinition
->>>>>>> b1295c8bc673810bfbfb4e53379ea55b43f38872
