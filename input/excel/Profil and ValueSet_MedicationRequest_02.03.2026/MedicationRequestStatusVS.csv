@@ -1,0 +1,10 @@
+PARENT_CODE	CODE	UZ	RU	EN
+	active	Faol	Активно	Active
+	on-hold	Ushlab qolingan	На удержании	On Hold
+	ended	Tugadi	Завершено	Ended
+	stopped	To'xtatildi	Остановлено	Stopped
+	completed	Bajarildi	Завершено	Completed
+	cancelled	Bekor qilingan	Отменено	Cancelled
+	entered-in-error	Xatoda kiritilgan	Введено с ошибкой	Entered in Error
+	draft	Qoralama	Черновик	Draft
+	unknown	Noma'lum	Неизвестно	Unknown

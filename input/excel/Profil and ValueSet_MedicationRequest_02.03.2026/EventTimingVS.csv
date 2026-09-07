@@ -1,0 +1,15 @@
+Code	Display 	UZB	RU	Eng
+HS	HS	Hodisa uyqudan oldin (yoki uxlashga urinishdan oldin) sodir bo'ladi	Событие происходит [смещение] перед сном (или попыткой заснуть)	Event occurs [offset] before the hour of sleep (or trying to)
+WAKE	WAKE	Hodisa uyg'onganidan keyin [ofset] sodir bo'ladi	Событие происходит [смещение] после пробуждения	Event occurs [offset] after waking
+C	C	Ovqat paytida sodir bo'ladigan hodisa (lotincha cibus so'zidan)	Событие происходит во время еды (от латинского cibus)	Event occurs at a meal (from the Latin cibus)
+CM	CM	Hodisa nonushta paytida bo'lib o'tadi (lotincha cibus matutinus so'zidan)	Событие происходит во время завтрака (от латинского cibus matutinus)	Event occurs at breakfast (from the Latin cibus matutinus)
+CD	CD	Hodisa tushlik paytida bo'lib o'tadi (lotincha cibus diurnus so'zidan)	Событие происходит во время обеда (от латинского cibus diurnus)	Event occurs at lunch (from the Latin cibus diurnus)
+CV	CV	Hodisa kechki ovqat paytida bo'lib o'tadi (lotincha ante cibus vespertinus so'zidan)	Событие происходит во время ужина (от латинского ante cibus vespertinus)	Event occurs at dinner (from the Latin ante cibus vespertinus)
+AC	AC	Hodisa ovqatdan oldin sodir bo'ladi [siljish] (lotincha ante cibus so'zidan)	Событие происходит [смещение] до еды (от латинского ante cibus)	Event occurs [offset] before a meal (from the Latin ante cibus)
+ACM	ACM	Hodisa nonushtadan oldin sodir bo'ladi (lotincha ante cibus matutinus dan)	Событие происходит [смещение] до завтрака (от латинского ante cibus matutinus)	Event occurs [offset] before breakfast (from the Latin ante cibus matutinus)
+ACD	ACD	Hodisa tushlikdan oldin [shift] sodir bo'ladi (lotincha ante cibus diurnus dan)	Событие происходит [смещение] до обеда (от латинского ante cibus diurnus)	Event occurs [offset] before lunch (from the Latin ante cibus diurnus)
+ACV	ACV	Hodisa kechki ovqatdan oldin sodir bo'ladi (lotincha ante cibus vespertinus dan)	Событие происходит [смещение] до ужина (от латинского ante cibus vespertinus)	Event occurs [offset] before dinner (from the Latin ante cibus vespertinus)
+PC	PC	Hodisa ovqatdan keyin sodir bo'ladi (lotincha post cibus so'zidan)	Событие происходит [смещение] после еды (от латинского post cibus)	Event occurs [offset] after a meal (from the Latin post cibus)
+PCM	PCM	Hodisa nonushtadan keyin sodir bo'ladi (lotincha post cibus matutinus so'zidan)	Событие происходит [смещение] после завтрака (от латинского post cibus matutinus)	Event occurs [offset] after breakfast (from the Latin post cibus matutinus)
+PCD	PCD	Hodisa tushlikdan keyin sodir bo'ladi (lotincha post cibus diurnus so'zidan)	Событие происходит [смещение] после обеда (от латинского post cibus diurnus)	Event occurs [offset] after lunch (from the Latin post cibus diurnus)
+PCV	PCV	Hodisa kechki ovqatdan keyin sodir bo'ladi (lotincha post cibus vespertinus so'zidan)	Событие происходит [смещение] после ужина (от латинского post cibus vespertinus)	Event occurs [offset] after dinner (from the Latin post cibus vespertinus)

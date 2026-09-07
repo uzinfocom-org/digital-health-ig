@@ -6,7 +6,7 @@
   "id": "iccc-3-cs",
   "title": "International Classification of Childhood Cancer, 3rd edition",
   "description": "Diagnostic groups, subgroups and divisions of the International Classification of Childhood Cancer, 3rd edition (ICCC-3), used to classify childhood cancers by morphology for registry reporting",
-  "url": "https://terminology.dhp.uz/fhir/core/CodeSystem/iccc-3-cs",
+  "url": "http://terminology.hl7.org/CodeSystem/iccc-3",
   "concept": [
     {
       "code": "I",

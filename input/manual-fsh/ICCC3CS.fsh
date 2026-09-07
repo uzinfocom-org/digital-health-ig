@@ -20,6 +20,9 @@ Id: iccc-3-cs
 Title: "International Classification of Childhood Cancer, 3rd edition"
 Description: "Diagnostic groups, subgroups and divisions of the International Classification of Childhood Cancer, 3rd edition (ICCC-3), used to classify childhood cancers by morphology for registry reporting. The content follows the 2005 edition of the classification"
 * insert OriginalClassificationCodeSystemDraft(iccc-3-cs)
+// ICCC-3 is an IARC classification, not a DHP one, so it lives under the terminology.hl7.org
+// canonical (the one the HL7 Europe PanCareSurPass IG uses) rather than the DHP core namespace.
+* ^url = "http://terminology.hl7.org/CodeSystem/iccc-3"
 * ^copyright = "International Classification of Childhood Cancer, third edition (ICCC-3). Steliarova-Foucher E, Stiller C, Lacour B, Kaatsch P. Cancer 2005;103(7):1457-1467. Published by the International Agency for Research on Cancer (IARC) and the US National Cancer Institute SEER Program."
 
 // ===== I =====

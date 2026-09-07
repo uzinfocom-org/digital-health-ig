@@ -170,4 +170,65 @@ Agar qiymat haqiqatan ham mavjud bo'lmasa - aytaylik, shaxsda pasport yo'q - uni
 
 Boshidagi pastki chiziqqa e'tibor bering: `_value` - FHIR yetishmayotgan `value` o'rnini bosadigan kengaytmani joylashtiradigan joy. Qo'llab-quvvatlanadigan system URI'larning to'liq ro'yxati uchun [Identifikator tizimlari](identifiers.html) ga, to'g'ri yo'qlik mexanizmini tanlash uchun esa [Yetishmayotgan va bostirilgan ma'lumotlar](general-guidance.html#missing-data) ga qarang.
 
+#### Ota-ona va uning farzandi
+
+Ota-ona farzandiga nisbatan xuddi shunday qayd etiladi: har bir ota-ona-bola juftligi uchun bitta RelatedPerson, u *bolaga* havola qiladi va ota-onaning o'z ma'lumotlarini olib yuradi. `patient` havolasi bolani nomlaydi, `relationship` esa bu shaxs unga kim bo'lishini v3 RoleCode tizimidagi kod bilan aytadi: ona uchun `MTH`, ota uchun `FTH`, qonuniy vasiy uchun `GUARD`. Bolaning yoshi bunga hech qanday ta'sir qilmaydi - ota-ona yosh bola nomidan ish ko'rsa ham, gap shunchaki voyaga yetgan farzandning ota-onasi haqida borsa ham, resurs bir xil yoziladi. Quyidagi misolda - ona:
+
+```json
+{
+  "resourceType": "RelatedPerson",
+  "meta": { "profile": [ "https://dhp.uz/fhir/core/StructureDefinition/uz-core-relatedperson" ] },
+  "identifier": [
+    {
+      "use": "official",
+      "type": {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+            "code": "NI",
+            "display": "National unique individual identifier"
+          }
+        ]
+      },
+      "system": "https://dhp.uz/fhir/core/sid/pid/uz/ni",
+      "value": "40503855900021"
+    }
+  ],
+  "active": true,
+  "patient": { "reference": "Patient/example-jasur" },
+  "relationship": [
+    {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+          "code": "MTH",
+          "display": "mother"
+        }
+      ]
+    }
+  ],
+  "name": [
+    {
+      "use": "usual",
+      "text": "Karimova Nodira Anvarovna",
+      "family": "Karimova",
+      "given": [ "Nodira" ],
+      "suffix": [ "Anvarovna" ]
+    }
+  ],
+  "gender": "female",
+  "birthDate": "1985-03-05"
+}
+```
+
+Ota-ona `identifier` da o'zining PINFL ini olib yuradi - bu uning o'z [Bemor](StructureDefinition-uz-core-patient.html) yozuvini identifikatsiya qiluvchi PINFL ning aynan o'zi, - shuning uchun ota-onaning PINFL ini biladigan tizim u nomidan ish ko'rishi mumkin bo'lgan bolalarni bitta so'rov bilan topadi:
+
+```
+GET [base]/RelatedPerson?identifier=https://dhp.uz/fhir/core/sid/pid/uz/ni|40503855900021
+```
+
+`patient` bolani nomlaydi, shuning uchun bolaning yoshi ushbu resursdan emas, balki uning `Patient.birthDate` idan o'qiladi. RelatedPerson munosabat mavjudligi *faktini* qayd etadi; u o'zi kirish huquqini bermaydi. Ota-ona bola nomidan ish ko'ra oladimi - uning yozuvini ko'rish yoki uning nomidan rozilik berish - buni yozuvni saqlayotgan tizim munosabatga va amaldagi qoidalarga, jumladan bolaning yoshiga qarab hal qiladi.
+
+To'liq nusxa - [example-mother-of-a-child](RelatedPerson-example-mother-of-a-child.html), u [example-jasur](Patient-example-jasur.html) bolasiga havola qiladi.
+
 API chaqiruvlari misollari va namunaviy yuk uchun ushbu sahifaning pastki qismidagi [Tezkor start](#quick-start) ga qarang.

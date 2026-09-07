@@ -257,7 +257,7 @@ CHR обеспечивает стандартизированное ведени
 
 ### Межкомпонентная архитектура ресурсов
 
-На практике несколько описанных выше компонентов обмениваются одними и теми же FHIR-ресурсами. Эта диаграмма спускается на уровень ресурсов: какими ресурсами владеет каждый компонент и какие из них связывают его с другим компонентом. Сплошные линии показывают широкую интеграцию двух компонентов либо несколько ресурсных связей, объединённых в одну, пока оба компонента свёрнуты; стрелки - передачу конкретного ресурса из одного компонента в другой. Перетаскивайте для перемещения, прокручивайте для масштабирования, наводите курсор или переходите табуляцией к ресурсу, компоненту или элементу легенды, чтобы увидеть его связи.
+На практике несколько описанных выше компонентов обмениваются одними и теми же FHIR-ресурсами. Эта диаграмма спускается на уровень ресурсов: какими ресурсами владеет каждый компонент и какие из них связывают его с другим компонентом. Сплошные линии показывают широкую интеграцию двух компонентов либо несколько ресурсных связей, объединённых в одну, пока оба компонента свёрнуты; стрелки - передачу конкретного ресурса из одного компонента в другой. Перетаскивайте для перемещения, прокручивайте для масштабирования, наводите курсор или переходите табуляцией к ресурсу, компоненту или элементу легенды, чтобы увидеть его связи. ★ отмечает ресурс, за который отвечает сам компонент; остальные он использует совместно с компонентом, который за них отвечает.
 
 <br clear="all"/>
 
@@ -281,6 +281,7 @@ CHR обеспечивает стандартизированное ведени
   .arch-legend span[data-legend]:hover, .arch-legend span[data-legend]:focus-visible { background: var(--paper-raised); }
   .arch-legend .swatch-box { width: 12px; height: 12px; background: var(--blueprint-soft); border: 1px solid var(--line); }
   .arch-legend .swatch-box.pale { background: var(--pencil-soft); }
+  .arch-legend .swatch-star { color: var(--blueprint); font-size: 0.85rem; line-height: 1; }
 
   .arch-wrap { display: flex; gap: 1rem; align-items: flex-start; flex-wrap: wrap; }
 
@@ -325,6 +326,7 @@ CHR обеспечивает стандартизированное ведени
     font-weight: 600; font-size: 0.92rem; color: var(--ink); margin: 0 0 0.2rem;
   }
   .arch-info-sub { font-size: 0.76rem; color: var(--ink-soft); margin: 0 0 0.8rem; }
+  .arch-info-service { font-family: var(--mono-font); font-size: 0.76rem; color: var(--ink-soft); margin: -0.55rem 0 0.8rem; }
   .arch-rel-list { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 0.55rem; }
   .arch-rel-item { border-left: 2px solid var(--blueprint); padding-left: 0.6rem; }
   .arch-rel-head { font-size: 0.8rem; color: var(--ink); font-weight: 600; }
@@ -352,6 +354,7 @@ CHR обеспечивает стандартизированное ведени
   <div class="arch-legend">
     <span data-legend="profiled" tabindex="0" role="button"><span class="swatch-box"></span> определено в этом руководстве</span>
     <span data-legend="unprofiled" tabindex="0" role="button"><span class="swatch-box pale"></span> упомянуто, но ещё не определено</span>
+    <span data-legend="own" tabindex="0" role="button"><span class="swatch-star">★</span> компонент отвечает за этот ресурс</span>
   </div>
   <div class="arch-wrap">
     <div class="arch-canvas" id="arch-canvas">
@@ -359,7 +362,7 @@ CHR обеспечивает стандартизированное ведени
     </div>
     <div class="arch-info" id="arch-info">
       <div id="arch-info-body">
-        <p class="arch-info-hint">Нажмите на компонент, чтобы раскрыть его ресурсы. Наведите курсор или перейдите табуляцией к ресурсу, компоненту или элементу легенды, чтобы увидеть его связи.</p>
+        <p class="arch-info-hint">Нажмите на компонент, чтобы раскрыть его ресурсы; ★ отмечает ресурсы, за которые отвечает компонент. Наведите курсор или перейдите табуляцией к ресурсу, компоненту или элементу легенды, чтобы увидеть его связи.</p>
         <div class="arch-stat-row"><span>Показано компонентов</span><span class="arch-stat-n" id="arch-stat-components">–</span></div>
         <div class="arch-stat-row"><span>Ресурсов</span><span class="arch-stat-n" id="arch-stat-resources">–</span></div>
         <div class="arch-stat-row"><span>Связей</span><span class="arch-stat-n" id="arch-stat-relationships">–</span></div>

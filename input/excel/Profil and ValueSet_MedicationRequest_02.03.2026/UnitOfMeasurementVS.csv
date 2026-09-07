@@ -1,0 +1,232 @@
+Pharm_committed ID	Local code	ucum code 	The designation	Unnamed: 4	Naming/	Unnamed: 6	Unnamed: 7
+			In Uzbek(Codes)	In russian	In Uzbek	In russian	In English
+253		"%	"	%	%	foiz	процент	percent
+314		"ng	"	ng	нг	nanogramm	нанограмм	nanogram
+303		uL	mkl	мкл	mikrolitr	микролитр	microliter
+315		"nL	"	nl	нл	nanolitr	нанолитр	nanoliter
+320		Rd	Rd	Рд	rezerford	резерфорд	rutherford
+721		Gy	Gr	Гр	grey	грей	gray
+286		kCal	kkal	ккал	kilokaloriya	килокалория	kilocalorie
+310		mmol	mmol	ммоль	millimol	миллимоль	millimole
+304		umol	mkmol	мкмоль	mikromol	микромоль	micromoles
+316		nmol	nmol	нмоль	nanomol	наномоль	nanomole
+319		osm	Osm	Осм	osmol	осмоль	osmol
+313		mosm	mOsm	мОсм	milliosmol	миллиосмоль	
+840		%{mass}	%, m	%, m	massa foizi	процент массовый	mass percentage
+1220		%{vol}	%, vol	%, vol	hajm foizi	процент объемный	volume percentage
+280		[drp]	tomchi	капля	tomchi	капля	drop
+264		{fraction}	ulush	доля	ulush	доля	fraction
+262		{dose}	doza	доза	doza	доза	dose
+287		{Cells}	xujayra	клетка	hujayra	клетка	cell 
+306		10*6.{cell}	mln xujayra	млн клеток	mln hujayra	млн клеток	million cells
+307		10*9.{cell}	mlrd xujayra	млрд клеток	mlrd hujayra	млрд клеток	billion cells
+		{spore}	spora	спора	spora	спора	spore
+309		10*9.{spore}	mlrd spor	млрд спор	mlrd spor	млрд спор	billion disputes
+259		g/mL	g/ml	г/мл	millilitrda gramm	грамм на миллилитр	gramsPerMilliLiter
+298		mg/mL	mg/ml	мг/мл	millilitrda milligramm	миллиграмм на миллилитр	"milliGramsPerMilliLiter	"
+302		ug/mL	mkg/ml	мкг/мл	millilitrda mikrogramm	микрограмм на миллилитр	"microGramsPerMilliLiter	"
+	mkg/mkl		mkg/mkl	мкг/мкл	mikrolitrda mikrogramm	микрограмм на микролитр	microgram per microliter
+296		mg/g	mg/g	мг/г	grammda milligramm	миллиграмм на грамм	"milliGramsPerGram	"
+		ug/g	mkg/g	мкг/г	grammda mikrogramm	микрограмм на грамм	"microGramsPerGram	"
+		ug/mg	mkg/mg	мкг/мг	milligrammda mikrogramm	микрограмм на миллиграмм	"microGramsPerMilliGram	"
+311		mmol/L	mmol/l	ммоль/л	litrda millimol	миллимоль на литр	"milliMolesPerLiter	"
+317	ob		OB	ОЕ	optik birlik	оптическая единица	optical unit
+282		"cm2	"	kv.sm	кв.см	kvadrat santimetr	квадратный сантиметр	square centimeter
+300		mL	ml	мл	millilitr	миллилитр	"milliLiter	"
+291		"L	"	l	л	litr	литр	liter
+295		"mg	"	mg	мг	milligramm	миллиграмм	milligram
+258		g	g	г	gramm	грамм	gramm
+301		ug		мкг	mikrogramm	микрограмм	microGram
+283		kg	kg	кг	kilogramm	килограмм	kiloGram
+261		J	J	Дж	joul	джоуль	joule
+284		kJ	kJ	кДж	kilojoul	килоджоуль	kilojoule
+260		GBq	GBk	ГБк	gigabekkerel	гигабеккерель	gigabecquerel
+281		kBq	kBk	кБк	kilobekkerel	килобеккерель	kilobecquerel
+294		MBq	MBk	МБк	megabekkerel	мегабеккерель	megabecquerel
+312		mol	mol	моль	mol	моль	mole
+257		Bq	Bk	Бк	bekkerel	беккерель	becquerel
+252/326		{#}	dona	шт	dona	штука	thing
+263		RAD	nurlanish dozasi	доза излучения	oʻrtacha samarali immunizatsiya qilingan doza miqdori	количество среднеэффективных иммунизирующих доз	number of average effective immunizing doses
+271		[NTU]	loyqalik birligi	единица мутности	loyqalik birligi	единица мутности	
+		[PFU]	PFU	PFU	chechak hosil qiluvchi birlik (tiqin hosil qiluvchi raqam)	оспообразующая единица (бляшкообразующее число)	plaque forming unit
+		[Lf]	FB	Lf	flokulyatsiya birligi	флокулирующая единица	limit of flocculation
+		{Ph.Eur.U}	Ph.Eur.U.	Ph.Eur.U.	Yevropa farmakopeyasining taʼsir birligi	единица действия Европейской фармакопеи	European Pharmacopoeia unit of action
+265		[arb'U]	BFTB	ЕД	biologik faollikning taʼsir birligi	единица действия биологической активности	unit of action of biological activity
+	[PNU]	[PNU]	OAB	PNU	oqsil azoti birligi	единица белкового азота	protein nitrogen unit
+	[CFU]		KHB	КОЕ	koloniya hosil qiluvchi birlik	колониеобразующая единица	
+323		[arb'U]	SHB	УЕ	shartli birlik	условная единица	conventional unit
+285		{KIU}	KFB	КИЕ	kallikreinni faolsizlantirish birligi	калликреин инактивирующая единица	kallikrein inactivating unit
+293		[arb'U]	LB	ЛЕ	lipoprotein-lipaza birligi	единица липопротеина-липазы	lipoprotein lipase unit
+254		[arb'U]	AB	АЕ	antigenik birlik	антигенная единица	antigenic unit
+642		[arb'U]	TB	ТЕ	titrlash birligi	титрационная единица	titration unit
+	[IU]	[IU]	IE	ИЕ	xalqaro birlik	интернациональная единица	international unit
+256		[arb'U]	ATrB	АТрЕ	antitripsin birligi	антитрипсиновая единица	antitrypsin unit
+	[tb'U]	[tb'U]	TB	TУ	tuberkulin birligi	туберкулиновая единица	tuberculin unit
+279		[ELU]	IFT birl.	ИФА ед	immunoferment tahlili birligi	единица иммуноферментного анализа	enzyme immunoassay unit
+255		[anti'Xa'U]	anti-Xa XB	анти-Xa МЕ	antitrombotik taʼsirning xalqaro birligi	международная единица антитромботического действия	international unit of antithrombotic action
+322		[TCID_50]	TSD 50	ТЦД 50	toʻqimalarning 50% sitopatik dozasi	50-процентная тканевая цитопатическая доза	50% tissue cytopathic dose
+292		{LD_50}	LD 50	ЛД 50	yarimletal doza birligi	единица полулетальной дозы	half-lethal dose unit
+266		[ELU]	ELU	ELU	Elayza biologik faolligining taʼsir birligi	единица действия биологической активности Элайза (ELISA)	Elisa biological activity unit (ELISA)
+275		[CCID_50]	ID 50	ИД 50	yarim yuqumli doza birligi	единица полуинфицирующей дозы	unit of semi-infectious dose
+327		[EID_50]	EID 50	ЭИД 50	yarim patologik oʻzgarishlarning doza birliklari	единицы дозы полупатологоанатомических изменений	units of dose per half of pathological changes
+325		[TCID_50]	SPD 50	ЦПД 50	yarimsitopatik taʼsir birligi dozasi	единица дозы полуцитопатического эффекта	unit dose of semi-cytopathic effect
+		{MID}	MIDe	МИДэ	minimal infeksion doza	минимальная инфицирующая доза	minimum infectious dose
+274		[arb'U]	BB	ЕС	bogʻlash birligi	единица связывания	binding unit
+277		[IR]	RI	ИР	reaktivlik indeksi (standartlashtirishning biologik birligi)	индекс реактивности (биологическая единица стандартизации)	reactivity index (biological unit of standardization)
+267		[arb'U]	antigen birligi	единица антигена	antigen birligi	единица антигена	antigen unit
+	[AU]	[AU]	allergyen birligi	единица аллергена	allergen birligi	единица аллергена	allergen unit
+		[arb'U]	QTB	ЛЕД	qurbaqa taʼsiri birligi	лягушачья единица действия	frog action unit
+270		[arb'U]/mL	TB/ml	ЕД/мл	millilitrda biologik faollikning taʼsir birligi	единица действия биологической активности на миллилитр	unit of biological activity per milliliter
+269		[PNU]/mL	RNU/ml	РNU/мл	millilitrda oqsil azot birligi	единица белкового азота на миллилитр	unit of protein nitrogen per milliliter
+278		[IR]/mL	IR/ml	ИР/мл	reaktivlik indeksi (standartizatsiya biologik birligi)/ml	индекс реактивности (биологическая единица стандартизации) на миллилитр	reactivity index (biological unit of standardization) per milliliter
+273		[D'ag'U]	D-antigen birligi	Единица D-антигена	D-antigen birligi	единица D-антигена	D antigen unit
+							
+1080			% massa/hajm	% масса/объем	% massa/hajm	% масса/объем	% mass/volume
+1140			bar	bar	bar	bar	bar
+660			DU	DU	DU	DU	DU
+1160			G  Qisqarish	G Cокращение	G	G 	G 
+1060			G	G	Gauge	Gauge	Gauge
+681			A	A	amper	ампер	amper
+691			A/m2	A/m2	amper kvadrat metr	ампер на квадратный метр	ampere per square meter
+692			A/m	A/m	amper metr	ампер на метр	ampere per meter
+800			анти-ХА МЕ	анти-ХА МЕ	анти-ХА МЕ	анти-ХА МЕ	анти-ХА МЕ
+1180			в/об	в/об	в/об	в/об	w/v
+702			w	W	vatt	ватт	vatt
+730			W/m2	W/m2	vatt kvadrat metr	ватт на квадратный метр	vatt kvadrat metr
+729			W/(m•K)	W/(m•K)	vatt metr-kelvin	ватт на метр-кельвин	vatt metr-kelvin
+716			W/sr	W/sr	grey steradian	ватт на стерадиан	grey steradian
+715			W/(sr•m2)	W/(sr•m2)	vatt steradian uchun - kvadrat metr	"ватт на стерадиан- 
+квадратный метр"	"watt per steradian - square 
+meter"
+708			Wb	Wb	veber	вебер	veber
+760			virusli zarralar	вирусные частицы	virusli zarralar	вирусные частицы	viral particles
+740			pH	pH	Vodorod ko'rsatkichi	Водородный показатель	Hydrogen exponent
+704			V	V	volt	вольт	volt
+713			V/m	V/m	volt metr	вольт на метр	volt metr
+341			gramm/mol	грамм/моль	g/mol	г/моль	g/mol
+712			H	H	genri	генри	genri
+734			Н/m	Н/m	genri metr	генри на метр	genri metr
+701			Нz	Нz	gers	герц	gers
+727			ºC	ºC	Selsiy  gradus	градус Цельсия	Selsiy gradus
+1100			daraja°	градус°	daraja°	градус°	degree°
+381			г/л	г/л	грамм на литр	грамм на литр	грамм на литр
+719			Gy/s	Gy/s	grey sekund	грей в секунду	grey sekund
+732			J/K	J/K	joul kelvin	джоуль на кельвин	joul kelvin
+733			J/kg	J/kg	joul kilogramm	джоуль на килограмм	joul kilogramm
+731			J/(kg•K)	J/(kg•K)	joul kilogramm-kelvin	джоуль на килограмм-кельвин	joul kilogramm-kelvin
+726			J/mol	J/mol	joul mol	джоуль на моль	joul mol
+724			J/(mol•K)	J/(mol•K)	joul mol-kelvin	джоуль на моль-кельвин	joul mol-kelvin
+1280			дптр	дптр	dioptr	диоптр	diopter
+742			q.s.	q.s.	Kerakli miqdor	Достаточное количество	Quality specification
+1120			""""	""""	dyum	дюйм	inch
+542			"Международная 
+единица"	Международная единица	ЕД	ЕД	ЕД
+383			ЕД на мл	ЕД на мл	ЕД на мл	ЕД на мл	ЕД на мл
+272			Allergan B	ЕД Аллерган	Allergan birligi	единица Аллерген	Allergan unit
+268			oqsil azot B	ЕД белкового азота	oqsil azot birligi	единица белкового азота	protein nitrogen unit
+900			FFU	FFU	Fokusni shakllantirish birligi (FFU)	единица формирования фокуса (FFU)	focus shaping unit (FFU)
+1200			OHB	ЕМД	O'zgartirish harakat birliklari	"Единицы модифицирующего 
+действия"	Units of modifying action
+720			Sv	Sv	zivert	зиверт	zivert
+276			xalqaro birlik	ИЕ	xalqaro birlik	интернациональная единица	international unit
+780			"hujayra madaniyati 
+infektsion dozasi"	ИДКК	"hujayra madaniyati 
+infektsion dozasi"	"инфекционная доза 
+для клеточной культуры"	cell culture infectious dose
+683			kandela	сд	kandela	кандела	kandela
+694			kandela kvadrat metr	cd/m2	kandela kvadrat metr	кандела на квадратный метр	candela per square meter
+725			katal	kat	katal	катал	catal
+684			kvadrat metr	m2	kvadrat metr	квадратный метр	kvadrat metr
+1101			kvadrat millimetr	мм²	kvadrat millimetr	Квадратный миллиметр	square millimeter
+682			kelvin	K	kelvin	кельвин	kelvin
+690			kilogramm kub metr	"килограмм на 
+кубический метр"	kilogramm kub metr	"килограмм на кубический 
+метр"	kilogram per cubic meter
+580			"koloniya hosil qiluvchi 
+o'lchov birligi"	КОЕ	"koloniya hosil qiluvchi 
+o'lchov birligi"	колониеобразующие единицы	colony-forming units
+288			detsimetr kub	дм3	detsimetr kub	кубический дециметр	cubic decimeter
+685			kub metr	m3	kub metr	кубический метр	kub metr
+689			"kilogramm uchun 
+kubometr"	m3/kg	kilogramm uchun kubometr	"кубический метр на 
+килограмм"	cubic meter per kilogram
+289			millimetr kub	мм3	millimetr kub	кубический миллиметр	cubic millimeter
+290			santimetr kub	см3	santimetr kub	кубический сантиметр	cubic centimeter
+703			kulon	C	kulon	кулон	culon
+710			kulon kvadrat metr	C/m2	kulon kvadrat metr	кулон на квадратный метр	pendant per square meter
+728			kulon kilogramm	C/kg	kulon kilogramm	кулон на килограмм	culon kilogramm
+711			kulon kub metr	C/m3	kulon kub metr	кулон на кубический метр	pendant per cubic meter
+360			LE	ЛЕ	LE	ЛЕ	LE
+820			lipoprotein lipaz birligi	ЛСУ	lipoprotein lipaz birligi	липопротеинлипазная единица	"lipoprotein lipase 
+releasing units"
+722			lyuks	lx	lyuks	люкс	lyux
+723			lyumen	lm	lyumen	люмен	lyumen
+480			МЕ/g	МЕ/г	МЕ/g	МЕ/г	ME/g
+1260			ME/mg	МЕ/мг	ME/mg	МЕ/мг	ME/mg
+385			МЕ/мл	МЕ/мл	МЕ/мл	МЕ/мл	МЕ/мл
+299			"biologik aktivlikning 
+xalqaro birligi"	МЕ	"biologik aktivlikning 
+xalqaro birligi"	"международная единица 
+биологической активности"	"international unit of 
+biological activity"
+500			"Международная 
+единица на грамм"	ЕД/г	"Международная единица 
+на грамм"	"Международная единица 
+на грамм"	"Международная единица 
+на грамм"
+980			metr	м	metr	метр	meter
+688			"metr minus birinchi 
+daraja"	m-1	metr minus birinchi daraja	метр в минус первой степени	meter minus the first degree
+686			sekundiga metr	m/s	sekundiga metr	метр на секунду	meter per second
+687			kvadrat sekundiga metr	m/s2	kvadrat sekundiga metr	метр на секунду в квадрате	meter per square second
+380			микрограмм на дозу	мкг/доза	микрограмм на дозу	микрограмм на дозу	микрограмм на дозу
+440			mikrogramm taqsim soat	мкг/час	mikrogramm taqsim soat	микрограмм на час	micrograms per hour
+308			milliard tasir birligi	млрд. ЕД	milliard tasir birligi	миллиард единиц действия	billion efficient unit
+1020			soatiga milligramm	миллиграм на час	soatiga milligramm	миллиграм на час	milligram per hour
+297			"milligramm taqsim 
+doza (miqdor)"	мг/доза	"milligramm taqsim 
+doza (miqdor)"	миллиграмм на дозу	milligram per dose
+570			millilitrga doza	мл/доза	millilitrga doza	миллилитр на доза	milliliter per dose
+1320			daqiqasiga millilitr	мл/мин	daqiqasiga millilitr	миллилитры в минуту	milliliters per minute
+680			Millimetr	мм	Millimetr	Миллиметр	millimeter
+1302			"Simob ustunining 
+millimetri"	мм рт. ст.	Simob ustunining millimetri	миллиметры ртутного столба	Millimeters of mercury
+305			million tasir birligi	млн. ЕД	million tasir birligi	миллион единиц действия	million efficient unit
+860			ммоль/г	ммоль/г	ммоль/г	ммоль/г	ммоль/г
+693			mol metr kub	mol/m3	mol metr kub	моль на кубический метр	mole per cubic meter
+620			"Мышиная Единица 
+Действия"	МЕД	Мышиная Единица Действия	Мышиная Единица Действия	Мышиная Единица Действия
+1000			nanometr	нм	nanometr	нанометр	nanometer
+697			nyuton	N	nyuton	ньютон	nyuton
+699			nyuton-metr	N•m	nyuton-metr	ньютон-метр	nyuton-metr
+706			om	Ω	om	ом	om
+318			"chechak hosil qiluvchi 
+birlik"	ООЕ	chechak hosil qiluvchi birlik	оспаобразующая единица	smallpox forming unit
+698			paskal	Pa	paskal	паскаль	paskal
+700			paskal-sekund	Pa•s	paskal-sekund	паскаль-секунда	paskal-sekund
+460			PE	ПЕ	PE	ПЕ	PE
+695			radian	rad	radian	радиан	radian
+718			radian sekund	rad/s	radian sekund	радиан в секунду	radian sekund
+717			"kvadrat sekundiga 
+radian"	rad/s2	kvadrat sekundiga radian	радиан на секунду в квадрате	radian per second squared
+960			santimetr	см	santimetr	сантиметр	centimeter
+707			simens	S	simens	сименс	simens
+600			suyultirish darajasi	С	suyultirish darajasi	степень разведения	dilution rate
+696			steradian	sr	steradian	стерадиан	steradian
+741			"Standartlashtirilgan sifat 
+birligi uchun tabletka"	SQ-T	"Standartlashtirilgan sifat birligi 
+uchun tabletka"	"Таблетка стандартизированных 
+единиц качества"	"Standardized Quality 
+Units Tablet"
+709			tesla	T	tesla	тесла	tesla
+521			титр фага	титр фага	титр фага	титр фага	титр фага
+321			titrlash birligi	"титрационная 
+единица"	titrlash birligi	титрационная единица	titration unit
+705			farad	F	farad	фарад	farad
+714			farad metr	F/m	farad metr	фарад на метр	farad per meter
+324			flokulirlanadigan birlik	ЛФ	flokulirlanadigan birlik	флокулирующая единица	flocculating units
+1300			FTU	ФНЕ	FTU	ФНЕ	FTU
+1301			FTU/ml	ФНЕ/мл	FTU/ml	ФНЕ/мл	FTU/ml
+1040			French	Ч/Фр	French	Френч	French
+880			qismi	часть	qismi	часть	part
+940			Соат	ч	Соат	Часы	Time

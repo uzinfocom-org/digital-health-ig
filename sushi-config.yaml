@@ -115,6 +115,10 @@ pages:
 #
 parameters:
   special-url-base: https://terminology.dhp.uz/fhir/core
+  # external classifications shipped under their terminology.hl7.org canonical
+  special-url:
+    - http://terminology.hl7.org/CodeSystem/iccc-3
+    - http://terminology.hl7.org/CodeSystem/icd-o-3
   excludettl: true
   excludexml: true
   usage-stats-opt-out: true # times out often

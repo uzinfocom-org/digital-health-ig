@@ -53,3 +53,9 @@ A definition for CodeSystem 'http://example.org/fhir/CodeSystem/lab-report-type'
 
 # IG Publisher 2.2.10 emits an OID-assignment recommendation for every CodeSystem/ValueSet. We don't use OID-based terminology (e.g. CDA), so assigning OIDs IG-wide adds no value here.
 %should have an OID assigned to cater for possible use with OID based terminology systems%
+
+# ICD-O-3 is WHO/IARC content shipped under the HTA-endorsed terminology.hl7.org canonical; the source tables carry no per-concept definitions
+%HL7 Defined CodeSystems should ensure that every concept has a definition%
+
+# R5 binds Claim.total.currency to the currencies value set, an unfiltered include of urn:iso:std:iso:4217. ISO 4217 is licensed content that HL7 does not ship, so no terminology server can expand this binding.
+%Binding http://hl7.org/fhir/ValueSet/currencies%

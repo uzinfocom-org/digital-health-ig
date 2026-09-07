@@ -189,3 +189,10 @@ Context: PlanDefinition
 * extension[changedBy].value[x] 1..1
 * extension[changedBy].value[x] only Reference
 * extension[changedBy].valueReference only Reference(Practitioner or PractitionerRole)
+Extension: Trustee
+Id: trustee
+Title: "Trustee"
+Description: "Extension to specify a trustee (RelatedPerson or PractitionerRole)"
+Context: MedicationRequest
+* ^experimental = true
+* value[x] only Reference(UZCoreRelatedPerson or UZCorePractitionerRole)

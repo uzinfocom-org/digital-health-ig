@@ -170,4 +170,65 @@ RelatedPerson должен содержать как минимум один `id
 
 Обратите внимание на ведущее подчёркивание: `_value` - это место, куда FHIR помещает расширение, заменяющее отсутствующее `value`. См. [Системы идентификаторов](identifiers.html) для полного списка поддерживаемых URI систем и [Отсутствующие и подавленные данные](general-guidance.html#missing-data) для выбора правильного механизма отсутствия.
 
+#### Родитель и его ребёнок
+
+Родитель записывается по отношению к своему ребёнку так же: один RelatedPerson на каждую пару родитель-ребёнок, ссылающийся на *ребёнка* и несущий данные самого родителя. Ссылка `patient` указывает на ребёнка, а `relationship` говорит, кем ему приходится это лицо, - кодом из системы v3 RoleCode: `MTH` для матери, `FTH` для отца, `GUARD` для законного опекуна. Возраст ребёнка на это никак не влияет - ресурс выглядит одинаково и когда родитель действует за малолетнего ребёнка, и когда речь просто о родителе взрослого. В примере ниже - мать:
+
+```json
+{
+  "resourceType": "RelatedPerson",
+  "meta": { "profile": [ "https://dhp.uz/fhir/core/StructureDefinition/uz-core-relatedperson" ] },
+  "identifier": [
+    {
+      "use": "official",
+      "type": {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+            "code": "NI",
+            "display": "National unique individual identifier"
+          }
+        ]
+      },
+      "system": "https://dhp.uz/fhir/core/sid/pid/uz/ni",
+      "value": "40503855900021"
+    }
+  ],
+  "active": true,
+  "patient": { "reference": "Patient/example-jasur" },
+  "relationship": [
+    {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+          "code": "MTH",
+          "display": "mother"
+        }
+      ]
+    }
+  ],
+  "name": [
+    {
+      "use": "usual",
+      "text": "Karimova Nodira Anvarovna",
+      "family": "Karimova",
+      "given": [ "Nodira" ],
+      "suffix": [ "Anvarovna" ]
+    }
+  ],
+  "gender": "female",
+  "birthDate": "1985-03-05"
+}
+```
+
+Родитель несёт собственный PINFL в `identifier` - тот же, что идентифицирует его собственную запись [Пациента](StructureDefinition-uz-core-patient.html), - поэтому система, знающая PINFL родителя, находит одним запросом всех детей, за которых он может действовать:
+
+```
+GET [base]/RelatedPerson?identifier=https://dhp.uz/fhir/core/sid/pid/uz/ni|40503855900021
+```
+
+`patient` указывает на ребёнка, поэтому возраст ребёнка читается из его `Patient.birthDate`, а не из этого ресурса. RelatedPerson фиксирует сам *факт* наличия связи; сам по себе он не предоставляет доступ. Может ли родитель действовать за ребёнка - видеть его запись или давать согласие от его имени - решает система, которая эту запись хранит, опираясь на связь и на действующие правила, в том числе на возраст ребёнка.
+
+Полный экземпляр - [example-mother-of-a-child](RelatedPerson-example-mother-of-a-child.html), ссылающийся на ребёнка [example-jasur](Patient-example-jasur.html).
+
 Примеры вызовов API и образец полезной нагрузки см. в разделе [Быстрый старт](#quick-start) внизу этой страницы.
