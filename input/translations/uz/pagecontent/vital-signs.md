@@ -7,7 +7,7 @@ UZ Coreda hayotiy ko'rsatkichlar [FHIR Vital Signs profillari](https://hl7.org/f
 ### FHIRda taqdim etilishi
 
 UZ Coredagi hayotiy ko'rsatkichlar uchta Observation profilini **birlashtiradi**:
-* [UZ Core Observation profile](https://dhp.uz/fhir/core/StructureDefinition/uz-core-observation) - O'zbekiston uchun xos talablar
+* [UZ Core Observation profile](StructureDefinition-uz-core-observation.html) - O'zbekiston uchun xos talablar
 * [FHIR Vital Signs profile](http://hl7.org/fhir/StructureDefinition/vitalsigns)  - hayotiy ko'rsatkichlar bo'yicha xalqaro standartlar
 * **Muayyan hayotiy ko'rsatkich profili** (masalan, [Yurak qisqarishlari tezligi](http://hl7.org/fhir/r5/heartrate.html), [Arterial qon bosimi](http://hl7.org/fhir/r5/bp.html)) - ushbu ko'rsatkich turi uchun qoidalar
 
