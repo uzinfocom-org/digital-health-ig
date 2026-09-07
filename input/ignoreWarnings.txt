@@ -59,3 +59,8 @@ A definition for CodeSystem 'http://example.org/fhir/CodeSystem/lab-report-type'
 
 # R5 binds Claim.total.currency to the currencies value set, an unfiltered include of urn:iso:std:iso:4217. ISO 4217 is licensed content that HL7 does not ship, so no terminology server can expand this binding.
 %Binding http://hl7.org/fhir/ValueSet/currencies%
+
+# condition-severity-cs is an IG-local SNOMED CT supplement and is present in the
+# generated package. The remote terminology server cannot retrieve an unpublished
+# local supplement while validating the IG build.
+Required supplement not found: https://terminology.dhp.uz/fhir/core/CodeSystem/condition-severity-cs|2026.1.0
