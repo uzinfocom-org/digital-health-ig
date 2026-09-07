@@ -43,3 +43,9 @@ Description: "Encounter type codes with English and Russian translations"
   * ^designation[=].value = "Pathalogonatomy service"
   * ^designation[+].language = #ru
   * ^designation[=].value = "Паталогаанатомическая служба"
+// TODO: Uzbek designation is a placeholder pending native-speaker review.
+* #mserv-0001-00008 "Skrining"
+  * ^designation[0].language = #en
+  * ^designation[=].value = "Screening"
+  * ^designation[+].language = #ru
+  * ^designation[=].value = "Скрининг"

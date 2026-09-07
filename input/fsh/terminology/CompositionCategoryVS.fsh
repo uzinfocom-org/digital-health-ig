@@ -6,3 +6,4 @@ Description: "Composition category with Uzbek and Russian designations"
 * ^language = #uz
 * ^experimental = true
 * include codes from system composition-category-cs
+* include codes from system document-category-cs

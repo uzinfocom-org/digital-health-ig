@@ -24,8 +24,6 @@ Alias: $consent-action = http://terminology.hl7.org/CodeSystem/consentaction
 Alias: $consent-provision-type = http://hl7.org/fhir/consent-provision-type
 Alias: $consent-state-codes = http://hl7.org/fhir/consent-state-codes
 Alias: $contact-point-system = http://hl7.org/fhir/contact-point-system
-Alias: $cvd-risk-category-cs = https://terminology.dhp.uz/fhir/core/CodeSystem/cvd-risk-category-cs
-Alias: $cvd-tobacco-use-cs = https://terminology.dhp.uz/fhir/core/CodeSystem/cvd-tobacco-use-cs
 Alias: $cvx = http://hl7.org/fhir/sid/cvx
 Alias: $cvx-vs = http://hl7.org/fhir/ValueSet/vaccine-code
 Alias: $air-vaccine = https://www.humanservices.gov.au/organisations/health-professionals/enablers/air-vaccine-code-formats
@@ -207,6 +205,11 @@ Alias: $claim-use = http://hl7.org/fhir/claim-use
 // valueset currency
 Alias: $currencies-vs = http://hl7.org/fhir/ValueSet/currencies
 Alias: $permitted-data-type = http://hl7.org/fhir/permitted-data-type
+Alias: $fertility-questionnaire-cs = http://terminology.hl7.org/CodeSystem/v2-0532
+Alias: $ordinal-value = http://hl7.org/fhir/StructureDefinition/ordinalValue
+Alias: $sdc-calculated-expression = http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-calculatedExpression
+Alias: $variable = http://hl7.org/fhir/StructureDefinition/variable
+Alias: $child-development-result-cs = https://dhp.uz/fhir/core/CodeSystem/child-development-result-cs
 
 Alias: $composition-att-mode = http://hl7.org/fhir/composition-attestation-mode
 Alias: $composition-list-empty-reason = http://terminology.hl7.org/CodeSystem/list-empty-reason
@@ -217,6 +220,10 @@ Alias: $service-request-intent = http://hl7.org/fhir/request-intent
 
 Alias: $coverage-kind = http://hl7.org/fhir/coverage-kind
 
+Alias: $diabetes-in-relatives-cs = https://terminology.dhp.uz/fhir/core/CodeSystem/diabetes-in-relatives-cs
+Alias: $fertility-contraception-kind-cs = https://terminology.dhp.uz/fhir/core/CodeSystem/fertility-contraception-kind-cs
+Alias: $fertility-contraception-type-cs = https://terminology.dhp.uz/fhir/core/CodeSystem/fertility-contraception-type-cs
+Alias: $oncohematology-result-category-cs = https://terminology.dhp.uz/fhir/core/CodeSystem/oncohematology-result-category-cs
 Alias: $medicationrequest-admin-location = http://terminology.hl7.org/CodeSystem/medicationrequest-admin-location
 Alias: $medicationrequest-intent = http://hl7.org/fhir/CodeSystem/medicationrequest-intent
 Alias: $medicationrequest-status-reason = http://terminology.hl7.org/CodeSystem/medicationrequest-status-reason
