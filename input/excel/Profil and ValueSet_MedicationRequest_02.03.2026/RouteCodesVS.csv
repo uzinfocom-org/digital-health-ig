@@ -1,0 +1,88 @@
+SNOMED_CODE	equivalence	CODE	CODE 2	UZ	RU	EN
+58100008	equivalent	1	pharm.0001.00001	Arteriya ichiga	Внутриартериальный	Intra-arterial
+62226000	equivalent	2	pharm.0001.00002	Bachadon ichiga	Внутриматочный	Intrauterine
+420719007	equivalent	3	pharm.0001.00003	Bosh miya yoki yurak qorinchasi ichiga	Интравентрикулярный	Intraventricular
+12130007	equivalent	4	pharm.0001.00004	Boʻgʻim ichiga	Внутрисуставный	Intra-articular
+16857009	equivalent	5	pharm.0001.00005	Vaginal	Вагинальный	Vaginal
+47625008	equivalent	6	pharm.0001.00006	Vena ichiga (v/i)	Внутривенный	Intravenous
+		7	pharm.0001.00007	Gastroenteral	Гастроэнтеральный	Gastroenteric
+766790006	equivalent	8	pharm.0001.00008	Ekstrakorporal gemodializ	Экстракорпоральный гемодиализ	 Extracorporeal hemodialysis
+-		9	pharm.0001.00009	Implantatsiya	Имплантация	Implantation
+447694001	equivalent	10	pharm.0001.00010	Ingalyatsion	Ингаляционный	Inhalation
+58731000052100	equivalent	11	pharm.0001.00011	Intestinal	Интестинальный	Intestinal
+372458006	equivalent	12	pharm.0001.00012	Intraamniotik (amniotik qavat ichiga)	Интраамниотический	Intra-amniotic
+372459003	equivalent	13	pharm.0001.00013	Intrabursal (boʻgʻim sumkasiga)	Интрабурсальный	Intrabursal
+418401004	equivalent	14	pharm.0001.00014	Intravitreal	Интравитреальный	Intravitreal
+58751000052109	equivalent	15	pharm.0001.00015	Intraglandulyar	Интрагландулярный	Intraglandular
+372465003	equivalent	16	pharm.0001.00016	Intradiskal	Интрадискальный	Intradiscal
+372460008	equivalent	17	pharm.0001.00017	Intrakardial	Интракардиальный	Intracardiac
+418608002	equivalent	18	pharm.0001.00018	Intrakorneal	Интракорнеальный	Intracorneal
+372463005	equivalent	19	pharm.0001.00019	Intrakoronar	Интракоронарный	Intracoronary
+445767008	equivalent	20	pharm.0001.00020	Intrameningeal	Интраменингеальный	Intrameningeal
+372468001	equivalent	21	pharm.0001.00021	Intraokulyar	Интраокулярный	Intraocular
+445771006	equivalent	22	pharm.0001.00022	Intraperikardial	Интраперикардиальный	Intrapericardial
+38239002	equivalent	23	pharm.0001.00023	Intraperitoneal	Интраперитонеальный	Intraperitoneal
+58771000052103	equivalent	24	pharm.0001.00024	Intraportal	Интрапортальный	Intraportal
+419810008	equivalent	25	pharm.0001.00025	Intraprostatik	Интрапростатический	Intraprostatic
+		26	pharm.0001.00026	Intraputaminal	Интрапутаминальный	Intraputaminal
+372470005	equivalent	27	pharm.0001.00027	Intrasternal	Интрастернальный	Intrasternal
+72607000	equivalent	28	pharm.0001.00028	Intratekal	Интратекальный	Intrathecal
+58761000052107	equivalent	29	pharm.0001.00029	Intraxolangiopankreatik	Интрахолангиопанкреатический	Intracholangiopancreatic
+372462000	equivalent	30	pharm.0001.00030	Intratservikal	Интрацервикальный	Intracervical
+446540005	equivalent	31	pharm.0001.00031	Intratserebral	Интрацеребральный	Intracerebral
+420719007	equivalent	32	pharm.0001.00032	Intratserebroventrikulyar	Интрацеребровентрикулярный	Intracerebroventricular
+418892005	equivalent	33	pharm.0001.00033	Intratsisternal	Интрацистернальный	Intracisternal
+718329006	equivalent	34	pharm.0001.00034	Infiltratsiya	Инфильтрация	Infiltration
+-		35	pharm.0001.00035	Ionoforez	Ионофорез	Iontophoresis
+372461007	equivalent	36	pharm.0001.00036	Kavernoz boʻshliq ichiga	Интракавернозный	Intracavernous
+418821007	equivalent	37	pharm.0001.00037	Koʻzning oldingi kamerasiga	В переднюю камеру глаза	Into the anterior chamber of the eye
+10547007	equivalent	38	pharm.0001.00038	Quloq orqali	Ушной	Auricular
+		39	pharm.0001.00039	Laringofaringeal	Ларингофарингеальный	Laryngopharyngeal
+372467006	equivalent	40	pharm.0001.00040	Limfa ichiga	Внутрилимфатический	Intralymphatic
+54471007	equivalent	41	pharm.0001.00041	Lunjga	Буккальный	Buccal
+		42	pharm.0001.00042	Meʼda orqali	Гастральный	Gastral
+372457001	equivalent	43	pharm.0001.00043	Milkka	Гингивальный	Gingival
+78421000	equivalent	44	pharm.0001.00044	Mushak ichiga (m/i)	Внутримышечный	Intramuscular
+46713006	equivalent	45	pharm.0001.00045	Nazal (burunga)	Назальный	Nasal
+26643006	equivalent	46	pharm.0001.00046	Peroral (ogʻiz orqali)	Пероральный	Peroral
+419874009	equivalent	47	pharm.0001.00047	Shilliq qavat ostiga	Субмукозный	Submucosal
+372473007	equivalent	48	pharm.0001.00048	Ogʻiz boʻshligʻi shilliq qavatiga	Оромукозный	Oromucosal
+372472002	equivalent	49	pharm.0001.00049	Okulyar (koʻzga)	Окулярный	Ocular
+58821000052106	equivalent	50	pharm.0001.00050	Orqa yukstaskleral	Задний юкстасклеральный	Posterior juxtascleral
+418664002	equivalent	51	pharm.0001.00051	Orofaringeal	Орофарингеальный	Oropharyngeal
+447202000	equivalent	52	pharm.0001.00052	Parenteral	Парентеральный	Parenteral
+372474001	equivalent	53	pharm.0001.00053	Periartikulyar	Периартикулярный	Periarticular
+372475000	equivalent	54	pharm.0001.00054	Perinevral	Периневральный	Perineural
+447052000	equivalent	55	pharm.0001.00055	Periodontga	Периодонтальный	Periodontal
+420047004	equivalent	56	pharm.0001.00056	Periostal	Периостальный	Periosteal
+372469009	equivalent	57	pharm.0001.00057	Plevra ichiga	Внутриплевральный	Intrapleural
+372471009	equivalent	58	pharm.0001.00058	Pufak ichiga	Внутрипузырный	Intravesical
+37161004	equivalent	59	pharm.0001.00059	Rektal	Ректальный	Rectal
+418321004	equivalent	60	pharm.0001.00060	Retrobulbar	Ретробульбарный	Retrobulbar
+419231003	equivalent	61	pharm.0001.00061	Sinus ichiga	Внутрисинусный	Intrasinus
+		62	pharm.0001.00062	Sirtga	Наружный	External
+372476004	equivalent	63	pharm.0001.00063	Subkonyunktival	Субконъюнктивальный	Subconjunctival
+58831000052108	equivalent	64	pharm.0001.00064	Subretinal	Субретинальный	Subretinal
+417255000	equivalent	65	pharm.0001.00065	Suyak ichiga	Внутрикостный	Intraosseous
+372464004	equivalent	66	pharm.0001.00066	Teri ichiga (t/i)	Внутрикожный	Intradermal
+448598008	equivalent	67	pharm.0001.00067	Teri orqali	Кожный	Cutaneous
+34206005	equivalent	68	pharm.0001.00068	Teri ostiga (t/o)	Подкожный	Subcutaneous
+		69	pharm.0001.00069	Teri skarifikatsiyasi	Кожная скарификация	Skin scarification
+37839007	equivalent	70	pharm.0001.00070	Til ostiga	Подъязычный	Sublingual
+372449004	equivalent	71	pharm.0001.00071	Tishga	Дентальный	Dental
+418331006	equivalent	72	pharm.0001.00072	Togʻay ichiga	Внутрихрящевой	Intracartilaginous
+45890007	equivalent	73	pharm.0001.00073	Transdermal	Трансдермальный	Transdermal
+		74	pharm.0001.00074	Transmammar	Трансмаммарный	Transmammary
+446442000	equivalent	75	pharm.0001.00075	Transplatsentar (yoʻldosh orqali)	Трансплацентарный	Transplacental
+90028008	equivalent	76	pharm.0001.00076	Uretral	Уретральный	Urethral
+58811000052103	equivalent	77	pharm.0001.00077	Oʻsma atrofiga	Околоопухолевый	Peritumoral
+447122006	equivalent	78	pharm.0001.00078	Oʻsma ichiga	Внутриопухолевый	Intratumoral
+		79	pharm.0001.00079	Shikastlanish oʻchogʻiga	На очаг повреждения	On the lesion site
+		80	pharm.0001.00080	Shikastlanish oʻchoq ichiga	Внутрь очага повреждения	Inside the lesion site
+372453002	equivalent	81	pharm.0001.00081	Ekstraamniotik (amniotik qavat sirtiga)	Экстраамниотический	Extraamniotic
+714743009	equivalent	82	pharm.0001.00082	Ekstrakorporal	Экстракорпоральный	Extracorporeal
+372452007	equivalent	83	pharm.0001.00083	Endotraxeopulmonal	Эндотрахеопульмональный	Endotracheopulmonary
+372450004	equivalent	84	pharm.0001.00084	Endotservikal	Эндоцервикальный	Endocervical
+		85	pharm.0001.00085	Enteral	Энтеральный	Enteric
+448077001	equivalent	86	pharm.0001.00086	Epiderma ichiga	Внутриэпидермальный	Intraepidermal
+404820008	equivalent	87	pharm.0001.00087	Epidural	Эпидуральный	Epidural

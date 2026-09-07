@@ -224,7 +224,7 @@ The [Immunization](workflow-immunization.html) workflow shows how the national s
 
 ### Cross-component resource architecture
 
-In practice, several of the components described above exchange the same underlying FHIR resources. This diagram drops to the resource level: which resources each component owns, and which of those resources connect to another component. Plain lines show two components integrating broadly, or several resource connections merged into one while both components are closed; arrows show a specific resource flowing from one component into another. Drag to pan, scroll to zoom, and hover or tab to a resource, component, or legend item to see its connections.
+In practice, several of the components described above exchange the same underlying FHIR resources. This diagram drops to the resource level: which resources each component owns, and which of those resources connect to another component. Plain lines show two components integrating broadly, or several resource connections merged into one while both components are closed; arrows show a specific resource flowing from one component into another. Drag to pan, scroll to zoom, and hover or tab to a resource, component, or legend item to see its connections. A ★ marks a resource the component itself is responsible for; the others it shares with the component that is.
 
 <br clear="all"/>
 
@@ -248,6 +248,7 @@ In practice, several of the components described above exchange the same underly
   .arch-legend span[data-legend]:hover, .arch-legend span[data-legend]:focus-visible { background: var(--paper-raised); }
   .arch-legend .swatch-box { width: 12px; height: 12px; background: var(--blueprint-soft); border: 1px solid var(--line); }
   .arch-legend .swatch-box.pale { background: var(--pencil-soft); }
+  .arch-legend .swatch-star { color: var(--blueprint); font-size: 0.85rem; line-height: 1; }
 
   .arch-wrap { display: flex; gap: 1rem; align-items: flex-start; flex-wrap: wrap; }
 
@@ -292,6 +293,7 @@ In practice, several of the components described above exchange the same underly
     font-weight: 600; font-size: 0.92rem; color: var(--ink); margin: 0 0 0.2rem;
   }
   .arch-info-sub { font-size: 0.76rem; color: var(--ink-soft); margin: 0 0 0.8rem; }
+  .arch-info-service { font-family: var(--mono-font); font-size: 0.76rem; color: var(--ink-soft); margin: -0.55rem 0 0.8rem; }
   .arch-rel-list { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 0.55rem; }
   .arch-rel-item { border-left: 2px solid var(--blueprint); padding-left: 0.6rem; }
   .arch-rel-head { font-size: 0.8rem; color: var(--ink); font-weight: 600; }
@@ -319,6 +321,7 @@ In practice, several of the components described above exchange the same underly
   <div class="arch-legend">
     <span data-legend="profiled" tabindex="0" role="button"><span class="swatch-box"></span> defined in this IG</span>
     <span data-legend="unprofiled" tabindex="0" role="button"><span class="swatch-box pale"></span> named, not yet defined</span>
+    <span data-legend="own" tabindex="0" role="button"><span class="swatch-star">★</span> the component is responsible for this resource</span>
   </div>
   <div class="arch-wrap">
     <div class="arch-canvas" id="arch-canvas">
@@ -326,7 +329,7 @@ In practice, several of the components described above exchange the same underly
     </div>
     <div class="arch-info" id="arch-info">
       <div id="arch-info-body">
-        <p class="arch-info-hint">Click a component to open its resources. Hover or tab to a resource, component, or legend item to see what it connects to.</p>
+        <p class="arch-info-hint">Click a component to open its resources; ★ marks the ones the component is responsible for. Hover or tab to a resource, component, or legend item to see what it connects to.</p>
         <div class="arch-stat-row"><span>Components shown</span><span class="arch-stat-n" id="arch-stat-components">–</span></div>
         <div class="arch-stat-row"><span>Resources</span><span class="arch-stat-n" id="arch-stat-resources">–</span></div>
         <div class="arch-stat-row"><span>Relationships</span><span class="arch-stat-n" id="arch-stat-relationships">–</span></div>

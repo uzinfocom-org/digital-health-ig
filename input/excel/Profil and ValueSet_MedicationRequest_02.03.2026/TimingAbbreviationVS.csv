@@ -1,0 +1,18 @@
+Code	Display 	UZB	RU	Eng
+BID 	BID	Muassasa belgilangan vaqtda kuniga ikki marta	Два раза в день в установленное учреждением время	Two times a day at institution specified time
+TID 	TID	Muassasa belgilangan vaqtda kuniga uch marta	Три раза в день в установленное учреждением время	Three times a day at institution specified time
+QID	QID	Muassasa belgilangan vaqtda kuniga to'rt marta	Четыре раза в день в установленное учреждением время	Four times a day at institution specified time
+AM 	AM	Har kuni ertalab muassasa belgilangan vaqtda	Каждое утро в установленное учреждением время	Every morning at institution specified times
+PM 	PM	Har kuni tushdan keyin muassasa belgilangan vaqtda	Каждый день в указанное учреждением время	Every afternoon at institution specified times
+QD 	QD	Har kuni muassasa belgilangan vaqtda	Каждый день в указанное учреждением время	Every Day at institution specified times
+QOD 	QOD	Har ikki kunda muassasa belgilangan vaqtda	Каждый второй день в указанное учреждением время	Every Other Day at institution specified times
+Q1H 	every hour	Muassasa belgilangan vaqtda har soatda	Каждый час в указанное учреждением время	Every hour at institution specified times
+Q2H 	every 2 hours	Muassasa belgilangan vaqtda har 2 soatda	Каждые 2 часа в указанное учреждением время	Every 2 hours at institution specified times
+Q3H 	every 3 hours	Muassasa belgilangan vaqtda har 3 soatda	Каждые 3 часа в указанное учреждением время	Every 3 hours at institution specified times
+Q4H 	Q4H	Muassasa belgilangan vaqtda har 4 soatda	Каждые 4 часа в указанное учреждением время	Every 4 hours at institution specified times
+Q6H 	Q6H	Muassasa belgilangan vaqtda har 6 soatda	Каждые 6 часов в указанное учреждением время	Every 6 Hours at institution specified times
+Q8H 	every 8 hours	Muassasa belgilangan vaqtda har 8 soatda	Каждые 8 часов в указанное учреждением время	Every 8 hours at institution specified times
+BED 	at bedtime	Yotish vaqtida (muassasa belgilangan vaqtda)	Перед сном (в указанное учреждением время)	At bedtime (institution specified time)
+WK 	weekly	Muassasa belgilangan vaqtda har hafta	Еженедельно в указанное учреждением время	Weekly at institution specified time
+MO 	monthly	Muassasa belgilangan vaqtda har oyda	Ежемесячно в указанное учреждением время	Monthly at institution specified time
+C	Continuous (frequency)	Xizmat boshlanish va tugash vaqti o'rtasida uzluksiz taqdim etiladi.	Обслуживание осуществляется непрерывно в период между началом и окончанием работы.	Service is provided continuously between start time and stop time.

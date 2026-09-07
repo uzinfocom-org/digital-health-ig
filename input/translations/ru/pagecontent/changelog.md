@@ -1,5 +1,17 @@
 ### В разработке
 
+#### Добавлено
+
+Добавлена в полном объёме [Международная классификация болезней для онкологии, 3-е издание, 2-й пересмотр (ICD-O-3.2)](CodeSystem-icd-o-3.html) - 330 кодов топографии и 1143 кода морфологии с обозначениями на узбекском и русском языках - под её каноническим URL HL7 Terminology `http://terminology.hl7.org/CodeSystem/icd-o-3`, а также наборы значений, выбирающие коды [топографии](ValueSet-icd-o-3-topography-vs.html) и [морфологии](ValueSet-icd-o-3-morphology-vs.html).
+
+#### Изменено
+
+[Система кодов ICCC-3](CodeSystem-iccc-3-cs.html) перенесена с канонического URL DHP `https://terminology.dhp.uz/fhir/core/CodeSystem/iccc-3-cs` на `http://terminology.hl7.org/CodeSystem/iccc-3` - канонический URL HL7 Terminology для этой классификации IARC (его использует руководство HL7 Europe PanCareSurPass), поскольку классификация принадлежит IARC, а не DHP. [Набор значений](ValueSet-iccc-3-vs.html) сохраняет свой URL.
+
+#### Несовместимые изменения
+
+Профиль UZ Core VaccinationActivityDefinition переименован в [UZ Core ActivityDefinition](StructureDefinition-uz-core-activitydefinition.html), а его канонический URL изменён с `.../uz-core-vaccination-activity-definition` на `.../uz-core-activitydefinition`. Реализациям, использующим старый канонический URL, необходимо обновить ссылку.
+
 #### Документация
 
 На странице [Компоненты](components.html) теперь описаны компоненты "Управление кровью", "Сестринское дело" и "Поставки" - на основе технических проектов этих компонентов. Раздел [Направления](components.html#направления) дополнен семью признаками, по которым классифицируется направление, а также разделением между ServiceRequest, который несёт само направление, и согласующими Task, которые ведут цепочку согласования в рамках государственного медицинского страхования.
@@ -11,6 +23,8 @@
 Страница [Жизненный цикл электронного направления](workflow-referral.html) больше не утверждает, что профили ServiceRequest и Task не опубликованы. Оба с тех пор опубликованы как [UZ Core ServiceRequest](StructureDefinition-uz-core-servicerequest.html) и [UZ Core Task Referral Approval](StructureDefinition-uz-core-referral-approval-task.html), и оба по-прежнему помечены как экспериментальные.
 
 Процесс [От назначения лабораторного исследования до получения результата](workflow-lab.html) ссылался на `uz-core-servicerequest-laboratory`, переименованный в 0.8.0. Обе его ссылки и `meta.profile` в рабочем примере теперь указывают на [UZ Core ServiceRequest](StructureDefinition-uz-core-servicerequest.html).
+
+[UZ Core RelatedPerson](StructureDefinition-uz-core-relatedperson.html) теперь показывает, как родитель связывается со своим ребёнком, чтобы система могла разрешить родителю действовать от его имени. Новый пример [example-mother-of-a-child](RelatedPerson-example-mother-of-a-child.html) записывает мать по отношению к её ребёнку ([example-jasur](Patient-example-jasur.html)) с кодом связи `MTH`, а страница профиля объясняет, как система по PINFL находит детей, за которых родитель может действовать, почему возраст ребёнка читается из его `Patient.birthDate`, а не из связи, и почему сама по себе связь не предоставляет доступ.
 
 ### Версия 0.8.0
 
@@ -112,7 +126,7 @@ ConceptMap типов организаций переименованы с пр�
 
 [UZ Core PlanDefinition](StructureDefinition-uz-core-plan-definition.html) теперь требует второй `useContext` с указанием вида календаря, привязанный (extensible) к новому ValueSet [типа календаря иммунизации](ValueSet-immunization-schedule-type-vs.html). Слайсинг по типу для `action.definition[x]` удалён, поскольку из-за него валидатор отклонял `definitionCanonical`, и примеры теперь используют `definitionCanonical`.
 
-Профиль UZ Core ActivityDefinition переименован в [UZ Core VaccinationActivityDefinition](StructureDefinition-uz-core-vaccination-activity-definition.html), его канонический URL изменён с `.../uz-core-activity-definition` на `.../uz-core-vaccination-activity-definition`. Разработчики, ссылающиеся на прежний канонический URL, должны его обновить.
+Профиль UZ Core ActivityDefinition переименован в UZ Core VaccinationActivityDefinition, его канонический URL изменён с `.../uz-core-activity-definition` на `.../uz-core-vaccination-activity-definition`. Разработчики, ссылающиеся на прежний канонический URL, должны его обновить.
 
 #### Документация
 
@@ -138,7 +152,7 @@ ConceptMap типов организаций переименованы с пр�
 
 Добавлен профиль [UZ Core PlanDefinition](StructureDefinition-uz-core-plan-definition.html) для национальных календарей иммунизации.
 
-Добавлен профиль [UZ Core ActivityDefinition](StructureDefinition-uz-core-vaccination-activity-definition.html) для определения переиспользуемых клинических активностей (процедур, тестов, протоколов медикаментозной терапии) независимо от конкретного пациента.
+Добавлен профиль [UZ Core ActivityDefinition](StructureDefinition-uz-core-activitydefinition.html) для определения переиспользуемых клинических активностей (процедур, тестов, протоколов медикаментозной терапии) независимо от конкретного пациента.
 
 Добавлен профиль [UZ Core AdverseEvent](StructureDefinition-uz-core-adverse-event.html) для регистрации нежелательных явлений с терминологией для [фактичности](ValueSet-adverse-event-actuality-vs.html), [серьёзности](ValueSet-adverse-event-seriousness-vs.html), [исхода](ValueSet-adverse-event-outcome-vs.html) и [статуса](ValueSet-adverse-event-status-vs.html).
 
@@ -178,7 +192,7 @@ ConceptMap типов организаций переименованы с пр�
 
 [CodeSystem гражданства](CodeSystem-nationality-cs.html), на основе которого построен [набор значений гражданства](ValueSet-nationality-vs.html) в [UZ Core Patient](StructureDefinition-uz-core-patient.html), пересоздан на основе обновлённого списка гражданств dmp.uz: он вырос с 306 до 512 записей, отображаемые названия стандартизированы (верхний регистр), добавлены русские и английские переводы, а коды переназначены - один и тот же код теперь может обозначать другую национальность (например, `#1` изменился с "Ruslar" на "ADIGEY"). Это несовместимое изменение: коды гражданства, сохранённые в предыдущей версии, необходимо сопоставить заново.
 
-Расширение для многоязычного перевода (базовое значение на узбекском плюс переводы на русский и каракалпакский) добавлено к `name` в [UZ Core HealthcareService](StructureDefinition-uz-core-healthcareservice.html) и к `title` в [UZ Core ActivityDefinition](StructureDefinition-uz-core-vaccination-activity-definition.html), [UZ Core Laboratory ObservationDefinition](StructureDefinition-uz-core-laboratory-observation-definition.html), [UZ Core PlanDefinition](StructureDefinition-uz-core-plan-definition.html) и [UZ Core Questionnaire](StructureDefinition-uz-core-questionnaire.html). Элемент `name` теперь обязателен в [UZ Core Organization](StructureDefinition-uz-core-organization.html) и [UZ Core Location](StructureDefinition-uz-core-location.html).
+Расширение для многоязычного перевода (базовое значение на узбекском плюс переводы на русский и каракалпакский) добавлено к `name` в [UZ Core HealthcareService](StructureDefinition-uz-core-healthcareservice.html) и к `title` в [UZ Core ActivityDefinition](StructureDefinition-uz-core-activitydefinition.html), [UZ Core Laboratory ObservationDefinition](StructureDefinition-uz-core-laboratory-observation-definition.html), [UZ Core PlanDefinition](StructureDefinition-uz-core-plan-definition.html) и [UZ Core Questionnaire](StructureDefinition-uz-core-questionnaire.html). Элемент `name` теперь обязателен в [UZ Core Organization](StructureDefinition-uz-core-organization.html) и [UZ Core Location](StructureDefinition-uz-core-location.html).
 
 #### Документация
 

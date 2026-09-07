@@ -20,6 +20,18 @@ Description: "Role code supplement with translations in Uzbek and Russian"
   * ^designation[=].value = "Мать"
   * ^designation[+].language = #uz
   * ^designation[=].value = "Ona"
+
+* #FTH
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Отец"
+  * ^designation[+].language = #uz
+  * ^designation[=].value = "Ota"
+
+* #GUARD
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Опекун"
+  * ^designation[+].language = #uz
+  * ^designation[=].value = "Vasiy"
   
 * #TPA //insurance-fund-administrator
   * ^designation[0].language = #ru
