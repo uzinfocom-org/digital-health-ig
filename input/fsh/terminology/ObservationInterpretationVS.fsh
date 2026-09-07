@@ -7,3 +7,5 @@ Description: "Codes representing the clinical meaning of an observation result i
 * ^extension[0].url = $valueset-supplement
 * ^extension[=].valueCanonical = Canonical(ObservationInterpretationCS)
 * include codes from system $observation-interpretation
+* include codes from system silverman-respiratory-severity-cs
+* include codes from system newborn-term-status-cs

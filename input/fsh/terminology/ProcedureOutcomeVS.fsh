@@ -13,3 +13,4 @@ Description: "Procedure outcome ValueSet with translations in Uzbek and Russian"
 * include $sct#385669000 "Successful"
 * include $sct#385670004 "Partially successful"
 * include $sct#385671000 "Unsuccessful"
+* include codes from system intervention-effectiveness-cs
