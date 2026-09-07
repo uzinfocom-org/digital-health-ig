@@ -205,18 +205,9 @@ Alias: $claim-use = http://hl7.org/fhir/claim-use
 Alias: $currencies-vs = http://hl7.org/fhir/ValueSet/currencies
 Alias: $permitted-data-type = http://hl7.org/fhir/permitted-data-type
 Alias: $fertility-questionnaire-cs = http://terminology.hl7.org/CodeSystem/v2-0532
-Alias: $ihd-pain-type-cs = https://dhp.uz/fhir/core/CodeSystem/ihd-pain-type-cs
-// $ihd-risk-category-cs removed here: duplicate of the terminology.dhp.uz definition below
-// (line ~247), which is the one with an actual CodeSystem resource (IhdRiskCategoryCS.fsh).
-// This dhp.uz (no "terminology.") host had no matching resource — SUSHI rejected the redefinition.
 Alias: $ordinal-value = http://hl7.org/fhir/StructureDefinition/ordinalValue
 Alias: $sdc-calculated-expression = http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-calculatedExpression
 Alias: $variable = http://hl7.org/fhir/StructureDefinition/variable
-// $diabetes-risk-category-cs and $breast-cancer-risk-category-cs removed here for the same
-// reason — duplicates of the terminology.dhp.uz definitions below, which have the actual
-// CodeSystem resources (DiabetesRiskCategoryCS.fsh, BreastCancerRiskCategoryCS.fsh).
-Alias: $breast-cancer-risk-assessment-category-cs = https://dhp.uz/fhir/core/CodeSystem/breast-cancer-risk-assessment-category-cs
-Alias: $cervical-risk-category-cs = https://dhp.uz/fhir/core/CodeSystem/cervical-risk-category-cs
 Alias: $child-development-result-cs = https://dhp.uz/fhir/core/CodeSystem/child-development-result-cs
 
 Alias: $composition-att-mode = http://hl7.org/fhir/composition-attestation-mode
@@ -228,9 +219,7 @@ Alias: $service-request-intent = http://hl7.org/fhir/request-intent
 
 Alias: $coverage-kind = http://hl7.org/fhir/coverage-kind
 
-Alias: $cervical-cancer-menstrual-cycle-cs = https://terminology.dhp.uz/fhir/core/CodeSystem/cervical-cancer-menstrual-cycle-cs
 Alias: $diabetes-in-relatives-cs = https://terminology.dhp.uz/fhir/core/CodeSystem/diabetes-in-relatives-cs
 Alias: $fertility-contraception-kind-cs = https://terminology.dhp.uz/fhir/core/CodeSystem/fertility-contraception-kind-cs
 Alias: $fertility-contraception-type-cs = https://terminology.dhp.uz/fhir/core/CodeSystem/fertility-contraception-type-cs
-Alias: $ihd-risk-category-cs = https://terminology.dhp.uz/fhir/core/CodeSystem/ihd-risk-category-cs
 Alias: $oncohematology-result-category-cs = https://terminology.dhp.uz/fhir/core/CodeSystem/oncohematology-result-category-cs
