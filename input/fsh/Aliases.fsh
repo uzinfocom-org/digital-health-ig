@@ -209,7 +209,6 @@ Alias: $fertility-questionnaire-cs = http://terminology.hl7.org/CodeSystem/v2-05
 Alias: $ordinal-value = http://hl7.org/fhir/StructureDefinition/ordinalValue
 Alias: $sdc-calculated-expression = http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-calculatedExpression
 Alias: $variable = http://hl7.org/fhir/StructureDefinition/variable
-Alias: $child-development-result-cs = https://dhp.uz/fhir/core/CodeSystem/child-development-result-cs
 
 Alias: $composition-att-mode = http://hl7.org/fhir/composition-attestation-mode
 Alias: $composition-list-empty-reason = http://terminology.hl7.org/CodeSystem/list-empty-reason
