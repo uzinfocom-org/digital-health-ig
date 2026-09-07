@@ -218,8 +218,3 @@ Alias: $composition-list-order = http://terminology.hl7.org/CodeSystem/list-orde
 Alias: $service-request-intent = http://hl7.org/fhir/request-intent
 
 Alias: $coverage-kind = http://hl7.org/fhir/coverage-kind
-
-Alias: $diabetes-in-relatives-cs = https://terminology.dhp.uz/fhir/core/CodeSystem/diabetes-in-relatives-cs
-Alias: $fertility-contraception-kind-cs = https://terminology.dhp.uz/fhir/core/CodeSystem/fertility-contraception-kind-cs
-Alias: $fertility-contraception-type-cs = https://terminology.dhp.uz/fhir/core/CodeSystem/fertility-contraception-type-cs
-Alias: $oncohematology-result-category-cs = https://terminology.dhp.uz/fhir/core/CodeSystem/oncohematology-result-category-cs
