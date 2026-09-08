@@ -75,8 +75,9 @@ Usage: #example
   * district = "1703217"
   * country = "182"
 * photo
-  * url = "http://example.org/photos/practitioner.jpg"
-  * size = 1024
+  * contentType = #image/png
+  * data = "iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8/x8AAusB9Wl2n1cAAAAASUVORK5CYII="
+  * size = 68
 * qualification
   * code = $qualification-codes#DIP
   * issuer = Reference(example-organization)

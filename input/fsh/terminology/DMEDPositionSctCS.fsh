@@ -1,3 +1,6 @@
+// Uzbek designations for #431488007 have no sourced translation (neither prior version of this
+// file had one) — the value below is an unreviewed placeholder pending native-speaker review,
+// unlike the other nine concepts which use the Uzbek text already confirmed elsewhere.
 CodeSystem: DMEDPositionSctCS
 Id: dmed-position-sct-cs
 Title: "DMED Position SNOMED CodeSystem"

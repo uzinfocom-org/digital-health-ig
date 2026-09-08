@@ -7,7 +7,7 @@
 ### Представление в FHIR
 
 Жизненные показатели в UZ Core **объединяют** три профиля:
-* [UZ Core Observation profile](https://dhp.uz/fhir/core/StructureDefinition/uz-core-observation) - требования, специфичные для Узбекистана
+* [UZ Core Observation profile](StructureDefinition-uz-core-observation.html) - требования, специфичные для Узбекистана
 * [FHIR Vital Signs profile](http://hl7.org/fhir/StructureDefinition/vitalsigns)  - международные стандарты жизненно важных показателей
 * **Профиль конкретного жизненного показателя** (например, [частоты сердечных сокращений](http://hl7.org/fhir/r5/heartrate.html), [артериального давления](http://hl7.org/fhir/r5/bp.html)) - правила для данного типа показателя
 
