@@ -9,7 +9,6 @@ Description: "SNOMED CT procedure codes used in the Uzbekistan Digital Health Pl
 * ^extension[=].valueCanonical = Canonical(ProcedureCodeCS)
 
 * include codes from system $sct where concept is-a #71388002
-* include codes from system placental-separation-method-cs
 
 // * include $sct#33879002
 // * include $sct#20135006

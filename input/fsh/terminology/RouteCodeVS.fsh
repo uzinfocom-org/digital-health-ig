@@ -12,7 +12,6 @@ Description: "Route of administration codes with Uzbek and Russian translations,
 
 // Local codes for the routes SNOMED CT does not cover
 * include codes from system route-codes-cs
-* include codes from system medication-administration-route-form-cs
 
 // * include codes from system $sct
 // * $sct#36673005 "Intradermal injection"
