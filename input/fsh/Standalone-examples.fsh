@@ -454,6 +454,7 @@ Description: "Пример заполненного опросника удов�
 * item[+]
   * linkId = "improvement-suggestions"
   * answer[+].valueString = "Было бы удобно иметь возможность получать напоминания о приёме через SMS."
+
 Instance: specimen-example-blood
 InstanceOf: Specimen
 Usage: #example

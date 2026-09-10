@@ -1,0 +1,5 @@
+CODE,UZ,RU,,,,,,
+routine,Oddiy,Обычный,,http://hl7.org/fhir/request-priority,,,,"SupplementCodeSystemDraft(request-priority-cs, $request-priority, 5.0.0)"
+urgent,Shoshilinch,Срочный,,,,,,
+asap,Imkon qadar tezroq,Как можно скорее,,,,,,
+stat,Zudlik bilan,Немедленно,,,,,,
