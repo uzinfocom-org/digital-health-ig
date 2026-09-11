@@ -4,7 +4,6 @@ Title: "Financing Source Codes"
 Description: "Code system describing the source of financing, in (UZ/RU/EN) languages."
 
 * insert OriginalCodeSystemDraft(financing-source-cs)
-* ^url = "https://terminology.dhp.uz/fhir/core/CodeSystem/financing-source-cs"
 
 * #fnncl-0001-00001 "Xo‘jalik hisobi"
   * ^designation[0].language = #ru

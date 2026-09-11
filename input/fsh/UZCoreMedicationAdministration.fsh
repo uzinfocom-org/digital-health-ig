@@ -3,8 +3,11 @@ Parent: MedicationAdministration
 Id: uz-core-medication-administration
 Title: "UZ Core Medication Administration"
 Description: "Administration of medication to a patient"
+
 * ^experimental = true
-//* ^status = #active
+* ^status = #active
+* ^date = "2026-09-12"
+* ^publisher = "Uzinfocom"
 
 * identifier MS
 * identifier ^short = "Business identifier for this administration event, assigned by the performer or other systems."
@@ -30,7 +33,7 @@ Description: "Administration of medication to a patient"
 * encounter ^short = "Who received the medication."
 * encounter only Reference(UZCoreEncounter)
 
-* occurence[x] 1..1 MS
+* occurence[x] MS
 * occurence[x] only dateTime or Period or Timing
 * occurence[x] ^short = "When the administration took place (or would have)."
 
@@ -39,10 +42,10 @@ Description: "Administration of medication to a patient"
 
 * performer MS
 * performer ^short = "Who or what performed the administration, and their role."
-* performer.function 0..1 MS
+* performer.function MS
 * performer.function ^short = "The type of involvement of this performer (e.g. performer, verifier, witness)."
 * performer.function from MedicationAdministrationPerformerFunctionCodesVS (example)
-* performer.actor 1..1 MS
+* performer.actor MS
 * performer.actor only CodeableReference(UZCorePractitioner or UZCorePractitionerRole or UZCorePatient or UZCoreRelatedPerson or Device)
 * performer.actor ^short = "The specific individual or device that performed the administration."
 
@@ -63,15 +66,15 @@ Description: "Administration of medication to a patient"
 
 * dosage MS
 * dosage ^short = "Dosage details of how the medication was administered. Requires at least one of text, dose, or rate[x]."
-* dosage.dose 0..1 MS
+* dosage.dose MS
 * dosage.dose only SimpleQuantity
 * dosage.dose ^short = "Amount given at one administration event (single/instantaneous doses)."
-* dosage.route 0..1 MS
+* dosage.route MS
 * dosage.route from RouteCodeVS
-* dosage.site 0..1 MS
+* dosage.site MS
 * dosage.site ^short = "Body site administered to"
 * dosage.site from SNOMEDCTAnatomicalStructureAdministrationSitesVS
-* dosage.rate[x] 0..1 MS
+* dosage.rate[x] MS
 * dosage.rate[x] ^short = "Speed of administration per unit of time (infusions)."
 
 * extension contains
