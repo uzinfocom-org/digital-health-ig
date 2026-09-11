@@ -95,7 +95,7 @@ Description: "Example instance of a UZCoreDevice - CT Scanner."
 
 * category = $device-category#dme
 
-* type = $sct#706030006
+* type = $sct#268460000
 
 * owner = Reference(Organization/example-organization)
 
@@ -115,15 +115,15 @@ Description: "Example instance of a UZCoreDevice - CT Scanner."
 * serialNumber = "SN-2023-001456"
 
 * name.value = "STOMATOM Edge"
-* name.type = $device-name-type#registered-name
+* name.type = $device-name-type#registered-name "Ro'yxatdan o'tgan nomi"
 * name.display = true
 
 * modelNumber = "STOMATOM Edge"
 * partNumber = "PART-12345"
 
-* category = $device-category#dme
+* category = $device-category#single-use
 
-* type = $sct#706030006
+* type = $sct#468312002
 
 * owner = Reference(tashkent-diseases-hospital)
 
@@ -136,7 +136,7 @@ Description: "Example instance of a UZCoreDevice - CT Scanner."
 
 * displayName = "KT skaner"
 * status = #active
-* availabilityStatus = #available
+* availabilityStatus = $device-availability-status#available
 * manufacturer = "Siemens Healthineers"
 * manufactureDate = "2023-05-15"
 * expirationDate = "2028-05-15"
@@ -144,43 +144,14 @@ Description: "Example instance of a UZCoreDevice - CT Scanner."
 * serialNumber = "SN-2023-001456"
 
 * name.value = "STOMATOM Edge"
-* name.type = $device-name-type#registered-name "Ro'yxatdan o'tgan nomi"
+* name.type = $device-name-type#user-friendly-name "Foydalanuvchiga qulay nomi"
 * name.display = true
 
 * modelNumber = "STOMATOM Edge"
 * partNumber = "PART-12345"
 
-* category = $device-category#dme "Uzoq muddat foydalaniladigan tibbiy uskuna"
+* category = $device-category#dme "Durable Medical Equipment"
 
-* type = $sct#706030006
-
-* owner = Reference(example-organization)
-
-
-Instance: uz-core-device-example-004
-InstanceOf: UZCoreDevice
-Usage: #example
-Title: "UZ Core Device Example"
-Description: "Example instance of a UZCoreDevice - CT Scanner."
-
-* displayName = "KT skaner"
-* status = #active
-* availabilityStatus = #available
-* manufacturer = "Siemens Healthineers"
-* manufactureDate = "2023-05-15"
-* expirationDate = "2028-05-15"
-* lotNumber = "2023-05"
-* serialNumber = "SN-2023-001456"
-
-* name.value = "STOMATOM Edge"
-* name.type = #registered-name "Ro'yxatdan o'tgan nomi"
-* name.display = true
-
-* modelNumber = "STOMATOM Edge"
-* partNumber = "PART-12345"
-
-* category = #dme "Uzoq muddat foydalaniladigan tibbiy uskuna"
-
-* type = $sct#706030006
+* type = $sct#348649005
 
 * owner = Reference(example-organization)

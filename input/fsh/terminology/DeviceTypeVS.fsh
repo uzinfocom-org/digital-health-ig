@@ -7,4 +7,4 @@ Description: "Value set of device types (intrauterine contraceptive device, cond
 * ^extension[0].url = $valueset-supplement
 * ^extension[=].valueCanonical = Canonical(DeviceTypeCS)
 
-* include codes from system $sct
+* include codes from system device-type-cs

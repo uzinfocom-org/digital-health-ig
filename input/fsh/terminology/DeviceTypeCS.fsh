@@ -3,7 +3,7 @@ Id: device-type-cs
 Title: "Device Type"
 Description: "Type codes for a device (intrauterine contraceptive device, condom, drug-eluting contraceptive implant, contraceptive device), with UZ/RU/EN designations."
 
-* insert SupplementCodeSystemDraft(device-type-cs, $sct, 5.0.0)
+* insert SupplementCodeSystemDraft(device-type-cs, $device-type, 5.0.0)
 
 * #268460000 "Intrauterine contraceptive device"
   * ^designation[+].language = #uz
