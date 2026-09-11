@@ -196,3 +196,51 @@ Description: "Extension to specify a trustee (RelatedPerson or PractitionerRole)
 Context: MedicationRequest
 * ^experimental = true
 * value[x] only Reference(UZCoreRelatedPerson or UZCorePractitionerRole)
+
+Extension: RelatedAllergyIntoleranceMedAdministration
+Id: related-allergy-intolerance
+Title: "Related Allergy Intolerance"
+Description: "A reference to the AllergyIntolerance resource relevant to this medication administration."
+Context: MedicationAdministration
+* ^experimental = true
+* value[x] only Reference(UZCoreAllergyIntolerance)
+
+Extension: LocationMedAdministration
+Id: location
+Title: "Location"
+Description: "A reference to the Organization representing the location where the medication administration occurred."
+Context: MedicationAdministration
+* ^experimental = true
+* value[x] only Reference(UZCoreOrganization)
+
+Extension: MedicationSource
+Id: medication-source
+Title: "Medication Source"
+Description: "A complex extension capturing financing and supply-tracking details about a medication administration, including financing source, invoice, lot number, expiration, and remaining quantity."
+Context: MedicationAdministration
+* extension contains
+    financingSource 1..1 MS and
+    invoiceNumber 0..1 MS and
+    lotNumber 0..1 MS and
+    expirationDate 0..1 MS and
+    remainingQuantity 0..1 MS
+
+* extension[financingSource].value[x] only CodeableConcept
+* extension[financingSource].value[x] 1..1
+* extension[financingSource].valueCodeableConcept from FinancingSourceVS (required)
+
+* extension[invoiceNumber] ^short = "'№ накладной' — delivery/invoice number this batch was received under."
+* extension[invoiceNumber].value[x] 0..1
+* extension[invoiceNumber].value[x] only Identifier or string
+
+* extension[lotNumber] ^short = "'Серия' — batch/lot number of the dispensed item. Auto-populated, read-only, not manually entered."
+* extension[lotNumber].value[x] 0..1
+* extension[lotNumber].value[x] only string
+
+* extension[expirationDate] ^short = "'Срок годности' — auto-populated from the database based on the selected financingSource. Read-only, not manually entered or editable."
+* extension[expirationDate].value[x] 0..1
+* extension[expirationDate].value[x] only Period
+
+* extension[remainingQuantity] ^short = "'Остаток' — auto-populated from live inventory in the database based on the selected financingSource. Read-only, system-calculated; not manually entered or editable. Reflects stock at time of selection."
+* extension[remainingQuantity].value[x] 0..1
+* extension[remainingQuantity].value[x] only SimpleQuantity
