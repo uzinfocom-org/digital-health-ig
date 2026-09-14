@@ -218,6 +218,8 @@ Id: medication-source
 Title: "Medication Source"
 Description: "A complex extension capturing financing and supply-tracking details about a medication administration, including financing source, invoice, lot number, expiration, and remaining quantity."
 Context: MedicationAdministration
+* ^experimental = true
+
 * extension contains
     financingSource 1..1 MS and
     invoiceNumber 0..1 MS and

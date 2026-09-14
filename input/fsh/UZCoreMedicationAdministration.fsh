@@ -115,5 +115,6 @@ Description: "Example instance of a completed Paracetamol administration for Pat
 * dosage.route = $sct#26643006 "Oral route"
 * dosage.site = $sct#368208006 "Left upper arm structure"
 
+* extension[location].valueReference = Reference(example-organization)
 * extension[relatedAllergyIntolerance].valueReference = Reference(example-grass-pollen-allergy)
 * extension[medicationSource].extension[financingSource].valueCodeableConcept = FinancingSourceCS#fnncl-0001-00004 "Budget"
