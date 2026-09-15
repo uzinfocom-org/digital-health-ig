@@ -126,7 +126,6 @@ Alias: $registrationCertificateID = https://uzpharminfo.uz/registration_number
 Alias: $sample-security-structural-codes = http://hl7.org/fhir/sample-security-structural-roles
 Alias: $sct = http://snomed.info/sct
 Alias: $sct-vs = http://snomed.info/sct?fhir_vs
-Alias: $sdc-calculated-expression = http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-calculatedExpression
 Alias: $security-source-type = http://terminology.hl7.org/CodeSystem/security-source-type
 Alias: $socieeconomic-observation = https://dhp.uz/fhir/core/StructureDefinition/uz-core-socioeconomic-observation
 Alias: $specialization = https://dhp.uz/fhir/core/CodeSystem/specialization
@@ -207,7 +206,6 @@ Alias: $currencies-vs = http://hl7.org/fhir/ValueSet/currencies
 Alias: $permitted-data-type = http://hl7.org/fhir/permitted-data-type
 Alias: $fertility-questionnaire-cs = http://terminology.hl7.org/CodeSystem/v2-0532
 Alias: $ordinal-value = http://hl7.org/fhir/StructureDefinition/ordinalValue
-Alias: $sdc-calculated-expression = http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-calculatedExpression
 Alias: $variable = http://hl7.org/fhir/StructureDefinition/variable
 
 Alias: $composition-att-mode = http://hl7.org/fhir/composition-attestation-mode
