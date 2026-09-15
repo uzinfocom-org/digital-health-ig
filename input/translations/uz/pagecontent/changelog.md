@@ -1,5 +1,9 @@
 ### Ishlab chiqilmoqda
 
+(Hozircha o'zgarishlar yo'q)
+
+### Versiya 0.9.0
+
 #### Qo'shildi
 
 Bemorga dori vositalarini tayinlash uchun [UZ Core MedicationRequest](StructureDefinition-uz-core-medicationrequest.html) profili qo'shildi; u bemor nomidan dori vositasini olishga vakolatli qarindosh (RelatedPerson) yoki patronaj hamshirasini (PractitionerRole) ko'rsatuvchi [ishonchli shaxs kengaytmasi](StructureDefinition-trustee.html) ga ega. U bilan birga [holat](ValueSet-medicationrequest-status-vs.html), [holat sababi](ValueSet-medicationrequest-status-reason-vs.html), [niyat](ValueSet-medicationrequest-intent-vs.html) va [kategoriya](ValueSet-medicationrequest-admin-location-vs.html) terminologiyasi - kategoriyaga milliy [reimbursatsiya buyurtmasi](CodeSystem-medication-request-order-type-cs.html) kodi qo'shilgan - hamda qabul qilish tartibi uchun [hafta kunlari](ValueSet-days-of-week-vs.html), [hodisa vaqti](ValueSet-event-timing-vs.html) va [qabul qilish tartibi qisqartmalari](ValueSet-timing-abbreviation-vs.html) terminologiyasi qo'shildi; ularning barchasi o'zbekcha va ruscha belgilanishlarga ega.

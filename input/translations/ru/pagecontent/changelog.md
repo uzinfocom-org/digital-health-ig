@@ -1,5 +1,9 @@
 ### В разработке
 
+(Пока без изменений)
+
+### Версия 0.9.0
+
 #### Добавлено
 
 Добавлен профиль [UZ Core MedicationRequest](StructureDefinition-uz-core-medicationrequest.html) для назначения лекарственных средств, с [расширением доверенного лица](StructureDefinition-trustee.html), указывающим родственника (RelatedPerson) или патронажную медсестру (PractitionerRole), уполномоченных получить лекарственное средство от имени пациента. Вместе с ним добавлена терминология [статуса](ValueSet-medicationrequest-status-vs.html), [причины статуса](ValueSet-medicationrequest-status-reason-vs.html), [намерения](ValueSet-medicationrequest-intent-vs.html) и [категории](ValueSet-medicationrequest-admin-location-vs.html) - категория дополнена национальным кодом [реимбурсационного заказа](CodeSystem-medication-request-order-type-cs.html), - а для режима приёма терминология [дней недели](ValueSet-days-of-week-vs.html), [времени события](ValueSet-event-timing-vs.html) и [сокращений режима приёма](ValueSet-timing-abbreviation-vs.html), вся с узбекскими и русскими обозначениями.
