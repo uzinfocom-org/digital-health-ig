@@ -8,6 +8,8 @@
 
 [ICCC-3 kod tizimi](CodeSystem-iccc-3-cs.html) DHP kanonik URL manzili `https://terminology.dhp.uz/fhir/core/CodeSystem/iccc-3-cs` dan `http://terminology.hl7.org/CodeSystem/iccc-3` ga ko'chirildi - bu IARC tasnifi uchun HL7 Terminology kanonik URL manzili (uni HL7 Europe PanCareSurPass qo'llanmasi ishlatadi), chunki tasnif DHP ga emas, IARC ga tegishli. [Qiymatlar to'plami](ValueSet-iccc-3-vs.html) o'z URL manzilini saqlab qoladi.
 
+[UZ Core Claim](StructureDefinition-uz-core-claim.html) dagi `prescription` endi istalgan MedicationRequest ga emas, balki [UZ Core MedicationRequest](StructureDefinition-uz-core-medicationrequest.html) ga ishora qiladi, 0.8.0 da e'lon qilinganidek.
+
 #### Buzuvchi o'zgarishlar
 
 UZ Core VaccinationActivityDefinition profili [UZ Core ActivityDefinition](StructureDefinition-uz-core-activitydefinition.html) deb qayta nomlandi va uning kanonik URL manzili `.../uz-core-vaccination-activity-definition` dan `.../uz-core-activitydefinition` ga o‘zgartirildi. Eski kanonik URL manzilidan foydalanayotgan tizimlarda tegishli havolani yangilash kerak.

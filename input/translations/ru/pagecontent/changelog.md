@@ -8,6 +8,8 @@
 
 [Система кодов ICCC-3](CodeSystem-iccc-3-cs.html) перенесена с канонического URL DHP `https://terminology.dhp.uz/fhir/core/CodeSystem/iccc-3-cs` на `http://terminology.hl7.org/CodeSystem/iccc-3` - канонический URL HL7 Terminology для этой классификации IARC (его использует руководство HL7 Europe PanCareSurPass), поскольку классификация принадлежит IARC, а не DHP. [Набор значений](ValueSet-iccc-3-vs.html) сохраняет свой URL.
 
+`prescription` в [UZ Core Claim](StructureDefinition-uz-core-claim.html) теперь ссылается на [UZ Core MedicationRequest](StructureDefinition-uz-core-medicationrequest.html), а не на любой MedicationRequest, как было объявлено в 0.8.0.
+
 #### Несовместимые изменения
 
 Профиль UZ Core VaccinationActivityDefinition переименован в [UZ Core ActivityDefinition](StructureDefinition-uz-core-activitydefinition.html), а его канонический URL изменён с `.../uz-core-vaccination-activity-definition` на `.../uz-core-activitydefinition`. Реализациям, использующим старый канонический URL, необходимо обновить ссылку.

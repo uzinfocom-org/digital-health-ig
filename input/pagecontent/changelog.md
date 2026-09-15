@@ -8,6 +8,8 @@ Added the [International Classification of Diseases for Oncology, 3rd edition, 2
 
 The [ICCC-3 CodeSystem](CodeSystem-iccc-3-cs.html) has moved from the DHP canonical `https://terminology.dhp.uz/fhir/core/CodeSystem/iccc-3-cs` to `http://terminology.hl7.org/CodeSystem/iccc-3`, the HL7 Terminology canonical for the IARC classification (the one the HL7 Europe PanCareSurPass IG uses), since the classification is IARC's rather than DHP's. The [value set](ValueSet-iccc-3-vs.html) keeps its URL.
 
+`prescription` on [UZ Core Claim](StructureDefinition-uz-core-claim.html) now references [UZ Core MedicationRequest](StructureDefinition-uz-core-medicationrequest.html) rather than any MedicationRequest, as announced in 0.8.0.
+
 #### Breaking changes
 
 The UZ Core VaccinationActivityDefinition profile has been renamed to [UZ Core ActivityDefinition](StructureDefinition-uz-core-activitydefinition.html) and its canonical URL changed from `.../uz-core-vaccination-activity-definition` to `.../uz-core-activitydefinition`. Implementers referencing the old canonical must update it.
