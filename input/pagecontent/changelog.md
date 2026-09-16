@@ -2,6 +2,12 @@
 
 (No changes yet)
 
+### Version 0.9.1
+
+#### Changed
+
+[ICD-O-3.2](CodeSystem-icd-o-3.html) declared its version as `3.2`; it now declares `3.2.0`, which is the release identifier validators expect. Codings that pin the version have to move from `http://terminology.hl7.org/CodeSystem/icd-o-3|3.2` to `|3.2.0`.
+
 ### Version 0.9.0
 
 #### Added
