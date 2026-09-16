@@ -1,0 +1,22 @@
+name: Check artifact versions
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+
+jobs:
+  versions:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v7
+
+      - name: Install Sushi
+        run: sudo npm install -g fsh-sushi
+
+      - name: Generate resources
+        run: sushi .
+
+      - name: Check every artifact version is MAJOR.MINOR.PATCH
+        run: python3 .github/scripts/check_artifact_versions.py
