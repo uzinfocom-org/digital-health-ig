@@ -2,6 +2,12 @@
 
 (No changes yet)
 
+### Version 0.9.2
+
+#### Changed
+
+The package is now built as a publication build. Since 0.2.0 its `package.json` carried `notForPublication` and a `file://` url, so [packages2.fhir.org](https://packages2.fhir.org/packages/uz.dhp.core) rejected every version from 0.6.0 on, and guides depending on UZ Core linked to its artifacts through `file://` paths. The package now declares `https://dhp.uz/fhir/core`. Content is unchanged from 0.9.1.
+
 ### Version 0.9.1
 
 #### Changed

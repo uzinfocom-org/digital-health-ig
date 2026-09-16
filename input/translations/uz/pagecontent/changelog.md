@@ -2,6 +2,12 @@
 
 (Hozircha o'zgarishlar yo'q)
 
+### Versiya 0.9.2
+
+#### O'zgartirildi
+
+Paket endi nashr yig'ilishi sifatida yig'iladi. 0.2.0 dan beri uning `package.json` fayli `notForPublication` belgisi va `file://` URL manzilini o'z ichiga olardi, shuning uchun [packages2.fhir.org](https://packages2.fhir.org/packages/uz.dhp.core) 0.6.0 dan boshlab barcha versiyalarni rad etardi, UZ Core ga bog'liq qo'llanmalar esa uning artefaktlariga `file://` yo'llari orqali havola qilardi. Endi paket `https://dhp.uz/fhir/core` ni e'lon qiladi. Tarkib 0.9.1 ga nisbatan o'zgarmagan.
+
 ### Versiya 0.9.1
 
 #### O'zgartirildi
