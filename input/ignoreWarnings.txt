@@ -58,3 +58,9 @@ A definition for CodeSystem 'http://example.org/fhir/CodeSystem/lab-report-type'
 # generated package. The remote terminology server cannot retrieve an unpublished
 # local supplement while validating the IG build.
 Required supplement not found: https://terminology.dhp.uz/fhir/core/CodeSystem/condition-severity-cs|2026.1.0
+
+# IG Publisher generates an inline <script> for the artifacts-table page's column
+# filters, then flags that same script as illegal on the HL7 ci-build - a known
+# publisher bug (already suppressed the same way in uz.dhp.integrations). Appears
+# once per language (en/ru/uz); the leading % matches all three by prefix.
+The <script> containing the javascript 'document.addEventLis%
