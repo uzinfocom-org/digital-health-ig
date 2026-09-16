@@ -22,16 +22,6 @@ Description: "Extension to differentiate the diagnosis type, which is different 
 * value[x] only CodeableConcept
 * value[x] from DiagnosisTypeVS (required)
 
-Extension: PrimaryProcedure
-Id: primary-procedure
-Title: "Primary procedure flag"
-Description: "Marks whether this Procedure is the primary/main procedure performed during the encounter, as distinct from secondary or supporting procedures recorded for the same encounter. Not encoded via Procedure.category, since that element describes the kind of procedure (e.g. surgical vs. diagnostic), not its precedence among several procedures."
-* ^context.type = #element
-* ^context.expression = "Procedure"
-* ^experimental = true
-* value[x] 1..
-* value[x] only boolean
-
 
 Invariant: uzcore-gender-other-1
 Description: "The differentiation of the gender indication 'other' may only be filled if the gender 'other' is specified (for use in an extension)"
