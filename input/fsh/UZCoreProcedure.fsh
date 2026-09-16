@@ -12,8 +12,9 @@ Description: "Uzbekistan Core Procedure Profile, used for documenting an action 
 * basedOn MS
 * partOf MS
 * status MS
-* category MS 
+* category MS
 * code MS
+* extension contains PrimaryProcedure named primaryProcedure 0..1 MS
 * subject MS
 * encounter MS
 * occurrence[x] MS

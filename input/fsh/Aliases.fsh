@@ -90,6 +90,7 @@ Alias: $observation-methods = http://hl7.org/fhir/ValueSet/observation-methods
 Alias: $observation-referencerange-normalvalue = http://hl7.org/fhir/observation-referencerange-normalvalue
 Alias: $observation-status = http://hl7.org/fhir/observation-status
 Alias: $organization-argos-id-system = https://dhp.uz/fhir/core/sid/org/uz/argos
+Alias: $organization-code-system = https://dhp.uz/fhir/core/sid/uz/organization-code
 Alias: $organization-moh-id-system = https://dhp.uz/fhir/core/sid/org/uz/moh
 Alias: $organization-dhp-id-system = https://dhp.uz/fhir/core/sid/org/uz/dhp
 Alias: $organization-shif-id-system = https://dhp.uz/fhir/core/sid/org/uz/shif
