@@ -2,6 +2,12 @@
 
 (Hozircha o'zgarishlar yo'q)
 
+### Versiya 0.9.1
+
+#### O'zgartirildi
+
+[ICD-O-3.2](CodeSystem-icd-o-3.html) versiyasini `3.2` deb e'lon qilardi; endi u validatorlar kutadigan nashr identifikatori `3.2.0` ni e'lon qiladi. Versiyani qat'iy ko'rsatadigan kodlashlarni `http://terminology.hl7.org/CodeSystem/icd-o-3|3.2` dan `|3.2.0` ga o'tkazish kerak.
+
 ### Versiya 0.9.0
 
 #### Qo'shildi
