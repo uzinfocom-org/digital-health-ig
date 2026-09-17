@@ -4,6 +4,8 @@ Title: "Observation codes"
 Description: "Codes for observations, allowing use of LOINC, local laboratory codes, and SNOMED CT as appropriate for the context"
 * ^url = "https://terminology.dhp.uz/fhir/core/ValueSet/observation-codes-vs"
 * ^experimental = true
+* ^extension[0].url = $valueset-supplement
+* ^extension[=].valueCanonical = $loinc-supplement-uz
 
 * include codes from system lab-pan-cs
 * include codes from system $loinc
