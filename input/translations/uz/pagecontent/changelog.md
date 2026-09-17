@@ -2,6 +2,16 @@
 
 (Hozircha o'zgarishlar yo'q)
 
+### Versiya 0.9.3
+
+#### Qo'shildi
+
+Kattalar uchun geriatriya uchun `organizational-specialization-cs#176.0`, "Vaqf" xayriya jamg'armasi uchun `coverage-type-cs#covtp-0001-00014` va poliklinikadan yo'llanma uchun `admit-source-local-cs#mserv-0006-00007` qo'shildi - bular 066-shaklni jonli DMED tizimi bilan solishtirilganda topilgan bo'shliqlar. [Provenance Participation Role Type](ValueSet-provenance-participation-role-type-vs.html) ro'yxati endi `attester` kodini o'z ichiga oladi. [UZ Core Organization](StructureDefinition-uz-core-organization.html) 066-shakl va shunga o'xshash SSV statistik shakllarida ishlatiladigan statistik hisobot kodi uchun `organizationCode` identifikator slaysiga ega bo'ldi.
+
+#### O'zgartirildi
+
+[UZ Core Provenance](StructureDefinition-uz-core-provenance.html)dagi `target` endi `Bundle`ni ham qabul qiladi, chunki butun FHIR hujjatini imzolash (066-shakl qiladigan ishi kabi) uchun ilgari to'g'ri maqsad turi mavjud emas edi.
+
 ### Versiya 0.9.2
 
 #### O'zgartirildi
