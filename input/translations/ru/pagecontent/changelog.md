@@ -1,12 +1,8 @@
 ### В разработке
 
-(Пока без изменений)
-
-### Версия 0.9.3
-
 #### Добавлено
 
-Добавлены `organizational-specialization-cs#176.0` для гериатрии взрослых, `coverage-type-cs#covtp-0001-00014` для благотворительного фонда «Вакф» и `admit-source-local-cs#mserv-0006-00007` для направления из поликлиники — пробелы, найденные при сверке формы 066 с живой системой DMED. Список [Provenance Participation Role Type](ValueSet-provenance-participation-role-type-vs.html) теперь включает `attester`. [UZ Core Organization](StructureDefinition-uz-core-organization.html) получил слайс идентификатора `organizationCode` для статистического кода учреждения, используемого в форме 066 и аналогичных статистических формах Минздрава.
+Добавлены `organizational-specialization-cs#176.0` для гериатрии взрослых, `coverage-type-cs#covtp-0001-00014` для благотворительного фонда «Вакф» и `admit-source-local-cs#mserv-0006-00007` для направления из поликлиники — пробелы, найденные при сверке формы 066 с живой системой DMED. Список [Provenance Participation Role Type](ValueSet-provenance-participation-role-type-vs.html) теперь включает `attester`.
 
 #### Изменено
 
