@@ -1099,10 +1099,24 @@
           "value": "Children's intensive care"
         }
       ]
+    },
+    {
+      "code": "176.0",
+      "display": "Kattalar uchun geriatriya",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Гериатрия для взрослых"
+        },
+        {
+          "language": "en",
+          "value": "Geriatrics for adults"
+        }
+      ]
     }
   ],
   "experimental": true,
   "language": "uz",
   "caseSensitive": true,
-  "count": 78
+  "count": 79
 }

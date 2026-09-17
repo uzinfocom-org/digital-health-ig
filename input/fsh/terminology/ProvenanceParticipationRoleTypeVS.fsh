@@ -9,3 +9,4 @@ Description: "Defines how the participant participated in Uzbek and Russian"
 
 * include $provenance-participant-type#legal
 * include $provenance-participant-type#author
+* include $provenance-participant-type#attester

@@ -39,3 +39,9 @@ Description: "Local admit source codes with Uzbek, English, and Russian translat
   * ^designation[=].value = "For examination"
   * ^designation[+].language = #ru
   * ^designation[=].value = "На экспертизу"
+
+* #mserv-0006-00007 "Poliklinika yo'llanmasi bilan"
+  * ^designation[0].language = #en
+  * ^designation[=].value = "Referred by polyclinic"
+  * ^designation[+].language = #ru
+  * ^designation[=].value = "По направлению поликлиники"

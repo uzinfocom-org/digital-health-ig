@@ -12,7 +12,7 @@ Description: "Uzbekistan Core Procedure Profile, used for documenting an action 
 * basedOn MS
 * partOf MS
 * status MS
-* category MS 
+* category MS
 * code MS
 * subject MS
 * encounter MS
