@@ -10,7 +10,7 @@ Description: "Uzbekistan Core Provenance profile, used to digitally sign documen
 
 * target and occurredDateTime and activity and patient and agent and entity and signature MS
 
-* target only Reference(UZCoreMedication or DocumentReference or Bundle)
+* target only Reference(UZCoreMedication or UZCoreMedicationRequest or DocumentReference or Bundle)
 * activity from ProvenanceActivityTypesVS (required)
 * agent
   * type and who MS
