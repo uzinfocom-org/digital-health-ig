@@ -21,7 +21,7 @@ Description: "Uzbekistan Core Organization profile, used to define healthcare or
 * identifier ^slicing.rules = #open
 * identifier ^slicing.description = "Ways an organization can be categorized"
 * identifier ^slicing.ordered = false
-* identifier contains taxId 0..1 MS and argosId 0..1 MS and shifId 0..1 MS and mohId 0..1 MS and dhpId 0..1 MS and organizationCode 0..1 MS
+* identifier contains taxId 0..1 MS and argosId 0..1 MS and shifId 0..1 MS and mohId 0..1 MS and dhpId 0..1 MS
 
 * insert TaxIdentifier
 * insert MohIdentifier
@@ -30,15 +30,6 @@ Description: "Uzbekistan Core Organization profile, used to define healthcare or
 * identifier[argosId]
   * system 1..1 MS
   * system = $organization-argos-id-system
-  * type 1..1 MS
-  * type = $identifier-type#XX "Organization Identifier"
-  * use = #official
-  * value 1..1 MS
-
-* identifier[organizationCode]
-  * ^short = "Statistical reporting code used to identify the organization on Form 066 and other MoH statistical forms"
-  * system 1..1 MS
-  * system = $organization-code-system
   * type 1..1 MS
   * type = $identifier-type#XX "Organization Identifier"
   * use = #official

@@ -59,26 +59,6 @@ Usage: #definition
 * uniqueId[=].preferred = true
 * uniqueId[=].comment = "This is the canonical URI for the Uzbekistan Digital Health Platform organization identifier system"
 
-Instance: uzb-organization-code
-InstanceOf: NamingSystem
-Description: "Statistical reporting codes assigned to healthcare organizations, used to identify the organization on Form 066 and other MoH statistical forms"
-Usage: #definition
-* url = "https://terminology.dhp.uz/fhir/core/NamingSystem/uzb-organization-code"
-* name = "UzbekistanOrganizationCodeSystem"
-* status = #active
-* kind = #identifier
-* publisher = "Uzinfocom"
-* responsible = "Ministry of Health of the Republic of Uzbekistan"
-* date = "2026-09-16"
-* type = $identifier-type#XX "Organization identifier"
-* description = "Naming system for the statistical reporting code used to identify a healthcare organization on Form 066 and other Ministry of Health statistical forms. Distinct from the DHP-, MOH-, SHIF-, and tax-issued organization identifiers."
-* jurisdiction = urn:iso:std:iso:3166#UZ "Uzbekistan"
-* usage = "Used as Identifier.system for the organization-code identifier slice on UZCoreOrganization when populating Form 066 and other statistical forms."
-* uniqueId[0].type = #uri
-* uniqueId[=].value = $organization-code-system
-* uniqueId[=].preferred = true
-* uniqueId[=].comment = "This is the canonical URI for the Form 066 / MoH statistical organization code system"
-
 Instance: uzb-shif
 InstanceOf: NamingSystem
 Description: "Organization identifiers assigned by the State Health Insurance Fund (SHIF) of Uzbekistan"
