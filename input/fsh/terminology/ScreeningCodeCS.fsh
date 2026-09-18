@@ -104,3 +104,20 @@ Description: "Category of the requested healthcare service, including screening 
   * ^designation[=].value = "Скрининг по раку молочной железы"
   * ^designation[+].language = #en
   * ^designation[=].value = "Breast Cancer Screening"
+  * #mserv-0007-00021 "RSNPMTSOIR filiali yo'llanmasi"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Направление в филиал РСНПМЦОиР"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Referral to a branch of the Republican Specialized Scientific and Practical Medical Center of Oncology and Radiology"
+
+* #mserv-0007-00022 "RSNPMTZMIR filiali yo'llanmasi"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Направление в филиал РСНПМЦЗМиР"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Referral to a branch of the Republican Specialized Scientific and Practical Medical Center of Hematology and Transfusion"
+
+* #mserv-0007-00023 "Skriningga taklifnoma"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Приглашение на скрининг"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Screening Invitation"
