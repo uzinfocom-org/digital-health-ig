@@ -1,0 +1,14 @@
+CODE,EN,UZ,RU,,
+#108252007 ,Laboratory procedure,Laboratoriya muolajasi,Лабораторные исследования,,https://dhp.uz/fhir/core/en/ValueSet-service-request-categories-vs.html
+#363679005 ,Imaging (procedure),Rasmlash muolajasi,Инструментальная диагностика,,
+#165197003,Diagnostic assessment,Diagnostik baholash,Диагностическая оценка,,
+#387713003 ,Surgical procedure,Jarrohlik muolajasi,Операции,,"SupplementCodeSystemDraft(sr-sct-category-cs, $sct, 2026.1.0)"
+#91251008 ,Physiotherapy procedure,Fizioterapiya muolajasi,Физиотерапия,,
+#277132007 ,Therapeutic procedure,Terapevtik muolaja,"Инъекции, перевязки",,
+#371883000 ,Outpatient procedure,Ambulatoriya muolajasi,Амбулаторные процедуры,,
+#11429006 ,Consultation,Konsultatsiya,Консультации,,
+#32485007,"""Admission to hospital"" ",Kasalxonaga yotqizish,Госпитализация,,
+#52052004 ,Rehabilitation therapy,Reabilitatsiya terapiyasi,Реабилитация,,
+#448337001 ,Telemedicine consultation,Teletibbiyot bo'yicha konsultatsiya,Телемедицина,,
+#20135006 ,Screening procedure,Skrining tekshiruvi,Скрининг,,
+#25179006 ,Whole blood unit collection,Qon berish,Сдача цельной крови,,
