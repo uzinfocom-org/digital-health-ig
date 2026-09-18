@@ -14,3 +14,7 @@ Description: "Encounter discharge disposition codes with English and Russian tra
 // * include encounter-discharge-disposition-home-cs#mserv-0004-00001
 // * include encounter-discharge-disposition-home-cs#mserv-0004-00002
 * include codes from system encounter-discharge-disposition-home-cs
+// Dispensary observation is closed through a discharge disposition, so the
+// dispensary deregistration reasons are members of this value set too.
+* include codes from system dispensary-deregistration-reason-cs
+
