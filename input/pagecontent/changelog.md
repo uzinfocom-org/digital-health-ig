@@ -4,9 +4,13 @@
 
 Added `organizational-specialization-cs#176.0` for adult geriatrics, `coverage-type-cs#covtp-0001-00014` for the Vaqf charitable fund, and `admit-source-local-cs#mserv-0006-00007` for a polyclinic referral - gaps found auditing Form 066 against the live DMED system. The [Provenance Participation Role Type value set](ValueSet-provenance-participation-role-type-vs.html) now includes `attester`.
 
+Added [UZ Core MedicationAdministration](StructureDefinition-uz-core-medication-administration.html) for recording a medication dose administered to a patient by healthcare personnel, including references to the Core medication request, encounter and performer profiles.
+
 #### Changed
 
-`target` on [UZ Core Provenance](StructureDefinition-uz-core-provenance.html) now also accepts `Bundle`, since signing a whole FHIR document (as Form 066 does) previously had no valid target type.
+`target` on [UZ Core Provenance](StructureDefinition-uz-core-provenance.html) now also accepts `Bundle` and `UZCoreMedicationRequest`, supporting both whole-document and electronic prescription signatures.
+
+Temporarily stopped declaring the packaged ATC translation supplement on `MedicationClassificationVS`. The supplement remains part of the package, but Publisher 2.3.4 otherwise rejects valid ATC and INN codes in required bindings; this follows the existing validator workaround used by `PositionAndProfessionVS`.
 
 ### Version 0.9.2
 

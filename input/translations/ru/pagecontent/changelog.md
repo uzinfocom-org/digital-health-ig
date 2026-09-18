@@ -4,9 +4,13 @@
 
 Добавлены `organizational-specialization-cs#176.0` для гериатрии взрослых, `coverage-type-cs#covtp-0001-00014` для благотворительного фонда «Вакф» и `admit-source-local-cs#mserv-0006-00007` для направления из поликлиники — пробелы, найденные при сверке формы 066 с живой системой DMED. Список [Provenance Participation Role Type](ValueSet-provenance-participation-role-type-vs.html) теперь включает `attester`.
 
+Добавлен [UZ Core MedicationAdministration](StructureDefinition-uz-core-medication-administration.html) для регистрации дозы лекарственного средства, введённой пациенту медицинским работником, со ссылками на профили назначения, обращения и исполнителя из Core.
+
 #### Изменено
 
-`target` в [UZ Core Provenance](StructureDefinition-uz-core-provenance.html) теперь также принимает `Bundle`, поскольку для подписи целого FHIR-документа (как в форме 066) ранее не было допустимого типа цели.
+`target` в [UZ Core Provenance](StructureDefinition-uz-core-provenance.html) теперь также принимает `Bundle` и `UZCoreMedicationRequest`, поддерживая подпись как целого документа, так и электронного рецепта.
+
+В `MedicationClassificationVS` временно отключено объявление упакованного supplement перевода ATC. Сам supplement остаётся в пакете, однако Publisher 2.3.4 иначе отклоняет корректные коды ATC и INN при обязательном binding; применён тот же workaround валидатора, который уже используется в `PositionAndProfessionVS`.
 
 ### Версия 0.9.2
 
