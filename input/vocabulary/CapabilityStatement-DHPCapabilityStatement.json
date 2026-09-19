@@ -1,5 +1,5 @@
 {
-  "date": "2026-08-25T06:55:03+00:00",
+  "date": "2026-09-19T10:36:18+00:00",
   "fhirVersion": "5.0.0",
   "format": [
     "application/fhir+json",
@@ -56,8 +56,16 @@
           ],
           "operation": [
             {
+              "definition": "https://dhp.uz/fhir/core/OperationDefinition/patient-attach",
+              "name": "attach"
+            },
+            {
               "definition": "https://dhp.uz/fhir/core/OperationDefinition/patient-populate",
               "name": "populate"
+            },
+            {
+              "definition": "https://dhp.uz/fhir/core/OperationDefinition/patient-relate",
+              "name": "relate"
             }
           ],
           "searchParam": [
@@ -367,22 +375,7 @@
             {
               "name": "_revinclude:iterate",
               "type": "special"
-            },
-            {
-              "name": "address-postalcode",
-              "type": "string"
-            },
-            {
-              "name": "partof",
-              "type": "reference"
-            },
-            {
-              "name": "phonetic",
-              "type": "string"
             }
-          ],
-          "supportedProfile": [
-            "https://dhp.uz/fhir/core/StructureDefinition/uz-core-organization"
           ],
           "type": "Organization"
         },
@@ -565,219 +558,9 @@
             {
               "name": "_revinclude:iterate",
               "type": "special"
-            },
-            {
-              "name": "address-postalcode",
-              "type": "string"
-            },
-            {
-              "name": "phonetic",
-              "type": "string"
-            },
-            {
-              "name": "qualification-code",
-              "type": "token"
             }
-          ],
-          "supportedProfile": [
-            "https://dhp.uz/fhir/core/StructureDefinition/uz-core-practitioner"
           ],
           "type": "Practitioner"
-        },
-        {
-          "conditionalCreate": false,
-          "conditionalDelete": "not-supported",
-          "conditionalPatch": false,
-          "conditionalRead": "not-supported",
-          "conditionalUpdate": false,
-          "interaction": [
-            {
-              "code": "create"
-            },
-            {
-              "code": "delete"
-            },
-            {
-              "code": "history-instance"
-            },
-            {
-              "code": "read"
-            },
-            {
-              "code": "search-type"
-            },
-            {
-              "code": "update"
-            },
-            {
-              "code": "vread"
-            }
-          ],
-          "operation": [
-            {
-              "definition": "https://dhp.uz/fhir/core/OperationDefinition/person-populate",
-              "name": "populate"
-            }
-          ],
-          "searchParam": [
-            {
-              "documentation": "expression: (Person.deceased.ofType(dateTime))\nsubtype: dateTime",
-              "name": "death-date",
-              "type": "date"
-            },
-            {
-              "documentation": "expression: Person.address.city",
-              "name": "address-city",
-              "type": "string"
-            },
-            {
-              "documentation": "expression: Person.address.city |\n\t\t\tPerson.address.country |\n\t\t\tPerson.address.postalCode |\n\t\t\tPerson.address.state |\n\t\t\tPerson.address.line |\n\t\t\tPerson.address.district |\n\t\t\tPerson.address.text",
-              "name": "address",
-              "type": "string"
-            },
-            {
-              "documentation": "expression: Person.address.country",
-              "name": "address-country",
-              "type": "string"
-            },
-            {
-              "documentation": "expression: Person.address.postalCode",
-              "name": "address-postalcode",
-              "type": "string"
-            },
-            {
-              "documentation": "expression: Person.address.state",
-              "name": "address-state",
-              "type": "string"
-            },
-            {
-              "documentation": "expression: Person.address.use\nsubtype: code",
-              "name": "address-use",
-              "type": "token"
-            },
-            {
-              "documentation": "expression: Person.birthDate\nsubtype: date",
-              "name": "birthdate",
-              "type": "date"
-            },
-            {
-              "documentation": "expression: Person.deceased.exists() and Person.deceased != false\nsubtype: boolean",
-              "name": "deceased",
-              "type": "token"
-            },
-            {
-              "documentation": "expression: Person.gender\nsubtype: code",
-              "name": "gender",
-              "type": "token"
-            },
-            {
-              "documentation": "expression: Person.identifier\nsubtype: Identifier",
-              "name": "identifier",
-              "type": "token"
-            },
-            {
-              "documentation": "expression: Person.link.target",
-              "name": "link",
-              "type": "reference"
-            },
-            {
-              "documentation": "expression: Person.managingOrganization",
-              "name": "organization",
-              "type": "reference"
-            },
-            {
-              "documentation": "expression: Person.name.family",
-              "name": "family",
-              "type": "string"
-            },
-            {
-              "documentation": "expression: Person.name.given",
-              "name": "given",
-              "type": "string"
-            },
-            {
-              "documentation": "expression: Person.name.given |\n\t\t\tPerson.name.family |\n\t\t\tPerson.name.prefix |\n\t\t\tPerson.name.suffix |\n\t\t\tPerson.name.text",
-              "name": "name",
-              "type": "string"
-            },
-            {
-              "documentation": "expression: Person.telecom\nsubtype: ContactPoint",
-              "name": "telecom",
-              "type": "token"
-            },
-            {
-              "documentation": "expression: Person.telecom.where(system='email')\nsubtype: ContactPoint",
-              "name": "email",
-              "type": "token"
-            },
-            {
-              "documentation": "expression: Person.telecom.where(system='phone')\nsubtype: ContactPoint",
-              "name": "phone",
-              "type": "token"
-            },
-            {
-              "documentation": "expression: Resource.id\nsubtype: id",
-              "name": "_id",
-              "type": "token"
-            },
-            {
-              "documentation": "expression: Resource.meta.lastUpdated\nsubtype: dateTime",
-              "name": "_lastUpdated",
-              "type": "date"
-            },
-            {
-              "documentation": "expression: Resource.meta.profile",
-              "name": "_profile",
-              "type": "reference"
-            },
-            {
-              "documentation": "expression: Resource.meta.security\nsubtype: Coding",
-              "name": "_security",
-              "type": "token"
-            },
-            {
-              "documentation": "expression: Resource.meta.tag\nsubtype: Coding",
-              "name": "_tag",
-              "type": "token"
-            },
-            {
-              "name": "_has",
-              "type": "special"
-            },
-            {
-              "name": "_include",
-              "type": "special"
-            },
-            {
-              "name": "_include:iterate",
-              "type": "special"
-            },
-            {
-              "name": "_revinclude",
-              "type": "special"
-            },
-            {
-              "name": "_revinclude:iterate",
-              "type": "special"
-            },
-            {
-              "name": "patient",
-              "type": "reference"
-            },
-            {
-              "name": "phonetic",
-              "type": "string"
-            },
-            {
-              "name": "practitioner",
-              "type": "reference"
-            },
-            {
-              "name": "relatedperson",
-              "type": "reference"
-            }
-          ],
-          "type": "Person"
         },
         {
           "conditionalCreate": false,
@@ -978,18 +761,6 @@
             {
               "name": "_revinclude:iterate",
               "type": "special"
-            },
-            {
-              "name": "abatement-date",
-              "type": "date"
-            },
-            {
-              "name": "asserter",
-              "type": "reference"
-            },
-            {
-              "name": "onset-date",
-              "type": "date"
             }
           ],
           "supportedProfile": [
@@ -1352,10 +1123,6 @@
             {
               "name": "_revinclude:iterate",
               "type": "special"
-            },
-            {
-              "name": "subject",
-              "type": "reference"
             }
           ],
           "supportedProfile": [
@@ -1667,42 +1434,6 @@
             {
               "name": "_revinclude:iterate",
               "type": "special"
-            },
-            {
-              "name": "combo-interpretation",
-              "type": "token"
-            },
-            {
-              "name": "component-interpretation",
-              "type": "token"
-            },
-            {
-              "name": "date",
-              "type": "date"
-            },
-            {
-              "name": "focus TU",
-              "type": "reference"
-            },
-            {
-              "name": "instantiates-canonical",
-              "type": "uri"
-            },
-            {
-              "name": "instantiates-reference",
-              "type": "reference"
-            },
-            {
-              "name": "interpretation",
-              "type": "token"
-            },
-            {
-              "name": "value-date",
-              "type": "date"
-            },
-            {
-              "name": "value-string",
-              "type": "string"
             }
           ],
           "supportedProfile": [
@@ -1710,6 +1441,333 @@
             "https://dhp.uz/fhir/core/StructureDefinition/uz-core-socioeconomic-observation"
           ],
           "type": "Observation"
+        },
+        {
+          "conditionalCreate": false,
+          "conditionalDelete": "not-supported",
+          "conditionalPatch": false,
+          "conditionalRead": "not-supported",
+          "conditionalUpdate": false,
+          "interaction": [
+            {
+              "code": "create"
+            },
+            {
+              "code": "delete"
+            },
+            {
+              "code": "history-instance"
+            },
+            {
+              "code": "read"
+            },
+            {
+              "code": "search-type"
+            },
+            {
+              "code": "update"
+            },
+            {
+              "code": "vread"
+            }
+          ],
+          "searchParam": [
+            {
+              "documentation": "expression: On Questionnaire.useContext:\n  context-type: code\n  context-quantity: value.ofType(Quantity) | value.ofType(Range)",
+              "name": "context-type-quantity",
+              "type": "composite"
+            },
+            {
+              "documentation": "expression: On Questionnaire.useContext:\n  context-type: code\n  context: value.ofType(CodeableConcept)",
+              "name": "context-type-value",
+              "type": "composite"
+            },
+            {
+              "documentation": "expression: Questionnaire.code\nsubtype: Coding",
+              "name": "questionnaire-code",
+              "type": "token"
+            },
+            {
+              "documentation": "expression: Questionnaire.code | Questionnaire.item.code\nsubtype: Coding",
+              "name": "combo-code",
+              "type": "token"
+            },
+            {
+              "documentation": "expression: Questionnaire.date\nsubtype: dateTime",
+              "name": "date",
+              "type": "date"
+            },
+            {
+              "documentation": "expression: Questionnaire.description",
+              "name": "description",
+              "type": "string"
+            },
+            {
+              "documentation": "expression: Questionnaire.effectivePeriod\nsubtype: period",
+              "name": "effective",
+              "type": "date"
+            },
+            {
+              "documentation": "expression: Questionnaire.identifier\nsubtype: Identifier",
+              "name": "identifier",
+              "type": "token"
+            },
+            {
+              "documentation": "expression: Questionnaire.item.code\nsubtype: Coding",
+              "name": "item-code",
+              "type": "token"
+            },
+            {
+              "documentation": "expression: Questionnaire.item.definition",
+              "name": "definition",
+              "type": "uri"
+            },
+            {
+              "documentation": "expression: Questionnaire.jurisdiction\nsubtype: CodeableConcept",
+              "name": "jurisdiction",
+              "type": "token"
+            },
+            {
+              "documentation": "expression: Questionnaire.name",
+              "name": "name",
+              "type": "string"
+            },
+            {
+              "documentation": "expression: Questionnaire.publisher",
+              "name": "publisher",
+              "type": "string"
+            },
+            {
+              "documentation": "expression: Questionnaire.status\nsubtype: code",
+              "name": "status",
+              "type": "token"
+            },
+            {
+              "documentation": "expression: Questionnaire.subjectType\nsubtype: code",
+              "name": "subject-type",
+              "type": "token"
+            },
+            {
+              "documentation": "expression: Questionnaire.title",
+              "name": "title",
+              "type": "string"
+            },
+            {
+              "documentation": "expression: Questionnaire.url",
+              "name": "url",
+              "type": "uri"
+            },
+            {
+              "documentation": "expression: Questionnaire.useContext.code\nsubtype: Coding",
+              "name": "context-type",
+              "type": "token"
+            },
+            {
+              "documentation": "expression: Questionnaire.useContext.valueCodeableConcept\nsubtype: CodeableConcept",
+              "name": "context",
+              "type": "token"
+            },
+            {
+              "documentation": "expression: Questionnaire.useContext.valueQuantity",
+              "name": "context-quantity",
+              "type": "quantity"
+            },
+            {
+              "documentation": "expression: Questionnaire.version\nsubtype: string",
+              "name": "version",
+              "type": "token"
+            },
+            {
+              "documentation": "expression: Resource.id\nsubtype: id",
+              "name": "_id",
+              "type": "token"
+            },
+            {
+              "documentation": "expression: Resource.meta.lastUpdated\nsubtype: dateTime",
+              "name": "_lastUpdated",
+              "type": "date"
+            },
+            {
+              "documentation": "expression: Resource.meta.profile",
+              "name": "_profile",
+              "type": "reference"
+            },
+            {
+              "documentation": "expression: Resource.meta.security\nsubtype: Coding",
+              "name": "_security",
+              "type": "token"
+            },
+            {
+              "documentation": "expression: Resource.meta.tag\nsubtype: Coding",
+              "name": "_tag",
+              "type": "token"
+            },
+            {
+              "name": "_has",
+              "type": "special"
+            },
+            {
+              "name": "_include",
+              "type": "special"
+            },
+            {
+              "name": "_include:iterate",
+              "type": "special"
+            },
+            {
+              "name": "_revinclude",
+              "type": "special"
+            },
+            {
+              "name": "_revinclude:iterate",
+              "type": "special"
+            }
+          ],
+          "supportedProfile": [
+            "https://dhp.uz/fhir/core/StructureDefinition/uz-core-questionnaire"
+          ],
+          "type": "Questionnaire"
+        },
+        {
+          "conditionalCreate": false,
+          "conditionalDelete": "not-supported",
+          "conditionalPatch": false,
+          "conditionalRead": "not-supported",
+          "conditionalUpdate": false,
+          "interaction": [
+            {
+              "code": "create"
+            },
+            {
+              "code": "delete"
+            },
+            {
+              "code": "history-instance"
+            },
+            {
+              "code": "read"
+            },
+            {
+              "code": "search-type"
+            },
+            {
+              "code": "update"
+            },
+            {
+              "code": "vread"
+            }
+          ],
+          "searchParam": [
+            {
+              "documentation": "expression: QuestionnaireResponse.author",
+              "name": "author",
+              "type": "reference"
+            },
+            {
+              "documentation": "expression: QuestionnaireResponse.authored\nsubtype: dateTime",
+              "name": "authored",
+              "type": "date"
+            },
+            {
+              "documentation": "expression: QuestionnaireResponse.basedOn",
+              "name": "based-on",
+              "type": "reference"
+            },
+            {
+              "documentation": "expression: QuestionnaireResponse.encounter",
+              "name": "encounter",
+              "type": "reference"
+            },
+            {
+              "documentation": "expression: QuestionnaireResponse.identifier\nsubtype: Identifier",
+              "name": "identifier",
+              "type": "token"
+            },
+            {
+              "documentation": "expression: QuestionnaireResponse.item.where(extension('http://hl7.org/fhir/StructureDefinition/questionnaireresponse-isSubject').exists()).answer.value.ofType(Reference)",
+              "name": "item-subject",
+              "type": "reference"
+            },
+            {
+              "documentation": "expression: QuestionnaireResponse.partOf",
+              "name": "part-of",
+              "type": "reference"
+            },
+            {
+              "documentation": "expression: QuestionnaireResponse.questionnaire",
+              "name": "questionnaire",
+              "type": "reference"
+            },
+            {
+              "documentation": "expression: QuestionnaireResponse.source",
+              "name": "source",
+              "type": "reference"
+            },
+            {
+              "documentation": "expression: QuestionnaireResponse.status\nsubtype: code",
+              "name": "status",
+              "type": "token"
+            },
+            {
+              "documentation": "expression: QuestionnaireResponse.subject",
+              "name": "subject",
+              "type": "reference"
+            },
+            {
+              "documentation": "expression: QuestionnaireResponse.subject.where(reference.contains('Patient/'))",
+              "name": "patient",
+              "type": "reference"
+            },
+            {
+              "documentation": "expression: Resource.id\nsubtype: id",
+              "name": "_id",
+              "type": "token"
+            },
+            {
+              "documentation": "expression: Resource.meta.lastUpdated\nsubtype: dateTime",
+              "name": "_lastUpdated",
+              "type": "date"
+            },
+            {
+              "documentation": "expression: Resource.meta.profile",
+              "name": "_profile",
+              "type": "reference"
+            },
+            {
+              "documentation": "expression: Resource.meta.security\nsubtype: Coding",
+              "name": "_security",
+              "type": "token"
+            },
+            {
+              "documentation": "expression: Resource.meta.tag\nsubtype: Coding",
+              "name": "_tag",
+              "type": "token"
+            },
+            {
+              "name": "_has",
+              "type": "special"
+            },
+            {
+              "name": "_include",
+              "type": "special"
+            },
+            {
+              "name": "_include:iterate",
+              "type": "special"
+            },
+            {
+              "name": "_revinclude",
+              "type": "special"
+            },
+            {
+              "name": "_revinclude:iterate",
+              "type": "special"
+            }
+          ],
+          "supportedProfile": [
+            "https://dhp.uz/fhir/core/StructureDefinition/uz-core-questionnaire-response"
+          ],
+          "type": "QuestionnaireResponse"
         },
         {
           "conditionalCreate": false,
@@ -1880,500 +1938,12 @@
             {
               "name": "_revinclude:iterate",
               "type": "special"
-            },
-            {
-              "name": "role",
-              "type": "token"
             }
           ],
           "supportedProfile": [
             "https://dhp.uz/fhir/core/StructureDefinition/uz-core-relatedperson"
           ],
           "type": "RelatedPerson"
-        },
-        {
-          "conditionalCreate": true,
-          "conditionalDelete": "not-supported",
-          "conditionalPatch": false,
-          "conditionalRead": "not-supported",
-          "conditionalUpdate": false,
-          "interaction": [
-            {
-              "code": "create"
-            },
-            {
-              "code": "delete"
-            },
-            {
-              "code": "history-instance"
-            },
-            {
-              "code": "read"
-            },
-            {
-              "code": "search-type"
-            },
-            {
-              "code": "update"
-            },
-            {
-              "code": "vread"
-            }
-          ],
-          "searchParam": [
-            {
-              "documentation": "expression: HealthcareService.active\nsubtype: boolean",
-              "name": "active",
-              "type": "token"
-            },
-            {
-              "documentation": "expression: HealthcareService.category\nsubtype: CodeableConcept",
-              "name": "service-category",
-              "type": "token"
-            },
-            {
-              "documentation": "expression: HealthcareService.characteristic\nsubtype: CodeableConcept",
-              "name": "characteristic",
-              "type": "token"
-            },
-            {
-              "documentation": "expression: HealthcareService.code\nsubtype: CodeableConcept",
-              "name": "program",
-              "type": "token"
-            },
-            {
-              "documentation": "expression: HealthcareService.communication\nsubtype: CodeableConcept",
-              "name": "communication",
-              "type": "token"
-            },
-            {
-              "documentation": "expression: HealthcareService.coverageArea",
-              "name": "coverage-area",
-              "type": "reference"
-            },
-            {
-              "documentation": "expression: HealthcareService.eligibility.code\nsubtype: CodeableConcept",
-              "name": "eligibility",
-              "type": "token"
-            },
-            {
-              "documentation": "expression: HealthcareService.endpoint",
-              "name": "endpoint",
-              "type": "reference"
-            },
-            {
-              "documentation": "expression: HealthcareService.identifier\nsubtype: Identifier",
-              "name": "identifier",
-              "type": "token"
-            },
-            {
-              "documentation": "expression: HealthcareService.location",
-              "name": "location",
-              "type": "reference"
-            },
-            {
-              "documentation": "expression: HealthcareService.name",
-              "name": "name",
-              "type": "string"
-            },
-            {
-              "documentation": "expression: HealthcareService.offeredIn",
-              "name": "offered-in",
-              "type": "reference"
-            },
-            {
-              "documentation": "expression: HealthcareService.providedBy",
-              "name": "organization",
-              "type": "reference"
-            },
-            {
-              "documentation": "expression: HealthcareService.specialty\nsubtype: CodeableConcept",
-              "name": "specialty",
-              "type": "token"
-            },
-            {
-              "documentation": "expression: HealthcareService.type\nsubtype: CodeableConcept",
-              "name": "service-type",
-              "type": "token"
-            },
-            {
-              "documentation": "expression: Resource.id\nsubtype: id",
-              "name": "_id",
-              "type": "token"
-            },
-            {
-              "documentation": "expression: Resource.meta.lastUpdated\nsubtype: dateTime",
-              "name": "_lastUpdated",
-              "type": "date"
-            },
-            {
-              "documentation": "expression: Resource.meta.profile",
-              "name": "_profile",
-              "type": "reference"
-            },
-            {
-              "documentation": "expression: Resource.meta.security\nsubtype: Coding",
-              "name": "_security",
-              "type": "token"
-            },
-            {
-              "documentation": "expression: Resource.meta.tag\nsubtype: Coding",
-              "name": "_tag",
-              "type": "token"
-            },
-            {
-              "name": "_has",
-              "type": "special"
-            },
-            {
-              "name": "_include",
-              "type": "special"
-            },
-            {
-              "name": "_include:iterate",
-              "type": "special"
-            },
-            {
-              "name": "_revinclude",
-              "type": "special"
-            },
-            {
-              "name": "_revinclude:iterate",
-              "type": "special"
-            }
-          ],
-          "supportedProfile": [
-            "https://dhp.uz/fhir/core/StructureDefinition/uz-core-healthcareservice"
-          ],
-          "type": "HealthcareService"
-        },
-        {
-          "conditionalCreate": true,
-          "conditionalDelete": "not-supported",
-          "conditionalPatch": false,
-          "conditionalRead": "not-supported",
-          "conditionalUpdate": false,
-          "interaction": [
-            {
-              "code": "create"
-            },
-            {
-              "code": "delete"
-            },
-            {
-              "code": "history-instance"
-            },
-            {
-              "code": "read"
-            },
-            {
-              "code": "search-type"
-            },
-            {
-              "code": "update"
-            },
-            {
-              "code": "vread"
-            }
-          ],
-          "searchParam": [
-            {
-              "documentation": "expression: Location.address.city",
-              "name": "address-city",
-              "type": "string"
-            },
-            {
-              "documentation": "expression: Location.address.city |\n\t\t\tLocation.address.country |\n\t\t\tLocation.address.postalCode |\n\t\t\tLocation.address.state |\n\t\t\tLocation.address.line |\n\t\t\tLocation.address.district |\n\t\t\tLocation.address.text",
-              "name": "address",
-              "type": "string"
-            },
-            {
-              "documentation": "expression: Location.address.country",
-              "name": "address-country",
-              "type": "string"
-            },
-            {
-              "documentation": "expression: Location.address.postalCode",
-              "name": "address-postalCode",
-              "type": "string"
-            },
-            {
-              "documentation": "expression: Location.address.state",
-              "name": "address-state",
-              "type": "string"
-            },
-            {
-              "documentation": "expression: Location.address.use\nsubtype: code",
-              "name": "address-use",
-              "type": "token"
-            },
-            {
-              "documentation": "expression: Location.characteristic\nsubtype: CodeableConcept",
-              "name": "characteristic",
-              "type": "token"
-            },
-            {
-              "documentation": "expression: Location.endpoint",
-              "name": "endpoint",
-              "type": "reference"
-            },
-            {
-              "documentation": "expression: Location.identifier\nsubtype: Identifier",
-              "name": "identifier",
-              "type": "token"
-            },
-            {
-              "documentation": "expression: Location.managingOrganization",
-              "name": "organization",
-              "type": "reference"
-            },
-            {
-              "documentation": "expression: Location.name | Location.alias",
-              "name": "name",
-              "type": "string"
-            },
-            {
-              "documentation": "expression: Location.operationalStatus\nsubtype: Coding",
-              "name": "operational-status",
-              "type": "token"
-            },
-            {
-              "documentation": "expression: Location.partOf",
-              "name": "partOf",
-              "type": "reference"
-            },
-            {
-              "documentation": "expression: Location.status\nsubtype: code",
-              "name": "status",
-              "type": "token"
-            },
-            {
-              "documentation": "expression: Location.type\nsubtype: CodeableConcept",
-              "name": "type",
-              "type": "token"
-            },
-            {
-              "documentation": "expression: Resource.id\nsubtype: id",
-              "name": "_id",
-              "type": "token"
-            },
-            {
-              "documentation": "expression: Resource.meta.lastUpdated\nsubtype: dateTime",
-              "name": "_lastUpdated",
-              "type": "date"
-            },
-            {
-              "documentation": "expression: Resource.meta.profile",
-              "name": "_profile",
-              "type": "reference"
-            },
-            {
-              "documentation": "expression: Resource.meta.security\nsubtype: Coding",
-              "name": "_security",
-              "type": "token"
-            },
-            {
-              "documentation": "expression: Resource.meta.tag\nsubtype: Coding",
-              "name": "_tag",
-              "type": "token"
-            },
-            {
-              "name": "_has",
-              "type": "special"
-            },
-            {
-              "name": "_include",
-              "type": "special"
-            },
-            {
-              "name": "_include:iterate",
-              "type": "special"
-            },
-            {
-              "name": "_revinclude",
-              "type": "special"
-            },
-            {
-              "name": "_revinclude:iterate",
-              "type": "special"
-            },
-            {
-              "name": "address-postalcode",
-              "type": "string"
-            },
-            {
-              "name": "mode",
-              "type": "token"
-            },
-            {
-              "name": "partof",
-              "type": "reference"
-            }
-          ],
-          "supportedProfile": [
-            "https://dhp.uz/fhir/core/StructureDefinition/uz-core-location"
-          ],
-          "type": "Location"
-        },
-        {
-          "conditionalCreate": true,
-          "conditionalDelete": "not-supported",
-          "conditionalPatch": false,
-          "conditionalRead": "not-supported",
-          "conditionalUpdate": false,
-          "interaction": [
-            {
-              "code": "create"
-            },
-            {
-              "code": "delete"
-            },
-            {
-              "code": "history-instance"
-            },
-            {
-              "code": "read"
-            },
-            {
-              "code": "search-type"
-            },
-            {
-              "code": "update"
-            },
-            {
-              "code": "vread"
-            }
-          ],
-          "searchParam": [
-            {
-              "documentation": "expression: PractitionerRole.active\nsubtype: boolean",
-              "name": "active",
-              "type": "token"
-            },
-            {
-              "documentation": "expression: PractitionerRole.characteristic\nsubtype: CodeableConcept",
-              "name": "characteristic",
-              "type": "token"
-            },
-            {
-              "documentation": "expression: PractitionerRole.code\nsubtype: CodeableConcept",
-              "name": "role",
-              "type": "token"
-            },
-            {
-              "documentation": "expression: PractitionerRole.communication\nsubtype: CodeableConcept",
-              "name": "communication",
-              "type": "token"
-            },
-            {
-              "documentation": "expression: PractitionerRole.contact.telecom\nsubtype: ContactPoint",
-              "name": "telecom",
-              "type": "token"
-            },
-            {
-              "documentation": "expression: PractitionerRole.contact.telecom.where(system='email')\nsubtype: ContactPoint",
-              "name": "email",
-              "type": "token"
-            },
-            {
-              "documentation": "expression: PractitionerRole.contact.telecom.where(system='phone')\nsubtype: ContactPoint",
-              "name": "phone",
-              "type": "token"
-            },
-            {
-              "documentation": "expression: PractitionerRole.endpoint",
-              "name": "endpoint",
-              "type": "reference"
-            },
-            {
-              "documentation": "expression: PractitionerRole.healthcareService",
-              "name": "service",
-              "type": "reference"
-            },
-            {
-              "documentation": "expression: PractitionerRole.identifier\nsubtype: Identifier",
-              "name": "identifier",
-              "type": "token"
-            },
-            {
-              "documentation": "expression: PractitionerRole.location",
-              "name": "location",
-              "type": "reference"
-            },
-            {
-              "documentation": "expression: PractitionerRole.organization",
-              "name": "organization",
-              "type": "reference"
-            },
-            {
-              "documentation": "expression: PractitionerRole.period\nsubtype: period",
-              "name": "date",
-              "type": "date"
-            },
-            {
-              "documentation": "expression: PractitionerRole.practitioner",
-              "name": "practitioner",
-              "type": "reference"
-            },
-            {
-              "documentation": "expression: PractitionerRole.specialty\nsubtype: CodeableConcept",
-              "name": "specialty",
-              "type": "token"
-            },
-            {
-              "documentation": "expression: Resource.id\nsubtype: id",
-              "name": "_id",
-              "type": "token"
-            },
-            {
-              "documentation": "expression: Resource.meta.lastUpdated\nsubtype: dateTime",
-              "name": "_lastUpdated",
-              "type": "date"
-            },
-            {
-              "documentation": "expression: Resource.meta.profile",
-              "name": "_profile",
-              "type": "reference"
-            },
-            {
-              "documentation": "expression: Resource.meta.security\nsubtype: Coding",
-              "name": "_security",
-              "type": "token"
-            },
-            {
-              "documentation": "expression: Resource.meta.tag\nsubtype: Coding",
-              "name": "_tag",
-              "type": "token"
-            },
-            {
-              "name": "_has",
-              "type": "special"
-            },
-            {
-              "name": "_include",
-              "type": "special"
-            },
-            {
-              "name": "_include:iterate",
-              "type": "special"
-            },
-            {
-              "name": "_revinclude",
-              "type": "special"
-            },
-            {
-              "name": "_revinclude:iterate",
-              "type": "special"
-            },
-            {
-              "name": "network",
-              "type": "reference"
-            }
-          ],
-          "supportedProfile": [
-            "https://dhp.uz/fhir/core/StructureDefinition/uz-core-practitioner-role"
-          ],
-          "type": "PractitionerRole"
         },
         {
           "conditionalCreate": false,
@@ -3359,10 +2929,6 @@
             {
               "name": "_revinclude:iterate",
               "type": "special"
-            },
-            {
-              "name": "form",
-              "type": "token"
             }
           ],
           "type": "Medication"
@@ -3484,351 +3050,6 @@
             }
           ],
           "type": "ObservationDefinition"
-        },
-        {
-          "conditionalCreate": false,
-          "conditionalDelete": "not-supported",
-          "conditionalPatch": false,
-          "conditionalRead": "not-supported",
-          "conditionalUpdate": false,
-          "interaction": [
-            {
-              "code": "create"
-            },
-            {
-              "code": "delete"
-            },
-            {
-              "code": "history-instance"
-            },
-            {
-              "code": "read"
-            },
-            {
-              "code": "search-type"
-            },
-            {
-              "code": "update"
-            },
-            {
-              "code": "vread"
-            }
-          ],
-          "searchParam": [
-            {
-              "documentation": "expression: On Questionnaire.useContext:\n  context-type: code\n  context-quantity: value.ofType(Quantity) | value.ofType(Range)",
-              "name": "context-type-quantity",
-              "type": "composite"
-            },
-            {
-              "documentation": "expression: On Questionnaire.useContext:\n  context-type: code\n  context: value.ofType(CodeableConcept)",
-              "name": "context-type-value",
-              "type": "composite"
-            },
-            {
-              "documentation": "expression: Questionnaire.code\nsubtype: Coding",
-              "name": "questionnaire-code",
-              "type": "token"
-            },
-            {
-              "documentation": "expression: Questionnaire.code | Questionnaire.item.code\nsubtype: Coding",
-              "name": "combo-code",
-              "type": "token"
-            },
-            {
-              "documentation": "expression: Questionnaire.date\nsubtype: dateTime",
-              "name": "date",
-              "type": "date"
-            },
-            {
-              "documentation": "expression: Questionnaire.description",
-              "name": "description",
-              "type": "string"
-            },
-            {
-              "documentation": "expression: Questionnaire.effectivePeriod\nsubtype: period",
-              "name": "effective",
-              "type": "date"
-            },
-            {
-              "documentation": "expression: Questionnaire.identifier\nsubtype: Identifier",
-              "name": "identifier",
-              "type": "token"
-            },
-            {
-              "documentation": "expression: Questionnaire.item.code\nsubtype: Coding",
-              "name": "item-code",
-              "type": "token"
-            },
-            {
-              "documentation": "expression: Questionnaire.item.definition",
-              "name": "definition",
-              "type": "uri"
-            },
-            {
-              "documentation": "expression: Questionnaire.jurisdiction\nsubtype: CodeableConcept",
-              "name": "jurisdiction",
-              "type": "token"
-            },
-            {
-              "documentation": "expression: Questionnaire.name",
-              "name": "name",
-              "type": "string"
-            },
-            {
-              "documentation": "expression: Questionnaire.publisher",
-              "name": "publisher",
-              "type": "string"
-            },
-            {
-              "documentation": "expression: Questionnaire.status\nsubtype: code",
-              "name": "status",
-              "type": "token"
-            },
-            {
-              "documentation": "expression: Questionnaire.subjectType\nsubtype: code",
-              "name": "subject-type",
-              "type": "token"
-            },
-            {
-              "documentation": "expression: Questionnaire.title",
-              "name": "title",
-              "type": "string"
-            },
-            {
-              "documentation": "expression: Questionnaire.url",
-              "name": "url",
-              "type": "uri"
-            },
-            {
-              "documentation": "expression: Questionnaire.useContext.code\nsubtype: Coding",
-              "name": "context-type",
-              "type": "token"
-            },
-            {
-              "documentation": "expression: Questionnaire.useContext.valueCodeableConcept\nsubtype: CodeableConcept",
-              "name": "context",
-              "type": "token"
-            },
-            {
-              "documentation": "expression: Questionnaire.useContext.valueQuantity",
-              "name": "context-quantity",
-              "type": "quantity"
-            },
-            {
-              "documentation": "expression: Questionnaire.version\nsubtype: string",
-              "name": "version",
-              "type": "token"
-            },
-            {
-              "documentation": "expression: Resource.id\nsubtype: id",
-              "name": "_id",
-              "type": "token"
-            },
-            {
-              "documentation": "expression: Resource.meta.lastUpdated\nsubtype: dateTime",
-              "name": "_lastUpdated",
-              "type": "date"
-            },
-            {
-              "documentation": "expression: Resource.meta.profile",
-              "name": "_profile",
-              "type": "reference"
-            },
-            {
-              "documentation": "expression: Resource.meta.security\nsubtype: Coding",
-              "name": "_security",
-              "type": "token"
-            },
-            {
-              "documentation": "expression: Resource.meta.tag\nsubtype: Coding",
-              "name": "_tag",
-              "type": "token"
-            },
-            {
-              "name": "_has",
-              "type": "special"
-            },
-            {
-              "name": "_include",
-              "type": "special"
-            },
-            {
-              "name": "_include:iterate",
-              "type": "special"
-            },
-            {
-              "name": "_revinclude",
-              "type": "special"
-            },
-            {
-              "name": "_revinclude:iterate",
-              "type": "special"
-            }
-          ],
-          "type": "Questionnaire"
-        },
-        {
-          "conditionalCreate": false,
-          "conditionalDelete": "not-supported",
-          "conditionalPatch": false,
-          "conditionalRead": "not-supported",
-          "conditionalUpdate": false,
-          "interaction": [
-            {
-              "code": "create"
-            },
-            {
-              "code": "delete"
-            },
-            {
-              "code": "history-instance"
-            },
-            {
-              "code": "read"
-            },
-            {
-              "code": "search-type"
-            },
-            {
-              "code": "update"
-            },
-            {
-              "code": "vread"
-            }
-          ],
-          "searchParam": [
-            {
-              "documentation": "expression: QuestionnaireResponse.author",
-              "name": "author",
-              "type": "reference"
-            },
-            {
-              "documentation": "expression: QuestionnaireResponse.authored\nsubtype: dateTime",
-              "name": "authored",
-              "type": "date"
-            },
-            {
-              "documentation": "expression: QuestionnaireResponse.basedOn",
-              "name": "based-on",
-              "type": "reference"
-            },
-            {
-              "documentation": "expression: QuestionnaireResponse.encounter",
-              "name": "encounter",
-              "type": "reference"
-            },
-            {
-              "documentation": "expression: QuestionnaireResponse.identifier",
-              "name": "identifier",
-              "type": "token"
-            },
-            {
-              "documentation": "expression: QuestionnaireResponse.item.where(extension('http://hl7.org/fhir/StructureDefinition/questionnaireresponse-isSubject').exists()).answer.value.ofType(Reference)",
-              "name": "item-subject",
-              "type": "reference"
-            },
-            {
-              "documentation": "expression: QuestionnaireResponse.partOf",
-              "name": "part-of",
-              "type": "reference"
-            },
-            {
-              "documentation": "expression: QuestionnaireResponse.questionnaire",
-              "name": "questionnaire",
-              "type": "reference"
-            },
-            {
-              "documentation": "expression: QuestionnaireResponse.source",
-              "name": "source",
-              "type": "reference"
-            },
-            {
-              "documentation": "expression: QuestionnaireResponse.status\nsubtype: code",
-              "name": "status",
-              "type": "token"
-            },
-            {
-              "documentation": "expression: QuestionnaireResponse.subject",
-              "name": "subject",
-              "type": "reference"
-            },
-            {
-              "documentation": "expression: QuestionnaireResponse.subject.where(reference.contains('Patient/'))",
-              "name": "patient",
-              "type": "reference"
-            },
-            {
-              "documentation": "expression: Resource.id\nsubtype: id",
-              "name": "_id",
-              "type": "token"
-            },
-            {
-              "documentation": "expression: Resource.meta.lastUpdated\nsubtype: dateTime",
-              "name": "_lastUpdated",
-              "type": "date"
-            },
-            {
-              "documentation": "expression: Resource.meta.profile",
-              "name": "_profile",
-              "type": "reference"
-            },
-            {
-              "documentation": "expression: Resource.meta.security\nsubtype: Coding",
-              "name": "_security",
-              "type": "token"
-            },
-            {
-              "documentation": "expression: Resource.meta.tag\nsubtype: Coding",
-              "name": "_tag",
-              "type": "token"
-            },
-            {
-              "name": "_has",
-              "type": "special"
-            },
-            {
-              "name": "_include",
-              "type": "special"
-            },
-            {
-              "name": "_include:iterate",
-              "type": "special"
-            },
-            {
-              "name": "_revinclude",
-              "type": "special"
-            },
-            {
-              "name": "_revinclude:iterate",
-              "type": "special"
-            },
-            {
-              "name": "answer-concept",
-              "type": "token"
-            },
-            {
-              "name": "answer-date",
-              "type": "date"
-            },
-            {
-              "name": "answer-number",
-              "type": "number"
-            },
-            {
-              "name": "answer-reference",
-              "type": "reference"
-            },
-            {
-              "name": "answer-string",
-              "type": "string"
-            },
-            {
-              "name": "linkid",
-              "type": "token"
-            }
-          ],
-          "type": "QuestionnaireResponse"
         },
         {
           "conditionalCreate": false,
@@ -4834,10 +4055,6 @@
             {
               "name": "_revinclude:iterate",
               "type": "special"
-            },
-            {
-              "name": "related",
-              "type": "reference"
             }
           ],
           "type": "DocumentReference"
@@ -5006,14 +4223,6 @@
             {
               "name": "_revinclude:iterate",
               "type": "special"
-            },
-            {
-              "name": "combo-date",
-              "type": "date"
-            },
-            {
-              "name": "group-or-identifier",
-              "type": "token"
             }
           ],
           "type": "MedicationRequest"
@@ -5167,14 +4376,6 @@
             {
               "name": "_revinclude:iterate",
               "type": "special"
-            },
-            {
-              "name": "asserter",
-              "type": "reference"
-            },
-            {
-              "name": "last-reaction-date",
-              "type": "date"
             }
           ],
           "type": "AllergyIntolerance"
@@ -5644,6 +4845,312 @@
           ],
           "searchParam": [
             {
+              "documentation": "expression: HealthcareService.active\nsubtype: boolean",
+              "name": "active",
+              "type": "token"
+            },
+            {
+              "documentation": "expression: HealthcareService.category\nsubtype: CodeableConcept",
+              "name": "service-category",
+              "type": "token"
+            },
+            {
+              "documentation": "expression: HealthcareService.characteristic\nsubtype: CodeableConcept",
+              "name": "characteristic",
+              "type": "token"
+            },
+            {
+              "documentation": "expression: HealthcareService.code\nsubtype: CodeableConcept",
+              "name": "program",
+              "type": "token"
+            },
+            {
+              "documentation": "expression: HealthcareService.communication\nsubtype: CodeableConcept",
+              "name": "communication",
+              "type": "token"
+            },
+            {
+              "documentation": "expression: HealthcareService.coverageArea",
+              "name": "coverage-area",
+              "type": "reference"
+            },
+            {
+              "documentation": "expression: HealthcareService.eligibility.code\nsubtype: CodeableConcept",
+              "name": "eligibility",
+              "type": "token"
+            },
+            {
+              "documentation": "expression: HealthcareService.endpoint",
+              "name": "endpoint",
+              "type": "reference"
+            },
+            {
+              "documentation": "expression: HealthcareService.identifier\nsubtype: Identifier",
+              "name": "identifier",
+              "type": "token"
+            },
+            {
+              "documentation": "expression: HealthcareService.location",
+              "name": "location",
+              "type": "reference"
+            },
+            {
+              "documentation": "expression: HealthcareService.name",
+              "name": "name",
+              "type": "string"
+            },
+            {
+              "documentation": "expression: HealthcareService.offeredIn",
+              "name": "offered-in",
+              "type": "reference"
+            },
+            {
+              "documentation": "expression: HealthcareService.providedBy",
+              "name": "organization",
+              "type": "reference"
+            },
+            {
+              "documentation": "expression: HealthcareService.specialty\nsubtype: CodeableConcept",
+              "name": "specialty",
+              "type": "token"
+            },
+            {
+              "documentation": "expression: HealthcareService.type\nsubtype: CodeableConcept",
+              "name": "service-type",
+              "type": "token"
+            },
+            {
+              "documentation": "expression: Resource.id\nsubtype: id",
+              "name": "_id",
+              "type": "token"
+            },
+            {
+              "documentation": "expression: Resource.meta.lastUpdated\nsubtype: dateTime",
+              "name": "_lastUpdated",
+              "type": "date"
+            },
+            {
+              "documentation": "expression: Resource.meta.profile",
+              "name": "_profile",
+              "type": "reference"
+            },
+            {
+              "documentation": "expression: Resource.meta.security\nsubtype: Coding",
+              "name": "_security",
+              "type": "token"
+            },
+            {
+              "documentation": "expression: Resource.meta.tag\nsubtype: Coding",
+              "name": "_tag",
+              "type": "token"
+            },
+            {
+              "name": "_has",
+              "type": "special"
+            },
+            {
+              "name": "_include",
+              "type": "special"
+            },
+            {
+              "name": "_include:iterate",
+              "type": "special"
+            },
+            {
+              "name": "_revinclude",
+              "type": "special"
+            },
+            {
+              "name": "_revinclude:iterate",
+              "type": "special"
+            }
+          ],
+          "type": "HealthcareService"
+        },
+        {
+          "conditionalCreate": true,
+          "conditionalDelete": "not-supported",
+          "conditionalPatch": false,
+          "conditionalRead": "not-supported",
+          "conditionalUpdate": false,
+          "interaction": [
+            {
+              "code": "create"
+            },
+            {
+              "code": "delete"
+            },
+            {
+              "code": "history-instance"
+            },
+            {
+              "code": "read"
+            },
+            {
+              "code": "search-type"
+            },
+            {
+              "code": "update"
+            },
+            {
+              "code": "vread"
+            }
+          ],
+          "searchParam": [
+            {
+              "documentation": "expression: Location.address.city",
+              "name": "address-city",
+              "type": "string"
+            },
+            {
+              "documentation": "expression: Location.address.city |\n\t\t\tLocation.address.country |\n\t\t\tLocation.address.postalCode |\n\t\t\tLocation.address.state |\n\t\t\tLocation.address.line |\n\t\t\tLocation.address.district |\n\t\t\tLocation.address.text",
+              "name": "address",
+              "type": "string"
+            },
+            {
+              "documentation": "expression: Location.address.country",
+              "name": "address-country",
+              "type": "string"
+            },
+            {
+              "documentation": "expression: Location.address.postalCode",
+              "name": "address-postalCode",
+              "type": "string"
+            },
+            {
+              "documentation": "expression: Location.address.state",
+              "name": "address-state",
+              "type": "string"
+            },
+            {
+              "documentation": "expression: Location.address.use\nsubtype: code",
+              "name": "address-use",
+              "type": "token"
+            },
+            {
+              "documentation": "expression: Location.characteristic\nsubtype: CodeableConcept",
+              "name": "characteristic",
+              "type": "token"
+            },
+            {
+              "documentation": "expression: Location.endpoint",
+              "name": "endpoint",
+              "type": "reference"
+            },
+            {
+              "documentation": "expression: Location.identifier\nsubtype: Identifier",
+              "name": "identifier",
+              "type": "token"
+            },
+            {
+              "documentation": "expression: Location.managingOrganization",
+              "name": "organization",
+              "type": "reference"
+            },
+            {
+              "documentation": "expression: Location.name | Location.alias",
+              "name": "name",
+              "type": "string"
+            },
+            {
+              "documentation": "expression: Location.operationalStatus\nsubtype: Coding",
+              "name": "operational-status",
+              "type": "token"
+            },
+            {
+              "documentation": "expression: Location.partOf",
+              "name": "partOf",
+              "type": "reference"
+            },
+            {
+              "documentation": "expression: Location.status\nsubtype: code",
+              "name": "status",
+              "type": "token"
+            },
+            {
+              "documentation": "expression: Location.type\nsubtype: CodeableConcept",
+              "name": "type",
+              "type": "token"
+            },
+            {
+              "documentation": "expression: Resource.id\nsubtype: id",
+              "name": "_id",
+              "type": "token"
+            },
+            {
+              "documentation": "expression: Resource.meta.lastUpdated\nsubtype: dateTime",
+              "name": "_lastUpdated",
+              "type": "date"
+            },
+            {
+              "documentation": "expression: Resource.meta.profile",
+              "name": "_profile",
+              "type": "reference"
+            },
+            {
+              "documentation": "expression: Resource.meta.security\nsubtype: Coding",
+              "name": "_security",
+              "type": "token"
+            },
+            {
+              "documentation": "expression: Resource.meta.tag\nsubtype: Coding",
+              "name": "_tag",
+              "type": "token"
+            },
+            {
+              "name": "_has",
+              "type": "special"
+            },
+            {
+              "name": "_include",
+              "type": "special"
+            },
+            {
+              "name": "_include:iterate",
+              "type": "special"
+            },
+            {
+              "name": "_revinclude",
+              "type": "special"
+            },
+            {
+              "name": "_revinclude:iterate",
+              "type": "special"
+            }
+          ],
+          "type": "Location"
+        },
+        {
+          "conditionalCreate": true,
+          "conditionalDelete": "not-supported",
+          "conditionalPatch": false,
+          "conditionalRead": "not-supported",
+          "conditionalUpdate": false,
+          "interaction": [
+            {
+              "code": "create"
+            },
+            {
+              "code": "delete"
+            },
+            {
+              "code": "history-instance"
+            },
+            {
+              "code": "read"
+            },
+            {
+              "code": "search-type"
+            },
+            {
+              "code": "update"
+            },
+            {
+              "code": "vread"
+            }
+          ],
+          "searchParam": [
+            {
               "documentation": "expression: MedicationDispense.authorizingPrescription",
               "name": "prescription",
               "type": "reference"
@@ -5775,6 +5282,159 @@
             }
           ],
           "type": "MedicationDispense"
+        },
+        {
+          "conditionalCreate": true,
+          "conditionalDelete": "not-supported",
+          "conditionalPatch": false,
+          "conditionalRead": "not-supported",
+          "conditionalUpdate": false,
+          "interaction": [
+            {
+              "code": "create"
+            },
+            {
+              "code": "delete"
+            },
+            {
+              "code": "history-instance"
+            },
+            {
+              "code": "read"
+            },
+            {
+              "code": "search-type"
+            },
+            {
+              "code": "update"
+            },
+            {
+              "code": "vread"
+            }
+          ],
+          "searchParam": [
+            {
+              "documentation": "expression: PractitionerRole.active\nsubtype: boolean",
+              "name": "active",
+              "type": "token"
+            },
+            {
+              "documentation": "expression: PractitionerRole.characteristic\nsubtype: CodeableConcept",
+              "name": "characteristic",
+              "type": "token"
+            },
+            {
+              "documentation": "expression: PractitionerRole.code\nsubtype: CodeableConcept",
+              "name": "role",
+              "type": "token"
+            },
+            {
+              "documentation": "expression: PractitionerRole.communication\nsubtype: CodeableConcept",
+              "name": "communication",
+              "type": "token"
+            },
+            {
+              "documentation": "expression: PractitionerRole.contact.telecom\nsubtype: ContactPoint",
+              "name": "telecom",
+              "type": "token"
+            },
+            {
+              "documentation": "expression: PractitionerRole.contact.telecom.where(system='email')\nsubtype: ContactPoint",
+              "name": "email",
+              "type": "token"
+            },
+            {
+              "documentation": "expression: PractitionerRole.contact.telecom.where(system='phone')\nsubtype: ContactPoint",
+              "name": "phone",
+              "type": "token"
+            },
+            {
+              "documentation": "expression: PractitionerRole.endpoint",
+              "name": "endpoint",
+              "type": "reference"
+            },
+            {
+              "documentation": "expression: PractitionerRole.healthcareService",
+              "name": "service",
+              "type": "reference"
+            },
+            {
+              "documentation": "expression: PractitionerRole.identifier\nsubtype: Identifier",
+              "name": "identifier",
+              "type": "token"
+            },
+            {
+              "documentation": "expression: PractitionerRole.location",
+              "name": "location",
+              "type": "reference"
+            },
+            {
+              "documentation": "expression: PractitionerRole.organization",
+              "name": "organization",
+              "type": "reference"
+            },
+            {
+              "documentation": "expression: PractitionerRole.period\nsubtype: period",
+              "name": "date",
+              "type": "date"
+            },
+            {
+              "documentation": "expression: PractitionerRole.practitioner",
+              "name": "practitioner",
+              "type": "reference"
+            },
+            {
+              "documentation": "expression: PractitionerRole.specialty\nsubtype: CodeableConcept",
+              "name": "specialty",
+              "type": "token"
+            },
+            {
+              "documentation": "expression: Resource.id\nsubtype: id",
+              "name": "_id",
+              "type": "token"
+            },
+            {
+              "documentation": "expression: Resource.meta.lastUpdated\nsubtype: dateTime",
+              "name": "_lastUpdated",
+              "type": "date"
+            },
+            {
+              "documentation": "expression: Resource.meta.profile",
+              "name": "_profile",
+              "type": "reference"
+            },
+            {
+              "documentation": "expression: Resource.meta.security\nsubtype: Coding",
+              "name": "_security",
+              "type": "token"
+            },
+            {
+              "documentation": "expression: Resource.meta.tag\nsubtype: Coding",
+              "name": "_tag",
+              "type": "token"
+            },
+            {
+              "name": "_has",
+              "type": "special"
+            },
+            {
+              "name": "_include",
+              "type": "special"
+            },
+            {
+              "name": "_include:iterate",
+              "type": "special"
+            },
+            {
+              "name": "_revinclude",
+              "type": "special"
+            },
+            {
+              "name": "_revinclude:iterate",
+              "type": "special"
+            }
+          ],
+          "type": "PractitionerRole"
         },
         {
           "conditionalCreate": true,
@@ -5940,14 +5600,6 @@
             {
               "name": "_revinclude:iterate",
               "type": "special"
-            },
-            {
-              "name": "date",
-              "type": "date"
-            },
-            {
-              "name": "status",
-              "type": "token"
             }
           ],
           "type": "Procedure"
@@ -5993,88 +5645,167 @@
           ],
           "searchParam": [
             {
-              "name": "code",
-              "type": "token"
-            },
-            {
-              "name": "content-mode",
-              "type": "token"
-            },
-            {
+              "documentation": "expression: (CodeSystem.useContext.value.ofType(CodeableConcept))\nsubtype: CodeableConcept",
               "name": "context",
               "type": "token"
             },
             {
-              "name": "context-type",
+              "documentation": "expression: (CodeSystem.useContext.value.ofType(Quantity)) | (CodeSystem.useContext.value.ofType(Range))",
+              "name": "context-quantity",
+              "type": "quantity"
+            },
+            {
+              "documentation": "expression: CodeSystem.concept.code\nsubtype: code",
+              "name": "code",
               "type": "token"
             },
             {
-              "name": "date",
-              "type": "date"
-            },
-            {
-              "name": "derived-from",
-              "type": "reference"
-            },
-            {
-              "name": "description",
-              "type": "string"
-            },
-            {
-              "name": "effective",
-              "type": "date"
-            },
-            {
-              "name": "identifier",
-              "type": "token"
-            },
-            {
-              "name": "jurisdiction",
-              "type": "token"
-            },
-            {
+              "documentation": "expression: CodeSystem.concept.designation.language\nsubtype: code",
               "name": "language",
               "type": "token"
             },
             {
+              "documentation": "expression: CodeSystem.content\nsubtype: code",
+              "name": "content-mode",
+              "type": "token"
+            },
+            {
+              "documentation": "expression: CodeSystem.date\nsubtype: dateTime",
+              "name": "date",
+              "type": "date"
+            },
+            {
+              "documentation": "expression: CodeSystem.description",
+              "name": "description",
+              "type": "string"
+            },
+            {
+              "documentation": "expression: CodeSystem.effectivePeriod\nsubtype: period",
+              "name": "effective",
+              "type": "date"
+            },
+            {
+              "documentation": "expression: CodeSystem.identifier\nsubtype: Identifier",
+              "name": "identifier",
+              "type": "token"
+            },
+            {
+              "documentation": "expression: CodeSystem.jurisdiction\nsubtype: CodeableConcept",
+              "name": "jurisdiction",
+              "type": "token"
+            },
+            {
+              "documentation": "expression: CodeSystem.name",
               "name": "name",
               "type": "string"
             },
             {
-              "name": "predecessor",
-              "type": "reference"
-            },
-            {
+              "documentation": "expression: CodeSystem.publisher",
               "name": "publisher",
               "type": "string"
             },
             {
+              "documentation": "expression: CodeSystem.relatedArtifact.where(type='derived-from').resource\n(Any)",
+              "name": "derived-from",
+              "type": "reference"
+            },
+            {
+              "documentation": "expression: CodeSystem.relatedArtifact.where(type='predecessor').resource\n(Any)",
+              "name": "predecessor",
+              "type": "reference"
+            },
+            {
+              "documentation": "expression: CodeSystem.status\nsubtype: code",
               "name": "status",
               "type": "token"
             },
             {
+              "documentation": "expression: CodeSystem.supplements\n(CodeSystem)",
               "name": "supplements",
               "type": "reference"
             },
             {
-              "name": "system",
-              "type": "uri"
-            },
-            {
+              "documentation": "expression: CodeSystem.title",
               "name": "title",
               "type": "string"
             },
             {
+              "documentation": "expression: CodeSystem.topic\nsubtype: CodeableConcept",
               "name": "topic",
               "type": "token"
             },
             {
+              "documentation": "expression: CodeSystem.url",
+              "name": "system",
+              "type": "uri"
+            },
+            {
+              "documentation": "expression: CodeSystem.url",
               "name": "url",
               "type": "uri"
             },
             {
+              "documentation": "expression: CodeSystem.useContext.code\nsubtype: Coding",
+              "name": "context-type",
+              "type": "token"
+            },
+            {
+              "documentation": "expression: CodeSystem.version\nsubtype: string",
               "name": "version",
               "type": "token"
+            },
+            {
+              "documentation": "expression: Resource.id\nsubtype: id",
+              "name": "_id",
+              "type": "token"
+            },
+            {
+              "documentation": "expression: Resource.meta.lastUpdated\nsubtype: dateTime",
+              "name": "_lastUpdated",
+              "type": "date"
+            },
+            {
+              "documentation": "expression: Resource.meta.profile",
+              "name": "_profile",
+              "type": "reference"
+            },
+            {
+              "documentation": "expression: Resource.meta.security\nsubtype: Coding",
+              "name": "_security",
+              "type": "token"
+            },
+            {
+              "documentation": "expression: Resource.meta.tag\nsubtype: Coding",
+              "name": "_tag",
+              "type": "token"
+            },
+            {
+              "name": "_has",
+              "type": "special"
+            },
+            {
+              "name": "_include",
+              "type": "special"
+            },
+            {
+              "name": "_include:iterate",
+              "type": "special"
+            },
+            {
+              "name": "_revinclude",
+              "type": "special"
+            },
+            {
+              "name": "_revinclude:iterate",
+              "type": "special"
+            },
+            {
+              "name": "context-type-quantity",
+              "type": "composite"
+            },
+            {
+              "name": "context-type-value",
+              "type": "composite"
             }
           ],
           "type": "CodeSystem"
@@ -6112,108 +5843,192 @@
           ],
           "searchParam": [
             {
-              "name": "context",
-              "type": "token"
-            },
-            {
-              "name": "context-type",
-              "type": "token"
-            },
-            {
-              "name": "date",
-              "type": "date"
-            },
-            {
-              "name": "derived-from",
-              "type": "reference"
-            },
-            {
-              "name": "description",
-              "type": "string"
-            },
-            {
-              "name": "effective",
-              "type": "date"
-            },
-            {
-              "name": "identifier",
-              "type": "token"
-            },
-            {
-              "name": "jurisdiction",
-              "type": "token"
-            },
-            {
-              "name": "mapping-property",
-              "type": "uri"
-            },
-            {
-              "name": "name",
-              "type": "string"
-            },
-            {
-              "name": "other-map",
-              "type": "reference"
-            },
-            {
-              "name": "predecessor",
-              "type": "reference"
-            },
-            {
-              "name": "publisher",
-              "type": "string"
-            },
-            {
-              "name": "source-code",
-              "type": "token"
-            },
-            {
-              "name": "source-group-system",
-              "type": "reference"
-            },
-            {
+              "documentation": "expression: (ConceptMap.sourceScope as canonical)\n(ValueSet)",
               "name": "source-scope",
               "type": "reference"
             },
             {
+              "documentation": "expression: (ConceptMap.sourceScope as uri)",
               "name": "source-scope-uri",
               "type": "uri"
             },
             {
-              "name": "status",
-              "type": "token"
-            },
-            {
-              "name": "target-code",
-              "type": "token"
-            },
-            {
-              "name": "target-group-system",
-              "type": "reference"
-            },
-            {
+              "documentation": "expression: (ConceptMap.targetScope as canonical)\n(ValueSet)",
               "name": "target-scope",
               "type": "reference"
             },
             {
+              "documentation": "expression: (ConceptMap.targetScope as uri)",
               "name": "target-scope-uri",
               "type": "uri"
             },
             {
+              "documentation": "expression: (ConceptMap.useContext.value.ofType(CodeableConcept))\nsubtype: CodeableConcept",
+              "name": "context",
+              "type": "token"
+            },
+            {
+              "documentation": "expression: (ConceptMap.useContext.value.ofType(Quantity)) | (ConceptMap.useContext.value.ofType(Range))",
+              "name": "context-quantity",
+              "type": "quantity"
+            },
+            {
+              "documentation": "expression: ConceptMap.date\nsubtype: dateTime",
+              "name": "date",
+              "type": "date"
+            },
+            {
+              "documentation": "expression: ConceptMap.description",
+              "name": "description",
+              "type": "string"
+            },
+            {
+              "documentation": "expression: ConceptMap.effectivePeriod\nsubtype: period",
+              "name": "effective",
+              "type": "date"
+            },
+            {
+              "documentation": "expression: ConceptMap.group.element.code\nsubtype: code",
+              "name": "source-code",
+              "type": "token"
+            },
+            {
+              "documentation": "expression: ConceptMap.group.element.target.code\nsubtype: code",
+              "name": "target-code",
+              "type": "token"
+            },
+            {
+              "documentation": "expression: ConceptMap.group.source\n(CodeSystem)",
+              "name": "source-group-system",
+              "type": "reference"
+            },
+            {
+              "documentation": "expression: ConceptMap.group.target\n(CodeSystem)",
+              "name": "target-group-system",
+              "type": "reference"
+            },
+            {
+              "documentation": "expression: ConceptMap.group.unmapped.otherMap\n(ConceptMap)",
+              "name": "other-map",
+              "type": "reference"
+            },
+            {
+              "documentation": "expression: ConceptMap.identifier\nsubtype: Identifier",
+              "name": "identifier",
+              "type": "token"
+            },
+            {
+              "documentation": "expression: ConceptMap.jurisdiction\nsubtype: CodeableConcept",
+              "name": "jurisdiction",
+              "type": "token"
+            },
+            {
+              "documentation": "expression: ConceptMap.name",
+              "name": "name",
+              "type": "string"
+            },
+            {
+              "documentation": "expression: ConceptMap.property.uri",
+              "name": "mapping-property",
+              "type": "uri"
+            },
+            {
+              "documentation": "expression: ConceptMap.publisher",
+              "name": "publisher",
+              "type": "string"
+            },
+            {
+              "documentation": "expression: ConceptMap.relatedArtifact.where(type='derived-from').resource\n(Any)",
+              "name": "derived-from",
+              "type": "reference"
+            },
+            {
+              "documentation": "expression: ConceptMap.relatedArtifact.where(type='predecessor').resource\n(Any)",
+              "name": "predecessor",
+              "type": "reference"
+            },
+            {
+              "documentation": "expression: ConceptMap.status\nsubtype: code",
+              "name": "status",
+              "type": "token"
+            },
+            {
+              "documentation": "expression: ConceptMap.title",
               "name": "title",
               "type": "string"
             },
             {
+              "documentation": "expression: ConceptMap.topic\nsubtype: CodeableConcept",
               "name": "topic",
               "type": "token"
             },
             {
+              "documentation": "expression: ConceptMap.url",
               "name": "url",
               "type": "uri"
             },
             {
+              "documentation": "expression: ConceptMap.useContext.code\nsubtype: Coding",
+              "name": "context-type",
+              "type": "token"
+            },
+            {
+              "documentation": "expression: ConceptMap.version\nsubtype: string",
               "name": "version",
               "type": "token"
+            },
+            {
+              "documentation": "expression: Resource.id\nsubtype: id",
+              "name": "_id",
+              "type": "token"
+            },
+            {
+              "documentation": "expression: Resource.meta.lastUpdated\nsubtype: dateTime",
+              "name": "_lastUpdated",
+              "type": "date"
+            },
+            {
+              "documentation": "expression: Resource.meta.profile",
+              "name": "_profile",
+              "type": "reference"
+            },
+            {
+              "documentation": "expression: Resource.meta.security\nsubtype: Coding",
+              "name": "_security",
+              "type": "token"
+            },
+            {
+              "documentation": "expression: Resource.meta.tag\nsubtype: Coding",
+              "name": "_tag",
+              "type": "token"
+            },
+            {
+              "name": "_has",
+              "type": "special"
+            },
+            {
+              "name": "_include",
+              "type": "special"
+            },
+            {
+              "name": "_include:iterate",
+              "type": "special"
+            },
+            {
+              "name": "_revinclude",
+              "type": "special"
+            },
+            {
+              "name": "_revinclude:iterate",
+              "type": "special"
+            },
+            {
+              "name": "context-type-quantity",
+              "type": "composite"
+            },
+            {
+              "name": "context-type-value",
+              "type": "composite"
             }
           ],
           "type": "ConceptMap"
@@ -6255,207 +6070,160 @@
           ],
           "searchParam": [
             {
-              "name": "code",
-              "type": "token"
-            },
-            {
+              "documentation": "expression: (ValueSet.useContext.value.ofType(CodeableConcept))\nsubtype: CodeableConcept",
               "name": "context",
               "type": "token"
             },
             {
-              "name": "context-type",
+              "documentation": "expression: (ValueSet.useContext.value.ofType(Quantity)) | (ValueSet.useContext.value.ofType(Range))",
+              "name": "context-quantity",
+              "type": "quantity"
+            },
+            {
+              "documentation": "expression: Resource.id\nsubtype: id",
+              "name": "_id",
               "type": "token"
             },
             {
-              "name": "date",
+              "documentation": "expression: Resource.meta.lastUpdated\nsubtype: dateTime",
+              "name": "_lastUpdated",
               "type": "date"
             },
             {
-              "name": "derived-from",
+              "documentation": "expression: Resource.meta.profile",
+              "name": "_profile",
               "type": "reference"
             },
             {
-              "name": "description",
-              "type": "string"
-            },
-            {
-              "name": "effective",
-              "type": "date"
-            },
-            {
-              "name": "expansion",
-              "type": "uri"
-            },
-            {
-              "name": "identifier",
+              "documentation": "expression: Resource.meta.security\nsubtype: Coding",
+              "name": "_security",
               "type": "token"
             },
             {
-              "name": "jurisdiction",
+              "documentation": "expression: Resource.meta.tag\nsubtype: Coding",
+              "name": "_tag",
               "type": "token"
             },
             {
-              "name": "name",
-              "type": "string"
-            },
-            {
-              "name": "predecessor",
-              "type": "reference"
-            },
-            {
-              "name": "publisher",
-              "type": "string"
-            },
-            {
+              "documentation": "expression: ValueSet.compose.include.system",
               "name": "reference",
               "type": "uri"
             },
             {
-              "name": "status",
-              "type": "token"
-            },
-            {
-              "name": "title",
-              "type": "string"
-            },
-            {
-              "name": "topic",
-              "type": "token"
-            },
-            {
-              "name": "url",
-              "type": "uri"
-            },
-            {
-              "name": "version",
-              "type": "token"
-            }
-          ],
-          "type": "ValueSet"
-        },
-        {
-          "conditionalCreate": false,
-          "conditionalPatch": false,
-          "conditionalRead": "not-supported",
-          "conditionalUpdate": false,
-          "interaction": [
-            {
-              "code": "create"
-            },
-            {
-              "code": "history-instance"
-            },
-            {
-              "code": "read"
-            },
-            {
-              "code": "search-type"
-            },
-            {
-              "code": "update"
-            },
-            {
-              "code": "vread"
-            }
-          ],
-          "searchParam": [
-            {
-              "name": "contact",
-              "type": "string"
-            },
-            {
-              "name": "context",
-              "type": "token"
-            },
-            {
-              "name": "context-type",
-              "type": "token"
-            },
-            {
+              "documentation": "expression: ValueSet.date\nsubtype: dateTime",
               "name": "date",
               "type": "date"
             },
             {
-              "name": "derived-from",
-              "type": "reference"
-            },
-            {
+              "documentation": "expression: ValueSet.description",
               "name": "description",
               "type": "string"
             },
             {
+              "documentation": "expression: ValueSet.effectivePeriod\nsubtype: period",
               "name": "effective",
               "type": "date"
             },
             {
-              "name": "id-type",
+              "documentation": "expression: ValueSet.expansion.contains.code | ValueSet.compose.include.concept.code\nsubtype: code",
+              "name": "code",
               "type": "token"
             },
             {
+              "documentation": "expression: ValueSet.expansion.identifier",
+              "name": "expansion",
+              "type": "uri"
+            },
+            {
+              "documentation": "expression: ValueSet.identifier\nsubtype: Identifier",
               "name": "identifier",
               "type": "token"
             },
             {
+              "documentation": "expression: ValueSet.jurisdiction\nsubtype: CodeableConcept",
               "name": "jurisdiction",
               "type": "token"
             },
             {
-              "name": "kind",
-              "type": "token"
-            },
-            {
+              "documentation": "expression: ValueSet.name",
               "name": "name",
               "type": "string"
             },
             {
-              "name": "period",
-              "type": "date"
-            },
-            {
-              "name": "predecessor",
-              "type": "reference"
-            },
-            {
+              "documentation": "expression: ValueSet.publisher",
               "name": "publisher",
               "type": "string"
             },
             {
-              "name": "responsible",
-              "type": "string"
+              "documentation": "expression: ValueSet.relatedArtifact.where(type='derived-from').resource\n(Any)",
+              "name": "derived-from",
+              "type": "reference"
             },
             {
+              "documentation": "expression: ValueSet.relatedArtifact.where(type='predecessor').resource\n(Any)",
+              "name": "predecessor",
+              "type": "reference"
+            },
+            {
+              "documentation": "expression: ValueSet.status\nsubtype: code",
               "name": "status",
               "type": "token"
             },
             {
-              "name": "telecom",
-              "type": "token"
+              "documentation": "expression: ValueSet.title",
+              "name": "title",
+              "type": "string"
             },
             {
+              "documentation": "expression: ValueSet.topic\nsubtype: CodeableConcept",
               "name": "topic",
               "type": "token"
             },
             {
-              "name": "type",
-              "type": "token"
-            },
-            {
+              "documentation": "expression: ValueSet.url",
               "name": "url",
               "type": "uri"
             },
             {
-              "name": "value",
-              "type": "string"
+              "documentation": "expression: ValueSet.useContext.code\nsubtype: Coding",
+              "name": "context-type",
+              "type": "token"
             },
             {
+              "documentation": "expression: ValueSet.version\nsubtype: string",
               "name": "version",
               "type": "token"
+            },
+            {
+              "name": "_has",
+              "type": "special"
+            },
+            {
+              "name": "_include",
+              "type": "special"
+            },
+            {
+              "name": "_include:iterate",
+              "type": "special"
+            },
+            {
+              "name": "_revinclude",
+              "type": "special"
+            },
+            {
+              "name": "_revinclude:iterate",
+              "type": "special"
+            },
+            {
+              "name": "context-type-quantity",
+              "type": "composite"
+            },
+            {
+              "name": "context-type-value",
+              "type": "composite"
             }
           ],
-          "supportedProfile": [
-            "https://dhp.uz/fhir/core/StructureDefinition/uz-core-consent"
-          ],
-          "type": "Consent"
+          "type": "ValueSet"
         },
         {
           "conditionalCreate": false,
@@ -6782,6 +6550,395 @@
           ],
           "searchParam": [
             {
+              "documentation": "expression: (NamingSystem.useContext.value.ofType(CodeableConcept))\nsubtype: CodeableConcept",
+              "name": "context",
+              "type": "token"
+            },
+            {
+              "documentation": "expression: (NamingSystem.useContext.value.ofType(Quantity)) | (NamingSystem.useContext.value.ofType(Range))",
+              "name": "context-quantity",
+              "type": "quantity"
+            },
+            {
+              "documentation": "expression: NamingSystem.contact.name",
+              "name": "contact",
+              "type": "string"
+            },
+            {
+              "documentation": "expression: NamingSystem.contact.telecom\nsubtype: ContactPoint",
+              "name": "telecom",
+              "type": "token"
+            },
+            {
+              "documentation": "expression: NamingSystem.date\nsubtype: dateTime",
+              "name": "date",
+              "type": "date"
+            },
+            {
+              "documentation": "expression: NamingSystem.description",
+              "name": "description",
+              "type": "string"
+            },
+            {
+              "documentation": "expression: NamingSystem.effectivePeriod\nsubtype: period",
+              "name": "effective",
+              "type": "date"
+            },
+            {
+              "documentation": "expression: NamingSystem.identifier\nsubtype: Identifier",
+              "name": "identifier",
+              "type": "token"
+            },
+            {
+              "documentation": "expression: NamingSystem.jurisdiction\nsubtype: CodeableConcept",
+              "name": "jurisdiction",
+              "type": "token"
+            },
+            {
+              "documentation": "expression: NamingSystem.kind\nsubtype: code",
+              "name": "kind",
+              "type": "token"
+            },
+            {
+              "documentation": "expression: NamingSystem.name",
+              "name": "name",
+              "type": "string"
+            },
+            {
+              "documentation": "expression: NamingSystem.publisher",
+              "name": "publisher",
+              "type": "string"
+            },
+            {
+              "documentation": "expression: NamingSystem.relatedArtifact.where(type='derived-from').resource\n(Any)",
+              "name": "derived-from",
+              "type": "reference"
+            },
+            {
+              "documentation": "expression: NamingSystem.relatedArtifact.where(type='predecessor').resource\n(Any)",
+              "name": "predecessor",
+              "type": "reference"
+            },
+            {
+              "documentation": "expression: NamingSystem.responsible",
+              "name": "responsible",
+              "type": "string"
+            },
+            {
+              "documentation": "expression: NamingSystem.status\nsubtype: code",
+              "name": "status",
+              "type": "token"
+            },
+            {
+              "documentation": "expression: NamingSystem.topic\nsubtype: CodeableConcept",
+              "name": "topic",
+              "type": "token"
+            },
+            {
+              "documentation": "expression: NamingSystem.type\nsubtype: CodeableConcept",
+              "name": "type",
+              "type": "token"
+            },
+            {
+              "documentation": "expression: NamingSystem.uniqueId.period\nsubtype: period",
+              "name": "period",
+              "type": "date"
+            },
+            {
+              "documentation": "expression: NamingSystem.uniqueId.type\nsubtype: code",
+              "name": "id-type",
+              "type": "token"
+            },
+            {
+              "documentation": "expression: NamingSystem.uniqueId.value",
+              "name": "value",
+              "type": "string"
+            },
+            {
+              "documentation": "expression: NamingSystem.url",
+              "name": "url",
+              "type": "uri"
+            },
+            {
+              "documentation": "expression: NamingSystem.useContext.code\nsubtype: Coding",
+              "name": "context-type",
+              "type": "token"
+            },
+            {
+              "documentation": "expression: NamingSystem.version\nsubtype: string",
+              "name": "version",
+              "type": "token"
+            },
+            {
+              "documentation": "expression: Resource.id\nsubtype: id",
+              "name": "_id",
+              "type": "token"
+            },
+            {
+              "documentation": "expression: Resource.meta.lastUpdated\nsubtype: dateTime",
+              "name": "_lastUpdated",
+              "type": "date"
+            },
+            {
+              "documentation": "expression: Resource.meta.profile",
+              "name": "_profile",
+              "type": "reference"
+            },
+            {
+              "documentation": "expression: Resource.meta.security\nsubtype: Coding",
+              "name": "_security",
+              "type": "token"
+            },
+            {
+              "documentation": "expression: Resource.meta.tag\nsubtype: Coding",
+              "name": "_tag",
+              "type": "token"
+            },
+            {
+              "name": "_has",
+              "type": "special"
+            },
+            {
+              "name": "_include",
+              "type": "special"
+            },
+            {
+              "name": "_include:iterate",
+              "type": "special"
+            },
+            {
+              "name": "_revinclude",
+              "type": "special"
+            },
+            {
+              "name": "_revinclude:iterate",
+              "type": "special"
+            },
+            {
+              "name": "context-type-quantity",
+              "type": "composite"
+            },
+            {
+              "name": "context-type-value",
+              "type": "composite"
+            }
+          ],
+          "type": "NamingSystem"
+        },
+        {
+          "conditionalCreate": false,
+          "conditionalPatch": false,
+          "conditionalRead": "not-supported",
+          "conditionalUpdate": false,
+          "interaction": [
+            {
+              "code": "create"
+            },
+            {
+              "code": "history-instance"
+            },
+            {
+              "code": "read"
+            },
+            {
+              "code": "search-type"
+            },
+            {
+              "code": "update"
+            },
+            {
+              "code": "vread"
+            }
+          ],
+          "searchParam": [
+            {
+              "documentation": "expression: (OperationDefinition.useContext.value.ofType(CodeableConcept))\nsubtype: CodeableConcept",
+              "name": "context",
+              "type": "token"
+            },
+            {
+              "documentation": "expression: (OperationDefinition.useContext.value.ofType(Quantity)) | (OperationDefinition.useContext.value.ofType(Range))",
+              "name": "context-quantity",
+              "type": "quantity"
+            },
+            {
+              "documentation": "expression: OperationDefinition.base",
+              "name": "base",
+              "type": "reference"
+            },
+            {
+              "documentation": "expression: OperationDefinition.code\nsubtype: code",
+              "name": "code",
+              "type": "token"
+            },
+            {
+              "documentation": "expression: OperationDefinition.date\nsubtype: dateTime",
+              "name": "date",
+              "type": "date"
+            },
+            {
+              "documentation": "expression: OperationDefinition.description",
+              "name": "description",
+              "type": "string"
+            },
+            {
+              "documentation": "expression: OperationDefinition.identifier\nsubtype: Identifier",
+              "name": "identifier",
+              "type": "token"
+            },
+            {
+              "documentation": "expression: OperationDefinition.inputProfile",
+              "name": "input-profile",
+              "type": "reference"
+            },
+            {
+              "documentation": "expression: OperationDefinition.instance\nsubtype: boolean",
+              "name": "instance",
+              "type": "token"
+            },
+            {
+              "documentation": "expression: OperationDefinition.jurisdiction\nsubtype: CodeableConcept",
+              "name": "jurisdiction",
+              "type": "token"
+            },
+            {
+              "documentation": "expression: OperationDefinition.kind\nsubtype: code",
+              "name": "kind",
+              "type": "token"
+            },
+            {
+              "documentation": "expression: OperationDefinition.name",
+              "name": "name",
+              "type": "string"
+            },
+            {
+              "documentation": "expression: OperationDefinition.outputProfile",
+              "name": "output-profile",
+              "type": "reference"
+            },
+            {
+              "documentation": "expression: OperationDefinition.publisher",
+              "name": "publisher",
+              "type": "string"
+            },
+            {
+              "documentation": "expression: OperationDefinition.status\nsubtype: code",
+              "name": "status",
+              "type": "token"
+            },
+            {
+              "documentation": "expression: OperationDefinition.system\nsubtype: boolean",
+              "name": "system",
+              "type": "token"
+            },
+            {
+              "documentation": "expression: OperationDefinition.title",
+              "name": "title",
+              "type": "string"
+            },
+            {
+              "documentation": "expression: OperationDefinition.type\nsubtype: boolean",
+              "name": "type",
+              "type": "token"
+            },
+            {
+              "documentation": "expression: OperationDefinition.url",
+              "name": "url",
+              "type": "uri"
+            },
+            {
+              "documentation": "expression: OperationDefinition.useContext.code\nsubtype: Coding",
+              "name": "context-type",
+              "type": "token"
+            },
+            {
+              "documentation": "expression: OperationDefinition.version\nsubtype: string",
+              "name": "version",
+              "type": "token"
+            },
+            {
+              "documentation": "expression: Resource.id\nsubtype: id",
+              "name": "_id",
+              "type": "token"
+            },
+            {
+              "documentation": "expression: Resource.meta.lastUpdated\nsubtype: dateTime",
+              "name": "_lastUpdated",
+              "type": "date"
+            },
+            {
+              "documentation": "expression: Resource.meta.profile",
+              "name": "_profile",
+              "type": "reference"
+            },
+            {
+              "documentation": "expression: Resource.meta.security\nsubtype: Coding",
+              "name": "_security",
+              "type": "token"
+            },
+            {
+              "documentation": "expression: Resource.meta.tag\nsubtype: Coding",
+              "name": "_tag",
+              "type": "token"
+            },
+            {
+              "name": "_has",
+              "type": "special"
+            },
+            {
+              "name": "_include",
+              "type": "special"
+            },
+            {
+              "name": "_include:iterate",
+              "type": "special"
+            },
+            {
+              "name": "_revinclude",
+              "type": "special"
+            },
+            {
+              "name": "_revinclude:iterate",
+              "type": "special"
+            },
+            {
+              "name": "context-type-quantity",
+              "type": "composite"
+            },
+            {
+              "name": "context-type-value",
+              "type": "composite"
+            }
+          ],
+          "type": "OperationDefinition"
+        },
+        {
+          "conditionalCreate": false,
+          "conditionalPatch": false,
+          "conditionalRead": "not-supported",
+          "conditionalUpdate": false,
+          "interaction": [
+            {
+              "code": "create"
+            },
+            {
+              "code": "history-instance"
+            },
+            {
+              "code": "read"
+            },
+            {
+              "code": "search-type"
+            },
+            {
+              "code": "update"
+            },
+            {
+              "code": "vread"
+            }
+          ],
+          "searchParam": [
+            {
               "documentation": "expression: (PlanDefinition.useContext.value.ofType(CodeableConcept))\nsubtype: CodeableConcept",
               "name": "context",
               "type": "token"
@@ -6938,6 +7095,389 @@
             }
           ],
           "type": "PlanDefinition"
+        },
+        {
+          "conditionalCreate": false,
+          "conditionalPatch": false,
+          "conditionalRead": "not-supported",
+          "conditionalUpdate": false,
+          "interaction": [
+            {
+              "code": "create"
+            },
+            {
+              "code": "history-instance"
+            },
+            {
+              "code": "read"
+            },
+            {
+              "code": "search-type"
+            },
+            {
+              "code": "update"
+            },
+            {
+              "code": "vread"
+            }
+          ],
+          "searchParam": [
+            {
+              "documentation": "expression: (SearchParameter.useContext.value.ofType(CodeableConcept))\nsubtype: CodeableConcept",
+              "name": "context",
+              "type": "token"
+            },
+            {
+              "documentation": "expression: (SearchParameter.useContext.value.ofType(Quantity)) | (SearchParameter.useContext.value.ofType(Range))",
+              "name": "context-quantity",
+              "type": "quantity"
+            },
+            {
+              "documentation": "expression: Resource.id\nsubtype: id",
+              "name": "_id",
+              "type": "token"
+            },
+            {
+              "documentation": "expression: Resource.meta.lastUpdated\nsubtype: dateTime",
+              "name": "_lastUpdated",
+              "type": "date"
+            },
+            {
+              "documentation": "expression: Resource.meta.profile",
+              "name": "_profile",
+              "type": "reference"
+            },
+            {
+              "documentation": "expression: Resource.meta.security\nsubtype: Coding",
+              "name": "_security",
+              "type": "token"
+            },
+            {
+              "documentation": "expression: Resource.meta.tag\nsubtype: Coding",
+              "name": "_tag",
+              "type": "token"
+            },
+            {
+              "documentation": "expression: SearchParameter.base\nsubtype: code",
+              "name": "base",
+              "type": "token"
+            },
+            {
+              "documentation": "expression: SearchParameter.code\nsubtype: code",
+              "name": "code",
+              "type": "token"
+            },
+            {
+              "documentation": "expression: SearchParameter.component.definition",
+              "name": "component",
+              "type": "reference"
+            },
+            {
+              "documentation": "expression: SearchParameter.date\nsubtype: dateTime",
+              "name": "date",
+              "type": "date"
+            },
+            {
+              "documentation": "expression: SearchParameter.derivedFrom",
+              "name": "derived-from",
+              "type": "reference"
+            },
+            {
+              "documentation": "expression: SearchParameter.description",
+              "name": "description",
+              "type": "string"
+            },
+            {
+              "documentation": "expression: SearchParameter.identifier\nsubtype: Identifier",
+              "name": "identifier",
+              "type": "token"
+            },
+            {
+              "documentation": "expression: SearchParameter.jurisdiction\nsubtype: CodeableConcept",
+              "name": "jurisdiction",
+              "type": "token"
+            },
+            {
+              "documentation": "expression: SearchParameter.name",
+              "name": "name",
+              "type": "string"
+            },
+            {
+              "documentation": "expression: SearchParameter.publisher",
+              "name": "publisher",
+              "type": "string"
+            },
+            {
+              "documentation": "expression: SearchParameter.status\nsubtype: code",
+              "name": "status",
+              "type": "token"
+            },
+            {
+              "documentation": "expression: SearchParameter.target\nsubtype: code",
+              "name": "target",
+              "type": "token"
+            },
+            {
+              "documentation": "expression: SearchParameter.type\nsubtype: code",
+              "name": "type",
+              "type": "token"
+            },
+            {
+              "documentation": "expression: SearchParameter.url",
+              "name": "url",
+              "type": "uri"
+            },
+            {
+              "documentation": "expression: SearchParameter.useContext.code\nsubtype: Coding",
+              "name": "context-type",
+              "type": "token"
+            },
+            {
+              "documentation": "expression: SearchParameter.version\nsubtype: string",
+              "name": "version",
+              "type": "token"
+            },
+            {
+              "name": "_has",
+              "type": "special"
+            },
+            {
+              "name": "_include",
+              "type": "special"
+            },
+            {
+              "name": "_include:iterate",
+              "type": "special"
+            },
+            {
+              "name": "_revinclude",
+              "type": "special"
+            },
+            {
+              "name": "_revinclude:iterate",
+              "type": "special"
+            },
+            {
+              "name": "context-type-quantity",
+              "type": "composite"
+            },
+            {
+              "name": "context-type-value",
+              "type": "composite"
+            }
+          ],
+          "type": "SearchParameter"
+        },
+        {
+          "conditionalCreate": false,
+          "conditionalPatch": false,
+          "conditionalRead": "not-supported",
+          "conditionalUpdate": false,
+          "interaction": [
+            {
+              "code": "create"
+            },
+            {
+              "code": "history-instance"
+            },
+            {
+              "code": "read"
+            },
+            {
+              "code": "search-type"
+            },
+            {
+              "code": "update"
+            },
+            {
+              "code": "vread"
+            }
+          ],
+          "searchParam": [
+            {
+              "documentation": "expression: (StructureDefinition.useContext.value.ofType(CodeableConcept))\nsubtype: CodeableConcept",
+              "name": "context",
+              "type": "token"
+            },
+            {
+              "documentation": "expression: (StructureDefinition.useContext.value.ofType(Quantity)) | (StructureDefinition.useContext.value.ofType(Range))",
+              "name": "context-quantity",
+              "type": "quantity"
+            },
+            {
+              "documentation": "expression: Resource.id\nsubtype: id",
+              "name": "_id",
+              "type": "token"
+            },
+            {
+              "documentation": "expression: Resource.meta.lastUpdated\nsubtype: dateTime",
+              "name": "_lastUpdated",
+              "type": "date"
+            },
+            {
+              "documentation": "expression: Resource.meta.profile",
+              "name": "_profile",
+              "type": "reference"
+            },
+            {
+              "documentation": "expression: Resource.meta.security\nsubtype: Coding",
+              "name": "_security",
+              "type": "token"
+            },
+            {
+              "documentation": "expression: Resource.meta.tag\nsubtype: Coding",
+              "name": "_tag",
+              "type": "token"
+            },
+            {
+              "documentation": "expression: StructureDefinition.abstract\nsubtype: boolean",
+              "name": "abstract",
+              "type": "token"
+            },
+            {
+              "documentation": "expression: StructureDefinition.baseDefinition",
+              "name": "base",
+              "type": "reference"
+            },
+            {
+              "documentation": "expression: StructureDefinition.context.expression\nsubtype: string",
+              "name": "ext-context-expression",
+              "type": "token"
+            },
+            {
+              "documentation": "expression: StructureDefinition.context.type\nsubtype: code",
+              "name": "ext-context-type",
+              "type": "token"
+            },
+            {
+              "documentation": "expression: StructureDefinition.date\nsubtype: dateTime",
+              "name": "date",
+              "type": "date"
+            },
+            {
+              "documentation": "expression: StructureDefinition.derivation\nsubtype: code",
+              "name": "derivation",
+              "type": "token"
+            },
+            {
+              "documentation": "expression: StructureDefinition.description",
+              "name": "description",
+              "type": "string"
+            },
+            {
+              "documentation": "expression: StructureDefinition.experimental\nsubtype: boolean",
+              "name": "experimental",
+              "type": "token"
+            },
+            {
+              "documentation": "expression: StructureDefinition.identifier\nsubtype: Identifier",
+              "name": "identifier",
+              "type": "token"
+            },
+            {
+              "documentation": "expression: StructureDefinition.jurisdiction\nsubtype: CodeableConcept",
+              "name": "jurisdiction",
+              "type": "token"
+            },
+            {
+              "documentation": "expression: StructureDefinition.keyword\nsubtype: Coding",
+              "name": "keyword",
+              "type": "token"
+            },
+            {
+              "documentation": "expression: StructureDefinition.kind\nsubtype: code",
+              "name": "kind",
+              "type": "token"
+            },
+            {
+              "documentation": "expression: StructureDefinition.name",
+              "name": "name",
+              "type": "string"
+            },
+            {
+              "documentation": "expression: StructureDefinition.publisher",
+              "name": "publisher",
+              "type": "string"
+            },
+            {
+              "documentation": "expression: StructureDefinition.snapshot.element.base.path | StructureDefinition.differential.element.base.path\nsubtype: string",
+              "name": "base-path",
+              "type": "token"
+            },
+            {
+              "documentation": "expression: StructureDefinition.snapshot.element.binding.valueSet",
+              "name": "valueset",
+              "type": "reference"
+            },
+            {
+              "documentation": "expression: StructureDefinition.snapshot.element.path | StructureDefinition.differential.element.path\nsubtype: string",
+              "name": "path",
+              "type": "token"
+            },
+            {
+              "documentation": "expression: StructureDefinition.status\nsubtype: code",
+              "name": "status",
+              "type": "token"
+            },
+            {
+              "documentation": "expression: StructureDefinition.title",
+              "name": "title",
+              "type": "string"
+            },
+            {
+              "documentation": "expression: StructureDefinition.type",
+              "name": "type",
+              "type": "uri"
+            },
+            {
+              "documentation": "expression: StructureDefinition.url",
+              "name": "url",
+              "type": "uri"
+            },
+            {
+              "documentation": "expression: StructureDefinition.useContext.code\nsubtype: Coding",
+              "name": "context-type",
+              "type": "token"
+            },
+            {
+              "documentation": "expression: StructureDefinition.version\nsubtype: string",
+              "name": "version",
+              "type": "token"
+            },
+            {
+              "name": "_has",
+              "type": "special"
+            },
+            {
+              "name": "_include",
+              "type": "special"
+            },
+            {
+              "name": "_include:iterate",
+              "type": "special"
+            },
+            {
+              "name": "_revinclude",
+              "type": "special"
+            },
+            {
+              "name": "_revinclude:iterate",
+              "type": "special"
+            },
+            {
+              "name": "context-type-quantity",
+              "type": "composite"
+            },
+            {
+              "name": "context-type-value",
+              "type": "composite"
+            },
+            {
+              "name": "ext-context",
+              "type": "composite"
+            }
+          ],
+          "type": "StructureDefinition"
         },
         {
           "conditionalCreate": false,
@@ -7693,13 +8233,13 @@
           "type": "SupplyRequest"
         },
         {
-          "conditionalCreate": false,
+          "conditionalDelete": "not-supported",
           "conditionalPatch": false,
           "conditionalRead": "not-supported",
           "conditionalUpdate": false,
           "interaction": [
             {
-              "code": "create"
+              "code": "delete"
             },
             {
               "code": "history-instance"
@@ -7717,656 +8257,155 @@
               "code": "vread"
             }
           ],
-          "searchParam": [
+          "operation": [
             {
-              "name": "abstract",
-              "type": "token"
-            },
-            {
-              "name": "base",
-              "type": "reference"
-            },
-            {
-              "name": "base-path",
-              "type": "token"
-            },
-            {
-              "name": "context",
-              "type": "token"
-            },
-            {
-              "name": "context-type",
-              "type": "token"
-            },
-            {
-              "name": "date",
-              "type": "date"
-            },
-            {
-              "name": "derivation",
-              "type": "token"
-            },
-            {
-              "name": "description",
-              "type": "string"
-            },
-            {
-              "name": "experimental",
-              "type": "token"
-            },
-            {
-              "name": "ext-context-expression",
-              "type": "token"
-            },
-            {
-              "name": "ext-context-type",
-              "type": "token"
-            },
-            {
-              "name": "identifier",
-              "type": "token"
-            },
-            {
-              "name": "jurisdiction",
-              "type": "token"
-            },
-            {
-              "name": "keyword",
-              "type": "token"
-            },
-            {
-              "name": "kind",
-              "type": "token"
-            },
-            {
-              "name": "name",
-              "type": "string"
-            },
-            {
-              "name": "path",
-              "type": "token"
-            },
-            {
-              "name": "publisher",
-              "type": "string"
-            },
-            {
-              "name": "status",
-              "type": "token"
-            },
-            {
-              "name": "title",
-              "type": "string"
-            },
-            {
-              "name": "type",
-              "type": "uri"
-            },
-            {
-              "name": "url",
-              "type": "uri"
-            },
-            {
-              "name": "valueset",
-              "type": "reference"
-            },
-            {
-              "name": "version",
-              "type": "token"
-            }
-          ],
-          "type": "StructureDefinition"
-        },
-        {
-          "conditionalCreate": false,
-          "conditionalPatch": false,
-          "conditionalRead": "not-supported",
-          "conditionalUpdate": false,
-          "interaction": [
-            {
-              "code": "create"
-            },
-            {
-              "code": "history-instance"
-            },
-            {
-              "code": "read"
-            },
-            {
-              "code": "search-type"
-            },
-            {
-              "code": "update"
-            },
-            {
-              "code": "vread"
+              "definition": "https://dhp.uz/fhir/core/OperationDefinition/person-populate",
+              "name": "populate"
             }
           ],
           "searchParam": [
             {
-              "name": "base",
-              "type": "reference"
-            },
-            {
-              "name": "code",
-              "type": "token"
-            },
-            {
-              "name": "context",
-              "type": "token"
-            },
-            {
-              "name": "context-type",
-              "type": "token"
-            },
-            {
-              "name": "date",
+              "documentation": "expression: (Person.deceased.ofType(dateTime))\nsubtype: dateTime",
+              "name": "death-date",
               "type": "date"
             },
             {
-              "name": "description",
+              "documentation": "expression: Person.address.city",
+              "name": "address-city",
               "type": "string"
             },
             {
+              "documentation": "expression: Person.address.city |\n\t\t\tPerson.address.country |\n\t\t\tPerson.address.postalCode |\n\t\t\tPerson.address.state |\n\t\t\tPerson.address.line |\n\t\t\tPerson.address.district |\n\t\t\tPerson.address.text",
+              "name": "address",
+              "type": "string"
+            },
+            {
+              "documentation": "expression: Person.address.country",
+              "name": "address-country",
+              "type": "string"
+            },
+            {
+              "documentation": "expression: Person.address.postalCode",
+              "name": "address-postalcode",
+              "type": "string"
+            },
+            {
+              "documentation": "expression: Person.address.state",
+              "name": "address-state",
+              "type": "string"
+            },
+            {
+              "documentation": "expression: Person.address.use\nsubtype: code",
+              "name": "address-use",
+              "type": "token"
+            },
+            {
+              "documentation": "expression: Person.birthDate\nsubtype: date",
+              "name": "birthdate",
+              "type": "date"
+            },
+            {
+              "documentation": "expression: Person.deceased.exists() and Person.deceased != false\nsubtype: boolean",
+              "name": "deceased",
+              "type": "token"
+            },
+            {
+              "documentation": "expression: Person.gender\nsubtype: code",
+              "name": "gender",
+              "type": "token"
+            },
+            {
+              "documentation": "expression: Person.identifier\nsubtype: Identifier",
               "name": "identifier",
               "type": "token"
             },
             {
-              "name": "input-profile",
+              "documentation": "expression: Person.link.target",
+              "name": "link",
               "type": "reference"
             },
             {
-              "name": "instance",
-              "type": "token"
+              "documentation": "expression: Person.managingOrganization",
+              "name": "organization",
+              "type": "reference"
             },
             {
-              "name": "jurisdiction",
-              "type": "token"
+              "documentation": "expression: Person.name.family",
+              "name": "family",
+              "type": "string"
             },
             {
-              "name": "kind",
-              "type": "token"
+              "documentation": "expression: Person.name.given",
+              "name": "given",
+              "type": "string"
             },
             {
+              "documentation": "expression: Person.name.given |\n\t\t\tPerson.name.family |\n\t\t\tPerson.name.prefix |\n\t\t\tPerson.name.suffix |\n\t\t\tPerson.name.text",
               "name": "name",
               "type": "string"
             },
             {
-              "name": "output-profile",
-              "type": "reference"
-            },
-            {
-              "name": "publisher",
-              "type": "string"
-            },
-            {
-              "name": "status",
-              "type": "token"
-            },
-            {
-              "name": "system",
-              "type": "token"
-            },
-            {
-              "name": "title",
-              "type": "string"
-            },
-            {
-              "name": "type",
-              "type": "token"
-            },
-            {
-              "name": "url",
-              "type": "uri"
-            },
-            {
-              "name": "version",
-              "type": "token"
-            }
-          ],
-          "type": "OperationDefinition"
-        },
-        {
-          "conditionalCreate": false,
-          "conditionalPatch": false,
-          "conditionalRead": "not-supported",
-          "conditionalUpdate": false,
-          "interaction": [
-            {
-              "code": "create"
-            },
-            {
-              "code": "history-instance"
-            },
-            {
-              "code": "read"
-            },
-            {
-              "code": "search-type"
-            },
-            {
-              "code": "update"
-            },
-            {
-              "code": "vread"
-            }
-          ],
-          "searchParam": [
-            {
-              "name": "base",
-              "type": "token"
-            },
-            {
-              "name": "code",
-              "type": "token"
-            },
-            {
-              "name": "component",
-              "type": "reference"
-            },
-            {
-              "name": "context",
-              "type": "token"
-            },
-            {
-              "name": "context-type",
-              "type": "token"
-            },
-            {
-              "name": "date",
-              "type": "date"
-            },
-            {
-              "name": "derived-from",
-              "type": "reference"
-            },
-            {
-              "name": "description",
-              "type": "string"
-            },
-            {
-              "name": "identifier",
-              "type": "token"
-            },
-            {
-              "name": "jurisdiction",
-              "type": "token"
-            },
-            {
-              "name": "name",
-              "type": "string"
-            },
-            {
-              "name": "publisher",
-              "type": "string"
-            },
-            {
-              "name": "status",
-              "type": "token"
-            },
-            {
-              "name": "target",
-              "type": "token"
-            },
-            {
-              "name": "type",
-              "type": "token"
-            },
-            {
-              "name": "url",
-              "type": "uri"
-            },
-            {
-              "name": "version",
-              "type": "token"
-            }
-          ],
-          "type": "SearchParameter"
-        },
-        {
-          "conditionalCreate": false,
-          "conditionalPatch": false,
-          "conditionalRead": "not-supported",
-          "conditionalUpdate": false,
-          "interaction": [
-            {
-              "code": "create"
-            },
-            {
-              "code": "history-instance"
-            },
-            {
-              "code": "read"
-            },
-            {
-              "code": "search-type"
-            },
-            {
-              "code": "update"
-            },
-            {
-              "code": "vread"
-            }
-          ],
-          "searchParam": [
-            {
-              "name": "contact",
-              "type": "string"
-            },
-            {
-              "name": "context",
-              "type": "token"
-            },
-            {
-              "name": "context-type",
-              "type": "token"
-            },
-            {
-              "name": "date",
-              "type": "date"
-            },
-            {
-              "name": "derived-from",
-              "type": "reference"
-            },
-            {
-              "name": "description",
-              "type": "string"
-            },
-            {
-              "name": "effective",
-              "type": "date"
-            },
-            {
-              "name": "id-type",
-              "type": "token"
-            },
-            {
-              "name": "identifier",
-              "type": "token"
-            },
-            {
-              "name": "jurisdiction",
-              "type": "token"
-            },
-            {
-              "name": "kind",
-              "type": "token"
-            },
-            {
-              "name": "name",
-              "type": "string"
-            },
-            {
-              "name": "period",
-              "type": "date"
-            },
-            {
-              "name": "predecessor",
-              "type": "reference"
-            },
-            {
-              "name": "publisher",
-              "type": "string"
-            },
-            {
-              "name": "responsible",
-              "type": "string"
-            },
-            {
-              "name": "status",
-              "type": "token"
-            },
-            {
+              "documentation": "expression: Person.telecom\nsubtype: ContactPoint",
               "name": "telecom",
               "type": "token"
             },
             {
-              "name": "topic",
+              "documentation": "expression: Person.telecom.where(system='email')\nsubtype: ContactPoint",
+              "name": "email",
               "type": "token"
             },
             {
-              "name": "type",
+              "documentation": "expression: Person.telecom.where(system='phone')\nsubtype: ContactPoint",
+              "name": "phone",
               "type": "token"
             },
             {
-              "name": "url",
-              "type": "uri"
-            },
-            {
-              "name": "value",
-              "type": "string"
-            },
-            {
-              "name": "version",
-              "type": "token"
-            }
-          ],
-          "type": "NamingSystem"
-        },
-        {
-          "conditionalCreate": false,
-          "conditionalPatch": false,
-          "conditionalRead": "not-supported",
-          "interaction": [
-            {
-              "code": "create"
-            },
-            {
-              "code": "read"
-            },
-            {
-              "code": "search-type"
-            }
-          ],
-          "searchParam": [
-            {
-              "name": "contact",
-              "type": "string"
-            },
-            {
-              "name": "context",
+              "documentation": "expression: Resource.id\nsubtype: id",
+              "name": "_id",
               "type": "token"
             },
             {
-              "name": "context-type",
-              "type": "token"
-            },
-            {
-              "name": "date",
+              "documentation": "expression: Resource.meta.lastUpdated\nsubtype: dateTime",
+              "name": "_lastUpdated",
               "type": "date"
             },
             {
-              "name": "derived-from",
+              "documentation": "expression: Resource.meta.profile",
+              "name": "_profile",
               "type": "reference"
             },
             {
-              "name": "description",
-              "type": "string"
-            },
-            {
-              "name": "effective",
-              "type": "date"
-            },
-            {
-              "name": "id-type",
+              "documentation": "expression: Resource.meta.security\nsubtype: Coding",
+              "name": "_security",
               "type": "token"
             },
             {
-              "name": "identifier",
+              "documentation": "expression: Resource.meta.tag\nsubtype: Coding",
+              "name": "_tag",
               "type": "token"
             },
             {
-              "name": "jurisdiction",
-              "type": "token"
+              "name": "_has",
+              "type": "special"
             },
             {
-              "name": "kind",
-              "type": "token"
+              "name": "_include",
+              "type": "special"
             },
             {
-              "name": "name",
-              "type": "string"
+              "name": "_include:iterate",
+              "type": "special"
             },
             {
-              "name": "period",
-              "type": "date"
+              "name": "_revinclude",
+              "type": "special"
             },
             {
-              "name": "predecessor",
-              "type": "reference"
-            },
-            {
-              "name": "publisher",
-              "type": "string"
-            },
-            {
-              "name": "responsible",
-              "type": "string"
-            },
-            {
-              "name": "status",
-              "type": "token"
-            },
-            {
-              "name": "telecom",
-              "type": "token"
-            },
-            {
-              "name": "topic",
-              "type": "token"
-            },
-            {
-              "name": "type",
-              "type": "token"
-            },
-            {
-              "name": "url",
-              "type": "uri"
-            },
-            {
-              "name": "value",
-              "type": "string"
-            },
-            {
-              "name": "version",
-              "type": "token"
+              "name": "_revinclude:iterate",
+              "type": "special"
             }
           ],
-          "supportedProfile": [
-            "https://dhp.uz/fhir/core/StructureDefinition/uz-core-auditevent"
-          ],
-          "type": "AuditEvent"
-        },
-        {
-          "conditionalPatch": false,
-          "conditionalRead": "not-supported",
-          "interaction": [
-            {
-              "code": "read"
-            },
-            {
-              "code": "search-type"
-            }
-          ],
-          "searchParam": [
-            {
-              "name": "contact",
-              "type": "string"
-            },
-            {
-              "name": "context",
-              "type": "token"
-            },
-            {
-              "name": "context-type",
-              "type": "token"
-            },
-            {
-              "name": "date",
-              "type": "date"
-            },
-            {
-              "name": "derived-from",
-              "type": "reference"
-            },
-            {
-              "name": "description",
-              "type": "string"
-            },
-            {
-              "name": "effective",
-              "type": "date"
-            },
-            {
-              "name": "id-type",
-              "type": "token"
-            },
-            {
-              "name": "identifier",
-              "type": "token"
-            },
-            {
-              "name": "jurisdiction",
-              "type": "token"
-            },
-            {
-              "name": "kind",
-              "type": "token"
-            },
-            {
-              "name": "name",
-              "type": "string"
-            },
-            {
-              "name": "period",
-              "type": "date"
-            },
-            {
-              "name": "predecessor",
-              "type": "reference"
-            },
-            {
-              "name": "publisher",
-              "type": "string"
-            },
-            {
-              "name": "responsible",
-              "type": "string"
-            },
-            {
-              "name": "status",
-              "type": "token"
-            },
-            {
-              "name": "telecom",
-              "type": "token"
-            },
-            {
-              "name": "topic",
-              "type": "token"
-            },
-            {
-              "name": "type",
-              "type": "token"
-            },
-            {
-              "name": "url",
-              "type": "uri"
-            },
-            {
-              "name": "value",
-              "type": "string"
-            },
-            {
-              "name": "version",
-              "type": "token"
-            }
-          ],
-          "supportedProfile": [
-            "https://dhp.uz/fhir/core/StructureDefinition/uz-core-provenance"
-          ],
-          "type": "Provenance"
+          "type": "Person"
         },
         {
           "interaction": [
@@ -8425,6 +8464,16 @@
               "documentation": "expression: Resource.meta.profile",
               "name": "_profile",
               "type": "reference"
+            },
+            {
+              "documentation": "expression: Resource.meta.security\nsubtype: Coding",
+              "name": "_security",
+              "type": "token"
+            },
+            {
+              "documentation": "expression: Resource.meta.tag\nsubtype: Coding",
+              "name": "_tag",
+              "type": "token"
             },
             {
               "name": "_has",
