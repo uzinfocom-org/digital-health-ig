@@ -231,3 +231,6 @@ Alias: $v3-timing-event = http://terminology.hl7.org/CodeSystem/v3-TimingEvent
 Alias: $v3-gts-abbreviation = http://terminology.hl7.org/CodeSystem/v3-GTSAbbreviation
 Alias: $timing-abbreviation = http://terminology.hl7.org/CodeSystem/timing-abbreviation
 Alias: $general-activity-definition = https://dhp.uz/fhir/core/StructureDefinition/uz-core-activitydefinition
+Alias: $device-usage-status = http://hl7.org/fhir/deviceusage-status
+Alias: $device-usage-adherence = http://hl7.org/fhir/deviceusage-adherence-code
+Alias: $deviceusage-adherence-reason = http://hl7.org/fhir/deviceusage-adherence-reason 
