@@ -5,37 +5,37 @@ Description: "Codes for indicating the reason of device usage adherence with UZ/
 * insert SupplementCodeSystemDraft(device-usage-adherence-reason-cs, $deviceusage-adherence-reason, 5.0.0)
 
 * #lost "Lost"
-  * ^designation[+].language = #uz
+  * ^designation[0].language = #uz
   * ^designation[=].value = "Yo‘qolgan"
   * ^designation[+].language = #ru
   * ^designation[=].value = "Потерян"
 
 * #broken "Broken"
-  * ^designation[+].language = #uz
+  * ^designation[0].language = #uz
   * ^designation[=].value = "Buzilgan"
   * ^designation[+].language = #ru
-  * ^designation[=].value = "Сломан"        
+  * ^designation[=].value = "Сломан"
 
 * #forgot "Forgot"
-  * ^designation[+].language = #uz
+  * ^designation[0].language = #uz
   * ^designation[=].value = "Unutgan"
   * ^designation[+].language = #ru
   * ^designation[=].value = "Забыл"
 
 * #stolen "Stolen"
-  * ^designation[+].language = #uz
+  * ^designation[0].language = #uz
   * ^designation[=].value = "O‘g‘irlangan"
   * ^designation[+].language = #ru
   * ^designation[=].value = "Украден"
 
 * #prescribed "Prescribed"
-  * ^designation[+].language = #uz
+  * ^designation[0].language = #uz
   * ^designation[=].value = "Tayinlangan"
   * ^designation[+].language = #ru
   * ^designation[=].value = "Назначен"
 
 * #burned "Burned"
-  * ^designation[+].language = #uz
+  * ^designation[0].language = #uz
   * ^designation[=].value = "Yonib ketgan"
   * ^designation[+].language = #ru
   * ^designation[=].value = "Сожжен"

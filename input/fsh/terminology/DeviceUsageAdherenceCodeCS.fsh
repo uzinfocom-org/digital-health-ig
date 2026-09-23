@@ -6,19 +6,19 @@ Description: "Codes for indicating the adherence of device usage  with UZ/RU/EN 
 * insert SupplementCodeSystemDraft(device-usage-adherence-code-cs, $device-usage-adherence, 5.0.0)
 
 * #always "Always"
-  * ^designation[+].language = #uz
+  * ^designation[0].language = #uz
   * ^designation[=].value = "Doimiy"
   * ^designation[+].language = #ru
   * ^designation[=].value = "Всегда"
 
 * #sometimes "Sometimes"
-  * ^designation[+].language = #uz
+  * ^designation[0].language = #uz
   * ^designation[=].value = "Ba’zan"
   * ^designation[+].language = #ru
-  * ^designation[=].value = "Иногда"    
+  * ^designation[=].value = "Иногда"
 
 * #never "Never"
-  * ^designation[+].language = #uz      
-    * ^designation[=].value = "Hech qachon" 
-    * ^designation[+].language = #ru
-    * ^designation[=].value = "Никогда"
+  * ^designation[0].language = #uz
+  * ^designation[=].value = "Hech qachon"
+  * ^designation[+].language = #ru
+  * ^designation[=].value = "Никогда"
