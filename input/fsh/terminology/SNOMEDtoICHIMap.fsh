@@ -11,8 +11,6 @@ Description: "Maps clinical SNOMED CT codes to ICHI statistical codes for reimbu
 * experimental = true
 * date = "2025-01-29"
 * sourceScopeUri = "http://snomed.info/sct"
-// targetScope is the value set of permitted target codes, not the code system - the
-// publisher rejects a CodeSystem reference here now that ICHI resolves in this IG.
 * targetScopeCanonical = $ichi-vs
 
 * group[+].source = "http://snomed.info/sct"

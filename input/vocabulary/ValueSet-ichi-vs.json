@@ -7,7 +7,7 @@
   "status": "active",
   "experimental": true,
   "publisher": "Uzinfocom",
-  "description": "WHO International Classification of Health Interventions codes that are current in the release this IG is built against. Codes WHO has withdrawn are inactive in the code system and excluded here, so nothing new can be coded with one. Authored as JSON rather than FSH because SUSHI discards caret rules under ValueSet.compose, so compose.inactive cannot be expressed in FSH.",
+  "description": "WHO International Classification of Health Interventions codes that are current in the release this IG is built against. Codes WHO has withdrawn are inactive in the code system and excluded here, so nothing new can be coded with one.",
   "compose": {
     "inactive": false,
     "include": [
