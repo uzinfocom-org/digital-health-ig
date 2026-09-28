@@ -9,7 +9,7 @@ https://dhp.uz/fhir/core/sid/{namespace}/{country}/{type}[/subtype]
 ```
 
 Where:
-- `namespace`: `pid` (personal), `pro` (professional), `org` (organization), or `doc` (document)
+- `namespace`: `pid` (personal), `pro` (professional), `org` (organization), `doc` (document), or `prg` (program)
 - `country`: ISO 3166-1 two-letter country code (e.g., `uz` for Uzbekistan)
 - `type`: Identifier type (e.g., `ppn` for passport, `ni` for national ID)
 - `subtype`: Optional further classification (e.g., `local`, `intl` for passport types)
@@ -276,6 +276,31 @@ Documents are identified using the `doc` namespace. This allows tracking of clin
 
 **System URI pattern**: `https://dhp.uz/fhir/core/sid/doc/{country}/{type}`
 
+### Program identifiers
+
+The `prg` namespace records which national health program a resource was created under - a screening program, a vaccination campaign, dispensary follow-up of a chronic condition, and so on. There is one system for every program: the program is the identifier value, so a new program needs a new value, not a new identifier system.
+
+**System URI**: `https://dhp.uz/fhir/core/sid/prg/uz/program`
+
+The value is the program's SNOMED CT concept id where SNOMED CT has a suitable concept - for example `268547008` (Screening for breast cancer) or `171183004` (Diabetes screening). Where it has none, use the program's code from a DHP code system, such as a code from [ScreeningCodeCS](CodeSystem-screening-code-cs.html).
+
+- Put it on the clinical and workflow resources recorded under the program: Observation, DiagnosticReport, ServiceRequest, Condition, Procedure, Immunization, Consent, Specimen, Composition, Questionnaire and QuestionnaireResponse.
+- Leave it off Patient, Practitioner, PractitionerRole and Organization, which are shared across programs. A patient's participation in a program is recorded by the resources created under it.
+- Repeat the identifier when a resource belongs to more than one program.
+- It does not replace the resource's own business identifier. Unlike other identifiers, every resource in a program carries the same value, so it neither identifies a single resource nor says which system produced it.
+
+```json
+{
+  "resourceType": "Observation",
+  "identifier": [
+    {
+      "system": "https://dhp.uz/fhir/core/sid/prg/uz/program",
+      "value": "268547008"
+    }
+  ]
+}
+```
+
 ### Complete example: patient with multiple identifiers
 
 A patient may have multiple identifiers. Here's a complete example showing proper usage:
@@ -381,6 +406,7 @@ To search for resources by identifier, use the standard FHIR search parameters:
 GET [base]/Patient?identifier=https://dhp.uz/fhir/core/sid/pid/uz/ni|30211975910033
 GET [base]/Practitioner?identifier=https://dhp.uz/fhir/core/sid/pro/uz/argos|9876543210
 GET [base]/Organization?identifier=https://dhp.uz/fhir/core/sid/org/uz/soliq|200935935
+GET [base]/Observation?identifier=https://dhp.uz/fhir/core/sid/prg/uz/program|268547008
 ```
 
 ### Related resources

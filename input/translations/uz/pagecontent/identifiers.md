@@ -11,7 +11,7 @@ https://dhp.uz/fhir/core/sid/{namespace}/{country}/{type}[/subtype]
 ```
 
 Bu yerda:
-- `namespace`: `pid` (shaxsiy), `pro` (kasbiy), `org` (tashkiliy) yoki `doc` (hujjat);
+- `namespace`: `pid` (shaxsiy), `pro` (kasbiy), `org` (tashkiliy), `doc` (hujjat) yoki `prg` (dastur);
 - `country`: ISO 3166-1 bo'yicha mamlakatning ikki harfli kodi (masalan, O'zbekiston uchun `uz`);
 - `type`: identifikator turi (masalan, pasport uchun `ppn`, milliy ID uchun `ni`);
 - `subtype`: ixtiyoriy qo'shimcha tasnif (masalan, pasport turlari uchun `local`, `intl`).
@@ -278,6 +278,31 @@ Hujjatlar `doc` nom maydoni orqali identifikatsiya qilinadi. Bu klinik hujjatlar
 
 **System URI namunasi**: `https://dhp.uz/fhir/core/sid/doc/{country}/{type}`
 
+### Dastur identifikatorlari
+
+`prg` nom maydoni resurs qaysi milliy sog'liqni saqlash dasturi doirasida yaratilganini bildiradi - skrining dasturi, emlash kampaniyasi, surunkali kasallikda dispanser kuzatuvi va hokazo. Barcha dasturlar uchun bitta tizim ishlatiladi: dastur identifikator qiymatidir, shuning uchun yangi dasturga yangi identifikator tizimi emas, yangi qiymat kerak bo'ladi.
+
+**System URI**: `https://dhp.uz/fhir/core/sid/prg/uz/program`
+
+Qiymat - SNOMED CT da mos konsept mavjud bo'lsa, dasturning SNOMED CT konsept identifikatori, masalan `268547008` (sut bezi saratoni skriningi) yoki `171183004` (qandli diabet skriningi). Mos konsept bo'lmasa, dasturning DHP kod tizimidagi kodidan foydalaning, masalan [ScreeningCodeCS](CodeSystem-screening-code-cs.html) dagi kod.
+
+- Dastur doirasida yaratilgan klinik va ish jarayoni resurslarida ko'rsatiladi: Observation, DiagnosticReport, ServiceRequest, Condition, Procedure, Immunization, Consent, Specimen, Composition, Questionnaire va QuestionnaireResponse.
+- Barcha dasturlar uchun umumiy bo'lgan Patient, Practitioner, PractitionerRole va Organization da ko'rsatilmaydi. Bemorning dasturdagi ishtiroki uning doirasida yaratilgan resurslar orqali aks etadi.
+- Resurs bir nechta dasturga tegishli bo'lsa, identifikator takrorlanadi.
+- Resursning o'z biznes identifikatori o'rnini bosmaydi. Boshqa identifikatorlardan farqli o'laroq, dasturning barcha resurslari bir xil qiymatga ega, shuning uchun u alohida resursni identifikatsiya qilmaydi va uni qaysi tizim yaratganini ko'rsatmaydi.
+
+```json
+{
+  "resourceType": "Observation",
+  "identifier": [
+    {
+      "system": "https://dhp.uz/fhir/core/sid/prg/uz/program",
+      "value": "268547008"
+    }
+  ]
+}
+```
+
 ### To'liq misol: bir nechta identifikatorga ega bemor
 
 Bemorning bir nechta identifikatori bo'lishi mumkin. Quyida to'g'ri foydalanishni ko'rsatuvchi to'liq misol keltirilgan:
@@ -383,6 +408,7 @@ Resurslarni identifikator bo'yicha qidirish uchun FHIR standart qidiruv parametr
 GET [base]/Patient?identifier=https://dhp.uz/fhir/core/sid/pid/uz/ni|30211975910033
 GET [base]/Practitioner?identifier=https://dhp.uz/fhir/core/sid/pro/uz/argos|9876543210
 GET [base]/Organization?identifier=https://dhp.uz/fhir/core/sid/org/uz/soliq|200935935
+GET [base]/Observation?identifier=https://dhp.uz/fhir/core/sid/prg/uz/program|268547008
 ```
 
 ### Bog'liq resurslar
