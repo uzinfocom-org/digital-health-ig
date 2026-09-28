@@ -115,6 +115,9 @@ parameters:
   special-url:
     - http://terminology.hl7.org/CodeSystem/iccc-3
     - http://terminology.hl7.org/CodeSystem/icd-o-3
+    # ICHI keeps WHO's own canonical: it is a linearization of the ICD-11 Foundation
+    # Component, so it shares the icd/release/11 namespace with ICD-11 MMS and ICF.
+    - http://id.who.int/icd/release/11/ichi
   excludettl: true
   excludexml: true
   usage-stats-opt-out: true # times out often

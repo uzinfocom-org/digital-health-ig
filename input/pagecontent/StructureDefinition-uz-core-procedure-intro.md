@@ -14,7 +14,7 @@ This profile adds no mandatory cardinality of its own. The required elements are
 
 - an identifier, basedOn (CarePlan or ServiceRequest), and partOf (a parent procedure, observation, or medication administration);
 - the status (required binding) and a category;
-- the code identifying the procedure (required binding to the DHP procedure-code value set);
+- the code identifying the procedure (required binding to the DHP [procedure-code value set](ValueSet-procedure-code-vs.html), which holds SNOMED CT for clinical meaning and [ICHI](ValueSet-ichi-vs.html) for the statistical code - carry both as two codings where a procedure needs to be reported as well as recorded);
 - the subject and the encounter it occurred in;
 - the occurrence[x] timing, the recorded date, and the recorder;
 - the performer and their actor;

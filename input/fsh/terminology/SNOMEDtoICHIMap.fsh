@@ -11,10 +11,12 @@ Description: "Maps clinical SNOMED CT codes to ICHI statistical codes for reimbu
 * experimental = true
 * date = "2025-01-29"
 * sourceScopeUri = "http://snomed.info/sct"
-* targetScopeUri = "http://id.who.int/icd/release/11/beta/ichi"
+// targetScope is the value set of permitted target codes, not the code system - the
+// publisher rejects a CodeSystem reference here now that ICHI resolves in this IG.
+* targetScopeCanonical = $ichi-vs
 
 * group[+].source = "http://snomed.info/sct"
-* group[=].target = "http://id.who.int/icd/release/11/beta/ichi"
+* group[=].target = "http://id.who.int/icd/release/11/ichi"
 * group[=].element[+].code = #68442002
 * group[=].element[=].display = "Implantation of joint prosthesis of wrist"
 * group[=].element[=].target[+].code = #MFJ.DN.AA

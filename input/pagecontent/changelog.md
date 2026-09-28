@@ -2,9 +2,17 @@
 
 #### Added
 
+Added [ICHI](CodeSystem-who-ichi.html) in full - the WHO International Classification of Health Interventions, 21,747 concepts from the 2026-09-17 tabulation - under its own WHO canonical `http://id.who.int/icd/release/11/ichi`, with an [ICHI Codes](ValueSet-ichi-vs.html) value set. ICHI is a linearization of the ICD-11 Foundation Component, which is why it shares the `icd/release/11` namespace with ICD-11 MMS and ICF. WHO publishes it only on the ICD-11 maintenance platform and revises it continuously, so pin the version.
+
+677 of those concepts are marked `inactive` with `status` of `retired`. They are codes a national source system still carries that WHO has withdrawn, kept so existing records stay valid; `ichi-vs` excludes them, so nothing new can be coded with one.
+
 Added `organizational-specialization-cs#176.0` for adult geriatrics, `coverage-type-cs#covtp-0001-00014` for the Vaqf charitable fund, and `admit-source-local-cs#mserv-0006-00007` for a polyclinic referral - gaps found auditing Form 066 against the live DMED system. The [Provenance Participation Role Type value set](ValueSet-provenance-participation-role-type-vs.html) now includes `attester`.
 
 #### Changed
+
+[Procedure Codes](ValueSet-procedure-code-vs.html) now includes ICHI alongside SNOMED CT, so `Procedure.code` can carry the statistical code a procedure is reported under as well as its clinical meaning - both as two codings on the same element where a procedure is recorded and reported.
+
+The ICHI canonical drops `beta`: the [ICHI NamingSystem](NamingSystem-who-ichi.html) and the [SNOMED CT to ICHI map](ConceptMap-snomed-to-ichi-procedures.html) moved from `http://id.who.int/icd/release/11/beta/ichi` to `http://id.who.int/icd/release/11/ichi`. Codings against the old URI have to move. The map's `targetScope` also pointed at the code system rather than a value set, which is invalid, and now references `ichi-vs`.
 
 `target` on [UZ Core Provenance](StructureDefinition-uz-core-provenance.html) now also accepts `Bundle`, since signing a whole FHIR document (as Form 066 does) previously had no valid target type.
 

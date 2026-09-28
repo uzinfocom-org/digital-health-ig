@@ -513,9 +513,9 @@ Usage: #definition
 * jurisdiction = urn:iso:std:iso:3166#001 "World"
 * usage = "Used to classify health interventions for statistical reporting and clinical documentation."
 * uniqueId[0].type = #uri
-* uniqueId[=].value = "http://id.who.int/icd/release/11/beta/ichi"
+* uniqueId[=].value = "http://id.who.int/icd/release/11/ichi"
 * uniqueId[=].preferred = true
-* uniqueId[=].comment = "WHO ICHI beta release URI"
+* uniqueId[=].comment = "Canonical URI for ICHI. ICHI is a linearization of the ICD-11 Foundation Component, so it shares the icd/release/11 namespace with ICD-11 MMS and ICF."
 
 Instance: ssv-organization-type-level
 InstanceOf: NamingSystem
