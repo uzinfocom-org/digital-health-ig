@@ -4,6 +4,8 @@
 
 Added `organizational-specialization-cs#176.0` for adult geriatrics, `coverage-type-cs#covtp-0001-00014` for the Vaqf charitable fund, and `admit-source-local-cs#mserv-0006-00007` for a polyclinic referral - gaps found auditing Form 066 against the live DMED system. The [Provenance Participation Role Type value set](ValueSet-provenance-participation-role-type-vs.html) now includes `attester`.
 
+A new [health program](NamingSystem-uzb-health-program.html) identifier system, `https://dhp.uz/fhir/core/sid/prg/uz/program`, records which national health program - screening, vaccination, dispensary follow-up - a resource was created under. It is one system for every program, with the program's SNOMED CT code as the value, so a new program needs no new identifier system. The [identifiers](identifiers.html) page documents the new `prg` namespace.
+
 #### Changed
 
 `target` on [UZ Core Provenance](StructureDefinition-uz-core-provenance.html) now also accepts `Bundle`, since signing a whole FHIR document (as Form 066 does) previously had no valid target type.

@@ -4,6 +4,8 @@
 
 Kattalar uchun geriatriya uchun `organizational-specialization-cs#176.0`, "Vaqf" xayriya jamg'armasi uchun `coverage-type-cs#covtp-0001-00014` va poliklinikadan yo'llanma uchun `admit-source-local-cs#mserv-0006-00007` qo'shildi - bular 066-shaklni jonli DMED tizimi bilan solishtirilganda topilgan bo'shliqlar. [Provenance Participation Role Type](ValueSet-provenance-participation-role-type-vs.html) ro'yxati endi `attester` kodini o'z ichiga oladi.
 
+Yangi [sog'liqni saqlash dasturi](NamingSystem-uzb-health-program.html) identifikator tizimi, `https://dhp.uz/fhir/core/sid/prg/uz/program`, resurs qaysi milliy sog'liqni saqlash dasturi - skrining, emlash, dispanser kuzatuvi - doirasida yaratilganini bildiradi. Bu barcha dasturlar uchun bitta tizim bo'lib, qiymati dasturning SNOMED CT kodidir, shuning uchun yangi dasturga yangi identifikator tizimi kerak emas. [Identifikatorlar](identifiers.html) sahifasida yangi `prg` nom maydoni tavsiflangan.
+
 #### O'zgartirildi
 
 [UZ Core Provenance](StructureDefinition-uz-core-provenance.html)dagi `target` endi `Bundle`ni ham qabul qiladi, chunki butun FHIR hujjatini imzolash (066-shakl qiladigan ishi kabi) uchun ilgari to'g'ri maqsad turi mavjud emas edi.
