@@ -5402,3 +5402,19 @@ msgstr "Типы ресурсов, которые может перечисля�
 #: ImplementationGuide.definition.resource.description
 msgid "Group type supplement with translations in Uzbek and Russian"
 msgstr "Дополнение типа группы с переводами на узбекский и русский языки"
+
+# --- UZ Core PlanDefinition jurisdiction (resource descriptions) ---
+# ImplementationGuide.definition.resource.description
+#: ImplementationGuide.definition.resource.description
+msgid "Where in Uzbekistan an artifact applies - the whole country for national artifacts, or one of its regions for regional ones"
+msgstr "Где в Узбекистане применяется артефакт - вся страна для национальных артефактов или один из её регионов для региональных"
+
+# ImplementationGuide.definition.resource.description
+#: ImplementationGuide.definition.resource.description
+msgid "Example type 2 diabetes screening schedule that applies in two regions only, showing one jurisdiction use context per region."
+msgstr "Пример календаря скрининга сахарного диабета 2 типа, который применяется только в двух регионах, с одним контекстом использования jurisdiction на каждый регион."
+
+# ImplementationGuide.definition.resource.description
+#: ImplementationGuide.definition.resource.description
+msgid "Example age-based national immunization schedule, showing the focus, category and jurisdiction use contexts, the vaccination actions, their timing, and the relationship between two doses."
+msgstr "Пример национального календаря иммунизации по возрасту, показывающий контексты использования focus, категории и jurisdiction, действия по вакцинации, их сроки и связь между двумя дозами."
