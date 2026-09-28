@@ -19,9 +19,12 @@ GET [base]/PlanDefinition?name=NationalImmunizationSchedule
 GET [base]/PlanDefinition?title=National%20Immunization%20Schedule
 GET [base]/PlanDefinition?version=1.0.0
 
-# by publication date, jurisdiction, or use-context value
+# by publication date or use-context value
 GET [base]/PlanDefinition?date=ge2026-01-01
-GET [base]/PlanDefinition?jurisdiction=urn:iso:std:iso:3166%7CUZ
+
+# national schedules, or the schedules for one region (here Samarqand)
+GET [base]/PlanDefinition?context-type-value=jurisdiction$urn:iso:std:iso:3166%7CUZ
+GET [base]/PlanDefinition?context-type-value=jurisdiction$https://terminology.dhp.uz/fhir/core/CodeSystem/states-cs%7C1718
 GET [base]/PlanDefinition?context-type-value=focus$http://snomed.info/sct%7C14189004
 ```
 
