@@ -146,7 +146,6 @@ https://dhp.uz/fhir/core/sid/{namespace}/{country}/{type}[/subtype]
 - Прежде чем создавать систему, проверьте [IdentifierDomainCS](https://dhp.uz/fhir/core/CodeSystem-identifier-domain-cs.html) и NamingSystem ядра. Если система уже есть, используйте её: ПИНФЛ - всегда `https://dhp.uz/fhir/core/sid/pid/uz/ni`, отдельная система или NamingSystem для него не создаётся.
 - Для каждой новой системы создайте NamingSystem с `kind = #identifier` и этим URI в `uniqueId.value`.
 
-
 ## 3) Конвенции слайсинга
 
 ### 3.1 Основные принципы слайсинга
