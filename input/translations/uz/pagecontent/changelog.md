@@ -6,9 +6,9 @@
 
 #### Qo'shildi
 
-[ICHI](CodeSystem-who-ichi.html) to'liq qo'shildi - JSST ning Sog'liqni saqlash aralashuvlari xalqaro klassifikatsiyasi, 2026-09-17 jadvalidan 21 747 konsept - JSST ning o'z kanonik URI si `http://id.who.int/icd/release/11/ichi` ostida, [ICHI Codes](ValueSet-ichi-vs.html) ro'yxati bilan birga. ICHI - ICD-11 Foundation Component ning linearizatsiyasi, shuning uchun u `icd/release/11` nom maydonini ICD-11 MMS va ICF bilan bo'lishadi. JSST uni faqat ICD-11 ni qo'llab-quvvatlash platformasida nashr etadi va uzluksiz o'zgartiradi, shuning uchun versiyani qat'iy belgilang.
+[ICHI](CodeSystem-who-ichi.html) to'liq qo'shildi - JSST ning Sog'liqni saqlash aralashuvlari xalqaro klassifikatsiyasi, 2026-09-17 jadvalidan 21 747 konsept - JSST ning o'z kanonik URI si `http://id.who.int/icd/release/11/ichi` ostida, [ICHI Codes](ValueSet-ichi-vs.html) ro'yxati bilan birga.
 
-Bu konseptlarning 677 tasi `inactive` va `status` `retired` deb belgilangan. Bular DMED hanuz saqlab turgan, JSST esa olib tashlagan kodlar; DMED da allaqachon mavjud yozuvlar validatsiyadan o'tishi uchun qoldirilgan. `ichi-vs` ularni chiqarib tashlaydi, shuning uchun yangi yozuvni bunday kod bilan kodlash mumkin emas.
+Bu konseptlarning 677 tasi `inactive` va `status` `retired` deb belgilangan. Bular DMED hanuz saqlab turgan, JSST esa olib tashlagan kodlar; DMED da allaqachon mavjud yozuvlar validatsiyadan o'tishi uchun qoldirilgan. `ichi-vs` ularni o'z ichiga olmaydi: yangi yozuvlar uchun ulardan foydalanmaslik kerak.
 
 [UZ Core PlanDefinition](StructureDefinition-uz-core-plan-definition.html) endi jadval qayerda amal qilishini ko'rsatadi: `jurisdiction` use context kesimi yangi [Uzbekistan Jurisdictions](ValueSet-jurisdiction-vs.html) ro'yxatiga required bog'langan. Milliy jadval `UZ` mamlakat kodi bilan bitta yozuv tashiydi, hududiy jadval esa har bir viloyat uchun bittadan yozuv tashiydi va viloyat kodlari `Address.state` dagi kodlar bilan bir xil, shuning uchun bemorning viloyatini unga tegishli jadvallar bilan solishtirish mumkin.
 
@@ -22,15 +22,13 @@ Kattalar uchun geriatriya uchun `organizational-specialization-cs#176.0`, "Vaqf"
 
 ICHI ning kanonik URI si `beta` ni yo'qotadi: [ICHI NamingSystem](NamingSystem-who-ichi.html) `http://id.who.int/icd/release/11/beta/ichi` dan `http://id.who.int/icd/release/11/ichi` ga ko'chdi. NamingSystem `beta` li URI ni 0.9.0 va 0.9.2 da nashr etgan, shuning uchun ICHI tizimi URI sini o'sha yerdan olgan hamma narsa ko'chirilishi kerak.
 
-[UZ Core Provenance](StructureDefinition-uz-core-provenance.html)dagi `target` endi `Bundle`ni ham qabul qiladi, chunki butun FHIR hujjatini imzolash (066-shakl qiladigan ishi kabi) uchun ilgari to'g'ri maqsad turi mavjud emas edi.
-
-#### Buzuvchi o'zgarishlar
-
 0.9.0 dan beri nashr etilgan SNOMED CT dan ICHI ga namuna ConceptMap o'chirildi. JSST ICHI ni CC BY-ND 3.0 IGO litsenziyasi ostida taqdim etadi va ICHI ni boshqa terminologiya bilan solishtirish uchun JSST bilan alohida yozma kelishuv talab qiladi; u bo'lmaguncha qo'llanma bunday xaritani nashr eta olmaydi.
+
+[UZ Core Provenance](StructureDefinition-uz-core-provenance.html)dagi `target` endi `Bundle`ni ham qabul qiladi, chunki butun FHIR hujjatini imzolash (066-shakl qiladigan ishi kabi) uchun ilgari to'g'ri maqsad turi mavjud emas edi.
 
 #### Hujjatlashtirish
 
-[UZ Core PlanDefinition](StructureDefinition-uz-core-plan-definition.html) sahifasida "Milliy yoki hududiy" bo'limi paydo bo'ldi: unda `jurisdiction` use context ning ikki shakli va jadvalning qamrovi nega `PlanDefinition.jurisdiction` da emas, o'sha yerda ko'rsatilishi tushuntirilgan.
+[UZ Core PlanDefinition](StructureDefinition-uz-core-plan-definition.html) sahifasida "Milliy yoki hududiy" bo'limi paydo bo'ldi: unda `jurisdiction` use context ning ikki shakli ko'rsatilgan.
 
 [UZ Core Procedure](StructureDefinition-uz-core-procedure.html) sahifasi endi `code` qabul qiladigan ikki kod tizimini nomlaydi va protsedura qayd etilib, hisobotga ham kiritilganda SNOMED CT va ICHI ni ikki coding sifatida uzatishni aytadi.
 

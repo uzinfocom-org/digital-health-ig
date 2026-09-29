@@ -6,9 +6,9 @@
 
 #### Добавлено
 
-Добавлен [ICHI](CodeSystem-who-ichi.html) целиком - Международная классификация вмешательств в здравоохранении ВОЗ, 21 747 концептов из таблицы от 2026-09-17 - под собственным каноническим URI ВОЗ `http://id.who.int/icd/release/11/ichi`, вместе с набором значений [ICHI Codes](ValueSet-ichi-vs.html). ICHI - это линеаризация Foundation Component ICD-11, поэтому она делит пространство имён `icd/release/11` с ICD-11 MMS и ICF. ВОЗ публикует её только на платформе поддержки ICD-11 и правит непрерывно, поэтому фиксируйте версию.
+Добавлен [ICHI](CodeSystem-who-ichi.html) целиком - Международная классификация вмешательств в здравоохранении ВОЗ, 21 747 концептов из таблицы от 2026-09-17 - под собственным каноническим URI ВОЗ `http://id.who.int/icd/release/11/ichi`, вместе с набором значений [ICHI Codes](ValueSet-ichi-vs.html).
 
-677 из этих концептов помечены как `inactive` со `status` `retired`. Это коды, которые DMED всё ещё использует, а ВОЗ уже убрала; они сохранены, чтобы уже имеющиеся в DMED записи оставались валидными. `ichi-vs` их исключает, поэтому новую запись таким кодом закодировать нельзя.
+677 из этих концептов помечены как `inactive` со `status` `retired`. Это коды, которые DMED всё ещё использует, а ВОЗ уже убрала; они сохранены, чтобы уже имеющиеся в DMED записи оставались валидными. `ichi-vs` их не включает: для новых записей их использовать не следует.
 
 [UZ Core PlanDefinition](StructureDefinition-uz-core-plan-definition.html) теперь указывает, где действует расписание, через срез use context `jurisdiction` с привязкой required к новому набору значений [Uzbekistan Jurisdictions](ValueSet-jurisdiction-vs.html). Национальное расписание несёт одну запись с кодом страны `UZ`, региональное - по одной записи на регион, причём коды регионов те же, что в `Address.state`, поэтому регион пациента можно сопоставить с действующими для него расписаниями.
 
@@ -22,15 +22,13 @@
 
 Канонический URI ICHI теряет `beta`: [NamingSystem ICHI](NamingSystem-who-ichi.html) переехал с `http://id.who.int/icd/release/11/beta/ichi` на `http://id.who.int/icd/release/11/ichi`. NamingSystem публиковал URI с `beta` в 0.9.0 и 0.9.2, поэтому всё, что взяло оттуда URI системы ICHI, нужно перенести.
 
-`target` в [UZ Core Provenance](StructureDefinition-uz-core-provenance.html) теперь также принимает `Bundle`, поскольку для подписи целого FHIR-документа (как в форме 066) ранее не было допустимого типа цели.
-
-#### Несовместимые изменения
-
 Пример ConceptMap SNOMED CT в ICHI, публиковавшийся с 0.9.0, удалён. ВОЗ лицензирует ICHI по CC BY-ND 3.0 IGO, и любое сопоставление ICHI с другой терминологией требует отдельного письменного соглашения с ВОЗ; до его заключения руководство такую карту публиковать не может.
+
+`target` в [UZ Core Provenance](StructureDefinition-uz-core-provenance.html) теперь также принимает `Bundle`, поскольку для подписи целого FHIR-документа (как в форме 066) ранее не было допустимого типа цели.
 
 #### Документация
 
-На странице [UZ Core PlanDefinition](StructureDefinition-uz-core-plan-definition.html) появился раздел «Национальное или региональное» с обеими формами use context `jurisdiction` и объяснением, почему охват расписания указывается там, а не в `PlanDefinition.jurisdiction`.
+На странице [UZ Core PlanDefinition](StructureDefinition-uz-core-plan-definition.html) появился раздел «Национальное или региональное» с обеими формами use context `jurisdiction`.
 
 Страница [UZ Core Procedure](StructureDefinition-uz-core-procedure.html) теперь называет обе системы кодов, допустимые в `code`, и указывает передавать SNOMED CT и ICHI как два coding, если процедуру и регистрируют, и включают в отчётность.
 
