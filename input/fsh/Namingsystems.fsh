@@ -640,3 +640,45 @@ Usage: #definition
 * uniqueId[0].type = #uri
 * uniqueId[=].value = $mis-dmed-uz
 * uniqueId[=].preferred = true
+
+Instance: supply-request
+InstanceOf: NamingSystem
+Description: "Supply request identifiers issued within the Uzbekistan Digital Health Platform"
+Usage: #definition
+
+* url = "https://terminology.dhp.uz/fhir/core/NamingSystem/supply-request"
+* name = "UzbekistanSupplyRequestIdentifier"
+* status = #active
+* kind = #identifier
+* date = "2026-09-30"
+* publisher = "Uzinfocom"
+* responsible = "Ministry of Health of the Republic of Uzbekistan"
+* type = $identifier-type#FILL "Filler Identifier"
+* description = "Naming system for identifiers assigned to supply requests within the Uzbekistan Digital Health Platform."
+* jurisdiction = urn:iso:std:iso:3166#UZ "Uzbekistan"
+* usage = "Used for identifying supply requests within the Uzbekistan Digital Health Platform."
+
+* uniqueId[0].type = #uri
+* uniqueId[=].value = "https://dhp.uz/fhir/core/sid/supply-request"
+* uniqueId[=].preferred = true
+
+Instance: supply-contract
+InstanceOf: NamingSystem
+Description: "Supply contract identifiers issued within the Uzbekistan Digital Health Platform"
+Usage: #definition
+
+* url = "https://terminology.dhp.uz/fhir/core/NamingSystem/supply-contract"
+* name = "UzbekistanSupplyContractIdentifier"
+* status = #active
+* kind = #identifier
+* date = "2026-09-30"
+* publisher = "Uzinfocom"
+* responsible = "Ministry of Health of the Republic of Uzbekistan"
+* type = $identifier-type#FILL "Filler Identifier"
+* description = "Naming system for identifiers assigned to supply contracts within the Uzbekistan Digital Health Platform."
+* jurisdiction = urn:iso:std:iso:3166#UZ "Uzbekistan"
+* usage = "Used for identifying supply contracts within the Uzbekistan Digital Health Platform."
+
+* uniqueId[0].type = #uri
+* uniqueId[=].value = "https://dhp.uz/fhir/core/sid/supply-contract"
+* uniqueId[=].preferred = true

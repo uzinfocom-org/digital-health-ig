@@ -1,0 +1,7 @@
+﻿CODE,UZ,RU,EN,SNOMED,SNOMED DISPLAY,MAP
+whole-blood,To'liq qon,Цельная кровь,Whole blood,420135007,Whole blood,equivalent
+red-cell-mass,Eritrotsitar massa,Эритроцитарная масса,Red blood cell mass,431069006,Packed red blood cells,equivalent
+fresh-frozen-plasma,Yangi muzlatilgan plazma,Свежезамороженная плазма,Fresh frozen plasma,346447007,Fresh frozen plasma,equivalent
+platelet-mass,Trombotsitar massa,Тромбоцитарная масса,Platelet mass,126258005,"Human platelets, random 
+donor",narrower
+cryoprecipitate,Kriopretsipitat,Криопреципитат,Cryoprecipitate,420599006,Cryoprecipitate,equivalent

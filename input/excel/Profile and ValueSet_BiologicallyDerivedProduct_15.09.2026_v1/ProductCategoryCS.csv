@@ -1,0 +1,6 @@
+﻿CODE,UZ,RU,EN,,http://hl7.org/fhir/ValueSet/product-category
+organ,A'zo,Орган,Organ
+tissue,To'qima,Ткань,Tissue
+fluid,Suyuqlik,Жидкость,Fluid
+cells,Hujayralar,Клетки,Cells
+biologicalAgent,Biologik agent,Биологический агент,Biological Agent
