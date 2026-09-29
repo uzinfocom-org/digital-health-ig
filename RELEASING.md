@@ -28,9 +28,24 @@ Publishing a release is automated by [`.github/workflows/release.yml`](.github/w
    - opens a PR adding `X.Y.Z` to [`docs/package-feed.xml`](docs/package-feed.xml)
      so the FHIR package registry discovers it.
 
-4. **Merge the package-feed PR.**
+4. **dhp.uz publishes the release on its own.** A GitLab instance pull-mirrors
+   this repository and runs the publication build there, so GitHub stays the
+   source of truth and there is nothing to trigger by hand. The mirror polls
+   every 30 minutes and a core build takes 73-93 minutes, so allow up to two
+   hours from pushing the tag before `https://dhp.uz/fhir/core/X.Y.Z/` appears
+   and `https://dhp.uz/fhir/core/` starts serving it. Until then the tag is only
+   on GitHub.
 
-5. **Announce the release by email** to the implementation teams and to the
+   The published build reports a few more QA findings than CI did, because
+   `-go-publish` revalidates against a cold terminology cache. On the publishing
+   host, `ci/verify-site.sh https://dhp.uz core <previous> X.Y.Z` checks the
+   result and `ci/release-rollback.sh X.Y.Z` undoes it; the pipeline and those
+   scripts live in
+   [dhp-gitlab-publishing](https://github.com/vadi2/dhp-gitlab-publishing).
+
+5. **Merge the package-feed PR.**
+
+6. **Announce the release by email** to the implementation teams and to the
    Civitta review. Send it once the package feed PR is merged, so the version is
    actually installable when people go looking for it.
 
