@@ -123,3 +123,13 @@ Description: "Types of benefits in Uzbekistan"
   * ^designation[=].value = "Бесплатная наркологическая помощь при острых отравлениях психоактивными веществами, алкогольных психозах, связанных с их употреблением, а также психозах вследствие отравления: оказание неотложной медицинской помощи, обследование, консультирование, диагностика, лечение в амбулаторных и стационарных условиях, а также медико-социальная реабилитация."
   * ^designation[+].language = #en
   * ^designation[=].value = "Free narcological care in cases of acute intoxication with psychoactive substances, alcohol-related psychoses, and intoxication-induced psychoses: provision of emergency medical care, examination, consultation, diagnosis, treatment in outpatient and inpatient settings, as well as medical and social rehabilitation."
+
+// Added by Presidential Decree No. UP-88 dated 2025-05-19 (item 19, Annex 2 to Decree No. UP-3214) -
+// https://lex.uz/ru/docs/170150 - as item 19 of the state-funded high-tech specialized care benefit
+// list; care is provided at the Republican Hematology Center. Registry number picked as the next free
+// sequential slot in this code system (2026-09-17); it does not mirror the decree's own item numbering.
+* #regis0004.00024 "O‘zbekiston Respublikasi Sog‘liqni saqlash vazirligi tomonidan tasdiqlanadigan ro‘yxat bo‘yicha, gematologik kasalliklarga chalingan shaxslar."
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Лица, страдающие гематологическими заболеваниями, по перечню, утверждаемому Министерством здравоохранения Республики Узбекистан."
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Persons suffering from hematological diseases, according to the list approved by the Ministry of Health of the Republic of Uzbekistan."

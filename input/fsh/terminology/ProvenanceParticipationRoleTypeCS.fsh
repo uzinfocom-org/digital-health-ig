@@ -33,6 +33,11 @@ Description: "Provenance Participation Role Type supplement with translations in
   * ^designation[=].value = "Юридический заверитель"
   * ^designation[+].language = #uz
   * ^designation[=].value = "Yuridik tasdiqlovchi"
+* #attester
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Заверитель (подписант)"
+  * ^designation[+].language = #uz
+  * ^designation[=].value = "Tasdiqlovchi (imzolovchi)"
 * #informant
   * ^designation[0].language = #ru
   * ^designation[=].value = "Информатор"

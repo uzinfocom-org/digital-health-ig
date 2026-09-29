@@ -1,30 +1,104 @@
 ### Ishlab chiqilmoqda
 
+(Hozircha o'zgarishlar yo'q)
+
+### Versiya 0.10.0
+
 #### Qo'shildi
 
-[Onkologiya uchun kasalliklarning xalqaro tasnifi, 3-nashr, 2-qayta ko'rib chiqish (ICD-O-3.2)](CodeSystem-icd-o-3.html) to'liq holda qo'shildi - o'zbek va rus tilidagi belgilashlar bilan 330 ta topografiya va 1143 ta morfologiya kodi - uning HL7 Terminology kanonik URL manzili `http://terminology.hl7.org/CodeSystem/icd-o-3` ostida, shuningdek [topografiya](ValueSet-icd-o-3-topography-vs.html) va [morfologiya](ValueSet-icd-o-3-morphology-vs.html) kodlarini tanlovchi qiymatlar to'plamlari.
+[ICHI](CodeSystem-who-ichi.html) to'liq qo'shildi - JSST ning Sog'liqni saqlash aralashuvlari xalqaro klassifikatsiyasi, 2026-09-17 jadvalidan 21 747 konsept - JSST ning o'z kanonik URI si `http://id.who.int/icd/release/11/ichi` ostida, [ICHI Codes](ValueSet-ichi-vs.html) ro'yxati bilan birga.
+
+Bu konseptlarning 677 tasi `inactive` va `status` `retired` deb belgilangan. Bular DMED hanuz saqlab turgan, JSST esa olib tashlagan kodlar; DMED da allaqachon mavjud yozuvlar validatsiyadan o'tishi uchun qoldirilgan. `ichi-vs` ularni o'z ichiga olmaydi: yangi yozuvlar uchun ulardan foydalanmaslik kerak.
+
+[UZ Core PlanDefinition](StructureDefinition-uz-core-plan-definition.html) endi jadval qayerda amal qilishini ko'rsatadi: `jurisdiction` use context kesimi yangi [Uzbekistan Jurisdictions](ValueSet-jurisdiction-vs.html) ro'yxatiga required bog'langan. Milliy jadval `UZ` mamlakat kodi bilan bitta yozuv tashiydi, hududiy jadval esa har bir viloyat uchun bittadan yozuv tashiydi va viloyat kodlari `Address.state` dagi kodlar bilan bir xil, shuning uchun bemorning viloyatini unga tegishli jadvallar bilan solishtirish mumkin.
+
+Sog'liqni saqlash vazirligining so'roviga ko'ra [immunizatsiya holati sabablari](ValueSet-immunization-status-reason-vs.html) ro'yxati 4 koddan 8 kodga o'sdi: `PHILISOP` (dunyoqarash sababli e'tiroz), `RELIG` (diniy e'tiqod sababli e'tiroz), `VACEFF` (vaksina samaradorligi shubhali) va `VACSAF` (vaksina xavfsizligidan xavotir) qo'shildi, shunda amalga oshmagan emlash sababini bemorning e'tirozidan aniqroq ko'rsatishi mumkin. Ularning o'zbek va rus designation lari [act reason supplement](CodeSystem-actreason-cs.html) ichida.
+
+Kattalar uchun geriatriya uchun `organizational-specialization-cs#176.0`, "Vaqf" xayriya jamg'armasi uchun `coverage-type-cs#covtp-0001-00014`, poliklinikadan yo'llanma uchun `admit-source-local-cs#mserv-0006-00007` va gematologik kasalliklarga chalingan shaxslar uchun `benefits-cs#regis0004.00024` qo'shildi - oxirgisi Prezident farmoni UP-88 bo'yicha davlat hisobidan yuqori texnologiyali ixtisoslashtirilgan yordam olish huquqi - bular 066-shaklni jonli DMED tizimi bilan solishtirilganda topilgan bo'shliqlar. [Murojaat ustuvorligi](ValueSet-encounter-priority-vs.html) ro'yxati endi `UR` (shoshilinch) va `EL` (rejali) kodlarini ham, [Provenance Participation Role Type](ValueSet-provenance-participation-role-type-vs.html) ro'yxati esa `attester` kodini o'z ichiga oladi.
 
 #### O'zgartirildi
 
-[ICCC-3 kod tizimi](CodeSystem-iccc-3-cs.html) DHP kanonik URL manzili `https://terminology.dhp.uz/fhir/core/CodeSystem/iccc-3-cs` dan `http://terminology.hl7.org/CodeSystem/iccc-3` ga ko'chirildi - bu IARC tasnifi uchun HL7 Terminology kanonik URL manzili (uni HL7 Europe PanCareSurPass qo'llanmasi ishlatadi), chunki tasnif DHP ga emas, IARC ga tegishli. [Qiymatlar to'plami](ValueSet-iccc-3-vs.html) o'z URL manzilini saqlab qoladi.
+[Muolaja kodlari](ValueSet-procedure-code-vs.html) endi SNOMED CT bilan bir qatorda ICHI ni ham o'z ichiga oladi, chunki DMED operatsiyani faqat ICHI da kodlaydi, shuning uchun `Procedure.code` protsedura hisobotga qanday kod bilan tushishini ham, uning klinik ma'nosini ham tashishi mumkin - protsedura qayd etilib, hisobotga ham kiritilganda ikkalasi bitta elementda ikki coding sifatida. Bog'lanish endi required emas, balki extensible, shunda qo'llanma `Procedure.code` ni JSST olib tashlagan kodlarni ham o'z ichiga olgan milliy to'plamgacha toraytira oladi.
 
-#### Buzuvchi o'zgarishlar
+ICHI ning kanonik URI si `beta` ni yo'qotadi: [ICHI NamingSystem](NamingSystem-who-ichi.html) `http://id.who.int/icd/release/11/beta/ichi` dan `http://id.who.int/icd/release/11/ichi` ga ko'chdi. NamingSystem `beta` li URI ni 0.9.0 va 0.9.2 da nashr etgan, shuning uchun ICHI tizimi URI sini o'sha yerdan olgan hamma narsa ko'chirilishi kerak.
 
-UZ Core VaccinationActivityDefinition profili [UZ Core ActivityDefinition](StructureDefinition-uz-core-activitydefinition.html) deb qayta nomlandi va uning kanonik URL manzili `.../uz-core-vaccination-activity-definition` dan `.../uz-core-activitydefinition` ga o‘zgartirildi. Eski kanonik URL manzilidan foydalanayotgan tizimlarda tegishli havolani yangilash kerak.
+0.9.0 dan beri nashr etilgan SNOMED CT dan ICHI ga namuna ConceptMap o'chirildi. JSST ICHI ni CC BY-ND 3.0 IGO litsenziyasi ostida taqdim etadi va ICHI ni boshqa terminologiya bilan solishtirish uchun JSST bilan alohida yozma kelishuv talab qiladi; u bo'lmaguncha qo'llanma bunday xaritani nashr eta olmaydi.
+
+[UZ Core Provenance](StructureDefinition-uz-core-provenance.html)dagi `target` endi `Bundle`ni ham qabul qiladi, chunki butun FHIR hujjatini imzolash (066-shakl qiladigan ishi kabi) uchun ilgari to'g'ri maqsad turi mavjud emas edi.
 
 #### Hujjatlashtirish
 
-[Komponentlar](components.html) sahifasi endi Qon resurslarini boshqarish, Hamshiralik ishi va Ta'minot komponentlarini ularning Texnik loyihalari asosida tavsiflaydi. [Yo'llanmalar](components.html#yollanmalar) bo'limi yo'llanma tasniflanadigan yettita o'lcham bilan hamda yo'llanmani saqlovchi ServiceRequest va uning davlat sug'urtasi bo'yicha kelishish zanjirini boshqaruvchi Task resurslari o'rtasidagi taqsimot bilan to'ldirildi.
+[UZ Core PlanDefinition](StructureDefinition-uz-core-plan-definition.html) sahifasida "Milliy yoki hududiy" bo'limi paydo bo'ldi: unda `jurisdiction` use context ning ikki shakli ko'rsatilgan.
 
-Ish jarayoni sahifasiga ega bo'lgan har bir komponent endi unga havola beradi, har bir ish jarayoni sahifasi esa o'zi tegishli bo'lgan komponentga qaytadan havola qiladi. Texnik loyihasi hali yozilayotgan Retseptlar bo'limi shu vaqt ichida [Elektron retsept va dori vositasini berish](workflow-prescription.html) jarayoniga ishora qiladi.
+[UZ Core Procedure](StructureDefinition-uz-core-procedure.html) sahifasi endi `code` qabul qiladigan ikki kod tizimini nomlaydi va protsedura qayd etilib, hisobotga ham kiritilganda SNOMED CT va ICHI ni ikki coding sifatida uzatishni aytadi.
 
-O'sha sahifadagi komponentlararo resurs arxitekturasi diagrammasi endi Qon resurslarini boshqarish va Hamshiralik ishi komponentlarini ham qamrab oladi hamda Yo'llanmalar komponentini bo'sh qoldirmasdan, unga tegishli ikkita profilni ko'rsatadi. Asosiy ma'lumotlarni boshqarish va Vaksinatsiyani boshqarish komponentlari bo'sh o'rin egallab turgan edi, endi esa o'z tarkibini sanaydi: MDM haqiqat manbai bo'lgan bemorlar, tashkilotlar, tibbiyot xodimlari, ularning rollari, tibbiy xizmatlar va joylashuvlar reyestrlari hamda immunizatsiya jarayoni asosidagi Immunization, ImmunizationRecommendation, PlanDefinition, ActivityDefinition, AdverseEvent, Encounter va Observation resurslari. U barcha komponentlar yopiq holda ochiladi: har bir kartada uning resurslari soni ko'rsatiladi, resurslar ro'yxati esa kartani bosganda yoki Enter tugmasi bilan ochiladi; ikkala komponent yopiq bo'lganda, ular orasidagi resurs aloqalari bitta chiziq bilan chiziladi. Barcha resurslarni bir vaqtda chizish ramkaga faqat 40% masshtabda sig'ar edi va resurs nomlarini o'qish qiyin edi - yopiq ko'rinish 80% masshtabda sig'adi. Legendada endi "ushbu qo'llanmada profillangan" o'rniga "ushbu qo'llanmada belgilangan" deb yoziladi, shu ma'noda MSM chop etadigan StructureDefinition, ValueSet, CodeSystem va CapabilityStatement belgilangan deb hisoblanadi: ular profillar emas, balki resurs nusxalari bo'lib, ilgari hali profillanmagan deb ko'rsatilar edi.
+### Versiya 0.9.2
 
-[Elektron yo'llanmaning hayot sikli](workflow-referral.html) sahifasida endi ServiceRequest va Task profillari nashr etilmagan deb aytilmaydi. O'shandan beri ularning ikkalasi ham [UZ Core ServiceRequest](StructureDefinition-uz-core-servicerequest.html) va [UZ Core Task Referral Approval](StructureDefinition-uz-core-referral-approval-task.html) sifatida nashr etildi va ikkalasi ham hali eksperimental deb belgilangan.
+#### O'zgartirildi
 
-[Laboratoriya tekshiruvini tayinlashdan natijani olishgacha](workflow-lab.html) jarayoni 0.8.0 da qayta nomlangan `uz-core-servicerequest-laboratory` ga havola qilar edi. Uning ikkita havolasi va misolidagi `meta.profile` endi [UZ Core ServiceRequest](StructureDefinition-uz-core-servicerequest.html) ga ishora qiladi.
+Paket endi nashr yig'ilishi sifatida yig'iladi. 0.2.0 dan beri uning `package.json` fayli `notForPublication` belgisi va `file://` URL manzilini o'z ichiga olardi, shuning uchun [packages2.fhir.org](https://packages2.fhir.org/packages/uz.dhp.core) 0.6.0 dan boshlab barcha versiyalarni rad etardi, UZ Core ga bog'liq qo'llanmalar esa uning artefaktlariga `file://` yo'llari orqali havola qilardi. Endi paket `https://dhp.uz/fhir/core` ni e'lon qiladi. Tarkib 0.9.1 ga nisbatan o'zgarmagan.
 
-[UZ Core RelatedPerson](StructureDefinition-uz-core-relatedperson.html) endi ota-ona farzandiga qanday bog'lanishini ko'rsatadi - shunda tizim ota-onaga bola nomidan ish ko'rishga ruxsat bera oladi. Yangi misol - [example-mother-of-a-child](RelatedPerson-example-mother-of-a-child.html) - onani o'z farzandiga ([example-jasur](Patient-example-jasur.html)) nisbatan `MTH` munosabat kodi bilan qayd etadi, profil sahifasi esa tizim PINFL orqali ota-ona nomidan ish ko'ra oladigan bolalarni qanday topishini, nima uchun bolaning yoshi munosabatdan emas, balki uning `Patient.birthDate` idan o'qilishini va nima uchun munosabatning o'zi kirish huquqini bermasligini tushuntiradi.
+### Versiya 0.9.1
+
+#### O'zgartirildi
+
+[ICD-O-3.2](CodeSystem-icd-o-3.html) versiyasini `3.2` deb e'lon qilardi; endi u validatorlar kutadigan nashr identifikatori `3.2.0` ni e'lon qiladi. Versiyani qat'iy ko'rsatadigan kodlashlarni `http://terminology.hl7.org/CodeSystem/icd-o-3|3.2` dan `|3.2.0` ga o'tkazish kerak.
+
+### Versiya 0.9.0
+
+#### Qo'shildi
+
+Bemorga dori vositalarini tayinlash uchun [UZ Core MedicationRequest](StructureDefinition-uz-core-medicationrequest.html) profili qo'shildi; u bemor nomidan dori vositasini olishga vakolatli qarindosh (RelatedPerson) yoki patronaj hamshirasini (PractitionerRole) ko'rsatuvchi [ishonchli shaxs kengaytmasi](StructureDefinition-trustee.html) ga ega. U bilan birga [holat](ValueSet-medicationrequest-status-vs.html), [holat sababi](ValueSet-medicationrequest-status-reason-vs.html), [niyat](ValueSet-medicationrequest-intent-vs.html) va [kategoriya](ValueSet-medicationrequest-admin-location-vs.html) terminologiyasi - kategoriyaga milliy [reimbursatsiya buyurtmasi](CodeSystem-medication-request-order-type-cs.html) kodi qo'shilgan - hamda qabul qilish tartibi uchun [hafta kunlari](ValueSet-days-of-week-vs.html), [hodisa vaqti](ValueSet-event-timing-vs.html) va [qabul qilish tartibi qisqartmalari](ValueSet-timing-abbreviation-vs.html) terminologiyasi qo'shildi; ularning barchasi o'zbekcha va ruscha belgilanishlarga ega.
+
+[ICD-O-3.2](CodeSystem-icd-o-3.html) to'liq holda qo'shildi - o'zbekcha va ruscha belgilanishlar bilan 330 ta topografiya va 1143 ta morfologiya kodi - HL7 Terminology kanonik URL manzili `http://terminology.hl7.org/CodeSystem/icd-o-3` ostida, [topografiya](ValueSet-icd-o-3-topography-vs.html) va [morfologiya](ValueSet-icd-o-3-morphology-vs.html) qiymatlar to'plamlari bilan.
+
+181 ta mahalliy birlik kodi va ularning o'zbekcha, ruscha va inglizcha nomlari bilan [o'lchov birliklari CodeSystem i](CodeSystem-unit-of-measurement-cs.html), uning [ValueSet i](ValueSet-unit-of-measurement-vs.html) va ulardan 65 tasini UCUM ga moslashtiruvchi [ConceptMap](ConceptMap-unit-of-measurement-cm.html) qo'shildi.
+
+[UZ Core AuditEvent](StructureDefinition-uz-core-auditevent.html) dagi `entity.detail` endi Must Support hisoblanadi, `detail.type` esa autentifikatsiya, mijoz, qidiruv, resurs versiyalari va sinxronizatsiyani qamrab oluvchi 13 ta yangi [audit hodisasi tafsiloti turlari](ValueSet-audit-event-detail-type-vs.html) kodiga (example) bog'langan.
+
+[Tashrif turlari CodeSystem](CodeSystem-encounter-type-cs.html) i 7 tadan 8 ta kodgacha o'sdi: skrining uchun tashrifni bildiruvchi `mserv-0001-00008` qo'shildi, u [UZ Core Encounter](StructureDefinition-uz-core-encounter.html) dagi `type` ning `nationalType` slaysi orqali mavjud.
+
+#### O'zgartirildi
+
+[ICCC-3 kod tizimi](CodeSystem-iccc-3-cs.html) `https://terminology.dhp.uz/fhir/core/CodeSystem/iccc-3-cs` dan HL7 Terminology kanonik URL manzili `http://terminology.hl7.org/CodeSystem/iccc-3` ga ko'chirildi, chunki tasnif DHP ga emas, IARC ga tegishli. [Qiymatlar to'plami](ValueSet-iccc-3-vs.html) o'z URL manzilini saqlab qoladi.
+
+[UZ Core RelatedPerson](StructureDefinition-uz-core-relatedperson.html) dagi `passportLocal` va `passportInternational` identifikator slayslari endi 0..1 emas, balki 0..* kardinallikka ega, xuddi [UZ Core Patient](StructureDefinition-uz-core-patient.html) dagidek.
+
+[UZ Core MedicationDispense](StructureDefinition-uz-core-medication-dispense.html) dagi `authorizingPrescription` endi istalgan MedicationRequest ga emas, balki [UZ Core MedicationRequest](StructureDefinition-uz-core-medicationrequest.html) ga ishora qiladi.
+
+[UZ Core RelatedPerson](StructureDefinition-uz-core-relatedperson.html) dagi [qarindoshlik turlari ValueSet i](ValueSet-relationship-type-vs.html) endi `FTH` (ota) va `GUARD` (vasiy) kodlarini o'z ichiga oladi, ularning o'zbekcha va ruscha belgilanishlari esa [RoleCodeCS](CodeSystem-role-code-cs.html) ga qo'shildi.
+
+[Yuborish yo'llari ValueSet i](ValueSet-route-code-vs.html) endi SNOMED CT qamrab olmagan yo'llar uchun 8 ta mahalliy [yuborish yo'li kodi](CodeSystem-route-codes-cs.html) ni o'z ichiga oladi, masalan implantatsiya, ionoforez va teri skarifikatsiyasi. ValueSet UZ Core MedicationRequest dagi `dosageInstruction.route` ga (extensible) va [UZ Core Immunization](StructureDefinition-uz-core-immunization.html) dagi `route` ga (example) bog'langan.
+
+[DMED lavozimlarining SNOMED CT supplement i](CodeSystem-dmed-position-sct-cs.html) endi ruscha belgilanishlar bilan bir qatorda 0.8.0 dagi inglizcha belgilanishlar o'rniga o'zbekcha belgilanishlarni olib yuradi.
+
+[DHP CapabilityStatement](CapabilityStatement-DHPCapabilityStatement.html) endi platforma operatsiyalarini e'lon qiladi - [Person/$populate](OperationDefinition-person-populate.html), [Patient/$populate](OperationDefinition-patient-populate.html), [Organization/$practitioners](OperationDefinition-organization-practitioners.html), [Practitioner/$organizations](OperationDefinition-practitioner-organizations.html) va [Practitioner/$specializations](OperationDefinition-practitioner-specializations.html) - har birini o'z OperationDefinition iga havola bilan. U endi Bundle va Flag ni ham sanab o'tadi hamda kanonik URL, nom, sarlavha va versiyaga ega.
+
+[UZ Core Claim](StructureDefinition-uz-core-claim.html) dagi `prescription` endi istalgan MedicationRequest ga emas, balki [UZ Core MedicationRequest](StructureDefinition-uz-core-medicationrequest.html) ga ishora qiladi, 0.8.0 da e'lon qilinganidek.
+
+#### Buzuvchi o'zgarishlar
+
+UZ Core VaccinationActivityDefinition profili [UZ Core ActivityDefinition](StructureDefinition-uz-core-activitydefinition.html) deb qayta nomlandi, chunki u endi faqat emlash bilan cheklanmaydi. Bu buzuvchi o'zgarish: kanonik URL `https://dhp.uz/fhir/core/StructureDefinition/uz-core-vaccination-activity-definition` dan `https://dhp.uz/fhir/core/StructureDefinition/uz-core-activitydefinition` ga o'zgaradi va nusxalar `meta.profile` ni yangilashi kerak.
+
+`code` endi `33879002` (faol immunizatsiya) sifatida belgilanmagan, balki [muolaja kodlari](ValueSet-procedure-code-vs.html) ga (extensible) bog'langan. `product[x]` ning [vaksina kodlari](ValueSet-vaccine-code-vs.html) ga bog'lanishi endi extensible, `code` `33879002` bo'lganda esa qo'shimcha required bog'lanish amal qiladi, shuning uchun emlash hamon shu ValueSet dagi vaksinani ko'rsatadi.
+
+Yurak-qon tomir kasalliklari xavfi skriningi so'rovnomasi CvdRiskCategoryCS va CvdTobaccoUseCS kod tizimlari bilan birga olib tashlandi. So'rovnoma va xavf toifalari endi integratsiya IG sida `https://dhp.uz/fhir/integrations/Questionnaire/CVDRiskScreeningQuestionnaire` va `https://terminology.dhp.uz/fhir/integrations/CodeSystem/cvd-risk-category-cs` sifatida joylashgan, u yerda tamaki iste'moli SNOMED CT bilan kodlanadi, shuning uchun eski core kanonik URL manzillariga havolalarni almashtirish kerak.
+
+0.8.0 da qo'shilgan `https://terminology.dhp.uz/fhir/core/CodeSystem/dmed-role-class-cs` DMED rol sinflari supplement i o'chirildi, shuning uchun [lavozim va kasblar ValueSet i](ValueSet-position-and-profession-vs.html) dagi `PAT` kodi endi o'zbekcha va ruscha belgilanishlarga ega emas.
+
+#### Hujjatlashtirish
+
+[Komponentlar](components.html) sahifasi endi Qon resurslarini boshqarish, Hamshiralik ishi va Ta'minot komponentlarini tavsiflaydi. [Yo'llanmalar](components.html#yollanmalar) bo'limi endi yo'llanma tasniflanadigan yettita o'lchamni hamda yo'llanmaning ServiceRequest i uning davlat sug'urtasi bo'yicha kelishilishini boshqaruvchi Task resurslari bilan qanday bog'lanishini yoritadi.
+
+Ish jarayoni sahifasiga ega komponentlar endi unga havola beradi, har bir ish jarayoni sahifasi esa komponentga qaytadan havola qiladi. Retseptlar bo'limi Texnik loyihasi yozilguncha [Elektron retsept va dori vositasini berish](workflow-prescription.html) jarayoniga ishora qiladi.
+
+Komponentlar sahifasi endi interaktiv [komponentlararo resurs arxitekturasi](components.html#komponentlararo-resurs-arxitekturasi) diagrammasi bilan yakunlanadi; u o'n bitta komponentning har biri qaysi FHIR resurslari bilan ishlashini va ulardan qaysilari boshqa komponentga o'tishini ko'rsatadi. Diagramma qaysi resurslar ushbu qo'llanmada belgilanganini, ★ bilan esa komponentning o'zi qaysilari uchun javobgar ekanini ko'rsatadi. Resursga sichqonchani olib borganda yoki tab bilan o'tganda u saqlanadigan platforma xizmati ko'rsatiladi, komponent kartasini bosish esa uning resurslar ro'yxatini ochadi.
+
+[Elektron yo'llanmaning hayot sikli](workflow-referral.html) sahifasida endi ServiceRequest va Task profillari nashr etilmagan deb aytilmaydi. Ikkalasi ham [UZ Core ServiceRequest](StructureDefinition-uz-core-servicerequest.html) va [UZ Core Task Referral Approval](StructureDefinition-uz-core-referral-approval-task.html) sifatida nashr etilgan va hali eksperimental deb belgilangan.
+
+[Laboratoriya tekshiruvini tayinlashdan natijani olishgacha](workflow-lab.html) jarayonining havolalari va misoli endi 0.8.0 da qayta nomlangan `uz-core-servicerequest-laboratory` o'rniga [UZ Core ServiceRequest](StructureDefinition-uz-core-servicerequest.html) ga ishora qiladi.
+
+[UZ Core RelatedPerson](StructureDefinition-uz-core-relatedperson.html) endi tizim ota-onaga bola nomidan ish ko'rishga ruxsat bera olishi uchun ota-onani bolaga qanday bog'lashni ko'rsatadi va yangi [example-mother-of-a-child](RelatedPerson-example-mother-of-a-child.html) misolini keltiradi. Profil sahifasi bolalarni PINFL orqali topishni, bolaning yoshini `Patient.birthDate` dan o'qishni va nima uchun munosabatning o'zi kirish huquqini bermasligini tushuntiradi.
 
 ### Versiya 0.8.0
 
@@ -54,7 +128,7 @@ Chaqaloq kuzatuvi qayd etilgan hayot kunining lokal kodlari bilan [kuzatuv kuni 
 
 [UZ Core ClaimResponse](StructureDefinition-uz-core-claim-response.html) ning sarlavhasi va tavsifi endi resurs nomini ajratmaydi - "UZ Core Claim Response" o'rniga "UZ Core ClaimResponse". Uning kanonik URL i o'zgarmadi.
 
-[UZ Core PractitionerRole](StructureDefinition-uz-core-practitioner-role.html) dagi `code` ga (required) bog'langan [lavozim va kasblar ValueSet i](ValueSet-position-and-profession-vs.html) endi v3 RoleClass kod tizimini to'liq, v3 RoleCode ning to'rtta kodini (`TPA`, `PAYOR`, `ORG` va `VALIDATOR`) va SNOMED CT ning nomma-nom sanab o'tilgan o'nta tushunchasini ham qabul qiladi, shunda DMEDPositionToDHPPositionCM ning har bir maqsadi bog'lanish bo'yicha yaroqli bo'ladi. Ular uchun o'zbekcha va ruscha belgilanishlarni yangi [DMED lavozimlarining SNOMED CT supplement i](CodeSystem-dmed-position-sct-cs.html) va [DMED rol sinflari supplement i](CodeSystem-dmed-role-class-cs.html) olib yuradi. Natijada [DMEDRoleCS](CodeSystem-dmed-role-cs.html) 5 tadan 43 ta kodga, [RoleCodeCS](CodeSystem-role-code-cs.html) esa 2 tadan 6 taga o'sdi.
+[UZ Core PractitionerRole](StructureDefinition-uz-core-practitioner-role.html) dagi `code` ga (required) bog'langan [lavozim va kasblar ValueSet i](ValueSet-position-and-profession-vs.html) endi v3 RoleClass kod tizimini to'liq, v3 RoleCode ning to'rtta kodini (`TPA`, `PAYOR`, `ORG` va `VALIDATOR`) va SNOMED CT ning nomma-nom sanab o'tilgan o'nta tushunchasini ham qabul qiladi, shunda DMEDPositionToDHPPositionCM ning har bir maqsadi bog'lanish bo'yicha yaroqli bo'ladi. Ular uchun o'zbekcha va ruscha belgilanishlarni yangi [DMED lavozimlarining SNOMED CT supplement i](CodeSystem-dmed-position-sct-cs.html) va DMED rol sinflari supplement i olib yuradi. Natijada [DMEDRoleCS](CodeSystem-dmed-role-cs.html) 5 tadan 43 ta kodga, [RoleCodeCS](CodeSystem-role-code-cs.html) esa 2 tadan 6 taga o'sdi.
 
 [To'lov turlari CodeSystem](CodeSystem-payment-type-cs.html) idagi `paytype-0001-0004` kodining nomlanishi "Davlat tomonidan moliyalashtiriladigan" dan "Davlat tarifi" ga o'zgardi. Kodning o'zi o'zgarmadi, shuning uchun uni saqlaydigan tizimlar o'z yorliqlari hamon mos kelishini tekshirishi lozim. Qolgan to'rttasi tavsiflamaydigan to'lov shakllari uchun beshinchi kod `paytype-0001-0005` ("Boshqalar") qo'shildi.
 
@@ -96,7 +170,7 @@ Davlat tibbiy sug'urtasi bo'yicha yo'llanma va gospitalizatsiyani tasdiqlash jar
 
 Skrining, emlash va donorlik maqsadli guruhlari hamda ularning natijaviy kogortalari kabi belgilangan ob'ektlar to'plamlari uchun [UZ Core Group](StructureDefinition-uz-core-group.html) profili qo'shildi, u [guruh turi](ValueSet-group-type-vs.html), [guruh ko'rinishi](ValueSet-group-kind-vs.html), [a'zolik asosi](ValueSet-group-membership-basis-vs.html) va [xususiyat turi](ValueSet-group-characteristic-kind-vs.html) terminologiyasiga ega.
 
-[Yurak-qon tomir kasalliklari xavfi skriningi so'rovnomasi](Questionnaire-CVDRiskScreeningQuestionnaire.html) qo'shildi - bu YQTK xavfini erta aniqlash shakli bo'lib, javoblar asosida SDC FHIRPath ifodalari yordamida ballni va xavf toifasini hisoblab beradi. Ushbu ifodalar hal qilinishi uchun qo'llanma endi `hl7.fhir.uv.sdc` ga bog'liq.
+Yurak-qon tomir kasalliklari xavfi skriningi so'rovnomasi qo'shildi - bu YQTK xavfini erta aniqlash shakli bo'lib, javoblar asosida SDC FHIRPath ifodalari yordamida ballni va xavf toifasini hisoblab beradi. Ushbu ifodalar hal qilinishi uchun qo'llanma endi `hl7.fhir.uv.sdc` ga bog'liq.
 
 [Holat og'irligi](CodeSystem-condition-severity-cs.html), [muolaja natijasi](CodeSystem-procedure-outcome-cs.html), [reaksiya turi](CodeSystem-reaction-type-cs.html), [maqsad tavsifi](CodeSystem-goal-description-cs.html), [maqsad boshlanish hodisasi](CodeSystem-goal-start-event-cs.html) va [ijtimoiy-iqtisodiy kuzatuv kodlari](CodeSystem-socioeconomic-observation-codes-cs.html) uchun o'zbekcha va ruscha atamalarni saqlovchi SNOMED CT supplement'lari qo'shildi.
 
@@ -158,7 +232,7 @@ Nojo'ya hodisalar haqida xabar berish uchun [UZ Core AdverseEvent](StructureDefi
 
 O'zbekistonga xos dori identifikatorlari (markirovka ID, ro'yxatdan o'tkazish guvohnomasi, GTIN, quti agregatsiya ID, milliy mahsulot va xizmatlar tasnifi kodi) va ATC asosidagi [tasnif](ValueSet-medication-classification-vs.html) hamda [dori shakli](ValueSet-medication-doseform-vs.html) terminologiyasi bilan [UZ Core Medication](StructureDefinition-uz-core-medication.html) profili qo'shildi.
 
-[UZ Core Procedure](StructureDefinition-uz-core-procedure.html) profili qo'shildi, [protsedura holati](ValueSet-procedure-event-status-vs.html), SNOMED CT asosidagi [protsedura kodlari](ValueSet-procedure-code-vs.html) va [natija](ValueSet-procedure-outcome-vs.html) terminologiyasi bilan birga, shuningdek qoplama hisobotlari uchun namuna sifatida [SNOMED CT dan ICHI ga](ConceptMap-snomed-to-ichi-procedures.html) ConceptMap bilan.
+[UZ Core Procedure](StructureDefinition-uz-core-procedure.html) profili qo'shildi, [protsedura holati](ValueSet-procedure-event-status-vs.html), SNOMED CT asosidagi [protsedura kodlari](ValueSet-procedure-code-vs.html) va [natija](ValueSet-procedure-outcome-vs.html) terminologiyasi bilan birga, shuningdek qoplama hisobotlari uchun namuna sifatida SNOMED CT dan ICHI ga ConceptMap bilan.
 
 [Laboratoriya usuli kodlari](CodeSystem-lab-methods-cs.html) qo'shildi, laboratoriya [panel va analit kodlari](ConceptMap-lab-pan-codes-to-loinc.html) ni LOINC ga va [usul kodlari](ConceptMap-lab-methods-to-loinc.html) ni SNOMED CT ga moslashtiruvchi ConceptMaplar bilan. Usul kodlari [laboratoriya usullari qiymatlar to'plami](ValueSet-lab-method-vs.html) sifatida taqdim etilgan va [UZ Core Observation](StructureDefinition-uz-core-observation.html) profilining `method` elementiga bog'langan.
 

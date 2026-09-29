@@ -61,7 +61,10 @@ jobs:
       - name: Build IG
         run: |
           chmod +x ./_genonce.sh
-          ./_genonce.sh
+          # -publish makes this a publication build. Without it the publisher marks
+          # the package notForPublication with a file:// url, which packages2.fhir.org
+          # rejects and which turns links from dependent guides into file:// links.
+          ./_genonce.sh -publish https://dhp.uz/fhir/core
 
       - name: Verify built package
         run: |
@@ -72,6 +75,15 @@ jobs:
           echo "Built $NAME#$PVER"
           if [ "$NAME" != "uz.dhp.core" ] || [ "$PVER" != "$VERSION" ]; then
             echo "::error::Built package $NAME#$PVER does not match uz.dhp.core#$VERSION"
+            exit 1
+          fi
+          if [ "$(echo "$PKG" | jq -r '.notForPublication // false')" != "false" ]; then
+            echo "::error::Built package is flagged notForPublication - not a publication build"
+            exit 1
+          fi
+          URL=$(echo "$PKG" | jq -r .url)
+          if [ "$URL" != "https://dhp.uz/fhir/core" ]; then
+            echo "::error::Built package url is $URL, expected https://dhp.uz/fhir/core"
             exit 1
           fi
 
