@@ -146,13 +146,6 @@ https://dhp.uz/fhir/core/sid/{namespace}/{country}/{type}[/subtype]
 - Прежде чем создавать систему, проверьте [IdentifierDomainCS](https://dhp.uz/fhir/core/CodeSystem-identifier-domain-cs.html) и NamingSystem ядра. Если система уже есть, используйте её: ПИНФЛ - всегда `https://dhp.uz/fhir/core/sid/pid/uz/ni`, отдельная система или NamingSystem для него не создаётся.
 - Для каждой новой системы создайте NamingSystem с `kind = #identifier` и этим URI в `uniqueId.value`.
 
-Эталонный пример - перевод идентификаторов скрининга на этот шаблон ([digital-health-integration#99](https://github.com/uzinfocom-org/digital-health-integration/pull/99)):
-
-| Было | Стало | Причина |
-|------|-------|---------|
-| `https://dhp.uz/fhir/core/sid/uz/screening` | `https://dhp.uz/fhir/core/sid/doc/uz/screening` | нет `namespace` |
-| `https://dhp.uz/fhir/core/sid/org/uz/screening` | `https://dhp.uz/fhir/core/sid/doc/uz/screening-case` | идентифицирует случай, а не организацию |
-| `https://dhp.uz/fhir/core/sid/uz/pinfl` | `https://dhp.uz/fhir/core/sid/pid/uz/ni` | дублирует систему ядра |
 
 ## 3) Конвенции слайсинга
 
