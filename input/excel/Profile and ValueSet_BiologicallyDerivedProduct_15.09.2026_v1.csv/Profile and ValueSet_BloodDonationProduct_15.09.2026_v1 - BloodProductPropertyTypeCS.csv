@@ -1,0 +1,20 @@
+SNOMED,CODE,UZ,RU,EN,STATUS,SNOMED DISPLAY
+63915006,abo-group,ABO guruhi,Группа крови ABO,ABO group,Подтверждено (реальный лабораторный тест),ABO blood group system (qualifier value)
+115678000,rhd-type,RhD turi,Резус-принадлежность (RhD),RhD type,Подтверждено (реальный лабораторный тест),Rh blood group system (qualifier value)
+115940004,extended-phenotype-genotype,Kengaytirilgan fenotip/genotip,Расширенный фенотип/генотип,Extended phenotype/genotype,Не найдено,Blood group phenotype (finding)
+,volume,Hajm,Объём,Volume,"Подтверждено (колонка ""Объем"")",
+28317006,hematocrit,Gematokrit,Гематокрит,Hematocrit,Подтверждено (часть панели ОАК),Hematocrit determination (procedure)
+61928009,platelet-count,Trombotsitlar soni,Количество тромбоцитов,Platelet count,Подтверждено (часть панели ОАК),Platelet count (procedure)
+372862008,anticoagulant,Antikoagulyant,Антикоагулянт,Anticoagulant,Не найдено,Anticoagulant (substance)
+,additive-solution,Qo'shimcha eritma,Добавочный раствор,Additive solution,Не найдено,
+126251004,leukocyte-reduced,Leykotsitlardan tozalangan,Лейкоредуцированный,Leukocyte-reduced,Не найдено,"Leukocyte reduced red blood cells, human (product)"
+126241000,irradiated,Nurlantirilgan,Облучённый,Irradiated,"Подтверждено (диаграмма бизнес-процесса — ""Облучение → Irradiation"")",Irradiated blood product (product)
+126249003,washed,Yuvilgan,Отмытый,Washed,"Подтверждено (диаграмма бизнес-процесса — ""Обмывка → Washing"")","Washed red blood cells, human (product)"
+,pathogen-reduced,Patogenlardan tozalangan,Патоген-редуцированный,Pathogen-reduced,Не найдено,
+71643009,frozen-cryopreserved,Muzlatilgan/kriokonservatsiyalangan,Замороженный/криоконсервированный,Frozen/cryopreserved,"Подтверждено (диаграмма бизнес-процесса — ""Заморозка → Freezing"")",Frozen blood preparation (procedure)
+304289003,cmv-status,CMV holati,Статус ЦМВ (CMV),CMV status,Не найдено,Cytomegalovirus status (observable entity)
+50095005,hbs-status,HbS holati,Статус HbS,HbS status,Не найдено,Hemoglobin S (substance)
+246380002,collection-method,Yig'ish usuli,Метод заготовки,Collection method,"Подтверждено (через BloodCollectionProcedure.code, CollectionMethodCS)",Method of collection (attribute)
+,donation-type,"Donorlik turi (allogen, autolog, yo'naltirilgan)","Тип донации (аллогенная, аутологичная, направленная)","Donation type (allogeneic, autologous, directed)",Не найдено,
+246246002,special-testing-attributes,Maxsus tekshiruv xususiyatlari,Особые атрибуты тестирования,Special testing attributes,Не найдено,Test type (attribute)
+117063007,release-disposition,Chiqarish holati (release),Статус выпуска (release),"Подтверждено (колонка ""Решение"": Утилизировать/Выпустить)",Blood product unit final disposition (finding),
