@@ -134,6 +134,18 @@ Id: uz-core-condition-diagnosis-type
 * description = "Search for conditions by diagnosis type"
 ```
 
+### 2.8 Системы идентификаторов
+
+Все системы идентификаторов (`Identifier.system`) строятся по шаблону со страницы [Identifiers](https://dhp.uz/fhir/core/identifiers.html):
+
+```
+https://dhp.uz/fhir/core/sid/{namespace}/{country}/{type}[/subtype]
+```
+
+- Сегмент `namespace` обязателен. Выбирайте его по тому, что идентифицируется, а не по тому, кто присваивает идентификатор: номер случая, записи или документа относится к `doc`, даже если его выдаёт организация.
+- Прежде чем создавать систему, проверьте [IdentifierDomainCS](https://dhp.uz/fhir/core/CodeSystem-identifier-domain-cs.html) и NamingSystem ядра. Если система уже есть, используйте её: ПИНФЛ - всегда `https://dhp.uz/fhir/core/sid/pid/uz/ni`, отдельная система или NamingSystem для него не создаётся.
+- Для каждой новой системы создайте NamingSystem с `kind = #identifier` и этим URI в `uniqueId.value`.
+
 ## 3) Конвенции слайсинга
 
 ### 3.1 Основные принципы слайсинга
