@@ -8,27 +8,25 @@
 
 [ICHI](CodeSystem-who-ichi.html) to'liq qo'shildi - JSST ning Sog'liqni saqlash aralashuvlari xalqaro klassifikatsiyasi, 2026-09-17 jadvalidan 21 747 konsept - JSST ning o'z kanonik URI si `http://id.who.int/icd/release/11/ichi` ostida, [ICHI Codes](ValueSet-ichi-vs.html) ro'yxati bilan birga. ICHI - ICD-11 Foundation Component ning linearizatsiyasi, shuning uchun u `icd/release/11` nom maydonini ICD-11 MMS va ICF bilan bo'lishadi. JSST uni faqat ICD-11 ni qo'llab-quvvatlash platformasida nashr etadi va uzluksiz o'zgartiradi, shuning uchun versiyani qat'iy belgilang.
 
-Bu konseptlarning 677 tasi `inactive` va `status` `retired` deb belgilangan. Bular milliy manba tizimi hanuz saqlab turgan, JSST esa olib tashlagan kodlar; mavjud yozuvlar validatsiyadan o'tishi uchun qoldirilgan. `ichi-vs` ularni chiqarib tashlaydi, shuning uchun yangi yozuvni bunday kod bilan kodlash mumkin emas.
+Bu konseptlarning 677 tasi `inactive` va `status` `retired` deb belgilangan. Bular DMED hanuz saqlab turgan, JSST esa olib tashlagan kodlar; DMED da allaqachon mavjud yozuvlar validatsiyadan o'tishi uchun qoldirilgan. `ichi-vs` ularni chiqarib tashlaydi, shuning uchun yangi yozuvni bunday kod bilan kodlash mumkin emas.
 
 [UZ Core PlanDefinition](StructureDefinition-uz-core-plan-definition.html) endi jadval qayerda amal qilishini ko'rsatadi: `jurisdiction` use context kesimi yangi [Uzbekistan Jurisdictions](ValueSet-jurisdiction-vs.html) ro'yxatiga required bog'langan. Milliy jadval `UZ` mamlakat kodi bilan bitta yozuv tashiydi, hududiy jadval esa har bir viloyat uchun bittadan yozuv tashiydi va viloyat kodlari `Address.state` dagi kodlar bilan bir xil, shuning uchun bemorning viloyatini unga tegishli jadvallar bilan solishtirish mumkin.
 
-Yangi `uzcore-plandef-2` invarianti jadvalga butun mamlakatni va alohida viloyatlarni bir vaqtda da'vo qilishga yo'l qo'ymaydi. [Example Regional Type 2 Diabetes Screening](PlanDefinition-example-uz-core-regional-screening-plan-definition.html) faqat Samarqand va Navoiy viloyatlarida amal qiladi.
-
-[Immunizatsiya holati sabablari](ValueSet-immunization-status-reason-vs.html) ro'yxati 4 koddan 8 kodga o'sdi: `PHILISOP` (dunyoqarash sababli e'tiroz), `RELIG` (diniy e'tiqod sababli e'tiroz), `VACEFF` (vaksina samaradorligi shubhali) va `VACSAF` (vaksina xavfsizligidan xavotir) qo'shildi, shunda amalga oshmagan emlash sababini bemorning e'tirozidan aniqroq ko'rsatishi mumkin. Ularning o'zbek va rus designation lari [act reason supplement](CodeSystem-actreason-cs.html) ichida.
+Sog'liqni saqlash vazirligining so'roviga ko'ra [immunizatsiya holati sabablari](ValueSet-immunization-status-reason-vs.html) ro'yxati 4 koddan 8 kodga o'sdi: `PHILISOP` (dunyoqarash sababli e'tiroz), `RELIG` (diniy e'tiqod sababli e'tiroz), `VACEFF` (vaksina samaradorligi shubhali) va `VACSAF` (vaksina xavfsizligidan xavotir) qo'shildi, shunda amalga oshmagan emlash sababini bemorning e'tirozidan aniqroq ko'rsatishi mumkin. Ularning o'zbek va rus designation lari [act reason supplement](CodeSystem-actreason-cs.html) ichida.
 
 Kattalar uchun geriatriya uchun `organizational-specialization-cs#176.0`, "Vaqf" xayriya jamg'armasi uchun `coverage-type-cs#covtp-0001-00014`, poliklinikadan yo'llanma uchun `admit-source-local-cs#mserv-0006-00007` va gematologik kasalliklarga chalingan shaxslar uchun `benefits-cs#regis0004.00024` qo'shildi - oxirgisi Prezident farmoni UP-88 bo'yicha davlat hisobidan yuqori texnologiyali ixtisoslashtirilgan yordam olish huquqi - bular 066-shaklni jonli DMED tizimi bilan solishtirilganda topilgan bo'shliqlar. [Murojaat ustuvorligi](ValueSet-encounter-priority-vs.html) ro'yxati endi `UR` (shoshilinch) va `EL` (rejali) kodlarini ham, [Provenance Participation Role Type](ValueSet-provenance-participation-role-type-vs.html) ro'yxati esa `attester` kodini o'z ichiga oladi.
 
 #### O'zgartirildi
 
-[Muolaja kodlari](ValueSet-procedure-code-vs.html) endi SNOMED CT bilan bir qatorda ICHI ni ham o'z ichiga oladi, shuning uchun `Procedure.code` protsedura hisobotga qanday kod bilan tushishini ham, uning klinik ma'nosini ham tashishi mumkin - protsedura qayd etilib, hisobotga ham kiritilganda ikkalasi bitta elementda ikki coding sifatida. Bog'lanish endi required emas, balki extensible, shunda qo'llanma `Procedure.code` ni JSST olib tashlagan kodlarni ham o'z ichiga olgan milliy to'plamgacha toraytira oladi.
+[Muolaja kodlari](ValueSet-procedure-code-vs.html) endi SNOMED CT bilan bir qatorda ICHI ni ham o'z ichiga oladi, chunki DMED operatsiyani faqat ICHI da kodlaydi, shuning uchun `Procedure.code` protsedura hisobotga qanday kod bilan tushishini ham, uning klinik ma'nosini ham tashishi mumkin - protsedura qayd etilib, hisobotga ham kiritilganda ikkalasi bitta elementda ikki coding sifatida. Bog'lanish endi required emas, balki extensible, shunda qo'llanma `Procedure.code` ni JSST olib tashlagan kodlarni ham o'z ichiga olgan milliy to'plamgacha toraytira oladi.
 
-ICHI ning kanonik URI si `beta` ni yo'qotadi: [ICHI NamingSystem](NamingSystem-who-ichi.html) `http://id.who.int/icd/release/11/beta/ichi` dan `http://id.who.int/icd/release/11/ichi` ga ko'chdi. Eski URI bilan kodlangan ma'lumotlarni ko'chirish kerak.
+ICHI ning kanonik URI si `beta` ni yo'qotadi: [ICHI NamingSystem](NamingSystem-who-ichi.html) `http://id.who.int/icd/release/11/beta/ichi` dan `http://id.who.int/icd/release/11/ichi` ga ko'chdi. NamingSystem `beta` li URI ni 0.9.0 va 0.9.2 da nashr etgan, shuning uchun ICHI tizimi URI sini o'sha yerdan olgan hamma narsa ko'chirilishi kerak.
 
 [UZ Core Provenance](StructureDefinition-uz-core-provenance.html)dagi `target` endi `Bundle`ni ham qabul qiladi, chunki butun FHIR hujjatini imzolash (066-shakl qiladigan ishi kabi) uchun ilgari to'g'ri maqsad turi mavjud emas edi.
 
-#### O'chirildi
+#### Buzuvchi o'zgarishlar
 
-SNOMED CT dan ICHI ga namuna ConceptMap o'chirildi. JSST ICHI ni CC BY-ND 3.0 IGO litsenziyasi ostida taqdim etadi va ICHI ni boshqa terminologiya bilan solishtirish uchun JSST bilan alohida yozma kelishuv talab qiladi; u bo'lmaguncha qo'llanma bunday xaritani nashr eta olmaydi.
+0.9.0 dan beri nashr etilgan SNOMED CT dan ICHI ga namuna ConceptMap o'chirildi. JSST ICHI ni CC BY-ND 3.0 IGO litsenziyasi ostida taqdim etadi va ICHI ni boshqa terminologiya bilan solishtirish uchun JSST bilan alohida yozma kelishuv talab qiladi; u bo'lmaguncha qo'llanma bunday xaritani nashr eta olmaydi.
 
 #### Hujjatlashtirish
 

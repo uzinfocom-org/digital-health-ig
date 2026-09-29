@@ -8,27 +8,25 @@
 
 Added [ICHI](CodeSystem-who-ichi.html) in full - the WHO International Classification of Health Interventions, 21,747 concepts from the 2026-09-17 tabulation - under its own WHO canonical `http://id.who.int/icd/release/11/ichi`, with an [ICHI Codes](ValueSet-ichi-vs.html) value set. ICHI is a linearization of the ICD-11 Foundation Component, which is why it shares the `icd/release/11` namespace with ICD-11 MMS and ICF. WHO publishes it only on the ICD-11 maintenance platform and revises it continuously, so pin the version.
 
-677 of those concepts are marked `inactive` with `status` of `retired`. They are codes a national source system still carries that WHO has withdrawn, kept so existing records stay valid; `ichi-vs` excludes them, so nothing new can be coded with one.
+677 of those concepts are marked `inactive` with `status` of `retired`. They are codes DMED still carries that WHO has withdrawn, kept so records already in DMED stay valid; `ichi-vs` excludes them, so nothing new can be coded with one.
 
 [UZ Core PlanDefinition](StructureDefinition-uz-core-plan-definition.html) now states where a schedule applies, through a `jurisdiction` use context slice bound (required) to a new [Uzbekistan Jurisdictions value set](ValueSet-jurisdiction-vs.html). A national schedule carries one entry with the country code `UZ`; a regional one carries an entry per region, using the same region codes as `Address.state`, so a patient's region can be matched against the schedules that apply to them.
 
-A new invariant, `uzcore-plandef-2`, stops a schedule claiming the country as a whole and individual regions at once. [Example Regional Type 2 Diabetes Screening](PlanDefinition-example-uz-core-regional-screening-plan-definition.html) runs in Samarqand and Navoiy only.
-
-The [immunization status reason value set](ValueSet-immunization-status-reason-vs.html) has grown from 4 to 8 codes, adding `PHILISOP` (philosophical objection), `RELIG` (religious objection), `VACEFF` (vaccine efficacy concerns) and `VACSAF` (vaccine safety concerns), so a vaccination that did not happen can say why beyond a patient objection. Their Uzbek and Russian designations are in the [act reason supplement](CodeSystem-actreason-cs.html).
+At the Ministry of Health's request, the [immunization status reason value set](ValueSet-immunization-status-reason-vs.html) has grown from 4 to 8 codes, adding `PHILISOP` (philosophical objection), `RELIG` (religious objection), `VACEFF` (vaccine efficacy concerns) and `VACSAF` (vaccine safety concerns), so a vaccination that did not happen can say why beyond a patient objection. Their Uzbek and Russian designations are in the [act reason supplement](CodeSystem-actreason-cs.html).
 
 Added `organizational-specialization-cs#176.0` for adult geriatrics, `coverage-type-cs#covtp-0001-00014` for the Vaqf charitable fund, `admit-source-local-cs#mserv-0006-00007` for a polyclinic referral, and `benefits-cs#regis0004.00024` for people with haematological diseases, an entitlement to state-funded high-tech specialized care under Presidential Decree UP-88 - gaps found auditing Form 066 against the live DMED system. The [encounter priority value set](ValueSet-encounter-priority-vs.html) now also includes `UR` (urgent) and `EL` (elective), and the [Provenance Participation Role Type value set](ValueSet-provenance-participation-role-type-vs.html) includes `attester`.
 
 #### Changed
 
-[Procedure Codes](ValueSet-procedure-code-vs.html) now includes ICHI alongside SNOMED CT, so `Procedure.code` can carry the statistical code a procedure is reported under as well as its clinical meaning - both as two codings on the same element where a procedure is recorded and reported. The binding is now extensible rather than required, so a guide can narrow `Procedure.code` to a national subset that includes codes WHO has withdrawn.
+[Procedure Codes](ValueSet-procedure-code-vs.html) now includes ICHI alongside SNOMED CT, because DMED codes an operation in ICHI only, so `Procedure.code` can carry the statistical code a procedure is reported under as well as its clinical meaning - both as two codings on the same element where a procedure is recorded and reported. The binding is now extensible rather than required, so a guide can narrow `Procedure.code` to a national subset that includes codes WHO has withdrawn.
 
-The ICHI canonical drops `beta`: the [ICHI NamingSystem](NamingSystem-who-ichi.html) moved from `http://id.who.int/icd/release/11/beta/ichi` to `http://id.who.int/icd/release/11/ichi`. Codings against the old URI have to move.
+The ICHI canonical drops `beta`: the [ICHI NamingSystem](NamingSystem-who-ichi.html) moved from `http://id.who.int/icd/release/11/beta/ichi` to `http://id.who.int/icd/release/11/ichi`. The NamingSystem published the `beta` URI in 0.9.0 and 0.9.2, so anything that took the ICHI system URI from there has to move.
 
 `target` on [UZ Core Provenance](StructureDefinition-uz-core-provenance.html) now also accepts `Bundle`, since signing a whole FHIR document (as Form 066 does) previously had no valid target type.
 
-#### Removed
+#### Breaking changes
 
-Removed the example SNOMED CT to ICHI ConceptMap. WHO licenses ICHI under CC BY-ND 3.0 IGO, which makes a map or crosswalk between ICHI and another terminology subject to a separate written agreement with WHO; the guide cannot publish one until that agreement is in place.
+The example SNOMED CT to ICHI ConceptMap, published since 0.9.0, has been removed. WHO licenses ICHI under CC BY-ND 3.0 IGO, which makes a map or crosswalk between ICHI and another terminology subject to a separate written agreement with WHO; the guide cannot publish one until that agreement is in place.
 
 #### Documentation
 
