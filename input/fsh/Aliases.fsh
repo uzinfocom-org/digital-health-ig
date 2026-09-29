@@ -231,3 +231,5 @@ Alias: $v3-timing-event = http://terminology.hl7.org/CodeSystem/v3-TimingEvent
 Alias: $v3-gts-abbreviation = http://terminology.hl7.org/CodeSystem/v3-GTSAbbreviation
 Alias: $timing-abbreviation = http://terminology.hl7.org/CodeSystem/timing-abbreviation
 Alias: $general-activity-definition = https://dhp.uz/fhir/core/StructureDefinition/uz-core-activitydefinition
+Alias: $supplyrequest-status = http://hl7.org/fhir/supplyrequest-status
+Alias: $supplydelivery-supplyitemtype = http://hl7.org/fhir/supplydelivery-supplyitemtype
