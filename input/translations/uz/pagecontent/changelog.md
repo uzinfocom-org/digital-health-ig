@@ -2,11 +2,23 @@
 
 #### Qo'shildi
 
+[ICHI](CodeSystem-who-ichi.html) to'liq qo'shildi - JSST ning Sog'liqni saqlash aralashuvlari xalqaro klassifikatsiyasi, 2026-09-17 jadvalidan 21 747 konsept - JSST ning o'z kanonik URI si `http://id.who.int/icd/release/11/ichi` ostida, [ICHI Codes](ValueSet-ichi-vs.html) ro'yxati bilan birga. ICHI - ICD-11 Foundation Component ning linearizatsiyasi, shuning uchun u `icd/release/11` nom maydonini ICD-11 MMS va ICF bilan bo'lishadi. JSST uni faqat ICD-11 ni qo'llab-quvvatlash platformasida nashr etadi va uzluksiz o'zgartiradi, shuning uchun versiyani qat'iy belgilang.
+
+Bu konseptlarning 677 tasi `inactive` va `status` `retired` deb belgilangan. Bular milliy manba tizimi hanuz saqlab turgan, JSST esa olib tashlagan kodlar; mavjud yozuvlar validatsiyadan o'tishi uchun qoldirilgan. `ichi-vs` ularni chiqarib tashlaydi, shuning uchun yangi yozuvni bunday kod bilan kodlash mumkin emas.
+
 Kattalar uchun geriatriya uchun `organizational-specialization-cs#176.0`, "Vaqf" xayriya jamg'armasi uchun `coverage-type-cs#covtp-0001-00014` va poliklinikadan yo'llanma uchun `admit-source-local-cs#mserv-0006-00007` qo'shildi - bular 066-shaklni jonli DMED tizimi bilan solishtirilganda topilgan bo'shliqlar. [Provenance Participation Role Type](ValueSet-provenance-participation-role-type-vs.html) ro'yxati endi `attester` kodini o'z ichiga oladi.
 
 #### O'zgartirildi
 
+[Muolaja kodlari](ValueSet-procedure-code-vs.html) endi SNOMED CT bilan bir qatorda ICHI ni ham o'z ichiga oladi, shuning uchun `Procedure.code` protsedura hisobotga qanday kod bilan tushishini ham, uning klinik ma'nosini ham tashishi mumkin - protsedura qayd etilib, hisobotga ham kiritilganda ikkalasi bitta elementda ikki coding sifatida. Bog'lanish endi required emas, balki extensible, shunda qo'llanma `Procedure.code` ni JSST olib tashlagan kodlarni ham o'z ichiga olgan milliy to'plamgacha toraytira oladi.
+
+ICHI ning kanonik URI si `beta` ni yo'qotadi: [ICHI NamingSystem](NamingSystem-who-ichi.html) `http://id.who.int/icd/release/11/beta/ichi` dan `http://id.who.int/icd/release/11/ichi` ga ko'chdi. Eski URI bilan kodlangan ma'lumotlarni ko'chirish kerak.
+
 [UZ Core Provenance](StructureDefinition-uz-core-provenance.html)dagi `target` endi `Bundle`ni ham qabul qiladi, chunki butun FHIR hujjatini imzolash (066-shakl qiladigan ishi kabi) uchun ilgari to'g'ri maqsad turi mavjud emas edi.
+
+#### O'chirildi
+
+SNOMED CT dan ICHI ga namuna ConceptMap o'chirildi. JSST ICHI ni CC BY-ND 3.0 IGO litsenziyasi ostida taqdim etadi va ICHI ni boshqa terminologiya bilan solishtirish uchun JSST bilan alohida yozma kelishuv talab qiladi; u bo'lmaguncha qo'llanma bunday xaritani nashr eta olmaydi.
 
 ### Versiya 0.9.2
 
@@ -208,7 +220,7 @@ Nojo'ya hodisalar haqida xabar berish uchun [UZ Core AdverseEvent](StructureDefi
 
 O'zbekistonga xos dori identifikatorlari (markirovka ID, ro'yxatdan o'tkazish guvohnomasi, GTIN, quti agregatsiya ID, milliy mahsulot va xizmatlar tasnifi kodi) va ATC asosidagi [tasnif](ValueSet-medication-classification-vs.html) hamda [dori shakli](ValueSet-medication-doseform-vs.html) terminologiyasi bilan [UZ Core Medication](StructureDefinition-uz-core-medication.html) profili qo'shildi.
 
-[UZ Core Procedure](StructureDefinition-uz-core-procedure.html) profili qo'shildi, [protsedura holati](ValueSet-procedure-event-status-vs.html), SNOMED CT asosidagi [protsedura kodlari](ValueSet-procedure-code-vs.html) va [natija](ValueSet-procedure-outcome-vs.html) terminologiyasi bilan birga, shuningdek qoplama hisobotlari uchun namuna sifatida [SNOMED CT dan ICHI ga](ConceptMap-snomed-to-ichi-procedures.html) ConceptMap bilan.
+[UZ Core Procedure](StructureDefinition-uz-core-procedure.html) profili qo'shildi, [protsedura holati](ValueSet-procedure-event-status-vs.html), SNOMED CT asosidagi [protsedura kodlari](ValueSet-procedure-code-vs.html) va [natija](ValueSet-procedure-outcome-vs.html) terminologiyasi bilan birga, shuningdek qoplama hisobotlari uchun namuna sifatida SNOMED CT dan ICHI ga ConceptMap bilan.
 
 [Laboratoriya usuli kodlari](CodeSystem-lab-methods-cs.html) qo'shildi, laboratoriya [panel va analit kodlari](ConceptMap-lab-pan-codes-to-loinc.html) ni LOINC ga va [usul kodlari](ConceptMap-lab-methods-to-loinc.html) ni SNOMED CT ga moslashtiruvchi ConceptMaplar bilan. Usul kodlari [laboratoriya usullari qiymatlar to'plami](ValueSet-lab-method-vs.html) sifatida taqdim etilgan va [UZ Core Observation](StructureDefinition-uz-core-observation.html) profilining `method` elementiga bog'langan.
 

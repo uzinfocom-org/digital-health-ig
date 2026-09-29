@@ -2,11 +2,23 @@
 
 #### Добавлено
 
+Добавлен [ICHI](CodeSystem-who-ichi.html) целиком - Международная классификация вмешательств в здравоохранении ВОЗ, 21 747 концептов из таблицы от 2026-09-17 - под собственным каноническим URI ВОЗ `http://id.who.int/icd/release/11/ichi`, вместе с набором значений [ICHI Codes](ValueSet-ichi-vs.html). ICHI - это линеаризация Foundation Component ICD-11, поэтому она делит пространство имён `icd/release/11` с ICD-11 MMS и ICF. ВОЗ публикует её только на платформе поддержки ICD-11 и правит непрерывно, поэтому фиксируйте версию.
+
+677 из этих концептов помечены как `inactive` со `status` `retired`. Это коды, которые национальная система-источник всё ещё использует, а ВОЗ уже убрала; они сохранены, чтобы существующие записи оставались валидными. `ichi-vs` их исключает, поэтому новую запись таким кодом закодировать нельзя.
+
 Добавлены `organizational-specialization-cs#176.0` для гериатрии взрослых, `coverage-type-cs#covtp-0001-00014` для благотворительного фонда «Вакф» и `admit-source-local-cs#mserv-0006-00007` для направления из поликлиники — пробелы, найденные при сверке формы 066 с живой системой DMED. Список [Provenance Participation Role Type](ValueSet-provenance-participation-role-type-vs.html) теперь включает `attester`.
 
 #### Изменено
 
+[Коды процедур](ValueSet-procedure-code-vs.html) теперь включают ICHI наряду с SNOMED CT, поэтому `Procedure.code` может нести статистический код, под которым процедура попадает в отчётность, вместе с её клиническим смыслом - оба как два coding в одном элементе, если процедуру и регистрируют, и включают в отчётность. Привязка теперь extensible, а не required, чтобы руководство могло сузить `Procedure.code` до национального подмножества, включающего коды, убранные ВОЗ.
+
+Канонический URI ICHI теряет `beta`: [NamingSystem ICHI](NamingSystem-who-ichi.html) переехал с `http://id.who.int/icd/release/11/beta/ichi` на `http://id.who.int/icd/release/11/ichi`. Кодировки со старым URI нужно перенести.
+
 `target` в [UZ Core Provenance](StructureDefinition-uz-core-provenance.html) теперь также принимает `Bundle`, поскольку для подписи целого FHIR-документа (как в форме 066) ранее не было допустимого типа цели.
+
+#### Удалено
+
+Удалён пример ConceptMap SNOMED CT в ICHI. ВОЗ лицензирует ICHI по CC BY-ND 3.0 IGO, и любое сопоставление ICHI с другой терминологией требует отдельного письменного соглашения с ВОЗ; до его заключения руководство такую карту публиковать не может.
 
 ### Версия 0.9.2
 
@@ -208,7 +220,7 @@ ConceptMap типов организаций переименованы с пр�
 
 Добавлен профиль [UZ Core Medication](StructureDefinition-uz-core-medication.html) с характерными для Узбекистана идентификаторами медикаментов (ID маркировки, регистрационное удостоверение, GTIN, ID агрегации коробки, код национальной классификации продуктов и услуг) и терминологией на основе АТХ для [классификации](ValueSet-medication-classification-vs.html) и [лекарственной формы](ValueSet-medication-doseform-vs.html).
 
-Добавлен профиль [UZ Core Procedure](StructureDefinition-uz-core-procedure.html) с терминологией для [статуса процедуры](ValueSet-procedure-event-status-vs.html), [кодов процедур](ValueSet-procedure-code-vs.html) на основе SNOMED CT и [исхода](ValueSet-procedure-outcome-vs.html), а также примером ConceptMap [SNOMED CT в ICHI](ConceptMap-snomed-to-ichi-procedures.html) для отчётности по возмещению расходов.
+Добавлен профиль [UZ Core Procedure](StructureDefinition-uz-core-procedure.html) с терминологией для [статуса процедуры](ValueSet-procedure-event-status-vs.html), [кодов процедур](ValueSet-procedure-code-vs.html) на основе SNOMED CT и [исхода](ValueSet-procedure-outcome-vs.html), а также примером ConceptMap SNOMED CT в ICHI для отчётности по возмещению расходов.
 
 Добавлены [коды лабораторных методов](CodeSystem-lab-methods-cs.html) с ConceptMap, сопоставляющими лабораторные [коды панелей и аналитов](ConceptMap-lab-pan-codes-to-loinc.html) с LOINC и [коды методов](ConceptMap-lab-methods-to-loinc.html) с SNOMED CT. Коды методов представлены [набором значений лабораторных методов](ValueSet-lab-method-vs.html), привязанным к элементу `method` профиля [UZ Core Observation](StructureDefinition-uz-core-observation.html).
 
