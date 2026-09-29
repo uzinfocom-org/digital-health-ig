@@ -1,12 +1,20 @@
 ### In development
 
+(No changes yet)
+
+### Version 0.10.0
+
 #### Added
 
 Added [ICHI](CodeSystem-who-ichi.html) in full - the WHO International Classification of Health Interventions, 21,747 concepts from the 2026-09-17 tabulation - under its own WHO canonical `http://id.who.int/icd/release/11/ichi`, with an [ICHI Codes](ValueSet-ichi-vs.html) value set. ICHI is a linearization of the ICD-11 Foundation Component, which is why it shares the `icd/release/11` namespace with ICD-11 MMS and ICF. WHO publishes it only on the ICD-11 maintenance platform and revises it continuously, so pin the version.
 
 677 of those concepts are marked `inactive` with `status` of `retired`. They are codes a national source system still carries that WHO has withdrawn, kept so existing records stay valid; `ichi-vs` excludes them, so nothing new can be coded with one.
 
-Added `organizational-specialization-cs#176.0` for adult geriatrics, `coverage-type-cs#covtp-0001-00014` for the Vaqf charitable fund, and `admit-source-local-cs#mserv-0006-00007` for a polyclinic referral - gaps found auditing Form 066 against the live DMED system. The [Provenance Participation Role Type value set](ValueSet-provenance-participation-role-type-vs.html) now includes `attester`.
+[UZ Core PlanDefinition](StructureDefinition-uz-core-plan-definition.html) now states where a schedule applies, through a `jurisdiction` use context slice bound (required) to a new [Uzbekistan Jurisdictions value set](ValueSet-jurisdiction-vs.html). A national schedule carries one entry with the country code `UZ`; a regional one carries an entry per region, using the same region codes as `Address.state`, so a patient's region can be matched against the schedules that apply to them. A new invariant, `uzcore-plandef-2`, stops a schedule claiming the country as a whole and individual regions at once, and [Example Regional Type 2 Diabetes Screening](PlanDefinition-example-uz-core-regional-screening-plan-definition.html) shows a schedule that runs in Samarqand and Navoiy only. The reach of a schedule goes in `useContext` rather than `PlanDefinition.jurisdiction` because R5 deprecates that element and R6 redefines it as the jurisdiction of the issuing authority.
+
+The [immunization status reason value set](ValueSet-immunization-status-reason-vs.html) has grown from 4 to 8 codes, adding `PHILISOP` (philosophical objection), `RELIG` (religious objection), `VACEFF` (vaccine efficacy concerns) and `VACSAF` (vaccine safety concerns), so a vaccination that did not happen can say why beyond a patient objection. Their Uzbek and Russian designations are in the [act reason supplement](CodeSystem-actreason-cs.html).
+
+Added `organizational-specialization-cs#176.0` for adult geriatrics, `coverage-type-cs#covtp-0001-00014` for the Vaqf charitable fund, `admit-source-local-cs#mserv-0006-00007` for a polyclinic referral, and `benefits-cs#regis0004.00024` for people with haematological diseases, an entitlement to state-funded high-tech specialized care under Presidential Decree UP-88 - gaps found auditing Form 066 against the live DMED system. The [encounter priority value set](ValueSet-encounter-priority-vs.html) now also includes `UR` (urgent) and `EL` (elective), and the [Provenance Participation Role Type value set](ValueSet-provenance-participation-role-type-vs.html) includes `attester`.
 
 #### Changed
 
@@ -19,6 +27,12 @@ The ICHI canonical drops `beta`: the [ICHI NamingSystem](NamingSystem-who-ichi.h
 #### Removed
 
 Removed the example SNOMED CT to ICHI ConceptMap. WHO licenses ICHI under CC BY-ND 3.0 IGO, which makes a map or crosswalk between ICHI and another terminology subject to a separate written agreement with WHO; the guide cannot publish one until that agreement is in place.
+
+#### Documentation
+
+[UZ Core PlanDefinition](StructureDefinition-uz-core-plan-definition.html) has a National or regional section showing both shapes of the jurisdiction use context, and explaining why the schedule's reach belongs there rather than in `PlanDefinition.jurisdiction`.
+
+[UZ Core Procedure](StructureDefinition-uz-core-procedure.html) now names both code systems its `code` accepts, and says to carry SNOMED CT and ICHI as two codings where a procedure is reported as well as recorded.
 
 ### Version 0.9.2
 

@@ -1,12 +1,20 @@
 ### В разработке
 
+(Пока без изменений)
+
+### Версия 0.10.0
+
 #### Добавлено
 
 Добавлен [ICHI](CodeSystem-who-ichi.html) целиком - Международная классификация вмешательств в здравоохранении ВОЗ, 21 747 концептов из таблицы от 2026-09-17 - под собственным каноническим URI ВОЗ `http://id.who.int/icd/release/11/ichi`, вместе с набором значений [ICHI Codes](ValueSet-ichi-vs.html). ICHI - это линеаризация Foundation Component ICD-11, поэтому она делит пространство имён `icd/release/11` с ICD-11 MMS и ICF. ВОЗ публикует её только на платформе поддержки ICD-11 и правит непрерывно, поэтому фиксируйте версию.
 
 677 из этих концептов помечены как `inactive` со `status` `retired`. Это коды, которые национальная система-источник всё ещё использует, а ВОЗ уже убрала; они сохранены, чтобы существующие записи оставались валидными. `ichi-vs` их исключает, поэтому новую запись таким кодом закодировать нельзя.
 
-Добавлены `organizational-specialization-cs#176.0` для гериатрии взрослых, `coverage-type-cs#covtp-0001-00014` для благотворительного фонда «Вакф» и `admit-source-local-cs#mserv-0006-00007` для направления из поликлиники — пробелы, найденные при сверке формы 066 с живой системой DMED. Список [Provenance Participation Role Type](ValueSet-provenance-participation-role-type-vs.html) теперь включает `attester`.
+[UZ Core PlanDefinition](StructureDefinition-uz-core-plan-definition.html) теперь указывает, где действует расписание, через срез use context `jurisdiction` с привязкой required к новому набору значений [Uzbekistan Jurisdictions](ValueSet-jurisdiction-vs.html). Национальное расписание несёт одну запись с кодом страны `UZ`, региональное - по одной записи на регион, причём коды регионов те же, что в `Address.state`, поэтому регион пациента можно сопоставить с действующими для него расписаниями. Новый инвариант `uzcore-plandef-2` не даёт расписанию заявить одновременно всю страну и отдельные регионы, а [Example Regional Type 2 Diabetes Screening](PlanDefinition-example-uz-core-regional-screening-plan-definition.html) показывает расписание, действующее только в Самаркандской и Навоийской областях. Охват расписания указывается в `useContext`, а не в `PlanDefinition.jurisdiction`, поскольку R5 объявляет этот элемент устаревшим, а R6 переопределяет его как юрисдикцию выпустившего органа.
+
+Набор значений [причин статуса иммунизации](ValueSet-immunization-status-reason-vs.html) вырос с 4 до 8 кодов: добавлены `PHILISOP` (мировоззренческий отказ), `RELIG` (религиозный отказ), `VACEFF` (сомнения в эффективности вакцины) и `VACSAF` (опасения по безопасности вакцины), чтобы несостоявшаяся вакцинация могла указать причину точнее, чем просто возражение пациента. Их узбекские и русские designation находятся в [supplement act reason](CodeSystem-actreason-cs.html).
+
+Добавлены `organizational-specialization-cs#176.0` для гериатрии взрослых, `coverage-type-cs#covtp-0001-00014` для благотворительного фонда «Вакф», `admit-source-local-cs#mserv-0006-00007` для направления из поликлиники и `benefits-cs#regis0004.00024` для лиц с гематологическими заболеваниями - право на бесплатную высокотехнологичную специализированную помощь по указу Президента УП-88 - пробелы, найденные при сверке формы 066 с живой системой DMED. Набор значений [приоритета обращения](ValueSet-encounter-priority-vs.html) теперь также включает `UR` (срочно) и `EL` (планово), а список [Provenance Participation Role Type](ValueSet-provenance-participation-role-type-vs.html) включает `attester`.
 
 #### Изменено
 
@@ -19,6 +27,12 @@
 #### Удалено
 
 Удалён пример ConceptMap SNOMED CT в ICHI. ВОЗ лицензирует ICHI по CC BY-ND 3.0 IGO, и любое сопоставление ICHI с другой терминологией требует отдельного письменного соглашения с ВОЗ; до его заключения руководство такую карту публиковать не может.
+
+#### Документация
+
+На странице [UZ Core PlanDefinition](StructureDefinition-uz-core-plan-definition.html) появился раздел «Национальное или региональное» с обеими формами use context `jurisdiction` и объяснением, почему охват расписания указывается там, а не в `PlanDefinition.jurisdiction`.
+
+Страница [UZ Core Procedure](StructureDefinition-uz-core-procedure.html) теперь называет обе системы кодов, допустимые в `code`, и указывает передавать SNOMED CT и ICHI как два coding, если процедуру и регистрируют, и включают в отчётность.
 
 ### Версия 0.9.2
 

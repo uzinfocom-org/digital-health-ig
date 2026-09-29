@@ -1,12 +1,20 @@
 ### Ishlab chiqilmoqda
 
+(Hozircha o'zgarishlar yo'q)
+
+### Versiya 0.10.0
+
 #### Qo'shildi
 
 [ICHI](CodeSystem-who-ichi.html) to'liq qo'shildi - JSST ning Sog'liqni saqlash aralashuvlari xalqaro klassifikatsiyasi, 2026-09-17 jadvalidan 21 747 konsept - JSST ning o'z kanonik URI si `http://id.who.int/icd/release/11/ichi` ostida, [ICHI Codes](ValueSet-ichi-vs.html) ro'yxati bilan birga. ICHI - ICD-11 Foundation Component ning linearizatsiyasi, shuning uchun u `icd/release/11` nom maydonini ICD-11 MMS va ICF bilan bo'lishadi. JSST uni faqat ICD-11 ni qo'llab-quvvatlash platformasida nashr etadi va uzluksiz o'zgartiradi, shuning uchun versiyani qat'iy belgilang.
 
 Bu konseptlarning 677 tasi `inactive` va `status` `retired` deb belgilangan. Bular milliy manba tizimi hanuz saqlab turgan, JSST esa olib tashlagan kodlar; mavjud yozuvlar validatsiyadan o'tishi uchun qoldirilgan. `ichi-vs` ularni chiqarib tashlaydi, shuning uchun yangi yozuvni bunday kod bilan kodlash mumkin emas.
 
-Kattalar uchun geriatriya uchun `organizational-specialization-cs#176.0`, "Vaqf" xayriya jamg'armasi uchun `coverage-type-cs#covtp-0001-00014` va poliklinikadan yo'llanma uchun `admit-source-local-cs#mserv-0006-00007` qo'shildi - bular 066-shaklni jonli DMED tizimi bilan solishtirilganda topilgan bo'shliqlar. [Provenance Participation Role Type](ValueSet-provenance-participation-role-type-vs.html) ro'yxati endi `attester` kodini o'z ichiga oladi.
+[UZ Core PlanDefinition](StructureDefinition-uz-core-plan-definition.html) endi jadval qayerda amal qilishini ko'rsatadi: `jurisdiction` use context kesimi yangi [Uzbekistan Jurisdictions](ValueSet-jurisdiction-vs.html) ro'yxatiga required bog'langan. Milliy jadval `UZ` mamlakat kodi bilan bitta yozuv tashiydi, hududiy jadval esa har bir viloyat uchun bittadan yozuv tashiydi va viloyat kodlari `Address.state` dagi kodlar bilan bir xil, shuning uchun bemorning viloyatini unga tegishli jadvallar bilan solishtirish mumkin. Yangi `uzcore-plandef-2` invarianti jadvalga butun mamlakatni va alohida viloyatlarni bir vaqtda da'vo qilishga yo'l qo'ymaydi, [Example Regional Type 2 Diabetes Screening](PlanDefinition-example-uz-core-regional-screening-plan-definition.html) esa faqat Samarqand va Navoiy viloyatlarida amal qiladigan jadvalni ko'rsatadi. Jadvalning qamrovi `PlanDefinition.jurisdiction` da emas, `useContext` da ko'rsatiladi, chunki R5 bu elementni eskirgan deb belgilaydi, R6 esa uni jadvalni chiqargan organning yurisdiksiyasi sifatida qayta ta'riflaydi.
+
+[Immunizatsiya holati sabablari](ValueSet-immunization-status-reason-vs.html) ro'yxati 4 koddan 8 kodga o'sdi: `PHILISOP` (dunyoqarash sababli e'tiroz), `RELIG` (diniy e'tiqod sababli e'tiroz), `VACEFF` (vaksina samaradorligi shubhali) va `VACSAF` (vaksina xavfsizligidan xavotir) qo'shildi, shunda amalga oshmagan emlash sababini bemorning e'tirozidan aniqroq ko'rsatishi mumkin. Ularning o'zbek va rus designation lari [act reason supplement](CodeSystem-actreason-cs.html) ichida.
+
+Kattalar uchun geriatriya uchun `organizational-specialization-cs#176.0`, "Vaqf" xayriya jamg'armasi uchun `coverage-type-cs#covtp-0001-00014`, poliklinikadan yo'llanma uchun `admit-source-local-cs#mserv-0006-00007` va gematologik kasalliklarga chalingan shaxslar uchun `benefits-cs#regis0004.00024` qo'shildi - oxirgisi Prezident farmoni UP-88 bo'yicha davlat hisobidan yuqori texnologiyali ixtisoslashtirilgan yordam olish huquqi - bular 066-shaklni jonli DMED tizimi bilan solishtirilganda topilgan bo'shliqlar. [Murojaat ustuvorligi](ValueSet-encounter-priority-vs.html) ro'yxati endi `UR` (shoshilinch) va `EL` (rejali) kodlarini ham, [Provenance Participation Role Type](ValueSet-provenance-participation-role-type-vs.html) ro'yxati esa `attester` kodini o'z ichiga oladi.
 
 #### O'zgartirildi
 
@@ -19,6 +27,12 @@ ICHI ning kanonik URI si `beta` ni yo'qotadi: [ICHI NamingSystem](NamingSystem-w
 #### O'chirildi
 
 SNOMED CT dan ICHI ga namuna ConceptMap o'chirildi. JSST ICHI ni CC BY-ND 3.0 IGO litsenziyasi ostida taqdim etadi va ICHI ni boshqa terminologiya bilan solishtirish uchun JSST bilan alohida yozma kelishuv talab qiladi; u bo'lmaguncha qo'llanma bunday xaritani nashr eta olmaydi.
+
+#### Hujjatlashtirish
+
+[UZ Core PlanDefinition](StructureDefinition-uz-core-plan-definition.html) sahifasida "Milliy yoki hududiy" bo'limi paydo bo'ldi: unda `jurisdiction` use context ning ikki shakli va jadvalning qamrovi nega `PlanDefinition.jurisdiction` da emas, o'sha yerda ko'rsatilishi tushuntirilgan.
+
+[UZ Core Procedure](StructureDefinition-uz-core-procedure.html) sahifasi endi `code` qabul qiladigan ikki kod tizimini nomlaydi va protsedura qayd etilib, hisobotga ham kiritilganda SNOMED CT va ICHI ni ikki coding sifatida uzatishni aytadi.
 
 ### Versiya 0.9.2
 
