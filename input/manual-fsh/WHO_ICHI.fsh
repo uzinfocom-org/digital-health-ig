@@ -3,8 +3,8 @@ Id: who-ichi
 Title: "International Classification of Health Interventions (ICHI)"
 Description: "WHO International Classification of Health Interventions (ICHI), built from the ICHI simple tabulation published on the WHO ICD-11 maintenance platform. ICHI is a linearization of the ICD-11 Foundation Component, which is why it shares the id.who.int/icd/release/11 namespace with ICD-11 MMS and ICF. ICHI is still a beta release and its content changes on an ongoing basis, so pin the version. Codes may also be post-coordinated with the XG.. extension codes, so this resource is marked as a fragment: it carries every pre-coordinated entity WHO publishes, not every expression that is valid ICHI. The Target, Action and Means axis elements are not included, because their codes are only unique within a single axis and so are not usable as a Coding.code against this system. Concepts carrying inactive = true are codes a source system still uses that WHO no longer publishes; they are kept so that existing records validate, and must not be used for new ones."
 * ^url = "http://id.who.int/icd/release/11/ichi"
-* ^version = "2026-09-17"
-* ^versionAlgorithmString = "date"
+* ^version = "2026.9.17"
+* ^versionAlgorithmString = "semver"
 * ^date = "2026-09-17"
 * ^status = #active
 * ^experimental = false

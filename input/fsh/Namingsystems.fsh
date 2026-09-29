@@ -510,7 +510,7 @@ Usage: #definition
 * publisher = "World Health Organization"
 * responsible = "World Health Organization"
 * description = "WHO International Classification of Health Interventions (ICHI) is a common tool for reporting and analyzing health interventions for clinical and statistical purposes."
-* jurisdiction = urn:iso:std:iso:3166#001 "World"
+* jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#001 "World"
 * usage = "Used to classify health interventions for statistical reporting and clinical documentation."
 * uniqueId[0].type = #uri
 * uniqueId[=].value = "http://id.who.int/icd/release/11/ichi"
