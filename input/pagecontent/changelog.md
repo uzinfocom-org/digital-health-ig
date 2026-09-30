@@ -1,6 +1,10 @@
 ### In development
 
-(No changes yet)
+#### Documentation
+
+The [modelling guidelines](https://github.com/uzinfocom-org/digital-health-ig/blob/main/modelling-guidelines.md) now require codes from international standards (SNOMED CT, LOINC, ICD-10 and others) over local codes wherever possible: every local code has to be checked for an equivalent standard code and replaced with it when one exists.
+
+The [FHIR basics](fhir-basics.html) page no longer says applications must exchange only local codes.
 
 ### Version 0.10.0
 
