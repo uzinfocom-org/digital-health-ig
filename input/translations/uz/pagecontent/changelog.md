@@ -1,10 +1,6 @@
 ### Ishlab chiqilmoqda
 
-#### Hujjatlashtirish
-
-[Modellashtirish ko'rsatmalari](https://github.com/uzinfocom-org/digital-health-ig/blob/main/modelling-guidelines.md) endi imkon qadar mahalliy kodlar o'rniga xalqaro standartlar (SNOMED CT, LOINC, ICD-10 va boshqalar) kodlaridan foydalanishni talab qiladi: har bir mahalliy kod ekvivalent standart kodga tekshiriladi va bunday kod mavjud bo'lsa, u bilan almashtiriladi.
-
-[FHIR asoslari](fhir-basics.html) sahifasida endi ilovalar faqat mahalliy kodlar bilan almashishi kerakligi aytilmaydi.
+(Hozircha o'zgarishlar yo'q)
 
 ### Versiya 0.10.0
 
