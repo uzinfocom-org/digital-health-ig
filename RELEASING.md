@@ -45,8 +45,8 @@ Publishing a release is automated by [`.github/workflows/release.yml`](.github/w
 
 5. **Merge the package-feed PR.** The Release workflow opens it with
    `GITHUB_TOKEN`, and events from that token start no workflows, so the
-   required `sushi` and `ig-publisher` checks never report and the ruleset blocks the
-   merge. Push any commit to its branch to make them run:
+   required `sushi` and `ig-publisher` checks never report and the ruleset
+   blocks the merge. Push any commit to its branch to make them run:
 
    ```bash
    BRANCH=chore/package-feed-X.Y.Z
