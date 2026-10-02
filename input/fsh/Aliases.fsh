@@ -1,3 +1,8 @@
+Alias: $device-status = http://hl7.org/fhir/device-status
+Alias: $device-availability-status = http://hl7.org/fhir/device-availability-status
+Alias: $device-name-type = http://hl7.org/fhir/device-nametype
+Alias: $device-category = http://hl7.org/fhir/device-category
+
 // Alias: $encounter-class = https://terminology.dhp.uz/fhir/core/ValueSet/encounter-class
 Alias: $medicationdispense-admin-location = http://hl7.org/fhir/medicationdispense-admin-location
 Alias: $medicationdispense-status-reason = http://hl7.org/fhir/CodeSystem/medicationdispense-status-reason
