@@ -1,0 +1,10 @@
+CODE,UZ,RU,,,,
+proposal,taklif,предложение,,http://hl7.org/fhir/request-intent,,"SupplementCodeSystemDraft(request-intent-cs, $request-intent, 5.0.0)"
+plan,reja,план,,,,
+order,tayinlash,назначение,,,,
+directive,ko‘rsatma,распоряжение,,,,
+original-order,birlamchi tayinlash,первичное назначение,,,,
+reflex-order,refleks tayinlash,рефлексное назначение,,,,
+filler-order,ijrochi tayinlashi,назначение исполнителя,,,,
+instance-order,aniq tayinlash,конкретное назначение,,,,
+option,variant,вариант,,,,

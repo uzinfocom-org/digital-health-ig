@@ -12,7 +12,7 @@ Description: "ValueSet including categories of healthcare service requests used 
 
 * $sct#108252007 "Laboratory procedure"
 * $sct#363679005 "Imaging (procedure)"
-* $sct#165197003 "Diagnostic procedure"
+* $sct#165197003 "Diagnostic assessment"
 * $sct#387713003 "Surgical procedure"
 * $sct#91251008 "Physiotherapy procedure"
 * $sct#277132007 "Therapeutic procedure"
@@ -21,7 +21,7 @@ Description: "ValueSet including categories of healthcare service requests used 
 * $sct#32485007 "Admission to hospital"
 * $sct#52052004 "Rehabilitation therapy"
 * $sct#448337001 "Telemedicine consultation"
-* $sct#20135006 "Screening and home visits"
-* $sct#25179006 "Donation"
+* $sct#20135006 "Screening procedure"
+* $sct#25179006 "Whole blood unit collection"
 
 

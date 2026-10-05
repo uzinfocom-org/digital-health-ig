@@ -1,0 +1,22 @@
+screening-code-cs :,,,
+CODE,UZ,EN,RU
+#mserv-0007-00001 ,"""Yurak ishemik kasalligining testoldi ehtimolini baholash so'rovnomasi""",Pre-test Probability Questionnaire for Ischemic Heart Disease,Опросник предтестовой вероятности ишемической болезни сердца
+#mserv-0007-00002 ,Fertillik bo'yicha so'rovnoma,Fertility Questionnaire,Опросник фертильности
+#mserv-0007-00003 ,Serebrovaskulyar kasalliklarni erta aniqlash so'rovnomasi,Early Detection Questionnaire for Cerebrovascular Diseases,Опросник по раннему выявлению цереброваскулярной патологии
+#mserv-0007-00004,Gelmintoz kasalliklarini erta aniqlash so'rovnomasi,Early Detection Questionnaire for Helminthic Diseases,Опросник раннего выявления гельминтозных заболеваний
+#mserv-0007-00005 ,Yurak-qon tomir kasalliklari xavfini erta aniqlash so'rovnomasi,Early Detection Questionnaire for Cardiovascular Disease Risk,Опросник раннего выявления риска сердечно-сосудистых заболеваний
+#mserv-0007-00006 ,Qandli diabetni erta aniqlash so'rovnomasi,Early Detection Questionnaire for Diabetes Mellitus,Опросник раннего выявления сахарного диабета
+#mserv-0007-00007 ,Ko'krak bezi saratonini aniqlash so'rovnomasi,Breast Cancer Screening Questionnaire,Опросник на выявление рака молочной железы
+#mserv-0007-00008 ,Onkogematologik kasalliklarni erta aniqlash so'rovnomasi,Early Detection Questionnaire for Oncohematological Diseases,Опросник раннего выявления онкогематологических заболеваний
+#mserv-0007-00009 ,Bachadon bo'yni saratoni skriningi,Cervical Cancer Screening,Скрининг по раку шейки матки
+#mserv-0007-00010 ,Surunkali kasalliklar,Chronic Diseases,Хронические заболевания
+#mserv-0007-00011 ,Emlashga chaqiruv,Vaccination Invitation,Призыв к вакцинации
+#mserv-0007-00012 ,Emlashdan keyingi patronaj,Post-Vaccination Follow-up,Патронаж после вакцинации
+#mserv-0007-00013 ,Uy sharoitidagi statsionar xizmat,Home-based Inpatient Care,Стационар на дому
+#mserv-0007-00014 ,Profilaktik tibbiy ko'rik,Preventive Medical Examination,Профилактический осмотр
+#mserv-0007-00015 ,Homilador ayollar (12–31 hafta),Pregnant Women (12–31 Weeks),Беременные (12-31 недели)
+#mserv-0007-00016 ,Tug'ruqdan keyingi patronaj (3–15–30 kun),Postpartum Follow-up (3–15–30 Days),Послеродовой (3-15-30 дней)
+#mserv-0007-00017,Reproduktiv yoshdagi ayollar patronaji (15–49 yosh),Follow-up of Women of Reproductive Age (15–49 Years),Патронаж женщин детородного возраста (15-49 лет)
+#mserv-0007-00018 ,Bolalar (3–15–30 kun),Children (3–15–30 Days),Дети (3-15-30 дней)
+#mserv-0007-00019 ,"Bolalar (3–6–9–12–18–24–36–48–60 oy)""",Children (3–6–9–12–18–24–36–48–60 Months),Дети (3-6-9-12-18-24-36-48-60 месяцев)
+#mserv-0007-00020,Ko'krak bezi saratoni skriningi,Breast Cancer Screening,Скрининг по раку молочной железы

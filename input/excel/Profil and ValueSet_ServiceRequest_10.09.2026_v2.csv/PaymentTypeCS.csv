@@ -1,0 +1,6 @@
+CODE,EN,UZ,RU,,
+#paytype-0001-0001,Free,Bepul,Бесплатно,,OriginalCodeSystemDraft(payment-type-cs)
+#paytype-0001-0002,Paid,Pullik,Платно,,
+#paytype-0001-0003,Insurance,Sug'urta,Страхование,,
+#paytype-0001-0004,State tariff,Davlat tarifi,Государственный тариф,,
+#paytype-0001-0005,Other,Boshqalar,Другие,,

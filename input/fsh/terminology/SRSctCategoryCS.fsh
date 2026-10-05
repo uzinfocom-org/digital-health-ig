@@ -14,11 +14,11 @@ Description: "ServiceRequest SNOMED CT category supplement with translations in 
   * ^designation[=].value = "Инструментальная диагностика"
   * ^designation[+].language = #uz
   * ^designation[=].value = "Rasmlash muolajasi"
-* #165197003 "Diagnostic procedure" 
+* #165197003 "Diagnostic assessment" 
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Функциональные исследования"
+  * ^designation[=].value = "Диагностическая оценка"
   * ^designation[+].language = #uz
-  * ^designation[=].value = "Diagnostika muolajasi"
+  * ^designation[=].value = "Diagnostik baholash"
 * #387713003 "Surgical procedure"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Операции"
@@ -59,13 +59,13 @@ Description: "ServiceRequest SNOMED CT category supplement with translations in 
   * ^designation[=].value = "Телемедицина"
   * ^designation[+].language = #uz
   * ^designation[=].value = "Teletibbiyot bo'yicha konsultatsiya"
-* #20135006 "Screening and home visits" 
+* #20135006 "Screening procedure"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Скрининг и патронажные мероприятия"
+  * ^designation[=].value = "Скрининг"
   * ^designation[+].language = #uz
-  * ^designation[=].value = "Skrining tekshiruvi va patronaj"
-* #25179006 "Donation" 
+  * ^designation[=].value = "Skrining tekshiruvi"
+* #25179006 "Whole blood unit collection"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Донация"
+  * ^designation[=].value = "Сдача цельной крови"
   * ^designation[+].language = #uz
   * ^designation[=].value = "Qon berish"
