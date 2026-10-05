@@ -1,6 +1,33 @@
 ### Ishlab chiqilmoqda
 
-(Hozircha o'zgarishlar yo'q)
+#### Qo'shildi
+
+[Skrining va patronaj uchun SNOMED CT to'ldiruvchisi](CodeSystem-screening-sct-cs.html) endi skrining va patronaj xizmatlarini [ServiceRequest muolajalari va tekshiruvlari](ValueSet-service-request-code-vs.html) to'plamida kodlaydigan 15 ta SNOMED CT konseptiga o'zbekcha va ruscha nomlar beradi; to'plam ularni nomma-nom sanab o'tadi.
+
+#### Buzuvchi o'zgarishlar
+
+20 ta [skrining va uyga tashrif kodlari](CodeSystem-screening-code-cs.html)dan 16 tasi SNOMED CT foydasiga olib tashlandi. [ServiceRequest muolajalari va tekshiruvlari](ValueSet-service-request-code-vs.html) to'plami bu SNOMED CT konseptlarini muolajalar filtri orqali avvaldan qabul qilar edi. To'rtta kod qoladi, chunki ular uchun mos SNOMED CT konsepti yo'q: `mserv-0007-00003` (serebrovaskulyar kasalliklar so'rovnomasi), `mserv-0007-00011` (emlashga chaqiruv), `mserv-0007-00012` (emlashdan keyingi patronaj) va `mserv-0007-00017` (reproduktiv yoshdagi ayollar patronaji). Olib tashlangan kodni yuboruvchilar uning SNOMED CT konseptiga o'tadi:
+
+| Olib tashlangan kod | Xizmat | SNOMED CT |
+|---|---|---|
+| `mserv-0007-00001` | Yurak ishemik kasalligining testoldi ehtimolini baholash so'rovnomasi | `171223006` Ischemic heart disease screening |
+| `mserv-0007-00002` | Fertillik bo'yicha so'rovnoma | `408961002` Fertility care assessment |
+| `mserv-0007-00004` | Gelmintoz kasalliklari so'rovnomasi | `171147008` Screening for intestinal helminthiasis |
+| `mserv-0007-00005` | Yurak-qon tomir kasalliklari xavfi so'rovnomasi | `300007000` Screening for cardiovascular system disease |
+| `mserv-0007-00006` | Qandli diabet so'rovnomasi | `171183004` Diabetes mellitus screening |
+| `mserv-0007-00007` | Ko'krak bezi saratoni so'rovnomasi | `268547008` Screening for malignant neoplasm of breast |
+| `mserv-0007-00008` | Onkogematologik kasalliklar so'rovnomasi | `762445000` Screening for hematological disorder |
+| `mserv-0007-00009` | Bachadon bo'yni saratoni skriningi | `171149006` Screening for malignant neoplasm of cervix |
+| `mserv-0007-00010` | Surunkali kasalliklar | `170549007` Chronic disease monitoring |
+| `mserv-0007-00013` | Uy sharoitidagi statsionar xizmat | `60689008` Home care of patient |
+| `mserv-0007-00014` | Profilaktik tibbiy ko'rik | `103740001` Periodic physical examination |
+| `mserv-0007-00015` | Homilador ayollar (12-31 hafta) | `424525001` Antenatal care |
+| `mserv-0007-00016` | Tug'ruqdan keyingi patronaj (3-15-30 kun) | `133906008` Postpartum care |
+| `mserv-0007-00018` | Bolalar (3-15-30 kun) | `408987002` Newborn care assessment |
+| `mserv-0007-00019` | Bolalar (3-60 oy) | `409027005` Infant care assessment |
+| `mserv-0007-00020` | Ko'krak bezi saratoni skriningi | `268547008` Screening for malignant neoplasm of breast |
+
+Ko'krak bezi saratoni so'rovnomasi va skriningi kodlari ikkalasi ham `268547008` ga mos keladi. Eski nomlardagi hafta, kun va oy oraliqlari SNOMED CT konseptlariga kirmaydi.
 
 ### Versiya 0.10.0
 
