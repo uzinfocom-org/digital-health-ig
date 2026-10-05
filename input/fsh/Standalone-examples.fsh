@@ -474,3 +474,60 @@ Description: "Temporary Specimen instance for lab (based on drafted UZCoreSpecim
 * collection.quantity = 3 'mL' "mL"
 * collection.fastingStatusCodeableConcept = $v2-0916#NF "The patient indicated they did not fast prior to the procedure."
 * note[0].text = "Venous blood collected into EDTA tube. No visible hemolysis."
+
+Instance: andijan-station
+InstanceOf: UZCoreOrganization
+Usage: #example
+Title: "Andijan blood station"
+Description: "Illustrative blood station supplying blood products and managing their storage location."
+* language = #en
+* active = true
+* type.coding[subordinationGroup] = organizational-subordination-group-cs#I_2 
+* type.coding[nomenclatureGroup] = nomenclature-group-cs#II_700 
+* type.coding[organizationalServiceGroup] = organizational-service-group-cs#III_600 
+* name = "Andijan Blood Transfusion Station"
+
+
+Instance: cold-storage-shelf-3
+InstanceOf: UZCoreLocation
+Usage: #example
+Title: "Blood product cold storage shelf 3"
+Description: "Illustrative cold storage shelf at the Andijan blood station, referenced by the blood product inventory example."
+* language = #en
+* status = #active
+* mode = #instance
+* name = "Cold storage, shelf 3"
+* description = "Shelf 3 in the blood station's refrigerated blood product storage area."
+* managingOrganization = Reference(andijan-station)
+
+
+Instance: tashkent-hospital
+InstanceOf: UZCoreOrganization
+Usage: #example
+Title: "Tashkent receiving hospital"
+Description: "Illustrative hospital receiving blood products from the Andijan blood station."
+* language = #en
+* active = true
+* type.coding[subordinationGroup] = organizational-subordination-group-cs#I_2 
+* type.coding[nomenclatureGroup] = nomenclature-group-cs#II_100 
+* type.coding[organizationalStructure] = organizational-structure-cs#146 
+* type.coding[organizationalServiceGroup] = organizational-service-group-cs#III_200 
+* type.coding[specialization] = organizational-specialization-cs#114.0 
+* name = "Tashkent Hospital"
+
+
+Instance: transfusion-order-01
+InstanceOf: UZCoreServiceRequest
+Usage: #example
+Title: "Red blood cell transfusion order"
+Description: "Illustrative transfusion order for the patient in the blood product supply request example."
+* status = #active
+* intent = #order
+* priority = #routine
+* code = $sct#431069006
+* subject = Reference(example-salim)
+* authoredOn = "2025-08-31T14:00:00+05:00"
+* occurrenceDateTime = "2025-09-01T09:00:00+05:00"
+* requester = Reference(example-practitioner)
+* performer = Reference(tashkent-hospital)
+* reason = $sct#110468005
