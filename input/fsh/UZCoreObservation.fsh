@@ -32,6 +32,8 @@ Description: "Uzbekistan Core Observation profile, used to represent clinical an
 * performer MS
 * performer only Reference(UZCorePractitioner or UZCorePractitionerRole or UZCoreOrganization)
 * value[x] MS
+* valueCodeableConcept MS
+* valueCodeableConcept from DonorCategoryVS (extensible)
 * dataAbsentReason MS
 * dataAbsentReason from DataAbsentReasonVS (extensible)
 * interpretation from ObservationInterpretationVS
