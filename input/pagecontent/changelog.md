@@ -1,6 +1,33 @@
 ### In development
 
-(No changes yet)
+#### Added
+
+A [SNOMED CT supplement for screening and home visits](CodeSystem-screening-sct-cs.html) gives Uzbek and Russian designations to the 15 SNOMED CT concepts that now code screening and patronage services in [ServiceRequest procedures and investigations](ValueSet-service-request-code-vs.html), which lists them by name.
+
+#### Breaking changes
+
+16 of the 20 [screening and home visit codes](CodeSystem-screening-code-cs.html) have been removed in favour of SNOMED CT. [ServiceRequest procedures and investigations](ValueSet-service-request-code-vs.html) already accepted these SNOMED CT concepts through its procedure filter. Four codes stay because SNOMED CT has no suitable concept for them: `mserv-0007-00003` (cerebrovascular disease questionnaire), `mserv-0007-00011` (vaccination invitation), `mserv-0007-00012` (post-vaccination patronage) and `mserv-0007-00017` (patronage of women of reproductive age). Senders of a removed code switch to its SNOMED CT concept:
+
+| Removed code | Service | SNOMED CT |
+|---|---|---|
+| `mserv-0007-00001` | Ischemic heart disease pre-test probability questionnaire | `171223006` Ischemic heart disease screening |
+| `mserv-0007-00002` | Fertility questionnaire | `408961002` Fertility care assessment |
+| `mserv-0007-00004` | Helminthic disease questionnaire | `171147008` Screening for intestinal helminthiasis |
+| `mserv-0007-00005` | Cardiovascular disease risk questionnaire | `300007000` Screening for cardiovascular system disease |
+| `mserv-0007-00006` | Diabetes questionnaire | `171183004` Diabetes mellitus screening |
+| `mserv-0007-00007` | Breast cancer questionnaire | `268547008` Screening for malignant neoplasm of breast |
+| `mserv-0007-00008` | Oncohematological disease questionnaire | `762445000` Screening for hematological disorder |
+| `mserv-0007-00009` | Cervical cancer screening | `171149006` Screening for malignant neoplasm of cervix |
+| `mserv-0007-00010` | Chronic diseases | `170549007` Chronic disease monitoring |
+| `mserv-0007-00013` | Home-based inpatient care | `60689008` Home care of patient |
+| `mserv-0007-00014` | Preventive medical examination | `103740001` Periodic physical examination |
+| `mserv-0007-00015` | Pregnant women (12-31 weeks) | `424525001` Antenatal care |
+| `mserv-0007-00016` | Postpartum follow-up (3-15-30 days) | `133906008` Postpartum care |
+| `mserv-0007-00018` | Children (3-15-30 days) | `408987002` Newborn care assessment |
+| `mserv-0007-00019` | Children (3-60 months) | `409027005` Infant care assessment |
+| `mserv-0007-00020` | Breast cancer screening | `268547008` Screening for malignant neoplasm of breast |
+
+The breast cancer questionnaire and breast cancer screening codes both map to `268547008`. The week, day and month ranges in the old names are not part of the SNOMED CT concepts.
 
 ### Version 0.10.0
 
