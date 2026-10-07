@@ -1,7 +1,7 @@
 CodeSystem: ProductStatusCS
 Id: product-status-cs
-Title: "Product Status"
-Description: "Product Status translations in Uzbek and Russian."
+Title: "Product status translations"
+Description: "Product status supplement with translations in Uzbek and Russian"
 * insert SupplementCodeSystemDraft(product-status-cs, $biologicallyderived-product-status, 5.0.0)
 
 * #available

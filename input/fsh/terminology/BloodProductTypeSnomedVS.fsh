@@ -1,7 +1,7 @@
 ValueSet: BloodProductTypeSnomedVS
 Id: blood-product-type-snomed-vs
-Title: "Blood Product Type Snomed"
-Description: "Blood Product Type Snomed for blood products and supply delivery."
+Title: "Blood product type"
+Description: "Blood product types coded in SNOMED CT"
 * ^url = "https://terminology.dhp.uz/fhir/core/ValueSet/blood-product-type-snomed-vs"
 * ^experimental = true
 * ^extension[0].url = $valueset-supplement

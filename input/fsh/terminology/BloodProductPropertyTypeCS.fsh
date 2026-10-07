@@ -1,7 +1,7 @@
 CodeSystem: BloodProductPropertyTypeCS
 Id: blood-product-property-type-cs
-Title: "Blood Product Property Type CS"
-Description: "SNOMED CT supplement with Uzbek and Russian translations for blood product property types"
+Title: "Blood product property type translations"
+Description: "Blood product property type supplement with translations in Uzbek and Russian"
 
 * insert SupplementCodeSystemDraft(blood-product-property-type-cs, $sct, 2026.1.0)
 

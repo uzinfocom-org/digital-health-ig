@@ -1,7 +1,7 @@
 ValueSet: ProductStatusVS
 Id: product-status-vs
-Title: "Product Status"
-Description: "Product Status for blood products and supply delivery."
+Title: "Product status"
+Description: "Availability status of a biologically derived product"
 * ^url = "https://terminology.dhp.uz/fhir/core/ValueSet/product-status-vs"
 * ^experimental = true
 * ^language = #uz

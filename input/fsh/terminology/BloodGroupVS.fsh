@@ -1,7 +1,7 @@
 ValueSet: BloodGroupVS
 Id: blood-group-vs
-Title: "Blood Group VS"
-Description: "ValueSet for blood group codes"
+Title: "Blood group"
+Description: "ABO blood groups"
 
 * ^url = "https://terminology.dhp.uz/fhir/core/ValueSet/blood-group-vs"
 * ^experimental = true

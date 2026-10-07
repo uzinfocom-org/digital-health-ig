@@ -1,7 +1,7 @@
 ValueSet: BloodProductPropertyTypeVS
 Id: blood-product-property-type-vs
-Title: "Blood Product Property Type VS"
-Description: "ValueSet for blood product property types"
+Title: "Blood product property type"
+Description: "Properties recorded for a blood product, such as ABO group, RhD type and volume"
 
 * ^url = "https://terminology.dhp.uz/fhir/core/ValueSet/blood-product-property-type-vs"
 * ^experimental = true

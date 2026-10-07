@@ -1,7 +1,7 @@
 CodeSystem: ProductCategoryCS
 Id: product-category-cs
-Title: "Product Category"
-Description: "Product Category translations in Uzbek and Russian."
+Title: "Product category translations"
+Description: "Product category supplement with translations in Uzbek and Russian"
 
 * insert SupplementCodeSystemDraft(product-category-cs, $product-category, 5.0.0)
 

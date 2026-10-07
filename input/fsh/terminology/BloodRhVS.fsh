@@ -1,7 +1,7 @@
 ValueSet: BloodRhVS
 Id: blood-rh-vs
-Title: "Blood Rh VS"
-Description: "ValueSet for blood Rh codes"
+Title: "RhD type"
+Description: "RhD types"
 
 * ^url = "https://terminology.dhp.uz/fhir/core/ValueSet/blood-rh-vs"
 * ^experimental = true

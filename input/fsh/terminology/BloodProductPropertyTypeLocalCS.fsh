@@ -1,7 +1,7 @@
 CodeSystem: BloodProductPropertyTypeLocalCS
 Id: blood-product-property-type-local-cs
-Title: "Blood Product Property Type Local CS"
-Description: "Local blood product property types without SNOMED CT codes"
+Title: "Local blood product property types"
+Description: "Blood product property types in Uzbekistan that have no SNOMED CT code"
 
 * insert OriginalCodeSystemDraft(blood-product-property-type-local-cs)
 

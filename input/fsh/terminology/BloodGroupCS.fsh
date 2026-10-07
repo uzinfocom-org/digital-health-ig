@@ -1,7 +1,7 @@
 CodeSystem: BloodGroupCS
 Id: blood-group-cs
-Title: "Blood Group CS"
-Description: "Blood group supplement with Uzbek and Russian translations"
+Title: "Blood group translations"
+Description: "Blood group supplement with translations in Uzbek and Russian"
 
 * insert SupplementCodeSystemDraft(blood-group-cs, $sct, 2026.1.0)
 

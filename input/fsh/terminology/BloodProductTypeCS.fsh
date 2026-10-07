@@ -1,7 +1,7 @@
 CodeSystem: BloodProductTypeCS
 Id: blood-product-type-cs
-Title: "Blood Product Type"
-Description: "Blood Product Type local codes for blood products."
+Title: "Local blood product types"
+Description: "Blood product types in Uzbekistan"
 * insert OriginalCodeSystemDraft(blood-product-type-cs)
 
 * #whole-blood "To'liq qon"

@@ -1,7 +1,7 @@
 CodeSystem: BloodRhCS
 Id: blood-rh-cs
-Title: "Blood Rh CS"
-Description: "Blood Rh supplement with Uzbek and Russian translations"
+Title: "RhD type translations"
+Description: "RhD type supplement with translations in Uzbek and Russian"
 
 * insert SupplementCodeSystemDraft(blood-rh-cs, $sct, 2026.1.0)
 

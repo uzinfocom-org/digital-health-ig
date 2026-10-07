@@ -1,7 +1,7 @@
 CodeSystem: BloodProductTypeSnomedCS
 Id: blood-product-type-snomed-cs
-Title: "Blood Product Type Snomed"
-Description: "Blood Product Type Snomed translations in Uzbek and Russian."
+Title: "Blood product type translations"
+Description: "Blood product type supplement with translations in Uzbek and Russian"
 * insert SupplementCodeSystemDraft(blood-product-type-snomed-cs, $sct, 2026.1.0)
 
 * #420135007
