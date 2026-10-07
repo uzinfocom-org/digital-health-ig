@@ -43,12 +43,17 @@ Instance: example-blood-product-supply-delivery
 InstanceOf: UZCoreSupplyDelivery
 Usage: #example
 Title: "Blood component delivery"
-Description: "Delivery of a red blood cell component with transfer and issue times."
+Description: "Delivery of a red blood cell unit for a patient to the receiving hospital."
 * identifier.value = "DEL-2026-0001"
 * status = #completed
+* patient = Reference(example-salim)
 * type = $supplydelivery-supplyitemtype#biologicallyderivedproduct "Biologically Derived Product"
 * occurrencePeriod.start = "2026-09-15T09:00:00+05:00"
 * occurrencePeriod.end = "2026-09-15T10:00:00+05:00"
+* supplier = Reference(example-organization)
+* receiver = Reference(tashkent-diseases-hospital)
+* destination = Reference(example-location)
 * suppliedItem.quantity = 263 'mL' "mL"
+* suppliedItem.itemCodeableConcept = $sct#431069006 "Packed red blood cells"
 //This example uses a reference to a BiologicallyDerivedProduct resource, but it will be changed in the future to use a reference to a UZCoreBiologicallyDerivedProduct resource after the UZCoreBiologicallyDerivedProduct profile is implemented in the Uzbekistan Core IG
 // * suppliedItem.itemReference = Reference(example-blood-component-product)
