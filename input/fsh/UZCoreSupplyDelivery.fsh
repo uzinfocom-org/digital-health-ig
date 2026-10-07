@@ -2,7 +2,7 @@ Profile: UZCoreSupplyDelivery
 Parent: SupplyDelivery
 Id: uz-core-supply-delivery
 Title: "UZ Core SupplyDelivery"
-Description: "Uzbekistan Core SupplyDelivery profile, used to record delivery and issue of blood products."
+Description: "Uzbekistan Core SupplyDelivery profile, used to record the delivery of supplies such as blood products, medications and medical devices"
 
 * ^status = #active
 * ^experimental = true
@@ -27,9 +27,7 @@ Description: "Uzbekistan Core SupplyDelivery profile, used to record delivery an
 * occurrence[x] only Period
 * occurrencePeriod MS
 * occurrencePeriod.start MS
-* occurrencePeriod.start ^short = "Transfer date and time"
 * occurrencePeriod.end MS
-* occurrencePeriod.end ^short = "Issue date and time"
 * supplier MS
 * supplier only Reference(UZCorePractitioner or UZCorePractitionerRole or UZCoreOrganization)
 * receiver MS
