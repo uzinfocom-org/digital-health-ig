@@ -2,7 +2,7 @@ Profile: UZCoreBiologicallyDerivedProduct
 Parent: BiologicallyDerivedProduct
 Id: uz-core-biologically-derived-product
 Title: "UZ Core BiologicallyDerivedProduct"
-Description: "Uzbekistan Core BiologicallyDerivedProduct profile, used to represent both directly donated blood products and components produced by processing."
+Description: "Uzbekistan Core BiologicallyDerivedProduct profile, used to represent material of biological origin intended for transfusion or transplantation, such as blood products and their processed components, tissues and cells"
 
 * ^status = #active
 * ^experimental = true
