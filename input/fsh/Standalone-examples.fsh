@@ -525,10 +525,10 @@ Description: "Illustrative transfusion order for the patient in the blood produc
 * status = #active
 * intent = #order
 * priority = #routine
-* code = $sct#431069006 "Packed red blood cells"
+* code = $sct#71493000 "Transfusion of packed red blood cells"
 * subject = Reference(example-salim)
 * authoredOn = "2025-08-31T14:00:00+05:00"
 * occurrenceDateTime = "2025-09-01T09:00:00+05:00"
 * requester = Reference(example-practitioner)
 * performer = Reference(tashkent-hospital)
-* reason = $sct#110468005 "Ambulatory surgery"
+* reason.concept = $sct#87522002 "Iron deficiency anemia"

@@ -89,6 +89,7 @@ Description: "Uzbekistan Core SupplyRequest profile, used to represent requests 
 
 
 * reason MS
+* reason only CodeableReference(UZCoreCondition or UZCoreObservation or UZCoreDiagnosticReport or DocumentReference)
 
 
 * deliverTo MS
@@ -107,7 +108,7 @@ Usage: #example
 
 * status = #draft
 
-* category = request-type-cs#stock "Stock replenishment"
+* category = request-type-cs#named "Named (patient-specific)"
 
 * priority = #routine
 
@@ -135,6 +136,6 @@ Usage: #example
 
 * supplier = Reference(Organization/andijan-station)
 
-* reason = $sct#110468005 "Ambulatory surgery"
+* reason.concept = $sct#87522002 "Iron deficiency anemia"
 
 * deliverTo = Reference(Organization/tashkent-hospital)
