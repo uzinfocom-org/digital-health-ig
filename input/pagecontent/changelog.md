@@ -4,6 +4,10 @@
 
 A [SNOMED CT supplement for screening and home visits](CodeSystem-screening-sct-cs.html) gives Uzbek and Russian designations to the 15 SNOMED CT concepts that now code screening and patronage services in [ServiceRequest procedures and investigations](ValueSet-service-request-code-vs.html), which lists them by name.
 
+#### Changed
+
+[UZ Core Observation](StructureDefinition-uz-core-observation.html) allows more than one `basedOn` (0..* instead of 0..1), so an observation can point to both the order it answers and the plan that order belongs to. For example, a screening result can reference its referral and the screening program's plan ServiceRequest. Existing observations remain valid.
+
 #### Breaking changes
 
 16 of the 20 [screening and home visit codes](CodeSystem-screening-code-cs.html) have been removed in favour of SNOMED CT. [ServiceRequest procedures and investigations](ValueSet-service-request-code-vs.html) already accepted these SNOMED CT concepts through its procedure filter. Four codes stay because SNOMED CT has no suitable concept for them: `mserv-0007-00003` (cerebrovascular disease questionnaire), `mserv-0007-00011` (vaccination invitation), `mserv-0007-00012` (post-vaccination patronage) and `mserv-0007-00017` (patronage of women of reproductive age). Senders of a removed code switch to its SNOMED CT concept:
