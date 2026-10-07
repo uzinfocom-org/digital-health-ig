@@ -48,7 +48,7 @@ Description: "Uzbekistan Core SupplyRequest profile, used to represent requests 
 
 * item MS
 // comment will be deleted after UZCoreBiologicallyDerivedProduct profile is implemented
-// * item from BloodProductTypeSnomedVS (required)
+// * item from BloodProductTypeSnomedVS (extensible)
 
 
 * quantity MS
