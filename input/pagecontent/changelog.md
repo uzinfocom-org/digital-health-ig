@@ -4,6 +4,8 @@
 
 A [SNOMED CT supplement for screening and home visits](CodeSystem-screening-sct-cs.html) gives Uzbek and Russian designations to the 15 SNOMED CT concepts that now code screening and patronage services in [ServiceRequest procedures and investigations](ValueSet-service-request-code-vs.html), which lists them by name.
 
+[ServiceRequest categories](ValueSet-service-request-categories-vs.html) include SNOMED CT `310422005` "Prevention/screening invitation", with Uzbek and Russian designations in the [category supplement](CodeSystem-sr-sct-category-cs.html). A screening program's invitation or plan ServiceRequest carries it in `category`, so a dedicated invitation code in `code` is not needed.
+
 #### Changed
 
 [UZ Core Observation](StructureDefinition-uz-core-observation.html) allows more than one `basedOn` (0..* instead of 0..1), so an observation can point to both the order it answers and the plan that order belongs to. For example, a screening result can reference its referral and the screening program's plan ServiceRequest. Existing observations remain valid.

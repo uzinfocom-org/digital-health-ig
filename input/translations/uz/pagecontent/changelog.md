@@ -4,6 +4,8 @@
 
 [Skrining va patronaj uchun SNOMED CT to'ldiruvchisi](CodeSystem-screening-sct-cs.html) endi skrining va patronaj xizmatlarini [ServiceRequest muolajalari va tekshiruvlari](ValueSet-service-request-code-vs.html) to'plamida kodlaydigan 15 ta SNOMED CT konseptiga o'zbekcha va ruscha nomlar beradi; to'plam ularni nomma-nom sanab o'tadi.
 
+[ServiceRequest toifalari](ValueSet-service-request-categories-vs.html) SNOMED CT `310422005` "Prevention/screening invitation" kodini o'z ichiga oladi, uning o'zbekcha va ruscha nomlari [toifalar to'ldiruvchisida](CodeSystem-sr-sct-category-cs.html). Skrining dasturining taklifnomasi yoki rejali ServiceRequest resursi uni `category` da olib yuradi, shuning uchun `code` da alohida taklifnoma kodi kerak emas.
+
 #### O'zgartirildi
 
 [UZ Core Observation](StructureDefinition-uz-core-observation.html) endi bir nechta `basedOn` qiymatiga ruxsat beradi (0..1 o'rniga 0..*): kuzatuv o'zi bajaradigan buyurtmaga ham, shu buyurtma tegishli bo'lgan rejaga ham havola qila oladi. Masalan, skrining natijasi yo'llanmaga va skrining dasturining rejali ServiceRequest resursiga havola qiladi. Mavjud kuzatuvlar yaroqli bo'lib qoladi.

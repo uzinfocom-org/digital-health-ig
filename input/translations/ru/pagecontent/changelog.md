@@ -4,6 +4,8 @@
 
 [Дополнение SNOMED CT для скрининга и патронажа](CodeSystem-screening-sct-cs.html) даёт узбекские и русские обозначения 15 концептам SNOMED CT, которыми теперь кодируются услуги скрининга и патронажа в наборе [процедур и исследований ServiceRequest](ValueSet-service-request-code-vs.html); набор перечисляет их по имени.
 
+[Категории ServiceRequest](ValueSet-service-request-categories-vs.html) включают SNOMED CT `310422005` «Prevention/screening invitation» с узбекским и русским обозначениями в [дополнении категорий](CodeSystem-sr-sct-category-cs.html). Приглашение или плановый ServiceRequest скрининговой программы передаёт его в `category`, поэтому отдельный код приглашения в `code` не нужен.
+
 #### Изменено
 
 [UZ Core Observation](StructureDefinition-uz-core-observation.html) допускает несколько значений `basedOn` (0..* вместо 0..1): наблюдение может ссылаться и на назначение, которое оно выполняет, и на план, к которому относится это назначение. Например, результат скрининга ссылается на направление и на плановый ServiceRequest скрининговой программы. Существующие наблюдения остаются валидными.
