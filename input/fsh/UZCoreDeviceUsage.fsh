@@ -56,12 +56,12 @@ Description: "Example instance of a UZCoreDeviceUsage - Active device usage"
 
 * status = #active
 * patient = Reference(Patient/example-salim)
-* device.concept = $sct#268460000
+* device.concept = $sct#268460000 "Intrauterine contraceptive device"
 * basedOn = Reference(UZCoreServiceRequest-Example01)
 * dateAsserted = "2024-09-10T10:00:00Z"
 
 * timingDateTime = "2024-09-01"
-* category = $sct#49062001
+* category = $sct#49062001 "Device"
 
 * informationSource = Reference(example-practitioner)
 * note.text = "Device usage for patient care"
@@ -75,14 +75,14 @@ Description: "Example instance of a UZCoreDeviceUsage - Device usage with period
 
 * status = #active
 * patient = Reference(Patient/example-salim)
-* device.concept = $sct#268460000
+* device.concept = $sct#268460000 "Intrauterine contraceptive device"
 * basedOn = Reference(UZCoreServiceRequest-Example01)
 * dateAsserted = "2024-09-10T10:00:00Z"
 
 * timingPeriod.start = "2024-01-01"
 * timingPeriod.end = "2024-12-31"
 
-* category = $sct#49062001
+* category = $sct#49062001 "Device"
 
 * informationSource = Reference(example-practitioner)
 * note.text = "Regular device usage period"
