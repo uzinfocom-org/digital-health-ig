@@ -78,12 +78,15 @@ Title: "Whole blood donation"
 Description: "A directly donated whole blood unit with no parent product."
 * identifier.value = "BB-DON-2026-00123"
 * biologicalSourceEvent.value = "DON-2025-0088231"
-* productCategory = $product-category#fluid
-* productCode = $sct#420135007
-* productStatus = $biologicallyderived-product-status#available
+* productCategory = $product-category#fluid "Fluid"
+* productCode = $sct#420135007 "Whole blood"
+* productStatus = $biologicallyderived-product-status#available "Available"
 * collection.collectedDateTime = "2026-09-15T08:00:00+05:00"
-* property[aboGroup].valueCodeableConcept = $sct#112144000
-* property[rhdType].valueCodeableConcept = $sct#165747007
+* property[aboGroup].type = $sct#63915006 "ABO blood group system"
+* property[aboGroup].valueCodeableConcept = $sct#112144000 "Blood group A"
+* property[rhdType].type = $sct#876000 "Blood group antigen D"
+* property[rhdType].valueCodeableConcept = $sct#165747007 "RhD positive"
+* property[volume].type = $sct#118565006 "Volume"
 * property[volume].valueQuantity = 450 'mL' "mL"
 
 Instance: example-blood-component-product
@@ -93,11 +96,15 @@ Title: "Red blood cell component"
 Description: "A processed red blood cell component linked to its source donation."
 * identifier.value = "BB-COMP-2026-0001"
 * biologicalSourceEvent.value = "DON-2025-0088231"
-* productCategory = $product-category#cells
-* productCode = $sct#431069006
+* productCategory = $product-category#cells "Cells"
+* productCode = $sct#431069006 "Packed red blood cells"
 * parent = Reference(example-blood-donation-product)
-* productStatus = $biologicallyderived-product-status#available
-* property[aboGroup].valueCodeableConcept = $sct#112144000
-* property[rhdType].valueCodeableConcept = $sct#165747007
+* productStatus = $biologicallyderived-product-status#available "Available"
+* property[aboGroup].type = $sct#63915006 "ABO blood group system"
+* property[aboGroup].valueCodeableConcept = $sct#112144000 "Blood group A"
+* property[rhdType].type = $sct#876000 "Blood group antigen D"
+* property[rhdType].valueCodeableConcept = $sct#165747007 "RhD positive"
+* property[volume].type = $sct#118565006 "Volume"
 * property[volume].valueQuantity = 263 'mL' "mL"
+* property[leukocyteReduced].type = $sct#126251004 "Leukocyte reduced red blood cells, human"
 * property[leukocyteReduced].valueBoolean = true
