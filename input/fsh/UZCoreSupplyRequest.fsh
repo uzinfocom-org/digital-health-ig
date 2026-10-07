@@ -35,7 +35,7 @@ Description: "Uzbekistan Core SupplyRequest profile, used to represent requests 
 * status from SupplyRequestStatusVS (required)
 
 * category MS
-* category from RequestTypeVS (required)
+* category from RequestTypeVS (extensible)
 
 
 * priority MS
