@@ -1,7 +1,7 @@
 CodeSystem: DeviceUsageAdherenceCodeCS
 Id: device-usage-adherence-code-cs
-Title: "Device Usage Adherence Code"
-Description: "Codes for indicating the adherence of device usage  with UZ/RU/EN designations."
+Title: "Device usage adherence code translations"
+Description: "Device usage adherence code supplement with translations in Uzbek and Russian"
 
 * insert SupplementCodeSystemDraft(device-usage-adherence-code-cs, $device-usage-adherence, 5.0.0)
 

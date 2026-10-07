@@ -1,7 +1,7 @@
 CodeSystem: DeviceUsageAdherenceReasonCS
 Id: device-usage-adherence-reason-cs
-Title: "Device Usage Adherence Reason CodeSystem"
-Description: "Codes for indicating the reason of device usage adherence with UZ/RU/EN designations."
+Title: "Device usage adherence reason translations"
+Description: "Device usage adherence reason supplement with translations in Uzbek and Russian"
 * insert SupplementCodeSystemDraft(device-usage-adherence-reason-cs, $deviceusage-adherence-reason, 5.0.0)
 
 * #lost "Lost"

@@ -1,7 +1,7 @@
 ValueSet: DeviceUsageCategoryVS
 Id: device-usage-category-vs
-Title: "Device Usage Category"
-Description: "Categories for device usage "
+Title: "Device usage category"
+Description: "Categories of device usage"
 * ^experimental = true
 * ^status = #active
 

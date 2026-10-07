@@ -1,7 +1,7 @@
 CodeSystem: DeviceUsageStatusCS
 Id: device-usage-status-cs
-Title: "Device Usage Status"
-Description: "Status codes for device usage (active, completed, not-done, entered-in-error, intended, stopped, on-hold), with UZ/RU/EN designations."
+Title: "Device usage status translations"
+Description: "Device usage status supplement with translations in Uzbek and Russian"
 
 * insert SupplementCodeSystemDraft(device-usage-status-cs, $device-usage-status, 5.0.0)
 
