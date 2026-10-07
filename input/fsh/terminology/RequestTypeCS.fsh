@@ -1,6 +1,6 @@
 CodeSystem: RequestTypeCS
 Id: request-type-cs
-Title: "Supply Request Types"
+Title: "Supply request types"
 Description: "Types of supply requests in Uzbekistan"
 * insert OriginalCodeSystemDraft(request-type-cs)
 

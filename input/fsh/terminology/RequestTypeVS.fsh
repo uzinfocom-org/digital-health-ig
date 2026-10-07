@@ -1,6 +1,6 @@
 ValueSet: RequestTypeVS
 Id: request-type-vs
-Title: "Supply Request Types"
+Title: "Supply request type"
 Description: "Types of supply requests in Uzbekistan"
 * ^url = "https://terminology.dhp.uz/fhir/core/ValueSet/request-type-vs"
 * ^experimental = true

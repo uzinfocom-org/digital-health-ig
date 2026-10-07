@@ -1,7 +1,7 @@
 ValueSet: SupplyDeliveryTypeVS
 Id: supply-delivery-type-vs
-Title: "Supply Delivery Type"
-Description: "Supply Delivery Type for blood products and supply delivery."
+Title: "Supply delivery type"
+Description: "Supply delivery types"
 * ^url = "https://terminology.dhp.uz/fhir/core/ValueSet/supply-delivery-type-vs"
 * ^experimental = true
 * ^language = #uz
