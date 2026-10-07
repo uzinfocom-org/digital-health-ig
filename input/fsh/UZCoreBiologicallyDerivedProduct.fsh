@@ -15,7 +15,7 @@ Description: "Uzbekistan Core BiologicallyDerivedProduct profile, used to repres
 * productCategory MS
 * productCategory from ProductCategoryVS (required)
 * productCode MS
-* productCode from BloodProductTypeSnomedVS (required)
+* productCode from BloodProductTypeSnomedVS (extensible)
 * parent 0..1 MS
 * parent only Reference(UZCoreBiologicallyDerivedProduct)
 * parent ^short = "Source product for a processed component; absent for a direct donation"
