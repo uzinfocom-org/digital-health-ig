@@ -37,14 +37,11 @@ jobs:
       # _updatePublisher.sh and _genonce.sh both probe the tx.fhir.org landing page
       # and abort (or silently fall back to -tx n/a, skipping terminology validation)
       # when that page is down even though the terminology API itself is up.
-      # Pinned to 2.3.4: 2.3.5 renders through a model where Group is a canonical
-      # resource and crashes with a NullPointerException on R5 Group instances,
-      # which have no status. Move back to latest once a fixed release is out.
       - name: Install IG publisher
         run: |
           mkdir -p input-cache
           curl -fL --retry 3 --max-time 300 \
-            https://github.com/HL7/fhir-ig-publisher/releases/download/2.3.4/publisher.jar \
+            https://github.com/HL7/fhir-ig-publisher/releases/latest/download/publisher.jar \
             -o input-cache/publisher.jar
 
       - name: Check that the IG builds successfully
