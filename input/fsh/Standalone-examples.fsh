@@ -483,9 +483,9 @@ Title: "Andijan blood station"
 Description: "Illustrative blood station supplying blood products and managing their storage location."
 * language = #en
 * active = true
-* type.coding[subordinationGroup] = organizational-subordination-group-cs#I_2 
-* type.coding[nomenclatureGroup] = nomenclature-group-cs#II_700 
-* type.coding[organizationalServiceGroup] = organizational-service-group-cs#III_600 
+* type.coding[subordinationGroup] = organizational-subordination-group-cs#I_2 "In territorial administration"
+* type.coding[nomenclatureGroup] = nomenclature-group-cs#II_700 "Blood transfusion center"
+* type.coding[organizationalServiceGroup] = organizational-service-group-cs#III_600 "Others"
 * name = "Andijan Blood Transfusion Station"
 
 
@@ -509,11 +509,11 @@ Title: "Tashkent receiving hospital"
 Description: "Illustrative hospital receiving blood products from the Andijan blood station."
 * language = #en
 * active = true
-* type.coding[subordinationGroup] = organizational-subordination-group-cs#I_2 
-* type.coding[nomenclatureGroup] = nomenclature-group-cs#II_100 
-* type.coding[organizationalStructure] = organizational-structure-cs#146 
-* type.coding[organizationalServiceGroup] = organizational-service-group-cs#III_200 
-* type.coding[specialization] = organizational-specialization-cs#114.0 
+* type.coding[subordinationGroup] = organizational-subordination-group-cs#I_2 "In territorial administration"
+* type.coding[nomenclatureGroup] = nomenclature-group-cs#II_100 "Hospital premises"
+* type.coding[organizationalStructure] = organizational-structure-cs#146 "Hospital"
+* type.coding[organizationalServiceGroup] = organizational-service-group-cs#III_200 "There is an inpatient department."
+* type.coding[specialization] = organizational-specialization-cs#114.0 "Adult Hematology"
 * name = "Tashkent Hospital"
 
 
@@ -525,10 +525,10 @@ Description: "Illustrative transfusion order for the patient in the blood produc
 * status = #active
 * intent = #order
 * priority = #routine
-* code = $sct#431069006
+* code = $sct#431069006 "Packed red blood cells"
 * subject = Reference(example-salim)
 * authoredOn = "2025-08-31T14:00:00+05:00"
 * occurrenceDateTime = "2025-09-01T09:00:00+05:00"
 * requester = Reference(example-practitioner)
 * performer = Reference(tashkent-hospital)
-* reason = $sct#110468005
+* reason = $sct#110468005 "Ambulatory surgery"

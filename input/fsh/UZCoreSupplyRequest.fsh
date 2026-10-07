@@ -113,7 +113,7 @@ Usage: #example
 
 * deliverFor = Reference(Patient/example-salim)
 
-* item = $sct#431069006
+* item = $sct#431069006 "Packed red blood cells"
 
 * quantity.value = 2
 * quantity.unit = "units"
@@ -135,6 +135,6 @@ Usage: #example
 
 * supplier = Reference(Organization/andijan-station)
 
-* reason = $sct#110468005
+* reason = $sct#110468005 "Ambulatory surgery"
 
 * deliverTo = Reference(Organization/tashkent-hospital)
