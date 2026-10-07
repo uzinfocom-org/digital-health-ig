@@ -1,7 +1,7 @@
 CodeSystem: SupplyDeliveryStatusCS
 Id: supply-delivery-status-cs
-Title: "Supply Delivery Status"
-Description: "Supply Delivery Status translations in Uzbek and Russian."
+Title: "Supply delivery status translations"
+Description: "Supply delivery status supplement with translations in Uzbek and Russian"
 * insert SupplementCodeSystemDraft(supply-delivery-status-cs, $supplydelivery-status, 5.0.0)
 
 * #in-progress

@@ -1,7 +1,7 @@
 ValueSet: SupplyDeliveryStatusVS
 Id: supply-delivery-status-vs
-Title: "Supply Delivery Status"
-Description: "Supply Delivery Status for blood products and supply delivery."
+Title: "Supply delivery status"
+Description: "Supply delivery statuses"
 * ^url = "https://terminology.dhp.uz/fhir/core/ValueSet/supply-delivery-status-vs"
 * ^experimental = true
 * ^language = #uz
