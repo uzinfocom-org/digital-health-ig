@@ -115,7 +115,7 @@ Yurak-qon tomir kasalliklari xavfi skriningi so'rovnomasi CvdRiskCategoryCS va C
 
 #### Hujjatlashtirish
 
-[Komponentlar](components.html) sahifasi endi Qon resurslarini boshqarish, Hamshiralik ishi va Ta'minot komponentlarini tavsiflaydi. [Yo'llanmalar](components.html#yollanmalar) bo'limi endi yo'llanma tasniflanadigan yettita o'lchamni hamda yo'llanmaning ServiceRequest i uning davlat sug'urtasi bo'yicha kelishilishini boshqaruvchi Task resurslari bilan qanday bog'lanishini yoritadi.
+[Komponentlar](components.html) sahifasi endi Qon resurslarini boshqarish, Hamshiralik ishi va Ta'minot komponentlarini tavsiflaydi. [Yo'llanmalar](components.html#referrals) bo'limi endi yo'llanma tasniflanadigan yettita o'lchamni hamda yo'llanmaning ServiceRequest i uning davlat sug'urtasi bo'yicha kelishilishini boshqaruvchi Task resurslari bilan qanday bog'lanishini yoritadi.
 
 Ish jarayoni sahifasiga ega komponentlar endi unga havola beradi, har bir ish jarayoni sahifasi esa komponentga qaytadan havola qiladi. Retseptlar bo'limi Texnik loyihasi yozilguncha [Elektron retsept va dori vositasini berish](workflow-prescription.html) jarayoniga ishora qiladi.
 
