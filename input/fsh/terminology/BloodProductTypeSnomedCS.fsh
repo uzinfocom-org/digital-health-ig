@@ -4,7 +4,7 @@ Title: "Blood product type translations"
 Description: "Blood product type supplement with translations in Uzbek and Russian"
 * insert SupplementCodeSystemDraft(blood-product-type-snomed-cs, $sct, 2026.1.0)
 
-* #420135007
+* #88487009
   * ^designation[0].language = #ru
   * ^designation[=].value = "Цельная кровь"
   * ^designation[+].language = #uz
@@ -22,7 +22,7 @@ Description: "Blood product type supplement with translations in Uzbek and Russi
   * ^designation[+].language = #uz
   * ^designation[=].value = "Yangi muzlatilgan plazma"
 
-* #126258005
+* #23343005
   * ^designation[0].language = #ru
   * ^designation[=].value = "Тромбоцитарная масса"
   * ^designation[+].language = #uz
@@ -33,3 +33,15 @@ Description: "Blood product type supplement with translations in Uzbek and Russi
   * ^designation[=].value = "Криопреципитат"
   * ^designation[+].language = #uz
   * ^designation[=].value = "Kriopretsipitat"
+
+* #126251004
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Эритроциты человека с уменьшенным содержанием лейкоцитов"
+  * ^designation[+].language = #uz
+  * ^designation[=].value = "Leykotsitlar miqdori kamaytirilgan inson eritrotsitlari"
+
+* #256378001
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Облучённые эритроциты"
+  * ^designation[+].language = #uz
+  * ^designation[=].value = "Nurlantirilgan eritrotsitlar"

@@ -9,17 +9,24 @@ Description: "Uzbekistan Core BiologicallyDerivedProduct profile, used to repres
 * ^publisher = "Uzinfocom"
 * ^date = "2026-09-30"
 
-* identifier MS
-* biologicalSourceEvent MS
-* biologicalSourceEvent ^short = "Donation event identifier for traceability"
+* identifier ^short = "Local unit number assigned by the collecting or processing blood service for product tracking"
+* identifier.system 1..1 MS
+* identifier.system = $blood-unit-number
+* identifier.value 1..1 MS
+
+* biologicalSourceEvent ^short = "Local donation number assigned by the collecting blood service for donation traceability"
+* biologicalSourceEvent.system 1..1 MS
+* biologicalSourceEvent.system = $blood-donation-number
+* biologicalSourceEvent.value 1..1 MS
+
 * productCategory MS
 * productCategory from ProductCategoryVS (required)
 * productCode MS
 * productCode from BloodProductTypeSnomedVS (extensible)
-* parent 0..1 MS
+* parent MS
 * parent only Reference(UZCoreBiologicallyDerivedProduct)
-* parent ^short = "Source product for a processed component; absent for a direct donation"
-* parent ^definition = "Direct donations, including apheresis plasma and platelets, have no parent. Components produced by processing reference exactly one source product. Cryoprecipitate references its source plasma."
+* parent ^short = "Source product(s) for a processed or pooled component; absent for a direct donation"
+* parent ^definition = "Direct donations, including apheresis plasma and platelets, have no parent. Components produced by processing reference their source product, and pooled products reference every unit in the pool. Cryoprecipitate references its source plasma."
 * productStatus MS
 * productStatus from ProductStatusVS (required)
 * productStatus ^short = "Availability; detailed inventory status is recorded in InventoryItem"
@@ -39,44 +46,42 @@ Description: "Uzbekistan Core BiologicallyDerivedProduct profile, used to repres
 * request only Reference(UZCoreServiceRequest)
 * property MS
 * property.type MS
-* property.type from BloodProductPropertyTypeVS (required)
 * property.value[x] MS
 * property ^slicing.discriminator.type = #value
 * property ^slicing.discriminator.path = "type"
 * property ^slicing.rules = #open
 * property contains
-    aboGroup 0..* MS and
-    rhdType 0..* MS and
-    volume 0..* MS and
-    hematocrit 0..* MS and
-    irradiated 0..* MS and
-    leukocyteReduced 0..* MS
+    aboGroup 0..1 MS and
+    rhdType 0..1 MS and
+    volume 0..1 MS and
+    hematocrit 0..1 MS
+* property[aboGroup] ^short = "ABO blood group of the product"
 * property[aboGroup].type = $sct#63915006
 * property[aboGroup].value[x] only CodeableConcept
 * property[aboGroup].valueCodeableConcept from BloodGroupVS (required)
 
-* property[rhdType].type = $sct#876000
+* property[rhdType] ^short = "RhD blood group of the product"
+* property[rhdType].type = $sct#115678000
 * property[rhdType].value[x] only CodeableConcept
 * property[rhdType].valueCodeableConcept from BloodRhVS (required)
 
+* property[volume] ^short = "Volume of the product"
 * property[volume].type = $sct#118565006
 * property[volume].value[x] only Quantity
 
-* property[hematocrit].type = blood-product-property-type-local-cs#hematocrit
+* property[hematocrit] ^short = "Proportion of product volume occupied by red blood cells"
+* property[hematocrit].type = $loinc#4544-3
 * property[hematocrit].value[x] only Quantity
 
-* property[irradiated].type = $sct#126241000
-* property[irradiated].value[x] only boolean
-
-* property[leukocyteReduced].type = $sct#126251004
-* property[leukocyteReduced].value[x] only boolean
 
 Instance: example-blood-donation-product
 InstanceOf: UZCoreBiologicallyDerivedProduct
 Usage: #example
 Title: "Whole blood donation"
 Description: "A directly donated whole blood unit with no parent product."
+* identifier.system = $blood-unit-number
 * identifier.value = "BB-DON-2026-00123"
+* biologicalSourceEvent.system = $blood-donation-number
 * biologicalSourceEvent.value = "DON-2025-0088231"
 * productCategory = $product-category#fluid "Fluid"
 * productCode = $sct#420135007 "Whole blood"
@@ -84,27 +89,31 @@ Description: "A directly donated whole blood unit with no parent product."
 * collection.collectedDateTime = "2026-09-15T08:00:00+05:00"
 * property[aboGroup].type = $sct#63915006 "ABO blood group system"
 * property[aboGroup].valueCodeableConcept = $sct#112144000 "Blood group A"
-* property[rhdType].type = $sct#876000 "Blood group antigen D"
+* property[rhdType].type = $sct#115678000
 * property[rhdType].valueCodeableConcept = $sct#165747007 "RhD positive"
 * property[volume].type = $sct#118565006 "Volume"
 * property[volume].valueQuantity = 450 'mL' "mL"
+* property[hematocrit].type = $loinc#4544-3
+* property[hematocrit].valueQuantity = 40 '%' "%"
 
 Instance: example-blood-component-product
 InstanceOf: UZCoreBiologicallyDerivedProduct
 Usage: #example
 Title: "Red blood cell component"
-Description: "A processed red blood cell component linked to its source donation."
+Description: "A processed red blood cell component with its own unit number and the same donation number as its source product."
+* identifier.system = $blood-unit-number
 * identifier.value = "BB-COMP-2026-0001"
+* biologicalSourceEvent.system = $blood-donation-number
 * biologicalSourceEvent.value = "DON-2025-0088231"
 * productCategory = $product-category#cells "Cells"
-* productCode = $sct#431069006 "Packed red blood cells"
+* productCode = $sct#126251004 "Leukocyte reduced red blood cells, human"
 * parent = Reference(example-blood-donation-product)
 * productStatus = $biologicallyderived-product-status#available "Available"
 * property[aboGroup].type = $sct#63915006 "ABO blood group system"
 * property[aboGroup].valueCodeableConcept = $sct#112144000 "Blood group A"
-* property[rhdType].type = $sct#876000 "Blood group antigen D"
+* property[rhdType].type = $sct#115678000
 * property[rhdType].valueCodeableConcept = $sct#165747007 "RhD positive"
 * property[volume].type = $sct#118565006 "Volume"
 * property[volume].valueQuantity = 263 'mL' "mL"
-* property[leukocyteReduced].type = $sct#126251004 "Leukocyte reduced red blood cells, human"
-* property[leukocyteReduced].valueBoolean = true
+* property[hematocrit].type = $loinc#4544-3
+* property[hematocrit].valueQuantity = 60 '%' "%"

@@ -5,32 +5,32 @@ Description: "Blood product property types in Uzbekistan that have no SNOMED CT 
 
 * insert OriginalCodeSystemDraft(blood-product-property-type-local-cs)
 
-* #extended-phenotype-genotype "Kengaytirilgan fenotip/genotip"
-  * ^designation[0].language = #en
-  * ^designation[=].value = "Extended phenotype/genotype"
-  * ^designation[+].language = #ru
+* #blood-prop-0001-0001 "Kengaytirilgan fenotip/genotip"
+  * ^designation[0].language = #ru
   * ^designation[=].value = "Расширенный фенотип/генотип"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Extended phenotype/genotype"
 
-* #pathogen-reduced "Patogenlardan tozalangan"
-  * ^designation[0].language = #en
-  * ^designation[=].value = "Pathogen-reduced"
-  * ^designation[+].language = #ru
+* #blood-prop-0001-0002 "Patogenlardan tozalangan"
+  * ^designation[0].language = #ru
   * ^designation[=].value = "Патоген-редуцированный"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Pathogen-reduced"
 
-* #donation-type "Donorlik turi (allogen, autolog, yo'naltirilgan)"
-  * ^designation[0].language = #en
-  * ^designation[=].value = "Donation type (allogeneic, autologous, directed)"
-  * ^designation[+].language = #ru
+* #blood-prop-0001-0003 "Donorlik turi (allogen, autolog, yo'naltirilgan)"
+  * ^designation[0].language = #ru
   * ^designation[=].value = "Тип донации (аллогенная, аутологичная, направленная)"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Donation type (allogeneic, autologous, directed)"
 
-* #additive-solution "Qo'shimcha eritma"
-  * ^designation[0].language = #en
-  * ^designation[=].value = "Additive solution"
-  * ^designation[+].language = #ru
+* #blood-prop-0001-0004 "Qo'shimcha eritma"
+  * ^designation[0].language = #ru
   * ^designation[=].value = "Добавочный раствор"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Additive solution"
 
-* #hematocrit "Gematokrit"
-  * ^designation[0].language = #en
-  * ^designation[=].value = "Hematocrit"
-  * ^designation[+].language = #ru
+* #blood-prop-0001-0005 "Gematokrit"
+  * ^designation[0].language = #ru
   * ^designation[=].value = "Гематокрит"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Hematocrit"
