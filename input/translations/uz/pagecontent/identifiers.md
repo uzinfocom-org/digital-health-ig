@@ -272,7 +272,7 @@ DTSJ kodi — bu Fond (biriktiruvchi organ) tomonidan shartnoma asosidagi har bi
 
 Qo'llab-quvvatlanadigan barcha tashkilot identifikatorlarining to'liq ro'yxati [OrganizationIdentifierDomainVS](ValueSet-organization-identifier-domain-vs.html) qiymatlar to'plamida keltirilgan.
 
-### Hujjat identifikatorlari
+### Hujjat identifikatorlari {#document-identifiers}
 
 Hujjatlar `doc` nom maydoni orqali identifikatsiya qilinadi. Bu klinik hujjatlar, hisobotlar va boshqa tibbiy hujjatlarni kuzatish imkonini beradi.
 
@@ -391,4 +391,4 @@ GET [base]/Organization?identifier=https://dhp.uz/fhir/core/sid/org/uz/soliq|200
 - [UZCorePatient profili](StructureDefinition-uz-core-patient.html)
 - [UZCorePractitioner profili](StructureDefinition-uz-core-practitioner.html)
 - [UZCoreOrganization profili](StructureDefinition-uz-core-organization.html)
-- [Nomlash tizimlari (NamingSystems)](artifacts.html#terminology-naming-systems)
+- [Nomlash tizimlari (NamingSystems)](artifacts.html)
