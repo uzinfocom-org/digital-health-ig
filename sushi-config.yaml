@@ -98,6 +98,8 @@ pages:
     title: Components
   changelog.md:
     title: Changelog
+  translationinfo.md:
+    title: Translation information
 
 #
 # The parameters property represents IG.definition.parameter. Rather

@@ -1,6 +1,6 @@
 > **Mashina tarjimasi, inson tomonidan tekshirilishi zarur.** Ushbu sahifa ingliz tilidan sun'iy intellekt yordamida avtomatik tarjima qilingan va hali muharrir tomonidan tekshirilmagan. Har qanday nomuvofiqlikda asl inglizcha versiya ustuvor hisoblanadi.
 
-### Tezkor boshlash
+### Tezkor boshlash {#quick-start}
 
 Ushbu profil uchun keng tarqalgan API o'zaro ta'sirlari. So'rovlar JWT kirish tokenini talab qiladi - [Xavfsizlik va autentifikatsiya](api-access.html#security) bo'limiga qarang. `[base]` - bu [FHIR server bazaviy URL manzili](api-access.html#endpoints); `|` token tizimini uning qiymatidan ajratadi va URL kodlashda `%7C` sifatida ko'rsatilishi kerak. Ushbu o'zaro ta'sirlar standart FHIR R5 qidiruv parametrlaridan foydalanadi; ushbu resurs uchun yakunlanishiga qarab [CapabilityStatement](CapabilityStatement-DHPCapabilityStatement.html) hujjatiga qarang.
 

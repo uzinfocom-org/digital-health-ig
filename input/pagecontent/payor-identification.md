@@ -1,5 +1,3 @@
-## Payor identification
-
 In the healthcare system of the Republic of Uzbekistan, care is paid for by payors — organizations that finance the services of providers (healthcare organizations). Today the only payor is the State Health Insurance Fund (SHIF), though the model allows for others in the future. This page describes how payors themselves are identified in the UZ Core profiles, and how a payor identifies the providers it has contracted with.
 
 ### How a payor is identified
