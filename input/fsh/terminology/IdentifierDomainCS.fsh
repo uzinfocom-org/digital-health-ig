@@ -80,6 +80,21 @@ Description: """
       * ^property[=].valueString = Canonical(uzb-hrm-argos-practitioner)
       * ^property[+].code = #notSelectable
       * ^property[=].valueBoolean = false
+* #https://dhp.uz/fhir/core/sid/doc "Root of identifiers for documents"
+  * ^property[0].code = #notSelectable
+  * ^property[=].valueBoolean = true
+  * #https://dhp.uz/fhir/core/sid/doc/uz "Root of Uzbekistan identifiers for documents"
+    * ^property[0].code = #notSelectable
+    * ^property[=].valueBoolean = true
+    * ^property[+].code = #country
+    * ^property[=].valueCoding = $iso-3166#UZ
+    * #https://dhp.uz/fhir/core/sid/doc/uz/specialist-certificate "Specialist certificate of a healthcare professional issued by the Ministry of Health of Uzbekistan"
+      * ^property[0].code = #country
+      * ^property[=].valueCoding = $iso-3166#UZ
+      * ^property[+].code = #naming-system
+      * ^property[=].valueString = Canonical(uzb-specialist-certificate)
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
 * #https://dhp.uz/fhir/core/sid/pid "Root of identifiers for personal identification"
   * ^property[0].code = #notSelectable
   * ^property[=].valueBoolean = true

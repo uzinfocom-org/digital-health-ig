@@ -130,6 +130,7 @@ Alias: $sct = http://snomed.info/sct
 Alias: $sct-vs = http://snomed.info/sct?fhir_vs
 Alias: $security-source-type = http://terminology.hl7.org/CodeSystem/security-source-type
 Alias: $socieeconomic-observation = https://dhp.uz/fhir/core/StructureDefinition/uz-core-socioeconomic-observation
+Alias: $specialist-certificate = https://dhp.uz/fhir/core/sid/doc/uz/specialist-certificate
 Alias: $specialization = https://dhp.uz/fhir/core/CodeSystem/specialization
 Alias: $specimen-role = http://hl7.org/fhir/specimen-role
 Alias: $ssv = https://gov.uz/ru/ssv

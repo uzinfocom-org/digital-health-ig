@@ -640,3 +640,21 @@ Usage: #definition
 * uniqueId[0].type = #uri
 * uniqueId[=].value = $mis-dmed-uz
 * uniqueId[=].preferred = true
+
+Instance: uzb-specialist-certificate
+InstanceOf: NamingSystem
+Description: "Specialist certificate numbers of healthcare professionals issued by the Ministry of Health of Uzbekistan"
+Usage: #definition
+* url = "https://terminology.dhp.uz/fhir/core/NamingSystem/uzb-specialist-certificate"
+* name = "UzbekistanSpecialistCertificateSystem"
+* status = #active
+* kind = #identifier
+* date = "2026-10-08"
+* publisher = "Uzinfocom"
+* responsible = "Ministry of Health of the Republic of Uzbekistan"
+* description = "Naming system for specialist certificates that the Ministry of Health of the Republic of Uzbekistan issues to healthcare professionals. The identifier value is the certificate series followed by its number, without separators (e.g. CA008815)."
+* jurisdiction = urn:iso:std:iso:3166#UZ "Uzbekistan"
+* usage = "Used in Practitioner.qualification.identifier to identify the specialist certificate of a healthcare professional."
+* uniqueId[0].type = #uri
+* uniqueId[=].value = $specialist-certificate
+* uniqueId[=].preferred = true
