@@ -272,7 +272,7 @@ https://dhp.uz/fhir/core/sid/{namespace}/{country}/{type}[/subtype]
 
 Полный перечень всех поддерживаемых систем идентификаторов организаций приведён в value set [OrganizationIdentifierDomainVS](ValueSet-organization-identifier-domain-vs.html).
 
-### Идентификаторы документов
+### Идентификаторы документов {#document-identifiers}
 
 Документы идентифицируются с использованием пространства имён `doc`. Это позволяет отслеживать клинические документы, отчёты и другую медицинскую документацию.
 
@@ -417,4 +417,4 @@ GET [base]/Observation?identifier=https://dhp.uz/fhir/core/sid/prg/uz/program|26
 - [Профиль UZCorePatient](StructureDefinition-uz-core-patient.html)
 - [Профиль UZCorePractitioner](StructureDefinition-uz-core-practitioner.html)
 - [Профиль UZCoreOrganization](StructureDefinition-uz-core-organization.html)
-- [NamingSystems](artifacts.html#terminology-naming-systems)
+- [NamingSystems](artifacts.html)

@@ -1,4 +1,4 @@
-### Tezkor boshlash
+### Tezkor boshlash {#quick-start}
 
 Ushbu profil uchun keng tarqalgan API amallari. So'rovlar JWT access token talab qiladi - qarang: [Xavfsizlik va autentifikatsiya](api-access.html#security). `[base]` - [FHIR-serverning bazaviy URL manzili](api-access.html#endpoints); `|` system ni qiymatdan ajratadi va URL da `%7C` ko'rinishida URL-kodlanishi kerak.
 

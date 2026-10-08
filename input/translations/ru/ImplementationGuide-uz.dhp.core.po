@@ -5329,8 +5329,8 @@ msgstr "translationinfo.html"
 
 # ImplementationGuide.definition.page.title
 #: ImplementationGuide.definition.page.title
-msgid "Translationinfo"
-msgstr "Translationinfo"
+msgid "Translation information"
+msgstr "Информация о переводах"
 
 # ImplementationGuide.definition.page.source[x]
 #: ImplementationGuide.definition.page.source[x]

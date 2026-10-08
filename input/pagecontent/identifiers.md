@@ -415,4 +415,4 @@ GET [base]/Observation?identifier=https://dhp.uz/fhir/core/sid/prg/uz/program|26
 - [UZCorePatient Profile](StructureDefinition-uz-core-patient.html)
 - [UZCorePractitioner Profile](StructureDefinition-uz-core-practitioner.html)
 - [UZCoreOrganization Profile](StructureDefinition-uz-core-organization.html)
-- [NamingSystems](artifacts.html#terminology-naming-systems)
+- [NamingSystems](artifacts.html)

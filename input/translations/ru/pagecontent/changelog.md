@@ -2,13 +2,64 @@
 
 #### Добавлено
 
-Добавлены `organizational-specialization-cs#176.0` для гериатрии взрослых, `coverage-type-cs#covtp-0001-00014` для благотворительного фонда «Вакф» и `admit-source-local-cs#mserv-0006-00007` для направления из поликлиники — пробелы, найденные при сверке формы 066 с живой системой DMED. Список [Provenance Participation Role Type](ValueSet-provenance-participation-role-type-vs.html) теперь включает `attester`.
+[Дополнение SNOMED CT для скрининга и патронажа](CodeSystem-screening-sct-cs.html) даёт узбекские и русские обозначения 15 концептам SNOMED CT, которыми теперь кодируются услуги скрининга и патронажа в наборе [процедур и исследований ServiceRequest](ValueSet-service-request-code-vs.html); набор перечисляет их по имени.
+
+#### Несовместимые изменения
+
+16 из 20 [кодов скрининга и патронажа](CodeSystem-screening-code-cs.html) удалены в пользу SNOMED CT. Набор [процедур и исследований ServiceRequest](ValueSet-service-request-code-vs.html) уже принимал эти концепты SNOMED CT через фильтр процедур. Четыре кода остаются, так как подходящего концепта SNOMED CT для них нет: `mserv-0007-00003` (опросник цереброваскулярной патологии), `mserv-0007-00011` (призыв к вакцинации), `mserv-0007-00012` (патронаж после вакцинации) и `mserv-0007-00017` (патронаж женщин детородного возраста). Отправители удалённого кода переходят на соответствующий концепт SNOMED CT:
+
+| Удалённый код | Услуга | SNOMED CT |
+|---|---|---|
+| `mserv-0007-00001` | Опросник предтестовой вероятности ишемической болезни сердца | `171223006` Ischemic heart disease screening |
+| `mserv-0007-00002` | Опросник фертильности | `408961002` Fertility care assessment |
+| `mserv-0007-00004` | Опросник гельминтозных заболеваний | `171147008` Screening for intestinal helminthiasis |
+| `mserv-0007-00005` | Опросник риска сердечно-сосудистых заболеваний | `300007000` Screening for cardiovascular system disease |
+| `mserv-0007-00006` | Опросник сахарного диабета | `171183004` Diabetes mellitus screening |
+| `mserv-0007-00007` | Опросник рака молочной железы | `268547008` Screening for malignant neoplasm of breast |
+| `mserv-0007-00008` | Опросник онкогематологических заболеваний | `762445000` Screening for hematological disorder |
+| `mserv-0007-00009` | Скрининг по раку шейки матки | `171149006` Screening for malignant neoplasm of cervix |
+| `mserv-0007-00010` | Хронические заболевания | `170549007` Chronic disease monitoring |
+| `mserv-0007-00013` | Стационар на дому | `60689008` Home care of patient |
+| `mserv-0007-00014` | Профилактический осмотр | `103740001` Periodic physical examination |
+| `mserv-0007-00015` | Беременные (12-31 недели) | `424525001` Antenatal care |
+| `mserv-0007-00016` | Послеродовой (3-15-30 дней) | `133906008` Postpartum care |
+| `mserv-0007-00018` | Дети (3-15-30 дней) | `408987002` Newborn care assessment |
+| `mserv-0007-00019` | Дети (3-60 месяцев) | `409027005` Infant care assessment |
+| `mserv-0007-00020` | Скрининг по раку молочной железы | `268547008` Screening for malignant neoplasm of breast |
+
+Коды опросника и скрининга рака молочной железы оба соответствуют `268547008`. Диапазоны недель, дней и месяцев из прежних названий в концепты SNOMED CT не входят.
+
+### Версия 0.10.0
+
+#### Добавлено
+
+Добавлен [ICHI](CodeSystem-who-ichi.html) целиком - Международная классификация вмешательств в здравоохранении ВОЗ, 21 747 концептов из таблицы от 2026-09-17 - под собственным каноническим URI ВОЗ `http://id.who.int/icd/release/11/ichi`, вместе с набором значений [ICHI Codes](ValueSet-ichi-vs.html).
+
+677 из этих концептов помечены как `inactive` со `status` `retired`. Это коды, которые DMED всё ещё использует, а ВОЗ уже убрала; они сохранены, чтобы уже имеющиеся в DMED записи оставались валидными. `ichi-vs` их не включает: для новых записей их использовать не следует.
+
+[UZ Core PlanDefinition](StructureDefinition-uz-core-plan-definition.html) теперь указывает, где действует расписание, через срез use context `jurisdiction` с привязкой required к новому набору значений [Uzbekistan Jurisdictions](ValueSet-jurisdiction-vs.html). Национальное расписание несёт одну запись с кодом страны `UZ`, региональное - по одной записи на регион, причём коды регионов те же, что в `Address.state`, поэтому регион пациента можно сопоставить с действующими для него расписаниями.
+
+По запросу Министерства здравоохранения набор значений [причин статуса иммунизации](ValueSet-immunization-status-reason-vs.html) вырос с 4 до 8 кодов: добавлены `PHILISOP` (мировоззренческий отказ), `RELIG` (религиозный отказ), `VACEFF` (сомнения в эффективности вакцины) и `VACSAF` (опасения по безопасности вакцины), чтобы несостоявшаяся вакцинация могла указать причину точнее, чем просто возражение пациента. Их узбекские и русские designation находятся в [supplement act reason](CodeSystem-actreason-cs.html).
+
+Добавлены `organizational-specialization-cs#176.0` для гериатрии взрослых, `coverage-type-cs#covtp-0001-00014` для благотворительного фонда «Вакф», `admit-source-local-cs#mserv-0006-00007` для направления из поликлиники и `benefits-cs#regis0004.00024` для лиц с гематологическими заболеваниями - право на бесплатную высокотехнологичную специализированную помощь по указу Президента УП-88 - пробелы, найденные при сверке формы 066 с живой системой DMED. Набор значений [приоритета обращения](ValueSet-encounter-priority-vs.html) теперь также включает `UR` (срочно) и `EL` (планово), а список [Provenance Participation Role Type](ValueSet-provenance-participation-role-type-vs.html) включает `attester`.
 
 Новая система идентификаторов [программы здравоохранения](NamingSystem-uzb-health-program.html), `https://dhp.uz/fhir/core/sid/prg/uz/program`, указывает, в рамках какой национальной программы здравоохранения - скрининга, вакцинации, диспансерного наблюдения - создан ресурс. Это одна система для всех программ со значением в виде кода программы SNOMED CT, поэтому новой программе не нужна новая система идентификаторов. На странице [идентификаторов](identifiers.html) описано новое пространство имён `prg`.
 
 #### Изменено
 
+[Коды процедур](ValueSet-procedure-code-vs.html) теперь включают ICHI наряду с SNOMED CT, поскольку DMED кодирует операцию только в ICHI, поэтому `Procedure.code` может нести статистический код, под которым процедура попадает в отчётность, вместе с её клиническим смыслом - оба как два coding в одном элементе, если процедуру и регистрируют, и включают в отчётность. Привязка теперь extensible, а не required, чтобы руководство могло сузить `Procedure.code` до национального подмножества, включающего коды, убранные ВОЗ.
+
+Канонический URI ICHI теряет `beta`: [NamingSystem ICHI](NamingSystem-who-ichi.html) переехал с `http://id.who.int/icd/release/11/beta/ichi` на `http://id.who.int/icd/release/11/ichi`. NamingSystem публиковал URI с `beta` в 0.9.0 и 0.9.2, поэтому всё, что взяло оттуда URI системы ICHI, нужно перенести.
+
+Пример ConceptMap SNOMED CT в ICHI, публиковавшийся с 0.9.0, удалён. ВОЗ лицензирует ICHI по CC BY-ND 3.0 IGO, и любое сопоставление ICHI с другой терминологией требует отдельного письменного соглашения с ВОЗ; до его заключения руководство такую карту публиковать не может.
+
 `target` в [UZ Core Provenance](StructureDefinition-uz-core-provenance.html) теперь также принимает `Bundle`, поскольку для подписи целого FHIR-документа (как в форме 066) ранее не было допустимого типа цели.
+
+#### Документация
+
+На странице [UZ Core PlanDefinition](StructureDefinition-uz-core-plan-definition.html) появился раздел «Национальное или региональное» с обеими формами use context `jurisdiction`.
+
+Страница [UZ Core Procedure](StructureDefinition-uz-core-procedure.html) теперь называет обе системы кодов, допустимые в `code`, и указывает передавать SNOMED CT и ICHI как два coding, если процедуру и регистрируют, и включают в отчётность.
 
 ### Версия 0.9.2
 
@@ -66,7 +117,7 @@ Supplement классов ролей DMED `https://terminology.dhp.uz/fhir/core/
 
 #### Документация
 
-На странице [Компоненты](components.html) теперь описаны компоненты "Управление кровью", "Сестринское дело" и "Поставки". Раздел [Направления](components.html#направления) теперь описывает семь признаков, по которым классифицируется направление, и то, как ServiceRequest направления связан с Task, которые ведут его согласование в рамках государственного медицинского страхования.
+На странице [Компоненты](components.html) теперь описаны компоненты "Управление кровью", "Сестринское дело" и "Поставки". Раздел [Направления](components.html#referrals) теперь описывает семь признаков, по которым классифицируется направление, и то, как ServiceRequest направления связан с Task, которые ведут его согласование в рамках государственного медицинского страхования.
 
 Компоненты, у которых есть страница процесса, теперь ссылаются на неё, а каждая страница процесса ссылается обратно. Раздел "Рецепты" указывает на процесс [Электронный рецепт и отпуск лекарственного средства](workflow-prescription.html), пока не готов его технический проект.
 
@@ -210,7 +261,7 @@ ConceptMap типов организаций переименованы с пр�
 
 Добавлен профиль [UZ Core Medication](StructureDefinition-uz-core-medication.html) с характерными для Узбекистана идентификаторами медикаментов (ID маркировки, регистрационное удостоверение, GTIN, ID агрегации коробки, код национальной классификации продуктов и услуг) и терминологией на основе АТХ для [классификации](ValueSet-medication-classification-vs.html) и [лекарственной формы](ValueSet-medication-doseform-vs.html).
 
-Добавлен профиль [UZ Core Procedure](StructureDefinition-uz-core-procedure.html) с терминологией для [статуса процедуры](ValueSet-procedure-event-status-vs.html), [кодов процедур](ValueSet-procedure-code-vs.html) на основе SNOMED CT и [исхода](ValueSet-procedure-outcome-vs.html), а также примером ConceptMap [SNOMED CT в ICHI](ConceptMap-snomed-to-ichi-procedures.html) для отчётности по возмещению расходов.
+Добавлен профиль [UZ Core Procedure](StructureDefinition-uz-core-procedure.html) с терминологией для [статуса процедуры](ValueSet-procedure-event-status-vs.html), [кодов процедур](ValueSet-procedure-code-vs.html) на основе SNOMED CT и [исхода](ValueSet-procedure-outcome-vs.html), а также примером ConceptMap SNOMED CT в ICHI для отчётности по возмещению расходов.
 
 Добавлены [коды лабораторных методов](CodeSystem-lab-methods-cs.html) с ConceptMap, сопоставляющими лабораторные [коды панелей и аналитов](ConceptMap-lab-pan-codes-to-loinc.html) с LOINC и [коды методов](ConceptMap-lab-methods-to-loinc.html) с SNOMED CT. Коды методов представлены [набором значений лабораторных методов](ValueSet-lab-method-vs.html), привязанным к элементу `method` профиля [UZ Core Observation](StructureDefinition-uz-core-observation.html).
 

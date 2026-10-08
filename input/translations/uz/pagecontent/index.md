@@ -1,6 +1,6 @@
 > **Mashina tarjimasi, inson tomonidan tekshirilishi zarur.** Ushbu sahifa ingliz tilidan sun'iy intellekt yordamida avtomatik tarjima qilingan va hali muharrir tomonidan tekshirilmagan. Har qanday nomuvofiqlikda asl inglizcha versiya ustuvor hisoblanadi.
 
-# O'zbekiston yagona raqamli sog'liqni saqlash platformasi
+### O'zbekiston yagona raqamli sog'liqni saqlash platformasi
 
 Ushbu FHIR R5 joriy etish qo'llanmasi (IG) ishlab chiqish jarayonida bo'lib, hozircha production muhitida foydalanish uchun tayyor emas. U faqat [Raqamli sog'liqni saqlash platformasi](https://www.kfw.de/About-KfW/Newsroom/Latest-News/Pressemitteilungen-Details_723328.html) (DHP) doirasida testdan o'tkazish va fikr-mulohazalarni yig'ish uchun mo'ljallangan. IG takomillashtirilishi davomida uning mazmuni o'zgarib boradi.
 
