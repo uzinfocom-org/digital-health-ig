@@ -640,3 +640,21 @@ Usage: #definition
 * uniqueId[0].type = #uri
 * uniqueId[=].value = $mis-dmed-uz
 * uniqueId[=].preferred = true
+
+Instance: uzb-health-program
+InstanceOf: NamingSystem
+Description: "National health program a resource was created under"
+Usage: #definition
+* url = "https://terminology.dhp.uz/fhir/core/NamingSystem/uzb-health-program"
+* name = "UzbekistanHealthProgram"
+* status = #active
+* kind = #identifier
+* date = "2026-09-28"
+* publisher = "Uzinfocom"
+* responsible = "Ministry of Health of the Republic of Uzbekistan"
+* description = "Naming system for the national health program - screening, vaccination, dispensary follow-up and so on - under which a resource was created. One system serves every program: the value is the program's SNOMED CT concept id, or its code from a DHP code system where SNOMED CT has no suitable concept."
+* jurisdiction = urn:iso:std:iso:3166#UZ "Uzbekistan"
+* usage = "Used on clinical and workflow resources created under a program, repeated when a resource belongs to several programs. Not used on Patient, Practitioner, PractitionerRole or Organization. Every resource in a program carries the same value, so it does not replace the resource's own business identifier."
+* uniqueId[0].type = #uri
+* uniqueId[=].value = "https://dhp.uz/fhir/core/sid/prg/uz/program"
+* uniqueId[=].preferred = true

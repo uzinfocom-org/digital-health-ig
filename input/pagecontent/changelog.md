@@ -43,6 +43,8 @@ At the Ministry of Health's request, the [immunization status reason value set](
 
 Added `organizational-specialization-cs#176.0` for adult geriatrics, `coverage-type-cs#covtp-0001-00014` for the Vaqf charitable fund, `admit-source-local-cs#mserv-0006-00007` for a polyclinic referral, and `benefits-cs#regis0004.00024` for people with haematological diseases, an entitlement to state-funded high-tech specialized care under Presidential Decree UP-88 - gaps found auditing Form 066 against the live DMED system. The [encounter priority value set](ValueSet-encounter-priority-vs.html) now also includes `UR` (urgent) and `EL` (elective), and the [Provenance Participation Role Type value set](ValueSet-provenance-participation-role-type-vs.html) includes `attester`.
 
+A new [health program](NamingSystem-uzb-health-program.html) identifier system, `https://dhp.uz/fhir/core/sid/prg/uz/program`, records which national health program - screening, vaccination, dispensary follow-up - a resource was created under. It is one system for every program, with the program's SNOMED CT code as the value, so a new program needs no new identifier system. The [identifiers](identifiers.html) page documents the new `prg` namespace.
+
 #### Changed
 
 [Procedure Codes](ValueSet-procedure-code-vs.html) now includes ICHI alongside SNOMED CT, because DMED codes an operation in ICHI only, so `Procedure.code` can carry the statistical code a procedure is reported under as well as its clinical meaning - both as two codings on the same element where a procedure is recorded and reported. The binding is now extensible rather than required, so a guide can narrow `Procedure.code` to a national subset that includes codes WHO has withdrawn.
