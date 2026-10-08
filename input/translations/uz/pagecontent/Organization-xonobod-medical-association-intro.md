@@ -1,6 +1,6 @@
 Ushbu misol Hepatitis JSON formatidagi tashkilotni [UZ Core Organization](StructureDefinition-uz-core-organization.html) profiliga mos FHIR Organization resursiga o'girishni ko'rsatadi. [Natijadagi FHIR JSON](Organization-xonobod-medical-association.json.html) ni ko'ring.
 
-#### Manba Hepatitis JSON
+### Manba Hepatitis JSON
 
 ```json
 {
@@ -27,7 +27,7 @@ Ushbu misol Hepatitis JSON formatidagi tashkilotni [UZ Core Organization](Struct
 }
 ```
 
-#### Mapping eslatmalari
+### Mapping eslatmalari
 
 | Manba maydoni | FHIR yo'li | Ishlatilgan ConceptMap |
 |---|---|---|

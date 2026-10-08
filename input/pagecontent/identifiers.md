@@ -389,4 +389,4 @@ GET [base]/Organization?identifier=https://dhp.uz/fhir/core/sid/org/uz/soliq|200
 - [UZCorePatient Profile](StructureDefinition-uz-core-patient.html)
 - [UZCorePractitioner Profile](StructureDefinition-uz-core-practitioner.html)
 - [UZCoreOrganization Profile](StructureDefinition-uz-core-organization.html)
-- [NamingSystems](artifacts.html#terminology-naming-systems)
+- [NamingSystems](artifacts.html)
