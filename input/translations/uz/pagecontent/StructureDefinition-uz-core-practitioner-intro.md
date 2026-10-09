@@ -24,7 +24,7 @@ Bazaviy FHIR Practitioner hech qanday majburiy elementga ega emas va ushbu profi
 - tug'ilgan sana va vafot sanasi/bayrog'i;
 - manzil - o'zbekistonlik manzil (kodlangan ma'muriy bo'linmalar) yoki xalqaro erkin matnli manzil;
 - fotosurat;
-- bir yoki bir nechta malaka, ularning har biri Tibtoifa litsenziya/sertifikat qiymatlar to'plamidan olingan kod, hamda uning amal qilish muddati va beruvchi tashkilot bilan.
+- bir yoki bir nechta malaka, ularning har biri Tibtoifa litsenziya/sertifikat qiymatlar to'plamidan olingan kod, hamda uning amal qilish muddati va beruvchi tashkilot bilan. [Mutaxassis sertifikati](#specialist-certificates) qo'shimcha ravishda seriya va raqamni `identifier` da, mutaxassislik, toifa va rolni esa `code.text` da saqlaydi.
 
 > `gender-other` kengaytmasidan faqat `gender` `other` ga o'rnatilgan holatda foydalanish mumkin.
 
@@ -135,5 +135,126 @@ To'liq yozuv mutaxassisning `qualification` (har bir `code` Tibtoifa litsenziya/
 ```
 
 `qualification.code` Tibtoifa litsenziya/sertifikat qiymatlar to'plamiga (required) bog'langan. Vafot sanasi aniq ma'lum bo'lganda `deceasedDateTime` dan, faqat fakt ma'lum bo'lganda esa `deceasedBoolean` dan foydalaning.
+
+### Mutaxassis sertifikatlari {#specialist-certificates}
+
+Mutaxassis sertifikatini Sog'liqni saqlash vazirligi beradi; u tibbiyot xodimi muayyan mutaxassislik bo'yicha muayyan malaka toifasi bilan ishlashi mumkinligini tasdiqlaydi. Sertifikatlar Tibtoifada saqlanadi, u tibbiyot xodimining barcha sertifikatlarini PINFL bo'yicha qaytaradi. Har bir sertifikat Practitioner ning bitta `qualification` elementiga aylanadi.
+
+<div>{% include practitioner-certificate-sequence.svg %}</div><br clear="all"/>
+
+#### Tibtoifa nimani qaytaradi
+
+PINFL `42410540220011` uchun Tibtoifa javobining bitta yozuvi:
+
+```
+{
+  "pinfl": "42410540220011",
+  "serial": "CA",
+  "number": "008815",
+  "category": { "uz": "Oliy toifa", "ru": "Высшая категория", "en": "Higher category" },
+  "speciality": { "uz": "psixiatriya", "ru": "психиатрия", "en": "psychiatry" },
+  "medicaleRoleName": { "uz": "Shifokor", "ru": "Врач", "en": "Doctor" },
+  "givenDate": "2024-05-05",
+  "validityPeriod": "2029-05-05",
+  "commandNumber": "35",
+  "commandDate": "2024-05-05"
+}
+```
+
+Yozuvda Tibtoifaning ichki identifikatorlari (`id`, `serialId`, `categoryId`, `specialityId`, `medicalRoleId`) va har bir tarjima qilinadigan maydon yonida qoraqalpoqcha (`kaa`) nom ham bor.
+
+#### FHIR ga moslashtirish
+
+| Tibtoifa maydoni | Misol | FHIR elementi | Qoida |
+|---|---|---|---|
+| `pinfl` | `42410540220011` | `Practitioner.identifier` (PINFL) | Tibbiyot xodimini topish uchun; malakada takrorlanmaydi |
+| `serial` + `number` | `CA` + `008815` | `qualification.identifier.value` | Seriya va raqam ajratuvchisiz: `CA008815` |
+| - | - | `qualification.identifier.system` | Har doim `https://dhp.uz/fhir/core/sid/doc/uz/specialist-certificate` |
+| - | - | `qualification.code.coding` | Har doim `http://terminology.hl7.org/CodeSystem/v2-0360#CER` "Certificate" |
+| `speciality`, `category`, `medicaleRoleName` | `psixiatriya`, `Oliy toifa`, `Shifokor` | `qualification.code.text` | Resurs tilida `{mutaxassislik}, {toifa}, {rol}`: `Psixiatriya, oliy toifa, shifokor` |
+| xuddi shu maydonlar `ru`, `kaa`, `en` tillarida | `Психиатрия, высшая категория, врач` | `code.text` dagi `translation` kengaytmasi | Har bir til uchun bitta kengaytma |
+| `givenDate` | `2024-05-05` | `qualification.period.start` | Berilgan sana |
+| `validityPeriod` | `2029-05-05` | `qualification.period.end` | Amal qilishning oxirgi kuni |
+| `id`, `serialId`, `categoryId`, `specialityId`, `medicalRoleId` | `9448`, `2`, `1`, `90`, `1` | - | Tibtoifaning ichki identifikatorlari, yuborilmaydi |
+| `commandNumber`, `commandDate` | `35`, `2024-05-05` | - | Yuborilmaydi |
+
+Mutaxassislik, toifa va rol hozircha matn sifatida yuboriladi; ular uchun kodlangan qiymatlar to'plamlari keyingi versiyada paydo bo'lishi mumkin.
+
+#### Qoidalar
+
+- **Bitta sertifikat - bitta malaka.** Ikki mutaxassislik bo'yicha sertifikatlari bor tibbiyot xodimida ikkita `qualification` elementi bo'ladi.
+- **Identifikator bo'yicha moslashtirish.** Sertifikat qayta olinganda (masalan, uzaytirilgandan keyin amal qilish muddati o'zgarganda) mavjud malakani `identifier.system` va `identifier.value` bo'yicha toping va dublikat qo'shish o'rniga uni yangilang.
+- **Muddati o'tgan sertifikatlar saqlanadi.** `period.end` o'tib ketgan sertifikat yozuvda qoladi; muddat uning endi amal qilmasligini ko'rsatadi.
+- **Seriya harflari.** Tibtoifada lotin va kirill harflaridagi seriyalar uchraydi (masalan, `CA` va `ТТБ`). Bitta sertifikat har doim bir xil `identifier.value` berishi uchun seriyani Tibtoifa qaytarganidek yuboring.
+- **Toifa yo'q.** Tibtoifaning `0` ("None") toifasi toifa noma'lumligini bildiradi - uni matnga kiritmang. `5` ("Toifasiz") toifasi haqiqiy qiymat va yoziladi.
+
+#### Practitioner dagi sertifikat
+
+Yuqoridagi Tibtoifa yozuvidan tuzilgan malaka:
+
+```json
+{
+  "resourceType": "Practitioner",
+  "language": "uz",
+  "meta": { "profile": [ "https://dhp.uz/fhir/core/StructureDefinition/uz-core-practitioner" ] },
+  "identifier": [
+    {
+      "use": "official",
+      "type": {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+            "code": "NI",
+            "display": "National unique individual identifier"
+          }
+        ]
+      },
+      "system": "https://dhp.uz/fhir/core/sid/pid/uz/ni",
+      "value": "42410540220011"
+    }
+  ],
+  "qualification": [
+    {
+      "identifier": [
+        {
+          "system": "https://dhp.uz/fhir/core/sid/doc/uz/specialist-certificate",
+          "value": "CA008815"
+        }
+      ],
+      "code": {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0360",
+            "code": "CER",
+            "display": "Certificate"
+          }
+        ],
+        "text": "Psixiatriya, oliy toifa, shifokor",
+        "_text": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                { "url": "lang", "valueCode": "ru" },
+                { "url": "content", "valueString": "Психиатрия, высшая категория, врач" }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                { "url": "lang", "valueCode": "en" },
+                { "url": "content", "valueString": "Psychiatry, higher category, doctor" }
+              ]
+            }
+          ]
+        }
+      },
+      "period": { "start": "2024-05-05", "end": "2029-05-05" }
+    }
+  ]
+}
+```
+
+Sertifikat raqamlari tizimi [mutaxassis sertifikati nomlash tizimida](NamingSystem-uzb-specialist-certificate.html) tavsiflangan; to'liq yozuv - [tibbiyot xodimi misolida](Practitioner-example-practitioner.html).
 
 Misol API chaqiruvlari va namunaviy payload uchun ushbu sahifaning pastki qismidagi [Tezkor boshlash](#quick-start) bo'limiga qarang.

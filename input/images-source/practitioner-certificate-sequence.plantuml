@@ -1,0 +1,23 @@
+@startuml practitioner-certificate-sequence
+title Specialist certificate: from Tibtoifa to Practitioner.qualification
+autonumber
+
+participant "DHP" as DHP
+participant "Tibtoifa" as Tib
+
+DHP -> Tib : request certificates\nby PINFL
+activate Tib
+Tib --> DHP : list of certificates\n(serial, number, speciality,\ncategory, role, dates)
+deactivate Tib
+
+loop each certificate
+  DHP -> DHP : find qualification by\nidentifier (system + serial + number)
+  alt not found
+    DHP -> DHP : add qualification\n(identifier, code = CER,\ncode.text, period)
+  else found
+    DHP -> DHP : update code.text and period
+  end
+end
+
+DHP -> DHP : store [[StructureDefinition-uz-core-practitioner.html Practitioner]]
+@enduml

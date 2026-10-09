@@ -88,6 +88,13 @@ Description: """
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
     * ^property[=].valueCoding = $iso-3166#UZ
+    * #https://dhp.uz/fhir/core/sid/doc/uz/specialist-certificate "Specialist certificate of a healthcare professional issued by the Ministry of Health of Uzbekistan"
+      * ^property[0].code = #country
+      * ^property[=].valueCoding = $iso-3166#UZ
+      * ^property[+].code = #naming-system
+      * ^property[=].valueString = Canonical(uzb-specialist-certificate)
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
     * #https://dhp.uz/fhir/core/sid/doc/uz/supply-request "Supply request numbers assigned by requesting hospitals in Uzbekistan"
       * ^property[0].code = #idtype
       * ^property[=].valueCoding = $identifier-type#PLAC
