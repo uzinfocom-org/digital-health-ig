@@ -69,3 +69,8 @@ Description: "ServiceRequest SNOMED CT category supplement with translations in 
   * ^designation[=].value = "Донация"
   * ^designation[+].language = #uz
   * ^designation[=].value = "Qon berish"
+* #310422005 "Prevention/screening invitation"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Приглашение на профилактику/скрининг"
+  * ^designation[+].language = #uz
+  * ^designation[=].value = "Profilaktika/skrining taklifi"
