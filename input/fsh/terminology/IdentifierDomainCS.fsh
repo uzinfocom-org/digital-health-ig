@@ -104,6 +104,15 @@ Description: """
       * ^property[=].valueString = Canonical(uzb-supply-contract-number)
       * ^property[+].code = #notSelectable
       * ^property[=].valueBoolean = false
+    * #https://dhp.uz/fhir/core/sid/doc/uz/supply-delivery "Supply delivery numbers assigned by suppliers such as blood services in Uzbekistan"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCoding = $identifier-type#FILL
+      * ^property[+].code = #country
+      * ^property[=].valueCoding = $iso-3166#UZ
+      * ^property[+].code = #naming-system
+      * ^property[=].valueString = Canonical(uzb-supply-delivery-number)
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
 * #https://dhp.uz/fhir/core/sid/prd "Root of identifiers for products"
   * ^property[0].code = #notSelectable
   * ^property[=].valueBoolean = true
