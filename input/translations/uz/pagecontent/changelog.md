@@ -8,6 +8,8 @@
 
 #### O'zgartirildi
 
+[UZ Core ServiceRequest](StructureDefinition-uz-core-servicerequest.html) profilida `supportingInfo` yana faqat boshqa ServiceRequest emas, balki istalgan resursga havola qila oladi. `category` endi bo'laklarga ajratilgan: ko'pi bilan bitta kategoriya [ServiceRequestCategoriesVS](ValueSet-service-request-categories-vs.html) to'plamidan majburiy (required) bog'lanish bilan olinadi, uning yonida esa istalgan kod tizimidagi boshqa kategoriyalar ko'rsatilishi mumkin.
+
 [UZ Core Observation](StructureDefinition-uz-core-observation.html) endi bir nechta `basedOn` qiymatiga ruxsat beradi (0..1 o'rniga 0..*): kuzatuv o'zi bajaradigan buyurtmaga ham, shu buyurtma tegishli bo'lgan rejaga ham havola qila oladi. Masalan, skrining natijasi yo'llanmaga va skrining dasturining rejali ServiceRequest resursiga havola qiladi. Mavjud kuzatuvlar yaroqli bo'lib qoladi.
 
 #### Buzuvchi o'zgarishlar
@@ -34,6 +36,10 @@
 | `mserv-0007-00020` | Ko'krak bezi saratoni skriningi | `268547008` Screening for malignant neoplasm of breast |
 
 Ko'krak bezi saratoni so'rovnomasi va skriningi kodlari ikkalasi ham `268547008` ga mos keladi. Eski nomlardagi hafta, kun va oy oraliqlari SNOMED CT konseptlariga kirmaydi.
+
+#### Hujjatlashtirish
+
+[Identifikatorlar](identifiers.html) sahifasiga mahsulot identifikatorlari, masalan, qon birliklari raqamlari uchun `prd` nom maydoni qo'shildi. U tashqi reestr o'z tizimini e'lon qilmagan raqamlar uchun ishlatiladi.
 
 ### Versiya 0.10.0
 

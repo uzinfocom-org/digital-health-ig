@@ -8,6 +8,8 @@ A [SNOMED CT supplement for screening and home visits](CodeSystem-screening-sct-
 
 #### Changed
 
+[UZ Core ServiceRequest](StructureDefinition-uz-core-servicerequest.html) `supportingInfo` can reference any resource again, rather than only another ServiceRequest. `category` is now sliced: at most one category comes from [ServiceRequestCategoriesVS](ValueSet-service-request-categories-vs.html), with a required binding, and any other categories can sit alongside it from any code system.
+
 [UZ Core Observation](StructureDefinition-uz-core-observation.html) allows more than one `basedOn` (0..* instead of 0..1), so an observation can point to both the order it answers and the plan that order belongs to. For example, a screening result can reference its referral and the screening program's plan ServiceRequest. Existing observations remain valid.
 
 #### Breaking changes
@@ -34,6 +36,10 @@ A [SNOMED CT supplement for screening and home visits](CodeSystem-screening-sct-
 | `mserv-0007-00020` | Breast cancer screening | `268547008` Screening for malignant neoplasm of breast |
 
 The breast cancer questionnaire and breast cancer screening codes both map to `268547008`. The week, day and month ranges in the old names are not part of the SNOMED CT concepts.
+
+#### Documentation
+
+The [identifiers](identifiers.html) page adds a `prd` namespace for product identifiers, such as blood unit numbers, for numbers that no external registry already publishes a system for.
 
 ### Version 0.10.0
 
