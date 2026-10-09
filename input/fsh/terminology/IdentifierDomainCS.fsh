@@ -80,6 +80,30 @@ Description: """
       * ^property[=].valueString = Canonical(uzb-hrm-argos-practitioner)
       * ^property[+].code = #notSelectable
       * ^property[=].valueBoolean = false
+* #https://dhp.uz/fhir/core/sid/doc "Root of identifiers for documents"
+  * ^property[0].code = #notSelectable
+  * ^property[=].valueBoolean = true
+  * #https://dhp.uz/fhir/core/sid/doc/uz "Root of Uzbekistan identifiers for documents"
+    * ^property[0].code = #notSelectable
+    * ^property[=].valueBoolean = true
+    * ^property[+].code = #country
+    * ^property[=].valueCoding = $iso-3166#UZ
+    * #https://dhp.uz/fhir/core/sid/doc/uz/supply-request "Supply request numbers assigned by requesting hospitals in Uzbekistan"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCoding = $identifier-type#PLAC
+      * ^property[+].code = #country
+      * ^property[=].valueCoding = $iso-3166#UZ
+      * ^property[+].code = #naming-system
+      * ^property[=].valueString = Canonical(uzb-supply-request-number)
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+    * #https://dhp.uz/fhir/core/sid/doc/uz/supply-contract "Supply agreement numbers between hospitals and blood services in Uzbekistan"
+      * ^property[0].code = #country
+      * ^property[=].valueCoding = $iso-3166#UZ
+      * ^property[+].code = #naming-system
+      * ^property[=].valueString = Canonical(uzb-supply-contract-number)
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
 * #https://dhp.uz/fhir/core/sid/prd "Root of identifiers for products"
   * ^property[0].code = #notSelectable
   * ^property[=].valueBoolean = true
