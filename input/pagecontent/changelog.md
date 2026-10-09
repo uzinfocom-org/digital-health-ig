@@ -1,20 +1,24 @@
 ### In development
 
+(No changes yet)
+
+### Version 0.11.0
+
 #### Added
 
-A [SNOMED CT supplement for screening and home visits](CodeSystem-screening-sct-cs.html) gives Uzbek and Russian designations to the 15 SNOMED CT concepts that now code screening and patronage services in [ServiceRequest procedures and investigations](ValueSet-service-request-code-vs.html), which lists them by name.
+The [screening program registry](ValueSet-screening-program-type-vs.html) contains eight SNOMED CT screening codes with supplement translations and all retained national screening/home visit codes. DMED breast/cervical program codes are restored as distinct identifiers; clinical codes remain SNOMED CT. The cerebrovascular code is explicitly a program code.
 
-[ServiceRequest categories](ValueSet-service-request-categories-vs.html) include SNOMED CT `310422005` "Prevention/screening invitation", with Uzbek and Russian designations in the [category supplement](CodeSystem-sr-sct-category-cs.html). A screening program's invitation or plan ServiceRequest carries it in `category`, so a dedicated invitation code in `code` is not needed.
+[Program ActivityDefinition](StructureDefinition-uz-core-program-activity-definition.html) requires exactly one focus through an additive child profile. Existing ActivityDefinition resources remain compatible. ActivityDefinition.kind additionally allows ServiceRequest and Task, with translations. The invitation category is SNOMED CT `310422005`; Observation.basedOn allows 0..*.
+
+A [SNOMED CT supplement for screening and home visits](CodeSystem-screening-sct-cs.html) gives Uzbek and Russian designations to the 15 SNOMED CT concepts that now code screening and patronage services in [ServiceRequest procedures and investigations](ValueSet-service-request-code-vs.html), which lists them by name.
 
 #### Changed
 
 [UZ Core ServiceRequest](StructureDefinition-uz-core-servicerequest.html) `supportingInfo` can reference any resource again, rather than only another ServiceRequest. `category` is now sliced: at most one category comes from [ServiceRequestCategoriesVS](ValueSet-service-request-categories-vs.html), with a required binding, and any other categories can sit alongside it from any code system.
 
-[UZ Core Observation](StructureDefinition-uz-core-observation.html) allows more than one `basedOn` (0..* instead of 0..1), so an observation can point to both the order it answers and the plan that order belongs to. For example, a screening result can reference its referral and the screening program's plan ServiceRequest. Existing observations remain valid.
-
 #### Breaking changes
 
-16 of the 20 [screening and home visit codes](CodeSystem-screening-code-cs.html) have been removed in favour of SNOMED CT. [ServiceRequest procedures and investigations](ValueSet-service-request-code-vs.html) already accepted these SNOMED CT concepts through its procedure filter. Four codes stay because SNOMED CT has no suitable concept for them: `mserv-0007-00003` (cerebrovascular disease questionnaire), `mserv-0007-00011` (vaccination invitation), `mserv-0007-00012` (post-vaccination patronage) and `mserv-0007-00017` (patronage of women of reproductive age). Senders of a removed code switch to its SNOMED CT concept:
+14 of the original 20 screening/home visit service codes move to SNOMED CT for clinical coding. Four codes have no equivalent standard concept and remain: mserv-0007-00003, mserv-0007-00011, mserv-0007-00012 and mserv-0007-00017. Two additional local codes, mserv-0007-00007 and mserv-0007-00009, remain as identifiers of the distinct DMED breast/cervical programs. Their Questionnaire.code still uses SNOMED CT. The table below lists the removed clinical codes only:
 
 | Removed code | Service | SNOMED CT |
 |---|---|---|
@@ -23,9 +27,7 @@ A [SNOMED CT supplement for screening and home visits](CodeSystem-screening-sct-
 | `mserv-0007-00004` | Helminthic disease questionnaire | `171147008` Screening for intestinal helminthiasis |
 | `mserv-0007-00005` | Cardiovascular disease risk questionnaire | `300007000` Screening for cardiovascular system disease |
 | `mserv-0007-00006` | Diabetes questionnaire | `171183004` Diabetes mellitus screening |
-| `mserv-0007-00007` | Breast cancer questionnaire | `268547008` Screening for malignant neoplasm of breast |
 | `mserv-0007-00008` | Oncohematological disease questionnaire | `762445000` Screening for hematological disorder |
-| `mserv-0007-00009` | Cervical cancer screening | `171149006` Screening for malignant neoplasm of cervix |
 | `mserv-0007-00010` | Chronic diseases | `170549007` Chronic disease monitoring |
 | `mserv-0007-00013` | Home-based inpatient care | `60689008` Home care of patient |
 | `mserv-0007-00014` | Preventive medical examination | `103740001` Periodic physical examination |

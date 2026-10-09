@@ -10,3 +10,5 @@ Description: "FHIR request resource types in Uzbekistan"
 
 * include $resource-types#ImmunizationRecommendation
 * include $resource-types#MedicationRequest
+* include $resource-types#ServiceRequest
+* include $resource-types#Task

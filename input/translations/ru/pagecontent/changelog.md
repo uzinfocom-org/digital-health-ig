@@ -1,20 +1,24 @@
 ### В разработке
 
+(Пока нет изменений)
+
+### Версия 0.11.0
+
 #### Добавлено
 
-[Дополнение SNOMED CT для скрининга и патронажа](CodeSystem-screening-sct-cs.html) даёт узбекские и русские обозначения 15 концептам SNOMED CT, которыми теперь кодируются услуги скрининга и патронажа в наборе [процедур и исследований ServiceRequest](ValueSet-service-request-code-vs.html); набор перечисляет их по имени.
+Добавлен [реестр программ](ValueSet-screening-program-type-vs.html): восемь SNOMED-кодов скрининга с переводами из супплемента и все сохранённые национальные коды скрининга/патронажа. Восстановлены отдельные коды программ DMED РМЖ/РШМ; клинические коды остаются SNOMED. Цереброваскулярный код закреплён как код программы.
 
-[Категории ServiceRequest](ValueSet-service-request-categories-vs.html) включают SNOMED CT `310422005` «Prevention/screening invitation» с узбекским и русским обозначениями в [дополнении категорий](CodeSystem-sr-sct-category-cs.html). Приглашение или плановый ServiceRequest скрининговой программы передаёт его в `category`, поэтому отдельный код приглашения в `code` не нужен.
+Новый [профиль мероприятия программы](StructureDefinition-uz-core-program-activity-definition.html) требует ровно один focus; прежний ActivityDefinition сохраняет совместимость. В kind дополнительно разрешены ServiceRequest и Task, с переводами. Категория приглашения — SNOMED CT `310422005`; Observation.basedOn допускает 0..*.
+
+[Дополнение SNOMED CT для скрининга и патронажа](CodeSystem-screening-sct-cs.html) даёт узбекские и русские обозначения 15 концептам SNOMED CT, которыми теперь кодируются услуги скрининга и патронажа в наборе [процедур и исследований ServiceRequest](ValueSet-service-request-code-vs.html); набор перечисляет их по имени.
 
 #### Изменено
 
 В [UZ Core ServiceRequest](StructureDefinition-uz-core-servicerequest.html) `supportingInfo` снова может ссылаться на любой ресурс, а не только на другой ServiceRequest. `category` теперь разделён на срезы: не более одной категории берётся из [ServiceRequestCategoriesVS](ValueSet-service-request-categories-vs.html) с обязательной (required) привязкой, а рядом с ней могут указываться любые другие категории из любых кодовых систем.
 
-[UZ Core Observation](StructureDefinition-uz-core-observation.html) допускает несколько значений `basedOn` (0..* вместо 0..1): наблюдение может ссылаться и на назначение, которое оно выполняет, и на план, к которому относится это назначение. Например, результат скрининга ссылается на направление и на плановый ServiceRequest скрининговой программы. Существующие наблюдения остаются валидными.
-
 #### Несовместимые изменения
 
-16 из 20 [кодов скрининга и патронажа](CodeSystem-screening-code-cs.html) удалены в пользу SNOMED CT. Набор [процедур и исследований ServiceRequest](ValueSet-service-request-code-vs.html) уже принимал эти концепты SNOMED CT через фильтр процедур. Четыре кода остаются, так как подходящего концепта SNOMED CT для них нет: `mserv-0007-00003` (опросник цереброваскулярной патологии), `mserv-0007-00011` (призыв к вакцинации), `mserv-0007-00012` (патронаж после вакцинации) и `mserv-0007-00017` (патронаж женщин детородного возраста). Отправители удалённого кода переходят на соответствующий концепт SNOMED CT:
+14 из исходных 20 кодов услуг скрининга/патронажа заменены SNOMED CT для клинического кодирования. Без подходящего стандартного концепта сохраняются mserv-0007-00003, mserv-0007-00011, mserv-0007-00012, mserv-0007-00017. Дополнительно mserv-0007-00007 и mserv-0007-00009 сохраняются как идентификаторы отдельных программ DMED РМЖ/РШМ; Questionnaire.code остаётся SNOMED CT. В таблице ниже перечислены только удалённые клинические коды:
 
 | Удалённый код | Услуга | SNOMED CT |
 |---|---|---|
@@ -23,9 +27,7 @@
 | `mserv-0007-00004` | Опросник гельминтозных заболеваний | `171147008` Screening for intestinal helminthiasis |
 | `mserv-0007-00005` | Опросник риска сердечно-сосудистых заболеваний | `300007000` Screening for cardiovascular system disease |
 | `mserv-0007-00006` | Опросник сахарного диабета | `171183004` Diabetes mellitus screening |
-| `mserv-0007-00007` | Опросник рака молочной железы | `268547008` Screening for malignant neoplasm of breast |
 | `mserv-0007-00008` | Опросник онкогематологических заболеваний | `762445000` Screening for hematological disorder |
-| `mserv-0007-00009` | Скрининг по раку шейки матки | `171149006` Screening for malignant neoplasm of cervix |
 | `mserv-0007-00010` | Хронические заболевания | `170549007` Chronic disease monitoring |
 | `mserv-0007-00013` | Стационар на дому | `60689008` Home care of patient |
 | `mserv-0007-00014` | Профилактический осмотр | `103740001` Periodic physical examination |
