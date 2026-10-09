@@ -23,6 +23,8 @@ jobs:
     runs-on: ubuntu-latest
     env:
       JAVA_TOOL_OPTIONS: "-Xmx8g"
+      PUBLISHER_URL: https://media.githubusercontent.com/media/vadi2/ig-publisher-builds/main/publisher-3.0.0-optimised.jar
+      PUBLISHER_SHA256: 34f1bc11c5fd1a9c1d639ad5a8b11b4939073c09e8b8c99838d626c0dde796c1
 
     steps:
       - uses: actions/checkout@v7
@@ -33,6 +35,16 @@ jobs:
       - name: Install Sushi
         run: sudo npm install -g fsh-sushi
 
+      # Validate with the optimised publisher build from vadi2/ig-publisher-builds,
+      # which is much faster than the official jar; release.yml still publishes
+      # with the official one. The jar is served via Git LFS, so cache it by
+      # checksum rather than re-downloading 250 MB on every run.
+      - name: Cache IG publisher
+        uses: actions/cache@v6
+        with:
+          path: input-cache/publisher.jar
+          key: publisher-${{ env.PUBLISHER_SHA256 }}
+
       # Download the publisher directly and invoke it without the wrapper scripts:
       # _updatePublisher.sh and _genonce.sh both probe the tx.fhir.org landing page
       # and abort (or silently fall back to -tx n/a, skipping terminology validation)
@@ -40,9 +52,10 @@ jobs:
       - name: Install IG publisher
         run: |
           mkdir -p input-cache
-          curl -fL --retry 3 --max-time 300 \
-            https://github.com/HL7/fhir-ig-publisher/releases/latest/download/publisher.jar \
-            -o input-cache/publisher.jar
+          if ! echo "$PUBLISHER_SHA256  input-cache/publisher.jar" | sha256sum -c --status 2>/dev/null; then
+            curl -fL --retry 3 --max-time 300 "$PUBLISHER_URL" -o input-cache/publisher.jar
+            echo "$PUBLISHER_SHA256  input-cache/publisher.jar" | sha256sum -c
+          fi
 
       - name: Check that the IG builds successfully
         run: |
