@@ -11,40 +11,54 @@ Description: "Uzbekistan Core SupplyDelivery profile, used to record the deliver
 
 
 * identifier MS
-* identifier ^short = "Delivery or issue record identifier"
+* identifier ^slicing.discriminator.type = #value
+* identifier ^slicing.discriminator.path = "system"
+* identifier ^slicing.rules = #open
+* identifier contains delivery 0..1 MS
+* identifier[delivery].system 1..1 MS
+* identifier[delivery].system = "https://dhp.uz/fhir/core/sid/doc/uz/supply-delivery"
+
 * basedOn MS
-// it will be changed in the future, but currently it is not required because the SupplyRequest resource is not yet implemented in the Uzbekistan Core IG
-// * basedOn only Reference(UZCoreSupplyRequest)
-* basedOn only Reference(SupplyRequest)
+* basedOn only Reference(UZCoreSupplyRequest)
+
 * partOf MS
 * partOf only Reference(UZCoreSupplyDelivery or Contract)
+
 * status MS
 * status from SupplyDeliveryStatusVS (required)
+
 * patient MS
 * patient only Reference(UZCorePatient)
+
 * type MS
 * type from SupplyDeliveryTypeVS (required)
-* occurrence[x] only Period
-* occurrencePeriod MS
-* occurrencePeriod.start MS
-* occurrencePeriod.end MS
+
+* occurrence[x] MS
+
 * supplier MS
 * supplier only Reference(UZCorePractitioner or UZCorePractitionerRole or UZCoreOrganization)
+
 * receiver MS
 * receiver only Reference(UZCorePractitioner or UZCorePractitionerRole or UZCoreOrganization)
 * receiver ^short = "Receiving organization or healthcare professional"
+
+* destination MS
+* destination only Reference(UZCoreLocation)
+
 * suppliedItem MS
 * suppliedItem.quantity MS
 * suppliedItem.item[x] MS
-// BiologicallyDerivedProduct will be replaced with UZCoreBiologicallyDerivedProduct and InventoryItem after the UZCoreBiologicallyDerivedProduct and UZCoreInventoryItem profiles are implemented in the Uzbekistan Core IG
-* suppliedItem.item[x] only CodeableConcept or Reference(UZCoreMedication or Substance or Device or BiologicallyDerivedProduct or NutritionProduct or InventoryItem)
+* suppliedItem.item[x] only CodeableConcept or Reference(UZCoreMedication or Substance or Device or UZCoreBiologicallyDerivedProduct or NutritionProduct or InventoryItem)
+
 
 Instance: example-blood-product-supply-delivery
 InstanceOf: UZCoreSupplyDelivery
 Usage: #example
 Title: "Blood component delivery"
 Description: "Delivery of a red blood cell unit for a patient to the receiving hospital."
-* identifier.value = "DEL-2026-0001"
+
+* identifier[delivery].system = "https://dhp.uz/fhir/core/sid/doc/uz/supply-delivery"
+* identifier[delivery].value = "DEL-2026-0001"
 * status = #completed
 * patient = Reference(example-salim)
 * type = $supplydelivery-supplyitemtype#biologicallyderivedproduct "Biologically Derived Product"
@@ -54,6 +68,4 @@ Description: "Delivery of a red blood cell unit for a patient to the receiving h
 * receiver = Reference(tashkent-diseases-hospital)
 * destination = Reference(example-location)
 * suppliedItem.quantity = 263 'mL' "mL"
-* suppliedItem.itemCodeableConcept = $sct#431069006 "Packed red blood cells"
-//This example uses a reference to a BiologicallyDerivedProduct resource, but it will be changed in the future to use a reference to a UZCoreBiologicallyDerivedProduct resource after the UZCoreBiologicallyDerivedProduct profile is implemented in the Uzbekistan Core IG
-// * suppliedItem.itemReference = Reference(example-blood-component-product)
+* suppliedItem.itemReference = Reference(example-blood-component-product)

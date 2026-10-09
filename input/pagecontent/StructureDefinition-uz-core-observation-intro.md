@@ -12,7 +12,7 @@ This profile adds no mandatory cardinality of its own. The elements required com
 
 
 
-- an identifier, instantiates[x] (the definition followed), and basedOn (0..1 - the originating ServiceRequest, CarePlan, or MedicationRequest);
+- an identifier, instantiates[x] (the definition followed), and basedOn (0..* - the originating ServiceRequest, CarePlan, MedicationRequest, or ImmunizationRecommendation, for example a referral together with the plan it belongs to);
 - triggeredBy (the observation that triggered this one, with its reason) and partOf (a procedure, immunization, imaging study, or medication event);
 - the status (required binding) and the category (vital-signs, laboratory ...);
 - the code (preferred LOINC / SNOMED binding) and the subject (usually the patient);
