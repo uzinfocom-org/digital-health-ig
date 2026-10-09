@@ -11905,7 +11905,7 @@ Description: "Observation method (SNOMED CT) supplement with Uzbek and Russian t
 
 * #28033003
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Флюороскопическая локализация для игольчатой ​​биопсии в грудной клетке"
+  * ^designation[=].value = "Флюороскопическая локализация для игольчатой биопсии в грудной клетке"
   * ^designation[+].language = #uz
   * ^designation[=].value = "Ko‘krak qafasida igna biopsiyasi uchun rentgenoskopik lokalizatsiya"
 

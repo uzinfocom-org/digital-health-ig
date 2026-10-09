@@ -1028,13 +1028,13 @@ Description: "Observation body site supplement with Uzbek and Russian translatio
 
 * #1562001
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Пульпозное ядро ​​межпозвоночного диска третьего поясничного позвонка"
+  * ^designation[=].value = "Пульпозное ядро межпозвоночного диска третьего поясничного позвонка"
   * ^designation[+].language = #uz
   * ^designation[=].value = "Uchinchi bel umurtqasi umurtqalararo diskining pulpoz yadrosi"
 
 * #1580005
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Вентрально-латеральное ядро ​​таламуса"
+  * ^designation[=].value = "Вентрально-латеральное ядро таламуса"
   * ^designation[+].language = #uz
   * ^designation[=].value = "Talamusning ventral lateral yadrosi"
 
@@ -1124,7 +1124,7 @@ Description: "Observation body site supplement with Uzbek and Russian translatio
 
 * #1659006
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Дорсомедиальное ядро ​​таламуса"
+  * ^designation[=].value = "Дорсомедиальное ядро таламуса"
   * ^designation[+].language = #uz
   * ^designation[=].value = "Talamusning dorsomedial yadrosi"
 
@@ -1934,7 +1934,7 @@ Description: "Observation body site supplement with Uzbek and Russian translatio
 
 * #3056009
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Антеровентральное ядро ​​таламуса"
+  * ^designation[=].value = "Антеровентральное ядро таламуса"
   * ^designation[+].language = #uz
   * ^designation[=].value = "Talamusning anteroventral yadrosi"
 
@@ -2240,7 +2240,7 @@ Description: "Observation body site supplement with Uzbek and Russian translatio
 
 * #3460003
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Переднедорсальное ядро ​​таламуса"
+  * ^designation[=].value = "Переднедорсальное ядро таламуса"
   * ^designation[+].language = #uz
   * ^designation[=].value = "Talamusning anterodorsal yadrosi"
 
@@ -2306,7 +2306,7 @@ Description: "Observation body site supplement with Uzbek and Russian translatio
 
 * #3556003
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Дорсальное ядро ​​трапециевидного тела"
+  * ^designation[=].value = "Дорсальное ядро трапециевидного тела"
   * ^designation[+].language = #uz
   * ^designation[=].value = "Trapetsiyasimon tananing dorsal yadrosi"
 
@@ -2396,7 +2396,7 @@ Description: "Observation body site supplement with Uzbek and Russian translatio
 
 * #3761003
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Пульпозное ядро ​​межпозвоночного диска первого грудного позвонка"
+  * ^designation[=].value = "Пульпозное ядро межпозвоночного диска первого грудного позвонка"
   * ^designation[+].language = #uz
   * ^designation[=].value = "Birinchi ko'krak umurtqasi umurtqalararo diskining pulpoz yadrosi"
 
@@ -2780,7 +2780,7 @@ Description: "Observation body site supplement with Uzbek and Russian translatio
 
 * #4377006
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Парафасцикулярное ядро ​​таламуса"
+  * ^designation[=].value = "Парафасцикулярное ядро таламуса"
   * ^designation[+].language = #uz
   * ^designation[=].value = "Talamusning parafassikulyar yadrosi"
 
@@ -3584,7 +3584,7 @@ Description: "Observation body site supplement with Uzbek and Russian translatio
 
 * #5854009
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Глазничная пластинка решетчатой ​​кости"
+  * ^designation[=].value = "Глазничная пластинка решетчатой кости"
   * ^designation[+].language = #uz
   * ^designation[=].value = "G'alvirsimon suyakning ko'z kosasi plastinkasi"
 
@@ -3620,7 +3620,7 @@ Description: "Observation body site supplement with Uzbek and Russian translatio
 
 * #5890002
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Задние ячейки решетчатой ​​пазухи"
+  * ^designation[=].value = "Задние ячейки решетчатой пазухи"
   * ^designation[+].language = #uz
   * ^designation[=].value = "G'alvirsimon bo'shliqning orqa katakchalari"
 
@@ -4340,7 +4340,7 @@ Description: "Observation body site supplement with Uzbek and Russian translatio
 
 * #7091000
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Вентральное заднебоковое ядро ​​таламуса"
+  * ^designation[=].value = "Вентральное заднебоковое ядро таламуса"
   * ^designation[+].language = #uz
   * ^designation[=].value = "Talamusning ventral postero-lateral yadrosi"
 
@@ -4472,7 +4472,7 @@ Description: "Observation body site supplement with Uzbek and Russian translatio
 
 * #7378008
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Паравентрикулярное ядро ​​таламуса"
+  * ^designation[=].value = "Паравентрикулярное ядро таламуса"
   * ^designation[+].language = #uz
   * ^designation[=].value = "Talamusning paraventrikulyar yadrosi"
 
@@ -4514,7 +4514,7 @@ Description: "Observation body site supplement with Uzbek and Russian translatio
 
 * #7494000
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Чечевицеобразное ядро ​​мозжечка"
+  * ^designation[=].value = "Чечевицеобразное ядро мозжечка"
   * ^designation[+].language = #uz
   * ^designation[=].value = "Miyachaning yasmiqsimon yadrosi"
 
@@ -4682,7 +4682,7 @@ Description: "Observation body site supplement with Uzbek and Russian translatio
 
 * #7820009
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Латеральное заднее ядро ​​таламуса"
+  * ^designation[=].value = "Латеральное заднее ядро таламуса"
   * ^designation[+].language = #uz
   * ^designation[=].value = "Talamusning lateral orqa yadrosi"
 
@@ -4802,7 +4802,7 @@ Description: "Observation body site supplement with Uzbek and Russian translatio
 
 * #7954009
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Собственная пластинка решетчатой ​​пазухи"
+  * ^designation[=].value = "Собственная пластинка решетчатой пазухи"
   * ^designation[+].language = #uz
   * ^designation[=].value = "G'alvirsimon bo'shliqning xususiy plastinkasi"
 
