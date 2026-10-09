@@ -16,7 +16,7 @@ UZ Core PlanDefinition содержит национальный календа�
 
 - идентификатор, версию и алгоритм версионирования, человекочитаемый заголовок и статус (draft, active, retired);
 - субъекта, к которому применяется календарь (кодированное понятие или ссылку);
-- дату, издателя, контекст использования, дату утверждения и период действия;
+- дату, издателя, контекст использования (включая то, где применяется календарь - по всей стране или в отдельных регионах), дату утверждения и период действия;
 - действия, составляющие календарь, каждое с linkId, title, description и code;
 - для каждого действия: условие (соответствие - его вид и FHIRPath-выражение), связанное действие (целевое действие, отношение и смещение в виде длительности или диапазона для минимальных интервалов), сроки (возраст или расписание), участника (его идентификатор актора и тип) и определение (каноническую ссылку на ActivityDefinition или другое определение, либо uri).
 
@@ -61,6 +61,45 @@ PlanDefinition в основном создаётся один раз и счи�
 ```
 
 Допускается ровно один контекст `focus`. Используйте `33879002` для календаря вакцинации, `25179006` для календаря донации цельной крови или `360156006` для календаря скрининга. Календарь находится запросом `GET [base]/PlanDefinition?context-type-value=focus$http://snomed.info/sct|33879002`.
+
+#### Национальный или региональный
+
+Контекст использования `jurisdiction` указывает, где применяется календарь. Национальный календарь содержит одну запись с кодом страны `UZ`. Региональный календарь вместо этого содержит по одной записи на каждый регион с теми же кодами регионов, что и `Address.state` в адресе пациента, поэтому регион пациента можно напрямую сопоставить с календарями, которые в нём действуют. Календарь не может быть одновременно и тем, и другим: `UZ` нельзя сочетать с кодами регионов. Календарь скрининга, проводимого только в Самаркандской и Навоийской областях:
+
+```json
+{
+  "resourceType": "PlanDefinition",
+  "meta": {
+    "profile": ["https://dhp.uz/fhir/core/StructureDefinition/uz-core-plan-definition"]
+  },
+  "url": "https://terminology.dhp.uz/fhir/core/PlanDefinition/example-uz-core-regional-screening-plan-definition",
+  "name": "ExampleRegionalDiabetesScreeningPlanDefinition",
+  "status": "draft",
+  "description": "Example screening PlanDefinition run in Samarqand and Navoiy regions only.",
+  "useContext": [
+    {
+      "code": { "system": "http://terminology.hl7.org/CodeSystem/usage-context-type", "code": "focus" },
+      "valueCodeableConcept": {
+        "coding": [ { "system": "http://snomed.info/sct", "code": "360156006", "display": "Screening intent" } ]
+      }
+    },
+    {
+      "code": { "system": "http://terminology.hl7.org/CodeSystem/usage-context-type", "code": "jurisdiction" },
+      "valueCodeableConcept": {
+        "coding": [ { "system": "https://terminology.dhp.uz/fhir/core/CodeSystem/states-cs", "code": "1718" } ]
+      }
+    },
+    {
+      "code": { "system": "http://terminology.hl7.org/CodeSystem/usage-context-type", "code": "jurisdiction" },
+      "valueCodeableConcept": {
+        "coding": [ { "system": "https://terminology.dhp.uz/fhir/core/CodeSystem/states-cs", "code": "1712" } ]
+      }
+    }
+  ]
+}
+```
+
+Для национального календаря запись юрисдикции имеет вид `{ "system": "urn:iso:std:iso:3166", "code": "UZ" }`. Используйте этот контекст использования, а не элемент `jurisdiction`: FHIR R5 объявляет этот элемент устаревшим, а R6 переопределяет его как юрисдикцию органа, выпустившего календарь, а не место его применения. Календари, действующие в регионе, находятся запросом `GET [base]/PlanDefinition?context-type-value=jurisdiction$https://terminology.dhp.uz/fhir/core/CodeSystem/states-cs|1718`. Полный экземпляр см. в [примере регионального скрининга](PlanDefinition-example-uz-core-regional-screening-plan-definition.html).
 
 `name` - это машиночитаемое имя (без пробелов); добавьте человекочитаемый `title`, когда он у вас есть. См. [Метаданные](general-guidance.html#metadata) для полей издателя, даты и версии, которые также должен нести опубликованный календарь.
 

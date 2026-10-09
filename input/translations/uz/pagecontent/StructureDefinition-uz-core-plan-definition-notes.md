@@ -1,6 +1,6 @@
 > **Mashina tarjimasi, inson tomonidan tekshirilishi zarur.** Ushbu sahifa ingliz tilidan sun'iy intellekt yordamida avtomatik tarjima qilingan va hali muharrir tomonidan tekshirilmagan. Har qanday nomuvofiqlikda asl inglizcha versiya ustuvor hisoblanadi.
 
-### Tezkor boshlash
+### Tezkor boshlash {#quick-start}
 
 Ushbu profil uchun keng tarqalgan API o'zaro ta'sirlari. So'rovlar JWT kirish tokenini talab qiladi - [Xavfsizlik va autentifikatsiya](api-access.html#security) bo'limiga qarang. `[base]` - bu [FHIR server bazaviy URL manzili](api-access.html#endpoints); `|` token tizimini uning qiymatidan ajratadi va `%7C` ko'rinishida URL-kodlangan bo'lishi kerak. Ushbu o'zaro ta'sirlar standart FHIR R5 qidiruv parametrlaridan foydalanadi; ushbu resurs uchun yakunlanayotgani sayin [CapabilityStatement](CapabilityStatement-DHPCapabilityStatement.html) hujjatiga qarang.
 
@@ -21,9 +21,12 @@ GET [base]/PlanDefinition?name=NationalImmunizationSchedule
 GET [base]/PlanDefinition?title=National%20Immunization%20Schedule
 GET [base]/PlanDefinition?version=1.0.0
 
-# by publication date, jurisdiction, or use-context value
+# by publication date or use-context value
 GET [base]/PlanDefinition?date=ge2026-01-01
-GET [base]/PlanDefinition?jurisdiction=urn:iso:std:iso:3166%7CUZ
+
+# national schedules, or the schedules for one region (here Samarqand)
+GET [base]/PlanDefinition?context-type-value=jurisdiction$urn:iso:std:iso:3166%7CUZ
+GET [base]/PlanDefinition?context-type-value=jurisdiction$https://terminology.dhp.uz/fhir/core/CodeSystem/states-cs%7C1718
 GET [base]/PlanDefinition?context-type-value=focus$http://snomed.info/sct%7C14189004
 ```
 

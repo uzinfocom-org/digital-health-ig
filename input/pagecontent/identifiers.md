@@ -9,7 +9,7 @@ https://dhp.uz/fhir/core/sid/{namespace}/{country}/{type}[/subtype]
 ```
 
 Where:
-- `namespace`: `pid` (personal), `pro` (professional), `org` (organization), or `doc` (document)
+- `namespace`: `pid` (personal), `pro` (professional), `org` (organization), `doc` (document), or `prd` (product)
 - `country`: ISO 3166-1 two-letter country code (e.g., `uz` for Uzbekistan)
 - `type`: Identifier type (e.g., `ppn` for passport, `ni` for national ID)
 - `subtype`: Optional further classification (e.g., `local`, `intl` for passport types)
@@ -276,6 +276,12 @@ Documents are identified using the `doc` namespace. This allows tracking of clin
 
 **System URI pattern**: `https://dhp.uz/fhir/core/sid/doc/{country}/{type}`
 
+### Product identifiers
+
+Products are identified using the `prd` namespace. It is for numbers whose namespace the platform defines itself, such as the unit numbers that blood services assign to blood products. When an external registry publishes its own system URI for a product number, use that URI instead: medication identifiers, for example, use the systems of Asl Belgisi and the uzpharminfo.uz registry.
+
+**System URI pattern**: `https://dhp.uz/fhir/core/sid/prd/{country}/{type}[/subtype]`
+
 ### Complete example: patient with multiple identifiers
 
 A patient may have multiple identifiers. Here's a complete example showing proper usage:
@@ -389,4 +395,4 @@ GET [base]/Organization?identifier=https://dhp.uz/fhir/core/sid/org/uz/soliq|200
 - [UZCorePatient Profile](StructureDefinition-uz-core-patient.html)
 - [UZCorePractitioner Profile](StructureDefinition-uz-core-practitioner.html)
 - [UZCoreOrganization Profile](StructureDefinition-uz-core-organization.html)
-- [NamingSystems](artifacts.html#terminology-naming-systems)
+- [NamingSystems](artifacts.html)

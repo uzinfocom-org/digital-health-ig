@@ -16,8 +16,15 @@ Description: "Uzbekistan Core ServiceRequest profile, used to represent a reques
 * intent from RequestIntentVS
 * intent ^short = "Indicates the level of obligation and intent of the service request, specifying whether the request represents an official order to be performed."
 * category MS
-* category from ServiceRequestCategoriesVS (extensible)
 * category ^short = "The category of the service being requested, such as laboratory, imaging, or procedural care. This element provides a high-level classification of the type of service being ordered."
+* category ^slicing.discriminator.type = #value
+* category ^slicing.discriminator.path = "$this"
+* category ^slicing.rules = #open
+* category ^slicing.description = "One category from the national ServiceRequest categories; any other categories are allowed alongside it"
+* category ^slicing.ordered = false
+* category contains dhpCategory 0..1 MS
+* category[dhpCategory] from ServiceRequestCategoriesVS (required)
+* category[dhpCategory] ^short = "National category of the service being requested"
 * priority MS
 * priority from RequestPriorityVS (required)
 * priority ^short = "Indicates how quickly the ServiceRequest should be addressed with respect to other requests"
@@ -56,7 +63,6 @@ Description: "Uzbekistan Core ServiceRequest profile, used to represent a reques
 * insurance only Reference(Coverage)
 * insurance ^short = "Insurance coverage or funding source applicable to the requested service."
 * supportingInfo MS
-* supportingInfo only CodeableReference(ServiceRequest)
 * supportingInfo ^short = "Additional clinical or administrative information supporting or justifying the requested service."
 * specimen MS
 * specimen only Reference(UZCoreSpecimen)
