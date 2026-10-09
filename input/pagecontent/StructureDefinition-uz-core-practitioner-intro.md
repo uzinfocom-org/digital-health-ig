@@ -167,7 +167,7 @@ The entry also carries Tibtoifa's internal ids (`id`, `serialId`, `categoryId`, 
 |---|---|---|---|
 | `pinfl` | `42410540220011` | `Practitioner.identifier` (PINFL) | Finds the practitioner; not repeated in the qualification |
 | `serial` + `number` | `CA` + `008815` | `qualification.identifier.value` | Series followed by number, no separator: `CA008815` |
-| - | - | `qualification.identifier.system` | Always `https://dhp.uz/fhir/core/sid/doc/uz/specialist-certificate` |
+| - | - | `qualification.identifier.system` | Always `https://dhp.uz/fhir/core/sid/pro/uz/specialist-certificate` |
 | - | - | `qualification.code.coding` | Always `http://terminology.hl7.org/CodeSystem/v2-0360#CER` "Certificate" |
 | `speciality`, `category`, `medicaleRoleName` | `psixiatriya`, `Oliy toifa`, `Shifokor` | `qualification.code.text` | `{speciality}, {category}, {role}` in the resource language: `Psixiatriya, oliy toifa, shifokor` |
 | the same fields in `ru`, `kaa`, `en` | `Психиатрия, высшая категория, врач` | `translation` extension on `code.text` | One extension per language |
@@ -215,7 +215,7 @@ The qualification built from the Tibtoifa entry above:
     {
       "identifier": [
         {
-          "system": "https://dhp.uz/fhir/core/sid/doc/uz/specialist-certificate",
+          "system": "https://dhp.uz/fhir/core/sid/pro/uz/specialist-certificate",
           "value": "CA008815"
         }
       ],
