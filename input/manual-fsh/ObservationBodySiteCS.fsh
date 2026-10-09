@@ -44,49 +44,49 @@ Description: "Observation body site supplement with Uzbek and Russian translatio
 
 * #371216008
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Структура дистального межфалангового сустава второго пальца стопы (строение тела)"
+  * ^designation[=].value = "Структура дистального межфалангового сустава второго пальца стопы"
   * ^designation[+].language = #uz
   * ^designation[=].value = "Oyoq ikkinchi barmog'ining distal falangalararo bo'g'imi"
 
 * #371219001
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Структура дистального межфалангового сустава третьего пальца стопы (строение тела)"
+  * ^designation[=].value = "Структура дистального межфалангового сустава третьего пальца стопы"
   * ^designation[+].language = #uz
   * ^designation[=].value = "Oyoq uchinchi barmog'ining distal falangalararo bo'g'imi"
 
 * #371205001
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Структура дистального межфалангового сустава четвертого пальца стопы (строение тела)"
+  * ^designation[=].value = "Структура дистального межфалангового сустава четвертого пальца стопы"
   * ^designation[+].language = #uz
   * ^designation[=].value = "Oyoq to'rtinchi barmog'ining distal falangalararo bo'g'imi"
 
 * #371203008
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Структура дистального межфалангового сустава пятого пальца стопы (строение тела)"
+  * ^designation[=].value = "Структура дистального межфалангового сустава пятого пальца стопы"
   * ^designation[+].language = #uz
   * ^designation[=].value = "Oyoq beshinchi barmog'ining distal falangalararo bo'g'imi"
 
 * #371292009
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Строение проксимального межфалангового сустава второго пальца стопы (строение тела)"
+  * ^designation[=].value = "Строение проксимального межфалангового сустава второго пальца стопы"
   * ^designation[+].language = #uz
   * ^designation[=].value = "Oyoq ikkinchi barmog'ining proksimal falangalararo bo'g'imi"
 
 * #371255009
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Строение проксимального межфалангового сустава третьего пальца стопы (строение тела)"
+  * ^designation[=].value = "Строение проксимального межфалангового сустава третьего пальца стопы"
   * ^designation[+].language = #uz
   * ^designation[=].value = "Oyoq uchinchi barmog'ining proksimal falangalararo bo'g'imi"
 
 * #371288002
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Строение проксимального межфалангового сустава четвертого пальца стопы (строение тела)"
+  * ^designation[=].value = "Строение проксимального межфалангового сустава четвертого пальца стопы"
   * ^designation[+].language = #uz
   * ^designation[=].value = "Oyoq to'rtinchi barmog'ining proksimal falangalararo bo'g'imi"
 
 * #371284000
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Строение проксимального межфалангового сустава пятого пальца стопы (строение тела)"
+  * ^designation[=].value = "Строение проксимального межфалангового сустава пятого пальца стопы"
   * ^designation[+].language = #uz
   * ^designation[=].value = "Oyoq beshinchi barmog'ining proksimal falangalararo bo'g'imi"
 
@@ -248,9 +248,9 @@ Description: "Observation body site supplement with Uzbek and Russian translatio
 
 * #442083009
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Анатомическое или приобретенное строение тела (строение тела)"
+  * ^designation[=].value = "Анатомическое или приобретенное строение тела"
   * ^designation[+].language = #uz
-  * ^designation[=].value = "Anatomik yoki orttirilgan tana tuzilmasi (tana tuzilmasi)"
+  * ^designation[=].value = "Anatomik yoki orttirilgan tana tuzilmasi"
 
 * #107008
   * ^designation[0].language = #ru
@@ -1448,9 +1448,9 @@ Description: "Observation body site supplement with Uzbek and Russian translatio
 
 * #2327009
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Вся слюнная серозно-слизистая железа (строение тела)"
+  * ^designation[=].value = "Вся слюнная серозно-слизистая железа"
   * ^designation[+].language = #uz
-  * ^designation[=].value = "Butun so'lak seroz-shilliq bezi (tana tuzilmasi)"
+  * ^designation[=].value = "Butun so'lak seroz-shilliq bezi"
 
 * #2330002
   * ^designation[0].language = #ru
@@ -1874,9 +1874,9 @@ Description: "Observation body site supplement with Uzbek and Russian translatio
 
 * #2969000
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Анатомическая структура пространства (строение тела)"
+  * ^designation[=].value = "Анатомическая структура пространства"
   * ^designation[+].language = #uz
-  * ^designation[=].value = "Anatomik bo'shliq tuzilmasi (tana tuzilmasi)"
+  * ^designation[=].value = "Anatomik bo'shliq tuzilmasi"
 
 * #2986006
   * ^designation[0].language = #ru
@@ -5366,9 +5366,9 @@ Description: "Observation body site supplement with Uzbek and Russian translatio
 
 * #8894005
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Вся желудочная кардиальная железа (строение тела)"
+  * ^designation[=].value = "Вся желудочная кардиальная железа"
   * ^designation[+].language = #uz
-  * ^designation[=].value = "Butun oshqozon kardial bezi (tana tuzilmasi)"
+  * ^designation[=].value = "Butun oshqozon kardial bezi"
 
 * #8897003
   * ^designation[0].language = #ru
@@ -5546,9 +5546,9 @@ Description: "Observation body site supplement with Uzbek and Russian translatio
 
 * #9229006
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Строение поясничной вращательной мышцы (строение тела)"
+  * ^designation[=].value = "Строение поясничной вращательной мышцы"
   * ^designation[+].language = #uz
-  * ^designation[=].value = "Belning aylantiruvchi mushagi (tana tuzilmasi)"
+  * ^designation[=].value = "Belning aylantiruvchi mushagi"
 
 * #9231002
   * ^designation[0].language = #ru
@@ -5678,15 +5678,15 @@ Description: "Observation body site supplement with Uzbek and Russian translatio
 
 * #9455005
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Строение медиальной хрящевой пластинки глоточно-барабанной трубы (строение тела)"
+  * ^designation[=].value = "Строение медиальной хрящевой пластинки глоточно-барабанной трубы"
   * ^designation[+].language = #uz
-  * ^designation[=].value = "Eshitish nayining medial tog'ay plastinkasi (tana tuzilmasi)"
+  * ^designation[=].value = "Eshitish nayining medial tog'ay plastinkasi"
 
 * #9475001
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Строение амакриновой клетки сетчатки (строение тела)"
+  * ^designation[=].value = "Строение амакриновой клетки сетчатки"
   * ^designation[+].language = #uz
-  * ^designation[=].value = "To'r pardaning amakrin hujayrasi (tana tuzilmasi)"
+  * ^designation[=].value = "To'r pardaning amakrin hujayrasi"
 
 * #9481009
   * ^designation[0].language = #ru

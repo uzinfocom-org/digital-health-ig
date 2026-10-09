@@ -1391,11 +1391,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Метод реконструированного мешка (квалифицирующее значение)"
+          "value": "Метод реконструированного мешка"
         },
         {
           "language": "uz",
-          "value": "Qayta shakllantirilgan xalta usuli (saralash qiymati)"
+          "value": "Qayta shakllantirilgan xalta usuli"
         }
       ]
     },
@@ -3276,11 +3276,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Метод микроскопии (квалифицирующее значение)"
+          "value": "Метод микроскопии"
         },
         {
           "language": "uz",
-          "value": "Mikroskopiya texnikasi (saralash qiymati)"
+          "value": "Mikroskopiya texnikasi"
         }
       ]
     },
@@ -3692,11 +3692,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Отдельные удары - метод числовой оценки (квалифицирующее значение)"
+          "value": "Отдельные удары - метод числовой оценки"
         },
         {
           "language": "uz",
-          "value": "Yakka qisqarishlar – sonli baholash texnikasi (saralash qiymati)"
+          "value": "Yakka qisqarishlar – sonli baholash texnikasi"
         }
       ]
     },
@@ -3705,11 +3705,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Оптимальное значение – метод числовой оценки (квалифицирующее значение)"
+          "value": "Оптимальное значение – метод числовой оценки"
         },
         {
           "language": "uz",
-          "value": "Eng yaxshi qiymat – sonli baholash texnikasi (saralash qiymati)"
+          "value": "Eng yaxshi qiymat – sonli baholash texnikasi"
         }
       ]
     },
@@ -3718,11 +3718,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Точечный источник - метод числовой оценки (значение квалификатора)"
+          "value": "Точечный источник - метод числовой оценки"
         },
         {
           "language": "uz",
-          "value": "Nuqtaviy manba – sonli baholash texnikasi (saralash qiymati)"
+          "value": "Nuqtaviy manba – sonli baholash texnikasi"
         }
       ]
     },
@@ -3731,11 +3731,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Пик-пик - метод числовой оценки (значение квалификатора)"
+          "value": "Пик-пик - метод числовой оценки"
         },
         {
           "language": "uz",
-          "value": "Cho‘qqidan cho‘qqigacha – sonli baholash texnikasi (saralash qiymati)"
+          "value": "Cho‘qqidan cho‘qqigacha – sonli baholash texnikasi"
         }
       ]
     },
@@ -3744,11 +3744,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Представитель - числовой метод оценки (значение квалификатора)"
+          "value": "Представитель - числовой метод оценки"
         },
         {
           "language": "uz",
-          "value": "Namunaviy – sonli baholash texnikasi (saralash qiymati)"
+          "value": "Namunaviy – sonli baholash texnikasi"
         }
       ]
     },
@@ -3757,11 +3757,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Методика численной оценки среднего значения (квалифицирующее значение)"
+          "value": "Методика численной оценки среднего значения"
         },
         {
           "language": "uz",
-          "value": "O‘rtacha – sonli baholash texnikasi (saralash qiymati)"
+          "value": "O‘rtacha – sonli baholash texnikasi"
         }
       ]
     },
@@ -3770,11 +3770,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Медиана - метод числовой оценки (значение квалификатора)"
+          "value": "Медиана - метод числовой оценки"
         },
         {
           "language": "uz",
-          "value": "Mediana – sonli baholash texnikasi (saralash qiymati)"
+          "value": "Mediana – sonli baholash texnikasi"
         }
       ]
     },
@@ -3783,11 +3783,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Режим - метод числовой оценки (значение квалификатора)"
+          "value": "Режим - метод числовой оценки"
         },
         {
           "language": "uz",
-          "value": "Moda – sonli baholash texnikasi (saralash qiymati)"
+          "value": "Moda – sonli baholash texnikasi"
         }
       ]
     },
@@ -3796,11 +3796,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Рутина - методика числовой оценки (квалифицирующее значение)"
+          "value": "Рутина - методика числовой оценки"
         },
         {
           "language": "uz",
-          "value": "Odatiy – sonli baholash texnikasi (saralash qiymati)"
+          "value": "Odatiy – sonli baholash texnikasi"
         }
       ]
     },
@@ -3822,11 +3822,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Метод внутрисосудистого подтверждения (квалифицирующее значение)"
+          "value": "Метод внутрисосудистого подтверждения"
         },
         {
           "language": "uz",
-          "value": "Tomir ichida ekanini tasdiqlash usuli (saralash qiymati)"
+          "value": "Tomir ichida ekanini tasdiqlash usuli"
         }
       ]
     },
@@ -3848,11 +3848,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Техника потери сопротивления - другая жидкость (квалифицирующее значение)"
+          "value": "Техника потери сопротивления - другая жидкость"
         },
         {
           "language": "uz",
-          "value": "Qarshilik yo‘qolishi texnikasi – boshqa suyuqlik (saralash qiymati)"
+          "value": "Qarshilik yo‘qolishi texnikasi – boshqa suyuqlik"
         }
       ]
     },
@@ -3861,11 +3861,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Метод определения местоположения судна (значение квалификатора)"
+          "value": "Метод определения местоположения судна"
         },
         {
           "language": "uz",
-          "value": "Tomirni aniqlash texnikasi (saralash qiymati)"
+          "value": "Tomirni aniqlash texnikasi"
         }
       ]
     },
@@ -3874,11 +3874,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Метод потери сопротивления - как физиологический раствор, так и воздух (квалифицирующее значение)"
+          "value": "Метод потери сопротивления - как физиологический раствор, так и воздух"
         },
         {
           "language": "uz",
-          "value": "Qarshilik yo‘qolishi texnikasi – fiziologik eritma va havo (saralash qiymati)"
+          "value": "Qarshilik yo‘qolishi texnikasi – fiziologik eritma va havo"
         }
       ]
     },
@@ -3887,11 +3887,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Методика использования иглы-искателя (квалифицирующее значение)"
+          "value": "Методика использования иглы-искателя"
         },
         {
           "language": "uz",
-          "value": "Qidiruv ignasi texnikasi (saralash qiymati)"
+          "value": "Qidiruv ignasi texnikasi"
         }
       ]
     },
@@ -3913,11 +3913,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Техника «висячей капли» (квалифицирующее значение)"
+          "value": "Техника «висячей капли»"
         },
         {
           "language": "uz",
-          "value": "Osilgan tomchi texnikasi (saralash qiymati)"
+          "value": "Osilgan tomchi texnikasi"
         }
       ]
     },
@@ -3926,11 +3926,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Метод визуализации (значение квалификатора)"
+          "value": "Метод визуализации"
         },
         {
           "language": "uz",
-          "value": "Tasvir nazorati ostidagi texnika (saralash qiymati)"
+          "value": "Tasvir nazorati ostidagi texnika"
         }
       ]
     },
@@ -3939,11 +3939,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Техника размещения линий (квалифицирующее значение)"
+          "value": "Техника размещения линий"
         },
         {
           "language": "uz",
-          "value": "Kateter o‘rnatish texnikasi (saralash qiymati)"
+          "value": "Kateter o‘rnatish texnikasi"
         }
       ]
     },
@@ -3952,11 +3952,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Техника парестезии (квалифицирующее значение)"
+          "value": "Техника парестезии"
         },
         {
           "language": "uz",
-          "value": "Paresteziya texnikasi (saralash qiymati)"
+          "value": "Paresteziya texnikasi"
         }
       ]
     },
@@ -3965,11 +3965,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Трансартериальная методика (квалифицирующее значение)"
+          "value": "Трансартериальная методика"
         },
         {
           "language": "uz",
-          "value": "Transarterial texnika (saralash qiymati)"
+          "value": "Transarterial texnika"
         }
       ]
     },
@@ -3978,11 +3978,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Методика интубации (квалифицирующее значение)"
+          "value": "Методика интубации"
         },
         {
           "language": "uz",
-          "value": "Intubatsiya texnikasi (saralash qiymati)"
+          "value": "Intubatsiya texnikasi"
         }
       ]
     },
@@ -3991,11 +3991,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Техника интубации трахеи (квалифицирующее значение)"
+          "value": "Техника интубации трахеи"
         },
         {
           "language": "uz",
-          "value": "Traxeya intubatsiyasi texnikasi (saralash qiymati)"
+          "value": "Traxeya intubatsiyasi texnikasi"
         }
       ]
     },
@@ -4004,11 +4004,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Техника бронхиальной интубации (квалифицирующее значение)"
+          "value": "Техника бронхиальной интубации"
         },
         {
           "language": "uz",
-          "value": "Bronx intubatsiyasi texnikasi (saralash qiymati)"
+          "value": "Bronx intubatsiyasi texnikasi"
         }
       ]
     },
@@ -4017,11 +4017,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Мягко (значение квалификатора)"
+          "value": "Мягко"
         },
         {
           "language": "uz",
-          "value": "Ehtiyotkorlik bilan (saralash qiymati)"
+          "value": "Ehtiyotkorlik bilan"
         }
       ]
     },
@@ -4030,11 +4030,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Быстро (значение квалификатора)"
+          "value": "Быстро"
         },
         {
           "language": "uz",
-          "value": "Tez (saralash qiymati)"
+          "value": "Tez"
         }
       ]
     },
@@ -4043,11 +4043,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Щедро (значение квалификатора)"
+          "value": "Щедро"
         },
         {
           "language": "uz",
-          "value": "Mo‘l-ko‘l (saralash qiymati)"
+          "value": "Mo‘l-ko‘l"
         }
       ]
     },
@@ -4056,11 +4056,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Медленно (значение квалификатора)"
+          "value": "Медленно"
         },
         {
           "language": "uz",
-          "value": "Sekin (saralash qiymati)"
+          "value": "Sekin"
         }
       ]
     },
@@ -4069,11 +4069,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Энергично (квалифицирующее значение)"
+          "value": "Энергично"
         },
         {
           "language": "uz",
-          "value": "Kuchli (saralash qiymati)"
+          "value": "Kuchli"
         }
       ]
     },
@@ -4086,7 +4086,7 @@
         },
         {
           "language": "uz",
-          "value": "Butunligicha yutiladi (saralash qiymati)"
+          "value": "Butunligicha yutiladi"
         }
       ]
     },
@@ -4108,11 +4108,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Экстракорпоральная техника (квалифицирующее значение)"
+          "value": "Экстракорпоральная техника"
         },
         {
           "language": "uz",
-          "value": "Tanadan tashqari texnika (saralash qiymati)"
+          "value": "Tanadan tashqari texnika"
         }
       ]
     },
@@ -4121,11 +4121,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Методика гемодиализа (квалифицирующее значение)"
+          "value": "Методика гемодиализа"
         },
         {
           "language": "uz",
-          "value": "Gemodializ texnikasi (saralash qiymati)"
+          "value": "Gemodializ texnikasi"
         }
       ]
     },
@@ -4134,11 +4134,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Техника ингаляции (квалифицирующее значение)"
+          "value": "Техника ингаляции"
         },
         {
           "language": "uz",
-          "value": "Ingalyatsiya texnikasi (saralash qiymati)"
+          "value": "Ingalyatsiya texnikasi"
         }
       ]
     },
@@ -4147,11 +4147,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Метод электроосмоса (квалифицирующее значение)"
+          "value": "Метод электроосмоса"
         },
         {
           "language": "uz",
-          "value": "Elektroosmos texnikasi (saralash qiymati)"
+          "value": "Elektroosmos texnikasi"
         }
       ]
     },
@@ -4160,11 +4160,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Техника орошения (квалифицирующее значение)"
+          "value": "Техника орошения"
         },
         {
           "language": "uz",
-          "value": "Yuvish (irrigatsiya) texnikasi (saralash qiymati)"
+          "value": "Yuvish (irrigatsiya) texnikasi"
         }
       ]
     },
@@ -4173,11 +4173,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Техника окклюзионной повязки (квалифицирующее значение)"
+          "value": "Техника окклюзионной повязки"
         },
         {
           "language": "uz",
-          "value": "Okklyuziv bog‘lam texnikasi (saralash qiymati)"
+          "value": "Okklyuziv bog‘lam texnikasi"
         }
       ]
     },
@@ -4186,11 +4186,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Техника инъекции (квалифицирующее значение)"
+          "value": "Техника инъекции"
         },
         {
           "language": "uz",
-          "value": "In’eksiya texnikasi (saralash qiymati)"
+          "value": "In’eksiya texnikasi"
         }
       ]
     },
@@ -4199,11 +4199,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Методика чрескожной гастростомии (кнопочной) (квалифицирующее значение)"
+          "value": "Методика чрескожной гастростомии (кнопочной)"
         },
         {
           "language": "uz",
-          "value": "Teri orqali gastrostomiya (tugmacha) texnikasi (saralash qiymati)"
+          "value": "Teri orqali gastrostomiya (tugmacha) texnikasi"
         }
       ]
     },
@@ -4212,11 +4212,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Методика перитонеального диализа (квалифицирующее значение)"
+          "value": "Методика перитонеального диализа"
         },
         {
           "language": "uz",
-          "value": "Peritoneal dializ texnikasi (saralash qiymati)"
+          "value": "Peritoneal dializ texnikasi"
         }
       ]
     },
@@ -4225,11 +4225,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Методика инфузии (квалифицирующее значение)"
+          "value": "Методика инфузии"
         },
         {
           "language": "uz",
-          "value": "Infuziya texnikasi (saralash qiymati)"
+          "value": "Infuziya texnikasi"
         }
       ]
     },
@@ -4238,11 +4238,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Методика внутривенного нагнетания (квалифицирующее значение)"
+          "value": "Методика внутривенного нагнетания"
         },
         {
           "language": "uz",
-          "value": "Vena ichiga oqimli (bolyus) yuborish texnikasi (saralash qiymati)"
+          "value": "Vena ichiga oqimli (bolyus) yuborish texnikasi"
         }
       ]
     },
@@ -4251,11 +4251,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Методика ионофореза (квалифицирующее значение)"
+          "value": "Методика ионофореза"
         },
         {
           "language": "uz",
-          "value": "Ionoforez texnikasi (saralash qiymati)"
+          "value": "Ionoforez texnikasi"
         }
       ]
     },
@@ -4264,11 +4264,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Внутривенная техника пиггибэк (квалифицирующее значение)"
+          "value": "Внутривенная техника пиггибэк"
         },
         {
           "language": "uz",
-          "value": "Vena ichiga qo‘shimcha tizim (piggyback) texnikasi (saralash qiymati)"
+          "value": "Vena ichiga qo‘shimcha tizim (piggyback) texnikasi"
         }
       ]
     },
@@ -4277,11 +4277,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Методика гемодиафильтрации (квалифицирующее значение)"
+          "value": "Методика гемодиафильтрации"
         },
         {
           "language": "uz",
-          "value": "Gemodiafiltratsiya texnikasi (saralash qiymati)"
+          "value": "Gemodiafiltratsiya texnikasi"
         }
       ]
     },
@@ -4368,11 +4368,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Иммунологический метод (квалифицирующее значение)"
+          "value": "Иммунологический метод"
         },
         {
           "language": "uz",
-          "value": "Immunologik usul (saralash qiymati)"
+          "value": "Immunologik usul"
         }
       ]
     },
@@ -4407,11 +4407,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Формула расчета клиренса (значение квалификатора)"
+          "value": "Формула расчета клиренса"
         },
         {
           "language": "uz",
-          "value": "Klirensni hisoblash formulasi (saralash qiymati)"
+          "value": "Klirensni hisoblash formulasi"
         }
       ]
     },
@@ -4498,11 +4498,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Методика расчета (значение квалификатора)"
+          "value": "Методика расчета"
         },
         {
           "language": "uz",
-          "value": "Hisoblash texnikasi (saralash qiymati)"
+          "value": "Hisoblash texnikasi"
         }
       ]
     },
@@ -4537,11 +4537,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Концентрация (квалифицирующее значение)"
+          "value": "Концентрация"
         },
         {
           "language": "uz",
-          "value": "Konsentrlash (saralash qiymati)"
+          "value": "Konsentrlash"
         }
       ]
     },
@@ -4836,11 +4836,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Метод центрифугирования (квалифицирующее значение)"
+          "value": "Метод центрифугирования"
         },
         {
           "language": "uz",
-          "value": "Sentrifugalash texnikasi (saralash qiymati)"
+          "value": "Sentrifugalash texnikasi"
         }
       ]
     },
@@ -4940,11 +4940,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Формула Кокрофта-Голта (квалифицирующее значение)"
+          "value": "Формула Кокрофта-Голта"
         },
         {
           "language": "uz",
-          "value": "Kokroft-Golt formulasi (saralash qiymati)"
+          "value": "Kokroft-Golt formulasi"
         }
       ]
     },
@@ -4966,11 +4966,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Коагуляция с использованием смеси солевого раствора 1:1 (квалифицирующее значение)"
+          "value": "Коагуляция с использованием смеси солевого раствора 1:1"
         },
         {
           "language": "uz",
-          "value": "Fiziologik eritma bilan 1:1 aralashmada koagulyatsiya texnikasi (saralash qiymati)"
+          "value": "Fiziologik eritma bilan 1:1 aralashmada koagulyatsiya texnikasi"
         }
       ]
     },
@@ -5018,11 +5018,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Метод токсикологического скрининга (квалифицирующее значение)"
+          "value": "Метод токсикологического скрининга"
         },
         {
           "language": "uz",
-          "value": "Toksikologik skrining texnikasi (saralash qiymati)"
+          "value": "Toksikologik skrining texnikasi"
         }
       ]
     },
@@ -5031,11 +5031,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Расчет зазора относительно площади поверхности тела 1,73 кв. м (квалифицирующее значение)"
+          "value": "Расчет зазора относительно площади поверхности тела 1,73 кв. м"
         },
         {
           "language": "uz",
-          "value": "Klirensni 1,73 m² tana yuzasiga nisbatan hisoblash (saralash qiymati)"
+          "value": "Klirensni 1,73 m² tana yuzasiga nisbatan hisoblash"
         }
       ]
     },
@@ -5057,11 +5057,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Расчет клиренса относительно площади поверхности тела 1,73 квадратных метра и с поправкой на неафриканскую расу (квалификационное значение)"
+          "value": "Расчет клиренса относительно площади поверхности тела 1,73 квадратных метра и с поправкой на неафриканскую расу"
         },
         {
           "language": "uz",
-          "value": "Klirensni 1,73 m² tana yuzasiga nisbatan hisoblash, afrika bo‘lmagan irqqa tuzatilgan (saralash qiymati)"
+          "value": "Klirensni 1,73 m² tana yuzasiga nisbatan hisoblash, afrika bo‘lmagan irqqa tuzatilgan"
         }
       ]
     },
@@ -5083,11 +5083,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Подтверждающий метод (квалифицирующее значение)"
+          "value": "Подтверждающий метод"
         },
         {
           "language": "uz",
-          "value": "Tasdiqlovchi texnika (saralash qiymati)"
+          "value": "Tasdiqlovchi texnika"
         }
       ]
     },
@@ -5096,11 +5096,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Высокочувствительный метод определения эстрадиола (квалифицирующее значение)"
+          "value": "Высокочувствительный метод определения эстрадиола"
         },
         {
           "language": "uz",
-          "value": "Estradiol uchun yuqori sezuvchan usul (saralash qiymati)"
+          "value": "Estradiol uchun yuqori sezuvchan usul"
         }
       ]
     },
@@ -5187,11 +5187,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Методика окраски организмов (квалифицирующее значение)"
+          "value": "Методика окраски организмов"
         },
         {
           "language": "uz",
-          "value": "Organizmni bo‘yash texnikasi (saralash qiymati)"
+          "value": "Organizmni bo‘yash texnikasi"
         }
       ]
     },
@@ -5200,11 +5200,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Методика окрашивания (квалифицирующее значение)"
+          "value": "Методика окрашивания"
         },
         {
           "language": "uz",
-          "value": "Bo‘yash texnikasi (saralash qiymati)"
+          "value": "Bo‘yash texnikasi"
         }
       ]
     },
@@ -5213,11 +5213,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Метод числовой оценки (значение квалификатора)"
+          "value": "Метод числовой оценки"
         },
         {
           "language": "uz",
-          "value": "Sonli baholash texnikasi (saralash qiymati)"
+          "value": "Sonli baholash texnikasi"
         }
       ]
     },
@@ -5226,11 +5226,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Высокочувствительный метод определения биодоступного тестостерона (квалифицирующее значение)"
+          "value": "Высокочувствительный метод определения биодоступного тестостерона"
         },
         {
           "language": "uz",
-          "value": "Biologik faol testosteron uchun yuqori sezuvchan usul (saralash qiymati)"
+          "value": "Biologik faol testosteron uchun yuqori sezuvchan usul"
         }
       ]
     },
@@ -5239,11 +5239,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Скорректированная методика измерения (квалифицирующее значение)"
+          "value": "Скорректированная методика измерения"
         },
         {
           "language": "uz",
-          "value": "Tuzatilgan o‘lchash texnikasi (saralash qiymati)"
+          "value": "Tuzatilgan o‘lchash texnikasi"
         }
       ]
     },
@@ -5252,11 +5252,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Скорректировано для техники диабета (квалифицирующее значение)"
+          "value": "Скорректировано для техники диабета"
         },
         {
           "language": "uz",
-          "value": "Diabetga tuzatilgan texnika (saralash qiymati)"
+          "value": "Diabetga tuzatilgan texnika"
         }
       ]
     },
@@ -5265,11 +5265,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Скорректировано для техники многоплодной беременности (значение квалификатора)"
+          "value": "Скорректировано для техники многоплодной беременности"
         },
         {
           "language": "uz",
-          "value": "Ko‘p homilalikka tuzatilgan texnika (saralash qiymati)"
+          "value": "Ko‘p homilalikka tuzatilgan texnika"
         }
       ]
     },
@@ -5278,11 +5278,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Скорректировано для техники глобулина, связывающего половые гормоны (значение квалификатора)"
+          "value": "Скорректировано для техники глобулина, связывающего половые гормоны"
         },
         {
           "language": "uz",
-          "value": "Jinsiy gormonlarni bog‘lovchi globulinga tuzatilgan texnika (saralash qiymati)"
+          "value": "Jinsiy gormonlarni bog‘lovchi globulinga tuzatilgan texnika"
         }
       ]
     },
@@ -5291,11 +5291,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "С поправкой на технику веса (квалификационное значение)"
+          "value": "С поправкой на технику веса"
         },
         {
           "language": "uz",
-          "value": "Vaznga tuzatilgan texnika (saralash qiymati)"
+          "value": "Vaznga tuzatilgan texnika"
         }
       ]
     },
@@ -5304,11 +5304,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Методика, адаптированная к фактической температуре пациента (квалифицирующее значение)"
+          "value": "Методика, адаптированная к фактической температуре пациента"
         },
         {
           "language": "uz",
-          "value": "Bemorning haqiqiy harorati bo‘yicha tuzatilgan texnika (saralash qiymati)"
+          "value": "Bemorning haqiqiy harorati bo‘yicha tuzatilgan texnika"
         }
       ]
     },
@@ -5317,11 +5317,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Методика с поправкой на pH 7,4 (квалифицирующее значение)"
+          "value": "Методика с поправкой на pH 7,4"
         },
         {
           "language": "uz",
-          "value": "pH 7,4 ga tuzatilgan texnika (saralash qiymati)"
+          "value": "pH 7,4 ga tuzatilgan texnika"
         }
       ]
     },
@@ -5330,11 +5330,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "С поправкой на альбуминовую технику (квалифицирующее значение)"
+          "value": "С поправкой на альбуминовую технику"
         },
         {
           "language": "uz",
-          "value": "Albuminga tuzatilgan texnika (saralash qiymati)"
+          "value": "Albuminga tuzatilgan texnika"
         }
       ]
     },
@@ -5343,11 +5343,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "С поправкой на фоновую технику (значение квалификатора)"
+          "value": "С поправкой на фоновую технику"
         },
         {
           "language": "uz",
-          "value": "Fonga tuzatilgan texnika (saralash qiymati)"
+          "value": "Fonga tuzatilgan texnika"
         }
       ]
     },
@@ -5356,11 +5356,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Скорректировано для техники определения глюкозы (квалифицирующее значение)"
+          "value": "Скорректировано для техники определения глюкозы"
         },
         {
           "language": "uz",
-          "value": "Glyukozaga tuzatilgan texnika (saralash qiymati)"
+          "value": "Glyukozaga tuzatilgan texnika"
         }
       ]
     },
@@ -5369,11 +5369,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Скорректировано для техники общего белка (квалифицирующее значение)"
+          "value": "Скорректировано для техники общего белка"
         },
         {
           "language": "uz",
-          "value": "Umumiy oqsilga tuzatilgan texnika (saralash qiymati)"
+          "value": "Umumiy oqsilga tuzatilgan texnika"
         }
       ]
     },
@@ -5382,11 +5382,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Насыщенность скорректирована до техники 0,5 (квалифицирующее значение)"
+          "value": "Насыщенность скорректирована до техники 0,5"
         },
         {
           "language": "uz",
-          "value": "To‘yinish 0,5 ga tuzatilgan texnika (saralash qiymati)"
+          "value": "To‘yinish 0,5 ga tuzatilgan texnika"
         }
       ]
     },
@@ -5434,11 +5434,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Выделение гелия за один вдох с поправкой на гемоглобин (квалифицирующее значение)"
+          "value": "Выделение гелия за один вдох с поправкой на гемоглобин"
         },
         {
           "language": "uz",
-          "value": "Geliy bilan bir nafas natijasi gemoglobinga tuzatilgan (saralash qiymati)"
+          "value": "Geliy bilan bir nafas natijasi gemoglobinga tuzatilgan"
         }
       ]
     },
@@ -5447,11 +5447,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Автоматизированный вывод подсчета, скорректированный для ядросодержащих эритроцитов (значение квалификатора)"
+          "value": "Автоматизированный вывод подсчета, скорректированный для ядросодержащих эритроцитов"
         },
         {
           "language": "uz",
-          "value": "Avtomatlashtirilgan sanash natijasi yadroli eritrotsitlarga tuzatilgan (saralash qiymati)"
+          "value": "Avtomatlashtirilgan sanash natijasi yadroli eritrotsitlarga tuzatilgan"
         }
       ]
     },
@@ -5460,11 +5460,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Рассчитано и скорректировано по массе тела (квалифицирующее значение)"
+          "value": "Рассчитано и скорректировано по массе тела"
         },
         {
           "language": "uz",
-          "value": "Hisoblangan va tana vazniga tuzatilgan (saralash qiymati)"
+          "value": "Hisoblangan va tana vazniga tuzatilgan"
         }
       ]
     },
@@ -5473,11 +5473,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Расчетный выход, приведенный к стандарту (значение квалификатора)"
+          "value": "Расчетный выход, приведенный к стандарту"
         },
         {
           "language": "uz",
-          "value": "Hisoblangan natija standartga tuzatilgan (saralash qiymati)"
+          "value": "Hisoblangan natija standartga tuzatilgan"
         }
       ]
     },
@@ -5629,11 +5629,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Хромогенная техника (квалифицирующее значение)"
+          "value": "Хромогенная техника"
         },
         {
           "language": "uz",
-          "value": "Xromogen texnika (saralash qiymati)"
+          "value": "Xromogen texnika"
         }
       ]
     },
@@ -5876,11 +5876,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Метод агрегации тромбоцитов (квалифицирующее значение)"
+          "value": "Метод агрегации тромбоцитов"
         },
         {
           "language": "uz",
-          "value": "Trombotsitlar agregatsiyasi texnikasi (saralash qiymati)"
+          "value": "Trombotsitlar agregatsiyasi texnikasi"
         }
       ]
     },
@@ -5889,11 +5889,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Типирование бактериальных бактериофагов (значение квалификатора)"
+          "value": "Типирование бактериальных бактериофагов"
         },
         {
           "language": "uz",
-          "value": "Bakteriyalarni bakteriofag bo‘yicha tiplash (saralash qiymati)"
+          "value": "Bakteriyalarni bakteriofag bo‘yicha tiplash"
         }
       ]
     },
@@ -5902,11 +5902,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Прямой иммуноцитохимический метод (квалифицирующее значение)"
+          "value": "Прямой иммуноцитохимический метод"
         },
         {
           "language": "uz",
-          "value": "To‘g‘ri immunositokimyoviy texnika (saralash qiymati)"
+          "value": "To‘g‘ri immunositokimyoviy texnika"
         }
       ]
     },
@@ -5915,11 +5915,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Техника клинового давления (квалифицирующее значение)"
+          "value": "Техника клинового давления"
         },
         {
           "language": "uz",
-          "value": "Ponalash (wedge) bosimi texnikasi (saralash qiymati)"
+          "value": "Ponalash (wedge) bosimi texnikasi"
         }
       ]
     },
@@ -5928,11 +5928,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Методика расчета базовой дельты (значение квалификатора)"
+          "value": "Методика расчета базовой дельты"
         },
         {
           "language": "uz",
-          "value": "Asoslar deltasini hisoblash texnikasi (saralash qiymati)"
+          "value": "Asoslar deltasini hisoblash texnikasi"
         }
       ]
     },
@@ -5941,11 +5941,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Метод расчета анионной щели (значение квалификатора)"
+          "value": "Метод расчета анионной щели"
         },
         {
           "language": "uz",
-          "value": "Anion oralig‘ini hisoblash texnikasi (saralash qiymati)"
+          "value": "Anion oralig‘ini hisoblash texnikasi"
         }
       ]
     },
@@ -5954,11 +5954,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Метод расчета анионного зазора на основе ионов натрия, хлорида и бикарбоната (квалифицирующее значение)"
+          "value": "Метод расчета анионного зазора на основе ионов натрия, хлорида и бикарбоната"
         },
         {
           "language": "uz",
-          "value": "Natriy, xlorid va bikarbonat ionlari asosida anion oralig‘ini hisoblash texnikasi (saralash qiymati)"
+          "value": "Natriy, xlorid va bikarbonat ionlari asosida anion oralig‘ini hisoblash texnikasi"
         }
       ]
     },
@@ -5967,11 +5967,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Метод расчета анионного зазора на основе ионов натрия, калия, хлорида и бикарбоната (значение квалификатора)"
+          "value": "Метод расчета анионного зазора на основе ионов натрия, калия, хлорида и бикарбоната"
         },
         {
           "language": "uz",
-          "value": "Natriy, kaliy, xlorid va bikarbonat ionlari asosida anion oralig‘ini hisoblash texnikasi (saralash qiymati)"
+          "value": "Natriy, kaliy, xlorid va bikarbonat ionlari asosida anion oralig‘ini hisoblash texnikasi"
         }
       ]
     },
@@ -5980,11 +5980,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Методика расчета превышения базы (значение квалификатора)"
+          "value": "Методика расчета превышения базы"
         },
         {
           "language": "uz",
-          "value": "Asoslar ortiqchasini hisoblash texnikasi (saralash qiymati)"
+          "value": "Asoslar ortiqchasini hisoblash texnikasi"
         }
       ]
     },
@@ -5993,11 +5993,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Методика расчета дефицита базы (значение квалификатора)"
+          "value": "Методика расчета дефицита базы"
         },
         {
           "language": "uz",
-          "value": "Asoslar tanqisligini hisoblash texnikasi (saralash qiymati)"
+          "value": "Asoslar tanqisligini hisoblash texnikasi"
         }
       ]
     },
@@ -6006,11 +6006,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Метод седиментации (квалифицирующее значение)"
+          "value": "Метод седиментации"
         },
         {
           "language": "uz",
-          "value": "Cho‘ktirish (sedimentatsiya) texnikasi (saralash qiymati)"
+          "value": "Cho‘ktirish (sedimentatsiya) texnikasi"
         }
       ]
     },
@@ -6023,7 +6023,7 @@
         },
         {
           "language": "uz",
-          "value": "Zetafuga texnikasi (saralash qiymati)"
+          "value": "Zetafuga texnikasi"
         }
       ]
     },
@@ -6032,11 +6032,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Метод цитохимического окрашивания (квалифицирующее значение)"
+          "value": "Метод цитохимического окрашивания"
         },
         {
           "language": "uz",
-          "value": "Sitokimyoviy bo‘yash texnikasi (saralash qiymati)"
+          "value": "Sitokimyoviy bo‘yash texnikasi"
         }
       ]
     },
@@ -6045,11 +6045,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Обнаружение с помощью микроскопии с малым усилением поля света без классификации (значение квалификатора)"
+          "value": "Обнаружение с помощью микроскопии с малым усилением поля света без классификации"
         },
         {
           "language": "uz",
-          "value": "Kichik kattalashtirishli yorug‘lik mikroskopiyasida tasniflamasdan aniqlash (saralash qiymati)"
+          "value": "Kichik kattalashtirishli yorug‘lik mikroskopiyasida tasniflamasdan aniqlash"
         }
       ]
     },
@@ -6058,11 +6058,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Обнаружение с помощью высокоэнергетической полевой световой микроскопии без классификации (значение квалификатора)"
+          "value": "Обнаружение с помощью высокоэнергетической полевой световой микроскопии без классификации"
         },
         {
           "language": "uz",
-          "value": "Katta kattalashtirishli yorug‘lik mikroskopiyasida tasniflamasdan aniqlash (saralash qiymati)"
+          "value": "Katta kattalashtirishli yorug‘lik mikroskopiyasida tasniflamasdan aniqlash"
         }
       ]
     },
@@ -6071,11 +6071,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Метод колоночной хроматографии (квалифицирующее значение)"
+          "value": "Метод колоночной хроматографии"
         },
         {
           "language": "uz",
-          "value": "Kolonkali xromatografiya texnikasi (saralash qiymati)"
+          "value": "Kolonkali xromatografiya texnikasi"
         }
       ]
     },
@@ -6084,11 +6084,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Методика приготовления на основе жидкости (квалифицирующее значение)"
+          "value": "Методика приготовления на основе жидкости"
         },
         {
           "language": "uz",
-          "value": "Suyuq asosli preparat tayyorlash texnikasi (saralash qiymati)"
+          "value": "Suyuq asosli preparat tayyorlash texnikasi"
         }
       ]
     },
@@ -6097,11 +6097,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Метод цитологии ThinPrep (значение квалификатора)"
+          "value": "Метод цитологии ThinPrep"
         },
         {
           "language": "uz",
-          "value": "ThinPrep sitologiya texnikasi (saralash qiymati)"
+          "value": "ThinPrep sitologiya texnikasi"
         }
       ]
     },
@@ -6110,11 +6110,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Методика диализа (квалифицирующее значение)"
+          "value": "Методика диализа"
         },
         {
           "language": "uz",
-          "value": "Dializ texnikasi (saralash qiymati)"
+          "value": "Dializ texnikasi"
         }
       ]
     },
@@ -6123,11 +6123,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Методика коагуляции, индуцированной каолином (квалифицирующее значение)"
+          "value": "Методика коагуляции, индуцированной каолином"
         },
         {
           "language": "uz",
-          "value": "Kaolin bilan qo‘zg‘atilgan koagulyatsiya texnikasi (saralash qiymati)"
+          "value": "Kaolin bilan qo‘zg‘atilgan koagulyatsiya texnikasi"
         }
       ]
     },
@@ -6136,11 +6136,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Методика идентификатора последовательности (значение квалификатора)"
+          "value": "Методика идентификатора последовательности"
         },
         {
           "language": "uz",
-          "value": "Ketma-ketlik identifikatori texnikasi (saralash qiymati)"
+          "value": "Ketma-ketlik identifikatori texnikasi"
         }
       ]
     },
@@ -6149,11 +6149,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Метод иммуноферментного анализа (квалифицирующее значение)"
+          "value": "Метод иммуноферментного анализа"
         },
         {
           "language": "uz",
-          "value": "Immunotahlil texnikasi (saralash qiymati)"
+          "value": "Immunotahlil texnikasi"
         }
       ]
     },
@@ -6162,11 +6162,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Метод усиления сигнала (значение квалификатора)"
+          "value": "Метод усиления сигнала"
         },
         {
           "language": "uz",
-          "value": "Signalni kuchaytirish texnikasi (saralash qiymati)"
+          "value": "Signalni kuchaytirish texnikasi"
         }
       ]
     },
@@ -6175,11 +6175,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Генотипирование (значение квалификатора)"
+          "value": "Генотипирование"
         },
         {
           "language": "uz",
-          "value": "Genotiplash (saralash qiymati)"
+          "value": "Genotiplash"
         }
       ]
     },
@@ -6192,7 +6192,7 @@
         },
         {
           "language": "uz",
-          "value": "Radioallergosorbent test texnikasi (saralash qiymati)"
+          "value": "Radioallergosorbent test texnikasi"
         }
       ]
     },
@@ -6201,11 +6201,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Сообщается (значение квалификатора)"
+          "value": "Сообщается"
         },
         {
           "language": "uz",
-          "value": "Xabar qilingan (saralash qiymati)"
+          "value": "Xabar qilingan"
         }
       ]
     },
@@ -6214,11 +6214,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Методика пятидесятипроцентного гемолитического комплемента (квалифицирующее значение)"
+          "value": "Методика пятидесятипроцентного гемолитического комплемента"
         },
         {
           "language": "uz",
-          "value": "Komplementning 50% gemolitik faolligi texnikasi (saralash qiymati)"
+          "value": "Komplementning 50% gemolitik faolligi texnikasi"
         }
       ]
     },
@@ -6240,11 +6240,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Метод расчета среднего объема тромбоцитов (квалифицирующее значение)"
+          "value": "Метод расчета среднего объема тромбоцитов"
         },
         {
           "language": "uz",
-          "value": "Trombotsitlar o‘rtacha hajmini hisoblash texnikasi (saralash qiymati)"
+          "value": "Trombotsitlar o‘rtacha hajmini hisoblash texnikasi"
         }
       ]
     },
@@ -6253,11 +6253,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Метод расчета ширины распределения тромбоцитов (квалифицирующее значение)"
+          "value": "Метод расчета ширины распределения тромбоцитов"
         },
         {
           "language": "uz",
-          "value": "Trombotsitlar taqsimlanish kengligini hisoblash texnikasi (saralash qiymati)"
+          "value": "Trombotsitlar taqsimlanish kengligini hisoblash texnikasi"
         }
       ]
     },
@@ -6266,11 +6266,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Методика расчета среднего корпускулярного объема эритроцитов (квалифицирующее значение)"
+          "value": "Методика расчета среднего корпускулярного объема эритроцитов"
         },
         {
           "language": "uz",
-          "value": "Eritrotsitlar o‘rtacha hajmini hisoblash texnikasi (saralash qiymati)"
+          "value": "Eritrotsitlar o‘rtacha hajmini hisoblash texnikasi"
         }
       ]
     },
@@ -6279,11 +6279,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Методика расчета средней концентрации корпускулярного гемоглобина в эритроцитах (значение квалификатора)"
+          "value": "Методика расчета средней концентрации корпускулярного гемоглобина в эритроцитах"
         },
         {
           "language": "uz",
-          "value": "Eritrotsitdagi gemoglobin o‘rtacha konsentratsiyasini hisoblash texnikasi (saralash qiymati)"
+          "value": "Eritrotsitdagi gemoglobin o‘rtacha konsentratsiyasini hisoblash texnikasi"
         }
       ]
     },
@@ -6292,11 +6292,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Методика расчета среднего содержания гемоглобина в эритроцитах (значение квалификатора)"
+          "value": "Методика расчета среднего содержания гемоглобина в эритроцитах"
         },
         {
           "language": "uz",
-          "value": "Eritrotsitdagi gemoglobin o‘rtacha miqdorini hisoblash texnikasi (saralash qiymati)"
+          "value": "Eritrotsitdagi gemoglobin o‘rtacha miqdorini hisoblash texnikasi"
         }
       ]
     },
@@ -6305,11 +6305,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Методика расчета ширины распределения эритроцитов (значение квалификатора)"
+          "value": "Методика расчета ширины распределения эритроцитов"
         },
         {
           "language": "uz",
-          "value": "Eritrotsitlar taqsimlanish kengligini hisoblash texnikasi (saralash qiymati)"
+          "value": "Eritrotsitlar taqsimlanish kengligini hisoblash texnikasi"
         }
       ]
     },
@@ -6318,11 +6318,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Автоматизированная методика тест-полосок (квалифицирующее значение)"
+          "value": "Автоматизированная методика тест-полосок"
         },
         {
           "language": "uz",
-          "value": "Avtomatlashtirilgan test-poloska texnikasi (saralash qiymati)"
+          "value": "Avtomatlashtirilgan test-poloska texnikasi"
         }
       ]
     },
@@ -6357,11 +6357,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Методика расчета скорости клубочковой фильтрации (квалифицирующее значение)"
+          "value": "Методика расчета скорости клубочковой фильтрации"
         },
         {
           "language": "uz",
-          "value": "Koptokchalar filtratsiyasi tezligini hisoblash texnikasi (saralash qiymati)"
+          "value": "Koptokchalar filtratsiyasi tezligini hisoblash texnikasi"
         }
       ]
     },
@@ -6370,11 +6370,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Метод расчета дозировки свободной дезоксирибонуклеиновой кислоты, специфичной для хромосом (значение квалификатора)"
+          "value": "Метод расчета дозировки свободной дезоксирибонуклеиновой кислоты, специфичной для хромосом"
         },
         {
           "language": "uz",
-          "value": "Xromosomaga xos hujayradan tashqari DNK dozasini hisoblash texnikasi (saralash qiymati)"
+          "value": "Xromosomaga xos hujayradan tashqari DNK dozasini hisoblash texnikasi"
         }
       ]
     },
@@ -6422,11 +6422,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Методика расчета индекса свободных андрогенов (квалификаторное значение)"
+          "value": "Методика расчета индекса свободных андрогенов"
         },
         {
           "language": "uz",
-          "value": "Erkin androgen indeksini hisoblash texnikasi (saralash qiymati)"
+          "value": "Erkin androgen indeksini hisoblash texnikasi"
         }
       ]
     },
@@ -6435,11 +6435,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Метод определения фактора свертывания крови (квалифицирующее значение)"
+          "value": "Метод определения фактора свертывания крови"
         },
         {
           "language": "uz",
-          "value": "Koagulyatsiya omilini aniqlash texnikasi (saralash qiymati)"
+          "value": "Koagulyatsiya omilini aniqlash texnikasi"
         }
       ]
     },
@@ -6461,11 +6461,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Метод расчета международного нормализованного отношения (значение квалификатора)"
+          "value": "Метод расчета международного нормализованного отношения"
         },
         {
           "language": "uz",
-          "value": "Xalqaro normallashtirilgan nisbatni (XNN) hisoblash texnikasi (saralash qiymati)"
+          "value": "Xalqaro normallashtirilgan nisbatni (XNN) hisoblash texnikasi"
         }
       ]
     },
@@ -6487,11 +6487,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Метод гексагональной фазы фосфолипидов (квалифицирующее значение)"
+          "value": "Метод гексагональной фазы фосфолипидов"
         },
         {
           "language": "uz",
-          "value": "Geksagonal fazali fosfolipid texnikasi (saralash qiymati)"
+          "value": "Geksagonal fazali fosfolipid texnikasi"
         }
       ]
     },
@@ -6500,11 +6500,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Чувствительная к волчанке техника (квалифицирующее значение)"
+          "value": "Чувствительная к волчанке техника"
         },
         {
           "language": "uz",
-          "value": "Lyupusga sezgir texnika (saralash qiymati)"
+          "value": "Lyupusga sezgir texnika"
         }
       ]
     },
@@ -6565,11 +6565,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Расчет на основе общего риска населения (значение квалификатора)"
+          "value": "Расчет на основе общего риска населения"
         },
         {
           "language": "uz",
-          "value": "Umumiy aholi xavfi asosida hisoblash (saralash qiymati)"
+          "value": "Umumiy aholi xavfi asosida hisoblash"
         }
       ]
     },
@@ -6582,7 +6582,7 @@
         },
         {
           "language": "uz",
-          "value": "Onaning yoshi asosida hisoblash (saralash qiymati)"
+          "value": "Onaning yoshi asosida hisoblash"
         }
       ]
     },
@@ -6643,11 +6643,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Методика коагуляции, индуцированной адреналином (значение квалификатора)"
+          "value": "Методика коагуляции, индуцированной адреналином"
         },
         {
           "language": "uz",
-          "value": "Adrenalin bilan qo‘zg‘atilgan koagulyatsiya texnikasi (saralash qiymati)"
+          "value": "Adrenalin bilan qo‘zg‘atilgan koagulyatsiya texnikasi"
         }
       ]
     },
@@ -6656,11 +6656,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Метод процентной коррекции (квалифицирующее значение)"
+          "value": "Метод процентной коррекции"
         },
         {
           "language": "uz",
-          "value": "Foizli tuzatish texnikasi (saralash qiymati)"
+          "value": "Foizli tuzatish texnikasi"
         }
       ]
     },
@@ -6669,11 +6669,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Чувствительность к волчанке с использованием метода 1:1 объединенной нормальной плазмы (квалифицирующее значение)"
+          "value": "Чувствительность к волчанке с использованием метода 1:1 объединенной нормальной плазмы"
         },
         {
           "language": "uz",
-          "value": "Lyupusga sezgir, 1:1 umumlashtirilgan normal plazma bilan texnika (saralash qiymati)"
+          "value": "Lyupusga sezgir, 1:1 umumlashtirilgan normal plazma bilan texnika"
         }
       ]
     },
@@ -6695,11 +6695,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Метод прямой иммунофлуоресценции (квалифицирующее значение)"
+          "value": "Метод прямой иммунофлуоресценции"
         },
         {
           "language": "uz",
-          "value": "To‘g‘ri immunofluoressensiya texnikasi (saralash qiymati)"
+          "value": "To‘g‘ri immunofluoressensiya texnikasi"
         }
       ]
     },
@@ -6747,11 +6747,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Метод хромогенной гибридизации in situ (значение квалификатора)"
+          "value": "Метод хромогенной гибридизации in situ"
         },
         {
           "language": "uz",
-          "value": "Xromogen in situ gibridizatsiya texnikasi (saralash qiymati)"
+          "value": "Xromogen in situ gibridizatsiya texnikasi"
         }
       ]
     },
@@ -6773,11 +6773,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Метод окрашивания рецептора человеческого эпидермального фактора роста 2 (квалифицирующее значение)"
+          "value": "Метод окрашивания рецептора человеческого эпидермального фактора роста 2"
         },
         {
           "language": "uz",
-          "value": "Odam epidermal o‘sish omili 2-retseptori (HER2) bo‘yash usuli (saralash qiymati)"
+          "value": "Odam epidermal o‘sish omili 2-retseptori (HER2) bo‘yash usuli"
         }
       ]
     },
@@ -6803,7 +6803,7 @@
         },
         {
           "language": "uz",
-          "value": "Tayanchsiz barqaror turish vaqti texnikasi (saralash qiymati)"
+          "value": "Tayanchsiz barqaror turish vaqti texnikasi"
         }
       ]
     },
@@ -6812,11 +6812,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Метод разбавления радионуклидов (квалифицирующее значение)"
+          "value": "Метод разбавления радионуклидов"
         },
         {
           "language": "uz",
-          "value": "Radionuklid bilan suyultirish texnikasi (saralash qiymati)"
+          "value": "Radionuklid bilan suyultirish texnikasi"
         }
       ]
     },
@@ -6842,7 +6842,7 @@
         },
         {
           "language": "uz",
-          "value": "Olti metr yurish vaqti texnikasi (saralash qiymati)"
+          "value": "Olti metr yurish vaqti texnikasi"
         }
       ]
     },
@@ -6864,11 +6864,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Интравитальная микроскопия (квалифицирующее значение)"
+          "value": "Интравитальная микроскопия"
         },
         {
           "language": "uz",
-          "value": "Intravital mikroskopiya (saralash qiymati)"
+          "value": "Intravital mikroskopiya"
         }
       ]
     },
@@ -6903,11 +6903,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Самооценка (значение квалификатора)"
+          "value": "Самооценка"
         },
         {
           "language": "uz",
-          "value": "Bemorning o‘zi xabar qilgan (saralash qiymati)"
+          "value": "Bemorning o‘zi xabar qilgan"
         }
       ]
     },
@@ -6916,11 +6916,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Метод иммуноферментного анализа для быстрого обнаружения антигенов (квалифицирующее значение)"
+          "value": "Метод иммуноферментного анализа для быстрого обнаружения антигенов"
         },
         {
           "language": "uz",
-          "value": "Tezkor antigen aniqlash immunotahlil texnikasi (saralash qiymati)"
+          "value": "Tezkor antigen aniqlash immunotahlil texnikasi"
         }
       ]
     },
@@ -6942,11 +6942,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Метод фракционирования (значение квалификатора)"
+          "value": "Метод фракционирования"
         },
         {
           "language": "uz",
-          "value": "Fraksiyalash texnikasi (saralash qiymati)"
+          "value": "Fraksiyalash texnikasi"
         }
       ]
     },
@@ -6968,11 +6968,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Локальная реконструкция лоскута путем перемещения - действие (квалифицирующее значение)"
+          "value": "Локальная реконструкция лоскута путем перемещения - действие"
         },
         {
           "language": "uz",
-          "value": "Siljitish orqali mahalliy laxtak bilan rekonstruksiya – harakat (saralash qiymati)"
+          "value": "Siljitish orqali mahalliy laxtak bilan rekonstruksiya – harakat"
         }
       ]
     },
@@ -6981,11 +6981,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Локальная реконструкция лоскута методом ротационного продвижения - действие (квалифицирующее значение)"
+          "value": "Локальная реконструкция лоскута методом ротационного продвижения - действие"
         },
         {
           "language": "uz",
-          "value": "Burish-siljitish orqali mahalliy laxtak bilan rekonstruksiya – harakat (saralash qiymati)"
+          "value": "Burish-siljitish orqali mahalliy laxtak bilan rekonstruksiya – harakat"
         }
       ]
     },
@@ -7007,11 +7007,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Метод иммуноферментного анализа с флуоресценцией (квалифицирующее значение)"
+          "value": "Метод иммуноферментного анализа с флуоресценцией"
         },
         {
           "language": "uz",
-          "value": "Fluoressent immunoferment tahlil texnikasi (saralash qiymati)"
+          "value": "Fluoressent immunoferment tahlil texnikasi"
         }
       ]
     },
@@ -7033,11 +7033,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Метод рекомбинантного иммуноблоттинга (значение квалификатора)"
+          "value": "Метод рекомбинантного иммуноблоттинга"
         },
         {
           "language": "uz",
-          "value": "Rekombinant immunoblot tahlil texnikasi (saralash qiymati)"
+          "value": "Rekombinant immunoblot tahlil texnikasi"
         }
       ]
     },
@@ -7085,11 +7085,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Метод аффинной хроматографии (значение квалификатора)"
+          "value": "Метод аффинной хроматографии"
         },
         {
           "language": "uz",
-          "value": "Affin xromatografiya texnikasi (saralash qiymati)"
+          "value": "Affin xromatografiya texnikasi"
         }
       ]
     },
@@ -7098,11 +7098,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Метод электрофореза в агарозном геле (квалифицирующее значение)"
+          "value": "Метод электрофореза в агарозном геле"
         },
         {
           "language": "uz",
-          "value": "Agaroza gelida elektroforez texnikasi (saralash qiymati)"
+          "value": "Agaroza gelida elektroforez texnikasi"
         }
       ]
     },
@@ -7124,11 +7124,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Метод иммуноферментного анализа (значение квалификатора)"
+          "value": "Метод иммуноферментного анализа"
         },
         {
           "language": "uz",
-          "value": "Ferment bilan kuchaytirilgan immunotahlil texnikasi (saralash qiymati)"
+          "value": "Ferment bilan kuchaytirilgan immunotahlil texnikasi"
         }
       ]
     },
@@ -7137,11 +7137,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Метод газовой хроматографии (квалифицирующее значение)"
+          "value": "Метод газовой хроматографии"
         },
         {
           "language": "uz",
-          "value": "Gaz xromatografiyasi texnikasi (saralash qiymati)"
+          "value": "Gaz xromatografiyasi texnikasi"
         }
       ]
     },
@@ -7150,11 +7150,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Метод капиллярного электрофореза (квалифицирующее значение)"
+          "value": "Метод капиллярного электрофореза"
         },
         {
           "language": "uz",
-          "value": "Kapillyar elektroforez texnikasi (saralash qiymati)"
+          "value": "Kapillyar elektroforez texnikasi"
         }
       ]
     },
@@ -7176,11 +7176,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Метод полимеразной цепной реакции в реальном времени (значение квалификатора)"
+          "value": "Метод полимеразной цепной реакции в реальном времени"
         },
         {
           "language": "uz",
-          "value": "Real vaqtdagi polimeraza zanjir reaksiyasi texnikasi (saralash qiymati)"
+          "value": "Real vaqtdagi polimeraza zanjir reaksiyasi texnikasi"
         }
       ]
     },
@@ -7202,11 +7202,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Спектрофотометрический метод (квалифицирующее значение)"
+          "value": "Спектрофотометрический метод"
         },
         {
           "language": "uz",
-          "value": "Spektrofotometrik texnika (saralash qiymati)"
+          "value": "Spektrofotometrik texnika"
         }
       ]
     },
@@ -7215,11 +7215,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Метод фотометрии (квалифицирующее значение)"
+          "value": "Метод фотометрии"
         },
         {
           "language": "uz",
-          "value": "Fotometriya texnikasi (saralash qiymati)"
+          "value": "Fotometriya texnikasi"
         }
       ]
     },
@@ -7228,11 +7228,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Метод времяпролетной масс-спектрометрии с ионизацией лазерной десорбцией с использованием матрицы (квалифицирующее значение)"
+          "value": "Метод времяпролетной масс-спектрометрии с ионизацией лазерной десорбцией с использованием матрицы"
         },
         {
           "language": "uz",
-          "value": "Matritsa yordamidagi lazer desorbsion ionlanish uchish vaqti (MALDI-TOF) mass-spektrometriya texnikasi (saralash qiymati)"
+          "value": "Matritsa yordamidagi lazer desorbsion ionlanish uchish vaqti (MALDI-TOF) mass-spektrometriya texnikasi"
         }
       ]
     },
@@ -7241,11 +7241,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Методика иммуноферментного турбидиметрического анализа с использованием частиц (квалифицирующее значение)"
+          "value": "Методика иммуноферментного турбидиметрического анализа с использованием частиц"
         },
         {
           "language": "uz",
-          "value": "Zarrachalar bilan kuchaytirilgan turbidimetrik immunotahlil texnikasi (saralash qiymati)"
+          "value": "Zarrachalar bilan kuchaytirilgan turbidimetrik immunotahlil texnikasi"
         }
       ]
     },
@@ -7254,11 +7254,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Метод потенциометрии (квалифицирующее значение)"
+          "value": "Метод потенциометрии"
         },
         {
           "language": "uz",
-          "value": "Potensiometriya texnikasi (saralash qiymati)"
+          "value": "Potensiometriya texnikasi"
         }
       ]
     },
@@ -7410,11 +7410,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Административный перевод - действие (значение квалификатора)"
+          "value": "Административный перевод - действие"
         },
         {
           "language": "uz",
-          "value": "Ma’muriy o‘tkazish – harakat (saralash qiymati)"
+          "value": "Ma’muriy o‘tkazish – harakat"
         }
       ]
     },
@@ -9416,7 +9416,7 @@
         },
         {
           "language": "uz",
-          "value": "Lekont manevri (saralash qiymati)"
+          "value": "Lekont manevri"
         }
       ]
     },
@@ -9438,11 +9438,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Двуствольный анастомоз конец в конец - действие (квалифицирующее значение)"
+          "value": "Двуствольный анастомоз конец в конец - действие"
         },
         {
           "language": "uz",
-          "value": "Qo‘sh stvolli uchma-uch anastomoz – harakat (saralash qiymati)"
+          "value": "Qo‘sh stvolli uchma-uch anastomoz – harakat"
         }
       ]
     },
@@ -9516,11 +9516,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Анастомоз «бок в конец» по Уоллесу 1969 года — действие (квалифицирующее значение)"
+          "value": "Анастомоз «бок в конец» по Уоллесу 1969 года — действие"
         },
         {
           "language": "uz",
-          "value": "Uolles 1969 yoni-uchiga anastomoz – harakat (saralash qiymati)"
+          "value": "Uolles 1969 yoni-uchiga anastomoz – harakat"
         }
       ]
     },
@@ -9945,11 +9945,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Вставка - действие (квалификатор значения)"
+          "value": "Вставка - действие"
         },
         {
           "language": "uz",
-          "value": "O‘rnatish (kiritish) – harakat (saralash qiymati)"
+          "value": "O‘rnatish (kiritish) – harakat"
         }
       ]
     },
@@ -12181,11 +12181,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Техническое обслуживание - действие (квалификатор значения)"
+          "value": "Техническое обслуживание - действие"
         },
         {
           "language": "uz",
-          "value": "Saqlab turish – harakat (saralash qiymati)"
+          "value": "Saqlab turish – harakat"
         }
       ]
     },
@@ -12194,11 +12194,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Ультразвук в режиме B (квалифицирующее значение)"
+          "value": "Ультразвук в режиме B"
         },
         {
           "language": "uz",
-          "value": "B-rejimdagi ultratovush (saralash qiymati)"
+          "value": "B-rejimdagi ultratovush"
         }
       ]
     },
@@ -12207,11 +12207,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Томографическое изображение, простое рентгенологическое - действие (значение квалификатора)"
+          "value": "Томографическое изображение, простое рентгенологическое - действие"
         },
         {
           "language": "uz",
-          "value": "Tomografik tasvirlash, oddiy rentgenologik – harakat (saralash qiymati)"
+          "value": "Tomografik tasvirlash, oddiy rentgenologik – harakat"
         }
       ]
     },
@@ -12220,11 +12220,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Томографическое изображение - действие (значение квалификатора)"
+          "value": "Томографическое изображение - действие"
         },
         {
           "language": "uz",
-          "value": "Tomografik tasvirlash – harakat (saralash qiymati)"
+          "value": "Tomografik tasvirlash – harakat"
         }
       ]
     },
@@ -12233,11 +12233,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Ультразвук в двухмерном режиме - действие (значение квалификатора)"
+          "value": "Ультразвук в двухмерном режиме - действие"
         },
         {
           "language": "uz",
-          "value": "Ikki o‘lchamli rejimdagi ultratovush – harakat (saralash qiymati)"
+          "value": "Ikki o‘lchamli rejimdagi ultratovush – harakat"
         }
       ]
     },
@@ -12246,11 +12246,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Ультразвук в М-режиме (квалифицирующее значение)"
+          "value": "Ультразвук в М-режиме"
         },
         {
           "language": "uz",
-          "value": "M-rejimdagi ultratovush (saralash qiymati)"
+          "value": "M-rejimdagi ultratovush"
         }
       ]
     },
@@ -12259,11 +12259,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Освещение - действие (квалификатор значения)"
+          "value": "Освещение - действие"
         },
         {
           "language": "uz",
-          "value": "Yoritish – harakat (saralash qiymati)"
+          "value": "Yoritish – harakat"
         }
       ]
     },
@@ -12272,11 +12272,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Двойное рассеянное прямое освещение - действие (квалифицирующее значение)"
+          "value": "Двойное рассеянное прямое освещение - действие"
         },
         {
           "language": "uz",
-          "value": "Ikki tomonlama diffuz bevosita yoritish – harakat (saralash qiymati)"
+          "value": "Ikki tomonlama diffuz bevosita yoritish – harakat"
         }
       ]
     },
@@ -12285,11 +12285,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Прямое освещение тонким щелевым лучом - действие (квалифицирующее значение)"
+          "value": "Прямое освещение тонким щелевым лучом - действие"
         },
         {
           "language": "uz",
-          "value": "Ingichka tirqishli nur bilan bevosita yoritish – harakat (saralash qiymati)"
+          "value": "Ingichka tirqishli nur bilan bevosita yoritish – harakat"
         }
       ]
     },
@@ -12298,11 +12298,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Широкое тангенциальное прямое освещение - действие (квалифицирующее значение)"
+          "value": "Широкое тангенциальное прямое освещение - действие"
         },
         {
           "language": "uz",
-          "value": "Keng tangensial bevosita yoritish – harakat (saralash qiymati)"
+          "value": "Keng tangensial bevosita yoritish – harakat"
         }
       ]
     },
@@ -12311,11 +12311,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Непрямое склеротическое рассеянное освещение - действие (значение квалификатора)"
+          "value": "Непрямое склеротическое рассеянное освещение - действие"
         },
         {
           "language": "uz",
-          "value": "Bilvosita sklerotik sochiluvchi yoritish – harakat (saralash qiymati)"
+          "value": "Bilvosita sklerotik sochiluvchi yoritish – harakat"
         }
       ]
     },
@@ -12324,11 +12324,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Непрямое ретроиллюминирование от радужной оболочки глаза - действие (значение квалификатора)"
+          "value": "Непрямое ретроиллюминирование от радужной оболочки глаза - действие"
         },
         {
           "language": "uz",
-          "value": "Rangdor pardadan bilvosita retroyoritish – harakat (saralash qiymati)"
+          "value": "Rangdor pardadan bilvosita retroyoritish – harakat"
         }
       ]
     },
@@ -12337,11 +12337,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Непрямое ретроиллюминирование от сетчатки - действие (квалифицирующее значение)"
+          "value": "Непрямое ретроиллюминирование от сетчатки - действие"
         },
         {
           "language": "uz",
-          "value": "To‘r pardadan bilvosita retroyoritish – harakat (saralash qiymati)"
+          "value": "To‘r pardadan bilvosita retroyoritish – harakat"
         }
       ]
     },
@@ -12350,11 +12350,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Непрямое просвечивание радужной оболочки глаза - действие (значение квалификатора)"
+          "value": "Непрямое просвечивание радужной оболочки глаза - действие"
         },
         {
           "language": "uz",
-          "value": "Rangdor pardani bilvosita transilluminatsiya qilish – harakat (saralash qiymati)"
+          "value": "Rangdor pardani bilvosita transilluminatsiya qilish – harakat"
         }
       ]
     },
@@ -12363,11 +12363,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Хирургическая декомпрессия - действие (квалифицирующее значение)"
+          "value": "Хирургическая декомпрессия - действие"
         },
         {
           "language": "uz",
-          "value": "Jarrohlik dekompressiyasi – harakat (saralash qiymati)"
+          "value": "Jarrohlik dekompressiyasi – harakat"
         }
       ]
     },
@@ -12376,11 +12376,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Декомпрессионное иссечение - действие (квалифицирующее значение)"
+          "value": "Декомпрессионное иссечение - действие"
         },
         {
           "language": "uz",
-          "value": "Dekompressiv eksiziya – harakat (saralash qiymati)"
+          "value": "Dekompressiv eksiziya – harakat"
         }
       ]
     },
@@ -12389,11 +12389,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Декомпрессионный разрез - действие (квалифицирующее значение)"
+          "value": "Декомпрессионный разрез - действие"
         },
         {
           "language": "uz",
-          "value": "Dekompressiv kesma – harakat (saralash qiymati)"
+          "value": "Dekompressiv kesma – harakat"
         }
       ]
     },
@@ -12402,11 +12402,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Декомпрессивное деление - действие (значение квалификатора)"
+          "value": "Декомпрессивное деление - действие"
         },
         {
           "language": "uz",
-          "value": "Dekompressiv kesib ajratish – harakat (saralash qiymati)"
+          "value": "Dekompressiv kesib ajratish – harakat"
         }
       ]
     },
@@ -12415,11 +12415,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Снижение высоты - действие (квалификатор значения)"
+          "value": "Снижение высоты - действие"
         },
         {
           "language": "uz",
-          "value": "Ko‘tarish orqali to‘g‘rilash – harakat (saralash qiymati)"
+          "value": "Ko‘tarish orqali to‘g‘rilash – harakat"
         }
       ]
     },
@@ -12428,11 +12428,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Хирургическая редукция - действие (квалифицирующее значение)"
+          "value": "Хирургическая редукция - действие"
         },
         {
           "language": "uz",
-          "value": "Jarrohlik yo‘li bilan to‘g‘rilash – harakat (saralash qiymati)"
+          "value": "Jarrohlik yo‘li bilan to‘g‘rilash – harakat"
         }
       ]
     },
@@ -12441,11 +12441,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Ремонт расширения - действие (квалифицирующее значение)"
+          "value": "Ремонт расширения - действие"
         },
         {
           "language": "uz",
-          "value": "Kengaytirish orqali tiklash – harakat (saralash qiymati)"
+          "value": "Kengaytirish orqali tiklash – harakat"
         }
       ]
     },
@@ -12454,11 +12454,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Хирургическая трансплантация - действие (квалифицирующее значение)"
+          "value": "Хирургическая трансплантация - действие"
         },
         {
           "language": "uz",
-          "value": "Jarrohlik transplantatsiyasi – harakat (saralash qiymati)"
+          "value": "Jarrohlik transplantatsiyasi – harakat"
         }
       ]
     },
@@ -12467,11 +12467,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Проксимальное освещение - действие (квалифицирующее значение)"
+          "value": "Проксимальное освещение - действие"
         },
         {
           "language": "uz",
-          "value": "Proksimal yoritish – harakat (saralash qiymati)"
+          "value": "Proksimal yoritish – harakat"
         }
       ]
     },
@@ -12480,11 +12480,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Внутренний дренаж - действие (квалифицирующее значение)"
+          "value": "Внутренний дренаж - действие"
         },
         {
           "language": "uz",
-          "value": "Ichki drenaj – harakat (saralash qiymati)"
+          "value": "Ichki drenaj – harakat"
         }
       ]
     },
@@ -12519,11 +12519,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Обследование И/ИЛИ сбор анамнеза - действие (квалифицирующее значение)"
+          "value": "Обследование И/ИЛИ сбор анамнеза - действие"
         },
         {
           "language": "uz",
-          "value": "Tekshirish VA/YOKI anamnez yig‘ish – harakat (saralash qiymati)"
+          "value": "Tekshirish VA/YOKI anamnez yig‘ish – harakat"
         }
       ]
     },
@@ -12532,11 +12532,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Действие введения препарата (значение квалификатора)"
+          "value": "Действие введения препарата"
         },
         {
           "language": "uz",
-          "value": "Dori yuborish harakati (saralash qiymati)"
+          "value": "Dori yuborish harakati"
         }
       ]
     },
@@ -12545,11 +12545,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Шунт - действие (квалификатор значения)"
+          "value": "Шунт - действие"
         },
         {
           "language": "uz",
-          "value": "Shunt – harakat (saralash qiymati)"
+          "value": "Shunt – harakat"
         }
       ]
     },
@@ -12558,11 +12558,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Хирургическое введение - действие (квалифицирующее значение)"
+          "value": "Хирургическое введение - действие"
         },
         {
           "language": "uz",
-          "value": "Jarrohlik yo‘li bilan kiritish – harakat (saralash qiymati)"
+          "value": "Jarrohlik yo‘li bilan kiritish – harakat"
         }
       ]
     },
@@ -12571,11 +12571,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Рекомендация - действие (квалифицирующее значение)"
+          "value": "Рекомендация - действие"
         },
         {
           "language": "uz",
-          "value": "Tavsiya – harakat (saralash qiymati)"
+          "value": "Tavsiya – harakat"
         }
       ]
     },
@@ -12584,11 +12584,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Хирургическая вставка - действие (квалифицирующее значение)"
+          "value": "Хирургическая вставка - действие"
         },
         {
           "language": "uz",
-          "value": "Jarrohlik yo‘li bilan o‘rnatish – harakat (saralash qiymati)"
+          "value": "Jarrohlik yo‘li bilan o‘rnatish – harakat"
         }
       ]
     },
@@ -12597,11 +12597,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Образование - действие (квалифицирующее значение)"
+          "value": "Образование - действие"
         },
         {
           "language": "uz",
-          "value": "Ta’lim berish – harakat (saralash qiymati)"
+          "value": "Ta’lim berish – harakat"
         }
       ]
     },
@@ -12610,11 +12610,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Ультразвуковая допплерография - действие (значение квалификатора)"
+          "value": "Ультразвуковая допплерография - действие"
         },
         {
           "language": "uz",
-          "value": "Energetik Doppler ultratovush – harakat (saralash qiymati)"
+          "value": "Energetik Doppler ultratovush – harakat"
         }
       ]
     },
@@ -12623,11 +12623,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Транссекция - действие (квалификаторное значение)"
+          "value": "Транссекция - действие"
         },
         {
           "language": "uz",
-          "value": "Ko‘ndalang kesish (transeksiya) – harakat (saralash qiymati)"
+          "value": "Ko‘ndalang kesish (transeksiya) – harakat"
         }
       ]
     },
@@ -12636,11 +12636,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Закрытая редукция - действие (квалифицирующее значение)"
+          "value": "Закрытая редукция - действие"
         },
         {
           "language": "uz",
-          "value": "Yopiq repozitsiya – harakat (saralash qiymati)"
+          "value": "Yopiq repozitsiya – harakat"
         }
       ]
     },
@@ -12649,11 +12649,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Открытая редукция - действие (квалифицирующее значение)"
+          "value": "Открытая редукция - действие"
         },
         {
           "language": "uz",
-          "value": "Ochiq repozitsiya – harakat (saralash qiymati)"
+          "value": "Ochiq repozitsiya – harakat"
         }
       ]
     },
@@ -12662,11 +12662,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Ультразвук в 3D-режиме (квалифицирующее значение)"
+          "value": "Ультразвук в 3D-режиме"
         },
         {
           "language": "uz",
-          "value": "3D rejimdagi ultratovush (saralash qiymati)"
+          "value": "3D rejimdagi ultratovush"
         }
       ]
     },
@@ -12675,11 +12675,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Открытая эмболизация - действие (квалифицирующее значение)"
+          "value": "Открытая эмболизация - действие"
         },
         {
           "language": "uz",
-          "value": "Ochiq embolizatsiya – harakat (saralash qiymati)"
+          "value": "Ochiq embolizatsiya – harakat"
         }
       ]
     },
@@ -12688,11 +12688,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Диатермия - действие (квалифицирующее значение)"
+          "value": "Диатермия - действие"
         },
         {
           "language": "uz",
-          "value": "Diatermiya – harakat (saralash qiymati)"
+          "value": "Diatermiya – harakat"
         }
       ]
     },
@@ -12701,11 +12701,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Хирургический пирсинг - действие (квалифицирующее значение)"
+          "value": "Хирургический пирсинг - действие"
         },
         {
           "language": "uz",
-          "value": "Jarrohlik teshish – harakat (saralash qiymati)"
+          "value": "Jarrohlik teshish – harakat"
         }
       ]
     },
@@ -12714,11 +12714,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Хирургическая аспирация катаракты - действие (квалифицирующее значение)"
+          "value": "Хирургическая аспирация катаракты - действие"
         },
         {
           "language": "uz",
-          "value": "Kataraktani jarrohlik aspiratsiyasi – harakat (saralash qiymati)"
+          "value": "Kataraktani jarrohlik aspiratsiyasi – harakat"
         }
       ]
     },
@@ -12727,11 +12727,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Механический ремонт - действие (квалифицирующее значение)"
+          "value": "Механический ремонт - действие"
         },
         {
           "language": "uz",
-          "value": "Mexanik tiklash – harakat (saralash qiymati)"
+          "value": "Mexanik tiklash – harakat"
         }
       ]
     },
@@ -12740,11 +12740,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Закрытое ручное сокращение - действие (значение квалификатора)"
+          "value": "Закрытое ручное сокращение - действие"
         },
         {
           "language": "uz",
-          "value": "Yopiq qo‘lda repozitsiya – harakat (saralash qiymati)"
+          "value": "Yopiq qo‘lda repozitsiya – harakat"
         }
       ]
     },
@@ -12753,11 +12753,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Хирургическое уменьшение размера - действие (квалифицирующее значение)"
+          "value": "Хирургическое уменьшение размера - действие"
         },
         {
           "language": "uz",
-          "value": "Jarrohlik yo‘li bilan hajmini kichraytirish – harakat (saralash qiymati)"
+          "value": "Jarrohlik yo‘li bilan hajmini kichraytirish – harakat"
         }
       ]
     },
@@ -12766,11 +12766,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Выдача - действие (квалифицирующее значение)"
+          "value": "Выдача - действие"
         },
         {
           "language": "uz",
-          "value": "Dori berish (tarqatish) – harakat (saralash qiymati)"
+          "value": "Dori berish (tarqatish) – harakat"
         }
       ]
     },
@@ -12779,11 +12779,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Механическая конструкция - действие (квалифицирующее значение)"
+          "value": "Механическая конструкция - действие"
         },
         {
           "language": "uz",
-          "value": "Mexanik qurish – harakat (saralash qiymati)"
+          "value": "Mexanik qurish – harakat"
         }
       ]
     },
@@ -12805,11 +12805,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Иссечение и хирургическая обработка раны - действие (значение квалификатора)"
+          "value": "Иссечение и хирургическая обработка раны - действие"
         },
         {
           "language": "uz",
-          "value": "Eksiziya bilan debridman – harakat (saralash qiymati)"
+          "value": "Eksiziya bilan debridman – harakat"
         }
       ]
     },
@@ -12818,11 +12818,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Фиксация расклиниванием - действие (квалифицирующее значение)"
+          "value": "Фиксация расклиниванием - действие"
         },
         {
           "language": "uz",
-          "value": "Ponalash orqali mahkamlash – harakat (saralash qiymati)"
+          "value": "Ponalash orqali mahkamlash – harakat"
         }
       ]
     },
@@ -12831,11 +12831,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Освещенность пропускания (квалифицирующее значение)"
+          "value": "Освещенность пропускания"
         },
         {
           "language": "uz",
-          "value": "O‘tuvchi nur bilan yoritish (saralash qiymati)"
+          "value": "O‘tuvchi nur bilan yoritish"
         }
       ]
     },
@@ -12844,11 +12844,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Освещенность отражения (значение квалификатора)"
+          "value": "Освещенность отражения"
         },
         {
           "language": "uz",
-          "value": "Qaytgan nur bilan yoritish (saralash qiymati)"
+          "value": "Qaytgan nur bilan yoritish"
         }
       ]
     },
@@ -12870,11 +12870,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Освещение в светлом поле (значение квалификатора)"
+          "value": "Освещение в светлом поле"
         },
         {
           "language": "uz",
-          "value": "Yorug‘ maydonli yoritish (saralash qiymati)"
+          "value": "Yorug‘ maydonli yoritish"
         }
       ]
     },
@@ -12883,11 +12883,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Освещение темного поля (значение квалификатора)"
+          "value": "Освещение темного поля"
         },
         {
           "language": "uz",
-          "value": "Qorong‘i maydonli yoritish (saralash qiymati)"
+          "value": "Qorong‘i maydonli yoritish"
         }
       ]
     },
@@ -12896,11 +12896,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Косое освещение (значение квалификатора)"
+          "value": "Косое освещение"
         },
         {
           "language": "uz",
-          "value": "Qiya yoritish (saralash qiymati)"
+          "value": "Qiya yoritish"
         }
       ]
     },
@@ -12909,11 +12909,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Фазово-контрастное освещение (квалифицирующее значение)"
+          "value": "Фазово-контрастное освещение"
         },
         {
           "language": "uz",
-          "value": "Fazali kontrastli yoritish (saralash qiymati)"
+          "value": "Fazali kontrastli yoritish"
         }
       ]
     },
@@ -12922,11 +12922,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Дифференциальный интерференционный контраст (значение квалификатора)"
+          "value": "Дифференциальный интерференционный контраст"
         },
         {
           "language": "uz",
-          "value": "Differensial interferension kontrast (saralash qiymati)"
+          "value": "Differensial interferension kontrast"
         }
       ]
     },
@@ -13000,11 +13000,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Нехирургическая фиксация - действие (квалифицирующее значение)"
+          "value": "Нехирургическая фиксация - действие"
         },
         {
           "language": "uz",
-          "value": "Jarrohliksiz mahkamlash – harakat (saralash qiymati)"
+          "value": "Jarrohliksiz mahkamlash – harakat"
         }
       ]
     },
@@ -13013,11 +13013,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Нехирургическое восстановление - действие (квалифицирующее значение)"
+          "value": "Нехирургическое восстановление - действие"
         },
         {
           "language": "uz",
-          "value": "Jarrohliksiz tiklash – harakat (saralash qiymati)"
+          "value": "Jarrohliksiz tiklash – harakat"
         }
       ]
     },
@@ -13026,11 +13026,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Хирургическое вращение - действие (квалифицирующее значение)"
+          "value": "Хирургическое вращение - действие"
         },
         {
           "language": "uz",
-          "value": "Jarrohlik yo‘li bilan aylantirish – harakat (saralash qiymati)"
+          "value": "Jarrohlik yo‘li bilan aylantirish – harakat"
         }
       ]
     },
@@ -13052,11 +13052,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Ультразвуковая допплерография - действие (значение квалификатора)"
+          "value": "Ультразвуковая допплерография - действие"
         },
         {
           "language": "uz",
-          "value": "Doppler ultratovush tasvirlash – harakat (saralash qiymati)"
+          "value": "Doppler ultratovush tasvirlash – harakat"
         }
       ]
     },
@@ -13065,11 +13065,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Дистантная реконструкция лоскутом - действие (квалифицирующее значение)"
+          "value": "Дистантная реконструкция лоскутом - действие"
         },
         {
           "language": "uz",
-          "value": "Uzoq laxtak bilan rekonstruksiya – harakat (saralash qiymati)"
+          "value": "Uzoq laxtak bilan rekonstruksiya – harakat"
         }
       ]
     },
@@ -13104,11 +13104,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Создание закрылка - действие (квалифицирующее значение)"
+          "value": "Создание закрылка - действие"
         },
         {
           "language": "uz",
-          "value": "Laxtak hosil qilish – harakat (saralash qiymati)"
+          "value": "Laxtak hosil qilish – harakat"
         }
       ]
     },
@@ -13182,11 +13182,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Ультразвуковая визуализация сверхвысокого разрешения - действие (значение квалификатора)"
+          "value": "Ультразвуковая визуализация сверхвысокого разрешения - действие"
         },
         {
           "language": "uz",
-          "value": "O‘ta yuqori aniqlikdagi ultratovush tasvirlash – harakat (saralash qiymati)"
+          "value": "O‘ta yuqori aniqlikdagi ultratovush tasvirlash – harakat"
         }
       ]
     },
@@ -14300,11 +14300,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Серологический тест на вирус гриппа А (процедура)"
+          "value": "Серологический тест на вирус гриппа А"
         },
         {
           "language": "uz",
-          "value": "A gripp virusiga serologik test (muolaja)"
+          "value": "A gripp virusiga serologik test"
         }
       ]
     },
@@ -14612,11 +14612,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Оценка лимфоцитов, Т- и В-клеток (процедура)"
+          "value": "Оценка лимфоцитов, Т- и В-клеток"
         },
         {
           "language": "uz",
-          "value": "Limfotsitlar, T va B hujayralarni baholash (muolaja)"
+          "value": "Limfotsitlar, T va B hujayralarni baholash"
         }
       ]
     },
@@ -17381,11 +17381,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Фистулография брюшной стенки с контрастом (процедура)"
+          "value": "Фистулография брюшной стенки с контрастом"
         },
         {
           "language": "uz",
-          "value": "Kontrast bilan qorin devori fistulografiyasi (muolaja)"
+          "value": "Kontrast bilan qorin devori fistulografiyasi"
         }
       ]
     },
@@ -18733,11 +18733,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Микробная идентификация, метод идентификации Neisseria-Haemophilus с помощью карты (процедура)"
+          "value": "Микробная идентификация, метод идентификации Neisseria-Haemophilus с помощью карты"
         },
         {
           "language": "uz",
-          "value": "Mikroorganizmni identifikatsiya qilish, Neisseria-Haemophilus identifikatsiya kartasi usuli (muolaja)"
+          "value": "Mikroorganizmni identifikatsiya qilish, Neisseria-Haemophilus identifikatsiya kartasi usuli"
         }
       ]
     },
@@ -20124,11 +20124,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Измерение N-ацетилглюкозаминидазы А и В (процедура)"
+          "value": "Измерение N-ацетилглюкозаминидазы А и В"
         },
         {
           "language": "uz",
-          "value": "N-atsetilglyukozaminidaza A va B ni o‘lchash (muolaja)"
+          "value": "N-atsetilglyukozaminidaza A va B ni o‘lchash"
         }
       ]
     },
@@ -20631,7 +20631,7 @@
       "designation": [
         {
           "language": "ru",
-          "value": "C>1< анализ комплемента"
+          "value": "Анализ компонента C1 комплемента"
         },
         {
           "language": "uz",
@@ -21567,7 +21567,7 @@
       "designation": [
         {
           "language": "ru",
-          "value": "C>6< анализ комплемента"
+          "value": "Анализ компонента C6 комплемента"
         },
         {
           "language": "uz",
@@ -22308,7 +22308,7 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Анализ комплемента C>1<r"
+          "value": "Анализ компонента C1r комплемента"
         },
         {
           "language": "uz",
