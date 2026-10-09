@@ -15,3 +15,14 @@ Description: "FHIR request resource types in Uzbekistan"
   * ^designation[=].value = "Запрос на медикаменты"
   * ^designation[+].language = #uz
   * ^designation[=].value = "Dori so'rovi"
+
+* #ServiceRequest
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Запрос на медицинскую услугу"
+  * ^designation[+].language = #uz
+  * ^designation[=].value = "Tibbiy xizmat so'rovi"
+* #Task
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Задача"
+  * ^designation[+].language = #uz
+  * ^designation[=].value = "Vazifa"
