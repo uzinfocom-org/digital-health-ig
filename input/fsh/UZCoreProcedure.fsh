@@ -29,7 +29,7 @@ Description: "Uzbekistan Core Procedure Profile, used for documenting an action 
 * used MS
 
 * status from ProcedureEventStatusVS (required)
-* code from ProcedureCodeVS (required)
+* code from ProcedureCodeVS (extensible)
 * bodySite from $bodysite (required)
 * outcome from ProcedureOutcomeVS (extensible)
 

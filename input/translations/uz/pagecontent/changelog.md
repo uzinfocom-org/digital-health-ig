@@ -2,11 +2,66 @@
 
 #### Qo'shildi
 
-Kattalar uchun geriatriya uchun `organizational-specialization-cs#176.0`, "Vaqf" xayriya jamg'armasi uchun `coverage-type-cs#covtp-0001-00014` va poliklinikadan yo'llanma uchun `admit-source-local-cs#mserv-0006-00007` qo'shildi - bular 066-shaklni jonli DMED tizimi bilan solishtirilganda topilgan bo'shliqlar. [Provenance Participation Role Type](ValueSet-provenance-participation-role-type-vs.html) ro'yxati endi `attester` kodini o'z ichiga oladi.
+[Skrining va patronaj uchun SNOMED CT to'ldiruvchisi](CodeSystem-screening-sct-cs.html) endi skrining va patronaj xizmatlarini [ServiceRequest muolajalari va tekshiruvlari](ValueSet-service-request-code-vs.html) to'plamida kodlaydigan 15 ta SNOMED CT konseptiga o'zbekcha va ruscha nomlar beradi; to'plam ularni nomma-nom sanab o'tadi.
 
 #### O'zgartirildi
 
+[UZ Core ServiceRequest](StructureDefinition-uz-core-servicerequest.html) profilida `supportingInfo` yana faqat boshqa ServiceRequest emas, balki istalgan resursga havola qila oladi. `category` endi bo'laklarga ajratilgan: ko'pi bilan bitta kategoriya [ServiceRequestCategoriesVS](ValueSet-service-request-categories-vs.html) to'plamidan majburiy (required) bog'lanish bilan olinadi, uning yonida esa istalgan kod tizimidagi boshqa kategoriyalar ko'rsatilishi mumkin.
+
+#### Buzuvchi o'zgarishlar
+
+20 ta [skrining va uyga tashrif kodlari](CodeSystem-screening-code-cs.html)dan 16 tasi SNOMED CT foydasiga olib tashlandi. [ServiceRequest muolajalari va tekshiruvlari](ValueSet-service-request-code-vs.html) to'plami bu SNOMED CT konseptlarini muolajalar filtri orqali avvaldan qabul qilar edi. To'rtta kod qoladi, chunki ular uchun mos SNOMED CT konsepti yo'q: `mserv-0007-00003` (serebrovaskulyar kasalliklar so'rovnomasi), `mserv-0007-00011` (emlashga chaqiruv), `mserv-0007-00012` (emlashdan keyingi patronaj) va `mserv-0007-00017` (reproduktiv yoshdagi ayollar patronaji). Olib tashlangan kodni yuboruvchilar uning SNOMED CT konseptiga o'tadi:
+
+| Olib tashlangan kod | Xizmat | SNOMED CT |
+|---|---|---|
+| `mserv-0007-00001` | Yurak ishemik kasalligining testoldi ehtimolini baholash so'rovnomasi | `171223006` Ischemic heart disease screening |
+| `mserv-0007-00002` | Fertillik bo'yicha so'rovnoma | `408961002` Fertility care assessment |
+| `mserv-0007-00004` | Gelmintoz kasalliklari so'rovnomasi | `171147008` Screening for intestinal helminthiasis |
+| `mserv-0007-00005` | Yurak-qon tomir kasalliklari xavfi so'rovnomasi | `300007000` Screening for cardiovascular system disease |
+| `mserv-0007-00006` | Qandli diabet so'rovnomasi | `171183004` Diabetes mellitus screening |
+| `mserv-0007-00007` | Ko'krak bezi saratoni so'rovnomasi | `268547008` Screening for malignant neoplasm of breast |
+| `mserv-0007-00008` | Onkogematologik kasalliklar so'rovnomasi | `762445000` Screening for hematological disorder |
+| `mserv-0007-00009` | Bachadon bo'yni saratoni skriningi | `171149006` Screening for malignant neoplasm of cervix |
+| `mserv-0007-00010` | Surunkali kasalliklar | `170549007` Chronic disease monitoring |
+| `mserv-0007-00013` | Uy sharoitidagi statsionar xizmat | `60689008` Home care of patient |
+| `mserv-0007-00014` | Profilaktik tibbiy ko'rik | `103740001` Periodic physical examination |
+| `mserv-0007-00015` | Homilador ayollar (12-31 hafta) | `424525001` Antenatal care |
+| `mserv-0007-00016` | Tug'ruqdan keyingi patronaj (3-15-30 kun) | `133906008` Postpartum care |
+| `mserv-0007-00018` | Bolalar (3-15-30 kun) | `408987002` Newborn care assessment |
+| `mserv-0007-00019` | Bolalar (3-60 oy) | `409027005` Infant care assessment |
+| `mserv-0007-00020` | Ko'krak bezi saratoni skriningi | `268547008` Screening for malignant neoplasm of breast |
+
+Ko'krak bezi saratoni so'rovnomasi va skriningi kodlari ikkalasi ham `268547008` ga mos keladi. Eski nomlardagi hafta, kun va oy oraliqlari SNOMED CT konseptlariga kirmaydi.
+
+### Versiya 0.10.0
+
+#### Qo'shildi
+
+[ICHI](CodeSystem-who-ichi.html) to'liq qo'shildi - JSST ning Sog'liqni saqlash aralashuvlari xalqaro klassifikatsiyasi, 2026-09-17 jadvalidan 21 747 konsept - JSST ning o'z kanonik URI si `http://id.who.int/icd/release/11/ichi` ostida, [ICHI Codes](ValueSet-ichi-vs.html) ro'yxati bilan birga.
+
+Bu konseptlarning 677 tasi `inactive` va `status` `retired` deb belgilangan. Bular DMED hanuz saqlab turgan, JSST esa olib tashlagan kodlar; DMED da allaqachon mavjud yozuvlar validatsiyadan o'tishi uchun qoldirilgan. `ichi-vs` ularni o'z ichiga olmaydi: yangi yozuvlar uchun ulardan foydalanmaslik kerak.
+
+[UZ Core PlanDefinition](StructureDefinition-uz-core-plan-definition.html) endi jadval qayerda amal qilishini ko'rsatadi: `jurisdiction` use context kesimi yangi [Uzbekistan Jurisdictions](ValueSet-jurisdiction-vs.html) ro'yxatiga required bog'langan. Milliy jadval `UZ` mamlakat kodi bilan bitta yozuv tashiydi, hududiy jadval esa har bir viloyat uchun bittadan yozuv tashiydi va viloyat kodlari `Address.state` dagi kodlar bilan bir xil, shuning uchun bemorning viloyatini unga tegishli jadvallar bilan solishtirish mumkin.
+
+Sog'liqni saqlash vazirligining so'roviga ko'ra [immunizatsiya holati sabablari](ValueSet-immunization-status-reason-vs.html) ro'yxati 4 koddan 8 kodga o'sdi: `PHILISOP` (dunyoqarash sababli e'tiroz), `RELIG` (diniy e'tiqod sababli e'tiroz), `VACEFF` (vaksina samaradorligi shubhali) va `VACSAF` (vaksina xavfsizligidan xavotir) qo'shildi, shunda amalga oshmagan emlash sababini bemorning e'tirozidan aniqroq ko'rsatishi mumkin. Ularning o'zbek va rus designation lari [act reason supplement](CodeSystem-actreason-cs.html) ichida.
+
+Kattalar uchun geriatriya uchun `organizational-specialization-cs#176.0`, "Vaqf" xayriya jamg'armasi uchun `coverage-type-cs#covtp-0001-00014`, poliklinikadan yo'llanma uchun `admit-source-local-cs#mserv-0006-00007` va gematologik kasalliklarga chalingan shaxslar uchun `benefits-cs#regis0004.00024` qo'shildi - oxirgisi Prezident farmoni UP-88 bo'yicha davlat hisobidan yuqori texnologiyali ixtisoslashtirilgan yordam olish huquqi - bular 066-shaklni jonli DMED tizimi bilan solishtirilganda topilgan bo'shliqlar. [Murojaat ustuvorligi](ValueSet-encounter-priority-vs.html) ro'yxati endi `UR` (shoshilinch) va `EL` (rejali) kodlarini ham, [Provenance Participation Role Type](ValueSet-provenance-participation-role-type-vs.html) ro'yxati esa `attester` kodini o'z ichiga oladi.
+
+#### O'zgartirildi
+
+[Muolaja kodlari](ValueSet-procedure-code-vs.html) endi SNOMED CT bilan bir qatorda ICHI ni ham o'z ichiga oladi, chunki DMED operatsiyani faqat ICHI da kodlaydi, shuning uchun `Procedure.code` protsedura hisobotga qanday kod bilan tushishini ham, uning klinik ma'nosini ham tashishi mumkin - protsedura qayd etilib, hisobotga ham kiritilganda ikkalasi bitta elementda ikki coding sifatida. Bog'lanish endi required emas, balki extensible, shunda qo'llanma `Procedure.code` ni JSST olib tashlagan kodlarni ham o'z ichiga olgan milliy to'plamgacha toraytira oladi.
+
+ICHI ning kanonik URI si `beta` ni yo'qotadi: [ICHI NamingSystem](NamingSystem-who-ichi.html) `http://id.who.int/icd/release/11/beta/ichi` dan `http://id.who.int/icd/release/11/ichi` ga ko'chdi. NamingSystem `beta` li URI ni 0.9.0 va 0.9.2 da nashr etgan, shuning uchun ICHI tizimi URI sini o'sha yerdan olgan hamma narsa ko'chirilishi kerak.
+
+0.9.0 dan beri nashr etilgan SNOMED CT dan ICHI ga namuna ConceptMap o'chirildi. JSST ICHI ni CC BY-ND 3.0 IGO litsenziyasi ostida taqdim etadi va ICHI ni boshqa terminologiya bilan solishtirish uchun JSST bilan alohida yozma kelishuv talab qiladi; u bo'lmaguncha qo'llanma bunday xaritani nashr eta olmaydi.
+
 [UZ Core Provenance](StructureDefinition-uz-core-provenance.html)dagi `target` endi `Bundle`ni ham qabul qiladi, chunki butun FHIR hujjatini imzolash (066-shakl qiladigan ishi kabi) uchun ilgari to'g'ri maqsad turi mavjud emas edi.
+
+#### Hujjatlashtirish
+
+[UZ Core PlanDefinition](StructureDefinition-uz-core-plan-definition.html) sahifasida "Milliy yoki hududiy" bo'limi paydo bo'ldi: unda `jurisdiction` use context ning ikki shakli ko'rsatilgan.
+
+[UZ Core Procedure](StructureDefinition-uz-core-procedure.html) sahifasi endi `code` qabul qiladigan ikki kod tizimini nomlaydi va protsedura qayd etilib, hisobotga ham kiritilganda SNOMED CT va ICHI ni ikki coding sifatida uzatishni aytadi.
 
 ### Versiya 0.9.2
 
@@ -64,7 +119,7 @@ Yurak-qon tomir kasalliklari xavfi skriningi so'rovnomasi CvdRiskCategoryCS va C
 
 #### Hujjatlashtirish
 
-[Komponentlar](components.html) sahifasi endi Qon resurslarini boshqarish, Hamshiralik ishi va Ta'minot komponentlarini tavsiflaydi. [Yo'llanmalar](components.html#yollanmalar) bo'limi endi yo'llanma tasniflanadigan yettita o'lchamni hamda yo'llanmaning ServiceRequest i uning davlat sug'urtasi bo'yicha kelishilishini boshqaruvchi Task resurslari bilan qanday bog'lanishini yoritadi.
+[Komponentlar](components.html) sahifasi endi Qon resurslarini boshqarish, Hamshiralik ishi va Ta'minot komponentlarini tavsiflaydi. [Yo'llanmalar](components.html#referrals) bo'limi endi yo'llanma tasniflanadigan yettita o'lchamni hamda yo'llanmaning ServiceRequest i uning davlat sug'urtasi bo'yicha kelishilishini boshqaruvchi Task resurslari bilan qanday bog'lanishini yoritadi.
 
 Ish jarayoni sahifasiga ega komponentlar endi unga havola beradi, har bir ish jarayoni sahifasi esa komponentga qaytadan havola qiladi. Retseptlar bo'limi Texnik loyihasi yozilguncha [Elektron retsept va dori vositasini berish](workflow-prescription.html) jarayoniga ishora qiladi.
 
@@ -208,7 +263,7 @@ Nojo'ya hodisalar haqida xabar berish uchun [UZ Core AdverseEvent](StructureDefi
 
 O'zbekistonga xos dori identifikatorlari (markirovka ID, ro'yxatdan o'tkazish guvohnomasi, GTIN, quti agregatsiya ID, milliy mahsulot va xizmatlar tasnifi kodi) va ATC asosidagi [tasnif](ValueSet-medication-classification-vs.html) hamda [dori shakli](ValueSet-medication-doseform-vs.html) terminologiyasi bilan [UZ Core Medication](StructureDefinition-uz-core-medication.html) profili qo'shildi.
 
-[UZ Core Procedure](StructureDefinition-uz-core-procedure.html) profili qo'shildi, [protsedura holati](ValueSet-procedure-event-status-vs.html), SNOMED CT asosidagi [protsedura kodlari](ValueSet-procedure-code-vs.html) va [natija](ValueSet-procedure-outcome-vs.html) terminologiyasi bilan birga, shuningdek qoplama hisobotlari uchun namuna sifatida [SNOMED CT dan ICHI ga](ConceptMap-snomed-to-ichi-procedures.html) ConceptMap bilan.
+[UZ Core Procedure](StructureDefinition-uz-core-procedure.html) profili qo'shildi, [protsedura holati](ValueSet-procedure-event-status-vs.html), SNOMED CT asosidagi [protsedura kodlari](ValueSet-procedure-code-vs.html) va [natija](ValueSet-procedure-outcome-vs.html) terminologiyasi bilan birga, shuningdek qoplama hisobotlari uchun namuna sifatida SNOMED CT dan ICHI ga ConceptMap bilan.
 
 [Laboratoriya usuli kodlari](CodeSystem-lab-methods-cs.html) qo'shildi, laboratoriya [panel va analit kodlari](ConceptMap-lab-pan-codes-to-loinc.html) ni LOINC ga va [usul kodlari](ConceptMap-lab-methods-to-loinc.html) ni SNOMED CT ga moslashtiruvchi ConceptMaplar bilan. Usul kodlari [laboratoriya usullari qiymatlar to'plami](ValueSet-lab-method-vs.html) sifatida taqdim etilgan va [UZ Core Observation](StructureDefinition-uz-core-observation.html) profilining `method` elementiga bog'langan.
 
