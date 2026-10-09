@@ -480,26 +480,13 @@ Instance: andijan-station
 InstanceOf: UZCoreOrganization
 Usage: #example
 Title: "Andijan blood station"
-Description: "Illustrative blood station supplying blood products and managing their storage location."
+Description: "Illustrative blood station supplying blood products."
 * language = #en
 * active = true
 * type.coding[subordinationGroup] = organizational-subordination-group-cs#I_2 "In territorial administration"
 * type.coding[nomenclatureGroup] = nomenclature-group-cs#II_700 "Blood transfusion center"
 * type.coding[organizationalServiceGroup] = organizational-service-group-cs#III_600 "Others"
 * name = "Andijan Blood Transfusion Station"
-
-
-Instance: cold-storage-shelf-3
-InstanceOf: UZCoreLocation
-Usage: #example
-Title: "Blood product cold storage shelf 3"
-Description: "Illustrative cold storage shelf at the Andijan blood station, referenced by the blood product inventory example."
-* language = #en
-* status = #active
-* mode = #instance
-* name = "Cold storage, shelf 3"
-* description = "Shelf 3 in the blood station's refrigerated blood product storage area."
-* managingOrganization = Reference(andijan-station)
 
 
 Instance: tashkent-hospital
