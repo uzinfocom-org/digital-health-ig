@@ -1,6 +1,12 @@
-### In development
+### Version 0.11.0
 
 #### Added
+
+Added [UZ Core BiologicallyDerivedProduct](StructureDefinition-uz-core-biologically-derived-product.html) for a unit of blood or a blood component in [Blood Management](components.html#blood-management). A unit carries the [unit number](NamingSystem-uzb-blood-unit-number.html) its blood service assigned and, in `biologicalSourceEvent`, the [number of the donation](NamingSystem-uzb-blood-donation-number.html) it came from, which every component processed from that donation keeps. A processed or pooled component references its source units in `parent`, and `property` slices record the ABO group, RhD type, volume and hematocrit. It comes with SNOMED CT [blood product type](ValueSet-blood-product-type-snomed-vs.html), [blood group](ValueSet-blood-group-vs.html) and [RhD type](ValueSet-blood-rh-vs.html) value sets and [product category](ValueSet-product-category-vs.html) and [product status](ValueSet-product-status-vs.html) value sets, all with Uzbek and Russian designations.
+
+Added [UZ Core SupplyRequest](StructureDefinition-uz-core-supply-request.html) for a request for supplies, such as a hospital ordering blood components from the blood service. It carries the hospital's [request number](NamingSystem-uzb-supply-request-number.html) and the [supply agreement number](NamingSystem-uzb-supply-contract-number.html) as identifiers, and a national [request type](ValueSet-request-type-vs.html) in `category`: stock replenishment, named (for a patient) or between institutions. `item` is bound (extensible) to the blood product types, `parameter` slices carry the blood group and RhD type the components must have, and `deliverFor` names the patient a named request is for. Its [status](ValueSet-supply-request-status-vs.html) value set has Uzbek and Russian designations.
+
+Added [UZ Core SupplyDelivery](StructureDefinition-uz-core-supply-delivery.html) for a delivery made against a SupplyRequest, such as the blood service issuing a blood component to a hospital. It records the supplier's [delivery number](NamingSystem-uzb-supply-delivery-number.html), the supplier, receiver and destination, and the item delivered, which can reference a UZ Core BiologicallyDerivedProduct. Its [status](ValueSet-supply-delivery-status-vs.html) and [type](ValueSet-supply-delivery-type-vs.html) value sets have Uzbek and Russian designations.
 
 A [SNOMED CT supplement for screening and home visits](CodeSystem-screening-sct-cs.html) gives Uzbek and Russian designations to the 15 SNOMED CT concepts that now code screening and patronage services in [ServiceRequest procedures and investigations](ValueSet-service-request-code-vs.html), which lists them by name.
 
@@ -8,9 +14,11 @@ A [SNOMED CT supplement for screening and home visits](CodeSystem-screening-sct-
 
 #### Changed
 
-[UZ Core ServiceRequest](StructureDefinition-uz-core-servicerequest.html) `supportingInfo` can reference any resource again, rather than only another ServiceRequest. `category` is now sliced: at most one category comes from [ServiceRequestCategoriesVS](ValueSet-service-request-categories-vs.html), with a required binding, and any other categories can sit alongside it from any code system.
+[UZ Core ServiceRequest](StructureDefinition-uz-core-servicerequest.html) `supportingInfo` can reference any resource, rather than only another ServiceRequest. `category` is now sliced: at most one category comes from [ServiceRequestCategoriesVS](ValueSet-service-request-categories-vs.html), with a required binding, and any other categories can sit alongside it from any code system.
 
 [UZ Core Observation](StructureDefinition-uz-core-observation.html) allows more than one `basedOn` (0..* instead of 0..1), so an observation can point to both the order it answers and the plan that order belongs to. For example, a screening result can reference its referral and the screening program's plan ServiceRequest. Existing observations remain valid.
+
+`suspectEntity.instance` on [UZ Core AdverseEvent](StructureDefinition-uz-core-adverse-event.html) now references [UZ Core BiologicallyDerivedProduct](StructureDefinition-uz-core-biologically-derived-product.html) rather than any BiologicallyDerivedProduct.
 
 #### Breaking changes
 
@@ -40,6 +48,10 @@ The breast cancer questionnaire and breast cancer screening codes both map to `2
 #### Documentation
 
 The [identifiers](identifiers.html) page adds a `prd` namespace for product identifiers, such as blood unit numbers, for numbers that no external registry already publishes a system for.
+
+The [FHIR basics](fhir-basics.html) page no longer says applications must exchange local codes only. DHP uses a code from an international standard such as ICD-10, SNOMED CT or LOINC wherever one fits, and defines a local code only for a concept no standard covers, with ConceptMaps from those local codes to international terminologies.
+
+A new [translation information](translationinfo.html) page explains that the Russian and Uzbek versions are machine translations that editors are reviewing, that the English text takes precedence where they differ, and how to report a translation problem.
 
 ### Version 0.10.0
 

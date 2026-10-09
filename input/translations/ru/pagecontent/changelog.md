@@ -1,6 +1,12 @@
-### В разработке
+### Версия 0.11.0
 
 #### Добавлено
+
+Добавлен [UZ Core BiologicallyDerivedProduct](StructureDefinition-uz-core-biologically-derived-product.html) для единицы крови или компонента крови в [управлении кровью](components.html#blood-management). Единица несёт [номер единицы](NamingSystem-uzb-blood-unit-number.html), присвоенный службой крови, а в `biologicalSourceEvent` - [номер донации](NamingSystem-uzb-blood-donation-number.html), из которой она получена; этот номер сохраняют все компоненты, полученные из той же донации. Переработанный или пулированный компонент ссылается на исходные единицы в `parent`, а срезы `property` фиксируют группу крови ABO, резус-принадлежность RhD, объём и гематокрит. Вместе с ним добавлены наборы значений SNOMED CT для [типа продукта крови](ValueSet-blood-product-type-snomed-vs.html), [группы крови](ValueSet-blood-group-vs.html) и [типа RhD](ValueSet-blood-rh-vs.html), а также наборы [категории продукта](ValueSet-product-category-vs.html) и [статуса продукта](ValueSet-product-status-vs.html), все с узбекскими и русскими обозначениями.
+
+Добавлен [UZ Core SupplyRequest](StructureDefinition-uz-core-supply-request.html) для заявки на поставку, например заявки больницы на компоненты крови в службу крови. Он несёт [номер заявки](NamingSystem-uzb-supply-request-number.html) больницы и [номер договора поставки](NamingSystem-uzb-supply-contract-number.html) как идентификаторы, а в `category` - национальный [тип заявки](ValueSet-request-type-vs.html): пополнение запаса, именная (для пациента) или между учреждениями. `item` привязан (extensible) к типам продуктов крови, срезы `parameter` передают группу крови и тип RhD, которым должны соответствовать компоненты, а `deliverFor` указывает пациента, для которого предназначена именная заявка. Набор значений [статуса](ValueSet-supply-request-status-vs.html) имеет узбекские и русские обозначения.
+
+Добавлен [UZ Core SupplyDelivery](StructureDefinition-uz-core-supply-delivery.html) для поставки по SupplyRequest, например выдачи компонента крови службой крови в больницу. Он фиксирует [номер поставки](NamingSystem-uzb-supply-delivery-number.html) поставщика, поставщика, получателя и место назначения, а также поставленный предмет, который может ссылаться на UZ Core BiologicallyDerivedProduct. Наборы значений [статуса](ValueSet-supply-delivery-status-vs.html) и [типа](ValueSet-supply-delivery-type-vs.html) имеют узбекские и русские обозначения.
 
 [Дополнение SNOMED CT для скрининга и патронажа](CodeSystem-screening-sct-cs.html) даёт узбекские и русские обозначения 15 концептам SNOMED CT, которыми теперь кодируются услуги скрининга и патронажа в наборе [процедур и исследований ServiceRequest](ValueSet-service-request-code-vs.html); набор перечисляет их по имени.
 
@@ -8,9 +14,11 @@
 
 #### Изменено
 
-В [UZ Core ServiceRequest](StructureDefinition-uz-core-servicerequest.html) `supportingInfo` снова может ссылаться на любой ресурс, а не только на другой ServiceRequest. `category` теперь разделён на срезы: не более одной категории берётся из [ServiceRequestCategoriesVS](ValueSet-service-request-categories-vs.html) с обязательной (required) привязкой, а рядом с ней могут указываться любые другие категории из любых кодовых систем.
+В [UZ Core ServiceRequest](StructureDefinition-uz-core-servicerequest.html) `supportingInfo` может ссылаться на любой ресурс, а не только на другой ServiceRequest. `category` теперь разделён на срезы: не более одной категории берётся из [ServiceRequestCategoriesVS](ValueSet-service-request-categories-vs.html) с обязательной (required) привязкой, а рядом с ней могут указываться любые другие категории из любых кодовых систем.
 
 [UZ Core Observation](StructureDefinition-uz-core-observation.html) допускает несколько значений `basedOn` (0..* вместо 0..1): наблюдение может ссылаться и на назначение, которое оно выполняет, и на план, к которому относится это назначение. Например, результат скрининга ссылается на направление и на плановый ServiceRequest скрининговой программы. Существующие наблюдения остаются валидными.
+
+`suspectEntity.instance` в [UZ Core AdverseEvent](StructureDefinition-uz-core-adverse-event.html) теперь ссылается на [UZ Core BiologicallyDerivedProduct](StructureDefinition-uz-core-biologically-derived-product.html), а не на любой BiologicallyDerivedProduct.
 
 #### Несовместимые изменения
 
@@ -40,6 +48,10 @@
 #### Документация
 
 На странице [идентификаторов](identifiers.html) добавлено пространство имён `prd` для идентификаторов продуктов, например номеров единиц крови, для которых внешний реестр не публикует собственную систему.
+
+Страница [Основы FHIR](fhir-basics.html) больше не требует, чтобы приложения обменивались только локальными кодами. DHP использует код международного стандарта, например ICD-10, SNOMED CT или LOINC, везде, где он подходит, и вводит локальный код только для понятия, которого нет ни в одном стандарте; ConceptMap сопоставляют такие локальные коды с международными терминологиями.
+
+Новая страница [Информация о переводах](translationinfo.html) объясняет, что русская и узбекская версии - машинные переводы, которые проверяют редакторы, что при расхождении приоритет имеет английский текст, и как сообщить о проблеме с переводом.
 
 ### Версия 0.10.0
 
