@@ -169,7 +169,7 @@ UZ Core Practitioner описывает отдельного медицинск�
 |---|---|---|---|
 | `pinfl` | `42410540220011` | `Practitioner.identifier` (PINFL) | По нему находят медицинского работника; в квалификации не повторяется |
 | `serial` + `number` | `CA` + `008815` | `qualification.identifier.value` | Серия и номер без разделителя: `CA008815` |
-| - | - | `qualification.identifier.system` | Всегда `https://dhp.uz/fhir/core/sid/doc/uz/specialist-certificate` |
+| - | - | `qualification.identifier.system` | Всегда `https://dhp.uz/fhir/core/sid/pro/uz/specialist-certificate` |
 | - | - | `qualification.code.coding` | Всегда `http://terminology.hl7.org/CodeSystem/v2-0360#CER` "Certificate" |
 | `speciality`, `category`, `medicaleRoleName` | `psixiatriya`, `Oliy toifa`, `Shifokor` | `qualification.code.text` | `{специальность}, {категория}, {роль}` на языке ресурса: `Psixiatriya, oliy toifa, shifokor` |
 | те же поля на `ru`, `kaa`, `en` | `Психиатрия, высшая категория, врач` | расширение `translation` у `code.text` | Одно расширение на каждый язык |
@@ -217,7 +217,7 @@ UZ Core Practitioner описывает отдельного медицинск�
     {
       "identifier": [
         {
-          "system": "https://dhp.uz/fhir/core/sid/doc/uz/specialist-certificate",
+          "system": "https://dhp.uz/fhir/core/sid/pro/uz/specialist-certificate",
           "value": "CA008815"
         }
       ],
