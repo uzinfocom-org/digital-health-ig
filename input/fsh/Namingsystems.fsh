@@ -677,12 +677,11 @@ Usage: #definition
 * uniqueId[=].value = $blood-donation-number
 * uniqueId[=].preferred = true
 
-Instance: supply-request
+Instance: uzb-supply-request-number
 InstanceOf: NamingSystem
-Description: "Supply request identifiers issued within the Uzbekistan Digital Health Platform"
+Description: "Supply request numbers assigned by requesting hospitals in Uzbekistan"
 Usage: #definition
-
-* url = "https://terminology.dhp.uz/fhir/core/NamingSystem/supply-request"
+* url = "https://terminology.dhp.uz/fhir/core/NamingSystem/uzb-supply-request-number"
 * name = "UzbekistanSupplyRequestIdentifier"
 * status = #active
 * kind = #identifier
@@ -691,30 +690,26 @@ Usage: #definition
 * responsible = "Ministry of Health of the Republic of Uzbekistan"
 * type = $identifier-type#PLAC "Placer Identifier"
 * description = "Naming system for supply request numbers assigned by the requesting hospital's information system when ordering blood components from the blood service."
-* usage = "Used to identify and track the hospital's supply request and correlate it with the blood service's response and delivery."
 * jurisdiction = urn:iso:std:iso:3166#UZ "Uzbekistan"
-
+* usage = "Used in SupplyRequest.identifier.system to identify and track the hospital's supply request and correlate it with the blood service's response and delivery. Values must be unique across requesting hospitals within this namespace, using coordinated allocation or an issuer-qualified value. Record the requesting hospital in identifier.assigner."
 * uniqueId[0].type = #uri
-* uniqueId[=].value = "https://dhp.uz/fhir/core/sid/doc/uz/supply-request"
+* uniqueId[=].value = $supply-request-number
 * uniqueId[=].preferred = true
 
-Instance: supply-contract
+Instance: uzb-supply-contract-number
 InstanceOf: NamingSystem
-Description: "Supply contract identifiers issued within the Uzbekistan Digital Health Platform"
+Description: "Supply agreement numbers between hospitals and blood services in Uzbekistan"
 Usage: #definition
-
-* url = "https://terminology.dhp.uz/fhir/core/NamingSystem/supply-contract"
+* url = "https://terminology.dhp.uz/fhir/core/NamingSystem/uzb-supply-contract-number"
 * name = "UzbekistanSupplyContractIdentifier"
 * status = #active
 * kind = #identifier
 * date = "2026-09-30"
 * publisher = "Uzinfocom"
 * responsible = "Ministry of Health of the Republic of Uzbekistan"
-* type = $identifier-type#FILL "Filler Identifier"
 * description = "Naming system for numbers identifying supply agreements between the requesting hospital and the blood service, as recorded in the source system's Contract module."
-* usage = "Used to link a supply request to the agreement under which the blood service supplies blood components to the hospital."
 * jurisdiction = urn:iso:std:iso:3166#UZ "Uzbekistan"
-
+* usage = "Used in SupplyRequest.identifier.system to link a supply request to the agreement under which the blood service supplies blood components to the hospital. Values must be unique across agreements within this namespace, using coordinated allocation or an issuer-qualified value. Record the party that issued the agreement number in identifier.assigner."
 * uniqueId[0].type = #uri
-* uniqueId[=].value = "https://dhp.uz/fhir/core/sid/doc/uz/supply-contract"
+* uniqueId[=].value = $supply-contract-number
 * uniqueId[=].preferred = true

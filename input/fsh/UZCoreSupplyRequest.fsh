@@ -21,11 +21,11 @@ Description: "Uzbekistan Core SupplyRequest profile, used to represent requests 
     contract 0..1 MS
 
 * identifier[request].system 1..1 MS
-* identifier[request].system = "https://dhp.uz/fhir/core/sid/doc/uz/supply-request"
+* identifier[request].system = $supply-request-number
 * identifier[request] ^short = "Supply request number assigned by the requesting hospital"
 
 * identifier[contract].system 1..1 MS
-* identifier[contract].system = "https://dhp.uz/fhir/core/sid/doc/uz/supply-contract"
+* identifier[contract].system = $supply-contract-number
 * identifier[contract] ^short = "Number of the supply agreement between the hospital and the blood service"
 
 * basedOn MS

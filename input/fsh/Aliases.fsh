@@ -238,3 +238,5 @@ Alias: $biologicallyderived-product-status = http://hl7.org/fhir/biologicallyder
 Alias: $product-category = http://hl7.org/fhir/product-category
 Alias: $blood-unit-number = https://dhp.uz/fhir/core/sid/prd/uz/blood/unit
 Alias: $blood-donation-number = https://dhp.uz/fhir/core/sid/prd/uz/blood/donation
+Alias: $supply-request-number = https://dhp.uz/fhir/core/sid/doc/uz/supply-request
+Alias: $supply-contract-number = https://dhp.uz/fhir/core/sid/doc/uz/supply-contract
