@@ -33,6 +33,10 @@
 
 Ko'krak bezi saratoni so'rovnomasi va skriningi kodlari ikkalasi ham `268547008` ga mos keladi. Eski nomlardagi hafta, kun va oy oraliqlari SNOMED CT konseptlariga kirmaydi.
 
+#### Hujjatlashtirish
+
+[Identifikatorlar](identifiers.html) sahifasiga mahsulot identifikatorlari, masalan, qon birliklari raqamlari uchun `prd` nom maydoni qo'shildi. U tashqi reestr o'z tizimini e'lon qilmagan raqamlar uchun ishlatiladi.
+
 ### Versiya 0.10.0
 
 #### Qo'shildi
