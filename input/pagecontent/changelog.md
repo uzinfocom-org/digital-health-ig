@@ -33,6 +33,10 @@ A [SNOMED CT supplement for screening and home visits](CodeSystem-screening-sct-
 
 The breast cancer questionnaire and breast cancer screening codes both map to `268547008`. The week, day and month ranges in the old names are not part of the SNOMED CT concepts.
 
+#### Documentation
+
+The [identifiers](identifiers.html) page adds a `prd` namespace for product identifiers, such as blood unit numbers, for numbers that no external registry already publishes a system for.
+
 ### Version 0.10.0
 
 #### Added
