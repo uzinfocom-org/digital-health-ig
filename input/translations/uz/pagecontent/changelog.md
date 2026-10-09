@@ -1,7 +1,3 @@
-### Ishlab chiqilmoqda
-
-(Hozircha o'zgarishlar yo'q)
-
 ### Versiya 0.11.0
 
 #### Qo'shildi
