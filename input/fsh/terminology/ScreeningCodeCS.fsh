@@ -24,7 +24,7 @@ Description: "Screening activities and patronage (home visit) services that have
   * ^designation[=].value = "Патронаж женщин детородного возраста (15-49 лет)"
   * ^designation[+].language = #en
   * ^designation[=].value = "Follow-up of Women of Reproductive Age (15–49 Years)"
-  * #mserv-0007-00021 "RSNPMTSOIR filiali yo'llanmasi"
+* #mserv-0007-00021 "RSNPMTSOIR filiali yo'llanmasi"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Направление в филиал РСНПМЦОиР"
   * ^designation[+].language = #en
