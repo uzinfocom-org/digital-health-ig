@@ -59,6 +59,7 @@ Title: "Blood component delivery"
 Description: "Delivery of a red blood cell unit for a patient to the receiving hospital."
 
 * identifier[delivery].value = "DEL-2026-0001"
+* basedOn = Reference(example-supply-request)
 * status = #completed
 * patient = Reference(example-salim)
 * type = $supplydelivery-supplyitemtype#biologicallyderivedproduct "Biologically Derived Product"
