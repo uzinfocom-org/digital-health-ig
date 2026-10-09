@@ -714,12 +714,11 @@ Usage: #definition
 * uniqueId[=].value = $supply-contract-number
 * uniqueId[=].preferred = true
 
-Instance: supply-delivery
+Instance: uzb-supply-delivery-number
 InstanceOf: NamingSystem
-Description: "Supply delivery identifiers issued within the Uzbekistan Digital Health Platform"
+Description: "Supply delivery numbers assigned by suppliers such as blood services in Uzbekistan"
 Usage: #definition
-
-* url = "https://terminology.dhp.uz/fhir/core/NamingSystem/supply-delivery"
+* url = "https://terminology.dhp.uz/fhir/core/NamingSystem/uzb-supply-delivery-number"
 * name = "UzbekistanSupplyDeliveryIdentifier"
 * status = #active
 * kind = #identifier
@@ -727,10 +726,9 @@ Usage: #definition
 * publisher = "Uzinfocom"
 * responsible = "Ministry of Health of the Republic of Uzbekistan"
 * type = $identifier-type#FILL "Filler Identifier"
-* description = "Naming system for numbers identifying supply deliveries, as recorded in the source system."
-* usage = "Used to identify and track the delivery of blood components from the blood service to the receiving hospital."
+* description = "Naming system for supply delivery numbers assigned by the supplier's information system when it issues supplies, such as the blood service issuing blood components to a hospital."
 * jurisdiction = urn:iso:std:iso:3166#UZ "Uzbekistan"
-
+* usage = "Used in SupplyDelivery.identifier.system to identify and track a delivery and correlate it with the supply request it fulfils. Values must be unique across suppliers within this namespace, using coordinated allocation or an issuer-qualified value. Record the supplier in identifier.assigner."
 * uniqueId[0].type = #uri
-* uniqueId[=].value = "https://dhp.uz/fhir/core/sid/doc/uz/supply-delivery"
+* uniqueId[=].value = $supply-delivery-number
 * uniqueId[=].preferred = true

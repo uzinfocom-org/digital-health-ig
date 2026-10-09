@@ -16,7 +16,8 @@ Description: "Uzbekistan Core SupplyDelivery profile, used to record the deliver
 * identifier ^slicing.rules = #open
 * identifier contains delivery 0..1 MS
 * identifier[delivery].system 1..1 MS
-* identifier[delivery].system = "https://dhp.uz/fhir/core/sid/doc/uz/supply-delivery"
+* identifier[delivery].system = $supply-delivery-number
+* identifier[delivery] ^short = "Delivery number assigned by the supplier, such as the blood service issuing blood components"
 
 * basedOn MS
 * basedOn only Reference(UZCoreSupplyRequest)
@@ -57,7 +58,6 @@ Usage: #example
 Title: "Blood component delivery"
 Description: "Delivery of a red blood cell unit for a patient to the receiving hospital."
 
-* identifier[delivery].system = "https://dhp.uz/fhir/core/sid/doc/uz/supply-delivery"
 * identifier[delivery].value = "DEL-2026-0001"
 * status = #completed
 * patient = Reference(example-salim)

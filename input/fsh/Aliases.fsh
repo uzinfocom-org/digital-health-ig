@@ -242,3 +242,4 @@ Alias: $blood-unit-number = https://dhp.uz/fhir/core/sid/prd/uz/blood/unit
 Alias: $blood-donation-number = https://dhp.uz/fhir/core/sid/prd/uz/blood/donation
 Alias: $supply-request-number = https://dhp.uz/fhir/core/sid/doc/uz/supply-request
 Alias: $supply-contract-number = https://dhp.uz/fhir/core/sid/doc/uz/supply-contract
+Alias: $supply-delivery-number = https://dhp.uz/fhir/core/sid/doc/uz/supply-delivery
