@@ -235,3 +235,7 @@ Alias: $timing-abbreviation = http://terminology.hl7.org/CodeSystem/timing-abbre
 Alias: $general-activity-definition = https://dhp.uz/fhir/core/StructureDefinition/uz-core-activitydefinition
 Alias: $supplyrequest-status = http://hl7.org/fhir/supplyrequest-status
 Alias: $supplydelivery-supplyitemtype = http://hl7.org/fhir/supplydelivery-supplyitemtype
+Alias: $biologicallyderived-product-status = http://hl7.org/fhir/biologicallyderived-product-status
+Alias: $product-category = http://hl7.org/fhir/product-category
+Alias: $blood-unit-number = https://dhp.uz/fhir/core/sid/prd/uz/blood/unit
+Alias: $blood-donation-number = https://dhp.uz/fhir/core/sid/prd/uz/blood/donation

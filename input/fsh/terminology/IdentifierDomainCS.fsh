@@ -80,6 +80,33 @@ Description: """
       * ^property[=].valueString = Canonical(uzb-hrm-argos-practitioner)
       * ^property[+].code = #notSelectable
       * ^property[=].valueBoolean = false
+* #https://dhp.uz/fhir/core/sid/prd "Root of identifiers for products"
+  * ^property[0].code = #notSelectable
+  * ^property[=].valueBoolean = true
+  * #https://dhp.uz/fhir/core/sid/prd/uz "Root of Uzbekistan identifiers for products"
+    * ^property[0].code = #notSelectable
+    * ^property[=].valueBoolean = true
+    * ^property[+].code = #country
+    * ^property[=].valueCoding = $iso-3166#UZ
+    * #https://dhp.uz/fhir/core/sid/prd/uz/blood "Root of Uzbekistan identifiers for blood products"
+      * ^property[0].code = #notSelectable
+      * ^property[=].valueBoolean = true
+      * ^property[+].code = #country
+      * ^property[=].valueCoding = $iso-3166#UZ
+      * #https://dhp.uz/fhir/core/sid/prd/uz/blood/unit "Blood product unit numbers assigned by blood services in Uzbekistan"
+        * ^property[0].code = #country
+        * ^property[=].valueCoding = $iso-3166#UZ
+        * ^property[+].code = #naming-system
+        * ^property[=].valueString = Canonical(uzb-blood-unit-number)
+        * ^property[+].code = #notSelectable
+        * ^property[=].valueBoolean = false
+      * #https://dhp.uz/fhir/core/sid/prd/uz/blood/donation "Blood donation numbers assigned by collecting blood services in Uzbekistan"
+        * ^property[0].code = #country
+        * ^property[=].valueCoding = $iso-3166#UZ
+        * ^property[+].code = #naming-system
+        * ^property[=].valueString = Canonical(uzb-blood-donation-number)
+        * ^property[+].code = #notSelectable
+        * ^property[=].valueBoolean = false
 * #https://dhp.uz/fhir/core/sid/pid "Root of identifiers for personal identification"
   * ^property[0].code = #notSelectable
   * ^property[=].valueBoolean = true
