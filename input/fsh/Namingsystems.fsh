@@ -641,6 +641,98 @@ Usage: #definition
 * uniqueId[=].value = $mis-dmed-uz
 * uniqueId[=].preferred = true
 
+Instance: uzb-blood-unit-number
+InstanceOf: NamingSystem
+Description: "Local blood product unit identifiers issued by blood services in Uzbekistan"
+Usage: #definition
+* url = "https://terminology.dhp.uz/fhir/core/NamingSystem/uzb-blood-unit-number"
+* name = "UzbekistanBloodProductUnitNumber"
+* status = #active
+* kind = #identifier
+* date = "2026-10-08"
+* publisher = "Uzinfocom"
+* responsible = "Ministry of Health of the Republic of Uzbekistan"
+* description = "Naming system for local identifiers of individual blood product units. The collecting blood service assigns the original unit number when collection is registered. The processing blood service assigns a distinct unit number to each derived component or aliquot. These identifiers support labeling, inventory management and product traceability; they are not ISBT 128 Donation Identification Numbers."
+* jurisdiction = urn:iso:std:iso:3166#UZ "Uzbekistan"
+* usage = "Used in BiologicallyDerivedProduct.identifier.system. Values must be unique across participating blood services within this namespace, using coordinated allocation or an issuer-qualified value. Record the issuing service in identifier.assigner. Preserve the unit number throughout the product lifecycle; derived components receive their own unit numbers."
+* uniqueId[0].type = #uri
+* uniqueId[=].value = $blood-unit-number
+* uniqueId[=].preferred = true
+
+Instance: uzb-blood-donation-number
+InstanceOf: NamingSystem
+Description: "Local blood donation event identifiers issued by collecting blood services in Uzbekistan"
+Usage: #definition
+* url = "https://terminology.dhp.uz/fhir/core/NamingSystem/uzb-blood-donation-number"
+* name = "UzbekistanBloodDonationNumber"
+* status = #active
+* kind = #identifier
+* date = "2026-10-08"
+* publisher = "Uzinfocom"
+* responsible = "Ministry of Health of the Republic of Uzbekistan"
+* description = "Naming system for local blood donation event identifiers assigned by the collecting blood service when collection is registered. The donation number supports donor-to-product and product-to-donor traceability and is retained on all products derived from that single donation. This local numbering scheme does not assert ISBT 128 compliance."
+* jurisdiction = urn:iso:std:iso:3166#UZ "Uzbekistan"
+* usage = "Used in BiologicallyDerivedProduct.biologicalSourceEvent.system. Values must be unique across participating blood services within this namespace, using coordinated allocation or an issuer-qualified value. Record the collecting service in biologicalSourceEvent.assigner. Derived components retain the original donation number. Do not use a donor identifier. This namespace does not cover pooling events."
+* uniqueId[0].type = #uri
+* uniqueId[=].value = $blood-donation-number
+* uniqueId[=].preferred = true
+
+Instance: uzb-supply-request-number
+InstanceOf: NamingSystem
+Description: "Supply request numbers assigned by requesting hospitals in Uzbekistan"
+Usage: #definition
+* url = "https://terminology.dhp.uz/fhir/core/NamingSystem/uzb-supply-request-number"
+* name = "UzbekistanSupplyRequestIdentifier"
+* status = #active
+* kind = #identifier
+* date = "2026-09-30"
+* publisher = "Uzinfocom"
+* responsible = "Ministry of Health of the Republic of Uzbekistan"
+* type = $identifier-type#PLAC "Placer Identifier"
+* description = "Naming system for supply request numbers assigned by the requesting hospital's information system when ordering blood components from the blood service."
+* jurisdiction = urn:iso:std:iso:3166#UZ "Uzbekistan"
+* usage = "Used in SupplyRequest.identifier.system to identify and track the hospital's supply request and correlate it with the blood service's response and delivery. Values must be unique across requesting hospitals within this namespace, using coordinated allocation or an issuer-qualified value. Record the requesting hospital in identifier.assigner."
+* uniqueId[0].type = #uri
+* uniqueId[=].value = $supply-request-number
+* uniqueId[=].preferred = true
+
+Instance: uzb-supply-contract-number
+InstanceOf: NamingSystem
+Description: "Supply agreement numbers between hospitals and blood services in Uzbekistan"
+Usage: #definition
+* url = "https://terminology.dhp.uz/fhir/core/NamingSystem/uzb-supply-contract-number"
+* name = "UzbekistanSupplyContractIdentifier"
+* status = #active
+* kind = #identifier
+* date = "2026-09-30"
+* publisher = "Uzinfocom"
+* responsible = "Ministry of Health of the Republic of Uzbekistan"
+* description = "Naming system for numbers identifying supply agreements between the requesting hospital and the blood service, as recorded in the source system's Contract module."
+* jurisdiction = urn:iso:std:iso:3166#UZ "Uzbekistan"
+* usage = "Used in SupplyRequest.identifier.system to link a supply request to the agreement under which the blood service supplies blood components to the hospital. Values must be unique across agreements within this namespace, using coordinated allocation or an issuer-qualified value. Record the party that issued the agreement number in identifier.assigner."
+* uniqueId[0].type = #uri
+* uniqueId[=].value = $supply-contract-number
+* uniqueId[=].preferred = true
+
+Instance: uzb-supply-delivery-number
+InstanceOf: NamingSystem
+Description: "Supply delivery numbers assigned by suppliers such as blood services in Uzbekistan"
+Usage: #definition
+* url = "https://terminology.dhp.uz/fhir/core/NamingSystem/uzb-supply-delivery-number"
+* name = "UzbekistanSupplyDeliveryIdentifier"
+* status = #active
+* kind = #identifier
+* date = "2026-09-30"
+* publisher = "Uzinfocom"
+* responsible = "Ministry of Health of the Republic of Uzbekistan"
+* type = $identifier-type#FILL "Filler Identifier"
+* description = "Naming system for supply delivery numbers assigned by the supplier's information system when it issues supplies, such as the blood service issuing blood components to a hospital."
+* jurisdiction = urn:iso:std:iso:3166#UZ "Uzbekistan"
+* usage = "Used in SupplyDelivery.identifier.system to identify and track a delivery and correlate it with the supply request it fulfils. Values must be unique across suppliers within this namespace, using coordinated allocation or an issuer-qualified value. Record the supplier in identifier.assigner."
+* uniqueId[0].type = #uri
+* uniqueId[=].value = $supply-delivery-number
+* uniqueId[=].preferred = true
+
 Instance: uzb-specialist-certificate
 InstanceOf: NamingSystem
 Description: "Specialist certificate numbers of healthcare professionals issued by the Ministry of Health of Uzbekistan"

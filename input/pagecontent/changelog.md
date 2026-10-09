@@ -4,6 +4,14 @@
 
 A [SNOMED CT supplement for screening and home visits](CodeSystem-screening-sct-cs.html) gives Uzbek and Russian designations to the 15 SNOMED CT concepts that now code screening and patronage services in [ServiceRequest procedures and investigations](ValueSet-service-request-code-vs.html), which lists them by name.
 
+[ServiceRequest categories](ValueSet-service-request-categories-vs.html) include SNOMED CT `310422005` "Prevention/screening invitation", with Uzbek and Russian designations in the [category supplement](CodeSystem-sr-sct-category-cs.html). A screening program's invitation or plan ServiceRequest carries it in `category`, so a dedicated invitation code in `code` is not needed.
+
+#### Changed
+
+[UZ Core ServiceRequest](StructureDefinition-uz-core-servicerequest.html) `supportingInfo` can reference any resource again, rather than only another ServiceRequest. `category` is now sliced: at most one category comes from [ServiceRequestCategoriesVS](ValueSet-service-request-categories-vs.html), with a required binding, and any other categories can sit alongside it from any code system.
+
+[UZ Core Observation](StructureDefinition-uz-core-observation.html) allows more than one `basedOn` (0..* instead of 0..1), so an observation can point to both the order it answers and the plan that order belongs to. For example, a screening result can reference its referral and the screening program's plan ServiceRequest. Existing observations remain valid.
+
 #### Breaking changes
 
 16 of the 20 [screening and home visit codes](CodeSystem-screening-code-cs.html) have been removed in favour of SNOMED CT. [ServiceRequest procedures and investigations](ValueSet-service-request-code-vs.html) already accepted these SNOMED CT concepts through its procedure filter. Four codes stay because SNOMED CT has no suitable concept for them: `mserv-0007-00003` (cerebrovascular disease questionnaire), `mserv-0007-00011` (vaccination invitation), `mserv-0007-00012` (post-vaccination patronage) and `mserv-0007-00017` (patronage of women of reproductive age). Senders of a removed code switch to its SNOMED CT concept:
@@ -28,6 +36,10 @@ A [SNOMED CT supplement for screening and home visits](CodeSystem-screening-sct-
 | `mserv-0007-00020` | Breast cancer screening | `268547008` Screening for malignant neoplasm of breast |
 
 The breast cancer questionnaire and breast cancer screening codes both map to `268547008`. The week, day and month ranges in the old names are not part of the SNOMED CT concepts.
+
+#### Documentation
+
+The [identifiers](identifiers.html) page adds a `prd` namespace for product identifiers, such as blood unit numbers, for numbers that no external registry already publishes a system for.
 
 ### Version 0.10.0
 
