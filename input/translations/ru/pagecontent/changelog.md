@@ -1,5 +1,9 @@
 ### В разработке
 
+(Пока без изменений)
+
+### Версия 0.11.0
+
 #### Добавлено
 
 Добавлен [UZ Core BiologicallyDerivedProduct](StructureDefinition-uz-core-biologically-derived-product.html) для единицы крови или компонента крови в [управлении кровью](components.html#blood-management). Единица несёт [номер единицы](NamingSystem-uzb-blood-unit-number.html), присвоенный службой крови, а в `biologicalSourceEvent` - [номер донации](NamingSystem-uzb-blood-donation-number.html), из которой она получена; этот номер сохраняют все компоненты, полученные из той же донации. Переработанный или пулированный компонент ссылается на исходные единицы в `parent`, а срезы `property` фиксируют группу крови ABO, резус-принадлежность RhD, объём и гематокрит. Вместе с ним добавлены наборы значений SNOMED CT для [типа продукта крови](ValueSet-blood-product-type-snomed-vs.html), [группы крови](ValueSet-blood-group-vs.html) и [типа RhD](ValueSet-blood-rh-vs.html), а также наборы [категории продукта](ValueSet-product-category-vs.html) и [статуса продукта](ValueSet-product-status-vs.html), все с узбекскими и русскими обозначениями.

@@ -1,5 +1,9 @@
 ### Ishlab chiqilmoqda
 
+(Hozircha o'zgarishlar yo'q)
+
+### Versiya 0.11.0
+
 #### Qo'shildi
 
 [Qon resurslarini boshqarish](components.html#blood-management) komponentida qon birligi yoki qon komponenti uchun [UZ Core BiologicallyDerivedProduct](StructureDefinition-uz-core-biologically-derived-product.html) qo'shildi. Birlik qon xizmati bergan [birlik raqamini](NamingSystem-uzb-blood-unit-number.html), `biologicalSourceEvent` da esa u olingan [donatsiya raqamini](NamingSystem-uzb-blood-donation-number.html) tashiydi; shu donatsiyadan qayta ishlab olingan har bir komponent bu raqamni saqlab qoladi. Qayta ishlangan yoki birlashtirilgan komponent `parent` da manba birliklariga havola qiladi, `property` bo'laklari esa ABO qon guruhi, RhD rezus turi, hajm va gematokritni qayd etadi. U bilan birga [qon mahsuloti turi](ValueSet-blood-product-type-snomed-vs.html), [qon guruhi](ValueSet-blood-group-vs.html) va [RhD turi](ValueSet-blood-rh-vs.html) uchun SNOMED CT to'plamlari hamda [mahsulot toifasi](ValueSet-product-category-vs.html) va [mahsulot holati](ValueSet-product-status-vs.html) to'plamlari qo'shildi, barchasi o'zbekcha va ruscha nomlar bilan.

@@ -1,5 +1,9 @@
 ### In development
 
+(No changes yet)
+
+### Version 0.11.0
+
 #### Added
 
 Added [UZ Core BiologicallyDerivedProduct](StructureDefinition-uz-core-biologically-derived-product.html) for a unit of blood or a blood component in [Blood Management](components.html#blood-management). A unit carries the [unit number](NamingSystem-uzb-blood-unit-number.html) its blood service assigned and, in `biologicalSourceEvent`, the [number of the donation](NamingSystem-uzb-blood-donation-number.html) it came from, which every component processed from that donation keeps. A processed or pooled component references its source units in `parent`, and `property` slices record the ABO group, RhD type, volume and hematocrit. It comes with SNOMED CT [blood product type](ValueSet-blood-product-type-snomed-vs.html), [blood group](ValueSet-blood-group-vs.html) and [RhD type](ValueSet-blood-rh-vs.html) value sets and [product category](ValueSet-product-category-vs.html) and [product status](ValueSet-product-status-vs.html) value sets, all with Uzbek and Russian designations.
