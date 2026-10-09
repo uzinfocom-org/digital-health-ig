@@ -9,11 +9,21 @@ Description: "Uzbekistan Core BiologicallyDerivedProduct profile, used to repres
 * ^publisher = "Uzinfocom"
 * ^date = "2026-09-30"
 
-* identifier ^short = "Local unit number assigned by the collecting or processing blood service for product tracking"
-* identifier.system 1..1 MS
-* identifier.system = $blood-unit-number
-* identifier.value 1..1 MS
+* identifier MS
+* identifier ^slicing.discriminator.type = #value
+* identifier ^slicing.discriminator.path = "system"
+* identifier ^slicing.rules = #open
+* identifier ^slicing.description = "Identifiers of the product"
+* identifier ^slicing.ordered = false
+* identifier contains
+    unitNumber 0..1 MS
+* identifier[unitNumber]
+  * ^short = "Local unit number assigned by the collecting or processing blood service for product tracking"
+  * system 1..1 MS
+  * system = $blood-unit-number
+  * value 1..1 MS
 
+* biologicalSourceEvent MS
 * biologicalSourceEvent ^short = "Local donation number assigned by the collecting blood service for donation traceability"
 * biologicalSourceEvent.system 1..1 MS
 * biologicalSourceEvent.system = $blood-donation-number
@@ -79,12 +89,11 @@ InstanceOf: UZCoreBiologicallyDerivedProduct
 Usage: #example
 Title: "Whole blood donation"
 Description: "A directly donated whole blood unit with no parent product."
-* identifier.system = $blood-unit-number
-* identifier.value = "BB-DON-2026-00123"
+* identifier[unitNumber].value = "BB-DON-2026-00123"
 * biologicalSourceEvent.system = $blood-donation-number
 * biologicalSourceEvent.value = "DON-2025-0088231"
 * productCategory = $product-category#fluid "Fluid"
-* productCode = $sct#420135007 "Whole blood"
+* productCode = $sct#88487009 "Human whole blood product"
 * productStatus = $biologicallyderived-product-status#available "Available"
 * collection.collectedDateTime = "2026-09-15T08:00:00+05:00"
 * property[aboGroup].type = $sct#63915006 "ABO blood group system"
@@ -101,8 +110,7 @@ InstanceOf: UZCoreBiologicallyDerivedProduct
 Usage: #example
 Title: "Red blood cell component"
 Description: "A processed red blood cell component with its own unit number and the same donation number as its source product."
-* identifier.system = $blood-unit-number
-* identifier.value = "BB-COMP-2026-0001"
+* identifier[unitNumber].value = "BB-COMP-2026-0001"
 * biologicalSourceEvent.system = $blood-donation-number
 * biologicalSourceEvent.value = "DON-2025-0088231"
 * productCategory = $product-category#cells "Cells"

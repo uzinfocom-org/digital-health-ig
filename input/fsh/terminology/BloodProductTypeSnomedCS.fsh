@@ -28,7 +28,7 @@ Description: "Blood product type supplement with translations in Uzbek and Russi
   * ^designation[+].language = #uz
   * ^designation[=].value = "Trombotsitar massa"
 
-* #420599006
+* #73274006
   * ^designation[0].language = #ru
   * ^designation[=].value = "Криопреципитат"
   * ^designation[+].language = #uz
@@ -45,3 +45,27 @@ Description: "Blood product type supplement with translations in Uzbek and Russi
   * ^designation[=].value = "Облучённые эритроциты"
   * ^designation[+].language = #uz
   * ^designation[=].value = "Nurlantirilgan eritrotsitlar"
+
+* #256387005
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Фильтрованные облучённые эритроциты"
+  * ^designation[+].language = #uz
+  * ^designation[=].value = "Filtrlangan nurlantirilgan eritrotsitlar"
+
+* #256375003
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Облучённая цельная кровь"
+  * ^designation[+].language = #uz
+  * ^designation[=].value = "Nurlantirilgan to'liq qon"
+
+* #256398006
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Облучённые тромбоциты"
+  * ^designation[+].language = #uz
+  * ^designation[=].value = "Nurlantirilgan trombotsitlar"
+
+* #126260007
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Аферезные тромбоциты человека с уменьшенным содержанием лейкоцитов"
+  * ^designation[+].language = #uz
+  * ^designation[=].value = "Leykotsitlar miqdori kamaytirilgan inson aferez trombotsitlari"
