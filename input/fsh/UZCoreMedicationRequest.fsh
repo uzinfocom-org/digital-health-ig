@@ -38,6 +38,7 @@ Description: "Uzbekistan Core profile for MedicationRequest, used to order medic
 
 
 * medication MS
+* medication from MedicationClassificationVS (required)
 * medication only CodeableReference(UZCoreMedication)
 
 * subject MS
