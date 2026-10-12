@@ -14,3 +14,5 @@ Description: "Encounter discharge disposition codes with English and Russian tra
 // * include encounter-discharge-disposition-home-cs#mserv-0004-00001
 // * include encounter-discharge-disposition-home-cs#mserv-0004-00002
 * include codes from system encounter-discharge-disposition-home-cs
+
+* include codes from system discharge-disposition-ambulance-cs
