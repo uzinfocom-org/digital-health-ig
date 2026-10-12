@@ -112,7 +112,6 @@ Alias: $pension-number = https://dhp.uz/fhir/core/sid/pid/uz/pen
 Alias: $practitioner-argos-id-system = https://dhp.uz/fhir/core/sid/pro/uz/argos
 Alias: $provenance-entity-role = http://hl7.org/fhir/provenance-entity-role
 Alias: $publication-status = http://hl7.org/fhir/publication-status
-Alias: $base-request-resource-types = http://hl7.org/fhir/ValueSet/request-resource-types
 Alias: $request-intent = http://hl7.org/fhir/request-intent
 Alias: $request-priority = http://hl7.org/fhir/request-priority
 Alias: $provenance-participant-type = http://terminology.hl7.org/CodeSystem/provenance-participant-type

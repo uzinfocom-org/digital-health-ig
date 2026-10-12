@@ -8,5 +8,22 @@ Description: "All request resource types allowed by FHIR R5 ActivityDefinition.k
 * ^extension[0].url = $valueset-supplement
 * ^extension[=].valueCanonical = Canonical(RequestResourceTypesCS)
 
-// Reuse the complete base list; a national subset would unnecessarily restrict ActivityDefinition.kind.
-* include codes from valueset $base-request-resource-types
+// Match every code in FHIR R5's request-resource-types ValueSet.
+// Include the original system directly so expansion applies the required translation supplement.
+* include $resource-types#Appointment
+* include $resource-types#AppointmentResponse
+* include $resource-types#CarePlan
+* include $resource-types#Claim
+* include $resource-types#CommunicationRequest
+* include $resource-types#CoverageEligibilityRequest
+* include $resource-types#DeviceRequest
+* include $resource-types#EnrollmentRequest
+* include $resource-types#ImmunizationRecommendation
+* include $resource-types#MedicationRequest
+* include $resource-types#NutritionOrder
+* include $resource-types#RequestOrchestration
+* include $resource-types#ServiceRequest
+* include $resource-types#SupplyRequest
+* include $resource-types#Task
+* include $resource-types#Transport
+* include $resource-types#VisionPrescription
