@@ -11,7 +11,7 @@ https://dhp.uz/fhir/core/sid/{namespace}/{country}/{type}[/subtype]
 ```
 
 Где:
-- `namespace`: `pid` (персональный), `pro` (профессиональный), `org` (организация) или `doc` (документ)
+- `namespace`: `pid` (персональный), `pro` (профессиональный), `org` (организация), `doc` (документ) или `prd` (продукт)
 - `country`: двухбуквенный код страны ISO 3166-1 (например, `uz` для Узбекистана)
 - `type`: тип идентификатора (например, `ppn` для паспорта, `ni` для национального ID)
 - `subtype`: дополнительная классификация (например, `local` или `intl` для типов паспортов)
@@ -272,11 +272,17 @@ https://dhp.uz/fhir/core/sid/{namespace}/{country}/{type}[/subtype]
 
 Полный перечень всех поддерживаемых систем идентификаторов организаций приведён в value set [OrganizationIdentifierDomainVS](ValueSet-organization-identifier-domain-vs.html).
 
-### Идентификаторы документов
+### Идентификаторы документов {#document-identifiers}
 
 Документы идентифицируются с использованием пространства имён `doc`. Это позволяет отслеживать клинические документы, отчёты и другую медицинскую документацию.
 
 **Шаблон System URI**: `https://dhp.uz/fhir/core/sid/doc/{country}/{type}`
+
+### Идентификаторы продуктов {#product-identifiers}
+
+Продукты идентифицируются с использованием пространства имён `prd`. Оно предназначено для номеров, пространство имён которых задаёт сама платформа, например номеров единиц, которые службы крови присваивают продуктам крови. Если внешний реестр публикует собственный URI системы для номера продукта, используйте этот URI: например, идентификаторы лекарственных средств используют системы Asl Belgisi и реестра uzpharminfo.uz.
+
+**Шаблон System URI**: `https://dhp.uz/fhir/core/sid/prd/{country}/{type}[/subtype]`
 
 ### Полный пример: пациент с несколькими идентификаторами
 
@@ -391,4 +397,4 @@ GET [base]/Organization?identifier=https://dhp.uz/fhir/core/sid/org/uz/soliq|200
 - [Профиль UZCorePatient](StructureDefinition-uz-core-patient.html)
 - [Профиль UZCorePractitioner](StructureDefinition-uz-core-practitioner.html)
 - [Профиль UZCoreOrganization](StructureDefinition-uz-core-organization.html)
-- [NamingSystems](artifacts.html#terminology-naming-systems)
+- [NamingSystems](artifacts.html)

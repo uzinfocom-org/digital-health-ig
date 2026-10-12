@@ -22,7 +22,7 @@ The base FHIR Practitioner has no mandatory elements, and this profile does not 
 - a birth date, and the deceased date/flag;
 - an address - either an Uzbek address (coded administrative divisions) or an international free-text address;
 - a photo;
-- one or more qualifications, each with a code from the Tibtoifa licence/certificate value set, plus its validity period and issuing organization.
+- one or more qualifications, each with a code from the Tibtoifa licence/certificate value set, plus its validity period and issuing organization. A [specialist certificate](#specialist-certificates) also carries its series and number in `identifier` and its specialty, category and role in `code.text`.
 
 > The `gender-other` extension may only be used when `gender` is set to `other`.
 
@@ -133,5 +133,126 @@ A full record carries the practitioner's `qualification` (each `code` from the T
 ```
 
 `qualification.code` is bound (required) to the Tibtoifa licence/certificate value set. Use `deceasedDateTime` when the exact date of death is known, or `deceasedBoolean` when only the fact is known.
+
+### Specialist certificates {#specialist-certificates}
+
+A specialist certificate (*sertifikat*) is issued by the Ministry of Health and confirms that a practitioner may work in a given specialty at a given qualification category. Certificates are held in Tibtoifa, which returns all certificates of a practitioner by PINFL. Each certificate becomes one `qualification` of the Practitioner.
+
+<div>{% include practitioner-certificate-sequence.svg %}</div><br clear="all"/>
+
+#### What Tibtoifa returns
+
+One entry of the Tibtoifa response for PINFL `42410540220011`:
+
+```
+{
+  "pinfl": "42410540220011",
+  "serial": "CA",
+  "number": "008815",
+  "category": { "uz": "Oliy toifa", "ru": "Высшая категория", "en": "Higher category" },
+  "speciality": { "uz": "psixiatriya", "ru": "психиатрия", "en": "psychiatry" },
+  "medicaleRoleName": { "uz": "Shifokor", "ru": "Врач", "en": "Doctor" },
+  "givenDate": "2024-05-05",
+  "validityPeriod": "2029-05-05",
+  "commandNumber": "35",
+  "commandDate": "2024-05-05"
+}
+```
+
+The entry also carries Tibtoifa's internal ids (`id`, `serialId`, `categoryId`, `specialityId`, `medicalRoleId`) and a Karakalpak (`kaa`) name next to each translated field.
+
+#### Mapping to FHIR
+
+| Tibtoifa field | Example | FHIR element | Rule |
+|---|---|---|---|
+| `pinfl` | `42410540220011` | `Practitioner.identifier` (PINFL) | Finds the practitioner; not repeated in the qualification |
+| `serial` + `number` | `CA` + `008815` | `qualification.identifier.value` | Series followed by number, no separator: `CA008815` |
+| - | - | `qualification.identifier.system` | Always `https://dhp.uz/fhir/core/sid/doc/uz/specialist-certificate` |
+| - | - | `qualification.code.coding` | Always `http://terminology.hl7.org/CodeSystem/v2-0360#CER` "Certificate" |
+| `speciality`, `category`, `medicaleRoleName` | `psixiatriya`, `Oliy toifa`, `Shifokor` | `qualification.code.text` | `{speciality}, {category}, {role}` in the resource language: `Psixiatriya, oliy toifa, shifokor` |
+| the same fields in `ru`, `kaa`, `en` | `Психиатрия, высшая категория, врач` | `translation` extension on `code.text` | One extension per language |
+| `givenDate` | `2024-05-05` | `qualification.period.start` | Date of issue |
+| `validityPeriod` | `2029-05-05` | `qualification.period.end` | Last day of validity |
+| `id`, `serialId`, `categoryId`, `specialityId`, `medicalRoleId` | `9448`, `2`, `1`, `90`, `1` | - | Internal Tibtoifa ids, not sent |
+| `commandNumber`, `commandDate` | `35`, `2024-05-05` | - | Not sent |
+
+Specialty, category and role are sent as text for now; coded value sets for them may follow in a later version.
+
+#### Rules
+
+- **One certificate, one qualification.** A practitioner with certificates in two specialties has two `qualification` entries.
+- **Match on the identifier.** When a certificate is received again (for example after a renewal changed its validity), find the existing qualification by `identifier.system` and `identifier.value` and update it instead of adding a duplicate.
+- **Keep expired certificates.** A certificate whose `period.end` has passed stays in the record; the period shows that it no longer applies.
+- **Series letters.** Tibtoifa mixes Latin and Cyrillic series (for example `CA` and `ТТБ`). Send the series exactly as Tibtoifa returns it, so the same certificate always produces the same `identifier.value`.
+- **No category.** Tibtoifa category `0` ("None") means the category is unknown - leave it out of the text. Category `5` ("Toifasiz", uncategorized) is a real value and is written out.
+
+#### The certificate in the Practitioner
+
+The qualification built from the Tibtoifa entry above:
+
+```json
+{
+  "resourceType": "Practitioner",
+  "language": "uz",
+  "meta": { "profile": [ "https://dhp.uz/fhir/core/StructureDefinition/uz-core-practitioner" ] },
+  "identifier": [
+    {
+      "use": "official",
+      "type": {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+            "code": "NI",
+            "display": "National unique individual identifier"
+          }
+        ]
+      },
+      "system": "https://dhp.uz/fhir/core/sid/pid/uz/ni",
+      "value": "42410540220011"
+    }
+  ],
+  "qualification": [
+    {
+      "identifier": [
+        {
+          "system": "https://dhp.uz/fhir/core/sid/doc/uz/specialist-certificate",
+          "value": "CA008815"
+        }
+      ],
+      "code": {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0360",
+            "code": "CER",
+            "display": "Certificate"
+          }
+        ],
+        "text": "Psixiatriya, oliy toifa, shifokor",
+        "_text": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                { "url": "lang", "valueCode": "ru" },
+                { "url": "content", "valueString": "Психиатрия, высшая категория, врач" }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                { "url": "lang", "valueCode": "en" },
+                { "url": "content", "valueString": "Psychiatry, higher category, doctor" }
+              ]
+            }
+          ]
+        }
+      },
+      "period": { "start": "2024-05-05", "end": "2029-05-05" }
+    }
+  ]
+}
+```
+
+The certificate number system is described by the [specialist certificate naming system](NamingSystem-uzb-specialist-certificate.html); the full record is in the [example practitioner](Practitioner-example-practitioner.html).
 
 For example API calls and a sample payload, see the [Quick Start](#quick-start) at the bottom of this page.

@@ -1,10 +1,10 @@
 Ushbu komponentlar bir-biri bilan qanday bog'langanini sahifa oxiridagi [komponentlararo resurs arxitekturasi](#komponentlararo-resurs-arxitekturasi) diagrammasida ko'rishingiz mumkin.
 
-### Tez tibbiy yordam
+### Tez tibbiy yordam {#ambulance}
 \< bu xizmat bo'yicha qisqacha tavsif keyinchalik qo'shiladi \\>
 
-### Qabulga yozish va jadvalni boshqarish
-### Qon resurslarini boshqarish
+### Qabulga yozish va jadvalni boshqarish {#appointment-and-scheduling}
+### Qon resurslarini boshqarish {#blood-management}
 
 "Qon resurslarini boshqarish" komponenti Digital Health Platform doirasida qon va qon komponentlarini standartlashtirilgan tarzda boshqarish uchun yaratilmoqda. U zaxiralar haqidagi ma'lumotlarning bir-biriga mos kelmasligi, muassasalar o'rtasida so'rovlar va taqsimotni boshqarishdagi qiyinchiliklar hamda qon dozasi qanday ishlatilganini kuzatish imkoniyatining cheklanganligi bilan bog'liq muammolarni hal qiladi.
 
@@ -22,8 +22,8 @@ Qon topshirish jadvallari ushbu qo'llanmada allaqachon modellashtirilgan. [UZ Co
 
 Donorlar va topshirilgan qonni laboratoriya tekshiruvidan o'tkazishni "Laboratoriya" komponenti bajaradi; "Qon resurslarini boshqarish" esa laboratoriya funksionalligini takrorlamasdan, uning natijalaridan foydalanadi. Qonni tashish va logistikasi hamda qon topshirish uchun vaqtni band qilish komponent doirasiga kirmaydi.
 
-### Klinik qarorlarni qo'llab-quvvatlash
-### Elektron tibbiy yozuvlar (CHR)
+### Klinik qarorlarni qo'llab-quvvatlash {#clinical-decision-support}
+### Elektron tibbiy yozuvlar (CHR) {#clinical-health-records-chr}
 
 Elektron tibbiy yozuvlar (CHR) komponenti Yagona raqamli sog'liqni saqlash platformasi (DHP) doirasida bemorlarning strukturalashtirilgan tibbiy ma'lumotlarini markazlashtirilgan tarzda saqlash, qayta ishlash va almashish uchun mo'ljallangan.
 
@@ -38,8 +38,8 @@ CHR komponentining asosiy maqsadlari:
 5. Normativ talablarga muvofiqlik va ma'lumotlar kuzatuvchanligini ta'minlash. Klinik ma'lumotlar bilan bog'liq barcha harakatlar tibbiy axborot tizimlariga qo'yilgan talablar, ISO/HL7 standartlari va mahalliy normativ-huquqiy hujjatlarga, jumladan shaxsiy ma'lumotlarni himoya qilish talablariga muvofiq qayd etiladi.
 6. Analitika va hisobotlarni qo'llab-quvvatlash. CHR analitik va hisobot tizimlari uchun yagona ma'lumotlarni taqdim etadi hamda statistika, epidemiologik nazorat, davolash samaradorligini monitoring qilish va tibbiy tadqiqotlar uchun ma'lumotlarni olish imkonini beradi.
 
-### Diagnostika va nurli vizualizatsiya
-### Laboratoriya
+### Diagnostika va nurli vizualizatsiya {#diagnostics-and-imaging}
+### Laboratoriya {#laboratory}
 
 "Laboratoriya" komponenti Digital Health Platform doirasida laboratoriya ma'lumotlarini standartlashtirilgan tarzda boshqarish uchun yaratilmoqda. U ma'lumotlarni markazlashtirilmagan holda saqlash, formatlarning mos kelmasligi va natijalar bilan ishlashning yagona jarayoni mavjud emasligi bilan bog'liq asosiy muammolarni hal qiladi.
 
@@ -52,7 +52,7 @@ CHR komponentining asosiy maqsadlari:
 
 [Laboratoriya tekshiruvini tayinlashdan natijani olishgacha](workflow-lab.html) jarayoni ushbu resurslar bir-biriga qanday bog'lanishini ko'rsatadi - tayinlashdan namuna olish orqali e'lon qilingan hisobotgacha.
 
-### Asosiy ma'lumotlarni boshqarish (MDM)
+### Asosiy ma'lumotlarni boshqarish (MDM) {#master-data-management-mdm}
 Ma'lumotlarni boshqarishning asosiy xizmati raqamli sog'liq platformasining (DHP) asosiy komponentidir. U turli tibbiy axborot tizimlaridan (MIS) olingan ma'lumotlarni birlashtirish, standartlashtirish va markazlashtirilgan saqlashni ta'minlaydi. Platforma yadrosi tarkibida ishlaydigan MDM barcha ulangan raqamli sogʻliqni saqlash xizmatlari uchun yagona ishonchli manba boʻlib xizmat qiladi. Bu milliy tizimda maʼlumotlarning uzluksizligi, aniqligi va mosligini kafolatlaydi.
 
 Asosiy funktsiyalari:
@@ -77,7 +77,7 @@ MDM xizmati maʼlumotlarning oʻz vaqtida, ishonchli va mavjud boʻlishini taʼm
 MDM xizmati oddiy yordamchi modul emas, balki Oʻzbekistonning raqamli sogʻliqni saqlash transformatsiyasining asosi hisoblanadi. U maʼlumotlar sifatini, oʻzaro ishlash imkoniyatini (interoperabellikni) va xavfsizlikni taʼminlaydi hamda DHP doirasida tashabbuslarni amalga oshirishni qoʻllab-quvvatlaydi. Xalqaro standartlarga asoslangan va milliy tizimlar bilan integratsiyalashgan MDM'ning ishlab chiqilishi va joriy etilishi raqamli sogʻliqni saqlash ekotizimini barqaror va kengaytiriladigan tarzda shakllantirishga xizmat qiladi.
 
 
-### Metama'lumotlar va xavfsizlikni boshqarish (MSM)
+### Metama'lumotlar va xavfsizlikni boshqarish (MSM) {#metadata-and-security-management-msm}
 Yagona raqamli sogʻliqni saqlash platformasini (DHP) ishlab chiqish doirasida ushbu xizmat maʼlumotlarni himoya qilish, ularning tavsifini standartlashtirish va kirish huquqini nazorat qilish mexanizmlarini joriy etishda muhim rol oʻynaydi.
 
 Ushbu xizmatni ishlab chiqish va joriy etish DHP doirasida saqlanadigan va qayta ishlanadigan maʼlumotlarni tavsiflash, tuzilmalashtirish, himoya qilish va audit qilish jarayonlarini standartlashtirish, shuningdek, axborot xavfsizligi, shaxsiy maʼlumotlarni himoya qilish va sogʻliqni saqlashni tartibga solish sohasidagi qonunchilik talablariga muvofiqlikni taʼminlash zarurati bilan belgilanadi.
@@ -112,7 +112,7 @@ Axborot xavfsizligini boshqarish xizmati shaxsiy tibbiy maʼlumotlar bilan ishla
 
 Platforma taqdim etadigan endpointlar va mijoz ularda autentifikatsiyani qanday amalga oshirishi [API kirishi](api-access.html) sahifasida tavsiflangan.
 
-### Hamshiralik ishi
+### Hamshiralik ishi {#nursing}
 
 "Hamshiralik ishi" komponenti hamshiralik yordamini tashkil etish, rejalashtirish, ko'rsatish va hujjatlashtirish uchun mo'ljallangan bo'lib, unda aholini patronaj (uyga tashrif) asosida kuzatishga alohida e'tibor qaratiladi. U patronaj hamshiralari, birlamchi bo'g'in shifokorlari hamda bemorlarga ambulator sharoitda va uyda yordam ko'rsatuvchi poliklinika mutaxassislarini raqamli qo'llab-quvvatlaydi.
 
@@ -130,7 +130,7 @@ Patronaj tashrifi o'tkaziladigan maqsad [UZ Core ServiceRequest](StructureDefini
 
 Hamshiralik tashriflarini rejalashtirishni "Qabulga yozish va jadvalni boshqarish" komponenti bajaradi.
 
-### Bemorning klinik marshrutini boshqarish
+### Bemorning klinik marshrutini boshqarish {#patient-health-journey-management}
 
 PHJM xizmati bemorning raqamli "yoʻlini" belgilaydi — dastlabki murojaatdan davolash epizodining yakuniy natijasigacha, oraliq kuzatuvlar, klinik tayinlovlar va oʻzaro taʼsirlarni ham oʻz ichiga olgan holda. Xizmatning maqsadi — Yagona raqamli sogʻliqni saqlash platformasi (UDHP) doirasida bemorning davolanish jarayonini uzluksiz, tuzilmaviy va ishonchli tarzda qoʻllab-quvvatlash, quyidagilar orqali:
 
@@ -164,13 +164,13 @@ PHJMning asosiy vazifalari va qoʻllanish holatlari:
 
 [Bemor yo'li (Episode of Care)](workflow-patient-journey.html) jarayoni EpisodeOfCare, Encounter va ularga qayd etiladigan klinik resurslar bir-biriga qanday bog'lanishini ko'rsatadi.
 
-### Retseptlar
+### Retseptlar {#prescription}
 
 [Elektron retsept va dori vositasini berish](workflow-prescription.html) jarayoni ushbu komponentning Texnik loyihasi tayyorlanayotgan vaqtda retsept yozish va dori vositasini berish qanday modellashtirilishini tavsiflaydi.
 
-### Jamoat salomatligi bo'yicha hisobotlar
-### Sifatni ta'minlash
-### Yo'llanmalar
+### Jamoat salomatligi bo'yicha hisobotlar {#public-health-reporting}
+### Sifatni ta'minlash {#quality-assurance}
+### Yo'llanmalar {#referrals}
 
 "Yo'llanmalar" komponenti Yagona raqamli sog'liqni saqlash platformasi (DHP) doirasida bemor yo'llanmalarini shakllantirish, uzatish, bajarish va monitoring qilish jarayonlarini markazlashtirilgan tarzda boshqarish uchun mo'ljallangan.
 
@@ -186,7 +186,7 @@ Yo'llanmaning o'zi [ServiceRequest](StructureDefinition-uz-core-servicerequest.h
 
 Komponent tibbiy yordam ko'rsatishni muvofiqlashtirishning muhim elementi hisoblanadi hamda bemorni davolashning uzluksizligini va jarayon ishtirokchilari o'rtasidagi o'zaro hamkorlikning shaffofligini ta'minlaydi.
 
-### Reimbursatsiya
+### Reimbursatsiya {#reimbursement}
 
 "Reimbursatsiya" komponenti klinik, ma'muriy va ijtimoiy-iqtisodiy ma'lumotlar integratsiyasi asosida tibbiy xizmatlar xarajatlarini qoplash jarayonlarini avtomatlashtirish uchun mo'ljallangan, jumladan:
 
@@ -209,7 +209,7 @@ Asosiy vazifalari:
 
 SHIF va u bilan shartnoma tuzgan tashkilotlar qanday identifikatsiya qilinishi [To'lovchini identifikatsiya qilish](payor-identification.html) sahifasida tavsiflangan.
 
-### Skrining jadvallarini boshqarish
+### Skrining jadvallarini boshqarish {#screening-schedules-management}
 
 "Skrining jadvallarini boshqarish" komponenti O'zbekiston Respublikasining milliy sog'liqni saqlash tizimi doirasida skrining tadbirlarini markazlashtirilgan tarzda boshqarish uchun yagona raqamli servisni yaratish maqsadida ishlab chiqilmoqda. Komponentning vazifasi skrining tekshiruvlarini rejalashtirish, tayinlash, o'tkazish va monitoring qilishni avtomatlashtirish hamda aholi orasida kasalliklar va xavf omillarini o'z vaqtida aniqlashni ta'minlashdan iborat.
 
@@ -223,7 +223,7 @@ Komponent quyidagilarni ta'minlaydi:
 
 So'rovnomalarning o'zi hamda ularni ko'rsatish va to'ldirish tartibi [So'rovnomalar](forms.html) sahifasida tavsiflangan.
 
-### Ta'minot
+### Ta'minot {#supplies}
 
 "Ta'minot" komponenti Digital Health Platform doirasida tibbiy uskunalar va kritik tibbiy zaxiralar haqida yaxlit manzarani shakllantirish hamda undan sog'liqni saqlash tashkilotlaridagi operativ ishda ham, sog'liqni saqlashni boshqarish organlarining analitik ishida ham foydalanish imkonini berish uchun mo'ljallangan.
 
@@ -236,7 +236,7 @@ Komponent quyidagilarni ta'minlaydi:
 - davlat tomonidan bepul yoki imtiyozli shartlarda beriladigan dori vositalari va tibbiy buyumlar ro'yxatini yuritishni; bu ro'yxat aholiga bemor portali orqali ko'rsatiladi;
 - resurslar mavjudligi bo'yicha hududlar va tashkilotlar kesimida agregatlangan analitika va dashboardlarni.
 
-### Vaksinatsiyani boshqarish
+### Vaksinatsiyani boshqarish {#vaccination-management}
 
 "Vaksinatsiyani boshqarish" komponenti milliy sog'liqni saqlash tizimi miqyosida vaksinatsiya jarayonlarini boshqarish uchun yagona standartlashtirilgan raqamli servisni yaratish maqsadida ishlab chiqilmoqda.
 

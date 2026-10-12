@@ -1,6 +1,6 @@
 > **Mashina tarjimasi, inson tomonidan tekshirilishi zarur.** Ushbu sahifa ingliz tilidan sun'iy intellekt yordamida avtomatik tarjima qilingan va hali muharrir tomonidan tekshirilmagan. Har qanday nomuvofiqlikda asl inglizcha versiya ustuvor hisoblanadi.
 
-### Tezkor boshlash
+### Tezkor boshlash {#quick-start}
 
 Questionnaire bu shablon boʻlib, bemor maʼlumotlari emas, shuning uchun qidiruv bemor boʻyicha emas, balki forma metamaʼlumotlari boʻyicha amalga oshiriladi. `[base]` bu [FHIR server bazaviy URL manzili](api-access.html#endpoints); `|` belgisi tizimni qiymatdan ajratadi va URL kodlashda `%7C` koʻrinishida boʻlishi kerak.
 

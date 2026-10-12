@@ -62,5 +62,5 @@ Har bir tashrif, natija va dori vositasini tayinlash EpisodeOfCare resursiga ref
 ### Bog'liq materiallar
 
 - Profillar: [EpisodeOfCare](StructureDefinition-uz-core-episodeofcare.html) &middot; [Encounter](StructureDefinition-uz-core-encounter.html) &middot; [Condition](StructureDefinition-uz-core-condition.html) &middot; [Observation](StructureDefinition-uz-core-observation.html)
-- Komponent: [Bemorning klinik marshrutini boshqarish](components.html#bemorning-klinik-marshrutini-boshqarish)
+- Komponent: [Bemorning klinik marshrutini boshqarish](components.html#patient-health-journey-management)
 - [Jarayonlar sharhi](workflows.html) &middot; [Umumiy ko'rsatmalar](general-guidance.html)
