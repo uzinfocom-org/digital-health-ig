@@ -14,7 +14,7 @@ This profile adds no mandatory cardinality of its own. The required elements are
 
 - an identifier, basedOn (CarePlan or ServiceRequest), and partOf (a parent procedure, observation, or medication administration);
 - the status (required binding) and a category;
-- the code identifying the procedure (required binding to the DHP procedure-code value set);
+- the code identifying the procedure (extensible binding to the DHP [procedure-code value set](ValueSet-procedure-code-vs.html), which holds SNOMED CT for clinical meaning and [ICHI](ValueSet-ichi-vs.html) for the statistical code - carry both as two codings where a procedure needs to be reported as well as recorded);
 - the subject and the encounter it occurred in;
 - the occurrence[x] timing, the recorded date, and the recorder;
 - the performer and their actor;
@@ -30,7 +30,7 @@ The examples below go from the smallest instance the server will accept to a ful
 
 #### The smallest Procedure you should send
 
-A Procedure's mandatory elements are `status` (a required binding: `preparation` \| `in-progress` \| `completed` \| `not-done` ...) and `subject` (a plain reference to the [Patient](StructureDefinition-uz-core-patient.html) it was performed on), but it is only useful once it also says *what* was done. Add the `code` (a required binding to the DHP procedure-code value set, here a SNOMED CT code) and, in practice, the `encounter` it took place in and when it happened (`occurrence[x]`). Every UZ Core resource must also name the profile in `meta.profile`:
+A Procedure's mandatory elements are `status` (a required binding: `preparation` \| `in-progress` \| `completed` \| `not-done` ...) and `subject` (a plain reference to the [Patient](StructureDefinition-uz-core-patient.html) it was performed on), but it is only useful once it also says *what* was done. Add the `code` (an extensible binding to the DHP procedure-code value set, here a SNOMED CT code) and, in practice, the `encounter` it took place in and when it happened (`occurrence[x]`). Every UZ Core resource must also name the profile in `meta.profile`:
 
 ```json
 {

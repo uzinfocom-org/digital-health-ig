@@ -16,7 +16,7 @@ Har bir PlanDefinition url (ushbu jadval uchun kanonik identifikator), mashina t
 
 - identifikator, version va version algoritmi, inson tomonidan oʻqiladigan title va status (draft, active, retired);
 - jadval taalluqli boʻlgan subject (kodlangan tushuncha yoki havola);
-- date, publisher, foydalanish konteksti, tasdiqlash sanasi va amal qilish davri;
+- date, publisher, foydalanish konteksti (jadval qayerda qoʻllanilishi - butun mamlakat boʻylab yoki muayyan viloyatlarda - ham shu yerda), tasdiqlash sanasi va amal qilish davri;
 - jadvalni tashkil etuvchi action lar, har biri linkId, title, description va code bilan;
 - har bir action uchun: condition (muvofiqlik - uning kind va FHIRPath ifodasi), bogʻliq action (maqsadli action, munosabat va eng kichik intervallar uchun offset - davomiylik yoki diapazon sifatida), timing (yosh yoki jadval), participant (uning actor id va type) va definition (ActivityDefinition yoki boshqa definition ga kanonik havola yoki uri).
 
@@ -61,6 +61,45 @@ PlanDefinition asosan bir marta yoziladi va tavsiya mexanizmi tomonidan oʻqilad
 ```
 
 Aniq bitta `focus` konteksti ruxsat etiladi. Emlash jadvali uchun `33879002`, toʻliq qon donatsiyasi jadvali uchun `25179006`, skrining jadvali uchun esa `360156006` dan foydalaning. Jadval `GET [base]/PlanDefinition?context-type-value=focus$http://snomed.info/sct|33879002` soʻrovi bilan topiladi.
+
+#### Milliy yoki hududiy
+
+`jurisdiction` foydalanish konteksti jadval qayerda qoʻllanilishini bildiradi. Milliy jadval `UZ` mamlakat kodi bilan bitta yozuvni olib yuradi. Hududiy jadval esa har bir viloyat uchun bittadan yozuvni olib yuradi va bemor manzilidagi `Address.state` bilan bir xil viloyat kodlaridan foydalanadi, shuning uchun bemorning viloyatini u yerda amal qiluvchi jadvallar bilan toʻgʻridan-toʻgʻri solishtirish mumkin. Jadval bir vaqtning oʻzida ikkalasi ham boʻla olmaydi: `UZ` ni viloyat kodlari bilan birga ishlatib boʻlmaydi. Faqat Samarqand va Navoiy viloyatlarida oʻtkaziladigan skrining jadvali:
+
+```json
+{
+  "resourceType": "PlanDefinition",
+  "meta": {
+    "profile": ["https://dhp.uz/fhir/core/StructureDefinition/uz-core-plan-definition"]
+  },
+  "url": "https://terminology.dhp.uz/fhir/core/PlanDefinition/example-uz-core-regional-screening-plan-definition",
+  "name": "ExampleRegionalDiabetesScreeningPlanDefinition",
+  "status": "draft",
+  "description": "Example screening PlanDefinition run in Samarqand and Navoiy regions only.",
+  "useContext": [
+    {
+      "code": { "system": "http://terminology.hl7.org/CodeSystem/usage-context-type", "code": "focus" },
+      "valueCodeableConcept": {
+        "coding": [ { "system": "http://snomed.info/sct", "code": "360156006", "display": "Screening intent" } ]
+      }
+    },
+    {
+      "code": { "system": "http://terminology.hl7.org/CodeSystem/usage-context-type", "code": "jurisdiction" },
+      "valueCodeableConcept": {
+        "coding": [ { "system": "https://terminology.dhp.uz/fhir/core/CodeSystem/states-cs", "code": "1718" } ]
+      }
+    },
+    {
+      "code": { "system": "http://terminology.hl7.org/CodeSystem/usage-context-type", "code": "jurisdiction" },
+      "valueCodeableConcept": {
+        "coding": [ { "system": "https://terminology.dhp.uz/fhir/core/CodeSystem/states-cs", "code": "1712" } ]
+      }
+    }
+  ]
+}
+```
+
+Milliy jadval uchun yurisdiksiya yozuvi `{ "system": "urn:iso:std:iso:3166", "code": "UZ" }` boʻladi. `jurisdiction` elementi oʻrniga ushbu foydalanish kontekstidan foydalaning: FHIR R5 bu elementni eskirgan deb belgilaydi, R6 esa uni jadval qoʻllaniladigan joy emas, balki jadvalni chiqargan organning yurisdiksiyasi sifatida qayta taʼriflaydi. Viloyatda amal qiluvchi jadvallar `GET [base]/PlanDefinition?context-type-value=jurisdiction$https://terminology.dhp.uz/fhir/core/CodeSystem/states-cs|1718` soʻrovi bilan topiladi. Toʻliq namuna uchun [hududiy skrining misoli](PlanDefinition-example-uz-core-regional-screening-plan-definition.html) ga qarang.
 
 `name` - mashina tomonidan qayta ishlanadigan nom (boʻshliqlarsiz); mavjud boʻlsa, inson tomonidan oʻqiladigan `title` ni qoʻshing. Nashr etilgan jadval olib yurishi kerak boʻlgan publisher, date va version maydonlari uchun [Metadata](general-guidance.html#metadata) ga qarang.
 

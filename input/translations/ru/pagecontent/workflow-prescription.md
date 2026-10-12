@@ -59,5 +59,5 @@ GET [base]/MedicationDispense?prescription=MedicationRequest/[id]
 ### Связанные материалы
 
 - Профили: [Condition](StructureDefinition-uz-core-condition.html) &middot; [Patient](StructureDefinition-uz-core-patient.html) &middot; [PractitionerRole](StructureDefinition-uz-core-practitioner-role.html)
-- Компонент: [Рецепты](components.html#рецепты)
+- Компонент: [Рецепты](components.html#prescription)
 - [Обзор процессов](workflows.html) &middot; [Общие рекомендации](general-guidance.html)

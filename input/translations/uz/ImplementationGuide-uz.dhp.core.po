@@ -2827,74 +2827,6 @@ msgstr ""
 
 # ImplementationGuide.definition.resource.name
 #: ImplementationGuide.definition.resource.name
-msgid "SSV Level Type to Subordination Group"
-msgstr ""
-"SSV daraja turini Subordination Group ga moslashtirish"
-
-# ImplementationGuide.definition.resource.description
-#: ImplementationGuide.definition.resource.description
-msgid ""
-"Maps SSV organization level type codes to UZ Core Organizational "
-"Subordination Group codes. SSV classifies healthcare facilities into "
-"administrative levels, while OrganizationalSubordinationGroupCS groups "
-"institutions by their administrative subordination (republican, territorial, "
-"district/city, other ministries, private). The SSV level types Shahar "
-"(Urban), Tuman (Area), and Mahalla (District) all fall under the combined "
-"district-and-city administration category in the target."
-msgstr ""
-"SSV tashkilot darajasi turi kodlarini UZ Core Organizational Subordination "
-"Group kodlariga moslashtiradi. SSV tibbiyot muassasalarini ma’muriy "
-"darajalar bo‘yicha tasniflaydi, OrganizationalSubordinationGroupCS esa "
-"muassasalarni ularning ma’muriy bo‘ysunuvi bo‘yicha guruhlaydi (respublika, "
-"hududiy, tuman/shahar, boshqa vazirliklar, xususiy). SSV dagi Shahar, Tuman "
-"va Mahalla daraja turlari maqsadli tizimdagi birlashtirilgan tuman-shahar "
-"boshqaruvi toifasiga kiradi."
-
-# ImplementationGuide.definition.resource.name
-#: ImplementationGuide.definition.resource.name
-msgid "SSV Medical Type to Organizational Structure"
-msgstr ""
-"SSV tibbiy turini Organizational Structure ga moslashtirish"
-
-# ImplementationGuide.definition.resource.description
-#: ImplementationGuide.definition.resource.description
-msgid ""
-"Maps SSV medical type codes to UZ Core Organizational Structure codes. SSV "
-"classifies healthcare facilities into 45 medical types, while "
-"OrganizationalStructureCS provides the Ministry of Health's detailed "
-"classification of institution types."
-msgstr ""
-"SSV tibbiy tur kodlarini UZ Core Organizational Structure kodlariga "
-"moslashtiradi. SSV tibbiyot muassasalarini 45 ta tibbiy turga tasniflaydi, "
-"OrganizationalStructureCS esa Sog‘liqni saqlash vazirligi tomonidan "
-"belgilangan muassasa turlarining batafsil tasnifini taqdim etadi."
-
-# ImplementationGuide.definition.resource.name
-#: ImplementationGuide.definition.resource.name
-msgid "SSV Service Type to Organizational Service Group"
-msgstr ""
-"SSV xizmat turini Organizational Service Group ga moslashtirish"
-
-# ImplementationGuide.definition.resource.description
-#: ImplementationGuide.definition.resource.description
-msgid ""
-"Maps SSV service type codes to UZ Core Organizational Service Group codes. "
-"SSV uses service type classification per organization, while "
-"OrganizationalServiceGroupCS uses a single pre-combined classification. When "
-"an organization has multiple SSV service types, the combination should be "
-"considered to select the appropriate target code (e.g. Inpatient + "
-"Outpatient together maps to III_100)."
-msgstr ""
-"SSV xizmat turi kodlarini UZ Core Organizational Service Group kodlariga "
-"moslashtiradi. SSV har bir tashkilot bo‘yicha xizmat turi tasnifidan "
-"foydalanadi, OrganizationalServiceGroupCS esa yagona oldindan "
-"birlashtirilgan tasnifdan foydalanadi. Agar tashkilotda bir nechta SSV "
-"xizmat turi mavjud bo‘lsa, tegishli maqsadli kodni tanlash uchun ularning "
-"kombinatsiyasi hisobga olinishi kerak (masalan, Statsionar + ambulatoriya "
-"birgalikda III_100 ga moslashtiriladi)."
-
-# ImplementationGuide.definition.resource.name
-#: ImplementationGuide.definition.resource.name
 msgid "Nationality from dmp.uz"
 msgstr ""
 "dmp.uz manbasidagi millat "
@@ -5264,8 +5196,8 @@ msgstr "translationinfo.html"
 
 # ImplementationGuide.definition.page.title
 #: ImplementationGuide.definition.page.title
-msgid "Translationinfo"
-msgstr "Translationinfo"
+msgid "Translation information"
+msgstr "Tarjimalar haqida ma'lumot"
 
 # ImplementationGuide.definition.page.source[x]
 #: ImplementationGuide.definition.page.source[x]
@@ -5337,3 +5269,19 @@ msgstr "Guruh sanab o'tishi mumkin bo'lgan resurs turlari, o'zbek va rus tillari
 #: ImplementationGuide.definition.resource.description
 msgid "Group type supplement with translations in Uzbek and Russian"
 msgstr "Guruh turi to'ldirmasi, o'zbek va rus tillariga tarjimalari bilan"
+
+# --- UZ Core PlanDefinition jurisdiction (resource descriptions) ---
+# ImplementationGuide.definition.resource.description
+#: ImplementationGuide.definition.resource.description
+msgid "Where in Uzbekistan an artifact applies - the whole country for national artifacts, or one of its regions for regional ones"
+msgstr "Artefakt O'zbekistonning qayerida qo'llanilishi - milliy artefaktlar uchun butun mamlakat, hududiy artefaktlar uchun esa uning viloyatlaridan biri"
+
+# ImplementationGuide.definition.resource.description
+#: ImplementationGuide.definition.resource.description
+msgid "Example type 2 diabetes screening schedule that applies in two regions only, showing one jurisdiction use context per region."
+msgstr "Faqat ikki viloyatda qo'llaniladigan 2-tip qandli diabet skrining jadvali namunasi, har bir viloyat uchun bittadan jurisdiction foydalanish konteksti bilan."
+
+# ImplementationGuide.definition.resource.description
+#: ImplementationGuide.definition.resource.description
+msgid "Example age-based national immunization schedule, showing the focus, category and jurisdiction use contexts, the vaccination actions, their timing, and the relationship between two doses."
+msgstr "Yoshga asoslangan milliy emlash jadvali namunasi: focus, toifa va jurisdiction foydalanish kontekstlari, emlash action lari, ularning vaqti hamda ikki doza orasidagi bog'liqlik ko'rsatilgan."

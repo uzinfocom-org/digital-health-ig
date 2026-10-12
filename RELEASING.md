@@ -28,9 +28,41 @@ Publishing a release is automated by [`.github/workflows/release.yml`](.github/w
    - opens a PR adding `X.Y.Z` to [`docs/package-feed.xml`](docs/package-feed.xml)
      so the FHIR package registry discovers it.
 
-4. **Merge the package-feed PR.**
+4. **dhp.uz publishes the release on its own.** A GitLab instance pull-mirrors
+   this repository and runs the publication build there, so GitHub stays the
+   source of truth and there is nothing to trigger by hand. The mirror polls
+   every 30 minutes and a core build takes 73-93 minutes, so allow up to two
+   hours from pushing the tag before `https://dhp.uz/fhir/core/X.Y.Z/` appears
+   and `https://dhp.uz/fhir/core/` starts serving it. Until then the tag is only
+   on GitHub.
 
-5. **Announce the release by email** to the implementation teams and to the
+   The published build reports a few more QA findings than CI did, because
+   `-go-publish` revalidates against a cold terminology cache. On the publishing
+   host, `ci/verify-site.sh https://dhp.uz core <previous> X.Y.Z` checks the
+   result and `ci/release-rollback.sh X.Y.Z` undoes it; the pipeline and those
+   scripts live in
+   [dhp-gitlab-publishing](https://github.com/vadi2/dhp-gitlab-publishing).
+
+5. **Merge the package-feed PR.** The Release workflow opens it with
+   `GITHUB_TOKEN`, and events from that token start no workflows, so the
+   required `sushi` and `ig-publisher` checks never report and the ruleset
+   blocks the merge. Push any commit to its branch to make them run:
+
+   ```bash
+   BRANCH=chore/package-feed-X.Y.Z
+   git fetch origin $BRANCH && git checkout $BRANCH
+   git commit --allow-empty -m "run checks" && git push
+   ```
+
+   Auto-merge is already armed by the workflow, so the PR merges itself shortly
+   after the checks pass; merge it by hand if it has not. The squash drops the
+   extra commit.
+
+   Merging it is also what lets the integration guide release the same version:
+   its `uz.dhp.core` bump cannot build until packages.fhir.org serves the new
+   core package, which it picks up from this feed.
+
+6. **Announce the release by email** to the implementation teams and to the
    Civitta review. Send it once the package feed PR is merged, so the version is
    actually installable when people go looking for it.
 
@@ -45,6 +77,10 @@ Publishing a release is automated by [`.github/workflows/release.yml`](.github/w
 
    Call out breaking changes explicitly in the summary rather than leaving them
    to be found in the changelog - they are the reason the email exists.
+
+   When the integration guide releases the same version, announce both guides in
+   one email rather than two, and post the same announcement to the
+   implementation Telegram group in Russian.
 
 `main` is ruleset-protected (PR + `sushi`/`ig-publisher` checks required, no
 bypass), so the feed change must go through a PR rather than a direct push.

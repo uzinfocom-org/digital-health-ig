@@ -12,3 +12,7 @@ Description: "Immunization status reason codes with Uzbek and Russian translatio
 * $v3-ActReason#MEDPREC "medical precaution"
 * $v3-ActReason#OSTOCK "product out of stock"
 * $v3-ActReason#PATOBJ "patient objection"
+* $v3-ActReason#PHILISOP "philosophical objection"
+* $v3-ActReason#RELIG "religious objection"
+* $v3-ActReason#VACEFF "vaccine efficacy concerns"
+* $v3-ActReason#VACSAF "vaccine safety concerns"
