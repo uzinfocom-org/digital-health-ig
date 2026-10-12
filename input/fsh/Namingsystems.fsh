@@ -676,3 +676,77 @@ Usage: #definition
 * uniqueId[0].type = #uri
 * uniqueId[=].value = $blood-donation-number
 * uniqueId[=].preferred = true
+
+Instance: uzb-supply-request-number
+InstanceOf: NamingSystem
+Description: "Supply request numbers assigned by requesting hospitals in Uzbekistan"
+Usage: #definition
+* url = "https://terminology.dhp.uz/fhir/core/NamingSystem/uzb-supply-request-number"
+* name = "UzbekistanSupplyRequestIdentifier"
+* status = #active
+* kind = #identifier
+* date = "2026-09-30"
+* publisher = "Uzinfocom"
+* responsible = "Ministry of Health of the Republic of Uzbekistan"
+* type = $identifier-type#PLAC "Placer Identifier"
+* description = "Naming system for supply request numbers assigned by the requesting hospital's information system when ordering blood components from the blood service."
+* jurisdiction = urn:iso:std:iso:3166#UZ "Uzbekistan"
+* usage = "Used in SupplyRequest.identifier.system to identify and track the hospital's supply request and correlate it with the blood service's response and delivery. Values must be unique across requesting hospitals within this namespace, using coordinated allocation or an issuer-qualified value. Record the requesting hospital in identifier.assigner."
+* uniqueId[0].type = #uri
+* uniqueId[=].value = $supply-request-number
+* uniqueId[=].preferred = true
+
+Instance: uzb-supply-contract-number
+InstanceOf: NamingSystem
+Description: "Supply agreement numbers between hospitals and blood services in Uzbekistan"
+Usage: #definition
+* url = "https://terminology.dhp.uz/fhir/core/NamingSystem/uzb-supply-contract-number"
+* name = "UzbekistanSupplyContractIdentifier"
+* status = #active
+* kind = #identifier
+* date = "2026-09-30"
+* publisher = "Uzinfocom"
+* responsible = "Ministry of Health of the Republic of Uzbekistan"
+* description = "Naming system for numbers identifying supply agreements between the requesting hospital and the blood service, as recorded in the source system's Contract module."
+* jurisdiction = urn:iso:std:iso:3166#UZ "Uzbekistan"
+* usage = "Used in SupplyRequest.identifier.system to link a supply request to the agreement under which the blood service supplies blood components to the hospital. Values must be unique across agreements within this namespace, using coordinated allocation or an issuer-qualified value. Record the party that issued the agreement number in identifier.assigner."
+* uniqueId[0].type = #uri
+* uniqueId[=].value = $supply-contract-number
+* uniqueId[=].preferred = true
+
+Instance: uzb-supply-delivery-number
+InstanceOf: NamingSystem
+Description: "Supply delivery numbers assigned by suppliers such as blood services in Uzbekistan"
+Usage: #definition
+* url = "https://terminology.dhp.uz/fhir/core/NamingSystem/uzb-supply-delivery-number"
+* name = "UzbekistanSupplyDeliveryIdentifier"
+* status = #active
+* kind = #identifier
+* date = "2026-09-30"
+* publisher = "Uzinfocom"
+* responsible = "Ministry of Health of the Republic of Uzbekistan"
+* type = $identifier-type#FILL "Filler Identifier"
+* description = "Naming system for supply delivery numbers assigned by the supplier's information system when it issues supplies, such as the blood service issuing blood components to a hospital."
+* jurisdiction = urn:iso:std:iso:3166#UZ "Uzbekistan"
+* usage = "Used in SupplyDelivery.identifier.system to identify and track a delivery and correlate it with the supply request it fulfils. Values must be unique across suppliers within this namespace, using coordinated allocation or an issuer-qualified value. Record the supplier in identifier.assigner."
+* uniqueId[0].type = #uri
+* uniqueId[=].value = $supply-delivery-number
+* uniqueId[=].preferred = true
+
+Instance: uzb-specialist-certificate
+InstanceOf: NamingSystem
+Description: "Specialist certificate numbers of healthcare professionals issued by the Ministry of Health of Uzbekistan"
+Usage: #definition
+* url = "https://terminology.dhp.uz/fhir/core/NamingSystem/uzb-specialist-certificate"
+* name = "UzbekistanSpecialistCertificateSystem"
+* status = #active
+* kind = #identifier
+* date = "2026-10-08"
+* publisher = "Uzinfocom"
+* responsible = "Ministry of Health of the Republic of Uzbekistan"
+* description = "Naming system for specialist certificates that the Ministry of Health of the Republic of Uzbekistan issues to healthcare professionals. The identifier value is the certificate series followed by its number, without separators (e.g. CA008815)."
+* jurisdiction = urn:iso:std:iso:3166#UZ "Uzbekistan"
+* usage = "Used in Practitioner.qualification.identifier to identify the specialist certificate of a healthcare professional."
+* uniqueId[0].type = #uri
+* uniqueId[=].value = $specialist-certificate
+* uniqueId[=].preferred = true
