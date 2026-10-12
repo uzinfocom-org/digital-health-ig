@@ -53,7 +53,15 @@ Description: "Uzbekistan Core Laboratory ObservationDefinition profile, used to 
 * permittedDataType ^short = "Allowed value types for laboratory observation results"
 
 * permittedUnit MS
-* permittedUnit from UCUMUnitsSupplementVS (extensible)
+* permittedUnit from UCUMUnitsSupplementVS (preferred)
+* permittedUnit ^slicing.discriminator.type = #value
+* permittedUnit ^slicing.discriminator.path = "$this"
+* permittedUnit ^slicing.rules = #open
+* permittedUnit ^slicing.description = "Units from UCUM; codes from other systems are allowed alongside them"
+* permittedUnit ^slicing.ordered = false
+* permittedUnit contains ucum 0..* MS
+* permittedUnit[ucum] from UCUMUnitsSupplementVS (required)
+* permittedUnit[ucum] ^short = "Permitted unit from UCUM"
 * permittedUnit ^short = "Permitted unit of measure for the laboratory analyte value in uzbek and russian translations"
 
 * method MS
