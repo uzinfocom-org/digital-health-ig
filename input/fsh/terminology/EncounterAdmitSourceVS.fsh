@@ -13,3 +13,5 @@ Description: "Encounter admit source codes with English and Russian translations
 * include $encounter-admit-source#other
 
 * include codes from system admit-source-local-cs
+
+* include codes from system encounter-admit-source-ambulance-cs
