@@ -1,10 +1,33 @@
-CodeSystem: ObservationBodySiteCS
-Id: observation-body-site-cs
-Title: "Observation Body Site CS"
-Description: "Observation body site supplement with Uzbek and Russian translations"
+CodeSystem: BodySiteCS
+Id: body-site-cs
+Title: "Body Site CS"
+Description: "Body site supplement with Uzbek and Russian translations"
 
-* insert SupplementCodeSystemDraft(observation-body-site-cs, $sct, 2026.1.0)
+* insert SupplementCodeSystemDraft(body-site-cs, $sct, 2026.1.0)
 
+* #368210008
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Левая рука"
+  * ^designation[+].language = #uz
+  * ^designation[=].value = "Chap qo'l"
+
+* #368211007
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Правая рука"
+  * ^designation[+].language = #uz
+  * ^designation[=].value = "O'ng qo'l"
+
+* #368225008
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Левое бедро"
+  * ^designation[+].language = #uz
+  * ^designation[=].value = "Chap son"
+
+* #368224007
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Правое бедро"
+  * ^designation[+].language = #uz
+  * ^designation[=].value = "O'ng son"
 
 * #53075003
   * ^designation[0].language = #ru
@@ -44,49 +67,49 @@ Description: "Observation body site supplement with Uzbek and Russian translatio
 
 * #371216008
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Структура дистального межфалангового сустава второго пальца стопы"
+  * ^designation[=].value = "Структура дистального межфалангового сустава второго пальца стопы (строение тела)"
   * ^designation[+].language = #uz
   * ^designation[=].value = "Oyoq ikkinchi barmog'ining distal falangalararo bo'g'imi"
 
 * #371219001
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Структура дистального межфалангового сустава третьего пальца стопы"
+  * ^designation[=].value = "Структура дистального межфалангового сустава третьего пальца стопы (строение тела)"
   * ^designation[+].language = #uz
   * ^designation[=].value = "Oyoq uchinchi barmog'ining distal falangalararo bo'g'imi"
 
 * #371205001
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Структура дистального межфалангового сустава четвертого пальца стопы"
+  * ^designation[=].value = "Структура дистального межфалангового сустава четвертого пальца стопы (строение тела)"
   * ^designation[+].language = #uz
   * ^designation[=].value = "Oyoq to'rtinchi barmog'ining distal falangalararo bo'g'imi"
 
 * #371203008
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Структура дистального межфалангового сустава пятого пальца стопы"
+  * ^designation[=].value = "Структура дистального межфалангового сустава пятого пальца стопы (строение тела)"
   * ^designation[+].language = #uz
   * ^designation[=].value = "Oyoq beshinchi barmog'ining distal falangalararo bo'g'imi"
 
 * #371292009
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Строение проксимального межфалангового сустава второго пальца стопы"
+  * ^designation[=].value = "Строение проксимального межфалангового сустава второго пальца стопы (строение тела)"
   * ^designation[+].language = #uz
   * ^designation[=].value = "Oyoq ikkinchi barmog'ining proksimal falangalararo bo'g'imi"
 
 * #371255009
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Строение проксимального межфалангового сустава третьего пальца стопы"
+  * ^designation[=].value = "Строение проксимального межфалангового сустава третьего пальца стопы (строение тела)"
   * ^designation[+].language = #uz
   * ^designation[=].value = "Oyoq uchinchi barmog'ining proksimal falangalararo bo'g'imi"
 
 * #371288002
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Строение проксимального межфалангового сустава четвертого пальца стопы"
+  * ^designation[=].value = "Строение проксимального межфалангового сустава четвертого пальца стопы (строение тела)"
   * ^designation[+].language = #uz
   * ^designation[=].value = "Oyoq to'rtinchi barmog'ining proksimal falangalararo bo'g'imi"
 
 * #371284000
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Строение проксимального межфалангового сустава пятого пальца стопы"
+  * ^designation[=].value = "Строение проксимального межфалангового сустава пятого пальца стопы (строение тела)"
   * ^designation[+].language = #uz
   * ^designation[=].value = "Oyoq beshinchi barmog'ining proksimal falangalararo bo'g'imi"
 
@@ -176,7 +199,7 @@ Description: "Observation body site supplement with Uzbek and Russian translatio
 
 * #81012005
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Кубоид"
+  * ^designation[=].value = "Кубовидная кость"
   * ^designation[+].language = #uz
   * ^designation[=].value = "Kubsimon suyak"
 
@@ -188,7 +211,7 @@ Description: "Observation body site supplement with Uzbek and Russian translatio
 
 * #67453005
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Осыпь"
+  * ^designation[=].value = "Таранная кость"
   * ^designation[+].language = #uz
   * ^designation[=].value = "Oshiq suyak"
 
@@ -248,9 +271,9 @@ Description: "Observation body site supplement with Uzbek and Russian translatio
 
 * #442083009
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Анатомическое или приобретенное строение тела"
+  * ^designation[=].value = "Анатомическое или приобретенное строение тела (строение тела)"
   * ^designation[+].language = #uz
-  * ^designation[=].value = "Anatomik yoki orttirilgan tana tuzilmasi"
+  * ^designation[=].value = "Anatomik yoki orttirilgan tana tuzilmasi (tana tuzilmasi)"
 
 * #107008
   * ^designation[0].language = #ru
@@ -290,7 +313,7 @@ Description: "Observation body site supplement with Uzbek and Russian translatio
 
 * #149003
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Центральная пара микротрубочек, ресничка или жгутик, не бактериальная"
+  * ^designation[=].value = "Центральная пара микротрубочек реснички или жгутика (небактериальных)"
   * ^designation[+].language = #uz
   * ^designation[=].value = "Kiprik yoki xivchinning markaziy juft mikronaychalari, bakterial emas"
 
@@ -308,7 +331,7 @@ Description: "Observation body site supplement with Uzbek and Russian translatio
 
 * #202009
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Передний отдел почечной артерии"
+  * ^designation[=].value = "Передняя ветвь почечной артерии"
   * ^designation[+].language = #uz
   * ^designation[=].value = "Buyrak arteriyasining oldingi tarmog'i"
 
@@ -326,7 +349,7 @@ Description: "Observation body site supplement with Uzbek and Russian translatio
 
 * #221001
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Суставная поверхность, фаланги, четвертой пястной кости"
+  * ^designation[=].value = "Фаланговая суставная поверхность четвертой пястной кости"
   * ^designation[+].language = #uz
   * ^designation[=].value = "To'rtinchi kaft suyagining falangalar bilan bo'g'im yuzasi"
 
@@ -374,7 +397,7 @@ Description: "Observation body site supplement with Uzbek and Russian translatio
 
 * #263002
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Грудной нерв"
+  * ^designation[=].value = "Грудной спинномозговой нерв"
   * ^designation[+].language = #uz
   * ^designation[=].value = "Ko'krak nervi"
 
@@ -392,7 +415,7 @@ Description: "Observation body site supplement with Uzbek and Russian translatio
 
 * #273000
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Боковой миокард"
+  * ^designation[=].value = "Миокард боковой стенки"
   * ^designation[+].language = #uz
   * ^designation[=].value = "Lateral miokard"
 
@@ -434,13 +457,13 @@ Description: "Observation body site supplement with Uzbek and Russian translatio
 
 * #318001
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Кардиальный отпечаток печени"
+  * ^designation[=].value = "Сердечное вдавление печени"
   * ^designation[+].language = #uz
   * ^designation[=].value = "Jigarning yurak botig'i"
 
 * #344001
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Лодыжка"
+  * ^designation[=].value = "Область голеностопного сустава"
   * ^designation[+].language = #uz
   * ^designation[=].value = "To'piq-boldir bo'g'imi sohasi"
 
@@ -452,7 +475,7 @@ Description: "Observation body site supplement with Uzbek and Russian translatio
 
 * #356000
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Ретикулярный кориум"
+  * ^designation[=].value = "Сетчатый слой дермы"
   * ^designation[+].language = #uz
   * ^designation[=].value = "Terining to'rsimon qatlami"
 
@@ -584,7 +607,7 @@ Description: "Observation body site supplement with Uzbek and Russian translatio
 
 * #608002
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Подкожная клетчатка желобка"
+  * ^designation[=].value = "Подкожная клетчатка губного желобка (фильтрума)"
   * ^designation[+].language = #uz
   * ^designation[=].value = "Lab ustki egatining teri osti to'qimasi"
 
@@ -644,19 +667,19 @@ Description: "Observation body site supplement with Uzbek and Russian translatio
 
 * #723004
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Плотные промежуточные пучки филаментов"
+  * ^designation[=].value = "Плотные пучки промежуточных филаментов"
   * ^designation[+].language = #uz
   * ^designation[=].value = "Zich oraliq filament tutamlari"
 
 * #774007
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Строение головы и шеи"
+  * ^designation[=].value = "Голова и/или шея"
   * ^designation[+].language = #uz
   * ^designation[=].value = "Bosh va bo'yin tuzilmasi"
 
 * #790007
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Висцеральная часть печени"
+  * ^designation[=].value = "Висцеральная поверхность печени"
   * ^designation[+].language = #uz
   * ^designation[=].value = "Jigarning visseral yuzasi"
 
@@ -716,7 +739,7 @@ Description: "Observation body site supplement with Uzbek and Russian translatio
 
 * #921006
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Щитоподъязычная ветвь петли шейки матки"
+  * ^designation[=].value = "Щитоподъязычная ветвь шейной петли"
   * ^designation[+].language = #uz
   * ^designation[=].value = "Bo'yin qovuzlog'ining qalqonsimon-til osti tarmog'i"
 
@@ -770,7 +793,7 @@ Description: "Observation body site supplement with Uzbek and Russian translatio
 
 * #1030007
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Пузырчатая сумка грудино-подъязычной мышцы"
+  * ^designation[=].value = "Синовиальная сумка грудино-подъязычной мышцы"
   * ^designation[+].language = #uz
   * ^designation[=].value = "To'sh-til osti mushagining sinovial xaltasi"
 
@@ -794,7 +817,7 @@ Description: "Observation body site supplement with Uzbek and Russian translatio
 
 * #1086007
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Женский"
+  * ^designation[=].value = "Женская структура тела"
   * ^designation[+].language = #uz
   * ^designation[=].value = "Ayol"
 
@@ -854,7 +877,7 @@ Description: "Observation body site supplement with Uzbek and Russian translatio
 
 * #1172006
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Зубовидный отросток оси"
+  * ^designation[=].value = "Зуб осевого позвонка"
   * ^designation[+].language = #uz
   * ^designation[=].value = "Aksis (II bo'yin umurtqasi) tishsimon o'sig'i"
 
@@ -968,7 +991,7 @@ Description: "Observation body site supplement with Uzbek and Russian translatio
 
 * #1456008
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Желтый фиброзный хрящ"
+  * ^designation[=].value = "Эластический (желтый) хрящ"
   * ^designation[+].language = #uz
   * ^designation[=].value = "Sariq fibroz tog'ay"
 
@@ -1034,13 +1057,13 @@ Description: "Observation body site supplement with Uzbek and Russian translatio
 
 * #1580005
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Вентрально-латеральное ядро таламуса"
+  * ^designation[=].value = "Вентролатеральное ядро таламуса"
   * ^designation[+].language = #uz
   * ^designation[=].value = "Talamusning ventral lateral yadrosi"
 
 * #1581009
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Подвздошные артерии"
+  * ^designation[=].value = "Подвздошно-кишечные артерии"
   * ^designation[+].language = #uz
   * ^designation[=].value = "Yonbosh ichak arteriyalari"
 
@@ -1076,7 +1099,7 @@ Description: "Observation body site supplement with Uzbek and Russian translatio
 
 * #1617005
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Внутренняя гортань"
+  * ^designation[=].value = "Внутренняя часть гортани"
   * ^designation[+].language = #uz
   * ^designation[=].value = "Hiqildoqning ichki mushaklari"
 
@@ -1116,12 +1139,6 @@ Description: "Observation body site supplement with Uzbek and Russian translatio
   * ^designation[+].language = #uz
   * ^designation[=].value = "Chap o'pka darvozasi"
 
-* #1655000
-  * ^designation[0].language = #ru
-  * ^designation[=].value = "Ядро поперечного ножкового тракта"
-  * ^designation[+].language = #uz
-  * ^designation[=].value = "Ko'ndalang oyoqcha yo'li yadrosi"
-
 * #1659006
   * ^designation[0].language = #ru
   * ^designation[=].value = "Дорсомедиальное ядро таламуса"
@@ -1154,13 +1171,13 @@ Description: "Observation body site supplement with Uzbek and Russian translatio
 
 * #1716007
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Купула ампулярная"
+  * ^designation[=].value = "Купула ампулярного гребешка"
   * ^designation[+].language = #uz
   * ^designation[=].value = "Ampulyar gumbazcha (kupula)"
 
 * #1721005
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Правая миндалина"
+  * ^designation[=].value = "Правая небная миндалина"
   * ^designation[+].language = #uz
   * ^designation[=].value = "O'ng murtak"
 
@@ -1178,7 +1195,7 @@ Description: "Observation body site supplement with Uzbek and Russian translatio
 
 * #1765002
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Лимфатическая система грудной клетки"
+  * ^designation[=].value = "Лимфатический сосуд грудной клетки"
   * ^designation[+].language = #uz
   * ^designation[=].value = "Ko'krak qafasining limfa tomiri"
 
@@ -1196,7 +1213,7 @@ Description: "Observation body site supplement with Uzbek and Russian translatio
 
 * #1797002
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Нарис"
+  * ^designation[=].value = "Ноздря"
   * ^designation[+].language = #uz
   * ^designation[=].value = "Burun teshigi"
 
@@ -1262,7 +1279,7 @@ Description: "Observation body site supplement with Uzbek and Russian translatio
 
 * #1918003
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Надпочечниковая аорта"
+  * ^designation[=].value = "Супраренальный отдел брюшной аорты"
   * ^designation[+].language = #uz
   * ^designation[=].value = "Buyrak usti aortasi"
 
@@ -1274,13 +1291,13 @@ Description: "Observation body site supplement with Uzbek and Russian translatio
 
 * #1992003
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Внутренний слуховой проход"
+  * ^designation[=].value = "Внутреннее слуховое отверстие"
   * ^designation[+].language = #uz
   * ^designation[=].value = "Ichki eshitish yo'li teshigi"
 
 * #1997009
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Cingulum dentis"
+  * ^designation[=].value = "Поясок зуба (cingulum dentis)"
   * ^designation[+].language = #uz
   * ^designation[=].value = "Tish belbog'i (singulum)"
 
@@ -1340,19 +1357,19 @@ Description: "Observation body site supplement with Uzbek and Russian translatio
 
 * #2076008
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Головка фаланги руки"
+  * ^designation[=].value = "Головка фаланги пальца кисти"
   * ^designation[+].language = #uz
   * ^designation[=].value = "Qo'l falangasi boshchasi"
 
 * #2083001
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Ядро двусмысленное"
+  * ^designation[=].value = "Двойное ядро"
   * ^designation[+].language = #uz
   * ^designation[=].value = "Ikkilanuvchi (ambigual) yadro"
 
 * #2095001
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Добавочная пазуха"
+  * ^designation[=].value = "Околоносовая пазуха"
   * ^designation[+].language = #uz
   * ^designation[=].value = "Burun yondosh bo'shlig'i"
 
@@ -1424,7 +1441,7 @@ Description: "Observation body site supplement with Uzbek and Russian translatio
 
 * #2255006
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Подсерозный"
+  * ^designation[=].value = "Подсерозная основа"
   * ^designation[+].language = #uz
   * ^designation[=].value = "Seroz osti qavati"
 
@@ -1448,9 +1465,9 @@ Description: "Observation body site supplement with Uzbek and Russian translatio
 
 * #2327009
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Вся слюнная серозно-слизистая железа"
+  * ^designation[=].value = "Вся слюнная серозно-слизистая железа (строение тела)"
   * ^designation[+].language = #uz
-  * ^designation[=].value = "Butun so'lak seroz-shilliq bezi"
+  * ^designation[=].value = "Butun so'lak seroz-shilliq bezi (tana tuzilmasi)"
 
 * #2330002
   * ^designation[0].language = #ru
@@ -1502,7 +1519,7 @@ Description: "Observation body site supplement with Uzbek and Russian translatio
 
 * #2397002
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Первая плюсневая кость медиальной клиновидной кости"
+  * ^designation[=].value = "Суставная поверхность медиальной клиновидной кости для первой плюсневой кости"
   * ^designation[+].language = #uz
   * ^designation[=].value = "Medial ponasimon suyakning birinchi metatarzal bo'g'im yuzasi"
 
@@ -1544,7 +1561,7 @@ Description: "Observation body site supplement with Uzbek and Russian translatio
 
 * #2454008
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Суставная поверхность, третья пястная, второй пястной кости"
+  * ^designation[=].value = "Суставная поверхность второй пястной кости для третьей пястной кости"
   * ^designation[+].language = #uz
   * ^designation[=].value = "Ikkinchi kaft suyagining uchinchi kaft suyagi bilan bo'g'im yuzasi"
 
@@ -1556,7 +1573,7 @@ Description: "Observation body site supplement with Uzbek and Russian translatio
 
 * #2489005
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Медиальная контрольная связка глаза"
+  * ^designation[=].value = "Медиальная удерживающая связка глаза"
   * ^designation[+].language = #uz
   * ^designation[=].value = "Ko'zning medial cheklovchi boylami"
 
@@ -1580,7 +1597,7 @@ Description: "Observation body site supplement with Uzbek and Russian translatio
 
 * #2510000
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Треугольник бедренной кости"
+  * ^designation[=].value = "Бедренный треугольник"
   * ^designation[+].language = #uz
   * ^designation[=].value = "Son uchburchagi"
 
@@ -1592,13 +1609,13 @@ Description: "Observation body site supplement with Uzbek and Russian translatio
 
 * #2543001
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Кубовидная суставная поверхность четвертой плюсневой кости"
+  * ^designation[=].value = "Суставная поверхность четвертой плюсневой кости для кубовидной кости"
   * ^designation[+].language = #uz
   * ^designation[=].value = "To'rtinchi metatarzal suyakning kubsimon bo'g'im yuzasi"
 
 * #2550002
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Фаланга большого пальца"
+  * ^designation[=].value = "Фаланга большого пальца кисти"
   * ^designation[+].language = #uz
   * ^designation[=].value = "Bosh barmoq falangasi"
 
@@ -1622,7 +1639,7 @@ Description: "Observation body site supplement with Uzbek and Russian translatio
 
 * #2600000
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Сухожилие длинного сгибателя большого пальца"
+  * ^designation[=].value = "Сухожилие длинного сгибателя большого пальца кисти"
   * ^designation[+].language = #uz
   * ^designation[=].value = "Bosh barmoqning uzun bukuvchi mushagi payi"
 
@@ -1706,7 +1723,7 @@ Description: "Observation body site supplement with Uzbek and Russian translatio
 
 * #2726002
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Складка для стремени"
+  * ^designation[=].value = "Складка стремени"
   * ^designation[+].language = #uz
   * ^designation[=].value = "Uzangi burmasi"
 
@@ -1766,7 +1783,7 @@ Description: "Observation body site supplement with Uzbek and Russian translatio
 
 * #2803000
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Сухожильная оболочка подколенной мышцы"
+  * ^designation[=].value = "Сухожильное влагалище подколенной мышцы"
   * ^designation[+].language = #uz
   * ^designation[=].value = "Taqim mushagi payining qini"
 
@@ -1796,7 +1813,7 @@ Description: "Observation body site supplement with Uzbek and Russian translatio
 
 * #2830005
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Тыльные пальцевые нервы латерального большого пальца стопы и медиального второго пальца стопы"
+  * ^designation[=].value = "Тыльные пальцевые нервы латеральной стороны большого пальца и медиальной стороны второго пальца стопы"
   * ^designation[+].language = #uz
   * ^designation[=].value = "Oyoq bosh barmog'i lateral va ikkinchi barmog'i medial tomonining orqa barmoq nervlari"
 
@@ -1838,7 +1855,7 @@ Description: "Observation body site supplement with Uzbek and Russian translatio
 
 * #2894003
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Задний надгортанник"
+  * ^designation[=].value = "Задняя поверхность надгортанника"
   * ^designation[+].language = #uz
   * ^designation[=].value = "Hiqildoq usti tog'ayining orqa yuzasi"
 
@@ -1874,9 +1891,9 @@ Description: "Observation body site supplement with Uzbek and Russian translatio
 
 * #2969000
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Анатомическая структура пространства"
+  * ^designation[=].value = "Анатомическое пространство (строение тела)"
   * ^designation[+].language = #uz
-  * ^designation[=].value = "Anatomik bo'shliq tuzilmasi"
+  * ^designation[=].value = "Anatomik bo'shliq tuzilmasi (tana tuzilmasi)"
 
 * #2986006
   * ^designation[0].language = #ru
@@ -1922,7 +1939,7 @@ Description: "Observation body site supplement with Uzbek and Russian translatio
 
 * #3054007
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Суставная поверхность, пястная, фаланги большого пальца"
+  * ^designation[=].value = "Суставная поверхность фаланги большого пальца кисти для пястной кости"
   * ^designation[+].language = #uz
   * ^designation[=].value = "Bosh barmoq falangasining kaft suyagi bilan bo'g'im yuzasi"
 
@@ -1964,7 +1981,7 @@ Description: "Observation body site supplement with Uzbek and Russian translatio
 
 * #3081007
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Митохондрия в делении"
+  * ^designation[=].value = "Делящаяся митохондрия"
   * ^designation[+].language = #uz
   * ^designation[=].value = "Bo'linayotgan mitoxondriya"
 
@@ -1994,7 +2011,7 @@ Description: "Observation body site supplement with Uzbek and Russian translatio
 
 * #3118005
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Трабекула карнеа левого желудочка"
+  * ^designation[=].value = "Мясистая трабекула левого желудочка"
   * ^designation[+].language = #uz
   * ^designation[=].value = "Chap qorinchaning go'shtli trabekulasi"
 
@@ -2012,7 +2029,7 @@ Description: "Observation body site supplement with Uzbek and Russian translatio
 
 * #3153003
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Tractus olivocochlearis"
+  * ^designation[=].value = "Оливо-улитковый путь"
   * ^designation[+].language = #uz
   * ^designation[=].value = "Olivo-chig'anoq yo'li"
 
@@ -2048,7 +2065,7 @@ Description: "Observation body site supplement with Uzbek and Russian translatio
 
 * #3215002
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Подкожная клетчатка затылочной области"
+  * ^designation[=].value = "Подкожная клетчатка задней области шеи"
   * ^designation[+].language = #uz
   * ^designation[=].value = "Ensa sohasining teri osti to'qimasi"
 
@@ -2078,7 +2095,7 @@ Description: "Observation body site supplement with Uzbek and Russian translatio
 
 * #3255000
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Сосочковая область"
+  * ^designation[=].value = "Сосочковый слой дермы"
   * ^designation[+].language = #uz
   * ^designation[=].value = "So'rg'ichli soha"
 
@@ -2096,7 +2113,7 @@ Description: "Observation body site supplement with Uzbek and Russian translatio
 
 * #3295003
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Вентральное переднее ядро"
+  * ^designation[=].value = "Вентральное переднее ядро таламуса"
   * ^designation[+].language = #uz
   * ^designation[=].value = "Ventral oldingi yadro"
 
@@ -2144,7 +2161,7 @@ Description: "Observation body site supplement with Uzbek and Russian translatio
 
 * #3362007
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Интертрагальная вырезка"
+  * ^designation[=].value = "Межкозелковая вырезка"
   * ^designation[+].language = #uz
   * ^designation[=].value = "Quloq supracha oraliq o'ymasi"
 
@@ -2168,13 +2185,13 @@ Description: "Observation body site supplement with Uzbek and Russian translatio
 
 * #3377004
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Аггер наси"
+  * ^designation[=].value = "Валик носа (agger nasi)"
   * ^designation[+].language = #uz
   * ^designation[=].value = "Burun do'mbog'i (agger nasi)"
 
 * #3382006
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Rima oris"
+  * ^designation[=].value = "Ротовая щель"
   * ^designation[+].language = #uz
   * ^designation[=].value = "Og'iz yorig'i"
 
@@ -2186,13 +2203,13 @@ Description: "Observation body site supplement with Uzbek and Russian translatio
 
 * #3394002
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Подзатылочно-теменной диаметр головы"
+  * ^designation[=].value = "Подзатылочно-брегматический (малый косой) размер головки"
   * ^designation[+].language = #uz
   * ^designation[=].value = "Boshning ensa osti-bregma diametri"
 
 * #3395001
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Верхняя глазная дуга"
+  * ^designation[=].value = "Верхняя артериальная дуга века"
   * ^designation[+].language = #uz
   * ^designation[=].value = "Yuqori qovoq ravog'i"
 
@@ -2234,7 +2251,7 @@ Description: "Observation body site supplement with Uzbek and Russian translatio
 
 * #3447009
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Проникший ооцит"
+  * ^designation[=].value = "Ооцит, в который проник сперматозоид"
   * ^designation[+].language = #uz
   * ^designation[=].value = "Urug' kirgan oosit"
 
@@ -2264,7 +2281,7 @@ Description: "Observation body site supplement with Uzbek and Russian translatio
 
 * #3481003
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Эмбриональный яичко"
+  * ^designation[=].value = "Эмбриональное яичко"
   * ^designation[+].language = #uz
   * ^designation[=].value = "Embrional moyak"
 
@@ -2282,7 +2299,7 @@ Description: "Observation body site supplement with Uzbek and Russian translatio
 
 * #3524005
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Боковая стенка сосцевидной пазухи"
+  * ^designation[=].value = "Латеральная стенка сосцевидной пещеры"
   * ^designation[+].language = #uz
   * ^designation[=].value = "So'rg'ichsimon g'orning lateral devori"
 
@@ -2420,7 +2437,7 @@ Description: "Observation body site supplement with Uzbek and Russian translatio
 
 * #3789000
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Аргентаффинные клетки"
+  * ^designation[=].value = "Энтероэндокринная клетка"
   * ^designation[+].language = #uz
   * ^designation[=].value = "Argentaffin hujayralar"
 
@@ -2510,7 +2527,7 @@ Description: "Observation body site supplement with Uzbek and Russian translatio
 
 * #3956007
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Пятая плюсневая суставная поверхность четвертой плюсневой кости"
+  * ^designation[=].value = "Суставная поверхность четвертой плюсневой кости для пятой плюсневой кости"
   * ^designation[+].language = #uz
   * ^designation[=].value = "To'rtinchi metatarzal suyakning beshinchi metatarzal bilan bo'g'im yuzasi"
 
@@ -2540,7 +2557,7 @@ Description: "Observation body site supplement with Uzbek and Russian translatio
 
 * #3977005
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Подкожная клетчатка носовой раковины"
+  * ^designation[=].value = "Подкожная клетчатка раковины ушной раковины (concha auriculae)"
   * ^designation[+].language = #uz
   * ^designation[=].value = "Quloq chig'anog'i teri osti to'qimasi"
 
@@ -2552,7 +2569,7 @@ Description: "Observation body site supplement with Uzbek and Russian translatio
 
 * #3989007
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Медиальные ядра бледного шара"
+  * ^designation[=].value = "Медиальный сегмент бледного шара"
   * ^designation[+].language = #uz
   * ^designation[=].value = "Oqish sharning medial yadrolari"
 
@@ -2648,7 +2665,7 @@ Description: "Observation body site supplement with Uzbek and Russian translatio
 
 * #4159006
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Гиперпартериальные бронхи"
+  * ^designation[=].value = "Подартериальный бронх"
   * ^designation[+].language = #uz
   * ^designation[=].value = "Arteriya ostidagi bronxlar"
 
@@ -2666,7 +2683,7 @@ Description: "Observation body site supplement with Uzbek and Russian translatio
 
 * #4205002
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Тюркская ячейка"
+  * ^designation[=].value = "Клетка Тюрка"
   * ^designation[+].language = #uz
   * ^designation[=].value = "Tyurk hujayrasi"
 
@@ -2768,13 +2785,13 @@ Description: "Observation body site supplement with Uzbek and Russian translatio
 
 * #4371007
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Четвертая плюсневая кость латеральной клиновидной кости"
+  * ^designation[=].value = "Суставная поверхность латеральной клиновидной кости для четвертой плюсневой кости"
   * ^designation[+].language = #uz
   * ^designation[=].value = "Lateral ponasimon suyakning to'rtinchi metatarzal bo'g'im yuzasi"
 
 * #4375003
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Надрез хрящевой части слухового прохода"
+  * ^designation[=].value = "Вырезка хрящевой части наружного слухового прохода"
   * ^designation[+].language = #uz
   * ^designation[=].value = "Eshitish yo'li tog'ay qismining o'ymasi"
 
@@ -2786,13 +2803,13 @@ Description: "Observation body site supplement with Uzbek and Russian translatio
 
 * #4394008
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Лестница вестибюля"
+  * ^designation[=].value = "Лестница преддверия"
   * ^designation[+].language = #uz
   * ^designation[=].value = "Dahliz narvoni"
 
 * #4402002
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Передняя суставная поверхность таранной кости"
+  * ^designation[=].value = "Передняя таранная суставная поверхность пяточной кости"
   * ^designation[+].language = #uz
   * ^designation[=].value = "Oshiq suyak uchun oldingi bo'g'im yuzasi"
 
@@ -2810,7 +2827,7 @@ Description: "Observation body site supplement with Uzbek and Russian translatio
 
 * #4430002
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Клиновидная кость (Clivus ossis sphenoidalis)"
+  * ^designation[=].value = "Скат клиновидной кости"
   * ^designation[+].language = #uz
   * ^designation[=].value = "Ponasimon suyak qiyaligi (clivus)"
 
@@ -2828,7 +2845,7 @@ Description: "Observation body site supplement with Uzbek and Russian translatio
 
 * #4486002
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Добавочная синусная железа"
+  * ^designation[=].value = "Железа околоносовой пазухи"
   * ^designation[+].language = #uz
   * ^designation[=].value = "Burun yondosh bo'shlig'i bezi"
 
@@ -2864,7 +2881,7 @@ Description: "Observation body site supplement with Uzbek and Russian translatio
 
 * #4566004
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Тенториум мозжечка"
+  * ^designation[=].value = "Намет мозжечка"
   * ^designation[+].language = #uz
   * ^designation[=].value = "Miyacha chodiri"
 
@@ -2906,7 +2923,7 @@ Description: "Observation body site supplement with Uzbek and Russian translatio
 
 * #4621004
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Малая бугристость плечевой кости"
+  * ^designation[=].value = "Малый бугорок плечевой кости"
   * ^designation[+].language = #uz
   * ^designation[=].value = "Yelka suyagining kichik do'mbog'i"
 
@@ -2930,7 +2947,7 @@ Description: "Observation body site supplement with Uzbek and Russian translatio
 
 * #4658004
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Кожа затылочной области"
+  * ^designation[=].value = "Кожа задней области шеи"
   * ^designation[+].language = #uz
   * ^designation[=].value = "Ensa sohasi terisi"
 
@@ -2954,7 +2971,7 @@ Description: "Observation body site supplement with Uzbek and Russian translatio
 
 * #4718009
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Все венозное сплетение основания овального отверстия черепа"
+  * ^designation[=].value = "Венозное сплетение овального отверстия основания черепа"
   * ^designation[+].language = #uz
   * ^designation[=].value = "Kalla asosi oval teshigining butun vena chigali"
 
@@ -3002,7 +3019,7 @@ Description: "Observation body site supplement with Uzbek and Russian translatio
 
 * #4799000
   * ^designation[0].language = #ru
-  * ^designation[=].value = "клетка Дейтера"
+  * ^designation[=].value = "Клетка Дейтерса"
   * ^designation[+].language = #uz
   * ^designation[=].value = "Deyters hujayrasi"
 
@@ -3014,7 +3031,7 @@ Description: "Observation body site supplement with Uzbek and Russian translatio
 
 * #4812002
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Передний отдел большеберцовой кости"
+  * ^designation[=].value = "Передний фасциальный футляр голени"
   * ^designation[+].language = #uz
   * ^designation[=].value = "Boldirning oldingi fassial bo'limi"
 
@@ -3086,7 +3103,7 @@ Description: "Observation body site supplement with Uzbek and Russian translatio
 
 * #4906008
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Барабанная полость"
+  * ^designation[=].value = "Сосцевидная пещера"
   * ^designation[+].language = #uz
   * ^designation[=].value = "Nog'ora g'ori"
 
@@ -3146,13 +3163,13 @@ Description: "Observation body site supplement with Uzbek and Russian translatio
 
 * #5068003
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Внутренняя запирательная мышца седалищная сумка"
+  * ^designation[=].value = "Седалищная сумка внутренней запирательной мышцы"
   * ^designation[+].language = #uz
   * ^designation[=].value = "Ichki yopqich mushakning o'tirg'ich xaltasi"
 
 * #5069006
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Ругальская колонна"
+  * ^designation[=].value = "Столб складок влагалища"
   * ^designation[+].language = #uz
   * ^designation[=].value = "Qin burmalari ustuni"
 
@@ -3242,7 +3259,7 @@ Description: "Observation body site supplement with Uzbek and Russian translatio
 
 * #5279001
   * ^designation[0].language = #ru
-  * ^designation[=].value = "единственное отверстие"
+  * ^designation[=].value = "Одиночное отверстие (foramen singulare)"
   * ^designation[+].language = #uz
   * ^designation[=].value = "Yakka teshik (foramen singulare)"
 
@@ -3440,7 +3457,7 @@ Description: "Observation body site supplement with Uzbek and Russian translatio
 
 * #5644007
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Сломанная мембрана P лицо"
+  * ^designation[=].value = "P-поверхность скола мембраны"
   * ^designation[+].language = #uz
   * ^designation[=].value = "Membrananing P yuzasi (sindirilgan)"
 
@@ -3566,7 +3583,7 @@ Description: "Observation body site supplement with Uzbek and Russian translatio
 
 * #5825003
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Собственная субстанция склеры"
+  * ^designation[=].value = "Собственное вещество склеры"
   * ^designation[+].language = #uz
   * ^designation[=].value = "Sklera xususiy moddasi"
 
@@ -3614,7 +3631,7 @@ Description: "Observation body site supplement with Uzbek and Russian translatio
 
 * #5889006
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Суставная поверхность третьей пястной кости четвертой пястной кости"
+  * ^designation[=].value = "Суставная поверхность четвертой пястной кости для третьей пястной кости"
   * ^designation[+].language = #uz
   * ^designation[=].value = "To'rtinchi kaft suyagining uchinchi kaft suyagi bilan bo'g'im yuzasi"
 
@@ -3788,7 +3805,7 @@ Description: "Observation body site supplement with Uzbek and Russian translatio
 
 * #6076005
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Желудочно-кишечный субсерозный"
+  * ^designation[=].value = "Подсерозная основа желудочно-кишечного тракта"
   * ^designation[+].language = #uz
   * ^designation[=].value = "Oshqozon-ichak seroz osti qavati"
 
@@ -3818,19 +3835,19 @@ Description: "Observation body site supplement with Uzbek and Russian translatio
 
 * #6217003
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Грушевидная выемка"
+  * ^designation[=].value = "Грушевидный карман"
   * ^designation[+].language = #uz
   * ^designation[=].value = "Noksimon cho'ntak"
 
 * #6229007
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Os lacrimale"
+  * ^designation[=].value = "Слезная кость"
   * ^designation[+].language = #uz
   * ^designation[=].value = "Ko'z yosh suyagi"
 
 * #6253001
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Sulcus terminalis cordis"
+  * ^designation[=].value = "Пограничная борозда сердца"
   * ^designation[+].language = #uz
   * ^designation[=].value = "Yurakning chegara egati"
 
@@ -3860,13 +3877,13 @@ Description: "Observation body site supplement with Uzbek and Russian translatio
 
 * #6325003
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Ариено-надгортанная мышца"
+  * ^designation[=].value = "Черпалонадгортанная мышца"
   * ^designation[+].language = #uz
   * ^designation[=].value = "Cho'michsimon-hiqildoq usti mushagi"
 
 * #6326002
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Атлоидное сочленение плода"
+  * ^designation[=].value = "Сочленение атланта плода"
   * ^designation[+].language = #uz
   * ^designation[=].value = "Homila atlant bo'g'imi"
 
@@ -3884,7 +3901,7 @@ Description: "Observation body site supplement with Uzbek and Russian translatio
 
 * #6371005
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Лимфатические узлы щитовидной железы"
+  * ^designation[=].value = "Лимфатический сосуд щитовидной железы"
   * ^designation[+].language = #uz
   * ^designation[=].value = "Qalqonsimon bezning limfa tomirlari"
 
@@ -3920,7 +3937,7 @@ Description: "Observation body site supplement with Uzbek and Russian translatio
 
 * #6424000
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Строение лучистой части коркового вещества почки"
+  * ^designation[=].value = "Лучистая часть коркового вещества почки"
   * ^designation[+].language = #uz
   * ^designation[=].value = "Buyrak po'stloq bo'lakchasining nurli qismi"
 
@@ -3968,7 +3985,7 @@ Description: "Observation body site supplement with Uzbek and Russian translatio
 
 * #6533001
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Колоническая гаустра"
+  * ^designation[=].value = "Гаустры ободочной кишки"
   * ^designation[+].language = #uz
   * ^designation[=].value = "Chambar ichak burmalari (gaustralar)"
 
@@ -4034,7 +4051,7 @@ Description: "Observation body site supplement with Uzbek and Russian translatio
 
 * #6606008
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Строение тыльных межклиновидных связок"
+  * ^designation[=].value = "Тыльные межклиновидные связки"
   * ^designation[+].language = #uz
   * ^designation[=].value = "Orqa ponasimonlararo boylamlar"
 
@@ -4094,7 +4111,7 @@ Description: "Observation body site supplement with Uzbek and Russian translatio
 
 * #6685009
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Правая лодыжка"
+  * ^designation[=].value = "Область правого голеностопного сустава"
   * ^designation[+].language = #uz
   * ^designation[=].value = "O'ng to'piq-boldir bo'g'imi"
 
@@ -4118,7 +4135,7 @@ Description: "Observation body site supplement with Uzbek and Russian translatio
 
 * #6739000
   * ^designation[0].language = #ru
-  * ^designation[=].value = "барабанная перепонка"
+  * ^designation[=].value = "Барабанная струна"
   * ^designation[+].language = #uz
   * ^designation[=].value = "Nog'ora tori"
 
@@ -4142,7 +4159,7 @@ Description: "Observation body site supplement with Uzbek and Russian translatio
 
 * #6787005
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Строение сухожилий и сухожильных влагалищ кисти"
+  * ^designation[=].value = "Сухожилия и (или) сухожильные влагалища кисти"
   * ^designation[+].language = #uz
   * ^designation[=].value = "Qo'l payi va pay qini"
 
@@ -4154,7 +4171,7 @@ Description: "Observation body site supplement with Uzbek and Russian translatio
 
 * #6799003
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Макула утрикулюса"
+  * ^designation[=].value = "Пятно маточки (эллиптического мешочка)"
   * ^designation[+].language = #uz
   * ^designation[=].value = "Bachadoncha dog'i (utrikulus makulasi)"
 
@@ -4190,7 +4207,7 @@ Description: "Observation body site supplement with Uzbek and Russian translatio
 
 * #6841009
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Кортикомедуллярное соединение почки"
+  * ^designation[=].value = "Кортикомедуллярная граница почки"
   * ^designation[+].language = #uz
   * ^designation[=].value = "Buyrak po'stloq-mag'iz chegarasi"
 
@@ -4202,7 +4219,7 @@ Description: "Observation body site supplement with Uzbek and Russian translatio
 
 * #6850006
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Вторичный процесс стопы"
+  * ^designation[=].value = "Вторичная ножка подоцита"
   * ^designation[+].language = #uz
   * ^designation[=].value = "Ikkilamchi oyoqcha o'simtasi"
 
@@ -4214,7 +4231,7 @@ Description: "Observation body site supplement with Uzbek and Russian translatio
 
 * #6866008
   * ^designation[0].language = #ru
-  * ^designation[=].value = "спайка хрящевой ткани"
+  * ^designation[=].value = "Спайка поводков"
   * ^designation[+].language = #uz
   * ^designation[=].value = "Jilov bitishmasi"
 
@@ -4226,7 +4243,7 @@ Description: "Observation body site supplement with Uzbek and Russian translatio
 
 * #6894000
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Медиальная поверхность руки"
+  * ^designation[=].value = "Медиальная поверхность плеча"
   * ^designation[+].language = #uz
   * ^designation[=].value = "Yelkaning medial yuzasi"
 
@@ -4271,12 +4288,6 @@ Description: "Observation body site supplement with Uzbek and Russian translatio
   * ^designation[=].value = "Вся передняя губная вена"
   * ^designation[+].language = #uz
   * ^designation[=].value = "Butun oldingi lab venasi"
-
-* #6969002
-  * ^designation[0].language = #ru
-  * ^designation[=].value = "Лимфоцитарная ткань"
-  * ^designation[+].language = #uz
-  * ^designation[=].value = "Limfotsitar to'qima"
 
 * #6975006
   * ^designation[0].language = #ru
@@ -4370,7 +4381,7 @@ Description: "Observation body site supplement with Uzbek and Russian translatio
 
 * #7154008
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Чувствительный корешок тройничного ганглия"
+  * ^designation[=].value = "Чувствительный корешок тройничного нерва"
   * ^designation[+].language = #uz
   * ^designation[=].value = "Uch shoxli nerv tugunining sezuvchi ildizi"
 
@@ -4400,25 +4411,25 @@ Description: "Observation body site supplement with Uzbek and Russian translatio
 
 * #7192009
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Постовый перешеек барабанной перепонки"
+  * ^designation[=].value = "Задний перешеек барабанной полости"
   * ^designation[+].language = #uz
   * ^designation[=].value = "Nog'ora bo'shlig'ining orqa bo'yni"
 
 * #7227003
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Подъязычный нерв внутренняя ветвь мышцы языка"
+  * ^designation[=].value = "Ветви подъязычного нерва к собственным мышцам языка"
   * ^designation[+].language = #uz
   * ^designation[=].value = "Til osti nervining tilning ichki mushaklariga boruvchi tarmog'i"
 
 * #7234001
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Вся нижняя сосудистая вена"
+  * ^designation[=].value = "Вся нижняя ворсинчатая вена"
   * ^designation[+].language = #uz
   * ^designation[=].value = "Butun pastki tomirli chigal venasi"
 
 * #7242000
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Собственная аппендикулярная мышечная оболочка"
+  * ^designation[=].value = "Собственная мышечная оболочка червеобразного отростка"
   * ^designation[+].language = #uz
   * ^designation[=].value = "Chuvalchangsimon o'simtaning xususiy mushak qavati"
 
@@ -4442,7 +4453,7 @@ Description: "Observation body site supplement with Uzbek and Russian translatio
 
 * #7311008
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Передняя поверхность руки"
+  * ^designation[=].value = "Передняя поверхность плеча"
   * ^designation[+].language = #uz
   * ^designation[=].value = "Yelkaning oldingi yuzasi"
 
@@ -4490,7 +4501,7 @@ Description: "Observation body site supplement with Uzbek and Russian translatio
 
 * #7435002
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Связка яичника"
+  * ^designation[=].value = "Собственная связка яичника"
   * ^designation[+].language = #uz
   * ^designation[=].value = "Tuxumdon boylami"
 
@@ -4532,7 +4543,7 @@ Description: "Observation body site supplement with Uzbek and Russian translatio
 
 * #7524009
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Целая vasa vasorum"
+  * ^designation[=].value = "Все сосуды сосудов (vasa vasorum)"
   * ^designation[+].language = #uz
   * ^designation[=].value = "Butun tomir tomirlari (vasa vasorum)"
 
@@ -4586,7 +4597,7 @@ Description: "Observation body site supplement with Uzbek and Russian translatio
 
 * #7629007
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Таламо-лимфоцитарный тракт"
+  * ^designation[=].value = "Таламооливный путь"
   * ^designation[+].language = #uz
   * ^designation[=].value = "Talamo-oliva yo'li"
 
@@ -4598,7 +4609,7 @@ Description: "Observation body site supplement with Uzbek and Russian translatio
 
 * #7652006
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Уздечка половой губы"
+  * ^designation[=].value = "Уздечка губы"
   * ^designation[+].language = #uz
   * ^designation[=].value = "Lab yuganchasi"
 
@@ -4622,7 +4633,7 @@ Description: "Observation body site supplement with Uzbek and Russian translatio
 
 * #7712004
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Субдуральное пространство спинномозговой области"
+  * ^designation[=].value = "Субдуральное пространство позвоночного канала"
   * ^designation[+].language = #uz
   * ^designation[=].value = "Orqa miya sohasining qattiq parda osti bo'shlig'i"
 
@@ -4670,13 +4681,13 @@ Description: "Observation body site supplement with Uzbek and Russian translatio
 
 * #7769000
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Правая нога"
+  * ^designation[=].value = "Правая стопа"
   * ^designation[+].language = #uz
   * ^designation[=].value = "O'ng oyoq panjasi"
 
 * #7783003
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Симпатический ствол спинномозговой нерв"
+  * ^designation[=].value = "Ветвь симпатического ствола к спинномозговому нерву"
   * ^designation[+].language = #uz
   * ^designation[=].value = "Simpatik stvolning orqa miya nervi tarmog'i"
 
@@ -4688,7 +4699,7 @@ Description: "Observation body site supplement with Uzbek and Russian translatio
 
 * #7829005
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Передняя поверхность рукоятки"
+  * ^designation[=].value = "Передняя поверхность рукоятки грудины"
   * ^designation[+].language = #uz
   * ^designation[=].value = "To'sh dastasining oldingi yuzasi"
 
@@ -4706,7 +4717,7 @@ Description: "Observation body site supplement with Uzbek and Russian translatio
 
 * #7840002
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Подкожная клетчатка подбородочной области"
+  * ^designation[=].value = "Подкожная клетчатка подподбородочного треугольника"
   * ^designation[+].language = #uz
   * ^designation[=].value = "Iyak osti sohasining teri osti to'qimasi"
 
@@ -4748,7 +4759,7 @@ Description: "Observation body site supplement with Uzbek and Russian translatio
 
 * #7880006
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Рофеоцитарный везикула"
+  * ^designation[=].value = "Рофеоцитозный пузырек"
   * ^designation[+].language = #uz
   * ^designation[=].value = "Ropeotsitoz pufakcha"
 
@@ -4796,7 +4807,7 @@ Description: "Observation body site supplement with Uzbek and Russian translatio
 
 * #7944005
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Вспомогательная клетка"
+  * ^designation[=].value = "Клетка-хелпер"
   * ^designation[+].language = #uz
   * ^designation[=].value = "Yordamchi (xelper) hujayra"
 
@@ -4844,13 +4855,13 @@ Description: "Observation body site supplement with Uzbek and Russian translatio
 
 * #8017000
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Приносящий тракт правого желудочка"
+  * ^designation[=].value = "Приточный отдел правого желудочка"
   * ^designation[+].language = #uz
   * ^designation[=].value = "O'ng qorinchaning kirish yo'li"
 
 * #8024004
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Ядро лимитанов"
+  * ^designation[=].value = "Пограничное ядро таламуса"
   * ^designation[+].language = #uz
   * ^designation[=].value = "Chegaralovchi yadro"
 
@@ -4874,7 +4885,7 @@ Description: "Observation body site supplement with Uzbek and Russian translatio
 
 * #8057002
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Боковые ядра бледного шара"
+  * ^designation[=].value = "Латеральный сегмент бледного шара"
   * ^designation[+].language = #uz
   * ^designation[=].value = "Oqish sharning lateral yadrolari"
 
@@ -4892,7 +4903,7 @@ Description: "Observation body site supplement with Uzbek and Russian translatio
 
 * #8068002
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Stratum lemnisci четверохолмия"
+  * ^designation[=].value = "Слой петли четверохолмия"
   * ^designation[+].language = #uz
   * ^designation[=].value = "To'rt tepalik lemniskus qatlami"
 
@@ -4922,19 +4933,13 @@ Description: "Observation body site supplement with Uzbek and Russian translatio
 
 * #8112008
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Кишка задняя"
+  * ^designation[=].value = "Задняя кишка"
   * ^designation[+].language = #uz
   * ^designation[=].value = "Orqa ichak (embrional)"
 
-* #8119004
-  * ^designation[0].language = #ru
-  * ^designation[=].value = "Весь дельфийский лимфатический узел"
-  * ^designation[+].language = #uz
-  * ^designation[=].value = "Butun delfiy (hiqildoq oldi) limfa tuguni"
-
 * #8128003
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Супрааортальная область клапана"
+  * ^designation[=].value = "Надклапанная область аорты"
   * ^designation[+].language = #uz
   * ^designation[=].value = "Aorta qopqog'i usti sohasi"
 
@@ -5012,7 +5017,7 @@ Description: "Observation body site supplement with Uzbek and Russian translatio
 
 * #8265008
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Суставная поверхность, пястная, фаланги кисти"
+  * ^designation[=].value = "Суставная поверхность фаланги кисти для пястной кости"
   * ^designation[+].language = #uz
   * ^designation[=].value = "Qo'l falangasining kaft suyagi bilan bo'g'im yuzasi"
 
@@ -5060,7 +5065,7 @@ Description: "Observation body site supplement with Uzbek and Russian translatio
 
 * #8373002
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Яремная кость клиновидной кости"
+  * ^designation[=].value = "Клиновидное возвышение (jugum sphenoidale)"
   * ^designation[+].language = #uz
   * ^designation[=].value = "Ponasimon suyak bo'yinturug'i"
 
@@ -5102,7 +5107,7 @@ Description: "Observation body site supplement with Uzbek and Russian translatio
 
 * #8482007
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Синоатриальный узел, ветвь правой коронарной артерии"
+  * ^designation[=].value = "Ветвь синусно-предсердного узла правой коронарной артерии"
   * ^designation[+].language = #uz
   * ^designation[=].value = "O'ng toj arteriyasining sinus-bo'lmacha tuguni tarmog'i"
 
@@ -5150,7 +5155,7 @@ Description: "Observation body site supplement with Uzbek and Russian translatio
 
 * #8580001
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Обе ноги"
+  * ^designation[=].value = "Обе стопы"
   * ^designation[+].language = #uz
   * ^designation[=].value = "Ikkala oyoq panjasi"
 
@@ -5180,7 +5185,7 @@ Description: "Observation body site supplement with Uzbek and Russian translatio
 
 * #8604004
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Продолговатый пучок клиновидного мозга"
+  * ^designation[=].value = "Клиновидный пучок продолговатого мозга"
   * ^designation[+].language = #uz
   * ^designation[=].value = "Uzunchoq miyaning ponasimon tutami"
 
@@ -5282,7 +5287,7 @@ Description: "Observation body site supplement with Uzbek and Russian translatio
 
 * #8810002
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Кортикомедуллярное соединение надпочечников"
+  * ^designation[=].value = "Кортикомедуллярная граница надпочечника"
   * ^designation[+].language = #uz
   * ^designation[=].value = "Buyrak usti bezining po'stloq-mag'iz chegarasi"
 
@@ -5312,7 +5317,7 @@ Description: "Observation body site supplement with Uzbek and Russian translatio
 
 * #8827005
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Стержень фаланги среднего пальца"
+  * ^designation[=].value = "Тело фаланги среднего пальца"
   * ^designation[+].language = #uz
   * ^designation[=].value = "O'rta barmoq falangasi tanasi"
 
@@ -5336,7 +5341,7 @@ Description: "Observation body site supplement with Uzbek and Russian translatio
 
 * #8854008
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Криста Галли"
+  * ^designation[=].value = "Петушиный гребень"
   * ^designation[+].language = #uz
   * ^designation[=].value = "Xo'roz toji (crista galli)"
 
@@ -5366,9 +5371,9 @@ Description: "Observation body site supplement with Uzbek and Russian translatio
 
 * #8894005
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Вся желудочная кардиальная железа"
+  * ^designation[=].value = "Вся желудочная кардиальная железа (строение тела)"
   * ^designation[+].language = #uz
-  * ^designation[=].value = "Butun oshqozon kardial bezi"
+  * ^designation[=].value = "Butun oshqozon kardial bezi (tana tuzilmasi)"
 
 * #8897003
   * ^designation[0].language = #ru
@@ -5546,9 +5551,9 @@ Description: "Observation body site supplement with Uzbek and Russian translatio
 
 * #9229006
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Строение поясничной вращательной мышцы"
+  * ^designation[=].value = "Поясничная вращательная мышца (строение тела)"
   * ^designation[+].language = #uz
-  * ^designation[=].value = "Belning aylantiruvchi mushagi"
+  * ^designation[=].value = "Belning aylantiruvchi mushagi (tana tuzilmasi)"
 
 * #9231002
   * ^designation[0].language = #ru
@@ -5558,7 +5563,7 @@ Description: "Observation body site supplement with Uzbek and Russian translatio
 
 * #9240003
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Ячейка Нимана-Пика"
+  * ^designation[=].value = "Клетка Нимана-Пика"
   * ^designation[+].language = #uz
   * ^designation[=].value = "Niman-Pik hujayrasi"
 
@@ -5588,7 +5593,7 @@ Description: "Observation body site supplement with Uzbek and Russian translatio
 
 * #9290004
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Задний интраокципитальный синхондроз"
+  * ^designation[=].value = "Задний внутризатылочный синхондроз"
   * ^designation[+].language = #uz
   * ^designation[=].value = "Orqa ensa ichi sinxondrozi"
 
@@ -5600,7 +5605,7 @@ Description: "Observation body site supplement with Uzbek and Russian translatio
 
 * #9317004
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Тактильный диск Меркель"
+  * ^designation[=].value = "Осязательный диск Меркеля"
   * ^designation[+].language = #uz
   * ^designation[=].value = "Merkel sezuvchi diski"
 
@@ -5642,7 +5647,7 @@ Description: "Observation body site supplement with Uzbek and Russian translatio
 
 * #9380009
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Пектен ани"
+  * ^designation[=].value = "Гребешок заднего прохода (pecten analis)"
   * ^designation[+].language = #uz
   * ^designation[=].value = "Anal taroq (pecten ani)"
 
@@ -5666,7 +5671,7 @@ Description: "Observation body site supplement with Uzbek and Russian translatio
 
 * #9438006
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Строение глубоких шейных лимфатических сосудов"
+  * ^designation[=].value = "Глубокие шейные лимфатические сосуды"
   * ^designation[+].language = #uz
   * ^designation[=].value = "Bo'yinning chuqur limfa tomirlari"
 
@@ -5678,15 +5683,15 @@ Description: "Observation body site supplement with Uzbek and Russian translatio
 
 * #9455005
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Строение медиальной хрящевой пластинки глоточно-барабанной трубы"
+  * ^designation[=].value = "Медиальная хрящевая пластинка слуховой трубы (строение тела)"
   * ^designation[+].language = #uz
-  * ^designation[=].value = "Eshitish nayining medial tog'ay plastinkasi"
+  * ^designation[=].value = "Eshitish nayining medial tog'ay plastinkasi (tana tuzilmasi)"
 
 * #9475001
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Строение амакриновой клетки сетчатки"
+  * ^designation[=].value = "Амакриновая клетка сетчатки (строение тела)"
   * ^designation[+].language = #uz
-  * ^designation[=].value = "To'r pardaning amakrin hujayrasi"
+  * ^designation[=].value = "To'r pardaning amakrin hujayrasi (tana tuzilmasi)"
 
 * #9481009
   * ^designation[0].language = #ru
@@ -5708,7 +5713,7 @@ Description: "Observation body site supplement with Uzbek and Russian translatio
 
 * #9502002
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Коронковая депрессия зуба"
+  * ^designation[=].value = "Углубление коронки зуба"
   * ^designation[+].language = #uz
   * ^designation[=].value = "Tishning toj chuqurchasi"
 
@@ -5726,7 +5731,7 @@ Description: "Observation body site supplement with Uzbek and Russian translatio
 
 * #9558005
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Вся поверхность пятого реберного хряща грудины"
+  * ^designation[=].value = "Вся реберная вырезка грудины для пятого реберного хряща"
   * ^designation[+].language = #uz
   * ^designation[=].value = "To'sh suyagining beshinchi qovurg'a tog'ayi uchun butun bo'g'im yuzasi"
 
@@ -5918,7 +5923,7 @@ Description: "Observation body site supplement with Uzbek and Russian translatio
 
 * #9870004
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Carunculae hymenales"
+  * ^designation[=].value = "Миртовидные сосочки"
   * ^designation[+].language = #uz
   * ^designation[=].value = "Qizlik pardasi so'rg'ichlari"
 
@@ -5936,13 +5941,13 @@ Description: "Observation body site supplement with Uzbek and Russian translatio
 
 * #9880000
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Бугорок щитовидной железы"
+  * ^designation[=].value = "Щитовидный бугорок щитовидного хряща"
   * ^designation[+].language = #uz
   * ^designation[=].value = "Qalqonsimon do'mboqcha"
 
 * #9881001
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Периферические нервы миелинизированные нервные волокна"
+  * ^designation[=].value = "Миелиновые нервные волокна периферического нерва"
   * ^designation[+].language = #uz
   * ^designation[=].value = "Periferik nervning miyelinli nerv tolasi"
 
@@ -5966,7 +5971,7 @@ Description: "Observation body site supplement with Uzbek and Russian translatio
 
 * #9968009
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Первичный процесс стопы"
+  * ^designation[=].value = "Первичная ножка подоцита"
   * ^designation[+].language = #uz
   * ^designation[=].value = "Birlamchi oyoqcha o'simtasi"
 
@@ -6005,3 +6010,5 @@ Description: "Observation body site supplement with Uzbek and Russian translatio
   * ^designation[=].value = "Основание легкого"
   * ^designation[+].language = #uz
   * ^designation[=].value = "O'pka asosi"
+
+

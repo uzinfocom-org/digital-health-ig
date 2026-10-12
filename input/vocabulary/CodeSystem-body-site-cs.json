@@ -2,12 +2,64 @@
   "resourceType": "CodeSystem",
   "status": "draft",
   "content": "supplement",
-  "name": "ObservationBodySiteCS",
-  "id": "observation-body-site-cs",
-  "title": "Observation Body Site CS",
-  "description": "Observation body site supplement with Uzbek and Russian translations",
-  "url": "https://terminology.dhp.uz/fhir/core/CodeSystem/observation-body-site-cs",
+  "name": "BodySiteCS",
+  "id": "body-site-cs",
+  "title": "Body Site CS",
+  "description": "Body site supplement with Uzbek and Russian translations",
+  "url": "https://terminology.dhp.uz/fhir/core/CodeSystem/body-site-cs",
   "concept": [
+    {
+      "code": "368210008",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Левая рука"
+        },
+        {
+          "language": "uz",
+          "value": "Chap qo'l"
+        }
+      ]
+    },
+    {
+      "code": "368211007",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Правая рука"
+        },
+        {
+          "language": "uz",
+          "value": "O'ng qo'l"
+        }
+      ]
+    },
+    {
+      "code": "368225008",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Левое бедро"
+        },
+        {
+          "language": "uz",
+          "value": "Chap son"
+        }
+      ]
+    },
+    {
+      "code": "368224007",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Правое бедро"
+        },
+        {
+          "language": "uz",
+          "value": "O'ng son"
+        }
+      ]
+    },
     {
       "code": "53075003",
       "designation": [
@@ -91,7 +143,7 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Структура дистального межфалангового сустава второго пальца стопы"
+          "value": "Структура дистального межфалангового сустава второго пальца стопы (строение тела)"
         },
         {
           "language": "uz",
@@ -104,7 +156,7 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Структура дистального межфалангового сустава третьего пальца стопы"
+          "value": "Структура дистального межфалангового сустава третьего пальца стопы (строение тела)"
         },
         {
           "language": "uz",
@@ -117,7 +169,7 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Структура дистального межфалангового сустава четвертого пальца стопы"
+          "value": "Структура дистального межфалангового сустава четвертого пальца стопы (строение тела)"
         },
         {
           "language": "uz",
@@ -130,7 +182,7 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Структура дистального межфалангового сустава пятого пальца стопы"
+          "value": "Структура дистального межфалангового сустава пятого пальца стопы (строение тела)"
         },
         {
           "language": "uz",
@@ -143,7 +195,7 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Строение проксимального межфалангового сустава второго пальца стопы"
+          "value": "Строение проксимального межфалангового сустава второго пальца стопы (строение тела)"
         },
         {
           "language": "uz",
@@ -156,7 +208,7 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Строение проксимального межфалангового сустава третьего пальца стопы"
+          "value": "Строение проксимального межфалангового сустава третьего пальца стопы (строение тела)"
         },
         {
           "language": "uz",
@@ -169,7 +221,7 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Строение проксимального межфалангового сустава четвертого пальца стопы"
+          "value": "Строение проксимального межфалангового сустава четвертого пальца стопы (строение тела)"
         },
         {
           "language": "uz",
@@ -182,7 +234,7 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Строение проксимального межфалангового сустава пятого пальца стопы"
+          "value": "Строение проксимального межфалангового сустава пятого пальца стопы (строение тела)"
         },
         {
           "language": "uz",
@@ -377,7 +429,7 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Кубоид"
+          "value": "Кубовидная кость"
         },
         {
           "language": "uz",
@@ -403,7 +455,7 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Осыпь"
+          "value": "Таранная кость"
         },
         {
           "language": "uz",
@@ -533,11 +585,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Анатомическое или приобретенное строение тела"
+          "value": "Анатомическое или приобретенное строение тела (строение тела)"
         },
         {
           "language": "uz",
-          "value": "Anatomik yoki orttirilgan tana tuzilmasi"
+          "value": "Anatomik yoki orttirilgan tana tuzilmasi (tana tuzilmasi)"
         }
       ]
     },
@@ -624,7 +676,7 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Центральная пара микротрубочек, ресничка или жгутик, не бактериальная"
+          "value": "Центральная пара микротрубочек реснички или жгутика (небактериальных)"
         },
         {
           "language": "uz",
@@ -663,7 +715,7 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Передний отдел почечной артерии"
+          "value": "Передняя ветвь почечной артерии"
         },
         {
           "language": "uz",
@@ -702,7 +754,7 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Суставная поверхность, фаланги, четвертой пястной кости"
+          "value": "Фаланговая суставная поверхность четвертой пястной кости"
         },
         {
           "language": "uz",
@@ -806,7 +858,7 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Грудной нерв"
+          "value": "Грудной спинномозговой нерв"
         },
         {
           "language": "uz",
@@ -845,7 +897,7 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Боковой миокард"
+          "value": "Миокард боковой стенки"
         },
         {
           "language": "uz",
@@ -936,7 +988,7 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Кардиальный отпечаток печени"
+          "value": "Сердечное вдавление печени"
         },
         {
           "language": "uz",
@@ -949,7 +1001,7 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Лодыжка"
+          "value": "Область голеностопного сустава"
         },
         {
           "language": "uz",
@@ -975,7 +1027,7 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Ретикулярный кориум"
+          "value": "Сетчатый слой дермы"
         },
         {
           "language": "uz",
@@ -1261,7 +1313,7 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Подкожная клетчатка желобка"
+          "value": "Подкожная клетчатка губного желобка (фильтрума)"
         },
         {
           "language": "uz",
@@ -1391,7 +1443,7 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Плотные промежуточные пучки филаментов"
+          "value": "Плотные пучки промежуточных филаментов"
         },
         {
           "language": "uz",
@@ -1404,7 +1456,7 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Строение головы и шеи"
+          "value": "Голова и/или шея"
         },
         {
           "language": "uz",
@@ -1417,7 +1469,7 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Висцеральная часть печени"
+          "value": "Висцеральная поверхность печени"
         },
         {
           "language": "uz",
@@ -1547,7 +1599,7 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Щитоподъязычная ветвь петли шейки матки"
+          "value": "Щитоподъязычная ветвь шейной петли"
         },
         {
           "language": "uz",
@@ -1664,7 +1716,7 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Пузырчатая сумка грудино-подъязычной мышцы"
+          "value": "Синовиальная сумка грудино-подъязычной мышцы"
         },
         {
           "language": "uz",
@@ -1716,7 +1768,7 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Женский"
+          "value": "Женская структура тела"
         },
         {
           "language": "uz",
@@ -1846,7 +1898,7 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Зубовидный отросток оси"
+          "value": "Зуб осевого позвонка"
         },
         {
           "language": "uz",
@@ -2093,7 +2145,7 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Желтый фиброзный хрящ"
+          "value": "Эластический (желтый) хрящ"
         },
         {
           "language": "uz",
@@ -2236,7 +2288,7 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Вентрально-латеральное ядро таламуса"
+          "value": "Вентролатеральное ядро таламуса"
         },
         {
           "language": "uz",
@@ -2249,7 +2301,7 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Подвздошные артерии"
+          "value": "Подвздошно-кишечные артерии"
         },
         {
           "language": "uz",
@@ -2327,7 +2379,7 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Внутренняя гортань"
+          "value": "Внутренняя часть гортани"
         },
         {
           "language": "uz",
@@ -2414,19 +2466,6 @@
       ]
     },
     {
-      "code": "1655000",
-      "designation": [
-        {
-          "language": "ru",
-          "value": "Ядро поперечного ножкового тракта"
-        },
-        {
-          "language": "uz",
-          "value": "Ko'ndalang oyoqcha yo'li yadrosi"
-        }
-      ]
-    },
-    {
       "code": "1659006",
       "designation": [
         {
@@ -2496,7 +2535,7 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Купула ампулярная"
+          "value": "Купула ампулярного гребешка"
         },
         {
           "language": "uz",
@@ -2509,7 +2548,7 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Правая миндалина"
+          "value": "Правая небная миндалина"
         },
         {
           "language": "uz",
@@ -2548,7 +2587,7 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Лимфатическая система грудной клетки"
+          "value": "Лимфатический сосуд грудной клетки"
         },
         {
           "language": "uz",
@@ -2587,7 +2626,7 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Нарис"
+          "value": "Ноздря"
         },
         {
           "language": "uz",
@@ -2730,7 +2769,7 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Надпочечниковая аорта"
+          "value": "Супраренальный отдел брюшной аорты"
         },
         {
           "language": "uz",
@@ -2756,7 +2795,7 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Внутренний слуховой проход"
+          "value": "Внутреннее слуховое отверстие"
         },
         {
           "language": "uz",
@@ -2769,7 +2808,7 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Cingulum dentis"
+          "value": "Поясок зуба (cingulum dentis)"
         },
         {
           "language": "uz",
@@ -2899,7 +2938,7 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Головка фаланги руки"
+          "value": "Головка фаланги пальца кисти"
         },
         {
           "language": "uz",
@@ -2912,7 +2951,7 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Ядро двусмысленное"
+          "value": "Двойное ядро"
         },
         {
           "language": "uz",
@@ -2925,7 +2964,7 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Добавочная пазуха"
+          "value": "Околоносовая пазуха"
         },
         {
           "language": "uz",
@@ -3081,7 +3120,7 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Подсерозный"
+          "value": "Подсерозная основа"
         },
         {
           "language": "uz",
@@ -3133,11 +3172,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Вся слюнная серозно-слизистая железа"
+          "value": "Вся слюнная серозно-слизистая железа (строение тела)"
         },
         {
           "language": "uz",
-          "value": "Butun so'lak seroz-shilliq bezi"
+          "value": "Butun so'lak seroz-shilliq bezi (tana tuzilmasi)"
         }
       ]
     },
@@ -3250,7 +3289,7 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Первая плюсневая кость медиальной клиновидной кости"
+          "value": "Суставная поверхность медиальной клиновидной кости для первой плюсневой кости"
         },
         {
           "language": "uz",
@@ -3341,7 +3380,7 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Суставная поверхность, третья пястная, второй пястной кости"
+          "value": "Суставная поверхность второй пястной кости для третьей пястной кости"
         },
         {
           "language": "uz",
@@ -3367,7 +3406,7 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Медиальная контрольная связка глаза"
+          "value": "Медиальная удерживающая связка глаза"
         },
         {
           "language": "uz",
@@ -3419,7 +3458,7 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Треугольник бедренной кости"
+          "value": "Бедренный треугольник"
         },
         {
           "language": "uz",
@@ -3445,7 +3484,7 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Кубовидная суставная поверхность четвертой плюсневой кости"
+          "value": "Суставная поверхность четвертой плюсневой кости для кубовидной кости"
         },
         {
           "language": "uz",
@@ -3458,7 +3497,7 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Фаланга большого пальца"
+          "value": "Фаланга большого пальца кисти"
         },
         {
           "language": "uz",
@@ -3510,7 +3549,7 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Сухожилие длинного сгибателя большого пальца"
+          "value": "Сухожилие длинного сгибателя большого пальца кисти"
         },
         {
           "language": "uz",
@@ -3692,7 +3731,7 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Складка для стремени"
+          "value": "Складка стремени"
         },
         {
           "language": "uz",
@@ -3822,7 +3861,7 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Сухожильная оболочка подколенной мышцы"
+          "value": "Сухожильное влагалище подколенной мышцы"
         },
         {
           "language": "uz",
@@ -3887,7 +3926,7 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Тыльные пальцевые нервы латерального большого пальца стопы и медиального второго пальца стопы"
+          "value": "Тыльные пальцевые нервы латеральной стороны большого пальца и медиальной стороны второго пальца стопы"
         },
         {
           "language": "uz",
@@ -3978,7 +4017,7 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Задний надгортанник"
+          "value": "Задняя поверхность надгортанника"
         },
         {
           "language": "uz",
@@ -4056,11 +4095,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Анатомическая структура пространства"
+          "value": "Анатомическое пространство (строение тела)"
         },
         {
           "language": "uz",
-          "value": "Anatomik bo'shliq tuzilmasi"
+          "value": "Anatomik bo'shliq tuzilmasi (tana tuzilmasi)"
         }
       ]
     },
@@ -4160,7 +4199,7 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Суставная поверхность, пястная, фаланги большого пальца"
+          "value": "Суставная поверхность фаланги большого пальца кисти для пястной кости"
         },
         {
           "language": "uz",
@@ -4251,7 +4290,7 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Митохондрия в делении"
+          "value": "Делящаяся митохондрия"
         },
         {
           "language": "uz",
@@ -4316,7 +4355,7 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Трабекула карнеа левого желудочка"
+          "value": "Мясистая трабекула левого желудочка"
         },
         {
           "language": "uz",
@@ -4355,7 +4394,7 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Tractus olivocochlearis"
+          "value": "Оливо-улитковый путь"
         },
         {
           "language": "uz",
@@ -4433,7 +4472,7 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Подкожная клетчатка затылочной области"
+          "value": "Подкожная клетчатка задней области шеи"
         },
         {
           "language": "uz",
@@ -4498,7 +4537,7 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Сосочковая область"
+          "value": "Сосочковый слой дермы"
         },
         {
           "language": "uz",
@@ -4537,7 +4576,7 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Вентральное переднее ядро"
+          "value": "Вентральное переднее ядро таламуса"
         },
         {
           "language": "uz",
@@ -4641,7 +4680,7 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Интертрагальная вырезка"
+          "value": "Межкозелковая вырезка"
         },
         {
           "language": "uz",
@@ -4693,7 +4732,7 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Аггер наси"
+          "value": "Валик носа (agger nasi)"
         },
         {
           "language": "uz",
@@ -4706,7 +4745,7 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Rima oris"
+          "value": "Ротовая щель"
         },
         {
           "language": "uz",
@@ -4732,7 +4771,7 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Подзатылочно-теменной диаметр головы"
+          "value": "Подзатылочно-брегматический (малый косой) размер головки"
         },
         {
           "language": "uz",
@@ -4745,7 +4784,7 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Верхняя глазная дуга"
+          "value": "Верхняя артериальная дуга века"
         },
         {
           "language": "uz",
@@ -4836,7 +4875,7 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Проникший ооцит"
+          "value": "Ооцит, в который проник сперматозоид"
         },
         {
           "language": "uz",
@@ -4901,7 +4940,7 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Эмбриональный яичко"
+          "value": "Эмбриональное яичко"
         },
         {
           "language": "uz",
@@ -4940,7 +4979,7 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Боковая стенка сосцевидной пазухи"
+          "value": "Латеральная стенка сосцевидной пещеры"
         },
         {
           "language": "uz",
@@ -5239,7 +5278,7 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Аргентаффинные клетки"
+          "value": "Энтероэндокринная клетка"
         },
         {
           "language": "uz",
@@ -5434,7 +5473,7 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Пятая плюсневая суставная поверхность четвертой плюсневой кости"
+          "value": "Суставная поверхность четвертой плюсневой кости для пятой плюсневой кости"
         },
         {
           "language": "uz",
@@ -5499,7 +5538,7 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Подкожная клетчатка носовой раковины"
+          "value": "Подкожная клетчатка раковины ушной раковины (concha auriculae)"
         },
         {
           "language": "uz",
@@ -5525,7 +5564,7 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Медиальные ядра бледного шара"
+          "value": "Медиальный сегмент бледного шара"
         },
         {
           "language": "uz",
@@ -5733,7 +5772,7 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Гиперпартериальные бронхи"
+          "value": "Подартериальный бронх"
         },
         {
           "language": "uz",
@@ -5772,7 +5811,7 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Тюркская ячейка"
+          "value": "Клетка Тюрка"
         },
         {
           "language": "uz",
@@ -5993,7 +6032,7 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Четвертая плюсневая кость латеральной клиновидной кости"
+          "value": "Суставная поверхность латеральной клиновидной кости для четвертой плюсневой кости"
         },
         {
           "language": "uz",
@@ -6006,7 +6045,7 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Надрез хрящевой части слухового прохода"
+          "value": "Вырезка хрящевой части наружного слухового прохода"
         },
         {
           "language": "uz",
@@ -6032,7 +6071,7 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Лестница вестибюля"
+          "value": "Лестница преддверия"
         },
         {
           "language": "uz",
@@ -6045,7 +6084,7 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Передняя суставная поверхность таранной кости"
+          "value": "Передняя таранная суставная поверхность пяточной кости"
         },
         {
           "language": "uz",
@@ -6084,7 +6123,7 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Клиновидная кость (Clivus ossis sphenoidalis)"
+          "value": "Скат клиновидной кости"
         },
         {
           "language": "uz",
@@ -6123,7 +6162,7 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Добавочная синусная железа"
+          "value": "Железа околоносовой пазухи"
         },
         {
           "language": "uz",
@@ -6201,7 +6240,7 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Тенториум мозжечка"
+          "value": "Намет мозжечка"
         },
         {
           "language": "uz",
@@ -6292,7 +6331,7 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Малая бугристость плечевой кости"
+          "value": "Малый бугорок плечевой кости"
         },
         {
           "language": "uz",
@@ -6344,7 +6383,7 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Кожа затылочной области"
+          "value": "Кожа задней области шеи"
         },
         {
           "language": "uz",
@@ -6396,7 +6435,7 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Все венозное сплетение основания овального отверстия черепа"
+          "value": "Венозное сплетение овального отверстия основания черепа"
         },
         {
           "language": "uz",
@@ -6500,7 +6539,7 @@
       "designation": [
         {
           "language": "ru",
-          "value": "клетка Дейтера"
+          "value": "Клетка Дейтерса"
         },
         {
           "language": "uz",
@@ -6526,7 +6565,7 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Передний отдел большеберцовой кости"
+          "value": "Передний фасциальный футляр голени"
         },
         {
           "language": "uz",
@@ -6682,7 +6721,7 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Барабанная полость"
+          "value": "Сосцевидная пещера"
         },
         {
           "language": "uz",
@@ -6812,7 +6851,7 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Внутренняя запирательная мышца седалищная сумка"
+          "value": "Седалищная сумка внутренней запирательной мышцы"
         },
         {
           "language": "uz",
@@ -6825,7 +6864,7 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Ругальская колонна"
+          "value": "Столб складок влагалища"
         },
         {
           "language": "uz",
@@ -7020,7 +7059,7 @@
       "designation": [
         {
           "language": "ru",
-          "value": "единственное отверстие"
+          "value": "Одиночное отверстие (foramen singulare)"
         },
         {
           "language": "uz",
@@ -7449,7 +7488,7 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Сломанная мембрана P лицо"
+          "value": "P-поверхность скола мембраны"
         },
         {
           "language": "uz",
@@ -7722,7 +7761,7 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Собственная субстанция склеры"
+          "value": "Собственное вещество склеры"
         },
         {
           "language": "uz",
@@ -7826,7 +7865,7 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Суставная поверхность третьей пястной кости четвертой пястной кости"
+          "value": "Суставная поверхность четвертой пястной кости для третьей пястной кости"
         },
         {
           "language": "uz",
@@ -8203,7 +8242,7 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Желудочно-кишечный субсерозный"
+          "value": "Подсерозная основа желудочно-кишечного тракта"
         },
         {
           "language": "uz",
@@ -8268,7 +8307,7 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Грушевидная выемка"
+          "value": "Грушевидный карман"
         },
         {
           "language": "uz",
@@ -8281,7 +8320,7 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Os lacrimale"
+          "value": "Слезная кость"
         },
         {
           "language": "uz",
@@ -8294,7 +8333,7 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Sulcus terminalis cordis"
+          "value": "Пограничная борозда сердца"
         },
         {
           "language": "uz",
@@ -8359,7 +8398,7 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Ариено-надгортанная мышца"
+          "value": "Черпалонадгортанная мышца"
         },
         {
           "language": "uz",
@@ -8372,7 +8411,7 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Атлоидное сочленение плода"
+          "value": "Сочленение атланта плода"
         },
         {
           "language": "uz",
@@ -8411,7 +8450,7 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Лимфатические узлы щитовидной железы"
+          "value": "Лимфатический сосуд щитовидной железы"
         },
         {
           "language": "uz",
@@ -8489,7 +8528,7 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Строение лучистой части коркового вещества почки"
+          "value": "Лучистая часть коркового вещества почки"
         },
         {
           "language": "uz",
@@ -8593,7 +8632,7 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Колоническая гаустра"
+          "value": "Гаустры ободочной кишки"
         },
         {
           "language": "uz",
@@ -8736,7 +8775,7 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Строение тыльных межклиновидных связок"
+          "value": "Тыльные межклиновидные связки"
         },
         {
           "language": "uz",
@@ -8866,7 +8905,7 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Правая лодыжка"
+          "value": "Область правого голеностопного сустава"
         },
         {
           "language": "uz",
@@ -8918,7 +8957,7 @@
       "designation": [
         {
           "language": "ru",
-          "value": "барабанная перепонка"
+          "value": "Барабанная струна"
         },
         {
           "language": "uz",
@@ -8970,7 +9009,7 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Строение сухожилий и сухожильных влагалищ кисти"
+          "value": "Сухожилия и (или) сухожильные влагалища кисти"
         },
         {
           "language": "uz",
@@ -8996,7 +9035,7 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Макула утрикулюса"
+          "value": "Пятно маточки (эллиптического мешочка)"
         },
         {
           "language": "uz",
@@ -9074,7 +9113,7 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Кортикомедуллярное соединение почки"
+          "value": "Кортикомедуллярная граница почки"
         },
         {
           "language": "uz",
@@ -9100,7 +9139,7 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Вторичный процесс стопы"
+          "value": "Вторичная ножка подоцита"
         },
         {
           "language": "uz",
@@ -9126,7 +9165,7 @@
       "designation": [
         {
           "language": "ru",
-          "value": "спайка хрящевой ткани"
+          "value": "Спайка поводков"
         },
         {
           "language": "uz",
@@ -9152,7 +9191,7 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Медиальная поверхность руки"
+          "value": "Медиальная поверхность плеча"
         },
         {
           "language": "uz",
@@ -9248,19 +9287,6 @@
         {
           "language": "uz",
           "value": "Butun oldingi lab venasi"
-        }
-      ]
-    },
-    {
-      "code": "6969002",
-      "designation": [
-        {
-          "language": "ru",
-          "value": "Лимфоцитарная ткань"
-        },
-        {
-          "language": "uz",
-          "value": "Limfotsitar to'qima"
         }
       ]
     },
@@ -9464,7 +9490,7 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Чувствительный корешок тройничного ганглия"
+          "value": "Чувствительный корешок тройничного нерва"
         },
         {
           "language": "uz",
@@ -9529,7 +9555,7 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Постовый перешеек барабанной перепонки"
+          "value": "Задний перешеек барабанной полости"
         },
         {
           "language": "uz",
@@ -9542,7 +9568,7 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Подъязычный нерв внутренняя ветвь мышцы языка"
+          "value": "Ветви подъязычного нерва к собственным мышцам языка"
         },
         {
           "language": "uz",
@@ -9555,7 +9581,7 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Вся нижняя сосудистая вена"
+          "value": "Вся нижняя ворсинчатая вена"
         },
         {
           "language": "uz",
@@ -9568,7 +9594,7 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Собственная аппендикулярная мышечная оболочка"
+          "value": "Собственная мышечная оболочка червеобразного отростка"
         },
         {
           "language": "uz",
@@ -9620,7 +9646,7 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Передняя поверхность руки"
+          "value": "Передняя поверхность плеча"
         },
         {
           "language": "uz",
@@ -9724,7 +9750,7 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Связка яичника"
+          "value": "Собственная связка яичника"
         },
         {
           "language": "uz",
@@ -9815,7 +9841,7 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Целая vasa vasorum"
+          "value": "Все сосуды сосудов (vasa vasorum)"
         },
         {
           "language": "uz",
@@ -9932,7 +9958,7 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Таламо-лимфоцитарный тракт"
+          "value": "Таламооливный путь"
         },
         {
           "language": "uz",
@@ -9958,7 +9984,7 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Уздечка половой губы"
+          "value": "Уздечка губы"
         },
         {
           "language": "uz",
@@ -10010,7 +10036,7 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Субдуральное пространство спинномозговой области"
+          "value": "Субдуральное пространство позвоночного канала"
         },
         {
           "language": "uz",
@@ -10114,7 +10140,7 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Правая нога"
+          "value": "Правая стопа"
         },
         {
           "language": "uz",
@@ -10127,7 +10153,7 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Симпатический ствол спинномозговой нерв"
+          "value": "Ветвь симпатического ствола к спинномозговому нерву"
         },
         {
           "language": "uz",
@@ -10153,7 +10179,7 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Передняя поверхность рукоятки"
+          "value": "Передняя поверхность рукоятки грудины"
         },
         {
           "language": "uz",
@@ -10192,7 +10218,7 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Подкожная клетчатка подбородочной области"
+          "value": "Подкожная клетчатка подподбородочного треугольника"
         },
         {
           "language": "uz",
@@ -10283,7 +10309,7 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Рофеоцитарный везикула"
+          "value": "Рофеоцитозный пузырек"
         },
         {
           "language": "uz",
@@ -10387,7 +10413,7 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Вспомогательная клетка"
+          "value": "Клетка-хелпер"
         },
         {
           "language": "uz",
@@ -10491,7 +10517,7 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Приносящий тракт правого желудочка"
+          "value": "Приточный отдел правого желудочка"
         },
         {
           "language": "uz",
@@ -10504,7 +10530,7 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Ядро лимитанов"
+          "value": "Пограничное ядро таламуса"
         },
         {
           "language": "uz",
@@ -10556,7 +10582,7 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Боковые ядра бледного шара"
+          "value": "Латеральный сегмент бледного шара"
         },
         {
           "language": "uz",
@@ -10595,7 +10621,7 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Stratum lemnisci четверохолмия"
+          "value": "Слой петли четверохолмия"
         },
         {
           "language": "uz",
@@ -10660,7 +10686,7 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Кишка задняя"
+          "value": "Задняя кишка"
         },
         {
           "language": "uz",
@@ -10669,24 +10695,11 @@
       ]
     },
     {
-      "code": "8119004",
-      "designation": [
-        {
-          "language": "ru",
-          "value": "Весь дельфийский лимфатический узел"
-        },
-        {
-          "language": "uz",
-          "value": "Butun delfiy (hiqildoq oldi) limfa tuguni"
-        }
-      ]
-    },
-    {
       "code": "8128003",
       "designation": [
         {
           "language": "ru",
-          "value": "Супрааортальная область клапана"
+          "value": "Надклапанная область аорты"
         },
         {
           "language": "uz",
@@ -10855,7 +10868,7 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Суставная поверхность, пястная, фаланги кисти"
+          "value": "Суставная поверхность фаланги кисти для пястной кости"
         },
         {
           "language": "uz",
@@ -10959,7 +10972,7 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Яремная кость клиновидной кости"
+          "value": "Клиновидное возвышение (jugum sphenoidale)"
         },
         {
           "language": "uz",
@@ -11050,7 +11063,7 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Синоатриальный узел, ветвь правой коронарной артерии"
+          "value": "Ветвь синусно-предсердного узла правой коронарной артерии"
         },
         {
           "language": "uz",
@@ -11154,7 +11167,7 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Обе ноги"
+          "value": "Обе стопы"
         },
         {
           "language": "uz",
@@ -11219,7 +11232,7 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Продолговатый пучок клиновидного мозга"
+          "value": "Клиновидный пучок продолговатого мозга"
         },
         {
           "language": "uz",
@@ -11440,7 +11453,7 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Кортикомедуллярное соединение надпочечников"
+          "value": "Кортикомедуллярная граница надпочечника"
         },
         {
           "language": "uz",
@@ -11505,7 +11518,7 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Стержень фаланги среднего пальца"
+          "value": "Тело фаланги среднего пальца"
         },
         {
           "language": "uz",
@@ -11557,7 +11570,7 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Криста Галли"
+          "value": "Петушиный гребень"
         },
         {
           "language": "uz",
@@ -11622,11 +11635,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Вся желудочная кардиальная железа"
+          "value": "Вся желудочная кардиальная железа (строение тела)"
         },
         {
           "language": "uz",
-          "value": "Butun oshqozon kardial bezi"
+          "value": "Butun oshqozon kardial bezi (tana tuzilmasi)"
         }
       ]
     },
@@ -12012,11 +12025,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Строение поясничной вращательной мышцы"
+          "value": "Поясничная вращательная мышца (строение тела)"
         },
         {
           "language": "uz",
-          "value": "Belning aylantiruvchi mushagi"
+          "value": "Belning aylantiruvchi mushagi (tana tuzilmasi)"
         }
       ]
     },
@@ -12038,7 +12051,7 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Ячейка Нимана-Пика"
+          "value": "Клетка Нимана-Пика"
         },
         {
           "language": "uz",
@@ -12103,7 +12116,7 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Задний интраокципитальный синхондроз"
+          "value": "Задний внутризатылочный синхондроз"
         },
         {
           "language": "uz",
@@ -12129,7 +12142,7 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Тактильный диск Меркель"
+          "value": "Осязательный диск Меркеля"
         },
         {
           "language": "uz",
@@ -12220,7 +12233,7 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Пектен ани"
+          "value": "Гребешок заднего прохода (pecten analis)"
         },
         {
           "language": "uz",
@@ -12272,7 +12285,7 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Строение глубоких шейных лимфатических сосудов"
+          "value": "Глубокие шейные лимфатические сосуды"
         },
         {
           "language": "uz",
@@ -12298,11 +12311,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Строение медиальной хрящевой пластинки глоточно-барабанной трубы"
+          "value": "Медиальная хрящевая пластинка слуховой трубы (строение тела)"
         },
         {
           "language": "uz",
-          "value": "Eshitish nayining medial tog'ay plastinkasi"
+          "value": "Eshitish nayining medial tog'ay plastinkasi (tana tuzilmasi)"
         }
       ]
     },
@@ -12311,11 +12324,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Строение амакриновой клетки сетчатки"
+          "value": "Амакриновая клетка сетчатки (строение тела)"
         },
         {
           "language": "uz",
-          "value": "To'r pardaning amakrin hujayrasi"
+          "value": "To'r pardaning amakrin hujayrasi (tana tuzilmasi)"
         }
       ]
     },
@@ -12363,7 +12376,7 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Коронковая депрессия зуба"
+          "value": "Углубление коронки зуба"
         },
         {
           "language": "uz",
@@ -12402,7 +12415,7 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Вся поверхность пятого реберного хряща грудины"
+          "value": "Вся реберная вырезка грудины для пятого реберного хряща"
         },
         {
           "language": "uz",
@@ -12818,7 +12831,7 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Carunculae hymenales"
+          "value": "Миртовидные сосочки"
         },
         {
           "language": "uz",
@@ -12857,7 +12870,7 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Бугорок щитовидной железы"
+          "value": "Щитовидный бугорок щитовидного хряща"
         },
         {
           "language": "uz",
@@ -12870,7 +12883,7 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Периферические нервы миелинизированные нервные волокна"
+          "value": "Миелиновые нервные волокна периферического нерва"
         },
         {
           "language": "uz",
@@ -12922,7 +12935,7 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Первичный процесс стопы"
+          "value": "Первичная ножка подоцита"
         },
         {
           "language": "uz",
