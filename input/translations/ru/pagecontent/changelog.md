@@ -4,11 +4,17 @@
 
 [Типы программ скрининга и патронажа](ValueSet-screening-program-type-vs.html) перечисляют значения идентификатора программы скрининга: восемь концептов скрининга SNOMED CT и национальные [коды скрининга и патронажа](CodeSystem-screening-code-cs.html). В них вернулись `mserv-0007-00007` и `mserv-0007-00009`, удалённые в 0.11.0, как программы DMED по скринингу рака молочной железы и шейки матки, чтобы они отличались от программ скрининга HPV `268547008` и `171149006`. Сама услуга скрининга по-прежнему кодируется в SNOMED CT.
 
+[Типы диагнозов](CodeSystem-diagnosis-type-cs.html) дополнены кодом `gencl-0001-00013` «Диагноз сочетанного заболевания» с узбекским и русским обозначениями, чтобы скрининговые системы могли передавать все типы диагноза из своих форм.
+
+[Дополнение для анатомических локализаций](CodeSystem-body-site-cs.html) даёт узбекские и русские обозначения 1001 структуре тела SNOMED CT вместо 4, а новое [дополнение для лабораторных методов](CodeSystem-lab-methods-sct-cs.html) - 1865 методам SNOMED CT.
+
 #### Изменено
 
 Наборы значений на повторяющихся кодируемых элементах теперь применяются через открытый слайс, а не ко всему элементу, поэтому рядом с национальными кодами можно указывать коды из других систем; сам элемент сохраняет национальный набор как предпочтительную (preferred) связку. Это касается AllergyIntolerance `reaction.manifestation`; AuditEvent `agent.role`, `agent.authorization` и `entity.securityLabel`; Composition `category`; Consent `regulatoryBasis` и `provision.action`; DiagnosticReport `category`; Encounter `class`; EpisodeOfCare `reason.value` и `diagnosis.condition`; Immunization `protocolApplied.targetDisease`; ImmunizationRecommendation `recommendation.vaccineCode`; Observation `category`; ObservationDefinition `permittedUnit`; Procedure `bodySite`; RelatedPerson `relationship`; и ServiceRequest `reason`. В [UZ Core Observation](StructureDefinition-uz-core-observation.html) `interpretation` привязан как extensible вместо required, как в базовом FHIR. Существующие ресурсы остаются валидными.
 
 Четыре набора значений, которые сохраняли лишь часть заменяемого ими базового набора FHIR, теперь включают его целиком. [Статус встречи](ValueSet-encounter-status-vs.html) добавляет `on-hold`, `discharged` и `discontinued`; [типы ресурсов-запросов](ValueSet-request-resource-types-vs.html), используемые в ActivityDefinition `kind`, перечисляют все 17 типов ресурсов-запросов вместо только ImmunizationRecommendation и MedicationRequest; [цели использования в согласии](ValueSet-consent-purpose-of-use-vs.html) включают все цели использования вместо только `RECORDMGT`, а Consent `provision.purpose` привязан к ним как extensible вместо required, как в базовом FHIR; [роли участников состояния](ValueSet-condition-participation-role-vs.html) добавляют `transmitter`. Новые статусы встречи и типы ресурсов имеют узбекские и русские обозначения.
+
+В [UZ Core Observation](StructureDefinition-uz-core-observation.html) `bodySite` привязан к [анатомическим локализациям](ValueSet-body-site-vs.html), то есть ко всем структурам тела SNOMED CT, вместо базового набора локализаций FHIR, который в них входит. [Лабораторные методы](ValueSet-lab-method-vs.html), привязанные к `method`, дополняют национальные коды техниками, действиями и оценочными процедурами SNOMED CT из базового набора методов наблюдения FHIR. Существующие ресурсы остаются валидными.
 
 #### Документация
 
