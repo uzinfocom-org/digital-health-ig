@@ -1,6 +1,8 @@
 ### Ishlab chiqilmoqda
 
-(Hozircha o‘zgarishlar yo‘q)
+#### Qo'shildi
+
+[Tashxis turlari](CodeSystem-diagnosis-type-cs.html) `gencl-0001-00013` "Qo'shma kasallik tashxisi" kodi bilan to'ldirildi (o'zbek va rus tilidagi nomlari bilan), shunda skrining tizimlari o'z shakllaridagi barcha tashxis turlarini yubora oladi.
 
 ### Versiya 0.11.1
 

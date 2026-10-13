@@ -1,6 +1,8 @@
 ### In development
 
-(No changes yet)
+#### Added
+
+[Diagnosis types](CodeSystem-diagnosis-type-cs.html) add `gencl-0001-00013` "Diagnosis of a combined disease" (сочетанное заболевание), with Uzbek and Russian designations, so screening applications can send every diagnosis type their forms offer.
 
 ### Version 0.11.1
 
