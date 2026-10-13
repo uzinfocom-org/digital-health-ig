@@ -1,8 +1,8 @@
-### In development
-
-(No changes yet)
-
 ### Version 0.11.1
+
+#### Added
+
+[Screening and home visit program types](ValueSet-screening-program-type-vs.html) lists the values of a screening program identifier: eight SNOMED CT screening concepts and the national [screening and home visit codes](CodeSystem-screening-code-cs.html). It brings back `mserv-0007-00007` and `mserv-0007-00009`, removed in 0.11.0, as the DMED breast and cervical cancer screening programs, so they stay distinct from the HPV screening programs `268547008` and `171149006`. The screening service itself is still coded in SNOMED CT.
 
 #### Changed
 
@@ -10,9 +10,9 @@ Value sets on repeating coded elements now apply through an open slice instead o
 
 Four value sets that kept only part of the base FHIR value set they replace now include all of it. [Encounter status](ValueSet-encounter-status-vs.html) adds `on-hold`, `discharged` and `discontinued`; [request resource types](ValueSet-request-resource-types-vs.html), used by ActivityDefinition `kind`, lists all 17 request resource types instead of only ImmunizationRecommendation and MedicationRequest; [consent purpose of use](ValueSet-consent-purpose-of-use-vs.html) includes every purpose of use instead of only `RECORDMGT`, and Consent `provision.purpose` binds it extensible instead of required, as in base FHIR; and [condition participation roles](ValueSet-condition-participation-role-vs.html) adds `transmitter`. The new encounter statuses and resource types have Uzbek and Russian designations.
 
-#### Added
+#### Documentation
 
-The [screening program registry](ValueSet-screening-program-type-vs.html) contains eight SNOMED CT screening codes and all retained national screening/home visit codes. DMED breast/cervical program codes mserv-0007-00007 and mserv-0007-00009 are restored as distinct program identifiers; their clinical codes remain SNOMED CT. Screening invitation examples reuse the existing Core profiles.
+[UZ Core ActivityDefinition](StructureDefinition-uz-core-activitydefinition.html) describes a screening invitation template: `kind` is `ServiceRequest`, `intent` is `plan`, and `profile` names UZ Core ServiceRequest. The screening examples and the application contract are in the integration guide.
 
 ### Version 0.11.0
 
