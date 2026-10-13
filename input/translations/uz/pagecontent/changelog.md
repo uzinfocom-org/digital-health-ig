@@ -1,10 +1,12 @@
-### Ishlab chiqilmoqda
+### Versiya 0.11.1
 
 #### Qo'shildi
 
+[Skrining va patronaj dasturlari turlari](ValueSet-screening-program-type-vs.html) skrining dasturi identifikatorining qiymatlarini sanab o'tadi: sakkizta SNOMED CT skrining tushunchasi va milliy [skrining va patronaj kodlari](CodeSystem-screening-code-cs.html). Unga 0.11.0 da olib tashlangan `mserv-0007-00007` va `mserv-0007-00009` DMED ko'krak bezi va bachadon bo'yni saratoni skrining dasturlari sifatida qaytarildi, shunda ular HPV tizimining `268547008` va `171149006` skrining dasturlaridan ajralib turadi. Skrining xizmatining o'zi avvalgidek SNOMED CT da kodlanadi.
+
 [Tashxis turlari](CodeSystem-diagnosis-type-cs.html) `gencl-0001-00013` "Qo'shma kasallik tashxisi" kodi bilan to'ldirildi (o'zbek va rus tilidagi nomlari bilan), shunda skrining tizimlari o'z shakllaridagi barcha tashxis turlarini yubora oladi.
 
-### Versiya 0.11.1
+[Tana sohalari qo'shimchasi](CodeSystem-body-site-cs.html) 4 ta o'rniga 1001 ta SNOMED CT tana tuzilmasiga o'zbekcha va ruscha nomlar beradi, yangi [laboratoriya usullari qo'shimchasi](CodeSystem-lab-methods-sct-cs.html) esa 1865 ta SNOMED CT usuliga.
 
 #### O'zgartirildi
 
@@ -12,9 +14,11 @@ Takrorlanuvchi kodlangan elementlardagi qiymatlar to'plamlari endi butun element
 
 O'zi almashtiradigan asosiy FHIR to'plamining faqat bir qismini saqlagan to'rtta qiymatlar to'plami endi uni to'liq o'z ichiga oladi. [Tashrif holati](ValueSet-encounter-status-vs.html) `on-hold`, `discharged` va `discontinued` ni qo'shadi; ActivityDefinition `kind` da ishlatiladigan [so'rov resurslari turlari](ValueSet-request-resource-types-vs.html) faqat ImmunizationRecommendation va MedicationRequest o'rniga barcha 17 ta so'rov resursi turini sanab o'tadi; [rozilikdagi foydalanish maqsadlari](ValueSet-consent-purpose-of-use-vs.html) faqat `RECORDMGT` o'rniga barcha foydalanish maqsadlarini o'z ichiga oladi, Consent `provision.purpose` esa unga asosiy FHIR dagi kabi required o'rniga extensible bog'langan; [holat ishtirokchilari rollari](ValueSet-condition-participation-role-vs.html) esa `transmitter` ni qo'shadi. Yangi tashrif holatlari va resurs turlari o'zbekcha va ruscha nomlarga ega.
 
-#### Qo'shildi
+[UZ Core Observation](StructureDefinition-uz-core-observation.html) da `bodySite` asosiy FHIR tana sohalari to'plami o'rniga uni o'z ichiga olgan [tana sohalari](ValueSet-body-site-vs.html), ya'ni barcha SNOMED CT tana tuzilmalari bilan bog'langan. `method` ga bog'langan [laboratoriya usullari](ValueSet-lab-method-vs.html) milliy kodlarga asosiy FHIR kuzatuv usullaridagi SNOMED CT texnikalari, harakatlari va baholash protseduralarini qo'shadi. Mavjud resurslar yaroqliligicha qoladi.
 
-[Skrining dasturlari reestri](ValueSet-screening-program-type-vs.html) sakkizta SNOMED CT kodini va saqlangan milliy skrining/patronaj kodlarini oladi. mserv-0007-00007 va mserv-0007-00009 DMED dasturlarining alohida identifikatorlari sifatida tiklanadi; klinik kodlari SNOMED CT bo'lib qoladi. Taklif misollari mavjud Core profillaridan foydalanadi.
+#### Hujjatlashtirish
+
+[UZ Core ActivityDefinition](StructureDefinition-uz-core-activitydefinition.html) skriningga taklif shablonini tavsiflaydi: `kind` - `ServiceRequest`, `intent` - `plan`, `profile` esa UZ Core ServiceRequest ni ko'rsatadi. Skrining misollari va ilovalar uchun shartnoma integratsiyalar qo'llanmasida.
 
 ### Versiya 0.11.0
 
