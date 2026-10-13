@@ -1,0 +1,8 @@
+CODE,UZ,RU,,,,
+draft,qoralama,черновик,,http://hl7.org/fhir/request-status,,"SupplementCodeSystemDraft(service-request-status-cs, $service-request-status, 5.0.0)"
+active,faol,активен,,,,
+on-hold,vaqtincha to'xtatilgan,приостановлен,,,,
+revoked,bekor qilingan,отменён,,,,
+completed,bajarilgan,выполнен,,,,
+entered-in-error,xato bilan kiritilgan,введён по ошибке,,,,
+unknown,noma’lum,неизвестен,,,,
