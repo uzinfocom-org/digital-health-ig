@@ -1723,13 +1723,13 @@ Description: "Observation method (SNOMED CT) supplement with Uzbek and Russian t
 
 * #371914001
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Пик-пик - метод числовой оценки (значение квалификатора)"
+  * ^designation[=].value = "Пик-пик - метод числовой оценки"
   * ^designation[+].language = #uz
   * ^designation[=].value = "Cho‘qqidan cho‘qqigacha – sonli baholash texnikasi"
 
 * #371916004
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Репрезентативное значение - метод числовой оценки (значение квалификатора)"
+  * ^designation[=].value = "Репрезентативное значение - метод числовой оценки"
   * ^designation[+].language = #uz
   * ^designation[=].value = "Namunaviy – sonli baholash texnikasi"
 
@@ -1741,13 +1741,13 @@ Description: "Observation method (SNOMED CT) supplement with Uzbek and Russian t
 
 * #373099004
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Медиана - метод числовой оценки (значение квалификатора)"
+  * ^designation[=].value = "Медиана - метод числовой оценки"
   * ^designation[+].language = #uz
   * ^designation[=].value = "Mediana – sonli baholash texnikasi"
 
 * #373100007
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Мода - метод числовой оценки (значение квалификатора)"
+  * ^designation[=].value = "Мода - метод числовой оценки"
   * ^designation[+].language = #uz
   * ^designation[=].value = "Moda – sonli baholash texnikasi"
 
@@ -1783,7 +1783,7 @@ Description: "Observation method (SNOMED CT) supplement with Uzbek and Russian t
 
 * #398037009
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Методика определения расположения сосуда (значение квалификатора)"
+  * ^designation[=].value = "Методика определения расположения сосуда"
   * ^designation[+].language = #uz
   * ^designation[=].value = "Tomirni aniqlash texnikasi"
 
@@ -1813,7 +1813,7 @@ Description: "Observation method (SNOMED CT) supplement with Uzbek and Russian t
 
 * #414456005
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Методика визуального (лучевого) контроля (значение квалификатора)"
+  * ^designation[=].value = "Методика визуального (лучевого) контроля"
   * ^designation[+].language = #uz
   * ^designation[=].value = "Tasvir nazorati ostidagi texnika"
 
@@ -1855,25 +1855,25 @@ Description: "Observation method (SNOMED CT) supplement with Uzbek and Russian t
 
 * #418449005
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Мягко (значение квалификатора)"
+  * ^designation[=].value = "Мягко"
   * ^designation[+].language = #uz
   * ^designation[=].value = "Ehtiyotkorlik bilan"
 
 * #418694008
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Быстро (значение квалификатора)"
+  * ^designation[=].value = "Быстро"
   * ^designation[+].language = #uz
   * ^designation[=].value = "Tez"
 
 * #419125005
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Щедро (значение квалификатора)"
+  * ^designation[=].value = "Щедро"
   * ^designation[+].language = #uz
   * ^designation[=].value = "Mo‘l-ko‘l"
 
 * #419443000
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Медленно (значение квалификатора)"
+  * ^designation[=].value = "Медленно"
   * ^designation[+].language = #uz
   * ^designation[=].value = "Sekin"
 
@@ -2029,7 +2029,7 @@ Description: "Observation method (SNOMED CT) supplement with Uzbek and Russian t
 
 * #702667000
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Формула расчета клиренса (значение квалификатора)"
+  * ^designation[=].value = "Формула расчета клиренса"
   * ^designation[+].language = #uz
   * ^designation[=].value = "Klirensni hisoblash formulasi"
 
@@ -2071,7 +2071,7 @@ Description: "Observation method (SNOMED CT) supplement with Uzbek and Russian t
 
 * #702873001
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Методика расчета (значение квалификатора)"
+  * ^designation[=].value = "Методика расчета"
   * ^designation[+].language = #uz
   * ^designation[=].value = "Hisoblash texnikasi"
 
@@ -2323,7 +2323,7 @@ Description: "Observation method (SNOMED CT) supplement with Uzbek and Russian t
 
 * #703507004
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Расчет клиренса относительно площади поверхности тела 1,73 квадратных метра и с поправкой на неафриканскую расу (квалификационное значение)"
+  * ^designation[=].value = "Расчет клиренса относительно площади поверхности тела 1,73 квадратных метра и с поправкой на неафриканскую расу"
   * ^designation[+].language = #uz
   * ^designation[=].value = "Klirensni 1,73 m² tana yuzasiga nisbatan hisoblash, afrika bo‘lmagan irqqa tuzatilgan"
 
@@ -2383,7 +2383,7 @@ Description: "Observation method (SNOMED CT) supplement with Uzbek and Russian t
 
 * #703858009
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Метод числовой оценки (значение квалификатора)"
+  * ^designation[=].value = "Метод числовой оценки"
   * ^designation[+].language = #uz
   * ^designation[=].value = "Sonli baholash texnikasi"
 
@@ -2401,19 +2401,19 @@ Description: "Observation method (SNOMED CT) supplement with Uzbek and Russian t
 
 * #707684004
   * ^designation[0].language = #ru
-  * ^designation[=].value = "С поправкой на многоплодную беременность (значение квалификатора)"
+  * ^designation[=].value = "С поправкой на многоплодную беременность"
   * ^designation[+].language = #uz
   * ^designation[=].value = "Ko‘p homilalikka tuzatilgan texnika"
 
 * #707685003
   * ^designation[0].language = #ru
-  * ^designation[=].value = "С поправкой на глобулин, связывающий половые гормоны (значение квалификатора)"
+  * ^designation[=].value = "С поправкой на глобулин, связывающий половые гормоны"
   * ^designation[+].language = #uz
   * ^designation[=].value = "Jinsiy gormonlarni bog‘lovchi globulinga tuzatilgan texnika"
 
 * #707687006
   * ^designation[0].language = #ru
-  * ^designation[=].value = "С поправкой на массу тела (квалификационное значение)"
+  * ^designation[=].value = "С поправкой на массу тела"
   * ^designation[+].language = #uz
   * ^designation[=].value = "Vaznga tuzatilgan texnika"
 
@@ -2437,7 +2437,7 @@ Description: "Observation method (SNOMED CT) supplement with Uzbek and Russian t
 
 * #707691001
   * ^designation[0].language = #ru
-  * ^designation[=].value = "С поправкой на фон (значение квалификатора)"
+  * ^designation[=].value = "С поправкой на фон"
   * ^designation[+].language = #uz
   * ^designation[=].value = "Fonga tuzatilgan texnika"
 
@@ -2485,7 +2485,7 @@ Description: "Observation method (SNOMED CT) supplement with Uzbek and Russian t
 
 * #707700003
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Результат автоматического подсчета с поправкой на ядросодержащие эритроциты (значение квалификатора)"
+  * ^designation[=].value = "Результат автоматического подсчета с поправкой на ядросодержащие эритроциты"
   * ^designation[+].language = #uz
   * ^designation[=].value = "Avtomatlashtirilgan sanash natijasi yadroli eritrotsitlarga tuzatilgan"
 
@@ -2497,7 +2497,7 @@ Description: "Observation method (SNOMED CT) supplement with Uzbek and Russian t
 
 * #707702006
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Расчетный результат, приведенный к стандарту (значение квалификатора)"
+  * ^designation[=].value = "Расчетный результат, приведенный к стандарту"
   * ^designation[+].language = #uz
   * ^designation[=].value = "Hisoblangan natija standartga tuzatilgan"
 
@@ -2689,7 +2689,7 @@ Description: "Observation method (SNOMED CT) supplement with Uzbek and Russian t
 
 * #718496006
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Фаготипирование бактерий (значение квалификатора)"
+  * ^designation[=].value = "Фаготипирование бактерий"
   * ^designation[+].language = #uz
   * ^designation[=].value = "Bakteriyalarni bakteriofag bo‘yicha tiplash"
 
@@ -2707,13 +2707,13 @@ Description: "Observation method (SNOMED CT) supplement with Uzbek and Russian t
 
 * #723204004
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Методика расчета дельты оснований (значение квалификатора)"
+  * ^designation[=].value = "Методика расчета дельты оснований"
   * ^designation[+].language = #uz
   * ^designation[=].value = "Asoslar deltasini hisoblash texnikasi"
 
 * #723205003
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Метод расчета анионной щели (значение квалификатора)"
+  * ^designation[=].value = "Метод расчета анионной щели"
   * ^designation[+].language = #uz
   * ^designation[=].value = "Anion oralig‘ini hisoblash texnikasi"
 
@@ -2725,19 +2725,19 @@ Description: "Observation method (SNOMED CT) supplement with Uzbek and Russian t
 
 * #723207006
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Метод расчета анионного зазора на основе ионов натрия, калия, хлорида и бикарбоната (значение квалификатора)"
+  * ^designation[=].value = "Метод расчета анионного зазора на основе ионов натрия, калия, хлорида и бикарбоната"
   * ^designation[+].language = #uz
   * ^designation[=].value = "Natriy, kaliy, xlorid va bikarbonat ionlari asosida anion oralig‘ini hisoblash texnikasi"
 
 * #723208001
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Методика расчета избытка оснований (значение квалификатора)"
+  * ^designation[=].value = "Методика расчета избытка оснований"
   * ^designation[+].language = #uz
   * ^designation[=].value = "Asoslar ortiqchasini hisoblash texnikasi"
 
 * #723209009
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Методика расчета дефицита оснований (значение квалификатора)"
+  * ^designation[=].value = "Методика расчета дефицита оснований"
   * ^designation[+].language = #uz
   * ^designation[=].value = "Asoslar tanqisligini hisoblash texnikasi"
 
@@ -2749,7 +2749,7 @@ Description: "Observation method (SNOMED CT) supplement with Uzbek and Russian t
 
 * #723211000
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Техника зетафуга (значение уточнения)"
+  * ^designation[=].value = "Техника зетафуга"
   * ^designation[+].language = #uz
   * ^designation[=].value = "Zetafuga texnikasi"
 
@@ -2761,13 +2761,13 @@ Description: "Observation method (SNOMED CT) supplement with Uzbek and Russian t
 
 * #725996004
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Обнаружение без классификации при световой микроскопии с малым увеличением (значение квалификатора)"
+  * ^designation[=].value = "Обнаружение без классификации при световой микроскопии с малым увеличением"
   * ^designation[+].language = #uz
   * ^designation[=].value = "Kichik kattalashtirishli yorug‘lik mikroskopiyasida tasniflamasdan aniqlash"
 
 * #725997008
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Обнаружение без классификации при световой микроскопии с большим увеличением (значение квалификатора)"
+  * ^designation[=].value = "Обнаружение без классификации при световой микроскопии с большим увеличением"
   * ^designation[+].language = #uz
   * ^designation[=].value = "Katta kattalashtirishli yorug‘lik mikroskopiyasida tasniflamasdan aniqlash"
 
@@ -2785,7 +2785,7 @@ Description: "Observation method (SNOMED CT) supplement with Uzbek and Russian t
 
 * #726445004
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Метод цитологии ThinPrep (значение квалификатора)"
+  * ^designation[=].value = "Метод цитологии ThinPrep"
   * ^designation[+].language = #uz
   * ^designation[=].value = "ThinPrep sitologiya texnikasi"
 
@@ -2803,7 +2803,7 @@ Description: "Observation method (SNOMED CT) supplement with Uzbek and Russian t
 
 * #726448002
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Методика идентификатора последовательности (значение квалификатора)"
+  * ^designation[=].value = "Методика идентификатора последовательности"
   * ^designation[+].language = #uz
   * ^designation[=].value = "Ketma-ketlik identifikatori texnikasi"
 
@@ -2815,19 +2815,19 @@ Description: "Observation method (SNOMED CT) supplement with Uzbek and Russian t
 
 * #726451009
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Метод усиления сигнала (значение квалификатора)"
+  * ^designation[=].value = "Метод усиления сигнала"
   * ^designation[+].language = #uz
   * ^designation[=].value = "Signalni kuchaytirish texnikasi"
 
 * #726748001
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Методика радиоаллергосорбентного тестирования (оценочное значение)"
+  * ^designation[=].value = "Методика радиоаллергосорбентного тестирования"
   * ^designation[+].language = #uz
   * ^designation[=].value = "Radioallergosorbent test texnikasi"
 
 * #733985002
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Сообщается (значение квалификатора)"
+  * ^designation[=].value = "Сообщается"
   * ^designation[+].language = #uz
   * ^designation[=].value = "Xabar qilingan"
 
@@ -2863,19 +2863,19 @@ Description: "Observation method (SNOMED CT) supplement with Uzbek and Russian t
 
 * #735147002
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Методика расчета средней концентрации корпускулярного гемоглобина в эритроцитах (значение квалификатора)"
+  * ^designation[=].value = "Методика расчета средней концентрации корпускулярного гемоглобина в эритроцитах"
   * ^designation[+].language = #uz
   * ^designation[=].value = "Eritrotsitdagi gemoglobin o‘rtacha konsentratsiyasini hisoblash texnikasi"
 
 * #735148007
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Методика расчета среднего содержания гемоглобина в эритроцитах (значение квалификатора)"
+  * ^designation[=].value = "Методика расчета среднего содержания гемоглобина в эритроцитах"
   * ^designation[+].language = #uz
   * ^designation[=].value = "Eritrotsitdagi gemoglobin o‘rtacha miqdorini hisoblash texnikasi"
 
 * #735149004
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Методика расчета ширины распределения эритроцитов (значение квалификатора)"
+  * ^designation[=].value = "Методика расчета ширины распределения эритроцитов"
   * ^designation[+].language = #uz
   * ^designation[=].value = "Eritrotsitlar taqsimlanish kengligini hisoblash texnikasi"
 
@@ -2905,7 +2905,7 @@ Description: "Observation method (SNOMED CT) supplement with Uzbek and Russian t
 
 * #737106001
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Метод расчета хромосомоспецифической дозы внеклеточной ДНК (значение квалификатора)"
+  * ^designation[=].value = "Метод расчета хромосомоспецифической дозы внеклеточной ДНК"
   * ^designation[+].language = #uz
   * ^designation[=].value = "Xromosomaga xos hujayradan tashqari DNK dozasini hisoblash texnikasi"
 
@@ -2929,7 +2929,7 @@ Description: "Observation method (SNOMED CT) supplement with Uzbek and Russian t
 
 * #737110003
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Методика расчета индекса свободных андрогенов (квалификаторное значение)"
+  * ^designation[=].value = "Методика расчета индекса свободных андрогенов"
   * ^designation[+].language = #uz
   * ^designation[=].value = "Erkin androgen indeksini hisoblash texnikasi"
 
@@ -2947,7 +2947,7 @@ Description: "Observation method (SNOMED CT) supplement with Uzbek and Russian t
 
 * #737113001
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Метод расчета международного нормализованного отношения (значение квалификатора)"
+  * ^designation[=].value = "Метод расчета международного нормализованного отношения"
   * ^designation[+].language = #uz
   * ^designation[=].value = "Xalqaro normallashtirilgan nisbatni (XNN) hisoblash texnikasi"
 
@@ -2995,13 +2995,13 @@ Description: "Observation method (SNOMED CT) supplement with Uzbek and Russian t
 
 * #737537008
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Расчет на основе общего риска населения (значение квалификатора)"
+  * ^designation[=].value = "Расчет на основе общего риска населения"
   * ^designation[+].language = #uz
   * ^designation[=].value = "Umumiy aholi xavfi asosida hisoblash"
 
 * #737538003
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Расчет на основе возраста матери (значение-квалификатор)"
+  * ^designation[=].value = "Расчет на основе возраста матери"
   * ^designation[+].language = #uz
   * ^designation[=].value = "Onaning yoshi asosida hisoblash"
 
@@ -3031,7 +3031,7 @@ Description: "Observation method (SNOMED CT) supplement with Uzbek and Russian t
 
 * #761997001
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Методика коагуляции, индуцированной адреналином (значение квалификатора)"
+  * ^designation[=].value = "Методика коагуляции, индуцированной адреналином"
   * ^designation[+].language = #uz
   * ^designation[=].value = "Adrenalin bilan qo‘zg‘atilgan koagulyatsiya texnikasi"
 
@@ -3079,7 +3079,7 @@ Description: "Observation method (SNOMED CT) supplement with Uzbek and Russian t
 
 * #787997001
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Метод хромогенной гибридизации in situ (значение квалификатора)"
+  * ^designation[=].value = "Метод хромогенной гибридизации in situ"
   * ^designation[+].language = #uz
   * ^designation[=].value = "Xromogen in situ gibridizatsiya texnikasi"
 
@@ -3121,7 +3121,7 @@ Description: "Observation method (SNOMED CT) supplement with Uzbek and Russian t
 
 * #870596008
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Техника шестиметровой ходьбы с хронометражем (квалификационный показатель)"
+  * ^designation[=].value = "Техника шестиметровой ходьбы с хронометражем"
   * ^designation[+].language = #uz
   * ^designation[=].value = "Olti metr yurish vaqti texnikasi"
 
@@ -3151,7 +3151,7 @@ Description: "Observation method (SNOMED CT) supplement with Uzbek and Russian t
 
 * #1156040003
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Со слов пациента (значение квалификатора)"
+  * ^designation[=].value = "Со слов пациента"
   * ^designation[+].language = #uz
   * ^designation[=].value = "Bemorning o‘zi xabar qilgan"
 
@@ -3169,7 +3169,7 @@ Description: "Observation method (SNOMED CT) supplement with Uzbek and Russian t
 
 * #1179120009
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Метод фракционирования (значение квалификатора)"
+  * ^designation[=].value = "Метод фракционирования"
   * ^designation[+].language = #uz
   * ^designation[=].value = "Fraksiyalash texnikasi"
 
@@ -3211,7 +3211,7 @@ Description: "Observation method (SNOMED CT) supplement with Uzbek and Russian t
 
 * #66721000052106
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Метод рекомбинантного иммуноблоттинга (значение квалификатора)"
+  * ^designation[=].value = "Метод рекомбинантного иммуноблоттинга"
   * ^designation[+].language = #uz
   * ^designation[=].value = "Rekombinant immunoblot tahlil texnikasi"
 
@@ -3235,7 +3235,7 @@ Description: "Observation method (SNOMED CT) supplement with Uzbek and Russian t
 
 * #70521000052109
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Метод аффинной хроматографии (значение квалификатора)"
+  * ^designation[=].value = "Метод аффинной хроматографии"
   * ^designation[+].language = #uz
   * ^designation[=].value = "Affin xromatografiya texnikasi"
 
@@ -3277,7 +3277,7 @@ Description: "Observation method (SNOMED CT) supplement with Uzbek and Russian t
 
 * #70601000052104
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Метод полимеразной цепной реакции в реальном времени (значение квалификатора)"
+  * ^designation[=].value = "Метод полимеразной цепной реакции в реальном времени"
   * ^designation[+].language = #uz
   * ^designation[=].value = "Real vaqtdagi polimeraza zanjir reaksiyasi texnikasi"
 
@@ -3385,7 +3385,7 @@ Description: "Observation method (SNOMED CT) supplement with Uzbek and Russian t
 
 * #129275003
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Административный перевод - действие (значение квалификатора)"
+  * ^designation[=].value = "Административный перевод - действие"
   * ^designation[+].language = #uz
   * ^designation[=].value = "Ma’muriy o‘tkazish – harakat"
 
@@ -4375,7 +4375,7 @@ Description: "Observation method (SNOMED CT) supplement with Uzbek and Russian t
 
 * #257867005
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Введение (установка) - действие (квалификатор значения)"
+  * ^designation[=].value = "Введение (установка) - действие"
   * ^designation[+].language = #uz
   * ^designation[=].value = "O‘rnatish (kiritish) – harakat"
 
@@ -5263,7 +5263,7 @@ Description: "Observation method (SNOMED CT) supplement with Uzbek and Russian t
 
 * #386746003
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Поддержание - действие (квалификатор значения)"
+  * ^designation[=].value = "Поддержание - действие"
   * ^designation[+].language = #uz
   * ^designation[=].value = "Saqlab turish – harakat"
 
@@ -5275,19 +5275,19 @@ Description: "Observation method (SNOMED CT) supplement with Uzbek and Russian t
 
 * #399015009
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Томографическая визуализация, обычная рентгенологическая - действие (значение квалификатора)"
+  * ^designation[=].value = "Томографическая визуализация, обычная рентгенологическая - действие"
   * ^designation[+].language = #uz
   * ^designation[=].value = "Tomografik tasvirlash, oddiy rentgenologik – harakat"
 
 * #399035005
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Томографическая визуализация - действие (значение квалификатора)"
+  * ^designation[=].value = "Томографическая визуализация - действие"
   * ^designation[+].language = #uz
   * ^designation[=].value = "Tomografik tasvirlash – harakat"
 
 * #399064001
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Ультразвук в двухмерном режиме - действие (значение квалификатора)"
+  * ^designation[=].value = "Ультразвук в двухмерном режиме - действие"
   * ^designation[+].language = #uz
   * ^designation[=].value = "Ikki o‘lchamli rejimdagi ultratovush – harakat"
 
@@ -5299,7 +5299,7 @@ Description: "Observation method (SNOMED CT) supplement with Uzbek and Russian t
 
 * #410460000
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Освещение - действие (квалификатор значения)"
+  * ^designation[=].value = "Освещение - действие"
   * ^designation[+].language = #uz
   * ^designation[=].value = "Yoritish – harakat"
 
@@ -5323,13 +5323,13 @@ Description: "Observation method (SNOMED CT) supplement with Uzbek and Russian t
 
 * #410464009
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Непрямое освещение склеральным рассеянием - действие (значение квалификатора)"
+  * ^designation[=].value = "Непрямое освещение склеральным рассеянием - действие"
   * ^designation[+].language = #uz
   * ^designation[=].value = "Bilvosita sklerotik sochiluvchi yoritish – harakat"
 
 * #410465005
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Непрямое ретроиллюминирование от радужной оболочки глаза - действие (значение квалификатора)"
+  * ^designation[=].value = "Непрямое ретроиллюминирование от радужной оболочки глаза - действие"
   * ^designation[+].language = #uz
   * ^designation[=].value = "Rangdor pardadan bilvosita retroyoritish – harakat"
 
@@ -5341,7 +5341,7 @@ Description: "Observation method (SNOMED CT) supplement with Uzbek and Russian t
 
 * #410467002
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Непрямое просвечивание радужной оболочки глаза - действие (значение квалификатора)"
+  * ^designation[=].value = "Непрямое просвечивание радужной оболочки глаза - действие"
   * ^designation[+].language = #uz
   * ^designation[=].value = "Rangdor pardani bilvosita transilluminatsiya qilish – harakat"
 
@@ -5365,13 +5365,13 @@ Description: "Observation method (SNOMED CT) supplement with Uzbek and Russian t
 
 * #410759009
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Декомпрессивное рассечение - действие (значение квалификатора)"
+  * ^designation[=].value = "Декомпрессивное рассечение - действие"
   * ^designation[+].language = #uz
   * ^designation[=].value = "Dekompressiv kesib ajratish – harakat"
 
 * #410769003
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Репозиция путем элевации - действие (квалификатор значения)"
+  * ^designation[=].value = "Репозиция путем элевации - действие"
   * ^designation[+].language = #uz
   * ^designation[=].value = "Ko‘tarish orqali to‘g‘rilash – harakat"
 
@@ -5425,13 +5425,13 @@ Description: "Observation method (SNOMED CT) supplement with Uzbek and Russian t
 
 * #419988009
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Действие введения препарата (значение квалификатора)"
+  * ^designation[=].value = "Действие введения препарата"
   * ^designation[+].language = #uz
   * ^designation[=].value = "Dori yuborish harakati"
 
 * #424208002
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Шунтирование - действие (квалификатор значения)"
+  * ^designation[=].value = "Шунтирование - действие"
   * ^designation[+].language = #uz
   * ^designation[=].value = "Shunt – harakat"
 
@@ -5461,13 +5461,13 @@ Description: "Observation method (SNOMED CT) supplement with Uzbek and Russian t
 
 * #425704008
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Энергетическая допплерография - действие (значение квалификатора)"
+  * ^designation[=].value = "Энергетическая допплерография - действие"
   * ^designation[+].language = #uz
   * ^designation[=].value = "Energetik Doppler ultratovush – harakat"
 
 * #425764006
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Транссекция - действие (квалификаторное значение)"
+  * ^designation[=].value = "Транссекция - действие"
   * ^designation[+].language = #uz
   * ^designation[=].value = "Ko‘ndalang kesish (transeksiya) – harakat"
 
@@ -5509,7 +5509,7 @@ Description: "Observation method (SNOMED CT) supplement with Uzbek and Russian t
 
 * #439417007
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Закрытая ручная репозиция - действие (значение квалификатора)"
+  * ^designation[=].value = "Закрытая ручная репозиция - действие"
   * ^designation[+].language = #uz
   * ^designation[=].value = "Yopiq qo‘lda repozitsiya – harakat"
 
@@ -5539,7 +5539,7 @@ Description: "Observation method (SNOMED CT) supplement with Uzbek and Russian t
 
 * #442837002
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Иссечение и хирургическая обработка раны - действие (значение квалификатора)"
+  * ^designation[=].value = "Иссечение и хирургическая обработка раны - действие"
   * ^designation[+].language = #uz
   * ^designation[=].value = "Eksiziya bilan debridman – harakat"
 
@@ -5557,7 +5557,7 @@ Description: "Observation method (SNOMED CT) supplement with Uzbek and Russian t
 
 * #698789000
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Освещение отраженным светом (значение квалификатора)"
+  * ^designation[=].value = "Освещение отраженным светом"
   * ^designation[+].language = #uz
   * ^designation[=].value = "Qaytgan nur bilan yoritish"
 
@@ -5569,19 +5569,19 @@ Description: "Observation method (SNOMED CT) supplement with Uzbek and Russian t
 
 * #698792001
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Освещение в светлом поле (значение квалификатора)"
+  * ^designation[=].value = "Освещение в светлом поле"
   * ^designation[+].language = #uz
   * ^designation[=].value = "Yorug‘ maydonli yoritish"
 
 * #698793006
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Освещение темного поля (значение квалификатора)"
+  * ^designation[=].value = "Освещение темного поля"
   * ^designation[+].language = #uz
   * ^designation[=].value = "Qorong‘i maydonli yoritish"
 
 * #698794000
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Косое освещение (значение квалификатора)"
+  * ^designation[=].value = "Косое освещение"
   * ^designation[+].language = #uz
   * ^designation[=].value = "Qiya yoritish"
 
@@ -5593,7 +5593,7 @@ Description: "Observation method (SNOMED CT) supplement with Uzbek and Russian t
 
 * #698797007
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Дифференциальный интерференционный контраст (значение квалификатора)"
+  * ^designation[=].value = "Дифференциальный интерференционный контраст"
   * ^designation[+].language = #uz
   * ^designation[=].value = "Differensial interferension kontrast"
 
@@ -5653,7 +5653,7 @@ Description: "Observation method (SNOMED CT) supplement with Uzbek and Russian t
 
 * #1172738002
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Ультразвуковая допплерография - действие (значение квалификатора)"
+  * ^designation[=].value = "Ультразвуковая допплерография - действие"
   * ^designation[+].language = #uz
   * ^designation[=].value = "Doppler ultratovush tasvirlash – harakat"
 
@@ -5701,7 +5701,7 @@ Description: "Observation method (SNOMED CT) supplement with Uzbek and Russian t
 
 * #1231382004
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Ультразвуковая визуализация сверхвысокого разрешения - действие (значение квалификатора)"
+  * ^designation[=].value = "Ультразвуковая визуализация сверхвысокого разрешения - действие"
   * ^designation[+].language = #uz
   * ^designation[=].value = "O‘ta yuqori aniqlikdagi ultratovush tasvirlash – harakat"
 
@@ -6175,9 +6175,9 @@ Description: "Observation method (SNOMED CT) supplement with Uzbek and Russian t
 
 * #2731000
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Серологический тест на вирус гриппа А (процедура)"
+  * ^designation[=].value = "Серологический тест на вирус гриппа А"
   * ^designation[+].language = #uz
-  * ^designation[=].value = "A gripp virusiga serologik test (muolaja)"
+  * ^designation[=].value = "A gripp virusiga serologik test"
 
 * #2737001
   * ^designation[0].language = #ru
@@ -6295,9 +6295,9 @@ Description: "Observation method (SNOMED CT) supplement with Uzbek and Russian t
 
 * #3450007
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Оценка лимфоцитов, Т- и В-клеток (процедура)"
+  * ^designation[=].value = "Оценка лимфоцитов, Т- и В-клеток"
   * ^designation[+].language = #uz
-  * ^designation[=].value = "Limfotsitlar, T va B hujayralarni baholash (muolaja)"
+  * ^designation[=].value = "Limfotsitlar, T va B hujayralarni baholash"
 
 * #3527003
   * ^designation[0].language = #ru
@@ -8065,9 +8065,9 @@ Description: "Observation method (SNOMED CT) supplement with Uzbek and Russian t
 
 * #12359002
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Микробная идентификация, метод идентификации Neisseria-Haemophilus с помощью карты (процедура)"
+  * ^designation[=].value = "Микробная идентификация, метод идентификации Neisseria-Haemophilus с помощью карты"
   * ^designation[+].language = #uz
-  * ^designation[=].value = "Mikroorganizmni identifikatsiya qilish, Neisseria-Haemophilus identifikatsiya kartasi usuli (muolaja)"
+  * ^designation[=].value = "Mikroorganizmni identifikatsiya qilish, Neisseria-Haemophilus identifikatsiya kartasi usuli"
 
 * #12386002
   * ^designation[0].language = #ru
@@ -8677,9 +8677,9 @@ Description: "Observation method (SNOMED CT) supplement with Uzbek and Russian t
 
 * #15403001
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Измерение N-ацетилглюкозаминидазы А и В (процедура)"
+  * ^designation[=].value = "Измерение N-ацетилглюкозаминидазы А и В"
   * ^designation[+].language = #uz
-  * ^designation[=].value = "N-atsetilglyukozaminidaza A va B ni o‘lchash (muolaja)"
+  * ^designation[=].value = "N-atsetilglyukozaminidaza A va B ni o‘lchash"
 
 * #15435001
   * ^designation[0].language = #ru

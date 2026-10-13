@@ -143,7 +143,7 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Структура дистального межфалангового сустава второго пальца стопы (строение тела)"
+          "value": "Структура дистального межфалангового сустава второго пальца стопы"
         },
         {
           "language": "uz",
@@ -156,7 +156,7 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Структура дистального межфалангового сустава третьего пальца стопы (строение тела)"
+          "value": "Структура дистального межфалангового сустава третьего пальца стопы"
         },
         {
           "language": "uz",
@@ -169,7 +169,7 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Структура дистального межфалангового сустава четвертого пальца стопы (строение тела)"
+          "value": "Структура дистального межфалангового сустава четвертого пальца стопы"
         },
         {
           "language": "uz",
@@ -182,7 +182,7 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Структура дистального межфалангового сустава пятого пальца стопы (строение тела)"
+          "value": "Структура дистального межфалангового сустава пятого пальца стопы"
         },
         {
           "language": "uz",
@@ -195,7 +195,7 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Строение проксимального межфалангового сустава второго пальца стопы (строение тела)"
+          "value": "Строение проксимального межфалангового сустава второго пальца стопы"
         },
         {
           "language": "uz",
@@ -208,7 +208,7 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Строение проксимального межфалангового сустава третьего пальца стопы (строение тела)"
+          "value": "Строение проксимального межфалангового сустава третьего пальца стопы"
         },
         {
           "language": "uz",
@@ -221,7 +221,7 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Строение проксимального межфалангового сустава четвертого пальца стопы (строение тела)"
+          "value": "Строение проксимального межфалангового сустава четвертого пальца стопы"
         },
         {
           "language": "uz",
@@ -234,7 +234,7 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Строение проксимального межфалангового сустава пятого пальца стопы (строение тела)"
+          "value": "Строение проксимального межфалангового сустава пятого пальца стопы"
         },
         {
           "language": "uz",
@@ -585,11 +585,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Анатомическое или приобретенное строение тела (строение тела)"
+          "value": "Анатомическое или приобретенное строение тела"
         },
         {
           "language": "uz",
-          "value": "Anatomik yoki orttirilgan tana tuzilmasi (tana tuzilmasi)"
+          "value": "Anatomik yoki orttirilgan tana tuzilmasi"
         }
       ]
     },
@@ -3172,11 +3172,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Вся слюнная серозно-слизистая железа (строение тела)"
+          "value": "Вся слюнная серозно-слизистая железа"
         },
         {
           "language": "uz",
-          "value": "Butun so'lak seroz-shilliq bezi (tana tuzilmasi)"
+          "value": "Butun so'lak seroz-shilliq bezi"
         }
       ]
     },
@@ -4095,11 +4095,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Анатомическое пространство (строение тела)"
+          "value": "Анатомическое пространство"
         },
         {
           "language": "uz",
-          "value": "Anatomik bo'shliq tuzilmasi (tana tuzilmasi)"
+          "value": "Anatomik bo'shliq tuzilmasi"
         }
       ]
     },
@@ -11635,11 +11635,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Вся желудочная кардиальная железа (строение тела)"
+          "value": "Вся желудочная кардиальная железа"
         },
         {
           "language": "uz",
-          "value": "Butun oshqozon kardial bezi (tana tuzilmasi)"
+          "value": "Butun oshqozon kardial bezi"
         }
       ]
     },
@@ -12025,11 +12025,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Поясничная вращательная мышца (строение тела)"
+          "value": "Поясничная вращательная мышца"
         },
         {
           "language": "uz",
-          "value": "Belning aylantiruvchi mushagi (tana tuzilmasi)"
+          "value": "Belning aylantiruvchi mushagi"
         }
       ]
     },
@@ -12311,11 +12311,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Медиальная хрящевая пластинка слуховой трубы (строение тела)"
+          "value": "Медиальная хрящевая пластинка слуховой трубы"
         },
         {
           "language": "uz",
-          "value": "Eshitish nayining medial tog'ay plastinkasi (tana tuzilmasi)"
+          "value": "Eshitish nayining medial tog'ay plastinkasi"
         }
       ]
     },
@@ -12324,11 +12324,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Амакриновая клетка сетчатки (строение тела)"
+          "value": "Амакриновая клетка сетчатки"
         },
         {
           "language": "uz",
-          "value": "To'r pardaning amakrin hujayrasi (tana tuzilmasi)"
+          "value": "To'r pardaning amakrin hujayrasi"
         }
       ]
     },
