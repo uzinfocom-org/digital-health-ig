@@ -47,7 +47,19 @@ Description: "Uzbekistan Core ServiceRequest profile, used to represent a reques
 * requester only Reference(UZCorePractitioner or UZCorePractitionerRole or UZCoreOrganization or UZCorePatient or UZCoreRelatedPerson)
 * requester ^short = "The individual, role, or organization that authored and issued the laboratory referral/order. This element identifies the healthcare professional or organizational unit responsible for initiating the ServiceRequest."
 * reason MS
-* reason from ConditionCodeVS
+* reason from ConditionCodeVS (preferred)
+* reason ^slicing.discriminator.type = #value
+* reason ^slicing.discriminator.path = "concept.coding.system"
+* reason ^slicing.rules = #open
+* reason ^slicing.description = "Reasons from the national condition codes; codes from other systems are allowed alongside them"
+* reason ^slicing.ordered = false
+* reason contains icd10 0..* MS and snomed 0..* MS
+* reason[icd10] from ConditionCodeVS (required)
+* reason[icd10].concept.coding.system = "http://hl7.org/fhir/sid/icd-10"
+* reason[icd10] ^short = "Reason coded in ICD-10"
+* reason[snomed] from ConditionCodeVS (required)
+* reason[snomed].concept.coding.system = "http://snomed.info/sct"
+* reason[snomed] ^short = "Reason coded in SNOMED CT, from the national condition codes"
 * reason ^short = "A reason to a Condition or other clinical resource that represents the medical justification for the laboratory referral, such as a diagnosis coded using ICD-10. This allows structured representation of diagnosis details including onset date and clinical status."
 
 * extension contains PaymentType named paymentType 0..1 MS

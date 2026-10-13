@@ -35,7 +35,16 @@ Description: "Uzbekistan Core profile for AllergyIntolerance, representing clini
   * severity MS
   * severity from AllergyReactionSeverityVS (required)
   * manifestation MS
-  * manifestation from ReactionManifestationVS (extensible)
+  * manifestation from ReactionManifestationVS (preferred)
+  * manifestation ^slicing.discriminator.type = #value
+  * manifestation ^slicing.discriminator.path = "concept.coding.system"
+  * manifestation ^slicing.rules = #open
+  * manifestation ^slicing.description = "Manifestations from the national value set; codes from other systems are allowed alongside them"
+  * manifestation ^slicing.ordered = false
+  * manifestation contains dhpManifestation 0..* MS
+  * manifestation[dhpManifestation] from ReactionManifestationVS (required)
+  * manifestation[dhpManifestation].concept.coding.system = Canonical(ReactionManifestationCS)
+  * manifestation[dhpManifestation] ^short = "Reaction manifestation from the national value set"
   * substance MS
   * substance from ReactionSubstanceVS (extensible)
 

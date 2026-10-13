@@ -16,7 +16,15 @@ Description: "Uzbekistan Core Encounter profile, used to represent clinical enco
 * status ^short = "Текущее состояние встречи"
 
 * class MS
-* class from EncounterClassVS (required)
+* class from EncounterClassVS (preferred)
+* class ^slicing.discriminator.type = #value
+* class ^slicing.discriminator.path = "$this"
+* class ^slicing.rules = #open
+* class ^slicing.description = "Encounter classes from the national value set; codes from other systems are allowed alongside them"
+* class ^slicing.ordered = false
+* class contains dhpClass 0..* MS
+* class[dhpClass] from EncounterClassVS (required)
+* class[dhpClass] ^short = "Encounter class from the national value set"
 * class ^short = "Классификация встречи с пациентом"
 
 * priority MS
