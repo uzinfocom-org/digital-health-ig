@@ -1,10 +1,18 @@
 ### In development
 
+(No changes yet)
+
+### Version 0.11.1
+
 #### Changed
 
 Value sets on repeating coded elements now apply through an open slice instead of to the whole element, so codes from other systems can sit beside the national ones; the element keeps the national value set as a preferred binding. This covers AllergyIntolerance `reaction.manifestation`; AuditEvent `agent.role`, `agent.authorization` and `entity.securityLabel`; Composition `category`; Consent `regulatoryBasis` and `provision.action`; DiagnosticReport `category`; Encounter `class`; EpisodeOfCare `reason.value` and `diagnosis.condition`; Immunization `protocolApplied.targetDisease`; ImmunizationRecommendation `recommendation.vaccineCode`; Observation `category`; ObservationDefinition `permittedUnit`; Procedure `bodySite`; RelatedPerson `relationship`; and ServiceRequest `reason`. [UZ Core Observation](StructureDefinition-uz-core-observation.html) `interpretation` is bound extensible instead of required, as in base FHIR. Existing resources remain valid.
 
 Four value sets that kept only part of the base FHIR value set they replace now include all of it. [Encounter status](ValueSet-encounter-status-vs.html) adds `on-hold`, `discharged` and `discontinued`; [request resource types](ValueSet-request-resource-types-vs.html), used by ActivityDefinition `kind`, lists all 17 request resource types instead of only ImmunizationRecommendation and MedicationRequest; [consent purpose of use](ValueSet-consent-purpose-of-use-vs.html) includes every purpose of use instead of only `RECORDMGT`, and Consent `provision.purpose` binds it extensible instead of required, as in base FHIR; and [condition participation roles](ValueSet-condition-participation-role-vs.html) adds `transmitter`. The new encounter statuses and resource types have Uzbek and Russian designations.
+
+#### Added
+
+The [screening program registry](ValueSet-screening-program-type-vs.html) contains eight SNOMED CT screening codes and all retained national screening/home visit codes. DMED breast/cervical program codes mserv-0007-00007 and mserv-0007-00009 are restored as distinct program identifiers; their clinical codes remain SNOMED CT. Screening invitation examples reuse the existing Core profiles.
 
 ### Version 0.11.0
 
