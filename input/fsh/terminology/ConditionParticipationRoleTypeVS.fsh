@@ -21,6 +21,7 @@ Description: "Types of participation role in Uzbekistan"
 * include $provenance-participant-type#custodian
 * include $provenance-participant-type#assembler
 * include $provenance-participant-type#composer
+* include $provenance-participant-type#transmitter
 
 * include $dicom-dcm#110150
 * include $dicom-dcm#110151

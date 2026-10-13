@@ -34,14 +34,38 @@ Description: "Uzbekistan Core AuditEvent profile, used to track user and applica
 * agent
   * type and role and who and authorization MS
   * type from AuditParticipationRoleTypeVS (required)
-  * role from SecurityRoleTypeVS (required)
-  * authorization from AuditPurposeOfUseVS (required)
+  * role from SecurityRoleTypeVS (preferred)
+  * role ^slicing.discriminator.type = #value
+  * role ^slicing.discriminator.path = "$this"
+  * role ^slicing.rules = #open
+  * role ^slicing.description = "Agent roles from the national value set; codes from other systems are allowed alongside them"
+  * role ^slicing.ordered = false
+  * role contains dhpRole 0..* MS
+  * role[dhpRole] from SecurityRoleTypeVS (required)
+  * role[dhpRole] ^short = "Agent role from the national value set"
+  * authorization from AuditPurposeOfUseVS (preferred)
+  * authorization ^slicing.discriminator.type = #value
+  * authorization ^slicing.discriminator.path = "$this"
+  * authorization ^slicing.rules = #open
+  * authorization ^slicing.description = "Purposes of use from the national value set; codes from other systems are allowed alongside them"
+  * authorization ^slicing.ordered = false
+  * authorization contains dhpAuthorization 0..* MS
+  * authorization[dhpAuthorization] from AuditPurposeOfUseVS (required)
+  * authorization[dhpAuthorization] ^short = "Purpose of use from the national value set"
   * who only Reference (UZCorePractitionerRole or UZCorePractitioner or UZCorePatient or UZCoreRelatedPerson) 
 
 * entity
   * role and what and securityLabel and query MS
   * role from ObjectRoleVS (required)
-  * securityLabel from SecurityLabelVS (required)
+  * securityLabel from SecurityLabelVS (preferred)
+  * securityLabel ^slicing.discriminator.type = #value
+  * securityLabel ^slicing.discriminator.path = "$this"
+  * securityLabel ^slicing.rules = #open
+  * securityLabel ^slicing.description = "Security labels from the national value set; codes from other systems are allowed alongside them"
+  * securityLabel ^slicing.ordered = false
+  * securityLabel contains dhpSecurityLabel 0..* MS
+  * securityLabel[dhpSecurityLabel] from SecurityLabelVS (required)
+  * securityLabel[dhpSecurityLabel] ^short = "Security label from the national value set"
   * detail MS
   * detail.type from AuditEventDetailTypeVS (example)
 
