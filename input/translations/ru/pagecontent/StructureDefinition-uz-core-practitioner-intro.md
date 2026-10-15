@@ -18,7 +18,7 @@ UZ Core Practitioner описывает отдельного медицинск�
 
 - идентификатор - в частности, слайс профессионального идентификатора HRM Argos (который несёт PINFL как национальный уникальный индивидуальный идентификатор). См. [Системы идентификаторов](identifiers.html) для поддерживаемых URI систем;
 - флаг active;
-- имя (фамилия, имя, суффикс, с обязательной привязкой name-use);
+- имя (фамилия, имя, суффикс, с обязательной привязкой name-use) на узбекском, русская и каракалпакская формы - расширениями `translation`;
 - контактные данные telecom (телефон, эл. почта, с обязательной привязкой contact-system);
 - пол (с национальным расширением `gender-other`, где это применимо);
 - дату рождения и дату/флаг смерти;
@@ -56,7 +56,7 @@ UZ Core Practitioner описывает отдельного медицинск�
       "value": "9876543210"
     }
   ],
-  "name": [ { "use": "official", "text": "Test Test Test", "family": "Test", "given": [ "Test" ] } ]
+  "name": [ { "use": "official", "text": "Rahimova Dilnoza Akmalovna", "family": "Rahimova", "given": [ "Dilnoza" ] } ]
 }
 ```
 
@@ -91,10 +91,14 @@ UZ Core Practitioner описывает отдельного медицинск�
   "name": [
     {
       "use": "official",
-      "text": "Test Test Test",
-      "family": "Test",
-      "given": [ "Test" ],
-      "suffix": [ "Test" ]
+      "text": "Rahimova Dilnoza Akmalovna",
+      "_text": { "extension": [ { "url": "http://hl7.org/fhir/StructureDefinition/translation", "extension": [ { "url": "lang", "valueCode": "ru" }, { "url": "content", "valueString": "Рахимова Дилноза Акмаловна" } ] } ] },
+      "family": "Rahimova",
+      "_family": { "extension": [ { "url": "http://hl7.org/fhir/StructureDefinition/translation", "extension": [ { "url": "lang", "valueCode": "ru" }, { "url": "content", "valueString": "Рахимова" } ] } ] },
+      "given": [ "Dilnoza" ],
+      "_given": [ { "extension": [ { "url": "http://hl7.org/fhir/StructureDefinition/translation", "extension": [ { "url": "lang", "valueCode": "ru" }, { "url": "content", "valueString": "Дилноза" } ] } ] } ],
+      "suffix": [ "Akmalovna" ],
+      "_suffix": [ { "extension": [ { "url": "http://hl7.org/fhir/StructureDefinition/translation", "extension": [ { "url": "lang", "valueCode": "ru" }, { "url": "content", "valueString": "Акмаловна" } ] } ] } ]
     }
   ],
   "telecom": [ { "system": "phone", "value": "975555555", "use": "mobile" } ],
@@ -112,6 +116,8 @@ UZ Core Practitioner описывает отдельного медицинск�
   ]
 }
 ```
+
+Имя записано на узбекском - языке ресурса (`language`). Русский вариант передаётся расширением `translation` на каждой части имени - `_text`, `_family`, `_given` и `_suffix` (подчёркивание в начале - место, куда FHIR помещает расширения примитивного элемента; `_given` и `_suffix` - массивы, которые сопоставляются с `given` и `suffix` по позиции). Добавьте по одному `translation` на каждый язык, который у вас есть, и оставьте одно имя `name`: второй `HumanName` с русским написанием читался бы как другое имя.
 
 `telecom.system` и `name.use` используют обязательные привязки - значение должно происходить из привязанного набора значений. Коды `district` / `city` берутся из национальных наборов значений - см. [Адреса](general-guidance.html#addresses) о том, откуда поступает каждый код. Для практика, проживающего за рубежом, используйте адрес в свободной текстовой форме с `country`, установленным в иностранный код ISO.
 

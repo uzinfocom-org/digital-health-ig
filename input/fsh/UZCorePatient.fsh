@@ -169,6 +169,7 @@ Description: "Uzbekistan Core Patient profile, used to represent patients admini
 * insert IntAndUzAddressRules
 * maritalStatus from MaritalStatusVS (required)
 * insert HumanName
+* insert MultilingualHumanName
 * active MS
 * birthDate MS
 * managingOrganization MS
@@ -321,9 +322,29 @@ Usage: #example
 * name
   * use = #usual
   * text = "Karimova Nodira Anvarovna"
+  * text.extension[+].url = $translation-extension
+  * text.extension[=].extension[0].url = "lang"
+  * text.extension[=].extension[=].valueCode = #ru
+  * text.extension[=].extension[+].url = "content"
+  * text.extension[=].extension[=].valueString = "Каримова Нодира Анваровна"
   * family = "Karimova"
+  * family.extension[+].url = $translation-extension
+  * family.extension[=].extension[0].url = "lang"
+  * family.extension[=].extension[=].valueCode = #ru
+  * family.extension[=].extension[+].url = "content"
+  * family.extension[=].extension[=].valueString = "Каримова"
   * given = "Nodira"
+  * given.extension[+].url = $translation-extension
+  * given.extension[=].extension[0].url = "lang"
+  * given.extension[=].extension[=].valueCode = #ru
+  * given.extension[=].extension[+].url = "content"
+  * given.extension[=].extension[=].valueString = "Нодира"
   * suffix = "Anvarovna"
+  * suffix.extension[+].url = $translation-extension
+  * suffix.extension[=].extension[0].url = "lang"
+  * suffix.extension[=].extension[=].valueCode = #ru
+  * suffix.extension[=].extension[+].url = "content"
+  * suffix.extension[=].extension[=].valueString = "Анваровна"
 * gender = #female
 * birthDate = "1985-03-05"
 

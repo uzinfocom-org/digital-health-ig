@@ -16,7 +16,7 @@ The base FHIR Practitioner has no mandatory elements, and this profile does not 
 
 - an identifier - in particular the HRM Argos professional identifier slice (which carries the PINFL as a national unique individual identifier). See [Identifier systems](identifiers.html) for the supported system URIs;
 - the active flag;
-- a name (family, given, suffix, with a required name-use binding);
+- a name (family, given, suffix, with a required name-use binding), in Uzbek with Russian and Karakalpak forms as `translation` extensions;
 - telecom contact details (phone, email, with a required contact-system binding);
 - a gender (with the national `gender-other` extension where applicable);
 - a birth date, and the deceased date/flag;
@@ -54,7 +54,7 @@ The base Practitioner has no mandatory elements, but a record is only useful wit
       "value": "9876543210"
     }
   ],
-  "name": [ { "use": "official", "text": "Test Test Test", "family": "Test", "given": [ "Test" ] } ]
+  "name": [ { "use": "official", "text": "Rahimova Dilnoza Akmalovna", "family": "Rahimova", "given": [ "Dilnoza" ] } ]
 }
 ```
 
@@ -89,10 +89,14 @@ In practice you send the demographics the platform expects you to support: the `
   "name": [
     {
       "use": "official",
-      "text": "Test Test Test",
-      "family": "Test",
-      "given": [ "Test" ],
-      "suffix": [ "Test" ]
+      "text": "Rahimova Dilnoza Akmalovna",
+      "_text": { "extension": [ { "url": "http://hl7.org/fhir/StructureDefinition/translation", "extension": [ { "url": "lang", "valueCode": "ru" }, { "url": "content", "valueString": "Рахимова Дилноза Акмаловна" } ] } ] },
+      "family": "Rahimova",
+      "_family": { "extension": [ { "url": "http://hl7.org/fhir/StructureDefinition/translation", "extension": [ { "url": "lang", "valueCode": "ru" }, { "url": "content", "valueString": "Рахимова" } ] } ] },
+      "given": [ "Dilnoza" ],
+      "_given": [ { "extension": [ { "url": "http://hl7.org/fhir/StructureDefinition/translation", "extension": [ { "url": "lang", "valueCode": "ru" }, { "url": "content", "valueString": "Дилноза" } ] } ] } ],
+      "suffix": [ "Akmalovna" ],
+      "_suffix": [ { "extension": [ { "url": "http://hl7.org/fhir/StructureDefinition/translation", "extension": [ { "url": "lang", "valueCode": "ru" }, { "url": "content", "valueString": "Акмаловна" } ] } ] } ]
     }
   ],
   "telecom": [ { "system": "phone", "value": "975555555", "use": "mobile" } ],
@@ -110,6 +114,8 @@ In practice you send the demographics the platform expects you to support: the `
   ]
 }
 ```
+
+The name is written in Uzbek, the resource `language`. Its Russian form travels as a `translation` extension on each part of the name - `_text`, `_family`, `_given` and `_suffix` (the leading underscore is where FHIR puts extensions on a primitive; `_given` and `_suffix` are arrays that pair with `given` and `suffix` by position). Add one `translation` per language you hold, and keep a single `name`: a second `HumanName` with the Russian spelling would read as a different name.
 
 `telecom.system` and `name.use` use required bindings - the value must come from the bound value set. The `district` / `city` codes come from national value sets - see [Addresses](general-guidance.html#addresses) for where each code is sourced. For a practitioner living abroad, use a free-text address with `country` set to the foreign ISO code instead.
 
