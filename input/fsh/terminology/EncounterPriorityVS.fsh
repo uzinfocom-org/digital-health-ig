@@ -21,3 +21,5 @@ Description: "Encounter priority codes with English and Russian translations"
 * include encounter-local-priority-cs#transferred
 * include encounter-local-priority-cs#mandatory-treatment
 * include encounter-local-priority-cs#involuntary-hospitalization
+
+* include codes from system encounter-priority-ambulance-cs 

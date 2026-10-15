@@ -9,3 +9,5 @@ Description: "Encounter reason use codes with Uzbek and Russian translations"
 * include encounter-reason-use-cs#mserv-0002-00002
 * include encounter-reason-use-cs#mserv-0002-00003
 * include codes from system encounter-purpose-cs
+
+* include codes from system encounter-reason-use-ambulance-cs
