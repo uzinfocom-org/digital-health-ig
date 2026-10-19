@@ -206,6 +206,42 @@ Healthcare professionals are identified using the Human Resource Management (HRM
 }
 ```
 
+#### Specialist certificate
+
+A specialist certificate issued by the Ministry of Health identifies a qualification of the healthcare professional, so it is recorded in `Practitioner.qualification.identifier` rather than in `Practitioner.identifier`. The value is the series followed by the number, without separators. See [Specialist certificates](StructureDefinition-uz-core-practitioner.html#specialist-certificates) for the full mapping.
+
+**System URI**: `https://dhp.uz/fhir/core/sid/pro/uz/specialist-certificate`
+
+```json
+{
+  "resourceType": "Practitioner",
+  "qualification": [
+    {
+      "identifier": [
+        {
+          "system": "https://dhp.uz/fhir/core/sid/pro/uz/specialist-certificate",
+          "value": "CA008815"
+        }
+      ],
+      "code": {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0360",
+            "code": "CER",
+            "display": "Certificate"
+          }
+        ],
+        "text": "Psixiatriya, oliy toifa, shifokor"
+      },
+      "period": {
+        "start": "2024-05-05",
+        "end": "2029-05-05"
+      }
+    }
+  ]
+}
+```
+
 For a complete list of all supported practitioner identifier systems, see the [PractitionerIdentifierDomainVS](ValueSet-practitioner-identifier-domain-vs.html) value set.
 
 ### Organization identifiers
@@ -370,6 +406,7 @@ Not all concepts in the IdentifierDomainCS CodeSystem are selectable. Parent/gro
 - `https://dhp.uz/fhir/core/sid/pid/uz/ni`
 - `https://dhp.uz/fhir/core/sid/pid/uz/ppn/local`
 - `https://dhp.uz/fhir/core/sid/pro/uz/argos`
+- `https://dhp.uz/fhir/core/sid/pro/uz/specialist-certificate`
 
 **Not selectable** (parent groupings only):
 - `https://dhp.uz/fhir/core/sid/pid` (root)

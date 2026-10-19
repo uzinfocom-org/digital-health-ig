@@ -208,6 +208,42 @@ Tibbiyot xodimlari kadrlar bilan ishlash (Human Resource Management, HRM) Argos 
 }
 ```
 
+#### Mutaxassis sertifikati
+
+Sog'liqni saqlash vazirligi bergan mutaxassis sertifikati tibbiyot xodimining malakasini identifikatsiya qiladi, shuning uchun u `Practitioner.identifier` da emas, `Practitioner.qualification.identifier` da yoziladi. Qiymat - seriya va raqam ajratuvchisiz. Maydonlarning to'liq moslashuvi [Mutaxassis sertifikatlari](StructureDefinition-uz-core-practitioner.html#specialist-certificates) bo'limida keltirilgan.
+
+**System URI**: `https://dhp.uz/fhir/core/sid/pro/uz/specialist-certificate`
+
+```json
+{
+  "resourceType": "Practitioner",
+  "qualification": [
+    {
+      "identifier": [
+        {
+          "system": "https://dhp.uz/fhir/core/sid/pro/uz/specialist-certificate",
+          "value": "CA008815"
+        }
+      ],
+      "code": {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0360",
+            "code": "CER",
+            "display": "Certificate"
+          }
+        ],
+        "text": "Psixiatriya, oliy toifa, shifokor"
+      },
+      "period": {
+        "start": "2024-05-05",
+        "end": "2029-05-05"
+      }
+    }
+  ]
+}
+```
+
 Qo'llab-quvvatlanadigan barcha tibbiyot xodimi identifikatorlarining to'liq ro'yxati [PractitionerIdentifierDomainVS](ValueSet-practitioner-identifier-domain-vs.html) qiymatlar to'plamida keltirilgan.
 
 ### Tashkilot identifikatorlari
@@ -372,6 +408,7 @@ IdentifierDomainCS CodeSystem dagi barcha tushunchalar tanlanadigan emas. Ota-on
 - `https://dhp.uz/fhir/core/sid/pid/uz/ni`
 - `https://dhp.uz/fhir/core/sid/pid/uz/ppn/local`
 - `https://dhp.uz/fhir/core/sid/pro/uz/argos`
+- `https://dhp.uz/fhir/core/sid/pro/uz/specialist-certificate`
 
 **Tanlanmaydigan** (faqat ota-ona guruhlari):
 - `https://dhp.uz/fhir/core/sid/pid` (root)
