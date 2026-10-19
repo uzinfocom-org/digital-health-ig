@@ -1,9 +1,9 @@
 ValueSet: InventoryItemStatusVS
-Id: inventory-item-status-vs
+Id: inventoryitem-status-vs
 Title: "InventoryItem status"
-Description: "Codes representing the status of an InventoryItem."
+Description: "Statuses of an InventoryItem"
 
-* ^url = "https://terminology.dhp.uz/fhir/core/ValueSet/inventory-item-status-vs"
+* ^url = "https://terminology.dhp.uz/fhir/core/ValueSet/inventoryitem-status-vs"
 * ^experimental = true
 * ^extension[0].url = $valueset-supplement
 * ^extension[=].valueCanonical = Canonical(InventoryItemStatusCS)

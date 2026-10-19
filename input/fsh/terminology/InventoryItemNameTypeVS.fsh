@@ -1,7 +1,7 @@
 ValueSet: InventoryItemNameTypeVS
 Id: inventoryitem-nametype-vs
-Title: "Inventory Item Name Type VS"
-Description: "ValueSet for inventory item name type codes"
+Title: "InventoryItem name type"
+Description: "Types of name an inventory item can carry"
 
 * ^url = "https://terminology.dhp.uz/fhir/core/ValueSet/inventoryitem-nametype-vs"
 * ^experimental = true

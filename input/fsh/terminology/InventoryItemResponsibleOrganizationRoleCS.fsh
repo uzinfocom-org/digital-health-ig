@@ -1,7 +1,7 @@
 CodeSystem: InventoryItemResponsibleOrganizationRoleCS
 Id: inventoryitem-responsible-organization-role-cs
-Title: "Inventory Item Responsible Organization Role"
-Description: "Codes representing the role of an organization responsible for an inventory item"
+Title: "InventoryItem responsible organization role"
+Description: "Roles of organizations responsible for an inventory item"
 
 * insert OriginalCodeSystemDraft(inventoryitem-responsible-organization-role-cs)
 

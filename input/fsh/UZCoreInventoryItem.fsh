@@ -2,7 +2,7 @@ Profile: UZCoreInventoryItem
 Parent: InventoryItem
 Id: uz-core-inventory-item
 Title: "UZ Core InventoryItem"
-Description: "Uzbekistan Core InventoryItem profile, used to represent items managed in inventory."
+Description: "Uzbekistan Core InventoryItem profile, used to track stock of items such as blood products, with their status, quantity and storage location"
 
 * ^status = #active
 * ^experimental = true
@@ -53,7 +53,7 @@ Description: "Uzbekistan Core InventoryItem profile, used to represent items man
 
 Instance: example-inventory-item-rbc
 InstanceOf: UZCoreInventoryItem
-Title: "Example Inventory Item - Red Blood Cells"
+Title: "Example UZ Core InventoryItem - Red blood cells"
 Description: "Example inventory item representing leukocyte-reduced red blood cells."
 Usage: #example
 
@@ -84,4 +84,4 @@ Usage: #example
 
 * instance.expiry = "2026-10-15"
 
-* instance.location = Reference(Location/cold-storage-shelf-3)
+* instance.location = Reference(example-cold-storage-shelf)

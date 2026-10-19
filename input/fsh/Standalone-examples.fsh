@@ -521,10 +521,10 @@ Description: "Illustrative transfusion order for the patient in the blood produc
 * reason.concept = $sct#87522002 "Iron deficiency anemia"
 
 
-Instance: cold-storage-shelf-3
+Instance: example-cold-storage-shelf
 InstanceOf: UZCoreLocation
 Usage: #example
-Title: "Blood product cold storage shelf 3"
+Title: "Blood product cold storage shelf"
 Description: "Illustrative cold storage shelf at the Andijan blood station, referenced by the blood product inventory example."
 * language = #en
 * status = #active

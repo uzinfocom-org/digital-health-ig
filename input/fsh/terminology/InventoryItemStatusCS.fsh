@@ -1,9 +1,9 @@
 CodeSystem: InventoryItemStatusCS
-Id: inventory-item-status-cs
+Id: inventoryitem-status-cs
 Title: "InventoryItem status translations"
-Description: "InventoryItem status codes, supplemented with translations in Uzbek and Russian"
+Description: "InventoryItem status supplement with translations in Uzbek and Russian"
 
-* insert SupplementCodeSystemDraft(inventory-item-status-cs, $inventoryitem-status, 5.0.0)
+* insert SupplementCodeSystemDraft(inventoryitem-status-cs, $inventoryitem-status, 5.0.0)
 
 * #active
   * ^designation[0].language = #ru

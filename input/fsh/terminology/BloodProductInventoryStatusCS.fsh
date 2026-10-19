@@ -1,6 +1,6 @@
 CodeSystem: BloodProductInventoryStatusCS
 Id: blood-product-inventory-status-cs
-Title: "Blood Product Inventory Status"
+Title: "Blood product inventory status"
 Description: "Inventory statuses for blood products"
 * insert OriginalCodeSystemDraft(blood-product-inventory-status-cs)
 
@@ -40,13 +40,13 @@ Description: "Inventory statuses for blood products"
   * ^designation[+].language = #en
   * ^designation[=].value = "Allocated"
 
-* #issued "Berildi (chiqarildi)"
+* #issued "Berildi"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Выдан"
   * ^designation[+].language = #en
   * ^designation[=].value = "Issued"
 
-* #in-transit "Yo'lda (tashilmoqda)"
+* #in-transit "Yo'lda"
   * ^designation[0].language = #ru
   * ^designation[=].value = "В пути"
   * ^designation[+].language = #en
@@ -70,7 +70,7 @@ Description: "Inventory statuses for blood products"
   * ^designation[+].language = #en
   * ^designation[=].value = "Recalled"
 
-* #expired "Muddati o‘tgan"
+* #expired "Muddati o'tgan"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Истёк срок годности"
   * ^designation[+].language = #en
@@ -82,15 +82,15 @@ Description: "Inventory statuses for blood products"
   * ^designation[+].language = #en
   * ^designation[=].value = "Discarded"
 
-* #consumed "Ishlatildi (sarflandi)"
+* #consumed "Ishlatildi"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Использован (израсходован)"
+  * ^designation[=].value = "Использован"
   * ^designation[+].language = #en
   * ^designation[=].value = "Consumed"
 
-* #missing "Yo‘qolgan"
+* #missing "Yo'qolgan"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Пропал/утерян"
+  * ^designation[=].value = "Утерян"
   * ^designation[+].language = #en
   * ^designation[=].value = "Missing"
 
@@ -100,7 +100,7 @@ Description: "Inventory statuses for blood products"
   * ^designation[+].language = #en
   * ^designation[=].value = "Damaged"
 
-* #temperature-excursion "Harorat me’yoridan chetlanish"
+* #temperature-excursion "Harorat me'yoridan chetlanish"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Отклонение температурного режима"
   * ^designation[+].language = #en
@@ -124,7 +124,7 @@ Description: "Inventory statuses for blood products"
   * ^designation[+].language = #en
   * ^designation[=].value = "In Fractionation"
 
-* #in-cryopreservation "Krioconservatsiyada"
+* #in-cryopreservation "Kriokonservatsiyada"
   * ^designation[0].language = #ru
   * ^designation[=].value = "В криоконсервации"
   * ^designation[+].language = #en

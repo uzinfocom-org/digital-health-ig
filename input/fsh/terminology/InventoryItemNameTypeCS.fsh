@@ -1,8 +1,8 @@
 CodeSystem: InventoryItemNameTypeCS
 Id: inventoryitem-nametype-cs
-Title: "Inventory Item Name Type Translations"
-Description: "Inventory Item Name Type supplement with translations in Uzbek and Russian"
-* insert SupplementCodeSystemDraft(inventoryitem-nametype-cs, $inventoryitem-nametype, 1.0.1)
+Title: "InventoryItem name type translations"
+Description: "InventoryItem name type supplement with translations in Uzbek and Russian"
+* insert SupplementCodeSystemDraft(inventoryitem-nametype-cs, $inventoryitem-nametype, 5.0.0)
 * #trade-name "Trade Name"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Торговое наименование"
