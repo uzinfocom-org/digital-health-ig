@@ -506,8 +506,8 @@ Description: "ConceptMap for mapping DMED  measure unit codes to DHP  measure un
 // 52 единица действия биологической активности -> [iU]
 * group[=].element[+].code = #52
 * group[=].element[=].display = "единица действия биологической активности"
-* group[=].element[=].target[+].code = #[iU]
-* group[=].element[=].target[=].display = "international unit"
+* group[=].element[=].target[+].code = #U
+* group[=].element[=].target[=].display = "unit"
 * group[=].element[=].target[=].relationship = #equivalent
 
 // 56 КИЕ -> [iU]
@@ -606,7 +606,7 @@ Description: "ConceptMap for mapping DMED  measure unit codes to DHP  measure un
 * group[=].element[=].display = "ИД 50"
 * group[=].element[=].target[+].code = #[EID_50]
 * group[=].element[=].target[=].display = "50% embryo infectious dose"
-* group[=].element[=].target[=].relationship = #equivalent
+* group[=].element[=].target[=].relationship = #source-is-broader-than-target
 
 // 69 ЭИД 50 -> [EID_50]
 * group[=].element[+].code = #69

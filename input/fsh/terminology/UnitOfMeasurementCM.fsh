@@ -231,7 +231,7 @@ Description: "Maps local UZ unit codes to UCUM standards."
 
 * group.element[+].code = #265
 * group.element[=].display = "biologik faollikning taʼsir birligi"
-* group.element[=].target[+].code = #"[arb'U]"
+* group.element[=].target[+].code = #U
 * group.element[=].target[=].relationship = #equivalent
 
 * group.element[+].code = #323
@@ -247,22 +247,22 @@ Description: "Maps local UZ unit codes to UCUM standards."
 * group.element[+].code = #293
 * group.element[=].display = "lipoprotein-lipaza birligi"
 * group.element[=].target[+].code = #"[arb'U]"
-* group.element[=].target[=].relationship = #equivalent
+* group.element[=].target[=].relationship = #source-is-narrower-than-target
 
 * group.element[+].code = #254
 * group.element[=].display = "antigenik birlik"
 * group.element[=].target[+].code = #"[arb'U]"
-* group.element[=].target[=].relationship = #equivalent
+* group.element[=].target[=].relationship = #source-is-narrower-than-target
 
 * group.element[+].code = #642
 * group.element[=].display = "titrlash birligi"
 * group.element[=].target[+].code = #"[arb'U]"
-* group.element[=].target[=].relationship = #equivalent
+* group.element[=].target[=].relationship = #source-is-narrower-than-target
 
 * group.element[+].code = #256
 * group.element[=].display = "antitripsin birligi"
 * group.element[=].target[+].code = #"[arb'U]"
-* group.element[=].target[=].relationship = #equivalent
+* group.element[=].target[=].relationship = #source-is-narrower-than-target
 
 * group.element[+].code = #279
 * group.element[=].display = "immunoferment tahlili birligi"
@@ -307,7 +307,7 @@ Description: "Maps local UZ unit codes to UCUM standards."
 * group.element[+].code = #274
 * group.element[=].display = "bogʻlash birligi"
 * group.element[=].target[+].code = #"[arb'U]"
-* group.element[=].target[=].relationship = #equivalent
+* group.element[=].target[=].relationship = #source-is-narrower-than-target
 
 * group.element[+].code = #277
 * group.element[=].display = "reaktivlik indeksi (standartlashtirishning biologik birligi)"
@@ -317,7 +317,7 @@ Description: "Maps local UZ unit codes to UCUM standards."
 * group.element[+].code = #267
 * group.element[=].display = "antigen birligi"
 * group.element[=].target[+].code = #"[arb'U]"
-* group.element[=].target[=].relationship = #equivalent
+* group.element[=].target[=].relationship = #source-is-narrower-than-target
 
 * group.element[+].code = #270
 * group.element[=].display = "millilitrda biologik faollikning taʼsir birligi"

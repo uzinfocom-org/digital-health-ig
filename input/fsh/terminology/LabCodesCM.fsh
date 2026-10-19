@@ -107,7 +107,7 @@ Description: "Maps local UZ laboratory analytes codes to LOINC."
 
 * group.element[+].code = #lab-pan-16
 * group.element[=].display = "Leykotsitlar"
-* group.element[=].target[+].code = #20408-1
+* group.element[=].target[+].code = #20455-2
 * group.element[=].target[=].display = "Лейкоциты"
 * group.element[=].target[=].relationship = #equivalent
 
@@ -119,7 +119,7 @@ Description: "Maps local UZ laboratory analytes codes to LOINC."
 
 * group.element[+].code = #lab-pan-18
 * group.element[=].display = "Eritrotsitlar o‘zgarmagan"
-* group.element[=].target[+].code = #20409-9
+* group.element[=].target[+].code = #53968-4
 * group.element[=].target[=].display = "Эритроциты неизменённые"
 * group.element[=].target[=].relationship = #equivalent
 
@@ -201,7 +201,7 @@ Description: "Maps local UZ laboratory analytes codes to LOINC."
 * group.element[=].display = "Hidi"
 * group.element[=].target[+].code = #29636-8
 * group.element[=].target[=].display = "Запах"
-* group.element[=].target[=].relationship = #source-is-narrower-than-target
+* group.element[=].target[=].relationship = #related-to
 
 * group.element[+].code = #lab-pan-32
 * group.element[=].display = "Rangi"
@@ -219,7 +219,7 @@ Description: "Maps local UZ laboratory analytes codes to LOINC."
 * group.element[=].display = "Shilliq"
 * group.element[=].target[+].code = #42524-9
 * group.element[=].target[=].display = "Слизь"
-* group.element[=].target[=].relationship = #equivalent
+* group.element[=].target[=].relationship = #related-to
 
 * group.element[+].code = #lab-pan-35
 * group.element[=].display = "Qon"
@@ -229,9 +229,9 @@ Description: "Maps local UZ laboratory analytes codes to LOINC."
 
 * group.element[+].code = #lab-pan-36
 * group.element[=].display = "Hazm bo‘lmagan ovqat qoldiqlari"
-* group.element[=].target[+].code = #5786-9
+* group.element[=].target[+].code = #38897-5
 * group.element[=].target[=].display = "Непереваренные остатки пищи"
-* group.element[=].target[=].relationship = #equivalent
+* group.element[=].target[=].relationship = #source-is-broader-than-target
 
 * group.element[+].code = #lab-pan-37
 * group.element[=].display = "Yashirin qonga reaksiya"
@@ -355,7 +355,7 @@ Description: "Maps local UZ laboratory analytes codes to LOINC."
 
 * group.element[+].code = #lab-pan-57
 * group.element[=].display = "Leykotsitlar"
-* group.element[=].target[+].code = #20408-1
+* group.element[=].target[+].code = #13655-6
 * group.element[=].target[=].display = "Лейкоциты"
 * group.element[=].target[=].relationship = #equivalent
 
@@ -1126,11 +1126,11 @@ Description: "Maps local UZ laboratory analytes codes to LOINC."
 * group.element[=].display = "Tirik spermatozoidlar"
 * group.element[=].target[+].code = #10613-8
 * group.element[=].target[=].display = "Живые сперматозоиды"
-* group.element[=].target[=].relationship = #source-is-narrower-than-target
+* group.element[=].target[=].relationship = #equivalent
 
 * group.element[+].code = #lab-pan-187
 * group.element[=].display = "Patologik shakldagi sermatozoidlar"
-* group.element[=].target[+].code = #10613-8
+* group.element[=].target[+].code = #15376-7
 * group.element[=].target[=].display = "Патологические формы сперматозоидов"
 * group.element[=].target[=].relationship = #equivalent
 
@@ -1287,9 +1287,8 @@ Description: "Maps local UZ laboratory analytes codes to LOINC."
 
 * group.element[+].code = #lab-pan-213
 * group.element[=].display = "Atipik belgili hujayralar"
-* group.element[=].target[+].code = #15376-7
-* group.element[=].target[=].display = "Клетки с атипичными признаками"
-* group.element[=].target[=].relationship = #equivalent
+// LOINC has no code for atypical epithelial cells in sputum cytology; 15376-7 (abnormal spermatozoa) was wrong
+* group.element[=].noMap = true
 
 * group.element[+].code = #lab-pan-214
 * group.element[=].display = "Miqdori"
@@ -1675,7 +1674,7 @@ Description: "Maps local UZ laboratory analytes codes to LOINC."
 * group.element[=].display = "Polixromatofil normoblastlar"
 * group.element[=].target[+].code = #11119-5
 * group.element[=].target[=].display = "Полихроматофильные нормобласты"
-* group.element[=].target[=].relationship = #source-is-broader-than-target
+* group.element[=].target[=].relationship = #equivalent
 
 * group.element[+].code = #lab-pan-307
 * group.element[=].display = "Oksifil normoblastlar"
@@ -1687,7 +1686,7 @@ Description: "Maps local UZ laboratory analytes codes to LOINC."
 * group.element[=].display = "Promegaloblastlar"
 * group.element[=].target[+].code = #52127-8
 * group.element[=].target[=].display = "Промегалобласты"
-* group.element[=].target[=].relationship = #equivalent
+* group.element[=].target[=].relationship = #source-is-narrower-than-target
 
 // changed code and relationship
 * group.element[+].code = #lab-pan-309
@@ -1700,13 +1699,13 @@ Description: "Maps local UZ laboratory analytes codes to LOINC."
 * group.element[=].display = "Polixromatofil megaloblastlar"
 * group.element[=].target[+].code = #11119-5
 * group.element[=].target[=].display = "Полихроматофильные мегалобласты"
-* group.element[=].target[=].relationship = #source-is-narrower-than-target
+* group.element[=].target[=].relationship = #related-to
 
 * group.element[+].code = #lab-pan-311
 * group.element[=].display = "Oksifil megaloblastlar"
 * group.element[=].target[+].code = #11116-1
 * group.element[=].target[=].display = "Оксифильные мегалобласты"
-* group.element[=].target[=].relationship = #source-is-narrower-than-target
+* group.element[=].target[=].relationship = #related-to
 
 * group.element[+].code = #lab-pan-312
 * group.element[=].display = "Megakarioblastlar"
@@ -1754,7 +1753,7 @@ Description: "Maps local UZ laboratory analytes codes to LOINC."
 * group.element[=].display = "Xujayralar mitozi granulopoez"
 * group.element[=].target[+].code = #11114-6
 * group.element[=].target[=].display = "Митоз клеток гранулопоэза"
-* group.element[=].target[=].relationship = #source-is-narrower-than-target
+* group.element[=].target[=].relationship = #related-to
 
 * group.element[+].code = #lab-pan-320
 * group.element[=].display = "Eritropoez hujayra mitozi"
@@ -1874,7 +1873,7 @@ Description: "Maps local UZ laboratory analytes codes to LOINC."
 * group.element[=].display = "Ureaplasma urealyticum IgG"
 * group.element[=].target[+].code = #17852-5
 * group.element[=].target[=].display = "Ureaplasma urealyticum Ig G"
-* group.element[=].target[=].relationship = #equivalent
+* group.element[=].target[=].relationship = #related-to
 
 * group.element[+].code = #lab-pan-375
 * group.element[=].display = "Immunoreaktiv tripsin (IRT)"
@@ -2262,27 +2261,27 @@ Description: "Maps local UZ laboratory analytes codes to LOINC."
 
 * group.element[+].code = #lab-pan-440
 * group.element[=].display = "Kan natija"
-* group.element[=].target[+].code = #5290-2
+* group.element[=].target[+].code = #22461-8
 * group.element[=].target[=].display = "Результат по Кану"
-* group.element[=].target[=].relationship = #equivalent
+* group.element[=].target[=].relationship = #source-is-narrower-than-target
 
 * group.element[+].code = #lab-pan-441
 * group.element[=].display = "Zaks vitebskiy natija"
-* group.element[=].target[+].code = #5290-2
+* group.element[=].target[+].code = #22461-8
 * group.element[=].target[=].display = "Результат по Заксу-Витебскому"
-* group.element[=].target[=].relationship = #equivalent
+* group.element[=].target[=].relationship = #source-is-narrower-than-target
 
 * group.element[+].code = #lab-pan-442
 * group.element[=].display = "Zaks georgiy natija"
-* group.element[=].target[+].code = #5290-2
+* group.element[=].target[+].code = #22461-8
 * group.element[=].target[=].display = "Результат по Заксу-Георгию"
-* group.element[=].target[=].relationship = #equivalent
+* group.element[=].target[=].relationship = #source-is-narrower-than-target
 
 * group.element[+].code = #lab-pan-443
 * group.element[=].display = "Meynik natija"
-* group.element[=].target[+].code = #5290-2
+* group.element[=].target[+].code = #22461-8
 * group.element[=].target[=].display = "Результат по Мейнику"
-* group.element[=].target[=].relationship = #equivalent
+* group.element[=].target[=].relationship = #source-is-narrower-than-target
 
 * group.element[+].code = #lab-pan-444
 * group.element[=].display = "Cytomegalovirus Ig G"
@@ -2318,7 +2317,7 @@ Description: "Maps local UZ laboratory analytes codes to LOINC."
 * group.element[=].display = "Ureaplasma urealyticum Ig G"
 * group.element[=].target[+].code = #17852-5
 * group.element[=].target[=].display = "Уреаплазма уреалитикум (антитела IgG)"
-* group.element[=].target[=].relationship = #equivalent
+* group.element[=].target[=].relationship = #related-to
 
 * group.element[+].code = #lab-pan-450
 * group.element[=].display = "Anti -dsDNA Ig G"

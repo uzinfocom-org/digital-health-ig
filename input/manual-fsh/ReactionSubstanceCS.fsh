@@ -3,6 +3,10 @@ Id: allergy-reaction-substance-cs
 Title: "Reaction substance codes"
 Description: "Local codes and multilingual names for allergy reaction substance."
 * insert OriginalCodeSystemDraft(allergy-reaction-substance-cs)
+* ^property[0].code = #parent
+* ^property[=].uri = "http://hl7.org/fhir/concept-properties#parent"
+* ^property[=].description = "The whole-extract allergen that a component allergen belongs to"
+* ^property[=].type = #code
 
 * #aller-0010-00002 "Ajiriq (Cyn d)"
   * ^designation[0].language = #ru
@@ -15,6 +19,8 @@ Description: "Local codes and multilingual names for allergy reaction substance.
   * ^designation[=].value = "Свинорой пальчатый (Cyn d 1)"
   * ^designation[+].language = #en
   * ^designation[=].value = "Cyn d 1"
+  * ^property[0].code = #parent
+  * ^property[=].valueCode = #aller-0010-00002
 
 * #aller-0010-00004 "Ko'p yillik mastak (Lol p 1)"
   * ^designation[0].language = #ru
@@ -135,6 +141,8 @@ Description: "Local codes and multilingual names for allergy reaction substance.
   * ^designation[=].value = "Орешник (Лещина) (Cor a 1-0103)"
   * ^designation[+].language = #en
   * ^designation[=].value = "Hazel (Cor a 1-0103)"
+  * ^property[0].code = #parent
+  * ^property[=].valueCode = #aller-0010-00023
 
 * #aller-0010-00025 "Yapon kriptomeriyasi (Cry j 1)"
   * ^designation[0].language = #ru
@@ -171,6 +179,8 @@ Description: "Local codes and multilingual names for allergy reaction substance.
   * ^designation[=].value = "Ясень (Fra e 1)"
   * ^designation[+].language = #en
   * ^designation[=].value = "Ash (Fra e 1)"
+  * ^property[0].code = #parent
+  * ^property[=].valueCode = #aller-0010-00029
 
 * #aller-0010-00031 "Yong'oq changi (Jug r_pollen)"
   * ^designation[0].language = #ru
@@ -255,12 +265,16 @@ Description: "Local codes and multilingual names for allergy reaction substance.
   * ^designation[=].value = "Амброзия (Amb a 1)"
   * ^designation[+].language = #en
   * ^designation[=].value = "Ragweed (Amb a 1)"
+  * ^property[0].code = #parent
+  * ^property[=].valueCode = #aller-0010-00044
 
 * #aller-0010-00046 "Ambroziya (Amb a 4)"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Амброзия (Amb a 4)"
   * ^designation[+].language = #en
   * ^designation[=].value = "Ragweed (Amb a 4)"
+  * ^property[0].code = #parent
+  * ^property[=].valueCode = #aller-0010-00044
 
 * #aller-0010-00047 "Shuvoq (Art v)"
   * ^designation[0].language = #ru
@@ -273,12 +287,16 @@ Description: "Local codes and multilingual names for allergy reaction substance.
   * ^designation[=].value = "Полынь (Art v 1)"
   * ^designation[+].language = #en
   * ^designation[=].value = "Wormwood (Art v 1)"
+  * ^property[0].code = #parent
+  * ^property[=].valueCode = #aller-0010-00047
 
 * #aller-0010-00049 "Shuvoq (Art v 3)"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Полынь (Art v 3)"
   * ^designation[+].language = #en
   * ^designation[=].value = "Wormwood (Art v 3)"
+  * ^property[0].code = #parent
+  * ^property[=].valueCode = #aller-0010-00047
 
 * #aller-0010-00050 "Nasha (Can s)"
   * ^designation[0].language = #ru
@@ -291,6 +309,8 @@ Description: "Local codes and multilingual names for allergy reaction substance.
   * ^designation[=].value = "Конопля (Can s 3)"
   * ^designation[+].language = #en
   * ^designation[=].value = "Hemp (Can s 3)"
+  * ^property[0].code = #parent
+  * ^property[=].valueCode = #aller-0010-00050
 
 * #aller-0010-00052 "Oq olabuta (Che a)"
   * ^designation[0].language = #ru
@@ -303,6 +323,8 @@ Description: "Local codes and multilingual names for allergy reaction substance.
   * ^designation[=].value = "Марь белая (Che a 1)"
   * ^designation[+].language = #en
   * ^designation[=].value = "White goosefoot (Che a 1)"
+  * ^property[0].code = #parent
+  * ^property[=].valueCode = #aller-0010-00052
 
 * #aller-0010-00054 "Bir yillik prolesnik (Mer a 1)"
   * ^designation[0].language = #ru
@@ -321,6 +343,8 @@ Description: "Local codes and multilingual names for allergy reaction substance.
   * ^designation[=].value = "Постенница (Par j 2)"
   * ^designation[+].language = #en
   * ^designation[=].value = "Wallflower (Par j 2)"
+  * ^property[0].code = #parent
+  * ^property[=].valueCode = #aller-0010-00055
 
 * #aller-0010-00057 "Zubturum (Pla l)"
   * ^designation[0].language = #ru
@@ -333,6 +357,8 @@ Description: "Local codes and multilingual names for allergy reaction substance.
   * ^designation[=].value = "Подорожник (Pla l 1)"
   * ^designation[+].language = #en
   * ^designation[=].value = "Plantain (Pla l 1)"
+  * ^property[0].code = #parent
+  * ^property[=].valueCode = #aller-0010-00057
 
 * #aller-0010-00059 "Sho'rak (Sal k)"
   * ^designation[0].language = #ru
@@ -345,6 +371,8 @@ Description: "Local codes and multilingual names for allergy reaction substance.
   * ^designation[=].value = "Солянка (Sal k 1)"
   * ^designation[+].language = #en
   * ^designation[=].value = "Salwort (Sal k 1)"
+  * ^property[0].code = #parent
+  * ^property[=].valueCode = #aller-0010-00059
 
 * #aller-0010-00061 "Gazanda (Urt d)"
   * ^designation[0].language = #ru
@@ -465,6 +493,8 @@ Description: "Local codes and multilingual names for allergy reaction substance.
   * ^designation[=].value = "Клещ домашней пыли Tyrophagus putrescentiae (Tyr p 2)"
   * ^designation[+].language = #en
   * ^designation[=].value = "House dust mite Tyrophagus putrescentiae (Tyr p 2)"
+  * ^property[0].code = #parent
+  * ^property[=].valueCode = #aller-0010-00082
 
 * #aller-0010-00086 "Xamirturushli zamburug' Malassezia sympodialis (Mala s 5)"
   * ^designation[0].language = #ru
@@ -537,6 +567,8 @@ Description: "Local codes and multilingual names for allergy reaction substance.
   * ^designation[=].value = "Кладоспориум гербарум (Cla h 8)"
   * ^designation[+].language = #en
   * ^designation[=].value = "Cladosporium herbarum (Cla h 8)"
+  * ^property[0].code = #parent
+  * ^property[=].valueCode = #aller-0010-00097
 
 * #aller-0010-00099 "Oltinrang penitsillin (Penicilium chrysogenum) (Pen ch)"
   * ^designation[0].language = #ru
@@ -657,6 +689,8 @@ Description: "Local codes and multilingual names for allergy reaction substance.
   * ^designation[=].value = "Гречиха обыкновенная (Fag e 2)"
   * ^designation[+].language = #en
   * ^designation[=].value = "Buckwheat (Fag e 2)"
+  * ^property[0].code = #parent
+  * ^property[=].valueCode = #aller-0010-00120
 
 * #aller-0010-00122 "Arpa (Hor v)"
   * ^designation[0].language = #ru
@@ -723,6 +757,8 @@ Description: "Local codes and multilingual names for allergy reaction substance.
   * ^designation[=].value = "Кукуруза (Zea m 14)"
   * ^designation[+].language = #en
   * ^designation[=].value = "Corn (Zea m 14)"
+  * ^property[0].code = #parent
+  * ^property[=].valueCode = #aller-0010-00131
 
 * #aller-0010-00134 "Paprika (Cap a)"
   * ^designation[0].language = #ru
@@ -765,6 +801,8 @@ Description: "Local codes and multilingual names for allergy reaction substance.
   * ^designation[=].value = "Горчица (Sin a 1)"
   * ^designation[+].language = #en
   * ^designation[=].value = "Mustard (Sin a 1)"
+  * ^property[0].code = #parent
+  * ^property[=].valueCode = #aller-0010-00139
 
 * #aller-0010-00142 "Kivi (Act d 1)"
   * ^designation[0].language = #ru
@@ -927,6 +965,8 @@ Description: "Local codes and multilingual names for allergy reaction substance.
   * ^designation[=].value = "Морковь (Dau c 1)"
   * ^designation[+].language = #en
   * ^designation[=].value = "Carrot (Dau c 1)"
+  * ^property[0].code = #parent
+  * ^property[=].valueCode = #aller-0010-00168
 
 * #aller-0010-00170 "Kartoshka (Sol t)"
   * ^designation[0].language = #ru
@@ -945,6 +985,8 @@ Description: "Local codes and multilingual names for allergy reaction substance.
   * ^designation[=].value = "Помидор (Sola l 6)"
   * ^designation[+].language = #en
   * ^designation[=].value = "Tomato (Sola l 6)"
+  * ^property[0].code = #parent
+  * ^property[=].valueCode = #aller-0010-00171
 
 * #aller-0010-00174 "Hind yong'og'i (keshyu) (Ana o)"
   * ^designation[0].language = #ru
@@ -957,12 +999,16 @@ Description: "Local codes and multilingual names for allergy reaction substance.
   * ^designation[=].value = "Кешью (Ana o 2)"
   * ^designation[+].language = #en
   * ^designation[=].value = "Cashew (Ana o 2)"
+  * ^property[0].code = #parent
+  * ^property[=].valueCode = #aller-0010-00174
 
 * #aller-0010-00176 "Hind yong'og'i (keshyu) (Ana o 3)"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Кешью (Ana o 3)"
   * ^designation[+].language = #en
   * ^designation[=].value = "Cashew (Ana o 3)"
+  * ^property[0].code = #parent
+  * ^property[=].valueCode = #aller-0010-00174
 
 * #aller-0010-00177 "Braziliya yong'og'i (Ber e)"
   * ^designation[0].language = #ru
@@ -975,6 +1021,8 @@ Description: "Local codes and multilingual names for allergy reaction substance.
   * ^designation[=].value = "Бразильский орех (Ber e 1)"
   * ^designation[+].language = #en
   * ^designation[=].value = "Brazil nut (Ber e 1)"
+  * ^property[0].code = #parent
+  * ^property[=].valueCode = #aller-0010-00177
 
 * #aller-0010-00179 "Pekan yong'og'i (Car i)"
   * ^designation[0].language = #ru
@@ -1101,6 +1149,8 @@ Description: "Local codes and multilingual names for allergy reaction substance.
   * ^designation[=].value = "Мак (Pap s 2S Albumin)"
   * ^designation[+].language = #en
   * ^designation[=].value = "Poppy seeds (Pap s 2S Albumin)"
+  * ^property[0].code = #parent
+  * ^property[=].valueCode = #aller-0010-00199
 
 * #aller-0010-00201 "Kunjut (Ses i)"
   * ^designation[0].language = #ru
@@ -1113,6 +1163,8 @@ Description: "Local codes and multilingual names for allergy reaction substance.
   * ^designation[=].value = "Кунжут (Ses i 1)"
   * ^designation[+].language = #en
   * ^designation[=].value = "Sesame (Ses i 1)"
+  * ^property[0].code = #parent
+  * ^property[=].valueCode = #aller-0010-00201
 
 * #aller-0010-00203 "Fenugrek urug'i (Tri fo)"
   * ^designation[0].language = #ru
@@ -1131,18 +1183,24 @@ Description: "Local codes and multilingual names for allergy reaction substance.
   * ^designation[=].value = "Коровье молоко (Bos d 4)"
   * ^designation[+].language = #en
   * ^designation[=].value = "Cow's milk (Bos d 4)"
+  * ^property[0].code = #parent
+  * ^property[=].valueCode = #aller-0010-00206
 
 * #aller-0010-00208 "Sigir suti (Bos d 5)"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Коровье молоко (Bos d 5)"
   * ^designation[+].language = #en
   * ^designation[=].value = "Cow's milk (Bos d 5)"
+  * ^property[0].code = #parent
+  * ^property[=].valueCode = #aller-0010-00206
 
 * #aller-0010-00209 "Sigir suti (Bos d 8)"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Коровье молоко (Bos d 8)"
   * ^designation[+].language = #en
   * ^designation[=].value = "Cow's milk"
+  * ^property[0].code = #parent
+  * ^property[=].valueCode = #aller-0010-00206
 
 * #aller-0010-00210 "Tuya suti (Cam d)"
   * ^designation[0].language = #ru
@@ -1185,30 +1243,40 @@ Description: "Local codes and multilingual names for allergy reaction substance.
   * ^designation[=].value = "Яичный белок (Gal d 1)"
   * ^designation[+].language = #en
   * ^designation[=].value = "Egg white (Gal d 1)"
+  * ^property[0].code = #parent
+  * ^property[=].valueCode = #aller-0010-00215
 
 * #aller-0010-00218 "Tuxum oqsili (Gal d 2)"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Яичный белок (Gal d 2)"
   * ^designation[+].language = #en
   * ^designation[=].value = "Egg white (Gal d 2)"
+  * ^property[0].code = #parent
+  * ^property[=].valueCode = #aller-0010-00215
 
 * #aller-0010-00219 "Tuxum oqsili (Gal d 3)"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Яичный белок (Gal d 3)"
   * ^designation[+].language = #en
   * ^designation[=].value = "Egg white (Gal d 3)"
+  * ^property[0].code = #parent
+  * ^property[=].valueCode = #aller-0010-00215
 
 * #aller-0010-00220 "Tuxum oqsili (Gal d 4)"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Яичный белок (Gal d 4)"
   * ^designation[+].language = #en
   * ^designation[=].value = "Egg white (Gal d 4)"
+  * ^property[0].code = #parent
+  * ^property[=].valueCode = #aller-0010-00215
 
 * #aller-0010-00221 "Tuxum sarig'i (Gal d 5)"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Яичный желток (Gal d 5)"
   * ^designation[+].language = #en
   * ^designation[=].value = "Egg yolk (Gal d 5)"
+  * ^property[0].code = #parent
+  * ^property[=].valueCode = #aller-0010-00216
 
 * #aller-0010-00223 "Seld balig'i qurti (Ani s 1)"
   * ^designation[0].language = #ru
@@ -1239,6 +1307,8 @@ Description: "Local codes and multilingual names for allergy reaction substance.
   * ^designation[=].value = "Сельд атлантическая (Clu h 1)"
   * ^designation[+].language = #en
   * ^designation[=].value = "Atlantic herring (Clu h 1)"
+  * ^property[0].code = #parent
+  * ^property[=].valueCode = #aller-0010-00226
 
 * #aller-0010-00228 "Oddiy krevetka (Cra c 6)"
   * ^designation[0].language = #ru
@@ -1263,12 +1333,16 @@ Description: "Local codes and multilingual names for allergy reaction substance.
   * ^designation[=].value = "Атлантическая треска (Gad m 2+3)"
   * ^designation[+].language = #en
   * ^designation[=].value = "Atlantic cod (Gad m 2+3)"
+  * ^property[0].code = #parent
+  * ^property[=].valueCode = #aller-0010-00230
 
 * #aller-0010-00232 "Atlantika treska balig'i (Gad m 1)"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Атлантическая треска (Gad m 1)"
   * ^designation[+].language = #en
   * ^designation[=].value = "Atlantic cod (Gad m 1)"
+  * ^property[0].code = #parent
+  * ^property[=].valueCode = #aller-0010-00230
 
 * #aller-0010-00233 "Omar (Hom g)"
   * ^designation[0].language = #ru
@@ -1347,6 +1421,8 @@ Description: "Local codes and multilingual names for allergy reaction substance.
   * ^designation[=].value = "Морская лисица или колючий скат (Raj c Parvalbumin)"
   * ^designation[+].language = #en
   * ^designation[=].value = "Thresher or spiny ray (Raj c Parvalbumin)"
+  * ^property[0].code = #parent
+  * ^property[=].valueCode = #aller-0010-00244
 
 * #aller-0010-00246 "Mollyuska (Rud spp-)"
   * ^designation[0].language = #ru
@@ -1365,6 +1441,8 @@ Description: "Local codes and multilingual names for allergy reaction substance.
   * ^designation[=].value = "Лосось (Sal s 1)"
   * ^designation[+].language = #en
   * ^designation[=].value = "Salmon (Sal s 1)"
+  * ^property[0].code = #parent
+  * ^property[=].valueCode = #aller-0010-00247
 
 * #aller-0010-00249 "Atlantika skumboriya balig'i (Sco s)"
   * ^designation[0].language = #ru
@@ -1377,6 +1455,8 @@ Description: "Local codes and multilingual names for allergy reaction substance.
   * ^designation[=].value = "Атлантическая скумбрия (Sco s 1)"
   * ^designation[+].language = #en
   * ^designation[=].value = "Atlantic mackerel (Sco s 1)"
+  * ^property[0].code = #parent
+  * ^property[=].valueCode = #aller-0010-00249
 
 * #aller-0010-00251 "Tunes (Thu a)"
   * ^designation[0].language = #ru
@@ -1389,6 +1469,8 @@ Description: "Local codes and multilingual names for allergy reaction substance.
   * ^designation[=].value = "Тунец (Thu a 1)"
   * ^designation[+].language = #en
   * ^designation[=].value = "Tuna (Thu a 1)"
+  * ^property[0].code = #parent
+  * ^property[=].valueCode = #aller-0010-00251
 
 * #aller-0010-00253 "Qilich baliq (Xip g 1)"
   * ^designation[0].language = #ru
@@ -1413,6 +1495,8 @@ Description: "Local codes and multilingual names for allergy reaction substance.
   * ^designation[=].value = "Говядина (Bos d 6)"
   * ^designation[+].language = #en
   * ^designation[=].value = "Beef (Bos d 6)"
+  * ^property[0].code = #parent
+  * ^property[=].valueCode = #aller-0010-00256
 
 * #aller-0010-00258 "Ot go'shti (Equ c_meat)"
   * ^designation[0].language = #ru
@@ -1461,6 +1545,8 @@ Description: "Local codes and multilingual names for allergy reaction substance.
   * ^designation[=].value = "Свинина (Sus d 1)"
   * ^designation[+].language = #en
   * ^designation[=].value = "Pork (Sus d 1)"
+  * ^property[0].code = #parent
+  * ^property[=].valueCode = #aller-0010-00264
 
 * #aller-0010-00266 "Katta un qo'ng'izi (Ten m)"
   * ^designation[0].language = #ru
@@ -1485,12 +1571,16 @@ Description: "Local codes and multilingual names for allergy reaction substance.
   * ^designation[=].value = "Пчела медоносная (Api m 1)"
   * ^designation[+].language = #en
   * ^designation[=].value = "Honey bee (Api m 1)"
+  * ^property[0].code = #parent
+  * ^property[=].valueCode = #aller-0010-00271
 
 * #aller-0010-00273 "Asalari (Api m 10)"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Пчела медоносная (Api m 10)"
   * ^designation[+].language = #en
   * ^designation[=].value = "Honey bee (Api m 10)"
+  * ^property[0].code = #parent
+  * ^property[=].valueCode = #aller-0010-00271
 
 * #aller-0010-00275 "Sakson arisi (Dol spp)"
   * ^designation[0].language = #ru
@@ -1509,6 +1599,8 @@ Description: "Local codes and multilingual names for allergy reaction substance.
   * ^designation[=].value = "Оса бумажная (Pol d 5)"
   * ^designation[+].language = #en
   * ^designation[=].value = "Paper wasp (Pol d 5)"
+  * ^property[0].code = #parent
+  * ^property[=].valueCode = #aller-0010-00276
 
 * #aller-0010-00278 "Oddiy ari (Ves v)"
   * ^designation[0].language = #ru
@@ -1521,12 +1613,16 @@ Description: "Local codes and multilingual names for allergy reaction substance.
   * ^designation[=].value = "Оса обыкновенная (Ves v 1)"
   * ^designation[+].language = #en
   * ^designation[=].value = "Common wasp (Ves v 1)"
+  * ^property[0].code = #parent
+  * ^property[=].valueCode = #aller-0010-00278
 
 * #aller-0010-00280 "Oddiy ari (Ves v 5)"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Оса обыкновенная (Ves v 5)"
   * ^designation[+].language = #en
   * ^designation[=].value = "Common wasp (Ves v 5)"
+  * ^property[0].code = #parent
+  * ^property[=].valueCode = #aller-0010-00278
 
 * #aller-0010-00282 "Nemes suvaragi (Bla g 1)"
   * ^designation[0].language = #ru
@@ -1569,6 +1665,8 @@ Description: "Local codes and multilingual names for allergy reaction substance.
   * ^designation[=].value = "Американский таракан (Per a 7)"
   * ^designation[+].language = #en
   * ^designation[=].value = "American cockroach (Per a 7)"
+  * ^property[0].code = #parent
+  * ^property[=].valueCode = #aller-0010-00287
 
 * #aller-0010-00291 "It (Can f_Fd1)"
   * ^designation[0].language = #ru
