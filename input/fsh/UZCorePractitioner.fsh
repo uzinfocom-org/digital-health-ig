@@ -67,29 +67,21 @@ Usage: #example
 * name
   * use = #official
   * text = "Rahimova Dilnoza Akmalovna"
-  * text.extension[+].url = $translation-extension
-  * text.extension[=].extension[0].url = "lang"
-  * text.extension[=].extension[=].valueCode = #ru
-  * text.extension[=].extension[+].url = "content"
-  * text.extension[=].extension[=].valueString = "Рахимова Дилноза Акмаловна"
+    * extension[translation]
+      * extension[lang].valueCode = #ru
+      * extension[content].valueString = "Рахимова Дилноза Акмаловна"
   * family = "Rahimova"
-  * family.extension[+].url = $translation-extension
-  * family.extension[=].extension[0].url = "lang"
-  * family.extension[=].extension[=].valueCode = #ru
-  * family.extension[=].extension[+].url = "content"
-  * family.extension[=].extension[=].valueString = "Рахимова"
+    * extension[translation]
+      * extension[lang].valueCode = #ru
+      * extension[content].valueString = "Рахимова"
   * given = "Dilnoza"
-  * given.extension[+].url = $translation-extension
-  * given.extension[=].extension[0].url = "lang"
-  * given.extension[=].extension[=].valueCode = #ru
-  * given.extension[=].extension[+].url = "content"
-  * given.extension[=].extension[=].valueString = "Дилноза"
+    * extension[translation]
+      * extension[lang].valueCode = #ru
+      * extension[content].valueString = "Дилноза"
   * suffix = "Akmalovna"
-  * suffix.extension[+].url = $translation-extension
-  * suffix.extension[=].extension[0].url = "lang"
-  * suffix.extension[=].extension[=].valueCode = #ru
-  * suffix.extension[=].extension[+].url = "content"
-  * suffix.extension[=].extension[=].valueString = "Акмаловна"
+    * extension[translation]
+      * extension[lang].valueCode = #ru
+      * extension[content].valueString = "Акмаловна"
 * telecom
   * system = #phone
   * value = "975555555"
