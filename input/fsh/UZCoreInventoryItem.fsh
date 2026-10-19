@@ -1,6 +1,6 @@
 Profile: UZCoreInventoryItem
 Parent: InventoryItem
-Id: uz-core-inventory-item
+Id: uz-core-inventoryitem
 Title: "UZ Core InventoryItem"
 Description: "Uzbekistan Core InventoryItem profile, used to track stock of items such as blood products, with their status, quantity and storage location"
 
