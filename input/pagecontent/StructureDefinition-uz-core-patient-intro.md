@@ -107,16 +107,7 @@ The `name` is written in Uzbek - the resource `language` - and that Uzbek text i
       "extension": [
         {
           "url": "http://hl7.org/fhir/StructureDefinition/translation",
-          "extension": [
-            {
-              "url": "lang",
-              "valueCode": "ru"
-            },
-            {
-              "url": "content",
-              "valueString": "Каримова Нодира Анваровна"
-            }
-          ]
+          "extension": [ { "url": "lang", "valueCode": "ru" }, { "url": "content", "valueString": "Каримова Нодира Анваровна" } ]
         }
       ]
     },
@@ -125,16 +116,7 @@ The `name` is written in Uzbek - the resource `language` - and that Uzbek text i
       "extension": [
         {
           "url": "http://hl7.org/fhir/StructureDefinition/translation",
-          "extension": [
-            {
-              "url": "lang",
-              "valueCode": "ru"
-            },
-            {
-              "url": "content",
-              "valueString": "Каримова"
-            }
-          ]
+          "extension": [ { "url": "lang", "valueCode": "ru" }, { "url": "content", "valueString": "Каримова" } ]
         }
       ]
     },
@@ -144,16 +126,7 @@ The `name` is written in Uzbek - the resource `language` - and that Uzbek text i
         "extension": [
           {
             "url": "http://hl7.org/fhir/StructureDefinition/translation",
-            "extension": [
-              {
-                "url": "lang",
-                "valueCode": "ru"
-              },
-              {
-                "url": "content",
-                "valueString": "Нодира"
-              }
-            ]
+            "extension": [ { "url": "lang", "valueCode": "ru" }, { "url": "content", "valueString": "Нодира" } ]
           }
         ]
       }
@@ -164,16 +137,7 @@ The `name` is written in Uzbek - the resource `language` - and that Uzbek text i
         "extension": [
           {
             "url": "http://hl7.org/fhir/StructureDefinition/translation",
-            "extension": [
-              {
-                "url": "lang",
-                "valueCode": "ru"
-              },
-              {
-                "url": "content",
-                "valueString": "Анваровна"
-              }
-            ]
+            "extension": [ { "url": "lang", "valueCode": "ru" }, { "url": "content", "valueString": "Анваровна" } ]
           }
         ]
       }

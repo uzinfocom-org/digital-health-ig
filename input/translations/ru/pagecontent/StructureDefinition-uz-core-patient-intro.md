@@ -109,16 +109,7 @@ UZ Core Patient содержит административную и демог�
       "extension": [
         {
           "url": "http://hl7.org/fhir/StructureDefinition/translation",
-          "extension": [
-            {
-              "url": "lang",
-              "valueCode": "ru"
-            },
-            {
-              "url": "content",
-              "valueString": "Каримова Нодира Анваровна"
-            }
-          ]
+          "extension": [ { "url": "lang", "valueCode": "ru" }, { "url": "content", "valueString": "Каримова Нодира Анваровна" } ]
         }
       ]
     },
@@ -127,16 +118,7 @@ UZ Core Patient содержит административную и демог�
       "extension": [
         {
           "url": "http://hl7.org/fhir/StructureDefinition/translation",
-          "extension": [
-            {
-              "url": "lang",
-              "valueCode": "ru"
-            },
-            {
-              "url": "content",
-              "valueString": "Каримова"
-            }
-          ]
+          "extension": [ { "url": "lang", "valueCode": "ru" }, { "url": "content", "valueString": "Каримова" } ]
         }
       ]
     },
@@ -146,16 +128,7 @@ UZ Core Patient содержит административную и демог�
         "extension": [
           {
             "url": "http://hl7.org/fhir/StructureDefinition/translation",
-            "extension": [
-              {
-                "url": "lang",
-                "valueCode": "ru"
-              },
-              {
-                "url": "content",
-                "valueString": "Нодира"
-              }
-            ]
+            "extension": [ { "url": "lang", "valueCode": "ru" }, { "url": "content", "valueString": "Нодира" } ]
           }
         ]
       }
@@ -166,16 +139,7 @@ UZ Core Patient содержит административную и демог�
         "extension": [
           {
             "url": "http://hl7.org/fhir/StructureDefinition/translation",
-            "extension": [
-              {
-                "url": "lang",
-                "valueCode": "ru"
-              },
-              {
-                "url": "content",
-                "valueString": "Анваровна"
-              }
-            ]
+            "extension": [ { "url": "lang", "valueCode": "ru" }, { "url": "content", "valueString": "Анваровна" } ]
           }
         ]
       }

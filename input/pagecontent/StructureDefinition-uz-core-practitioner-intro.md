@@ -94,16 +94,7 @@ In practice you send the demographics the platform expects you to support: the `
         "extension": [
           {
             "url": "http://hl7.org/fhir/StructureDefinition/translation",
-            "extension": [
-              {
-                "url": "lang",
-                "valueCode": "ru"
-              },
-              {
-                "url": "content",
-                "valueString": "Рахимова Дилноза Акмаловна"
-              }
-            ]
+            "extension": [ { "url": "lang", "valueCode": "ru" }, { "url": "content", "valueString": "Рахимова Дилноза Акмаловна" } ]
           }
         ]
       },
@@ -112,16 +103,7 @@ In practice you send the demographics the platform expects you to support: the `
         "extension": [
           {
             "url": "http://hl7.org/fhir/StructureDefinition/translation",
-            "extension": [
-              {
-                "url": "lang",
-                "valueCode": "ru"
-              },
-              {
-                "url": "content",
-                "valueString": "Рахимова"
-              }
-            ]
+            "extension": [ { "url": "lang", "valueCode": "ru" }, { "url": "content", "valueString": "Рахимова" } ]
           }
         ]
       },
@@ -131,16 +113,7 @@ In practice you send the demographics the platform expects you to support: the `
           "extension": [
             {
               "url": "http://hl7.org/fhir/StructureDefinition/translation",
-              "extension": [
-                {
-                  "url": "lang",
-                  "valueCode": "ru"
-                },
-                {
-                  "url": "content",
-                  "valueString": "Дилноза"
-                }
-              ]
+              "extension": [ { "url": "lang", "valueCode": "ru" }, { "url": "content", "valueString": "Дилноза" } ]
             }
           ]
         }
@@ -151,16 +124,7 @@ In practice you send the demographics the platform expects you to support: the `
           "extension": [
             {
               "url": "http://hl7.org/fhir/StructureDefinition/translation",
-              "extension": [
-                {
-                  "url": "lang",
-                  "valueCode": "ru"
-                },
-                {
-                  "url": "content",
-                  "valueString": "Акмаловна"
-                }
-              ]
+              "extension": [ { "url": "lang", "valueCode": "ru" }, { "url": "content", "valueString": "Акмаловна" } ]
             }
           ]
         }
