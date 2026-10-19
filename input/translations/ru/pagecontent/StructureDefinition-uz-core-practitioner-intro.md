@@ -24,7 +24,7 @@ UZ Core Practitioner описывает отдельного медицинск�
 - дату рождения и дату/флаг смерти;
 - адрес - либо узбекский адрес (кодированные административно-территориальные единицы), либо международный адрес в свободной текстовой форме;
 - фотографию;
-- одну или несколько квалификаций, каждая с кодом из набора значений лицензий/сертификатов Tibtoifa, а также с периодом действия и выдавшей организацией.
+- одну или несколько квалификаций, каждая с кодом из набора значений лицензий/сертификатов Tibtoifa, а также с периодом действия и выдавшей организацией. [Сертификат специалиста](#specialist-certificates) дополнительно несёт серию и номер в `identifier`, а специальность, категорию и роль - в `code.text`.
 
 > Расширение `gender-other` может использоваться только тогда, когда `gender` установлен в значение `other`.
 
@@ -135,5 +135,126 @@ UZ Core Practitioner описывает отдельного медицинск�
 ```
 
 `qualification.code` привязан (required) к набору значений лицензий/сертификатов Tibtoifa. Используйте `deceasedDateTime`, когда известна точная дата смерти, или `deceasedBoolean`, когда известен только сам факт.
+
+### Сертификаты специалиста {#specialist-certificates}
+
+Сертификат специалиста выдаёт Министерство здравоохранения; он подтверждает, что медицинский работник может работать по определённой специальности с определённой квалификационной категорией. Сертификаты хранятся в Tibtoifa, которая возвращает все сертификаты медицинского работника по PINFL. Каждый сертификат становится одним элементом `qualification` в Practitioner.
+
+<div>{% include practitioner-certificate-sequence.svg %}</div><br clear="all"/>
+
+#### Что возвращает Tibtoifa
+
+Одна запись ответа Tibtoifa для PINFL `42410540220011`:
+
+```
+{
+  "pinfl": "42410540220011",
+  "serial": "CA",
+  "number": "008815",
+  "category": { "uz": "Oliy toifa", "ru": "Высшая категория", "en": "Higher category" },
+  "speciality": { "uz": "psixiatriya", "ru": "психиатрия", "en": "psychiatry" },
+  "medicaleRoleName": { "uz": "Shifokor", "ru": "Врач", "en": "Doctor" },
+  "givenDate": "2024-05-05",
+  "validityPeriod": "2029-05-05",
+  "commandNumber": "35",
+  "commandDate": "2024-05-05"
+}
+```
+
+Запись также содержит внутренние идентификаторы Tibtoifa (`id`, `serialId`, `categoryId`, `specialityId`, `medicalRoleId`) и каракалпакское (`kaa`) название рядом с каждым переводимым полем.
+
+#### Соответствие полей FHIR
+
+| Поле Tibtoifa | Пример | Элемент FHIR | Правило |
+|---|---|---|---|
+| `pinfl` | `42410540220011` | `Practitioner.identifier` (PINFL) | По нему находят медицинского работника; в квалификации не повторяется |
+| `serial` + `number` | `CA` + `008815` | `qualification.identifier.value` | Серия и номер без разделителя: `CA008815` |
+| - | - | `qualification.identifier.system` | Всегда `https://dhp.uz/fhir/core/sid/doc/uz/specialist-certificate` |
+| - | - | `qualification.code.coding` | Всегда `http://terminology.hl7.org/CodeSystem/v2-0360#CER` "Certificate" |
+| `speciality`, `category`, `medicaleRoleName` | `psixiatriya`, `Oliy toifa`, `Shifokor` | `qualification.code.text` | `{специальность}, {категория}, {роль}` на языке ресурса: `Psixiatriya, oliy toifa, shifokor` |
+| те же поля на `ru`, `kaa`, `en` | `Психиатрия, высшая категория, врач` | расширение `translation` у `code.text` | Одно расширение на каждый язык |
+| `givenDate` | `2024-05-05` | `qualification.period.start` | Дата выдачи |
+| `validityPeriod` | `2029-05-05` | `qualification.period.end` | Последний день действия |
+| `id`, `serialId`, `categoryId`, `specialityId`, `medicalRoleId` | `9448`, `2`, `1`, `90`, `1` | - | Внутренние идентификаторы Tibtoifa, не передаются |
+| `commandNumber`, `commandDate` | `35`, `2024-05-05` | - | Не передаются |
+
+Специальность, категория и роль пока передаются текстом; кодированные наборы значений для них могут появиться в следующей версии.
+
+#### Правила
+
+- **Один сертификат - одна квалификация.** У медицинского работника с сертификатами по двум специальностям два элемента `qualification`.
+- **Сопоставление по идентификатору.** Если сертификат получен повторно (например, после продления изменился срок действия), найдите существующую квалификацию по `identifier.system` и `identifier.value` и обновите её, а не добавляйте дубликат.
+- **Истёкшие сертификаты сохраняются.** Сертификат, у которого `period.end` уже прошёл, остаётся в записи; период показывает, что он больше не действует.
+- **Буквы серии.** В Tibtoifa встречаются серии латиницей и кириллицей (например, `CA` и `ТТБ`). Передавайте серию ровно так, как её вернула Tibtoifa, чтобы один и тот же сертификат всегда давал одинаковый `identifier.value`.
+- **Нет категории.** Категория Tibtoifa `0` ("None") означает, что категория неизвестна, - не включайте её в текст. Категория `5` ("Toifasiz", без категории) - реальное значение и записывается.
+
+#### Сертификат в Practitioner
+
+Квалификация, построенная из записи Tibtoifa выше:
+
+```json
+{
+  "resourceType": "Practitioner",
+  "language": "uz",
+  "meta": { "profile": [ "https://dhp.uz/fhir/core/StructureDefinition/uz-core-practitioner" ] },
+  "identifier": [
+    {
+      "use": "official",
+      "type": {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+            "code": "NI",
+            "display": "National unique individual identifier"
+          }
+        ]
+      },
+      "system": "https://dhp.uz/fhir/core/sid/pid/uz/ni",
+      "value": "42410540220011"
+    }
+  ],
+  "qualification": [
+    {
+      "identifier": [
+        {
+          "system": "https://dhp.uz/fhir/core/sid/doc/uz/specialist-certificate",
+          "value": "CA008815"
+        }
+      ],
+      "code": {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0360",
+            "code": "CER",
+            "display": "Certificate"
+          }
+        ],
+        "text": "Psixiatriya, oliy toifa, shifokor",
+        "_text": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                { "url": "lang", "valueCode": "ru" },
+                { "url": "content", "valueString": "Психиатрия, высшая категория, врач" }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                { "url": "lang", "valueCode": "en" },
+                { "url": "content", "valueString": "Psychiatry, higher category, doctor" }
+              ]
+            }
+          ]
+        }
+      },
+      "period": { "start": "2024-05-05", "end": "2029-05-05" }
+    }
+  ]
+}
+```
+
+Система номеров сертификатов описана в [системе именования сертификатов специалиста](NamingSystem-uzb-specialist-certificate.html); полная запись - в [примере медицинского работника](Practitioner-example-practitioner.html).
 
 Примеры вызовов API и образец полезной нагрузки см. в разделе [Быстрый старт](#quick-start) внизу этой страницы.

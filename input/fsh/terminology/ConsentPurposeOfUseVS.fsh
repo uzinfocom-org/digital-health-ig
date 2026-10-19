@@ -7,4 +7,4 @@ Description: "Defines the purposes of use for consent"
 * ^extension[0].url = $valueset-supplement
 * ^extension[=].valueCanonical = Canonical(ActReasonCS)
 
-* include $v3-ActReason#RECORDMGT
+* include codes from system $v3-ActReason where concept is-a #PurposeOfUse

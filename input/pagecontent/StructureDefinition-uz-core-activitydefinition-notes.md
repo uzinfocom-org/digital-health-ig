@@ -1,0 +1,5 @@
+### Request resource types
+
+`ActivityDefinition.kind` uses the existing national [Request resource types](ValueSet-request-resource-types-vs.html) ValueSet, which includes the complete [FHIR R5 Request Resource Types](https://hl7.org/fhir/R5/valueset-request-resource-types.html) list. The national supplement supplies Uzbek and Russian designations. This permits ServiceRequest and all other base request types without adding a new ActivityDefinition profile. Event resources such as Observation and QuestionnaireResponse are not request types and remain excluded by the required base binding.
+
+For an invitation template, use this existing profile with `kind = ServiceRequest`, `intent = plan`, and `profile` naming the existing [UZ Core ServiceRequest](StructureDefinition-uz-core-servicerequest.html). Patient, invitation category, program identifier and the pinned PlanDefinition reference are populated when the application creates the patient request. Definitions do not evaluate results or change a patient request status. Screening examples and the application contract belong to Integrations.

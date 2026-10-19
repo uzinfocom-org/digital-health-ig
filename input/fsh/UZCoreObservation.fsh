@@ -8,7 +8,7 @@ Description: "Uzbekistan Core Observation profile, used to represent clinical an
 //rules
 * identifier MS
 * instantiates[x] MS
-* basedOn 0..1 MS
+* basedOn MS
 * basedOn only Reference(CarePlan or MedicationRequest or ServiceRequest or UZCoreImmunizationRecommendation)
 * triggeredBy MS
 * triggeredBy.observation only Reference(UZCoreObservation)
@@ -19,7 +19,15 @@ Description: "Uzbekistan Core Observation profile, used to represent clinical an
 * status MS
 * status from ObservationStatusVS (required)
 * category MS
-* category from ObservationCategoryVS
+* category from ObservationCategoryVS (preferred)
+* category ^slicing.discriminator.type = #value
+* category ^slicing.discriminator.path = "$this"
+* category ^slicing.rules = #open
+* category ^slicing.description = "Categories from the national value set; codes from other systems are allowed alongside them"
+* category ^slicing.ordered = false
+* category contains dhpCategory 0..* MS
+* category[dhpCategory] from ObservationCategoryVS (required)
+* category[dhpCategory] ^short = "Category from the national value set"
 * code MS
 * code from ObservationCodesVS (preferred)
 * subject MS
@@ -34,9 +42,9 @@ Description: "Uzbekistan Core Observation profile, used to represent clinical an
 * value[x] MS
 * dataAbsentReason MS
 * dataAbsentReason from DataAbsentReasonVS (extensible)
-* interpretation from ObservationInterpretationVS
+* interpretation from ObservationInterpretationVS (extensible)
 * note MS
-* bodySite from $bodysite
+* bodySite from BodySiteVS (required)
 * method from LabMethodsVS (extensible)
 * specimen MS
 * specimen only Reference(UZCoreSpecimen)
