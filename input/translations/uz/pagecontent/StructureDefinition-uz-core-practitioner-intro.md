@@ -149,7 +149,7 @@ Amalda siz platforma sizdan qo'llab-quvvatlashni kutadigan demografik ma'lumotla
 }
 ```
 
-Ism resurs tilida (`language`) - o'zbek tilida yozilgan. Uning ruscha shakli ismning har bir qismidagi `translation` kengaytmasi orqali uzatiladi - `_text`, `_family`, `_given` va `_suffix` (boshidagi pastki chiziq - FHIR primitiv elementning kengaytmalarini joylashtiradigan joy; `_given` va `_suffix` massivlar bo'lib, `given` va `suffix` bilan o'rni bo'yicha juftlashadi). Sizda bor har bir til uchun bitta `translation` qo'shing va bitta `name` qoldiring: ruscha yozilish uchun ikkinchi `HumanName` boshqa ism sifatida o'qiladi.
+Ism resurs tilida (`language`) - o'zbek tilida yozilgan. Uning ruscha shakli ismning har bir qismidagi `translation` kengaytmasi orqali uzatiladi - `_text`, `_family`, `_given` va `_suffix`. Sizda bor har bir til uchun bitta `translation` qo'shing va bitta `name` qoldiring: ruscha yozilish uchun ikkinchi `HumanName` boshqa ism sifatida o'qiladi.
 
 `telecom.system` va `name.use` talab qilingan bog'lanishlardan foydalanadi - qiymat bog'langan qiymatlar to'plamidan kelishi shart. `district` / `city` kodlari milliy qiymatlar to'plamlaridan keladi - har bir kod qayerdan olinishi haqida [Manzillar](general-guidance.html#addresses) ga qarang. Chet elda yashovchi mutaxassis uchun esa `country` xorijiy ISO kodiga o'rnatilgan erkin matnli manzildan foydalaning.
 

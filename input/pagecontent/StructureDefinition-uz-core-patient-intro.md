@@ -96,7 +96,7 @@ The `state` / `district` / `city` codes come from national value sets - see [Add
 
 #### Names in Uzbek and Russian {#names-in-uzbek-and-russian}
 
-The `name` is written in Uzbek - the resource `language` - and that Uzbek text is authoritative. When you also hold the Russian (Cyrillic) form, send it as a `translation` extension on each part you fill: `_text`, `_family`, `_given` and `_suffix`. The leading underscore is where FHIR attaches extensions to a primitive; `_given` and `_suffix` are arrays that pair with `given` and `suffix` by position. Keep one `name` entry - a second `HumanName` with the Russian spelling would read as a different name. The [Nodira example](Patient-example-nodira.html) carries the full set:
+The `name` is written in Uzbek - the resource `language` - and that Uzbek text is authoritative. When you also hold the Russian (Cyrillic) form, send it as a `translation` extension on each part you fill: `_text`, `_family`, `_given` and `_suffix`. Keep one `name` entry - a second `HumanName` with the Russian spelling would read as a different name. The [Nodira example](Patient-example-nodira.html) carries the full set:
 
 ```json
 "name": [

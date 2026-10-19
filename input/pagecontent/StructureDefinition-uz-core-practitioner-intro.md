@@ -147,7 +147,7 @@ In practice you send the demographics the platform expects you to support: the `
 }
 ```
 
-The name is written in Uzbek, the resource `language`. Its Russian form travels as a `translation` extension on each part of the name - `_text`, `_family`, `_given` and `_suffix` (the leading underscore is where FHIR puts extensions on a primitive; `_given` and `_suffix` are arrays that pair with `given` and `suffix` by position). Add one `translation` per language you hold, and keep a single `name`: a second `HumanName` with the Russian spelling would read as a different name.
+The name is written in Uzbek, the resource `language`. Its Russian form travels as a `translation` extension on each part of the name - `_text`, `_family`, `_given` and `_suffix`. Add one `translation` per language you hold, and keep a single `name`: a second `HumanName` with the Russian spelling would read as a different name.
 
 `telecom.system` and `name.use` use required bindings - the value must come from the bound value set. The `district` / `city` codes come from national value sets - see [Addresses](general-guidance.html#addresses) for where each code is sourced. For a practitioner living abroad, use a free-text address with `country` set to the foreign ISO code instead.
 

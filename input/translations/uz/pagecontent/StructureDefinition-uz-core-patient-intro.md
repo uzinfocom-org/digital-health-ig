@@ -98,7 +98,7 @@ Amalda siz PINFL bilan birga platforma sizdan qoʻllab-quvvatlashni kutadigan as
 
 #### Oʻzbek va rus tilidagi ismlar {#names-in-uzbek-and-russian}
 
-`name` oʻzbek tilida - resurs tilida (`language`) yoziladi va aynan oʻzbekcha matn asosiy hisoblanadi. Agar sizda ruscha (kirillcha) shakl ham boʻlsa, uni toʻldirilgan har bir qismdagi `translation` kengaytmasi orqali yuboring: `_text`, `_family`, `_given` va `_suffix`. Boshidagi pastki chiziq - FHIR primitiv elementning kengaytmalarini joylashtiradigan joy; `_given` va `_suffix` massivlar boʻlib, `given` va `suffix` bilan oʻrni boʻyicha juftlashadi. Bitta `name` yozuvini qoldiring: ruscha yozilish uchun ikkinchi `HumanName` boshqa ism sifatida oʻqiladi. Toʻliq toʻplam [Nodira misolida](Patient-example-nodira.html) keltirilgan:
+`name` oʻzbek tilida - resurs tilida (`language`) yoziladi va aynan oʻzbekcha matn asosiy hisoblanadi. Agar sizda ruscha (kirillcha) shakl ham boʻlsa, uni toʻldirilgan har bir qismdagi `translation` kengaytmasi orqali yuboring: `_text`, `_family`, `_given` va `_suffix`. Bitta `name` yozuvini qoldiring: ruscha yozilish uchun ikkinchi `HumanName` boshqa ism sifatida oʻqiladi. Toʻliq toʻplam [Nodira misolida](Patient-example-nodira.html) keltirilgan:
 
 ```json
 "name": [
