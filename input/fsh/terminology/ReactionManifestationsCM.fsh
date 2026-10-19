@@ -72,7 +72,7 @@ Description: "Maps local UZ ReactionManifestationCS codes to SNOMED CT."
 * group.element[=].display = "Tomoq qichishish"
 * group.element[=].target[+].code = #1137376007
 * group.element[=].target[=].display = "Itching of oral soft tissues"
-* group.element[=].target[=].relationship = #source-is-broader-than-target
+* group.element[=].target[=].relationship = #related-to
 
 * group.element[+].code = #aller-0005-00003
 * group.element[=].display = "Og'iz bo'shlig'i yumshoq to'qimalarining qichishi"
