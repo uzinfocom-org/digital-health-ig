@@ -105,13 +105,81 @@ UZ Core Patient содержит административную и демог�
   {
     "use": "usual",
     "text": "Karimova Nodira Anvarovna",
-    "_text": { "extension": [ { "url": "http://hl7.org/fhir/StructureDefinition/translation", "extension": [ { "url": "lang", "valueCode": "ru" }, { "url": "content", "valueString": "Каримова Нодира Анваровна" } ] } ] },
+    "_text": {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/translation",
+          "extension": [
+            {
+              "url": "lang",
+              "valueCode": "ru"
+            },
+            {
+              "url": "content",
+              "valueString": "Каримова Нодира Анваровна"
+            }
+          ]
+        }
+      ]
+    },
     "family": "Karimova",
-    "_family": { "extension": [ { "url": "http://hl7.org/fhir/StructureDefinition/translation", "extension": [ { "url": "lang", "valueCode": "ru" }, { "url": "content", "valueString": "Каримова" } ] } ] },
+    "_family": {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/translation",
+          "extension": [
+            {
+              "url": "lang",
+              "valueCode": "ru"
+            },
+            {
+              "url": "content",
+              "valueString": "Каримова"
+            }
+          ]
+        }
+      ]
+    },
     "given": [ "Nodira" ],
-    "_given": [ { "extension": [ { "url": "http://hl7.org/fhir/StructureDefinition/translation", "extension": [ { "url": "lang", "valueCode": "ru" }, { "url": "content", "valueString": "Нодира" } ] } ] } ],
+    "_given": [
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/translation",
+            "extension": [
+              {
+                "url": "lang",
+                "valueCode": "ru"
+              },
+              {
+                "url": "content",
+                "valueString": "Нодира"
+              }
+            ]
+          }
+        ]
+      }
+    ],
     "suffix": [ "Anvarovna" ],
-    "_suffix": [ { "extension": [ { "url": "http://hl7.org/fhir/StructureDefinition/translation", "extension": [ { "url": "lang", "valueCode": "ru" }, { "url": "content", "valueString": "Анваровна" } ] } ] } ]
+    "_suffix": [
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/translation",
+            "extension": [
+              {
+                "url": "lang",
+                "valueCode": "ru"
+              },
+              {
+                "url": "content",
+                "valueString": "Анваровна"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 ]
 ```

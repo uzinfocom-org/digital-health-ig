@@ -92,13 +92,81 @@ UZ Core Practitioner описывает отдельного медицинск�
     {
       "use": "official",
       "text": "Rahimova Dilnoza Akmalovna",
-      "_text": { "extension": [ { "url": "http://hl7.org/fhir/StructureDefinition/translation", "extension": [ { "url": "lang", "valueCode": "ru" }, { "url": "content", "valueString": "Рахимова Дилноза Акмаловна" } ] } ] },
+      "_text": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/translation",
+            "extension": [
+              {
+                "url": "lang",
+                "valueCode": "ru"
+              },
+              {
+                "url": "content",
+                "valueString": "Рахимова Дилноза Акмаловна"
+              }
+            ]
+          }
+        ]
+      },
       "family": "Rahimova",
-      "_family": { "extension": [ { "url": "http://hl7.org/fhir/StructureDefinition/translation", "extension": [ { "url": "lang", "valueCode": "ru" }, { "url": "content", "valueString": "Рахимова" } ] } ] },
+      "_family": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/translation",
+            "extension": [
+              {
+                "url": "lang",
+                "valueCode": "ru"
+              },
+              {
+                "url": "content",
+                "valueString": "Рахимова"
+              }
+            ]
+          }
+        ]
+      },
       "given": [ "Dilnoza" ],
-      "_given": [ { "extension": [ { "url": "http://hl7.org/fhir/StructureDefinition/translation", "extension": [ { "url": "lang", "valueCode": "ru" }, { "url": "content", "valueString": "Дилноза" } ] } ] } ],
+      "_given": [
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "ru"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Дилноза"
+                }
+              ]
+            }
+          ]
+        }
+      ],
       "suffix": [ "Akmalovna" ],
-      "_suffix": [ { "extension": [ { "url": "http://hl7.org/fhir/StructureDefinition/translation", "extension": [ { "url": "lang", "valueCode": "ru" }, { "url": "content", "valueString": "Акмаловна" } ] } ] } ]
+      "_suffix": [
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "ru"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Акмаловна"
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "telecom": [ { "system": "phone", "value": "975555555", "use": "mobile" } ],
