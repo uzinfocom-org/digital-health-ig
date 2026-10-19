@@ -169,7 +169,7 @@ Yozuvda Tibtoifaning ichki identifikatorlari (`id`, `serialId`, `categoryId`, `s
 |---|---|---|---|
 | `pinfl` | `42410540220011` | `Practitioner.identifier` (PINFL) | Tibbiyot xodimini topish uchun; malakada takrorlanmaydi |
 | `serial` + `number` | `CA` + `008815` | `qualification.identifier.value` | Seriya va raqam ajratuvchisiz: `CA008815` |
-| - | - | `qualification.identifier.system` | Har doim `https://dhp.uz/fhir/core/sid/doc/uz/specialist-certificate` |
+| - | - | `qualification.identifier.system` | Har doim `https://dhp.uz/fhir/core/sid/pro/uz/specialist-certificate` |
 | - | - | `qualification.code.coding` | Har doim `http://terminology.hl7.org/CodeSystem/v2-0360#CER` "Certificate" |
 | `speciality`, `category`, `medicaleRoleName` | `psixiatriya`, `Oliy toifa`, `Shifokor` | `qualification.code.text` | Resurs tilida `{mutaxassislik}, {toifa}, {rol}`: `Psixiatriya, oliy toifa, shifokor` |
 | xuddi shu maydonlar `ru`, `kaa`, `en` tillarida | `Психиатрия, высшая категория, врач` | `code.text` dagi `translation` kengaytmasi | Har bir til uchun bitta kengaytma |
@@ -217,7 +217,7 @@ Yuqoridagi Tibtoifa yozuvidan tuzilgan malaka:
     {
       "identifier": [
         {
-          "system": "https://dhp.uz/fhir/core/sid/doc/uz/specialist-certificate",
+          "system": "https://dhp.uz/fhir/core/sid/pro/uz/specialist-certificate",
           "value": "CA008815"
         }
       ],

@@ -45,7 +45,7 @@ Description: "Uzbekistan Core Practitioner profile, used to define healthcare pr
 * qualification MS
   * identifier MS
     * ^short = "Certificate number"
-    * ^comment = "For a specialist certificate issued by the Ministry of Health, use the system https://dhp.uz/fhir/core/sid/doc/uz/specialist-certificate and put the series followed by the number, without separators (e.g. CA008815), in value."
+    * ^comment = "For a specialist certificate issued by the Ministry of Health, use the system https://dhp.uz/fhir/core/sid/pro/uz/specialist-certificate and put the series followed by the number, without separators (e.g. CA008815), in value."
     * system and value MS
   * code and period and issuer MS
   * code from LicenseCertificateVS (required)
