@@ -22,7 +22,13 @@ Description: "Uzbekistan Core InventoryItem profile, used to track stock of item
 * status from InventoryItemStatusVS (required)
 
 * category MS
-* category from BloodProductTypeSnomedVS (preferred)
+* category ^slicing.discriminator.type = #value
+* category ^slicing.discriminator.path = "$this"
+* category ^slicing.rules = #open
+* category ^slicing.description = "The blood product type when the item is a blood product; other categories may sit alongside it"
+* category contains bloodProductType 0..1 MS
+* category[bloodProductType] from BloodProductTypeSnomedVS (required)
+* category[bloodProductType] ^short = "Blood product type, for items that are blood products"
 
 * productReference MS
 * productReference only Reference(UZCoreMedication or Device or NutritionProduct or UZCoreBiologicallyDerivedProduct)
@@ -70,7 +76,7 @@ Usage: #example
 
 * status = $inventoryitem-status#active
 
-* category = $sct#431069006
+* category[bloodProductType] = $sct#431069006
 
 * productReference = Reference(BiologicallyDerivedProduct/example-blood-component-product)
 
@@ -81,7 +87,7 @@ Usage: #example
 * responsibleOrganization.organization = Reference(Organization/andijan-station)
 * responsibleOrganization[0].role = inventoryitem-responsible-organization-role-cs#manufacturer
 
-* inventoryStatus = inventoryitem-inventory-status-cs#accepted  "Accepted"
+* inventoryStatus[nationalStatus] = inventoryitem-inventory-status-cs#accepted "Accepted"
 
 * baseUnit = $sct#258768008
 
