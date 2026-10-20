@@ -248,3 +248,6 @@ Alias: $blood-donation-number = https://dhp.uz/fhir/core/sid/prd/uz/blood/donati
 Alias: $supply-request-number = https://dhp.uz/fhir/core/sid/doc/uz/supply-request
 Alias: $supply-contract-number = https://dhp.uz/fhir/core/sid/doc/uz/supply-contract
 Alias: $supply-delivery-number = https://dhp.uz/fhir/core/sid/doc/uz/supply-delivery
+Alias: $inventoryitem-nametype = http://hl7.org/fhir/inventoryitem-nametype
+Alias: $inventoryitem-status = http://hl7.org/fhir/inventoryitem-status
+Alias: $inventory-item-number = https://dhp.uz/fhir/core/sid/doc/uz/inventory-item
