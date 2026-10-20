@@ -208,6 +208,42 @@ https://dhp.uz/fhir/core/sid/{namespace}/{country}/{type}[/subtype]
 }
 ```
 
+#### Сертификат специалиста
+
+Сертификат специалиста, выданный Министерством здравоохранения, идентифицирует квалификацию медицинского работника, поэтому он записывается в `Practitioner.qualification.identifier`, а не в `Practitioner.identifier`. Значение - серия и номер без разделителя. Полное сопоставление полей приведено в разделе [Сертификаты специалиста](StructureDefinition-uz-core-practitioner.html#specialist-certificates).
+
+**System URI**: `https://dhp.uz/fhir/core/sid/pro/uz/specialist-certificate`
+
+```json
+{
+  "resourceType": "Practitioner",
+  "qualification": [
+    {
+      "identifier": [
+        {
+          "system": "https://dhp.uz/fhir/core/sid/pro/uz/specialist-certificate",
+          "value": "CA008815"
+        }
+      ],
+      "code": {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0360",
+            "code": "CER",
+            "display": "Certificate"
+          }
+        ],
+        "text": "Psixiatriya, oliy toifa, shifokor"
+      },
+      "period": {
+        "start": "2024-05-05",
+        "end": "2029-05-05"
+      }
+    }
+  ]
+}
+```
+
 Полный перечень всех поддерживаемых систем идентификаторов медицинских работников приведён в value set [PractitionerIdentifierDomainVS](ValueSet-practitioner-identifier-domain-vs.html).
 
 ### Идентификаторы организаций
@@ -372,6 +408,7 @@ https://dhp.uz/fhir/core/sid/{namespace}/{country}/{type}[/subtype]
 - `https://dhp.uz/fhir/core/sid/pid/uz/ni`
 - `https://dhp.uz/fhir/core/sid/pid/uz/ppn/local`
 - `https://dhp.uz/fhir/core/sid/pro/uz/argos`
+- `https://dhp.uz/fhir/core/sid/pro/uz/specialist-certificate`
 
 **Недоступны для выбора** (только родительские группировки):
 - `https://dhp.uz/fhir/core/sid/pid` (корневой уровень)

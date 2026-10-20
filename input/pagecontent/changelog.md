@@ -1,10 +1,34 @@
 ### In development
 
+#### Breaking changes
+
+The [specialist certificate](NamingSystem-uzb-specialist-certificate.html) identifier system has moved from the document namespace to the healthcare professional namespace, since a certificate identifies a qualification of a professional rather than a document: `https://dhp.uz/fhir/core/sid/doc/uz/specialist-certificate` is now `https://dhp.uz/fhir/core/sid/pro/uz/specialist-certificate`. Senders of `Practitioner.qualification.identifier` switch to the new system; the value format (series followed by number, e.g. `CA008815`) is unchanged.
+
+#### Added
+
+Two more platform operations are published as OperationDefinitions. [Patient/$attach](OperationDefinition-patient-attach.html) records a patient's attachment to a polyclinic (`managingOrganization`, with the attachment date in the [managing organization attachment](StructureDefinition-managing-organization-attachment.html) extension) and/or a family doctor (`generalPractitioner`) in one call, checking both against the master data registry and resolving business identifiers to references; at type level it finds or creates the patient by PINFL, so it replaces the `$populate` + `$attach` pair. [Patient/$relate](OperationDefinition-patient-relate.html) records a confirmed parent-child relationship: it checks the kinship against the Ministry of Justice child registry, finds or creates the child Patient by PINFL, and creates a RelatedPerson for the parent, returning the relation, the child and the outcome in one Bundle.
+
+### Version 0.11.1
+
+#### Added
+
+[Screening and home visit program types](ValueSet-screening-program-type-vs.html) lists the values of a screening program identifier: eight SNOMED CT screening concepts and the national [screening and home visit codes](CodeSystem-screening-code-cs.html). It brings back `mserv-0007-00007` and `mserv-0007-00009`, removed in 0.11.0, as the DMED breast and cervical cancer screening programs, so they stay distinct from the HPV screening programs `268547008` and `171149006`. The screening service itself is still coded in SNOMED CT.
+
+[Diagnosis types](CodeSystem-diagnosis-type-cs.html) add `gencl-0001-00013` "Diagnosis of a combined disease" (сочетанное заболевание), with Uzbek and Russian designations, so screening applications can send every diagnosis type their forms offer.
+
+The [body site supplement](CodeSystem-body-site-cs.html) gives Uzbek and Russian designations to 1,001 SNOMED CT body structures instead of 4, and a new [laboratory method supplement](CodeSystem-lab-methods-sct-cs.html) gives them to 1,865 SNOMED CT methods.
+
 #### Changed
 
 Value sets on repeating coded elements now apply through an open slice instead of to the whole element, so codes from other systems can sit beside the national ones; the element keeps the national value set as a preferred binding. This covers AllergyIntolerance `reaction.manifestation`; AuditEvent `agent.role`, `agent.authorization` and `entity.securityLabel`; Composition `category`; Consent `regulatoryBasis` and `provision.action`; DiagnosticReport `category`; Encounter `class`; EpisodeOfCare `reason.value` and `diagnosis.condition`; Immunization `protocolApplied.targetDisease`; ImmunizationRecommendation `recommendation.vaccineCode`; Observation `category`; ObservationDefinition `permittedUnit`; Procedure `bodySite`; RelatedPerson `relationship`; and ServiceRequest `reason`. [UZ Core Observation](StructureDefinition-uz-core-observation.html) `interpretation` is bound extensible instead of required, as in base FHIR. Existing resources remain valid.
 
 Four value sets that kept only part of the base FHIR value set they replace now include all of it. [Encounter status](ValueSet-encounter-status-vs.html) adds `on-hold`, `discharged` and `discontinued`; [request resource types](ValueSet-request-resource-types-vs.html), used by ActivityDefinition `kind`, lists all 17 request resource types instead of only ImmunizationRecommendation and MedicationRequest; [consent purpose of use](ValueSet-consent-purpose-of-use-vs.html) includes every purpose of use instead of only `RECORDMGT`, and Consent `provision.purpose` binds it extensible instead of required, as in base FHIR; and [condition participation roles](ValueSet-condition-participation-role-vs.html) adds `transmitter`. The new encounter statuses and resource types have Uzbek and Russian designations.
+
+[UZ Core Observation](StructureDefinition-uz-core-observation.html) `bodySite` binds [body sites](ValueSet-body-site-vs.html), every SNOMED CT body structure, instead of the base FHIR body site value set, which it contains. [Laboratory methods](ValueSet-lab-method-vs.html), bound to `method`, add the SNOMED CT techniques, actions and evaluation procedures of the base FHIR observation methods to the national codes. Existing resources remain valid.
+
+#### Documentation
+
+[UZ Core ActivityDefinition](StructureDefinition-uz-core-activitydefinition.html) describes a screening invitation template: `kind` is `ServiceRequest`, `intent` is `plan`, and `profile` names UZ Core ServiceRequest. The screening examples and the application contract are in the integration guide.
 
 ### Version 0.11.0
 
