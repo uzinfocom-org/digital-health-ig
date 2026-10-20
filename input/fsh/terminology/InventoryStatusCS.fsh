@@ -1,8 +1,8 @@
-CodeSystem: BloodProductInventoryStatusCS
-Id: blood-product-inventory-status-cs
-Title: "Blood product inventory status"
-Description: "Inventory statuses for blood products"
-* insert OriginalCodeSystemDraft(blood-product-inventory-status-cs)
+CodeSystem: InventoryStatusCS
+Id: inventoryitem-inventory-status-cs
+Title: "Inventory status"
+Description: "Inventory statuses of an item, such as a blood product, medication or device"
+* insert OriginalCodeSystemDraft(inventoryitem-inventory-status-cs)
 
 * #processing "Qayta ishlanmoqda"
   * ^designation[0].language = #ru

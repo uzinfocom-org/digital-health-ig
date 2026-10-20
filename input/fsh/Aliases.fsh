@@ -246,3 +246,4 @@ Alias: $supply-contract-number = https://dhp.uz/fhir/core/sid/doc/uz/supply-cont
 Alias: $supply-delivery-number = https://dhp.uz/fhir/core/sid/doc/uz/supply-delivery
 Alias: $inventoryitem-nametype = http://hl7.org/fhir/inventoryitem-nametype
 Alias: $inventoryitem-status = http://hl7.org/fhir/inventoryitem-status
+Alias: $inventory-item-number = https://dhp.uz/fhir/core/sid/doc/uz/inventory-item

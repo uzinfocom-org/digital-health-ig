@@ -10,18 +10,22 @@ Description: "Uzbekistan Core InventoryItem profile, used to track stock of item
 * ^publisher = "Uzinfocom"
 
 * identifier MS
+* identifier ^slicing.discriminator.type = #value
+* identifier ^slicing.discriminator.path = "system"
+* identifier ^slicing.rules = #open
+* identifier contains inventoryItem 0..1 MS
+* identifier[inventoryItem].system 1..1 MS
+* identifier[inventoryItem].system = $inventory-item-number
+* identifier[inventoryItem] ^short = "Inventory item identifier assigned by the managing organization"
 
 * status MS
 * status from InventoryItemStatusVS (required)
 
-// comment will be deleted after UZCoreBiologicallyDerivedProduct profile is created
-// * category MS
-// * category from BloodProductTypeSnomedVS (preferred)
+* category MS
+* category from BloodProductTypeSnomedVS (preferred)
 
-
-// comment will be deleted after UZCoreBiologicallyDerivedProduct profile is created
 * productReference MS
-// * productReference only Reference(UZCoreBiologicallyDerivedProduct)
+* productReference only Reference(UZCoreMedication or Device or NutritionProduct or UZCoreBiologicallyDerivedProduct)
 
 * name MS
 * name.name MS
@@ -36,7 +40,12 @@ Description: "Uzbekistan Core InventoryItem profile, used to track stock of item
 * responsibleOrganization.role from InventoryItemResponsibleOrganizationRoleVS (preferred)
 
 * inventoryStatus MS
-* inventoryStatus from BloodProductInventoryStatusVS (extensible)
+* inventoryStatus ^slicing.discriminator.type = #value
+* inventoryStatus ^slicing.discriminator.path = "$this"
+* inventoryStatus ^slicing.rules = #open
+* inventoryStatus ^slicing.description = "One national inventory status; other statuses may sit alongside it"
+* inventoryStatus contains nationalStatus 0..1 MS
+* inventoryStatus[nationalStatus] from InventoryStatusVS (required)
 
 * baseUnit MS
 
@@ -57,14 +66,13 @@ Title: "Example UZ Core InventoryItem - Red blood cells"
 Description: "Example inventory item representing leukocyte-reduced red blood cells."
 Usage: #example
 
-* identifier.value = "BB-INV-2025-004821"
+* identifier[inventoryItem].value = "BB-INV-2025-004821"
 
 * status = $inventoryitem-status#active
 
 * category = $sct#431069006
 
-// comment will be deleted after UZCoreBiologicallyDerivedProduct profile is created
-// * productReference = Reference(BiologicallyDerivedProduct/example-blood-component-product)
+* productReference = Reference(BiologicallyDerivedProduct/example-blood-component-product)
 
 * name[0].name = "Red Blood Cells, Leukocytes Reduced"
 * name[0].nameType = $inventoryitem-nametype#alias
@@ -73,7 +81,7 @@ Usage: #example
 * responsibleOrganization.organization = Reference(Organization/andijan-station)
 * responsibleOrganization[0].role = inventoryitem-responsible-organization-role-cs#manufacturer
 
-* inventoryStatus = blood-product-inventory-status-cs#accepted  "Accepted"
+* inventoryStatus = inventoryitem-inventory-status-cs#accepted  "Accepted"
 
 * baseUnit = $sct#258768008
 
