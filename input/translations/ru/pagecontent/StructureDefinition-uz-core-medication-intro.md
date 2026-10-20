@@ -41,7 +41,7 @@ GET [base]/Medication?code=http://www.whocc.no/atc|A06AH03
 
 # by batch, status, dose form, or authorization holder
 GET [base]/Medication?lot-number=LOT20241201
-GET [base]/Medication?code=http://www.whocc.no/atc|A06AH03&status=active&form=https://terminology.dhp.uz/fhir/core/CodeSystem/medication-doseform-cs|TAB101
+GET [base]/Medication?status=active&form=https://terminology.dhp.uz/fhir/core/CodeSystem/medication-doseform-cs|TAB101
 GET [base]/Medication?marketingauthorizationholder=Organization/[id]
 ```
 
@@ -203,7 +203,12 @@ GET [base]/Medication?marketingauthorizationholder=Organization/[id]
       "isActive": true,
       "strengthRatio": {
         "numerator": { "value": 500, "unit": "mg", "system": "http://unitsofmeasure.org", "code": "mg" },
-        "denominator": { "value": 1, "unit": "piece", "system": "https://terminology.dhp.uz/fhir/core/CodeSystem/medication-total-volume-local-units-cs", "code": "piece" }
+        "denominator": {
+          "value": 1,
+          "unit": "piece",
+          "system": "https://terminology.dhp.uz/fhir/core/CodeSystem/medication-total-volume-local-units-cs",
+          "code": "piece"
+        }
       }
     }
   ]
