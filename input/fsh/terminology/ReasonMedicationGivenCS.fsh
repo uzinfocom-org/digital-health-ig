@@ -1,9 +1,9 @@
-CodeSystem: ReasonMedicationGivenCodesCS
-Id: reason-medication-given-codes-cs
-Title: "Reason Medication Given CS"
-Description: "Reason Medication Given with translations in Uzbek and Russian"
+CodeSystem: ReasonMedicationGivenCS
+Id: reason-medication-given-cs
+Title: "Reason medication given translations"
+Description: "Reason medication given supplement with translations in Uzbek and Russian"
 
-* insert SupplementCodeSystemDraft(reason-medication-given-codes-cs, $reason-medication-given-codes, 5.0.0)
+* insert SupplementCodeSystemDraft(reason-medication-given-cs, $reason-medication-given-codes, 1.0.1)
 
 * #a
   * ^designation[0].language = #uz
@@ -17,7 +17,7 @@ Description: "Reason Medication Given with translations in Uzbek and Russian"
   * ^designation[+].language = #ru
   * ^designation[=].value = "Дано в соответствии с назначением"
 
-* #c "Emergency"
+* #c
   * ^designation[0].language = #uz
   * ^designation[=].value = "Shoshilinch"
   * ^designation[+].language = #ru

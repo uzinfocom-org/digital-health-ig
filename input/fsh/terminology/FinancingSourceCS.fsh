@@ -1,13 +1,13 @@
 CodeSystem: FinancingSourceCS
 Id: financing-source-cs
-Title: "Financing Source Codes"
-Description: "Code system describing the source of financing, in (UZ/RU/EN) languages."
+Title: "Financing sources"
+Description: "Sources of financing of a medication stock, with Uzbek, Russian and English designations"
 
 * insert OriginalCodeSystemDraft(financing-source-cs)
 
-* #fnncl-0001-00001 "Xo‘jalik hisobi"
+* #fnncl-0001-00001 "Xo'jalik hisobi"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Хоз, расчет"
+  * ^designation[=].value = "Хозрасчёт"
   * ^designation[+].language = #en
   * ^designation[=].value = "Self-financing"
 
@@ -37,19 +37,19 @@ Description: "Code system describing the source of financing, in (UZ/RU/EN) lang
 
 * #fnncl-0001-00006 "Markaz huzuridagi 1-fond"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "фонд при центре 1"
+  * ^designation[=].value = "Фонд при центре 1"
   * ^designation[+].language = #en
   * ^designation[=].value = "Fund at Center 1"
 
 * #fnncl-0001-00007 "Markaz huzuridagi 2-fond"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "фонд при центре 2"
+  * ^designation[=].value = "Фонд при центре 2"
   * ^designation[+].language = #en
   * ^designation[=].value = "Fund at Center 2"
 
 * #fnncl-0001-00008 "Markaz huzuridagi 3-fond"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "фонд при центре 3"
+  * ^designation[=].value = "Фонд при центре 3"
   * ^designation[+].language = #en
   * ^designation[=].value = "Fund at Center 3"
 
@@ -77,7 +77,7 @@ Description: "Code system describing the source of financing, in (UZ/RU/EN) lang
   * ^designation[+].language = #en
   * ^designation[=].value = "Grant"
 
-* #fnncl-0001-00013 "Sug‘urta fondi"
+* #fnncl-0001-00013 "Sug'urta fondi"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Фонд Страхования"
   * ^designation[+].language = #en
@@ -95,14 +95,14 @@ Description: "Code system describing the source of financing, in (UZ/RU/EN) lang
   * ^designation[+].language = #en
   * ^designation[=].value = "Grant-funded research"
 
-* #fnncl-0001-00016 "Beg‘araz yordam"
+* #fnncl-0001-00016 "Beg'araz yordam"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Безвозмедная помощь"
+  * ^designation[=].value = "Безвозмездная помощь"
   * ^designation[+].language = #en
   * ^designation[=].value = "Gratuitous aid"
 
 * #fnncl-0001-00017 "Rivojlanish"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Развития"
+  * ^designation[=].value = "Развитие"
   * ^designation[+].language = #en
   * ^designation[=].value = "Development"

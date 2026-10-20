@@ -1,7 +1,7 @@
 ValueSet: FinancingSourceVS
 Id: financing-source-vs
-Title: "Financing Source value set"
-Description: "Financing Source value in Uzbek and Russian translations"
+Title: "Financing source"
+Description: "Sources of financing of a medication stock"
 * ^url = "https://terminology.dhp.uz/fhir/core/ValueSet/financing-source-vs"
 * ^experimental = true
 

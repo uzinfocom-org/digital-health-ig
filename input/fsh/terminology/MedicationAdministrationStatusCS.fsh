@@ -1,9 +1,9 @@
-CodeSystem: MedicationAdministrationStatusCodesCS
-Id: medication-administration-status-codes-cs
-Title: "Medication Administration Status CS"
-Description: "Medication Administration Status with translations in Uzbek and Russian"
+CodeSystem: MedicationAdministrationStatusCS
+Id: medicationadministration-status-cs
+Title: "MedicationAdministration status translations"
+Description: "MedicationAdministration status supplement with translations in Uzbek and Russian"
 
-* insert SupplementCodeSystemDraft(medication-administration-status-codes-cs, $medication-administration-status-codes, 5.0.0)
+* insert SupplementCodeSystemDraft(medicationadministration-status-cs, $medication-administration-status-codes, 5.0.0)
 
 * #in-progress
   * ^designation[0].language = #uz
@@ -19,7 +19,7 @@ Description: "Medication Administration Status with translations in Uzbek and Ru
 
 * #on-hold
   * ^designation[0].language = #uz
-  * ^designation[=].value = "To‘xtatilgan"
+  * ^designation[=].value = "Vaqtincha to'xtatilgan"
   * ^designation[+].language = #ru
   * ^designation[=].value = "Приостановлено"
 

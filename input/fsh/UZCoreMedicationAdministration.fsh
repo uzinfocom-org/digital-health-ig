@@ -1,8 +1,8 @@
 Profile: UZCoreMedicationAdministration
 Parent: MedicationAdministration
-Id: uz-core-medication-administration
-Title: "UZ Core Medication Administration"
-Description: "Administration of medication to a patient"
+Id: uz-core-medicationadministration
+Title: "UZ Core MedicationAdministration"
+Description: "Uzbekistan Core MedicationAdministration profile, used to record the administration of a medication to a patient"
 
 * ^experimental = true
 * ^status = #active
@@ -13,13 +13,13 @@ Description: "Administration of medication to a patient"
 * identifier ^short = "Business identifier for this administration event, assigned by the performer or other systems."
 
 * status MS
-* status from MedicationAdministrationStatusCodesVS (required)
+* status from MedicationAdministrationStatusVS (required)
 
 * statusReason MS
 * statusReason from MedicationAdministrationStatusReasonVS (example)
 
 * category MS
-* category from MedicationAdministrationLocationCodesVS (example)
+* category from MedicationAdministrationAdminLocationVS (example)
 
 * medication MS
 * medication only CodeableReference(UZCoreMedication)
@@ -30,7 +30,7 @@ Description: "Administration of medication to a patient"
 * subject only Reference(UZCorePatient or UZCoreGroup)
 
 * encounter MS
-* encounter ^short = "Who received the medication."
+* encounter ^short = "The encounter during which the medication was administered."
 * encounter only Reference(UZCoreEncounter)
 
 * occurence[x] MS
@@ -44,7 +44,7 @@ Description: "Administration of medication to a patient"
 * performer ^short = "Who or what performed the administration, and their role."
 * performer.function MS
 * performer.function ^short = "The type of involvement of this performer (e.g. performer, verifier, witness)."
-* performer.function from MedicationAdministrationPerformerFunctionCodesVS (example)
+* performer.function from MedicationAdministrationPerformerFunctionVS (example)
 * performer.actor MS
 * performer.actor only CodeableReference(UZCorePractitioner or UZCorePractitionerRole or UZCorePatient or UZCoreRelatedPerson or Device)
 * performer.actor ^short = "The specific individual or device that performed the administration."
@@ -52,7 +52,7 @@ Description: "Administration of medication to a patient"
 * reason MS
 * reason ^short = "Clinical justification for why the medication was given."
 * reason only CodeableReference(UZCoreCondition or UZCoreObservation or UZCoreDiagnosticReport)
-* reason from ReasonMedicationGivenCodesVS
+* reason from ReasonMedicationGivenVS
 
 * request MS
 * request ^short = "The order this administration fulfills."
@@ -90,11 +90,11 @@ Description: "Administration of medication to a patient"
 
 * extension[medicationSource].extension[financingSource].valueCodeableConcept from FinancingSourceVS (required)
 
-Instance: example-Med-Administration-001
+Instance: example-paracetamol-administration
 InstanceOf: UZCoreMedicationAdministration
 Usage: #example
-Title: "Example UZCore Medication Administration"
-Description: "Example instance of a completed Paracetamol administration for Patient/1."
+Title: "Example UZ Core MedicationAdministration - Paracetamol"
+Description: "Example of a completed paracetamol administration"
 * status = #completed
 * statusReason = $medicationrequest-status-reason#non-avail
 * category = $medicationrequest-admin-location#inpatient
