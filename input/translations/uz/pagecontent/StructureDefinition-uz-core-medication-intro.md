@@ -23,8 +23,6 @@ Ushbu profil qo'shadigan yagona majburiy element - kamida bitta identifikator; b
 - tarkibiy qismlar (ingredient) - har biri tushuncha (ATC / INN) yoki boshqa Medication ga havola, dozasi nisbat ko'rinishida;
 - seriya (batch) - seriya raqami (AIK) va yaroqlilik muddati.
 
-> Faqat o'zingizda mavjud bo'lgan identifikator *slayslarini* to'ldiring - mahsulotda odatda ulardan ikki-uchtasi bo'ladi, hech qachon beshtasi ham emas. Har bir slays o'zining `system` URI si bo'yicha tanlanadi, shuning uchun URI aniq mos kelishi shart.
-
 ### Mavjud Medication ni topish {#finding}
 
 Medication yozuvlari bemorga tegishli yozuvlar emas, balki umumiy katalog yozuvlaridir, shuning uchun ro'yxatdan o'tkazishdan oldin uni qidirib ko'ring. Har bir identifikator slaysi va kod bo'yicha qidirish mumkin (`|` tizimni qiymatdan ajratadi va URL'da `%7C` sifatida kodlanadi):

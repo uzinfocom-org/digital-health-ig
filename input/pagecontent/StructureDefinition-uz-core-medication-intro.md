@@ -21,8 +21,6 @@ The only mandatory element this profile adds is at least one identifier - the ba
 - the ingredients - each one a concept (ATC / INN) or a reference to another Medication, with its strength as a ratio;
 - the batch - the lot number (AIK) and the expiry date.
 
-> Populate only the identifier *slices* you hold - a product usually carries two or three, never all five. Each slice is selected by its `system` URI, so the URI must match exactly.
-
 ### Finding an existing Medication {#finding}
 
 Medications are shared catalogue entries, not per-patient records, so look one up before you register it. Every identifier slice and the code are searchable (`|` separates system from value and is URL-encoded as `%7C`):
