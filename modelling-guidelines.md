@@ -25,7 +25,7 @@ Description: "Uzbekistan Core Condition profile, used for documenting a patient'
 **Конвенции для профилей:**
 - **Profile**: `UZCore[ResourceName]` (например, `UZCorePatient`, `UZCoreObservation`)
 - **Parent**: Соответствующий базовый FHIR ресурс
-- **Id**: `uz-core-[resource-name]` в нижнем регистре с дефисами
+- **Id**: `uz-core-[resourcename]` в нижнем регистре, имя ресурса одним словом (например, `uz-core-medicationrequest`)
 - **Title**: `"UZ Core [ResourceName]"`
 - **Description**: `"Uzbekistan Core [ResourceName] profile, used to [описание назначения]"`
 
@@ -41,13 +41,13 @@ Description: "Uzbekistan Core Condition profile, used for documenting a patient'
 
 **Неправильно:** `Title: "UZ Core Medication Request"`, `Description: "Uzbekistan Core Claim Response profile, ..."` — имя ресурса разделено на два слова.
 
-В `Id`, наоборот, слова разделяются дефисами: `uz-core-medication-request`, `uz-core-claim-response`, `uz-core-practitioner-role`.
+В `Id` имя ресурса тоже пишется одним словом, в нижнем регистре; дефис отделяет только префикс `uz-core-`: `uz-core-medicationrequest`, `uz-core-claimresponse`, `uz-core-practitionerrole`, `uz-core-inventoryitem`. Так уже названы `uz-core-auditevent`, `uz-core-episodeofcare`, `uz-core-healthcareservice`, `uz-core-relatedperson`, `uz-core-servicerequest`, `uz-core-activitydefinition` и `uz-core-medicationrequest`.
 
-**Существующие исключения — не исправлять:** пять профилей опубликованы с `Id`, в котором слова слиты:
+**Существующие исключения — не исправлять:** эти профили опубликованы с `Id`, в котором слова имени ресурса разделены дефисами:
 
-`uz-core-auditevent`, `uz-core-episodeofcare`, `uz-core-healthcareservice`, `uz-core-relatedperson`, `uz-core-servicerequest`
+`uz-core-practitioner-role`, `uz-core-questionnaire-response`, `uz-core-allergy-intolerance`, `uz-core-immunization-recommendation`, `uz-core-adverse-event`, `uz-core-plan-definition`, `uz-core-diagnostic-report`, `uz-core-laboratory-observation-definition`, `uz-core-medication-dispense`, `uz-core-claim-response`, `uz-core-biologically-derived-product`, `uz-core-supply-request`, `uz-core-supply-delivery`
 
-Их канонические URL уже опубликованы, поэтому переименование сломает ссылки у разработчиков и адреса страниц IG. Оставьте их как есть; правило с дефисами действует для новых профилей.
+Их канонические URL уже опубликованы, поэтому переименование сломает ссылки у разработчиков и адреса страниц IG. Оставьте их как есть; правило одного слова действует для новых профилей.
 
 ### 2.3 Именование файлов
 
