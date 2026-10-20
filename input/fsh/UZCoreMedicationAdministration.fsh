@@ -16,14 +16,14 @@ Description: "Uzbekistan Core MedicationAdministration profile, used to record t
 * status from MedicationAdministrationStatusVS (required)
 
 * statusReason MS
-* statusReason from MedicationAdministrationStatusReasonVS (example)
+* statusReason from MedicationAdministrationStatusReasonVS (preferred)
 
 * category MS
-* category from MedicationAdministrationAdminLocationVS (example)
+* category from MedicationAdministrationAdminLocationVS (preferred)
 
 * medication MS
 * medication only CodeableReference(UZCoreMedication)
-* medication from MedicationClassificationVS (example)
+* medication from MedicationClassificationVS (required)
 
 * subject MS
 * subject ^short = "Who received the medication."
@@ -44,7 +44,7 @@ Description: "Uzbekistan Core MedicationAdministration profile, used to record t
 * performer ^short = "Who or what performed the administration, and their role."
 * performer.function MS
 * performer.function ^short = "The type of involvement of this performer (e.g. performer, verifier, witness)."
-* performer.function from MedicationAdministrationPerformerFunctionVS (example)
+* performer.function from MedicationAdministrationPerformerFunctionVS (preferred)
 * performer.actor MS
 * performer.actor only CodeableReference(UZCorePractitioner or UZCorePractitionerRole or UZCorePatient or UZCoreRelatedPerson or Device)
 * performer.actor ^short = "The specific individual or device that performed the administration."
@@ -52,7 +52,7 @@ Description: "Uzbekistan Core MedicationAdministration profile, used to record t
 * reason MS
 * reason ^short = "Clinical justification for why the medication was given."
 * reason only CodeableReference(UZCoreCondition or UZCoreObservation or UZCoreDiagnosticReport)
-* reason from ReasonMedicationGivenVS
+* reason from ReasonMedicationGivenVS (preferred)
 
 * request MS
 * request ^short = "The order this administration fulfills."
