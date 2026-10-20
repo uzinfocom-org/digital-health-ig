@@ -3,7 +3,7 @@ Id: icd-o-3
 Title: "International Classification of Diseases for Oncology, 3rd Edition, 2nd Revision (ICD-O-3.2)"
 Description: "Topography and morphology codes of the International Classification of Diseases for Oncology, 3rd edition, 2nd revision (ICD-O-3.2, WHO/IARC, 2019, final table of 9 October 2020). Topography codes (C00.0-C80.9) point to their three-character site and the `T` grouper through the `parent` property; morphology codes (histology/behaviour, 8000/0-9993/3) point to the `M` grouper. Grouper concepts are marked `notSelectable`. Morphology terms flagged obsolete in ICD-O-3.2 carry `status = deprecated` and stay valid for historical records. Uzbek and Russian designations are the terms used by the Cancer ID registry."
 * ^url = "http://terminology.hl7.org/CodeSystem/icd-o-3"
-* ^version = "3.2"
+* ^version = "3.2.0"
 * ^status = #active
 * ^experimental = true
 * ^publisher = "World Health Organization / International Agency for Research on Cancer"

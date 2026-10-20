@@ -16,7 +16,7 @@ Bu profil o'zining hech qanday majburiy kardinalligini qo'shmaydi. Talab qilinad
 
 - identifikator, basedOn (CarePlan yoki ServiceRequest) va partOf (ota protsedura, kuzatuv yoki dori berish);
 - status (required bog'lanish) va kategoriya;
-- protsedurani aniqlovchi kod (DHP procedure-code value set ga required bog'lanish);
+- protsedurani aniqlovchi kod ([DHP procedure-code value set](ValueSet-procedure-code-vs.html) ga extensible bog'lanish: SNOMED CT klinik ma'noni, [ICHI](ValueSet-ichi-vs.html) esa statistik kodni beradi; protsedurani qayd etish bilan birga hisobotga ham kiritish kerak bo'lsa, ikkalasini ikki coding sifatida ko'rsating);
 - subject va u sodir bo'lgan uchrashuv (encounter);
 - occurrence[x] vaqti, qayd etilgan sana va qayd etuvchi;
 - ijrochi va uning aktori;
@@ -32,7 +32,7 @@ Quyidagi misollar server qabul qiladigan eng kichik nusxadan to'liq protsedura y
 
 #### Yuborishingiz kerak bo'lgan eng kichik Procedure
 
-Procedure ning majburiy elementlari `status` (required bog'lanish: `preparation` \| `in-progress` \| `completed` \| `not-done` ...) va `subject` (u bajarilgan [Patient](StructureDefinition-uz-core-patient.html) ga oddiy havola), ammo u faqat *nima* qilinganini ham aytganda foydali bo'ladi. `code` (DHP procedure-code value set ga required bog'lanish, bu yerda SNOMED CT kodi) va amalda u sodir bo'lgan `encounter` hamda qachon sodir bo'lganini (`occurrence[x]`) qo'shing. Har bir UZ Core resursi shuningdek profilni `meta.profile` da nomlashi shart:
+Procedure ning majburiy elementlari `status` (required bog'lanish: `preparation` \| `in-progress` \| `completed` \| `not-done` ...) va `subject` (u bajarilgan [Patient](StructureDefinition-uz-core-patient.html) ga oddiy havola), ammo u faqat *nima* qilinganini ham aytganda foydali bo'ladi. `code` (DHP procedure-code value set ga extensible bog'lanish, bu yerda SNOMED CT kodi) va amalda u sodir bo'lgan `encounter` hamda qachon sodir bo'lganini (`occurrence[x]`) qo'shing. Har bir UZ Core resursi shuningdek profilni `meta.profile` da nomlashi shart:
 
 ```json
 {

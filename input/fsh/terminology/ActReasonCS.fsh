@@ -95,3 +95,27 @@ Description: "Act reason supplement with translations in Uzbek and Russian"
   * ^designation[=].value = "bemorning e'tirozi"
   * ^designation[+].language = #ru
   * ^designation[=].value = "возражение пациента"
+
+* #PHILISOP "philosophical objection"
+  * ^designation[0].language = #uz
+  * ^designation[=].value = "dunyoqarash sababli e'tiroz"
+  * ^designation[+].language = #ru
+  * ^designation[=].value = "отказ по мировоззренческим убеждениям"
+
+* #RELIG "religious objection"
+  * ^designation[0].language = #uz
+  * ^designation[=].value = "diniy e'tiqod sababli e'tiroz"
+  * ^designation[+].language = #ru
+  * ^designation[=].value = "отказ по религиозным убеждениям"
+
+* #VACEFF "vaccine efficacy concerns"
+  * ^designation[0].language = #uz
+  * ^designation[=].value = "vaksina samaradorligi shubhali"
+  * ^designation[+].language = #ru
+  * ^designation[=].value = "сомнения в эффективности вакцины"
+
+* #VACSAF "vaccine safety concerns"
+  * ^designation[0].language = #uz
+  * ^designation[=].value = "vaksina xavfsizligidan xavotir"
+  * ^designation[+].language = #ru
+  * ^designation[=].value = "опасения по поводу безопасности вакцины"

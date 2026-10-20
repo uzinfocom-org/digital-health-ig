@@ -1,30 +1,187 @@
 ### In development
 
+#### Breaking changes
+
+The [specialist certificate](NamingSystem-uzb-specialist-certificate.html) identifier system has moved from the document namespace to the healthcare professional namespace, since a certificate identifies a qualification of a professional rather than a document: `https://dhp.uz/fhir/core/sid/doc/uz/specialist-certificate` is now `https://dhp.uz/fhir/core/sid/pro/uz/specialist-certificate`. Senders of `Practitioner.qualification.identifier` switch to the new system; the value format (series followed by number, e.g. `CA008815`) is unchanged.
+
 #### Added
 
-Added the [International Classification of Diseases for Oncology, 3rd edition, 2nd revision (ICD-O-3.2)](CodeSystem-icd-o-3.html) in full - 330 topography and 1143 morphology codes, with Uzbek and Russian designations - under its HL7 Terminology canonical `http://terminology.hl7.org/CodeSystem/icd-o-3`, with value sets selecting the [topography](ValueSet-icd-o-3-topography-vs.html) and [morphology](ValueSet-icd-o-3-morphology-vs.html) codes.
+Two more platform operations are published as OperationDefinitions. [Patient/$attach](OperationDefinition-patient-attach.html) records a patient's attachment to a polyclinic (`managingOrganization`, with the attachment date in the [managing organization attachment](StructureDefinition-managing-organization-attachment.html) extension) and/or a family doctor (`generalPractitioner`) in one call, checking both against the master data registry and resolving business identifiers to references; at type level it finds or creates the patient by PINFL, so it replaces the `$populate` + `$attach` pair. [Patient/$relate](OperationDefinition-patient-relate.html) records a confirmed parent-child relationship: it checks the kinship against the Ministry of Justice child registry, finds or creates the child Patient by PINFL, and creates a RelatedPerson for the parent, returning the relation, the child and the outcome in one Bundle.
+
+### Version 0.11.1
+
+#### Added
+
+[Screening and home visit program types](ValueSet-screening-program-type-vs.html) lists the values of a screening program identifier: eight SNOMED CT screening concepts and the national [screening and home visit codes](CodeSystem-screening-code-cs.html). It brings back `mserv-0007-00007` and `mserv-0007-00009`, removed in 0.11.0, as the DMED breast and cervical cancer screening programs, so they stay distinct from the HPV screening programs `268547008` and `171149006`. The screening service itself is still coded in SNOMED CT.
+
+[Diagnosis types](CodeSystem-diagnosis-type-cs.html) add `gencl-0001-00013` "Diagnosis of a combined disease" (сочетанное заболевание), with Uzbek and Russian designations, so screening applications can send every diagnosis type their forms offer.
+
+The [body site supplement](CodeSystem-body-site-cs.html) gives Uzbek and Russian designations to 1,001 SNOMED CT body structures instead of 4, and a new [laboratory method supplement](CodeSystem-lab-methods-sct-cs.html) gives them to 1,865 SNOMED CT methods.
 
 #### Changed
 
-The [ICCC-3 CodeSystem](CodeSystem-iccc-3-cs.html) has moved from the DHP canonical `https://terminology.dhp.uz/fhir/core/CodeSystem/iccc-3-cs` to `http://terminology.hl7.org/CodeSystem/iccc-3`, the HL7 Terminology canonical for the IARC classification (the one the HL7 Europe PanCareSurPass IG uses), since the classification is IARC's rather than DHP's. The [value set](ValueSet-iccc-3-vs.html) keeps its URL.
+Value sets on repeating coded elements now apply through an open slice instead of to the whole element, so codes from other systems can sit beside the national ones; the element keeps the national value set as a preferred binding. This covers AllergyIntolerance `reaction.manifestation`; AuditEvent `agent.role`, `agent.authorization` and `entity.securityLabel`; Composition `category`; Consent `regulatoryBasis` and `provision.action`; DiagnosticReport `category`; Encounter `class`; EpisodeOfCare `reason.value` and `diagnosis.condition`; Immunization `protocolApplied.targetDisease`; ImmunizationRecommendation `recommendation.vaccineCode`; Observation `category`; ObservationDefinition `permittedUnit`; Procedure `bodySite`; RelatedPerson `relationship`; and ServiceRequest `reason`. [UZ Core Observation](StructureDefinition-uz-core-observation.html) `interpretation` is bound extensible instead of required, as in base FHIR. Existing resources remain valid.
 
-#### Breaking changes
+Four value sets that kept only part of the base FHIR value set they replace now include all of it. [Encounter status](ValueSet-encounter-status-vs.html) adds `on-hold`, `discharged` and `discontinued`; [request resource types](ValueSet-request-resource-types-vs.html), used by ActivityDefinition `kind`, lists all 17 request resource types instead of only ImmunizationRecommendation and MedicationRequest; [consent purpose of use](ValueSet-consent-purpose-of-use-vs.html) includes every purpose of use instead of only `RECORDMGT`, and Consent `provision.purpose` binds it extensible instead of required, as in base FHIR; and [condition participation roles](ValueSet-condition-participation-role-vs.html) adds `transmitter`. The new encounter statuses and resource types have Uzbek and Russian designations.
 
-The UZ Core VaccinationActivityDefinition profile has been renamed to [UZ Core ActivityDefinition](StructureDefinition-uz-core-activitydefinition.html) and its canonical URL changed from `.../uz-core-vaccination-activity-definition` to `.../uz-core-activitydefinition`. Implementers referencing the old canonical must update it.
+[UZ Core Observation](StructureDefinition-uz-core-observation.html) `bodySite` binds [body sites](ValueSet-body-site-vs.html), every SNOMED CT body structure, instead of the base FHIR body site value set, which it contains. [Laboratory methods](ValueSet-lab-method-vs.html), bound to `method`, add the SNOMED CT techniques, actions and evaluation procedures of the base FHIR observation methods to the national codes. Existing resources remain valid.
 
 #### Documentation
 
-The [Components](components.html) page now describes Blood Management, Nursing and Supplies, from the Technical Projects for those components. The [Referrals](components.html#referrals) section has been extended with the seven axes a referral is classified along, and with the split between the ServiceRequest that carries the referral and the approval Tasks that drive its state-insurance approval chain.
+[UZ Core ActivityDefinition](StructureDefinition-uz-core-activitydefinition.html) describes a screening invitation template: `kind` is `ServiceRequest`, `intent` is `plan`, and `profile` names UZ Core ServiceRequest. The screening examples and the application contract are in the integration guide.
 
-Each component that has a workflow page now links to it, and each workflow page links back to the component it belongs to. The Prescription section, whose Technical Project is still being written, points at the [e-Prescription and dispensing](workflow-prescription.html) workflow in the meantime.
+### Version 0.11.0
 
-The cross-component resource architecture diagram on that page now covers Blood Management and Nursing, and shows the two profiles Referrals owns rather than leaving it empty. Master Data Management and Vaccination Management were empty placeholders and now list what they hold: the patient, organization, practitioner, practitioner role, healthcare service and location registries MDM is the source of truth for, and the Immunization, ImmunizationRecommendation, PlanDefinition, ActivityDefinition, AdverseEvent, Encounter and Observation behind the immunization workflow. It opens with every component closed, each card showing how many resources it holds, and opens a component's resource list when you click the card or press Enter on it; while two components are both closed, the resource arrows between them are drawn as a single line. Drawing every resource at once fitted the frame only at 40%, which left the resource names hard to read - the closed view fits at 80%. Its legend now reads defined in this IG rather than profiled in this IG, and on that reading the StructureDefinitions, ValueSets, CodeSystems and CapabilityStatement MSM publishes count as defined: they are instances rather than profiles, and were previously shown as not yet profiled.
+#### Added
 
-The [e-Referral lifecycle](workflow-referral.html) no longer states that the ServiceRequest and Task profiles are unpublished. Both have since published, as [UZ Core ServiceRequest](StructureDefinition-uz-core-servicerequest.html) and [UZ Core Task Referral Approval](StructureDefinition-uz-core-referral-approval-task.html), and both are still marked experimental.
+Added [UZ Core BiologicallyDerivedProduct](StructureDefinition-uz-core-biologically-derived-product.html) for a unit of blood or a blood component in [Blood Management](components.html#blood-management). A unit carries the [unit number](NamingSystem-uzb-blood-unit-number.html) its blood service assigned and, in `biologicalSourceEvent`, the [number of the donation](NamingSystem-uzb-blood-donation-number.html) it came from, which every component processed from that donation keeps. A processed or pooled component references its source units in `parent`, and `property` slices record the ABO group, RhD type, volume and hematocrit. It comes with SNOMED CT [blood product type](ValueSet-blood-product-type-snomed-vs.html), [blood group](ValueSet-blood-group-vs.html) and [RhD type](ValueSet-blood-rh-vs.html) value sets and [product category](ValueSet-product-category-vs.html) and [product status](ValueSet-product-status-vs.html) value sets, all with Uzbek and Russian designations.
 
-The [Laboratory order to result](workflow-lab.html) workflow linked to `uz-core-servicerequest-laboratory`, which was renamed in 0.8.0. Its two links and the `meta.profile` in its worked example now point at [UZ Core ServiceRequest](StructureDefinition-uz-core-servicerequest.html).
+Added [UZ Core SupplyRequest](StructureDefinition-uz-core-supply-request.html) for a request for supplies, such as a hospital ordering blood components from the blood service. It carries the hospital's [request number](NamingSystem-uzb-supply-request-number.html) and the [supply agreement number](NamingSystem-uzb-supply-contract-number.html) as identifiers, and a national [request type](ValueSet-request-type-vs.html) in `category`: stock replenishment, named (for a patient) or between institutions. `item` is bound (extensible) to the blood product types, `parameter` slices carry the blood group and RhD type the components must have, and `deliverFor` names the patient a named request is for. Its [status](ValueSet-supply-request-status-vs.html) value set has Uzbek and Russian designations.
 
-[UZ Core RelatedPerson](StructureDefinition-uz-core-relatedperson.html) now shows how a parent is linked to their child, so that a system can let the parent act for them. A new example, [example-mother-of-a-child](RelatedPerson-example-mother-of-a-child.html), records a mother against her child ([example-jasur](Patient-example-jasur.html)) with the `MTH` relationship code, and the profile page explains how a system matches a parent to the children they may act for by PINFL, why the child's age is read from the child's `Patient.birthDate` rather than from the relationship, and why the relationship on its own does not grant access.
+Added [UZ Core SupplyDelivery](StructureDefinition-uz-core-supply-delivery.html) for a delivery made against a SupplyRequest, such as the blood service issuing a blood component to a hospital. It records the supplier's [delivery number](NamingSystem-uzb-supply-delivery-number.html), the supplier, receiver and destination, and the item delivered, which can reference a UZ Core BiologicallyDerivedProduct. Its [status](ValueSet-supply-delivery-status-vs.html) and [type](ValueSet-supply-delivery-type-vs.html) value sets have Uzbek and Russian designations.
+
+A [SNOMED CT supplement for screening and home visits](CodeSystem-screening-sct-cs.html) gives Uzbek and Russian designations to the 15 SNOMED CT concepts that now code screening and patronage services in [ServiceRequest procedures and investigations](ValueSet-service-request-code-vs.html), which lists them by name.
+
+[ServiceRequest categories](ValueSet-service-request-categories-vs.html) include SNOMED CT `310422005` "Prevention/screening invitation", with Uzbek and Russian designations in the [category supplement](CodeSystem-sr-sct-category-cs.html). A screening program's invitation or plan ServiceRequest carries it in `category`, so a dedicated invitation code in `code` is not needed.
+
+#### Changed
+
+[UZ Core ServiceRequest](StructureDefinition-uz-core-servicerequest.html) `supportingInfo` can reference any resource, rather than only another ServiceRequest. `category` is now sliced: at most one category comes from [ServiceRequestCategoriesVS](ValueSet-service-request-categories-vs.html), with a required binding, and any other categories can sit alongside it from any code system.
+
+[UZ Core Observation](StructureDefinition-uz-core-observation.html) allows more than one `basedOn` (0..* instead of 0..1), so an observation can point to both the order it answers and the plan that order belongs to. For example, a screening result can reference its referral and the screening program's plan ServiceRequest. Existing observations remain valid.
+
+`suspectEntity.instance` on [UZ Core AdverseEvent](StructureDefinition-uz-core-adverse-event.html) now references [UZ Core BiologicallyDerivedProduct](StructureDefinition-uz-core-biologically-derived-product.html) rather than any BiologicallyDerivedProduct.
+
+#### Breaking changes
+
+16 of the 20 [screening and home visit codes](CodeSystem-screening-code-cs.html) have been removed in favour of SNOMED CT. [ServiceRequest procedures and investigations](ValueSet-service-request-code-vs.html) already accepted these SNOMED CT concepts through its procedure filter. Four codes stay because SNOMED CT has no suitable concept for them: `mserv-0007-00003` (cerebrovascular disease questionnaire), `mserv-0007-00011` (vaccination invitation), `mserv-0007-00012` (post-vaccination patronage) and `mserv-0007-00017` (patronage of women of reproductive age). Senders of a removed code switch to its SNOMED CT concept:
+
+| Removed code | Service | SNOMED CT |
+|---|---|---|
+| `mserv-0007-00001` | Ischemic heart disease pre-test probability questionnaire | `171223006` Ischemic heart disease screening |
+| `mserv-0007-00002` | Fertility questionnaire | `408961002` Fertility care assessment |
+| `mserv-0007-00004` | Helminthic disease questionnaire | `171147008` Screening for intestinal helminthiasis |
+| `mserv-0007-00005` | Cardiovascular disease risk questionnaire | `300007000` Screening for cardiovascular system disease |
+| `mserv-0007-00006` | Diabetes questionnaire | `171183004` Diabetes mellitus screening |
+| `mserv-0007-00007` | Breast cancer questionnaire | `268547008` Screening for malignant neoplasm of breast |
+| `mserv-0007-00008` | Oncohematological disease questionnaire | `762445000` Screening for hematological disorder |
+| `mserv-0007-00009` | Cervical cancer screening | `171149006` Screening for malignant neoplasm of cervix |
+| `mserv-0007-00010` | Chronic diseases | `170549007` Chronic disease monitoring |
+| `mserv-0007-00013` | Home-based inpatient care | `60689008` Home care of patient |
+| `mserv-0007-00014` | Preventive medical examination | `103740001` Periodic physical examination |
+| `mserv-0007-00015` | Pregnant women (12-31 weeks) | `424525001` Antenatal care |
+| `mserv-0007-00016` | Postpartum follow-up (3-15-30 days) | `133906008` Postpartum care |
+| `mserv-0007-00018` | Children (3-15-30 days) | `408987002` Newborn care assessment |
+| `mserv-0007-00019` | Children (3-60 months) | `409027005` Infant care assessment |
+| `mserv-0007-00020` | Breast cancer screening | `268547008` Screening for malignant neoplasm of breast |
+
+The breast cancer questionnaire and breast cancer screening codes both map to `268547008`. The week, day and month ranges in the old names are not part of the SNOMED CT concepts.
+
+#### Documentation
+
+The [identifiers](identifiers.html) page adds a `prd` namespace for product identifiers, such as blood unit numbers, for numbers that no external registry already publishes a system for.
+
+The [FHIR basics](fhir-basics.html) page no longer says applications must exchange local codes only. DHP uses a code from an international standard such as ICD-10, SNOMED CT or LOINC wherever one fits, and defines a local code only for a concept no standard covers, with ConceptMaps from those local codes to international terminologies.
+
+A new [translation information](translationinfo.html) page explains that the Russian and Uzbek versions are machine translations that editors are reviewing, that the English text takes precedence where they differ, and how to report a translation problem.
+
+### Version 0.10.0
+
+#### Added
+
+Added [ICHI](CodeSystem-who-ichi.html) in full - the WHO International Classification of Health Interventions, 21,747 concepts from the 2026-09-17 tabulation - under its own WHO canonical `http://id.who.int/icd/release/11/ichi`, with an [ICHI Codes](ValueSet-ichi-vs.html) value set.
+
+677 of those concepts are marked `inactive` with `status` of `retired`. They are codes DMED still carries that WHO has withdrawn, kept so records already in DMED stay valid; `ichi-vs` leaves them out: they should not be used for new records.
+
+[UZ Core PlanDefinition](StructureDefinition-uz-core-plan-definition.html) now states where a schedule applies, through a `jurisdiction` use context slice bound (required) to a new [Uzbekistan Jurisdictions value set](ValueSet-jurisdiction-vs.html). A national schedule carries one entry with the country code `UZ`; a regional one carries an entry per region, using the same region codes as `Address.state`, so a patient's region can be matched against the schedules that apply to them.
+
+At the Ministry of Health's request, the [immunization status reason value set](ValueSet-immunization-status-reason-vs.html) has grown from 4 to 8 codes, adding `PHILISOP` (philosophical objection), `RELIG` (religious objection), `VACEFF` (vaccine efficacy concerns) and `VACSAF` (vaccine safety concerns), so a vaccination that did not happen can say why beyond a patient objection. Their Uzbek and Russian designations are in the [act reason supplement](CodeSystem-actreason-cs.html).
+
+Added `organizational-specialization-cs#176.0` for adult geriatrics, `coverage-type-cs#covtp-0001-00014` for the Vaqf charitable fund, `admit-source-local-cs#mserv-0006-00007` for a polyclinic referral, and `benefits-cs#regis0004.00024` for people with haematological diseases, an entitlement to state-funded high-tech specialized care under Presidential Decree UP-88 - gaps found auditing Form 066 against the live DMED system. The [encounter priority value set](ValueSet-encounter-priority-vs.html) now also includes `UR` (urgent) and `EL` (elective), and the [Provenance Participation Role Type value set](ValueSet-provenance-participation-role-type-vs.html) includes `attester`.
+
+#### Changed
+
+[Procedure Codes](ValueSet-procedure-code-vs.html) now includes ICHI alongside SNOMED CT, because DMED codes an operation in ICHI only, so `Procedure.code` can carry the statistical code a procedure is reported under as well as its clinical meaning - both as two codings on the same element where a procedure is recorded and reported. The binding is now extensible rather than required, so a guide can narrow `Procedure.code` to a national subset that includes codes WHO has withdrawn.
+
+The ICHI canonical drops `beta`: the [ICHI NamingSystem](NamingSystem-who-ichi.html) moved from `http://id.who.int/icd/release/11/beta/ichi` to `http://id.who.int/icd/release/11/ichi`. The NamingSystem published the `beta` URI in 0.9.0 and 0.9.2, so anything that took the ICHI system URI from there has to move.
+
+The example SNOMED CT to ICHI ConceptMap, published since 0.9.0, has been removed. WHO licenses ICHI under CC BY-ND 3.0 IGO, which makes a map or crosswalk between ICHI and another terminology subject to a separate written agreement with WHO; the guide cannot publish one until that agreement is in place.
+
+`target` on [UZ Core Provenance](StructureDefinition-uz-core-provenance.html) now also accepts `Bundle`, since signing a whole FHIR document (as Form 066 does) previously had no valid target type.
+
+#### Documentation
+
+[UZ Core PlanDefinition](StructureDefinition-uz-core-plan-definition.html) has a National or regional section showing both shapes of the jurisdiction use context.
+
+[UZ Core Procedure](StructureDefinition-uz-core-procedure.html) now names both code systems its `code` accepts, and says to carry SNOMED CT and ICHI as two codings where a procedure is reported as well as recorded.
+
+### Version 0.9.2
+
+#### Changed
+
+The package is now built as a publication build. Since 0.2.0 its `package.json` carried `notForPublication` and a `file://` url, so [packages2.fhir.org](https://packages2.fhir.org/packages/uz.dhp.core) rejected every version from 0.6.0 on, and guides depending on UZ Core linked to its artifacts through `file://` paths. The package now declares `https://dhp.uz/fhir/core`. Content is unchanged from 0.9.1.
+
+### Version 0.9.1
+
+#### Changed
+
+[ICD-O-3.2](CodeSystem-icd-o-3.html) declared its version as `3.2`; it now declares `3.2.0`, which is the release identifier validators expect. Codings that pin the version have to move from `http://terminology.hl7.org/CodeSystem/icd-o-3|3.2` to `|3.2.0`.
+
+### Version 0.9.0
+
+#### Added
+
+Added [UZ Core MedicationRequest](StructureDefinition-uz-core-medicationrequest.html) for ordering medications, with a [trustee extension](StructureDefinition-trustee.html) naming the relative (RelatedPerson) or patronage nurse (PractitionerRole) authorized to collect the medication on the patient's behalf. It comes with [status](ValueSet-medicationrequest-status-vs.html), [status reason](ValueSet-medicationrequest-status-reason-vs.html), [intent](ValueSet-medicationrequest-intent-vs.html) and [category](ValueSet-medicationrequest-admin-location-vs.html) value sets - the category adding a national [reimbursement order](CodeSystem-medication-request-order-type-cs.html) code - and [days of the week](ValueSet-days-of-week-vs.html), [event timing](ValueSet-event-timing-vs.html) and [timing abbreviation](ValueSet-timing-abbreviation-vs.html) value sets for dosage timing, all with Uzbek and Russian designations.
+
+Added [ICD-O-3.2](CodeSystem-icd-o-3.html) in full - 330 topography and 1143 morphology codes, with Uzbek and Russian designations - under its HL7 Terminology canonical `http://terminology.hl7.org/CodeSystem/icd-o-3`, with [topography](ValueSet-icd-o-3-topography-vs.html) and [morphology](ValueSet-icd-o-3-morphology-vs.html) value sets.
+
+Added a [unit of measurement CodeSystem](CodeSystem-unit-of-measurement-cs.html) with 181 local unit codes named in Uzbek, Russian and English, its [value set](ValueSet-unit-of-measurement-vs.html), and a [ConceptMap](ConceptMap-unit-of-measurement-cm.html) mapping 65 of them to UCUM.
+
+`entity.detail` on [UZ Core AuditEvent](StructureDefinition-uz-core-auditevent.html) is now Must Support, with `detail.type` bound (example) to 13 new [audit event detail type](ValueSet-audit-event-detail-type-vs.html) codes covering authentication, the client, searches, resource versions and synchronisation.
+
+The [encounter type CodeSystem](CodeSystem-encounter-type-cs.html) has grown from 7 to 8 codes, adding `mserv-0001-00008` for a screening encounter, available through the `nationalType` slice of `type` on [UZ Core Encounter](StructureDefinition-uz-core-encounter.html).
+
+#### Changed
+
+The [ICCC-3 CodeSystem](CodeSystem-iccc-3-cs.html) has moved from `https://terminology.dhp.uz/fhir/core/CodeSystem/iccc-3-cs` to its HL7 Terminology canonical `http://terminology.hl7.org/CodeSystem/iccc-3`, since the classification is IARC's rather than DHP's. The [value set](ValueSet-iccc-3-vs.html) keeps its URL.
+
+The `passportLocal` and `passportInternational` identifier slices on [UZ Core RelatedPerson](StructureDefinition-uz-core-relatedperson.html) are now 0..* rather than 0..1, matching [UZ Core Patient](StructureDefinition-uz-core-patient.html).
+
+`authorizingPrescription` on [UZ Core MedicationDispense](StructureDefinition-uz-core-medication-dispense.html) now references [UZ Core MedicationRequest](StructureDefinition-uz-core-medicationrequest.html) rather than any MedicationRequest.
+
+The [relationship type value set](ValueSet-relationship-type-vs.html) on [UZ Core RelatedPerson](StructureDefinition-uz-core-relatedperson.html) now includes `FTH` (father) and `GUARD` (guardian), with their Uzbek and Russian designations added to [RoleCodeCS](CodeSystem-role-code-cs.html).
+
+The [route of administration value set](ValueSet-route-code-vs.html) now includes 8 local [route codes](CodeSystem-route-codes-cs.html) for routes SNOMED CT does not cover, such as implantation, iontophoresis and skin scarification. It is bound (extensible) to `dosageInstruction.route` on UZ Core MedicationRequest and (example) to `route` on [UZ Core Immunization](StructureDefinition-uz-core-immunization.html).
+
+The [DMED position SNOMED supplement](CodeSystem-dmed-position-sct-cs.html) now carries Uzbek designations alongside the Russian ones, replacing the English designations it had in 0.8.0.
+
+The [DHP CapabilityStatement](CapabilityStatement-DHPCapabilityStatement.html) now declares the platform operations - [Person/$populate](OperationDefinition-person-populate.html), [Patient/$populate](OperationDefinition-patient-populate.html), [Organization/$practitioners](OperationDefinition-organization-practitioners.html), [Practitioner/$organizations](OperationDefinition-practitioner-organizations.html) and [Practitioner/$specializations](OperationDefinition-practitioner-specializations.html) - each linked to its OperationDefinition. It also lists Bundle and Flag, and now has a canonical URL, name, title and version.
+
+`prescription` on [UZ Core Claim](StructureDefinition-uz-core-claim.html) now references [UZ Core MedicationRequest](StructureDefinition-uz-core-medicationrequest.html) rather than any MedicationRequest, as announced in 0.8.0.
+
+#### Breaking changes
+
+UZ Core VaccinationActivityDefinition has been renamed to [UZ Core ActivityDefinition](StructureDefinition-uz-core-activitydefinition.html), as it is no longer limited to vaccination. This is a breaking change: the canonical URL moves from `https://dhp.uz/fhir/core/StructureDefinition/uz-core-vaccination-activity-definition` to `https://dhp.uz/fhir/core/StructureDefinition/uz-core-activitydefinition`, and instances must update `meta.profile`.
+
+`code` is no longer fixed to `33879002` (active immunization) but bound (extensible) to [procedure codes](ValueSet-procedure-code-vs.html). The [vaccine code](ValueSet-vaccine-code-vs.html) binding on `product[x]` is now extensible, with an additional required binding when `code` is `33879002`, so a vaccination still names a vaccine from that value set.
+
+The CVD risk screening questionnaire has been removed, along with the CvdRiskCategoryCS and CvdTobaccoUseCS code systems. The questionnaire and risk categories now live in the integration IG as `https://dhp.uz/fhir/integrations/Questionnaire/CVDRiskScreeningQuestionnaire` and `https://terminology.dhp.uz/fhir/integrations/CodeSystem/cvd-risk-category-cs`, which codes tobacco use in SNOMED CT instead, so references to the old core canonicals must switch.
+
+The DMED role class supplement `https://terminology.dhp.uz/fhir/core/CodeSystem/dmed-role-class-cs`, added in 0.8.0, has been removed, so `PAT` in the [position and profession value set](ValueSet-position-and-profession-vs.html) no longer has Uzbek and Russian designations.
+
+#### Documentation
+
+The [Components](components.html) page now describes Blood Management, Nursing and Supplies. The [Referrals](components.html#referrals) section now covers the seven axes a referral is classified along, and how the referral ServiceRequest relates to the Tasks that drive its state-insurance approval.
+
+Components with a workflow page now link to it, and each workflow page links back. The Prescription section points at the [e-Prescription and dispensing](workflow-prescription.html) workflow until its Technical Project is written.
+
+The Components page now ends with an interactive [cross-component resource architecture](components.html#cross-component-resource-architecture) diagram showing the FHIR resources each of eleven components works with and which flow into another component. It marks which resources this IG defines and, with a ★, which ones a component is responsible for. Hovering over or tabbing to a resource shows the platform service that holds it, and clicking a component card opens its resource list.
+
+The [e-Referral lifecycle](workflow-referral.html) no longer calls the ServiceRequest and Task profiles unpublished. Both are now published, as [UZ Core ServiceRequest](StructureDefinition-uz-core-servicerequest.html) and [UZ Core Task Referral Approval](StructureDefinition-uz-core-referral-approval-task.html), and are still experimental.
+
+The [Laboratory order to result](workflow-lab.html) workflow's links and worked example now point at [UZ Core ServiceRequest](StructureDefinition-uz-core-servicerequest.html) instead of `uz-core-servicerequest-laboratory`, renamed in 0.8.0.
+
+[UZ Core RelatedPerson](StructureDefinition-uz-core-relatedperson.html) now shows how to link a parent to their child so a system can let the parent act for them, with a new [example-mother-of-a-child](RelatedPerson-example-mother-of-a-child.html) example. The profile page explains matching children by PINFL, reading the child's age from `Patient.birthDate`, and why the relationship alone does not grant access.
 
 ### Version 0.8.0
 
@@ -54,7 +211,7 @@ The `passportLocal` and `passportInternational` identifier slices on [UZ Core Pa
 
 The title and description of [UZ Core ClaimResponse](StructureDefinition-uz-core-claim-response.html) no longer split the resource name - "UZ Core Claim Response" is now "UZ Core ClaimResponse". Its canonical URL is unchanged.
 
-The [position and profession value set](ValueSet-position-and-profession-vs.html), bound (required) to `code` on [UZ Core PractitionerRole](StructureDefinition-uz-core-practitioner-role.html), now also admits the v3 RoleClass code system in full, four v3 RoleCode codes (`TPA`, `PAYOR`, `ORG` and `VALIDATOR`) and ten named SNOMED CT concepts, so that every target of DMEDPositionToDHPPositionCM is valid against the binding. Uzbek and Russian designations for them are carried by the new [DMED position SNOMED supplement](CodeSystem-dmed-position-sct-cs.html) and [DMED role class supplement](CodeSystem-dmed-role-class-cs.html). [DMEDRoleCS](CodeSystem-dmed-role-cs.html) grew from 5 to 43 codes and [RoleCodeCS](CodeSystem-role-code-cs.html) from 2 to 6 as a result.
+The [position and profession value set](ValueSet-position-and-profession-vs.html), bound (required) to `code` on [UZ Core PractitionerRole](StructureDefinition-uz-core-practitioner-role.html), now also admits the v3 RoleClass code system in full, four v3 RoleCode codes (`TPA`, `PAYOR`, `ORG` and `VALIDATOR`) and ten named SNOMED CT concepts, so that every target of DMEDPositionToDHPPositionCM is valid against the binding. Uzbek and Russian designations for them are carried by the new [DMED position SNOMED supplement](CodeSystem-dmed-position-sct-cs.html) and DMED role class supplement. [DMEDRoleCS](CodeSystem-dmed-role-cs.html) grew from 5 to 43 codes and [RoleCodeCS](CodeSystem-role-code-cs.html) from 2 to 6 as a result.
 
 The display of `paytype-0001-0004` in the [payment type CodeSystem](CodeSystem-payment-type-cs.html) has changed from "Davlat tomonidan moliyalashtiriladigan" ("State-funded") to "Davlat tarifi" ("State tariff"). The code is unchanged, so systems storing it should check that their own label still matches. A fifth code `paytype-0001-0005` ("Boshqalar", "Other") has been added for payment arrangements that the other four do not describe.
 
@@ -96,7 +253,7 @@ Added [UZ Core Task Referral Approval](StructureDefinition-uz-core-referral-appr
 
 Added [UZ Core Group](StructureDefinition-uz-core-group.html) profile for defined collections of entities - screening, vaccination and donation target groups and their outcome cohorts - with [group type](ValueSet-group-type-vs.html), [group kind](ValueSet-group-kind-vs.html), [membership basis](ValueSet-group-membership-basis-vs.html) and [characteristic kind](ValueSet-group-characteristic-kind-vs.html) terminology.
 
-Added the [CVD risk screening questionnaire](Questionnaire-CVDRiskScreeningQuestionnaire.html), an early-detection form for cardiovascular disease risk that calculates its score and risk category from the answers using SDC FHIRPath expressions. The guide now depends on `hl7.fhir.uv.sdc` so those expressions resolve.
+Added the CVD risk screening questionnaire, an early-detection form for cardiovascular disease risk that calculates its score and risk category from the answers using SDC FHIRPath expressions. The guide now depends on `hl7.fhir.uv.sdc` so those expressions resolve.
 
 Added SNOMED CT supplements carrying Uzbek and Russian designations for [condition severity](CodeSystem-condition-severity-cs.html), [procedure outcome](CodeSystem-procedure-outcome-cs.html), [reaction type](CodeSystem-reaction-type-cs.html), [goal description](CodeSystem-goal-description-cs.html), [goal start event](CodeSystem-goal-start-event-cs.html) and [socioeconomic observation codes](CodeSystem-socioeconomic-observation-codes-cs.html).
 
@@ -158,7 +315,7 @@ Added [UZ Core AdverseEvent](StructureDefinition-uz-core-adverse-event.html) pro
 
 Added [UZ Core Medication](StructureDefinition-uz-core-medication.html) profile with Uzbekistan-specific medication identifiers (marking ID, registration certificate, GTIN, box aggregation ID, national product/service classification code) and ATC-based [classification](ValueSet-medication-classification-vs.html) and [dose form](ValueSet-medication-doseform-vs.html) terminology.
 
-Added [UZ Core Procedure](StructureDefinition-uz-core-procedure.html) profile, with [procedure status](ValueSet-procedure-event-status-vs.html), SNOMED CT-based [procedure codes](ValueSet-procedure-code-vs.html) and [outcome](ValueSet-procedure-outcome-vs.html) terminology, plus an example [SNOMED CT to ICHI](ConceptMap-snomed-to-ichi-procedures.html) ConceptMap for reimbursement reporting.
+Added [UZ Core Procedure](StructureDefinition-uz-core-procedure.html) profile, with [procedure status](ValueSet-procedure-event-status-vs.html), SNOMED CT-based [procedure codes](ValueSet-procedure-code-vs.html) and [outcome](ValueSet-procedure-outcome-vs.html) terminology, plus an example SNOMED CT to ICHI ConceptMap for reimbursement reporting.
 
 Added [laboratory method codes](CodeSystem-lab-methods-cs.html), with ConceptMaps mapping the laboratory [panel and analyte codes](ConceptMap-lab-pan-codes-to-loinc.html) to LOINC and [method codes](ConceptMap-lab-methods-to-loinc.html) to SNOMED CT. The method codes are surfaced as the [laboratory methods value set](ValueSet-lab-method-vs.html), bound to `method` on [UZ Core Observation](StructureDefinition-uz-core-observation.html).
 

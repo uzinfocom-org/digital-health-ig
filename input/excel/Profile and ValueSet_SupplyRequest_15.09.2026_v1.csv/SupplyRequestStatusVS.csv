@@ -1,0 +1,8 @@
+CODE,UZ,RU,EN,,http://hl7.org/fhir/ValueSet/supplyrequest-status
+draft,Qoralama,Черновик,Draft,,
+active,Faol,Активная,Active,,
+suspended,To'xtatilgan,Приостановлена,Suspended,,
+cancelled,Bekor qilingan,Отменена,Cancelled,,
+completed,Yakunlangan,Завершена,Completed,,
+entered-in-error,Xato kiritilgan,Ошибочная запись,Entered in error,,
+unknown,Noma'lum,Неизвестно,Unknown,,

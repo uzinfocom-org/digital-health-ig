@@ -25,7 +25,7 @@ Description: "Uzbekistan Core Condition profile, used for documenting a patient'
 **Конвенции для профилей:**
 - **Profile**: `UZCore[ResourceName]` (например, `UZCorePatient`, `UZCoreObservation`)
 - **Parent**: Соответствующий базовый FHIR ресурс
-- **Id**: `uz-core-[resource-name]` в нижнем регистре с дефисами
+- **Id**: `uz-core-[resourcename]` в нижнем регистре, имя ресурса одним словом (например, `uz-core-medicationrequest`)
 - **Title**: `"UZ Core [ResourceName]"`
 - **Description**: `"Uzbekistan Core [ResourceName] profile, used to [описание назначения]"`
 
@@ -41,13 +41,13 @@ Description: "Uzbekistan Core Condition profile, used for documenting a patient'
 
 **Неправильно:** `Title: "UZ Core Medication Request"`, `Description: "Uzbekistan Core Claim Response profile, ..."` — имя ресурса разделено на два слова.
 
-В `Id`, наоборот, слова разделяются дефисами: `uz-core-medication-request`, `uz-core-claim-response`, `uz-core-practitioner-role`.
+В `Id` имя ресурса тоже пишется одним словом, в нижнем регистре; дефис отделяет только префикс `uz-core-`: `uz-core-medicationrequest`, `uz-core-claimresponse`, `uz-core-practitionerrole`, `uz-core-inventoryitem`. Так уже названы `uz-core-auditevent`, `uz-core-episodeofcare`, `uz-core-healthcareservice`, `uz-core-relatedperson`, `uz-core-servicerequest`, `uz-core-activitydefinition` и `uz-core-medicationrequest`.
 
-**Существующие исключения — не исправлять:** пять профилей опубликованы с `Id`, в котором слова слиты:
+**Существующие исключения — не исправлять:** эти профили опубликованы с `Id`, в котором слова имени ресурса разделены дефисами:
 
-`uz-core-auditevent`, `uz-core-episodeofcare`, `uz-core-healthcareservice`, `uz-core-relatedperson`, `uz-core-servicerequest`
+`uz-core-practitioner-role`, `uz-core-questionnaire-response`, `uz-core-allergy-intolerance`, `uz-core-immunization-recommendation`, `uz-core-adverse-event`, `uz-core-plan-definition`, `uz-core-diagnostic-report`, `uz-core-laboratory-observation-definition`, `uz-core-medication-dispense`, `uz-core-claim-response`, `uz-core-biologically-derived-product`, `uz-core-supply-request`, `uz-core-supply-delivery`
 
-Их канонические URL уже опубликованы, поэтому переименование сломает ссылки у разработчиков и адреса страниц IG. Оставьте их как есть; правило с дефисами действует для новых профилей.
+Их канонические URL уже опубликованы, поэтому переименование сломает ссылки у разработчиков и адреса страниц IG. Оставьте их как есть; правило одного слова действует для новых профилей.
 
 ### 2.3 Именование файлов
 
@@ -134,6 +134,18 @@ Id: uz-core-condition-diagnosis-type
 * description = "Search for conditions by diagnosis type"
 ```
 
+### 2.8 Системы идентификаторов
+
+Все системы идентификаторов (`Identifier.system`) строятся по шаблону со страницы [Identifiers](https://dhp.uz/fhir/core/identifiers.html):
+
+```
+https://dhp.uz/fhir/core/sid/{namespace}/{country}/{type}[/subtype]
+```
+
+- Сегмент `namespace` обязателен. Выбирайте его по тому, что идентифицируется, а не по тому, кто присваивает идентификатор: номер случая, записи или документа относится к `doc`, даже если его выдаёт организация. Номер продукта (например, единицы продукта крови) относится к `prd`; если номер выдаёт внешний реестр с собственным URI системы (например, Asl Belgisi или uzpharminfo.uz для лекарственных средств), используйте этот URI.
+- Прежде чем создавать систему, проверьте [IdentifierDomainCS](https://dhp.uz/fhir/core/CodeSystem-identifier-domain-cs.html) и NamingSystem ядра. Если система уже есть, используйте её: ПИНФЛ - всегда `https://dhp.uz/fhir/core/sid/pid/uz/ni`, отдельная система или NamingSystem для него не создаётся.
+- Для каждой новой системы создайте NamingSystem с `kind = #identifier` и этим URI в `uniqueId.value`.
+
 ## 3) Конвенции слайсинга
 
 ### 3.1 Основные принципы слайсинга
@@ -200,6 +212,8 @@ Id: uz-core-condition-diagnosis-type
 - **MustSupport (MS)**: Все элементы, которые должны поддерживаться всеми системами в Узбекистане, должны быть помечены как MS. Подробное описание MustSupport можно найти в [документации](https://build.fhir.org/ig/uzinfocom-org/digital-health-ig/en/api-access.html#must-support).
 - **Кардинальности**: Указывайте кардинальности элементов только если они отличаются от базового FHIR ресурса. Если кардинальность совпадает с базовым ресурсом, не дублируйте эту информацию.
 - **Связки**: При указании связки с ValueSet всегда явно указывайте силу связки (`required`, `extensible`, `preferred` или `example`). Используйте `required` связку для обязательных элементов с фиксированным набором значений. Используйте `extensible` связку когда разрешены дополнительные коды. Используйте `preferred` связку когда DHP не может или не хочет принудительно применять определённые коды, но даёт рекомендацию по их использованию. Используйте `example` связку когда ValueSet служит только примером без какой-либо рекомендации. **Предупреждение**: если использовать `extensible` связку, валидатор не сможет различить опечатки от новых допустимых кодов.
+- **Сужение базовых ValueSet**: Не сужайте ValueSet, к которому элемент привязан в базовом FHIR, до подмножества его кодов, если нет конкретной причины запретить остальные. Такое сужение делает невалидными корректные ресурсы и требует менять ValueSet при каждом новом сценарии. Чтобы добавить переводы, включайте весь базовый набор вместе с supplement.
+- **Связки повторяющихся элементов**: Не привязывайте ValueSet со связкой `required` или `extensible` к повторяющемуся кодируемому элементу (`0..*`, `1..*`) целиком: связка действует на каждое повторение и не даёт добавить рядом коды из других систем. Создайте открытый слайс и привяжите ValueSet к нему.
 - **Дополнительные связки (Additional Bindings)**: Используйте `^binding.additional` когда есть возможность объединить несколько профилей в один. Это позволяет указать разные ValueSet для разных контекстов использования одного элемента. Пример из UZCoreSocioeconomicObservation:
 
 ```fsh
@@ -227,6 +241,12 @@ Id: uz-core-condition-diagnosis-type
 ```
 
 ## 5) Терминологические артефакты
+
+Везде, где это возможно, используйте коды из международных стандартов (SNOMED CT, LOINC, МКБ-10, МКБ-11, ATC, UCUM, терминологии HL7 и других), а не локальные коды. Стандартный код более интероперабелен, чем локальный: локальный код для обмена данными за пределами платформы требует сопоставления через ConceptMap.
+
+Поэтому каждый локальный код должен проходить проверку: прежде чем добавить концепт в оригинальную CodeSystem (или оставить уже существующий), найдите стандартный код с тем же значением и, если он есть, используйте его вместо локального.
+
+Локальный код допустим только тогда, когда эквивалентного стандартного концепта нет: стандартный концепт шире или уже по значению либо отсутствует вовсе (например, национальные административные категории). Если стандарт покрывает только часть списка, ValueSet может сочетать стандартные и локальные коды - локальными остаются только непокрытые концепты.
 
 ### 5.1 Почему нужен supplement для CodeSystem и ValueSet
 

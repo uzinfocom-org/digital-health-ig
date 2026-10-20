@@ -11,6 +11,8 @@ Description: "Encounter priority codes with English and Russian translations"
 * include $v3ActPriority#P
 * include $v3ActPriority#PRN
 * include $v3ActPriority#R
+* include $v3ActPriority#UR
+* include $v3ActPriority#EL
 * include encounter-priority-home-cs#gencl-0002-00001
 * include encounter-priority-home-cs#gencl-0002-00002
 * include encounter-priority-home-cs#gencl-0002-00003

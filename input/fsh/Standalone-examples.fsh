@@ -474,3 +474,48 @@ Description: "Temporary Specimen instance for lab (based on drafted UZCoreSpecim
 * collection.quantity = 3 'mL' "mL"
 * collection.fastingStatusCodeableConcept = $v2-0916#NF "The patient indicated they did not fast prior to the procedure."
 * note[0].text = "Venous blood collected into EDTA tube. No visible hemolysis."
+
+
+Instance: andijan-station
+InstanceOf: UZCoreOrganization
+Usage: #example
+Title: "Andijan blood station"
+Description: "Illustrative blood station supplying blood products."
+* language = #en
+* active = true
+* type.coding[subordinationGroup] = organizational-subordination-group-cs#I_2 "In territorial administration"
+* type.coding[nomenclatureGroup] = nomenclature-group-cs#II_700 "Blood transfusion center"
+* type.coding[organizationalServiceGroup] = organizational-service-group-cs#III_600 "Others"
+* name = "Andijan Blood Transfusion Station"
+
+
+Instance: tashkent-hospital
+InstanceOf: UZCoreOrganization
+Usage: #example
+Title: "Tashkent receiving hospital"
+Description: "Illustrative hospital receiving blood products from the Andijan blood station."
+* language = #en
+* active = true
+* type.coding[subordinationGroup] = organizational-subordination-group-cs#I_2 "In territorial administration"
+* type.coding[nomenclatureGroup] = nomenclature-group-cs#II_100 "Hospital premises"
+* type.coding[organizationalStructure] = organizational-structure-cs#146 "Hospital"
+* type.coding[organizationalServiceGroup] = organizational-service-group-cs#III_200 "There is an inpatient department."
+* type.coding[specialization] = organizational-specialization-cs#114.0 "Adult Hematology"
+* name = "Tashkent Hospital"
+
+
+Instance: transfusion-order-01
+InstanceOf: UZCoreServiceRequest
+Usage: #example
+Title: "Red blood cell transfusion order"
+Description: "Illustrative transfusion order for the patient in the blood product supply request example."
+* status = #active
+* intent = #order
+* priority = #routine
+* code = $sct#71493000 "Transfusion of packed red blood cells"
+* subject = Reference(example-salim)
+* authoredOn = "2025-08-31T14:00:00+05:00"
+* occurrenceDateTime = "2025-09-01T09:00:00+05:00"
+* requester = Reference(example-practitioner)
+* performer = Reference(tashkent-hospital)
+* reason.concept = $sct#87522002 "Iron deficiency anemia"

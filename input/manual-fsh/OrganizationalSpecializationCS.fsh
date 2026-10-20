@@ -475,3 +475,9 @@ Description: "Determines the specialization of a medical organization"
   * ^designation[=].value = "Детская реанимация"
   * ^designation[+].language = #en
   * ^designation[=].value = "Children's intensive care"
+
+* #176.0 "Kattalar uchun geriatriya"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Гериатрия для взрослых"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Geriatrics for adults"

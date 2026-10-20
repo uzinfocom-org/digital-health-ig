@@ -3,6 +3,11 @@ Description: "A schedule must declare exactly one focus useContext, so clients c
 * severity = #error
 * expression = "useContext.where(code.system = 'http://terminology.hl7.org/CodeSystem/usage-context-type' and code.code = 'focus').count() = 1"
 
+Invariant: uzcore-plandef-2
+Description: "A schedule is either national or regional: a jurisdiction of Uzbekistan as a whole cannot be combined with individual regions"
+* severity = #error
+* expression = "useContext.where(code.system = 'http://terminology.hl7.org/CodeSystem/usage-context-type' and code.code = 'jurisdiction' and value.ofType(CodeableConcept).coding.where(system = 'urn:iso:std:iso:3166' and code = 'UZ').exists()).exists() implies useContext.where(code.system = 'http://terminology.hl7.org/CodeSystem/usage-context-type' and code.code = 'jurisdiction').count() = 1"
+
 Profile: UZCorePlanDefinition
 Parent: PlanDefinition
 Id: uz-core-plan-definition
@@ -52,17 +57,18 @@ Description: "Uzbekistan Core PlanDefinition profile, used to represent national
 // The focus slices are 0..1 rather than 1..1: a schedule has one focus, not all of them. Making
 // them mandatory would make SUSHI inject the missing fixed values into every instance.
 * useContext 1..* MS
-* obeys uzcore-plandef-1
+* obeys uzcore-plandef-1 and uzcore-plandef-2
 * useContext ^slicing.discriminator.type = #value
 * useContext ^slicing.discriminator.path = "value"
 * useContext ^slicing.rules = #open
-* useContext ^slicing.description = "Distinguishes healthcare schedules and their categories"
+* useContext ^slicing.description = "Distinguishes healthcare schedules, their categories, and where they apply"
 
 * useContext contains
     immunizationFocus 0..1 MS and
     scheduleCategory 0..1 MS and
     bloodDonationFocus 0..1 MS and
-    screeningFocus 0..1 MS
+    screeningFocus 0..1 MS and
+    jurisdiction 0..* MS
 
 * useContext[immunizationFocus] ^short = "Marks this PlanDefinition as an immunization schedule"
 * useContext[immunizationFocus].code = $usage-context-type#focus
@@ -93,6 +99,18 @@ Description: "Uzbekistan Core PlanDefinition profile, used to represent national
 * useContext[screeningFocus].valueCodeableConcept.coding.system 1..1
 * useContext[screeningFocus].valueCodeableConcept.coding.code 1..1
 * useContext[screeningFocus].valueCodeableConcept = $sct#360156006
+
+// Where the schedule applies goes in useContext rather than PlanDefinition.jurisdiction: R5 deprecates
+// that element in favour of this context type, and R6 redefines it as the jurisdiction of the issuing
+// authority. One entry per region, since multiple codings in one CodeableConcept would mean synonyms.
+* useContext[jurisdiction] ^short = "Where the schedule applies: Uzbekistan for a national schedule, or one entry per region for a regional one"
+* useContext[jurisdiction] ^comment = "Region codes are the same ones used in Address.state, so a patient's region can be matched to the schedules that apply there directly."
+* useContext[jurisdiction].code = $usage-context-type#jurisdiction
+* useContext[jurisdiction].value[x] only CodeableConcept
+* useContext[jurisdiction].valueCodeableConcept.coding 1..1
+* useContext[jurisdiction].valueCodeableConcept.coding.system 1..1
+* useContext[jurisdiction].valueCodeableConcept.coding.code 1..1
+* useContext[jurisdiction].valueCodeableConcept from JurisdictionVS (required)
 
 * approvalDate MS
 * effectivePeriod MS
@@ -148,7 +166,7 @@ Instance: example-uz-core-immunization-plan-definition
 InstanceOf: UZCorePlanDefinition
 Usage: #example
 Title: "Example UZ Core PlanDefinition - Immunization Schedule"
-Description: "Example age-based national immunization schedule, showing the focus and category use contexts, the vaccination actions, their timing, and the relationship between two doses."
+Description: "Example age-based national immunization schedule, showing the focus, category and jurisdiction use contexts, the vaccination actions, their timing, and the relationship between two doses."
 * id = "example-uz-core-immunization-plan-definition"
 
 * url = "https://terminology.dhp.uz/fhir/core/PlanDefinition/example-uz-core-immunization-plan-definition"
@@ -167,6 +185,9 @@ Description: "Example age-based national immunization schedule, showing the focu
 
 * useContext[scheduleCategory].code = $usage-context-type#topic
 * useContext[scheduleCategory].valueCodeableConcept = ImmunizationScheduleTypeCS#pd-type-0001-00001 "Age-based"
+
+* useContext[jurisdiction].code = $usage-context-type#jurisdiction
+* useContext[jurisdiction].valueCodeableConcept = $iso-3166#UZ "Uzbekistan"
 
 * approvalDate = "2026-08-01"
 
@@ -211,5 +232,43 @@ Description: "Example age-based national immunization schedule, showing the focu
 * action[1].participant[0].actorId = "vaccinator"
 * action[1].definitionCanonical = "https://terminology.dhp.uz/fhir/core/ActivityDefinition/example-activity-definition"
 
+Instance: example-uz-core-regional-screening-plan-definition
+InstanceOf: UZCorePlanDefinition
+Usage: #example
+Title: "Example UZ Core PlanDefinition - Regional Screening Schedule"
+Description: "Example type 2 diabetes screening schedule that applies in two regions only, showing one jurisdiction use context per region."
+* id = "example-uz-core-regional-screening-plan-definition"
 
+* url = "https://terminology.dhp.uz/fhir/core/PlanDefinition/example-uz-core-regional-screening-plan-definition"
 
+* name = "ExampleRegionalDiabetesScreeningPlanDefinition"
+* title = "Example Regional Type 2 Diabetes Screening"
+* status = $publication-status#draft
+* date = "2026-09-28"
+* publisher = "DHP Uzbekistan"
+* description = "Example screening PlanDefinition for adults at risk of type 2 diabetes, run in Samarqand and Navoiy regions only."
+* subjectReference = Reference(example-diabetes-screening-target-group)
+
+* useContext[screeningFocus].code = $usage-context-type#focus
+* useContext[screeningFocus].valueCodeableConcept = $sct#360156006 "Screening intent"
+
+* useContext[jurisdiction][0].code = $usage-context-type#jurisdiction
+* useContext[jurisdiction][0].valueCodeableConcept = StateCS#1718 "Samarkand region"
+* useContext[jurisdiction][+].code = $usage-context-type#jurisdiction
+* useContext[jurisdiction][=].valueCodeableConcept = StateCS#1712 "Navoi region"
+
+* approvalDate = "2026-09-01"
+
+* effectivePeriod.start = "2026-10-01"
+* effectivePeriod.end = "2027-09-30"
+
+* action[0].id = "action-1"
+* action[0].linkId = "action-1"
+* action[0].title = "Glycated haemoglobin test"
+* action[0].description = "Order an HbA1c test, repeated every three years while the patient remains in the target group."
+* action[0].code = $action-code#order-service "Order a service"
+* action[0].timingTiming.repeat.frequency = 1
+* action[0].timingTiming.repeat.period = 3
+* action[0].timingTiming.repeat.periodUnit = #a
+* action[0].participant[0].type = $action-participant-type#practitioner
+* action[0].participant[0].actorId = "general-practitioner"
