@@ -16,7 +16,15 @@ Description: "Uzbekistan Core profile for DiagnosticReport, representing clinica
 * status MS
 * status from DiagnosticReportStatusVS
 * category MS
-* category from DiagnosticReportServiceCategoryVS
+* category from DiagnosticReportServiceCategoryVS (preferred)
+* category ^slicing.discriminator.type = #value
+* category ^slicing.discriminator.path = "$this"
+* category ^slicing.rules = #open
+* category ^slicing.description = "Service categories from the national value set; codes from other systems are allowed alongside them"
+* category ^slicing.ordered = false
+* category contains dhpCategory 0..* MS
+* category[dhpCategory] from DiagnosticReportServiceCategoryVS (required)
+* category[dhpCategory] ^short = "Service category from the national value set"
 * code MS
 * code from LabReportTypesVS (extensible)
   * ^short = "Report types used in Ministry of Health of Uzbekistan (399)"

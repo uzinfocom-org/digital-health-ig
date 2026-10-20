@@ -1,5 +1,3 @@
-## To'lovchilarni identifikatsiyalash
-
 O'zbekiston Respublikasi sog'liqni saqlash tizimida tibbiy yordam uchun to'lovni to'lovchilar — provayderlar (tibbiy tashkilotlar) xizmatlarini moliyalashtiruvchi tashkilotlar amalga oshiradi. Bugungi kunda yagona to'lovchi — Davlat tibbiy sug'urta jamg'armasi (DTSJ), ammo model kelajakda boshqalarning ham paydo bo'lishiga imkon beradi. Ushbu sahifa UZ Core profillarida to'lovchilarning o'zlari qanday identifikatsiyalanishini va to'lovchi shartnoma tuzgan provayderlarni qanday identifikatsiyalashini tavsiflaydi.
 
 ### To'lovchi qanday identifikatsiyalanadi

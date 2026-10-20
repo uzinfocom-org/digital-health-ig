@@ -60,5 +60,5 @@ GET [base]/Observation?patient=Patient/[id]&category=laboratory&_sort=-date
 ### Связанные материалы
 
 - Профили: [Specimen](StructureDefinition-uz-core-specimen.html) &middot; [Observation](StructureDefinition-uz-core-observation.html) &middot; [ServiceRequest](StructureDefinition-uz-core-servicerequest.html) &middot; [DiagnosticReport](StructureDefinition-uz-core-diagnostic-report.html) &middot; [HealthcareService](StructureDefinition-uz-core-healthcareservice.html)
-- Компонент: [Лаборатория](components.html#лаборатория)
+- Компонент: [Лаборатория](components.html#laboratory)
 - [Обзор процессов](workflows.html) &middot; [Общие рекомендации](general-guidance.html) &middot; [Жизненные показатели](vital-signs.html)
