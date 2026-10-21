@@ -8,6 +8,8 @@ The [specialist certificate](NamingSystem-uzb-specialist-certificate.html) ident
 
 Two more platform operations are published as OperationDefinitions. [Patient/$attach](OperationDefinition-patient-attach.html) records a patient's attachment to a polyclinic (`managingOrganization`, with the attachment date in the [managing organization attachment](StructureDefinition-managing-organization-attachment.html) extension) and/or a family doctor (`generalPractitioner`) in one call, checking both against the master data registry and resolving business identifiers to references; at type level it finds or creates the patient by PINFL, so it replaces the `$populate` + `$attach` pair. [Patient/$relate](OperationDefinition-patient-relate.html) records a confirmed parent-child relationship: it checks the kinship against the Ministry of Justice child registry, finds or creates the child Patient by PINFL, and creates a RelatedPerson for the parent, returning the relation, the child and the outcome in one Bundle.
 
+[UZ Core Medication](StructureDefinition-uz-core-medication.html) now has the narrative intro and Quick Start that the other profiles carry: the mandatory and Must Support elements, how to find an existing medication by registry identifier (registration certificate, GTIN, Asl Belgisi marking, ICPS, box group) or by INN / ATC code before registering a new one, step-by-step JSON examples, and the identifier slices table.
+
 ### Version 0.11.1
 
 #### Added
