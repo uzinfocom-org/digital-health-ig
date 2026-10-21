@@ -14,7 +14,7 @@ Har bir Patient kamida bitta identifikatorga ega boʻlishi kerak. PINFL (milliy 
 
 
 
-- ism (oʻzbekcha asosiy, tarjimalar bilan belgilangan holatda);
+- ism (oʻzbekcha asosiy, ruscha va qoraqalpoqcha shakllari `translation` kengaytmalari sifatida - [Oʻzbek va rus tilidagi ismlar](#names-in-uzbek-and-russian) ga qarang);
 - jins (kerak boʻlganda milliy `gender-other` kengaytmasi bilan);
 - tugʻilgan sana;
 - manzil - oʻzbekcha manzil (kodlangan maʼmuriy boʻlinmalar: viloyat, tuman, mahalla) yoki xalqaro erkin matnli manzil;
@@ -27,7 +27,7 @@ Har bir Patient kamida bitta identifikatorga ega boʻlishi kerak. PINFL (milliy 
 
 ### JSON ni bosqichma-bosqich qurish
 
-Quyidagi misollar server qabul qiladigan eng kichik nusxadan toʻliq roʻyxatga olish yukigacha boradi. Birortasini nusxalab oling va moslang - koʻrsatilgan har bir qiymat ushbu profilga muvofiq tekshiruvdan oʻtadi. Toʻliq maʼlumotnoma nusxalari sahifaning pastki qismida bogʻlangan ([Salim](Patient-example-salim.html), [Emma](Patient-example-emma.html), [David](Patient-example-david.html), [aniqlanmagan bemor](Patient-example-unidentified-patient.html)).
+Quyidagi misollar server qabul qiladigan eng kichik nusxadan toʻliq roʻyxatga olish yukigacha boradi. Birortasini nusxalab oling va moslang - koʻrsatilgan har bir qiymat ushbu profilga muvofiq tekshiruvdan oʻtadi. Toʻliq maʼlumotnoma nusxalari sahifaning pastki qismida bogʻlangan ([Salim](Patient-example-salim.html), [Emma](Patient-example-emma.html), [David](Patient-example-david.html), [aniqlanmagan bemor](Patient-example-unidentified-patient.html), [Nodira](Patient-example-nodira.html)).
 
 #### Yuborishingiz mumkin boʻlgan eng kichik Patient
 
@@ -95,6 +95,60 @@ Amalda siz PINFL bilan birga platforma sizdan qoʻllab-quvvatlashni kutadigan as
 ```
 
 `state` / `district` / `city` kodlari milliy qiymatlar toʻplamlaridan keladi - har bir kod qayerdan olinishi haqida [Manzillar](general-guidance.html#addresses) boʻlimiga qarang. Chet elda yashaydigan bemor uchun esa `country` chet el ISO kodiga oʻrnatilgan erkin matnli manzildan foydalaning (qarang: [Emma misoli](Patient-example-emma.html)).
+
+#### Oʻzbek va rus tilidagi ismlar {#names-in-uzbek-and-russian}
+
+`name` oʻzbek tilida - resurs tilida (`language`) yoziladi va aynan oʻzbekcha matn asosiy hisoblanadi. Agar sizda ruscha (kirillcha) shakl ham boʻlsa, uni toʻldirilgan har bir qismdagi `translation` kengaytmasi orqali yuboring: `_text`, `_family`, `_given` va `_suffix`. Bitta `name` yozuvini qoldiring: ruscha yozilish uchun ikkinchi `HumanName` boshqa ism sifatida oʻqiladi. Toʻliq toʻplam [Nodira misolida](Patient-example-nodira.html) keltirilgan:
+
+```json
+"name": [
+  {
+    "use": "usual",
+    "text": "Karimova Nodira Anvarovna",
+    "_text": {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/translation",
+          "extension": [ { "url": "lang", "valueCode": "ru" }, { "url": "content", "valueString": "Каримова Нодира Анваровна" } ]
+        }
+      ]
+    },
+    "family": "Karimova",
+    "_family": {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/translation",
+          "extension": [ { "url": "lang", "valueCode": "ru" }, { "url": "content", "valueString": "Каримова" } ]
+        }
+      ]
+    },
+    "given": [ "Nodira" ],
+    "_given": [
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/translation",
+            "extension": [ { "url": "lang", "valueCode": "ru" }, { "url": "content", "valueString": "Нодира" } ]
+          }
+        ]
+      }
+    ],
+    "suffix": [ "Anvarovna" ],
+    "_suffix": [
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/translation",
+            "extension": [ { "url": "lang", "valueCode": "ru" }, { "url": "content", "valueString": "Анваровна" } ]
+          }
+        ]
+      }
+    ]
+  }
+]
+```
+
+Sizda bor har bir til uchun bitta `translation` qoʻshing - rus (`ru`) yoki qoraqalpoq (`kaa`).
 
 #### Bir nechta identifikatorni saqlash {#identifier-slices}
 
