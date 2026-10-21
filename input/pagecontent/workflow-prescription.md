@@ -1,6 +1,4 @@
-This workflow shows how a medicine is prescribed electronically, dispensed at a pharmacy, and reported to the State Health Insurance Fund (SHIF) for reimbursement. Two resources carry it: a `MedicationRequest` is the prescription - *what* was ordered; a `MedicationDispense` is the act of handing it over - *what* was actually given, and *how much*.
-
-> Profile status: [MedicationRequest](StructureDefinition-uz-core-medicationrequest.html) and [MedicationDispense](StructureDefinition-uz-core-medication-dispense.html) are now profiled. Both are still marked experimental, so review them before building against them. [Condition](StructureDefinition-uz-core-condition.html) (the indication) and [Patient](StructureDefinition-uz-core-patient.html) are profiled.
+This workflow shows how a medicine is prescribed electronically, dispensed at a pharmacy, and reported to the State Health Insurance Fund (SHIF) for reimbursement. Two resources carry it: a [`MedicationRequest`](StructureDefinition-uz-core-medicationrequest.html) is the prescription - *what* was ordered; a [`MedicationDispense`](StructureDefinition-uz-core-medication-dispense.html) is the act of handing it over - *what* was actually given, and *how much*.
 
 Actors: the prescriber; the pharmacist; the platform (DHP); the State Health Insurance Fund (SHIF).
 
