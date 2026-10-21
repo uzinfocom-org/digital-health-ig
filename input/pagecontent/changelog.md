@@ -10,6 +10,10 @@ Two more platform operations are published as OperationDefinitions. [Patient/$at
 
 [UZ Core Medication](StructureDefinition-uz-core-medication.html) now has the narrative intro and Quick Start that the other profiles carry: the mandatory and Must Support elements, how to find an existing medication by registry identifier (registration certificate, GTIN, Asl Belgisi marking, ICPS, box group) or by INN / ATC code before registering a new one, step-by-step JSON examples, and the identifier slices table.
 
+#### Changed
+
+[UZ Core Patient](StructureDefinition-uz-core-patient.html) and [UZ Core Practitioner](StructureDefinition-uz-core-practitioner.html) declare the `translation` extension on `name.text`, `family`, `given` and `suffix`: the name is in Uzbek, and its Russian and Karakalpak forms travel in one `HumanName` instead of a second name. The [Nodira](Patient-example-nodira.html) and [practitioner](Practitioner-example-practitioner.html) examples carry Russian forms, and both profile pages describe the pattern.
+
 ### Version 0.11.1
 
 #### Added

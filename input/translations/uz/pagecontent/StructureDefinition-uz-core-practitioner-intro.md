@@ -18,7 +18,7 @@ Bazaviy FHIR Practitioner hech qanday majburiy elementga ega emas va ushbu profi
 
 - identifikator - xususan, HRM Argos kasbiy identifikatori slaysi (u PINFLni milliy yagona shaxsiy identifikator sifatida saqlaydi). Qo'llab-quvvatlanadigan system URI'lar uchun [Identifikator tizimlari](identifiers.html) ga qarang;
 - active bayrog'i;
-- ism (familiya, ism, qo'shimcha, talab qilingan name-use bog'lanishi bilan);
+- ism (familiya, ism, qo'shimcha, talab qilingan name-use bog'lanishi bilan) o'zbek tilida, ruscha va qoraqalpoqcha shakllari `translation` kengaytmalari sifatida;
 - telecom aloqa ma'lumotlari (telefon, elektron pochta, talab qilingan contact-system bog'lanishi bilan);
 - jins (kerak bo'lganda milliy `gender-other` kengaytmasi bilan);
 - tug'ilgan sana va vafot sanasi/bayrog'i;
@@ -56,7 +56,7 @@ Bazaviy Practitioner hech qanday majburiy elementga ega emas, biroq yozuv faqat 
       "value": "9876543210"
     }
   ],
-  "name": [ { "use": "official", "text": "Test Test Test", "family": "Test", "given": [ "Test" ] } ]
+  "name": [ { "use": "official", "text": "Rahimova Dilnoza Akmalovna", "family": "Rahimova", "given": [ "Dilnoza" ] } ]
 }
 ```
 
@@ -91,10 +91,46 @@ Amalda siz platforma sizdan qo'llab-quvvatlashni kutadigan demografik ma'lumotla
   "name": [
     {
       "use": "official",
-      "text": "Test Test Test",
-      "family": "Test",
-      "given": [ "Test" ],
-      "suffix": [ "Test" ]
+      "text": "Rahimova Dilnoza Akmalovna",
+      "_text": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/translation",
+            "extension": [ { "url": "lang", "valueCode": "ru" }, { "url": "content", "valueString": "Рахимова Дилноза Акмаловна" } ]
+          }
+        ]
+      },
+      "family": "Rahimova",
+      "_family": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/translation",
+            "extension": [ { "url": "lang", "valueCode": "ru" }, { "url": "content", "valueString": "Рахимова" } ]
+          }
+        ]
+      },
+      "given": [ "Dilnoza" ],
+      "_given": [
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [ { "url": "lang", "valueCode": "ru" }, { "url": "content", "valueString": "Дилноза" } ]
+            }
+          ]
+        }
+      ],
+      "suffix": [ "Akmalovna" ],
+      "_suffix": [
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [ { "url": "lang", "valueCode": "ru" }, { "url": "content", "valueString": "Акмаловна" } ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "telecom": [ { "system": "phone", "value": "975555555", "use": "mobile" } ],
@@ -112,6 +148,8 @@ Amalda siz platforma sizdan qo'llab-quvvatlashni kutadigan demografik ma'lumotla
   ]
 }
 ```
+
+Ism resurs tilida (`language`) - o'zbek tilida yozilgan. Uning ruscha shakli ismning har bir qismidagi `translation` kengaytmasi orqali uzatiladi - `_text`, `_family`, `_given` va `_suffix`. Sizda bor har bir til uchun bitta `translation` qo'shing va bitta `name` qoldiring: ruscha yozilish uchun ikkinchi `HumanName` boshqa ism sifatida o'qiladi.
 
 `telecom.system` va `name.use` talab qilingan bog'lanishlardan foydalanadi - qiymat bog'langan qiymatlar to'plamidan kelishi shart. `district` / `city` kodlari milliy qiymatlar to'plamlaridan keladi - har bir kod qayerdan olinishi haqida [Manzillar](general-guidance.html#addresses) ga qarang. Chet elda yashovchi mutaxassis uchun esa `country` xorijiy ISO kodiga o'rnatilgan erkin matnli manzildan foydalaning.
 

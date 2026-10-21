@@ -31,6 +31,7 @@ Description: "Uzbekistan Core Practitioner profile, used to define healthcare pr
 * name MS
   * use and text and family and given and suffix and period MS
   * use from NameUseVS (required)
+* insert MultilingualHumanName
 * telecom MS
   * system and value and use and rank and period MS
   * system from ContactPointSystemVS (required)
@@ -65,10 +66,22 @@ Usage: #example
 * active = true
 * name
   * use = #official
-  * text = "Test Test Test"
-  * family = "Test"
-  * given = "Test"
-  * suffix = "Test"
+  * text = "Rahimova Dilnoza Akmalovna"
+    * extension[translation]
+      * extension[lang].valueCode = #ru
+      * extension[content].valueString = "Рахимова Дилноза Акмаловна"
+  * family = "Rahimova"
+    * extension[translation]
+      * extension[lang].valueCode = #ru
+      * extension[content].valueString = "Рахимова"
+  * given = "Dilnoza"
+    * extension[translation]
+      * extension[lang].valueCode = #ru
+      * extension[content].valueString = "Дилноза"
+  * suffix = "Akmalovna"
+    * extension[translation]
+      * extension[lang].valueCode = #ru
+      * extension[content].valueString = "Акмаловна"
 * telecom
   * system = #phone
   * value = "975555555"
