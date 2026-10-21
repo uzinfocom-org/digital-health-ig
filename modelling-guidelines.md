@@ -25,7 +25,7 @@ Description: "Uzbekistan Core Condition profile, used for documenting a patient'
 **Конвенции для профилей:**
 - **Profile**: `UZCore[ResourceName]` (например, `UZCorePatient`, `UZCoreObservation`)
 - **Parent**: Соответствующий базовый FHIR ресурс
-- **Id**: `uz-core-[resource-name]` в нижнем регистре с дефисами
+- **Id**: `uz-core-[resourcename]` в нижнем регистре, имя ресурса одним словом (например, `uz-core-medicationrequest`)
 - **Title**: `"UZ Core [ResourceName]"`
 - **Description**: `"Uzbekistan Core [ResourceName] profile, used to [описание назначения]"`
 
@@ -41,13 +41,13 @@ Description: "Uzbekistan Core Condition profile, used for documenting a patient'
 
 **Неправильно:** `Title: "UZ Core Medication Request"`, `Description: "Uzbekistan Core Claim Response profile, ..."` — имя ресурса разделено на два слова.
 
-В `Id`, наоборот, слова разделяются дефисами: `uz-core-medication-request`, `uz-core-claim-response`, `uz-core-practitioner-role`.
+В `Id` имя ресурса тоже пишется одним словом, в нижнем регистре; дефис отделяет только префикс `uz-core-`: `uz-core-medicationrequest`, `uz-core-claimresponse`, `uz-core-practitionerrole`, `uz-core-inventoryitem`. Так уже названы `uz-core-auditevent`, `uz-core-episodeofcare`, `uz-core-healthcareservice`, `uz-core-relatedperson`, `uz-core-servicerequest`, `uz-core-activitydefinition` и `uz-core-medicationrequest`.
 
-**Существующие исключения — не исправлять:** пять профилей опубликованы с `Id`, в котором слова слиты:
+**Существующие исключения — не исправлять:** эти профили опубликованы с `Id`, в котором слова имени ресурса разделены дефисами:
 
-`uz-core-auditevent`, `uz-core-episodeofcare`, `uz-core-healthcareservice`, `uz-core-relatedperson`, `uz-core-servicerequest`
+`uz-core-practitioner-role`, `uz-core-questionnaire-response`, `uz-core-allergy-intolerance`, `uz-core-immunization-recommendation`, `uz-core-adverse-event`, `uz-core-plan-definition`, `uz-core-diagnostic-report`, `uz-core-laboratory-observation-definition`, `uz-core-medication-dispense`, `uz-core-claim-response`, `uz-core-biologically-derived-product`, `uz-core-supply-request`, `uz-core-supply-delivery`
 
-Их канонические URL уже опубликованы, поэтому переименование сломает ссылки у разработчиков и адреса страниц IG. Оставьте их как есть; правило с дефисами действует для новых профилей.
+Их канонические URL уже опубликованы, поэтому переименование сломает ссылки у разработчиков и адреса страниц IG. Оставьте их как есть; правило одного слова действует для новых профилей.
 
 ### 2.3 Именование файлов
 
@@ -417,6 +417,13 @@ Title: "Clinical Status"
 
 - Добавить новые данные, не нарушая совместимость с базовой спецификацией.
 - Учитывать национальные требования, обеспечивая обмен необходимой информацией.
+
+**Сначала стандартные расширения.** Прежде чем создавать собственное расширение, пройдите по порядку:
+
+1. Убедитесь, что в базовом ресурсе нет подходящего элемента.
+2. Проверьте [реестр расширений HL7 FHIR](https://hl7.org/fhir/extensions/extension-registry.html) (пакет `hl7.fhir.uv.extensions`). Если там есть подходящее расширение, используйте его и добавьте для него Alias в `Aliases.fsh` (как `$translation-extension`). Например, если в ресурсе нет элемента для места проведения события, используйте стандартное `event-location`, а не собственное расширение для той же цели.
+3. Если стандартного расширения нет, поищите расширения, определённые сообществом, в [реестре XIG](https://packages2.fhir.org/xig?offset=0&type=ext). Если найдётся расширение с нужной семантикой, подходящим контекстом и типом значения, переиспользуйте его.
+4. Собственное расширение DHP создавайте только когда ни стандартного, ни подходящего расширения сообщества нет. Моделируйте его с той же семантикой (структура, типы данных), что и у ближайшего существующего расширения: так расширения останутся совместимыми и дальнейшая интеграция будет проще.
 
 Ниже показаны основные шаги и сразу после них — пример FSH.
 
