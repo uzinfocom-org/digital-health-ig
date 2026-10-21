@@ -1,6 +1,6 @@
 Этот процесс показывает, как лекарственное средство назначается в электронном виде, отпускается в аптеке и сведения о нём передаются в Государственный фонд медицинского страхования (SHIF) для возмещения стоимости. Процесс представлен двумя ресурсами: `MedicationRequest` - это рецепт, то есть сведения о том, *что* было назначено; `MedicationDispense` - это факт отпуска, то есть сведения о том, *что* было фактически выдано и *в каком количестве*.
 
-> Статус профилей: профили MedicationRequest и MedicationDispense находятся в разработке. На этой странице описана предполагаемая модель, чтобы системы могли реализовывать её уже сейчас; до публикации профилей используйте базовые ресурсы FHIR R5, не указывая `meta.profile`. Ресурсы [Condition](StructureDefinition-uz-core-condition.html) (показание) и [Patient](StructureDefinition-uz-core-patient.html) профилированы.
+> Статус профилей: [MedicationRequest](StructureDefinition-uz-core-medicationrequest.html) и [MedicationDispense](StructureDefinition-uz-core-medication-dispense.html) теперь профилированы. Оба по-прежнему помечены как экспериментальные, поэтому изучите их перед началом реализации. Ресурсы [Condition](StructureDefinition-uz-core-condition.html) (показание) и [Patient](StructureDefinition-uz-core-patient.html) профилированы.
 
 Участники: клиницист, выписывающий рецепт; фармацевт; DHP (Digital Health Platform - Цифровая платформа здравоохранения); Государственный фонд медицинского страхования (SHIF).
 

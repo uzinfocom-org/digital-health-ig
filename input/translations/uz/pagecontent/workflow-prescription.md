@@ -1,6 +1,6 @@
 Ushbu jarayon dori vositasi elektron shaklda qanday tayinlanishi, dorixonada qanday berilishi va xarajatni qoplab berish uchun SHIF (State Health Insurance Fund - Davlat tibbiy sug'urta jamg'armasi)ga qanday yuborilishini ko'rsatadi. Jarayon ikkita resurs orqali ifodalanadi: `MedicationRequest` - retsept, ya'ni *nima* tayinlanganligi; `MedicationDispense` - dori vositasini berish fakti, ya'ni amalda *nima* berilganligi va *qancha miqdorda* berilganligi.
 
-> Profillarning holati: MedicationRequest va MedicationDispense profillari ishlab chiqilmoqda. Ushbu sahifada tizimlar hozirdanoq shu model asosida ishlab chiqilishi uchun mo'ljallangan model tavsiflangan; profillar e'lon qilingunga qadar `meta.profile` elementini ko'rsatmasdan FHIR R5 bazaviy resurslaridan foydalaning. [Condition](StructureDefinition-uz-core-condition.html) (klinik ko'rsatma) va [Patient](StructureDefinition-uz-core-patient.html) profillangan.
+> Profillarning holati: [MedicationRequest](StructureDefinition-uz-core-medicationrequest.html) va [MedicationDispense](StructureDefinition-uz-core-medication-dispense.html) endi profillangan. Ularning ikkalasi ham hali eksperimental deb belgilangan, shuning uchun integratsiyani boshlashdan oldin ularni ko'rib chiqing. [Condition](StructureDefinition-uz-core-condition.html) (klinik ko'rsatma) va [Patient](StructureDefinition-uz-core-patient.html) profillangan.
 
 Ishtirokchilar: retsept yozuvchi klinitsist; farmatsevt; DHP (Digital Health Platform - Raqamli sog'liqni saqlash platformasi); SHIF.
 
