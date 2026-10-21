@@ -10,8 +10,6 @@
 
 <div>{% include lab-references.svg %}</div><br clear="all"/>
 
-> Статус профилирования: все четыре ресурса профилированы в UZ Core - [Specimen](StructureDefinition-uz-core-specimen.html), [Observation](StructureDefinition-uz-core-observation.html), [ServiceRequest](StructureDefinition-uz-core-servicerequest.html) и [DiagnosticReport](StructureDefinition-uz-core-diagnostic-report.html). В элементе `meta.profile` каждого ресурса укажите соответствующий профиль и настройте связи, как показано ниже.
-
 ### 1. Назначение исследования
 
 Клиницист создаёт [ServiceRequest](StructureDefinition-uz-core-servicerequest.html), указывая `intent = order`, исследование или панель в `code`, пациента в `subject`, инициатора запроса и `reasonCode`/`reasonReference` (состояние Condition, по поводу которого проводится исследование). Доступные для назначения исследования публикуются как записи [HealthcareService](StructureDefinition-uz-core-healthcareservice.html); в `priority` указывается `routine`, `urgent` или `asap`.
