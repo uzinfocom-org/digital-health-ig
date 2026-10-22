@@ -6,6 +6,6 @@ Description: "Settings where a medication is administered: inpatient, outpatient
 
 * ^experimental = true
 * ^extension[0].url = $valueset-supplement
-* ^extension[=].valueCanonical = Canonical(MedicationRequestAdminLocationCS)
+* ^extension[=].valueCanonical = Canonical(MedicationAdministrationAdminLocationCS)
 
-* include codes from system $medicationrequest-admin-location
+* include codes from system $medication-admin-location

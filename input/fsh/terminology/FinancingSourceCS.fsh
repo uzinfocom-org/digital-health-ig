@@ -1,7 +1,7 @@
 CodeSystem: FinancingSourceCS
 Id: financing-source-cs
 Title: "Financing sources"
-Description: "Sources of financing of a medication stock, with Uzbek, Russian and English designations"
+Description: "Sources of financing from which a medication stock was purchased, as distinct from the coverage of the patient treated. Uzbek, Russian and English designations."
 
 * insert OriginalCodeSystemDraft(financing-source-cs)
 

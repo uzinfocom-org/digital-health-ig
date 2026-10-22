@@ -251,3 +251,6 @@ Alias: $supply-delivery-number = https://dhp.uz/fhir/core/sid/doc/uz/supply-deli
 Alias: $inventoryitem-nametype = http://hl7.org/fhir/inventoryitem-nametype
 Alias: $inventoryitem-status = http://hl7.org/fhir/inventoryitem-status
 Alias: $inventory-item-number = https://dhp.uz/fhir/core/sid/doc/uz/inventory-item
+Alias: $event-location = http://hl7.org/fhir/StructureDefinition/event-location 
+Alias: $medication-admin-location = http://terminology.hl7.org/CodeSystem/medication-admin-location
+Alias: $openEHR-administration = http://hl7.org/fhir/StructureDefinition/openEHR-administration

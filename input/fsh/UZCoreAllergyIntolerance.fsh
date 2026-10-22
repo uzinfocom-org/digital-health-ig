@@ -32,6 +32,10 @@ Description: "Uzbekistan Core profile for AllergyIntolerance, representing clini
 * onset[x] MS
 * extension contains $allergyintolerance-abatement named abatement 0..1 MS
 * reaction MS
+  * extension contains
+      $openEHR-administration named administration 0..1 MS
+  * extension[administration] ^short = "Medication administration associated with this allergic reaction"
+  * extension[administration].valueReference only Reference(UZCoreMedicationAdministration)
   * severity MS
   * severity from AllergyReactionSeverityVS (required)
   * manifestation MS
@@ -75,7 +79,7 @@ Description: "Example instance conforming to UZCoreAllergyIntolerance."
 * reaction.severity = #severe
 * reaction.manifestation[0] = allergy-reaction-manifestation-cs#aller-0006-00004 "Shortness of breath"
 * reaction.substance = allergy-reaction-substance-cs#aller-0010-00031 "Walnut, pollen (Jug r_pollen)"
-
+* reaction[0].extension[administration].valueReference = Reference(example-paracetamol-administration)
 
 
 

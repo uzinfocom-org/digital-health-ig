@@ -34,7 +34,6 @@ Description: "Uzbekistan Core MedicationAdministration profile, used to record t
 * encounter only Reference(UZCoreEncounter)
 
 * occurence[x] MS
-* occurence[x] only dateTime or Period or Timing
 * occurence[x] ^short = "When the administration took place (or would have)."
 
 * recorded MS
@@ -50,16 +49,16 @@ Description: "Uzbekistan Core MedicationAdministration profile, used to record t
 * performer.actor ^short = "The specific individual or device that performed the administration."
 
 * reason MS
-* reason ^short = "Clinical justification for why the medication was given."
+* reason ^short = "Clinical reason for administering the medication, including treatment of an allergy or allergic condition. Not used to document an allergic reaction caused by the administration."
 * reason only CodeableReference(UZCoreCondition or UZCoreObservation or UZCoreDiagnosticReport)
 * reason from ReasonMedicationGivenVS (preferred)
 
 * request MS
-* request ^short = "The order this administration fulfills."
+* request only Reference(UZCoreMedicationRequest)
+* request ^short = "The prescription this administration fulfills."
 
 * device MS
-* device only CodeableReference(Device)
-* device from DeviceTypeVS (example)
+// * device only CodeableReference(UZCoreDevice)
 * device ^short = "Device used to administer the medication (e.g. infusion pump)."
 
 * note ^short = "Free-text remarks not captured elsewhere."
@@ -70,25 +69,19 @@ Description: "Uzbekistan Core MedicationAdministration profile, used to record t
 * dosage.dose only SimpleQuantity
 * dosage.dose ^short = "Amount given at one administration event (single/instantaneous doses)."
 * dosage.route MS
-* dosage.route from RouteCodeVS
+* dosage.route from RouteCodeVS (extensible)
 * dosage.site MS
 * dosage.site ^short = "Body site administered to"
-* dosage.site from SNOMEDCTAnatomicalStructureAdministrationSitesVS
+* dosage.site from BodySiteVS (preferred)
 * dosage.rate[x] MS
 * dosage.rate[x] ^short = "Speed of administration per unit of time (infusions)."
 
 * extension contains
-    RelatedAllergyIntoleranceMedAdministration named relatedAllergyIntolerance 0..1 MS and
-    LocationMedAdministration named location 0..1 MS and
-    MedicationSource named medicationSource 0..1
+    $event-location named location 0..1 MS and
+    MedicationAdministrationFundingSource named medicationAdministrationFundingSource 0..1
+* extension[location] ^short = "Location where the medication administration took place"
+* extension[location].valueReference only Reference(UZCoreLocation)
 
-* extension[relatedAllergyIntolerance] ^short = "Related allergy or intolerance for this administration"
-* extension[relatedAllergyIntolerance].valueReference only Reference(UZCoreAllergyIntolerance)
-
-* extension[location] ^short = "Organization/location where administration took place"
-* extension[location].valueReference only Reference(UZCoreOrganization)
-
-* extension[medicationSource].extension[financingSource].valueCodeableConcept from FinancingSourceVS (required)
 
 Instance: example-paracetamol-administration
 InstanceOf: UZCoreMedicationAdministration
@@ -96,25 +89,20 @@ Usage: #example
 Title: "Example UZ Core MedicationAdministration - Paracetamol"
 Description: "Example of a completed paracetamol administration"
 * status = #completed
-* statusReason = $medicationrequest-status-reason#non-avail
 * category = $medicationrequest-admin-location#inpatient
 * medication[0] = $sct#387517004 "Paracetamol"
-* subject = Reference(example-david)
-* encounter = Reference(example-encounter)
+* subject = Reference(example-salim)
+* request = Reference(example-medication-request)
 * occurenceDateTime = "2026-08-28"
 * recorded = "2026-08-28"
 
 * performer.function = $medication-administration-performer-function-codes#performer
 * performer.actor = Reference(example-practitioner)
 
-* reason = Reference(example-cancer)
-
-* device.concept = $sct#430033006 "Infusion pump"
+* reason.concept = $sct#25064002 "Headache"
 
 * dosage.dose = 500 'mg'
 * dosage.route = $sct#26643006 "Oral route"
-* dosage.site = $sct#368208006 "Left upper arm structure"
 
-* extension[location].valueReference = Reference(example-organization)
-* extension[relatedAllergyIntolerance].valueReference = Reference(example-grass-pollen-allergy)
-* extension[medicationSource].extension[financingSource].valueCodeableConcept = FinancingSourceCS#fnncl-0001-00004 "Budget"
+* extension[location].valueReference = Reference(example-location)
+* extension[medicationAdministrationFundingSource].valueCodeableConcept = financing-source-cs#fnncl-0001-00004 "Budget"
