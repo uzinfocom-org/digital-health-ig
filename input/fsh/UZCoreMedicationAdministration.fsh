@@ -66,7 +66,6 @@ Description: "Uzbekistan Core MedicationAdministration profile, used to record t
 * dosage MS
 * dosage ^short = "Dosage details of how the medication was administered. Requires at least one of text, dose, or rate[x]."
 * dosage.dose MS
-* dosage.dose only SimpleQuantity
 * dosage.dose ^short = "Amount given at one administration event (single/instantaneous doses)."
 * dosage.route MS
 * dosage.route from RouteCodeVS (extensible)
@@ -89,7 +88,7 @@ Usage: #example
 Title: "Example UZ Core MedicationAdministration - Paracetamol"
 Description: "Example of a completed paracetamol administration"
 * status = #completed
-* category = $medicationrequest-admin-location#inpatient
+* category = $medication-admin-location#inpatient
 * medication[0] = $sct#387517004 "Paracetamol"
 * subject = Reference(example-salim)
 * request = Reference(example-medication-request)

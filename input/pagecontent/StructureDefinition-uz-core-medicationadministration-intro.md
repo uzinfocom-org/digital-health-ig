@@ -40,7 +40,7 @@ The example below shows a completed 500 mg oral paracetamol administration. `med
   "status": "completed",
   "category": [{
     "coding": [{
-      "system": "http://terminology.hl7.org/CodeSystem/medicationrequest-admin-location",
+      "system": "http://terminology.hl7.org/CodeSystem/medication-admin-location",
       "code": "inpatient"
     }]
   }],
@@ -50,18 +50,17 @@ The example below shows a completed 500 mg oral paracetamol administration. `med
     }
   },
   "subject": { "reference": "Patient/example-salim" },
-  "encounter": { "reference": "Encounter/example-encounter" },
   "request": { "reference": "MedicationRequest/example-medication-request" },
   "occurenceDateTime": "2026-08-28",
   "recorded": "2026-08-28",
   "performer": [{
-    "function": [{
+    "function": {
       "coding": [{
-        "system": "http://terminology.hl7.org/CodeSystem/medication-admin-perform-function",
+        "system": "http://terminology.hl7.org/CodeSystem/med-admin-perform-function",
         "code": "performer"
       }]
-    }],
-    "actor": { "reference": "Practitioner/example-practitioner" }
+    },
+    "actor": { "reference": { "reference": "Practitioner/example-practitioner" } }
   }],
   "reason": [{
     "concept": {

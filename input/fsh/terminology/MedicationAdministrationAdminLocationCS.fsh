@@ -1,7 +1,7 @@
 CodeSystem: MedicationAdministrationAdminLocationCS
 Id: medicationadministration-admin-location-cs
-Title: "Medication Administration Admin Location Supplement CodeSystem"
-Description: "Supplement for medication administration location codes with Uzbek and Russian designations."
+Title: "MedicationAdministration admin location translations"
+Description: "MedicationAdministration admin location supplement with translations in Uzbek and Russian"
 
 * insert SupplementCodeSystemDraft(
     medicationadministration-admin-location-cs,

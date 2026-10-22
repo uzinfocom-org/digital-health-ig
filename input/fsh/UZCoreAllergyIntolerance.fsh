@@ -79,7 +79,27 @@ Description: "Example instance conforming to UZCoreAllergyIntolerance."
 * reaction.severity = #severe
 * reaction.manifestation[0] = allergy-reaction-manifestation-cs#aller-0006-00004 "Shortness of breath"
 * reaction.substance = allergy-reaction-substance-cs#aller-0010-00031 "Walnut, pollen (Jug r_pollen)"
-* reaction[0].extension[administration].valueReference = Reference(example-paracetamol-administration)
+
+Instance: example-analgesic-allergy
+InstanceOf: UZCoreAllergyIntolerance
+Usage: #example
+Title: "Example UZ Core AllergyIntolerance - Analgesic Allergy"
+Description: "Skin rash after a paracetamol dose, linked to the administration that caused it."
+
+* clinicalStatus = $allergy-clinical#active "Active"
+* verificationStatus = $allergy-verification#unconfirmed "Unconfirmed"
+* type = $allergy-intolerance-type#allergy "Allergy"
+* category = $allergy-category#medication "Medication"
+
+* code = allergen-codes-cs#aller-0010-00343 "Allergic reaction caused by analgesic"
+
+* patient = Reference(Patient/example-salim)
+
+* onsetDateTime = "2026-08-28"
+
+* reaction.severity = #mild
+* reaction.manifestation[0] = allergy-reaction-manifestation-cs#aller-0009-00002 "Skin rash"
+* reaction.extension[administration].valueReference = Reference(example-paracetamol-administration)
 
 
 

@@ -1,10 +1,10 @@
 CodeSystem: MedicationAdministrationStatusReasonCS
-Id: medication-administration-status-reason-cs
-Title: "Medication Administration Status Reason Supplement CodeSystem"
-Description: "SNOMED CT supplement containing Uzbek and Russian designations for medication administration status reason codes used in Uzbekistan."
+Id: medicationadministration-status-reason-cs
+Title: "MedicationAdministration status reason translations"
+Description: "MedicationAdministration status reason supplement with translations in Uzbek and Russian"
 
 * insert SupplementCodeSystemDraft(
-    medication-administration-status-reason-cs,
+    medicationadministration-status-reason-cs,
     $sct,
     2026.1.0
 )

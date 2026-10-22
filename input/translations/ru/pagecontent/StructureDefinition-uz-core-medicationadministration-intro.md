@@ -36,14 +36,13 @@ UZ Core MedicationAdministration регистрирует событие вве�
   "resourceType": "MedicationAdministration",
   "meta": { "profile": ["https://dhp.uz/fhir/core/StructureDefinition/uz-core-medicationadministration"] },
   "status": "completed",
-  "category": [{ "coding": [{ "system": "http://terminology.hl7.org/CodeSystem/medicationrequest-admin-location", "code": "inpatient" }] }],
+  "category": [{ "coding": [{ "system": "http://terminology.hl7.org/CodeSystem/medication-admin-location", "code": "inpatient" }] }],
   "medication": { "concept": { "coding": [{ "system": "http://snomed.info/sct", "code": "387517004", "display": "Paracetamol" }] } },
   "subject": { "reference": "Patient/example-salim" },
-  "encounter": { "reference": "Encounter/example-encounter" },
   "request": { "reference": "MedicationRequest/example-medication-request" },
   "occurenceDateTime": "2026-08-28",
   "recorded": "2026-08-28",
-  "performer": [{ "function": [{ "coding": [{ "system": "http://terminology.hl7.org/CodeSystem/medication-admin-perform-function", "code": "performer" }] }], "actor": { "reference": "Practitioner/example-practitioner" } }],
+  "performer": [{ "function": { "coding": [{ "system": "http://terminology.hl7.org/CodeSystem/med-admin-perform-function", "code": "performer" }] }, "actor": { "reference": { "reference": "Practitioner/example-practitioner" } } }],
   "reason": [{ "concept": { "coding": [{ "system": "http://snomed.info/sct", "code": "25064002", "display": "Headache" }] } }],
   "dosage": { "dose": { "value": 500, "unit": "mg", "system": "http://unitsofmeasure.org", "code": "mg" }, "route": { "coding": [{ "system": "http://snomed.info/sct", "code": "26643006", "display": "Oral route" }] } }
 }
