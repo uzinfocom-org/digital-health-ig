@@ -13,3 +13,5 @@ Description: "Defines encounter type codes with English and Russian translations
 * include encounter-type-cs#mserv-0001-00006
 * include encounter-type-cs#mserv-0001-00007
 * include encounter-type-cs#mserv-0001-00008
+
+* include codes from system encounter-type-ambulance-cs
