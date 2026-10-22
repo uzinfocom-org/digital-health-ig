@@ -196,3 +196,14 @@ Description: "Extension to specify a trustee (RelatedPerson or PractitionerRole)
 Context: MedicationRequest
 * ^experimental = true
 * value[x] only Reference(UZCoreRelatedPerson or UZCorePractitionerRole)
+
+Extension: MedicationAdministrationFundingSource
+Id: medicationadministration-funding-source
+Title: "Funding source"
+Description: "The funding line from which the administered medication stock was purchased. This may differ from the coverage the patient is treated under."
+Context: MedicationAdministration
+* ^experimental = true
+
+* value[x] only CodeableConcept
+* valueCodeableConcept from FinancingSourceVS (extensible)
+

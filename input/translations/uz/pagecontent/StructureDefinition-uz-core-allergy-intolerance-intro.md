@@ -121,3 +121,9 @@ Allergiyani bartaraf bo'lgan deb belgilash uchun `clinicalStatus` elementiga `re
 To'g'ri kodlangan qiymatlarni tanlash bo'yicha [Yetishmayotgan va ko'rsatilmaydigan ma'lumotlar](general-guidance.html#missing-data) hamda [terminologiya bo'yicha ko'rsatmalarga](general-guidance.html#terminology) qarang.
 
 API chaqiruvlari namunalari va namunaviy so'rov tanasi uchun ushbu sahifaning pastki qismidagi [Tezkor boshlash](#quick-start) bo'limiga qarang.
+
+### Dori yuborilishi bilan bog'liqlik
+
+Agar dori yuborilishi allergik reaksiyaga sabab bo'lsa, reaksiyani `AllergyIntolerance.reaction` da qayd eting va uni standart `openEHR-administration` extensioni (`valueReference`) orqali `MedicationAdministration` resursiga bog'lang. Bu havola dori yuborilishi reaksiya bilan bog'liqligini bildiradi. Ushbu sababiy bog'lanish uchun `MedicationAdministration.reason` dan foydalanmang.
+
+Agar dori allergiya yoki allergik holatni davolash uchun yuborilgan bo'lsa, klinik ko'rsatmani `MedicationAdministration.reason` da qayd eting. `reason` dori nima sababdan yuborilganini tushuntiradi; u dori reaksiyaga sabab bo'lganini bildirmaydi. Bular turli klinik munosabatlar bo'lib, ikkala holat ham mavjud bo'lsa, ikkalasi ham qayd etilishi mumkin.

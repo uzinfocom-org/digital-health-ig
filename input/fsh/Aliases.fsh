@@ -1,3 +1,7 @@
+Alias: $medication-administration-performer-function-codes = http://terminology.hl7.org/CodeSystem/med-admin-perform-function
+Alias: $medication-administration-status-codes = http://hl7.org/fhir/CodeSystem/medication-admin-status
+Alias: $reason-medication-given-codes = http://terminology.hl7.org/CodeSystem/reason-medication-given
+
 // Alias: $encounter-class = https://terminology.dhp.uz/fhir/core/ValueSet/encounter-class
 Alias: $medicationdispense-admin-location = http://hl7.org/fhir/medicationdispense-admin-location
 Alias: $medicationdispense-status-reason = http://hl7.org/fhir/CodeSystem/medicationdispense-status-reason
@@ -247,3 +251,6 @@ Alias: $supply-delivery-number = https://dhp.uz/fhir/core/sid/doc/uz/supply-deli
 Alias: $inventoryitem-nametype = http://hl7.org/fhir/inventoryitem-nametype
 Alias: $inventoryitem-status = http://hl7.org/fhir/inventoryitem-status
 Alias: $inventory-item-number = https://dhp.uz/fhir/core/sid/doc/uz/inventory-item
+Alias: $event-location = http://hl7.org/fhir/StructureDefinition/event-location 
+Alias: $medication-admin-location = http://terminology.hl7.org/CodeSystem/medication-admin-location
+Alias: $openEHR-administration = http://hl7.org/fhir/StructureDefinition/openEHR-administration
