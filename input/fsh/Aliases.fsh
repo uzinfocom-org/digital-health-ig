@@ -212,6 +212,7 @@ Alias: $claim-use = http://hl7.org/fhir/claim-use
 Alias: $currencies-vs = http://hl7.org/fhir/ValueSet/currencies
 Alias: $permitted-data-type = http://hl7.org/fhir/permitted-data-type
 Alias: $fertility-questionnaire-cs = http://terminology.hl7.org/CodeSystem/v2-0532
+Alias: $v2-0532 = http://terminology.hl7.org/CodeSystem/v2-0532
 Alias: $ordinal-value = http://hl7.org/fhir/StructureDefinition/ordinalValue
 Alias: $variable = http://hl7.org/fhir/StructureDefinition/variable
 
