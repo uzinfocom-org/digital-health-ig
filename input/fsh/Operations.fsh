@@ -239,7 +239,7 @@ Usage: #definition
 * purpose = "A patient is served by the primary-care organization (polyclinic) and the practitioner (family doctor) they are attached to. This operation is the single entry point for recording that attachment on the Patient. Without it a client would have to read the Patient, edit managingOrganization, generalPractitioner and the attachment-date extension by hand and write the resource back with update, with no check that the organization and the practitioner exist. With the operation the client sends only what changes, and the server checks the organization and the practitioner against the master data registry, resolves business identifiers to references, keeps both sides of the attachment consistent and stores the attachment date that the client needs to enforce the once-a-year reattachment rule. The type-level call lets a client that knows only the patient's PINFL attach the patient without a prior Patient/$populate."
 * affectsState = true
 * code = #attach
-* comment = "At least one of `organization` and `practitioner` must be supplied, otherwise an OperationOutcome with code `required` is returned. Changing one side of the attachment detaches the other: when the organization changes and no `practitioner` is supplied, Patient.generalPractitioner is cleared; when the practitioner changes and no `organization` is supplied, Patient.managingOrganization is cleared and the attachment date is set to the current server date. When the supplied organization equals the current one, neither the reference nor the attachment date is changed. Repeated identical calls do not create a new version of the Patient. At type level the patient is resolved by PINFL in the same way as Patient/$populate and is created if it does not exist yet, so a single type-level call replaces the $populate + $attach pair. If the Patient was modified concurrently between read and write, the operation fails with HTTP 412 and does not overwrite the other change; the client should retry. The operation does not enforce the rule that a patient may change organization no more than once a year, does not check that the practitioner works in the given organization, does not look at Patient.active or Patient.deceased, and does not support detachment."
+* comment = "At least one of `organization` and `practitioner` must be supplied, otherwise an OperationOutcome with code `required` is returned. Changing one side of the attachment detaches the other: when the organization changes and no `practitioner` is supplied, Patient.generalPractitioner is cleared; when the practitioner changes and no `organization` is supplied, Patient.managingOrganization is cleared and the attachment date is set to the current server date. When the supplied organization equals the current one, neither the reference nor the attachment date is changed. Repeated identical calls do not create a new version of the Patient. At type level the patient is resolved by PINFL in the same way as Patient/$populate and is created if it does not exist yet, so a single type-level call replaces the $populate + $attach pair. If the Patient was modified concurrently between read and write, the operation fails with HTTP 412 and does not overwrite the other change; the client should retry. The operation does not enforce the rule that a patient may change organization no more than once a year, does not check that the practitioner works in the given organization, and does not look at Patient.active or Patient.deceased. Detachment is done with Patient/$detach."
 * resource = #Patient
 * system = false
 * type = true
@@ -286,6 +286,42 @@ Usage: #definition
 * parameter[=].min = 1
 * parameter[=].max = "1"
 * parameter[=].documentation = "The updated Patient resource. If the call changed nothing, the current version is returned and no new version is created."
+* parameter[=].type = #Patient
+
+Instance: patient-detach
+InstanceOf: OperationDefinition
+Description: "Detach a patient from the managing organization and the general practitioner"
+Usage: #definition
+* url = "https://dhp.uz/fhir/core/OperationDefinition/patient-detach"
+* name = "PatientDetach"
+* title = "Detach a patient from the managing organization and the general practitioner"
+* status = #draft
+* kind = #operation
+* experimental = false
+* date = "2026-10-22"
+* publisher = "Ministry of Health of the Republic of Uzbekistan"
+* jurisdiction = urn:iso:std:iso:3166#UZ "Uzbekistan"
+* description = "Detaches the patient from both the managing organization and the general practitioner in one call. The server clears Patient.managingOrganization and Patient.generalPractitioner and removes the `https://dhp.uz/fhir/core/StructureDefinition/managing-organization-attachment` extension set by Patient/$attach; other extensions are kept. The operation is invoked at instance level only (Patient/[id]/$detach) with POST and a Parameters body. The response is the Patient resource, not Parameters."
+* purpose = "The reverse of Patient/$attach: where $attach records the attachment, $detach removes it in one call, for example when the patient has applied to be detached."
+* affectsState = true
+* code = #detach
+* comment = "The update goes through the regular update path with the version of the read resource, so if the Patient was modified concurrently the operation fails with HTTP 412. If the patient has neither an organization, nor a practitioner, nor the attachment extension, no new version is created and the current resource is returned. The reason is validated and logged but is not stored in the Patient resource. Detaching only the organization or only the practitioner is not supported; use Patient/$attach to change one side of the attachment."
+* resource = #Patient
+* system = false
+* type = false
+* instance = true
+
+* parameter[+].name = #reason
+* parameter[=].use = #in
+* parameter[=].min = 1
+* parameter[=].max = "1"
+* parameter[=].documentation = "Reason for detaching the patient. Must carry a non-empty text or at least one coding with a non-empty code, otherwise the request is rejected with 400 and issue code `value`. A missing reason is rejected with 400 and issue code `required`."
+* parameter[=].type = #CodeableConcept
+* parameter[+].name = #return
+* parameter[=].use = #out
+* parameter[=].min = 1
+* parameter[=].max = "1"
+* parameter[=].documentation = "The Patient resource after detachment, or the current resource when there was nothing to detach."
 * parameter[=].type = #Patient
 
 Instance: patient-relate

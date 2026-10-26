@@ -8,6 +8,16 @@ The [specialist certificate](NamingSystem-uzb-specialist-certificate.html) ident
 
 Two more platform operations are published as OperationDefinitions. [Patient/$attach](OperationDefinition-patient-attach.html) records a patient's attachment to a polyclinic (`managingOrganization`, with the attachment date in the [managing organization attachment](StructureDefinition-managing-organization-attachment.html) extension) and/or a family doctor (`generalPractitioner`) in one call, checking both against the master data registry and resolving business identifiers to references; at type level it finds or creates the patient by PINFL, so it replaces the `$populate` + `$attach` pair. [Patient/$relate](OperationDefinition-patient-relate.html) records a confirmed parent-child relationship: it checks the kinship against the Ministry of Justice child registry, finds or creates the child Patient by PINFL, and creates a RelatedPerson for the parent, returning the relation, the child and the outcome in one Bundle.
 
+[Patient/$detach](OperationDefinition-patient-detach.html) is the reverse of `$attach`: it clears `managingOrganization` and `generalPractitioner` and removes the attachment date extension in one call, with a mandatory `reason`.
+
+[UZ Core Medication](StructureDefinition-uz-core-medication.html) now has the narrative intro and Quick Start that the other profiles carry: the mandatory and Must Support elements, how to find an existing medication by registry identifier (registration certificate, GTIN, Asl Belgisi marking, ICPS, box group) or by INN / ATC code before registering a new one, step-by-step JSON examples, and the identifier slices table.
+
+#### Changed
+
+[UZ Core Patient](StructureDefinition-uz-core-patient.html) and [UZ Core Practitioner](StructureDefinition-uz-core-practitioner.html) declare the `translation` extension on `name.text`, `family`, `given` and `suffix`: the name is in Uzbek, and its Russian and Karakalpak forms travel in one `HumanName` instead of a second name. The [Nodira](Patient-example-nodira.html) and [practitioner](Practitioner-example-practitioner.html) examples carry Russian forms, and both profile pages describe the pattern.
+
+The [action code supplement](CodeSystem-action-code-cs.html) gives Uzbek and Russian designations to `order-service`, which the [regional screening PlanDefinition example](PlanDefinition-example-uz-core-regional-screening-plan-definition.html) uses.
+
 ### Version 0.11.1
 
 #### Added

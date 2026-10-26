@@ -1,8 +1,6 @@
 Ushbu jarayon yo'llanma qanday yaratilishi va bajarilishini ko'rsatadi. Yo'llanmalar bilan ishlashda dasturchilar ko'pincha qiyinchilikka duch keladi, chunki bu jarayonda ikkita resurs ishtirok etadi va ularning o'zaro bog'liqligi profil jadvallaridan aniq ko'rinmaydi. Asosiy qoida bir jumlada quyidagicha:
 
-> `ServiceRequest` - yo'llanmaning o'zi, ya'ni *nima* bajarilishi kerakligini ifodalaydi. `Task` - uni bajarish bo'yicha ishni, ya'ni ishni *kim* bajargani, *qachon* bajargani va *qaysi bosqichda* ekanini ifodalaydi.
-
-> Profillarning holati: ikkala resurs ham endi profillangan - yo'llanmaning o'zi uchun [UZ Core ServiceRequest](StructureDefinition-uz-core-servicerequest.html), kelishish bosqichlari uchun esa [UZ Core Task Referral Approval](StructureDefinition-uz-core-referral-approval-task.html). Ularning ikkalasi ham hali eksperimental deb belgilangan, shuning uchun integratsiyani boshlashdan oldin ularni ko'rib chiqing. Yo'llanmani bajarishda qo'llaniladigan [Procedure](StructureDefinition-uz-core-procedure.html), [Observation](StructureDefinition-uz-core-observation.html), [Encounter](StructureDefinition-uz-core-encounter.html) va [Condition](StructureDefinition-uz-core-condition.html) resurslari profillangan.
+> [`ServiceRequest`](StructureDefinition-uz-core-servicerequest.html) - yo'llanmaning o'zi, ya'ni *nima* bajarilishi kerakligini ifodalaydi. [`Task`](StructureDefinition-uz-core-referral-approval-task.html) - uni bajarish bo'yicha ishni, ya'ni ishni *kim* bajargani, *qachon* bajargani va *qaysi bosqichda* ekanini ifodalaydi.
 
 Ishtirokchilar: yo'llanma beruvchi klinitsist; kelishish komissiyalari (davlat tomonidan moliyalashtiriladigan yo'llanmalar uchun); xizmat ko'rsatuvchi tibbiyot tashkiloti.
 
