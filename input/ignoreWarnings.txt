@@ -72,3 +72,178 @@ The Binding on the type slicer Questionnaire.item.answerOption.value[x] applies 
 # IG Publisher 3.0.0 generates the narrative of a canonical resource example once per IG language
 # (en, ru, uz) and gives each copy the same "metadata" anchor, then flags its own output.
 The XHTML  the resource contains more than one node for each of the following node ids and anchor names: metadata (3x)
+
+# IG Publisher 3.0.1 warns when two source codes are both mapped to one target as 'equivalent'. Each line below is
+# one exact pair that is a genuine synonym in its source system.
+# lab-units-cs exists to normalise the unit spellings laboratories actually send (mmol/l, mmol/L, Mmol/L ...).
+%The codes AU/ml and AU/mL are both mapped to [arb'U]/mL as 'equivalent', which means that they have the same meaning%
+%The codes G/L and 10*9/L are both mapped to 10*9/L as 'equivalent', which means that they have the same meaning%
+%The codes G/L and 10^9/L are both mapped to 10*9/L as 'equivalent', which means that they have the same meaning%
+%The codes IU/ml and IU/mL are both mapped to [IU]/mL as 'equivalent', which means that they have the same meaning%
+%The codes IU/ml and ME/ml are both mapped to [IU]/mL as 'equivalent', which means that they have the same meaning%
+%The codes IU/ml and Me/ml are both mapped to [IU]/mL as 'equivalent', which means that they have the same meaning%
+%The codes Mcg/l and mkg/l are both mapped to ug/L as 'equivalent', which means that they have the same meaning%
+%The codes Mcg/ml and mkg/ml are both mapped to ug/mL as 'equivalent', which means that they have the same meaning%
+%The codes Ml and ml are both mapped to mL as 'equivalent', which means that they have the same meaning%
+%The codes mcg/dl and ug/dL are both mapped to ug/dL as 'equivalent', which means that they have the same meaning%
+%The codes mcg/dl and ug/dl are both mapped to ug/dL as 'equivalent', which means that they have the same meaning%
+%The codes mcg/dl and μg/dL are both mapped to ug/dL as 'equivalent', which means that they have the same meaning%
+%The codes me/l and IU/L are both mapped to [IU]/L as 'equivalent', which means that they have the same meaning%
+%The codes me/l and Me/l are both mapped to [IU]/L as 'equivalent', which means that they have the same meaning%
+%The codes mg/% and mg/dL are both mapped to mg/dL as 'equivalent', which means that they have the same meaning%
+%The codes mg/l and Mg/l are both mapped to mg/L as 'equivalent', which means that they have the same meaning%
+%The codes mg/l and mg/L are both mapped to mg/L as 'equivalent', which means that they have the same meaning%
+%The codes min and минут are both mapped to min as 'equivalent', which means that they have the same meaning%
+%The codes mkl and мкл are both mapped to uL as 'equivalent', which means that they have the same meaning%
+%The codes mkmol/l and mkmol/L are both mapped to umol/L as 'equivalent', which means that they have the same meaning%
+%The codes mkmol/l and µmol/L are both mapped to umol/L as 'equivalent', which means that they have the same meaning%
+%The codes mkmol/l and µmol/l are both mapped to umol/L as 'equivalent', which means that they have the same meaning%
+%The codes mlU/mL and mIU/mL are both mapped to m[IU]/mL as 'equivalent', which means that they have the same meaning%
+%The codes mlU/mL and mIU/ml are both mapped to m[IU]/mL as 'equivalent', which means that they have the same meaning%
+%The codes mlU/mL and mlU/ml are both mapped to m[IU]/mL as 'equivalent', which means that they have the same meaning%
+%The codes mmol/d and Mmol/D are both mapped to mmol/d as 'equivalent', which means that they have the same meaning%
+%The codes mmol/l and Mmol/L are both mapped to mmol/L as 'equivalent', which means that they have the same meaning%
+%The codes mmol/l and mmol/L are both mapped to mmol/L as 'equivalent', which means that they have the same meaning%
+%The codes ng/mL and Ng/ml are both mapped to ng/mL as 'equivalent', which means that they have the same meaning%
+%The codes ng/mL and ng/ml are both mapped to ng/mL as 'equivalent', which means that they have the same meaning%
+%The codes nmol/l and nmol/L are both mapped to nmol/L as 'equivalent', which means that they have the same meaning%
+%The codes pH and PH are both mapped to [pH] as 'equivalent', which means that they have the same meaning%
+%The codes pg/ml and pg/mL are both mapped to pg/mL as 'equivalent', which means that they have the same meaning%
+%The codes sec and sek are both mapped to s as 'equivalent', which means that they have the same meaning%
+%The codes sec and сек are both mapped to s as 'equivalent', which means that they have the same meaning%
+%The codes yed/l and U/L are both mapped to U/L as 'equivalent', which means that they have the same meaning%
+%The codes yed/ml and U/ml are both mapped to U/mL as 'equivalent', which means that they have the same meaning%
+%The codes п/з and в п/з are both mapped to {per_HPF} as 'equivalent', which means that they have the same meaning%
+%The codes п/з and в п/зр are both mapped to {per_HPF} as 'equivalent', which means that they have the same meaning%
+# dmed-measure-unit-cs and unit-of-measurement-cs carry DMED's duplicate unit entries (микрограмм twice, мл and
+# миллилитр, МБк and мегабеккерель, rezerford = megabecquerel, ЕД and единица действия) that denote one UCUM unit.
+%The codes 1 and 565 are both mapped to ug as 'equivalent', which means that they have the same meaning%
+%The codes 2 and 567 are both mapped to mg as 'equivalent', which means that they have the same meaning%
+%The codes 2 and 569 are both mapped to mg as 'equivalent', which means that they have the same meaning%
+%The codes 26 and 570 are both mapped to ug/mL as 'equivalent', which means that they have the same meaning%
+%The codes 279 and 266 are both mapped to [ELU] as 'equivalent', which means that they have the same meaning%
+%The codes 320 and 294 are both mapped to MBq as 'equivalent', which means that they have the same meaning%
+%The codes 322 and 325 are both mapped to [TCID_50] as 'equivalent', which means that they have the same meaning%
+%The codes 37 and 571 are both mapped to kg as 'equivalent', which means that they have the same meaning%
+%The codes 42 and 606 are both mapped to MBq as 'equivalent', which means that they have the same meaning%
+%The codes 491 and 78 are both mapped to ug/{dose} as 'equivalent', which means that they have the same meaning%
+%The codes 493 and 531 are both mapped to [iU] as 'equivalent', which means that they have the same meaning%
+%The codes 494 and 566 are both mapped to mL as 'equivalent', which means that they have the same meaning%
+%The codes 496 and 608 are both mapped to [FFU] as 'equivalent', which means that they have the same meaning%
+%The codes 50 and 489 are both mapped to [Lf] as 'equivalent', which means that they have the same meaning%
+%The codes 530 and 54 are both mapped to [CFU] as 'equivalent', which means that they have the same meaning%
+%The codes 604 and 52 are both mapped to U as 'equivalent', which means that they have the same meaning%
+%The codes 63 and 67 are both mapped to [ELU] as 'equivalent', which means that they have the same meaning%
+%The codes 65 and 609 are both mapped to [TCID_50] as 'equivalent', which means that they have the same meaning%
+%The codes 81 and 418 are both mapped to mg/mL as 'equivalent', which means that they have the same meaning%
+# lab-pan-cs lists each analyte once per panel, so blood count indices appear in both the manual and the analyser
+# blood count panel, and lipids, thyroid hormones, cortisol, vitamin D and TORCH IgG in several panels.
+%The codes lab-pan-142 and lab-pan-256 are both mapped to 2093-3 as 'equivalent', which means that they have the same meaning%
+%The codes lab-pan-142 and lab-pan-360 are both mapped to 2093-3 as 'equivalent', which means that they have the same meaning%
+%The codes lab-pan-143 and lab-pan-361 are both mapped to 2571-8 as 'equivalent', which means that they have the same meaning%
+%The codes lab-pan-166 and lab-pan-377 are both mapped to 3016-3 as 'equivalent', which means that they have the same meaning%
+%The codes lab-pan-166 and lab-pan-464 are both mapped to 3016-3 as 'equivalent', which means that they have the same meaning%
+%The codes lab-pan-169 and lab-pan-394 are both mapped to 2143-6 as 'equivalent', which means that they have the same meaning%
+%The codes lab-pan-231 and lab-pan-369 are both mapped to 13949-3 as 'equivalent', which means that they have the same meaning%
+%The codes lab-pan-304 and lab-pan-306 are both mapped to 11119-5 as 'equivalent', which means that they have the same meaning%
+%The codes lab-pan-371 and lab-pan-446 are both mapped to 22580-5 as 'equivalent', which means that they have the same meaning%
+%The codes lab-pan-385 and lab-pan-458 are both mapped to 62292-8 as 'equivalent', which means that they have the same meaning%
+%The codes lab-pan-462 and lab-pan-465 are both mapped to 3051-0 as 'equivalent', which means that they have the same meaning%
+%The codes lab-pan-463 and lab-pan-466 are both mapped to 3024-7 as 'equivalent', which means that they have the same meaning%
+%The codes lab-pan-74 and lab-pan-119 are both mapped to 718-7 as 'equivalent', which means that they have the same meaning%
+%The codes lab-pan-75 and lab-pan-118 are both mapped to 789-8 as 'equivalent', which means that they have the same meaning%
+%The codes lab-pan-77 and lab-pan-121 are both mapped to 787-2 as 'equivalent', which means that they have the same meaning%
+%The codes lab-pan-78 and lab-pan-122 are both mapped to 785-6 as 'equivalent', which means that they have the same meaning%
+%The codes lab-pan-79 and lab-pan-123 are both mapped to 786-4 as 'equivalent', which means that they have the same meaning%
+%The codes lab-pan-80 and lab-pan-124 are both mapped to 788-0 as 'equivalent', which means that they have the same meaning%
+%The codes lab-pan-81 and lab-pan-120 are both mapped to 4544-3 as 'equivalent', which means that they have the same meaning%
+%The codes lab-pan-82 and lab-pan-126 are both mapped to 777-3 as 'equivalent', which means that they have the same meaning%
+%The codes lab-pan-83 and lab-pan-127 are both mapped to 32623-1 as 'equivalent', which means that they have the same meaning%
+%The codes lab-pan-84 and lab-pan-128 are both mapped to 32207-3 as 'equivalent', which means that they have the same meaning%
+%The codes lab-pan-85 and lab-pan-129 are both mapped to 51637-7 as 'equivalent', which means that they have the same meaning%
+%The codes lab-pan-86 and lab-pan-107 are both mapped to 6690-2 as 'equivalent', which means that they have the same meaning%
+# countries-digital-mvd-cs has the same country under two MVD codes (Latin and Cyrillic spelling, or the former name Zaire).
+%The codes 138 and 500 are both mapped to CD as 'equivalent', which means that they have the same meaning%
+%The codes 145 and 739001136 are both mapped to CV as 'equivalent', which means that they have the same meaning%
+%The codes 156 and 242 are both mapped to KG as 'equivalent', which means that they have the same meaning%
+%The codes 62 and 739001137 are both mapped to KP as 'equivalent', which means that they have the same meaning%
+# dmed-specialties-cs duplicates (Pediatr / Bolalar pediatri, Ortodontist / Ортодонт, Patolog twice ...) and
+# allergy-reaction-manifestation-cs 'Nafas siqishi' / 'Xavo yetishmasligi', both dyspnoea.
+%The codes 210 and 999 are both mapped to 2212.45 as 'equivalent', which means that they have the same meaning%
+%The codes 235 and 760 are both mapped to 2212.89 as 'equivalent', which means that they have the same meaning%
+%The codes 249 and 195 are both mapped to 2212.84 as 'equivalent', which means that they have the same meaning%
+%The codes 359 and 759 are both mapped to 2212.71 as 'equivalent', which means that they have the same meaning%
+%The codes 367 and 632 are both mapped to 2212.125 as 'equivalent', which means that they have the same meaning%
+%The codes 422 and 263 are both mapped to 2212.159 as 'equivalent', which means that they have the same meaning%
+%The codes 426 and 451 are both mapped to 2212.88 as 'equivalent', which means that they have the same meaning%
+%The codes 443 and 446 are both mapped to 2212.19 as 'equivalent', which means that they have the same meaning%
+%The codes 456 and 962 are both mapped to 2212.120 as 'equivalent', which means that they have the same meaning%
+%The codes 594 and 561 are both mapped to 2261.5 as 'equivalent', which means that they have the same meaning%
+%The codes 597 and 861 are both mapped to 3230-004 as 'equivalent', which means that they have the same meaning%
+%The codes 635 and 636 are both mapped to 2212.117 as 'equivalent', which means that they have the same meaning%
+%The codes 776 and 777 are both mapped to 2212.70 as 'equivalent', which means that they have the same meaning%
+%The codes aller-0006-00003 and aller-0006-00004 are both mapped to 267036007 as 'equivalent', which means that they have the same meaning%
+
+# IG Publisher 3.0.1 also warns when code A is mapped to a target as 'equivalent' and code B to the same target as
+# narrower or broader, unless the source code system says A subsumes B. dmed-specialties-cs is DMED's flat position
+# registry, which we mirror and do not restructure, so these correct narrower mappings of paediatric and sub-specialty
+# positions cannot be backed by a hierarchy.
+%The code 193 is mapped to 2212.14 as 'equivalent', and 366 is mapped to 2212.14 as 'source-is-narrower-than-target', which means that 193 should subsume 366, but it does not%
+%The code 210 is mapped to 2212.45 as 'equivalent', and 303 is mapped to 2212.45 as 'source-is-narrower-than-target', which means that 210 should subsume 303, but it does not%
+%The code 210 is mapped to 2212.45 as 'equivalent', and 761 is mapped to 2212.45 as 'source-is-narrower-than-target', which means that 210 should subsume 761, but it does not%
+%The code 222 is mapped to 2211.3 as 'equivalent', and 460 is mapped to 2211.3 as 'source-is-narrower-than-target', which means that 222 should subsume 460, but it does not%
+%The code 222 is mapped to 2211.3 as 'equivalent', and 461 is mapped to 2211.3 as 'source-is-narrower-than-target', which means that 222 should subsume 461, but it does not%
+%The code 229 is mapped to 2212.69 as 'equivalent', and 772 is mapped to 2212.69 as 'source-is-narrower-than-target', which means that 229 should subsume 772, but it does not%
+%The code 232 is mapped to 2352-012 as 'equivalent', and 272 is mapped to 2352-012 as 'source-is-narrower-than-target', which means that 232 should subsume 272, but it does not%
+%The code 238 is mapped to 2212.90 as 'equivalent', and 784 is mapped to 2212.90 as 'source-is-narrower-than-target', which means that 238 should subsume 784, but it does not%
+%The code 241 is mapped to 2212-046 as 'equivalent', and 430 is mapped to 2212-046 as 'source-is-narrower-than-target', which means that 241 should subsume 430, but it does not%
+%The code 243 is mapped to 2212.139 as 'equivalent', and 642 is mapped to 2212.139 as 'source-is-narrower-than-target', which means that 243 should subsume 642, but it does not%
+%The code 243 is mapped to 2212.139 as 'equivalent', and 758 is mapped to 2212.139 as 'source-is-narrower-than-target', which means that 243 should subsume 758, but it does not%
+%The code 243 is mapped to 2212.139 as 'equivalent', and 768 is mapped to 2212.139 as 'source-is-narrower-than-target', which means that 243 should subsume 768, but it does not%
+%The code 243 is mapped to 2212.139 as 'equivalent', and 770 is mapped to 2212.139 as 'source-is-narrower-than-target', which means that 243 should subsume 770, but it does not%
+%The code 244 is mapped to 2212-159 as 'equivalent', and 231 is mapped to 2212-159 as 'source-is-narrower-than-target', which means that 244 should subsume 231, but it does not%
+%The code 244 is mapped to 2212-159 as 'equivalent', and 288 is mapped to 2212-159 as 'source-is-narrower-than-target', which means that 244 should subsume 288, but it does not%
+%The code 244 is mapped to 2212-159 as 'equivalent', and 289 is mapped to 2212-159 as 'source-is-narrower-than-target', which means that 244 should subsume 289, but it does not%
+%The code 246 is mapped to 2212-060 as 'equivalent', and 301 is mapped to 2212-060 as 'source-is-narrower-than-target', which means that 246 should subsume 301, but it does not%
+%The code 251 is mapped to 2131.28 as 'equivalent', and 767 is mapped to 2131.28 as 'source-is-narrower-than-target', which means that 251 should subsume 767, but it does not%
+%The code 256 is mapped to 2212.101 as 'equivalent', and 769 is mapped to 2212.101 as 'source-is-narrower-than-target', which means that 256 should subsume 769, but it does not%
+%The code 271 is mapped to 2212.74 as 'equivalent', and 448 is mapped to 2212.74 as 'source-is-narrower-than-target', which means that 271 should subsume 448, but it does not%
+%The code 281 is mapped to 2212.95 as 'equivalent', and 779 is mapped to 2212.95 as 'source-is-narrower-than-target', which means that 281 should subsume 779, but it does not%
+%The code 284 is mapped to 3221.2 as 'equivalent', and 419 is mapped to 3221.2 as 'source-is-narrower-than-target', which means that 284 should subsume 419, but it does not%
+%The code 284 is mapped to 3221.2 as 'equivalent', and 441 is mapped to 3221.2 as 'source-is-narrower-than-target', which means that 284 should subsume 441, but it does not%
+%The code 284 is mapped to 3221.2 as 'equivalent', and 637 is mapped to 3221.2 as 'source-is-narrower-than-target', which means that 284 should subsume 637, but it does not%
+%The code 284 is mapped to 3221.2 as 'equivalent', and 832 is mapped to 3221.2 as 'source-is-narrower-than-target', which means that 284 should subsume 832, but it does not%
+%The code 290 is mapped to 2265.1 as 'equivalent', and 775 is mapped to 2265.1 as 'source-is-narrower-than-target', which means that 290 should subsume 775, but it does not%
+%The code 294 is mapped to 2131.9 as 'equivalent', and 782 is mapped to 2131.9 as 'source-is-narrower-than-target', which means that 294 should subsume 782, but it does not%
+%The code 297 is mapped to 2212.17 as 'equivalent', and 783 is mapped to 2212.17 as 'source-is-narrower-than-target', which means that 297 should subsume 783, but it does not%
+%The code 297 is mapped to 2212.17 as 'equivalent', and 823 is mapped to 2212.17 as 'source-is-narrower-than-target', which means that 297 should subsume 823, but it does not%
+%The code 297 is mapped to 2212.17 as 'equivalent', and 824 is mapped to 2212.17 as 'source-is-narrower-than-target', which means that 297 should subsume 824, but it does not%
+%The code 297 is mapped to 2212.17 as 'equivalent', and 825 is mapped to 2212.17 as 'source-is-narrower-than-target', which means that 297 should subsume 825, but it does not%
+%The code 297 is mapped to 2212.17 as 'equivalent', and 896 is mapped to 2212.17 as 'source-is-narrower-than-target', which means that 297 should subsume 896, but it does not%
+%The code 353 is mapped to 2212.142 as 'equivalent', and 773 is mapped to 2212.142 as 'source-is-narrower-than-target', which means that 353 should subsume 773, but it does not%
+%The code 354 is mapped to 2212.127 as 'equivalent', and 362 is mapped to 2212.127 as 'source-is-narrower-than-target', which means that 354 should subsume 362, but it does not%
+%The code 354 is mapped to 2212.127 as 'equivalent', and 393 is mapped to 2212.127 as 'source-is-narrower-than-target', which means that 354 should subsume 393, but it does not%
+%The code 354 is mapped to 2212.127 as 'equivalent', and 407 is mapped to 2212.127 as 'source-is-narrower-than-target', which means that 354 should subsume 407, but it does not%
+%The code 354 is mapped to 2212.127 as 'equivalent', and 408 is mapped to 2212.127 as 'source-is-narrower-than-target', which means that 354 should subsume 408, but it does not%
+%The code 354 is mapped to 2212.127 as 'equivalent', and 494 is mapped to 2212.127 as 'source-is-narrower-than-target', which means that 354 should subsume 494, but it does not%
+%The code 359 is mapped to 2212.71 as 'equivalent', and 766 is mapped to 2212.71 as 'source-is-narrower-than-target', which means that 359 should subsume 766, but it does not%
+%The code 367 is mapped to 2212.125 as 'equivalent', and 596 is mapped to 2212.125 as 'source-is-narrower-than-target', which means that 367 should subsume 596, but it does not%
+%The code 367 is mapped to 2212.125 as 'equivalent', and 633 is mapped to 2212.125 as 'source-is-narrower-than-target', which means that 367 should subsume 633, but it does not%
+%The code 367 is mapped to 2212.125 as 'equivalent', and 680 is mapped to 2212.125 as 'source-is-narrower-than-target', which means that 367 should subsume 680, but it does not%
+%The code 367 is mapped to 2212.125 as 'equivalent', and 998 is mapped to 2212.125 as 'source-is-narrower-than-target', which means that 367 should subsume 998, but it does not%
+%The code 384 is mapped to 2212-157 as 'equivalent', and 401 is mapped to 2212-157 as 'source-is-narrower-than-target', which means that 384 should subsume 401, but it does not%
+%The code 452 is mapped to 2212.27 as 'equivalent', and 765 is mapped to 2212.27 as 'source-is-narrower-than-target', which means that 452 should subsume 765, but it does not%
+%The code 454 is mapped to 2212.26 as 'equivalent', and 771 is mapped to 2212.26 as 'source-is-narrower-than-target', which means that 454 should subsume 771, but it does not%
+%The code 597 is mapped to 3230-004 as 'equivalent', and 214 is mapped to 3230-004 as 'source-is-narrower-than-target', which means that 597 should subsume 214, but it does not%
+%The code 597 is mapped to 3230-004 as 'equivalent', and 254 is mapped to 3230-004 as 'source-is-narrower-than-target', which means that 597 should subsume 254, but it does not%
+%The code 863 is mapped to 2351.7 as 'equivalent', and 774 is mapped to 2351.7 as 'source-is-narrower-than-target', which means that 863 should subsume 774, but it does not%
+%The code registry is mapped to 3252.2 as 'equivalent', and laboratory-registrar is mapped to 3252.2 as 'source-is-narrower-than-target', which means that registry should subsume laboratory-registrar, but it does not%
+# SNOMED CT has no concept for muscle relaxant allergy or medical enzyme allergy, so both stay narrower than
+# 416098002 |Drug allergy| while the local allergen list is flat.
+%The code aller-0001-00006 is mapped to 416098002 as 'equivalent', and aller-0010-00340 is mapped to 416098002 as 'source-is-narrower-than-target', which means that aller-0001-00006 should subsume aller-0010-00340, but it does not%
+%The code aller-0001-00006 is mapped to 416098002 as 'equivalent', and aller-0010-00342 is mapped to 416098002 as 'source-is-narrower-than-target', which means that aller-0001-00006 should subsume aller-0010-00342, but it does not%
+# dmed-measure-unit-cs is DMED's flat unit registry: 'ИД 50' is broader than [EID_50] while 'ЭИД 50' is its
+# equivalent, and the generic antigen units are broader than the D-antigen unit 'DU'.
+%The code 492 is mapped to [D'ag'U] as 'equivalent', and 58 is mapped to [D'ag'U] as 'source-is-broader-than-target', which means that 58 should subsume 492, but it does not%
+%The code 492 is mapped to [D'ag'U] as 'equivalent', and 74 is mapped to [D'ag'U] as 'source-is-broader-than-target', which means that 74 should subsume 492, but it does not%
+%The code 69 is mapped to [EID_50] as 'equivalent', and 68 is mapped to [EID_50] as 'source-is-broader-than-target', which means that 68 should subsume 69, but it does not%
