@@ -22,13 +22,7 @@ Description: "Encounter type codes for ambulance encounters, with UZ/RU/EN desig
   * ^designation[+].language = #ru
   * ^designation[=].value = "Чрезвычайные ситуации"
 
-* #emer5-0006-11 "Konsultatsiya"
-  * ^designation[0].language = #en
-  * ^designation[=].value = "Consultation"
-  * ^designation[+].language = #ru
-  * ^designation[=].value = "Консультация"
-
-* #emer154 "Shaxsiy"
+* #emer5-0006-8 "Shaxsiy"
   * ^designation[0].language = #en
   * ^designation[=].value = "Personal"
   * ^designation[+].language = #ru

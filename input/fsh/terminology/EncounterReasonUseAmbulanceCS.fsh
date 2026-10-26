@@ -1,7 +1,7 @@
 CodeSystem: EncounterReasonUseAmbulanceCS
 Id: encounter-reason-use-ambulance-cs
 Title: "Encounter reason use translations"
-Description: "Encounter reason use codes with English and Russian translations"
+Description: "Reasons for an ambulance call as recorded by the emergency medical service, with English and Russian translations"
 * insert OriginalCodeSystemDraft(encounter-reason-use-ambulance-cs)
 
 * #emer103039 "1 yoshgacha bo'lgan bolada xulq-atvor o'zgarishi"
@@ -15,12 +15,6 @@ Description: "Encounter reason use codes with English and Russian translations"
   * ^designation[=].value = "Allergy"
   * ^designation[+].language = #ru
   * ^designation[=].value = "Аллергия"
-
-* #emer103023 "Aniqlanmagan (yomon)"
-  * ^designation[0].language = #en
-  * ^designation[=].value = "Unspecified (bad)"
-  * ^designation[+].language = #ru
-  * ^designation[=].value = "Неуточненный (плохой)"
 
 * #emer103054 "Qon bosimining sezilarli darajada o'zgarishi"
   * ^designation[0].language = #en
@@ -354,9 +348,9 @@ Description: "Encounter reason use codes with English and Russian translations"
 
 * #emer103006 "Yuqori harorat (39°C dan yuqori)"
   * ^designation[0].language = #en
-  * ^designation[=].value = "Yurak ritmining buzilishi"
+  * ^designation[=].value = "High temperature (above 39°C)"
   * ^designation[+].language = #ru
-  * ^designation[=].value = "Нарушение ритма сердца"
+  * ^designation[=].value = "Высокая температура (выше 39°C)"
 
 * #emer103038 "Yurak ritmining buzilishi (aritmiya)"
   * ^designation[0].language = #en
