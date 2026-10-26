@@ -1,5 +1,5 @@
 {
-  "date": "2026-10-19T12:33:01+00:00",
+  "date": "2026-10-25T10:53:07+00:00",
   "fhirVersion": "5.0.0",
   "format": [
     "application/fhir+json",
@@ -58,6 +58,10 @@
             {
               "definition": "https://dhp.uz/fhir/core/OperationDefinition/patient-attach",
               "name": "attach"
+            },
+            {
+              "definition": "https://dhp.uz/fhir/core/OperationDefinition/patient-detach",
+              "name": "detach"
             },
             {
               "definition": "https://dhp.uz/fhir/core/OperationDefinition/patient-populate",
