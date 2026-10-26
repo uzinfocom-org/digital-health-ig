@@ -8,6 +8,8 @@
 
 [UZ Core Patient](StructureDefinition-uz-core-patient.html) va [UZ Core Practitioner](StructureDefinition-uz-core-practitioner.html) `name.text`, `family`, `given` va `suffix` elementlarida `translation` kengaytmasini e'lon qiladi: ism o'zbek tilida yoziladi, uning ruscha va qoraqalpoqcha shakllari esa ikkinchi ism sifatida emas, o'sha `HumanName` ichida uzatiladi. [Nodira](Patient-example-nodira.html) va [practitioner](Practitioner-example-practitioner.html) misollarida ruscha shakllar bor, ikkala profil sahifasi ham bu usulni tavsiflaydi.
 
+[Harakat kodlari to'ldiruvchisi](CodeSystem-action-code-cs.html) [hududiy skrining PlanDefinition misolida](PlanDefinition-example-uz-core-regional-screening-plan-definition.html) ishlatiladigan `order-service` uchun o'zbekcha va ruscha nomlarni beradi.
+
 ### Versiya 0.11.1
 
 #### Qo'shildi
