@@ -8,6 +8,8 @@
 
 [UZ Core Patient](StructureDefinition-uz-core-patient.html) и [UZ Core Practitioner](StructureDefinition-uz-core-practitioner.html) объявляют расширение `translation` на `name.text`, `family`, `given` и `suffix`: имя записывается на узбекском, а его русская и каракалпакская формы передаются в том же `HumanName`, а не вторым именем. Примеры [Nodira](Patient-example-nodira.html) и [practitioner](Practitioner-example-practitioner.html) содержат русские формы, а страницы обоих профилей описывают этот подход.
 
+[Дополнение кодов действий](CodeSystem-action-code-cs.html) содержит узбекское и русское обозначения для `order-service`, который используется в [примере PlanDefinition регионального скрининга](PlanDefinition-example-uz-core-regional-screening-plan-definition.html).
+
 ### Версия 0.11.1
 
 #### Добавлено
