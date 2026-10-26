@@ -7,10 +7,10 @@ Each workflow describes the actors, the sequence of FHIR interactions, and the k
 | Workflow | What it covers | Resources |
 |----------|----------------|-----------|
 | [Immunization](workflow-immunization.html) | National schedule &rarr; recommendation &rarr; consultation and vaccination visits &rarr; recording a dose | [PlanDefinition](StructureDefinition-uz-core-plan-definition.html), [ImmunizationRecommendation](StructureDefinition-uz-core-immunization-recommendation.html), [Encounter](StructureDefinition-uz-core-encounter.html), [Immunization](StructureDefinition-uz-core-immunization.html), [AdverseEvent](StructureDefinition-uz-core-adverse-event.html) |
-| [Laboratory order to result](workflow-lab.html) | Ordering a test and returning the result | ServiceRequest, [Specimen](StructureDefinition-uz-core-specimen.html), [Observation](StructureDefinition-uz-core-observation.html), DiagnosticReport |
-| [e-Referral lifecycle](workflow-referral.html) | Creating and fulfilling a referral, including the state-insurance approval chain | ServiceRequest, Task, [Procedure](StructureDefinition-uz-core-procedure.html) |
+| [Laboratory order to result](workflow-lab.html) | Ordering a test and returning the result | [ServiceRequest](StructureDefinition-uz-core-servicerequest.html), [Specimen](StructureDefinition-uz-core-specimen.html), [Observation](StructureDefinition-uz-core-observation.html), [DiagnosticReport](StructureDefinition-uz-core-diagnostic-report.html) |
+| [e-Referral lifecycle](workflow-referral.html) | Creating and fulfilling a referral, including the state-insurance approval chain | [ServiceRequest](StructureDefinition-uz-core-servicerequest.html), [Task](StructureDefinition-uz-core-referral-approval-task.html), [Procedure](StructureDefinition-uz-core-procedure.html) |
 | [Patient journey (Episode of Care)](workflow-patient-journey.html) | Grouping a case's visits, diagnoses and results under one episode over time | [EpisodeOfCare](StructureDefinition-uz-core-episodeofcare.html), [Encounter](StructureDefinition-uz-core-encounter.html), [Condition](StructureDefinition-uz-core-condition.html), [Observation](StructureDefinition-uz-core-observation.html) |
-| [e-Prescription and dispensing](workflow-prescription.html) | Prescribing a medicine, dispensing it, and reporting to SHIF | MedicationRequest, MedicationDispense, [Condition](StructureDefinition-uz-core-condition.html) |
+| [e-Prescription and dispensing](workflow-prescription.html) | Prescribing a medicine, dispensing it, and reporting to SHIF | [MedicationRequest](StructureDefinition-uz-core-medicationrequest.html), [MedicationDispense](StructureDefinition-uz-core-medication-dispense.html), [Condition](StructureDefinition-uz-core-condition.html) |
 
 Clinical document creation and signing (assembling a `Composition`-based document and signing it for legal force) is specified in the [DHP Integrations IG](https://dhp.uz/fhir/integrations/en/) under Documents, not here.
 
@@ -35,6 +35,6 @@ Most clinical data hangs off the patient through a small number of reference pat
 - A Patient has many Encounters (visits); related Encounters may be grouped into an EpisodeOfCare (an ongoing case).
 - Within an Encounter, clinicians record Conditions (diagnoses), Observations (results, vitals), Procedures, and MedicationRequests.
 - Workflow resources (ServiceRequest, Task) drive ordering and fulfilment; result resources (Observation, DiagnosticReport) reference back to the order.
-- Finalized, legally-significant content is assembled into a Composition-based document and signed via [Provenance](StructureDefinition-uz-core-provenance.html).
+- Finalized, legally-significant content is assembled into a [Composition](StructureDefinition-uz-core-composition.html)-based document and signed via [Provenance](StructureDefinition-uz-core-provenance.html).
 
 A note on choosing between a document and workflow resources: store ongoing clinical facts as discrete resources (Condition, Observation, Procedure); assemble a Composition-based document only when you need a finalized, legally-significant artifact (a discharge summary, a signed certificate, a signed report).

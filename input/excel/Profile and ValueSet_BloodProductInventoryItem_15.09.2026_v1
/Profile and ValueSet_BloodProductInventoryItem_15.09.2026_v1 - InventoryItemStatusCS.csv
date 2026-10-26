@@ -1,0 +1,5 @@
+CODE,UZ,RU,EN,,
+active,Faol,Активна,Active,,
+inactive,Nofaol,Неактивна,Inactive,,
+entered-in-error,Xato kiritilgan,Ошибочная запись,Entered in Error,,http://hl7.org/fhir/ValueSet/inventoryitem-status 
+unknown,Noma'lum,Неизвестно,Unknown,,
