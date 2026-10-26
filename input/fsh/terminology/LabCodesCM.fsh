@@ -355,9 +355,9 @@ Description: "Maps local UZ laboratory analytes codes to LOINC."
 
 * group.element[+].code = #lab-pan-57
 * group.element[=].display = "Leykotsitlar"
-* group.element[=].target[+].code = #13655-6
+* group.element[=].target[+].code = #32761-9
 * group.element[=].target[=].display = "Лейкоциты"
-* group.element[=].target[=].relationship = #equivalent
+* group.element[=].target[=].relationship = #source-is-narrower-than-target
 
 * group.element[+].code = #lab-pan-58
 * group.element[=].display = "Epitelial hujayralar"
@@ -517,7 +517,7 @@ Description: "Maps local UZ laboratory analytes codes to LOINC."
 
 * group.element[+].code = #lab-pan-85
 * group.element[=].display = "Trombokrit (PCT)"
-* group.element[=].target[+].code = #28542-9
+* group.element[=].target[+].code = #51637-7
 * group.element[=].target[=].display = "Тромбокрит (PCT)"
 * group.element[=].target[=].relationship = #equivalent
 
@@ -531,7 +531,7 @@ Description: "Maps local UZ laboratory analytes codes to LOINC."
 * group.element[=].display = "Miyelotsitlar"
 * group.element[=].target[+].code = #30446-9
 * group.element[=].target[=].display = "Миелоциты"
-* group.element[=].target[=].relationship = #equivalent
+* group.element[=].target[=].relationship = #related-to
 
 * group.element[+].code = #lab-pan-88
 * group.element[=].display = "Metamiyelotsitlar"
@@ -549,31 +549,31 @@ Description: "Maps local UZ laboratory analytes codes to LOINC."
 * group.element[=].display = "Segment yadroli neytrofillar"
 * group.element[=].target[+].code = #751-8
 * group.element[=].target[=].display = "Сегментоядерные нейтрофилы"
-* group.element[=].target[=].relationship = #equivalent
+* group.element[=].target[=].relationship = #related-to
 
 * group.element[+].code = #lab-pan-91
 * group.element[=].display = "Eozinofillar"
 * group.element[=].target[+].code = #711-2
 * group.element[=].target[=].display = "Эозинофилы"
-* group.element[=].target[=].relationship = #equivalent
+* group.element[=].target[=].relationship = #related-to
 
 * group.element[+].code = #lab-pan-92
 * group.element[=].display = "Bazofillar"
 * group.element[=].target[+].code = #704-7
 * group.element[=].target[=].display = "Базофилы"
-* group.element[=].target[=].relationship = #equivalent
+* group.element[=].target[=].relationship = #related-to
 
 * group.element[+].code = #lab-pan-93
 * group.element[=].display = "Monotsitlar"
 * group.element[=].target[+].code = #5905-5
 * group.element[=].target[=].display = "Моноциты"
-* group.element[=].target[=].relationship = #equivalent
+* group.element[=].target[=].relationship = #related-to
 
 * group.element[+].code = #lab-pan-94
 * group.element[=].display = "Limfotsitlar"
 * group.element[=].target[+].code = #731-0
 * group.element[=].target[=].display = "Лимфоциты"
-* group.element[=].target[=].relationship = #equivalent
+* group.element[=].target[=].relationship = #related-to
 
 * group.element[+].code = #lab-pan-95
 * group.element[=].display = "Plazmatik hujayralar"
@@ -585,7 +585,7 @@ Description: "Maps local UZ laboratory analytes codes to LOINC."
 * group.element[=].display = "Eritrotsitlarning cho‘kish tezligi (ECHT)"
 * group.element[=].target[+].code = #4537-7
 * group.element[=].target[=].display = "Скорость оседания эритроцитов (СОЭ)"
-* group.element[=].target[=].relationship = #equivalent
+* group.element[=].target[=].relationship = #source-is-broader-than-target
 
 * group.element[+].code = #lab-pan-97
 * group.element[=].display = "Anizotsitoz (mikrotsitlar, makrotsitlar, megalotsitlar)"
@@ -631,9 +631,9 @@ Description: "Maps local UZ laboratory analytes codes to LOINC."
 
 * group.element[+].code = #lab-pan-104
 * group.element[=].display = "Megaloblastlar"
-* group.element[=].target[+].code = #52127-8
+* group.element[=].target[+].code = #55376-8
 * group.element[=].target[=].display = "Мегалобласты"
-* group.element[=].target[=].relationship = #equivalent
+* group.element[=].target[=].relationship = #related-to
 
 * group.element[+].code = #lab-pan-105
 * group.element[=].display = "Yadro gipersegmentatsiyasi"
@@ -781,7 +781,7 @@ Description: "Maps local UZ laboratory analytes codes to LOINC."
 
 * group.element[+].code = #lab-pan-129
 * group.element[=].display = "Trombokrit (PCT)"
-* group.element[=].target[+].code = #28542-9
+* group.element[=].target[+].code = #51637-7
 * group.element[=].target[=].display = "Тромбокрит (PCT)"
 * group.element[=].target[=].relationship = #equivalent
 
@@ -801,7 +801,7 @@ Description: "Maps local UZ laboratory analytes codes to LOINC."
 * group.element[=].display = "Eritrotsitning cho'kish tezligi (ЭЧТ)"
 * group.element[=].target[+].code = #4537-7
 * group.element[=].target[=].display = "Скорость оседания эритроцитов (СОЭ)"
-* group.element[=].target[=].relationship = #equivalent
+* group.element[=].target[=].relationship = #source-is-broader-than-target
 
 * group.element[+].code = #lab-pan-133
 * group.element[=].display = "IMG#"
@@ -1503,9 +1503,8 @@ Description: "Maps local UZ laboratory analytes codes to LOINC."
 
 * group.element[+].code = #lab-pan-270
 * group.element[=].display = "Poliblastlar"
-* group.element[=].target[+].code = #55792-6
-* group.element[=].target[=].display = "Полибласты"
-* group.element[=].target[=].relationship = #source-is-narrower-than-target
+// LOINC has no code for polyblasts in cerebrospinal fluid; 55792-6 (nucleated cells in bone marrow) was wrong
+* group.element[=].noMap = true
 
 * group.element[+].code = #lab-pan-271
 * group.element[=].display = "Plazmatik hujayralar"
