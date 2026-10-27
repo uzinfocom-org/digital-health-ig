@@ -146,14 +146,14 @@ Nursing ilovasining o'n ikki varianti uchun quyidagi xizmat kodlari ishlatiladi.
 | Homilador ayollar (12–32 hafta) | SNOMED CT | `424525001` | Antenatal care |
 | Tug'ruqdan keyingi patronaj (3, 15, 30 kun) | SNOMED CT | `133906008` | Postpartum care |
 | Reproduktiv yoshdagi ayollar patronaji (15–49 yosh) | National | `mserv-0007-00017` | Follow-up of women of reproductive age |
-| Bolalar (3, 15, 30 kun) | SNOMED CT | `410620009` | Well child visit |
+| Bolalar (3, 15, 30 kun) | SNOMED CT | `440068009` | Home visit for newborn care and assessment |
 | Bolalar (3, 6, 9, 12, 18, 24, 36, 48, 60 oy) | SNOMED CT | `410620009` | Well child visit |
 
-Bolalar uchun ikki jadval bitta umumiy profilaktik tashrif kodidan foydalanadi, ammo interfeysda alohida variantlar bo'lib qoladi. `Infant care assessment` kodini 60 oygacha bo'lgan butun jadval uchun ishlatmang va 30 kunlik bolani avtomatik ravishda yangi tug'ilgan deb hisoblamang. Yosh va homiladorlikning 12–32 haftalik davri tanlash qoidalaridir; aniq tashrif sanasi `occurrence[x]` da beriladi. Besh kunlik chegara kurs qoidasi bo'lib, uy sharoitidagi statsionardan kengroq bo'lgan `60689008` kodining ma'nosiga kirmaydi.
+Bolalar uchun ikki jadvalning kodlari har xil: 3, 15 va 30-kunlardagi uydagi erta patronaj — `440068009`, 3 oydan 60 oygacha bo'lgan profilaktik tashriflar — `410620009`. `Infant care assessment` kodini 60 oygacha bo'lgan butun jadval uchun ishlatmang. Yosh va homiladorlikning 12–32 haftalik davri tanlash qoidalaridir; aniq tashrif sanasi `occurrence[x]` da beriladi. Besh kunlik chegara kurs qoidasi bo'lib, uy sharoitidagi statsionardan kengroq bo'lgan `60689008` kodining ma'nosiga kirmaydi.
 
 `mserv-0007-00025` kodi dorilarni **uyga** yetkazib berish va topshirishni anglatadi. Umumiy `373784005` Dispensing medication bu maqsadga teng emas. Tashrif yo'llanmasi retsept, amaldagi MedicationDispense yoki MedicationAdministration o'rnini bosmaydi. `mserv-0007-00024` klinik skrining natijasini emas, aholini ma'muriy ro'yxatga olishni bildiradi. Ushbu ikki milliy maqsadga teng xalqaro xizmat kodi aniqlanmadi.
 
-Misollar: [dorilarni uyga yetkazib berish](ServiceRequest-example-nursing-home-medication-request.html), [aholini ro'yxatga olish](ServiceRequest-example-nursing-population-enumeration-request.html), [60 oylik bolaning profilaktik tashrifi](ServiceRequest-example-nursing-well-child-request.html).
+Misollar: [dorilarni uyga yetkazib berish](ServiceRequest-example-nursing-home-medication-request.html), [aholini ro'yxatga olish](ServiceRequest-example-nursing-population-enumeration-request.html), [yangi tug'ilgan chaqaloqni 3-kuni uyda patronaj qilish](ServiceRequest-example-nursing-newborn-home-visit-request.html), [60 oylik bolaning profilaktik tashrifi](ServiceRequest-example-nursing-well-child-request.html).
 
 
 ### Bemorning klinik marshrutini boshqarish {#patient-health-journey-management}

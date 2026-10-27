@@ -2,7 +2,7 @@
 
 #### Qo'shildi
 
-Nursing maqsadlari uchun [aholini ro'yxatga olish va dorilarni uyga yetkazib berish](CodeSystem-screening-code-cs.html) milliy kodlari qo'shildi; ikkinchi kod uy sharoitini o'z ma'nosiga oladi. [ServiceRequest xizmatlari to'plami](ValueSet-service-request-code-vs.html) da bolalarning go'daklik davridan keyingi profilaktik tashriflari uchun SNOMED CT `410620009` Well child visit ruscha va o'zbekcha tarjimalar bilan aniq keltirilgan. [Nursing bo'limi](components.html#nursing-purpose-coding) ilovaning barcha o'n ikki variantini moslashtiradi va uchta ServiceRequest misoliga havola beradi.
+Nursing maqsadlari uchun [aholini ro'yxatga olish va dorilarni uyga yetkazib berish](CodeSystem-screening-code-cs.html) milliy kodlari qo'shildi; ikkinchi kod uy sharoitini o'z ma'nosiga oladi. [ServiceRequest xizmatlari to'plami](ValueSet-service-request-code-vs.html) da 3, 15 va 30-kunlardagi patronaj uchun SNOMED CT `440068009` Home visit for newborn care and assessment hamda 3 oydan 60 oygacha bo'lgan profilaktik tashriflar uchun `410620009` Well child visit ruscha va o'zbekcha tarjimalar bilan aniq keltirilgan. [Nursing bo'limi](components.html#nursing-purpose-coding) ilovaning barcha o'n ikki variantini moslashtiradi va uchta ServiceRequest misoliga havola beradi.
 
 #### Buzuvchi o'zgarishlar
 

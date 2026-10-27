@@ -31,4 +31,5 @@ Description: "Defines the set of codes that may be used in ServiceRequest to spe
 * $sct#133906008 "Postpartum care"
 * $sct#408987002 "Newborn care assessment"
 * $sct#409027005 "Infant care assessment"
+* $sct#440068009 "Home visit for newborn care and assessment"
 * $sct#410620009 "Well child visit"
