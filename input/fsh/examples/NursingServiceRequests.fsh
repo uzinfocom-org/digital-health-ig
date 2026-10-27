@@ -5,10 +5,10 @@ Description: "A Nursing request to deliver and hand over prescribed medication a
 Usage: #example
 * language = #uz
 * text.status = #generated
-* text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">Dori vositalarini uyga yetkazib berish uchun yo'llanma.</div>"
+* text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\" lang=\"uz\" xml:lang=\"uz\">Dori vositalarini uyga yetkazib berish uchun yo'llanma.</div>"
 * status = #active
 * intent = #order
-* code.concept = ScreeningCodeCS#mserv-0007-00022 "Dori vositalarini uyga yetkazib berish"
+* code.concept = ScreeningCodeCS#mserv-0007-00025 "Dori vositalarini uyga yetkazib berish"
 * subject = Reference(Patient/example-salim)
 * authoredOn = "2026-10-27T09:00:00+05:00"
 * occurrenceDateTime = "2026-10-28T10:00:00+05:00"
@@ -21,10 +21,10 @@ Description: "An administrative Nursing home visit to enumerate a resident and v
 Usage: #example
 * language = #uz
 * text.status = #generated
-* text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">Aholini ro'yxatga olish uchun hamshiralik tashrifiga yo'llanma.</div>"
+* text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\" lang=\"uz\" xml:lang=\"uz\">Aholini ro'yxatga olish uchun hamshiralik tashrifiga yo'llanma.</div>"
 * status = #active
 * intent = #order
-* code.concept = ScreeningCodeCS#mserv-0007-00021 "Aholini ro'yxatga olish"
+* code.concept = ScreeningCodeCS#mserv-0007-00024 "Aholini ro'yxatga olish"
 * subject = Reference(Patient/example-salim)
 * authoredOn = "2026-10-27T09:00:00+05:00"
 * occurrenceDateTime = "2026-10-28T11:00:00+05:00"
@@ -37,7 +37,7 @@ Description: "A preventive child examination at 60 months. The global Well child
 Usage: #example
 * language = #uz
 * text.status = #generated
-* text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">60 oylik bolaning profilaktik ko'rigiga yo'llanma.</div>"
+* text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\" lang=\"uz\" xml:lang=\"uz\">60 oylik bolaning profilaktik ko'rigiga yo'llanma.</div>"
 * status = #active
 * intent = #order
 * code.concept = $sct#410620009 "Well child visit"

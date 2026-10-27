@@ -139,9 +139,9 @@ Nursing ilovasining o'n ikki varianti uchun quyidagi xizmat kodlari ishlatiladi.
 | Surunkali kasalliklar | SNOMED CT | `170549007` | Chronic disease monitoring |
 | Emlashga chaqiruv | National | `mserv-0007-00011` | Vaccination invitation |
 | Emlashdan keyingi patronaj | National | `mserv-0007-00012` | Post-vaccination follow-up |
-| Dori vositalarini uyga yetkazib berish | National | `mserv-0007-00022` | Home medication delivery and handover |
+| Dori vositalarini uyga yetkazib berish | National | `mserv-0007-00025` | Home medication delivery and handover |
 | Uy sharoitidagi statsionar xizmat (5 kundan oshmasligi kerak) | SNOMED CT | `60689008` | Home care of patient |
-| Aholini ro'yxatga olish | National | `mserv-0007-00021` | Population enumeration |
+| Aholini ro'yxatga olish | National | `mserv-0007-00024` | Population enumeration |
 | Profilaktik tibbiy ko'rik | SNOMED CT | `103740001` | Periodic physical examination |
 | Homilador ayollar (12–32 hafta) | SNOMED CT | `424525001` | Antenatal care |
 | Tug'ruqdan keyingi patronaj (3, 15, 30 kun) | SNOMED CT | `133906008` | Postpartum care |
@@ -151,7 +151,7 @@ Nursing ilovasining o'n ikki varianti uchun quyidagi xizmat kodlari ishlatiladi.
 
 Bolalar uchun ikki jadval bitta umumiy profilaktik tashrif kodidan foydalanadi, ammo interfeysda alohida variantlar bo'lib qoladi. `Infant care assessment` kodini 60 oygacha bo'lgan butun jadval uchun ishlatmang va 30 kunlik bolani avtomatik ravishda yangi tug'ilgan deb hisoblamang. Yosh va homiladorlikning 12–32 haftalik davri tanlash qoidalaridir; aniq tashrif sanasi `occurrence[x]` da beriladi. Besh kunlik chegara kurs qoidasi bo'lib, uy sharoitidagi statsionardan kengroq bo'lgan `60689008` kodining ma'nosiga kirmaydi.
 
-`mserv-0007-00022` kodi dorilarni **uyga** yetkazib berish va topshirishni anglatadi. Umumiy `373784005` Dispensing medication bu maqsadga teng emas. Tashrif yo'llanmasi retsept, amaldagi MedicationDispense yoki MedicationAdministration o'rnini bosmaydi. `mserv-0007-00021` klinik skrining natijasini emas, aholini ma'muriy ro'yxatga olishni bildiradi. Ushbu ikki milliy maqsadga teng xalqaro xizmat kodi aniqlanmadi.
+`mserv-0007-00025` kodi dorilarni **uyga** yetkazib berish va topshirishni anglatadi. Umumiy `373784005` Dispensing medication bu maqsadga teng emas. Tashrif yo'llanmasi retsept, amaldagi MedicationDispense yoki MedicationAdministration o'rnini bosmaydi. `mserv-0007-00024` klinik skrining natijasini emas, aholini ma'muriy ro'yxatga olishni bildiradi. Ushbu ikki milliy maqsadga teng xalqaro xizmat kodi aniqlanmadi.
 
 Misollar: [dorilarni uyga yetkazib berish](ServiceRequest-example-nursing-home-medication-request.html), [aholini ro'yxatga olish](ServiceRequest-example-nursing-population-enumeration-request.html), [60 oylik bolaning profilaktik tashrifi](ServiceRequest-example-nursing-well-child-request.html).
 

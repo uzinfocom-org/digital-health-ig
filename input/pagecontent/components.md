@@ -119,9 +119,9 @@ Use the following service codes for the twelve Nursing application choices. SNOM
 | Chronic diseases | SNOMED CT | `170549007` | Chronic disease monitoring |
 | Vaccination invitation | National | `mserv-0007-00011` | Vaccination invitation |
 | Post-vaccination patronage | National | `mserv-0007-00012` | Post-vaccination follow-up |
-| Home medication delivery | National | `mserv-0007-00022` | Home medication delivery and handover |
+| Home medication delivery | National | `mserv-0007-00025` | Home medication delivery and handover |
 | Home inpatient care (no more than 5 days) | SNOMED CT | `60689008` | Home care of patient |
-| Population enumeration | National | `mserv-0007-00021` | Population enumeration |
+| Population enumeration | National | `mserv-0007-00024` | Population enumeration |
 | Preventive examination | SNOMED CT | `103740001` | Periodic physical examination |
 | Pregnant women (12–32 weeks) | SNOMED CT | `424525001` | Antenatal care |
 | Postpartum (days 3, 15 and 30) | SNOMED CT | `133906008` | Postpartum care |
@@ -131,7 +131,7 @@ Use the following service codes for the twelve Nursing application choices. SNOM
 
 The two child schedules use the same general preventive visit code; they remain separate application choices. Do not use `Infant care assessment` for the entire schedule through 60 months, or infer that a 30-day-old child is still a newborn. Ages and the 12–32-week antenatal window are eligibility rules; the individual visit date is recorded in `occurrence[x]`. The five-day maximum is a local course rule, not a meaning encoded by `60689008`, which is broader than an inpatient-at-home episode.
 
-`mserv-0007-00022` includes delivery and handover **at home** in the service meaning. `373784005` Dispensing medication alone is broader and is not an equivalent code for this purpose. The visit request does not replace the prescription, the actual MedicationDispense, or MedicationAdministration. `mserv-0007-00021` is an administrative resident-enumeration purpose, not a screening result. No equivalent international service concept was identified for these two national purposes.
+`mserv-0007-00025` includes delivery and handover **at home** in the service meaning. `373784005` Dispensing medication alone is broader and is not an equivalent code for this purpose. The visit request does not replace the prescription, the actual MedicationDispense, or MedicationAdministration. `mserv-0007-00024` is an administrative resident-enumeration purpose, not a screening result. No equivalent international service concept was identified for these two national purposes.
 
 Examples: [home medication delivery](ServiceRequest-example-nursing-home-medication-request.html), [population enumeration](ServiceRequest-example-nursing-population-enumeration-request.html), and [well child visit at 60 months](ServiceRequest-example-nursing-well-child-request.html).
 
