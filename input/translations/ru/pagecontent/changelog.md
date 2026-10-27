@@ -2,7 +2,7 @@
 
 #### Добавлено
 
-Для целей Nursing добавлены национальные коды [переписи населения и выдачи препаратов на дом](CodeSystem-screening-code-cs.html); второй код включает домашний контекст в своё значение. В [наборе услуг ServiceRequest](ValueSet-service-request-code-vs.html) явно указаны SNOMED CT `440068009` Home visit for newborn care and assessment для патронажа на 3-й, 15-й и 30-й день и `410620009` Well child visit для профилактических визитов с 3 до 60 месяцев, оба с русским и узбекским переводами. Раздел [Nursing](components.html#nursing-purpose-coding) сопоставляет все двенадцать пунктов приложения и содержит ссылки на три примера ServiceRequest.
+Для целей Nursing добавлены национальные коды [переписи населения и выдачи препаратов на дом](CodeSystem-screening-code-cs.html); второй код включает домашний контекст в своё значение. В [наборе услуг ServiceRequest](ValueSet-service-request-code-vs.html) явно указаны SNOMED CT `440068009` Home visit for newborn care and assessment для патронажа на 3-й, 15-й и 30-й день и `410620009` Well child visit для профилактических визитов с 3 до 60 месяцев, оба с русским и узбекским переводами. Раздел [Nursing](components.html#nursing-purpose-coding) сопоставляет все двенадцать пунктов приложения и содержит ссылки на примеры ServiceRequest. Направления Nursing помечаются категорией SNOMED CT `439708006` Home visit, которая добавлена в [категории ServiceRequest](ValueSet-service-request-categories-vs.html) с узбекским и русским переводами.
 
 #### Несовместимые изменения
 

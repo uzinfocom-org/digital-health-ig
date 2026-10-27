@@ -24,5 +24,6 @@ Description: "ValueSet including categories of healthcare service requests used 
 * $sct#20135006 "Screening and home visits"
 * $sct#25179006 "Donation"
 * $sct#310422005 "Prevention/screening invitation"
+* $sct#439708006 "Home visit"
 
 

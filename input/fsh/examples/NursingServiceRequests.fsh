@@ -8,6 +8,7 @@ Usage: #example
 * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\" lang=\"uz\" xml:lang=\"uz\">Dori vositalarini uyga yetkazib berish uchun yo'llanma.</div>"
 * status = #active
 * intent = #order
+* category[dhpCategory] = $sct#439708006 "Home visit"
 * code.concept = ScreeningCodeCS#mserv-0007-00025 "Dori vositalarini uyga yetkazib berish"
 * subject = Reference(Patient/example-salim)
 * authoredOn = "2026-10-27T09:00:00+05:00"
@@ -24,6 +25,7 @@ Usage: #example
 * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\" lang=\"uz\" xml:lang=\"uz\">Aholini ro'yxatga olish uchun hamshiralik tashrifiga yo'llanma.</div>"
 * status = #active
 * intent = #order
+* category[dhpCategory] = $sct#439708006 "Home visit"
 * code.concept = ScreeningCodeCS#mserv-0007-00024 "Aholini ro'yxatga olish"
 * subject = Reference(Patient/example-salim)
 * authoredOn = "2026-10-27T09:00:00+05:00"
@@ -40,6 +42,7 @@ Usage: #example
 * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\" lang=\"uz\" xml:lang=\"uz\">60 oylik bolaning profilaktik ko'rigiga yo'llanma.</div>"
 * status = #active
 * intent = #order
+* category[dhpCategory] = $sct#439708006 "Home visit"
 * code.concept = $sct#410620009 "Well child visit"
 * subject = Reference(Patient/example-jasur)
 * authoredOn = "2020-06-19T09:00:00+05:00"
@@ -56,6 +59,7 @@ Usage: #example
 * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\" lang=\"uz\" xml:lang=\"uz\">Yangi tug'ilgan chaqaloqni 3-kuni uyda patronaj qilish uchun yo'llanma.</div>"
 * status = #active
 * intent = #order
+* category[dhpCategory] = $sct#439708006 "Home visit"
 * code.concept = $sct#440068009 "Home visit for newborn care and assessment"
 * subject = Reference(Patient/example-jasur)
 * authoredOn = "2015-06-22T09:00:00+05:00"
