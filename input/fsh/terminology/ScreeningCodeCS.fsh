@@ -37,3 +37,15 @@ Description: "National screening program identifiers and home visit services. DM
   * ^designation[=].value = "Патронаж женщин детородного возраста (15-49 лет)"
   * ^designation[+].language = #en
   * ^designation[=].value = "Follow-up of Women of Reproductive Age (15–49 Years)"
+* #mserv-0007-00021 "Aholini ro'yxatga olish"
+  * ^definition = "A Nursing home visit to enumerate residents and collect or verify their demographic and household registration details. This is an administrative visit purpose, not a clinical screening examination, diagnosis, or questionnaire result. No equivalent international service concept was identified; do not substitute an ethnic-group census category, a disability assessment scale, or a clinical examination."
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Перепись населения"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Population enumeration"
+* #mserv-0007-00022 "Dori vositalarini uyga yetkazib berish"
+  * ^definition = "A Nursing home visit to deliver and hand over prescribed medication to the patient or an authorized recipient at home. The home setting is part of this service's meaning. This purpose is not medication administration, a prescription, or an unspecified pharmacy dispense. The actual medication supply is recorded separately in MedicationDispense when applicable. No equivalent international service concept was identified; SNOMED CT 373784005 Dispensing medication does not specify the home setting."
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Выдача препаратов на дом"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Home medication delivery and handover"

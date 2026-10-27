@@ -110,6 +110,32 @@ The purpose a patronage visit is made for goes on `code` in [UZ Core ServiceRequ
 
 Scheduling of nursing visits is handled by the Appointment and Scheduling component.
 
+#### Nursing visit purpose coding {#nursing-purpose-coding}
+
+Use the following service codes for the twelve Nursing application choices. SNOMED CT codes use `http://snomed.info/sct`; national codes use `https://terminology.dhp.uz/fhir/core/CodeSystem/screening-code-cs`. In FHIR R5, the code is carried in `ServiceRequest.code.concept.coding`. Keep the application label in `ServiceRequest.code.concept.text`.
+
+| Application choice | System | Code | Service meaning |
+|---|---|---|---|
+| Chronic diseases | SNOMED CT | `170549007` | Chronic disease monitoring |
+| Vaccination invitation | National | `mserv-0007-00011` | Vaccination invitation |
+| Post-vaccination patronage | National | `mserv-0007-00012` | Post-vaccination follow-up |
+| Home medication delivery | National | `mserv-0007-00022` | Home medication delivery and handover |
+| Home inpatient care (no more than 5 days) | SNOMED CT | `60689008` | Home care of patient |
+| Population enumeration | National | `mserv-0007-00021` | Population enumeration |
+| Preventive examination | SNOMED CT | `103740001` | Periodic physical examination |
+| Pregnant women (12–32 weeks) | SNOMED CT | `424525001` | Antenatal care |
+| Postpartum (days 3, 15 and 30) | SNOMED CT | `133906008` | Postpartum care |
+| Women of reproductive age (15–49 years) | National | `mserv-0007-00017` | Follow-up of women of reproductive age |
+| Children (days 3, 15 and 30) | SNOMED CT | `410620009` | Well child visit |
+| Children (3, 6, 9, 12, 18, 24, 36, 48 and 60 months) | SNOMED CT | `410620009` | Well child visit |
+
+The two child schedules use the same general preventive visit code; they remain separate application choices. Do not use `Infant care assessment` for the entire schedule through 60 months, or infer that a 30-day-old child is still a newborn. Ages and the 12–32-week antenatal window are eligibility rules; the individual visit date is recorded in `occurrence[x]`. The five-day maximum is a local course rule, not a meaning encoded by `60689008`, which is broader than an inpatient-at-home episode.
+
+`mserv-0007-00022` includes delivery and handover **at home** in the service meaning. `373784005` Dispensing medication alone is broader and is not an equivalent code for this purpose. The visit request does not replace the prescription, the actual MedicationDispense, or MedicationAdministration. `mserv-0007-00021` is an administrative resident-enumeration purpose, not a screening result. No equivalent international service concept was identified for these two national purposes.
+
+Examples: [home medication delivery](ServiceRequest-example-nursing-home-medication-request.html), [population enumeration](ServiceRequest-example-nursing-population-enumeration-request.html), and [well child visit at 60 months](ServiceRequest-example-nursing-well-child-request.html).
+
+
 ### Patient health journey management
 
 The Patient Health Journey Management (PHJM) component is designed to manage data related to the clinical journey of a patient — from the initial contact to the completion of treatment and subsequent follow-up. It provides collection, storage, aggregation, and analysis of medical information about patients at all levels of healthcare delivery, using the HL7 FHIR R5 standard. PHJM is a core component of the Digital Health Platform (DHP) and serves as a connecting layer between clinical components, healthcare service management systems, and analytical components of the platform.

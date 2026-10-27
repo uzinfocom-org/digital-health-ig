@@ -1,5 +1,9 @@
 ### Ishlab chiqilmoqda
 
+#### Qo'shildi
+
+Nursing maqsadlari uchun [aholini ro'yxatga olish va dorilarni uyga yetkazib berish](CodeSystem-screening-code-cs.html) milliy kodlari qo'shildi; ikkinchi kod uy sharoitini o'z ma'nosiga oladi. [ServiceRequest xizmatlari to'plami](ValueSet-service-request-code-vs.html) da bolalarning go'daklik davridan keyingi profilaktik tashriflari uchun SNOMED CT `410620009` Well child visit ruscha va o'zbekcha tarjimalar bilan aniq keltirilgan. [Nursing bo'limi](components.html#nursing-purpose-coding) ilovaning barcha o'n ikki variantini moslashtiradi va uchta ServiceRequest misoliga havola beradi.
+
 #### Buzuvchi o'zgarishlar
 
 [Mutaxassis sertifikati](NamingSystem-uzb-specialist-certificate.html) identifikator tizimi hujjatlar nomlar fazosidan tibbiyot xodimlari nomlar fazosiga ko'chirildi, chunki sertifikat hujjatni emas, balki mutaxassisning malakasini identifikatsiya qiladi: `https://dhp.uz/fhir/core/sid/doc/uz/specialist-certificate` o'rniga endi `https://dhp.uz/fhir/core/sid/pro/uz/specialist-certificate`. `Practitioner.qualification.identifier` yuboruvchilar yangi tizimga o'tadi; qiymat formati (seriya va raqam ajratuvchisiz, masalan `CA008815`) o'zgarmaydi.

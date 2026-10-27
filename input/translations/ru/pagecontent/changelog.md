@@ -1,5 +1,9 @@
 ### В разработке
 
+#### Добавлено
+
+Для целей Nursing добавлены национальные коды [переписи населения и выдачи препаратов на дом](CodeSystem-screening-code-cs.html); второй код включает домашний контекст в своё значение. В [наборе услуг ServiceRequest](ValueSet-service-request-code-vs.html) явно указан SNOMED CT `410620009` Well child visit с русским и узбекским переводами для детских профилактических визитов за пределами младенческого возраста. Раздел [Nursing](components.html#nursing-purpose-coding) сопоставляет все двенадцать пунктов приложения и содержит ссылки на три примера ServiceRequest.
+
 #### Несовместимые изменения
 
 Система идентификаторов [сертификата специалиста](NamingSystem-uzb-specialist-certificate.html) перенесена из пространства документов в пространство медицинских работников, так как сертификат идентифицирует квалификацию специалиста, а не документ: `https://dhp.uz/fhir/core/sid/doc/uz/specialist-certificate` заменён на `https://dhp.uz/fhir/core/sid/pro/uz/specialist-certificate`. Отправители `Practitioner.qualification.identifier` переходят на новую систему; формат значения (серия и номер слитно, например `CA008815`) не меняется.

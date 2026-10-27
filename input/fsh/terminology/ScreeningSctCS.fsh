@@ -79,3 +79,8 @@ Description: "Screening and home visits supplement with translations in Uzbek an
   * ^designation[=].value = "Оценка ухода за младенцем"
   * ^designation[+].language = #uz
   * ^designation[=].value = "Go'dak parvarishini baholash"
+* #410620009 "Well child visit"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Профилактический осмотр ребёнка"
+  * ^designation[+].language = #uz
+  * ^designation[=].value = "Bolaning profilaktik ko'rigi"
