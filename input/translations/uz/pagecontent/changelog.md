@@ -1,20 +1,36 @@
-### Ishlab chiqilmoqda
-
-#### Buzuvchi o'zgarishlar
-
-[Mutaxassis sertifikati](NamingSystem-uzb-specialist-certificate.html) identifikator tizimi hujjatlar nomlar fazosidan tibbiyot xodimlari nomlar fazosiga ko'chirildi, chunki sertifikat hujjatni emas, balki mutaxassisning malakasini identifikatsiya qiladi: `https://dhp.uz/fhir/core/sid/doc/uz/specialist-certificate` o'rniga endi `https://dhp.uz/fhir/core/sid/pro/uz/specialist-certificate`. `Practitioner.qualification.identifier` yuboruvchilar yangi tizimga o'tadi; qiymat formati (seriya va raqam ajratuvchisiz, masalan `CA008815`) o'zgarmaydi.
+### Versiya 0.12.0
 
 #### Qo'shildi
 
-Nursing maqsadlari uchun [aholini ro'yxatga olish va dorilarni uyga yetkazib berish](CodeSystem-nursing-visit-purpose-cs.html) milliy kodlari qo'shildi; ikkinchi kod uy sharoitini o'z ma'nosiga oladi. [ServiceRequest xizmatlari to'plami](ValueSet-service-request-code-vs.html) da 3, 15 va 30-kunlardagi patronaj uchun SNOMED CT `440068009` Home visit for newborn care and assessment hamda 3 oydan 60 oygacha bo'lgan profilaktik tashriflar uchun `410620009` Well child visit ruscha va o'zbekcha tarjimalar bilan aniq keltirilgan. Nursing yo'llanmalari SNOMED CT `439708006` Home visit toifasi bilan belgilanadi; u o'zbekcha va ruscha tarjimalar bilan [ServiceRequest toifalari](ValueSet-service-request-categories-vs.html) ga qo'shildi. [Tashrif turlari](ValueSet-encounter-type-vs.html) ga Nursing uy tashrifi Encounter uchun `Encounter.class` = `HH` bilan birga `mserv-0001-00009` «Patronaj» milliy kodi qo'shildi.
+Bemorga dori kiritilishi, masalan, bo'limda berilgan doza uchun [UZ Core MedicationAdministration](StructureDefinition-uz-core-medicationadministration.html) qo'shildi. U bajarilayotgan MedicationRequest ga havola qiladi va dozani kim va qanday kiritganini qayd etadi. Moliyalashtirish manbai kengaytmasi dori tender, gumanitar yordam yoki boshqa milliy manba hisobidan sotib olinganini ko'rsatadi; u bemorning qamroviga mos kelmasligi mumkin.
+
+Qon komponenti, dori yoki tibbiy buyum kabi narsalar zaxirasi uchun [UZ Core InventoryItem](StructureDefinition-uz-core-inventoryitem.html) qo'shildi. Har bir pozitsiya karantin, tekshiruvlarni kutish yoki mavjud kabi milliy zaxira holatini tashiydi va saqlanayotgan mahsulotga havola qiladi, har bir jismoniy birlikning seriya raqami, yaroqlilik muddati va saqlash joyi bilan.
+
+Nursing maqsadlari uchun [aholini ro'yxatga olish va dorilarni uyga yetkazib berish](CodeSystem-nursing-visit-purpose-cs.html) milliy kodlari qo'shildi.
+
+Nursing yo'llanmalari SNOMED CT `439708006` Home visit toifasi bilan belgilanadi, [ServiceRequest xizmatlari to'plami](ValueSet-service-request-code-vs.html) esa 3, 15 va 30-kunlardagi yangi tug'ilgan chaqaloq patronaji uchun `440068009` va 3 oydan 60 oygacha bo'lgan bolalarning profilaktik tashriflari uchun `410620009` ni o'z ichiga oladi. Uy tashrifi Encounter i `Encounter.class` = `HH` bilan `mserv-0001-00009` «Patronaj» tashrif turidan foydalanadi.
+
+[Patient/$attach](OperationDefinition-patient-attach.html) bitta chaqiruvda bemorni poliklinikaga, oilaviy shifokorga yoki ikkalasiga biriktiradi va ularni asosiy ma'lumotlar reyestri bo'yicha tekshiradi. Tur darajasida u bemorni JShShIR bo'yicha topadi yoki yaratadi, shuning uchun `$populate` + `$attach` juftligini almashtiradi.
+
+[Patient/$relate](OperationDefinition-patient-relate.html) Adliya vazirligining bolalar reyestri bo'yicha tasdiqlangan ota-ona va bola munosabatini qayd etadi. U bolani JShShIR bo'yicha topadi yoki yaratadi va ota-ona uchun RelatedPerson yaratadi.
+
+[Patient/$detach](OperationDefinition-patient-detach.html) `$attach` ning teskarisi: bitta chaqiruvda poliklinika va oilaviy shifokorga biriktirishni hamda biriktirish sanasini olib tashlaydi, `reason` majburiy.
+
+[UZ Core Medication](StructureDefinition-uz-core-medication.html) boshqa profillardagi kabi kirish qismi va Quick Start ga ega bo'ldi. U yangi dorini ro'yxatdan o'tkazishdan oldin mavjudini reyestr identifikatori yoki XPN yoki ATC kodi bo'yicha qanday topishni ko'rsatadi.
 
 #### O'zgartirildi
+
+[UZ Core AllergyIntolerance](StructureDefinition-uz-core-allergy-intolerance.html) `reaction` standart `openEHR-administration` kengaytmasi orqali reaksiyaga sabab bo'lgan MedicationAdministration ga havola qilishi mumkin. Analgetikka allergiya misoli teri toshmasini paratsetamol dozasi bilan bog'laydi.
 
 [ServiceRequest toifalari](ValueSet-service-request-categories-vs.html) da SNOMED CT `20135006` endi "Screening and home visits" o'rniga rasmiy "Screening procedure" nomiga ega, o'zbekcha va ruscha tarjimalari esa patronajni eslatmaydi: uyga tashriflar uchun alohida `439708006` "Home visit" toifasi bor.
 
 [UZ Core Patient](StructureDefinition-uz-core-patient.html) va [UZ Core Practitioner](StructureDefinition-uz-core-practitioner.html) `name.text`, `family`, `given` va `suffix` elementlarida `translation` kengaytmasini e'lon qiladi: ism o'zbek tilida yoziladi, uning ruscha va qoraqalpoqcha shakllari esa ikkinchi ism sifatida emas, o'sha `HumanName` ichida uzatiladi. [Nodira](Patient-example-nodira.html) va [practitioner](Practitioner-example-practitioner.html) misollarida ruscha shakllar bor, ikkala profil sahifasi ham bu usulni tavsiflaydi.
 
 [Harakat kodlari to'ldiruvchisi](CodeSystem-action-code-cs.html) [hududiy skrining PlanDefinition misolida](PlanDefinition-example-uz-core-regional-screening-plan-definition.html) ishlatiladigan `order-service` uchun o'zbekcha va ruscha nomlarni beradi.
+
+#### Buzuvchi o'zgarishlar
+
+[Mutaxassis sertifikati](NamingSystem-uzb-specialist-certificate.html) identifikator tizimi hujjatlar nomlar fazosidan tibbiyot xodimlari nomlar fazosiga ko'chirildi, chunki sertifikat hujjatni emas, balki mutaxassisning malakasini identifikatsiya qiladi: `https://dhp.uz/fhir/core/sid/doc/uz/specialist-certificate` o'rniga endi `https://dhp.uz/fhir/core/sid/pro/uz/specialist-certificate`. `Practitioner.qualification.identifier` yuboruvchilar yangi tizimga o'tadi; qiymat formati (seriya va raqam ajratuvchisiz, masalan `CA008815`) o'zgarmaydi.
 
 ### Versiya 0.11.1
 

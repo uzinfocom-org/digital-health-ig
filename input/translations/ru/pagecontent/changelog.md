@@ -1,20 +1,36 @@
-### В разработке
-
-#### Несовместимые изменения
-
-Система идентификаторов [сертификата специалиста](NamingSystem-uzb-specialist-certificate.html) перенесена из пространства документов в пространство медицинских работников, так как сертификат идентифицирует квалификацию специалиста, а не документ: `https://dhp.uz/fhir/core/sid/doc/uz/specialist-certificate` заменён на `https://dhp.uz/fhir/core/sid/pro/uz/specialist-certificate`. Отправители `Practitioner.qualification.identifier` переходят на новую систему; формат значения (серия и номер слитно, например `CA008815`) не меняется.
+### Версия 0.12.0
 
 #### Добавлено
 
-Для целей Nursing добавлены национальные коды [переписи населения и выдачи препаратов на дом](CodeSystem-nursing-visit-purpose-cs.html); второй код включает домашний контекст в своё значение. В [наборе услуг ServiceRequest](ValueSet-service-request-code-vs.html) явно указаны SNOMED CT `440068009` Home visit for newborn care and assessment для патронажа на 3-й, 15-й и 30-й день и `410620009` Well child visit для профилактических визитов с 3 до 60 месяцев, оба с русским и узбекским переводами. Направления Nursing помечаются категорией SNOMED CT `439708006` Home visit, которая добавлена в [категории ServiceRequest](ValueSet-service-request-categories-vs.html) с узбекским и русским переводами. В [типы визитов](ValueSet-encounter-type-vs.html) добавлен национальный код `mserv-0001-00009` «Патронаж» для Encounter визита Nursing на дом, вместе с `Encounter.class` = `HH`.
+Добавлен [UZ Core MedicationAdministration](StructureDefinition-uz-core-medicationadministration.html) для введения лекарственного средства пациенту, например дозы в отделении. Он ссылается на исполняемый MedicationRequest и фиксирует, кто и как ввёл дозу. Расширение источника финансирования указывает, закуплен ли препарат по тендеру, за счёт гуманитарной помощи или другого национального источника; он может отличаться от покрытия пациента.
+
+Добавлен [UZ Core InventoryItem](StructureDefinition-uz-core-inventoryitem.html) для учёта запаса, например компонента крови, лекарственного средства или изделия. Каждая позиция несёт национальный статус запаса, например карантин, ожидание анализов или доступен, и ссылается на хранимый продукт, с номером серии, сроком годности и местом хранения каждой физической единицы.
+
+Для целей Nursing добавлены национальные коды [переписи населения и выдачи препаратов на дом](CodeSystem-nursing-visit-purpose-cs.html).
+
+Направления Nursing помечаются категорией SNOMED CT `439708006` Home visit, а [набор услуг ServiceRequest](ValueSet-service-request-code-vs.html) включает `440068009` для патронажа новорождённых на 3-й, 15-й и 30-й день и `410620009` для профилактических визитов детей с 3 до 60 месяцев. Encounter визита на дом использует тип визита `mserv-0001-00009` «Патронаж» с `Encounter.class` = `HH`.
+
+[Patient/$attach](OperationDefinition-patient-attach.html) одним вызовом прикрепляет пациента к поликлинике, семейному врачу или к обоим, проверяя их по реестру основных данных. На уровне типа она находит или создаёт пациента по ПИНФЛ и поэтому заменяет пару `$populate` + `$attach`.
+
+[Patient/$relate](OperationDefinition-patient-relate.html) фиксирует связь родителя и ребёнка, подтверждённую по реестру детей Министерства юстиции. Она находит или создаёт ребёнка по ПИНФЛ и создаёт RelatedPerson для родителя.
+
+[Patient/$detach](OperationDefinition-patient-detach.html) обратна `$attach`: одним вызовом снимает прикрепление к поликлинике и семейному врачу и дату прикрепления, с обязательным `reason`.
+
+[UZ Core Medication](StructureDefinition-uz-core-medication.html) получил вводный раздел и Quick Start, как и другие профили. Он показывает, как найти существующий препарат по идентификатору реестра или по МНН либо коду ATC перед регистрацией нового.
 
 #### Изменено
+
+[UZ Core AllergyIntolerance](StructureDefinition-uz-core-allergy-intolerance.html) `reaction` может ссылаться на вызвавший реакцию MedicationAdministration через стандартное расширение `openEHR-administration`. Пример аллергии на анальгетик связывает кожную сыпь с дозой парацетамола.
 
 В [категориях ServiceRequest](ValueSet-service-request-categories-vs.html) у SNOMED CT `20135006` теперь официальное отображение "Screening procedure" вместо "Screening and home visits", а русский и узбекский переводы больше не упоминают патронаж: для визитов на дом есть отдельная категория `439708006` "Home visit".
 
 [UZ Core Patient](StructureDefinition-uz-core-patient.html) и [UZ Core Practitioner](StructureDefinition-uz-core-practitioner.html) объявляют расширение `translation` на `name.text`, `family`, `given` и `suffix`: имя записывается на узбекском, а его русская и каракалпакская формы передаются в том же `HumanName`, а не вторым именем. Примеры [Nodira](Patient-example-nodira.html) и [practitioner](Practitioner-example-practitioner.html) содержат русские формы, а страницы обоих профилей описывают этот подход.
 
 [Дополнение кодов действий](CodeSystem-action-code-cs.html) содержит узбекское и русское обозначения для `order-service`, который используется в [примере PlanDefinition регионального скрининга](PlanDefinition-example-uz-core-regional-screening-plan-definition.html).
+
+#### Несовместимые изменения
+
+Система идентификаторов [сертификата специалиста](NamingSystem-uzb-specialist-certificate.html) перенесена из пространства документов в пространство медицинских работников, так как сертификат идентифицирует квалификацию специалиста, а не документ: `https://dhp.uz/fhir/core/sid/doc/uz/specialist-certificate` заменён на `https://dhp.uz/fhir/core/sid/pro/uz/specialist-certificate`. Отправители `Practitioner.qualification.identifier` переходят на новую систему; формат значения (серия и номер слитно, например `CA008815`) не меняется.
 
 ### Версия 0.11.1
 
