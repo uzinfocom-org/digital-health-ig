@@ -1,5 +1,9 @@
 ### Ishlab chiqilmoqda
 
+(Hozircha o‘zgarishlar yo‘q)
+
+### Versiya 0.12.0
+
 #### Qo'shildi
 
 Bemorga dori kiritilishi, masalan, bo'limda berilgan doza uchun [UZ Core MedicationAdministration](StructureDefinition-uz-core-medicationadministration.html) qo'shildi. U bajarilayotgan MedicationRequest ga havola qiladi va dozani kim va qanday kiritganini qayd etadi. Moliyalashtirish manbai kengaytmasi dori tender, gumanitar yordam yoki boshqa milliy manba hisobidan sotib olinganini ko'rsatadi; u bemorning qamroviga mos kelmasligi mumkin.

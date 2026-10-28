@@ -1,5 +1,9 @@
 ### In development
 
+(No changes yet)
+
+### Version 0.12.0
+
 #### Added
 
 Added [UZ Core MedicationAdministration](StructureDefinition-uz-core-medicationadministration.html) for a medication given to a patient, such as a dose on a ward. It points to the MedicationRequest it fulfils and records who gave the dose and how. A funding source extension records whether the stock came from a tender, humanitarian aid or another national financing source, which can differ from the patient's coverage.
