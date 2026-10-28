@@ -136,7 +136,7 @@ CHR обеспечивает стандартизированное ведени
 
 #### Кодирование целей сестринского визита {#nursing-purpose-coding}
 
-Для двенадцати вариантов приложения Nursing используются следующие коды услуг. Система SNOMED CT — `http://snomed.info/sct`, национальная система — `https://terminology.dhp.uz/fhir/core/CodeSystem/screening-code-cs`. В FHIR R5 код передаётся в `ServiceRequest.code.concept.coding`, а подпись приложения сохраняется в `ServiceRequest.code.concept.text`. Каждое направление Nursing, независимо от цели, получает категорию SNOMED CT `439708006` Home visit в `ServiceRequest.category`.
+Для двенадцати вариантов приложения Nursing используются следующие коды услуг. Система SNOMED CT — `http://snomed.info/sct`, национальная система — `https://terminology.dhp.uz/fhir/core/CodeSystem/screening-code-cs`. В FHIR R5 код передаётся в `ServiceRequest.code.concept.coding`, а подпись приложения сохраняется в `ServiceRequest.code.concept.text`. Каждое направление Nursing, независимо от цели, получает категорию SNOMED CT `439708006` Home visit в `ServiceRequest.category`. Encounter визита получает `Encounter.type` = [`mserv-0001-00009`](CodeSystem-encounter-type-cs.html) «Патронаж».
 
 | Вариант приложения | Система | Код | Значение услуги |
 |---|---|---|---|

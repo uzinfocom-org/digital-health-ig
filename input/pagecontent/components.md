@@ -112,7 +112,7 @@ Scheduling of nursing visits is handled by the Appointment and Scheduling compon
 
 #### Nursing visit purpose coding {#nursing-purpose-coding}
 
-Use the following service codes for the twelve Nursing application choices. SNOMED CT codes use `http://snomed.info/sct`; national codes use `https://terminology.dhp.uz/fhir/core/CodeSystem/screening-code-cs`. In FHIR R5, the code is carried in `ServiceRequest.code.concept.coding`. Keep the application label in `ServiceRequest.code.concept.text`. Every Nursing visit request carries the category SNOMED CT `439708006` Home visit in `ServiceRequest.category`, whatever its purpose.
+Use the following service codes for the twelve Nursing application choices. SNOMED CT codes use `http://snomed.info/sct`; national codes use `https://terminology.dhp.uz/fhir/core/CodeSystem/screening-code-cs`. In FHIR R5, the code is carried in `ServiceRequest.code.concept.coding`. Keep the application label in `ServiceRequest.code.concept.text`. Every Nursing visit request carries the category SNOMED CT `439708006` Home visit in `ServiceRequest.category`, whatever its purpose. The Encounter of the visit uses `Encounter.type` = [`mserv-0001-00009`](CodeSystem-encounter-type-cs.html) Patronaj.
 
 | Application choice | System | Code | Service meaning |
 |---|---|---|---|
