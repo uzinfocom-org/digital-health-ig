@@ -9,7 +9,7 @@ Usage: #example
 * status = #active
 * intent = #order
 * category[dhpCategory] = $sct#439708006 "Home visit"
-* code.concept = ScreeningCodeCS#mserv-0007-00025 "Dori vositalarini uyga yetkazib berish"
+* code.concept = NursingVisitPurposeCS#mserv-0008-00002 "Dori vositalarini uyga yetkazib berish"
 * subject = Reference(Patient/example-salim)
 * authoredOn = "2026-10-27T09:00:00+05:00"
 * occurrenceDateTime = "2026-10-28T10:00:00+05:00"
@@ -26,7 +26,7 @@ Usage: #example
 * status = #active
 * intent = #order
 * category[dhpCategory] = $sct#439708006 "Home visit"
-* code.concept = ScreeningCodeCS#mserv-0007-00024 "Aholini ro'yxatga olish"
+* code.concept = NursingVisitPurposeCS#mserv-0008-00001 "Aholini ro'yxatga olish"
 * subject = Reference(Patient/example-salim)
 * authoredOn = "2026-10-27T09:00:00+05:00"
 * occurrenceDateTime = "2026-10-28T11:00:00+05:00"

@@ -112,16 +112,16 @@ Scheduling of nursing visits is handled by the Appointment and Scheduling compon
 
 #### Nursing visit purpose coding {#nursing-purpose-coding}
 
-Use the following service codes for the twelve Nursing application choices. SNOMED CT codes use `http://snomed.info/sct`; national codes use `https://terminology.dhp.uz/fhir/core/CodeSystem/screening-code-cs`. In FHIR R5, the code is carried in `ServiceRequest.code.concept.coding`. Keep the application label in `ServiceRequest.code.concept.text`. Every Nursing visit request carries the category SNOMED CT `439708006` Home visit in `ServiceRequest.category`, whatever its purpose. The Encounter of the visit uses `Encounter.type` = [`mserv-0001-00009`](CodeSystem-encounter-type-cs.html) Patronaj.
+Use the following service codes for the twelve Nursing application choices. SNOMED CT codes use `http://snomed.info/sct`; national codes use `https://terminology.dhp.uz/fhir/core/CodeSystem/screening-code-cs`, or `https://terminology.dhp.uz/fhir/core/CodeSystem/nursing-visit-purpose-cs` for home medication delivery and population enumeration. In FHIR R5, the code is carried in `ServiceRequest.code.concept.coding`. Keep the application label in `ServiceRequest.code.concept.text`. Every Nursing visit request carries the category SNOMED CT `439708006` Home visit in `ServiceRequest.category`, whatever its purpose. The Encounter of the visit uses `Encounter.class` = [`HH`](ValueSet-encounter-class-vs.html) home health and `Encounter.type` = [`mserv-0001-00009`](CodeSystem-encounter-type-cs.html) Patronaj: home health covers more than patronage visits, so the type says that this one is a patronage visit.
 
 | Application choice | System | Code | Service meaning |
 |---|---|---|---|
 | Chronic diseases | SNOMED CT | `170549007` | Chronic disease monitoring |
 | Vaccination invitation | National | `mserv-0007-00011` | Vaccination invitation |
 | Post-vaccination patronage | National | `mserv-0007-00012` | Post-vaccination follow-up |
-| Home medication delivery | National | `mserv-0007-00025` | Home medication delivery and handover |
+| Home medication delivery | National | `mserv-0008-00002` | Home medication delivery and handover |
 | Home inpatient care (no more than 5 days) | SNOMED CT | `60689008` | Home care of patient |
-| Population enumeration | National | `mserv-0007-00024` | Population enumeration |
+| Population enumeration | National | `mserv-0008-00001` | Population enumeration |
 | Preventive examination | SNOMED CT | `103740001` | Periodic physical examination |
 | Pregnant women (12–32 weeks) | SNOMED CT | `424525001` | Antenatal care |
 | Postpartum (days 3, 15 and 30) | SNOMED CT | `133906008` | Postpartum care |
@@ -131,7 +131,7 @@ Use the following service codes for the twelve Nursing application choices. SNOM
 
 The two child schedules have distinct codes: the early home patronage on days 3, 15 and 30 uses `440068009`, and the preventive visits from 3 to 60 months use `410620009`. Do not use `Infant care assessment` for the entire schedule through 60 months. Ages and the 12–32-week antenatal window are eligibility rules; the individual visit date is recorded in `occurrence[x]`. The five-day maximum is a local course rule, not a meaning encoded by `60689008`, which is broader than an inpatient-at-home episode.
 
-`mserv-0007-00025` includes delivery and handover **at home** in the service meaning. `373784005` Dispensing medication alone is broader and is not an equivalent code for this purpose. The visit request does not replace the prescription, the actual MedicationDispense, or MedicationAdministration. `mserv-0007-00024` is an administrative resident-enumeration purpose, not a screening result. No equivalent international service concept was identified for these two national purposes.
+`mserv-0008-00002` includes delivery and handover **at home** in the service meaning. `373784005` Dispensing medication alone is broader, and `895405008` Pharmacy delivery service is a pharmacy's service rather than a nurse's handover, so neither is an equivalent code for this purpose. The visit request does not replace the prescription, the actual MedicationDispense, or MedicationAdministration. `mserv-0008-00001` is an administrative resident-enumeration purpose, not a screening result. No equivalent international service concept was identified for these two national purposes.
 
 Examples: [home medication delivery](ServiceRequest-example-nursing-home-medication-request.html), [population enumeration](ServiceRequest-example-nursing-population-enumeration-request.html), [newborn home visit on day 3](ServiceRequest-example-nursing-newborn-home-visit-request.html), and [well child visit at 60 months](ServiceRequest-example-nursing-well-child-request.html).
 
