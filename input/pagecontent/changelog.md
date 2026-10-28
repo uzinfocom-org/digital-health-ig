@@ -1,7 +1,3 @@
-### In development
-
-(No changes yet)
-
 ### Version 0.12.0
 
 #### Added
