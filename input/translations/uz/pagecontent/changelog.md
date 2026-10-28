@@ -1,12 +1,12 @@
 ### Ishlab chiqilmoqda
 
-#### Qo'shildi
-
-Nursing maqsadlari uchun [aholini ro'yxatga olish va dorilarni uyga yetkazib berish](CodeSystem-screening-code-cs.html) milliy kodlari qo'shildi; ikkinchi kod uy sharoitini o'z ma'nosiga oladi. [ServiceRequest xizmatlari to'plami](ValueSet-service-request-code-vs.html) da 3, 15 va 30-kunlardagi patronaj uchun SNOMED CT `440068009` Home visit for newborn care and assessment hamda 3 oydan 60 oygacha bo'lgan profilaktik tashriflar uchun `410620009` Well child visit ruscha va o'zbekcha tarjimalar bilan aniq keltirilgan. [Nursing bo'limi](components.html#nursing-purpose-coding) ilovaning barcha o'n ikki variantini moslashtiradi va ServiceRequest misollariga havola beradi. Nursing yo'llanmalari SNOMED CT `439708006` Home visit toifasi bilan belgilanadi; u o'zbekcha va ruscha tarjimalar bilan [ServiceRequest toifalari](ValueSet-service-request-categories-vs.html) ga qo'shildi. [Tashrif turlari](ValueSet-encounter-type-vs.html) ga Nursing uy tashrifi Encounter uchun `mserv-0001-00009` «Patronaj» milliy kodi qo'shildi.
-
 #### Buzuvchi o'zgarishlar
 
 [Mutaxassis sertifikati](NamingSystem-uzb-specialist-certificate.html) identifikator tizimi hujjatlar nomlar fazosidan tibbiyot xodimlari nomlar fazosiga ko'chirildi, chunki sertifikat hujjatni emas, balki mutaxassisning malakasini identifikatsiya qiladi: `https://dhp.uz/fhir/core/sid/doc/uz/specialist-certificate` o'rniga endi `https://dhp.uz/fhir/core/sid/pro/uz/specialist-certificate`. `Practitioner.qualification.identifier` yuboruvchilar yangi tizimga o'tadi; qiymat formati (seriya va raqam ajratuvchisiz, masalan `CA008815`) o'zgarmaydi.
+
+#### Qo'shildi
+
+Nursing maqsadlari uchun [aholini ro'yxatga olish va dorilarni uyga yetkazib berish](CodeSystem-screening-code-cs.html) milliy kodlari qo'shildi; ikkinchi kod uy sharoitini o'z ma'nosiga oladi. [ServiceRequest xizmatlari to'plami](ValueSet-service-request-code-vs.html) da 3, 15 va 30-kunlardagi patronaj uchun SNOMED CT `440068009` Home visit for newborn care and assessment hamda 3 oydan 60 oygacha bo'lgan profilaktik tashriflar uchun `410620009` Well child visit ruscha va o'zbekcha tarjimalar bilan aniq keltirilgan. [Nursing bo'limi](components.html#nursing-purpose-coding) ilovaning barcha o'n ikki variantini moslashtiradi va ServiceRequest misollariga havola beradi. Nursing yo'llanmalari SNOMED CT `439708006` Home visit toifasi bilan belgilanadi; u o'zbekcha va ruscha tarjimalar bilan [ServiceRequest toifalari](ValueSet-service-request-categories-vs.html) ga qo'shildi. [Tashrif turlari](ValueSet-encounter-type-vs.html) ga Nursing uy tashrifi Encounter uchun `mserv-0001-00009` «Patronaj» milliy kodi qo'shildi.
 
 #### O'zgartirildi
 

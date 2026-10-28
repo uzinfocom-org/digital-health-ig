@@ -1,12 +1,12 @@
 ### В разработке
 
-#### Добавлено
-
-Для целей Nursing добавлены национальные коды [переписи населения и выдачи препаратов на дом](CodeSystem-screening-code-cs.html); второй код включает домашний контекст в своё значение. В [наборе услуг ServiceRequest](ValueSet-service-request-code-vs.html) явно указаны SNOMED CT `440068009` Home visit for newborn care and assessment для патронажа на 3-й, 15-й и 30-й день и `410620009` Well child visit для профилактических визитов с 3 до 60 месяцев, оба с русским и узбекским переводами. Раздел [Nursing](components.html#nursing-purpose-coding) сопоставляет все двенадцать пунктов приложения и содержит ссылки на примеры ServiceRequest. Направления Nursing помечаются категорией SNOMED CT `439708006` Home visit, которая добавлена в [категории ServiceRequest](ValueSet-service-request-categories-vs.html) с узбекским и русским переводами. В [типы визитов](ValueSet-encounter-type-vs.html) добавлен национальный код `mserv-0001-00009` «Патронаж» для Encounter визита Nursing на дом.
-
 #### Несовместимые изменения
 
 Система идентификаторов [сертификата специалиста](NamingSystem-uzb-specialist-certificate.html) перенесена из пространства документов в пространство медицинских работников, так как сертификат идентифицирует квалификацию специалиста, а не документ: `https://dhp.uz/fhir/core/sid/doc/uz/specialist-certificate` заменён на `https://dhp.uz/fhir/core/sid/pro/uz/specialist-certificate`. Отправители `Practitioner.qualification.identifier` переходят на новую систему; формат значения (серия и номер слитно, например `CA008815`) не меняется.
+
+#### Добавлено
+
+Для целей Nursing добавлены национальные коды [переписи населения и выдачи препаратов на дом](CodeSystem-screening-code-cs.html); второй код включает домашний контекст в своё значение. В [наборе услуг ServiceRequest](ValueSet-service-request-code-vs.html) явно указаны SNOMED CT `440068009` Home visit for newborn care and assessment для патронажа на 3-й, 15-й и 30-й день и `410620009` Well child visit для профилактических визитов с 3 до 60 месяцев, оба с русским и узбекским переводами. Раздел [Nursing](components.html#nursing-purpose-coding) сопоставляет все двенадцать пунктов приложения и содержит ссылки на примеры ServiceRequest. Направления Nursing помечаются категорией SNOMED CT `439708006` Home visit, которая добавлена в [категории ServiceRequest](ValueSet-service-request-categories-vs.html) с узбекским и русским переводами. В [типы визитов](ValueSet-encounter-type-vs.html) добавлен национальный код `mserv-0001-00009` «Патронаж» для Encounter визита Nursing на дом.
 
 #### Изменено
 
