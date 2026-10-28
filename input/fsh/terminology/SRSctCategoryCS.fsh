@@ -59,11 +59,11 @@ Description: "ServiceRequest SNOMED CT category supplement with translations in 
   * ^designation[=].value = "Телемедицина"
   * ^designation[+].language = #uz
   * ^designation[=].value = "Teletibbiyot bo'yicha konsultatsiya"
-* #20135006 "Screening and home visits" 
+* #20135006 "Screening procedure"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Скрининг и патронажные мероприятия"
+  * ^designation[=].value = "Скрининг"
   * ^designation[+].language = #uz
-  * ^designation[=].value = "Skrining tekshiruvi va patronaj"
+  * ^designation[=].value = "Skrining tekshiruvi"
 * #25179006 "Donation" 
   * ^designation[0].language = #ru
   * ^designation[=].value = "Донация"
@@ -74,3 +74,8 @@ Description: "ServiceRequest SNOMED CT category supplement with translations in 
   * ^designation[=].value = "Приглашение на профилактику/скрининг"
   * ^designation[+].language = #uz
   * ^designation[=].value = "Profilaktika/skrining taklifi"
+* #439708006 "Home visit"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Визит на дом"
+  * ^designation[+].language = #uz
+  * ^designation[=].value = "Uyga tashrif"

@@ -49,3 +49,8 @@ Description: "Encounter type codes with English and Russian translations"
   * ^designation[=].value = "Screening"
   * ^designation[+].language = #ru
   * ^designation[=].value = "Скрининг"
+* #mserv-0001-00009 "Patronaj"
+  * ^designation[0].language = #en
+  * ^designation[=].value = "Home visit (patronage)"
+  * ^designation[+].language = #ru
+  * ^designation[=].value = "Патронаж"

@@ -21,8 +21,9 @@ Description: "ValueSet including categories of healthcare service requests used 
 * $sct#32485007 "Admission to hospital"
 * $sct#52052004 "Rehabilitation therapy"
 * $sct#448337001 "Telemedicine consultation"
-* $sct#20135006 "Screening and home visits"
+* $sct#20135006 "Screening procedure"
 * $sct#25179006 "Donation"
 * $sct#310422005 "Prevention/screening invitation"
+* $sct#439708006 "Home visit"
 
 
