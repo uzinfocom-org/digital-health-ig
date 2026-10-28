@@ -134,32 +134,6 @@ CHR обеспечивает стандартизированное ведени
 
 Планирование сестринских визитов выполняет компонент «Запись на приём и управление расписанием».
 
-#### Кодирование целей сестринского визита {#nursing-purpose-coding}
-
-Для двенадцати вариантов приложения Nursing используются следующие коды услуг. Система SNOMED CT — `http://snomed.info/sct`, национальные системы — `https://terminology.dhp.uz/fhir/core/CodeSystem/screening-code-cs` и, для выдачи препаратов на дом и переписи населения, `https://terminology.dhp.uz/fhir/core/CodeSystem/nursing-visit-purpose-cs`. В FHIR R5 код передаётся в `ServiceRequest.code.concept.coding`, а подпись приложения сохраняется в `ServiceRequest.code.concept.text`. Каждое направление Nursing, независимо от цели, получает категорию SNOMED CT `439708006` Home visit в `ServiceRequest.category`. Encounter визита получает `Encounter.class` = [`HH`](ValueSet-encounter-class-vs.html) «Визит на дом (патронаж)» и `Encounter.type` = [`mserv-0001-00009`](CodeSystem-encounter-type-cs.html) «Патронаж»: помощь на дому шире патронажа, поэтому тип уточняет, что это патронажный визит.
-
-| Вариант приложения | Система | Код | Значение услуги |
-|---|---|---|---|
-| Хронические заболевания | SNOMED CT | `170549007` | Chronic disease monitoring |
-| Призыв к вакцинации | National | `mserv-0007-00011` | Vaccination invitation |
-| Патронаж после вакцинации | National | `mserv-0007-00012` | Post-vaccination follow-up |
-| Выдача препаратов на дом | National | `mserv-0008-00002` | Home medication delivery and handover |
-| Стационар на дому (не более 5 дней) | SNOMED CT | `60689008` | Home care of patient |
-| Перепись населения | National | `mserv-0008-00001` | Population enumeration |
-| Профилактический осмотр | SNOMED CT | `103740001` | Periodic physical examination |
-| Беременные (12–32 недели) | SNOMED CT | `424525001` | Antenatal care |
-| Послеродовой (3–15–30 дней) | SNOMED CT | `133906008` | Postpartum care |
-| Патронаж женщин детородного возраста (15–49 лет) | National | `mserv-0007-00017` | Follow-up of women of reproductive age |
-| Дети (3–15–30 дней) | SNOMED CT | `440068009` | Home visit for newborn care and assessment |
-| Дети (3–6–9–12–18–24–36–48–60 месяцев) | SNOMED CT | `410620009` | Well child visit |
-
-У двух детских графиков разные коды: ранний патронаж на дому на 3-й, 15-й и 30-й день — `440068009`, профилактические визиты с 3 до 60 месяцев — `410620009`. Не используйте `Infant care assessment` для всего графика до 60 месяцев. Возраст и окно беременности 12–32 недели — правила отбора; дата конкретного визита передаётся в `occurrence[x]`. Максимум пять дней — правило курса, а не значение кода `60689008`, который шире стационара на дому.
-
-Код `mserv-0008-00002` включает доставку и передачу лекарств **на дому** в само значение услуги. Общий `373784005` Dispensing medication шире, а `895405008` Pharmacy delivery service — услуга аптеки, а не передача лекарств медсестрой, поэтому ни один из них не является эквивалентом этой цели. Направление на визит не заменяет рецепт, фактический MedicationDispense или MedicationAdministration. Код `mserv-0008-00001` обозначает административную перепись жителей, а не результат скрининга. Для этих двух национальных целей эквивалентный международный код услуги не найден.
-
-Примеры: [выдача препаратов на дом](ServiceRequest-example-nursing-home-medication-request.html), [перепись населения](ServiceRequest-example-nursing-population-enumeration-request.html), [патронаж новорождённого на 3-й день](ServiceRequest-example-nursing-newborn-home-visit-request.html), [профилактический визит ребёнка в 60 месяцев](ServiceRequest-example-nursing-well-child-request.html).
-
-
 ### Управление клиническим маршрутом пациента {#patient-health-journey-management}
 
 Сервис PHJM формирует цифровой "маршрут" пациента от первичного обращения до конечного результата эпизода лечения, включая промежуточные наблюдения, клинические назначения и взаимодействия. Цель сервиса обеспечить сквозное, структурированное и надёжное сопровождение процесса оказания медицинской помощи пациенту в рамках Единой цифровой платформы здравоохранения (UDHP) посредством:
