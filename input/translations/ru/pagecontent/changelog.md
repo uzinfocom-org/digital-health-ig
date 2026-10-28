@@ -1,9 +1,5 @@
 ### В разработке
 
-#### Несовместимые изменения
-
-Система идентификаторов [сертификата специалиста](NamingSystem-uzb-specialist-certificate.html) перенесена из пространства документов в пространство медицинских работников, так как сертификат идентифицирует квалификацию специалиста, а не документ: `https://dhp.uz/fhir/core/sid/doc/uz/specialist-certificate` заменён на `https://dhp.uz/fhir/core/sid/pro/uz/specialist-certificate`. Отправители `Practitioner.qualification.identifier` переходят на новую систему; формат значения (серия и номер слитно, например `CA008815`) не меняется.
-
 #### Добавлено
 
 Добавлен [UZ Core MedicationAdministration](StructureDefinition-uz-core-medicationadministration.html) для введения лекарственного средства пациенту, например дозы, введённой в отделении. Он ссылается на введённый [UZ Core Medication](StructureDefinition-uz-core-medication.html), пациента, визит и исполняемый [UZ Core MedicationRequest](StructureDefinition-uz-core-medicationrequest.html), а также фиксирует, кто выполнил введение и в какой [роли](ValueSet-medicationadministration-performer-function-vs.html), с дозой, путём введения, анатомической локализацией и скоростью. Расширение [источника финансирования](StructureDefinition-medicationadministration-funding-source.html) фиксирует национальный [источник финансирования](ValueSet-financing-source-vs.html), за счёт которого закуплен препарат, например тендер или гуманитарная помощь; он может отличаться от покрытия пациента. Наборы значений [статуса](ValueSet-medicationadministration-status-vs.html), [причины статуса](ValueSet-medicationadministration-status-reason-vs.html), [места введения](ValueSet-medicationadministration-admin-location-vs.html) и [причины назначения](ValueSet-reason-medication-given-vs.html) имеют узбекские и русские обозначения.
@@ -25,6 +21,10 @@
 [UZ Core Patient](StructureDefinition-uz-core-patient.html) и [UZ Core Practitioner](StructureDefinition-uz-core-practitioner.html) объявляют расширение `translation` на `name.text`, `family`, `given` и `suffix`: имя записывается на узбекском, а его русская и каракалпакская формы передаются в том же `HumanName`, а не вторым именем. Примеры [Nodira](Patient-example-nodira.html) и [practitioner](Practitioner-example-practitioner.html) содержат русские формы, а страницы обоих профилей описывают этот подход.
 
 [Дополнение кодов действий](CodeSystem-action-code-cs.html) содержит узбекское и русское обозначения для `order-service`, который используется в [примере PlanDefinition регионального скрининга](PlanDefinition-example-uz-core-regional-screening-plan-definition.html).
+
+#### Несовместимые изменения
+
+Система идентификаторов [сертификата специалиста](NamingSystem-uzb-specialist-certificate.html) перенесена из пространства документов в пространство медицинских работников, так как сертификат идентифицирует квалификацию специалиста, а не документ: `https://dhp.uz/fhir/core/sid/doc/uz/specialist-certificate` заменён на `https://dhp.uz/fhir/core/sid/pro/uz/specialist-certificate`. Отправители `Practitioner.qualification.identifier` переходят на новую систему; формат значения (серия и номер слитно, например `CA008815`) не меняется.
 
 ### Версия 0.11.1
 

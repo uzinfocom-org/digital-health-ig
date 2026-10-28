@@ -1,9 +1,5 @@
 ### In development
 
-#### Breaking changes
-
-The [specialist certificate](NamingSystem-uzb-specialist-certificate.html) identifier system has moved from the document namespace to the healthcare professional namespace, since a certificate identifies a qualification of a professional rather than a document: `https://dhp.uz/fhir/core/sid/doc/uz/specialist-certificate` is now `https://dhp.uz/fhir/core/sid/pro/uz/specialist-certificate`. Senders of `Practitioner.qualification.identifier` switch to the new system; the value format (series followed by number, e.g. `CA008815`) is unchanged.
-
 #### Added
 
 Added [UZ Core MedicationAdministration](StructureDefinition-uz-core-medicationadministration.html) for a medication given to a patient, such as a dose administered on a ward. It references the [UZ Core Medication](StructureDefinition-uz-core-medication.html) given, the patient, the encounter and the [UZ Core MedicationRequest](StructureDefinition-uz-core-medicationrequest.html) it fulfils, and records who performed it in which [role](ValueSet-medicationadministration-performer-function-vs.html), with the dose, route, body site and rate. The [funding source](StructureDefinition-medicationadministration-funding-source.html) extension records the national [financing source](ValueSet-financing-source-vs.html) the stock was bought from, such as a tender or humanitarian aid, which can differ from the patient's coverage. Its [status](ValueSet-medicationadministration-status-vs.html), [status reason](ValueSet-medicationadministration-status-reason-vs.html), [administration location](ValueSet-medicationadministration-admin-location-vs.html) and [reason given](ValueSet-reason-medication-given-vs.html) value sets have Uzbek and Russian designations.
@@ -25,6 +21,10 @@ In the [ServiceRequest categories](ValueSet-service-request-categories-vs.html),
 [UZ Core Patient](StructureDefinition-uz-core-patient.html) and [UZ Core Practitioner](StructureDefinition-uz-core-practitioner.html) declare the `translation` extension on `name.text`, `family`, `given` and `suffix`: the name is in Uzbek, and its Russian and Karakalpak forms travel in one `HumanName` instead of a second name. The [Nodira](Patient-example-nodira.html) and [practitioner](Practitioner-example-practitioner.html) examples carry Russian forms, and both profile pages describe the pattern.
 
 The [action code supplement](CodeSystem-action-code-cs.html) gives Uzbek and Russian designations to `order-service`, which the [regional screening PlanDefinition example](PlanDefinition-example-uz-core-regional-screening-plan-definition.html) uses.
+
+#### Breaking changes
+
+The [specialist certificate](NamingSystem-uzb-specialist-certificate.html) identifier system has moved from the document namespace to the healthcare professional namespace, since a certificate identifies a qualification of a professional rather than a document: `https://dhp.uz/fhir/core/sid/doc/uz/specialist-certificate` is now `https://dhp.uz/fhir/core/sid/pro/uz/specialist-certificate`. Senders of `Practitioner.qualification.identifier` switch to the new system; the value format (series followed by number, e.g. `CA008815`) is unchanged.
 
 ### Version 0.11.1
 

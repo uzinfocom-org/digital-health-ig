@@ -1,9 +1,5 @@
 ### Ishlab chiqilmoqda
 
-#### Buzuvchi o'zgarishlar
-
-[Mutaxassis sertifikati](NamingSystem-uzb-specialist-certificate.html) identifikator tizimi hujjatlar nomlar fazosidan tibbiyot xodimlari nomlar fazosiga ko'chirildi, chunki sertifikat hujjatni emas, balki mutaxassisning malakasini identifikatsiya qiladi: `https://dhp.uz/fhir/core/sid/doc/uz/specialist-certificate` o'rniga endi `https://dhp.uz/fhir/core/sid/pro/uz/specialist-certificate`. `Practitioner.qualification.identifier` yuboruvchilar yangi tizimga o'tadi; qiymat formati (seriya va raqam ajratuvchisiz, masalan `CA008815`) o'zgarmaydi.
-
 #### Qo'shildi
 
 Bemorga dori kiritilishi, masalan, bo'limda berilgan doza uchun [UZ Core MedicationAdministration](StructureDefinition-uz-core-medicationadministration.html) qo'shildi. U kiritilgan [UZ Core Medication](StructureDefinition-uz-core-medication.html), bemor, tashrif va bajarilayotgan [UZ Core MedicationRequest](StructureDefinition-uz-core-medicationrequest.html) ga havola qiladi, kiritishni kim va qaysi [rolda](ValueSet-medicationadministration-performer-function-vs.html) bajarganini doza, yuborish yo'li, anatomik joy va tezlik bilan birga qayd etadi. [Moliyalashtirish manbai](StructureDefinition-medicationadministration-funding-source.html) kengaytmasi dori qaysi milliy [moliyalashtirish manbai](ValueSet-financing-source-vs.html) hisobidan, masalan, tender yoki gumanitar yordam orqali sotib olinganini qayd etadi; u bemorning qamroviga mos kelmasligi mumkin. [Holat](ValueSet-medicationadministration-status-vs.html), [holat sababi](ValueSet-medicationadministration-status-reason-vs.html), [kiritish joyi](ValueSet-medicationadministration-admin-location-vs.html) va [berish sababi](ValueSet-reason-medication-given-vs.html) to'plamlari o'zbekcha va ruscha nomlarga ega.
@@ -25,6 +21,10 @@ Platformaning yana uchta operatsiyasi OperationDefinition sifatida e'lon qilindi
 [UZ Core Patient](StructureDefinition-uz-core-patient.html) va [UZ Core Practitioner](StructureDefinition-uz-core-practitioner.html) `name.text`, `family`, `given` va `suffix` elementlarida `translation` kengaytmasini e'lon qiladi: ism o'zbek tilida yoziladi, uning ruscha va qoraqalpoqcha shakllari esa ikkinchi ism sifatida emas, o'sha `HumanName` ichida uzatiladi. [Nodira](Patient-example-nodira.html) va [practitioner](Practitioner-example-practitioner.html) misollarida ruscha shakllar bor, ikkala profil sahifasi ham bu usulni tavsiflaydi.
 
 [Harakat kodlari to'ldiruvchisi](CodeSystem-action-code-cs.html) [hududiy skrining PlanDefinition misolida](PlanDefinition-example-uz-core-regional-screening-plan-definition.html) ishlatiladigan `order-service` uchun o'zbekcha va ruscha nomlarni beradi.
+
+#### Buzuvchi o'zgarishlar
+
+[Mutaxassis sertifikati](NamingSystem-uzb-specialist-certificate.html) identifikator tizimi hujjatlar nomlar fazosidan tibbiyot xodimlari nomlar fazosiga ko'chirildi, chunki sertifikat hujjatni emas, balki mutaxassisning malakasini identifikatsiya qiladi: `https://dhp.uz/fhir/core/sid/doc/uz/specialist-certificate` o'rniga endi `https://dhp.uz/fhir/core/sid/pro/uz/specialist-certificate`. `Practitioner.qualification.identifier` yuboruvchilar yangi tizimga o'tadi; qiymat formati (seriya va raqam ajratuvchisiz, masalan `CA008815`) o'zgarmaydi.
 
 ### Versiya 0.11.1
 
