@@ -6,7 +6,7 @@ Added [UZ Core MedicationAdministration](StructureDefinition-uz-core-medicationa
 
 Added [UZ Core InventoryItem](StructureDefinition-uz-core-inventoryitem.html) for stock of an item such as a blood component, medication or device. Each item carries a national inventory status, such as quarantine, awaiting tests or available, and points to the product it holds, with the lot number, expiry date and storage location of each physical unit.
 
-Nursing visit purposes now include national codes for [population enumeration and home medication delivery](CodeSystem-nursing-visit-purpose-cs.html), and the [Nursing component](components.html#nursing-purpose-coding) maps all twelve application choices to service codes.
+Nursing visit purposes now include national codes for [population enumeration and home medication delivery](CodeSystem-nursing-visit-purpose-cs.html).
 
 Nursing visit requests are categorised as SNOMED CT `439708006` Home visit, and [ServiceRequest procedures and investigations](ValueSet-service-request-code-vs.html) lists `440068009` for the newborn patronage on days 3, 15 and 30 and `410620009` for preventive child visits from 3 to 60 months. The Encounter of a home visit uses the encounter type `mserv-0001-00009` Patronaj with `Encounter.class` = `HH`.
 

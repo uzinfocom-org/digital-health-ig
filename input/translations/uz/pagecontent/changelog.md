@@ -6,7 +6,7 @@ Bemorga dori kiritilishi, masalan, bo'limda berilgan doza uchun [UZ Core Medicat
 
 Qon komponenti, dori yoki tibbiy buyum kabi narsalar zaxirasi uchun [UZ Core InventoryItem](StructureDefinition-uz-core-inventoryitem.html) qo'shildi. Har bir pozitsiya karantin, tekshiruvlarni kutish yoki mavjud kabi milliy zaxira holatini tashiydi va saqlanayotgan mahsulotga havola qiladi, har bir jismoniy birlikning seriya raqami, yaroqlilik muddati va saqlash joyi bilan.
 
-Nursing maqsadlari uchun [aholini ro'yxatga olish va dorilarni uyga yetkazib berish](CodeSystem-nursing-visit-purpose-cs.html) milliy kodlari qo'shildi, [Nursing bo'limi](components.html#nursing-purpose-coding) esa ilovaning barcha o'n ikki variantini xizmat kodlariga moslashtiradi.
+Nursing maqsadlari uchun [aholini ro'yxatga olish va dorilarni uyga yetkazib berish](CodeSystem-nursing-visit-purpose-cs.html) milliy kodlari qo'shildi.
 
 Nursing yo'llanmalari SNOMED CT `439708006` Home visit toifasi bilan belgilanadi, [ServiceRequest xizmatlari to'plami](ValueSet-service-request-code-vs.html) esa 3, 15 va 30-kunlardagi yangi tug'ilgan chaqaloq patronaji uchun `440068009` va 3 oydan 60 oygacha bo'lgan bolalarning profilaktik tashriflari uchun `410620009` ni o'z ichiga oladi. Uy tashrifi Encounter i `Encounter.class` = `HH` bilan `mserv-0001-00009` «Patronaj» tashrif turidan foydalanadi.
 

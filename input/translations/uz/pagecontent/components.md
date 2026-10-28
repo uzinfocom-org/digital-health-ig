@@ -126,35 +126,7 @@ Komponent quyidagilarni ta'minlaydi:
 - bemorning tashrif natijalari, bajarilgan protseduralar va tavsiyalarga bemor portali orqali kirishini;
 - patronaj faoliyatini monitoring qilishni hamda sog'liqni saqlash tashkilotlari va hududlar kesimida hisobotlar shakllantirishni.
 
-Patronaj tashrifi o'tkaziladigan maqsad [UZ Core ServiceRequest](StructureDefinition-uz-core-servicerequest.html) profilining `code` elementida ko'rsatiladi. Tug'ruqdan keyingi patronaj, profilaktik ko'rik, surunkali kasalliklarni dispanser kuzatuvi va uyda statsionar yordam [ServiceRequest muolajalari va tekshiruvlari](ValueSet-service-request-code-vs.html) to'plamidan SNOMED CT da kodlanadi. Vaksinatsiyadan keyingi patronaj va reproduktiv yoshdagi ayollar patronaji uchun mos SNOMED CT konsepti yo'q, ular ushbu qo'llanmaning [skrining va uyga tashrif kodlari](CodeSystem-screening-code-cs.html)dan foydalanadi.
-
 Hamshiralik tashriflarini rejalashtirishni "Qabulga yozish va jadvalni boshqarish" komponenti bajaradi.
-
-#### Hamshiralik tashrifi maqsadlarini kodlash {#nursing-purpose-coding}
-
-Nursing ilovasining o'n ikki varianti uchun quyidagi xizmat kodlari ishlatiladi. SNOMED CT tizimi — `http://snomed.info/sct`, milliy tizimlar — `https://terminology.dhp.uz/fhir/core/CodeSystem/screening-code-cs` hamda dorilarni uyga yetkazib berish va aholini ro'yxatga olish uchun `https://terminology.dhp.uz/fhir/core/CodeSystem/nursing-visit-purpose-cs`. FHIR R5 da kod `ServiceRequest.code.concept.coding` da, ilovadagi nom esa `ServiceRequest.code.concept.text` da uzatiladi. Har bir Nursing yo'llanmasi maqsadidan qat'i nazar `ServiceRequest.category` da SNOMED CT `439708006` Home visit toifasini oladi. Tashrifning Encounter resursi `Encounter.class` = [`HH`](ValueSet-encounter-class-vs.html) «Uyga tashrif (patronaj)» va `Encounter.type` = [`mserv-0001-00009`](CodeSystem-encounter-type-cs.html) «Patronaj» ni oladi: uyda yordam patronajdan kengroq, shuning uchun tur bu patronaj tashrifi ekanini aniqlaydi.
-
-| Ilovadagi variant | Tizim | Kod | Xizmat ma'nosi |
-|---|---|---|---|
-| Surunkali kasalliklar | SNOMED CT | `170549007` | Chronic disease monitoring |
-| Emlashga chaqiruv | National | `mserv-0007-00011` | Vaccination invitation |
-| Emlashdan keyingi patronaj | National | `mserv-0007-00012` | Post-vaccination follow-up |
-| Dori vositalarini uyga yetkazib berish | National | `mserv-0008-00002` | Home medication delivery and handover |
-| Uy sharoitidagi statsionar xizmat (5 kundan oshmasligi kerak) | SNOMED CT | `60689008` | Home care of patient |
-| Aholini ro'yxatga olish | National | `mserv-0008-00001` | Population enumeration |
-| Profilaktik tibbiy ko'rik | SNOMED CT | `103740001` | Periodic physical examination |
-| Homilador ayollar (12–32 hafta) | SNOMED CT | `424525001` | Antenatal care |
-| Tug'ruqdan keyingi patronaj (3, 15, 30 kun) | SNOMED CT | `133906008` | Postpartum care |
-| Reproduktiv yoshdagi ayollar patronaji (15–49 yosh) | National | `mserv-0007-00017` | Follow-up of women of reproductive age |
-| Bolalar (3, 15, 30 kun) | SNOMED CT | `440068009` | Home visit for newborn care and assessment |
-| Bolalar (3, 6, 9, 12, 18, 24, 36, 48, 60 oy) | SNOMED CT | `410620009` | Well child visit |
-
-Bolalar uchun ikki jadvalning kodlari har xil: 3, 15 va 30-kunlardagi uydagi erta patronaj — `440068009`, 3 oydan 60 oygacha bo'lgan profilaktik tashriflar — `410620009`. `Infant care assessment` kodini 60 oygacha bo'lgan butun jadval uchun ishlatmang. Yosh va homiladorlikning 12–32 haftalik davri tanlash qoidalaridir; aniq tashrif sanasi `occurrence[x]` da beriladi. Besh kunlik chegara kurs qoidasi bo'lib, uy sharoitidagi statsionardan kengroq bo'lgan `60689008` kodining ma'nosiga kirmaydi.
-
-`mserv-0008-00002` kodi dorilarni **uyga** yetkazib berish va topshirishni anglatadi. Umumiy `373784005` Dispensing medication kengroq, `895405008` Pharmacy delivery service esa hamshira tomonidan topshirish emas, dorixona xizmati, shuning uchun ularning hech biri bu maqsadga teng emas. Tashrif yo'llanmasi retsept, amaldagi MedicationDispense yoki MedicationAdministration o'rnini bosmaydi. `mserv-0008-00001` klinik skrining natijasini emas, aholini ma'muriy ro'yxatga olishni bildiradi. Ushbu ikki milliy maqsadga teng xalqaro xizmat kodi aniqlanmadi.
-
-Misollar: [dorilarni uyga yetkazib berish](ServiceRequest-example-nursing-home-medication-request.html), [aholini ro'yxatga olish](ServiceRequest-example-nursing-population-enumeration-request.html), [yangi tug'ilgan chaqaloqni 3-kuni uyda patronaj qilish](ServiceRequest-example-nursing-newborn-home-visit-request.html), [60 oylik bolaning profilaktik tashrifi](ServiceRequest-example-nursing-well-child-request.html).
-
 
 ### Bemorning klinik marshrutini boshqarish {#patient-health-journey-management}
 
