@@ -16,6 +16,8 @@ Two more platform operations are published as OperationDefinitions. [Patient/$at
 
 #### Changed
 
+In the [ServiceRequest categories](ValueSet-service-request-categories-vs.html), SNOMED CT `20135006` now has its official display "Screening procedure" instead of "Screening and home visits", and its Uzbek and Russian translations no longer mention home visits, which have their own category `439708006` "Home visit".
+
 [UZ Core Patient](StructureDefinition-uz-core-patient.html) and [UZ Core Practitioner](StructureDefinition-uz-core-practitioner.html) declare the `translation` extension on `name.text`, `family`, `given` and `suffix`: the name is in Uzbek, and its Russian and Karakalpak forms travel in one `HumanName` instead of a second name. The [Nodira](Patient-example-nodira.html) and [practitioner](Practitioner-example-practitioner.html) examples carry Russian forms, and both profile pages describe the pattern.
 
 The [action code supplement](CodeSystem-action-code-cs.html) gives Uzbek and Russian designations to `order-service`, which the [regional screening PlanDefinition example](PlanDefinition-example-uz-core-regional-screening-plan-definition.html) uses.
