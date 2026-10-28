@@ -132,7 +132,7 @@ Hamshiralik tashriflarini rejalashtirishni "Qabulga yozish va jadvalni boshqaris
 
 #### Hamshiralik tashrifi maqsadlarini kodlash {#nursing-purpose-coding}
 
-Nursing ilovasining o'n ikki varianti uchun quyidagi xizmat kodlari ishlatiladi. SNOMED CT tizimi — `http://snomed.info/sct`, milliy tizim — `https://terminology.dhp.uz/fhir/core/CodeSystem/screening-code-cs`. FHIR R5 da kod `ServiceRequest.code.concept.coding` da, ilovadagi nom esa `ServiceRequest.code.concept.text` da uzatiladi. Har bir Nursing yo'llanmasi maqsadidan qat'i nazar `ServiceRequest.category` da SNOMED CT `439708006` Home visit toifasini oladi. Tashrifning Encounter resursi `Encounter.type` = [`mserv-0001-00009`](CodeSystem-encounter-type-cs.html) «Patronaj» oladi.
+Nursing ilovasining o'n ikki varianti uchun quyidagi xizmat kodlari ishlatiladi. SNOMED CT tizimi — `http://snomed.info/sct`, milliy tizim — `https://terminology.dhp.uz/fhir/core/CodeSystem/screening-code-cs`. FHIR R5 da kod `ServiceRequest.code.concept.coding` da, ilovadagi nom esa `ServiceRequest.code.concept.text` da uzatiladi. Har bir Nursing yo'llanmasi maqsadidan qat'i nazar `ServiceRequest.category` da SNOMED CT `439708006` Home visit toifasini oladi. Tashrifning Encounter resursi `Encounter.class` = [`HH`](ValueSet-encounter-class-vs.html) «Uyga tashrif (patronaj)» va `Encounter.type` da ko'rsatilgan xizmatning milliy [tashrif turi](ValueSet-encounter-type-vs.html)ni oladi, masalan `mserv-0001-00001` «Profilaktik».
 
 | Ilovadagi variant | Tizim | Kod | Xizmat ma'nosi |
 |---|---|---|---|
