@@ -1,0 +1,4 @@
+CODE,UZ,RU,EN,https://terminology.dhp.uz/fhir/core/CodeSystem/inventory-operation-type-cs,Definition (EN)
+invop-0001-00001,Kirim,Приход,Addition,,The reported quantities are added to stock on hand.
+invop-0001-00002,Chiqim,Расход,Subtraction,,The reported quantities are removed from stock on hand.
+invop-0001-00003,O‘zgarishsiz,Без изменений,No change,,"A count confirmed that stock matches the records, with no change in quantity."
