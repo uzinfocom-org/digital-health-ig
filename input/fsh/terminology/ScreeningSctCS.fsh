@@ -89,3 +89,8 @@ Description: "Screening and home visits supplement with translations in Uzbek an
   * ^designation[=].value = "Профилактический осмотр ребёнка"
   * ^designation[+].language = #uz
   * ^designation[=].value = "Bolaning profilaktik ko'rigi"
+* #3457005 "Patient referral"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Направление пациента"
+  * ^designation[+].language = #uz
+  * ^designation[=].value = "Bemor yo'llanmasi"

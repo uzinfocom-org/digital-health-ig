@@ -22,9 +22,13 @@ Description: "Uzbekistan Core ServiceRequest profile, used to represent a reques
 * category ^slicing.rules = #open
 * category ^slicing.description = "One category from the national ServiceRequest categories; any other categories are allowed alongside it"
 * category ^slicing.ordered = false
-* category contains dhpCategory 0..1 MS
+* category contains
+    dhpCategory 0..1 MS and
+    referralPurpose 0..1 MS
 * category[dhpCategory] from ServiceRequestCategoriesVS (required)
 * category[dhpCategory] ^short = "National category of the service being requested"
+* category[referralPurpose] from ServiceRequestReferralPurposeVS (required)
+* category[referralPurpose] ^short = "Level of service request."
 * priority MS
 * priority from RequestPriorityVS (required)
 * priority ^short = "Indicates how quickly the ServiceRequest should be addressed with respect to other requests"
@@ -33,6 +37,10 @@ Description: "Uzbekistan Core ServiceRequest profile, used to represent a reques
 * code MS
 * code from ServiceRequestCodesVS (extensible)
 * code ^short = "Specifies the procedure, diagnostic investigation, or panel being requested. The codes used represent orderable services and must not be used for analytical result observations."
+* orderDetail.parameter.value[x] MS
+* orderDetail.parameter.valueCodeableConcept MS
+* orderDetail.parameter.valueCodeableConcept from ServiceRequestBasisVS (extensible)
+* orderDetail.parameter.valueCodeableConcept ^short = "Basis for treatment under a preferential diagnosis, coded using ICD-10."
 * subject MS
 * subject only Reference(UZCorePatient or UZCoreLocation)
 * subject ^short = "The patient for whom the laboratory referral or order is issued. This element identifies the individual who is the subject of the requested laboratory investigation."
@@ -46,6 +54,8 @@ Description: "Uzbekistan Core ServiceRequest profile, used to represent a reques
 * requester MS
 * requester only Reference(UZCorePractitioner or UZCorePractitionerRole or UZCoreOrganization or UZCorePatient or UZCoreRelatedPerson)
 * requester ^short = "The individual, role, or organization that authored and issued the laboratory referral/order. This element identifies the healthcare professional or organizational unit responsible for initiating the ServiceRequest."
+* performer MS
+* performer only Reference(UZCoreOrganization)
 * reason MS
 * reason from ConditionCodeVS (preferred)
 * reason ^slicing.discriminator.type = #value
