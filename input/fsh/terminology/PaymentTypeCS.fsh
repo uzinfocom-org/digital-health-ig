@@ -34,13 +34,13 @@ Description: "List of payment types used in Uzbekistan healthcare system"
   * ^designation[+].language = #en
   * ^designation[=].value = "Other"
 
-* #paytype-0001-0006 "ПП № 5199"
+* #paytype-0001-0006 "5199-sonli qaror"
   * ^designation[0].language = #ru
   * ^designation[=].value = "ПП № 5199"
   * ^designation[+].language = #en
   * ^designation[=].value = "Resolution No. 5199"
 
-* #paytype-0001-0007 "ПП № 311"
+* #paytype-0001-0007 "311-sonli qaror"
   * ^designation[0].language = #ru
   * ^designation[=].value = "ПП № 311"
   * ^designation[+].language = #en
