@@ -1,7 +1,7 @@
 ValueSet: RecommendationDateCriterionVS
 Id: recommendation-date-criterion-vs
-Title: "Immunization recommendation date criterion"
-Description: "Immunization recommendation date criteria"
+Title: "ImmunizationRecommendation date criterion"
+Description: "ImmunizationRecommendation date criteria"
 * ^url = "https://terminology.dhp.uz/fhir/core/ValueSet/recommendation-date-criterion-vs"
 * ^experimental = true
 * ^extension[0].url = $valueset-supplement

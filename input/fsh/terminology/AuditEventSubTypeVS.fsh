@@ -1,7 +1,7 @@
 ValueSet: AuditEventSubTypeVS
 Id: audit-event-subtype-vs
-Title: "Audit event subtype"
-Description: "Audit event subtypes"
+Title: "AuditEvent subtype"
+Description: "AuditEvent subtypes"
 * ^url = "https://terminology.dhp.uz/fhir/core/ValueSet/audit-event-subtype-vs"
 * ^experimental = true
 * ^extension[+].url = $valueset-supplement

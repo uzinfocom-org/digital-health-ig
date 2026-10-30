@@ -361,7 +361,7 @@ FHIR технически допускает указывать версию Cod
 ```fsh
 CodeSystem: DiagnosisTypeCS
 Id: diagnosis-type-cs
-Title: "Diagnosis Types"
+Title: "Diagnosis type"
 Description: "Diagnosis types in Uzbekistan"
 * insert OriginalCodeSystemDraft(diagnosis-type-cs)
 

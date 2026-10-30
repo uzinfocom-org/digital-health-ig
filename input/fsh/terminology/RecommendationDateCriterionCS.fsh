@@ -1,7 +1,7 @@
 CodeSystem: RecommendationDateCriterionCS
 Id: recommendation-date-criterion-cs
-Title: "Immunization recommendation date criterion translations"
-Description: "Immunization recommendation date criterion supplement with translations in Uzbek and Russian"
+Title: "ImmunizationRecommendation date criterion translations"
+Description: "ImmunizationRecommendation date criterion supplement with translations in Uzbek and Russian"
 
 * insert SupplementCodeSystemDraft(recommendation-date-criterion-cs, $loinc, 2.82.0)
 
