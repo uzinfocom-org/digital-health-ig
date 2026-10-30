@@ -54,8 +54,6 @@ Usage: #example
 
 * associatedMedication = Reference(Medication/example-medication)
 
-// * author = Reference(Organization/example-shif)
-
 * cost[0].effectiveDate.start = "2026-10-01"
 * cost[0].type = medication-knowledge-cost-type-cs#price-type-0001-00001 "Price ceiling"
 * cost[0].source = "DTSJ"
