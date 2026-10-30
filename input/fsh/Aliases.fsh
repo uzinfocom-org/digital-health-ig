@@ -57,6 +57,7 @@ Alias: $goal-status = http://hl7.org/fhir/goal-status
 Alias: $group-membership-basis = http://hl7.org/fhir/group-membership-basis
 Alias: $group-type = http://hl7.org/fhir/group-type
 Alias: $healthcard = https://dhp.uz/fhir/core/sid/pid/uz/hc
+Alias: $hl7TermMaintInfra = http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra
 Alias: $http-interaction = http://hl7.org/fhir/restful-interaction
 Alias: $iccc-3 = http://terminology.hl7.org/CodeSystem/iccc-3
 Alias: $icd-10 = http://hl7.org/fhir/sid/icd-10
