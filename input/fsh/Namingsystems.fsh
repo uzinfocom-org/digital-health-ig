@@ -768,3 +768,21 @@ Usage: #definition
 * uniqueId[0].type = #uri
 * uniqueId[=].value = $inventory-item-number
 * uniqueId[=].preferred = true
+
+Instance: uzb-inventory-report-identifier
+InstanceOf: NamingSystem
+Description: "Inventory report identifiers assigned by inventory-managing organizations in Uzbekistan"
+Usage: #definition
+* url = "https://terminology.dhp.uz/fhir/core/NamingSystem/uzb-inventory-report-identifier"
+* name = "UzbekistanInventoryReportIdentifier"
+* status = #active
+* kind = #identifier
+* date = "2026-10-30"
+* publisher = "Uzinfocom"
+* responsible = "Ministry of Health of the Republic of Uzbekistan"
+* description = "Naming system for inventory report identifiers assigned by the managing organization's information system to identify inventory reports documenting inventory counts and stock levels."
+* jurisdiction = urn:iso:std:iso:3166#UZ "Uzbekistan"
+* usage = "Used in InventoryReport.identifier.system to identify an inventory report. Values must be unique across participating organizations within this namespace, using coordinated allocation or an issuer-qualified value. Record the organization that assigned the identifier in identifier.assigner."
+* uniqueId[0].type = #uri
+* uniqueId[=].value = $inventory-report-identifier
+* uniqueId[=].preferred = true

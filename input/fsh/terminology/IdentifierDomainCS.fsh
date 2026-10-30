@@ -127,6 +127,13 @@ Description: """
       * ^property[=].valueString = Canonical(uzb-inventory-item-number)
       * ^property[+].code = #notSelectable
       * ^property[=].valueBoolean = false
+    * #https://dhp.uz/fhir/core/sid/doc/uz/inventory-report "Inventory report identifiers assigned by inventory-managing organizations in Uzbekistan"
+      * ^property[0].code = #country
+      * ^property[=].valueCoding = $iso-3166#UZ
+      * ^property[+].code = #naming-system
+      * ^property[=].valueString = Canonical(uzb-inventory-report-identifier)
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
 * #https://dhp.uz/fhir/core/sid/prd "Root of identifiers for products"
   * ^property[0].code = #notSelectable
   * ^property[=].valueBoolean = true

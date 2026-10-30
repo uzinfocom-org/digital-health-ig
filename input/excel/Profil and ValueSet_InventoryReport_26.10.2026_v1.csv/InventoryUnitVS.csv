@@ -1,0 +1,22 @@
+CODE,UZ,RU,EN,https://terminology.dhp.uz/fhir/core/CodeSystem/inventory-unit-cs,Definition (EN)
+invun-0001-00001,Quti,Коробка,Box,,
+invun-0001-00002,Qadoq,Упаковка,Package,,
+invun-0001-00003,O‘ram,Пачка,Pack,,
+invun-0001-00004,To‘plam,Набор (комплект),Set / kit,,
+,,,,,
+732936001,Tabletka,Таблетка,Tablet,http://snomed.info/sct,Tablet (unit of presentation)
+732937005,Kapsula,Капсула,Capsule,,Capsule (unit of presentation)
+733026001,Flakon,Флакон,Vial,,Vial (unit of presentation)
+732978007,Ampula,Ампула,Ampoule,,Ampule (unit of presentation)
+732986007,Shisha,Бутылка,Bottle,,Bottle (unit of presentation)
+732982009,Gemokonteyner,Гемоконтейнер,Blood bag,,Bag (unit of presentation); blood bag / blood container.
+,,,,,
+piece,Dona,Штука,Piece,https://terminology.dhp.uz/fhir/core/CodeSystem/medication-total-volume-local-units-cs,Single countable item.
+dose,Doza,Доза,Dose,,
+,,,,,
+mL,Millilitr,Миллилитр,Millilitre,http://unitsofmeasure.org,
+L,Litr,Литр,Litre,,
+mg,Milligramm,Миллиграмм,Milligram,,
+g,Gramm,Грамм,Gram,,
+kg,Kilogramm,Килограмм,Kilogram,,
+[iU],Xalqaro birlik,Международная единица,International unit,,
