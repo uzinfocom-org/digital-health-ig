@@ -1,7 +1,7 @@
 ValueSet: DeviceUsageAdherenceCodeVS
 Id: deviceusage-adherence-code-vs
-Title: "Device usage adherence code"
-Description: "Device usage adherence codes (always, sometimes, never), with Uzbek and Russian translations"
+Title: "DeviceUsage adherence code"
+Description: "How regularly a patient uses a device: always, sometimes or never, with Uzbek and Russian translations"
 * ^url = "https://terminology.dhp.uz/fhir/core/ValueSet/deviceusage-adherence-code-vs"
 * ^experimental = true
 * ^extension[0].url = $valueset-supplement

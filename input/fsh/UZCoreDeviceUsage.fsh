@@ -48,37 +48,35 @@ Description: "Uzbekistan Core DeviceUsage profile, used to record that a patient
 Instance: example-deviceusage-active
 InstanceOf: UZCoreDeviceUsage
 Usage: #example
-Title: "Example UZ Core DeviceUsage - Active Use"
-Description: "Example of a device the patient is currently using"
+Title: "Example UZ Core DeviceUsage - Wheelchair in Use"
+Description: "Example of a device the patient is still using: a wheelchair used at home since the patient's Group I disability was established"
 
 * status = #active
 * patient = Reference(example-salim)
-* device.concept = $sct#268460000 "Intrauterine contraceptive device"
-* basedOn = Reference(UZCoreServiceRequest-Example01)
-* dateAsserted = "2024-09-10T10:00:00Z"
-
-* timingDateTime = "2024-09-01"
-* category = $sct#49062001 "Device"
-
+* device.concept = $sct#58938008 "Wheelchair"
+* category = $medicationrequest-admin-location#community
+* timingPeriod.start = "2020-04-02"
+* dateAsserted = "2026-10-12T10:00:00+05:00"
+* usageStatus = $deviceusage-status#active
 * informationSource = Reference(example-practitioner)
-* note.text = "Device usage for patient care"
+* reason.reference = Reference(example-disability)
+* note.text = "Manual wheelchair, used daily at home and outdoors."
 
 Instance: example-deviceusage-period
 InstanceOf: UZCoreDeviceUsage
 Usage: #example
-Title: "Example UZ Core DeviceUsage - Usage Period"
-Description: "Example of a device used over a recorded period"
+Title: "Example UZ Core DeviceUsage - Implanted Port, Removed"
+Description: "Example of a device used over a period that has ended: an implanted venous access port placed for chemotherapy and removed when treatment finished"
 
-* status = #active
-* patient = Reference(example-salim)
-* device.concept = $sct#268460000 "Intrauterine contraceptive device"
-* basedOn = Reference(UZCoreServiceRequest-Example01)
-* dateAsserted = "2024-09-10T10:00:00Z"
-
-* timingPeriod.start = "2024-01-01"
-* timingPeriod.end = "2024-12-31"
-
-* category = $sct#49062001 "Device"
-
+* status = #completed
+* patient = Reference(example-emma)
+* device.concept = $sct#398013009 "Implantable venous access port"
+* category = $medicationrequest-admin-location#outpatient
+* timingPeriod.start = "2025-09-02"
+* timingPeriod.end = "2026-07-14"
+* dateAsserted = "2026-07-14T11:20:00+05:00"
+* usageStatus = $deviceusage-status#completed
 * informationSource = Reference(example-practitioner)
-* note.text = "Regular device usage period"
+* reason.reference = Reference(example-cancer)
+* bodySite.concept = $sct#63698005 "Anterior chest wall structure"
+* note.text = "Port placed for chemotherapy and removed after the last cycle."
