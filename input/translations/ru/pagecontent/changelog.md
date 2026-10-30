@@ -4,9 +4,15 @@
 
 Система идентификаторов [сертификата специалиста](NamingSystem-uzb-specialist-certificate.html) перенесена из пространства документов в пространство медицинских работников, так как сертификат идентифицирует квалификацию специалиста, а не документ: `https://dhp.uz/fhir/core/sid/doc/uz/specialist-certificate` заменён на `https://dhp.uz/fhir/core/sid/pro/uz/specialist-certificate`. Отправители `Practitioner.qualification.identifier` переходят на новую систему; формат значения (серия и номер слитно, например `CA008815`) не меняется.
 
+#### Добавлено
+
+[UZ Core Device](StructureDefinition-uz-core-device.html) описывает физическое медицинское изделие - больничное оборудование, например компьютерный томограф, или отдельное изделие, например внутриматочную спираль, - с его типом и категорией по SNOMED CT, производителем, моделью, серийным номером и номером серии, статусом и доступностью, а также организацией и местом, к которым оно относится. Вместе с профилем добавлены узбекские и русские переводы кодов HL7 для статуса изделия, статуса доступности, типа наименования и категории, а также типов контрацептивных изделий SNOMED CT. На странице профиля есть вводный раздел и Быстрый старт.
+
 #### Изменено
 
 [UZ Core Patient](StructureDefinition-uz-core-patient.html) и [UZ Core Practitioner](StructureDefinition-uz-core-practitioner.html) объявляют расширение `translation` на `name.text`, `family`, `given` и `suffix`: имя записывается на узбекском, а его русская и каракалпакская формы передаются в том же `HumanName`, а не вторым именем. Примеры [Nodira](Patient-example-nodira.html) и [practitioner](Practitioner-example-practitioner.html) содержат русские формы, а страницы обоих профилей описывают этот подход.
+
+Все ссылки на Device в профилях UZ Core теперь указывают на [UZ Core Device](StructureDefinition-uz-core-device.html): Observation, Procedure, Condition, AdverseEvent, Composition, QuestionnaireResponse, Group, MedicationAdministration, MedicationDispense, InventoryItem, SupplyRequest и SupplyDelivery.
 
 ### Версия 0.11.1
 

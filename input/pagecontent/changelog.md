@@ -12,9 +12,13 @@ Two more platform operations are published as OperationDefinitions. [Patient/$at
 
 [UZ Core Medication](StructureDefinition-uz-core-medication.html) now has the narrative intro and Quick Start that the other profiles carry: the mandatory and Must Support elements, how to find an existing medication by registry identifier (registration certificate, GTIN, Asl Belgisi marking, ICPS, box group) or by INN / ATC code before registering a new one, step-by-step JSON examples, and the identifier slices table.
 
+[UZ Core Device](StructureDefinition-uz-core-device.html) describes a physical medical device - hospital equipment such as a CT scanner, or a single item such as an intrauterine device - with its SNOMED CT type and category, manufacturer, model, serial and lot numbers, status and availability, and the organization and location it belongs to. Uzbek and Russian translations of the HL7 device status, availability status, name type and category codes, and of the SNOMED CT contraceptive device types, come with it. The profile page has the narrative intro and Quick Start.
+
 #### Changed
 
 [UZ Core Patient](StructureDefinition-uz-core-patient.html) and [UZ Core Practitioner](StructureDefinition-uz-core-practitioner.html) declare the `translation` extension on `name.text`, `family`, `given` and `suffix`: the name is in Uzbek, and its Russian and Karakalpak forms travel in one `HumanName` instead of a second name. The [Nodira](Patient-example-nodira.html) and [practitioner](Practitioner-example-practitioner.html) examples carry Russian forms, and both profile pages describe the pattern.
+
+Every reference to a Device in UZ Core profiles now targets [UZ Core Device](StructureDefinition-uz-core-device.html): Observation, Procedure, Condition, AdverseEvent, Composition, QuestionnaireResponse, Group, MedicationAdministration, MedicationDispense, InventoryItem, SupplyRequest and SupplyDelivery.
 
 ### Version 0.11.1
 
