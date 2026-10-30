@@ -105,7 +105,7 @@ Description: "Example of a single copper intrauterine contraceptive device track
 * category[0] = $device-category#implantable "Implantable"
 * category[1] = $device-category#single-use "Single Use"
 
-* type = $sct#268460000 "Intrauterine contraceptive device"
+* type = $sct#268460000 "Bachadon ichi kontratseptiv vosita"
 
 * owner = Reference(xonobod-medical-association)
 
@@ -132,6 +132,6 @@ Description: "Example of a drug-eluting subdermal contraceptive implant tracked 
 * category[0] = $device-category#implantable "Implantable"
 * category[1] = $device-category#single-use "Single Use"
 
-* type = $sct#468312002 "Drug-eluting contraceptive implant"
+* type = $sct#468312002 "Dori moddasi ajratuvchi kontratseptiv implant"
 
 * owner = Reference(xonobod-medical-association)
