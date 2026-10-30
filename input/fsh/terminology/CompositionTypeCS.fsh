@@ -2355,3 +2355,8 @@ Description: "Composition Type CodeSystem with translations in uzbek and russian
   * ^designation[=].value = "Уведомление о выделенной культуре возбудителя чумы КУХЮКММ Минздрава РУз"
   * ^designation[+].language = #en
   * ^designation[=].value = "Notification on isolated culture of plague pathogen by MoH RUz"
+* #emdoc-0010-0471 "Klinik-diagnostik laboratoriya IXLA tahlili: foliy kislotasi, 25-OH D vitamini, B12 vitamini"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Клинико-диагностическая лаборатория, анализ ИФА: фолиевая кислота, 25-OH витамин D, витамин B12"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Clinical diagnostic laboratory ELISA analysis: folic acid, 25-OH vitamin D, vitamin B12"
