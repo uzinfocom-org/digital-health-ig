@@ -254,3 +254,5 @@ Alias: $inventory-item-number = https://dhp.uz/fhir/core/sid/doc/uz/inventory-it
 Alias: $event-location = http://hl7.org/fhir/StructureDefinition/event-location 
 Alias: $medication-admin-location = http://terminology.hl7.org/CodeSystem/medication-admin-location
 Alias: $openEHR-administration = http://hl7.org/fhir/StructureDefinition/openEHR-administration
+Alias: $medicationknowledge-status = http://hl7.org/fhir/CodeSystem/medicationknowledge-status
+Alias: $medication-knowledge = https://dhp.uz/fhir/core/sid/prd/uz/medication-knowledge
