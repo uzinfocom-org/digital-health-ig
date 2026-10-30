@@ -1,3 +1,9 @@
+### Ishlab chiqilmoqda
+
+#### O'zgartirildi
+
+[Composition hujjat turlari](CodeSystem-composition-type-cs.html) 399-son buyruqqa moslashtirildi: 112-shakl - foliy kislotasi, D vitamini va B12 vitaminiga IXLA tahlili uchun `emdoc-0010-0471` kodi qo'shildi. Ko'rinishi boshqa shaklni tavsiflagan 14 ta kod endi 399-son buyruq shu raqamni bergan shaklni tavsiflaydi: `emdoc-0010-0018`, `0019` va `0020` (103, 106 va 106-2 shakllar) - tug'ilganlik, o'lim va perinatal o'lim haqidagi tibbiy ma'lumotnomalarni qayd etish jurnallari, `0081` (015-10) - yo'g'on ichak emas, yorg'oq UTT bayoni, `0143` (066-1) - ruhiy kasalliklar (narkologik) shifoxonasidan chiqarilgan bemorning statistik kartasi, `0186` va `0187` (123, 124) qorin tifiga emas, kanali qaytalama tifga tegishli, `0237` (173) - perinatal konsilium, `0247` (183) - OIVga tekshirish uchun yo'llanma, `0253` (189) - biomateriallarni qabul qilish, `0285` (221) - DPMlardan kelgan bemorlarning qon guruhi va rezus faktorini ro'yxatga olish, `0303` (239) - mikrodonorlardan olingan qonni qayd etish, `0460` (389) - dezinfeksiyalovchi kamera ishini nazorat qilish dalolatnomasi, shuning uchun `0463` (392) endi uning dublikati sifatida belgilanmaydi. Ushbu kodlardan birini eski ko'rinishi bo'yicha tanlagan yuboruvchilar u hali ham o'z shakliga mos kelishini tekshirishi kerak.
+
 ### Versiya 0.12.0
 
 #### Qo'shildi

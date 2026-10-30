@@ -90,21 +90,21 @@ Description: "Composition Type CodeSystem with translations in uzbek and russian
   * ^designation[=].value = "Медицинская карта развития новорождённого"
   * ^designation[+].language = #en
   * ^designation[=].value = "Newborn development medical record"
-* #emdoc-0010-0018 "Tug‘ilganlik guvohnomasini qayd etish jurnali"
+* #emdoc-0010-0018 "Tug‘ilganlik haqida ma’lumotnomani qayd etish"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Журнал регистрации свидетельств о рождении"
+  * ^designation[=].value = "Журнал регистрации медицинских свидетельств о рождении"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Birth certificate registration logbook"
-* #emdoc-0010-0019 "O‘lim ma’lumotlarini qayd etish"
+  * ^designation[=].value = "Register of medical birth certificates"
+* #emdoc-0010-0019 "O‘lim ma’lumotnomasini qayd etish"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Регистрация сведений о смерти"
+  * ^designation[=].value = "Журнал регистрации медицинских свидетельств о смерти"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Registration of death information"
-* #emdoc-0010-0020 "Perinatal o‘lim guvohnomasini qayd etish"
+  * ^designation[=].value = "Register of medical death certificates"
+* #emdoc-0010-0020 "Perinatal o‘lim ma’lumotnomasini qayd etish"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Регистрация свидетельства о перинатальной смерти"
+  * ^designation[=].value = "Журнал регистрации медицинских свидетельств о перинатальной смерти"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Perinatal death certificate register"
+  * ^designation[=].value = "Register of medical perinatal death certificates"
 * #emdoc-0010-0021 "Tug‘ilganlik haqida guvohnomasi"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Свидетельство о рождении"
@@ -405,11 +405,11 @@ Description: "Composition Type CodeSystem with translations in uzbek and russian
   * ^designation[=].value = "Протокол УЗИ простаты и семенных пузырьков"
   * ^designation[+].language = #en
   * ^designation[=].value = "Prostate and seminal vesicles ultrasound report"
-* #emdoc-0010-0081 "Yo‘g‘on ichak UTT bayoni"
+* #emdoc-0010-0081 "Yorg‘oqning UTT bayoni"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Протокол УЗИ толстого кишечника"
+  * ^designation[=].value = "Протокол УЗИ мошонки"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Colon ultrasound report"
+  * ^designation[=].value = "Scrotal ultrasound report"
 * #emdoc-0010-0082 "Yurakning UTT bayoni"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Протокол УЗИ сердца (эхокардиография)"
@@ -715,11 +715,11 @@ Description: "Composition Type CodeSystem with translations in uzbek and russian
   * ^designation[=].value = "Анализ крови на реакцию Вассермана и др."
   * ^designation[+].language = #en
   * ^designation[=].value = "Blood test for Wassermann reaction and others"
-* #emdoc-0010-0143 "FINAL statistik karta 066 (выписанных из стационара)"
+* #emdoc-0010-0143 "Ruhiy kasalliklar (narkologik) shifoxonasidan chiqarilgan bemorning statistik kartasi"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Итоговая статистическая карта выписанных (форма 066)"
+  * ^designation[=].value = "Статистическая карта выбывшего из психиатрического (наркологического) стационара"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Final statistical card of discharged patients (Form 066)"
+  * ^designation[=].value = "Statistical card of a patient discharged from a psychiatric (narcological) hospital"
 * #emdoc-0010-0144 "Laboratoriya diagnostika bo‘limi Vitamin D"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Лабораторный анализ витамина D"
@@ -930,16 +930,16 @@ Description: "Composition Type CodeSystem with translations in uzbek and russian
   * ^designation[=].value = "Учёт прибывших из малярийно-опасных зон и постановка на «Д»-наблюдение"
   * ^designation[+].language = #en
   * ^designation[=].value = "Registration of arrivals from malaria-risk areas and placement under “D” observation"
-* #emdoc-0010-0186 "Bezgak va qorin tifi kasalligiga qon tekshiruvlarini ro‘yxatga olish"
+* #emdoc-0010-0186 "Bezgak va kanali qaytalama tif kasalligiga qon tekshiruvlarini ro‘yxatga olish"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Регистрация анализов крови на малярию и брюшной тиф"
+  * ^designation[=].value = "Регистрация исследований крови на малярию и клещевой возвратный тиф"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Register of blood tests for malaria and typhoid"
-* #emdoc-0010-0187 "Bezgak va qorin tifiga qarshi preparatlarni tekshiruvlarini ro‘yxatga olish"
+  * ^designation[=].value = "Register of blood tests for malaria and tick-borne relapsing fever"
+* #emdoc-0010-0187 "Bezgak va kanali qaytalama tifiga qon preparatlarini tekshiruvlarini ro‘yxatga olish"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Регистрация исследований противомалярийных и противотифозных препаратов"
+  * ^designation[=].value = "Регистрация исследований препаратов крови на малярию и клещевой возвратный тиф"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Register of tests of anti-malaria and anti-typhoid drugs"
+  * ^designation[=].value = "Register of blood smear examinations for malaria and tick-borne relapsing fever"
 * #emdoc-0010-0188 "Gelmintoz va ichak soddalilarga tekshiruvlarni ro‘yxatga olish"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Регистрация исследований на гельминтозы и кишечные простейшие"
@@ -1185,11 +1185,11 @@ Description: "Composition Type CodeSystem with translations in uzbek and russian
   * ^designation[=].value = "Заключение после проведения инвазивной пренатальной диагностики по поводу генетических заболеваний плода"
   * ^designation[+].language = #en
   * ^designation[=].value = "Conclusion following invasive prenatal diagnostics for fetal genetic diseases"
-* #emdoc-0010-0237 "Prenatal konsilium"
+* #emdoc-0010-0237 "Perinatal konsilium"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Пренатальный консилиум"
+  * ^designation[=].value = "Перинатальный консилиум"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Prenatal council"
+  * ^designation[=].value = "Perinatal council"
 * #emdoc-0010-0238 "Homilador ayolning jarrohlik amaliyotidan oldingi epikrizi"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Предоперационный эпикриз беременной женщины"
@@ -1235,11 +1235,11 @@ Description: "Composition Type CodeSystem with translations in uzbek and russian
   * ^designation[=].value = "Направление для сдачи крови"
   * ^designation[+].language = #en
   * ^designation[=].value = "Referral"
-* #emdoc-0010-0247 "Komissiya ishtirokida olingan qon namunalarini OIVga tekshirish"
+* #emdoc-0010-0247 "Komissiya ishtirokida olingan qon namunalarini OIVga tekshirish uchun yo‘llanma"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Исследование на ВИЧ образцов крови, взятых с участием комиссии"
+  * ^designation[=].value = "Направление на исследование на ВИЧ образцов крови, взятых с участием комиссии"
   * ^designation[+].language = #en
-  * ^designation[=].value = "HIV testing of blood samples taken with commission participation"
+  * ^designation[=].value = "Referral for HIV testing of blood samples taken with commission participation"
 * #emdoc-0010-0248 "Shaxsda OIV mavjud emasligi to‘g‘risidagi komissiya xulosasi — ma’lumotnoma"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Справка — заключение комиссии об отсутствии ВИЧ-инфекции у лица"
@@ -1265,11 +1265,11 @@ Description: "Composition Type CodeSystem with translations in uzbek and russian
   * ^designation[=].value = "Регистрация исследований образцов крови на ВИЧ методом ИФА"
   * ^designation[+].language = #en
   * ^designation[=].value = "Register of HIV testing of blood samples by ELISA method"
-* #emdoc-0010-0253 "Biomateriallarni laboratoriya"
+* #emdoc-0010-0253 "Biomateriallarni qabul qilish"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Лаборатория биоматериалов"
+  * ^designation[=].value = "Приём биоматериалов"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Biomaterials laboratory"
+  * ^designation[=].value = "Receipt of biomaterials"
 * #emdoc-0010-0254 "OIV musbat natijali namunalarni qayd qilish"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Регистрация образцов с положительным результатом на ВИЧ"
@@ -1425,11 +1425,11 @@ Description: "Composition Type CodeSystem with translations in uzbek and russian
   * ^designation[=].value = "Повторная регистрация группы крови и Rh доноров"
   * ^designation[+].language = #en
   * ^designation[=].value = "Register of donor blood group/Rh (repeat)"
-* #emdoc-0010-0285 "DPM jurnali usti KONSUL"
+* #emdoc-0010-0285 "DPMlardan kelgan bemorlarning qon guruhi va rezus faktorini ro‘yxatga olish"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Консультационный журнал ЛПУ"
+  * ^designation[=].value = "Регистрация группы крови и резус-фактора пациентов, поступивших из ЛПУ"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Facility consultation journal"
+  * ^designation[=].value = "Register of blood group and Rh factor of patients referred from healthcare facilities"
 * #emdoc-0010-0286 "Rezusga qarshi tayyorlangan (reagent, reaktiv) standart zardob tayyorlash uchun qabul qilingan hom-ashyoni ro‘yxatga olish"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Регистрация сырья, принятого для приготовления стандартной анти-резус сыворотки (реагента, реактива)"
@@ -1515,11 +1515,11 @@ Description: "Composition Type CodeSystem with translations in uzbek and russian
   * ^designation[=].value = "Регистрация материалов и документов в судебно-гистологическом отделе"
   * ^designation[+].language = #en
   * ^designation[=].value = "Register of materials and documents in forensic histology unit"
-* #emdoc-0010-0303 "Mikromordorlar olingan qonni qayd etish"
+* #emdoc-0010-0303 "Mikrodonorlardan olingan qonni qayd etish"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Регистрация крови, взятой для микрометодов"
+  * ^designation[=].value = "Регистрация крови, взятой от микродоноров"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Register of blood taken for micromethods"
+  * ^designation[=].value = "Register of blood taken from micro-donors"
 * #emdoc-0010-0304 "Kiyim, ashyoviy dalillar, qimmatbaho buyumlar va hujjatlarni ro‘yxatga olish"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Регистрация одежды, вещественных доказательств, ценностей и документов"
@@ -2300,11 +2300,11 @@ Description: "Composition Type CodeSystem with translations in uzbek and russian
   * ^designation[=].value = "Журнал учета численности членистоногих при экстенсивном обследовании населённых пунктов"
   * ^designation[+].language = #en
   * ^designation[=].value = "Register of arthropod counts from extensive surveys of settlements"
-* #emdoc-0010-0460 "Dezinfeksiyalovchi kameraga kuzatuvchi (hamroh) xat"
+* #emdoc-0010-0460 "Dezinfeksiyalovchi kamera ishini nazorat qilish dalolatnomasi"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Сопроводительное письмо к дезинфекционной камере"
+  * ^designation[=].value = "Акт контроля работы дезинфекционной камеры"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Accompanying letter to disinfection chamber"
+  * ^designation[=].value = "Act of disinfection chamber operation control"
 * #emdoc-0010-0461 "Yakunlovchi dezinfeksiya o‘tkazish uchun naryad"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Наряд на проведение заключительной дезинфекции"
@@ -2315,11 +2315,11 @@ Description: "Composition Type CodeSystem with translations in uzbek and russian
   * ^designation[=].value = "Справка о выполненной по наряду дезинфекции"
   * ^designation[+].language = #en
   * ^designation[=].value = "Certificate on disinfection performed under work order"
-* #emdoc-0010-0463 "Dezinfeksiyalovchi kameraga kuzatuvchi (hamroh) xat (ikkinchi бланк)"
+* #emdoc-0010-0463 "Dezinfeksiyalovchi kameraga kuzatuvchi (hamroh) xat"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Сопроводительное письмо к дезинфекционной камере (форма-дубликат)"
+  * ^designation[=].value = "Сопроводительное письмо к дезинфекционной камере"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Accompanying letter to disinfection chamber (duplicate form)"
+  * ^designation[=].value = "Accompanying letter to disinfection chamber"
 * #emdoc-0010-0464 "Kasallik o‘chog‘ida joriy dezinfeksiya nazorati kartasi"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Карта контроля текущей дезинфекции в очаге инфекции"
@@ -2355,3 +2355,8 @@ Description: "Composition Type CodeSystem with translations in uzbek and russian
   * ^designation[=].value = "Уведомление о выделенной культуре возбудителя чумы КУХЮКММ Минздрава РУз"
   * ^designation[+].language = #en
   * ^designation[=].value = "Notification on isolated culture of plague pathogen by MoH RUz"
+* #emdoc-0010-0471 "Klinik-diagnostik laboratoriya IXLA tahlili: foliy kislotasi, 25-OH D vitamini, B12 vitamini"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Клинико-диагностическая лаборатория, анализ ИФА: фолиевая кислота, 25-OH витамин D, витамин B12"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Clinical diagnostic laboratory ELISA analysis: folic acid, 25-OH vitamin D, vitamin B12"
