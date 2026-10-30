@@ -19,6 +19,9 @@ jobs:
       - name: Validate with Sushi
         run: sushi .
 
+      - name: Check supplements
+        run: python3 scripts/check-supplements.py
+
   ig-publisher:
     runs-on: ubuntu-latest
     env:

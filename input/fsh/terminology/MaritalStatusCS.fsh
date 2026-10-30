@@ -8,7 +8,7 @@ Description: "Marital status supplement with Uzbek and Russian translations"
   * ^designation[=].value = "Uylangan"
   * ^designation[+].language = #ru
   * ^designation[=].value = "Состоит в браке"
-* #W "Widower"
+* #W "Widowed"
   * ^designation[0].language = #uz
   * ^designation[=].value = "Beva, beva"
   * ^designation[+].language = #ru
@@ -18,12 +18,12 @@ Description: "Marital status supplement with Uzbek and Russian translations"
   * ^designation[=].value = "Ajrashgan"
   * ^designation[+].language = #ru
   * ^designation[=].value = "Разведен (а)"
-* #U "Single"
+* #U "unmarried"
   * ^designation[0].language = #uz
   * ^designation[=].value = "Turmushga chiqmagan/Bo'ydoq"
   * ^designation[+].language = #ru
   * ^designation[=].value = "Не замужем/Холост"
-* #T "Cohabiting"
+* #T "Domestic partner"
   * ^designation[0].language = #uz
   * ^designation[=].value = "Birgalikda yashash"
   * ^designation[+].language = #ru
