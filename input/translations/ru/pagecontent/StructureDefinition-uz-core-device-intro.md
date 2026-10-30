@@ -13,7 +13,7 @@ UZ Core Device описывает одно физическое медицинс
 #### Каждое UZ Core Device должно поддерживать
 
 - идентификатор, всегда передаваемый вместе со своей `system` (см. [Идентификаторы](identifiers.html));
-- статус записи `status` (active / inactive / entered-in-error) и статус доступности `availabilityStatus` (available / lost / damaged / destroyed), каждый из набора значений с обязательной связкой ([статус изделия](ValueSet-device-status-vs.html), [статус доступности](ValueSet-device-availability-status-vs.html));
+- статус записи `status` (active / inactive / entered-in-error) из набора значений [статус изделия](ValueSet-device-status-vs.html) с обязательной связкой и статус доступности `availabilityStatus` (available / lost / damaged / destroyed) из набора значений [статус доступности](ValueSet-device-availability-status-vs.html) с расширяемой связкой;
 - `displayName` и каждое `name` с его `value`, типом `type` из [набора значений типов наименования](ValueSet-device-name-type-vs.html) (зарегистрированное, удобное для пользователя или указанное пациентом наименование) и признаком `display`;
 - тип `type`, закодированный по SNOMED CT из [набора значений типов изделий](ValueSet-device-type-vs.html), и категорию `category` из [набора значений категорий изделий](ValueSet-device-category-vs.html);
 - `manufacturer`, `modelNumber` и `partNumber`;
@@ -148,7 +148,7 @@ GET [base]/Device?lot-number=CU-2025-0412
       ]
     }
   ],
-  "owner": { "reference": "Organization/example-organization" }
+  "owner": { "reference": "Organization/xonobod-medical-association" }
 }
 ```
 
