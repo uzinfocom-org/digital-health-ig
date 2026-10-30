@@ -55,8 +55,8 @@ Description: "Uzbekistan Core Procedure Profile, used for documenting an action 
 Instance: example-procedure
 InstanceOf: UZCoreProcedure
 Usage: #example
-Title: "Example of a Therapeutic Leg Massage Procedure"
-Description: "An example instance of a UZ Core Procedure profile for a therapeutic massage of the left leg."
+Title: "Example of a Therapeutic Foot Massage Procedure"
+Description: "An example instance of a UZ Core Procedure profile for a therapeutic massage of the right foot."
 
 * identifier[0].system = $mis-dmed-uz
 * identifier[0].value = "proc-0001"
@@ -66,7 +66,7 @@ Description: "An example instance of a UZ Core Procedure profile for a therapeut
 * code[0].coding = $sct#386438000 "Simple massage"
 * code[0].text = "Therapeutic massage of right foot"
 * subject = Reference(example-david) "David Davidov"
-* encounter = Reference(example-encounter) "Outpatient Visit"
+* encounter = Reference(example-physiotherapy-encounter) "Outpatient physiotherapy visit"
 * occurrencePeriod[0]
   * start = "2025-05-15T08:00:00Z"
   * end = "2025-05-15T10:00:00Z"
@@ -76,7 +76,38 @@ Description: "An example instance of a UZ Core Procedure profile for a therapeut
   * actor = Reference(example-practitioner) "Paul Ivanov, PT"
 * location = Reference(example-location) "Toshkent shahar 1-sonli shifoxona"
 * bodySite = $sct#7769000 "Right foot"
-* reason = Reference(example-disability) "Aching right foot"
+* reason = Reference(example-foot-pain) "Right foot pain"
 * outcome = $sct#385669000 "Successful"
 * note[0].text = "Therapeutic massage of the right foot completed according to the care plan. No adverse reactions noted."
 * used = Reference(example-medication)
+
+Instance: example-physiotherapy-encounter
+InstanceOf: UZCoreEncounter
+Title: "Example UZ Core Encounter - Outpatient Physiotherapy Visit"
+Description: "An outpatient visit in which the doctor assessed David's right foot pain, planned a therapeutic massage course and the first session was carried out."
+Usage: #example
+* language = #uz
+* status = #completed
+* class[dhpClass] = $v3-ActCode#AMB
+* type[nationalType] = encounter-type-cs#mserv-0001-00004 "Davolash"
+* subject = Reference(example-david) "David Davidov"
+* participant.actor = Reference(Practitioner/example-practitioner)
+* actualPeriod.start = "2025-05-15T07:00:00Z"
+* actualPeriod.end = "2025-05-15T10:30:00Z"
+* reason[0].use = encounter-reason-use-cs#mserv-0002-00001 "Kasallik"
+* reason[0].value = Reference(Condition/example-foot-pain)
+* diagnosis[0].condition = Reference(Condition/example-foot-pain)
+* location[0].location = Reference(example-location)
+
+Instance: example-foot-pain
+InstanceOf: UZCoreCondition
+Title: "Example UZ Core Condition - Right Foot Pain"
+Description: "Pain in David's right foot, diagnosed at the outpatient physiotherapy visit and treated with a therapeutic massage course."
+Usage: #example
+* clinicalStatus = $condition-clinical#active
+* verificationStatus = $condition-ver-status#confirmed
+* code = $sct#47933007 "Foot pain"
+* bodySite = $sct#7769000 "Right foot"
+* subject = Reference(example-david) "David Davidov"
+* encounter = Reference(example-physiotherapy-encounter)
+* recordedDate = "2025-05-15"

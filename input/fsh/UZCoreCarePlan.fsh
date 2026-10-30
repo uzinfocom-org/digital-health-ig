@@ -103,10 +103,11 @@ Usage: #example
 * category = $sct#773513001 "Physiotherapy care plan"
 * title = "Davolovchi massaj kursi"
 * subject = Reference(Patient/example-david)
-* encounter = Reference(Encounter/example-encounter)
+* encounter = Reference(Encounter/example-physiotherapy-encounter)
 * period.start = "2025-05-15"
 * period.end = "2025-05-15"
-* created = "2025-05-14T15:00:00+05:00"
+* created = "2025-05-15T12:30:00+05:00"
+* addresses[0].reference = Reference(Condition/example-foot-pain)
 * custodian = Reference(Practitioner/example-practitioner)
 * activity[0].performedActivity.reference = Reference(Procedure/example-procedure)
 * activity[0].progress[0].time = "2025-05-15T16:00:00+05:00"

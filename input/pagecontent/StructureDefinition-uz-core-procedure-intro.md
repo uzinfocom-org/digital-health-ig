@@ -42,7 +42,7 @@ A Procedure's mandatory elements are `status` (a required binding: `preparation`
     "text": "Therapeutic massage of right foot"
   },
   "subject": { "reference": "Patient/example-david" },
-  "encounter": { "reference": "Encounter/example-encounter" },
+  "encounter": { "reference": "Encounter/example-physiotherapy-encounter" },
   "occurrencePeriod": { "start": "2025-05-15T08:00:00Z", "end": "2025-05-15T10:00:00Z" }
 }
 ```
@@ -69,7 +69,10 @@ Fill in the elements the platform expects you to support: an `identifier`, the `
     "text": "Therapeutic massage of right foot"
   },
   "subject": { "reference": "Patient/example-david", "display": "David Davidov" },
-  "encounter": { "reference": "Encounter/example-encounter", "display": "Outpatient Visit" },
+  "encounter": {
+    "reference": "Encounter/example-physiotherapy-encounter",
+    "display": "Outpatient physiotherapy visit"
+  },
   "occurrencePeriod": { "start": "2025-05-15T08:00:00Z", "end": "2025-05-15T10:00:00Z" },
   "recorded": "2025-05-19T09:30:00Z",
   "recorder": { "reference": "PractitionerRole/example-practitionerrole" },
@@ -100,7 +103,7 @@ To close the clinical loop, link back to the order that prompted the procedure (
     { "reference": "CarePlan/example-massage-careplan", "display": "Therapeutic massage course" }
   ],
   "reason": [
-    { "reference": { "reference": "Condition/example-disability", "display": "Aching right foot" } }
+    { "reference": { "reference": "Condition/example-foot-pain", "display": "Right foot pain" } }
   ],
   "bodySite": [
     { "coding": [{ "system": "http://snomed.info/sct", "code": "7769000", "display": "Right foot" }] }

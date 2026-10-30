@@ -12,6 +12,8 @@
 
 `basedOn` в [UZ Core Observation](StructureDefinition-uz-core-observation.html), [UZ Core Immunization](StructureDefinition-uz-core-immunization.html) и [UZ Core Procedure](StructureDefinition-uz-core-procedure.html) теперь ссылается на UZ Core CarePlan, а не на любой CarePlan.
 
+[Пример Procedure](Procedure-example-procedure.html) теперь ссылается на [амбулаторный визит на физиотерапию](Encounter-example-physiotherapy-encounter.html) и состояние [боль в правой стопе](Condition-example-foot-pain.html) того же пациента, а не на визит и состояние другого пациента.
+
 [Supplement FHIR-типов](CodeSystem-fhir-types-cs.html) давал каждому типу ресурса перевод его определения вместо названия. Теперь у каждого типа есть узбекское и русское название, например "Bemor" и "Пациент" для `Patient`, с отметкой `preferredForLanguage`, поэтому `$lookup` с `displayLanguage` возвращает название. Переведённые определения остаются обозначениями с use SNOMED CT `900000000000550004` Definition.
 
 Все ссылки на Device в профилях UZ Core теперь указывают на [UZ Core Device](StructureDefinition-uz-core-device.html): Observation, Procedure, Condition, AdverseEvent, Composition, QuestionnaireResponse, Group, MedicationAdministration, MedicationDispense, InventoryItem, SupplyRequest и SupplyDelivery.
