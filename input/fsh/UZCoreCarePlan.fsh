@@ -40,9 +40,9 @@ Description: "Uzbekistan Core CarePlan profile, used to describe how one or more
 * created MS
 
 * custodian MS
-* custodian only Reference(UZCorePatient or UZCorePractitioner or UZCorePractitionerRole or Device or UZCoreRelatedPerson or UZCoreOrganization or CareTeam)
+* custodian only Reference(UZCorePatient or UZCorePractitioner or UZCorePractitionerRole or UZCoreDevice or UZCoreRelatedPerson or UZCoreOrganization or CareTeam)
 * contributor MS
-* contributor only Reference(UZCorePatient or UZCorePractitioner or UZCorePractitionerRole or Device or UZCoreRelatedPerson or UZCoreOrganization or CareTeam)
+* contributor only Reference(UZCorePatient or UZCorePractitioner or UZCorePractitionerRole or UZCoreDevice or UZCoreRelatedPerson or UZCoreOrganization or CareTeam)
 * careTeam MS
 
 * addresses MS
