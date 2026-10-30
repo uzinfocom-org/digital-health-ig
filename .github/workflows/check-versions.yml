@@ -20,3 +20,6 @@ jobs:
 
       - name: Check every artifact version is MAJOR.MINOR.PATCH
         run: python3 .github/scripts/check_artifact_versions.py
+
+      - name: Check code system and value set titles follow the naming pattern
+        run: python3 .github/scripts/check_terminology_titles.py
