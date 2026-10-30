@@ -97,7 +97,7 @@ To close the clinical loop, link back to the order that prompted the procedure (
   },
   "subject": { "reference": "Patient/example-david", "display": "David Davidov" },
   "basedOn": [
-    { "reference": "CarePlan/example-careplan", "display": "CarePlan #1" }
+    { "reference": "CarePlan/example-massage-careplan", "display": "Therapeutic massage course" }
   ],
   "reason": [
     { "reference": { "reference": "Condition/example-disability", "display": "Aching right foot" } }

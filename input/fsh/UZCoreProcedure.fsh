@@ -41,7 +41,7 @@ Description: "Uzbekistan Core Procedure Profile, used for documenting an action 
 * bodySite[snomedBodySite] ^short = "Body site coded in SNOMED CT"
 * outcome from ProcedureOutcomeVS (extensible)
 
-* basedOn only Reference(CarePlan or ServiceRequest)
+* basedOn only Reference(UZCoreCarePlan or ServiceRequest)
 * partOf only Reference(UZCoreProcedure or UZCoreObservation or MedicationAdministration)
 * subject only Reference(UZCorePatient or Group or Device or UZCorePractitioner or UZCoreOrganization or UZCoreLocation)
 * encounter only Reference(UZCoreEncounter)
@@ -60,7 +60,7 @@ Description: "An example instance of a UZ Core Procedure profile for a therapeut
 
 * identifier[0].system = $mis-dmed-uz
 * identifier[0].value = "proc-0001"
-* basedOn[0] = Reference(example-careplan) "CarePlan #1"
+* basedOn[0] = Reference(example-massage-careplan) "Therapeutic massage course"
 * status = $event-status#completed "Completed"
 * category[0].text = "Physical therapy procedure"
 * code[0].coding = $sct#386438000 "Simple massage"

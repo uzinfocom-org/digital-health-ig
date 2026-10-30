@@ -99,7 +99,7 @@ UZ Core Procedure фиксирует действие, выполненное н
   },
   "subject": { "reference": "Patient/example-david", "display": "David Davidov" },
   "basedOn": [
-    { "reference": "CarePlan/example-careplan", "display": "CarePlan #1" }
+    { "reference": "CarePlan/example-massage-careplan", "display": "Therapeutic massage course" }
   ],
   "reason": [
     { "reference": { "reference": "Condition/example-disability", "display": "Aching right foot" } }
