@@ -36,6 +36,7 @@ Description: "Uzbekistan Core DeviceUsage profile, used to record that a patient
 * informationSource only Reference(UZCorePatient or UZCorePractitioner or UZCorePractitionerRole or UZCoreRelatedPerson or UZCoreOrganization)
 
 * device MS
+* device only CodeableReference(UZCoreDevice or DeviceDefinition)
 
 * reason MS
 * reason only CodeableReference(UZCoreCondition or UZCoreObservation or UZCoreDiagnosticReport)
@@ -80,3 +81,21 @@ Description: "Example of a device used over a period that has ended: an implante
 * reason.reference = Reference(example-cancer)
 * bodySite.concept = $sct#63698005 "Anterior chest wall structure"
 * note.text = "Port placed for chemotherapy and removed after the last cycle."
+
+Instance: example-deviceusage-iud
+InstanceOf: UZCoreDeviceUsage
+Usage: #example
+Title: "Example UZ Core DeviceUsage - Copper IUD"
+Description: "Example of a device usage that points to the UZ Core Device record of the unit used: a copper intrauterine device inserted at a polyclinic"
+
+* status = #active
+* patient = Reference(example-nodira)
+* device.reference = Reference(example-copper-iud)
+* category = $medicationrequest-admin-location#outpatient
+* timingPeriod.start = "2026-02-18"
+* dateAsserted = "2026-02-18T11:30:00+05:00"
+* usageStatus = $deviceusage-status#active
+* informationSource = Reference(example-practitioner)
+* reason.concept = $sct#13197004 "Uses contraception"
+* bodySite.concept = $sct#52393002 "Endometrial cavity structure"
+* note.text = "Copper T 380A inserted at the polyclinic; follow-up visit in six weeks."

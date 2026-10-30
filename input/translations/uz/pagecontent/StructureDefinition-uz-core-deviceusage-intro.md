@@ -1,6 +1,6 @@
 > **Mashina tarjimasi, inson tomonidan tekshirilishi zarur.** Ushbu sahifa ingliz tilidan sun'iy intellekt yordamida avtomatik tarjima qilingan va hali muharrir tomonidan tekshirilmagan. Har qanday nomuvofiqlikda asl inglizcha versiya ustuvor hisoblanadi.
 
-UZ Core DeviceUsage bemor tibbiy buyumdan foydalanayotgani, foydalangani yoki foydalanishini qayd etadi - insulin pompasi, eshitish apparati, nogironlik aravachasi, bachadon ichi spirali. Bu bayonot: foydalanish haqida kim xabar bergani, qachon, buyum amalda qanchalik muntazam ishlatilishi va nima uchun ishlatilishi. Resurs buyumning o'zini tavsiflamaydi; buyum SNOMED CT konsepti yoki Device yoki DeviceDefinition resursiga havola sifatida ko'rsatiladi. DeviceUsage buyumni buyurgan [ServiceRequest](StructureDefinition-uz-core-servicerequest.html) ni bajarishi mumkin, uning sababi esa [Condition](StructureDefinition-uz-core-condition.html), [Observation](StructureDefinition-uz-core-observation.html) yoki [DiagnosticReport](StructureDefinition-uz-core-diagnostic-report.html) ga ishora qilishi mumkin. Foydalanish haqida [bemor](StructureDefinition-uz-core-patient.html), [tibbiyot xodimi](StructureDefinition-uz-core-practitioner.html) yoki uning [roli](StructureDefinition-uz-core-practitioner-role.html), [aloqador shaxs](StructureDefinition-uz-core-relatedperson.html) yoki [tashkilot](StructureDefinition-uz-core-organization.html) xabar beradi.
+UZ Core DeviceUsage bemor tibbiy buyumdan foydalanayotgani, foydalangani yoki foydalanishini qayd etadi - insulin pompasi, eshitish apparati, nogironlik aravachasi, bachadon ichi spirali. Bu bayonot: foydalanish haqida kim xabar bergani, qachon, buyum amalda qanchalik muntazam ishlatilishi va nima uchun ishlatilishi. Resurs buyumning o'zini tavsiflamaydi; buyum SNOMED CT konsepti yoki [UZ Core Device](StructureDefinition-uz-core-device.html) yoki DeviceDefinition ga havola sifatida ko'rsatiladi. DeviceUsage buyumni buyurgan [ServiceRequest](StructureDefinition-uz-core-servicerequest.html) ni bajarishi mumkin, uning sababi esa [Condition](StructureDefinition-uz-core-condition.html), [Observation](StructureDefinition-uz-core-observation.html) yoki [DiagnosticReport](StructureDefinition-uz-core-diagnostic-report.html) ga ishora qilishi mumkin. Foydalanish haqida [bemor](StructureDefinition-uz-core-patient.html), [tibbiyot xodimi](StructureDefinition-uz-core-practitioner.html) yoki uning [roli](StructureDefinition-uz-core-practitioner-role.html), [aloqador shaxs](StructureDefinition-uz-core-relatedperson.html) yoki [tashkilot](StructureDefinition-uz-core-organization.html) xabar beradi.
 
 ### Majburiy va Must Support ma'lumot elementlari
 
@@ -12,7 +12,7 @@ Ushbu profil o'zining majburiy elementlarini qo'shmaydi. Bazaviy DeviceUsage res
 
 1. [buyumdan foydalanish holatlari qiymatlar to'plami](ValueSet-deviceusage-status-vs.html) dan bayonotning `status` i (required bog'lanish);
 2. `patient` - [UZ Core Patient](StructureDefinition-uz-core-patient.html) ga havola;
-3. `device` - kodlangan buyum konsepti yoki Device yoki DeviceDefinition ga havola.
+3. `device` - kodlangan buyum konsepti yoki [UZ Core Device](StructureDefinition-uz-core-device.html) yoki DeviceDefinition ga havola.
 
 #### Har bir UZ Core DeviceUsage quyidagilarni qo'llab-quvvatlashi shart
 
@@ -30,7 +30,7 @@ Ushbu profil o'zining majburiy elementlarini qo'shmaydi. Bazaviy DeviceUsage res
 
 ### JSON ni bosqichma-bosqich qurish
 
-Quyidagi misollar server qabul qiladigan eng kichik nusxadan rioya qilishni qayd etuvchi bayonotgacha boradi. Ulardan birini nusxalab moslang - ko'rsatilgan har bir qiymat ushbu profil bo'yicha validatsiyadan o'tadi. To'liq namunaviy nusxalar sahifaning pastki qismida keltirilgan ([faol foydalanish](DeviceUsage-example-deviceusage-active.html), [foydalanish davri](DeviceUsage-example-deviceusage-period.html)).
+Quyidagi misollar server qabul qiladigan eng kichik nusxadan rioya qilishni qayd etuvchi bayonotgacha boradi. Ulardan birini nusxalab moslang - ko'rsatilgan har bir qiymat ushbu profil bo'yicha validatsiyadan o'tadi. To'liq namunaviy nusxalar sahifaning pastki qismida keltirilgan ([faol foydalanish](DeviceUsage-example-deviceusage-active.html), [foydalanish davri](DeviceUsage-example-deviceusage-period.html), [UZ Core Device ga havola](DeviceUsage-example-deviceusage-iud.html)).
 
 #### Yuborishingiz kerak bo'lgan eng kichik DeviceUsage
 
@@ -51,7 +51,7 @@ Quyidagi misollar server qabul qiladigan eng kichik nusxadan rioya qilishni qayd
 }
 ```
 
-`status` buyumni emas, bayonotni tavsiflaydi: `active` bemor buyumdan hali ham foydalanayotganini, `completed` foydalanish tugaganini, `intended` u rejalashtirilganini bildiradi, `entered-in-error` esa noto'g'ri bayonotni bekor qiladi. `device` - bu `CodeableReference`: SNOMED CT buyum konsepti `concept` ichiga yoziladi, Device yoki DeviceDefinition resursiga havola esa bir daraja chuqurroq joylashadi (`{ "reference": { "reference": "Device/id" } }`). Farqi haqida [Havolalar va CodeableReference](how-to-read.html#references-and-codeablereferences) ga qarang.
+`status` buyumni emas, bayonotni tavsiflaydi: `active` bemor buyumdan hali ham foydalanayotganini, `completed` foydalanish tugaganini, `intended` u rejalashtirilganini bildiradi, `entered-in-error` esa noto'g'ri bayonotni bekor qiladi. `device` - bu `CodeableReference`: SNOMED CT buyum konsepti `concept` ichiga yoziladi, [UZ Core Device](StructureDefinition-uz-core-device.html) yoki DeviceDefinition ga havola esa bir daraja chuqurroq joylashadi (`{ "reference": { "reference": "Device/id" } }`). Farqi haqida [Havolalar va CodeableReference](how-to-read.html#references-and-codeablereferences) ga qarang.
 
 #### Qayd etilgan buyumdan foydalanish
 

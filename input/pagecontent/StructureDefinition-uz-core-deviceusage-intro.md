@@ -1,4 +1,4 @@
-UZ Core DeviceUsage records that a patient is using, has used or will use a device - an insulin pump, a hearing aid, a wheelchair, an intrauterine device. It is a statement: who reported the use, when, how regularly the device is actually used, and why it is used. It does not describe the device itself; the device is given as a SNOMED CT concept, or as a reference to a Device or DeviceDefinition resource. A DeviceUsage may fulfil a [ServiceRequest](StructureDefinition-uz-core-servicerequest.html) that ordered the device, and its reason can point to a [Condition](StructureDefinition-uz-core-condition.html), [Observation](StructureDefinition-uz-core-observation.html) or [DiagnosticReport](StructureDefinition-uz-core-diagnostic-report.html). The use is reported by the [patient](StructureDefinition-uz-core-patient.html), a [practitioner](StructureDefinition-uz-core-practitioner.html) or [practitioner role](StructureDefinition-uz-core-practitioner-role.html), a [related person](StructureDefinition-uz-core-relatedperson.html) or an [organization](StructureDefinition-uz-core-organization.html).
+UZ Core DeviceUsage records that a patient is using, has used or will use a device - an insulin pump, a hearing aid, a wheelchair, an intrauterine device. It is a statement: who reported the use, when, how regularly the device is actually used, and why it is used. It does not describe the device itself; the device is given as a SNOMED CT concept, or as a reference to a [UZ Core Device](StructureDefinition-uz-core-device.html) or a DeviceDefinition. A DeviceUsage may fulfil a [ServiceRequest](StructureDefinition-uz-core-servicerequest.html) that ordered the device, and its reason can point to a [Condition](StructureDefinition-uz-core-condition.html), [Observation](StructureDefinition-uz-core-observation.html) or [DiagnosticReport](StructureDefinition-uz-core-diagnostic-report.html). The use is reported by the [patient](StructureDefinition-uz-core-patient.html), a [practitioner](StructureDefinition-uz-core-practitioner.html) or [practitioner role](StructureDefinition-uz-core-practitioner-role.html), a [related person](StructureDefinition-uz-core-relatedperson.html) or an [organization](StructureDefinition-uz-core-organization.html).
 
 ### Mandatory and Must Support data elements
 
@@ -10,7 +10,7 @@ This profile adds no mandatory elements of its own. The base DeviceUsage resourc
 
 1. a `status` of the statement, from the [device usage status value set](ValueSet-deviceusage-status-vs.html) (required binding);
 2. the `patient` - a reference to a [UZ Core Patient](StructureDefinition-uz-core-patient.html);
-3. the `device` - a coded device concept or a reference to a Device or DeviceDefinition.
+3. the `device` - a coded device concept or a reference to a [UZ Core Device](StructureDefinition-uz-core-device.html) or a DeviceDefinition.
 
 #### Each UZ Core DeviceUsage Must Support
 
@@ -28,7 +28,7 @@ This profile adds no mandatory elements of its own. The base DeviceUsage resourc
 
 ### Building the JSON, step by step
 
-The examples below go from the smallest instance the server will accept to a statement that records adherence. Copy one and adapt it - every value shown validates against this profile. The complete reference instances are linked at the bottom of the page ([active use](DeviceUsage-example-deviceusage-active.html), [usage period](DeviceUsage-example-deviceusage-period.html)).
+The examples below go from the smallest instance the server will accept to a statement that records adherence. Copy one and adapt it - every value shown validates against this profile. The complete reference instances are linked at the bottom of the page ([active use](DeviceUsage-example-deviceusage-active.html), [usage period](DeviceUsage-example-deviceusage-period.html), [reference to a UZ Core Device](DeviceUsage-example-deviceusage-iud.html)).
 
 #### The smallest DeviceUsage you should send
 
@@ -49,7 +49,7 @@ The examples below go from the smallest instance the server will accept to a sta
 }
 ```
 
-`status` describes the statement, not the device: `active` means the patient is still using it, `completed` that the use has ended, `intended` that it is planned, and `entered-in-error` withdraws a wrong statement. `device` is a `CodeableReference` - a SNOMED CT device concept goes under `concept`, and a reference to a Device or DeviceDefinition resource goes one level deeper (`{ "reference": { "reference": "Device/id" } }`). See [References and CodeableReferences](how-to-read.html#references-and-codeablereferences) for the distinction.
+`status` describes the statement, not the device: `active` means the patient is still using it, `completed` that the use has ended, `intended` that it is planned, and `entered-in-error` withdraws a wrong statement. `device` is a `CodeableReference` - a SNOMED CT device concept goes under `concept`, and a reference to a [UZ Core Device](StructureDefinition-uz-core-device.html) or DeviceDefinition goes one level deeper (`{ "reference": { "reference": "Device/id" } }`). See [References and CodeableReferences](how-to-read.html#references-and-codeablereferences) for the distinction.
 
 #### A recorded device use
 

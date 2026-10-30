@@ -1,6 +1,6 @@
 > **Машинный перевод, требуется проверка человеком.** Эта страница автоматически переведена с английского языка с помощью искусственного интеллекта и пока не проверена редактором. При любых расхождениях приоритет имеет оригинальная англоязычная версия.
 
-UZ Core DeviceUsage фиксирует, что пациент использует, использовал или будет использовать изделие - инсулиновую помпу, слуховой аппарат, кресло-коляску, внутриматочную спираль. Это утверждение: кто сообщил об использовании, когда, насколько регулярно изделие используется на самом деле и зачем оно используется. Само изделие этот ресурс не описывает; изделие указывается как концепт SNOMED CT или как ссылка на ресурс Device или DeviceDefinition. DeviceUsage может исполнять [ServiceRequest](StructureDefinition-uz-core-servicerequest.html), которым изделие было назначено, а его причина может ссылаться на [Condition](StructureDefinition-uz-core-condition.html), [Observation](StructureDefinition-uz-core-observation.html) или [DiagnosticReport](StructureDefinition-uz-core-diagnostic-report.html). Об использовании сообщает [пациент](StructureDefinition-uz-core-patient.html), [медицинский работник](StructureDefinition-uz-core-practitioner.html) или его [роль](StructureDefinition-uz-core-practitioner-role.html), [связанное лицо](StructureDefinition-uz-core-relatedperson.html) или [организация](StructureDefinition-uz-core-organization.html).
+UZ Core DeviceUsage фиксирует, что пациент использует, использовал или будет использовать изделие - инсулиновую помпу, слуховой аппарат, кресло-коляску, внутриматочную спираль. Это утверждение: кто сообщил об использовании, когда, насколько регулярно изделие используется на самом деле и зачем оно используется. Само изделие этот ресурс не описывает; изделие указывается как концепт SNOMED CT или как ссылка на [UZ Core Device](StructureDefinition-uz-core-device.html) или DeviceDefinition. DeviceUsage может исполнять [ServiceRequest](StructureDefinition-uz-core-servicerequest.html), которым изделие было назначено, а его причина может ссылаться на [Condition](StructureDefinition-uz-core-condition.html), [Observation](StructureDefinition-uz-core-observation.html) или [DiagnosticReport](StructureDefinition-uz-core-diagnostic-report.html). Об использовании сообщает [пациент](StructureDefinition-uz-core-patient.html), [медицинский работник](StructureDefinition-uz-core-practitioner.html) или его [роль](StructureDefinition-uz-core-practitioner-role.html), [связанное лицо](StructureDefinition-uz-core-relatedperson.html) или [организация](StructureDefinition-uz-core-organization.html).
 
 ### Обязательные и поддерживаемые (Must Support) элементы данных
 
@@ -12,7 +12,7 @@ UZ Core DeviceUsage фиксирует, что пациент используе
 
 1. `status` утверждения из [набора значений статусов использования изделия](ValueSet-deviceusage-status-vs.html) (связка required);
 2. `patient` - ссылку на [UZ Core Patient](StructureDefinition-uz-core-patient.html);
-3. `device` - закодированный концепт изделия или ссылку на Device или DeviceDefinition.
+3. `device` - закодированный концепт изделия или ссылку на [UZ Core Device](StructureDefinition-uz-core-device.html) или DeviceDefinition.
 
 #### Каждое UZ Core DeviceUsage должно поддерживать
 
@@ -30,7 +30,7 @@ UZ Core DeviceUsage фиксирует, что пациент используе
 
 ### Сборка JSON, шаг за шагом
 
-Приведённые ниже примеры идут от наименьшего экземпляра, который примет сервер, до утверждения с данными о приверженности. Скопируйте один из них и адаптируйте - каждое показанное значение проходит валидацию по этому профилю. Полные эталонные экземпляры приведены по ссылкам внизу страницы ([текущее использование](DeviceUsage-example-deviceusage-active.html), [период использования](DeviceUsage-example-deviceusage-period.html)).
+Приведённые ниже примеры идут от наименьшего экземпляра, который примет сервер, до утверждения с данными о приверженности. Скопируйте один из них и адаптируйте - каждое показанное значение проходит валидацию по этому профилю. Полные эталонные экземпляры приведены по ссылкам внизу страницы ([текущее использование](DeviceUsage-example-deviceusage-active.html), [период использования](DeviceUsage-example-deviceusage-period.html), [ссылка на UZ Core Device](DeviceUsage-example-deviceusage-iud.html)).
 
 #### Наименьший DeviceUsage, который вам следует отправлять
 
@@ -51,7 +51,7 @@ UZ Core DeviceUsage фиксирует, что пациент используе
 }
 ```
 
-`status` описывает утверждение, а не изделие: `active` означает, что пациент всё ещё использует изделие, `completed` - что использование завершено, `intended` - что оно запланировано, а `entered-in-error` отзывает ошибочное утверждение. `device` - это `CodeableReference`: концепт изделия SNOMED CT находится в `concept`, а ссылка на ресурс Device или DeviceDefinition располагается на уровень глубже (`{ "reference": { "reference": "Device/id" } }`). О различии см. [Ссылки и CodeableReference](how-to-read.html#references-and-codeablereferences).
+`status` описывает утверждение, а не изделие: `active` означает, что пациент всё ещё использует изделие, `completed` - что использование завершено, `intended` - что оно запланировано, а `entered-in-error` отзывает ошибочное утверждение. `device` - это `CodeableReference`: концепт изделия SNOMED CT находится в `concept`, а ссылка на [UZ Core Device](StructureDefinition-uz-core-device.html) или DeviceDefinition располагается на уровень глубже (`{ "reference": { "reference": "Device/id" } }`). О различии см. [Ссылки и CodeableReference](how-to-read.html#references-and-codeablereferences).
 
 #### Зарегистрированное использование изделия
 
