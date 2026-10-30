@@ -1,7 +1,7 @@
 ValueSet: CarePlanIntentVS
 Id: careplan-intent-vs
-Title: "CarePlan Intent VS"
-Description: "CarePlan intent codes with translations in Uzbek and Russian"
+Title: "CarePlan intent"
+Description: "CarePlan intents"
 * ^url = "https://terminology.dhp.uz/fhir/core/ValueSet/careplan-intent-vs"
 * ^experimental = true
 * ^extension[0].url = $valueset-supplement
