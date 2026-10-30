@@ -592,7 +592,7 @@ Description: "Example instance of a headache condition documented during a patie
 - Используйте только параметры поиска из CapabilityStatement DHP.
 - Не повторяйте одно правило в нескольких местах страницы.
 - RU и UZ копии обоих фрагментов кладите в `input/translations/<lang>/pagecontent/` под тем же именем файла, с баннером машинного перевода в начале. Блоки кода и JSON идентичны английским. Якоря `{#quick-start}`, `{#finding}`, `{#identifier-slices}` проставляйте явно - переведённые заголовки их не генерируют.
-- Добавьте строку в changelog.
+- Добавьте запись в changelog (en, ru, uz) на её место в алфавитном порядке внутри категории, а не в конец - см. `AGENTS.md`.
 
 ## 6) Переводы и локализация
 

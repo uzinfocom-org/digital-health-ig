@@ -2,9 +2,9 @@
 
 #### Qo'shildi
 
-[UZ Core Device](StructureDefinition-uz-core-device.html) jismoniy tibbiy buyumni - kompyuter tomografi kabi shifoxona uskunasini yoki bachadon ichi spirali kabi alohida buyumni - uning SNOMED CT bo'yicha turi va toifasi, ishlab chiqaruvchisi, modeli, seriya va partiya raqamlari, holati va mavjudligi, shuningdek u tegishli bo'lgan tashkilot va joy bilan tavsiflaydi. Profil bilan birga HL7 ning buyum holati, mavjudlik holati, nom turi va toifa kodlarining hamda SNOMED CT kontratseptiv buyum turlarining o'zbekcha va ruscha tarjimalari qo'shildi. Profil sahifasida kirish qismi va Tez boshlash bo'limi mavjud.
-
 [Composition hujjat turlari](CodeSystem-composition-type-cs.html): 399-son buyruqning 112-shakli - foliy kislotasi, 25-OH D vitamini va B12 vitaminiga IXLA tahlili uchun `emdoc-0010-0471` kodi qo'shildi.
+
+[UZ Core Device](StructureDefinition-uz-core-device.html) jismoniy tibbiy buyumni - kompyuter tomografi kabi shifoxona uskunasini yoki bachadon ichi spirali kabi alohida buyumni - uning SNOMED CT bo'yicha turi va toifasi, ishlab chiqaruvchisi, modeli, seriya va partiya raqamlari, holati va mavjudligi, shuningdek u tegishli bo'lgan tashkilot va joy bilan tavsiflaydi. Profil bilan birga HL7 ning buyum holati, mavjudlik holati, nom turi va toifa kodlarining hamda SNOMED CT kontratseptiv buyum turlarining o'zbekcha va ruscha tarjimalari qo'shildi. Profil sahifasida kirish qismi va Tez boshlash bo'limi mavjud.
 
 #### O'zgartirildi
 
