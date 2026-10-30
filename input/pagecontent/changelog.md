@@ -1,24 +1,46 @@
 ### In development
 
-#### Breaking changes
-
-The [specialist certificate](NamingSystem-uzb-specialist-certificate.html) identifier system has moved from the document namespace to the healthcare professional namespace, since a certificate identifies a qualification of a professional rather than a document: `https://dhp.uz/fhir/core/sid/doc/uz/specialist-certificate` is now `https://dhp.uz/fhir/core/sid/pro/uz/specialist-certificate`. Senders of `Practitioner.qualification.identifier` switch to the new system; the value format (series followed by number, e.g. `CA008815`) is unchanged.
-
 #### Added
-
-Two more platform operations are published as OperationDefinitions. [Patient/$attach](OperationDefinition-patient-attach.html) records a patient's attachment to a polyclinic (`managingOrganization`, with the attachment date in the [managing organization attachment](StructureDefinition-managing-organization-attachment.html) extension) and/or a family doctor (`generalPractitioner`) in one call, checking both against the master data registry and resolving business identifiers to references; at type level it finds or creates the patient by PINFL, so it replaces the `$populate` + `$attach` pair. [Patient/$relate](OperationDefinition-patient-relate.html) records a confirmed parent-child relationship: it checks the kinship against the Ministry of Justice child registry, finds or creates the child Patient by PINFL, and creates a RelatedPerson for the parent, returning the relation, the child and the outcome in one Bundle.
-
-[Patient/$detach](OperationDefinition-patient-detach.html) is the reverse of `$attach`: it clears `managingOrganization` and `generalPractitioner` and removes the attachment date extension in one call, with a mandatory `reason`.
-
-[UZ Core Medication](StructureDefinition-uz-core-medication.html) now has the narrative intro and Quick Start that the other profiles carry: the mandatory and Must Support elements, how to find an existing medication by registry identifier (registration certificate, GTIN, Asl Belgisi marking, ICPS, box group) or by INN / ATC code before registering a new one, step-by-step JSON examples, and the identifier slices table.
 
 [UZ Core Device](StructureDefinition-uz-core-device.html) describes a physical medical device - hospital equipment such as a CT scanner, or a single item such as an intrauterine device - with its SNOMED CT type and category, manufacturer, model, serial and lot numbers, status and availability, and the organization and location it belongs to. Uzbek and Russian translations of the HL7 device status, availability status, name type and category codes, and of the SNOMED CT contraceptive device types, come with it. The profile page has the narrative intro and Quick Start.
 
 #### Changed
 
+Every reference to a Device in UZ Core profiles now targets [UZ Core Device](StructureDefinition-uz-core-device.html): Observation, Procedure, Condition, AdverseEvent, Composition, QuestionnaireResponse, Group, MedicationAdministration, MedicationDispense, InventoryItem, SupplyRequest and SupplyDelivery.
+
+### Version 0.12.0
+
+#### Added
+
+Added [UZ Core MedicationAdministration](StructureDefinition-uz-core-medicationadministration.html) for a medication given to a patient, such as a dose on a ward. It points to the MedicationRequest it fulfils and records who gave the dose and how. A funding source extension records whether the stock came from a tender, humanitarian aid or another national financing source, which can differ from the patient's coverage.
+
+Added [UZ Core InventoryItem](StructureDefinition-uz-core-inventoryitem.html) for stock of an item such as a blood component, medication or device. Each item carries a national inventory status, such as quarantine, awaiting tests or available, and points to the product it holds, with the lot number, expiry date and storage location of each physical unit.
+
+Nursing visit purposes now include national codes for [population enumeration and home medication delivery](CodeSystem-nursing-visit-purpose-cs.html).
+
+Nursing visit requests are categorised as SNOMED CT `439708006` Home visit, and [ServiceRequest procedures and investigations](ValueSet-service-request-code-vs.html) lists `440068009` for the newborn patronage on days 3, 15 and 30 and `410620009` for preventive child visits from 3 to 60 months. The Encounter of a home visit uses the encounter type `mserv-0001-00009` Patronaj with `Encounter.class` = `HH`.
+
+[Patient/$attach](OperationDefinition-patient-attach.html) attaches a patient to a polyclinic, a family doctor or both in one call, checking them against the master data registry. At type level it finds or creates the patient by PINFL, so it replaces the `$populate` + `$attach` pair.
+
+[Patient/$relate](OperationDefinition-patient-relate.html) records a parent-child relationship confirmed against the Ministry of Justice child registry. It finds or creates the child by PINFL and creates a RelatedPerson for the parent.
+
+[Patient/$detach](OperationDefinition-patient-detach.html) reverses `$attach`: it clears the polyclinic, the family doctor and the attachment date in one call, and requires a `reason`.
+
+[UZ Core Medication](StructureDefinition-uz-core-medication.html) now has a narrative intro and Quick Start, like the other profiles. It shows how to find an existing medication by a registry identifier or by INN or ATC code before registering a new one.
+
+#### Changed
+
+[UZ Core AllergyIntolerance](StructureDefinition-uz-core-allergy-intolerance.html) `reaction` can reference the MedicationAdministration that caused it, through the standard `openEHR-administration` extension. The analgesic allergy example links a skin rash to a paracetamol dose.
+
+In the [ServiceRequest categories](ValueSet-service-request-categories-vs.html), SNOMED CT `20135006` now has its official display "Screening procedure" instead of "Screening and home visits", and its Uzbek and Russian translations no longer mention home visits, which have their own category `439708006` "Home visit".
+
 [UZ Core Patient](StructureDefinition-uz-core-patient.html) and [UZ Core Practitioner](StructureDefinition-uz-core-practitioner.html) declare the `translation` extension on `name.text`, `family`, `given` and `suffix`: the name is in Uzbek, and its Russian and Karakalpak forms travel in one `HumanName` instead of a second name. The [Nodira](Patient-example-nodira.html) and [practitioner](Practitioner-example-practitioner.html) examples carry Russian forms, and both profile pages describe the pattern.
 
-Every reference to a Device in UZ Core profiles now targets [UZ Core Device](StructureDefinition-uz-core-device.html): Observation, Procedure, Condition, AdverseEvent, Composition, QuestionnaireResponse, Group, MedicationAdministration, MedicationDispense, InventoryItem, SupplyRequest and SupplyDelivery.
+The [action code supplement](CodeSystem-action-code-cs.html) gives Uzbek and Russian designations to `order-service`, which the [regional screening PlanDefinition example](PlanDefinition-example-uz-core-regional-screening-plan-definition.html) uses.
+
+#### Breaking changes
+
+The [specialist certificate](NamingSystem-uzb-specialist-certificate.html) identifier system has moved from the document namespace to the healthcare professional namespace, since a certificate identifies a qualification of a professional rather than a document: `https://dhp.uz/fhir/core/sid/doc/uz/specialist-certificate` is now `https://dhp.uz/fhir/core/sid/pro/uz/specialist-certificate`. Senders of `Practitioner.qualification.identifier` switch to the new system; the value format (series followed by number, e.g. `CA008815`) is unchanged.
 
 ### Version 0.11.1
 

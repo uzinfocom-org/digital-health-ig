@@ -20,7 +20,6 @@ There are multiple resources with the same title%
 
 # Lack of translations for sample instances - this is OK
 "The narrative includes custom content for the default language (en), but does not include translated content for the ru language, so the default language has been used
-"The narrative includes custom content for the default language (en), but does not include translated content for the uz language, so the default language has been used
 
 # ISO 3166 is not a codesystem with all of its codes explicitly defined, this is expected
 Source Code System urn:iso:std:iso:3166 doesn't have all content (content = not-present), so the source codes cannot be checked
@@ -50,14 +49,6 @@ A definition for CodeSystem 'http://example.org/fhir/CodeSystem/lab-report-type'
 
 # ICD-O-3 is WHO/IARC content shipped under the HTA-endorsed terminology.hl7.org canonical; the source tables carry no per-concept definitions. Same for ICHI, whose tabulation carries titles only.
 %HL7 Defined CodeSystems should ensure that every concept has a definition%
-
-# R5 binds Claim.total.currency to the currencies value set, an unfiltered include of urn:iso:std:iso:4217. ISO 4217 is licensed content that HL7 does not ship, so no terminology server can expand this binding.
-%Binding http://hl7.org/fhir/ValueSet/currencies%
-
-# condition-severity-cs is an IG-local SNOMED CT supplement and is present in the
-# generated package. The remote terminology server cannot retrieve an unpublished
-# local supplement while validating the IG build.
-Required supplement not found: https://terminology.dhp.uz/fhir/core/CodeSystem/condition-severity-cs|2026.1.0
 
 # IG Publisher 3.0.0 warns about any binding on a type slicer, including one the profile inherits
 # from the base resource. None of these bindings is in our differentials - they are the R5 base
