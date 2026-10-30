@@ -1,7 +1,7 @@
 ValueSet: RecommendationReasonVS
 Id: recommendation-reason-vs
-Title: "Immunization recommendation reason"
-Description: "Immunization recommendation reasons"
+Title: "ImmunizationRecommendation reason"
+Description: "ImmunizationRecommendation reasons"
 * ^url = "https://terminology.dhp.uz/fhir/core/ValueSet/recommendation-reason-vs"
 * ^experimental = true
 * ^extension[0].url = $valueset-supplement

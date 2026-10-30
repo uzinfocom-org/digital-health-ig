@@ -1,7 +1,7 @@
 ValueSet: AuditEventActionVS
 Id: audit-event-action-vs
-Title: "Audit event action"
-Description: "Audit event actions"
+Title: "AuditEvent action"
+Description: "AuditEvent actions"
 * ^url = "https://terminology.dhp.uz/fhir/core/ValueSet/audit-event-action-vs"
 * ^experimental = true
 * ^extension[0].url = $valueset-supplement

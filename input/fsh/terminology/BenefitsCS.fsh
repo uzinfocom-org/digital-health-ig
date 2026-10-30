@@ -1,7 +1,7 @@
 CodeSystem: BenefitsCS
 Id: benefits-cs
-Title: "Types of benefits"
-Description: "Types of benefits in Uzbekistan"
+Title: "Benefit"
+Description: "Benefits in Uzbekistan"
 * insert OriginalCodeSystemDraft(benefits-cs)
 * #regis0004.00001 "Bolalikdan nogironligi bo'lgan shaxslar"
   * ^designation[0].language = #ru

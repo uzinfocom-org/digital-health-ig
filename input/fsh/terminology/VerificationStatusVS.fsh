@@ -1,7 +1,7 @@
 ValueSet: VerificationStatusVS
 Id: verification-status-vs
-Title: "Types of verification status"
-Description: "Types of verification status in Uzbekistan"
+Title: "Verification status"
+Description: "Verification statuses"
 * ^url = "https://terminology.dhp.uz/fhir/core/ValueSet/verification-status-vs"
 * ^experimental = true
 * ^language = #uz

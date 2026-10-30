@@ -1,7 +1,7 @@
 ValueSet: ClaimResponseOutcomeVS
 Id: claim-response-outcome-vs
-Title: "Claim response outcome"
-Description: "Claim response outcomes"
+Title: "ClaimResponse outcome"
+Description: "ClaimResponse outcomes"
 
 * ^url = "https://terminology.dhp.uz/fhir/core/ValueSet/claim-response-outcome-vs"
 * ^experimental = true

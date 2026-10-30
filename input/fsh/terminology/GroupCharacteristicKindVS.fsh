@@ -1,7 +1,7 @@
 ValueSet: GroupCharacteristicKindVS
 Id: group-characteristic-kind-vs
 Title: "Group characteristic kind"
-Description: "Kinds of characteristics used to include or exclude members of a group, drawn from LOINC and local codes, with Uzbek and Russian translations"
+Description: "Kinds of characteristics used to include or exclude members of a group, drawn from LOINC and local codes"
 * ^url = "https://terminology.dhp.uz/fhir/core/ValueSet/group-characteristic-kind-vs"
 * ^experimental = true
 * ^extension[0].url = $valueset-supplement

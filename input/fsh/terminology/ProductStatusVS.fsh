@@ -1,7 +1,7 @@
 ValueSet: ProductStatusVS
 Id: product-status-vs
-Title: "Product status"
-Description: "Product statuses"
+Title: "BiologicallyDerivedProduct status"
+Description: "BiologicallyDerivedProduct statuses"
 * ^url = "https://terminology.dhp.uz/fhir/core/ValueSet/product-status-vs"
 * ^experimental = true
 * ^language = #uz

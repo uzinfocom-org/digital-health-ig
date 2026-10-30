@@ -1,6 +1,6 @@
 CodeSystem: VaccineCodeCS
 Id: vaccine-code-cs
-Title: "Vaccine code"
+Title: "Local vaccine code"
 Description: "Local vaccine codes"
 * ^url = "https://terminology.dhp.uz/fhir/core/CodeSystem/vaccine-code-cs"
 * ^status = #draft

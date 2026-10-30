@@ -1,7 +1,7 @@
 CodeSystem: AuditEventDetailTypeCS
 Id: audit-event-detail-type-cs
-Title: "Types of audit event details"
-Description: "Types of audit event details in Uzbekistan"
+Title: "AuditEvent detail type"
+Description: "AuditEvent detail types in Uzbekistan"
 * insert OriginalCodeSystemDraft(audit-event-detail-type-cs)
 
 * #auth-method "Autentifikatsiya usuli"

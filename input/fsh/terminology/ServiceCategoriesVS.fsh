@@ -1,7 +1,7 @@
 ValueSet: ServiceCategoriesVS
 Id: service-categories-vs
-Title: "Categories of cancer-related services"
-Description: "Defines categories of cancer-related services in Uzbek and Russian"
+Title: "Cancer-related service category"
+Description: "Cancer-related service categories"
 * ^experimental = true
 * ^language = #uz
 * include CancerTypesCS#cancr0003.00000

@@ -1,7 +1,7 @@
 ValueSet: LocationKindsVS
 Id: location-kinds-vs
 Title: "Location kind"
-Description: "Defines the kind of Location in Uzbek and Russian"
+Description: "Location kinds"
 * ^url = "https://terminology.dhp.uz/fhir/core/ValueSet/location-kinds-vs"
 * ^experimental = true
 * ^language = #uz

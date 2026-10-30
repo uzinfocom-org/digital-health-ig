@@ -1,7 +1,7 @@
 ValueSet: AuditEventOutcomeVS
 Id: audit-event-outcome-vs
-Title: "Audit event outcome"
-Description: "Audit event outcomes"
+Title: "AuditEvent outcome"
+Description: "AuditEvent outcomes"
 * ^url = "https://terminology.dhp.uz/fhir/core/ValueSet/audit-event-outcome-vs"
 * ^experimental = true
 * ^extension[0].url = $valueset-supplement
