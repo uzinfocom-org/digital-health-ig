@@ -1,7 +1,7 @@
 CodeSystem: DeviceCategoryCS
 Id: device-category-cs
 Title: "Device Category Code System"
-Description: "Category codes for a device (active, communicating, dme, home-use, implantable, in-vitro, point-of-care, single-use, reusable, software), with UZ/RU/EN designations."
+Description: "Uzbek and Russian translations of the device category codes (active, communicating, dme, home-use, implantable, in-vitro, point-of-care, single-use, reusable, software)"
 
 * insert SupplementCodeSystemDraft(device-category-cs, $device-category, 5.0.0)
 
@@ -13,7 +13,7 @@ Description: "Category codes for a device (active, communicating, dme, home-use,
 
 * #communicating
   * ^designation[0].language = #uz
-  * ^designation[=].value = "Aloqa o‘rnatuvchi"
+  * ^designation[=].value = "Aloqa o'rnatuvchi"
   * ^designation[+].language = #ru
   * ^designation[=].value = "Коммуницирующий"
 
@@ -61,6 +61,6 @@ Description: "Category codes for a device (active, communicating, dme, home-use,
 
 * #software
   * ^designation[0].language = #uz
-  * ^designation[=].value = "Dasturiy ta’minot"
+  * ^designation[=].value = "Dasturiy ta'minot"
   * ^designation[+].language = #ru
   * ^designation[=].value = "Программное обеспечение"

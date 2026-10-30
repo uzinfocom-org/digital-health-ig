@@ -1,6 +1,6 @@
 > **Mashina tarjimasi, inson tomonidan tekshirilishi zarur.** Ushbu sahifa ingliz tilidan sun'iy intellekt yordamida avtomatik tarjima qilingan va hali muharrir tomonidan tekshirilmagan. Har qanday nomuvofiqlikda asl inglizcha versiya ustuvor hisoblanadi.
 
-### Tez boshlash
+### Tez boshlash {#quick-start}
 
 Ushbu profil standart FHIR R5 qidiruv parametrlaridan foydalanadi. `[base]` - bu [FHIR server bazaviy URL manzili](api-access.html#endpoints); `|` belgisi system va value ni ajratadi va URL kodlashda `%7C` sifatida kodlanishi shart.
 

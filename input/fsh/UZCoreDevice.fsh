@@ -2,7 +2,7 @@ Profile: UZCoreDevice
 Parent: Device
 Id: uz-core-device
 Title: "UZ Core Device"
-Description: "Profile of the Device resource for the Uzbekistan Core Implementation Guide, capturing key identifying, status, and descriptive information about a device."
+Description: "Uzbekistan Core Device profile, used to record the identity, status and description of a medical device"
 * ^experimental = true
 
 * identifier MS
@@ -13,7 +13,7 @@ Description: "Profile of the Device resource for the Uzbekistan Core Implementat
 * status from DeviceStatusVS (required)
 
 * availabilityStatus MS
-* availabilityStatus from DeviceAvailabilityStatusVS (required)
+* availabilityStatus from DeviceAvailabilityStatusVS (extensible)
 
 * manufacturer MS
 
@@ -37,103 +37,101 @@ Description: "Profile of the Device resource for the Uzbekistan Core Implementat
 * partNumber MS
 
 * category MS
-* category from DeviceCategoryVS (example)
+* category from DeviceCategoryVS (preferred)
 
 * type MS
-* type from DeviceTypeVS (example)
+* type from DeviceTypeVS (preferred)
 
 * owner MS
 * owner only Reference(UZCoreOrganization)
 
 * contact MS
-* contact only ContactPoint
 
 * location MS
 * location only Reference(UZCoreLocation)
 
 * note MS
 
-Instance: uz-core-device-example-001
+Instance: example-ct-scanner
 InstanceOf: UZCoreDevice
 Usage: #example
-Title: "UZ Core Device Example"
-Description: "Example instance of a UZCoreDevice - CT Scanner."
+Title: "Example UZ Core Device - CT Scanner"
+Description: "Example of a CT scanner installed at a hospital"
+
+* language = #uz
 
 * displayName = "KT skaner"
 * status = #active
 * availabilityStatus = $device-availability-status#available
 * manufacturer = "Siemens Healthineers"
 * manufactureDate = "2023-05-15"
-* expirationDate = "2028-05-15"
-* lotNumber = "2023-05"
 * serialNumber = "SN-2023-001456"
 
-* name.value = "STOMATOM Edge"
-* name.type = #registered-name
-* name.display = true
-
-* modelNumber = "STOMATOM Edge"
-* partNumber = "PART-12345"
-
-* category = $device-category#dme
-
-* type = $sct#268460000
-
-* owner = Reference(Organization/example-organization)
-
-Instance: uz-core-device-example-002
-InstanceOf: UZCoreDevice
-Usage: #example
-Title: "UZ Core Device Example"
-Description: "Example instance of a UZCoreDevice - CT Scanner."
-
-* displayName = "KT skaner"
-* status = #active
-* availabilityStatus = $device-availability-status#available
-* manufacturer = "Siemens Healthineers"
-* manufactureDate = "2023-05-15"
-* expirationDate = "2028-05-15"
-* lotNumber = "2023-05"
-* serialNumber = "SN-2023-001456"
-
-* name.value = "STOMATOM Edge"
+* name.value = "SOMATOM Edge"
 * name.type = $device-name-type#registered-name "Ro'yxatdan o'tgan nomi"
 * name.display = true
 
-* modelNumber = "STOMATOM Edge"
-* partNumber = "PART-12345"
+* modelNumber = "SOMATOM Edge"
+* partNumber = "11061630"
 
-* category = $device-category#single-use
+* category = $device-category#dme
+
+* type = $sct#54953005
+
+* owner = Reference(tashkent-diseases-hospital)
+* location = Reference(example-location)
+* note.text = "Radiologiya bo'limi, 2-qavat"
+
+Instance: example-copper-iud
+InstanceOf: UZCoreDevice
+Usage: #example
+Title: "Example UZ Core Device - Copper IUD"
+Description: "Example of a single copper intrauterine contraceptive device tracked by its batch"
+
+* language = #uz
+
+* displayName = "Mis saqlovchi bachadon ichi vositasi"
+* status = #active
+* availabilityStatus = $device-availability-status#available
+* manufacturer = "Pregna International"
+* manufactureDate = "2025-04-10"
+* expirationDate = "2030-03-31"
+* lotNumber = "CU-2025-0412"
+
+* name.value = "Copper T 380A"
+* name.type = $device-name-type#registered-name "Ro'yxatdan o'tgan nomi"
+* name.display = true
+
+* category[0] = $device-category#implantable
+* category[1] = $device-category#single-use
+
+* type = $sct#268460000
+
+* owner = Reference(xonobod-medical-association)
+
+Instance: example-contraceptive-implant
+InstanceOf: UZCoreDevice
+Usage: #example
+Title: "Example UZ Core Device - Contraceptive Implant"
+Description: "Example of a drug-eluting subdermal contraceptive implant tracked by its batch"
+
+* language = #uz
+
+* displayName = "Kontratseptiv implant"
+* status = #active
+* availabilityStatus = $device-availability-status#available
+* manufacturer = "Bayer AG"
+* manufactureDate = "2025-01-20"
+* expirationDate = "2029-12-31"
+* lotNumber = "LNG-2025-0117"
+
+* name.value = "Jadelle"
+* name.type = $device-name-type#registered-name "Ro'yxatdan o'tgan nomi"
+* name.display = true
+
+* category[0] = $device-category#implantable
+* category[1] = $device-category#single-use
 
 * type = $sct#468312002
 
-* owner = Reference(tashkent-diseases-hospital)
-
-
-Instance: uz-core-device-example-003
-InstanceOf: UZCoreDevice
-Usage: #example
-Title: "UZ Core Device Example"
-Description: "Example instance of a UZCoreDevice - CT Scanner."
-
-* displayName = "KT skaner"
-* status = #active
-* availabilityStatus = $device-availability-status#available
-* manufacturer = "Siemens Healthineers"
-* manufactureDate = "2023-05-15"
-* expirationDate = "2028-05-15"
-* lotNumber = "2023-05"
-* serialNumber = "SN-2023-001456"
-
-* name.value = "STOMATOM Edge"
-* name.type = $device-name-type#user-friendly-name "Foydalanuvchiga qulay nomi"
-* name.display = true
-
-* modelNumber = "STOMATOM Edge"
-* partNumber = "PART-12345"
-
-* category = $device-category#dme "Durable Medical Equipment"
-
-* type = $sct#348649005
-
-* owner = Reference(example-organization)
+* owner = Reference(xonobod-medical-association)

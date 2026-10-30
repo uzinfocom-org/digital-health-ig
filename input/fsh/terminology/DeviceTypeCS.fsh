@@ -1,9 +1,9 @@
 CodeSystem: DeviceTypeCS
 Id: device-type-cs
-Title: "Device Type"
-Description: "Type codes for a device (intrauterine contraceptive device, condom, drug-eluting contraceptive implant, contraceptive device), with UZ/RU/EN designations."
+Title: "Device Type Code System"
+Description: "Uzbek and Russian translations of SNOMED CT contraceptive device types (intrauterine contraceptive device, condom, drug-eluting contraceptive implant, contraceptive device)"
 
-* insert SupplementCodeSystemDraft(device-type-cs, $sct, 5.0.0)
+* insert SupplementCodeSystemDraft(device-type-cs, $sct, 2026.1.0)
 
 * #268460000 "Intrauterine contraceptive device"
   * ^designation[+].language = #uz
@@ -25,6 +25,6 @@ Description: "Type codes for a device (intrauterine contraceptive device, condom
 
 * #348649005 "Contraceptive device"
   * ^designation[+].language = #uz
-  * ^designation[=].value = "Vaginal kontraseptiv halqa"
+  * ^designation[=].value = "Kontratseptiv vosita"
   * ^designation[+].language = #ru
-  * ^designation[=].value = "Вагинальное контрацептивное кольцо"
+  * ^designation[=].value = "Контрацептивное средство"

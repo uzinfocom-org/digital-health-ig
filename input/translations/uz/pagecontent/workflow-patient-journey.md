@@ -1,7 +1,5 @@
 Ushbu jarayon bitta muammo bo'yicha bemorga ko'rsatiladigan tibbiy yordam ma'lumotlari vaqt davomida qanday guruhlanishini ko'rsatadi. Alohida tashrif [Encounter](StructureDefinition-uz-core-encounter.html) resursi bilan ifodalanadi; bir nechta tashrifni qamrab oladigan tibbiy yordam jarayoni - masalan, homiladorlikni kuzatish, onkologik kasallikni davolash yoki surunkali infeksiyani boshqarish - [EpisodeOfCare](StructureDefinition-uz-core-episodeofcare.html) resursi bilan ifodalanadi. EpisodeOfCare bitta klinik holatga tegishli tashriflar, tashxislar va natijalarni bog'laydi, natijada klinitsist tarqoq yozuvlar o'rniga holatning to'liq tarixini ko'radi.
 
-> Profillarning holati: [EpisodeOfCare](StructureDefinition-uz-core-episodeofcare.html), [Encounter](StructureDefinition-uz-core-encounter.html), [Condition](StructureDefinition-uz-core-condition.html) va [Observation](StructureDefinition-uz-core-observation.html) UZ Core doirasida profillangan. Davolash vaqtida ishlatiladigan MedicationRequest profili ishlab chiqilmoqda. U e'lon qilingunga qadar FHIR R5 bazaviy resursidan foydalaning.
-
 Ishtirokchilar: umumiy amaliyot shifokori (klinik holatni ochadi va kuzatib boradi); mutaxassislar (klinik holat doirasida davolaydi); DHP (Digital Health Platform - Raqamli sog'liqni saqlash platformasi).
 
 <div>{% include patient-journey-sequence.svg %}</div><br clear="all"/>
@@ -21,7 +19,7 @@ POST [base]/EpisodeOfCare
 
 ### 2. Klinik holatga tegishli barcha ma'lumotlar EpisodeOfCare bilan bog'lanadi
 
-Klinik holat davomida har bir tashrif va har bir natija EpisodeOfCare resursiga reference saqlaydi, shu sababli yozuvlar birgalikda guruhlangan holda qoladi. [Encounter](StructureDefinition-uz-core-encounter.html) resursida `episodeOfCare` elementi orqali EpisodeOfCare ko'rsatiladi; [Observation](StructureDefinition-uz-core-observation.html) resursida unga tegishli Encounter `encounter` elementida qayd etiladi; davolash esa shu Encounter resurslari doirasida `MedicationRequest` (yoki `MedicationAdministration`) yordamida qayd etiladi.
+Klinik holat davomida har bir tashrif va har bir natija EpisodeOfCare resursiga reference saqlaydi, shu sababli yozuvlar birgalikda guruhlangan holda qoladi. [Encounter](StructureDefinition-uz-core-encounter.html) resursida `episodeOfCare` elementi orqali EpisodeOfCare ko'rsatiladi; [Observation](StructureDefinition-uz-core-observation.html) resursida unga tegishli Encounter `encounter` elementida qayd etiladi; davolash esa shu Encounter resurslari doirasida [`MedicationRequest`](StructureDefinition-uz-core-medicationrequest.html) (yoki `MedicationAdministration`) yordamida qayd etiladi.
 
 ```
 POST [base]/Encounter
@@ -62,5 +60,5 @@ Har bir tashrif, natija va dori vositasini tayinlash EpisodeOfCare resursiga ref
 ### Bog'liq materiallar
 
 - Profillar: [EpisodeOfCare](StructureDefinition-uz-core-episodeofcare.html) &middot; [Encounter](StructureDefinition-uz-core-encounter.html) &middot; [Condition](StructureDefinition-uz-core-condition.html) &middot; [Observation](StructureDefinition-uz-core-observation.html)
-- Komponent: [Bemorning klinik marshrutini boshqarish](components.html#bemorning-klinik-marshrutini-boshqarish)
+- Komponent: [Bemorning klinik marshrutini boshqarish](components.html#patient-health-journey-management)
 - [Jarayonlar sharhi](workflows.html) &middot; [Umumiy ko'rsatmalar](general-guidance.html)

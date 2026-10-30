@@ -12,7 +12,7 @@ Every Patient must carry at least one identifier. The PINFL (national personal i
 
 
 
-- a name (Uzbek authoritative, with translations as designations);
+- a name (Uzbek authoritative, with Russian and Karakalpak forms as `translation` extensions - see [Names in Uzbek and Russian](#names-in-uzbek-and-russian));
 - a gender (with the national `gender-other` extension where applicable);
 - a birth date;
 - an address - either an Uzbek address (coded administrative divisions: region, district, mahalla) or an international free-text address;
@@ -25,7 +25,7 @@ Every Patient must carry at least one identifier. The PINFL (national personal i
 
 ### Building the JSON, step by step
 
-The examples below go from the smallest instance the server will accept to a full registration payload. Copy one and adapt it - every value shown validates against this profile. The complete reference instances are linked at the bottom of the page ([Salim](Patient-example-salim.html), [Emma](Patient-example-emma.html), [David](Patient-example-david.html), [unidentified patient](Patient-example-unidentified-patient.html)).
+The examples below go from the smallest instance the server will accept to a full registration payload. Copy one and adapt it - every value shown validates against this profile. The complete reference instances are linked at the bottom of the page ([Salim](Patient-example-salim.html), [Emma](Patient-example-emma.html), [David](Patient-example-david.html), [unidentified patient](Patient-example-unidentified-patient.html), [Nodira](Patient-example-nodira.html)).
 
 #### The smallest Patient you should send
 
@@ -93,6 +93,60 @@ In practice you send the PINFL plus the core demographics the platform expects y
 ```
 
 The `state` / `district` / `city` codes come from national value sets - see [Addresses](general-guidance.html#addresses) for where each code is sourced. For a patient living abroad, use a free-text address with `country` set to the foreign ISO code instead (see the [Emma example](Patient-example-emma.html)).
+
+#### Names in Uzbek and Russian {#names-in-uzbek-and-russian}
+
+The `name` is written in Uzbek - the resource `language` - and that Uzbek text is authoritative. When you also hold the Russian (Cyrillic) form, send it as a `translation` extension on each part you fill: `_text`, `_family`, `_given` and `_suffix`. Keep one `name` entry - a second `HumanName` with the Russian spelling would read as a different name. The [Nodira example](Patient-example-nodira.html) carries the full set:
+
+```json
+"name": [
+  {
+    "use": "usual",
+    "text": "Karimova Nodira Anvarovna",
+    "_text": {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/translation",
+          "extension": [ { "url": "lang", "valueCode": "ru" }, { "url": "content", "valueString": "Каримова Нодира Анваровна" } ]
+        }
+      ]
+    },
+    "family": "Karimova",
+    "_family": {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/translation",
+          "extension": [ { "url": "lang", "valueCode": "ru" }, { "url": "content", "valueString": "Каримова" } ]
+        }
+      ]
+    },
+    "given": [ "Nodira" ],
+    "_given": [
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/translation",
+            "extension": [ { "url": "lang", "valueCode": "ru" }, { "url": "content", "valueString": "Нодира" } ]
+          }
+        ]
+      }
+    ],
+    "suffix": [ "Anvarovna" ],
+    "_suffix": [
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/translation",
+            "extension": [ { "url": "lang", "valueCode": "ru" }, { "url": "content", "valueString": "Анваровна" } ]
+          }
+        ]
+      }
+    ]
+  }
+]
+```
+
+Add one `translation` per language you hold - Russian (`ru`) or Karakalpak (`kaa`).
 
 #### Carrying more than one identifier {#identifier-slices}
 

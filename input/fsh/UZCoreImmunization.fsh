@@ -148,7 +148,15 @@ Description: "Uzbekistan Core Immunization profile, used to represent immunizati
 * protocolApplied.authority ^short = "Authority organization"
 
 * protocolApplied.targetDisease 0..* MS
-* protocolApplied.targetDisease from TargetDiseaseVS (extensible)
+* protocolApplied.targetDisease from TargetDiseaseVS (preferred)
+* protocolApplied.targetDisease ^slicing.discriminator.type = #value
+* protocolApplied.targetDisease ^slicing.discriminator.path = "$this"
+* protocolApplied.targetDisease ^slicing.rules = #open
+* protocolApplied.targetDisease ^slicing.description = "Target diseases from the national value set; codes from other systems are allowed alongside them"
+* protocolApplied.targetDisease ^slicing.ordered = false
+* protocolApplied.targetDisease contains dhpTargetDisease 0..* MS
+* protocolApplied.targetDisease[dhpTargetDisease] from TargetDiseaseVS (required)
+* protocolApplied.targetDisease[dhpTargetDisease] ^short = "Target disease from the national value set"
 * protocolApplied.targetDisease ^short = "Target Disease"
 
 * protocolApplied.doseNumber 1..1 MS
