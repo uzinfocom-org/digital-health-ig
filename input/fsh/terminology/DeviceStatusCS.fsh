@@ -1,7 +1,7 @@
 CodeSystem: DeviceStatusCS
 Id: device-status-cs
 Title: "Device Status Code System"
-Description: "Status codes for a device, with designations in Uzbek, Russian, and English."
+Description: "Uzbek and Russian translations of the device status codes (active, inactive, entered-in-error)"
 
 * insert SupplementCodeSystemDraft(device-status-cs, $device-status, 5.0.0)
 

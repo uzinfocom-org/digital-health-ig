@@ -2,7 +2,7 @@ Profile: UZCoreDevice
 Parent: Device
 Id: uz-core-device
 Title: "UZ Core Device"
-Description: "Profile of the Device resource for the Uzbekistan Core Implementation Guide, capturing key identifying, status, and descriptive information about a device."
+Description: "Uzbekistan Core Device profile, used to record the identity, status and description of a medical device"
 * ^experimental = true
 
 * identifier MS
@@ -46,18 +46,19 @@ Description: "Profile of the Device resource for the Uzbekistan Core Implementat
 * owner only Reference(UZCoreOrganization)
 
 * contact MS
-* contact only ContactPoint
 
 * location MS
 * location only Reference(UZCoreLocation)
 
 * note MS
 
-Instance: uz-core-device-example-001
+Instance: example-ct-scanner
 InstanceOf: UZCoreDevice
 Usage: #example
-Title: "UZ Core Device Example"
-Description: "Example instance of a UZCoreDevice - CT Scanner."
+Title: "Example UZ Core Device - CT Scanner"
+Description: "Example of a CT scanner"
+
+* language = #uz
 
 * displayName = "KT skaner"
 * status = #active
@@ -68,24 +69,26 @@ Description: "Example instance of a UZCoreDevice - CT Scanner."
 * lotNumber = "2023-05"
 * serialNumber = "SN-2023-001456"
 
-* name.value = "STOMATOM Edge"
+* name.value = "SOMATOM Edge"
 * name.type = #registered-name
 * name.display = true
 
-* modelNumber = "STOMATOM Edge"
+* modelNumber = "SOMATOM Edge"
 * partNumber = "PART-12345"
 
 * category = $device-category#dme
 
 * type = $sct#268460000
 
-* owner = Reference(Organization/example-organization)
+* owner = Reference(example-organization)
 
-Instance: uz-core-device-example-002
+Instance: example-ct-scanner-registered-name
 InstanceOf: UZCoreDevice
 Usage: #example
-Title: "UZ Core Device Example"
-Description: "Example instance of a UZCoreDevice - CT Scanner."
+Title: "Example UZ Core Device - CT Scanner, Registered Name"
+Description: "Example of a CT scanner identified by its registered name"
+
+* language = #uz
 
 * displayName = "KT skaner"
 * status = #active
@@ -96,11 +99,11 @@ Description: "Example instance of a UZCoreDevice - CT Scanner."
 * lotNumber = "2023-05"
 * serialNumber = "SN-2023-001456"
 
-* name.value = "STOMATOM Edge"
+* name.value = "SOMATOM Edge"
 * name.type = $device-name-type#registered-name "Ro'yxatdan o'tgan nomi"
 * name.display = true
 
-* modelNumber = "STOMATOM Edge"
+* modelNumber = "SOMATOM Edge"
 * partNumber = "PART-12345"
 
 * category = $device-category#single-use
@@ -110,11 +113,13 @@ Description: "Example instance of a UZCoreDevice - CT Scanner."
 * owner = Reference(tashkent-diseases-hospital)
 
 
-Instance: uz-core-device-example-003
+Instance: example-ct-scanner-user-friendly-name
 InstanceOf: UZCoreDevice
 Usage: #example
-Title: "UZ Core Device Example"
-Description: "Example instance of a UZCoreDevice - CT Scanner."
+Title: "Example UZ Core Device - CT Scanner, User-Friendly Name"
+Description: "Example of a CT scanner identified by its user-friendly name"
+
+* language = #uz
 
 * displayName = "KT skaner"
 * status = #active
@@ -125,11 +130,11 @@ Description: "Example instance of a UZCoreDevice - CT Scanner."
 * lotNumber = "2023-05"
 * serialNumber = "SN-2023-001456"
 
-* name.value = "STOMATOM Edge"
+* name.value = "SOMATOM Edge"
 * name.type = $device-name-type#user-friendly-name "Foydalanuvchiga qulay nomi"
 * name.display = true
 
-* modelNumber = "STOMATOM Edge"
+* modelNumber = "SOMATOM Edge"
 * partNumber = "PART-12345"
 
 * category = $device-category#dme "Durable Medical Equipment"
