@@ -47,7 +47,7 @@ Description: "Uzbekistan core profile for reporting inventory and stock items."
 * inventoryListing.item.quantity MS
 * inventoryListing.item.quantity from InventoryUnitVS (extensible )
 * inventoryListing.item.item MS
-* inventoryListing.item.item only CodeableReference(UZCoreMedication or Device or NutritionProduct or UZCoreInventoryItem or UZCoreBiologicallyDerivedProduct)
+* inventoryListing.item.item only CodeableReference(UZCoreMedication or UZCoreDevice or NutritionProduct or UZCoreInventoryItem or UZCoreBiologicallyDerivedProduct)
 
 * note MS
 
