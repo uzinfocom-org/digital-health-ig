@@ -1,7 +1,7 @@
 CodeSystem: ReferenceRangeMeaningCS
 Id: reference-range-meaning-cs
 Title: "Reference range meaning translations"
-Description: "Meaning of reference range, supplemented with translations in Uzbek and Russian"
+Description: "Reference range meaning supplement with translations in Uzbek and Russian"
 * insert SupplementCodeSystemDraft(reference-range-meaning-cs, $reference-meaning, 5.0.0)
 
 * #type

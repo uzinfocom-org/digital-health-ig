@@ -1,7 +1,7 @@
 CodeSystem: ReactionTypeCS
 Id: reaction-type-cs
-Title: "Reaction Type Supplement CodeSystem"
-Description: "SNOMED CT supplement containing Uzbek and Russian designations for reaction type codes used in Uzbekistan."
+Title: "Reaction type translations"
+Description: "Reaction type supplement with translations in Uzbek and Russian"
 
 * insert SupplementCodeSystemDraft(
     reaction-type-cs,

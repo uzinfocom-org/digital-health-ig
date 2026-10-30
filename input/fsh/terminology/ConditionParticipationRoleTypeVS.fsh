@@ -1,7 +1,7 @@
 ValueSet: ConditionParticipationRoleTypeVS
 Id: condition-participation-role-vs
-Title: "Types of participation role"
-Description: "Types of participation role in Uzbekistan"
+Title: "Condition participation role"
+Description: "Condition participation roles"
 * ^url = "https://terminology.dhp.uz/fhir/core/ValueSet/condition-participation-role-vs"
 * ^experimental = true
 * ^extension[0].url = $valueset-supplement

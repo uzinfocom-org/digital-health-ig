@@ -1,6 +1,6 @@
 CodeSystem: RequestPriorityCS
 Id: request-priority-cs
-Title: "Request Priority CS"
+Title: "Request priority translations"
 Description: "Request priority supplement with translations in Uzbek and Russian"
 * insert SupplementCodeSystemDraft(request-priority-cs, $request-priority, 5.0.0)
 * ^experimental = true

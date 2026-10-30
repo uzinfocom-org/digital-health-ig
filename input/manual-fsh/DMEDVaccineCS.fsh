@@ -1,6 +1,6 @@
 CodeSystem: DMEDVaccineCS
 Id: dmed-vaccine-cs
-Title: "DMED Vaccine Codes"
+Title: "DMED vaccine codes"
 Description: "Russian DMED Vaccine codes"
 * insert OriginalCodeSystemDraft(dmed-vaccine-cs)
 

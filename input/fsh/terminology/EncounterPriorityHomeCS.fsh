@@ -1,6 +1,6 @@
 CodeSystem: EncounterPriorityHomeCS
 Id: encounter-priority-home-cs
-Title: "Encounter priority home translations"
+Title: "Encounter priority (home)"
 Description: "Encounter priority home codes with English and Russian translations"
 * insert OriginalCodeSystemDraft(encounter-priority-home-cs)
 

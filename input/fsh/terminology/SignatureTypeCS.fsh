@@ -1,6 +1,6 @@
 CodeSystem: SignatureTypeCS
 Id: signature-type-cs
-Title: "Signature Type"
+Title: "Signature type"
 Description: "Defines the possible Provenance signature types."
 * insert OriginalCodeSystemDraft(signature-type-cs)
 * #biometricAuth "biometrik autentifikatsiya"

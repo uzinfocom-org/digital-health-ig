@@ -1,7 +1,7 @@
 CodeSystem: ImmunizationOriginCS
 Id: immunization-origin-cs
-Title: "Immunization Origin translations"
-Description: "Immunization Origin supplement with translations in Uzbek and Russian"
+Title: "Immunization origin translations"
+Description: "Immunization origin supplement with translations in Uzbek and Russian"
 * insert SupplementCodeSystem(immunization-origin-cs, $immunization-origin, 1.0.1)
 
 * #provider "Other Provider"

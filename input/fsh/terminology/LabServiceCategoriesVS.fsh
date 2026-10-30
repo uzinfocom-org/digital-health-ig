@@ -1,7 +1,7 @@
 ValueSet: ServiceRequestCategoriesVS
 Id: service-request-categories-vs
-Title: "Uzbekistan Service RequestCategories ValueSet"
-Description: "ValueSet including categories of healthcare service requests used in the Uzbekistan."
+Title: "ServiceRequest category"
+Description: "ServiceRequest categories"
 * ^url = "https://terminology.dhp.uz/fhir/core/ValueSet/service-request-categories-vs"
 * ^experimental = true
 * ^language = #uz

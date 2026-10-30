@@ -1,6 +1,6 @@
 CodeSystem: SpecimenTypesLocCS
 Id: specimen-types-loc-cs
-Title: "Specimen local types translations"
+Title: "Specimen local type"
 Description: "Specimen local types, original local codes with translations in Uzbek and Russian"
 * insert OriginalCodeSystemDraft(specimen-types-loc-cs)
 

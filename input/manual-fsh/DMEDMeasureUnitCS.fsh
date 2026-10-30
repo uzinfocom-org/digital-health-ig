@@ -1,6 +1,6 @@
 CodeSystem: DMEDMeasureUnitCS
 Id: dmed-measure-unit-cs
-Title: "DMED Measure Unit CodeSystem"
+Title: "DMED measure unit"
 Description: "Measurement unit codes in the DMED system"
 * insert OriginalCodeSystemDraft(dmed-measure-unit-cs)
 

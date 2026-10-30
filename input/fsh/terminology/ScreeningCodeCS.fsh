@@ -1,6 +1,6 @@
 CodeSystem: ScreeningCodeCS
 Id: screening-code-cs
-Title: "Screening and Home Visits Code System"
+Title: "Screening and home visits"
 Description: "National screening program identifiers and home visit services. DMED breast and cervical questionnaire programs remain distinct from the HPV programs even when their clinical service codes use SNOMED CT. Local program identifiers are not replacements for SNOMED clinical coding."
 * insert OriginalCodeSystemDraft(screening-code-cs)
 

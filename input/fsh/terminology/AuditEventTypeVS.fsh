@@ -1,7 +1,7 @@
 ValueSet: AuditEventTypeVS
 Id: audit-event-type-vs
 Title: "Audit event type"
-Description: "Defines the type of event that is being recorded in Uzbek and Russian"
+Description: "Audit event types"
 * ^url = "https://terminology.dhp.uz/fhir/core/ValueSet/audit-event-type-vs"
 * ^experimental = true
 * ^extension[0].url = $valueset-supplement

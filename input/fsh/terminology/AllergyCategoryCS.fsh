@@ -1,7 +1,7 @@
 CodeSystem: AllergyCategoryCS
 Id: allergy-category-cs
-Title: "Allergy category"
-Description: "Allergy category supplement with translations in uzbek and russian"
+Title: "Allergy category translations"
+Description: "Allergy category supplement with translations in Uzbek and Russian"
 * insert SupplementCodeSystem(allergy-category-cs, $allergy-category, 5.0.0)
 
 * #food

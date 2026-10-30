@@ -1,7 +1,7 @@
 CodeSystem: AddressUseCS
 Id: address-use-cs
-Title: "Address registration translations"
-Description: "Types of address registration supplement with translations in Uzbek and Russian"
+Title: "Address registration type translations"
+Description: "Address registration type supplement with translations in Uzbek and Russian"
 * insert SupplementCodeSystemDraft(address-use-cs, $address-use, 5.0.0)
 * #home
   * ^designation[0].language = #ru

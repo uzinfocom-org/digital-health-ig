@@ -1,7 +1,7 @@
 CodeSystem: ClaimResponseDecisionCS
 Id: claim-response-decision-cs
-Title: "Claim Response Decision CS"
-Description: "Observation status supplement with translations in Uzbek and Russian"
+Title: "Claim response decision translations"
+Description: "Claim response decision supplement with translations in Uzbek and Russian"
 
 * insert SupplementCodeSystemDraft(claim-response-decision-cs, $claim-response-decision, 5.0.0)
 

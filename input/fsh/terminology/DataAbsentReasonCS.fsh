@@ -1,6 +1,6 @@
 CodeSystem: DataAbsentReasonCS
 Id: data-absent-reason-cs
-Title: "Data absent reason"
+Title: "Data absent reason translations"
 Description: "Data absent reason supplement with translations in Uzbek and Russian"
 * insert SupplementCodeSystemDraft(data-absent-reason-cs, $observation-dataAbsentReason, 1.0.0)
 

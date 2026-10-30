@@ -1,6 +1,6 @@
 CodeSystem: ActionParticipantTypeCS
 Id: action-participant-type-cs
-Title: "Action Participant Type CS"
+Title: "Action participant type translations"
 Description: "Action participant type supplement with translations in Uzbek and Russian"
 * insert SupplementCodeSystemDraft(action-participant-type-cs, $action-participant-type, 5.0.0)
 * ^experimental = true

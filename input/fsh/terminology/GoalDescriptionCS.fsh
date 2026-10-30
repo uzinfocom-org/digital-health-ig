@@ -1,7 +1,7 @@
 CodeSystem: GoalDescriptionCS
 Id: goal-description-cs
-Title: "Goal Description Supplement CodeSystem"
-Description: "SNOMED CT supplement containing Uzbek and Russian designations for Goal description codes used in Uzbekistan."
+Title: "Goal description translations"
+Description: "Goal description supplement with translations in Uzbek and Russian"
 
 * insert SupplementCodeSystemDraft(
     goal-description-cs,

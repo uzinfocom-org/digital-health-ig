@@ -1,7 +1,7 @@
 CodeSystem: SpecimenCombinedCS
 Id: specimen-combined-cs
 Title: "Specimen combined status translations"
-Description: "Specimen combined status, supplemented with translations in Uzbek and Russian"
+Description: "Specimen combined status supplement with translations in Uzbek and Russian"
 * insert SupplementCodeSystemDraft(specimen-combined-cs, $specimen-combined, 5.0.0)
 
 * #grouped

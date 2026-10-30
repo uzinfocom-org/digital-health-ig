@@ -1,7 +1,7 @@
 ValueSet: RelevantClinicalInformationVS
 Id: relevant-clinical-information-vs
-Title: "Clinical information"
-Description: "Relevant clinical information status types"
+Title: "Relevant clinical information"
+Description: "Relevant clinical information types"
 * ^url = "https://terminology.dhp.uz/fhir/core/ValueSet/relevant-clinical-information-vs"
 * ^experimental = true
 * ^extension[0].url = $valueset-supplement

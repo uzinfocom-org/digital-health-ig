@@ -1,7 +1,7 @@
 CodeSystem: AddressTypeCS
 Id: address-type-cs
 Title: "Address type translations"
-Description: "Address type supplement with Uzbek and Russian translations"
+Description: "Address type supplement with translations in Uzbek and Russian"
 * insert SupplementCodeSystemDraft(address-type-cs, $address-type, 5.0.0)
 * #postal
   * ^designation[0].language = #ru

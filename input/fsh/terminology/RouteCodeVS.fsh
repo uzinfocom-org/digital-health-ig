@@ -1,7 +1,7 @@
 ValueSet: RouteCodeVS
 Id: route-code-vs
-Title: "Route of administration value set"
-Description: "Route of administration codes with Uzbek and Russian translations, including SNOMED CT and local codes"
+Title: "Route of administration"
+Description: "Routes of administration, including SNOMED CT and local codes"
 * ^url = "https://terminology.dhp.uz/fhir/core/ValueSet/route-code-vs"
 * ^experimental = true
 * ^extension[0].url = $valueset-supplement

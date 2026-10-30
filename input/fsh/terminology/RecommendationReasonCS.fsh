@@ -1,7 +1,7 @@
 CodeSystem: RecommendationReasonCS
 Id: recommendation-reason-cs
-Title: "Immunization reason translations"
-Description: "Immunization recommendation reason supplement with Uzbek and Russian translations"
+Title: "Immunization recommendation reason translations"
+Description: "Immunization recommendation reason supplement with translations in Uzbek and Russian"
 
 * insert SupplementCodeSystemDraft(recommendation-reason-cs, $sct, 2026.1.0)
 

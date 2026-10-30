@@ -1,7 +1,7 @@
 CodeSystem: CompositionNarrativeStatusCS
 Id: narrative-status-cs
-Title: "Composition narrative status"
-Description: "Composition narrative status supplement with translations in uzbek and russian"
+Title: "Composition narrative status translations"
+Description: "Composition narrative status supplement with translations in Uzbek and Russian"
 * insert SupplementCodeSystem(narrative-status-cs, $composition-narrative-status, 5.0.0)
 
 * #generated

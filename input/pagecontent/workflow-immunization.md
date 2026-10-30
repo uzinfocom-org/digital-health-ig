@@ -69,7 +69,7 @@ The vaccination typically happens at another facility, on another day, than the 
 | Product unavailable | `not-done` | `statusReason` = `OSTOCK` (product out of stock) |
 | Recorded in error | `entered-in-error` | - |
 
-`statusReason` is bound (required) to the [Immunization status reason value set](ValueSet-immunization-status-reason-vs.html); the four codes above, from HL7 v3 ActReason, are the only valid values.
+`statusReason` is bound (required) to the [Immunization status reason](ValueSet-immunization-status-reason-vs.html) value set; the four codes above, from HL7 v3 ActReason, are the only valid values.
 
 ```
 POST [base]/Immunization

@@ -1,7 +1,7 @@
 CodeSystem: AllergyReactionSeverityCS
 Id: allergy-reaction-severity-cs
-Title: "Allergy reaction severity"
-Description: "Allergy reaction severity supplement with translations in uzbek and russian"
+Title: "Allergy reaction severity translations"
+Description: "Allergy reaction severity supplement with translations in Uzbek and Russian"
 * insert SupplementCodeSystem(allergy-reaction-severity-cs, $allergy-reaction-severity, 5.0.0)
 
 * #mild

@@ -1,7 +1,7 @@
 ValueSet: ProcedureOutcomeVS
 Id: procedure-outcome-vs
-Title: "Procedure Outcome translations"
-Description: "Procedure outcome ValueSet with translations in Uzbek and Russian"
+Title: "Procedure outcome"
+Description: "Procedure outcomes"
 * ^url = "https://terminology.dhp.uz/fhir/core/ValueSet/procedure-outcome-vs"
 * ^experimental = true
 * ^extension[0].url = $valueset-supplement

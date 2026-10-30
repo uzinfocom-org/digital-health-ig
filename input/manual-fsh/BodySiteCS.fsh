@@ -1,7 +1,7 @@
 CodeSystem: BodySiteCS
 Id: body-site-cs
-Title: "Body Site CS"
-Description: "Body site supplement with Uzbek and Russian translations"
+Title: "Body site translations"
+Description: "Body site supplement with translations in Uzbek and Russian"
 
 * insert SupplementCodeSystemDraft(body-site-cs, $sct, 2026.1.0)
 

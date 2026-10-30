@@ -4,7 +4,7 @@
   "content": "complete",
   "name": "PositionAndProfessionCS",
   "id": "position-and-profession-cs",
-  "title": "Defines the possible positions and professions",
+  "title": "Positions and professions",
   "description": "State classification of positions of employees and worker professions (KODP-2020)",
   "url": "https://terminology.dhp.uz/fhir/core/CodeSystem/position-and-profession-cs",
   "concept": [

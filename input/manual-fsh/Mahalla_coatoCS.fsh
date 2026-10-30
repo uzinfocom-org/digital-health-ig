@@ -1,6 +1,6 @@
 CodeSystem: MahallaCoatoCS
 Id: mahalla-coato-cs
-Title: "Mahalla Coats Codes and Names"
+Title: "Mahalla COATO codes and names"
 Description: "Mahalla coats codes and names with translations in Russian and English from coat"
 * insert OriginalCodeSystemDraft(mahalla-coato-cs)
 

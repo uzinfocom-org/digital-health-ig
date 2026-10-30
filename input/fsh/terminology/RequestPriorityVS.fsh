@@ -1,7 +1,7 @@
 ValueSet: RequestPriorityVS
 Id: request-priority-vs
-Title: "Request Priority VS"
-Description: "Request priority ValueSet with translations in Uzbek and Russian"
+Title: "Request priority"
+Description: "Request priorities"
 * ^url = "https://terminology.dhp.uz/fhir/core/ValueSet/request-priority-vs"
 * ^experimental = true
 * ^extension[0].url = $valueset-supplement

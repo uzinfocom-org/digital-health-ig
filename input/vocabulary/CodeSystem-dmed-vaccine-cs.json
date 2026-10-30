@@ -4,7 +4,7 @@
   "content": "complete",
   "name": "DMEDVaccineCS",
   "id": "dmed-vaccine-cs",
-  "title": "DMED Vaccine Codes",
+  "title": "DMED vaccine codes",
   "description": "Russian DMED Vaccine codes",
   "url": "https://terminology.dhp.uz/fhir/core/CodeSystem/dmed-vaccine-cs",
   "concept": [
