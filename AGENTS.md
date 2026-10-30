@@ -17,5 +17,6 @@ Before creating or modifying any FHIR profile, extension, value set, code system
 - **Vocabulary**: Pre-rendered extra-large codesystems are stored in `input/vocabulary/`
 - **Content**: Markdown pages in `input/pagecontent/`
   - The `StructureDefinition-*-intro.md` fragments embed hand-written JSON examples that the IG build does **not** validate. Whenever you add or change one, validate it with the FHIR IG validator against the profile in its `meta.profile` (e.g. `java -jar input-cache/validator_cli.jar example.json -version 5.0.0 -ig . -profile <canonical-url>`) and fix any errors before committing.
+- **Changelog**: add entries under `### In development` in all three changelogs (`input/pagecontent/changelog.md` and `input/translations/{ru,uz}/pagecontent/changelog.md`). Within each `####` category, keep entries in alphabetical order by their visible text (ignore link brackets; Latin before Cyrillic), each language sorted on its own. Insert a new entry at its sorted place rather than at the end: entries that concurrent PRs add at the same spot conflict on GitHub.
 - **Canonical base**: `http://dhp.uz` and `https://terminology.dhp.uz` for terminologies
 - **ID pattern**: Use lowercase with hyphens (e.g., `dhp`)
