@@ -4,6 +4,8 @@
 
 [UZ Core Device](StructureDefinition-uz-core-device.html) describes a physical medical device - hospital equipment such as a CT scanner, or a single item such as an intrauterine device - with its SNOMED CT type and category, manufacturer, model, serial and lot numbers, status and availability, and the organization and location it belongs to. Uzbek and Russian translations of the HL7 device status, availability status, name type and category codes, and of the SNOMED CT contraceptive device types, come with it. The profile page has the narrative intro and Quick Start.
 
+[Composition types](CodeSystem-composition-type-cs.html) add `emdoc-0010-0471` for Order No. 399 form 112, a laboratory analysis of folic acid, 25-OH vitamin D and vitamin B12.
+
 Added [UZ Core CarePlan](StructureDefinition-uz-core-careplan.html), a general profile for a plan of care for a patient over a period of time, such as nursing home patronage visits, a course of treatment or a sick leave case. A scenario-specific guide derives from it. The plan groups the requests for its planned activities and links the events that record the performed ones. Its `intent` is bound to [CarePlan intent](ValueSet-careplan-intent-vs.html) with Uzbek and Russian translations. The examples are a [newborn nursing patronage plan](CarePlan-example-newborn-patronage-careplan.html) and a [therapeutic massage course](CarePlan-example-massage-careplan.html), which replaces the placeholder `example-careplan`.
 
 #### Changed

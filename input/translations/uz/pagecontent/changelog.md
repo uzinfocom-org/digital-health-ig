@@ -4,6 +4,8 @@
 
 [UZ Core Device](StructureDefinition-uz-core-device.html) jismoniy tibbiy buyumni - kompyuter tomografi kabi shifoxona uskunasini yoki bachadon ichi spirali kabi alohida buyumni - uning SNOMED CT bo'yicha turi va toifasi, ishlab chiqaruvchisi, modeli, seriya va partiya raqamlari, holati va mavjudligi, shuningdek u tegishli bo'lgan tashkilot va joy bilan tavsiflaydi. Profil bilan birga HL7 ning buyum holati, mavjudlik holati, nom turi va toifa kodlarining hamda SNOMED CT kontratseptiv buyum turlarining o'zbekcha va ruscha tarjimalari qo'shildi. Profil sahifasida kirish qismi va Tez boshlash bo'limi mavjud.
 
+[Composition hujjat turlari](CodeSystem-composition-type-cs.html): 399-son buyruqning 112-shakli - foliy kislotasi, 25-OH D vitamini va B12 vitaminiga IXLA tahlili uchun `emdoc-0010-0471` kodi qo'shildi.
+
 [UZ Core CarePlan](StructureDefinition-uz-core-careplan.html) qo'shildi - bemorga ma'lum davr uchun yordam rejasining umumiy profili, masalan hamshiraning uyga patronaj tashriflari, davolash kursi yoki mehnatga layoqatsizlik varaqasi holati. Muayyan stsenariy uchun qo'llanma undan meros oladi. Reja rejalashtirilgan tadbirlar uchun so'rovlarni birlashtiradi va bajarilganlarini qayd etuvchi hodisalarni bog'laydi. Uning `intent` elementi o'zbek va rus tarjimalari bilan [CarePlan maqsadlari](ValueSet-careplan-intent-vs.html) ga bog'langan. Namunalar: [yangi tug'ilgan chaqaloq patronaji rejasi](CarePlan-example-newborn-patronage-careplan.html) va vaqtinchalik `example-careplan` o'rnini egallagan [davolovchi massaj kursi](CarePlan-example-massage-careplan.html).
 
 #### O'zgartirildi
