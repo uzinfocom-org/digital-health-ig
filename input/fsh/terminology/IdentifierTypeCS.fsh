@@ -1,7 +1,7 @@
 CodeSystem: IdentifierTypeCS
 Id: identifier-type-cs
-Title: "Possible identifiers translations"
-Description: "Types of possible identifiers supplement with translations in Uzbek and Russian"
+Title: "Identifier type translations"
+Description: "Identifier type supplement with translations in Uzbek and Russian"
 * insert SupplementCodeSystemDraft(identifier-type-cs, $identifier-type, 5.0.0)
 * #PPN
   * ^designation[0].language = #ru

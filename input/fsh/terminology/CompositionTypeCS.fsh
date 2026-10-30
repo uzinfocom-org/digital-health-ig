@@ -1,7 +1,7 @@
 CodeSystem: CompositionTypeCS
 Id: composition-type-cs
-Title: "Uzbekistan Composition Type CodeSystem"
-Description: "Composition Type CodeSystem with translations in uzbek and russian"
+Title: "Composition type"
+Description: "Composition types in Uzbekistan"
 
 * insert OriginalCodeSystem(composition-type-cs)
 

@@ -1,6 +1,6 @@
 CodeSystem: ObservationDayCS
 Id: observation-day-cs
-Title: "Observation Day of Life"
+Title: "Observation day of life"
 Description: "Local codes representing the day of life on which a newborn observation was recorded, used to discriminate nested Composition sections in Form 097 (nurseObservation: days 0-6; dailyObservation: days 0-5)."
 * insert OriginalCodeSystemDraft(observation-day-cs)
 * #day-0 "Day of life 0"

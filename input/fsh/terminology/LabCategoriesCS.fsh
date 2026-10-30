@@ -1,6 +1,6 @@
 CodeSystem: LabCategoriesCS
 Id: lab-categories-cs
-Title: "Laboratory Service Categories"
+Title: "Laboratory service category"
 Description: "Uzbekistan national classification of laboratory service categories."
 * insert OriginalCodeSystemDraft(lab-categories-cs)
 

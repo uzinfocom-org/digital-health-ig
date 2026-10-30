@@ -4,8 +4,8 @@
   "content": "supplement",
   "name": "BodySiteCS",
   "id": "body-site-cs",
-  "title": "Body Site CS",
-  "description": "Body site supplement with Uzbek and Russian translations",
+  "title": "Body site translations",
+  "description": "Body site supplement with translations in Uzbek and Russian",
   "url": "https://terminology.dhp.uz/fhir/core/CodeSystem/body-site-cs",
   "concept": [
     {

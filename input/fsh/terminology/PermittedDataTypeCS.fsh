@@ -1,6 +1,6 @@
 CodeSystem: PermittedDataTypeCS
 Id: permitted-data-type-cs
-Title: "Permitted data type type translations"
+Title: "Permitted data type translations"
 Description: "Permitted data type supplement with translations in Uzbek and Russian"
 * insert SupplementCodeSystemDraft(permitted-data-type-cs, $permitted-data-type, 5.0.0)
 

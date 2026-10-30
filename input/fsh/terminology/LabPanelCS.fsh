@@ -1,7 +1,7 @@
 CodeSystem: LabPanelCS
 Id: lab-pan-cs
-Title: "Laboratory Observation Panels and Analytes"
-Description: "Code system defining laboratory observation panels and individual analytes used in Ministry of Health Uzbekistan (399)."
+Title: "Laboratory observation panels and analytes"
+Description: "Laboratory observation panels and individual analytes used in Ministry of Health Uzbekistan (399)."
 * insert OriginalCodeSystemDraft(lab-pan-cs)
 // The nesting below expresses the panel/analyte hierarchy, but nesting lives on the CodeSystem and
 // is lost once this system is included in a ValueSet - expansion.contains is flat. These properties

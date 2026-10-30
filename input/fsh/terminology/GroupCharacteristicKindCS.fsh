@@ -1,7 +1,7 @@
 CodeSystem: GroupCharacteristicKindCS
 Id: group-characteristic-kind-cs
 Title: "Group characteristic kind translations"
-Description: "LOINC supplement adding Uzbek and Russian translations for the LOINC codes used to describe the kind of characteristic that defines a group"
+Description: "Group characteristic kind supplement with translations in Uzbek and Russian"
 * insert SupplementCodeSystemDraft(group-characteristic-kind-cs, $loinc, 2.82.0)
 
 * #76691-5

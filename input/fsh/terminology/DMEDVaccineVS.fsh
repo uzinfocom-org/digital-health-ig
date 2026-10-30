@@ -1,7 +1,7 @@
 ValueSet: DMEDVaccineVS
 Id: dmed-vaccine-vs
-Title: "DMED Vaccine ValueSet"
-Description: "DMED Vaccine codes"
+Title: "DMED vaccine codes"
+Description: "DMED vaccine codes"
 * ^url = "https://terminology.dhp.uz/fhir/core/ValueSet/dmed-vaccine-vs"
 * ^experimental = true
 * ^publisher = "Uzinfocom"

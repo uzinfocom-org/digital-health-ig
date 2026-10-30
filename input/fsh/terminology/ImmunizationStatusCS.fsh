@@ -1,7 +1,7 @@
 CodeSystem: ImmunizationStatusCS
 Id: immunization-status-cs
-Title: "Immunization Status translations"
-Description: "Immunization Status supplement with translations in Uzbek and Russian"
+Title: "Immunization status translations"
+Description: "Immunization status supplement with translations in Uzbek and Russian"
 * insert SupplementCodeSystem(immunization-status-cs, $event-status, 5.0.0)
 
 * #entered-in-error "Entered in Error"

@@ -1,7 +1,7 @@
 ValueSet: ObservationStatusVS
 Id: observation-status-vs
 Title: "Observation status"
-Description: "Observation status in Uzbekistan"
+Description: "Observation statuses"
 * ^url = "https://terminology.dhp.uz/fhir/core/ValueSet/observation-status-vs"
 * ^experimental = true
 * ^extension[0].url = $valueset-supplement

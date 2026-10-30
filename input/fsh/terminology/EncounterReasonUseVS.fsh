@@ -1,6 +1,6 @@
 ValueSet: EncounterReasonUseVS
 Id: encounter-reason-use-vs
-Title: "Encounter Reason Use Codes"
+Title: "Encounter reason use"
 Description: "Encounter reason use codes with Uzbek and Russian translations"
 * ^url = "https://terminology.dhp.uz/fhir/core/ValueSet/encounter-reason-use-vs"
 * ^experimental = true

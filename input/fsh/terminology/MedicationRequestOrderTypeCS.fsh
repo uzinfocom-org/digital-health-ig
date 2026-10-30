@@ -1,7 +1,7 @@
 CodeSystem: MedicationRequestOrderTypeCS
 Id: medication-request-order-type-cs
-Title: "Medication Request Order Type Codes"
-Description: "Uzbekistan national code system defining types of medication request orders."
+Title: "MedicationRequest order type"
+Description: "Uzbekistan national codes for types of medication request orders."
 * insert OriginalCodeSystemDraft(medication-request-order-type-cs)
 * #rembr-0001-00001 "Rembursatsiyali buyurtma"
   * ^designation[0].language = #ru

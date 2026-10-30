@@ -1,6 +1,6 @@
 CodeSystem: SSVAdministrativeTerritoryCS
 Id: ssv-administrative-territory-cs
-Title: "SSV Administrative Territory"
+Title: "SSV administrative territory"
 Description: "State Committee on Statistics (SSV) administrative territory codes for Uzbekistan"
 * insert OriginalCodeSystemDraft(ssv-administrative-territory-cs)
 

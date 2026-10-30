@@ -1,7 +1,7 @@
 CodeSystem: SubpotentReasonCS
 Id: subpotent-reason-cs
-Title: "Immunization Subpotent Reason translations"
-Description: "Immunization Subpotent Reason supplement with Uzbek and Russian translations"
+Title: "Immunization subpotent reason translations"
+Description: "Immunization subpotent reason supplement with translations in Uzbek and Russian"
 * insert SupplementCodeSystem(subpotent-reason-cs, $immunization-subpotent-reason, 0.1.0)
 
 * #partialdose "Partial Dose"

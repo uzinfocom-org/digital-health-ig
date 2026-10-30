@@ -20,6 +20,8 @@
 
 Все ссылки на Device в профилях UZ Core теперь указывают на [UZ Core Device](StructureDefinition-uz-core-device.html): Observation, Procedure, Condition, AdverseEvent, Composition, QuestionnaireResponse, Group, MedicationAdministration, MedicationDispense, InventoryItem, SupplyRequest и SupplyDelivery.
 
+Заголовки и описания систем кодов и наборов значений теперь следуют шаблону именования из [руководства по моделированию](https://github.com/uzinfocom-org/digital-health-ig/blob/main/modelling-guidelines.md): supplement называется `[Concept] translations`, набор значений - `[Concept]`, а в заголовках больше нет слов вроде "CodeSystem" или "ValueSet". Канонические URL, идентификаторы и коды не изменились.
+
 #### Несовместимые изменения
 
 Удалены supplements типов ресурсов-запросов и типа ресурса участника, `https://terminology.dhp.uz/fhir/core/CodeSystem/request-resource-types-cs` и `https://terminology.dhp.uz/fhir/core/CodeSystem/participant-resource-type-cs`. Они переводили те же коды `http://hl7.org/fhir/fhir-types`, что и supplement FHIR-типов, поэтому у этих кодов было по два русских и два узбекских обозначения. [Типы ресурсов-запросов](ValueSet-request-resource-types-vs.html) и [Типы ресурсов](ValueSet-resource-type-vs.html) теперь используют [supplement FHIR-типов](CodeSystem-fhir-types-cs.html). Системы, загружающие supplements по URL, переходят на `https://terminology.dhp.uz/fhir/core/CodeSystem/fhir-types-cs`.

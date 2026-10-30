@@ -1,6 +1,6 @@
 CodeSystem: EncounterPurposeCS
 Id: encounter-purpose-cs
-Title: "Encounter Purpose Classification"
+Title: "Encounter purpose"
 Description: "Classification of patient encounter purposes in Uzbek and Russian"
 * insert OriginalCodeSystemDraft(encounter-purpose-cs)
 

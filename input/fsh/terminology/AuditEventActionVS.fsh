@@ -1,7 +1,7 @@
 ValueSet: AuditEventActionVS
 Id: audit-event-action-vs
 Title: "Audit event action"
-Description: "Defines audit event action that is being recorded in Uzbek and Russian"
+Description: "Audit event actions"
 * ^url = "https://terminology.dhp.uz/fhir/core/ValueSet/audit-event-action-vs"
 * ^experimental = true
 * ^extension[0].url = $valueset-supplement

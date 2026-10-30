@@ -4,8 +4,8 @@
   "content": "complete",
   "name": "ObservationLabResearchCodesCS",
   "id": "observation-lab-research-codes-cs",
-  "title": "Laboratory Observation Panels and Analytes",
-  "description": "Code system defining laboratory observation panels and individual analytes used in Uzbekistan.",
+  "title": "Laboratory observation panels and analytes",
+  "description": "Laboratory observation panels and individual analytes used in Uzbekistan.",
   "url": "https://terminology.dhp.uz/fhir/core/CodeSystem/observation-lab-research-codes-cs",
   "concept": [
     {

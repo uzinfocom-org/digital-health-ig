@@ -1,7 +1,7 @@
 ValueSet: AuditEventSubTypeVS
 Id: audit-event-subtype-vs
 Title: "Audit event subtype"
-Description: "Defines the subtype of event that is being recorded in Uzbek and Russian"
+Description: "Audit event subtypes"
 * ^url = "https://terminology.dhp.uz/fhir/core/ValueSet/audit-event-subtype-vs"
 * ^experimental = true
 * ^extension[+].url = $valueset-supplement

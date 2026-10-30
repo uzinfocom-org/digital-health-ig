@@ -1,7 +1,7 @@
 CodeSystem: AllergyTypesCS
 Id: allergy-types-cs
-Title: "Allergy types"
-Description: "Allergy types supplement with translations in uzbek and russian"
+Title: "Allergy type translations"
+Description: "Allergy type supplement with translations in Uzbek and Russian"
 * insert SupplementCodeSystemDraft(allergy-types-cs, $allergy-intolerance-type, 5.0.0)
 * #allergy
   * ^designation[0].language = #ru

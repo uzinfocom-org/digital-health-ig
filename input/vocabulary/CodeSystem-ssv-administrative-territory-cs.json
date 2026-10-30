@@ -4,7 +4,7 @@
   "content": "complete",
   "name": "SSVAdministrativeTerritoryCS",
   "id": "ssv-administrative-territory-cs",
-  "title": "SSV Administrative Territory",
+  "title": "SSV administrative territory",
   "description": "State Committee on Statistics (SSV) administrative territory codes for Uzbekistan",
   "url": "https://terminology.dhp.uz/fhir/core/CodeSystem/ssv-administrative-territory-cs",
   "concept": [

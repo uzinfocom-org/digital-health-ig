@@ -4,7 +4,7 @@
   "content": "complete",
   "name": "DMEDProfessionsCS",
   "id": "dmed-specialties-cs",
-  "title": "DMED Positions and Professions (UZ/RU)",
+  "title": "DMED positions and professions",
   "description": "Uzbek and Russian designations for DMED Professions codes",
   "url": "https://terminology.dhp.uz/fhir/core/CodeSystem/dmed-specialties-cs",
   "concept": [

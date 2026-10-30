@@ -1,6 +1,6 @@
 CodeSystem: RegionsCS
 Id: regions-cs
-Title: "Uzbekistan Regions and Locations"
+Title: "Uzbekistan regions and locations"
 Description: "List of regions and locations in Uzbekistan"
 * insert OriginalCodeSystemDraft(regions-cs)
 

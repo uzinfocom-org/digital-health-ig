@@ -1,7 +1,7 @@
 CodeSystem: CompositionAttModeCS
 Id: composition-att-mode-cs
-Title: "Composition attestation mode"
-Description: "Composition attestation mode supplement with translations in uzbek and russian"
+Title: "Composition attestation mode translations"
+Description: "Composition attestation mode supplement with translations in Uzbek and Russian"
 * insert SupplementCodeSystem(composition-att-mode-cs, $composition-att-mode, 5.0.0)
 
 * #personal

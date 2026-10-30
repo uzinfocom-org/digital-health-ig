@@ -1,6 +1,6 @@
 ValueSet: EpisodeOfCareTypeVS
 Id: episode-of-care-type-vs
-Title: "EpisodeOfCare type value set"
+Title: "EpisodeOfCare type"
 Description: "Allowed codes for EpisodeOfCare types in Uzbekistan's health information exchange."
 * ^url = "https://terminology.dhp.uz/fhir/core/ValueSet/episode-of-care-type-vs"
 * ^experimental = true

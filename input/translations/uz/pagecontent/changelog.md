@@ -20,6 +20,8 @@
 
 UZ Core profillaridagi Device ga barcha havolalar endi [UZ Core Device](StructureDefinition-uz-core-device.html) ga yo'naltirilgan: Observation, Procedure, Condition, AdverseEvent, Composition, QuestionnaireResponse, Group, MedicationAdministration, MedicationDispense, InventoryItem, SupplyRequest va SupplyDelivery.
 
+Kod tizimlari va qiymatlar to'plamlarining sarlavhalari va tavsiflari endi [modellashtirish qo'llanmasidagi](https://github.com/uzinfocom-org/digital-health-ig/blob/main/modelling-guidelines.md) nomlash shabloniga mos keladi: supplement `[Concept] translations`, qiymatlar to'plami esa `[Concept]` deb nomlanadi, sarlavhalarda "CodeSystem" yoki "ValueSet" kabi so'zlar endi yo'q. Kanonik URL, identifikatorlar va kodlar o'zgarmadi.
+
 #### Buzuvchi o'zgarishlar
 
 So'rov resurs turlari va ishtirokchi resurs turi supplementlari, `https://terminology.dhp.uz/fhir/core/CodeSystem/request-resource-types-cs` va `https://terminology.dhp.uz/fhir/core/CodeSystem/participant-resource-type-cs`, olib tashlandi. Ular FHIR turlari supplementi bilan bir xil `http://hl7.org/fhir/fhir-types` kodlarini tarjima qilardi, shuning uchun bu kodlarda ikkitadan ruscha va o'zbekcha belgilash bor edi. [So'rov resurs turlari](ValueSet-request-resource-types-vs.html) va [Resurs turlari](ValueSet-resource-type-vs.html) endi [FHIR turlari supplementi](CodeSystem-fhir-types-cs.html)dan foydalanadi. Supplementlarni URL bo'yicha yuklaydigan tizimlar `https://terminology.dhp.uz/fhir/core/CodeSystem/fhir-types-cs`ga o'tadi.

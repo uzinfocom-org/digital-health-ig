@@ -1,7 +1,7 @@
 CodeSystem: TimingAbbreviationCS
 Id: timing-abbreviation-cs
-Title: "Timing Abbreviation translations"
-Description: "Translations for standard Timing Abbreviation codes (Continuous)"
+Title: "Timing abbreviation translations"
+Description: "Timing abbreviation supplement with translations in Uzbek and Russian"
 * insert SupplementCodeSystemDraft(timing-abbreviation-cs, $timing-abbreviation, 5.0.0)
 
 * #C "Continuous (frequency)"

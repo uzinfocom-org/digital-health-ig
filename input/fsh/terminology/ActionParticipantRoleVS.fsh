@@ -1,7 +1,7 @@
 ValueSet: ActionParticipantRoleVS
 Id: action-participant-role-vs
-Title: "Action Participant Role VS"
-Description: "Value Set for Action Participant Role"
+Title: "Action participant role"
+Description: "Action participant roles"
 * ^url = "https://terminology.dhp.uz/fhir/core/ValueSet/action-participant-role-vs"
 * ^experimental = true
 * ^extension[0].url = $valueset-supplement
