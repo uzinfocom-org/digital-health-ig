@@ -37,10 +37,10 @@ Description: "Uzbekistan Core Device profile, used to record the identity, statu
 * partNumber MS
 
 * category MS
-* category from DeviceCategoryVS (example)
+* category from DeviceCategoryVS (preferred)
 
 * type MS
-* type from DeviceTypeVS (example)
+* type from DeviceTypeVS (preferred)
 
 * owner MS
 * owner only Reference(UZCoreOrganization)
