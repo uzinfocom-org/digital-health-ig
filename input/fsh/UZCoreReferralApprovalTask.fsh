@@ -32,6 +32,9 @@ Description: "Uzbekistan Core Task Referral Approval profile, used to track work
 * status ^short = "Task Status"
 * status from TaskStatusVS (required)
 
+* statusReason MS
+* statusReason  from TaskStatusReasonVS (extensible)
+
 * businessStatus MS
 * businessStatus ^short = "Business status of task"
 * businessStatus from TaskBusinessStatusVS (required)
@@ -52,12 +55,26 @@ Description: "Uzbekistan Core Task Referral Approval profile, used to track work
 * owner ^short = "Task responsible person"
 * owner only Reference(UZCoreOrganization or UZCorePractitionerRole)
 
+* performer MS
+  * actor MS
+  * actor only Reference(UZCorePractitionerRole)
+
 * requestedPeriod MS
   * ^short = "When execution is required"
   * start and end MS
 * executionPeriod MS
   * ^short = "Actual start and end time"
   * start and end MS
+
+* authoredOn MS
+
+* requester MS
+* requester only Reference(UZCoreOrganization)
+
+* requestedPerformer MS
+* requestedPerformer only CodeableReference(UZCoreOrganization)
+
+* note MS
 
 * obeys uzcore-tsk-1
 
