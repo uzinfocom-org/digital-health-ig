@@ -16,10 +16,12 @@ jobs:
         run: sudo npm install -g fsh-sushi
 
       - name: Generate resources
+        id: sushi
         run: sushi .
 
       - name: Check every artifact version is MAJOR.MINOR.PATCH
         run: python3 .github/scripts/check_artifact_versions.py
 
       - name: Check code system and value set titles follow the naming pattern
+        if: ${{ !cancelled() && steps.sushi.outcome == 'success' }}
         run: python3 .github/scripts/check_terminology_titles.py

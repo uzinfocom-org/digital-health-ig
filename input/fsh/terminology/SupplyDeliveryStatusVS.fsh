@@ -1,7 +1,7 @@
 ValueSet: SupplyDeliveryStatusVS
 Id: supply-delivery-status-vs
-Title: "Supply delivery status"
-Description: "Supply delivery statuses"
+Title: "SupplyDelivery status"
+Description: "SupplyDelivery statuses"
 * ^url = "https://terminology.dhp.uz/fhir/core/ValueSet/supply-delivery-status-vs"
 * ^experimental = true
 * ^language = #uz

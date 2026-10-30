@@ -1,7 +1,7 @@
 CodeSystem: EncounterReasonUseCS
 Id: encounter-reason-use-cs
 Title: "Encounter reason use"
-Description: "Encounter reason use codes with English and Russian translations"
+Description: "Encounter reason uses in Uzbekistan"
 * ^url = "https://terminology.dhp.uz/fhir/core/CodeSystem/encounter-reason-use-cs"
 * ^experimental = true
 * ^status = #active

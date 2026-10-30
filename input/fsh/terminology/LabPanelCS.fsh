@@ -1,6 +1,6 @@
 CodeSystem: LabPanelCS
 Id: lab-pan-cs
-Title: "Laboratory observation panels and analytes"
+Title: "Laboratory observation panels and analytes (Order No. 399)"
 Description: "Laboratory observation panels and individual analytes used in Ministry of Health Uzbekistan (399)."
 * insert OriginalCodeSystemDraft(lab-pan-cs)
 // The nesting below expresses the panel/analyte hierarchy, but nesting lives on the CodeSystem and

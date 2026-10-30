@@ -1,7 +1,7 @@
 CodeSystem: RecommendationforecastStatusCS
 Id: recommendation-forecast-status-cs
-Title: "Immunization recommendation forecast status translations"
-Description: "Immunization recommendation forecast status supplement with translations in Uzbek and Russian"
+Title: "ImmunizationRecommendation forecast status translations"
+Description: "ImmunizationRecommendation forecast status supplement with translations in Uzbek and Russian"
 * insert SupplementCodeSystemDraft(recommendation-forecast-status-cs, $immunization-recommendation-status, 0.1.0)
 
 * #due "Due"

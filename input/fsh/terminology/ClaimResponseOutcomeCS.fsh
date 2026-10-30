@@ -1,7 +1,7 @@
 CodeSystem: ClaimResponseOutcomeCS
 Id: claim-response-outcome-cs
-Title: "Claim response outcome translations"
-Description: "Claim response outcome supplement with translations in Uzbek and Russian"
+Title: "ClaimResponse outcome translations"
+Description: "ClaimResponse outcome supplement with translations in Uzbek and Russian"
 
 * insert SupplementCodeSystemDraft(claim-response-outcome-cs, $claim-response-outcome, 5.0.0)
 

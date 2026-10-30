@@ -1,7 +1,7 @@
 ValueSet: ClaimResponseCategoryVS
 Id: claim-response-category-vs
-Title: "Claim response category"
-Description: "Claim response categories"
+Title: "ClaimResponse category"
+Description: "ClaimResponse categories"
 
 * ^url = "https://terminology.dhp.uz/fhir/core/ValueSet/claim-response-category-vs"
 * ^experimental = true

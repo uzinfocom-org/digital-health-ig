@@ -1,7 +1,7 @@
 CodeSystem: SignatureTypeCS
 Id: signature-type-cs
 Title: "Signature type"
-Description: "Defines the possible Provenance signature types."
+Description: "Provenance signature types in Uzbekistan"
 * insert OriginalCodeSystemDraft(signature-type-cs)
 * #biometricAuth "biometrik autentifikatsiya"
   * ^designation[0].language = #ru

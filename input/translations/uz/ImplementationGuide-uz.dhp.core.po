@@ -458,77 +458,77 @@ msgstr ""
 
 # ImplementationGuide.definition.resource.name
 #: ImplementationGuide.definition.resource.name
-msgid "Audit event action"
-msgstr "Audit event action"
+msgid "AuditEvent action"
+msgstr "AuditEvent harakati"
 
 # ImplementationGuide.definition.resource.description
 #: ImplementationGuide.definition.resource.description
-msgid "Audit event actions"
-msgstr "Audit hodisasi harakatlari"
+msgid "AuditEvent actions"
+msgstr "AuditEvent harakatlari"
 
 # ImplementationGuide.definition.resource.name
 #: ImplementationGuide.definition.resource.name
-msgid "Audit event action translations"
-msgstr "Audit event action translations"
+msgid "AuditEvent action translations"
+msgstr "AuditEvent harakati tarjimalari"
 
 # ImplementationGuide.definition.resource.description
 #: ImplementationGuide.definition.resource.description
-msgid "Audit event action supplement with translations in Uzbek and Russian"
+msgid "AuditEvent action supplement with translations in Uzbek and Russian"
 msgstr ""
 "Audit hodisasi harakati bo‘yicha o‘zbek va rus tillaridagi tarjimalarni "
 "o‘zichiga olgan qo‘shimcha to‘plam"
 
 # ImplementationGuide.definition.resource.name
 #: ImplementationGuide.definition.resource.name
-msgid "Audit event outcome"
-msgstr "Audit event outcome"
+msgid "AuditEvent outcome"
+msgstr "AuditEvent natijasi"
 
 # ImplementationGuide.definition.resource.description
 #: ImplementationGuide.definition.resource.description
-msgid "Audit event outcomes"
-msgstr "Audit hodisasi natijalari"
+msgid "AuditEvent outcomes"
+msgstr "AuditEvent natijalari"
 
 # ImplementationGuide.definition.resource.name
 #: ImplementationGuide.definition.resource.name
-msgid "Audit event outcome translations"
-msgstr "Audit event outcome translations"
+msgid "AuditEvent outcome translations"
+msgstr "AuditEvent natijasi tarjimalari"
 
 # ImplementationGuide.definition.resource.description
 #: ImplementationGuide.definition.resource.description
-msgid "Audit event outcome supplement with translations in Uzbek and Russian"
+msgid "AuditEvent outcome supplement with translations in Uzbek and Russian"
 msgstr ""
 "Audit hodisasi natijasiga oid o‘zbek va rus tillaridagi tarjimalarni "
 "o‘zichiga olgan qo‘shimcha to‘plam"
 
 # ImplementationGuide.definition.resource.name
 #: ImplementationGuide.definition.resource.name
-msgid "Audit event role type"
-msgstr "Audit event role type"
+msgid "AuditEvent role type"
+msgstr "AuditEvent rol turi"
 
 # ImplementationGuide.definition.resource.description
 #: ImplementationGuide.definition.resource.description
-msgid "Audit event role types"
-msgstr "Audit hodisasidagi rol turlari"
+msgid "AuditEvent role types"
+msgstr "AuditEvent rol turlari"
 
 # ImplementationGuide.definition.resource.name
 #: ImplementationGuide.definition.resource.name
-msgid "Audit event subtype"
-msgstr "Audit event subtype"
+msgid "AuditEvent subtype"
+msgstr "AuditEvent ost turi"
 
 # ImplementationGuide.definition.resource.description
 #: ImplementationGuide.definition.resource.description
-msgid "Audit event subtypes"
-msgstr "Audit hodisasi ostturlari"
+msgid "AuditEvent subtypes"
+msgstr "AuditEvent ost turlari"
 
 # ImplementationGuide.definition.resource.name
 #: ImplementationGuide.definition.resource.name
-msgid "Audit event type"
-msgstr "Audit event type"
+msgid "AuditEvent type"
+msgstr "AuditEvent turi"
 
 # ImplementationGuide.definition.resource.description
 #: ImplementationGuide.definition.resource.description
-msgid "Audit event types"
-msgstr "Audit hodisasi turlari"
+msgid "AuditEvent types"
+msgstr "AuditEvent turlari"
 
 # ImplementationGuide.definition.resource.name
 #: ImplementationGuide.definition.resource.name
@@ -629,13 +629,13 @@ msgstr ""
 
 # ImplementationGuide.definition.resource.name
 #: ImplementationGuide.definition.resource.name
-msgid "Categories of cancer-related services"
-msgstr "Categories of cancer-related services"
+msgid "Cancer-related service category"
+msgstr "Onkologik xizmat toifasi"
 
 # ImplementationGuide.definition.resource.description
 #: ImplementationGuide.definition.resource.description
-msgid "Defines categories of cancer-related services in Uzbek and Russian"
-msgstr ""
+msgid "Cancer-related service categories"
+msgstr "Onkologik xizmat toifalari"
 "Saraton bilan bog‘liq xizmatlar toifalarini o‘zbek va rus tillaridabelgilaydi"
 
 # ImplementationGuide.definition.resource.name
@@ -1101,6 +1101,16 @@ msgstr "DMED vaksina kodlari"
 
 # ImplementationGuide.definition.resource.name
 #: ImplementationGuide.definition.resource.name
+msgid "DMED vaccines"
+msgstr "DMED vaksinalari"
+
+# ImplementationGuide.definition.resource.name
+#: ImplementationGuide.definition.resource.name
+msgid "DMED vaccine"
+msgstr "DMED vaksinasi"
+
+# ImplementationGuide.definition.resource.name
+#: ImplementationGuide.definition.resource.name
 msgid "Education levels"
 msgstr "Education levels"
 
@@ -1112,12 +1122,12 @@ msgstr "O‘zbekistondagi ta’lim darajalari"
 # ImplementationGuide.definition.resource.name
 #: ImplementationGuide.definition.resource.name
 msgid "Encounter readmission translations"
-msgstr "Encounter readmission translations"
+msgstr "Encounter qayta qabul qilish tarjimalari"
 
 # ImplementationGuide.definition.resource.description
 #: ImplementationGuide.definition.resource.description
-msgid "Encounter readmissions"
-msgstr "Encounter qayta qabul qilishlari"
+msgid "Encounter readmission indicators"
+msgstr "Encounter qayta qabul qilish belgilari"
 
 # ImplementationGuide.definition.resource.description
 #: ImplementationGuide.definition.resource.description
@@ -1265,8 +1275,8 @@ msgstr ""
 
 # ImplementationGuide.definition.resource.description
 #: ImplementationGuide.definition.resource.description
-msgid "Encounter reason use codes with Uzbek and Russian translations"
-msgstr ""
+msgid "Encounter reason uses"
+msgstr "Encounter sababidan foydalanish turlari"
 "Tibbiy murojaat sababi kodlari o'zbek va rus tillaridagi tarjimalari bilan"
 
 # ImplementationGuide.definition.resource.name
@@ -1276,8 +1286,8 @@ msgstr "Encounter sababi qo'llanilishi"
 
 # ImplementationGuide.definition.resource.description
 #: ImplementationGuide.definition.resource.description
-msgid "Encounter reason use codes with English and Russian translations"
-msgstr ""
+msgid "Encounter reason uses in Uzbekistan"
+msgstr "O‘zbekistondagi Encounter sababidan foydalanish turlari"
 "Tibbiy murojaat sababi kodlari ingliz va rus tillaridagi tarjimalari bilan"
 
 # ImplementationGuide.definition.resource.name
@@ -1342,8 +1352,8 @@ msgstr ""
 
 # ImplementationGuide.definition.resource.description
 #: ImplementationGuide.definition.resource.description
-msgid "Episode of care reason use in Uzbekistan"
-msgstr ""
+msgid "EpisodeOfCare reason uses in Uzbekistan"
+msgstr "O‘zbekistondagi EpisodeOfCare sababidan foydalanish turlari"
 "O‘zbekistonda EpisodeOfCare sababi qo‘llanilishi"
 
 # ImplementationGuide.definition.resource.description
@@ -1399,8 +1409,8 @@ msgstr "EpisodeOfCare turlari"
 
 # ImplementationGuide.definition.resource.description
 #: ImplementationGuide.definition.resource.description
-msgid "Episode of care types in Uzbekistan"
-msgstr ""
+msgid "EpisodeOfCare types in Uzbekistan"
+msgstr "O‘zbekistondagi EpisodeOfCare turlari"
 "O‘zbekistonda EpisodeOfCare turlari"
 
 # ImplementationGuide.definition.resource.name
@@ -2000,7 +2010,7 @@ msgstr ""
 # ImplementationGuide.definition.resource.name
 #: ImplementationGuide.definition.resource.name
 msgid "Foreign driver's license system"
-msgstr "Chet el haydovchilik guvohnomasi tizimlari"
+msgstr "Chet el haydovchilik guvohnomasi tizimi"
 
 # ImplementationGuide.definition.resource.description
 #: ImplementationGuide.definition.resource.description
@@ -2017,7 +2027,7 @@ msgstr ""
 # ImplementationGuide.definition.resource.name
 #: ImplementationGuide.definition.resource.name
 msgid "Foreign passport system"
-msgstr "Chet el pasporti tizimlari"
+msgstr "Chet el pasporti tizimi"
 
 # ImplementationGuide.definition.resource.description
 #: ImplementationGuide.definition.resource.description
@@ -2250,8 +2260,8 @@ msgstr "Vaksinatsiya kelib chiqish manbalari"
 
 # ImplementationGuide.definition.resource.name
 #: ImplementationGuide.definition.resource.name
-msgid "Immunization recommendation reason translations"
-msgstr "Vaksinatsiya tavsiyasi sababi tarjimalari"
+msgid "ImmunizationRecommendation reason translations"
+msgstr "ImmunizationRecommendation sababi tarjimalari"
 
 # ImplementationGuide.definition.resource.description
 #: ImplementationGuide.definition.resource.description
@@ -2278,7 +2288,7 @@ msgstr ""
 
 # ImplementationGuide.definition.resource.name
 #: ImplementationGuide.definition.resource.name
-msgid "Immunization recommendation date criterion translations"
+msgid "ImmunizationRecommendation date criterion translations"
 msgstr ""
 "Vaksinatsiya tavsiyasining sana mezoni tarjimalari"
 
@@ -2293,17 +2303,17 @@ msgstr ""
 
 # ImplementationGuide.definition.resource.name
 #: ImplementationGuide.definition.resource.name
-msgid "Immunization recommendation date criterion"
-msgstr "Vaksinatsiya tavsiyasining sana mezoni"
+msgid "ImmunizationRecommendation date criterion"
+msgstr "ImmunizationRecommendation sana mezoni"
 
 # ImplementationGuide.definition.resource.description
 #: ImplementationGuide.definition.resource.description
-msgid "Immunization recommendation date criteria"
-msgstr "Vaksinatsiya tavsiyasining sana mezonlari"
+msgid "ImmunizationRecommendation date criteria"
+msgstr "ImmunizationRecommendation sana mezonlari"
 
 # ImplementationGuide.definition.resource.name
 #: ImplementationGuide.definition.resource.name
-msgid "Immunization recommendation forecast status translations"
+msgid "ImmunizationRecommendation forecast status translations"
 msgstr ""
 "Vaksinatsiya tavsiyasining prognoz holati tarjimalari"
 
@@ -2318,23 +2328,23 @@ msgstr ""
 
 # ImplementationGuide.definition.resource.name
 #: ImplementationGuide.definition.resource.name
-msgid "Immunization recommendation forecast status"
-msgstr "Vaksinatsiya tavsiyasining prognoz holati"
+msgid "ImmunizationRecommendation forecast status"
+msgstr "ImmunizationRecommendation prognoz holati"
 
 # ImplementationGuide.definition.resource.description
 #: ImplementationGuide.definition.resource.description
-msgid "Immunization recommendation forecast statuses"
-msgstr "Vaksinatsiya tavsiyasining prognoz holatlari"
+msgid "ImmunizationRecommendation forecast statuses"
+msgstr "ImmunizationRecommendation prognoz holatlari"
 
 # ImplementationGuide.definition.resource.name
 #: ImplementationGuide.definition.resource.name
-msgid "Immunization recommendation reason"
-msgstr "Vaksinatsiya tavsiyasi sababi"
+msgid "ImmunizationRecommendation reason"
+msgstr "ImmunizationRecommendation sababi"
 
 # ImplementationGuide.definition.resource.description
 #: ImplementationGuide.definition.resource.description
-msgid "Immunization recommendation reasons"
-msgstr "Vaksinatsiya tavsiyasi sabablari"
+msgid "ImmunizationRecommendation reasons"
+msgstr "ImmunizationRecommendation sabablari"
 
 # ImplementationGuide.definition.resource.name
 #: ImplementationGuide.definition.resource.name
@@ -2500,6 +2510,11 @@ msgstr ""
 msgid "Laboratory observation panels and analytes"
 msgstr "Laboratoriya tekshiruvlari panellari va analitlari"
 
+# ImplementationGuide.definition.resource.name
+#: ImplementationGuide.definition.resource.name
+msgid "Laboratory observation panels and analytes (Order No. 399)"
+msgstr "Laboratoriya tekshiruvlari panellari va analitlari (399-son buyruq)"
+
 # ImplementationGuide.definition.resource.description
 #: ImplementationGuide.definition.resource.description
 msgid ""
@@ -2520,7 +2535,7 @@ msgstr ""
 # ImplementationGuide.definition.resource.name
 #: ImplementationGuide.definition.resource.name
 msgid "Laboratory service category"
-msgstr "Laboratoriya xizmatlari toifalari"
+msgstr "Laboratoriya xizmati toifasi"
 
 # ImplementationGuide.definition.resource.description
 #: ImplementationGuide.definition.resource.description
@@ -2567,12 +2582,12 @@ msgstr ""
 # ImplementationGuide.definition.resource.name
 #: ImplementationGuide.definition.resource.name
 msgid "Location kind"
-msgstr "Joylashuv turlari"
+msgstr "Joylashuv turi"
 
 # ImplementationGuide.definition.resource.description
 #: ImplementationGuide.definition.resource.description
-msgid "Defines the kind of Location in Uzbek and Russian"
-msgstr "Joylashuv turini o‘zbek va rus tillarida belgilaydi"
+msgid "Location kinds"
+msgstr "Joylashuv turlari"
 
 # ImplementationGuide.definition.resource.name
 #: ImplementationGuide.definition.resource.name
@@ -2628,7 +2643,7 @@ msgstr ""
 
 # ImplementationGuide.definition.resource.name
 #: ImplementationGuide.definition.resource.name
-msgid "Mahalla COATO codes and names"
+msgid "Mahalla SOATO codes and names"
 msgstr "Mahallalarning SOATO bo‘yicha kodlari va nomlari"
 
 # ImplementationGuide.definition.resource.description
@@ -2657,8 +2672,8 @@ msgstr "Mahalla"
 
 # ImplementationGuide.definition.resource.description
 #: ImplementationGuide.definition.resource.description
-msgid "Mahallas names with English and Russian translations"
-msgstr "Mahalla nomlari ingliz va rus tillaridagi tarjimalari bilan"
+msgid "Mahallas"
+msgstr "Mahallalar"
 
 # ImplementationGuide.definition.resource.name
 #: ImplementationGuide.definition.resource.name
@@ -2909,7 +2924,7 @@ msgstr ""
 # ImplementationGuide.definition.resource.name
 #: ImplementationGuide.definition.resource.name
 msgid "Organization group types of Uzbekistan"
-msgstr ""
+msgstr "O‘zbekistondagi Organization guruhlari turlari"
 "O‘zbekistondagi Organization guruh turlari"
 
 # ImplementationGuide.definition.resource.name
@@ -3448,7 +3463,7 @@ msgstr "Tibbiyot kasblarining ixtisosliklarini belgilaydi"
 # ImplementationGuide.definition.resource.name
 #: ImplementationGuide.definition.resource.name
 msgid "Provenance activity type"
-msgstr "Provenance activity type"
+msgstr "Provenance faoliyat turi"
 
 # ImplementationGuide.definition.resource.description
 #: ImplementationGuide.definition.resource.description
@@ -3493,12 +3508,12 @@ msgstr ""
 # ImplementationGuide.definition.resource.name
 #: ImplementationGuide.definition.resource.name
 msgid "Provenance participation role type"
-msgstr "Provenance participation role type"
+msgstr "Provenance ishtirok roli turi"
 
 # ImplementationGuide.definition.resource.name
 #: ImplementationGuide.definition.resource.name
 msgid "Provenance participation role type translations"
-msgstr "Provenance participation role type translations"
+msgstr "Provenance ishtirok roli turi tarjimalari"
 
 # ImplementationGuide.definition.resource.description
 #: ImplementationGuide.definition.resource.description
@@ -3631,7 +3646,7 @@ msgstr "O‘zbekistondagi aloqa turlari"
 # ImplementationGuide.definition.resource.description
 #: ImplementationGuide.definition.resource.description
 msgid "Relationship types"
-msgstr "O‘zbekistondagi aloqa turlari"
+msgstr "Aloqa turlari"
 
 # ImplementationGuide.definition.resource.name
 #: ImplementationGuide.definition.resource.name
@@ -3765,8 +3780,8 @@ msgstr "Signature type"
 
 # ImplementationGuide.definition.resource.description
 #: ImplementationGuide.definition.resource.description
-msgid "Defines the possible Provenance signature types."
-msgstr "Kelib chiqish (Provenance) imzo turlarini belgilaydi"
+msgid "Provenance signature types"
+msgstr "Provenance imzo turlari"
 
 # ImplementationGuide.definition.resource.name
 #: ImplementationGuide.definition.resource.name
@@ -3796,7 +3811,7 @@ msgstr "O‘zbekistondagi ijtimoiy holat turlari"
 # ImplementationGuide.definition.resource.name
 #: ImplementationGuide.definition.resource.name
 msgid "Socioeconomic observation code"
-msgstr "Socioeconomic observation code"
+msgstr "Ijtimoiy-iqtisodiy Observation kodi"
 
 # ImplementationGuide.definition.resource.description
 #: ImplementationGuide.definition.resource.description
@@ -3894,7 +3909,7 @@ msgstr ""
 # ImplementationGuide.definition.resource.name
 #: ImplementationGuide.definition.resource.name
 msgid "Specimen type"
-msgstr "Namuna turlari"
+msgstr "Namuna turi"
 
 # ImplementationGuide.definition.resource.name
 #: ImplementationGuide.definition.resource.name
@@ -4105,7 +4120,7 @@ msgstr "Telecom use translations"
 # ImplementationGuide.definition.resource.description
 #: ImplementationGuide.definition.resource.description
 msgid "Telecom uses"
-msgstr "O‘zbekistondagi telekommunikatsiya foydalanish turlari"
+msgstr "Telekommunikatsiyadan foydalanish turlari"
 
 # ImplementationGuide.definition.resource.description
 #: ImplementationGuide.definition.resource.description
@@ -4122,7 +4137,7 @@ msgstr "Triggered by type"
 # ImplementationGuide.definition.resource.description
 #: ImplementationGuide.definition.resource.description
 msgid "Triggered by types"
-msgstr "O‘zbekistondagi ishga tushirish turlari"
+msgstr "Ishga tushirish turlari"
 
 # ImplementationGuide.definition.resource.name
 #: ImplementationGuide.definition.resource.name
@@ -4138,17 +4153,17 @@ msgstr ""
 # ImplementationGuide.definition.resource.name
 #: ImplementationGuide.definition.resource.name
 msgid "Action relationship type"
-msgstr "Harakatlar o‘rtasidagi munosabat turlari"
+msgstr "Harakatlar o‘rtasidagi munosabat turi"
 
 # ImplementationGuide.definition.resource.description
 #: ImplementationGuide.definition.resource.description
 msgid "Action relationship types"
-msgstr "O‘zbekistonda harakatlar o‘rtasidagi munosabat turlari"
+msgstr "Harakatlar o‘rtasidagi munosabat turlari"
 
 # ImplementationGuide.definition.resource.name
 #: ImplementationGuide.definition.resource.name
 msgid "Address registration type"
-msgstr "Address registration type"
+msgstr "Manzil ro‘yxatga olish turi"
 
 # ImplementationGuide.definition.resource.description
 #: ImplementationGuide.definition.resource.description
@@ -4158,22 +4173,22 @@ msgstr "Manzilni ro'yxatdan o'tkazish turlari"
 # ImplementationGuide.definition.resource.name
 #: ImplementationGuide.definition.resource.name
 msgid "AdverseEvent actuality"
-msgstr "AdverseEvent yuz berganlik holati turlari"
+msgstr "AdverseEvent yuz berganlik holati"
 
 # ImplementationGuide.definition.resource.description
 #: ImplementationGuide.definition.resource.description
 msgid "AdverseEvent actualities"
-msgstr "O‘zbekistonda AdverseEvent yuz berganlik holati turlari"
+msgstr "AdverseEvent yuz berganlik holatlari"
 
 # ImplementationGuide.definition.resource.name
 #: ImplementationGuide.definition.resource.name
 msgid "AdverseEvent outcome"
-msgstr "AdverseEvent natijasi turlari"
+msgstr "AdverseEvent natijasi"
 
 # ImplementationGuide.definition.resource.description
 #: ImplementationGuide.definition.resource.description
 msgid "AdverseEvent outcomes"
-msgstr "O‘zbekistonda AdverseEvent natijasi turlari"
+msgstr "AdverseEvent natijalari"
 
 # ImplementationGuide.definition.resource.name
 #: ImplementationGuide.definition.resource.name
@@ -4183,7 +4198,7 @@ msgstr "AdverseEvent jiddiylik darajasi turlari"
 # ImplementationGuide.definition.resource.description
 #: ImplementationGuide.definition.resource.description
 msgid "AdverseEvent seriousness levels"
-msgstr "O‘zbekistonda AdverseEvent jiddiylik darajasi turlari"
+msgstr "AdverseEvent jiddiylik darajalari"
 
 # ImplementationGuide.definition.resource.name
 #: ImplementationGuide.definition.resource.name
@@ -4193,17 +4208,17 @@ msgstr "AdverseEvent holati turlari"
 # ImplementationGuide.definition.resource.description
 #: ImplementationGuide.definition.resource.description
 msgid "AdverseEvent statuses"
-msgstr "O‘zbekistonda AdverseEvent holati turlari"
+msgstr "AdverseEvent holatlari"
 
 # ImplementationGuide.definition.resource.name
 #: ImplementationGuide.definition.resource.name
-msgid "Types of benefits"
-msgstr "Types of benefits"
+msgid "Benefit"
+msgstr "Imtiyoz"
 
 # ImplementationGuide.definition.resource.description
 #: ImplementationGuide.definition.resource.description
-msgid "Types of benefits in Uzbekistan"
-msgstr "O‘zbekistondagi imtiyoz turlari"
+msgid "Benefits"
+msgstr "Imtiyozlar"
 
 # ImplementationGuide.definition.resource.name
 #: ImplementationGuide.definition.resource.name
@@ -4213,32 +4228,32 @@ msgstr "Clinical status"
 # ImplementationGuide.definition.resource.description
 #: ImplementationGuide.definition.resource.description
 msgid "Clinical statuses"
-msgstr "O‘zbekistondagi klinik holat turlari"
+msgstr "Klinik holatlar"
 
 # ImplementationGuide.definition.resource.name
 #: ImplementationGuide.definition.resource.name
 msgid "Condition severity"
-msgstr "Condition og‘irlik darajasi turlari"
+msgstr "Condition og‘irlik darajasi"
 
 # ImplementationGuide.definition.resource.description
 #: ImplementationGuide.definition.resource.description
 msgid "Condition severities"
-msgstr "O‘zbekistonda Condition og‘irlik darajasi turlari"
+msgstr "Condition og‘irlik darajalari"
 
 # ImplementationGuide.definition.resource.name
 #: ImplementationGuide.definition.resource.name
 msgid "Condition participation role"
-msgstr "Condition participation role"
+msgstr "Condition ishtirok roli"
 
 # ImplementationGuide.definition.resource.description
 #: ImplementationGuide.definition.resource.description
 msgid "Condition participation roles"
-msgstr "O‘zbekistondagi ishtirok roli turlari"
+msgstr "Condition ishtirok rollari"
 
 # ImplementationGuide.definition.resource.name
 #: ImplementationGuide.definition.resource.name
 msgid "Address type"
-msgstr "Address type"
+msgstr "Manzil turi"
 
 # ImplementationGuide.definition.resource.description
 #: ImplementationGuide.definition.resource.description
@@ -4248,7 +4263,7 @@ msgstr "Manzil turlari"
 # ImplementationGuide.definition.resource.name
 #: ImplementationGuide.definition.resource.name
 msgid "Contact point system"
-msgstr "Contact point system"
+msgstr "Aloqa ma'lumotlari turi"
 
 # ImplementationGuide.definition.resource.description
 #: ImplementationGuide.definition.resource.description
@@ -4270,7 +4285,7 @@ msgstr ""
 # ImplementationGuide.definition.resource.name
 #: ImplementationGuide.definition.resource.name
 msgid "Identifier use"
-msgstr "Identifier use"
+msgstr "Identifikatordan foydalanish turi"
 
 # ImplementationGuide.definition.resource.description
 #: ImplementationGuide.definition.resource.description
@@ -4280,7 +4295,7 @@ msgstr "Identifikatordan foydalanish turlari"
 # ImplementationGuide.definition.resource.name
 #: ImplementationGuide.definition.resource.name
 msgid "Identifier type"
-msgstr "Identifier type"
+msgstr "Identifikator turi"
 
 # ImplementationGuide.definition.resource.description
 #: ImplementationGuide.definition.resource.description
@@ -4290,7 +4305,7 @@ msgstr "Identifikator turlari"
 # ImplementationGuide.definition.resource.name
 #: ImplementationGuide.definition.resource.name
 msgid "Name use"
-msgstr "Name use"
+msgstr "Ismdan foydalanish turi"
 
 # ImplementationGuide.definition.resource.description
 #: ImplementationGuide.definition.resource.description
@@ -4299,8 +4314,8 @@ msgstr "Ismdan foydalanish turlari"
 
 # ImplementationGuide.definition.resource.name
 #: ImplementationGuide.definition.resource.name
-msgid "Types of verification status"
-msgstr "Types of verification status"
+msgid "Verification status"
+msgstr "Tasdiqlash holati"
 
 # ImplementationGuide.definition.resource.name
 #: ImplementationGuide.definition.resource.name
@@ -4309,13 +4324,13 @@ msgstr "Condition verification status"
 
 # ImplementationGuide.definition.resource.description
 #: ImplementationGuide.definition.resource.description
-msgid "Types of verification status in Uzbekistan"
-msgstr "O‘zbekistondagi tasdiqlash holati turlari"
+msgid "Verification statuses"
+msgstr "Tasdiqlash holatlari"
 
 # ImplementationGuide.definition.resource.description
 #: ImplementationGuide.definition.resource.description
 msgid "Condition verification statuses"
-msgstr "O‘zbekistondagi tasdiqlash holati turlari"
+msgstr "Condition tasdiqlash holatlari"
 
 # ImplementationGuide.definition.resource.name
 #: ImplementationGuide.definition.resource.name
@@ -4853,6 +4868,11 @@ msgstr "Observation talqinlari"
 msgid "Vaccine code"
 msgstr "Vaksina kodi"
 
+# ImplementationGuide.definition.resource.name
+#: ImplementationGuide.definition.resource.name
+msgid "Local vaccine code"
+msgstr "Mahalliy vaksina kodi"
+
 # ImplementationGuide.definition.resource.description
 #: ImplementationGuide.definition.resource.description
 msgid "Vaccine codes from CVX and the Australian Immunisation Register"
@@ -4879,8 +4899,8 @@ msgstr ""
 
 # ImplementationGuide.definition.resource.description
 #: ImplementationGuide.definition.resource.description
-msgid "Verification status in Uzbekistan"
-msgstr "O‘zbekistondagi tasdiqlash holati"
+msgid "Verification statuses in Uzbekistan"
+msgstr "O‘zbekistondagi tasdiqlash holatlari"
 
 # ImplementationGuide.definition.resource.name
 #: ImplementationGuide.definition.resource.name
@@ -5053,8 +5073,8 @@ msgstr "2026-yilning birinchi choragida poliklinikada qizamiqqa qarshi vaksina o
 
 # ImplementationGuide.definition.resource.description
 #: ImplementationGuide.definition.resource.description
-msgid "Kinds of characteristics used to include or exclude members of a group, drawn from LOINC and local codes, with Uzbek and Russian translations"
-msgstr "Guruh a'zolarini qo'shish yoki chiqarib tashlash uchun ishlatiladigan xususiyat turlari, LOINC va mahalliy kodlardan olingan, o'zbek va rus tillariga tarjimalari bilan"
+msgid "Kinds of characteristics used to include or exclude members of a group, drawn from LOINC and local codes"
+msgstr "Guruh a'zolarini qo'shish yoki chiqarib tashlash uchun ishlatiladigan xususiyat turlari, LOINC va mahalliy kodlardan olingan"
 
 # ImplementationGuide.definition.resource.description
 #: ImplementationGuide.definition.resource.description
@@ -5114,3 +5134,58 @@ msgstr "Faqat ikki viloyatda qo'llaniladigan 2-tip qandli diabet skrining jadval
 #: ImplementationGuide.definition.resource.description
 msgid "Example age-based national immunization schedule, showing the focus, category and jurisdiction use contexts, the vaccination actions, their timing, and the relationship between two doses."
 msgstr "Yoshga asoslangan milliy emlash jadvali namunasi: focus, toifa va jurisdiction foydalanish kontekstlari, emlash action lari, ularning vaqti hamda ikki doza orasidagi bog'liqlik ko'rsatilgan."
+
+# ImplementationGuide.definition.resource.name
+#: ImplementationGuide.definition.resource.name
+msgid "Procedure event status"
+msgstr "Procedure hodisasi holati"
+
+# ImplementationGuide.definition.resource.name
+#: ImplementationGuide.definition.resource.name
+msgid "Participant resource type"
+msgstr "Ishtirokchi resurs turi"
+
+# ImplementationGuide.definition.resource.name
+#: ImplementationGuide.definition.resource.name
+msgid "DiagnosticReport status"
+msgstr "DiagnosticReport holati"
+
+# ImplementationGuide.definition.resource.description
+#: ImplementationGuide.definition.resource.description
+msgid "DiagnosticReport statuses"
+msgstr "DiagnosticReport holatlari"
+
+# ImplementationGuide.definition.resource.name
+#: ImplementationGuide.definition.resource.name
+msgid "DiagnosticReport status translations"
+msgstr "DiagnosticReport holati tarjimalari"
+
+# ImplementationGuide.definition.resource.description
+#: ImplementationGuide.definition.resource.description
+msgid "Provenance participation role types"
+msgstr "Provenance ishtirok roli turlari"
+
+# ImplementationGuide.definition.resource.name
+#: ImplementationGuide.definition.resource.name
+msgid "Encounter readmission"
+msgstr "Encounter qayta qabul qilish"
+
+# ImplementationGuide.definition.resource.description
+#: ImplementationGuide.definition.resource.description
+msgid "Group characteristic kind supplement with translations in Uzbek and Russian"
+msgstr "Guruh xususiyati turi qo‘shimchasi, o‘zbek va rus tillaridagi tarjimalari bilan"
+
+# ImplementationGuide.definition.resource.description
+#: ImplementationGuide.definition.resource.description
+msgid "Location kinds in Uzbekistan"
+msgstr "O‘zbekistondagi joylashuv turlari"
+
+# ImplementationGuide.definition.resource.description
+#: ImplementationGuide.definition.resource.description
+msgid "Provenance signature types in Uzbekistan"
+msgstr "O‘zbekistondagi Provenance imzo turlari"
+
+# ImplementationGuide.definition.resource.description
+#: ImplementationGuide.definition.resource.description
+msgid "Benefits in Uzbekistan"
+msgstr "O‘zbekistondagi imtiyozlar"

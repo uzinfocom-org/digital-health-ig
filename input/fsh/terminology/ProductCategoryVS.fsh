@@ -1,7 +1,7 @@
 ValueSet: ProductCategoryVS
 Id: product-category-vs
-Title: "Product category"
-Description: "Product categories"
+Title: "BiologicallyDerivedProduct category"
+Description: "BiologicallyDerivedProduct categories"
 * ^url = "https://terminology.dhp.uz/fhir/core/ValueSet/product-category-vs"
 * ^experimental = true
 * ^language = #uz

@@ -1,7 +1,7 @@
 ValueSet: ReasonMedicationGivenVS
 Id: reason-medication-given-vs
 Title: "Reason medication given"
-Description: "Reasons medication given"
+Description: "Reasons a medication was given"
 * ^url = "https://terminology.dhp.uz/fhir/core/ValueSet/reason-medication-given-vs"
 
 * ^experimental = true

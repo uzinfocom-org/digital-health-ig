@@ -1,7 +1,7 @@
 ValueSet: MedicationTotalVolumeUnitsVS
 Id: medication-total-volume-units-vs
-Title: "Medication total volume UCUM unit"
-Description: "Medication total volume UCUM units"
+Title: "Medication total volume unit"
+Description: "Medication total volume units"
 * ^url = "https://terminology.dhp.uz/fhir/core/ValueSet/medication-total-volume-units-vs"
 * ^experimental = true
 * ^language = #uz

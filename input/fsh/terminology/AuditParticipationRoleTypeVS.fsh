@@ -1,7 +1,7 @@
 ValueSet: AuditParticipationRoleTypeVS
 Id: audit-participation-role-type-vs
-Title: "Audit event role type"
-Description: "Audit event role types"
+Title: "AuditEvent role type"
+Description: "AuditEvent role types"
 * ^experimental = true
 * ^url = "https://terminology.dhp.uz/fhir/core/ValueSet/audit-participation-role-type-vs"
 * ^language = #uz
