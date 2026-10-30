@@ -16,14 +16,14 @@ This profile adds no mandatory elements of its own. The base DeviceUsage resourc
 
 - an identifier for the statement, always sent with its `system`;
 - `basedOn` - the [ServiceRequest](StructureDefinition-uz-core-servicerequest.html) that ordered the device;
-- `category` - the setting of the use, from the [device usage category value set](ValueSet-deviceusage-category-vs.html) (example binding);
+- `category` - the setting of the use, from the [device usage category value set](ValueSet-deviceusage-category-vs.html) (preferred binding);
 - `timing[x]` - when the device is used: a `dateTime`, a `Period` or a `Timing`;
 - `dateAsserted` - when the statement was made;
 - `usageStatus` and `usageReason` - the status of the use itself, as opposed to the status of the statement, and why it has that status;
-- `adherence` - how regularly the device is used ([adherence codes](ValueSet-deviceusage-adherence-code-vs.html)), with a reason ([adherence reasons](ValueSet-deviceusage-adherence-reason-vs.html)) (example bindings);
+- `adherence` - how regularly the device is used ([adherence codes](ValueSet-deviceusage-adherence-code-vs.html)), with a reason ([adherence reasons](ValueSet-deviceusage-adherence-reason-vs.html)) (preferred bindings);
 - `informationSource` - who reported the use: Patient, Practitioner, PractitionerRole, RelatedPerson or Organization, all UZ Core profiles;
 - `reason` - why the device is used, as a concept or a reference to a UZ Core Condition, Observation or DiagnosticReport;
-- `bodySite` - where on the body the device is used, from the [body site value set](ValueSet-body-site-vs.html) (example binding);
+- `bodySite` - where on the body the device is used, from the [body site value set](ValueSet-body-site-vs.html) (preferred binding);
 - `note`.
 
 ### Building the JSON, step by step

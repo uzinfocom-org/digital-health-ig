@@ -18,14 +18,14 @@ UZ Core DeviceUsage фиксирует, что пациент используе
 
 - идентификатор утверждения, всегда передаваемый вместе с его `system`;
 - `basedOn` - [ServiceRequest](StructureDefinition-uz-core-servicerequest.html), которым изделие было назначено;
-- `category` - условия использования из [набора значений категорий использования изделия](ValueSet-deviceusage-category-vs.html) (связка example);
+- `category` - условия использования из [набора значений категорий использования изделия](ValueSet-deviceusage-category-vs.html) (связка preferred);
 - `timing[x]` - когда изделие используется: `dateTime`, `Period` или `Timing`;
 - `dateAsserted` - когда было сделано утверждение;
 - `usageStatus` и `usageReason` - статус самого использования, в отличие от статуса утверждения, и причина этого статуса;
-- `adherence` - насколько регулярно используется изделие ([коды приверженности](ValueSet-deviceusage-adherence-code-vs.html)), с причиной ([причины приверженности](ValueSet-deviceusage-adherence-reason-vs.html)) (связки example);
+- `adherence` - насколько регулярно используется изделие ([коды приверженности](ValueSet-deviceusage-adherence-code-vs.html)), с причиной ([причины приверженности](ValueSet-deviceusage-adherence-reason-vs.html)) (связки preferred);
 - `informationSource` - кто сообщил об использовании: Patient, Practitioner, PractitionerRole, RelatedPerson или Organization, все - профили UZ Core;
 - `reason` - зачем используется изделие, как концепт или ссылка на UZ Core Condition, Observation или DiagnosticReport;
-- `bodySite` - в каком месте тела используется изделие, из [набора значений анатомических локализаций](ValueSet-body-site-vs.html) (связка example);
+- `bodySite` - в каком месте тела используется изделие, из [набора значений анатомических локализаций](ValueSet-body-site-vs.html) (связка preferred);
 - `note`.
 
 ### Сборка JSON, шаг за шагом

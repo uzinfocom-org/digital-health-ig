@@ -14,7 +14,7 @@ Description: "Uzbekistan Core DeviceUsage profile, used to record that a patient
 * status from DeviceUsageStatusVS (required)
 
 * category MS
-* category from DeviceUsageCategoryVS (example)
+* category from DeviceUsageCategoryVS (preferred)
 
 * patient MS
 * patient only Reference(UZCorePatient)
@@ -29,8 +29,8 @@ Description: "Uzbekistan Core DeviceUsage profile, used to record that a patient
 * usageReason MS
 
 * adherence MS
-  * code from DeviceUsageAdherenceCodeVS (example)
-  * reason from DeviceUsageAdherenceReasonVS (example)
+  * code from DeviceUsageAdherenceCodeVS (preferred)
+  * reason from DeviceUsageAdherenceReasonVS (preferred)
 
 * informationSource MS
 * informationSource only Reference(UZCorePatient or UZCorePractitioner or UZCorePractitionerRole or UZCoreRelatedPerson or UZCoreOrganization)
@@ -41,7 +41,7 @@ Description: "Uzbekistan Core DeviceUsage profile, used to record that a patient
 * reason only CodeableReference(UZCoreCondition or UZCoreObservation or UZCoreDiagnosticReport)
 
 * bodySite MS
-* bodySite from BodySiteVS (example)
+* bodySite from BodySiteVS (preferred)
 
 * note MS
 
