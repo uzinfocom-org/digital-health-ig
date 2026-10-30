@@ -2,6 +2,8 @@
 
 #### Added
 
+Added [UZ Core CarePlan](StructureDefinition-uz-core-careplan.html), a general profile for a plan of care for a patient over a period of time, such as nursing home patronage visits, a course of treatment or a sick leave case. A scenario-specific guide derives from it. The plan groups the requests for its planned activities and links the events that record the performed ones. Its `intent` is bound to [CarePlan intent](ValueSet-careplan-intent-vs.html) with Uzbek and Russian translations. The examples are a [newborn nursing patronage plan](CarePlan-example-newborn-patronage-careplan.html) and a [therapeutic massage course](CarePlan-example-massage-careplan.html), which replaces the placeholder `example-careplan`. Their custodians are new [patronage nurse](PractitionerRole-example-patronage-nurse-role.html) and [physiotherapist](PractitionerRole-example-physiotherapist-role.html) examples, and the physiotherapist also performs the [Procedure example](Procedure-example-procedure.html).
+
 [Composition types](CodeSystem-composition-type-cs.html) add `emdoc-0010-0471` for Order No. 399 form 112, a laboratory analysis of folic acid, 25-OH vitamin D and vitamin B12.
 
 [UZ Core Device](StructureDefinition-uz-core-device.html) describes a physical medical device - hospital equipment such as a CT scanner, or a single item such as an intrauterine device - with its SNOMED CT type and category, manufacturer, model, serial and lot numbers, status and availability, and the organization and location it belongs to. Uzbek and Russian translations of the HL7 device status, availability status, name type and category codes, and of the SNOMED CT contraceptive device types, come with it. The profile page has the narrative intro and Quick Start.
@@ -10,9 +12,13 @@
 
 #### Changed
 
+`basedOn` in [UZ Core Observation](StructureDefinition-uz-core-observation.html), [UZ Core Immunization](StructureDefinition-uz-core-immunization.html) and [UZ Core Procedure](StructureDefinition-uz-core-procedure.html) now references a UZ Core CarePlan instead of any CarePlan.
+
 Every reference to a Device in UZ Core profiles now targets [UZ Core Device](StructureDefinition-uz-core-device.html): Observation, Procedure, Condition, AdverseEvent, Composition, QuestionnaireResponse, Group, MedicationAdministration, MedicationDispense, InventoryItem, SupplyRequest and SupplyDelivery.
 
 The [FHIR types supplement](CodeSystem-fhir-types-cs.html) gave each resource type a translation of its definition in place of its name. Each type now has an Uzbek and a Russian name, such as "Bemor" and "Пациент" for `Patient`, marked `preferredForLanguage`, so `$lookup` with `displayLanguage` returns the name. The translated definitions remain as designations with the use SNOMED CT `900000000000550004` Definition.
+
+The [Procedure example](Procedure-example-procedure.html) now points at an [outpatient physiotherapy visit](Encounter-example-physiotherapy-encounter.html) and a [right foot pain](Condition-example-foot-pain.html) condition of the same patient, in place of another patient's encounter and condition.
 
 #### Breaking changes
 

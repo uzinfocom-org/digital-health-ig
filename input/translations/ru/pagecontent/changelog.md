@@ -6,13 +6,19 @@
 
 [UZ Core DeviceUsage](StructureDefinition-uz-core-deviceusage.html) фиксирует, что пациент использует, использовал или будет использовать изделие, например кресло-коляску или имплантируемый венозный порт. Изделие указывается как концепт SNOMED CT или как ссылка на [UZ Core Device](StructureDefinition-uz-core-device.html). Он фиксирует, кто сообщил об использовании, когда оно началось и закончилось, условия использования, насколько регулярно изделие используется на самом деле и зачем. Вместе с ним добавлены узбекские и русские переводы кодов HL7 статуса использования изделия и приверженности. Страница профиля содержит вводное описание и Быстрый старт.
 
+Добавлен [UZ Core CarePlan](StructureDefinition-uz-core-careplan.html) - общий профиль плана помощи пациенту на период времени, например патронажных визитов медсестры на дом, курса лечения или случая листка нетрудоспособности. Руководство для конкретного сценария наследует от него. План объединяет запросы на запланированные мероприятия и связывает события, фиксирующие выполненные. Его `intent` связан с [намерениями CarePlan](ValueSet-careplan-intent-vs.html) с переводами на узбекский и русский. Примеры: [план патронажа новорождённого](CarePlan-example-newborn-patronage-careplan.html) и [курс лечебного массажа](CarePlan-example-massage-careplan.html), который заменяет временный `example-careplan`. Их хранители - новые примеры [патронажной медсестры](PractitionerRole-example-patronage-nurse-role.html) и [врача-физиотерапевта](PractitionerRole-example-physiotherapist-role.html); физиотерапевт также выполняет [пример Procedure](Procedure-example-procedure.html).
+
 [Типы документов Composition](CodeSystem-composition-type-cs.html) дополнены кодом `emdoc-0010-0471` для формы 112 Приказа № 399 - лабораторного анализа на фолиевую кислоту, 25-OH витамин D и витамин B12.
 
 #### Изменено
 
+`basedOn` в [UZ Core Observation](StructureDefinition-uz-core-observation.html), [UZ Core Immunization](StructureDefinition-uz-core-immunization.html) и [UZ Core Procedure](StructureDefinition-uz-core-procedure.html) теперь ссылается на UZ Core CarePlan, а не на любой CarePlan.
+
 [Supplement FHIR-типов](CodeSystem-fhir-types-cs.html) давал каждому типу ресурса перевод его определения вместо названия. Теперь у каждого типа есть узбекское и русское название, например "Bemor" и "Пациент" для `Patient`, с отметкой `preferredForLanguage`, поэтому `$lookup` с `displayLanguage` возвращает название. Переведённые определения остаются обозначениями с use SNOMED CT `900000000000550004` Definition.
 
 Все ссылки на Device в профилях UZ Core теперь указывают на [UZ Core Device](StructureDefinition-uz-core-device.html): Observation, Procedure, Condition, AdverseEvent, Composition, QuestionnaireResponse, Group, MedicationAdministration, MedicationDispense, InventoryItem, SupplyRequest и SupplyDelivery.
+
+[Пример Procedure](Procedure-example-procedure.html) теперь ссылается на [амбулаторный визит на физиотерапию](Encounter-example-physiotherapy-encounter.html) и состояние [боль в правой стопе](Condition-example-foot-pain.html) того же пациента, а не на визит и состояние другого пациента.
 
 #### Несовместимые изменения
 

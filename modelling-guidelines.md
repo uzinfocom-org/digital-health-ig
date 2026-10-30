@@ -244,8 +244,6 @@ https://dhp.uz/fhir/core/sid/{namespace}/{country}/{type}[/subtype]
 // UZ Core профили существуют — указываем их
 * performer only Reference(UZCorePractitioner or UZCorePractitionerRole or UZCoreOrganization)
 * encounter only Reference(UZCoreEncounter)
-// Для CarePlan, MedicationRequest и ServiceRequest национальных профилей нет — оставляем базовые ресурсы
-* basedOn only Reference(CarePlan or MedicationRequest or ServiceRequest)
 ```
 
 ## 5) Терминологические артефакты
