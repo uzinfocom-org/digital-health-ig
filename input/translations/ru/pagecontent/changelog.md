@@ -4,6 +4,8 @@
 
 [Supplement FHIR-типов](CodeSystem-fhir-types-cs.html) давал каждому типу ресурса перевод его определения вместо названия. Теперь у каждого типа есть узбекское и русское название, например "Bemor" и "Пациент" для `Patient`, с отметкой `preferredForLanguage`, поэтому `$lookup` с `displayLanguage` возвращает название. Переведённые определения остаются обозначениями с use SNOMED CT `900000000000550004` Definition.
 
+Supplements [семейного положения](CodeSystem-marital-status-cs.html), [места иммунизации](CodeSystem-immunization-site-cs.html), [результата ответа на заявку](CodeSystem-claim-response-outcome-cs.html) и [null flavor](CodeSystem-null-flavor-cs.html) теперь повторяют дисплеи дополняемых кодовых систем. Раньше часть из них была изменена, например `W` "Widower" вместо "Widowed" и `queued` "queued" вместо "Queued". Переводы не изменились.
+
 #### Несовместимые изменения
 
 Удалены supplements типов ресурсов-запросов и типа ресурса участника, `https://terminology.dhp.uz/fhir/core/CodeSystem/request-resource-types-cs` и `https://terminology.dhp.uz/fhir/core/CodeSystem/participant-resource-type-cs`. Они переводили те же коды `http://hl7.org/fhir/fhir-types`, что и supplement FHIR-типов, поэтому у этих кодов было по два русских и два узбекских обозначения. [Типы ресурсов-запросов](ValueSet-request-resource-types-vs.html) и [Типы ресурсов](ValueSet-resource-type-vs.html) теперь используют [supplement FHIR-типов](CodeSystem-fhir-types-cs.html). Системы, загружающие supplements по URL, переходят на `https://terminology.dhp.uz/fhir/core/CodeSystem/fhir-types-cs`.
