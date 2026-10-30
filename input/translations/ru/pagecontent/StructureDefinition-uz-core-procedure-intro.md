@@ -77,9 +77,9 @@ UZ Core Procedure фиксирует действие, выполненное н
   },
   "occurrencePeriod": { "start": "2025-05-15T08:00:00Z", "end": "2025-05-15T10:00:00Z" },
   "recorded": "2025-05-19T09:30:00Z",
-  "recorder": { "reference": "PractitionerRole/example-practitionerrole" },
+  "recorder": { "reference": "PractitionerRole/example-physiotherapist-role" },
   "performer": [
-    { "actor": { "reference": "Practitioner/example-practitioner", "display": "Paul Ivanov, PT" } }
+    { "actor": { "reference": "Practitioner/example-physiotherapist", "display": "Ivanov Pavel Sergeyevich" } }
   ],
   "location": { "reference": "Location/example-location", "display": "Toshkent shahar 1-sonli shifoxona" }
 }

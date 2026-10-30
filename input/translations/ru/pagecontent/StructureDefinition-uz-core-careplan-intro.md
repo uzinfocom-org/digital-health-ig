@@ -58,7 +58,7 @@ UZ Core CarePlan описывает, как медицинские работн�
   "subject": { "reference": "Patient/example-jasur" },
   "period": { "start": "2015-06-20", "end": "2015-07-20" },
   "created": "2015-06-22T09:00:00+05:00",
-  "custodian": { "reference": "Practitioner/example-practitioner" }
+  "custodian": { "reference": "PractitionerRole/example-patronage-nurse-role" }
 }
 ```
 

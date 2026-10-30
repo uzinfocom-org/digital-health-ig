@@ -81,7 +81,7 @@ Usage: #example
 * period.start = "2015-06-20"
 * period.end = "2015-07-20"
 * created = "2015-06-22T09:00:00+05:00"
-* custodian = Reference(Practitioner/example-practitioner)
+* custodian = Reference(PractitionerRole/example-patronage-nurse-role)
 * contributor = Reference(RelatedPerson/example-mother-of-a-child)
 * activity[0].plannedActivityReference = Reference(ServiceRequest/example-nursing-newborn-home-visit-request)
 * activity[0].progress[0].time = "2015-06-22T09:00:00+05:00"
@@ -108,7 +108,7 @@ Usage: #example
 * period.end = "2025-05-15"
 * created = "2025-05-15T12:30:00+05:00"
 * addresses[0].reference = Reference(Condition/example-foot-pain)
-* custodian = Reference(Practitioner/example-practitioner)
+* custodian = Reference(PractitionerRole/example-physiotherapist-role)
 * activity[0].performedActivity.reference = Reference(Procedure/example-procedure)
 * activity[0].progress[0].time = "2025-05-15T16:00:00+05:00"
 * activity[0].progress[0].text = "Massaj seansi o'tkazildi, asoratlarsiz"

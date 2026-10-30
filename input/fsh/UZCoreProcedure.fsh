@@ -71,9 +71,9 @@ Description: "An example instance of a UZ Core Procedure profile for a therapeut
   * start = "2025-05-15T08:00:00Z"
   * end = "2025-05-15T10:00:00Z"
 * recorded = "2025-05-19T09:30:00Z"
-* recorder = Reference(example-practitionerrole) 
+* recorder = Reference(example-physiotherapist-role)
 * performer[0]
-  * actor = Reference(example-practitioner) "Paul Ivanov, PT"
+  * actor = Reference(example-physiotherapist) "Ivanov Pavel Sergeyevich"
 * location = Reference(example-location) "Toshkent shahar 1-sonli shifoxona"
 * bodySite = $sct#7769000 "Right foot"
 * reason = Reference(example-foot-pain) "Right foot pain"
@@ -91,7 +91,7 @@ Usage: #example
 * class[dhpClass] = $v3-ActCode#AMB
 * type[nationalType] = encounter-type-cs#mserv-0001-00004 "Davolash"
 * subject = Reference(example-david) "David Davidov"
-* participant.actor = Reference(Practitioner/example-practitioner)
+* participant.actor = Reference(Practitioner/example-physiotherapist)
 * actualPeriod.start = "2025-05-15T07:00:00Z"
 * actualPeriod.end = "2025-05-15T10:30:00Z"
 * reason[0].use = encounter-reason-use-cs#mserv-0002-00001 "Kasallik"
