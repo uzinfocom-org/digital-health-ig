@@ -1,3 +1,5 @@
+> **Mashina tarjimasi, inson tomonidan tekshirilishi zarur.** Ushbu sahifa ingliz tilidan sun'iy intellekt yordamida avtomatik tarjima qilingan va hali muharrir tomonidan tekshirilmagan. Har qanday nomuvofiqlikda asl inglizcha versiya ustuvor hisoblanadi.
+
 ### Tezkor boshlash {#quick-start}
 
 So'rovlar uchun JWT kirish tokeni talab qilinadi - [Xavfsizlik va autentifikatsiya](api-access.html#security) ga qarang. `[base]` - [FHIR-serverning bazaviy URL manzili](api-access.html#endpoints); tizim va kod orasidagi `|` belgisi `%7C` sifatida kodlanadi.

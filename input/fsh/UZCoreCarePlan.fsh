@@ -82,7 +82,11 @@ Usage: #example
 * period.end = "2015-07-20"
 * created = "2015-06-22T09:00:00+05:00"
 * custodian = Reference(Practitioner/example-practitioner)
+* contributor = Reference(RelatedPerson/example-mother-of-a-child)
 * activity[0].plannedActivityReference = Reference(ServiceRequest/example-nursing-newborn-home-visit-request)
+* activity[0].progress[0].time = "2015-06-22T09:00:00+05:00"
+* activity[0].progress[0].text = "3-kungi tashrif 23-iyunga belgilandi"
+* note[0].text = "15 va 30-kungi tashriflar uchun yo'llanmalar keyinroq beriladi"
 
 Instance: example-massage-careplan
 InstanceOf: UZCoreCarePlan
@@ -92,6 +96,8 @@ Usage: #example
 * language = #uz
 * text.status = #generated
 * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\" lang=\"uz\" xml:lang=\"uz\">O'ng oyoqni davolovchi massaj kursi.</div>"
+* identifier.system = $mis-dmed-uz
+* identifier.value = "CP-2025-000045"
 * status = #completed
 * intent = #order
 * category = $sct#773513001 "Physiotherapy care plan"
@@ -103,3 +109,6 @@ Usage: #example
 * created = "2025-05-14T15:00:00+05:00"
 * custodian = Reference(Practitioner/example-practitioner)
 * activity[0].performedActivity.reference = Reference(Procedure/example-procedure)
+* activity[0].progress[0].time = "2025-05-15T16:00:00+05:00"
+* activity[0].progress[0].text = "Massaj seansi o'tkazildi, asoratlarsiz"
+* note[0].text = "Kurs bitta seansdan iborat"
