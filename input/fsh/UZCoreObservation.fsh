@@ -49,7 +49,7 @@ Description: "Uzbekistan Core Observation profile, used to represent clinical an
 * specimen MS
 * specimen only Reference(UZCoreSpecimen)
 * device MS
-* device only Reference(Device or DeviceMetric)
+* device only Reference(UZCoreDevice or DeviceMetric)
 * referenceRange MS
 * referenceRange.low MS
 * referenceRange.high MS
