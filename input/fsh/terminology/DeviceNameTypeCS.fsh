@@ -1,7 +1,7 @@
 CodeSystem: DeviceNameTypeCS
 Id: device-name-type-cs
-Title: "Device Name Type Code System"
-Description: "Uzbek and Russian translations of the device name types (registered-name, user-friendly-name, patient-reported-name)"
+Title: "Device name type translations"
+Description: "Device name type supplement with translations in Uzbek and Russian"
 
 * insert SupplementCodeSystemDraft(device-name-type-cs, $device-name-type, 5.0.0)
 

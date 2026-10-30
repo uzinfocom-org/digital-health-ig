@@ -1,7 +1,7 @@
 ValueSet: DeviceCategoryVS
 Id: device-category-vs
-Title: "Device Category Value Set"
-Description: "Device category codes (active, communicating, dme etc.), with Uzbek and Russian translations"
+Title: "Device category"
+Description: "Device categories"
 * ^url = "https://terminology.dhp.uz/fhir/core/ValueSet/device-category-vs"
 * ^experimental = true
 * ^extension[0].url = $valueset-supplement

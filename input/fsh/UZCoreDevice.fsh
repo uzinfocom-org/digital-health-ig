@@ -62,7 +62,7 @@ Description: "Example of a CT scanner installed at a hospital"
 
 * displayName = "KT skaner"
 * status = #active
-* availabilityStatus = $device-availability-status#available
+* availabilityStatus = $device-availability-status#available "Available"
 * manufacturer = "Siemens Healthineers"
 * manufactureDate = "2023-05-15"
 * serialNumber = "SN-2023-001456"
@@ -74,9 +74,9 @@ Description: "Example of a CT scanner installed at a hospital"
 * modelNumber = "SOMATOM Edge"
 * partNumber = "11061630"
 
-* category = $device-category#dme
+* category = $device-category#dme "Durable Medical Equipment"
 
-* type = $sct#54953005
+* type = $sct#54953005 "Computed tomography scanner"
 
 * owner = Reference(tashkent-diseases-hospital)
 * location = Reference(example-location)
@@ -92,7 +92,7 @@ Description: "Example of a single copper intrauterine contraceptive device track
 
 * displayName = "Mis saqlovchi bachadon ichi vositasi"
 * status = #active
-* availabilityStatus = $device-availability-status#available
+* availabilityStatus = $device-availability-status#available "Available"
 * manufacturer = "Pregna International"
 * manufactureDate = "2025-04-10"
 * expirationDate = "2030-03-31"
@@ -102,10 +102,10 @@ Description: "Example of a single copper intrauterine contraceptive device track
 * name.type = $device-name-type#registered-name "Ro'yxatdan o'tgan nomi"
 * name.display = true
 
-* category[0] = $device-category#implantable
-* category[1] = $device-category#single-use
+* category[0] = $device-category#implantable "Implantable"
+* category[1] = $device-category#single-use "Single Use"
 
-* type = $sct#268460000
+* type = $sct#268460000 "Intrauterine contraceptive device"
 
 * owner = Reference(xonobod-medical-association)
 
@@ -119,7 +119,7 @@ Description: "Example of a drug-eluting subdermal contraceptive implant tracked 
 
 * displayName = "Kontratseptiv implant"
 * status = #active
-* availabilityStatus = $device-availability-status#available
+* availabilityStatus = $device-availability-status#available "Available"
 * manufacturer = "Bayer AG"
 * manufactureDate = "2025-01-20"
 * expirationDate = "2029-12-31"
@@ -129,9 +129,9 @@ Description: "Example of a drug-eluting subdermal contraceptive implant tracked 
 * name.type = $device-name-type#registered-name "Ro'yxatdan o'tgan nomi"
 * name.display = true
 
-* category[0] = $device-category#implantable
-* category[1] = $device-category#single-use
+* category[0] = $device-category#implantable "Implantable"
+* category[1] = $device-category#single-use "Single Use"
 
-* type = $sct#468312002
+* type = $sct#468312002 "Drug-eluting contraceptive implant"
 
 * owner = Reference(xonobod-medical-association)

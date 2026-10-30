@@ -1,7 +1,7 @@
 CodeSystem: DeviceCategoryCS
 Id: device-category-cs
-Title: "Device Category Code System"
-Description: "Uzbek and Russian translations of the device category codes (active, communicating, dme, home-use, implantable, in-vitro, point-of-care, single-use, reusable, software)"
+Title: "Device category translations"
+Description: "Device category supplement with translations in Uzbek and Russian"
 
 * insert SupplementCodeSystemDraft(device-category-cs, $device-category, 5.0.0)
 

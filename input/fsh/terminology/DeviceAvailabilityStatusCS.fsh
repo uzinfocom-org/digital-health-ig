@@ -1,7 +1,7 @@
 CodeSystem: DeviceAvailabilityStatusCS
 Id: device-availability-status-cs
-Title: "Device Availability Status Code System"
-Description: "Uzbek and Russian translations of the device availability status codes (lost, damaged, destroyed, available)"
+Title: "Device availability status translations"
+Description: "Device availability status supplement with translations in Uzbek and Russian"
 
 * insert SupplementCodeSystemDraft(device-availability-status-cs, $device-availability-status, 5.0.0)
 

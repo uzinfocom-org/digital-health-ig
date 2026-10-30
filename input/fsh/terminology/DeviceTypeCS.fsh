@@ -1,7 +1,7 @@
 CodeSystem: DeviceTypeCS
 Id: device-type-cs
-Title: "Device Type Code System"
-Description: "Uzbek and Russian translations of SNOMED CT contraceptive device types (intrauterine contraceptive device, condom, drug-eluting contraceptive implant, contraceptive device)"
+Title: "Device type translations"
+Description: "Device type supplement with translations in Uzbek and Russian"
 
 * insert SupplementCodeSystemDraft(device-type-cs, $sct, 2026.1.0)
 
