@@ -1,9 +1,9 @@
 CodeSystem: DeviceUsageAdherenceCodeCS
-Id: device-usage-adherence-code-cs
+Id: deviceusage-adherence-code-cs
 Title: "Device usage adherence code translations"
-Description: "Device usage adherence code supplement with translations in Uzbek and Russian"
+Description: "Uzbek and Russian translations of the device usage adherence codes (always, sometimes, never)"
 
-* insert SupplementCodeSystemDraft(device-usage-adherence-code-cs, $device-usage-adherence, 5.0.0)
+* insert SupplementCodeSystemDraft(deviceusage-adherence-code-cs, $deviceusage-adherence-code, 5.0.0)
 
 * #always "Always"
   * ^designation[0].language = #uz
@@ -13,7 +13,7 @@ Description: "Device usage adherence code supplement with translations in Uzbek 
 
 * #sometimes "Sometimes"
   * ^designation[0].language = #uz
-  * ^designation[=].value = "Ba’zan"
+  * ^designation[=].value = "Ba'zan"
   * ^designation[+].language = #ru
   * ^designation[=].value = "Иногда"
 

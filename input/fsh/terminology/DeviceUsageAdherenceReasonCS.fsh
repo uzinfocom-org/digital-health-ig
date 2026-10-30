@@ -1,12 +1,12 @@
 CodeSystem: DeviceUsageAdherenceReasonCS
-Id: device-usage-adherence-reason-cs
+Id: deviceusage-adherence-reason-cs
 Title: "Device usage adherence reason translations"
-Description: "Device usage adherence reason supplement with translations in Uzbek and Russian"
-* insert SupplementCodeSystemDraft(device-usage-adherence-reason-cs, $deviceusage-adherence-reason, 5.0.0)
+Description: "Uzbek and Russian translations of the device usage adherence reason codes (lost, broken, forgot etc.)"
+* insert SupplementCodeSystemDraft(deviceusage-adherence-reason-cs, $deviceusage-adherence-reason, 5.0.0)
 
 * #lost "Lost"
   * ^designation[0].language = #uz
-  * ^designation[=].value = "Yo‘qolgan"
+  * ^designation[=].value = "Yo'qolgan"
   * ^designation[+].language = #ru
   * ^designation[=].value = "Потерян"
 
@@ -24,7 +24,7 @@ Description: "Device usage adherence reason supplement with translations in Uzbe
 
 * #stolen "Stolen"
   * ^designation[0].language = #uz
-  * ^designation[=].value = "O‘g‘irlangan"
+  * ^designation[=].value = "O'g'irlangan"
   * ^designation[+].language = #ru
   * ^designation[=].value = "Украден"
 

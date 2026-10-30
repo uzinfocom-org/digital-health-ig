@@ -1,9 +1,9 @@
 CodeSystem: DeviceUsageStatusCS
-Id: device-usage-status-cs
+Id: deviceusage-status-cs
 Title: "Device usage status translations"
-Description: "Device usage status supplement with translations in Uzbek and Russian"
+Description: "Uzbek and Russian translations of the device usage status codes (active, completed, not-done etc.)"
 
-* insert SupplementCodeSystemDraft(device-usage-status-cs, $device-usage-status, 5.0.0)
+* insert SupplementCodeSystemDraft(deviceusage-status-cs, $deviceusage-status, 5.0.0)
 
 * #active "Active"
   * ^designation[0].language = #uz

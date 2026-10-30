@@ -1,8 +1,8 @@
 Profile: UZCoreDeviceUsage
 Parent: DeviceUsage
-Id: uz-core-device-usage
-Title: "UZ Core Device Usage"
-Description: "Profile of the DeviceUsage resource for the Uzbekistan Core Implementation Guide, capturing key information about the use of a device by a patient."
+Id: uz-core-deviceusage
+Title: "UZ Core DeviceUsage"
+Description: "Uzbekistan Core DeviceUsage profile, used to record that a patient is using, has used or will use a device"
 * ^experimental = true
 
 * identifier MS
@@ -21,8 +21,6 @@ Description: "Profile of the DeviceUsage resource for the Uzbekistan Core Implem
 
 * timing[x] MS
 
-* timing[x] only Timing or Period or dateTime
-
 * dateAsserted MS
 
 * usageStatus MS
@@ -38,7 +36,6 @@ Description: "Profile of the DeviceUsage resource for the Uzbekistan Core Implem
 * informationSource only Reference(UZCorePatient or UZCorePractitioner or UZCorePractitionerRole or UZCoreRelatedPerson or UZCoreOrganization)
 
 * device MS
-* device only CodeableReference(Device or DeviceDefinition)
 
 * reason MS
 * reason only CodeableReference(UZCoreCondition or UZCoreObservation or UZCoreDiagnosticReport)
@@ -48,14 +45,14 @@ Description: "Profile of the DeviceUsage resource for the Uzbekistan Core Implem
 
 * note MS
 
-Instance: uz-core-device-usage-example-001
+Instance: example-deviceusage-active
 InstanceOf: UZCoreDeviceUsage
 Usage: #example
-Title: "UZ Core Device Usage Example 001"
-Description: "Example instance of a UZCoreDeviceUsage - Active device usage"
+Title: "Example UZ Core DeviceUsage - Active Use"
+Description: "Example of a device the patient is currently using"
 
 * status = #active
-* patient = Reference(Patient/example-salim)
+* patient = Reference(example-salim)
 * device.concept = $sct#268460000 "Intrauterine contraceptive device"
 * basedOn = Reference(UZCoreServiceRequest-Example01)
 * dateAsserted = "2024-09-10T10:00:00Z"
@@ -66,15 +63,14 @@ Description: "Example instance of a UZCoreDeviceUsage - Active device usage"
 * informationSource = Reference(example-practitioner)
 * note.text = "Device usage for patient care"
 
-
-Instance: uz-core-device-usage-example-002
+Instance: example-deviceusage-period
 InstanceOf: UZCoreDeviceUsage
 Usage: #example
-Title: "UZ Core Device Usage Example 002"
-Description: "Example instance of a UZCoreDeviceUsage - Device usage with period"
+Title: "Example UZ Core DeviceUsage - Usage Period"
+Description: "Example of a device used over a recorded period"
 
 * status = #active
-* patient = Reference(Patient/example-salim)
+* patient = Reference(example-salim)
 * device.concept = $sct#268460000 "Intrauterine contraceptive device"
 * basedOn = Reference(UZCoreServiceRequest-Example01)
 * dateAsserted = "2024-09-10T10:00:00Z"
