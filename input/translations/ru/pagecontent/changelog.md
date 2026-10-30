@@ -8,6 +8,12 @@
 
 `basedOn` в [UZ Core Observation](StructureDefinition-uz-core-observation.html), [UZ Core Immunization](StructureDefinition-uz-core-immunization.html) и [UZ Core Procedure](StructureDefinition-uz-core-procedure.html) теперь ссылается на UZ Core CarePlan, а не на любой CarePlan.
 
+[Supplement FHIR-типов](CodeSystem-fhir-types-cs.html) давал каждому типу ресурса перевод его определения вместо названия. Теперь у каждого типа есть узбекское и русское название, например "Bemor" и "Пациент" для `Patient`, с отметкой `preferredForLanguage`, поэтому `$lookup` с `displayLanguage` возвращает название. Переведённые определения остаются обозначениями с use SNOMED CT `900000000000550004` Definition.
+
+#### Несовместимые изменения
+
+Удалены supplements типов ресурсов-запросов и типа ресурса участника, `https://terminology.dhp.uz/fhir/core/CodeSystem/request-resource-types-cs` и `https://terminology.dhp.uz/fhir/core/CodeSystem/participant-resource-type-cs`. Они переводили те же коды `http://hl7.org/fhir/fhir-types`, что и supplement FHIR-типов, поэтому у этих кодов было по два русских и два узбекских обозначения. [Типы ресурсов-запросов](ValueSet-request-resource-types-vs.html) и [Типы ресурсов](ValueSet-resource-type-vs.html) теперь используют [supplement FHIR-типов](CodeSystem-fhir-types-cs.html). Системы, загружающие supplements по URL, переходят на `https://terminology.dhp.uz/fhir/core/CodeSystem/fhir-types-cs`.
+
 ### Версия 0.12.0
 
 #### Добавлено
