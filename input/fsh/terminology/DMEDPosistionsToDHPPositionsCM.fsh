@@ -83,9 +83,9 @@ Description: "DMED Position and Professions to DHP Position and Professions Conc
 
 * group[=].element[+].code = #419
 * group[=].element[=].display = "Ginekolog hamshirasi" // ru: Медсестра-гинеколог
-* group[=].element[=].target[+].code = #2212.14
-* group[=].element[=].target[=].display = "Vrach ginekolog"
-* group[=].element[=].target[=].relationship = #equivalent
+* group[=].element[=].target[+].code = #3221.2
+* group[=].element[=].target[=].display = "Tibbiyot hamshirasi"
+* group[=].element[=].target[=].relationship = #source-is-narrower-than-target
 
 * group[=].element[+].code = #265
 * group[=].element[=].display = "Revmatolog" // ru: Ревматолог
@@ -185,8 +185,8 @@ Description: "DMED Position and Professions to DHP Position and Professions Conc
 
 * group[=].element[+].code = #422
 * group[=].element[=].display = "Intensiv terapevt" // ru: Интенсивный терапевт
-* group[=].element[=].target[+].code = #2212.5
-* group[=].element[=].target[=].display = "Vrach anesteziolog-reanimatolog"
+* group[=].element[=].target[+].code = #2212.159
+* group[=].element[=].target[=].display = "Reanimatolog"
 * group[=].element[=].target[=].relationship = #equivalent
 
 * group[=].element[+].code = #426
@@ -281,9 +281,9 @@ Description: "DMED Position and Professions to DHP Position and Professions Conc
 
 * group[=].element[+].code = #441
 * group[=].element[=].display = "Hamshira endoskopisti" // ru: Медсестра эндоскопист
-* group[=].element[=].target[+].code = #2212.139
-* group[=].element[=].target[=].display = "Vrach endoskopist"
-* group[=].element[=].target[=].relationship = #equivalent
+* group[=].element[=].target[+].code = #3221.2
+* group[=].element[=].target[=].display = "Tibbiyot hamshirasi"
+* group[=].element[=].target[=].relationship = #source-is-narrower-than-target
 
 * group[=].element[+].code = #257
 * group[=].element[=].display = "Mammolog" // ru: Маммолог
@@ -479,9 +479,9 @@ Description: "DMED Position and Professions to DHP Position and Professions Conc
 
 * group[=].element[+].code = #403
 * group[=].element[=].display = "Bolalar ginekologi" // ru: Детский Гинеколог
-* group[=].element[=].target[+].code = #2212.14
-* group[=].element[=].target[=].display = "Vrach ginekolog"
-* group[=].element[=].target[=].relationship = #source-is-narrower-than-target
+* group[=].element[=].target[+].code = #2212.36
+* group[=].element[=].target[=].display = "Bolalar va o'smirlar genekolog vrachi"
+* group[=].element[=].target[=].relationship = #equivalent
 
 * group[=].element[+].code = #361
 * group[=].element[=].display = "Muolaja hamshirasi" // ru: Процедурная медсестра
@@ -653,15 +653,15 @@ Description: "DMED Position and Professions to DHP Position and Professions Conc
 
 * group[=].element[+].code = #635
 * group[=].element[=].display = "Torokal jarrohlik bo'limi shifokori" // ru: Врач отделения торакальной хирургии
-* group[=].element[=].target[+].code = #2212.130
-* group[=].element[=].target[=].display = "Vrach xirurg"
-* group[=].element[=].target[=].relationship = #source-is-narrower-than-target
+* group[=].element[=].target[+].code = #2212.117
+* group[=].element[=].target[=].display = "Ko'krak qafasi xirurg vrachi"
+* group[=].element[=].target[=].relationship = #equivalent
 
 * group[=].element[+].code = #636
 * group[=].element[=].display = "Torokal jarroh" // ru: Торакальный хирург
-* group[=].element[=].target[+].code = #2212.130
-* group[=].element[=].target[=].display = "Vrach xirurg"
-* group[=].element[=].target[=].relationship = #source-is-narrower-than-target
+* group[=].element[=].target[+].code = #2212.117
+* group[=].element[=].target[=].display = "Ko'krak qafasi xirurg vrachi"
+* group[=].element[=].target[=].relationship = #equivalent
 
 * group[=].element[+].code = #638
 * group[=].element[=].display = "Interventsion kardiolog" // ru: Интервенцион кардиолог
@@ -761,8 +761,8 @@ Description: "DMED Position and Professions to DHP Position and Professions Conc
 
 * group[=].element[+].code = #776
 * group[=].element[=].display = "Неонатаолог-хирург" // ru: Неонатаолог-хирург
-* group[=].element[=].target[+].code = #2212.71
-* group[=].element[=].target[=].display = "Vrach neonatolog"
+* group[=].element[=].target[+].code = #2212.70
+* group[=].element[=].target[=].display = "Vrach neonatal jarroh"
 * group[=].element[=].target[=].relationship = #equivalent
 
 * group[=].element[+].code = #777
@@ -785,14 +785,14 @@ Description: "DMED Position and Professions to DHP Position and Professions Conc
 
 * group[=].element[+].code = #827
 * group[=].element[=].display = "Врач бактериолог" // ru: Врач бактериолог
-* group[=].element[=].target[+].code = #2131.1
-* group[=].element[=].target[=].display = "Bakteriolog"
+* group[=].element[=].target[+].code = #2212.6
+* group[=].element[=].target[=].display = "Vrach bakteriolog"
 * group[=].element[=].target[=].relationship = #equivalent
 
 * group[=].element[+].code = #832
 * group[=].element[=].display = "Ofis hamshirasi" // ru: Медсестра  кабинета
-* group[=].element[=].target[+].code = #3221.6
-* group[=].element[=].target[=].display = "Emlash xonasi hamshirasi"
+* group[=].element[=].target[+].code = #3221.2
+* group[=].element[=].target[=].display = "Tibbiyot hamshirasi"
 * group[=].element[=].target[=].relationship = #source-is-narrower-than-target
 
 * group[=].element[+].code = #834
@@ -823,7 +823,7 @@ Description: "DMED Position and Professions to DHP Position and Professions Conc
 * group[=].element[=].display = "ftiziatriya bo'limi hamshirasi" // ru: медсестра фтизиатрического отделения
 * group[=].element[=].target[+].code = #3221.2
 * group[=].element[=].target[=].display = "Tibbiyot hamshirasi"
-* group[=].element[=].target[=].relationship = #equivalent
+* group[=].element[=].target[=].relationship = #source-is-narrower-than-target
 
 * group[=].element[+].code = #639
 * group[=].element[=].display = "Yiringli septik jarroh" // ru: Гнойно-септический хирург
@@ -865,25 +865,25 @@ Description: "DMED Position and Professions to DHP Position and Professions Conc
 * group[=].element[=].display = "Pediatrik dermatovenerolog" // ru: Врач детский дерматовенеролог
 * group[=].element[=].target[+].code = #2212.17
 * group[=].element[=].target[=].display = "Dermatovenereologist"
-* group[=].element[=].target[=].relationship = #equivalent
+* group[=].element[=].target[=].relationship = #source-is-narrower-than-target
 
 * group[=].element[+].code = #634
 * group[=].element[=].display = "Pulmonologiya bo'limi shifokori" // ru: Врач отделения пульмонологии
-* group[=].element[=].target[+].code = #2212.29
-* group[=].element[=].target[=].display = "Bolalar pulьmonolog vrachi"
+* group[=].element[=].target[+].code = #2212.96
+* group[=].element[=].target[=].display = "Vrach pulьmonolog"
 * group[=].element[=].target[=].relationship = #equivalent
 
 * group[=].element[+].code = #764
 * group[=].element[=].display = "Bolalar angiografi" // ru: Детский ангиограф
-* group[=].element[=].target[+].code = #2212.130
-* group[=].element[=].target[=].display = "Vrach xirurg"
-* group[=].element[=].target[=].relationship = #equivalent
+* group[=].element[=].target[+].code = #2212.40
+* group[=].element[=].target[=].display = "Interventsion radiologiya vrachi"
+* group[=].element[=].target[=].relationship = #source-is-narrower-than-target
 
 * group[=].element[+].code = #640
 * group[=].element[=].display = "Ekstrakorporeal detoksifikatsiya va gemodializ" // ru: Экстракорпорал детоксикация и гемадиализ
-* group[=].element[=].target[+].code = #2212.74
-* group[=].element[=].target[=].display = "Vrach nefrolog"
-* group[=].element[=].target[=].relationship = #source-is-narrower-than-target
+* group[=].element[=].target[+].code = #2212.79
+* group[=].element[=].target[=].display = "Gemodializ / dializ bo'linmasi vrachi"
+* group[=].element[=].target[=].relationship = #equivalent
 
 * group[=].element[+].code = #643
 * group[=].element[=].display = "Direktor O'rinbosari" // ru: Заместитель Директора
@@ -905,15 +905,15 @@ Description: "DMED Position and Professions to DHP Position and Professions Conc
 
 * group[=].element[+].code = #287
 * group[=].element[=].display = "Kimyoterapevt" // ru: Химиотерапевт
-* group[=].element[=].target[+].code = #2212.27
-* group[=].element[=].target[=].display = "Bolalar onkolog kimyoterapevt vrachi"
+* group[=].element[=].target[+].code = #2212.129
+* group[=].element[=].target[=].display = "Vrach kimyoterapevt"
 * group[=].element[=].target[=].relationship = #equivalent
 
 * group[=].element[+].code = #751
 * group[=].element[=].display = "Podiatrist" // ru: Подиатрист
-* group[=].element[=].target[+].code = #2212.30
-* group[=].element[=].target[=].display = "Bolalar travmatolog-ortoped vrachi"
-* group[=].element[=].target[=].relationship = #equivalent
+* group[=].element[=].target[+].code = #2212.147
+* group[=].element[=].target[=].display = "Vrach-mutaxassis (vrach-xirurgdan tashqari barcha mutaxassisliklar)"
+* group[=].element[=].target[=].relationship = #source-is-narrower-than-target
 
 * group[=].element[+].code = #754
 * group[=].element[=].display = "Bolalar allergologi" // ru: Детский аллерголог
@@ -931,19 +931,19 @@ Description: "DMED Position and Professions to DHP Position and Professions Conc
 * group[=].element[=].display = "Kolonoskopist" // ru: Колоноскопист
 * group[=].element[=].target[+].code = #2212.139
 * group[=].element[=].target[=].display = "Vrach endoskopist"
-* group[=].element[=].target[=].relationship = #equivalent
+* group[=].element[=].target[=].relationship = #source-is-narrower-than-target
 
 * group[=].element[+].code = #783
 * group[=].element[=].display = "Bolalar dermatologi" // ru: Детский дерматолог
 * group[=].element[=].target[+].code = #2212.17
 * group[=].element[=].target[=].display = "Vrach dermatovenerolog"
-* group[=].element[=].target[=].relationship = #equivalent
+* group[=].element[=].target[=].relationship = #source-is-narrower-than-target
 
 * group[=].element[+].code = #759
 * group[=].element[=].display = "Bolalar neonatologi" // ru: Детский неонатолог
 * group[=].element[=].target[+].code = #2212.71
 * group[=].element[=].target[=].display = "Vrach neonatolog"
-* group[=].element[=].target[=].relationship = #source-is-narrower-than-target
+* group[=].element[=].target[=].relationship = #equivalent
 
 * group[=].element[+].code = #769
 * group[=].element[=].display = "Bolalar rentgenolog" // ru: Детский рентгенолог
@@ -967,7 +967,7 @@ Description: "DMED Position and Professions to DHP Position and Professions Conc
 * group[=].element[=].display = "Bolalar dietologi" // ru: Детский диетолог
 * group[=].element[=].target[+].code = #2265.1
 * group[=].element[=].target[=].display = "Vrach dietolog"
-* group[=].element[=].target[=].relationship = #equivalent
+* group[=].element[=].target[=].relationship = #source-is-narrower-than-target
 
 * group[=].element[+].code = #823
 * group[=].element[=].display = "Dermatovenerolog-moxov shifokori" // ru: Врач дерматовенеролог-лепролог
@@ -1087,7 +1087,7 @@ Description: "DMED Position and Professions to DHP Position and Professions Conc
 * group[=].element[=].display = "Patolog" // ru: Патоморфолог
 * group[=].element[=].target[+].code = #2212.88
 * group[=].element[=].target[=].display = "Vrach patologoanatom"
-* group[=].element[=].target[=].relationship = #source-is-narrower-than-target
+* group[=].element[=].target[=].relationship = #equivalent
 
 * group[=].element[+].code = #380
 * group[=].element[=].display = "Ro'yxatxona" // ru: Регистратура
@@ -1097,8 +1097,8 @@ Description: "DMED Position and Professions to DHP Position and Professions Conc
 
 * group[=].element[+].code = #404
 * group[=].element[=].display = "Elektron retseptlar sharhlovchisi" // ru: Рецензент электронных рецептов
-* group[=].element[=].target[+].code = #2262.13
-* group[=].element[=].target[=].display = "Farmatsevt"
+* group[=].element[=].target[+].code = #2262.9
+* group[=].element[=].target[=].display = "Retsept bo'yicha provizor"
 * group[=].element[=].target[=].relationship = #source-is-narrower-than-target
 
 * group[=].element[+].code = #382
@@ -1211,8 +1211,8 @@ Description: "DMED Position and Professions to DHP Position and Professions Conc
 
 * group[=].element[+].code = #641
 * group[=].element[=].display = "Bolalar surdologi" // ru: Детский сурдолог
-* group[=].element[=].target[+].code = #2212.84
-* group[=].element[=].target[=].display = "Vrach otorinolaringolog"
+* group[=].element[=].target[+].code = #2212.112
+* group[=].element[=].target[=].display = "Аudiolog-otorinolaringolog vrach"
 * group[=].element[=].target[=].relationship = #source-is-narrower-than-target
 
 * group[=].element[+].code = #213
@@ -1319,7 +1319,7 @@ Description: "DMED Position and Professions to DHP Position and Professions Conc
 * group[=].element[=].display = "Mikrojarroh" // ru: Микрохирург
 * group[=].element[=].target[+].code = #2212-046
 * group[=].element[=].target[=].display = "Vrach jarroh"
-* group[=].element[=].target[=].relationship = #equivalent
+* group[=].element[=].target[=].relationship = #source-is-narrower-than-target
 
 * group[=].element[+].code = #455
 * group[=].element[=].display = "Morfologiya" // ru: Морфология
