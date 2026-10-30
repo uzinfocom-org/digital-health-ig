@@ -1,7 +1,7 @@
 CodeSystem: MedicationDoseFormCS
 Id: medication-doseform-cs
 Title: "Medication dose form"
-Description: "Code system of pharmaceutical dose forms (e.g., tablet, capsule, solution)."
+Description: "Pharmaceutical dose forms (e.g., tablet, capsule, solution)."
 * insert OriginalCodeSystemDraft(medication-doseform-cs)
 
 * #AER101 "aerozol"

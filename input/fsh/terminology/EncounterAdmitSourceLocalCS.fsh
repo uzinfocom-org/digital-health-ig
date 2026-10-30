@@ -1,6 +1,6 @@
 CodeSystem: AdmitSourceLocalCS
 Id: admit-source-local-cs
-Title: "Admit Source Local CodeSystem"
+Title: "Local admit source"
 Description: "Local admit source codes with Uzbek, English, and Russian translations"
 * insert OriginalCodeSystemDraft(admit-source-local-cs)
 

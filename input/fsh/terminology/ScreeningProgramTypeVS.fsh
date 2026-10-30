@@ -1,6 +1,6 @@
 ValueSet: ScreeningProgramTypeVS
 Id: screening-program-type-vs
-Title: "Screening and Home Visit Program Types"
+Title: "Screening and home visit program type"
 Description: "Eight SNOMED CT screening program types and the retained national screening and home visit codes. Program identifiers use the code as their value; clinical service coding remains independent."
 * ^url = "https://terminology.dhp.uz/fhir/core/ValueSet/screening-program-type-vs"
 * ^status = #draft

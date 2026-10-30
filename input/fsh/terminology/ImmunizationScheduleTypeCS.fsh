@@ -1,6 +1,6 @@
 CodeSystem: ImmunizationScheduleTypeCS
 Id: immunization-schedule-type-cs
-Title: "UZ Core Immunization Schedule Type"
+Title: "Immunization schedule type"
 Description: "Codes defining the types of ImmunizationSchedule artifacts used in clinical decision support and immunization planning."
 * insert OriginalCodeSystemDraft(immunization-schedule-type-cs)
 

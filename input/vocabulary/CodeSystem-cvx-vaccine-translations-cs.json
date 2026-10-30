@@ -4,8 +4,8 @@
   "content": "supplement",
   "name": "CVXVaccineTranslationsCS",
   "id": "cvx-vaccine-translations-cs",
-  "title": "CVX Vaccine Code Translations",
-  "description": "Supplement providing Uzbek and Russian translations for the CVX vaccine code system (http://hl7.org/fhir/sid/cvx).",
+  "title": "CVX vaccine translations",
+  "description": "CVX vaccine supplement with translations in Uzbek and Russian",
   "url": "https://terminology.dhp.uz/fhir/core/CodeSystem/cvx-vaccine-translations-cs",
   "concept": [
     {

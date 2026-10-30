@@ -136,7 +136,7 @@ For a complete record, add the `protocolApplied` (series name, target disease, d
 }
 ```
 
-`reaction.manifestation` carries its coded finding in `concept`; it may instead point at an [Observation](StructureDefinition-uz-core-observation.html) through its nested `reference`. `protocolApplied.targetDisease` takes SNOMED CT codes from the [target disease value set](ValueSet-target-disease-vs.html) through an open slice, so codes from other systems can sit alongside them. When the dose came from a [recommendation](StructureDefinition-uz-core-immunization-recommendation.html) or order, add a `basedOn` reference to it.
+`reaction.manifestation` carries its coded finding in `concept`; it may instead point at an [Observation](StructureDefinition-uz-core-observation.html) through its nested `reference`. `protocolApplied.targetDisease` takes SNOMED CT codes from the [Target disease](ValueSet-target-disease-vs.html) value set through an open slice, so codes from other systems can sit alongside them. When the dose came from a [recommendation](StructureDefinition-uz-core-immunization-recommendation.html) or order, add a `basedOn` reference to it.
 
 #### When the dose was not given
 

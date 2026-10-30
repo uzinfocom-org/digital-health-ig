@@ -4,8 +4,8 @@
   "content": "supplement",
   "name": "SpecimenTypesCS",
   "id": "specimen-types-cs",
-  "title": "Specimen types translations",
-  "description": "Specimen types, supplemented with translations in Uzbek and Russian",
+  "title": "Specimen type translations",
+  "description": "Specimen type supplement with translations in Uzbek and Russian",
   "url": "https://terminology.dhp.uz/fhir/core/CodeSystem/specimen-types-cs",
   "concept": [
     {

@@ -1,7 +1,7 @@
 ValueSet: ReasonMedicationGivenVS
 Id: reason-medication-given-vs
 Title: "Reason medication given"
-Description: "Reasons a medication was given, with Uzbek and Russian translations"
+Description: "Reasons medication given"
 * ^url = "https://terminology.dhp.uz/fhir/core/ValueSet/reason-medication-given-vs"
 
 * ^experimental = true

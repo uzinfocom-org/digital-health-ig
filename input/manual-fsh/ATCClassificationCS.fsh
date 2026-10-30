@@ -1,7 +1,7 @@
 CodeSystem: ATCClassificationCS
 Id: atc-classification-cs
-Title: "ATC classification system"
-Description: "Anatomical Therapeutic Chemical (ATC) classification system for medicinal products."
+Title: "ATC classification translations"
+Description: "ATC classification supplement with translations in Uzbek and Russian"
 * insert SupplementCodeSystemDraft(atc-classification-cs, $medical-product-classification, 2025.0.0)
 * ^hierarchyMeaning = #is-a
 * #A

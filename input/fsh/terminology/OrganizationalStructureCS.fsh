@@ -1,6 +1,6 @@
 CodeSystem: OrganizationalStructureCS
 Id: organizational-structure-cs
-Title: "Organizational Structure"
+Title: "Organizational structure"
 Description: "Detailed classification of healthcare institution types (e.g., specialized centers, clinical hospitals, dispensaries). This is a granular categorization defined by the Ministry of Health; for high-level functional groupings, see NomenclatureGroupCS."
 * insert OriginalCodeSystemDraft(organizational-structure-cs)
 * #110 "Ixtisoslashtirilgan ilmiy-amaliy tibbiyot markazi"

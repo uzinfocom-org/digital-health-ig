@@ -1,7 +1,7 @@
 CodeSystem: ISO3166_TwoLetter_CS
 Id: iso3166-two-letter-cs
-Title: "ISO 3166-1 two-letter translations"
-Description: "ISO 3166-1 2-letter supplement with Uzbek and Russian translations"
+Title: "ISO 3166-1 two-letter code translations"
+Description: "ISO 3166-1 two-letter code supplement with translations in Uzbek and Russian"
 * ^url = "https://terminology.dhp.uz/fhir/core/CodeSystem/iso3166-two-letter-cs"
 * ^experimental = true
 * ^content = #supplement

@@ -1,6 +1,6 @@
 CodeSystem: RoleClassCS
 Id: role-class-cs
-Title: "Role class"
+Title: "Role class translations"
 Description: "Role class supplement with translations in Uzbek and Russian"
 * ^url = "https://terminology.dhp.uz/fhir/core/CodeSystem/role-class-cs"
 * ^experimental = true

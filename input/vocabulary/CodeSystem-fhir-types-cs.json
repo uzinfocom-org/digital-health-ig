@@ -4,8 +4,8 @@
   "content": "supplement",
   "name": "FhirTypesCS",
   "id": "fhir-types-cs",
-  "title": "All FHIR Types",
-  "description": "FHIR types supplement with translations in Uzbek and Russian",
+  "title": "FHIR type translations",
+  "description": "FHIR type supplement with translations in Uzbek and Russian",
   "url": "https://terminology.dhp.uz/fhir/core/CodeSystem/fhir-types-cs",
   "concept": [
     {

@@ -1,6 +1,6 @@
 CodeSystem: SRSctCategoryCS
 Id: sr-sct-category-cs
-Title: "ServiceRequest SNOMED Category translations"
+Title: "ServiceRequest SNOMED CT category translations"
 Description: "ServiceRequest SNOMED CT category supplement with translations in Uzbek and Russian"
 * insert SupplementCodeSystemDraft(sr-sct-category-cs, $sct, 2026.1.0)
 

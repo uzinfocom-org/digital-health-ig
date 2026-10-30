@@ -69,7 +69,7 @@ Vaksinatsiya odatda konsultatsiyadan boshqa tibbiyot muassasasida va boshqa kuni
 | Vaksina mavjud emas | `not-done` | `statusReason` = `OSTOCK` (vaksina mavjud emas) |
 | Xato qayd etilgan | `entered-in-error` | - |
 
-`statusReason` [Immunization status sabablari ValueSet](ValueSet-immunization-status-reason-vs.html)'iga majburiy (required) bog'langan; yuqorida keltirilgan HL7 v3 ActReason tizimidagi to'rtta kod yagona ruxsat etilgan qiymatlardir.
+`statusReason` [Immunization status sabablari](ValueSet-immunization-status-reason-vs.html) ValueSet'iga majburiy (required) bog'langan; yuqorida keltirilgan HL7 v3 ActReason tizimidagi to'rtta kod yagona ruxsat etilgan qiymatlardir.
 
 ```
 POST [base]/Immunization

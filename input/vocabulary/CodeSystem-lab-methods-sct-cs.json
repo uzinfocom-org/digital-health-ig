@@ -4,8 +4,8 @@
   "content": "supplement",
   "name": "LabMethodsSctCS",
   "id": "lab-methods-sct-cs",
-  "title": "Lab Methods SNOMED CT CS",
-  "description": "Observation method (SNOMED CT) supplement with Uzbek and Russian translations",
+  "title": "Laboratory method (SNOMED CT) translations",
+  "description": "Laboratory method (SNOMED CT) supplement with translations in Uzbek and Russian",
   "url": "https://terminology.dhp.uz/fhir/core/CodeSystem/lab-methods-sct-cs",
   "concept": [
     {

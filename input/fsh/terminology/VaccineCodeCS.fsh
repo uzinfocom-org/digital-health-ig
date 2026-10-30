@@ -1,7 +1,7 @@
 CodeSystem: VaccineCodeCS
 Id: vaccine-code-cs
-Title: "Vaccine Code Translations"
-Description: "Vaccine Code supplement with Uzbek and Russian translations"
+Title: "Vaccine code"
+Description: "Local vaccine codes"
 * ^url = "https://terminology.dhp.uz/fhir/core/CodeSystem/vaccine-code-cs"
 * ^status = #draft
 * ^experimental = true

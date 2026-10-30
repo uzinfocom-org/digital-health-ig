@@ -1,7 +1,7 @@
 ValueSet: EncounterStatusVS
 Id: encounter-status-vs
-Title: "Encounter status translations"
-Description: "Encounter status codes with Uzbek and Russian translations"
+Title: "Encounter status"
+Description: "Encounter statuses"
 * ^url = "https://terminology.dhp.uz/fhir/core/ValueSet/encounter-status-vs"
 * ^experimental = true
 * ^extension[0].url = $valueset-supplement

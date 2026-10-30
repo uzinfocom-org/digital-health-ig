@@ -1,7 +1,7 @@
 ValueSet: InventoryItemStatusVS
 Id: inventoryitem-status-vs
 Title: "InventoryItem status"
-Description: "Statuses of an InventoryItem"
+Description: "InventoryItem statuses"
 
 * ^url = "https://terminology.dhp.uz/fhir/core/ValueSet/inventoryitem-status-vs"
 * ^experimental = true

@@ -1,6 +1,6 @@
 ValueSet: MahallaVS
 Id: mahalla-vs
-Title: "Mahallas translations"
+Title: "Mahalla"
 Description: "Mahallas names with English and Russian translations"
 * ^url = "https://terminology.dhp.uz/fhir/core/ValueSet/mahalla-vs"
 * ^experimental = true

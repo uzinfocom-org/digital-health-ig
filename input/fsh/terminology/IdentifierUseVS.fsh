@@ -1,7 +1,7 @@
 ValueSet: IdentifierUseVS
 Id: identifier-use-vs
-Title: "Types of possible identifier uses"
-Description: "Defines the `use` of an identifier in Uzbek and Russian"
+Title: "Identifier use"
+Description: "Identifier uses"
 * ^url = "https://terminology.dhp.uz/fhir/core/ValueSet/identifier-use-vs"
 * ^experimental = true
 * ^extension[0].url = $valueset-supplement

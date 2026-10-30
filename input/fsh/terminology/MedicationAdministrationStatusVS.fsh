@@ -1,7 +1,7 @@
 ValueSet: MedicationAdministrationStatusVS
 Id: medicationadministration-status-vs
 Title: "MedicationAdministration status"
-Description: "Statuses of a medication administration, with Uzbek and Russian translations"
+Description: "MedicationAdministration statuses"
 * ^url = "https://terminology.dhp.uz/fhir/core/ValueSet/medicationadministration-status-vs"
 
 * ^experimental = true

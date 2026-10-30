@@ -1,7 +1,7 @@
 ValueSet: EncounterDischargeDispositionVS
 Id: encounter-discharge-disposition-vs
-Title: "Encounter discharge disposition translations"
-Description: "Encounter discharge disposition codes with English and Russian translations"
+Title: "Encounter discharge disposition"
+Description: "Encounter discharge dispositions"
 * ^url = "https://terminology.dhp.uz/fhir/core/ValueSet/encounter-discharge-disposition-vs"
 * ^experimental = true
 * ^extension[0].url = $valueset-supplement

@@ -1,7 +1,7 @@
 CodeSystem: SpecimenCollectionMethodCS
 Id: specimen-collection-method-cs
 Title: "Specimen collection methods (temp)"
-Description: "Uzbekistan local codesystem collection methods of specimen"
+Description: "Uzbekistan local collection methods of specimen"
 * insert OriginalCodeSystemDraft(specimen-collection-method-cs)
 * #coll-meth-01 "Venepunktsiya"
   * ^designation[0].language = #ru

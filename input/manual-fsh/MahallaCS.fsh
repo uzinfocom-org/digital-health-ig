@@ -1,6 +1,6 @@
 CodeSystem: MahallaCS
 Id: mahalla-cs
-Title: "Mahalla Codes and Names"
+Title: "Mahalla codes and names"
 Description: "Mahalla codes and names with translations in Russian and English from dmp.uz"
 * insert OriginalCodeSystemDraft(mahalla-cs)
 

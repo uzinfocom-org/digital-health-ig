@@ -1,7 +1,7 @@
 ValueSet: RecommendationReasonVS
 Id: recommendation-reason-vs
-Title: "Immunization recommendation reason value set"
-Description: "Immunization recommendation reason codes with Uzbek and Russian translations"
+Title: "Immunization recommendation reason"
+Description: "Immunization recommendation reasons"
 * ^url = "https://terminology.dhp.uz/fhir/core/ValueSet/recommendation-reason-vs"
 * ^experimental = true
 * ^extension[0].url = $valueset-supplement

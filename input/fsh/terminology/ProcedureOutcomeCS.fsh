@@ -1,7 +1,7 @@
 CodeSystem: ProcedureOutcomeCS
 Id: procedure-outcome-cs
-Title: "Procedure Outcome Supplement CodeSystem"
-Description: "SNOMED CT supplement containing Uzbek and Russian designations for procedure outcome codes used in Uzbekistan."
+Title: "Procedure outcome translations"
+Description: "Procedure outcome supplement with translations in Uzbek and Russian"
 
 * insert SupplementCodeSystemDraft(
     procedure-outcome-cs,

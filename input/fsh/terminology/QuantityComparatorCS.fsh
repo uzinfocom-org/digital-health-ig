@@ -1,7 +1,7 @@
 CodeSystem: QuantityComparatorCS
 Id: quantity-comparator-cs
 Title: "Quantity comparator translations"
-Description: "Quantity comparator codes with Uzbek and Russian translations"
+Description: "Quantity comparator supplement with translations in Uzbek and Russian"
 * insert SupplementCodeSystem(quantity-comparator-cs, $quantity-comparator, 5.0.0)
 
 * #<

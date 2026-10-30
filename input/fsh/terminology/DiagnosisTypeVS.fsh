@@ -1,6 +1,6 @@
 ValueSet: DiagnosisTypeVS
 Id: diagnosis-type-vs
-Title: "Diagnosis Type"
+Title: "Diagnosis type"
 Description: "Diagnosis types in Uzbekistan"
 * ^url = "https://terminology.dhp.uz/fhir/core/ValueSet/diagnosis-type-vs"
 * ^experimental = true

@@ -1,7 +1,7 @@
 ValueSet: LabReportTypesVS
 Id: lab-report-types-vs
-Title: "ValueSet of DiagnosticReport Laboratory Report Types"
-Description: "Value set defining codes that represent the laboratory report types of diagnostic report in UZbekistan MoH (399) ."
+Title: "Laboratory report type"
+Description: "Laboratory report types of DiagnosticReport, based on Order No. 399 of the Ministry of Health of the Republic of Uzbekistan"
 * ^url = "https://terminology.dhp.uz/fhir/core/ValueSet/lab-report-types-vs"
 * ^experimental = true
 * ^language = #uz
