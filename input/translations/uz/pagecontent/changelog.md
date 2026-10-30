@@ -8,7 +8,13 @@
 
 [Composition hujjat turlari](CodeSystem-composition-type-cs.html): 399-son buyruqning 112-shakli - foliy kislotasi, 25-OH D vitamini va B12 vitaminiga IXLA tahlili uchun `emdoc-0010-0471` kodi qo'shildi.
 
+[UZ Core CarePlan](StructureDefinition-uz-core-careplan.html) qo'shildi - bemorga ma'lum davr uchun yordam rejasining umumiy profili, masalan hamshiraning uyga patronaj tashriflari, davolash kursi yoki mehnatga layoqatsizlik varaqasi holati. Muayyan stsenariy uchun qo'llanma undan meros oladi. Reja rejalashtirilgan tadbirlar uchun so'rovlarni birlashtiradi va bajarilganlarini qayd etuvchi hodisalarni bog'laydi. Uning `intent` elementi o'zbek va rus tarjimalari bilan [CarePlan maqsadlari](ValueSet-careplan-intent-vs.html) ga bog'langan. Namunalar: [yangi tug'ilgan chaqaloq patronaji rejasi](CarePlan-example-newborn-patronage-careplan.html) va vaqtinchalik `example-careplan` o'rnini egallagan [davolovchi massaj kursi](CarePlan-example-massage-careplan.html). Ularning mas'ullari - yangi [patronaj hamshirasi](PractitionerRole-example-patronage-nurse-role.html) va [vrach fizioterapevt](PractitionerRole-example-physiotherapist-role.html) namunalari; fizioterapevt [Procedure namunasini](Procedure-example-procedure.html) ham bajaradi.
+
 #### O'zgartirildi
+
+[UZ Core Observation](StructureDefinition-uz-core-observation.html), [UZ Core Immunization](StructureDefinition-uz-core-immunization.html) va [UZ Core Procedure](StructureDefinition-uz-core-procedure.html) dagi `basedOn` endi istalgan CarePlan emas, UZ Core CarePlan ga havola qiladi.
+
+[Procedure namunasi](Procedure-example-procedure.html) endi boshqa bemorning tashrifi va holati o'rniga xuddi shu bemorning [ambulator fizioterapiya tashrifi](Encounter-example-physiotherapy-encounter.html) va [o'ng oyoq panjasidagi og'riq](Condition-example-foot-pain.html) holatiga havola qiladi.
 
 [FHIR turlari supplementi](CodeSystem-fhir-types-cs.html) har bir resurs turiga nomi o'rniga uning ta'rifi tarjimasini berardi. Endi har bir turning o'zbekcha va ruscha nomi bor, masalan `Patient` uchun "Bemor" va "Пациент", ular `preferredForLanguage` bilan belgilangan, shuning uchun `displayLanguage` bilan `$lookup` nomni qaytaradi. Tarjima qilingan ta'riflar SNOMED CT `900000000000550004` Definition use bilan belgilashlar sifatida qoladi.
 
