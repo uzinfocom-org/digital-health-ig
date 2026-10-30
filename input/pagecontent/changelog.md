@@ -1,8 +1,8 @@
 ### In development
 
-#### Changed
+#### Added
 
-[Composition types](CodeSystem-composition-type-cs.html) now match Order No. 399: `emdoc-0010-0471` is added for form 112, an IXLA analysis of folic acid, vitamin D and vitamin B12. 14 codes whose display described a different form now describe the form Order 399 gives that number: `emdoc-0010-0018`, `0019` and `0020` (forms 103, 106 and 106-2) are registers of medical birth, death and perinatal death certificates, `0081` (015-10) is a scrotal ultrasound rather than a colon ultrasound, `0143` (066-1) is the statistical card of a patient discharged from a psychiatric (narcological) hospital, `0186` and `0187` (123, 124) cover tick-borne relapsing fever rather than typhoid, `0237` (173) is the perinatal council, `0247` (183) is a referral for HIV testing, `0253` (189) is the receipt of biomaterials, `0285` (221) is the register of blood group and Rh factor of patients from healthcare facilities, `0303` (239) records blood from micro-donors, and `0460` (389) is the act of disinfection chamber operation control, so `0463` (392) is no longer marked as its duplicate. Senders that chose one of these codes by its old display should check that it still matches their form.
+[Composition types](CodeSystem-composition-type-cs.html) add `emdoc-0010-0471` for Order No. 399 form 112, a laboratory analysis of folic acid, 25-OH vitamin D and vitamin B12.
 
 ### Version 0.12.0
 
