@@ -2,6 +2,8 @@
 
 #### Добавлено
 
+[UZ Core Device](StructureDefinition-uz-core-device.html) описывает физическое медицинское изделие - больничное оборудование, например компьютерный томограф, или отдельное изделие, например внутриматочную спираль, - с его типом и категорией по SNOMED CT, производителем, моделью, серийным номером и номером серии, статусом и доступностью, а также организацией и местом, к которым оно относится. Вместе с профилем добавлены узбекские и русские переводы кодов HL7 для статуса изделия, статуса доступности, типа наименования и категории, а также типов контрацептивных изделий SNOMED CT. На странице профиля есть вводный раздел и Быстрый старт.
+
 Добавлен [UZ Core CarePlan](StructureDefinition-uz-core-careplan.html) - общий профиль плана помощи пациенту на период времени, например патронажных визитов медсестры на дом, курса лечения или случая листка нетрудоспособности. Руководство для конкретного сценария наследует от него. План объединяет запросы на запланированные мероприятия и связывает события, фиксирующие выполненные. Его `intent` связан с [намерениями CarePlan](ValueSet-careplan-intent-vs.html) с переводами на узбекский и русский. Примеры: [план патронажа новорождённого](CarePlan-example-newborn-patronage-careplan.html) и [курс лечебного массажа](CarePlan-example-massage-careplan.html), который заменяет временный `example-careplan`.
 
 #### Изменено
@@ -9,6 +11,8 @@
 `basedOn` в [UZ Core Observation](StructureDefinition-uz-core-observation.html), [UZ Core Immunization](StructureDefinition-uz-core-immunization.html) и [UZ Core Procedure](StructureDefinition-uz-core-procedure.html) теперь ссылается на UZ Core CarePlan, а не на любой CarePlan.
 
 [Supplement FHIR-типов](CodeSystem-fhir-types-cs.html) давал каждому типу ресурса перевод его определения вместо названия. Теперь у каждого типа есть узбекское и русское название, например "Bemor" и "Пациент" для `Patient`, с отметкой `preferredForLanguage`, поэтому `$lookup` с `displayLanguage` возвращает название. Переведённые определения остаются обозначениями с use SNOMED CT `900000000000550004` Definition.
+
+Все ссылки на Device в профилях UZ Core теперь указывают на [UZ Core Device](StructureDefinition-uz-core-device.html): Observation, Procedure, Condition, AdverseEvent, Composition, QuestionnaireResponse, Group, MedicationAdministration, MedicationDispense, InventoryItem, SupplyRequest и SupplyDelivery.
 
 #### Несовместимые изменения
 
