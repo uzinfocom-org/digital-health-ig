@@ -406,7 +406,8 @@ Description: "Clinical status supplement with translations in Uzbek and Russian"
 ```fsh
 ValueSet: ClinicalStatusVS
 Id: clinical-status-vs
-Title: "Clinical Status"
+Title: "Clinical status"
+Description: "Clinical statuses"
 * ^url = "https://terminology.dhp.uz/fhir/core/ValueSet/clinical-status-vs"
 * ^status = #active
 * ^extension[0].url = $valueset-supplement
@@ -418,6 +419,22 @@ Title: "Clinical Status"
 **Важно:**
 - Расширение `valueset-supplement` необходимо только для ValueSets, которые включают коды из supplement CodeSystems. Для ValueSets с только оригинальными кодами это расширение не требуется.
 - При использовании supplement CodeSystems в ValueSet необходимо включать коды из **оригинальной** CodeSystem (например, `$condition-clinical`), а не из supplement CodeSystem. Расширение `valueset-supplement` указывает на supplement, который предоставляет переводы к оригинальным кодам.
+
+**Title и Description supplement и ValueSet:**
+
+Supplement и ValueSet над ним называют одно и то же понятие, поэтому их Title и Description строятся по одному шаблону:
+
+| Артефакт | Title | Description |
+|---|---|---|
+| Supplement CodeSystem | `"[Понятие] translations"` | `"[Понятие] supplement with translations in Uzbek and Russian"` |
+| ValueSet | `"[Понятие]"` | `"[Понятие во множественном числе]"` |
+
+Например, для категорий изделий: `"Device category translations"` / `"Device category supplement with translations in Uzbek and Russian"` и `"Device category"` / `"Device categories"`.
+
+- Пишите Title с заглавной буквы только в первом слове (sentence case); имена FHIR-ресурсов (например, `AdverseEvent`) пишутся как в спецификации.
+- Не добавляйте к Title тип артефакта: `"Code System"`, `"Value Set"`, `"CS"`, `"VS"`, `"Supplement CodeSystem"`. Тип уже виден на странице артефакта.
+- Не перечисляйте коды в Description: список кодов показан на странице артефакта и устаревает при изменении системы.
+- Существующие артефакты с другими Title приводите к шаблону, когда меняете их. Title и Description не входят в канонический URL, поэтому их изменение ничего не ломает.
 
 ### 5.4 Почему и как создавать Extensions
 

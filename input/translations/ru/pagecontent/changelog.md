@@ -2,7 +2,19 @@
 
 #### Добавлено
 
-Добавлен [UZ Core DeviceUsage](StructureDefinition-uz-core-deviceusage.html) для записи того, что пациент использует, использовал или будет использовать изделие, например инсулиновую помпу или слуховой аппарат. Он фиксирует, кто сообщил об использовании, когда оно началось, насколько регулярно изделие используется на самом деле и зачем, с узбекскими и русскими переводами кодов HL7 статуса использования и приверженности. Страница содержит вводное описание и Быстрый старт.
+[UZ Core Device](StructureDefinition-uz-core-device.html) описывает физическое медицинское изделие - больничное оборудование, например компьютерный томограф, или отдельное изделие, например внутриматочную спираль, - с его типом и категорией по SNOMED CT, производителем, моделью, серийным номером и номером серии, статусом и доступностью, а также организацией и местом, к которым оно относится. Вместе с профилем добавлены узбекские и русские переводы кодов HL7 для статуса изделия, статуса доступности, типа наименования и категории, а также типов контрацептивных изделий SNOMED CT. На странице профиля есть вводный раздел и Быстрый старт.
+
+[UZ Core DeviceUsage](StructureDefinition-uz-core-deviceusage.html) фиксирует, что пациент использует, использовал или будет использовать изделие, например кресло-коляску или имплантируемый венозный порт. Изделие указывается как концепт SNOMED CT или как ссылка на [UZ Core Device](StructureDefinition-uz-core-device.html). Он фиксирует, кто сообщил об использовании, когда оно началось и закончилось, условия использования, насколько регулярно изделие используется на самом деле и зачем. Вместе с ним добавлены узбекские и русские переводы кодов HL7 статуса использования изделия и приверженности. Страница профиля содержит вводное описание и Быстрый старт.
+
+#### Изменено
+
+[Supplement FHIR-типов](CodeSystem-fhir-types-cs.html) давал каждому типу ресурса перевод его определения вместо названия. Теперь у каждого типа есть узбекское и русское название, например "Bemor" и "Пациент" для `Patient`, с отметкой `preferredForLanguage`, поэтому `$lookup` с `displayLanguage` возвращает название. Переведённые определения остаются обозначениями с use SNOMED CT `900000000000550004` Definition.
+
+Все ссылки на Device в профилях UZ Core теперь указывают на [UZ Core Device](StructureDefinition-uz-core-device.html): Observation, Procedure, Condition, AdverseEvent, Composition, QuestionnaireResponse, Group, MedicationAdministration, MedicationDispense, InventoryItem, SupplyRequest и SupplyDelivery.
+
+#### Несовместимые изменения
+
+Удалены supplements типов ресурсов-запросов и типа ресурса участника, `https://terminology.dhp.uz/fhir/core/CodeSystem/request-resource-types-cs` и `https://terminology.dhp.uz/fhir/core/CodeSystem/participant-resource-type-cs`. Они переводили те же коды `http://hl7.org/fhir/fhir-types`, что и supplement FHIR-типов, поэтому у этих кодов было по два русских и два узбекских обозначения. [Типы ресурсов-запросов](ValueSet-request-resource-types-vs.html) и [Типы ресурсов](ValueSet-resource-type-vs.html) теперь используют [supplement FHIR-типов](CodeSystem-fhir-types-cs.html). Системы, загружающие supplements по URL, переходят на `https://terminology.dhp.uz/fhir/core/CodeSystem/fhir-types-cs`.
 
 ### Версия 0.12.0
 

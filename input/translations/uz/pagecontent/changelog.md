@@ -2,7 +2,19 @@
 
 #### Qo'shildi
 
-Bemor tibbiy buyumdan, masalan, insulin pompasi yoki eshitish apparatidan foydalanayotgani, foydalangani yoki foydalanishini qayd etish uchun [UZ Core DeviceUsage](StructureDefinition-uz-core-deviceusage.html) qo'shildi. U foydalanish haqida kim xabar berganini, qachon boshlanganini, buyum amalda qanchalik muntazam ishlatilishini va nima uchun ishlatilishini qayd etadi, HL7 foydalanish holati va rioya qilish kodlarining o'zbekcha va ruscha tarjimalari bilan. Sahifada tavsifiy kirish va Tez boshlash bo'limi bor.
+[UZ Core Device](StructureDefinition-uz-core-device.html) jismoniy tibbiy buyumni - kompyuter tomografi kabi shifoxona uskunasini yoki bachadon ichi spirali kabi alohida buyumni - uning SNOMED CT bo'yicha turi va toifasi, ishlab chiqaruvchisi, modeli, seriya va partiya raqamlari, holati va mavjudligi, shuningdek u tegishli bo'lgan tashkilot va joy bilan tavsiflaydi. Profil bilan birga HL7 ning buyum holati, mavjudlik holati, nom turi va toifa kodlarining hamda SNOMED CT kontratseptiv buyum turlarining o'zbekcha va ruscha tarjimalari qo'shildi. Profil sahifasida kirish qismi va Tez boshlash bo'limi mavjud.
+
+[UZ Core DeviceUsage](StructureDefinition-uz-core-deviceusage.html) bemor tibbiy buyumdan, masalan, nogironlik aravachasi yoki implantatsiya qilinadigan venoz portdan foydalanayotgani, foydalangani yoki foydalanishini qayd etadi. Buyum SNOMED CT konsepti yoki [UZ Core Device](StructureDefinition-uz-core-device.html) ga havola sifatida ko'rsatiladi. U foydalanish haqida kim xabar berganini, qachon boshlanib tugaganini, foydalanish sharoitini, buyum amalda qanchalik muntazam ishlatilishini va nima uchun ishlatilishini qayd etadi. U bilan birga HL7 buyumdan foydalanish holati va rioya qilish kodlarining o'zbekcha va ruscha tarjimalari qo'shildi. Profil sahifasida tavsifiy kirish va Tez boshlash bo'limi bor.
+
+#### O'zgartirildi
+
+[FHIR turlari supplementi](CodeSystem-fhir-types-cs.html) har bir resurs turiga nomi o'rniga uning ta'rifi tarjimasini berardi. Endi har bir turning o'zbekcha va ruscha nomi bor, masalan `Patient` uchun "Bemor" va "Пациент", ular `preferredForLanguage` bilan belgilangan, shuning uchun `displayLanguage` bilan `$lookup` nomni qaytaradi. Tarjima qilingan ta'riflar SNOMED CT `900000000000550004` Definition use bilan belgilashlar sifatida qoladi.
+
+UZ Core profillaridagi Device ga barcha havolalar endi [UZ Core Device](StructureDefinition-uz-core-device.html) ga yo'naltirilgan: Observation, Procedure, Condition, AdverseEvent, Composition, QuestionnaireResponse, Group, MedicationAdministration, MedicationDispense, InventoryItem, SupplyRequest va SupplyDelivery.
+
+#### Buzuvchi o'zgarishlar
+
+So'rov resurs turlari va ishtirokchi resurs turi supplementlari, `https://terminology.dhp.uz/fhir/core/CodeSystem/request-resource-types-cs` va `https://terminology.dhp.uz/fhir/core/CodeSystem/participant-resource-type-cs`, olib tashlandi. Ular FHIR turlari supplementi bilan bir xil `http://hl7.org/fhir/fhir-types` kodlarini tarjima qilardi, shuning uchun bu kodlarda ikkitadan ruscha va o'zbekcha belgilash bor edi. [So'rov resurs turlari](ValueSet-request-resource-types-vs.html) va [Resurs turlari](ValueSet-resource-type-vs.html) endi [FHIR turlari supplementi](CodeSystem-fhir-types-cs.html)dan foydalanadi. Supplementlarni URL bo'yicha yuklaydigan tizimlar `https://terminology.dhp.uz/fhir/core/CodeSystem/fhir-types-cs`ga o'tadi.
 
 ### Versiya 0.12.0
 

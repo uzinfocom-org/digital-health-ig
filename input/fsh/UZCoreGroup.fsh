@@ -42,7 +42,7 @@ Description: "Uzbekistan Core Group profile, used to represent a defined collect
 * member MS
 * member.entity MS
 * member.entity ^short = "Reference to the group member"
-* member.entity only Reference(CareTeam or Device or UZCoreGroup or UZCoreHealthcareService or UZCoreLocation or UZCoreOrganization or UZCorePatient or UZCorePractitioner or UZCorePractitionerRole or UZCoreRelatedPerson or UZCoreSpecimen)
+* member.entity only Reference(CareTeam or UZCoreDevice or UZCoreGroup or UZCoreHealthcareService or UZCoreLocation or UZCoreOrganization or UZCorePatient or UZCorePractitioner or UZCorePractitionerRole or UZCoreRelatedPerson or UZCoreSpecimen)
 * member.period MS
 * member.inactive MS
 
