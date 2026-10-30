@@ -1,6 +1,89 @@
 ### Ishlab chiqilmoqda
 
-(Hozircha o'zgarishlar yo'q)
+#### Buzuvchi o'zgarishlar
+
+[Mutaxassis sertifikati](NamingSystem-uzb-specialist-certificate.html) identifikator tizimi hujjatlar nomlar fazosidan tibbiyot xodimlari nomlar fazosiga ko'chirildi, chunki sertifikat hujjatni emas, balki mutaxassisning malakasini identifikatsiya qiladi: `https://dhp.uz/fhir/core/sid/doc/uz/specialist-certificate` o'rniga endi `https://dhp.uz/fhir/core/sid/pro/uz/specialist-certificate`. `Practitioner.qualification.identifier` yuboruvchilar yangi tizimga o'tadi; qiymat formati (seriya va raqam ajratuvchisiz, masalan `CA008815`) o'zgarmaydi.
+
+#### O'zgartirildi
+
+[UZ Core Patient](StructureDefinition-uz-core-patient.html) va [UZ Core Practitioner](StructureDefinition-uz-core-practitioner.html) `name.text`, `family`, `given` va `suffix` elementlarida `translation` kengaytmasini e'lon qiladi: ism o'zbek tilida yoziladi, uning ruscha va qoraqalpoqcha shakllari esa ikkinchi ism sifatida emas, o'sha `HumanName` ichida uzatiladi. [Nodira](Patient-example-nodira.html) va [practitioner](Practitioner-example-practitioner.html) misollarida ruscha shakllar bor, ikkala profil sahifasi ham bu usulni tavsiflaydi.
+
+### Versiya 0.11.1
+
+#### Qo'shildi
+
+[Skrining va patronaj dasturlari turlari](ValueSet-screening-program-type-vs.html) skrining dasturi identifikatorining qiymatlarini sanab o'tadi: sakkizta SNOMED CT skrining tushunchasi va milliy [skrining va patronaj kodlari](CodeSystem-screening-code-cs.html). Unga 0.11.0 da olib tashlangan `mserv-0007-00007` va `mserv-0007-00009` DMED ko'krak bezi va bachadon bo'yni saratoni skrining dasturlari sifatida qaytarildi, shunda ular HPV tizimining `268547008` va `171149006` skrining dasturlaridan ajralib turadi. Skrining xizmatining o'zi avvalgidek SNOMED CT da kodlanadi.
+
+[Tashxis turlari](CodeSystem-diagnosis-type-cs.html) `gencl-0001-00013` "Qo'shma kasallik tashxisi" kodi bilan to'ldirildi (o'zbek va rus tilidagi nomlari bilan), shunda skrining tizimlari o'z shakllaridagi barcha tashxis turlarini yubora oladi.
+
+[Tana sohalari qo'shimchasi](CodeSystem-body-site-cs.html) 4 ta o'rniga 1001 ta SNOMED CT tana tuzilmasiga o'zbekcha va ruscha nomlar beradi, yangi [laboratoriya usullari qo'shimchasi](CodeSystem-lab-methods-sct-cs.html) esa 1865 ta SNOMED CT usuliga.
+
+#### O'zgartirildi
+
+Takrorlanuvchi kodlangan elementlardagi qiymatlar to'plamlari endi butun elementga emas, ochiq slays orqali qo'llaniladi, shuning uchun milliy kodlar yonida boshqa tizimlardagi kodlarni ham ko'rsatish mumkin; elementning o'zi milliy to'plamni afzal (preferred) bog'lanish sifatida saqlab qoladi. Bu AllergyIntolerance `reaction.manifestation`; AuditEvent `agent.role`, `agent.authorization` va `entity.securityLabel`; Composition `category`; Consent `regulatoryBasis` va `provision.action`; DiagnosticReport `category`; Encounter `class`; EpisodeOfCare `reason.value` va `diagnosis.condition`; Immunization `protocolApplied.targetDisease`; ImmunizationRecommendation `recommendation.vaccineCode`; Observation `category`; ObservationDefinition `permittedUnit`; Procedure `bodySite`; RelatedPerson `relationship`; hamda ServiceRequest `reason` ga tegishli. [UZ Core Observation](StructureDefinition-uz-core-observation.html) da `interpretation` asosiy FHIR dagi kabi required o'rniga extensible bog'langan. Mavjud resurslar yaroqliligicha qoladi.
+
+O'zi almashtiradigan asosiy FHIR to'plamining faqat bir qismini saqlagan to'rtta qiymatlar to'plami endi uni to'liq o'z ichiga oladi. [Tashrif holati](ValueSet-encounter-status-vs.html) `on-hold`, `discharged` va `discontinued` ni qo'shadi; ActivityDefinition `kind` da ishlatiladigan [so'rov resurslari turlari](ValueSet-request-resource-types-vs.html) faqat ImmunizationRecommendation va MedicationRequest o'rniga barcha 17 ta so'rov resursi turini sanab o'tadi; [rozilikdagi foydalanish maqsadlari](ValueSet-consent-purpose-of-use-vs.html) faqat `RECORDMGT` o'rniga barcha foydalanish maqsadlarini o'z ichiga oladi, Consent `provision.purpose` esa unga asosiy FHIR dagi kabi required o'rniga extensible bog'langan; [holat ishtirokchilari rollari](ValueSet-condition-participation-role-vs.html) esa `transmitter` ni qo'shadi. Yangi tashrif holatlari va resurs turlari o'zbekcha va ruscha nomlarga ega.
+
+[UZ Core Observation](StructureDefinition-uz-core-observation.html) da `bodySite` asosiy FHIR tana sohalari to'plami o'rniga uni o'z ichiga olgan [tana sohalari](ValueSet-body-site-vs.html), ya'ni barcha SNOMED CT tana tuzilmalari bilan bog'langan. `method` ga bog'langan [laboratoriya usullari](ValueSet-lab-method-vs.html) milliy kodlarga asosiy FHIR kuzatuv usullaridagi SNOMED CT texnikalari, harakatlari va baholash protseduralarini qo'shadi. Mavjud resurslar yaroqliligicha qoladi.
+
+#### Hujjatlashtirish
+
+[UZ Core ActivityDefinition](StructureDefinition-uz-core-activitydefinition.html) skriningga taklif shablonini tavsiflaydi: `kind` - `ServiceRequest`, `intent` - `plan`, `profile` esa UZ Core ServiceRequest ni ko'rsatadi. Skrining misollari va ilovalar uchun shartnoma integratsiyalar qo'llanmasida.
+
+### Versiya 0.11.0
+
+#### Qo'shildi
+
+[Qon resurslarini boshqarish](components.html#blood-management) komponentida qon birligi yoki qon komponenti uchun [UZ Core BiologicallyDerivedProduct](StructureDefinition-uz-core-biologically-derived-product.html) qo'shildi. Birlik qon xizmati bergan [birlik raqamini](NamingSystem-uzb-blood-unit-number.html), `biologicalSourceEvent` da esa u olingan [donatsiya raqamini](NamingSystem-uzb-blood-donation-number.html) tashiydi; shu donatsiyadan qayta ishlab olingan har bir komponent bu raqamni saqlab qoladi. Qayta ishlangan yoki birlashtirilgan komponent `parent` da manba birliklariga havola qiladi, `property` bo'laklari esa ABO qon guruhi, RhD rezus turi, hajm va gematokritni qayd etadi. U bilan birga [qon mahsuloti turi](ValueSet-blood-product-type-snomed-vs.html), [qon guruhi](ValueSet-blood-group-vs.html) va [RhD turi](ValueSet-blood-rh-vs.html) uchun SNOMED CT to'plamlari hamda [mahsulot toifasi](ValueSet-product-category-vs.html) va [mahsulot holati](ValueSet-product-status-vs.html) to'plamlari qo'shildi, barchasi o'zbekcha va ruscha nomlar bilan.
+
+Ta'minot so'rovi, masalan, kasalxonaning qon xizmatidan qon komponentlarini so'rashi uchun [UZ Core SupplyRequest](StructureDefinition-uz-core-supply-request.html) qo'shildi. U kasalxonaning [so'rov raqami](NamingSystem-uzb-supply-request-number.html) va [ta'minot shartnomasi raqami](NamingSystem-uzb-supply-contract-number.html)ni identifikator sifatida, `category` da esa milliy [so'rov turi](ValueSet-request-type-vs.html)ni tashiydi: zaxira, shaxsiy (bemor uchun) yoki muassasalar o'rtasida. `item` qon mahsuloti turlariga (extensible) bog'langan, `parameter` bo'laklari komponentlar mos kelishi kerak bo'lgan qon guruhi va RhD turini uzatadi, `deliverFor` esa shaxsiy so'rov mo'ljallangan bemorni ko'rsatadi. [Holat](ValueSet-supply-request-status-vs.html) to'plami o'zbekcha va ruscha nomlarga ega.
+
+SupplyRequest bo'yicha yetkazib berish, masalan, qon xizmatining kasalxonaga qon komponentini berishi uchun [UZ Core SupplyDelivery](StructureDefinition-uz-core-supply-delivery.html) qo'shildi. U yetkazib beruvchining [yetkazib berish raqami](NamingSystem-uzb-supply-delivery-number.html)ni, yetkazib beruvchi, qabul qiluvchi va manzilni hamda yetkazilgan narsani qayd etadi, u UZ Core BiologicallyDerivedProduct ga havola qilishi mumkin. [Holat](ValueSet-supply-delivery-status-vs.html) va [tur](ValueSet-supply-delivery-type-vs.html) to'plamlari o'zbekcha va ruscha nomlarga ega.
+
+[Skrining va patronaj uchun SNOMED CT to'ldiruvchisi](CodeSystem-screening-sct-cs.html) endi skrining va patronaj xizmatlarini [ServiceRequest muolajalari va tekshiruvlari](ValueSet-service-request-code-vs.html) to'plamida kodlaydigan 15 ta SNOMED CT konseptiga o'zbekcha va ruscha nomlar beradi; to'plam ularni nomma-nom sanab o'tadi.
+
+[ServiceRequest toifalari](ValueSet-service-request-categories-vs.html) SNOMED CT `310422005` "Prevention/screening invitation" kodini o'z ichiga oladi, uning o'zbekcha va ruscha nomlari [toifalar to'ldiruvchisida](CodeSystem-sr-sct-category-cs.html). Skrining dasturining taklifnomasi yoki rejali ServiceRequest resursi uni `category` da olib yuradi, shuning uchun `code` da alohida taklifnoma kodi kerak emas.
+
+#### O'zgartirildi
+
+[UZ Core ServiceRequest](StructureDefinition-uz-core-servicerequest.html) profilida `supportingInfo` faqat boshqa ServiceRequest emas, balki istalgan resursga havola qila oladi. `category` endi bo'laklarga ajratilgan: ko'pi bilan bitta kategoriya [ServiceRequestCategoriesVS](ValueSet-service-request-categories-vs.html) to'plamidan majburiy (required) bog'lanish bilan olinadi, uning yonida esa istalgan kod tizimidagi boshqa kategoriyalar ko'rsatilishi mumkin.
+
+[UZ Core Observation](StructureDefinition-uz-core-observation.html) endi bir nechta `basedOn` qiymatiga ruxsat beradi (0..1 o'rniga 0..*): kuzatuv o'zi bajaradigan buyurtmaga ham, shu buyurtma tegishli bo'lgan rejaga ham havola qila oladi. Masalan, skrining natijasi yo'llanmaga va skrining dasturining rejali ServiceRequest resursiga havola qiladi. Mavjud kuzatuvlar yaroqli bo'lib qoladi.
+
+[UZ Core AdverseEvent](StructureDefinition-uz-core-adverse-event.html) dagi `suspectEntity.instance` endi istalgan BiologicallyDerivedProduct emas, balki [UZ Core BiologicallyDerivedProduct](StructureDefinition-uz-core-biologically-derived-product.html) ga havola qiladi.
+
+#### Buzuvchi o'zgarishlar
+
+20 ta [skrining va uyga tashrif kodlari](CodeSystem-screening-code-cs.html)dan 16 tasi SNOMED CT foydasiga olib tashlandi. [ServiceRequest muolajalari va tekshiruvlari](ValueSet-service-request-code-vs.html) to'plami bu SNOMED CT konseptlarini muolajalar filtri orqali avvaldan qabul qilar edi. To'rtta kod qoladi, chunki ular uchun mos SNOMED CT konsepti yo'q: `mserv-0007-00003` (serebrovaskulyar kasalliklar so'rovnomasi), `mserv-0007-00011` (emlashga chaqiruv), `mserv-0007-00012` (emlashdan keyingi patronaj) va `mserv-0007-00017` (reproduktiv yoshdagi ayollar patronaji). Olib tashlangan kodni yuboruvchilar uning SNOMED CT konseptiga o'tadi:
+
+| Olib tashlangan kod | Xizmat | SNOMED CT |
+|---|---|---|
+| `mserv-0007-00001` | Yurak ishemik kasalligining testoldi ehtimolini baholash so'rovnomasi | `171223006` Ischemic heart disease screening |
+| `mserv-0007-00002` | Fertillik bo'yicha so'rovnoma | `408961002` Fertility care assessment |
+| `mserv-0007-00004` | Gelmintoz kasalliklari so'rovnomasi | `171147008` Screening for intestinal helminthiasis |
+| `mserv-0007-00005` | Yurak-qon tomir kasalliklari xavfi so'rovnomasi | `300007000` Screening for cardiovascular system disease |
+| `mserv-0007-00006` | Qandli diabet so'rovnomasi | `171183004` Diabetes mellitus screening |
+| `mserv-0007-00007` | Ko'krak bezi saratoni so'rovnomasi | `268547008` Screening for malignant neoplasm of breast |
+| `mserv-0007-00008` | Onkogematologik kasalliklar so'rovnomasi | `762445000` Screening for hematological disorder |
+| `mserv-0007-00009` | Bachadon bo'yni saratoni skriningi | `171149006` Screening for malignant neoplasm of cervix |
+| `mserv-0007-00010` | Surunkali kasalliklar | `170549007` Chronic disease monitoring |
+| `mserv-0007-00013` | Uy sharoitidagi statsionar xizmat | `60689008` Home care of patient |
+| `mserv-0007-00014` | Profilaktik tibbiy ko'rik | `103740001` Periodic physical examination |
+| `mserv-0007-00015` | Homilador ayollar (12-31 hafta) | `424525001` Antenatal care |
+| `mserv-0007-00016` | Tug'ruqdan keyingi patronaj (3-15-30 kun) | `133906008` Postpartum care |
+| `mserv-0007-00018` | Bolalar (3-15-30 kun) | `408987002` Newborn care assessment |
+| `mserv-0007-00019` | Bolalar (3-60 oy) | `409027005` Infant care assessment |
+| `mserv-0007-00020` | Ko'krak bezi saratoni skriningi | `268547008` Screening for malignant neoplasm of breast |
+
+Ko'krak bezi saratoni so'rovnomasi va skriningi kodlari ikkalasi ham `268547008` ga mos keladi. Eski nomlardagi hafta, kun va oy oraliqlari SNOMED CT konseptlariga kirmaydi.
+
+#### Hujjatlashtirish
+
+[Identifikatorlar](identifiers.html) sahifasiga mahsulot identifikatorlari, masalan, qon birliklari raqamlari uchun `prd` nom maydoni qo'shildi. U tashqi reestr o'z tizimini e'lon qilmagan raqamlar uchun ishlatiladi.
+
+[FHIR asoslari](fhir-basics.html) sahifasi endi ilovalar faqat mahalliy kodlar bilan almashishi kerakligini aytmaydi. DHP mos keladigan joyda ICD-10, SNOMED CT yoki LOINC kabi xalqaro standart kodidan foydalanadi va mahalliy kodni faqat hech bir standart qamramaydigan tushuncha uchun belgilaydi; ConceptMap lar bu mahalliy kodlarni xalqaro terminologiyalarga moslashtiradi.
+
+Yangi [Tarjimalar haqida ma'lumot](translationinfo.html) sahifasi rus va o'zbek versiyalari muharrirlar ko'rib chiqayotgan mashina tarjimalari ekanini, farq bo'lsa ingliz matni ustun turishini va tarjimadagi muammo haqida qanday xabar berishni tushuntiradi.
 
 ### Versiya 0.10.0
 
@@ -88,7 +171,7 @@ Yurak-qon tomir kasalliklari xavfi skriningi so'rovnomasi CvdRiskCategoryCS va C
 
 #### Hujjatlashtirish
 
-[Komponentlar](components.html) sahifasi endi Qon resurslarini boshqarish, Hamshiralik ishi va Ta'minot komponentlarini tavsiflaydi. [Yo'llanmalar](components.html#yollanmalar) bo'limi endi yo'llanma tasniflanadigan yettita o'lchamni hamda yo'llanmaning ServiceRequest i uning davlat sug'urtasi bo'yicha kelishilishini boshqaruvchi Task resurslari bilan qanday bog'lanishini yoritadi.
+[Komponentlar](components.html) sahifasi endi Qon resurslarini boshqarish, Hamshiralik ishi va Ta'minot komponentlarini tavsiflaydi. [Yo'llanmalar](components.html#referrals) bo'limi endi yo'llanma tasniflanadigan yettita o'lchamni hamda yo'llanmaning ServiceRequest i uning davlat sug'urtasi bo'yicha kelishilishini boshqaruvchi Task resurslari bilan qanday bog'lanishini yoritadi.
 
 Ish jarayoni sahifasiga ega komponentlar endi unga havola beradi, har bir ish jarayoni sahifasi esa komponentga qaytadan havola qiladi. Retseptlar bo'limi Texnik loyihasi yozilguncha [Elektron retsept va dori vositasini berish](workflow-prescription.html) jarayoniga ishora qiladi.
 

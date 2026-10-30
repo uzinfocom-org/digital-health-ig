@@ -10,8 +10,6 @@ Resurslar zanjiri va uning references:
 
 <div>{% include lab-references.svg %}</div><br clear="all"/>
 
-> Profil holati: to'rtta resursning barchasi UZ Core'da profillangan - [Specimen](StructureDefinition-uz-core-specimen.html), [Observation](StructureDefinition-uz-core-observation.html), [ServiceRequest](StructureDefinition-uz-core-servicerequest.html) va [DiagnosticReport](StructureDefinition-uz-core-diagnostic-report.html). Har bir resursdagi `meta.profile` elementida mos profilni ko'rsating va quyidagi references tuzilmasiga rioya qiling.
-
 ### 1. Tekshiruvni tayinlash
 
 Klinitsist [ServiceRequest](StructureDefinition-uz-core-servicerequest.html) resursini yaratadi va unda `intent = order` qiymatini, tekshiruv yoki panelni `code` elementida, bemorni `subject` elementida, requester elementida so'rov yuboruvchini va `reasonCode`/`reasonReference` elementida tekshirilayotgan Condition resursini ko'rsatadi. Tayinlash mumkin bo'lgan tekshiruvlar [HealthcareService](StructureDefinition-uz-core-healthcareservice.html) yozuvlari sifatida e'lon qilinadi; `priority` qiymati `routine`, `urgent` yoki `asap`.
@@ -60,5 +58,5 @@ Butun to'plamni bitta tranzaksion Bundle sifatida qaytarish tavsiya etiladi, shu
 ### Tegishli materiallar
 
 - Profillar: [Specimen](StructureDefinition-uz-core-specimen.html) &middot; [Observation](StructureDefinition-uz-core-observation.html) &middot; [ServiceRequest](StructureDefinition-uz-core-servicerequest.html) &middot; [DiagnosticReport](StructureDefinition-uz-core-diagnostic-report.html) &middot; [HealthcareService](StructureDefinition-uz-core-healthcareservice.html)
-- Komponent: [Laboratoriya](components.html#laboratoriya)
+- Komponent: [Laboratoriya](components.html#laboratory)
 - [Ish jarayonlari haqida umumiy ma'lumot](workflows.html) &middot; [Umumiy ko'rsatmalar](general-guidance.html) &middot; [Hayotiy ko'rsatkichlar](vital-signs.html)

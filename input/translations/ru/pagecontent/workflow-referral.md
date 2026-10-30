@@ -1,8 +1,6 @@
 Этот процесс показывает, как создаётся и выполняется направление. Именно при работе с направлениями разработчики чаще всего сталкиваются с трудностями, поскольку используются два ресурса, а их взаимосвязь неочевидна из таблиц профилей. Главное правило можно сформулировать одной строкой:
 
-> `ServiceRequest` - это само направление, то есть *что* необходимо выполнить. `Task` - это работа по его выполнению: *кто* её выполнил, *когда* и *на каком этапе* она находится.
-
-> Статус профилей: оба ресурса теперь профилированы - [UZ Core ServiceRequest](StructureDefinition-uz-core-servicerequest.html) для самого направления и [UZ Core Task Referral Approval](StructureDefinition-uz-core-referral-approval-task.html) для этапов согласования. Оба по-прежнему помечены как экспериментальные, поэтому изучите их перед началом реализации. Ресурсы [Procedure](StructureDefinition-uz-core-procedure.html), [Observation](StructureDefinition-uz-core-observation.html), [Encounter](StructureDefinition-uz-core-encounter.html) и [Condition](StructureDefinition-uz-core-condition.html), используемые при выполнении направления, уже профилированы.
+> [`ServiceRequest`](StructureDefinition-uz-core-servicerequest.html) - это само направление, то есть *что* необходимо выполнить. [`Task`](StructureDefinition-uz-core-referral-approval-task.html) - это работа по его выполнению: *кто* её выполнил, *когда* и *на каком этапе* она находится.
 
 Участники: направляющий клиницист; комиссии по согласованию (для направлений, финансируемых государством); медицинская организация, оказывающая услугу.
 
@@ -69,5 +67,5 @@ GET [base]/Procedure?based-on=ServiceRequest/[id]
 ### Связанные материалы
 
 - Профили, используемые при выполнении направления: [Procedure](StructureDefinition-uz-core-procedure.html) &middot; [Observation](StructureDefinition-uz-core-observation.html) &middot; [Encounter](StructureDefinition-uz-core-encounter.html) &middot; [Condition](StructureDefinition-uz-core-condition.html) &middot; [HealthcareService](StructureDefinition-uz-core-healthcareservice.html)
-- Компонент: [Направления](components.html#направления)
+- Компонент: [Направления](components.html#referrals)
 - [Обзор процессов](workflows.html) &middot; [Общие рекомендации](general-guidance.html)

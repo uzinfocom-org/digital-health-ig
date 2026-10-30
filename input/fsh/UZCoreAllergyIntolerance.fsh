@@ -32,10 +32,23 @@ Description: "Uzbekistan Core profile for AllergyIntolerance, representing clini
 * onset[x] MS
 * extension contains $allergyintolerance-abatement named abatement 0..1 MS
 * reaction MS
+  * extension contains
+      $openEHR-administration named administration 0..1 MS
+  * extension[administration] ^short = "Medication administration associated with this allergic reaction"
+  * extension[administration].valueReference only Reference(UZCoreMedicationAdministration)
   * severity MS
   * severity from AllergyReactionSeverityVS (required)
   * manifestation MS
-  * manifestation from ReactionManifestationVS (extensible)
+  * manifestation from ReactionManifestationVS (preferred)
+  * manifestation ^slicing.discriminator.type = #value
+  * manifestation ^slicing.discriminator.path = "concept.coding.system"
+  * manifestation ^slicing.rules = #open
+  * manifestation ^slicing.description = "Manifestations from the national value set; codes from other systems are allowed alongside them"
+  * manifestation ^slicing.ordered = false
+  * manifestation contains dhpManifestation 0..* MS
+  * manifestation[dhpManifestation] from ReactionManifestationVS (required)
+  * manifestation[dhpManifestation].concept.coding.system = Canonical(ReactionManifestationCS)
+  * manifestation[dhpManifestation] ^short = "Reaction manifestation from the national value set"
   * substance MS
   * substance from ReactionSubstanceVS (extensible)
 
@@ -67,6 +80,26 @@ Description: "Example instance conforming to UZCoreAllergyIntolerance."
 * reaction.manifestation[0] = allergy-reaction-manifestation-cs#aller-0006-00004 "Shortness of breath"
 * reaction.substance = allergy-reaction-substance-cs#aller-0010-00031 "Walnut, pollen (Jug r_pollen)"
 
+Instance: example-analgesic-allergy
+InstanceOf: UZCoreAllergyIntolerance
+Usage: #example
+Title: "Example UZ Core AllergyIntolerance - Analgesic Allergy"
+Description: "Skin rash after a paracetamol dose, linked to the administration that caused it."
+
+* clinicalStatus = $allergy-clinical#active "Active"
+* verificationStatus = $allergy-verification#unconfirmed "Unconfirmed"
+* type = $allergy-intolerance-type#allergy "Allergy"
+* category = $allergy-category#medication "Medication"
+
+* code = allergen-codes-cs#aller-0010-00343 "Allergic reaction caused by analgesic"
+
+* patient = Reference(Patient/example-salim)
+
+* onsetDateTime = "2026-08-28"
+
+* reaction.severity = #mild
+* reaction.manifestation[0] = allergy-reaction-manifestation-cs#aller-0009-00002 "Skin rash"
+* reaction.extension[administration].valueReference = Reference(example-paracetamol-administration)
 
 
 

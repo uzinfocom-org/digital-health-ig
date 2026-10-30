@@ -1,6 +1,89 @@
 ### В разработке
 
-(Пока без изменений)
+#### Несовместимые изменения
+
+Система идентификаторов [сертификата специалиста](NamingSystem-uzb-specialist-certificate.html) перенесена из пространства документов в пространство медицинских работников, так как сертификат идентифицирует квалификацию специалиста, а не документ: `https://dhp.uz/fhir/core/sid/doc/uz/specialist-certificate` заменён на `https://dhp.uz/fhir/core/sid/pro/uz/specialist-certificate`. Отправители `Practitioner.qualification.identifier` переходят на новую систему; формат значения (серия и номер слитно, например `CA008815`) не меняется.
+
+#### Изменено
+
+[UZ Core Patient](StructureDefinition-uz-core-patient.html) и [UZ Core Practitioner](StructureDefinition-uz-core-practitioner.html) объявляют расширение `translation` на `name.text`, `family`, `given` и `suffix`: имя записывается на узбекском, а его русская и каракалпакская формы передаются в том же `HumanName`, а не вторым именем. Примеры [Nodira](Patient-example-nodira.html) и [practitioner](Practitioner-example-practitioner.html) содержат русские формы, а страницы обоих профилей описывают этот подход.
+
+### Версия 0.11.1
+
+#### Добавлено
+
+[Типы программ скрининга и патронажа](ValueSet-screening-program-type-vs.html) перечисляют значения идентификатора программы скрининга: восемь концептов скрининга SNOMED CT и национальные [коды скрининга и патронажа](CodeSystem-screening-code-cs.html). В них вернулись `mserv-0007-00007` и `mserv-0007-00009`, удалённые в 0.11.0, как программы DMED по скринингу рака молочной железы и шейки матки, чтобы они отличались от программ скрининга HPV `268547008` и `171149006`. Сама услуга скрининга по-прежнему кодируется в SNOMED CT.
+
+[Типы диагнозов](CodeSystem-diagnosis-type-cs.html) дополнены кодом `gencl-0001-00013` «Диагноз сочетанного заболевания» с узбекским и русским обозначениями, чтобы скрининговые системы могли передавать все типы диагноза из своих форм.
+
+[Дополнение для анатомических локализаций](CodeSystem-body-site-cs.html) даёт узбекские и русские обозначения 1001 структуре тела SNOMED CT вместо 4, а новое [дополнение для лабораторных методов](CodeSystem-lab-methods-sct-cs.html) - 1865 методам SNOMED CT.
+
+#### Изменено
+
+Наборы значений на повторяющихся кодируемых элементах теперь применяются через открытый слайс, а не ко всему элементу, поэтому рядом с национальными кодами можно указывать коды из других систем; сам элемент сохраняет национальный набор как предпочтительную (preferred) связку. Это касается AllergyIntolerance `reaction.manifestation`; AuditEvent `agent.role`, `agent.authorization` и `entity.securityLabel`; Composition `category`; Consent `regulatoryBasis` и `provision.action`; DiagnosticReport `category`; Encounter `class`; EpisodeOfCare `reason.value` и `diagnosis.condition`; Immunization `protocolApplied.targetDisease`; ImmunizationRecommendation `recommendation.vaccineCode`; Observation `category`; ObservationDefinition `permittedUnit`; Procedure `bodySite`; RelatedPerson `relationship`; и ServiceRequest `reason`. В [UZ Core Observation](StructureDefinition-uz-core-observation.html) `interpretation` привязан как extensible вместо required, как в базовом FHIR. Существующие ресурсы остаются валидными.
+
+Четыре набора значений, которые сохраняли лишь часть заменяемого ими базового набора FHIR, теперь включают его целиком. [Статус встречи](ValueSet-encounter-status-vs.html) добавляет `on-hold`, `discharged` и `discontinued`; [типы ресурсов-запросов](ValueSet-request-resource-types-vs.html), используемые в ActivityDefinition `kind`, перечисляют все 17 типов ресурсов-запросов вместо только ImmunizationRecommendation и MedicationRequest; [цели использования в согласии](ValueSet-consent-purpose-of-use-vs.html) включают все цели использования вместо только `RECORDMGT`, а Consent `provision.purpose` привязан к ним как extensible вместо required, как в базовом FHIR; [роли участников состояния](ValueSet-condition-participation-role-vs.html) добавляют `transmitter`. Новые статусы встречи и типы ресурсов имеют узбекские и русские обозначения.
+
+В [UZ Core Observation](StructureDefinition-uz-core-observation.html) `bodySite` привязан к [анатомическим локализациям](ValueSet-body-site-vs.html), то есть ко всем структурам тела SNOMED CT, вместо базового набора локализаций FHIR, который в них входит. [Лабораторные методы](ValueSet-lab-method-vs.html), привязанные к `method`, дополняют национальные коды техниками, действиями и оценочными процедурами SNOMED CT из базового набора методов наблюдения FHIR. Существующие ресурсы остаются валидными.
+
+#### Документация
+
+[UZ Core ActivityDefinition](StructureDefinition-uz-core-activitydefinition.html) описывает шаблон приглашения на скрининг: `kind` равен `ServiceRequest`, `intent` равен `plan`, а `profile` указывает на UZ Core ServiceRequest. Примеры скрининга и контракт для приложений находятся в руководстве по интеграциям.
+
+### Версия 0.11.0
+
+#### Добавлено
+
+Добавлен [UZ Core BiologicallyDerivedProduct](StructureDefinition-uz-core-biologically-derived-product.html) для единицы крови или компонента крови в [управлении кровью](components.html#blood-management). Единица несёт [номер единицы](NamingSystem-uzb-blood-unit-number.html), присвоенный службой крови, а в `biologicalSourceEvent` - [номер донации](NamingSystem-uzb-blood-donation-number.html), из которой она получена; этот номер сохраняют все компоненты, полученные из той же донации. Переработанный или пулированный компонент ссылается на исходные единицы в `parent`, а срезы `property` фиксируют группу крови ABO, резус-принадлежность RhD, объём и гематокрит. Вместе с ним добавлены наборы значений SNOMED CT для [типа продукта крови](ValueSet-blood-product-type-snomed-vs.html), [группы крови](ValueSet-blood-group-vs.html) и [типа RhD](ValueSet-blood-rh-vs.html), а также наборы [категории продукта](ValueSet-product-category-vs.html) и [статуса продукта](ValueSet-product-status-vs.html), все с узбекскими и русскими обозначениями.
+
+Добавлен [UZ Core SupplyRequest](StructureDefinition-uz-core-supply-request.html) для заявки на поставку, например заявки больницы на компоненты крови в службу крови. Он несёт [номер заявки](NamingSystem-uzb-supply-request-number.html) больницы и [номер договора поставки](NamingSystem-uzb-supply-contract-number.html) как идентификаторы, а в `category` - национальный [тип заявки](ValueSet-request-type-vs.html): пополнение запаса, именная (для пациента) или между учреждениями. `item` привязан (extensible) к типам продуктов крови, срезы `parameter` передают группу крови и тип RhD, которым должны соответствовать компоненты, а `deliverFor` указывает пациента, для которого предназначена именная заявка. Набор значений [статуса](ValueSet-supply-request-status-vs.html) имеет узбекские и русские обозначения.
+
+Добавлен [UZ Core SupplyDelivery](StructureDefinition-uz-core-supply-delivery.html) для поставки по SupplyRequest, например выдачи компонента крови службой крови в больницу. Он фиксирует [номер поставки](NamingSystem-uzb-supply-delivery-number.html) поставщика, поставщика, получателя и место назначения, а также поставленный предмет, который может ссылаться на UZ Core BiologicallyDerivedProduct. Наборы значений [статуса](ValueSet-supply-delivery-status-vs.html) и [типа](ValueSet-supply-delivery-type-vs.html) имеют узбекские и русские обозначения.
+
+[Дополнение SNOMED CT для скрининга и патронажа](CodeSystem-screening-sct-cs.html) даёт узбекские и русские обозначения 15 концептам SNOMED CT, которыми теперь кодируются услуги скрининга и патронажа в наборе [процедур и исследований ServiceRequest](ValueSet-service-request-code-vs.html); набор перечисляет их по имени.
+
+[Категории ServiceRequest](ValueSet-service-request-categories-vs.html) включают SNOMED CT `310422005` «Prevention/screening invitation» с узбекским и русским обозначениями в [дополнении категорий](CodeSystem-sr-sct-category-cs.html). Приглашение или плановый ServiceRequest скрининговой программы передаёт его в `category`, поэтому отдельный код приглашения в `code` не нужен.
+
+#### Изменено
+
+В [UZ Core ServiceRequest](StructureDefinition-uz-core-servicerequest.html) `supportingInfo` может ссылаться на любой ресурс, а не только на другой ServiceRequest. `category` теперь разделён на срезы: не более одной категории берётся из [ServiceRequestCategoriesVS](ValueSet-service-request-categories-vs.html) с обязательной (required) привязкой, а рядом с ней могут указываться любые другие категории из любых кодовых систем.
+
+[UZ Core Observation](StructureDefinition-uz-core-observation.html) допускает несколько значений `basedOn` (0..* вместо 0..1): наблюдение может ссылаться и на назначение, которое оно выполняет, и на план, к которому относится это назначение. Например, результат скрининга ссылается на направление и на плановый ServiceRequest скрининговой программы. Существующие наблюдения остаются валидными.
+
+`suspectEntity.instance` в [UZ Core AdverseEvent](StructureDefinition-uz-core-adverse-event.html) теперь ссылается на [UZ Core BiologicallyDerivedProduct](StructureDefinition-uz-core-biologically-derived-product.html), а не на любой BiologicallyDerivedProduct.
+
+#### Несовместимые изменения
+
+16 из 20 [кодов скрининга и патронажа](CodeSystem-screening-code-cs.html) удалены в пользу SNOMED CT. Набор [процедур и исследований ServiceRequest](ValueSet-service-request-code-vs.html) уже принимал эти концепты SNOMED CT через фильтр процедур. Четыре кода остаются, так как подходящего концепта SNOMED CT для них нет: `mserv-0007-00003` (опросник цереброваскулярной патологии), `mserv-0007-00011` (призыв к вакцинации), `mserv-0007-00012` (патронаж после вакцинации) и `mserv-0007-00017` (патронаж женщин детородного возраста). Отправители удалённого кода переходят на соответствующий концепт SNOMED CT:
+
+| Удалённый код | Услуга | SNOMED CT |
+|---|---|---|
+| `mserv-0007-00001` | Опросник предтестовой вероятности ишемической болезни сердца | `171223006` Ischemic heart disease screening |
+| `mserv-0007-00002` | Опросник фертильности | `408961002` Fertility care assessment |
+| `mserv-0007-00004` | Опросник гельминтозных заболеваний | `171147008` Screening for intestinal helminthiasis |
+| `mserv-0007-00005` | Опросник риска сердечно-сосудистых заболеваний | `300007000` Screening for cardiovascular system disease |
+| `mserv-0007-00006` | Опросник сахарного диабета | `171183004` Diabetes mellitus screening |
+| `mserv-0007-00007` | Опросник рака молочной железы | `268547008` Screening for malignant neoplasm of breast |
+| `mserv-0007-00008` | Опросник онкогематологических заболеваний | `762445000` Screening for hematological disorder |
+| `mserv-0007-00009` | Скрининг по раку шейки матки | `171149006` Screening for malignant neoplasm of cervix |
+| `mserv-0007-00010` | Хронические заболевания | `170549007` Chronic disease monitoring |
+| `mserv-0007-00013` | Стационар на дому | `60689008` Home care of patient |
+| `mserv-0007-00014` | Профилактический осмотр | `103740001` Periodic physical examination |
+| `mserv-0007-00015` | Беременные (12-31 недели) | `424525001` Antenatal care |
+| `mserv-0007-00016` | Послеродовой (3-15-30 дней) | `133906008` Postpartum care |
+| `mserv-0007-00018` | Дети (3-15-30 дней) | `408987002` Newborn care assessment |
+| `mserv-0007-00019` | Дети (3-60 месяцев) | `409027005` Infant care assessment |
+| `mserv-0007-00020` | Скрининг по раку молочной железы | `268547008` Screening for malignant neoplasm of breast |
+
+Коды опросника и скрининга рака молочной железы оба соответствуют `268547008`. Диапазоны недель, дней и месяцев из прежних названий в концепты SNOMED CT не входят.
+
+#### Документация
+
+На странице [идентификаторов](identifiers.html) добавлено пространство имён `prd` для идентификаторов продуктов, например номеров единиц крови, для которых внешний реестр не публикует собственную систему.
+
+Страница [Основы FHIR](fhir-basics.html) больше не требует, чтобы приложения обменивались только локальными кодами. DHP использует код международного стандарта, например ICD-10, SNOMED CT или LOINC, везде, где он подходит, и вводит локальный код только для понятия, которого нет ни в одном стандарте; ConceptMap сопоставляют такие локальные коды с международными терминологиями.
+
+Новая страница [Информация о переводах](translationinfo.html) объясняет, что русская и узбекская версии - машинные переводы, которые проверяют редакторы, что при расхождении приоритет имеет английский текст, и как сообщить о проблеме с переводом.
 
 ### Версия 0.10.0
 
@@ -88,7 +171,7 @@ Supplement классов ролей DMED `https://terminology.dhp.uz/fhir/core/
 
 #### Документация
 
-На странице [Компоненты](components.html) теперь описаны компоненты "Управление кровью", "Сестринское дело" и "Поставки". Раздел [Направления](components.html#направления) теперь описывает семь признаков, по которым классифицируется направление, и то, как ServiceRequest направления связан с Task, которые ведут его согласование в рамках государственного медицинского страхования.
+На странице [Компоненты](components.html) теперь описаны компоненты "Управление кровью", "Сестринское дело" и "Поставки". Раздел [Направления](components.html#referrals) теперь описывает семь признаков, по которым классифицируется направление, и то, как ServiceRequest направления связан с Task, которые ведут его согласование в рамках государственного медицинского страхования.
 
 Компоненты, у которых есть страница процесса, теперь ссылаются на неё, а каждая страница процесса ссылается обратно. Раздел "Рецепты" указывает на процесс [Электронный рецепт и отпуск лекарственного средства](workflow-prescription.html), пока не готов его технический проект.
 

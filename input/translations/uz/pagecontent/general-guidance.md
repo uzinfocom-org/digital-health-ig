@@ -2,7 +2,7 @@ Barcha UZ Core profillariga tatbiq etiladigan umumiy qoidalar. Ular joriy etuvch
 
 ### Resursning majburiy metama'lumotlari {#metadata}
 
-Platformada almashiniladigan har bir resurs [klinik ma'lumotlaridan](artifacts.html#structures-resource-profiles) tashqari quyidagilarni ham o'z ichiga olishi shart:
+Platformada almashiniladigan har bir resurs [klinik ma'lumotlaridan](artifacts.html) tashqari quyidagilarni ham o'z ichiga olishi shart:
 
 - `meta.profile` - resurs muvofiq ekanini ko'rsatadigan UZ Core profilining kanonik URL manzili (versiyasi bilan). Server resursni qaysi qoidalar bo'yicha validatsiya qilish kerakligini shu ma'lumot orqali aniqlaydi.
 - `id` - resursning serverdagi mantiqiy identifikatori. Yangi resursga identifikator server tomonidan biriktiriladi.
@@ -32,7 +32,7 @@ Ayrim profillarda `data-absent-reason` uchun alohida joy mavjud. Masalan, [UZ Co
 
 [Must Support](must-support.html) bo'limida buning <span style="padding-left: 3px; padding-right: 3px; color: white; background-color: #D50000" title="This element must be supported">S</span> belgisi bilan qanday bog'liqligi bayon qilingan.
 
-### O'lchov birliklari va miqdorlar
+### O'lchov birliklari va miqdorlar {#units-and-quantities}
 
 Raqamli o'lchovlarda o'lchov birligi kodi uchun UCUM (`http://unitsofmeasure.org`) ishlatiladi:
 
@@ -110,7 +110,7 @@ POST [base]/ValueSet/$validate-code
 
 [Identifikator tizimlari](identifiers.html) bo'limida terminologiya tizimlari emas, aynan identifikator tizimlari haqida ma'lumot berilgan.
 
-### Bundle'lar: document, transaction va searchset
+### Bundle'lar: document, transaction va searchset {#bundles-document-vs-transaction-vs-searchset}
 
 Amalga oshirayotgan vazifangizga qarab `Bundle.type` qiymatini tanlang:
 
@@ -123,7 +123,7 @@ Amalga oshirayotgan vazifangizga qarab `Bundle.type` qiymatini tanlang:
 
 Bir nechta resurs o'zaro bog'liq bo'lsa, ularni muvofiqlashtirilmagan alohida chaqiruvlar orqali emas, bitta Bundle tarkibida birgalikda yuboring. [Ish jarayonlari](workflows.html) bo'limida transaction va document turidagi Bundle'larning aniq misollari keltirilgan.
 
-### Yaratish, yangilash va o'chirish
+### Yaratish, yangilash va o'chirish {#creating-updating-and-deleting}
 
 - Platforma standart REST amallarini qo'llab-quvvatlaydi: `GET` (o'qish/qidirish), `POST` (yaratish), `PUT` (yangilash), `PATCH` (qisman yangilash) va `DELETE`. Har bir resurs uchun aniq amallar [CapabilityStatement](CapabilityStatement-DHPCapabilityStatement.html)'da ko'rsatilgan.
 - Mantiqiy o'chirish, jismoniy o'chirish emas. Resursni o'chirish orqali klinik ma'lumotlar yo'q qilinmaydi. Yozuvdan foydalanishni to'xtatish uchun uning holatini o'zgartiring: holatga qarab `entered-in-error`, `inactive`, `revoked` yoki ushbu resurs uchun mos boshqa qiymatni belgilang. Masalan, qaytarib olingan `Goal` `cancelled`/`completed` holatiga o'tkaziladi, qaytarib olingan `Consent` uchun `inactive` belgilanadi, xato klinik yozuv uchun esa `entered-in-error` belgilanadi. Resurs va uning tarixi bo'yicha so'rov yuborish imkoniyati saqlanib qoladi.

@@ -106,7 +106,7 @@ The component provides:
 - patient access to visit results, procedures performed, and recommendations through the patient portal;
 - monitoring of patronage activity and reporting by healthcare organization and region.
 
-The purposes a patronage visit is made for - post-vaccination and postpartum patronage, patronage of women of reproductive age, preventive examination, chronic disease follow-up, and home inpatient care - are published in this guide as [screening and home visit codes](CodeSystem-screening-code-cs.html), used on `code` in [UZ Core ServiceRequest](StructureDefinition-uz-core-servicerequest.html).
+The purpose a patronage visit is made for goes on `code` in [UZ Core ServiceRequest](StructureDefinition-uz-core-servicerequest.html). Postpartum patronage, preventive examination, chronic disease follow-up, and home inpatient care are coded in SNOMED CT, from [ServiceRequest procedures and investigations](ValueSet-service-request-code-vs.html). Post-vaccination patronage and patronage of women of reproductive age have no suitable SNOMED CT concept and use this guide's [screening and home visit codes](CodeSystem-screening-code-cs.html).
 
 Scheduling of nursing visits is handled by the Appointment and Scheduling component.
 
