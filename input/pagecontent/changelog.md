@@ -1,3 +1,9 @@
+### Version 0.13.0
+
+#### Added
+
+Added [UZ Core DeviceUsage](StructureDefinition-uz-core-deviceusage.html) to record that a patient uses, has used or will use a device, such as an insulin pump or a hearing aid. It records who reported the use, when it started, how regularly the device is actually used and why, with Uzbek and Russian translations of the HL7 usage status and adherence codes. The page has a narrative intro and Quick Start.
+
 ### Version 0.12.0
 
 #### Added

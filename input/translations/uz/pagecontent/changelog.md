@@ -1,3 +1,9 @@
+### Versiya 0.13.0
+
+#### Qo'shildi
+
+Bemor tibbiy buyumdan, masalan, insulin pompasi yoki eshitish apparatidan foydalanayotgani, foydalangani yoki foydalanishini qayd etish uchun [UZ Core DeviceUsage](StructureDefinition-uz-core-deviceusage.html) qo'shildi. U foydalanish haqida kim xabar berganini, qachon boshlanganini, buyum amalda qanchalik muntazam ishlatilishini va nima uchun ishlatilishini qayd etadi, HL7 foydalanish holati va rioya qilish kodlarining o'zbekcha va ruscha tarjimalari bilan. Sahifada tavsifiy kirish va Tez boshlash bo'limi bor.
+
 ### Versiya 0.12.0
 
 #### Qo'shildi
