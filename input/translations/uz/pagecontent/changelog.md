@@ -6,6 +6,8 @@
 
 [UZ Core DeviceUsage](StructureDefinition-uz-core-deviceusage.html) bemor tibbiy buyumdan, masalan, nogironlik aravachasi yoki implantatsiya qilinadigan venoz portdan foydalanayotgani, foydalangani yoki foydalanishini qayd etadi. Buyum SNOMED CT konsepti yoki [UZ Core Device](StructureDefinition-uz-core-device.html) ga havola sifatida ko'rsatiladi. U foydalanish haqida kim xabar berganini, qachon boshlanib tugaganini, foydalanish sharoitini, buyum amalda qanchalik muntazam ishlatilishini va nima uchun ishlatilishini qayd etadi. U bilan birga HL7 buyumdan foydalanish holati va rioya qilish kodlarining o'zbekcha va ruscha tarjimalari qo'shildi. Profil sahifasida tavsifiy kirish va Tez boshlash bo'limi bor.
 
+[Composition hujjat turlari](CodeSystem-composition-type-cs.html): 399-son buyruqning 112-shakli - foliy kislotasi, 25-OH D vitamini va B12 vitaminiga IXLA tahlili uchun `emdoc-0010-0471` kodi qo'shildi.
+
 #### O'zgartirildi
 
 [FHIR turlari supplementi](CodeSystem-fhir-types-cs.html) har bir resurs turiga nomi o'rniga uning ta'rifi tarjimasini berardi. Endi har bir turning o'zbekcha va ruscha nomi bor, masalan `Patient` uchun "Bemor" va "Пациент", ular `preferredForLanguage` bilan belgilangan, shuning uchun `displayLanguage` bilan `$lookup` nomni qaytaradi. Tarjima qilingan ta'riflar SNOMED CT `900000000000550004` Definition use bilan belgilashlar sifatida qoladi.

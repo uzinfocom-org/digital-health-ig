@@ -6,6 +6,8 @@
 
 [UZ Core DeviceUsage](StructureDefinition-uz-core-deviceusage.html) records that a patient uses, has used or will use a device, such as a wheelchair or an implanted venous access port. The device is a SNOMED CT concept or a reference to a [UZ Core Device](StructureDefinition-uz-core-device.html). It records who reported the use, when it started and ended, the setting, how regularly the device is actually used and why. Uzbek and Russian translations of the HL7 device usage status and adherence codes come with it. The profile page has the narrative intro and Quick Start.
 
+[Composition types](CodeSystem-composition-type-cs.html) add `emdoc-0010-0471` for Order No. 399 form 112, a laboratory analysis of folic acid, 25-OH vitamin D and vitamin B12.
+
 #### Changed
 
 The [FHIR types supplement](CodeSystem-fhir-types-cs.html) gave each resource type a translation of its definition in place of its name. Each type now has an Uzbek and a Russian name, such as "Bemor" and "Пациент" for `Patient`, marked `preferredForLanguage`, so `$lookup` with `displayLanguage` returns the name. The translated definitions remain as designations with the use SNOMED CT `900000000000550004` Definition.
