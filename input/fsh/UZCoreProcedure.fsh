@@ -43,10 +43,10 @@ Description: "Uzbekistan Core Procedure Profile, used for documenting an action 
 
 * basedOn only Reference(CarePlan or ServiceRequest)
 * partOf only Reference(UZCoreProcedure or UZCoreObservation or MedicationAdministration)
-* subject only Reference(UZCorePatient or Group or Device or UZCorePractitioner or UZCoreOrganization or UZCoreLocation)
+* subject only Reference(UZCorePatient or Group or UZCoreDevice or UZCorePractitioner or UZCoreOrganization or UZCoreLocation)
 * encounter only Reference(UZCoreEncounter)
 * recorder only Reference(UZCorePatient or UZCoreRelatedPerson or UZCorePractitioner or UZCorePractitionerRole)
-* performer.actor only Reference(UZCorePractitioner or UZCorePractitionerRole or UZCoreOrganization or UZCorePatient or UZCoreRelatedPerson or Device or CareTeam or UZCoreHealthcareService)
+* performer.actor only Reference(UZCorePractitioner or UZCorePractitionerRole or UZCoreOrganization or UZCorePatient or UZCoreRelatedPerson or UZCoreDevice or CareTeam or UZCoreHealthcareService)
 * location only Reference(UZCoreLocation)
 * reason only CodeableReference(UZCoreCondition or UZCoreObservation or UZCoreProcedure or UZCoreDiagnosticReport or DocumentReference)
 
