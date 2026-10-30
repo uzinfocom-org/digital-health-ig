@@ -17,13 +17,29 @@ Description: "Uzbekistan Core Consent profile, used to manage patient consent fo
 * sourceAttachment
   * url and creation MS
 
-* regulatoryBasis from ConsentPolicyVS (required)
+* regulatoryBasis from ConsentPolicyVS (preferred)
+* regulatoryBasis ^slicing.discriminator.type = #value
+* regulatoryBasis ^slicing.discriminator.path = "$this"
+* regulatoryBasis ^slicing.rules = #open
+* regulatoryBasis ^slicing.description = "Regulatory bases from the national value set; codes from other systems are allowed alongside them"
+* regulatoryBasis ^slicing.ordered = false
+* regulatoryBasis contains dhpRegulatoryBasis 0..* MS
+* regulatoryBasis[dhpRegulatoryBasis] from ConsentPolicyVS (required)
+* regulatoryBasis[dhpRegulatoryBasis] ^short = "Regulatory basis from the national value set"
 
 * decision from ConsentProvisionTypeVS (required)
 
 * provision
-  * action from ConsentActionVS (required)
-  * purpose from ConsentPurposeOfUseVS (required)
+  * action from ConsentActionVS (preferred)
+  * action ^slicing.discriminator.type = #value
+  * action ^slicing.discriminator.path = "$this"
+  * action ^slicing.rules = #open
+  * action ^slicing.description = "Actions from the national value set; codes from other systems are allowed alongside them"
+  * action ^slicing.ordered = false
+  * action contains dhpAction 0..*
+  * action[dhpAction] from ConsentActionVS (required)
+  * action[dhpAction] ^short = "Action from the national value set"
+  * purpose from ConsentPurposeOfUseVS (extensible)
 
 Instance: example-consent
 InstanceOf: UZCoreConsent

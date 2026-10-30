@@ -14,7 +14,7 @@ UZ Core Observation представляет измерение или резу�
 
 
 
-- идентификатор, instantiates[x] (использованное определение) и basedOn (0..1 - исходный ServiceRequest, CarePlan или MedicationRequest);
+- идентификатор, instantiates[x] (использованное определение) и basedOn (0..* - исходный ServiceRequest, CarePlan, MedicationRequest или ImmunizationRecommendation, например направление вместе с планом, к которому оно относится);
 - triggeredBy (наблюдение, инициировавшее данное, с указанием причины) и partOf (процедура, иммунизация, инструментальное исследование или эпизод приёма лекарств);
 - статус (связка required) и категорию (vital-signs, laboratory ...);
 - код (предпочтительная связка LOINC / SNOMED) и субъект (обычно пациент);

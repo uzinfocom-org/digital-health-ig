@@ -50,3 +50,7 @@ Qo'llab-quvvatlanadigan barcha qidiruv parametrlari uchun [CapabilityStatement](
 
 - [Ushbu qo'llanmani qanday o'qish kerak](how-to-read.html) &middot; [Must Support](must-support.html) &middot; [Umumiy ko'rsatmalar](general-guidance.html)
 - [Ish jarayonlari](workflows.html)
+
+### Reaksiyani dori yuborish yozuviga bogʻlash
+
+**Allergiya bilan bog'liqlik:** `MedicationAdministration.reason` dori shu klinik ko'rsatma, masalan allergiyani davolash uchun yuborilganini anglatadi. Bu maydon dori keltirib chiqargan reaksiyani qayd etmaydi. Agar ushbu yuborish allergik reaksiyaga sabab bo'lsa, uni bemorning [AllergyIntolerance](StructureDefinition-uz-core-allergy-intolerance.html) resursida qayd eting va `reaction` ni standart `openEHR-administration` extensioni bilan shu yuborishga bog'lang.

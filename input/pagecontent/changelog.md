@@ -1,12 +1,80 @@
-### In development
+### Version 0.12.0
 
 #### Added
 
-A [SNOMED CT supplement for screening and home visits](CodeSystem-screening-sct-cs.html) gives Uzbek and Russian designations to the 15 SNOMED CT concepts that now code screening and patronage services in [ServiceRequest procedures and investigations](ValueSet-service-request-code-vs.html), which lists them by name.
+Added [UZ Core MedicationAdministration](StructureDefinition-uz-core-medicationadministration.html) for a medication given to a patient, such as a dose on a ward. It points to the MedicationRequest it fulfils and records who gave the dose and how. A funding source extension records whether the stock came from a tender, humanitarian aid or another national financing source, which can differ from the patient's coverage.
+
+Added [UZ Core InventoryItem](StructureDefinition-uz-core-inventoryitem.html) for stock of an item such as a blood component, medication or device. Each item carries a national inventory status, such as quarantine, awaiting tests or available, and points to the product it holds, with the lot number, expiry date and storage location of each physical unit.
+
+Nursing visit purposes now include national codes for [population enumeration and home medication delivery](CodeSystem-nursing-visit-purpose-cs.html).
+
+Nursing visit requests are categorised as SNOMED CT `439708006` Home visit, and [ServiceRequest procedures and investigations](ValueSet-service-request-code-vs.html) lists `440068009` for the newborn patronage on days 3, 15 and 30 and `410620009` for preventive child visits from 3 to 60 months. The Encounter of a home visit uses the encounter type `mserv-0001-00009` Patronaj with `Encounter.class` = `HH`.
+
+[Patient/$attach](OperationDefinition-patient-attach.html) attaches a patient to a polyclinic, a family doctor or both in one call, checking them against the master data registry. At type level it finds or creates the patient by PINFL, so it replaces the `$populate` + `$attach` pair.
+
+[Patient/$relate](OperationDefinition-patient-relate.html) records a parent-child relationship confirmed against the Ministry of Justice child registry. It finds or creates the child by PINFL and creates a RelatedPerson for the parent.
+
+[Patient/$detach](OperationDefinition-patient-detach.html) reverses `$attach`: it clears the polyclinic, the family doctor and the attachment date in one call, and requires a `reason`.
+
+[UZ Core Medication](StructureDefinition-uz-core-medication.html) now has a narrative intro and Quick Start, like the other profiles. It shows how to find an existing medication by a registry identifier or by INN or ATC code before registering a new one.
 
 #### Changed
 
-[UZ Core ServiceRequest](StructureDefinition-uz-core-servicerequest.html) `supportingInfo` can reference any resource again, rather than only another ServiceRequest. `category` is now sliced: at most one category comes from [ServiceRequestCategoriesVS](ValueSet-service-request-categories-vs.html), with a required binding, and any other categories can sit alongside it from any code system.
+[UZ Core AllergyIntolerance](StructureDefinition-uz-core-allergy-intolerance.html) `reaction` can reference the MedicationAdministration that caused it, through the standard `openEHR-administration` extension. The analgesic allergy example links a skin rash to a paracetamol dose.
+
+In the [ServiceRequest categories](ValueSet-service-request-categories-vs.html), SNOMED CT `20135006` now has its official display "Screening procedure" instead of "Screening and home visits", and its Uzbek and Russian translations no longer mention home visits, which have their own category `439708006` "Home visit".
+
+[UZ Core Patient](StructureDefinition-uz-core-patient.html) and [UZ Core Practitioner](StructureDefinition-uz-core-practitioner.html) declare the `translation` extension on `name.text`, `family`, `given` and `suffix`: the name is in Uzbek, and its Russian and Karakalpak forms travel in one `HumanName` instead of a second name. The [Nodira](Patient-example-nodira.html) and [practitioner](Practitioner-example-practitioner.html) examples carry Russian forms, and both profile pages describe the pattern.
+
+The [action code supplement](CodeSystem-action-code-cs.html) gives Uzbek and Russian designations to `order-service`, which the [regional screening PlanDefinition example](PlanDefinition-example-uz-core-regional-screening-plan-definition.html) uses.
+
+#### Breaking changes
+
+The [specialist certificate](NamingSystem-uzb-specialist-certificate.html) identifier system has moved from the document namespace to the healthcare professional namespace, since a certificate identifies a qualification of a professional rather than a document: `https://dhp.uz/fhir/core/sid/doc/uz/specialist-certificate` is now `https://dhp.uz/fhir/core/sid/pro/uz/specialist-certificate`. Senders of `Practitioner.qualification.identifier` switch to the new system; the value format (series followed by number, e.g. `CA008815`) is unchanged.
+
+### Version 0.11.1
+
+#### Added
+
+[Screening and home visit program types](ValueSet-screening-program-type-vs.html) lists the values of a screening program identifier: eight SNOMED CT screening concepts and the national [screening and home visit codes](CodeSystem-screening-code-cs.html). It brings back `mserv-0007-00007` and `mserv-0007-00009`, removed in 0.11.0, as the DMED breast and cervical cancer screening programs, so they stay distinct from the HPV screening programs `268547008` and `171149006`. The screening service itself is still coded in SNOMED CT.
+
+[Diagnosis types](CodeSystem-diagnosis-type-cs.html) add `gencl-0001-00013` "Diagnosis of a combined disease" (сочетанное заболевание), with Uzbek and Russian designations, so screening applications can send every diagnosis type their forms offer.
+
+The [body site supplement](CodeSystem-body-site-cs.html) gives Uzbek and Russian designations to 1,001 SNOMED CT body structures instead of 4, and a new [laboratory method supplement](CodeSystem-lab-methods-sct-cs.html) gives them to 1,865 SNOMED CT methods.
+
+#### Changed
+
+Value sets on repeating coded elements now apply through an open slice instead of to the whole element, so codes from other systems can sit beside the national ones; the element keeps the national value set as a preferred binding. This covers AllergyIntolerance `reaction.manifestation`; AuditEvent `agent.role`, `agent.authorization` and `entity.securityLabel`; Composition `category`; Consent `regulatoryBasis` and `provision.action`; DiagnosticReport `category`; Encounter `class`; EpisodeOfCare `reason.value` and `diagnosis.condition`; Immunization `protocolApplied.targetDisease`; ImmunizationRecommendation `recommendation.vaccineCode`; Observation `category`; ObservationDefinition `permittedUnit`; Procedure `bodySite`; RelatedPerson `relationship`; and ServiceRequest `reason`. [UZ Core Observation](StructureDefinition-uz-core-observation.html) `interpretation` is bound extensible instead of required, as in base FHIR. Existing resources remain valid.
+
+Four value sets that kept only part of the base FHIR value set they replace now include all of it. [Encounter status](ValueSet-encounter-status-vs.html) adds `on-hold`, `discharged` and `discontinued`; [request resource types](ValueSet-request-resource-types-vs.html), used by ActivityDefinition `kind`, lists all 17 request resource types instead of only ImmunizationRecommendation and MedicationRequest; [consent purpose of use](ValueSet-consent-purpose-of-use-vs.html) includes every purpose of use instead of only `RECORDMGT`, and Consent `provision.purpose` binds it extensible instead of required, as in base FHIR; and [condition participation roles](ValueSet-condition-participation-role-vs.html) adds `transmitter`. The new encounter statuses and resource types have Uzbek and Russian designations.
+
+[UZ Core Observation](StructureDefinition-uz-core-observation.html) `bodySite` binds [body sites](ValueSet-body-site-vs.html), every SNOMED CT body structure, instead of the base FHIR body site value set, which it contains. [Laboratory methods](ValueSet-lab-method-vs.html), bound to `method`, add the SNOMED CT techniques, actions and evaluation procedures of the base FHIR observation methods to the national codes. Existing resources remain valid.
+
+#### Documentation
+
+[UZ Core ActivityDefinition](StructureDefinition-uz-core-activitydefinition.html) describes a screening invitation template: `kind` is `ServiceRequest`, `intent` is `plan`, and `profile` names UZ Core ServiceRequest. The screening examples and the application contract are in the integration guide.
+
+### Version 0.11.0
+
+#### Added
+
+Added [UZ Core BiologicallyDerivedProduct](StructureDefinition-uz-core-biologically-derived-product.html) for a unit of blood or a blood component in [Blood Management](components.html#blood-management). A unit carries the [unit number](NamingSystem-uzb-blood-unit-number.html) its blood service assigned and, in `biologicalSourceEvent`, the [number of the donation](NamingSystem-uzb-blood-donation-number.html) it came from, which every component processed from that donation keeps. A processed or pooled component references its source units in `parent`, and `property` slices record the ABO group, RhD type, volume and hematocrit. It comes with SNOMED CT [blood product type](ValueSet-blood-product-type-snomed-vs.html), [blood group](ValueSet-blood-group-vs.html) and [RhD type](ValueSet-blood-rh-vs.html) value sets and [product category](ValueSet-product-category-vs.html) and [product status](ValueSet-product-status-vs.html) value sets, all with Uzbek and Russian designations.
+
+Added [UZ Core SupplyRequest](StructureDefinition-uz-core-supply-request.html) for a request for supplies, such as a hospital ordering blood components from the blood service. It carries the hospital's [request number](NamingSystem-uzb-supply-request-number.html) and the [supply agreement number](NamingSystem-uzb-supply-contract-number.html) as identifiers, and a national [request type](ValueSet-request-type-vs.html) in `category`: stock replenishment, named (for a patient) or between institutions. `item` is bound (extensible) to the blood product types, `parameter` slices carry the blood group and RhD type the components must have, and `deliverFor` names the patient a named request is for. Its [status](ValueSet-supply-request-status-vs.html) value set has Uzbek and Russian designations.
+
+Added [UZ Core SupplyDelivery](StructureDefinition-uz-core-supply-delivery.html) for a delivery made against a SupplyRequest, such as the blood service issuing a blood component to a hospital. It records the supplier's [delivery number](NamingSystem-uzb-supply-delivery-number.html), the supplier, receiver and destination, and the item delivered, which can reference a UZ Core BiologicallyDerivedProduct. Its [status](ValueSet-supply-delivery-status-vs.html) and [type](ValueSet-supply-delivery-type-vs.html) value sets have Uzbek and Russian designations.
+
+A [SNOMED CT supplement for screening and home visits](CodeSystem-screening-sct-cs.html) gives Uzbek and Russian designations to the 15 SNOMED CT concepts that now code screening and patronage services in [ServiceRequest procedures and investigations](ValueSet-service-request-code-vs.html), which lists them by name.
+
+[ServiceRequest categories](ValueSet-service-request-categories-vs.html) include SNOMED CT `310422005` "Prevention/screening invitation", with Uzbek and Russian designations in the [category supplement](CodeSystem-sr-sct-category-cs.html). A screening program's invitation or plan ServiceRequest carries it in `category`, so a dedicated invitation code in `code` is not needed.
+
+#### Changed
+
+[UZ Core ServiceRequest](StructureDefinition-uz-core-servicerequest.html) `supportingInfo` can reference any resource, rather than only another ServiceRequest. `category` is now sliced: at most one category comes from [ServiceRequestCategoriesVS](ValueSet-service-request-categories-vs.html), with a required binding, and any other categories can sit alongside it from any code system.
+
+[UZ Core Observation](StructureDefinition-uz-core-observation.html) allows more than one `basedOn` (0..* instead of 0..1), so an observation can point to both the order it answers and the plan that order belongs to. For example, a screening result can reference its referral and the screening program's plan ServiceRequest. Existing observations remain valid.
+
+`suspectEntity.instance` on [UZ Core AdverseEvent](StructureDefinition-uz-core-adverse-event.html) now references [UZ Core BiologicallyDerivedProduct](StructureDefinition-uz-core-biologically-derived-product.html) rather than any BiologicallyDerivedProduct.
 
 #### Breaking changes
 
@@ -32,6 +100,14 @@ A [SNOMED CT supplement for screening and home visits](CodeSystem-screening-sct-
 | `mserv-0007-00020` | Breast cancer screening | `268547008` Screening for malignant neoplasm of breast |
 
 The breast cancer questionnaire and breast cancer screening codes both map to `268547008`. The week, day and month ranges in the old names are not part of the SNOMED CT concepts.
+
+#### Documentation
+
+The [identifiers](identifiers.html) page adds a `prd` namespace for product identifiers, such as blood unit numbers, for numbers that no external registry already publishes a system for.
+
+The [FHIR basics](fhir-basics.html) page no longer says applications must exchange local codes only. DHP uses a code from an international standard such as ICD-10, SNOMED CT or LOINC wherever one fits, and defines a local code only for a concept no standard covers, with ConceptMaps from those local codes to international terminologies.
+
+A new [translation information](translationinfo.html) page explains that the Russian and Uzbek versions are machine translations that editors are reviewing, that the English text takes precedence where they differ, and how to report a translation problem.
 
 ### Version 0.10.0
 

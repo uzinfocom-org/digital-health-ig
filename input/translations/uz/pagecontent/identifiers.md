@@ -11,7 +11,7 @@ https://dhp.uz/fhir/core/sid/{namespace}/{country}/{type}[/subtype]
 ```
 
 Bu yerda:
-- `namespace`: `pid` (shaxsiy), `pro` (kasbiy), `org` (tashkiliy) yoki `doc` (hujjat);
+- `namespace`: `pid` (shaxsiy), `pro` (kasbiy), `org` (tashkiliy), `doc` (hujjat) yoki `prd` (mahsulot);
 - `country`: ISO 3166-1 bo'yicha mamlakatning ikki harfli kodi (masalan, O'zbekiston uchun `uz`);
 - `type`: identifikator turi (masalan, pasport uchun `ppn`, milliy ID uchun `ni`);
 - `subtype`: ixtiyoriy qo'shimcha tasnif (masalan, pasport turlari uchun `local`, `intl`).
@@ -208,6 +208,42 @@ Tibbiyot xodimlari kadrlar bilan ishlash (Human Resource Management, HRM) Argos 
 }
 ```
 
+#### Mutaxassis sertifikati
+
+Sog'liqni saqlash vazirligi bergan mutaxassis sertifikati tibbiyot xodimining malakasini identifikatsiya qiladi, shuning uchun u `Practitioner.identifier` da emas, `Practitioner.qualification.identifier` da yoziladi. Qiymat - seriya va raqam ajratuvchisiz. Maydonlarning to'liq moslashuvi [Mutaxassis sertifikatlari](StructureDefinition-uz-core-practitioner.html#specialist-certificates) bo'limida keltirilgan.
+
+**System URI**: `https://dhp.uz/fhir/core/sid/pro/uz/specialist-certificate`
+
+```json
+{
+  "resourceType": "Practitioner",
+  "qualification": [
+    {
+      "identifier": [
+        {
+          "system": "https://dhp.uz/fhir/core/sid/pro/uz/specialist-certificate",
+          "value": "CA008815"
+        }
+      ],
+      "code": {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0360",
+            "code": "CER",
+            "display": "Certificate"
+          }
+        ],
+        "text": "Psixiatriya, oliy toifa, shifokor"
+      },
+      "period": {
+        "start": "2024-05-05",
+        "end": "2029-05-05"
+      }
+    }
+  ]
+}
+```
+
 Qo'llab-quvvatlanadigan barcha tibbiyot xodimi identifikatorlarining to'liq ro'yxati [PractitionerIdentifierDomainVS](ValueSet-practitioner-identifier-domain-vs.html) qiymatlar to'plamida keltirilgan.
 
 ### Tashkilot identifikatorlari
@@ -277,6 +313,12 @@ Qo'llab-quvvatlanadigan barcha tashkilot identifikatorlarining to'liq ro'yxati [
 Hujjatlar `doc` nom maydoni orqali identifikatsiya qilinadi. Bu klinik hujjatlar, hisobotlar va boshqa tibbiy hujjatlarni kuzatish imkonini beradi.
 
 **System URI namunasi**: `https://dhp.uz/fhir/core/sid/doc/{country}/{type}`
+
+### Mahsulot identifikatorlari {#product-identifiers}
+
+Mahsulotlar `prd` nom maydoni orqali identifikatsiya qilinadi. U nom maydonini platformaning o'zi belgilaydigan raqamlar uchun mo'ljallangan, masalan, qon xizmatlari qon mahsulotlariga beradigan birlik raqamlari. Agar tashqi reestr mahsulot raqami uchun o'z tizim URI'sini e'lon qilsa, o'sha URI'dan foydalaning: masalan, dori vositalari identifikatorlari Asl Belgisi va uzpharminfo.uz reestri tizimlaridan foydalanadi.
+
+**System URI namunasi**: `https://dhp.uz/fhir/core/sid/prd/{country}/{type}[/subtype]`
 
 ### To'liq misol: bir nechta identifikatorga ega bemor
 
@@ -366,6 +408,7 @@ IdentifierDomainCS CodeSystem dagi barcha tushunchalar tanlanadigan emas. Ota-on
 - `https://dhp.uz/fhir/core/sid/pid/uz/ni`
 - `https://dhp.uz/fhir/core/sid/pid/uz/ppn/local`
 - `https://dhp.uz/fhir/core/sid/pro/uz/argos`
+- `https://dhp.uz/fhir/core/sid/pro/uz/specialist-certificate`
 
 **Tanlanmaydigan** (faqat ota-ona guruhlari):
 - `https://dhp.uz/fhir/core/sid/pid` (root)

@@ -1,0 +1,25 @@
+CODE,UZ,RU,EN
+collected,Yig‘ib olindi,Собран,Collected
+awaiting-processing,Qayta ishlashni kutmoqda,Ожидает обработки,Awaiting processing
+processing,Qayta ishlanmoqda,В обработке,Processing
+quarantine,Karantinda,На карантине,Quarantine
+awaiting-tests,Tekshiruvlarni kutmoqda,Ожидает анализов,Awaiting tests
+available,Mavjud,Доступен,Available
+reserved,Zaxiralangan,Зарезервирован,Reserved
+allocated,Ajratilgan,Выделен,Allocated
+issued,Berildi (chiqarildi),Выдан,Issued
+in-transit,Yo‘lda (tashilmoqda),В пути,In transit
+received,Qabul qilindi,Получен,Received
+returned,Qaytarildi,Возвращён,Returned
+recalled,Chaqirib olindi,Отозван,Recalled
+expired,Muddati o‘tgan,Истёк срок годности,Expired
+discarded,Utilizatsiya qilindi,Утилизирован,Discarded
+consumed,Ishlatildi (sarflandi),Использован (израсходован),Consumed
+missing,Yo‘qolgan,Пропал/утерян,Missing
+damaged,Shikastlangan,Повреждён,Damaged
+temperature-excursion,Harorat me’yoridan chetlanish,Отклонение температурного режима,Temperature excursion
+investigation,Tekshiruv jarayonida,На расследовании,Investigation
+accepted,Qabul qilingan,Принят,Accepted
+in-fractionation,Fraksiyalashda,В фракционировании,In Fractionation
+in-cryopreservation,Krioconservatsiyada,В криоконсервации,In Cryopreservation
+being-disposed,Utilizatsiya qilinmoqda,Утилизируется,Being Disposed

@@ -30,7 +30,15 @@ Description: "Uzbekistan Core Procedure Profile, used for documenting an action 
 
 * status from ProcedureEventStatusVS (required)
 * code from ProcedureCodeVS (extensible)
-* bodySite from $bodysite (required)
+* bodySite from $bodysite (preferred)
+* bodySite ^slicing.discriminator.type = #value
+* bodySite ^slicing.discriminator.path = "$this"
+* bodySite ^slicing.rules = #open
+* bodySite ^slicing.description = "Body sites coded in SNOMED CT; codes from other systems are allowed alongside them"
+* bodySite ^slicing.ordered = false
+* bodySite contains snomedBodySite 0..* MS
+* bodySite[snomedBodySite] from $bodysite (required)
+* bodySite[snomedBodySite] ^short = "Body site coded in SNOMED CT"
 * outcome from ProcedureOutcomeVS (extensible)
 
 * basedOn only Reference(CarePlan or ServiceRequest)
