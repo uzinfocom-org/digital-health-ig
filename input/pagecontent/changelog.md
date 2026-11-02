@@ -10,6 +10,8 @@ Added [UZ Core CarePlan](StructureDefinition-uz-core-careplan.html), a general p
 
 [UZ Core DeviceUsage](StructureDefinition-uz-core-deviceusage.html) records that a patient uses, has used or will use a device, such as a wheelchair or an implanted venous access port. The device is a SNOMED CT concept or a reference to a [UZ Core Device](StructureDefinition-uz-core-device.html). It records who reported the use, when it started and ended, the setting, how regularly the device is actually used and why. Uzbek and Russian translations of the HL7 device usage status and adherence codes come with it. The profile page has the narrative intro and Quick Start.
 
+[UZ Core Practitioner](StructureDefinition-uz-core-practitioner.html) allows translations of the specialist certificate text: `qualification.code.text` now takes the translation extension.
+
 [UZ Core SupplyDelivery](StructureDefinition-uz-core-supply-delivery.html) records the location the items were dispatched from, such as the sending warehouse in a transfer between warehouses, in the new [Deliver from](StructureDefinition-supplydelivery-deliver-from.html) extension. Base FHIR SupplyDelivery has no element for it; the extension is the delivery counterpart of `SupplyRequest.deliverFrom`. The [warehouse transfer example](SupplyDelivery-example-warehouse-transfer-supply-delivery.html) shows it. The profile page has a narrative intro and a Quick Start.
 
 #### Changed
