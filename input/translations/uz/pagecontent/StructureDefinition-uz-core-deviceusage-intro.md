@@ -18,14 +18,14 @@ Ushbu profil o'zining majburiy elementlarini qo'shmaydi. Bazaviy DeviceUsage res
 
 - bayonot identifikatori, har doim o'zining `system` i bilan yuboriladi;
 - `basedOn` - buyumni buyurgan [ServiceRequest](StructureDefinition-uz-core-servicerequest.html);
-- `category` - foydalanish sharoiti, [buyumdan foydalanish toifalari qiymatlar to'plami](ValueSet-deviceusage-category-vs.html) dan (preferred bog'lanish);
+- `category` - foydalanish sharoiti (inpatient / outpatient / community);
 - `timing[x]` - buyum qachon ishlatiladi: `dateTime`, `Period` yoki `Timing`;
 - `dateAsserted` - bayonot qachon qilingani;
 - `usageStatus` va `usageReason` - bayonot holatidan farqli ravishda foydalanishning o'z holati va bu holatning sababi;
-- `adherence` - buyum qanchalik muntazam ishlatiladi ([rioya qilish kodlari](ValueSet-deviceusage-adherence-code-vs.html)), sababi bilan ([rioya qilish sabablari](ValueSet-deviceusage-adherence-reason-vs.html)) (preferred bog'lanishlar);
+- `adherence` - buyum qanchalik muntazam ishlatiladi (always / never / sometimes), sababi bilan (masalan, lost, broken yoki forgot);
 - `informationSource` - foydalanish haqida kim xabar bergan: Patient, Practitioner, PractitionerRole, RelatedPerson yoki Organization, barchasi UZ Core profillari;
 - `reason` - buyum nima uchun ishlatiladi, konsept yoki UZ Core Condition, Observation yoki DiagnosticReport ga havola sifatida;
-- `bodySite` - buyum tananing qayerida ishlatiladi, [tana sohalari qiymatlar to'plami](ValueSet-body-site-vs.html) dan (preferred bog'lanish);
+- `bodySite` - buyum tananing qayerida ishlatiladi;
 - `note`.
 
 ### JSON ni bosqichma-bosqich qurish

@@ -13,9 +13,9 @@ Asosiy Device resursida majburiy elementlar yo'q va ushbu profil ham ularni qo's
 #### Har bir UZ Core Device quyidagilarni qo'llab-quvvatlashi shart
 
 - identifikator, har doim o'z `system` i bilan yuboriladi ([Identifikatorlar](identifiers.html) ga qarang);
-- yozuv holati `status` (active / inactive / entered-in-error) majburiy bog'lanishli [buyum holati](ValueSet-device-status-vs.html) qiymatlar to'plamidan va mavjudlik holati `availabilityStatus` (available / lost / damaged / destroyed) kengaytiriladigan bog'lanishli [mavjudlik holati](ValueSet-device-availability-status-vs.html) qiymatlar to'plamidan;
-- `displayName` va har bir `name` - uning `value` qiymati, [nom turlari qiymatlar to'plamidan](ValueSet-device-name-type-vs.html) `type` (ro'yxatdan o'tgan, foydalanuvchiga qulay yoki bemor tomonidan bildirilgan nom) va `display` belgisi bilan;
-- [buyum turlari qiymatlar to'plamidan](ValueSet-device-type-vs.html) SNOMED CT bilan kodlangan `type` va [buyum toifalari qiymatlar to'plamidan](ValueSet-device-category-vs.html) `category`;
+- yozuv holati `status` (active / inactive / entered-in-error) va buyumdan foydalanish mumkinligi `availabilityStatus` (available / lost / damaged / destroyed);
+- `displayName` va har bir `name` - uning `value` qiymati, `type` turi (ro'yxatdan o'tgan, foydalanuvchiga qulay yoki bemor tomonidan bildirilgan nom) va `display` belgisi bilan;
+- buyum turi `type` (SNOMED CT tushunchasi) va umumiyroq toifasi `category`;
 - `manufacturer`, `modelNumber` va `partNumber`;
 - `serialNumber`, `lotNumber`, `manufactureDate` va `expirationDate`;
 - egasi `owner` - [Organization](StructureDefinition-uz-core-organization.html) ga havola - va joyi `location` - [Location](StructureDefinition-uz-core-location.html) ga havola;

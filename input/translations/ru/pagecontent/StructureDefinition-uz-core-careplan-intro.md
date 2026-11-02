@@ -13,20 +13,22 @@ UZ Core CarePlan описывает, как медицинские работн�
 #### Must Support для UZ Core CarePlan
 
 - бизнес-идентификаторы (`identifier`);
-- определение, по которому составлен план (`instantiatesCanonical`: [PlanDefinition](StructureDefinition-uz-core-plan-definition.html), [ActivityDefinition](StructureDefinition-uz-core-activitydefinition.html) или [Questionnaire](StructureDefinition-uz-core-questionnaire.html), либо `instantiatesUri`);
-- ссылки `basedOn`, `replaces` и `partOf` на другие планы;
-- `status` (связан со [статусами запроса](ValueSet-service-request-status-vs.html)) и `intent` (связан с [намерениями CarePlan](ValueSet-careplan-intent-vs.html));
-- `category`, `title` и `description`;
-- `subject` ([Patient](StructureDefinition-uz-core-patient.html) или [Group](StructureDefinition-uz-core-group.html)) и [Encounter](StructureDefinition-uz-core-encounter.html), в котором создан план;
-- `period` и `created`;
-- `custodian`, `contributor` и `careTeam`;
-- `addresses` ([Condition](StructureDefinition-uz-core-condition.html)), `supportingInfo` и `goal` ([Goal](StructureDefinition-uz-core-goal.html));
-- `activity`: `plannedActivityReference` для запроса, `performedActivity` для события и `progress`;
-- `note`.
+- определение, по которому составлен план: [PlanDefinition](StructureDefinition-uz-core-plan-definition.html), [ActivityDefinition](StructureDefinition-uz-core-activitydefinition.html) или [Questionnaire](StructureDefinition-uz-core-questionnaire.html) (`instantiatesCanonical`), либо внешний протокол (`instantiatesUri`);
+- связи с другими планами: план, который выполняется (`basedOn`), план, который заменяется (`replaces`), и более крупный план, частью которого он является (`partOf`);
+- статус плана (`status`: draft / active / on-hold / revoked / completed / entered-in-error / unknown) и его намерение (`intent`: proposal / plan / order / option / directive);
+- вид плана (`category`), его название (`title`) и текстовое описание (`description`);
+- для кого составлен план (`subject`: [Patient](StructureDefinition-uz-core-patient.html) или [Group](StructureDefinition-uz-core-group.html)) и [Encounter](StructureDefinition-uz-core-encounter.html), в котором он создан;
+- период действия плана (`period`) и дата его составления (`created`);
+- кто отвечает за план (`custodian`), кто участвовал в его составлении (`contributor`) и команда, которая его выполняет (`careTeam`);
+- состояния, на которые направлен план (`addresses`: [Condition](StructureDefinition-uz-core-condition.html)), дополнительные сведения, на которые он опирается (`supportingInfo`), и его цели (`goal`: [Goal](StructureDefinition-uz-core-goal.html));
+- запланированные действия (`activity`): запрос на каждое действие (`plannedActivityReference`), фактически выполненное действие (`performedActivity`) и записи о ходе выполнения (`progress`);
+- примечания (`note`).
 
 ### Пошаговое построение JSON
 
-**1. Минимальный план.** Обязательны только три базовых элемента. `intent` принимает один из пяти кодов: `plan` для плана, которому намерен следовать медицинский работник, и `order` для плана, который санкционирует свои мероприятия.
+#### Наименьший CarePlan, который вам следует отправлять
+
+Обязательны только три базовых элемента. `intent` принимает один из пяти кодов: `plan` для плана, которому намерен следовать медицинский работник, и `order` для плана, который санкционирует свои мероприятия.
 
 ```json
 {
@@ -40,7 +42,9 @@ UZ Core CarePlan описывает, как медицинские работн�
 }
 ```
 
-**2. Описание плана.** `category` указывает вид плана кодом SNOMED CT, потомком `734163000` Care plan, здесь `773130005` Nursing care plan. `custodian` - ответственный за план, `period` - срок его действия.
+#### План сестринского ухода
+
+`category` указывает вид плана кодом SNOMED CT, потомком `734163000` Care plan, здесь `773130005` Nursing care plan. `custodian` - ответственный за план, `period` - срок его действия.
 
 ```json
 {
@@ -62,7 +66,9 @@ UZ Core CarePlan описывает, как медицинские работн�
 }
 ```
 
-**3. Мероприятия.** Каждое `activity` либо запланировано, либо выполнено. Запланированное мероприятие - это запрос, на который ссылается `plannedActivityReference`. Выполненное мероприятие - событие, которое его фиксирует, в `performedActivity`; это `CodeableReference`, поэтому ссылка находится на уровень глубже, в `reference`.
+#### План с запланированными и выполненными мероприятиями
+
+Каждое `activity` либо запланировано, либо выполнено. Запланированное мероприятие - это запрос, на который ссылается `plannedActivityReference`. Выполненное мероприятие - событие, которое его фиксирует, в `performedActivity`; это `CodeableReference`, поэтому ссылка находится на уровень глубже, в `reference`.
 
 ```json
 "activity": [
