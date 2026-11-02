@@ -1,6 +1,6 @@
 CodeSystem: ObservationInterpretationCS
 Id: observation-interpretation-cs
-Title: "Observation interpretation"
+Title: "Observation interpretation translations"
 Description: "Observation interpretation supplement with translations in Uzbek and Russian"
 * insert SupplementCodeSystemDraft(observation-interpretation-cs, $observation-interpretation, 3.0.0)
 

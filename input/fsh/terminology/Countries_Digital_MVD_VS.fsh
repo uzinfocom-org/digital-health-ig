@@ -1,7 +1,7 @@
 ValueSet: CountriesDigitalMVDVS
 Id: countries-digital-mvd-vs
 Title: "Uzbekistan MVD's international country codes"
-Description: "Uzbekistan MVD's international country codes with English and Russian translations"
+Description: "Uzbekistan MVD's international country codes"
 * ^url = "https://terminology.dhp.uz/fhir/core/ValueSet/countries-digital-mvd-vs"
 * ^experimental = true
 * ^status = #active

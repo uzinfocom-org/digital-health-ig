@@ -1,7 +1,7 @@
 ValueSet: TaskIntentVS
 Id: task-intent-vs
-Title: "Task Intent VS"
-Description: "ValueSet for Task Intent VS"
+Title: "Task intent"
+Description: "Task intents"
 * ^experimental = true
 * ^status = #draft
 * ^url = "https://terminology.dhp.uz/fhir/core/ValueSet/task-intent-vs"

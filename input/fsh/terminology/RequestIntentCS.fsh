@@ -1,6 +1,6 @@
 CodeSystem: RequestIntentCS
 Id: request-intent-cs
-Title: "Request Intent CS"
+Title: "Request intent translations"
 Description: "Request intent supplement with translations in Uzbek and Russian"
 * insert SupplementCodeSystemDraft(request-intent-cs, $request-intent, 5.0.0)
 * ^experimental = true

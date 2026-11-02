@@ -1,7 +1,7 @@
 CodeSystem: EpisodeOfCareTypeCS
 Id: episode-of-care-type-cs
 Title: "EpisodeOfCare types"
-Description: "Episode of care types in Uzbekistan"
+Description: "EpisodeOfCare types in Uzbekistan"
 * insert OriginalCodeSystemDraft(episode-of-care-type-cs)
 
 * #mserv-0001-00001 "Profilaktik"

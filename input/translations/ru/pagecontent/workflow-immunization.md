@@ -69,7 +69,7 @@ PUT [base]/Encounter/[id]    # reason -> ImmunizationRecommendation, status -> c
 | Препарат отсутствует | `not-done` | `statusReason` = `OSTOCK` (препарат отсутствует в наличии) |
 | Запись создана ошибочно | `entered-in-error` | - |
 
-`statusReason` имеет обязательную привязку (required) к [ValueSet причин статуса Immunization](ValueSet-immunization-status-reason-vs.html); перечисленные выше четыре кода из HL7 v3 ActReason являются единственными допустимыми значениями.
+`statusReason` имеет обязательную привязку (required) к ValueSet [причин статуса Immunization](ValueSet-immunization-status-reason-vs.html); перечисленные выше четыре кода из HL7 v3 ActReason являются единственными допустимыми значениями.
 
 ```
 POST [base]/Immunization

@@ -1,6 +1,6 @@
 CodeSystem: CoverageTypeCS
 Id: coverage-type-cs
-Title: "Coverage Type CodeSystem"
+Title: "Coverage type"
 Description: "Local coverage type codes for financing source of treatment"
 * insert OriginalCodeSystemDraft(coverage-type-cs)
 

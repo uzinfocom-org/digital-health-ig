@@ -1,7 +1,7 @@
 ValueSet: LabMethodsVS
 Id: lab-method-vs
-Title: "Observation Laboratory Methods"
-Description: "Observation laboratory methods in Uzbekistan, including SNOMED CT methods with Uzbek and Russian translations"
+Title: "Observation laboratory method"
+Description: "Observation laboratory methods in Uzbekistan, including SNOMED CT methods"
 * ^url = "https://terminology.dhp.uz/fhir/core/ValueSet/lab-method-vs"
 * ^experimental = true
 

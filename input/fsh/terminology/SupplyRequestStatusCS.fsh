@@ -1,7 +1,7 @@
 CodeSystem: SupplyRequestStatusCS
 Id: supply-request-status-cs
-Title: "Supply request status translations"
-Description: "Supply request status supplement with translations in Uzbek and Russian"
+Title: "SupplyRequest status translations"
+Description: "SupplyRequest status supplement with translations in Uzbek and Russian"
 * insert SupplementCodeSystemDraft(supply-request-status-cs, $supplyrequest-status, 5.0.0)
 
 * #draft

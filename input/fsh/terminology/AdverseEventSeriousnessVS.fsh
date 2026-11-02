@@ -1,7 +1,7 @@
 ValueSet: AdverseEventSeriousnessVS
 Id: adverse-event-seriousness-vs
-Title: "Types of AdverseEvent seriousness"
-Description: "Types of AdverseEvent seriousness in Uzbekistan"
+Title: "AdverseEvent seriousness"
+Description: "AdverseEvent seriousness levels"
 * ^url = "https://terminology.dhp.uz/fhir/core/ValueSet/adverse-event-seriousness-vs"
 * ^experimental = true
 * ^extension[0].url = $valueset-supplement

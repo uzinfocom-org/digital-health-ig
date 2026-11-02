@@ -1,7 +1,7 @@
 CodeSystem: AllergyVerificationStatusCS
 Id: allergy-verification-status-cs
-Title: "Allergy verification status"
-Description: "Allergy verification status supplement with translations in uzbek and russian"
+Title: "Allergy verification status translations"
+Description: "Allergy verification status supplement with translations in Uzbek and Russian"
 * insert SupplementCodeSystem(allergy-verification-status-cs, $allergy-verification, 1.0.1)
 * #unconfirmed
   * ^designation[0].language = #ru

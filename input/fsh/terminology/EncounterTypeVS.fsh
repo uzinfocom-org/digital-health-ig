@@ -1,7 +1,7 @@
 ValueSet: EncounterTypeVS
 Id: encounter-type-vs
-Title: "Encounter type translations"
-Description: "Defines encounter type codes with English and Russian translations"
+Title: "Encounter type"
+Description: "Encounter types"
 * ^url = "https://terminology.dhp.uz/fhir/core/ValueSet/encounter-type-vs"
 * ^experimental = true
 
