@@ -13,11 +13,11 @@ The only mandatory element this profile adds is at least one identifier - the ba
 
 
 - the identifier slices - registration certificate number, GTIN, Asl Belgisi marking ID, ICPS product/service code, and UzPharm box group ID (see [the table below](#identifier-slices));
-- the code - an ATC or INN concept from the [medication classification value set](ValueSet-medication-classification-vs.html) (required binding);
-- the status (active / inactive / entered-in-error, from a required value set);
+- the code - the ATC or INN concept for the medicine;
+- the status (active / inactive / entered-in-error);
 - the marketingAuthorizationHolder - a reference to the [Organization](StructureDefinition-uz-core-organization.html) that holds the registration;
-- the doseForm, coded from the national [dose form value set](ValueSet-medication-doseform-vs.html) (extensible binding);
-- the totalVolume - a UCUM quantity, with units drawn from the [total volume units value set](ValueSet-medication-total-volume-units-vs.html) (preferred binding);
+- the doseForm, coded from the national list of dose forms;
+- the totalVolume - the amount of the medicine in the product, as a UCUM quantity;
 - the ingredients - each one a concept (ATC / INN) or a reference to another Medication, with its strength as a ratio;
 - the batch - the lot number (AIK) and the expiry date.
 
