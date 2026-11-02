@@ -11,9 +11,9 @@ The base Device resource has no mandatory elements, and this profile adds none. 
 #### Each UZ Core Device Must Support
 
 - an identifier, always sent with its `system` (see [Identifiers](identifiers.html));
-- the `status` (active / inactive / entered-in-error) from the required [device status](ValueSet-device-status-vs.html) value set, and the `availabilityStatus` (available / lost / damaged / destroyed) from the extensible [availability status](ValueSet-device-availability-status-vs.html) value set;
-- the `displayName`, and each `name` with its `value`, its `type` from the [name type value set](ValueSet-device-name-type-vs.html) (registered, user-friendly or patient-reported name), and the `display` flag;
-- the `type`, coded with SNOMED CT from the [device type value set](ValueSet-device-type-vs.html), and the `category` from the [device category value set](ValueSet-device-category-vs.html);
+- the `status` of the record (active / inactive / entered-in-error), and whether the device can be used (`availabilityStatus`: available / lost / damaged / destroyed);
+- the `displayName`, and each `name` with its `value`, its `type` (registered, user-friendly or patient-reported name), and the `display` flag;
+- the kind of device (`type`, a SNOMED CT concept) and its broader `category`;
 - the `manufacturer`, `modelNumber` and `partNumber`;
 - the `serialNumber`, `lotNumber`, `manufactureDate` and `expirationDate`;
 - the `owner`, a reference to an [Organization](StructureDefinition-uz-core-organization.html), and the `location`, a reference to a [Location](StructureDefinition-uz-core-location.html);

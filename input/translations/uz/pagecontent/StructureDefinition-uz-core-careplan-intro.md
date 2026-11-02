@@ -13,16 +13,16 @@ Profil yangi majburiy karraliliklarni qo'shmaydi. Bazaviy FHIR talablariga amal 
 #### Har bir UZ Core CarePlan Must Support
 
 - biznes identifikatorlar (`identifier`);
-- reja tuzilgan ta'rif (`instantiatesCanonical`: [PlanDefinition](StructureDefinition-uz-core-plan-definition.html), [ActivityDefinition](StructureDefinition-uz-core-activitydefinition.html) yoki [Questionnaire](StructureDefinition-uz-core-questionnaire.html), yoki `instantiatesUri`);
-- boshqa rejalarga `basedOn`, `replaces` va `partOf` havolalari;
-- `status` ([so'rov statuslari](ValueSet-service-request-status-vs.html) bilan bog'langan) va `intent` ([CarePlan maqsadlari](ValueSet-careplan-intent-vs.html) bilan bog'langan);
-- `category`, `title` va `description`;
-- `subject` ([Patient](StructureDefinition-uz-core-patient.html) yoki [Group](StructureDefinition-uz-core-group.html)) va reja yaratilgan [Encounter](StructureDefinition-uz-core-encounter.html);
-- `period` va `created`;
-- `custodian`, `contributor` va `careTeam`;
-- `addresses` ([Condition](StructureDefinition-uz-core-condition.html)), `supportingInfo` va `goal` ([Goal](StructureDefinition-uz-core-goal.html));
-- `activity`: so'rov uchun `plannedActivityReference`, hodisa uchun `performedActivity` va `progress`;
-- `note`.
+- reja tuzilgan ta'rif: [PlanDefinition](StructureDefinition-uz-core-plan-definition.html), [ActivityDefinition](StructureDefinition-uz-core-activitydefinition.html) yoki [Questionnaire](StructureDefinition-uz-core-questionnaire.html) (`instantiatesCanonical`), yoki tashqi protokol (`instantiatesUri`);
+- boshqa rejalar bilan bog'liqlik: bajarilayotgan reja (`basedOn`), almashtirilayotgan reja (`replaces`) va ushbu reja qismi bo'lgan kattaroq reja (`partOf`);
+- reja holati (`status`: draft / active / on-hold / revoked / completed / entered-in-error / unknown) va uning niyati (`intent`: proposal / plan / order / option / directive);
+- reja turi (`category`), nomi (`title`) va matnli tavsifi (`description`);
+- reja kim uchun tuzilgani (`subject`: [Patient](StructureDefinition-uz-core-patient.html) yoki [Group](StructureDefinition-uz-core-group.html)) va reja yaratilgan [Encounter](StructureDefinition-uz-core-encounter.html);
+- reja amal qiladigan davr (`period`) va reja tuzilgan sana (`created`);
+- reja uchun mas'ul (`custodian`), uni tuzishda ishtirok etganlar (`contributor`) va uni bajaradigan jamoa (`careTeam`);
+- reja qaratilgan holatlar (`addresses`: [Condition](StructureDefinition-uz-core-condition.html)), u tayanadigan qo'shimcha ma'lumotlar (`supportingInfo`) va uning maqsadlari (`goal`: [Goal](StructureDefinition-uz-core-goal.html));
+- rejalashtirilgan harakatlar (`activity`): har bir harakat uchun so'rov (`plannedActivityReference`), amalda bajarilgan ish (`performedActivity`) va bajarilish jarayoni yozuvlari (`progress`);
+- izohlar (`note`).
 
 ### JSON ni bosqichma-bosqich tuzish
 

@@ -11,16 +11,16 @@ This profile adds no new mandatory cardinalities. Follow the base FHIR requireme
 #### Each UZ Core CarePlan Must Support
 
 - business identifiers (`identifier`);
-- the definition the plan follows (`instantiatesCanonical`, a [PlanDefinition](StructureDefinition-uz-core-plan-definition.html), [ActivityDefinition](StructureDefinition-uz-core-activitydefinition.html) or [Questionnaire](StructureDefinition-uz-core-questionnaire.html), or `instantiatesUri`);
-- `basedOn`, `replaces` and `partOf` links to other plans;
-- `status` (bound to [request status](ValueSet-service-request-status-vs.html)) and `intent` (bound to [CarePlan intent](ValueSet-careplan-intent-vs.html));
-- `category`, `title` and `description`;
-- `subject` ([Patient](StructureDefinition-uz-core-patient.html) or [Group](StructureDefinition-uz-core-group.html)) and the [Encounter](StructureDefinition-uz-core-encounter.html) the plan was created in;
-- `period` and `created`;
-- `custodian`, `contributor` and `careTeam`;
-- `addresses` ([Condition](StructureDefinition-uz-core-condition.html)), `supportingInfo` and `goal` ([Goal](StructureDefinition-uz-core-goal.html));
-- `activity`: `plannedActivityReference` for the request, `performedActivity` for the event, and `progress`;
-- `note`.
+- the definition the plan follows: a [PlanDefinition](StructureDefinition-uz-core-plan-definition.html), [ActivityDefinition](StructureDefinition-uz-core-activitydefinition.html) or [Questionnaire](StructureDefinition-uz-core-questionnaire.html) (`instantiatesCanonical`), or an external protocol (`instantiatesUri`);
+- links to other plans: the plan it fulfils (`basedOn`), the plan it replaces (`replaces`) and the larger plan it is part of (`partOf`);
+- the status of the plan (`status`: draft / active / on-hold / revoked / completed / entered-in-error / unknown) and its intent (`intent`: proposal / plan / order / option / directive);
+- the kind of plan (`category`), its `title` and a free-text `description`;
+- who the plan is for (`subject`: [Patient](StructureDefinition-uz-core-patient.html) or [Group](StructureDefinition-uz-core-group.html)) and the [Encounter](StructureDefinition-uz-core-encounter.html) in which it was created;
+- the period the plan covers (`period`) and when it was written (`created`);
+- who is responsible for the plan (`custodian`), who contributed to it (`contributor`) and the care team that carries it out (`careTeam`);
+- the conditions the plan addresses (`addresses`: [Condition](StructureDefinition-uz-core-condition.html)), other information it relies on (`supportingInfo`) and its goals (`goal`: [Goal](StructureDefinition-uz-core-goal.html));
+- the planned activities (`activity`): the request for each activity (`plannedActivityReference`), what was actually done (`performedActivity`) and notes on progress (`progress`);
+- notes (`note`).
 
 ### Building the JSON, step by step
 

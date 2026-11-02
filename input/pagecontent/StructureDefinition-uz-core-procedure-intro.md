@@ -13,13 +13,13 @@ This profile adds no mandatory cardinality of its own. The required elements are
 
 
 - an identifier, basedOn (CarePlan or ServiceRequest), and partOf (a parent procedure, observation, or medication administration);
-- the status (required binding) and a category;
-- the code identifying the procedure (extensible binding to the DHP [procedure-code value set](ValueSet-procedure-code-vs.html), which holds SNOMED CT for clinical meaning and [ICHI](ValueSet-ichi-vs.html) for the statistical code - carry both as two codings where a procedure needs to be reported as well as recorded);
+- the status (preparation / in-progress / not-done / on-hold / stopped / completed / entered-in-error / unknown) and a category;
+- the code identifying the procedure - SNOMED CT for its clinical meaning and ICHI for the statistical code; carry both as two codings where a procedure needs to be reported as well as recorded;
 - the subject and the encounter it occurred in;
 - the occurrence[x] timing, the recorded date, and the recorder;
 - the performer and their actor;
-- the location, the reason (a condition, observation, procedure, report, or document), and the bodySite (required binding);
-- the outcome (extensible binding) and free-text note;
+- the location, the reason (a condition, observation, procedure, report, or document), and the bodySite;
+- the outcome and free-text note;
 - the items used in the procedure.
 
 > Set `status` to `not-done` (rather than omitting the Procedure) when an ordered procedure was deliberately not performed, so the decision stays on the record.
