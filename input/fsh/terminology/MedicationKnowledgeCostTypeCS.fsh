@@ -1,6 +1,6 @@
 CodeSystem: MedicationKnowledgeCostTypeCS
 Id: medication-knowledge-cost-type-cs
-Title: "Medication Knowledge Cost Type Code System"
+Title: "Medication Knowledge Cost Type"
 Description: "List of medication price types used in Uzbekistan healthcare system"
 * insert OriginalCodeSystemDraft(medication-knowledge-cost-type-cs)
 
