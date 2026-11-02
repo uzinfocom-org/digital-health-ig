@@ -4,7 +4,7 @@
 
 [Composition hujjat turlari](CodeSystem-composition-type-cs.html): 399-son buyruqning 112-shakli - foliy kislotasi, 25-OH D vitamini va B12 vitaminiga IXLA tahlili uchun `emdoc-0010-0471` kodi qo'shildi.
 
-[Dori shakllari](CodeSystem-medication-doseform-cs.html): DMED elektron retseptining kodi bo'lmagan dori shakllari uchun `HRB101` dorivor o'simlik xomashyosi, `TEA101` dorivor o'simliklar yig'masi va `SHA101` dorivor shampun kodlari o'zbek, rus va ingliz tilidagi nomlari bilan qo'shildi.
+[Dori shakllari](CodeSystem-medication-doseform-cs.html): DMED elektron retseptining kodi bo'lmagan dori shakllari uchun `HRB101` dorivor o'simlik xomashyosi, `JEL101` dorivor jele, `KIT101` to'plam, `LOT101` losyon, `SHA101` dorivor shampun va `TEA101` dorivor o'simliklar yig'masi kodlari o'zbek, rus va ingliz tilidagi nomlari bilan qo'shildi.
 
 [O'lchov birliklari xaritasi](ConceptMap-unit-of-measurement-cm.html): UCUM kodi bo'lmagan 30 ta birlik uchun UCUM kodlari qo'shildi, masalan xalqaro birlik `[iU]`, dozaga milligramm `mg/{dose}`, litrga gramm `g/L` va koloniya hosil qiluvchi birlik `[CFU]`.
 

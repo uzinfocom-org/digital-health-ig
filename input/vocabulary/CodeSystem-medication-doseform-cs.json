@@ -8409,6 +8409,48 @@
       ]
     },
     {
+      "code": "LOT101",
+      "display": "losyon",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "лосьон"
+        },
+        {
+          "language": "en",
+          "value": "lotion"
+        }
+      ]
+    },
+    {
+      "code": "JEL101",
+      "display": "dorivor jele",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "желе лекарственное"
+        },
+        {
+          "language": "en",
+          "value": "jelly"
+        }
+      ]
+    },
+    {
+      "code": "KIT101",
+      "display": "to'plam",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "набор"
+        },
+        {
+          "language": "en",
+          "value": "kit"
+        }
+      ]
+    },
+    {
       "code": "OTH101",
       "display": "boshqa dori shakllari",
       "designation": [
@@ -8423,5 +8465,5 @@
   "hierarchyMeaning": "is-a",
   "language": "uz",
   "experimental": true,
-  "count": 839
+  "count": 842
 }

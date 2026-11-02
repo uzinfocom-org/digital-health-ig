@@ -6,7 +6,7 @@ Added [UZ Core CarePlan](StructureDefinition-uz-core-careplan.html), a general p
 
 [Composition types](CodeSystem-composition-type-cs.html) add `emdoc-0010-0471` for Order No. 399 form 112, a laboratory analysis of folic acid, 25-OH vitamin D and vitamin B12.
 
-[Medication dose form](CodeSystem-medication-doseform-cs.html) adds `HRB101` herbal substance, `TEA101` herbal tea and `SHA101` medicated shampoo, with Uzbek, Russian and English names, for DMED e-prescription dose forms that had no code.
+[Medication dose form](CodeSystem-medication-doseform-cs.html) adds `HRB101` herbal substance, `JEL101` jelly, `KIT101` kit, `LOT101` lotion, `SHA101` medicated shampoo and `TEA101` herbal tea, with Uzbek, Russian and English names, for DMED e-prescription dose forms that had no code.
 
 [Unit of measurement map](ConceptMap-unit-of-measurement-cm.html) adds UCUM targets for 30 units that had none, such as international unit `[iU]`, milligram per dose `mg/{dose}`, gram per litre `g/L` and colony-forming unit `[CFU]`.
 

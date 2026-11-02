@@ -2528,6 +2528,21 @@ Description: "Pharmaceutical dose forms (e.g., tablet, capsule, solution)."
   * ^designation[=].value = "шампунь лекарственный"
   * ^designation[+].language = #en
   * ^designation[=].value = "shampoo"
+* #LOT101 "losyon"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "лосьон"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "lotion"
+* #JEL101 "dorivor jele"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "желе лекарственное"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "jelly"
+* #KIT101 "to'plam"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "набор"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "kit"
 * #OTH101 "boshqa dori shakllari"
   * ^designation[0].language = #ru
   * ^designation[=].value = "другие лекарственные формы"
