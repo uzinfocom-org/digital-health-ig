@@ -15,7 +15,7 @@ Description: "Uzbekistan Core MedicationKnowledge profile, used to represent ref
 * identifier ^slicing.rules = #open
 * identifier contains medicationKnowledge 0..1 MS
 * identifier[medicationKnowledge].system 1..1 MS
-* identifier[medicationKnowledge].system = $medication-knowledge
+* identifier[medicationKnowledge].system = $medication-knowledge-number
 * identifier[medicationKnowledge].value 1..1 MS
 * identifier[medicationKnowledge] ^short = "Unique identifier of the medicinal product or medication reference entry in DHP or an external source system"
 
@@ -53,10 +53,20 @@ Usage: #example
 
 * status = $medicationknowledge-status#active
 
+* author = Reference(Organization/example-organization-shif)
+
 * associatedMedication = Reference(Medication/example-medication)
 
 * cost[0].effectiveDate.start = "2026-10-01"
 * cost[0].type = medicationknowledge-cost-type-cs#price-type-0001-00001 "Cheklangan narx"
 * cost[0].source = "DTSJ"
-* cost[0].costMoney.value = 420025.00
+* cost[0].costMoney.value = 4500.00
 * cost[0].costMoney.currency = urn:iso:std:iso:4217#UZS
+
+Instance: example-organization-shif
+InstanceOf: UZCoreOrganization
+Description: "Example of the State Health Insurance Fund as the organization that publishes medication prices"
+Usage: #example
+* language = #uz
+* active = true
+* name = "Davlat tibbiy sug'urta jamg'armasi"
