@@ -28,6 +28,7 @@ Description: "Encounter type codes for ambulance encounters, with UZ/RU/EN desig
   * ^designation[+].language = #ru
   * ^designation[=].value = "На себя"
 
+* #emer5-0006-7 "Yo'lda"
   * ^designation[0].language = #en
   * ^designation[=].value = "En route"
   * ^designation[+].language = #ru
