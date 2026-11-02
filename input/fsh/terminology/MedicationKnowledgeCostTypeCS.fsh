@@ -1,8 +1,8 @@
 CodeSystem: MedicationKnowledgeCostTypeCS
-Id: medication-knowledge-cost-type-cs
-Title: "Medication Knowledge Cost Type"
-Description: "List of medication price types used in Uzbekistan healthcare system"
-* insert OriginalCodeSystemDraft(medication-knowledge-cost-type-cs)
+Id: medicationknowledge-cost-type-cs
+Title: "MedicationKnowledge cost type"
+Description: "MedicationKnowledge cost types in Uzbekistan"
+* insert OriginalCodeSystemDraft(medicationknowledge-cost-type-cs)
 
 * #price-type-0001-00001 "Cheklangan narx"
   * ^designation[0].language = #ru

@@ -1,8 +1,8 @@
 CodeSystem: MedicationKnowledgeStatusCS
 Id: medicationknowledge-status-cs
-Title: "Medication knowledge status translations"
-Description: "Medication knowledge status supplement with translations in Uzbek and Russian"
-* insert SupplementCodeSystem(medicationknowledge-status-cs, $medicationknowledge-status, 5.0.0)
+Title: "MedicationKnowledge status translations"
+Description: "MedicationKnowledge status supplement with translations in Uzbek and Russian"
+* insert SupplementCodeSystemDraft(medicationknowledge-status-cs, $medicationknowledge-status, 5.0.0)
 
 * #active
   * ^designation[0].language = #uz

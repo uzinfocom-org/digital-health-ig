@@ -1,7 +1,7 @@
 ValueSet: MedicationKnowledgeStatusVS
 Id: medicationknowledge-status-vs
-Title: "Medication Knowledge Status"
-Description: "Value set defining the permitted medication knowledge statuses"
+Title: "MedicationKnowledge status"
+Description: "MedicationKnowledge statuses"
 * ^url = "https://terminology.dhp.uz/fhir/core/ValueSet/medicationknowledge-status-vs"
 * ^experimental = true
 * ^extension[0].url = $valueset-supplement

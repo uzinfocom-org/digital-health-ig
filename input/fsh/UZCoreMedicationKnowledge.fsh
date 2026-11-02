@@ -35,7 +35,7 @@ Description: "Uzbekistan Core MedicationKnowledge profile, used to represent ref
 * cost ^short = "Price information of the medicinal product (e.g. price ceiling, wholesale, retail, SHIF price)"
 * cost.effectiveDate 1..1 MS
 * cost.effectiveDate ^short = "Period during which the price applies: start date and, optionally, end date"
-* cost.type 1..1 MS
+* cost.type MS
 * cost.type from MedicationKnowledgeCostTypeVS (extensible)
 * cost.type ^short = "Type of price set for the medicinal product"
 * cost.source ^short = "Organization or system that provided the price (e.g. UzPharmAgency, SHIF)"
@@ -48,6 +48,7 @@ Title: "Example UZ Core MedicationKnowledge - Price ceiling"
 Description: "Example medication knowledge record with the price ceiling set by the State Health Insurance Fund."
 Usage: #example
 
+* language = #uz
 * identifier[medicationKnowledge].value = "MK-2026-000123"
 
 * status = $medicationknowledge-status#active
@@ -55,7 +56,7 @@ Usage: #example
 * associatedMedication = Reference(Medication/example-medication)
 
 * cost[0].effectiveDate.start = "2026-10-01"
-* cost[0].type = medication-knowledge-cost-type-cs#price-type-0001-00001 "Price ceiling"
+* cost[0].type = medicationknowledge-cost-type-cs#price-type-0001-00001 "Cheklangan narx"
 * cost[0].source = "DTSJ"
 * cost[0].costMoney.value = 420025.00
 * cost[0].costMoney.currency = urn:iso:std:iso:4217#UZS
