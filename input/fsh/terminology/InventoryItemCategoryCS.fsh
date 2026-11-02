@@ -1,6 +1,6 @@
 CodeSystem: InventoryItemCategoryCS
 Id: inventory-item-category-cs
-Title: "Inventory Item Category Code System"
+Title: "Inventory Item Category"
 Description: "List of inventory item categories"
 * insert OriginalCodeSystemDraft(inventory-item-category-cs)
 

@@ -1,6 +1,6 @@
 CodeSystem: InventoryOperationTypeCS
 Id: inventory-operation-type-cs
-Title: "Inventory Operation Type Code System"
+Title: "Inventory Operation Type"
 Description: "List of inventory operation types"
 * insert OriginalCodeSystemDraft(inventory-operation-type-cs)
 
