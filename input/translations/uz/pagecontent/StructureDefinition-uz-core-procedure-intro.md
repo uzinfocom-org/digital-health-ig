@@ -15,13 +15,13 @@ Bu profil o'zining hech qanday majburiy kardinalligini qo'shmaydi. Talab qilinad
 
 
 - identifikator, basedOn (CarePlan yoki ServiceRequest) va partOf (ota protsedura, kuzatuv yoki dori berish);
-- status (required bog'lanish) va kategoriya;
-- protsedurani aniqlovchi kod ([DHP procedure-code value set](ValueSet-procedure-code-vs.html) ga extensible bog'lanish: SNOMED CT klinik ma'noni, [ICHI](ValueSet-ichi-vs.html) esa statistik kodni beradi; protsedurani qayd etish bilan birga hisobotga ham kiritish kerak bo'lsa, ikkalasini ikki coding sifatida ko'rsating);
+- status (preparation / in-progress / not-done / on-hold / stopped / completed / entered-in-error / unknown) va kategoriya;
+- protsedurani aniqlovchi kod: SNOMED CT klinik ma'noni, ICHI esa statistik kodni beradi; protsedurani qayd etish bilan birga hisobotga ham kiritish kerak bo'lsa, ikkalasini ikki coding sifatida ko'rsating;
 - subject va u sodir bo'lgan uchrashuv (encounter);
 - occurrence[x] vaqti, qayd etilgan sana va qayd etuvchi;
 - ijrochi va uning aktori;
-- joylashuv, sabab (holat, kuzatuv, protsedura, hisobot yoki hujjat) va bodySite (required bog'lanish);
-- natija (outcome) (extensible bog'lanish) va erkin matnli eslatma;
+- joylashuv, sabab (holat, kuzatuv, protsedura, hisobot yoki hujjat) va bodySite;
+- natija (outcome) va erkin matnli eslatma;
 - protsedurada ishlatilgan buyumlar.
 
 > Buyurtma qilingan protsedura ataylab bajarilmaganda `status` ni `not-done` ga o'rnating (Procedure ni o'tkazib yuborish o'rniga), shunda qaror yozuvda saqlanib qoladi.
