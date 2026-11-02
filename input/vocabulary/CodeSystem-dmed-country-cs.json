@@ -4,7 +4,7 @@
   "content": "complete",
   "name": "DMEDCountryCS",
   "id": "dmed-country-cs",
-  "title": "DMED Country (UZ/RU)",
+  "title": "DMED country",
   "description": "Uzbek and Russian designations for DMED Country codes",
   "url": "https://terminology.dhp.uz/fhir/core/CodeSystem/dmed-country-cs",
   "concept": [

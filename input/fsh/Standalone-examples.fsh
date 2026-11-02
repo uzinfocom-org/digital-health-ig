@@ -102,16 +102,6 @@ Description: "Example OperationOutcome returned when a transaction fails due to 
 * issue[=].diagnostics = "Observation.status: minimum required = 1, but only found 0 (from https://dhp.uz/fhir/core/StructureDefinition/uz-core-observation)"
 * issue[=].expression = "Bundle.entry[2].resource.ofType(Observation)"
 
-// Temporary stand-in referenced by the Procedure example; should be fleshed out (or replaced with a proper profile-conforming instance) before publication
-Instance: example-careplan
-InstanceOf: CarePlan
-Usage: #example
-Title: "example-careplan"
-Description: "Example of a careplan"
-* status = #active
-* intent = #plan
-* subject = Reference(example-david)
-
 // ============== Questionnaire Instance ==============
 
 Instance: PatientSatisfactionQuestionnaire
@@ -519,3 +509,16 @@ Description: "Illustrative transfusion order for the patient in the blood produc
 * requester = Reference(example-practitioner)
 * performer = Reference(tashkent-hospital)
 * reason.concept = $sct#87522002 "Iron deficiency anemia"
+
+
+Instance: example-cold-storage-shelf
+InstanceOf: UZCoreLocation
+Usage: #example
+Title: "Blood product cold storage shelf"
+Description: "Illustrative cold storage shelf at the Andijan blood station, referenced by the blood product inventory example."
+* language = #en
+* status = #active
+* mode = #instance
+* name = "Cold storage, shelf 3"
+* description = "Shelf 3 in the blood station's refrigerated blood product storage area."
+* managingOrganization = Reference(andijan-station)

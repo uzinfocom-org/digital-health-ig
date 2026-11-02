@@ -750,3 +750,21 @@ Usage: #definition
 * uniqueId[0].type = #uri
 * uniqueId[=].value = $specialist-certificate
 * uniqueId[=].preferred = true
+
+Instance: uzb-inventory-item-number
+InstanceOf: NamingSystem
+Description: "Inventory item identifiers assigned by inventory-managing organizations in Uzbekistan"
+Usage: #definition
+* url = "https://terminology.dhp.uz/fhir/core/NamingSystem/uzb-inventory-item-number"
+* name = "UzbekistanInventoryItemIdentifier"
+* status = #active
+* kind = #identifier
+* date = "2026-10-20"
+* publisher = "Uzinfocom"
+* responsible = "Ministry of Health of the Republic of Uzbekistan"
+* description = "Naming system for inventory item identifiers assigned by the managing organization's information system to inventory records for products such as medications, devices, nutrition products and blood products."
+* jurisdiction = urn:iso:std:iso:3166#UZ "Uzbekistan"
+* usage = "Used in InventoryItem.identifier.system to identify and track an inventory item record. Values must be unique across participating organizations within this namespace, using coordinated allocation or an issuer-qualified value. Record the organization that assigned the identifier in identifier.assigner. Identifiers of individual physical instances are recorded in InventoryItem.instance.identifier."
+* uniqueId[0].type = #uri
+* uniqueId[=].value = $inventory-item-number
+* uniqueId[=].preferred = true

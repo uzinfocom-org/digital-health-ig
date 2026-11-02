@@ -169,6 +169,7 @@ Description: "Uzbekistan Core Patient profile, used to represent patients admini
 * insert IntAndUzAddressRules
 * maritalStatus from MaritalStatusVS (required)
 * insert HumanName
+* insert MultilingualHumanName
 * active MS
 * birthDate MS
 * managingOrganization MS
@@ -321,9 +322,21 @@ Usage: #example
 * name
   * use = #usual
   * text = "Karimova Nodira Anvarovna"
+    * extension[translation]
+      * extension[lang].valueCode = #ru
+      * extension[content].valueString = "Каримова Нодира Анваровна"
   * family = "Karimova"
+    * extension[translation]
+      * extension[lang].valueCode = #ru
+      * extension[content].valueString = "Каримова"
   * given = "Nodira"
+    * extension[translation]
+      * extension[lang].valueCode = #ru
+      * extension[content].valueString = "Нодира"
   * suffix = "Anvarovna"
+    * extension[translation]
+      * extension[lang].valueCode = #ru
+      * extension[content].valueString = "Анваровна"
 * gender = #female
 * birthDate = "1985-03-05"
 

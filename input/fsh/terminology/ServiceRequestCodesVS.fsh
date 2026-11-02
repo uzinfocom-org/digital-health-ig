@@ -11,11 +11,13 @@ Description: "Defines the set of codes that may be used in ServiceRequest to spe
 * include codes from system lab-pan-cs
 * include codes from system $sct where concept is-a #71388002
 * include codes from system screening-code-cs
+* include codes from system nursing-visit-purpose-cs
 
 // Screening and patronage (home visit) services coded in SNOMED CT. Already covered by the
 // procedure filter above; listed so they are named in the value set and pick up the
 // Uzbek and Russian translations from ScreeningSctCS. Services with no suitable SNOMED CT
-// concept stay in screening-code-cs.
+// concept stay in screening-code-cs
+// or, for Nursing visit purposes, nursing-visit-purpose-cs.
 * $sct#171223006 "Ischemic heart disease screening"
 * $sct#408961002 "Fertility care assessment"
 * $sct#171147008 "Screening for intestinal helminthiasis"
@@ -31,3 +33,5 @@ Description: "Defines the set of codes that may be used in ServiceRequest to spe
 * $sct#133906008 "Postpartum care"
 * $sct#408987002 "Newborn care assessment"
 * $sct#409027005 "Infant care assessment"
+* $sct#440068009 "Home visit for newborn care and assessment"
+* $sct#410620009 "Well child visit"

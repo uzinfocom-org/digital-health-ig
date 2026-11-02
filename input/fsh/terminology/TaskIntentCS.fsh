@@ -1,7 +1,7 @@
 CodeSystem: TaskIntentCS
 Id: task-intent-cs
-Title: "Task Intent codes translations"
-Description: "Codes indicating the level of authority or intention of a task"
+Title: "Task intent translations"
+Description: "Task intent supplement with translations in Uzbek and Russian"
 * insert SupplementCodeSystem(task-intent-cs, $task-intent, 5.0.0)
 
 * #unknown "Unknown"

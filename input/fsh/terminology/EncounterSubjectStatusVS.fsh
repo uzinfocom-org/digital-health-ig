@@ -1,7 +1,7 @@
 ValueSet: EncounterSubjectStatusVS
 Id: encounter-subject-status-vs
-Title: "Encounter subject status translations"
-Description: "Encounter subject status codes with English and Russian translations"
+Title: "Encounter subject status"
+Description: "Encounter subject statuses"
 * ^url = "https://terminology.dhp.uz/fhir/core/ValueSet/encounter-subject-status-vs"
 * ^experimental = true
 

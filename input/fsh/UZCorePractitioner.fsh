@@ -31,6 +31,7 @@ Description: "Uzbekistan Core Practitioner profile, used to define healthcare pr
 * name MS
   * use and text and family and given and suffix and period MS
   * use from NameUseVS (required)
+* insert MultilingualHumanName
 * telecom MS
   * system and value and use and rank and period MS
   * system from ContactPointSystemVS (required)
@@ -67,10 +68,22 @@ Usage: #example
 * active = true
 * name
   * use = #official
-  * text = "Test Test Test"
-  * family = "Test"
-  * given = "Test"
-  * suffix = "Test"
+  * text = "Rahimova Dilnoza Akmalovna"
+    * extension[translation]
+      * extension[lang].valueCode = #ru
+      * extension[content].valueString = "Рахимова Дилноза Акмаловна"
+  * family = "Rahimova"
+    * extension[translation]
+      * extension[lang].valueCode = #ru
+      * extension[content].valueString = "Рахимова"
+  * given = "Dilnoza"
+    * extension[translation]
+      * extension[lang].valueCode = #ru
+      * extension[content].valueString = "Дилноза"
+  * suffix = "Akmalovna"
+    * extension[translation]
+      * extension[lang].valueCode = #ru
+      * extension[content].valueString = "Акмаловна"
 * telecom
   * system = #phone
   * value = "975555555"
@@ -122,3 +135,37 @@ Usage: #example
 * active = true
 * gender = #other
 * gender.extension[gender-other].valueCoding = GenderOtherCS#regis0007.00005 "Jinsni erkakka o'zgartirdi"
+
+Instance: example-patronage-nurse
+InstanceOf: UZCorePractitioner
+Title: "Example UZ Core Practitioner - Patronage Nurse"
+Description: "A family polyclinic patronage nurse who visits newborns at home"
+Usage: #example
+* language = #uz
+* identifier[nationalId]
+  * value = "41505891234567"
+* active = true
+* name
+  * use = #official
+  * text = "Yusupova Malika Rustamovna"
+  * family = "Yusupova"
+  * given = "Malika"
+  * suffix = "Rustamovna"
+* gender = #female
+
+Instance: example-physiotherapist
+InstanceOf: UZCorePractitioner
+Title: "Example UZ Core Practitioner - Physiotherapist"
+Description: "A physiotherapy doctor who plans and carries out therapeutic massage courses"
+Usage: #example
+* language = #uz
+* identifier[nationalId]
+  * value = "31203851234568"
+* active = true
+* name
+  * use = #official
+  * text = "Ivanov Pavel Sergeyevich"
+  * family = "Ivanov"
+  * given = "Pavel"
+  * suffix = "Sergeyevich"
+* gender = #male

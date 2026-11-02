@@ -1,7 +1,7 @@
 CodeSystem: CompositionStatusCS
 Id: composition-status-cs
-Title: "Composition status"
-Description: "Composition status supplement with translations in uzbek and russian"
+Title: "Composition status translations"
+Description: "Composition status supplement with translations in Uzbek and Russian"
 * insert SupplementCodeSystem(composition-status-cs, $composition-status, 5.0.0)
 
 * #registered

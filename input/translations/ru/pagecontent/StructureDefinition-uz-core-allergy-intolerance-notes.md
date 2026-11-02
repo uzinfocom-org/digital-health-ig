@@ -50,3 +50,7 @@ If-Match: W/"3"   # ETag, полученный при последнем чте�
 
 - [Как читать это руководство](how-to-read.html) &middot; [Must Support](must-support.html) &middot; [Общие рекомендации](general-guidance.html)
 - [Рабочие процессы](workflows.html)
+
+### Как связать реакцию с введением лекарства
+
+**Связь с аллергией:** `MedicationAdministration.reason` означает, что лекарство введено по данному клиническому показанию, например для лечения аллергии. Это поле не регистрирует реакцию, вызванную лекарством. Если данное введение вызвало аллергическую реакцию, внесите её в [AllergyIntolerance](StructureDefinition-uz-core-allergy-intolerance.html) пациента и свяжите его `reaction` с этим введением стандартным расширением `openEHR-administration`.

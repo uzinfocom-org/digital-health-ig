@@ -76,6 +76,23 @@ RuleSet: HumanName
 * name MS
   * use and text and family and given and suffix and period MS
 
+// The name is in Uzbek; its Russian and Karakalpak forms travel as translation
+// extensions on each part, so one HumanName carries every script.
+RuleSet: MultilingualHumanName
+* name
+  * text
+    * extension contains translation named translation 0..* MS
+      * ^short = "Full name (in Russian and Karakalpak languages)"
+  * family
+    * extension contains translation named translation 0..* MS
+      * ^short = "Family name (in Russian and Karakalpak languages)"
+  * given
+    * extension contains translation named translation 0..* MS
+      * ^short = "Given name (in Russian and Karakalpak languages)"
+  * suffix
+    * extension contains translation named translation 0..* MS
+      * ^short = "Patronymic or other suffix (in Russian and Karakalpak languages)"
+
 RuleSet: TaxIdentifier
 * identifier[taxId]
   * ^short = "Unique identifier of the organization in  Soliq"

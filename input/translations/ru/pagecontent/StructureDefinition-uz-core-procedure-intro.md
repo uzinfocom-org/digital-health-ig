@@ -15,13 +15,13 @@ UZ Core Procedure фиксирует действие, выполненное н
 
 
 - идентификатор, basedOn (CarePlan или ServiceRequest) и partOf (родительская процедура, наблюдение или введение лекарственного средства);
-- статус (привязка required) и категорию;
-- код, идентифицирующий процедуру (привязка extensible к набору значений [кодов процедур DHP](ValueSet-procedure-code-vs.html), где SNOMED CT несёт клинический смысл, а [ICHI](ValueSet-ichi-vs.html) - статистический код; укажите оба как два coding, если процедуру нужно не только зафиксировать, но и включить в отчётность);
+- статус (preparation / in-progress / not-done / on-hold / stopped / completed / entered-in-error / unknown) и категорию;
+- код, идентифицирующий процедуру: SNOMED CT несёт клинический смысл, а ICHI - статистический код; укажите оба как два coding, если процедуру нужно не только зафиксировать, но и включить в отчётность;
 - субъект и случай обслуживания (encounter), в котором она произошла;
 - время выполнения occurrence[x], дату записи и регистратора (recorder);
 - исполнителя (performer) и его субъекта (actor);
-- местоположение, причину (состояние, наблюдение, процедура, отчёт или документ) и анатомическую область bodySite (привязка required);
-- исход (outcome) (привязка extensible) и свободнотекстовое примечание;
+- местоположение, причину (состояние, наблюдение, процедура, отчёт или документ) и анатомическую область bodySite;
+- исход (outcome) и свободнотекстовое примечание;
 - объекты, использованные в процедуре.
 
 > Установите `status` в `not-done` (а не опускайте Procedure), когда назначенная процедура была умышленно не выполнена, чтобы это решение осталось в записи.
@@ -44,7 +44,7 @@ UZ Core Procedure фиксирует действие, выполненное н
     "text": "Therapeutic massage of right foot"
   },
   "subject": { "reference": "Patient/example-david" },
-  "encounter": { "reference": "Encounter/example-encounter" },
+  "encounter": { "reference": "Encounter/example-physiotherapy-encounter" },
   "occurrencePeriod": { "start": "2025-05-15T08:00:00Z", "end": "2025-05-15T10:00:00Z" }
 }
 ```
@@ -71,12 +71,15 @@ UZ Core Procedure фиксирует действие, выполненное н
     "text": "Therapeutic massage of right foot"
   },
   "subject": { "reference": "Patient/example-david", "display": "David Davidov" },
-  "encounter": { "reference": "Encounter/example-encounter", "display": "Outpatient Visit" },
+  "encounter": {
+    "reference": "Encounter/example-physiotherapy-encounter",
+    "display": "Outpatient physiotherapy visit"
+  },
   "occurrencePeriod": { "start": "2025-05-15T08:00:00Z", "end": "2025-05-15T10:00:00Z" },
   "recorded": "2025-05-19T09:30:00Z",
-  "recorder": { "reference": "PractitionerRole/example-practitionerrole" },
+  "recorder": { "reference": "PractitionerRole/example-physiotherapist-role" },
   "performer": [
-    { "actor": { "reference": "Practitioner/example-practitioner", "display": "Paul Ivanov, PT" } }
+    { "actor": { "reference": "Practitioner/example-physiotherapist", "display": "Ivanov Pavel Sergeyevich" } }
   ],
   "location": { "reference": "Location/example-location", "display": "Toshkent shahar 1-sonli shifoxona" }
 }
@@ -99,10 +102,10 @@ UZ Core Procedure фиксирует действие, выполненное н
   },
   "subject": { "reference": "Patient/example-david", "display": "David Davidov" },
   "basedOn": [
-    { "reference": "CarePlan/example-careplan", "display": "CarePlan #1" }
+    { "reference": "CarePlan/example-massage-careplan", "display": "Therapeutic massage course" }
   ],
   "reason": [
-    { "reference": { "reference": "Condition/example-disability", "display": "Aching right foot" } }
+    { "reference": { "reference": "Condition/example-foot-pain", "display": "Right foot pain" } }
   ],
   "bodySite": [
     { "coding": [{ "system": "http://snomed.info/sct", "code": "7769000", "display": "Right foot" }] }

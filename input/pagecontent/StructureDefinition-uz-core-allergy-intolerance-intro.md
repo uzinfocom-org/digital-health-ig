@@ -121,3 +121,9 @@ To mark an allergy as resolved, set `clinicalStatus` to `resolved` and add the `
 See [Missing & suppressed data](general-guidance.html#missing-data) and the [terminology guidance](general-guidance.html#terminology) for choosing the right coded values.
 
 For example API calls and a sample payload, see the [Quick Start](#quick-start) at the bottom of this page.
+
+### Link to a medication administration
+
+When a medication administration caused an allergic reaction, record the reaction in `AllergyIntolerance.reaction` and link that reaction to the `MedicationAdministration` using the standard `openEHR-administration` extension (`valueReference`). This link means the administration is associated with the reaction. Do not use `MedicationAdministration.reason` for this causal link.
+
+When a medication was administered because of an allergy or allergic condition, record that clinical indication in `MedicationAdministration.reason` instead. `reason` explains why the medication was given; it does not state that the medication caused a reaction. These two links describe different clinical relationships and may both be present when both circumstances apply.

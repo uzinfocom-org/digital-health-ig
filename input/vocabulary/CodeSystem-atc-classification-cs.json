@@ -4,8 +4,8 @@
   "content": "supplement",
   "name": "ATCClassificationCS",
   "id": "atc-classification-cs",
-  "title": "ATC classification system",
-  "description": "Anatomical Therapeutic Chemical (ATC) classification system for medicinal products.",
+  "title": "ATC classification translations",
+  "description": "ATC classification supplement with translations in Uzbek and Russian",
   "url": "https://terminology.dhp.uz/fhir/core/CodeSystem/atc-classification-cs",
   "concept": [
     {

@@ -14,7 +14,7 @@ UZ Core Patient содержит административную и демог�
 
 
 
-- имя (узбекский как авторитетный язык, с переводами в виде обозначений);
+- имя (узбекский как авторитетный язык, русская и каракалпакская формы - расширениями `translation`, см. [Имена на узбекском и русском](#names-in-uzbek-and-russian));
 - пол (с национальным расширением `gender-other`, где применимо);
 - дату рождения;
 - адрес - либо узбекский адрес (кодированные административные деления: область, район, махалля), либо международный адрес в свободной текстовой форме;
@@ -27,7 +27,7 @@ UZ Core Patient содержит административную и демог�
 
 ### Построение JSON, шаг за шагом
 
-Приведённые ниже примеры идут от наименьшего экземпляра, который примет сервер, до полной нагрузки регистрации. Скопируйте один из них и адаптируйте - каждое показанное значение проходит валидацию по этому профилю. Полные эталонные экземпляры приведены по ссылкам внизу страницы ([Salim](Patient-example-salim.html), [Emma](Patient-example-emma.html), [David](Patient-example-david.html), [неустановленный пациент](Patient-example-unidentified-patient.html)).
+Приведённые ниже примеры идут от наименьшего экземпляра, который примет сервер, до полной нагрузки регистрации. Скопируйте один из них и адаптируйте - каждое показанное значение проходит валидацию по этому профилю. Полные эталонные экземпляры приведены по ссылкам внизу страницы ([Salim](Patient-example-salim.html), [Emma](Patient-example-emma.html), [David](Patient-example-david.html), [неустановленный пациент](Patient-example-unidentified-patient.html), [Nodira](Patient-example-nodira.html)).
 
 #### Наименьший Patient, который вам следует отправлять
 
@@ -95,6 +95,60 @@ UZ Core Patient содержит административную и демог�
 ```
 
 Коды `state` / `district` / `city` берутся из национальных наборов значений - см. [Адреса](general-guidance.html#addresses), чтобы узнать, откуда берётся каждый код. Для пациента, проживающего за рубежом, вместо этого используйте адрес в свободной текстовой форме с `country`, установленным в иностранный ISO-код (см. [пример Emma](Patient-example-emma.html)).
+
+#### Имена на узбекском и русском {#names-in-uzbek-and-russian}
+
+`name` записывается на узбекском - языке ресурса (`language`), и именно узбекский текст является авторитетным. Если у вас есть и русская (кириллическая) форма, передавайте её расширением `translation` на каждой заполненной части: `_text`, `_family`, `_given` и `_suffix`. Оставляйте одну запись `name`: второй `HumanName` с русским написанием читался бы как другое имя. Полный набор - в [примере Nodira](Patient-example-nodira.html):
+
+```json
+"name": [
+  {
+    "use": "usual",
+    "text": "Karimova Nodira Anvarovna",
+    "_text": {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/translation",
+          "extension": [ { "url": "lang", "valueCode": "ru" }, { "url": "content", "valueString": "Каримова Нодира Анваровна" } ]
+        }
+      ]
+    },
+    "family": "Karimova",
+    "_family": {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/translation",
+          "extension": [ { "url": "lang", "valueCode": "ru" }, { "url": "content", "valueString": "Каримова" } ]
+        }
+      ]
+    },
+    "given": [ "Nodira" ],
+    "_given": [
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/translation",
+            "extension": [ { "url": "lang", "valueCode": "ru" }, { "url": "content", "valueString": "Нодира" } ]
+          }
+        ]
+      }
+    ],
+    "suffix": [ "Anvarovna" ],
+    "_suffix": [
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/translation",
+            "extension": [ { "url": "lang", "valueCode": "ru" }, { "url": "content", "valueString": "Анваровна" } ]
+          }
+        ]
+      }
+    ]
+  }
+]
+```
+
+Добавьте по одному `translation` на каждый язык, который у вас есть, - русский (`ru`) или каракалпакский (`kaa`).
 
 #### Несколько идентификаторов {#identifier-slices}
 

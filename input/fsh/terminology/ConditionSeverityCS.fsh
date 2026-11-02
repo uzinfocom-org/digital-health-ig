@@ -1,7 +1,7 @@
 CodeSystem: ConditionSeverityCS
 Id: condition-severity-cs
-Title: "Condition Severity Supplement CodeSystem"
-Description: "SNOMED CT supplement containing Uzbek and Russian designations for condition severity codes used in Uzbekistan."
+Title: "Condition severity translations"
+Description: "Condition severity supplement with translations in Uzbek and Russian"
 
 * insert SupplementCodeSystemDraft(
     condition-severity-cs,

@@ -1,7 +1,7 @@
 CodeSystem: MedicationRequestStatusCS
 Id: medicationrequest-status-cs
-Title: "MedicationRequest Status translations"
-Description: "MedicationRequest statuses with translations into Uzbek and Russian."
+Title: "MedicationRequest status translations"
+Description: "MedicationRequest status supplement with translations in Uzbek and Russian"
 * insert SupplementCodeSystemDraft(medicationrequest-status-cs, $medicationrequest-status, 5.0.0)
 
 * #active "Active" "The prescription is currently valid and ready to be dispensed."

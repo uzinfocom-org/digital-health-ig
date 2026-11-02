@@ -1,8 +1,6 @@
 This workflow shows how a referral is created and fulfilled. Referrals are where developers most often get lost, because two resources are involved and their relationship is not obvious from the profile tables. The one-line rule:
 
-> `ServiceRequest` is the referral itself - *what* is to be done. `Task` is the work of fulfilling it - *who* did it, *when*, and *how far along* it is.
-
-> Profile status: both resources are now profiled - [UZ Core ServiceRequest](StructureDefinition-uz-core-servicerequest.html) for the referral and [UZ Core Task Referral Approval](StructureDefinition-uz-core-referral-approval-task.html) for the approval stages. Both are still marked experimental, so review them before building against them. [Procedure](StructureDefinition-uz-core-procedure.html), [Observation](StructureDefinition-uz-core-observation.html), [Encounter](StructureDefinition-uz-core-encounter.html) and [Condition](StructureDefinition-uz-core-condition.html) used at fulfilment are profiled.
+> [`ServiceRequest`](StructureDefinition-uz-core-servicerequest.html) is the referral itself - *what* is to be done. [`Task`](StructureDefinition-uz-core-referral-approval-task.html) is the work of fulfilling it - *who* did it, *when*, and *how far along* it is.
 
 Actors: the referring clinician; approval commissions (for state-funded referrals); the performing facility.
 

@@ -1,6 +1,6 @@
 ValueSet: StateVS
 Id: state-vs
-Title: "Uzbekistan states and Locations"
+Title: "Uzbekistan states and locations"
 Description: "List of states and locations in Uzbekistan"
 * ^url = "https://terminology.dhp.uz/fhir/core/ValueSet/state-vs"
 * ^experimental = true
