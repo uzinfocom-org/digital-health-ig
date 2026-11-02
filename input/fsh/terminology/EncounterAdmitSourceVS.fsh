@@ -11,6 +11,9 @@ Description: "Encounter admit sources"
 * ^extension[+].url = $valueset-supplement
 * ^extension[=].valueCanonical = Canonical(EncounterAdmitSourceAmbulanceCS)
 
+* ^extension[+].url = $valueset-supplement
+* ^extension[=].valueCanonical = Canonical(EncounterAdmitSourceAmbulanceLoincCS)
+
 * include $encounter-admit-source#hosp-trans
 * include $encounter-admit-source#born
 * include $encounter-admit-source#psych

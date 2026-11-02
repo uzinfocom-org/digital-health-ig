@@ -4,11 +4,11 @@ Title: "Encounter Type Ambulance"
 Description: "Encounter type codes for ambulance encounters, with UZ/RU/EN designations."
 * insert OriginalCodeSystemDraft(encounter-type-ambulance-cs)
 
-* #emer5-0006-4 "Ambulatroriya"
+* #emer5-0006-4 "Ambulatoriya"
   * ^designation[0].language = #en
-  * ^designation[=].value = "Emergency Care"
+  * ^designation[=].value = "Outpatient"
   * ^designation[+].language = #ru
-  * ^designation[=].value = "Экстренная помощь"
+  * ^designation[=].value = "Амбулаторно"
 
 * #emer5-0006-1 "Birlamchi"
   * ^designation[0].language = #en

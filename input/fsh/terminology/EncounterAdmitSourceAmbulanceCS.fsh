@@ -24,9 +24,9 @@ Description: "Encounter ambulance admit source supplement with translations in U
 
 * #285141008 "Work environment"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Рабочая среда"
+  * ^designation[=].value = "Рабочее место"
   * ^designation[+].language = #uz
-  * ^designation[=].value = "Ish muhiti"
+  * ^designation[=].value = "Ish joyi"
 
 * #257710009 "Street"
   * ^designation[0].language = #ru
@@ -36,9 +36,9 @@ Description: "Encounter ambulance admit source supplement with translations in U
 
 * #288553000 "Highway environment"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Дорожная среда (шоссе)"
+  * ^designation[=].value = "Трасса"
   * ^designation[+].language = #uz
-  * ^designation[=].value = "Avtomobil yo'li muhiti"
+  * ^designation[=].value = "Magistral"
 
 * #257698009 "School"
   * ^designation[0].language = #ru
@@ -54,9 +54,9 @@ Description: "Encounter ambulance admit source supplement with translations in U
 
 * #257561002 "Further education establishment"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Учреждение дальнейшего образования"
+  * ^designation[=].value = "Учреждение профессионального образования"
   * ^designation[+].language = #uz
-  * ^designation[=].value = "Qo'shimcha ta'lim muassasasi"
+  * ^designation[=].value = "Professional ta'lim muassasasi"
 
 * #257689006 "Restaurant"
   * ^designation[0].language = #ru
