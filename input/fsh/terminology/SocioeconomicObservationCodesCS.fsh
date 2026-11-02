@@ -1,7 +1,7 @@
 CodeSystem: SocioeconomicObservationCodesCS
 Id: socioeconomic-observation-codes-cs
-Title: "Socioeconomic Observation Codes Supplement CodeSystem"
-Description: "SNOMED CT supplement containing Uzbek and Russian designations for socioeconomic observation codes used in DHIS."
+Title: "Socioeconomic observation code translations"
+Description: "Socioeconomic observation code supplement with translations in Uzbek and Russian"
 
 * insert SupplementCodeSystemDraft(
     socioeconomic-observation-codes-cs,

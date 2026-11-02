@@ -1,7 +1,7 @@
 CodeSystem: EpisodeOfCareReasonUseCS
 Id: episode-of-care-reason-use-cs
 Title: "EpisodeOfCare reason use"
-Description: "Episode of care reason use in Uzbekistan"
+Description: "EpisodeOfCare reason uses in Uzbekistan"
 * insert OriginalCodeSystemDraft(episode-of-care-reason-use-cs)
 
 * #mserv-0002-00001 "Kasallik"

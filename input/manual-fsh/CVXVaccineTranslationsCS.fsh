@@ -1,7 +1,7 @@
 CodeSystem: CVXVaccineTranslationsCS
 Id: cvx-vaccine-translations-cs
-Title: "CVX Vaccine Code Translations"
-Description: "Supplement providing Uzbek and Russian translations for the CVX vaccine code system (http://hl7.org/fhir/sid/cvx)."
+Title: "CVX vaccine translations"
+Description: "CVX vaccine supplement with translations in Uzbek and Russian"
 * insert SupplementCodeSystem(cvx-vaccine-translations-cs, $cvx , 4.0.1)
 
 * #54 "adenovirus vaccine, type 4, live, oral"

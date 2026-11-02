@@ -1,6 +1,6 @@
 CodeSystem: ClaimTypeCS
 Id: claim-type-cs
-Title: "Claim Type CS"
+Title: "Claim type translations"
 Description: "Claim type supplement with translations in Uzbek and Russian"
 
 * insert SupplementCodeSystemDraft(claim-type-cs, $claim-type, 1.0.1)

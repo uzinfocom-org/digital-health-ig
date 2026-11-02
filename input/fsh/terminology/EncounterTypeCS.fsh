@@ -1,6 +1,6 @@
 CodeSystem: EncounterTypeCS
 Id: encounter-type-cs
-Title: "Encounter Type translations"
+Title: "Encounter type"
 Description: "Encounter type codes with English and Russian translations"
 * ^url = "https://terminology.dhp.uz/fhir/core/CodeSystem/encounter-type-cs"
 * ^experimental = true

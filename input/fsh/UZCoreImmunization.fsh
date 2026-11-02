@@ -13,7 +13,7 @@ Description: "Uzbekistan Core Immunization profile, used to represent immunizati
 * identifier ^short = "Business identifier"
 
 * basedOn 0..* MS
-* basedOn only Reference(CarePlan or MedicationRequest or ServiceRequest or UZCoreImmunizationRecommendation)
+* basedOn only Reference(UZCoreCarePlan or MedicationRequest or ServiceRequest or UZCoreImmunizationRecommendation)
 * basedOn ^short = "The legal basis for the event"
 
 * status 1..1 MS

@@ -1,7 +1,7 @@
 ValueSet: ObservationCategoryVS
 Id: observation-category-vs
 Title: "Observation category"
-Description: "Observation category in Uzbekistan"
+Description: "Observation categories"
 * ^url = "https://terminology.dhp.uz/fhir/core/ValueSet/observation-category-vs"
 * ^experimental = true
 * ^extension[0].url = $valueset-supplement

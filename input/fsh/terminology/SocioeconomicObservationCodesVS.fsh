@@ -1,7 +1,7 @@
 ValueSet: SocioeconomicObservationCodesVS
 Id: socioeconomic-observation-codes-vs
-Title: "Socioeconomic Observation Codes"
-Description: "Codes for socioeconomic observations including benefits, education, profession, and social status"
+Title: "Socioeconomic observation code"
+Description: "Socioeconomic observation codes"
 
 
 * ^date = "2025-06-11"

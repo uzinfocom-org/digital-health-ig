@@ -1,7 +1,7 @@
 ValueSet: SpecimenStatusVS
 Id: specimen-status-vs
-Title: "Specimen Status"
-Description: "Uzbekistan local specimen status types"
+Title: "Specimen status"
+Description: "Specimen statuses"
 * ^url = "https://terminology.dhp.uz/fhir/core/ValueSet/specimen-status-vs"
 * ^experimental = true
 * ^extension[0].url = $valueset-supplement

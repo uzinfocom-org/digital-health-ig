@@ -1,6 +1,6 @@
 CodeSystem: DMEDProfessionsCS
 Id: dmed-specialties-cs
-Title: "DMED Positions and Professions (UZ/RU)"
+Title: "DMED positions and professions"
 Description: "Uzbek and Russian designations for DMED Professions codes"
 * insert OriginalCodeSystemDraft(dmed-specialties-cs)
 

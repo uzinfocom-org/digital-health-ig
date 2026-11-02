@@ -1,6 +1,6 @@
 ValueSet: DMEDRouteCodeVS
 Id: dmed-route-code-vs
-Title: "DMED Route Codes"
+Title: "DMED route codes"
 Description: "Routes of administration used in DMED"
 * ^url = "https://terminology.dhp.uz/fhir/core/ValueSet/dmed-route-code-vs"
 * ^experimental = true

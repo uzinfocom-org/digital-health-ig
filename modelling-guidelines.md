@@ -244,8 +244,6 @@ https://dhp.uz/fhir/core/sid/{namespace}/{country}/{type}[/subtype]
 // UZ Core профили существуют — указываем их
 * performer only Reference(UZCorePractitioner or UZCorePractitionerRole or UZCoreOrganization)
 * encounter only Reference(UZCoreEncounter)
-// Для CarePlan, MedicationRequest и ServiceRequest национальных профилей нет — оставляем базовые ресурсы
-* basedOn only Reference(CarePlan or MedicationRequest or ServiceRequest)
 ```
 
 ## 5) Терминологические артефакты
@@ -363,7 +361,7 @@ FHIR технически допускает указывать версию Cod
 ```fsh
 CodeSystem: DiagnosisTypeCS
 Id: diagnosis-type-cs
-Title: "Diagnosis Types"
+Title: "Diagnosis type"
 Description: "Diagnosis types in Uzbekistan"
 * insert OriginalCodeSystemDraft(diagnosis-type-cs)
 
@@ -592,7 +590,7 @@ Description: "Example instance of a headache condition documented during a patie
 - Используйте только параметры поиска из CapabilityStatement DHP.
 - Не повторяйте одно правило в нескольких местах страницы.
 - RU и UZ копии обоих фрагментов кладите в `input/translations/<lang>/pagecontent/` под тем же именем файла, с баннером машинного перевода в начале. Блоки кода и JSON идентичны английским. Якоря `{#quick-start}`, `{#finding}`, `{#identifier-slices}` проставляйте явно - переведённые заголовки их не генерируют.
-- Добавьте строку в changelog.
+- Добавьте запись в changelog (en, ru, uz) на её место в алфавитном порядке внутри категории, а не в конец - см. `AGENTS.md`.
 
 ## 6) Переводы и локализация
 

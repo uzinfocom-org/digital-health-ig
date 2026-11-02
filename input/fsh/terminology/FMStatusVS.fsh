@@ -1,7 +1,7 @@
 ValueSet: FMStatusVS
 Id: fm-status-vs
-Title: "Financial Management Status Value set"
-Description: "Status codes used to indicate the current state of a financial management resource"
+Title: "Financial management status"
+Description: "Financial management statuses"
 * ^url = "https://terminology.dhp.uz/fhir/core/ValueSet/fm-status-vs"
 * ^experimental = true
 * ^extension[0].url = $valueset-supplement
