@@ -1,0 +1,43 @@
+name: Lint Uzbek orthography (report-only)
+
+# Draft: reports non-canonical apostrophes (ASCII ', curly quotes, grave/acute)
+# and stray whitespace in Uzbek CodeSystem values -- concept displays and
+# #uz designations. See scripts/lint-uzbek-orthography.js for the exact scope.
+#
+# Report-only: the linter is invoked with --severity warning, so it annotates
+# findings but always exits 0 and never fails the build. A full inventory is
+# uploaded as a build artifact. Flip to a blocking gate by changing --severity
+# to error (or dropping the flag) once the sources have been normalized.
+
+on:
+  pull_request:
+    paths:
+      - 'input/fsh/**'
+      - 'input/manual-fsh/**'
+      - 'scripts/lint-uzbek-orthography.js'
+      - '.github/workflows/lint-uzbek-orthography.yml'
+  workflow_dispatch:
+
+jobs:
+  lint-orthography:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v6
+        with:
+          node-version: '20'
+
+      - name: Lint Uzbek orthography (report-only)
+        run: |
+          node scripts/lint-uzbek-orthography.js \
+            --severity warning \
+            --report uzbek-orthography-report.md
+
+      - name: Upload orthography report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: uzbek-orthography-report
+          path: uzbek-orthography-report.md
