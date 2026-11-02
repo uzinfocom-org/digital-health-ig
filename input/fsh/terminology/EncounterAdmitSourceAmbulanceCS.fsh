@@ -1,7 +1,7 @@
 CodeSystem: EncounterAdmitSourceAmbulanceCS
 Id: encounter-admit-source-ambulance-cs
-Title: "Encounter admit source translations"
-Description: "Encounter admit source SNOMED CT supplement with translations in Uzbek and Russian"
+Title: "Encounter ambulance admit source translations"
+Description: "Encounter ambulance admit source supplement with translations in Uzbek and Russian"
 * insert SupplementCodeSystemDraft(encounter-admit-source-ambulance-cs, $sct, 2026.1.0)
 
 * #257562009 "Airport"

@@ -1,7 +1,8 @@
 CodeSystem: EncounterReasonUseAmbulanceCS
 Id: encounter-reason-use-ambulance-cs
-Title: "Encounter reason use translations"
-Description: "Reasons for an ambulance call as recorded by the emergency medical service, with English and Russian translations"
+Title: "Encounter reason for ambulance use"
+Description: "Local CodeSystem defining reasons for ambulance calls recorded by emergency medical services"
+
 * insert OriginalCodeSystemDraft(encounter-reason-use-ambulance-cs)
 
 * #emer103039 "1 yoshgacha bo'lgan bolada xulq-atvor o'zgarishi"
