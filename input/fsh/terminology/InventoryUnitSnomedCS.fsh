@@ -23,7 +23,7 @@ Description: "Inventory unit SNOMED CT supplement with translations in Uzbek and
   * ^designation[+].language = #uz
   * ^designation[=].value = "Flakon"
 
-* #732978007 "Ampoule"
+* #732978007 "Ampule"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Ампула"
   * ^designation[+].language = #uz
@@ -35,7 +35,7 @@ Description: "Inventory unit SNOMED CT supplement with translations in Uzbek and
   * ^designation[+].language = #uz
   * ^designation[=].value = "Shisha"
 
-* #732982009 "Blood bag"
+* #732982009 "Bag"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Гемоконтейнер"
   * ^designation[+].language = #uz

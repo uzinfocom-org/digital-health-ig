@@ -1,6 +1,6 @@
 CodeSystem: InventoryOperationReasonCS
 Id: inventory-operation-reason-cs
-Title: "Inventory Operation Reason"
+Title: "Inventory operation reason"
 Description: "List of inventory operation reasons"
 * insert OriginalCodeSystemDraft(inventory-operation-reason-cs)
 

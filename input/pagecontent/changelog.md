@@ -10,6 +10,8 @@ Added [UZ Core CarePlan](StructureDefinition-uz-core-careplan.html), a general p
 
 [UZ Core DeviceUsage](StructureDefinition-uz-core-deviceusage.html) records that a patient uses, has used or will use a device, such as a wheelchair or an implanted venous access port. The device is a SNOMED CT concept or a reference to a [UZ Core Device](StructureDefinition-uz-core-device.html). It records who reported the use, when it started and ended, the setting, how regularly the device is actually used and why. Uzbek and Russian translations of the HL7 device usage status and adherence codes come with it. The profile page has the narrative intro and Quick Start.
 
+[UZ Core InventoryReport](StructureDefinition-uz-core-inventoryreport.html) reports a count of stock items at a location: the count type, whether stock was added or removed and why, and each item's category and quantity with its unit. Uzbek and Russian translations of the HL7 inventory report status and count type codes, and of the SNOMED CT units of presentation it uses, come with it.
+
 #### Changed
 
 `basedOn` in [UZ Core Observation](StructureDefinition-uz-core-observation.html), [UZ Core Immunization](StructureDefinition-uz-core-immunization.html) and [UZ Core Procedure](StructureDefinition-uz-core-procedure.html) now references a UZ Core CarePlan instead of any CarePlan.

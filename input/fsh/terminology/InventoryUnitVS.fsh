@@ -1,8 +1,8 @@
 ValueSet: InventoryUnitVS
 Id: inventory-unit-vs
-Title: "Inventory Units"
+Title: "Inventory unit"
 Description: "Inventory units used in the Uzbekistan healthcare system"
-* ^url = "https://dhp.uz/fhir/core/ValueSet/inventory-unit-vs"
+* ^url = "https://terminology.dhp.uz/fhir/core/ValueSet/inventory-unit-vs"
 * ^experimental = true
 
 * ^extension[0].url = $valueset-supplement
@@ -13,7 +13,7 @@ Description: "Inventory units used in the Uzbekistan healthcare system"
 * include $sct#732936001 "Tablet"
 * include $sct#732937005 "Capsule"
 * include $sct#733026001 "Vial"
-* include $sct#732978007 "Ampoule"
+* include $sct#732978007 "Ampule"
 * include $sct#732986007 "Bottle"
 * include $sct#732982009 "Bag"
 

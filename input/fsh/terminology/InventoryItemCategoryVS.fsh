@@ -1,7 +1,7 @@
 ValueSet: InventoryItemCategoryVS
 Id: inventory-item-category-vs
-Title: "Inventory Item Categories"
-Description: "List of inventory item categories"
+Title: "Inventory item category"
+Description: "Inventory item categories"
 * ^url = "https://terminology.dhp.uz/fhir/core/ValueSet/inventory-item-category-vs"
 * ^experimental = true
 * ^language = #uz

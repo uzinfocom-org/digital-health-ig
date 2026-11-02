@@ -14,7 +14,7 @@ Description: "Inventory report status supplement with translations in Uzbek and 
   * ^designation[0].language = #ru
   * ^designation[=].value = "Запрошен"
   * ^designation[+].language = #uz
-  * ^designation[=].value = "So‘ralgan"
+  * ^designation[=].value = "So'ralgan"
 
 * #active
   * ^designation[0].language = #ru

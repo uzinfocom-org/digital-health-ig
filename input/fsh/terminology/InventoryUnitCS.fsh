@@ -1,6 +1,6 @@
 CodeSystem: InventoryUnitCS
 Id: inventory-unit-cs
-Title: "Inventory Unit"
+Title: "Inventory unit"
 Description: "List of inventory units used in the Uzbekistan healthcare system"
 * insert OriginalCodeSystemDraft(inventory-unit-cs)
 
