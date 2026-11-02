@@ -8367,6 +8367,48 @@
       ]
     },
     {
+      "code": "HRB101",
+      "display": "dorivor o'simlik xomashyosi",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "сырьё растительное лекарственное"
+        },
+        {
+          "language": "en",
+          "value": "herbal substance"
+        }
+      ]
+    },
+    {
+      "code": "TEA101",
+      "display": "dorivor o'simliklar yig'masi",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "сбор лекарственный растительный"
+        },
+        {
+          "language": "en",
+          "value": "herbal tea"
+        }
+      ]
+    },
+    {
+      "code": "SHA101",
+      "display": "dorivor shampun",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "шампунь лекарственный"
+        },
+        {
+          "language": "en",
+          "value": "shampoo"
+        }
+      ]
+    },
+    {
       "code": "OTH101",
       "display": "boshqa dori shakllari",
       "designation": [
@@ -8381,5 +8423,5 @@
   "hierarchyMeaning": "is-a",
   "language": "uz",
   "experimental": true,
-  "count": 836
+  "count": 839
 }
