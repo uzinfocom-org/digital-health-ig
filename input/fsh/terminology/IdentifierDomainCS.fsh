@@ -158,7 +158,7 @@ Description: """
       * ^property[0].code = #country
       * ^property[=].valueCoding = $iso-3166#UZ
       * ^property[+].code = #naming-system
-      * ^property[=].valueString = Canonical(uzb-medication-knowledge-number-number)
+      * ^property[=].valueString = Canonical(uzb-medication-knowledge-number)
       * ^property[+].code = #notSelectable
       * ^property[=].valueBoolean = false
 * #https://dhp.uz/fhir/core/sid/pid "Root of identifiers for personal identification"

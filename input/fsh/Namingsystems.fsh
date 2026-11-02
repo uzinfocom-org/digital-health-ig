@@ -769,11 +769,11 @@ Usage: #definition
 * uniqueId[=].value = $inventory-item-number
 * uniqueId[=].preferred = true
 
-Instance: uzb-medication-knowledge-number-number
+Instance: uzb-medication-knowledge-number
 InstanceOf: NamingSystem
 Description: "Medication reference entry identifiers assigned in the Digital Health Platform (DHP) of Uzbekistan or an external source system"
 Usage: #definition
-* url = "https://terminology.dhp.uz/fhir/core/NamingSystem/uzb-medication-knowledge-number-number"
+* url = "https://terminology.dhp.uz/fhir/core/NamingSystem/uzb-medication-knowledge-number"
 * name = "UzbekistanMedicationKnowledgeIdentifier"
 * status = #active
 * kind = #identifier
