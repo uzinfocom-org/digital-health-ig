@@ -46,6 +46,9 @@ Description: "Uzbekistan Core SupplyDelivery profile, used to record the deliver
 * destination MS
 * destination only Reference(UZCoreLocation)
 
+* extension contains SupplyDeliveryDeliverFrom named deliverFrom 0..1 MS
+* extension[deliverFrom] ^short = "Location the items were dispatched from, such as the sending warehouse"
+
 * suppliedItem MS
 * suppliedItem.quantity MS
 * suppliedItem.item[x] MS
@@ -70,3 +73,46 @@ Description: "Delivery of a red blood cell unit for a patient to the receiving h
 * destination = Reference(example-location)
 * suppliedItem.quantity = 263 'mL' "mL"
 * suppliedItem.itemReference = Reference(example-blood-component-product)
+
+
+Instance: example-warehouse-transfer-supply-delivery
+InstanceOf: UZCoreSupplyDelivery
+Usage: #example
+Title: "Transfer between warehouses"
+Description: "Transfer of paracetamol from a hospital's central warehouse to its surgical department storeroom. The supplier is the hospital itself, and the deliverFrom extension identifies the sending warehouse."
+
+* identifier[delivery].value = "TR-2026-0042"
+* status = #completed
+* type = $supplydelivery-supplyitemtype#medication "Medication"
+* occurrenceDateTime = "2026-10-28T11:30:00+05:00"
+* supplier = Reference(tashkent-diseases-hospital)
+* receiver = Reference(tashkent-diseases-hospital)
+* extension[deliverFrom].valueReference = Reference(example-central-warehouse)
+* destination = Reference(example-surgery-storeroom)
+* suppliedItem.quantity.value = 200
+* suppliedItem.quantity.unit = "tablets"
+* suppliedItem.itemReference = Reference(example-medication)
+
+
+Instance: example-central-warehouse
+InstanceOf: UZCoreLocation
+Usage: #example
+Title: "Hospital central warehouse"
+Description: "Illustrative central warehouse of a hospital, the sending location in the warehouse transfer example."
+* language = #en
+* status = #active
+* mode = #instance
+* name = "Central warehouse"
+* managingOrganization = Reference(tashkent-diseases-hospital)
+
+
+Instance: example-surgery-storeroom
+InstanceOf: UZCoreLocation
+Usage: #example
+Title: "Surgical department storeroom"
+Description: "Illustrative storeroom of a hospital's surgical department, the receiving location in the warehouse transfer example."
+* language = #en
+* status = #active
+* mode = #instance
+* name = "Surgical department storeroom"
+* managingOrganization = Reference(tashkent-diseases-hospital)
