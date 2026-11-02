@@ -23,16 +23,14 @@ UZ Core SupplyDelivery фиксирует передачу предметов с
 
 ### Кто отправил, откуда, кто принял и где
 
-Две стороны поставки описывают четыре элемента. Не смешивайте их:
+У каждой стороны поставки, отправляющей и принимающей, есть свой элемент для «кто» и свой для «где»:
 
 | | Кто | Где |
 |---|---|---|
-| Сторона отправки | `supplier`: организация, медицинский работник или его роль, отвечающие за поставку | расширение [deliver-from](StructureDefinition-supplydelivery-deliver-from.html): [Location](StructureDefinition-uz-core-location.html), откуда отправлены предметы, например склад-отправитель |
-| Сторона получения | `receiver`: организация или человек, принявшие предметы | `destination`: [Location](StructureDefinition-uz-core-location.html), куда доставлены предметы |
+| Сторона отправки | [`supplier`](#k-SupplyDelivery.supplier): организация, медицинский работник или его роль, отвечающие за поставку | расширение [deliver-from](StructureDefinition-supplydelivery-deliver-from.html): [Location](StructureDefinition-uz-core-location.html), откуда отправлены предметы, например склад-отправитель |
+| Сторона получения | [`receiver`](#k-SupplyDelivery.receiver): организация или человек, принявшие предметы | [`destination`](#k-SupplyDelivery.destination): [Location](StructureDefinition-uz-core-location.html), куда доставлены предметы |
 
 В базовом ресурсе FHIR SupplyDelivery нет элемента для места отправки, поэтому UZ Core добавляет расширение deliver-from. Оно соответствует `SupplyRequest.deliverFrom` на стороне поставки: запрос указывает, откуда предметы должны поступить, а поставка - откуда они поступили на самом деле. При перемещении между двумя складами одной больницы `supplier` и `receiver` - одна и та же организация, и поставки различаются только двумя местами.
-
-Указывайте место отправки в расширении, даже если `supplier` - это [PractitionerRole](StructureDefinition-uz-core-practitioner-role.html). `PractitionerRole.location` перечисляет места работы человека, их может быть несколько, и со временем они меняются, поэтому этот элемент не показывает, с какого склада ушла конкретная поставка.
 
 ### Сборка JSON, шаг за шагом
 
@@ -138,3 +136,5 @@ UZ Core SupplyDelivery фиксирует передачу предметов с
 ```
 
 Значение расширения - `Reference` на [UZ Core Location](StructureDefinition-uz-core-location.html), и оно встречается не более одного раза. У перемещения нет `patient`. Не указывайте `basedOn`, если запроса на перемещение не было.
+
+Примеры вызовов API приведены в разделе [Быстрый старт](#quick-start) внизу этой страницы.

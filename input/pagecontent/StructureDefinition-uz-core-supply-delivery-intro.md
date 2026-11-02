@@ -21,16 +21,14 @@ The base SupplyDelivery resource has no mandatory elements, and this profile add
 
 ### Who sent it, from where, and who received it where
 
-Four elements describe the two ends of a delivery. Keep them apart:
+Each end of a delivery, sending and receiving, has its own element for who and for where:
 
 | | Who | Where |
 |---|---|---|
-| Sending end | `supplier`: the organization, practitioner or role responsible for the delivery | the [deliver-from](StructureDefinition-supplydelivery-deliver-from.html) extension: the [Location](StructureDefinition-uz-core-location.html) the items left from, such as the sending warehouse |
-| Receiving end | `receiver`: the organization or person who accepted the items | `destination`: the [Location](StructureDefinition-uz-core-location.html) the items were delivered to |
+| Sending end | [`supplier`](#k-SupplyDelivery.supplier): the organization, practitioner or role responsible for the delivery | the [deliver-from](StructureDefinition-supplydelivery-deliver-from.html) extension: the [Location](StructureDefinition-uz-core-location.html) the items left from, such as the sending warehouse |
+| Receiving end | [`receiver`](#k-SupplyDelivery.receiver): the organization or person who accepted the items | [`destination`](#k-SupplyDelivery.destination): the [Location](StructureDefinition-uz-core-location.html) the items were delivered to |
 
 Base FHIR SupplyDelivery has no element for the sending location, so UZ Core adds the deliver-from extension. It is the delivery counterpart of `SupplyRequest.deliverFrom`: the request states where the items should come from, the delivery where they actually came from. In a transfer between two warehouses of one hospital, `supplier` and `receiver` are the same organization and only the two locations tell the delivery apart.
-
-Send the sending location in the extension even when `supplier` is a [PractitionerRole](StructureDefinition-uz-core-practitioner-role.html). `PractitionerRole.location` lists where a person works, which can be several places and changes over time, so it does not say which warehouse a given delivery left from.
 
 ### Building the JSON, step by step
 
@@ -136,3 +134,5 @@ A hospital moves paracetamol from its central warehouse to the storeroom of its 
 ```
 
 The extension's value is a `Reference` to a [UZ Core Location](StructureDefinition-uz-core-location.html), and it appears at most once. A transfer has no `patient`. Leave out `basedOn` when there was no request for the transfer.
+
+For example API calls, see the [Quick Start](#quick-start) at the bottom of this page.

@@ -23,16 +23,14 @@ Bazaviy SupplyDelivery resursida majburiy elementlar yo'q va ushbu profil ham ul
 
 ### Kim, qayerdan yubordi va kim, qayerda qabul qildi
 
-Yetkazib berishning ikki tomonini to'rtta element tavsiflaydi. Ularni aralashtirmang:
+Yetkazib berishning har bir tomoni, yuboruvchi va qabul qiluvchi, "kim" uchun ham, "qayer" uchun ham alohida elementga ega:
 
 | | Kim | Qayer |
 |---|---|---|
-| Yuborish tomoni | `supplier`: yetkazib berish uchun javobgar tashkilot, tibbiyot xodimi yoki uning roli | [deliver-from](StructureDefinition-supplydelivery-deliver-from.html) kengaytmasi: buyumlar jo'natilgan [Location](StructureDefinition-uz-core-location.html), masalan jo'natuvchi ombor |
-| Qabul qilish tomoni | `receiver`: buyumlarni qabul qilgan tashkilot yoki shaxs | `destination`: buyumlar yetkazilgan [Location](StructureDefinition-uz-core-location.html) |
+| Yuborish tomoni | [`supplier`](#k-SupplyDelivery.supplier): yetkazib berish uchun javobgar tashkilot, tibbiyot xodimi yoki uning roli | [deliver-from](StructureDefinition-supplydelivery-deliver-from.html) kengaytmasi: buyumlar jo'natilgan [Location](StructureDefinition-uz-core-location.html), masalan jo'natuvchi ombor |
+| Qabul qilish tomoni | [`receiver`](#k-SupplyDelivery.receiver): buyumlarni qabul qilgan tashkilot yoki shaxs | [`destination`](#k-SupplyDelivery.destination): buyumlar yetkazilgan [Location](StructureDefinition-uz-core-location.html) |
 
 FHIR bazaviy SupplyDelivery resursida jo'natish joyi uchun element yo'q, shuning uchun UZ Core deliver-from kengaytmasini qo'shadi. U yetkazib berish tomonidagi `SupplyRequest.deliverFrom` ga mos keladi: so'rov buyumlar qayerdan kelishi kerakligini, yetkazib berish esa ular aslida qayerdan kelganini ko'rsatadi. Bitta shifoxonaning ikki ombori o'rtasidagi ko'chirishda `supplier` va `receiver` bir xil tashkilot bo'ladi va yetkazib berishlarni faqat ikki joy farqlaydi.
-
-`supplier` [PractitionerRole](StructureDefinition-uz-core-practitioner-role.html) bo'lsa ham, jo'natish joyini kengaytmada yuboring. `PractitionerRole.location` shaxs ishlaydigan joylarni sanab o'tadi, ular bir nechta bo'lishi va vaqt o'tishi bilan o'zgarishi mumkin, shuning uchun bu element ma'lum bir yetkazib berish qaysi ombordan jo'natilganini ko'rsatmaydi.
 
 ### JSON ni bosqichma-bosqich qurish
 
@@ -138,3 +136,5 @@ Shifoxona paratsetamolni markaziy omboridan jarrohlik bo'limining omborxonasiga 
 ```
 
 Kengaytma qiymati [UZ Core Location](StructureDefinition-uz-core-location.html) ga `Reference` bo'lib, ko'pi bilan bir marta uchraydi. Ko'chirishda `patient` bo'lmaydi. Ko'chirish uchun so'rov bo'lmagan bo'lsa, `basedOn` ni ko'rsatmang.
+
+API chaqiruvlari misollari ushbu sahifa pastidagi [Tez boshlash](#quick-start) bo'limida keltirilgan.
