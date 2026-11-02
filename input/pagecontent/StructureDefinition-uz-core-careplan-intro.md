@@ -24,7 +24,9 @@ This profile adds no new mandatory cardinalities. Follow the base FHIR requireme
 
 ### Building the JSON, step by step
 
-**1. Minimal plan.** Only the three base elements are required. `intent` takes one of five codes: use `plan` for a plan a practitioner intends to follow and `order` for a plan that authorises its activities.
+#### The smallest CarePlan you should send
+
+Only the three base elements are required. `intent` takes one of five codes: use `plan` for a plan a practitioner intends to follow and `order` for a plan that authorises its activities.
 
 ```json
 {
@@ -38,7 +40,9 @@ This profile adds no new mandatory cardinalities. Follow the base FHIR requireme
 }
 ```
 
-**2. Describe the plan.** `category` says what kind of plan it is, using a SNOMED CT descendant of `734163000` Care plan, here `773130005` Nursing care plan. `custodian` is who is responsible for the plan, and `period` how long it lasts.
+#### A nursing care plan
+
+`category` says what kind of plan it is, using a SNOMED CT descendant of `734163000` Care plan, here `773130005` Nursing care plan. `custodian` is who is responsible for the plan, and `period` how long it lasts.
 
 ```json
 {
@@ -60,7 +64,9 @@ This profile adds no new mandatory cardinalities. Follow the base FHIR requireme
 }
 ```
 
-**3. Add the activities.** Each `activity` is either planned or performed. A planned activity is a request, referenced from `plannedActivityReference`. A performed activity is the event that records it, in `performedActivity`; that element is a `CodeableReference`, so the reference sits one level deeper, under `reference`.
+#### A plan with planned and performed activities
+
+Each `activity` is either planned or performed. A planned activity is a request, referenced from `plannedActivityReference`. A performed activity is the event that records it, in `performedActivity`; that element is a `CodeableReference`, so the reference sits one level deeper, under `reference`.
 
 ```json
 "activity": [

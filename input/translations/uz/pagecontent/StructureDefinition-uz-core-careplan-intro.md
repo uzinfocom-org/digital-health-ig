@@ -26,7 +26,9 @@ Profil yangi majburiy karraliliklarni qo'shmaydi. Bazaviy FHIR talablariga amal 
 
 ### JSON ni bosqichma-bosqich tuzish
 
-**1. Minimal reja.** Faqat uchta bazaviy element majburiy. `intent` beshta koddan birini oladi: tibbiyot xodimi amal qilmoqchi bo'lgan reja uchun `plan`, o'z tadbirlarini ruxsat etuvchi reja uchun `order`.
+#### Yuborishingiz kerak bo'lgan eng kichik CarePlan
+
+Faqat uchta bazaviy element majburiy. `intent` beshta koddan birini oladi: tibbiyot xodimi amal qilmoqchi bo'lgan reja uchun `plan`, o'z tadbirlarini ruxsat etuvchi reja uchun `order`.
 
 ```json
 {
@@ -40,7 +42,9 @@ Profil yangi majburiy karraliliklarni qo'shmaydi. Bazaviy FHIR talablariga amal 
 }
 ```
 
-**2. Rejani tavsiflash.** `category` rejaning turini SNOMED CT `734163000` Care plan avlodi bilan ko'rsatadi, bu yerda `773130005` Nursing care plan. `custodian` - reja uchun mas'ul, `period` - uning amal qilish muddati.
+#### Hamshiralik parvarishi rejasi
+
+`category` rejaning turini SNOMED CT `734163000` Care plan avlodi bilan ko'rsatadi, bu yerda `773130005` Nursing care plan. `custodian` - reja uchun mas'ul, `period` - uning amal qilish muddati.
 
 ```json
 {
@@ -62,7 +66,9 @@ Profil yangi majburiy karraliliklarni qo'shmaydi. Bazaviy FHIR talablariga amal 
 }
 ```
 
-**3. Tadbirlarni qo'shish.** Har bir `activity` rejalashtirilgan yoki bajarilgan bo'ladi. Rejalashtirilgan tadbir - `plannedActivityReference` havola qiladigan so'rov. Bajarilgan tadbir - uni qayd etuvchi hodisa, `performedActivity` da; bu `CodeableReference`, shuning uchun havola bir daraja chuqurroqda, `reference` ichida joylashadi.
+#### Rejalashtirilgan va bajarilgan tadbirlarga ega reja
+
+Har bir `activity` rejalashtirilgan yoki bajarilgan bo'ladi. Rejalashtirilgan tadbir - `plannedActivityReference` havola qiladigan so'rov. Bajarilgan tadbir - uni qayd etuvchi hodisa, `performedActivity` da; bu `CodeableReference`, shuning uchun havola bir daraja chuqurroqda, `reference` ichida joylashadi.
 
 ```json
 "activity": [
