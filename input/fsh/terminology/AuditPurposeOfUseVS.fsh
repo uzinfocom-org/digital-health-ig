@@ -1,7 +1,7 @@
 ValueSet: AuditPurposeOfUseVS
 Id: audit-purpose-of-use-vs
 Title: "Purpose of use"
-Description: "Defines agent's the purpose of use in Uzbek and Russian"
+Description: "Purposes of use"
 * ^url = "https://terminology.dhp.uz/fhir/core/ValueSet/audit-purpose-of-use-vs"
 * ^experimental = true
 * ^extension[0].url = $valueset-supplement

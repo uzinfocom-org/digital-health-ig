@@ -31,7 +31,7 @@ Description: "Uzbekistan Core InventoryItem profile, used to track stock of item
 * category[bloodProductType] ^short = "Blood product type, for items that are blood products"
 
 * productReference MS
-* productReference only Reference(UZCoreMedication or Device or NutritionProduct or UZCoreBiologicallyDerivedProduct)
+* productReference only Reference(UZCoreMedication or UZCoreDevice or NutritionProduct or UZCoreBiologicallyDerivedProduct)
 
 * name MS
 * name.name MS

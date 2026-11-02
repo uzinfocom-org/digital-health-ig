@@ -1,7 +1,7 @@
 CodeSystem: TelecomUseCS
 Id: telecom-use-cs
-Title: "Telecom use"
-Description: "Telecom use type supplement with translation in Uzbek and Russian"
+Title: "Telecom use translations"
+Description: "Telecom use supplement with translations in Uzbek and Russian"
 * ^url = "https://terminology.dhp.uz/fhir/core/CodeSystem/telecom-use-cs"
 * ^experimental = true
 * ^content = #supplement

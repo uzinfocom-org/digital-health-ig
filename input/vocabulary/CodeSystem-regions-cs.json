@@ -4,7 +4,7 @@
   "content": "complete",
   "name": "RegionsCS",
   "id": "regions-cs",
-  "title": "Uzbekistan Regions and Locations",
+  "title": "Uzbekistan regions and locations",
   "description": "List of regions and locations in Uzbekistan",
   "url": "https://terminology.dhp.uz/fhir/core/CodeSystem/regions-cs",
   "concept": [

@@ -1,7 +1,7 @@
 CodeSystem: MedicationRequestIntentCS
 Id: medicationrequest-intent-cs
-Title: "Medication Request Intent"
-Description: "Uzbek and Russian translations for the MedicationRequest intent codes."
+Title: "MedicationRequest intent translations"
+Description: "MedicationRequest intent supplement with translations in Uzbek and Russian"
 * insert SupplementCodeSystemDraft(medicationrequest-intent-cs, $medicationrequest-intent, 5.0.0)
 
 * #proposal

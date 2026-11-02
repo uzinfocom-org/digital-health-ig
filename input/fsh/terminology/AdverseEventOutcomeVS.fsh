@@ -1,7 +1,7 @@
 ValueSet: AdverseEventOutcomeVS
 Id: adverse-event-outcome-vs
-Title: "Types of AdverseEvent outcome"
-Description: "Types of AdverseEvent outcome in Uzbekistan"
+Title: "AdverseEvent outcome"
+Description: "AdverseEvent outcomes"
 * ^url = "https://terminology.dhp.uz/fhir/core/ValueSet/adverse-event-outcome-vs"
 * ^experimental = true
 * ^extension[0].url = $valueset-supplement

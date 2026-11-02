@@ -1,6 +1,6 @@
 CodeSystem: ActionParticipantRoleCS
 Id: action-participant-role-cs
-Title: "Action Participant Role CS"
+Title: "Action participant role translations"
 Description: "Action participant role supplement with translations in Uzbek and Russian"
 
 * insert SupplementCodeSystemDraft(action-participant-role-cs, $sct, 2026.1.0)

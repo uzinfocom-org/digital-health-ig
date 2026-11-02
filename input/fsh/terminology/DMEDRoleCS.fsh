@@ -1,6 +1,6 @@
 CodeSystem: DMEDRoleCS
 Id: dmed-role-cs
-Title: "DMED Role Code System"
+Title: "DMED role"
 Description: "List of healthcare personnel roles used in DMED"
 * insert OriginalCodeSystemDraft(dmed-role-cs)
 

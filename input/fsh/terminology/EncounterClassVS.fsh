@@ -1,7 +1,7 @@
 ValueSet: EncounterClassVS
 Id: encounter-class-vs
-Title: "Encounter class translations"
-Description: "Encounter Class codes with Uzbek and Russian translations"
+Title: "Encounter class"
+Description: "Encounter classes"
 * ^url = "https://terminology.dhp.uz/fhir/core/ValueSet/encounter-class-vs"
 * ^experimental = true
 * ^extension[0].url = $valueset-supplement

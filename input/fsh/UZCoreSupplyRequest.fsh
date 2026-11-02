@@ -79,7 +79,7 @@ Description: "Uzbekistan Core SupplyRequest profile, used to represent requests 
 
 
 * requester MS
-* requester only Reference(UZCorePractitioner or UZCorePractitionerRole or UZCoreOrganization or UZCorePatient or UZCoreRelatedPerson or Device or CareTeam)
+* requester only Reference(UZCorePractitioner or UZCorePractitionerRole or UZCoreOrganization or UZCorePatient or UZCoreRelatedPerson or UZCoreDevice or CareTeam)
 
 
 * supplier MS

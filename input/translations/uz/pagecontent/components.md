@@ -126,8 +126,6 @@ Komponent quyidagilarni ta'minlaydi:
 - bemorning tashrif natijalari, bajarilgan protseduralar va tavsiyalarga bemor portali orqali kirishini;
 - patronaj faoliyatini monitoring qilishni hamda sog'liqni saqlash tashkilotlari va hududlar kesimida hisobotlar shakllantirishni.
 
-Patronaj tashrifi o'tkaziladigan maqsad [UZ Core ServiceRequest](StructureDefinition-uz-core-servicerequest.html) profilining `code` elementida ko'rsatiladi. Tug'ruqdan keyingi patronaj, profilaktik ko'rik, surunkali kasalliklarni dispanser kuzatuvi va uyda statsionar yordam [ServiceRequest muolajalari va tekshiruvlari](ValueSet-service-request-code-vs.html) to'plamidan SNOMED CT da kodlanadi. Vaksinatsiyadan keyingi patronaj va reproduktiv yoshdagi ayollar patronaji uchun mos SNOMED CT konsepti yo'q, ular ushbu qo'llanmaning [skrining va uyga tashrif kodlari](CodeSystem-screening-code-cs.html)dan foydalanadi.
-
 Hamshiralik tashriflarini rejalashtirishni "Qabulga yozish va jadvalni boshqarish" komponenti bajaradi.
 
 ### Bemorning klinik marshrutini boshqarish {#patient-health-journey-management}

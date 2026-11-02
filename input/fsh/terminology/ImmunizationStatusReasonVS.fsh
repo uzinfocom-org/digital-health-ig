@@ -1,7 +1,7 @@
 ValueSet: ImmunizationStatusReasonVS
 Id: immunization-status-reason-vs
-Title: "Immunization status reason value set"
-Description: "Immunization status reason codes with Uzbek and Russian translations"
+Title: "Immunization status reason"
+Description: "Immunization status reasons"
 * ^url = "https://terminology.dhp.uz/fhir/core/ValueSet/immunization-status-reason-vs"
 * ^experimental = true
 * ^extension[0].url = $valueset-supplement

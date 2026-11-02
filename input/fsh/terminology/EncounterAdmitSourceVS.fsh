@@ -1,7 +1,7 @@
 ValueSet: EncounterAdmitSourceVS
 Id: encounter-admit-source-vs
-Title: "Encounter admit source translations"
-Description: "Encounter admit source codes with English and Russian translations"
+Title: "Encounter admit source"
+Description: "Encounter admit sources"
 * ^url = "https://terminology.dhp.uz/fhir/core/ValueSet/encounter-admit-source-vs"
 * ^experimental = true
 * ^extension[0].url = $valueset-supplement

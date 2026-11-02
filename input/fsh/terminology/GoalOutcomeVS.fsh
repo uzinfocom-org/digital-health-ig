@@ -1,7 +1,7 @@
 ValueSet: GoalOutcomeVS
 Id: goal-outcome-vs
-Title: "Goal outcome value set"
-Description: "Goal outcome codes with Uzbek and Russian translations"
+Title: "Goal outcome"
+Description: "Goal outcomes"
 * ^url = "https://terminology.dhp.uz/fhir/core/ValueSet/goal-outcome-vs"
 * ^experimental = true
 * ^extension[0].url = $valueset-supplement
