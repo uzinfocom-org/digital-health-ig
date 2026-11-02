@@ -340,7 +340,8 @@ Description: "Maps local UZ unit codes to UCUM standards."
 * group.element[=].target[=].relationship = #equivalent
 
 * group.element[+].code = #299
-* group.element[=].display = "biologik aktivlikning xalqaro birligi"
+* group.element[=].display = "biologik aktivlikning 
+xalqaro birligi"
 * group.element[=].target[+].code = #"[iU]"
 * group.element[=].target[=].relationship = #equivalent
 
@@ -355,7 +356,8 @@ Description: "Maps local UZ unit codes to UCUM standards."
 * group.element[=].target[=].relationship = #equivalent
 
 * group.element[+].code = #297
-* group.element[=].display = "milligramm taqsim doza (miqdor)"
+* group.element[=].display = "milligramm taqsim 
+doza (miqdor)"
 * group.element[=].target[+].code = #"mg/{dose}"
 * group.element[=].target[=].relationship = #equivalent
 
@@ -375,7 +377,8 @@ Description: "Maps local UZ unit codes to UCUM standards."
 * group.element[=].target[=].relationship = #equivalent
 
 * group.element[+].code = #580
-* group.element[=].display = "koloniya hosil qiluvchi o'lchov birligi"
+* group.element[=].display = "koloniya hosil qiluvchi 
+o'lchov birligi"
 * group.element[=].target[+].code = #"[CFU]"
 * group.element[=].target[=].relationship = #equivalent
 
@@ -390,7 +393,8 @@ Description: "Maps local UZ unit codes to UCUM standards."
 * group.element[=].target[=].relationship = #equivalent
 
 * group.element[+].code = #500
-* group.element[=].display = "Международная единица на грамм"
+* group.element[=].display = "Международная единица 
+на грамм"
 * group.element[=].target[+].code = #"[iU]/g"
 * group.element[=].target[=].relationship = #equivalent
 
@@ -425,7 +429,8 @@ Description: "Maps local UZ unit codes to UCUM standards."
 * group.element[=].target[=].relationship = #equivalent
 
 * group.element[+].code = #780
-* group.element[=].display = "hujayra madaniyati infektsion dozasi"
+* group.element[=].display = "hujayra madaniyati 
+infektsion dozasi"
 * group.element[=].target[+].code = #"[CCID_50]"
 * group.element[=].target[=].relationship = #equivalent
 
