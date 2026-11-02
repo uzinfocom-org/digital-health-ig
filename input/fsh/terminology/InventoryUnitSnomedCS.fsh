@@ -37,6 +37,24 @@ Description: "Inventory unit SNOMED CT supplement with translations in Uzbek and
 
 * #732982009 "Bag"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Гемоконтейнер"
+  * ^designation[=].value = "Пакет"
   * ^designation[+].language = #uz
-  * ^designation[=].value = "Gemokonteyner"
+  * ^designation[=].value = "Paket"
+
+* #418445004 "Box - unit of product usage"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Коробка"
+  * ^designation[+].language = #uz
+  * ^designation[=].value = "Quti"
+
+* #1681000175101 "Package - unit of product usage"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Упаковка"
+  * ^designation[+].language = #uz
+  * ^designation[=].value = "Qadoq"
+
+* #419179001 "Kit - unit of product usage"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Набор (комплект)"
+  * ^designation[+].language = #uz
+  * ^designation[=].value = "To'plam"

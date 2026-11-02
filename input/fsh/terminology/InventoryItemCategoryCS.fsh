@@ -44,13 +44,13 @@ Description: "List of inventory item categories"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Лабораторные реагенты"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Lab reagents (IVD)"
+  * ^designation[=].value = "Laboratory reagents"
 
 * #invct-0001-00008 "Qon va qon komponentlari"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Кровь и компоненты крови"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Blood components"
+  * ^designation[=].value = "Blood and blood components"
 
 * #invct-0001-00009 "Klinik ovqatlanish"
   * ^designation[0].language = #ru

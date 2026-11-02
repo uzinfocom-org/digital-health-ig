@@ -16,6 +16,9 @@ Description: "Inventory units used in the Uzbekistan healthcare system"
 * include $sct#732978007 "Ampule"
 * include $sct#732986007 "Bottle"
 * include $sct#732982009 "Bag"
+* include $sct#418445004 "Box - unit of product usage"
+* include $sct#1681000175101 "Package - unit of product usage"
+* include $sct#419179001 "Kit - unit of product usage"
 
 * include $medication-total-volume-local-units-cs#piece
 * include $medication-total-volume-local-units-cs#dose

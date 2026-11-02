@@ -60,21 +60,21 @@ Description: "Example inventory report for a medication stock addition"
 Usage: #example
 * language = #uz
 * status = #active
-* countType = #snapshot
+* countType = #difference
 * operationType = $inventory-operation-type-cs#invop-0001-00001 "Kirim"
 * operationTypeReason = $inventory-operation-reason-cs#invrs-0001-00004 "Yangi kirim"
-* reportedDateTime = "2026-10-27T10:00:00+05:00"
+* reportedDateTime = "2026-11-01T09:00:00+05:00"
 * reporter = Reference(Practitioner/example-practitioner)
 * reportingPeriod.start = "2026-10-01"
 * reportingPeriod.end = "2026-10-31"
 
 * inventoryListing[0].location = Reference(Location/example-location-2)
 * inventoryListing[0].itemStatus = $inventory-status-cs#available "Mavjud"
-* inventoryListing[0].countingDateTime = "2026-10-27T09:30:00+05:00"
+* inventoryListing[0].countingDateTime = "2026-10-31T18:00:00+05:00"
 
 * inventoryListing[0].item[0].category = $inventory-item-category-cs#invct-0001-00001 "Dori vositasi"
 * inventoryListing[0].item[0].quantity.value = 100
 * inventoryListing[0].item[0].quantity.unit = "Quti"
-* inventoryListing[0].item[0].quantity.system = "https://terminology.dhp.uz/fhir/core/CodeSystem/inventory-unit-cs"
-* inventoryListing[0].item[0].quantity.code = #invun-0001-00001
+* inventoryListing[0].item[0].quantity.system = "http://snomed.info/sct"
+* inventoryListing[0].item[0].quantity.code = #418445004
 * inventoryListing[0].item[0].item = Reference(Medication/example-medication)
