@@ -1,7 +1,7 @@
 CodeSystem: YesNoIndicatorCS
 Id: yes-no-indicator-cs
 Title: "Expanded yes/no indicator translations"
-Description: "Expanded yes/no indicator (HL7 v2 table 0532) supplement with translations in Uzbek and Russian"
+Description: "Expanded yes/no indicator supplement with translations in Uzbek and Russian"
 * insert SupplementCodeSystemDraft(yes-no-indicator-cs, $v2-0532, 3.0.0)
 
 * #Y
