@@ -8,9 +8,9 @@
 
 Добавлен [UZ Core CarePlan](StructureDefinition-uz-core-careplan.html) - общий профиль плана помощи пациенту на период времени, например патронажных визитов медсестры на дом, курса лечения или случая листка нетрудоспособности. Руководство для конкретного сценария наследует от него. План объединяет запросы на запланированные мероприятия и связывает события, фиксирующие выполненные. Его `intent` связан с [намерениями CarePlan](ValueSet-careplan-intent-vs.html) с переводами на узбекский и русский. Примеры: [план патронажа новорождённого](CarePlan-example-newborn-patronage-careplan.html) и [курс лечебного массажа](CarePlan-example-massage-careplan.html), который заменяет временный `example-careplan`. Их хранители - новые примеры [патронажной медсестры](PractitionerRole-example-patronage-nurse-role.html) и [врача-физиотерапевта](PractitionerRole-example-physiotherapist-role.html); физиотерапевт также выполняет [пример Procedure](Procedure-example-procedure.html).
 
-[Типы документов Composition](CodeSystem-composition-type-cs.html) дополнены кодом `emdoc-0010-0471` для формы 112 Приказа № 399 - лабораторного анализа на фолиевую кислоту, 25-OH витамин D и витамин B12.
-
 [Дополнение индикатора да/нет](CodeSystem-yes-no-indicator-cs.html) содержит узбекские и русские обозначения для девяти кодов таблицы HL7 v2 0532 (да, нет и причины отсутствия ответа), а ValueSet [индикатор да/нет](ValueSet-yes-no-indicator-vs.html) их применяет.
+
+[Типы документов Composition](CodeSystem-composition-type-cs.html) дополнены кодом `emdoc-0010-0471` для формы 112 Приказа № 399 - лабораторного анализа на фолиевую кислоту, 25-OH витамин D и витамин B12.
 
 #### Изменено
 

@@ -2,6 +2,8 @@
 
 #### Added
 
+A [yes/no indicator supplement](CodeSystem-yes-no-indicator-cs.html) gives Uzbek and Russian designations to the nine codes of HL7 v2 table 0532 (yes, no and the reasons an answer is missing), and the [yes/no indicator](ValueSet-yes-no-indicator-vs.html) ValueSet applies it.
+
 Added [UZ Core CarePlan](StructureDefinition-uz-core-careplan.html), a general profile for a plan of care for a patient over a period of time, such as nursing home patronage visits, a course of treatment or a sick leave case. A scenario-specific guide derives from it. The plan groups the requests for its planned activities and links the events that record the performed ones. Its `intent` is bound to [CarePlan intent](ValueSet-careplan-intent-vs.html) with Uzbek and Russian translations. The examples are a [newborn nursing patronage plan](CarePlan-example-newborn-patronage-careplan.html) and a [therapeutic massage course](CarePlan-example-massage-careplan.html), which replaces the placeholder `example-careplan`. Their custodians are new [patronage nurse](PractitionerRole-example-patronage-nurse-role.html) and [physiotherapist](PractitionerRole-example-physiotherapist-role.html) examples, and the physiotherapist also performs the [Procedure example](Procedure-example-procedure.html).
 
 [Composition types](CodeSystem-composition-type-cs.html) add `emdoc-0010-0471` for Order No. 399 form 112, a laboratory analysis of folic acid, 25-OH vitamin D and vitamin B12.
@@ -9,8 +11,6 @@ Added [UZ Core CarePlan](StructureDefinition-uz-core-careplan.html), a general p
 [UZ Core Device](StructureDefinition-uz-core-device.html) describes a physical medical device - hospital equipment such as a CT scanner, or a single item such as an intrauterine device - with its SNOMED CT type and category, manufacturer, model, serial and lot numbers, status and availability, and the organization and location it belongs to. Uzbek and Russian translations of the HL7 device status, availability status, name type and category codes, and of the SNOMED CT contraceptive device types, come with it. The profile page has the narrative intro and Quick Start.
 
 [UZ Core DeviceUsage](StructureDefinition-uz-core-deviceusage.html) records that a patient uses, has used or will use a device, such as a wheelchair or an implanted venous access port. The device is a SNOMED CT concept or a reference to a [UZ Core Device](StructureDefinition-uz-core-device.html). It records who reported the use, when it started and ended, the setting, how regularly the device is actually used and why. Uzbek and Russian translations of the HL7 device usage status and adherence codes come with it. The profile page has the narrative intro and Quick Start.
-
-A [yes/no indicator supplement](CodeSystem-yes-no-indicator-cs.html) gives Uzbek and Russian designations to the nine codes of HL7 v2 table 0532 (yes, no and the reasons an answer is missing), and the [yes/no indicator](ValueSet-yes-no-indicator-vs.html) ValueSet applies it.
 
 #### Changed
 

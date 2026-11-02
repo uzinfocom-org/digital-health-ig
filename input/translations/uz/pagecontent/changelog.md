@@ -4,13 +4,13 @@
 
 [Composition hujjat turlari](CodeSystem-composition-type-cs.html): 399-son buyruqning 112-shakli - foliy kislotasi, 25-OH D vitamini va B12 vitaminiga IXLA tahlili uchun `emdoc-0010-0471` kodi qo'shildi.
 
+[Ha/yo'q indikatori to'ldiruvchisi](CodeSystem-yes-no-indicator-cs.html) HL7 v2 0532-jadvalining to'qqizta kodi (ha, yo'q va javob yo'qligi sabablari) uchun o'zbekcha va ruscha nomlarni beradi, [ha/yo'q indikatori](ValueSet-yes-no-indicator-vs.html) ValueSet esa uni qo'llaydi.
+
 [UZ Core CarePlan](StructureDefinition-uz-core-careplan.html) qo'shildi - bemorga ma'lum davr uchun yordam rejasining umumiy profili, masalan hamshiraning uyga patronaj tashriflari, davolash kursi yoki mehnatga layoqatsizlik varaqasi holati. Muayyan stsenariy uchun qo'llanma undan meros oladi. Reja rejalashtirilgan tadbirlar uchun so'rovlarni birlashtiradi va bajarilganlarini qayd etuvchi hodisalarni bog'laydi. Uning `intent` elementi o'zbek va rus tarjimalari bilan [CarePlan maqsadlari](ValueSet-careplan-intent-vs.html) ga bog'langan. Namunalar: [yangi tug'ilgan chaqaloq patronaji rejasi](CarePlan-example-newborn-patronage-careplan.html) va vaqtinchalik `example-careplan` o'rnini egallagan [davolovchi massaj kursi](CarePlan-example-massage-careplan.html). Ularning mas'ullari - yangi [patronaj hamshirasi](PractitionerRole-example-patronage-nurse-role.html) va [vrach fizioterapevt](PractitionerRole-example-physiotherapist-role.html) namunalari; fizioterapevt [Procedure namunasini](Procedure-example-procedure.html) ham bajaradi.
 
 [UZ Core Device](StructureDefinition-uz-core-device.html) jismoniy tibbiy buyumni - kompyuter tomografi kabi shifoxona uskunasini yoki bachadon ichi spirali kabi alohida buyumni - uning SNOMED CT bo'yicha turi va toifasi, ishlab chiqaruvchisi, modeli, seriya va partiya raqamlari, holati va mavjudligi, shuningdek u tegishli bo'lgan tashkilot va joy bilan tavsiflaydi. Profil bilan birga HL7 ning buyum holati, mavjudlik holati, nom turi va toifa kodlarining hamda SNOMED CT kontratseptiv buyum turlarining o'zbekcha va ruscha tarjimalari qo'shildi. Profil sahifasida kirish qismi va Tez boshlash bo'limi mavjud.
 
 [UZ Core DeviceUsage](StructureDefinition-uz-core-deviceusage.html) bemor tibbiy buyumdan, masalan, nogironlik aravachasi yoki implantatsiya qilinadigan venoz portdan foydalanayotgani, foydalangani yoki foydalanishini qayd etadi. Buyum SNOMED CT konsepti yoki [UZ Core Device](StructureDefinition-uz-core-device.html) ga havola sifatida ko'rsatiladi. U foydalanish haqida kim xabar berganini, qachon boshlanib tugaganini, foydalanish sharoitini, buyum amalda qanchalik muntazam ishlatilishini va nima uchun ishlatilishini qayd etadi. U bilan birga HL7 buyumdan foydalanish holati va rioya qilish kodlarining o'zbekcha va ruscha tarjimalari qo'shildi. Profil sahifasida tavsifiy kirish va Tez boshlash bo'limi bor.
-
-[Ha/yo'q indikatori to'ldiruvchisi](CodeSystem-yes-no-indicator-cs.html) HL7 v2 0532-jadvalining to'qqizta kodi (ha, yo'q va javob yo'qligi sabablari) uchun o'zbekcha va ruscha nomlarni beradi, [ha/yo'q indikatori](ValueSet-yes-no-indicator-vs.html) ValueSet esa uni qo'llaydi.
 
 #### O'zgartirildi
 
