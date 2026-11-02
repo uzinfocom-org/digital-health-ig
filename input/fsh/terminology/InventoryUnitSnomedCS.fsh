@@ -1,7 +1,7 @@
 CodeSystem: InventoryUnitSnomedCS
 Id: inventory-unit-snomed-cs
 Title: "Inventory unit SNOMED CT translations"
-Description: "Inventory unit SNOMED CT supplement with Uzbek and Russian translations"
+Description: "Inventory unit SNOMED CT supplement with translations in Uzbek and Russian"
 
 * insert SupplementCodeSystemDraft(inventory-unit-snomed-cs, $sct, 2026.1.0)
 
