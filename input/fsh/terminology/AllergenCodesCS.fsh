@@ -1,7 +1,7 @@
 CodeSystem: AllergenCodesCS
 Id: allergen-codes-cs
 Title: "Allergen codes"
-Description: "Allergy codes supplement with translations in uzbek and russian"
+Description: "Local allergen codes"
 * insert OriginalCodeSystemDraft(allergen-codes-cs)
 
 * #aller-0010-00001 "O't changlari"

@@ -1,11 +1,15 @@
 ValueSet: EncounterAdmitSourceVS
 Id: encounter-admit-source-vs
-Title: "Encounter admit source translations"
-Description: "Encounter admit source codes with English and Russian translations"
+Title: "Encounter admit source"
+Description: "Encounter admit sources"
 * ^url = "https://terminology.dhp.uz/fhir/core/ValueSet/encounter-admit-source-vs"
 * ^experimental = true
+
 * ^extension[0].url = $valueset-supplement
 * ^extension[=].valueCanonical = Canonical(EncounterAdmitSourceCS)
+
+* ^extension[+].url = $valueset-supplement
+* ^extension[=].valueCanonical = Canonical(EncounterAdmitSourceAmbulanceCS)
 
 * include $encounter-admit-source#hosp-trans
 * include $encounter-admit-source#born
@@ -14,18 +18,21 @@ Description: "Encounter admit source codes with English and Russian translations
 
 * include codes from system admit-source-local-cs
 
-* include codes from system encounter-admit-source-ambulance-cs
-* $loinc#LA35230-4 "Airport"
-* $loinc#LA34973-0 "Apartment"
-* $loinc#LA27336-9 "Home (private home/apt., board/care, assisted living, group home, transitional living)"
-* $sct#285141008 "Workplace"
-* $loinc#LA28896-1 "Public place"
-* $loinc#LP441481-1 "Street"
-* $loinc#LP125133-1 "School"
-* $loinc#LA19748-5 "Pre-school"
-* $loinc#LA30306-7 "Restaurant"
-* $sct#257661008 "Police station"
-* $loinc#LP212329-9 "Body of water"
-* $loinc#LA28898-7 "Educational institution"
-* $loinc#LA14089-9 "Street or highway"
-* $loinc#LA35271-8 "Dorm/Dormitory"
+* include $sct#257562009 "Airport"
+* include $sct#257564005 "Apartment"
+* include $sct#257630004 "House"
+* include $sct#285141008 "Work environment"
+* include $loinc#LA28896-1 "Public place"
+* include $sct#257710009 "Street"
+* include $sct#288553000 "Highway environment"
+* include $sct#257698009 "School"
+* include $sct#161116001 "Pre-school"
+* include $sct#257561002 "Further education establishment"
+* include $sct#257689006 "Restaurant"
+* include $sct#257661008 "Police station"
+* include $sct#257634008 "Inland water"
+* include $sct#257628001 "Hostel"
+* include $sct#257685000 "Railway station"
+* include $sct#284762008 "Underground railway station"
+* include $sct#257622000 "Healthcare facility"
+* include $sct#224804009 "Rural environment"

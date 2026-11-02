@@ -55,7 +55,7 @@ Description: "Encounter discharge disposition home codes with English and Russia
   * ^designation[=].value = "Removed from the registry due to completion of the follow-up period"
 
 // ambulance discharge disposition home codesystems
-  * #emer200 "Bemor kasalxonaga yotqizishni rad etdi"
+* #emer200 "Bemor kasalxonaga yotqizishni rad etdi"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Пациент отказался от госпитализации"
   * ^designation[+].language = #en

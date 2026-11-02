@@ -1,7 +1,7 @@
 ValueSet: LocationStatusVS
 Id: location-status-vs
 Title: "Location status"
-Description: "Defines type of Location `status` in Uzbek and Russian"
+Description: "Location statuses"
 * ^url = "https://terminology.dhp.uz/fhir/core/ValueSet/location-status-vs"
 * ^experimental = true
 * ^extension[0].url = $valueset-supplement

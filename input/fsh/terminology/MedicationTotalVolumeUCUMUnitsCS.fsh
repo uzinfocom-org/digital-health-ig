@@ -1,7 +1,7 @@
 CodeSystem: MedicationTotalVolumeUCUMUnitsCS
 Id: medication-total-volume-ucum-units-cs
-Title: "Medication total volume UCUM units translations"
-Description: "Medication total volume UCUM units with Uzbek and Russian translations"
+Title: "Medication total volume UCUM unit translations"
+Description: "Medication total volume UCUM unit supplement with translations in Uzbek and Russian"
 * insert SupplementCodeSystemDraft(medication-total-volume-ucum-units-cs, $ucum, 1.0.0)
 * #%
   * ^designation[0].language = #uz

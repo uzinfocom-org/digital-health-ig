@@ -3,7 +3,7 @@
   "id": "ichi-vs",
   "url": "https://terminology.dhp.uz/fhir/core/ValueSet/ichi-vs",
   "name": "ICHIVS",
-  "title": "ICHI Codes",
+  "title": "ICHI codes",
   "status": "active",
   "experimental": true,
   "publisher": "Uzinfocom",

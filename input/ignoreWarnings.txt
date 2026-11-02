@@ -63,3 +63,7 @@ The Binding on the type slicer Questionnaire.item.answerOption.value[x] applies 
 # IG Publisher 3.0.0 generates the narrative of a canonical resource example once per IG language
 # (en, ru, uz) and gives each copy the same "metadata" anchor, then flags its own output.
 The XHTML  the resource contains more than one node for each of the following node ids and anchor names: metadata (3x)
+
+# tx.fhir.org dropped the 5.0.0 version of concept-property-type around 2026-10-29, so every
+# CodeSystem.property.type fails to validate. Reported upstream - remove once tx.fhir.org serves it again.
+ValueSet 'http://hl7.org/fhir/ValueSet/concept-property-type|5.0.0' not found

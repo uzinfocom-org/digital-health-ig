@@ -1,7 +1,7 @@
 ValueSet: NationalityVS
 Id: nationality-vs
-Title: "Defines a nationality of a person as used in Uzbekistan from dmp.uz"
-Description: "Nationality"
+Title: "Nationality"
+Description: "Nationalities of a person as used in Uzbekistan, from dmp.uz"
 * ^experimental = true
 * ^status = #active
 * ^language = #uz

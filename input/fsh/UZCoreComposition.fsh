@@ -25,7 +25,7 @@ Description: "UZ Core Composition profile, used as a foundation for creating med
   * ^short = "Who and/or what the medical document or digital form is about."
 
 * author 1..* MS
-* author only Reference(UZCorePractitionerRole or UZCorePractitioner or UZCoreOrganization or UZCoreRelatedPerson or UZCorePatient or Device)
+* author only Reference(UZCorePractitionerRole or UZCorePractitioner or UZCoreOrganization or UZCoreRelatedPerson or UZCorePatient or UZCoreDevice)
 
 * attester
   * mode 1..1 MS

@@ -1,14 +1,64 @@
 ### Ishlab chiqilmoqda
 
-#### Buzuvchi o'zgarishlar
+#### Qo'shildi
 
-[Mutaxassis sertifikati](NamingSystem-uzb-specialist-certificate.html) identifikator tizimi hujjatlar nomlar fazosidan tibbiyot xodimlari nomlar fazosiga ko'chirildi, chunki sertifikat hujjatni emas, balki mutaxassisning malakasini identifikatsiya qiladi: `https://dhp.uz/fhir/core/sid/doc/uz/specialist-certificate` o'rniga endi `https://dhp.uz/fhir/core/sid/pro/uz/specialist-certificate`. `Practitioner.qualification.identifier` yuboruvchilar yangi tizimga o'tadi; qiymat formati (seriya va raqam ajratuvchisiz, masalan `CA008815`) o'zgarmaydi.
+[Composition hujjat turlari](CodeSystem-composition-type-cs.html): 399-son buyruqning 112-shakli - foliy kislotasi, 25-OH D vitamini va B12 vitaminiga IXLA tahlili uchun `emdoc-0010-0471` kodi qo'shildi.
+
+[UZ Core CarePlan](StructureDefinition-uz-core-careplan.html) qo'shildi - bemorga ma'lum davr uchun yordam rejasining umumiy profili, masalan hamshiraning uyga patronaj tashriflari, davolash kursi yoki mehnatga layoqatsizlik varaqasi holati. Muayyan stsenariy uchun qo'llanma undan meros oladi. Reja rejalashtirilgan tadbirlar uchun so'rovlarni birlashtiradi va bajarilganlarini qayd etuvchi hodisalarni bog'laydi. Uning `intent` elementi o'zbek va rus tarjimalari bilan [CarePlan maqsadlari](ValueSet-careplan-intent-vs.html) ga bog'langan. Namunalar: [yangi tug'ilgan chaqaloq patronaji rejasi](CarePlan-example-newborn-patronage-careplan.html) va vaqtinchalik `example-careplan` o'rnini egallagan [davolovchi massaj kursi](CarePlan-example-massage-careplan.html). Ularning mas'ullari - yangi [patronaj hamshirasi](PractitionerRole-example-patronage-nurse-role.html) va [vrach fizioterapevt](PractitionerRole-example-physiotherapist-role.html) namunalari; fizioterapevt [Procedure namunasini](Procedure-example-procedure.html) ham bajaradi.
+
+[UZ Core Device](StructureDefinition-uz-core-device.html) jismoniy tibbiy buyumni - kompyuter tomografi kabi shifoxona uskunasini yoki bachadon ichi spirali kabi alohida buyumni - uning SNOMED CT bo'yicha turi va toifasi, ishlab chiqaruvchisi, modeli, seriya va partiya raqamlari, holati va mavjudligi, shuningdek u tegishli bo'lgan tashkilot va joy bilan tavsiflaydi. Profil bilan birga HL7 ning buyum holati, mavjudlik holati, nom turi va toifa kodlarining hamda SNOMED CT kontratseptiv buyum turlarining o'zbekcha va ruscha tarjimalari qo'shildi. Profil sahifasida kirish qismi va Tez boshlash bo'limi mavjud.
+
+[UZ Core DeviceUsage](StructureDefinition-uz-core-deviceusage.html) bemor tibbiy buyumdan, masalan, nogironlik aravachasi yoki implantatsiya qilinadigan venoz portdan foydalanayotgani, foydalangani yoki foydalanishini qayd etadi. Buyum SNOMED CT konsepti yoki [UZ Core Device](StructureDefinition-uz-core-device.html) ga havola sifatida ko'rsatiladi. U foydalanish haqida kim xabar berganini, qachon boshlanib tugaganini, foydalanish sharoitini, buyum amalda qanchalik muntazam ishlatilishini va nima uchun ishlatilishini qayd etadi. U bilan birga HL7 buyumdan foydalanish holati va rioya qilish kodlarining o'zbekcha va ruscha tarjimalari qo'shildi. Profil sahifasida tavsifiy kirish va Tez boshlash bo'limi bor.
 
 #### O'zgartirildi
+
+[FHIR turlari supplementi](CodeSystem-fhir-types-cs.html) har bir resurs turiga nomi o'rniga uning ta'rifi tarjimasini berardi. Endi har bir turning o'zbekcha va ruscha nomi bor, masalan `Patient` uchun "Bemor" va "Пациент", ular `preferredForLanguage` bilan belgilangan, shuning uchun `displayLanguage` bilan `$lookup` nomni qaytaradi. Tarjima qilingan ta'riflar SNOMED CT `900000000000550004` Definition use bilan belgilashlar sifatida qoladi.
+
+Kod tizimlari va qiymatlar to'plamlarining sarlavhalari va tavsiflari endi [modellashtirish qo'llanmasidagi](https://github.com/uzinfocom-org/digital-health-ig/blob/main/modelling-guidelines.md) nomlash shabloniga mos keladi: supplement `[Concept] translations`, qiymatlar to'plami esa `[Concept]` deb nomlanadi, sarlavhalarda "CodeSystem" yoki "ValueSet" kabi so'zlar endi yo'q. Kanonik URL, identifikatorlar va kodlar o'zgarmadi.
+
+[Procedure namunasi](Procedure-example-procedure.html) endi boshqa bemorning tashrifi va holati o'rniga xuddi shu bemorning [ambulator fizioterapiya tashrifi](Encounter-example-physiotherapy-encounter.html) va [o'ng oyoq panjasidagi og'riq](Condition-example-foot-pain.html) holatiga havola qiladi.
+
+[UZ Core Observation](StructureDefinition-uz-core-observation.html), [UZ Core Immunization](StructureDefinition-uz-core-immunization.html) va [UZ Core Procedure](StructureDefinition-uz-core-procedure.html) dagi `basedOn` endi istalgan CarePlan emas, UZ Core CarePlan ga havola qiladi.
+
+UZ Core profillaridagi Device ga barcha havolalar endi [UZ Core Device](StructureDefinition-uz-core-device.html) ga yo'naltirilgan: Observation, Procedure, Condition, AdverseEvent, Composition, QuestionnaireResponse, Group, MedicationAdministration, MedicationDispense, InventoryItem, SupplyRequest va SupplyDelivery.
+
+#### Buzuvchi o'zgarishlar
+
+So'rov resurs turlari va ishtirokchi resurs turi supplementlari, `https://terminology.dhp.uz/fhir/core/CodeSystem/request-resource-types-cs` va `https://terminology.dhp.uz/fhir/core/CodeSystem/participant-resource-type-cs`, olib tashlandi. Ular FHIR turlari supplementi bilan bir xil `http://hl7.org/fhir/fhir-types` kodlarini tarjima qilardi, shuning uchun bu kodlarda ikkitadan ruscha va o'zbekcha belgilash bor edi. [So'rov resurs turlari](ValueSet-request-resource-types-vs.html) va [Resurs turlari](ValueSet-resource-type-vs.html) endi [FHIR turlari supplementi](CodeSystem-fhir-types-cs.html)dan foydalanadi. Supplementlarni URL bo'yicha yuklaydigan tizimlar `https://terminology.dhp.uz/fhir/core/CodeSystem/fhir-types-cs`ga o'tadi.
+
+### Versiya 0.12.0
+
+#### Qo'shildi
+
+Bemorga dori kiritilishi, masalan, bo'limda berilgan doza uchun [UZ Core MedicationAdministration](StructureDefinition-uz-core-medicationadministration.html) qo'shildi. U bajarilayotgan MedicationRequest ga havola qiladi va dozani kim va qanday kiritganini qayd etadi. Moliyalashtirish manbai kengaytmasi dori tender, gumanitar yordam yoki boshqa milliy manba hisobidan sotib olinganini ko'rsatadi; u bemorning qamroviga mos kelmasligi mumkin.
+
+Qon komponenti, dori yoki tibbiy buyum kabi narsalar zaxirasi uchun [UZ Core InventoryItem](StructureDefinition-uz-core-inventoryitem.html) qo'shildi. Har bir pozitsiya karantin, tekshiruvlarni kutish yoki mavjud kabi milliy zaxira holatini tashiydi va saqlanayotgan mahsulotga havola qiladi, har bir jismoniy birlikning seriya raqami, yaroqlilik muddati va saqlash joyi bilan.
+
+Nursing maqsadlari uchun [aholini ro'yxatga olish va dorilarni uyga yetkazib berish](CodeSystem-nursing-visit-purpose-cs.html) milliy kodlari qo'shildi.
+
+Nursing yo'llanmalari SNOMED CT `439708006` Home visit toifasi bilan belgilanadi, [ServiceRequest xizmatlari to'plami](ValueSet-service-request-code-vs.html) esa 3, 15 va 30-kunlardagi yangi tug'ilgan chaqaloq patronaji uchun `440068009` va 3 oydan 60 oygacha bo'lgan bolalarning profilaktik tashriflari uchun `410620009` ni o'z ichiga oladi. Uy tashrifi Encounter i `Encounter.class` = `HH` bilan `mserv-0001-00009` «Patronaj» tashrif turidan foydalanadi.
+
+[Patient/$attach](OperationDefinition-patient-attach.html) bitta chaqiruvda bemorni poliklinikaga, oilaviy shifokorga yoki ikkalasiga biriktiradi va ularni asosiy ma'lumotlar reyestri bo'yicha tekshiradi. Tur darajasida u bemorni JShShIR bo'yicha topadi yoki yaratadi, shuning uchun `$populate` + `$attach` juftligini almashtiradi.
+
+[Patient/$relate](OperationDefinition-patient-relate.html) Adliya vazirligining bolalar reyestri bo'yicha tasdiqlangan ota-ona va bola munosabatini qayd etadi. U bolani JShShIR bo'yicha topadi yoki yaratadi va ota-ona uchun RelatedPerson yaratadi.
+
+[Patient/$detach](OperationDefinition-patient-detach.html) `$attach` ning teskarisi: bitta chaqiruvda poliklinika va oilaviy shifokorga biriktirishni hamda biriktirish sanasini olib tashlaydi, `reason` majburiy.
+
+[UZ Core Medication](StructureDefinition-uz-core-medication.html) boshqa profillardagi kabi kirish qismi va Quick Start ga ega bo'ldi. U yangi dorini ro'yxatdan o'tkazishdan oldin mavjudini reyestr identifikatori yoki XPN yoki ATC kodi bo'yicha qanday topishni ko'rsatadi.
+
+#### O'zgartirildi
+
+[UZ Core AllergyIntolerance](StructureDefinition-uz-core-allergy-intolerance.html) `reaction` standart `openEHR-administration` kengaytmasi orqali reaksiyaga sabab bo'lgan MedicationAdministration ga havola qilishi mumkin. Analgetikka allergiya misoli teri toshmasini paratsetamol dozasi bilan bog'laydi.
+
+[ServiceRequest toifalari](ValueSet-service-request-categories-vs.html) da SNOMED CT `20135006` endi "Screening and home visits" o'rniga rasmiy "Screening procedure" nomiga ega, o'zbekcha va ruscha tarjimalari esa patronajni eslatmaydi: uyga tashriflar uchun alohida `439708006` "Home visit" toifasi bor.
 
 [UZ Core Patient](StructureDefinition-uz-core-patient.html) va [UZ Core Practitioner](StructureDefinition-uz-core-practitioner.html) `name.text`, `family`, `given` va `suffix` elementlarida `translation` kengaytmasini e'lon qiladi: ism o'zbek tilida yoziladi, uning ruscha va qoraqalpoqcha shakllari esa ikkinchi ism sifatida emas, o'sha `HumanName` ichida uzatiladi. [Nodira](Patient-example-nodira.html) va [practitioner](Practitioner-example-practitioner.html) misollarida ruscha shakllar bor, ikkala profil sahifasi ham bu usulni tavsiflaydi.
 
 [Harakat kodlari to'ldiruvchisi](CodeSystem-action-code-cs.html) [hududiy skrining PlanDefinition misolida](PlanDefinition-example-uz-core-regional-screening-plan-definition.html) ishlatiladigan `order-service` uchun o'zbekcha va ruscha nomlarni beradi.
+
+#### Buzuvchi o'zgarishlar
+
+[Mutaxassis sertifikati](NamingSystem-uzb-specialist-certificate.html) identifikator tizimi hujjatlar nomlar fazosidan tibbiyot xodimlari nomlar fazosiga ko'chirildi, chunki sertifikat hujjatni emas, balki mutaxassisning malakasini identifikatsiya qiladi: `https://dhp.uz/fhir/core/sid/doc/uz/specialist-certificate` o'rniga endi `https://dhp.uz/fhir/core/sid/pro/uz/specialist-certificate`. `Practitioner.qualification.identifier` yuboruvchilar yangi tizimga o'tadi; qiymat formati (seriya va raqam ajratuvchisiz, masalan `CA008815`) o'zgarmaydi.
 
 ### Versiya 0.11.1
 

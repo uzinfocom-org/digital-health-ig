@@ -1,7 +1,7 @@
 ValueSet: ISO3166_2
 Id: iso-3166-2-vs
-Title: "ISO 3166 part 1 2-letter codes"
-Description: "Defines Uzbek and Russian translations for ISO 3166 part 1 2-letter codes"
+Title: "ISO 3166-1 two-letter code"
+Description: "ISO 3166-1 two-letter codes"
 * ^url = "https://terminology.dhp.uz/fhir/core/ValueSet/iso-3166-2-vs"
 * ^experimental = true
 * ^extension.url = $valueset-supplement
@@ -11,8 +11,8 @@ Description: "Defines Uzbek and Russian translations for ISO 3166 part 1 2-lette
 
 ValueSet: ISO3166_2SansUZ
 Id: iso-3166-2-vs-sans-uz
-Title: "ISO 3166 part 1 2-letter codes, sans Uzbekistan"
-Description: "Defines Uzbek and Russian translations for ISO 3166 part 1 2-letter codes, sans Uzbekistan, for international addresses"
+Title: "ISO 3166-1 two-letter code, except Uzbekistan"
+Description: "ISO 3166-1 two-letter codes, except Uzbekistan, for international addresses"
 * ^url = "https://terminology.dhp.uz/fhir/core/ValueSet/iso-3166-2-vs-sans-uz"
 * ^experimental = true
 * ^extension.url = $valueset-supplement

@@ -1,7 +1,7 @@
 ValueSet: FundingSourceVS
 Id: funding-source-vs
-Title: "Immunization funding source value set"
-Description: "Immunization funding source codes with Uzbek and Russian translations"
+Title: "Immunization funding source"
+Description: "Immunization funding sources"
 * ^url = "https://terminology.dhp.uz/fhir/core/ValueSet/funding-source-vs"
 * ^experimental = true
 * ^extension[0].url = $valueset-supplement
