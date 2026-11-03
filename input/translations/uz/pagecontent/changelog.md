@@ -30,6 +30,8 @@ Kod tizimlari va qiymatlar to'plamlarining sarlavhalari va tavsiflari endi [mode
 
 UZ Core profillaridagi Device ga barcha havolalar endi [UZ Core Device](StructureDefinition-uz-core-device.html) ga yo'naltirilgan: Observation, Procedure, Condition, AdverseEvent, Composition, QuestionnaireResponse, Group, MedicationAdministration, MedicationDispense, InventoryItem, SupplyRequest va SupplyDelivery.
 
+[UZ Core Medication](StructureDefinition-uz-core-medication.html) endi `identifier` ni talab qilmaydi. Har bir Medication da identifikator yoki kod bo'lishi shart (`uzcore-med-1` invarianti), shuning uchun INN bo'yicha tayinlangan dorini, masalan DMED elektron retseptlarida, dorixona aniq mahsulotni ko'rsatguncha faqat INN yoki ATC kodi bilan yuborish mumkin.
+
 #### Buzuvchi o'zgarishlar
 
 So'rov resurs turlari va ishtirokchi resurs turi supplementlari, `https://terminology.dhp.uz/fhir/core/CodeSystem/request-resource-types-cs` va `https://terminology.dhp.uz/fhir/core/CodeSystem/participant-resource-type-cs`, olib tashlandi. Ular FHIR turlari supplementi bilan bir xil `http://hl7.org/fhir/fhir-types` kodlarini tarjima qilardi, shuning uchun bu kodlarda ikkitadan ruscha va o'zbekcha belgilash bor edi. [So'rov resurs turlari](ValueSet-request-resource-types-vs.html) va [Resurs turlari](ValueSet-resource-type-vs.html) endi [FHIR turlari supplementi](CodeSystem-fhir-types-cs.html)dan foydalanadi. Supplementlarni URL bo'yicha yuklaydigan tizimlar `https://terminology.dhp.uz/fhir/core/CodeSystem/fhir-types-cs`ga o'tadi.

@@ -6,8 +6,9 @@ Description: "Uzbekistan Core Medication profile, used for representing medicati
 * ^experimental = true
 * ^status = #active
 * ^date = "2025-09-25"
+* obeys uzcore-med-1
 
-* identifier 1..* MS
+* identifier MS
 * identifier.use from IdentifierUseVS (required)
 * identifier.type from IdentifierTypeVS (required)
 * identifier ^slicing.discriminator.type = #value
@@ -164,3 +165,7 @@ Usage: #example
   * lotNumber = "LOT20261215"
   * expirationDate = "2028-12-28"
 
+Invariant: uzcore-med-1
+Description: "A Medication SHALL have an identifier or a code. A product from the national registry carries its registry identifiers; a medicine prescribed by its international non-proprietary name (INN) carries only the INN or ATC code."
+Expression: "identifier.exists() or code.exists()"
+Severity: #error

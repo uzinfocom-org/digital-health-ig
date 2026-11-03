@@ -30,6 +30,8 @@ The [Procedure example](Procedure-example-procedure.html) now points at an [outp
 
 Titles and descriptions of code systems and value sets now follow the naming pattern in the [modelling guidelines](https://github.com/uzinfocom-org/digital-health-ig/blob/main/modelling-guidelines.md): a supplement is `[Concept] translations`, a value set is `[Concept]`, and titles no longer carry words such as "CodeSystem" or "ValueSet". Canonical URLs, ids and codes are unchanged.
 
+[UZ Core Medication](StructureDefinition-uz-core-medication.html) no longer requires an `identifier`. Each Medication must have an identifier or a code (invariant `uzcore-med-1`), so a medicine prescribed by its INN, as in DMED e-prescriptions, can be sent with only its INN or ATC code before the pharmacy names the product.
+
 #### Breaking changes
 
 The request resource types and participant resource type supplements, `https://terminology.dhp.uz/fhir/core/CodeSystem/request-resource-types-cs` and `https://terminology.dhp.uz/fhir/core/CodeSystem/participant-resource-type-cs`, are removed. They translated the same `http://hl7.org/fhir/fhir-types` codes as the FHIR types supplement, so those codes had two Russian and two Uzbek designations. [Request resource types](ValueSet-request-resource-types-vs.html) and [Resource types](ValueSet-resource-type-vs.html) now use the [FHIR types supplement](CodeSystem-fhir-types-cs.html). Systems that load supplements by URL switch to `https://terminology.dhp.uz/fhir/core/CodeSystem/fhir-types-cs`.
