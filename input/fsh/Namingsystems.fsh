@@ -771,7 +771,7 @@ Usage: #definition
 
 Instance: uzb-medication-knowledge-number
 InstanceOf: NamingSystem
-Description: "Medication reference entry identifiers assigned in the Digital Health Platform (DHP) of Uzbekistan or an external source system"
+Description: "Medication reference entry identifiers assigned by the Digital Health Platform (DHP) of Uzbekistan"
 Usage: #definition
 * url = "https://terminology.dhp.uz/fhir/core/NamingSystem/uzb-medication-knowledge-number"
 * name = "UzbekistanMedicationKnowledgeIdentifier"
@@ -780,9 +780,9 @@ Usage: #definition
 * date = "2026-10-30"
 * publisher = "Uzinfocom"
 * responsible = "Ministry of Health of the Republic of Uzbekistan"
-* description = "Naming system for identifiers of medicinal products or medication reference entries maintained in DHP or in an external source system, used to match the same record unambiguously across systems."
+* description = "Naming system for identifiers that DHP assigns to medication reference entries (MedicationKnowledge), used to match the same entry across systems."
 * jurisdiction = urn:iso:std:iso:3166#UZ "Uzbekistan"
-* usage = "Used in MedicationKnowledge.identifier.system to identify a medication reference entry, including its status and approved prices. Values must be unique across participating systems within this namespace, using coordinated allocation or an issuer-qualified value. Record the organization that assigned the identifier in identifier.assigner."
+* usage = "Used in MedicationKnowledge.identifier.system for the identifier DHP assigns to a medication reference entry. Identifiers that other systems assign to the entry are sent as further identifiers with their own system URI."
 * uniqueId[0].type = #uri
 * uniqueId[=].value = $medication-knowledge-number
 * uniqueId[=].preferred = true

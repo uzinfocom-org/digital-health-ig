@@ -17,7 +17,7 @@ Description: "Uzbekistan Core MedicationKnowledge profile, used to represent ref
 * identifier[medicationKnowledge].system 1..1 MS
 * identifier[medicationKnowledge].system = $medication-knowledge-number
 * identifier[medicationKnowledge].value 1..1 MS
-* identifier[medicationKnowledge] ^short = "Unique identifier of the medicinal product or medication reference entry in DHP or an external source system"
+* identifier[medicationKnowledge] ^short = "Identifier of the medication reference entry, assigned by DHP"
 
 * status MS
 * status from MedicationKnowledgeStatusVS (required)
@@ -31,7 +31,7 @@ Description: "Uzbekistan Core MedicationKnowledge profile, used to represent ref
 * author only Reference(UZCoreOrganization)
 * author ^short = "Organization responsible for publishing, approving or maintaining this record in DHP (e.g. SHIF for reimbursement or price ceiling)"
 
-* cost 1..* MS
+* cost MS
 * cost ^short = "Price information of the medicinal product (e.g. price ceiling, wholesale, retail, SHIF price)"
 * cost.effectiveDate 1..1 MS
 * cost.effectiveDate ^short = "Period during which the price applies: start date and, optionally, end date"
