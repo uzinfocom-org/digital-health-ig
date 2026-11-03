@@ -8,6 +8,8 @@ Added [UZ Core CarePlan](StructureDefinition-uz-core-careplan.html), a general p
 
 [Medication dose form](CodeSystem-medication-doseform-cs.html) adds `HRB101` herbal substance, `JEL101` jelly, `KIT101` kit, `LOT101` lotion, `SHA101` medicated shampoo and `TEA101` herbal tea, with Uzbek, Russian and English names, for DMED e-prescription dose forms that had no code.
 
+[MedicationRequest status reason](ValueSet-medicationrequest-status-reason-vs.html) adds national codes [medical contraindication and other](CodeSystem-medicationrequest-status-reason-local-cs.html), with Uzbek, Russian and English names, for the two reasons a DMED e-prescription is cancelled with. HL7 has no equivalent for either.
+
 [Unit of measurement map](ConceptMap-unit-of-measurement-cm.html) adds UCUM targets for 30 units that had none, such as international unit `[iU]`, milligram per dose `mg/{dose}`, gram per litre `g/L` and colony-forming unit `[CFU]`.
 
 [UZ Core Device](StructureDefinition-uz-core-device.html) describes a physical medical device - hospital equipment such as a CT scanner, or a single item such as an intrauterine device - with its SNOMED CT type and category, manufacturer, model, serial and lot numbers, status and availability, and the organization and location it belongs to. Uzbek and Russian translations of the HL7 device status, availability status, name type and category codes, and of the SNOMED CT contraceptive device types, come with it. The profile page has the narrative intro and Quick Start.
