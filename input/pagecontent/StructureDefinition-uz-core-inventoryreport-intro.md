@@ -10,7 +10,6 @@ This profile adds no new mandatory cardinalities. Follow the base FHIR requireme
 
 #### Each UZ Core InventoryReport Must Support
 
-- a business identifier - the report number from the managing organization's system (see [identifier slices](#identifier-slices));
 - the status (draft / requested / active / entered-in-error) and the count type (snapshot or difference);
 - for a difference report, the operation type (addition, subtraction or no change) and its reason, such as a new receipt, a transfer or a write-off;
 - when the report was made, who made it (a practitioner, patient or related person), and the period it covers;
@@ -130,12 +129,6 @@ A difference report says whether stock was added or removed in `operationType`, 
   }]
 }
 ```
-
-#### Identifier slices {#identifier-slices}
-
-| Slice | `system` | What it identifies |
-|---|---|---|
-| `inventoryReport` | `https://dhp.uz/fhir/core/sid/doc/uz/inventory-report` | Report number assigned by the managing organization's information system ([NamingSystem](NamingSystem-uzb-inventory-report-identifier.html)) |
 
 The full example is the [medication receipt report](InventoryReport-example-inventory-report-medication-receipt.html).
 

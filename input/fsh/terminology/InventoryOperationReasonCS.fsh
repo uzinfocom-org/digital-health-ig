@@ -40,7 +40,7 @@ Description: "List of inventory operation reasons"
   * ^designation[+].language = #en
   * ^designation[=].value = "Transfer out"
 
-* #invrs-0001-00007 "Qaytarib olindi"
+* #invrs-0001-00007 "Omborga qaytarish"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Возврат на склад"
   * ^designation[+].language = #en

@@ -12,7 +12,6 @@ Profil yangi majburiy karraliliklarni qo'shmaydi. Bazaviy FHIR talablariga amal 
 
 #### Har bir UZ Core InventoryReport Must Support
 
-- biznes identifikator - boshqaruvchi tashkilot tizimidagi hisobot raqami ([identifikator slayslari](#identifier-slices) ga qarang);
 - status (draft / requested / active / entered-in-error) va hisoblash turi (snapshot yoki difference);
 - o'zgarishlar hisoboti uchun operatsiya turi (kirim, chiqim yoki o'zgarishsiz) va uning sababi, masalan yangi kirim, ko'chirish yoki hisobdan chiqarish;
 - hisobot qachon tuzilgani, kim tuzgani (tibbiyot xodimi, bemor yoki uning vakili) va qaysi davrni qamrab olishi;
@@ -132,12 +131,6 @@ O'zgarishlar hisoboti zaxira qo'shilgan yoki chiqarilganini `operationType` da, 
   }]
 }
 ```
-
-#### Identifikator slayslari {#identifier-slices}
-
-| Slays | `system` | Nimani identifikatsiya qiladi |
-|---|---|---|
-| `inventoryReport` | `https://dhp.uz/fhir/core/sid/doc/uz/inventory-report` | Boshqaruvchi tashkilotning axborot tizimi bergan hisobot raqami ([NamingSystem](NamingSystem-uzb-inventory-report-identifier.html)) |
 
 To'liq namuna: [dori vositasi kirimi hisoboti](InventoryReport-example-inventory-report-medication-receipt.html).
 

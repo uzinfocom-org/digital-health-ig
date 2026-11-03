@@ -53,6 +53,8 @@ Description: "Uzbekistan Core Practitioner profile, used to define healthcare pr
   * code.text MS
     * ^short = "Specialty, qualification category and medical role as free text"
     * ^comment = "Until these are coded, describe the certificate in plain text, e.g. 'Psixiatriya, oliy toifa, shifokor'. Add translations to other languages with the translation extension."
+    * extension contains $translation-extension named translation 0..* MS
+    * extension[translation] ^short = "Specialty, qualification category and medical role in other languages"
   * period
     * ^short = "Date of issue (start) and end of validity (end)"
 

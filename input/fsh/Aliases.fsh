@@ -268,5 +268,4 @@ Alias: $inventoryreport-status = http://hl7.org/fhir/inventoryreport-status
 Alias: $inventory-operation-type-cs = https://terminology.dhp.uz/fhir/core/CodeSystem/inventory-operation-type-cs
 Alias: $inventory-operation-reason-cs = https://terminology.dhp.uz/fhir/core/CodeSystem/inventory-operation-reason-cs
 Alias: $inventory-item-category-cs = https://terminology.dhp.uz/fhir/core/CodeSystem/inventory-item-category-cs
-Alias: $inventory-report-identifier = https://dhp.uz/fhir/core/sid/doc/uz/inventory-report
 Alias: $inventory-status-cs = https://terminology.dhp.uz/fhir/core/CodeSystem/inventoryitem-inventory-status-cs

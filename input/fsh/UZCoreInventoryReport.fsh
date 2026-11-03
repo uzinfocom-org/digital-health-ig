@@ -9,15 +9,6 @@ Description: "Uzbekistan Core InventoryReport profile, used to report inventory 
 * ^date = "2026-10-30"
 * ^publisher = "Uzinfocom"
 
-* identifier MS
-* identifier ^slicing.discriminator.type = #value
-* identifier ^slicing.discriminator.path = "system"
-* identifier ^slicing.rules = #open
-* identifier contains inventoryReport 0..1 MS
-* identifier[inventoryReport].system 1..1 MS
-* identifier[inventoryReport].system = $inventory-report-identifier
-* identifier[inventoryReport] ^short = "Inventory report identifier assigned by the managing organization"
-
 * status MS
 * status from InventoryReportStatusVS (required)
 
@@ -32,7 +23,7 @@ Description: "Uzbekistan Core InventoryReport profile, used to report inventory 
 
 * reportedDateTime MS
 * reporter MS
-* reporter only Reference(UZCorePractitioner or UZCorePatient or UZCoreRelatedPerson)
+* reporter only Reference(UZCorePractitioner or UZCorePatient or UZCoreRelatedPerson or UZCoreDevice)
 * reportingPeriod MS
 
 * inventoryListing MS
@@ -44,7 +35,6 @@ Description: "Uzbekistan Core InventoryReport profile, used to report inventory 
 
 * inventoryListing.item MS
 * inventoryListing.item.category MS
-* inventoryListing.item.category from InventoryItemCategoryVS (extensible)
 * inventoryListing.item.quantity MS
 * inventoryListing.item.quantity from InventoryUnitVS (extensible)
 * inventoryListing.item.item MS
@@ -72,7 +62,6 @@ Usage: #example
 * inventoryListing[0].itemStatus = $inventory-status-cs#available "Mavjud"
 * inventoryListing[0].countingDateTime = "2026-10-31T18:00:00+05:00"
 
-* inventoryListing[0].item[0].category = $inventory-item-category-cs#invct-0001-00001 "Dori vositasi"
 * inventoryListing[0].item[0].quantity.value = 100
 * inventoryListing[0].item[0].quantity.unit = "Quti"
 * inventoryListing[0].item[0].quantity.system = "http://snomed.info/sct"

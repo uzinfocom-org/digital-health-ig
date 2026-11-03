@@ -12,7 +12,6 @@ UZ Core InventoryReport фиксирует подсчёт запасов в од
 
 #### Must Support для UZ Core InventoryReport
 
-- бизнес-идентификатор - номер отчёта из системы управляющей организации (см. [срезы идентификаторов](#identifier-slices));
 - статус (draft / requested / active / entered-in-error) и тип подсчёта (snapshot или difference);
 - для отчёта об изменениях - тип операции (поступление, выбытие или без изменений) и её причина, например новое поступление, перемещение или списание;
 - когда составлен отчёт, кто его составил (медицинский работник, пациент или его представитель) и за какой период;
@@ -132,12 +131,6 @@ UZ Core InventoryReport фиксирует подсчёт запасов в од
   }]
 }
 ```
-
-#### Срезы идентификаторов {#identifier-slices}
-
-| Срез | `system` | Что идентифицирует |
-|---|---|---|
-| `inventoryReport` | `https://dhp.uz/fhir/core/sid/doc/uz/inventory-report` | Номер отчёта, присвоенный информационной системой управляющей организации ([NamingSystem](NamingSystem-uzb-inventory-report-identifier.html)) |
 
 Полный пример: [отчёт о поступлении лекарственного средства](InventoryReport-example-inventory-report-medication-receipt.html).
 

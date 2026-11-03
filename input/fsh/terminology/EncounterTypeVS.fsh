@@ -5,6 +5,9 @@ Description: "Encounter types"
 * ^url = "https://terminology.dhp.uz/fhir/core/ValueSet/encounter-type-vs"
 * ^experimental = true
 
+* ^extension[0].url = $valueset-supplement
+* ^extension[=].valueCanonical = Canonical(EncounterTypeAmbulanceSCTCS)
+
 * include encounter-type-cs#mserv-0001-00001
 * include encounter-type-cs#mserv-0001-00002
 * include encounter-type-cs#mserv-0001-00003
@@ -14,3 +17,7 @@ Description: "Encounter types"
 * include encounter-type-cs#mserv-0001-00007
 * include encounter-type-cs#mserv-0001-00008
 * include encounter-type-cs#mserv-0001-00009
+
+* include codes from system encounter-type-ambulance-cs
+
+* include $sct#715537001 "Transportation by ambulance"
