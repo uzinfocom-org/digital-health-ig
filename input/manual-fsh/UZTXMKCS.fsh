@@ -9,7 +9,7 @@ Id: uz-txmk
 Title: "Uzbekistan National Medical Services Classifier (TXMK)"
 Description: "National classification of medical services of Uzbekistan, approved by the Ministry of Health of the Republic of Uzbekistan, containing 10,699 concepts with full Uzbek, Russian, and English names."
 * ^url = "https://terminology.dhp.uz/fhir/core/CodeSystem/uz-txmk"
-* ^version = "2026-11-03"
+* ^version = "1.0.0"
 * ^name = "UZTXMKCS"
 * ^status = #draft
 * ^experimental = true
