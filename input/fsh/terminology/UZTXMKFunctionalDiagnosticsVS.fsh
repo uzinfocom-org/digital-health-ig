@@ -7,4 +7,4 @@ Description: "Functional diagnostic services from the national classification of
 * ^status = #draft
 * ^experimental = true
 
-* include codes from system UZTXMKCS where service-group = "B08"
+* include codes from system $uz-txmk where service-group = "B08"

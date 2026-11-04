@@ -7,9 +7,9 @@ Description: "Medical imaging services from the national classification of medic
 * ^status = #draft
 * ^experimental = true
 
-* include codes from system UZTXMKCS where service-group = "B02"
-* include codes from system UZTXMKCS where service-group = "B03"
-* include codes from system UZTXMKCS where service-group = "B04"
-* include codes from system UZTXMKCS where service-group = "B05"
-* include codes from system UZTXMKCS where service-group = "B06"
-* include codes from system UZTXMKCS where service-group = "B10"
+* include codes from system $uz-txmk where service-group = "B02"
+* include codes from system $uz-txmk where service-group = "B03"
+* include codes from system $uz-txmk where service-group = "B04"
+* include codes from system $uz-txmk where service-group = "B05"
+* include codes from system $uz-txmk where service-group = "B06"
+* include codes from system $uz-txmk where service-group = "B10"
