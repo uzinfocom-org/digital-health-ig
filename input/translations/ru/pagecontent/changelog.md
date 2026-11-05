@@ -12,11 +12,19 @@
 
 Добавлен [UZ Core CarePlan](StructureDefinition-uz-core-careplan.html) - общий профиль плана помощи пациенту на период времени, например патронажных визитов медсестры на дом, курса лечения или случая листка нетрудоспособности. Руководство для конкретного сценария наследует от него. План объединяет запросы на запланированные мероприятия и связывает события, фиксирующие выполненные. Его `intent` связан с [намерениями CarePlan](ValueSet-careplan-intent-vs.html) с переводами на узбекский и русский. Примеры: [план патронажа новорождённого](CarePlan-example-newborn-patronage-careplan.html) и [курс лечебного массажа](CarePlan-example-massage-careplan.html), который заменяет временный `example-careplan`. Их хранители - новые примеры [патронажной медсестры](PractitionerRole-example-patronage-nurse-role.html) и [врача-физиотерапевта](PractitionerRole-example-physiotherapist-role.html); физиотерапевт также выполняет [пример Procedure](Procedure-example-procedure.html).
 
+[Карта единиц измерения](ConceptMap-unit-of-measurement-cm.html) дополнена целевыми кодами UCUM для 30 единиц, у которых их не было, например международная единица `[iU]`, миллиграмм на дозу `mg/{dose}`, грамм на литр `g/L` и колониеобразующая единица `[CFU]`.
+
+[Лекарственные формы](CodeSystem-medication-doseform-cs.html) дополнены кодами `HRB101` сырьё растительное лекарственное, `JEL101` желе лекарственное, `KIT101` набор, `LOT101` лосьон, `SHA101` шампунь лекарственный и `TEA101` сбор лекарственный растительный с названиями на узбекском, русском и английском - для лекарственных форм электронного рецепта DMED, у которых не было кода.
+
+[Причины статуса MedicationRequest](ValueSet-medicationrequest-status-reason-vs.html) дополнены национальными кодами [медицинское противопоказание и другое](CodeSystem-medicationrequest-status-reason-local-cs.html) с названиями на узбекском, русском и английском - для двух причин отмены электронного рецепта DMED. Эквивалента ни для одной из них в HL7 нет.
+
 [Типы документов Composition](CodeSystem-composition-type-cs.html) дополнены кодом `emdoc-0010-0471` для формы 112 Приказа № 399 - лабораторного анализа на фолиевую кислоту, 25-OH витамин D и витамин B12.
 
 #### Изменено
 
 `basedOn` в [UZ Core Observation](StructureDefinition-uz-core-observation.html), [UZ Core Immunization](StructureDefinition-uz-core-immunization.html) и [UZ Core Procedure](StructureDefinition-uz-core-procedure.html) теперь ссылается на UZ Core CarePlan, а не на любой CarePlan.
+
+[Переводы статусов MedicationRequest](CodeSystem-medicationrequest-status-cs.html) теперь называют `ended` по-русски «Истекло» вместо «Завершено», которое совпадало с `completed`.
 
 [Supplement FHIR-типов](CodeSystem-fhir-types-cs.html) давал каждому типу ресурса перевод его определения вместо названия. Теперь у каждого типа есть узбекское и русское название, например "Bemor" и "Пациент" для `Patient`, с отметкой `preferredForLanguage`, поэтому `$lookup` с `displayLanguage` возвращает название. Переведённые определения остаются обозначениями с use SNOMED CT `900000000000550004` Definition.
 
@@ -25,6 +33,8 @@
 Заголовки и описания систем кодов и наборов значений теперь следуют шаблону именования из [руководства по моделированию](https://github.com/uzinfocom-org/digital-health-ig/blob/main/modelling-guidelines.md): supplement называется `[Concept] translations`, набор значений - `[Concept]`, а в заголовках больше нет слов вроде "CodeSystem" или "ValueSet". Канонические URL, идентификаторы и коды не изменились.
 
 [Пример Procedure](Procedure-example-procedure.html) теперь ссылается на [амбулаторный визит на физиотерапию](Encounter-example-physiotherapy-encounter.html) и состояние [боль в правой стопе](Condition-example-foot-pain.html) того же пациента, а не на визит и состояние другого пациента.
+
+[UZ Core Medication](StructureDefinition-uz-core-medication.html) больше не требует `identifier`. У каждого Medication должен быть идентификатор или код (инвариант `uzcore-med-1`), поэтому лекарство, назначенное по МНН, как в электронных рецептах DMED, можно передать только с кодом МНН или ATC, пока аптека не указала конкретный препарат.
 
 #### Несовместимые изменения
 

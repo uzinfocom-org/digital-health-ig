@@ -4,6 +4,12 @@
 
 [Composition hujjat turlari](CodeSystem-composition-type-cs.html): 399-son buyruqning 112-shakli - foliy kislotasi, 25-OH D vitamini va B12 vitaminiga IXLA tahlili uchun `emdoc-0010-0471` kodi qo'shildi.
 
+[Dori shakllari](CodeSystem-medication-doseform-cs.html): DMED elektron retseptining kodi bo'lmagan dori shakllari uchun `HRB101` dorivor o'simlik xomashyosi, `JEL101` dorivor jele, `KIT101` to'plam, `LOT101` losyon, `SHA101` dorivor shampun va `TEA101` dorivor o'simliklar yig'masi kodlari o'zbek, rus va ingliz tilidagi nomlari bilan qo'shildi.
+
+[MedicationRequest holati sabablari](ValueSet-medicationrequest-status-reason-vs.html) ga DMED elektron retseptini bekor qilishning ikki sababi uchun [tibbiy qarshi ko'rsatma va boshqa sabab](CodeSystem-medicationrequest-status-reason-local-cs.html) milliy kodlari o'zbek, rus va ingliz tilidagi nomlari bilan qo'shildi. HL7 da ularning hech biriga ekvivalent yo'q.
+
+[O'lchov birliklari xaritasi](ConceptMap-unit-of-measurement-cm.html): UCUM kodi bo'lmagan 30 ta birlik uchun UCUM kodlari qo'shildi, masalan xalqaro birlik `[iU]`, dozaga milligramm `mg/{dose}`, litrga gramm `g/L` va koloniya hosil qiluvchi birlik `[CFU]`.
+
 [UZ Core CarePlan](StructureDefinition-uz-core-careplan.html) qo'shildi - bemorga ma'lum davr uchun yordam rejasining umumiy profili, masalan hamshiraning uyga patronaj tashriflari, davolash kursi yoki mehnatga layoqatsizlik varaqasi holati. Muayyan stsenariy uchun qo'llanma undan meros oladi. Reja rejalashtirilgan tadbirlar uchun so'rovlarni birlashtiradi va bajarilganlarini qayd etuvchi hodisalarni bog'laydi. Uning `intent` elementi o'zbek va rus tarjimalari bilan [CarePlan maqsadlari](ValueSet-careplan-intent-vs.html) ga bog'langan. Namunalar: [yangi tug'ilgan chaqaloq patronaji rejasi](CarePlan-example-newborn-patronage-careplan.html) va vaqtinchalik `example-careplan` o'rnini egallagan [davolovchi massaj kursi](CarePlan-example-massage-careplan.html). Ularning mas'ullari - yangi [patronaj hamshirasi](PractitionerRole-example-patronage-nurse-role.html) va [vrach fizioterapevt](PractitionerRole-example-physiotherapist-role.html) namunalari; fizioterapevt [Procedure namunasini](Procedure-example-procedure.html) ham bajaradi.
 
 [UZ Core Device](StructureDefinition-uz-core-device.html) jismoniy tibbiy buyumni - kompyuter tomografi kabi shifoxona uskunasini yoki bachadon ichi spirali kabi alohida buyumni - uning SNOMED CT bo'yicha turi va toifasi, ishlab chiqaruvchisi, modeli, seriya va partiya raqamlari, holati va mavjudligi, shuningdek u tegishli bo'lgan tashkilot va joy bilan tavsiflaydi. Profil bilan birga HL7 ning buyum holati, mavjudlik holati, nom turi va toifa kodlarining hamda SNOMED CT kontratseptiv buyum turlarining o'zbekcha va ruscha tarjimalari qo'shildi. Profil sahifasida kirish qismi va Tez boshlash bo'limi mavjud.
@@ -20,11 +26,15 @@
 
 Kod tizimlari va qiymatlar to'plamlarining sarlavhalari va tavsiflari endi [modellashtirish qo'llanmasidagi](https://github.com/uzinfocom-org/digital-health-ig/blob/main/modelling-guidelines.md) nomlash shabloniga mos keladi: supplement `[Concept] translations`, qiymatlar to'plami esa `[Concept]` deb nomlanadi, sarlavhalarda "CodeSystem" yoki "ValueSet" kabi so'zlar endi yo'q. Kanonik URL, identifikatorlar va kodlar o'zgarmadi.
 
+[MedicationRequest holatlari tarjimalari](CodeSystem-medicationrequest-status-cs.html) endi `ended` ni ruschada «Истекло» deb ataydi, avvalgi «Завершено» `completed` bilan bir xil edi.
+
 [Procedure namunasi](Procedure-example-procedure.html) endi boshqa bemorning tashrifi va holati o'rniga xuddi shu bemorning [ambulator fizioterapiya tashrifi](Encounter-example-physiotherapy-encounter.html) va [o'ng oyoq panjasidagi og'riq](Condition-example-foot-pain.html) holatiga havola qiladi.
 
 [UZ Core Observation](StructureDefinition-uz-core-observation.html), [UZ Core Immunization](StructureDefinition-uz-core-immunization.html) va [UZ Core Procedure](StructureDefinition-uz-core-procedure.html) dagi `basedOn` endi istalgan CarePlan emas, UZ Core CarePlan ga havola qiladi.
 
 UZ Core profillaridagi Device ga barcha havolalar endi [UZ Core Device](StructureDefinition-uz-core-device.html) ga yo'naltirilgan: Observation, Procedure, Condition, AdverseEvent, Composition, QuestionnaireResponse, Group, MedicationAdministration, MedicationDispense, InventoryItem, SupplyRequest va SupplyDelivery.
+
+[UZ Core Medication](StructureDefinition-uz-core-medication.html) endi `identifier` ni talab qilmaydi. Har bir Medication da identifikator yoki kod bo'lishi shart (`uzcore-med-1` invarianti), shuning uchun INN bo'yicha tayinlangan dorini, masalan DMED elektron retseptlarida, dorixona aniq mahsulotni ko'rsatguncha faqat INN yoki ATC kodi bilan yuborish mumkin.
 
 #### Buzuvchi o'zgarishlar
 

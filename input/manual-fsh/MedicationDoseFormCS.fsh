@@ -2513,6 +2513,36 @@ Description: "Pharmaceutical dose forms (e.g., tablet, capsule, solution)."
 * #SLT102 "erituvchi"
   * ^designation[0].language = #ru
   * ^designation[=].value = "растворитель"
+* #HRB101 "dorivor o'simlik xomashyosi"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "сырьё растительное лекарственное"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "herbal substance"
+* #TEA101 "dorivor o'simliklar yig'masi"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "сбор лекарственный растительный"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "herbal tea"
+* #SHA101 "dorivor shampun"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "шампунь лекарственный"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "shampoo"
+* #LOT101 "losyon"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "лосьон"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "lotion"
+* #JEL101 "dorivor jele"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "желе лекарственное"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "jelly"
+* #KIT101 "to'plam"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "набор"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "kit"
 * #OTH101 "boshqa dori shakllari"
   * ^designation[0].language = #ru
   * ^designation[=].value = "другие лекарственные формы"

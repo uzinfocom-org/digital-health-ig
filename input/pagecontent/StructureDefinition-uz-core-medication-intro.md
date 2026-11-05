@@ -6,7 +6,7 @@ The elements below must always be present (mandatory) or must be supported when 
 
 #### Each UZ Core Medication Must Have
 
-The only mandatory element this profile adds is at least one identifier - the base Medication resource has no mandatory elements of its own. The identifier is sliced by `system`, and within each slice the `system` URI is fixed, so it is the URI that says which national identifier you are sending.
+Each UZ Core Medication has at least an identifier or a code (invariant `uzcore-med-1`) - the base Medication resource has no mandatory elements of its own. A product from the national registry carries its registry identifiers. A medicine prescribed by its international non-proprietary name (INN), as DMED e-prescriptions are, has no registry product yet and carries only the INN or ATC code; the pharmacy names the product when it dispenses it. The identifier is sliced by `system`, and within each slice the `system` URI is fixed, so it is the URI that says which national identifier you are sending.
 
 #### Each UZ Core Medication Must Support
 
@@ -49,7 +49,7 @@ The examples below go from the smallest instance the server will accept to a ful
 
 #### The smallest Medication you should send
 
-One `identifier` is the only element this profile makes mandatory. Every UZ Core resource must also name the profile it claims to conform to in `meta.profile` - that is how the server knows which rules to validate against. In practice a catalogue entry is useless without a `code` saying what the product is and a `status`, so send those too. This much already passes validation:
+A registered product is sent with at least one `identifier`; a medicine prescribed by INN may send only its `code`. Every UZ Core resource must also name the profile it claims to conform to in `meta.profile` - that is how the server knows which rules to validate against. In practice a catalogue entry is useless without a `code` saying what the product is and a `status`, so send those too. This much already passes validation:
 
 ```json
 {

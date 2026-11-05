@@ -8,7 +8,7 @@ Quyidagi elementlar har doim mavjud bo'lishi (majburiy) yoki ma'lumot mavjud bo'
 
 #### Har bir UZ Core Medication quyidagilarga ega bo'lishi shart
 
-Ushbu profil qo'shadigan yagona majburiy element - kamida bitta identifikator; bazaviy Medication resursining o'z majburiy elementlari yo'q. Identifikator `system` bo'yicha slayslarga bo'lingan va har bir slays ichida `system` URI qat'iy belgilangan, shuning uchun qaysi milliy identifikatorni yuborayotganingizni aynan URI aytadi.
+Har bir UZ Core Medication da kamida identifikator yoki kod bo'ladi (`uzcore-med-1` invarianti); bazaviy Medication resursining o'z majburiy elementlari yo'q. Milliy reyestrdagi mahsulot reyestr identifikatorlarini oladi. Xalqaro patentlanmagan nomi (INN) bo'yicha tayinlangan dori, masalan DMED elektron retseptlarida, hali reyestr mahsulotiga bog'lanmagan va faqat INN yoki ATC kodini oladi; aniq mahsulotni dorixona dori berishda ko'rsatadi. Identifikator `system` bo'yicha slayslarga bo'lingan va har bir slays ichida `system` URI qat'iy belgilangan, shuning uchun qaysi milliy identifikatorni yuborayotganingizni aynan URI aytadi.
 
 #### Har bir UZ Core Medication quyidagilarni qo'llab-quvvatlashi shart
 
@@ -51,7 +51,7 @@ Quyidagi misollar serverning qabul qila oladigan eng kichik nusxasidan to to'liq
 
 #### Yuborishingiz kerak bo'lgan eng kichik Medication
 
-Bitta `identifier` - ushbu profil majburiy qiladigan yagona element. Har bir UZ Core resursi shuningdek o'zi muvofiq deb da'vo qilayotgan profilni `meta.profile` da ko'rsatishi shart - server qaysi qoidalar bo'yicha validatsiya qilishni shu orqali biladi. Amalda katalog yozuvi mahsulot nima ekanligini aytuvchi `code` va `status` siz foydasiz, shuning uchun ularni ham yuboring. Shuning o'zi allaqachon validatsiyadan o'tadi:
+Ro'yxatdan o'tgan mahsulot kamida bitta `identifier` bilan yuboriladi; INN bo'yicha tayinlangan dori faqat `code` ni yuborishi mumkin. Har bir UZ Core resursi shuningdek o'zi muvofiq deb da'vo qilayotgan profilni `meta.profile` da ko'rsatishi shart - server qaysi qoidalar bo'yicha validatsiya qilishni shu orqali biladi. Amalda katalog yozuvi mahsulot nima ekanligini aytuvchi `code` va `status` siz foydasiz, shuning uchun ularni ham yuboring. Shuning o'zi allaqachon validatsiyadan o'tadi:
 
 ```json
 {

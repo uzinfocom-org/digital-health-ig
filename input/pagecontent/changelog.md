@@ -6,6 +6,12 @@ Added [UZ Core CarePlan](StructureDefinition-uz-core-careplan.html), a general p
 
 [Composition types](CodeSystem-composition-type-cs.html) add `emdoc-0010-0471` for Order No. 399 form 112, a laboratory analysis of folic acid, 25-OH vitamin D and vitamin B12.
 
+[Medication dose form](CodeSystem-medication-doseform-cs.html) adds `HRB101` herbal substance, `JEL101` jelly, `KIT101` kit, `LOT101` lotion, `SHA101` medicated shampoo and `TEA101` herbal tea, with Uzbek, Russian and English names, for DMED e-prescription dose forms that had no code.
+
+[MedicationRequest status reason](ValueSet-medicationrequest-status-reason-vs.html) adds national codes [medical contraindication and other](CodeSystem-medicationrequest-status-reason-local-cs.html), with Uzbek, Russian and English names, for the two reasons a DMED e-prescription is cancelled with. HL7 has no equivalent for either.
+
+[Unit of measurement map](ConceptMap-unit-of-measurement-cm.html) adds UCUM targets for 30 units that had none, such as international unit `[iU]`, milligram per dose `mg/{dose}`, gram per litre `g/L` and colony-forming unit `[CFU]`.
+
 [UZ Core Device](StructureDefinition-uz-core-device.html) describes a physical medical device - hospital equipment such as a CT scanner, or a single item such as an intrauterine device - with its SNOMED CT type and category, manufacturer, model, serial and lot numbers, status and availability, and the organization and location it belongs to. Uzbek and Russian translations of the HL7 device status, availability status, name type and category codes, and of the SNOMED CT contraceptive device types, come with it. The profile page has the narrative intro and Quick Start.
 
 [UZ Core DeviceUsage](StructureDefinition-uz-core-deviceusage.html) records that a patient uses, has used or will use a device, such as a wheelchair or an implanted venous access port. The device is a SNOMED CT concept or a reference to a [UZ Core Device](StructureDefinition-uz-core-device.html). It records who reported the use, when it started and ended, the setting, how regularly the device is actually used and why. Uzbek and Russian translations of the HL7 device usage status and adherence codes come with it. The profile page has the narrative intro and Quick Start.
@@ -20,11 +26,15 @@ Added [UZ Core CarePlan](StructureDefinition-uz-core-careplan.html), a general p
 
 Every reference to a Device in UZ Core profiles now targets [UZ Core Device](StructureDefinition-uz-core-device.html): Observation, Procedure, Condition, AdverseEvent, Composition, QuestionnaireResponse, Group, MedicationAdministration, MedicationDispense, InventoryItem, SupplyRequest and SupplyDelivery.
 
+[MedicationRequest status translations](CodeSystem-medicationrequest-status-cs.html) now give `ended` the Russian name «Истекло» instead of «Завершено», which duplicated `completed`.
+
 The [FHIR types supplement](CodeSystem-fhir-types-cs.html) gave each resource type a translation of its definition in place of its name. Each type now has an Uzbek and a Russian name, such as "Bemor" and "Пациент" for `Patient`, marked `preferredForLanguage`, so `$lookup` with `displayLanguage` returns the name. The translated definitions remain as designations with the use SNOMED CT `900000000000550004` Definition.
 
 The [Procedure example](Procedure-example-procedure.html) now points at an [outpatient physiotherapy visit](Encounter-example-physiotherapy-encounter.html) and a [right foot pain](Condition-example-foot-pain.html) condition of the same patient, in place of another patient's encounter and condition.
 
 Titles and descriptions of code systems and value sets now follow the naming pattern in the [modelling guidelines](https://github.com/uzinfocom-org/digital-health-ig/blob/main/modelling-guidelines.md): a supplement is `[Concept] translations`, a value set is `[Concept]`, and titles no longer carry words such as "CodeSystem" or "ValueSet". Canonical URLs, ids and codes are unchanged.
+
+[UZ Core Medication](StructureDefinition-uz-core-medication.html) no longer requires an `identifier`. Each Medication must have an identifier or a code (invariant `uzcore-med-1`), so a medicine prescribed by its INN, as in DMED e-prescriptions, can be sent with only its INN or ATC code before the pharmacy names the product.
 
 #### Breaking changes
 
