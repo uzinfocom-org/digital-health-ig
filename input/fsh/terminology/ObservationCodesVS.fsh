@@ -6,6 +6,7 @@ Description: "Codes for observations, allowing use of LOINC, local laboratory co
 * ^experimental = true
 
 * include codes from system lab-pan-cs
+* include codes from system observation-epicris-codes-cs
 * include codes from system $loinc
 
 * include codes from system $sct where concept is-a #363787002 "Observable entity (observable entity)"
