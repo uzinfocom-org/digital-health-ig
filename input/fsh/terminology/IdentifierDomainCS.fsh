@@ -95,6 +95,15 @@ Description: """
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
     * ^property[=].valueCoding = $iso-3166#UZ
+    * #https://dhp.uz/fhir/core/sid/doc/uz/dmed/preferential-referral "ChargeItem identifiers assigned by healthcare information systems in Uzbekistan"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCoding = $identifier-type#PLAC
+      * ^property[+].code = #country
+      * ^property[=].valueCoding = $iso-3166#UZ
+      * ^property[+].code = #naming-system
+      * ^property[=].valueString = Canonical(uzb-charge-item-identifier)
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
     * #https://dhp.uz/fhir/core/sid/doc/uz/supply-request "Supply request numbers assigned by requesting hospitals in Uzbekistan"
       * ^property[0].code = #idtype
       * ^property[=].valueCoding = $identifier-type#PLAC

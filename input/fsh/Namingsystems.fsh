@@ -768,3 +768,22 @@ Usage: #definition
 * uniqueId[0].type = #uri
 * uniqueId[=].value = $inventory-item-number
 * uniqueId[=].preferred = true
+
+Instance: uzb-charge-item-identifier
+InstanceOf: NamingSystem
+Description: "ChargeItem identifiers used in Uzbekistan"
+Usage: #definition
+* url = "https://terminology.dhp.uz/fhir/core/NamingSystem/uzb-charge-item-identifier"
+* name = "UzbekistanChargeItemIdentifier"
+* status = #active
+* kind = #identifier
+* date = "2026-11-06"
+* publisher = "Uzinfocom"
+* responsible = "Ministry of Health of the Republic of Uzbekistan"
+* type = $identifier-type#PLAC "Placer Identifier"
+* description = "Naming system for ChargeItem identifiers assigned by healthcare information systems in Uzbekistan."
+* jurisdiction = urn:iso:std:iso:3166#UZ "Uzbekistan"
+* usage = "Used in ChargeItem.identifier to uniquely identify a charge item representing the actual cost of a medication dispensed to a patient."
+* uniqueId[0].type = #uri
+* uniqueId[=].value = "https://dhp.uz/fhir/core/sid/doc/uz/dmed/preferential-referral"
+* uniqueId[=].preferred = true

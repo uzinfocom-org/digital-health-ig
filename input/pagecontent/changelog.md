@@ -30,6 +30,10 @@ Titles and descriptions of code systems and value sets now follow the naming pat
 
 The request resource types and participant resource type supplements, `https://terminology.dhp.uz/fhir/core/CodeSystem/request-resource-types-cs` and `https://terminology.dhp.uz/fhir/core/CodeSystem/participant-resource-type-cs`, are removed. They translated the same `http://hl7.org/fhir/fhir-types` codes as the FHIR types supplement, so those codes had two Russian and two Uzbek designations. [Request resource types](ValueSet-request-resource-types-vs.html) and [Resource types](ValueSet-resource-type-vs.html) now use the [FHIR types supplement](CodeSystem-fhir-types-cs.html). Systems that load supplements by URL switch to `https://terminology.dhp.uz/fhir/core/CodeSystem/fhir-types-cs`.
 
+#### Documentation
+
+[UZ Core ChargeItem](StructureDefinition-uz-core-charge-item.html) now has an introduction with minimal and medication-dispensing examples, plus a Quick Start for its API interactions.
+
 ### Version 0.12.0
 
 #### Added

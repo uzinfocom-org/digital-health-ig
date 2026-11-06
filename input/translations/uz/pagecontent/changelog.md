@@ -30,6 +30,10 @@ UZ Core profillaridagi Device ga barcha havolalar endi [UZ Core Device](Structur
 
 So'rov resurs turlari va ishtirokchi resurs turi supplementlari, `https://terminology.dhp.uz/fhir/core/CodeSystem/request-resource-types-cs` va `https://terminology.dhp.uz/fhir/core/CodeSystem/participant-resource-type-cs`, olib tashlandi. Ular FHIR turlari supplementi bilan bir xil `http://hl7.org/fhir/fhir-types` kodlarini tarjima qilardi, shuning uchun bu kodlarda ikkitadan ruscha va o'zbekcha belgilash bor edi. [So'rov resurs turlari](ValueSet-request-resource-types-vs.html) va [Resurs turlari](ValueSet-resource-type-vs.html) endi [FHIR turlari supplementi](CodeSystem-fhir-types-cs.html)dan foydalanadi. Supplementlarni URL bo'yicha yuklaydigan tizimlar `https://terminology.dhp.uz/fhir/core/CodeSystem/fhir-types-cs`ga o'tadi.
 
+#### Hujjatlashtirish
+
+[UZ Core ChargeItem](StructureDefinition-uz-core-charge-item.html) sahifasiga minimal namuna va dori berish uchun hisob yozuvi namunasi bo‘lgan kirish qismi hamda API uchun Tez boshlash qo‘shildi.
+
 ### Versiya 0.12.0
 
 #### Qo'shildi
