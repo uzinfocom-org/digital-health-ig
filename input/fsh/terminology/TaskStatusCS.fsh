@@ -1,7 +1,7 @@
 CodeSystem: TaskStatusCS
 Id: task-status-cs
-Title: "Task Status codes translations"
-Description: "Codes identifying the lifecycle stage of a task"
+Title: "Task status translations"
+Description: "Task status supplement with translations in Uzbek and Russian"
 * insert SupplementCodeSystem(task-status-cs, $task-status, 5.0.0)
 
 * #draft "Draft"

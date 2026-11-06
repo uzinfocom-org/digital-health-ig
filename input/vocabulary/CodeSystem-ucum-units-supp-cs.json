@@ -4,8 +4,8 @@
   "content": "supplement",
   "name": "UCUMUnitsSupplementCS",
   "id": "ucum-units-supp-cs",
-  "title": "UCUM Units Supplement Code System",
-  "description": "A selected list of UCUM (Unified Code for Units of Measure) units used in laboratory and clinical results. Each concept.code value conforms to the official UCUM syntax defined at http://unitsofmeasure.org. The primary display text is provided in Uzbek, while English and Russian translations are included as designation entries. ",
+  "title": "UCUM unit translations",
+  "description": "UCUM unit supplement with translations in Uzbek and Russian",
   "url": "https://terminology.dhp.uz/fhir/core/CodeSystem/ucum-units-supp-cs",
   "concept": [
     {

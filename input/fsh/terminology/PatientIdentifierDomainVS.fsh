@@ -1,6 +1,6 @@
 ValueSet: PatientIdentifierDomainVS
 Id: patient-identifier-domain-vs
-Title: "Patient Identifier Domain Value Set"
+Title: "Patient identifier domain"
 Description: "Allowed codes for patient identification domains (international passport numbers, drivers licenses) in Uzbekistan's health information exchange. Used in the [UZ Core Patient](StructureDefinition-uz-core-patient.html) profile."
 * ^url = "https://terminology.dhp.uz/fhir/core/ValueSet/patient-identifier-domain-vs"
 * ^experimental = true

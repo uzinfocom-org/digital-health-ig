@@ -1,7 +1,7 @@
 CodeSystem: FMStatusCS
 Id: fm-status-cs
-Title: "Financial Management Status Code System"
-Description: "Financial Management Status codes with Uzbek and Russian translations"
+Title: "Financial management status translations"
+Description: "Financial management status supplement with translations in Uzbek and Russian"
 
 * insert SupplementCodeSystemDraft(fm-status-cs, $fm-status, 5.0.0)
 

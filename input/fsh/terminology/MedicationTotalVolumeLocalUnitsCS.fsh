@@ -1,7 +1,7 @@
 CodeSystem: MedicationTotalVolumeLocalUnitsCS
 Id: medication-total-volume-local-units-cs
-Title: "Medication Total Volume Units"
-Description: "Local code system for representing measurement units of total medication volume in Uzbekistan"
+Title: "Medication total volume local units"
+Description: "Local measurement units of total medication volume in Uzbekistan"
 * insert OriginalCodeSystemDraft(medication-total-volume-local-units-cs)
 
 * #grey "grey"

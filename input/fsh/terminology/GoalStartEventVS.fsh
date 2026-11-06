@@ -1,7 +1,7 @@
 ValueSet: GoalStartEventVS
 Id: goal-start-event-vs
-Title: "Goal Start Event VS"
-Description: "Value Set for Goal Start Event"
+Title: "Goal start event"
+Description: "Goal start events"
 
 * ^url = "https://terminology.dhp.uz/fhir/core/ValueSet/goal-start-event-vs"
 * ^experimental = true

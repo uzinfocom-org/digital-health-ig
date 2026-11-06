@@ -1,6 +1,6 @@
 CodeSystem: NursingVisitPurposeCS
 Id: nursing-visit-purpose-cs
-Title: "Nursing Visit Purposes"
+Title: "Nursing visit purpose"
 Description: "National purposes of a Nursing home visit that have no equivalent SNOMED CT concept. They are service codes for ServiceRequest, not screening programs; the other Nursing purposes use SNOMED CT or the screening and home visit codes."
 * insert OriginalCodeSystemDraft(nursing-visit-purpose-cs)
 

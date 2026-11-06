@@ -1,6 +1,6 @@
 ValueSet: JurisdictionVS
 Id: jurisdiction-vs
-Title: "Uzbekistan Jurisdictions"
+Title: "Uzbekistan jurisdiction"
 Description: "Where in Uzbekistan an artifact applies - the whole country for national artifacts, or one of its regions for regional ones"
 * ^url = "https://terminology.dhp.uz/fhir/core/ValueSet/jurisdiction-vs"
 * ^experimental = true

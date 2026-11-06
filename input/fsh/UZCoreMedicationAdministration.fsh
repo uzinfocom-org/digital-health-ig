@@ -45,7 +45,7 @@ Description: "Uzbekistan Core MedicationAdministration profile, used to record t
 * performer.function ^short = "The type of involvement of this performer (e.g. performer, verifier, witness)."
 * performer.function from MedicationAdministrationPerformerFunctionVS (preferred)
 * performer.actor MS
-* performer.actor only CodeableReference(UZCorePractitioner or UZCorePractitionerRole or UZCorePatient or UZCoreRelatedPerson or Device)
+* performer.actor only CodeableReference(UZCorePractitioner or UZCorePractitionerRole or UZCorePatient or UZCoreRelatedPerson or UZCoreDevice)
 * performer.actor ^short = "The specific individual or device that performed the administration."
 
 * reason MS

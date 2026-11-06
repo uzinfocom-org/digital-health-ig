@@ -1,7 +1,7 @@
 CodeSystem: ScreeningSctCS
 Id: screening-sct-cs
-Title: "Screening and home visits translations"
-Description: "Screening and home visits supplement with translations in Uzbek and Russian"
+Title: "Screening and home visit translations"
+Description: "Screening and home visit supplement with translations in Uzbek and Russian"
 * insert SupplementCodeSystemDraft(screening-sct-cs, $sct, 2026.1.0)
 
 * #171223006 "Ischemic heart disease screening"

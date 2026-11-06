@@ -53,6 +53,8 @@ Description: "Uzbekistan Core Practitioner profile, used to define healthcare pr
   * code.text MS
     * ^short = "Specialty, qualification category and medical role as free text"
     * ^comment = "Until these are coded, describe the certificate in plain text, e.g. 'Psixiatriya, oliy toifa, shifokor'. Add translations to other languages with the translation extension."
+    * extension contains $translation-extension named translation 0..* MS
+    * extension[translation] ^short = "Specialty, qualification category and medical role in other languages"
   * period
     * ^short = "Date of issue (start) and end of validity (end)"
 
@@ -133,3 +135,37 @@ Usage: #example
 * active = true
 * gender = #other
 * gender.extension[gender-other].valueCoding = GenderOtherCS#regis0007.00005 "Jinsni erkakka o'zgartirdi"
+
+Instance: example-patronage-nurse
+InstanceOf: UZCorePractitioner
+Title: "Example UZ Core Practitioner - Patronage Nurse"
+Description: "A family polyclinic patronage nurse who visits newborns at home"
+Usage: #example
+* language = #uz
+* identifier[nationalId]
+  * value = "41505891234567"
+* active = true
+* name
+  * use = #official
+  * text = "Yusupova Malika Rustamovna"
+  * family = "Yusupova"
+  * given = "Malika"
+  * suffix = "Rustamovna"
+* gender = #female
+
+Instance: example-physiotherapist
+InstanceOf: UZCorePractitioner
+Title: "Example UZ Core Practitioner - Physiotherapist"
+Description: "A physiotherapy doctor who plans and carries out therapeutic massage courses"
+Usage: #example
+* language = #uz
+* identifier[nationalId]
+  * value = "31203851234568"
+* active = true
+* name
+  * use = #official
+  * text = "Ivanov Pavel Sergeyevich"
+  * family = "Ivanov"
+  * given = "Pavel"
+  * suffix = "Sergeyevich"
+* gender = #male

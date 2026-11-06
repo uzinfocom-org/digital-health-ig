@@ -1,9 +1,12 @@
 ValueSet: EncounterTypeVS
 Id: encounter-type-vs
-Title: "Encounter type translations"
-Description: "Defines encounter type codes with English and Russian translations"
+Title: "Encounter type"
+Description: "Encounter types"
 * ^url = "https://terminology.dhp.uz/fhir/core/ValueSet/encounter-type-vs"
 * ^experimental = true
+
+* ^extension[0].url = $valueset-supplement
+* ^extension[=].valueCanonical = Canonical(EncounterTypeAmbulanceSCTCS)
 
 * include encounter-type-cs#mserv-0001-00001
 * include encounter-type-cs#mserv-0001-00002
@@ -14,3 +17,7 @@ Description: "Defines encounter type codes with English and Russian translations
 * include encounter-type-cs#mserv-0001-00007
 * include encounter-type-cs#mserv-0001-00008
 * include encounter-type-cs#mserv-0001-00009
+
+* include codes from system encounter-type-ambulance-cs
+
+* include $sct#715537001 "Transportation by ambulance"

@@ -1,7 +1,7 @@
 CodeSystem: VersionAlgorithmCS
 Id: version-algorithm-cs
-Title: "Version algorithm types"
-Description: "Version algorithm types in Uzbekistan"
+Title: "Version algorithm translations"
+Description: "Version algorithm supplement with translations in Uzbek and Russian"
 * insert SupplementCodeSystemDraft(version-algorithm-cs, $version-algorithms, 5.0.0)
 
 * #semver

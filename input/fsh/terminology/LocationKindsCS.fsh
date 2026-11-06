@@ -1,7 +1,7 @@
 CodeSystem: LocationKindsCS
 Id: location-kinds-cs
-Title: "Location Kinds"
-Description: "Defines the kind of Location in Uzbek and Russian"
+Title: "Location kind"
+Description: "Location kinds in Uzbekistan"
 * insert OriginalCodeSystemDraft(location-kinds-cs)
 * #Branch "Bo'limi"
   * ^designation[0].language = #ru

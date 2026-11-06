@@ -1,7 +1,7 @@
 CodeSystem: UCUMUnitsSupplementCS
 Id: ucum-units-supp-cs
-Title: "UCUM Units Supplement Code System"
-Description: "A selected list of UCUM (Unified Code for Units of Measure) units used in laboratory and clinical results. Each concept.code value conforms to the official UCUM syntax defined at http://unitsofmeasure.org. The primary display text is provided in Uzbek, while English and Russian translations are included as designation entries. "
+Title: "UCUM unit translations"
+Description: "UCUM unit supplement with translations in Uzbek and Russian"
 * insert SupplementCodeSystemDraft(ucum-units-supp-cs, $ucum, 2.2.0)
 
 * #"10.L/min"

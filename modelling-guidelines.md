@@ -244,8 +244,6 @@ https://dhp.uz/fhir/core/sid/{namespace}/{country}/{type}[/subtype]
 // UZ Core профили существуют — указываем их
 * performer only Reference(UZCorePractitioner or UZCorePractitionerRole or UZCoreOrganization)
 * encounter only Reference(UZCoreEncounter)
-// Для CarePlan, MedicationRequest и ServiceRequest национальных профилей нет — оставляем базовые ресурсы
-* basedOn only Reference(CarePlan or MedicationRequest or ServiceRequest)
 ```
 
 ## 5) Терминологические артефакты
@@ -363,7 +361,7 @@ FHIR технически допускает указывать версию Cod
 ```fsh
 CodeSystem: DiagnosisTypeCS
 Id: diagnosis-type-cs
-Title: "Diagnosis Types"
+Title: "Diagnosis type"
 Description: "Diagnosis types in Uzbekistan"
 * insert OriginalCodeSystemDraft(diagnosis-type-cs)
 
@@ -406,7 +404,8 @@ Description: "Clinical status supplement with translations in Uzbek and Russian"
 ```fsh
 ValueSet: ClinicalStatusVS
 Id: clinical-status-vs
-Title: "Clinical Status"
+Title: "Clinical status"
+Description: "Clinical statuses"
 * ^url = "https://terminology.dhp.uz/fhir/core/ValueSet/clinical-status-vs"
 * ^status = #active
 * ^extension[0].url = $valueset-supplement
@@ -418,6 +417,22 @@ Title: "Clinical Status"
 **Важно:**
 - Расширение `valueset-supplement` необходимо только для ValueSets, которые включают коды из supplement CodeSystems. Для ValueSets с только оригинальными кодами это расширение не требуется.
 - При использовании supplement CodeSystems в ValueSet необходимо включать коды из **оригинальной** CodeSystem (например, `$condition-clinical`), а не из supplement CodeSystem. Расширение `valueset-supplement` указывает на supplement, который предоставляет переводы к оригинальным кодам.
+
+**Title и Description supplement и ValueSet:**
+
+Supplement и ValueSet над ним называют одно и то же понятие, поэтому их Title и Description строятся по одному шаблону:
+
+| Артефакт | Title | Description |
+|---|---|---|
+| Supplement CodeSystem | `"[Понятие] translations"` | `"[Понятие] supplement with translations in Uzbek and Russian"` |
+| ValueSet | `"[Понятие]"` | `"[Понятие во множественном числе]"` |
+
+Например, для категорий изделий: `"Device category translations"` / `"Device category supplement with translations in Uzbek and Russian"` и `"Device category"` / `"Device categories"`.
+
+- Пишите Title с заглавной буквы только в первом слове (sentence case); имена FHIR-ресурсов (например, `AdverseEvent`) пишутся как в спецификации.
+- Не добавляйте к Title тип артефакта: `"Code System"`, `"Value Set"`, `"CS"`, `"VS"`, `"Supplement CodeSystem"`. Тип уже виден на странице артефакта.
+- Не перечисляйте коды в Description: список кодов показан на странице артефакта и устаревает при изменении системы.
+- Существующие артефакты с другими Title приводите к шаблону, когда меняете их. Title и Description не входят в канонический URL, поэтому их изменение ничего не ломает.
 
 ### 5.4 Почему и как создавать Extensions
 
@@ -557,7 +572,7 @@ Description: "Example instance of a headache condition documented during a patie
 **Структура intro:**
 
 1. Абзац-резюме: что представляет ресурс, какие ресурсы на него ссылаются (со ссылками на их страницы). Для справочных сущностей (Patient, Organization, Practitioner, Medication) - совет искать существующий ресурс по идентификатору перед созданием нового.
-2. `### Mandatory and Must Support data elements` со стандартным вводным абзацем (скопируйте из существующего intro), затем `#### Each UZ Core <Resource> Must Have` прозой и `#### Each UZ Core <Resource> Must Support` списком - одна строка на элемент или группу, со ссылками на ValueSet и профили. В Must Have учитывайте и обязательные элементы базового ресурса R5, не только добавленные профилем.
+2. `### Mandatory and Must Support data elements` со стандартным вводным абзацем (скопируйте из существующего intro), затем `#### Each UZ Core <Resource> Must Have` прозой и `#### Each UZ Core <Resource> Must Support` списком - одна строка на элемент или группу: простыми словами, что в нём хранится, с основными значениями в скобках, где это полезно, например: «статус (active / suspended / inactive)». Связки не перечисляйте и на ValueSet не ссылайтесь - их показывает формальный профиль. В Must Have учитывайте и обязательные элементы базового ресурса R5, не только добавленные профилем.
 3. Для справочных сущностей - короткий раздел `### Finding an existing <Resource> {#finding}` с примерами поиска по идентификатору и коду.
 4. `### Building the JSON, step by step`: три-четыре примера от минимального валидного экземпляра до полного, после каждого - короткое пояснение (связки, типы Reference / CodeableReference, срезы). Ссылки на полные эталонные Instance. Если `identifier` нарезан - таблица срезов `{#identifier-slices}` с URI `system`.
 5. Заключительная строка со ссылкой на `[Quick Start](#quick-start)`.
@@ -575,7 +590,7 @@ Description: "Example instance of a headache condition documented during a patie
 - Используйте только параметры поиска из CapabilityStatement DHP.
 - Не повторяйте одно правило в нескольких местах страницы.
 - RU и UZ копии обоих фрагментов кладите в `input/translations/<lang>/pagecontent/` под тем же именем файла, с баннером машинного перевода в начале. Блоки кода и JSON идентичны английским. Якоря `{#quick-start}`, `{#finding}`, `{#identifier-slices}` проставляйте явно - переведённые заголовки их не генерируют.
-- Добавьте строку в changelog.
+- Добавьте запись в changelog (en, ru, uz) на её место в алфавитном порядке внутри категории, а не в конец - см. `AGENTS.md`.
 
 ## 6) Переводы и локализация
 
