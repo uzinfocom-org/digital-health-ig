@@ -744,7 +744,7 @@ Usage: #definition
 * date = "2026-10-08"
 * publisher = "Uzinfocom"
 * responsible = "Ministry of Health of the Republic of Uzbekistan"
-* description = "Naming system for specialist certificates that the Ministry of Health of the Republic of Uzbekistan issues to healthcare professionals. The identifier value is the certificate series followed by its number, without separators (e.g. CA008815)."
+* description = "Naming system for specialist certificates that the Ministry of Health of the Republic of Uzbekistan issues to healthcare professionals. The identifier value is the certificate series followed by its number, without separators (e.g. CA123456)."
 * jurisdiction = urn:iso:std:iso:3166#UZ "Uzbekistan"
 * usage = "Used in Practitioner.qualification.identifier to identify the specialist certificate of a healthcare professional."
 * uniqueId[0].type = #uri
