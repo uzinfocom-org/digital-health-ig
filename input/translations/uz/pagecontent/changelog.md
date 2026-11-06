@@ -20,6 +20,8 @@
 
 Kod tizimlari va qiymatlar to'plamlarining sarlavhalari va tavsiflari endi [modellashtirish qo'llanmasidagi](https://github.com/uzinfocom-org/digital-health-ig/blob/main/modelling-guidelines.md) nomlash shabloniga mos keladi: supplement `[Concept] translations`, qiymatlar to'plami esa `[Concept]` deb nomlanadi, sarlavhalarda "CodeSystem" yoki "ValueSet" kabi so'zlar endi yo'q. Kanonik URL, identifikatorlar va kodlar o'zgarmadi.
 
+[Practitioner namunasi](Practitioner-example-practitioner.html) va mutaxassis sertifikati namunalarida endi o'ylab topilgan PINFL, sertifikat raqami va sanalar ishlatiladi.
+
 [Procedure namunasi](Procedure-example-procedure.html) endi boshqa bemorning tashrifi va holati o'rniga xuddi shu bemorning [ambulator fizioterapiya tashrifi](Encounter-example-physiotherapy-encounter.html) va [o'ng oyoq panjasidagi og'riq](Condition-example-foot-pain.html) holatiga havola qiladi.
 
 [UZ Core Observation](StructureDefinition-uz-core-observation.html), [UZ Core Immunization](StructureDefinition-uz-core-immunization.html) va [UZ Core Procedure](StructureDefinition-uz-core-procedure.html) dagi `basedOn` endi istalgan CarePlan emas, UZ Core CarePlan ga havola qiladi.
@@ -62,7 +64,7 @@ Nursing yo'llanmalari SNOMED CT `439708006` Home visit toifasi bilan belgilanadi
 
 #### Buzuvchi o'zgarishlar
 
-[Mutaxassis sertifikati](NamingSystem-uzb-specialist-certificate.html) identifikator tizimi hujjatlar nomlar fazosidan tibbiyot xodimlari nomlar fazosiga ko'chirildi, chunki sertifikat hujjatni emas, balki mutaxassisning malakasini identifikatsiya qiladi: `https://dhp.uz/fhir/core/sid/doc/uz/specialist-certificate` o'rniga endi `https://dhp.uz/fhir/core/sid/pro/uz/specialist-certificate`. `Practitioner.qualification.identifier` yuboruvchilar yangi tizimga o'tadi; qiymat formati (seriya va raqam ajratuvchisiz, masalan `CA008815`) o'zgarmaydi.
+[Mutaxassis sertifikati](NamingSystem-uzb-specialist-certificate.html) identifikator tizimi hujjatlar nomlar fazosidan tibbiyot xodimlari nomlar fazosiga ko'chirildi, chunki sertifikat hujjatni emas, balki mutaxassisning malakasini identifikatsiya qiladi: `https://dhp.uz/fhir/core/sid/doc/uz/specialist-certificate` o'rniga endi `https://dhp.uz/fhir/core/sid/pro/uz/specialist-certificate`. `Practitioner.qualification.identifier` yuboruvchilar yangi tizimga o'tadi; qiymat formati (seriya va raqam ajratuvchisiz, masalan `CA123456`) o'zgarmaydi.
 
 ### Versiya 0.11.1
 
