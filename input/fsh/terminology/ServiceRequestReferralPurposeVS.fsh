@@ -1,6 +1,6 @@
 ValueSet: ServiceRequestReferralPurposeVS
 Id: service-request-referral-purpose-vs
-Title: "Service Request Referral Purpose Codes ValueSet"
+Title: "Service Request Referral Purpose"
 Description: "ValueSet for Service Request referral purpose codes used in Uzbekistan healthcare workflow."
 * ^url = "https://terminology.dhp.uz/fhir/core/ValueSet/service-request-referral-purpose-vs"
 * ^experimental = true

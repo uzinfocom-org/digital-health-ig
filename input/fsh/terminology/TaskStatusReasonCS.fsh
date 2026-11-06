@@ -33,3 +33,32 @@ Description: "Task status reason codes in Uzbekistan"
   * ^designation[=].value = "Другое"
   * ^designation[+].language = #en
   * ^designation[=].value = "Other"
+* #reason-0001-00007 "Belgilangan muddatda shifoxonaga yotish uchun kela olmaydi"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Не сможет прибыть на госпитализацию в установленный срок"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Unable to be admitted to the hospital within the scheduled timeframe"
+
+* #reason-0001-00008 "Boshqa tibbiyot tashkilotida davolanishni rejalashtirmoqda"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Планирует пройти лечение в другой медицинской организации"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Plans to receive treatment at another healthcare facility"
+
+* #reason-0001-00009 "Taklif etilgan davolanishga rozi emas"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Не согласен с предложенным лечением"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Does not agree with the proposed treatment"
+
+* #reason-0001-00010 "Endi davolanishga ehtiyoji yo‘q"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Больше не нуждается в лечении"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "No longer requires treatment"
+
+* #reason-0001-00011 "Davolanishga imkon bermaydigan shaxsiy holatlar"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Личные обстоятельства, не позволяющие пройти лечение"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Personal circumstances preventing treatment"

@@ -1,6 +1,6 @@
 CodeSystem: ServiceRequestReferralPurposeCS
 Id: service-request-referral-purpose-cs
-Title: "Service Request Referral Purpose Code System"
+Title: "Service Request Referral Purpose"
 Description: "Code system representing the purpose of a referral in the Uzbekistan State Health Insurance System workflow process."
 * insert OriginalCodeSystemDraft(service-request-referral-purpose-cs)
 

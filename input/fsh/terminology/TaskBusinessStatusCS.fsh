@@ -100,3 +100,8 @@ Description: "Uzbekistan national codes for business-level statuses of tasks in 
   * ^designation[=].value = "Госпитализирован"
   * ^designation[+].language = #en
   * ^designation[=].value = "Hospitalized"
+* #bstatus-0001-00008 "Davolanishdan bosh tortish"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Отказ от лечения"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Refusal of treatment"

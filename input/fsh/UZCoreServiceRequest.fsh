@@ -24,7 +24,7 @@ Description: "Uzbekistan Core ServiceRequest profile, used to represent a reques
 * category ^slicing.ordered = false
 * category contains
     dhpCategory 0..1 MS and
-    referralPurpose 0..1 MS
+    referralPurpose 0..* MS
 * category[dhpCategory] from ServiceRequestCategoriesVS (required)
 * category[dhpCategory] ^short = "National category of the service being requested"
 * category[referralPurpose] from ServiceRequestReferralPurposeVS (required)
