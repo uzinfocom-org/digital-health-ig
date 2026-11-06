@@ -56,7 +56,7 @@ Usage: #example
 * quantity
   * value = 10
   * unit = "dona"
-  * system = "https://terminology.dhp.uz/fhir/core/CodeSystem/medication-total-volume-local-units-cs"
+  * system = $medication-total-volume-local-units
   * code = #piece
 
 * totalPriceComponent.type = #base
