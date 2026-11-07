@@ -1,5 +1,5 @@
 {
-  "date": "2026-10-25T10:53:07+00:00",
+  "date": "2026-11-07T12:32:26+00:00",
   "fhirVersion": "5.0.0",
   "format": [
     "application/fhir+json",
@@ -70,6 +70,10 @@
             {
               "definition": "https://dhp.uz/fhir/core/OperationDefinition/patient-relate",
               "name": "relate"
+            },
+            {
+              "definition": "https://dhp.uz/fhir/core/OperationDefinition/patient-screening-evaluate",
+              "name": "screening-evaluate"
             }
           ],
           "searchParam": [
@@ -2296,202 +2300,6 @@
               "type": "token"
             },
             {
-              "documentation": "expression: ServiceRequest.authoredOn\nsubtype: dateTime",
-              "name": "authored",
-              "type": "date"
-            },
-            {
-              "documentation": "expression: ServiceRequest.basedOn",
-              "name": "based-on",
-              "type": "reference"
-            },
-            {
-              "documentation": "expression: ServiceRequest.bodySite\nsubtype: CodeableConcept",
-              "name": "body-site",
-              "type": "token"
-            },
-            {
-              "documentation": "expression: ServiceRequest.bodyStructure",
-              "name": "body-structure",
-              "type": "reference"
-            },
-            {
-              "documentation": "expression: ServiceRequest.category\nsubtype: CodeableConcept",
-              "name": "category",
-              "type": "token"
-            },
-            {
-              "documentation": "expression: ServiceRequest.code.concept\nsubtype: CodeableConcept",
-              "name": "code-concept",
-              "type": "token"
-            },
-            {
-              "documentation": "expression: ServiceRequest.code.reference",
-              "name": "code-reference",
-              "type": "reference"
-            },
-            {
-              "documentation": "expression: ServiceRequest.encounter",
-              "name": "encounter",
-              "type": "reference"
-            },
-            {
-              "documentation": "expression: ServiceRequest.identifier\nsubtype: Identifier",
-              "name": "identifier",
-              "type": "token"
-            },
-            {
-              "documentation": "expression: ServiceRequest.instantiatesCanonical",
-              "name": "instantiates-canonical",
-              "type": "reference"
-            },
-            {
-              "documentation": "expression: ServiceRequest.instantiatesUri",
-              "name": "instantiates-uri",
-              "type": "uri"
-            },
-            {
-              "documentation": "expression: ServiceRequest.intent\nsubtype: code",
-              "name": "intent",
-              "type": "token"
-            },
-            {
-              "documentation": "expression: ServiceRequest.occurrence.ofType(dateTime) | ServiceRequest.occurrence.ofType(Period) | ServiceRequest.occurrence.ofType(Timing)\nsubtype: dateTime",
-              "name": "occurrence",
-              "type": "date"
-            },
-            {
-              "documentation": "expression: ServiceRequest.performer",
-              "name": "performer",
-              "type": "reference"
-            },
-            {
-              "documentation": "expression: ServiceRequest.performerType\nsubtype: CodeableConcept",
-              "name": "performer-type",
-              "type": "token"
-            },
-            {
-              "documentation": "expression: ServiceRequest.priority\nsubtype: code",
-              "name": "priority",
-              "type": "token"
-            },
-            {
-              "documentation": "expression: ServiceRequest.replaces",
-              "name": "replaces",
-              "type": "reference"
-            },
-            {
-              "documentation": "expression: ServiceRequest.requester",
-              "name": "requester",
-              "type": "reference"
-            },
-            {
-              "documentation": "expression: ServiceRequest.requisition\nsubtype: Identifier",
-              "name": "requisition",
-              "type": "token"
-            },
-            {
-              "documentation": "expression: ServiceRequest.specimen",
-              "name": "specimen",
-              "type": "reference"
-            },
-            {
-              "documentation": "expression: ServiceRequest.status\nsubtype: code",
-              "name": "status",
-              "type": "token"
-            },
-            {
-              "documentation": "expression: ServiceRequest.subject",
-              "name": "subject",
-              "type": "reference"
-            },
-            {
-              "documentation": "expression: ServiceRequest.subject.where(reference.contains('Patient/'))",
-              "name": "patient",
-              "type": "reference"
-            },
-            {
-              "name": "_has",
-              "type": "special"
-            },
-            {
-              "name": "_include",
-              "type": "special"
-            },
-            {
-              "name": "_include:iterate",
-              "type": "special"
-            },
-            {
-              "name": "_revinclude",
-              "type": "special"
-            },
-            {
-              "name": "_revinclude:iterate",
-              "type": "special"
-            }
-          ],
-          "supportedProfile": [
-            "https://dhp.uz/fhir/core/StructureDefinition/uz-core-servicerequest"
-          ],
-          "type": "ServiceRequest"
-        },
-        {
-          "conditionalCreate": false,
-          "conditionalDelete": "not-supported",
-          "conditionalPatch": false,
-          "conditionalRead": "not-supported",
-          "conditionalUpdate": false,
-          "interaction": [
-            {
-              "code": "create"
-            },
-            {
-              "code": "delete"
-            },
-            {
-              "code": "history-instance"
-            },
-            {
-              "code": "read"
-            },
-            {
-              "code": "search-type"
-            },
-            {
-              "code": "update"
-            },
-            {
-              "code": "vread"
-            }
-          ],
-          "searchParam": [
-            {
-              "documentation": "expression: Resource.id\nsubtype: id",
-              "name": "_id",
-              "type": "token"
-            },
-            {
-              "documentation": "expression: Resource.meta.lastUpdated\nsubtype: dateTime",
-              "name": "_lastUpdated",
-              "type": "date"
-            },
-            {
-              "documentation": "expression: Resource.meta.profile",
-              "name": "_profile",
-              "type": "reference"
-            },
-            {
-              "documentation": "expression: Resource.meta.security\nsubtype: Coding",
-              "name": "_security",
-              "type": "token"
-            },
-            {
-              "documentation": "expression: Resource.meta.tag\nsubtype: Coding",
-              "name": "_tag",
-              "type": "token"
-            },
-            {
               "documentation": "expression: Specimen.accessionIdentifier\nsubtype: Identifier",
               "name": "accession",
               "type": "token"
@@ -3046,6 +2854,202 @@
           "type": "PractitionerRole"
         },
         {
+          "conditionalCreate": true,
+          "conditionalDelete": "not-supported",
+          "conditionalPatch": false,
+          "conditionalRead": "not-supported",
+          "conditionalUpdate": false,
+          "interaction": [
+            {
+              "code": "create"
+            },
+            {
+              "code": "delete"
+            },
+            {
+              "code": "history-instance"
+            },
+            {
+              "code": "read"
+            },
+            {
+              "code": "search-type"
+            },
+            {
+              "code": "update"
+            },
+            {
+              "code": "vread"
+            }
+          ],
+          "searchParam": [
+            {
+              "documentation": "expression: Resource.id\nsubtype: id",
+              "name": "_id",
+              "type": "token"
+            },
+            {
+              "documentation": "expression: Resource.meta.lastUpdated\nsubtype: dateTime",
+              "name": "_lastUpdated",
+              "type": "date"
+            },
+            {
+              "documentation": "expression: Resource.meta.profile",
+              "name": "_profile",
+              "type": "reference"
+            },
+            {
+              "documentation": "expression: Resource.meta.security\nsubtype: Coding",
+              "name": "_security",
+              "type": "token"
+            },
+            {
+              "documentation": "expression: Resource.meta.tag\nsubtype: Coding",
+              "name": "_tag",
+              "type": "token"
+            },
+            {
+              "documentation": "expression: ServiceRequest.authoredOn\nsubtype: dateTime",
+              "name": "authored",
+              "type": "date"
+            },
+            {
+              "documentation": "expression: ServiceRequest.basedOn",
+              "name": "based-on",
+              "type": "reference"
+            },
+            {
+              "documentation": "expression: ServiceRequest.bodySite\nsubtype: CodeableConcept",
+              "name": "body-site",
+              "type": "token"
+            },
+            {
+              "documentation": "expression: ServiceRequest.bodyStructure",
+              "name": "body-structure",
+              "type": "reference"
+            },
+            {
+              "documentation": "expression: ServiceRequest.category\nsubtype: CodeableConcept",
+              "name": "category",
+              "type": "token"
+            },
+            {
+              "documentation": "expression: ServiceRequest.code.concept\nsubtype: CodeableConcept",
+              "name": "code-concept",
+              "type": "token"
+            },
+            {
+              "documentation": "expression: ServiceRequest.code.reference",
+              "name": "code-reference",
+              "type": "reference"
+            },
+            {
+              "documentation": "expression: ServiceRequest.encounter",
+              "name": "encounter",
+              "type": "reference"
+            },
+            {
+              "documentation": "expression: ServiceRequest.identifier\nsubtype: Identifier",
+              "name": "identifier",
+              "type": "token"
+            },
+            {
+              "documentation": "expression: ServiceRequest.instantiatesCanonical\nsubtype: canonical",
+              "name": "instantiates-canonical",
+              "type": "reference"
+            },
+            {
+              "documentation": "expression: ServiceRequest.instantiatesUri",
+              "name": "instantiates-uri",
+              "type": "uri"
+            },
+            {
+              "documentation": "expression: ServiceRequest.intent\nsubtype: code",
+              "name": "intent",
+              "type": "token"
+            },
+            {
+              "documentation": "expression: ServiceRequest.occurrence.ofType(dateTime) | ServiceRequest.occurrence.ofType(Period) | ServiceRequest.occurrence.ofType(Timing)\nsubtype: dateTime",
+              "name": "occurrence",
+              "type": "date"
+            },
+            {
+              "documentation": "expression: ServiceRequest.performer",
+              "name": "performer",
+              "type": "reference"
+            },
+            {
+              "documentation": "expression: ServiceRequest.performerType\nsubtype: CodeableConcept",
+              "name": "performer-type",
+              "type": "token"
+            },
+            {
+              "documentation": "expression: ServiceRequest.priority\nsubtype: code",
+              "name": "priority",
+              "type": "token"
+            },
+            {
+              "documentation": "expression: ServiceRequest.replaces",
+              "name": "replaces",
+              "type": "reference"
+            },
+            {
+              "documentation": "expression: ServiceRequest.requester",
+              "name": "requester",
+              "type": "reference"
+            },
+            {
+              "documentation": "expression: ServiceRequest.requisition\nsubtype: Identifier",
+              "name": "requisition",
+              "type": "token"
+            },
+            {
+              "documentation": "expression: ServiceRequest.specimen",
+              "name": "specimen",
+              "type": "reference"
+            },
+            {
+              "documentation": "expression: ServiceRequest.status\nsubtype: code",
+              "name": "status",
+              "type": "token"
+            },
+            {
+              "documentation": "expression: ServiceRequest.subject",
+              "name": "subject",
+              "type": "reference"
+            },
+            {
+              "documentation": "expression: ServiceRequest.subject.where(reference.contains('Patient/'))",
+              "name": "patient",
+              "type": "reference"
+            },
+            {
+              "name": "_has",
+              "type": "special"
+            },
+            {
+              "name": "_include",
+              "type": "special"
+            },
+            {
+              "name": "_include:iterate",
+              "type": "special"
+            },
+            {
+              "name": "_revinclude",
+              "type": "special"
+            },
+            {
+              "name": "_revinclude:iterate",
+              "type": "special"
+            }
+          ],
+          "supportedProfile": [
+            "https://dhp.uz/fhir/core/StructureDefinition/uz-core-servicerequest"
+          ],
+          "type": "ServiceRequest"
+        },
+        {
           "conditionalCreate": false,
           "conditionalDelete": "not-supported",
           "conditionalPatch": false,
@@ -3126,27 +3130,27 @@
               "type": "string"
             },
             {
-              "documentation": "expression: ActivityDefinition.relatedArtifact.where(type='composed-of').resource",
+              "documentation": "expression: ActivityDefinition.relatedArtifact.where(type='composed-of').resource\nsubtype: canonical",
               "name": "composed-of",
               "type": "reference"
             },
             {
-              "documentation": "expression: ActivityDefinition.relatedArtifact.where(type='depends-on').resource | ActivityDefinition.library",
+              "documentation": "expression: ActivityDefinition.relatedArtifact.where(type='depends-on').resource | ActivityDefinition.library\nsubtype: canonical",
               "name": "depends-on",
               "type": "reference"
             },
             {
-              "documentation": "expression: ActivityDefinition.relatedArtifact.where(type='derived-from').resource",
+              "documentation": "expression: ActivityDefinition.relatedArtifact.where(type='derived-from').resource\nsubtype: canonical",
               "name": "derived-from",
               "type": "reference"
             },
             {
-              "documentation": "expression: ActivityDefinition.relatedArtifact.where(type='predecessor').resource",
+              "documentation": "expression: ActivityDefinition.relatedArtifact.where(type='predecessor').resource\nsubtype: canonical",
               "name": "predecessor",
               "type": "reference"
             },
             {
-              "documentation": "expression: ActivityDefinition.relatedArtifact.where(type='successor').resource",
+              "documentation": "expression: ActivityDefinition.relatedArtifact.where(type='successor').resource\nsubtype: canonical",
               "name": "successor",
               "type": "reference"
             },
@@ -7405,12 +7409,12 @@
               "type": "string"
             },
             {
-              "documentation": "expression: CodeSystem.relatedArtifact.where(type='derived-from').resource\n(Any)",
+              "documentation": "expression: CodeSystem.relatedArtifact.where(type='derived-from').resource\nsubtype: canonical",
               "name": "derived-from",
               "type": "reference"
             },
             {
-              "documentation": "expression: CodeSystem.relatedArtifact.where(type='predecessor').resource\n(Any)",
+              "documentation": "expression: CodeSystem.relatedArtifact.where(type='predecessor').resource\nsubtype: canonical",
               "name": "predecessor",
               "type": "reference"
             },
@@ -7420,7 +7424,7 @@
               "type": "token"
             },
             {
-              "documentation": "expression: CodeSystem.supplements\n(CodeSystem)",
+              "documentation": "expression: CodeSystem.supplements\nsubtype: canonical",
               "name": "supplements",
               "type": "reference"
             },
@@ -7543,7 +7547,7 @@
           ],
           "searchParam": [
             {
-              "documentation": "expression: (ConceptMap.sourceScope as canonical)\n(ValueSet)",
+              "documentation": "expression: (ConceptMap.sourceScope as canonical)\nsubtype: canonical",
               "name": "source-scope",
               "type": "reference"
             },
@@ -7553,7 +7557,7 @@
               "type": "uri"
             },
             {
-              "documentation": "expression: (ConceptMap.targetScope as canonical)\n(ValueSet)",
+              "documentation": "expression: (ConceptMap.targetScope as canonical)\nsubtype: canonical",
               "name": "target-scope",
               "type": "reference"
             },
@@ -7598,17 +7602,17 @@
               "type": "token"
             },
             {
-              "documentation": "expression: ConceptMap.group.source\n(CodeSystem)",
+              "documentation": "expression: ConceptMap.group.source\nsubtype: canonical",
               "name": "source-group-system",
               "type": "reference"
             },
             {
-              "documentation": "expression: ConceptMap.group.target\n(CodeSystem)",
+              "documentation": "expression: ConceptMap.group.target\nsubtype: canonical",
               "name": "target-group-system",
               "type": "reference"
             },
             {
-              "documentation": "expression: ConceptMap.group.unmapped.otherMap\n(ConceptMap)",
+              "documentation": "expression: ConceptMap.group.unmapped.otherMap\nsubtype: canonical",
               "name": "other-map",
               "type": "reference"
             },
@@ -7638,12 +7642,12 @@
               "type": "string"
             },
             {
-              "documentation": "expression: ConceptMap.relatedArtifact.where(type='derived-from').resource\n(Any)",
+              "documentation": "expression: ConceptMap.relatedArtifact.where(type='derived-from').resource\nsubtype: canonical",
               "name": "derived-from",
               "type": "reference"
             },
             {
-              "documentation": "expression: ConceptMap.relatedArtifact.where(type='predecessor').resource\n(Any)",
+              "documentation": "expression: ConceptMap.relatedArtifact.where(type='predecessor').resource\nsubtype: canonical",
               "name": "predecessor",
               "type": "reference"
             },
@@ -7855,12 +7859,12 @@
               "type": "string"
             },
             {
-              "documentation": "expression: ValueSet.relatedArtifact.where(type='derived-from').resource\n(Any)",
+              "documentation": "expression: ValueSet.relatedArtifact.where(type='derived-from').resource\nsubtype: canonical",
               "name": "derived-from",
               "type": "reference"
             },
             {
-              "documentation": "expression: ValueSet.relatedArtifact.where(type='predecessor').resource\n(Any)",
+              "documentation": "expression: ValueSet.relatedArtifact.where(type='predecessor').resource\nsubtype: canonical",
               "name": "predecessor",
               "type": "reference"
             },
@@ -8310,12 +8314,12 @@
               "type": "string"
             },
             {
-              "documentation": "expression: NamingSystem.relatedArtifact.where(type='derived-from').resource\n(Any)",
+              "documentation": "expression: NamingSystem.relatedArtifact.where(type='derived-from').resource\nsubtype: canonical",
               "name": "derived-from",
               "type": "reference"
             },
             {
-              "documentation": "expression: NamingSystem.relatedArtifact.where(type='predecessor').resource\n(Any)",
+              "documentation": "expression: NamingSystem.relatedArtifact.where(type='predecessor').resource\nsubtype: canonical",
               "name": "predecessor",
               "type": "reference"
             },
@@ -8462,7 +8466,7 @@
               "type": "quantity"
             },
             {
-              "documentation": "expression: OperationDefinition.base",
+              "documentation": "expression: OperationDefinition.base\nsubtype: canonical",
               "name": "base",
               "type": "reference"
             },
@@ -8487,7 +8491,7 @@
               "type": "token"
             },
             {
-              "documentation": "expression: OperationDefinition.inputProfile",
+              "documentation": "expression: OperationDefinition.inputProfile\nsubtype: canonical",
               "name": "input-profile",
               "type": "reference"
             },
@@ -8512,7 +8516,7 @@
               "type": "string"
             },
             {
-              "documentation": "expression: OperationDefinition.outputProfile",
+              "documentation": "expression: OperationDefinition.outputProfile\nsubtype: canonical",
               "name": "output-profile",
               "type": "reference"
             },
@@ -8649,7 +8653,7 @@
               "type": "quantity"
             },
             {
-              "documentation": "expression: PlanDefinition.action.definition.ofType(canonical) | PlanDefinition.action.definition.ofType(uri)",
+              "documentation": "expression: PlanDefinition.action.definition.ofType(canonical) | PlanDefinition.action.definition.ofType(uri)\nsubtype: canonical",
               "name": "definition",
               "type": "reference"
             },
@@ -8689,27 +8693,27 @@
               "type": "string"
             },
             {
-              "documentation": "expression: PlanDefinition.relatedArtifact.where(type='composed-of').resource",
+              "documentation": "expression: PlanDefinition.relatedArtifact.where(type='composed-of').resource\nsubtype: canonical",
               "name": "composed-of",
               "type": "reference"
             },
             {
-              "documentation": "expression: PlanDefinition.relatedArtifact.where(type='depends-on').resource | PlanDefinition.library",
+              "documentation": "expression: PlanDefinition.relatedArtifact.where(type='depends-on').resource | PlanDefinition.library\nsubtype: canonical",
               "name": "depends-on",
               "type": "reference"
             },
             {
-              "documentation": "expression: PlanDefinition.relatedArtifact.where(type='derived-from').resource",
+              "documentation": "expression: PlanDefinition.relatedArtifact.where(type='derived-from').resource\nsubtype: canonical",
               "name": "derived-from",
               "type": "reference"
             },
             {
-              "documentation": "expression: PlanDefinition.relatedArtifact.where(type='predecessor').resource",
+              "documentation": "expression: PlanDefinition.relatedArtifact.where(type='predecessor').resource\nsubtype: canonical",
               "name": "predecessor",
               "type": "reference"
             },
             {
-              "documentation": "expression: PlanDefinition.relatedArtifact.where(type='successor').resource",
+              "documentation": "expression: PlanDefinition.relatedArtifact.where(type='successor').resource\nsubtype: canonical",
               "name": "successor",
               "type": "reference"
             },
@@ -8717,6 +8721,11 @@
               "documentation": "expression: PlanDefinition.status\nsubtype: code",
               "name": "status",
               "type": "token"
+            },
+            {
+              "documentation": "expression: PlanDefinition.subject.ofType(Reference)",
+              "name": "subject-reference",
+              "type": "reference"
             },
             {
               "documentation": "expression: PlanDefinition.title",
@@ -8868,7 +8877,7 @@
               "type": "token"
             },
             {
-              "documentation": "expression: SearchParameter.component.definition",
+              "documentation": "expression: SearchParameter.component.definition\nsubtype: canonical",
               "name": "component",
               "type": "reference"
             },
@@ -8878,7 +8887,7 @@
               "type": "date"
             },
             {
-              "documentation": "expression: SearchParameter.derivedFrom",
+              "documentation": "expression: SearchParameter.derivedFrom\nsubtype: canonical",
               "name": "derived-from",
               "type": "reference"
             },
@@ -9035,7 +9044,7 @@
               "type": "token"
             },
             {
-              "documentation": "expression: StructureDefinition.baseDefinition",
+              "documentation": "expression: StructureDefinition.baseDefinition\nsubtype: canonical",
               "name": "base",
               "type": "reference"
             },
@@ -9105,7 +9114,7 @@
               "type": "token"
             },
             {
-              "documentation": "expression: StructureDefinition.snapshot.element.binding.valueSet",
+              "documentation": "expression: StructureDefinition.snapshot.element.binding.valueSet\nsubtype: canonical",
               "name": "valueset",
               "type": "reference"
             },
