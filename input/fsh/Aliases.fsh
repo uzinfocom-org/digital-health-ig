@@ -17,6 +17,11 @@ Alias: $allergy-reaction-severity = http://hl7.org/fhir/reaction-event-severity
 Alias: $allergy-verification = http://terminology.hl7.org/CodeSystem/allergyintolerance-verification
 Alias: $allergyintolerance-abatement = http://hl7.org/fhir/StructureDefinition/allergyintolerance-abatement
 Alias: $audit-event-action = http://hl7.org/fhir/audit-event-action
+Alias: $bdp-dispense-status = http://hl7.org/fhir/biologicallyderivedproductdispense-status
+Alias: $bdp-dispense-match-status = http://hl7.org/fhir/CodeSystem/biologicallyderivedproductdispense-match-status
+Alias: $bdp-dispense-origin-relationship = http://hl7.org/fhir/CodeSystem/biologicallyderivedproductdispense-origin-relationship
+Alias: $bdp-dispense-performer-function = http://hl7.org/fhir/CodeSystem/biologicallyderivedproductdispense-performer-function
+
 Alias: $birthcertificate = https://dhp.uz/fhir/core/sid/pid/uz/bct
 Alias: $bodysite = http://hl7.org/fhir/ValueSet/body-site
 Alias: $bodySite-condition = http://hl7.org/fhir/ValueSet/body-site
