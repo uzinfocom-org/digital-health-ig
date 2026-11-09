@@ -120,7 +120,7 @@ Description: "Inventory statuses of an item, such as a blood product, medication
 
 * #in-fractionation "Fraksiyalashda"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "В фракционировании"
+  * ^designation[=].value = "На фракционировании"
   * ^designation[+].language = #en
   * ^designation[=].value = "In Fractionation"
 

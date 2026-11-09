@@ -2,11 +2,16 @@
 
 #### Добавлено
 
+[UZ Core ChargeItem](StructureDefinition-uz-core-chargeitem.html) фиксирует оплачиваемую позицию - услугу, товар или лекарство, предоставленные пациенту, - с её количеством и стоимостью и связывает её с событием, в котором она была предоставлена, например с [MedicationDispense](StructureDefinition-uz-core-medication-dispense.html), процедурой или лабораторным анализом. Идентификатор использует новую систему именования [идентификаторов ChargeItem](NamingSystem-uzb-charge-item-identifier.html), `status` привязан к набору [Статус ChargeItem](ValueSet-chargeitem-status-vs.html), а `code` - к набору [Код начисления](ValueSet-charge-item-code-vs.html), оба с переводами на узбекский и русский языки. На странице профиля есть вводное описание и раздел «Быстрый старт».
+
 [UZ Core Device](StructureDefinition-uz-core-device.html) описывает физическое медицинское изделие - больничное оборудование, например компьютерный томограф, или отдельное изделие, например внутриматочную спираль, - с его типом и категорией по SNOMED CT, производителем, моделью, серийным номером и номером серии, статусом и доступностью, а также организацией и местом, к которым оно относится. Вместе с профилем добавлены узбекские и русские переводы кодов HL7 для статуса изделия, статуса доступности, типа наименования и категории, а также типов контрацептивных изделий SNOMED CT. На странице профиля есть вводный раздел и Быстрый старт.
 
 [UZ Core DeviceUsage](StructureDefinition-uz-core-deviceusage.html) фиксирует, что пациент использует, использовал или будет использовать изделие, например кресло-коляску или имплантируемый венозный порт. Изделие указывается как концепт SNOMED CT или как ссылка на [UZ Core Device](StructureDefinition-uz-core-device.html). Он фиксирует, кто сообщил об использовании, когда оно началось и закончилось, условия использования, насколько регулярно изделие используется на самом деле и зачем. Вместе с ним добавлены узбекские и русские переводы кодов HL7 статуса использования изделия и приверженности. Страница профиля содержит вводное описание и Быстрый старт.
 
+[UZ Core InventoryReport](StructureDefinition-uz-core-inventoryreport.html) передаёт результат подсчёта запасов в месте хранения: тип подсчёта, приход или расход и его причину, а также количество каждой позиции с единицей измерения. С ним добавлены узбекские и русские переводы кодов HL7 статуса и типа подсчёта отчёта об инвентаризации и используемых в нём единиц представления SNOMED CT.
+
 [UZ Core MedicationKnowledge](StructureDefinition-uz-core-medicationknowledge.html) содержит справочные сведения о лекарственном препарате: используется ли запись и какие цены утверждены - предельная цена, оптовая и розничная цены и цена [Государственного фонда медицинского страхования (ФГМС)](https://ig.shif.uz/build/core/ru/index.html), каждая с периодом, в течение которого она действует. Запись ссылается на [UZ Core Medication](StructureDefinition-uz-core-medication.html), к которому относится. Типы цен берутся из новой системы кодов [типов цен MedicationKnowledge](CodeSystem-medicationknowledge-cost-type-cs.html), записи идентифицируются новым [идентификатором MedicationKnowledge](NamingSystem-uzb-medication-knowledge-number.html), а вместе с профилем добавлены узбекские и русские переводы кодов статусов MedicationKnowledge HL7. На странице профиля есть вводный раздел и быстрый старт.
+
 [UZ Core Practitioner](StructureDefinition-uz-core-practitioner.html) допускает переводы текста сертификата специалиста: `qualification.code.text` теперь принимает расширение translation.
 
 [UZ Core SupplyDelivery](StructureDefinition-uz-core-supply-delivery.html) фиксирует место, откуда отправлены предметы снабжения, например склад-отправитель при перемещении между складами, в новом расширении [Deliver from](StructureDefinition-supplydelivery-deliver-from.html). В базовом ресурсе FHIR SupplyDelivery такого элемента нет; расширение соответствует `SupplyRequest.deliverFrom` на стороне поставки. Его показывает [пример перемещения между складами](SupplyDelivery-example-warehouse-transfer-supply-delivery.html). На странице профиля есть вводный раздел и раздел «Быстрый старт».
@@ -21,9 +26,13 @@
 
 [Supplement FHIR-типов](CodeSystem-fhir-types-cs.html) давал каждому типу ресурса перевод его определения вместо названия. Теперь у каждого типа есть узбекское и русское название, например "Bemor" и "Пациент" для `Patient`, с отметкой `preferredForLanguage`, поэтому `$lookup` с `displayLanguage` возвращает название. Переведённые определения остаются обозначениями с use SNOMED CT `900000000000550004` Definition.
 
+[UZ Core Organization](StructureDefinition-uz-core-organization.html) и [UZ Core RelatedPerson](StructureDefinition-uz-core-relatedperson.html) больше не фиксируют display типа идентификатора: срезы `mohId` и `argosId` фиксируют только систему и код `XX`, а `healthCard` - только `HC`. Зафиксированные display "Organization Identifier" и "Health card number" не совпадали с display терминологии HL7 "Organization identifier" и "Health Card Number", поэтому каждый соответствующий профилю экземпляр получал предупреждение терминологии. Теперь тип идентификатора соответствует профилю с любым из этих display или без него.
+
 Все ссылки на Device в профилях UZ Core теперь указывают на [UZ Core Device](StructureDefinition-uz-core-device.html): Observation, Procedure, Condition, AdverseEvent, Composition, QuestionnaireResponse, Group, MedicationAdministration, MedicationDispense, InventoryItem, SupplyRequest и SupplyDelivery.
 
 Заголовки и описания систем кодов и наборов значений теперь следуют шаблону именования из [руководства по моделированию](https://github.com/uzinfocom-org/digital-health-ig/blob/main/modelling-guidelines.md): supplement называется `[Concept] translations`, набор значений - `[Concept]`, а в заголовках больше нет слов вроде "CodeSystem" или "ValueSet". Канонические URL, идентификаторы и коды не изменились.
+
+[Пример Practitioner](Practitioner-example-practitioner.html) и примеры сертификата специалиста теперь используют вымышленные ПИНФЛ, номер сертификата и даты.
 
 [Пример Procedure](Procedure-example-procedure.html) теперь ссылается на [амбулаторный визит на физиотерапию](Encounter-example-physiotherapy-encounter.html) и состояние [боль в правой стопе](Condition-example-foot-pain.html) того же пациента, а не на визит и состояние другого пациента.
 
@@ -63,7 +72,7 @@
 
 #### Несовместимые изменения
 
-Система идентификаторов [сертификата специалиста](NamingSystem-uzb-specialist-certificate.html) перенесена из пространства документов в пространство медицинских работников, так как сертификат идентифицирует квалификацию специалиста, а не документ: `https://dhp.uz/fhir/core/sid/doc/uz/specialist-certificate` заменён на `https://dhp.uz/fhir/core/sid/pro/uz/specialist-certificate`. Отправители `Practitioner.qualification.identifier` переходят на новую систему; формат значения (серия и номер слитно, например `CA008815`) не меняется.
+Система идентификаторов [сертификата специалиста](NamingSystem-uzb-specialist-certificate.html) перенесена из пространства документов в пространство медицинских работников, так как сертификат идентифицирует квалификацию специалиста, а не документ: `https://dhp.uz/fhir/core/sid/doc/uz/specialist-certificate` заменён на `https://dhp.uz/fhir/core/sid/pro/uz/specialist-certificate`. Отправители `Practitioner.qualification.identifier` переходят на новую систему; формат значения (серия и номер слитно, например `CA123456`) не меняется.
 
 ### Версия 0.11.1
 
