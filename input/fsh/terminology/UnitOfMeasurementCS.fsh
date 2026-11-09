@@ -1105,3 +1105,56 @@ Units Tablet"
   * ^designation[+].language = #en
   * ^designation[=].value = "Time"
 
+* #326 "dona"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "штук"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "pieces"
+
+* #340 "millilitr"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "миллилитр"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "millilitre"
+
+* #404 "milligramm"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "миллиграмм"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "milligram"
+
+* #386 "mg/5 ml"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "мг/5мл"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "mg/5 mL"
+
+* #387 "mg/10 ml"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "мг/10мл"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "mg/10 mL"
+
+* #388 "mg/100 ml"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "мг/100мл"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "mg/100 mL"
+
+* #403 "mg/2 ml"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "мг/2мл"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "mg/2 mL"
+
+* #402 "g/5 ml"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "г/5мл"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "g/5 mL"
+
+* #461 "g/1000 ml"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "г/1000мл"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "g/1000 mL"

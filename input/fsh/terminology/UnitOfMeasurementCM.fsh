@@ -493,3 +493,48 @@ infektsion dozasi"
 * group.element[=].display = "Fokusni shakllantirish birligi (FFU)"
 * group.element[=].target[+].code = #"{FFU}"
 * group.element[=].target[=].relationship = #equivalent
+
+* group.element[+].code = #326
+* group.element[=].display = "dona"
+* group.element[=].target[+].code = #"{#}"
+* group.element[=].target[=].relationship = #equivalent
+
+* group.element[+].code = #340
+* group.element[=].display = "millilitr"
+* group.element[=].target[+].code = #"mL"
+* group.element[=].target[=].relationship = #equivalent
+
+* group.element[+].code = #404
+* group.element[=].display = "milligramm"
+* group.element[=].target[+].code = #"mg"
+* group.element[=].target[=].relationship = #equivalent
+
+* group.element[+].code = #386
+* group.element[=].display = "mg/5 ml"
+* group.element[=].target[+].code = #"mg/(5.mL)"
+* group.element[=].target[=].relationship = #equivalent
+
+* group.element[+].code = #387
+* group.element[=].display = "mg/10 ml"
+* group.element[=].target[+].code = #"mg/(10.mL)"
+* group.element[=].target[=].relationship = #equivalent
+
+* group.element[+].code = #388
+* group.element[=].display = "mg/100 ml"
+* group.element[=].target[+].code = #"mg/(100.mL)"
+* group.element[=].target[=].relationship = #equivalent
+
+* group.element[+].code = #403
+* group.element[=].display = "mg/2 ml"
+* group.element[=].target[+].code = #"mg/(2.mL)"
+* group.element[=].target[=].relationship = #equivalent
+
+* group.element[+].code = #402
+* group.element[=].display = "g/5 ml"
+* group.element[=].target[+].code = #"g/(5.mL)"
+* group.element[=].target[=].relationship = #equivalent
+
+* group.element[+].code = #461
+* group.element[=].display = "g/1000 ml"
+* group.element[=].target[+].code = #"g/L"
+* group.element[=].target[=].relationship = #equivalent
