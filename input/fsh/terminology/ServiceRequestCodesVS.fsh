@@ -12,7 +12,7 @@ Description: "Defines the set of codes that may be used in ServiceRequest to spe
 * include codes from system $sct where concept is-a #71388002
 * include codes from system screening-code-cs
 * include codes from system nursing-visit-purpose-cs
-
+* include codes from system physiotherapy-procedure-cs
 // Screening and patronage (home visit) services coded in SNOMED CT. Already covered by the
 // procedure filter above; listed so they are named in the value set and pick up the
 // Uzbek and Russian translations from ScreeningSctCS. Services with no suitable SNOMED CT

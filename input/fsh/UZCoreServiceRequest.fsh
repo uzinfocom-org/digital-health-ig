@@ -33,6 +33,11 @@ Description: "Uzbekistan Core ServiceRequest profile, used to represent a reques
 * code MS
 * code from ServiceRequestCodesVS (extensible)
 * code ^short = "Specifies the procedure, diagnostic investigation, or panel being requested. The codes used represent orderable services and must not be used for analytical result observations."
+* orderDetail MS
+* orderDetail.parameter.code from SRSnomedOrderDetailParameterVS (preferred)  
+* orderDetail.parameter.valueCodeableConcept from RouteCodeVS (extensible)     
+* location MS
+* location from CarePlanLocationVS (preferred)
 * subject MS
 * subject only Reference(UZCorePatient or UZCoreLocation)
 * subject ^short = "The patient for whom the laboratory referral or order is issued. This element identifies the individual who is the subject of the requested laboratory investigation."
@@ -95,6 +100,9 @@ Description: "Example ServiceRequest instance for UZCore."
 * code = lab-pan-cs#lab-pan-E "CBC panel"
 * subject = Reference(Patient/example-salim)
 * performer[0] = Reference(Organization/tashkent-diseases-hospital)
+* location = $v3-RoleCode#PTRES
+* orderDetail[0].parameter[0].code = $sct#410675002 "Route of administration"
+* orderDetail[0].parameter[0].valueCodeableConcept = $sct#26643006 "Oral route"
 * encounter = Reference(Encounter/example-encounter)
 * occurrenceDateTime = "2026-01-16T09:30:00+05:00"
 * authoredOn = "2026-01-16T09:10:00+05:00"
