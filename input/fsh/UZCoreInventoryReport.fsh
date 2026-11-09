@@ -26,8 +26,8 @@ Description: "Uzbekistan Core InventoryReport profile, used to report inventory 
 * reporter only Reference(UZCorePractitioner or UZCorePatient or UZCoreRelatedPerson or UZCoreDevice)
 * reportingPeriod MS
 
-* inventoryListing MS
-* inventoryListing.location MS
+* inventoryListing 1..* MS
+* inventoryListing.location 1..1 MS
 * inventoryListing.location only Reference(UZCoreLocation)
 * inventoryListing.itemStatus MS
 * inventoryListing.itemStatus from InventoryStatusVS (extensible)

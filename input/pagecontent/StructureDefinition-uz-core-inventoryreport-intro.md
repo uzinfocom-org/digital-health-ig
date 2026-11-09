@@ -6,7 +6,7 @@ The elements below must always be present (mandatory) or must be supported when 
 
 #### Each UZ Core InventoryReport Must Have
 
-This profile adds no new mandatory cardinalities. Follow the base FHIR requirements: a `status`, a `countType` and the `reportedDateTime`. Each counted item, when present, also needs its `quantity` and the `item` it counts.
+On top of the base FHIR requirements - a `status`, a `countType` and the `reportedDateTime` - each report needs at least one `inventoryListing`, and each listing needs the `location` it covers. Each counted item, when present, also needs its `quantity` and the `item` it counts.
 
 #### Each UZ Core InventoryReport Must Support
 
@@ -21,7 +21,7 @@ This profile adds no new mandatory cardinalities. Follow the base FHIR requireme
 
 #### The smallest InventoryReport you should send
 
-Only the three base elements are required. `countType` is `snapshot` for stock on hand, or `difference` for a change in stock.
+Besides the base `status`, `countType` and `reportedDateTime`, the profile requires at least one `inventoryListing`, each with the `location` it covers: stock is always counted somewhere. `countType` is `snapshot` for stock on hand, or `difference` for a change in stock. Each `item` in a listing is one counted product, with its `quantity` and the `item` it counts. The `quantity` takes a unit from [Inventory unit](ValueSet-inventory-unit-vs.html): mostly SNOMED CT units such as `418445004` Box or `733026001` Vial, plus national units such as Pack where SNOMED CT has none. `item.item` is a `CodeableReference`, so the reference sits one level deeper, under `reference`. A listing with no items is still valid: in a snapshot it records an empty location, and in a `requested` report it names a location still to be counted.
 
 ```json
 {
@@ -31,13 +31,20 @@ Only the three base elements are required. `countType` is `snapshot` for stock o
   },
   "status": "active",
   "countType": "snapshot",
-  "reportedDateTime": "2026-10-27T10:00:00+05:00"
+  "reportedDateTime": "2026-10-27T10:00:00+05:00",
+  "inventoryListing": [{
+    "location": { "reference": "Location/example-location" },
+    "item": [{
+      "quantity": { "value": 100, "system": "http://snomed.info/sct", "code": "418445004" },
+      "item": { "reference": { "reference": "Medication/example-medication" } }
+    }]
+  }]
 }
 ```
 
 #### Counting stock on hand
 
-Each `inventoryListing` is one location at one moment, and each of its `item` entries is one counted product. The `quantity` takes a unit from [Inventory unit](ValueSet-inventory-unit-vs.html): mostly SNOMED CT units such as `418445004` Box or `733026001` Vial, plus national units such as Pack where SNOMED CT has none. `item.item` is a `CodeableReference`, so the reference sits one level deeper, under `reference`. The displays of national codes are in Uzbek, matching the resource `language`.
+A fuller snapshot also says who made the report, the status of the stock at the location and when it was counted, and gives the quantity a readable `unit`. The displays of national codes are in Uzbek, matching the resource `language`.
 
 ```json
 {

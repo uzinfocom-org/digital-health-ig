@@ -8,7 +8,7 @@ Quyidagi elementlar doimo mavjud bo'lishi (mandatory) yoki ma'lumot mavjud bo'lg
 
 #### Har bir UZ Core InventoryReport Must Have
 
-Profil yangi majburiy karraliliklarni qo'shmaydi. Bazaviy FHIR talablariga amal qiling: `status`, `countType` va `reportedDateTime`. Har bir hisoblangan pozitsiya, agar ko'rsatilgan bo'lsa, `quantity` va u hisoblaydigan `item` ga ham ega bo'lishi kerak.
+Bazaviy FHIR talablaridan tashqari - `status`, `countType` va `reportedDateTime` - har bir hisobotda kamida bitta `inventoryListing` bo'lishi, har bir ro'yxatda esa u tegishli bo'lgan `location` ko'rsatilishi kerak. Har bir hisoblangan pozitsiya, agar ko'rsatilgan bo'lsa, `quantity` va u hisoblaydigan `item` ga ham ega bo'lishi kerak.
 
 #### Har bir UZ Core InventoryReport Must Support
 
@@ -23,7 +23,7 @@ Profil yangi majburiy karraliliklarni qo'shmaydi. Bazaviy FHIR talablariga amal 
 
 #### Yuborishingiz kerak bo'lgan eng kichik InventoryReport
 
-Faqat uchta bazaviy element majburiy. `countType` mavjud zaxira uchun `snapshot`, zaxira o'zgarishi uchun `difference` bo'ladi.
+Bazaviy `status`, `countType` va `reportedDateTime` dan tashqari profil kamida bitta `inventoryListing` ni talab qiladi, har birida uning `location` i ko'rsatiladi: zaxira doimo biror joyda hisoblanadi. `countType` mavjud zaxira uchun `snapshot`, zaxira o'zgarishi uchun `difference` bo'ladi. Ro'yxatning har bir `item` elementi - o'z `quantity` si va u hisoblaydigan `item` ga ega bitta hisoblangan mahsulot. `quantity` birlikni [zaxira o'lchov birliklari](ValueSet-inventory-unit-vs.html) dan oladi: asosan SNOMED CT birliklari, masalan `418445004` Box yoki `733026001` Vial, SNOMED CT da mos birlik bo'lmasa esa milliy birliklar, masalan o'ram. `item.item` - `CodeableReference`, shuning uchun havola bir daraja chuqurroqda, `reference` ichida joylashadi. Pozitsiyalarsiz ro'yxat ham yaroqli: holat hisobotida u bo'sh saqlash joyini qayd etadi, `requested` holatidagi hisobotda esa hali hisoblanishi kerak bo'lgan joyni ko'rsatadi.
 
 ```json
 {
@@ -33,13 +33,20 @@ Faqat uchta bazaviy element majburiy. `countType` mavjud zaxira uchun `snapshot`
   },
   "status": "active",
   "countType": "snapshot",
-  "reportedDateTime": "2026-10-27T10:00:00+05:00"
+  "reportedDateTime": "2026-10-27T10:00:00+05:00",
+  "inventoryListing": [{
+    "location": { "reference": "Location/example-location" },
+    "item": [{
+      "quantity": { "value": 100, "system": "http://snomed.info/sct", "code": "418445004" },
+      "item": { "reference": { "reference": "Medication/example-medication" } }
+    }]
+  }]
 }
 ```
 
 #### Mavjud zaxirani hisoblash
 
-Har bir `inventoryListing` - bir paytdagi bitta joy, uning har bir `item` elementi esa bitta hisoblangan mahsulot. `quantity` birlikni [zaxira o'lchov birliklari](ValueSet-inventory-unit-vs.html) dan oladi: asosan SNOMED CT birliklari, masalan `418445004` Box yoki `733026001` Vial, SNOMED CT da mos birlik bo'lmasa esa milliy birliklar, masalan o'ram. `item.item` - `CodeableReference`, shuning uchun havola bir daraja chuqurroqda, `reference` ichida joylashadi. Milliy kodlarning ko'rinadigan nomlari resursning `language` qiymatiga mos ravishda o'zbek tilida beriladi.
+To'liqroq holat hisoboti hisobotni kim tuzganini, saqlash joyidagi zaxira holatini va hisoblash vaqtini ham ko'rsatadi, miqdor uchun esa birlikning o'qiladigan nomini `unit` da beradi. Milliy kodlarning ko'rinadigan nomlari resursning `language` qiymatiga mos ravishda o'zbek tilida beriladi.
 
 ```json
 {
