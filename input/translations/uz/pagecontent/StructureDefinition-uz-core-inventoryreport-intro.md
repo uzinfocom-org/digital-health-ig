@@ -14,9 +14,9 @@ Profil yangi majburiy karraliliklarni qo'shmaydi. Bazaviy FHIR talablariga amal 
 
 - status (draft / requested / active / entered-in-error) va hisoblash turi (snapshot yoki difference);
 - o'zgarishlar hisoboti uchun operatsiya turi (kirim, chiqim yoki o'zgarishsiz) va uning sababi, masalan yangi kirim, ko'chirish yoki hisobdan chiqarish;
-- hisobot qachon tuzilgani, kim tuzgani (tibbiyot xodimi, bemor yoki uning vakili) va qaysi davrni qamrab olishi;
+- hisobot qachon tuzilgani, kim tuzgani (tibbiyot xodimi, bemor, uning vakili yoki qurilma, masalan dorilarni avtomatik beruvchi shkaf) va qaysi davrni qamrab olishi;
 - har bir ro'yxat: hisoblangan joy, undagi zaxira holati (mavjud, karantinda, muddati o'tgan va hokazo) va hisoblash vaqti;
-- har bir hisoblangan pozitsiya: uning toifasi (dori vositasi, vaksina, tibbiy jihoz, qon komponenti va hokazo), birligi bilan miqdori - SNOMED CT birligi, masalan quti yoki flakon, yoki milliy birlik, masalan o'ram, - va nima hisoblangani;
+- har bir hisoblangan pozitsiya: uning inventarizatsiya toifasi (masalan, qayta sanash kutilmoqda yoki shikastlangan), birligi bilan miqdori - SNOMED CT birligi, masalan quti yoki flakon, yoki milliy birlik, masalan o'ram, - va nima hisoblangani;
 - izohlar.
 
 ### JSON ni bosqichma-bosqich tuzish
@@ -63,13 +63,6 @@ Har bir `inventoryListing` - bir paytdagi bitta joy, uning har bir `item` elemen
     },
     "countingDateTime": "2026-10-27T09:30:00+05:00",
     "item": [{
-      "category": {
-        "coding": [{
-          "system": "https://terminology.dhp.uz/fhir/core/CodeSystem/inventory-item-category-cs",
-          "code": "invct-0001-00001",
-          "display": "Dori vositasi"
-        }]
-      },
       "quantity": {
         "value": 100,
         "unit": "Quti",
@@ -84,7 +77,7 @@ Har bir `inventoryListing` - bir paytdagi bitta joy, uning har bir `item` elemen
 
 #### Zaxira o'zgarishi haqida hisobot
 
-O'zgarishlar hisoboti zaxira qo'shilgan yoki chiqarilganini `operationType` da, sababini esa `operationTypeReason` da ko'rsatadi. Bu yerda oktyabr davomida yangi kirim sifatida 20 quti kelgan. `operationType` o'zgarishni tavsiflaydi, shuning uchun holat hisobotlarida u ko'rsatilmaydi. `identifier` boshqaruvchi tashkilotning axborot tizimi hisobotga bergan raqamni o'z ichiga oladi, tashkilotning o'zi esa `assigner` da ko'rsatiladi.
+O'zgarishlar hisoboti zaxira qo'shilgan yoki chiqarilganini `operationType` da, sababini esa `operationTypeReason` da ko'rsatadi. Bu yerda oktyabr davomida yangi kirim sifatida 20 quti kelgan. `operationType` o'zgarishni tavsiflaydi, shuning uchun holat hisobotlarida u ko'rsatilmaydi.
 
 ```json
 {
@@ -93,11 +86,6 @@ O'zgarishlar hisoboti zaxira qo'shilgan yoki chiqarilganini `operationType` da, 
     "profile": ["https://dhp.uz/fhir/core/StructureDefinition/uz-core-inventoryreport"]
   },
   "language": "uz",
-  "identifier": [{
-    "system": "https://dhp.uz/fhir/core/sid/doc/uz/inventory-report",
-    "value": "INV-2026-000451",
-    "assigner": { "reference": "Organization/tashkent-diseases-hospital" }
-  }],
   "status": "active",
   "countType": "difference",
   "operationType": {

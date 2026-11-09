@@ -12,9 +12,9 @@ This profile adds no new mandatory cardinalities. Follow the base FHIR requireme
 
 - the status (draft / requested / active / entered-in-error) and the count type (snapshot or difference);
 - for a difference report, the operation type (addition, subtraction or no change) and its reason, such as a new receipt, a transfer or a write-off;
-- when the report was made, who made it (a practitioner, patient or related person), and the period it covers;
+- when the report was made, who made it (a practitioner, patient, related person or a device such as an automated dispensing cabinet), and the period it covers;
 - each listing: the location counted, the status of the stock there (available, quarantined, expired and so on), and when it was counted;
-- each counted item: its category (medicine, vaccine, medical device, blood component and so on), the quantity with its unit - a SNOMED CT unit such as a box or a vial, or a national one such as a pack - and what was counted;
+- each counted item: its inventory category (such as pending recount or damaged), the quantity with its unit - a SNOMED CT unit such as a box or a vial, or a national one such as a pack - and what was counted;
 - notes.
 
 ### Building the JSON, step by step
@@ -61,13 +61,6 @@ Each `inventoryListing` is one location at one moment, and each of its `item` en
     },
     "countingDateTime": "2026-10-27T09:30:00+05:00",
     "item": [{
-      "category": {
-        "coding": [{
-          "system": "https://terminology.dhp.uz/fhir/core/CodeSystem/inventory-item-category-cs",
-          "code": "invct-0001-00001",
-          "display": "Dori vositasi"
-        }]
-      },
       "quantity": {
         "value": 100,
         "unit": "Quti",
@@ -82,7 +75,7 @@ Each `inventoryListing` is one location at one moment, and each of its `item` en
 
 #### Reporting a change in stock
 
-A difference report says whether stock was added or removed in `operationType`, and why in `operationTypeReason`. Here 20 boxes arrived as a new receipt during October. `operationType` describes a change, so leave it out of snapshot reports. The `identifier` carries the number the managing organization's system gave the report, with that organization in `assigner`.
+A difference report says whether stock was added or removed in `operationType`, and why in `operationTypeReason`. Here 20 boxes arrived as a new receipt during October. `operationType` describes a change, so leave it out of snapshot reports.
 
 ```json
 {
@@ -91,11 +84,6 @@ A difference report says whether stock was added or removed in `operationType`, 
     "profile": ["https://dhp.uz/fhir/core/StructureDefinition/uz-core-inventoryreport"]
   },
   "language": "uz",
-  "identifier": [{
-    "system": "https://dhp.uz/fhir/core/sid/doc/uz/inventory-report",
-    "value": "INV-2026-000451",
-    "assigner": { "reference": "Organization/tashkent-diseases-hospital" }
-  }],
   "status": "active",
   "countType": "difference",
   "operationType": {
