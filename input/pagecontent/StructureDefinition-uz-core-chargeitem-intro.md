@@ -2,7 +2,7 @@ UZ Core ChargeItem records a billable item: a service, product or medication pro
 
 ### Mandatory and Must Support data elements
 
-The elements below must always be present (mandatory) or must be supported when data is available ([Must Support](must-support.html)). Must Support does not by itself make an element mandatory. The [formal profile](#profile) defines the exact cardinalities, types and terminology bindings.
+The elements below must always be present (mandatory) or must be supported when the data is available ([Must Support](must-support.html)) - not all are required, but your system must populate each Must Support element when it has the data and process it on receipt. This is the human-readable summary; the [formal views](#profile) below give the exact cardinalities, types, and terminology bindings.
 
 #### Each UZ Core ChargeItem Must Have
 
@@ -13,6 +13,7 @@ The base ChargeItem requires a `status`, a `code` describing the activity, and a
 - an `identifier` using the system assigned by the healthcare information system;
 - the `status` (planned / billable / not-billable / aborted / billed / entered-in-error / unknown) and the `code` for the charged service or product;
 - the `subject` and the `occurrence[x]` when available;
+- the `encounter` during which the charge was incurred, when known;
 - the `performer` and `performingOrganization`;
 - the `quantity` and `totalPriceComponent`;
 - the `service` that the charge relates to, such as the dispense, procedure or test that was provided.
@@ -68,7 +69,7 @@ Include the identifier assigned by the healthcare information system, the time o
   "subject": { "reference": "Patient/example-salim" },
   "occurrenceDateTime": "2026-03-02T11:00:00+05:00",
   "performer": [{
-    "actor": { "reference": "PractitionerRole/example-practitionerrole" }
+    "actor": { "reference": "Practitioner/example-practitioner" }
   }],
   "performingOrganization": { "reference": "Organization/tashkent-diseases-hospital" },
   "quantity": {

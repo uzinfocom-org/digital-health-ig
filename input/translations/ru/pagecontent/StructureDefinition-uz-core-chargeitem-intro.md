@@ -4,7 +4,7 @@ UZ Core ChargeItem фиксирует оплачиваемую позицию: �
 
 ### Обязательные и поддерживаемые (Must Support) элементы данных
 
-Приведённые ниже элементы должны присутствовать всегда (обязательные) или поддерживаться при наличии данных ([Must Support](must-support.html)). Must Support сам по себе не делает элемент обязательным. [Формальный профиль](#profile) задаёт точные кардинальности, типы и терминологические связки.
+Указанные ниже элементы должны либо всегда присутствовать (обязательные элементы), либо поддерживаться при наличии соответствующих данных ([Must Support](must-support.html)). Не все они обязательны, однако система должна заполнять каждый элемент Must Support при наличии данных и обрабатывать его при получении. Ниже приведено человекочитаемое резюме; [формальные представления](#profile) содержат точные кардинальности, типы и терминологические привязки.
 
 #### Каждый UZ Core ChargeItem должен содержать
 
@@ -15,6 +15,7 @@ UZ Core ChargeItem фиксирует оплачиваемую позицию: �
 - `identifier` с системой, назначенной медицинской информационной системой;
 - `status` (planned / billable / not-billable / aborted / billed / entered-in-error / unknown) и `code` оплачиваемой услуги или товара;
 - `subject` и `occurrence[x]`, если они известны;
+- `encounter`, в ходе которого возникло начисление, если он известен;
 - `performer` и `performingOrganization`;
 - `quantity` и `totalPriceComponent`;
 - `service`, связанный с начислением, например отпуск лекарства, процедура или анализ.
@@ -70,7 +71,7 @@ UZ Core ChargeItem фиксирует оплачиваемую позицию: �
   "subject": { "reference": "Patient/example-salim" },
   "occurrenceDateTime": "2026-03-02T11:00:00+05:00",
   "performer": [{
-    "actor": { "reference": "PractitionerRole/example-practitionerrole" }
+    "actor": { "reference": "Practitioner/example-practitioner" }
   }],
   "performingOrganization": { "reference": "Organization/tashkent-diseases-hospital" },
   "quantity": {

@@ -1,7 +1,7 @@
 CodeSystem: ChargeItemCodeCS
 Id: charge-item-code-cs
-Title: "Charge item code translations"
-Description: "Charge item code supplement with translations in Uzbek and Russian"
+Title: "ChargeItem code translations"
+Description: "ChargeItem code supplement with translations in Uzbek and Russian"
 
 * insert SupplementCodeSystemDraft(charge-item-code-cs, $sct, 2026.1.0)
 

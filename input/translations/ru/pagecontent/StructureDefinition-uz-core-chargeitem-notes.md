@@ -41,7 +41,7 @@ POST [base]/ChargeItem
 
 ```
 PUT [base]/ChargeItem/[id]
-If-Match: W/"3"   # ETag из последнего чтения; 412, если ресурс изменился
+If-Match: W/"3"   # the ETag from your last read; 412 if it changed since
 ```
 
 Список поддерживаемых параметров поиска см. в [CapabilityStatement](CapabilityStatement-DHPCapabilityStatement.html).

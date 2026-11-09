@@ -1,7 +1,7 @@
 ValueSet: ChargeItemCodeVS
 Id: charge-item-code-vs
-Title: "Charge item code"
-Description: "Charge item codes"
+Title: "ChargeItem code"
+Description: "ChargeItem codes"
 * ^url = "https://terminology.dhp.uz/fhir/core/ValueSet/charge-item-code-vs"
 * ^experimental = true
 * ^extension[0].url = $valueset-supplement

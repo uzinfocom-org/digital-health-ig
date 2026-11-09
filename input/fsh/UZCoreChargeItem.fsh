@@ -26,6 +26,11 @@ Description: "Uzbekistan Core ChargeItem profile, used to record a billable serv
 * subject MS
 * subject only Reference(UZCorePatient or UZCoreGroup)
 
+* partOf only Reference(UZCoreChargeItem)
+
+* encounter MS
+* encounter only Reference(UZCoreEncounter)
+
 * occurrence[x] MS
 
 * performer MS
@@ -34,8 +39,12 @@ Description: "Uzbekistan Core ChargeItem profile, used to record a billable serv
 
 * performingOrganization MS
 * performingOrganization only Reference(UZCoreOrganization)
+* requestingOrganization only Reference(UZCoreOrganization)
+* costCenter only Reference(UZCoreOrganization)
 
 * quantity MS
+
+* enterer only Reference(UZCorePractitioner or UZCorePractitionerRole or UZCoreOrganization or UZCorePatient or UZCoreDevice or UZCoreRelatedPerson)
 
 * totalPriceComponent MS
 * totalPriceComponent ^short = "Total price of the charged quantity"
@@ -54,7 +63,7 @@ Usage: #example
 * code = $sct#373784005 "Dispensing medication"
 * subject = Reference(example-salim)
 * occurrenceDateTime = "2026-03-02T11:00:00+05:00"
-* performer.actor = Reference(example-practitionerrole)
+* performer.actor = Reference(example-practitioner)
 * performingOrganization = Reference(tashkent-diseases-hospital)
 
 * quantity

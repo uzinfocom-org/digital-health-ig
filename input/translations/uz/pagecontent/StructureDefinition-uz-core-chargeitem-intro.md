@@ -2,9 +2,9 @@
 
 UZ Core ChargeItem haq olinadigan pozitsiyani qayd etadi: [bemorga](StructureDefinition-uz-core-patient.html) ko'rsatilgan xizmat, berilgan mahsulot yoki dori, ularning miqdori va narxi bilan. Resurs nima uchun haq olinayotganini ko'rsatadi va hisob yozuvini uni taqdim etgan hodisa bilan bog'laydi, masalan [MedicationDispense](StructureDefinition-uz-core-medication-dispense.html), [Procedure](StructureDefinition-uz-core-procedure.html), [Observation](StructureDefinition-uz-core-observation.html) yoki [ServiceRequest](StructureDefinition-uz-core-servicerequest.html). Profildagi identifier bo'lagi tibbiy axborot tizimi bergan ChargeItem identifikatorini olib yuradi.
 
-### Majburiy va qo'llab-quvvatlanishi kerak bo'lgan (Must Support) ma'lumotlar
+### Majburiy va Must Support ma'lumot elementlari
 
-Quyidagi elementlar doimo bo'lishi (majburiy) yoki ma'lumot mavjud bo'lganda qo'llab-quvvatlanishi kerak ([Must Support](must-support.html)). Must Support belgilanishi elementni o'z-o'zidan majburiy qilmaydi. [Rasmiy profil](#profile) aniq kardinallik, tur va terminologik bog'lanishlarni belgilaydi.
+Quyidagi elementlar doimo mavjud bo'lishi (majburiy) yoki tegishli ma'lumot mavjud bo'lganda qo'llab-quvvatlanishi ([Must Support](must-support.html)) kerak. Ularning barchasi ham majburiy emas, biroq tizim ma'lumotga ega bo'lsa, har bir Must Support elementini to'ldirishi va uni qabul qilganda qayta ishlashi kerak. Quyida inson o'qishi uchun mo'ljallangan qisqacha tavsif berilgan; pastdagi [formal ko'rinishlarda](#profile) aniq karralilik, turlar va terminologik bog'lanishlar keltirilgan.
 
 #### Har bir UZ Core ChargeItem da bo'lishi kerak
 
@@ -15,6 +15,7 @@ Asosiy ChargeItem resursida `status`, haq olinayotgan xizmatni ifodalovchi `code
 - tibbiy axborot tizimi belgilagan tizimga ega `identifier`;
 - `status` (planned / billable / not-billable / aborted / billed / entered-in-error / unknown) va haq olinayotgan xizmat yoki mahsulotning `code` i;
 - mavjud bo'lsa `subject` va `occurrence[x]`;
+- ma'lum bo'lsa, hisob yuzaga kelgan `encounter`;
 - `performer` va `performingOrganization`;
 - `quantity` va `totalPriceComponent`;
 - hisob tegishli bo'lgan `service`, masalan dori berish, muolaja yoki tahlil.
@@ -70,7 +71,7 @@ Tibbiy axborot tizimi bergan identifikator, hisob vaqti, miqdor va summa hamda d
   "subject": { "reference": "Patient/example-salim" },
   "occurrenceDateTime": "2026-03-02T11:00:00+05:00",
   "performer": [{
-    "actor": { "reference": "PractitionerRole/example-practitionerrole" }
+    "actor": { "reference": "Practitioner/example-practitioner" }
   }],
   "performingOrganization": { "reference": "Organization/tashkent-diseases-hospital" },
   "quantity": {
