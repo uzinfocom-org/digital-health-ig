@@ -95,7 +95,7 @@ Description: """
     * ^property[=].valueBoolean = true
     * ^property[+].code = #country
     * ^property[=].valueCoding = $iso-3166#UZ
-    * #https://dhp.uz/fhir/identifier/drug-issue "ChargeItem identifiers assigned by healthcare information systems in Uzbekistan"
+    * #https://dhp.uz/fhir/core/sid/doc/uz/charge-item "ChargeItem identifiers assigned by healthcare information systems in Uzbekistan"
       * ^property[0].code = #idtype
       * ^property[=].valueCoding = $identifier-type#PLAC
       * ^property[+].code = #country

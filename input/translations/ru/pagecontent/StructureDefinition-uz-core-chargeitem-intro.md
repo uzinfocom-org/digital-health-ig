@@ -57,7 +57,7 @@ UZ Core ChargeItem фиксирует оплачиваемую позицию: �
     "profile": ["https://dhp.uz/fhir/core/StructureDefinition/uz-core-chargeitem"]
   },
   "identifier": [{
-    "system": "https://dhp.uz/fhir/identifier/drug-issue",
+    "system": "https://dhp.uz/fhir/core/sid/doc/uz/charge-item",
     "value": "CI-2026-0001"
   }],
   "status": "billable",
