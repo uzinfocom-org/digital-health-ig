@@ -26,10 +26,16 @@ Yozuvni yaratishdan oldin uni qidiring:
 # by DHP identifier - the reliable match
 GET [base]/MedicationKnowledge?identifier=https://dhp.uz/fhir/core/sid/doc/uz/medication-knowledge|MK-2026-000123
 
+# by product - the entry for a Medication you already have, or for its registration number
+GET [base]/MedicationKnowledge?associated-medication=Medication/example-medication
+GET [base]/MedicationKnowledge?associated-medication.identifier=https://uzpharminfo.uz/registration_number|UZ/MED/2024/00123
+
 # active entries, or entries with a price from a given source
 GET [base]/MedicationKnowledge?status=active
 GET [base]/MedicationKnowledge?source-cost=DTSJ
 ```
+
+`associated-medication` - [UZ Core qidiruv parametri](SearchParameter-uz-core-medicationknowledge-associated-medication.html): FHIR R5 da `associatedMedication` uchun parametr yo'q. Medication ni avval o'qimasdan preparatning ro'yxatdan o'tish raqami yoki GTIN bo'yicha qidirish uchun uni `identifier` bilan zanjir qilib ishlating.
 
 ### JSON ni bosqichma-bosqich qurish
 

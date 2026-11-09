@@ -14,6 +14,7 @@ GET [base]/MedicationKnowledge/[id]
 
 ```
 GET [base]/MedicationKnowledge?identifier=https://dhp.uz/fhir/core/sid/doc/uz/medication-knowledge|MK-2026-000123
+GET [base]/MedicationKnowledge?associated-medication=Medication/[id]
 ```
 
 **Другие полезные поиски**
@@ -23,7 +24,7 @@ GET [base]/MedicationKnowledge?status=active
 GET [base]/MedicationKnowledge?source-cost=DTSJ
 ```
 
-MedicationKnowledge пока не указан в [CapabilityStatement](CapabilityStatement-DHPCapabilityStatement.html); приведённые выше поиски используют стандартные параметры поиска MedicationKnowledge из FHIR R5 (`identifier`, `status`, `source-cost`).
+MedicationKnowledge пока не указан в [CapabilityStatement](CapabilityStatement-DHPCapabilityStatement.html); `identifier`, `status` и `source-cost` - стандартные параметры поиска MedicationKnowledge из FHIR R5, а `associated-medication` - [параметр поиска UZ Core](SearchParameter-uz-core-medicationknowledge-associated-medication.html).
 
 **Создание** (только после того, как вы убедились, что записи нет)
 

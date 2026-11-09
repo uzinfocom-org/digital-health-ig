@@ -14,6 +14,7 @@ GET [base]/MedicationKnowledge/[id]
 
 ```
 GET [base]/MedicationKnowledge?identifier=https://dhp.uz/fhir/core/sid/doc/uz/medication-knowledge|MK-2026-000123
+GET [base]/MedicationKnowledge?associated-medication=Medication/[id]
 ```
 
 **Boshqa foydali qidiruvlar**
@@ -23,7 +24,7 @@ GET [base]/MedicationKnowledge?status=active
 GET [base]/MedicationKnowledge?source-cost=DTSJ
 ```
 
-MedicationKnowledge hali [CapabilityStatement](CapabilityStatement-DHPCapabilityStatement.html) da ko'rsatilmagan; yuqoridagi qidiruvlar FHIR R5 dagi standart MedicationKnowledge qidiruv parametrlaridir (`identifier`, `status`, `source-cost`).
+MedicationKnowledge hali [CapabilityStatement](CapabilityStatement-DHPCapabilityStatement.html) da ko'rsatilmagan; `identifier`, `status` va `source-cost` FHIR R5 dagi standart MedicationKnowledge qidiruv parametrlari, `associated-medication` esa [UZ Core qidiruv parametri](SearchParameter-uz-core-medicationknowledge-associated-medication.html).
 
 **Yaratish** (faqat yozuv yo'qligiga ishonch hosil qilgandan keyin)
 
