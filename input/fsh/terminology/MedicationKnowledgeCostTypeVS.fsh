@@ -1,7 +1,7 @@
 ValueSet: MedicationKnowledgeCostTypeVS
 Id: medicationknowledge-cost-type-vs
 Title: "MedicationKnowledge cost type"
-Description: "MedicationKnowledge cost types in Uzbekistan"
+Description: "MedicationKnowledge cost types"
 * ^url = "https://terminology.dhp.uz/fhir/core/ValueSet/medicationknowledge-cost-type-vs"
 * ^experimental = true
 * ^language = #uz

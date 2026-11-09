@@ -31,6 +31,9 @@ Description: "Uzbekistan Core MedicationKnowledge profile, used to represent ref
 * author only Reference(UZCoreOrganization)
 * author ^short = "Organization responsible for publishing, approving or maintaining this record in DHP (e.g. SHIF for reimbursement or price ceiling)"
 
+* regulatory.regulatoryAuthority only Reference(UZCoreOrganization)
+* relatedMedicationKnowledge.reference only Reference(UZCoreMedicationKnowledge)
+
 * cost MS
 * cost ^short = "Price information of the medicinal product (e.g. price ceiling, wholesale, retail, SHIF price)"
 * cost.effectiveDate 1..1 MS
@@ -38,13 +41,14 @@ Description: "Uzbekistan Core MedicationKnowledge profile, used to represent ref
 * cost.type MS
 * cost.type from MedicationKnowledgeCostTypeVS (extensible)
 * cost.type ^short = "Type of price set for the medicinal product"
-* cost.source ^short = "Organization or system that provided the price (e.g. UzPharmAgency, SHIF)"
+* cost.source ^short = "Organization or system that provided the price (e.g. DTSJ)"
+* cost.cost[x] MS
 * cost.cost[x] only Money
 * cost.cost[x] ^short = "Monetary value of the price with its currency"
 
 Instance: example-medication-knowledge-price-ceiling
 InstanceOf: UZCoreMedicationKnowledge
-Title: "Example UZ Core MedicationKnowledge - Price ceiling"
+Title: "Example UZ Core MedicationKnowledge - Price Ceiling"
 Description: "Example medication knowledge record with the price ceiling set by the State Health Insurance Fund."
 Usage: #example
 
@@ -65,6 +69,7 @@ Usage: #example
 
 Instance: example-organization-shif
 InstanceOf: UZCoreOrganization
+Title: "Example UZ Core Organization - State Health Insurance Fund"
 Description: "Example of the State Health Insurance Fund as the organization that publishes medication prices"
 Usage: #example
 * language = #uz

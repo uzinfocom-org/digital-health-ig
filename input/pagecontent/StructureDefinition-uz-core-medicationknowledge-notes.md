@@ -11,7 +11,7 @@ GET [base]/MedicationKnowledge/[id]
 **Find an entry before creating one (the usual first step)**
 
 ```
-GET [base]/MedicationKnowledge?identifier=https://dhp.uz/fhir/core/sid/prd/uz/medication-knowledge|MK-2026-000123
+GET [base]/MedicationKnowledge?identifier=https://dhp.uz/fhir/core/sid/doc/uz/medication-knowledge|MK-2026-000123
 ```
 
 **Other useful searches**

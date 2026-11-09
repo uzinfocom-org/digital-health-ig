@@ -8,7 +8,7 @@ UZ Core MedicationKnowledge содержит справочные сведени
 
 #### Каждое UZ Core MedicationKnowledge должно содержать
 
-У базового ресурса MedicationKnowledge нет обязательных элементов верхнего уровня. Этот профиль добавляет два: ровно один `associatedMedication` - ссылку на [UZ Core Medication](StructureDefinition-uz-core-medication.html), к которому относится запись, - и хотя бы один `cost`. Каждый `cost` должен содержать один период `effectiveDate`, `type`, указывающий, какая это цена, и саму цену в `costMoney`. Если передаётся идентификатор DHP, обязательны и его `system`, и его `value`.
+У базового ресурса MedicationKnowledge нет обязательных элементов верхнего уровня. Этот профиль добавляет один: ровно один `associatedMedication` - ссылку на [UZ Core Medication](StructureDefinition-uz-core-medication.html), к которому относится запись. Каждый передаваемый `cost` должен содержать один период `effectiveDate`, `type`, указывающий, какая это цена, и саму цену в `costMoney`. Если передаётся идентификатор DHP, обязательны и его `system`, и его `value`.
 
 #### Каждое UZ Core MedicationKnowledge должно поддерживать
 
@@ -24,7 +24,7 @@ UZ Core MedicationKnowledge содержит справочные сведени
 
 ```
 # by DHP identifier - the reliable match
-GET [base]/MedicationKnowledge?identifier=https://dhp.uz/fhir/core/sid/prd/uz/medication-knowledge|MK-2026-000123
+GET [base]/MedicationKnowledge?identifier=https://dhp.uz/fhir/core/sid/doc/uz/medication-knowledge|MK-2026-000123
 
 # active entries, or entries with a price from a given source
 GET [base]/MedicationKnowledge?status=active
@@ -33,11 +33,11 @@ GET [base]/MedicationKnowledge?source-cost=DTSJ
 
 ### Сборка JSON, шаг за шагом
 
-Примеры ниже идут от наименьшего экземпляра, который примет сервер, до записи, цена в которой меняется. Скопируйте один из них и адаптируйте - каждое показанное значение проходит валидацию по этому профилю. Полный эталонный экземпляр приведён по ссылке внизу страницы ([предельная цена](MedicationKnowledge-example-medication-knowledge-price-ceiling.html)).
+Примеры ниже идут от записи с одной ценой до записи, цена в которой меняется. Скопируйте один из них и адаптируйте - каждое показанное значение проходит валидацию по этому профилю. Полный эталонный экземпляр приведён по ссылке внизу страницы ([предельная цена](MedicationKnowledge-example-medication-knowledge-price-ceiling.html)).
 
 #### Наименьший MedicationKnowledge, который вам следует отправлять
 
-`associatedMedication` и один `cost` - единственные обязательные элементы. Каждый ресурс UZ Core также должен указывать в `meta.profile` профиль, которому он заявляет соответствие, - так сервер узнаёт, по каким правилам его проверять. Передавайте и `status`, чтобы получатели знали, что запись используется:
+`associatedMedication` - единственный обязательный элемент. Каждый ресурс UZ Core также должен указывать в `meta.profile` профиль, которому он заявляет соответствие, - так сервер узнаёт, по каким правилам его проверять. Передавайте и `status`, чтобы получатели знали, что запись используется, и `cost` для каждой утверждённой цены:
 
 ```json
 {
@@ -77,7 +77,7 @@ GET [base]/MedicationKnowledge?source-cost=DTSJ
   "language": "uz",
   "identifier": [
     {
-      "system": "https://dhp.uz/fhir/core/sid/prd/uz/medication-knowledge",
+      "system": "https://dhp.uz/fhir/core/sid/doc/uz/medication-knowledge",
       "value": "MK-2026-000123"
     }
   ],
@@ -129,7 +129,7 @@ GET [base]/MedicationKnowledge?source-cost=DTSJ
 }
 ```
 
-`cost.type` имеет расширяемую (`extensible`) связку: используйте код из [набора значений типов цен](ValueSet-medicationknowledge-cost-type-vs.html), когда подходящий есть, и другую систему кодов - только для цены, которую ни один из них не покрывает. `source` - свободный текст, и поиск `source-cost` сопоставляет его точно, поэтому всегда пишите название органа одинаково. Coding в `status` передаётся без `display`: сервер заполняет его сам, а узбекские и русские отображаемые названия берутся из [дополнения статусов MedicationKnowledge](CodeSystem-medicationknowledge-status-cs.html).
+`cost.type` имеет расширяемую (`extensible`) связку: используйте код из [набора значений типов цен](ValueSet-medicationknowledge-cost-type-vs.html), когда подходящий есть, и другую систему кодов - только для цены, которую ни один из них не покрывает. `source` - свободный текст, и поиск `source-cost` сопоставляет его точно, поэтому всегда пишите название органа одинаково. `status` - простой код без `display`; его узбекские и русские отображаемые названия берутся из [дополнения статусов MedicationKnowledge](CodeSystem-medicationknowledge-status-cs.html).
 
 #### Когда цена меняется
 
@@ -181,6 +181,6 @@ GET [base]/MedicationKnowledge?source-cost=DTSJ
 
 | Идентификатор | `system` | Кем выдаётся |
 |---|---|---|
-| [Идентификатор MedicationKnowledge](NamingSystem-uzb-medication-knowledge-number.html) | `https://dhp.uz/fhir/core/sid/prd/uz/medication-knowledge` | DHP или система-источник, которая ведёт запись |
+| [Идентификатор MedicationKnowledge](NamingSystem-uzb-medication-knowledge-number.html) | `https://dhp.uz/fhir/core/sid/doc/uz/medication-knowledge` | DHP |
 
 Примеры вызовов API см. в разделе [Быстрый старт](#quick-start) внизу этой страницы.

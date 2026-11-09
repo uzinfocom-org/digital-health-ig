@@ -8,7 +8,7 @@ Quyidagi elementlar har doim mavjud bo'lishi (majburiy) yoki ma'lumot mavjud bo'
 
 #### Har bir UZ Core MedicationKnowledge quyidagilarga ega bo'lishi shart
 
-Bazaviy MedicationKnowledge resursida yuqori darajadagi majburiy elementlar yo'q. Ushbu profil ikkitasini qo'shadi: aynan bitta `associatedMedication` - yozuv tegishli bo'lgan [UZ Core Medication](StructureDefinition-uz-core-medication.html) ga havola - va kamida bitta `cost`. Har bir `cost` da bitta `effectiveDate` davri, qaysi narx ekanini bildiruvchi `type` va `costMoney` dagi narxning o'zi bo'lishi shart. DHP identifikatori yuborilganda uning `system` i ham, `value` si ham majburiy.
+Bazaviy MedicationKnowledge resursida yuqori darajadagi majburiy elementlar yo'q. Ushbu profil bittasini qo'shadi: aynan bitta `associatedMedication` - yozuv tegishli bo'lgan [UZ Core Medication](StructureDefinition-uz-core-medication.html) ga havola. Yuborilgan har bir `cost` da bitta `effectiveDate` davri, qaysi narx ekanini bildiruvchi `type` va `costMoney` dagi narxning o'zi bo'lishi shart. DHP identifikatori yuborilganda uning `system` i ham, `value` si ham majburiy.
 
 #### Har bir UZ Core MedicationKnowledge quyidagilarni qo'llab-quvvatlashi shart
 
@@ -24,7 +24,7 @@ Yozuvni yaratishdan oldin uni qidiring:
 
 ```
 # by DHP identifier - the reliable match
-GET [base]/MedicationKnowledge?identifier=https://dhp.uz/fhir/core/sid/prd/uz/medication-knowledge|MK-2026-000123
+GET [base]/MedicationKnowledge?identifier=https://dhp.uz/fhir/core/sid/doc/uz/medication-knowledge|MK-2026-000123
 
 # active entries, or entries with a price from a given source
 GET [base]/MedicationKnowledge?status=active
@@ -33,11 +33,11 @@ GET [base]/MedicationKnowledge?source-cost=DTSJ
 
 ### JSON ni bosqichma-bosqich qurish
 
-Quyidagi misollar server qabul qiladigan eng kichik nusxadan narxi o'zgaradigan yozuvgacha boradi. Birini nusxalab moslashtiring - ko'rsatilgan har bir qiymat ushbu profil bo'yicha tekshiruvdan o'tadi. To'liq namunaviy nusxa sahifaning pastki qismida havola qilingan ([cheklangan narx](MedicationKnowledge-example-medication-knowledge-price-ceiling.html)).
+Quyidagi misollar bitta narxli yozuvdan narxi o'zgaradigan yozuvgacha boradi. Birini nusxalab moslashtiring - ko'rsatilgan har bir qiymat ushbu profil bo'yicha tekshiruvdan o'tadi. To'liq namunaviy nusxa sahifaning pastki qismida havola qilingan ([cheklangan narx](MedicationKnowledge-example-medication-knowledge-price-ceiling.html)).
 
 #### Yuborishingiz kerak bo'lgan eng kichik MedicationKnowledge
 
-`associatedMedication` va bitta `cost` yagona majburiy elementlardir. Har bir UZ Core resursi, shuningdek, `meta.profile` da o'zi muvofiq deb da'vo qiladigan profilni ko'rsatishi shart - server qaysi qoidalar bo'yicha tekshirishni shu orqali biladi. Qabul qiluvchilar yozuv foydalanishda ekanini bilishi uchun `status` ni ham yuboring:
+`associatedMedication` yagona majburiy elementdir. Har bir UZ Core resursi, shuningdek, `meta.profile` da o'zi muvofiq deb da'vo qiladigan profilni ko'rsatishi shart - server qaysi qoidalar bo'yicha tekshirishni shu orqali biladi. Qabul qiluvchilar yozuv foydalanishda ekanini bilishi uchun `status` ni, har bir tasdiqlangan narx uchun esa `cost` ni ham yuboring:
 
 ```json
 {
@@ -77,7 +77,7 @@ Amalda yozuv mahsulotning barcha tasdiqlangan narxlarini, har birini alohida `co
   "language": "uz",
   "identifier": [
     {
-      "system": "https://dhp.uz/fhir/core/sid/prd/uz/medication-knowledge",
+      "system": "https://dhp.uz/fhir/core/sid/doc/uz/medication-knowledge",
       "value": "MK-2026-000123"
     }
   ],
@@ -129,7 +129,7 @@ Amalda yozuv mahsulotning barcha tasdiqlangan narxlarini, har birini alohida `co
 }
 ```
 
-`cost.type` kengaytiriladigan (`extensible`) bog'lanishga ega: mos keladigan kod bo'lsa, [narx turlari qiymatlar to'plamidagi](ValueSet-medicationknowledge-cost-type-vs.html) koddan foydalaning, boshqa kod tizimidan esa faqat ularning hech biri qamrab olmaydigan narx uchun foydalaning. `source` erkin matn bo'lib, `source-cost` qidiruvi uni aniq moslik bo'yicha topadi, shuning uchun har bir organ nomini har doim bir xil yozing. `status` dagi coding `display` siz yuboriladi: uni server o'zi to'ldiradi, o'zbekcha va ruscha ko'rsatiladigan nomlar esa [MedicationKnowledge holatlari qo'shimchasidan](CodeSystem-medicationknowledge-status-cs.html) olinadi.
+`cost.type` kengaytiriladigan (`extensible`) bog'lanishga ega: mos keladigan kod bo'lsa, [narx turlari qiymatlar to'plamidagi](ValueSet-medicationknowledge-cost-type-vs.html) koddan foydalaning, boshqa kod tizimidan esa faqat ularning hech biri qamrab olmaydigan narx uchun foydalaning. `source` erkin matn bo'lib, `source-cost` qidiruvi uni aniq moslik bo'yicha topadi, shuning uchun har bir organ nomini har doim bir xil yozing. `status` - `display` siz oddiy kod; uning o'zbekcha va ruscha ko'rsatiladigan nomlari [MedicationKnowledge holatlari qo'shimchasidan](CodeSystem-medicationknowledge-status-cs.html) olinadi.
 
 #### Narx o'zgarganda
 
@@ -181,6 +181,6 @@ Yozuv quyidagi DHP identifikatoriga ega bo'lishi mumkin. U `system` URI si bo'yi
 
 | Identifikator | `system` | Kim tomonidan beriladi |
 |---|---|---|
-| [MedicationKnowledge identifikatori](NamingSystem-uzb-medication-knowledge-number.html) | `https://dhp.uz/fhir/core/sid/prd/uz/medication-knowledge` | DHP yoki yozuvni yurituvchi manba tizim |
+| [MedicationKnowledge identifikatori](NamingSystem-uzb-medication-knowledge-number.html) | `https://dhp.uz/fhir/core/sid/doc/uz/medication-knowledge` | DHP |
 
 Misol API chaqiruvlari uchun ushbu sahifaning pastki qismidagi [Tez boshlash](#quick-start) ga qarang.

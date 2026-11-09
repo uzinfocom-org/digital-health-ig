@@ -6,7 +6,7 @@ The elements below must always be present (mandatory) or must be supported when 
 
 #### Each UZ Core MedicationKnowledge Must Have
 
-The base MedicationKnowledge resource has no mandatory elements at the top level. This profile adds two: exactly one `associatedMedication`, a reference to the [UZ Core Medication](StructureDefinition-uz-core-medication.html) the entry is about, and at least one `cost`. Each `cost` must have one `effectiveDate` period, a `type` saying which price it is, and the price itself as `costMoney`. When the DHP identifier is sent, both its `system` and its `value` are required.
+The base MedicationKnowledge resource has no mandatory elements at the top level. This profile adds one: exactly one `associatedMedication`, a reference to the [UZ Core Medication](StructureDefinition-uz-core-medication.html) the entry is about. Each `cost` that is sent must have one `effectiveDate` period, a `type` saying which price it is, and the price itself as `costMoney`. When the DHP identifier is sent, both its `system` and its `value` are required.
 
 #### Each UZ Core MedicationKnowledge Must Support
 
@@ -22,7 +22,7 @@ Look an entry up before you create one:
 
 ```
 # by DHP identifier - the reliable match
-GET [base]/MedicationKnowledge?identifier=https://dhp.uz/fhir/core/sid/prd/uz/medication-knowledge|MK-2026-000123
+GET [base]/MedicationKnowledge?identifier=https://dhp.uz/fhir/core/sid/doc/uz/medication-knowledge|MK-2026-000123
 
 # active entries, or entries with a price from a given source
 GET [base]/MedicationKnowledge?status=active
@@ -31,11 +31,11 @@ GET [base]/MedicationKnowledge?source-cost=DTSJ
 
 ### Building the JSON, step by step
 
-The examples below go from the smallest instance the server will accept to an entry whose price changes. Copy one and adapt it - every value shown validates against this profile. The complete reference instance is linked at the bottom of the page ([price ceiling](MedicationKnowledge-example-medication-knowledge-price-ceiling.html)).
+The examples below go from an entry with a single price to an entry whose price changes. Copy one and adapt it - every value shown validates against this profile. The complete reference instance is linked at the bottom of the page ([price ceiling](MedicationKnowledge-example-medication-knowledge-price-ceiling.html)).
 
 #### The smallest MedicationKnowledge you should send
 
-`associatedMedication` and one `cost` are the only mandatory elements. Every UZ Core resource must also name the profile it claims to conform to in `meta.profile` - that is how the server knows which rules to validate against. Send the `status` as well, so receivers know the entry is in use:
+`associatedMedication` is the only mandatory element. Every UZ Core resource must also name the profile it claims to conform to in `meta.profile` - that is how the server knows which rules to validate against. Send the `status` as well, so receivers know the entry is in use, and a `cost` for each approved price:
 
 ```json
 {
@@ -75,7 +75,7 @@ In practice an entry carries every approved price of the product, each as its ow
   "language": "uz",
   "identifier": [
     {
-      "system": "https://dhp.uz/fhir/core/sid/prd/uz/medication-knowledge",
+      "system": "https://dhp.uz/fhir/core/sid/doc/uz/medication-knowledge",
       "value": "MK-2026-000123"
     }
   ],
@@ -127,7 +127,7 @@ In practice an entry carries every approved price of the product, each as its ow
 }
 ```
 
-`cost.type` is an `extensible` binding: use a code from the [cost type value set](ValueSet-medicationknowledge-cost-type-vs.html) whenever one fits, and another code system only for a price none of them covers. `source` is free text, and the `source-cost` search matches it exactly, so spell each authority the same way every time. The `status` coding carries no `display`: the server fills it in, and the Uzbek and Russian displays come from the [MedicationKnowledge status supplement](CodeSystem-medicationknowledge-status-cs.html).
+`cost.type` is an `extensible` binding: use a code from the [cost type value set](ValueSet-medicationknowledge-cost-type-vs.html) whenever one fits, and another code system only for a price none of them covers. `source` is free text, and the `source-cost` search matches it exactly, so spell each authority the same way every time. `status` is a plain code with no `display`; its Uzbek and Russian displays come from the [MedicationKnowledge status supplement](CodeSystem-medicationknowledge-status-cs.html).
 
 #### When a price changes
 
@@ -179,6 +179,6 @@ An entry may carry the DHP identifier below. It is selected by its `system` URI,
 
 | Identifier | `system` | Issued by |
 |---|---|---|
-| [Medication knowledge identifier](NamingSystem-uzb-medication-knowledge-number.html) | `https://dhp.uz/fhir/core/sid/prd/uz/medication-knowledge` | DHP or the source system that maintains the entry |
+| [Medication knowledge identifier](NamingSystem-uzb-medication-knowledge-number.html) | `https://dhp.uz/fhir/core/sid/doc/uz/medication-knowledge` | DHP |
 
 For example API calls, see the [Quick Start](#quick-start) at the bottom of this page.

@@ -13,7 +13,7 @@ GET [base]/MedicationKnowledge/[id]
 **Поиск записи перед созданием (обычный первый шаг)**
 
 ```
-GET [base]/MedicationKnowledge?identifier=https://dhp.uz/fhir/core/sid/prd/uz/medication-knowledge|MK-2026-000123
+GET [base]/MedicationKnowledge?identifier=https://dhp.uz/fhir/core/sid/doc/uz/medication-knowledge|MK-2026-000123
 ```
 
 **Другие полезные поиски**
