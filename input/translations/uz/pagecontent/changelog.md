@@ -10,7 +10,7 @@
 
 [MedicationRequest holati sabablari](ValueSet-medicationrequest-status-reason-vs.html) ga DMED elektron retseptini bekor qilishning ikki sababi uchun [tibbiy qarshi ko'rsatma va boshqa sabab](CodeSystem-medicationrequest-status-reason-local-cs.html) milliy kodlari o'zbek, rus va ingliz tilidagi nomlari bilan qo'shildi. HL7 da ularning hech biriga ekvivalent yo'q.
 
-[O'lchov birliklari kodlari](CodeSystem-unit-of-measurement-cs.html): Farmatsevtika qo'mitasi dori vositalari reyestrining kodi bo'lmagan to'qqizta birligi qo'shildi, endi reyestrning har bir `measure_id` qiymati shu yerda kod sifatida mavjud: `326` dona, `340` millilitr, `404` milligramm, `386` mg/5 ml, `387` mg/10 ml, `388` mg/100 ml, `403` mg/2 ml, `402` g/5 ml va `461` g/1000 ml. [O'lchov birliklari xaritasi](ConceptMap-unit-of-measurement-cm.html) ularning har birini UCUM bilan bog'laydi.
+[O'lchov birliklari kodlari](CodeSystem-unit-of-measurement-cs.html): Farmatsevtika qo'mitasi dori vositalari reyestrining to'qqizta birligi qo'shildi, ular [o'lchov birliklari xaritasida](ConceptMap-unit-of-measurement-cm.html) UCUM bilan bog'langan.
 
 [O'lchov birliklari xaritasi](ConceptMap-unit-of-measurement-cm.html): UCUM kodi bo'lmagan 30 ta birlik uchun UCUM kodlari qo'shildi, masalan xalqaro birlik `[iU]`, dozaga milligramm `mg/{dose}`, litrga gramm `g/L` va koloniya hosil qiluvchi birlik `[CFU]`.
 
