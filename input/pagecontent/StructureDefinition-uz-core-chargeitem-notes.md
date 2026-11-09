@@ -26,7 +26,7 @@ POST [base]/ChargeItem
   "resourceType": "ChargeItem",
   "meta": { "profile": [ "https://dhp.uz/fhir/core/StructureDefinition/uz-core-chargeitem" ] },
   "identifier": [{
-    "system": "https://dhp.uz/fhir/core/sid/doc/uz/dmed/preferential-referral",
+    "system": "https://dhp.uz/fhir/identifier/drug-issue",
     "value": "[charge-item-id]"
   }],
   "status": "billable",
