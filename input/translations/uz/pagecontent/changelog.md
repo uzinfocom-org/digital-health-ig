@@ -6,7 +6,7 @@
 
 [Composition hujjat turlari](CodeSystem-composition-type-cs.html): 399-son buyruqning 112-shakli - foliy kislotasi, 25-OH D vitamini va B12 vitaminiga IXLA tahlili uchun `emdoc-0010-0471` kodi qo'shildi.
 
-[Dori shakllari](CodeSystem-medication-doseform-cs.html): DMED elektron retseptining kodi bo'lmagan dori shakllari uchun `HRB101` dorivor o'simlik xomashyosi, `JEL101` dorivor jele, `KIT101` to'plam, `LOT101` losyon, `SHA101` dorivor shampun va `TEA101` dorivor o'simliklar yig'masi kodlari o'zbek, rus va ingliz tilidagi nomlari bilan qo'shildi.
+[Dori shakllari](CodeSystem-medication-doseform-cs.html): DMED elektron retsepti va Farmatsevtika qo'mitasi dori vositalari reyestrining kodi bo'lmagan dori shakllari uchun `CTP101` kataplazma, `DRS101` dorivor bog'lam, `HRB101` dorivor o'simlik xomashyosi, `JEL101` dorivor jele, `KIT101` to'plam, `LOT101` losyon, `SHA101` dorivor shampun, `SUB101` substansiya va `TEA101` dorivor o'simliklar yig'masi kodlari o'zbek, rus va ingliz tilidagi nomlari bilan qo'shildi.
 
 [MedicationRequest holati sabablari](ValueSet-medicationrequest-status-reason-vs.html) ga DMED elektron retseptini bekor qilishning ikki sababi uchun [tibbiy qarshi ko'rsatma va boshqa sabab](CodeSystem-medicationrequest-status-reason-local-cs.html) milliy kodlari o'zbek, rus va ingliz tilidagi nomlari bilan qo'shildi. HL7 da ularning hech biriga ekvivalent yo'q.
 

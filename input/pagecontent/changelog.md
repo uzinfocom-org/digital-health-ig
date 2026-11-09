@@ -8,7 +8,7 @@ Added [UZ Core CarePlan](StructureDefinition-uz-core-careplan.html), a general p
 
 [Composition types](CodeSystem-composition-type-cs.html) add `emdoc-0010-0471` for Order No. 399 form 112, a laboratory analysis of folic acid, 25-OH vitamin D and vitamin B12.
 
-[Medication dose form](CodeSystem-medication-doseform-cs.html) adds `HRB101` herbal substance, `JEL101` jelly, `KIT101` kit, `LOT101` lotion, `SHA101` medicated shampoo and `TEA101` herbal tea, with Uzbek, Russian and English names, for DMED e-prescription dose forms that had no code.
+[Medication dose form](CodeSystem-medication-doseform-cs.html) adds `CTP101` poultice, `DRS101` medicated dressing, `HRB101` herbal substance, `JEL101` jelly, `KIT101` kit, `LOT101` lotion, `SHA101` medicated shampoo, `SUB101` active substance and `TEA101` herbal tea, with Uzbek, Russian and English names, for DMED e-prescription and Pharmaceutical Committee drug registry dose forms that had no code.
 
 [MedicationRequest status reason](ValueSet-medicationrequest-status-reason-vs.html) adds national codes [medical contraindication and other](CodeSystem-medicationrequest-status-reason-local-cs.html), with Uzbek, Russian and English names, for the two reasons a DMED e-prescription is cancelled with. HL7 has no equivalent for either.
 

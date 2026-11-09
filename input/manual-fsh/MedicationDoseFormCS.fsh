@@ -2543,6 +2543,21 @@ Description: "Pharmaceutical dose forms (e.g., tablet, capsule, solution)."
   * ^designation[=].value = "набор"
   * ^designation[+].language = #en
   * ^designation[=].value = "kit"
+* #SUB101 "substansiya"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "субстанция"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "active substance"
+* #CTP101 "kataplazma"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "катаплазма"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "poultice"
+* #DRS101 "dorivor bog'lam"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "повязка лекарственная"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "medicated dressing"
 * #OTH101 "boshqa dori shakllari"
   * ^designation[0].language = #ru
   * ^designation[=].value = "другие лекарственные формы"

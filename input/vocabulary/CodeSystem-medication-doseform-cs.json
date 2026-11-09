@@ -8451,6 +8451,48 @@
       ]
     },
     {
+      "code": "SUB101",
+      "display": "substansiya",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "субстанция"
+        },
+        {
+          "language": "en",
+          "value": "active substance"
+        }
+      ]
+    },
+    {
+      "code": "CTP101",
+      "display": "kataplazma",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "катаплазма"
+        },
+        {
+          "language": "en",
+          "value": "poultice"
+        }
+      ]
+    },
+    {
+      "code": "DRS101",
+      "display": "dorivor bog'lam",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "повязка лекарственная"
+        },
+        {
+          "language": "en",
+          "value": "medicated dressing"
+        }
+      ]
+    },
+    {
       "code": "OTH101",
       "display": "boshqa dori shakllari",
       "designation": [
@@ -8465,5 +8507,5 @@
   "hierarchyMeaning": "is-a",
   "language": "uz",
   "experimental": true,
-  "count": 842
+  "count": 845
 }
