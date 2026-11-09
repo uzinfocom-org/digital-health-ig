@@ -80,7 +80,7 @@ Description: "Uzbekistan Core RelatedPerson profile, used to represent persons r
   * system 1..1 MS
   * system = $healthcard
   * type 1..1 MS
-  * type = $identifier-type#HC "Health card number"
+  * type = $identifier-type#HC
   * use = #official
   * value 1..1 MS
 
