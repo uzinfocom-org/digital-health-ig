@@ -264,3 +264,4 @@ Alias: $medication-admin-location = http://terminology.hl7.org/CodeSystem/medica
 Alias: $openEHR-administration = http://hl7.org/fhir/StructureDefinition/openEHR-administration
 Alias: $charge-item-identifier = https://dhp.uz/fhir/core/sid/doc/uz/dmed/preferential-referral
 Alias: $medication-total-volume-local-units = https://terminology.dhp.uz/fhir/core/CodeSystem/medication-total-volume-local-units-cs
+Alias: $chargeitem-status = http://hl7.org/fhir/chargeitem-status

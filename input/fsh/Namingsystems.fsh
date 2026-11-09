@@ -783,7 +783,7 @@ Usage: #definition
 * type = $identifier-type#PLAC "Placer Identifier"
 * description = "Naming system for ChargeItem identifiers assigned by healthcare information systems in Uzbekistan."
 * jurisdiction = urn:iso:std:iso:3166#UZ "Uzbekistan"
-* usage = "Used in ChargeItem.identifier to uniquely identify a charge item representing the actual cost of a medication dispensed to a patient."
+* usage = "Used in ChargeItem.identifier to uniquely identify a charge item recorded by a healthcare information system, such as the charge for a dispensed medication or a provided service."
 * uniqueId[0].type = #uri
-* uniqueId[=].value = "https://dhp.uz/fhir/core/sid/doc/uz/dmed/preferential-referral"
+* uniqueId[=].value = $charge-item-identifier
 * uniqueId[=].preferred = true

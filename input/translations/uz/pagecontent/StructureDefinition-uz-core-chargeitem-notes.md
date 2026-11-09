@@ -1,6 +1,6 @@
 > **Mashina tarjimasi, inson tomonidan tekshirilishi zarur.** Ushbu sahifa ingliz tilidan sun'iy intellekt yordamida avtomatik tarjima qilingan va hali muharrir tomonidan tekshirilmagan. Har qanday nomuvofiqlikda asl inglizcha versiya ustuvor hisoblanadi.
 
-### Tezkor boshlash
+### Tezkor boshlash {#quick-start}
 
 Ushbu profil uchun keng tarqalgan API o'zaro ta'sirlari. So'rovlar JWT kirish tokenini talab qiladi - [Xavfsizlik va autentifikatsiya](api-access.html#security) bo'limiga qarang. `[base]` - [FHIR serverining bazaviy URL manzili](api-access.html#endpoints); `|` belgisi tizimni qiymatdan ajratadi va `%7C` sifatida URL-kodlanishi kerak.
 
@@ -13,10 +13,9 @@ GET [base]/ChargeItem/[id]
 **Hisob yozuvlarini qidirish**
 
 ```
-GET [base]/ChargeItem?subject=Patient/[id]
-GET [base]/ChargeItem?code=http://snomed.info/sct%7C373784005
-GET [base]/ChargeItem?performer=PractitionerRole/[id]
-GET [base]/ChargeItem?entered-date=ge2026-01-01
+GET [base]/ChargeItem?_lastUpdated=ge2026-01-01
+GET [base]/ChargeItem?_profile=https://dhp.uz/fhir/core/StructureDefinition/uz-core-chargeitem
+GET [base]/ChargeItem?_id=[id1],[id2]
 ```
 
 **Yaratish**
@@ -27,7 +26,7 @@ UZ Core ChargeItem profili belgilagan tizim bilan ChargeItem identifikatorini yu
 POST [base]/ChargeItem
 {
   "resourceType": "ChargeItem",
-  "meta": { "profile": [ "https://dhp.uz/fhir/core/StructureDefinition/uz-core-charge-item" ] },
+  "meta": { "profile": [ "https://dhp.uz/fhir/core/StructureDefinition/uz-core-chargeitem" ] },
   "identifier": [{
     "system": "https://dhp.uz/fhir/core/sid/doc/uz/dmed/preferential-referral",
     "value": "[charge-item-id]"

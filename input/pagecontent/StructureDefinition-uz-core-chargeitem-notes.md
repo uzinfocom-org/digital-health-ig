@@ -11,10 +11,9 @@ GET [base]/ChargeItem/[id]
 **Find charge items**
 
 ```
-GET [base]/ChargeItem?subject=Patient/[id]
-GET [base]/ChargeItem?code=http://snomed.info/sct%7C373784005
-GET [base]/ChargeItem?performer=PractitionerRole/[id]
-GET [base]/ChargeItem?entered-date=ge2026-01-01
+GET [base]/ChargeItem?_lastUpdated=ge2026-01-01
+GET [base]/ChargeItem?_profile=https://dhp.uz/fhir/core/StructureDefinition/uz-core-chargeitem
+GET [base]/ChargeItem?_id=[id1],[id2]
 ```
 
 **Create**
@@ -25,7 +24,7 @@ Include the ChargeItem identifier with the system fixed by UZ Core ChargeItem:
 POST [base]/ChargeItem
 {
   "resourceType": "ChargeItem",
-  "meta": { "profile": [ "https://dhp.uz/fhir/core/StructureDefinition/uz-core-charge-item" ] },
+  "meta": { "profile": [ "https://dhp.uz/fhir/core/StructureDefinition/uz-core-chargeitem" ] },
   "identifier": [{
     "system": "https://dhp.uz/fhir/core/sid/doc/uz/dmed/preferential-referral",
     "value": "[charge-item-id]"

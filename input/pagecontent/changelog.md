@@ -6,6 +6,8 @@ Added [UZ Core CarePlan](StructureDefinition-uz-core-careplan.html), a general p
 
 [Composition types](CodeSystem-composition-type-cs.html) add `emdoc-0010-0471` for Order No. 399 form 112, a laboratory analysis of folic acid, 25-OH vitamin D and vitamin B12.
 
+[UZ Core ChargeItem](StructureDefinition-uz-core-chargeitem.html) records a billable item - a service, product or medication provided to a patient - with its quantity and price, and links it to the event that provided it, such as a [MedicationDispense](StructureDefinition-uz-core-medication-dispense.html), procedure or laboratory test. Its identifier uses a new [ChargeItem identifier](NamingSystem-uzb-charge-item-identifier.html) naming system, its `status` is bound to [ChargeItem status](ValueSet-chargeitem-status-vs.html) and its `code` to [Charge item code](ValueSet-charge-item-code-vs.html), both with Uzbek and Russian translations. The profile page has a narrative intro and a Quick Start.
+
 [UZ Core Device](StructureDefinition-uz-core-device.html) describes a physical medical device - hospital equipment such as a CT scanner, or a single item such as an intrauterine device - with its SNOMED CT type and category, manufacturer, model, serial and lot numbers, status and availability, and the organization and location it belongs to. Uzbek and Russian translations of the HL7 device status, availability status, name type and category codes, and of the SNOMED CT contraceptive device types, come with it. The profile page has the narrative intro and Quick Start.
 
 [UZ Core DeviceUsage](StructureDefinition-uz-core-deviceusage.html) records that a patient uses, has used or will use a device, such as a wheelchair or an implanted venous access port. The device is a SNOMED CT concept or a reference to a [UZ Core Device](StructureDefinition-uz-core-device.html). It records who reported the use, when it started and ended, the setting, how regularly the device is actually used and why. Uzbek and Russian translations of the HL7 device usage status and adherence codes come with it. The profile page has the narrative intro and Quick Start.
@@ -29,10 +31,6 @@ Titles and descriptions of code systems and value sets now follow the naming pat
 #### Breaking changes
 
 The request resource types and participant resource type supplements, `https://terminology.dhp.uz/fhir/core/CodeSystem/request-resource-types-cs` and `https://terminology.dhp.uz/fhir/core/CodeSystem/participant-resource-type-cs`, are removed. They translated the same `http://hl7.org/fhir/fhir-types` codes as the FHIR types supplement, so those codes had two Russian and two Uzbek designations. [Request resource types](ValueSet-request-resource-types-vs.html) and [Resource types](ValueSet-resource-type-vs.html) now use the [FHIR types supplement](CodeSystem-fhir-types-cs.html). Systems that load supplements by URL switch to `https://terminology.dhp.uz/fhir/core/CodeSystem/fhir-types-cs`.
-
-#### Documentation
-
-[UZ Core ChargeItem](StructureDefinition-uz-core-charge-item.html) now has an introduction with minimal and medication-dispensing examples, plus a Quick Start for its API interactions.
 
 ### Version 0.12.0
 
