@@ -22,6 +22,8 @@ Added [UZ Core CarePlan](StructureDefinition-uz-core-careplan.html), a general p
 
 Every reference to a Device in UZ Core profiles now targets [UZ Core Device](StructureDefinition-uz-core-device.html): Observation, Procedure, Condition, AdverseEvent, Composition, QuestionnaireResponse, Group, MedicationAdministration, MedicationDispense, InventoryItem, SupplyRequest and SupplyDelivery.
 
+The [example practitioner](Practitioner-example-practitioner.html) and the specialist certificate examples now use a made-up PINFL, certificate number and dates.
+
 The [FHIR types supplement](CodeSystem-fhir-types-cs.html) gave each resource type a translation of its definition in place of its name. Each type now has an Uzbek and a Russian name, such as "Bemor" and "Пациент" for `Patient`, marked `preferredForLanguage`, so `$lookup` with `displayLanguage` returns the name. The translated definitions remain as designations with the use SNOMED CT `900000000000550004` Definition.
 
 The [Procedure example](Procedure-example-procedure.html) now points at an [outpatient physiotherapy visit](Encounter-example-physiotherapy-encounter.html) and a [right foot pain](Condition-example-foot-pain.html) condition of the same patient, in place of another patient's encounter and condition.
@@ -64,7 +66,7 @@ The [action code supplement](CodeSystem-action-code-cs.html) gives Uzbek and Rus
 
 #### Breaking changes
 
-The [specialist certificate](NamingSystem-uzb-specialist-certificate.html) identifier system has moved from the document namespace to the healthcare professional namespace, since a certificate identifies a qualification of a professional rather than a document: `https://dhp.uz/fhir/core/sid/doc/uz/specialist-certificate` is now `https://dhp.uz/fhir/core/sid/pro/uz/specialist-certificate`. Senders of `Practitioner.qualification.identifier` switch to the new system; the value format (series followed by number, e.g. `CA008815`) is unchanged.
+The [specialist certificate](NamingSystem-uzb-specialist-certificate.html) identifier system has moved from the document namespace to the healthcare professional namespace, since a certificate identifies a qualification of a professional rather than a document: `https://dhp.uz/fhir/core/sid/doc/uz/specialist-certificate` is now `https://dhp.uz/fhir/core/sid/pro/uz/specialist-certificate`. Senders of `Practitioner.qualification.identifier` switch to the new system; the value format (series followed by number, e.g. `CA123456`) is unchanged.
 
 ### Version 0.11.1
 

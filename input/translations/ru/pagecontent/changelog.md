@@ -26,6 +26,8 @@
 
 Заголовки и описания систем кодов и наборов значений теперь следуют шаблону именования из [руководства по моделированию](https://github.com/uzinfocom-org/digital-health-ig/blob/main/modelling-guidelines.md): supplement называется `[Concept] translations`, набор значений - `[Concept]`, а в заголовках больше нет слов вроде "CodeSystem" или "ValueSet". Канонические URL, идентификаторы и коды не изменились.
 
+[Пример Practitioner](Practitioner-example-practitioner.html) и примеры сертификата специалиста теперь используют вымышленные ПИНФЛ, номер сертификата и даты.
+
 [Пример Procedure](Procedure-example-procedure.html) теперь ссылается на [амбулаторный визит на физиотерапию](Encounter-example-physiotherapy-encounter.html) и состояние [боль в правой стопе](Condition-example-foot-pain.html) того же пациента, а не на визит и состояние другого пациента.
 
 #### Несовместимые изменения
@@ -64,7 +66,7 @@
 
 #### Несовместимые изменения
 
-Система идентификаторов [сертификата специалиста](NamingSystem-uzb-specialist-certificate.html) перенесена из пространства документов в пространство медицинских работников, так как сертификат идентифицирует квалификацию специалиста, а не документ: `https://dhp.uz/fhir/core/sid/doc/uz/specialist-certificate` заменён на `https://dhp.uz/fhir/core/sid/pro/uz/specialist-certificate`. Отправители `Practitioner.qualification.identifier` переходят на новую систему; формат значения (серия и номер слитно, например `CA008815`) не меняется.
+Система идентификаторов [сертификата специалиста](NamingSystem-uzb-specialist-certificate.html) перенесена из пространства документов в пространство медицинских работников, так как сертификат идентифицирует квалификацию специалиста, а не документ: `https://dhp.uz/fhir/core/sid/doc/uz/specialist-certificate` заменён на `https://dhp.uz/fhir/core/sid/pro/uz/specialist-certificate`. Отправители `Practitioner.qualification.identifier` переходят на новую систему; формат значения (серия и номер слитно, например `CA123456`) не меняется.
 
 ### Версия 0.11.1
 

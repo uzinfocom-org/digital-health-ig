@@ -220,7 +220,7 @@ A specialist certificate issued by the Ministry of Health identifies a qualifica
       "identifier": [
         {
           "system": "https://dhp.uz/fhir/core/sid/pro/uz/specialist-certificate",
-          "value": "CA008815"
+          "value": "CA123456"
         }
       ],
       "code": {
@@ -234,8 +234,8 @@ A specialist certificate issued by the Ministry of Health identifies a qualifica
         "text": "Psixiatriya, oliy toifa, shifokor"
       },
       "period": {
-        "start": "2024-05-05",
-        "end": "2029-05-05"
+        "start": "2025-03-10",
+        "end": "2030-03-10"
       }
     }
   ]
