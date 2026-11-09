@@ -45,7 +45,7 @@ Description: "Uzbekistan Core InventoryReport profile, used to report inventory 
 
 Instance: example-inventory-report-medication-receipt
 InstanceOf: UZCoreInventoryReport
-Title: "Example UZ Core InventoryReport - Medication receipt"
+Title: "Example UZ Core InventoryReport - Medication Receipt"
 Description: "Example inventory report for a medication stock addition"
 Usage: #example
 * language = #uz
