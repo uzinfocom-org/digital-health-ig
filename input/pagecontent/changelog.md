@@ -20,6 +20,8 @@ Added [UZ Core CarePlan](StructureDefinition-uz-core-careplan.html), a general p
 
 [UZ Core DeviceUsage](StructureDefinition-uz-core-deviceusage.html) records that a patient uses, has used or will use a device, such as a wheelchair or an implanted venous access port. The device is a SNOMED CT concept or a reference to a [UZ Core Device](StructureDefinition-uz-core-device.html). It records who reported the use, when it started and ended, the setting, how regularly the device is actually used and why. Uzbek and Russian translations of the HL7 device usage status and adherence codes come with it. The profile page has the narrative intro and Quick Start.
 
+[UZ Core InventoryReport](StructureDefinition-uz-core-inventoryreport.html) reports a count of stock items at a location: the count type, whether stock was added or removed and why, and each item's quantity with its unit. Uzbek and Russian translations of the HL7 inventory report status and count type codes, and of the SNOMED CT units of presentation it uses, come with it.
+
 [UZ Core Practitioner](StructureDefinition-uz-core-practitioner.html) allows translations of the specialist certificate text: `qualification.code.text` now takes the translation extension.
 
 [UZ Core SupplyDelivery](StructureDefinition-uz-core-supply-delivery.html) records the location the items were dispatched from, such as the sending warehouse in a transfer between warehouses, in the new [Deliver from](StructureDefinition-supplydelivery-deliver-from.html) extension. Base FHIR SupplyDelivery has no element for it; the extension is the delivery counterpart of `SupplyRequest.deliverFrom`. The [warehouse transfer example](SupplyDelivery-example-warehouse-transfer-supply-delivery.html) shows it. The profile page has a narrative intro and a Quick Start.
@@ -31,6 +33,8 @@ Added [UZ Core CarePlan](StructureDefinition-uz-core-careplan.html), a general p
 Every reference to a Device in UZ Core profiles now targets [UZ Core Device](StructureDefinition-uz-core-device.html): Observation, Procedure, Condition, AdverseEvent, Composition, QuestionnaireResponse, Group, MedicationAdministration, MedicationDispense, InventoryItem, SupplyRequest and SupplyDelivery.
 
 [MedicationRequest status translations](CodeSystem-medicationrequest-status-cs.html) now give `ended` the Russian name «Истекло» instead of «Завершено», which duplicated `completed`.
+
+The [example practitioner](Practitioner-example-practitioner.html) and the specialist certificate examples now use a made-up PINFL, certificate number and dates.
 
 The [FHIR types supplement](CodeSystem-fhir-types-cs.html) gave each resource type a translation of its definition in place of its name. Each type now has an Uzbek and a Russian name, such as "Bemor" and "Пациент" for `Patient`, marked `preferredForLanguage`, so `$lookup` with `displayLanguage` returns the name. The translated definitions remain as designations with the use SNOMED CT `900000000000550004` Definition.
 
@@ -76,7 +80,7 @@ The [action code supplement](CodeSystem-action-code-cs.html) gives Uzbek and Rus
 
 #### Breaking changes
 
-The [specialist certificate](NamingSystem-uzb-specialist-certificate.html) identifier system has moved from the document namespace to the healthcare professional namespace, since a certificate identifies a qualification of a professional rather than a document: `https://dhp.uz/fhir/core/sid/doc/uz/specialist-certificate` is now `https://dhp.uz/fhir/core/sid/pro/uz/specialist-certificate`. Senders of `Practitioner.qualification.identifier` switch to the new system; the value format (series followed by number, e.g. `CA008815`) is unchanged.
+The [specialist certificate](NamingSystem-uzb-specialist-certificate.html) identifier system has moved from the document namespace to the healthcare professional namespace, since a certificate identifies a qualification of a professional rather than a document: `https://dhp.uz/fhir/core/sid/doc/uz/specialist-certificate` is now `https://dhp.uz/fhir/core/sid/pro/uz/specialist-certificate`. Senders of `Practitioner.qualification.identifier` switch to the new system; the value format (series followed by number, e.g. `CA123456`) is unchanged.
 
 ### Version 0.11.1
 

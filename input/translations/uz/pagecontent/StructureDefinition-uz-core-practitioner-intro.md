@@ -182,20 +182,20 @@ Mutaxassis sertifikatini Sog'liqni saqlash vazirligi beradi; u tibbiyot xodimi m
 
 #### Tibtoifa nimani qaytaradi
 
-PINFL `42410540220011` uchun Tibtoifa javobining bitta yozuvi:
+PINFL `30101901234567` uchun Tibtoifa javobining bitta yozuvi:
 
 ```
 {
-  "pinfl": "42410540220011",
+  "pinfl": "30101901234567",
   "serial": "CA",
-  "number": "008815",
+  "number": "123456",
   "category": { "uz": "Oliy toifa", "ru": "Высшая категория", "en": "Higher category" },
   "speciality": { "uz": "psixiatriya", "ru": "психиатрия", "en": "psychiatry" },
   "medicaleRoleName": { "uz": "Shifokor", "ru": "Врач", "en": "Doctor" },
-  "givenDate": "2024-05-05",
-  "validityPeriod": "2029-05-05",
-  "commandNumber": "35",
-  "commandDate": "2024-05-05"
+  "givenDate": "2025-03-10",
+  "validityPeriod": "2030-03-10",
+  "commandNumber": "12",
+  "commandDate": "2025-03-10"
 }
 ```
 
@@ -205,16 +205,16 @@ Yozuvda Tibtoifaning ichki identifikatorlari (`id`, `serialId`, `categoryId`, `s
 
 | Tibtoifa maydoni | Misol | FHIR elementi | Qoida |
 |---|---|---|---|
-| `pinfl` | `42410540220011` | `Practitioner.identifier` (PINFL) | Tibbiyot xodimini topish uchun; malakada takrorlanmaydi |
-| `serial` + `number` | `CA` + `008815` | `qualification.identifier.value` | Seriya va raqam ajratuvchisiz: `CA008815` |
+| `pinfl` | `30101901234567` | `Practitioner.identifier` (PINFL) | Tibbiyot xodimini topish uchun; malakada takrorlanmaydi |
+| `serial` + `number` | `CA` + `123456` | `qualification.identifier.value` | Seriya va raqam ajratuvchisiz: `CA123456` |
 | - | - | `qualification.identifier.system` | Har doim `https://dhp.uz/fhir/core/sid/pro/uz/specialist-certificate` |
 | - | - | `qualification.code.coding` | Har doim `http://terminology.hl7.org/CodeSystem/v2-0360#CER` "Certificate" |
 | `speciality`, `category`, `medicaleRoleName` | `psixiatriya`, `Oliy toifa`, `Shifokor` | `qualification.code.text` | Resurs tilida `{mutaxassislik}, {toifa}, {rol}`: `Psixiatriya, oliy toifa, shifokor` |
 | xuddi shu maydonlar `ru`, `kaa`, `en` tillarida | `Психиатрия, высшая категория, врач` | `code.text` dagi `translation` kengaytmasi | Har bir til uchun bitta kengaytma |
-| `givenDate` | `2024-05-05` | `qualification.period.start` | Berilgan sana |
-| `validityPeriod` | `2029-05-05` | `qualification.period.end` | Amal qilishning oxirgi kuni |
-| `id`, `serialId`, `categoryId`, `specialityId`, `medicalRoleId` | `9448`, `2`, `1`, `90`, `1` | - | Tibtoifaning ichki identifikatorlari, yuborilmaydi |
-| `commandNumber`, `commandDate` | `35`, `2024-05-05` | - | Yuborilmaydi |
+| `givenDate` | `2025-03-10` | `qualification.period.start` | Berilgan sana |
+| `validityPeriod` | `2030-03-10` | `qualification.period.end` | Amal qilishning oxirgi kuni |
+| `id`, `serialId`, `categoryId`, `specialityId`, `medicalRoleId` | `1001`, `2`, `1`, `90`, `1` | - | Tibtoifaning ichki identifikatorlari, yuborilmaydi |
+| `commandNumber`, `commandDate` | `12`, `2025-03-10` | - | Yuborilmaydi |
 
 Mutaxassislik, toifa va rol hozircha matn sifatida yuboriladi; ular uchun kodlangan qiymatlar to'plamlari keyingi versiyada paydo bo'lishi mumkin.
 
@@ -248,7 +248,7 @@ Yuqoridagi Tibtoifa yozuvidan tuzilgan malaka:
         ]
       },
       "system": "https://dhp.uz/fhir/core/sid/pid/uz/ni",
-      "value": "42410540220011"
+      "value": "30101901234567"
     }
   ],
   "qualification": [
@@ -256,7 +256,7 @@ Yuqoridagi Tibtoifa yozuvidan tuzilgan malaka:
       "identifier": [
         {
           "system": "https://dhp.uz/fhir/core/sid/pro/uz/specialist-certificate",
-          "value": "CA008815"
+          "value": "CA123456"
         }
       ],
       "code": {
@@ -287,7 +287,7 @@ Yuqoridagi Tibtoifa yozuvidan tuzilgan malaka:
           ]
         }
       },
-      "period": { "start": "2024-05-05", "end": "2029-05-05" }
+      "period": { "start": "2025-03-10", "end": "2030-03-10" }
     }
   ]
 }
