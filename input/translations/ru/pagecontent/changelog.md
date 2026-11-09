@@ -6,6 +6,8 @@
 
 [UZ Core DeviceUsage](StructureDefinition-uz-core-deviceusage.html) фиксирует, что пациент использует, использовал или будет использовать изделие, например кресло-коляску или имплантируемый венозный порт. Изделие указывается как концепт SNOMED CT или как ссылка на [UZ Core Device](StructureDefinition-uz-core-device.html). Он фиксирует, кто сообщил об использовании, когда оно началось и закончилось, условия использования, насколько регулярно изделие используется на самом деле и зачем. Вместе с ним добавлены узбекские и русские переводы кодов HL7 статуса использования изделия и приверженности. Страница профиля содержит вводное описание и Быстрый старт.
 
+[UZ Core Flag](StructureDefinition-uz-core-flag.html) фиксирует допуск к донации и медицинский отвод. Добавлены локальная система кодов решений и переводы категорий и статусов HL7 на узбекский и русский языки.
+
 [UZ Core Practitioner](StructureDefinition-uz-core-practitioner.html) допускает переводы текста сертификата специалиста: `qualification.code.text` теперь принимает расширение translation.
 
 [UZ Core SupplyDelivery](StructureDefinition-uz-core-supply-delivery.html) фиксирует место, откуда отправлены предметы снабжения, например склад-отправитель при перемещении между складами, в новом расширении [Deliver from](StructureDefinition-supplydelivery-deliver-from.html). В базовом ресурсе FHIR SupplyDelivery такого элемента нет; расширение соответствует `SupplyRequest.deliverFrom` на стороне поставки. Его показывает [пример перемещения между складами](SupplyDelivery-example-warehouse-transfer-supply-delivery.html). На странице профиля есть вводный раздел и раздел «Быстрый старт».
