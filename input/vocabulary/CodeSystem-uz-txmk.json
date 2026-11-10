@@ -4,7 +4,7 @@
   "content": "complete",
   "name": "UZTXMKCS",
   "id": "uz-txmk-cs",
-  "title": "Uzbekistan National Medical Services Classifier (TXMK)",
+  "title": "Uzbekistan national medical services classifier (TXMK)",
   "description": "National classification of medical services of Uzbekistan, approved by the Ministry of Health of the Republic of Uzbekistan, containing 10,699 concepts with full Uzbek, Russian, and English names.",
   "url": "https://terminology.dhp.uz/fhir/core/CodeSystem/uz-txmk-cs",
   "concept": [
@@ -385619,11 +385619,11 @@
       ]
     }
   ],
-  "version": "1.0.0",
   "experimental": true,
   "date": "2026-11-03",
   "language": "uz",
   "caseSensitive": true,
+  "hierarchyMeaning": "classified-with",
   "count": 10732,
   "property": [
     {

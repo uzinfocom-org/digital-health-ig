@@ -15,8 +15,6 @@ Every profile page now has a narrative intro and a Quick Start. New ones were ad
 
 [UZ Core ChargeItem](StructureDefinition-uz-core-chargeitem.html) records a billable item - a service, product or medication provided to a patient - with its quantity and price, and links it to the event that provided it, such as a [MedicationDispense](StructureDefinition-uz-core-medication-dispense.html), procedure or laboratory test. Its identifier uses a new [ChargeItem identifier](NamingSystem-uzb-charge-item-identifier.html) naming system, its `status` is bound to [ChargeItem status](ValueSet-chargeitem-status-vs.html) and its `code` to [ChargeItem code](ValueSet-charge-item-code-vs.html), both with Uzbek and Russian translations. The profile page has a narrative intro and a Quick Start.
 
-[TXMK initial physician visit](HealthcareService-example-healthcareservice-txmk-initial-visit.html) is a HealthcareService example using the TXMK category and service coding slices.
-
 [UZ Core Device](StructureDefinition-uz-core-device.html) describes a physical medical device - hospital equipment such as a CT scanner, or a single item such as an intrauterine device - with its SNOMED CT type and category, manufacturer, model, serial and lot numbers, status and availability, and the organization and location it belongs to. Uzbek and Russian translations of the HL7 device status, availability status, name type and category codes, and of the SNOMED CT contraceptive device types, come with it. The profile page has the narrative intro and Quick Start.
 
 [UZ Core DeviceUsage](StructureDefinition-uz-core-deviceusage.html) records that a patient uses, has used or will use a device, such as a wheelchair or an implanted venous access port. The device is a SNOMED CT concept or a reference to a [UZ Core Device](StructureDefinition-uz-core-device.html). It records who reported the use, when it started and ended, the setting, how regularly the device is actually used and why. Uzbek and Russian translations of the HL7 device usage status and adherence codes come with it. The profile page has the narrative intro and Quick Start.
@@ -30,6 +28,8 @@ Every profile page now has a narrative intro and a Quick Start. New ones were ad
 [UZ Core Practitioner](StructureDefinition-uz-core-practitioner.html) allows translations of the specialist certificate text: `qualification.code.text` now takes the translation extension.
 
 [UZ Core SupplyDelivery](StructureDefinition-uz-core-supply-delivery.html) records the location the items were dispatched from, such as the sending warehouse in a transfer between warehouses, in the new [Deliver from](StructureDefinition-supplydelivery-deliver-from.html) extension. Base FHIR SupplyDelivery has no element for it; the extension is the delivery counterpart of `SupplyRequest.deliverFrom`. The [warehouse transfer example](SupplyDelivery-example-warehouse-transfer-supply-delivery.html) shows it. The profile page has a narrative intro and a Quick Start.
+
+[Uzbekistan national medical services classifier (TXMK)](CodeSystem-uz-txmk-cs.html) holds the 10,699 medical services of the national classifier with Uzbek, Russian and English names, and [UZ TXMK medical service categories](CodeSystem-uz-txmk-categories.html) holds its 30 service categories. Value sets select from them for [service categories](ValueSet-uz-txmk-service-categories-vs.html), [service names](ValueSet-uz-txmk-service-names-vs.html) and [diagnostic imaging services](ValueSet-uz-txmk-imaging-vs.html). The [TXMK initial physician visit](HealthcareService-example-healthcareservice-txmk-initial-visit.html) example uses them.
 
 #### Changed
 
@@ -46,6 +46,8 @@ The [FHIR types supplement](CodeSystem-fhir-types-cs.html) gave each resource ty
 The [Procedure example](Procedure-example-procedure.html) now points at an [outpatient physiotherapy visit](Encounter-example-physiotherapy-encounter.html) and a [right foot pain](Condition-example-foot-pain.html) condition of the same patient, in place of another patient's encounter and condition.
 
 Titles and descriptions of code systems and value sets now follow the naming pattern in the [modelling guidelines](https://github.com/uzinfocom-org/digital-health-ig/blob/main/modelling-guidelines.md): a supplement is `[Concept] translations`, a value set is `[Concept]`, and titles no longer carry words such as "CodeSystem" or "ValueSet". Canonical URLs, ids and codes are unchanged.
+
+[UZ Core HealthcareService](StructureDefinition-uz-core-healthcareservice.html) has new Must Support slices for the TXMK service category and service in `category` and `type`. [Service categories](ValueSet-service-categories-vs.html), which the laboratory category slice is bound to, now also include the laboratory categories.
 
 [UZ Core Organization](StructureDefinition-uz-core-organization.html) and [UZ Core RelatedPerson](StructureDefinition-uz-core-relatedperson.html) no longer fix the display of the identifier type: the `mohId` and `argosId` slices fix only the system and code `XX`, and `healthCard` only `HC`. The fixed displays "Organization Identifier" and "Health card number" did not match the HL7 terminology displays "Organization identifier" and "Health Card Number", so every conforming instance got a terminology warning. An identifier type with either display, or without one, now conforms.
 

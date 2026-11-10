@@ -75,7 +75,7 @@ Description: "Uzbekistan Core HealthcareService profile, used to define healthca
   * system 1..1 MS
   * system = Canonical(UZTXMKCS)
   * code 1..1 MS
-  * code from UZTXMKServiceNamesVS (extensible) //
+  * code from UZTXMKServiceNamesVS (extensible)
 
 * characteristic ^slicing.discriminator.type = #value
 * characteristic ^slicing.discriminator.path = "coding.system"

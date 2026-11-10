@@ -1,6 +1,6 @@
 CodeSystem: UZTXMKCategoriesCS
 Id: uz-txmk-categories
-Title: "UZ TXMK Medical Service Categories"
+Title: "UZ TXMK medical service categories"
 Description: "Top-level A01~D08 categories of the Uzbekistan National Classification of Medical Services (TXMK), with Uzbek Latin display names and Russian and English designations."
 * insert OriginalCodeSystemDraft(uz-txmk-categories)
 

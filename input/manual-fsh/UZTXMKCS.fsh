@@ -1,22 +1,14 @@
 // Generated from TXMK reyestr 2026-11-03_final.xlsx (via complete TXMK FHIR export).
-// Standalone FHIR R5 FSH: no project-specific RuleSet dependency.
 // 7-digit permanent concept IDs remain the FHIR codes; structural codes are properties.
 // Classes/groups are classifications, NOT asserted parent-child/is-a relationships.
 // Canonical URL is provisional; approve it before production use.
 
 CodeSystem: UZTXMKCS
 Id: uz-txmk-cs
-Title: "Uzbekistan National Medical Services Classifier (TXMK)"
+Title: "Uzbekistan national medical services classifier (TXMK)"
 Description: "National classification of medical services of Uzbekistan, approved by the Ministry of Health of the Republic of Uzbekistan, containing 10,699 concepts with full Uzbek, Russian, and English names."
-* ^url = "https://terminology.dhp.uz/fhir/core/CodeSystem/uz-txmk-cs"
-* ^version = "1.0.0"
-* ^name = "UZTXMKCS"
-* ^status = #draft
-* ^experimental = true
+* insert OriginalClassificationCodeSystemDraft(uz-txmk-cs)
 * ^date = "2026-11-03"
-* ^language = #uz
-* ^caseSensitive = true
-* ^content = #complete
 * ^count = 10732
 
 // These properties let terminology clients distinguish class/group and build ValueSets.
