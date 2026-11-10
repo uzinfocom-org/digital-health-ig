@@ -40,7 +40,7 @@ Description: "Uzbekistan Core ServiceRequest profile, used to represent a reques
 * orderDetail.parameter.value[x] MS
 * orderDetail.parameter.valueCodeableConcept MS
 * orderDetail.parameter.valueCodeableConcept from ServiceRequestBasisVS (extensible)
-* orderDetail.parameter.valueCodeableConcept ^short = "Basis for treatment under a preferential diagnosis, coded using ICD-10."
+* orderDetail.parameter.valueCodeableConcept ^short = "Basis for state-funded treatment for a qualifying diagnosis"
 * subject MS
 * subject only Reference(UZCorePatient or UZCoreLocation)
 * subject ^short = "The patient for whom the laboratory referral or order is issued. This element identifies the individual who is the subject of the requested laboratory investigation."

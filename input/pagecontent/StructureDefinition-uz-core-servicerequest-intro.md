@@ -18,7 +18,7 @@ This profile adds no mandatory elements. The base resource requires a `status`, 
 - the [Patient](StructureDefinition-uz-core-patient.html) or [Location](StructureDefinition-uz-core-location.html) the request is for (`subject`) and the [Encounter](StructureDefinition-uz-core-encounter.html) in which it was made;
 - when the service should happen (`occurrence[x]`) and when the request was issued (`authoredOn`);
 - who issued it (`requester`: a practitioner, practitioner role, organization, patient or related person) and the [Organization](StructureDefinition-uz-core-organization.html) asked to perform it (`performer`);
-- details of the order (`orderDetail.parameter.value[x]`), such as the basis for treatment under a preferential diagnosis;
+- details of the order (`orderDetail.parameter.value[x]`), such as the basis for state-funded treatment for a qualifying diagnosis;
 - why the service is needed (`reason`), coded in ICD-10 or SNOMED CT or as a reference to a [Condition](StructureDefinition-uz-core-condition.html);
 - how the service is paid for (the [payment type](StructureDefinition-payment-type.html) extension: free / paid / insurance / state tariff / other) and the insurance coverage (`insurance`);
 - other information that supports the request (`supportingInfo`) and the [Specimen](StructureDefinition-uz-core-specimen.html) to be analysed (`specimen`);
