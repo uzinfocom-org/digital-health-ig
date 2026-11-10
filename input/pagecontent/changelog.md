@@ -17,7 +17,7 @@ Every profile page now has a narrative intro and a Quick Start. New ones were ad
 
 [UZ Core DeviceUsage](StructureDefinition-uz-core-deviceusage.html) records that a patient uses, has used or will use a device, such as a wheelchair or an implanted venous access port. The device is a SNOMED CT concept or a reference to a [UZ Core Device](StructureDefinition-uz-core-device.html). It records who reported the use, when it started and ended, the setting, how regularly the device is actually used and why. Uzbek and Russian translations of the HL7 device usage status and adherence codes come with it. The profile page has the narrative intro and Quick Start.
 
-[UZ Core Flag](StructureDefinition-uz-core-flag.html) records donor eligibility and medical deferral decisions, with a local donor eligibility code system and Uzbek and Russian translations of HL7 flag categories and statuses.
+[UZ Core Flag](StructureDefinition-uz-core-flag.html) records a prospective warning or notification about a patient. Its first use is donor eligibility and medical deferral decisions, with a local donor eligibility code system and Uzbek and Russian translations of HL7 flag categories and statuses.
 
 [UZ Core InventoryReport](StructureDefinition-uz-core-inventoryreport.html) reports a count of stock items at a location: the count type, whether stock was added or removed and why, and each item's quantity with its unit. Uzbek and Russian translations of the HL7 inventory report status and count type codes, and of the SNOMED CT units of presentation it uses, come with it.
 

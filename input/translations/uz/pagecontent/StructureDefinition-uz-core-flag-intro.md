@@ -1,6 +1,6 @@
 > **Mashina tarjimasi, inson tomonidan tekshirilishi zarur.** Ushbu sahifa ingliz tilidan sun'iy intellekt yordamida avtomatik tarjima qilingan va hali muharrir tomonidan tekshirilmagan. Har qanday nomuvofiqlikda asl inglizcha versiya ustuvor hisoblanadi.
 
-UZ Core Flag [UZ Core bemori](StructureDefinition-uz-core-patient.html) uchun donorlikka ruxsat yoki tibbiy chetlatish qarorini qayd etadi. U [tashrif](StructureDefinition-uz-core-encounter.html) va muallifga havola berishi mumkin. Faol belgi ruxsatni ham, tibbiy chetlatishni ham bildirishi mumkin: status belgining hayotiy siklini ifodalaydi.
+UZ Core Flag [UZ Core bemori](StructureDefinition-uz-core-patient.html) haqida Raqamli sog'liqni saqlash platformasi foydalanuvchilari shu bemor bilan ishlaganda bilishi kerak bo'lgan ogohlantirish yoki xabarni qayd etadi. Hozircha belgi kodi donorlikka ruxsatni qamrab oladi: bemor donor bo'lishi mumkinmi yoki tibbiy chetlatilganmi. Belgi u qo'yilgan [tashrif](StructureDefinition-uz-core-encounter.html) va muallifga havola berishi mumkin. Holat belgi qayd etgan narsani emas, balki belgining hayotiy siklini ifodalaydi: faol belgi ruxsatni ham, tibbiy chetlatishni ham bildirishi mumkin.
 
 ### Majburiy va Must Support ma'lumot elementlari
 

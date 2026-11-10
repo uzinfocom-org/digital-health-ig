@@ -1,4 +1,4 @@
-UZ Core Flag records a donation eligibility decision for a [UZ Core Patient](StructureDefinition-uz-core-patient.html). The decision can be linked to a [UZ Core Encounter](StructureDefinition-uz-core-encounter.html) and its author. An active flag may record either eligibility or medical deferral: the status describes the flag's lifecycle.
+UZ Core Flag records a prospective warning or notification about a [UZ Core Patient](StructureDefinition-uz-core-patient.html) that users of the Digital Health Platform should be aware of when dealing with that patient. The flag code currently covers donation eligibility: whether the patient may donate or is under a medical deferral. A flag can be linked to the [UZ Core Encounter](StructureDefinition-uz-core-encounter.html) in which it was raised and to its author. The status describes the flag's lifecycle, not what it records: an active flag may record either eligibility or a medical deferral.
 
 ### Mandatory and Must Support data elements
 

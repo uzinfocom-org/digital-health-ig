@@ -2,25 +2,25 @@ Profile: UZCoreFlag
 Parent: Flag
 Id: uz-core-flag
 Title: "UZ Core Flag"
-Description: "Uzbekistan Core Flag profile, used to record a patient's eligibility for donation or medical deferral."
+Description: "Uzbekistan Core Flag profile, used to record a prospective warning or notification about a patient that users should be aware of, such as eligibility for donation or a medical deferral"
 * ^experimental = true
 * ^status = #active
 * identifier MS
-* identifier ^short = "Business identifier of the donor flag"
+* identifier ^short = "Business identifier of the flag"
 * identifier.system 1..1
 * status MS
 * status from FlagStatusVS (required)
-* status ^short = "Status of the flag, independent of the donor's medical eligibility"
+* status ^short = "Status of the flag, not of what the flag describes"
 * category from FlagCategoryVS (preferred)
 * category ^short = "General category of the flag"
 * code MS
 * code from DonorEligibilityVS (required)
-* code ^short = "Donation eligibility or medical deferral"
+* code ^short = "What the flag is about, such as donation eligibility or a medical deferral"
 * subject MS
 * subject only Reference(UZCorePatient)
-* subject ^short = "Patient whose donation eligibility is recorded"
+* subject ^short = "Patient the flag is about"
 * encounter only Reference(UZCoreEncounter)
-* encounter ^short = "Encounter during which the donation decision was made"
+* encounter ^short = "Encounter during which the flag was raised"
 * author only Reference(UZCorePractitioner or UZCorePractitionerRole or UZCoreOrganization or UZCoreDevice or UZCorePatient or UZCoreRelatedPerson)
 * author ^short = "Person, organization or device responsible for the flag"
 * period.start ^short = "Start of the flag's validity period"

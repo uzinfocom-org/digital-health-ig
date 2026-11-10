@@ -17,7 +17,7 @@ Endi har bir profil sahifasida kirish qismi va Tez boshlash bo'limi bor. Ular [U
 
 [UZ Core DeviceUsage](StructureDefinition-uz-core-deviceusage.html) bemor tibbiy buyumdan, masalan, nogironlik aravachasi yoki implantatsiya qilinadigan venoz portdan foydalanayotgani, foydalangani yoki foydalanishini qayd etadi. Buyum SNOMED CT konsepti yoki [UZ Core Device](StructureDefinition-uz-core-device.html) ga havola sifatida ko'rsatiladi. U foydalanish haqida kim xabar berganini, qachon boshlanib tugaganini, foydalanish sharoitini, buyum amalda qanchalik muntazam ishlatilishini va nima uchun ishlatilishini qayd etadi. U bilan birga HL7 buyumdan foydalanish holati va rioya qilish kodlarining o'zbekcha va ruscha tarjimalari qo'shildi. Profil sahifasida tavsifiy kirish va Tez boshlash bo'limi bor.
 
-[UZ Core Flag](StructureDefinition-uz-core-flag.html) donorlikka ruxsat va tibbiy chetlatish qarorlarini qayd etadi. Mahalliy qaror kodlari tizimi hamda HL7 toifa va holatlarining o'zbekcha va ruscha tarjimalari qo'shildi.
+[UZ Core Flag](StructureDefinition-uz-core-flag.html) bemor haqidagi ogohlantirish yoki xabarni qayd etadi. Birinchi qo'llanilishi - donorlikka ruxsat va tibbiy chetlatish qarorlari. Mahalliy qaror kodlari tizimi hamda HL7 toifa va holatlarining o'zbekcha va ruscha tarjimalari qo'shildi.
 
 [UZ Core InventoryReport](StructureDefinition-uz-core-inventoryreport.html) saqlash joyidagi zaxiralarni sanash natijasini uzatadi: sanash turi, kirim yoki chiqim va uning sababi, shuningdek har bir pozitsiyaning o'lchov birligi bilan miqdori. U bilan birga HL7 inventarizatsiya hisoboti holati va sanash turi kodlarining hamda unda ishlatiladigan SNOMED CT taqdimot birliklarining o'zbekcha va ruscha tarjimalari qo'shildi.
 
