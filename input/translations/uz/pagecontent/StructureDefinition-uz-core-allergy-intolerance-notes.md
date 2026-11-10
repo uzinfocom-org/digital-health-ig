@@ -44,7 +44,7 @@ PUT [base]/AllergyIntolerance/[id]
 If-Match: W/"3"   # oxirgi o'qishdagi ETag; o'shandan beri resurs o'zgargan bo'lsa, 412 qaytariladi
 ```
 
-Qo'llab-quvvatlanadigan barcha qidiruv parametrlari uchun [CapabilityStatement](CapabilityStatement-DHPCapabilityStatement.html) ga qarang.
+Qo'llab-quvvatlanadigan qidiruv parametrlarining to'liq ro'yxati [CapabilityStatement](CapabilityStatement-DHPCapabilityStatement.html#AllergyIntolerance1-40) da keltirilgan.
 
 ### Bog'liq materiallar
 

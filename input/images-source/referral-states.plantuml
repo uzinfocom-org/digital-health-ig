@@ -1,5 +1,5 @@
 @startuml referral-states
-title Referral ServiceRequest status, driven by Task events
+title Referral [[StructureDefinition-uz-core-servicerequest.html ServiceRequest]] status, driven by [[StructureDefinition-uz-core-referral-approval-task.html Task]] events
 hide empty description
 
 state "on-hold" as onhold

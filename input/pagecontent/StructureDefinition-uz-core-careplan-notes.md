@@ -37,7 +37,7 @@ POST [base]/CarePlan
 
 **Update** (for example, to add an activity or complete the plan): send the complete resource with `PUT [base]/CarePlan/[id]` and an `If-Match` header carrying the version you read, so a concurrent change is not overwritten.
 
-The [CapabilityStatement](CapabilityStatement-DHPCapabilityStatement.html) lists the supported search parameters, including `based-on`, `part-of`, `custodian`, `care-team`, `condition`, `goal`, `intent` and `instantiates-canonical`.
+See the [CapabilityStatement](CapabilityStatement-DHPCapabilityStatement.html#CarePlan1-24) for the full list of supported search parameters.
 
 ### Related
 

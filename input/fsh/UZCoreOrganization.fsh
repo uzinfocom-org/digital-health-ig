@@ -31,7 +31,7 @@ Description: "Uzbekistan Core Organization profile, used to define healthcare or
   * system 1..1 MS
   * system = $organization-argos-id-system
   * type 1..1 MS
-  * type = $identifier-type#XX "Organization Identifier"
+  * type = $identifier-type#XX
   * use = #official
   * value 1..1 MS
 

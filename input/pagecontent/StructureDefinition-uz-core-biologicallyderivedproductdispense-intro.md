@@ -1,6 +1,6 @@
 UZ Core BiologicallyDerivedProductDispense records the issue of a [biologically derived product](StructureDefinition-uz-core-biologically-derived-product.html) to the care team of a [patient](StructureDefinition-uz-core-patient.html). It fulfils a [ServiceRequest](StructureDefinition-uz-core-servicerequest.html). A [Procedure](StructureDefinition-uz-core-procedure.html) can reference the dispense as supporting information and records the actual transfusion.
 
-### undefined
+### Mandatory and Must Support data elements
 
 The elements below must always be present (mandatory) or must be supported when the data is available ([Must Support](must-support.html)) - not all are required, but your system must populate each Must Support element when it has the data and process it on receipt. This is the human-readable summary; the [formal views](#profile) below give the exact cardinalities, types, and terminology bindings.
 

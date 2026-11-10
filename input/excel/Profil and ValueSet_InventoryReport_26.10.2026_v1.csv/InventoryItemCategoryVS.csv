@@ -1,0 +1,15 @@
+CODE,UZ,RU,EN,https://terminology.dhp.uz/fhir/core/CodeSystem/inventory-item-category-cs,Definition (EN)
+invct-0001-00001,Dori vositasi,Лекарственное средство,Medication,,"Medicinal products for prevention, diagnosis or treatment (excl. vaccines, controlled medicines)."
+invct-0001-00002,Vaksina,Вакцина,Vaccine,,Vaccines and immunobiological products (cold chain).
+invct-0001-00003,Nazoratdagi dori vositasi,Подконтрольное ЛС,Controlled medication,,"Narcotic, psychotropic and precursor-containing medicines."
+invct-0001-00004,Tibbiy jihoz,Медицинское оборудование,Medical equipment,,Durable medical equipment tracked by serial/inventory number.
+invct-0001-00005,Tibbiy asboblar,Медицинские инструменты,Medical instruments,,Reusable instruments and small devices that are not capital equipment.
+invct-0001-00006,Tibbiy sarf materiallari,Медицинские расходные материалы,Medical consumables,,"Single-use supplies: syringes, catheters, dressings, blood bags."
+invct-0001-00007,Laboratoriya reagentlari,Лабораторные реагенты,Lab reagents (IVD),,"In-vitro diagnostic reagents, test kits, calibrators, controls."
+invct-0001-00008,Qon va qon komponentlari,Кровь и компоненты крови,Blood components,,Whole blood and blood components from the Blood Service.
+invct-0001-00009,Klinik ovqatlanish,Лечебное питание,Clinical nutrition,,"Enteral, parenteral and special medical nutrition."
+invct-0001-00010,Shaxsiy himoya vositalari,Средства индивидуальной защиты,PPE,,"Masks, respirators, gloves, gowns, face shields."
+invct-0001-00011,Dezinfeksiya vositalari,Дезинфицирующие средства,Disinfectants,,"Disinfectants, antiseptics and sterilization agents."
+invct-0001-00012,Tibbiy gazlar,Медицинские газы,Medical gases,,Medical oxygen and other medical gases.
+invct-0001-00013,Ehtiyot qismlar,Запасные части,Spare parts,,Spare parts and accessories for medical equipment.
+invct-0001-00014,Boshqa,Прочее,Other,,Item that does not fit any other category.

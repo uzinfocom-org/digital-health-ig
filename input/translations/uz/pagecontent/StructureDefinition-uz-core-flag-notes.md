@@ -1,36 +1,56 @@
-> **Mashina tarjimasi, inson tekshiruvi talab etiladi.** Tafovut bo‘lsa, inglizcha matn ustuvor.
+> **Mashina tarjimasi, inson tomonidan tekshirilishi zarur.** Ushbu sahifa ingliz tilidan sun'iy intellekt yordamida avtomatik tarjima qilingan va hali muharrir tomonidan tekshirilmagan. Har qanday nomuvofiqlikda asl inglizcha versiya ustuvor hisoblanadi.
 
 ### Tez boshlash {#quick-start}
 
-So‘rovlar JWT talab qiladi: [Xavfsizlik va autentifikatsiya](api-access.html#security). `[base]` — [FHIR server asosiy URL manzili](api-access.html#endpoints); tizim va kodni ajratuvchi `|` belgisi `%7C` sifatida kodlanadi.
+Ushbu profil uchun keng tarqalgan API amallari. So'rovlar JWT kirish tokenini talab qiladi - [Xavfsizlik va autentifikatsiya](api-access.html#security) bo'limiga qarang. `[base]` - [FHIR-serverning bazaviy URL manzili](api-access.html#endpoints); `|` kod tizimini qiymatdan ajratadi va `%7C` ko'rinishida URL-kodlanishi kerak.
 
-Flag hali [DHP CapabilityStatement](CapabilityStatement-DHPCapabilityStatement.html) da e’lon qilinmagan. Avval server qo‘llab-quvvatlashini tekshiring. Bu yerda qidiruvni qo‘llab-quvvatlash tasdiqlanmaydi.
+**Server identifikatori bo'yicha olish**
 
-**Server id bo‘yicha o‘qish**
-
-```http
+```
 GET [base]/Flag/[id]
 ```
 
+**Belgilarni qidirish**
+
+```
+GET [base]/Flag?patient=Patient/[id]&status=active&code=blood-donation-deferred
+GET [base]/Flag?patient=Patient/[id]&status=active
+GET [base]/Flag?patient=Patient/[id]&category=http://terminology.hl7.org/CodeSystem/flag-category%7Cclinical
+GET [base]/Flag?identifier=[system]%7C[value]
+GET [base]/Flag?encounter=Encounter/[id]
+GET [base]/Flag?author=Practitioner/[id]
+GET [base]/Flag?date=ge2026-01-01
+```
+
+`code` - [UZ Core qidiruv parametri](SearchParameter-uz-core-flag-code.html): FHIR R5 da `Flag.code` uchun bunday parametr yo'q. Birinchi so'rov bemorning amaldagi tibbiy chetlatishlarini topadi.
+
 **Yaratish**
 
-```http
+```
 POST [base]/Flag
-Content-Type: application/fhir+json
+{
+  "resourceType": "Flag",
+  "meta": {
+    "profile": ["https://dhp.uz/fhir/core/StructureDefinition/uz-core-flag"]
+  },
+  "language": "uz",
+  "status": "active",
+  "code": {
+    "coding": [{
+      "system": "https://terminology.dhp.uz/fhir/core/CodeSystem/blood-donor-eligibility-cs",
+      "code": "blood-donation-deferred"
+    }]
+  },
+  "subject": { "reference": "Patient/[id]" },
+  "period": { "start": "2026-11-09T09:00:00+05:00" }
+}
 ```
 
-**Versiyani nazorat qilib yangilash**
+**Yangilash** (masalan, tibbiy chetlatishni tugatish uchun): to'liq resursni `PUT [base]/Flag/[id]` orqali yuboring, `status` ni `inactive` ga o'zgartiring, `period.end` ga esa tugash vaqtini yozing va o'qilgan versiyani o'z ichiga olgan `If-Match` sarlavhasini qo'shing, shunda parallel o'zgarish ustidan yozilmaydi.
 
-```http
-PUT [base]/Flag/[id]
-Content-Type: application/fhir+json
-If-Match: W/"[versionId]"
-```
+Qo'llab-quvvatlanadigan qidiruv parametrlarining to'liq ro'yxati [CapabilityStatement](CapabilityStatement-DHPCapabilityStatement.html#Flag1-42) da keltirilgan.
 
-So‘rov tanasi uchun [ruxsat JSON](Flag-example-donation-eligible-flag.json.html) yoki [chetlatish JSON](Flag-example-donation-deferred-flag.json.html) dan foydalaning. Namuna havolalarini haqiqiy id lar bilan almashtiring. Yangilashda serverdagi joriy versiyani `If-Match` da yuboring.
+### Bog'liq bo'limlar
 
-### Tegishli materiallar
-
-- [Patient](StructureDefinition-uz-core-patient.html)
-- [Encounter](StructureDefinition-uz-core-encounter.html)
-- [API](api-access.html)
+- [UZ Core Patient](StructureDefinition-uz-core-patient.html) &middot; [UZ Core Encounter](StructureDefinition-uz-core-encounter.html)
+- [Ushbu qo'llanmani qanday o'qish kerak](how-to-read.html) &middot; [Must Support](must-support.html) &middot; [Umumiy ko'rsatmalar](general-guidance.html)

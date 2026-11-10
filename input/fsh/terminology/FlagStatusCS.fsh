@@ -15,3 +15,9 @@ Description: "Flag status supplement with translations in Uzbek and Russian"
   * ^designation[=].value = "Неактивный"
   * ^designation[+].language = #uz
   * ^designation[=].value = "Nofaol"
+
+* #entered-in-error
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Введено с ошибкой"
+  * ^designation[+].language = #uz
+  * ^designation[=].value = "Xato kiritilgan"

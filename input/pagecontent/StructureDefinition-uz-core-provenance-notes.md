@@ -22,7 +22,7 @@ GET [base]/Provenance?entity=DocumentReference/[id]
 
 To retrieve a record together with its provenance in one call, use a reverse include, for example `GET [base]/DocumentReference?_id=[id]&_revinclude=Provenance:target`.
 
-See the [CapabilityStatement](CapabilityStatement-DHPCapabilityStatement.html) for the full list of supported search parameters.
+Provenance is not yet listed in the [CapabilityStatement](CapabilityStatement-DHPCapabilityStatement.html); the searches above use standard FHIR R5 search parameters.
 
 ### Related
 

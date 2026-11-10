@@ -14,7 +14,7 @@ GET [base]/Patient/[id]
 
 ```
 # by national identifier (PINFL) - the reliable match
-GET [base]/Patient?identifier=https://dhp.uz/fhir/core/sid/pid/uz/ni|30211975910033
+GET [base]/Patient?identifier=https://dhp.uz/fhir/core/sid/pid/uz/ni|12345678912345
 
 # by name + birth date when no identifier is to hand
 GET [base]/Patient?family=Usmanov&birthdate=1994-01-27
@@ -49,7 +49,7 @@ GET [base]/Patient?organization=Organization/[id]
 GET [base]/Patient?address-city=22070013
 ```
 
-Qo'llab-quvvatlanadigan qidiruv parametrlarining to'liq ro'yxati uchun [CapabilityStatement](CapabilityStatement-DHPCapabilityStatement.html) hujjatiga, barcha bemor identifikatori tizimi URI manzillari uchun esa [Identifikator tizimlari](identifiers.html) bo'limiga qarang.
+Qo'llab-quvvatlanadigan qidiruv parametrlarining to'liq ro'yxati uchun [CapabilityStatement](CapabilityStatement-DHPCapabilityStatement.html#Patient1-1) hujjatiga, barcha bemor identifikatori tizimi URI manzillari uchun esa [Identifikator tizimlari](identifiers.html) bo'limiga qarang.
 
 ### Boshqaruvchi tashkilotga biriktirish
 

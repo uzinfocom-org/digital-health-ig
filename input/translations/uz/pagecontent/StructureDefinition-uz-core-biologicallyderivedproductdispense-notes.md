@@ -1,10 +1,10 @@
-> **Mashina tarjimasi, inson tekshiruvi talab etiladi.** Tafovut bo‘lsa, inglizcha matn ustuvor.
+> **Mashina tarjimasi, inson tomonidan tekshirilishi zarur.** Ushbu sahifa ingliz tilidan sun'iy intellekt yordamida avtomatik tarjima qilingan va hali muharrir tomonidan tekshirilmagan. Har qanday nomuvofiqlikda asl inglizcha versiya ustuvor hisoblanadi.
 
 ### Tez boshlash {#quick-start}
 
-So‘rovlar JWT talab qiladi: [Xavfsizlik va autentifikatsiya](api-access.html#security). `[base]` — [FHIR server asosiy URL manzili](api-access.html#endpoints); tizim va kodni ajratuvchi `|` belgisi `%7C` sifatida kodlanadi.
+So'rovlar JWT talab qiladi: [Xavfsizlik va autentifikatsiya](api-access.html#security). `[base]` - [FHIR server asosiy URL manzili](api-access.html#endpoints); tizim va kodni ajratuvchi `|` belgisi `%7C` sifatida kodlanadi.
 
-Resurs hali [DHP CapabilityStatement](CapabilityStatement-DHPCapabilityStatement.html) da e’lon qilinmagan. Server qo‘llab-quvvatlashini tekshiring. Bu yerda qidiruv qo‘llab-quvvatlanishi tasdiqlanmaydi.
+Resurs hali [DHP CapabilityStatement](CapabilityStatement-DHPCapabilityStatement.html) da e'lon qilinmagan. Server qo'llab-quvvatlashini tekshiring. Bu yerda qidiruv qo'llab-quvvatlanishi tasdiqlanmaydi.
 
 ```http
 GET [base]/BiologicallyDerivedProductDispense/[id]
@@ -21,7 +21,7 @@ Content-Type: application/fhir+json
 If-Match: W/"[versionId]"
 ```
 
-So‘rov tanasi sifatida [berish namunasi JSON](BiologicallyDerivedProductDispense-example-bdp-dispense-issued.json.html) dan foydalaning va havolalarni haqiqiy id lar bilan almashtiring. Yangilashda serverdagi joriy versiyani `If-Match` da yuboring.
+So'rov tanasi sifatida [berish namunasi JSON](BiologicallyDerivedProductDispense-example-bdp-dispense-issued.json.html) dan foydalaning va havolalarni haqiqiy id lar bilan almashtiring. Yangilashda serverdagi joriy versiyani `If-Match` da yuboring.
 
 ### Tegishli materiallar
 

@@ -182,11 +182,11 @@ Mutaxassis sertifikatini Sog'liqni saqlash vazirligi beradi; u tibbiyot xodimi m
 
 #### Tibtoifa nimani qaytaradi
 
-PINFL `30101901234567` uchun Tibtoifa javobining bitta yozuvi:
+PINFL `90000000000001` uchun Tibtoifa javobining bitta yozuvi:
 
 ```
 {
-  "pinfl": "30101901234567",
+  "pinfl": "90000000000001",
   "serial": "CA",
   "number": "123456",
   "category": { "uz": "Oliy toifa", "ru": "Высшая категория", "en": "Higher category" },
@@ -205,7 +205,7 @@ Yozuvda Tibtoifaning ichki identifikatorlari (`id`, `serialId`, `categoryId`, `s
 
 | Tibtoifa maydoni | Misol | FHIR elementi | Qoida |
 |---|---|---|---|
-| `pinfl` | `30101901234567` | `Practitioner.identifier` (PINFL) | Tibbiyot xodimini topish uchun; malakada takrorlanmaydi |
+| `pinfl` | `90000000000001` | `Practitioner.identifier` (PINFL) | Tibbiyot xodimini topish uchun; malakada takrorlanmaydi |
 | `serial` + `number` | `CA` + `123456` | `qualification.identifier.value` | Seriya va raqam ajratuvchisiz: `CA123456` |
 | - | - | `qualification.identifier.system` | Har doim `https://dhp.uz/fhir/core/sid/pro/uz/specialist-certificate` |
 | - | - | `qualification.code.coding` | Har doim `http://terminology.hl7.org/CodeSystem/v2-0360#CER` "Certificate" |
@@ -248,7 +248,7 @@ Yuqoridagi Tibtoifa yozuvidan tuzilgan malaka:
         ]
       },
       "system": "https://dhp.uz/fhir/core/sid/pid/uz/ni",
-      "value": "30101901234567"
+      "value": "90000000000001"
     }
   ],
   "qualification": [

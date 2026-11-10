@@ -1,7 +1,7 @@
 ValueSet: BDPDispenseMatchStatusVS
 Id: bdp-dispense-match-status-vs
 Title: "BiologicallyDerivedProductDispense match status"
-Description: "BiologicallyDerivedProductDispense match status codes"
+Description: "BiologicallyDerivedProductDispense match statuses"
 * ^url = "https://terminology.dhp.uz/fhir/core/ValueSet/bdp-dispense-match-status-vs"
 * ^experimental = true
 * ^extension[0].url = $valueset-supplement

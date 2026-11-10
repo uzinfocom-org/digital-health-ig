@@ -43,7 +43,7 @@ Quyidagi misollar server qabul qiladigan eng kichik nusxadan toʻliq roʻyxatga 
     {
       "type": { "coding": [{ "system": "http://terminology.hl7.org/CodeSystem/v2-0203", "code": "NI" }] },
       "system": "https://dhp.uz/fhir/core/sid/pid/uz/ni",
-      "value": "30211975910033"
+      "value": "12345678912345"
     }
   ]
 }
@@ -66,7 +66,7 @@ Amalda siz PINFL bilan birga platforma sizdan qoʻllab-quvvatlashni kutadigan as
       "use": "official",
       "type": { "coding": [{ "system": "http://terminology.hl7.org/CodeSystem/v2-0203", "code": "NI" }] },
       "system": "https://dhp.uz/fhir/core/sid/pid/uz/ni",
-      "value": "30211975910033"
+      "value": "12345678912345"
     }
   ],
   "active": true,
@@ -159,7 +159,7 @@ Kishi odatda bir nechta identifikatorga ega. `identifier` massiviga har bir hujj
   {
     "type": { "coding": [{ "system": "http://terminology.hl7.org/CodeSystem/v2-0203", "code": "NI" }] },
     "system": "https://dhp.uz/fhir/core/sid/pid/uz/ni",
-    "value": "30211975910033"
+    "value": "12345678912345"
   },
   {
     "type": { "coding": [{ "system": "http://terminology.hl7.org/CodeSystem/v2-0203", "code": "PPN" }] },

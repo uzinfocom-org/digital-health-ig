@@ -64,7 +64,7 @@ Description: "Example of a practitioner"
 Usage: #example
 * language = #uz
 * identifier[nationalId]
-  * value = "9876543210"
+  * value = "90000000000006"
 * active = true
 * name
   * use = #official
@@ -131,7 +131,7 @@ Description: "Example of a practitioner with a gender extension"
 Usage: #example
 * language = #uz
 * identifier[nationalId]
-  * value = "9876543211"
+  * value = "90000000000007"
 * active = true
 * gender = #other
 * gender.extension[gender-other].valueCoding = GenderOtherCS#regis0007.00005 "Jinsni erkakka o'zgartirdi"
@@ -143,7 +143,7 @@ Description: "A family polyclinic patronage nurse who visits newborns at home"
 Usage: #example
 * language = #uz
 * identifier[nationalId]
-  * value = "41505891234567"
+  * value = "90000000000004"
 * active = true
 * name
   * use = #official
@@ -160,7 +160,7 @@ Description: "A physiotherapy doctor who plans and carries out therapeutic massa
 Usage: #example
 * language = #uz
 * identifier[nationalId]
-  * value = "31203851234568"
+  * value = "90000000000002"
 * active = true
 * name
   * use = #official

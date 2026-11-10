@@ -42,7 +42,7 @@ Milliy noyob identifikator (PINFL — Personal Identification Number for Foreign
         ]
       },
       "use": "official",
-      "value": "30211975910033"
+      "value": "12345678912345"
     }
   ]
 }
@@ -341,7 +341,7 @@ Bemorning bir nechta identifikatori bo'lishi mumkin. Quyida to'g'ri foydalanishn
         ]
       },
       "use": "official",
-      "value": "30211975910033"
+      "value": "12345678912345"
     },
     {
       "system": "https://dhp.uz/fhir/core/sid/pid/uz/ppn/local",
@@ -423,7 +423,7 @@ Resurslarni identifikator bo'yicha qidirish uchun FHIR standart qidiruv parametr
 ```
 # | belgisi system va value'ni ajratadi, URL'da %7C sifatida kodlanishi kerak
 
-GET [base]/Patient?identifier=https://dhp.uz/fhir/core/sid/pid/uz/ni|30211975910033
+GET [base]/Patient?identifier=https://dhp.uz/fhir/core/sid/pid/uz/ni|12345678912345
 GET [base]/Practitioner?identifier=https://dhp.uz/fhir/core/sid/pro/uz/argos|9876543210
 GET [base]/Organization?identifier=https://dhp.uz/fhir/core/sid/org/uz/soliq|200935935
 ```
