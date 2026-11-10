@@ -6,12 +6,12 @@ Added [UZ Core CarePlan](StructureDefinition-uz-core-careplan.html), a general p
 
 [Composition types](CodeSystem-composition-type-cs.html) add `emdoc-0010-0471` for Order No. 399 form 112, a laboratory analysis of folic acid, 25-OH vitamin D and vitamin B12.
 
+[Discharge summary section](ValueSet-discharge-summary-section-vs.html) is a new value set of the section codes of a discharge summary (epicrisis) [Composition](StructureDefinition-uz-core-composition.html): LOINC codes for complaints, history of present illness, current clinical status and neurological status, and codes from the new [Discharge summary section](CodeSystem-discharge-summary-section-cs.html) code system for life history, epidemiological history and local status.
+
 Every profile page now has a narrative intro and a Quick Start. New ones were added for [UZ Core BiologicallyDerivedProduct](StructureDefinition-uz-core-biologically-derived-product.html), [UZ Core Claim](StructureDefinition-uz-core-claim.html), [UZ Core ClaimResponse](StructureDefinition-uz-core-claim-response.html), [UZ Core Composition](StructureDefinition-uz-core-composition.html), [UZ Core DiagnosticReport](StructureDefinition-uz-core-diagnostic-report.html), [UZ Core Group](StructureDefinition-uz-core-group.html), [UZ Core InventoryItem](StructureDefinition-uz-core-inventoryitem.html), [UZ Core Laboratory ObservationDefinition](StructureDefinition-uz-core-laboratory-observation-definition.html), [UZ Core MedicationDispense](StructureDefinition-uz-core-medication-dispense.html), [UZ Core MedicationRequest](StructureDefinition-uz-core-medicationrequest.html), [UZ Core Task Referral Approval](StructureDefinition-uz-core-referral-approval-task.html), [UZ Core ServiceRequest](StructureDefinition-uz-core-servicerequest.html) and [UZ Core SupplyRequest](StructureDefinition-uz-core-supply-request.html); [UZ Core ActivityDefinition](StructureDefinition-uz-core-activitydefinition.html) gets an intro and a Quick Start next to its existing notes.
 
 [MedicationKnowledge associated medication](SearchParameter-uz-core-medicationknowledge-associated-medication.html) is a new search parameter, `associated-medication`, that finds the [UZ Core MedicationKnowledge](StructureDefinition-uz-core-medicationknowledge.html) entries for a Medication - for example, the approved prices of a dispensed product. Base FHIR R5 has no search parameter for this. Chain it on `identifier` to search by the product's registration number or GTIN.
 
-
-[Observation epicrisis section](CodeSystem-observation-epicris-codes-cs.html) is a new code system for the sections of a discharge summary, such as anamnesis morbi, anamnesis vitae, status praesens and complaints. [Observation codes](ValueSet-observation-codes-vs.html) includes it.
 
 [Payment type](CodeSystem-payment-type-cs.html) adds `paytype-0001-0006` Resolution No. 5199 and `paytype-0001-0007` Resolution No. 311.
 

@@ -2,11 +2,11 @@
 
 #### Qo'shildi
 
+[Chiqish epikrizi bo'limlari](ValueSet-discharge-summary-section-vs.html) - chiqish epikrizi [Composition](StructureDefinition-uz-core-composition.html) bo'lim kodlarining yangi qiymatlar to'plami: shikoyatlar, kasallik anamnezi, obyektiv holat va nevrologik status uchun LOINC kodlari, hayot anamnezi, epidemiologik anamnez va mahalliy status uchun yangi [Chiqish epikrizi bo'limlari](CodeSystem-discharge-summary-section-cs.html) kod tizimidagi kodlar.
+
 [Composition hujjat turlari](CodeSystem-composition-type-cs.html): 399-son buyruqning 112-shakli - foliy kislotasi, 25-OH D vitamini va B12 vitaminiga IXLA tahlili uchun `emdoc-0010-0471` kodi qo'shildi.
 
 Endi har bir profil sahifasida kirish qismi va Tez boshlash bo'limi bor. Ular [UZ Core BiologicallyDerivedProduct](StructureDefinition-uz-core-biologically-derived-product.html), [UZ Core Claim](StructureDefinition-uz-core-claim.html), [UZ Core ClaimResponse](StructureDefinition-uz-core-claim-response.html), [UZ Core Composition](StructureDefinition-uz-core-composition.html), [UZ Core DiagnosticReport](StructureDefinition-uz-core-diagnostic-report.html), [UZ Core Group](StructureDefinition-uz-core-group.html), [UZ Core InventoryItem](StructureDefinition-uz-core-inventoryitem.html), [UZ Core Laboratory ObservationDefinition](StructureDefinition-uz-core-laboratory-observation-definition.html), [UZ Core MedicationDispense](StructureDefinition-uz-core-medication-dispense.html), [UZ Core MedicationRequest](StructureDefinition-uz-core-medicationrequest.html), [UZ Core Task Referral Approval](StructureDefinition-uz-core-referral-approval-task.html), [UZ Core ServiceRequest](StructureDefinition-uz-core-servicerequest.html) va [UZ Core SupplyRequest](StructureDefinition-uz-core-supply-request.html) uchun qo'shildi; [UZ Core ActivityDefinition](StructureDefinition-uz-core-activitydefinition.html) mavjud izohlar yonida kirish qismi va Tez boshlash bo'limini oldi.
-
-[Epikriz bo'limlari](CodeSystem-observation-epicris-codes-cs.html) - chiqish epikrizi bo'limlari uchun yangi kod tizimi, masalan kasallik anamnezi, hayot anamnezi, obyektiv holat va shikoyatlar. U [Kuzatuv kodlari](ValueSet-observation-codes-vs.html) tarkibiga kiradi.
 
 [MedicationKnowledge associated medication](SearchParameter-uz-core-medicationknowledge-associated-medication.html) - Medication uchun [UZ Core MedicationKnowledge](StructureDefinition-uz-core-medicationknowledge.html) yozuvlarini, masalan, beriladigan preparatning tasdiqlangan narxlarini topadigan yangi `associated-medication` qidiruv parametri. Bazaviy FHIR R5 da bunday qidiruv parametri yo'q. Preparatning ro'yxatdan o'tish raqami yoki GTIN bo'yicha qidirish uchun uni `identifier` bilan zanjir qilib ishlating.
 
