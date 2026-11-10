@@ -30,7 +30,9 @@ Description: "Example state-insurance referral for planned hospitalization; its 
 * intent = #order
 * category[dhpCategory] = $sct#32485007 "Admission to hospital"
 * category[referralPurpose] = ServiceRequestReferralPurposeCS#purpose-0001-0003 "Treatment"
-* category[specialty] = $sct#394579002 "Cardiology"
+* category[specialty] = $sct#394612005 "Urology"
+* orderDetail.parameter[basis].code = $loinc#86947-9
+* orderDetail.parameter[basis].valueCodeableConcept = https://terminology.dhp.uz/fhir/core/CodeSystem/service-request-basis-cs#basis-0001-00001 "Solitary kidney stone (uncomplicated course)"
 * code = $sct#306206005 "Referral to service"
 * subject = Reference(Patient/example-nodira)
 * requester = Reference(PractitionerRole/example-practitionerrole)

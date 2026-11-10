@@ -40,10 +40,19 @@ Description: "Uzbekistan Core ServiceRequest profile, used to represent a reques
 * code MS
 * code from ServiceRequestCodesVS (extensible)
 * code ^short = "Specifies the procedure, diagnostic investigation, or panel being requested. The codes used represent orderable services and must not be used for analytical result observations."
-* orderDetail.parameter.value[x] MS
-* orderDetail.parameter.valueCodeableConcept MS
-* orderDetail.parameter.valueCodeableConcept from ServiceRequestBasisVS (extensible)
-* orderDetail.parameter.valueCodeableConcept ^short = "Basis for state-funded treatment for a qualifying diagnosis"
+* orderDetail MS
+* orderDetail.parameter MS
+* orderDetail.parameter ^slicing.discriminator.type = #value
+* orderDetail.parameter ^slicing.discriminator.path = "code"
+* orderDetail.parameter ^slicing.rules = #open
+* orderDetail.parameter ^slicing.description = "Order detail parameters identified by their code; any other parameters are allowed alongside them"
+* orderDetail.parameter contains basis 0..1 MS
+* orderDetail.parameter[basis] ^short = "Basis for state-funded treatment for a qualifying diagnosis"
+* orderDetail.parameter[basis].code = $loinc#86947-9
+* orderDetail.parameter[basis].code MS
+* orderDetail.parameter[basis].value[x] only CodeableConcept
+* orderDetail.parameter[basis].value[x] MS
+* orderDetail.parameter[basis].valueCodeableConcept from ServiceRequestBasisVS (extensible)
 * subject MS
 * subject only Reference(UZCorePatient or UZCoreLocation)
 * subject ^short = "The patient for whom the laboratory referral or order is issued. This element identifies the individual who is the subject of the requested laboratory investigation."
