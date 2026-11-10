@@ -180,11 +180,11 @@ A specialist certificate (*sertifikat*) is issued by the Ministry of Health and 
 
 #### What Tibtoifa returns
 
-One entry of the Tibtoifa response for PINFL `30101901234567`:
+One entry of the Tibtoifa response for PINFL `90000000000001`:
 
 ```
 {
-  "pinfl": "30101901234567",
+  "pinfl": "90000000000001",
   "serial": "CA",
   "number": "123456",
   "category": { "uz": "Oliy toifa", "ru": "Высшая категория", "en": "Higher category" },
@@ -203,7 +203,7 @@ The entry also carries Tibtoifa's internal ids (`id`, `serialId`, `categoryId`, 
 
 | Tibtoifa field | Example | FHIR element | Rule |
 |---|---|---|---|
-| `pinfl` | `30101901234567` | `Practitioner.identifier` (PINFL) | Finds the practitioner; not repeated in the qualification |
+| `pinfl` | `90000000000001` | `Practitioner.identifier` (PINFL) | Finds the practitioner; not repeated in the qualification |
 | `serial` + `number` | `CA` + `123456` | `qualification.identifier.value` | Series followed by number, no separator: `CA123456` |
 | - | - | `qualification.identifier.system` | Always `https://dhp.uz/fhir/core/sid/pro/uz/specialist-certificate` |
 | - | - | `qualification.code.coding` | Always `http://terminology.hl7.org/CodeSystem/v2-0360#CER` "Certificate" |
@@ -246,7 +246,7 @@ The qualification built from the Tibtoifa entry above:
         ]
       },
       "system": "https://dhp.uz/fhir/core/sid/pid/uz/ni",
-      "value": "30101901234567"
+      "value": "90000000000001"
     }
   ],
   "qualification": [

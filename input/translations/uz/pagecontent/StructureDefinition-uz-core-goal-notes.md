@@ -42,7 +42,7 @@ PUT [base]/Goal/[id]
 If-Match: W/"3"   # the ETag from your last read; 412 if it changed since
 ```
 
-Barcha qo'llab-quvvatlanadigan qidiruv parametrlari uchun [CapabilityStatement](CapabilityStatement-DHPCapabilityStatement.html) hujjatiga qarang.
+Qo'llab-quvvatlanadigan qidiruv parametrlarining to'liq ro'yxati [CapabilityStatement](CapabilityStatement-DHPCapabilityStatement.html#Goal1-43) da keltirilgan.
 
 ### Aloqador materiallar
 

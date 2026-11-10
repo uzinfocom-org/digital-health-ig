@@ -181,7 +181,7 @@ Description: "Example of a patient named Salim"
 Usage: #example
 * language = #ru
 * identifier[nationalId]
-  * value = "30211975910033"
+  * value = "12345678912345"
 * identifier[passportLocal]
   * value = "AC1234567"
 * identifier[passportInternational]
@@ -317,7 +317,7 @@ Description: "Example of a patient named Nodira, the subject of the state-insura
 Usage: #example
 * language = #uz
 * identifier[nationalId]
-  * value = "40503855900021"
+  * value = "90000000000003"
 * active = true
 * name
   * use = #usual
@@ -347,7 +347,7 @@ Description: "Example of a child whose mother is recorded against them - the rel
 Usage: #example
 * language = #uz
 * identifier[nationalId]
-  * value = "52006155900123"
+  * value = "90000000000005"
 * identifier[birthCertificate]
   * value = "II-ЮА №654321"
 * active = true

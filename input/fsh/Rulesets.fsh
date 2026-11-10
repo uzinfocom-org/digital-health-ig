@@ -109,7 +109,7 @@ RuleSet: MohIdentifier
   * system 1..1 MS
   * system = $organization-moh-id-system
   * type 1..1 MS
-  * type = $identifier-type#XX "Organization Identifier"
+  * type = $identifier-type#XX
   * use = #official
   * value 1..1 MS
 

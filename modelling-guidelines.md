@@ -581,13 +581,14 @@ Description: "Example instance of a headache condition documented during a patie
 
 - `### Quick Start` со стандартным абзацем про JWT, `[base]` и `%7C`;
 - чтение по id, поиск (сначала по идентификатору и коду, затем прочие полезные запросы), создание, обновление с `If-Match`;
-- ссылка на CapabilityStatement и `### Related` со ссылками на рабочие процессы и общие страницы руководства.
+- заключительная строка со ссылкой на раздел ресурса в CapabilityStatement: `See the [CapabilityStatement](CapabilityStatement-DHPCapabilityStatement.html#<Type>1-<N>) for the full list of supported search parameters.` `<N>` - позиция ресурса в `rest.resource` файла `input/vocabulary/CapabilityStatement-DHPCapabilityStatement.json`, считая с 1 (Patient - `#Patient1-1`); проверьте якорь на собранной странице, он сдвигается, когда сервер меняет порядок ресурсов. Не перечисляйте параметры в тексте. Если ресурса ещё нет в CapabilityStatement, пишите `<Type> is not yet listed in the [CapabilityStatement](CapabilityStatement-DHPCapabilityStatement.html); the searches above use standard FHIR R5 search parameters.` В RU и UZ используется то же предложение, что и на других страницах (`Полный список поддерживаемых параметров поиска приведён в [CapabilityStatement](…).`, `Qo'llab-quvvatlanadigan qidiruv parametrlarining to'liq ro'yxati [CapabilityStatement](…) da keltirilgan.`);
+- `### Related` со ссылками на рабочие процессы и общие страницы руководства.
 
 **Правила:**
 
 - Каждый JSON-пример должен проходить валидацию по профилю (команда в `AGENTS.md`): всегда `meta.profile`; `display` кодов локальных CodeSystem должен соответствовать `language` ресурса; необязательный `display` у кодов HL7 лучше опустить.
 - Строки в блоках кода не длиннее ~120 символов - длинные объекты разбивайте на несколько строк, иначе страница расползается по ширине.
-- Используйте только параметры поиска из CapabilityStatement DHP.
+- Используйте только параметры поиска, на которые клиент может положиться: перечисленные для ресурса в CapabilityStatement (стандартные параметры FHIR R5, если ресурса там ещё нет), а также SearchParameter UZ Core из этого руководства со ссылкой на их страницу.
 - Не повторяйте одно правило в нескольких местах страницы.
 - RU и UZ копии обоих фрагментов кладите в `input/translations/<lang>/pagecontent/` под тем же именем файла, с баннером машинного перевода в начале. Блоки кода и JSON идентичны английским. Якоря `{#quick-start}`, `{#finding}`, `{#identifier-slices}` проставляйте явно - переведённые заголовки их не генерируют.
 - Добавьте запись в changelog (en, ru, uz) на её место в алфавитном порядке внутри категории, а не в конец - см. `AGENTS.md`.
