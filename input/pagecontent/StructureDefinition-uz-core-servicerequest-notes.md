@@ -60,7 +60,7 @@ If-Match: W/"3"   # the ETag from your last read; 412 if it changed since
 }
 ```
 
-A completed request cannot be changed, and a revoked one cannot be fulfilled. See the [CapabilityStatement](CapabilityStatement-DHPCapabilityStatement.html) for the full list of supported search parameters.
+A completed request cannot be changed, and a revoked one cannot be fulfilled. See the [CapabilityStatement](CapabilityStatement-DHPCapabilityStatement.html#ServiceRequest1-13) for the full list of supported search parameters.
 
 ### Related
 

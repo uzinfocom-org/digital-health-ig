@@ -62,7 +62,7 @@ If-Match: W/"3"   # the ETag from your last read; 412 if it changed since
 }
 ```
 
-Bajarilgan so'rovni o'zgartirib bo'lmaydi, bekor qilinganini esa bajarib bo'lmaydi. Qo'llab-quvvatlanadigan qidiruv parametrlarining to'liq ro'yxati [CapabilityStatement](CapabilityStatement-DHPCapabilityStatement.html) da keltirilgan.
+Bajarilgan so'rovni o'zgartirib bo'lmaydi, bekor qilinganini esa bajarib bo'lmaydi. Qo'llab-quvvatlanadigan qidiruv parametrlarining to'liq ro'yxati [CapabilityStatement](CapabilityStatement-DHPCapabilityStatement.html#ServiceRequest1-13) da keltirilgan.
 
 ### Bog'liq bo'limlar
 

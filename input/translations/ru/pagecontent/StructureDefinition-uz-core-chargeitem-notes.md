@@ -44,7 +44,7 @@ PUT [base]/ChargeItem/[id]
 If-Match: W/"3"   # the ETag from your last read; 412 if it changed since
 ```
 
-Список поддерживаемых параметров поиска см. в [CapabilityStatement](CapabilityStatement-DHPCapabilityStatement.html).
+ChargeItem пока не указан в [CapabilityStatement](CapabilityStatement-DHPCapabilityStatement.html); запросы выше используют стандартные параметры поиска FHIR R5.
 
 ### Связанные материалы
 

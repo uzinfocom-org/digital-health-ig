@@ -581,13 +581,14 @@ Models to follow: Organization, Location, Medication. A new profile without thes
 
 - `### Quick Start` with the standard paragraph about JWT, `[base]` and `%7C`;
 - read by id, search (first by identifier and code, then other useful queries), create, update with `If-Match`;
-- a link to the CapabilityStatement and `### Related` with links to workflows and general pages of the guide.
+- a closing line that links to the resource's section of the CapabilityStatement: `See the [CapabilityStatement](CapabilityStatement-DHPCapabilityStatement.html#<Type>1-<N>) for the full list of supported search parameters.` `<N>` is the resource's position in `rest.resource` of `input/vocabulary/CapabilityStatement-DHPCapabilityStatement.json`, counting from 1 (Patient is `#Patient1-1`); check the anchor on the built page, as it shifts when the server reorders resources. Do not list the parameters in prose. If the resource is not in the CapabilityStatement yet, write `<Type> is not yet listed in the [CapabilityStatement](CapabilityStatement-DHPCapabilityStatement.html); the searches above use standard FHIR R5 search parameters.` RU and UZ use the same sentence as the other pages (`Полный список поддерживаемых параметров поиска приведён в [CapabilityStatement](…).`, `Qo'llab-quvvatlanadigan qidiruv parametrlarining to'liq ro'yxati [CapabilityStatement](…) da keltirilgan.`);
+- `### Related` with links to workflows and general pages of the guide.
 
 **Rules:**
 
 - Every JSON example must pass validation against the profile (the command is in `AGENTS.md`): always `meta.profile`; the `display` of codes from local CodeSystems must match the resource's `language`; the optional `display` on HL7 codes is better omitted.
 - Lines in code blocks no longer than ~120 characters - split long objects across several lines, otherwise the page spreads out in width.
-- Use only search parameters from the DHP CapabilityStatement.
+- Use only search parameters a client can rely on: those the CapabilityStatement lists for the resource (standard FHIR R5 ones if it is not listed yet), plus UZ Core SearchParameters defined in this guide, linked to their page.
 - Do not repeat the same rule in several places on the page.
 - Put RU and UZ copies of both fragments in `input/translations/<lang>/pagecontent/` under the same file name, with a machine translation banner at the top. Code blocks and JSON are identical to the English ones. Set the anchors `{#quick-start}`, `{#finding}`, `{#identifier-slices}` explicitly - translated headings do not generate them.
 - Add a changelog entry (en, ru, uz) in its place in alphabetical order within the category, not at the end - see `AGENTS.md`.

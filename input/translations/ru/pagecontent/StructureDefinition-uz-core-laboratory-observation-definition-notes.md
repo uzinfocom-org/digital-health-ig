@@ -56,7 +56,7 @@ If-Match: W/"3"   # the ETag from your last read; 412 if it changed since
 
 При обновлении не меняйте `url`: записи HealthcareService ссылаются на определение по нему.
 
-Полный список поддерживаемых параметров поиска приведён в [CapabilityStatement](CapabilityStatement-DHPCapabilityStatement.html).
+Полный список поддерживаемых параметров поиска приведён в [CapabilityStatement](CapabilityStatement-DHPCapabilityStatement.html#ObservationDefinition1-32).
 
 ### Связанные разделы
 

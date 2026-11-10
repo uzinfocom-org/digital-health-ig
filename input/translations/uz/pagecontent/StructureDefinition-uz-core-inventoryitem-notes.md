@@ -50,7 +50,7 @@ If-Match: W/"3"   # the ETag from your last read; 412 if it changed since
 }
 ```
 
-Ombor holatining `system` i - `https://terminology.dhp.uz/fhir/core/CodeSystem/inventoryitem-inventory-status-cs`. Qo'llab-quvvatlanadigan qidiruv parametrlarining to'liq ro'yxati [CapabilityStatement](CapabilityStatement-DHPCapabilityStatement.html) da keltirilgan.
+Ombor holatining `system` i - `https://terminology.dhp.uz/fhir/core/CodeSystem/inventoryitem-inventory-status-cs`. Qo'llab-quvvatlanadigan qidiruv parametrlarining to'liq ro'yxati [CapabilityStatement](CapabilityStatement-DHPCapabilityStatement.html#InventoryItem1-60) da keltirilgan.
 
 ### Bog'liq bo'limlar
 

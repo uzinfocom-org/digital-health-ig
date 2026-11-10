@@ -60,7 +60,7 @@ If-Match: W/"3"   # the ETag from your last read; 412 if it changed since
 }
 ```
 
-Qo'llab-quvvatlanadigan qidiruv parametrlarining to'liq ro'yxati [CapabilityStatement](CapabilityStatement-DHPCapabilityStatement.html) da, birlik va donatsiya raqamlari tizimlarining URI lari esa yuqoridagi [identifikator slayslari](#identifier-slices) jadvalida keltirilgan.
+Qo'llab-quvvatlanadigan qidiruv parametrlarining to'liq ro'yxati [CapabilityStatement](CapabilityStatement-DHPCapabilityStatement.html#BiologicallyDerivedProduct1-56) da, birlik va donatsiya raqamlari tizimlarining URI lari esa yuqoridagi [identifikator slayslari](#identifier-slices) jadvalida keltirilgan.
 
 ### Bog'liq bo'limlar
 

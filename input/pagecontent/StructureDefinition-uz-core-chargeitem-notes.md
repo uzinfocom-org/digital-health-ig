@@ -42,7 +42,7 @@ PUT [base]/ChargeItem/[id]
 If-Match: W/"3"   # the ETag from your last read; 412 if it changed since
 ```
 
-See the [CapabilityStatement](CapabilityStatement-DHPCapabilityStatement.html) for supported search parameters.
+ChargeItem is not yet listed in the [CapabilityStatement](CapabilityStatement-DHPCapabilityStatement.html); the searches above use standard FHIR R5 search parameters.
 
 ### Related
 

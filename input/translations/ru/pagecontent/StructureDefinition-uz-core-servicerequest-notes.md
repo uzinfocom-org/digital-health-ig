@@ -62,7 +62,7 @@ If-Match: W/"3"   # the ETag from your last read; 412 if it changed since
 }
 ```
 
-Выполненный запрос изменить нельзя, а отменённый нельзя выполнить. Полный список поддерживаемых параметров поиска приведён в [CapabilityStatement](CapabilityStatement-DHPCapabilityStatement.html).
+Выполненный запрос изменить нельзя, а отменённый нельзя выполнить. Полный список поддерживаемых параметров поиска приведён в [CapabilityStatement](CapabilityStatement-DHPCapabilityStatement.html#ServiceRequest1-13).
 
 ### Связанные разделы
 

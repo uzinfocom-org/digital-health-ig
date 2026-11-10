@@ -47,7 +47,7 @@ GET [base]/Patient?organization=Organization/[id]
 GET [base]/Patient?address-city=22070013
 ```
 
-See the [CapabilityStatement](CapabilityStatement-DHPCapabilityStatement.html) for the full list of supported search parameters, and [Identifier systems](identifiers.html) for all patient identifier system URIs.
+See the [CapabilityStatement](CapabilityStatement-DHPCapabilityStatement.html#Patient1-1) for the full list of supported search parameters, and [Identifier systems](identifiers.html) for all patient identifier system URIs.
 
 ### Attaching to a managing organization
 

@@ -49,7 +49,7 @@ GET [base]/Patient?organization=Organization/[id]
 GET [base]/Patient?address-city=22070013
 ```
 
-См. [CapabilityStatement](CapabilityStatement-DHPCapabilityStatement.html) для полного списка поддерживаемых поисковых параметров и [Системы идентификаторов](identifiers.html) для всех URI систем идентификаторов пациента.
+См. [CapabilityStatement](CapabilityStatement-DHPCapabilityStatement.html#Patient1-1) для полного списка поддерживаемых поисковых параметров и [Системы идентификаторов](identifiers.html) для всех URI систем идентификаторов пациента.
 
 ### Прикрепление к обслуживающей организации
 

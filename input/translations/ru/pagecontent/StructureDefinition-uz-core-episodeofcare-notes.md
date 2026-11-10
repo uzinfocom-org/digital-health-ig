@@ -40,7 +40,7 @@ PUT [base]/EpisodeOfCare/[id]
 If-Match: W/"3"   # ETag из последнего чтения; 412, если ресурс с тех пор изменился
 ```
 
-Все поддерживаемые параметры поиска приведены в [CapabilityStatement](CapabilityStatement-DHPCapabilityStatement.html).
+Полный список поддерживаемых параметров поиска приведён в [CapabilityStatement](CapabilityStatement-DHPCapabilityStatement.html#EpisodeOfCare1-8).
 
 ### Связанные материалы
 
