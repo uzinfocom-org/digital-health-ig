@@ -162,3 +162,20 @@ Usage: #example
       * valueCode = #en
     * extension[content][0]
       * valueString = "Complete Blood Count (CBC)"
+
+Instance: example-healthcareservice-txmk-initial-visit
+InstanceOf: UZCoreHealthcareService
+Title: "Example UZ Core HealthcareService - TXMK Initial Physician Visit"
+Description: "An initial physician visit classified using the TXMK category and service coding slices."
+Usage: #example
+* language = #uz
+* active = true
+* providedBy = Reference(example-organization)
+* category.coding[txmkCategory]
+  * code = #txmk-0001-00001 "Shifokor qabullari va konsultatsiyalari"
+* type.coding[txmkService]
+  * code = #5586604
+* name = "Shifokorning birlamchi qabuli"
+  * extension[translation][0]
+    * extension[lang][0].valueCode = #ru
+    * extension[content][0].valueString = "Прием врача первичный"
