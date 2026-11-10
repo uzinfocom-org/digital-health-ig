@@ -1,6 +1,6 @@
 > **Mashina tarjimasi, inson tomonidan tekshirilishi zarur.** Ushbu sahifa ingliz tilidan sun'iy intellekt yordamida avtomatik tarjima qilingan va hali muharrir tomonidan tekshirilmagan. Har qanday nomuvofiqlikda asl inglizcha versiya ustuvor hisoblanadi.
 
-UZ Core Flag [UZ Core bemori](StructureDefinition-uz-core-patient.html) haqida Raqamli sog'liqni saqlash platformasi foydalanuvchilari shu bemor bilan ishlaganda bilishi kerak bo'lgan ogohlantirish yoki xabarni qayd etadi. Hozircha belgi kodi donorlikka ruxsatni qamrab oladi: bemor donor bo'lishi mumkinmi yoki tibbiy chetlatilganmi. Belgi u qo'yilgan [tashrif](StructureDefinition-uz-core-encounter.html) va muallifga havola berishi mumkin. Holat belgi qayd etgan narsani emas, balki belgining hayotiy siklini ifodalaydi: faol belgi ruxsatni ham, tibbiy chetlatishni ham bildirishi mumkin.
+UZ Core Flag [UZ Core bemori](StructureDefinition-uz-core-patient.html) haqida Raqamli sog'liqni saqlash platformasi foydalanuvchilari shu bemor bilan ishlaganda bilishi kerak bo'lgan ogohlantirish yoki xabarni qayd etadi. Hozircha belgi kodi donorlikka ruxsatni qamrab oladi: bemor donor bo'lishi mumkinmi yoki tibbiy chetlatilganmi. Belgi u qo'yilgan [tashrif](StructureDefinition-uz-core-encounter.html) va muallifga havola berishi mumkin.
 
 ### Majburiy va Must Support ma'lumot elementlari
 
@@ -8,14 +8,16 @@ Quyidagi elementlar har doim mavjud bo'lishi (majburiy) yoki ma'lumot mavjud bo'
 
 #### Har bir UZ Core Flag quyidagilarga ega bo'lishi shart
 
-Holat, donorlik qarori kodi va bemorga havola bazaviy FHIR R5 da majburiy.
+Har bir Flag da `status`, belgi nima haqida ekanini ko'rsatuvchi `code` va `subject` bo'ladi - uchalasi ham bazaviy FHIR R5 da majburiy. Profil `subject` ni [UZ Core bemori](StructureDefinition-uz-core-patient.html) bilan cheklaydi.
 
 #### Har bir UZ Core Flag quyidagilarni qo'llab-quvvatlashi shart
 
-- berilgan bo'lsa, biznes-identifikator va uning tizimi;
-- belgining holati;
-- donorlikka ruxsat qarori;
-- qaror tegishli bo'lgan bemor.
+- manba tizim bersa, `system` i bilan biznes-`identifier`;
+- belgining `status` i (active / inactive / entered-in-error) - u belgi qayd etgan narsani emas, belgining o'zini tavsiflaydi, shuning uchun amaldagi tibbiy chetlatish `active` holatidagi belgidir;
+- `code` - belgi nima haqida (donorlikka ruxsat / tibbiy chetlatish);
+- `subject` - belgi tegishli bo'lgan bemor.
+
+`category` (ma'muriy, klinik va hokazo), belgining amal qilish `period` i, u qo'yilgan [tashrif](StructureDefinition-uz-core-encounter.html) va uning `author` i ([Practitioner](StructureDefinition-uz-core-practitioner.html), [PractitionerRole](StructureDefinition-uz-core-practitioner-role.html), [Organization](StructureDefinition-uz-core-organization.html), [Device](StructureDefinition-uz-core-device.html), [Patient](StructureDefinition-uz-core-patient.html) yoki [RelatedPerson](StructureDefinition-uz-core-relatedperson.html)) ixtiyoriy; ma'lum bo'lsa, ularni yuboring.
 
 ### JSON ni bosqichma-bosqich qurish
 
@@ -81,7 +83,7 @@ HL7 belgi toifasini, amal qilish davrini, qaror qabul qilingan tashrifni va unin
 
 #### Tibbiy chetlatish
 
-Chetlatish uchun `donation-deferred` kodi ishlatiladi. Chetlatish amal qilayotgan paytda belgi `active` bo'lib qoladi: holat donorlikka ruxsatni emas, belgining o'zini tavsiflaydi.
+Chetlatish uchun `donation-deferred` kodi ishlatiladi; chetlatish amal qilayotgan paytda belgi `active` bo'lib qoladi:
 
 ```json
 {

@@ -1,4 +1,4 @@
-UZ Core Flag records a prospective warning or notification about a [UZ Core Patient](StructureDefinition-uz-core-patient.html) that users of the Digital Health Platform should be aware of when dealing with that patient. The flag code currently covers donation eligibility: whether the patient may donate or is under a medical deferral. A flag can be linked to the [UZ Core Encounter](StructureDefinition-uz-core-encounter.html) in which it was raised and to its author. The status describes the flag's lifecycle, not what it records: an active flag may record either eligibility or a medical deferral.
+UZ Core Flag records a prospective warning or notification about a [UZ Core Patient](StructureDefinition-uz-core-patient.html) that users of the Digital Health Platform should be aware of when dealing with that patient. The flag code currently covers donation eligibility: whether the patient may donate or is under a medical deferral. A flag can be linked to the [UZ Core Encounter](StructureDefinition-uz-core-encounter.html) in which it was raised and to its author.
 
 ### Mandatory and Must Support data elements
 
@@ -6,14 +6,16 @@ The elements below must always be present (mandatory) or must be supported when 
 
 #### Each UZ Core Flag Must Have
 
-A status, a donation eligibility code and a patient reference are mandatory in base FHIR R5.
+Every Flag must carry a `status`, a `code` saying what the flag is about, and a `subject` - all three are mandatory in base FHIR R5. This profile limits the `subject` to a [UZ Core Patient](StructureDefinition-uz-core-patient.html).
 
 #### Each UZ Core Flag Must Support
 
-- the business identifier, with its system, when assigned;
-- the status of the flag;
-- the donation eligibility decision;
-- the patient to whom the decision applies.
+- a business `identifier` with its `system`, when the source system assigns one;
+- the `status` of the flag (active / inactive / entered-in-error) - it describes the flag itself, not what the flag records, so a medical deferral that still applies is an `active` flag;
+- the `code` - what the flag is about (eligible for donation / medical deferral);
+- the `subject` - the patient the flag is about.
+
+The `category` (administrative, clinical and so on), the `period` the flag applies to, the [Encounter](StructureDefinition-uz-core-encounter.html) in which it was raised and its `author` ([Practitioner](StructureDefinition-uz-core-practitioner.html), [PractitionerRole](StructureDefinition-uz-core-practitioner-role.html), [Organization](StructureDefinition-uz-core-organization.html), [Device](StructureDefinition-uz-core-device.html), [Patient](StructureDefinition-uz-core-patient.html) or [RelatedPerson](StructureDefinition-uz-core-relatedperson.html)) are optional; send them when known.
 
 ### Building the JSON, step by step
 
@@ -79,7 +81,7 @@ Add the HL7 flag category, the validity period, the encounter in which the decis
 
 #### A medical deferral
 
-A deferral uses the `donation-deferred` code. The flag stays `active` while the deferral applies: the status describes the flag, not permission to donate.
+A deferral uses the `donation-deferred` code and stays `active` while it applies:
 
 ```json
 {
