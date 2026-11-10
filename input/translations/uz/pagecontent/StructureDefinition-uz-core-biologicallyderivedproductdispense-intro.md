@@ -1,30 +1,112 @@
 > **Mashina tarjimasi, inson tomonidan tekshirilishi zarur.** Ushbu sahifa ingliz tilidan sun'iy intellekt yordamida avtomatik tarjima qilingan va hali muharrir tomonidan tekshirilmagan. Har qanday nomuvofiqlikda asl inglizcha versiya ustuvor hisoblanadi.
 
-UZ Core BiologicallyDerivedProductDispense [biologik mahsulotni](StructureDefinition-uz-core-biologically-derived-product.html) [bemorning](StructureDefinition-uz-core-patient.html) klinik jamoasiga [buyurtma](StructureDefinition-uz-core-servicerequest.html) asosida berishni qayd etadi. [Procedure](StructureDefinition-uz-core-procedure.html) berishga qo'shimcha ma'lumot sifatida havola berishi va transfuziyaning o'zini qayd etishi mumkin.
+UZ Core BiologicallyDerivedProductDispense [biologik mahsulot](StructureDefinition-uz-core-biologically-derived-product.html), masalan qon komponenti, [bemor](StructureDefinition-uz-core-patient.html) uchun uni qo'llaydigan klinik jamoaga berilganini qayd etadi. U qaysi mahsulot kim uchun berilganini, qaysi buyurtma bajarilayotganini, kim ishtirok etganini, mahsulot qayerdan berilgani va qayerga yuborilganini hamda qachon topshirilganini ko'rsatadi. Berish odatda [ServiceRequest](StructureDefinition-uz-core-servicerequest.html) ni bajaradi. Transfuziyaning o'zi [Procedure](StructureDefinition-uz-core-procedure.html) sifatida qayd etiladi va u berishga qo'shimcha ma'lumot sifatida havola qilishi mumkin.
 
 ### Majburiy va Must Support ma'lumot elementlari
 
 Quyidagi elementlar har doim mavjud bo'lishi (majburiy) yoki ma'lumot mavjud bo'lganda qo'llab-quvvatlanishi shart ([Must Support](must-support.html)). Hammasi talab qilinmaydi, lekin tizimingiz har bir Must Support elementini ma'lumotga ega bo'lganda to'ldirishi va qabul qilishda uni qayta ishlashi shart. Bu inson o'qiy oladigan xulosa; quyidagi [rasmiy ko'rinishlar](#profile) aniq kardinalliklar, turlar va terminologiya bog'lanishlarini beradi.
 
-#### Har bir UZ Core BiologicallyDerivedProductDispense quyidagilarni saqlashi kerak
+#### Har bir UZ Core BiologicallyDerivedProductDispense quyidagilarga ega bo'lishi shart
 
-Holat, bitta mahsulotga havola va retsipiyent majburiy. Har bir yuborilgan ijrochida shifokorga havola, har bir biznes-identifikatorda tizim va qiymat bo'lishi kerak.
+`status`, beriladigan mahsulot (`product`) va u mo'ljallangan bemor (`patient`). Uchala element ham bazaviy resursda majburiy. Har bir `performer` o'z `actor` ini, har bir `identifier` esa o'z `system` va `value` sini ko'rsatishi shart.
 
-#### Har bir UZ Core BiologicallyDerivedProductDispense quyidagilarni qo'llab-quvvatlashi kerak
+#### Har bir UZ Core BiologicallyDerivedProductDispense quyidagilarni qo'llab-quvvatlashi shart
 
-- berilgan bo'lsa, berish identifikatori;
-- bajarilayotgan buyurtma;
-- berish holati;
-- mahsulot va retsipiyent;
-- berish ishtirokchilari;
-- amaldagi topshirish vaqti.
+- berishning biznes-identifikatori (`identifier`), agar berilgan bo'lsa, har doim `system` bilan birga;
+- berish bajarayotgan [ServiceRequest](StructureDefinition-uz-core-servicerequest.html) (`basedOn`);
+- berish `status` i (preparation / in-progress / allocated / issued / unfulfilled / returned / entered-in-error / unknown);
+- beriladigan mahsulot (`product`) va u mo'ljallangan bemor (`patient`);
+- ishtirok etgan tibbiyot xodimlari (`performer.actor`);
+- mahsulot amalda topshirilgan vaqt (`whenHandedOver`).
 
-### JSON ni bosqichma-bosqich yaratish
+### JSON ni bosqichma-bosqich qurish
 
-1. [Minimal JSON](BiologicallyDerivedProductDispense-example-bdp-dispense-minimal.json.html) holat, mahsulot, bemor va `meta.profile` dagi profilni beradi.
-2. [Berish JSON](BiologicallyDerivedProductDispense-example-bdp-dispense-issued.json.html) buyurtma, shifokor, joylar, miqdor, tayyorlash va topshirish vaqtlarini qo'shadi. Havolalar UZ Core profillarini ko'rsatadi; miqdor amalda berilgan hajmdir.
-3. [Qaytarish JSON](BiologicallyDerivedProductDispense-example-bdp-dispense-returned.json.html) HL7 asl tizimlaridagi ixtiyoriy moslik, kelib chiqish va ijrochi funksiyasi kodlarini ko'rsatadi. Transfuziyaning to'xtatilishi mahsulot qaytarilganini anglatmaydi.
+Quyidagi misollar eng kichik valid nusxadan qaytarilgan birlikkacha boradi. Ularning har biri ushbu profil bo'yicha validatsiyadan o'tadi. To'liq namunaviy nusxalar - [minimal](BiologicallyDerivedProductDispense-example-bdp-dispense-minimal.html), [berilgan](BiologicallyDerivedProductDispense-example-bdp-dispense-issued.html) va [qaytarilgan](BiologicallyDerivedProductDispense-example-bdp-dispense-returned.html) berishlar.
 
-BMS da ABO va Rh-Hr moslik natijalari Observation da saqlanadi. Berish holati transfuziya natijasini emas, berish jarayonini ifodalaydi. Identifikator tizimi uni bergan tizim bilan kelishiladi; profil vaqtinchalik URI ni belgilamaydi.
+#### Yuborish mumkin bo'lgan eng kichik BiologicallyDerivedProductDispense
 
-[Tez boshlash](#quick-start).
+Har bir UZ Core resursi o'z profilini `meta.profile` da ko'rsatadi - server uni qaysi qoidalar bo'yicha tekshirishni shundan biladi. Bundan tashqari uchta majburiy element yetarli:
+
+```json
+{
+  "resourceType": "BiologicallyDerivedProductDispense",
+  "meta": { "profile": ["https://dhp.uz/fhir/core/StructureDefinition/uz-core-biologicallyderivedproductdispense"] },
+  "status": "issued",
+  "product": { "reference": "BiologicallyDerivedProduct/example-blood-component-product" },
+  "patient": { "reference": "Patient/example-salim" }
+}
+```
+
+`status` - HL7 berish holatlari ro'yxatidagi kod. Uning inglizcha nomi bazaviy kod tizimidan, o'zbekcha va ruscha nomlari esa DHP supplementidan olinadi. `product` - [UZ Core BiologicallyDerivedProduct](StructureDefinition-uz-core-biologically-derived-product.html) ga `Reference`, `patient` esa [UZ Core Patient](StructureDefinition-uz-core-patient.html) ga `Reference`.
+
+#### Bemor uchun berilgan qon komponenti
+
+Qon quyish bo'limi buyurtma asosida bemor uchun birlik beradi. `basedOn` [buyurtmaga](ServiceRequest-example-bdp-dispense-request.html) ishora qiladi, `performer` birlikni bergan tibbiyot xodimini, `location` u berilgan joyni, `destination` esa u yuborilgan joyni ko'rsatadi:
+
+```json
+{
+  "resourceType": "BiologicallyDerivedProductDispense",
+  "meta": { "profile": ["https://dhp.uz/fhir/core/StructureDefinition/uz-core-biologicallyderivedproductdispense"] },
+  "basedOn": [ { "reference": "ServiceRequest/example-bdp-dispense-request" } ],
+  "status": "issued",
+  "product": { "reference": "BiologicallyDerivedProduct/example-blood-component-product" },
+  "patient": { "reference": "Patient/example-salim" },
+  "performer": [ { "actor": { "reference": "Practitioner/example-practitioner" } } ],
+  "location": { "reference": "Location/example-location-1" },
+  "quantity": { "value": 250, "unit": "mL", "system": "http://unitsofmeasure.org", "code": "mL" },
+  "preparedDate": "2026-11-09T10:15:00+05:00",
+  "whenHandedOver": "2026-11-09T10:30:00+05:00",
+  "destination": { "reference": "Location/example-location-2" }
+}
+```
+
+`basedOn` va `performer` takrorlanadi; `location` va `destination` takrorlanmaydi va ikkalasi ham [UZ Core Location](StructureDefinition-uz-core-location.html) ga `Reference`. `performer.actor` - [UZ Core Practitioner](StructureDefinition-uz-core-practitioner.html) ga `Reference`. `quantity` - amalda berilgan miqdor, u manba mahsulotning to'liq hajmiga teng bo'lishi shart emas. `preparedDate` - mahsulot ushbu berish uchun tanlangan vaqt, manba mahsulot tayyorlangan vaqt emas; `whenHandedOver` - u amalda jo'natilgan yoki topshirilgan vaqt.
+
+#### Qaytarilgan birlik
+
+Berilgan birlik ishlatilmasdan qaytarilgan, shuning uchun `status` `returned` bo'ladi. Bu misolda ixtiyoriy kodlar ham to'ldirilgan: donor va retsipiyent o'rtasidagi munosabat, o'tkazilgan moslashtirish turi va ijrochining funksiyasi:
+
+```json
+{
+  "resourceType": "BiologicallyDerivedProductDispense",
+  "meta": { "profile": ["https://dhp.uz/fhir/core/StructureDefinition/uz-core-biologicallyderivedproductdispense"] },
+  "basedOn": [ { "reference": "ServiceRequest/example-bdp-dispense-request" } ],
+  "status": "returned",
+  "originRelationshipType": {
+    "coding": [
+      {
+        "system": "http://hl7.org/fhir/CodeSystem/biologicallyderivedproductdispense-origin-relationship",
+        "code": "allogeneic"
+      }
+    ]
+  },
+  "product": { "reference": "BiologicallyDerivedProduct/example-blood-component-product" },
+  "patient": { "reference": "Patient/example-salim" },
+  "matchStatus": {
+    "coding": [
+      {
+        "system": "http://hl7.org/fhir/CodeSystem/biologicallyderivedproductdispense-match-status",
+        "code": "crossmatched"
+      }
+    ]
+  },
+  "performer": [
+    {
+      "function": {
+        "coding": [
+          {
+            "system": "http://hl7.org/fhir/CodeSystem/biologicallyderivedproductdispense-performer-function",
+            "code": "receipt"
+          }
+        ]
+      },
+      "actor": { "reference": "Practitioner/example-practitioner" }
+    }
+  ],
+  "whenHandedOver": "2026-11-09T10:30:00+05:00"
+}
+```
+
+`originRelationshipType`, `matchStatus` va `performer.function` - har biri tegishli element uchun HL7 kod tizimidagi kodga ega `CodeableConcept`; `display` ni ko'rsatmasangiz ham bo'ladi. `matchStatus` qaysi turdagi moslashtirish o'tkazilganini bildiradi. ABO va Rh bo'yicha moslik natijalarining o'zi Observation da qayd etiladi. `status` transfuziya natijasini emas, mahsulotni berishni tavsiflaydi: to'xtatilgan transfuziya mahsulotni `returned` qilmaydi, uning natijasi esa [Procedure](StructureDefinition-uz-core-procedure.html) da qayd etiladi.
+
+API chaqiruvlari misollari ushbu sahifa pastidagi [Tez boshlash](#quick-start) bo'limida keltirilgan.

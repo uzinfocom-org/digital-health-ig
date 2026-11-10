@@ -1,29 +1,48 @@
-### Quick Start {#quick-start}
+### Quick Start
 
-Common API interactions for this profile. Requests require a JWT access token - see [Security and authentication](api-access.html#security). `[base]` is the [FHIR server base URL](api-access.html#endpoints); `|` separates a code system from its code and must be URL-encoded as `%7C`.
+Common API interactions for this profile. Requests require a JWT access token - see [Security and authentication](api-access.html#security). `[base]` is the [FHIR server base URL](api-access.html#endpoints); `|` separates a system from a value and must be URL-encoded as `%7C`.
 
-This resource is not yet advertised in the [DHP CapabilityStatement](CapabilityStatement-DHPCapabilityStatement.html). Confirm server support before using these interactions. Search support is not asserted here.
+**Read by server id**
 
-```http
+```
 GET [base]/BiologicallyDerivedProductDispense/[id]
 ```
 
-```http
+**Find dispenses**
+
+```
+GET [base]/BiologicallyDerivedProductDispense?_lastUpdated=ge2026-01-01
+GET [base]/BiologicallyDerivedProductDispense?_profile=https://dhp.uz/fhir/core/StructureDefinition/uz-core-biologicallyderivedproductdispense
+GET [base]/BiologicallyDerivedProductDispense?_id=[id1],[id2]
+```
+
+**Record a dispense**
+
+```
 POST [base]/BiologicallyDerivedProductDispense
-Content-Type: application/fhir+json
+{
+  "resourceType": "BiologicallyDerivedProductDispense",
+  "meta": { "profile": [ "https://dhp.uz/fhir/core/StructureDefinition/uz-core-biologicallyderivedproductdispense" ] },
+  "basedOn": [ { "reference": "ServiceRequest/[id]" } ],
+  "status": "issued",
+  "product": { "reference": "BiologicallyDerivedProduct/[id]" },
+  "patient": { "reference": "Patient/[id]" },
+  "performer": [ { "actor": { "reference": "Practitioner/[id]" } } ],
+  "whenHandedOver": "2026-11-09T10:30:00+05:00"
+}
 ```
 
-```http
+**Update** (for example, to set `status` to `returned` when the unit comes back) - PUT the full resource with the new values:
+
+```
 PUT [base]/BiologicallyDerivedProductDispense/[id]
-Content-Type: application/fhir+json
-If-Match: W/"[versionId]"
+If-Match: W/"3"   # the ETag from your last read; 412 if it changed since
 ```
 
-Use the generated [issued example JSON](BiologicallyDerivedProductDispense-example-bdp-dispense-issued.json.html) as the request body, replacing example references with actual resource ids. For an update, use the current server version in `If-Match`.
+BiologicallyDerivedProductDispense is not yet listed in the [CapabilityStatement](CapabilityStatement-DHPCapabilityStatement.html); the searches above use standard FHIR R5 search parameters.
 
 ### Related
 
-- [BiologicallyDerivedProduct](StructureDefinition-uz-core-biologically-derived-product.html)
-- [ServiceRequest](StructureDefinition-uz-core-servicerequest.html)
-- [Procedure](StructureDefinition-uz-core-procedure.html)
-- [API](api-access.html)
+- [UZ Core BiologicallyDerivedProduct](StructureDefinition-uz-core-biologically-derived-product.html) &middot; [UZ Core ServiceRequest](StructureDefinition-uz-core-servicerequest.html) &middot; [UZ Core Procedure](StructureDefinition-uz-core-procedure.html)
+- [Workflows](workflows.html)
+- [How to read this guide](how-to-read.html) &middot; [Must Support](must-support.html) &middot; [General guidance](general-guidance.html)

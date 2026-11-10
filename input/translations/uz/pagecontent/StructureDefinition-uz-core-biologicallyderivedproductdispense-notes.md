@@ -2,30 +2,49 @@
 
 ### Tez boshlash {#quick-start}
 
-So'rovlar JWT talab qiladi: [Xavfsizlik va autentifikatsiya](api-access.html#security). `[base]` - [FHIR server asosiy URL manzili](api-access.html#endpoints); tizim va kodni ajratuvchi `|` belgisi `%7C` sifatida kodlanadi.
+Ushbu profil uchun keng tarqalgan API o'zaro ta'sirlari. So'rovlar JWT kirish tokenini talab qiladi - [Xavfsizlik va autentifikatsiya](api-access.html#security) bo'limiga qarang. `[base]` - [FHIR serverining bazaviy URL manzili](api-access.html#endpoints); `|` belgisi tizimni qiymatdan ajratadi va `%7C` sifatida URL-kodlanishi kerak.
 
-Resurs hali [DHP CapabilityStatement](CapabilityStatement-DHPCapabilityStatement.html) da e'lon qilinmagan. Server qo'llab-quvvatlashini tekshiring. Bu yerda qidiruv qo'llab-quvvatlanishi tasdiqlanmaydi.
+**Server identifikatori bo'yicha o'qish**
 
-```http
+```
 GET [base]/BiologicallyDerivedProductDispense/[id]
 ```
 
-```http
+**Berishlarni qidirish**
+
+```
+GET [base]/BiologicallyDerivedProductDispense?_lastUpdated=ge2026-01-01
+GET [base]/BiologicallyDerivedProductDispense?_profile=https://dhp.uz/fhir/core/StructureDefinition/uz-core-biologicallyderivedproductdispense
+GET [base]/BiologicallyDerivedProductDispense?_id=[id1],[id2]
+```
+
+**Berishni qayd etish**
+
+```
 POST [base]/BiologicallyDerivedProductDispense
-Content-Type: application/fhir+json
+{
+  "resourceType": "BiologicallyDerivedProductDispense",
+  "meta": { "profile": [ "https://dhp.uz/fhir/core/StructureDefinition/uz-core-biologicallyderivedproductdispense" ] },
+  "basedOn": [ { "reference": "ServiceRequest/[id]" } ],
+  "status": "issued",
+  "product": { "reference": "BiologicallyDerivedProduct/[id]" },
+  "patient": { "reference": "Patient/[id]" },
+  "performer": [ { "actor": { "reference": "Practitioner/[id]" } } ],
+  "whenHandedOver": "2026-11-09T10:30:00+05:00"
+}
 ```
 
-```http
+**Yangilash** (masalan, birlik qaytarilganda `status` ni `returned` ga o'zgartirish uchun) - yangi qiymatlar bilan to'liq resursni PUT usulida yuboring:
+
+```
 PUT [base]/BiologicallyDerivedProductDispense/[id]
-Content-Type: application/fhir+json
-If-Match: W/"[versionId]"
+If-Match: W/"3"   # the ETag from your last read; 412 if it changed since
 ```
 
-So'rov tanasi sifatida [berish namunasi JSON](BiologicallyDerivedProductDispense-example-bdp-dispense-issued.json.html) dan foydalaning va havolalarni haqiqiy id lar bilan almashtiring. Yangilashda serverdagi joriy versiyani `If-Match` da yuboring.
+BiologicallyDerivedProductDispense hali [CapabilityStatement](CapabilityStatement-DHPCapabilityStatement.html) da ko'rsatilmagan; yuqoridagi so'rovlar FHIR R5 ning standart qidiruv parametrlaridan foydalanadi.
 
-### Tegishli materiallar
+### Aloqador
 
-- [BiologicallyDerivedProduct](StructureDefinition-uz-core-biologically-derived-product.html)
-- [ServiceRequest](StructureDefinition-uz-core-servicerequest.html)
-- [Procedure](StructureDefinition-uz-core-procedure.html)
-- [API](api-access.html)
+- [UZ Core BiologicallyDerivedProduct](StructureDefinition-uz-core-biologically-derived-product.html) · [UZ Core ServiceRequest](StructureDefinition-uz-core-servicerequest.html) · [UZ Core Procedure](StructureDefinition-uz-core-procedure.html)
+- [Ish jarayonlari](workflows.html)
+- [Ushbu qo'llanmani qanday o'qish kerak](how-to-read.html) · [Must Support](must-support.html) · [Umumiy ko'rsatmalar](general-guidance.html)

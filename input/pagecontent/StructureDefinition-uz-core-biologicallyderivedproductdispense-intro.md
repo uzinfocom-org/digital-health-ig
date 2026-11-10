@@ -1,28 +1,110 @@
-UZ Core BiologicallyDerivedProductDispense records the issue of a [biologically derived product](StructureDefinition-uz-core-biologically-derived-product.html) to the care team of a [patient](StructureDefinition-uz-core-patient.html). It fulfils a [ServiceRequest](StructureDefinition-uz-core-servicerequest.html). A [Procedure](StructureDefinition-uz-core-procedure.html) can reference the dispense as supporting information and records the actual transfusion.
+UZ Core BiologicallyDerivedProductDispense records that a [biologically derived product](StructureDefinition-uz-core-biologically-derived-product.html), such as a blood component, was issued for a [patient](StructureDefinition-uz-core-patient.html) to the care team that will use it. It says which product was issued and for whom, which order it fulfils, who took part, where the product left from and where it went, and when it was handed over. A dispense usually fulfils a [ServiceRequest](StructureDefinition-uz-core-servicerequest.html). The transfusion itself is recorded as a [Procedure](StructureDefinition-uz-core-procedure.html), which can point to the dispense as supporting information.
 
 ### Mandatory and Must Support data elements
 
-The elements below must always be present (mandatory) or must be supported when the data is available ([Must Support](must-support.html)) - not all are required, but your system must populate each Must Support element when it has the data and process it on receipt. This is the human-readable summary; the [formal views](#profile) below give the exact cardinalities, types, and terminology bindings.
+The elements below must always be present (mandatory) or must be supported when the data is available ([Must Support](must-support.html)). Not all of them are required, but your system must populate each Must Support element when it has the data, and process it on receipt. This is the human-readable summary; the [formal views](#profile) below give the exact cardinalities, types and terminology bindings.
 
 #### Each UZ Core BiologicallyDerivedProductDispense Must Have
 
-A status, one product reference and the intended recipient are mandatory. Each supplied performer must identify a practitioner. Each supplied business identifier must contain its system and value.
+A `status`, the `product` that is dispensed and the `patient` it is intended for. All three are mandatory in the base resource. Each `performer` must name its `actor`, and each `identifier` must carry its `system` and `value`.
 
 #### Each UZ Core BiologicallyDerivedProductDispense Must Support
 
-- the dispense business identifier, when assigned;
-- the order being fulfilled;
-- the dispense status;
-- the product and intended recipient;
-- the participating practitioners;
-- the actual handover time.
+- the business `identifier` of the dispense, when one is assigned, always sent with its `system`;
+- the [ServiceRequest](StructureDefinition-uz-core-servicerequest.html) the dispense fulfils (`basedOn`);
+- the `status` of the dispense (preparation / in-progress / allocated / issued / unfulfilled / returned / entered-in-error / unknown);
+- the `product` that is dispensed and the `patient` it is intended for;
+- the practitioners who took part (`performer.actor`);
+- when the product was actually handed over (`whenHandedOver`).
 
 ### Building the JSON, step by step
 
-1. The [minimal JSON](BiologicallyDerivedProductDispense-example-bdp-dispense-minimal.json.html) gives the status, product and patient, with the profile in `meta.profile`.
-2. The [issued JSON](BiologicallyDerivedProductDispense-example-bdp-dispense-issued.json.html) adds the order, practitioner, locations, quantity and preparation and handover times. References target UZ Core profiles; quantity describes the amount actually dispensed.
-3. The [returned JSON](BiologicallyDerivedProductDispense-example-bdp-dispense-returned.json.html) illustrates optional matching, origin relationship and performer function codes from the original HL7 systems. A stopped transfusion alone does not imply a returned product.
+The examples below go from the smallest valid instance to a returned unit. Each one validates against this profile. The complete reference instances are the [minimal](BiologicallyDerivedProductDispense-example-bdp-dispense-minimal.html), [issued](BiologicallyDerivedProductDispense-example-bdp-dispense-issued.html) and [returned](BiologicallyDerivedProductDispense-example-bdp-dispense-returned.html) dispenses.
 
-In the BMS workflow, ABO and Rh-Hr compatibility results remain in Observation. The dispense status describes the issue process, not the outcome of transfusion. The identifier system is agreed with the issuer; no placeholder URI is fixed by this profile.
+#### The smallest BiologicallyDerivedProductDispense you can send
 
-[Quick Start](#quick-start).
+Every UZ Core resource names its profile in `meta.profile`, which tells the server which rules to validate against. Beyond that, the three mandatory elements are enough:
+
+```json
+{
+  "resourceType": "BiologicallyDerivedProductDispense",
+  "meta": { "profile": ["https://dhp.uz/fhir/core/StructureDefinition/uz-core-biologicallyderivedproductdispense"] },
+  "status": "issued",
+  "product": { "reference": "BiologicallyDerivedProduct/example-blood-component-product" },
+  "patient": { "reference": "Patient/example-salim" }
+}
+```
+
+`status` is a code from the HL7 dispense status list. Its English display comes from the base code system and its Uzbek and Russian ones from a DHP supplement. `product` is a `Reference` to a [UZ Core BiologicallyDerivedProduct](StructureDefinition-uz-core-biologically-derived-product.html) and `patient` a `Reference` to a [UZ Core Patient](StructureDefinition-uz-core-patient.html).
+
+#### A blood component issued for a patient
+
+A blood bank issues a unit for a patient against an order. `basedOn` points to the [order](ServiceRequest-example-bdp-dispense-request.html), `performer` names the practitioner who issued the unit, `location` is where it was issued from and `destination` where it was sent:
+
+```json
+{
+  "resourceType": "BiologicallyDerivedProductDispense",
+  "meta": { "profile": ["https://dhp.uz/fhir/core/StructureDefinition/uz-core-biologicallyderivedproductdispense"] },
+  "basedOn": [ { "reference": "ServiceRequest/example-bdp-dispense-request" } ],
+  "status": "issued",
+  "product": { "reference": "BiologicallyDerivedProduct/example-blood-component-product" },
+  "patient": { "reference": "Patient/example-salim" },
+  "performer": [ { "actor": { "reference": "Practitioner/example-practitioner" } } ],
+  "location": { "reference": "Location/example-location-1" },
+  "quantity": { "value": 250, "unit": "mL", "system": "http://unitsofmeasure.org", "code": "mL" },
+  "preparedDate": "2026-11-09T10:15:00+05:00",
+  "whenHandedOver": "2026-11-09T10:30:00+05:00",
+  "destination": { "reference": "Location/example-location-2" }
+}
+```
+
+`basedOn` and `performer` repeat; `location` and `destination` do not, and both are a `Reference` to a [UZ Core Location](StructureDefinition-uz-core-location.html). `performer.actor` is a `Reference` to a [UZ Core Practitioner](StructureDefinition-uz-core-practitioner.html). `quantity` is the amount actually dispensed, which is not necessarily the whole volume of the source product. `preparedDate` is when the product was selected or matched for this dispense, not when the source product was collected, and `whenHandedOver` is when it was actually dispatched or handed over.
+
+#### A unit that was returned
+
+An issued unit comes back unused, so the `status` becomes `returned`. This example also carries the optional codes: the relationship between donor and recipient, the type of matching that was done, and the function of the performer:
+
+```json
+{
+  "resourceType": "BiologicallyDerivedProductDispense",
+  "meta": { "profile": ["https://dhp.uz/fhir/core/StructureDefinition/uz-core-biologicallyderivedproductdispense"] },
+  "basedOn": [ { "reference": "ServiceRequest/example-bdp-dispense-request" } ],
+  "status": "returned",
+  "originRelationshipType": {
+    "coding": [
+      {
+        "system": "http://hl7.org/fhir/CodeSystem/biologicallyderivedproductdispense-origin-relationship",
+        "code": "allogeneic"
+      }
+    ]
+  },
+  "product": { "reference": "BiologicallyDerivedProduct/example-blood-component-product" },
+  "patient": { "reference": "Patient/example-salim" },
+  "matchStatus": {
+    "coding": [
+      {
+        "system": "http://hl7.org/fhir/CodeSystem/biologicallyderivedproductdispense-match-status",
+        "code": "crossmatched"
+      }
+    ]
+  },
+  "performer": [
+    {
+      "function": {
+        "coding": [
+          {
+            "system": "http://hl7.org/fhir/CodeSystem/biologicallyderivedproductdispense-performer-function",
+            "code": "receipt"
+          }
+        ]
+      },
+      "actor": { "reference": "Practitioner/example-practitioner" }
+    }
+  ],
+  "whenHandedOver": "2026-11-09T10:30:00+05:00"
+}
+```
+
+`originRelationshipType`, `matchStatus` and `performer.function` are each a `CodeableConcept` with a code from the HL7 code system for that element; you can leave `display` out. `matchStatus` says which kind of matching was performed. The ABO and Rh compatibility results themselves are recorded in an Observation. The `status` describes the issue of the product, not the outcome of the transfusion: a transfusion that was stopped does not make the product `returned`, and its outcome belongs in the [Procedure](StructureDefinition-uz-core-procedure.html).
+
+For example API calls, see the [Quick Start](#quick-start) at the bottom of this page.

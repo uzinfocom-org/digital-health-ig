@@ -2,30 +2,49 @@
 
 ### Быстрый старт {#quick-start}
 
-Запросы требуют JWT: [Безопасность и аутентификация](api-access.html#security). `[base]` - [базовый URL FHIR-сервера](api-access.html#endpoints); разделитель системы и кода `|` кодируется как `%7C`.
+Типовые API-взаимодействия для этого профиля. Запросы требуют JWT-токен доступа - см. раздел [Безопасность и аутентификация](api-access.html#security). `[base]` - это [базовый URL FHIR-сервера](api-access.html#endpoints); символ `|` отделяет систему от значения и должен быть закодирован в URL как `%7C`.
 
-Ресурс пока не объявлен в [CapabilityStatement DHP](CapabilityStatement-DHPCapabilityStatement.html). Подтвердите поддержку сервером. Поддержка поиска здесь не заявляется.
+**Чтение по серверному идентификатору**
 
-```http
+```
 GET [base]/BiologicallyDerivedProductDispense/[id]
 ```
 
-```http
+**Поиск выдач**
+
+```
+GET [base]/BiologicallyDerivedProductDispense?_lastUpdated=ge2026-01-01
+GET [base]/BiologicallyDerivedProductDispense?_profile=https://dhp.uz/fhir/core/StructureDefinition/uz-core-biologicallyderivedproductdispense
+GET [base]/BiologicallyDerivedProductDispense?_id=[id1],[id2]
+```
+
+**Запись выдачи**
+
+```
 POST [base]/BiologicallyDerivedProductDispense
-Content-Type: application/fhir+json
+{
+  "resourceType": "BiologicallyDerivedProductDispense",
+  "meta": { "profile": [ "https://dhp.uz/fhir/core/StructureDefinition/uz-core-biologicallyderivedproductdispense" ] },
+  "basedOn": [ { "reference": "ServiceRequest/[id]" } ],
+  "status": "issued",
+  "product": { "reference": "BiologicallyDerivedProduct/[id]" },
+  "patient": { "reference": "Patient/[id]" },
+  "performer": [ { "actor": { "reference": "Practitioner/[id]" } } ],
+  "whenHandedOver": "2026-11-09T10:30:00+05:00"
+}
 ```
 
-```http
+**Обновление** (например, чтобы установить `status` в `returned`, когда единица возвращена) - отправьте полный ресурс с новыми значениями методом PUT:
+
+```
 PUT [base]/BiologicallyDerivedProductDispense/[id]
-Content-Type: application/fhir+json
-If-Match: W/"[versionId]"
+If-Match: W/"3"   # the ETag from your last read; 412 if it changed since
 ```
 
-Используйте [JSON примера выдачи](BiologicallyDerivedProductDispense-example-bdp-dispense-issued.json.html) как тело запроса, заменив ссылки реальными id. При обновлении передайте текущую версию сервера в `If-Match`.
+BiologicallyDerivedProductDispense пока не указан в [CapabilityStatement](CapabilityStatement-DHPCapabilityStatement.html); запросы выше используют стандартные параметры поиска FHIR R5.
 
 ### Связанные материалы
 
-- [BiologicallyDerivedProduct](StructureDefinition-uz-core-biologically-derived-product.html)
-- [ServiceRequest](StructureDefinition-uz-core-servicerequest.html)
-- [Procedure](StructureDefinition-uz-core-procedure.html)
-- [API](api-access.html)
+- [UZ Core BiologicallyDerivedProduct](StructureDefinition-uz-core-biologically-derived-product.html) · [UZ Core ServiceRequest](StructureDefinition-uz-core-servicerequest.html) · [UZ Core Procedure](StructureDefinition-uz-core-procedure.html)
+- [Рабочие процессы](workflows.html)
+- [Как читать это руководство](how-to-read.html) · [Must Support](must-support.html) · [Общие рекомендации](general-guidance.html)
