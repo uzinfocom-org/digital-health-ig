@@ -1,4 +1,4 @@
-UZ Core Flag records a prospective warning or notification about a [UZ Core Patient](StructureDefinition-uz-core-patient.html) that users of the Digital Health Platform should be aware of when dealing with that patient. The flag code currently covers donation eligibility: whether the patient may donate or is under a medical deferral. A flag can be linked to the [UZ Core Encounter](StructureDefinition-uz-core-encounter.html) in which it was raised and to its author.
+UZ Core Flag records a prospective warning or notification about a [UZ Core Patient](StructureDefinition-uz-core-patient.html) that users of the Digital Health Platform should be aware of when dealing with that patient. The flag code currently covers blood donation eligibility: whether the patient may donate blood or is under a medical deferral. A flag can be linked to the [UZ Core Encounter](StructureDefinition-uz-core-encounter.html) in which it was raised and to its author.
 
 ### Mandatory and Must Support data elements
 
@@ -12,18 +12,18 @@ Every Flag must carry a `status`, a `code` saying what the flag is about, and a 
 
 - a business `identifier` with its `system`, when the source system assigns one;
 - the `status` of the flag (active / inactive / entered-in-error) - it describes the flag itself, not what the flag records, so a medical deferral that still applies is an `active` flag;
-- the `code` - what the flag is about (eligible for donation / medical deferral);
+- the `code` - what the flag is about (eligible for blood donation / medical deferral);
 - the `subject` - the patient the flag is about.
 
 The `category` (administrative, clinical and so on), the `period` the flag applies to, the [Encounter](StructureDefinition-uz-core-encounter.html) in which it was raised and its `author` ([Practitioner](StructureDefinition-uz-core-practitioner.html), [PractitionerRole](StructureDefinition-uz-core-practitioner-role.html), [Organization](StructureDefinition-uz-core-organization.html), [Device](StructureDefinition-uz-core-device.html), [Patient](StructureDefinition-uz-core-patient.html) or [RelatedPerson](StructureDefinition-uz-core-relatedperson.html)) are optional; send them when known.
 
 ### Building the JSON, step by step
 
-The examples below go from a minimal donation decision to an eligibility flag with its context and a medical deferral. Each example names this profile in `meta.profile`.
+The examples below go from a minimal blood donation decision to an eligibility flag with its context and a medical deferral. Each example names this profile in `meta.profile`.
 
 #### The smallest Flag you should send
 
-A minimal Flag needs its status, the donation eligibility decision and the patient. The decision code comes from the local donor eligibility code system, so its display is in Uzbek and the resource sets `language` to `uz`:
+A minimal Flag needs its status, the blood donation eligibility decision and the patient. The decision code comes from the local blood donor eligibility code system, so its display is in Uzbek and the resource sets `language` to `uz`:
 
 ```json
 {
@@ -35,9 +35,9 @@ A minimal Flag needs its status, the donation eligibility decision and the patie
   "status": "active",
   "code": {
     "coding": [{
-      "system": "https://terminology.dhp.uz/fhir/core/CodeSystem/donor-eligibility-cs",
-      "code": "donation-eligible",
-      "display": "Donorlikka ruxsat berilgan"
+      "system": "https://terminology.dhp.uz/fhir/core/CodeSystem/blood-donor-eligibility-cs",
+      "code": "blood-donation-eligible",
+      "display": "Qon donorligiga ruxsat berilgan"
     }]
   },
   "subject": { "reference": "Patient/example-salim" }
@@ -64,9 +64,9 @@ Add the HL7 flag category, the validity period, the encounter in which the decis
   }],
   "code": {
     "coding": [{
-      "system": "https://terminology.dhp.uz/fhir/core/CodeSystem/donor-eligibility-cs",
-      "code": "donation-eligible",
-      "display": "Donorlikka ruxsat berilgan"
+      "system": "https://terminology.dhp.uz/fhir/core/CodeSystem/blood-donor-eligibility-cs",
+      "code": "blood-donation-eligible",
+      "display": "Qon donorligiga ruxsat berilgan"
     }]
   },
   "subject": { "reference": "Patient/example-salim" },
@@ -81,7 +81,7 @@ Add the HL7 flag category, the validity period, the encounter in which the decis
 
 #### A medical deferral
 
-A deferral uses the `donation-deferred` code and stays `active` while it applies:
+A deferral uses the `blood-donation-deferred` code and stays `active` while it applies:
 
 ```json
 {
@@ -99,9 +99,9 @@ A deferral uses the `donation-deferred` code and stays `active` while it applies
   }],
   "code": {
     "coding": [{
-      "system": "https://terminology.dhp.uz/fhir/core/CodeSystem/donor-eligibility-cs",
-      "code": "donation-deferred",
-      "display": "Tibbiy sabablarga ko‘ra donorlikdan chetlatilgan"
+      "system": "https://terminology.dhp.uz/fhir/core/CodeSystem/blood-donor-eligibility-cs",
+      "code": "blood-donation-deferred",
+      "display": "Tibbiy sabablarga ko'ra qon donorligidan chetlatilgan"
     }]
   },
   "subject": { "reference": "Patient/example-salim" },

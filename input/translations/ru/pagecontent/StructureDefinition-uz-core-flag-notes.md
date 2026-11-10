@@ -13,7 +13,7 @@ GET [base]/Flag/[id]
 **Поиск отметок**
 
 ```
-GET [base]/Flag?patient=Patient/[id]&status=active&code=donation-deferred
+GET [base]/Flag?patient=Patient/[id]&status=active&code=blood-donation-deferred
 GET [base]/Flag?patient=Patient/[id]&status=active
 GET [base]/Flag?patient=Patient/[id]&category=http://terminology.hl7.org/CodeSystem/flag-category%7Cclinical
 GET [base]/Flag?identifier=[system]%7C[value]
@@ -37,8 +37,8 @@ POST [base]/Flag
   "status": "active",
   "code": {
     "coding": [{
-      "system": "https://terminology.dhp.uz/fhir/core/CodeSystem/donor-eligibility-cs",
-      "code": "donation-deferred"
+      "system": "https://terminology.dhp.uz/fhir/core/CodeSystem/blood-donor-eligibility-cs",
+      "code": "blood-donation-deferred"
     }]
   },
   "subject": { "reference": "Patient/[id]" },

@@ -34,7 +34,7 @@ Usage: #definition
 * date = "2026-11-10"
 * publisher = "Uzinfocom"
 * jurisdiction = urn:iso:std:iso:3166#UZ "Uzbekistan"
-* description = "Search for Flag resources by what they are about (`code`), for example to find a patient's active medical deferrals from donation. Base FHIR R5 has no search parameter on this element."
+* description = "Search for Flag resources by what they are about (`code`), for example to find a patient's active medical deferrals from blood donation. Base FHIR R5 has no search parameter on this element."
 * code = #code
 * base = #Flag
 * type = #token
