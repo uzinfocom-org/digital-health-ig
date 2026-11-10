@@ -279,14 +279,14 @@ Description: "Maps local UZ PhysiotherapyProcedureCS codes to SNOMED CT."
 
 * group.element[+].code = #proce-0001-00045
 * group.element[=].display = "Magnitoterapiya"
-* group.element[=].target[+].code = #1513241000168108
-* group.element[=].target[=].display = "Electrophysical agent therapy"
+* group.element[=].target[+].code = #229553000
+* group.element[=].target[=].display = "Physical agent therapy"
 * group.element[=].target[=].relationship = #source-is-narrower-than-target
 
 * group.element[+].code = #proce-0001-00046
 * group.element[=].display = "Magnitopunktura"
-* group.element[=].target[+].code = #1513241000168108
-* group.element[=].target[=].display = "Electrophysical agent therapy"
+* group.element[=].target[+].code = #44868003
+* group.element[=].target[=].display = "Acupuncture"
 * group.element[=].target[=].relationship = #source-is-narrower-than-target
 
 * group.element[+].code = #proce-0001-00047
