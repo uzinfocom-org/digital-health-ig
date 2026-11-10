@@ -44,7 +44,7 @@ Description: "Uzbekistan Core HealthcareService profile, used to define healthca
 
 * category.coding[txmkCategory]
   * system 1..1 MS
-  * system = Canonical(UZTXMKCategoriesCS)
+  * system = Canonical(UZTXMKCS)
   * code 1..1 MS
   * code from UZTXMKServiceCategoriesVS (required)
 
@@ -171,7 +171,7 @@ Usage: #example
 * language = #uz
 * active = true
 * providedBy = Reference(example-organization)
-* category.coding[txmkCategory] = UZTXMKCategoriesCS#txmk-0001-00001 "Shifokor qabullari va konsultatsiyalari"
+* category.coding[txmkCategory] = UZTXMKCS#A01 "Shifokor qabullari va konsultatsiyalari"
 * type.coding[txmkService] = UZTXMKCS#5586604 "Shifokorning birlamchi qabuli"
 * characteristic[paymentType].coding.code = #paytype-0001-0001
 * name = "Shifokorning birlamchi qabuli"

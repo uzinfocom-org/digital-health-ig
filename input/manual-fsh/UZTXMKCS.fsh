@@ -44,7 +44,8 @@ Description: "National classification of medical services of Uzbekistan, approve
 
 // ---- TXMK classes and groups (grouping concepts, not selectable) ----
 // They exist so that service-class / service-group values (type = code) resolve to codes in this CodeSystem.
-// TODO: replace the placeholder displays with the official TXMK class/group names (uz/ru/en).
+// Group names and translations are taken from the TXMK category catalogue.
+// TODO: replace the placeholder class displays with the official TXMK class names (uz/ru/en).
 * #A "TXMK class A"
   * ^property[0].code = #notSelectable
   * ^property[=].valueBoolean = true
@@ -57,147 +58,263 @@ Description: "National classification of medical services of Uzbekistan, approve
 * #D "TXMK class D"
   * ^property[0].code = #notSelectable
   * ^property[=].valueBoolean = true
-* #A01 "TXMK group A01"
+* #A01 "Shifokor qabullari va konsultatsiyalari"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Приёмы и консультации врачей"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Physician appointments and consultations"
   * ^property[0].code = #service-class
   * ^property[=].valueCode = #A
   * ^property[+].code = #notSelectable
   * ^property[=].valueBoolean = true
-* #A02 "TXMK group A02"
+* #A02 "Koʻriklar va fizikal tekshiruv"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Осмотры и физикальное обследование"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Medical examinations and physical assessments"
   * ^property[0].code = #service-class
   * ^property[=].valueCode = #A
   * ^property[+].code = #notSelectable
   * ^property[=].valueBoolean = true
-* #B01 "TXMK group B01"
+* #B01 "Laboratoriya diagnostikasi"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Лабораторная диагностика"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Laboratory diagnostics"
   * ^property[0].code = #service-class
   * ^property[=].valueCode = #B
   * ^property[+].code = #notSelectable
   * ^property[=].valueBoolean = true
-* #B02 "TXMK group B02"
+* #B02 "Ultratovush diagnostikasi"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Ультразвуковая диагностика"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Ultrasound diagnostics"
   * ^property[0].code = #service-class
   * ^property[=].valueCode = #B
   * ^property[+].code = #notSelectable
   * ^property[=].valueBoolean = true
-* #B03 "TXMK group B03"
+* #B03 "Rentgenologik diagnostika"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Рентгенологическая диагностика"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Radiological diagnostics"
   * ^property[0].code = #service-class
   * ^property[=].valueCode = #B
   * ^property[+].code = #notSelectable
   * ^property[=].valueBoolean = true
-* #B04 "TXMK group B04"
+* #B04 "Kompyuter tomografiyasi"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Компьютерная томография"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Computed tomography"
   * ^property[0].code = #service-class
   * ^property[=].valueCode = #B
   * ^property[+].code = #notSelectable
   * ^property[=].valueBoolean = true
-* #B05 "TXMK group B05"
+* #B05 "Magnit-rezonans tomografiyasi"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Магнитно-резонансная томография"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Magnetic resonance imaging"
   * ^property[0].code = #service-class
   * ^property[=].valueCode = #B
   * ^property[+].code = #notSelectable
   * ^property[=].valueBoolean = true
-* #B06 "TXMK group B06"
+* #B06 "Radionuklid diagnostika"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Радионуклидная диагностика"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Radionuclide diagnostics"
   * ^property[0].code = #service-class
   * ^property[=].valueCode = #B
   * ^property[+].code = #notSelectable
   * ^property[=].valueBoolean = true
-* #B07 "TXMK group B07"
+* #B07 "Endoskopik diagnostika"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Эндоскопическая диагностика"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Endoscopic diagnostics"
   * ^property[0].code = #service-class
   * ^property[=].valueCode = #B
   * ^property[+].code = #notSelectable
   * ^property[=].valueBoolean = true
-* #B08 "TXMK group B08"
+* #B08 "Funksional diagnostika va monitoring"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Функциональная диагностика и мониторинг"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Functional diagnostics and monitoring"
   * ^property[0].code = #service-class
   * ^property[=].valueCode = #B
   * ^property[+].code = #notSelectable
   * ^property[=].valueBoolean = true
-* #B09 "TXMK group B09"
+* #B09 "Patomorfologik diagnostika"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Патоморфологическая диагностика"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Pathomorphological diagnostics"
   * ^property[0].code = #service-class
   * ^property[=].valueCode = #B
   * ^property[+].code = #notSelectable
   * ^property[=].valueBoolean = true
-* #B10 "TXMK group B10"
+* #B10 "Angiografiya va kontrastli tekshiruvlar"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Ангиография и контрастные исследования"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Angiography and contrast-enhanced examinations"
   * ^property[0].code = #service-class
   * ^property[=].valueCode = #B
   * ^property[+].code = #notSelectable
   * ^property[=].valueBoolean = true
-* #B11 "TXMK group B11"
+* #B11 "Diagnostik panellar va majmualar"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Диагностические панели и комплексы"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Diagnostic panels and test complexes"
   * ^property[0].code = #service-class
   * ^property[=].valueCode = #B
   * ^property[+].code = #notSelectable
   * ^property[=].valueBoolean = true
-* #C01 "TXMK group C01"
+* #C01 "Jarrohlik aralashuvlari"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Хирургические вмешательства"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Surgical interventions"
   * ^property[0].code = #service-class
   * ^property[=].valueCode = #C
   * ^property[+].code = #notSelectable
   * ^property[=].valueBoolean = true
-* #C02 "TXMK group C02"
+* #C02 "Yurak-qon tomir jarrohligi"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Сердечно-сосудистая хирургия"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Cardiovascular surgery"
   * ^property[0].code = #service-class
   * ^property[=].valueCode = #C
   * ^property[+].code = #notSelectable
   * ^property[=].valueBoolean = true
-* #C03 "TXMK group C03"
+* #C03 "Kam invaziv va endoskopik aralashuvlar"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Малоинвазивные и эндоскопические вмешательства"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Minimally invasive and endoscopic interventions"
   * ^property[0].code = #service-class
   * ^property[=].valueCode = #C
   * ^property[+].code = #notSelectable
   * ^property[=].valueBoolean = true
-* #C04 "TXMK group C04"
+* #C04 "Dori vositalarini yuborish va infuzion terapiya"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Введение лекарственных средств и инфузионная терапия"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Medication administration and infusion therapy"
   * ^property[0].code = #service-class
   * ^property[=].valueCode = #C
   * ^property[+].code = #notSelectable
   * ^property[=].valueBoolean = true
-* #C05 "TXMK group C05"
+* #C05 "Ekstrakorporal usullar"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Экстракорпоральные методы"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Extracorporeal methods"
   * ^property[0].code = #service-class
   * ^property[=].valueCode = #C
   * ^property[+].code = #notSelectable
   * ^property[=].valueBoolean = true
-* #C06 "TXMK group C06"
+* #C06 "Nur terapiyasi va oʻsmaga qarshi terapiya"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Лучевая и противоопухолевая терапия"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Radiation therapy and anticancer treatment"
   * ^property[0].code = #service-class
   * ^property[=].valueCode = #C
   * ^property[+].code = #notSelectable
   * ^property[=].valueBoolean = true
-* #C07 "TXMK group C07"
+* #C07 "Anesteziologik taʼminot"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Анестезиологическое обеспечение"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Anesthesia services"
   * ^property[0].code = #service-class
   * ^property[=].valueCode = #C
   * ^property[+].code = #notSelectable
   * ^property[=].valueBoolean = true
-* #C08 "TXMK group C08"
+* #C08 "Manipulyatsiyalar va muolajalar"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Манипуляции и процедуры"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Clinical manipulations and procedures"
   * ^property[0].code = #service-class
   * ^property[=].valueCode = #C
   * ^property[+].code = #notSelectable
   * ^property[=].valueBoolean = true
-* #C09 "TXMK group C09"
+* #C09 "Estetik va kosmetologik muolajalar"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Эстетические и косметологические процедуры"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Aesthetic and cosmetic procedures"
   * ^property[0].code = #service-class
   * ^property[=].valueCode = #C
   * ^property[+].code = #notSelectable
   * ^property[=].valueBoolean = true
-* #D02 "TXMK group D02"
+* #D02 "Tibbiy reabilitatsiya va davolash jismoniy tarbiyasi"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Медицинская реабилитация и лечебная физкультура"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Medical rehabilitation and therapeutic exercise"
   * ^property[0].code = #service-class
   * ^property[=].valueCode = #D
   * ^property[+].code = #notSelectable
   * ^property[=].valueBoolean = true
-* #D03 "TXMK group D03"
+* #D03 "Fizioterapiya"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Физиотерапия"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Physiotherapy"
   * ^property[0].code = #service-class
   * ^property[=].valueCode = #D
   * ^property[+].code = #notSelectable
   * ^property[=].valueBoolean = true
-* #D04 "TXMK group D04"
+* #D04 "Massaj va manual usullar"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Массаж и мануальные методы"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Massage and manual therapies"
   * ^property[0].code = #service-class
   * ^property[=].valueCode = #D
   * ^property[+].code = #notSelectable
   * ^property[=].valueBoolean = true
-* #D05 "TXMK group D05"
+* #D05 "Tabiiy davolash omillari"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Природные лечебные факторы"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Natural therapeutic modalities"
   * ^property[0].code = #service-class
   * ^property[=].valueCode = #D
   * ^property[+].code = #notSelectable
   * ^property[=].valueBoolean = true
-* #D06 "TXMK group D06"
+* #D06 "Dispanser kuzatuvi va profilaktika"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Диспансерное наблюдение и профилактика"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Dispensary follow-up and preventive care"
   * ^property[0].code = #service-class
   * ^property[=].valueCode = #D
   * ^property[+].code = #notSelectable
   * ^property[=].valueBoolean = true
-* #D07 "TXMK group D07"
+* #D07 "Hamshiralik parvarishi va kuzatuv"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Сестринский уход и наблюдение"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Nursing care and monitoring"
   * ^property[0].code = #service-class
   * ^property[=].valueCode = #D
   * ^property[+].code = #notSelectable
   * ^property[=].valueBoolean = true
-* #D08 "TXMK group D08"
+* #D08 "Tibbiy ekspertizalar"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Медицинские экспертизы"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Medical expert assessments"
   * ^property[0].code = #service-class
   * ^property[=].valueCode = #D
   * ^property[+].code = #notSelectable

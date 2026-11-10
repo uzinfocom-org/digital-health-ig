@@ -29,7 +29,7 @@ Every profile page now has a narrative intro and a Quick Start. New ones were ad
 
 [UZ Core SupplyDelivery](StructureDefinition-uz-core-supply-delivery.html) records the location the items were dispatched from, such as the sending warehouse in a transfer between warehouses, in the new [Deliver from](StructureDefinition-supplydelivery-deliver-from.html) extension. Base FHIR SupplyDelivery has no element for it; the extension is the delivery counterpart of `SupplyRequest.deliverFrom`. The [warehouse transfer example](SupplyDelivery-example-warehouse-transfer-supply-delivery.html) shows it. The profile page has a narrative intro and a Quick Start.
 
-[Uzbekistan national medical services classifier (TXMK)](CodeSystem-uz-txmk-cs.html) holds the 10,699 medical services of the national classifier with Uzbek, Russian and English names, and [UZ TXMK medical service categories](CodeSystem-uz-txmk-categories-cs.html) holds its 30 service categories. Value sets select from them for [service categories](ValueSet-uz-txmk-service-categories-vs.html), [service names](ValueSet-uz-txmk-service-names-vs.html) and [diagnostic imaging services](ValueSet-uz-txmk-imaging-vs.html). The [TXMK initial physician visit](HealthcareService-example-healthcareservice-txmk-initial-visit.html) example uses them.
+[Uzbekistan national medical services classifier (TXMK)](CodeSystem-uz-txmk-cs.html) holds the 10,699 medical services of the national classifier with Uzbek, Russian and English names. The same code system holds the 29 service groups used as categories. Value sets select from them for [service categories](ValueSet-uz-txmk-service-categories-vs.html), [service names](ValueSet-uz-txmk-service-names-vs.html) and [diagnostic imaging services](ValueSet-uz-txmk-imaging-vs.html). The [TXMK initial physician visit](HealthcareService-example-healthcareservice-txmk-initial-visit.html) example uses them.
 
 #### Changed
 
@@ -46,6 +46,8 @@ The [FHIR types supplement](CodeSystem-fhir-types-cs.html) gave each resource ty
 The [Procedure example](Procedure-example-procedure.html) now points at an [outpatient physiotherapy visit](Encounter-example-physiotherapy-encounter.html) and a [right foot pain](Condition-example-foot-pain.html) condition of the same patient, in place of another patient's encounter and condition.
 
 Titles and descriptions of code systems and value sets now follow the naming pattern in the [modelling guidelines](https://github.com/uzinfocom-org/digital-health-ig/blob/main/modelling-guidelines.md): a supplement is `[Concept] translations`, a value set is `[Concept]`, and titles no longer carry words such as "CodeSystem" or "ValueSet". Canonical URLs, ids and codes are unchanged.
+
+TXMK groups now carry Uzbek names and Russian and English translations from the category catalogue.
 
 [UZ Core HealthcareService](StructureDefinition-uz-core-healthcareservice.html) has new Must Support slices for the TXMK service category and service in `category` and `type`. [Service categories](ValueSet-service-categories-vs.html), which the laboratory category slice is bound to, now also include the laboratory categories.
 

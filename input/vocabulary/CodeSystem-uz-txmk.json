@@ -50,7 +50,7 @@
     },
     {
       "code": "A01",
-      "display": "TXMK group A01",
+      "display": "Shifokor qabullari va konsultatsiyalari",
       "property": [
         {
           "code": "service-class",
@@ -59,12 +59,22 @@
         {
           "code": "notSelectable",
           "valueBoolean": true
+        }
+      ],
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Приёмы и консультации врачей"
+        },
+        {
+          "language": "en",
+          "value": "Physician appointments and consultations"
         }
       ]
     },
     {
       "code": "A02",
-      "display": "TXMK group A02",
+      "display": "Koʻriklar va fizikal tekshiruv",
       "property": [
         {
           "code": "service-class",
@@ -74,11 +84,21 @@
           "code": "notSelectable",
           "valueBoolean": true
         }
+      ],
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Осмотры и физикальное обследование"
+        },
+        {
+          "language": "en",
+          "value": "Medical examinations and physical assessments"
+        }
       ]
     },
     {
       "code": "B01",
-      "display": "TXMK group B01",
+      "display": "Laboratoriya diagnostikasi",
       "property": [
         {
           "code": "service-class",
@@ -87,12 +107,22 @@
         {
           "code": "notSelectable",
           "valueBoolean": true
+        }
+      ],
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Лабораторная диагностика"
+        },
+        {
+          "language": "en",
+          "value": "Laboratory diagnostics"
         }
       ]
     },
     {
       "code": "B02",
-      "display": "TXMK group B02",
+      "display": "Ultratovush diagnostikasi",
       "property": [
         {
           "code": "service-class",
@@ -101,12 +131,22 @@
         {
           "code": "notSelectable",
           "valueBoolean": true
+        }
+      ],
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Ультразвуковая диагностика"
+        },
+        {
+          "language": "en",
+          "value": "Ultrasound diagnostics"
         }
       ]
     },
     {
       "code": "B03",
-      "display": "TXMK group B03",
+      "display": "Rentgenologik diagnostika",
       "property": [
         {
           "code": "service-class",
@@ -115,12 +155,22 @@
         {
           "code": "notSelectable",
           "valueBoolean": true
+        }
+      ],
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Рентгенологическая диагностика"
+        },
+        {
+          "language": "en",
+          "value": "Radiological diagnostics"
         }
       ]
     },
     {
       "code": "B04",
-      "display": "TXMK group B04",
+      "display": "Kompyuter tomografiyasi",
       "property": [
         {
           "code": "service-class",
@@ -129,12 +179,22 @@
         {
           "code": "notSelectable",
           "valueBoolean": true
+        }
+      ],
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Компьютерная томография"
+        },
+        {
+          "language": "en",
+          "value": "Computed tomography"
         }
       ]
     },
     {
       "code": "B05",
-      "display": "TXMK group B05",
+      "display": "Magnit-rezonans tomografiyasi",
       "property": [
         {
           "code": "service-class",
@@ -143,12 +203,22 @@
         {
           "code": "notSelectable",
           "valueBoolean": true
+        }
+      ],
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Магнитно-резонансная томография"
+        },
+        {
+          "language": "en",
+          "value": "Magnetic resonance imaging"
         }
       ]
     },
     {
       "code": "B06",
-      "display": "TXMK group B06",
+      "display": "Radionuklid diagnostika",
       "property": [
         {
           "code": "service-class",
@@ -157,12 +227,22 @@
         {
           "code": "notSelectable",
           "valueBoolean": true
+        }
+      ],
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Радионуклидная диагностика"
+        },
+        {
+          "language": "en",
+          "value": "Radionuclide diagnostics"
         }
       ]
     },
     {
       "code": "B07",
-      "display": "TXMK group B07",
+      "display": "Endoskopik diagnostika",
       "property": [
         {
           "code": "service-class",
@@ -171,12 +251,22 @@
         {
           "code": "notSelectable",
           "valueBoolean": true
+        }
+      ],
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Эндоскопическая диагностика"
+        },
+        {
+          "language": "en",
+          "value": "Endoscopic diagnostics"
         }
       ]
     },
     {
       "code": "B08",
-      "display": "TXMK group B08",
+      "display": "Funksional diagnostika va monitoring",
       "property": [
         {
           "code": "service-class",
@@ -185,12 +275,22 @@
         {
           "code": "notSelectable",
           "valueBoolean": true
+        }
+      ],
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Функциональная диагностика и мониторинг"
+        },
+        {
+          "language": "en",
+          "value": "Functional diagnostics and monitoring"
         }
       ]
     },
     {
       "code": "B09",
-      "display": "TXMK group B09",
+      "display": "Patomorfologik diagnostika",
       "property": [
         {
           "code": "service-class",
@@ -199,12 +299,22 @@
         {
           "code": "notSelectable",
           "valueBoolean": true
+        }
+      ],
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Патоморфологическая диагностика"
+        },
+        {
+          "language": "en",
+          "value": "Pathomorphological diagnostics"
         }
       ]
     },
     {
       "code": "B10",
-      "display": "TXMK group B10",
+      "display": "Angiografiya va kontrastli tekshiruvlar",
       "property": [
         {
           "code": "service-class",
@@ -213,12 +323,22 @@
         {
           "code": "notSelectable",
           "valueBoolean": true
+        }
+      ],
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Ангиография и контрастные исследования"
+        },
+        {
+          "language": "en",
+          "value": "Angiography and contrast-enhanced examinations"
         }
       ]
     },
     {
       "code": "B11",
-      "display": "TXMK group B11",
+      "display": "Diagnostik panellar va majmualar",
       "property": [
         {
           "code": "service-class",
@@ -228,11 +348,21 @@
           "code": "notSelectable",
           "valueBoolean": true
         }
+      ],
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Диагностические панели и комплексы"
+        },
+        {
+          "language": "en",
+          "value": "Diagnostic panels and test complexes"
+        }
       ]
     },
     {
       "code": "C01",
-      "display": "TXMK group C01",
+      "display": "Jarrohlik aralashuvlari",
       "property": [
         {
           "code": "service-class",
@@ -241,12 +371,22 @@
         {
           "code": "notSelectable",
           "valueBoolean": true
+        }
+      ],
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Хирургические вмешательства"
+        },
+        {
+          "language": "en",
+          "value": "Surgical interventions"
         }
       ]
     },
     {
       "code": "C02",
-      "display": "TXMK group C02",
+      "display": "Yurak-qon tomir jarrohligi",
       "property": [
         {
           "code": "service-class",
@@ -255,12 +395,22 @@
         {
           "code": "notSelectable",
           "valueBoolean": true
+        }
+      ],
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Сердечно-сосудистая хирургия"
+        },
+        {
+          "language": "en",
+          "value": "Cardiovascular surgery"
         }
       ]
     },
     {
       "code": "C03",
-      "display": "TXMK group C03",
+      "display": "Kam invaziv va endoskopik aralashuvlar",
       "property": [
         {
           "code": "service-class",
@@ -269,12 +419,22 @@
         {
           "code": "notSelectable",
           "valueBoolean": true
+        }
+      ],
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Малоинвазивные и эндоскопические вмешательства"
+        },
+        {
+          "language": "en",
+          "value": "Minimally invasive and endoscopic interventions"
         }
       ]
     },
     {
       "code": "C04",
-      "display": "TXMK group C04",
+      "display": "Dori vositalarini yuborish va infuzion terapiya",
       "property": [
         {
           "code": "service-class",
@@ -283,12 +443,22 @@
         {
           "code": "notSelectable",
           "valueBoolean": true
+        }
+      ],
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Введение лекарственных средств и инфузионная терапия"
+        },
+        {
+          "language": "en",
+          "value": "Medication administration and infusion therapy"
         }
       ]
     },
     {
       "code": "C05",
-      "display": "TXMK group C05",
+      "display": "Ekstrakorporal usullar",
       "property": [
         {
           "code": "service-class",
@@ -297,12 +467,22 @@
         {
           "code": "notSelectable",
           "valueBoolean": true
+        }
+      ],
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Экстракорпоральные методы"
+        },
+        {
+          "language": "en",
+          "value": "Extracorporeal methods"
         }
       ]
     },
     {
       "code": "C06",
-      "display": "TXMK group C06",
+      "display": "Nur terapiyasi va oʻsmaga qarshi terapiya",
       "property": [
         {
           "code": "service-class",
@@ -311,12 +491,22 @@
         {
           "code": "notSelectable",
           "valueBoolean": true
+        }
+      ],
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Лучевая и противоопухолевая терапия"
+        },
+        {
+          "language": "en",
+          "value": "Radiation therapy and anticancer treatment"
         }
       ]
     },
     {
       "code": "C07",
-      "display": "TXMK group C07",
+      "display": "Anesteziologik taʼminot",
       "property": [
         {
           "code": "service-class",
@@ -325,12 +515,22 @@
         {
           "code": "notSelectable",
           "valueBoolean": true
+        }
+      ],
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Анестезиологическое обеспечение"
+        },
+        {
+          "language": "en",
+          "value": "Anesthesia services"
         }
       ]
     },
     {
       "code": "C08",
-      "display": "TXMK group C08",
+      "display": "Manipulyatsiyalar va muolajalar",
       "property": [
         {
           "code": "service-class",
@@ -339,12 +539,22 @@
         {
           "code": "notSelectable",
           "valueBoolean": true
+        }
+      ],
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Манипуляции и процедуры"
+        },
+        {
+          "language": "en",
+          "value": "Clinical manipulations and procedures"
         }
       ]
     },
     {
       "code": "C09",
-      "display": "TXMK group C09",
+      "display": "Estetik va kosmetologik muolajalar",
       "property": [
         {
           "code": "service-class",
@@ -354,11 +564,21 @@
           "code": "notSelectable",
           "valueBoolean": true
         }
+      ],
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Эстетические и косметологические процедуры"
+        },
+        {
+          "language": "en",
+          "value": "Aesthetic and cosmetic procedures"
+        }
       ]
     },
     {
       "code": "D02",
-      "display": "TXMK group D02",
+      "display": "Tibbiy reabilitatsiya va davolash jismoniy tarbiyasi",
       "property": [
         {
           "code": "service-class",
@@ -367,12 +587,22 @@
         {
           "code": "notSelectable",
           "valueBoolean": true
+        }
+      ],
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Медицинская реабилитация и лечебная физкультура"
+        },
+        {
+          "language": "en",
+          "value": "Medical rehabilitation and therapeutic exercise"
         }
       ]
     },
     {
       "code": "D03",
-      "display": "TXMK group D03",
+      "display": "Fizioterapiya",
       "property": [
         {
           "code": "service-class",
@@ -381,12 +611,22 @@
         {
           "code": "notSelectable",
           "valueBoolean": true
+        }
+      ],
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Физиотерапия"
+        },
+        {
+          "language": "en",
+          "value": "Physiotherapy"
         }
       ]
     },
     {
       "code": "D04",
-      "display": "TXMK group D04",
+      "display": "Massaj va manual usullar",
       "property": [
         {
           "code": "service-class",
@@ -395,12 +635,22 @@
         {
           "code": "notSelectable",
           "valueBoolean": true
+        }
+      ],
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Массаж и мануальные методы"
+        },
+        {
+          "language": "en",
+          "value": "Massage and manual therapies"
         }
       ]
     },
     {
       "code": "D05",
-      "display": "TXMK group D05",
+      "display": "Tabiiy davolash omillari",
       "property": [
         {
           "code": "service-class",
@@ -409,12 +659,22 @@
         {
           "code": "notSelectable",
           "valueBoolean": true
+        }
+      ],
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Природные лечебные факторы"
+        },
+        {
+          "language": "en",
+          "value": "Natural therapeutic modalities"
         }
       ]
     },
     {
       "code": "D06",
-      "display": "TXMK group D06",
+      "display": "Dispanser kuzatuvi va profilaktika",
       "property": [
         {
           "code": "service-class",
@@ -423,12 +683,22 @@
         {
           "code": "notSelectable",
           "valueBoolean": true
+        }
+      ],
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Диспансерное наблюдение и профилактика"
+        },
+        {
+          "language": "en",
+          "value": "Dispensary follow-up and preventive care"
         }
       ]
     },
     {
       "code": "D07",
-      "display": "TXMK group D07",
+      "display": "Hamshiralik parvarishi va kuzatuv",
       "property": [
         {
           "code": "service-class",
@@ -438,11 +708,21 @@
           "code": "notSelectable",
           "valueBoolean": true
         }
+      ],
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Сестринский уход и наблюдение"
+        },
+        {
+          "language": "en",
+          "value": "Nursing care and monitoring"
+        }
       ]
     },
     {
       "code": "D08",
-      "display": "TXMK group D08",
+      "display": "Tibbiy ekspertizalar",
       "property": [
         {
           "code": "service-class",
@@ -451,6 +731,16 @@
         {
           "code": "notSelectable",
           "valueBoolean": true
+        }
+      ],
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Медицинские экспертизы"
+        },
+        {
+          "language": "en",
+          "value": "Medical expert assessments"
         }
       ]
     },
