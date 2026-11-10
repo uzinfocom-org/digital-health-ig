@@ -6,7 +6,7 @@ The elements below must always be present (mandatory) or must be supported when 
 
 #### Each UZ Core Flag Must Have
 
-Every Flag must carry a `status`, a `code` saying what the flag is about, and a `subject` - all three are mandatory in base FHIR R5. This profile limits the `subject` to a [UZ Core Patient](StructureDefinition-uz-core-patient.html).
+Every Flag must carry a `status`, a `code` saying what the flag is about, and a `subject` (the patient) - all three are mandatory in base FHIR R5.
 
 #### Each UZ Core Flag Must Support
 

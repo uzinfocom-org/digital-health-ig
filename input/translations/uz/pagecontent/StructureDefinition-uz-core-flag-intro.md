@@ -8,7 +8,7 @@ Quyidagi elementlar har doim mavjud bo'lishi (majburiy) yoki ma'lumot mavjud bo'
 
 #### Har bir UZ Core Flag quyidagilarga ega bo'lishi shart
 
-Har bir Flag da `status`, belgi nima haqida ekanini ko'rsatuvchi `code` va `subject` bo'ladi - uchalasi ham bazaviy FHIR R5 da majburiy. Profil `subject` ni [UZ Core bemori](StructureDefinition-uz-core-patient.html) bilan cheklaydi.
+Har bir Flag da `status`, belgi nima haqida ekanini ko'rsatuvchi `code` va `subject` (bemor) bo'ladi - uchalasi ham bazaviy FHIR R5 da majburiy.
 
 #### Har bir UZ Core Flag quyidagilarni qo'llab-quvvatlashi shart
 
