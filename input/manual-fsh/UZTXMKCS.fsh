@@ -5,10 +5,10 @@
 // Canonical URL is provisional; approve it before production use.
 
 CodeSystem: UZTXMKCS
-Id: uz-txmk
+Id: uz-txmk-cs
 Title: "Uzbekistan National Medical Services Classifier (TXMK)"
 Description: "National classification of medical services of Uzbekistan, approved by the Ministry of Health of the Republic of Uzbekistan, containing 10,699 concepts with full Uzbek, Russian, and English names."
-* ^url = "https://terminology.dhp.uz/fhir/core/CodeSystem/uz-txmk"
+* ^url = "https://terminology.dhp.uz/fhir/core/CodeSystem/uz-txmk-cs"
 * ^version = "1.0.0"
 * ^name = "UZTXMKCS"
 * ^status = #draft

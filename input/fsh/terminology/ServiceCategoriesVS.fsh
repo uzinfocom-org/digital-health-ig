@@ -10,3 +10,5 @@ Description: "Cancer-related service categories"
 * include CancerTypesCS#cancr0013.00000
 * include CancerTypesCS#cancr0022.00000
 * include CancerTypesCS#cancr0043.00000
+
+* include codes from system LabCategoriesCS
