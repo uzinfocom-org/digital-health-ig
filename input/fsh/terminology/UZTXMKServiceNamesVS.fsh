@@ -8,3 +8,4 @@ Description: "Names of services from the national classification of medical serv
 * ^experimental = true
 
 * include codes from system UZTXMKCS
+* exclude codes from system UZTXMKCS where notSelectable = "true"

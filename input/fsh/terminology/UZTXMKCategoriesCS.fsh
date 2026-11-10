@@ -1,8 +1,8 @@
 CodeSystem: UZTXMKCategoriesCS
-Id: uz-txmk-categories
+Id: uz-txmk-categories-cs
 Title: "UZ TXMK medical service categories"
-Description: "Top-level A01~D08 categories of the Uzbekistan National Classification of Medical Services (TXMK), with Uzbek Latin display names and Russian and English designations."
-* insert OriginalCodeSystemDraft(uz-txmk-categories)
+Description: "Service categories of the national classification of medical services of Uzbekistan (TXMK)"
+* insert OriginalCodeSystemDraft(uz-txmk-categories-cs)
 
 * #txmk-0001-00001 "Shifokor qabullari va konsultatsiyalari"
   * ^designation[0].language = #ru

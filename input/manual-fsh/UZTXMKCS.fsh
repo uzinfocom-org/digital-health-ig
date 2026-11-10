@@ -6,7 +6,7 @@
 CodeSystem: UZTXMKCS
 Id: uz-txmk-cs
 Title: "Uzbekistan national medical services classifier (TXMK)"
-Description: "National classification of medical services of Uzbekistan, approved by the Ministry of Health of the Republic of Uzbekistan, containing 10,699 concepts with full Uzbek, Russian, and English names."
+Description: "National classification of medical services of Uzbekistan, approved by the Ministry of Health of the Republic of Uzbekistan, with Uzbek, Russian and English names."
 * insert OriginalClassificationCodeSystemDraft(uz-txmk-cs)
 * ^date = "2026-11-03"
 * ^count = 10732
@@ -37,6 +37,10 @@ Description: "National classification of medical services of Uzbekistan, approve
 * ^filter[=].operator[0] = #=
 * ^filter[=].operator[+] = #in
 * ^filter[=].value = "A TXMK group code, e.g. B02"
+* ^filter[+].code = #notSelectable
+* ^filter[=].description = "Select or exclude the TXMK class and group concepts"
+* ^filter[=].operator[0] = #=
+* ^filter[=].value = "true or false"
 
 // ---- TXMK classes and groups (grouping concepts, not selectable) ----
 // They exist so that service-class / service-group values (type = code) resolve to codes in this CodeSystem.

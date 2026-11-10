@@ -8,3 +8,4 @@ Description: "Service categories from the national classification of medical ser
 * ^experimental = true
 
 * include codes from system UZTXMKCategoriesCS
+* exclude UZTXMKCategoriesCS#txmk-0001-00023
