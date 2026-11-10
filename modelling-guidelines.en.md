@@ -588,7 +588,7 @@ Models to follow: Organization, Location, Medication. A new profile without thes
 
 - Every JSON example must pass validation against the profile (the command is in `AGENTS.md`): always `meta.profile`; the `display` of codes from local CodeSystems must match the resource's `language`; the optional `display` on HL7 codes is better omitted.
 - Lines in code blocks no longer than ~120 characters - split long objects across several lines, otherwise the page spreads out in width.
-- Use only search parameters from the DHP CapabilityStatement.
+- Use only search parameters a client can rely on: those the CapabilityStatement lists for the resource (standard FHIR R5 ones if it is not listed yet), plus UZ Core SearchParameters defined in this guide, linked to their page.
 - Do not repeat the same rule in several places on the page.
 - Put RU and UZ copies of both fragments in `input/translations/<lang>/pagecontent/` under the same file name, with a machine translation banner at the top. Code blocks and JSON are identical to the English ones. Set the anchors `{#quick-start}`, `{#finding}`, `{#identifier-slices}` explicitly - translated headings do not generate them.
 - Add a changelog entry (en, ru, uz) in its place in alphabetical order within the category, not at the end - see `AGENTS.md`.
