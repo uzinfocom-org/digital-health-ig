@@ -22,7 +22,7 @@ Description: "Uzbekistan Core Patient profile, used to represent patients admini
     passportInternational 0..* MS and
     passportForeign 0..1 MS and
     pensionNumber 0..1 MS and
-    birthCertificate 0..1 MS and
+    birthCertificate 0..* MS and
     driversLicense 0..1 MS and
     driversLicenseForeign 0..1 MS and
     diplomaticPassport 0..1 MS and
@@ -70,11 +70,12 @@ Description: "Uzbekistan Core Patient profile, used to represent patients admini
   * value 1..1 MS
 
 * identifier[birthCertificate]
+  * ^short = "Birth certificate number"
+  * ^definition = "Birth certificate number. A person whose birth certificate was replaced holds more than one. Set use = official for the certificate currently in force and use = old for a superseded one."
   * system 1..1 MS
   * system = $birthcertificate
   * type 1..1 MS
   * type = $identifier-type#BCT
-  * use = #official
   * value 1..1 MS
 
 * identifier[driversLicense]
@@ -187,6 +188,7 @@ Usage: #example
 * identifier[passportInternational]
   * value = "AA1234567"
 * identifier[birthCertificate]
+  * use = #official
   * value = "I-МЯ №123456"
 * identifier[driversLicense]
   * value = "AAA123456"
@@ -348,8 +350,12 @@ Usage: #example
 * language = #uz
 * identifier[nationalId]
   * value = "90000000000005"
-* identifier[birthCertificate]
+* identifier[birthCertificate][0]
+  * use = #official
   * value = "II-ЮА №654321"
+* identifier[birthCertificate][1]
+  * use = #old
+  * value = "I-ЮА №123789"
 * active = true
 * name
   * use = #usual
