@@ -40,6 +40,8 @@
 
 [UZ Core Organization](StructureDefinition-uz-core-organization.html) и [UZ Core RelatedPerson](StructureDefinition-uz-core-relatedperson.html) больше не фиксируют display типа идентификатора: срезы `mohId` и `argosId` фиксируют только систему и код `XX`, а `healthCard` - только `HC`. Зафиксированные display "Organization Identifier" и "Health card number" не совпадали с display терминологии HL7 "Organization identifier" и "Health Card Number", поэтому каждый соответствующий профилю экземпляр получал предупреждение терминологии. Теперь тип идентификатора соответствует профилю с любым из этих display или без него.
 
+[UZ Core Patient](StructureDefinition-uz-core-patient.html) допускает несколько свидетельств о рождении (`birthCertificate` теперь 0..* вместо 0..1) и больше не фиксирует его `use`, поэтому прежнее свидетельство пациента можно передать с `use = old` рядом с действующим с `use = official`.
+
 Все ссылки на Device в профилях UZ Core теперь указывают на [UZ Core Device](StructureDefinition-uz-core-device.html): Observation, Procedure, Condition, AdverseEvent, Composition, QuestionnaireResponse, Group, MedicationAdministration, MedicationDispense, InventoryItem, SupplyRequest и SupplyDelivery.
 
 Группы TXMK получили узбекские названия и переводы на русский и английский из справочника категорий.
