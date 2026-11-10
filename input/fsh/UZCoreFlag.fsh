@@ -14,7 +14,7 @@ Description: "Uzbekistan Core Flag profile, used to record a prospective warning
 * category from FlagCategoryVS (preferred)
 * category ^short = "General category of the flag"
 * code MS
-* code from BloodDonorEligibilityVS (required)
+* code from FlagCodeVS (extensible)
 * code ^short = "What the flag is about, such as blood donation eligibility or a medical deferral"
 * subject MS
 * subject only Reference(UZCorePatient)
@@ -23,23 +23,22 @@ Description: "Uzbekistan Core Flag profile, used to record a prospective warning
 * encounter ^short = "Encounter during which the flag was raised"
 * author only Reference(UZCorePractitioner or UZCorePractitionerRole or UZCoreOrganization or UZCoreDevice or UZCorePatient or UZCoreRelatedPerson)
 * author ^short = "Person, organization or device responsible for the flag"
-* period.start ^short = "Start of the flag's validity period"
-* period.end ^short = "End of the flag's validity period, if known"
+* period.start ^short = "When the flag became active"
+* period.end ^short = "When the flag was deactivated; empty while the flag is active"
 
 Instance: example-donation-eligible-flag
 InstanceOf: UZCoreFlag
 Usage: #example
 Title: "Example UZ Core Flag - Eligible for Blood Donation"
-Description: "An active flag recording that a patient is eligible for blood donation."
+Description: "A flag that recorded a patient as eligible for blood donation, made inactive when a medical deferral was recorded."
 * language = #uz
-* status = #active
+* status = #inactive
 * category = $flag-category#admin
 * code = BloodDonorEligibilityCS#blood-donation-eligible "Qon donorligiga ruxsat berilgan"
 * subject = Reference(Patient/example-salim)
-* encounter = Reference(Encounter/example-encounter)
 * author = Reference(Practitioner/example-practitioner)
-* period.start = "2026-11-09T09:00:00+05:00"
-* period.end = "2026-11-09T18:00:00+05:00"
+* period.start = "2026-10-12T10:00:00+05:00"
+* period.end = "2026-11-09T09:00:00+05:00"
 
 Instance: example-donation-deferred-flag
 InstanceOf: UZCoreFlag
@@ -62,4 +61,4 @@ Description: "The mandatory data needed to record a blood donor eligibility deci
 * language = #uz
 * status = #active
 * code = BloodDonorEligibilityCS#blood-donation-eligible "Qon donorligiga ruxsat berilgan"
-* subject = Reference(Patient/example-salim)
+* subject = Reference(Patient/example-nodira)

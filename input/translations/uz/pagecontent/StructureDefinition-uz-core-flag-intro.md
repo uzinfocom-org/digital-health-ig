@@ -21,7 +21,7 @@ Har bir Flag da `status`, belgi nima haqida ekanini ko'rsatuvchi `code` va `subj
 
 ### JSON ni bosqichma-bosqich qurish
 
-Quyidagi misollar minimal qon donorligi qaroridan kontekstli ruxsat belgisigacha va tibbiy chetlatishgacha boradi. Har bir misol `meta.profile` da ushbu profilni ko'rsatadi.
+Quyidagi misollar minimal qon donorligi qaroridan bemorning avvalgi ruxsat belgisiga va uning o'rnini egallagan tibbiy chetlatishga boradi. Har bir misol `meta.profile` da ushbu profilni ko'rsatadi.
 
 #### Yuborish mumkin bo'lgan eng kichik Flag
 
@@ -42,13 +42,13 @@ Minimal Flag holat, qon donorligiga ruxsat qarori va bemorni o'z ichiga oladi. Q
       "display": "Qon donorligiga ruxsat berilgan"
     }]
   },
-  "subject": { "reference": "Patient/example-salim" }
+  "subject": { "reference": "Patient/example-nodira" }
 }
 ```
 
-#### Kontekstli ruxsat qarori
+#### Avvalgi ruxsat qarori
 
-HL7 belgi toifasini, amal qilish davrini, qaror qabul qilingan tashrifni va uning muallifini qo'shing. HL7 toifa kodlari asl tizimini saqlaydi:
+HL7 belgi toifasini, davrni va muallifni qo'shing. HL7 toifa kodlari asl tizimini saqlaydi. Bu belgi `inactive`: u quyidagi chetlatish qayd etilganda amal qilishni to'xtatgan va `period.end` shu vaqtni saqlaydi. Amaldagi belgida `period.end` bo'sh qoladi:
 
 ```json
 {
@@ -57,7 +57,7 @@ HL7 belgi toifasini, amal qilish davrini, qaror qabul qilingan tashrifni va unin
     "profile": ["https://dhp.uz/fhir/core/StructureDefinition/uz-core-flag"]
   },
   "language": "uz",
-  "status": "active",
+  "status": "inactive",
   "category": [{
     "coding": [{
       "system": "http://terminology.hl7.org/CodeSystem/flag-category",
@@ -73,17 +73,16 @@ HL7 belgi toifasini, amal qilish davrini, qaror qabul qilingan tashrifni va unin
   },
   "subject": { "reference": "Patient/example-salim" },
   "period": {
-    "start": "2026-11-09T09:00:00+05:00",
-    "end": "2026-11-09T18:00:00+05:00"
+    "start": "2026-10-12T10:00:00+05:00",
+    "end": "2026-11-09T09:00:00+05:00"
   },
-  "encounter": { "reference": "Encounter/example-encounter" },
   "author": { "reference": "Practitioner/example-practitioner" }
 }
 ```
 
 #### Tibbiy chetlatish
 
-Chetlatish uchun `blood-donation-deferred` kodi ishlatiladi; chetlatish amal qilayotgan paytda belgi `active` bo'lib qoladi:
+Chetlatish uchun `blood-donation-deferred` kodi ishlatiladi; chetlatish amal qilayotgan paytda belgi `period.end` siz `active` bo'lib qoladi:
 
 ```json
 {

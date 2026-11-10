@@ -19,7 +19,7 @@ The `category` (administrative, clinical and so on), the `period` the flag appli
 
 ### Building the JSON, step by step
 
-The examples below go from a minimal blood donation decision to an eligibility flag with its context and a medical deferral. Each example names this profile in `meta.profile`.
+The examples below go from a minimal blood donation decision to one patient's earlier eligibility flag and the medical deferral that replaced it. Each example names this profile in `meta.profile`.
 
 #### The smallest Flag you should send
 
@@ -40,13 +40,13 @@ A minimal Flag needs its status, the blood donation eligibility decision and the
       "display": "Qon donorligiga ruxsat berilgan"
     }]
   },
-  "subject": { "reference": "Patient/example-salim" }
+  "subject": { "reference": "Patient/example-nodira" }
 }
 ```
 
-#### An eligibility decision with its context
+#### An earlier eligibility decision
 
-Add the HL7 flag category, the validity period, the encounter in which the decision was made and its author. HL7 category codes keep their original system:
+Add the HL7 flag category, the period and the author. HL7 category codes keep their original system. This flag is `inactive`: it stopped applying when the deferral below was recorded, and `period.end` holds that time. An active flag leaves `period.end` empty:
 
 ```json
 {
@@ -55,7 +55,7 @@ Add the HL7 flag category, the validity period, the encounter in which the decis
     "profile": ["https://dhp.uz/fhir/core/StructureDefinition/uz-core-flag"]
   },
   "language": "uz",
-  "status": "active",
+  "status": "inactive",
   "category": [{
     "coding": [{
       "system": "http://terminology.hl7.org/CodeSystem/flag-category",
@@ -71,17 +71,16 @@ Add the HL7 flag category, the validity period, the encounter in which the decis
   },
   "subject": { "reference": "Patient/example-salim" },
   "period": {
-    "start": "2026-11-09T09:00:00+05:00",
-    "end": "2026-11-09T18:00:00+05:00"
+    "start": "2026-10-12T10:00:00+05:00",
+    "end": "2026-11-09T09:00:00+05:00"
   },
-  "encounter": { "reference": "Encounter/example-encounter" },
   "author": { "reference": "Practitioner/example-practitioner" }
 }
 ```
 
 #### A medical deferral
 
-A deferral uses the `blood-donation-deferred` code and stays `active` while it applies:
+A deferral uses the `blood-donation-deferred` code and stays `active`, with no `period.end`, while it applies:
 
 ```json
 {
