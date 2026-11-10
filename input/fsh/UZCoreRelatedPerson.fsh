@@ -80,7 +80,7 @@ Description: "Uzbekistan Core RelatedPerson profile, used to represent persons r
   * system 1..1 MS
   * system = $healthcard
   * type 1..1 MS
-  * type = $identifier-type#HC "Health card number"
+  * type = $identifier-type#HC
   * use = #official
   * value 1..1 MS
 
@@ -179,7 +179,7 @@ Description: "The mother of a child, recorded so that a system can recognise her
 Usage: #example
 * language = #uz
 * identifier[nationalId]
-  * value = "40503855900021"
+  * value = "90000000000003"
 * active = true
 * patient = Reference(example-jasur)
 * relationship[0].coding[0] = $v3-RoleCode#MTH "Ona"

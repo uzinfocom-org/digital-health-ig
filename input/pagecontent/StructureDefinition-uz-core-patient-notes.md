@@ -12,7 +12,7 @@ GET [base]/Patient/[id]
 
 ```
 # by national identifier (PINFL) - the reliable match
-GET [base]/Patient?identifier=https://dhp.uz/fhir/core/sid/pid/uz/ni|30211975910033
+GET [base]/Patient?identifier=https://dhp.uz/fhir/core/sid/pid/uz/ni|12345678912345
 
 # by name + birth date when no identifier is to hand
 GET [base]/Patient?family=Usmanov&birthdate=1994-01-27

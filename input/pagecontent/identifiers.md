@@ -40,7 +40,7 @@ The national unique identifier (PINFL - Personal Identification Number for Forei
         ]
       },
       "use": "official",
-      "value": "30211975910033"
+      "value": "12345678912345"
     }
   ]
 }
@@ -220,7 +220,7 @@ A specialist certificate issued by the Ministry of Health identifies a qualifica
       "identifier": [
         {
           "system": "https://dhp.uz/fhir/core/sid/pro/uz/specialist-certificate",
-          "value": "CA008815"
+          "value": "CA123456"
         }
       ],
       "code": {
@@ -234,8 +234,8 @@ A specialist certificate issued by the Ministry of Health identifies a qualifica
         "text": "Psixiatriya, oliy toifa, shifokor"
       },
       "period": {
-        "start": "2024-05-05",
-        "end": "2029-05-05"
+        "start": "2025-03-10",
+        "end": "2030-03-10"
       }
     }
   ]
@@ -339,7 +339,7 @@ A patient may have multiple identifiers. Here's a complete example showing prope
         ]
       },
       "use": "official",
-      "value": "30211975910033"
+      "value": "12345678912345"
     },
     {
       "system": "https://dhp.uz/fhir/core/sid/pid/uz/ppn/local",
@@ -421,7 +421,7 @@ To search for resources by identifier, use the standard FHIR search parameters:
 ```
 # | is used to separate system and value, needs to be URL-encoded as %7C
 
-GET [base]/Patient?identifier=https://dhp.uz/fhir/core/sid/pid/uz/ni|30211975910033
+GET [base]/Patient?identifier=https://dhp.uz/fhir/core/sid/pid/uz/ni|12345678912345
 GET [base]/Practitioner?identifier=https://dhp.uz/fhir/core/sid/pro/uz/argos|9876543210
 GET [base]/Organization?identifier=https://dhp.uz/fhir/core/sid/org/uz/soliq|200935935
 ```
