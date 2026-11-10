@@ -14,7 +14,7 @@ Profil majburiy elementlar qo'shmaydi. Bazaviy resurs `status`, `intent` va `sub
 
 - buyurtma yoki yo'llanmaning biznes identifikatori (`identifier`) va birga yaratilgan so'rovlarni, masalan bitta namunadagi barcha tahlillarni birlashtiruvchi umumiy identifikator (`requisition`);
 - so'rov holati (draft / active / on-hold / revoked / completed / entered-in-error / unknown) va uning maqsadi (proposal / plan / order va uning turlari);
-- xizmat turi (`category`), ko'pi bilan bitta milliy toifa bilan, masalan laboratoriya bo'limi yoki kasalxonaga yotqizish, va yo'llanma maqsadlari (konsultatsiya / diagnostika / davolash / tashxisni aniqlashtirish / dispanser hisobiga olish / tug'ruq / boshqa);
+- xizmat turi (`category`), ko'pi bilan bitta milliy toifa bilan, masalan laboratoriya bo'limi yoki kasalxonaga yotqizish, va yo'llanma maqsadlari (konsultatsiya / diagnostika / davolash / tashxisni aniqlashtirish / dispanser hisobiga olish / tug'ruq / boshqa) va yo'llanma berilgan klinik mutaxassislik;
 - shoshilinchlik (`priority`: routine / urgent / asap / stat) va xizmatni bajarmaslik kerakligi belgisi (`doNotPerform`);
 - so'ralgan xizmat (`code`);
 - so'rov kim yoki nima uchun ekanligi (`subject`: [bemor](StructureDefinition-uz-core-patient.html) yoki [joy](StructureDefinition-uz-core-location.html)) va u yaratilgan [Encounter](StructureDefinition-uz-core-encounter.html);
@@ -125,7 +125,7 @@ Oilaviy shifokor qabul paytida shoshilinch umumiy qon tahlilini buyuradi. Klinik
 }
 ```
 
-`category` va `reason` qiymat bo'yicha bo'laklarga ajratilgan. `category` [ServiceRequest ning milliy toifalari](ValueSet-service-request-categories-vs.html) dan (laboratoriya bo'limlari va SNOMED CT xizmat turlari) ko'pi bilan bitta kodni o'z ichiga oladi, uning yonida boshqa toifalar ham bo'lishi mumkin. `reason` milliy holat kodlaridan ICD-10 yoki SNOMED CT kodlarini qabul qiladi; qayd etilgan tashxisga havola qilish uchun `concept` o'rniga `"reference": { "reference": "Condition/[id]" }` dan foydalaning. `patientInstruction` takrorlanadi, har bir yozuv markdown matni yoki hujjatga havola.
+`category` va `reason` qiymat bo'yicha bo'laklarga ajratilgan. `category` [ServiceRequest ning milliy toifalari](ValueSet-service-request-categories-vs.html) dan (laboratoriya bo'limlari va SNOMED CT xizmat turlari) ko'pi bilan bitta kodni o'z ichiga oladi, uning yonida boshqa toifalar ham bo'lishi mumkin. Yo'llanma o'z maqsadlarini va ko'pi bilan bitta [klinik mutaxassislik](ValueSet-service-request-specialty-vs.html) ni qo'shadi: SNOMED CT kodi yoki SNOMED CT da ekvivalenti bo'lmagan joyda mahalliy kod, masalan ftiziatriya. `reason` milliy holat kodlaridan ICD-10 yoki SNOMED CT kodlarini qabul qiladi; qayd etilgan tashxisga havola qilish uchun `concept` o'rniga `"reference": { "reference": "Condition/[id]" }` dan foydalaning. `patientInstruction` takrorlanadi, har bir yozuv markdown matni yoki hujjatga havola.
 
 #### Davlat hisobidan kasalxonaga yotqizishga yo'llanma
 

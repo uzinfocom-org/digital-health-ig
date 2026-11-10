@@ -1,7 +1,7 @@
 CodeSystem: ServiceRequestCategoryCS
 Id: service-request-category-cs
-Title: "ServiceRequest specialty category"
-Description: "Clinical specialty categories for ServiceRequest in Uzbekistan healthcare"
+Title: "ServiceRequest local specialty"
+Description: "Local clinical specialty codes for ServiceRequest in Uzbekistan healthcare. ServiceRequest specialty uses SNOMED CT where it has an equivalent concept and these codes only where it does not"
 
 * insert OriginalCodeSystemDraft(service-request-category-cs)
 

@@ -20,15 +20,18 @@ Description: "Uzbekistan Core ServiceRequest profile, used to represent a reques
 * category ^slicing.discriminator.type = #value
 * category ^slicing.discriminator.path = "$this"
 * category ^slicing.rules = #open
-* category ^slicing.description = "One category from the national ServiceRequest categories; any other categories are allowed alongside it"
+* category ^slicing.description = "The national ServiceRequest category, the referral purposes and the clinical specialty; any other categories are allowed alongside them"
 * category ^slicing.ordered = false
 * category contains
     dhpCategory 0..1 MS and
-    referralPurpose 0..* MS
+    referralPurpose 0..* MS and
+    specialty 0..1 MS
 * category[dhpCategory] from ServiceRequestCategoriesVS (required)
 * category[dhpCategory] ^short = "National category of the service being requested"
 * category[referralPurpose] from ServiceRequestReferralPurposeVS (required)
 * category[referralPurpose] ^short = "Purpose of the referral"
+* category[specialty] from ServiceRequestSpecialtyVS (required)
+* category[specialty] ^short = "Clinical specialty the referral is addressed to"
 * priority MS
 * priority from RequestPriorityVS (required)
 * priority ^short = "Indicates how quickly the ServiceRequest should be addressed with respect to other requests"

@@ -23,11 +23,14 @@ Description: "Example ServiceRequest for CBC (Umumiy qon tahlili) order"
 * specimen[0] = Reference(Specimen/example-specimen-blood-cbc)
 
 Instance: example-hospitalization-referral
-InstanceOf: ServiceRequest
+InstanceOf: UZCoreServiceRequest
 Usage: #example
 Description: "Example state-insurance referral for planned hospitalization; its approval chain is tracked by the UZCoreTask examples"
 * status = #active
 * intent = #order
+* category[dhpCategory] = $sct#32485007 "Admission to hospital"
+* category[referralPurpose] = ServiceRequestReferralPurposeCS#purpose-0001-0003 "Treatment"
+* category[specialty] = $sct#394579002 "Cardiology"
 * code = $sct#306206005 "Referral to service"
 * subject = Reference(Patient/example-nodira)
 * requester = Reference(PractitionerRole/example-practitionerrole)

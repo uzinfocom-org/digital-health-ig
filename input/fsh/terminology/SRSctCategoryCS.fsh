@@ -95,9 +95,9 @@ Description: "ServiceRequest SNOMED CT category supplement with translations in 
 
 * #394807007 "Infectious diseases specialty"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Фтизиатрия"
+  * ^designation[=].value = "Инфекционные болезни"
   * ^designation[+].language = #uz
-  * ^designation[=].value = "Ftiziatriya yo'nalishi"
+  * ^designation[=].value = "Yuqumli kasalliklar"
 
 * #418112009 "Pulmonary medicine"
   * ^designation[0].language = #ru
@@ -113,9 +113,9 @@ Description: "ServiceRequest SNOMED CT category supplement with translations in 
 
 * #394805004 "Clinical immunology/allergy"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Аллергология"
+  * ^designation[=].value = "Клиническая иммунология и аллергология"
   * ^designation[+].language = #uz
-  * ^designation[=].value = "Allergologiya yo'nalishi"
+  * ^designation[=].value = "Klinik immunologiya va allergologiya"
 
 * #394592004 "Clinical oncology"
   * ^designation[0].language = #ru
@@ -281,9 +281,9 @@ Description: "ServiceRequest SNOMED CT category supplement with translations in 
 
 * #431051000124102 "Dialysis service"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Гемодиализ"
+  * ^designation[=].value = "Диализ"
   * ^designation[+].language = #uz
-  * ^designation[=].value = "Gemodializ"
+  * ^designation[=].value = "Dializ"
 
 * #394539006 "Paediatric surgery"
   * ^designation[0].language = #ru
@@ -293,9 +293,9 @@ Description: "ServiceRequest SNOMED CT category supplement with translations in 
 
 * #408470005 "Obstetrics"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Родильное отделение"
+  * ^designation[=].value = "Акушерство"
   * ^designation[+].language = #uz
-  * ^designation[=].value = "Tug'uruqxona"
+  * ^designation[=].value = "Akusherlik"
 
 * #394586005 "Gynecology"
   * ^designation[0].language = #ru

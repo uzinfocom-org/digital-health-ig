@@ -1,8 +1,8 @@
 Instance: service-request-category-to-snomed-cm
 InstanceOf: ConceptMap
 Usage: #definition
-Title: "ServiceRequest specialty category to SNOMED CT"
-Description: "Maps local ServiceRequest specialty category codes to SNOMED CT specialty codes"
+Title: "ServiceRequest local specialty to SNOMED CT"
+Description: "Maps ServiceRequest local specialty codes to SNOMED CT specialty codes"
 * name = "ServiceRequestCategoryToSNOMEDCM"
 * url = "https://terminology.dhp.uz/fhir/core/ConceptMap/service-request-category-to-snomed-cm"
 * status = #draft
@@ -11,7 +11,7 @@ Description: "Maps local ServiceRequest specialty category codes to SNOMED CT sp
 
 * group.source = Canonical(ServiceRequestCategoryCS)
 * group.target = $sct
-* sourceScopeCanonical = Canonical(ServiceRequestSpecialtyCategoryVS)
+* sourceScopeCanonical = Canonical(ServiceRequestLocalSpecialtyVS)
 * targetScopeCanonical = $sct-vs
 
 * group[=].element[+].code = #serv-0001-00001
@@ -102,7 +102,7 @@ Description: "Maps local ServiceRequest specialty category codes to SNOMED CT sp
 * group[=].element[=].display = "Koloproktologiya yo'nalishi"
 * group[=].element[=].target[+].code = #408464004
 * group[=].element[=].target[=].display = "Colorectal surgery"
-* group[=].element[=].target[=].relationship = #source-is-narrower-than-target
+* group[=].element[=].target[=].relationship = #equivalent
 
 * group[=].element[+].code = #serv-0001-00016
 * group[=].element[=].display = "Dermatologiya yo'nalishi"
@@ -126,13 +126,13 @@ Description: "Maps local ServiceRequest specialty category codes to SNOMED CT sp
 * group[=].element[=].display = "Otorinolaringologiya va yuz-jag' jarrohlik yo'nalishi"
 * group[=].element[=].target[+].code = #418960008
 * group[=].element[=].target[=].display = "Otolaryngology"
-* group[=].element[=].target[=].relationship = #source-is-narrower-than-target
+* group[=].element[=].target[=].relationship = #source-is-broader-than-target
 
 * group[=].element[+].code = #serv-0001-00019
 * group[=].element[=].display = "Otorinolaringologiya va yuz-jag' jarrohlik yo'nalishi"
 * group[=].element[=].target[+].code = #408457001
 * group[=].element[=].target[=].display = "Maxillofacial surgery"
-* group[=].element[=].target[=].relationship = #source-is-narrower-than-target
+* group[=].element[=].target[=].relationship = #source-is-broader-than-target
 
 * group[=].element[+].code = #serv-0001-00020
 * group[=].element[=].display = "Nevrologiya yo'nalishi"
@@ -156,13 +156,13 @@ Description: "Maps local ServiceRequest specialty category codes to SNOMED CT sp
 * group[=].element[=].display = "Stomatologiya va yuz-jag' jarrohlik yo'nalishi"
 * group[=].element[=].target[+].code = #722163006
 * group[=].element[=].target[=].display = "Dentistry"
-* group[=].element[=].target[=].relationship = #source-is-narrower-than-target
+* group[=].element[=].target[=].relationship = #source-is-broader-than-target
 
 * group[=].element[+].code = #serv-0001-00023
 * group[=].element[=].display = "Stomatologiya va yuz-jag' jarrohlik yo'nalishi"
 * group[=].element[=].target[+].code = #408465003
 * group[=].element[=].target[=].display = "Oral and maxillofacial surgery"
-* group[=].element[=].target[=].relationship = #source-is-narrower-than-target
+* group[=].element[=].target[=].relationship = #source-is-broader-than-target
 
 * group[=].element[+].code = #serv-0001-00024
 * group[=].element[=].display = "Oftalmologiya"
@@ -174,7 +174,7 @@ Description: "Maps local ServiceRequest specialty category codes to SNOMED CT sp
 * group[=].element[=].display = "Travmatologiya"
 * group[=].element[=].target[+].code = #310166001
 * group[=].element[=].target[=].display = "Trauma surgery service"
-* group[=].element[=].target[=].relationship = #source-is-narrower-than-target
+* group[=].element[=].target[=].relationship = #equivalent
 
 * group[=].element[+].code = #serv-0001-00026
 * group[=].element[=].display = "Kattalar travmatologiyasi"
@@ -186,7 +186,7 @@ Description: "Maps local ServiceRequest specialty category codes to SNOMED CT sp
 * group[=].element[=].display = "Intensiv davolash va reanimatsiya"
 * group[=].element[=].target[+].code = #408478003
 * group[=].element[=].target[=].display = "Critical care medicine"
-* group[=].element[=].target[=].relationship = #source-is-narrower-than-target
+* group[=].element[=].target[=].relationship = #equivalent
 
 * group[=].element[+].code = #serv-0001-00028
 * group[=].element[=].display = "Toksikologiya"
@@ -210,13 +210,13 @@ Description: "Maps local ServiceRequest specialty category codes to SNOMED CT sp
 * group[=].element[=].display = "Qon-tomir jarrohligi va mikrojarrohlik"
 * group[=].element[=].target[+].code = #408463005
 * group[=].element[=].target[=].display = "Vascular surgery"
-* group[=].element[=].target[=].relationship = #source-is-narrower-than-target
+* group[=].element[=].target[=].relationship = #source-is-broader-than-target
 
 * group[=].element[+].code = #serv-0001-00032
 * group[=].element[=].display = "Kombustiologiya"
 * group[=].element[=].target[+].code = #408462000
 * group[=].element[=].target[=].display = "Burns care"
-* group[=].element[=].target[=].relationship = #source-is-narrower-than-target
+* group[=].element[=].target[=].relationship = #equivalent
 
 * group[=].element[+].code = #serv-0001-00033
 * group[=].element[=].display = "Gemodializ"
@@ -228,7 +228,7 @@ Description: "Maps local ServiceRequest specialty category codes to SNOMED CT sp
 * group[=].element[=].display = "Bolalar xirurgiyasi"
 * group[=].element[=].target[+].code = #394539006
 * group[=].element[=].target[=].display = "Paediatric surgery"
-* group[=].element[=].target[=].relationship = #source-is-narrower-than-target
+* group[=].element[=].target[=].relationship = #equivalent
 
 * group[=].element[+].code = #serv-0001-00035
 * group[=].element[=].display = "Tug'uruqxona"
@@ -264,4 +264,4 @@ Description: "Maps local ServiceRequest specialty category codes to SNOMED CT sp
 * group[=].element[=].display = "Tibbiy genetika yo'nalishi (18 yoshgacha bo'lgan bolalar uchun)"
 * group[=].element[=].target[+].code = #420208008
 * group[=].element[=].target[=].display = "Pediatric genetics"
-* group[=].element[=].target[=].relationship = #source-is-narrower-than-target
+* group[=].element[=].target[=].relationship = #equivalent

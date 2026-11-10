@@ -12,7 +12,7 @@ This profile adds no mandatory elements. The base resource requires a `status`, 
 
 - the business identifier of the order or referral (`identifier`), and a shared identifier that groups requests made together, such as all tests on one specimen (`requisition`);
 - the status of the request (draft / active / on-hold / revoked / completed / entered-in-error / unknown) and its intent (proposal / plan / order and its subtypes);
-- the kind of service (`category`), with at most one national category such as a laboratory section or hospital admission, and the purposes of a referral (consultation / diagnostics / treatment / diagnosis clarification / dispensary registration / delivery / other);
+- the kind of service (`category`), with at most one national category such as a laboratory section or hospital admission, and the purposes of a referral (consultation / diagnostics / treatment / diagnosis clarification / dispensary registration / delivery / other) and the clinical specialty the referral is addressed to;
 - the urgency (`priority`: routine / urgent / asap / stat) and whether the service must not be done (`doNotPerform`);
 - the service requested (`code`);
 - the [Patient](StructureDefinition-uz-core-patient.html) or [Location](StructureDefinition-uz-core-location.html) the request is for (`subject`) and the [Encounter](StructureDefinition-uz-core-encounter.html) in which it was made;
@@ -123,7 +123,7 @@ A family doctor orders an urgent complete blood count during a visit. The order 
 }
 ```
 
-`category` and `reason` are both sliced by value. `category` holds at most one code from the [national ServiceRequest categories](ValueSet-service-request-categories-vs.html) (laboratory sections and SNOMED CT service kinds), and other categories may sit beside it. `reason` takes ICD-10 or SNOMED CT codes from the national condition codes; to point to a recorded diagnosis instead, use `"reference": { "reference": "Condition/[id]" }` in place of `concept`. `patientInstruction` repeats, and each entry is markdown text or a reference to a document.
+`category` and `reason` are both sliced by value. `category` holds at most one code from the [national ServiceRequest categories](ValueSet-service-request-categories-vs.html) (laboratory sections and SNOMED CT service kinds), and other categories may sit beside it. A referral adds its purposes and at most one [clinical specialty](ValueSet-service-request-specialty-vs.html): a SNOMED CT code, or a local code where SNOMED CT has no equivalent, such as TB medicine. `reason` takes ICD-10 or SNOMED CT codes from the national condition codes; to point to a recorded diagnosis instead, use `"reference": { "reference": "Condition/[id]" }` in place of `concept`. `patientInstruction` repeats, and each entry is markdown text or a reference to a document.
 
 #### A state-funded referral for hospitalization
 
