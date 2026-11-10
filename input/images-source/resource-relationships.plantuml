@@ -10,10 +10,10 @@ class Encounter [[StructureDefinition-uz-core-encounter.html{Open the UZ Core En
 class Condition [[StructureDefinition-uz-core-condition.html{Open the UZ Core Condition profile}]] #E8F0FE
 class Observation [[StructureDefinition-uz-core-observation.html{Open the UZ Core Observation profile}]] #E8F0FE
 class Procedure [[StructureDefinition-uz-core-procedure.html{Open the UZ Core Procedure profile}]] #E8F0FE
-class MedicationRequest
-class Composition
+class MedicationRequest [[StructureDefinition-uz-core-medicationrequest.html{Open the UZ Core MedicationRequest profile}]] #E8F0FE
+class Composition [[StructureDefinition-uz-core-composition.html{Open the UZ Core Composition profile}]] #E8F0FE
 class Specimen [[StructureDefinition-uz-core-specimen.html{Open the UZ Core Specimen profile}]] #E8F0FE
-class ServiceRequest
+class ServiceRequest [[StructureDefinition-uz-core-servicerequest.html{Open the UZ Core ServiceRequest profile}]] #E8F0FE
 
 Patient "1" <-- "0..*" EpisodeOfCare : « patient »
 EpisodeOfCare "0..1" <-- "0..*" Encounter : « episodeOfCare »
@@ -32,7 +32,6 @@ note as N
   UZ Core profile. Each arrow points from the
   resource that holds the reference to its target;
   the label is the FHIR reference element.
-  Blue boxes are profiled and link to their page;
-  grey boxes are referenced but not yet profiled.
+  Each box links to its profile page.
 end note
 @enduml
