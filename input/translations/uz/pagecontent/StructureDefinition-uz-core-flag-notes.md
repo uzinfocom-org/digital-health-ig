@@ -48,7 +48,7 @@ POST [base]/Flag
 
 **Yangilash** (masalan, tibbiy chetlatishni tugatish uchun): to'liq resursni `PUT [base]/Flag/[id]` orqali yuboring, `status` ni `inactive` ga o'zgartiring yoki `period.end` ni to'ldiring va o'qilgan versiyani o'z ichiga olgan `If-Match` sarlavhasini qo'shing, shunda parallel o'zgarish ustidan yozilmaydi.
 
-Qo'llab-quvvatlanadigan qidiruv parametrlarining to'liq ro'yxati [CapabilityStatement](CapabilityStatement-DHPCapabilityStatement.html) da keltirilgan.
+Qo'llab-quvvatlanadigan qidiruv parametrlarining to'liq ro'yxati [CapabilityStatement](CapabilityStatement-DHPCapabilityStatement.html#Flag1-42) da keltirilgan.
 
 ### Bog'liq bo'limlar
 

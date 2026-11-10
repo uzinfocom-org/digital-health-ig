@@ -48,7 +48,7 @@ POST [base]/Flag
 
 **Обновление** (например, чтобы завершить медицинский отвод): отправьте полный ресурс методом `PUT [base]/Flag/[id]`, установите `status` в `inactive` или заполните `period.end` и добавьте заголовок `If-Match`, содержащий прочитанную версию, чтобы не перезаписать параллельное изменение.
 
-Полный список поддерживаемых параметров поиска приведён в [CapabilityStatement](CapabilityStatement-DHPCapabilityStatement.html).
+Полный список поддерживаемых параметров поиска приведён в [CapabilityStatement](CapabilityStatement-DHPCapabilityStatement.html#Flag1-42).
 
 ### Связанные материалы
 
