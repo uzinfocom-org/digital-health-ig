@@ -182,11 +182,11 @@ UZ Core Practitioner описывает отдельного медицинск�
 
 #### Что возвращает Tibtoifa
 
-Одна запись ответа Tibtoifa для PINFL `30101901234567`:
+Одна запись ответа Tibtoifa для PINFL `90000000000001`:
 
 ```
 {
-  "pinfl": "30101901234567",
+  "pinfl": "90000000000001",
   "serial": "CA",
   "number": "123456",
   "category": { "uz": "Oliy toifa", "ru": "Высшая категория", "en": "Higher category" },
@@ -205,7 +205,7 @@ UZ Core Practitioner описывает отдельного медицинск�
 
 | Поле Tibtoifa | Пример | Элемент FHIR | Правило |
 |---|---|---|---|
-| `pinfl` | `30101901234567` | `Practitioner.identifier` (PINFL) | По нему находят медицинского работника; в квалификации не повторяется |
+| `pinfl` | `90000000000001` | `Practitioner.identifier` (PINFL) | По нему находят медицинского работника; в квалификации не повторяется |
 | `serial` + `number` | `CA` + `123456` | `qualification.identifier.value` | Серия и номер без разделителя: `CA123456` |
 | - | - | `qualification.identifier.system` | Всегда `https://dhp.uz/fhir/core/sid/pro/uz/specialist-certificate` |
 | - | - | `qualification.code.coding` | Всегда `http://terminology.hl7.org/CodeSystem/v2-0360#CER` "Certificate" |
@@ -248,7 +248,7 @@ UZ Core Practitioner описывает отдельного медицинск�
         ]
       },
       "system": "https://dhp.uz/fhir/core/sid/pid/uz/ni",
-      "value": "30101901234567"
+      "value": "90000000000001"
     }
   ],
   "qualification": [

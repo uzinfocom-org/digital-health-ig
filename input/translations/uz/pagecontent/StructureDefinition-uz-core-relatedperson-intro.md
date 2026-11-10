@@ -191,7 +191,7 @@ Ota-ona farzandiga nisbatan xuddi shunday qayd etiladi: har bir ota-ona-bola juf
         ]
       },
       "system": "https://dhp.uz/fhir/core/sid/pid/uz/ni",
-      "value": "40503855900021"
+      "value": "90000000000003"
     }
   ],
   "active": true,
@@ -224,7 +224,7 @@ Ota-ona farzandiga nisbatan xuddi shunday qayd etiladi: har bir ota-ona-bola juf
 Ota-ona `identifier` da o'zining PINFL ini olib yuradi - bu uning o'z [Bemor](StructureDefinition-uz-core-patient.html) yozuvini identifikatsiya qiluvchi PINFL ning aynan o'zi, - shuning uchun ota-onaning PINFL ini biladigan tizim u nomidan ish ko'rishi mumkin bo'lgan bolalarni bitta so'rov bilan topadi:
 
 ```
-GET [base]/RelatedPerson?identifier=https://dhp.uz/fhir/core/sid/pid/uz/ni|40503855900021
+GET [base]/RelatedPerson?identifier=https://dhp.uz/fhir/core/sid/pid/uz/ni|90000000000003
 ```
 
 `patient` bolani nomlaydi, shuning uchun bolaning yoshi ushbu resursdan emas, balki uning `Patient.birthDate` idan o'qiladi. RelatedPerson munosabat mavjudligi *faktini* qayd etadi; u o'zi kirish huquqini bermaydi. Ota-ona bola nomidan ish ko'ra oladimi - uning yozuvini ko'rish yoki uning nomidan rozilik berish - buni yozuvni saqlayotgan tizim munosabatga va amaldagi qoidalarga, jumladan bolaning yoshiga qarab hal qiladi.
