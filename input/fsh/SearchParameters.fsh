@@ -21,3 +21,23 @@ Usage: #definition
 * target = #Medication
 * multipleOr = true
 * chain = "identifier"
+
+Instance: uz-core-flag-code
+InstanceOf: SearchParameter
+Description: "Search for flags by what they are about"
+Usage: #definition
+* url = "https://dhp.uz/fhir/core/SearchParameter/uz-core-flag-code"
+* name = "UZFlagCode"
+* title = "Flag code"
+* status = #active
+* experimental = true
+* date = "2026-11-10"
+* publisher = "Uzinfocom"
+* jurisdiction = urn:iso:std:iso:3166#UZ "Uzbekistan"
+* description = "Search for Flag resources by what they are about (`code`), for example to find a patient's active medical deferrals from donation. Base FHIR R5 has no search parameter on this element."
+* code = #code
+* base = #Flag
+* type = #token
+* expression = "Flag.code"
+* processingMode = #normal
+* multipleOr = true

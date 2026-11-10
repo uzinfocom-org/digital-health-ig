@@ -13,6 +13,7 @@ GET [base]/Flag/[id]
 **Belgilarni qidirish**
 
 ```
+GET [base]/Flag?patient=Patient/[id]&status=active&code=donation-deferred
 GET [base]/Flag?patient=Patient/[id]&status=active
 GET [base]/Flag?patient=Patient/[id]&category=http://terminology.hl7.org/CodeSystem/flag-category%7Cclinical
 GET [base]/Flag?identifier=[system]%7C[value]
@@ -21,7 +22,7 @@ GET [base]/Flag?author=Practitioner/[id]
 GET [base]/Flag?date=ge2026-01-01
 ```
 
-`code` qidiruv parametri yo'q: bemorning tibbiy chetlatishlarini topish uchun bemorning faol belgilarini qidiring va `code` ni mijoz tomonida tekshiring.
+`code` - [UZ Core qidiruv parametri](SearchParameter-uz-core-flag-code.html): FHIR R5 da `Flag.code` uchun bunday parametr yo'q. Birinchi so'rov bemorning amaldagi tibbiy chetlatishlarini topadi.
 
 **Yaratish**
 

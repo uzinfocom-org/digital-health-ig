@@ -11,6 +11,7 @@ GET [base]/Flag/[id]
 **Search flags**
 
 ```
+GET [base]/Flag?patient=Patient/[id]&status=active&code=donation-deferred
 GET [base]/Flag?patient=Patient/[id]&status=active
 GET [base]/Flag?patient=Patient/[id]&category=http://terminology.hl7.org/CodeSystem/flag-category%7Cclinical
 GET [base]/Flag?identifier=[system]%7C[value]
@@ -19,7 +20,7 @@ GET [base]/Flag?author=Practitioner/[id]
 GET [base]/Flag?date=ge2026-01-01
 ```
 
-There is no `code` search parameter: to find a patient's medical deferrals, search the patient's active flags and check `code` on the client.
+`code` is a [UZ Core search parameter](SearchParameter-uz-core-flag-code.html): FHIR R5 has none for `Flag.code`. The first query finds a patient's active medical deferrals.
 
 **Create**
 

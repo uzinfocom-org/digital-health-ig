@@ -13,6 +13,7 @@ GET [base]/Flag/[id]
 **Поиск отметок**
 
 ```
+GET [base]/Flag?patient=Patient/[id]&status=active&code=donation-deferred
 GET [base]/Flag?patient=Patient/[id]&status=active
 GET [base]/Flag?patient=Patient/[id]&category=http://terminology.hl7.org/CodeSystem/flag-category%7Cclinical
 GET [base]/Flag?identifier=[system]%7C[value]
@@ -21,7 +22,7 @@ GET [base]/Flag?author=Practitioner/[id]
 GET [base]/Flag?date=ge2026-01-01
 ```
 
-Параметра поиска `code` нет: чтобы найти медицинские отводы пациента, выполните поиск активных отметок пациента и проверьте `code` на стороне клиента.
+`code` - [параметр поиска UZ Core](SearchParameter-uz-core-flag-code.html): в FHIR R5 такого параметра для `Flag.code` нет. Первый запрос находит действующие медицинские отводы пациента.
 
 **Создание**
 

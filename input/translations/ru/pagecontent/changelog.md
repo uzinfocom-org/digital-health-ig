@@ -2,6 +2,8 @@
 
 #### Добавлено
 
+[Flag code](SearchParameter-uz-core-flag-code.html) - новый параметр поиска `code`, который находит ресурсы [UZ Core Flag](StructureDefinition-uz-core-flag.html) по тому, о чём отметка, например действующие медицинские отводы пациента от донации. В базовом FHIR R5 такого параметра поиска нет.
+
 [MedicationKnowledge associated medication](SearchParameter-uz-core-medicationknowledge-associated-medication.html) - новый параметр поиска `associated-medication`, который находит записи [UZ Core MedicationKnowledge](StructureDefinition-uz-core-medicationknowledge.html) для препарата Medication, например утверждённые цены отпускаемого препарата. В базовом FHIR R5 такого параметра поиска нет. Используйте цепочку с `identifier`, чтобы искать по регистрационному номеру или GTIN препарата.
 
 [UZ Core ChargeItem](StructureDefinition-uz-core-chargeitem.html) фиксирует оплачиваемую позицию - услугу, товар или лекарство, предоставленные пациенту, - с её количеством и стоимостью и связывает её с событием, в котором она была предоставлена, например с [MedicationDispense](StructureDefinition-uz-core-medication-dispense.html), процедурой или лабораторным анализом. Идентификатор использует новую систему именования [идентификаторов ChargeItem](NamingSystem-uzb-charge-item-identifier.html), `status` привязан к набору [Статус ChargeItem](ValueSet-chargeitem-status-vs.html), а `code` - к набору [Код начисления](ValueSet-charge-item-code-vs.html), оба с переводами на узбекский и русский языки. На странице профиля есть вводное описание и раздел «Быстрый старт».
