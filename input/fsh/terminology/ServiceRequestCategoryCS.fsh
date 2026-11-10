@@ -1,7 +1,7 @@
 CodeSystem: ServiceRequestCategoryCS
 Id: service-request-category-cs
-Title: "Service Request Category Codes"
-Description: "CodeSystem for service request categories in Uzbekistan healthcare, with translations in English and Russian."
+Title: "ServiceRequest specialty category"
+Description: "Clinical specialty categories for ServiceRequest in Uzbekistan healthcare"
 
 * insert OriginalCodeSystemDraft(service-request-category-cs)
 

@@ -1,6 +1,6 @@
 CodeSystem: TaskStatusReasonCS
 Id: task-status-reason-cs
-Title: "Task Status Reason"
+Title: "Task status reason"
 Description: "Task status reason codes in Uzbekistan"
 * insert OriginalCodeSystemDraft(task-status-reason-cs)
 * #reason-0001-00001 "Tasdiqlovchi hujjat mavjud emas"

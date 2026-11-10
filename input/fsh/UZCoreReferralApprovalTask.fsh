@@ -33,7 +33,7 @@ Description: "Uzbekistan Core Task Referral Approval profile, used to track work
 * status from TaskStatusVS (required)
 
 * statusReason MS
-* statusReason  from TaskStatusReasonVS (extensible)
+* statusReason from TaskStatusReasonVS (extensible)
 
 * businessStatus MS
 * businessStatus ^short = "Business status of task"

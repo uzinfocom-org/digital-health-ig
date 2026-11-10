@@ -65,7 +65,7 @@ Description: "Uzbekistan national codes for business-level statuses of tasks in 
   * ^designation[+].language = #en
   * ^designation[=].value = "Overdue"
 
-  * #bstatus-0001-00001 "Qayta ishlash uchun qaytarildi"
+* #bstatus-0001-00001 "Qayta ishlash uchun qaytarildi"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Возвращено на доработку"
   * ^designation[+].language = #en

@@ -28,7 +28,7 @@ Description: "Uzbekistan Core ServiceRequest profile, used to represent a reques
 * category[dhpCategory] from ServiceRequestCategoriesVS (required)
 * category[dhpCategory] ^short = "National category of the service being requested"
 * category[referralPurpose] from ServiceRequestReferralPurposeVS (required)
-* category[referralPurpose] ^short = "Level of service request."
+* category[referralPurpose] ^short = "Purpose of the referral"
 * priority MS
 * priority from RequestPriorityVS (required)
 * priority ^short = "Indicates how quickly the ServiceRequest should be addressed with respect to other requests"

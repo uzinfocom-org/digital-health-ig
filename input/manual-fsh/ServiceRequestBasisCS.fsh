@@ -1,7 +1,7 @@
 CodeSystem: ServiceRequestBasisCS
 Id: service-request-basis-cs
-Title: "Service Request Basis"
-Description: "Service request basis codes in Uzbekistan"
+Title: "ServiceRequest basis"
+Description: "ServiceRequest basis codes in Uzbekistan"
 * insert OriginalCodeSystemDraft(service-request-basis-cs)
 * #basis-0001-00001 "Buyrakning yagona toshi (asoratsiz kechishi)"
   * ^designation[0].language = #ru

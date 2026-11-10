@@ -1,7 +1,7 @@
 CodeSystem: ObservationEpicrisCodesCS
 Id: observation-epicris-codes-cs
-Title: "Observation Epicris Codes"
-Description: "Observation epicris section codes in Uzbekistan"
+Title: "Observation epicrisis section"
+Description: "Observation epicrisis section codes in Uzbekistan"
 * insert OriginalCodeSystemDraft(observation-epicris-codes-cs)
 * #epicris-0001-00001 "Kasallik anamnezi (Anamnesis morbi)"
   * ^designation[0].language = #ru

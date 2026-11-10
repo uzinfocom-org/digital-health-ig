@@ -1,8 +1,8 @@
 Instance: service-request-category-to-snomed-cm
 InstanceOf: ConceptMap
 Usage: #definition
-Title: "Service Request Category Codes To SNOMED CT Specialty Codes"
-Description: "ConceptMap for mapping local Service Request Category codes to SNOMED CT specialty codes"
+Title: "ServiceRequest specialty category to SNOMED CT"
+Description: "Maps local ServiceRequest specialty category codes to SNOMED CT specialty codes"
 * name = "ServiceRequestCategoryToSNOMEDCM"
 * url = "https://terminology.dhp.uz/fhir/core/ConceptMap/service-request-category-to-snomed-cm"
 * status = #draft
@@ -11,6 +11,7 @@ Description: "ConceptMap for mapping local Service Request Category codes to SNO
 
 * group.source = Canonical(ServiceRequestCategoryCS)
 * group.target = $sct
+* sourceScopeCanonical = Canonical(ServiceRequestSpecialtyCategoryVS)
 * targetScopeCanonical = $sct-vs
 
 * group[=].element[+].code = #serv-0001-00001

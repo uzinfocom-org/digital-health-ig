@@ -14,12 +14,13 @@ Profil majburiy elementlar qo'shmaydi. Bazaviy resurs `status`, `intent` va `sub
 
 - buyurtma yoki yo'llanmaning biznes identifikatori (`identifier`) va birga yaratilgan so'rovlarni, masalan bitta namunadagi barcha tahlillarni birlashtiruvchi umumiy identifikator (`requisition`);
 - so'rov holati (draft / active / on-hold / revoked / completed / entered-in-error / unknown) va uning maqsadi (proposal / plan / order va uning turlari);
-- xizmat turi (`category`), ko'pi bilan bitta milliy toifa bilan, masalan laboratoriya bo'limi yoki kasalxonaga yotqizish;
+- xizmat turi (`category`), ko'pi bilan bitta milliy toifa bilan, masalan laboratoriya bo'limi yoki kasalxonaga yotqizish, va yo'llanma maqsadlari (konsultatsiya / diagnostika / davolash / tashxisni aniqlashtirish / dispanser hisobiga olish / tug'ruq / boshqa);
 - shoshilinchlik (`priority`: routine / urgent / asap / stat) va xizmatni bajarmaslik kerakligi belgisi (`doNotPerform`);
 - so'ralgan xizmat (`code`);
 - so'rov kim yoki nima uchun ekanligi (`subject`: [bemor](StructureDefinition-uz-core-patient.html) yoki [joy](StructureDefinition-uz-core-location.html)) va u yaratilgan [Encounter](StructureDefinition-uz-core-encounter.html);
 - xizmat qachon ko'rsatilishi kerakligi (`occurrence[x]`) va so'rov qachon yozilgani (`authoredOn`);
-- uni kim yozgani (`requester`: tibbiyot xodimi, tibbiyot xodimining lavozimi, tashkilot, bemor yoki qarindosh);
+- uni kim yozgani (`requester`: tibbiyot xodimi, tibbiyot xodimining lavozimi, tashkilot, bemor yoki qarindosh) va uni bajarish so'ralgan [Organization](StructureDefinition-uz-core-organization.html) (`performer`);
+- buyurtma tafsilotlari (`orderDetail.parameter.value[x]`), masalan imtiyozli tashxis bo'yicha davolanish asosi;
 - xizmat nima uchun kerakligi (`reason`): ICD-10 yoki SNOMED CT kodi yoki [Condition](StructureDefinition-uz-core-condition.html) ga havola;
 - xizmat qanday to'lanishi ([to'lov turi](StructureDefinition-payment-type.html) kengaytmasi: bepul / pullik / sug'urta / davlat tarifi / boshqalar) va sug'urta qoplamasi (`insurance`);
 - so'rovni asoslovchi boshqa ma'lumotlar (`supportingInfo`) va tekshiriladigan [namuna](StructureDefinition-uz-core-specimen.html) (`specimen`);

@@ -12,12 +12,13 @@ This profile adds no mandatory elements. The base resource requires a `status`, 
 
 - the business identifier of the order or referral (`identifier`), and a shared identifier that groups requests made together, such as all tests on one specimen (`requisition`);
 - the status of the request (draft / active / on-hold / revoked / completed / entered-in-error / unknown) and its intent (proposal / plan / order and its subtypes);
-- the kind of service (`category`), with at most one national category such as a laboratory section or hospital admission;
+- the kind of service (`category`), with at most one national category such as a laboratory section or hospital admission, and the purposes of a referral (consultation / diagnostics / treatment / diagnosis clarification / dispensary registration / delivery / other);
 - the urgency (`priority`: routine / urgent / asap / stat) and whether the service must not be done (`doNotPerform`);
 - the service requested (`code`);
 - the [Patient](StructureDefinition-uz-core-patient.html) or [Location](StructureDefinition-uz-core-location.html) the request is for (`subject`) and the [Encounter](StructureDefinition-uz-core-encounter.html) in which it was made;
 - when the service should happen (`occurrence[x]`) and when the request was issued (`authoredOn`);
-- who issued it (`requester`: a practitioner, practitioner role, organization, patient or related person);
+- who issued it (`requester`: a practitioner, practitioner role, organization, patient or related person) and the [Organization](StructureDefinition-uz-core-organization.html) asked to perform it (`performer`);
+- details of the order (`orderDetail.parameter.value[x]`), such as the basis for treatment under a preferential diagnosis;
 - why the service is needed (`reason`), coded in ICD-10 or SNOMED CT or as a reference to a [Condition](StructureDefinition-uz-core-condition.html);
 - how the service is paid for (the [payment type](StructureDefinition-payment-type.html) extension: free / paid / insurance / state tariff / other) and the insurance coverage (`insurance`);
 - other information that supports the request (`supportingInfo`) and the [Specimen](StructureDefinition-uz-core-specimen.html) to be analysed (`specimen`);

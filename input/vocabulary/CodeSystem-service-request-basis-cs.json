@@ -4,8 +4,8 @@
   "content": "complete",
   "name": "ServiceRequestBasisCS",
   "id": "service-request-basis-cs",
-  "title": "Service Request Basis",
-  "description": "Service request basis codes in Uzbekistan",
+  "title": "ServiceRequest basis",
+  "description": "ServiceRequest basis codes in Uzbekistan",
   "url": "https://terminology.dhp.uz/fhir/core/CodeSystem/service-request-basis-cs",
   "concept": [
     {
