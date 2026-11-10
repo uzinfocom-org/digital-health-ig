@@ -1,0 +1,5 @@
+CODE,UZ,RU,EN,http://hl7.org/fhir/inventoryreport-status,Definition (EN)
+draft,Qoralama,Черновик,Draft,,"The existence of the report is registered, but it is still without content or only some preliminary content."
+requested,So‘ralgan,Запрошен,Requested,,The inventory report has been requested but there is no data available.
+active,Faol,Активен,Active,,This report is submitted as current.
+entered-in-error,Xato kiritilgan,Введён ошибочно,Entered in Error,,"The report has been withdrawn following a previous final release. This electronic record should never have existed, though it is possible that real-world decisions were based on it."

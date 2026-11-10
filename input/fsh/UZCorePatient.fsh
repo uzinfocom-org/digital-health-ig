@@ -181,7 +181,7 @@ Description: "Example of a patient named Salim"
 Usage: #example
 * language = #ru
 * identifier[nationalId]
-  * value = "30211975910033"
+  * value = "12345678912345"
 * identifier[passportLocal]
   * value = "AC1234567"
 * identifier[passportInternational]
