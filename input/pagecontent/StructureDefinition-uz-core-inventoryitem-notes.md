@@ -48,7 +48,7 @@ If-Match: W/"3"   # the ETag from your last read; 412 if it changed since
 }
 ```
 
-The inventory status `system` is `https://terminology.dhp.uz/fhir/core/CodeSystem/inventoryitem-inventory-status-cs`. See the [CapabilityStatement](CapabilityStatement-DHPCapabilityStatement.html) for the full list of supported search parameters.
+The inventory status `system` is `https://terminology.dhp.uz/fhir/core/CodeSystem/inventoryitem-inventory-status-cs`. See the [CapabilityStatement](CapabilityStatement-DHPCapabilityStatement.html#InventoryItem1-60) for the full list of supported search parameters.
 
 ### Related
 

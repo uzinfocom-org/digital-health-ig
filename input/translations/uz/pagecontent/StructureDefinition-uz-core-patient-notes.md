@@ -49,7 +49,7 @@ GET [base]/Patient?organization=Organization/[id]
 GET [base]/Patient?address-city=22070013
 ```
 
-Qo'llab-quvvatlanadigan qidiruv parametrlarining to'liq ro'yxati uchun [CapabilityStatement](CapabilityStatement-DHPCapabilityStatement.html) hujjatiga, barcha bemor identifikatori tizimi URI manzillari uchun esa [Identifikator tizimlari](identifiers.html) bo'limiga qarang.
+Qo'llab-quvvatlanadigan qidiruv parametrlarining to'liq ro'yxati uchun [CapabilityStatement](CapabilityStatement-DHPCapabilityStatement.html#Patient1-1) hujjatiga, barcha bemor identifikatori tizimi URI manzillari uchun esa [Identifikator tizimlari](identifiers.html) bo'limiga qarang.
 
 ### Boshqaruvchi tashkilotga biriktirish
 

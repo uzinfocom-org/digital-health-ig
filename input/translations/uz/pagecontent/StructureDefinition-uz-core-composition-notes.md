@@ -61,7 +61,7 @@ If-Match: W/"3"   # the ETag from your last read; 412 if it changed since
 
 Har bir o'zgarishda `date` ni yangilang. Yakuniy hujjatlarni yig'ish va imzolash [DHP Integrations IG](https://dhp.uz/fhir/integrations/en/) da tavsiflangan.
 
-Qo'llab-quvvatlanadigan qidiruv parametrlarining to'liq ro'yxati [CapabilityStatement](CapabilityStatement-DHPCapabilityStatement.html) da keltirilgan.
+Qo'llab-quvvatlanadigan qidiruv parametrlarining to'liq ro'yxati [CapabilityStatement](CapabilityStatement-DHPCapabilityStatement.html#Composition1-41) da keltirilgan.
 
 ### Bog'liq bo'limlar
 

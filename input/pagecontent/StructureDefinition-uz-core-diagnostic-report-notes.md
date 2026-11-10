@@ -54,7 +54,7 @@ If-Match: W/"3"   # the ETag from your last read; 412 if it changed since
 }
 ```
 
-See the [CapabilityStatement](CapabilityStatement-DHPCapabilityStatement.html) for the full list of supported search parameters.
+See the [CapabilityStatement](CapabilityStatement-DHPCapabilityStatement.html#DiagnosticReport1-6) for the full list of supported search parameters.
 
 ### Related
 

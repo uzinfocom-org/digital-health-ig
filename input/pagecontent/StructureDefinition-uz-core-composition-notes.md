@@ -59,7 +59,7 @@ If-Match: W/"3"   # the ETag from your last read; 412 if it changed since
 
 Update `date` with every change. Assembling and signing finalised documents is specified in the [DHP Integrations IG](https://dhp.uz/fhir/integrations/en/).
 
-See the [CapabilityStatement](CapabilityStatement-DHPCapabilityStatement.html) for the full list of supported search parameters.
+See the [CapabilityStatement](CapabilityStatement-DHPCapabilityStatement.html#Composition1-41) for the full list of supported search parameters.
 
 ### Related
 

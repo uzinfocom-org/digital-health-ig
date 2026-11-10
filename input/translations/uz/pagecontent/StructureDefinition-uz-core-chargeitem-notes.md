@@ -44,7 +44,7 @@ PUT [base]/ChargeItem/[id]
 If-Match: W/"3"   # the ETag from your last read; 412 if it changed since
 ```
 
-Qo'llab-quvvatlanadigan qidiruv parametrlari uchun [CapabilityStatement](CapabilityStatement-DHPCapabilityStatement.html) ga qarang.
+ChargeItem hali [CapabilityStatement](CapabilityStatement-DHPCapabilityStatement.html) da ko'rsatilmagan; yuqoridagi so'rovlar FHIR R5 ning standart qidiruv parametrlaridan foydalanadi.
 
 ### Aloqador
 

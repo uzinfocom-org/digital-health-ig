@@ -44,7 +44,7 @@ PUT [base]/AllergyIntolerance/[id]
 If-Match: W/"3"   # ETag, полученный при последнем чтении; 412, если ресурс с тех пор изменился
 ```
 
-Все поддерживаемые параметры поиска приведены в [CapabilityStatement](CapabilityStatement-DHPCapabilityStatement.html).
+Полный список поддерживаемых параметров поиска приведён в [CapabilityStatement](CapabilityStatement-DHPCapabilityStatement.html#AllergyIntolerance1-40).
 
 ### Связанные материалы
 

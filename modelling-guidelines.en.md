@@ -581,7 +581,8 @@ Models to follow: Organization, Location, Medication. A new profile without thes
 
 - `### Quick Start` with the standard paragraph about JWT, `[base]` and `%7C`;
 - read by id, search (first by identifier and code, then other useful queries), create, update with `If-Match`;
-- a link to the CapabilityStatement and `### Related` with links to workflows and general pages of the guide.
+- a closing line that links to the resource's section of the CapabilityStatement: `See the [CapabilityStatement](CapabilityStatement-DHPCapabilityStatement.html#<Type>1-<N>) for the full list of supported search parameters.` `<N>` is the resource's position in `rest.resource` of `input/vocabulary/CapabilityStatement-DHPCapabilityStatement.json`, counting from 1 (Patient is `#Patient1-1`); check the anchor on the built page, as it shifts when the server reorders resources. Do not list the parameters in prose. If the resource is not in the CapabilityStatement yet, write `<Type> is not yet listed in the [CapabilityStatement](CapabilityStatement-DHPCapabilityStatement.html); the searches above use standard FHIR R5 search parameters.` RU and UZ use the same sentence as the other pages (`Полный список поддерживаемых параметров поиска приведён в [CapabilityStatement](…).`, `Qo'llab-quvvatlanadigan qidiruv parametrlarining to'liq ro'yxati [CapabilityStatement](…) da keltirilgan.`);
+- `### Related` with links to workflows and general pages of the guide.
 
 **Rules:**
 

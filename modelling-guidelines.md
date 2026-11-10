@@ -581,7 +581,8 @@ Description: "Example instance of a headache condition documented during a patie
 
 - `### Quick Start` со стандартным абзацем про JWT, `[base]` и `%7C`;
 - чтение по id, поиск (сначала по идентификатору и коду, затем прочие полезные запросы), создание, обновление с `If-Match`;
-- ссылка на CapabilityStatement и `### Related` со ссылками на рабочие процессы и общие страницы руководства.
+- заключительная строка со ссылкой на раздел ресурса в CapabilityStatement: `See the [CapabilityStatement](CapabilityStatement-DHPCapabilityStatement.html#<Type>1-<N>) for the full list of supported search parameters.` `<N>` - позиция ресурса в `rest.resource` файла `input/vocabulary/CapabilityStatement-DHPCapabilityStatement.json`, считая с 1 (Patient - `#Patient1-1`); проверьте якорь на собранной странице, он сдвигается, когда сервер меняет порядок ресурсов. Не перечисляйте параметры в тексте. Если ресурса ещё нет в CapabilityStatement, пишите `<Type> is not yet listed in the [CapabilityStatement](CapabilityStatement-DHPCapabilityStatement.html); the searches above use standard FHIR R5 search parameters.` В RU и UZ используется то же предложение, что и на других страницах (`Полный список поддерживаемых параметров поиска приведён в [CapabilityStatement](…).`, `Qo'llab-quvvatlanadigan qidiruv parametrlarining to'liq ro'yxati [CapabilityStatement](…) da keltirilgan.`);
+- `### Related` со ссылками на рабочие процессы и общие страницы руководства.
 
 **Правила:**
 
