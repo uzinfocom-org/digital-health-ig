@@ -179,7 +179,7 @@ Description: "The mother of a child, recorded so that a system can recognise her
 Usage: #example
 * language = #uz
 * identifier[nationalId]
-  * value = "40503855900021"
+  * value = "90000000000003"
 * active = true
 * patient = Reference(example-jasur)
 * relationship[0].coding[0] = $v3-RoleCode#MTH "Ona"
