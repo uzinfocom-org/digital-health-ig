@@ -46,7 +46,7 @@ POST [base]/Flag
 
 **Update** (for example, to end a medical deferral): send the complete resource with `PUT [base]/Flag/[id]`, set `status` to `inactive` or fill in `period.end`, and add an `If-Match` header carrying the version you read, so a concurrent change is not overwritten.
 
-The [CapabilityStatement](CapabilityStatement-DHPCapabilityStatement.html) lists the supported search parameters, including `subject`, `_lastUpdated` and `_profile`.
+See the [CapabilityStatement](CapabilityStatement-DHPCapabilityStatement.html) for the full list of supported search parameters.
 
 ### Related
 
