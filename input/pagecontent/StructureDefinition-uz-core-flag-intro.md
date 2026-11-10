@@ -17,8 +17,97 @@ A status, a donation eligibility code and a patient reference are mandatory in b
 
 ### Building the JSON, step by step
 
-1. Start with the [minimal flag JSON](Flag-example-donation-minimal-flag.json.html): it contains the profile, language, status, decision and patient reference.
-2. Use the [eligible donor JSON](Flag-example-donation-eligible-flag.json.html) to add an administrative category, encounter, author and validity period.
-3. Use the [medical deferral JSON](Flag-example-donation-deferred-flag.json.html) for a clinical deferral. Its status is still active while the deferral applies.
+The examples below go from a minimal donation decision to an eligibility flag with its context and a medical deferral. Each example names this profile in `meta.profile`.
 
-These JSON representations are generated from the FSH examples. Use the supplied code system with the decision code; HL7 category codes retain their original system. The subject references UZ Core Patient. See [Quick Start](#quick-start).
+#### The smallest Flag you should send
+
+A minimal Flag needs its status, the donation eligibility decision and the patient. The decision code comes from the local donor eligibility code system, so its display is in Uzbek and the resource sets `language` to `uz`:
+
+```json
+{
+  "resourceType": "Flag",
+  "meta": {
+    "profile": ["https://dhp.uz/fhir/core/StructureDefinition/uz-core-flag"]
+  },
+  "language": "uz",
+  "status": "active",
+  "code": {
+    "coding": [{
+      "system": "https://terminology.dhp.uz/fhir/core/CodeSystem/donor-eligibility-cs",
+      "code": "donation-eligible",
+      "display": "Donorlikka ruxsat berilgan"
+    }]
+  },
+  "subject": { "reference": "Patient/example-salim" }
+}
+```
+
+#### An eligibility decision with its context
+
+Add the HL7 flag category, the validity period, the encounter in which the decision was made and its author. HL7 category codes keep their original system:
+
+```json
+{
+  "resourceType": "Flag",
+  "meta": {
+    "profile": ["https://dhp.uz/fhir/core/StructureDefinition/uz-core-flag"]
+  },
+  "language": "uz",
+  "status": "active",
+  "category": [{
+    "coding": [{
+      "system": "http://terminology.hl7.org/CodeSystem/flag-category",
+      "code": "admin"
+    }]
+  }],
+  "code": {
+    "coding": [{
+      "system": "https://terminology.dhp.uz/fhir/core/CodeSystem/donor-eligibility-cs",
+      "code": "donation-eligible",
+      "display": "Donorlikka ruxsat berilgan"
+    }]
+  },
+  "subject": { "reference": "Patient/example-salim" },
+  "period": {
+    "start": "2026-11-09T09:00:00+05:00",
+    "end": "2026-11-09T18:00:00+05:00"
+  },
+  "encounter": { "reference": "Encounter/example-encounter" },
+  "author": { "reference": "Practitioner/example-practitioner" }
+}
+```
+
+#### A medical deferral
+
+A deferral uses the `donation-deferred` code. The flag stays `active` while the deferral applies: the status describes the flag, not permission to donate.
+
+```json
+{
+  "resourceType": "Flag",
+  "meta": {
+    "profile": ["https://dhp.uz/fhir/core/StructureDefinition/uz-core-flag"]
+  },
+  "language": "uz",
+  "status": "active",
+  "category": [{
+    "coding": [{
+      "system": "http://terminology.hl7.org/CodeSystem/flag-category",
+      "code": "clinical"
+    }]
+  }],
+  "code": {
+    "coding": [{
+      "system": "https://terminology.dhp.uz/fhir/core/CodeSystem/donor-eligibility-cs",
+      "code": "donation-deferred",
+      "display": "Tibbiy sabablarga ko‘ra donorlikdan chetlatilgan"
+    }]
+  },
+  "subject": { "reference": "Patient/example-salim" },
+  "period": { "start": "2026-11-09T09:00:00+05:00" },
+  "author": { "reference": "Practitioner/example-practitioner" }
+}
+```
+
+The complete FSH examples are the [minimal flag](Flag-example-donation-minimal-flag.html), the [eligible donor flag](Flag-example-donation-eligible-flag.html) and the [medical deferral flag](Flag-example-donation-deferred-flag.html).
+
+For example API calls, see the [Quick Start](#quick-start) at the bottom of this page.

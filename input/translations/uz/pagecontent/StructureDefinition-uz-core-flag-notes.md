@@ -1,8 +1,8 @@
-> **Mashina tarjimasi, inson tekshiruvi talab etiladi.** Tafovut bo'lsa, inglizcha matn ustuvor.
+> **Mashina tarjimasi, inson tomonidan tekshirilishi zarur.** Ushbu sahifa ingliz tilidan sun'iy intellekt yordamida avtomatik tarjima qilingan va hali muharrir tomonidan tekshirilmagan. Har qanday nomuvofiqlikda asl inglizcha versiya ustuvor hisoblanadi.
 
 ### Tez boshlash {#quick-start}
 
-So'rovlar JWT talab qiladi: [Xavfsizlik va autentifikatsiya](api-access.html#security). `[base]` — [FHIR server asosiy URL manzili](api-access.html#endpoints); tizim va kodni ajratuvchi `|` belgisi `%7C` sifatida kodlanadi.
+Ushbu profil uchun keng tarqalgan API amallari. So'rovlar JWT kirish tokenini talab qiladi - [Xavfsizlik va autentifikatsiya](api-access.html#security) bo'limiga qarang. `[base]` - [FHIR-serverning bazaviy URL manzili](api-access.html#endpoints); `|` kod tizimini qiymatdan ajratadi va `%7C` ko'rinishida URL-kodlanishi kerak.
 
 Flag hali [DHP CapabilityStatement](CapabilityStatement-DHPCapabilityStatement.html) da e'lon qilinmagan. Avval server qo'llab-quvvatlashini tekshiring. Bu yerda qidiruvni qo'llab-quvvatlash tasdiqlanmaydi.
 
@@ -29,7 +29,7 @@ If-Match: W/"[versionId]"
 
 So'rov tanasi uchun [ruxsat JSON](Flag-example-donation-eligible-flag.json.html) yoki [chetlatish JSON](Flag-example-donation-deferred-flag.json.html) dan foydalaning. Namuna havolalarini haqiqiy id lar bilan almashtiring. Yangilashda serverdagi joriy versiyani `If-Match` da yuboring.
 
-### Tegishli materiallar
+### Bog'liq bo'limlar
 
 - [Patient](StructureDefinition-uz-core-patient.html)
 - [Encounter](StructureDefinition-uz-core-encounter.html)
