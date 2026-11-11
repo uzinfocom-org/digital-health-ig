@@ -47,6 +47,8 @@ Kod tizimlari va qiymatlar to'plamlarining sarlavhalari va tavsiflari endi [mode
 
 [UZ Core Organization](StructureDefinition-uz-core-organization.html) va [UZ Core RelatedPerson](StructureDefinition-uz-core-relatedperson.html) endi identifikator turining display qiymatini qat'iy belgilamaydi: `mohId` va `argosId` bo'laklari faqat tizim va `XX` kodini, `healthCard` esa faqat `HC` kodini belgilaydi. Belgilangan "Organization Identifier" va "Health card number" display qiymatlari HL7 terminologiyasidagi "Organization identifier" va "Health Card Number" bilan mos kelmagani sababli profilga mos har bir namuna terminologiya ogohlantirishini olardi. Endi identifikator turi ushbu display qiymatlaridan istalgani bilan yoki usiz profilga mos keladi.
 
+[UZ Core Patient](StructureDefinition-uz-core-patient.html) endi bir nechta tug'ilganlik haqidagi guvohnomaga ruxsat beradi (`birthCertificate` endi 0..1 o'rniga 0..*) va uning `use` qiymatini qat'iy belgilamaydi, shuning uchun bemorning almashtirilgan guvohnomasini `use = old` bilan, amaldagisini esa `use = official` bilan birga yuborish mumkin.
+
 UZ Core profillaridagi Device ga barcha havolalar endi [UZ Core Device](StructureDefinition-uz-core-device.html) ga yo'naltirilgan: Observation, Procedure, Condition, AdverseEvent, Composition, QuestionnaireResponse, Group, MedicationAdministration, MedicationDispense, InventoryItem, SupplyRequest va SupplyDelivery.
 
 #### Buzuvchi o'zgarishlar
