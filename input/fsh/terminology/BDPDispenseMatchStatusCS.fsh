@@ -18,9 +18,9 @@ Description: "BiologicallyDerivedProductDispense match status supplement with tr
 
 * #unmatched
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Проверка индивидуальной совместимости не проводилась"
+  * ^designation[=].value = "Не подобран"
   * ^designation[+].language = #uz
-  * ^designation[=].value = "Individual moslik tekshiruvi o‘tkazilmagan"
+  * ^designation[=].value = "Moslashtirilmagan"
 
 * #least-incompatible
   * ^designation[0].language = #ru

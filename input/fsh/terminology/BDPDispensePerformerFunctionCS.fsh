@@ -6,7 +6,7 @@ Description: "BiologicallyDerivedProductDispense performer function supplement w
 
 * #group-and-type
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Определение группы крови ABO и RhD-принадлежности"
+  * ^designation[=].value = "Определение группы крови ABO и резус-принадлежности"
   * ^designation[+].language = #uz
   * ^designation[=].value = "ABO qon guruhi va RhD turini aniqlash"
 
@@ -30,9 +30,9 @@ Description: "BiologicallyDerivedProductDispense performer function supplement w
 
 * #release
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Разрешение на выдачу для клинического применения"
+  * ^designation[=].value = "Выдача"
   * ^designation[+].language = #uz
-  * ^designation[=].value = "Klinik qo‘llash uchun berishga ruxsat berish"
+  * ^designation[=].value = "Berish"
 
 * #transport
   * ^designation[0].language = #ru
@@ -42,6 +42,6 @@ Description: "BiologicallyDerivedProductDispense performer function supplement w
 
 * #receipt
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Получение для клинического применения"
+  * ^designation[=].value = "Получение"
   * ^designation[+].language = #uz
-  * ^designation[=].value = "Klinik qo‘llash uchun qabul qilish"
+  * ^designation[=].value = "Qabul qilish"

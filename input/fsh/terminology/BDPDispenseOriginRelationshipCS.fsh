@@ -12,15 +12,15 @@ Description: "BiologicallyDerivedProductDispense origin relationship supplement 
 
 * #related
   * ^designation[0].language = #ru
-  * ^designation[=].value = "От кровного родственника"
+  * ^designation[=].value = "Родственный"
   * ^designation[+].language = #uz
-  * ^designation[=].value = "Qon-qarindosh donordan"
+  * ^designation[=].value = "Qarindosh"
 
 * #directed
   * ^designation[0].language = #ru
-  * ^designation[=].value = "От донора, специально подобранного для реципиента"
+  * ^designation[=].value = "Целевой"
   * ^designation[+].language = #uz
-  * ^designation[=].value = "Muayyan retsipiyent uchun maxsus tanlangan donordan"
+  * ^designation[=].value = "Maqsadli"
 
 * #allogeneic
   * ^designation[0].language = #ru
