@@ -165,7 +165,31 @@ Usage: #example
   * lotNumber = "LOT20261215"
   * expirationDate = "2028-12-28"
 
+Instance: example-inn-medication
+InstanceOf: UZCoreMedication
+Title: "Example UZ Core Medication - Amoxicillin prescribed by INN"
+Description: "Example of a medicine prescribed by its international non-proprietary name (INN): it has no registry product yet, so it carries no identifier"
+Usage: #example
+* language = #en
+* code = inn-medication-name-cs#000439 "amoxicillin"
+* status = #active
+* doseForm = medication-doseform-cs#TAB101 "tablets"
+* ingredient
+  * item.concept = inn-medication-name-cs#000439 "amoxicillin"
+  * isActive = true
+  * strengthRatio
+    * numerator
+      * value = 500
+      * unit = "mg"
+      * system = $ucum
+      * code = #mg
+    * denominator
+      * value = 1
+      * unit = "piece"
+      * system = $medication-total-volume-local-units
+      * code = #piece
+
 Invariant: uzcore-med-1
-Description: "A Medication SHALL have an identifier or a code. A product from the national registry carries its registry identifiers; a medicine prescribed by its international non-proprietary name (INN) carries only the INN or ATC code."
-Expression: "identifier.exists() or code.exists()"
+Description: "A Medication SHALL have an identifier with a system and a value, or a code. A product from the national registry carries its registry identifiers; a medicine prescribed by its international non-proprietary name (INN) carries only the INN or ATC code."
+Expression: "identifier.where(system.exists() and value.exists()).exists() or code.exists()"
 Severity: #error
