@@ -2527,7 +2527,7 @@ Description: "Pharmaceutical dose forms (e.g., tablet, capsule, solution)."
   * ^designation[0].language = #ru
   * ^designation[=].value = "шампунь лекарственный"
   * ^designation[+].language = #en
-  * ^designation[=].value = "shampoo"
+  * ^designation[=].value = "medicated shampoo"
 * #LOT101 "losyon"
   * ^designation[0].language = #ru
   * ^designation[=].value = "лосьон"
@@ -2537,7 +2537,7 @@ Description: "Pharmaceutical dose forms (e.g., tablet, capsule, solution)."
   * ^designation[0].language = #ru
   * ^designation[=].value = "желе лекарственное"
   * ^designation[+].language = #en
-  * ^designation[=].value = "jelly"
+  * ^designation[=].value = "medicated jelly"
 * #KIT101 "to'plam"
   * ^designation[0].language = #ru
   * ^designation[=].value = "набор"

@@ -12,7 +12,7 @@ Every profile page now has a narrative intro and a Quick Start. New ones were ad
 
 [Flag code](SearchParameter-uz-core-flag-code.html) is a new search parameter, `code`, that finds [UZ Core Flag](StructureDefinition-uz-core-flag.html) resources by what they are about - for example, a patient's active medical deferrals from blood donation. Base FHIR R5 has no search parameter for this.
 
-[Medication dose form](CodeSystem-medication-doseform-cs.html) adds `CTP101` poultice, `DRS101` medicated dressing, `HRB101` herbal substance, `JEL101` jelly, `KIT101` kit, `LOT101` lotion, `SHA101` medicated shampoo, `SUB101` active substance and `TEA101` herbal tea, with Uzbek, Russian and English names, for DMED e-prescription and Pharmaceutical Committee drug registry dose forms that had no code.
+[Medication dose form](CodeSystem-medication-doseform-cs.html) adds `CTP101` poultice, `DRS101` medicated dressing, `HRB101` herbal substance, `JEL101` medicated jelly, `KIT101` kit, `LOT101` lotion, `SHA101` medicated shampoo, `SUB101` active substance and `TEA101` herbal tea, with Uzbek, Russian and English names, for DMED e-prescription and Pharmaceutical Committee drug registry dose forms that had no code.
 
 [MedicationKnowledge associated medication](SearchParameter-uz-core-medicationknowledge-associated-medication.html) is a new search parameter, `associated-medication`, that finds the [UZ Core MedicationKnowledge](StructureDefinition-uz-core-medicationknowledge.html) entries for a Medication - for example, the approved prices of a dispensed product. Base FHIR R5 has no search parameter for this. Chain it on `identifier` to search by the product's registration number or GTIN.
 
