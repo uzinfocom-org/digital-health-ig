@@ -33,8 +33,6 @@ Endi har bir profil sahifasida kirish qismi va Tez boshlash bo'limi bor. Ular [U
 
 #### O'zgartirildi
 
-BiologicallyDerivedProductDispense terminologiyasida moslashtirilmagan mahsulotlar, kelib chiqish munosabatlari va ijrochi vazifalari uchun ruscha va o'zbekcha qisqa kod nomlari qo'llaniladi.
-
 BloodProductInventoryItem CSV papkasi nomining oxiridagi yangi qator belgisi olib tashlandi, shunda repozitoriyni Windows tizimida klonlash mumkin.
 
 [FHIR turlari supplementi](CodeSystem-fhir-types-cs.html) har bir resurs turiga nomi o'rniga uning ta'rifi tarjimasini berardi. Endi har bir turning o'zbekcha va ruscha nomi bor, masalan `Patient` uchun "Bemor" va "Пациент", ular `preferredForLanguage` bilan belgilangan, shuning uchun `displayLanguage` bilan `$lookup` nomni qaytaradi. Tarjima qilingan ta'riflar SNOMED CT `900000000000550004` Definition use bilan belgilashlar sifatida qoladi.
