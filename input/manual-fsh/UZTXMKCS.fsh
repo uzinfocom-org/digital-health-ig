@@ -28,7 +28,7 @@ Description: "National classification of medical services of Uzbekistan, approve
 
 * ^property[+].code = #notSelectable
 * ^property[=].uri = "http://hl7.org/fhir/concept-properties#notSelectable"
-* ^property[=].description = "Grouping concept (TXMK class or group), not a billable/orderable service"
+* ^property[=].description = "Grouping concept (TXMK class), not a billable/orderable service"
 * ^property[=].type = #boolean
 
 // Filters supported for ValueSet selection
@@ -38,11 +38,11 @@ Description: "National classification of medical services of Uzbekistan, approve
 * ^filter[=].operator[+] = #in
 * ^filter[=].value = "A TXMK group code, e.g. B02"
 * ^filter[+].code = #notSelectable
-* ^filter[=].description = "Select or exclude the TXMK class and group concepts"
+* ^filter[=].description = "Select or exclude the TXMK class concepts"
 * ^filter[=].operator[0] = #=
 * ^filter[=].value = "true or false"
 
-// ---- TXMK classes and groups (grouping concepts, not selectable) ----
+// ---- TXMK classes (grouping concepts, not selectable) and groups (service categories) ----
 // They exist so that service-class / service-group values (type = code) resolve to codes in this CodeSystem.
 // Group names and translations are taken from the TXMK category catalogue.
 // TODO: replace the placeholder class displays with the official TXMK class names (uz/ru/en).
@@ -65,8 +65,6 @@ Description: "National classification of medical services of Uzbekistan, approve
   * ^designation[=].value = "Physician appointments and consultations"
   * ^property[0].code = #service-class
   * ^property[=].valueCode = #A
-  * ^property[+].code = #notSelectable
-  * ^property[=].valueBoolean = true
 * #A02 "Koʻriklar va fizikal tekshiruv"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Осмотры и физикальное обследование"
@@ -74,8 +72,6 @@ Description: "National classification of medical services of Uzbekistan, approve
   * ^designation[=].value = "Medical examinations and physical assessments"
   * ^property[0].code = #service-class
   * ^property[=].valueCode = #A
-  * ^property[+].code = #notSelectable
-  * ^property[=].valueBoolean = true
 * #B01 "Laboratoriya diagnostikasi"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Лабораторная диагностика"
@@ -83,8 +79,6 @@ Description: "National classification of medical services of Uzbekistan, approve
   * ^designation[=].value = "Laboratory diagnostics"
   * ^property[0].code = #service-class
   * ^property[=].valueCode = #B
-  * ^property[+].code = #notSelectable
-  * ^property[=].valueBoolean = true
 * #B02 "Ultratovush diagnostikasi"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Ультразвуковая диагностика"
@@ -92,8 +86,6 @@ Description: "National classification of medical services of Uzbekistan, approve
   * ^designation[=].value = "Ultrasound diagnostics"
   * ^property[0].code = #service-class
   * ^property[=].valueCode = #B
-  * ^property[+].code = #notSelectable
-  * ^property[=].valueBoolean = true
 * #B03 "Rentgenologik diagnostika"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Рентгенологическая диагностика"
@@ -101,8 +93,6 @@ Description: "National classification of medical services of Uzbekistan, approve
   * ^designation[=].value = "Radiological diagnostics"
   * ^property[0].code = #service-class
   * ^property[=].valueCode = #B
-  * ^property[+].code = #notSelectable
-  * ^property[=].valueBoolean = true
 * #B04 "Kompyuter tomografiyasi"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Компьютерная томография"
@@ -110,8 +100,6 @@ Description: "National classification of medical services of Uzbekistan, approve
   * ^designation[=].value = "Computed tomography"
   * ^property[0].code = #service-class
   * ^property[=].valueCode = #B
-  * ^property[+].code = #notSelectable
-  * ^property[=].valueBoolean = true
 * #B05 "Magnit-rezonans tomografiyasi"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Магнитно-резонансная томография"
@@ -119,8 +107,6 @@ Description: "National classification of medical services of Uzbekistan, approve
   * ^designation[=].value = "Magnetic resonance imaging"
   * ^property[0].code = #service-class
   * ^property[=].valueCode = #B
-  * ^property[+].code = #notSelectable
-  * ^property[=].valueBoolean = true
 * #B06 "Radionuklid diagnostika"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Радионуклидная диагностика"
@@ -128,8 +114,6 @@ Description: "National classification of medical services of Uzbekistan, approve
   * ^designation[=].value = "Radionuclide diagnostics"
   * ^property[0].code = #service-class
   * ^property[=].valueCode = #B
-  * ^property[+].code = #notSelectable
-  * ^property[=].valueBoolean = true
 * #B07 "Endoskopik diagnostika"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Эндоскопическая диагностика"
@@ -137,8 +121,6 @@ Description: "National classification of medical services of Uzbekistan, approve
   * ^designation[=].value = "Endoscopic diagnostics"
   * ^property[0].code = #service-class
   * ^property[=].valueCode = #B
-  * ^property[+].code = #notSelectable
-  * ^property[=].valueBoolean = true
 * #B08 "Funksional diagnostika va monitoring"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Функциональная диагностика и мониторинг"
@@ -146,8 +128,6 @@ Description: "National classification of medical services of Uzbekistan, approve
   * ^designation[=].value = "Functional diagnostics and monitoring"
   * ^property[0].code = #service-class
   * ^property[=].valueCode = #B
-  * ^property[+].code = #notSelectable
-  * ^property[=].valueBoolean = true
 * #B09 "Patomorfologik diagnostika"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Патоморфологическая диагностика"
@@ -155,8 +135,6 @@ Description: "National classification of medical services of Uzbekistan, approve
   * ^designation[=].value = "Pathomorphological diagnostics"
   * ^property[0].code = #service-class
   * ^property[=].valueCode = #B
-  * ^property[+].code = #notSelectable
-  * ^property[=].valueBoolean = true
 * #B10 "Angiografiya va kontrastli tekshiruvlar"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Ангиография и контрастные исследования"
@@ -164,8 +142,6 @@ Description: "National classification of medical services of Uzbekistan, approve
   * ^designation[=].value = "Angiography and contrast-enhanced examinations"
   * ^property[0].code = #service-class
   * ^property[=].valueCode = #B
-  * ^property[+].code = #notSelectable
-  * ^property[=].valueBoolean = true
 * #B11 "Diagnostik panellar va majmualar"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Диагностические панели и комплексы"
@@ -173,8 +149,6 @@ Description: "National classification of medical services of Uzbekistan, approve
   * ^designation[=].value = "Diagnostic panels and test complexes"
   * ^property[0].code = #service-class
   * ^property[=].valueCode = #B
-  * ^property[+].code = #notSelectable
-  * ^property[=].valueBoolean = true
 * #C01 "Jarrohlik aralashuvlari"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Хирургические вмешательства"
@@ -182,8 +156,6 @@ Description: "National classification of medical services of Uzbekistan, approve
   * ^designation[=].value = "Surgical interventions"
   * ^property[0].code = #service-class
   * ^property[=].valueCode = #C
-  * ^property[+].code = #notSelectable
-  * ^property[=].valueBoolean = true
 * #C02 "Yurak-qon tomir jarrohligi"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Сердечно-сосудистая хирургия"
@@ -191,8 +163,6 @@ Description: "National classification of medical services of Uzbekistan, approve
   * ^designation[=].value = "Cardiovascular surgery"
   * ^property[0].code = #service-class
   * ^property[=].valueCode = #C
-  * ^property[+].code = #notSelectable
-  * ^property[=].valueBoolean = true
 * #C03 "Kam invaziv va endoskopik aralashuvlar"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Малоинвазивные и эндоскопические вмешательства"
@@ -200,8 +170,6 @@ Description: "National classification of medical services of Uzbekistan, approve
   * ^designation[=].value = "Minimally invasive and endoscopic interventions"
   * ^property[0].code = #service-class
   * ^property[=].valueCode = #C
-  * ^property[+].code = #notSelectable
-  * ^property[=].valueBoolean = true
 * #C04 "Dori vositalarini yuborish va infuzion terapiya"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Введение лекарственных средств и инфузионная терапия"
@@ -209,8 +177,6 @@ Description: "National classification of medical services of Uzbekistan, approve
   * ^designation[=].value = "Medication administration and infusion therapy"
   * ^property[0].code = #service-class
   * ^property[=].valueCode = #C
-  * ^property[+].code = #notSelectable
-  * ^property[=].valueBoolean = true
 * #C05 "Ekstrakorporal usullar"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Экстракорпоральные методы"
@@ -218,8 +184,6 @@ Description: "National classification of medical services of Uzbekistan, approve
   * ^designation[=].value = "Extracorporeal methods"
   * ^property[0].code = #service-class
   * ^property[=].valueCode = #C
-  * ^property[+].code = #notSelectable
-  * ^property[=].valueBoolean = true
 * #C06 "Nur terapiyasi va oʻsmaga qarshi terapiya"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Лучевая и противоопухолевая терапия"
@@ -227,8 +191,6 @@ Description: "National classification of medical services of Uzbekistan, approve
   * ^designation[=].value = "Radiation therapy and anticancer treatment"
   * ^property[0].code = #service-class
   * ^property[=].valueCode = #C
-  * ^property[+].code = #notSelectable
-  * ^property[=].valueBoolean = true
 * #C07 "Anesteziologik taʼminot"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Анестезиологическое обеспечение"
@@ -236,8 +198,6 @@ Description: "National classification of medical services of Uzbekistan, approve
   * ^designation[=].value = "Anesthesia services"
   * ^property[0].code = #service-class
   * ^property[=].valueCode = #C
-  * ^property[+].code = #notSelectable
-  * ^property[=].valueBoolean = true
 * #C08 "Manipulyatsiyalar va muolajalar"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Манипуляции и процедуры"
@@ -245,8 +205,6 @@ Description: "National classification of medical services of Uzbekistan, approve
   * ^designation[=].value = "Clinical manipulations and procedures"
   * ^property[0].code = #service-class
   * ^property[=].valueCode = #C
-  * ^property[+].code = #notSelectable
-  * ^property[=].valueBoolean = true
 * #C09 "Estetik va kosmetologik muolajalar"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Эстетические и косметологические процедуры"
@@ -254,8 +212,6 @@ Description: "National classification of medical services of Uzbekistan, approve
   * ^designation[=].value = "Aesthetic and cosmetic procedures"
   * ^property[0].code = #service-class
   * ^property[=].valueCode = #C
-  * ^property[+].code = #notSelectable
-  * ^property[=].valueBoolean = true
 * #D02 "Tibbiy reabilitatsiya va davolash jismoniy tarbiyasi"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Медицинская реабилитация и лечебная физкультура"
@@ -263,8 +219,6 @@ Description: "National classification of medical services of Uzbekistan, approve
   * ^designation[=].value = "Medical rehabilitation and therapeutic exercise"
   * ^property[0].code = #service-class
   * ^property[=].valueCode = #D
-  * ^property[+].code = #notSelectable
-  * ^property[=].valueBoolean = true
 * #D03 "Fizioterapiya"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Физиотерапия"
@@ -272,8 +226,6 @@ Description: "National classification of medical services of Uzbekistan, approve
   * ^designation[=].value = "Physiotherapy"
   * ^property[0].code = #service-class
   * ^property[=].valueCode = #D
-  * ^property[+].code = #notSelectable
-  * ^property[=].valueBoolean = true
 * #D04 "Massaj va manual usullar"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Массаж и мануальные методы"
@@ -281,8 +233,6 @@ Description: "National classification of medical services of Uzbekistan, approve
   * ^designation[=].value = "Massage and manual therapies"
   * ^property[0].code = #service-class
   * ^property[=].valueCode = #D
-  * ^property[+].code = #notSelectable
-  * ^property[=].valueBoolean = true
 * #D05 "Tabiiy davolash omillari"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Природные лечебные факторы"
@@ -290,8 +240,6 @@ Description: "National classification of medical services of Uzbekistan, approve
   * ^designation[=].value = "Natural therapeutic modalities"
   * ^property[0].code = #service-class
   * ^property[=].valueCode = #D
-  * ^property[+].code = #notSelectable
-  * ^property[=].valueBoolean = true
 * #D06 "Dispanser kuzatuvi va profilaktika"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Диспансерное наблюдение и профилактика"
@@ -299,8 +247,6 @@ Description: "National classification of medical services of Uzbekistan, approve
   * ^designation[=].value = "Dispensary follow-up and preventive care"
   * ^property[0].code = #service-class
   * ^property[=].valueCode = #D
-  * ^property[+].code = #notSelectable
-  * ^property[=].valueBoolean = true
 * #D07 "Hamshiralik parvarishi va kuzatuv"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Сестринский уход и наблюдение"
@@ -308,8 +254,6 @@ Description: "National classification of medical services of Uzbekistan, approve
   * ^designation[=].value = "Nursing care and monitoring"
   * ^property[0].code = #service-class
   * ^property[=].valueCode = #D
-  * ^property[+].code = #notSelectable
-  * ^property[=].valueBoolean = true
 * #D08 "Tibbiy ekspertizalar"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Медицинские экспертизы"
@@ -317,8 +261,6 @@ Description: "National classification of medical services of Uzbekistan, approve
   * ^designation[=].value = "Medical expert assessments"
   * ^property[0].code = #service-class
   * ^property[=].valueCode = #D
-  * ^property[+].code = #notSelectable
-  * ^property[=].valueBoolean = true
 
 // A01.01.001
 * #5096114 "Shifokor boʻlmagan tibbiyot xodimining birlamchi qabuli (koʻrik va maslahat)"

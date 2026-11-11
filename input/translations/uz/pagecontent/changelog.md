@@ -39,11 +39,11 @@ BloodProductInventoryItem CSV papkasi nomining oxiridagi yangi qator belgisi oli
 
 Kod tizimlari va qiymatlar to'plamlarining sarlavhalari va tavsiflari endi [modellashtirish qo'llanmasidagi](https://github.com/uzinfocom-org/digital-health-ig/blob/main/modelling-guidelines.md) nomlash shabloniga mos keladi: supplement `[Concept] translations`, qiymatlar to'plami esa `[Concept]` deb nomlanadi, sarlavhalarda "CodeSystem" yoki "ValueSet" kabi so'zlar endi yo'q. Kanonik URL, identifikatorlar va kodlar o'zgarmadi.
 
+[Muolaja kodlari](ValueSet-procedure-code-vs.html) (UZ Core Procedure va UZ Core ActivityDefinition profillaridagi `code`) va [ServiceRequest muolajalari va tekshiruvlari](ValueSet-service-request-code-vs.html) (UZ Core ServiceRequest profilidagi `code`) endi [TXMK nurli diagnostika xizmatlari](ValueSet-uz-txmk-imaging-vs.html)ni ham o'z ichiga oladi.
+
 [Practitioner namunasi](Practitioner-example-practitioner.html) va mutaxassis sertifikati namunalarida endi o'ylab topilgan PINFL, sertifikat raqami va sanalar ishlatiladi.
 
 [Procedure namunasi](Procedure-example-procedure.html) endi boshqa bemorning tashrifi va holati o'rniga xuddi shu bemorning [ambulator fizioterapiya tashrifi](Encounter-example-physiotherapy-encounter.html) va [o'ng oyoq panjasidagi og'riq](Condition-example-foot-pain.html) holatiga havola qiladi.
-
-TXMK guruhlariga toifalar katalogidagi o'zbekcha nomlar hamda ruscha va inglizcha tarjimalar qo'shildi.
 
 [UZ Core HealthcareService](StructureDefinition-uz-core-healthcareservice.html) `category` va `type` elementlarida TXMK kategoriyasi va xizmati uchun Must Support slayclarini oldi. Laboratoriya kategoriyasi slayci bog'langan [xizmat kategoriyalari](ValueSet-service-categories-vs.html) endi laboratoriya kategoriyalarini ham o'z ichiga oladi.
 

@@ -55,10 +55,6 @@
         {
           "code": "service-class",
           "valueCode": "A"
-        },
-        {
-          "code": "notSelectable",
-          "valueBoolean": true
         }
       ],
       "designation": [
@@ -79,10 +75,6 @@
         {
           "code": "service-class",
           "valueCode": "A"
-        },
-        {
-          "code": "notSelectable",
-          "valueBoolean": true
         }
       ],
       "designation": [
@@ -103,10 +95,6 @@
         {
           "code": "service-class",
           "valueCode": "B"
-        },
-        {
-          "code": "notSelectable",
-          "valueBoolean": true
         }
       ],
       "designation": [
@@ -127,10 +115,6 @@
         {
           "code": "service-class",
           "valueCode": "B"
-        },
-        {
-          "code": "notSelectable",
-          "valueBoolean": true
         }
       ],
       "designation": [
@@ -151,10 +135,6 @@
         {
           "code": "service-class",
           "valueCode": "B"
-        },
-        {
-          "code": "notSelectable",
-          "valueBoolean": true
         }
       ],
       "designation": [
@@ -175,10 +155,6 @@
         {
           "code": "service-class",
           "valueCode": "B"
-        },
-        {
-          "code": "notSelectable",
-          "valueBoolean": true
         }
       ],
       "designation": [
@@ -199,10 +175,6 @@
         {
           "code": "service-class",
           "valueCode": "B"
-        },
-        {
-          "code": "notSelectable",
-          "valueBoolean": true
         }
       ],
       "designation": [
@@ -223,10 +195,6 @@
         {
           "code": "service-class",
           "valueCode": "B"
-        },
-        {
-          "code": "notSelectable",
-          "valueBoolean": true
         }
       ],
       "designation": [
@@ -247,10 +215,6 @@
         {
           "code": "service-class",
           "valueCode": "B"
-        },
-        {
-          "code": "notSelectable",
-          "valueBoolean": true
         }
       ],
       "designation": [
@@ -271,10 +235,6 @@
         {
           "code": "service-class",
           "valueCode": "B"
-        },
-        {
-          "code": "notSelectable",
-          "valueBoolean": true
         }
       ],
       "designation": [
@@ -295,10 +255,6 @@
         {
           "code": "service-class",
           "valueCode": "B"
-        },
-        {
-          "code": "notSelectable",
-          "valueBoolean": true
         }
       ],
       "designation": [
@@ -319,10 +275,6 @@
         {
           "code": "service-class",
           "valueCode": "B"
-        },
-        {
-          "code": "notSelectable",
-          "valueBoolean": true
         }
       ],
       "designation": [
@@ -343,10 +295,6 @@
         {
           "code": "service-class",
           "valueCode": "B"
-        },
-        {
-          "code": "notSelectable",
-          "valueBoolean": true
         }
       ],
       "designation": [
@@ -367,10 +315,6 @@
         {
           "code": "service-class",
           "valueCode": "C"
-        },
-        {
-          "code": "notSelectable",
-          "valueBoolean": true
         }
       ],
       "designation": [
@@ -391,10 +335,6 @@
         {
           "code": "service-class",
           "valueCode": "C"
-        },
-        {
-          "code": "notSelectable",
-          "valueBoolean": true
         }
       ],
       "designation": [
@@ -415,10 +355,6 @@
         {
           "code": "service-class",
           "valueCode": "C"
-        },
-        {
-          "code": "notSelectable",
-          "valueBoolean": true
         }
       ],
       "designation": [
@@ -439,10 +375,6 @@
         {
           "code": "service-class",
           "valueCode": "C"
-        },
-        {
-          "code": "notSelectable",
-          "valueBoolean": true
         }
       ],
       "designation": [
@@ -463,10 +395,6 @@
         {
           "code": "service-class",
           "valueCode": "C"
-        },
-        {
-          "code": "notSelectable",
-          "valueBoolean": true
         }
       ],
       "designation": [
@@ -487,10 +415,6 @@
         {
           "code": "service-class",
           "valueCode": "C"
-        },
-        {
-          "code": "notSelectable",
-          "valueBoolean": true
         }
       ],
       "designation": [
@@ -511,10 +435,6 @@
         {
           "code": "service-class",
           "valueCode": "C"
-        },
-        {
-          "code": "notSelectable",
-          "valueBoolean": true
         }
       ],
       "designation": [
@@ -535,10 +455,6 @@
         {
           "code": "service-class",
           "valueCode": "C"
-        },
-        {
-          "code": "notSelectable",
-          "valueBoolean": true
         }
       ],
       "designation": [
@@ -559,10 +475,6 @@
         {
           "code": "service-class",
           "valueCode": "C"
-        },
-        {
-          "code": "notSelectable",
-          "valueBoolean": true
         }
       ],
       "designation": [
@@ -583,10 +495,6 @@
         {
           "code": "service-class",
           "valueCode": "D"
-        },
-        {
-          "code": "notSelectable",
-          "valueBoolean": true
         }
       ],
       "designation": [
@@ -607,10 +515,6 @@
         {
           "code": "service-class",
           "valueCode": "D"
-        },
-        {
-          "code": "notSelectable",
-          "valueBoolean": true
         }
       ],
       "designation": [
@@ -631,10 +535,6 @@
         {
           "code": "service-class",
           "valueCode": "D"
-        },
-        {
-          "code": "notSelectable",
-          "valueBoolean": true
         }
       ],
       "designation": [
@@ -655,10 +555,6 @@
         {
           "code": "service-class",
           "valueCode": "D"
-        },
-        {
-          "code": "notSelectable",
-          "valueBoolean": true
         }
       ],
       "designation": [
@@ -679,10 +575,6 @@
         {
           "code": "service-class",
           "valueCode": "D"
-        },
-        {
-          "code": "notSelectable",
-          "valueBoolean": true
         }
       ],
       "designation": [
@@ -703,10 +595,6 @@
         {
           "code": "service-class",
           "valueCode": "D"
-        },
-        {
-          "code": "notSelectable",
-          "valueBoolean": true
         }
       ],
       "designation": [
@@ -727,10 +615,6 @@
         {
           "code": "service-class",
           "valueCode": "D"
-        },
-        {
-          "code": "notSelectable",
-          "valueBoolean": true
         }
       ],
       "designation": [
@@ -385939,7 +385823,7 @@
     {
       "code": "notSelectable",
       "uri": "http://hl7.org/fhir/concept-properties#notSelectable",
-      "description": "Grouping concept (TXMK class or group), not a billable/orderable service",
+      "description": "Grouping concept (TXMK class), not a billable/orderable service",
       "type": "boolean"
     }
   ],
@@ -385955,7 +385839,7 @@
     },
     {
       "code": "notSelectable",
-      "description": "Select or exclude the TXMK class and group concepts",
+      "description": "Select or exclude the TXMK class concepts",
       "operator": [
         "="
       ],

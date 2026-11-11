@@ -44,9 +44,9 @@
 
 Все ссылки на Device в профилях UZ Core теперь указывают на [UZ Core Device](StructureDefinition-uz-core-device.html): Observation, Procedure, Condition, AdverseEvent, Composition, QuestionnaireResponse, Group, MedicationAdministration, MedicationDispense, InventoryItem, SupplyRequest и SupplyDelivery.
 
-Группы TXMK получили узбекские названия и переводы на русский и английский из справочника категорий.
-
 Заголовки и описания систем кодов и наборов значений теперь следуют шаблону именования из [руководства по моделированию](https://github.com/uzinfocom-org/digital-health-ig/blob/main/modelling-guidelines.md): supplement называется `[Concept] translations`, набор значений - `[Concept]`, а в заголовках больше нет слов вроде "CodeSystem" или "ValueSet". Канонические URL, идентификаторы и коды не изменились.
+
+[Коды процедур](ValueSet-procedure-code-vs.html), к которым привязан `code` в UZ Core Procedure и UZ Core ActivityDefinition, и [процедуры и исследования ServiceRequest](ValueSet-service-request-code-vs.html), к которым привязан `code` в UZ Core ServiceRequest, теперь включают [услуги лучевой диагностики TXMK](ValueSet-uz-txmk-imaging-vs.html).
 
 [Пример Practitioner](Practitioner-example-practitioner.html) и примеры сертификата специалиста теперь используют вымышленные ПИНФЛ, номер сертификата и даты.
 

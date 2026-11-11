@@ -37,6 +37,8 @@ Every profile page now has a narrative intro and a Quick Start. New ones were ad
 
 Every reference to a Device in UZ Core profiles now targets [UZ Core Device](StructureDefinition-uz-core-device.html): Observation, Procedure, Condition, AdverseEvent, Composition, QuestionnaireResponse, Group, MedicationAdministration, MedicationDispense, InventoryItem, SupplyRequest and SupplyDelivery.
 
+[Procedure code](ValueSet-procedure-code-vs.html), bound to `code` in UZ Core Procedure and UZ Core ActivityDefinition, and [ServiceRequest procedures and investigations](ValueSet-service-request-code-vs.html), bound to `code` in UZ Core ServiceRequest, now include the [TXMK diagnostic imaging services](ValueSet-uz-txmk-imaging-vs.html).
+
 Removed a trailing newline from the BloodProductInventoryItem CSV folder name so the repository can be checked out on Windows.
 
 The [example practitioner](Practitioner-example-practitioner.html) and the specialist certificate examples now use a made-up PINFL, certificate number and dates.
@@ -46,8 +48,6 @@ The [FHIR types supplement](CodeSystem-fhir-types-cs.html) gave each resource ty
 The [Procedure example](Procedure-example-procedure.html) now points at an [outpatient physiotherapy visit](Encounter-example-physiotherapy-encounter.html) and a [right foot pain](Condition-example-foot-pain.html) condition of the same patient, in place of another patient's encounter and condition.
 
 Titles and descriptions of code systems and value sets now follow the naming pattern in the [modelling guidelines](https://github.com/uzinfocom-org/digital-health-ig/blob/main/modelling-guidelines.md): a supplement is `[Concept] translations`, a value set is `[Concept]`, and titles no longer carry words such as "CodeSystem" or "ValueSet". Canonical URLs, ids and codes are unchanged.
-
-TXMK groups now carry Uzbek names and Russian and English translations from the category catalogue.
 
 [UZ Core HealthcareService](StructureDefinition-uz-core-healthcareservice.html) has new Must Support slices for the TXMK service category and service in `category` and `type`. [Service categories](ValueSet-service-categories-vs.html), which the laboratory category slice is bound to, now also include the laboratory categories.
 

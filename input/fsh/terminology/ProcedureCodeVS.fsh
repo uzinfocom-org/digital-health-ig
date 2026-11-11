@@ -1,7 +1,7 @@
 ValueSet: ProcedureCodeVS
 Id: procedure-code-vs
 Title: "Procedure code"
-Description: "Procedure codes used in the Uzbekistan Digital Health Platform: SNOMED CT for clinical meaning, ICHI for statistical reporting."
+Description: "Procedure codes used in the Uzbekistan Digital Health Platform: SNOMED CT for clinical meaning, ICHI for statistical reporting, and TXMK diagnostic imaging services."
 * ^url = "https://terminology.dhp.uz/fhir/core/ValueSet/procedure-code-vs"
 * ^status = #active
 * ^experimental = true
