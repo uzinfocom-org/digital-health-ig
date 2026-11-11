@@ -60,7 +60,7 @@ If-Match: W/"3"   # the ETag from your last read; 412 if it changed since
 }
 ```
 
-Полный список поддерживаемых параметров поиска приведён в [CapabilityStatement](CapabilityStatement-DHPCapabilityStatement.html), а URI систем номеров единицы и донации - в таблице [срезов идентификаторов](#identifier-slices) выше.
+Полный список поддерживаемых параметров поиска приведён в [CapabilityStatement](CapabilityStatement-DHPCapabilityStatement.html#BiologicallyDerivedProduct1-56), а URI систем номеров единицы и донации - в таблице [срезов идентификаторов](#identifier-slices) выше.
 
 ### Связанные разделы
 

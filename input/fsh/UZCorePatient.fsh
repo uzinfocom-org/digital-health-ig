@@ -22,7 +22,7 @@ Description: "Uzbekistan Core Patient profile, used to represent patients admini
     passportInternational 0..* MS and
     passportForeign 0..1 MS and
     pensionNumber 0..1 MS and
-    birthCertificate 0..1 MS and
+    birthCertificate 0..* MS and
     driversLicense 0..1 MS and
     driversLicenseForeign 0..1 MS and
     diplomaticPassport 0..1 MS and
@@ -70,11 +70,12 @@ Description: "Uzbekistan Core Patient profile, used to represent patients admini
   * value 1..1 MS
 
 * identifier[birthCertificate]
+  * ^short = "Birth certificate number"
+  * ^definition = "Birth certificate number. A person whose birth certificate was replaced holds more than one. Set use = official for the certificate currently in force and use = old for a superseded one."
   * system 1..1 MS
   * system = $birthcertificate
   * type 1..1 MS
   * type = $identifier-type#BCT
-  * use = #official
   * value 1..1 MS
 
 * identifier[driversLicense]
@@ -181,12 +182,13 @@ Description: "Example of a patient named Salim"
 Usage: #example
 * language = #ru
 * identifier[nationalId]
-  * value = "30211975910033"
+  * value = "12345678912345"
 * identifier[passportLocal]
   * value = "AC1234567"
 * identifier[passportInternational]
   * value = "AA1234567"
 * identifier[birthCertificate]
+  * use = #official
   * value = "I-МЯ №123456"
 * identifier[driversLicense]
   * value = "AAA123456"
@@ -317,7 +319,7 @@ Description: "Example of a patient named Nodira, the subject of the state-insura
 Usage: #example
 * language = #uz
 * identifier[nationalId]
-  * value = "40503855900021"
+  * value = "90000000000003"
 * active = true
 * name
   * use = #usual
@@ -347,9 +349,13 @@ Description: "Example of a child whose mother is recorded against them - the rel
 Usage: #example
 * language = #uz
 * identifier[nationalId]
-  * value = "52006155900123"
-* identifier[birthCertificate]
+  * value = "90000000000005"
+* identifier[birthCertificate][0]
+  * use = #official
   * value = "II-ЮА №654321"
+* identifier[birthCertificate][1]
+  * use = #old
+  * value = "I-ЮА №123789"
 * active = true
 * name
   * use = #usual

@@ -24,7 +24,7 @@ GET [base]/AuditEvent?patient=Patient/[id]&outcome=http://hl7.org/fhir/issue-sev
 
 В FHIR R5 группировка события ищется по параметру `category`, а конкретный подтип - по `code` (в R4 использовались `type` / `subtype`). В этом профиле `outcome.code` привязан к ValueSet issue-severity, поэтому запрещённый или неуспешный доступ следует искать по значению `error` (или `fatal`), а не `success`.
 
-Полный перечень поддерживаемых параметров поиска приведён в [CapabilityStatement](CapabilityStatement-DHPCapabilityStatement.html).
+AuditEvent пока не указан в [CapabilityStatement](CapabilityStatement-DHPCapabilityStatement.html); запросы выше используют стандартные параметры поиска FHIR R5.
 
 ### Связанные материалы
 

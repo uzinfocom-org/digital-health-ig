@@ -50,7 +50,7 @@ If-Match: W/"3"   # the ETag from your last read; 412 if it changed since
 }
 ```
 
-`system` складского статуса - `https://terminology.dhp.uz/fhir/core/CodeSystem/inventoryitem-inventory-status-cs`. Полный список поддерживаемых параметров поиска приведён в [CapabilityStatement](CapabilityStatement-DHPCapabilityStatement.html).
+`system` складского статуса - `https://terminology.dhp.uz/fhir/core/CodeSystem/inventoryitem-inventory-status-cs`. Полный список поддерживаемых параметров поиска приведён в [CapabilityStatement](CapabilityStatement-DHPCapabilityStatement.html#InventoryItem1-60).
 
 ### Связанные разделы
 

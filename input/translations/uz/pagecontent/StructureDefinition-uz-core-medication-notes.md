@@ -61,7 +61,7 @@ If-Match: W/"3"   # the ETag from your last read; 412 if it changed since
 }
 ```
 
-Qo'llab-quvvatlanadigan qidiruv parametrlarining to'liq ro'yxati uchun [CapabilityStatement](CapabilityStatement-DHPCapabilityStatement.html)ga, dori identifikator tizimi URI manzillari uchun esa yuqoridagi [identifikator slayslari](#identifier-slices) jadvaliga qarang.
+Qo'llab-quvvatlanadigan qidiruv parametrlarining to'liq ro'yxati uchun [CapabilityStatement](CapabilityStatement-DHPCapabilityStatement.html#Medication1-31)ga, dori identifikator tizimi URI manzillari uchun esa yuqoridagi [identifikator slayslari](#identifier-slices) jadvaliga qarang.
 
 ### Aloqador
 

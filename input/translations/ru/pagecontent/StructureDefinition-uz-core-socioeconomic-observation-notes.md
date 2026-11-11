@@ -51,7 +51,7 @@ PUT [base]/Observation/[id]
 If-Match: W/"3"   # the ETag from your last read; 412 if it changed since
 ```
 
-Все поддерживаемые поисковые параметры см. в [CapabilityStatement](CapabilityStatement-DHPCapabilityStatement.html).
+Полный список поддерживаемых параметров поиска приведён в [CapabilityStatement](CapabilityStatement-DHPCapabilityStatement.html#Observation1-9).
 
 ### Связанные материалы
 

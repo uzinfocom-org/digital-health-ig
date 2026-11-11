@@ -10,6 +10,8 @@ Added [UZ Core CarePlan](StructureDefinition-uz-core-careplan.html), a general p
 
 Every profile page now has a narrative intro and a Quick Start. New ones were added for [UZ Core BiologicallyDerivedProduct](StructureDefinition-uz-core-biologically-derived-product.html), [UZ Core Claim](StructureDefinition-uz-core-claim.html), [UZ Core ClaimResponse](StructureDefinition-uz-core-claim-response.html), [UZ Core Composition](StructureDefinition-uz-core-composition.html), [UZ Core DiagnosticReport](StructureDefinition-uz-core-diagnostic-report.html), [UZ Core Group](StructureDefinition-uz-core-group.html), [UZ Core InventoryItem](StructureDefinition-uz-core-inventoryitem.html), [UZ Core Laboratory ObservationDefinition](StructureDefinition-uz-core-laboratory-observation-definition.html), [UZ Core MedicationDispense](StructureDefinition-uz-core-medication-dispense.html), [UZ Core MedicationRequest](StructureDefinition-uz-core-medicationrequest.html), [UZ Core Task Referral Approval](StructureDefinition-uz-core-referral-approval-task.html), [UZ Core ServiceRequest](StructureDefinition-uz-core-servicerequest.html) and [UZ Core SupplyRequest](StructureDefinition-uz-core-supply-request.html); [UZ Core ActivityDefinition](StructureDefinition-uz-core-activitydefinition.html) gets an intro and a Quick Start next to its existing notes.
 
+[Flag code](SearchParameter-uz-core-flag-code.html) is a new search parameter, `code`, that finds [UZ Core Flag](StructureDefinition-uz-core-flag.html) resources by what they are about - for example, a patient's active medical deferrals from blood donation. Base FHIR R5 has no search parameter for this.
+
 [Medication dose form](CodeSystem-medication-doseform-cs.html) adds `CTP101` poultice, `DRS101` medicated dressing, `HRB101` herbal substance, `JEL101` jelly, `KIT101` kit, `LOT101` lotion, `SHA101` medicated shampoo, `SUB101` active substance and `TEA101` herbal tea, with Uzbek, Russian and English names, for DMED e-prescription and Pharmaceutical Committee drug registry dose forms that had no code.
 
 [MedicationKnowledge associated medication](SearchParameter-uz-core-medicationknowledge-associated-medication.html) is a new search parameter, `associated-medication`, that finds the [UZ Core MedicationKnowledge](StructureDefinition-uz-core-medicationknowledge.html) entries for a Medication - for example, the approved prices of a dispensed product. Base FHIR R5 has no search parameter for this. Chain it on `identifier` to search by the product's registration number or GTIN.
@@ -25,6 +27,8 @@ Every profile page now has a narrative intro and a Quick Start. New ones were ad
 [UZ Core Device](StructureDefinition-uz-core-device.html) describes a physical medical device - hospital equipment such as a CT scanner, or a single item such as an intrauterine device - with its SNOMED CT type and category, manufacturer, model, serial and lot numbers, status and availability, and the organization and location it belongs to. Uzbek and Russian translations of the HL7 device status, availability status, name type and category codes, and of the SNOMED CT contraceptive device types, come with it. The profile page has the narrative intro and Quick Start.
 
 [UZ Core DeviceUsage](StructureDefinition-uz-core-deviceusage.html) records that a patient uses, has used or will use a device, such as a wheelchair or an implanted venous access port. The device is a SNOMED CT concept or a reference to a [UZ Core Device](StructureDefinition-uz-core-device.html). It records who reported the use, when it started and ended, the setting, how regularly the device is actually used and why. Uzbek and Russian translations of the HL7 device usage status and adherence codes come with it. The profile page has the narrative intro and Quick Start.
+
+[UZ Core Flag](StructureDefinition-uz-core-flag.html) records a prospective warning or notification about a patient. Its first use is blood donor eligibility and medical deferral decisions, with a local blood donor eligibility code system and Uzbek and Russian translations of HL7 flag categories and statuses.
 
 [UZ Core InventoryReport](StructureDefinition-uz-core-inventoryreport.html) reports a count of stock items at a location: the count type, whether stock was added or removed and why, and each item's quantity with its unit. Uzbek and Russian translations of the HL7 inventory report status and count type codes, and of the SNOMED CT units of presentation it uses, come with it.
 
@@ -42,6 +46,8 @@ Every reference to a Device in UZ Core profiles now targets [UZ Core Device](Str
 
 [MedicationRequest status translations](CodeSystem-medicationrequest-status-cs.html) now give `ended` the Russian name «Истекло» instead of «Завершено», which duplicated `completed`.
 
+Removed a trailing newline from the BloodProductInventoryItem CSV folder name so the repository can be checked out on Windows.
+
 The [example practitioner](Practitioner-example-practitioner.html) and the specialist certificate examples now use a made-up PINFL, certificate number and dates.
 
 The [FHIR types supplement](CodeSystem-fhir-types-cs.html) gave each resource type a translation of its definition in place of its name. Each type now has an Uzbek and a Russian name, such as "Bemor" and "Пациент" for `Patient`, marked `preferredForLanguage`, so `$lookup` with `displayLanguage` returns the name. The translated definitions remain as designations with the use SNOMED CT `900000000000550004` Definition.
@@ -53,6 +59,8 @@ Titles and descriptions of code systems and value sets now follow the naming pat
 [UZ Core Medication](StructureDefinition-uz-core-medication.html) no longer requires an `identifier`. Each Medication must have an identifier or a code (invariant `uzcore-med-1`), so a medicine prescribed by its INN, as in DMED e-prescriptions, can be sent with only its INN or ATC code before the pharmacy names the product.
 
 [UZ Core Organization](StructureDefinition-uz-core-organization.html) and [UZ Core RelatedPerson](StructureDefinition-uz-core-relatedperson.html) no longer fix the display of the identifier type: the `mohId` and `argosId` slices fix only the system and code `XX`, and `healthCard` only `HC`. The fixed displays "Organization Identifier" and "Health card number" did not match the HL7 terminology displays "Organization identifier" and "Health Card Number", so every conforming instance got a terminology warning. An identifier type with either display, or without one, now conforms.
+
+[UZ Core Patient](StructureDefinition-uz-core-patient.html) accepts more than one birth certificate (`birthCertificate` is now 0..* instead of 0..1) and no longer fixes its `use`, so a patient's superseded certificate can be recorded with `use = old` next to the current one with `use = official`.
 
 #### Breaking changes
 
