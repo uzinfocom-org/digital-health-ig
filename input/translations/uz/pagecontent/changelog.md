@@ -47,6 +47,8 @@ Kod tizimlari va qiymatlar to'plamlarining sarlavhalari va tavsiflari endi [mode
 
 [UZ Core Patient](StructureDefinition-uz-core-patient.html) endi bir nechta tug'ilganlik haqidagi guvohnomaga ruxsat beradi (`birthCertificate` endi 0..1 o'rniga 0..*) va uning `use` qiymatini qat'iy belgilamaydi, shuning uchun bemorning almashtirilgan guvohnomasini `use = old` bilan, amaldagisini esa `use = official` bilan birga yuborish mumkin.
 
+[UZ Core Procedure](StructureDefinition-uz-core-procedure.html) hushdan ketish, kollaps, stenokardiya xuruji, anafilaktik shok va reaksiya yo'qligini qayd etish uchun o'zbekcha va ruscha tarjimalari bilan [muolaja asoratlari kodlarini](ValueSet-procedure-complication-vs.html) tavsiya qiladi.
+
 UZ Core profillaridagi Device ga barcha havolalar endi [UZ Core Device](StructureDefinition-uz-core-device.html) ga yo'naltirilgan: Observation, Procedure, Condition, AdverseEvent, Composition, QuestionnaireResponse, Group, MedicationAdministration, MedicationDispense, InventoryItem, SupplyRequest va SupplyDelivery.
 
 #### Buzuvchi o'zgarishlar
