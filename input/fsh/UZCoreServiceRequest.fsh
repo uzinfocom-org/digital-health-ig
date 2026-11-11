@@ -77,8 +77,17 @@ Description: "Uzbekistan Core ServiceRequest profile, used to represent a reques
 * reason ^slicing.ordered = false
 * reason contains icd10 0..* MS and snomed 0..* MS
 * reason[icd10] from ConditionCodeVS (required)
-* reason[icd10].concept.coding.system = "http://hl7.org/fhir/sid/icd-10"
 * reason[icd10] ^short = "Reason coded in ICD-10"
+* reason[icd10].concept.coding ^slicing.discriminator.type = #value
+* reason[icd10].concept.coding ^slicing.discriminator.path = "system"
+* reason[icd10].concept.coding ^slicing.rules = #open
+* reason[icd10].concept.coding ^slicing.description = "The ICD-10 diagnosis and, for state-funded treatment, the SBDL criterion it qualifies under; any other codings are allowed alongside them"
+* reason[icd10].concept.coding contains icd10 1..1 MS and sbdl 0..1 MS
+* reason[icd10].concept.coding[icd10].system = "http://hl7.org/fhir/sid/icd-10"
+* reason[icd10].concept.coding[icd10] ^short = "ICD-10 diagnosis"
+* reason[icd10].concept.coding[sbdl] from SBDLVS (required)
+* reason[icd10].concept.coding[sbdl].system = "https://terminology.dhp.uz/fhir/core/CodeSystem/sbdl-cs"
+* reason[icd10].concept.coding[sbdl] ^short = "SBDL criterion under which the treatment is state-funded"
 * reason[snomed] from ConditionCodeVS (required)
 * reason[snomed].concept.coding.system = "http://snomed.info/sct"
 * reason[snomed] ^short = "Reason coded in SNOMED CT, from the national condition codes"

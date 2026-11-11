@@ -35,6 +35,8 @@ Description: "Example state-insurance referral for planned hospitalization; its 
 * orderDetail.parameter[basis].valueCodeableConcept = https://terminology.dhp.uz/fhir/core/CodeSystem/service-request-basis-cs#basis-0001-00001 "Solitary kidney stone (uncomplicated course)"
 * code = $sct#306206005 "Referral to service"
 * subject = Reference(Patient/example-nodira)
+* reason[icd10].concept.coding[icd10] = $icd-10#N20.0
+* reason[icd10].concept.coding[sbdl] = sbdl-cs#SBDL-000001-0 "Solitary kidney stone (uncomplicated course)"
 * requester = Reference(PractitionerRole/example-practitionerrole)
 * authoredOn = "2026-03-05T08:00:00Z"
 

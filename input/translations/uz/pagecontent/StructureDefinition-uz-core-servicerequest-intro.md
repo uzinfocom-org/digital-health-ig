@@ -21,7 +21,7 @@ Profil majburiy elementlar qo'shmaydi. Bazaviy resurs `status`, `intent` va `sub
 - xizmat qachon ko'rsatilishi kerakligi (`occurrence[x]`) va so'rov qachon yozilgani (`authoredOn`);
 - uni kim yozgani (`requester`: tibbiyot xodimi, tibbiyot xodimining lavozimi, tashkilot, bemor yoki qarindosh) va uni bajarish so'ralgan [Organization](StructureDefinition-uz-core-organization.html) (`performer`);
 - buyurtma tafsilotlari (`orderDetail.parameter`), masalan imtiyozli tashxis bo'yicha davolanish asosi - LOINC `86947-9` Reason for hospitalization kodli `basis` parametri;
-- xizmat nima uchun kerakligi (`reason`): ICD-10 yoki SNOMED CT kodi yoki [Condition](StructureDefinition-uz-core-condition.html) ga havola;
+- xizmat nima uchun kerakligi (`reason`): ICD-10 yoki SNOMED CT kodi yoki [Condition](StructureDefinition-uz-core-condition.html) ga havola, davlat hisobidan davolanishda esa ICD-10 kodi yonida SBDL mezoni;
 - xizmat qanday to'lanishi ([to'lov turi](StructureDefinition-payment-type.html) kengaytmasi: bepul / pullik / sug'urta / davlat tarifi / boshqalar) va sug'urta qoplamasi (`insurance`);
 - so'rovni asoslovchi boshqa ma'lumotlar (`supportingInfo`) va tekshiriladigan [namuna](StructureDefinition-uz-core-specimen.html) (`specimen`);
 - bemor uchun ko'rsatmalar, masalan qanday tayyorlanish kerakligi (`patientInstruction`).
@@ -168,12 +168,21 @@ Oilaviy shifokor bemorni davlat tarifi bo'yicha rejali kasalxonaga yotqizishga y
   "reason": [
     {
       "concept": {
-        "coding": [ { "system": "http://hl7.org/fhir/sid/icd-10", "code": "K80.2" } ]
+        "coding": [
+          { "system": "http://hl7.org/fhir/sid/icd-10", "code": "K80.2" },
+          {
+            "system": "https://terminology.dhp.uz/fhir/core/CodeSystem/sbdl-cs",
+            "code": "SBDL-005200-7",
+            "display": "Birlamchi jarrohlik amaliyotlari"
+          }
+        ]
       }
     }
   ]
 }
 ```
+
+Davlat hisobidan yo'llanmada `reason` dagi ICD-10 kodlashi yonida davolanish davlat hisobidan to'lanadigan [SBDL mezoni](ValueSet-sbdl-vs.html) beriladi: Davlat tibbiy sug'urta jamg'armasining shu mezon va tashxis uchun kodi. Ikkala kodlash bitta sababni tavsiflaydi, shuning uchun ular bitta `concept` ichida turadi. Agar sabab Condition ga havola bo'lsa, SBDL kodini shu Condition ning `code` elementiga uning ICD-10 kodi yonida yozing.
 
 Keyingi qadamni to'lov turi belgilaydi. Davlat tarifida platforma [kelishuv Task](StructureDefinition-uz-core-referral-approval-task.html) lari zanjirini boshlaydi va ServiceRequest `status` ini ular bilan muvofiqlashtiradi; boshqa har qanday to'lov turida yo'llanma to'g'ridan-to'g'ri ijrochiga o'tadi. `occurrencePeriod` - xizmat ko'rsatilishi kerak bo'lgan oraliq; aniq vaqt uchun `occurrenceDateTime` dan foydalaning.
 
