@@ -33,8 +33,9 @@
 <div>{% include resource-relationships.svg %}</div><br clear="all"/>
 
 - Ресурс Patient может быть связан с несколькими ресурсами Encounter (визитами); связанные Encounter можно объединить в EpisodeOfCare (продолжающийся клинический случай).
-- В рамках Encounter медицинские работники регистрируют ресурсы Condition (диагнозы), Observation (результаты и жизненные показатели), Procedure и MedicationRequest.
+- В рамках Encounter медицинские работники регистрируют ресурсы Condition (диагнозы), Observation (результаты и жизненные показатели), Procedure, MedicationRequest, [AllergyIntolerance](StructureDefinition-uz-core-allergy-intolerance.html) и [Flag](StructureDefinition-uz-core-flag.html) (предупреждения, например медицинский отвод от донации крови).
+- Ресурс [CarePlan](StructureDefinition-uz-core-careplan.html) описывает план помощи на период времени, например курс лечения или патронажные визиты медсестры; ресурсы Observation, Procedure и Immunization, которые его выполняют, ссылаются на него в `basedOn`.
 - Ресурсы рабочих процессов (ServiceRequest, Task) обеспечивают назначение и выполнение; ресурсы результатов (Observation, DiagnosticReport) содержат reference на исходное назначение.
-- Завершённые данные, имеющие юридическую силу, объединяются в документ на основе [Composition](StructureDefinition-uz-core-composition.html) и подписываются с использованием [Provenance](StructureDefinition-uz-core-provenance.html).
+- Завершённые данные, имеющие юридическую силу, объединяются в документ на основе [Composition](StructureDefinition-uz-core-composition.html). Bundle документа подписывается ресурсом [Provenance](StructureDefinition-uz-core-provenance.html), который ссылается на этот Bundle; процесс подписания описан в [DHP Integrations IG](https://dhp.uz/fhir/integrations/en/).
 
 Примечание о выборе между документом и ресурсами рабочего процесса: текущие клинические данные следует хранить в виде отдельных ресурсов (Condition, Observation, Procedure); документ на основе Composition следует формировать только тогда, когда требуется завершённый артефакт, имеющий юридическую силу (выписной эпикриз, подписанное свидетельство или подписанный отчёт).
