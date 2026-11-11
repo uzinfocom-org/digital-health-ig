@@ -1,7 +1,7 @@
 ValueSet: ChargeItemPriceComponentVS
 Id: charge-item-price-component-vs
 Title: "Charge item price component"
-Description: "Codes for the parts of a charge item price"
+Description: "Charge item price components"
 * ^url = "https://terminology.dhp.uz/fhir/core/ValueSet/charge-item-price-component-vs"
 * ^experimental = true
 

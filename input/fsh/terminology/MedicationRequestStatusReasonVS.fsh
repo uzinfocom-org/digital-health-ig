@@ -1,7 +1,7 @@
 ValueSet: MedicationRequestStatusReasonVS
 Id: medicationrequest-status-reason-vs
 Title: "MedicationRequest status reason"
-Description: "MedicationRequest status reasons: HL7 codes and national cancellation reasons"
+Description: "MedicationRequest status reasons"
 * ^url = "https://terminology.dhp.uz/fhir/core/ValueSet/medicationrequest-status-reason-vs"
 * ^experimental = true
 * ^extension[0].url = $valueset-supplement
