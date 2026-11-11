@@ -8,11 +8,11 @@ Quyidagi elementlar har doim mavjud bo'lishi (majburiy) yoki ma'lumot mavjud bo'
 
 #### Har bir UZ Core BiologicallyDerivedProductDispense quyidagilarga ega bo'lishi shart
 
-`status`, beriladigan mahsulot (`product`) va u mo'ljallangan bemor (`patient`). Uchala element ham bazaviy resursda majburiy. Har bir `performer` o'z `actor` ini, har bir `identifier` esa o'z `system` va `value` sini ko'rsatishi shart.
+`status`, beriladigan mahsulot (`product`) va u mo'ljallangan bemor (`patient`). Uchala element ham bazaviy resursda majburiy. Har bir `performer` o'z `actor` ini ko'rsatishi shart, berish raqami esa doim o'z `system` i bilan yuboriladi.
 
 #### Har bir UZ Core BiologicallyDerivedProductDispense quyidagilarni qo'llab-quvvatlashi shart
 
-- berishning biznes-identifikatori (`identifier`), agar berilgan bo'lsa, har doim `system` bilan birga;
+- beruvchi tizim bergan berish raqami, doim `system` bilan birga (qarang: [identifikator slayslari](#identifier-slices));
 - berish bajarayotgan [ServiceRequest](StructureDefinition-uz-core-servicerequest.html) (`basedOn`);
 - berish `status` i (preparation / in-progress / allocated / issued / unfulfilled / returned / entered-in-error / unknown);
 - beriladigan mahsulot (`product`) va u mo'ljallangan bemor (`patient`);
@@ -41,35 +41,63 @@ Har bir UZ Core resursi o'z profilini `meta.profile` da ko'rsatadi - server uni 
 
 #### Bemor uchun berilgan qon komponenti
 
-Qon quyish bo'limi buyurtma asosida bemor uchun birlik beradi. `basedOn` [buyurtmaga](ServiceRequest-example-bdp-dispense-request.html) ishora qiladi, `performer` birlikni bergan tibbiyot xodimini, `location` u berilgan joyni, `destination` esa u yuborilgan joyni ko'rsatadi:
+Qon quyish bo'limi buyurtma asosida bemor uchun birlik beradi. Bo'limning berish raqami `identifier` ga yoziladi, `basedOn` [buyurtmaga](ServiceRequest-example-bdp-dispense-request.html) ishora qiladi, `performer` birlikni berishga ruxsat bergan tibbiyot xodimini, `location` u berilgan joyni, `destination` esa u yuborilgan joyni ko'rsatadi:
 
 ```json
 {
   "resourceType": "BiologicallyDerivedProductDispense",
   "meta": { "profile": ["https://dhp.uz/fhir/core/StructureDefinition/uz-core-biologicallyderivedproductdispense"] },
+  "identifier": [
+    { "system": "https://dhp.uz/fhir/core/sid/doc/uz/bdp-dispense", "value": "ISS-2026-0002" }
+  ],
   "basedOn": [ { "reference": "ServiceRequest/example-bdp-dispense-request" } ],
   "status": "issued",
   "product": { "reference": "BiologicallyDerivedProduct/example-blood-component-product" },
   "patient": { "reference": "Patient/example-salim" },
-  "performer": [ { "actor": { "reference": "Practitioner/example-practitioner" } } ],
+  "performer": [
+    {
+      "function": {
+        "coding": [
+          {
+            "system": "http://hl7.org/fhir/CodeSystem/biologicallyderivedproductdispense-performer-function",
+            "code": "release"
+          }
+        ]
+      },
+      "actor": { "reference": "Practitioner/example-practitioner" }
+    }
+  ],
   "location": { "reference": "Location/example-location-1" },
-  "quantity": { "value": 250, "unit": "mL", "system": "http://unitsofmeasure.org", "code": "mL" },
-  "preparedDate": "2026-11-09T10:15:00+05:00",
-  "whenHandedOver": "2026-11-09T10:30:00+05:00",
+  "quantity": { "value": 263, "unit": "mL", "system": "http://unitsofmeasure.org", "code": "mL" },
+  "preparedDate": "2026-09-20T10:15:00+05:00",
+  "whenHandedOver": "2026-09-20T10:30:00+05:00",
   "destination": { "reference": "Location/example-location-2" }
 }
 ```
 
-`basedOn` va `performer` takrorlanadi; `location` va `destination` takrorlanmaydi va ikkalasi ham [UZ Core Location](StructureDefinition-uz-core-location.html) ga `Reference`. `performer.actor` - [UZ Core Practitioner](StructureDefinition-uz-core-practitioner.html) ga `Reference`. `quantity` - amalda berilgan miqdor, u manba mahsulotning to'liq hajmiga teng bo'lishi shart emas. `preparedDate` - mahsulot ushbu berish uchun tanlangan vaqt, manba mahsulot tayyorlangan vaqt emas; `whenHandedOver` - u amalda jo'natilgan yoki topshirilgan vaqt.
+`basedOn` va `performer` takrorlanadi; `location` va `destination` takrorlanmaydi va ikkalasi ham [UZ Core Location](StructureDefinition-uz-core-location.html) ga `Reference`. `performer.actor` - [UZ Core Practitioner](StructureDefinition-uz-core-practitioner.html) ga `Reference`. `performer.function` - HL7 ijrochi funksiyalari ro'yxatidagi kodga ega `CodeableConcept`. `quantity` - amalda berilgan miqdor; qon komponenti odatda butun birlik sifatida beriladi. `preparedDate` - mahsulot ushbu berish uchun tanlangan vaqt, manba mahsulot tayyorlangan vaqt emas; `whenHandedOver` - u amalda jo'natilgan yoki topshirilgan vaqt.
+
+#### Berish raqami {#identifier-slices}
+
+`identifier` `system` URI bo'yicha slayslarga bo'lingan, shuning uchun tizim aniq mos kelishi kerak:
+
+| Identifikator | `system` | Kim beradi |
+|---|---|---|
+| [Berish raqami](NamingSystem-uzb-bdp-dispense-number.html) | `https://dhp.uz/fhir/core/sid/doc/uz/bdp-dispense` | Mahsulotni beruvchi tizim, masalan qon quyish bo'limi |
+
+Donatsiya raqami va mahsulot birligi raqami berishni emas, mahsulotni identifikatsiya qiladi va [BiologicallyDerivedProduct](StructureDefinition-uz-core-biologically-derived-product.html) da qoladi.
 
 #### Qaytarilgan birlik
 
-Berilgan birlik ishlatilmasdan qaytarilgan, shuning uchun `status` `returned` bo'ladi. Bu misolda ixtiyoriy kodlar ham to'ldirilgan: donor va retsipiyent o'rtasidagi munosabat, o'tkazilgan moslashtirish turi va ijrochining funksiyasi:
+Yuqoridagi berishdan ikki kun oldin xuddi shu birlik xuddi shu buyurtma bo'yicha berilgan va ishlatilmasdan qaytarilgan, shuning uchun o'sha berishning `status` i `returned` bo'lgan. Bu misolda ixtiyoriy kodlar ham to'ldirilgan: donor va retsipiyent o'rtasidagi munosabat, o'tkazilgan moslashtirish turi va ijrochining funksiyasi:
 
 ```json
 {
   "resourceType": "BiologicallyDerivedProductDispense",
   "meta": { "profile": ["https://dhp.uz/fhir/core/StructureDefinition/uz-core-biologicallyderivedproductdispense"] },
+  "identifier": [
+    { "system": "https://dhp.uz/fhir/core/sid/doc/uz/bdp-dispense", "value": "ISS-2026-0001" }
+  ],
   "basedOn": [ { "reference": "ServiceRequest/example-bdp-dispense-request" } ],
   "status": "returned",
   "originRelationshipType": {
@@ -103,7 +131,7 @@ Berilgan birlik ishlatilmasdan qaytarilgan, shuning uchun `status` `returned` bo
       "actor": { "reference": "Practitioner/example-practitioner" }
     }
   ],
-  "whenHandedOver": "2026-11-09T10:30:00+05:00"
+  "whenHandedOver": "2026-09-18T14:00:00+05:00"
 }
 ```
 

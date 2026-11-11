@@ -733,6 +733,25 @@ Usage: #definition
 * uniqueId[=].value = $supply-delivery-number
 * uniqueId[=].preferred = true
 
+Instance: uzb-bdp-dispense-number
+InstanceOf: NamingSystem
+Description: "Dispense numbers assigned to the issue of biologically derived products, such as blood components, in Uzbekistan"
+Usage: #definition
+* url = "https://terminology.dhp.uz/fhir/core/NamingSystem/uzb-bdp-dispense-number"
+* name = "UzbekistanBiologicallyDerivedProductDispenseIdentifier"
+* status = #active
+* kind = #identifier
+* date = "2026-11-11"
+* publisher = "Uzinfocom"
+* responsible = "Ministry of Health of the Republic of Uzbekistan"
+* type = $identifier-type#FILL "Filler Identifier"
+* description = "Naming system for dispense numbers assigned by the issuing information system, such as a blood bank, when it issues a biologically derived product for a patient."
+* jurisdiction = urn:iso:std:iso:3166#UZ "Uzbekistan"
+* usage = "Used in BiologicallyDerivedProductDispense.identifier.system to identify and track the issue of a product for a patient. Values must be unique across issuing organizations within this namespace, using coordinated allocation or an issuer-qualified value. Record the issuing organization in identifier.assigner."
+* uniqueId[0].type = #uri
+* uniqueId[=].value = $bdp-dispense-number
+* uniqueId[=].preferred = true
+
 Instance: uzb-specialist-certificate
 InstanceOf: NamingSystem
 Description: "Specialist certificate numbers of healthcare professionals issued by the Ministry of Health of Uzbekistan"

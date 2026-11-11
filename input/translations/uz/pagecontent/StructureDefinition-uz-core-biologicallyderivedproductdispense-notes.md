@@ -13,6 +13,7 @@ GET [base]/BiologicallyDerivedProductDispense/[id]
 **Berishlarni qidirish**
 
 ```
+GET [base]/BiologicallyDerivedProductDispense?identifier=https://dhp.uz/fhir/core/sid/doc/uz/bdp-dispense%7CISS-2026-0002
 GET [base]/BiologicallyDerivedProductDispense?_lastUpdated=ge2026-01-01
 GET [base]/BiologicallyDerivedProductDispense?_profile=https://dhp.uz/fhir/core/StructureDefinition/uz-core-biologicallyderivedproductdispense
 GET [base]/BiologicallyDerivedProductDispense?_id=[id1],[id2]
@@ -25,12 +26,13 @@ POST [base]/BiologicallyDerivedProductDispense
 {
   "resourceType": "BiologicallyDerivedProductDispense",
   "meta": { "profile": [ "https://dhp.uz/fhir/core/StructureDefinition/uz-core-biologicallyderivedproductdispense" ] },
+  "identifier": [ { "system": "https://dhp.uz/fhir/core/sid/doc/uz/bdp-dispense", "value": "ISS-2026-0002" } ],
   "basedOn": [ { "reference": "ServiceRequest/[id]" } ],
   "status": "issued",
   "product": { "reference": "BiologicallyDerivedProduct/[id]" },
   "patient": { "reference": "Patient/[id]" },
   "performer": [ { "actor": { "reference": "Practitioner/[id]" } } ],
-  "whenHandedOver": "2026-11-09T10:30:00+05:00"
+  "whenHandedOver": "2026-09-20T10:30:00+05:00"
 }
 ```
 

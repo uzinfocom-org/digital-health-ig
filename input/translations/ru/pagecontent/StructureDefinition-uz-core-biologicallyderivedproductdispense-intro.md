@@ -8,11 +8,11 @@ UZ Core BiologicallyDerivedProductDispense фиксирует, что [биол�
 
 #### Каждый UZ Core BiologicallyDerivedProductDispense должен содержать
 
-`status`, выдаваемый продукт (`product`) и пациента, для которого он предназначен (`patient`). Все три элемента обязательны в базовом ресурсе. Каждый `performer` должен указывать `actor`, а каждый `identifier` - свои `system` и `value`.
+`status`, выдаваемый продукт (`product`) и пациента, для которого он предназначен (`patient`). Все три элемента обязательны в базовом ресурсе. Каждый `performer` должен указывать `actor`, а номер выдачи всегда передаётся со своим `system`.
 
 #### Каждый UZ Core BiologicallyDerivedProductDispense должен поддерживать
 
-- бизнес-идентификатор выдачи (`identifier`), если он присвоен, всегда вместе с `system`;
+- номер выдачи, присвоенный выдающей системой, всегда вместе с `system` (см. [срезы идентификаторов](#identifier-slices));
 - [ServiceRequest](StructureDefinition-uz-core-servicerequest.html), который выполняет выдача (`basedOn`);
 - `status` выдачи (preparation / in-progress / allocated / issued / unfulfilled / returned / entered-in-error / unknown);
 - выдаваемый продукт (`product`) и пациента, для которого он предназначен (`patient`);
@@ -41,35 +41,63 @@ UZ Core BiologicallyDerivedProductDispense фиксирует, что [биол�
 
 #### Компонент крови, выданный для пациента
 
-Отделение переливания крови выдаёт единицу для пациента по назначению. `basedOn` указывает на [назначение](ServiceRequest-example-bdp-dispense-request.html), `performer` - на медицинского работника, выдавшего единицу, `location` - место, откуда она выдана, а `destination` - место, куда она направлена:
+Отделение переливания крови выдаёт единицу для пациента по назначению. Номер выдачи от отделения указывается в `identifier`, `basedOn` указывает на [назначение](ServiceRequest-example-bdp-dispense-request.html), `performer` - на медицинского работника, разрешившего выдачу единицы, `location` - место, откуда она выдана, а `destination` - место, куда она направлена:
 
 ```json
 {
   "resourceType": "BiologicallyDerivedProductDispense",
   "meta": { "profile": ["https://dhp.uz/fhir/core/StructureDefinition/uz-core-biologicallyderivedproductdispense"] },
+  "identifier": [
+    { "system": "https://dhp.uz/fhir/core/sid/doc/uz/bdp-dispense", "value": "ISS-2026-0002" }
+  ],
   "basedOn": [ { "reference": "ServiceRequest/example-bdp-dispense-request" } ],
   "status": "issued",
   "product": { "reference": "BiologicallyDerivedProduct/example-blood-component-product" },
   "patient": { "reference": "Patient/example-salim" },
-  "performer": [ { "actor": { "reference": "Practitioner/example-practitioner" } } ],
+  "performer": [
+    {
+      "function": {
+        "coding": [
+          {
+            "system": "http://hl7.org/fhir/CodeSystem/biologicallyderivedproductdispense-performer-function",
+            "code": "release"
+          }
+        ]
+      },
+      "actor": { "reference": "Practitioner/example-practitioner" }
+    }
+  ],
   "location": { "reference": "Location/example-location-1" },
-  "quantity": { "value": 250, "unit": "mL", "system": "http://unitsofmeasure.org", "code": "mL" },
-  "preparedDate": "2026-11-09T10:15:00+05:00",
-  "whenHandedOver": "2026-11-09T10:30:00+05:00",
+  "quantity": { "value": 263, "unit": "mL", "system": "http://unitsofmeasure.org", "code": "mL" },
+  "preparedDate": "2026-09-20T10:15:00+05:00",
+  "whenHandedOver": "2026-09-20T10:30:00+05:00",
   "destination": { "reference": "Location/example-location-2" }
 }
 ```
 
-`basedOn` и `performer` повторяются; `location` и `destination` - нет, и оба являются `Reference` на [UZ Core Location](StructureDefinition-uz-core-location.html). `performer.actor` - это `Reference` на [UZ Core Practitioner](StructureDefinition-uz-core-practitioner.html). `quantity` - фактически выданное количество, которое не обязательно равно полному объёму исходного продукта. `preparedDate` - время, когда продукт был подобран для этой выдачи, а не время заготовки исходного продукта; `whenHandedOver` - время, когда он был фактически отправлен или передан.
+`basedOn` и `performer` повторяются; `location` и `destination` - нет, и оба являются `Reference` на [UZ Core Location](StructureDefinition-uz-core-location.html). `performer.actor` - это `Reference` на [UZ Core Practitioner](StructureDefinition-uz-core-practitioner.html). `performer.function` - это `CodeableConcept` с кодом из списка функций исполнителя HL7. `quantity` - фактически выданное количество; компонент крови обычно выдаётся целой единицей. `preparedDate` - время, когда продукт был подобран для этой выдачи, а не время заготовки исходного продукта; `whenHandedOver` - время, когда он был фактически отправлен или передан.
+
+#### Номер выдачи {#identifier-slices}
+
+`identifier` разделён на срезы по URI `system`, поэтому система должна совпадать точно:
+
+| Идентификатор | `system` | Кем присваивается |
+|---|---|---|
+| [Номер выдачи](NamingSystem-uzb-bdp-dispense-number.html) | `https://dhp.uz/fhir/core/sid/doc/uz/bdp-dispense` | Системой, которая выдаёт продукт, например отделением переливания крови |
+
+Номер донации и номер единицы продукта идентифицируют продукт, а не выдачу, и остаются в [BiologicallyDerivedProduct](StructureDefinition-uz-core-biologically-derived-product.html).
 
 #### Возвращённая единица
 
-Выданная единица возвращена неиспользованной, поэтому `status` становится `returned`. В этом примере заполнены и необязательные коды: отношение между донором и реципиентом, вид проведённого подбора и функция исполнителя:
+За два дня до выдачи, показанной выше, та же единица была выдана по тому же назначению и возвращена неиспользованной, поэтому `status` той выдачи стал `returned`. В этом примере заполнены и необязательные коды: отношение между донором и реципиентом, вид проведённого подбора и функция исполнителя:
 
 ```json
 {
   "resourceType": "BiologicallyDerivedProductDispense",
   "meta": { "profile": ["https://dhp.uz/fhir/core/StructureDefinition/uz-core-biologicallyderivedproductdispense"] },
+  "identifier": [
+    { "system": "https://dhp.uz/fhir/core/sid/doc/uz/bdp-dispense", "value": "ISS-2026-0001" }
+  ],
   "basedOn": [ { "reference": "ServiceRequest/example-bdp-dispense-request" } ],
   "status": "returned",
   "originRelationshipType": {
@@ -103,7 +131,7 @@ UZ Core BiologicallyDerivedProductDispense фиксирует, что [биол�
       "actor": { "reference": "Practitioner/example-practitioner" }
     }
   ],
-  "whenHandedOver": "2026-11-09T10:30:00+05:00"
+  "whenHandedOver": "2026-09-18T14:00:00+05:00"
 }
 ```
 

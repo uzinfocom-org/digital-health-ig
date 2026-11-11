@@ -6,11 +6,11 @@ The elements below must always be present (mandatory) or must be supported when 
 
 #### Each UZ Core BiologicallyDerivedProductDispense Must Have
 
-A `status`, the `product` that is dispensed and the `patient` it is intended for. All three are mandatory in the base resource. Each `performer` must name its `actor`, and each `identifier` must carry its `system` and `value`.
+A `status`, the `product` that is dispensed and the `patient` it is intended for. All three are mandatory in the base resource. Each `performer` must name its `actor`, and the dispense number is always sent with its `system`.
 
 #### Each UZ Core BiologicallyDerivedProductDispense Must Support
 
-- the business `identifier` of the dispense, when one is assigned, always sent with its `system`;
+- the dispense number assigned by the issuing system, always sent with its `system` (see [identifier slices](#identifier-slices));
 - the [ServiceRequest](StructureDefinition-uz-core-servicerequest.html) the dispense fulfils (`basedOn`);
 - the `status` of the dispense (preparation / in-progress / allocated / issued / unfulfilled / returned / entered-in-error / unknown);
 - the `product` that is dispensed and the `patient` it is intended for;
@@ -39,35 +39,63 @@ Every UZ Core resource names its profile in `meta.profile`, which tells the serv
 
 #### A blood component issued for a patient
 
-A blood bank issues a unit for a patient against an order. `basedOn` points to the [order](ServiceRequest-example-bdp-dispense-request.html), `performer` names the practitioner who issued the unit, `location` is where it was issued from and `destination` where it was sent:
+A blood bank issues a unit for a patient against an order. The dispense number from the blood bank goes in `identifier`, `basedOn` points to the [order](ServiceRequest-example-bdp-dispense-request.html), `performer` names the practitioner who released the unit, `location` is where it was issued from and `destination` where it was sent:
 
 ```json
 {
   "resourceType": "BiologicallyDerivedProductDispense",
   "meta": { "profile": ["https://dhp.uz/fhir/core/StructureDefinition/uz-core-biologicallyderivedproductdispense"] },
+  "identifier": [
+    { "system": "https://dhp.uz/fhir/core/sid/doc/uz/bdp-dispense", "value": "ISS-2026-0002" }
+  ],
   "basedOn": [ { "reference": "ServiceRequest/example-bdp-dispense-request" } ],
   "status": "issued",
   "product": { "reference": "BiologicallyDerivedProduct/example-blood-component-product" },
   "patient": { "reference": "Patient/example-salim" },
-  "performer": [ { "actor": { "reference": "Practitioner/example-practitioner" } } ],
+  "performer": [
+    {
+      "function": {
+        "coding": [
+          {
+            "system": "http://hl7.org/fhir/CodeSystem/biologicallyderivedproductdispense-performer-function",
+            "code": "release"
+          }
+        ]
+      },
+      "actor": { "reference": "Practitioner/example-practitioner" }
+    }
+  ],
   "location": { "reference": "Location/example-location-1" },
-  "quantity": { "value": 250, "unit": "mL", "system": "http://unitsofmeasure.org", "code": "mL" },
-  "preparedDate": "2026-11-09T10:15:00+05:00",
-  "whenHandedOver": "2026-11-09T10:30:00+05:00",
+  "quantity": { "value": 263, "unit": "mL", "system": "http://unitsofmeasure.org", "code": "mL" },
+  "preparedDate": "2026-09-20T10:15:00+05:00",
+  "whenHandedOver": "2026-09-20T10:30:00+05:00",
   "destination": { "reference": "Location/example-location-2" }
 }
 ```
 
-`basedOn` and `performer` repeat; `location` and `destination` do not, and both are a `Reference` to a [UZ Core Location](StructureDefinition-uz-core-location.html). `performer.actor` is a `Reference` to a [UZ Core Practitioner](StructureDefinition-uz-core-practitioner.html). `quantity` is the amount actually dispensed, which is not necessarily the whole volume of the source product. `preparedDate` is when the product was selected or matched for this dispense, not when the source product was collected, and `whenHandedOver` is when it was actually dispatched or handed over.
+`basedOn` and `performer` repeat; `location` and `destination` do not, and both are a `Reference` to a [UZ Core Location](StructureDefinition-uz-core-location.html). `performer.actor` is a `Reference` to a [UZ Core Practitioner](StructureDefinition-uz-core-practitioner.html). `performer.function` is a `CodeableConcept` with a code from the HL7 performer function list. `quantity` is the amount actually dispensed; a blood component is normally issued as a whole unit. `preparedDate` is when the product was selected or matched for this dispense, not when the source product was collected, and `whenHandedOver` is when it was actually dispatched or handed over.
+
+#### The dispense number {#identifier-slices}
+
+`identifier` is sliced by its `system` URI, so the system must match exactly:
+
+| Identifier | `system` | Issued by |
+|---|---|---|
+| [Dispense number](NamingSystem-uzb-bdp-dispense-number.html) | `https://dhp.uz/fhir/core/sid/doc/uz/bdp-dispense` | The system that issues the product, such as the blood bank |
+
+A donation number or a product unit number identifies the product, not the dispense, and stays on the [BiologicallyDerivedProduct](StructureDefinition-uz-core-biologically-derived-product.html).
 
 #### A unit that was returned
 
-An issued unit comes back unused, so the `status` becomes `returned`. This example also carries the optional codes: the relationship between donor and recipient, the type of matching that was done, and the function of the performer:
+Two days before the issue above, the same unit was issued for the same order and came back unused, so the `status` of that dispense became `returned`. This example also carries the optional codes: the relationship between donor and recipient, the type of matching that was done, and the function of the performer:
 
 ```json
 {
   "resourceType": "BiologicallyDerivedProductDispense",
   "meta": { "profile": ["https://dhp.uz/fhir/core/StructureDefinition/uz-core-biologicallyderivedproductdispense"] },
+  "identifier": [
+    { "system": "https://dhp.uz/fhir/core/sid/doc/uz/bdp-dispense", "value": "ISS-2026-0001" }
+  ],
   "basedOn": [ { "reference": "ServiceRequest/example-bdp-dispense-request" } ],
   "status": "returned",
   "originRelationshipType": {
@@ -101,7 +129,7 @@ An issued unit comes back unused, so the `status` becomes `returned`. This examp
       "actor": { "reference": "Practitioner/example-practitioner" }
     }
   ],
-  "whenHandedOver": "2026-11-09T10:30:00+05:00"
+  "whenHandedOver": "2026-09-18T14:00:00+05:00"
 }
 ```
 

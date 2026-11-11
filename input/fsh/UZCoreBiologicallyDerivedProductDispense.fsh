@@ -6,10 +6,15 @@ Description: "Uzbekistan Core BiologicallyDerivedProductDispense profile, used t
 * ^status = #active
 * ^experimental = true
 * identifier MS
-* identifier ^short = "Business identifier of the dispense"
-* identifier ^comment = "The identifier system must be agreed with the issuing system. A donation number or product unit number does not identify the dispense."
-* identifier.system 1..1
-* identifier.value 1..1
+* identifier ^slicing.discriminator.type = #value
+* identifier ^slicing.discriminator.path = "system"
+* identifier ^slicing.rules = #open
+* identifier contains dispense 0..1 MS
+* identifier[dispense].system 1..1 MS
+* identifier[dispense].system = $bdp-dispense-number
+* identifier[dispense].value 1..1 MS
+* identifier[dispense] ^short = "Dispense number assigned by the issuing system, such as the blood bank"
+* identifier[dispense] ^comment = "A donation number or product unit number does not identify the dispense."
 * basedOn MS
 * basedOn only Reference(UZCoreServiceRequest)
 * basedOn ^short = "Order or request fulfilled by this dispense"
@@ -29,7 +34,7 @@ Description: "Uzbekistan Core BiologicallyDerivedProductDispense profile, used t
 * patient ^short = "Intended recipient of the product"
 * matchStatus from BDPDispenseMatchStatusVS (example)
 * matchStatus ^short = "Type of matching performed for the recipient"
-* matchStatus ^comment = "In the BMS transfusion workflow, ABO and Rh-Hr compatibility results are recorded in the control-check Observation. This element remains available for other workflows."
+* matchStatus ^comment = "This element says which kind of matching was performed. The ABO and Rh compatibility results themselves are recorded in an Observation."
 * performer MS
 * performer ^short = "Participants in the dispense"
 * performer.function from BDPDispensePerformerFunctionVS (example)
@@ -40,12 +45,12 @@ Description: "Uzbekistan Core BiologicallyDerivedProductDispense profile, used t
 * location only Reference(UZCoreLocation)
 * location ^short = "Location where the dispense occurred"
 * quantity ^short = "Amount actually dispensed"
-* quantity ^comment = "The dispensed quantity is not necessarily the total volume of the source product."
+* quantity ^comment = "A blood component is normally issued as a whole unit, so this is the volume of the unit."
 * preparedDate ^short = "When the product was selected or matched for this dispense"
 * preparedDate ^comment = "This is not the collection date of the source product."
 * whenHandedOver MS
 * whenHandedOver ^short = "When the product was actually dispatched or handed over"
-* whenHandedOver ^comment = "Use the protocol save time only if it represents the actual handover."
+* whenHandedOver ^comment = "Use the time the record was saved only if it is the actual handover time."
 * destination only Reference(UZCoreLocation)
 * destination ^short = "Location to which the product was dispatched"
 * note ^short = "Additional information about the dispense"
@@ -65,25 +70,28 @@ Instance: example-bdp-dispense-issued
 InstanceOf: UZCoreBiologicallyDerivedProductDispense
 Usage: #example
 Title: "Example UZ Core BiologicallyDerivedProductDispense - Issued"
-Description: "A blood component issued for a patient, with an order, a practitioner and the actual handover time."
+Description: "A blood component issued for a patient, with the dispense number, the order, the practitioner who released it and the actual handover time."
 * language = #uz
+* identifier[dispense].value = "ISS-2026-0002"
 * status = #issued
 * basedOn = Reference(example-bdp-dispense-request)
 * product = Reference(example-blood-component-product)
 * patient = Reference(Patient/example-salim)
+* performer.function = $bdp-dispense-performer-function#release
 * performer.actor = Reference(Practitioner/example-practitioner)
 * location = Reference(Location/example-location-1)
 * destination = Reference(Location/example-location-2)
-* quantity = 250 'mL' "mL"
-* preparedDate = "2026-11-09T10:15:00+05:00"
-* whenHandedOver = "2026-11-09T10:30:00+05:00"
+* quantity = 263 'mL' "mL"
+* preparedDate = "2026-09-20T10:15:00+05:00"
+* whenHandedOver = "2026-09-20T10:30:00+05:00"
 
 Instance: example-bdp-dispense-returned
 InstanceOf: UZCoreBiologicallyDerivedProductDispense
 Usage: #example
 Title: "Example UZ Core BiologicallyDerivedProductDispense - Returned"
-Description: "A separate illustrative scenario in which an issued component has been returned. A stopped transfusion alone does not mean the product was returned."
+Description: "A blood component issued for a patient two days before the issued example and returned unused to the blood bank, which is why it could be issued again. A stopped transfusion alone does not mean the product was returned."
 * language = #uz
+* identifier[dispense].value = "ISS-2026-0001"
 * status = #returned
 * basedOn = Reference(example-bdp-dispense-request)
 * product = Reference(example-blood-component-product)
@@ -92,7 +100,7 @@ Description: "A separate illustrative scenario in which an issued component has 
 * matchStatus = $bdp-dispense-match-status#crossmatched
 * performer.function = $bdp-dispense-performer-function#receipt
 * performer.actor = Reference(Practitioner/example-practitioner)
-* whenHandedOver = "2026-11-09T10:30:00+05:00"
+* whenHandedOver = "2026-09-18T14:00:00+05:00"
 
 Instance: example-bdp-dispense-request
 InstanceOf: UZCoreServiceRequest
@@ -102,7 +110,7 @@ Description: "An order for a blood component to be issued for a patient."
 * language = #uz
 * status = #active
 * intent = #order
-* code.concept.text = "Qon komponentini quyish uchun berish"
+* code = $sct#71493000 "Transfusion of packed red blood cells"
 * subject = Reference(Patient/example-salim)
-* authoredOn = "2026-11-09T10:00:00+05:00"
+* authoredOn = "2026-09-18T13:30:00+05:00"
 * requester = Reference(Practitioner/example-practitioner)
