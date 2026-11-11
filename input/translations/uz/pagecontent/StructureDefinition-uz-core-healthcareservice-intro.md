@@ -16,8 +16,8 @@ Bazaviy FHIR HealthcareService da majburiy elementlar yo'q va ushbu profil ularn
 
 - `active` bayrog'i;
 - xizmat nomi;
-- kategoriya - DHP xizmat kategoriyasi slayci, laboratoriya kategoriyasi slayci yoki TXMK kategoriyasi slaycidan biriga kodlangan (har biri o'z milliy qiymatlar to'plamiga bog'langan);
-- tur - DHP xizmat slayci, laboratoriya tahlili slayci yoki TXMK xizmati slaycidan biriga kodlangan (har biri o'z milliy qiymatlar to'plamiga bog'langan).
+- kategoriya - DHP xizmat kategoriyasi slayci, laboratoriya kategoriyasi slayci yoki TXMK kategoriyasi slaycidan biriga kodlangan;
+- tur - DHP xizmat slayci, laboratoriya tahlili slayci yoki TXMK xizmati slaycidan biriga kodlangan.
 
 > Xizmat katalogdagi laboratoriya tahlili bo'lganda laboratoriya kategoriyasi/turi slayclaridan, klinik xizmatlar uchun esa DHP xizmat slayclaridan foydalaning - mos keladigan slaycni to'ldiring, ikkalasini emas.
 

@@ -29,7 +29,7 @@ Every profile page now has a narrative intro and a Quick Start. New ones were ad
 
 [UZ Core SupplyDelivery](StructureDefinition-uz-core-supply-delivery.html) records the location the items were dispatched from, such as the sending warehouse in a transfer between warehouses, in the new [Deliver from](StructureDefinition-supplydelivery-deliver-from.html) extension. Base FHIR SupplyDelivery has no element for it; the extension is the delivery counterpart of `SupplyRequest.deliverFrom`. The [warehouse transfer example](SupplyDelivery-example-warehouse-transfer-supply-delivery.html) shows it. The profile page has a narrative intro and a Quick Start.
 
-[Uzbekistan national medical services classifier (TXMK)](CodeSystem-uz-txmk-cs.html) holds the 10,699 medical services of the national classifier with Uzbek, Russian and English names. The same code system holds the 29 service groups used as categories. Value sets select from them for [service categories](ValueSet-uz-txmk-service-categories-vs.html), [service names](ValueSet-uz-txmk-service-names-vs.html) and [diagnostic imaging services](ValueSet-uz-txmk-imaging-vs.html). The [TXMK initial physician visit](HealthcareService-example-healthcareservice-txmk-initial-visit.html) example uses them.
+[Uzbekistan national medical services classifier (TXMK)](CodeSystem-txmk-cs.html) holds the 10,699 medical services of the national classifier with Uzbek, Russian and English names. The same code system holds the 29 service groups used as categories. Value sets select from them for [service categories](ValueSet-txmk-service-categories-vs.html), [service names](ValueSet-txmk-service-names-vs.html) and [diagnostic imaging services](ValueSet-txmk-imaging-vs.html). The [TXMK initial physician visit](HealthcareService-example-healthcareservice-txmk-initial-visit.html) example uses them.
 
 #### Changed
 
@@ -37,7 +37,7 @@ Every profile page now has a narrative intro and a Quick Start. New ones were ad
 
 Every reference to a Device in UZ Core profiles now targets [UZ Core Device](StructureDefinition-uz-core-device.html): Observation, Procedure, Condition, AdverseEvent, Composition, QuestionnaireResponse, Group, MedicationAdministration, MedicationDispense, InventoryItem, SupplyRequest and SupplyDelivery.
 
-[Procedure code](ValueSet-procedure-code-vs.html), bound to `code` in UZ Core Procedure and UZ Core ActivityDefinition, and [ServiceRequest procedures and investigations](ValueSet-service-request-code-vs.html), bound to `code` in UZ Core ServiceRequest, now include the [TXMK diagnostic imaging services](ValueSet-uz-txmk-imaging-vs.html).
+[Procedure code](ValueSet-procedure-code-vs.html), bound to `code` in UZ Core Procedure and UZ Core ActivityDefinition, and [ServiceRequest procedures and investigations](ValueSet-service-request-code-vs.html), bound to `code` in UZ Core ServiceRequest, now include the [TXMK diagnostic imaging services](ValueSet-txmk-imaging-vs.html).
 
 Removed a trailing newline from the BloodProductInventoryItem CSV folder name so the repository can be checked out on Windows.
 

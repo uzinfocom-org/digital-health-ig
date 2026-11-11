@@ -12,7 +12,7 @@ Description: "Procedure codes used in the Uzbekistan Digital Health Platform: SN
 // ICHI carries the statistical code a procedure is reported under. Both systems are
 // allowed on Procedure.code so a resource can carry either, or both as two codings.
 * include codes from valueset $ichi-vs
-* include codes from valueset UZTXMKImagingVS
+* include codes from valueset TXMKImagingVS
 
 // * include $sct#33879002
 // * include $sct#20135006
