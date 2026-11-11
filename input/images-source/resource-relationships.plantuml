@@ -1,7 +1,8 @@
 @startuml resource-relationships
 hide circle
 hide empty members
-skinparam linetype ortho
+skinparam nodesep 50
+skinparam ranksep 60
 title The core clinical record backbone
 
 class Patient [[StructureDefinition-uz-core-patient.html{Open the UZ Core Patient profile}]] #E8F0FE
@@ -11,21 +12,25 @@ class Condition [[StructureDefinition-uz-core-condition.html{Open the UZ Core Co
 class Observation [[StructureDefinition-uz-core-observation.html{Open the UZ Core Observation profile}]] #E8F0FE
 class Procedure [[StructureDefinition-uz-core-procedure.html{Open the UZ Core Procedure profile}]] #E8F0FE
 class MedicationRequest [[StructureDefinition-uz-core-medicationrequest.html{Open the UZ Core MedicationRequest profile}]] #E8F0FE
+class CarePlan [[StructureDefinition-uz-core-careplan.html{Open the UZ Core CarePlan profile}]] #E8F0FE
 class Composition [[StructureDefinition-uz-core-composition.html{Open the UZ Core Composition profile}]] #E8F0FE
 class Specimen [[StructureDefinition-uz-core-specimen.html{Open the UZ Core Specimen profile}]] #E8F0FE
 class ServiceRequest [[StructureDefinition-uz-core-servicerequest.html{Open the UZ Core ServiceRequest profile}]] #E8F0FE
 
 Patient "1" <-- "0..*" EpisodeOfCare : « patient »
-EpisodeOfCare "0..1" <-- "0..*" Encounter : « episodeOfCare »
+EpisodeOfCare "0..*" <-- "0..*" Encounter : « episodeOfCare »
 
-Encounter "1" <-- "0..*" Condition : « encounter »
-Encounter "1" <-- "0..*" Observation : « encounter »
-Encounter "1" <-- "0..*" Procedure : « encounter »
-Encounter "1" <-- "0..*" MedicationRequest : « encounter »
-Encounter "1" <-- "0..1" Composition : « encounter »
+Encounter "0..1" <-- "0..*" Condition : « encounter »
+Encounter "0..1" <-- "0..*" Observation : « encounter »
+Encounter "0..1" <-- "0..*" Procedure : « encounter »
+Encounter "0..1" <-- "0..*" MedicationRequest : « encounter »
+Encounter "0..1" <-- "0..*" Composition : « encounter »
+
+Observation "0..*" --> "0..*" CarePlan : « basedOn »
+Procedure "0..*" --> "0..*" CarePlan : « basedOn »
 
 Observation "0..*" --> "0..1" Specimen : « specimen »
-Specimen "0..*" --> "0..1" ServiceRequest : « request »
+Specimen "0..*" --> "0..*" ServiceRequest : « request »
 
 note as N
   These are the core record resources, not every
