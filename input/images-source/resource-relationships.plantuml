@@ -1,7 +1,8 @@
 @startuml resource-relationships
 hide circle
 hide empty members
-skinparam linetype ortho
+skinparam nodesep 50
+skinparam ranksep 60
 title The core clinical record backbone
 
 class Patient [[StructureDefinition-uz-core-patient.html{Open the UZ Core Patient profile}]] #E8F0FE
