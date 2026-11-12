@@ -15,11 +15,14 @@ Har bir Task yo'llanmaga ikki marta havola qilishi shart: `basedOn` da - u bajar
 - vazifaning biznes identifikatori (`identifier`, ko'pi bilan bitta);
 - kelishuv bosqichi (`code`: oilaviy shifokor / mutaxassis / mintaqaviy komissiya / respublika komissiyasi / sug'urta fondi / kasalxonaga yotqizish);
 - vazifa tegishli bo'lgan yo'llanma (`basedOn` va `focus`) va u qismi bo'lgan kattaroq vazifa (`partOf`);
-- hayot sikli holati (`status`: requested / accepted / in-progress / on-hold / completed / rejected / failed va boshqalar) va foydalanuvchilarga ko'rsatiladigan holat (`businessStatus`: ko'rib chiqilmoqda / tasdiqlangan / muddati o'tgan va boshqalar);
+- hayot sikli holati (`status`: requested / accepted / in-progress / on-hold / completed / rejected / failed va boshqalar) va foydalanuvchilarga ko'rsatiladigan holat (`businessStatus`: ko'rib chiqilmoqda / tasdiqlangan / muddati o'tgan / kasalxonaga yotqizish rejalashtirilgan va boshqalar);
+- vazifa nima uchun joriy holatda ekanligi (`statusReason`: tasdiqlovchi hujjat yo'q, tashxis yoki qabul qiluvchi muassasa noto'g'ri ko'rsatilgan, bemor davolanishdan bosh tortgan va boshqalar);
 - maqsad (`intent`, odatda order);
 - yo'llanma beriladigan [bemor](StructureDefinition-uz-core-patient.html) (`for`);
 - ushbu bosqichda kim harakat qilishi kerakligi (`owner`: [Organization](StructureDefinition-uz-core-organization.html) yoki [PractitionerRole](StructureDefinition-uz-core-practitioner-role.html));
-- bosqich muddati (`requestedPeriod`, uning boshi va oxiri) va u ustidagi ish haqiqatda qachon boshlanib, qachon tugagani (`executionPeriod`).
+- bosqichni bajargan [PractitionerRole](StructureDefinition-uz-core-practitioner-role.html) (`performer.actor`), uni so'ragan [Organization](StructureDefinition-uz-core-organization.html) (`requester`) va uni bajarish so'ralgan tashkilotlar (`requestedPerformer`);
+- vazifa qachon yaratilgani (`authoredOn`), bosqich muddati (`requestedPeriod`, uning boshi va oxiri) va u ustidagi ish haqiqatda qachon boshlanib, qachon tugagani (`executionPeriod`);
+- vazifaga izohlar (`note`).
 
 ### Ikki holat
 

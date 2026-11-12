@@ -12,13 +12,14 @@ This profile adds no mandatory elements. The base resource requires a `status`, 
 
 - the business identifier of the order or referral (`identifier`), and a shared identifier that groups requests made together, such as all tests on one specimen (`requisition`);
 - the status of the request (draft / active / on-hold / revoked / completed / entered-in-error / unknown) and its intent (proposal / plan / order and its subtypes);
-- the kind of service (`category`), with at most one national category such as a laboratory section or hospital admission;
+- the kind of service (`category`), with at most one national category such as a laboratory section or hospital admission, and the purposes of a referral (consultation / diagnostics / treatment / diagnosis clarification / dispensary registration / delivery / other) and the clinical specialty the referral is addressed to;
 - the urgency (`priority`: routine / urgent / asap / stat) and whether the service must not be done (`doNotPerform`);
 - the service requested (`code`);
 - the [Patient](StructureDefinition-uz-core-patient.html) or [Location](StructureDefinition-uz-core-location.html) the request is for (`subject`) and the [Encounter](StructureDefinition-uz-core-encounter.html) in which it was made;
 - when the service should happen (`occurrence[x]`) and when the request was issued (`authoredOn`);
-- who issued it (`requester`: a practitioner, practitioner role, organization, patient or related person);
-- why the service is needed (`reason`), coded in ICD-10 or SNOMED CT or as a reference to a [Condition](StructureDefinition-uz-core-condition.html);
+- who issued it (`requester`: a practitioner, practitioner role, organization, patient or related person) and the [Organization](StructureDefinition-uz-core-organization.html) asked to perform it (`performer`);
+- details of the order (`orderDetail.parameter`), such as the basis for state-funded treatment for a qualifying diagnosis, a `basis` parameter with code LOINC `86947-9` Reason for hospitalization;
+- why the service is needed (`reason`), coded in ICD-10 or SNOMED CT or as a reference to a [Condition](StructureDefinition-uz-core-condition.html), and for state-funded treatment the SBDL criterion beside the ICD-10 code;
 - how the service is paid for (the [payment type](StructureDefinition-payment-type.html) extension: free / paid / insurance / state tariff / other) and the insurance coverage (`insurance`);
 - other information that supports the request (`supportingInfo`) and the [Specimen](StructureDefinition-uz-core-specimen.html) to be analysed (`specimen`);
 - instructions for the patient, such as how to prepare (`patientInstruction`).
@@ -122,7 +123,7 @@ A family doctor orders an urgent complete blood count during a visit. The order 
 }
 ```
 
-`category` and `reason` are both sliced by value. `category` holds at most one code from the [national ServiceRequest categories](ValueSet-service-request-categories-vs.html) (laboratory sections and SNOMED CT service kinds), and other categories may sit beside it. `reason` takes ICD-10 or SNOMED CT codes from the national condition codes; to point to a recorded diagnosis instead, use `"reference": { "reference": "Condition/[id]" }` in place of `concept`. `patientInstruction` repeats, and each entry is markdown text or a reference to a document.
+`category` and `reason` are both sliced by value. `category` holds at most one code from the [national ServiceRequest categories](ValueSet-service-request-categories-vs.html) (laboratory sections and SNOMED CT service kinds), and other categories may sit beside it. A referral adds its purposes and at most one [clinical specialty](ValueSet-service-request-specialty-vs.html): a SNOMED CT code, or a local code where SNOMED CT has no equivalent, such as TB medicine. `reason` takes ICD-10 or SNOMED CT codes from the national condition codes; to point to a recorded diagnosis instead, use `"reference": { "reference": "Condition/[id]" }` in place of `concept`. `patientInstruction` repeats, and each entry is markdown text or a reference to a document.
 
 #### A state-funded referral for hospitalization
 
@@ -165,12 +166,21 @@ A family doctor refers a patient for planned hospitalization under the state tar
   "reason": [
     {
       "concept": {
-        "coding": [ { "system": "http://hl7.org/fhir/sid/icd-10", "code": "K80.2" } ]
+        "coding": [
+          { "system": "http://hl7.org/fhir/sid/icd-10", "code": "K80.2" },
+          {
+            "system": "https://terminology.dhp.uz/fhir/core/CodeSystem/sbdl-cs",
+            "code": "SBDL-005200-7",
+            "display": "Birlamchi jarrohlik amaliyotlari"
+          }
+        ]
       }
     }
   ]
 }
 ```
+
+For a state-funded referral, the ICD-10 coding in `reason` is joined by the [SBDL criterion](ValueSet-sbdl-vs.html) the treatment qualifies under: the State Health Insurance Fund's code for this criterion and diagnosis. Both codings describe one reason, so they sit in the same `concept`. When the reason is a reference to a Condition, put the SBDL code in that Condition's `code` beside its ICD-10 code.
 
 The payment type decides what happens next. With the state tariff, the platform starts the chain of [approval Tasks](StructureDefinition-uz-core-referral-approval-task.html) and keeps the ServiceRequest `status` in step with them; with any other payment type the referral goes straight to the performer. `occurrencePeriod` is the window in which the service should happen; use `occurrenceDateTime` for a fixed time.
 

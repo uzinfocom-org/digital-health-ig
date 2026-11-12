@@ -148,6 +148,6 @@ Each `section` has a `title`, a `code` saying what it contains, a narrative `tex
 }
 ```
 
-A section must have at least one of `text`, `entry` or nested `section`, and `emptyReason` is only allowed when the section has no entries. Section `code`s are usually LOINC document section codes, here 10164-2 (history of present illness) and 48765-2 (allergies). `text.status` is `generated` when the narrative is produced from the entries, `additional` when it says more than they do. `orderedBy` tells the reader how the entries are sorted, here by event date. Section `author` is only needed when it differs from the document author.
+A section must have at least one of `text`, `entry` or nested `section`, and `emptyReason` is only allowed when the section has no entries. Section `code`s are usually LOINC document section codes, here 10164-2 (history of present illness) and 48765-2 (allergies). A discharge summary (epicrisis) takes its section codes from [Discharge summary section](ValueSet-discharge-summary-section-vs.html): LOINC for complaints, history of present illness, current clinical status and neurological status, and local codes for life history, epidemiological history and local status. `text.status` is `generated` when the narrative is produced from the entries, `additional` when it says more than they do. `orderedBy` tells the reader how the entries are sorted, here by event date. Section `author` is only needed when it differs from the document author.
 
 For example API calls, see the [Quick Start](#quick-start) at the bottom of this page.

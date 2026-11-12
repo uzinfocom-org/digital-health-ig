@@ -15,11 +15,14 @@ UZ Core Task Referral Approval отслеживает один шаг согла
 - бизнес-идентификатор задачи (`identifier`, не более одного);
 - этап согласования (`code`: семейный врач / специалист / региональная комиссия / республиканская комиссия / страховой фонд / госпитализация);
 - направление, к которому относится задача (`basedOn` и `focus`), и более крупную задачу, частью которой она является (`partOf`);
-- статус жизненного цикла (`status`: requested / accepted / in-progress / on-hold / completed / rejected / failed и другие) и статус, показываемый пользователям (`businessStatus`: на рассмотрении / подтверждено / просрочено и другие);
+- статус жизненного цикла (`status`: requested / accepted / in-progress / on-hold / completed / rejected / failed и другие) и статус, показываемый пользователям (`businessStatus`: на рассмотрении / подтверждено / просрочено / госпитализация запланирована и другие);
+- почему задача находится в текущем статусе (`statusReason`: отсутствует подтверждающий документ, неверно указан диагноз или принимающее учреждение, пациент отказался от лечения и другие);
 - намерение (`intent`, обычно order);
 - [пациента](StructureDefinition-uz-core-patient.html), для которого выписано направление (`for`);
 - кто должен действовать на этом этапе (`owner`: [Organization](StructureDefinition-uz-core-organization.html) или [PractitionerRole](StructureDefinition-uz-core-practitioner-role.html));
-- срок этапа (`requestedPeriod`, его начало и конец) и когда работа над ним фактически началась и закончилась (`executionPeriod`).
+- [PractitionerRole](StructureDefinition-uz-core-practitioner-role.html), выполнивший этап (`performer.actor`), [Organization](StructureDefinition-uz-core-organization.html), запросившую его (`requester`), и организации, которым предложено его выполнить (`requestedPerformer`);
+- когда задача создана (`authoredOn`), срок этапа (`requestedPeriod`, его начало и конец) и когда работа над ним фактически началась и закончилась (`executionPeriod`);
+- комментарии к задаче (`note`).
 
 ### Два статуса
 

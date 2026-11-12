@@ -23,13 +23,20 @@ Description: "Example ServiceRequest for CBC (Umumiy qon tahlili) order"
 * specimen[0] = Reference(Specimen/example-specimen-blood-cbc)
 
 Instance: example-hospitalization-referral
-InstanceOf: ServiceRequest
+InstanceOf: UZCoreServiceRequest
 Usage: #example
 Description: "Example state-insurance referral for planned hospitalization; its approval chain is tracked by the UZCoreTask examples"
 * status = #active
 * intent = #order
+* category[dhpCategory] = $sct#32485007 "Admission to hospital"
+* category[referralPurpose] = ServiceRequestReferralPurposeCS#purpose-0001-0003 "Treatment"
+* category[specialty] = $sct#394612005 "Urology"
+* orderDetail.parameter[basis].code = $loinc#86947-9
+* orderDetail.parameter[basis].valueCodeableConcept = https://terminology.dhp.uz/fhir/core/CodeSystem/service-request-basis-cs#basis-0001-00001 "Solitary kidney stone (uncomplicated course)"
 * code = $sct#306206005 "Referral to service"
 * subject = Reference(Patient/example-nodira)
+* reason[icd10].concept.coding[icd10] = $icd-10#N20.0
+* reason[icd10].concept.coding[sbdl] = sbdl-cs#SBDL-000001-0 "Solitary kidney stone (uncomplicated course)"
 * requester = Reference(PractitionerRole/example-practitionerrole)
 * authoredOn = "2026-03-05T08:00:00Z"
 

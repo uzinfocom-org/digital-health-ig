@@ -35,3 +35,4 @@ Description: "Defines the set of codes that may be used in ServiceRequest to spe
 * $sct#409027005 "Infant care assessment"
 * $sct#440068009 "Home visit for newborn care and assessment"
 * $sct#410620009 "Well child visit"
+* $sct#3457005 "Patient referral"

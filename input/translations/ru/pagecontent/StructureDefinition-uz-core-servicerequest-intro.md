@@ -14,13 +14,14 @@ UZ Core ServiceRequest - это запрос на оказание услуги 
 
 - бизнес-идентификатор назначения или направления (`identifier`) и общий идентификатор, объединяющий запросы, созданные вместе, например все исследования одного образца (`requisition`);
 - статус запроса (draft / active / on-hold / revoked / completed / entered-in-error / unknown) и его намерение (proposal / plan / order и его подвиды);
-- вид услуги (`category`), не более чем с одной национальной категорией, например лабораторным разделом или госпитализацией;
+- вид услуги (`category`), не более чем с одной национальной категорией, например лабораторным разделом или госпитализацией, и цели направления (консультация / диагностика / лечение / уточнение диагноза / взятие на Д-учёт / родоразрешение / другое) и клиническая специальность, по которой выписано направление;
 - срочность (`priority`: routine / urgent / asap / stat) и признак того, что услугу выполнять нельзя (`doNotPerform`);
 - запрошенную услугу (`code`);
 - [пациента](StructureDefinition-uz-core-patient.html) или [место](StructureDefinition-uz-core-location.html), для которого создан запрос (`subject`), и [Encounter](StructureDefinition-uz-core-encounter.html), в ходе которого он создан;
 - когда услуга должна быть оказана (`occurrence[x]`) и когда запрос был выписан (`authoredOn`);
-- кто его выписал (`requester`: медицинский работник, должность медицинского работника, организация, пациент или родственник);
-- зачем нужна услуга (`reason`): код ICD-10 или SNOMED CT либо ссылка на [Condition](StructureDefinition-uz-core-condition.html);
+- кто его выписал (`requester`: медицинский работник, должность медицинского работника, организация, пациент или родственник) и [Organization](StructureDefinition-uz-core-organization.html), которой предложено её выполнить (`performer`);
+- детали назначения (`orderDetail.parameter`), например основание для лечения по льготному диагнозу - параметр `basis` с кодом LOINC `86947-9` Reason for hospitalization;
+- зачем нужна услуга (`reason`): код ICD-10 или SNOMED CT либо ссылка на [Condition](StructureDefinition-uz-core-condition.html), а для лечения за счёт государства - критерий SBDL рядом с кодом ICD-10;
 - как оплачивается услуга (расширение [вида оплаты](StructureDefinition-payment-type.html): бесплатно / платно / страхование / государственный тариф / прочее) и страховое покрытие (`insurance`);
 - прочие сведения в обоснование запроса (`supportingInfo`) и [образец](StructureDefinition-uz-core-specimen.html) для исследования (`specimen`);
 - указания для пациента, например как подготовиться (`patientInstruction`).
@@ -124,7 +125,7 @@ UZ Core ServiceRequest - это запрос на оказание услуги 
 }
 ```
 
-`category` и `reason` нарезаны по значению. `category` содержит не более одного кода из [национальных категорий ServiceRequest](ValueSet-service-request-categories-vs.html) (лабораторные разделы и виды услуг SNOMED CT), рядом с ним допускаются другие категории. `reason` принимает коды ICD-10 или SNOMED CT из национальных кодов состояний; чтобы сослаться на записанный диагноз, используйте `"reference": { "reference": "Condition/[id]" }` вместо `concept`. `patientInstruction` повторяется, каждая запись - текст в формате markdown или ссылка на документ.
+`category` и `reason` нарезаны по значению. `category` содержит не более одного кода из [национальных категорий ServiceRequest](ValueSet-service-request-categories-vs.html) (лабораторные разделы и виды услуг SNOMED CT), рядом с ним допускаются другие категории. Направление добавляет свои цели и не более одной [клинической специальности](ValueSet-service-request-specialty-vs.html): код SNOMED CT или локальный код там, где в SNOMED CT нет эквивалента, например фтизиатрия. `reason` принимает коды ICD-10 или SNOMED CT из национальных кодов состояний; чтобы сослаться на записанный диагноз, используйте `"reference": { "reference": "Condition/[id]" }` вместо `concept`. `patientInstruction` повторяется, каждая запись - текст в формате markdown или ссылка на документ.
 
 #### Направление на госпитализацию за счёт государства
 
@@ -167,12 +168,21 @@ UZ Core ServiceRequest - это запрос на оказание услуги 
   "reason": [
     {
       "concept": {
-        "coding": [ { "system": "http://hl7.org/fhir/sid/icd-10", "code": "K80.2" } ]
+        "coding": [
+          { "system": "http://hl7.org/fhir/sid/icd-10", "code": "K80.2" },
+          {
+            "system": "https://terminology.dhp.uz/fhir/core/CodeSystem/sbdl-cs",
+            "code": "SBDL-005200-7",
+            "display": "Birlamchi jarrohlik amaliyotlari"
+          }
+        ]
       }
     }
   ]
 }
 ```
+
+В направлении за счёт государства рядом с кодировкой ICD-10 в `reason` указывается [критерий SBDL](ValueSet-sbdl-vs.html), по которому лечение оплачивается государством: код Государственного фонда медицинского страхования для этого критерия и диагноза. Обе кодировки описывают одну причину, поэтому находятся в одном `concept`. Если причина - ссылка на Condition, укажите код SBDL в `code` этого Condition рядом с его кодом ICD-10.
 
 Дальнейший ход определяет вид оплаты. При государственном тарифе платформа запускает цепочку [Task согласования](StructureDefinition-uz-core-referral-approval-task.html) и согласует с ними `status` ServiceRequest; при любом другом виде оплаты направление сразу переходит к исполнителю. `occurrencePeriod` - окно, в течение которого услуга должна быть оказана; для фиксированного времени используйте `occurrenceDateTime`.
 
