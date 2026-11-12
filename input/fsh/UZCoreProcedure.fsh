@@ -40,6 +40,9 @@ Description: "Uzbekistan Core Procedure Profile, used for documenting an action 
 * bodySite[snomedBodySite] from $bodysite (required)
 * bodySite[snomedBodySite] ^short = "Body site coded in SNOMED CT"
 * outcome from ProcedureOutcomeVS (extensible)
+* complication MS
+* complication from ProcedureComplicationVS (preferred)
+* complication only CodeableReference(UZCoreCondition)
 
 * basedOn only Reference(UZCoreCarePlan or ServiceRequest)
 * partOf only Reference(UZCoreProcedure or UZCoreObservation or MedicationAdministration)

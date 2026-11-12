@@ -53,6 +53,8 @@ Examples no longer set a display on HL7 codes where it differed from the HL7 ter
 
 [UZ Core Patient](StructureDefinition-uz-core-patient.html) accepts more than one birth certificate (`birthCertificate` is now 0..* instead of 0..1) and no longer fixes its `use`, so a patient's superseded certificate can be recorded with `use = old` next to the current one with `use = official`.
 
+[UZ Core Procedure](StructureDefinition-uz-core-procedure.html) recommends [procedure complication codes](ValueSet-procedure-complication-vs.html) for fainting, collapse, angina attack, anaphylactic shock and no reaction, with Uzbek and Russian translations.
+
 #### Breaking changes
 
 The request resource types and participant resource type supplements, `https://terminology.dhp.uz/fhir/core/CodeSystem/request-resource-types-cs` and `https://terminology.dhp.uz/fhir/core/CodeSystem/participant-resource-type-cs`, are removed. They translated the same `http://hl7.org/fhir/fhir-types` codes as the FHIR types supplement, so those codes had two Russian and two Uzbek designations. [Request resource types](ValueSet-request-resource-types-vs.html) and [Resource types](ValueSet-resource-type-vs.html) now use the [FHIR types supplement](CodeSystem-fhir-types-cs.html). Systems that load supplements by URL switch to `https://terminology.dhp.uz/fhir/core/CodeSystem/fhir-types-cs`.
