@@ -222,6 +222,7 @@ When defining profile rules, the following principles must be taken into account
 - **Bindings**: When specifying a binding to a ValueSet, always explicitly specify the binding strength (`required`, `extensible`, `preferred` or `example`). Use a `required` binding for mandatory elements with a fixed set of values. Use an `extensible` binding when additional codes are allowed. Use a `preferred` binding when the DHP cannot or does not want to enforce specific codes, but gives a recommendation on their use. Use an `example` binding when the ValueSet serves only as an example without any recommendation. **Warning**: if an `extensible` binding is used, the validator will not be able to distinguish typos from new valid codes.
 - **Narrowing base ValueSets**: Do not narrow the ValueSet to which an element is bound in base FHIR down to a subset of its codes unless there is a specific reason to prohibit the rest. Such narrowing makes correct resources invalid and requires changing the ValueSet for every new scenario. To add translations, include the entire base set together with a supplement.
 - **Bindings of repeating elements**: Do not bind a ValueSet with a `required` or `extensible` binding to a repeating coded element (`0..*`, `1..*`) as a whole: the binding applies to every repetition and prevents adding codes from other systems alongside it. Create an open slice and bind the ValueSet to it.
+- **Invariants**: Do not use an invariant for what the profile itself can express: a cardinality, a fixed value, a binding (including on a slice) or a type or reference target constraint. Profile constraints show in the formal views and are checked by the validator directly. Add an invariant only when no such constraint can express the rule, for example "code or bodySite must be present".
 - **Additional Bindings**: Use `^binding.additional` when there is an opportunity to combine several profiles into one. This allows specifying different ValueSets for different usage contexts of the same element. Example from UZCoreSocioeconomicObservation:
 
 ```fsh
@@ -581,13 +582,14 @@ Models to follow: Organization, Location, Medication. A new profile without thes
 
 - `### Quick Start` with the standard paragraph about JWT, `[base]` and `%7C`;
 - read by id, search (first by identifier and code, then other useful queries), create, update with `If-Match`;
-- a link to the CapabilityStatement and `### Related` with links to workflows and general pages of the guide.
+- a closing line that links to the resource's section of the CapabilityStatement: `See the [CapabilityStatement](CapabilityStatement-DHPCapabilityStatement.html#<Type>1-<N>) for the full list of supported search parameters.` `<N>` is the resource's position in `rest.resource` of `input/vocabulary/CapabilityStatement-DHPCapabilityStatement.json`, counting from 1 (Patient is `#Patient1-1`); check the anchor on the built page, as it shifts when the server reorders resources. Do not list the parameters in prose. If the resource is not in the CapabilityStatement yet, write `<Type> is not yet listed in the [CapabilityStatement](CapabilityStatement-DHPCapabilityStatement.html); the searches above use standard FHIR R5 search parameters.` RU and UZ use the same sentence as the other pages (`Полный список поддерживаемых параметров поиска приведён в [CapabilityStatement](…).`, `Qo'llab-quvvatlanadigan qidiruv parametrlarining to'liq ro'yxati [CapabilityStatement](…) da keltirilgan.`);
+- `### Related` with links to workflows and general pages of the guide.
 
 **Rules:**
 
 - Every JSON example must pass validation against the profile (the command is in `AGENTS.md`): always `meta.profile`; the `display` of codes from local CodeSystems must match the resource's `language`; the optional `display` on HL7 codes is better omitted.
 - Lines in code blocks no longer than ~120 characters - split long objects across several lines, otherwise the page spreads out in width.
-- Use only search parameters from the DHP CapabilityStatement.
+- Use only search parameters a client can rely on: those the CapabilityStatement lists for the resource (standard FHIR R5 ones if it is not listed yet), plus UZ Core SearchParameters defined in this guide, linked to their page.
 - Do not repeat the same rule in several places on the page.
 - Put RU and UZ copies of both fragments in `input/translations/<lang>/pagecontent/` under the same file name, with a machine translation banner at the top. Code blocks and JSON are identical to the English ones. Set the anchors `{#quick-start}`, `{#finding}`, `{#identifier-slices}` explicitly - translated headings do not generate them.
 - Add a changelog entry (en, ru, uz) in its place in alphabetical order within the category, not at the end - see `AGENTS.md`.

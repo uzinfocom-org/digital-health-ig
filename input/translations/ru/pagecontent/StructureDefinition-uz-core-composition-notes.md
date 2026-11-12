@@ -61,7 +61,7 @@ If-Match: W/"3"   # the ETag from your last read; 412 if it changed since
 
 Обновляйте `date` при каждом изменении. Сборка и подписание окончательных документов описаны в [DHP Integrations IG](https://dhp.uz/fhir/integrations/en/).
 
-Полный список поддерживаемых параметров поиска приведён в [CapabilityStatement](CapabilityStatement-DHPCapabilityStatement.html).
+Полный список поддерживаемых параметров поиска приведён в [CapabilityStatement](CapabilityStatement-DHPCapabilityStatement.html#Composition1-41).
 
 ### Связанные разделы
 

@@ -2,6 +2,8 @@
 
 #### Добавлено
 
+[Flag code](SearchParameter-uz-core-flag-code.html) - новый параметр поиска `code`, который находит ресурсы [UZ Core Flag](StructureDefinition-uz-core-flag.html) по тому, о чём отметка, например действующие медицинские отводы пациента от донации крови. В базовом FHIR R5 такого параметра поиска нет.
+
 [MedicationKnowledge associated medication](SearchParameter-uz-core-medicationknowledge-associated-medication.html) - новый параметр поиска `associated-medication`, который находит записи [UZ Core MedicationKnowledge](StructureDefinition-uz-core-medicationknowledge.html) для препарата Medication, например утверждённые цены отпускаемого препарата. В базовом FHIR R5 такого параметра поиска нет. Используйте цепочку с `identifier`, чтобы искать по регистрационному номеру или GTIN препарата.
 
 [UZ Core ChargeItem](StructureDefinition-uz-core-chargeitem.html) фиксирует оплачиваемую позицию - услугу, товар или лекарство, предоставленные пациенту, - с её количеством и стоимостью и связывает её с событием, в котором она была предоставлена, например с [MedicationDispense](StructureDefinition-uz-core-medication-dispense.html), процедурой или лабораторным анализом. Идентификатор использует новую систему именования [идентификаторов ChargeItem](NamingSystem-uzb-charge-item-identifier.html), `status` привязан к набору [Статус ChargeItem](ValueSet-chargeitem-status-vs.html), а `code` - к набору [Код начисления](ValueSet-charge-item-code-vs.html), оба с переводами на узбекский и русский языки. На странице профиля есть вводное описание и раздел «Быстрый старт».
@@ -9,6 +11,8 @@
 [UZ Core Device](StructureDefinition-uz-core-device.html) описывает физическое медицинское изделие - больничное оборудование, например компьютерный томограф, или отдельное изделие, например внутриматочную спираль, - с его типом и категорией по SNOMED CT, производителем, моделью, серийным номером и номером серии, статусом и доступностью, а также организацией и местом, к которым оно относится. Вместе с профилем добавлены узбекские и русские переводы кодов HL7 для статуса изделия, статуса доступности, типа наименования и категории, а также типов контрацептивных изделий SNOMED CT. На странице профиля есть вводный раздел и Быстрый старт.
 
 [UZ Core DeviceUsage](StructureDefinition-uz-core-deviceusage.html) фиксирует, что пациент использует, использовал или будет использовать изделие, например кресло-коляску или имплантируемый венозный порт. Изделие указывается как концепт SNOMED CT или как ссылка на [UZ Core Device](StructureDefinition-uz-core-device.html). Он фиксирует, кто сообщил об использовании, когда оно началось и закончилось, условия использования, насколько регулярно изделие используется на самом деле и зачем. Вместе с ним добавлены узбекские и русские переводы кодов HL7 статуса использования изделия и приверженности. Страница профиля содержит вводное описание и Быстрый старт.
+
+[UZ Core Flag](StructureDefinition-uz-core-flag.html) фиксирует предупреждение или уведомление о пациенте. Первое применение - допуск к донации крови и медицинский отвод. Добавлены локальная система кодов решений и переводы категорий и статусов HL7 на узбекский и русский языки.
 
 [UZ Core InventoryReport](StructureDefinition-uz-core-inventoryreport.html) передаёт результат подсчёта запасов в месте хранения: тип подсчёта, приход или расход и его причину, а также количество каждой позиции с единицей измерения. С ним добавлены узбекские и русские переводы кодов HL7 статуса и типа подсчёта отчёта об инвентаризации и используемых в нём единиц представления SNOMED CT.
 
@@ -44,6 +48,8 @@
 
 [UZ Core Task Referral Approval](StructureDefinition-uz-core-referral-approval-task.html) поддерживает причину текущего статуса задачи (`statusReason`, из нового набора значений [Причины статуса задачи](ValueSet-task-status-reason-vs.html)), исполнителя (`performer`), дату создания (`authoredOn`), запрашивающую и запрашиваемые организации (`requester`, `requestedPerformer`) и комментарии. [Бизнес-статусы задач](CodeSystem-task-business-status-cs.html) дополнены восемью этапами направления на госпитализацию, от возврата на доработку до госпитализации или отказа от лечения.
 
+[UZ Core Patient](StructureDefinition-uz-core-patient.html) допускает несколько свидетельств о рождении (`birthCertificate` теперь 0..* вместо 0..1) и больше не фиксирует его `use`, поэтому прежнее свидетельство пациента можно передать с `use = old` рядом с действующим с `use = official`.
+
 Все ссылки на Device в профилях UZ Core теперь указывают на [UZ Core Device](StructureDefinition-uz-core-device.html): Observation, Procedure, Condition, AdverseEvent, Composition, QuestionnaireResponse, Group, MedicationAdministration, MedicationDispense, InventoryItem, SupplyRequest и SupplyDelivery.
 
 Заголовки и описания систем кодов и наборов значений теперь следуют шаблону именования из [руководства по моделированию](https://github.com/uzinfocom-org/digital-health-ig/blob/main/modelling-guidelines.md): supplement называется `[Concept] translations`, набор значений - `[Concept]`, а в заголовках больше нет слов вроде "CodeSystem" или "ValueSet". Канонические URL, идентификаторы и коды не изменились.
@@ -51,6 +57,8 @@
 [Пример Practitioner](Practitioner-example-practitioner.html) и примеры сертификата специалиста теперь используют вымышленные ПИНФЛ, номер сертификата и даты.
 
 [Пример Procedure](Procedure-example-procedure.html) теперь ссылается на [амбулаторный визит на физиотерапию](Encounter-example-physiotherapy-encounter.html) и состояние [боль в правой стопе](Condition-example-foot-pain.html) того же пациента, а не на визит и состояние другого пациента.
+
+Удалён перевод строки в конце имени папки CSV-файлов BloodProductInventoryItem, чтобы репозиторий можно было клонировать в Windows.
 
 #### Несовместимые изменения
 

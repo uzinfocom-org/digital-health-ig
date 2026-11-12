@@ -56,7 +56,7 @@ If-Match: W/"3"   # the ETag from your last read; 412 if it changed since
 
 Yangilashda `url` ni o'zgartirmang: HealthcareService yozuvlari ta'rifga u orqali havola qiladi.
 
-Qo'llab-quvvatlanadigan qidiruv parametrlarining to'liq ro'yxati [CapabilityStatement](CapabilityStatement-DHPCapabilityStatement.html) da keltirilgan.
+Qo'llab-quvvatlanadigan qidiruv parametrlarining to'liq ro'yxati [CapabilityStatement](CapabilityStatement-DHPCapabilityStatement.html#ObservationDefinition1-32) da keltirilgan.
 
 ### Bog'liq bo'limlar
 
