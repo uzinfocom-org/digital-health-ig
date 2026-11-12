@@ -244,7 +244,7 @@ Usage: #definition
 * date = "2025-11-06"
 * publisher = "Uzinfocom"
 * responsible = "Ministry of Health of the Republic of Uzbekistan"
-* type = $identifier-type#HC "Health card number"
+* type = $identifier-type#HC "Health Card Number"
 * description = "Naming system for health card number identifiers assigned by the Ministry of Health of the Republic of Uzbekistan. See https://yuz.uz/ru/news/elektronne-meditsinskie-kart-prosto-sovremenno-i-kachestvennofor legal justification."
 * jurisdiction = urn:iso:std:iso:3166#UZ "Uzbekistan"
 * usage = "Used for identifying individuals through their health card numbers within the Uzbekistan healthcare system."
@@ -582,7 +582,7 @@ Usage: #definition
 * date = "2026-01-08"
 * publisher = "Uzinfocom"
 * responsible = "Ministry of Finance of the Republic of Uzbekistan (Pension Fund)"
-* type = $identifier-type#PEN "Pension number"
+* type = $identifier-type#PEN "Pension Number"
 * description = "Naming system defining the pension number identifier issued by the Ministry of Finance of the Republic of Uzbekistan (Pension Fund), as referenced by the national identifier system and integrated with the e-government platform (iskm.egov.uz/minfin/services/pension/pinnp). The pension number associated with different pension types, including old-age pension, disability pension, survivor's pension, and other pension categories." 
 * jurisdiction = urn:iso:std:iso:3166#UZ "Uzbekistan"
 * usage = "Used to record and exchange a patient's pension number for administrative and eligibility purposes, including verification of pensioner status and applicable social or healthcare benefits. This identifier is not intended to replace national personal identifiers (such as JShShIR) and should be used only when pension-related identification is required."
@@ -731,6 +731,25 @@ Usage: #definition
 * usage = "Used in SupplyDelivery.identifier.system to identify and track a delivery and correlate it with the supply request it fulfils. Values must be unique across suppliers within this namespace, using coordinated allocation or an issuer-qualified value. Record the supplier in identifier.assigner."
 * uniqueId[0].type = #uri
 * uniqueId[=].value = $supply-delivery-number
+* uniqueId[=].preferred = true
+
+Instance: uzb-bdp-dispense-number
+InstanceOf: NamingSystem
+Description: "Dispense numbers assigned to the issue of biologically derived products, such as blood components, in Uzbekistan"
+Usage: #definition
+* url = "https://terminology.dhp.uz/fhir/core/NamingSystem/uzb-bdp-dispense-number"
+* name = "UzbekistanBiologicallyDerivedProductDispenseIdentifier"
+* status = #active
+* kind = #identifier
+* date = "2026-11-11"
+* publisher = "Uzinfocom"
+* responsible = "Ministry of Health of the Republic of Uzbekistan"
+* type = $identifier-type#FILL "Filler Identifier"
+* description = "Naming system for dispense numbers assigned by the issuing information system, such as a blood bank, when it issues a biologically derived product for a patient."
+* jurisdiction = urn:iso:std:iso:3166#UZ "Uzbekistan"
+* usage = "Used in BiologicallyDerivedProductDispense.identifier.system to identify and track the issue of a product for a patient. Values must be unique across issuing organizations within this namespace, using coordinated allocation or an issuer-qualified value. Record the issuing organization in identifier.assigner."
+* uniqueId[0].type = #uri
+* uniqueId[=].value = $bdp-dispense-number
 * uniqueId[=].preferred = true
 
 Instance: uzb-specialist-certificate

@@ -147,8 +147,8 @@ Title: "Example Encounter"
 Description: "Example of an psychiatric encounter"
 Usage: #example
 * status = #completed "Completed"
-* class = $v3-ActCode#IMP "Inpatient encounter"
-* priority = $v3ActPriority#EM "Emergency"
+* class = $v3-ActCode#IMP
+* priority = $v3ActPriority#EM
 * type[0] = encounter-type-cs#mserv-0001-00004  "Treatment services"
 * serviceType[0] = Reference(example-healthcareservice)
 * subject = Reference(example-patient)
