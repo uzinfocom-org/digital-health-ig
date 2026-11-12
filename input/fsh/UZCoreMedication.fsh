@@ -101,7 +101,7 @@ Usage: #example
   * use = #official
   * value = "UZ/MED/2024/00123"
 * code = inn-medication-name-cs#005325 "paracetamol"
-* status = $medication-status#active "Faol"
+* status = $medication-status#active
 * doseForm = medication-doseform-cs#TAB101 "tablets"
 * totalVolume
   * value = 500
@@ -153,7 +153,7 @@ Usage: #example
   * use = #official
   * value = "BOX-GRP-245"
 * code = $medical-product-classification#A06AH03 "naloxegol"
-* status = $medication-status#active "Faol"
+* status = $medication-status#active
 * doseForm = medication-doseform-cs#TAB101 "tablets"
 * totalVolume
   * value = 25
