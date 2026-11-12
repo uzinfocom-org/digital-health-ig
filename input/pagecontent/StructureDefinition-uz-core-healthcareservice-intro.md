@@ -14,8 +14,8 @@ The base FHIR HealthcareService has no mandatory elements, and this profile does
 
 - the active flag;
 - a name for the service;
-- a category - coded into either the DHP service category slice or the laboratory category slice (each bound to its national value set);
-- a type - coded into either the DHP service slice or the laboratory test slice (each bound to its national value set).
+- a category - coded into the DHP service category slice, the laboratory category slice or the TXMK category slice;
+- a type - coded into the DHP service slice, the laboratory test slice or the TXMK service slice.
 
 > Use the laboratory category/type slices when the service is a lab test in the catalogue, and the DHP service slices for clinical services - populate the slice that matches, not both.
 

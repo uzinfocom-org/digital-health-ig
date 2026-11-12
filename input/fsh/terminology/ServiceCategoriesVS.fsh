@@ -1,7 +1,7 @@
 ValueSet: ServiceCategoriesVS
 Id: service-categories-vs
-Title: "Cancer-related service category"
-Description: "Cancer-related service categories"
+Title: "Service category"
+Description: "Service categories"
 * ^experimental = true
 * ^language = #uz
 * include CancerTypesCS#cancr0003.00000
@@ -10,3 +10,5 @@ Description: "Cancer-related service categories"
 * include CancerTypesCS#cancr0013.00000
 * include CancerTypesCS#cancr0022.00000
 * include CancerTypesCS#cancr0043.00000
+
+* include codes from system LabCategoriesCS

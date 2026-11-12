@@ -633,14 +633,13 @@ msgstr ""
 
 # ImplementationGuide.definition.resource.name
 #: ImplementationGuide.definition.resource.name
-msgid "Cancer-related service category"
-msgstr "Категория онкологических услуг"
+msgid "Service category"
+msgstr "Категория услуг"
 
 # ImplementationGuide.definition.resource.description
 #: ImplementationGuide.definition.resource.description
-msgid "Cancer-related service categories"
-msgstr "Категории онкологических услуг"
-"Определяет категории онкологических услуг на узбекском и русском языках"
+msgid "Service categories"
+msgstr "Категории услуг"
 
 # ImplementationGuide.definition.resource.name
 #: ImplementationGuide.definition.resource.name

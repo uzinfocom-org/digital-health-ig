@@ -29,11 +29,15 @@ Every profile page now has a narrative intro and a Quick Start. New ones were ad
 
 [UZ Core SupplyDelivery](StructureDefinition-uz-core-supply-delivery.html) records the location the items were dispatched from, such as the sending warehouse in a transfer between warehouses, in the new [Deliver from](StructureDefinition-supplydelivery-deliver-from.html) extension. Base FHIR SupplyDelivery has no element for it; the extension is the delivery counterpart of `SupplyRequest.deliverFrom`. The [warehouse transfer example](SupplyDelivery-example-warehouse-transfer-supply-delivery.html) shows it. The profile page has a narrative intro and a Quick Start.
 
+[Uzbekistan national medical services classifier (TXMK)](CodeSystem-txmk-cs.html) holds the 10,699 medical services of the national classifier with Uzbek, Russian and English names. The same code system holds the 29 service groups used as categories. Value sets select from them for [service categories](ValueSet-txmk-service-categories-vs.html), [service names](ValueSet-txmk-service-names-vs.html) and [diagnostic imaging services](ValueSet-txmk-imaging-vs.html). The [TXMK initial physician visit](HealthcareService-example-healthcareservice-txmk-initial-visit.html) example uses them.
+
 #### Changed
 
 `basedOn` in [UZ Core Observation](StructureDefinition-uz-core-observation.html), [UZ Core Immunization](StructureDefinition-uz-core-immunization.html) and [UZ Core Procedure](StructureDefinition-uz-core-procedure.html) now references a UZ Core CarePlan instead of any CarePlan.
 
 Every reference to a Device in UZ Core profiles now targets [UZ Core Device](StructureDefinition-uz-core-device.html): Observation, Procedure, Condition, AdverseEvent, Composition, QuestionnaireResponse, Group, MedicationAdministration, MedicationDispense, InventoryItem, SupplyRequest and SupplyDelivery.
+
+[Procedure code](ValueSet-procedure-code-vs.html), bound to `code` in UZ Core Procedure and UZ Core ActivityDefinition, and [ServiceRequest procedures and investigations](ValueSet-service-request-code-vs.html), bound to `code` in UZ Core ServiceRequest, now include the [TXMK diagnostic imaging services](ValueSet-txmk-imaging-vs.html).
 
 Removed a trailing newline from the BloodProductInventoryItem CSV folder name so the repository can be checked out on Windows.
 
@@ -44,6 +48,8 @@ The [FHIR types supplement](CodeSystem-fhir-types-cs.html) gave each resource ty
 The [Procedure example](Procedure-example-procedure.html) now points at an [outpatient physiotherapy visit](Encounter-example-physiotherapy-encounter.html) and a [right foot pain](Condition-example-foot-pain.html) condition of the same patient, in place of another patient's encounter and condition.
 
 Titles and descriptions of code systems and value sets now follow the naming pattern in the [modelling guidelines](https://github.com/uzinfocom-org/digital-health-ig/blob/main/modelling-guidelines.md): a supplement is `[Concept] translations`, a value set is `[Concept]`, and titles no longer carry words such as "CodeSystem" or "ValueSet". Canonical URLs, ids and codes are unchanged.
+
+[UZ Core HealthcareService](StructureDefinition-uz-core-healthcareservice.html) has new Must Support slices for the TXMK service category and service in `category` and `type`. [Service categories](ValueSet-service-categories-vs.html), which the laboratory category slice is bound to, now also include the laboratory categories.
 
 [UZ Core Organization](StructureDefinition-uz-core-organization.html) and [UZ Core RelatedPerson](StructureDefinition-uz-core-relatedperson.html) no longer fix the display of the identifier type: the `mohId` and `argosId` slices fix only the system and code `XX`, and `healthCard` only `HC`. The fixed displays "Organization Identifier" and "Health card number" did not match the HL7 terminology displays "Organization identifier" and "Health Card Number", so every conforming instance got a terminology warning. An identifier type with either display, or without one, now conforms.
 
