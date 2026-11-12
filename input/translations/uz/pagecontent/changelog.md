@@ -14,7 +14,7 @@ Endi har bir profil sahifasida kirish qismi va Tez boshlash bo'limi bor. Ular [U
 
 [MedicationKnowledge associated medication](SearchParameter-uz-core-medicationknowledge-associated-medication.html) - Medication uchun [UZ Core MedicationKnowledge](StructureDefinition-uz-core-medicationknowledge.html) yozuvlarini, masalan, beriladigan preparatning tasdiqlangan narxlarini topadigan yangi `associated-medication` qidiruv parametri. Bazaviy FHIR R5 da bunday qidiruv parametri yo'q. Preparatning ro'yxatdan o'tish raqami yoki GTIN bo'yicha qidirish uchun uni `identifier` bilan zanjir qilib ishlating.
 
-[MedicationRequest holati sabablari](ValueSet-medicationrequest-status-reason-vs.html) ga DMED elektron retseptini bekor qilishning ikki sababi uchun [tibbiy qarshi ko'rsatma va boshqa sabab](CodeSystem-medicationrequest-status-reason-local-cs.html) milliy kodlari o'zbek, rus va ingliz tilidagi nomlari bilan qo'shildi. HL7 da ularning hech biriga ekvivalent yo'q.
+[MedicationRequest holati sabablari](ValueSet-medicationrequest-status-reason-vs.html) ga DMED elektron retseptini bekor qilish uchun SNOMED CT `438833006` (dori vositasini qo'llash qarshi ko'rsatilgan) kodi o'zbek va rus tilidagi nomlari bilan [supplement](CodeSystem-medicationrequest-status-reason-sct-cs.html) da qo'shildi.
 
 [O'lchov birliklari kodlari](CodeSystem-unit-of-measurement-cs.html): Farmatsevtika qo'mitasi dori vositalari reyestrining to'qqizta birligi qo'shildi, ular [o'lchov birliklari xaritasida](ConceptMap-unit-of-measurement-cm.html) UCUM bilan bog'langan.
 
@@ -46,13 +46,15 @@ BloodProductInventoryItem CSV papkasi nomining oxiridagi yangi qator belgisi oli
 
 Kod tizimlari va qiymatlar to'plamlarining sarlavhalari va tavsiflari endi [modellashtirish qo'llanmasidagi](https://github.com/uzinfocom-org/digital-health-ig/blob/main/modelling-guidelines.md) nomlash shabloniga mos keladi: supplement `[Concept] translations`, qiymatlar to'plami esa `[Concept]` deb nomlanadi, sarlavhalarda "CodeSystem" yoki "ValueSet" kabi so'zlar endi yo'q. Kanonik URL, identifikatorlar va kodlar o'zgarmadi.
 
-[MedicationRequest holatlari tarjimalari](CodeSystem-medicationrequest-status-cs.html) endi `ended` ni ruschada «Истекло» deb ataydi, avvalgi «Завершено» `completed` bilan bir xil edi.
+[MedicationRequest holatlari tarjimalari](CodeSystem-medicationrequest-status-cs.html) endi `ended` ni ruschada «Окончено» deb ataydi, avvalgi «Завершено» `completed` bilan bir xil edi.
 
 [Practitioner namunasi](Practitioner-example-practitioner.html) va mutaxassis sertifikati namunalarida endi o'ylab topilgan PINFL, sertifikat raqami va sanalar ishlatiladi.
 
 [Procedure namunasi](Procedure-example-procedure.html) endi boshqa bemorning tashrifi va holati o'rniga xuddi shu bemorning [ambulator fizioterapiya tashrifi](Encounter-example-physiotherapy-encounter.html) va [o'ng oyoq panjasidagi og'riq](Condition-example-foot-pain.html) holatiga havola qiladi.
 
 [UZ Core Medication](StructureDefinition-uz-core-medication.html) endi `identifier` ni talab qilmaydi. Har bir Medication da identifikator yoki kod bo'lishi shart (`uzcore-med-1` invarianti), shuning uchun INN bo'yicha tayinlangan dorini, masalan DMED elektron retseptlarida, dorixona aniq mahsulotni ko'rsatguncha faqat INN yoki ATC kodi bilan yuborish mumkin.
+
+[UZ Core MedicationRequest](StructureDefinition-uz-core-medicationrequest.html) endi `statusReason` ni required o'rniga extensible bog'laydi.
 
 [UZ Core Observation](StructureDefinition-uz-core-observation.html), [UZ Core Immunization](StructureDefinition-uz-core-immunization.html) va [UZ Core Procedure](StructureDefinition-uz-core-procedure.html) dagi `basedOn` endi istalgan CarePlan emas, UZ Core CarePlan ga havola qiladi.
 

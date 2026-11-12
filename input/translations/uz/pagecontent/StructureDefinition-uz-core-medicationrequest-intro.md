@@ -201,6 +201,6 @@ Qaytarib olingan retsept o'chirilmaydi. Uni yangilang: `status` ni `stopped` (do
 }
 ```
 
-`statusReason` [holat sabablari](ValueSet-medicationrequest-status-reason-vs.html) qiymatlar to'plamiga majburiy (required) bog'langan; `salg` bemorda allergiya paydo bo'lganini bildiradi. To'liq berilgan retsept `completed` holatiga o'tadi.
+`statusReason` [holat sabablari](ValueSet-medicationrequest-status-reason-vs.html) qiymatlar to'plamiga kengaytiriladigan (extensible) bog'langan; `salg` bemorda allergiya paydo bo'lganini bildiradi. To'liq berilgan retsept `completed` holatiga o'tadi.
 
 API chaqiruvlari misollari ushbu sahifa pastidagi [Tez boshlash](#quick-start) bo'limida keltirilgan.

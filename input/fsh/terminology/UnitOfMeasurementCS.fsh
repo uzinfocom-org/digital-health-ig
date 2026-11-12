@@ -776,11 +776,11 @@ o'lchov birligi"
   * ^designation[+].language = #en
   * ^designation[=].value = "pendant per cubic meter"
 
-* #360 "LE"
+* #360 "LE (lipazemik birlik)"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "ЛЕ"
+  * ^designation[=].value = "ЛЕ (липаземическая единица)"
   * ^designation[+].language = #en
-  * ^designation[=].value = "LE"
+  * ^designation[=].value = "LSU (lipasemic unit)"
 
 * #820 "lipoprotein lipaz birligi"
   * ^designation[0].language = #ru
@@ -892,9 +892,9 @@ doza (miqdor)"
   * ^designation[+].language = #en
   * ^designation[=].value = "milligram per dose"
 
-* #570 "millilitrga doza"
+* #570 "dozaga millilitr"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "миллилитр на доза"
+  * ^designation[=].value = "миллилитр на дозу"
   * ^designation[+].language = #en
   * ^designation[=].value = "milliliter per dose"
 

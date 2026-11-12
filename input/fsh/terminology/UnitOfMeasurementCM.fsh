@@ -383,7 +383,7 @@ o'lchov birligi"
 * group.element[=].target[=].relationship = #equivalent
 
 * group.element[+].code = #570
-* group.element[=].display = "millilitrga doza"
+* group.element[=].display = "dozaga millilitr"
 * group.element[=].target[+].code = #"mL/{dose}"
 * group.element[=].target[=].relationship = #equivalent
 
@@ -435,9 +435,9 @@ infektsion dozasi"
 * group.element[=].target[=].relationship = #equivalent
 
 * group.element[+].code = #360
-* group.element[=].display = "LE"
-* group.element[=].target[+].code = #"[Lf]"
-* group.element[=].target[=].relationship = #equivalent
+* group.element[=].display = "LE (lipazemik birlik)"
+* group.element[=].target[+].code = #"[arb'U]"
+* group.element[=].target[=].relationship = #source-is-narrower-than-target
 
 * group.element[+].code = #324
 * group.element[=].display = "flokulirlanadigan birlik"
@@ -477,21 +477,21 @@ infektsion dozasi"
 * group.element[+].code = #1200
 * group.element[=].display = "O'zgartirish harakat birliklari"
 * group.element[=].target[+].code = #"[arb'U]"
-* group.element[=].target[=].relationship = #equivalent
+* group.element[=].target[=].relationship = #source-is-narrower-than-target
 
 * group.element[+].code = #620
 * group.element[=].display = "Мышиная Единица Действия"
 * group.element[=].target[+].code = #"[arb'U]"
-* group.element[=].target[=].relationship = #equivalent
+* group.element[=].target[=].relationship = #source-is-narrower-than-target
 
 * group.element[+].code = #1300
 * group.element[=].display = "FTU"
 * group.element[=].target[+].code = #"[arb'U]"
-* group.element[=].target[=].relationship = #equivalent
+* group.element[=].target[=].relationship = #source-is-narrower-than-target
 
 * group.element[+].code = #900
 * group.element[=].display = "Fokusni shakllantirish birligi (FFU)"
-* group.element[=].target[+].code = #"{FFU}"
+* group.element[=].target[+].code = #"[FFU]"
 * group.element[=].target[=].relationship = #equivalent
 
 * group.element[+].code = #326

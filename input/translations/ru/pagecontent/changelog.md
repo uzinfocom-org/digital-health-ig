@@ -32,7 +32,7 @@
 
 [Лекарственные формы](CodeSystem-medication-doseform-cs.html) дополнены кодами `CTP101` катаплазма, `DRS101` повязка лекарственная, `HRB101` сырьё растительное лекарственное, `JEL101` желе лекарственное, `KIT101` набор, `LOT101` лосьон, `SHA101` шампунь лекарственный, `SUB101` субстанция и `TEA101` сбор лекарственный растительный с названиями на узбекском, русском и английском - для лекарственных форм электронного рецепта DMED и реестра лекарственных средств Фармкомитета, у которых не было кода.
 
-[Причины статуса MedicationRequest](ValueSet-medicationrequest-status-reason-vs.html) дополнены национальными кодами [медицинское противопоказание и другое](CodeSystem-medicationrequest-status-reason-local-cs.html) с названиями на узбекском, русском и английском - для двух причин отмены электронного рецепта DMED. Эквивалента ни для одной из них в HL7 нет.
+[Причины статуса MedicationRequest](ValueSet-medicationrequest-status-reason-vs.html) дополнены кодом SNOMED CT `438833006` (применение лекарственного средства противопоказано) с названиями на узбекском и русском в [supplement](CodeSystem-medicationrequest-status-reason-sct-cs.html) - для отмены электронного рецепта DMED.
 
 Страницы всех профилей теперь содержат вводный раздел и Быстрый старт. Они добавлены для [UZ Core BiologicallyDerivedProduct](StructureDefinition-uz-core-biologically-derived-product.html), [UZ Core Claim](StructureDefinition-uz-core-claim.html), [UZ Core ClaimResponse](StructureDefinition-uz-core-claim-response.html), [UZ Core Composition](StructureDefinition-uz-core-composition.html), [UZ Core DiagnosticReport](StructureDefinition-uz-core-diagnostic-report.html), [UZ Core Group](StructureDefinition-uz-core-group.html), [UZ Core InventoryItem](StructureDefinition-uz-core-inventoryitem.html), [UZ Core Laboratory ObservationDefinition](StructureDefinition-uz-core-laboratory-observation-definition.html), [UZ Core MedicationDispense](StructureDefinition-uz-core-medication-dispense.html), [UZ Core MedicationRequest](StructureDefinition-uz-core-medicationrequest.html), [UZ Core Task Referral Approval](StructureDefinition-uz-core-referral-approval-task.html), [UZ Core ServiceRequest](StructureDefinition-uz-core-servicerequest.html) и [UZ Core SupplyRequest](StructureDefinition-uz-core-supply-request.html); [UZ Core ActivityDefinition](StructureDefinition-uz-core-activitydefinition.html) получил вводный раздел и Быстрый старт рядом с уже имеющимися примечаниями.
 
@@ -46,6 +46,8 @@
 
 [UZ Core Medication](StructureDefinition-uz-core-medication.html) больше не требует `identifier`. У каждого Medication должен быть идентификатор или код (инвариант `uzcore-med-1`), поэтому лекарство, назначенное по МНН, как в электронных рецептах DMED, можно передать только с кодом МНН или ATC, пока аптека не указала конкретный препарат.
 
+[UZ Core MedicationRequest](StructureDefinition-uz-core-medicationrequest.html) привязывает `statusReason` как extensible вместо required.
+
 [UZ Core Organization](StructureDefinition-uz-core-organization.html) и [UZ Core RelatedPerson](StructureDefinition-uz-core-relatedperson.html) больше не фиксируют display типа идентификатора: срезы `mohId` и `argosId` фиксируют только систему и код `XX`, а `healthCard` - только `HC`. Зафиксированные display "Organization Identifier" и "Health card number" не совпадали с display терминологии HL7 "Organization identifier" и "Health Card Number", поэтому каждый соответствующий профилю экземпляр получал предупреждение терминологии. Теперь тип идентификатора соответствует профилю с любым из этих display или без него.
 
 [UZ Core Patient](StructureDefinition-uz-core-patient.html) допускает несколько свидетельств о рождении (`birthCertificate` теперь 0..* вместо 0..1) и больше не фиксирует его `use`, поэтому прежнее свидетельство пациента можно передать с `use = old` рядом с действующим с `use = official`.
@@ -54,7 +56,7 @@
 
 Заголовки и описания систем кодов и наборов значений теперь следуют шаблону именования из [руководства по моделированию](https://github.com/uzinfocom-org/digital-health-ig/blob/main/modelling-guidelines.md): supplement называется `[Concept] translations`, набор значений - `[Concept]`, а в заголовках больше нет слов вроде "CodeSystem" или "ValueSet". Канонические URL, идентификаторы и коды не изменились.
 
-[Переводы статусов MedicationRequest](CodeSystem-medicationrequest-status-cs.html) теперь называют `ended` по-русски «Истекло» вместо «Завершено», которое совпадало с `completed`.
+[Переводы статусов MedicationRequest](CodeSystem-medicationrequest-status-cs.html) теперь называют `ended` по-русски «Окончено» вместо «Завершено», которое совпадало с `completed`.
 
 [Пример Practitioner](Practitioner-example-practitioner.html) и примеры сертификата специалиста теперь используют вымышленные ПИНФЛ, номер сертификата и даты.
 
