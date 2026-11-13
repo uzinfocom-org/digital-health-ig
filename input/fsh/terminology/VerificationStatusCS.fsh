@@ -1,7 +1,7 @@
 CodeSystem: VerificationStatusCS
 Id: verification-status-cs
-Title: "Verification status types"
-Description: "Verification status in Uzbekistan"
+Title: "Verification status"
+Description: "Verification statuses in Uzbekistan"
 * insert OriginalCodeSystemDraft(verification-status-cs)
 
 * #unconfirmed "Tasdiqlanmagan"

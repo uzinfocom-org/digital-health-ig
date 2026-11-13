@@ -1,7 +1,7 @@
 CodeSystem: CompositionListEmptyReasonCS
 Id: list-empty-reason-cs
-Title: "Composition list empty reason"
-Description: "Composition list empty reason supplement with translations in uzbek and russian"
+Title: "Composition list empty reason translations"
+Description: "Composition list empty reason supplement with translations in Uzbek and Russian"
 * insert SupplementCodeSystem(list-empty-reason-cs, $composition-list-empty-reason, 1.0.1)
 
 * #nilknown

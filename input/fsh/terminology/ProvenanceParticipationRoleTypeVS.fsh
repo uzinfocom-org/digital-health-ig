@@ -1,7 +1,7 @@
 ValueSet: ProvenanceParticipationRoleTypeVS
 Id: provenance-participation-role-type-vs
-Title: "Provenance Participation Role Type"
-Description: "Defines how the participant participated in Uzbek and Russian"
+Title: "Provenance participation role type"
+Description: "Provenance participation role types"
 * ^url = "https://terminology.dhp.uz/fhir/core/ValueSet/provenance-participation-role-type-vs"
 * ^experimental = true
 * ^extension[0].url = $valueset-supplement

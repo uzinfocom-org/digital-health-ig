@@ -15,11 +15,11 @@ Ushbu profil qo'shadigan yagona majburiy element - kamida bitta identifikator; b
 
 
 - identifikator slayslari - ro'yxatga olish guvohnomasi raqami, GTIN, Asl Belgisi markirovka identifikatori, IKPU mahsulot/xizmat kodi va UzPharm guruh qadog'i identifikatori ([quyidagi jadvalga](#identifier-slices) qarang);
-- kod (code) - [dori vositalari tasnifi qiymatlar to'plamidan](ValueSet-medication-classification-vs.html) olingan ATC yoki INN tushunchasi (majburiy bog'lanish);
-- status (active / inactive / entered-in-error, majburiy qiymatlar to'plamidan);
+- kod (code) - dori vositasi uchun ATC yoki INN tushunchasi;
+- status (active / inactive / entered-in-error);
 - marketingAuthorizationHolder - ro'yxatga olish egasi bo'lgan [Organization](StructureDefinition-uz-core-organization.html) ga havola;
-- dori shakli (doseForm), milliy [dori shakllari qiymatlar to'plamidan](ValueSet-medication-doseform-vs.html) kodlangan (kengaytiriladigan bog'lanish);
-- umumiy hajm (totalVolume) - birliklari [umumiy hajm birliklari qiymatlar to'plamidan](ValueSet-medication-total-volume-units-vs.html) olingan UCUM miqdori (afzal bog'lanish);
+- dori shakli (doseForm), dori shakllarining milliy ro'yxati bo'yicha kodlangan;
+- umumiy hajm (totalVolume) - mahsulotdagi dori miqdori, UCUM miqdori sifatida;
 - tarkibiy qismlar (ingredient) - har biri tushuncha (ATC / INN) yoki boshqa Medication ga havola, dozasi nisbat ko'rinishida;
 - seriya (batch) - seriya raqami (AIK) va yaroqlilik muddati.
 

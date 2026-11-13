@@ -1,7 +1,7 @@
 CodeSystem: FundingSourceCS
 Id: funding-source-cs
-Title: "Immunization Funding Source translations"
-Description: "Immunization Funding Source supplement with Uzbek and Russian translations"
+Title: "Immunization funding source translations"
+Description: "Immunization funding source supplement with translations in Uzbek and Russian"
 * insert SupplementCodeSystem(funding-source-cs, $immunization-funding-source, 1.0.1)
 
 * #private "Private"

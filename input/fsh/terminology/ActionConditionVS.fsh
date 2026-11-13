@@ -1,7 +1,7 @@
 ValueSet: ActionConditionVS
 Id: action-condition-vs
-Title: "Action condition translations"
-Description: "Action condition codes with Uzbek and Russian translations"
+Title: "Action condition"
+Description: "Action conditions"
 
 * ^url = "https://terminology.dhp.uz/fhir/core/ValueSet/action-condition-vs"
 * ^experimental = true

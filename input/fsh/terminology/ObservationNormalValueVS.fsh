@@ -1,7 +1,7 @@
 ValueSet: ObservationNormalValueVS
 Id: observation-normal-value-vs
 Title: "Observation normal value"
-Description: "Observation normal value in Uzbekistan"
+Description: "Observation normal values"
 * ^url = "https://terminology.dhp.uz/fhir/core/ValueSet/observation-normal-value-vs"
 * ^experimental = true
 * ^extension[0].url = $valueset-supplement

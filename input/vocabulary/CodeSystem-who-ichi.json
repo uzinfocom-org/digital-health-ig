@@ -43,7 +43,7 @@
   "caseSensitive": true,
   "hierarchyMeaning": "classified-with",
   "compositional": true,
-  "versionNeeded": false,
+  "versionNeeded": true,
   "content": "fragment",
   "property": [
     {

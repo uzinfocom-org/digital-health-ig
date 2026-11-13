@@ -24,7 +24,7 @@ GET [base]/AuditEvent?patient=Patient/[id]&outcome=http://hl7.org/fhir/issue-sev
 
 FHIR R5 da hodisalar guruhi `category` parametri, muayyan quyi tur esa `code` parametri bo'yicha qidiriladi (FHIR R4 da `type` / `subtype` ishlatilgan). Ushbu profilda `outcome.code` issue-severity ValueSet bilan bog'langan, shu sababli rad etilgan yoki muvaffaqiyatsiz kirish `success` emas, `error` (yoki `fatal`) qiymati bo'yicha qidiriladi.
 
-Qo'llab-quvvatlanadigan barcha qidiruv parametrlari [CapabilityStatement](CapabilityStatement-DHPCapabilityStatement.html) da keltirilgan.
+AuditEvent hali [CapabilityStatement](CapabilityStatement-DHPCapabilityStatement.html) da ko'rsatilmagan; yuqoridagi so'rovlar FHIR R5 ning standart qidiruv parametrlaridan foydalanadi.
 
 ### Bog'liq materiallar
 

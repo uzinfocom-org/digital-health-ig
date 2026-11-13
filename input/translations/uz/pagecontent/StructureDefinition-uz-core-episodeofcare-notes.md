@@ -40,7 +40,7 @@ PUT [base]/EpisodeOfCare/[id]
 If-Match: W/"3"   # oxirgi o'qishda olingan ETag; shundan keyin o'zgargan bo'lsa 412 qaytariladi
 ```
 
-Barcha qo'llab-quvvatlanadigan qidiruv parametrlarini [CapabilityStatement](CapabilityStatement-DHPCapabilityStatement.html) da ko'ring.
+Qo'llab-quvvatlanadigan qidiruv parametrlarining to'liq ro'yxati [CapabilityStatement](CapabilityStatement-DHPCapabilityStatement.html#EpisodeOfCare1-8) da keltirilgan.
 
 ### Bog'liq materiallar
 

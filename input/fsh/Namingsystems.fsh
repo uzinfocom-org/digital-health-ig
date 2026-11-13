@@ -244,7 +244,7 @@ Usage: #definition
 * date = "2025-11-06"
 * publisher = "Uzinfocom"
 * responsible = "Ministry of Health of the Republic of Uzbekistan"
-* type = $identifier-type#HC "Health card number"
+* type = $identifier-type#HC "Health Card Number"
 * description = "Naming system for health card number identifiers assigned by the Ministry of Health of the Republic of Uzbekistan. See https://yuz.uz/ru/news/elektronne-meditsinskie-kart-prosto-sovremenno-i-kachestvennofor legal justification."
 * jurisdiction = urn:iso:std:iso:3166#UZ "Uzbekistan"
 * usage = "Used for identifying individuals through their health card numbers within the Uzbekistan healthcare system."
@@ -582,7 +582,7 @@ Usage: #definition
 * date = "2026-01-08"
 * publisher = "Uzinfocom"
 * responsible = "Ministry of Finance of the Republic of Uzbekistan (Pension Fund)"
-* type = $identifier-type#PEN "Pension number"
+* type = $identifier-type#PEN "Pension Number"
 * description = "Naming system defining the pension number identifier issued by the Ministry of Finance of the Republic of Uzbekistan (Pension Fund), as referenced by the national identifier system and integrated with the e-government platform (iskm.egov.uz/minfin/services/pension/pinnp). The pension number associated with different pension types, including old-age pension, disability pension, survivor's pension, and other pension categories." 
 * jurisdiction = urn:iso:std:iso:3166#UZ "Uzbekistan"
 * usage = "Used to record and exchange a patient's pension number for administrative and eligibility purposes, including verification of pensioner status and applicable social or healthcare benefits. This identifier is not intended to replace national personal identifiers (such as JShShIR) and should be used only when pension-related identification is required."
@@ -733,6 +733,25 @@ Usage: #definition
 * uniqueId[=].value = $supply-delivery-number
 * uniqueId[=].preferred = true
 
+Instance: uzb-bdp-dispense-number
+InstanceOf: NamingSystem
+Description: "Dispense numbers assigned to the issue of biologically derived products, such as blood components, in Uzbekistan"
+Usage: #definition
+* url = "https://terminology.dhp.uz/fhir/core/NamingSystem/uzb-bdp-dispense-number"
+* name = "UzbekistanBiologicallyDerivedProductDispenseIdentifier"
+* status = #active
+* kind = #identifier
+* date = "2026-11-11"
+* publisher = "Uzinfocom"
+* responsible = "Ministry of Health of the Republic of Uzbekistan"
+* type = $identifier-type#FILL "Filler Identifier"
+* description = "Naming system for dispense numbers assigned by the issuing information system, such as a blood bank, when it issues a biologically derived product for a patient."
+* jurisdiction = urn:iso:std:iso:3166#UZ "Uzbekistan"
+* usage = "Used in BiologicallyDerivedProductDispense.identifier.system to identify and track the issue of a product for a patient. Values must be unique across issuing organizations within this namespace, using coordinated allocation or an issuer-qualified value. Record the issuing organization in identifier.assigner."
+* uniqueId[0].type = #uri
+* uniqueId[=].value = $bdp-dispense-number
+* uniqueId[=].preferred = true
+
 Instance: uzb-specialist-certificate
 InstanceOf: NamingSystem
 Description: "Specialist certificate numbers of healthcare professionals issued by the Ministry of Health of Uzbekistan"
@@ -744,7 +763,7 @@ Usage: #definition
 * date = "2026-10-08"
 * publisher = "Uzinfocom"
 * responsible = "Ministry of Health of the Republic of Uzbekistan"
-* description = "Naming system for specialist certificates that the Ministry of Health of the Republic of Uzbekistan issues to healthcare professionals. The identifier value is the certificate series followed by its number, without separators (e.g. CA008815)."
+* description = "Naming system for specialist certificates that the Ministry of Health of the Republic of Uzbekistan issues to healthcare professionals. The identifier value is the certificate series followed by its number, without separators (e.g. CA123456)."
 * jurisdiction = urn:iso:std:iso:3166#UZ "Uzbekistan"
 * usage = "Used in Practitioner.qualification.identifier to identify the specialist certificate of a healthcare professional."
 * uniqueId[0].type = #uri
@@ -767,4 +786,41 @@ Usage: #definition
 * usage = "Used in InventoryItem.identifier.system to identify and track an inventory item record. Values must be unique across participating organizations within this namespace, using coordinated allocation or an issuer-qualified value. Record the organization that assigned the identifier in identifier.assigner. Identifiers of individual physical instances are recorded in InventoryItem.instance.identifier."
 * uniqueId[0].type = #uri
 * uniqueId[=].value = $inventory-item-number
+* uniqueId[=].preferred = true
+
+Instance: uzb-medication-knowledge-number
+InstanceOf: NamingSystem
+Description: "Medication reference entry identifiers assigned by the Digital Health Platform (DHP) of Uzbekistan"
+Usage: #definition
+* url = "https://terminology.dhp.uz/fhir/core/NamingSystem/uzb-medication-knowledge-number"
+* name = "UzbekistanMedicationKnowledgeIdentifier"
+* status = #active
+* kind = #identifier
+* date = "2026-10-30"
+* publisher = "Uzinfocom"
+* responsible = "Ministry of Health of the Republic of Uzbekistan"
+* description = "Naming system for identifiers that DHP assigns to medication reference entries (MedicationKnowledge), used to match the same entry across systems."
+* jurisdiction = urn:iso:std:iso:3166#UZ "Uzbekistan"
+* usage = "Used in MedicationKnowledge.identifier.system for the identifier DHP assigns to a medication reference entry. Identifiers that other systems assign to the entry are sent as further identifiers with their own system URI."
+* uniqueId[0].type = #uri
+* uniqueId[=].value = $medication-knowledge-number
+* uniqueId[=].preferred = true
+
+Instance: uzb-charge-item-identifier
+InstanceOf: NamingSystem
+Description: "ChargeItem identifiers used in Uzbekistan"
+Usage: #definition
+* url = "https://terminology.dhp.uz/fhir/core/NamingSystem/uzb-charge-item-identifier"
+* name = "UzbekistanChargeItemIdentifier"
+* status = #active
+* kind = #identifier
+* date = "2026-11-06"
+* publisher = "Uzinfocom"
+* responsible = "Ministry of Health of the Republic of Uzbekistan"
+* type = $identifier-type#PLAC "Placer Identifier"
+* description = "Naming system for ChargeItem identifiers assigned by healthcare information systems in Uzbekistan."
+* jurisdiction = urn:iso:std:iso:3166#UZ "Uzbekistan"
+* usage = "Used in ChargeItem.identifier to uniquely identify a charge item recorded by a healthcare information system, such as the charge for a dispensed medication or a provided service."
+* uniqueId[0].type = #uri
+* uniqueId[=].value = $charge-item-identifier
 * uniqueId[=].preferred = true

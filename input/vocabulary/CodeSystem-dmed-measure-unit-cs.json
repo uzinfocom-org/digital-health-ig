@@ -4,7 +4,7 @@
   "content": "complete",
   "name": "DMEDMeasureUnitCS",
   "id": "dmed-measure-unit-cs",
-  "title": "DMED Measure Unit CodeSystem",
+  "title": "DMED measure unit",
   "description": "Measurement unit codes in the DMED system",
   "url": "https://terminology.dhp.uz/fhir/core/CodeSystem/dmed-measure-unit-cs",
   "concept": [

@@ -41,7 +41,7 @@ If-Match: W/"3"   # the ETag from your last read; 412 if it changed since
 
 Consent is normally set by the patient in the portal. A denied consent causes data requests to be refused with HTTP 403; clients should handle that outcome.
 
-See the [CapabilityStatement](CapabilityStatement-DHPCapabilityStatement.html) for the full list of supported search parameters.
+Consent is not yet listed in the [CapabilityStatement](CapabilityStatement-DHPCapabilityStatement.html); the searches above use standard FHIR R5 search parameters.
 
 ### Related
 

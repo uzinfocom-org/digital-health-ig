@@ -1,7 +1,7 @@
 CodeSystem: LabMethodsSctCS
 Id: lab-methods-sct-cs
-Title: "Lab Methods SNOMED CT CS"
-Description: "Observation method (SNOMED CT) supplement with Uzbek and Russian translations"
+Title: "Laboratory method (SNOMED CT) translations"
+Description: "Laboratory method (SNOMED CT) supplement with translations in Uzbek and Russian"
 
 * insert SupplementCodeSystemDraft(lab-methods-sct-cs, $sct, 2026.1.0)
 
