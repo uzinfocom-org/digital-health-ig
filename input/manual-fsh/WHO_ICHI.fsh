@@ -18,7 +18,7 @@ Description: "WHO International Classification of Health Interventions (ICHI), b
 * ^caseSensitive = true
 * ^hierarchyMeaning = #classified-with
 * ^compositional = true
-* ^versionNeeded = false
+* ^versionNeeded = true
 * ^content = #fragment
 * ^property[0].code = #foundationUri
 * ^property[=].description = "URI of the entity in the ICD-11 Foundation Component"
