@@ -1,7 +1,7 @@
 ValueSet: GoalCategoryVS
 Id: goal-category-vs
-Title: "Goal Category VS"
-Description: "Value Set for Goal Category translations"
+Title: "Goal category"
+Description: "Goal categories"
 * ^url = "https://terminology.dhp.uz/fhir/core/ValueSet/goal-category-vs"
 * ^experimental = true
 * ^extension[0].url = $valueset-supplement

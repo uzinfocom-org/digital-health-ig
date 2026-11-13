@@ -207,3 +207,13 @@ Context: MedicationAdministration
 * value[x] only CodeableConcept
 * valueCodeableConcept from FinancingSourceVS (extensible)
 
+
+Extension: SupplyDeliveryDeliverFrom
+Id: supplydelivery-deliver-from
+Title: "Deliver from"
+Description: "The location the supplied items were dispatched from, such as the warehouse that sends stock in a transfer between warehouses. It is the delivery counterpart of SupplyRequest.deliverFrom: the request states the planned source, this extension the actual one."
+Context: SupplyDelivery
+* ^experimental = true
+* ^date = "2026-11-02"
+* value[x] 1..
+* value[x] only Reference(UZCoreLocation)

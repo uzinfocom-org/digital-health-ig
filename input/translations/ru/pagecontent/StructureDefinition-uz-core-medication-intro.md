@@ -15,11 +15,11 @@ UZ Core Medication описывает лекарственный препара�
 
 
 - срезы идентификатора - номер регистрационного удостоверения, GTIN, ID маркировки Asl Belgisi, код товаров и услуг ИКПУ и ID групповой упаковки UzPharm (см. [таблицу ниже](#identifier-slices));
-- код (code) - концепт ATC или INN из [набора значений классификации лекарственных средств](ValueSet-medication-classification-vs.html) (обязательная связка);
-- статус (active / inactive / entered-in-error, из обязательного набора значений);
+- код (code) - концепт ATC или INN для препарата;
+- статус (active / inactive / entered-in-error);
 - marketingAuthorizationHolder - ссылку на [Organization](StructureDefinition-uz-core-organization.html), которая является держателем регистрации;
-- лекарственную форму (doseForm), кодированную из национального [набора значений лекарственных форм](ValueSet-medication-doseform-vs.html) (расширяемая связка);
-- общий объём (totalVolume) - величину в UCUM, единицы которой берутся из [набора значений единиц общего объёма](ValueSet-medication-total-volume-units-vs.html) (предпочтительная связка);
+- лекарственную форму (doseForm), кодированную по национальному перечню лекарственных форм;
+- общий объём (totalVolume) - количество препарата в продукте, величину в UCUM;
 - ингредиенты - каждый как концепт (ATC / INN) или ссылка на другой Medication, с дозировкой в виде отношения;
 - серию (batch) - номер серии (AIK) и дату истечения срока годности.
 

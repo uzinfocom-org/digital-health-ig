@@ -43,7 +43,7 @@ PUT [base]/Encounter/[id]
 If-Match: W/"3"   # ETag из последнего чтения; если с тех пор ресурс изменился, возвращается 412
 ```
 
-Полный перечень поддерживаемых параметров поиска приведён в [CapabilityStatement](CapabilityStatement-DHPCapabilityStatement.html).
+Полный список поддерживаемых параметров поиска приведён в [CapabilityStatement](CapabilityStatement-DHPCapabilityStatement.html#Encounter1-7).
 
 ### Связанные разделы
 

@@ -1,6 +1,6 @@
 CodeSystem: PositionAndProfessionCS_2
 Id: position-and-profession-cs-2
-Title: "Additional Defines the possible positions and professions"
+Title: "Additional positions and professions"
 Description: "State classification of positions of employees and worker professions (KODP-2020)"
 * ^url = "https://terminology.dhp.uz/fhir/core/CodeSystem/position-and-profession-cs-2"
 * insert OriginalCodeSystemDraft(position-and-profession-cs-2)

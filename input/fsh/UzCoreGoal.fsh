@@ -93,12 +93,12 @@ Usage: #example
 * language = #en
 
 * lifecycleStatus = #active "Active"
-* achievementStatus = $goal-achievement#in-progress "In progress"
+* achievementStatus = $goal-achievement#in-progress
 
 * category = $goal-category#dietary "Dietary"
 * continuous = true
 
-* priority = $goal-Priority#high-priority "High priority"
+* priority = $goal-Priority#high-priority
 * description = $sct#1201005 "Benign essential hypertension"
 
 * subject = Reference(example-salim)

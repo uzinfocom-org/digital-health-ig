@@ -1,6 +1,6 @@
 CodeSystem: DMEDRouteCodeCS
 Id: dmed-route-code-cs
-Title: "DMED Route Codes"
+Title: "DMED route codes"
 Description: "Defines routes of administration in Uzbek, Russian and English"
 * insert OriginalCodeSystemDraft(dmed-route-code-cs)
 

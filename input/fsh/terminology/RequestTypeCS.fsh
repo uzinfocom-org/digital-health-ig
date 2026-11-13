@@ -1,7 +1,7 @@
 CodeSystem: RequestTypeCS
 Id: request-type-cs
-Title: "Supply request types"
-Description: "Types of supply requests in Uzbekistan"
+Title: "SupplyRequest type"
+Description: "SupplyRequest types in Uzbekistan"
 * insert OriginalCodeSystemDraft(request-type-cs)
 
 * #req-type-0001-0001 "Zaxira"

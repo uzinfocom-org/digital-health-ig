@@ -1,7 +1,7 @@
 CodeSystem: ProcedureCodeCS
 Id: procedure-code-cs
-Title: "Procedure Code translations"
-Description: "Procedure code supplement with Uzbek and Russian translations"
+Title: "Procedure code translations"
+Description: "Procedure code supplement with translations in Uzbek and Russian"
 
 * insert SupplementCodeSystem(procedure-code-cs, $sct, 2026.1.0)
 

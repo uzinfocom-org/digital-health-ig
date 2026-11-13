@@ -13,9 +13,9 @@ UZ Core Device описывает одно физическое медицинс
 #### Каждое UZ Core Device должно поддерживать
 
 - идентификатор, всегда передаваемый вместе со своей `system` (см. [Идентификаторы](identifiers.html));
-- статус записи `status` (active / inactive / entered-in-error) из набора значений [статус изделия](ValueSet-device-status-vs.html) с обязательной связкой и статус доступности `availabilityStatus` (available / lost / damaged / destroyed) из набора значений [статус доступности](ValueSet-device-availability-status-vs.html) с расширяемой связкой;
-- `displayName` и каждое `name` с его `value`, типом `type` из [набора значений типов наименования](ValueSet-device-name-type-vs.html) (зарегистрированное, удобное для пользователя или указанное пациентом наименование) и признаком `display`;
-- тип `type`, закодированный по SNOMED CT из [набора значений типов изделий](ValueSet-device-type-vs.html), и категорию `category` из [набора значений категорий изделий](ValueSet-device-category-vs.html);
+- статус записи `status` (active / inactive / entered-in-error) и возможность использовать изделие `availabilityStatus` (available / lost / damaged / destroyed);
+- `displayName` и каждое `name` с его `value`, типом `type` (зарегистрированное, удобное для пользователя или указанное пациентом наименование) и признаком `display`;
+- вид изделия `type` (концепт SNOMED CT) и более общую категорию `category`;
 - `manufacturer`, `modelNumber` и `partNumber`;
 - `serialNumber`, `lotNumber`, `manufactureDate` и `expirationDate`;
 - владельца `owner` - ссылку на [Organization](StructureDefinition-uz-core-organization.html) - и место `location` - ссылку на [Location](StructureDefinition-uz-core-location.html);

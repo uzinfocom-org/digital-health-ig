@@ -1,0 +1,54 @@
+### Quick Start {#quick-start}
+
+Common API interactions for this profile. Requests require a JWT access token - see [Security and authentication](api-access.html#security). `[base]` is the [FHIR server base URL](api-access.html#endpoints); `|` separates a code system from its code and must be URL-encoded as `%7C`.
+
+**Read by server id**
+
+```
+GET [base]/Flag/[id]
+```
+
+**Search flags**
+
+```
+GET [base]/Flag?patient=Patient/[id]&status=active&code=blood-donation-deferred
+GET [base]/Flag?patient=Patient/[id]&status=active
+GET [base]/Flag?patient=Patient/[id]&category=http://terminology.hl7.org/CodeSystem/flag-category%7Cclinical
+GET [base]/Flag?identifier=[system]%7C[value]
+GET [base]/Flag?encounter=Encounter/[id]
+GET [base]/Flag?author=Practitioner/[id]
+GET [base]/Flag?date=ge2026-01-01
+```
+
+`code` is a [UZ Core search parameter](SearchParameter-uz-core-flag-code.html): FHIR R5 has none for `Flag.code`. The first query finds a patient's active medical deferrals.
+
+**Create**
+
+```
+POST [base]/Flag
+{
+  "resourceType": "Flag",
+  "meta": {
+    "profile": ["https://dhp.uz/fhir/core/StructureDefinition/uz-core-flag"]
+  },
+  "language": "uz",
+  "status": "active",
+  "code": {
+    "coding": [{
+      "system": "https://terminology.dhp.uz/fhir/core/CodeSystem/blood-donor-eligibility-cs",
+      "code": "blood-donation-deferred"
+    }]
+  },
+  "subject": { "reference": "Patient/[id]" },
+  "period": { "start": "2026-11-09T09:00:00+05:00" }
+}
+```
+
+**Update** (for example, to end a medical deferral): send the complete resource with `PUT [base]/Flag/[id]`, set `status` to `inactive` and `period.end` to the time it ended, and add an `If-Match` header carrying the version you read, so a concurrent change is not overwritten.
+
+See the [CapabilityStatement](CapabilityStatement-DHPCapabilityStatement.html#Flag1-42) for the full list of supported search parameters.
+
+### Related
+
+- [UZ Core Patient](StructureDefinition-uz-core-patient.html) &middot; [UZ Core Encounter](StructureDefinition-uz-core-encounter.html)
+- [How to read this guide](how-to-read.html) &middot; [Must Support](must-support.html) &middot; [General guidance](general-guidance.html)

@@ -1,7 +1,7 @@
 CodeSystem: FhirTypesCS
 Id: fhir-types-cs
-Title: "All FHIR Types"
-Description: "FHIR types supplement with translations in Uzbek and Russian"
+Title: "FHIR type translations"
+Description: "FHIR type supplement with translations in Uzbek and Russian"
 * insert SupplementCodeSystem(fhir-types-cs, $fhir-types, 5.0.0)
 
 * #Account "Account"

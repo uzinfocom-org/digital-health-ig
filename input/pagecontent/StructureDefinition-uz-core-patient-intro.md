@@ -41,7 +41,7 @@ The examples below go from the smallest instance the server will accept to a ful
     {
       "type": { "coding": [{ "system": "http://terminology.hl7.org/CodeSystem/v2-0203", "code": "NI" }] },
       "system": "https://dhp.uz/fhir/core/sid/pid/uz/ni",
-      "value": "30211975910033"
+      "value": "12345678912345"
     }
   ]
 }
@@ -64,7 +64,7 @@ In practice you send the PINFL plus the core demographics the platform expects y
       "use": "official",
       "type": { "coding": [{ "system": "http://terminology.hl7.org/CodeSystem/v2-0203", "code": "NI" }] },
       "system": "https://dhp.uz/fhir/core/sid/pid/uz/ni",
-      "value": "30211975910033"
+      "value": "12345678912345"
     }
   ],
   "active": true,
@@ -157,7 +157,7 @@ A person usually holds several identifiers. Add one entry to the `identifier` ar
   {
     "type": { "coding": [{ "system": "http://terminology.hl7.org/CodeSystem/v2-0203", "code": "NI" }] },
     "system": "https://dhp.uz/fhir/core/sid/pid/uz/ni",
-    "value": "30211975910033"
+    "value": "12345678912345"
   },
   {
     "type": { "coding": [{ "system": "http://terminology.hl7.org/CodeSystem/v2-0203", "code": "PPN" }] },

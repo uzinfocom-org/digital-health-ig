@@ -41,7 +41,7 @@ PUT [base]/Condition/[id]
 If-Match: W/"3"   # oxirgi javobdagi ETag; resurs shu vaqtdan beri o'zgargan bo'lsa, 412
 ```
 
-Qo'llab-quvvatlanadigan qidiruv parametrlarining to'liq ro'yxati [CapabilityStatement](CapabilityStatement-DHPCapabilityStatement.html) da keltirilgan.
+Qo'llab-quvvatlanadigan qidiruv parametrlarining to'liq ro'yxati [CapabilityStatement](CapabilityStatement-DHPCapabilityStatement.html#Condition1-5) da keltirilgan.
 
 ### Bog'liq materiallar
 

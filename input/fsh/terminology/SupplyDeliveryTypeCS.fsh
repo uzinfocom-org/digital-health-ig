@@ -1,7 +1,7 @@
 CodeSystem: SupplyDeliveryTypeCS
 Id: supply-delivery-type-cs
-Title: "Supply delivery type translations"
-Description: "Supply delivery type supplement with translations in Uzbek and Russian"
+Title: "SupplyDelivery type translations"
+Description: "SupplyDelivery type supplement with translations in Uzbek and Russian"
 * insert SupplementCodeSystemDraft(supply-delivery-type-cs, $supplydelivery-supplyitemtype, 5.0.0)
 
 * #medication
