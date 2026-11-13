@@ -28,8 +28,6 @@
 
 [Коды единиц измерения](CodeSystem-unit-of-measurement-cs.html) дополнены девятью единицами реестра лекарственных средств Фармкомитета, сопоставленными с UCUM в [карте единиц измерения](ConceptMap-unit-of-measurement-cm.html).
 
-[Компоненты цены ChargeItem](CodeSystem-charge-item-price-component-cs.html) - новая кодовая система с кодом `reimbursement` и названиями на узбекском, русском и английском для части цены отпуска по электронному рецепту DMED, которую оплачивает программа реимбурсации, в `ChargeItem.totalPriceComponent.code`. В HL7 такого кода нет. Коды собраны в [наборе значений](ValueSet-charge-item-price-component-vs.html).
-
 [Лекарственные формы](CodeSystem-medication-doseform-cs.html) дополнены кодами `CTP101` катаплазма, `DRS101` повязка лекарственная, `HRB101` сырьё растительное лекарственное, `JEL101` желе лекарственное, `KIT101` набор, `LOT101` лосьон, `SHA101` шампунь лекарственный, `SUB101` субстанция и `TEA101` сбор лекарственный растительный с названиями на узбекском, русском и английском - для лекарственных форм электронного рецепта DMED и реестра лекарственных средств Фармкомитета, у которых не было кода.
 
 [Причины статуса MedicationRequest](ValueSet-medicationrequest-status-reason-vs.html) дополнены кодом SNOMED CT `438833006` (применение лекарственного средства противопоказано) с названиями на узбекском и русском в [supplement](CodeSystem-medicationrequest-status-reason-sct-cs.html) - для отмены электронного рецепта DMED.
