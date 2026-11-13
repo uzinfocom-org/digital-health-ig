@@ -10,8 +10,15 @@ Every profile page now has a narrative intro and a Quick Start. New ones were ad
 
 [Flag code](SearchParameter-uz-core-flag-code.html) is a new search parameter, `code`, that finds [UZ Core Flag](StructureDefinition-uz-core-flag.html) resources by what they are about - for example, a patient's active medical deferrals from blood donation. Base FHIR R5 has no search parameter for this.
 
+[Medication dose form](CodeSystem-medication-doseform-cs.html) adds `CTP101` poultice, `DRS101` medicated dressing, `HRB101` herbal substance, `JEL101` medicated jelly, `KIT101` kit, `LOT101` lotion, `SHA101` medicated shampoo, `SUB101` active substance and `TEA101` herbal tea, with Uzbek, Russian and English names, for DMED e-prescription and Pharmaceutical Committee drug registry dose forms that had no code.
+
 [MedicationKnowledge associated medication](SearchParameter-uz-core-medicationknowledge-associated-medication.html) is a new search parameter, `associated-medication`, that finds the [UZ Core MedicationKnowledge](StructureDefinition-uz-core-medicationknowledge.html) entries for a Medication - for example, the approved prices of a dispensed product. Base FHIR R5 has no search parameter for this. Chain it on `identifier` to search by the product's registration number or GTIN.
 
+[MedicationRequest status reason](ValueSet-medicationrequest-status-reason-vs.html) adds SNOMED CT `438833006` administration of medication contraindicated, with Uzbek and Russian names in a [supplement](CodeSystem-medicationrequest-status-reason-sct-cs.html), for cancelling a DMED e-prescription.
+
+[Unit of measurement codes](CodeSystem-unit-of-measurement-cs.html) add nine Pharmaceutical Committee drug registry units, mapped to UCUM in the [unit of measurement map](ConceptMap-unit-of-measurement-cm.html).
+
+[Unit of measurement map](ConceptMap-unit-of-measurement-cm.html) adds UCUM targets for 30 units that had none, such as international unit `[iU]`, milligram per dose `mg/{dose}`, gram per litre `g/L` and colony-forming unit `[CFU]`.
 
 [UZ Core BiologicallyDerivedProductDispense](StructureDefinition-uz-core-biologicallyderivedproductdispense.html) records the issue of a biologically derived product to a patient's care team, with the [dispense number](NamingSystem-uzb-bdp-dispense-number.html), order, recipient, product, practitioners and handover time. HL7 dispense status, match status, origin relationship and performer function codes have Uzbek and Russian translations. The profile includes minimal, issued and returned examples and a Quick Start.
 
@@ -37,6 +44,8 @@ Every profile page now has a narrative intro and a Quick Start. New ones were ad
 
 Every reference to a Device in UZ Core profiles now targets [UZ Core Device](StructureDefinition-uz-core-device.html): Observation, Procedure, Condition, AdverseEvent, Composition, QuestionnaireResponse, Group, MedicationAdministration, MedicationDispense, InventoryItem, SupplyRequest and SupplyDelivery.
 
+[MedicationRequest status translations](CodeSystem-medicationrequest-status-cs.html) now give `ended` the Russian name «Окончено» instead of «Завершено», which duplicated `completed`.
+
 Removed a trailing newline from the BloodProductInventoryItem CSV folder name so the repository can be checked out on Windows.
 
 The [example practitioner](Practitioner-example-practitioner.html) and the specialist certificate examples now use a made-up PINFL, certificate number and dates.
@@ -46,6 +55,10 @@ The [FHIR types supplement](CodeSystem-fhir-types-cs.html) gave each resource ty
 The [Procedure example](Procedure-example-procedure.html) now points at an [outpatient physiotherapy visit](Encounter-example-physiotherapy-encounter.html) and a [right foot pain](Condition-example-foot-pain.html) condition of the same patient, in place of another patient's encounter and condition.
 
 Titles and descriptions of code systems and value sets now follow the naming pattern in the [modelling guidelines](https://github.com/uzinfocom-org/digital-health-ig/blob/main/modelling-guidelines.md): a supplement is `[Concept] translations`, a value set is `[Concept]`, and titles no longer carry words such as "CodeSystem" or "ValueSet". Canonical URLs, ids and codes are unchanged.
+
+[UZ Core Medication](StructureDefinition-uz-core-medication.html) no longer requires an `identifier`. Each Medication must have an identifier or a code (invariant `uzcore-med-1`), so a medicine prescribed by its INN, as in DMED e-prescriptions, can be sent with only its INN or ATC code before the pharmacy names the product.
+
+[UZ Core MedicationRequest](StructureDefinition-uz-core-medicationrequest.html) binds `statusReason` as extensible instead of required.
 
 [UZ Core Organization](StructureDefinition-uz-core-organization.html) and [UZ Core RelatedPerson](StructureDefinition-uz-core-relatedperson.html) no longer fix the display of the identifier type: the `mohId` and `argosId` slices fix only the system and code `XX`, and `healthCard` only `HC`. The fixed displays "Organization Identifier" and "Health card number" did not match the HL7 terminology displays "Organization identifier" and "Health Card Number", so every conforming instance got a terminology warning. An identifier type with either display, or without one, now conforms.
 

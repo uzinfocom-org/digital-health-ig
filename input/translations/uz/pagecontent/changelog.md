@@ -4,12 +4,19 @@
 
 [Composition hujjat turlari](CodeSystem-composition-type-cs.html): 399-son buyruqning 112-shakli - foliy kislotasi, 25-OH D vitamini va B12 vitaminiga IXLA tahlili uchun `emdoc-0010-0471` kodi qo'shildi.
 
+[Dori shakllari](CodeSystem-medication-doseform-cs.html): DMED elektron retsepti va Farmatsevtika qo'mitasi dori vositalari reyestrining kodi bo'lmagan dori shakllari uchun `CTP101` kataplazma, `DRS101` dorivor bog'lam, `HRB101` dorivor o'simlik xomashyosi, `JEL101` dorivor jele, `KIT101` to'plam, `LOT101` losyon, `SHA101` dorivor shampun, `SUB101` substansiya va `TEA101` dorivor o'simliklar yig'masi kodlari o'zbek, rus va ingliz tilidagi nomlari bilan qo'shildi.
+
 Endi har bir profil sahifasida kirish qismi va Tez boshlash bo'limi bor. Ular [UZ Core BiologicallyDerivedProduct](StructureDefinition-uz-core-biologically-derived-product.html), [UZ Core Claim](StructureDefinition-uz-core-claim.html), [UZ Core ClaimResponse](StructureDefinition-uz-core-claim-response.html), [UZ Core Composition](StructureDefinition-uz-core-composition.html), [UZ Core DiagnosticReport](StructureDefinition-uz-core-diagnostic-report.html), [UZ Core Group](StructureDefinition-uz-core-group.html), [UZ Core InventoryItem](StructureDefinition-uz-core-inventoryitem.html), [UZ Core Laboratory ObservationDefinition](StructureDefinition-uz-core-laboratory-observation-definition.html), [UZ Core MedicationDispense](StructureDefinition-uz-core-medication-dispense.html), [UZ Core MedicationRequest](StructureDefinition-uz-core-medicationrequest.html), [UZ Core Task Referral Approval](StructureDefinition-uz-core-referral-approval-task.html), [UZ Core ServiceRequest](StructureDefinition-uz-core-servicerequest.html) va [UZ Core SupplyRequest](StructureDefinition-uz-core-supply-request.html) uchun qo'shildi; [UZ Core ActivityDefinition](StructureDefinition-uz-core-activitydefinition.html) mavjud izohlar yonida kirish qismi va Tez boshlash bo'limini oldi.
 
 [Flag code](SearchParameter-uz-core-flag-code.html) - [UZ Core Flag](StructureDefinition-uz-core-flag.html) resurslarini ular nima haqida ekaniga ko'ra, masalan, bemorning qon donorligidan amaldagi tibbiy chetlatishlarini topadigan yangi `code` qidiruv parametri. Bazaviy FHIR R5 da bunday qidiruv parametri yo'q.
 
 [MedicationKnowledge associated medication](SearchParameter-uz-core-medicationknowledge-associated-medication.html) - Medication uchun [UZ Core MedicationKnowledge](StructureDefinition-uz-core-medicationknowledge.html) yozuvlarini, masalan, beriladigan preparatning tasdiqlangan narxlarini topadigan yangi `associated-medication` qidiruv parametri. Bazaviy FHIR R5 da bunday qidiruv parametri yo'q. Preparatning ro'yxatdan o'tish raqami yoki GTIN bo'yicha qidirish uchun uni `identifier` bilan zanjir qilib ishlating.
 
+[MedicationRequest holati sabablari](ValueSet-medicationrequest-status-reason-vs.html) ga DMED elektron retseptini bekor qilish uchun SNOMED CT `438833006` (dori vositasini qo'llash qarshi ko'rsatilgan) kodi o'zbek va rus tilidagi nomlari bilan [supplement](CodeSystem-medicationrequest-status-reason-sct-cs.html) da qo'shildi.
+
+[O'lchov birliklari kodlari](CodeSystem-unit-of-measurement-cs.html): Farmatsevtika qo'mitasi dori vositalari reyestrining to'qqizta birligi qo'shildi, ular [o'lchov birliklari xaritasida](ConceptMap-unit-of-measurement-cm.html) UCUM bilan bog'langan.
+
+[O'lchov birliklari xaritasi](ConceptMap-unit-of-measurement-cm.html): UCUM kodi bo'lmagan 30 ta birlik uchun UCUM kodlari qo'shildi, masalan xalqaro birlik `[iU]`, dozaga milligramm `mg/{dose}`, litrga gramm `g/L` va koloniya hosil qiluvchi birlik `[CFU]`.
 
 [UZ Core BiologicallyDerivedProductDispense](StructureDefinition-uz-core-biologicallyderivedproductdispense.html) biologik mahsulotni bemorning klinik jamoasiga berishni, [berish raqami](NamingSystem-uzb-bdp-dispense-number.html), buyurtma, retsipiyent, mahsulot, ijrochilar va topshirish vaqtini qayd etadi. HL7 berish holati, moslik turi, kelib chiqish munosabati va ijrochi funksiyasi kodlarining o'zbekcha va ruscha tarjimalari qo'shildi. Profil minimal, berish va qaytarish namunalari hamda Tez boshlash bo'limini o'z ichiga oladi.
 
@@ -39,9 +46,15 @@ BloodProductInventoryItem CSV papkasi nomining oxiridagi yangi qator belgisi oli
 
 Kod tizimlari va qiymatlar to'plamlarining sarlavhalari va tavsiflari endi [modellashtirish qo'llanmasidagi](https://github.com/uzinfocom-org/digital-health-ig/blob/main/modelling-guidelines.md) nomlash shabloniga mos keladi: supplement `[Concept] translations`, qiymatlar to'plami esa `[Concept]` deb nomlanadi, sarlavhalarda "CodeSystem" yoki "ValueSet" kabi so'zlar endi yo'q. Kanonik URL, identifikatorlar va kodlar o'zgarmadi.
 
+[MedicationRequest holatlari tarjimalari](CodeSystem-medicationrequest-status-cs.html) endi `ended` ni ruschada «Окончено» deb ataydi, avvalgi «Завершено» `completed` bilan bir xil edi.
+
 [Practitioner namunasi](Practitioner-example-practitioner.html) va mutaxassis sertifikati namunalarida endi o'ylab topilgan PINFL, sertifikat raqami va sanalar ishlatiladi.
 
 [Procedure namunasi](Procedure-example-procedure.html) endi boshqa bemorning tashrifi va holati o'rniga xuddi shu bemorning [ambulator fizioterapiya tashrifi](Encounter-example-physiotherapy-encounter.html) va [o'ng oyoq panjasidagi og'riq](Condition-example-foot-pain.html) holatiga havola qiladi.
+
+[UZ Core Medication](StructureDefinition-uz-core-medication.html) endi `identifier` ni talab qilmaydi. Har bir Medication da identifikator yoki kod bo'lishi shart (`uzcore-med-1` invarianti), shuning uchun INN bo'yicha tayinlangan dorini, masalan DMED elektron retseptlarida, dorixona aniq mahsulotni ko'rsatguncha faqat INN yoki ATC kodi bilan yuborish mumkin.
+
+[UZ Core MedicationRequest](StructureDefinition-uz-core-medicationrequest.html) endi `statusReason` ni required o'rniga extensible bog'laydi.
 
 [UZ Core Observation](StructureDefinition-uz-core-observation.html), [UZ Core Immunization](StructureDefinition-uz-core-immunization.html) va [UZ Core Procedure](StructureDefinition-uz-core-procedure.html) dagi `basedOn` endi istalgan CarePlan emas, UZ Core CarePlan ga havola qiladi.
 

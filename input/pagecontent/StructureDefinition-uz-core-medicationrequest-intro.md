@@ -199,6 +199,6 @@ A prescription is not deleted when it is withdrawn. Update it with `status` set 
 }
 ```
 
-`statusReason` is a required binding to the [status reason](ValueSet-medicationrequest-status-reason-vs.html) value set; `salg` means the patient developed an allergy. A prescription that has been fully dispensed becomes `completed`.
+`statusReason` is an extensible binding to the [status reason](ValueSet-medicationrequest-status-reason-vs.html) value set; `salg` means the patient developed an allergy. A prescription that has been fully dispensed becomes `completed`.
 
 For example API calls, see the [Quick Start](#quick-start) at the bottom of this page.

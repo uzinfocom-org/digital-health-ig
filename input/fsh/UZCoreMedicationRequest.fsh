@@ -24,7 +24,7 @@ Description: "Uzbekistan Core profile for MedicationRequest, used to order medic
 * status from MedicationRequestStatusVS (required)
 
 * statusReason MS
-* statusReason from MedicationRequestStatusReasonVS (required)
+* statusReason from MedicationRequestStatusReasonVS (extensible)
 * statusReason ^short = "Reason for prescription status in DMED"
 * statusReason ^definition = "Reason for the current prescription status, entered by physicians or pharmacists in DMED"
 

@@ -338,3 +338,203 @@ Description: "Maps local UZ unit codes to UCUM standards."
 * group.element[=].display = "D-antigen birligi"
 * group.element[=].target[+].code = #"[D'ag'U]"
 * group.element[=].target[=].relationship = #equivalent
+
+* group.element[+].code = #299
+* group.element[=].display = "biologik aktivlikning 
+xalqaro birligi"
+* group.element[=].target[+].code = #"[iU]"
+* group.element[=].target[=].relationship = #equivalent
+
+* group.element[+].code = #276
+* group.element[=].display = "xalqaro birlik"
+* group.element[=].target[+].code = #"[iU]"
+* group.element[=].target[=].relationship = #equivalent
+
+* group.element[+].code = #381
+* group.element[=].display = "грамм на литр"
+* group.element[=].target[+].code = #"g/L"
+* group.element[=].target[=].relationship = #equivalent
+
+* group.element[+].code = #297
+* group.element[=].display = "milligramm taqsim 
+doza (miqdor)"
+* group.element[=].target[+].code = #"mg/{dose}"
+* group.element[=].target[=].relationship = #equivalent
+
+* group.element[+].code = #380
+* group.element[=].display = "микрограмм на дозу"
+* group.element[=].target[+].code = #"ug/{dose}"
+* group.element[=].target[=].relationship = #equivalent
+
+* group.element[+].code = #385
+* group.element[=].display = "МЕ/мл"
+* group.element[=].target[+].code = #"[iU]/mL"
+* group.element[=].target[=].relationship = #equivalent
+
+* group.element[+].code = #800
+* group.element[=].display = "анти-ХА МЕ"
+* group.element[=].target[+].code = #"[anti'Xa'U]"
+* group.element[=].target[=].relationship = #equivalent
+
+* group.element[+].code = #580
+* group.element[=].display = "koloniya hosil qiluvchi 
+o'lchov birligi"
+* group.element[=].target[+].code = #"[CFU]"
+* group.element[=].target[=].relationship = #equivalent
+
+* group.element[+].code = #570
+* group.element[=].display = "dozaga millilitr"
+* group.element[=].target[+].code = #"mL/{dose}"
+* group.element[=].target[=].relationship = #equivalent
+
+* group.element[+].code = #480
+* group.element[=].display = "МЕ/g"
+* group.element[=].target[+].code = #"[iU]/g"
+* group.element[=].target[=].relationship = #equivalent
+
+* group.element[+].code = #500
+* group.element[=].display = "Международная единица 
+на грамм"
+* group.element[=].target[+].code = #"[iU]/g"
+* group.element[=].target[=].relationship = #equivalent
+
+* group.element[+].code = #1260
+* group.element[=].display = "ME/mg"
+* group.element[=].target[+].code = #"[iU]/mg"
+* group.element[=].target[=].relationship = #equivalent
+
+* group.element[+].code = #1020
+* group.element[=].display = "soatiga milligramm"
+* group.element[=].target[+].code = #"mg/h"
+* group.element[=].target[=].relationship = #equivalent
+
+* group.element[+].code = #440
+* group.element[=].display = "mikrogramm taqsim soat"
+* group.element[=].target[+].code = #"ug/h"
+* group.element[=].target[=].relationship = #equivalent
+
+* group.element[+].code = #341
+* group.element[=].display = "g/mol"
+* group.element[=].target[+].code = #"g/mol"
+* group.element[=].target[=].relationship = #equivalent
+
+* group.element[+].code = #860
+* group.element[=].display = "ммоль/г"
+* group.element[=].target[+].code = #"mmol/g"
+* group.element[=].target[=].relationship = #equivalent
+
+* group.element[+].code = #680
+* group.element[=].display = "Millimetr"
+* group.element[=].target[+].code = #"mm"
+* group.element[=].target[=].relationship = #equivalent
+
+* group.element[+].code = #780
+* group.element[=].display = "hujayra madaniyati 
+infektsion dozasi"
+* group.element[=].target[+].code = #"[CCID_50]"
+* group.element[=].target[=].relationship = #equivalent
+
+* group.element[+].code = #360
+* group.element[=].display = "LE (lipazemik birlik)"
+* group.element[=].target[+].code = #"[arb'U]"
+* group.element[=].target[=].relationship = #source-is-narrower-than-target
+
+* group.element[+].code = #324
+* group.element[=].display = "flokulirlanadigan birlik"
+* group.element[=].target[+].code = #"[Lf]"
+* group.element[=].target[=].relationship = #equivalent
+
+* group.element[+].code = #660
+* group.element[=].display = "DU"
+* group.element[=].target[+].code = #"[D'ag'U]"
+* group.element[=].target[=].relationship = #equivalent
+
+* group.element[+].code = #1080
+* group.element[=].display = "% massa/hajm"
+* group.element[=].target[+].code = #"g/dL"
+* group.element[=].target[=].relationship = #equivalent
+
+* group.element[+].code = #542
+* group.element[=].display = "ЕД"
+* group.element[=].target[+].code = #"[arb'U]"
+* group.element[=].target[=].relationship = #equivalent
+
+* group.element[+].code = #383
+* group.element[=].display = "ЕД на мл"
+* group.element[=].target[+].code = #"[arb'U]/mL"
+* group.element[=].target[=].relationship = #equivalent
+
+* group.element[+].code = #305
+* group.element[=].display = "million tasir birligi"
+* group.element[=].target[+].code = #"10*6.[arb'U]"
+* group.element[=].target[=].relationship = #equivalent
+
+* group.element[+].code = #308
+* group.element[=].display = "milliard tasir birligi"
+* group.element[=].target[+].code = #"10*9.[arb'U]"
+* group.element[=].target[=].relationship = #equivalent
+
+* group.element[+].code = #1200
+* group.element[=].display = "O'zgartirish harakat birliklari"
+* group.element[=].target[+].code = #"[arb'U]"
+* group.element[=].target[=].relationship = #source-is-narrower-than-target
+
+* group.element[+].code = #620
+* group.element[=].display = "Мышиная Единица Действия"
+* group.element[=].target[+].code = #"[arb'U]"
+* group.element[=].target[=].relationship = #source-is-narrower-than-target
+
+* group.element[+].code = #1300
+* group.element[=].display = "FTU"
+* group.element[=].target[+].code = #"[arb'U]"
+* group.element[=].target[=].relationship = #source-is-narrower-than-target
+
+* group.element[+].code = #900
+* group.element[=].display = "Fokusni shakllantirish birligi (FFU)"
+* group.element[=].target[+].code = #"[FFU]"
+* group.element[=].target[=].relationship = #equivalent
+
+* group.element[+].code = #326
+* group.element[=].display = "dona"
+* group.element[=].target[+].code = #"{#}"
+* group.element[=].target[=].relationship = #equivalent
+
+* group.element[+].code = #340
+* group.element[=].display = "millilitr"
+* group.element[=].target[+].code = #"mL"
+* group.element[=].target[=].relationship = #equivalent
+
+* group.element[+].code = #404
+* group.element[=].display = "milligramm"
+* group.element[=].target[+].code = #"mg"
+* group.element[=].target[=].relationship = #equivalent
+
+* group.element[+].code = #386
+* group.element[=].display = "mg/5 ml"
+* group.element[=].target[+].code = #"mg/(5.mL)"
+* group.element[=].target[=].relationship = #equivalent
+
+* group.element[+].code = #387
+* group.element[=].display = "mg/10 ml"
+* group.element[=].target[+].code = #"mg/(10.mL)"
+* group.element[=].target[=].relationship = #equivalent
+
+* group.element[+].code = #388
+* group.element[=].display = "mg/100 ml"
+* group.element[=].target[+].code = #"mg/(100.mL)"
+* group.element[=].target[=].relationship = #equivalent
+
+* group.element[+].code = #403
+* group.element[=].display = "mg/2 ml"
+* group.element[=].target[+].code = #"mg/(2.mL)"
+* group.element[=].target[=].relationship = #equivalent
+
+* group.element[+].code = #402
+* group.element[=].display = "g/5 ml"
+* group.element[=].target[+].code = #"g/(5.mL)"
+* group.element[=].target[=].relationship = #equivalent
+
+* group.element[+].code = #461
+* group.element[=].display = "g/1000 ml"
+* group.element[=].target[+].code = #"g/L"
+* group.element[=].target[=].relationship = #equivalent

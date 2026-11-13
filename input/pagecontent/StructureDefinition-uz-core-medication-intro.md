@@ -6,7 +6,7 @@ The elements below must always be present (mandatory) or must be supported when 
 
 #### Each UZ Core Medication Must Have
 
-The only mandatory element this profile adds is at least one identifier - the base Medication resource has no mandatory elements of its own. The identifier is sliced by `system`, and within each slice the `system` URI is fixed, so it is the URI that says which national identifier you are sending.
+Each UZ Core Medication has at least an identifier with its `system` and `value`, or a code (invariant `uzcore-med-1`) - the base Medication resource has no mandatory elements of its own. A product from the national registry carries its registry identifiers. A medicine prescribed by its international non-proprietary name (INN), as DMED e-prescriptions are, has no registry product yet and carries only the INN or ATC code; the pharmacy names the product when it dispenses it. The identifier is sliced by `system`, and within each slice the `system` URI is fixed, so it is the URI that says which national identifier you are sending.
 
 #### Each UZ Core Medication Must Support
 
@@ -45,11 +45,31 @@ An identifier search without a system (`?identifier=UZ/MED/2024/00123`) matches 
 
 ### Building the JSON, step by step
 
-The examples below go from the smallest instance the server will accept to a fully described registered product. Copy one and adapt it - every value shown validates against this profile. The complete reference instances are linked at the bottom of the page ([paracetamol tablets](Medication-example-medication.html), [neomycin drops](Medication-example-neomycin-atc-medication.html), [naloxegol tablets](Medication-example-naloxegol-atc-medication.html)).
+The examples below go from the smallest instance the server will accept to a fully described registered product. Copy one and adapt it - every value shown validates against this profile. The complete reference instances are linked at the bottom of the page ([paracetamol tablets](Medication-example-medication.html), [neomycin drops](Medication-example-neomycin-atc-medication.html), [naloxegol tablets](Medication-example-naloxegol-atc-medication.html), [amoxicillin prescribed by INN](Medication-example-inn-medication.html)).
 
 #### The smallest Medication you should send
 
-One `identifier` is the only element this profile makes mandatory. Every UZ Core resource must also name the profile it claims to conform to in `meta.profile` - that is how the server knows which rules to validate against. In practice a catalogue entry is useless without a `code` saying what the product is and a `status`, so send those too. This much already passes validation:
+Every UZ Core resource must name the profile it claims to conform to in `meta.profile` - that is how the server knows which rules to validate against. A medicine prescribed by INN has no registry product yet, so its `code` and a `status` are all it needs. This much already passes validation:
+
+```json
+{
+  "resourceType": "Medication",
+  "meta": { "profile": ["https://dhp.uz/fhir/core/StructureDefinition/uz-core-medication"] },
+  "language": "en",
+  "code": {
+    "coding": [
+      {
+        "system": "https://terminology.dhp.uz/fhir/core/CodeSystem/inn-medication-name-cs",
+        "code": "005325",
+        "display": "paracetamol"
+      }
+    ]
+  },
+  "status": "active"
+}
+```
+
+A registered product also carries at least one `identifier`, with both its `system` and `value`:
 
 ```json
 {
