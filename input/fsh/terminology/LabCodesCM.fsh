@@ -1287,8 +1287,10 @@ Description: "Maps local UZ laboratory analytes codes to LOINC."
 
 * group.element[+].code = #lab-pan-213
 * group.element[=].display = "Atipik belgili hujayralar"
-// LOINC has no code for atypical epithelial cells in sputum cytology; 15376-7 (abnormal spermatozoa) was wrong
-* group.element[=].noMap = true
+* group.element[=].target[+].code = #10526-2
+* group.element[=].target[=].display = "Microscopic observation in Sputum by Cyto stain"
+* group.element[=].target[=].relationship = #source-is-narrower-than-target
+* group.element[=].target[=].comment = "The source identifies atypical cells in sputum, while the target represents a broader sputum cytology observation."
 
 * group.element[+].code = #lab-pan-214
 * group.element[=].display = "Miqdori"
@@ -1503,8 +1505,10 @@ Description: "Maps local UZ laboratory analytes codes to LOINC."
 
 * group.element[+].code = #lab-pan-270
 * group.element[=].display = "Poliblastlar"
-// LOINC has no code for polyblasts in cerebrospinal fluid; 55792-6 (nucleated cells in bone marrow) was wrong
-* group.element[=].noMap = true
+* group.element[=].target[+].code = #35068-6
+* group.element[=].target[=].display = "Blasts [#/volume] in Cerebrospinal Fluid"
+* group.element[=].target[=].relationship = #related-to
+* group.element[=].target[=].comment = "Provisional mapping. Polyblasts and hematologic blasts are not confirmed to be equivalent. Requires laboratory validation."
 
 * group.element[+].code = #lab-pan-271
 * group.element[=].display = "Plazmatik hujayralar"
