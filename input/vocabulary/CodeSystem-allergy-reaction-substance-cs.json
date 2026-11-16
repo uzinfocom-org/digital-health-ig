@@ -7,6 +7,19 @@
   "title": "Reaction substance codes",
   "description": "Local codes and multilingual names for allergy reaction substance.",
   "url": "https://terminology.dhp.uz/fhir/core/CodeSystem/allergy-reaction-substance-cs",
+  "caseSensitive": true,
+  "hierarchyMeaning": "is-a",
+  "language": "uz",
+  "experimental": true,
+  "count": 295,
+  "property": [
+    {
+      "code": "parent",
+      "uri": "http://hl7.org/fhir/concept-properties#parent",
+      "description": "The whole-extract allergen that a component allergen belongs to",
+      "type": "code"
+    }
+  ],
   "concept": [
     {
       "code": "aller-0010-00002",
@@ -33,6 +46,12 @@
         {
           "language": "en",
           "value": "Cyn d 1"
+        }
+      ],
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "aller-0010-00002"
         }
       ]
     },
@@ -314,6 +333,12 @@
           "language": "en",
           "value": "Hazel (Cor a 1-0103)"
         }
+      ],
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "aller-0010-00023"
+        }
       ]
     },
     {
@@ -397,6 +422,12 @@
         {
           "language": "en",
           "value": "Ash (Fra e 1)"
+        }
+      ],
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "aller-0010-00029"
         }
       ]
     },
@@ -594,6 +625,12 @@
           "language": "en",
           "value": "Ragweed (Amb a 1)"
         }
+      ],
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "aller-0010-00044"
+        }
       ]
     },
     {
@@ -607,6 +644,12 @@
         {
           "language": "en",
           "value": "Ragweed (Amb a 4)"
+        }
+      ],
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "aller-0010-00044"
         }
       ]
     },
@@ -636,6 +679,12 @@
           "language": "en",
           "value": "Wormwood (Art v 1)"
         }
+      ],
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "aller-0010-00047"
+        }
       ]
     },
     {
@@ -649,6 +698,12 @@
         {
           "language": "en",
           "value": "Wormwood (Art v 3)"
+        }
+      ],
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "aller-0010-00047"
         }
       ]
     },
@@ -678,6 +733,12 @@
           "language": "en",
           "value": "Hemp (Can s 3)"
         }
+      ],
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "aller-0010-00050"
+        }
       ]
     },
     {
@@ -705,6 +766,12 @@
         {
           "language": "en",
           "value": "White goosefoot (Che a 1)"
+        }
+      ],
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "aller-0010-00052"
         }
       ]
     },
@@ -748,6 +815,12 @@
           "language": "en",
           "value": "Wallflower (Par j 2)"
         }
+      ],
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "aller-0010-00055"
+        }
       ]
     },
     {
@@ -776,6 +849,12 @@
           "language": "en",
           "value": "Plantain (Pla l 1)"
         }
+      ],
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "aller-0010-00057"
+        }
       ]
     },
     {
@@ -803,6 +882,12 @@
         {
           "language": "en",
           "value": "Salwort (Sal k 1)"
+        }
+      ],
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "aller-0010-00059"
         }
       ]
     },
@@ -1084,6 +1169,12 @@
           "language": "en",
           "value": "House dust mite Tyrophagus putrescentiae (Tyr p 2)"
         }
+      ],
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "aller-0010-00082"
+        }
       ]
     },
     {
@@ -1251,6 +1342,12 @@
         {
           "language": "en",
           "value": "Cladosporium herbarum (Cla h 8)"
+        }
+      ],
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "aller-0010-00097"
         }
       ]
     },
@@ -1532,6 +1629,12 @@
           "language": "en",
           "value": "Buckwheat (Fag e 2)"
         }
+      ],
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "aller-0010-00120"
+        }
       ]
     },
     {
@@ -1686,6 +1789,12 @@
           "language": "en",
           "value": "Corn (Zea m 14)"
         }
+      ],
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "aller-0010-00131"
+        }
       ]
     },
     {
@@ -1783,6 +1892,12 @@
         {
           "language": "en",
           "value": "Mustard (Sin a 1)"
+        }
+      ],
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "aller-0010-00139"
         }
       ]
     },
@@ -2162,6 +2277,12 @@
           "language": "en",
           "value": "Carrot (Dau c 1)"
         }
+      ],
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "aller-0010-00168"
+        }
       ]
     },
     {
@@ -2204,6 +2325,12 @@
           "language": "en",
           "value": "Tomato (Sola l 6)"
         }
+      ],
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "aller-0010-00171"
+        }
       ]
     },
     {
@@ -2232,6 +2359,12 @@
           "language": "en",
           "value": "Cashew (Ana o 2)"
         }
+      ],
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "aller-0010-00174"
+        }
       ]
     },
     {
@@ -2245,6 +2378,12 @@
         {
           "language": "en",
           "value": "Cashew (Ana o 3)"
+        }
+      ],
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "aller-0010-00174"
         }
       ]
     },
@@ -2273,6 +2412,12 @@
         {
           "language": "en",
           "value": "Brazil nut (Ber e 1)"
+        }
+      ],
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "aller-0010-00177"
         }
       ]
     },
@@ -2568,6 +2713,12 @@
           "language": "en",
           "value": "Poppy seeds (Pap s 2S Albumin)"
         }
+      ],
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "aller-0010-00199"
+        }
       ]
     },
     {
@@ -2595,6 +2746,12 @@
         {
           "language": "en",
           "value": "Sesame (Ses i 1)"
+        }
+      ],
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "aller-0010-00201"
         }
       ]
     },
@@ -2638,6 +2795,12 @@
           "language": "en",
           "value": "Cow's milk (Bos d 4)"
         }
+      ],
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "aller-0010-00206"
+        }
       ]
     },
     {
@@ -2652,6 +2815,12 @@
           "language": "en",
           "value": "Cow's milk (Bos d 5)"
         }
+      ],
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "aller-0010-00206"
+        }
       ]
     },
     {
@@ -2665,6 +2834,12 @@
         {
           "language": "en",
           "value": "Cow's milk"
+        }
+      ],
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "aller-0010-00206"
         }
       ]
     },
@@ -2764,6 +2939,12 @@
           "language": "en",
           "value": "Egg white (Gal d 1)"
         }
+      ],
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "aller-0010-00215"
+        }
       ]
     },
     {
@@ -2777,6 +2958,12 @@
         {
           "language": "en",
           "value": "Egg white (Gal d 2)"
+        }
+      ],
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "aller-0010-00215"
         }
       ]
     },
@@ -2792,6 +2979,12 @@
           "language": "en",
           "value": "Egg white (Gal d 3)"
         }
+      ],
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "aller-0010-00215"
+        }
       ]
     },
     {
@@ -2806,6 +2999,12 @@
           "language": "en",
           "value": "Egg white (Gal d 4)"
         }
+      ],
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "aller-0010-00215"
+        }
       ]
     },
     {
@@ -2819,6 +3018,12 @@
         {
           "language": "en",
           "value": "Egg yolk (Gal d 5)"
+        }
+      ],
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "aller-0010-00216"
         }
       ]
     },
@@ -2890,6 +3095,12 @@
           "language": "en",
           "value": "Atlantic herring (Clu h 1)"
         }
+      ],
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "aller-0010-00226"
+        }
       ]
     },
     {
@@ -2946,6 +3157,12 @@
           "language": "en",
           "value": "Atlantic cod (Gad m 2+3)"
         }
+      ],
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "aller-0010-00230"
+        }
       ]
     },
     {
@@ -2959,6 +3176,12 @@
         {
           "language": "en",
           "value": "Atlantic cod (Gad m 1)"
+        }
+      ],
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "aller-0010-00230"
         }
       ]
     },
@@ -3142,6 +3365,12 @@
           "language": "en",
           "value": "Thresher or spiny ray (Raj c Parvalbumin)"
         }
+      ],
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "aller-0010-00244"
+        }
       ]
     },
     {
@@ -3184,6 +3413,12 @@
           "language": "en",
           "value": "Salmon (Sal s 1)"
         }
+      ],
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "aller-0010-00247"
+        }
       ]
     },
     {
@@ -3212,6 +3447,12 @@
           "language": "en",
           "value": "Atlantic mackerel (Sco s 1)"
         }
+      ],
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "aller-0010-00249"
+        }
       ]
     },
     {
@@ -3239,6 +3480,12 @@
         {
           "language": "en",
           "value": "Tuna (Thu a 1)"
+        }
+      ],
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "aller-0010-00251"
         }
       ]
     },
@@ -3295,6 +3542,12 @@
         {
           "language": "en",
           "value": "Beef (Bos d 6)"
+        }
+      ],
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "aller-0010-00256"
         }
       ]
     },
@@ -3408,6 +3661,12 @@
           "language": "en",
           "value": "Pork (Sus d 1)"
         }
+      ],
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "aller-0010-00264"
+        }
       ]
     },
     {
@@ -3464,6 +3723,12 @@
           "language": "en",
           "value": "Honey bee (Api m 1)"
         }
+      ],
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "aller-0010-00271"
+        }
       ]
     },
     {
@@ -3477,6 +3742,12 @@
         {
           "language": "en",
           "value": "Honey bee (Api m 10)"
+        }
+      ],
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "aller-0010-00271"
         }
       ]
     },
@@ -3520,6 +3791,12 @@
           "language": "en",
           "value": "Paper wasp (Pol d 5)"
         }
+      ],
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "aller-0010-00276"
+        }
       ]
     },
     {
@@ -3548,6 +3825,12 @@
           "language": "en",
           "value": "Common wasp (Ves v 1)"
         }
+      ],
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "aller-0010-00278"
+        }
       ]
     },
     {
@@ -3561,6 +3844,12 @@
         {
           "language": "en",
           "value": "Common wasp (Ves v 5)"
+        }
+      ],
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "aller-0010-00278"
         }
       ]
     },
@@ -3659,6 +3948,12 @@
         {
           "language": "en",
           "value": "American cockroach (Per a 7)"
+        }
+      ],
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "aller-0010-00287"
         }
       ]
     },
@@ -4138,10 +4433,5 @@
         }
       ]
     }
-  ],
-  "caseSensitive": true,
-  "hierarchyMeaning": "is-a",
-  "language": "uz",
-  "experimental": true,
-  "count": 295
+  ]
 }
