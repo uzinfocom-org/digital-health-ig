@@ -4,25 +4,25 @@ Title: "Blood donation complication translations"
 Description: "Blood donation complication supplement with translations in Uzbek and Russian"
 * insert SupplementCodeSystemDraft(procedure-complication-snomed-cs, $sct, 2026.1.0)
 
-* #271594007
+* #271594007 "Syncope"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Обморок"
   * ^designation[+].language = #uz
   * ^designation[=].value = "Hushdan ketish"
 
-* #271787007
+* #271787007 "Collapse"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Коллапс"
   * ^designation[+].language = #uz
   * ^designation[=].value = "Kollaps"
 
-* #194828000
+* #194828000 "Angina pectoris"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Приступ стенокардии"
+  * ^designation[=].value = "Стенокардия"
   * ^designation[+].language = #uz
-  * ^designation[=].value = "Stenokardiya xuruji"
+  * ^designation[=].value = "Stenokardiya"
 
-* #735173007
+* #735173007 "Anaphylactic shock"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Анафилактический шок"
   * ^designation[+].language = #uz
