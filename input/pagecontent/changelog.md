@@ -61,7 +61,7 @@ Examples no longer set a display on HL7 codes where it differed from the HL7 ter
 
 [UZ Core Patient](StructureDefinition-uz-core-patient.html) accepts more than one birth certificate (`birthCertificate` is now 0..* instead of 0..1) and no longer fixes its `use`, so a patient's superseded certificate can be recorded with `use = old` next to the current one with `use = official`.
 
-[UZ Core Procedure](StructureDefinition-uz-core-procedure.html) recommends [procedure complication codes](ValueSet-procedure-complication-vs.html) for fainting, collapse, angina attack, anaphylactic shock and no reaction, with Uzbek and Russian translations.
+[UZ Core Procedure](StructureDefinition-uz-core-procedure.html) recommends [blood donation complication codes](ValueSet-procedure-complication-vs.html) through an additional preferred binding only when `Procedure.code` is SNOMED CT `25179006` (Whole blood unit collection). The codes cover fainting, collapse, angina attack and anaphylactic shock, with Uzbek and Russian translations. Collapse uses `271787007` instead of `27942005` (Shock). If there are no complications, omit `complication`.
 
 #### Breaking changes
 

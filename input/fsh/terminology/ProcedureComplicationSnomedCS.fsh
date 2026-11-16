@@ -1,7 +1,7 @@
 CodeSystem: ProcedureComplicationSnomedCS
 Id: procedure-complication-snomed-cs
-Title: "Procedure complication translations"
-Description: "Procedure complication supplement with translations in Uzbek and Russian"
+Title: "Blood donation complication translations"
+Description: "Blood donation complication supplement with translations in Uzbek and Russian"
 * insert SupplementCodeSystemDraft(procedure-complication-snomed-cs, $sct, 2026.1.0)
 
 * #271594007
@@ -10,7 +10,7 @@ Description: "Procedure complication supplement with translations in Uzbek and R
   * ^designation[+].language = #uz
   * ^designation[=].value = "Hushdan ketish"
 
-* #27942005
+* #271787007
   * ^designation[0].language = #ru
   * ^designation[=].value = "Коллапс"
   * ^designation[+].language = #uz
