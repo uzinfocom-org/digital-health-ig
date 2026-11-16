@@ -17,19 +17,22 @@ Description: "Maps local UZ PhysiotherapyProcedureCS codes to SNOMED CT."
 * group.element[=].display = "Amplipulsterapiya (sinusoidal modulyatsiyalangan toklar bilan davolash)"
 * group.element[=].target[+].code = #313128003
 * group.element[=].target[=].display = "Alternating current therapy"
-* group.element[=].target[=].relationship = #related-to
+* group.element[=].target[=].relationship = #source-is-narrower-than-target
+* group.element[=].target[=].comment = "Amplipulse is a specific form of alternating-current electrotherapy."
 
 * group.element[+].code = #proce-0001-00002
 * group.element[=].display = "Aeroionoterapiya"
 * group.element[=].target[+].code = #182627008
 * group.element[=].target[=].display = "Aerotherapy"
-* group.element[=].target[=].relationship = #source-is-narrower-than-target
+* group.element[=].target[=].relationship = #related-to
+* group.element[=].target[=].comment = "Air-ion therapy is not demonstrably a subtype of aerotherapy without checking the target concept definition."
 
 * group.element[+].code = #proce-0001-00003
 * group.element[=].display = "Baroterapiya"
 * group.element[=].target[+].code = #44387004
 * group.element[=].target[=].display = "Decompression chamber therapy"
 * group.element[=].target[=].relationship = #source-is-broader-than-target
+* group.element[=].target[=].comment = "Barotherapy encompasses pressure-based modalities broader than decompression-chamber treatment."
 
 * group.element[+].code = #proce-0001-00004
 * group.element[=].display = "Gidroterapiya (suv bilan davolash)"
@@ -48,6 +51,7 @@ Description: "Maps local UZ PhysiotherapyProcedureCS codes to SNOMED CT."
 * group.element[=].target[+].code = #229564002
 * group.element[=].target[=].display = "Direct current therapy"
 * group.element[=].target[=].relationship = #source-is-narrower-than-target
+* group.element[=].target[=].comment = "Hydrogalvanic baths include a bathing component that is not represented in direct-current therapy."
 
 * group.element[+].code = #proce-0001-00007
 * group.element[=].display = "Mineral vannalar"
@@ -83,7 +87,8 @@ Description: "Maps local UZ PhysiotherapyProcedureCS codes to SNOMED CT."
 * group.element[=].display = "Xushbo‘y moddali vannalar"
 * group.element[=].target[+].code = #394615007
 * group.element[=].target[=].display = "Aromatherapy"
-* group.element[=].target[=].relationship = #source-is-narrower-than-target
+* group.element[=].target[=].relationship = #related-to
+* group.element[=].target[=].comment = "Aromatic bath and aromatherapy overlap; subclass relationship is not established."
 
 * group.element[+].code = #proce-0001-00013
 * group.element[=].display = "Kontrast vannalar"
@@ -107,7 +112,8 @@ Description: "Maps local UZ PhysiotherapyProcedureCS codes to SNOMED CT."
 * group.element[=].display = "Shifobaxsh balchiqli vannalar"
 * group.element[=].target[+].code = #229574004
 * group.element[=].target[=].display = "Hot mud treatment"
-* group.element[=].target[=].relationship = #source-is-narrower-than-target
+* group.element[=].target[=].relationship = #related-to
+* group.element[=].target[=].comment = "Therapeutic mud baths do not necessarily use hot mud; target specifies hot mud treatment."
 
 * group.element[+].code = #proce-0001-00017
 * group.element[=].display = "Havo pufakchali (marvaridli) vannalar"
@@ -120,6 +126,7 @@ Description: "Maps local UZ PhysiotherapyProcedureCS codes to SNOMED CT."
 * group.element[=].target[+].code = #174228003
 * group.element[=].target[=].display = "Colonic lavage"
 * group.element[=].target[=].relationship = #source-is-narrower-than-target
+* group.element[=].target[=].comment = "The underwater intestinal lavage variant is a specific form of colonic lavage."
 
 * group.element[+].code = #proce-0001-00019
 * group.element[=].display = "Yod-bromli vanna"
@@ -174,30 +181,35 @@ Description: "Maps local UZ PhysiotherapyProcedureCS codes to SNOMED CT."
 * group.element[=].target[+].code = #229574004
 * group.element[=].target[=].display = "Hot mud treatment"
 * group.element[=].target[=].relationship = #source-is-broader-than-target
+* group.element[=].target[=].comment = "Peloidotherapy includes mud treatments beyond hot mud treatments."
 
 * group.element[+].code = #proce-0001-00028
 * group.element[=].display = "Galoterapiya (tuz aerozoli bilan davolash)"
 * group.element[=].target[+].code = #1366004
 * group.element[=].target[=].display = "Inhalation therapy procedure"
 * group.element[=].target[=].relationship = #source-is-narrower-than-target
+* group.element[=].target[=].comment = "Salt aerosol halotherapy can be a form of inhalation therapy when delivered by inhalation."
 
 * group.element[+].code = #proce-0001-00029
 * group.element[=].display = "Galvanobalchiq terapiyasi"
 * group.element[=].target[+].code = #229574004
 * group.element[=].target[=].display = "Hot mud treatment"
-* group.element[=].target[=].relationship = #source-is-narrower-than-target
+* group.element[=].target[=].relationship = #related-to
+* group.element[=].target[=].comment = "Galvanic mud therapy combines mud and direct current; target represents only hot mud treatment."
 
 * group.element[+].code = #proce-0001-00030
 * group.element[=].display = "Balchiqli induktotermiya"
 * group.element[=].target[+].code = #229574004
 * group.element[=].target[=].display = "Hot mud treatment"
-* group.element[=].target[=].relationship = #source-is-narrower-than-target
+* group.element[=].target[=].relationship = #related-to
+* group.element[=].target[=].comment = "Mud inductothermy combines mud with electromagnetic heating; target does not describe the combined technique."
 
 * group.element[+].code = #proce-0001-00031
 * group.element[=].display = "Pelofonoterapiya"
 * group.element[=].target[+].code = #229574004
 * group.element[=].target[=].display = "Hot mud treatment"
-* group.element[=].target[=].relationship = #source-is-narrower-than-target
+* group.element[=].target[=].relationship = #related-to
+* group.element[=].target[=].comment = "Pelophonotherapy combines mud and ultrasound; target describes hot mud treatment only."
 
 * group.element[+].code = #proce-0001-00032
 * group.element[=].display = "Darsonvalizatsiya"
@@ -221,7 +233,8 @@ Description: "Maps local UZ PhysiotherapyProcedureCS codes to SNOMED CT."
 * group.element[=].display = "Duodenal zondlash"
 * group.element[=].target[+].code = #440066008
 * group.element[=].target[=].display = "Intubation of duodenum and aspiration of duodenal contents"
-* group.element[=].target[=].relationship = #equivalent
+* group.element[=].target[=].relationship = #source-is-broader-than-target
+* group.element[=].target[=].comment = "Duodenal intubation/probing does not necessarily entail aspiration; target explicitly includes aspiration."
 
 * group.element[+].code = #proce-0001-00036
 * group.element[=].display = "Induktotermiya"
@@ -264,6 +277,7 @@ Description: "Maps local UZ PhysiotherapyProcedureCS codes to SNOMED CT."
 * group.element[=].target[+].code = #229565001
 * group.element[=].target[=].display = "Low power laser therapy"
 * group.element[=].target[=].relationship = #source-is-broader-than-target
+* group.element[=].target[=].comment = "Laser therapy encompasses methods beyond low-power laser therapy."
 
 * group.element[+].code = #proce-0001-00043
 * group.element[=].display = "Lazeropunktura"
@@ -282,12 +296,14 @@ Description: "Maps local UZ PhysiotherapyProcedureCS codes to SNOMED CT."
 * group.element[=].target[+].code = #229553000
 * group.element[=].target[=].display = "Physical agent therapy"
 * group.element[=].target[=].relationship = #source-is-narrower-than-target
+* group.element[=].target[=].comment = "Magnetotherapy is a more specific modality than general physical-agent therapy; seek a direct SNOMED term."
 
 * group.element[+].code = #proce-0001-00046
 * group.element[=].display = "Magnitopunktura"
 * group.element[=].target[+].code = #44868003
 * group.element[=].target[=].display = "Acupuncture"
-* group.element[=].target[=].relationship = #source-is-narrower-than-target
+* group.element[=].target[=].relationship = #related-to
+* group.element[=].target[=].comment = "Magnetopuncture uses magnetic stimulation of points, not necessarily needle acupuncture. Seek exact terminology concept."
 
 * group.element[+].code = #proce-0001-00047
 * group.element[=].display = "Davolovchi massaj"
@@ -311,7 +327,8 @@ Description: "Maps local UZ PhysiotherapyProcedureCS codes to SNOMED CT."
 * group.element[=].display = "Ultrabinafsha nurlanish uchun biodozani aniqlash"
 * group.element[=].target[+].code = #87724004
 * group.element[=].target[=].display = "Photosensitivity test"
-* group.element[=].target[=].relationship = #source-is-narrower-than-target
+* group.element[=].target[=].relationship = #related-to
+* group.element[=].target[=].comment = "UV biodose determination is not necessarily a subtype of the generic photosensitivity test."
 
 * group.element[+].code = #proce-0001-00051
 * group.element[=].display = "Ozokerit bilan davolash"
@@ -342,6 +359,7 @@ Description: "Maps local UZ PhysiotherapyProcedureCS codes to SNOMED CT."
 * group.element[=].target[+].code = #47902005
 * group.element[=].target[=].display = "Microwave diathermy"
 * group.element[=].target[=].relationship = #equivalent
+* group.element[=].target[=].comment = "Microwave therapy may include applications other than microwave diathermy; verify local scope."
 
 * group.element[+].code = #proce-0001-00056
 * group.element[=].display = "Yorug‘lik bilan davolash (fototerapiya)"
@@ -372,6 +390,7 @@ Description: "Maps local UZ PhysiotherapyProcedureCS codes to SNOMED CT."
 * group.element[=].target[+].code = #118824002
 * group.element[=].target[=].display = "Procedure on biliary tract"
 * group.element[=].target[=].relationship = #related-to
+* group.element[=].target[=].comment = "Blind tubage stimulates biliary drainage without intubation; general biliary-tract procedure is only a broad approximate related concept."
 
 * group.element[+].code = #proce-0001-00061
 * group.element[=].display = "Umurtqa pog‘onasini traksion tortish"
@@ -389,7 +408,8 @@ Description: "Maps local UZ PhysiotherapyProcedureCS codes to SNOMED CT."
 * group.element[=].display = "Ultra yuqori chastotali terapiya (UVCh-terapiya)"
 * group.element[=].target[+].code = #49913004
 * group.element[=].target[=].display = "Ultrashort wave diathermy"
-* group.element[=].target[=].relationship = #related-to
+* group.element[=].target[=].relationship = #equivalent
+* group.element[=].target[=].comment = "UHF physiotherapy is commonly described as ultrashort-wave diathermy; verify frequency/range in local definition."
 
 * group.element[+].code = #proce-0001-00064
 * group.element[=].display = "Ultratovush terapiyasi"
@@ -408,12 +428,14 @@ Description: "Maps local UZ PhysiotherapyProcedureCS codes to SNOMED CT."
 * group.element[=].target[+].code = #46467001
 * group.element[=].target[=].display = "Photochemotherapy with psoralens and ultraviolet A"
 * group.element[=].target[=].relationship = #source-is-narrower-than-target
+* group.element[=].target[=].comment = "PUVA baths are a specific application of psoralen-UVA photochemotherapy."
 
 * group.element[+].code = #proce-0001-00067
 * group.element[=].display = "Ultrabinafsha nurlanish. Tubus-kvars"
 * group.element[=].target[+].code = #60478006
 * group.element[=].target[=].display = "Local actinotherapy"
 * group.element[=].target[=].relationship = #source-is-narrower-than-target
+* group.element[=].target[=].comment = "Tubus-quartz is localized UV irradiation; verify Local actinotherapy concept meaning."
 
 * group.element[+].code = #proce-0001-00068
 * group.element[=].display = "Franklinizatsiya"
