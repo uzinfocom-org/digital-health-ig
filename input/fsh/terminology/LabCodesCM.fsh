@@ -1288,7 +1288,7 @@ Description: "Maps local UZ laboratory analytes codes to LOINC."
 * group.element[+].code = #lab-pan-213
 * group.element[=].display = "Atipik belgili hujayralar"
 * group.element[=].target[+].code = #10526-2
-* group.element[=].target[=].display = "Microscopic observation in Sputum by Cyto stain"
+* group.element[=].target[=].display = "Microscopic observation [Identifier] in Sputum by Cyto stain"
 * group.element[=].target[=].relationship = #source-is-narrower-than-target
 * group.element[=].target[=].comment = "The source identifies atypical cells in sputum, while the target represents a broader sputum cytology observation."
 
