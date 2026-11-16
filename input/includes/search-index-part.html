@@ -1,0 +1,51 @@
+{%- comment -%}
+One file of the search index for search.html, built by Jekyll from the resources the publisher
+writes to _data (produce-jekyll-data); b in the header is the build stamp. Part 0 holds one object
+per resource. Parts 1 to 4, which ig-search.js expects, hold their items: a number is the index of
+the resource the next items belong to, then [code, display, lang, value, ...] for a concept
+(designations equal to the display left out), [source code, source display, target code, target
+display, relationship] for a ConceptMap mapping and [value, type] for a NamingSystem identifier.
+Each part takes a quarter of every CodeSystem's top-level concepts and every fourth other resource.
+{%- endcomment -%}
+{%- assign si_parts = 4 -%}{%- assign si_part = include.part | plus: 0 -%}{%- assign si_i = -1 -%}
+[{"v":3,"b":"{{ site.time | date: '%s' }}"}
+{% for entry in site.data -%}
+{%- assign r = entry[1] -%}
+{%- if r.resourceType and r.id -%}
+{%- assign expected = r.resourceType | append: "-" | append: r.id -%}
+{%- if entry[0] == expected -%}
+{%- assign si_i = si_i | plus: 1 -%}
+{%- assign si_m = si_i | modulo: si_parts | plus: 1 -%}
+{%- if si_part == 0 -%}
+{%- assign d = r.description -%}
+{%- if d.text -%}{%- assign d = d.text -%}{%- elsif d.coding -%}{%- assign d = d.coding[0].display -%}{%- endif -%}
+,{"r":{{ r.resourceType | jsonify }},"id":{{ r.id | jsonify }},"t":{{ r.title | default: r.name | default: r.id | jsonify }},"n":{{ r.name | default: "" | jsonify }},"u":{{ r.url | default: "" | jsonify }},"d":{{ d | default: "" | strip_newlines | truncate: 300 | jsonify }}}
+{% elsif r.resourceType == "CodeSystem" and r.concept -%}
+{%- assign si_n = r.concept.size -%}
+{%- assign si_from = si_n | times: si_part | minus: si_n | divided_by: si_parts -%}
+{%- assign si_len = si_n | times: si_part | divided_by: si_parts | minus: si_from -%}
+{%- if si_len > 0 -%},{{ si_i }}
+{% include search-index-concepts.html concepts=r.concept from=si_from len=si_len -%}
+{%- endif -%}
+{%- elsif si_m == si_part -%}
+{%- case r.resourceType -%}
+{%- when "ValueSet" -%}{%- if r.compose.include -%},{{ si_i }}
+{% endif -%}{%- for inc in r.compose.include -%}{%- include search-index-concepts.html concepts=inc.concept -%}{%- endfor -%}
+{%- when "ConceptMap" -%},{{ si_i }}
+{% for g in r.group -%}{%- for e in g.element -%}
+{%- if e.target == nil or e.target.size == 0 -%}
+,[{{ e.code | jsonify }},{{ e.display | default: "" | jsonify }},"","","noMap"]
+{% endif -%}
+{%- for t in e.target -%}
+,[{{ e.code | jsonify }},{{ e.display | default: "" | jsonify }},{{ t.code | default: "" | jsonify }},{{ t.display | default: "" | jsonify }},{{ t.relationship | default: "" | jsonify }}]
+{% endfor -%}{%- endfor -%}{%- endfor -%}
+{%- when "NamingSystem" -%},{{ si_i }}
+{% for u in r.uniqueId -%}
+,[{{ u.value | jsonify }},{{ u.type | jsonify }}]
+{% endfor -%}
+{%- endcase -%}
+{%- endif -%}
+{%- endif -%}
+{%- endif -%}
+{%- endfor -%}
+]
