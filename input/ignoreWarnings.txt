@@ -242,3 +242,7 @@ ValueSet 'http://hl7.org/fhir/ValueSet/concept-property-type|5.0.0' not found
 %The code 492 is mapped to [D'ag'U] as 'equivalent', and 58 is mapped to [D'ag'U] as 'source-is-broader-than-target', which means that 58 should subsume 492, but it does not%
 %The code 492 is mapped to [D'ag'U] as 'equivalent', and 74 is mapped to [D'ag'U] as 'source-is-broader-than-target', which means that 74 should subsume 492, but it does not%
 %The code 69 is mapped to [EID_50] as 'equivalent', and 68 is mapped to [EID_50] as 'source-is-broader-than-target', which means that 68 should subsume 69, but it does not%
+
+# IG Publisher 3.0.4 warns about any SNOMED CT finding in Observation.code, ignoring the value; R5 allows a finding
+# there with a yes/no value or none. Reported in https://github.com/hapifhir/org.hl7.fhir.core/issues/2870 - remove once resolved.
+The SNOMED CT code 1303306008 ('Eligible for benefit') is a finding%
