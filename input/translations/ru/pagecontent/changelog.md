@@ -48,8 +48,6 @@ ICCC-3 и WHO ICHI теперь требуют указания версии с�
 
 [UZ Core Patient](StructureDefinition-uz-core-patient.html) допускает несколько свидетельств о рождении (`birthCertificate` теперь 0..* вместо 0..1) и больше не фиксирует его `use`, поэтому прежнее свидетельство пациента можно передать с `use = old` рядом с действующим с `use = official`.
 
-Английское название услуги TXMK 9265133 уточнено до "Urine protein-to-creatinine ratio measurement", чтобы отличать определение показателя от самого соотношения.
-
 Все ссылки на Device в профилях UZ Core теперь указывают на [UZ Core Device](StructureDefinition-uz-core-device.html): Observation, Procedure, Condition, AdverseEvent, Composition, QuestionnaireResponse, Group, MedicationAdministration, MedicationDispense, InventoryItem, SupplyRequest и SupplyDelivery.
 
 Заголовки и описания систем кодов и наборов значений теперь следуют шаблону именования из [руководства по моделированию](https://github.com/uzinfocom-org/digital-health-ig/blob/main/modelling-guidelines.md): supplement называется `[Concept] translations`, набор значений - `[Concept]`, а в заголовках больше нет слов вроде "CodeSystem" или "ValueSet". Канонические URL, идентификаторы и коды не изменились.
@@ -65,8 +63,6 @@ ICCC-3 и WHO ICHI теперь требуют указания версии с�
 [Пример Procedure](Procedure-example-procedure.html) теперь ссылается на [амбулаторный визит на физиотерапию](Encounter-example-physiotherapy-encounter.html) и состояние [боль в правой стопе](Condition-example-foot-pain.html) того же пациента, а не на визит и состояние другого пациента.
 
 Примеры больше не задают display у кодов HL7, если он отличался от display терминологии HL7 или был написан на узбекском или русском: тип идентификатора `XX` в примерах Organization, класс и приоритет в примере Encounter, место введения в примере Immunization, семейное положение в примерах Patient, статус достижения и приоритет в примере Goal, клинический статус, статус верификации и функция участника в примере Condition, статус в примерах Medication и вид родства в примере RelatedPerson. Удалённые узбекские и русские display есть в дополнениях с переводами этих кодовых систем. Системы именования [номера медицинской карты](NamingSystem-patient-id-uzb-health-card.html) и [пенсионного номера](NamingSystem-patient-id-uzb-pension-number.html) теперь пишут display типа идентификатора "Health Card Number" и "Pension Number", как в терминологии HL7.
-
-Сборка IG теперь использует опубликованный релиз fhir2.base.template 0.1.0 вместо текущей CI-сборки, чтобы не зависеть от доступности реестра CI-шаблонов.
 
 Удалён перевод строки в конце имени папки CSV-файлов BloodProductInventoryItem, чтобы репозиторий можно было клонировать в Windows.
 

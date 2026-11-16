@@ -17,7 +17,7 @@ The base FHIR HealthcareService has no mandatory elements, and this profile does
 - a category - coded into the DHP service category slice, the laboratory category slice or the TXMK category slice;
 - a type - coded into the DHP service slice, the laboratory test slice or the TXMK service slice.
 
-> Use the laboratory category/type slices when the service is a lab test in the catalogue, and the DHP service slices for clinical services - populate the slice that matches, not both.
+> Use the TXMK category/type slices when the service is in TXMK - they are gradually replacing the laboratory slices. Otherwise use the laboratory slices for a lab test in the catalogue, and the DHP service slices for clinical services. Populate one slice, not several.
 
 ### Building the JSON, step by step
 
