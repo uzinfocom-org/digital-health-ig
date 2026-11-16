@@ -3,6 +3,10 @@ Id: unit-of-measurement-cs
 Title: "Unit of measurement codes"
 Description: "Local unit of measurement codes with Uzbek and Russian translations"
 * insert OriginalCodeSystemDraft(unit-of-measurement-cs)
+* ^property[0].code = #parent
+* ^property[=].uri = "http://hl7.org/fhir/concept-properties#parent"
+* ^property[=].description = "The generic unit a specific arbitrary unit is a kind of"
+* ^property[=].type = #code
 
 * #253 "foiz"
   * ^designation[0].language = #ru
@@ -287,24 +291,32 @@ Description: "Local unit of measurement codes with Uzbek and Russian translation
   * ^designation[=].value = "единица липопротеина-липазы"
   * ^designation[+].language = #en
   * ^designation[=].value = "lipoprotein lipase unit"
+  * ^property[0].code = #parent
+  * ^property[=].valueCode = #323
 
 * #254 "antigenik birlik"
   * ^designation[0].language = #ru
   * ^designation[=].value = "антигенная единица"
   * ^designation[+].language = #en
   * ^designation[=].value = "antigenic unit"
+  * ^property[0].code = #parent
+  * ^property[=].valueCode = #323
 
 * #642 "titrlash birligi"
   * ^designation[0].language = #ru
   * ^designation[=].value = "титрационная единица"
   * ^designation[+].language = #en
   * ^designation[=].value = "titration unit"
+  * ^property[0].code = #parent
+  * ^property[=].valueCode = #323
 
 * #256 "antitripsin birligi"
   * ^designation[0].language = #ru
   * ^designation[=].value = "антитрипсиновая единица"
   * ^designation[+].language = #en
   * ^designation[=].value = "antitrypsin unit"
+  * ^property[0].code = #parent
+  * ^property[=].valueCode = #323
 
 * #279 "immunoferment tahlili birligi"
   * ^designation[0].language = #ru
@@ -359,6 +371,8 @@ Description: "Local unit of measurement codes with Uzbek and Russian translation
   * ^designation[=].value = "единица связывания"
   * ^designation[+].language = #en
   * ^designation[=].value = "binding unit"
+  * ^property[0].code = #parent
+  * ^property[=].valueCode = #323
 
 * #277 "reaktivlik indeksi (standartlashtirishning biologik birligi)"
   * ^designation[0].language = #ru
@@ -371,6 +385,8 @@ Description: "Local unit of measurement codes with Uzbek and Russian translation
   * ^designation[=].value = "единица антигена"
   * ^designation[+].language = #en
   * ^designation[=].value = "antigen unit"
+  * ^property[0].code = #parent
+  * ^property[=].valueCode = #323
 
 * #270 "millilitrda biologik faollikning taʼsir birligi"
   * ^designation[0].language = #ru
