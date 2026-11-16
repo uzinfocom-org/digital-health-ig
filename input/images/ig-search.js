@@ -33,7 +33,7 @@
 
   var resources = [];  // {r, id, t, n, u, d}
   var entries = [];    // {res, kind: r|c|m|n, row, key, texts}
-  var hits = [], type = '';
+  var hits = [], type = '', ready = '';
 
   function fmt(s, o) { return s.replace(/\{(\w)\}/g, function (_, k) { return o[k]; }); }
   function norm(s) {
@@ -43,6 +43,8 @@
     return String(s).replace(/[&<>"]/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]; });
   }
   function reEsc(s) { return s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'); }
+  // A normalized word as a pattern that also matches the raw spellings norm() folded together.
+  function loose(w) { return reEsc(w).replace(/'/g, "['‘’ʻʼ`´]").replace(/е/g, '[её]'); }
 
   function add(res, kind, row, key, texts) {
     texts = texts.filter(Boolean).map(norm);
@@ -71,7 +73,7 @@
           add(cur, 'n', row, row[1], []);
         }
       }
-      status.textContent = fmt(T.ready, { r: resources.length.toLocaleString(), c: codes.toLocaleString(), m: maps.toLocaleString() });
+      status.textContent = ready = fmt(T.ready, { r: resources.length.toLocaleString(), c: codes.toLocaleString(), m: maps.toLocaleString() });
     }).catch(function () { status.textContent = T.failed; });
   }
 
@@ -91,9 +93,9 @@
     return String(text || '').split(re).map(function (p, i) { return i % 2 ? '<mark>' + esc(p) + '</mark>' : esc(p); }).join('');
   }
 
-  // The publisher's anchor for a code: spaces dropped, other characters outside [A-Za-z0-9_-] as '.' + char code.
+  // The publisher's anchor for a code: ASCII spaces dropped, other characters outside [A-Za-z0-9_-] as '.' + char code.
   function anchor(code) {
-    return code.replace(/\s/g, '').replace(/[^A-Za-z0-9_-]/g, function (c) { return '.' + c.charCodeAt(0); });
+    return code.replace(/ /g, '').replace(/[^A-Za-z0-9_-]/g, function (c) { return '.' + c.charCodeAt(0); });
   }
 
   // The display in the page language when the concept has one, else its base display.
@@ -151,10 +153,10 @@
     if (type) params.set('type', type); else params.delete('type');
     history.replaceState(null, '', location.pathname + (params.toString() ? '?' + params : ''));
     hits = [];
-    if (!entries.length || !raw) { chips.innerHTML = ''; results.innerHTML = ''; return; }
+    if (!entries.length || !raw) { chips.innerHTML = ''; results.innerHTML = ''; if (entries.length) status.textContent = ready; return; }
     var q = norm(raw), words = q.split(/\s+/);
     var word = new RegExp('(^|[\\s(,.;:/-])' + reEsc(q));
-    var re = new RegExp('(' + words.slice().sort(function (a, b) { return b.length - a.length; }).map(reEsc).join('|') + ')', 'gi');
+    var re = new RegExp('(' + words.slice().sort(function (a, b) { return b.length - a.length; }).map(loose).join('|') + ')', 'gi');
     var scored = [];
     for (var i = 0; i < entries.length; i++) {
       var e = entries[i], ok = true;
