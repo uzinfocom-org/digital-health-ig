@@ -255,6 +255,8 @@ Therefore every local code must go through a check: before adding a concept to a
 
 A local code is acceptable only when there is no equivalent standard concept: the standard concept is broader or narrower in meaning, or is missing altogether (for example, national administrative categories). If the standard covers only part of the list, a ValueSet may combine standard and local codes - only the uncovered concepts remain local.
 
+In `Observation.code`, and in any ValueSet bound to it, use a SNOMED CT concept that names what is observed: an observable entity or an evaluation procedure (the FSN ends in `(observable entity)` or `(procedure)`). Do not use a finding or disorder there (`(finding)`, `(disorder)`): a finding is the result, and it goes in `value[x]` or in a Condition. A finding often points to its observable through the `Interprets` attribute, which gives the code to use instead - for example, `1303306008` Eligible for benefit (finding) interprets `1303307004` Eligibility for benefit (observable entity). The IG Publisher reports a finding in `Observation.code` as a warning.
+
 ### 5.1 Why a supplement is needed for CodeSystem and ValueSet
 
 When creating national profiles, there is often a need to localise terminologies. Creating a **supplement** to existing HL7 CodeSystems (for example, `condition-clinical` for the Condition profile) allows you to:
