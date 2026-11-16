@@ -168,7 +168,7 @@
     search();
   });
   var timer;
-  input.addEventListener('input', function () { clearTimeout(timer); timer = setTimeout(search, 150); });
+  input.addEventListener('input', function () { clearTimeout(timer); timer = setTimeout(search, 300); });
   var start = new URLSearchParams(location.search);
   input.value = start.get('q') || '';
   type = start.get('type') || '';
