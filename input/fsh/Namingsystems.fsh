@@ -714,6 +714,24 @@ Usage: #definition
 * uniqueId[=].value = $supply-contract-number
 * uniqueId[=].preferred = true
 
+Instance: uzb-supply-group-number
+InstanceOf: NamingSystem
+Description: "Group numbers linking supply requests placed together by requesting hospitals in Uzbekistan"
+Usage: #definition
+* url = "https://terminology.dhp.uz/fhir/core/NamingSystem/uzb-supply-group-number"
+* name = "UzbekistanSupplyGroupIdentifier"
+* status = #active
+* kind = #identifier
+* date = "2026-09-30"
+* publisher = "Uzinfocom"
+* responsible = "Ministry of Health of the Republic of Uzbekistan"
+* description = "Naming system for group numbers that the requesting hospital's information system assigns to supply requests placed together, such as red blood cells and fresh frozen plasma ordered for the same patient and operation."
+* jurisdiction = urn:iso:std:iso:3166#UZ "Uzbekistan"
+* usage = "Used in SupplyRequest.identifier.system to link supply requests that the supplier must handle as one order. Every request in the group carries the same value. Values must be unique across requesting hospitals within this namespace, using coordinated allocation or an issuer-qualified value. Record the requesting hospital in identifier.assigner."
+* uniqueId[0].type = #uri
+* uniqueId[=].value = $supply-group-number
+* uniqueId[=].preferred = true
+
 Instance: uzb-supply-delivery-number
 InstanceOf: NamingSystem
 Description: "Supply delivery numbers assigned by suppliers such as blood services in Uzbekistan"

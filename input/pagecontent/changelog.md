@@ -31,6 +31,8 @@ Every profile page now has a narrative intro and a Quick Start. New ones were ad
 
 [UZ Core SupplyDelivery](StructureDefinition-uz-core-supply-delivery.html) records the location the items were dispatched from, such as the sending warehouse in a transfer between warehouses, in the new [Deliver from](StructureDefinition-supplydelivery-deliver-from.html) extension. Base FHIR SupplyDelivery has no element for it; the extension is the delivery counterpart of `SupplyRequest.deliverFrom`. The [warehouse transfer example](SupplyDelivery-example-warehouse-transfer-supply-delivery.html) shows it. The profile page has a narrative intro and a Quick Start.
 
+[UZ Core SupplyRequest](StructureDefinition-uz-core-supply-request.html) adds a `group` identifier slice, a [supply group number](NamingSystem-uzb-supply-group-number.html) shared by requests placed together, so that the supplier handles them as one order. Two examples show red blood cells and fresh frozen plasma ordered together for the same operation.
+
 #### Changed
 
 `basedOn` in [UZ Core Observation](StructureDefinition-uz-core-observation.html), [UZ Core Immunization](StructureDefinition-uz-core-immunization.html) and [UZ Core Procedure](StructureDefinition-uz-core-procedure.html) now references a UZ Core CarePlan instead of any CarePlan.

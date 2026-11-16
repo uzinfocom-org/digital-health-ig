@@ -15,7 +15,7 @@ UZ Core SupplyRequest фиксирует запрос на доставку пр
 
 #### Каждый UZ Core SupplyRequest должен поддерживать
 
-- номер запроса, присвоенный запрашивающей больницей, и номер договора о поставке, к которому он относится, каждый вместе с `system` (см. [срезы идентификаторов](#identifier-slices));
+- номер запроса, присвоенный запрашивающей больницей, номер договора о поставке, к которому он относится, и, для запросов, отправленных вместе, общий номер группы, каждый вместе с `system` (см. [срезы идентификаторов](#identifier-slices));
 - [ServiceRequest](StructureDefinition-uz-core-servicerequest.html) или другой SupplyRequest, на котором основан запрос (`basedOn`);
 - статус запроса `status` (draft / active / suspended / cancelled / completed / entered-in-error / unknown);
 - категорию запроса `category` (пополнение запаса / именной, для одного пациента / между учреждениями);
@@ -110,7 +110,7 @@ UZ Core SupplyRequest фиксирует запрос на доставку пр
 
 `parameter` нарезан по `code`: SNOMED CT `63915006` (система групп крови ABO) содержит группу ABO из набора значений [группа крови](ValueSet-blood-group-vs.html), а `115678000` (система групп крови Rh) содержит резус-принадлежность RhD из набора значений [резус-принадлежность RhD](ValueSet-blood-rh-vs.html). Обе связки значений `required`. Система кодирования `category` основана на узбекском языке, с русскими и английскими обозначениями; указывайте `display`, только если он соответствует `language` ресурса. `supplier` повторяется, `deliverTo` - нет. `reason` имеет тип `CodeableReference`: код в `concept` или ссылка на диагноз или результат исследования в `reference`.
 
-#### Номера запроса и договора {#identifier-slices}
+#### Номера запроса, договора и группы {#identifier-slices}
 
 `identifier` нарезан по URI `system`, поэтому система должна совпадать точно:
 
@@ -118,8 +118,11 @@ UZ Core SupplyRequest фиксирует запрос на доставку пр
 |---|---|---|
 | [Номер запроса на поставку](NamingSystem-uzb-supply-request-number.html) | `https://dhp.uz/fhir/core/sid/doc/uz/supply-request` | Запрашивающей больницей |
 | [Номер договора о поставке](NamingSystem-uzb-supply-contract-number.html) | `https://dhp.uz/fhir/core/sid/doc/uz/supply-contract` | Стороной, оформившей договор о поставке между больницей и службой крови |
+| [Номер группы запросов на поставку](NamingSystem-uzb-supply-group-number.html) | `https://dhp.uz/fhir/core/sid/doc/uz/supply-group` | Запрашивающей больницей |
 
 Номер запроса позволяет службе крови и больнице сопоставить запрос с поставкой, которая на него отвечает; у поставки свой [номер поставки](StructureDefinition-uz-core-supply-delivery.html#identifier-slices).
+
+SupplyRequest содержит один предмет. Когда больнице одновременно нужно несколько компонентов крови для одного пациента, например эритроцитарная масса и свежезамороженная плазма перед операцией, она отправляет по одному запросу на каждый компонент и присваивает им общий номер группы. Служба крови обрабатывает сгруппированные запросы как один заказ: проводит пробу на совместимость с одним и тем же образцом и доставляет их вместе. См. примеры с [эритроцитарной массой](SupplyRequest-example-supply-request-group-red-cells.html) и [свежезамороженной плазмой](SupplyRequest-example-supply-request-group-plasma.html).
 
 #### Пополнение запаса
 

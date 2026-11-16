@@ -13,7 +13,7 @@ Both are mandatory in the base SupplyRequest resource; this profile adds no furt
 
 #### Each UZ Core SupplyRequest Must Support
 
-- the request number assigned by the requesting hospital and the number of the supply agreement it falls under, each sent with its `system` (see [identifier slices](#identifier-slices));
+- the request number assigned by the requesting hospital, the number of the supply agreement it falls under and, for requests placed together, a shared group number, each sent with its `system` (see [identifier slices](#identifier-slices));
 - the [ServiceRequest](StructureDefinition-uz-core-servicerequest.html) or other SupplyRequest the request is based on (`basedOn`);
 - the `status` of the request (draft / active / suspended / cancelled / completed / entered-in-error / unknown);
 - the `category` of the request (stock replenishment / named, for one patient / between institutions);
@@ -108,7 +108,7 @@ A hospital asks the Andijan blood station for two units of red blood cells for a
 
 `parameter` is sliced by its `code`: SNOMED CT `63915006` (ABO blood group system) carries the ABO group from the [blood group](ValueSet-blood-group-vs.html) value set, and `115678000` (Rh blood group system) carries the RhD type from the [RhD type](ValueSet-blood-rh-vs.html) value set. Both value bindings are `required`. The `category` code system is Uzbek-first, with Russian and English designations; send a `display` only when it matches the resource `language`. `supplier` repeats, `deliverTo` does not. `reason` is a `CodeableReference`: a code under `concept`, or a reference to the diagnosis or test result under `reference`.
 
-#### The request and contract numbers {#identifier-slices}
+#### The request, contract and group numbers {#identifier-slices}
 
 `identifier` is sliced by its `system` URI, so the system must match exactly:
 
@@ -116,8 +116,11 @@ A hospital asks the Andijan blood station for two units of red blood cells for a
 |---|---|---|
 | [Supply request number](NamingSystem-uzb-supply-request-number.html) | `https://dhp.uz/fhir/core/sid/doc/uz/supply-request` | The requesting hospital |
 | [Supply contract number](NamingSystem-uzb-supply-contract-number.html) | `https://dhp.uz/fhir/core/sid/doc/uz/supply-contract` | The party that issued the supply agreement between the hospital and the blood service |
+| [Supply group number](NamingSystem-uzb-supply-group-number.html) | `https://dhp.uz/fhir/core/sid/doc/uz/supply-group` | The requesting hospital |
 
 The request number lets the blood service and the hospital match the request with the delivery that answers it; the delivery carries its own [delivery number](StructureDefinition-uz-core-supply-delivery.html#identifier-slices).
+
+A SupplyRequest holds one item. When a hospital needs several blood components for the same patient at the same time, for example red blood cells and fresh frozen plasma before an operation, it sends one request per component and gives them all the same group number. The blood service handles the grouped requests as one order: it crossmatches them against the same sample and delivers them together. See the [red blood cell](SupplyRequest-example-supply-request-group-red-cells.html) and [fresh frozen plasma](SupplyRequest-example-supply-request-group-plasma.html) examples.
 
 #### A stock replenishment
 
