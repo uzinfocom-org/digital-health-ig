@@ -13,7 +13,9 @@ ConceptMap mapping and ["n", value, type] for a NamingSystem identifier.
 {%- if r.resourceType and r.id -%}
 {%- assign expected = r.resourceType | append: "-" | append: r.id -%}
 {%- if entry[0] == expected -%}
-,{"r":{{ r.resourceType | jsonify }},"id":{{ r.id | jsonify }},"t":{{ r.title | default: r.name | default: r.id | jsonify }},"n":{{ r.name | default: "" | jsonify }},"u":{{ r.url | default: "" | jsonify }},"d":{{ r.description | default: "" | strip_newlines | truncate: 300 | jsonify }}}
+{%- assign d = r.description -%}
+{%- if d.text -%}{%- assign d = d.text -%}{%- elsif d.coding -%}{%- assign d = d.coding[0].display -%}{%- endif -%}
+,{"r":{{ r.resourceType | jsonify }},"id":{{ r.id | jsonify }},"t":{{ r.title | default: r.name | default: r.id | jsonify }},"n":{{ r.name | default: "" | jsonify }},"u":{{ r.url | default: "" | jsonify }},"d":{{ d | default: "" | strip_newlines | truncate: 300 | jsonify }}}
 {% case r.resourceType -%}
 {%- when "CodeSystem" -%}{% include search-index-concepts.html concepts=r.concept -%}
 {%- when "ValueSet" -%}{%- for inc in r.compose.include -%}{% if inc.concept %}{% include search-index-concepts.html concepts=inc.concept -%}{% endif %}{%- endfor -%}
