@@ -1,0 +1,4 @@
+{%- for c in include.concepts -%}
+,["c",{{ c.code | jsonify }},{{ c.display | default: "" | jsonify }}{%- for d in c.designation -%},{{ d.language | default: "" | jsonify }},{{ d.value | jsonify }}{%- endfor -%}]
+{% if c.concept %}{% include search-index-concepts.html concepts=c.concept %}{% endif -%}
+{%- endfor -%}

@@ -5210,3 +5210,13 @@ msgstr "Типы подписей Provenance в Узбекистане"
 #: ImplementationGuide.definition.resource.description
 msgid "Benefits in Uzbekistan"
 msgstr "Льготы в Узбекистане"
+
+# ImplementationGuide.definition.page.source[x]
+#: ImplementationGuide.definition.page.source[x]
+msgid "search.html"
+msgstr "search.html"
+
+# ImplementationGuide.definition.page.title
+#: ImplementationGuide.definition.page.title
+msgid "Search"
+msgstr "Поиск"
