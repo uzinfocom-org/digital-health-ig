@@ -1,7 +1,7 @@
 ValueSet: ProcedureComplicationVS
 Id: procedure-complication-vs
 Title: "Procedure complication"
-Description: "Complications and absence of reaction recorded for a procedure"
+Description: "Procedure complications"
 * ^url = "https://terminology.dhp.uz/fhir/core/ValueSet/procedure-complication-vs"
 * ^status = #draft
 * ^experimental = true
