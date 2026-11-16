@@ -47,6 +47,8 @@ Mapping quality fixes found by the IG Publisher 3.0.1 ConceptMap checks. In the 
 
 Every reference to a Device in UZ Core profiles now targets [UZ Core Device](StructureDefinition-uz-core-device.html): Observation, Procedure, Condition, AdverseEvent, Composition, QuestionnaireResponse, Group, MedicationAdministration, MedicationDispense, InventoryItem, SupplyRequest and SupplyDelivery.
 
+Physiotherapy procedure codes now declare 18 parent relationships consistent with their SNOMED CT mappings. The ServiceRequest order detail parameter value set explicitly declares its experimental status.
+
 Removed a trailing newline from the BloodProductInventoryItem CSV folder name so the repository can be checked out on Windows.
 
 The [example practitioner](Practitioner-example-practitioner.html) and the specialist certificate examples now use a made-up PINFL, certificate number and dates.

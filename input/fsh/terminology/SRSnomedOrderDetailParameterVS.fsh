@@ -2,6 +2,7 @@ ValueSet: SRSnomedOrderDetailParameterVS
 Id: srsnomed-order-detail-parameter-vs
 Title: "ServiceRequest order detail parameter"
 Description: "SNOMED CT concepts for order detail parameters: route, time, and quantity."
+* ^experimental = true
 
 * $sct#410675002 "Route of administration"
 * $sct#410670007 "Time"

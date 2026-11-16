@@ -3,6 +3,10 @@ Id: physiotherapy-procedure-cs
 Title: "Physiotherapy and medical procedure types"
 Description: "Physiotherapy and medical procedure types used in healthcare facilities of Uzbekistan"
 * insert OriginalCodeSystemDraft(physiotherapy-procedure-cs)
+* ^hierarchyMeaning = #is-a
+* ^property[0].code = #parent
+* ^property[=].uri = "http://hl7.org/fhir/concept-properties#parent"
+* ^property[=].type = #code
 
 * #proce-0001-00001 "Amplipulsterapiya (sinusoidal modulyatsiyalangan toklar bilan davolash)"
   * ^designation[0].language = #ru
@@ -45,30 +49,40 @@ Description: "Physiotherapy and medical procedure types used in healthcare facil
   * ^designation[=].value = "Ванны минеральные"
   * ^designation[+].language = #en
   * ^designation[=].value = "Mineral baths"
+  * ^property[0].code = #parent
+  * ^property[=].valueCode = #proce-0001-00004
 
 * #proce-0001-00008 "Vodorod sulfidli vannalar"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Ванны сероводородные"
   * ^designation[+].language = #en
   * ^designation[=].value = "Hydrogen sulfide baths"
+  * ^property[0].code = #parent
+  * ^property[=].valueCode = #proce-0001-00004
 
 * #proce-0001-00009 "Radonli vannalar"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Ванны радоновые"
   * ^designation[+].language = #en
   * ^designation[=].value = "Radon baths"
+  * ^property[0].code = #parent
+  * ^property[=].valueCode = #proce-0001-00004
 
 * #proce-0001-00010 "Gazli vannalar"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Ванны газовые"
   * ^designation[+].language = #en
   * ^designation[=].value = "Gas baths"
+  * ^property[0].code = #parent
+  * ^property[=].valueCode = #proce-0001-00004
 
 * #proce-0001-00011 "Gazli vannalar (kislorodli, karbonat angidridli, azotli)"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Ванны газовые (кислородные, углекислые, азотные)"
   * ^designation[+].language = #en
   * ^designation[=].value = "Gas baths (oxygen, carbon dioxide, nitrogen)"
+  * ^property[0].code = #parent
+  * ^property[=].valueCode = #proce-0001-00004
 
 * #proce-0001-00012 "Xushbo‘y moddali vannalar"
   * ^designation[0].language = #ru
@@ -93,6 +107,8 @@ Description: "Physiotherapy and medical procedure types used in healthcare facil
   * ^designation[=].value = "Ванны суховоздушные"
   * ^designation[+].language = #en
   * ^designation[=].value = "Dry air baths"
+  * ^property[0].code = #parent
+  * ^property[=].valueCode = #proce-0001-00059
 
 * #proce-0001-00016 "Shifobaxsh balchiqli vannalar"
   * ^designation[0].language = #ru
@@ -105,6 +121,8 @@ Description: "Physiotherapy and medical procedure types used in healthcare facil
   * ^designation[=].value = "Ванны воздушно-пузырьковые (жемчужные)"
   * ^designation[+].language = #en
   * ^designation[=].value = "Air bubble baths (Pearl baths)"
+  * ^property[0].code = #parent
+  * ^property[=].valueCode = #proce-0001-00004
 
 * #proce-0001-00018 "Suv ostida ichakni yuvish vannasi"
   * ^designation[0].language = #ru
@@ -117,12 +135,16 @@ Description: "Physiotherapy and medical procedure types used in healthcare facil
   * ^designation[=].value = "Йодобромная ванна"
   * ^designation[+].language = #en
   * ^designation[=].value = "Iodine-bromine bath"
+  * ^property[0].code = #parent
+  * ^property[=].valueCode = #proce-0001-00004
 
 * #proce-0001-00020 "Qum vannalari"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Песочные ванны"
   * ^designation[+].language = #en
   * ^designation[=].value = "Sand baths"
+  * ^property[0].code = #parent
+  * ^property[=].valueCode = #proce-0001-00059
 
 * #proce-0001-00021 "Davolovchi dush"
   * ^designation[0].language = #ru
@@ -135,6 +157,8 @@ Description: "Physiotherapy and medical procedure types used in healthcare facil
   * ^designation[=].value = "Подводный душ-массаж"
   * ^designation[+].language = #en
   * ^designation[=].value = "Underwater shower massage"
+  * ^property[0].code = #parent
+  * ^property[=].valueCode = #proce-0001-00004
 
 * #proce-0001-00023 "Suv ostida umurtqa pog‘onasini tortish"
   * ^designation[0].language = #ru
@@ -153,6 +177,8 @@ Description: "Physiotherapy and medical procedure types used in healthcare facil
   * ^designation[=].value = "Гелиотерапия"
   * ^designation[+].language = #en
   * ^designation[=].value = "Heliotherapy"
+  * ^property[0].code = #parent
+  * ^property[=].valueCode = #proce-0001-00056
 
 * #proce-0001-00026 "Gipoksiterapiya"
   * ^designation[0].language = #ru
@@ -201,6 +227,8 @@ Description: "Physiotherapy and medical procedure types used in healthcare facil
   * ^designation[=].value = "Дециметровая терапия (ДМВ-терапия)"
   * ^designation[+].language = #en
   * ^designation[=].value = "Decimeter wave therapy (DMW therapy)"
+  * ^property[0].code = #parent
+  * ^property[=].valueCode = #proce-0001-00055
 
 * #proce-0001-00034 "Diadinamik toklar bilan davolash (DDT)"
   * ^designation[0].language = #ru
@@ -243,6 +271,8 @@ Description: "Physiotherapy and medical procedure types used in healthcare facil
   * ^designation[=].value = "Кислородотерапия в палатке"
   * ^designation[+].language = #en
   * ^designation[=].value = "Oxygen tent therapy"
+  * ^property[0].code = #parent
+  * ^property[=].valueCode = #proce-0001-00052
 
 * #proce-0001-00041 "O‘ta yuqori chastotali millimetr to‘lqinli terapiya (KVCh-terapiya)"
   * ^designation[0].language = #ru
@@ -291,12 +321,16 @@ Description: "Physiotherapy and medical procedure types used in healthcare facil
   * ^designation[=].value = "Криомассаж"
   * ^designation[+].language = #en
   * ^designation[=].value = "Cryomassage"
+  * ^property[0].code = #parent
+  * ^property[=].valueCode = #proce-0001-00047
 
 * #proce-0001-00049 "Vakuumli massaj"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Вакуумный массаж"
   * ^designation[+].language = #en
   * ^designation[=].value = "Vacuum massage"
+  * ^property[0].code = #parent
+  * ^property[=].valueCode = #proce-0001-00047
 
 * #proce-0001-00050 "Ultrabinafsha nurlanish uchun biodozani aniqlash"
   * ^designation[0].language = #ru
@@ -327,6 +361,8 @@ Description: "Physiotherapy and medical procedure types used in healthcare facil
   * ^designation[=].value = "Сантиметроволновая терапия (СМВ-терапия)"
   * ^designation[+].language = #en
   * ^designation[=].value = "Centimeter wave therapy"
+  * ^property[0].code = #parent
+  * ^property[=].valueCode = #proce-0001-00055
 
 * #proce-0001-00055 "Mikroto‘lqinli terapiya (SVCh-terapiya)"
   * ^designation[0].language = #ru
@@ -345,6 +381,8 @@ Description: "Physiotherapy and medical procedure types used in healthcare facil
   * ^designation[=].value = "Световая ванна"
   * ^designation[+].language = #en
   * ^designation[=].value = "Light bath therapy"
+  * ^property[0].code = #parent
+  * ^property[=].valueCode = #proce-0001-00056
 
 * #proce-0001-00058 "Skelet tortmasi"
   * ^designation[0].language = #ru
@@ -423,6 +461,8 @@ Description: "Physiotherapy and medical procedure types used in healthcare facil
   * ^designation[=].value = "Флюктуоризация"
   * ^designation[+].language = #en
   * ^designation[=].value = "Fluctuorization (Fluctuating current therapy)"
+  * ^property[0].code = #parent
+  * ^property[=].valueCode = #proce-0001-00074
 
 * #proce-0001-00071 "Elektroforez (dori elektroforezi)"
   * ^designation[0].language = #ru
