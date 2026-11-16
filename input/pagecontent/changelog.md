@@ -13,6 +13,8 @@ Every profile page now has a narrative intro and a Quick Start. New ones were ad
 [MedicationKnowledge associated medication](SearchParameter-uz-core-medicationknowledge-associated-medication.html) is a new search parameter, `associated-medication`, that finds the [UZ Core MedicationKnowledge](StructureDefinition-uz-core-medicationknowledge.html) entries for a Medication - for example, the approved prices of a dispensed product. Base FHIR R5 has no search parameter for this. Chain it on `identifier` to search by the product's registration number or GTIN.
 
 
+[Search](search.html), opened from a new box in the page header, finds resources by title, name, URL or description, and codes, terms and mappings in code systems, value sets and ConceptMaps, in English, Russian and Uzbek. Results can be narrowed by resource type, so you can check whether a code already exists before adding a new one.
+
 [UZ Core BiologicallyDerivedProductDispense](StructureDefinition-uz-core-biologicallyderivedproductdispense.html) records the issue of a biologically derived product to a patient's care team, with the [dispense number](NamingSystem-uzb-bdp-dispense-number.html), order, recipient, product, practitioners and handover time. HL7 dispense status, match status, origin relationship and performer function codes have Uzbek and Russian translations. The profile includes minimal, issued and returned examples and a Quick Start.
 
 [UZ Core ChargeItem](StructureDefinition-uz-core-chargeitem.html) records a billable item - a service, product or medication provided to a patient - with its quantity and price, and links it to the event that provided it, such as a [MedicationDispense](StructureDefinition-uz-core-medication-dispense.html), procedure or laboratory test. Its identifier uses a new [ChargeItem identifier](NamingSystem-uzb-charge-item-identifier.html) naming system, its `status` is bound to [ChargeItem status](ValueSet-chargeitem-status-vs.html) and its `code` to [ChargeItem code](ValueSet-charge-item-code-vs.html), both with Uzbek and Russian translations. The profile page has a narrative intro and a Quick Start.
@@ -32,6 +34,8 @@ Every profile page now has a narrative intro and a Quick Start. New ones were ad
 [UZ Core SupplyDelivery](StructureDefinition-uz-core-supply-delivery.html) records the location the items were dispatched from, such as the sending warehouse in a transfer between warehouses, in the new [Deliver from](StructureDefinition-supplydelivery-deliver-from.html) extension. Base FHIR SupplyDelivery has no element for it; the extension is the delivery counterpart of `SupplyRequest.deliverFrom`. The [warehouse transfer example](SupplyDelivery-example-warehouse-transfer-supply-delivery.html) shows it. The profile page has a narrative intro and a Quick Start.
 
 #### Changed
+
+[Allergen codes](ValueSet-allergen-codes-vs.html) now also include [INN medicine names](CodeSystem-inn-medication-name-cs.html), so a drug allergy can name the active substance. The [analgesic allergy example](AllergyIntolerance-example-analgesic-allergy.html) now codes paracetamol by its INN.
 
 ICCC-3 and WHO ICHI now require a code system version when their codes are exchanged, reflecting their version-dependent classification hierarchies.
 
