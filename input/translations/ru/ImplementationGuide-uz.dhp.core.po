@@ -5213,10 +5213,10 @@ msgstr "Льготы в Узбекистане"
 
 # ImplementationGuide.definition.page.source[x]
 #: ImplementationGuide.definition.page.source[x]
-msgid "terminology-search.html"
-msgstr "terminology-search.html"
+msgid "search.html"
+msgstr "search.html"
 
 # ImplementationGuide.definition.page.title
 #: ImplementationGuide.definition.page.title
-msgid "Terminology search"
-msgstr "Поиск по терминологии"
+msgid "Search"
+msgstr "Поиск"

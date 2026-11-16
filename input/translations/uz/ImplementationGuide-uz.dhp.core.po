@@ -5192,10 +5192,10 @@ msgstr "O‘zbekistondagi imtiyozlar"
 
 # ImplementationGuide.definition.page.source[x]
 #: ImplementationGuide.definition.page.source[x]
-msgid "terminology-search.html"
-msgstr "terminology-search.html"
+msgid "search.html"
+msgstr "search.html"
 
 # ImplementationGuide.definition.page.title
 #: ImplementationGuide.definition.page.title
-msgid "Terminology search"
-msgstr "Terminologiya bo‘yicha qidiruv"
+msgid "Search"
+msgstr "Qidiruv"
