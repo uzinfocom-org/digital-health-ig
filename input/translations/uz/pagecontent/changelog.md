@@ -41,6 +41,8 @@ Endi har bir profil sahifasida kirish qismi va Tez boshlash bo'limi bor. Ular [U
 
 #### O'zgartirildi
 
+[Allergen kodlari](ValueSet-allergen-codes-vs.html) endi [dorilarning XPN nomlarini](CodeSystem-inn-medication-name-cs.html) ham o'z ichiga oladi, shuning uchun dori allergiyasini ta'sir qiluvchi modda bo'yicha ko'rsatish mumkin. [Analgetikka allergiya namunasi](AllergyIntolerance-example-analgesic-allergy.html) endi paratsetamolni XPN bo'yicha kodlaydi.
+
 BloodProductInventoryItem CSV papkasi nomining oxiridagi yangi qator belgisi olib tashlandi, shunda repozitoriyni Windows tizimida klonlash mumkin.
 
 [FHIR turlari supplementi](CodeSystem-fhir-types-cs.html) har bir resurs turiga nomi o'rniga uning ta'rifi tarjimasini berardi. Endi har bir turning o'zbekcha va ruscha nomi bor, masalan `Patient` uchun "Bemor" va "Пациент", ular `preferredForLanguage` bilan belgilangan, shuning uchun `displayLanguage` bilan `$lookup` nomni qaytaradi. Tarjima qilingan ta'riflar SNOMED CT `900000000000550004` Definition use bilan belgilashlar sifatida qoladi.

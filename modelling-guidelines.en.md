@@ -323,7 +323,7 @@ To create your own (non-supplement) CodeSystems, use the corresponding RuleSets 
 
 **CodeSystem quality best practices:**
 
-When creating CodeSystems, follow the terminology quality assurance methodology according to the [Checklist for Terminology Quality Assurance](https://zenodo.org/records/14609494).
+When creating CodeSystems, follow the terminology quality assurance methodology according to the [Checklist for Terminology Quality Assurance](terminology-quality-checklist.en.md) ([source](https://doi.org/10.5281/zenodo.14609494)).
 
 **Hierarchical CodeSystem conventions:**
 

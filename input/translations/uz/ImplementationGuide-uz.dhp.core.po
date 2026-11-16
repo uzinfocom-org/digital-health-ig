@@ -280,8 +280,8 @@ msgstr ""
 
 # ImplementationGuide.definition.resource.description
 #: ImplementationGuide.definition.resource.description
-msgid "SNOMED CT and local codes for allergens"
-msgstr "Allergenlar uchun SNOMED CT va mahalliy kodlar"
+msgid "Allergens"
+msgstr "Allergenlar"
 
 # ImplementationGuide.definition.resource.name
 #: ImplementationGuide.definition.resource.name
