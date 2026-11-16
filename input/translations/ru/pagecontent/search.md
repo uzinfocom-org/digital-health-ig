@@ -20,4 +20,4 @@
 <div id="ig-status-line"></div>
 <div id="ig-results"></div>
 
-<script src="ig-search.js"></script>
+<script src="ig-search.js" data-build="{{ site.time | date: '%s' }}"></script>
