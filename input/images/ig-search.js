@@ -46,6 +46,13 @@
   // A normalized word as a pattern that also matches the raw spellings norm() folded together.
   function loose(w) { return reEsc(w).replace(/'/g, "['‘’ʻʼ`´]").replace(/е/g, '[её]'); }
 
+  // name is a string on canonical resources but HumanName[], Device.name[] etc. on others.
+  function label(v) {
+    if (typeof v === 'string') return v;
+    var n = Array.isArray(v) && v[0];
+    return n ? n.text || n.value || n.name || [].concat(n.given || [], n.family || []).join(' ') : '';
+  }
+
   function add(res, kind, row, key, texts) {
     texts = texts.filter(Boolean).map(norm);
     entries.push({ res: res, kind: kind, row: row, key: norm(key || ''), texts: texts, hay: norm(key || '') + '\u0001' + texts.join('\u0001') });
@@ -61,6 +68,8 @@
       for (var i = 1; i < rows.length; i++) {
         var row = rows[i];
         if (!Array.isArray(row)) {
+          row.n = label(row.n);
+          if (typeof row.t !== 'string') row.t = row.n || row.id;
           resources.push(row); cur = resources.length - 1;
           add(cur, 'r', row, row.id, [row.t, row.n, row.u, row.d]);
         } else if (row[0] === 'c') {
