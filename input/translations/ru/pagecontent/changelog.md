@@ -48,7 +48,7 @@ ICCC-3 и WHO ICHI теперь требуют указания версии с�
 
 [UZ Core Patient](StructureDefinition-uz-core-patient.html) допускает несколько свидетельств о рождении (`birthCertificate` теперь 0..* вместо 0..1) и больше не фиксирует его `use`, поэтому прежнее свидетельство пациента можно передать с `use = old` рядом с действующим с `use = official`.
 
-[UZ Core Procedure](StructureDefinition-uz-core-procedure.html) рекомендует [коды осложнений процедуры](ValueSet-procedure-complication-vs.html): обморок, коллапс, приступ стенокардии, анафилактический шок и отсутствие реакции, с узбекскими и русскими переводами.
+[UZ Core Procedure](StructureDefinition-uz-core-procedure.html) рекомендует [коды осложнений процедуры](ValueSet-procedure-complication-vs.html): обморок, коллапс, стенокардия, анафилактический шок и отсутствие реакции, с узбекскими и русскими переводами.
 
 Все ссылки на Device в профилях UZ Core теперь указывают на [UZ Core Device](StructureDefinition-uz-core-device.html): Observation, Procedure, Condition, AdverseEvent, Composition, QuestionnaireResponse, Group, MedicationAdministration, MedicationDispense, InventoryItem, SupplyRequest и SupplyDelivery.
 

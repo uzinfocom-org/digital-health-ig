@@ -84,6 +84,22 @@ Description: "An example instance of a UZ Core Procedure profile for a therapeut
 * note[0].text = "Therapeutic massage of the right foot completed according to the care plan. No adverse reactions noted."
 * used = Reference(example-medication)
 
+Instance: example-blood-donation-procedure
+InstanceOf: UZCoreProcedure
+Usage: #example
+Title: "Example UZ Core Procedure - Blood Donation with Fainting"
+Description: "A whole blood donation after which the donor fainted; the fainting is recorded as a complication."
+* status = $event-status#completed
+* code = $sct#25179006 "Whole blood unit collection"
+* subject = Reference(example-salim)
+* occurrenceDateTime = "2026-09-15T08:00:00+05:00"
+* recorded = "2026-09-15T08:40:00+05:00"
+* performer[0].actor = Reference(example-practitioner)
+* location = Reference(example-location)
+* outcome = $sct#385669000 "Successful"
+* complication[0].concept = $sct#271594007 "Syncope"
+* note[0].text = "450 mL collected. The donor fainted a few minutes after the needle was removed and recovered lying down within 5 minutes."
+
 Instance: example-physiotherapy-encounter
 InstanceOf: UZCoreEncounter
 Title: "Example UZ Core Encounter - Outpatient Physiotherapy Visit"
