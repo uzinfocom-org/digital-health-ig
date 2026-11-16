@@ -5189,3 +5189,13 @@ msgstr "O‘zbekistondagi Provenance imzo turlari"
 #: ImplementationGuide.definition.resource.description
 msgid "Benefits in Uzbekistan"
 msgstr "O‘zbekistondagi imtiyozlar"
+
+# ImplementationGuide.definition.page.source[x]
+#: ImplementationGuide.definition.page.source[x]
+msgid "search.html"
+msgstr "search.html"
+
+# ImplementationGuide.definition.page.title
+#: ImplementationGuide.definition.page.title
+msgid "Search"
+msgstr "Qidiruv"

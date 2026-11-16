@@ -1,0 +1,12 @@
+{% if include.lang == 'ru' %}{% assign ph = 'Поиск кодов и ресурсов' %}{% assign btn = 'Найти' %}{% elsif include.lang == 'uz' %}{% assign ph = "Kodlar va resurslarni qidirish" %}{% assign btn = 'Qidirish' %}{% else %}{% assign ph = 'Search codes and resources' %}{% assign btn = 'Search' %}{% endif %}
+<style type="text/css">
+#dhp-search { position: absolute; top: 50%; transform: translateY(-50%); right: 15px; display: flex; z-index: 2; }
+#dhp-search input { width: 170px; font-size: 13px; padding: 4px 8px; border: 1px solid #b7a9c9; border-right: 0; border-radius: 4px 0 0 4px; }
+#dhp-search button { font-size: 13px; padding: 4px 10px; border: 1px solid #6a3d9a; background: #6a3d9a; color: #fff; border-radius: 0 4px 4px 0; cursor: pointer; }
+#dhp-search button:hover { background: #55307c; }
+@media (max-width: 1199px) { #dhp-search { position: static; transform: none; justify-content: flex-end; padding: 8px 0 0; } }
+</style>
+<form id="dhp-search" action="search.html" method="get" role="search">
+  <input type="search" name="q" placeholder="{{ ph }}" aria-label="{{ ph }}"/>
+  <button type="submit">{{ btn }}</button>
+</form>
