@@ -13,7 +13,7 @@ Ushbu profil o'ziga xos majburiy karralilik qo'shmaydi. Yagona majburiy element 
 
 
 - identifikator;
-- allergenning o'zini identifikatsiya qiluvchi code (DHP allergenlari ValueSetiga kengaytiriladigan bog'lanish);
+- allergenning o'zini identifikatsiya qiluvchi code: mahalliy allergen kodi yoki dorining XPN nomi (DHP allergenlari ValueSetiga kengaytiriladigan bog'lanish);
 - tur - allergiya yoki o'zlashtira olmaslik (required bog'lanish);
 - klinik status - active \| inactive \| resolved (required bog'lanish);
 - tasdiqlanganlik statusi - allergiya qanchalik tasdiqlanganini ko'rsatadi (required bog'lanish);
