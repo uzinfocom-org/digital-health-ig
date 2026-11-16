@@ -43,7 +43,7 @@ PUT [base]/Questionnaire/[id]
 If-Match: W/"3"   # the ETag from your last read; 412 if it changed since
 ```
 
-См. [CapabilityStatement](CapabilityStatement-DHPCapabilityStatement.html) для всех поддерживаемых параметров поиска.
+См. Полный список поддерживаемых параметров поиска приведён в [CapabilityStatement](CapabilityStatement-DHPCapabilityStatement.html#Questionnaire1-10).
 
 ### Связанные материалы
 

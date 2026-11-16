@@ -42,7 +42,7 @@ https://dhp.uz/fhir/core/sid/{namespace}/{country}/{type}[/subtype]
         ]
       },
       "use": "official",
-      "value": "30211975910033"
+      "value": "12345678912345"
     }
   ]
 }
@@ -222,7 +222,7 @@ https://dhp.uz/fhir/core/sid/{namespace}/{country}/{type}[/subtype]
       "identifier": [
         {
           "system": "https://dhp.uz/fhir/core/sid/pro/uz/specialist-certificate",
-          "value": "CA008815"
+          "value": "CA123456"
         }
       ],
       "code": {
@@ -236,8 +236,8 @@ https://dhp.uz/fhir/core/sid/{namespace}/{country}/{type}[/subtype]
         "text": "Psixiatriya, oliy toifa, shifokor"
       },
       "period": {
-        "start": "2024-05-05",
-        "end": "2029-05-05"
+        "start": "2025-03-10",
+        "end": "2030-03-10"
       }
     }
   ]
@@ -341,7 +341,7 @@ https://dhp.uz/fhir/core/sid/{namespace}/{country}/{type}[/subtype]
         ]
       },
       "use": "official",
-      "value": "30211975910033"
+      "value": "12345678912345"
     },
     {
       "system": "https://dhp.uz/fhir/core/sid/pid/uz/ppn/local",
@@ -423,7 +423,7 @@ https://dhp.uz/fhir/core/sid/{namespace}/{country}/{type}[/subtype]
 ```
 # | используется для разделения system и value и должен быть URL-кодирован как %7C
 
-GET [base]/Patient?identifier=https://dhp.uz/fhir/core/sid/pid/uz/ni|30211975910033
+GET [base]/Patient?identifier=https://dhp.uz/fhir/core/sid/pid/uz/ni|12345678912345
 GET [base]/Practitioner?identifier=https://dhp.uz/fhir/core/sid/pro/uz/argos|9876543210
 GET [base]/Organization?identifier=https://dhp.uz/fhir/core/sid/org/uz/soliq|200935935
 ```

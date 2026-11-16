@@ -61,7 +61,7 @@ If-Match: W/"3"   # the ETag from your last read; 412 if it changed since
 }
 ```
 
-См. [CapabilityStatement](CapabilityStatement-DHPCapabilityStatement.html) для полного списка поддерживаемых параметров поиска и таблицу [срезов идентификаторов](#identifier-slices) выше для URI систем идентификаторов препарата.
+См. [CapabilityStatement](CapabilityStatement-DHPCapabilityStatement.html#Medication1-31) для полного списка поддерживаемых параметров поиска и таблицу [срезов идентификаторов](#identifier-slices) выше для URI систем идентификаторов препарата.
 
 ### Связанные материалы
 

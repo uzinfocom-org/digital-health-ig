@@ -42,7 +42,7 @@ If-Match: W/"3"   # the ETag from your last read; 412 if it changed since
 }
 ```
 
-Полный перечень поддерживаемых поисковых параметров см. в [CapabilityStatement](CapabilityStatement-DHPCapabilityStatement.html), а URI систем идентификаторов медицинских работников - в разделе [Системы идентификаторов](identifiers.html).
+Полный перечень поддерживаемых поисковых параметров см. в [CapabilityStatement](CapabilityStatement-DHPCapabilityStatement.html#Practitioner1-3), а URI систем идентификаторов медицинских работников - в разделе [Системы идентификаторов](identifiers.html).
 
 ### Связанные материалы
 

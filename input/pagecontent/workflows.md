@@ -33,8 +33,9 @@ Most clinical data hangs off the patient through a small number of reference pat
 <div>{% include resource-relationships.svg %}</div><br clear="all"/>
 
 - A Patient has many Encounters (visits); related Encounters may be grouped into an EpisodeOfCare (an ongoing case).
-- Within an Encounter, clinicians record Conditions (diagnoses), Observations (results, vitals), Procedures, and MedicationRequests.
+- Within an Encounter, clinicians record Conditions (diagnoses), Observations (results, vitals), Procedures, MedicationRequests, [AllergyIntolerances](StructureDefinition-uz-core-allergy-intolerance.html) and [Flags](StructureDefinition-uz-core-flag.html) (warnings, such as a medical deferral from blood donation).
+- A [CarePlan](StructureDefinition-uz-core-careplan.html) plans care over a period of time, such as a course of treatment or nursing patronage visits; the Observations, Procedures and Immunizations that carry it out reference it in `basedOn`.
 - Workflow resources (ServiceRequest, Task) drive ordering and fulfilment; result resources (Observation, DiagnosticReport) reference back to the order.
-- Finalized, legally-significant content is assembled into a [Composition](StructureDefinition-uz-core-composition.html)-based document and signed via [Provenance](StructureDefinition-uz-core-provenance.html).
+- Finalized, legally-significant content is assembled into a [Composition](StructureDefinition-uz-core-composition.html)-based document. The document Bundle is signed with a [Provenance](StructureDefinition-uz-core-provenance.html) that targets it; the [DHP Integrations IG](https://dhp.uz/fhir/integrations/en/) specifies the signing flow.
 
 A note on choosing between a document and workflow resources: store ongoing clinical facts as discrete resources (Condition, Observation, Procedure); assemble a Composition-based document only when you need a finalized, legally-significant artifact (a discharge summary, a signed certificate, a signed report).

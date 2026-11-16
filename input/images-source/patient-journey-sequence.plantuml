@@ -11,7 +11,7 @@ GP -> DHP : POST [[StructureDefinition-uz-core-encounter.html Encounter]] (episo
 
 note over DHP : every visit, result and prescription\nin the case references the episode
 loop each visit during the case
-  Spec -> DHP : POST Encounter / Observation / MedicationRequest\n(-> EpisodeOfCare)
+  Spec -> DHP : POST Encounter / Observation / [[StructureDefinition-uz-core-medicationrequest.html MedicationRequest]]\n(-> EpisodeOfCare)
 end
 
 alt acute / curable case

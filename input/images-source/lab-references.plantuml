@@ -4,10 +4,10 @@ hide empty members
 skinparam linetype ortho
 title Laboratory result - reference wiring
 
-class ServiceRequest
+class ServiceRequest [[StructureDefinition-uz-core-servicerequest.html{Open the UZ Core ServiceRequest profile}]] #E8F0FE
 class Specimen [[StructureDefinition-uz-core-specimen.html{Open the UZ Core Specimen profile}]] #E8F0FE
 class Observation [[StructureDefinition-uz-core-observation.html{Open the UZ Core Observation profile}]] #E8F0FE
-class DiagnosticReport
+class DiagnosticReport [[StructureDefinition-uz-core-diagnostic-report.html{Open the UZ Core DiagnosticReport profile}]] #E8F0FE
 
 Specimen --> ServiceRequest : « request »
 Observation --> ServiceRequest : « basedOn »
@@ -16,7 +16,6 @@ DiagnosticReport --> ServiceRequest : « basedOn »
 DiagnosticReport --> Observation : « result »
 
 note as N
-  Blue boxes are profiled in UZ Core and link to
-  their profile page; the rest are not yet profiled.
+  Each box links to its UZ Core profile page.
 end note
 @enduml

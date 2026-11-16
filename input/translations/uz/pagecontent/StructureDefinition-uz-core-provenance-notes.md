@@ -24,7 +24,7 @@ GET [base]/Provenance?entity=DocumentReference/[id]
 
 Yozuvni uning provenance ma'lumoti bilan birga bitta so'rovda olish uchun teskari include (reverse include) dan foydalaning, masalan `GET [base]/DocumentReference?_id=[id]&_revinclude=Provenance:target`.
 
-Qo'llab-quvvatlanadigan qidiruv parametrlarining to'liq ro'yxati uchun [CapabilityStatement](CapabilityStatement-DHPCapabilityStatement.html) ga qarang.
+Provenance hali [CapabilityStatement](CapabilityStatement-DHPCapabilityStatement.html) da ko'rsatilmagan; yuqoridagi so'rovlar FHIR R5 ning standart qidiruv parametrlaridan foydalanadi.
 
 ### Aloqador
 

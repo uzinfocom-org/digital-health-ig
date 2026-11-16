@@ -39,7 +39,7 @@ POST [base]/CarePlan
 
 **Обновление** (например, добавление мероприятия или завершение плана): отправьте полный ресурс методом `PUT [base]/CarePlan/[id]` с заголовком `If-Match`, содержащим прочитанную версию, чтобы не перезаписать параллельное изменение.
 
-Поддерживаемые параметры поиска перечислены в [CapabilityStatement](CapabilityStatement-DHPCapabilityStatement.html), в том числе `based-on`, `part-of`, `custodian`, `care-team`, `condition`, `goal`, `intent` и `instantiates-canonical`.
+Полный список поддерживаемых параметров поиска приведён в [CapabilityStatement](CapabilityStatement-DHPCapabilityStatement.html#CarePlan1-24).
 
 ### Связанные материалы
 

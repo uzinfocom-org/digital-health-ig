@@ -1,5 +1,5 @@
 @startuml practitioner-certificate-sequence
-title Specialist certificate: from Tibtoifa to Practitioner.qualification
+title Specialist certificate: from Tibtoifa to [[StructureDefinition-uz-core-practitioner.html Practitioner]].qualification
 autonumber
 
 participant "DHP" as DHP
@@ -19,5 +19,5 @@ loop each certificate
   end
 end
 
-DHP -> DHP : store [[StructureDefinition-uz-core-practitioner.html Practitioner]]
+DHP -> DHP : store Practitioner
 @enduml

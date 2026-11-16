@@ -42,7 +42,7 @@ The abbreviated payload illustrates the resource shape; include the required bas
 
 **Update** (for example, to correct an event or change its status): send the complete resource with `PUT [base]/MedicationAdministration/[id]`. Use the server's version-aware update behavior where supported.
 
-The [CapabilityStatement](CapabilityStatement-DHPCapabilityStatement.html) lists the supported search parameters. The `patient` and `subject` searches can find patient administrations; `date`, `medication`, `request`, `encounter`, `performer`, `status`, and `identifier` are also supported.
+See the [CapabilityStatement](CapabilityStatement-DHPCapabilityStatement.html#MedicationAdministration1-59) for the full list of supported search parameters.
 
 ### Related
 

@@ -47,7 +47,7 @@ If-Match: W/"3"   # the ETag from your last read; 412 if it changed since
 }
 ```
 
-См. [CapabilityStatement](CapabilityStatement-DHPCapabilityStatement.html) для полного списка поддерживаемых параметров поиска и [Системы идентификаторов](identifiers.html) для URI системы идентификаторов организации.
+См. [CapabilityStatement](CapabilityStatement-DHPCapabilityStatement.html#Organization1-2) для полного списка поддерживаемых параметров поиска и [Системы идентификаторов](identifiers.html) для URI системы идентификаторов организации.
 
 ### Связанные материалы
 

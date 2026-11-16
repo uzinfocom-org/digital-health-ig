@@ -40,7 +40,7 @@ POST [base]/MedicationAdministration
 
 **Обновление** (например, исправление события или изменение статуса): отправьте полный ресурс методом `PUT [base]/MedicationAdministration/[id]`. Используйте версионное обновление сервера, если оно поддерживается.
 
-Поддерживаемые параметры поиска перечислены в [CapabilityStatement](CapabilityStatement-DHPCapabilityStatement.html): `patient`, `subject`, `date`, `medication`, `request`, `encounter`, `performer`, `status` и `identifier`.
+Полный список поддерживаемых параметров поиска приведён в [CapabilityStatement](CapabilityStatement-DHPCapabilityStatement.html#MedicationAdministration1-59).
 
 ### Связанные материалы
 

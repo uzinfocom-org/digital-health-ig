@@ -1,0 +1,22 @@
+CODE,UZ,RU,EN,https://terminology.dhp.uz/fhir/core/CodeSystem/inventory-operation-reason-cs,Definition (EN)
+invrs-0001-00001,Rejali inventarizatsiya,Плановая инвентаризация,Scheduled count,,"Regular periodic stock count (monthly, quarterly, annual)."
+invrs-0001-00002,Rejadan tashqari inventarizatsiya,Внеплановая инвентаризация,Ad-hoc count,,"Unscheduled count, e.g. after an audit, incident or change of the responsible person."
+invrs-0001-00003,Boshlang‘ich qoldiq,Ввод начальных остатков,Opening balance,,First load of stock balances when a facility or system starts reporting to DHP.
+invrs-0001-00004,Yangi kirim,Поступление,New receipt,,"Goods received from a supplier, procurement or central distribution."
+invrs-0001-00005,Ko‘chirib keltirish,Перемещение (приход),Transfer in,,"Stock received from another warehouse, facility or department."
+invrs-0001-00006,Ko‘chirib jo‘natish,Перемещение (расход),Transfer out,,"Stock sent to another warehouse, facility or department."
+invrs-0001-00007,Qaytarib olindi,Возврат на склад,Return in,,"Unused items returned to stock from a department, patient or user."
+invrs-0001-00008,Yetkazib beruvchiga qaytarish,Возврат поставщику,Return to supplier,,Items returned to the supplier or distributor.
+invrs-0001-00009,Berildi / ishlatildi,Отпуск / использование,Dispensed / used,,"Items dispensed to patients, used in care or transfused."
+invrs-0001-00010,Hisobdan chiqarish: muddati o‘tgan,Списание: истёк срок годности,Write-off: expired,,Items removed because their expiry date has passed.
+invrs-0001-00011,Hisobdan chiqarish: shikastlangan,Списание: повреждение,Write-off: damaged,,Items removed because of damage or broken storage conditions (e.g. cold chain).
+invrs-0001-00012,Hisobdan chiqarish: sifatsiz,Списание: несоответствие качеству,Write-off: quality failure,,"Items removed after failing quality control, lab screening (blood) or a regulatory ban."
+invrs-0001-00013,Qaytarib chaqirib olish,Отзыв продукции,Recall,,Items withdrawn due to a manufacturer or regulator recall.
+invrs-0001-00014,Yo‘qolgan / kamomad,Утеря / недостача,Lost / shortage,,"Items missing, lost or stolen; shortage found during a count."
+invrs-0001-00015,Ortiqcha aniqlandi,Излишки,Surplus found,,A count found more items than were recorded.
+invrs-0001-00016,Tuzatish,Корректировка,Correction,,Correction of an earlier data-entry or reporting error.
+invrs-0001-00017,Insonparvarlik yordami / xayriya,Гуманитарная помощь / пожертвование,Donation / humanitarian aid,,"Items received as a donation, humanitarian aid or grant."
+invrs-0001-00018,Utilizatsiya,Утилизация,Disposal / destruction,,Physical destruction or disposal of items already written off.
+invrs-0001-00019,Foydalanishdan chiqarish,Вывод из эксплуатации,Decommissioning,,Medical equipment (JihozMed) permanently taken out of service.
+invrs-0001-00020,Qon tayyorlash,Заготовка крови,Blood collection,,Blood or blood components collected from donors (Blood Service).
+invrs-0001-00021,Boshqa,Прочее,Other,,Reason not listed; explain in operationTypeReason.text or note.

@@ -14,7 +14,7 @@ GET [base]/Patient/[id]
 
 ```
 # by national identifier (PINFL) - the reliable match
-GET [base]/Patient?identifier=https://dhp.uz/fhir/core/sid/pid/uz/ni|30211975910033
+GET [base]/Patient?identifier=https://dhp.uz/fhir/core/sid/pid/uz/ni|12345678912345
 
 # by name + birth date when no identifier is to hand
 GET [base]/Patient?family=Usmanov&birthdate=1994-01-27
@@ -49,7 +49,7 @@ GET [base]/Patient?organization=Organization/[id]
 GET [base]/Patient?address-city=22070013
 ```
 
-См. [CapabilityStatement](CapabilityStatement-DHPCapabilityStatement.html) для полного списка поддерживаемых поисковых параметров и [Системы идентификаторов](identifiers.html) для всех URI систем идентификаторов пациента.
+См. [CapabilityStatement](CapabilityStatement-DHPCapabilityStatement.html#Patient1-1) для полного списка поддерживаемых поисковых параметров и [Системы идентификаторов](identifiers.html) для всех URI систем идентификаторов пациента.
 
 ### Прикрепление к обслуживающей организации
 

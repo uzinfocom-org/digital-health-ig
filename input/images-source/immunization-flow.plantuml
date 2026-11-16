@@ -17,14 +17,14 @@ Nurse -> DHP : PUT Encounter 1 (status = in-progress)\nprimary intake, sets reas
 
 Doc -> DHP : GET [[StructureDefinition-uz-core-immunization-recommendation.html ImmunizationRecommendation]]?patient=[id]
 activate DHP
-note over DHP : engine reads PlanDefinition\n+ Immunization history\n+ patient demographics
+note over DHP : engine reads PlanDefinition\n+ [[StructureDefinition-uz-core-immunization.html Immunization]] history\n+ patient demographics
 DHP --> Doc : ImmunizationRecommendation\n(due / overdue, dose number)
 deactivate DHP
 
 Doc -> DHP : PUT Encounter 1 (status = completed)\nassess eligibility; reason -> ImmunizationRecommendation
 
 Nurse -> DHP : POST Encounter 2 - vaccination\n(status = in-progress)
-Nurse -> DHP : POST [[StructureDefinition-uz-core-immunization.html Immunization]]\n(encounter -> Encounter 2; basedOn -> ImmunizationRecommendation;\nstatus = completed | not-done)
+Nurse -> DHP : POST Immunization\n(encounter -> Encounter 2; basedOn -> ImmunizationRecommendation;\nstatus = completed | not-done)
 
 opt reaction occurs
   Nurse -> DHP : POST [[StructureDefinition-uz-core-adverse-event.html AdverseEvent]]\n(suspectEntity -> Immunization) + [[StructureDefinition-uz-core-observation.html Observation]]

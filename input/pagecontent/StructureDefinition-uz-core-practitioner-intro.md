@@ -180,20 +180,20 @@ A specialist certificate (*sertifikat*) is issued by the Ministry of Health and 
 
 #### What Tibtoifa returns
 
-One entry of the Tibtoifa response for PINFL `42410540220011`:
+One entry of the Tibtoifa response for PINFL `90000000000001`:
 
 ```
 {
-  "pinfl": "42410540220011",
+  "pinfl": "90000000000001",
   "serial": "CA",
-  "number": "008815",
+  "number": "123456",
   "category": { "uz": "Oliy toifa", "ru": "Высшая категория", "en": "Higher category" },
   "speciality": { "uz": "psixiatriya", "ru": "психиатрия", "en": "psychiatry" },
   "medicaleRoleName": { "uz": "Shifokor", "ru": "Врач", "en": "Doctor" },
-  "givenDate": "2024-05-05",
-  "validityPeriod": "2029-05-05",
-  "commandNumber": "35",
-  "commandDate": "2024-05-05"
+  "givenDate": "2025-03-10",
+  "validityPeriod": "2030-03-10",
+  "commandNumber": "12",
+  "commandDate": "2025-03-10"
 }
 ```
 
@@ -203,16 +203,16 @@ The entry also carries Tibtoifa's internal ids (`id`, `serialId`, `categoryId`, 
 
 | Tibtoifa field | Example | FHIR element | Rule |
 |---|---|---|---|
-| `pinfl` | `42410540220011` | `Practitioner.identifier` (PINFL) | Finds the practitioner; not repeated in the qualification |
-| `serial` + `number` | `CA` + `008815` | `qualification.identifier.value` | Series followed by number, no separator: `CA008815` |
+| `pinfl` | `90000000000001` | `Practitioner.identifier` (PINFL) | Finds the practitioner; not repeated in the qualification |
+| `serial` + `number` | `CA` + `123456` | `qualification.identifier.value` | Series followed by number, no separator: `CA123456` |
 | - | - | `qualification.identifier.system` | Always `https://dhp.uz/fhir/core/sid/pro/uz/specialist-certificate` |
 | - | - | `qualification.code.coding` | Always `http://terminology.hl7.org/CodeSystem/v2-0360#CER` "Certificate" |
 | `speciality`, `category`, `medicaleRoleName` | `psixiatriya`, `Oliy toifa`, `Shifokor` | `qualification.code.text` | `{speciality}, {category}, {role}` in the resource language: `Psixiatriya, oliy toifa, shifokor` |
 | the same fields in `ru`, `kaa`, `en` | `Психиатрия, высшая категория, врач` | `translation` extension on `code.text` | One extension per language |
-| `givenDate` | `2024-05-05` | `qualification.period.start` | Date of issue |
-| `validityPeriod` | `2029-05-05` | `qualification.period.end` | Last day of validity |
-| `id`, `serialId`, `categoryId`, `specialityId`, `medicalRoleId` | `9448`, `2`, `1`, `90`, `1` | - | Internal Tibtoifa ids, not sent |
-| `commandNumber`, `commandDate` | `35`, `2024-05-05` | - | Not sent |
+| `givenDate` | `2025-03-10` | `qualification.period.start` | Date of issue |
+| `validityPeriod` | `2030-03-10` | `qualification.period.end` | Last day of validity |
+| `id`, `serialId`, `categoryId`, `specialityId`, `medicalRoleId` | `1001`, `2`, `1`, `90`, `1` | - | Internal Tibtoifa ids, not sent |
+| `commandNumber`, `commandDate` | `12`, `2025-03-10` | - | Not sent |
 
 Specialty, category and role are sent as text for now; coded value sets for them may follow in a later version.
 
@@ -246,7 +246,7 @@ The qualification built from the Tibtoifa entry above:
         ]
       },
       "system": "https://dhp.uz/fhir/core/sid/pid/uz/ni",
-      "value": "42410540220011"
+      "value": "90000000000001"
     }
   ],
   "qualification": [
@@ -254,7 +254,7 @@ The qualification built from the Tibtoifa entry above:
       "identifier": [
         {
           "system": "https://dhp.uz/fhir/core/sid/pro/uz/specialist-certificate",
-          "value": "CA008815"
+          "value": "CA123456"
         }
       ],
       "code": {
@@ -285,7 +285,7 @@ The qualification built from the Tibtoifa entry above:
           ]
         }
       },
-      "period": { "start": "2024-05-05", "end": "2029-05-05" }
+      "period": { "start": "2025-03-10", "end": "2030-03-10" }
     }
   ]
 }

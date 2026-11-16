@@ -33,8 +33,9 @@ Klinik ma'lumotlarning aksariyatida bemor bilan bog'lanish uchun bir nechta asos
 <div>{% include resource-relationships.svg %}</div><br clear="all"/>
 
 - Patient ko'plab Encounter resurslari (tashriflar) bilan bog'langan; o'zaro bog'liq Encounter resurslari EpisodeOfCare (davom etayotgan klinik holat) doirasida guruhlanishi mumkin.
-- Encounter doirasida klinik mutaxassislar Condition (tashxislar), Observation (natijalar, hayotiy ko'rsatkichlar), Procedure va MedicationRequest resurslarini qayd etadi.
+- Encounter doirasida klinik mutaxassislar Condition (tashxislar), Observation (natijalar, hayotiy ko'rsatkichlar), Procedure, MedicationRequest, [AllergyIntolerance](StructureDefinition-uz-core-allergy-intolerance.html) va [Flag](StructureDefinition-uz-core-flag.html) (ogohlantirishlar, masalan, qon donorligidan tibbiy chetlatish) resurslarini qayd etadi.
+- [CarePlan](StructureDefinition-uz-core-careplan.html) ma'lum davr uchun yordam rejasini tavsiflaydi, masalan, davolash kursi yoki hamshiraning patronaj tashriflari; uni bajaradigan Observation, Procedure va Immunization resurslari unga `basedOn` orqali reference beradi.
 - Ish jarayoni resurslari (ServiceRequest, Task) tayinlash va bajarish jarayonini boshqaradi; natija resurslari (Observation, DiagnosticReport) boshlang'ich tayinlovga reference beradi.
-- Yakunlangan va yuridik kuchga ega ma'lumotlar [Composition](StructureDefinition-uz-core-composition.html) asosidagi hujjatga birlashtiriladi hamda [Provenance](StructureDefinition-uz-core-provenance.html) orqali imzolanadi.
+- Yakunlangan va yuridik kuchga ega ma'lumotlar [Composition](StructureDefinition-uz-core-composition.html) asosidagi hujjatga birlashtiriladi. Hujjat Bundle'i unga reference beradigan [Provenance](StructureDefinition-uz-core-provenance.html) bilan imzolanadi; imzolash jarayoni [DHP Integrations IG](https://dhp.uz/fhir/integrations/en/) qo'llanmasida tavsiflangan.
 
 Hujjat va ish jarayoni resurslari o'rtasida tanlov qilish bo'yicha izoh: joriy klinik ma'lumotlarni alohida resurslar (Condition, Observation, Procedure) sifatida saqlang; Composition asosidagi hujjatni faqat yakunlangan va yuridik kuchga ega artefakt (shifoxonadan chiqarish xulosasi, imzolangan guvohnoma, imzolangan hisobot) zarur bo'lganda shakllantiring.

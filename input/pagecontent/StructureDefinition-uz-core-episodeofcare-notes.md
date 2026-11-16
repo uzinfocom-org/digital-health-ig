@@ -40,7 +40,7 @@ PUT [base]/EpisodeOfCare/[id]
 If-Match: W/"3"   # the ETag from your last read; 412 if it changed since
 ```
 
-See the [CapabilityStatement](CapabilityStatement-DHPCapabilityStatement.html) for all supported search parameters.
+See the [CapabilityStatement](CapabilityStatement-DHPCapabilityStatement.html#EpisodeOfCare1-8) for the full list of supported search parameters.
 
 ### Related
 

@@ -39,7 +39,7 @@ POST [base]/CarePlan
 
 **Yangilash** (masalan, tadbir qo'shish yoki rejani yakunlash): to'liq resursni `PUT [base]/CarePlan/[id]` orqali, o'qilgan versiyani o'z ichiga olgan `If-Match` sarlavhasi bilan yuboring, shunda parallel o'zgarish ustidan yozilmaydi.
 
-Qo'llab-quvvatlanadigan qidiruv parametrlariga [CapabilityStatement](CapabilityStatement-DHPCapabilityStatement.html) da qarang, jumladan `based-on`, `part-of`, `custodian`, `care-team`, `condition`, `goal`, `intent` va `instantiates-canonical`.
+Qo'llab-quvvatlanadigan qidiruv parametrlarining to'liq ro'yxati [CapabilityStatement](CapabilityStatement-DHPCapabilityStatement.html#CarePlan1-24) da keltirilgan.
 
 ### Bog'liq materiallar
 

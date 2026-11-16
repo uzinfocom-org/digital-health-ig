@@ -43,7 +43,7 @@ PUT [base]/Encounter/[id]
 If-Match: W/"3"   # oxirgi o'qishdan olingan ETag; agar shundan keyin resurs o'zgargan bo'lsa, 412 qaytariladi
 ```
 
-Barcha qo'llab-quvvatlanadigan qidiruv parametrlari uchun [CapabilityStatement](CapabilityStatement-DHPCapabilityStatement.html) ga qarang.
+Qo'llab-quvvatlanadigan qidiruv parametrlarining to'liq ro'yxati [CapabilityStatement](CapabilityStatement-DHPCapabilityStatement.html#Encounter1-7) da keltirilgan.
 
 ### Bog'liq bo'limlar
 

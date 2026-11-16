@@ -44,7 +44,7 @@ If-Match: W/"3"   # the ETag from your last read; 412 if it changed since
 }
 ```
 
-Полный перечень поддерживаемых поисковых параметров см. в [CapabilityStatement](CapabilityStatement-DHPCapabilityStatement.html), а URI систем идентификаторов - в разделе [Системы идентификаторов](identifiers.html).
+Полный перечень поддерживаемых поисковых параметров см. в [CapabilityStatement](CapabilityStatement-DHPCapabilityStatement.html#RelatedPerson1-12), а URI систем идентификаторов - в разделе [Системы идентификаторов](identifiers.html).
 
 ### См. также
 

@@ -40,7 +40,7 @@ Bu qisqartirilgan namuna resurs tuzilishini ko'rsatadi; bazaviy resursning majbu
 
 **Yangilash** (masalan, hodisani tuzatish yoki statusni o'zgartirish): to'liq resursni `PUT [base]/MedicationAdministration/[id]` orqali yuboring. Qo'llab-quvvatlansa, server versiyasiga asoslangan yangilashdan foydalaning.
 
-Qo'llab-quvvatlanadigan qidiruv parametrlariga [CapabilityStatement](CapabilityStatement-DHPCapabilityStatement.html) da qarang: `patient`, `subject`, `date`, `medication`, `request`, `encounter`, `performer`, `status` va `identifier`.
+Qo'llab-quvvatlanadigan qidiruv parametrlarining to'liq ro'yxati [CapabilityStatement](CapabilityStatement-DHPCapabilityStatement.html#MedicationAdministration1-59) da keltirilgan.
 
 ### Bog'liq materiallar
 

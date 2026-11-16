@@ -4,6 +4,8 @@
 
 Before creating or modifying any FHIR profile, extension, value set, code system, naming system, instance, or other modelling artifact, you MUST read `modelling-guidelines.md` in full and follow it. It defines the naming conventions, canonical URL patterns, identifier systems, cardinality rules, binding strengths, slicing patterns, terminology and versioning rules, and structural conventions every artifact must follow.
 
+Keep `modelling-guidelines.md` (Russian) and `modelling-guidelines.en.md` (English) in sync: change both in the same commit.
+
 ## Build Commands
 - **Full build**: `./_build.sh` or `./_genonce.sh` (main build command)
 - **Offline build**: `./_build.sh notx` (build without terminology server)

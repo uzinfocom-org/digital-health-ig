@@ -46,7 +46,7 @@ Description: "Uzbekistan Core Practitioner profile, used to define healthcare pr
 * qualification MS
   * identifier MS
     * ^short = "Certificate number"
-    * ^comment = "For a specialist certificate issued by the Ministry of Health, use the system https://dhp.uz/fhir/core/sid/pro/uz/specialist-certificate and put the series followed by the number, without separators (e.g. CA008815), in value."
+    * ^comment = "For a specialist certificate issued by the Ministry of Health, use the system https://dhp.uz/fhir/core/sid/pro/uz/specialist-certificate and put the series followed by the number, without separators (e.g. CA123456), in value."
     * system and value MS
   * code and period and issuer MS
   * code from LicenseCertificateVS (required)
@@ -64,7 +64,7 @@ Description: "Example of a practitioner"
 Usage: #example
 * language = #uz
 * identifier[nationalId]
-  * value = "9876543210"
+  * value = "90000000000006"
 * active = true
 * name
   * use = #official
@@ -108,7 +108,7 @@ Usage: #example
 * qualification[+]
   * identifier
     * system = $specialist-certificate
-    * value = "CA008815"
+    * value = "CA123456"
   * code = $qualification-codes#CER "Certificate"
   * code.text = "Psixiatriya, oliy toifa, shifokor"
   * code.text.extension[+].url = $translation-extension
@@ -122,8 +122,8 @@ Usage: #example
   * code.text.extension[=].extension[+].url = "content"
   * code.text.extension[=].extension[=].valueString = "Psychiatry, higher category, doctor"
   * period
-    * start = "2024-05-05"
-    * end = "2029-05-05"
+    * start = "2025-03-10"
+    * end = "2030-03-10"
 
 Instance: example-practitioner-gender-other
 InstanceOf: UZCorePractitioner
@@ -131,7 +131,7 @@ Description: "Example of a practitioner with a gender extension"
 Usage: #example
 * language = #uz
 * identifier[nationalId]
-  * value = "9876543211"
+  * value = "90000000000007"
 * active = true
 * gender = #other
 * gender.extension[gender-other].valueCoding = GenderOtherCS#regis0007.00005 "Jinsni erkakka o'zgartirdi"
@@ -143,7 +143,7 @@ Description: "A family polyclinic patronage nurse who visits newborns at home"
 Usage: #example
 * language = #uz
 * identifier[nationalId]
-  * value = "41505891234567"
+  * value = "90000000000004"
 * active = true
 * name
   * use = #official
@@ -160,7 +160,7 @@ Description: "A physiotherapy doctor who plans and carries out therapeutic massa
 Usage: #example
 * language = #uz
 * identifier[nationalId]
-  * value = "31203851234568"
+  * value = "90000000000002"
 * active = true
 * name
   * use = #official
