@@ -323,7 +323,7 @@ FHIR технически допускает указывать версию Cod
 
 **Лучшие практики качества CodeSystems:**
 
-При создании CodeSystems следуйте методологии обеспечения качества терминологий согласно [Checklist for Terminology Quality Assurance](https://zenodo.org/records/14609494).
+При создании CodeSystems следуйте методологии обеспечения качества терминологий согласно [чек-листу обеспечения качества терминологий](terminology-quality-checklist.md) ([источник](https://doi.org/10.5281/zenodo.14609494)).
 
 **Конвенции иерархических CodeSystems:**
 
