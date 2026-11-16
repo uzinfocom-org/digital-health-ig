@@ -92,6 +92,8 @@ pages:
       title: e-Prescription and dispensing
   forms.md:
     title: Questionnaires
+  terminology-search.md:
+    title: Terminology search
   api-access.md:
     title: API access
   components.md:
@@ -131,6 +133,8 @@ parameters:
   default-version: true
 
   show-inherited-invariants: false # hide invariants inherited from the base resource in profile tables
+
+  produce-jekyll-data: true # CodeSystems in _data feed concept-index.json for terminology search
 
   # openehr: true
 
