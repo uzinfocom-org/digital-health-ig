@@ -67,3 +67,7 @@ The XHTML  the resource contains more than one node for each of the following no
 # tx.fhir.org dropped the 5.0.0 version of concept-property-type around 2026-10-29, so every
 # CodeSystem.property.type fails to validate. Reported upstream - remove once tx.fhir.org serves it again.
 ValueSet 'http://hl7.org/fhir/ValueSet/concept-property-type|5.0.0' not found
+
+# IG Publisher 3.0.4 warns about any SNOMED CT finding in Observation.code, ignoring the value; R5 allows a finding
+# there with a yes/no value or none. Reported in https://github.com/hapifhir/org.hl7.fhir.core/issues/2870 - remove once resolved.
+The SNOMED CT code 1303306008 ('Eligible for benefit') is a finding%
