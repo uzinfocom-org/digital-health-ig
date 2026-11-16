@@ -16,6 +16,8 @@
 
 #### O'zgartirildi
 
+[Allergen kodlari](ValueSet-allergen-codes-vs.html) endi [dorilarning XPN nomlarini](CodeSystem-inn-medication-name-cs.html) ham o'z ichiga oladi, shuning uchun dori allergiyasini ta'sir qiluvchi modda bo'yicha ko'rsatish mumkin. [Analgetikka allergiya namunasi](AllergyIntolerance-example-analgesic-allergy.html) endi paratsetamolni XPN bo'yicha kodlaydi.
+
 [FHIR turlari supplementi](CodeSystem-fhir-types-cs.html) har bir resurs turiga nomi o'rniga uning ta'rifi tarjimasini berardi. Endi har bir turning o'zbekcha va ruscha nomi bor, masalan `Patient` uchun "Bemor" va "Пациент", ular `preferredForLanguage` bilan belgilangan, shuning uchun `displayLanguage` bilan `$lookup` nomni qaytaradi. Tarjima qilingan ta'riflar SNOMED CT `900000000000550004` Definition use bilan belgilashlar sifatida qoladi.
 
 Kod tizimlari va qiymatlar to'plamlarining sarlavhalari va tavsiflari endi [modellashtirish qo'llanmasidagi](https://github.com/uzinfocom-org/digital-health-ig/blob/main/modelling-guidelines.md) nomlash shabloniga mos keladi: supplement `[Concept] translations`, qiymatlar to'plami esa `[Concept]` deb nomlanadi, sarlavhalarda "CodeSystem" yoki "ValueSet" kabi so'zlar endi yo'q. Kanonik URL, identifikatorlar va kodlar o'zgarmadi.

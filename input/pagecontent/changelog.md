@@ -16,6 +16,8 @@ Added [UZ Core CarePlan](StructureDefinition-uz-core-careplan.html), a general p
 
 #### Changed
 
+[Allergen codes](ValueSet-allergen-codes-vs.html) now also include [INN medicine names](CodeSystem-inn-medication-name-cs.html), so a drug allergy can name the active substance. The [analgesic allergy example](AllergyIntolerance-example-analgesic-allergy.html) now codes paracetamol by its INN.
+
 `basedOn` in [UZ Core Observation](StructureDefinition-uz-core-observation.html), [UZ Core Immunization](StructureDefinition-uz-core-immunization.html) and [UZ Core Procedure](StructureDefinition-uz-core-procedure.html) now references a UZ Core CarePlan instead of any CarePlan.
 
 Every reference to a Device in UZ Core profiles now targets [UZ Core Device](StructureDefinition-uz-core-device.html): Observation, Procedure, Condition, AdverseEvent, Composition, QuestionnaireResponse, Group, MedicationAdministration, MedicationDispense, InventoryItem, SupplyRequest and SupplyDelivery.
