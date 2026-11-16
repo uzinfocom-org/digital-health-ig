@@ -1,4 +1,4 @@
-Ushbu qo'llanmadagi barcha resurslar - profillar, kengaytmalar, kod tizimlari, qiymatlar to'plamlari, tushunchalar xaritalari, nomlash tizimlari va misollar bo'yicha bir vaqtda qidirish - sarlavha, nom, URL yoki tavsif bo'yicha, ichida esa kod, ko'rsatiladigan nom, rus, o'zbek yoki ingliz tilidagi belgilanish yoki moslashtirish bo'yicha. Natijalarni keyin resurs turi bo'yicha saralash mumkin. Yangi kod tizimi yoki tushuncha qo'shishdan oldin, u allaqachon mavjud emasligini shu yerda tekshiring.
+Ushbu qo'llanmadagi resurslar, kodlar, atamalar va moslashtirishlarni qidirish - yangi kod qo'shishdan oldin shu yerda tekshiring.
 
 <style>
 #ig-query { width: 100%; font-size: 15px; padding: 6px 10px; border: 1px solid #c3d0d4; border-radius: 6px; margin: 16px 0 8px; }
