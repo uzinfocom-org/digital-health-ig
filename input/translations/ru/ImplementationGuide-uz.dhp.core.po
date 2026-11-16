@@ -282,8 +282,8 @@ msgstr "Сопоставляет локальные коды аллергено�
 
 # ImplementationGuide.definition.resource.description
 #: ImplementationGuide.definition.resource.description
-msgid "SNOMED CT and local codes for allergens"
-msgstr "Коды SNOMED CT и локальные коды аллергенов"
+msgid "Allergens"
+msgstr "Аллергены"
 
 # ImplementationGuide.definition.resource.name
 #: ImplementationGuide.definition.resource.name
