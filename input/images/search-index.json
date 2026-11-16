@@ -17,7 +17,11 @@ ConceptMap mapping and ["n", value, type] for a NamingSystem identifier.
 {% case r.resourceType -%}
 {%- when "CodeSystem" -%}{% include search-index-concepts.html concepts=r.concept -%}
 {%- when "ValueSet" -%}{%- for inc in r.compose.include -%}{% if inc.concept %}{% include search-index-concepts.html concepts=inc.concept -%}{% endif %}{%- endfor -%}
-{%- when "ConceptMap" -%}{%- for g in r.group -%}{%- for e in g.element -%}{%- for t in e.target -%}
+{%- when "ConceptMap" -%}{%- for g in r.group -%}{%- for e in g.element -%}
+{%- if e.target == nil or e.target.size == 0 -%}
+,["m",{{ e.code | jsonify }},{{ e.display | default: "" | jsonify }},"","","noMap"]
+{% endif -%}
+{%- for t in e.target -%}
 ,["m",{{ e.code | jsonify }},{{ e.display | default: "" | jsonify }},{{ t.code | default: "" | jsonify }},{{ t.display | default: "" | jsonify }},{{ t.relationship | default: "" | jsonify }}]
 {% endfor -%}{%- endfor -%}{%- endfor -%}
 {%- when "NamingSystem" -%}{%- for u in r.uniqueId -%}

@@ -76,22 +76,24 @@
   }
 
   // Best first: exact code or id, its prefix, exact text, text prefix, word start, anywhere.
-  function score(e, q) {
+  function score(e, q, word) {
     if (e.key === q) return 0;
     if (e.key.indexOf(q) === 0) return 1;
-    var i, t = e.texts, word = new RegExp('(^|[\\s(,.;:/-])' + reEsc(q));
+    var i, t = e.texts;
     for (i = 0; i < t.length; i++) if (t[i] === q) return 2;
     for (i = 0; i < t.length; i++) if (t[i].indexOf(q) === 0) return 3;
     for (i = 0; i < t.length; i++) if (word.test(t[i])) return 4;
     return 5;
   }
 
-  function mark(text, words) {
-    var out = esc(text || '');
-    words.forEach(function (w) {
-      out = out.replace(new RegExp('(' + reEsc(esc(w)) + ')', 'gi'), '<mark>$1</mark>');
-    });
-    return out;
+  // One pass over the raw text, so a word never matches inside an earlier <mark> or an entity.
+  function mark(text, re) {
+    return String(text || '').split(re).map(function (p, i) { return i % 2 ? '<mark>' + esc(p) + '</mark>' : esc(p); }).join('');
+  }
+
+  // The publisher's anchor for a code: spaces dropped, other characters outside [A-Za-z0-9_-] as '.' + char code.
+  function anchor(code) {
+    return code.replace(/\s/g, '').replace(/[^A-Za-z0-9_-]/g, function (c) { return '.' + c.charCodeAt(0); });
   }
 
   // The display in the page language when the concept has one, else its base display.
@@ -100,10 +102,11 @@
     return row[2] || (row.length > 4 ? row[4] : '');
   }
 
-  function render(words) {
+  function render(re) {
     var shown = type ? hits.filter(function (h) { return resources[h.res].r === type; }) : hits;
     var counts = {};
     hits.forEach(function (h) { var r = resources[h.res].r; counts[r] = (counts[r] || 0) + 1; });
+    if (type && !counts[type]) counts[type] = 0;
     var types = Object.keys(counts).sort();
     chips.innerHTML = hits.length ? ['<button type="button" data-type=""' + (type ? '' : ' aria-pressed="true"') + '>' +
       esc(T.all) + ' <span>' + hits.length.toLocaleString() + '</span></button>'].concat(types.map(function (t) {
@@ -116,21 +119,22 @@
     var rows = shown.slice(0, MAX).map(function (e) {
       var res = resources[e.res], row = e.row, page = res.r + '-' + res.id + '.html', match, details;
       if (e.kind === 'r') {
-        match = '<a href="' + page + '">' + mark(res.t, words) + '</a> <code>' + mark(res.id, words) + '</code>';
-        details = mark(res.d, words) + (res.u ? '<span class="ig-url">' + mark(res.u, words) + '</span>' : '');
+        match = '<a href="' + page + '">' + mark(res.t, re) + '</a> <code>' + mark(res.id, re) + '</code>';
+        details = mark(res.d, re) + (res.u ? '<span class="ig-url">' + mark(res.u, re) + '</span>' : '');
       } else if (e.kind === 'c') {
-        var term = conceptTerm(row), href = res.r === 'CodeSystem' ? page + '#' + encodeURIComponent(res.id + '-' + row[1]) : page;
-        match = '<a href="' + href + '"><code>' + mark(row[1], words) + '</code></a> ' + mark(term, words);
+        var term = conceptTerm(row), href = res.r === 'CodeSystem' ? page + '#' + res.id + '-' + anchor(row[1]) : page;
+        match = '<a href="' + href + '"><code>' + mark(row[1], re) + '</code></a> ' + mark(term, re);
         var others = [['', row[2]]];
         for (var j = 3; j + 1 < row.length; j += 2) others.push([row[j], row[j + 1]]);
         details = others.filter(function (d) { return d[1] && d[1] !== term; }).map(function (d) {
-          return '<span>' + (d[0] ? '<b>' + esc(d[0]) + '</b> ' : '') + mark(d[1], words) + '</span>';
+          return '<span>' + (d[0] ? '<b>' + esc(d[0]) + '</b> ' : '') + mark(d[1], re) + '</span>';
         }).join('');
       } else if (e.kind === 'm') {
-        match = '<code>' + mark(row[1], words) + '</code> ' + mark(row[2], words) + ' &#8594; <code>' + mark(row[3], words) + '</code> ' + mark(row[4], words);
+        match = '<code>' + mark(row[1], re) + '</code> ' + mark(row[2], re) +
+          (row[3] ? ' &#8594; <code>' + mark(row[3], re) + '</code> ' + mark(row[4], re) : '');
         details = esc(row[5]);
       } else {
-        match = '<code>' + mark(row[1], words) + '</code>';
+        match = '<code>' + mark(row[1], re) + '</code>';
         details = esc(row[2]);
       }
       return '<tr><td><span class="ig-type">' + esc(res.r) + '</span></td><td>' + match + '</td><td class="ig-details">' + details +
@@ -149,16 +153,18 @@
     hits = [];
     if (!entries.length || !raw) { chips.innerHTML = ''; results.innerHTML = ''; return; }
     var q = norm(raw), words = q.split(/\s+/);
+    var word = new RegExp('(^|[\\s(,.;:/-])' + reEsc(q));
+    var re = new RegExp('(' + words.slice().sort(function (a, b) { return b.length - a.length; }).map(reEsc).join('|') + ')', 'gi');
     var scored = [];
     for (var i = 0; i < entries.length; i++) {
       var e = entries[i], ok = true;
       for (var w = 0; w < words.length && ok; w++) ok = e.hay.indexOf(words[w]) >= 0;
-      if (ok) scored.push({ e: e, s: score(e, q) });
+      if (ok) scored.push({ e: e, s: score(e, q, word) });
     }
     hits = scored.sort(function (a, b) {
       return a.s - b.s || (a.e.kind === 'r' ? 0 : 1) - (b.e.kind === 'r' ? 0 : 1) || a.e.hay.length - b.e.hay.length;
     }).map(function (x) { return x.e; });
-    render(words);
+    render(re);
   }
 
   chips.addEventListener('click', function (ev) {
