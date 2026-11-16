@@ -120,7 +120,26 @@ A hospital asks the Andijan blood station for two units of red blood cells for a
 
 The request number lets the blood service and the hospital match the request with the delivery that answers it; the delivery carries its own [delivery number](StructureDefinition-uz-core-supply-delivery.html#identifier-slices).
 
-A SupplyRequest holds one item. When a hospital needs several blood components for the same patient at the same time, for example red blood cells and fresh frozen plasma before an operation, it sends one request per component and gives them all the same group number. The blood service handles the grouped requests as one order: it crossmatches them against the same sample and delivers them together. See the [red blood cell](SupplyRequest-example-supply-request-group-red-cells.html) and [fresh frozen plasma](SupplyRequest-example-supply-request-group-plasma.html) examples.
+#### Grouped requests {#grouped-requests}
+
+A SupplyRequest can only ask for one thing. If a hospital needs several blood components for the same patient at the same time, such as red blood cells and plasma for an operation, it sends a separate request for each one. To show that they belong together, it gives them all the same group number.
+
+How the hospital uses the group number:
+
+- Give every request in the set the same group number, next to each request's own request number.
+- Use a new group number for each new set, and never reuse an old one.
+- Put your hospital in `identifier.assigner`.
+- If you need one more component for the same operation later, give the new request the same group number.
+
+The group number is shared, so it can't pick out a single request. To find, update or link to one request, use its request number. To see the whole group, search by the group number:
+
+```
+GET [base]/SupplyRequest?identifier=https://dhp.uz/fhir/core/sid/doc/uz/supply-group|GR-0001
+```
+
+Each request in the group has its own status. Cancelling the plasma doesn't cancel the red blood cells. When the blood service delivers several requests together, the delivery lists all of them in `basedOn`.
+
+See the [red blood cell](SupplyRequest-example-supply-request-group-red-cells.html) and [fresh frozen plasma](SupplyRequest-example-supply-request-group-plasma.html) examples.
 
 #### A stock replenishment
 

@@ -31,7 +31,7 @@ Description: "Uzbekistan Core SupplyRequest profile, used to represent requests 
 
 * identifier[group].system 1..1 MS
 * identifier[group].system = $supply-group-number
-* identifier[group] ^short = "Shared identifier for grouped service requests"
+* identifier[group] ^short = "Group number shared by supply requests placed together"
 
 * basedOn MS
 * basedOn only Reference(UZCoreServiceRequest or UZCoreSupplyRequest)
@@ -145,16 +145,19 @@ Usage: #example
 Instance: example-supply-request-group-red-cells
 InstanceOf: UZCoreSupplyRequest
 Title: "Example UZ Core SupplyRequest - Grouped Red Cells"
-Description: "Red cells for emergency surgery. A SupplyRequest holds one item, so red cells and plasma are sent as two requests linked by group identifier GR-0001 and handled as one order."
+Description: "Red cells for an operation the next morning. A SupplyRequest holds one item, so red cells and plasma are sent as two requests linked by group number GR-0001 and handled as one order."
 Usage: #example
-* language = #en
+* language = #uz
 
-* identifier[request].value = "CK-0002"
+* identifier[request].value = "CK-0004"
 * identifier[contract].value = "CK-0001"
 * identifier[group].value = "GR-0001"
+* identifier[group].assigner = Reference(Organization/tashkent-hospital)
+
+* basedOn = Reference(ServiceRequest/transfusion-order-red-cells)
 
 * status = #active
-* category = request-type-cs#req-type-0001-0002 "Named (patient-specific)"
+* category = request-type-cs#req-type-0001-0002 "Shaxsiy"
 * priority = #urgent
 
 * deliverFor = Reference(Patient/example-salim)
@@ -172,7 +175,7 @@ Usage: #example
 * parameter[bloodRh].valueCodeableConcept = $sct#165747007
 
 * authoredOn = "2025-09-03T07:40:00+05:00"
-* occurrenceDateTime = "2025-09-03T10:00:00+05:00"
+* occurrenceDateTime = "2025-09-04T09:00:00+05:00"
 
 * requester = Reference(Practitioner/example-practitioner)
 * supplier = Reference(Organization/andijan-station)
@@ -182,16 +185,19 @@ Usage: #example
 Instance: example-supply-request-group-plasma
 InstanceOf: UZCoreSupplyRequest
 Title: "Example UZ Core SupplyRequest - Grouped Fresh Frozen Plasma"
-Description: "Fresh frozen plasma for the same emergency surgery. Shares group identifier GR-0001 with the red cell request, so both are handled as one order."
+Description: "Fresh frozen plasma for the same operation. Shares group number GR-0001 with the red cell request, so both are handled as one order."
 Usage: #example
-* language = #en
+* language = #uz
 
-* identifier[request].value = "CK-0003"
+* identifier[request].value = "CK-0005"
 * identifier[contract].value = "CK-0001"
 * identifier[group].value = "GR-0001"
+* identifier[group].assigner = Reference(Organization/tashkent-hospital)
+
+* basedOn = Reference(ServiceRequest/transfusion-order-plasma)
 
 * status = #active
-* category = request-type-cs#req-type-0001-0002 "Named (patient-specific)"
+* category = request-type-cs#req-type-0001-0002 "Shaxsiy"
 * priority = #urgent
 
 * deliverFor = Reference(Patient/example-salim)
@@ -209,7 +215,7 @@ Usage: #example
 * parameter[bloodRh].valueCodeableConcept = $sct#165747007
 
 * authoredOn = "2025-09-03T07:40:00+05:00"
-* occurrenceDateTime = "2025-09-03T10:00:00+05:00"
+* occurrenceDateTime = "2025-09-04T09:00:00+05:00"
 
 * requester = Reference(Practitioner/example-practitioner)
 * supplier = Reference(Organization/andijan-station)

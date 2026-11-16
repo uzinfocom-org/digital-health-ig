@@ -121,7 +121,9 @@ Description: """
       * ^property[+].code = #notSelectable
       * ^property[=].valueBoolean = false
     * #https://dhp.uz/fhir/core/sid/doc/uz/supply-group "Group numbers linking supply requests placed together by requesting hospitals in Uzbekistan"
-      * ^property[0].code = #country
+      * ^property[0].code = #idtype
+      * ^property[=].valueCoding = $identifier-type#PGN
+      * ^property[+].code = #country
       * ^property[=].valueCoding = $iso-3166#UZ
       * ^property[+].code = #naming-system
       * ^property[=].valueString = Canonical(uzb-supply-group-number)

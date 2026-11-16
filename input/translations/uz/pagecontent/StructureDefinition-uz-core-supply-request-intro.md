@@ -122,7 +122,26 @@ Shifoxona o'z ta'minot shartnomasi doirasida Andijon qon quyish stansiyasidan an
 
 So'rov raqami qon xizmati va shifoxonaga so'rovni unga javob beradigan yetkazib berish bilan solishtirish imkonini beradi; yetkazib berishning o'z [yetkazib berish raqami](StructureDefinition-uz-core-supply-delivery.html#identifier-slices) bor.
 
-SupplyRequest bitta buyumni o'z ichiga oladi. Shifoxonaga bitta bemor uchun bir vaqtning o'zida bir nechta qon komponenti kerak bo'lsa, masalan operatsiyadan oldin eritrotsitar massa va yangi muzlatilgan plazma, u har bir komponent uchun alohida so'rov yuboradi va ularning barchasiga bir xil guruh raqamini beradi. Qon xizmati guruhlangan so'rovlarni bitta buyurtma sifatida ko'rib chiqadi: ularni bitta namuna bilan moslik sinovidan o'tkazadi va birga yetkazib beradi. [Eritrotsitar massa](SupplyRequest-example-supply-request-group-red-cells.html) va [yangi muzlatilgan plazma](SupplyRequest-example-supply-request-group-plasma.html) misollariga qarang.
+#### Guruhlangan so'rovlar {#grouped-requests}
+
+SupplyRequest faqat bitta narsani so'rashi mumkin. Agar shifoxonaga bitta bemor uchun bir vaqtning o'zida bir nechta qon komponenti kerak bo'lsa, masalan operatsiya uchun eritrotsitar massa va plazma, u har bir komponent uchun alohida so'rov yuboradi. Ular bir-biriga tegishli ekanini ko'rsatish uchun shifoxona ularning barchasiga bir xil guruh raqamini beradi.
+
+Shifoxona guruh raqamidan qanday foydalanadi:
+
+- To'plamdagi har bir so'rovga, uning o'z so'rov raqami yonida, bir xil guruh raqamini bering.
+- Har bir yangi to'plam uchun yangi guruh raqamidan foydalaning va eskisini hech qachon qayta ishlatmang.
+- Shifoxonangizni `identifier.assigner` da ko'rsating.
+- Agar keyinroq xuddi shu operatsiya uchun yana bir komponent kerak bo'lsa, yangi so'rovga ham xuddi shu guruh raqamini bering.
+
+Guruh raqami umumiy, shuning uchun u bitta so'rovni aniqlay olmaydi. Bitta so'rovni topish, yangilash yoki unga havola qilish uchun uning so'rov raqamidan foydalaning. Butun guruhni ko'rish uchun guruh raqami bo'yicha qidiring:
+
+```
+GET [base]/SupplyRequest?identifier=https://dhp.uz/fhir/core/sid/doc/uz/supply-group|GR-0001
+```
+
+Guruhdagi har bir so'rovning o'z holati bor. Plazmani bekor qilish eritrotsitar massani bekor qilmaydi. Qon xizmati bir nechta so'rovni birga yetkazib berganda, yetkazib berish ularning barchasini `basedOn` da ko'rsatadi.
+
+[Eritrotsitar massa](SupplyRequest-example-supply-request-group-red-cells.html) va [yangi muzlatilgan plazma](SupplyRequest-example-supply-request-group-plasma.html) misollariga qarang.
 
 #### Zaxirani to'ldirish
 
