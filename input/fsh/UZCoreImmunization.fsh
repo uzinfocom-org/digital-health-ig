@@ -203,7 +203,7 @@ Description: "Example immunization event for UZ Core Immunization profile."
 
 * location = Reference(example-location-1)
 
-* site = $v3-ActSite#LA "Left arm"
+* site = $v3-ActSite#LA
 * route = $sct#36673005 "Intradermal injection"
 
 * doseQuantity.value = 0.05

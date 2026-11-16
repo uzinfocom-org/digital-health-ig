@@ -115,7 +115,7 @@ Usage: #example
   * value = "200935935"
 * identifier[argosId]
   * use = #official
-  * type = $identifier-type#XX "Organization Identifier"
+  * type = $identifier-type#XX
   * system = $organization-argos-id-system
   * value = "9512"
 * identifier[shifId]
@@ -199,7 +199,7 @@ Usage: #example
   * value = "203108505"
 * identifier[+]
   * system = $organization-argos-id-system
-  * type = $identifier-type#XX "Organization Identifier"
+  * type = $identifier-type#XX
   * use = #official
   * value = "22640"
 * language = #uz

@@ -182,7 +182,7 @@ Usage: #example
   * value = "90000000000003"
 * active = true
 * patient = Reference(example-jasur)
-* relationship[0].coding[0] = $v3-RoleCode#MTH "Ona"
+* relationship[0].coding[0] = $v3-RoleCode#MTH
 * name
   * use = #usual
   * text = "Karimova Nodira Anvarovna"

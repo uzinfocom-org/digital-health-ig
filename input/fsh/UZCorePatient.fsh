@@ -226,7 +226,7 @@ Usage: #example
   * relationship = $v2-0131#N "Next-of-Kin"
   * name.text = "Ваисов Раис"
   * gender = #male
-* maritalStatus = $v3-MaritalStatus#W "Вдовец, вдова"
+* maritalStatus = $v3-MaritalStatus#W
 * extension[nationality].extension[code].valueCodeableConcept = $nationality-cs#23 "КАРЕЛ/КАРЕЛКА"
 * extension[managingOrganizationAttachment].valueDate = "2024-03-15"
 
@@ -261,7 +261,7 @@ Usage: #example
   * relationship = $v2-0131#C "Emergency Contact"
   * name.text = "Саидов Саид"
   * gender = #male
-* maritalStatus = $v3-MaritalStatus#M "Состоит в браке"
+* maritalStatus = $v3-MaritalStatus#M
 * multipleBirthInteger = 2
 * extension[nationality].extension[code].valueCodeableConcept = $nationality-cs#33 "НЕМЕЦ/НЕМКА"
 
@@ -297,7 +297,7 @@ Usage: #example
   * relationship = $v2-0131#C "Emergency Contact"
   * name.text = "Isabella"
   * gender = #female
-* maritalStatus = $v3-MaritalStatus#U "Unmarried"
+* maritalStatus = $v3-MaritalStatus#U
 * multipleBirthInteger = 2
 * extension[nationality].extension[code].valueCodeableConcept = $nationality-cs#42 "TURKMAN"
 
