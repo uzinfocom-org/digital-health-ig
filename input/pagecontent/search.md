@@ -1,4 +1,4 @@
-Search resources, codes, terms and mappings across this guide - check here before adding a new code.
+Search resources, codes, terms and mappings across this guide.
 
 <style>
 #ig-query { width: 100%; font-size: 15px; padding: 6px 10px; border: 1px solid #c3d0d4; border-radius: 6px; margin: 16px 0 8px; }

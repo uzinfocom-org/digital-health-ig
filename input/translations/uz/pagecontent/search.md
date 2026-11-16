@@ -1,4 +1,4 @@
-Ushbu qo'llanmadagi resurslar, kodlar, atamalar va moslashtirishlarni qidirish - yangi kod qo'shishdan oldin shu yerda tekshiring.
+Ushbu qo'llanmadagi resurslar, kodlar, atamalar va moslashtirishlarni qidirish.
 
 <style>
 #ig-query { width: 100%; font-size: 15px; padding: 6px 10px; border: 1px solid #c3d0d4; border-radius: 6px; margin: 16px 0 8px; }
