@@ -129,6 +129,15 @@ Description: """
       * ^property[=].valueString = Canonical(uzb-supply-delivery-number)
       * ^property[+].code = #notSelectable
       * ^property[=].valueBoolean = false
+    * #https://dhp.uz/fhir/core/sid/doc/uz/bdp-dispense "Dispense numbers assigned to the issue of biologically derived products in Uzbekistan"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCoding = $identifier-type#FILL
+      * ^property[+].code = #country
+      * ^property[=].valueCoding = $iso-3166#UZ
+      * ^property[+].code = #naming-system
+      * ^property[=].valueString = Canonical(uzb-bdp-dispense-number)
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
     * #https://dhp.uz/fhir/core/sid/doc/uz/inventory-item "Inventory item identifiers assigned by inventory-managing organizations in Uzbekistan"
       * ^property[0].code = #country
       * ^property[=].valueCoding = $iso-3166#UZ
