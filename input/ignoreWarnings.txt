@@ -115,12 +115,23 @@ ValueSet 'http://hl7.org/fhir/ValueSet/concept-property-type|5.0.0' not found
 %The codes 1 and 565 are both mapped to ug as 'equivalent', which means that they have the same meaning%
 %The codes 2 and 567 are both mapped to mg as 'equivalent', which means that they have the same meaning%
 %The codes 2 and 569 are both mapped to mg as 'equivalent', which means that they have the same meaning%
+%The codes 252 and 326 are both mapped to {#} as 'equivalent', which means that they have the same meaning%
+%The codes 255 and 800 are both mapped to [anti'Xa'U] as 'equivalent', which means that they have the same meaning%
 %The codes 26 and 570 are both mapped to ug/mL as 'equivalent', which means that they have the same meaning%
+%The codes 270 and 383 are both mapped to [arb'U]/mL as 'equivalent', which means that they have the same meaning%
+%The codes 273 and 660 are both mapped to [D'ag'U] as 'equivalent', which means that they have the same meaning%
+%The codes 275 and 780 are both mapped to [CCID_50] as 'equivalent', which means that they have the same meaning%
 %The codes 279 and 266 are both mapped to [ELU] as 'equivalent', which means that they have the same meaning%
+%The codes 295 and 404 are both mapped to mg as 'equivalent', which means that they have the same meaning%
+%The codes 299 and 276 are both mapped to [iU] as 'equivalent', which means that they have the same meaning%
+%The codes 300 and 340 are both mapped to mL as 'equivalent', which means that they have the same meaning%
 %The codes 320 and 294 are both mapped to MBq as 'equivalent', which means that they have the same meaning%
 %The codes 322 and 325 are both mapped to [TCID_50] as 'equivalent', which means that they have the same meaning%
+%The codes 323 and 542 are both mapped to [arb'U] as 'equivalent', which means that they have the same meaning%
 %The codes 37 and 571 are both mapped to kg as 'equivalent', which means that they have the same meaning%
+%The codes 381 and 461 are both mapped to g/L as 'equivalent', which means that they have the same meaning%
 %The codes 42 and 606 are both mapped to MBq as 'equivalent', which means that they have the same meaning%
+%The codes 480 and 500 are both mapped to [iU]/g as 'equivalent', which means that they have the same meaning%
 %The codes 491 and 78 are both mapped to ug/{dose} as 'equivalent', which means that they have the same meaning%
 %The codes 493 and 531 are both mapped to [iU] as 'equivalent', which means that they have the same meaning%
 %The codes 494 and 566 are both mapped to mL as 'equivalent', which means that they have the same meaning%
@@ -131,6 +142,12 @@ ValueSet 'http://hl7.org/fhir/ValueSet/concept-property-type|5.0.0' not found
 %The codes 63 and 67 are both mapped to [ELU] as 'equivalent', which means that they have the same meaning%
 %The codes 65 and 609 are both mapped to [TCID_50] as 'equivalent', which means that they have the same meaning%
 %The codes 81 and 418 are both mapped to mg/mL as 'equivalent', which means that they have the same meaning%
+# unit-of-measurement-cs is flat, so the publisher cannot see that the specific units mapped to [arb'U] as narrower
+# (360, 620, 1200, 1300) are kinds of the conventional unit 323 that is equivalent to it.
+%The code 323 is mapped to [arb'U] as 'equivalent', and 1200 is mapped to [arb'U] as 'source-is-narrower-than-target', which means that 323 should subsume 1200, but it does not%
+%The code 323 is mapped to [arb'U] as 'equivalent', and 1300 is mapped to [arb'U] as 'source-is-narrower-than-target', which means that 323 should subsume 1300, but it does not%
+%The code 323 is mapped to [arb'U] as 'equivalent', and 360 is mapped to [arb'U] as 'source-is-narrower-than-target', which means that 323 should subsume 360, but it does not%
+%The code 323 is mapped to [arb'U] as 'equivalent', and 620 is mapped to [arb'U] as 'source-is-narrower-than-target', which means that 323 should subsume 620, but it does not%
 # lab-pan-cs lists each analyte once per panel, so blood count indices appear in both the manual and the analyser
 # blood count panel, and lipids, thyroid hormones, cortisol, vitamin D and TORCH IgG in several panels.
 %The codes lab-pan-142 and lab-pan-256 are both mapped to 2093-3 as 'equivalent', which means that they have the same meaning%
