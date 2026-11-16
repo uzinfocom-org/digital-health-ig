@@ -91,7 +91,7 @@ Description: "Skin rash after a paracetamol dose, linked to the administration t
 * type = $allergy-intolerance-type#allergy "Allergy"
 * category = $allergy-category#medication "Medication"
 
-* code = allergen-codes-cs#aller-0010-00343 "Allergic reaction caused by analgesic"
+* code = inn-medication-name-cs#005325 "paracetamol"
 
 * patient = Reference(Patient/example-salim)
 

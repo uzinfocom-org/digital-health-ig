@@ -92,6 +92,8 @@ pages:
       title: e-Prescription and dispensing
   forms.md:
     title: Questionnaires
+  search.md:
+    title: Search
   api-access.md:
     title: API access
   components.md:
@@ -131,6 +133,8 @@ parameters:
   default-version: true
 
   show-inherited-invariants: false # hide invariants inherited from the base resource in profile tables
+
+  produce-jekyll-data: true # resources in _data feed search-index.json for search.html
 
   # openehr: true
 
