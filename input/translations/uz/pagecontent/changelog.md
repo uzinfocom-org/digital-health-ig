@@ -39,6 +39,8 @@ Endi har bir profil sahifasida kirish qismi va Tez boshlash bo'limi bor. Ular [U
 
 BloodProductInventoryItem CSV papkasi nomining oxiridagi yangi qator belgisi olib tashlandi, shunda repozitoriyni Windows tizimida klonlash mumkin.
 
+CarePlan yordam ko'rsatish joylari tarjimalari endi CodeSystem supplement sifatida to'g'ri belgilangan, bu ServiceRequest joylashuv terminologiyasini kompilyatsiya qilish xatolarini bartaraf etadi.
+
 [FHIR turlari supplementi](CodeSystem-fhir-types-cs.html) har bir resurs turiga nomi o'rniga uning ta'rifi tarjimasini berardi. Endi har bir turning o'zbekcha va ruscha nomi bor, masalan `Patient` uchun "Bemor" va "Пациент", ular `preferredForLanguage` bilan belgilangan, shuning uchun `displayLanguage` bilan `$lookup` nomni qaytaradi. Tarjima qilingan ta'riflar SNOMED CT `900000000000550004` Definition use bilan belgilashlar sifatida qoladi.
 
 ICCC-3 va WHO ICHI kodlari uzatilganda kod tizimi versiyasini ko'rsatish talab qilinadi, chunki ularning tasnif iyerarxiyalari versiyaga bog'liq.
