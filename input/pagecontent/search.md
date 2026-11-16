@@ -1,4 +1,4 @@
-Search every resource in this guide at once - profiles, extensions, code systems, value sets, concept maps, naming systems and examples - by title, name, URL or description, and inside them by code, display, Russian, Uzbek or English designation, or mapping. Narrow the results by resource type afterwards. Before adding a new code system or concept, search here first to check that it does not already exist.
+Search resources, codes, terms and mappings across this guide.
 
 <style>
 #ig-query { width: 100%; font-size: 15px; padding: 6px 10px; border: 1px solid #c3d0d4; border-radius: 6px; margin: 16px 0 8px; }
