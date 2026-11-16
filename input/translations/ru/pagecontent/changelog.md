@@ -48,6 +48,8 @@ ICCC-3 и WHO ICHI теперь требуют указания версии с�
 
 [UZ Core Patient](StructureDefinition-uz-core-patient.html) допускает несколько свидетельств о рождении (`birthCertificate` теперь 0..* вместо 0..1) и больше не фиксирует его `use`, поэтому прежнее свидетельство пациента можно передать с `use = old` рядом с действующим с `use = official`.
 
+Английское название услуги TXMK 9265133 уточнено до "Urine protein-to-creatinine ratio measurement", чтобы отличать определение показателя от самого соотношения.
+
 Все ссылки на Device в профилях UZ Core теперь указывают на [UZ Core Device](StructureDefinition-uz-core-device.html): Observation, Procedure, Condition, AdverseEvent, Composition, QuestionnaireResponse, Group, MedicationAdministration, MedicationDispense, InventoryItem, SupplyRequest и SupplyDelivery.
 
 Заголовки и описания систем кодов и наборов значений теперь следуют шаблону именования из [руководства по моделированию](https://github.com/uzinfocom-org/digital-health-ig/blob/main/modelling-guidelines.md): supplement называется `[Concept] translations`, набор значений - `[Concept]`, а в заголовках больше нет слов вроде "CodeSystem" или "ValueSet". Канонические URL, идентификаторы и коды не изменились.

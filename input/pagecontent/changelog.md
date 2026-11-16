@@ -59,6 +59,8 @@ The [Procedure example](Procedure-example-procedure.html) now points at an [outp
 
 Titles and descriptions of code systems and value sets now follow the naming pattern in the [modelling guidelines](https://github.com/uzinfocom-org/digital-health-ig/blob/main/modelling-guidelines.md): a supplement is `[Concept] translations`, a value set is `[Concept]`, and titles no longer carry words such as "CodeSystem" or "ValueSet". Canonical URLs, ids and codes are unchanged.
 
+TXMK service 9265133 now has the English name "Urine protein-to-creatinine ratio measurement" to distinguish the measurement service from the ratio itself.
+
 [UZ Core HealthcareService](StructureDefinition-uz-core-healthcareservice.html) has new Must Support slices for the TXMK service category and service in `category` and `type`. [Service categories](ValueSet-service-categories-vs.html), which the laboratory category slice is bound to, now also include the laboratory categories.
 
 [UZ Core Organization](StructureDefinition-uz-core-organization.html) and [UZ Core RelatedPerson](StructureDefinition-uz-core-relatedperson.html) no longer fix the display of the identifier type: the `mohId` and `argosId` slices fix only the system and code `XX`, and `healthCard` only `HC`. The fixed displays "Organization Identifier" and "Health card number" did not match the HL7 terminology displays "Organization identifier" and "Health Card Number", so every conforming instance got a terminology warning. An identifier type with either display, or without one, now conforms.

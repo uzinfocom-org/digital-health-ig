@@ -10716,7 +10716,7 @@ Description: "National classification of medical services of Uzbekistan, approve
   * ^designation[0].language = #ru
   * ^designation[=].value = "Определение белок-креатининового соотношения в моче"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Urine protein-to-creatinine ratio"
+  * ^designation[=].value = "Urine protein-to-creatinine ratio measurement"
   * ^property[0].code = #structural-code
   * ^property[=].valueString = "B01.01.331"
   * ^property[+].code = #service-class

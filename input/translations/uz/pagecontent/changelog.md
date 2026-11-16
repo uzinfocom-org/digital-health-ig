@@ -56,6 +56,8 @@ Namunalar endi HL7 kodlarining display qiymatini HL7 terminologiyasidagi display
 
 [Procedure namunasi](Procedure-example-procedure.html) endi boshqa bemorning tashrifi va holati o'rniga xuddi shu bemorning [ambulator fizioterapiya tashrifi](Encounter-example-physiotherapy-encounter.html) va [o'ng oyoq panjasidagi og'riq](Condition-example-foot-pain.html) holatiga havola qiladi.
 
+TXMK 9265133 xizmatining inglizcha nomi o'lchash xizmatini nisbatning o'zidan farqlash uchun "Urine protein-to-creatinine ratio measurement" deb aniqlashtirildi.
+
 [UZ Core HealthcareService](StructureDefinition-uz-core-healthcareservice.html) `category` va `type` elementlarida TXMK kategoriyasi va xizmati uchun Must Support slayclarini oldi. Laboratoriya kategoriyasi slayci bog'langan [xizmat kategoriyalari](ValueSet-service-categories-vs.html) endi laboratoriya kategoriyalarini ham o'z ichiga oladi.
 
 [UZ Core Observation](StructureDefinition-uz-core-observation.html), [UZ Core Immunization](StructureDefinition-uz-core-immunization.html) va [UZ Core Procedure](StructureDefinition-uz-core-procedure.html) dagi `basedOn` endi istalgan CarePlan emas, UZ Core CarePlan ga havola qiladi.

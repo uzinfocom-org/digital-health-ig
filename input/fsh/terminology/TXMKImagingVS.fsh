@@ -1,7 +1,7 @@
 ValueSet: TXMKImagingVS
 Id: txmk-imaging-vs
-Title: "TXMK diagnostic imaging service"
-Description: "TXMK diagnostic imaging services"
+Title: "TXMK radiology and nuclear medicine service"
+Description: "Diagnostic radiology and nuclear medicine services from the Uzbekistan national medical services classifier (TXMK), including ultrasound, radiography, CT, MRI, radionuclide diagnostics and angiography."
 
 * ^url = "https://terminology.dhp.uz/fhir/core/ValueSet/txmk-imaging-vs"
 * ^status = #draft
