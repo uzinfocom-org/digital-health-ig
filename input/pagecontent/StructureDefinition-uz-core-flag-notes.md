@@ -11,7 +11,7 @@ GET [base]/Flag/[id]
 **Search flags**
 
 ```
-GET [base]/Flag?patient=Patient/[id]&status=active&code=blood-donation-deferred
+GET [base]/Flag?patient=Patient/[id]&status=active&code=blood-donation-deferred-temporary,blood-donation-deferred-permanent
 GET [base]/Flag?patient=Patient/[id]&status=active
 GET [base]/Flag?patient=Patient/[id]&category=http://terminology.hl7.org/CodeSystem/flag-category%7Cclinical
 GET [base]/Flag?identifier=[system]%7C[value]
@@ -20,7 +20,7 @@ GET [base]/Flag?author=Practitioner/[id]
 GET [base]/Flag?date=ge2026-01-01
 ```
 
-`code` is a [UZ Core search parameter](SearchParameter-uz-core-flag-code.html): FHIR R5 has none for `Flag.code`. The first query finds a patient's active medical deferrals.
+`code` is a [UZ Core search parameter](SearchParameter-uz-core-flag-code.html): FHIR R5 has none for `Flag.code`. The first query finds a patient's active medical deferrals; a temporary one whose `period.end` has passed no longer applies.
 
 **Create**
 
@@ -36,7 +36,7 @@ POST [base]/Flag
   "code": {
     "coding": [{
       "system": "https://terminology.dhp.uz/fhir/core/CodeSystem/blood-donor-eligibility-cs",
-      "code": "blood-donation-deferred"
+      "code": "blood-donation-deferred-permanent"
     }]
   },
   "subject": { "reference": "Patient/[id]" },

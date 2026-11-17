@@ -8367,6 +8367,132 @@
       ]
     },
     {
+      "code": "HRB101",
+      "display": "dorivor o'simlik xomashyosi",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "сырьё растительное лекарственное"
+        },
+        {
+          "language": "en",
+          "value": "herbal substance"
+        }
+      ]
+    },
+    {
+      "code": "TEA101",
+      "display": "dorivor o'simliklar yig'masi",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "сбор лекарственный растительный"
+        },
+        {
+          "language": "en",
+          "value": "herbal tea"
+        }
+      ]
+    },
+    {
+      "code": "SHA101",
+      "display": "dorivor shampun",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "шампунь лекарственный"
+        },
+        {
+          "language": "en",
+          "value": "medicated shampoo"
+        }
+      ]
+    },
+    {
+      "code": "LOT101",
+      "display": "losyon",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "лосьон"
+        },
+        {
+          "language": "en",
+          "value": "lotion"
+        }
+      ]
+    },
+    {
+      "code": "JEL101",
+      "display": "dorivor jele",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "желе лекарственное"
+        },
+        {
+          "language": "en",
+          "value": "medicated jelly"
+        }
+      ]
+    },
+    {
+      "code": "KIT101",
+      "display": "to'plam",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "набор"
+        },
+        {
+          "language": "en",
+          "value": "kit"
+        }
+      ]
+    },
+    {
+      "code": "SUB101",
+      "display": "substansiya",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "субстанция"
+        },
+        {
+          "language": "en",
+          "value": "active substance"
+        }
+      ]
+    },
+    {
+      "code": "CTP101",
+      "display": "kataplazma",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "катаплазма"
+        },
+        {
+          "language": "en",
+          "value": "poultice"
+        }
+      ]
+    },
+    {
+      "code": "DRS101",
+      "display": "dorivor bog'lam",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "повязка лекарственная"
+        },
+        {
+          "language": "en",
+          "value": "medicated dressing"
+        }
+      ]
+    },
+    {
       "code": "OTH101",
       "display": "boshqa dori shakllari",
       "designation": [
@@ -8381,5 +8507,5 @@
   "hierarchyMeaning": "is-a",
   "language": "uz",
   "experimental": true,
-  "count": 836
+  "count": 845
 }

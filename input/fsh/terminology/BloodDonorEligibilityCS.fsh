@@ -10,8 +10,14 @@ Description: "Local blood donor eligibility decisions in Uzbekistan"
   * ^designation[+].language = #en
   * ^designation[=].value = "Eligible for blood donation"
 
-* #blood-donation-deferred "Tibbiy sabablarga ko'ra qon donorligidan chetlatilgan"
+* #blood-donation-deferred-temporary "Tibbiy sabablarga ko'ra qon donorligidan vaqtincha chetlatilgan"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Медицинский отвод от донации крови"
+  * ^designation[=].value = "Временный медицинский отвод от донации крови"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Medical deferral from blood donation"
+  * ^designation[=].value = "Temporary medical deferral from blood donation"
+
+* #blood-donation-deferred-permanent "Tibbiy sabablarga ko'ra qon donorligidan doimiy chetlatilgan"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Постоянный медицинский отвод от донации крови"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Permanent medical deferral from blood donation"

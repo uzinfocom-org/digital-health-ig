@@ -511,6 +511,40 @@ Description: "Illustrative transfusion order for the patient in the blood produc
 * reason.concept = $sct#87522002 "Iron deficiency anemia"
 
 
+Instance: transfusion-order-red-cells
+InstanceOf: UZCoreServiceRequest
+Usage: #example
+Title: "Urgent red blood cell transfusion order"
+Description: "Illustrative red blood cell transfusion order for an operation, fulfilled by the grouped red cell supply request example."
+* status = #active
+* intent = #order
+* priority = #urgent
+* code = $sct#71493000 "Transfusion of packed red blood cells"
+* subject = Reference(example-salim)
+* authoredOn = "2025-09-03T07:30:00+05:00"
+* occurrenceDateTime = "2025-09-04T09:00:00+05:00"
+* requester = Reference(example-practitioner)
+* performer = Reference(tashkent-hospital)
+* reason.concept = $sct#74474003 "Gastrointestinal hemorrhage"
+
+
+Instance: transfusion-order-plasma
+InstanceOf: UZCoreServiceRequest
+Usage: #example
+Title: "Urgent fresh frozen plasma transfusion order"
+Description: "Illustrative fresh frozen plasma transfusion order for the same operation, fulfilled by the grouped plasma supply request example."
+* status = #active
+* intent = #order
+* priority = #urgent
+* code = $sct#116861002 "Transfusion of fresh frozen plasma"
+* subject = Reference(example-salim)
+* authoredOn = "2025-09-03T07:30:00+05:00"
+* occurrenceDateTime = "2025-09-04T09:00:00+05:00"
+* requester = Reference(example-practitioner)
+* performer = Reference(tashkent-hospital)
+* reason.concept = $sct#74474003 "Gastrointestinal hemorrhage"
+
+
 Instance: example-cold-storage-shelf
 InstanceOf: UZCoreLocation
 Usage: #example

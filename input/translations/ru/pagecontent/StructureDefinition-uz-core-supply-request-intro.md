@@ -11,11 +11,12 @@ UZ Core SupplyRequest фиксирует запрос на доставку пр
 - запрашиваемый предмет (`item`);
 - запрашиваемое количество (`quantity`).
 
-Оба элемента обязательны в базовом ресурсе SupplyRequest; этот профиль не добавляет других обязательных элементов. Номер запроса или договора должен содержать свой `system`, а каждый параметр группы крови должен содержать и код, и значение.
+Оба элемента обязательны в базовом ресурсе SupplyRequest; этот профиль не добавляет других обязательных элементов. Номер запроса или договора должен содержать свой `system`, номер группы - `system` и `value`, а каждый параметр группы крови должен содержать и код, и значение.
 
 #### Каждый UZ Core SupplyRequest должен поддерживать
 
 - номер запроса, присвоенный запрашивающей больницей, и номер договора о поставке, к которому он относится, каждый вместе с `system` (см. [срезы идентификаторов](#identifier-slices));
+- для запросов, отправленных вместе, общий номер группы (см. [сгруппированные запросы](#grouped-requests));
 - [ServiceRequest](StructureDefinition-uz-core-servicerequest.html) или другой SupplyRequest, на котором основан запрос (`basedOn`);
 - статус запроса `status` (draft / active / suspended / cancelled / completed / entered-in-error / unknown);
 - категорию запроса `category` (пополнение запаса / именной, для одного пациента / между учреждениями);
@@ -120,6 +121,57 @@ UZ Core SupplyRequest фиксирует запрос на доставку пр
 | [Номер договора о поставке](NamingSystem-uzb-supply-contract-number.html) | `https://dhp.uz/fhir/core/sid/doc/uz/supply-contract` | Стороной, оформившей договор о поставке между больницей и службой крови |
 
 Номер запроса позволяет службе крови и больнице сопоставить запрос с поставкой, которая на него отвечает; у поставки свой [номер поставки](StructureDefinition-uz-core-supply-delivery.html#identifier-slices).
+
+#### Сгруппированные запросы {#grouped-requests}
+
+SupplyRequest может запрашивать только одну позицию. Если больнице нужно сразу несколько компонентов крови для одного пациента, например эритроцитарная масса и плазма для операции, она отправляет отдельный запрос на каждый компонент. Чтобы показать, что они связаны, она присваивает им всем один и тот же номер группы.
+
+Номер группы передаётся в расширении [идентификатор группы](StructureDefinition-supplyrequest-group-identifier.html), а не в `identifier`. В SupplyRequest FHIR R5 нет элемента для него. Расширение заранее вводит `groupIdentifier`, который HL7 добавил в SupplyRequest в инкубаторе Orders and Observations, и будет заменено официальным межверсионным расширением, когда оно будет опубликовано. Его `valueIdentifier` содержит систему [номера группы запросов на поставку](NamingSystem-uzb-supply-group-number.html) `https://dhp.uz/fhir/core/sid/doc/uz/supply-group` и `value`. Это запрос плазмы из сгруппированного примера, сокращённый до номера группы и собственного номера запроса:
+
+```json
+{
+  "resourceType": "SupplyRequest",
+  "meta": { "profile": ["https://dhp.uz/fhir/core/StructureDefinition/uz-core-supply-request"] },
+  "extension": [
+    {
+      "url": "https://dhp.uz/fhir/core/StructureDefinition/supplyrequest-group-identifier",
+      "valueIdentifier": {
+        "system": "https://dhp.uz/fhir/core/sid/doc/uz/supply-group",
+        "value": "GR-0001",
+        "assigner": { "reference": "Organization/tashkent-hospital" }
+      }
+    }
+  ],
+  "identifier": [
+    { "system": "https://dhp.uz/fhir/core/sid/doc/uz/supply-request", "value": "CK-0005" }
+  ],
+  "status": "active",
+  "deliverFor": { "reference": "Patient/example-salim" },
+  "item": {
+    "concept": {
+      "coding": [ { "system": "http://snomed.info/sct", "code": "346447007" } ]
+    }
+  },
+  "quantity": { "value": 2, "unit": "units", "system": "http://unitsofmeasure.org", "code": "1" }
+}
+```
+
+Как больница использует номер группы:
+
+- Присвойте всем запросам набора один и тот же номер группы, рядом с собственным номером каждого запроса.
+- Для каждого нового набора используйте новый номер группы и никогда не используйте старый повторно.
+- Укажите свою больницу в `assigner` идентификатора группы.
+- После отправки запросов группа закрыта. Если позже для той же операции понадобится ещё один компонент, отправьте новый запрос с новым номером группы.
+
+Номер группы общий, поэтому по нему нельзя найти отдельный запрос. Чтобы найти, обновить один запрос или сослаться на него, используйте его номер запроса. Чтобы получить всю группу, выполните поиск по [параметру поиска](SearchParameter-uz-core-supplyrequest-group-identifier.html) `group-identifier`:
+
+```
+GET [base]/SupplyRequest?group-identifier=https://dhp.uz/fhir/core/sid/doc/uz/supply-group|GR-0001
+```
+
+У каждого запроса в группе свой статус. Отмена плазмы не отменяет эритроцитарную массу. Когда служба крови доставляет несколько запросов вместе, поставка перечисляет их все в `basedOn`.
+
+См. примеры с [эритроцитарной массой](SupplyRequest-example-supply-request-group-red-cells.html) и [свежезамороженной плазмой](SupplyRequest-example-supply-request-group-plasma.html).
 
 #### Пополнение запаса
 
