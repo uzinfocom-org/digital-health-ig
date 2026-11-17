@@ -131,7 +131,7 @@ Shifoxona guruh raqamidan qanday foydalanadi:
 - To'plamdagi har bir so'rovga, uning o'z so'rov raqami yonida, bir xil guruh raqamini bering.
 - Har bir yangi to'plam uchun yangi guruh raqamidan foydalaning va eskisini hech qachon qayta ishlatmang.
 - Shifoxonangizni `identifier.assigner` da ko'rsating.
-- Agar keyinroq xuddi shu operatsiya uchun yana bir komponent kerak bo'lsa, yangi so'rovga ham xuddi shu guruh raqamini bering.
+- So'rovlar yuborilgandan keyin guruh yopiladi. Agar keyinroq xuddi shu operatsiya uchun yana bir komponent kerak bo'lsa, yangi guruh raqami bilan yangi so'rov yuboring.
 
 Guruh raqami umumiy, shuning uchun u bitta so'rovni aniqlay olmaydi. Bitta so'rovni topish, yangilash yoki unga havola qilish uchun uning so'rov raqamidan foydalaning. Butun guruhni ko'rish uchun guruh raqami bo'yicha qidiring:
 

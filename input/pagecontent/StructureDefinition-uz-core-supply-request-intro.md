@@ -129,7 +129,7 @@ How the hospital uses the group number:
 - Give every request in the set the same group number, next to each request's own request number.
 - Use a new group number for each new set, and never reuse an old one.
 - Put your hospital in `identifier.assigner`.
-- If you need one more component for the same operation later, give the new request the same group number.
+- Once the requests are sent, the group is closed. If you need one more component for the same operation later, send a new request with a new group number.
 
 The group number is shared, so it can't pick out a single request. To find, update or link to one request, use its request number. To see the whole group, search by the group number:
 
