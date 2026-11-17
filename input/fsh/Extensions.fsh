@@ -222,7 +222,7 @@ Context: SupplyDelivery
 Extension: SupplyRequestGroupIdentifier
 Id: supplyrequest-group-identifier
 Title: "Group identifier"
-Description: "A shared identifier common to multiple independent supply requests that were activated or authorized more or less simultaneously by a single author. The same identifier on each request ties those requests together. Requests in the same group are generally treated independently when their state changes or they are maintained after creation."
+Description: "A shared identifier common to multiple independent supply requests that were activated or authorized more or less simultaneously by a single author. The same identifier on each request ties those requests together. Requests in the same group are generally treated independently when their state changes or they are maintained after creation. FHIR R5 SupplyRequest has no element for this: the extension pre-adopts SupplyRequest.groupIdentifier from the HL7 Orders and Observations incubator, until an official cross-version extension is published."
 Context: SupplyRequest
 * ^experimental = true
 * ^date = "2026-11-17"
