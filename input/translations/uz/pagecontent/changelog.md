@@ -87,6 +87,8 @@ BloodProductInventoryItem CSV papkasi nomining oxiridagi yangi qator belgisi oli
 
 UZ Core profillaridagi Device ga barcha havolalar endi [UZ Core Device](StructureDefinition-uz-core-device.html) ga yo'naltirilgan: Observation, Procedure, Condition, AdverseEvent, Composition, QuestionnaireResponse, Group, MedicationAdministration, MedicationDispense, InventoryItem, SupplyRequest va SupplyDelivery.
 
+Har bir tildagi resursning JSON nusxasi endi boshqa tillarni paketdagidek `translation` kengaytmalarida saqlaydi; avval ingliz, rus va o'zbek sahifalaridagi JSON'da ular olib tashlangan edi.
+
 #### Buzuvchi o'zgarishlar
 
 So'rov resurs turlari va ishtirokchi resurs turi supplementlari, `https://terminology.dhp.uz/fhir/core/CodeSystem/request-resource-types-cs` va `https://terminology.dhp.uz/fhir/core/CodeSystem/participant-resource-type-cs`, olib tashlandi. Ular FHIR turlari supplementi bilan bir xil `http://hl7.org/fhir/fhir-types` kodlarini tarjima qilardi, shuning uchun bu kodlarda ikkitadan ruscha va o'zbekcha belgilash bor edi. [So'rov resurs turlari](ValueSet-request-resource-types-vs.html) va [Resurs turlari](ValueSet-resource-type-vs.html) endi [FHIR turlari supplementi](CodeSystem-fhir-types-cs.html)dan foydalanadi. Supplementlarni URL bo'yicha yuklaydigan tizimlar `https://terminology.dhp.uz/fhir/core/CodeSystem/fhir-types-cs`ga o'tadi.
