@@ -118,6 +118,8 @@ ValueSet 'http://hl7.org/fhir/ValueSet/concept-property-type|5.0.0' not found
 %The codes 252 and 326 are both mapped to {#} as 'equivalent', which means that they have the same meaning%
 %The codes 255 and 800 are both mapped to [anti'Xa'U] as 'equivalent', which means that they have the same meaning%
 %The codes 26 and 570 are both mapped to ug/mL as 'equivalent', which means that they have the same meaning%
+%The codes 265 and 542 are both mapped to U as 'equivalent', which means that they have the same meaning%
+%The codes 270 and 383 are both mapped to U/mL as 'equivalent', which means that they have the same meaning%
 %The codes 273 and 660 are both mapped to [D'ag'U] as 'equivalent', which means that they have the same meaning%
 %The codes 279 and 266 are both mapped to [ELU] as 'equivalent', which means that they have the same meaning%
 %The codes 295 and 404 are both mapped to mg as 'equivalent', which means that they have the same meaning%

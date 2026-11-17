@@ -291,8 +291,8 @@ Description: "Maps local UZ unit codes to UCUM standards."
 
 * group.element[+].code = #275
 * group.element[=].display = "yarim yuqumli doza birligi"
-* group.element[=].target[+].code = #"[CCID_50]"
-* group.element[=].target[=].relationship = #equivalent
+* group.element[=].target[+].code = #"[EID_50]"
+* group.element[=].target[=].relationship = #source-is-broader-than-target
 
 * group.element[+].code = #327
 * group.element[=].display = "yarim patologik oʻzgarishlarning doza birliklari"
@@ -321,7 +321,7 @@ Description: "Maps local UZ unit codes to UCUM standards."
 
 * group.element[+].code = #270
 * group.element[=].display = "millilitrda biologik faollikning taʼsir birligi"
-* group.element[=].target[+].code = #"[arb'U]/mL"
+* group.element[=].target[+].code = #"U/mL"
 * group.element[=].target[=].relationship = #equivalent
 
 * group.element[+].code = #269
@@ -456,12 +456,12 @@ infektsion dozasi"
 
 * group.element[+].code = #542
 * group.element[=].display = "ЕД"
-* group.element[=].target[+].code = #"[arb'U]"
+* group.element[=].target[+].code = #U
 * group.element[=].target[=].relationship = #equivalent
 
 * group.element[+].code = #383
 * group.element[=].display = "ЕД на мл"
-* group.element[=].target[+].code = #"[arb'U]/mL"
+* group.element[=].target[+].code = #"U/mL"
 * group.element[=].target[=].relationship = #equivalent
 
 * group.element[+].code = #305

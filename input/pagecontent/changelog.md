@@ -64,6 +64,8 @@ The [Procedure example](Procedure-example-procedure.html) now points at an [outp
 
 Titles and descriptions of code systems and value sets now follow the naming pattern in the [modelling guidelines](https://github.com/uzinfocom-org/digital-health-ig/blob/main/modelling-guidelines.md): a supplement is `[Concept] translations`, a value set is `[Concept]`, and titles no longer carry words such as "CodeSystem" or "ValueSet". Canonical URLs, ids and codes are unchanged.
 
+[Unit of measurement map](ConceptMap-unit-of-measurement-cm.html) maps `270` unit of biological activity per millilitre to `U/mL` instead of `[arb'U]/mL`, and `275` semi-infectious dose unit is broader than `[EID_50]` instead of equivalent to `[CCID_50]`.
+
 [UZ Core Medication](StructureDefinition-uz-core-medication.html) no longer requires an `identifier`. Each Medication must have an identifier or a code (invariant `uzcore-med-1`), so a medicine prescribed by its INN, as in DMED e-prescriptions, can be sent with only its INN or ATC code before the pharmacy names the product.
 
 [UZ Core MedicationRequest](StructureDefinition-uz-core-medicationrequest.html) binds `statusReason` as extensible instead of required.

@@ -64,6 +64,8 @@ ICCC-3 и WHO ICHI теперь требуют указания версии с�
 
 Заголовки и описания систем кодов и наборов значений теперь следуют шаблону именования из [руководства по моделированию](https://github.com/uzinfocom-org/digital-health-ig/blob/main/modelling-guidelines.md): supplement называется `[Concept] translations`, набор значений - `[Concept]`, а в заголовках больше нет слов вроде "CodeSystem" или "ValueSet". Канонические URL, идентификаторы и коды не изменились.
 
+[Карта единиц измерения](ConceptMap-unit-of-measurement-cm.html): `270` единица действия биологической активности на миллилитр сопоставлена с `U/mL` вместо `[arb'U]/mL`, а `275` единица полуинфицирующей дозы шире `[EID_50]` вместо эквивалентности `[CCID_50]`.
+
 [Коды аллергенов](ValueSet-allergen-codes-vs.html) теперь включают и [МНН лекарств](CodeSystem-inn-medication-name-cs.html), поэтому аллергию на лекарство можно указать по действующему веществу. [Пример аллергии на анальгетик](AllergyIntolerance-example-analgesic-allergy.html) теперь кодирует парацетамол по МНН.
 
 [Переводы статусов MedicationRequest](CodeSystem-medicationrequest-status-cs.html) теперь называют `ended` по-русски «Окончено» вместо «Завершено», которое совпадало с `completed`.
