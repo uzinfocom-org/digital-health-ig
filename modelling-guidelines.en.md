@@ -255,6 +255,8 @@ Therefore every local code must go through a check: before adding a concept to a
 
 A local code is acceptable only when there is no equivalent standard concept: the standard concept is broader or narrower in meaning, or is missing altogether (for example, national administrative categories). If the standard covers only part of the list, a ValueSet may combine standard and local codes - only the uncovered concepts remain local.
 
+Take each SNOMED CT concept from the hierarchy that fits the element, as shown by the semantic tag in its fully specified name: a product element such as `BiologicallyDerivedProduct.productCode` takes `789265003` "Albumin human only product" `(medicinal product)`, not the substance `789261007` "Albumin human" `(substance)`.
+
 ### 5.1 Why a supplement is needed for CodeSystem and ValueSet
 
 When creating national profiles, there is often a need to localise terminologies. Creating a **supplement** to existing HL7 CodeSystems (for example, `condition-clinical` for the Condition profile) allows you to:
