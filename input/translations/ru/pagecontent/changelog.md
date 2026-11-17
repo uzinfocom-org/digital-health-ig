@@ -62,6 +62,8 @@ ICCC-3 и WHO ICHI теперь требуют указания версии с�
 
 [UZ Core Patient](StructureDefinition-uz-core-patient.html) допускает несколько свидетельств о рождении (`birthCertificate` теперь 0..* вместо 0..1) и больше не фиксирует его `use`, поэтому прежнее свидетельство пациента можно передать с `use = old` рядом с действующим с `use = official`.
 
+[UZ Core Procedure](StructureDefinition-uz-core-procedure.html) рекомендует [коды осложнений донации крови](ValueSet-procedure-complication-vs.html) через дополнительную привязку preferred только при `Procedure.code` SNOMED CT `25179006` (забор цельной крови). Коды включают обморок, коллапс, стенокардию и анафилактический шок с узбекскими и русскими переводами. При отсутствии осложнений `complication` не заполняется.
+
 Все ссылки на Device в профилях UZ Core теперь указывают на [UZ Core Device](StructureDefinition-uz-core-device.html): Observation, Procedure, Condition, AdverseEvent, Composition, QuestionnaireResponse, Group, MedicationAdministration, MedicationDispense, InventoryItem, SupplyRequest и SupplyDelivery.
 
 Заголовки и описания систем кодов и наборов значений теперь следуют шаблону именования из [руководства по моделированию](https://github.com/uzinfocom-org/digital-health-ig/blob/main/modelling-guidelines.md): supplement называется `[Concept] translations`, набор значений - `[Concept]`, а в заголовках больше нет слов вроде "CodeSystem" или "ValueSet". Канонические URL, идентификаторы и коды не изменились.
