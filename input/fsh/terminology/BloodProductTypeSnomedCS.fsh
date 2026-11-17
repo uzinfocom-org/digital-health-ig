@@ -70,8 +70,8 @@ Description: "Blood product type supplement with translations in Uzbek and Russi
   * ^designation[+].language = #uz
   * ^designation[=].value = "Leykotsitlar miqdori kamaytirilgan inson aferez trombotsitlari"
 
-* #789261007
+* #789265003
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Альбумин (человек)"
+  * ^designation[=].value = "Альбумин человека"
   * ^designation[+].language = #uz
-  * ^designation[=].value = "Albumin (inson)"
+  * ^designation[=].value = "Inson albumini"

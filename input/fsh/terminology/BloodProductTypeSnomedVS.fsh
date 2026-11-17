@@ -18,4 +18,4 @@ Description: "Blood product types"
 * include $sct#256375003
 * include $sct#256398006
 * include $sct#126260007
-* include $sct#789261007
+* include $sct#789265003

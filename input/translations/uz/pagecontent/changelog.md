@@ -20,7 +20,7 @@ Endi har bir profil sahifasida kirish qismi va Tez boshlash bo'limi bor. Ular [U
 
 [Qidiruv](search.html) sahifa sarlavhasidagi yangi maydondan ochiladi. U resurslarni sarlavhasi, nomi, URL yoki tavsifi bo'yicha, shuningdek kod tizimlari, qiymatlar to'plamlari va ConceptMaplardagi kodlar, atamalar va moslashtirishlarni ingliz, rus va o'zbek tillarida topadi. Natijalarni resurs turi bo'yicha filtrlash mumkin, shuning uchun yangi kod qo'shishdan oldin u allaqachon bor-yo'qligini tekshirish mumkin.
 
-[Qon mahsuloti turlari](ValueSet-blood-product-type-snomed-vs.html) ga SNOMED CT `789261007` (inson albumini) kodi o'zbek va rus tilidagi nomlari bilan [supplement](CodeSystem-blood-product-type-snomed-cs.html) da qo'shildi.
+[Qon mahsuloti turlari](ValueSet-blood-product-type-snomed-vs.html) ga SNOMED CT `789265003` (inson albumini) kodi o'zbek va rus tilidagi nomlari bilan [supplement](CodeSystem-blood-product-type-snomed-cs.html) da qo'shildi.
 
 [UZ Core BiologicallyDerivedProductDispense](StructureDefinition-uz-core-biologicallyderivedproductdispense.html) biologik mahsulotni bemorning klinik jamoasiga berishni, [berish raqami](NamingSystem-uzb-bdp-dispense-number.html), buyurtma, retsipiyent, mahsulot, ijrochilar va topshirish vaqtini qayd etadi. HL7 berish holati, moslik turi, kelib chiqish munosabati va ijrochi funksiyasi kodlarining o'zbekcha va ruscha tarjimalari qo'shildi. Profil minimal, berish va qaytarish namunalari hamda Tez boshlash bo'limini o'z ichiga oladi.
 

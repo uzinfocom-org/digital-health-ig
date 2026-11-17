@@ -42,7 +42,7 @@
 
 [Типы документов Composition](CodeSystem-composition-type-cs.html) дополнены кодом `emdoc-0010-0471` для формы 112 Приказа № 399 - лабораторного анализа на фолиевую кислоту, 25-OH витамин D и витамин B12.
 
-[Типы продуктов крови](ValueSet-blood-product-type-snomed-vs.html) дополнены кодом SNOMED CT `789261007` (альбумин человека) с названиями на узбекском и русском в [supplement](CodeSystem-blood-product-type-snomed-cs.html).
+[Типы продуктов крови](ValueSet-blood-product-type-snomed-vs.html) дополнены кодом SNOMED CT `789265003` (альбумин человека) с названиями на узбекском и русском в [supplement](CodeSystem-blood-product-type-snomed-cs.html).
 
 #### Изменено
 
