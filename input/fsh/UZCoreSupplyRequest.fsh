@@ -18,7 +18,8 @@ Description: "Uzbekistan Core SupplyRequest profile, used to represent requests 
 
 * identifier contains
     request 0..1 MS and
-    contract 0..1 MS
+    contract 0..1 MS and
+    group 0..1 MS
 
 * identifier[request].system 1..1 MS
 * identifier[request].system = $supply-request-number
@@ -27,6 +28,10 @@ Description: "Uzbekistan Core SupplyRequest profile, used to represent requests 
 * identifier[contract].system 1..1 MS
 * identifier[contract].system = $supply-contract-number
 * identifier[contract] ^short = "Number of the supply agreement between the hospital and the blood service"
+
+* identifier[group].system 1..1 MS
+* identifier[group].system = $supply-group-number
+* identifier[group] ^short = "Group number shared by supply requests placed together"
 
 * basedOn MS
 * basedOn only Reference(UZCoreServiceRequest or UZCoreSupplyRequest)
@@ -135,4 +140,84 @@ Usage: #example
 
 * reason.concept = $sct#87522002 "Iron deficiency anemia"
 
+* deliverTo = Reference(Organization/tashkent-hospital)
+
+Instance: example-supply-request-group-red-cells
+InstanceOf: UZCoreSupplyRequest
+Title: "Example UZ Core SupplyRequest - Grouped Red Cells"
+Description: "Red cells for an operation the next morning. A SupplyRequest holds one item, so red cells and plasma are sent as two requests linked by group number GR-0001 and handled as one order."
+Usage: #example
+* language = #uz
+
+* identifier[request].value = "CK-0004"
+* identifier[contract].value = "CK-0001"
+* identifier[group].value = "GR-0001"
+* identifier[group].assigner = Reference(Organization/tashkent-hospital)
+
+* basedOn = Reference(ServiceRequest/transfusion-order-red-cells)
+
+* status = #active
+* category = request-type-cs#req-type-0001-0002 "Shaxsiy"
+* priority = #urgent
+
+* deliverFor = Reference(Patient/example-salim)
+
+* item = $sct#431069006
+
+* quantity.value = 4
+* quantity.unit = "units"
+* quantity.system = "http://unitsofmeasure.org"
+* quantity.code = #1
+
+* parameter[bloodGroup].code = $sct#63915006
+* parameter[bloodGroup].valueCodeableConcept = $sct#112144000
+* parameter[bloodRh].code = $sct#115678000
+* parameter[bloodRh].valueCodeableConcept = $sct#165747007
+
+* authoredOn = "2025-09-03T07:40:00+05:00"
+* occurrenceDateTime = "2025-09-04T09:00:00+05:00"
+
+* requester = Reference(Practitioner/example-practitioner)
+* supplier = Reference(Organization/andijan-station)
+* reason.concept = $sct#74474003 "Gastrointestinal hemorrhage"
+* deliverTo = Reference(Organization/tashkent-hospital)
+
+Instance: example-supply-request-group-plasma
+InstanceOf: UZCoreSupplyRequest
+Title: "Example UZ Core SupplyRequest - Grouped Fresh Frozen Plasma"
+Description: "Fresh frozen plasma for the same operation. Shares group number GR-0001 with the red cell request, so both are handled as one order."
+Usage: #example
+* language = #uz
+
+* identifier[request].value = "CK-0005"
+* identifier[contract].value = "CK-0001"
+* identifier[group].value = "GR-0001"
+* identifier[group].assigner = Reference(Organization/tashkent-hospital)
+
+* basedOn = Reference(ServiceRequest/transfusion-order-plasma)
+
+* status = #active
+* category = request-type-cs#req-type-0001-0002 "Shaxsiy"
+* priority = #urgent
+
+* deliverFor = Reference(Patient/example-salim)
+
+* item = $sct#346447007
+
+* quantity.value = 2
+* quantity.unit = "units"
+* quantity.system = "http://unitsofmeasure.org"
+* quantity.code = #1
+
+* parameter[bloodGroup].code = $sct#63915006
+* parameter[bloodGroup].valueCodeableConcept = $sct#112144000
+* parameter[bloodRh].code = $sct#115678000
+* parameter[bloodRh].valueCodeableConcept = $sct#165747007
+
+* authoredOn = "2025-09-03T07:40:00+05:00"
+* occurrenceDateTime = "2025-09-04T09:00:00+05:00"
+
+* requester = Reference(Practitioner/example-practitioner)
+* supplier = Reference(Organization/andijan-station)
+* reason.concept = $sct#74474003 "Gastrointestinal hemorrhage"
 * deliverTo = Reference(Organization/tashkent-hospital)

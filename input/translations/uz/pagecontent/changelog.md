@@ -40,6 +40,8 @@ Endi har bir profil sahifasida kirish qismi va Tez boshlash bo'limi bor. Ular [U
 
 [UZ Core SupplyDelivery](StructureDefinition-uz-core-supply-delivery.html) endi buyumlar jo'natilgan joyni, masalan omborlar o'rtasidagi ko'chirishda jo'natuvchi omborni, yangi [Deliver from](StructureDefinition-supplydelivery-deliver-from.html) kengaytmasida qayd etadi. FHIR bazaviy SupplyDelivery resursida buning uchun element yo'q; kengaytma yetkazib berish tomonidagi `SupplyRequest.deliverFrom` ga mos keladi. Uni [omborlar o'rtasidagi ko'chirish misoli](SupplyDelivery-example-warehouse-transfer-supply-delivery.html) ko'rsatadi. Profil sahifasida kirish qismi va "Tez boshlash" bo'limi bor.
 
+[UZ Core SupplyRequest](StructureDefinition-uz-core-supply-request.html) ga `group` identifikator slaysi qo'shildi - birga yuborilgan so'rovlar uchun umumiy [ta'minot so'rovlari guruhi raqami](NamingSystem-uzb-supply-group-number.html), yetkazib beruvchi ularni bitta buyurtma sifatida ko'rib chiqishi uchun. Ikki misol bitta operatsiya uchun birga buyurtma qilingan eritrotsitar massa va yangi muzlatilgan plazmani ko'rsatadi.
+
 #### O'zgartirildi
 
 [Allergen kodlari](ValueSet-allergen-codes-vs.html) endi [dorilarning XPN nomlarini](CodeSystem-inn-medication-name-cs.html) ham o'z ichiga oladi, shuning uchun dori allergiyasini ta'sir qiluvchi modda bo'yicha ko'rsatish mumkin. [Analgetikka allergiya namunasi](AllergyIntolerance-example-analgesic-allergy.html) endi paratsetamolni XPN bo'yicha kodlaydi.
