@@ -80,6 +80,8 @@ Examples no longer set a display on HL7 codes where it differed from the HL7 ter
 
 [UZ Core Procedure](StructureDefinition-uz-core-procedure.html) recommends [blood donation complication codes](ValueSet-procedure-complication-vs.html) through an additional preferred binding only when `Procedure.code` is SNOMED CT `25179006` (Whole blood unit collection). The codes cover fainting, collapse, angina and anaphylactic shock, with Uzbek and Russian translations. If there are no complications, omit `complication`.
 
+Each language's JSON copy of a resource now keeps the other languages as `translation` extensions, as the package does; before, the JSON linked from the English, Russian and Uzbek pages had them removed.
+
 #### Breaking changes
 
 The request resource types and participant resource type supplements, `https://terminology.dhp.uz/fhir/core/CodeSystem/request-resource-types-cs` and `https://terminology.dhp.uz/fhir/core/CodeSystem/participant-resource-type-cs`, are removed. They translated the same `http://hl7.org/fhir/fhir-types` codes as the FHIR types supplement, so those codes had two Russian and two Uzbek designations. [Request resource types](ValueSet-request-resource-types-vs.html) and [Resource types](ValueSet-resource-type-vs.html) now use the [FHIR types supplement](CodeSystem-fhir-types-cs.html). Systems that load supplements by URL switch to `https://terminology.dhp.uz/fhir/core/CodeSystem/fhir-types-cs`.
