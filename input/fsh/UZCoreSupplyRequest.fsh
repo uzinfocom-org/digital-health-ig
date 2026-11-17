@@ -18,8 +18,7 @@ Description: "Uzbekistan Core SupplyRequest profile, used to represent requests 
 
 * identifier contains
     request 0..1 MS and
-    contract 0..1 MS and
-    group 0..1 MS
+    contract 0..1 MS
 
 * identifier[request].system 1..1 MS
 * identifier[request].system = $supply-request-number
@@ -29,9 +28,11 @@ Description: "Uzbekistan Core SupplyRequest profile, used to represent requests 
 * identifier[contract].system = $supply-contract-number
 * identifier[contract] ^short = "Number of the supply agreement between the hospital and the blood service"
 
-* identifier[group].system 1..1 MS
-* identifier[group].system = $supply-group-number
-* identifier[group] ^short = "Group number shared by supply requests placed together"
+* extension contains SupplyRequestGroupIdentifier named groupIdentifier 0..1 MS
+* extension[groupIdentifier] ^short = "Group number shared by supply requests placed together"
+* extension[groupIdentifier].valueIdentifier.system 1..1 MS
+* extension[groupIdentifier].valueIdentifier.system = $supply-group-number
+* extension[groupIdentifier].valueIdentifier.value 1..1 MS
 
 * basedOn MS
 * basedOn only Reference(UZCoreServiceRequest or UZCoreSupplyRequest)
@@ -151,8 +152,8 @@ Usage: #example
 
 * identifier[request].value = "CK-0004"
 * identifier[contract].value = "CK-0001"
-* identifier[group].value = "GR-0001"
-* identifier[group].assigner = Reference(Organization/tashkent-hospital)
+* extension[groupIdentifier].valueIdentifier.value = "GR-0001"
+* extension[groupIdentifier].valueIdentifier.assigner = Reference(Organization/tashkent-hospital)
 
 * basedOn = Reference(ServiceRequest/transfusion-order-red-cells)
 
@@ -191,8 +192,8 @@ Usage: #example
 
 * identifier[request].value = "CK-0005"
 * identifier[contract].value = "CK-0001"
-* identifier[group].value = "GR-0001"
-* identifier[group].assigner = Reference(Organization/tashkent-hospital)
+* extension[groupIdentifier].valueIdentifier.value = "GR-0001"
+* extension[groupIdentifier].valueIdentifier.assigner = Reference(Organization/tashkent-hospital)
 
 * basedOn = Reference(ServiceRequest/transfusion-order-plasma)
 

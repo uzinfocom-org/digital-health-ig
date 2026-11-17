@@ -44,7 +44,7 @@ Every profile page now has a narrative intro and a Quick Start. New ones were ad
 
 [UZ Core SupplyDelivery](StructureDefinition-uz-core-supply-delivery.html) records the location the items were dispatched from, such as the sending warehouse in a transfer between warehouses, in the new [Deliver from](StructureDefinition-supplydelivery-deliver-from.html) extension. Base FHIR SupplyDelivery has no element for it; the extension is the delivery counterpart of `SupplyRequest.deliverFrom`. The [warehouse transfer example](SupplyDelivery-example-warehouse-transfer-supply-delivery.html) shows it. The profile page has a narrative intro and a Quick Start.
 
-[UZ Core SupplyRequest](StructureDefinition-uz-core-supply-request.html) adds a `group` identifier slice, a [supply group number](NamingSystem-uzb-supply-group-number.html) shared by requests placed together, so that the supplier handles them as one order. Two examples show red blood cells and fresh frozen plasma ordered together for the same operation.
+[UZ Core SupplyRequest](StructureDefinition-uz-core-supply-request.html) adds a [group identifier](StructureDefinition-supplyrequest-group-identifier.html) extension carrying a [supply group number](NamingSystem-uzb-supply-group-number.html) shared by requests placed together, so that the supplier handles them as one order. FHIR R5 has no element for this; the extension pre-adopts `SupplyRequest.groupIdentifier` from the HL7 Orders and Observations incubator. The new [group identifier search parameter](SearchParameter-uz-core-supplyrequest-group-identifier.html), `group-identifier`, finds all requests in a group. Two examples show red blood cells and fresh frozen plasma ordered together for the same operation.
 
 #### Changed
 
