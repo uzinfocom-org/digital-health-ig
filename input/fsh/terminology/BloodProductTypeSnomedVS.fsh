@@ -18,3 +18,4 @@ Description: "Blood product types coded in SNOMED CT, including leukocyte reduce
 * include $sct#256375003
 * include $sct#256398006
 * include $sct#126260007
+* include $sct#52454007
