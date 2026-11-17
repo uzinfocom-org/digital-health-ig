@@ -62,7 +62,7 @@ BloodProductInventoryItem CSV papkasi nomining oxiridagi yangi qator belgisi oli
 
 [UZ Core Patient](StructureDefinition-uz-core-patient.html) endi bir nechta tug'ilganlik haqidagi guvohnomaga ruxsat beradi (`birthCertificate` endi 0..1 o'rniga 0..*) va uning `use` qiymatini qat'iy belgilamaydi, shuning uchun bemorning almashtirilgan guvohnomasini `use = old` bilan, amaldagisini esa `use = official` bilan birga yuborish mumkin.
 
-[UZ Core Procedure](StructureDefinition-uz-core-procedure.html) faqat `Procedure.code` SNOMED CT `25179006` (butun qon olish) bo'lganda qo'shimcha preferred bog'lanish orqali [qon donorligi asoratlari kodlarini](ValueSet-procedure-complication-vs.html) tavsiya qiladi. Kodlar hushdan ketish, kollaps, stenokardiya xuruji va anafilaktik shokni o'zbekcha va ruscha tarjimalari bilan qamrab oladi. Kollaps uchun `27942005` (Shock) o'rniga `271787007` ishlatiladi. Asoratlar bo'lmasa, `complication` to'ldirilmaydi.
+[UZ Core Procedure](StructureDefinition-uz-core-procedure.html) faqat `Procedure.code` SNOMED CT `25179006` (butun qon olish) bo'lganda qo'shimcha preferred bog'lanish orqali [qon donorligi asoratlari kodlarini](ValueSet-procedure-complication-vs.html) tavsiya qiladi. Kodlar hushdan ketish, kollaps, stenokardiya va anafilaktik shokni o'zbekcha va ruscha tarjimalari bilan qamrab oladi. Asoratlar bo'lmasa, `complication` to'ldirilmaydi.
 
 UZ Core profillaridagi Device ga barcha havolalar endi [UZ Core Device](StructureDefinition-uz-core-device.html) ga yo'naltirilgan: Observation, Procedure, Condition, AdverseEvent, Composition, QuestionnaireResponse, Group, MedicationAdministration, MedicationDispense, InventoryItem, SupplyRequest va SupplyDelivery.
 

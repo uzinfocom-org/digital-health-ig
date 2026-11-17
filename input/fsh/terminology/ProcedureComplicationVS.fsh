@@ -1,7 +1,7 @@
 ValueSet: ProcedureComplicationVS
 Id: procedure-complication-vs
 Title: "Blood donation complication"
-Description: "Complications of whole blood donation"
+Description: "Blood donation complications"
 * ^url = "https://terminology.dhp.uz/fhir/core/ValueSet/procedure-complication-vs"
 * ^status = #draft
 * ^experimental = true
