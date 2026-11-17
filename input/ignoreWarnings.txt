@@ -253,11 +253,12 @@ ValueSet 'http://hl7.org/fhir/ValueSet/concept-property-type|5.0.0' not found
 # 416098002 |Drug allergy| while the local allergen list is flat.
 %The code aller-0001-00006 is mapped to 416098002 as 'equivalent', and aller-0010-00340 is mapped to 416098002 as 'source-is-narrower-than-target', which means that aller-0001-00006 should subsume aller-0010-00340, but it does not%
 %The code aller-0001-00006 is mapped to 416098002 as 'equivalent', and aller-0010-00342 is mapped to 416098002 as 'source-is-narrower-than-target', which means that aller-0001-00006 should subsume aller-0010-00342, but it does not%
-# dmed-measure-unit-cs is DMED's flat unit registry: 'ИД 50' is broader than [EID_50] while 'ЭИД 50' is its
+# dmed-measure-unit-cs and unit-of-measurement-cs are flat unit registries: 'ИД 50' (and 275) is broader than [EID_50] while 'ЭИД 50' is its
 # equivalent, and the generic antigen units are broader than the D-antigen unit 'DU'.
 %The code 492 is mapped to [D'ag'U] as 'equivalent', and 58 is mapped to [D'ag'U] as 'source-is-broader-than-target', which means that 58 should subsume 492, but it does not%
 %The code 492 is mapped to [D'ag'U] as 'equivalent', and 74 is mapped to [D'ag'U] as 'source-is-broader-than-target', which means that 74 should subsume 492, but it does not%
 %The code 69 is mapped to [EID_50] as 'equivalent', and 68 is mapped to [EID_50] as 'source-is-broader-than-target', which means that 68 should subsume 69, but it does not%
+%The code 327 is mapped to [EID_50] as 'equivalent', and 275 is mapped to [EID_50] as 'source-is-broader-than-target', which means that 275 should subsume 327, but it does not%
 
 # IG Publisher 3.0.4 warns about any SNOMED CT finding in Observation.code, ignoring the value; R5 allows a finding
 # there with a yes/no value or none. Reported in https://github.com/hapifhir/org.hl7.fhir.core/issues/2870 - remove once resolved.
