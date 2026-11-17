@@ -68,15 +68,7 @@ Description: "Physiotherapy and medical procedure types used in healthcare facil
   * ^property[0].code = #parent
   * ^property[=].valueCode = #proce-0001-00004
 
-* #proce-0001-00010 "Gazli vannalar"
-  * ^designation[0].language = #ru
-  * ^designation[=].value = "Ванны газовые"
-  * ^designation[+].language = #en
-  * ^designation[=].value = "Gas baths"
-  * ^property[0].code = #parent
-  * ^property[=].valueCode = #proce-0001-00004
-
-* #proce-0001-00011 "Gazli vannalar (kislorodli, karbonat angidridli, azotli)"
+* #proce-0001-00010 "Gazli vannalar (kislorodli, karbonat angidridli, azotli)"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Ванны газовые (кислородные, углекислые, азотные)"
   * ^designation[+].language = #en
@@ -84,39 +76,39 @@ Description: "Physiotherapy and medical procedure types used in healthcare facil
   * ^property[0].code = #parent
   * ^property[=].valueCode = #proce-0001-00004
 
-* #proce-0001-00012 "Xushbo‘y moddali vannalar"
+* #proce-0001-00011 "Xushbo‘y moddali vannalar"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Ванны ароматические"
   * ^designation[+].language = #en
   * ^designation[=].value = "Aromatic baths"
 
-* #proce-0001-00013 "Kontrast vannalar"
+* #proce-0001-00012 "Kontrast vannalar"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Ванны контрастные"
   * ^designation[+].language = #en
   * ^designation[=].value = "Contrast baths"
 
-* #proce-0001-00014 "Girdobli vannalar"
+* #proce-0001-00013 "Girdobli vannalar"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Ванны вихревые"
   * ^designation[+].language = #en
   * ^designation[=].value = "Whirlpool baths"
 
-* #proce-0001-00015 "Quruq havo vannalari"
+* #proce-0001-00014 "Quruq havo vannalari"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Ванны суховоздушные"
   * ^designation[+].language = #en
   * ^designation[=].value = "Dry air baths"
   * ^property[0].code = #parent
-  * ^property[=].valueCode = #proce-0001-00059
+  * ^property[=].valueCode = #proce-0001-00058
 
-* #proce-0001-00016 "Shifobaxsh balchiqli vannalar"
+* #proce-0001-00015 "Shifobaxsh balchiqli vannalar"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Грязевые ванны"
   * ^designation[+].language = #en
   * ^designation[=].value = "Therapeutic mud baths"
 
-* #proce-0001-00017 "Havo pufakchali (marvaridli) vannalar"
+* #proce-0001-00016 "Havo pufakchali (marvaridli) vannalar"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Ванны воздушно-пузырьковые (жемчужные)"
   * ^designation[+].language = #en
@@ -124,13 +116,13 @@ Description: "Physiotherapy and medical procedure types used in healthcare facil
   * ^property[0].code = #parent
   * ^property[=].valueCode = #proce-0001-00004
 
-* #proce-0001-00018 "Suv ostida ichakni yuvish vannasi"
+* #proce-0001-00017 "Suv ostida ichakni yuvish vannasi"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Ванна субаквальная кишечная"
   * ^designation[+].language = #en
   * ^designation[=].value = "Subaquatic intestinal lavage bath"
 
-* #proce-0001-00019 "Yod-bromli vanna"
+* #proce-0001-00018 "Yod-bromli vanna"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Йодобромная ванна"
   * ^designation[+].language = #en
@@ -138,21 +130,21 @@ Description: "Physiotherapy and medical procedure types used in healthcare facil
   * ^property[0].code = #parent
   * ^property[=].valueCode = #proce-0001-00004
 
-* #proce-0001-00020 "Qum vannalari"
+* #proce-0001-00019 "Qum vannalari"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Песочные ванны"
   * ^designation[+].language = #en
   * ^designation[=].value = "Sand baths"
   * ^property[0].code = #parent
-  * ^property[=].valueCode = #proce-0001-00059
+  * ^property[=].valueCode = #proce-0001-00058
 
-* #proce-0001-00021 "Davolovchi dush"
+* #proce-0001-00020 "Davolovchi dush"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Душ лечебный"
   * ^designation[+].language = #en
   * ^designation[=].value = "Therapeutic shower"
 
-* #proce-0001-00022 "Suv osti dush-massaji"
+* #proce-0001-00021 "Suv osti dush-massaji"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Подводный душ-массаж"
   * ^designation[+].language = #en
@@ -160,329 +152,329 @@ Description: "Physiotherapy and medical procedure types used in healthcare facil
   * ^property[0].code = #parent
   * ^property[=].valueCode = #proce-0001-00004
 
-* #proce-0001-00023 "Suv ostida umurtqa pog‘onasini tortish"
+* #proce-0001-00022 "Suv ostida umurtqa pog‘onasini tortish"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Подводное вытяжение позвоночника"
   * ^designation[+].language = #en
   * ^designation[=].value = "Underwater spinal traction"
 
-* #proce-0001-00024 "Galvanizatsiya"
+* #proce-0001-00023 "Galvanizatsiya"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Гальванизация"
   * ^designation[+].language = #en
   * ^designation[=].value = "Galvanization (Direct current therapy)"
 
-* #proce-0001-00025 "Gelioterapiya (quyosh nuri bilan davolash)"
+* #proce-0001-00024 "Gelioterapiya (quyosh nuri bilan davolash)"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Гелиотерапия"
   * ^designation[+].language = #en
   * ^designation[=].value = "Heliotherapy"
   * ^property[0].code = #parent
-  * ^property[=].valueCode = #proce-0001-00056
+  * ^property[=].valueCode = #proce-0001-00055
 
-* #proce-0001-00026 "Gipoksiterapiya"
+* #proce-0001-00025 "Gipoksiterapiya"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Гипокситерапия"
   * ^designation[+].language = #en
   * ^designation[=].value = "Hypoxic therapy"
 
-* #proce-0001-00027 "Balchiq bilan davolash (peloidoterapiya)"
+* #proce-0001-00026 "Balchiq bilan davolash (peloidoterapiya)"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Грязелечение"
   * ^designation[+].language = #en
   * ^designation[=].value = "Mud therapy (Peloid therapy)"
 
-* #proce-0001-00028 "Galoterapiya (tuz aerozoli bilan davolash)"
+* #proce-0001-00027 "Galoterapiya (tuz aerozoli bilan davolash)"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Галотерапия"
   * ^designation[+].language = #en
   * ^designation[=].value = "Halotherapy"
 
-* #proce-0001-00029 "Galvanobalchiq terapiyasi"
+* #proce-0001-00028 "Galvanobalchiq terapiyasi"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Гальваногрязелечение"
   * ^designation[+].language = #en
   * ^designation[=].value = "Galvanic mud therapy"
 
-* #proce-0001-00030 "Balchiqli induktotermiya"
+* #proce-0001-00029 "Balchiqli induktotermiya"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Грязеиндуктотермия"
   * ^designation[+].language = #en
   * ^designation[=].value = "Mud inductothermy"
 
-* #proce-0001-00031 "Pelofonoterapiya"
+* #proce-0001-00030 "Pelofonoterapiya"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Пелофонотерапия"
   * ^designation[+].language = #en
   * ^designation[=].value = "Pelophonotherapy (Ultrasound-assisted peloid therapy)"
 
-* #proce-0001-00032 "Darsonvalizatsiya"
+* #proce-0001-00031 "Darsonvalizatsiya"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Дарсонвализация"
   * ^designation[+].language = #en
   * ^designation[=].value = "Darsonval therapy"
 
-* #proce-0001-00033 "Detsimetr to‘lqinli terapiya (DMV-terapiya)"
+* #proce-0001-00032 "Detsimetr to‘lqinli terapiya (DMV-terapiya)"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Дециметровая терапия (ДМВ-терапия)"
   * ^designation[+].language = #en
   * ^designation[=].value = "Decimeter wave therapy (DMW therapy)"
   * ^property[0].code = #parent
-  * ^property[=].valueCode = #proce-0001-00055
+  * ^property[=].valueCode = #proce-0001-00054
 
-* #proce-0001-00034 "Diadinamik toklar bilan davolash (DDT)"
+* #proce-0001-00033 "Diadinamik toklar bilan davolash (DDT)"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Диадинамотерапия (ДДТ)"
   * ^designation[+].language = #en
   * ^designation[=].value = "Diadynamic current therapy"
 
-* #proce-0001-00035 "Duodenal zondlash"
+* #proce-0001-00034 "Duodenal zondlash"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Дуоденальное зондирование"
   * ^designation[+].language = #en
   * ^designation[=].value = "Duodenal intubation"
 
-* #proce-0001-00036 "Induktotermiya"
+* #proce-0001-00035 "Induktotermiya"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Индуктотермия"
   * ^designation[+].language = #en
   * ^designation[=].value = "Inductothermy"
 
-* #proce-0001-00037 "Ingalyatsiya (aerozolterapiya)"
+* #proce-0001-00036 "Ingalyatsiya (aerozolterapiya)"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Ингаляция (аэрозольтерапия)"
   * ^designation[+].language = #en
   * ^designation[=].value = "Inhalation therapy (Aerosol therapy)"
 
-* #proce-0001-00038 "Infraqizil nurlar bilan nurlantirish"
+* #proce-0001-00037 "Infraqizil nurlar bilan nurlantirish"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Инфракрасное облучение"
   * ^designation[+].language = #en
   * ^designation[=].value = "Infrared irradiation"
 
-* #proce-0001-00039 "Interferens terapiya"
+* #proce-0001-00038 "Interferens terapiya"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Интерференцтерапия"
   * ^designation[+].language = #en
   * ^designation[=].value = "Interferential current therapy"
 
-* #proce-0001-00040 "Kislorod chodirida kislorod terapiyasi"
+* #proce-0001-00039 "Kislorod chodirida kislorod terapiyasi"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Кислородотерапия в палатке"
   * ^designation[+].language = #en
   * ^designation[=].value = "Oxygen tent therapy"
   * ^property[0].code = #parent
-  * ^property[=].valueCode = #proce-0001-00052
+  * ^property[=].valueCode = #proce-0001-00051
 
-* #proce-0001-00041 "O‘ta yuqori chastotali millimetr to‘lqinli terapiya (KVCh-terapiya)"
+* #proce-0001-00040 "O‘ta yuqori chastotali millimetr to‘lqinli terapiya (KVCh-terapiya)"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Крайне высокочастотная терапия (КВЧ-терапия)"
   * ^designation[+].language = #en
   * ^designation[=].value = "Extremely high frequency therapy (EHF therapy)"
 
-* #proce-0001-00042 "Lazer terapiyasi"
+* #proce-0001-00041 "Lazer terapiyasi"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Лазеротерапия"
   * ^designation[+].language = #en
   * ^designation[=].value = "Laser therapy"
 
-* #proce-0001-00043 "Lazeropunktura"
+* #proce-0001-00042 "Lazeropunktura"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Лазеропунктура"
   * ^designation[+].language = #en
   * ^designation[=].value = "Laser acupuncture"
 
-* #proce-0001-00044 "Davolovchi jismoniy tarbiya (DJT)"
+* #proce-0001-00043 "Davolovchi jismoniy tarbiya (DJT)"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Лечебная физическая культура (ЛФК)"
   * ^designation[+].language = #en
   * ^designation[=].value = "Therapeutic exercise"
 
-* #proce-0001-00045 "Magnitoterapiya"
+* #proce-0001-00044 "Magnitoterapiya"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Магнитотерапия"
   * ^designation[+].language = #en
   * ^designation[=].value = "Magnetotherapy"
 
-* #proce-0001-00046 "Magnitopunktura"
+* #proce-0001-00045 "Magnitopunktura"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Магнитопунктура"
   * ^designation[+].language = #en
   * ^designation[=].value = "Magnetopuncture"
 
-* #proce-0001-00047 "Davolovchi massaj"
+* #proce-0001-00046 "Davolovchi massaj"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Массаж лечебный"
   * ^designation[+].language = #en
   * ^designation[=].value = "Therapeutic massage"
 
-* #proce-0001-00048 "Kriomassaj"
+* #proce-0001-00047 "Kriomassaj"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Криомассаж"
   * ^designation[+].language = #en
   * ^designation[=].value = "Cryomassage"
   * ^property[0].code = #parent
-  * ^property[=].valueCode = #proce-0001-00047
+  * ^property[=].valueCode = #proce-0001-00046
 
-* #proce-0001-00049 "Vakuumli massaj"
+* #proce-0001-00048 "Vakuumli massaj"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Вакуумный массаж"
   * ^designation[+].language = #en
   * ^designation[=].value = "Vacuum massage"
   * ^property[0].code = #parent
-  * ^property[=].valueCode = #proce-0001-00047
+  * ^property[=].valueCode = #proce-0001-00046
 
-* #proce-0001-00050 "Ultrabinafsha nurlanish uchun biodozani aniqlash"
+* #proce-0001-00049 "Ultrabinafsha nurlanish uchun biodozani aniqlash"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Определение биодозы для УФ-облучения"
   * ^designation[+].language = #en
   * ^designation[=].value = "Determination of ultraviolet irradiation biodose"
 
-* #proce-0001-00051 "Ozokerit bilan davolash"
+* #proce-0001-00050 "Ozokerit bilan davolash"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Озокеритолечение"
   * ^designation[+].language = #en
   * ^designation[=].value = "Ozokerite therapy"
 
-* #proce-0001-00052 "Kislorod terapiyasi (oksigenoterapiya)"
+* #proce-0001-00051 "Kislorod terapiyasi (oksigenoterapiya)"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Оксигенотерапия"
   * ^designation[+].language = #en
   * ^designation[=].value = "Oxygen therapy"
 
-* #proce-0001-00053 "Parafin bilan davolash"
+* #proce-0001-00052 "Parafin bilan davolash"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Парафинолечение"
   * ^designation[+].language = #en
   * ^designation[=].value = "Paraffin wax therapy"
 
-* #proce-0001-00054 "Santimetr to‘lqinli terapiya (SMV-terapiya)"
+* #proce-0001-00053 "Santimetr to‘lqinli terapiya (SMV-terapiya)"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Сантиметроволновая терапия (СМВ-терапия)"
   * ^designation[+].language = #en
   * ^designation[=].value = "Centimeter wave therapy"
   * ^property[0].code = #parent
-  * ^property[=].valueCode = #proce-0001-00055
+  * ^property[=].valueCode = #proce-0001-00054
 
-* #proce-0001-00055 "Mikroto‘lqinli terapiya (SVCh-terapiya)"
+* #proce-0001-00054 "Mikroto‘lqinli terapiya (SVCh-terapiya)"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Сверхвысокочастотная электротерапия (СВЧ-терапия)"
   * ^designation[+].language = #en
   * ^designation[=].value = "Microwave therapy"
 
-* #proce-0001-00056 "Yorug‘lik bilan davolash (fototerapiya)"
+* #proce-0001-00055 "Yorug‘lik bilan davolash (fototerapiya)"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Светолечение"
   * ^designation[+].language = #en
   * ^designation[=].value = "Phototherapy"
 
-* #proce-0001-00057 "Yorug‘lik vannasi"
+* #proce-0001-00056 "Yorug‘lik vannasi"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Световая ванна"
   * ^designation[+].language = #en
   * ^designation[=].value = "Light bath therapy"
   * ^property[0].code = #parent
-  * ^property[=].valueCode = #proce-0001-00056
+  * ^property[=].valueCode = #proce-0001-00055
 
-* #proce-0001-00058 "Skelet tortmasi"
+* #proce-0001-00057 "Skelet tortmasi"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Скелетное вытяжение"
   * ^designation[+].language = #en
   * ^designation[=].value = "Skeletal traction"
 
-* #proce-0001-00059 "Issiqlik bilan davolash (termoterapiya)"
+* #proce-0001-00058 "Issiqlik bilan davolash (termoterapiya)"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Теплолечение"
   * ^designation[+].language = #en
   * ^designation[=].value = "Thermotherapy"
 
-* #proce-0001-00060 "Tyubaj (zondsiz o‘t ajralishini rag‘batlantirish)"
+* #proce-0001-00059 "Tyubaj (zondsiz o‘t ajralishini rag‘batlantirish)"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Тюбаж"
   * ^designation[+].language = #en
   * ^designation[=].value = "Blind tubage (Stimulation of bile flow)"
 
-* #proce-0001-00061 "Umurtqa pog‘onasini traksion tortish"
+* #proce-0001-00060 "Umurtqa pog‘onasini traksion tortish"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Тракционное вытяжение позвоночника"
   * ^designation[+].language = #en
   * ^designation[=].value = "Spinal traction therapy"
 
-* #proce-0001-00062 "Ultratonoterapiya (UTT)"
+* #proce-0001-00061 "Ultratonoterapiya (UTT)"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Ультратонотерапия (УТТ)"
   * ^designation[+].language = #en
   * ^designation[=].value = "Ultratone therapy"
 
-* #proce-0001-00063 "Ultra yuqori chastotali terapiya (UVCh-terapiya)"
+* #proce-0001-00062 "Ultra yuqori chastotali terapiya (UVCh-terapiya)"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Ультравысокочастотная терапия (УВЧ-терапия)"
   * ^designation[+].language = #en
   * ^designation[=].value = "Ultrahigh-frequency therapy (UHF therapy)"
 
-* #proce-0001-00064 "Ultratovush terapiyasi"
+* #proce-0001-00063 "Ultratovush terapiyasi"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Ультразвуковая терапия"
   * ^designation[+].language = #en
   * ^designation[=].value = "Therapeutic ultrasound"
 
-* #proce-0001-00065 "Ultrabinafsha nurlar bilan nurlantirish"
+* #proce-0001-00064 "Ultrabinafsha nurlar bilan nurlantirish"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Ультрафиолетовое облучение (УФ-облучение)"
   * ^designation[+].language = #en
   * ^designation[=].value = "Ultraviolet light therapy"
 
-* #proce-0001-00066 "Ultrabinafsha nurlanish. PUVA vannalari"
+* #proce-0001-00065 "Ultrabinafsha nurlanish. PUVA vannalari"
   * ^designation[0].language = #ru
   * ^designation[=].value = "УФ-облучение. ПУВА-ванны"
   * ^designation[+].language = #en
   * ^designation[=].value = "PUVA bath therapy"
 
-* #proce-0001-00067 "Ultrabinafsha nurlanish. Tubus-kvars"
+* #proce-0001-00066 "Ultrabinafsha nurlanish. Tubus-kvars"
   * ^designation[0].language = #ru
   * ^designation[=].value = "УФ-облучение. Тубус-кварц"
   * ^designation[+].language = #en
   * ^designation[=].value = "Localized ultraviolet irradiation (Tubus-quartz therapy)"
 
-* #proce-0001-00068 "Franklinizatsiya"
+* #proce-0001-00067 "Franklinizatsiya"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Франклинизация"
   * ^designation[+].language = #en
   * ^designation[=].value = "Franklinization (Static electric field therapy)"
 
-* #proce-0001-00069 "Fonoforez"
+* #proce-0001-00068 "Fonoforez"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Фонофорез"
   * ^designation[+].language = #en
   * ^designation[=].value = "Phonophoresis"
 
-* #proce-0001-00070 "Flyuktuorizatsiya"
+* #proce-0001-00069 "Flyuktuorizatsiya"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Флюктуоризация"
   * ^designation[+].language = #en
   * ^designation[=].value = "Fluctuorization (Fluctuating current therapy)"
   * ^property[0].code = #parent
-  * ^property[=].valueCode = #proce-0001-00074
+  * ^property[=].valueCode = #proce-0001-00073
 
-* #proce-0001-00071 "Elektroforez (dori elektroforezi)"
+* #proce-0001-00070 "Elektroforez (dori elektroforezi)"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Электрофорез"
   * ^designation[+].language = #en
   * ^designation[=].value = "Iontophoresis (Drug electrophoresis)"
 
-* #proce-0001-00072 "Elektrosuyqu terapiyasi"
+* #proce-0001-00071 "Elektrosuyqu terapiyasi"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Электросон"
   * ^designation[+].language = #en
   * ^designation[=].value = "Electrosleep therapy"
 
-* #proce-0001-00073 "Elektrotrankvilizatsiya"
+* #proce-0001-00072 "Elektrotrankvilizatsiya"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Электротранквилизация"
   * ^designation[+].language = #en
   * ^designation[=].value = "Electrotranquilization"
 
-* #proce-0001-00074 "Elektrostimulyatsiya"
+* #proce-0001-00073 "Elektrostimulyatsiya"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Электростимуляция"
   * ^designation[+].language = #en
