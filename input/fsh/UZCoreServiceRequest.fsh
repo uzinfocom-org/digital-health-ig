@@ -34,8 +34,8 @@ Description: "Uzbekistan Core ServiceRequest profile, used to represent a reques
 * code from ServiceRequestCodesVS (extensible)
 * code ^short = "Specifies the procedure, diagnostic investigation, or panel being requested. The codes used represent orderable services and must not be used for analytical result observations."
 * orderDetail MS
-* orderDetail.parameter.code from SRSnomedOrderDetailParameterVS (preferred)  
-* orderDetail.parameter.valueCodeableConcept from RouteCodeVS (extensible)     
+* orderDetail.parameter.code from ServiceRequestOrderDetailParameterVS (preferred)
+* orderDetail.parameter.valueCodeableConcept from RouteCodeVS (extensible)
 * location MS
 * location from CarePlanLocationVS (preferred)
 * subject MS
