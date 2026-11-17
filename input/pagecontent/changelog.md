@@ -12,8 +12,15 @@ Every profile page now has a narrative intro and a Quick Start. New ones were ad
 
 [Flag code](SearchParameter-uz-core-flag-code.html) is a new search parameter, `code`, that finds [UZ Core Flag](StructureDefinition-uz-core-flag.html) resources by what they are about - for example, a patient's active medical deferrals from blood donation. Base FHIR R5 has no search parameter for this.
 
+[Medication dose form](CodeSystem-medication-doseform-cs.html) adds `CTP101` poultice, `DRS101` medicated dressing, `HRB101` herbal substance, `JEL101` medicated jelly, `KIT101` kit, `LOT101` lotion, `SHA101` medicated shampoo, `SUB101` active substance and `TEA101` herbal tea, with Uzbek, Russian and English names, for DMED e-prescription and Pharmaceutical Committee drug registry dose forms that had no code.
+
 [MedicationKnowledge associated medication](SearchParameter-uz-core-medicationknowledge-associated-medication.html) is a new search parameter, `associated-medication`, that finds the [UZ Core MedicationKnowledge](StructureDefinition-uz-core-medicationknowledge.html) entries for a Medication - for example, the approved prices of a dispensed product. Base FHIR R5 has no search parameter for this. Chain it on `identifier` to search by the product's registration number or GTIN.
 
+[MedicationRequest status reason](ValueSet-medicationrequest-status-reason-vs.html) adds SNOMED CT `438833006` administration of medication contraindicated, with Uzbek and Russian names in a [supplement](CodeSystem-medicationrequest-status-reason-sct-cs.html), for cancelling a DMED e-prescription.
+
+[Unit of measurement codes](CodeSystem-unit-of-measurement-cs.html) add nine Pharmaceutical Committee drug registry units, mapped to UCUM in the [unit of measurement map](ConceptMap-unit-of-measurement-cm.html).
+
+[Unit of measurement map](ConceptMap-unit-of-measurement-cm.html) adds UCUM targets for 30 units that had none, such as international unit `[iU]`, milligram per dose `mg/{dose}`, gram per litre `g/L` and colony-forming unit `[CFU]`.
 
 [Payment type](CodeSystem-payment-type-cs.html) adds `paytype-0001-0006` Resolution No. 5199 and `paytype-0001-0007` Resolution No. 311.
 
@@ -41,6 +48,8 @@ Every profile page now has a narrative intro and a Quick Start. New ones were ad
 
 [UZ Core SupplyDelivery](StructureDefinition-uz-core-supply-delivery.html) records the location the items were dispatched from, such as the sending warehouse in a transfer between warehouses, in the new [Deliver from](StructureDefinition-supplydelivery-deliver-from.html) extension. Base FHIR SupplyDelivery has no element for it; the extension is the delivery counterpart of `SupplyRequest.deliverFrom`. The [warehouse transfer example](SupplyDelivery-example-warehouse-transfer-supply-delivery.html) shows it. The profile page has a narrative intro and a Quick Start.
 
+[UZ Core SupplyRequest](StructureDefinition-uz-core-supply-request.html) adds a `group` identifier slice, a [supply group number](NamingSystem-uzb-supply-group-number.html) shared by requests placed together, so that the supplier handles them as one order. Two examples show red blood cells and fresh frozen plasma ordered together for the same operation.
+
 #### Changed
 
 [Allergen codes](ValueSet-allergen-codes-vs.html) now also include [INN medicine names](CodeSystem-inn-medication-name-cs.html), so a drug allergy can name the active substance. The [analgesic allergy example](AllergyIntolerance-example-analgesic-allergy.html) now codes paracetamol by its INN.
@@ -53,6 +62,8 @@ Mapping quality fixes found by the IG Publisher 3.0.1 ConceptMap checks. In the 
 
 Every reference to a Device in UZ Core profiles now targets [UZ Core Device](StructureDefinition-uz-core-device.html): Observation, Procedure, Condition, AdverseEvent, Composition, QuestionnaireResponse, Group, MedicationAdministration, MedicationDispense, InventoryItem, SupplyRequest and SupplyDelivery.
 
+[MedicationRequest status translations](CodeSystem-medicationrequest-status-cs.html) now give `ended` the Russian name «Окончено» instead of «Завершено», which duplicated `completed`.
+
 Removed a trailing newline from the BloodProductInventoryItem CSV folder name so the repository can be checked out on Windows.
 
 The [example practitioner](Practitioner-example-practitioner.html) and the specialist certificate examples now use a made-up PINFL, certificate number and dates.
@@ -63,6 +74,12 @@ The [Procedure example](Procedure-example-procedure.html) now points at an [outp
 
 Titles and descriptions of code systems and value sets now follow the naming pattern in the [modelling guidelines](https://github.com/uzinfocom-org/digital-health-ig/blob/main/modelling-guidelines.md): a supplement is `[Concept] translations`, a value set is `[Concept]`, and titles no longer carry words such as "CodeSystem" or "ValueSet". Canonical URLs, ids and codes are unchanged.
 
+[Unit of measurement map](ConceptMap-unit-of-measurement-cm.html) maps `270` unit of biological activity per millilitre to `U/mL` instead of `[arb'U]/mL`, and `275` semi-infectious dose unit is broader than `[CCID_50]` instead of equivalent to it.
+
+[UZ Core Medication](StructureDefinition-uz-core-medication.html) no longer requires an `identifier`. Each Medication must have an identifier or a code (invariant `uzcore-med-1`), so a medicine prescribed by its INN, as in DMED e-prescriptions, can be sent with only its INN or ATC code before the pharmacy names the product.
+
+[UZ Core MedicationRequest](StructureDefinition-uz-core-medicationrequest.html) binds `statusReason` as extensible instead of required.
+
 [UZ Core Organization](StructureDefinition-uz-core-organization.html) and [UZ Core RelatedPerson](StructureDefinition-uz-core-relatedperson.html) no longer fix the display of the identifier type: the `mohId` and `argosId` slices fix only the system and code `XX`, and `healthCard` only `HC`. The fixed displays "Organization Identifier" and "Health card number" did not match the HL7 terminology displays "Organization identifier" and "Health Card Number", so every conforming instance got a terminology warning. An identifier type with either display, or without one, now conforms.
 
 [UZ Core ServiceRequest](StructureDefinition-uz-core-servicerequest.html) supports the purpose of a referral as a `referralPurpose` category from the new [ServiceRequest referral purpose](ValueSet-service-request-referral-purpose-vs.html) value set, the clinical specialty as a `specialty` category, the [Organization](StructureDefinition-uz-core-organization.html) asked to perform the service (`performer`), and the basis for state-funded treatment for a qualifying diagnosis as a `basis` order detail parameter (LOINC `86947-9` Reason for hospitalization) from the new [ServiceRequest basis](ValueSet-service-request-basis-vs.html) value set. An ICD-10 `reason` can carry the [SBDL criterion](ValueSet-sbdl-vs.html) the treatment qualifies under beside the diagnosis code. [ServiceRequest procedures and investigations](ValueSet-service-request-code-vs.html) gets Uzbek and Russian names for SNOMED CT `3457005` Patient referral.
@@ -72,6 +89,8 @@ Titles and descriptions of code systems and value sets now follow the naming pat
 Examples no longer set a display on HL7 codes where it differed from the HL7 terminology display or was written in Uzbek or Russian: the identifier type `XX` in the Organization examples, the class and priority in the Encounter example, the site in the Immunization example, the marital status in the Patient examples, the achievement status and priority in the Goal example, the clinical status, verification status and participant function in the Condition example, the status in the Medication examples and the relationship in the RelatedPerson example. The dropped Uzbek and Russian displays are in the translation supplements of these code systems. The [health card number](NamingSystem-patient-id-uzb-health-card.html) and [pension number](NamingSystem-patient-id-uzb-pension-number.html) naming systems now spell the identifier type displays "Health Card Number" and "Pension Number" as HL7 terminology does.
 
 [UZ Core Patient](StructureDefinition-uz-core-patient.html) accepts more than one birth certificate (`birthCertificate` is now 0..* instead of 0..1) and no longer fixes its `use`, so a patient's superseded certificate can be recorded with `use = old` next to the current one with `use = official`.
+
+[UZ Core Procedure](StructureDefinition-uz-core-procedure.html) recommends [blood donation complication codes](ValueSet-procedure-complication-vs.html) through an additional preferred binding only when `Procedure.code` is SNOMED CT `25179006` (Whole blood unit collection). The codes cover fainting, collapse, angina and anaphylactic shock, with Uzbek and Russian translations. If there are no complications, omit `complication`.
 
 #### Breaking changes
 

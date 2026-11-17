@@ -15,7 +15,7 @@ Ikkalasi ham bazaviy SupplyRequest resursida majburiy; ushbu profil boshqa majbu
 
 #### Har bir UZ Core SupplyRequest quyidagilarni qo'llab-quvvatlashi shart
 
-- so'rov yuborayotgan shifoxona bergan so'rov raqami va u tegishli bo'lgan ta'minot shartnomasi raqami, har biri `system` bilan birga (qarang: [identifikator slayslari](#identifier-slices));
+- so'rov yuborayotgan shifoxona bergan so'rov raqami, u tegishli bo'lgan ta'minot shartnomasi raqami va birga yuborilgan so'rovlar uchun umumiy guruh raqami, har biri `system` bilan birga (qarang: [identifikator slayslari](#identifier-slices));
 - so'rov asoslangan [ServiceRequest](StructureDefinition-uz-core-servicerequest.html) yoki boshqa SupplyRequest (`basedOn`);
 - so'rov holati `status` (draft / active / suspended / cancelled / completed / entered-in-error / unknown);
 - so'rov toifasi `category` (zaxirani to'ldirish / shaxsiy, bitta bemor uchun / muassasalar o'rtasida);
@@ -110,7 +110,7 @@ Shifoxona o'z ta'minot shartnomasi doirasida Andijon qon quyish stansiyasidan an
 
 `parameter` o'z `code` i bo'yicha slayslarga bo'lingan: SNOMED CT `63915006` (ABO qon guruhlari tizimi) [qon guruhi](ValueSet-blood-group-vs.html) qiymatlar to'plamidan ABO guruhini, `115678000` (Rh qon guruhlari tizimi) esa [RhD rezus-mansubligi](ValueSet-blood-rh-vs.html) qiymatlar to'plamidan RhD turini o'z ichiga oladi. Ikkala qiymat bog'lanishi ham `required`. `category` kod tizimi o'zbek tiliga asoslangan, ruscha va inglizcha belgilanishlarga ega; `display` ni faqat u resurs `language` iga mos kelgandagina yuboring. `supplier` takrorlanadi, `deliverTo` takrorlanmaydi. `reason` `CodeableReference` turiga ega: `concept` dagi kod yoki `reference` dagi tashxis yoki tekshiruv natijasiga havola.
 
-#### So'rov va shartnoma raqamlari {#identifier-slices}
+#### So'rov, shartnoma va guruh raqamlari {#identifier-slices}
 
 `identifier` o'z `system` URI si bo'yicha slayslarga bo'lingan, shuning uchun tizim aniq mos kelishi shart:
 
@@ -118,8 +118,30 @@ Shifoxona o'z ta'minot shartnomasi doirasida Andijon qon quyish stansiyasidan an
 |---|---|---|
 | [Ta'minot so'rovi raqami](NamingSystem-uzb-supply-request-number.html) | `https://dhp.uz/fhir/core/sid/doc/uz/supply-request` | So'rov yuborayotgan shifoxona |
 | [Ta'minot shartnomasi raqami](NamingSystem-uzb-supply-contract-number.html) | `https://dhp.uz/fhir/core/sid/doc/uz/supply-contract` | Shifoxona va qon xizmati o'rtasidagi ta'minot shartnomasini rasmiylashtirgan tomon |
+| [Ta'minot so'rovlari guruhi raqami](NamingSystem-uzb-supply-group-number.html) | `https://dhp.uz/fhir/core/sid/doc/uz/supply-group` | So'rov yuborayotgan shifoxona |
 
 So'rov raqami qon xizmati va shifoxonaga so'rovni unga javob beradigan yetkazib berish bilan solishtirish imkonini beradi; yetkazib berishning o'z [yetkazib berish raqami](StructureDefinition-uz-core-supply-delivery.html#identifier-slices) bor.
+
+#### Guruhlangan so'rovlar {#grouped-requests}
+
+SupplyRequest faqat bitta narsani so'rashi mumkin. Agar shifoxonaga bitta bemor uchun bir vaqtning o'zida bir nechta qon komponenti kerak bo'lsa, masalan operatsiya uchun eritrotsitar massa va plazma, u har bir komponent uchun alohida so'rov yuboradi. Ular bir-biriga tegishli ekanini ko'rsatish uchun shifoxona ularning barchasiga bir xil guruh raqamini beradi.
+
+Shifoxona guruh raqamidan qanday foydalanadi:
+
+- To'plamdagi har bir so'rovga, uning o'z so'rov raqami yonida, bir xil guruh raqamini bering.
+- Har bir yangi to'plam uchun yangi guruh raqamidan foydalaning va eskisini hech qachon qayta ishlatmang.
+- Shifoxonangizni `identifier.assigner` da ko'rsating.
+- So'rovlar yuborilgandan keyin guruh yopiladi. Agar keyinroq xuddi shu operatsiya uchun yana bir komponent kerak bo'lsa, yangi guruh raqami bilan yangi so'rov yuboring.
+
+Guruh raqami umumiy, shuning uchun u bitta so'rovni aniqlay olmaydi. Bitta so'rovni topish, yangilash yoki unga havola qilish uchun uning so'rov raqamidan foydalaning. Butun guruhni ko'rish uchun guruh raqami bo'yicha qidiring:
+
+```
+GET [base]/SupplyRequest?identifier=https://dhp.uz/fhir/core/sid/doc/uz/supply-group|GR-0001
+```
+
+Guruhdagi har bir so'rovning o'z holati bor. Plazmani bekor qilish eritrotsitar massani bekor qilmaydi. Qon xizmati bir nechta so'rovni birga yetkazib berganda, yetkazib berish ularning barchasini `basedOn` da ko'rsatadi.
+
+[Eritrotsitar massa](SupplyRequest-example-supply-request-group-red-cells.html) va [yangi muzlatilgan plazma](SupplyRequest-example-supply-request-group-plasma.html) misollariga qarang.
 
 #### Zaxirani to'ldirish
 
