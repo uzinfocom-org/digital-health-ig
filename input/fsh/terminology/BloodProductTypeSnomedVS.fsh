@@ -1,7 +1,7 @@
 ValueSet: BloodProductTypeSnomedVS
 Id: blood-product-type-snomed-vs
 Title: "Blood product type"
-Description: "Blood product types coded in SNOMED CT, including leukocyte reduced and irradiated products"
+Description: "Blood product types"
 * ^url = "https://terminology.dhp.uz/fhir/core/ValueSet/blood-product-type-snomed-vs"
 * ^experimental = true
 * ^extension[0].url = $valueset-supplement
