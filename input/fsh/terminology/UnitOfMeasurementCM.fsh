@@ -291,7 +291,7 @@ Description: "Maps local UZ unit codes to UCUM standards."
 
 * group.element[+].code = #275
 * group.element[=].display = "yarim yuqumli doza birligi"
-* group.element[=].target[+].code = #"[EID_50]"
+* group.element[=].target[+].code = #"[CCID_50]"
 * group.element[=].target[=].relationship = #source-is-broader-than-target
 
 * group.element[+].code = #327

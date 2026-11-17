@@ -5,7 +5,7 @@ Description: "Local unit of measurement codes with Uzbek and Russian translation
 * insert OriginalCodeSystemDraft(unit-of-measurement-cs)
 * ^property[0].code = #parent
 * ^property[=].uri = "http://hl7.org/fhir/concept-properties#parent"
-* ^property[=].description = "The generic unit a specific arbitrary unit is a kind of"
+* ^property[=].description = "The generic unit a specific unit is a kind of"
 * ^property[=].type = #code
 
 * #253 "foiz"
@@ -666,6 +666,8 @@ meter"
 действия"
   * ^designation[+].language = #en
   * ^designation[=].value = "Units of modifying action"
+  * ^property[0].code = #parent
+  * ^property[=].valueCode = #323
 
 * #720 "zivert"
   * ^designation[0].language = #ru
@@ -686,6 +688,8 @@ infektsion dozasi"
 для клеточной культуры"
   * ^designation[+].language = #en
   * ^designation[=].value = "cell culture infectious dose"
+  * ^property[0].code = #parent
+  * ^property[=].valueCode = #275
 
 * #683 "kandela"
   * ^designation[0].language = #ru
@@ -797,6 +801,8 @@ o'lchov birligi"
   * ^designation[=].value = "ЛЕ (липаземическая единица)"
   * ^designation[+].language = #en
   * ^designation[=].value = "LSU (lipasemic unit)"
+  * ^property[0].code = #parent
+  * ^property[=].valueCode = #323
 
 * #820 "lipoprotein lipaz birligi"
   * ^designation[0].language = #ru
@@ -955,6 +961,8 @@ doza (miqdor)"
   * ^designation[=].value = "Мышиная Единица Действия"
   * ^designation[+].language = #en
   * ^designation[=].value = "Мышиная Единица Действия"
+  * ^property[0].code = #parent
+  * ^property[=].valueCode = #323
 
 * #1000 "nanometr"
   * ^designation[0].language = #ru
@@ -1096,6 +1104,8 @@ Units Tablet"
   * ^designation[=].value = "ФНЕ"
   * ^designation[+].language = #en
   * ^designation[=].value = "FTU"
+  * ^property[0].code = #parent
+  * ^property[=].valueCode = #323
 
 * #1301 "FTU/ml"
   * ^designation[0].language = #ru

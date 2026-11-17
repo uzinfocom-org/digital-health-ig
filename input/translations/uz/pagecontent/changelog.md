@@ -58,7 +58,7 @@ Kod tizimlari va qiymatlar to'plamlarining sarlavhalari va tavsiflari endi [mode
 
 Namunalar endi HL7 kodlarining display qiymatini HL7 terminologiyasidagi display qiymatidan farq qilgan yoki o'zbek yoki rus tilida yozilgan joylarda belgilamaydi: Organization namunalaridagi `XX` identifikator turi, Encounter namunasidagi sinf va ustuvorlik, Immunization namunasidagi yuborish joyi, Patient namunalaridagi oilaviy holat, Goal namunasidagi erishish holati va ustuvorlik, Condition namunasidagi klinik holat, tasdiqlash holati va ishtirokchi funksiyasi, Medication namunalaridagi holat hamda RelatedPerson namunasidagi qarindoshlik. Olib tashlangan o'zbekcha va ruscha display qiymatlari ushbu kod tizimlarining tarjima qo'shimchalarida mavjud. [Tibbiy karta raqami](NamingSystem-patient-id-uzb-health-card.html) va [pensiya raqami](NamingSystem-patient-id-uzb-pension-number.html) nomlash tizimlari endi identifikator turi display qiymatlarini HL7 terminologiyasidagidek "Health Card Number" va "Pension Number" deb yozadi.
 
-[O'lchov birliklari xaritasi](ConceptMap-unit-of-measurement-cm.html): `270` millilitrda biologik faollikning taʼsir birligi `[arb'U]/mL` o'rniga `U/mL` bilan bog'landi, `275` yarim yuqumli doza birligi esa `[CCID_50]` ga ekvivalent emas, `[EID_50]` dan kengroq.
+[O'lchov birliklari xaritasi](ConceptMap-unit-of-measurement-cm.html): `270` millilitrda biologik faollikning taʼsir birligi `[arb'U]/mL` o'rniga `U/mL` bilan bog'landi, `275` yarim yuqumli doza birligi esa `[CCID_50]` ga ekvivalent emas, undan kengroq.
 
 [Practitioner namunasi](Practitioner-example-practitioner.html) va mutaxassis sertifikati namunalarida endi o'ylab topilgan PINFL, sertifikat raqami va sanalar ishlatiladi.
 
