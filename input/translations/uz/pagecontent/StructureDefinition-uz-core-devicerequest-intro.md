@@ -8,11 +8,7 @@ Quyidagi elementlar har doim mavjud bo'lishi (majburiy) yoki ma'lumot mavjud bo'
 
 #### Har bir UZ Core DeviceRequest quyidagilarga ega bo'lishi shart
 
-- so'rov maqsadi `intent` (proposal / plan / order va boshqalar);
-- so'ralgan buyum (`code`);
-- sub'yekt `subject`: buyum mo'ljallangan [bemor](StructureDefinition-uz-core-patient.html).
-
-Bu uchtasi bazaviy DeviceRequest resursida majburiy; ushbu profil boshqa majburiy elementlar qo'shmaydi.
+Profil majburiy elementlar qo'shmaydi. Bazaviy resurs `intent`, so'ralgan buyum (`code`) va buyum mo'ljallangan [bemor](StructureDefinition-uz-core-patient.html) (`subject`) ni talab qiladi.
 
 #### Har bir UZ Core DeviceRequest quyidagilarni qo'llab-quvvatlashi shart
 
@@ -29,22 +25,12 @@ Bu uchtasi bazaviy DeviceRequest resursida majburiy; ushbu profil boshqa majburi
 
 ### Qaysi buyum va qanday xususiyatlar bilan
 
-`code` turi `CodeableReference`, shuning uchun buyumni ikki usulda ko'rsatish mumkin:
+So'ralgan buyum [`code`](#k-DeviceRequest.code) da havola yoki kod sifatida ko'rsatiladi:
 
-| Usul | Qachon |
-|---|---|
-| [UZ Core Device](StructureDefinition-uz-core-device.html) ga `code.reference` | Muayyan buyum yoki muassasa alohida resurs sifatida yuritadigan buyum modeli |
-| Kod bilan `code.concept` | Faqat buyum turi ma'lum, aniq buyumni esa yetkazib beruvchi tanlaydi |
+- `code.reference` muayyan buyum yoki model buyurtma qilinganda [UZ Core Device](StructureDefinition-uz-core-device.html) ga havola qiladi.
+- `code.concept` faqat buyum turi muhim bo'lib, aniq buyumni yetkazib beruvchi tanlaganda kodni saqlaydi.
 
-`parameter` takrorlanadi, har bir xususiyat uchun bitta yozuv. `parameter.code` qaysi xususiyat ekanini ko'rsatadi va [Buyum so'rovi parametrlari](ValueSet-device-request-parameter-code-vs.html) to'plamiga (extensible) bog'langan:
-
-| Kod ([SNOMED CT](https://browser.ihtsdotools.org/)) | Ko'rinish | O'zbekcha | Ruscha |
-|---|---|---|---|
-| `410668003` | Length | Uzunlik | Длина |
-| `103355008` | Width | Kenglik | Ширина |
-| `81827009` | Diameter | Diametr | Диаметр |
-
-Boshqa koddan faqat bularning hech biri mos kelmaganda foydalaning. `parameter.value[x]` - o'lchangan o'lcham uchun `Quantity`, ruxsat etilgan oraliq uchun `Range`, kodlangan sozlama uchun `CodeableConcept` yoki `boolean`. `Quantity` ni UCUM `system` va `code` bilan birga yuboring.
+Har bir xususiyat uchun bitta `parameter` qo'shing. `parameter.code` qaysi xususiyat ekanini ko'rsatadi: [Buyum so'rovi parametrlari](ValueSet-device-request-parameter-code-vs.html) dan uzunlik (`410668003`), kenglik (`103355008`) yoki diametr (`81827009`), yoki ularning hech biri mos kelmasa boshqa SNOMED CT kodi. `parameter.value[x]` qiymatni saqlaydi, odatda UCUM `system` va `code` bilan `Quantity`.
 
 ### JSON ni bosqichma-bosqich qurish
 
@@ -67,9 +53,9 @@ Har bir UZ Core resursi o'z profilini `meta.profile` da ko'rsatadi, shunda serve
 
 `status`, `intent` va `priority` HL7 kodlaridan foydalanadi. Ularning inglizcha nomlari bazaviy kod tizimlaridan, o'zbekcha va ruscha nomlari esa DHP supplementlaridan olinadi, shuning uchun `display` ni ko'rsatmasangiz ham bo'ladi.
 
-#### Kengligi ko'rsatilgan mis BIV buyurtmasi
+#### Turi bo'yicha o'lchami bilan buyurilgan buyum
 
-Ginekolog kontratsepsiya uchun uni tanlagan bemorga kengligi 28 mm bo'lgan bitta mis bachadon ichi vositasini buyuradi. Vosita klinikada 20-noyabr kuni o'rnatiladi:
+Faqat buyum turi muhim bo'lsa, `code.concept` da SNOMED CT kodini ko'rsating, aniq buyumni esa yetkazib beruvchi tanlaydi. Fizioterapevt nogironligi bor bemorga eskirgan mexanik nogironlik aravachasi o'rniga yangisini buyuradi. O'rindig'ining kengligi 44 dan 48 sm gacha bo'lgan har qanday model mos keladi:
 
 ```json
 {
@@ -77,25 +63,58 @@ Ginekolog kontratsepsiya uchun uni tanlagan bemorga kengligi 28 mm bo'lgan bitta
   "meta": { "profile": ["https://dhp.uz/fhir/core/StructureDefinition/uz-core-devicerequest"] },
   "status": "active",
   "intent": "order",
-  "priority": "routine",
-  "doNotPerform": false,
-  "code": { "reference": { "reference": "Device/example-copper-iud" } },
+  "code": {
+    "concept": { "coding": [ { "system": "http://snomed.info/sct", "code": "58938008", "display": "Wheelchair" } ] }
+  },
   "quantity": 1,
   "parameter": [
     {
       "code": { "coding": [ { "system": "http://snomed.info/sct", "code": "103355008", "display": "Width" } ] },
-      "valueQuantity": { "value": 28, "unit": "mm", "system": "http://unitsofmeasure.org", "code": "mm" }
+      "valueRange": {
+        "low": { "value": 44, "unit": "cm", "system": "http://unitsofmeasure.org", "code": "cm" },
+        "high": { "value": 48, "unit": "cm", "system": "http://unitsofmeasure.org", "code": "cm" }
+      }
     }
   ],
+  "subject": { "reference": "Patient/example-salim" },
+  "authoredOn": "2026-11-10T11:00:00+05:00",
+  "requester": { "reference": "PractitionerRole/example-physiotherapist-role" },
+  "reason": [ { "reference": { "reference": "Condition/example-disability" } } ]
+}
+```
+
+Bu yerda `parameter.value[x]` - `Range`, chunki shu oraliqdagi har qanday kenglik mos keladi; bitta aniq o'lcham uchun `Quantity` dan foydalaning. Namunaviy nusxa - [nogironlik aravachasi buyurtmasi](DeviceRequest-example-devicerequest-wheelchair.html).
+
+#### Muayyan mis BIV uchun bajarilgan buyurtma
+
+10-fevraldagi maslahatda ginekolog kontratsepsiya uchun uni tanlagan bemorga poliklinikada mavjud bo'lgan mis bachadon ichi vositasini buyuradi. Poliklinika uni 18-fevral kuni o'rnatdi, shuning uchun buyurtma endi `completed`:
+
+```json
+{
+  "resourceType": "DeviceRequest",
+  "meta": { "profile": ["https://dhp.uz/fhir/core/StructureDefinition/uz-core-devicerequest"] },
+  "replaces": [ { "reference": "DeviceRequest/example-devicerequest-implant" } ],
+  "status": "completed",
+  "intent": "order",
+  "priority": "routine",
+  "doNotPerform": false,
+  "code": { "reference": { "reference": "Device/example-copper-iud" } },
+  "quantity": 1,
   "subject": { "reference": "Patient/example-nodira" },
-  "occurrenceDateTime": "2026-11-20T09:00:00+05:00",
-  "authoredOn": "2026-11-16T10:15:00+05:00",
+  "encounter": { "reference": "Encounter/example-encounter-iud-consultation" },
+  "occurrenceDateTime": "2026-02-18T09:00:00+05:00",
+  "authoredOn": "2026-02-10T10:15:00+05:00",
   "requester": { "reference": "PractitionerRole/example-practitionerrole" },
-  "performer": { "reference": { "reference": "Organization/example-organization" } },
+  "performer": { "reference": { "reference": "Organization/xonobod-medical-association" } },
   "reason": [
-    { "concept": { "coding": [ { "system": "http://snomed.info/sct", "code": "13197004", "display": "Uses contraception" } ] } }
+    {
+      "concept": {
+        "coding": [ { "system": "http://snomed.info/sct", "code": "13197004", "display": "Uses contraception" } ]
+      }
+    }
   ],
-  "asNeeded": false
+  "asNeeded": false,
+  "note": [ { "text": "Copper T 380A from the polyclinic stock; insertion booked for 18 February." } ]
 }
 ```
 
@@ -103,6 +122,6 @@ Ginekolog kontratsepsiya uchun uni tanlagan bemorga kengligi 28 mm bo'lgan bitta
 
 #### So'rovni o'zgartirish yoki bekor qilish
 
-So'rov boshqa buyurtmaga tahrirlanmaydi. Uni o'zgartirish uchun, masalan boshqa o'lchamga, eski so'rovga `replaces` da havola qiluvchi yangi DeviceRequest yarating va eski so'rovning `status` ini `revoked` ga o'rnating. So'rovni almashtirmasdan bekor qilish uchun uning `status` ini `revoked` ga o'rnating. `entered-in-error` dan faqat so'rov umuman mavjud bo'lmasligi kerak bo'lganda foydalaning.
+So'rov boshqa buyurtmaga tahrirlanmaydi. Uni o'zgartirish uchun, masalan boshqa o'lchamga, eski so'rovga `replaces` da havola qiluvchi yangi DeviceRequest yarating va eski so'rovning `status` ini `revoked` ga o'rnating. Yuqoridagi mis BIV buyurtmasi bemor BIV ni tanlaganda bekor qilingan oldingi [implant buyurtmasini](DeviceRequest-example-devicerequest-implant.html) almashtiradi. So'rovni almashtirmasdan bekor qilish uchun uning `status` ini `revoked` ga o'rnating. `entered-in-error` dan faqat so'rov umuman mavjud bo'lmasligi kerak bo'lganda foydalaning.
 
 API chaqiruvlari misollari ushbu sahifa pastidagi [Tez boshlash](#quick-start) bo'limida keltirilgan.

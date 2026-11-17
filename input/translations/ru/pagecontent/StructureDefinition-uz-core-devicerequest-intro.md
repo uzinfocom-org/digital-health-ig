@@ -8,11 +8,7 @@ UZ Core DeviceRequest фиксирует назначение медицинск
 
 #### Каждое UZ Core DeviceRequest должно содержать
 
-- намерение запроса `intent` (proposal / plan / order и другие);
-- запрашиваемое изделие (`code`);
-- субъекта `subject`: [пациента](StructureDefinition-uz-core-patient.html), для которого предназначено изделие.
-
-Эти три элемента обязательны в базовом ресурсе DeviceRequest; этот профиль не добавляет других обязательных элементов.
+Профиль не добавляет обязательных элементов. Базовый ресурс требует `intent`, запрашиваемое изделие (`code`) и [пациента](StructureDefinition-uz-core-patient.html), для которого оно предназначено (`subject`).
 
 #### Каждое UZ Core DeviceRequest должно поддерживать
 
@@ -29,22 +25,12 @@ UZ Core DeviceRequest фиксирует назначение медицинск
 
 ### Какое изделие и с какими характеристиками
 
-`code` имеет тип `CodeableReference`, поэтому изделие можно указать двумя способами:
+Запрашиваемое изделие указывается в [`code`](#k-DeviceRequest.code) ссылкой или кодом:
 
-| Способ | Когда |
-|---|---|
-| `code.reference` на [UZ Core Device](StructureDefinition-uz-core-device.html) | Конкретное изделие или модель изделия, которую учреждение ведёт как отдельный ресурс |
-| `code.concept` с кодом | Известен только вид изделия, а конкретное изделие выбирает поставщик |
+- `code.reference` ссылается на [UZ Core Device](StructureDefinition-uz-core-device.html), если назначается конкретное изделие или модель.
+- `code.concept` содержит код, если важен только вид изделия, а конкретное изделие выбирает поставщик.
 
-`parameter` повторяется, по одной записи на характеристику. `parameter.code` указывает, какая это характеристика, и связан (extensible) с набором [Параметры запроса изделия](ValueSet-device-request-parameter-code-vs.html):
-
-| Код ([SNOMED CT](https://browser.ihtsdotools.org/)) | Отображение | Узбекский | Русский |
-|---|---|---|---|
-| `410668003` | Length | Uzunlik | Длина |
-| `103355008` | Width | Kenglik | Ширина |
-| `81827009` | Diameter | Diametr | Диаметр |
-
-Используйте другой код, только если ни один из этих не подходит. `parameter.value[x]` - это `Quantity` для измеренного размера, `Range` для допустимого диапазона, `CodeableConcept` для кодированной настройки или `boolean`. Передавайте `Quantity` вместе с `system` и `code` UCUM.
+Добавьте по одному `parameter` на каждую характеристику. `parameter.code` указывает, какая это характеристика: длина (`410668003`), ширина (`103355008`) или диаметр (`81827009`) из набора [Параметры запроса изделия](ValueSet-device-request-parameter-code-vs.html), либо другой код SNOMED CT, если ни один из них не подходит. `parameter.value[x]` содержит значение, обычно `Quantity` с `system` и `code` UCUM.
 
 ### Сборка JSON, шаг за шагом
 
@@ -67,9 +53,9 @@ UZ Core DeviceRequest фиксирует назначение медицинск
 
 `status`, `intent` и `priority` используют коды HL7. Их английские отображаемые имена берутся из базовых систем кодов, а узбекские и русские - из supplement DHP, поэтому `display` можно не указывать.
 
-#### Назначение медной ВМС с указанием ширины
+#### Изделие, назначенное по виду, с размером
 
-Гинеколог назначает одну медную внутриматочную спираль шириной 28 мм пациентке, которая выбрала её для контрацепции. Спираль будет установлена в клинике 20 ноября:
+Если важен только вид изделия, укажите код SNOMED CT в `code.concept`, а конкретное изделие выберет поставщик. Физиотерапевт назначает новое механическое кресло-коляску взамен изношенного пациенту с инвалидностью. Подойдёт любая модель с шириной сиденья от 44 до 48 см:
 
 ```json
 {
@@ -77,25 +63,58 @@ UZ Core DeviceRequest фиксирует назначение медицинск
   "meta": { "profile": ["https://dhp.uz/fhir/core/StructureDefinition/uz-core-devicerequest"] },
   "status": "active",
   "intent": "order",
-  "priority": "routine",
-  "doNotPerform": false,
-  "code": { "reference": { "reference": "Device/example-copper-iud" } },
+  "code": {
+    "concept": { "coding": [ { "system": "http://snomed.info/sct", "code": "58938008", "display": "Wheelchair" } ] }
+  },
   "quantity": 1,
   "parameter": [
     {
       "code": { "coding": [ { "system": "http://snomed.info/sct", "code": "103355008", "display": "Width" } ] },
-      "valueQuantity": { "value": 28, "unit": "mm", "system": "http://unitsofmeasure.org", "code": "mm" }
+      "valueRange": {
+        "low": { "value": 44, "unit": "cm", "system": "http://unitsofmeasure.org", "code": "cm" },
+        "high": { "value": 48, "unit": "cm", "system": "http://unitsofmeasure.org", "code": "cm" }
+      }
     }
   ],
+  "subject": { "reference": "Patient/example-salim" },
+  "authoredOn": "2026-11-10T11:00:00+05:00",
+  "requester": { "reference": "PractitionerRole/example-physiotherapist-role" },
+  "reason": [ { "reference": { "reference": "Condition/example-disability" } } ]
+}
+```
+
+Здесь `parameter.value[x]` - это `Range`, потому что подходит любая ширина в этом диапазоне; для одного точного размера используйте `Quantity`. Эталонный экземпляр - [назначение кресла-коляски](DeviceRequest-example-devicerequest-wheelchair.html).
+
+#### Выполненное назначение конкретной медной ВМС
+
+На консультации 10 февраля гинеколог назначает пациентке, которая выбрала контрацепцию, медную внутриматочную спираль, имеющуюся в поликлинике. Поликлиника установила её 18 февраля, поэтому назначение теперь `completed`:
+
+```json
+{
+  "resourceType": "DeviceRequest",
+  "meta": { "profile": ["https://dhp.uz/fhir/core/StructureDefinition/uz-core-devicerequest"] },
+  "replaces": [ { "reference": "DeviceRequest/example-devicerequest-implant" } ],
+  "status": "completed",
+  "intent": "order",
+  "priority": "routine",
+  "doNotPerform": false,
+  "code": { "reference": { "reference": "Device/example-copper-iud" } },
+  "quantity": 1,
   "subject": { "reference": "Patient/example-nodira" },
-  "occurrenceDateTime": "2026-11-20T09:00:00+05:00",
-  "authoredOn": "2026-11-16T10:15:00+05:00",
+  "encounter": { "reference": "Encounter/example-encounter-iud-consultation" },
+  "occurrenceDateTime": "2026-02-18T09:00:00+05:00",
+  "authoredOn": "2026-02-10T10:15:00+05:00",
   "requester": { "reference": "PractitionerRole/example-practitionerrole" },
-  "performer": { "reference": { "reference": "Organization/example-organization" } },
+  "performer": { "reference": { "reference": "Organization/xonobod-medical-association" } },
   "reason": [
-    { "concept": { "coding": [ { "system": "http://snomed.info/sct", "code": "13197004", "display": "Uses contraception" } ] } }
+    {
+      "concept": {
+        "coding": [ { "system": "http://snomed.info/sct", "code": "13197004", "display": "Uses contraception" } ]
+      }
+    }
   ],
-  "asNeeded": false
+  "asNeeded": false,
+  "note": [ { "text": "Copper T 380A from the polyclinic stock; insertion booked for 18 February." } ]
 }
 ```
 
@@ -103,6 +122,6 @@ UZ Core DeviceRequest фиксирует назначение медицинск
 
 #### Изменение или отмена запроса
 
-Запрос не редактируется в другое назначение. Чтобы изменить его, например на другой размер, создайте новый DeviceRequest, который ссылается на старый в `replaces`, и установите `status` старого запроса в `revoked`. Чтобы отменить запрос без замены, установите его `status` в `revoked`. Используйте `entered-in-error`, только если запрос вообще не должен был существовать.
+Запрос не редактируется в другое назначение. Чтобы изменить его, например на другой размер, создайте новый DeviceRequest, который ссылается на старый в `replaces`, и установите `status` старого запроса в `revoked`. Назначение медной ВМС выше заменяет более раннее [назначение имплантата](DeviceRequest-example-devicerequest-implant.html), отозванное, когда пациентка выбрала ВМС. Чтобы отменить запрос без замены, установите его `status` в `revoked`. Используйте `entered-in-error`, только если запрос вообще не должен был существовать.
 
 Примеры вызовов API приведены в разделе [Быстрый старт](#quick-start) внизу этой страницы.

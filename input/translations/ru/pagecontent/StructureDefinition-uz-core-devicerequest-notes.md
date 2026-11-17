@@ -14,6 +14,10 @@ GET [base]/DeviceRequest/[id]/_history
 **Поиск**
 
 ```
+GET [base]/DeviceRequest?identifier=[system]%7C[value]
+GET [base]/DeviceRequest?code=http://snomed.info/sct%7C268460000
+GET [base]/DeviceRequest?device=Device/[id]
+GET [base]/DeviceRequest?patient=Patient/[id]&status=active
 GET [base]/DeviceRequest?_lastUpdated=ge2026-11-01
 GET [base]/DeviceRequest?_profile=https://dhp.uz/fhir/core/StructureDefinition/uz-core-devicerequest
 GET [base]/DeviceRequest?_id=[id1],[id2]
@@ -49,7 +53,7 @@ If-Match: W/"3"   # the ETag from your last read; 412 if it changed since
 }
 ```
 
-DeviceRequest пока не указан в [CapabilityStatement](CapabilityStatement-DHPCapabilityStatement.html); параметры поиска, которые он будет поддерживать, определены в [базовой спецификации FHIR](https://hl7.org/fhir/R5/devicerequest.html#search).
+DeviceRequest пока не указан в [CapabilityStatement](CapabilityStatement-DHPCapabilityStatement.html); запросы выше используют стандартные параметры поиска FHIR R5.
 
 ### Связанные разделы
 

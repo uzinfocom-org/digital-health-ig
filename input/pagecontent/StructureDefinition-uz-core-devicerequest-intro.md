@@ -6,11 +6,7 @@ The elements below must always be present (mandatory) or must be supported when 
 
 #### Each UZ Core DeviceRequest Must Have
 
-- the `intent` of the request (proposal / plan / order and others);
-- the requested device (`code`);
-- the `subject`: the [patient](StructureDefinition-uz-core-patient.html) the device is for.
-
-These three are mandatory in the base DeviceRequest resource; this profile adds no further mandatory elements.
+This profile adds no mandatory elements. The base resource requires an `intent`, the requested device (`code`) and the [patient](StructureDefinition-uz-core-patient.html) it is for (`subject`).
 
 #### Each UZ Core DeviceRequest Must Support
 
@@ -27,22 +23,12 @@ These three are mandatory in the base DeviceRequest resource; this profile adds 
 
 ### Which device, and with which characteristics
 
-`code` is a `CodeableReference`, so the device can be given in two ways:
+The requested device goes in [`code`](#k-DeviceRequest.code), either as a reference or as a code:
 
-| Use | When |
-|---|---|
-| `code.reference` to a [UZ Core Device](StructureDefinition-uz-core-device.html) | A particular device, or a device model the facility records as its own resource |
-| `code.concept` with a code | Only the kind of device is known, and the supplier chooses the actual one |
+- `code.reference` points to a [UZ Core Device](StructureDefinition-uz-core-device.html) when you order a particular device or model.
+- `code.concept` holds a code when only the kind of device matters and the supplier picks the actual one.
 
-`parameter` repeats, one entry per characteristic. `parameter.code` says which characteristic it is and is bound (extensible) to [Device request parameter](ValueSet-device-request-parameter-code-vs.html):
-
-| Code ([SNOMED CT](https://browser.ihtsdotools.org/)) | Display | Uzbek | Russian |
-|---|---|---|---|
-| `410668003` | Length | Uzunlik | Длина |
-| `103355008` | Width | Kenglik | Ширина |
-| `81827009` | Diameter | Diametr | Диаметр |
-
-Use another code only when none of these fit. `parameter.value[x]` is a `Quantity` for a measured size, a `Range` for an acceptable range, a `CodeableConcept` for a coded setting or a `boolean`. Send a `Quantity` with its UCUM `system` and `code`.
+Add one `parameter` for each characteristic. `parameter.code` says which one it is: length (`410668003`), width (`103355008`) or diameter (`81827009`) from [Device request parameter](ValueSet-device-request-parameter-code-vs.html), or another SNOMED CT code if none of these fit. `parameter.value[x]` holds the value, usually a `Quantity` with its UCUM `system` and `code`.
 
 ### Building the JSON, step by step
 
@@ -65,9 +51,9 @@ Every UZ Core resource names its profile in `meta.profile`, which tells the serv
 
 `status`, `intent` and `priority` use HL7 codes. Their English displays come from the base code systems and their Uzbek and Russian ones from DHP supplements, so you can leave `display` out.
 
-#### An order for a copper IUD with its width
+#### A device ordered by kind, with a size
 
-A gynaecologist orders one copper intrauterine device, 28 mm wide, for a patient who has chosen it for contraception. The device is to be inserted at the clinic on 20 November:
+When only the kind of device matters, put a SNOMED CT code in `code.concept` and let the supplier pick the unit. A physiotherapist orders a replacement manual wheelchair for a patient with a disability. Any model will do if its seat is 44 to 48 cm wide:
 
 ```json
 {
@@ -75,25 +61,58 @@ A gynaecologist orders one copper intrauterine device, 28 mm wide, for a patient
   "meta": { "profile": ["https://dhp.uz/fhir/core/StructureDefinition/uz-core-devicerequest"] },
   "status": "active",
   "intent": "order",
-  "priority": "routine",
-  "doNotPerform": false,
-  "code": { "reference": { "reference": "Device/example-copper-iud" } },
+  "code": {
+    "concept": { "coding": [ { "system": "http://snomed.info/sct", "code": "58938008", "display": "Wheelchair" } ] }
+  },
   "quantity": 1,
   "parameter": [
     {
       "code": { "coding": [ { "system": "http://snomed.info/sct", "code": "103355008", "display": "Width" } ] },
-      "valueQuantity": { "value": 28, "unit": "mm", "system": "http://unitsofmeasure.org", "code": "mm" }
+      "valueRange": {
+        "low": { "value": 44, "unit": "cm", "system": "http://unitsofmeasure.org", "code": "cm" },
+        "high": { "value": 48, "unit": "cm", "system": "http://unitsofmeasure.org", "code": "cm" }
+      }
     }
   ],
+  "subject": { "reference": "Patient/example-salim" },
+  "authoredOn": "2026-11-10T11:00:00+05:00",
+  "requester": { "reference": "PractitionerRole/example-physiotherapist-role" },
+  "reason": [ { "reference": { "reference": "Condition/example-disability" } } ]
+}
+```
+
+`parameter.value[x]` is a `Range` here because any width in it is acceptable; use a `Quantity` for one exact size. The reference instance is the [wheelchair order](DeviceRequest-example-devicerequest-wheelchair.html).
+
+#### A completed order for a particular copper IUD
+
+At a consultation on 10 February a gynaecologist orders the copper intrauterine device the polyclinic has in stock, for a patient who has chosen it for contraception. The polyclinic inserted it on 18 February, so the order is now `completed`:
+
+```json
+{
+  "resourceType": "DeviceRequest",
+  "meta": { "profile": ["https://dhp.uz/fhir/core/StructureDefinition/uz-core-devicerequest"] },
+  "replaces": [ { "reference": "DeviceRequest/example-devicerequest-implant" } ],
+  "status": "completed",
+  "intent": "order",
+  "priority": "routine",
+  "doNotPerform": false,
+  "code": { "reference": { "reference": "Device/example-copper-iud" } },
+  "quantity": 1,
   "subject": { "reference": "Patient/example-nodira" },
-  "occurrenceDateTime": "2026-11-20T09:00:00+05:00",
-  "authoredOn": "2026-11-16T10:15:00+05:00",
+  "encounter": { "reference": "Encounter/example-encounter-iud-consultation" },
+  "occurrenceDateTime": "2026-02-18T09:00:00+05:00",
+  "authoredOn": "2026-02-10T10:15:00+05:00",
   "requester": { "reference": "PractitionerRole/example-practitionerrole" },
-  "performer": { "reference": { "reference": "Organization/example-organization" } },
+  "performer": { "reference": { "reference": "Organization/xonobod-medical-association" } },
   "reason": [
-    { "concept": { "coding": [ { "system": "http://snomed.info/sct", "code": "13197004", "display": "Uses contraception" } ] } }
+    {
+      "concept": {
+        "coding": [ { "system": "http://snomed.info/sct", "code": "13197004", "display": "Uses contraception" } ]
+      }
+    }
   ],
-  "asNeeded": false
+  "asNeeded": false,
+  "note": [ { "text": "Copper T 380A from the polyclinic stock; insertion booked for 18 February." } ]
 }
 ```
 
@@ -101,6 +120,6 @@ A gynaecologist orders one copper intrauterine device, 28 mm wide, for a patient
 
 #### Changing or cancelling a request
 
-A request is not edited into a different order. To change it, for example to a different size, create a new DeviceRequest that points to the old one in `replaces`, and set the old request's `status` to `revoked`. To cancel a request without a replacement, set its `status` to `revoked`. Use `entered-in-error` only when the request should never have existed.
+A request is not edited into a different order. To change it, for example to a different size, create a new DeviceRequest that points to the old one in `replaces`, and set the old request's `status` to `revoked`. The copper IUD order above replaces an earlier [implant order](DeviceRequest-example-devicerequest-implant.html), revoked when the patient chose an IUD instead. To cancel a request without a replacement, set its `status` to `revoked`. Use `entered-in-error` only when the request should never have existed.
 
 For example API calls, see the [Quick Start](#quick-start) at the bottom of this page.
