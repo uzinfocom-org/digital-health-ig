@@ -69,3 +69,9 @@ Description: "Blood product type supplement with translations in Uzbek and Russi
   * ^designation[=].value = "Аферезные тромбоциты человека с уменьшенным содержанием лейкоцитов"
   * ^designation[+].language = #uz
   * ^designation[=].value = "Leykotsitlar miqdori kamaytirilgan inson aferez trombotsitlari"
+
+* #789261007
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Альбумин (человек)"
+  * ^designation[+].language = #uz
+  * ^designation[=].value = "Albumin (inson)"
