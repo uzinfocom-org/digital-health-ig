@@ -23,7 +23,7 @@ Description: "Uzbekistan Core Medication profile, used for representing medicati
     registrationCertificateID 0..1 MS
 
 * identifier[uzpharmBoxGroupID]
-  * ^short = "Box-level aggregation identifier used to group serialized pharmaceutical packs into a shipping/carton unit within Uzbekistan's national track-and-trace program"
+  * ^short = "Pharmaceutical Committee registry identifier of the registered product (trade name, dosage form, strength and pack)"
   * system 0..1 MS
   * system = $uzpharmBoxGroupID
   * use = #official
