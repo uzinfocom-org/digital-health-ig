@@ -728,7 +728,7 @@ Usage: #definition
 * type = $identifier-type#PGN "Placer Group Number"
 * description = "Naming system for group numbers that the requesting hospital's information system assigns to supply requests placed together, such as red blood cells and fresh frozen plasma ordered for the same patient and operation."
 * jurisdiction = urn:iso:std:iso:3166#UZ "Uzbekistan"
-* usage = "Links supply requests that the supplier should handle as one order. All requests in a group share the same number, so it does not identify a single request: to find, update or reference one request, use its supply request number. Group numbers must not repeat across hospitals. Record the hospital that assigned the number in identifier.assigner."
+* usage = "Links supply requests that the supplier should handle as one order. All requests in a group share the same number, so it does not identify a single request: to find, update or reference one request, use its supply request number. Group numbers must not repeat across hospitals. Record the hospital that assigned the number in the assigner of the group identifier."
 * uniqueId[0].type = #uri
 * uniqueId[=].value = $supply-group-number
 * uniqueId[=].preferred = true
