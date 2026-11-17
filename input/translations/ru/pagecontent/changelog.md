@@ -36,7 +36,7 @@
 
 [Лекарственные формы](CodeSystem-medication-doseform-cs.html) дополнены кодами `CTP101` катаплазма, `DRS101` повязка лекарственная, `HRB101` сырьё растительное лекарственное, `JEL101` желе лекарственное, `KIT101` набор, `LOT101` лосьон, `SHA101` шампунь лекарственный, `SUB101` субстанция и `TEA101` сбор лекарственный растительный с названиями на узбекском, русском и английском - для лекарственных форм электронного рецепта DMED и реестра лекарственных средств Фармкомитета, у которых не было кода.
 
-[Национальный классификатор медицинских услуг Узбекистана (TXMK)](CodeSystem-txmk-cs.html) содержит 10 699 медицинских услуг национального классификатора с названиями на узбекском, русском и английском языках. Та же система кодов содержит 29 групп услуг, используемых как категории. Из них выбирают наборы значений [категорий услуг](ValueSet-txmk-service-categories-vs.html), [названий услуг](ValueSet-txmk-service-names-vs.html) и [услуг лучевой диагностики](ValueSet-txmk-imaging-vs.html). Их использует пример [первичного приёма врача TXMK](HealthcareService-example-healthcareservice-txmk-initial-visit.html).
+[Национальный классификатор медицинских услуг Узбекистана (TXMK)](CodeSystem-txmk-cs.html) содержит 10 699 медицинских услуг национального классификатора с названиями на узбекском, русском и английском языках. Та же система кодов содержит 29 групп услуг, используемых как категории. Из них выбирают наборы значений [категорий услуг](ValueSet-txmk-service-categories-vs.html), [названий услуг](ValueSet-txmk-service-names-vs.html) и [услуг лучевой диагностики](ValueSet-txmk-radiology-vs.html). Их использует пример [первичного приёма врача TXMK](HealthcareService-example-healthcareservice-txmk-initial-visit.html).
 
 [Поиск](search.html), который открывается из нового поля в шапке страницы, находит ресурсы по заголовку, имени, URL или описанию, а также коды, термины и сопоставления в системах кодов, наборах значений и ConceptMap на английском, русском и узбекском языках. Результаты можно отфильтровать по типу ресурса, чтобы перед добавлением нового кода проверить, нет ли его уже.
 
@@ -80,7 +80,7 @@ JSON-копия ресурса на каждом языке теперь сох�
 
 [Коды аллергенов](ValueSet-allergen-codes-vs.html) теперь включают и [МНН лекарств](CodeSystem-inn-medication-name-cs.html), поэтому аллергию на лекарство можно указать по действующему веществу. [Пример аллергии на анальгетик](AllergyIntolerance-example-analgesic-allergy.html) теперь кодирует парацетамол по МНН.
 
-[Коды процедур](ValueSet-procedure-code-vs.html), к которым привязан `code` в UZ Core Procedure и UZ Core ActivityDefinition, и [процедуры и исследования ServiceRequest](ValueSet-service-request-code-vs.html), к которым привязан `code` в UZ Core ServiceRequest, теперь включают [услуги лучевой диагностики TXMK](ValueSet-txmk-imaging-vs.html).
+[Коды процедур](ValueSet-procedure-code-vs.html), к которым привязан `code` в UZ Core Procedure и UZ Core ActivityDefinition, и [процедуры и исследования ServiceRequest](ValueSet-service-request-code-vs.html), к которым привязан `code` в UZ Core ServiceRequest, теперь включают [услуги лучевой диагностики TXMK](ValueSet-txmk-radiology-vs.html).
 
 [Переводы статусов MedicationRequest](CodeSystem-medicationrequest-status-cs.html) теперь называют `ended` по-русски «Окончено» вместо «Завершено», которое совпадало с `completed`.
 

@@ -1,9 +1,9 @@
-ValueSet: TXMKImagingVS
-Id: txmk-imaging-vs
+ValueSet: TXMKRadiologyVS
+Id: txmk-radiology-vs
 Title: "TXMK radiology and nuclear medicine service"
 Description: "TXMK radiology and nuclear medicine services"
 
-* ^url = "https://terminology.dhp.uz/fhir/core/ValueSet/txmk-imaging-vs"
+* ^url = "https://terminology.dhp.uz/fhir/core/ValueSet/txmk-radiology-vs"
 * ^status = #draft
 * ^experimental = true
 
