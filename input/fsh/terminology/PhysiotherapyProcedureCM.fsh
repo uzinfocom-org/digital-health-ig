@@ -25,14 +25,14 @@ Description: "Maps local UZ PhysiotherapyProcedureCS codes to SNOMED CT."
 * group.element[=].target[+].code = #182627008
 * group.element[=].target[=].display = "Aerotherapy"
 * group.element[=].target[=].relationship = #related-to
-* group.element[=].target[=].comment = "Air-ion therapy is not demonstrably a subtype of aerotherapy without checking the target concept definition."
+* group.element[=].target[=].comment = "Air-ion therapy uses ionised air, which aerotherapy does not specify; the two overlap but neither is a subtype of the other."
 
 * group.element[+].code = #proce-0001-00003
 * group.element[=].display = "Baroterapiya"
-* group.element[=].target[+].code = #44387004
-* group.element[=].target[=].display = "Decompression chamber therapy"
+* group.element[=].target[+].code = #18678000
+* group.element[=].target[=].display = "Hyperbaric oxygen therapy"
 * group.element[=].target[=].relationship = #source-is-broader-than-target
-* group.element[=].target[=].comment = "Barotherapy encompasses pressure-based modalities broader than decompression-chamber treatment."
+* group.element[=].target[=].comment = "Barotherapy covers both raised and lowered pressure; hyperbaric oxygen therapy is its main form."
 
 * group.element[+].code = #proce-0001-00004
 * group.element[=].display = "Gidroterapiya (suv bilan davolash)"
@@ -51,7 +51,7 @@ Description: "Maps local UZ PhysiotherapyProcedureCS codes to SNOMED CT."
 * group.element[=].target[+].code = #229564002
 * group.element[=].target[=].display = "Direct current therapy"
 * group.element[=].target[=].relationship = #source-is-narrower-than-target
-* group.element[=].target[=].comment = "Hydrogalvanic baths include a bathing component that is not represented in direct-current therapy."
+* group.element[=].target[=].comment = "Hydrogalvanic baths are direct-current therapy delivered through bath water."
 
 * group.element[+].code = #proce-0001-00007
 * group.element[=].display = "Mineral vannalar"

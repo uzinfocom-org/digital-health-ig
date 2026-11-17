@@ -165,6 +165,7 @@ Alias: $ucum = http://unitsofmeasure.org
 Alias: $ucum-vs = http://terminology.hl7.org/ValueSet/ucum-common
 Alias: $unknownpatient = https://dhp.uz/fhir/core/sid/pid/uz/mrt
 Alias: $usage-context-type = http://terminology.hl7.org/CodeSystem/usage-context-type
+Alias: $uz-core-servicerequest = https://dhp.uz/fhir/core/StructureDefinition/uz-core-servicerequest
 Alias: $variable = http://hl7.org/fhir/StructureDefinition/variable
 Alias: $uzpharm-agency = https://uzpharmagency.uz/pharm_id
 Alias: $uzpharmBoxGroupID = https://uzpharminfo.uz/box_group_id

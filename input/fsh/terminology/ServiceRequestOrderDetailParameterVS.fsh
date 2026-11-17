@@ -6,5 +6,3 @@ Description: "ServiceRequest order detail parameters"
 * ^experimental = true
 
 * $sct#410675002 "Route of administration"
-* $sct#410670007 "Time"
-* $sct#246205007 "Quantity"
