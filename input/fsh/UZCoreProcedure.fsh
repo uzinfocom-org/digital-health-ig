@@ -45,6 +45,10 @@ Description: "Uzbekistan Core Procedure Profile, used for documenting an action 
 * complication ^binding.additional[=].valueSet = Canonical(ProcedureComplicationVS)
 * complication ^binding.additional[=].usage.code = $uz-core-procedure#Procedure.code
 * complication ^binding.additional[=].usage.valueCodeableConcept = $sct#25179006 "Whole blood unit collection"
+* complication ^binding.additional[+].purpose = #preferred
+* complication ^binding.additional[=].valueSet = Canonical(BloodTransfusionComplicationVS)
+* complication ^binding.additional[=].usage.code = $uz-core-procedure#Procedure.code
+* complication ^binding.additional[=].usage.valueCodeableConcept = $sct#116859006 "Transfusion of blood product"
 * complication only CodeableReference(UZCoreCondition)
 
 * basedOn only Reference(UZCoreCarePlan or ServiceRequest)
