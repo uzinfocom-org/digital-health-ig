@@ -118,7 +118,6 @@ Description: "Example ServiceRequest instance for UZCore."
 * specimen[0] = Reference(Specimen/example-specimen-blood-cbc)
 * note[0].text = "Please perform CBC urgently."
 
-
 Instance: example-electrophoresis-request
 InstanceOf: UZCoreServiceRequest
 Usage: #example
@@ -144,3 +143,22 @@ Description: "Order for a course of ten daily drug electrophoresis sessions at a
 * performer[0] = Reference(PractitionerRole/example-physiotherapist-role)
 * reason[0].reference = Reference(Condition/example-foot-pain)
 * note[0].text = "O'ng oyoqqa 10 seans, kuniga bir marta"
+
+Instance: example-servicerequest-txmk-brain-ct
+InstanceOf: UZCoreServiceRequest
+Title: "Example UZ Core ServiceRequest - TXMK Brain CT"
+Description: "A doctor orders a computed tomography of the brain for a patient admitted with migraine, coded with the TXMK national classifier of medical services."
+Usage: #example
+* language = #uz
+* status = $service-request-status#active
+* intent = $request-intent#order
+* category[dhpCategory] = $sct#363679005
+* priority = #urgent
+* doNotPerform = false
+* code = TXMKCS#5204488 "Bosh miyaning kompyuter tomografiyasi"
+* subject = Reference(example-patient)
+* encounter = Reference(example-encounter)
+* occurrenceDateTime = "2024-01-01T15:40:00+05:00"
+* authoredOn = "2024-01-01T15:15:00+05:00"
+* requester = Reference(example-practitioner)
+* reason[0].reference = Reference(example-headache)

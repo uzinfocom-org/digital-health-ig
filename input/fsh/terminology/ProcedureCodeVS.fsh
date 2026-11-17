@@ -1,7 +1,7 @@
 ValueSet: ProcedureCodeVS
 Id: procedure-code-vs
 Title: "Procedure code"
-Description: "Procedure codes used in the Uzbekistan Digital Health Platform: SNOMED CT for clinical meaning, ICHI for statistical reporting."
+Description: "Procedure codes used in the Uzbekistan Digital Health Platform: SNOMED CT for clinical meaning, ICHI for statistical reporting, and TXMK diagnostic imaging services."
 * ^url = "https://terminology.dhp.uz/fhir/core/ValueSet/procedure-code-vs"
 * ^status = #active
 * ^experimental = true
@@ -64,6 +64,7 @@ Description: "Procedure codes used in the Uzbekistan Digital Health Platform: SN
 * include physiotherapy-procedure-cs#proce-0001-00069 "Flyuktuorizatsiya"
 * include physiotherapy-procedure-cs#proce-0001-00071 "Elektrosuyqu terapiyasi"
 * include physiotherapy-procedure-cs#proce-0001-00072 "Elektrotrankvilizatsiya"
+* include codes from valueset TXMKRadiologyVS
 
 // * include $sct#33879002
 // * include $sct#20135006

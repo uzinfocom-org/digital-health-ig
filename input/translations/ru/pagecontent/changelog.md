@@ -38,6 +38,8 @@
 
 [Лекарственные формы](CodeSystem-medication-doseform-cs.html) дополнены кодами `CTP101` катаплазма, `DRS101` повязка лекарственная, `HRB101` сырьё растительное лекарственное, `JEL101` желе лекарственное, `KIT101` набор, `LOT101` лосьон, `SHA101` шампунь лекарственный, `SUB101` субстанция и `TEA101` сбор лекарственный растительный с названиями на узбекском, русском и английском - для лекарственных форм электронного рецепта DMED и реестра лекарственных средств Фармкомитета, у которых не было кода.
 
+[Национальный классификатор медицинских услуг Узбекистана (TXMK)](CodeSystem-txmk-cs.html) содержит 10 699 медицинских услуг национального классификатора с названиями на узбекском, русском и английском языках. Та же система кодов содержит 29 групп услуг, используемых как категории. Из них выбирают наборы значений [категорий услуг](ValueSet-txmk-service-categories-vs.html), [названий услуг](ValueSet-txmk-service-names-vs.html) и [услуг лучевой диагностики](ValueSet-txmk-radiology-vs.html). Их использует пример [первичного приёма врача TXMK](HealthcareService-example-healthcareservice-txmk-initial-visit.html).
+
 [Поиск](search.html), который открывается из нового поля в шапке страницы, находит ресурсы по заголовку, имени, URL или описанию, а также коды, термины и сопоставления в системах кодов, наборах значений и ConceptMap на английском, русском и узбекском языках. Результаты можно отфильтровать по типу ресурса, чтобы перед добавлением нового кода проверить, нет ли его уже.
 
 [Причины статуса MedicationRequest](ValueSet-medicationrequest-status-reason-vs.html) дополнены кодом SNOMED CT `438833006` (применение лекарственного средства противопоказано) с названиями на узбекском и русском в [supplement](CodeSystem-medicationrequest-status-reason-sct-cs.html) - для отмены электронного рецепта DMED.
@@ -58,6 +60,8 @@ JSON-копия ресурса на каждом языке теперь сох�
 
 [Supplement FHIR-типов](CodeSystem-fhir-types-cs.html) давал каждому типу ресурса перевод его определения вместо названия. Теперь у каждого типа есть узбекское и русское название, например "Bemor" и "Пациент" для `Patient`, с отметкой `preferredForLanguage`, поэтому `$lookup` с `displayLanguage` возвращает название. Переведённые определения остаются обозначениями с use SNOMED CT `900000000000550004` Definition.
 
+[UZ Core HealthcareService](StructureDefinition-uz-core-healthcareservice.html) получил слайсы Must Support для категории и услуги TXMK в `category` и `type`. [Категории услуг](ValueSet-service-categories-vs.html), к которым привязан слайс лабораторной категории, теперь включают и лабораторные категории.
+
 [UZ Core Medication](StructureDefinition-uz-core-medication.html) больше не требует `identifier`. У каждого Medication должен быть идентификатор или код (инвариант `uzcore-med-1`), поэтому лекарство, назначенное по МНН, как в электронных рецептах DMED, можно передать только с кодом МНН или ATC, пока аптека не указала конкретный препарат.
 
 [UZ Core MedicationRequest](StructureDefinition-uz-core-medicationrequest.html) привязывает `statusReason` как extensible вместо required.
@@ -77,6 +81,8 @@ JSON-копия ресурса на каждом языке теперь сох�
 [Карта единиц измерения](ConceptMap-unit-of-measurement-cm.html): `270` единица действия биологической активности на миллилитр сопоставлена с `U/mL` вместо `[arb'U]/mL`, а `275` единица полуинфицирующей дозы шире `[CCID_50]` вместо эквивалентности ей.
 
 [Коды аллергенов](ValueSet-allergen-codes-vs.html) теперь включают и [МНН лекарств](CodeSystem-inn-medication-name-cs.html), поэтому аллергию на лекарство можно указать по действующему веществу. [Пример аллергии на анальгетик](AllergyIntolerance-example-analgesic-allergy.html) теперь кодирует парацетамол по МНН.
+
+[Коды процедур](ValueSet-procedure-code-vs.html), к которым привязан `code` в UZ Core Procedure и UZ Core ActivityDefinition, и [процедуры и исследования ServiceRequest](ValueSet-service-request-code-vs.html), к которым привязан `code` в UZ Core ServiceRequest, теперь включают [услуги лучевой диагностики TXMK](ValueSet-txmk-radiology-vs.html).
 
 [Переводы статусов MedicationRequest](CodeSystem-medicationrequest-status-cs.html) теперь называют `ended` по-русски «Окончено» вместо «Завершено», которое совпадало с `completed`.
 

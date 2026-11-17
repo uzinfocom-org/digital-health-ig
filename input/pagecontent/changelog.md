@@ -48,6 +48,8 @@ Every profile page now has a narrative intro and a Quick Start. New ones were ad
 
 [UZ Core SupplyRequest](StructureDefinition-uz-core-supply-request.html) adds a [group identifier](StructureDefinition-supplyrequest-group-identifier.html) extension carrying a [supply group number](NamingSystem-uzb-supply-group-number.html) shared by requests placed together, so that the supplier handles them as one order. FHIR R5 has no element for this; the extension pre-adopts `SupplyRequest.groupIdentifier` from the HL7 Orders and Observations incubator. The new [group identifier search parameter](SearchParameter-uz-core-supplyrequest-group-identifier.html), `group-identifier`, finds all requests in a group. Two examples show red blood cells and fresh frozen plasma ordered together for the same operation.
 
+[Uzbekistan national medical services classifier (TXMK)](CodeSystem-txmk-cs.html) holds the 10,699 medical services of the national classifier with Uzbek, Russian and English names. The same code system holds the 29 service groups used as categories. Value sets select from them for [service categories](ValueSet-txmk-service-categories-vs.html), [service names](ValueSet-txmk-service-names-vs.html) and [diagnostic imaging services](ValueSet-txmk-radiology-vs.html). The [TXMK initial physician visit](HealthcareService-example-healthcareservice-txmk-initial-visit.html) example uses them.
+
 #### Changed
 
 [Allergen codes](ValueSet-allergen-codes-vs.html) now also include [INN medicine names](CodeSystem-inn-medication-name-cs.html), so a drug allergy can name the active substance. The [analgesic allergy example](AllergyIntolerance-example-analgesic-allergy.html) now codes paracetamol by its INN.
@@ -66,6 +68,8 @@ Mapping quality fixes found by the IG Publisher 3.0.1 ConceptMap checks. In the 
 
 [MedicationRequest status translations](CodeSystem-medicationrequest-status-cs.html) now give `ended` the Russian name «Окончено» instead of «Завершено», which duplicated `completed`.
 
+[Procedure code](ValueSet-procedure-code-vs.html), bound to `code` in UZ Core Procedure and UZ Core ActivityDefinition, and [ServiceRequest procedures and investigations](ValueSet-service-request-code-vs.html), bound to `code` in UZ Core ServiceRequest, now include the [TXMK diagnostic imaging services](ValueSet-txmk-radiology-vs.html).
+
 Removed a trailing newline from the BloodProductInventoryItem CSV folder name so the repository can be checked out on Windows.
 
 The [example practitioner](Practitioner-example-practitioner.html) and the specialist certificate examples now use a made-up PINFL, certificate number and dates.
@@ -77,6 +81,8 @@ The [Procedure example](Procedure-example-procedure.html) now points at an [outp
 Titles and descriptions of code systems and value sets now follow the naming pattern in the [modelling guidelines](https://github.com/uzinfocom-org/digital-health-ig/blob/main/modelling-guidelines.md): a supplement is `[Concept] translations`, a value set is `[Concept]`, and titles no longer carry words such as "CodeSystem" or "ValueSet". Canonical URLs, ids and codes are unchanged.
 
 [Unit of measurement map](ConceptMap-unit-of-measurement-cm.html) maps `270` unit of biological activity per millilitre to `U/mL` instead of `[arb'U]/mL`, and `275` semi-infectious dose unit is broader than `[CCID_50]` instead of equivalent to it.
+
+[UZ Core HealthcareService](StructureDefinition-uz-core-healthcareservice.html) has new Must Support slices for the TXMK service category and service in `category` and `type`. [Service categories](ValueSet-service-categories-vs.html), which the laboratory category slice is bound to, now also include the laboratory categories.
 
 [UZ Core Medication](StructureDefinition-uz-core-medication.html) no longer requires an `identifier`. Each Medication must have an identifier or a code (invariant `uzcore-med-1`), so a medicine prescribed by its INN, as in DMED e-prescriptions, can be sent with only its INN or ATC code before the pharmacy names the product.
 

@@ -20,6 +20,8 @@ Endi har bir profil sahifasida kirish qismi va Tez boshlash bo'limi bor. Ular [U
 
 [O'lchov birliklari xaritasi](ConceptMap-unit-of-measurement-cm.html): UCUM kodi bo'lmagan 30 ta birlik uchun UCUM kodlari qo'shildi, masalan xalqaro birlik `[iU]`, dozaga milligramm `mg/{dose}`, litrga gramm `g/L` va koloniya hosil qiluvchi birlik `[CFU]`.
 
+[O'zbekiston tibbiy xizmatlar milliy klassifikatori (TXMK)](CodeSystem-txmk-cs.html) milliy klassifikatorning 10 699 ta tibbiy xizmatini o'zbek, rus va ingliz tillaridagi nomlari bilan birga toifa sifatida ishlatiladigan 29 ta xizmat guruhini ham o'z ichiga oladi. Ulardan [xizmat kategoriyalari](ValueSet-txmk-service-categories-vs.html), [xizmat nomlari](ValueSet-txmk-service-names-vs.html) va [nurli diagnostika xizmatlari](ValueSet-txmk-radiology-vs.html) qiymatlar to'plamlari tanlanadi. Ulardan [TXMK shifokorning birlamchi qabuli](HealthcareService-example-healthcareservice-txmk-initial-visit.html) namunasi foydalanadi.
+
 [Qidiruv](search.html) sahifa sarlavhasidagi yangi maydondan ochiladi. U resurslarni sarlavhasi, nomi, URL yoki tavsifi bo'yicha, shuningdek kod tizimlari, qiymatlar to'plamlari va ConceptMaplardagi kodlar, atamalar va moslashtirishlarni ingliz, rus va o'zbek tillarida topadi. Natijalarni resurs turi bo'yicha filtrlash mumkin, shuning uchun yangi kod qo'shishdan oldin u allaqachon bor-yo'qligini tekshirish mumkin.
 
 [Qon mahsuloti turlari](ValueSet-blood-product-type-snomed-vs.html) ga SNOMED CT `789265003` (inson albumini) kodi o'zbek va rus tilidagi nomlari bilan [supplement](CodeSystem-blood-product-type-snomed-cs.html) da qo'shildi.
@@ -66,6 +68,8 @@ Kod tizimlari va qiymatlar to'plamlarining sarlavhalari va tavsiflari endi [mode
 
 [MedicationRequest holatlari tarjimalari](CodeSystem-medicationrequest-status-cs.html) endi `ended` ni ruschada «Окончено» deb ataydi, avvalgi «Завершено» `completed` bilan bir xil edi.
 
+[Muolaja kodlari](ValueSet-procedure-code-vs.html) (UZ Core Procedure va UZ Core ActivityDefinition profillaridagi `code`) va [ServiceRequest muolajalari va tekshiruvlari](ValueSet-service-request-code-vs.html) (UZ Core ServiceRequest profilidagi `code`) endi [TXMK nurli diagnostika xizmatlari](ValueSet-txmk-radiology-vs.html)ni ham o'z ichiga oladi.
+
 Namunalar endi HL7 kodlarining display qiymatini HL7 terminologiyasidagi display qiymatidan farq qilgan yoki o'zbek yoki rus tilida yozilgan joylarda belgilamaydi: Organization namunalaridagi `XX` identifikator turi, Encounter namunasidagi sinf va ustuvorlik, Immunization namunasidagi yuborish joyi, Patient namunalaridagi oilaviy holat, Goal namunasidagi erishish holati va ustuvorlik, Condition namunasidagi klinik holat, tasdiqlash holati va ishtirokchi funksiyasi, Medication namunalaridagi holat hamda RelatedPerson namunasidagi qarindoshlik. Olib tashlangan o'zbekcha va ruscha display qiymatlari ushbu kod tizimlarining tarjima qo'shimchalarida mavjud. [Tibbiy karta raqami](NamingSystem-patient-id-uzb-health-card.html) va [pensiya raqami](NamingSystem-patient-id-uzb-pension-number.html) nomlash tizimlari endi identifikator turi display qiymatlarini HL7 terminologiyasidagidek "Health Card Number" va "Pension Number" deb yozadi.
 
 [O'lchov birliklari xaritasi](ConceptMap-unit-of-measurement-cm.html): `270` millilitrda biologik faollikning taʼsir birligi `[arb'U]/mL` o'rniga `U/mL` bilan bog'landi, `275` yarim yuqumli doza birligi esa `[CCID_50]` ga ekvivalent emas, undan kengroq.
@@ -74,14 +78,13 @@ Namunalar endi HL7 kodlarining display qiymatini HL7 terminologiyasidagi display
 
 [Procedure namunasi](Procedure-example-procedure.html) endi boshqa bemorning tashrifi va holati o'rniga xuddi shu bemorning [ambulator fizioterapiya tashrifi](Encounter-example-physiotherapy-encounter.html) va [o'ng oyoq panjasidagi og'riq](Condition-example-foot-pain.html) holatiga havola qiladi.
 
+[UZ Core HealthcareService](StructureDefinition-uz-core-healthcareservice.html) `category` va `type` elementlarida TXMK kategoriyasi va xizmati uchun Must Support slayclarini oldi. Laboratoriya kategoriyasi slayci bog'langan [xizmat kategoriyalari](ValueSet-service-categories-vs.html) endi laboratoriya kategoriyalarini ham o'z ichiga oladi.
+
 [UZ Core Medication](StructureDefinition-uz-core-medication.html) endi `identifier` ni talab qilmaydi. Har bir Medication da identifikator yoki kod bo'lishi shart (`uzcore-med-1` invarianti), shuning uchun INN bo'yicha tayinlangan dorini, masalan DMED elektron retseptlarida, dorixona aniq mahsulotni ko'rsatguncha faqat INN yoki ATC kodi bilan yuborish mumkin.
 
 [UZ Core MedicationRequest](StructureDefinition-uz-core-medicationrequest.html) endi `statusReason` ni required o'rniga extensible bog'laydi.
 
 [UZ Core Observation](StructureDefinition-uz-core-observation.html), [UZ Core Immunization](StructureDefinition-uz-core-immunization.html) va [UZ Core Procedure](StructureDefinition-uz-core-procedure.html) dagi `basedOn` endi istalgan CarePlan emas, UZ Core CarePlan ga havola qiladi.
-
-[UZ Core Observation](StructureDefinition-uz-core-observation.html), [UZ Core Immunization](StructureDefinition-uz-core-immunization.html) va [UZ Core Procedure](StructureDefinition-uz-core-procedure.html) dagi `basedOn` endi istalgan CarePlan emas, UZ Core CarePlan ga havola qiladi.
-BloodProductInventoryItem CSV papkasi nomining oxiridagi yangi qator belgisi olib tashlandi, shunda repozitoriyni Windows tizimida klonlash mumkin.
 
 [UZ Core Organization](StructureDefinition-uz-core-organization.html) va [UZ Core RelatedPerson](StructureDefinition-uz-core-relatedperson.html) endi identifikator turining display qiymatini qat'iy belgilamaydi: `mohId` va `argosId` bo'laklari faqat tizim va `XX` kodini, `healthCard` esa faqat `HC` kodini belgilaydi. Belgilangan "Organization Identifier" va "Health card number" display qiymatlari HL7 terminologiyasidagi "Organization identifier" va "Health Card Number" bilan mos kelmagani sababli profilga mos har bir namuna terminologiya ogohlantirishini olardi. Endi identifikator turi ushbu display qiymatlaridan istalgani bilan yoki usiz profilga mos keladi.
 

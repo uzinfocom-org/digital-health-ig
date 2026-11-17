@@ -629,14 +629,13 @@ msgstr ""
 
 # ImplementationGuide.definition.resource.name
 #: ImplementationGuide.definition.resource.name
-msgid "Cancer-related service category"
-msgstr "Onkologik xizmat toifasi"
+msgid "Service category"
+msgstr "Xizmat toifasi"
 
 # ImplementationGuide.definition.resource.description
 #: ImplementationGuide.definition.resource.description
-msgid "Cancer-related service categories"
-msgstr "Onkologik xizmat toifalari"
-"Saraton bilan bog‘liq xizmatlar toifalarini o‘zbek va rus tillaridabelgilaydi"
+msgid "Service categories"
+msgstr "Xizmat toifalari"
 
 # ImplementationGuide.definition.resource.name
 #: ImplementationGuide.definition.resource.name
