@@ -1,4 +1,4 @@
-UZ Core Flag records a prospective warning or notification about a [UZ Core Patient](StructureDefinition-uz-core-patient.html) that users of the Digital Health Platform should be aware of when dealing with that patient. The flag code currently covers blood donation eligibility: whether the patient may donate blood or is under a medical deferral. A flag can be linked to the [UZ Core Encounter](StructureDefinition-uz-core-encounter.html) in which it was raised and to its author.
+UZ Core Flag records a prospective warning or notification about a [UZ Core Patient](StructureDefinition-uz-core-patient.html) that users of the Digital Health Platform should be aware of when dealing with that patient. The flag code currently covers blood donation eligibility: whether the patient may donate blood or is under a temporary or permanent medical deferral. A flag can be linked to the [UZ Core Encounter](StructureDefinition-uz-core-encounter.html) in which it was raised and to its author.
 
 ### Mandatory and Must Support data elements
 
@@ -12,7 +12,7 @@ Every Flag must carry a `status`, a `code` saying what the flag is about, and a 
 
 - a business `identifier` with its `system`, when the source system assigns one;
 - the `status` of the flag (active / inactive / entered-in-error) - it describes the flag itself, not what the flag records, so a medical deferral that still applies is an `active` flag;
-- the `code` - what the flag is about (eligible for blood donation / medical deferral);
+- the `code` - what the flag is about (eligible for blood donation / temporary or permanent medical deferral);
 - the `subject` - the patient the flag is about.
 
 The `category` (administrative, clinical and so on), the `period` the flag applies to, the [Encounter](StructureDefinition-uz-core-encounter.html) in which it was raised and its `author` ([Practitioner](StructureDefinition-uz-core-practitioner.html), [PractitionerRole](StructureDefinition-uz-core-practitioner-role.html), [Organization](StructureDefinition-uz-core-organization.html), [Device](StructureDefinition-uz-core-device.html), [Patient](StructureDefinition-uz-core-patient.html) or [RelatedPerson](StructureDefinition-uz-core-relatedperson.html)) are optional; send them when known.
@@ -46,7 +46,7 @@ A minimal Flag needs its status, the blood donation eligibility decision and the
 
 #### An earlier eligibility decision
 
-Add the HL7 flag category, the period and the author. HL7 category codes keep their original system. This flag is `inactive`: it stopped applying when the deferral below was recorded, and `period.end` holds that time. An active flag leaves `period.end` empty:
+Add the HL7 flag category, the period and the author. HL7 category codes keep their original system. This flag is `inactive`: it stopped applying when the deferral below was recorded, and `period.end` holds that time. An active flag leaves `period.end` empty, unless it is a temporary deferral:
 
 ```json
 {
@@ -80,7 +80,7 @@ Add the HL7 flag category, the period and the author. HL7 category codes keep th
 
 #### A medical deferral
 
-A deferral uses the `blood-donation-deferred` code and stays `active`, with no `period.end`, while it applies:
+A medical deferral is temporary or permanent. A temporary deferral uses `blood-donation-deferred-temporary` and sets `period.end` to when it ends; the flag stays `active` until then, so read `period.end` together with `status` to tell whether it still applies. A permanent deferral uses `blood-donation-deferred-permanent` and has no `period.end` while it applies. To lift either one early, set `status` to `inactive` and `period.end` to the time it was lifted:
 
 ```json
 {
@@ -99,16 +99,19 @@ A deferral uses the `blood-donation-deferred` code and stays `active`, with no `
   "code": {
     "coding": [{
       "system": "https://terminology.dhp.uz/fhir/core/CodeSystem/blood-donor-eligibility-cs",
-      "code": "blood-donation-deferred",
-      "display": "Tibbiy sabablarga ko'ra qon donorligidan chetlatilgan"
+      "code": "blood-donation-deferred-temporary",
+      "display": "Tibbiy sabablarga ko'ra qon donorligidan vaqtincha chetlatilgan"
     }]
   },
   "subject": { "reference": "Patient/example-salim" },
-  "period": { "start": "2026-11-09T09:00:00+05:00" },
+  "period": {
+    "start": "2026-11-09T09:00:00+05:00",
+    "end": "2027-05-09T09:00:00+05:00"
+  },
   "author": { "reference": "Practitioner/example-practitioner" }
 }
 ```
 
-The complete FSH examples are the [minimal flag](Flag-example-donation-minimal-flag.html), the [eligible donor flag](Flag-example-donation-eligible-flag.html) and the [medical deferral flag](Flag-example-donation-deferred-flag.html).
+The complete FSH examples are the [minimal flag](Flag-example-donation-minimal-flag.html), the [eligible donor flag](Flag-example-donation-eligible-flag.html) and the [temporary medical deferral flag](Flag-example-donation-deferred-flag.html).
 
 For example API calls, see the [Quick Start](#quick-start) at the bottom of this page.
