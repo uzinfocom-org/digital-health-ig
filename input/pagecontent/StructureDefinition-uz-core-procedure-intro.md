@@ -19,7 +19,7 @@ This profile adds no mandatory cardinality of its own. The required elements are
 - the occurrence[x] timing, the recorded date, and the recorder;
 - the performer and their actor;
 - the location, the reason (a condition, observation, procedure, report, or document), and the bodySite;
-- the outcome and free-text note;
+- the outcome, any complications (each a condition), and free-text note;
 - the items used in the procedure.
 
 > Set `status` to `not-done` (rather than omitting the Procedure) when an ordered procedure was deliberately not performed, so the decision stays on the record.

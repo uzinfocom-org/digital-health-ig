@@ -21,7 +21,7 @@ Bu profil o'zining hech qanday majburiy kardinalligini qo'shmaydi. Talab qilinad
 - occurrence[x] vaqti, qayd etilgan sana va qayd etuvchi;
 - ijrochi va uning aktori;
 - joylashuv, sabab (holat, kuzatuv, protsedura, hisobot yoki hujjat) va bodySite;
-- natija (outcome) va erkin matnli eslatma;
+- natija (outcome), asoratlar (complication, har biri - holat) va erkin matnli eslatma;
 - protsedurada ishlatilgan buyumlar.
 
 > Buyurtma qilingan protsedura ataylab bajarilmaganda `status` ni `not-done` ga o'rnating (Procedure ni o'tkazib yuborish o'rniga), shunda qaror yozuvda saqlanib qoladi.

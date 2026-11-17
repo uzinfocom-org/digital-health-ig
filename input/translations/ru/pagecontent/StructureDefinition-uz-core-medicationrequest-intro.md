@@ -201,6 +201,6 @@ UZ Core MedicationRequest - это электронный рецепт: назн
 }
 ```
 
-`statusReason` имеет обязательную (required) связку с набором значений [причин статуса](ValueSet-medicationrequest-status-reason-vs.html); `salg` означает, что у пациента развилась аллергия. Полностью отпущенный рецепт переходит в статус `completed`.
+`statusReason` имеет расширяемую (extensible) связку с набором значений [причин статуса](ValueSet-medicationrequest-status-reason-vs.html); `salg` означает, что у пациента развилась аллергия. Полностью отпущенный рецепт переходит в статус `completed`.
 
 Примеры вызовов API приведены в разделе [Быстрый старт](#quick-start) внизу этой страницы.
