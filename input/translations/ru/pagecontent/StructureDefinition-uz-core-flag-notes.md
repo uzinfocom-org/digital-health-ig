@@ -13,7 +13,7 @@ GET [base]/Flag/[id]
 **Поиск отметок**
 
 ```
-GET [base]/Flag?patient=Patient/[id]&status=active&code=blood-donation-deferred
+GET [base]/Flag?patient=Patient/[id]&status=active&code=blood-donation-deferred-temporary,blood-donation-deferred-permanent
 GET [base]/Flag?patient=Patient/[id]&status=active
 GET [base]/Flag?patient=Patient/[id]&category=http://terminology.hl7.org/CodeSystem/flag-category%7Cclinical
 GET [base]/Flag?identifier=[system]%7C[value]
@@ -22,7 +22,7 @@ GET [base]/Flag?author=Practitioner/[id]
 GET [base]/Flag?date=ge2026-01-01
 ```
 
-`code` - [параметр поиска UZ Core](SearchParameter-uz-core-flag-code.html): в FHIR R5 такого параметра для `Flag.code` нет. Первый запрос находит действующие медицинские отводы пациента.
+`code` - [параметр поиска UZ Core](SearchParameter-uz-core-flag-code.html): в FHIR R5 такого параметра для `Flag.code` нет. Первый запрос находит действующие медицинские отводы пациента; временный отвод, у которого `period.end` уже прошёл, больше не действует.
 
 **Создание**
 
@@ -38,7 +38,7 @@ POST [base]/Flag
   "code": {
     "coding": [{
       "system": "https://terminology.dhp.uz/fhir/core/CodeSystem/blood-donor-eligibility-cs",
-      "code": "blood-donation-deferred"
+      "code": "blood-donation-deferred-permanent"
     }]
   },
   "subject": { "reference": "Patient/[id]" },
