@@ -1,4 +1,4 @@
-{%- for c in include.concepts -%}
-,["c",{{ c.code | jsonify }},{{ c.display | default: "" | jsonify }}{%- for d in c.designation -%},{{ d.language | default: "" | jsonify }},{{ d.value | jsonify }}{%- endfor -%}]
+{%- for c in include.concepts offset: include.from limit: include.len -%}
+,[{{ c.code | jsonify }},{{ c.display | default: "" | jsonify }}{%- for d in c.designation -%}{%- if d.value != c.display -%},{{ d.language | default: "" | jsonify }},{{ d.value | jsonify }}{%- endif -%}{%- endfor -%}]
 {% if c.concept %}{% include search-index-concepts.html concepts=c.concept %}{% endif -%}
 {%- endfor -%}
