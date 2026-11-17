@@ -20,7 +20,7 @@ Description: "MedicationRequest status supplement with translations in Uzbek and
   * ^designation[0].language = #uz
   * ^designation[=].value = "Tugadi"
   * ^designation[+].language = #ru
-  * ^designation[=].value = "Завершено"
+  * ^designation[=].value = "Окончено"
 
 * #stopped "Stopped" "Actions implied by the prescription are to be permanently halted."
   * ^designation[0].language = #uz

@@ -8,7 +8,7 @@ Quyidagi elementlar har doim mavjud bo'lishi (majburiy) yoki ma'lumot mavjud bo'
 
 #### Har bir UZ Core Medication quyidagilarga ega bo'lishi shart
 
-Ushbu profil qo'shadigan yagona majburiy element - kamida bitta identifikator; bazaviy Medication resursining o'z majburiy elementlari yo'q. Identifikator `system` bo'yicha slayslarga bo'lingan va har bir slays ichida `system` URI qat'iy belgilangan, shuning uchun qaysi milliy identifikatorni yuborayotganingizni aynan URI aytadi.
+Har bir UZ Core Medication da kamida `system` va `value` ga ega identifikator yoki kod bo'ladi (`uzcore-med-1` invarianti); bazaviy Medication resursining o'z majburiy elementlari yo'q. Milliy reyestrdagi mahsulot reyestr identifikatorlarini oladi. Xalqaro patentlanmagan nomi (INN) bo'yicha tayinlangan dori, masalan DMED elektron retseptlarida, hali reyestr mahsulotiga bog'lanmagan va faqat INN yoki ATC kodini oladi; aniq mahsulotni dorixona dori berishda ko'rsatadi. Identifikator `system` bo'yicha slayslarga bo'lingan va har bir slays ichida `system` URI qat'iy belgilangan, shuning uchun qaysi milliy identifikatorni yuborayotganingizni aynan URI aytadi.
 
 #### Har bir UZ Core Medication quyidagilarni qo'llab-quvvatlashi shart
 
@@ -47,11 +47,31 @@ Tizimsiz identifikator qidiruvi (`?identifier=UZ/MED/2024/00123`) qiymatni istal
 
 ### JSON ni bosqichma-bosqich qurish
 
-Quyidagi misollar serverning qabul qila oladigan eng kichik nusxasidan to to'liq tavsiflangan ro'yxatdan o'tgan mahsulotgacha boradi. Birini nusxalab oling va moslang - ko'rsatilgan har bir qiymat ushbu profilga muvofiq validatsiyadan o'tadi. To'liq ma'lumotnoma nusxalariga sahifaning pastki qismida havola qilingan ([paratsetamol tabletkalari](Medication-example-medication.html), [neomitsin tomchilari](Medication-example-neomycin-atc-medication.html), [naloksegol tabletkalari](Medication-example-naloxegol-atc-medication.html)).
+Quyidagi misollar serverning qabul qila oladigan eng kichik nusxasidan to to'liq tavsiflangan ro'yxatdan o'tgan mahsulotgacha boradi. Birini nusxalab oling va moslang - ko'rsatilgan har bir qiymat ushbu profilga muvofiq validatsiyadan o'tadi. To'liq ma'lumotnoma nusxalariga sahifaning pastki qismida havola qilingan ([paratsetamol tabletkalari](Medication-example-medication.html), [neomitsin tomchilari](Medication-example-neomycin-atc-medication.html), [naloksegol tabletkalari](Medication-example-naloxegol-atc-medication.html), [INN bo'yicha tayinlangan amoksitsillin](Medication-example-inn-medication.html)).
 
 #### Yuborishingiz kerak bo'lgan eng kichik Medication
 
-Bitta `identifier` - ushbu profil majburiy qiladigan yagona element. Har bir UZ Core resursi shuningdek o'zi muvofiq deb da'vo qilayotgan profilni `meta.profile` da ko'rsatishi shart - server qaysi qoidalar bo'yicha validatsiya qilishni shu orqali biladi. Amalda katalog yozuvi mahsulot nima ekanligini aytuvchi `code` va `status` siz foydasiz, shuning uchun ularni ham yuboring. Shuning o'zi allaqachon validatsiyadan o'tadi:
+Har bir UZ Core resursi o'zi muvofiq deb da'vo qilayotgan profilni `meta.profile` da ko'rsatishi shart - server qaysi qoidalar bo'yicha validatsiya qilishni shu orqali biladi. INN bo'yicha tayinlangan dori hali reyestr mahsulotiga bog'lanmagan, shuning uchun unga `code` va `status` yetarli. Shuning o'zi allaqachon validatsiyadan o'tadi:
+
+```json
+{
+  "resourceType": "Medication",
+  "meta": { "profile": ["https://dhp.uz/fhir/core/StructureDefinition/uz-core-medication"] },
+  "language": "en",
+  "code": {
+    "coding": [
+      {
+        "system": "https://terminology.dhp.uz/fhir/core/CodeSystem/inn-medication-name-cs",
+        "code": "005325",
+        "display": "paracetamol"
+      }
+    ]
+  },
+  "status": "active"
+}
+```
+
+Ro'yxatdan o'tgan mahsulot bunga qo'shimcha ravishda kamida bitta `identifier` bilan yuboriladi, unda `system` ham, `value` ham ko'rsatiladi:
 
 ```json
 {
