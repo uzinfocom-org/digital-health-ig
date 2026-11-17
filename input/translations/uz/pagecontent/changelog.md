@@ -2,7 +2,7 @@
 
 #### Qo'shildi
 
-[Composition hujjat turlari](CodeSystem-composition-type-cs.html): 399-son buyruqning 112-shakli - foliy kislotasi, 25-OH D vitamini va B12 vitaminiga IXLA tahlili uchun `emdoc-0010-0471` kodi qo'shildi.
+[Composition hujjat turlari](CodeSystem-composition-type-cs.html): 399-son buyruqning 112-shakli - foliy kislotasi, 25-OH D vitamini va B12 vitaminiga IXLA tahlili uchun `emdoc-0010-0471` kodi va ambulator tibbiy kartadan berilgan 027-shakl uchun `emdoc-0010-0472` kodi qo'shildi; `emdoc-0010-0106` statsionar bemor kartasidan ko'chirma bo'lib qoladi.
 
 [Dori shakllari](CodeSystem-medication-doseform-cs.html): DMED elektron retsepti va Farmatsevtika qo'mitasi dori vositalari reyestrining kodi bo'lmagan dori shakllari uchun `CTP101` kataplazma, `DRS101` dorivor bog'lam, `HRB101` dorivor o'simlik xomashyosi, `JEL101` dorivor jele, `KIT101` to'plam, `LOT101` losyon, `SHA101` dorivor shampun, `SUB101` substansiya va `TEA101` dorivor o'simliklar yig'masi kodlari o'zbek, rus va ingliz tilidagi nomlari bilan qo'shildi.
 
