@@ -1,6 +1,6 @@
 > **Mashina tarjimasi, inson tomonidan tekshirilishi zarur.** Ushbu sahifa ingliz tilidan sun'iy intellekt yordamida avtomatik tarjima qilingan va hali muharrir tomonidan tekshirilmagan. Har qanday nomuvofiqlikda asl inglizcha versiya ustuvor hisoblanadi.
 
-UZ Core Flag [UZ Core bemori](StructureDefinition-uz-core-patient.html) haqida Raqamli sog'liqni saqlash platformasi foydalanuvchilari shu bemor bilan ishlaganda bilishi kerak bo'lgan ogohlantirish yoki xabarni qayd etadi. Hozircha belgi kodi qon donorligiga ruxsatni qamrab oladi: bemor qon donori bo'lishi mumkinmi yoki tibbiy chetlatilganmi. Belgi u qo'yilgan [tashrif](StructureDefinition-uz-core-encounter.html) va muallifga havola berishi mumkin.
+UZ Core Flag [UZ Core bemori](StructureDefinition-uz-core-patient.html) haqida Raqamli sog'liqni saqlash platformasi foydalanuvchilari shu bemor bilan ishlaganda bilishi kerak bo'lgan ogohlantirish yoki xabarni qayd etadi. Hozircha belgi kodi qon donorligiga ruxsatni qamrab oladi: bemor qon donori bo'lishi mumkinmi yoki vaqtincha yoki doimiy tibbiy chetlatilganmi. Belgi u qo'yilgan [tashrif](StructureDefinition-uz-core-encounter.html) va muallifga havola berishi mumkin.
 
 ### Majburiy va Must Support ma'lumot elementlari
 
@@ -14,7 +14,7 @@ Har bir Flag da `status`, belgi nima haqida ekanini ko'rsatuvchi `code` va `subj
 
 - manba tizim bersa, `system` i bilan biznes-`identifier`;
 - belgining `status` i (active / inactive / entered-in-error) - u belgi qayd etgan narsani emas, belgining o'zini tavsiflaydi, shuning uchun amaldagi tibbiy chetlatish `active` holatidagi belgidir;
-- `code` - belgi nima haqida (qon donorligiga ruxsat / tibbiy chetlatish);
+- `code` - belgi nima haqida (qon donorligiga ruxsat / vaqtincha yoki doimiy tibbiy chetlatish);
 - `subject` - belgi tegishli bo'lgan bemor.
 
 `category` (ma'muriy, klinik va hokazo), belgining amal qilish `period` i, u qo'yilgan [tashrif](StructureDefinition-uz-core-encounter.html) va uning `author` i ([Practitioner](StructureDefinition-uz-core-practitioner.html), [PractitionerRole](StructureDefinition-uz-core-practitioner-role.html), [Organization](StructureDefinition-uz-core-organization.html), [Device](StructureDefinition-uz-core-device.html), [Patient](StructureDefinition-uz-core-patient.html) yoki [RelatedPerson](StructureDefinition-uz-core-relatedperson.html)) ixtiyoriy; ma'lum bo'lsa, ularni yuboring.
@@ -48,7 +48,7 @@ Minimal Flag holat, qon donorligiga ruxsat qarori va bemorni o'z ichiga oladi. Q
 
 #### Avvalgi ruxsat qarori
 
-HL7 belgi toifasini, davrni va muallifni qo'shing. HL7 toifa kodlari asl tizimini saqlaydi. Bu belgi `inactive`: u quyidagi chetlatish qayd etilganda amal qilishni to'xtatgan va `period.end` shu vaqtni saqlaydi. Amaldagi belgida `period.end` bo'sh qoladi:
+HL7 belgi toifasini, davrni va muallifni qo'shing. HL7 toifa kodlari asl tizimini saqlaydi. Bu belgi `inactive`: u quyidagi chetlatish qayd etilganda amal qilishni to'xtatgan va `period.end` shu vaqtni saqlaydi. Amaldagi belgida, agar u vaqtincha chetlatish bo'lmasa, `period.end` bo'sh qoladi:
 
 ```json
 {
@@ -82,7 +82,7 @@ HL7 belgi toifasini, davrni va muallifni qo'shing. HL7 toifa kodlari asl tizimin
 
 #### Tibbiy chetlatish
 
-Chetlatish uchun `blood-donation-deferred` kodi ishlatiladi; chetlatish amal qilayotgan paytda belgi `period.end` siz `active` bo'lib qoladi:
+Tibbiy chetlatish vaqtincha yoki doimiy bo'ladi. Vaqtincha chetlatishda `blood-donation-deferred-temporary` kodi ishlatiladi va `period.end` ga uning tugash vaqti yoziladi; shu vaqtgacha belgi `active` bo'lib qoladi, shuning uchun chetlatish hali amal qilayotganini bilish uchun `period.end` ni `status` bilan birga o'qing. Doimiy chetlatishda `blood-donation-deferred-permanent` kodi ishlatiladi va u amal qilayotgan paytda `period.end` bo'lmaydi. Ulardan birini muddatidan oldin bekor qilish uchun `status` ni `inactive` ga, `period.end` ni esa bekor qilingan vaqtga o'zgartiring:
 
 ```json
 {
@@ -101,16 +101,19 @@ Chetlatish uchun `blood-donation-deferred` kodi ishlatiladi; chetlatish amal qil
   "code": {
     "coding": [{
       "system": "https://terminology.dhp.uz/fhir/core/CodeSystem/blood-donor-eligibility-cs",
-      "code": "blood-donation-deferred",
-      "display": "Tibbiy sabablarga ko'ra qon donorligidan chetlatilgan"
+      "code": "blood-donation-deferred-temporary",
+      "display": "Tibbiy sabablarga ko'ra qon donorligidan vaqtincha chetlatilgan"
     }]
   },
   "subject": { "reference": "Patient/example-salim" },
-  "period": { "start": "2026-11-09T09:00:00+05:00" },
+  "period": {
+    "start": "2026-11-09T09:00:00+05:00",
+    "end": "2027-05-09T09:00:00+05:00"
+  },
   "author": { "reference": "Practitioner/example-practitioner" }
 }
 ```
 
-To'liq FSH misollari: [minimal belgi](Flag-example-donation-minimal-flag.html), [ruxsat belgisi](Flag-example-donation-eligible-flag.html) va [tibbiy chetlatish belgisi](Flag-example-donation-deferred-flag.html).
+To'liq FSH misollari: [minimal belgi](Flag-example-donation-minimal-flag.html), [ruxsat belgisi](Flag-example-donation-eligible-flag.html) va [vaqtincha tibbiy chetlatish belgisi](Flag-example-donation-deferred-flag.html).
 
 API chaqiruvlari misollari uchun ushbu sahifaning pastidagi [Tez boshlash](#quick-start) bo'limiga qarang.

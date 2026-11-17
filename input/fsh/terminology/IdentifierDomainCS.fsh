@@ -120,6 +120,15 @@ Description: """
       * ^property[=].valueString = Canonical(uzb-supply-contract-number)
       * ^property[+].code = #notSelectable
       * ^property[=].valueBoolean = false
+    * #https://dhp.uz/fhir/core/sid/doc/uz/supply-group "Group numbers linking supply requests placed together by requesting hospitals in Uzbekistan"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCoding = $identifier-type#PGN
+      * ^property[+].code = #country
+      * ^property[=].valueCoding = $iso-3166#UZ
+      * ^property[+].code = #naming-system
+      * ^property[=].valueString = Canonical(uzb-supply-group-number)
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
     * #https://dhp.uz/fhir/core/sid/doc/uz/supply-delivery "Supply delivery numbers assigned by suppliers such as blood services in Uzbekistan"
       * ^property[0].code = #idtype
       * ^property[=].valueCoding = $identifier-type#FILL

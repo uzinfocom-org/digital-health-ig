@@ -1,6 +1,6 @@
 > **Машинный перевод, требуется проверка человеком.** Эта страница автоматически переведена с английского языка с помощью искусственного интеллекта и пока не проверена редактором. При любых расхождениях приоритет имеет оригинальная англоязычная версия.
 
-UZ Core Flag фиксирует предупреждение или уведомление о [пациенте UZ Core](StructureDefinition-uz-core-patient.html), о котором пользователи Платформы цифрового здравоохранения должны знать при работе с этим пациентом. Сейчас код отметки охватывает допуск к донации крови: допущен ли пациент к донации крови или имеет медицинский отвод. Отметка может ссылаться на [посещение](StructureDefinition-uz-core-encounter.html), в ходе которого она создана, и на автора.
+UZ Core Flag фиксирует предупреждение или уведомление о [пациенте UZ Core](StructureDefinition-uz-core-patient.html), о котором пользователи Платформы цифрового здравоохранения должны знать при работе с этим пациентом. Сейчас код отметки охватывает допуск к донации крови: допущен ли пациент к донации крови или имеет временный или постоянный медицинский отвод. Отметка может ссылаться на [посещение](StructureDefinition-uz-core-encounter.html), в ходе которого она создана, и на автора.
 
 ### Обязательные и поддерживаемые (Must Support) элементы данных
 
@@ -14,7 +14,7 @@ UZ Core Flag фиксирует предупреждение или уведом
 
 - бизнес-`identifier` с его `system`, если исходная система его присваивает;
 - `status` отметки (active / inactive / entered-in-error) - он описывает саму отметку, а не то, что она фиксирует, поэтому действующий медицинский отвод - это отметка со статусом `active`;
-- `code` - о чём отметка (допуск к донации крови / медицинский отвод);
+- `code` - о чём отметка (допуск к донации крови / временный или постоянный медицинский отвод);
 - `subject` - пациент, к которому относится отметка.
 
 `category` (административная, клиническая и т. д.), `period` действия отметки, [посещение](StructureDefinition-uz-core-encounter.html), в ходе которого она создана, и её `author` ([Practitioner](StructureDefinition-uz-core-practitioner.html), [PractitionerRole](StructureDefinition-uz-core-practitioner-role.html), [Organization](StructureDefinition-uz-core-organization.html), [Device](StructureDefinition-uz-core-device.html), [Patient](StructureDefinition-uz-core-patient.html) или [RelatedPerson](StructureDefinition-uz-core-relatedperson.html)) необязательны; передавайте их, если они известны.
@@ -48,7 +48,7 @@ UZ Core Flag фиксирует предупреждение или уведом
 
 #### Более раннее решение о допуске
 
-Добавьте категорию отметки HL7, период и автора. Коды категорий HL7 сохраняют исходную систему. Эта отметка `inactive`: она перестала действовать, когда был записан отвод ниже, и `period.end` содержит это время. У действующей отметки `period.end` не заполняется:
+Добавьте категорию отметки HL7, период и автора. Коды категорий HL7 сохраняют исходную систему. Эта отметка `inactive`: она перестала действовать, когда был записан отвод ниже, и `period.end` содержит это время. У действующей отметки `period.end` не заполняется, если это не временный отвод:
 
 ```json
 {
@@ -82,7 +82,7 @@ UZ Core Flag фиксирует предупреждение или уведом
 
 #### Медицинский отвод
 
-Для отвода используется код `blood-donation-deferred`; отметка остаётся `active` без `period.end`, пока отвод действует:
+Медицинский отвод бывает временным или постоянным. Временный отвод использует код `blood-donation-deferred-temporary`, а в `period.end` указывается дата его окончания; до неё отметка остаётся `active`, поэтому, чтобы понять, действует ли отвод, читайте `period.end` вместе со `status`. Постоянный отвод использует код `blood-donation-deferred-permanent` и не имеет `period.end`, пока действует. Чтобы снять любой из них досрочно, установите `status` в `inactive`, а в `period.end` - время снятия:
 
 ```json
 {
@@ -101,16 +101,19 @@ UZ Core Flag фиксирует предупреждение или уведом
   "code": {
     "coding": [{
       "system": "https://terminology.dhp.uz/fhir/core/CodeSystem/blood-donor-eligibility-cs",
-      "code": "blood-donation-deferred",
-      "display": "Tibbiy sabablarga ko'ra qon donorligidan chetlatilgan"
+      "code": "blood-donation-deferred-temporary",
+      "display": "Tibbiy sabablarga ko'ra qon donorligidan vaqtincha chetlatilgan"
     }]
   },
   "subject": { "reference": "Patient/example-salim" },
-  "period": { "start": "2026-11-09T09:00:00+05:00" },
+  "period": {
+    "start": "2026-11-09T09:00:00+05:00",
+    "end": "2027-05-09T09:00:00+05:00"
+  },
   "author": { "reference": "Practitioner/example-practitioner" }
 }
 ```
 
-Полные FSH-примеры: [минимальная отметка](Flag-example-donation-minimal-flag.html), [отметка о допуске](Flag-example-donation-eligible-flag.html) и [отметка о медицинском отводе](Flag-example-donation-deferred-flag.html).
+Полные FSH-примеры: [минимальная отметка](Flag-example-donation-minimal-flag.html), [отметка о допуске](Flag-example-donation-eligible-flag.html) и [отметка о временном медицинском отводе](Flag-example-donation-deferred-flag.html).
 
 Примеры вызовов API см. в разделе [Быстрый старт](#quick-start) внизу этой страницы.

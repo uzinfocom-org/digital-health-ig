@@ -57,7 +57,7 @@ Description: "Uzbekistan Core CarePlan profile, used to describe how one or more
 * activity.performedActivity ^short = "Event that was performed as part of this activity"
 * activity.progress MS
 * activity.plannedActivityReference MS
-* activity.plannedActivityReference only Reference(Appointment or CommunicationRequest or DeviceRequest or UZCoreMedicationRequest or NutritionOrder or Task or UZCoreServiceRequest or VisionPrescription or RequestOrchestration or UZCoreImmunizationRecommendation or UZCoreSupplyRequest)
+* activity.plannedActivityReference only Reference(Appointment or CommunicationRequest or UZCoreDeviceRequest or UZCoreMedicationRequest or NutritionOrder or Task or UZCoreServiceRequest or VisionPrescription or RequestOrchestration or UZCoreImmunizationRecommendation or UZCoreSupplyRequest)
 * activity.plannedActivityReference ^short = "Request for the planned activity"
 
 * note MS

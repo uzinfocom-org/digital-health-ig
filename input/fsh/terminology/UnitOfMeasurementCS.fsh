@@ -5,7 +5,7 @@ Description: "Local unit of measurement codes with Uzbek and Russian translation
 * insert OriginalCodeSystemDraft(unit-of-measurement-cs)
 * ^property[0].code = #parent
 * ^property[=].uri = "http://hl7.org/fhir/concept-properties#parent"
-* ^property[=].description = "The generic unit a specific arbitrary unit is a kind of"
+* ^property[=].description = "The generic unit a specific unit is a kind of"
 * ^property[=].type = #code
 
 * #253 "foiz"
@@ -666,6 +666,8 @@ meter"
 действия"
   * ^designation[+].language = #en
   * ^designation[=].value = "Units of modifying action"
+  * ^property[0].code = #parent
+  * ^property[=].valueCode = #323
 
 * #720 "zivert"
   * ^designation[0].language = #ru
@@ -686,6 +688,8 @@ infektsion dozasi"
 для клеточной культуры"
   * ^designation[+].language = #en
   * ^designation[=].value = "cell culture infectious dose"
+  * ^property[0].code = #parent
+  * ^property[=].valueCode = #275
 
 * #683 "kandela"
   * ^designation[0].language = #ru
@@ -792,11 +796,13 @@ o'lchov birligi"
   * ^designation[+].language = #en
   * ^designation[=].value = "pendant per cubic meter"
 
-* #360 "LE"
+* #360 "LE (lipazemik birlik)"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "ЛЕ"
+  * ^designation[=].value = "ЛЕ (липаземическая единица)"
   * ^designation[+].language = #en
-  * ^designation[=].value = "LE"
+  * ^designation[=].value = "LSU (lipasemic unit)"
+  * ^property[0].code = #parent
+  * ^property[=].valueCode = #323
 
 * #820 "lipoprotein lipaz birligi"
   * ^designation[0].language = #ru
@@ -908,9 +914,9 @@ doza (miqdor)"
   * ^designation[+].language = #en
   * ^designation[=].value = "milligram per dose"
 
-* #570 "millilitrga doza"
+* #570 "dozaga millilitr"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "миллилитр на доза"
+  * ^designation[=].value = "миллилитр на дозу"
   * ^designation[+].language = #en
   * ^designation[=].value = "milliliter per dose"
 
@@ -955,6 +961,8 @@ doza (miqdor)"
   * ^designation[=].value = "Мышиная Единица Действия"
   * ^designation[+].language = #en
   * ^designation[=].value = "Мышиная Единица Действия"
+  * ^property[0].code = #parent
+  * ^property[=].valueCode = #323
 
 * #1000 "nanometr"
   * ^designation[0].language = #ru
@@ -1096,6 +1104,8 @@ Units Tablet"
   * ^designation[=].value = "ФНЕ"
   * ^designation[+].language = #en
   * ^designation[=].value = "FTU"
+  * ^property[0].code = #parent
+  * ^property[=].valueCode = #323
 
 * #1301 "FTU/ml"
   * ^designation[0].language = #ru
@@ -1121,3 +1131,56 @@ Units Tablet"
   * ^designation[+].language = #en
   * ^designation[=].value = "Time"
 
+* #326 "dona"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "штук"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "pieces"
+
+* #340 "millilitr"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "миллилитр"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "millilitre"
+
+* #404 "milligramm"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "миллиграмм"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "milligram"
+
+* #386 "mg/5 ml"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "мг/5мл"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "mg/5 mL"
+
+* #387 "mg/10 ml"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "мг/10мл"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "mg/10 mL"
+
+* #388 "mg/100 ml"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "мг/100мл"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "mg/100 mL"
+
+* #403 "mg/2 ml"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "мг/2мл"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "mg/2 mL"
+
+* #402 "g/5 ml"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "г/5мл"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "g/5 mL"
+
+* #461 "g/1000 ml"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "г/1000мл"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "g/1000 mL"
