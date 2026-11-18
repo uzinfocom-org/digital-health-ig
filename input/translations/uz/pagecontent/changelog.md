@@ -2,7 +2,11 @@
 
 #### Qo'shildi
 
+[Chiqish epikrizi bo'limlari](ValueSet-discharge-summary-section-vs.html) - chiqish epikrizi [Composition](StructureDefinition-uz-core-composition.html) bo'lim kodlarining yangi qiymatlar to'plami: shikoyatlar, kasallik anamnezi, obyektiv holat va nevrologik status uchun LOINC kodlari, hayot anamnezi, epidemiologik anamnez va mahalliy status uchun yangi [Chiqish epikrizi bo'limlari](CodeSystem-discharge-summary-section-cs.html) kod tizimidagi kodlar.
+
 [Composition hujjat turlari](CodeSystem-composition-type-cs.html): 399-son buyruqning 112-shakli - foliy kislotasi, 25-OH D vitamini va B12 vitaminiga IXLA tahlili uchun `emdoc-0010-0471` kodi qo'shildi.
+
+[Davlat hisobidan davolanishning SBDL mezonlari](CodeSystem-sbdl-cs.html) - Davlat tibbiy sug'urta jamg'armasining davolanish davlat hisobidan to'lanadigan mezonlari uchun yangi kod tizimi; har bir mezonda u qamrab oladigan ICD-10 kodlari, davolashni ko'rsatishi mumkin bo'lgan tibbiy tashkilot darajalari va amal qilish muddatlari ko'rsatilgan.
 
 [Dori shakllari](CodeSystem-medication-doseform-cs.html): DMED elektron retsepti va Farmatsevtika qo'mitasi dori vositalari reyestrining kodi bo'lmagan dori shakllari uchun `CTP101` kataplazma, `DRS101` dorivor bog'lam, `HRB101` dorivor o'simlik xomashyosi, `JEL101` dorivor jele, `KIT101` to'plam, `LOT101` losyon, `SHA101` dorivor shampun, `SUB101` substansiya va `TEA101` dorivor o'simliklar yig'masi kodlari o'zbek, rus va ingliz tilidagi nomlari bilan qo'shildi.
 
@@ -25,6 +29,10 @@ Endi har bir profil sahifasida kirish qismi va Tez boshlash bo'limi bor. Ular [U
 [Qidiruv](search.html) sahifa sarlavhasidagi yangi maydondan ochiladi. U resurslarni sarlavhasi, nomi, URL yoki tavsifi bo'yicha, shuningdek kod tizimlari, qiymatlar to'plamlari va ConceptMaplardagi kodlar, atamalar va moslashtirishlarni ingliz, rus va o'zbek tillarida topadi. Natijalarni resurs turi bo'yicha filtrlash mumkin, shuning uchun yangi kod qo'shishdan oldin u allaqachon bor-yo'qligini tekshirish mumkin.
 
 [Qon mahsuloti turlari](ValueSet-blood-product-type-snomed-vs.html) ga SNOMED CT `789265003` (inson albumini) kodi o'zbek va rus tilidagi nomlari bilan [supplement](CodeSystem-blood-product-type-snomed-cs.html) da qo'shildi.
+
+[ServiceRequest yo'llanma mutaxassisliklari](ValueSet-service-request-specialty-vs.html) - yo'llanma beriladigan klinik mutaxassisliklarning yangi qiymatlar to'plami: SNOMED CT kodlari va SNOMED CT da ekvivalenti bo'lmagan joyda yangi [ServiceRequest mahalliy mutaxassisliklari](CodeSystem-service-request-specialty-cs.html) kod tizimidagi kodlar. Mahalliy kod tizimi [SNOMED CT ga moslashtirish](ConceptMap-service-request-specialty-to-snomed-cm.html) bilan birga keladi. [ServiceRequest SNOMED CT toifalari tarjimalari](CodeSystem-sr-sct-category-cs.html) SNOMED CT mutaxassislik kodlari uchun o'zbekcha va ruscha nomlarni qo'shadi.
+
+[To'lov turi](CodeSystem-payment-type-cs.html) `paytype-0001-0006` 5199-sonli qaror va `paytype-0001-0007` 311-sonli qaror kodlari bilan to'ldirildi.
 
 [UZ Core BiologicallyDerivedProductDispense](StructureDefinition-uz-core-biologicallyderivedproductdispense.html) biologik mahsulotni bemorning klinik jamoasiga berishni, [berish raqami](NamingSystem-uzb-bdp-dispense-number.html), buyurtma, retsipiyent, mahsulot, ijrochilar va topshirish vaqtini qayd etadi. HL7 berish holati, moslik turi, kelib chiqish munosabati va ijrochi funksiyasi kodlarining o'zbekcha va ruscha tarjimalari qo'shildi. Profil minimal, berish va qaytarish namunalari hamda Tez boshlash bo'limini o'z ichiga oladi.
 
@@ -93,6 +101,10 @@ Namunalar endi HL7 kodlarining display qiymatini HL7 terminologiyasidagi display
 [UZ Core Procedure](StructureDefinition-uz-core-procedure.html) faqat `Procedure.code` SNOMED CT `25179006` (butun qon olish) bo'lganda qo'shimcha preferred bog'lanish orqali [qon donorligi asoratlari kodlarini](ValueSet-procedure-complication-vs.html) tavsiya qiladi. Kodlar hushdan ketish, kollaps, stenokardiya va anafilaktik shokni o'zbekcha va ruscha tarjimalari bilan qamrab oladi. Asoratlar bo'lmasa, `complication` to'ldirilmaydi.
 
 UZ Core profillaridagi Device ga barcha havolalar endi [UZ Core Device](StructureDefinition-uz-core-device.html) ga yo'naltirilgan: Observation, Procedure, Condition, AdverseEvent, Composition, QuestionnaireResponse, Group, MedicationAdministration, MedicationDispense, InventoryItem, SupplyRequest va SupplyDelivery.
+
+[UZ Core ServiceRequest](StructureDefinition-uz-core-servicerequest.html) endi yo'llanma maqsadini yangi [ServiceRequest yo'llanma maqsadi](ValueSet-service-request-referral-purpose-vs.html) qiymatlar to'plamidan `referralPurpose` toifasi sifatida, klinik mutaxassislikni `specialty` toifasi sifatida, xizmatni bajaruvchini (`performer`, mavjud bo'lsa UZ Core profiliga havola sifatida) va imtiyozli tashxis bo'yicha davolanish asosini yangi [ServiceRequest asoslari](ValueSet-service-request-basis-vs.html) qiymatlar to'plamidan `basis` buyurtma tafsiloti parametri (LOINC `86947-9` Reason for hospitalization) sifatida qo'llab-quvvatlaydi. ICD-10 sababi (`reason`) tashxis kodi yonida davolanish davlat hisobidan to'lanadigan [SBDL mezoni](ValueSet-sbdl-vs.html) ni ham o'z ichiga olishi mumkin. [ServiceRequest muolajalari va tekshiruvlari](ValueSet-service-request-code-vs.html) SNOMED CT `310449005` Referral to hospital kodi uchun o'zbekcha va ruscha nom oldi.
+
+[UZ Core Task Referral Approval](StructureDefinition-uz-core-referral-approval-task.html) endi vazifa nima uchun joriy holatda ekanligini (`statusReason`, yangi [Vazifa holati sababi](ValueSet-task-status-reason-vs.html) qiymatlar to'plamidan), bajaruvchini (`performer`), yaratilgan sanani (`authoredOn`), so'rovchi va so'raladigan tashkilotlarni (`requester`, `requestedPerformer`) va izohlarni qo'llab-quvvatlaydi, `basedOn` va `focus` esa [UZ Core ServiceRequest](StructureDefinition-uz-core-servicerequest.html) ga havola qiladi. [Vazifalarning biznes holatlari](CodeSystem-task-business-status-cs.html) kasalxonaga yotqizish yo'llanmasining to'qqizta bosqichi bilan to'ldirildi: qayta ishlashga qaytarishdan kasalxonadan chiqarish yoki davolanishdan bosh tortishgacha.
 
 #### Buzuvchi o'zgarishlar
 

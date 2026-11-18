@@ -62,6 +62,17 @@ Usage: #example
 * valueCodeableConcept = benefits-cs#regis0004.00002 "Chin yetimlar"
 * effectiveDateTime = "2025-06-11"
 
+Instance: example-nodira-benefits
+InstanceOf: UZCoreSocioeconomicObservation
+Description: "Example benefits observation for Nodira, supporting her state-funded hospitalization referral"
+Usage: #example
+* language = #uz
+* status = #final
+* code.coding[socioeconomicType] = $sct#1303306008
+* subject = Reference(example-nodira)
+* valueCodeableConcept = benefits-cs#regis0004.00009 "\"Ijtimoiy himoya yagona reyestri\" axborot tizimi orqali kam ta'minlangan deb e'tirof etilgan oilalarning a'zolari."
+* effectiveDateTime = "2026-03-05"
+
 Instance: example-david-benefits
 InstanceOf: UZCoreSocioeconomicObservation
 Description: "Example benefits observation for David"
