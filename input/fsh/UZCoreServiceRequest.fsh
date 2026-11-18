@@ -20,18 +20,11 @@ Description: "Uzbekistan Core ServiceRequest profile, used to represent a reques
 * category ^slicing.discriminator.type = #value
 * category ^slicing.discriminator.path = "$this"
 * category ^slicing.rules = #open
-* category ^slicing.description = "The national ServiceRequest category, the referral purposes and the clinical specialty; any other categories are allowed alongside them"
+* category ^slicing.description = "One category from the national ServiceRequest categories; any other categories are allowed alongside it"
 * category ^slicing.ordered = false
-* category contains
-    dhpCategory 0..1 MS and
-    referralPurpose 0..* MS and
-    specialty 0..1 MS
+* category contains dhpCategory 0..1 MS
 * category[dhpCategory] from ServiceRequestCategoriesVS (required)
 * category[dhpCategory] ^short = "National category of the service being requested"
-* category[referralPurpose] from ServiceRequestReferralPurposeVS (required)
-* category[referralPurpose] ^short = "Purpose of the referral"
-* category[specialty] from ServiceRequestSpecialtyVS (required)
-* category[specialty] ^short = "Clinical specialty the referral is addressed to"
 * priority MS
 * priority from RequestPriorityVS (required)
 * priority ^short = "Indicates how quickly the ServiceRequest should be addressed with respect to other requests"
@@ -47,18 +40,6 @@ Description: "Uzbekistan Core ServiceRequest profile, used to represent a reques
   * ^binding.additional[=].valueSet = Canonical(RouteCodeVS)
   * ^binding.additional[=].usage.code = $uz-core-servicerequest#ServiceRequest.orderDetail.parameter.code
   * ^binding.additional[=].usage.valueCodeableConcept = $sct#410675002 "Route of administration"
-* orderDetail.parameter MS
-* orderDetail.parameter ^slicing.discriminator.type = #value
-* orderDetail.parameter ^slicing.discriminator.path = "code"
-* orderDetail.parameter ^slicing.rules = #open
-* orderDetail.parameter ^slicing.description = "Order detail parameters identified by their code; any other parameters are allowed alongside them"
-* orderDetail.parameter contains basis 0..1 MS
-* orderDetail.parameter[basis] ^short = "Basis for state-funded treatment for a qualifying diagnosis"
-* orderDetail.parameter[basis].code = $loinc#86947-9
-* orderDetail.parameter[basis].code MS
-* orderDetail.parameter[basis].value[x] only CodeableConcept
-* orderDetail.parameter[basis].value[x] MS
-* orderDetail.parameter[basis].valueCodeableConcept from ServiceRequestBasisVS (extensible)
 * location MS
 * location only CodeableReference(UZCoreLocation)
 * location from ServiceRequestLocationVS (preferred)
@@ -75,8 +56,6 @@ Description: "Uzbekistan Core ServiceRequest profile, used to represent a reques
 * requester MS
 * requester only Reference(UZCorePractitioner or UZCorePractitionerRole or UZCoreOrganization or UZCorePatient or UZCoreRelatedPerson)
 * requester ^short = "The individual, role, or organization that authored and issued the laboratory referral/order. This element identifies the healthcare professional or organizational unit responsible for initiating the ServiceRequest."
-* performer MS
-* performer only Reference(UZCorePractitioner or UZCorePractitionerRole or UZCoreOrganization or CareTeam or UZCoreHealthcareService or UZCorePatient or UZCoreDevice or UZCoreRelatedPerson)
 * reason MS
 * reason from ConditionCodeVS (preferred)
 * reason ^slicing.discriminator.type = #value
@@ -86,17 +65,8 @@ Description: "Uzbekistan Core ServiceRequest profile, used to represent a reques
 * reason ^slicing.ordered = false
 * reason contains icd10 0..* MS and snomed 0..* MS
 * reason[icd10] from ConditionCodeVS (required)
+* reason[icd10].concept.coding.system = "http://hl7.org/fhir/sid/icd-10"
 * reason[icd10] ^short = "Reason coded in ICD-10"
-* reason[icd10].concept.coding ^slicing.discriminator.type = #value
-* reason[icd10].concept.coding ^slicing.discriminator.path = "system"
-* reason[icd10].concept.coding ^slicing.rules = #open
-* reason[icd10].concept.coding ^slicing.description = "The ICD-10 diagnosis and, for state-funded treatment, the SBDL criterion it qualifies under; any other codings are allowed alongside them"
-* reason[icd10].concept.coding contains icd10 1..1 MS and sbdl 0..1 MS
-* reason[icd10].concept.coding[icd10].system = $icd-10
-* reason[icd10].concept.coding[icd10] ^short = "ICD-10 diagnosis"
-* reason[icd10].concept.coding[sbdl] from SBDLVS (required)
-* reason[icd10].concept.coding[sbdl].system = $sbdl-cs
-* reason[icd10].concept.coding[sbdl] ^short = "SBDL criterion under which the treatment is state-funded"
 * reason[snomed] from ConditionCodeVS (required)
 * reason[snomed].concept.coding.system = "http://snomed.info/sct"
 * reason[snomed] ^short = "Reason coded in SNOMED CT, from the national condition codes"
