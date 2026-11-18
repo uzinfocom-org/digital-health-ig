@@ -2,7 +2,10 @@
 
 #### Добавлено
 
-[UZ Core BiologicallyDerivedProductDispense](StructureDefinition-uz-core-biologicallyderivedproductdispense.html) фиксирует выдачу биологического продукта клинической команде пациента: [номер выдачи](NamingSystem-uzb-bdp-dispense-number.html), назначение, реципиента, продукт, исполнителей и время передачи. Добавлены узбекские и русские переводы статусов, типов совместимости, отношений происхождения и функций исполнителя HL7, а примеры показывают минимальную запись, выдачу и возврат.
+[Encounter admit source](ValueSet-encounter-admit-source-vs.html), [Использование причины Encounter](ValueSet-encounter-reason-use-vs.html) и [Encounter discharge disposition](ValueSet-encounter-discharge-disposition-vs.html) дополнены кодами вызовов скорой помощи: 18 мест вызова, 27 локальных и 33 SNOMED CT причины вызова и `emer200` - отказ пациента от госпитализации. [Тип Encounter](ValueSet-encounter-type-vs.html) дополнен пятью типами выезда скорой помощи и SNOMED CT `715537001` - транспортировка машиной скорой помощи, которые [UZ Core Encounter](StructureDefinition-uz-core-encounter.html) принимает в `type`. У всех кодов есть узбекские и русские названия.
+
+[Flag code](SearchParameter-uz-core-flag-code.html) - новый параметр поиска `code`, который находит ресурсы [UZ Core Flag](StructureDefinition-uz-core-flag.html) по тому, о чём отметка, например действующие медицинские отводы пациента от донации крови. В базовом FHIR R5 такого параметра поиска нет.
+>>>>>>> origin/main
 
 [UZ Core CarePlan](StructureDefinition-uz-core-careplan.html) - план помощи пациенту на период времени, например патронажных визитов медсестры, курса лечения или случая листка нетрудоспособности. План объединяет запросы на запланированные мероприятия и связывает события, фиксирующие выполненные, как в примерах [плана патронажа новорождённого](CarePlan-example-newborn-patronage-careplan.html) и [курса лечебного массажа](CarePlan-example-massage-careplan.html).
 
@@ -23,8 +26,6 @@
 [UZ Core SupplyDelivery](StructureDefinition-uz-core-supply-delivery.html) фиксирует место, откуда отправлены предметы снабжения, например склад-отправитель, в новом расширении [Deliver from](StructureDefinition-supplydelivery-deliver-from.html), как в [примере перемещения между складами](SupplyDelivery-example-warehouse-transfer-supply-delivery.html). На странице профиля есть вводный раздел и Быстрый старт.
 
 [UZ Core SupplyRequest](StructureDefinition-uz-core-supply-request.html) получил расширение [идентификатор группы](StructureDefinition-supplyrequest-group-identifier.html), заранее введённое из инкубатора HL7 Orders and Observations, чтобы поставщик обрабатывал запросы, отправленные вместе, как один заказ. [Параметр поиска по идентификатору группы](SearchParameter-uz-core-supplyrequest-group-identifier.html) находит все запросы группы.
-
-[Источник поступления Encounter](ValueSet-encounter-admit-source-vs.html), [Использование причины Encounter](ValueSet-encounter-reason-use-vs.html) и [Исход выписки Encounter](ValueSet-encounter-discharge-disposition-vs.html) дополнены кодами вызова скорой помощи: 18 мест, откуда забирают пациента, 27 локальных и 33 SNOMED CT причины вызова, а также `emer200` (пациент отказался от госпитализации), с названиями на узбекском и русском.
 
 [Коды единиц измерения](CodeSystem-unit-of-measurement-cs.html) дополнены девятью единицами реестра лекарственных средств Фармкомитета, сопоставленными с UCUM в [карте единиц измерения](ConceptMap-unit-of-measurement-cm.html).
 
