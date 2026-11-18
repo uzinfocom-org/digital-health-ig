@@ -4,8 +4,7 @@
 
 [Encounter admit source](ValueSet-encounter-admit-source-vs.html), [Использование причины Encounter](ValueSet-encounter-reason-use-vs.html) и [Encounter discharge disposition](ValueSet-encounter-discharge-disposition-vs.html) дополнены кодами вызовов скорой помощи: 18 мест вызова, 27 локальных и 33 SNOMED CT причины вызова и `emer200` - отказ пациента от госпитализации. [Тип Encounter](ValueSet-encounter-type-vs.html) дополнен пятью типами выезда скорой помощи и SNOMED CT `715537001` - транспортировка машиной скорой помощи, которые [UZ Core Encounter](StructureDefinition-uz-core-encounter.html) принимает в `type`. У всех кодов есть узбекские и русские названия.
 
-[Flag code](SearchParameter-uz-core-flag-code.html) - новый параметр поиска `code`, который находит ресурсы [UZ Core Flag](StructureDefinition-uz-core-flag.html) по тому, о чём отметка, например действующие медицинские отводы пациента от донации крови. В базовом FHIR R5 такого параметра поиска нет.
->>>>>>> origin/main
+[UZ Core BiologicallyDerivedProductDispense](StructureDefinition-uz-core-biologicallyderivedproductdispense.html) фиксирует выдачу биологического продукта клинической команде пациента: [номер выдачи](NamingSystem-uzb-bdp-dispense-number.html), назначение, реципиента, продукт, исполнителей и время передачи. Добавлены узбекские и русские переводы статусов, типов совместимости, отношений происхождения и функций исполнителя HL7, а примеры показывают минимальную запись, выдачу и возврат.
 
 [UZ Core CarePlan](StructureDefinition-uz-core-careplan.html) - план помощи пациенту на период времени, например патронажных визитов медсестры, курса лечения или случая листка нетрудоспособности. План объединяет запросы на запланированные мероприятия и связывает события, фиксирующие выполненные, как в примерах [плана патронажа новорождённого](CarePlan-example-newborn-patronage-careplan.html) и [курса лечебного массажа](CarePlan-example-massage-careplan.html).
 
