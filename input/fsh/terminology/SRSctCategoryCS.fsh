@@ -111,11 +111,11 @@ Description: "ServiceRequest SNOMED CT category supplement with translations in 
   * ^designation[+].language = #uz
   * ^designation[=].value = "Nefrologiya yo'nalishi"
 
-* #394805004 "Clinical immunology/allergy"
+* #408439002 "Allergy specialty"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Клиническая иммунология и аллергология"
+  * ^designation[=].value = "Аллергология"
   * ^designation[+].language = #uz
-  * ^designation[=].value = "Klinik immunologiya va allergologiya"
+  * ^designation[=].value = "Allergologiya"
 
 * #394592004 "Clinical oncology"
   * ^designation[0].language = #ru
@@ -236,12 +236,6 @@ Description: "ServiceRequest SNOMED CT category supplement with translations in 
   * ^designation[=].value = "Челюстно-лицевая хирургия"
   * ^designation[+].language = #uz
   * ^designation[=].value = "Yuz-jag' jarrohligi"
-
-* #310166001 "Trauma surgery service"
-  * ^designation[0].language = #ru
-  * ^designation[=].value = "Травматология"
-  * ^designation[+].language = #uz
-  * ^designation[=].value = "Travmatologiya"
 
 * #408478003 "Critical care medicine"
   * ^designation[0].language = #ru

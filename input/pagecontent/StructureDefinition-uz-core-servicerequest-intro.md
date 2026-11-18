@@ -12,7 +12,7 @@ This profile adds no mandatory elements. The base resource requires a `status`, 
 
 - the business identifier of the order or referral (`identifier`), and a shared identifier that groups requests made together, such as all tests on one specimen (`requisition`);
 - the status of the request (draft / active / on-hold / revoked / completed / entered-in-error / unknown) and its intent (proposal / plan / order and its subtypes);
-- the kind of service (`category`), with at most one national category such as a laboratory section or hospital admission, and the purposes of a referral (consultation / diagnostics / treatment / diagnosis clarification / dispensary registration / delivery / other) and the clinical specialty the referral is addressed to;
+- the kind of service (`category`), with at most one national category such as a laboratory section or hospital admission, and the purposes of a referral (diagnostics / treatment / diagnosis clarification / dispensary registration / delivery / other; a referral for a consultation takes SNOMED CT `11429006` Consultation as its national category) and the clinical specialty the referral is addressed to;
 - the urgency (`priority`: routine / urgent / asap / stat) and whether the service must not be done (`doNotPerform`);
 - the service requested (`code`);
 - the [Patient](StructureDefinition-uz-core-patient.html) or [Location](StructureDefinition-uz-core-location.html) the request is for (`subject`) and the [Encounter](StructureDefinition-uz-core-encounter.html) in which it was made;
@@ -127,7 +127,7 @@ A family doctor orders an urgent complete blood count during a visit. The order 
 
 #### A state-funded referral for hospitalization
 
-A family doctor refers a patient for planned hospitalization under the state tariff. The service is SNOMED CT `306206005` Referral to service, the category `32485007` Admission to hospital, and `performer` names the [HealthcareService](StructureDefinition-uz-core-healthcareservice.html) the patient is referred to:
+A family doctor refers a patient for planned hospitalization under the state tariff. The service is SNOMED CT `310449005` Referral to hospital, the category `32485007` Admission to hospital, and `performer` names the [HealthcareService](StructureDefinition-uz-core-healthcareservice.html) the patient is referred to:
 
 ```json
 {
@@ -156,7 +156,7 @@ A family doctor refers a patient for planned hospitalization under the state tar
   ],
   "priority": "routine",
   "code": {
-    "concept": { "coding": [ { "system": "http://snomed.info/sct", "code": "306206005" } ] }
+    "concept": { "coding": [ { "system": "http://snomed.info/sct", "code": "310449005" } ] }
   },
   "subject": { "reference": "Patient/example-nodira" },
   "occurrencePeriod": { "start": "2026-03-10", "end": "2026-03-31" },
@@ -176,11 +176,12 @@ A family doctor refers a patient for planned hospitalization under the state tar
         ]
       }
     }
-  ]
+  ],
+  "supportingInfo": [ { "reference": { "reference": "Observation/example-nodira-benefits" } } ]
 }
 ```
 
-For a state-funded referral, the ICD-10 coding in `reason` is joined by the [SBDL criterion](ValueSet-sbdl-vs.html) the treatment qualifies under: the State Health Insurance Fund's code for this criterion and diagnosis. Both codings describe one reason, so they sit in the same `concept`. When the reason is a reference to a Condition, put the SBDL code in that Condition's `code` beside its ICD-10 code.
+For a state-funded referral, the ICD-10 coding in `reason` is joined by the [SBDL criterion](ValueSet-sbdl-vs.html) the treatment qualifies under: the State Health Insurance Fund's code for this criterion and diagnosis. Both codings describe one reason, so they sit in the same `concept`. When the reason is a reference to a Condition, put the SBDL code in that Condition's `code` beside its ICD-10 code. When the referral is state-funded because of the patient's benefit category, `supportingInfo` points to the [Socioeconomic Observation](StructureDefinition-uz-core-socioeconomic-observation.html) that records the category.
 
 The payment type decides what happens next. With the state tariff, the platform starts the chain of [approval Tasks](StructureDefinition-uz-core-referral-approval-task.html) and keeps the ServiceRequest `status` in step with them; with any other payment type the referral goes straight to the performer. `occurrencePeriod` is the window in which the service should happen; use `occurrenceDateTime` for a fixed time.
 

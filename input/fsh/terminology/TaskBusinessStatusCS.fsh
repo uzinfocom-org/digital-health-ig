@@ -105,3 +105,8 @@ Description: "Uzbekistan national codes for business-level statuses of tasks in 
   * ^designation[=].value = "Отказ от лечения"
   * ^designation[+].language = #en
   * ^designation[=].value = "Refusal of treatment"
+* #bstatus-0001-00009 "Kasalxonadan chiqarilgan"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Выписан"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Discharged"

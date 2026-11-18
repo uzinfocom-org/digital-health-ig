@@ -1,9 +1,9 @@
-CodeSystem: ServiceRequestCategoryCS
-Id: service-request-category-cs
+CodeSystem: ServiceRequestSpecialtyCS
+Id: service-request-specialty-cs
 Title: "ServiceRequest local specialty"
 Description: "Local clinical specialty codes for ServiceRequest in Uzbekistan healthcare. ServiceRequest specialty uses SNOMED CT where it has an equivalent concept and these codes only where it does not"
 
-* insert OriginalCodeSystemDraft(service-request-category-cs)
+* insert OriginalCodeSystemDraft(service-request-specialty-cs)
 
 * #serv-0001-00001 "Urologiya"
   * ^designation[0].language = #ru
@@ -16,12 +16,16 @@ Description: "Local clinical specialty codes for ServiceRequest in Uzbekistan he
   * ^designation[=].value = "Травматология и ортопедия"
   * ^designation[+].language = #en
   * ^designation[=].value = "Traumatology and Orthopedics"
-
-* #serv-0001-00003 "Ftiziatriya yo'nalishi"
-  * ^designation[0].language = #ru
-  * ^designation[=].value = "Фтизиатрия"
-  * ^designation[+].language = #en
-  * ^designation[=].value = "Phthisiology"
+  * #serv-0001-00025 "Travmatologiya"
+    * ^designation[0].language = #ru
+    * ^designation[=].value = "Травматология"
+    * ^designation[+].language = #en
+    * ^designation[=].value = "Traumatology"
+    * #serv-0001-00026 "Kattalar travmatologiyasi"
+      * ^designation[0].language = #ru
+      * ^designation[=].value = "Травматология взрослых"
+      * ^designation[+].language = #en
+      * ^designation[=].value = "Adult Traumatology"
 
 * #serv-0001-00004 "Pulmonologiya yo'nalishi"
   * ^designation[0].language = #ru
@@ -149,18 +153,6 @@ Description: "Local clinical specialty codes for ServiceRequest in Uzbekistan he
   * ^designation[+].language = #en
   * ^designation[=].value = "Ophthalmology"
 
-* #serv-0001-00025 "Travmatologiya"
-  * ^designation[0].language = #ru
-  * ^designation[=].value = "Травматология"
-  * ^designation[+].language = #en
-  * ^designation[=].value = "Traumatology"
-
-* #serv-0001-00026 "Kattalar travmatologiyasi"
-  * ^designation[0].language = #ru
-  * ^designation[=].value = "Травматология взрослых"
-  * ^designation[+].language = #en
-  * ^designation[=].value = "Adult Traumatology"
-
 * #serv-0001-00027 "Intensiv davolash va reanimatsiya"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Интенсивная терапия и реанимация"
@@ -232,6 +224,11 @@ Description: "Local clinical specialty codes for ServiceRequest in Uzbekistan he
   * ^designation[=].value = "Инфекционные болезни"
   * ^designation[+].language = #en
   * ^designation[=].value = "Infectious Diseases"
+  * #serv-0001-00003 "Ftiziatriya yo'nalishi"
+    * ^designation[0].language = #ru
+    * ^designation[=].value = "Фтизиатрия"
+    * ^designation[+].language = #en
+    * ^designation[=].value = "Phthisiology"
 
 * #serv-0001-00039 "Bolalar kasalliklari"
   * ^designation[0].language = #ru

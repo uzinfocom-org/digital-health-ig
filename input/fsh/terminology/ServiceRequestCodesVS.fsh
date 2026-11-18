@@ -35,7 +35,6 @@ Description: "Defines the set of codes that may be used in ServiceRequest to spe
 * $sct#409027005 "Infant care assessment"
 * $sct#440068009 "Home visit for newborn care and assessment"
 * $sct#410620009 "Well child visit"
-* $sct#3457005 "Patient referral"
 
 // Physiotherapy procedures with an equivalent SNOMED CT concept are ordered by that concept;
 // the local codes stay in physiotherapy-procedure-cs and map to SNOMED CT in physiotherapy-procedure-to-snomed.

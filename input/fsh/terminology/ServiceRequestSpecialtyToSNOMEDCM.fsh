@@ -1,15 +1,15 @@
-Instance: service-request-category-to-snomed-cm
+Instance: service-request-specialty-to-snomed-cm
 InstanceOf: ConceptMap
 Usage: #definition
 Title: "ServiceRequest local specialty to SNOMED CT"
 Description: "Maps ServiceRequest local specialty codes to SNOMED CT specialty codes"
-* name = "ServiceRequestCategoryToSNOMEDCM"
-* url = "https://terminology.dhp.uz/fhir/core/ConceptMap/service-request-category-to-snomed-cm"
+* name = "ServiceRequestSpecialtyToSNOMEDCM"
+* url = "https://terminology.dhp.uz/fhir/core/ConceptMap/service-request-specialty-to-snomed-cm"
 * status = #draft
 * experimental = false
 * publisher = "Uzinfocom"
 
-* group.source = Canonical(ServiceRequestCategoryCS)
+* group.source = Canonical(ServiceRequestSpecialtyCS)
 * group.target = $sct
 * sourceScopeCanonical = Canonical(ServiceRequestLocalSpecialtyVS)
 * targetScopeCanonical = $sct-vs
@@ -46,9 +46,9 @@ Description: "Maps ServiceRequest local specialty codes to SNOMED CT specialty c
 
 * group[=].element[+].code = #serv-0001-00006
 * group[=].element[=].display = "Allergologiya yo'nalishi"
-* group[=].element[=].target[+].code = #394805004
-* group[=].element[=].target[=].display = "Clinical immunology/allergy"
-* group[=].element[=].target[=].relationship = #source-is-narrower-than-target
+* group[=].element[=].target[+].code = #408439002
+* group[=].element[=].target[=].display = "Allergy specialty"
+* group[=].element[=].target[=].relationship = #equivalent
 
 * group[=].element[+].code = #serv-0001-00007
 * group[=].element[=].display = "Onkologiya yo'nalishi"
@@ -66,7 +66,11 @@ Description: "Maps ServiceRequest local specialty codes to SNOMED CT specialty c
 * group[=].element[=].display = "Oftalmologiya va ko'z mikroxirurgiya yo'nalishi"
 * group[=].element[=].target[+].code = #394594003
 * group[=].element[=].target[=].display = "Ophthalmology"
-* group[=].element[=].target[=].relationship = #equivalent
+* group[=].element[=].target[=].relationship = #related-to
+* group[=].element[=].target[=].comment = "Ophthalmology with eye microsurgery, listed beside plain ophthalmology (serv-0001-00024) in the source list"
+* group[=].element[=].target[+].code = #422191005
+* group[=].element[=].target[=].display = "Ophthalmic surgery"
+* group[=].element[=].target[=].relationship = #source-is-broader-than-target
 
 * group[=].element[+].code = #serv-0001-00010
 * group[=].element[=].display = "Kardiologiya yo'nalishi"
@@ -172,14 +176,14 @@ Description: "Maps ServiceRequest local specialty codes to SNOMED CT specialty c
 
 * group[=].element[+].code = #serv-0001-00025
 * group[=].element[=].display = "Travmatologiya"
-* group[=].element[=].target[+].code = #310166001
-* group[=].element[=].target[=].display = "Trauma surgery service"
-* group[=].element[=].target[=].relationship = #equivalent
+* group[=].element[=].target[+].code = #394801008
+* group[=].element[=].target[=].display = "Trauma and orthopedics"
+* group[=].element[=].target[=].relationship = #source-is-narrower-than-target
 
 * group[=].element[+].code = #serv-0001-00026
 * group[=].element[=].display = "Kattalar travmatologiyasi"
-* group[=].element[=].target[+].code = #310166001
-* group[=].element[=].target[=].display = "Trauma surgery service"
+* group[=].element[=].target[+].code = #394801008
+* group[=].element[=].target[=].display = "Trauma and orthopedics"
 * group[=].element[=].target[=].relationship = #source-is-narrower-than-target
 
 * group[=].element[+].code = #serv-0001-00027
@@ -258,7 +262,8 @@ Description: "Maps ServiceRequest local specialty codes to SNOMED CT specialty c
 * group[=].element[=].display = "Bolalar kasalliklari"
 * group[=].element[=].target[+].code = #394537008
 * group[=].element[=].target[=].display = "Pediatrics"
-* group[=].element[=].target[=].relationship = #equivalent
+* group[=].element[=].target[=].relationship = #related-to
+* group[=].element[=].target[=].comment = "Childhood diseases, listed beside pediatrics (serv-0001-00018) in the source list"
 
 * group[=].element[+].code = #serv-0001-00040
 * group[=].element[=].display = "Tibbiy genetika yo'nalishi (18 yoshgacha bo'lgan bolalar uchun)"

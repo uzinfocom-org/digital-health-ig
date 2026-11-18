@@ -4,12 +4,6 @@ Title: "ServiceRequest referral purpose"
 Description: "Code system representing the purpose of a referral in the Uzbekistan State Health Insurance System workflow process."
 * insert OriginalCodeSystemDraft(service-request-referral-purpose-cs)
 
-* #purpose-0001-0001 "Konsultatsiya"
-  * ^designation[0].language = #ru
-  * ^designation[=].value = "Консультации"
-  * ^designation[+].language = #en
-  * ^designation[=].value = "Consultation"
-
 * #purpose-0001-0002 "Diagnostika"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Диагностика"
