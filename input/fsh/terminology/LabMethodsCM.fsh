@@ -70,9 +70,9 @@ Description: "Maps local UZ laboratory method (technique of measurement) codes t
 
 * group.element[+].code = #lab-method-10
 * group.element[=].display = "Mass-spektrometriya"
-* group.element[=].target[+].code = #LP95062-3
-* group.element[=].target[=].display = "LC/MS/MS"
-* group.element[=].target[=].relationship = #source-is-narrower-than-target
+* group.element[=].target[+].code = #1306402001
+* group.element[=].target[=].display = "Mass spectrometry technique"
+* group.element[=].target[=].relationship = #equivalent
 
 * group.element[+].code = #lab-method-11
 * group.element[=].display = "Sekvensiyalash"
