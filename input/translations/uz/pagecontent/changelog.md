@@ -1,4 +1,4 @@
-### Ishlab chiqilmoqda
+### Versiya 0.13.0
 
 #### Qo'shildi
 
