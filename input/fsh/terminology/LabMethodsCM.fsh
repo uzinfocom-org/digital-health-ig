@@ -76,12 +76,12 @@ Description: "Maps local UZ laboratory method (technique of measurement) codes t
 
 * group.element[+].code = #lab-method-11
 * group.element[=].display = "Sekvensiyalash"
-* group.element[=].target[+].code = #1306402001
-* group.element[=].target[=].display = "Mass spectrometry technique"
+* group.element[=].target[+].code = #1304162005
+* group.element[=].target[=].display = "Nucleic acid sequencing technique"
 * group.element[=].target[=].relationship = #equivalent
 
 * group.element[+].code = #lab-method-12
 * group.element[=].display = "Tezkor immunoanaliz"
-* group.element[=].target[+].code = #1304162005
-* group.element[=].target[=].display = "Nucleic acid sequencing technique"
+* group.element[=].target[+].code = #708099001
+* group.element[=].target[=].display = "Rapid immunoassay technique"
 * group.element[=].target[=].relationship = #equivalent
