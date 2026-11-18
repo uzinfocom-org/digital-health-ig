@@ -80,6 +80,8 @@ JSON-копия ресурса на каждом языке теперь сох�
 
 [Карта единиц измерения](ConceptMap-unit-of-measurement-cm.html): `270` единица действия биологической активности на миллилитр сопоставлена с `U/mL` вместо `[arb'U]/mL`, а `275` единица полуинфицирующей дозы шире `[CCID_50]` вместо эквивалентности ей.
 
+[Карта лабораторных методов](ConceptMap-lab-methods-to-loinc.html) теперь использует набор значений SNOMED CT как целевую область вместо системы кодов, что исправляет две ошибки валидации IG Publisher.
+
 [Коды аллергенов](ValueSet-allergen-codes-vs.html) теперь включают и [МНН лекарств](CodeSystem-inn-medication-name-cs.html), поэтому аллергию на лекарство можно указать по действующему веществу. [Пример аллергии на анальгетик](AllergyIntolerance-example-analgesic-allergy.html) теперь кодирует парацетамол по МНН.
 
 [Коды процедур](ValueSet-procedure-code-vs.html), к которым привязан `code` в UZ Core Procedure и UZ Core ActivityDefinition, и [процедуры и исследования ServiceRequest](ValueSet-service-request-code-vs.html), к которым привязан `code` в UZ Core ServiceRequest, теперь включают [услуги лучевой диагностики TXMK](ValueSet-txmk-radiology-vs.html).

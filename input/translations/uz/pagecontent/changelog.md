@@ -66,6 +66,8 @@ IG Publisher 3.0.1 ning ConceptMap tekshiruvlari aniqlagan moslashtirish sifati 
 
 Kod tizimlari va qiymatlar to'plamlarining sarlavhalari va tavsiflari endi [modellashtirish qo'llanmasidagi](https://github.com/uzinfocom-org/digital-health-ig/blob/main/modelling-guidelines.md) nomlash shabloniga mos keladi: supplement `[Concept] translations`, qiymatlar to'plami esa `[Concept]` deb nomlanadi, sarlavhalarda "CodeSystem" yoki "ValueSet" kabi so'zlar endi yo'q. Kanonik URL, identifikatorlar va kodlar o'zgarmadi.
 
+[Laboratoriya usullari xaritasi](ConceptMap-lab-methods-to-loinc.html) endi maqsad doirasi sifatida kod tizimi o'rniga SNOMED CT qiymatlar to'plamidan foydalanadi, bu IG Publisher tekshiruvidagi ikkita xatoni tuzatadi.
+
 [MedicationRequest holatlari tarjimalari](CodeSystem-medicationrequest-status-cs.html) endi `ended` ni ruschada «Окончено» deb ataydi, avvalgi «Завершено» `completed` bilan bir xil edi.
 
 [Muolaja kodlari](ValueSet-procedure-code-vs.html) (UZ Core Procedure va UZ Core ActivityDefinition profillaridagi `code`) va [ServiceRequest muolajalari va tekshiruvlari](ValueSet-service-request-code-vs.html) (UZ Core ServiceRequest profilidagi `code`) endi [TXMK nurli diagnostika xizmatlari](ValueSet-txmk-radiology-vs.html)ni ham o'z ichiga oladi.

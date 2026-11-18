@@ -12,7 +12,7 @@ Description: "Maps local UZ laboratory method (technique of measurement) codes t
 * group.source = Canonical(LabMethodsCS)
 // * sourceScopeCanonical = Canonical(LabMethodsVS)
 * group.target = $sct
-* targetScopeCanonical = $sct
+* targetScopeCanonical = $sct-vs
 
 * group.element[+].code = #lab-method-1
 * group.element[=].display = "PZR (Polimeraza zanjir reaksiyasi)"
