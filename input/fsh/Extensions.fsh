@@ -217,3 +217,20 @@ Context: SupplyDelivery
 * ^date = "2026-11-02"
 * value[x] 1..
 * value[x] only Reference(UZCoreLocation)
+
+
+Extension: SupplyRequestGroupIdentifier
+Id: supplyrequest-group-identifier
+Title: "Group identifier"
+Description: "A shared identifier common to multiple independent supply requests that were activated or authorized more or less simultaneously by a single author. The same identifier on each request ties those requests together. Requests in the same group are generally treated independently when their state changes or they are maintained after creation. FHIR R5 SupplyRequest has no element for this: the extension pre-adopts SupplyRequest.groupIdentifier from the HL7 Orders and Observations incubator, until an official cross-version extension is published."
+Context: SupplyRequest
+* ^experimental = true
+* ^date = "2026-11-17"
+* ^purpose = "Pre-adopts SupplyRequest.groupIdentifier, which FHIR-49998 added to the SupplyRequest resource in the HL7 Orders and Observations incubator. FHIR R5 has no such element and no cross-version extension for it yet. This extension will be retired in favour of the official one when it is published."
+* ^mapping[0].identity = "workflow"
+* ^mapping[=].uri = "http://hl7.org/fhir/workflow"
+* ^mapping[=].name = "Workflow Pattern"
+* . ^mapping[0].identity = "workflow"
+* . ^mapping[=].map = "Request.groupIdentifier"
+* value[x] 1..
+* value[x] only Identifier

@@ -125,7 +125,7 @@ parameters:
   excludettl: true
   excludexml: true
   usage-stats-opt-out: true # times out often
-  # language-translations-mode: preserve
+  language-translations-mode: preserve # per-language JSON copies keep the other languages as translation extensions
   shownav: true # show next/previous page navigation tabs in header and footer
 
   pin-canonicals: pin-all

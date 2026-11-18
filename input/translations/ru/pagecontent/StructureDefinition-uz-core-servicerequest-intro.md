@@ -19,7 +19,7 @@ UZ Core ServiceRequest - это запрос на оказание услуги 
 - запрошенную услугу (`code`);
 - [пациента](StructureDefinition-uz-core-patient.html) или [место](StructureDefinition-uz-core-location.html), для которого создан запрос (`subject`), и [Encounter](StructureDefinition-uz-core-encounter.html), в ходе которого он создан;
 - когда услуга должна быть оказана (`occurrence[x]`) и когда запрос был выписан (`authoredOn`);
-- кто его выписал (`requester`: медицинский работник, должность медицинского работника, организация, пациент или родственник) и [Organization](StructureDefinition-uz-core-organization.html), которой предложено её выполнить (`performer`);
+- кто его выписал (`requester`: медицинский работник, должность медицинского работника, организация, пациент или родственник) и кому предложено её выполнить (`performer`: организация, медицинская услуга, медицинский работник, должность медицинского работника, медицинская команда, пациент, родственник или изделие);
 - детали назначения (`orderDetail.parameter`), например основание для лечения по льготному диагнозу - параметр `basis` с кодом LOINC `86947-9` Reason for hospitalization;
 - зачем нужна услуга (`reason`): код ICD-10 или SNOMED CT либо ссылка на [Condition](StructureDefinition-uz-core-condition.html), а для лечения за счёт государства - критерий SBDL рядом с кодом ICD-10;
 - как оплачивается услуга (расширение [вида оплаты](StructureDefinition-payment-type.html): бесплатно / платно / страхование / государственный тариф / прочее) и страховое покрытие (`insurance`);

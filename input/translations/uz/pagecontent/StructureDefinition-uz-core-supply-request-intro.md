@@ -11,11 +11,12 @@ Quyidagi elementlar har doim mavjud bo'lishi (majburiy) yoki ma'lumot mavjud bo'
 - so'ralgan buyum (`item`);
 - so'ralgan miqdor (`quantity`).
 
-Ikkalasi ham bazaviy SupplyRequest resursida majburiy; ushbu profil boshqa majburiy elementlar qo'shmaydi. So'rov yoki shartnoma raqami o'z `system` iga ega bo'lishi, qon guruhining har bir parametri esa ham kodga, ham qiymatga ega bo'lishi shart.
+Ikkalasi ham bazaviy SupplyRequest resursida majburiy; ushbu profil boshqa majburiy elementlar qo'shmaydi. So'rov yoki shartnoma raqami o'z `system` iga, guruh raqami `system` va `value` ga ega bo'lishi, qon guruhining har bir parametri esa ham kodga, ham qiymatga ega bo'lishi shart.
 
 #### Har bir UZ Core SupplyRequest quyidagilarni qo'llab-quvvatlashi shart
 
-- so'rov yuborayotgan shifoxona bergan so'rov raqami, u tegishli bo'lgan ta'minot shartnomasi raqami va birga yuborilgan so'rovlar uchun umumiy guruh raqami, har biri `system` bilan birga (qarang: [identifikator slayslari](#identifier-slices));
+- so'rov yuborayotgan shifoxona bergan so'rov raqami va u tegishli bo'lgan ta'minot shartnomasi raqami, har biri `system` bilan birga (qarang: [identifikator slayslari](#identifier-slices));
+- birga yuborilgan so'rovlar uchun umumiy guruh raqami (qarang: [guruhlangan so'rovlar](#grouped-requests));
 - so'rov asoslangan [ServiceRequest](StructureDefinition-uz-core-servicerequest.html) yoki boshqa SupplyRequest (`basedOn`);
 - so'rov holati `status` (draft / active / suspended / cancelled / completed / entered-in-error / unknown);
 - so'rov toifasi `category` (zaxirani to'ldirish / shaxsiy, bitta bemor uchun / muassasalar o'rtasida);
@@ -110,7 +111,7 @@ Shifoxona o'z ta'minot shartnomasi doirasida Andijon qon quyish stansiyasidan an
 
 `parameter` o'z `code` i bo'yicha slayslarga bo'lingan: SNOMED CT `63915006` (ABO qon guruhlari tizimi) [qon guruhi](ValueSet-blood-group-vs.html) qiymatlar to'plamidan ABO guruhini, `115678000` (Rh qon guruhlari tizimi) esa [RhD rezus-mansubligi](ValueSet-blood-rh-vs.html) qiymatlar to'plamidan RhD turini o'z ichiga oladi. Ikkala qiymat bog'lanishi ham `required`. `category` kod tizimi o'zbek tiliga asoslangan, ruscha va inglizcha belgilanishlarga ega; `display` ni faqat u resurs `language` iga mos kelgandagina yuboring. `supplier` takrorlanadi, `deliverTo` takrorlanmaydi. `reason` `CodeableReference` turiga ega: `concept` dagi kod yoki `reference` dagi tashxis yoki tekshiruv natijasiga havola.
 
-#### So'rov, shartnoma va guruh raqamlari {#identifier-slices}
+#### So'rov va shartnoma raqamlari {#identifier-slices}
 
 `identifier` o'z `system` URI si bo'yicha slayslarga bo'lingan, shuning uchun tizim aniq mos kelishi shart:
 
@@ -118,7 +119,6 @@ Shifoxona o'z ta'minot shartnomasi doirasida Andijon qon quyish stansiyasidan an
 |---|---|---|
 | [Ta'minot so'rovi raqami](NamingSystem-uzb-supply-request-number.html) | `https://dhp.uz/fhir/core/sid/doc/uz/supply-request` | So'rov yuborayotgan shifoxona |
 | [Ta'minot shartnomasi raqami](NamingSystem-uzb-supply-contract-number.html) | `https://dhp.uz/fhir/core/sid/doc/uz/supply-contract` | Shifoxona va qon xizmati o'rtasidagi ta'minot shartnomasini rasmiylashtirgan tomon |
-| [Ta'minot so'rovlari guruhi raqami](NamingSystem-uzb-supply-group-number.html) | `https://dhp.uz/fhir/core/sid/doc/uz/supply-group` | So'rov yuborayotgan shifoxona |
 
 So'rov raqami qon xizmati va shifoxonaga so'rovni unga javob beradigan yetkazib berish bilan solishtirish imkonini beradi; yetkazib berishning o'z [yetkazib berish raqami](StructureDefinition-uz-core-supply-delivery.html#identifier-slices) bor.
 
@@ -126,17 +126,47 @@ So'rov raqami qon xizmati va shifoxonaga so'rovni unga javob beradigan yetkazib 
 
 SupplyRequest faqat bitta narsani so'rashi mumkin. Agar shifoxonaga bitta bemor uchun bir vaqtning o'zida bir nechta qon komponenti kerak bo'lsa, masalan operatsiya uchun eritrotsitar massa va plazma, u har bir komponent uchun alohida so'rov yuboradi. Ular bir-biriga tegishli ekanini ko'rsatish uchun shifoxona ularning barchasiga bir xil guruh raqamini beradi.
 
+Guruh raqami `identifier` da emas, [guruh identifikatori](StructureDefinition-supplyrequest-group-identifier.html) kengaytmasida beriladi. FHIR R5 dagi SupplyRequest da buning uchun element yo'q. Kengaytma HL7 Orders and Observations inkubatorida SupplyRequest ga qo'shilgan `groupIdentifier` ni oldindan qo'llaydi va rasmiy versiyalararo kengaytma nashr etilgach, u bilan almashtiriladi. Uning `valueIdentifier` i [ta'minot so'rovlari guruhi raqami](NamingSystem-uzb-supply-group-number.html) tizimi `https://dhp.uz/fhir/core/sid/doc/uz/supply-group` va `value` ni oladi. Bu guruhlangan misoldagi plazma so'rovi, unda faqat guruh raqami va o'z so'rov raqami qoldirilgan:
+
+```json
+{
+  "resourceType": "SupplyRequest",
+  "meta": { "profile": ["https://dhp.uz/fhir/core/StructureDefinition/uz-core-supply-request"] },
+  "extension": [
+    {
+      "url": "https://dhp.uz/fhir/core/StructureDefinition/supplyrequest-group-identifier",
+      "valueIdentifier": {
+        "system": "https://dhp.uz/fhir/core/sid/doc/uz/supply-group",
+        "value": "GR-0001",
+        "assigner": { "reference": "Organization/tashkent-hospital" }
+      }
+    }
+  ],
+  "identifier": [
+    { "system": "https://dhp.uz/fhir/core/sid/doc/uz/supply-request", "value": "CK-0005" }
+  ],
+  "status": "active",
+  "deliverFor": { "reference": "Patient/example-salim" },
+  "item": {
+    "concept": {
+      "coding": [ { "system": "http://snomed.info/sct", "code": "346447007" } ]
+    }
+  },
+  "quantity": { "value": 2, "unit": "units", "system": "http://unitsofmeasure.org", "code": "1" }
+}
+```
+
 Shifoxona guruh raqamidan qanday foydalanadi:
 
 - To'plamdagi har bir so'rovga, uning o'z so'rov raqami yonida, bir xil guruh raqamini bering.
 - Har bir yangi to'plam uchun yangi guruh raqamidan foydalaning va eskisini hech qachon qayta ishlatmang.
-- Shifoxonangizni `identifier.assigner` da ko'rsating.
+- Shifoxonangizni guruh identifikatorining `assigner` ida ko'rsating.
 - So'rovlar yuborilgandan keyin guruh yopiladi. Agar keyinroq xuddi shu operatsiya uchun yana bir komponent kerak bo'lsa, yangi guruh raqami bilan yangi so'rov yuboring.
 
-Guruh raqami umumiy, shuning uchun u bitta so'rovni aniqlay olmaydi. Bitta so'rovni topish, yangilash yoki unga havola qilish uchun uning so'rov raqamidan foydalaning. Butun guruhni ko'rish uchun guruh raqami bo'yicha qidiring:
+Guruh raqami umumiy, shuning uchun u bitta so'rovni aniqlay olmaydi. Bitta so'rovni topish, yangilash yoki unga havola qilish uchun uning so'rov raqamidan foydalaning. Butun guruhni ko'rish uchun `group-identifier` [qidiruv parametri](SearchParameter-uz-core-supplyrequest-group-identifier.html) bo'yicha qidiring:
 
 ```
-GET [base]/SupplyRequest?identifier=https://dhp.uz/fhir/core/sid/doc/uz/supply-group|GR-0001
+GET [base]/SupplyRequest?group-identifier=https://dhp.uz/fhir/core/sid/doc/uz/supply-group|GR-0001
 ```
 
 Guruhdagi har bir so'rovning o'z holati bor. Plazmani bekor qilish eritrotsitar massani bekor qilmaydi. Qon xizmati bir nechta so'rovni birga yetkazib berganda, yetkazib berish ularning barchasini `basedOn` da ko'rsatadi.

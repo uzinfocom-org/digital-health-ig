@@ -19,7 +19,7 @@ Profil majburiy elementlar qo'shmaydi. Bazaviy resurs `status`, `intent` va `sub
 - so'ralgan xizmat (`code`);
 - so'rov kim yoki nima uchun ekanligi (`subject`: [bemor](StructureDefinition-uz-core-patient.html) yoki [joy](StructureDefinition-uz-core-location.html)) va u yaratilgan [Encounter](StructureDefinition-uz-core-encounter.html);
 - xizmat qachon ko'rsatilishi kerakligi (`occurrence[x]`) va so'rov qachon yozilgani (`authoredOn`);
-- uni kim yozgani (`requester`: tibbiyot xodimi, tibbiyot xodimining lavozimi, tashkilot, bemor yoki qarindosh) va uni bajarish so'ralgan [Organization](StructureDefinition-uz-core-organization.html) (`performer`);
+- uni kim yozgani (`requester`: tibbiyot xodimi, tibbiyot xodimining lavozimi, tashkilot, bemor yoki qarindosh) va uni kim bajarishi so'ralgani (`performer`: tashkilot, tibbiy xizmat, tibbiyot xodimi, tibbiyot xodimining lavozimi, tibbiy jamoa, bemor, qarindosh yoki tibbiy buyum);
 - buyurtma tafsilotlari (`orderDetail.parameter`), masalan imtiyozli tashxis bo'yicha davolanish asosi - LOINC `86947-9` Reason for hospitalization kodli `basis` parametri;
 - xizmat nima uchun kerakligi (`reason`): ICD-10 yoki SNOMED CT kodi yoki [Condition](StructureDefinition-uz-core-condition.html) ga havola, davlat hisobidan davolanishda esa ICD-10 kodi yonida SBDL mezoni;
 - xizmat qanday to'lanishi ([to'lov turi](StructureDefinition-payment-type.html) kengaytmasi: bepul / pullik / sug'urta / davlat tarifi / boshqalar) va sug'urta qoplamasi (`insurance`);
