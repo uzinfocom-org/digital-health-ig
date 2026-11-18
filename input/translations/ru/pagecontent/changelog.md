@@ -2,6 +2,8 @@
 
 #### Добавлено
 
+[Encounter admit source](ValueSet-encounter-admit-source-vs.html), [Использование причины Encounter](ValueSet-encounter-reason-use-vs.html) и [Encounter discharge disposition](ValueSet-encounter-discharge-disposition-vs.html) дополнены кодами вызовов скорой помощи: 18 мест вызова, 27 локальных и 33 SNOMED CT причины вызова и `emer200` - отказ пациента от госпитализации. [Тип Encounter](ValueSet-encounter-type-vs.html) дополнен пятью типами выезда скорой помощи и SNOMED CT `715537001` - транспортировка машиной скорой помощи, которые [UZ Core Encounter](StructureDefinition-uz-core-encounter.html) принимает в `type`. У всех кодов есть узбекские и русские названия.
+
 [Flag code](SearchParameter-uz-core-flag-code.html) - новый параметр поиска `code`, который находит ресурсы [UZ Core Flag](StructureDefinition-uz-core-flag.html) по тому, о чём отметка, например действующие медицинские отводы пациента от донации крови. В базовом FHIR R5 такого параметра поиска нет.
 
 [MedicationKnowledge associated medication](SearchParameter-uz-core-medicationknowledge-associated-medication.html) - новый параметр поиска `associated-medication`, который находит записи [UZ Core MedicationKnowledge](StructureDefinition-uz-core-medicationknowledge.html) для препарата Medication, например утверждённые цены отпускаемого препарата. В базовом FHIR R5 такого параметра поиска нет. Используйте цепочку с `identifier`, чтобы искать по регистрационному номеру или GTIN препарата.

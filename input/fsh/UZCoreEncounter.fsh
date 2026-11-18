@@ -34,13 +34,13 @@ Description: "Uzbekistan Core Encounter profile, used to represent clinical enco
 * type MS
   * ^short = "Конкретный тип встречи"
   * ^slicing.discriminator.type = #value
-  * ^slicing.discriminator.path = "coding.system"
+  * ^slicing.discriminator.path = "$this"
   * ^slicing.rules = #open
   * ^slicing.description = "A national encounter-type classification is required; additional type codings from other systems are allowed"
+  * ^slicing.ordered = false
 * type contains nationalType 1..1 MS
 * type[nationalType] from EncounterTypeVS (required)
   * ^short = "National encounter-type classification"
-  * coding.system = Canonical(EncounterTypeCS)
 
 * serviceType MS
 * serviceType only CodeableReference(UZCoreHealthcareService)
@@ -179,3 +179,18 @@ Usage: #example
 
 * location[0].location = Reference(example-location)
 * location[0].status = #completed
+
+Instance: example-ambulance-encounter
+InstanceOf: UZCoreEncounter
+Title: "Example Encounter - Ambulance Call"
+Description: "Example of an emergency ambulance call to a patient"
+Usage: #example
+* language = #uz
+* status = #completed
+* class[dhpClass] = $v3-ActCode#EMER
+* priority = $v3ActPriority#EM
+* type[nationalType] = encounter-type-ambulance-cs#emer5-0006-6 "Shoshilinch holatlar"
+* subject = Reference(example-patient)
+* participant.actor = Reference(example-practitionerrole)
+* actualPeriod.start = "2026-03-14T21:05:00+05:00"
+* actualPeriod.end = "2026-03-14T21:50:00+05:00"
