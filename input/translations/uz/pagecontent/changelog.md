@@ -74,7 +74,7 @@ Patient, Practitioner va RelatedPerson namunalari hamda [identifikator tizimlari
 
 [Procedure namunasi](Procedure-example-procedure.html) endi boshqa bemorning tashrifi va holati o'rniga xuddi shu bemorning [ambulator fizioterapiya tashrifi](Encounter-example-physiotherapy-encounter.html) va [o'ng oyoq panjasidagi og'riq](Condition-example-foot-pain.html) holatiga havola qiladi.
 
-[Resurslar qanday bog'langan](workflows.html#how-resources-relate) endi CarePlan, Flag va AllergyIntolerance ni ham qamrab oladi, `encounter` ni ixtiyoriy deb ko'rsatadi va hujjat Bundle ini Provenance imzolashini aytadi.
+[Resurslar qanday bog'langan](workflows.html#resurslar-qanday-boglangan) endi CarePlan, Flag va AllergyIntolerance ni ham qamrab oladi, `encounter` ni ixtiyoriy deb ko'rsatadi va hujjat Bundle ini Provenance imzolashini aytadi.
 
 [UZ Core HealthcareService](StructureDefinition-uz-core-healthcareservice.html) TXMK xizmat kategoriyasi va xizmati uchun Must Support bo'laklarini oldi. Avval faqat onkologiyaga oid bo'lgan [xizmat kategoriyalari](ValueSet-service-categories-vs.html) endi laboratoriya kategoriyalarini ham o'z ichiga oladi.
 
