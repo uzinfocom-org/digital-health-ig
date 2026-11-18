@@ -22,7 +22,7 @@ jobs:
   release:
     runs-on: ubuntu-latest
     env:
-      JAVA_TOOL_OPTIONS: "-Xmx12g"
+      JAVA_TOOL_OPTIONS: "-Xmx10g"
       # Falls back to GITHUB_TOKEN; if a RELEASE_TOKEN PAT is added later the
       # feed PR's checks run and it can auto-merge. Otherwise merge it manually.
       GH_TOKEN: ${{ secrets.RELEASE_TOKEN || github.token }}
