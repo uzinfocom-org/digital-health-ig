@@ -22,7 +22,7 @@ Description: "Uzbekistan Core Task Referral Approval profile, used to track work
 
 * basedOn 1..1 MS
 * basedOn ^short = "Request under which this task was completed"
-* basedOn only Reference(UZCoreServiceRequest)
+* basedOn only Reference(ServiceRequest)
 
 * partOf MS
 * partOf ^short = "Composite Task" 
@@ -31,9 +31,6 @@ Description: "Uzbekistan Core Task Referral Approval profile, used to track work
 * status MS
 * status ^short = "Task Status"
 * status from TaskStatusVS (required)
-
-* statusReason MS
-* statusReason from TaskStatusReasonVS (extensible)
 
 * businessStatus MS
 * businessStatus ^short = "Business status of task"
@@ -45,7 +42,7 @@ Description: "Uzbekistan Core Task Referral Approval profile, used to track work
 
 * focus 1..1 MS
 * focus ^short = "On which task the action is being performed"
-* focus only Reference(UZCoreServiceRequest)
+* focus only Reference(ServiceRequest)
 
 * for MS
 * for ^short = "For whom this task is performed"
@@ -55,10 +52,6 @@ Description: "Uzbekistan Core Task Referral Approval profile, used to track work
 * owner ^short = "Task responsible person"
 * owner only Reference(UZCoreOrganization or UZCorePractitionerRole)
 
-* performer MS
-  * actor MS
-  * actor only Reference(UZCorePractitionerRole)
-
 * requestedPeriod MS
   * ^short = "When execution is required"
   * start and end MS
@@ -66,163 +59,108 @@ Description: "Uzbekistan Core Task Referral Approval profile, used to track work
   * ^short = "Actual start and end time"
   * start and end MS
 
-* authoredOn MS
-
-* requester MS
-* requester only Reference(UZCoreOrganization)
-
-* requestedPerformer MS
-* requestedPerformer only CodeableReference(UZCoreOrganization)
-
-* note MS
-
 * obeys uzcore-tsk-1
 
 Instance: example-task-family-doctor
 InstanceOf: UZCoreReferralApprovalTask
-Description: "Example of a state-insurance workflow task in which the family doctor approves the referral"
+Description: "Example of a state-insurance workflow task assigned to the family doctor for initial approval"
 Usage: #example
 * language = #uz
 * code = task-codes-cs#approve-family-doctor "Oilaviy shifokorning roziligi"
-* basedOn = Reference(ServiceRequest/example-hospitalization-referral)
-* status = #completed
-* businessStatus = task-business-status-cs#confirmed "Tasdiqlangan"
+* basedOn = Reference(ServiceRequest/example-cbc-order)
+* status = #in-progress
+* businessStatus = task-business-status-cs#overdue "Muddati o'tgan"
 * intent = $request-intent#order
-* focus = Reference(ServiceRequest/example-hospitalization-referral)
-* for = Reference(Patient/example-nodira)
+* focus = Reference(ServiceRequest/example-cbc-order)
+* for = Reference(Patient/example-salim)
 * owner = Reference(Organization/xonobod-medical-association)
-* performer.actor = Reference(PractitionerRole/example-practitionerrole)
-* authoredOn = "2026-03-05T13:00:00+05:00"
-* requester = Reference(Organization/xonobod-medical-association)
-* requestedPerformer.reference = Reference(Organization/xonobod-medical-association)
 * requestedPeriod
-  * start = "2026-03-05T13:00:00+05:00"
-  * end = "2026-03-06T18:00:00+05:00"
+  * start = "2026-03-05"
+  * end = "2026-03-06"
 * executionPeriod
-  * start = "2026-03-05T13:10:00+05:00"
-  * end = "2026-03-05T13:30:00+05:00"
-
-Instance: example-task-specialist-returned
-InstanceOf: UZCoreReferralApprovalTask
-Description: "Example of a state-insurance workflow task in which the specialist returns the referral for revision because further investigations are needed"
-Usage: #example
-* language = #uz
-* code = task-codes-cs#approve-specialist "Mutaxassisning roziligi"
-* basedOn = Reference(ServiceRequest/example-hospitalization-referral)
-* partOf = Reference(Task/example-task-family-doctor)
-* status = #completed
-* businessStatus = task-business-status-cs#bstatus-0001-00001 "Qayta ishlash uchun qaytarildi"
-* statusReason = task-status-reason-cs#reason-0001-00005 "Qo'shimcha tekshiruvlar talab etiladi"
-* note.text = "Buyrak va siydik yo'llarining UTT natijasi biriktirilmagan"
-* intent = $request-intent#order
-* focus = Reference(ServiceRequest/example-hospitalization-referral)
-* for = Reference(Patient/example-nodira)
-* owner = Reference(Organization/example-organization)
-* performer.actor = Reference(PractitionerRole/example-practitionerrole-freetext)
-* authoredOn = "2026-03-05T14:00:00+05:00"
-* requester = Reference(Organization/xonobod-medical-association)
-* requestedPerformer.reference = Reference(Organization/example-organization)
-* requestedPeriod
-  * start = "2026-03-05T14:00:00+05:00"
-  * end = "2026-03-07T18:00:00+05:00"
-* executionPeriod
-  * start = "2026-03-06T10:15:00+05:00"
-  * end = "2026-03-06T11:00:00+05:00"
+  * start = "2026-03-05"
+  * end = "2026-03-06"
 
 Instance: example-task-specialist
 InstanceOf: UZCoreReferralApprovalTask
-Description: "Example of a state-insurance workflow task in which the specialist approves the revised referral and sends it to the regional commission"
+Description: "Example of a state-insurance workflow task assigned to a specialist physician for review"
 Usage: #example
 * language = #uz
 * code = task-codes-cs#approve-specialist "Mutaxassisning roziligi"
-* basedOn = Reference(ServiceRequest/example-hospitalization-referral)
+* basedOn = Reference(ServiceRequest/example-cbc-order)
 * partOf = Reference(Task/example-task-family-doctor)
-* status = #completed
-* businessStatus = task-business-status-cs#bstatus-0001-00002 "So'rov viloyat komissiyasiga yuborildi"
+* status = #requested
+* businessStatus = task-business-status-cs#overdue "Muddati o'tgan"
 * intent = $request-intent#order
-* focus = Reference(ServiceRequest/example-hospitalization-referral)
-* for = Reference(Patient/example-nodira)
-* owner = Reference(Organization/example-organization)
-* performer.actor = Reference(PractitionerRole/example-practitionerrole-freetext)
-* authoredOn = "2026-03-07T09:00:00+05:00"
-* requester = Reference(Organization/xonobod-medical-association)
-* requestedPerformer.reference = Reference(Organization/example-organization)
+* focus = Reference(ServiceRequest/example-cbc-order)
+* for = Reference(Patient/example-david)
+* owner = Reference(Organization/tashkent-diseases-hospital)
 * requestedPeriod
-  * start = "2026-03-07T09:00:00+05:00"
-  * end = "2026-03-09T18:00:00+05:00"
+  * start = "2026-03-06"
+  * end = "2026-03-07"
 * executionPeriod
-  * start = "2026-03-07T11:00:00+05:00"
-  * end = "2026-03-07T12:00:00+05:00"
+  * start = "2026-03-06"
+  * end = "2026-03-07"
 
 Instance: example-task-regional-commission
 InstanceOf: UZCoreReferralApprovalTask
-Description: "Example of a state-insurance workflow task in which the regional health commission approves the referral and sends it to the national commission"
+Description: "Example of a state-insurance workflow task assigned to the regional health commission for approval"
 Usage: #example
 * language = #uz
 * code = task-codes-cs#approve-regional-commission "Mintaqaviy komissiyaning roziligi"
-* basedOn = Reference(ServiceRequest/example-hospitalization-referral)
+* basedOn = Reference(ServiceRequest/example-cbc-order)
 * partOf = Reference(Task/example-task-specialist)
 * status = #completed
-* businessStatus = task-business-status-cs#bstatus-0001-00003 "So'rov respublika komissiyasiga yuborildi"
+* businessStatus = task-business-status-cs#confirmed "Tasdiqlangan"
 * intent = $request-intent#order
-* focus = Reference(ServiceRequest/example-hospitalization-referral)
-* for = Reference(Patient/example-nodira)
-* owner = Reference(Organization/tashkent-diseases-hospital)
-* authoredOn = "2026-03-07T12:00:00+05:00"
-* requester = Reference(Organization/xonobod-medical-association)
-* requestedPerformer.reference = Reference(Organization/tashkent-diseases-hospital)
+* focus = Reference(ServiceRequest/example-cbc-order)
+* for = Reference(Patient/example-emma)
+* owner = Reference(Organization/example-organization)
 * requestedPeriod
-  * start = "2026-03-07T12:00:00+05:00"
-  * end = "2026-03-10T18:00:00+05:00"
+  * start = "2026-03-07"
+  * end = "2026-03-08"
 * executionPeriod
-  * start = "2026-03-09T10:00:00+05:00"
-  * end = "2026-03-09T16:00:00+05:00"
+  * start = "2026-03-07"
+  * end = "2026-03-08"
 
 Instance: example-task-national-commission
 InstanceOf: UZCoreReferralApprovalTask
-Description: "Example of a state-insurance workflow task in which the national (republican) health commission approves the referral, leaving the patient to choose the receiving clinic"
+Description: "Example of a state-insurance workflow task assigned to the national (republican) health commission for approval"
 Usage: #example
 * language = #uz
 * code = task-codes-cs#approve-national-commission "Respublika komissiyasining roziligi"
-* basedOn = Reference(ServiceRequest/example-hospitalization-referral)
+* basedOn = Reference(ServiceRequest/example-cbc-order)
 * partOf = Reference(Task/example-task-regional-commission)
 * status = #completed
-* businessStatus = task-business-status-cs#bstatus-0001-00004 "Tibbiyot muassasasini tanlash kutilmoqda"
+* businessStatus = task-business-status-cs#confirmed "Tasdiqlangan"
 * intent = $request-intent#order
-* focus = Reference(ServiceRequest/example-hospitalization-referral)
-* for = Reference(Patient/example-nodira)
-* owner = Reference(Organization/example-organization)
-* authoredOn = "2026-03-09T16:00:00+05:00"
-* requester = Reference(Organization/xonobod-medical-association)
-* requestedPerformer.reference = Reference(Organization/example-organization)
+* focus = Reference(ServiceRequest/example-cbc-order)
+* for = Reference(Patient/example-unidentified-patient)
+* owner = Reference(Organization/xonobod-medical-association)
 * requestedPeriod
-  * start = "2026-03-09T16:00:00+05:00"
-  * end = "2026-03-12T18:00:00+05:00"
+  * start = "2026-03-08"
+  * end = "2026-03-10"
 * executionPeriod
-  * start = "2026-03-10T10:00:00+05:00"
-  * end = "2026-03-11T15:00:00+05:00"
+  * start = "2026-03-08"
+  * end = "2026-03-10"
 
 Instance: example-task-hospitalization
 InstanceOf: UZCoreReferralApprovalTask
-Description: "Example of a state-insurance workflow task for the hospitalization step at the receiving clinic, completed when the patient is discharged"
+Description: "Example of a state-insurance workflow task representing the hospitalization step at the receiving clinic"
 Usage: #example
 * language = #uz
 * code = task-codes-cs#approve-hospitalization "Kasalxonaga yotqizishni tasdiqlash"
-* basedOn = Reference(ServiceRequest/example-hospitalization-referral)
+* basedOn = Reference(ServiceRequest/example-cbc-order)
 * partOf = Reference(Task/example-task-national-commission)
 * status = #completed
-* businessStatus = task-business-status-cs#bstatus-0001-00009 "Kasalxonadan chiqarilgan"
+* businessStatus = task-business-status-cs#completed "Tugallangan"
 * intent = $request-intent#order
-* focus = Reference(ServiceRequest/example-hospitalization-referral)
-* for = Reference(Patient/example-nodira)
+* focus = Reference(ServiceRequest/example-cbc-order)
+* for = Reference(Patient/example-david)
 * owner = Reference(Organization/example-organization)
-* performer.actor = Reference(PractitionerRole/example-practitionerrole-freetext)
-* authoredOn = "2026-03-11T15:00:00+05:00"
-* requester = Reference(Organization/xonobod-medical-association)
-* requestedPerformer.reference = Reference(Organization/example-organization)
 * requestedPeriod
-  * start = "2026-03-11T15:00:00+05:00"
-  * end = "2026-03-31T18:00:00+05:00"
+  * start = "2026-03-10"
+  * end = "2026-05-10"
 * executionPeriod
-  * start = "2026-03-16T09:00:00+05:00"
-  * end = "2026-03-24T12:00:00+05:00"
+  * start = "2026-03-10"
+  * end = "2026-05-10"
