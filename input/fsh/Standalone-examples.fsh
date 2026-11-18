@@ -23,32 +23,15 @@ Description: "Example ServiceRequest for CBC (Umumiy qon tahlili) order"
 * specimen[0] = Reference(Specimen/example-specimen-blood-cbc)
 
 Instance: example-hospitalization-referral
-InstanceOf: UZCoreServiceRequest
-Title: "Hospitalization referral for kidney stone treatment"
+InstanceOf: ServiceRequest
 Usage: #example
-Description: "Example state-insurance referral for planned hospitalization; its approval chain is tracked by the UZ Core Task Referral Approval examples"
-* language = #uz
-* extension[paymentType].valueCodeableConcept = payment-type-cs#paytype-0001-0004 "Davlat tarifi"
-* identifier.system = "https://mis.dmed.uz"
-* identifier.value = "REF-2026-000318"
+Description: "Example state-insurance referral for planned hospitalization; its approval chain is tracked by the UZCoreTask examples"
 * status = #active
 * intent = #order
-* category[dhpCategory] = $sct#32485007 "Admission to hospital"
-* category[referralPurpose] = ServiceRequestReferralPurposeCS#purpose-0001-0003 "Davolash"
-* category[specialty] = $sct#394612005 "Urology"
-* priority = #routine
-* orderDetail.parameter[basis].code = $loinc#86947-9
-* orderDetail.parameter[basis].valueCodeableConcept = $service-request-basis-cs#basis-0001-00001 "Buyrakning yagona toshi (asoratsiz kechishi)"
-* code = $sct#310449005 "Referral to hospital"
+* code = $sct#306206005 "Referral to service"
 * subject = Reference(Patient/example-nodira)
-* occurrencePeriod.start = "2026-03-10"
-* occurrencePeriod.end = "2026-03-31"
-* authoredOn = "2026-03-05T13:00:00+05:00"
 * requester = Reference(PractitionerRole/example-practitionerrole)
-* performer = Reference(HealthcareService/example-healthcareservice)
-* reason[icd10].concept.coding[icd10] = $icd-10#N20.0
-* reason[icd10].concept.coding[sbdl] = $sbdl-cs#SBDL-000001-0 "Buyrakning yagona toshi (asoratsiz kechishi)"
-* supportingInfo.reference = Reference(Observation/example-nodira-benefits)
+* authoredOn = "2026-03-05T08:00:00Z"
 
 Instance: example-transaction-bundle
 InstanceOf: Bundle
