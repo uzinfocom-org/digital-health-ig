@@ -149,31 +149,6 @@ parameters:
 
 #   validation: [allow-any-extensions, no-broken-links]
 #
-# ╭────────────────────────────────────────────menu.xml────────────────────────────────────────────╮
-# │ The menu property will be used to generate the input/menu.xml file. The menu is represented    │
-# │ as a simple structure where the YAML key is the menu item name and the value is the URL.       │
-# │ The IG publisher currently only supports one level deep on sub-menus. To provide a             │
-# │ custom menu.xml file, do not include this property and include a `menu.xml` file in            │
-# │ input/includes. To use a provided input/includes/menu.xml file, delete the "menu"              │
-# │ property below.                                                                                │
-# ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
-menu:
-  Home: index.html
-  Guidance:
-    FHIR basics: fhir-basics.html
-    How to read this guide: how-to-read.html
-    General guidance: general-guidance.html
-    Must Support: must-support.html
-    Identifiers: identifiers.html
-    Payors: payor-identification.html
-    Vital signs: vital-signs.html
-  Workflows: workflows.html
-  Questionnaires: forms.html
-  API access: api-access.html
-  Artifacts: artifacts.html
-  Components: components.html
-  Changelog: changelog.html
-
 # ╭───────────────────────────Less Common Implementation Guide Properties──────────────────────────╮
 # │  Uncomment the properties below to configure additional properties on the ImplementationGuide  │
 # │  resource. These properties are less commonly needed than those above.                         │

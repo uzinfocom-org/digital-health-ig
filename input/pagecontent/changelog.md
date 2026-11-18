@@ -6,6 +6,8 @@
 
 [Composition types](CodeSystem-composition-type-cs.html) add `emdoc-0010-0471` for Order No. 399 form 112, a laboratory analysis of folic acid, 25-OH vitamin D and vitamin B12.
 
+[Discharge summary section](ValueSet-discharge-summary-section-vs.html) codes the sections of a discharge summary (epicrisis) [Composition](StructureDefinition-uz-core-composition.html): LOINC for complaints, present illness, clinical and neurological status, and the new [Discharge summary section](CodeSystem-discharge-summary-section-cs.html) code system for life and epidemiological history and local status.
+
 [Encounter admit source](ValueSet-encounter-admit-source-vs.html), [Encounter reason use](ValueSet-encounter-reason-use-vs.html) and [Encounter discharge disposition](ValueSet-encounter-discharge-disposition-vs.html) add ambulance call codes: 18 pick-up places, 27 local and 33 SNOMED CT call reasons, and `emer200` patient refused hospitalisation, with Uzbek and Russian names.
 
 Every profile page now has a narrative intro and a Quick Start. New ones were added for [UZ Core BiologicallyDerivedProduct](StructureDefinition-uz-core-biologically-derived-product.html), [UZ Core Claim](StructureDefinition-uz-core-claim.html), [UZ Core ClaimResponse](StructureDefinition-uz-core-claim-response.html), [UZ Core Composition](StructureDefinition-uz-core-composition.html), [UZ Core DiagnosticReport](StructureDefinition-uz-core-diagnostic-report.html), [UZ Core Group](StructureDefinition-uz-core-group.html), [UZ Core InventoryItem](StructureDefinition-uz-core-inventoryitem.html), [UZ Core Laboratory ObservationDefinition](StructureDefinition-uz-core-laboratory-observation-definition.html), [UZ Core MedicationDispense](StructureDefinition-uz-core-medication-dispense.html), [UZ Core MedicationRequest](StructureDefinition-uz-core-medicationrequest.html), [UZ Core Task Referral Approval](StructureDefinition-uz-core-referral-approval-task.html), [UZ Core ServiceRequest](StructureDefinition-uz-core-servicerequest.html), [UZ Core SupplyRequest](StructureDefinition-uz-core-supply-request.html) and [UZ Core ActivityDefinition](StructureDefinition-uz-core-activitydefinition.html).
@@ -14,9 +16,15 @@ Every profile page now has a narrative intro and a Quick Start. New ones were ad
 
 [MedicationRequest status reason](ValueSet-medicationrequest-status-reason-vs.html) adds SNOMED CT `438833006` administration of medication contraindicated, with Uzbek and Russian names, for cancelling a DMED e-prescription.
 
+[Payment type](CodeSystem-payment-type-cs.html) adds `paytype-0001-0006` Resolution No. 5199 and `paytype-0001-0007` Resolution No. 311.
+
 [Physiotherapy procedure codes](CodeSystem-physiotherapy-procedure-cs.html) list 73 procedures, mapped to SNOMED CT in the [physiotherapy procedure map](ConceptMap-physiotherapy-procedure-to-snomed.html). [UZ Core ServiceRequest](StructureDefinition-uz-core-servicerequest.html) orders 23 of them by their SNOMED CT code and the other 50 by local code, which [procedure codes](ValueSet-procedure-code-vs.html) also include. ServiceRequest adds Must Support `orderDetail` for the [route](ValueSet-route-code-vs.html) and `location` for a [UZ Core Location](StructureDefinition-uz-core-location.html) or a [kind of place](ValueSet-service-request-location-vs.html), such as the patient's home, as in the [drug electrophoresis order](ServiceRequest-example-electrophoresis-request.html).
 
+[SBDL state-funded treatment criterion](CodeSystem-sbdl-cs.html) holds the State Health Insurance Fund's criteria for state-funded treatment, each with its ICD-10 codes, the levels of medical organization that may provide it and its validity dates.
+
 [Search](search.html), opened from the page header, finds resources by title, name, URL or description, and codes, terms and mappings, in English, Russian and Uzbek, narrowed by resource type.
+
+[ServiceRequest specialty](ValueSet-service-request-specialty-vs.html) lists the specialties a referral is addressed to: SNOMED CT codes, with Uzbek and Russian names in a [supplement](CodeSystem-sr-sct-category-cs.html), and the new [ServiceRequest local specialty](CodeSystem-service-request-specialty-cs.html) codes where SNOMED CT has none, [mapped to SNOMED CT](ConceptMap-service-request-specialty-to-snomed-cm.html).
 
 [Unit of measurement codes](CodeSystem-unit-of-measurement-cs.html) add nine Pharmaceutical Committee registry units, mapped to UCUM in the [unit of measurement map](ConceptMap-unit-of-measurement-cm.html).
 
@@ -91,6 +99,10 @@ Titles and descriptions of code systems and value sets follow the [modelling gui
 [UZ Core Practitioner](StructureDefinition-uz-core-practitioner.html) allows translations of the specialist certificate text in `qualification.code.text`.
 
 [UZ Core Procedure](StructureDefinition-uz-core-procedure.html) makes `complication` Must Support and recommends [blood donation complication codes](ValueSet-procedure-complication-vs.html), such as fainting, when `code` is SNOMED CT `25179006` Whole blood unit collection, as in the [blood donation example](Procedure-example-blood-donation-procedure.html).
+
+[UZ Core ServiceRequest](StructureDefinition-uz-core-servicerequest.html) adds the [referral purpose](ValueSet-service-request-referral-purpose-vs.html) and `specialty` categories, `performer`, and a `basis` order detail (LOINC `86947-9`) from [ServiceRequest basis](ValueSet-service-request-basis-vs.html) for state-funded treatment. An ICD-10 `reason` can carry the [SBDL criterion](ValueSet-sbdl-vs.html) it qualifies under.
+
+[UZ Core Task Referral Approval](StructureDefinition-uz-core-referral-approval-task.html) adds `statusReason` from [Task status reason](ValueSet-task-status-reason-vs.html), `performer`, `authoredOn`, `requester`, `requestedPerformer` and notes, and its `basedOn` and `focus` reference a UZ Core ServiceRequest. [Task business statuses](CodeSystem-task-business-status-cs.html) add nine hospitalization referral stages, from returned for revision to discharged.
 
 #### Breaking changes
 

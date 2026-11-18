@@ -14,13 +14,14 @@ Profil majburiy elementlar qo'shmaydi. Bazaviy resurs `status`, `intent` va `sub
 
 - buyurtma yoki yo'llanmaning biznes identifikatori (`identifier`) va birga yaratilgan so'rovlarni, masalan bitta namunadagi barcha tahlillarni birlashtiruvchi umumiy identifikator (`requisition`);
 - so'rov holati (draft / active / on-hold / revoked / completed / entered-in-error / unknown) va uning maqsadi (proposal / plan / order va uning turlari);
-- xizmat turi (`category`), ko'pi bilan bitta milliy toifa bilan, masalan laboratoriya bo'limi yoki kasalxonaga yotqizish;
+- xizmat turi (`category`), ko'pi bilan bitta milliy toifa bilan, masalan laboratoriya bo'limi yoki kasalxonaga yotqizish, va yo'llanma maqsadlari (diagnostika / davolash / tashxisni aniqlashtirish / dispanser hisobiga olish / tug'ruq / boshqa; konsultatsiyaga yo'llanma milliy toifa sifatida SNOMED CT `11429006` Consultation ni oladi) va yo'llanma berilgan klinik mutaxassislik;
 - shoshilinchlik (`priority`: routine / urgent / asap / stat) va xizmatni bajarmaslik kerakligi belgisi (`doNotPerform`);
 - so'ralgan xizmat (`code`);
 - so'rov kim yoki nima uchun ekanligi (`subject`: [bemor](StructureDefinition-uz-core-patient.html) yoki [joy](StructureDefinition-uz-core-location.html)) va u yaratilgan [Encounter](StructureDefinition-uz-core-encounter.html);
 - xizmat qachon ko'rsatilishi kerakligi (`occurrence[x]`) va so'rov qachon yozilgani (`authoredOn`);
-- uni kim yozgani (`requester`: tibbiyot xodimi, tibbiyot xodimining lavozimi, tashkilot, bemor yoki qarindosh);
-- xizmat nima uchun kerakligi (`reason`): ICD-10 yoki SNOMED CT kodi yoki [Condition](StructureDefinition-uz-core-condition.html) ga havola;
+- uni kim yozgani (`requester`: tibbiyot xodimi, tibbiyot xodimining lavozimi, tashkilot, bemor yoki qarindosh) va uni kim bajarishi so'ralgani (`performer`: tashkilot, tibbiy xizmat, tibbiyot xodimi, tibbiyot xodimining lavozimi, tibbiy jamoa, bemor, qarindosh yoki tibbiy buyum);
+- buyurtma tafsilotlari (`orderDetail.parameter`), masalan imtiyozli tashxis bo'yicha davolanish asosi - LOINC `86947-9` Reason for hospitalization kodli `basis` parametri;
+- xizmat nima uchun kerakligi (`reason`): ICD-10 yoki SNOMED CT kodi yoki [Condition](StructureDefinition-uz-core-condition.html) ga havola, davlat hisobidan davolanishda esa ICD-10 kodi yonida SBDL mezoni;
 - xizmat qanday to'lanishi ([to'lov turi](StructureDefinition-payment-type.html) kengaytmasi: bepul / pullik / sug'urta / davlat tarifi / boshqalar) va sug'urta qoplamasi (`insurance`);
 - so'rovni asoslovchi boshqa ma'lumotlar (`supportingInfo`) va tekshiriladigan [namuna](StructureDefinition-uz-core-specimen.html) (`specimen`);
 - bemor uchun ko'rsatmalar, masalan qanday tayyorlanish kerakligi (`patientInstruction`).
@@ -124,11 +125,11 @@ Oilaviy shifokor qabul paytida shoshilinch umumiy qon tahlilini buyuradi. Klinik
 }
 ```
 
-`category` va `reason` qiymat bo'yicha bo'laklarga ajratilgan. `category` [ServiceRequest ning milliy toifalari](ValueSet-service-request-categories-vs.html) dan (laboratoriya bo'limlari va SNOMED CT xizmat turlari) ko'pi bilan bitta kodni o'z ichiga oladi, uning yonida boshqa toifalar ham bo'lishi mumkin. `reason` milliy holat kodlaridan ICD-10 yoki SNOMED CT kodlarini qabul qiladi; qayd etilgan tashxisga havola qilish uchun `concept` o'rniga `"reference": { "reference": "Condition/[id]" }` dan foydalaning. `patientInstruction` takrorlanadi, har bir yozuv markdown matni yoki hujjatga havola.
+`category` va `reason` qiymat bo'yicha bo'laklarga ajratilgan. `category` [ServiceRequest ning milliy toifalari](ValueSet-service-request-categories-vs.html) dan (laboratoriya bo'limlari va SNOMED CT xizmat turlari) ko'pi bilan bitta kodni o'z ichiga oladi, uning yonida boshqa toifalar ham bo'lishi mumkin. Yo'llanma o'z maqsadlarini va ko'pi bilan bitta [klinik mutaxassislik](ValueSet-service-request-specialty-vs.html) ni qo'shadi: SNOMED CT kodi yoki SNOMED CT da ekvivalenti bo'lmagan joyda mahalliy kod, masalan ftiziatriya. `reason` milliy holat kodlaridan ICD-10 yoki SNOMED CT kodlarini qabul qiladi; qayd etilgan tashxisga havola qilish uchun `concept` o'rniga `"reference": { "reference": "Condition/[id]" }` dan foydalaning. `patientInstruction` takrorlanadi, har bir yozuv markdown matni yoki hujjatga havola.
 
 #### Davlat hisobidan kasalxonaga yotqizishga yo'llanma
 
-Oilaviy shifokor bemorni davlat tarifi bo'yicha rejali kasalxonaga yotqizishga yo'naltiradi. Xizmat - SNOMED CT `306206005` Referral to service, toifa - `32485007` Admission to hospital, `performer` esa bemor yo'naltirilgan [HealthcareService](StructureDefinition-uz-core-healthcareservice.html) ni ko'rsatadi:
+Oilaviy shifokor bemorni davlat tarifi bo'yicha rejali kasalxonaga yotqizishga yo'naltiradi. Xizmat - SNOMED CT `310449005` Referral to hospital, toifa - `32485007` Admission to hospital, `performer` esa bemor yo'naltirilgan [HealthcareService](StructureDefinition-uz-core-healthcareservice.html) ni ko'rsatadi:
 
 ```json
 {
@@ -157,7 +158,7 @@ Oilaviy shifokor bemorni davlat tarifi bo'yicha rejali kasalxonaga yotqizishga y
   ],
   "priority": "routine",
   "code": {
-    "concept": { "coding": [ { "system": "http://snomed.info/sct", "code": "306206005" } ] }
+    "concept": { "coding": [ { "system": "http://snomed.info/sct", "code": "310449005" } ] }
   },
   "subject": { "reference": "Patient/example-nodira" },
   "occurrencePeriod": { "start": "2026-03-10", "end": "2026-03-31" },
@@ -167,12 +168,22 @@ Oilaviy shifokor bemorni davlat tarifi bo'yicha rejali kasalxonaga yotqizishga y
   "reason": [
     {
       "concept": {
-        "coding": [ { "system": "http://hl7.org/fhir/sid/icd-10", "code": "K80.2" } ]
+        "coding": [
+          { "system": "http://hl7.org/fhir/sid/icd-10", "code": "K80.2" },
+          {
+            "system": "https://terminology.dhp.uz/fhir/core/CodeSystem/sbdl-cs",
+            "code": "SBDL-005200-7",
+            "display": "Birlamchi jarrohlik amaliyotlari"
+          }
+        ]
       }
     }
-  ]
+  ],
+  "supportingInfo": [ { "reference": { "reference": "Observation/example-nodira-benefits" } } ]
 }
 ```
+
+Davlat hisobidan yo'llanmada `reason` dagi ICD-10 kodlashi yonida davolanish davlat hisobidan to'lanadigan [SBDL mezoni](ValueSet-sbdl-vs.html) beriladi: Davlat tibbiy sug'urta jamg'armasining shu mezon va tashxis uchun kodi. Ikkala kodlash bitta sababni tavsiflaydi, shuning uchun ular bitta `concept` ichida turadi. Agar sabab Condition ga havola bo'lsa, SBDL kodini shu Condition ning `code` elementiga uning ICD-10 kodi yonida yozing. Agar yo'llanma bemorning imtiyozli toifasi tufayli davlat hisobidan to'lansa, `supportingInfo` ushbu toifa qayd etilgan [ijtimoiy-iqtisodiy kuzatuv](StructureDefinition-uz-core-socioeconomic-observation.html) ga havola qiladi.
 
 Keyingi qadamni to'lov turi belgilaydi. Davlat tarifida platforma [kelishuv Task](StructureDefinition-uz-core-referral-approval-task.html) lari zanjirini boshlaydi va ServiceRequest `status` ini ular bilan muvofiqlashtiradi; boshqa har qanday to'lov turida yo'llanma to'g'ridan-to'g'ri ijrochiga o'tadi. `occurrencePeriod` - xizmat ko'rsatilishi kerak bo'lgan oraliq; aniq vaqt uchun `occurrenceDateTime` dan foydalaning.
 

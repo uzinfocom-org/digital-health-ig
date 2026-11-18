@@ -1,4 +1,4 @@
-UZ Core Socioeconomic Observation captures a patient's preferential/benefit category and socioeconomic status - the facts that influence reimbursement eligibility, such as a disability or social-benefit group, as well as education, profession, and social status. It is modelled as an [Observation](StructureDefinition-uz-core-observation.html) so it lives alongside clinical observations but is categorised distinctly. Use the Observation endpoint to read and search these records.
+UZ Core Socioeconomic Observation captures a patient's benefit category and socioeconomic status - the facts that influence reimbursement eligibility, such as a disability or social-benefit group, as well as education, profession, and social status. It is modelled as an [Observation](StructureDefinition-uz-core-observation.html) so it lives alongside clinical observations but is categorised distinctly. Use the Observation endpoint to read and search these records.
 
 ### Mandatory and Must Support data elements
 

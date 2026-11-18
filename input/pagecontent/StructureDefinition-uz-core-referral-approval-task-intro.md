@@ -13,11 +13,14 @@ Every Task must point to the referral twice: in `basedOn`, the request it fulfil
 - a business identifier for the task (`identifier`, at most one);
 - the approval stage (`code`: family doctor / specialist / regional commission / national commission / insurance fund / hospitalization);
 - the referral the task belongs to (`basedOn` and `focus`) and a larger task it is part of (`partOf`);
-- the lifecycle status (`status`: requested / accepted / in-progress / on-hold / completed / rejected / failed and others) and the status shown to users (`businessStatus`: in review / confirmed / overdue and others);
+- the lifecycle status (`status`: requested / accepted / in-progress / on-hold / completed / rejected / failed and others) and the status shown to users (`businessStatus`: in review / confirmed / overdue / hospitalization scheduled and others);
+- why the task has its current status (`statusReason`: a missing supporting document, an incorrect diagnosis or receiving institution, the patient refusing treatment and others);
 - the intent (`intent`, usually order);
 - the [Patient](StructureDefinition-uz-core-patient.html) the referral is for (`for`);
 - who must act at this stage (`owner`: an [Organization](StructureDefinition-uz-core-organization.html) or [PractitionerRole](StructureDefinition-uz-core-practitioner-role.html));
-- the deadline for the stage (`requestedPeriod`, its start and end) and when work on it actually started and ended (`executionPeriod`).
+- the [PractitionerRole](StructureDefinition-uz-core-practitioner-role.html) that performed the stage (`performer.actor`), the [Organization](StructureDefinition-uz-core-organization.html) that requested it (`requester`) and the organizations asked to carry it out (`requestedPerformer`);
+- when the task was created (`authoredOn`), the deadline for the stage (`requestedPeriod`, its start and end) and when work on it actually started and ended (`executionPeriod`);
+- comments on the task (`note`).
 
 ### Two statuses
 

@@ -2,7 +2,11 @@
 
 #### Qo'shildi
 
+[Chiqish epikrizi bo'limlari](ValueSet-discharge-summary-section-vs.html) chiqish epikrizi [Composition](StructureDefinition-uz-core-composition.html) bo'limlarini kodlaydi: shikoyatlar, kasallik anamnezi, obyektiv holat va nevrologik status uchun LOINC, hayot anamnezi, epidemiologik anamnez va mahalliy status uchun yangi [Chiqish epikrizi bo'limlari](CodeSystem-discharge-summary-section-cs.html) kod tizimi.
+
 [Composition hujjat turlari](CodeSystem-composition-type-cs.html): 399-son buyruqning 112-shakli - foliy kislotasi, 25-OH D vitamini va B12 vitaminiga laboratoriya tahlili uchun `emdoc-0010-0471` kodi qo'shildi.
+
+[Davlat hisobidan davolanishning SBDL mezonlari](CodeSystem-sbdl-cs.html) - Davlat tibbiy sug'urta jamg'armasi mezonlarining yangi kod tizimi; har bir mezonda ICD-10 kodlari, davolashni ko'rsatishi mumkin bo'lgan tibbiy tashkilot darajalari va amal qilish muddatlari ko'rsatilgan.
 
 [Dori shakllari](CodeSystem-medication-doseform-cs.html): DMED elektron retsepti va Farmatsevtika qo'mitasi dori vositalari reyestrining kodi bo'lmagan dori shakllari uchun to'qqizta kod o'zbek, rus va ingliz tilidagi nomlari bilan qo'shildi, masalan `CTP101` kataplazma, `KIT101` to'plam va `TEA101` dorivor o'simliklar yig'masi.
 
@@ -21,6 +25,10 @@ Endi har bir profil sahifasida kirish qismi va Tez boshlash bo'limi bor. Yangila
 [Qidiruv](search.html) sahifa sarlavhasidan ochiladi va resurslarni sarlavhasi, nomi, URL yoki tavsifi, shuningdek kodlar, atamalar va moslashtirishlar bo'yicha ingliz, rus va o'zbek tillarida topadi, natijalarni resurs turi bo'yicha filtrlash mumkin.
 
 [Qon mahsuloti turlari](ValueSet-blood-product-type-snomed-vs.html) ga SNOMED CT `789265003` (faqat inson albuminidan iborat mahsulot) kodi o'zbek va rus tilidagi nomlari bilan [supplement](CodeSystem-blood-product-type-snomed-cs.html) da qo'shildi.
+
+[ServiceRequest yo'llanma mutaxassisliklari](ValueSet-service-request-specialty-vs.html) - yo'llanma beriladigan klinik mutaxassisliklar: o'zbekcha va ruscha nomlari [tarjimalarda](CodeSystem-sr-sct-category-cs.html) berilgan SNOMED CT kodlari va SNOMED CT da ekvivalenti bo'lmagan joyda yangi [ServiceRequest mahalliy mutaxassisliklari](CodeSystem-service-request-specialty-cs.html), [SNOMED CT ga moslashtirish](ConceptMap-service-request-specialty-to-snomed-cm.html) bilan.
+
+[To'lov turi](CodeSystem-payment-type-cs.html) `paytype-0001-0006` 5199-sonli qaror va `paytype-0001-0007` 311-sonli qaror kodlari bilan to'ldirildi.
 
 [UZ Core BiologicallyDerivedProductDispense](StructureDefinition-uz-core-biologicallyderivedproductdispense.html) biologik mahsulotni bemorning klinik jamoasiga berishni qayd etadi: [berish raqami](NamingSystem-uzb-bdp-dispense-number.html), buyurtma, retsipiyent, mahsulot, ijrochilar va topshirish vaqti. Uning HL7 holat, moslik holati, kelib chiqish munosabati va ijrochi funksiyasi kodlarining o'zbekcha va ruscha tarjimalari bor, minimal, berish va qaytarish namunalari uni ko'rsatadi.
 
@@ -89,6 +97,10 @@ Patient, Practitioner va RelatedPerson namunalari hamda [identifikator tizimlari
 [UZ Core Procedure](StructureDefinition-uz-core-procedure.html) `complication` ni Must Support qiladi va `code` SNOMED CT `25179006` (butun qon olish) bo'lganda [qon donorligi asoratlari kodlarini](ValueSet-procedure-complication-vs.html), masalan hushdan ketishni, tavsiya qiladi, buni [qon donorligi namunasi](Procedure-example-blood-donation-procedure.html) ko'rsatadi.
 
 UZ Core profillaridagi havolalar endi UZ Core profillariga yo'naltirilgan: barcha Device havolalari [UZ Core Device](StructureDefinition-uz-core-device.html) ga, Observation, Immunization va Procedure dagi `basedOn` [UZ Core CarePlan](StructureDefinition-uz-core-careplan.html) ga, `Procedure.complication` esa [UZ Core Condition](StructureDefinition-uz-core-condition.html) ga.
+
+[UZ Core ServiceRequest](StructureDefinition-uz-core-servicerequest.html) ga [yo'llanma maqsadi](ValueSet-service-request-referral-purpose-vs.html) va `specialty` toifalari, `performer` hamda davlat hisobidan davolanish uchun [ServiceRequest asoslari](ValueSet-service-request-basis-vs.html) dan `basis` buyurtma tafsiloti (LOINC `86947-9`) qo'shildi. ICD-10 sababi (`reason`) davolanish to'lanadigan [SBDL mezoni](ValueSet-sbdl-vs.html) ni ham o'z ichiga olishi mumkin.
+
+[UZ Core Task Referral Approval](StructureDefinition-uz-core-referral-approval-task.html) ga [Vazifa holati sababi](ValueSet-task-status-reason-vs.html) dan `statusReason`, `performer`, `authoredOn`, `requester`, `requestedPerformer` va izohlar qo'shildi, `basedOn` va `focus` esa UZ Core ServiceRequest ga havola qiladi. [Vazifalarning biznes holatlari](CodeSystem-task-business-status-cs.html) kasalxonaga yotqizish yo'llanmasining to'qqizta bosqichi bilan to'ldirildi: qayta ishlashga qaytarishdan kasalxonadan chiqarishgacha.
 
 [Zaxira holati](CodeSystem-inventoryitem-inventory-status-cs.html) endi `in-fractionation` ni ruschada «В фракционировании» o'rniga «На фракционировании» deb ataydi.
 
