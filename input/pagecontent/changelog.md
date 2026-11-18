@@ -68,6 +68,8 @@ ICCC-3 and WHO ICHI now require a code system version when their codes are excha
 
 [Inventory status](CodeSystem-inventoryitem-inventory-status-cs.html) now gives `in-fractionation` the Russian name «На фракционировании» instead of «В фракционировании».
 
+[Laboratory method map](ConceptMap-lab-methods-to-loinc.html) maps mass spectrometry to SNOMED CT `1306402001` instead of a LOINC part, and fixes the sequencing and rapid immunoassay rows, which pointed at the neighbouring row's code.
+
 [MedicationRequest status translations](CodeSystem-medicationrequest-status-cs.html) now give `ended` the Russian name «Окончено» instead of «Завершено», which duplicated `completed`.
 
 Patient, Practitioner and RelatedPerson examples and the [identifier systems](identifiers.html) page now use made-up PINFLs that cannot belong to a real person, and the specialist certificate examples a made-up number and dates.
@@ -98,7 +100,7 @@ Titles and descriptions of code systems and value sets follow the [modelling gui
 
 [UZ Core Practitioner](StructureDefinition-uz-core-practitioner.html) allows translations of the specialist certificate text in `qualification.code.text`.
 
-[UZ Core Procedure](StructureDefinition-uz-core-procedure.html) makes `complication` Must Support and recommends [blood donation complication codes](ValueSet-procedure-complication-vs.html), such as fainting, when `code` is SNOMED CT `25179006` Whole blood unit collection, as in the [blood donation example](Procedure-example-blood-donation-procedure.html).
+[UZ Core Procedure](StructureDefinition-uz-core-procedure.html) makes `complication` Must Support and recommends [blood donation complication codes](ValueSet-procedure-complication-vs.html), such as fainting, when `code` is SNOMED CT `25179006` Whole blood unit collection, as in the [blood donation example](Procedure-example-blood-donation-procedure.html). When `code` is SNOMED CT `116859006` Transfusion of blood product, it recommends [blood transfusion complication codes](ValueSet-blood-transfusion-complication-vs.html), such as febrile or hemolytic reactions.
 
 [UZ Core ServiceRequest](StructureDefinition-uz-core-servicerequest.html) adds the [referral purpose](ValueSet-service-request-referral-purpose-vs.html) and `specialty` categories, `performer`, and a `basis` order detail (LOINC `86947-9`) from [ServiceRequest basis](ValueSet-service-request-basis-vs.html) for state-funded treatment. An ICD-10 `reason` can carry the [SBDL criterion](ValueSet-sbdl-vs.html) it qualifies under.
 

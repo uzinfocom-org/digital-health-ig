@@ -72,7 +72,7 @@ JSON-копия ресурса на каждом языке теперь сох�
 
 [UZ Core Practitioner](StructureDefinition-uz-core-practitioner.html) допускает переводы текста сертификата специалиста в `qualification.code.text`.
 
-[UZ Core Procedure](StructureDefinition-uz-core-procedure.html) делает `complication` Must Support и рекомендует [коды осложнений донации крови](ValueSet-procedure-complication-vs.html), например обморок, при `code` SNOMED CT `25179006` (забор цельной крови), как в [примере донации крови](Procedure-example-blood-donation-procedure.html).
+[UZ Core Procedure](StructureDefinition-uz-core-procedure.html) делает `complication` Must Support и рекомендует [коды осложнений донации крови](ValueSet-procedure-complication-vs.html), например обморок, при `code` SNOMED CT `25179006` (забор цельной крови), как в [примере донации крови](Procedure-example-blood-donation-procedure.html). При `code` SNOMED CT `116859006` (переливание продукта крови) рекомендует [коды осложнений переливания крови](ValueSet-blood-transfusion-complication-vs.html), например фебрильную или гемолитическую реакцию.
 
 [UZ Core ServiceRequest](StructureDefinition-uz-core-servicerequest.html) добавляет категории [цели направления](ValueSet-service-request-referral-purpose-vs.html) и `specialty`, `performer` и параметр назначения `basis` (LOINC `86947-9`) из [Основания ServiceRequest](ValueSet-service-request-basis-vs.html) для лечения за счёт государства. Причина ICD-10 (`reason`) может содержать [критерий SBDL](ValueSet-sbdl-vs.html), по которому лечение оплачивается.
 
@@ -85,6 +85,8 @@ JSON-копия ресурса на каждом языке теперь сох�
 [Как связаны ресурсы](workflows.html#how-resources-relate) теперь охватывает CarePlan, Flag и AllergyIntolerance, показывает `encounter` как необязательный и указывает, что Provenance подписывает Bundle документа.
 
 [Карта единиц измерения](ConceptMap-unit-of-measurement-cm.html) дополнена целевыми кодами UCUM для 30 единиц, у которых их не было, например `[iU]`, `mg/{dose}` и `[CFU]`, сопоставляет `270` с `U/mL` вместо `[arb'U]/mL`, а `275` теперь шире `[CCID_50]`.
+
+[Карта лабораторных методов](ConceptMap-lab-methods-to-loinc.html) сопоставляет масс-спектрометрию с SNOMED CT `1306402001` вместо части LOINC и исправляет строки секвенирования и экспресс-иммуноанализа, которые указывали на код соседней строки.
 
 [Кодовая система веществ-аллергенов](CodeSystem-allergy-reaction-substance-cs.html) связывает каждый компонентный аллерген с его цельным экстрактом через `parent`, поэтому фильтры is-a находят компоненты под их экстрактом.
 

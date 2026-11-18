@@ -68,6 +68,8 @@ IG Publisher 3.0.1 tekshiruvlari aniqlagan ConceptMap tuzatishlari: [DMED lavozi
 
 Kod tizimlari va qiymatlar to'plamlarining sarlavhalari va tavsiflari endi [modellashtirish qo'llanmasidagi](https://github.com/uzinfocom-org/digital-health-ig/blob/main/modelling-guidelines.md) nomlash shabloniga mos keladi: supplement `[Concept] translations`, qiymatlar to'plami esa `[Concept]` deb nomlanadi. Kanonik URL, identifikatorlar va kodlar o'zgarmadi.
 
+[Laboratoriya usullari xaritasi](ConceptMap-lab-methods-to-loinc.html) mass-spektrometriyani LOINC qismi o'rniga SNOMED CT `1306402001` bilan moslaydi va qo'shni qator kodiga ishora qilgan sekvensiyalash va tezkor immunoanaliz qatorlarini tuzatadi.
+
 [MedicationRequest holatlari tarjimalari](CodeSystem-medicationrequest-status-cs.html) endi `ended` ni ruschada «Окончено» deb ataydi, avvalgi «Завершено» `completed` bilan bir xil edi.
 
 Namunalar endi HL7 kodlarining display qiymatini HL7 display qiymatidan farq qilgan yoki o'zbek yoki rus tilida yozilgan joylarda belgilamaydi, masalan Organization identifikator turi va Patient oilaviy holati. [Tibbiy karta raqami](NamingSystem-patient-id-uzb-health-card.html) va [pensiya raqami](NamingSystem-patient-id-uzb-pension-number.html) nomlash tizimlari endi HL7 display qiymatlaridan foydalanadi.
@@ -94,7 +96,7 @@ Patient, Practitioner va RelatedPerson namunalari hamda [identifikator tizimlari
 
 [UZ Core Practitioner](StructureDefinition-uz-core-practitioner.html) endi `qualification.code.text` dagi mutaxassis sertifikati matnining tarjimalariga ruxsat beradi.
 
-[UZ Core Procedure](StructureDefinition-uz-core-procedure.html) `complication` ni Must Support qiladi va `code` SNOMED CT `25179006` (butun qon olish) bo'lganda [qon donorligi asoratlari kodlarini](ValueSet-procedure-complication-vs.html), masalan hushdan ketishni, tavsiya qiladi, buni [qon donorligi namunasi](Procedure-example-blood-donation-procedure.html) ko'rsatadi.
+[UZ Core Procedure](StructureDefinition-uz-core-procedure.html) `complication` ni Must Support qiladi va `code` SNOMED CT `25179006` (butun qon olish) bo'lganda [qon donorligi asoratlari kodlarini](ValueSet-procedure-complication-vs.html), masalan hushdan ketishni, tavsiya qiladi, buni [qon donorligi namunasi](Procedure-example-blood-donation-procedure.html) ko'rsatadi. `code` SNOMED CT `116859006` (qon mahsulotini quyish) bo'lganda esa [qon quyish asoratlari kodlarini](ValueSet-blood-transfusion-complication-vs.html), masalan febril yoki gemolitik reaksiyani, tavsiya qiladi.
 
 UZ Core profillaridagi havolalar endi UZ Core profillariga yo'naltirilgan: barcha Device havolalari [UZ Core Device](StructureDefinition-uz-core-device.html) ga, Observation, Immunization va Procedure dagi `basedOn` [UZ Core CarePlan](StructureDefinition-uz-core-careplan.html) ga, `Procedure.complication` esa [UZ Core Condition](StructureDefinition-uz-core-condition.html) ga.
 
