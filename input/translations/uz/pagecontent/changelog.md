@@ -4,6 +4,10 @@
 
 [Ro'yxatga olish guvohnomasi raqami](NamingSystem-registration-certificate-id.html) va [UzPharm guruh qadog'i identifikatori](NamingSystem-uz-pharm-box-id.html) URI'lari `https://uzpharminfo.uz/registrationNumber` va `https://uzpharminfo.uz/boxGroupId` ga o'zgaradi — Farmatsevtika qo'mitasi reyestri yuklagichi allaqachon yuboradiganlari. Eski `registration_number` yoki `box_group_id` URI'li [UZ Core Medication](StructureDefinition-uz-core-medication.html) identifikatori endi o'z slice'iga tushmaydi, identifikator bo'yicha qidiruv yangi URI'lardan foydalanishi kerak.
 
+#### O'zgartirildi
+
+[UZ Core AuditEvent](StructureDefinition-uz-core-auditevent.html) `agent.who` endi [UZ Core Device](StructureDefinition-uz-core-device.html) yoki [UZ Core Organization](StructureDefinition-uz-core-organization.html) ga ham havola qilishi mumkin, inson ishtirokisiz hodisalar uchun, masalan, rejalashtirilgan vazifa yoki tizimning kirishi.
+
 ### Versiya 0.13.0
 
 #### Qo'shildi

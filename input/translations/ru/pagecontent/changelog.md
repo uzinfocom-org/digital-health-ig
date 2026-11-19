@@ -4,6 +4,10 @@
 
 [Номер регистрационного удостоверения](NamingSystem-registration-certificate-id.html) и [ID групповой упаковки UzPharm](NamingSystem-uz-pharm-box-id.html) меняют URI на `https://uzpharminfo.uz/registrationNumber` и `https://uzpharminfo.uz/boxGroupId` — те, что уже передаёт загрузчик реестра Фармкомитета. Идентификатор [UZ Core Medication](StructureDefinition-uz-core-medication.html) со старым URI `registration_number` или `box_group_id` больше не попадает в свой срез, а поиск по идентификатору должен использовать новые URI.
 
+#### Изменено
+
+[UZ Core AuditEvent](StructureDefinition-uz-core-auditevent.html): `agent.who` может также ссылаться на [UZ Core Device](StructureDefinition-uz-core-device.html) или [UZ Core Organization](StructureDefinition-uz-core-organization.html), для событий без участия человека, например задания по расписанию или входа системы.
+
 ### Версия 0.13.0
 
 #### Добавлено
