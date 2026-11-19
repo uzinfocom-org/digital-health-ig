@@ -29,7 +29,7 @@ UZ Core Medication описывает лекарственный препара�
 
 ```
 # by national identifier - the reliable match
-GET [base]/Medication?identifier=https://uzpharminfo.uz/registration_number|UZ/MED/2024/00123
+GET [base]/Medication?identifier=https://uzpharminfo.uz/registrationNumber|UZ/MED/2024/00123
 GET [base]/Medication?identifier=https://mobile-api.aslbelgisi.uz/gtin|04780123456789
 GET [base]/Medication?identifier=https://mobile-api.aslbelgisi.uz/marking|010478012345678921AbC9xQ
 
@@ -81,7 +81,7 @@ GET [base]/Medication?marketingauthorizationholder=Organization/[id]
   "identifier": [
     {
       "use": "official",
-      "system": "https://uzpharminfo.uz/registration_number",
+      "system": "https://uzpharminfo.uz/registrationNumber",
       "value": "UZ/MED/2024/00123"
     }
   ],
@@ -98,7 +98,7 @@ GET [base]/Medication?marketingauthorizationholder=Organization/[id]
 }
 ```
 
-Номером регистрационного удостоверения этот идентификатор делает его URI `system` - тот, что заканчивается на `registration_number`. `use` зафиксирован как `official` в каждом срезе. `code` связан как `required` с [набором значений классификации лекарственных средств](ValueSet-medication-classification-vs.html): код INN называет действующее вещество, код ATC (`http://www.whocc.no/atc`) помещает препарат в классификацию ВОЗ, и оба можно отправить как отдельные coding. `status` - это `active` / `inactive` / `entered-in-error`.
+Номером регистрационного удостоверения этот идентификатор делает его URI `system` - тот, что заканчивается на `registrationNumber`. `use` зафиксирован как `official` в каждом срезе. `code` связан как `required` с [набором значений классификации лекарственных средств](ValueSet-medication-classification-vs.html): код INN называет действующее вещество, код ATC (`http://www.whocc.no/atc`) помещает препарат в классификацию ВОЗ, и оба можно отправить как отдельные coding. `status` - это `active` / `inactive` / `entered-in-error`.
 
 #### Зарегистрированный препарат
 
@@ -112,7 +112,7 @@ GET [base]/Medication?marketingauthorizationholder=Organization/[id]
   "identifier": [
     {
       "use": "official",
-      "system": "https://uzpharminfo.uz/registration_number",
+      "system": "https://uzpharminfo.uz/registrationNumber",
       "value": "UZ/MED/2024/00123"
     },
     {
@@ -162,11 +162,11 @@ GET [base]/Medication?marketingauthorizationholder=Organization/[id]
 
 | Идентификатор | `system` | Кем выдаётся |
 |---|---|---|
-| [Номер регистрационного удостоверения](NamingSystem-registration-certificate-id.html) | `https://uzpharminfo.uz/registration_number` | Министерство здравоохранения при регистрации препарата |
+| [Номер регистрационного удостоверения](NamingSystem-registration-certificate-id.html) | `https://uzpharminfo.uz/registrationNumber` | Министерство здравоохранения при регистрации препарата |
 | [GTIN](NamingSystem-global-trade-item-id.html) | `https://mobile-api.aslbelgisi.uz/gtin` | GS1, глобальный номер торговой единицы на упаковке |
 | [ID маркировки Asl Belgisi](NamingSystem-uz-marking-id.html) | `https://mobile-api.aslbelgisi.uz/marking` | Национальная система прослеживаемости, для каждой сериализованной упаковки |
 | [Код товаров и услуг ИКПУ](NamingSystem-product-service-id.html) | `https://uzpharminfo.uz/icps` | Национальный классификатор товаров и услуг |
-| [ID групповой упаковки UzPharm](NamingSystem-uz-pharm-box-id.html) | `https://uzpharminfo.uz/box_group_id` | Система прослеживаемости, объединяющая сериализованные упаковки в короб |
+| [ID групповой упаковки UzPharm](NamingSystem-uz-pharm-box-id.html) | `https://uzpharminfo.uz/boxGroupId` | Система прослеживаемости, объединяющая сериализованные упаковки в короб |
 
 Регистрационное удостоверение, GTIN и код ИКПУ описывают *препарат* и одинаковы на каждой упаковке; ID маркировки и ID групповой упаковки описывают *физическую упаковку или короб* и различаются для каждой единицы. Когда вам нужна только запись каталога, отправляйте идентификаторы уровня препарата.
 
@@ -182,7 +182,7 @@ GET [base]/Medication?marketingauthorizationholder=Organization/[id]
   "identifier": [
     {
       "use": "official",
-      "system": "https://uzpharminfo.uz/registration_number",
+      "system": "https://uzpharminfo.uz/registrationNumber",
       "value": "UZ/MED/2024/00123"
     }
   ],
