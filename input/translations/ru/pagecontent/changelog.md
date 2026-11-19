@@ -1,3 +1,9 @@
+### В разработке
+
+#### Изменено
+
+[UZ Core AuditEvent](StructureDefinition-uz-core-auditevent.html): `agent.who` может также ссылаться на [UZ Core Device](StructureDefinition-uz-core-device.html) или [UZ Core Organization](StructureDefinition-uz-core-organization.html), для событий без участия человека, например задания по расписанию или входа системы.
+
 ### Версия 0.13.0
 
 #### Добавлено

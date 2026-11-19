@@ -1,3 +1,9 @@
+### Ishlab chiqilmoqda
+
+#### O'zgartirildi
+
+[UZ Core AuditEvent](StructureDefinition-uz-core-auditevent.html) `agent.who` endi [UZ Core Device](StructureDefinition-uz-core-device.html) yoki [UZ Core Organization](StructureDefinition-uz-core-organization.html) ga ham havola qilishi mumkin, inson ishtirokisiz hodisalar uchun, masalan, rejalashtirilgan vazifa yoki tizimning kirishi.
+
 ### Versiya 0.13.0
 
 #### Qo'shildi
