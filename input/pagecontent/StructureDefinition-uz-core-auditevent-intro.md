@@ -18,7 +18,7 @@ This profile adds no top-level mandatory cardinality of its own. The required el
 - an occurredDateTime and the recorded timestamp;
 - an outcome, whose code uses the required outcome binding (success, or a failure for denied 401 / 403 access);
 - the patient whose data was involved;
-- an agent with its type, role, who and authorization (the purpose-of-use, required binding) - `who` may be a PractitionerRole, Practitioner, Patient or RelatedPerson;
+- an agent with its type, role, who and authorization (the purpose-of-use, required binding) - `who` may be a PractitionerRole, Practitioner, Patient, RelatedPerson, Device or Organization;
 - an entity with its role, what, securityLabel and query (the base64-encoded search, where applicable).
 
 > Break-glass access is recorded here as an AuditEvent whose `agent.authorization` carries an emergency purpose-of-use.
@@ -29,7 +29,7 @@ AuditEvents are written by the platform, not by clients, so you mostly read them
 
 #### A representative event (a login)
 
-A self-contained event names what happened (`code`), its grouping (`category`), the `action` (E = execute), when it `occurredDateTime` and was `recorded`, the `outcome.code`, the `agent` who did it, and the `source` that logged it. The `agent.who` is a plain `Reference` and may point at a PractitionerRole, Practitioner, Patient or RelatedPerson:
+A self-contained event names what happened (`code`), its grouping (`category`), the `action` (E = execute), when it `occurredDateTime` and was `recorded`, the `outcome.code`, the `agent` who did it, and the `source` that logged it. The `agent.who` is a plain `Reference` and may point at a PractitionerRole, Practitioner, Patient, RelatedPerson, Device or Organization:
 
 ```json
 {

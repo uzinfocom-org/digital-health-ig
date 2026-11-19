@@ -18,7 +18,7 @@ UZ Core AuditEvent представляет собой неизменяемый 
 - `occurredDateTime` и временную метку `recorded`;
 - `outcome`, для `code` которого используется обязательная привязка исхода (успешное выполнение либо ошибка при отказе в доступе с HTTP 401 / 403);
 - `patient`, данные которого были затронуты;
-- `agent` с элементами `type`, `role`, `who` и `authorization` (цель использования данных, обязательная привязка); `who` может указывать на PractitionerRole, Practitioner, Patient или RelatedPerson;
+- `agent` с элементами `type`, `role`, `who` и `authorization` (цель использования данных, обязательная привязка); `who` может указывать на PractitionerRole, Practitioner, Patient, RelatedPerson, Device или Organization;
 - `entity` с элементами `role`, `what`, `securityLabel` и `query` (поисковый запрос в кодировке base64, если применимо).
 
 > Экстренный доступ break-glass регистрируется как AuditEvent, в котором `agent.authorization` содержит экстренную цель использования данных.
@@ -29,7 +29,7 @@ UZ Core AuditEvent представляет собой неизменяемый 
 
 #### Типовой пример события (вход в систему)
 
-Автономное событие указывает, что произошло (`code`), его группу (`category`), действие (`action`, `E` = execute), время выполнения (`occurredDateTime`) и регистрации (`recorded`), `outcome.code`, выполнившего действие `agent` и зарегистрировавший его `source`. `agent.who` - обычный `Reference`, который может указывать на PractitionerRole, Practitioner, Patient или RelatedPerson:
+Автономное событие указывает, что произошло (`code`), его группу (`category`), действие (`action`, `E` = execute), время выполнения (`occurredDateTime`) и регистрации (`recorded`), `outcome.code`, выполнившего действие `agent` и зарегистрировавший его `source`. `agent.who` - обычный `Reference`, который может указывать на PractitionerRole, Practitioner, Patient, RelatedPerson, Device или Organization:
 
 ```json
 {

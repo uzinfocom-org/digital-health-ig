@@ -1,3 +1,9 @@
+### In development
+
+#### Changed
+
+[UZ Core AuditEvent](StructureDefinition-uz-core-auditevent.html) `agent.who` can also reference a [UZ Core Device](StructureDefinition-uz-core-device.html) or a [UZ Core Organization](StructureDefinition-uz-core-organization.html), for events with no person behind them, such as a scheduled job or a system logging in.
+
 ### Version 0.13.0
 
 #### Added
