@@ -4,6 +4,10 @@
 
 [UZ Core Communication](StructureDefinition-uz-core-communication.html) фиксирует оповещение в области общественного здравоохранения, которое пациенты видят в Портале пациента: оповещение жителей зоны риска с уровнем зоны I-IV по национальному регламенту оповещений или оповещение менеджера группе работников организации. Виды оповещений и уровни берутся из новых локальных систем кодов [Communication category](CodeSystem-communication-category-cs.html) и [Alert level](CodeSystem-alert-level-cs.html) с названиями на узбекском, русском и английском языках.
 
+#### Несовместимые изменения
+
+[Номер регистрационного удостоверения](NamingSystem-registration-certificate-id.html) и [ID групповой упаковки UzPharm](NamingSystem-uz-pharm-box-id.html) меняют URI на `https://uzpharminfo.uz/registrationNumber` и `https://uzpharminfo.uz/boxGroupId` — те, что уже передаёт загрузчик реестра Фармкомитета. Идентификатор [UZ Core Medication](StructureDefinition-uz-core-medication.html) со старым URI `registration_number` или `box_group_id` больше не попадает в свой срез, а поиск по идентификатору должен использовать новые URI.
+
 ### Версия 0.13.0
 
 #### Добавлено

@@ -4,6 +4,10 @@
 
 [UZ Core Communication](StructureDefinition-uz-core-communication.html) bemorlar Bemor portalida ko'radigan jamoat salomatligi ogohlantirishini qayd etadi: milliy ogohlantirishlar reglamenti bo'yicha hududning I-IV darajasi bilan xavfli hudud aholisiga ogohlantirish yoki menejerning tashkilot xodimlari guruhiga ogohlantirishi. Ogohlantirish turlari va darajalari o'zbek, rus va ingliz tilidagi nomlari bilan yangi mahalliy [Communication category](CodeSystem-communication-category-cs.html) va [Alert level](CodeSystem-alert-level-cs.html) kod tizimlaridan olinadi.
 
+#### Buzuvchi o'zgarishlar
+
+[Ro'yxatga olish guvohnomasi raqami](NamingSystem-registration-certificate-id.html) va [UzPharm guruh qadog'i identifikatori](NamingSystem-uz-pharm-box-id.html) URI'lari `https://uzpharminfo.uz/registrationNumber` va `https://uzpharminfo.uz/boxGroupId` ga o'zgaradi — Farmatsevtika qo'mitasi reyestri yuklagichi allaqachon yuboradiganlari. Eski `registration_number` yoki `box_group_id` URI'li [UZ Core Medication](StructureDefinition-uz-core-medication.html) identifikatori endi o'z slice'iga tushmaydi, identifikator bo'yicha qidiruv yangi URI'lardan foydalanishi kerak.
+
 ### Versiya 0.13.0
 
 #### Qo'shildi

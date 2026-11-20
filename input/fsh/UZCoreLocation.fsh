@@ -107,3 +107,14 @@ Description: "Example of psychiatric hospital"
 * mode = #instance
 * name = "Toshkent shahar 1-sonli shifoxona"
 * address.text = "Toshkent shahar, Chilonzor tumani, Katta Qo'yliq 45"
+
+Instance: example-mahalla-zone-location
+InstanceOf: UZCoreLocation
+Usage: #example
+Title: "Example UZ Core Location - Mahalla Zone"
+Description: "A mahalla for which a manager has set a public health alert level after confirmed cases of an intestinal infection."
+* language = #uz
+* status = #active
+* mode = #instance
+* name = "Bunyodkor mahallasi"
+* address.text = "Toshkent shahar, Chilonzor tumani, Bunyodkor mahallasi"

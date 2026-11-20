@@ -57,19 +57,6 @@ Description: "An alert to the residents of a zone carries its alert level"
 * severity = #error
 * expression = "category.coding.where(system = 'https://terminology.dhp.uz/fhir/core/CodeSystem/communication-category-cs' and code = 'comcat-0001-00001').exists() implies category.coding.where(system = 'https://terminology.dhp.uz/fhir/core/CodeSystem/alert-level-cs').exists()"
 
-
-Instance: example-mahalla-zone-location
-InstanceOf: UZCoreLocation
-Usage: #example
-Title: "Example UZ Core Location - Mahalla Zone"
-Description: "A mahalla for which a manager has set a public health alert level after confirmed cases of an intestinal infection."
-* language = #uz
-* status = #active
-* mode = #instance
-* name = "Bunyodkor mahallasi"
-* address.text = "Toshkent shahar, Chilonzor tumani, Bunyodkor mahallasi"
-
-
 Instance: example-zone-alert-communication
 InstanceOf: UZCoreCommunication
 Usage: #example
@@ -77,28 +64,13 @@ Title: "Example UZ Core Communication - Zone Residents Alert"
 Description: "An orange-level alert shown in the Patient Portal to a patient who lives in a mahalla with confirmed cases of an intestinal infection."
 * language = #uz
 * status = #completed
-* category[type] = CommunicationCategoryCS#comcat-0001-00001 "Hudud aholisini ogohlantirish"
-* category[alertLevel] = AlertLevelCS#alrtlv-0001-00002 "II - To'q sariq"
+* category[type] = communication-category-cs#comcat-0001-00001 "Hudud aholisini ogohlantirish"
+* category[alertLevel] = alert-level-cs#alrtlv-0001-00002 "II - To'q sariq"
 * about = Reference(Location/example-mahalla-zone-location)
 * sent = "2026-11-18T10:00:00+05:00"
 * recipient = Reference(Patient/example-salim)
 * reason.concept.text = "Ichak infeksiyasi tarqalishi"
 * payload.contentCodeableConcept.text = "Mahallangizda ichak infeksiyasi aniqlandi. Faqat qaynatilgan suv iching."
-
-
-Instance: example-employee-group
-InstanceOf: UZCoreGroup
-Usage: #example
-Title: "Example UZ Core Group - Organization Employee Group"
-Description: "Enumerated group of employees of an organization, created by a manager from confirmed cases of the same diagnosis."
-* language = #uz
-* active = true
-* type = #person
-* membership = #enumerated
-* name = "Tashkilot xodimlari guruhi"
-* managingEntity = Reference(Organization/example-organization)
-* member[0].entity = Reference(Patient/example-salim)
-* member[0].period.start = "2026-11-17"
 
 
 Instance: example-employee-group-alert-communication
@@ -108,7 +80,7 @@ Title: "Example UZ Core Communication - Employee Group Alert"
 Description: "An alert sent by a manager to the members of an organization employee group."
 * language = #uz
 * status = #completed
-* category[type] = CommunicationCategoryCS#comcat-0001-00002 "Tashkilot xodimlari guruhini ogohlantirish"
+* category[type] = communication-category-cs#comcat-0001-00002 "Tashkilot xodimlari guruhini ogohlantirish"
 * about = Reference(Group/example-employee-group)
 * sent = "2026-11-18T11:00:00+05:00"
 * recipient = Reference(Patient/example-salim)
