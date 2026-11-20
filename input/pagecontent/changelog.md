@@ -1,3 +1,9 @@
+### In development
+
+#### Added
+
+[UZ Core Communication](StructureDefinition-uz-core-communication.html) records a public health alert that patients see in the Patient Portal: an alert to the residents of a risk zone, which carries the zone's alert level I-IV under the national alert regulation, or an alert from a manager to an organization employee group. The kinds of alert and the alert levels come from the new local [Communication category](CodeSystem-communication-category-cs.html) and [Alert level](CodeSystem-alert-level-cs.html) code systems, with Uzbek, Russian and English names.
+
 ### Version 0.13.0
 
 #### Added

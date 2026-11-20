@@ -1,3 +1,9 @@
+### Ishlab chiqilmoqda
+
+#### Qo'shildi
+
+[UZ Core Communication](StructureDefinition-uz-core-communication.html) bemorlar Bemor portalida ko'radigan jamoat salomatligi ogohlantirishini qayd etadi: milliy ogohlantirishlar reglamenti bo'yicha hududning I-IV darajasi bilan xavfli hudud aholisiga ogohlantirish yoki menejerning tashkilot xodimlari guruhiga ogohlantirishi. Ogohlantirish turlari va darajalari o'zbek, rus va ingliz tilidagi nomlari bilan yangi mahalliy [Communication category](CodeSystem-communication-category-cs.html) va [Alert level](CodeSystem-alert-level-cs.html) kod tizimlaridan olinadi.
+
 ### Versiya 0.13.0
 
 #### Qo'shildi
