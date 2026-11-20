@@ -2,12 +2,8 @@ CodeSystem: ProcedureEventStatusCS
 Id: procedure-event-status-cs
 Title: "Procedure event status translations"
 Description: "Procedure event status supplement with translations in Uzbek and Russian"
-* ^url = "https://terminology.dhp.uz/fhir/core/CodeSystem/procedure-event-status-cs"
-* ^experimental = true
-* ^content = #supplement
-* ^supplements = $event-status
-* ^version = "5.0.0"
-* ^language = #en
+
+* insert SupplementCodeSystemDraft(procedure-event-status-cs, $event-status, 5.0.0)
 
 * #preparation
   * ^designation[0].language = #uz

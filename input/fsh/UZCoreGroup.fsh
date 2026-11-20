@@ -96,3 +96,17 @@ Usage: #example
 * member[1].entity = Reference(example-emma)
 * member[1].period.start = "2026-02-03"
 * member[1].inactive = false
+
+Instance: example-employee-group
+InstanceOf: UZCoreGroup
+Usage: #example
+Title: "Example UZ Core Group - Organization Employee Group"
+Description: "Enumerated group of employees of an organization, created by a manager from confirmed cases of the same diagnosis."
+* language = #uz
+* active = true
+* type = #person
+* membership = #enumerated
+* name = "Tashkilot xodimlari guruhi"
+* managingEntity = Reference(Organization/example-organization)
+* member[0].entity = Reference(Patient/example-salim)
+* member[0].period.start = "2026-11-17"
