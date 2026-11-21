@@ -459,6 +459,25 @@ table.hierarchy th, table[class*="xhtTable"] th { color: var(--dhp-fg); font-wei
   border-radius: 8px;
   padding: 10px 16px !important;
 }
+#segment-content p[style*="#661aff"] {
+  border: 1px solid var(--dhp-primary-40) !important;
+  background-color: var(--dhp-accent) !important;
+  border-radius: 8px;
+  padding: 10px 16px !important;
+}
+
+/* Questionnaire tree/rendering/logic tabs (jQuery UI) */
+#segment-content .ui-tabs-nav a { text-decoration: none; color: var(--dhp-primary); }
+#segment-content .ui-tabs-nav .ui-tabs-active a { color: var(--dhp-fg); }
+
+/* Search page query box */
+#segment-content #ig-query {
+  border: 1px solid rgba(145, 158, 171, 0.32);
+  border-radius: 8px;
+  padding: 8px 12px;
+  outline: none;
+}
+#segment-content #ig-query:focus { border-color: var(--dhp-primary); box-shadow: 0 0 0 3px var(--dhp-primary-16); }
 
 /* Rouge/Prism code wrappers */
 div.highlight, figure.highlight, .highlighter-rouge { background: transparent !important; border: 0; margin: 0; padding: 0; }
