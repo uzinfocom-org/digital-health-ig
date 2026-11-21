@@ -80,6 +80,19 @@ def humanize(name):
                     for i, w in enumerate(text.split(' ')))
 
 
+TYPE_WORDS = {'dateTime': 'date and time', 'boolean': 'yes / no', 'CodeableConcept': 'coded', 'Coding': 'coded',
+              'string': 'text', 'Timing': 'schedule', 'integer': 'number', 'decimal': 'number', 'Reference': 'reference'}
+
+
+def type_slice_label(last, e):
+    """'Deceased (date and time)' for a value[x] type slice such as deceased[x]:deceasedDateTime."""
+    head, _, name = last.partition(':')
+    codes = [t.get('code') for t in e.get('type', [])]
+    if head.endswith('[x]') and len(codes) == 1 and name == head[:-3] + codes[0][:1].upper() + codes[0][1:]:
+        return f"{humanize(head)} ({TYPE_WORDS.get(codes[0]) or humanize(codes[0]).lower()})"
+    return None
+
+
 def acronyms(label, text):
     """Take the casing of acronyms such as ABO or ICD-10 from the element's short text."""
     key = lambda w: re.sub(r'[^0-9a-z]', '', w.lower())
@@ -248,7 +261,8 @@ class Build:
 
     def summarize(self, r, within=None):
         container = within or r
-        codes = {c['code']: d for c in all_codings(r) for d in [self.display(c.get('system'), c['code'])] if d}
+        lang = r.get('language') or (container.get('language') if isinstance(container, dict) else None)
+        codes = {c['code']: d for c in all_codings(r) if not own_display(c, lang) for d in [self.display(c.get('system'), c['code'])] if d}
         name = en_text(r, 'name')
         def part(v):
             ref = v.get('reference') if isinstance(v, dict) else None
@@ -332,10 +346,14 @@ class Build:
         if key not in self.cache:
             self.cache[key] = {}
             if self._local_cs is None:
-                self._local_cs = {}
+                self._local_cs, self._supplements = {}, {}
                 for f in self.out.glob('CodeSystem-*.json'):
                     cs = load(f)
-                    self._local_cs[cs.get('url')] = f
+                    if cs.get('content') == 'supplement' and isinstance(cs.get('supplements'), str):
+                        if cs.get('language', 'en').startswith('en'):
+                            self._supplements.setdefault(cs['supplements'].split('|')[0], []).append(cs)
+                    else:
+                        self._local_cs[cs.get('url')] = f
             f = self._local_cs.get(system) or self.packages().get(system)
             if f:
                 cs = load(Path(f))
@@ -343,11 +361,26 @@ class Build:
             elif system == 'urn:ietf:bcp:47' and self.packages().get('http://hl7.org/fhir/ValueSet/languages'):
                 vs = load(Path(self.packages()['http://hl7.org/fhir/ValueSet/languages']))
                 self.cache[key] = {c['code']: en_display(c, vs) for i in vs.get('compose', {}).get('include', []) for c in i.get('concept', [])}
+            for cs in self._supplements.get(system, []):
+                for c in flatten_concepts(cs.get('concept', [])):
+                    if c.get('code') and c.get('display') and not self.cache[key].get(c['code']):
+                        self.cache[key][c['code']] = c['display']
         if self._examples is None:
             self.example_for('')
         if self.known_rank.get((system, code), 3) <= 1:
             return self.known[(system, code)]
         return self.cache[key].get(code) or self.known.get((system, code)) or self.seen.get((system, code))
+
+    def address_vs(self, part):
+        if not hasattr(self, '_address_vs'):
+            self._address_vs = {}
+            for sd in self.sds.values():
+                for e in (sd.get('snapshot') or {}).get('element', []):
+                    vs = (e.get('binding') or {}).get('valueSet')
+                    head, _, k = e.get('path', '').rpartition('.')
+                    if vs and head.lower().endswith('address') and k in ('city', 'district', 'state', 'country'):
+                        self._address_vs.setdefault(k, vs)
+        return self._address_vs.get(part)
 
     def vs_systems(self, url):
         """Code systems a value set draws from, for codes its (possibly truncated) expansion lacks."""
@@ -494,6 +527,8 @@ class Profile:
         if e.get('min', 0) < 1:
             return False
         par = self.by_id.get(parent_id(eid))
+        if is_slice(eid) and par is not None and par is not self.els[0] and self.visible(par):
+            return True
         if not is_slice(eid) and par is not None and par is not self.els[0] and self.types(par) in ([], ['BackboneElement'], ['Element']):
             return self.visible(par)
         return parent_id(eid) in (root, root + '.extension', root + '.modifierExtension')
@@ -518,7 +553,9 @@ class Profile:
         """The datatype a choice element has in the example, e.g. valueString -> string."""
         parent, _, last = eid.rpartition('.')
         stem = last.split(':')[0][:-3]
-        if not self.example or not last.split(':')[0].endswith('[x]'):
+        if self.example and last.split(':')[0] in ('extension', 'modifierExtension'):
+            parent, stem = eid, 'value'
+        elif not self.example or not last.split(':')[0].endswith('[x]'):
             return None
         objs = self.resolve([self.example], parent.split('.')[1:], parent.split('.')[0]) if '.' in parent else [self.example]
         for o in objs:
@@ -610,11 +647,15 @@ class Profile:
         if whole:
             n['ex'] = whole
         elif n.get('children'):
-            parts = []
+            parts, seen = [], set()
             for c in n['children']:
                 first = (c.get('exs') or [c.get('ex')])[0]
-                if first and first not in parts:
-                    parts.append(first)
+                new = [x for x in (first or '').split(', ') if x and x not in seen]
+                if new:
+                    parts.append(', '.join(new))
+                    seen.update(new)
+            if not parts and slices:
+                parts = self.example_values(eid)
             if parts:
                 n['ex'] = ', '.join(parts[:4])
             else:
@@ -653,7 +694,7 @@ class Profile:
         eid = e['id']
         last = eid.rpartition('.')[2]
         short = e.get('short', '')
-        label = self.labels.get(eid) or e.get('label') or acronyms(humanize(last.split(':')[1] if ':' in last else last), short)
+        label = self.labels.get(eid) or e.get('label') or acronyms(type_slice_label(last, e) or humanize(last.split(':')[1] if ':' in last else last), short)
         n = {'label': label, 'type': typ, 'card': f"{e.get('min', 0)}..{e.get('max', '*')}",
              'path': eid, 'desc': self.descs.get(eid) or plain(first_sentence(e['definition']) if e.get('definition') and (
                  ' | ' in short or (CYRILLIC.search(short) and not CYRILLIC.search(e['definition']))) else short)}
@@ -691,15 +732,17 @@ class Profile:
             on_part = self.part_binding(eid, types[0])
         code = types[0] if types else 'string'
         if len({TYPE_MAP.get(t, 'text') for t in types}) > 1:
-            code = self.example_type(eid) or 'string'
+            code = self.example_type(eid)
         if len(types) > 1 and not binding.get('valueSet'):
             typed = [x for x in self.els if x['id'].startswith(eid + ':') and '.' not in x['id'][len(eid):]
-                     and x.get('max') != '0' and (x.get('binding') or {}).get('valueSet')]
-            pick = next((x for x in typed if [t['code'] for t in x.get('type', [])] == [code]), typed[0] if typed else None)
+                     and x.get('max') != '0' and (x.get('binding') or {}).get('valueSet') and len(x.get('type', [])) == 1]
+            code = code or (typed[0]['type'][0]['code'] if typed else None)
+            pick = next((x for x in typed if x['type'][0]['code'] == code), None)
             if pick:
                 binding = pick['binding']
-                if code not in ('CodeableConcept', 'Coding', 'code') and not self.example_type(eid):
-                    code = pick['type'][0]['code']
+        if not code:
+            coded = [t for t in types if t in ('CodeableConcept', 'Coding', 'code')]
+            code = coded[0] if coded and binding.get('valueSet') else types[0]
         typ = TYPE_MAP.get(code, 'text')
         if code == 'CodeableReference':
             typ = 'coded' if binding.get('valueSet') else 'link'
@@ -709,6 +752,8 @@ class Profile:
         n = self.base(e, typ)
         if len(types) > 1:
             n['typeText'] = ' or '.join(types)
+        elif typ == 'text' and code in ('Range', 'Timing', 'Attachment'):
+            n['typeText'] = code
         if targets:
             names = []
             for t in targets:
@@ -721,7 +766,7 @@ class Profile:
         on = None
         if not binding.get('valueSet') and on_part:
             binding, on = on_part
-        pinned = next((v for k in ('.coding.system', '.concept.coding.system') for v in [fixed_value(self.by_id.get(eid + k))] if isinstance(v, str)), None)
+        pinned = next((v for k in (('.system',) if types == ['Coding'] else ()) + ('.coding.system', '.concept.coding.system') for v in [fixed_value(self.by_id.get(eid + k))] if isinstance(v, str)), None)
         codes = self.add_binding(n, binding, on, pinned) if binding.get('valueSet') else {}
         systems = self.b.vs_systems(binding['valueSet'].split('|')[0]) if binding.get('valueSet') else []
         exs = self.example_values(eid, codes, systems)
@@ -732,8 +777,10 @@ class Profile:
         fixed = next(((k, v) for k, v in e.items() if k.startswith(('fixed', 'pattern'))), None)
         if fixed and isinstance(fixed[1], dict) and not any('code' in c for c in fixed[1].get('coding', [fixed[1]])):
             fixed = None
-        if not fixed and typ == 'coded' and self.child_fixed(eid):
-            fixed = ('pattern', {'coding': self.child_fixed(eid)})
+        if not fixed and code == 'CodeableReference' and isinstance(fixed_value(self.by_id.get(eid + '.concept')), dict):
+            fixed = ('pattern', fixed_value(self.by_id[eid + '.concept']))
+        if not fixed and typ == 'coded' and self.child_fixed(eid + ('.concept' if code == 'CodeableReference' else '')):
+            fixed = ('pattern', {'coding': self.child_fixed(eid + ('.concept' if code == 'CodeableReference' else ''))})
         unit = fixed_value(self.by_id.get(eid + '.unit')) or fixed_value(self.by_id.get(eid + '.code'))
         if not fixed and typ == 'quantity' and isinstance(unit, str):
             n['values'] = ['Unit: ' + unit]
@@ -766,6 +813,13 @@ class Profile:
                 n.pop('exs', None)
             else:
                 n.setdefault('values', []).insert(0, 'Fixed: ' + shown)
+        if code == 'Identifier':
+            for part in ('type', 'use'):
+                fv = fixed_value(self.by_id.get(f'{eid}.{part}'))
+                c = next(iter(fv.get('coding', [])), None) if isinstance(fv, dict) else None
+                shown = (c.get('display') or self.b.display(c.get('system'), c.get('code')) or c.get('code')) if c else (self.b.display('http://hl7.org/fhir/identifier-use', fv) or humanize(fv)) if isinstance(fv, str) else None
+                if shown:
+                    n['values'] = [x for x in n.get('values', []) if not x.startswith(humanize(part) + ':')] + [f'{humanize(part)}: {shown}']
         if eid in self.cfg.get('values', {}):
             n['values'] = self.cfg['values'][eid] + n.get('values', [])
         return n
@@ -840,7 +894,8 @@ class Profile:
         sub = Profile(self.b, ext['id'], {}, sd=dict(ext, snapshot={'element': merged}))
         sub.ext_stack = self.ext_stack + (ext.get('url'),)
         objs = self.resolve([self.example], e['id'].split('.')[1:], e['id'].split('.')[0]) if self.example else []
-        sub.example = {'extension': [x for o in objs if isinstance(o, dict) for x in o.get('extension', [])]} if objs else None
+        sub.example = {'extension': [x for o in objs if isinstance(o, dict) for x in o.get('extension', [])],
+                       'contained': self.example.get('contained', []), 'language': self.example.get('language')} if objs else None
         out = []
         for c in sub.children(root):
             if not is_slice(c['id']) or c.get('max') == '0':
@@ -923,10 +978,18 @@ class Profile:
         codes = dict(codes or {})
         for v in vals:
             for c in codings_in(v):
-                if not codes.get(c['code']):
+                if not codes.get(c['code']) and not own_display(c, self.example.get('language')):
                     d = self.b.display(c.get('system'), c['code'])
                     if d:
                         codes[c['code']] = d
+            for a in addresses(v):
+                for k in ('city', 'district', 'state', 'country'):
+                    vs = next(((x.get('binding') or {}).get('valueSet') for x in self.els if x['id'].startswith(eid)
+                               and x['id'].endswith('.' + k) and (x.get('binding') or {}).get('valueSet')), None) or self.b.address_vs(k)
+                    if isinstance(a.get(k), str) and vs and not codes.get(a[k]):
+                        d = next(filter(None, (self.b.display(sys_, a[k]) for sys_ in self.b.vs_systems(vs.split('|')[0]))), None)
+                        if d:
+                            codes[a[k]] = d
             if isinstance(v, dict) and isinstance(v.get('type'), str) and 'amount' in v and not codes.get(v['type']):
                 codes[v['type']] = self.b.display('http://hl7.org/fhir/price-component-type', v['type'])
             if isinstance(v, dict) and 'url' in v:
@@ -948,7 +1011,7 @@ class Profile:
                 if v.get('concept'):
                     s = f"{fmt(v['concept'], codes)} ({s})"
             else:
-                s = re.sub(r'(?<![\w/.:-])[A-Z][A-Za-z]+/[A-Za-z0-9.-]{1,64}(?![\w/.-])', lambda m: self.b.describe(m.group(0)), fmt(v, codes))
+                s = re.sub(r'(?<![\w/.:#-])(?:[A-Z][A-Za-z]+/|#)[A-Za-z0-9.-]{1,64}(?![\w/.-])', lambda m: self.b.describe(m.group(0), self.example), fmt(v, codes))
             if s and s not in out:
                 out.append(s)
         return out[:4]
@@ -1029,6 +1092,24 @@ def en_text(r, key):
         if ext.get('url', '').endswith('/translation') and (parts.get('lang') or {}).get('valueCode', '').startswith('en'):
             return (parts.get('content') or {}).get('valueString') or r.get(key)
     return r.get(key)
+
+
+def addresses(v):
+    if isinstance(v, list):
+        for x in v:
+            yield from addresses(x)
+    elif isinstance(v, dict):
+        if 'line' in v or 'city' in v or 'district' in v:
+            yield v
+        for x in v.values():
+            if isinstance(x, (dict, list)):
+                yield from addresses(x)
+
+
+def own_display(c, lang):
+    """An English instance's own display of a coding, which outranks displays from elsewhere."""
+    d = c.get('display')
+    return d if isinstance(d, str) and (lang or 'en').startswith('en') and not CYRILLIC.search(d) else None
 
 
 def all_codings(v):
@@ -1116,7 +1197,7 @@ def fmt(v, codes=None):
         return ', '.join(filter(None, (fmt(x, codes) for x in v.get('extension', []))))
     if 'low' in v or 'high' in v:
         lo, hi = v.get('low') or {}, v.get('high') or {}
-        if lo and hi and lo.get('unit') == hi.get('unit'):
+        if lo and hi and (lo.get('unit') or lo.get('code')) == (hi.get('unit') or hi.get('code')):
             return f"{lo.get('value', '')} - {fmt(hi, codes)}"
         return f"{fmt(lo, codes) or '...'} - {fmt(hi, codes) or '...'}" if lo and hi else (f"from {fmt(lo, codes)}" if lo else f"up to {fmt(hi, codes)}")
     if 'repeat' in v or 'event' in v:
@@ -1179,8 +1260,9 @@ def fmt(v, codes=None):
         return f"{v.get('comparator', '')}{v['value']} {v.get('unit') or v.get('code', '')}".strip()
     if 'lowNumerator' in v or 'highNumerator' in v:
         lo, hi = fmt(v.get('lowNumerator')), fmt(v.get('highNumerator'))
-        num = f"{lo.rsplit(' ', 1)[0]}-{hi}" if lo and hi and lo.partition(' ')[2] == hi.partition(' ')[2] else f"{lo}-{hi}" if lo and hi else f"{lo} or more" if lo else f"up to {hi}"
-        return f"{num} / {fmt(v.get('denominator'))}"
+        num = f"{lo.partition(' ')[0]}-{hi}" if lo and hi and lo.partition(' ')[2] == hi.partition(' ')[2] else f"{lo}-{hi}" if lo and hi else f"{lo} or more" if lo else f"up to {hi}"
+        den = fmt(v.get('denominator'))
+        return f"{num} / {den}" if den else num
     if 'numerator' in v:
         return f"{fmt(v['numerator'])} / {fmt(v.get('denominator'))}"
     if 'start' in v or 'end' in v:
@@ -1191,8 +1273,9 @@ def fmt(v, codes=None):
         return v.get('display') or v.get('reference', '')
     if 'family' in v or 'given' in v:
         return v.get('text') or ' '.join([v.get('family', '')] + v.get('given', []))
-    if 'line' in v or 'city' in v:
-        return v.get('text') or ', '.join(v.get('line', []) + [v.get('city', '')])
+    if 'line' in v or 'city' in v or 'district' in v:
+        return v.get('text') or ', '.join(filter(None, v.get('line', []) + [(codes or {}).get(v.get(k)) or v.get(k) for k in ('city', 'district', 'state', 'country')
+                                                                        if isinstance(v.get(k), str)]))
     if 'div' in v:
         return ''
     parts = [fmt(x, codes) for k, x in v.items() if k not in ('id', 'extension', 'modifierExtension', 'url', 'resourceType')]
@@ -1212,7 +1295,12 @@ def build_view(b, view, shared=None):
     def prof(pid):
         if pid not in profiles:
             cfg = dict((shared or {}).get(pid, {}))
-            cfg.update(view.get('profiles', {}).get(pid, {}))
+            for k, v in view.get('profiles', {}).get(pid, {}).items():
+                if isinstance(v, dict) and isinstance(cfg.get(k), dict):
+                    v = {**cfg[k], **v}
+                elif isinstance(v, list) and isinstance(cfg.get(k), list):
+                    v = cfg[k] + [x for x in v if x not in cfg[k]]
+                cfg[k] = v
             profiles[pid] = Profile(b, pid, cfg)
         return profiles[pid]
 
@@ -1232,9 +1320,13 @@ def build_view(b, view, shared=None):
             # the instance the main example points to, so every section shows one consistent record
             vals = main.resolve([main.example], s['element'].split('.')[1:], s['element'].split('.')[0])
             refs = [r.get('reference') if isinstance(r, dict) else r for v in vals if isinstance(v, dict) for r in [v.get('reference')]]
-            ref = next((r for r in refs if isinstance(r, str) and (b.out / f"{r.replace('/', '-')}.json").exists()), None)
-            p.example = b.instance(ref) if ref else None
-            p.example_ref = ref
+            ref = next((r for r in refs if isinstance(r, str) and (r.startswith('#') or (b.out / f"{r.replace('/', '-')}.json").exists())), None)
+            if ref and ref.startswith('#'):
+                p.example = next((c for c in as_list(main.example.get('contained')) if isinstance(c, dict) and c.get('id') == ref[1:]), None)
+                p.example_ref = main.example_ref if p.example else None
+            else:
+                p.example = b.instance(ref) if ref else None
+                p.example_ref = ref
         nodes = []
         for i in s.get('include', []):
             n = p.node(i)

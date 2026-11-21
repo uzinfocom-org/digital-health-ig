@@ -29,4 +29,4 @@ All keys are optional.
 
 Per-profile settings: `labels`, `descriptions` (element id to text), `show`, `hide`, `expand`, `flatten`, `collapsed`, `attach`, `types`, `values`, `example`.
 
-A view has `id`, `title`, `sub`, `icon`, `kind` (`archetype` for one profile, `template` for a use case), `profile`, overview text (`concept`, `description`, `purpose`, `use`, `misuse`, `keywords`), optional `sections` to group elements, `coverage` (more profiles whose elements must all be placed), `profiles` overrides and `steps` for the exchange view. See `views.json` for worked examples of both kinds.
+A view has `id`, `title`, `sub`, `icon`, `kind` (`archetype` for one profile, `template` for a use case), `profile`, overview text (`concept`, `description`, `purpose`, `use`, `misuse`, `keywords`), optional `sections` to group elements, `coverage` (more profiles whose elements must all be placed), `profiles` overrides (merged into the shared settings) and `steps` for the exchange view. See `views.json` for worked examples of both kinds.
