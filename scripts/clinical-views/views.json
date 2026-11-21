@@ -120,7 +120,7 @@
             "Patient.address:uzAddress.district": "District or city",
             "Patient.address:uzAddress.city": "Mahalla",
             "Patient.address:uzAddress.line": "Street",
-            "Patient.address:uzAddress.text": "House, apartment",
+            "Patient.address:uzAddress.text": "Full address text",
             "Patient.address:uzAddress.use": "Address use",
             "Patient.address:uzAddress.type": "Address type",
             "Patient.address:uzAddress.period": "Lived here",
@@ -287,7 +287,7 @@
             "MedicationRequest.identifier": "Prescription number",
             "MedicationRequest.statusChanged": "Status changed",
             "MedicationRequest.intent": "Request type",
-            "MedicationRequest.category": "Care setting",
+            "MedicationRequest.category": "Category",
             "MedicationRequest.authoredOn": "Date written",
             "MedicationRequest.effectiveDosePeriod": "Treatment period",
             "MedicationRequest.note": "Note to pharmacist or patient",
@@ -301,7 +301,7 @@
             "MedicationRequest.dosageInstruction.timing.repeat.periodUnit": "Period unit",
             "MedicationRequest.dosageInstruction.timing.repeat.timeOfDay": "Times of day",
             "MedicationRequest.dosageInstruction.timing.repeat.dayOfWeek": "Days of week",
-            "MedicationRequest.dosageInstruction.timing.repeat.when": "Relation to meals or sleep",
+            "MedicationRequest.dosageInstruction.timing.repeat.when": "Time of day, meals or sleep",
             "MedicationRequest.dosageInstruction.timing.repeat.bounds[x]": "Course",
             "MedicationRequest.dosageInstruction.timing.repeat.count": "Number of doses",
             "MedicationRequest.dosageInstruction.timing.repeat.countMax": "Maximum number of doses",
@@ -370,7 +370,7 @@
             "MedicationDispense.authorizingPrescription": "Prescription",
             "MedicationDispense.medication": "Medicine handed over",
             "MedicationDispense.quantity": "Quantity handed over",
-            "MedicationDispense.performer.actor": "Pharmacist",
+            "MedicationDispense.performer.actor": "Dispensed by",
             "MedicationDispense.recorded": "Recorded",
             "MedicationDispense.whenPrepared": "Prepared",
             "MedicationDispense.whenHandedOver": "Handed over",
@@ -560,7 +560,10 @@
             "Clinical context",
             "Dispensing record"
           ],
-          "refs": [],
+          "refs": [
+            "Patient",
+            "Prescriber"
+          ],
           "text": "For reimbursed medicines, the platform forwards the prescription and its dispensing records to SHIF. SHIF matches what was ordered against what was supplied. The reimbursement decision and payment happen in SHIF's own system.",
           "status": [],
           "callout": "The platform carries the medical data SHIF needs. Only validated records are forwarded."
@@ -579,7 +582,10 @@
             "Clinical context",
             "Dispensing record"
           ],
-          "refs": [],
+          "refs": [
+            "Patient",
+            "Prescriber"
+          ],
           "text": "Anyone with access sees the active prescriptions for a patient and, for each one, every supply made against it. This is how the doctor knows whether the patient actually collected the medicine.",
           "status": []
         }

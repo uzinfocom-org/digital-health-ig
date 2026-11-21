@@ -271,8 +271,9 @@ const TYPES = {
 };
 
 // ---------- helpers ----------
-const dateInput = (id, v, label) => {
+const dateInput = (id, v, label, time) => {
   const lab = label ? ` aria-label="${esc(label)}"` : '';
+  if (!v && time) return `<input id="${id}" type="datetime-local"${lab}>`;
   if (!v || /^\d{4}-\d\d-\d\d$/.test(v)) return `<input id="${id}" type="date" value="${esc(v || '')}"${lab}>`;
   if (/^\d{4}-\d\d-\d\d[T ]\d\d:\d\d/.test(v)) return `<input id="${id}" type="datetime-local" value="${esc(v.slice(0, 16).replace(' ', 'T'))}"${lab}>`;
   return `<input id="${id}" type="text" class="unit" placeholder="yyyy-mm-dd" value="${esc(v)}"${lab}>`;
@@ -378,7 +379,7 @@ function renderOverview(pane, m) {
       <div><h3>FHIR resource</h3><div class="v">${esc(m.resource)}</div></div>
       <div><h3>Profile (version ${esc(m.version)})</h3><div class="v"><code>${esc(m.profile)}</code></div></div>
       <div><h3>Specification</h3><div class="v"><a href="${esc(IG + m.igPage)}" target="_blank" rel="noopener">Open in the ${esc(DATA.meta.guideName)}</a></div></div>
-      ${m.example ? `<div><h3>Example values from</h3><div class="v">${m.examplePage ? `<a href="${esc(IG + m.examplePage + '.html')}" target="_blank" rel="noopener">${esc(m.example)}</a>` : esc(m.example)}</div></div>` : ''}
+      ${m.example ? `<div><h3>Example values from</h3><div class="v">${(m.examples || [[m.example, m.examplePage]]).map(([r, pg]) => pg ? `<a href="${esc(IG + pg + '.html')}" target="_blank" rel="noopener">${esc(r)}</a>` : esc(r)).join('<br>')}</div></div>` : ''}
       <div><h3>Publisher</h3><div class="v">${esc(m.publisher)}</div></div>
       ${DATA.meta.languages.length ? `<div><h3>Languages</h3><div class="v">${esc(DATA.meta.languages.join(', '))}</div></div>` : ''}
       ${usesBlock}
@@ -578,14 +579,14 @@ function control(n, v, id) {
       return `<select id="${id}"><option value="">${esc(listNote ? 'Choose - ' + listNote : 'Choose...')}</option>${hasV ? `<option selected>${esc(v)}</option>` : ''}${opts.map(o => `<option ${o === v ? 'selected' : ''}>${esc(o)}</option>`).join('')}</select>`;
     }
     case 'date': return dateInput(id, /^\d{4}-\d\d-\d\d/.test(v) ? v.slice(0, 10) : v);
-    case 'datetime': return dateInput(id, v);
+    case 'datetime': return dateInput(id, v, '', true);
     case 'time': return `<input id="${id}" type="text" class="unit" placeholder="hh:mm" value="${esc(v.slice(0, 5))}">`;
     case 'bool': return `<input id="${id}" type="checkbox" ${v === 'true' ? 'checked' : ''}>`;
     case 'count': return `<input id="${id}" type="number" class="num" min="0" value="${esc(v)}">`;
     case 'decimal': return `<input id="${id}" type="number" class="num" step="any" value="${esc(v)}">`;
     case 'quantity': { const [a, ...b] = v.split(' '); return `<input id="${id}" type="text" class="num" inputmode="decimal" value="${esc(a || '')}" aria-label="${esc(n.label)} amount"><input id="${id}-u" type="text" class="unit" placeholder="unit" value="${esc(b.join(' '))}" aria-label="${esc(n.label)} unit">`; }
     case 'ratio': { const cut = v.lastIndexOf(' / '), halves = cut >= 0 ? [v.slice(0, cut), v.slice(cut + 3)] : [v.split('/')[0], v.split('/').slice(1).join('/')], side = h => (h || '').trim().match(/^(\S+)(?:\s+(.+))?$/) || []; const [a, b] = halves.map(side); return `<input id="${id}" class="num" value="${esc(a[1] || '')}" aria-label="${esc(n.label)} numerator"><input id="${id}-a" class="unit" placeholder="unit" value="${esc(a[2] || '')}" aria-label="${esc(n.label)} numerator unit"><span class="sep">per</span><input id="${id}-b" class="num" value="${esc(b[1] || '')}" aria-label="${esc(n.label)} denominator"><input id="${id}-c" class="unit" placeholder="unit" value="${esc(b[2] || '')}" aria-label="${esc(n.label)} denominator unit">`; }
-    case 'period': { const p = v.split(', ')[0], [from, to] = /^until /.test(p) ? ['', p.slice(6)] : /^since /.test(p) ? [p.slice(6), ''] : [p.split(' to ')[0], p.split(' to ')[1] || '']; return `${dateInput(id, from, n.label + ' from')}<span class="sep">to</span>${dateInput(id + '-b', to, n.label + ' to')}`; }
+    case 'period': { const p = v.split(', ')[0], [from, to] = /^until /.test(p) ? ['', p.slice(6)] : /^since /.test(p) ? [p.slice(6), ''] : [p.split(' to ')[0], p.split(' to ')[1] || '']; return `${dateInput(id, from, n.label + ' from', true)}<span class="sep">to</span>${dateInput(id + '-b', to, n.label + ' to', true)}`; }
     case 'link': return `<span class="refbox" id="${id}">${icon('link')} ${esc(v || 'Select ' + n.target)}</span>`;
     default: return `<input id="${id}" type="text" value="${esc(v)}" placeholder="${n.type === 'id' ? 'Number' : ''}">`;
   }
@@ -599,8 +600,10 @@ function formNode(n, d) {
       <div class="fb">${n.desc ? `<div class="note">${esc(n.desc)}</div>` : ''}${n.children.map(c => formNode(c, d + 1)).join('')}</div></div>`;
   }
   const o = occ(n.card);
-  const ex = state.example ? n.exs || (n.ex ? [n.ex] : []) : [];
-  const vals = n.type === 'link' ? [state.example ? n.ex || '' : ''] : /\.\.1$/.test(n.card || '') ? [ex[0] || ''] : ex.length ? ex : [''];
+  const ex = state.example ? n.fx || n.exs || (n.ex ? [n.ex] : []) : [];
+  const fixed = (n.values || []).find(x => x.startsWith('Fixed: '));
+  const vals = /\.\.1$/.test(n.card || '') ? [ex[0] || ''] : ex.length ? ex : [''];
+  if (fixed && !vals[0] && n.type !== 'link') vals[0] = fixed.slice(7);
   const ctl = (v, i) => {
     const cid = 'f-' + n.uid + (i ? '-' + i : '');
     const h = control(n, v, cid);

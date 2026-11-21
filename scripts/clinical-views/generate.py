@@ -789,6 +789,10 @@ class Profile:
                 one = self.node(eid)
                 self.b.copies.pop(id(self.example))
                 self.example, self.used = full, used
+                # the form fills a repeated group from its first repetition only
+                firsts = {}
+                walk_leaves(one, lambda c: firsts.setdefault(c.get('path'), form_values(c)))
+                walk_leaves(n, lambda c: c.get('path') in firsts and firsts[c['path']] != form_values(c) and c.update(fx=firsts[c['path']]))
                 parts = [one['ex']] if one.get('ex') else []
             else:
                 parts, seen = [], set()
@@ -948,6 +952,10 @@ class Profile:
             n['ex'] = ', '.join(exs)
         if len(exs) > 1:
             n['exs'] = exs
+        if exs and '.' in eid.partition('.')[2]:
+            fx = self.example_values(eid, codes, systems, first=True)
+            if fx != exs:
+                n['fx'] = fx
         fixed = next(((k, v) for k, v in e.items() if k.startswith(('fixed', 'pattern'))), None)
         if fixed and isinstance(fixed[1], dict) and not any('code' in c for c in fixed[1].get('coding', [fixed[1]])):
             fixed = None
@@ -983,6 +991,7 @@ class Profile:
                 n['options'] = [shown]
                 n.pop('more', None)
                 n.pop('exs', None)
+                n.pop('fx', None)
                 if ex:
                     n['ex'] = ex
             elif isinstance(fv, str) and n['type'] == 'coded':
@@ -1166,13 +1175,13 @@ class Profile:
     def example_value(self, eid, codes=None, systems=()):
         return ', '.join(self.example_values(eid, codes, systems)) or None
 
-    def example_values(self, eid, codes=None, systems=()):
+    def example_values(self, eid, codes=None, systems=(), first=False):
         if not self.example:
             return []
-        vals = self.resolve([self.example], eid.split('.')[1:], eid.split('.')[0])
+        vals = self.resolve([self.example], eid.split('.')[1:], eid.split('.')[0], first)
         head, _, key = eid.rpartition('.')
         if vals and all(isinstance(v, str) for v in vals) and head and ':' not in key and not key.endswith('[x]'):
-            parents = self.resolve([self.example], head.split('.')[1:], head.split('.')[0]) if '.' in head else [self.example]
+            parents = self.resolve([self.example], head.split('.')[1:], head.split('.')[0], first) if '.' in head else [self.example]
             if len(parents) == len(vals) and all(isinstance(x, dict) and isinstance(x.get(key), str) for x in parents):
                 vals = [en_text(x, key) for x in parents]
         codes = dict(codes or {})
@@ -1224,8 +1233,10 @@ class Profile:
                 out.append(s)
         return out[:4]
 
-    def resolve(self, objs, segs, prefix):
+    def resolve(self, objs, segs, prefix, first=False):
         for i, seg in enumerate(segs):
+            if first:
+                objs = objs[:1]
             name, _, slc = seg.partition(':')
             ext_next = i + 1 < len(segs) and segs[i + 1].split(':')[0] in ('extension', 'modifierExtension')
             prefix = f'{prefix}.{seg}'
@@ -1294,7 +1305,9 @@ class Profile:
                 allowed = {(c.get('system'), c.get('code')) for c in contained}
                 partial = not contained or truncated(exp)
                 systems = set(self.b.vs_systems(vs)) if vs and partial else set()
-                if not any((c.get('system'), c['code']) in allowed or c.get('system') in systems for c in codings_in(got)):
+                prims = [g for g in got if isinstance(g, str)]
+                if not any((c.get('system'), c['code']) in allowed or c.get('system') in systems for c in codings_in(got)) and not any(
+                        g in {c for _, c in allowed} for g in prims):
                     return False
                 continue
             if not any(contains(g, want) for g in got):
@@ -1426,6 +1439,15 @@ def en_text(r, key):
         if ext.get('url', '').endswith('/translation') and (parts.get('lang') or {}).get('valueCode', '').startswith('en'):
             return (parts.get('content') or {}).get('valueString') or r.get(key)
     return r.get(key)
+
+
+def walk_leaves(n, f):
+    for c in n.get('children', []):
+        walk_leaves(c, f) if c.get('children') else f(c)
+
+
+def form_values(n):
+    return n['fx'] if 'fx' in n else n.get('exs') or ([n['ex']] if n.get('ex') else [])
 
 
 def references(v):
@@ -1691,7 +1713,10 @@ def build_view(b, view, shared=None):
         nodes = []
         for i in s.get('include', []):
             n = p.node(i)
-            n['card'] = p.effective_card(i, stop=s.get('element') if not s.get('from') else None)
+            own, n['card'] = n.get('card'), p.effective_card(i, stop=s.get('element') if not s.get('from') else None)
+            if n['card'] != own and not n.get('children'):
+                # the leaf stands for every repetition of its hidden parents
+                n.pop('fx', None)
             if s.get('hoist') and n['type'] == 'group' and n.get('children'):
                 nodes.extend(n['children'])
             else:
@@ -1761,6 +1786,9 @@ def build_view(b, view, shared=None):
         model['steps'] = view['steps']
     if view['kind'] == 'template':
         model['uses'] = [[b.short(profiles[pid].sd.get('title', pid)), f'StructureDefinition-{pid}.html'] for pid in profiles]
+        refs = list(dict.fromkeys(r for r in [main.example_ref] + [p.example_ref for p in profiles.values()] if r))
+        if len(refs) > 1:
+            model['examples'] = [[r, b.example_page(r)] for r in refs]
     uid = 0
 
     def assign(n):
