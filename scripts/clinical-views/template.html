@@ -1,8 +1,7 @@
 <title>Clinical views</title>
 <meta name="claude:viewport-fit-sides" content="cover">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Sans+Condensed:wght@500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
 <style>
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Sans+Condensed:wght@500;600&family=IBM+Plex+Mono:wght@400;500&display=swap');
 /* Layout: CKM-style workbench - model tabs, view tabs, one working canvas per view */
 :root {
   --bg: #eef2f6;
@@ -273,6 +272,7 @@ const TYPES = {
 // ---------- helpers ----------
 const dateInput = (id, v, label, time) => {
   const lab = label ? ` aria-label="${esc(label)}"` : '';
+  if (time === false && /^\d{4}-\d\d-\d\d[T ]/.test(v)) v = v.slice(0, 10);
   if (!v && time) return `<input id="${id}" type="datetime-local"${lab}>`;
   if (!v || /^\d{4}-\d\d-\d\d$/.test(v)) return `<input id="${id}" type="date" value="${esc(v || '')}"${lab}>`;
   if (/^\d{4}-\d\d-\d\d[T ]\d\d:\d\d/.test(v)) return `<input id="${id}" type="datetime-local" value="${esc(v.slice(0, 16).replace(' ', 'T'))}"${lab}>`;
@@ -604,7 +604,7 @@ function formNode(n, d) {
   const fixed = (n.values || []).find(x => x.startsWith('Fixed: ') || n.type === 'quantity' && x.startsWith('Unit: '));
   const vals = /\.\.1$/.test(n.card || '') ? [ex[0] || ''] : ex.length ? ex : [''];
   // a quantity fixed to a unit alone fills the unit box, not the amount
-  if (fixed && !vals[0] && n.type !== 'link') vals[0] = n.type === 'quantity' && !/^[-+.\d]/.test(fixed.split(': ')[1]) ? ' ' + fixed.split(': ')[1] : fixed.slice(fixed.indexOf(': ') + 2);
+  if (fixed && !vals[0] && n.type !== 'link') vals[0] = n.type === 'quantity' && (fixed.startsWith('Unit: ') || !/^[-+.\d]/.test(fixed.split(': ')[1])) ? ' ' + fixed.split(': ')[1] : fixed.slice(fixed.indexOf(': ') + 2);
   const ctl = (v, i) => {
     const cid = 'f-' + n.uid + (i ? '-' + i : '');
     const h = control(n, v, cid);

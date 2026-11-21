@@ -282,12 +282,12 @@ class Build:
             return None
         self.example_for('')
         name = ref.replace('/', '-')
-        if (self.out / f'{name}.json').exists():
-            return name
-        home = self.bundle_for(within) if within is not None else NO_BUNDLE
-        if any(isinstance(x, dict) and f"{x.get('resourceType')}/{x.get('id')}" == ref for x in home.values()):
-            return self._full_page.get(id(home))
-        return self._bundle_page.get(ref)
+        own = (self.out / f'{name}.json').exists()
+        if within is not None and not (own and f"{within.get('resourceType')}/{within.get('id')}" == ref):
+            home = self.bundle_for(within)
+            if any(isinstance(x, dict) and f"{x.get('resourceType')}/{x.get('id')}" == ref for x in home.values()):
+                return self._full_page.get(id(home))
+        return name if own else self._bundle_page.get(ref)
 
     def example_for(self, url):
         """The largest example instance that claims the profile in meta.profile, as the one most likely to fill every field."""
@@ -653,6 +653,10 @@ class Profile:
             return True
         if not is_slice(eid) and par is not None and par is not self.els[0] and self.types(par) in ([], ['BackboneElement'], ['Element']):
             return self.visible(par)
+        # a datatype's mandatory parts show once the datatype itself is drawn as a group
+        if (not is_slice(eid) and par is not None and par is not self.els[0] and self.visible(par)
+                and any(c is not e and (c['id'] in self.show or c.get('mustSupport') or c['id'] in self.ms_under) for c in self.children(par['id']))):
+            return True
         return parent_id(eid) in (root, root + '.extension', root + '.modifierExtension')
 
     def effective_card(self, eid, stop=None):
@@ -720,7 +724,11 @@ class Profile:
         types = self.types(e)
         sub = self.complex_extension(e) if types == ['Extension'] and not slices else None
         inline = [x for x in self.kids.get(eid + '.extension', []) if is_slice(x['id']) and x.get('max') != '0']
-        if types == ['Extension'] and not sub and inline and self.ext_value(self.els, eid) is None:
+        vx = self.by_id.get(eid + '.value[x]')
+        # a required sub-extension rules out a value (ext-1), even when value[x] is left unconstrained
+        open_value = (vx is not None and len(vx.get('type', [])) > 10 and not any(x['id'].startswith(eid + '.value[x]:') for x in self.els)
+                      and any(x.get('min', 0) >= 1 for x in inline))
+        if types == ['Extension'] and not sub and inline and (open_value or self.ext_value(self.els, eid) is None):
             sub = [self.node(x['id']) for x in inline]
         cslices = [c for c in self.kids.get(eid + '.coding', []) if is_slice(c['id']) and c.get('max') != '0']
         bound = {(c.get('binding') or self.by_id.get(c['id'] + '.code', {}).get('binding') or {}).get('valueSet') for c in cslices}
@@ -1700,7 +1708,9 @@ def build_view(b, view, shared=None):
                 main.prune_fx(n)
                 sections.append(n)
                 if not n.get('children'):
-                    sections.extend(main.leaf_extensions(e['id']))
+                    for x in main.leaf_extensions(e['id']):
+                        main.prune_fx(x)
+                        sections.append(x)
     for s in view.get('sections', []):
         p = prof(s.get('from', view['profile']))
         if p is not main and not s.get('element') and not p.cfg.get('example'):
