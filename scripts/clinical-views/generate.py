@@ -178,15 +178,18 @@ def fold_orphan_slices(sd):
     def choice(prefix, seg, eid):
         # STU3 names a type slice after its type (valueQuantity:valueQuantity) where others use value[x]:valueQuantity
         name, _, sl = seg.partition(':')
-        m = re.match(r'[a-z]+(?=[A-Z])', name)
-        if not sl or not m:
+        stems = [name[:i] for i in range(1, len(name)) if name[i].isupper() and name[0].islower()]
+        if not sl or not stems:
             return seg
-        x = m.group() + '[x]'
         codes = [t.get('code', '') for t in (by_id.get(eid) or {}).get('type', [])]
-        typed = len(codes) == 1 and name == m.group() + codes[0][:1].upper() + codes[0][1:]
-        if typed and eid.rpartition(':')[0] not in by_id or (by_id.get(eid) or {}).get('path', '').endswith('[x]') or any(
-                i == f"{prefix}.{x}" or i.startswith((f"{prefix}.{x}:", f"{prefix}.{x}.")) for i in by_id):
-            return f"{x}:{sl}"
+        cap = codes[0][:1].upper() + codes[0][1:] if len(codes) == 1 else ''
+        typed = name[:-len(cap)] if cap and name.endswith(cap) else ''
+        path = (by_id.get(eid) or {}).get('path', '').rpartition('.')[2]
+        for stem in reversed(stems):
+            x = stem + '[x]'
+            if stem == typed and eid.rpartition(':')[0] not in by_id or path == x or any(
+                    i == f"{prefix}.{x}" or i.startswith((f"{prefix}.{x}:", f"{prefix}.{x}.")) for i in by_id):
+                return f"{x}:{sl}"
         return seg
 
     def rename(eid):
@@ -1080,7 +1083,8 @@ class Profile:
                 n['fx'] = fx
         fixed = next(((k, v) for k, v in e.items() if k.startswith(('fixed', 'pattern'))), None)
         if (fixed and isinstance(fixed[1], dict) and not any('code' in c for c in fixed[1].get('coding', [fixed[1]]))
-                and not (isinstance(fixed[1].get('text'), str) and not fixed[1].get('coding'))):
+                and not (isinstance(fixed[1].get('text'), str) and not fixed[1].get('coding'))
+                and not isinstance(fixed[1].get('value'), (int, float))):
             fixed = None
         if not fixed and code == 'CodeableReference' and isinstance(fixed_value(self.by_id.get(eid + '.concept')), dict):
             fixed = ('pattern', fixed_value(self.by_id[eid + '.concept']))
@@ -1117,7 +1121,7 @@ class Profile:
                 n.pop('fx', None)
                 if ex:
                     n['ex'] = ex
-            elif isinstance(fv, str) and n['type'] == 'coded':
+            elif (isinstance(fv, str) or not codings and fixed[0].startswith('fixed')) and n['type'] == 'coded':
                 n['values'] = ['Fixed: ' + shown]
                 n['options'] = [shown]
                 n.pop('more', None)
