@@ -378,7 +378,7 @@ function renderOverview(pane, m) {
       <div><h3>FHIR resource</h3><div class="v">${esc(m.resource)}</div></div>
       <div><h3>Profile (version ${esc(m.version)})</h3><div class="v"><code>${esc(m.profile)}</code></div></div>
       <div><h3>Specification</h3><div class="v"><a href="${esc(IG + m.igPage)}" target="_blank" rel="noopener">Open in the ${esc(DATA.meta.guideName)}</a></div></div>
-      ${m.example ? `<div><h3>Example values from</h3><div class="v"><a href="${esc(IG + m.example.replace('/', '-') + '.html')}" target="_blank" rel="noopener">${esc(m.example)}</a></div></div>` : ''}
+      ${m.example ? `<div><h3>Example values from</h3><div class="v">${m.examplePage ? `<a href="${esc(IG + m.examplePage + '.html')}" target="_blank" rel="noopener">${esc(m.example)}</a>` : esc(m.example)}</div></div>` : ''}
       <div><h3>Publisher</h3><div class="v">${esc(m.publisher)}</div></div>
       ${DATA.meta.languages.length ? `<div><h3>Languages</h3><div class="v">${esc(DATA.meta.languages.join(', '))}</div></div>` : ''}
       ${usesBlock}

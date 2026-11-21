@@ -39,9 +39,9 @@ CONFORMANCE = {
     'CapabilityStatement', 'SearchParameter', 'OperationDefinition', 'StructureMap', 'package', 'expansions', 'qa',
 }
 PRIMITIVES = {'instant', 'markdown', 'canonical', 'uri', 'url', 'string', 'code', 'id', 'oid', 'uuid', 'base64Binary'}
-DESCRIBE_KEYS = ('code', 'vaccineCode', 'recommendation.vaccineCode', 'medication', 'suppliedItem.item', 'item.concept', 'itemCodeableConcept', 'relationship', 'type', 'class', 'category', 'ingredient.item',
+DESCRIBE_KEYS = ('code', 'vaccineCode', 'recommendation.vaccineCode', 'medication', 'suppliedItem.item', 'item.concept', 'itemCodeableConcept', 'relationship', 'type', 'class', 'category', 'productCode', 'ingredient.item',
                  'practitioner', 'organization', 'agent.who', 'subject')
-WHAT_KEYS = 12
+WHAT_KEYS = 13
 NO_BUNDLE = {}
 CONTACT_SYSTEMS = {'phone', 'fax', 'email', 'pager', 'url', 'sms', 'other'}
 UNIT_WORDS = {'s': 'second', 'min': 'minute', 'h': 'hour', 'd': 'day', 'wk': 'week', 'mo': 'month', 'a': 'year'}
@@ -160,9 +160,14 @@ class Build:
         self.package_dirs = [Path(d).expanduser() for d in package_dirs or ['~/.fhir/packages']]
         self.prefix = prefix
         self.sds, self.by_url, self.cache, self._pkg, self._examples, self._canon = {}, {}, {}, None, None, None
+        self._dep_pkgs, self._dep_examples = [], None
         self.copies = {}  # id of a working copy of an example -> the example, for Bundle lookups
         self._describing = set()
-        self.ig = next((load(f) for f in sorted(self.out.glob('ImplementationGuide-*.json'))), {})
+        igs = [load(f) for f in sorted(self.out.glob('ImplementationGuide-*.json'))]
+        self.pkg = next((load(f) for f in (self.out / 'package.manifest.json', self.out / 'package.json') if f.exists()), {})
+        # a package folder can hold other guides' IGs as examples: take the one the package is
+        own = [g for g in igs if g.get('packageId') == self.pkg.get('name')]
+        self.ig = (own or (igs if len(igs) == 1 or not self.pkg else []) or [{}])[0]
         for f in self.out.glob('StructureDefinition-*.json'):
             sd = load(f)
             if sd.get('resourceType') != 'StructureDefinition':
@@ -214,7 +219,22 @@ class Build:
         if hit is not None:
             return hit
         f = self.out / f'{ref.replace("/", "-")}.json'
-        return load(f) if re.fullmatch(r'[A-Za-z]+/[A-Za-z0-9.-]{1,64}', ref) and f.exists() else self._bundled.get(ref)
+        if re.fullmatch(r'[A-Za-z]+/[A-Za-z0-9.-]{1,64}', ref) and f.exists():
+            return load(f)
+        return self._bundled.get(ref) or self.dep_example(ref)
+
+    def dep_example(self, ref):
+        """An example instance by Type/id from a dependency package's example folder."""
+        if self._dep_examples is None:
+            self.packages()
+            self._dep_examples = {}
+            for pkg in self._dep_pkgs:
+                idx = pkg / 'example' / '.index.json'
+                for e in (load(idx).get('files', []) if idx.exists() else []):
+                    if e.get('resourceType') and e.get('id') and e.get('filename'):
+                        self._dep_examples.setdefault(f"{e['resourceType']}/{e['id']}", pkg / 'example' / e['filename'])
+        f = self._dep_examples.get(ref)
+        return load(f) if f else None
 
     def bundle_for(self, r):
         """fullUrl -> entry of the example Bundle holding `r`; the one holding this very copy when several hold its Type/id."""
@@ -254,10 +274,18 @@ class Build:
     def short(self, title):
         return title[len(self.prefix):] if self.prefix and title.startswith(self.prefix) else title
 
+    def example_page(self, ref):
+        """The guide page showing an example: its own, or the Bundle's that holds it."""
+        if not ref:
+            return None
+        self.example_for('')
+        name = ref.replace('/', '-')
+        return name if (self.out / f'{name}.json').exists() else self._bundle_page.get(ref)
+
     def example_for(self, url):
         """The largest example instance that claims the profile in meta.profile, as the one most likely to fill every field."""
         if self._examples is None:
-            self._examples, self._claims, self._bundled, self._bundle_of = {}, {}, {}, {}
+            self._examples, self._claims, self._bundled, self._bundle_of, self._bundle_page = {}, {}, {}, {}, {}
             for f in sorted(self.out.glob('*-*.json')):
                 if f.name.split('-')[0] in CONFORMANCE:
                     continue
@@ -280,6 +308,7 @@ class Build:
                     self._bundle_of.setdefault(ref, []).append((x, full))
                     if not (self.out / f"{ref.replace('/', '-')}.json").exists() and ref not in self._bundled:
                         self._bundled[ref] = x
+                        self._bundle_page[ref] = f.stem
                         found.append((x, len(json.dumps(x, indent=2))))
                 for x, size in found:
                     for prof in x.get('meta', {}).get('profile', []):
@@ -325,7 +354,8 @@ class Build:
             ref = v.get('reference') if isinstance(v, dict) else None
             ref = ref.get('reference') if isinstance(ref, dict) else ref
             if isinstance(ref, str):
-                text = v.get('display') if isinstance(v.get('display'), str) else self.describe(ref, container)
+                inner = v['reference'] if isinstance(v.get('reference'), dict) else v
+                text = inner.get('display') if isinstance(inner.get('display'), str) else self.describe(ref, container)
                 return text.partition(': ')[2] or text
             return fmt(v, codes)
         def first(k):
@@ -372,7 +402,7 @@ class Build:
     def packages(self):
         if self._pkg is None:
             self._pkg = {}
-            fv = as_list(self.ig.get('fhirVersion') or '5.0.0')[0]
+            fv = as_list(self.ig.get('fhirVersion') or self.pkg.get('fhirVersions') or self.pkg.get('fhirVersion') or '5.0.0')[0]
             core = {'3.0': 'r3', '4.0': 'r4', '4.3': 'r4b', '5.0': 'r5', '6.0': 'r6'}.get(fv[:3], 'r5')
             for f in list(self.out.glob('ValueSet-*.json')) + list(self.out.glob('CodeSystem-*.json')):
                 try:
@@ -394,6 +424,8 @@ class Build:
                     print(f"warning: package {dep} not found in {', '.join(map(str, self.package_dirs))}; "
                           'its value sets show by name only (add --packages)', file=sys.stderr)
                     continue
+                if dep != deps[0]:
+                    self._dep_pkgs.append(pkg)
                 idx = pkg / '.index.json'
                 if idx.exists():
                     files = [(e.get('resourceType'), e.get('url'), e.get('filename')) for e in load(idx).get('files', [])]
@@ -1220,7 +1252,7 @@ class Profile:
         e = self.by_id.get(slice_id)
         if e is None or not isinstance(v, dict):
             return False
-        if e['path'].endswith('extension'):
+        if e['path'].split('.')[-1] in ('extension', 'modifierExtension'):
             prof = (e.get('type', [{}])[0].get('profile') or [''])[0].split('|')[0]
             return v.get('url') == (prof or fixed_value(self.by_id.get(slice_id + '.url')) or e.get('sliceName'))
         disc = (self.by_id.get(parent_id(slice_id)) or {}).get('slicing', {}).get('discriminator', [])
@@ -1240,11 +1272,18 @@ class Profile:
                 continue
             if d['type'] not in ('value', 'pattern'):
                 return False
-            el = e if d['path'] == '$this' else (self.by_id.get(f"{slice_id}.{d['path']}") or self.by_id.get(f"{slice_id}.{d['path']}[x]"))
+            segs = [x for x in d['path'].split('.') if x != '$this']
+            cut = segs.index('resolve()') if 'resolve()' in segs else len(segs)
+            rel = '.'.join(segs[:cut])
+            el = e if not rel else (self.by_id.get(f"{slice_id}.{rel}") or self.by_id.get(f"{slice_id}.{rel}[x]"))
             got = [v]
-            if d['path'] != '$this':
-                for key in d['path'].split('.'):
+            for key in segs:
+                if key == 'resolve()':
+                    got = [r for r in map(self.resolve_ref, got) if r]
+                else:
                     got = [x for g in got if isinstance(g, dict) for x in as_list(choice(g, key))]
+            if cut < len(segs):
+                el = self.target_element(el, '.'.join(segs[cut + 1:]))
             want = fixed_value(el)
             if want is None:
                 vs = ((el or {}).get('binding') or {}).get('valueSet', '').split('|')[0]
@@ -1259,6 +1298,17 @@ class Profile:
             if not any(contains(g, want) for g in got):
                 return False
         return True
+
+    def target_element(self, ref_el, rel):
+        """The element at rel in the first target profile of a reference element that fixes or binds it."""
+        for t in (ref_el or {}).get('type', []):
+            for u in t.get('targetProfile', []):
+                sd = self.b.sd_by_url(u.split('|')[0]) or {}
+                ids = {f"{sd.get('type')}.{rel}", f"{sd.get('type')}.{rel}[x]"}
+                x = next((x for x in sd.get('snapshot', {}).get('element', []) if x['id'] in ids), None)
+                if x and (fixed_value(x) is not None or x.get('binding')):
+                    return x
+        return None
 
     def slice_kinds(self, slice_id, d):
         """Resource or data types and profiles a type/profile discriminator asks of a slice: (types, profiles, segments)."""
@@ -1700,6 +1750,7 @@ def build_view(b, view, shared=None):
         'publisher': sd.get('publisher', ''),
         'igPage': view.get('igPage') or f"StructureDefinition-{sd['id']}.html",
         'example': main.example_ref,
+        'examplePage': b.example_page(main.example_ref),
         'root': {'label': view.get('rootLabel', view['title']), 'type': 'group', 'card': '1..1', 'children': sections},
     })
     if view.get('steps'):
@@ -1751,9 +1802,8 @@ def main():
         sys.exit(f'error: no resource profiles with snapshots in {args.output_dir}' + (f' match --only {args.only}' if args.only else ''))
     models = [build_view(b, v, cfg.get('profiles')) for v in views]
 
-    manifest = Path(args.output_dir) / 'package.manifest.json'
-    pkg = load(manifest) if manifest.exists() else {}
-    guide = cfg.get('guideName') or b.ig.get('title') or b.ig.get('name', 'this guide')
+    pkg = b.pkg
+    guide = cfg.get('guideName') or b.ig.get('title') or b.ig.get('name') or pkg.get('title') or pkg.get('name', 'this guide')
     meta = {
         'title': cfg.get('title') or f'{guide} clinical views',
         'intro': cfg.get('intro', ''),
