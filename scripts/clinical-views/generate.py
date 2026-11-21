@@ -44,6 +44,7 @@ DESCRIBE_KEYS = ('code', 'vaccineCode', 'recommendation.vaccineCode', 'medicatio
 WHAT_KEYS = 13
 NO_BUNDLE = {}
 CONTACT_SYSTEMS = {'phone', 'fax', 'email', 'pager', 'url', 'sms', 'other'}
+ADDRESS_KEYS = {'id', 'extension', 'use', 'type', 'text', 'line', 'city', 'district', 'state', 'postalCode', 'country', 'period'}
 UNIT_WORDS = {'s': 'second', 'min': 'minute', 'h': 'hour', 'd': 'day', 'wk': 'week', 'mo': 'month', 'a': 'year'}
 PART_BINDING = {'Coding': 'code', 'Ratio': 'numerator.code', 'Quantity': 'code', 'SimpleQuantity': 'code', 'Duration': 'code', 'Age': 'code',
                 'Distance': 'code', 'Count': 'code', 'Money': 'currency'}
@@ -878,9 +879,10 @@ class Profile:
                     n['card'] = '0..' + n['card'].split('..')[1]
                 owner_id = parent_id(parent_id(x['id']))
                 # an extension on a datatype's value part, or on another extension's value, belongs to that datatype or extension
-                last = owner_id.rpartition('.')[2]
-                if last == 'value' or last == 'value[x]' and parent_id(owner_id).rpartition('.')[2].split(':')[0] in ('extension', 'modifierExtension'):
-                    owner_id = parent_id(owner_id)
+                head, _, last = owner_id.rpartition('.')
+                last = last.split(':')[0]
+                if last == 'value' or last == 'value[x]' and head.rpartition('.')[2].split(':')[0] in ('extension', 'modifierExtension'):
+                    owner_id = head
                 owner = self.labels.get(owner_id) or humanize(owner_id.rpartition('.')[2].split(':')[-1])
                 if x['id'] not in self.labels and owner.lower() not in n['label'].lower():
                     n['label'] = f"{owner} {n['label'][0].lower()}{n['label'][1:]}"
@@ -1724,19 +1726,23 @@ def fmt(v, codes=None):
     if 'display' in v or 'reference' in v:
         return v.get('display') or v.get('reference', '')
     if 'family' in v or 'given' in v:
-        return v.get('text') or ' '.join([v.get('family', '')] + v.get('given', []))
-    if 'line' in v or 'city' in v or 'district' in v:
-        return v.get('text') or ', '.join(filter(None, v.get('line', []) + [(codes or {}).get(v.get(k)) or v.get(k) for k in ('city', 'district', 'state', 'country')
+        return v.get('text') or ' '.join(v.get('given', []) + [v.get('family', '')]).strip()
+    if any(k in v for k in ('line', 'city', 'district', 'postalCode')) or set(v) <= ADDRESS_KEYS and ('country' in v or 'state' in v):
+        return v.get('text') or ', '.join(filter(None, v.get('line', []) + [(codes or {}).get(v.get(k)) or v.get(k) for k in ('city', 'district', 'state', 'postalCode', 'country')
                                                                         if isinstance(v.get(k), str)]))
     if 'div' in v:
         return fmt(v['div'])
     if isinstance(v.get('resourceType'), str):
         return f"{v['resourceType']}/{v['id']}" if isinstance(v.get('id'), str) else v['resourceType']
-    if 'doseAndRate' in v or 'timing' in v and ('route' in v or 'asNeededBoolean' in v or 'sequence' in v):
+    if 'doseAndRate' in v or 'timing' in v and ('route' in v or 'sequence' in v or 'asNeeded' in v or 'asNeededBoolean' in v):
         # a Dosage: the sequence number and a false as-needed flag say nothing; a dose carries its own type
-        v = {k: x for k, x in v.items() if k != 'sequence' and not (k == 'asNeededBoolean' and x is False)}
-        if v.get('asNeededBoolean'):
-            v['asNeededBoolean'] = 'as needed'
+        v = {k: x for k, x in v.items() if k != 'sequence' and not (k in ('asNeeded', 'asNeededBoolean') and x is False)}
+        for k in ('asNeeded', 'asNeededBoolean'):
+            if v.get(k) is True:
+                v[k] = 'as needed'
+        if v.get('asNeededFor'):
+            v.pop('asNeeded', None)
+            v['asNeededFor'] = 'as needed for ' + ' or '.join(filter(None, (fmt(x, codes) for x in v['asNeededFor'])))
         if v.get('doseAndRate'):
             v['doseAndRate'] = [', '.join(filter(None, (
                 f"{fmt(d[k], codes)} ({fmt(d['type'], codes)})" if d.get('type') else fmt(d[k], codes)
@@ -1930,6 +1936,8 @@ def main():
         keep = set(args.only.split(','))
         views = [v for v in views if v['id'] in keep or v['profile'] in keep]
     if not views:
+        if args.no_auto or not cfg.get('autoProfiles', True):
+            sys.exit(f'error: no curated view matches --only {args.only}' if args.only else 'error: no curated views, and automatic views are off')
         sys.exit(f'error: no resource profiles with snapshots in {args.output_dir}' + (f' match --only {args.only}' if args.only else ''))
     models = [build_view(b, v, cfg.get('profiles')) for v in views]
 
