@@ -28,7 +28,7 @@ TYPE_MAP = {
     'code': 'coded', 'Coding': 'coded', 'CodeableConcept': 'coded',
     'Identifier': 'id', 'oid': 'id', 'uuid': 'id', 'id': 'id',
     'Quantity': 'quantity', 'SimpleQuantity': 'quantity', 'Duration': 'quantity', 'Age': 'quantity',
-    'Distance': 'quantity', 'Count': 'quantity', 'Money': 'quantity', 'Range': 'quantity',
+    'Distance': 'quantity', 'Count': 'quantity', 'Money': 'quantity', 'Range': 'text',
     'integer': 'count', 'positiveInt': 'count', 'unsignedInt': 'count', 'integer64': 'count', 'decimal': 'count',
     'Ratio': 'ratio', 'RatioRange': 'ratio',
     'date': 'date', 'dateTime': 'datetime', 'instant': 'datetime', 'time': 'time', 'Period': 'period',
@@ -151,12 +151,21 @@ class Build:
             return None
         return load(f)
 
+    def sd_by_url(self, url):
+        url = (url or '').split('|')[0]
+        if url in self.by_url:
+            return self.by_url[url]
+        f = self.packages().get(url)
+        if f and ('sd', url) not in self.cache:
+            sd = load(f)
+            self.cache[('sd', url)] = sd if sd.get('resourceType') == 'StructureDefinition' else None
+        return self.cache.get(('sd', url))
+
     def title_for(self, url):
-        url = url.split('|')[0]
-        sd = self.by_url.get(url)
+        sd = self.sd_by_url(url)
         if sd:
             return self.short(sd.get('title') or sd['name'])
-        return url.rstrip('/').split('/')[-1]
+        return url.split('|')[0].rstrip('/').split('/')[-1]
 
     def short(self, title):
         return title[len(self.prefix):] if self.prefix and title.startswith(self.prefix) else title
@@ -227,7 +236,7 @@ class Build:
                             continue
                         files.append((r.get('resourceType'), r.get('url'), f.name))
                 for rtype, url, name in files:
-                    if rtype in ('ValueSet', 'CodeSystem') and url:
+                    if rtype in ('ValueSet', 'CodeSystem', 'StructureDefinition') and url:
                         self._pkg.setdefault(url, pkg / name)
         return self._pkg
 
@@ -278,9 +287,9 @@ class Build:
 class Profile:
     """Turns one profile's snapshot into clinician-facing nodes."""
 
-    def __init__(self, build, pid, cfg):
+    def __init__(self, build, pid, cfg, sd=None):
         self.b, self.pid, self.cfg = build, pid, cfg
-        sd = build.sd(pid)
+        sd = sd or build.sd(pid)
         self.sd = sd
         self.els = sd['snapshot']['element']
         self.by_id = {e['id']: e for e in self.els}
@@ -297,6 +306,16 @@ class Profile:
         self.collapsed = set(cfg.get('collapsed', []))
         self.used = set()
         self.no_ms = not any(e.get('mustSupport') for e in self.els)
+        self.ms_under = set()
+        for e in self.els:
+            if not e.get('mustSupport'):
+                continue
+            chain, cur = [], e['id']
+            while cur:
+                chain.append(cur)
+                cur = parent_id(cur)
+            if all(self.by_id.get(a, {}).get('max') != '0' for a in chain):
+                self.ms_under.update(chain[1:])
         ex = cfg.get('example') or build.example_for(sd['url'])
         self.example = build.instance(ex) if ex else None
         self.example_ref = ex if self.example else None
@@ -322,11 +341,12 @@ class Profile:
             return True
         if is_tech(e):
             return False
-        if e.get('mustSupport'):
+        if e.get('mustSupport') or eid in self.ms_under:
             return True
         if self.no_ms and any(d == eid or d.startswith(eid + '.') or d.startswith(eid + ':') for d in self.diff):
             return True
-        return e.get('min', 0) >= 1 and parent_id(eid) == self.els[0]['id']
+        root = self.els[0]['id']
+        return e.get('min', 0) >= 1 and parent_id(eid) in (root, root + '.extension', root + '.modifierExtension')
 
     def effective_card(self, eid, stop=None):
         e = self.by_id[eid]
@@ -377,14 +397,22 @@ class Profile:
                 n['label'] = self.labels[eid]
             return n
         types = self.types(e)
-        if slices:
+        sub = self.complex_extension(e) if types == ['Extension'] and not slices else None
+        if sub:
+            n = self.base(e, 'group')
+            n['children'] = sub
+        elif slices:
             n = self.base(e, 'group')
             n['children'] = [self.node(s['id']) for s in slices]
         elif (types and types[0] in LEAF_TYPES or (types and types[0][0].islower())) and eid not in self.expand:
             n = self.leaf(e)
         else:
-            kids = [c for c in self.children(eid) if c.get('max') != '0'
-                    and (self.visible(c) or (c['id'] in self.diff and not is_tech(c) and c['id'] not in self.hide))]
+            kids = [c for c in self.children(eid) if self.visible(c)]
+            plain_kids = [c for c in self.children(eid) if c.get('max') != '0' and not is_tech(c) and not is_slice(c['id'])
+                          and c['id'] not in self.hide]
+            if not kids:
+                # an element shown without visible parts: show what it must contain, or else everything it can
+                kids = [c for c in plain_kids if c.get('min', 0) >= 1] or plain_kids
             built = []
             for c in kids:
                 cn = self.node(c['id'])
@@ -425,8 +453,10 @@ class Profile:
         eid = e['id']
         types = self.types(e)
         binding = e.get('binding') or {}
-        coding_slices = [c.get('binding') for c in self.kids.get(eid + '.coding', []) if is_slice(c['id']) and c.get('binding')]
-        if coding_slices:
+        coding_slices = [c.get('binding') or self.by_id.get(c['id'] + '.code', {}).get('binding')
+                         for c in self.kids.get(eid + '.coding', []) if is_slice(c['id']) and c.get('max') != '0']
+        coding_slices = [x for x in coding_slices if x] or [self.by_id.get(eid + '.coding.code', {}).get('binding')]
+        if coding_slices[0]:
             binding = coding_slices[0]
         targets = []
         for t in e.get('type', []):
@@ -454,9 +484,11 @@ class Profile:
             n['target'] = ' / '.join(names)
         codes = self.add_binding(n, binding) if binding.get('valueSet') else {}
         systems = self.b.vs_systems(binding['valueSet'].split('|')[0]) if binding.get('valueSet') else []
-        ex = self.example_value(eid, codes, systems)
-        if ex:
-            n['ex'] = ex
+        exs = self.example_values(eid, codes, systems)
+        if exs:
+            n['ex'] = ', '.join(exs)
+        if len(exs) > 1:
+            n['exs'] = exs
         fixed = next(((k, v) for k, v in e.items() if k.startswith(('fixed', 'pattern'))), None)
         if fixed:
             fv = fixed[1]
@@ -475,28 +507,64 @@ class Profile:
                 n['values'] = ['Fixed: ' + shown]
                 n['options'] = [shown]
                 n.pop('more', None)
+                n.pop('exs', None)
                 n['ex'] = ex or shown
+            elif isinstance(fv, str) and n['type'] == 'coded':
+                n['values'] = ['Fixed: ' + shown]
+                n['options'] = [shown]
+                n.pop('more', None)
+                n['ex'] = n.get('ex') or shown
+                n.pop('exs', None)
             else:
                 n.setdefault('values', []).insert(0, 'Fixed: ' + shown)
         if eid in self.cfg.get('values', {}):
             n['values'] = self.cfg['values'][eid] + n.get('values', [])
         return n
 
+    @staticmethod
+    def ext_value(els, base):
+        """Types, binding and reference targets of an extension's value; None if it has no value (a complex extension)."""
+        vx = next((x for x in els if x['id'] == base + '.value[x]'), None)
+        if vx is None or vx.get('max') == '0':
+            return None
+        parts = [x for x in els if x['id'].startswith(base + '.value[x]:') and '.' not in x['id'][len(base) + 9:]
+                 and x.get('max') != '0' and x.get('type')]
+        types = [t['code'] for x in (parts or [vx]) for t in x.get('type', [])]
+        binding = vx.get('binding') or next((x['binding'] for x in parts if x.get('binding')), {})
+        targets = [p for x in (parts or [vx]) for t in x.get('type', []) for p in t.get('targetProfile', [])]
+        return types, binding, targets
+
+    def ext_sd(self, e):
+        return self.b.sd_by_url((e.get('type', [{}])[0].get('profile') or [''])[0])
+
     def extension_info(self, e):
         eid = e['id']
-        own = [x for x in self.els if x['id'].startswith(eid + '.') and x['id'].endswith('value[x]') and x.get('type')]
-        own.sort(key=lambda x: (not x.get('binding'), len(x['id'])))
-        if own:
-            v = own[0]
-            return self.types(v), v.get('binding') or {}, [p for t in v['type'] for p in t.get('targetProfile', [])]
-        prof = (e['type'][0].get('profile') or [None])[0]
-        ext = self.b.by_url.get((prof or '').split('|')[0])
-        if ext:
-            vals = [x for x in ext['snapshot']['element'] if x['id'].endswith('value[x]') and x.get('max') != '0' and x.get('type')]
-            if vals:
-                v = vals[0]
-                return self.types(v), v.get('binding') or {}, [p for t in v['type'] for p in t.get('targetProfile', [])]
-        return ['string'], {}, []
+        info = self.ext_value(self.els, eid) if eid + '.value[x]' in self.by_id and self.by_id[eid + '.value[x]'].get('type') else None
+        ext = None if info else self.ext_sd(e)
+        if ext and not info:
+            info = self.ext_value(ext['snapshot']['element'], ext['snapshot']['element'][0]['id'])
+        return info or (['string'], {}, [])
+
+    def complex_extension(self, e):
+        """Sub-extension nodes of an extension that has parts instead of a value."""
+        ext = self.ext_sd(e)
+        if not ext or 'snapshot' not in ext:
+            return None
+        els = ext['snapshot']['element']
+        root = els[0]['id']
+        if self.ext_value(els, root) is not None:
+            return None
+        sub = Profile(self.b, ext['id'], {}, sd=ext)
+        objs = self.resolve([self.example], e['id'].split('.')[1:], e['id'].split('.')[0]) if self.example else []
+        sub.example = {'extension': [x for o in objs if isinstance(o, dict) for x in o.get('extension', [])]} if objs else None
+        out = []
+        for c in sub.children(root):
+            if not is_slice(c['id']) or c.get('max') == '0':
+                continue
+            n = sub.node(c['id'])
+            walk(n, lambda x: x.update(path=e['id'] + x['path'][len(root):]) if x.get('path') else None)
+            out.append(n)
+        return out
 
     def add_binding(self, n, binding):
         url = binding['valueSet'].split('|')[0]
@@ -508,32 +576,36 @@ class Profile:
             n['vs']['page'] = f"ValueSet-{self.b.local_vs[url]}.html"
         contains = flatten_contains((vs or {}).get('expansion', {}).get('contains', []))
         total = (vs or {}).get('expansion', {}).get('total') or len(contains)
-        n['vs']['total'] = total
+        count = f'{total}+' if truncated(vs) and total <= len(contains) else total
+        n['vs']['total'] = count
         shown = [c.get('display') or c['code'] for c in contains if not c.get('abstract')]
         vals = n.setdefault('values', [])
         if shown and total <= MAX_VALUES:
             vals.extend(shown)
         else:
-            vals.append(f'{title}{f" ({total} codes)" if total else ""}')
+            vals.append(f'{title}{f" ({count} codes)" if total else ""}')
         if shown:
             n['options'] = shown[:MAX_OPTIONS]
             if total > len(n['options']):
                 n['more'] = total - len(n['options'])
-        return {c['code']: c.get('display') or c['code'] for c in contains if 'code' in c}
+        return {c['code']: c.get('display') for c in contains if 'code' in c}
 
     # ---------- example values ----------
     def example_value(self, eid, codes=None, systems=()):
+        return ', '.join(self.example_values(eid, codes, systems)) or None
+
+    def example_values(self, eid, codes=None, systems=()):
         if not self.example:
-            return None
+            return []
         vals = self.resolve([self.example], eid.split('.')[1:], eid.split('.')[0])
         codes = dict(codes or {})
         for v in vals:
             for c in codings_in(v):
-                if c['code'] not in codes and not c.get('display'):
+                if not codes.get(c['code']) and not c.get('display'):
                     d = self.b.display(c.get('system'), c['code'])
                     if d:
                         codes[c['code']] = d
-            if isinstance(v, str) and v not in codes:
+            if isinstance(v, str) and not codes.get(v):
                 d = next(filter(None, (self.b.display(sys_, v) for sys_ in systems)), None)
                 if d:
                     codes[v] = d
@@ -543,11 +615,13 @@ class Profile:
                 s = self.b.describe(v['reference'])
             elif isinstance(v, dict) and isinstance(v.get('reference'), dict) and not v['reference'].get('display') and 'reference' in v['reference']:
                 s = self.b.describe(v['reference']['reference'])
+                if v.get('concept'):
+                    s = f"{fmt(v['concept'], codes)} ({s})"
             else:
-                s = re.sub(r'\b[A-Z][A-Za-z]+/[A-Za-z0-9.-]{1,64}\b', lambda m: self.b.describe(m.group(0)), fmt(v, codes))
+                s = re.sub(r'(?<![\w/.:-])[A-Z][A-Za-z]+/[A-Za-z0-9.-]{1,64}(?![\w/.-])', lambda m: self.b.describe(m.group(0)), fmt(v, codes))
             if s and s not in out:
                 out.append(s)
-        return ', '.join(out[:4]) if out else None
+        return out[:4]
 
     def resolve(self, objs, segs, prefix):
         for seg in segs:
@@ -578,32 +652,50 @@ class Profile:
             return False
         if e['path'].endswith('extension'):
             prof = (e.get('type', [{}])[0].get('profile') or [''])[0].split('|')[0]
-            return v.get('url') == prof
+            return v.get('url') == (prof or fixed_value(self.by_id.get(slice_id + '.url')) or e.get('sliceName'))
         disc = (self.by_id.get(parent_id(slice_id)) or {}).get('slicing', {}).get('discriminator', [])
         if not disc:
             return False
         for d in disc:
             if d['type'] not in ('value', 'pattern'):
                 return False
-            el = e if d['path'] == '$this' else self.by_id.get(f"{slice_id}.{d['path']}")
-            want = fixed_value(el)
-            if want is None:
-                vs = ((el or {}).get('binding') or {}).get('valueSet', '').split('|')[0]
-                exp = self.b.expansions.get(vs) or self.b.package_expansion(vs) or {} if vs else {}
-                allowed = {(c.get('system'), c.get('code')) for c in flatten_contains(exp.get('expansion', {}).get('contains', []))}
-                if not allowed:
-                    return False
-                got = [v] if d['path'] == '$this' else [v.get(k) for k in d['path'].split('.')[:1]]
-                if not any((c.get('system'), c['code']) in allowed for c in codings_in(got)):
-                    return False
-                continue
+            el = e if d['path'] == '$this' else (self.by_id.get(f"{slice_id}.{d['path']}") or self.by_id.get(f"{slice_id}.{d['path']}[x]"))
             got = [v]
             if d['path'] != '$this':
                 for key in d['path'].split('.'):
-                    got = [x for g in got if isinstance(g, dict) for x in (g.get(key) if isinstance(g.get(key), list) else [g.get(key)]) if x is not None]
+                    got = [x for g in got if isinstance(g, dict) for x in as_list(choice(g, key))]
+            want = fixed_value(el)
+            if want is None:
+                vs = ((el or {}).get('binding') or {}).get('valueSet', '').split('|')[0]
+                exp = (self.b.expansions.get(vs) or self.b.package_expansion(vs) or {}) if vs else {}
+                contained = flatten_contains(exp.get('expansion', {}).get('contains', []))
+                allowed = {(c.get('system'), c.get('code')) for c in contained}
+                partial = not contained or truncated(exp)
+                systems = set(self.b.vs_systems(vs)) if vs and partial else set()
+                if not any((c.get('system'), c['code']) in allowed or c.get('system') in systems for c in codings_in(got)):
+                    return False
+                continue
             if not any(contains(g, want) for g in got):
                 return False
         return True
+
+
+def truncated(vs):
+    """True when an expansion may not list every code (the publisher stops at its count limit)."""
+    e = (vs or {}).get('expansion', {})
+    unclosed = any(x.get('url', '').endswith('valueset-unclosed') and x.get('valueBoolean') for x in e.get('extension', []))
+    return unclosed or (e.get('total') or 0) > len(flatten_contains(e.get('contains', [])))
+
+
+def as_list(v):
+    return v if isinstance(v, list) else [] if v is None else [v]
+
+
+def choice(o, key):
+    """o[key], or for a choice element (value -> valueQuantity) the typed key."""
+    if key in o:
+        return o[key]
+    return next((o[k] for k in o if k.startswith(key) and k[len(key):][:1].isupper()), None)
 
 
 def codings_in(v):
@@ -647,7 +739,7 @@ def fmt(v, codes=None):
             return v[:10] + ' ' + v[11:16]
         if re.match(r'^\d\d:\d\d:\d\d$', v):
             return v[:5]
-        return codes.get(v, v)
+        return codes.get(v) or v
     if isinstance(v, list):
         return ', '.join(filter(None, (fmt(x, codes) for x in v)))
     if 'url' in v and ('extension' in v or any(k.startswith('value') for k in v)):
@@ -655,6 +747,42 @@ def fmt(v, codes=None):
         if val is not None:
             return fmt(val, codes)
         return ', '.join(filter(None, (fmt(x, codes) for x in v.get('extension', []))))
+    if 'low' in v or 'high' in v:
+        lo, hi = v.get('low') or {}, v.get('high') or {}
+        if lo and hi and lo.get('unit') == hi.get('unit'):
+            return f"{lo.get('value', '')} - {fmt(hi, codes)}"
+        return f"{fmt(lo, codes) or '...'} - {fmt(hi, codes) or '...'}" if lo and hi else (f"from {fmt(lo, codes)}" if lo else f"up to {fmt(hi, codes)}")
+    if 'repeat' in v or 'event' in v:
+        r = v.get('repeat') or {}
+        parts = [fmt(v.get('code'), codes)] if v.get('code') else []
+        if 'frequency' in r or 'period' in r:
+            parts.append(f"{r.get('frequency', 1)} times per {r.get('period', 1)} {r.get('periodUnit', '')}".strip())
+        if r.get('timeOfDay'):
+            parts.append('at ' + fmt(r['timeOfDay'], codes))
+        if r.get('dayOfWeek'):
+            parts.append('on ' + ', '.join(r['dayOfWeek']))
+        if r.get('when'):
+            parts.append(fmt(r['when'], codes))
+        for k in ('boundsPeriod', 'boundsDuration', 'boundsRange'):
+            if r.get(k):
+                parts.append(fmt(r[k], codes))
+        if v.get('event'):
+            parts.append(fmt(v['event'], codes))
+        return ', '.join(filter(None, parts))
+    if 'availableTime' in v or 'notAvailableTime' in v:
+        return '; '.join(' '.join(filter(None, [', '.join(t.get('daysOfWeek', [])), 'all day' if t.get('allDay') else
+                                                '-'.join(fmt(t[k]) for k in ('availableStartTime', 'availableEndTime') if k in t)]))
+                         for t in v.get('availableTime', []))
+    if 'who' in v and 'when' in v:
+        return f"{fmt(v['who'], codes)}, {fmt(v['when'])}"
+    if 'currency' in v and 'value' in v:
+        return f"{v['value']} {v['currency']}"
+    if isinstance(v.get('type'), str) and 'amount' in v:
+        return f"{v['type']}: {fmt(v['amount'], codes)}"
+    if 'contentType' in v or 'data' in v or ('url' in v and 'title' in v):
+        return v.get('title') or v.get('url') or v.get('contentType', '')
+    if 'telecom' in v and ('name' in v or 'purpose' in v or 'organization' in v):
+        return ', '.join(filter(None, [fmt(v.get('name'), codes) or fmt(v.get('purpose'), codes), fmt(v.get('telecom'), codes)]))
     if 'concept' in v or 'reference' in v and isinstance(v.get('reference'), dict):
         return fmt(v.get('concept'), codes) or fmt(v.get('reference'), codes)
     if 'coding' in v or ('text' in v and len(v) <= 2 and 'div' not in v):
@@ -682,7 +810,10 @@ def fmt(v, codes=None):
         return v.get('text') or ' '.join([v.get('family', '')] + v.get('given', []))
     if 'line' in v or 'city' in v:
         return v.get('text') or ', '.join(v.get('line', []) + [v.get('city', '')])
-    return ''
+    if 'div' in v:
+        return ''
+    parts = [fmt(x, codes) for k, x in v.items() if k not in ('id', 'extension', 'modifierExtension', 'url', 'resourceType')]
+    return ', '.join(filter(None, parts))[:200]
 
 
 def walk(n, fn):
@@ -708,6 +839,13 @@ def build_view(b, view, shared=None):
         sections = [main.node(e['id']) for e in main.children(root) if main.visible(e)]
     for s in view.get('sections', []):
         p = prof(s.get('from', view['profile']))
+        if s.get('from') and s.get('element') and main.example and not p.cfg.get('example'):
+            # the instance the main example points to, so every section shows one consistent record
+            vals = main.resolve([main.example], s['element'].split('.')[1:], s['element'].split('.')[0])
+            refs = [r.get('reference') if isinstance(r, dict) else r for v in vals if isinstance(v, dict) for r in [v.get('reference')]]
+            ref = next((r for r in refs if isinstance(r, str) and (b.out / f"{r.replace('/', '-')}.json").exists()), None)
+            p.example = b.instance(ref) if ref else None
+            p.example_ref = ref
         nodes = []
         for i in s.get('include', []):
             n = p.node(i)

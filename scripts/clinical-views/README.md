@@ -10,7 +10,7 @@ scripts/clinical-views/generate.py --output-dir output --config scripts/clinical
 
 It reads only the IG publisher's `output/` folder (snapshots, `expansions.json`, examples, `ImplementationGuide-*.json`) plus the dependency packages in `~/.fhir/packages`, so it works on any FHIR STU3 or later IG. Python 3 standard library only.
 
-Every resource profile gets a view with no configuration. Elements shown are the Must Support ones (extensions included) plus mandatory top-level elements, never prohibited (`0..0`) ones; for a profile with no Must Support at all, the constrained (differential) elements. Example values come from the largest instance whose `meta.profile` names the profile.
+Every resource profile gets a view with no configuration. Elements shown are the Must Support ones (extensions included), the elements that contain them, and mandatory top-level elements and extensions, never prohibited (`0..0`) ones; for a profile with no Must Support at all, the constrained (differential) elements. A shown element with no shown parts lists its mandatory parts, or all of them. Datatypes such as Identifier, ContactPoint or CodeableConcept show as one field. Complex extensions show their sub-extensions. Example values come from the largest instance whose `meta.profile` names the profile; in a use case, a section from another profile shows the instance the main example references, or no example when it references none.
 
 ## views.json
 

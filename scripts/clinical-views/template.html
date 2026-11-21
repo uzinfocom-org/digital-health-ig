@@ -191,6 +191,7 @@ table.data tr.grp.d1 td { background: color-mix(in srgb, var(--bar) 55%, var(--p
 .fc input.unit { width: 110px; }
 .fc select { max-width: 300px; }
 .fc .sep { color: var(--muted); font-size: 12px; }
+.fc .fv { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; width: 100%; min-width: 0; }
 .fc .refbox { border: 1px dashed var(--link); color: var(--link); background: var(--link-soft); padding: 3px 8px; border-radius: 3px; font-size: 13px; }
 
 /* exchange */
@@ -555,9 +556,7 @@ function showDetail(el, n) {
 
 // ---------- form preview ----------
 const formClosed = {};
-function control(n) {
-  const v = state.example ? (n.ex || '') : '';
-  const id = 'f-' + n.uid;
+function control(n, v, id) {
   switch (n.type) {
     case 'coded': {
       const opts = n.options || [];
@@ -568,7 +567,7 @@ function control(n) {
     case 'date': return `<input id="${id}" type="date" value="${esc(/^\d{4}-\d\d-\d\d/.test(v) ? v.slice(0, 10) : '')}">`;
     case 'datetime': return /^\d{4}-\d\d-\d\d$/.test(v) ? `<input id="${id}" type="date" value="${esc(v)}">`
       : `<input id="${id}" type="datetime-local" value="${esc(/^\d{4}-\d\d-\d\d[T ]\d\d:\d\d/.test(v) ? v.slice(0, 16).replace(' ', 'T') : '')}">`;
-    case 'time': return `<input id="${id}" type="text" class="unit" placeholder="hh:mm" value="${esc(v.split(', ')[0].slice(0, 5))}">`;
+    case 'time': return `<input id="${id}" type="text" class="unit" placeholder="hh:mm" value="${esc(v.slice(0, 5))}">`;
     case 'bool': return `<input id="${id}" type="checkbox" ${v === 'true' ? 'checked' : ''}>`;
     case 'count': return `<input id="${id}" type="number" class="num" min="0" value="${esc(v)}">`;
     case 'quantity': { const [a, ...b] = v.split(' '); return `<input id="${id}" type="text" class="num" inputmode="decimal" value="${esc(a || '')}" aria-label="Amount"><input id="${id}-u" type="text" class="unit" placeholder="unit" value="${esc(b.join(' '))}" aria-label="Unit">`; }
@@ -587,7 +586,14 @@ function formNode(n, d) {
       <div class="fb">${n.desc ? `<div class="note">${esc(n.desc)}</div>` : ''}${n.children.map(c => formNode(c, d + 1)).join('')}</div></div>`;
   }
   const o = occ(n.card);
-  return `<div class="fr"><label class="fl" for="f-${n.uid}">${icon(n.type)} ${esc(n.label)}${o.mand ? ' <span class="req" title="Mandatory">*</span>' : ''} <span class="car">[${esc(n.card)}]</span></label><div class="fc">${control(n)}</div></div>`;
+  const ex = state.example ? n.exs || (n.ex ? [n.ex] : []) : [];
+  const vals = n.type === 'link' ? [state.example ? n.ex || '' : ''] : /\.\.1$/.test(n.card || '') ? [ex[0] || ''] : ex.length ? ex : [''];
+  const ctl = (v, i) => {
+    const cid = 'f-' + n.uid + (i ? '-' + i : '');
+    const h = control(n, v, cid);
+    return i ? h.replace(new RegExp(`id="${cid}"(?![^>]*aria-label)`), `id="${cid}" aria-label="${esc(n.label)} ${i + 1}"`) : h;
+  };
+  return `<div class="fr"><label class="fl" for="f-${n.uid}">${icon(n.type)} ${esc(n.label)}${o.mand ? ' <span class="req" title="Mandatory">*</span>' : ''} <span class="car">[${esc(n.card)}]</span></label><div class="fc">${vals.map((v, i) => `<div class="fv">${ctl(v, i)}</div>`).join('')}</div></div>`;
 }
 function renderForm(pane, m) {
   pane.innerHTML = `<div class="toolbar">
@@ -604,6 +610,7 @@ function renderForm(pane, m) {
 
 // ---------- exchange ----------
 function renderExchange(pane, m) {
+  state.step = Math.min(state.step, m.steps.length - 1);
   const s = m.steps[state.step];
   const byLabel = l => m.root.children.find(c => c.label === l) || (l === 'Prescription' ? m.root.children[0] : null);
   const pkg = (labels, asRef) => labels.map(l => {

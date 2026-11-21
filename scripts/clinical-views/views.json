@@ -311,7 +311,6 @@
           }
         },
         "uz-core-patient": {
-          "example": "Patient/example-salim",
           "labels": {
             "Patient.name.text": "Full name",
             "Patient.identifier:nationalId": "PINFL",
@@ -319,7 +318,6 @@
           }
         },
         "uz-core-practitioner-role": {
-          "example": "PractitionerRole/example-practitionerrole",
           "labels": {
             "PractitionerRole.practitioner": "Doctor",
             "PractitionerRole.organization": "Clinic",
@@ -327,7 +325,6 @@
           }
         },
         "uz-core-medication": {
-          "example": "Medication/example-medication",
           "labels": {
             "Medication.code": "Medicine",
             "Medication.ingredient.strength[x]": "Strength",
