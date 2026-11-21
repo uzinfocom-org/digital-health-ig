@@ -39,9 +39,9 @@ CONFORMANCE = {
     'CapabilityStatement', 'SearchParameter', 'OperationDefinition', 'StructureMap', 'package', 'expansions', 'qa',
 }
 PRIMITIVES = {'instant', 'markdown', 'canonical', 'uri', 'url', 'string', 'code', 'id', 'oid', 'uuid', 'base64Binary'}
-DESCRIBE_KEYS = ('code', 'vaccineCode', 'recommendation.vaccineCode', 'medication', 'suppliedItem.item', 'item.concept', 'itemCodeableConcept', 'relationship', 'type', 'class', 'category',
+DESCRIBE_KEYS = ('code', 'vaccineCode', 'recommendation.vaccineCode', 'medication', 'suppliedItem.item', 'item.concept', 'itemCodeableConcept', 'relationship', 'type', 'class', 'category', 'ingredient.item',
                  'practitioner', 'organization', 'agent.who', 'subject')
-WHAT_KEYS = 11
+WHAT_KEYS = 12
 NO_BUNDLE = {}
 CONTACT_SYSTEMS = {'phone', 'fax', 'email', 'pager', 'url', 'sms', 'other'}
 UNIT_WORDS = {'s': 'second', 'min': 'minute', 'h': 'hour', 'd': 'day', 'wk': 'week', 'mo': 'month', 'a': 'year'}
@@ -319,6 +319,8 @@ class Build:
         lang = r.get('language') or (container.get('language') if isinstance(container, dict) else None)
         codes = {c['code']: d for c in all_codings(r) if not own_display(c, lang) for d in [self.display(c.get('system'), c['code'])] if d}
         name = en_text(r, 'name')
+        if name is None and isinstance(r.get('deviceName'), list):
+            name = next((d['name'] for d in r['deviceName'] if isinstance(d, dict) and isinstance(d.get('name'), str)), None)
         def part(v):
             ref = v.get('reference') if isinstance(v, dict) else None
             ref = ref.get('reference') if isinstance(ref, dict) else ref
@@ -344,7 +346,7 @@ class Build:
             return label or fmt(name[0])
         if title:
             return title
-        keys = (('device',) if r.get('resourceType') in ('DeviceUseStatement', 'DeviceUsage') else ()) + DESCRIBE_KEYS[:WHAT_KEYS]
+        keys = (('device',) if r.get('resourceType') in ('DeviceUseStatement', 'DeviceUsage', 'DeviceDispense', 'DeviceAssociation') else ()) + DESCRIBE_KEYS[:WHAT_KEYS]
         if what(keys):
             return f"{r.get('resourceType')}: {what(keys)}"
         if r.get('identifier'):
