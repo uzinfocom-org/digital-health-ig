@@ -166,8 +166,10 @@ class Build:
         igs = [load(f) for f in sorted(self.out.glob('ImplementationGuide-*.json'))]
         self.pkg = next((load(f) for f in (self.out / 'package.manifest.json', self.out / 'package.json') if f.exists()), {})
         # a package folder can hold other guides' IGs as examples: take the one the package is
-        own = [g for g in igs if g.get('packageId') == self.pkg.get('name')]
-        self.ig = (own or (igs if len(igs) == 1 or not self.pkg else []) or [{}])[0]
+        name = self.pkg.get('name') or ''
+        base = re.sub(r'\.r\d+b?$', '', name)
+        own = [g for g in igs if g.get('packageId') == name] or [g for g in igs if base and str(g.get('packageId', '')).startswith(base)]
+        self.ig = (own or [g for g in igs if not self.pkg or len(igs) == 1 and 'packageId' not in g] or [{}])[0]
         for f in self.out.glob('StructureDefinition-*.json'):
             sd = load(f)
             if sd.get('resourceType') != 'StructureDefinition':
@@ -920,7 +922,7 @@ class Profile:
             n['target'] = 'Any resource'
         on = None
         extra_parts = []
-        if not binding.get('valueSet') and on_part:
+        if not binding.get('valueSet') and not conditional and on_part:
             (binding, on), extra_parts = on_part[0], on_part[1:]
         pinned = next((v for k in (('.system',) if types == ['Coding'] else ()) + ('.coding.system', '.concept.coding.system') for v in [fixed_value(self.by_id.get(eid + k))] if isinstance(v, str)), None)
         held = (self.by_id.get(eid.rpartition('.coding:')[0]) or {}).get('binding') or {} if '.coding:' in eid else {}
@@ -1306,7 +1308,7 @@ class Profile:
                 sd = self.b.sd_by_url(u.split('|')[0]) or {}
                 ids = {f"{sd.get('type')}.{rel}", f"{sd.get('type')}.{rel}[x]"}
                 x = next((x for x in sd.get('snapshot', {}).get('element', []) if x['id'] in ids), None)
-                if x and (fixed_value(x) is not None or x.get('binding')):
+                if x and (fixed_value(x) is not None or (x.get('binding') or {}).get('strength') == 'required'):
                     return x
         return None
 
@@ -1664,7 +1666,9 @@ def build_view(b, view, shared=None):
         if p is not main and not s.get('element') and not p.cfg.get('example'):
             # no linking element: an instance that references the main example, or none
             target = main.example_ref
-            ref = next((r for r in b.instances_of(p.sd.get('url')) if target and target in references(b.instance(r))), None)
+            ref = next((r for r in b.instances_of(p.sd.get('url')) if target and any(
+                f"{x.get('resourceType')}/{x.get('id')}" == target for u in references(b.instance(r))
+                for x in [b.find_instance(u, b.instance(r))] if isinstance(x, dict))), None)
             p.example = b.instance(ref) if ref else None
             p.example_ref = ref
         if p is not main and s.get('element') and not p.cfg.get('example'):
